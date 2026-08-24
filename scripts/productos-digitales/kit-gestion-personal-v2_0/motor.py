@@ -550,6 +550,11 @@ VOC_VENCIMIENTO = [('VENCIDO', 'rojo'), ('URGENTE', 'rojo'), ('🔴', 'rojo'),
                    ('OK', 'verde')]
 VOC_COBERTURA = [('TEMP. ALTA', 'rojo'), ('EXCESO', 'ambar')]
 VOC_CONFORME = [('FUERA DE RANGO', 'rojo'), ('CONFORME', 'verde')]
+#: RD-04 · veredicto del arqueo de caja del BONUS-01. Un FALTANTE es rojo
+#: (dinero que no está) y un SOBRANTE es ámbar: también es un descuadre —
+#: casi siempre un cobro no registrado— pero no un agujero de caja.
+VOC_CAJA = [('FALTAN', 'rojo'), ('SOBRAN', 'ambar'),
+            ('CUADRA', 'verde')]
 
 #: Semáforos por COLUMNA, con centinela de cabecera:
 #: `(hoja, columna, texto_esperado_en_cabecera, vocabulario)`.
@@ -663,7 +668,16 @@ RANGOS_FORMATO = {
 PRESENTACION = {
     '01-cuadrante-turnos-semanal.xlsx': [
         ('Cuadrante Semanal', 'B6', '$5:$5', '$A:$A', True, 1),
-        ('Cuadrante Mensual', 'A5', '$4:$4', '$A:$A', True, 1),
+        # RT-17 · el título repetido era '$4:$4', la cabecera del bloque
+        # SEMANA 1, y la hoja tiene SEIS bloques con su propia cabecera (filas
+        # 4, 37, 70, 103, 136 y 169) en 202 filas: al imprimir se repetía en
+        # todas las páginas la cabecera de la primera semana, y como la fila 3
+        # («SEMANA 1» + leyenda) quedaba fuera, las páginas de las semanas 2 a
+        # 5 salían sin decir a qué semana pertenecen. Se repite el TÍTULO del
+        # documento ('$1:$2'), que vale para los seis bloques, y `grupo_a`
+        # mete un salto de página antes de cada uno para que cada semana
+        # empiece en su propia hoja con su cabecera visible.
+        ('Cuadrante Mensual', 'A5', '$1:$2', '$A:$A', True, 1),
     ],
     '02-control-horas-extras.xlsx': [
         ('Registro Horas', 'A5', '$4:$4', None, True, 1),
@@ -676,7 +690,14 @@ PRESENTACION = {
         # referencia. Se baja a A13 (sólo la cabecera de esa tabla queda fija),
         # que es lo que hacen 'Previsión' (A4 sobre 26 filas) y 'Nóminas' (A5
         # sobre 37).
-        ('Ratio Coste Laboral', 'A13', '$13:$13', None, False, 1),
+        # RD-21 · el bloque de coste gana cuatro filas (nóminas + horas
+        # extra + ETT + otros = total), así que la cabecera de la tabla de
+        # referencia baja de la 13 a la 17. RT-22 · el freeze estaba en A14 e
+        # inmovilizaba 13 de las 22 filas de la hoja: la zona desplazable se
+        # quedaba en las nueve de la tabla. Ahora fija lo que hay que tener a
+        # la vista mientras se baja a la tabla (el ratio y su semáforo) y deja
+        # el resto desplazable.
+        ('Ratio Coste Laboral', 'A15', '$17:$17', None, False, 1),
         ('Previsión por Servicio', 'A4', None, None, False, 1),
     ],
     '04-onboarding-nuevo-empleado.xlsx': [

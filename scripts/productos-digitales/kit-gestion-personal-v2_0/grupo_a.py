@@ -49,6 +49,7 @@ import sys
 import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill, Protection
 from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.pagebreak import Break
 from openpyxl.worksheet.datavalidation import DataValidation
 
 import motor
@@ -798,6 +799,14 @@ def _cuadrante_mensual(wb, cambios, r0_sem):
                                                        fgColor='EEEEEE')
         ws.cell(row=prom, column=c).font = NEGRITA
 
+    # RT-17 · un salto de página ANTES de cada bloque: con el título del
+    # documento repetido arriba ('$1:$2', motor.PRESENTACION) y un bloque por
+    # página, cada semana se imprime con su rótulo «SEMANA n» y su cabecera.
+    ws.row_breaks.brk = []
+    for d0, _d1 in semanas[1:]:
+        ws.row_breaks.append(Break(id=d0 - 3))
+    ws.row_breaks.append(Break(id=hdr - 2))
+
     pie = prom + 2
     ws.merge_cells('A{0}:J{0}'.format(pie))
     ws.cell(row=pie, column=1, value=motor.PIE).font = Font(size=9,
@@ -1279,10 +1288,44 @@ def _instrucciones_02(wb, cambios):
 # ==========================================================================
 # BONUS-01 — caja y temperaturas (DOM-29) + observaciones (TEC-24)
 # ==========================================================================
-FILAS_BONUS = 14           # 46..59, justo antes de OBSERVACIONES GENERALES
-LIMITES_TEMP = [('Cámara de refrigeración', 4),
-                ('Congelador', -18),
-                ('Expositor / vitrina', 4)]
+FILAS_BONUS = 19           # 46..64, justo antes de OBSERVACIONES GENERALES
+
+#: RD-22/RD-23 · `(equipo, mínimo, máximo)`.
+#:
+#: RD-22 · la comparación era UNILATERAL (`B<=C`): una cámara escarchada a
+#: −5 °C —producto fresco congelado por accidente, no conformidad APPCC de
+#: manual y merma directa— salía «✓ CONFORME» en el documento que firman los
+#: dos jefes de turno. Sólo el congelador estaba bien servido por un límite
+#: superior a secas. Es la misma corrección que ya se aplicó en el kit de
+#: inventario.
+#:
+#: RD-23 · y faltaba el único control que se hace justo en el relevo con
+#: producto en la mano: el mantenimiento EN CALIENTE, que la normativa de
+#: comidas preparadas exige a 65 °C o más. El «Expositor / vitrina» se
+#: precargaba a 4 °C como si sólo hubiera vitrinas frías.
+LIMITES_TEMP = [('Cámara de refrigeración', 0, 4),
+                ('Congelador', -30, -18),
+                ('Expositor / vitrina FRÍA', 0, 4),
+                ('Baño maría / mesa caliente', 65, 90),
+                ('Buffet o vitrina CALIENTE', 65, 90)]
+
+#: RD-04 · tolerancia por defecto del descuadre de caja, en euros. Va en celda
+#: verde: cada casa tiene la suya.
+TOLERANCIA_CAJA = 5.0
+
+
+def _veredicto_caja(fila, fila_tol):
+    """RD-04 — el veredicto del arqueo, con la tolerancia en celda verde.
+
+    `descuadre = efectivo contado − fondo inicial − ventas en efectivo del
+    TPV`. Sin la tercera columna no hay arqueo posible: lo que la v2.0
+    entregaba era `recaudación − fondo`, la recaudación neta, un número que ya
+    se sabe y que un faltante de 80 € no altera.
+    """
+    return ('=IF($E{f}="","",IF(ABS($E{f})<=$B${t},"✓ CUADRA",'
+            'IF($E{f}<0,"⛔ FALTAN "&TEXT(-$E{f},"0.00")&" €",'
+            '"⚠ SOBRAN "&TEXT($E{f},"0.00")&" €")))'
+            .format(f=fila, t=fila_tol))
 
 
 def _bonus01(wb, cambios):
@@ -1306,64 +1349,104 @@ def _bonus01(wb, cambios):
     if c0 is None:
         c0 = fila_obs
 
-    # ---- CAJA ------------------------------------------------------------
-    _titulo_bloque(ws, c0, '💶 CAJA: FONDO, RECAUDACIÓN Y DIFERENCIA', 4)
-    _cab(ws, c0 + 1, ['Caja', 'Fondo inicial (€)', 'Recaudación (€)',
-                      'Diferencia (€)'])
-    for k, nombre in enumerate(('Sala', 'Barra')):
-        f = c0 + 2 + k
+    # ---- CAJA (RD-04) ----------------------------------------------------
+    # El bloque se firmaba como ARQUEO y no podía detectar un descuadre, que es
+    # la única razón de arquear al cambio de turno: `D = C − B` con B = fondo
+    # inicial y C = recaudación es la recaudación NETA, un número que ya se
+    # sabe, etiquetado «Diferencia». Sin la lectura Z del TPV, un faltante de
+    # 80 € salía exactamente igual que una caja cuadrada.
+    ws.column_dimensions['E'].width = 22
+    ws.column_dimensions['F'].width = 22
+    _titulo_bloque(ws, c0, '💶 CAJA: ARQUEO AL CAMBIO DE TURNO', 6)
+    _rotulo_tol = ws.cell(row=c0 + 1, column=1,
+                          value='Tolerancia de descuadre (€):')
+    _rotulo_tol.font = NEGRITA
+    _verde_tol = ws.cell(row=c0 + 1, column=2, value=TOLERANCIA_CAJA)
+    _verde_tol.number_format = motor.FMT_EUR
+    motor.marcar_verde(ws, 'B{}'.format(c0 + 1))
+    _limpiar_mis_dv(ws, ('B{}'.format(c0 + 1),))
+    _dv(ws, 'B{}'.format(c0 + 1), None, 'Tolerancia no válida',
+        'Por debajo de esta cantidad, en más o en menos, el arqueo se da por '
+        'cuadrado. Cinco euros es lo habitual en un cambio de turno; súbelo o '
+        'bájalo según tu casa.',
+        'Escribe un importe entre 0 y 100 €.',
+        tipo='decimal', operator='between', formula1='0', formula2='100')
+    ws.cell(row=c0 + 1, column=3,
+            value='← por debajo de esta cifra el arqueo se da por cuadrado')\
+        .font = Font(size=9, italic=True, color='666666')
+    _cab(ws, c0 + 2, ['Caja', 'Fondo inicial (€)', 'Efectivo contado (€)',
+                      'Ventas en efectivo según TPV — lectura Z (€)',
+                      'Descuadre (€)', 'Veredicto'])
+    cajas = ('Sala', 'Barra')
+    for k, nombre in enumerate(cajas):
+        f = c0 + 3 + k
         ws.cell(row=f, column=1, value=nombre)
-        _f(ws, 'D{}'.format(f),
-           '=IF(OR($B{f}="",$C{f}=""),"",ROUND($C{f}-$B{f},2))'.format(f=f))
-        for col in ('B', 'C', 'D'):
+        _f(ws, 'E{}'.format(f),
+           '=IF(OR($B{f}="",$C{f}="",$D{f}=""),"",'
+           'ROUND($C{f}-$B{f}-$D{f},2))'.format(f=f))
+        _f(ws, 'F{}'.format(f), _veredicto_caja(f, c0 + 1))
+        for col in ('B', 'C', 'D', 'E'):
             ws['{}{}'.format(col, f)].number_format = motor.FMT_EUR
-    motor.marcar_verde(ws, 'A{}:C{}'.format(c0 + 2, c0 + 3))
-    ftot = c0 + 4
+    motor.marcar_verde(ws, 'A{}:D{}'.format(c0 + 3, c0 + 2 + len(cajas)))
+    ftot = c0 + 3 + len(cajas)
     ws.cell(row=ftot, column=1, value='TOTAL').font = NEGRITA
-    for col in ('B', 'C'):
+    for col in ('B', 'C', 'D'):
         _f(ws, '{}{}'.format(col, ftot),
            '=IF(COUNT({c}{a}:{c}{b})=0,"",ROUND(SUM({c}{a}:{c}{b}),2))'
-           .format(c=col, a=c0 + 2, b=c0 + 3))
-    _f(ws, 'D{}'.format(ftot),
-       '=IF(OR($B{f}="",$C{f}=""),"",ROUND($C{f}-$B{f},2))'.format(f=ftot))
-    for col in ('B', 'C', 'D'):
+           .format(c=col, a=c0 + 3, b=ftot - 1))
+    _f(ws, 'E{}'.format(ftot),
+       '=IF(OR($B{f}="",$C{f}="",$D{f}=""),"",'
+       'ROUND($C{f}-$B{f}-$D{f},2))'.format(f=ftot))
+    _f(ws, 'F{}'.format(ftot), _veredicto_caja(ftot, c0 + 1))
+    for col in ('B', 'C', 'D', 'E'):
         cel = ws['{}{}'.format(col, ftot)]
         cel.number_format = motor.FMT_EUR
         cel.font = NEGRITA
-    ffirma = c0 + 5
-    ws.merge_cells('A{0}:D{0}'.format(ffirma))
+    ref_caja = 'F{}:F{}'.format(c0 + 3, ftot)
+    motor._limpiar_cf(ws, set([ref_caja]))
+    motor.semaforo(ws, ref_caja, motor.VOC_CAJA)
+    ffirma = ftot + 1
+    ws.merge_cells('A{0}:F{0}'.format(ffirma))
     ws.cell(row=ffirma, column=1,
             value='Arqueo hecho por: _____________________     ·     '
                   'Conforme turno entrante: _____________________')
 
-    # ---- TEMPERATURAS ----------------------------------------------------
-    t0 = c0 + 7
-    _titulo_bloque(ws, t0, '🌡️ TEMPERATURAS AL CAMBIO DE TURNO (APPCC)', 4)
-    _cab(ws, t0 + 1, ['Equipo', 'Temperatura (°C)', 'Límite (°C)', 'Conforme'])
+    # ---- TEMPERATURAS (RD-22/RD-23) --------------------------------------
+    t0 = ffirma + 2
+    _titulo_bloque(ws, t0, '🌡️ TEMPERATURAS AL CAMBIO DE TURNO (APPCC)', 6)
+    _cab(ws, t0 + 1, ['Equipo', 'Temperatura (°C)', 'Mínimo (°C)',
+                      'Máximo (°C)', 'Conforme', ''])
     for k, par in enumerate(LIMITES_TEMP):
         f = t0 + 2 + k
         ws.cell(row=f, column=1, value=par[0])
-        cel = ws.cell(row=f, column=3, value=par[1])
-        cel.number_format = motor.FMT_DEC1
-        cel.alignment = CENTRO
+        for col, valor in ((3, par[1]), (4, par[2])):
+            cel = ws.cell(row=f, column=col, value=valor)
+            cel.number_format = motor.FMT_DEC1
+            cel.alignment = CENTRO
         ws.cell(row=f, column=2).number_format = motor.FMT_DEC1
         ws.cell(row=f, column=2).alignment = CENTRO
-        _f(ws, 'D{}'.format(f),
-           '=IF(OR($B{f}="",$C{f}=""),"",IF($B{f}<=$C{f},"✓ CONFORME",'
+        _f(ws, 'E{}'.format(f),
+           '=IF(OR($B{f}="",$C{f}="",$D{f}=""),"",'
+           'IF(AND($B{f}>=$C{f},$B{f}<=$D{f}),"✓ CONFORME",'
            '"⛔ FUERA DE RANGO"))'.format(f=f))
-    motor.marcar_verde(ws, 'B{}:C{}'.format(t0 + 2, t0 + 4))
-    ref_cf = 'D{}:D{}'.format(t0 + 2, t0 + 4)
+    ult_temp = t0 + 1 + len(LIMITES_TEMP)
+    motor.marcar_verde(ws, 'B{}:D{}'.format(t0 + 2, ult_temp))
+    ref_cf = 'E{}:E{}'.format(t0 + 2, ult_temp)
     motor._limpiar_cf(ws, set([ref_cf]))
     motor.semaforo(ws, ref_cf, motor.VOC_CONFORME)
-    fnota = t0 + 5
-    ws.merge_cells('A{0}:D{0}'.format(fnota))
+    fnota = ult_temp + 1
+    ws.merge_cells('A{0}:F{0}'.format(fnota))
     cel = ws.cell(row=fnota, column=1,
                   value='Quien entrega toma la temperatura DELANTE de quien '
                         'recibe: es el punto en que el APPCC cambia de '
-                        'responsable. Fuera de rango, anótalo arriba como '
-                        'incidencia y avisa antes de irte.')
+                        'responsable. El rango tiene MÍNIMO y máximo: una '
+                        'cámara a −5 °C también es una no conformidad (te ha '
+                        'congelado el producto fresco), y el mantenimiento en '
+                        'caliente sólo es conforme A PARTIR de 65 °C. Fuera '
+                        'de rango, anótalo arriba como incidencia y avisa '
+                        'antes de irte.')
     cel.alignment = Alignment(wrap_text=True, vertical='top')
-    ws.row_dimensions[fnota].height = 28
+    ws.row_dimensions[fnota].height = 42
 
     # ---- observaciones: wrap_text y alto (TEC-24) ------------------------
     obs = _fila_con(ws, 1, 'OBSERVACIONES GENERALES')
@@ -1392,21 +1475,38 @@ def _bonus01(wb, cambios):
         'Alta · Normal).',
         '▸ Stock bajo que necesita pedido urgente.',
         '▸ Personal: ausencias y cambios de último momento.',
-        '▸ CAJA: fondo inicial, recaudación y diferencia, con la firma de '
-        'quien entrega y de quien recibe. Es lo que convierte el traspaso en '
-        'un arqueo.',
-        '▸ TEMPERATURAS al cambio de turno (cámara, congelador y expositor): '
-        'es el punto exacto en que el APPCC cambia de responsable. El límite '
-        'viene precargado y la columna «Conforme» se pinta sola.',
+        '▸ CAJA — arqueo de verdad: fondo inicial, EFECTIVO CONTADO y VENTAS '
+        'EN EFECTIVO según la lectura Z del TPV. El descuadre es contado − '
+        'fondo − ventas, y el veredicto lo compara con la tolerancia que '
+        'fijes arriba (5 € de fábrica). Sin la columna del TPV esto no sería '
+        'un arqueo: sería la recaudación neta, un número que ya sabes y que '
+        'un faltante de 80 € no cambia.',
+        '▸ Un FALTANTE sale en rojo y un SOBRANTE en ámbar: los dos son '
+        'descuadres, pero un sobrante suele ser un cobro sin registrar y no '
+        'un agujero de caja. Los dos se firman abajo.',
+        '▸ TEMPERATURAS al cambio de turno: cámara, congelador, vitrina FRÍA, '
+        'baño maría / mesa caliente y buffet o vitrina CALIENTE. Es el punto '
+        'exacto en que el APPCC cambia de responsable. Cada equipo tiene '
+        'MÍNIMO y máximo, no sólo un techo: una cámara a −5 °C te ha '
+        'congelado el producto fresco y es no conformidad igual que una a '
+        '10 °C, y el mantenimiento en caliente sólo es conforme A PARTIR de '
+        '65 °C. La columna «Conforme» se pinta sola.',
         '▸ Observaciones generales: las tres líneas admiten texto largo (van '
         'con ajuste de línea y alto de fila, para que no se corten al '
         'imprimir).',
     ])
-    cambios.append('{}:Briefing!A{}:D{}: bloque de CAJA (fondo · recaudación '
-                   '· diferencia · firma) y bloque de TEMPERATURAS (cámara '
-                   '≤ 4 °C, congelador ≤ −18 °C, expositor ≤ 4 °C) con '
-                   'semáforo CONFORME / FUERA DE RANGO; observaciones con '
-                   'wrap_text y alto de fila — DOM-29/TEC-24'
+    cambios.append('{}:Briefing!A{}:F{}: bloque de ARQUEO DE CAJA (fondo · '
+                   'efectivo contado · ventas en efectivo del TPV · '
+                   'DESCUADRE · veredicto contra una tolerancia en celda '
+                   'verde · firma) y bloque de TEMPERATURAS con MÍNIMO y '
+                   'máximo para cinco equipos —cámara 0/4, congelador '
+                   '−30/−18, vitrina fría 0/4 y los dos de mantenimiento en '
+                   'CALIENTE a 65/90— con semáforo CONFORME / FUERA DE '
+                   'RANGO; observaciones con wrap_text y alto de fila. Antes '
+                   'la «Diferencia» era recaudación − fondo (no detectaba '
+                   'ningún descuadre) y la conformidad sólo miraba el límite '
+                   'SUPERIOR (una cámara a −5 °C salía «✓ CONFORME») — '
+                   'DOM-29/TEC-24/RD-04/RD-22/RD-23'
                    .format(FB1, c0, obs + 3))
 
 
@@ -1925,52 +2025,112 @@ def demos(carpeta, origen):
         fc = _fila_con(wsb, 1, 'CAJA')
         ft = _fila_con(wsb, 1, 'TEMPERATURAS')
         if fc and ft:
-            b, t = fc + 2, ft + 2
+            # RD-04 · el bloque de caja tiene ahora cabecera en `fc+2` y datos
+            # a partir de `fc+3`; el de temperaturas, cabecera en `ft+1`.
+            b, t = fc + 3, ft + 2
+            tot = b + 2
             bri = "'Briefing'!"
-            caja = esc(pb1, [(bri + 'B{}'.format(b), 200),
-                             (bri + 'C{}'.format(b), 1450.5),
-                             (bri + 'B{}'.format(b + 1), 150),
-                             (bri + 'C{}'.format(b + 1), 620.25)],
-                       [('dif', bri + 'D{}'.format(b)),
-                        ('total_fondo', bri + 'B{}'.format(fc + 4)),
-                        ('total_dif', bri + 'D{}'.format(fc + 4))])
-            frio = esc(pb1, [(bri + 'B{}'.format(t), 3),
-                             (bri + 'B{}'.format(t + 1), -22),
-                             (bri + 'B{}'.format(t + 2), 4)],
-                       [('camara', bri + 'D{}'.format(t)),
-                        ('congelador', bri + 'D{}'.format(t + 1)),
-                        ('expositor', bri + 'D{}'.format(t + 2))])
-            malo = esc(pb1, [(bri + 'B{}'.format(t), 8),
-                             (bri + 'B{}'.format(t + 1), -12)],
-                       [('camara', bri + 'D{}'.format(t)),
-                        ('congelador', bri + 'D{}'.format(t + 1))])
-            vacio = esc(pb1, [], [('camara', bri + 'D{}'.format(t)),
-                                  ('dif', bri + 'D{}'.format(b))])
+
+            def arqueo(fondo, contado, tpv, tol=None):
+                sets = [(bri + 'B{}'.format(b), fondo),
+                        (bri + 'C{}'.format(b), contado),
+                        (bri + 'D{}'.format(b), tpv)]
+                if tol is not None:
+                    sets.append((bri + 'B{}'.format(fc + 1), tol))
+                return esc(pb1, sets, [('desc', bri + 'E{}'.format(b)),
+                                       ('ver', bri + 'F{}'.format(b))])
+
+            cuadra = arqueo(200, 1650.50, 1450.50)
+            falta = arqueo(200, 1570.50, 1450.50)     # faltan 80 €
+            sobra = arqueo(200, 1660.50, 1450.50)     # sobran 10 €
+            dentro = arqueo(200, 1653.50, 1450.50)    # +3 €, dentro de los 5
+            estricto = arqueo(200, 1653.50, 1450.50, tol=1)
+            total = esc(pb1, [(bri + 'B{}'.format(b), 200),
+                              (bri + 'C{}'.format(b), 1650.50),
+                              (bri + 'D{}'.format(b), 1450.50),
+                              (bri + 'B{}'.format(b + 1), 150),
+                              (bri + 'C{}'.format(b + 1), 700.25),
+                              (bri + 'D{}'.format(b + 1), 620.25)],
+                        [('fondo', bri + 'B{}'.format(tot)),
+                         ('desc', bri + 'E{}'.format(tot)),
+                         ('ver', bri + 'F{}'.format(tot))])
+
+            def temps(valores):
+                sets = [(bri + 'B{}'.format(t + i), v)
+                        for i, v in enumerate(valores) if v is not None]
+                return esc(pb1, sets,
+                           [(str(i), bri + 'E{}'.format(t + i))
+                            for i in range(len(LIMITES_TEMP))])
+
+            bien = temps([3, -22, 4, 70, 68])
+            mal = temps([8, -12, 4, 55, 60])
+            # RD-22 · el caso que abría el hallazgo: cámara escarchada.
+            escarcha = temps([-5, -22, -6, 70, 68])
+            vacio = esc(pb1, [], [('temp', bri + 'E{}'.format(t)),
+                                  ('desc', bri + 'E{}'.format(b)),
+                                  ('ver', bri + 'F{}'.format(b))])
             fuera['grupo_a_caja_y_temperaturas_bonus01'] = {
-                'ref': '{}:Briefing:D{} (caja) y D{} (temperaturas)'
-                       .format(FB1, b, t),
-                'recién descargado · conforme': vacio['camara'],
-                'recién descargado · diferencia': vacio['dif'],
-                'diferencia 1450,50 − 200': caja['dif'],
-                'fondo total de las dos cajas': caja['total_fondo'],
-                'diferencia total': caja['total_dif'],
-                'cámara a 3 °C (límite 4)': frio['camara'],
-                'congelador a −22 °C (límite −18)': frio['congelador'],
-                'expositor a 4 °C (límite 4)': frio['expositor'],
-                'cámara a 8 °C': malo['camara'],
-                'congelador a −12 °C': malo['congelador'],
-                'ok': (vacio['camara'] in ('', None)
-                       and vacio['dif'] in ('', None)
-                       and abs(caja['dif'] - 1250.5) < 0.01
-                       and caja['total_fondo'] == 350
-                       and abs(caja['total_dif'] - 1720.75) < 0.01
-                       and 'CONFORME' in str(frio['camara'])
-                       and 'CONFORME' in str(frio['congelador'])
-                       and 'CONFORME' in str(frio['expositor'])
-                       and 'FUERA' in str(malo['camara'])
-                       and 'FUERA' in str(malo['congelador'])),
-                'nota': 'el signo importa: con −18 de límite, «conforme» es '
-                        '≤ −18, así que −12 °C tiene que fallar y −22 °C '
-                        'pasar. Y el límite en el borde (4 °C contra 4) es '
-                        'conforme, no incumplimiento (DOM-29)'}
+                'ref': '{}:Briefing:E{}/F{} (arqueo) y E{} (temperaturas)'
+                       .format(FB1, b, b, t),
+                'recién descargado': {'conforme': vacio['temp'],
+                                      'descuadre': vacio['desc'],
+                                      'veredicto': vacio['ver']},
+                'caja cuadrada (fondo 200 · contado 1650,50 · Z 1450,50)':
+                    {'descuadre': cuadra['desc'], 'veredicto': cuadra['ver']},
+                'FALTAN 80 € (el caso que el bloque anterior no veía)':
+                    {'descuadre': falta['desc'], 'veredicto': falta['ver']},
+                'sobran 10 €': {'descuadre': sobra['desc'],
+                                'veredicto': sobra['ver']},
+                '+3 € con tolerancia de 5': {'descuadre': dentro['desc'],
+                                             'veredicto': dentro['ver']},
+                'los mismos +3 € con la tolerancia bajada a 1':
+                    {'veredicto': estricto['ver']},
+                'TOTAL de las dos cajas': {'fondo': total['fondo'],
+                                           'descuadre': total['desc'],
+                                           'veredicto': total['ver']},
+                'temperaturas correctas (3 · −22 · 4 · 70 · 68)':
+                    dict((LIMITES_TEMP[i][0], bien[str(i)])
+                         for i in range(len(LIMITES_TEMP))),
+                'temperaturas malas (8 · −12 · 4 · 55 · 60)':
+                    dict((LIMITES_TEMP[i][0], mal[str(i)])
+                         for i in range(len(LIMITES_TEMP))),
+                'cámara ESCARCHADA a −5 °C y vitrina fría a −6 °C':
+                    dict((LIMITES_TEMP[i][0], escarcha[str(i)])
+                         for i in range(len(LIMITES_TEMP))),
+                'ok': (vacio['temp'] in ('', None)
+                       and vacio['desc'] in ('', None)
+                       and vacio['ver'] in ('', None)
+                       and abs(cuadra['desc']) < 0.01
+                       and 'CUADRA' in str(cuadra['ver'])
+                       and abs(falta['desc'] + 80) < 0.01
+                       and 'FALTAN' in str(falta['ver'])
+                       and abs(sobra['desc'] - 10) < 0.01
+                       and 'SOBRAN' in str(sobra['ver'])
+                       and 'CUADRA' in str(dentro['ver'])
+                       and 'SOBRAN' in str(estricto['ver'])
+                       and total['fondo'] == 350
+                       # caja 1 cuadra (0) y caja 2 tiene 700,25 − 150
+                       # − 620,25 = −70: el total suma los dos.
+                       and abs(total['desc'] + 70) < 0.01
+                       and 'FALTAN' in str(total['ver'])
+                       and all('✓ CONFORME' == bien[str(i)]
+                               for i in range(len(LIMITES_TEMP)))
+                       and 'FUERA' in str(mal['0'])
+                       and 'FUERA' in str(mal['1'])
+                       and '✓ CONFORME' == mal['2']
+                       and 'FUERA' in str(mal['3'])
+                       and 'FUERA' in str(mal['4'])
+                       and 'FUERA' in str(escarcha['0'])
+                       and 'FUERA' in str(escarcha['2'])),
+                'nota': 'el bloque anterior calculaba «Diferencia» = '
+                        'recaudación − fondo, que es la recaudación NETA: un '
+                        'faltante de 80 € salía exactamente igual que una '
+                        'caja cuadrada, y aun así se firmaba como arqueo. Y '
+                        'la conformidad de temperatura sólo miraba el límite '
+                        'SUPERIOR: una cámara escarchada a −5 °C —producto '
+                        'fresco congelado por accidente— salía «✓ CONFORME». '
+                        'Ahora hay lectura Z, descuadre con tolerancia en '
+                        'celda, y mínimo Y máximo por equipo, con las dos '
+                        'filas de mantenimiento en caliente a 65 °C que '
+                        'faltaban (DOM-29/RD-04/RD-22/RD-23)'}
     return fuera

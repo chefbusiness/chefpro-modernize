@@ -221,6 +221,26 @@ TIPOS_NEGOCIO = [
 
 FILA_TOT_03 = 4 + motor.CAPACIDAD + 1          # 35 · TOTALES de Nóminas
 
+#: RD-20 · 52 semanas menos ~4,3 de vacaciones (30 días naturales, art. 38 ET)
+#: y ~2 de festivos (14 días). Va en celda verde: cada convenio tiene lo suyo.
+SEMANAS_EFECTIVAS = 46.5
+
+
+def _nota_dv(ws, coord, titulo, prompt):
+    """Sólo el mensaje de entrada (nota de parámetro), sin restringir valores:
+    es lo que hace `motor.parametro` con los del catálogo §1.4 y lo que
+    necesitan los parámetros propios de un fichero."""
+    dv = DataValidation(type='decimal', operator='greaterThan', formula1='0',
+                        allow_blank=True, showErrorMessage=True,
+                        errorTitle=titulo,
+                        error='Escribe un número mayor que cero.',
+                        errorStyle='stop', showInputMessage=True,
+                        promptTitle='{} · {}'.format(MARCA_B, titulo),
+                        prompt=prompt)
+    ws.add_data_validation(dv)
+    dv.add(coord)
+    return dv
+
 
 def _n03_nominas(wb, cambios):
     """§3 · DOM-08/DOM-31/TEC-14/TEC-26.
@@ -257,6 +277,23 @@ def _n03_nominas(wb, cambios):
     _formula(ws, 'D2', '="El coste total de cada empleado incluye un "'
                        '&TEXT($C$2,"0%")&" de cotización empresarial sobre el '
                        'bruto ya prorrateado"')
+
+    # RD-20 · el «Coste/hora» dividía entre las horas contratadas de las 52
+    # semanas del año, contando como trabajadas los 30 días naturales de
+    # vacaciones (05!'Saldo Vacaciones'!B2, el propio kit) y los ~14 festivos:
+    # se pagan y no se producen. El resultado salía entre un 10 y un 13 %
+    # corto, y ese error se propagaba a la tarifa del 02 y de ahí al coste de
+    # las horas extra. Las semanas EFECTIVAS pasan a celda verde, como manda
+    # §1.4: dependen del convenio de cada uno.
+    _rotulo(ws, 2, 'Semanas efectivas al año:', col=5, negrita=True)
+    _verde(ws, 'F2', SEMANAS_EFECTIVAS, motor.FMT_DEC1)
+    _nota_dv(ws, 'F2', 'Semanas efectivas al año',
+             'Las 52 del año MENOS las de vacaciones y festivos, que se pagan '
+             'y no se trabajan: con 30 días naturales de vacaciones (art. 38 '
+             'ET) y unos 14 festivos salen ~46,5. Es el divisor del '
+             '«Coste/hora»: con 52 el coste por hora REALMENTE trabajada sale '
+             'un 10-13 % corto, y ese número es el que se lleva a la tarifa '
+             'del fichero 02.')
     cambios.append('03:Nóminas!{}: tipo de cotización empresarial en celda '
                    'verde (33 %) — antes iba dentro de 20 fórmulas y de la '
                    'cabecera D4 (DOM-08/TEC-14)'.format(coord))
@@ -283,12 +320,11 @@ def _n03_nominas(wb, cambios):
                  '=IF($E{f}="","",ROUND($E{f}*$C$2,2))'.format(f=f))
         _formula(ws, 'G{}'.format(f),
                  '=IF($E{f}="","",ROUND($E{f}+$F{f},2))'.format(f=f))
-        # 52/12 = las semanas que tiene un mes. Se deja a la vista dentro de la
-        # fórmula en vez de escribir «4,33», que es el mismo número redondeado
-        # y no se entiende al leerlo.
+        # RD-20 · el divisor son las semanas EFECTIVAS (F2, verde) partidas
+        # entre 12, no las 52 del calendario.
         _formula(ws, 'I{}'.format(f),
-                 '=IFERROR(IF(OR($G{f}="",$H{f}="",$H{f}=0),"",'
-                 'ROUND($G{f}/($H{f}*52/12),2)),"")'.format(f=f))
+                 '=IFERROR(IF(OR($G{f}="",$H{f}="",$H{f}=0,$F$2="",$F$2=0),'
+                 '"",ROUND($G{f}/($H{f}*$F$2/12),2)),"")'.format(f=f))
 
     # 4) TOTALES coherentes con las columnas nuevas
     t = FILA_TOT_03
@@ -302,8 +338,8 @@ def _n03_nominas(wb, cambios):
                  motor.FMT_EUR if col in ('C', 'E', 'F', 'G')
                  else motor.FMT_DEC2)
     _formula(ws, 'I{}'.format(t),
-             '=IFERROR(IF(OR($G${t}="",$H${t}=0),"",'
-             'ROUND($G${t}/($H${t}*52/12),2)),"")'.format(t=t),
+             '=IFERROR(IF(OR($G${t}="",$H${t}=0,$F$2="",$F$2=0),"",'
+             'ROUND($G${t}/($H${t}*$F$2/12),2)),"")'.format(t=t),
              motor.FMT_EUR)
     for col in 'ACDEFGHI':
         ws['{}{}'.format(col, t)].fill = PatternFill('solid', fgColor='ECEFF1')
@@ -319,80 +355,203 @@ def _n03_nominas(wb, cambios):
     cambios.append('03:Nóminas!D4:I{}: pagas prorrateadas, cotización por '
                    'parámetro y coste/hora — la columna «Horas Contratadas» '
                    'deja de estar muerta (DOM-31/TEC-26)'.format(t))
+    cambios.append('03:Nóminas!F2: «Semanas efectivas al año» en celda verde '
+                   '({} por defecto) y el «Coste/hora» divide por ella en vez '
+                   'de por las 52 del calendario: contar como trabajadas las '
+                   'semanas de vacaciones y los festivos dejaba el coste por '
+                   'hora un 10-13 % corto, y ese número es el que las '
+                   'Instrucciones mandan llevar a la tarifa del 02 — RD-20'
+                   .format(SEMANAS_EFECTIVAS))
+
+
+#: RC-11 · el semáforo del 03 sólo conocía SEIS tipos y la FAQ de la landing
+#: promete que las plantillas se adaptan a «restaurante casual, fine dining,
+#: fast casual, HOTEL, catering, cadenas». Un hotelero caía al 30/35 %
+#: genérico mientras el BONUS-02, con sus diez tipos, le daba 42/44 % para el
+#: mismo negocio: doce puntos de diferencia en el umbral, y dos ficheros del
+#: MISMO kit emitiendo veredictos opuestos sobre el mismo ratio. Lo mismo con
+#: pizzería, dark kitchen y heladería. Los cuatro entran con los MISMOS
+#: umbrales que `grupo_c.TIPOS_BONUS`.
+TIPOS_NEGOCIO_EXTRA = [
+    ('Pizzería',                '26-30%', '24-32%', 0.30, 0.32),
+    ('Dark Kitchen / Delivery', '22-28%', '20-30%', 0.28, 0.30),
+    ('Hotel (restaurante)',     '35-42%', '33-44%', 0.42, 0.44),
+    ('Heladería / Obrador',     '25-30%', '22-32%', 0.30, 0.32),
+]
+
+#: Geometría de 'Ratio Coste Laboral'. RD-21 mete cuatro filas nuevas en el
+#: bloque de coste, así que la tabla de referencia y el pie se calculan a
+#: partir de aquí y no se escriben a mano en cinco sitios.
+RATIO_TABLA_TIT = 16
+RATIO_TABLA_HDR = 17
+RATIO_TABLA_R0 = 18
 
 
 def _n03_ratio(wb, cambios):
-    """§3 · DOM-16/TEC-10/TEC-11/COM-11/COM-17 — el semáforo deja de felicitar
-    al que no ha medido nada y de suspender a la alta cocina.
+    """§3 · DOM-16/TEC-10/TEC-11/COM-11/COM-17 + RD-01/RT-01/RD-21/RC-11.
 
-    Lo que había: `B7='=IF(B4>0,B5/B4*100,0)'` (con la hoja vacía daba 0) y
-    `B9='=IF(B7<30,"🟢 EXCELENTE…"…)'`, así que un fichero recién descargado
-    abría en verde EXCELENTE; y un fine dining al 38 % —que su propia tabla de
-    la fila 16 declara correcto— salía en rojo.
+    Lo que había en la v1.1: `B7='=IF(B4>0,B5/B4*100,0)'` (con la hoja vacía
+    daba 0) y `B9='=IF(B7<30,"🟢 EXCELENTE…"…)'`, así que un fichero recién
+    descargado abría en verde EXCELENTE; y un fine dining al 38 % —que su
+    propia tabla declara correcto— salía en rojo.
+
+    Y lo que quedaba después de la v2.0, medido con pycel sobre la copia
+    dry-run:
+
+      · **RD-01/RT-01 · la guarda se puso sólo del lado de las ventas.** `B5`
+        era `=Nóminas!$G$35`, un `SUM` sobre una hoja vacía, así que vale 0 y
+        no `""`: bastaba teclear las ventas del mes sin haber volcado una sola
+        nómina para que el ratio saliera 0,0 % y el semáforo declarara «🟢
+        EXCELENTE», con su formato condicional verde. El mismo falso positivo
+        tranquilizador del R1, a una pulsación de distancia, en la métrica que
+        la landing vende como argumento principal del 03. Ahora la guarda mira
+        las DOS entradas, los dos huecos se nombran por separado, y por debajo
+        del 60 % del objetivo el veredicto avisa de que el ratio es
+        implausible: un coste laboral demasiado BAJO es tan alarma como uno
+        alto — significa que faltan nóminas.
+      · **RD-21 · el coste laboral era sólo las nóminas, y bloqueado.** No
+        había forma de incluir las horas extra del 02 (que el propio kit
+        totaliza en `Resumen Mensual!G37` y no lee nadie), ni una ETT, ni el
+        refuerzo del día pico que recomienda el BONUS-02. El ratio salía
+        sistemáticamente por debajo del real y el semáforo aprobaba de más.
+      · **RC-11 · seis tipos de negocio frente a los diez del BONUS-02.**
     """
     ws = wb['Ratio Coste Laboral']
     motor._limpiar_dv(ws)
-    _merges(ws, ['A1:E1', 'A2:E2', 'A22:E22', 'B9:E9'])
-    _anchos(ws, {'A': 34, 'B': 20, 'C': 24, 'D': 16, 'E': 16})
+    tipos = TIPOS_NEGOCIO + TIPOS_NEGOCIO_EXTRA
+    r0 = RATIO_TABLA_R0
+    r1 = r0 + len(tipos) - 1
+    nota = r1 + 1
+    pie = nota + 2
+    _vaciar(ws, 3, max(pie + 2, ws.max_row))
+    _merges(ws, ['A1:E1', 'A2:E2', 'A{0}:E{0}'.format(pie), 'B13:E13'])
+    _anchos(ws, {'A': 40, 'B': 20, 'C': 26, 'D': 16, 'E': 16})
 
     _rotulo(ws, 3, 'Tipo de negocio:')
     _verde(ws, 'B3')
     ws['B3'].value = None
-    _dv(ws, 'B3', [t[0] for t in TIPOS_NEGOCIO], 'Tipo de negocio no válido',
+    _dv(ws, 'B3', [t[0] for t in tipos], 'Tipo de negocio no válido',
         'De aquí salen los dos umbrales del semáforo por VLOOKUP sobre la '
-        'tabla de esta misma hoja. Si lo dejas en blanco, el semáforo usa el '
-        '30 % / 35 % genérico, que es lo que hacía la versión 1.1 para todo '
-        'el mundo.',
-        'Elige uno de los seis tipos de la tabla de referencia de abajo.')
+        'tabla de esta misma hoja. Son los mismos diez tipos y los mismos '
+        'umbrales que la calculadora del BONUS-02: los dos ficheros no pueden '
+        'dar veredictos distintos sobre el mismo ratio. Si lo dejas en '
+        'blanco, el semáforo usa el 30 % / 35 % genérico.',
+        'Elige uno de los diez tipos de la tabla de referencia de abajo.')
 
     _rotulo(ws, 4, 'Ventas Netas del Mes (€):')
     _verde(ws, 'B4', fmt=motor.FMT_EUR)
-    _rotulo(ws, 5, 'Coste Laboral Total (€):')
+
+    # ---- RD-21 · el coste laboral del MES, no sólo las nóminas -----------
+    _rotulo(ws, 5, 'Nóminas del mes (€) — sale de la hoja «Nóminas»:')
     _formula(ws, 'B5', "=Nóminas!$G${}".format(FILA_TOT_03), motor.FMT_EUR)
-
-    _rotulo(ws, 7, 'RATIO COSTE LABORAL (%):', negrita=True)
-    _formula(ws, 'B7',
-             '=IFERROR(IF(OR($B$4="",$B$4<=0),"",ROUND($B$5/$B$4,4)),"")',
-             motor.FMT_PCT1)
-    _rotulo(ws, 7, 'Ratio objetivo de tu tipo:', col=3)
-    _formula(ws, 'D7', '=IFERROR(VLOOKUP($B$3,$A$14:$E$19,4,FALSE),0.3)',
-             motor.FMT_PCT1)
-    _rotulo(ws, 8, 'Máximo aceptable de tu tipo:', col=3)
-    _formula(ws, 'D8', '=IFERROR(VLOOKUP($B$3,$A$14:$E$19,5,FALSE),0.35)',
-             motor.FMT_PCT1)
-
-    _rotulo(ws, 9, 'Semáforo:', negrita=True)
+    for fila, rotulo, prompt in (
+            (6, 'Horas extra del mes (€):',
+             'Cópialo de «Resumen Mensual»!G37 del fichero 02 (el total de la '
+             'columna «Coste de las horas extra»). El kit lo calcula y hasta '
+             'ahora no lo leía nadie, así que el ratio salía corto.'),
+            (7, 'Personal externo / ETT (€):',
+             'Extras de fin de semana, ETT, personal de refuerzo del día pico '
+             '(el que recomienda contratar el BONUS-02). Es coste laboral '
+             'aunque no esté en tu nómina.'),
+            (8, 'Otros costes de personal (€):',
+             'Dietas, formación obligatoria, vestuario, transporte, comida de '
+             'personal… lo que tu contabilidad impute a personal y no salga '
+             'de las nóminas.')):
+        _rotulo(ws, fila, rotulo)
+        _verde(ws, 'B{}'.format(fila), fmt=motor.FMT_EUR)
+        _nota_dv(ws, 'B{}'.format(fila), rotulo.rstrip(':'), prompt)
+    _rotulo(ws, 9, 'COSTE LABORAL TOTAL DEL MES (€):', negrita=True)
     _formula(ws, 'B9',
-             '=IF($B$7="","— introduce las ventas del mes y las nóminas",'
-             'IF($B$7<$D$7,"🟢 EXCELENTE (por debajo de tu objetivo)",'
-             'IF($B$7<=$D$8,"🟡 VIGILAR (en el límite)",'
-             '"🔴 ACCIÓN CORRECTIVA")))', 'General')
-    ws['B9'].alignment = Alignment(vertical='center')
+             '=IF(COUNT($B$5:$B$8)=0,"",ROUND(SUM($B$5:$B$8),2))',
+             motor.FMT_EUR)
+    ws['B9'].font = Font(bold=True)
 
-    _rotulo(ws, 10, '▸ Sin tipo de negocio elegido el semáforo cae al 30 % / '
-                    '35 % genérico, que es como se comportaba la versión 1.1.')
-    ws['A10'].font = Font(size=9, italic=True)
+    # ---- RD-01/RT-01 · el ratio y su semáforo ----------------------------
+    _rotulo(ws, 11, 'RATIO COSTE LABORAL (%):', negrita=True)
+    _formula(ws, 'B11',
+             '=IFERROR(IF(OR($B$4="",$B$4<=0,$B$9="",$B$9<=0),"",'
+             'ROUND($B$9/$B$4,4)),"")', motor.FMT_PCT1)
+    _rotulo(ws, 11, 'Ratio objetivo de tu tipo:', col=3)
+    _formula(ws, 'D11', '=IFERROR(VLOOKUP($B$3,$A${a}:$E${b},4,FALSE),0.3)'
+             .format(a=r0, b=r1), motor.FMT_PCT1)
+    _rotulo(ws, 12, 'Máximo aceptable de tu tipo:', col=3)
+    _formula(ws, 'D12', '=IFERROR(VLOOKUP($B$3,$A${a}:$E${b},5,FALSE),0.35)'
+             .format(a=r0, b=r1), motor.FMT_PCT1)
 
-    _rotulo(ws, 12, 'Ratios de Referencia por Tipo', negrita=True)
-    _cabecera(ws, 13, ['Tipo de Negocio', 'Ratio Objetivo', 'Rango Aceptable',
-                       'Objetivo % (núm.)', 'Aceptable % (núm.)'])
-    for i, fila in enumerate(TIPOS_NEGOCIO):
-        r = 14 + i
+    _rotulo(ws, 13, 'Semáforo:', negrita=True)
+    _formula(ws, 'B13',
+             '=IF(OR($B$4="",$B$4<=0),'
+             '"— introduce las VENTAS netas del mes (B4)",'
+             'IF(OR($B$9="",$B$9<=0),'
+             '"— aún no hay coste: vuelca las nóminas en la hoja «Nóminas»",'
+             'IF($B$11<$D$11*0.6,'
+             '"⚠ ratio implausible: revisa que estén TODAS las nóminas",'
+             'IF($B$11<$D$11,"🟢 EXCELENTE (por debajo de tu objetivo)",'
+             'IF($B$11<=$D$12,"🟡 VIGILAR (en el límite)",'
+             '"🔴 ACCIÓN CORRECTIVA")))))', 'General')
+    ws['B13'].alignment = Alignment(vertical='center')
+
+    _rotulo(ws, 14, '▸ Sin tipo de negocio elegido el semáforo cae al 30 % / '
+                    '35 % genérico. Y por debajo del 60 % de tu objetivo no '
+                    'te felicita: un coste laboral así de bajo casi siempre '
+                    'significa que faltan nóminas por volcar, no que vayas '
+                    'sobrado.')
+    ws['A14'].font = Font(size=9, italic=True)
+    ws['A14'].alignment = Alignment(wrap_text=True, vertical='top')
+    ws.row_dimensions[14].height = 28
+
+    _rotulo(ws, RATIO_TABLA_TIT, 'Ratios de Referencia por Tipo', negrita=True)
+    _cabecera(ws, RATIO_TABLA_HDR,
+              ['Tipo de Negocio', 'Ratio Objetivo', 'Rango Aceptable',
+               'Objetivo % (núm.)', 'Aceptable % (núm.)'])
+    for i, fila in enumerate(tipos):
+        r = r0 + i
         ws['A{}'.format(r)] = fila[0]
         ws['B{}'.format(r)] = fila[1]
         ws['C{}'.format(r)] = fila[2]
         ws['D{}'.format(r)] = fila[3]
         ws['E{}'.format(r)] = fila[4]
+        for col in ('B', 'C'):
+            ws['{}{}'.format(col, r)].number_format = 'General'
+        for col in ('D', 'E'):
+            ws['{}{}'.format(col, r)].number_format = motor.FMT_PCT1
 
-    _rotulo(ws, 20, '▸ Las dos columnas numéricas son el extremo superior de '
-                    'los rangos de texto: es lo que lee el VLOOKUP del '
-                    'semáforo, para que la tabla y el veredicto no puedan '
-                    'contradecirse.')
-    ws['A20'].font = Font(size=9, italic=True)
-    _pie(ws, 22, 5)
-    cambios.append('03:Ratio Coste Laboral!B3/D7/D8/B9: umbrales por VLOOKUP '
-                   'sobre A14:E19 y veredicto en blanco con la hoja vacía '
-                   '(DOM-16/TEC-10/TEC-11/COM-17)')
+    _rotulo(ws, nota, '▸ Las dos columnas numéricas son el extremo superior '
+                      'de los rangos de texto: es lo que lee el VLOOKUP del '
+                      'semáforo, para que la tabla y el veredicto no puedan '
+                      'contradecirse. Son los mismos diez tipos y los mismos '
+                      'umbrales que la hoja «Ratios por Tipo» del BONUS-02.')
+    ws['A{}'.format(nota)].font = Font(size=9, italic=True)
+    ws['A{}'.format(nota)].alignment = Alignment(wrap_text=True,
+                                                 vertical='top')
+    ws.row_dimensions[nota].height = 28
+    _merges(ws, ['A1:E1', 'A2:E2', 'A{0}:E{0}'.format(pie), 'B13:E13',
+                 'A14:E14', 'A{0}:E{0}'.format(nota)])
+    _pie(ws, pie, 5)
+    cambios.append('03:Ratio Coste Laboral!B3/D11/D12/B13: umbrales por '
+                   'VLOOKUP sobre A{}:E{} y veredicto en blanco con la hoja '
+                   'vacía (DOM-16/TEC-10/TEC-11/COM-17)'.format(r0, r1))
+    cambios.append('03:Ratio Coste Laboral!B11/B13: la guarda deja de mirar '
+                   'sólo las VENTAS. Antes bastaba teclear las ventas del mes '
+                   'sin una sola nómina volcada para que el ratio saliera '
+                   '0,0 % y el semáforo dijera «🟢 EXCELENTE» —B5 era un SUM '
+                   'sobre una hoja vacía, que vale 0 y no «»—. Ahora los dos '
+                   'huecos se nombran por separado y por debajo del 60 % del '
+                   'objetivo el veredicto avisa de ratio implausible — '
+                   'RD-01/RT-01')
+    cambios.append('03:Ratio Coste Laboral!B5:B9: el coste laboral deja de '
+                   'ser sólo las nóminas y bloqueado. B5 sigue saliendo de '
+                   '«Nóminas» y entran tres verdes —horas extra del mes '
+                   '(02!Resumen Mensual!G37), personal externo / ETT y otros '
+                   'costes de personal— que B9 suma. El ratio salía '
+                   'sistemáticamente por debajo del real y el semáforo '
+                   'aprobaba de más — RD-21')
+    cambios.append('03:Ratio Coste Laboral!A{}:E{}: la tabla pasa de 6 a {} '
+                   'tipos —entran hotel, pizzería, dark kitchen y heladería '
+                   'con los MISMOS umbrales que el BONUS-02—, así que un '
+                   'hotelero deja de caer al 30/35 % genérico mientras el '
+                   'bonus le daba 42/44 % para el mismo negocio — RC-11'
+                   .format(r0, r1, len(tipos)))
 
 
 def _n03_prevision(wb, cambios):
@@ -1282,6 +1441,9 @@ def _d03_coste(carpeta):
     _sv(xl, ref('D5'), 14)
     _sv(xl, ref('H5'), 40)
     base = dict((c, _ev(xl, ref(c + '5'))) for c in 'EFGI')
+    _sv(xl, ref('F2'), 52)
+    base['I_52'] = _ev(xl, ref('I5'))
+    _sv(xl, ref('F2'), SEMANAS_EFECTIVAS)
     _sv(xl, ref('D5'), 12)
     doce = _ev(xl, ref('E5'))
     _sv(xl, ref('D5'), 14)
@@ -1291,7 +1453,12 @@ def _d03_coste(carpeta):
           and _num(base['E']) and abs(base['E'] - 1750.0) < 0.01
           and _num(base['F']) and abs(base['F'] - 577.5) < 0.01
           and _num(base['G']) and abs(base['G'] - 2327.5) < 0.01
-          and _num(base['I']) and abs(base['I'] - 13.43) < 0.02
+          # RD-20 · el divisor son las semanas EFECTIVAS (46,5), no 52:
+          # 2.327,50 / (40 × 46,5 / 12) = 15,02 €/h. Con las 52 del
+          # calendario salían 13,43 €/h — un 11 % corto, y ese número es el
+          # que las Instrucciones mandan llevar a la tarifa del 02.
+          and _num(base['I']) and abs(base['I'] - 15.02) < 0.02
+          and _num(base['I_52']) and abs(base['I_52'] - 13.43) < 0.02
           and _num(doce) and abs(doce - 1500.0) < 0.01
           and _num(ss40) and ss40 > base['F'])
     return {
@@ -1300,58 +1467,113 @@ def _d03_coste(carpeta):
         'bruto_1500_x14_pagas': {'prorrateado_E5': base['E'],
                                  'cotizacion_F5': base['F'],
                                  'coste_total_G5': base['G'],
-                                 'coste_hora_I5': base['I']},
+                                 'coste_hora_I5_con_46_5_semanas': base['I'],
+                                 'coste_hora_I5_con_52_semanas':
+                                     base['I_52']},
         'mismo_bruto_en_12_pagas_E5': doce,
         'cotizacion_al_40_por_ciento_F5': ss40,
         'ok': ok,
         'nota': 'la v1.1 hacía `=IF(C5<>"",C5*0.30,"")` sin pagas: 1.500 € en '
                 '14 pagas costaban 1.950 €/mes en vez de 2.327,50 € — un 19 % '
-                'de error a favor del optimismo (DOM-08/DOM-31/TEC-14)'}
+                'de error a favor del optimismo (DOM-08/DOM-31/TEC-14). Y el '
+                'coste/hora dividía entre las 52 semanas del calendario, '
+                'contando como trabajadas las de vacaciones y los festivos: '
+                '13,43 €/h en vez de 15,02 (RD-20)'}
 
 
 def _d03_semaforo(carpeta):
-    """§3 · el MISMO ratio del 40 % es rojo en un casual y ámbar en un fine
-    dining, porque los umbrales salen de la tabla por VLOOKUP (DOM-16)."""
+    """§3 + RD-01/RT-01/RD-21/RC-11 — el semáforo del coste laboral.
+
+    Cuatro cosas se miden aquí, todas cambiando entradas sobre MI copia:
+
+      1. El MISMO ratio del 40 % es rojo en un fast casual y ámbar en un fine
+         dining, porque los umbrales salen de la tabla por VLOOKUP (DOM-16).
+      2. **RD-01/RT-01**: teclear las VENTAS sin una sola nómina ya no produce
+         «🟢 EXCELENTE». `B5` es un `SUM` sobre una hoja vacía, así que vale 0
+         y no `""`: la guarda tenía que mirar el COSTE, no sólo las ventas.
+      3. **RD-21**: horas extra, ETT y otros costes de personal entran en el
+         coste y mueven el ratio.
+      4. **RC-11**: «Hotel (restaurante)» existe en el 03 y devuelve los
+         MISMOS 42/44 % que el BONUS-02.
+    """
     p = os.path.join(carpeta, '03-coste-laboral-mensual.xlsx')
     if not os.path.isfile(p):
         return None
-    xl = _xl(p)
     hoja = "'Ratio Coste Laboral'!"
-    fresco = {'ratio_B7': _ev(xl, hoja + 'B7'),
-              'veredicto_B9': _ev(xl, hoja + 'B9')}
-    _sv(xl, hoja + 'B5', 20000)
-    _sv(xl, hoja + 'B4', 50000)
-    sin_tipo = {'ratio_B7': _ev(xl, hoja + 'B7'),
-                'objetivo_D7': _ev(xl, hoja + 'D7'),
-                'maximo_D8': _ev(xl, hoja + 'D8'),
-                'veredicto_B9': _ev(xl, hoja + 'B9')}
-    _sv(xl, hoja + 'B3', 'Fine Dining / Alta Cocina')
-    fine = {'objetivo_D7': _ev(xl, hoja + 'D7'),
-            'maximo_D8': _ev(xl, hoja + 'D8'),
-            'veredicto_B9': _ev(xl, hoja + 'B9')}
-    _sv(xl, hoja + 'B3', 'Fast Casual / Comida Rápida')
-    fast = {'objetivo_D7': _ev(xl, hoja + 'D7'),
-            'maximo_D8': _ev(xl, hoja + 'D8'),
-            'veredicto_B9': _ev(xl, hoja + 'B9')}
-    ok = (fresco['ratio_B7'] in ('', None)
-          and 'introduce' in str(fresco['veredicto_B9'])
-          and abs((sin_tipo['ratio_B7'] or 0) - 0.4) < 0.0001
-          and 'ACCIÓN CORRECTIVA' in str(sin_tipo['veredicto_B9'])
-          and abs((fine['objetivo_D7'] or 0) - 0.40) < 0.0001
-          and 'VIGILAR' in str(fine['veredicto_B9'])
-          and abs((fast['maximo_D8'] or 0) - 0.30) < 0.0001
-          and 'ACCIÓN CORRECTIVA' in str(fast['veredicto_B9']))
-    return {'ref': '03-coste-laboral-mensual.xlsx:Ratio Coste Laboral:B9',
-            'hoja_recien_descargada': dict((k, str(v))
-                                           for k, v in fresco.items()),
-            'ratio_40_sin_tipo_elegido': sin_tipo,
-            'ratio_40_en_fine_dining': fine,
-            'ratio_40_en_fast_casual': fast,
+
+    def escena(sets, lecturas=('B11', 'B13', 'D11', 'D12', 'B9')):
+        xl = _xl(p)
+        for ref, val in sets:
+            _calentar(xl, [hoja + ref])
+            _sv(xl, hoja + ref, val)
+        return dict((c, _ev(xl, hoja + c)) for c in lecturas)
+
+    fresco = escena([])
+    # RD-01 · el caso exacto del hallazgo: ventas sí, nóminas no
+    solo_ventas = escena([('B4', 50000)])
+    # el coste entra por las nóminas (B5 es fórmula: se fuerza el valor)
+    base = escena([('B4', 50000), ('B5', 20000)])
+    fine = escena([('B4', 50000), ('B5', 20000),
+                   ('B3', 'Fine Dining / Alta Cocina')])
+    fast = escena([('B4', 50000), ('B5', 20000),
+                   ('B3', 'Fast Casual / Comida Rápida')])
+    hotel = escena([('B4', 50000), ('B5', 20000),
+                    ('B3', 'Hotel (restaurante)')])
+    # RD-21 · las tres casillas nuevas suman al coste
+    con_extras = escena([('B4', 50000), ('B5', 20000), ('B6', 1200),
+                         ('B7', 800), ('B8', 500)])
+    # RD-01 · suelo de plausibilidad: 5 % de ratio con objetivo del 33 %
+    implausible = escena([('B4', 50000), ('B5', 2500)])
+
+    ok = (fresco['B11'] in ('', None)
+          and 'VENTAS' in str(fresco['B13'])
+          and solo_ventas['B11'] in ('', None)
+          and 'nóminas' in str(solo_ventas['B13'])
+          and abs((base['B11'] or 0) - 0.4) < 0.0001
+          and 'ACCIÓN CORRECTIVA' in str(base['B13'])
+          and abs((fine['D11'] or 0) - 0.40) < 0.0001
+          and 'VIGILAR' in str(fine['B13'])
+          and abs((fast['D12'] or 0) - 0.30) < 0.0001
+          and 'ACCIÓN CORRECTIVA' in str(fast['B13'])
+          and abs((hotel['D11'] or 0) - 0.42) < 0.0001
+          and abs((hotel['D12'] or 0) - 0.44) < 0.0001
+          and 'EXCELENTE' in str(hotel['B13'])
+          and abs((con_extras['B9'] or 0) - 22500) < 0.01
+          and abs((con_extras['B11'] or 0) - 0.45) < 0.0001
+          and 'implausible' in str(implausible['B13']))
+    return {'ref': '03-coste-laboral-mensual.xlsx:Ratio Coste Laboral:'
+                   'B9/B11/B13',
+            'hoja_recien_descargada': {'ratio': str(fresco['B11']),
+                                       'veredicto': str(fresco['B13'])},
+            'ventas 50.000 SIN una sola nómina (RD-01/RT-01)':
+                {'coste_B9': str(solo_ventas['B9']),
+                 'ratio': str(solo_ventas['B11']),
+                 'veredicto': str(solo_ventas['B13'])},
+            'ratio 40 % sin tipo elegido': {'ratio': base['B11'],
+                                            'veredicto': base['B13']},
+            'ratio 40 % en fine dining': {'objetivo': fine['D11'],
+                                          'maximo': fine['D12'],
+                                          'veredicto': fine['B13']},
+            'ratio 40 % en fast casual': {'objetivo': fast['D11'],
+                                          'maximo': fast['D12'],
+                                          'veredicto': fast['B13']},
+            'ratio 40 % en HOTEL, que antes no existía en el 03 (RC-11)':
+                {'objetivo': hotel['D11'], 'maximo': hotel['D12'],
+                 'veredicto': hotel['B13']},
+            'con horas extra 1.200 + ETT 800 + otros 500 (RD-21)':
+                {'coste_total_B9': con_extras['B9'],
+                 'ratio': con_extras['B11'],
+                 'veredicto': con_extras['B13']},
+            'coste 2.500 sobre ventas de 50.000 = 5 % (RD-01)':
+                {'ratio': implausible['B11'],
+                 'veredicto': implausible['B13']},
             'ok': ok,
             'nota': 'la v1.1 daba «🟢 EXCELENTE (<30%)» con la hoja vacía y '
                     'suspendía a cualquiera por encima del 35 %, incluida la '
                     'alta cocina que su propia tabla declara correcta hasta '
-                    'el 42 % (DOM-16/COM-11/COM-17)'}
+                    'el 42 %. Y la v2.0 seguía dando EXCELENTE en cuanto se '
+                    'tecleaban las ventas sin nóminas, porque la guarda sólo '
+                    'miraba B4 (DOM-16/COM-11/COM-17/RD-01/RT-01/RD-21/RC-11)'}
 
 
 def _d03_fte(carpeta):

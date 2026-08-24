@@ -1,7 +1,7 @@
 {
  "informe": "Corrección de los 74 hallazgos de las 3 lentes refutadoras del Kit de Gestión de Personal y Turnos v2.0",
  "fecha": "2026-08-24",
- "estado": "EN CURSO — grupo_c, motor y main hechos",
+ "estado": "EN CURSO — motor, main, grupo_a y grupo_c hechos",
  "entrada": {
   "total": 74,
   "ids": [
@@ -151,6 +151,91 @@
    "id": "RC-12",
    "fichero": "grupo_c.py:_bonus_calculadora nota A51",
    "fix": "La nota deja de culpar al usuario: dice que 03!'Previsión por Servicio' no tiene selector de tipo y que hay que copiar B19:B21 a B7:B9."
+  },
+  {
+   "id": "RT-02",
+   "fichero": "grupo_a.py:_hoja_turnos",
+   "fix": "01!'Turnos'!E5:E12 pasa de constante verde a fórmula '=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,24)-IF($F5=\"\",0,$F5),2))' y entra la columna F «Pausa (h)» (P=4). Demo grupo_a_turnos_manda_01: Turnos!D5=17 → E5=10, I6=10 y N6='⛔ jornada > 9 h' (antes E5=8, I6=48, N6 vacía)."
+  },
+  {
+   "id": "RD-16",
+   "fichero": "grupo_a.py:_alertas_semanal + _cuadrante_semanal",
+   "fix": "01!'Cuadrante Semanal'!O (verde S/N con DV) y P (alerta). Demo grupo_a_menores_01: con O6='S', un PARTIDO de 9 h da N6='⛔ jornada > 8 h (MENOR)' y una N o una D dan P6='⛔ MENOR: trabajo nocturno y turno doble prohibidos (art. 6 ET)'. Bloque auxiliar desplazado de P..AP a R..AR."
+  },
+  {
+   "id": "RD-30",
+   "fichero": "grupo_a.py:_cuadrante_semanal + _cuadrante_mensual",
+   "fix": "I36 pasa a '=IF(COUNT($I$6:$I$35)=0,\"\",ROUND(SUM(...),2))'; K/M/N y las cabeceras I5:P5 a 'General'; en 'Cuadrante Mensual', columna J y las 6 cabeceras a 'General'."
+  },
+  {
+   "id": "RT-17",
+   "fichero": "motor.py:PRESENTACION + grupo_a.py:_cuadrante_mensual",
+   "fix": "print_title_rows del mensual '$4:$4' → '$1:$2' (el título del documento, común a los 6 bloques) + ws.row_breaks antes de cada bloque, para que cada SEMANA se imprima con su rótulo."
+  },
+  {
+   "id": "RD-02",
+   "fichero": "grupo_a.py:_resumen_mensual G",
+   "fix": "G6 descuenta las «Compensada con descanso» (se pagan en tiempo, art. 35.1 ET) y deja dentro las de fuerza mayor. Demo grupo_a_coste_por_tipo_02: 4 h compensadas → coste 0,00 € (antes 60,00 €); 4 h de fuerza mayor → 60,00 €."
+  },
+  {
+   "id": "RT-06",
+   "fichero": "grupo_a.py:_resumen_mensual G",
+   "fix": "Mismo cambio, con el matiz de dominio de RD-02 (fuerza mayor SÍ se paga)."
+  },
+  {
+   "id": "RD-18",
+   "fichero": "grupo_a.py:TIPOS_EXTRA + _resumen_mensual C/G",
+   "fix": "Nuevo tipo 'Complementaria (contrato parcial)': fuera del tope (C) y retribuida como ORDINARIA (G la paga sin el 1,25 → 48,00 € en vez de 60,00 €). Instrucciones con arts. 12.4.c y 12.5 ET."
+  },
+  {
+   "id": "RD-17",
+   "fichero": "grupo_a.py:_resumen_mensual H",
+   "fix": "Columna nueva H «Saldo del mes (trabajadas − contratadas)» con signo. Demo grupo_a_saldo_neto_02: lunes 10 h + martes 6 h contra 8 y 8 → B6=2 h extra pero H6=0,00; dos días de 6 h → H6=−4,00."
+  },
+  {
+   "id": "RD-19",
+   "fichero": "grupo_a.py:_horas_registro + DV de C:D",
+   "fix": "DV type='time' 0:00-23:59 en C5:D304 + F se queda VACÍA y J avisa. Demo: C5=9, D5=17 (números) → F5='' y J5='⚠ escribe la hora con dos puntos: 9:00, no 9'."
+  },
+  {
+   "id": "RT-09",
+   "fichero": "grupo_a.py:_horas_registro + DV de E",
+   "fix": "DV decimal 0-8 en E5:E304 y guarda pausa>tramo. Demo: 09:00→13:00 con pausa 6 → F5='' (antes −2,00) y J5='⚠ la pausa es mayor que la jornada'."
+  },
+  {
+   "id": "RT-15",
+   "fichero": "grupo_a.py:_horas_registro",
+   "fix": "Entrada = salida deja de devolver 0,00 en silencio. Demo: C5=D5=09:00 → F5='' y J5='⚠ entrada y salida iguales: la jornada no suma'."
+  },
+  {
+   "id": "RT-05",
+   "fichero": "grupo_a.py:_aviso_registro (columna J)",
+   "fix": "COUNTIF contra 'Resumen Mensual'!$A$6:$A$35. Demo: 'Ana Pérez ' (espacio final) con el resumen en 'Ana Pérez' → J5='⚠ ese nombre no está en el «Resumen Mensual»: sus horas no se agregan'."
+  },
+  {
+   "id": "RT-16",
+   "fichero": "grupo_a.py:_resumen_mensual",
+   "fix": "Cabecera F5 → «Estado frente al límite anual» y number_format 'General' en F5:F35."
+  },
+  {
+   "id": "RC-20",
+   "fichero": "grupo_a.py:_resumen_mensual",
+   "fix": "Mismo cambio que RT-16: el rótulo del parámetro se queda sólo en E3."
+  },
+  {
+   "id": "RD-04",
+   "fichero": "grupo_a.py:_bonus01 + _veredicto_caja",
+   "fix": "Bloque de caja rehecho: Fondo | Efectivo contado | Ventas en efectivo del TPV (Z) | Descuadre = C−B−D | Veredicto contra una tolerancia verde (5 € por defecto). Demo: fondo 200, contado 1570,50, Z 1450,50 → descuadre −80,00 y '⛔ FALTAN 80.00 €' (antes ese faltante era indistinguible de una caja cuadrada)."
+  },
+  {
+   "id": "RD-22",
+   "fichero": "grupo_a.py:LIMITES_TEMP + _bonus01",
+   "fix": "Mínimo Y máximo por equipo; E = IF(AND($B>=$C,$B<=$D),...). Demo: cámara a −5 °C → '⛔ FUERA DE RANGO' (antes '✓ CONFORME')."
+  },
+  {
+   "id": "RD-23",
+   "fichero": "grupo_a.py:LIMITES_TEMP",
+   "fix": "Dos filas nuevas de mantenimiento en caliente (65/90) y 'Expositor / vitrina' renombrado a 'Expositor / vitrina FRÍA'. Demo: baño maría a 55 °C → '⛔ FUERA DE RANGO'."
   }
  ],
  "no_aplicados": [
