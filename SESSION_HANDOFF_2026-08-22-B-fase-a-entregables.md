@@ -303,3 +303,8 @@ censo → gate offline → commit rutas explícitas → deploy → gate LIVE.
 **Después de plan-financiero (orden del plan):** guías → planes → hotel completo → eBook · homologación AICP↔CB ·
 SEO landings ES+LATAM. Pendientes de John: avisos legales (ancla 190 €, aggregateRating), licencia inventario,
 webhook/strict, marca CB en 7 productos.
+
+**Cierre certificado (24-ago 11:35):** gate LIVE global 44 · 650 · 0 fallos
+(`auditorias/gate-live-2026-08-24-cierre.json`); main `d77d7c2` limpio; capa de producto de plan-financiero en la
+rama `wip/plan-financiero-capa-producto` (pusheada, NO mergear hasta aplicar los grupos). Sesión pausada por consumo
+de tokens; retomar por §11 en sesión fresca.
