@@ -270,7 +270,12 @@ Homologación AICP↔CB sigue pendiente (los 11 kits v2.0 deben llegar a CB).
   0), 35 desplegables, 31 reglas de CF, 29/38 hojas protegidas, taxonomía única de 10 categorías, FIFO 5 estados,
   temperaturas legales con «Conforme» por fórmula, EOQ parametrizada. Gate LIVE 9/9, producción = repo.
   Paquete reutilizable: `kit-inventario-v2_0/` (motor + grupos + main con APPLY).
-- **Gestión-personal v2.0**: construcción EN CURSO al escribir esto (workflow `wf_186ca06c-b1d`); si se corta, WIP
-  commiteado entre fases y el runId no sobrevive a la sesión — relanzar el workflow entero (los ficheros del paquete
-  `kit-gestion-personal-v2_0/` que existan se revisan, no se pisan). Después: plan-financiero
-  (`kit-plan-financiero-v2-workflow.js`, ya escrito y commiteado).
+- **Kit de Gestión de Personal v2.0 LIVE** (`c3d7503`, mañana del 24-ago): horas con cruce de medianoche, recargo de
+  convenio en celda + 80 h/año, 4 alertas del cuadrante por fórmula (12 h art. 34.3 ET), vacaciones que cuentan DÍAS,
+  SS 33 % en celda + pagas prorrateadas, onboarding 0 %/50 tareas, ficha sin #DIV/0!, directorio sin datos de salud
+  (art. 9 RGPD), BONUS-02 con 7 FTE/31,3 %; copy legal corregido (registro horario 2019, LISOS 7.5). Crítico paró 3
+  bloqueos de fontanería (demos que escribían en public/dl en pasada real — parcheado también en el kit de inventario —,
+  CtaFinal con 40+, tildes SPA); todos aplicados. Gate LIVE 9/9, producción = repo.
+- **Plan-financiero v2.0**: construcción EN CURSO (workflow `wf_b368e319-e72`, auto-commit cada 15 min); si se corta,
+  relanzar el workflow entero revisando el paquete `kit-plan-financiero-v2_0/` existente. Al dar verde el crítico:
+  fixes → dry-run → APPLY → censo → gate offline → commit rutas explícitas → deploy → gate LIVE (nunca `git add dl/` entero).
