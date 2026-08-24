@@ -1726,16 +1726,31 @@ def colores_seccion_04(wb, fname, informe):
 #: sólo admite las cadenas «Completa» y «Parcial»: un formato numérico sobre
 #: una columna donde no se puede escribir un número. Va con coincidencia
 #: EXACTA, no por subcadena: «Jornada contratada (h/semana)» sí es numérica.
-CABECERAS_DE_TEXTO = frozenset(['jornada', 'estado', 'aviso', 'alerta',
-                                'conforme', 'veredicto', 'plazo', 'tendencia',
-                                'nivel', 'semáforo', 'semaforo'])
+CABECERAS_DE_TEXTO = frozenset([
+    # 07!'Plantilla'!G · DV de «Completa,Parcial»
+    'jornada',
+    # 01!'Cuadrante Semanal'!K:P y 01!'Cuadrante Mensual'!J · las alertas
+    # devuelven «⛔ …» o cadena vacía, y su cabecera lleva la palabra
+    # «jornada», que el mapa envía a 0.00.
+    'descanso entre jornadas', 'descanso semanal', 'jornada semanal',
+    'jornada diaria', 'menor de edad (s/n)', 'alerta menores',
+    'alerta semanal', 'alerta del cómputo', 'alerta del computo',
+    # 02!'Resumen Mensual'!F · veredicto frente al tope anual (RT-16)
+    'estado frente al límite anual', 'estado frente al limite anual',
+    # BONUS-02!'Ratios por Tipo'!H · «28-33%», texto
+    'ratio coste laboral',
+    # genéricas
+    'estado', 'aviso', 'alerta', 'conforme', 'veredicto', 'plazo',
+    'tendencia', 'nivel', 'semáforo', 'semaforo'])
 
 
 def _formato_de_cabecera(texto):
     if not isinstance(texto, str):
         return None
     t = texto.lower().strip()
-    if t in CABECERAS_DE_TEXTO:
+    # RT-20 · «Cubiertos/cocinero y servicio (rango)» contiene «cubiertos» y el
+    # mapa lo mandaba a entero, pero su contenido es «22-28» o «—».
+    if t in CABECERAS_DE_TEXTO or t.endswith('(rango)'):
         return 'General'
     for fmt, claves in FORMATO_POR_CABECERA:
         for k in claves:

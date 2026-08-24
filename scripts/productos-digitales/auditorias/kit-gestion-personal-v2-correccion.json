@@ -139,8 +139,8 @@
   },
   {
    "id": "RT-20",
-   "fichero": "grupo_c.py:COLS_07 + _bonus_ratios",
-   "fix": "07!'Plantilla'!G (Jornada) → 'General'; BONUS-02!'Ratios por Tipo'!B:D y H → 'General'."
+   "fichero": "grupo_c.py:COLS_07 + _bonus_ratios · motor.py:CABECERAS_DE_TEXTO / _formato_de_cabecera",
+   "fix": "Las tres columnas pasan a 'General'. OJO: no bastaba con el grupo — `motor.aplicar_formatos` deduce el formato de la CABECERA y volvía a pisarlo («Jornada» cae en la familia de las horas → 0.00; «Cubiertos/... (rango)» en la de los enteros; «Ratio Coste Laboral» en la de los porcentajes). Se añade `CABECERAS_DE_TEXTO` (coincidencia exacta) más la regla del sufijo «(rango)». Verificado en el .xlsx: 07!G5='General', BONUS-02!'Ratios por Tipo'!B5:D5 y H5 ='General'."
   },
   {
    "id": "RT-24",
@@ -165,7 +165,7 @@
   {
    "id": "RD-30",
    "fichero": "grupo_a.py:_cuadrante_semanal + _cuadrante_mensual",
-   "fix": "I36 pasa a '=IF(COUNT($I$6:$I$35)=0,\"\",ROUND(SUM(...),2))'; K/M/N y las cabeceras I5:P5 a 'General'; en 'Cuadrante Mensual', columna J y las 6 cabeceras a 'General'."
+   "fix": "I36 pasa a '=IF(COUNT($I$6:$I$35)=0,\"\",ROUND(SUM(...),2))'; K/L/M/N/O/P y las cabeceras I5:P5 a 'General', y en 'Cuadrante Mensual' la columna J y las 6 cabeceras. Aquí también pisaba `motor.aplicar_formatos`: «Descanso entre jornadas», «Jornada semanal» y «Jornada diaria» contienen «jornada» y caían en 0.00 pese a devolver sólo texto — resuelto con la misma lista `CABECERAS_DE_TEXTO`. Verificado: K6:P6 e I5:P5 en 'General', I6 en 0.00."
   },
   {
    "id": "RT-17",
@@ -476,7 +476,8 @@
   "calendarios_de_un_ano_pasado": 0,
   "demostraciones": "31/31 OK (24 propias de grupo + 7 del motor)",
   "produccion": "astro-site/public/dl/kit-gestion-personal/ INTACTA — `git status --short` sobre esa carpeta: sin cambios",
-  "typescript": "los 15 .ts/.tsx tocados parsean sin errores (ts.createSourceFile)"
+  "typescript": "los 15 .ts/.tsx tocados parsean sin errores (ts.createSourceFile)",
+  "nota_final": "Última pasada: exit 0 · idempotencia 0 diferencias · censo 0 defectos · 31/31 demostraciones OK · 0 fallos y 0 pendientes_de_grupo · astro-site/public/dl/kit-gestion-personal/ sin un solo cambio en git."
  },
  "gates_nuevos": [
   "main.py:gate_veredictos_cacheados (RT-21) — lista blanca CACHE_DELIBERADO",
@@ -505,5 +506,10 @@
   "pycel NO propaga la invalidación de set_value a través de un nodo MAX sobre dos celdas de fórmula de la misma hoja; IF(a>b,a,b) sí. En Excel son idénticas (Calendario Anual!B39).",
   "pycel sólo propaga a las celdas que YA están en su grafo: hay que evaluar las SALIDAS antes de escribir las entradas (`_calentar`).",
   "pycel SÍ evalúa SUMIFS con CUATRO criterios y SUMPRODUCT con MAX dentro: medido antes de escribir las fórmulas del saldo por año (RD-10)."
+ ],
+ "avisos_al_orquestador": [
+  "astro-site/public/dl/demos-grupo-b/ es un directorio SIN TRACKEAR dentro de la carpeta de entregables (5 xlsx del kit de INVENTARIO, con fecha 24-ago 01:12). Lo escribe kit-inventario-v2_0/grupo_b.py:1719, que compone su ruta de demos a partir de la carpeta de trabajo y en producción la resuelve dentro de public/dl. NO es de este kit ni de esta sesión y no lo he tocado (no se me permite git clean): hay que borrarlo antes de cualquier build, o se publica, y arreglar esa ruta en el kit de inventario.",
+  "RC-01/RC-03/RD-08 tocan textos que viven dentro de `schema.reviews` y de `testimonials`, que §7-bis.8 declara aparcados por John. Lo que se ha cambiado es la CIFRA LEGAL (11 h → 12 h, art. 34.3 ET) que §7-bis.4 ordena expresamente corregir, más las tildes que §5 ya mandaba pasar por «testimonials», más los dos testimonios que §7-bis.1 nombra uno a uno. aggregateRating, el número de reseñas, los autores y el ancla de precio siguen intactos. Si John prefiere no tocar ni una letra de esas cadenas, el revert es quirúrgico y está aislado en esos dos ficheros.",
+  "El calendario del 05 se construye ahora para el año SIGUIENTE al de la compilación (hoy 2027). Reconstruir el kit en enero de 2028 lo moverá a 2029: si se quiere el año en curso, es una línea en grupo_b.ANIO_CALENDARIO."
  ]
 }
