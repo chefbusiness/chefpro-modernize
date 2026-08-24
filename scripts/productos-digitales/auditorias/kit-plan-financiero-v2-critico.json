@@ -1,26 +1,165 @@
 {
- "rol": "critico-completitud",
- "producto": "kit-plan-financiero",
+ "productId": "kit-plan-financiero",
  "version": "2.0",
- "fecha": "2026-08-24T11:35:00+02:00",
- "estado": "EN CURSO (scaffold, se actualiza)",
- "hallazgos_provisionales": [
+ "rol": "critico-de-completitud",
+ "fecha": "2026-08-24T11:55:00+02:00",
+ "spec": "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md (mapa id→sección §8, 90 ids) + §7-bis",
+ "entradas_leidas": [
+  "auditorias/kit-plan-financiero-v2-ronda2.json (11:08, listo=true, 84/84 ids)",
+  "auditorias/kit-plan-financiero-v2-correccion.json (10:52, 84 resueltos / 0 no aplicados / 3 pendientes de John)",
+  "auditorias/kit-plan-financiero-v2-ref-dominio.json (30) · ref-excel.json (26) · ref-coherencia.json (28)",
+  "auditorias/kit-plan-financiero-v2-motor.json (§1, 7 hallazgos MOT-01..07) y kit-plan-financiero-v2-integracion.json (§5)",
+  "auditorias/kit-plan-financiero-R1.json (los 90 ids DOM/TEC/COM del mapa §8)",
+  "NO EXISTEN kit-plan-financiero-v2-grupo_a/b/c.json: este kit no tuvo informe por grupo. Lo que hay de §2/§3/§4 es lo que el corrector declara en los ids RD/RT/RC y lo que yo he medido en el xlsx."
+ ],
+ "metodo": "Solo lectura. Cruce del mapa §8 (90 ids del R1) contra TODA la cadena posterior (3 ref-*, corrección, motor, integración, ronda2) buscando ids huérfanos; verificación celda a celda con openpyxl (fórmula + valor cacheado) sobre la ÚLTIMA copia dry-run existente (/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/, 10:56, la del verificador de Ronda 2); medición de la línea base v1.1 leyendo astro-site/public/dl/kit-plan-financiero/ (lectura, jamás escritura); grep de las superficies de producto. NO he ejecutado main.py: la copia de las 10:56 es posterior a la última edición del paquete (grupo_b/motor 10:47) y la regla del encargo pide verificación EN SOLO LECTURA. Regla térmica respetada: istats antes de cada python, máximo 45,06 °C, un proceso a la vez.",
+ "cruce_de_ids": {
+  "ids_de_los_3_refutadores": 84,
+  "resueltos_por_el_corrector": 84,
+  "no_aplicados": 0,
+  "huecos_o_inventados": 0,
+  "veredicto_84": "El cruce que firma la Ronda 2 se sostiene: los 84 ids RD-01..30 / RT-01..26 / RC-01..28 aparecen 1:1 en `resueltos`, sin faltantes ni ids extra.",
+  "AVISO_DE_ALCANCE": "Los 84 ids de los refutadores NO son los 90 del mapa §8 de la SPEC. Los refutadores auditaron el paquete cuando grupo_a/b/c NO existían (RD-01, RT-01 y RC-01 lo dicen literalmente), así que sus ids son hallazgos NUEVOS, no los del R1. Nadie ha cerrado el mapa §8 id por id: la cadena entera (motor + 3 refs + corrección + integración + ronda2) sólo NOMBRA 64 de los 90.",
+  "ids_del_R1_que_no_aparecen_por_NOMBRE_en_ninguna_fase_posterior": [
+   "DOM-08, DOM-09, DOM-14, DOM-17, DOM-18, DOM-28",
+   "TEC-06, TEC-07, TEC-11, TEC-14, TEC-15, TEC-18, TEC-20, TEC-25, TEC-27, TEC-28, TEC-29",
+   "COM-03, COM-05, COM-06, COM-12, COM-19, COM-23, COM-24, COM-28, COM-31, COM-32"
+  ],
+  "de_esos_26_verificados_HECHOS_en_sustancia_por_mi": {
+   "DOM-08 / TEC-06 / COM-03 (gráficos)": "9 gráficos medidos en 9 de los 10 xlsx (v1.1: 0).",
+   "DOM-14 (cuadro francés)": "07!Financiación existe: C8 =IFERROR($C$4*$C$5/(1-(1+$C$5)^(-$C$6)),0) y cuadro A11:F16 a 5 años encadenado por $F$n.",
+   "DOM-17 (base sin IVA)": "etiquetas «(sin IVA)» presentes (p.ej. 02!Break-Even!B8, 06!Ratios!B6).",
+   "DOM-18 / COM-32 (GOP USALI)": "06!Ratios!C20 =(C6-C9)/C6 con C9 = comida+bebida+personal+otros y el alquiler FUERA (C38), documentado en 06!Ratios!B40 y D38.",
+   "TEC-11 / TEC-15 (IFERROR)": "todas las divisiones de 06!Ratios y de 02!Break-Even llevan IFERROR con mensaje.",
+   "TEC-12 / COM-29 (umbral único)": "06!Benchmarks!F4:G14 numéricas + nota B17; las 9 filas de Ratios leen de ahí.",
+   "TEC-18 (formato condicional)": "25 rangos con CF real (v1.1: 0).",
+   "TEC-25 (protección + DV)": "56/56 hojas protegidas SIN contraseña; 60 validaciones (v1.1: 1).",
+   "TEC-27 / COM-19 (ejemplo etiquetado y recalibrado)": "«VALORES DE EJEMPLO — sustitúyelos por los tuyos» en 03!'Flujo Mensual'!A3, 02!Datos!B3, 06!Ratios!B3, BONUS-08!Simulador!A3; 02 recalibrado a ticket 22 € / 55 cubiertos / 26 días.",
+   "TEC-14 (gastos operativos calculados)": "06!Ratios!C9 es fórmula, no constante.",
+   "DOM-28 / TEC-28 / TEC-29 / TEC-20 (instrucciones, anchos, Resumen Ejecutivo)": "declarados y demostrados en motor.json §1.6/§1.7; muestreo coherente en los ficheros.",
+   "COM-31 (5 años)": "landing dice «a 3 y 5 años» (kit-plan-financiero.ts:42/51/133) y la FAQ «proyecciones a 5 años» (:90/:248); el 07 proyecta Año 1..5 (Proyecciones!B3:F3) y los flujos van B22:G22 (Año 0..5).",
+   "COM-24 (badge sin cifra sin fuente)": "kit-plan-financiero.ts:125 «La mayoria de los cierres tempranos se explican por una planificacion financiera inexistente» — reformulado, ya no dice «el 60 %».",
+   "COM-28 (instrucción del 01b)": "corregida por el motor (01b!B9).",
+   "COM-05 / COM-06 / COM-12 (ancla 190 €, reseñas/testimonios, −79 % vs 72 %)": "APARCADOS por John (§7-bis decisión 1/9). El −79 % de :300 y el «72 %» de :303 siguen contradiciéndose, documentado como QUIRK VERBATIM en la cabecera del fichero (:24). Correcto NO tocarlo, pero sigue siendo una incoherencia visible en la misma pantalla.",
+   "DOM-09 / TEC-07 (copy «encadenadas» → «coherentes entre sí»; sin enlaces externos)": "HECHO en sustancia: kit-plan-financiero.ts:94/:153/:177/:252 dicen «coherentes entre si» y no hay una sola URL externa en el fichero. Pero ver BLOQUEO 2: se escribió SIN TILDES."
+  },
+  "id_del_R1_REALMENTE_PERDIDO": "COM-23 (§5, «anos» → «años» y barrido de acentos). Nadie lo aplicó, nadie lo declaró pendiente y ninguna de las cuatro fases posteriores lo nombra. Sigue vivo y es visible en la página de pago. Detalle en BLOQUEO 2."
+ },
+ "verificacion_en_solo_lectura_5_celdas_clave": [
   {
-   "id": "CRIT-01",
-   "severidad": "media-alta",
-   "celda": "07-informe-viabilidad-bancos.xlsx:Ratios:E5 (y E6,E7,E8,E9 igual; E4/E10 al reves)",
-   "que": "El semaforo compara TEXTO con NUMERO. Con el libro tal y como se entrega (C13:C17 y Proyecciones a 0), C5 devuelve el literal 'Indica el prestamo' y E5 =IF($C5>=$F$5,'OK'...) da VERDE, porque en Excel cualquier texto es mayor que cualquier numero. Cache leida del dry-run: E5..E9='OK verde', E4/E10='rojo'. El informe que se lleva al banco sale con 5 checks verdes sin un solo dato."
+   "celda": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/03-cash-flow-forecast.xlsx : 'Flujo Mensual' : C5",
+   "ids": "DOM-01 / TEC-01 / COM-01 / MOT-03",
+   "medido": "C5 = '=B29' y A29 = 'SALDO FINAL' (fila 29). D5=C29 … M5=L29: los 12 meses encadenados. En producción v1.1 esa celda apuntaba a la fila de «Otros pagos». Cache: 15.000 en los 12 meses con el libro a 0. CONFIRMADO."
   },
   {
-   "id": "CRIT-02",
-   "severidad": "baja",
-   "celda": "03-cash-flow-forecast.xlsx:Flujo Mensual:B25 / C25 / L25 / M25",
-   "que": "Liquidacion de IVA trimestral: solo 3 de los 4 trimestres se liquidan dentro del ano (E25 Q1, H25 Q2, K25 Q3). El Q4 (K:M) no tiene liquidacion y B25 (enero) es un 0 constante verde."
+   "celda": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx : 'Break-Even' : C10",
+   "ids": "DOM-25 / TEC-16 / TEC-23 / COM-27",
+   "medido": "C10 = '=IFERROR(ROUNDUP($C$9/Datos!$C$20,0),\"Indica el ticket medio\")' → 41,0 cubiertos/día. C8 = 23.076,92 €/mes, C9 = 887,57 €/día, C13 «Ticket medio necesario» = 16,14 €, C17 «break-even de caja» = 43 cubiertos. 41 × 22 € × 26 días = 23.452 € ≥ 23.076,92 €: el redondeo hacia arriba ya no factura por debajo del umbral. CONFIRMADO."
+  },
+  {
+   "celda": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx : Ratios : C20 (y C9, C22)",
+   "ids": "DOM-07 / DOM-18 / TEC-13 / TEC-14 / COM-07 / COM-32",
+   "medido": "C20 GOP = '=IFERROR(($C$6-$C$9)/$C$6,...)' = 26,84 %, con C9 = '=IFERROR($C$8+$C$36+$C$10+$C$37,0)' (comida+bebida+personal+otros) y el alquiler C38 EXPLÍCITAMENTE fuera («Fuera del GOP: en USALI es carga de propiedad», D38 y B40). C22 RevPASH = '=IFERROR($C$6/($C$13*$C$12),...)' = 3,36 €/plaza/hora: por PLAZA y hora, no por m² (los m² sobreviven aparte en C30). CONFIRMADO."
+  },
+  {
+   "celda": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Financiación : C8 + A11:F16",
+   "ids": "DOM-14 / DOM-21 / COM-16",
+   "medido": "Hoja NUEVA (no existe en la v1.1: prod tiene 5 hojas, la copia 6). C8 = '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-$C$6)),0)' — anualidad constante del sistema francés. Cuadro de 5 años con B13='=$F$12' encadenado y D12='=$B12*$C$5'. Los intereses alimentan Proyecciones!B13:F13 ='Financiación'!$D$12..$D$16 y la nota B18/B19 lo declara. CONFIRMADO."
+  },
+  {
+   "celda": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Ratios : C5 y E5 · Proyecciones : B24",
+   "ids": "DOM-03 / DOM-11 / TEC-03 / COM-02 / COM-17",
+   "medido": "C5 DSCR = '=IFERROR(Proyecciones!$B$18/'Financiación'!$C$12,\"Indica el préstamo\")' — calculado, ya no tecleado. Los 7 ratios (C4:C10) son fórmulas y sus umbrales viven en F/G con la columna H «Sentido». Proyecciones!B24 = '=IFERROR(IRR($B$22:$G$22),\"—\")' sobre Año 0..Año 5 (G22='=F18', el 5.º año SÍ entra), B25 VAN con tasa en C27=8 % y B26 payback por COUNTIF/INDEX. Con el libro a 0 la TIR cae al «—» honesto. CONFIRMADO — PERO ver BLOQUEO 1: la columna E de esta misma hoja miente."
+  },
+  {
+   "celda": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ronda2/dryrun-v2/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx : Checklist : C67 y C71 (extra)",
+   "ids": "DOM-20 / DOM-26 / TEC-24 / COM-30",
+   "medido": "A1 «— 54 Tareas», filas 5..58 numeradas 1..54, fase 7 «Personal y obligaciones laborales» presente (r55-r58). C67 = '=COUNTIF($A$5:$A$64,\"<>\")' → 54 (no un 48 escrito); C71 = '=IFERROR(COUNTIF($F$5:$F$64,\"Completada\")/$C$67,0)'. DV de lista F5:F64 con showErrorMessage=True. CONFIRMADO."
   }
  ],
- "listo_para_real": null,
- "bloqueos": [],
- "cifras_capa_producto": [],
- "orden_ejecucion_real": [],
- "recomendacion": ""
+ "gates_reproducidos_por_mi": {
+  "produccion_intacta": "git status --short astro-site/public/dl/kit-plan-financiero/ → SIN SALIDA. Ninguna fase ha escrito en producción (regla dura 1 respetada por toda la cadena, y por mí).",
+  "nombres_de_fichero": "diff de `ls` entre astro-site/public/dl/kit-plan-financiero/ y la copia dry-run → IDÉNTICOS (10/10). Las 10 claves de netlify/functions/get-download-urls.ts:562-573 siguen válidas y ningún email ya enviado se rompe.",
+  "proteccion": "56/56 hojas con protection.sheet=True y password=None (medido hoja por hoja). En producción v1.1: 0/53.",
+  "higiene_de_demos": "El bug que bloqueó al Kit de Gestión de Personal (la demo escribiendo en el HERMANO de la carpeta de trabajo, es decir astro-site/public/dl/ en la pasada real) NO existe aquí: main.py:95 ancla DEMOS a CLAUDE_SCRATCHPAD y main.py:797 se lo pasa a los grupos; grupo_a/b/c.py no calculan rutas por su cuenta (0 usos de dirname). El respaldo del APPLY también va al scratchpad (main.py:682).",
+  "no_reejecutado": "No he vuelto a correr main.py: la copia de las 10:56 es posterior a la última edición del paquete (10:47) y el encargo pide verificación en SOLO LECTURA. El dry-run de comprobación va en el paso 4 del orden de ejecución, DESPUÉS de los fixes."
+ },
+ "listo_para_real": false,
+ "bloqueos": [
+  {
+   "id": "BLOQUEO 1",
+   "severidad": "medio-alto · entregable, y es el fichero que se lleva al banco",
+   "celda": "07-informe-viabilidad-bancos.xlsx : Ratios : E5 (idéntico en E6, E7, E8 y E9; E4 y E10 fallan al revés)",
+   "medido": "E5 = '=IFERROR(IF($C5>=$F$5,\"✅\",IF($C5>=$G$5,\"⚠️\",\"🔴\")),\"—\")'. Con el libro TAL Y COMO SE ENTREGA (C13:C17 = 0 y Proyecciones a 0), C5 devuelve el literal «Indica el préstamo», y en Excel CUALQUIER texto es mayor que cualquier número → el IF entra por la rama buena. Valor cacheado leído en mi copia dry-run: E5='✅', E6='✅', E7='✅', E8='✅', E9='✅' (y E4='🔴', E10='🔴', que fallan al revés porque su comparación es «<=»). Resultado: el informe de viabilidad se abre con CINCO checks verdes —DSCR, liquidez, margen EBITDA, ROI y fondos propios/inversión— sin un solo dato introducido, justo al lado de la celda que dice «Indica el préstamo». El IFERROR no protege: no hay error, hay una comparación de texto.",
+   "por_que_importa": "Es defecto NUEVO de la v2.0 (en la v1.1 esta columna no existía: el 07 tenía 3 fórmulas en total). Y es la superficie de mayor riesgo del kit: un cliente que imprima el informe antes de rellenarlo se lo lleva al banco con cinco visto-bueno falsos. Ninguno de los 84 ids ni de los 90 del R1 lo cubre; lo he encontrado leyendo la caché.",
+   "fix": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:616-625 — envolver el semáforo en ISNUMBER. Sustituir las dos ramas por: '=IFERROR(IF(ISNUMBER($C'+r+'),IF($C'+r+'<=$F$'+r+',\"✅\",IF($C'+r+'<=$G$'+r+',\"⚠️\",\"🔴\")),\"—\"),\"—\")' (rama «menor») y la simétrica con >= para «mayor». Verificación posterior: E4:E10 deben salir todas '—' con el libro en blanco."
+  },
+  {
+   "id": "BLOQUEO 1-bis",
+   "severidad": "medio · mismo defecto, latente",
+   "celda": "06-dashboard-ratios-financieros.xlsx : Ratios : E20 (y E22, E23, E25 — las cuatro filas de «mayor es mejor»)",
+   "medido": "E20 = '=IFERROR(IF($C20>Benchmarks!$F$7,\"✅ Sano\",IF($C20>=Benchmarks!$G$7,\"⚠️ Ajustado\",\"🔴 Peligro\")),\"—\")'. Hoy no se ve porque el ejemplo va relleno (C20 = 26,84 %), pero en cuanto el cliente vacía C6 «Ventas totales» —lo primero que hace para meter lo suyo— C20 pasa a «Indica las ventas» y GOP, RevPASH, EBITDA y margen bruto se ponen en «✅ Sano». Las filas «menor es mejor» (E17, E18, E19, E21, E24) caen a «🔴 Alto», que al menos no engaña.",
+   "fix": "grupo_c.py:304-310, mismo envoltorio ISNUMBER. Un solo fix conceptual para los dos ficheros; conviene hacerlos en el mismo commit."
+  },
+  {
+   "id": "BLOQUEO 2",
+   "severidad": "medio · capa de producto — es el id COM-23 del R1, PERDIDO por el camino",
+   "celda": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:286 («El plan previsional a 3 anos…»), :125 (badge del hero), :153, :162, :163, :174, :176, :177 · y sus gemelos en src/components/kit-plan-financiero/ContentGrid.tsx:14,15,39 y WhySection.tsx:7,41",
+   "medido": "COM-23 del mapa §8 pide literalmente «anos» → «años» y barrido de acentos (§5). Ni el corrector ni la Ronda 2 lo mencionan, y sigue vivo: «El plan previsional a 3 anos fue lo que me pidio el banco» (:286, testimonio ON-PAGE), «Disenado para Hosteleria» (WhySection.tsx:7, es un TÍTULO de sección), «benchmarks del sector hostelero espanol» (:162 y ContentGrid.tsx:14), «herramientas disenadas» (:174), «La mayoria … planificacion financiera inexistente» (:125, el badge rojo que es lo primero que se lee), «coherentes entre si: mismas categorias … la tesoreria» (:153/:177). En total 36 líneas del fichero vivo con palabras sin tilde o sin ñ. La Ronda 2 sólo vio dos de ellas (la FAQ #4 y WhySection/ContentGrid) y las clasificó de severidad media y baja «pre-existentes»; son la misma familia y el id del R1 las daba por trabajo de esta versión.",
+   "por_que_importa": "«anos» no es una tilde: es otra palabra. Está en la página de pago de un producto de 39 € y en la ficha que se enseña como profesional. Y el barrido NO choca con la decisión 9 de John (que congela aggregateRating, reseñas, testimonios y el ancla de 190 €): corregir la ortografía de un testimonio no cambia ni la afirmación ni la valoración. Si aun así se prefiere no tocar el testimonio, el mínimo innegociable son el badge :125 y el título «Disenado para Hosteleria».",
+   "fix": "Barrido de tildes/ñ en las DOS superficies a la vez (astro-site/src/data/productos/kits/kit-plan-financiero.ts y src/components/kit-plan-financiero/*.tsx), dejando las frases IDÉNTICAS entre ambas. La cabecera del .ts documenta como «VERBATIM» algunos de estos textos (guarantee.headingPre :226, authorBadges :193): esa nota es de fidelidad del port de Fase 4, y COM-23 la deroga para la v2.0 — actualizar también el comentario para que el próximo que pase no lo «restaure»."
+  }
+ ],
+ "avisos_no_bloqueantes": [
+  {
+   "id": "AVISO 1",
+   "donde": "03-cash-flow-forecast.xlsx : 'Flujo Mensual' : B25 y M25",
+   "que": "El IVA se liquida en E25 (abril, Q1), H25 (julio, Q2) y K25 (octubre, Q3); el Q4 (K:M) no tiene liquidación dentro del año y B25 (enero) es un 0 constante en celda verde para el Q4 del año anterior. Es coherente con un horizonte de 12 meses y está DECLARADO en src/data/productos-changelog.ts:334 («se calcula sola en abril, julio y octubre»), así que no es una promesa incumplida — pero conviene una nota en la propia celda B25 diciendo qué se espera ahí, o el usuario cerrará el año sin provisionar el 303 de enero."
+  },
+  {
+   "id": "AVISO 2",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:300 y :303",
+   "que": "COM-12: discountBadge «-79%» y buyBoxNote «72% de descuento» conviven en la misma pantalla. Aparcado con el ancla de 190 € por §7-bis decisión 1, y la cabecera :24 lo documenta como quirk verbatim. Correcto no tocarlo sin John, pero debe subir al handoff junto al aviso legal del ancla (Directiva Ómnibus) que la propia SPEC ya pide destacar."
+  },
+  {
+   "id": "AVISO 3",
+   "donde": "auditorias/ — inventario de informes",
+   "que": "Este kit NO tiene kit-plan-financiero-v2-grupo_a/b/c.json, a diferencia de sus hermanos. Los tres módulos se escribieron dentro de la fase de CORRECCIÓN (10:26-10:47) y su única traza es el id RD-01 y el dry-run. No bloquea, pero deja §2/§3/§4 sin informe propio: si mañana hay que auditar por qué una celda es como es, la fuente es el código, no un informe."
+  },
+  {
+   "id": "AVISO 4",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md §1.1/§1.2/§1.3",
+   "que": "MOT-01 sigue en pie y ha crecido: la SPEC habla de «las 47 hojas», producción tiene 53 y la v2.0 tiene 56. Cualquier recuento futuro que arranque del 47 saldrá corto en 9 hojas."
+  }
+ ],
+ "cifras_capa_producto": [
+  "10 ficheros .xlsx, los MISMOS 10 nombres que la v1.1 (0 renombrados, 0 eliminados): las 10 claves de netlify/functions/get-download-urls.ts:562-573 siguen válidas y ningún enlace ya enviado se rompe. Medido con diff de `ls` producción vs copia dry-run.",
+  "Hojas: 53 → 56 (+3, 0 eliminadas). Las nuevas son 03!«Parámetros» (tesorería), la pestaña de conceptos de apertura del 04 y 07!«Financiación».",
+  "Fórmulas: 1.373 → 2.432 (+1.059, ×1,8). Por fichero v1.1→v2.0: 01 187→244 · 01b 311→404 · 02 20→67 · 03 83→201 · 04 78→300 · 05 636→1.034 · 06 12→41 · 07 3→97 · BONUS-08 39→39 · BONUS-09 4→5.",
+  "El informe de viabilidad para bancos (07) pasa de 3 fórmulas a 97: en la v1.1 el P&L, los ratios y el «TIR/VAN/payback» que promete la landing eran números escritos a mano.",
+  "Gráficos: 0 → 9. Los llevan 9 de las 10 plantillas (BONUS-09, la checklist, no lleva). En la v1.1 no había NI UNO, y la landing ya prometía «gráficos automáticos».",
+  "Formato condicional real: 0 → 25 rangos con regla de color (los semáforos de la v1.1 eran un emoji dentro del texto).",
+  "Validación de datos: 1 → 60 reglas (listas desplegables y rangos numéricos con aviso de error).",
+  "Celdas verdes editables: 1.706 → 2.082, todas desbloqueadas. Protección: 0 de 53 hojas → 56 de 56, SIN contraseña.",
+  "BONUS-09: 54 tareas en 7 fases (la 7.ª, «Personal y obligaciones laborales», es nueva) y el porcentaje completado cuenta las tareas que hay — antes dividía entre un 48 escrito a mano.",
+  "Punto de equilibrio con el ejemplo canónico del kit (ticket 22 € sin IVA, 26 días de apertura, 15.000 € de costes fijos, 35 % de coste variable): 23.076,92 €/mes = 887,57 €/día = 41 cubiertos/día; con la cuota del préstamo, 43. Ticket medio necesario a 55 cubiertos previstos: 16,14 €.",
+  "Dashboard 06 con sus datos de ejemplo (uso INTERNO, no es un argumento de venta): food cost 30 %, labor 28 %, prime 56 %, GOP 26,8 %, EBITDA 17,3 %, RevPASH 3,36 €/plaza/hora, ticket medio 22 €. Los 14 benchmarks viven en una sola tabla numérica (06!Benchmarks!F4:G14).",
+  "07: cuadro de amortización francés a 5 años con la cuota en una celda, y TIR / VAN / payback calculados sobre Año 0..Año 5 (el 5.º año SÍ entra en el flujo), con tasa de descuento (8 %) y tipo del Impuesto de Sociedades (25 %) editables.",
+  "CIFRA QUE NO SE PUEDE PUBLICAR TODAVÍA: todas estas se han medido sobre la copia dry-run de las 10:56. Hay que RE-MEDIRLAS después del APPLY (paso 6 del orden de ejecución) porque el fix del BLOQUEO 1 toca 17 celdas de fórmula."
+ ],
+ "orden_ejecucion_real": [
+  "0. TÉRMICA: `istats cpu temp` antes de CADA python; si ≥ 60 °C, `sleep 90` y repetir. Un python cada vez, sin paralelismo, sin builds locales ni Playwright (el build va en la nube).",
+  "1. FIX BLOQUEO 1 + 1-bis (dos bloques, mismo patrón) — en /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:616-625 y :304-310, envolver el semáforo en ISNUMBER para que un literal de aviso no se compare como número: rama «menor» → '=IFERROR(IF(ISNUMBER($C'+r+'),IF($C'+r+'<=$F$'+r+',\"✅\",IF($C'+r+'<=$G$'+r+',\"⚠️\",\"🔴\")),\"—\"),\"—\")' y la simétrica con >= para «mayor» (en el 06 las etiquetas son «✅ Excelente/⚠️ Aceptable/🔴 Alto» y «✅ Sano/⚠️ Ajustado/🔴 Peligro», y los umbrales van con el prefijo Benchmarks!).",
+  "2. FIX BLOQUEO 2 (copy, DOS superficies que deben quedar IDÉNTICAS) — barrido de tildes y ñ en /Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/kits/kit-plan-financiero.ts (:125 badge, :153, :162, :163, :174, :176, :177, :286 «3 anos», y la respuesta #4 de la FAQ en :94 y :252) y en /Users/johnguerrero/chefpro-modernize/src/components/kit-plan-financiero/{WhySection.tsx:7,41 · ContentGrid.tsx:14,15,39 · FaqAccordion.tsx:20}. Actualizar de paso el comentario «SIN tildes … VERBATIM» de la cabecera del .ts (:17-18) para que nadie lo revierta.",
+  "3. COMPROBACIÓN DEL BARRIDO (lectura, sin CPU): `cd /Users/johnguerrero/chefpro-modernize && grep -rnE '\\\\b([Aa]nos|[Dd]isen[aeo][a-z]*|espanol[a-z]*|mayoria|categorias|tesoreria|genericas|Hosteleria)\\\\b' astro-site/src/data/productos/kits/kit-plan-financiero.ts src/components/kit-plan-financiero/` → SIN SALIDA.",
+  "4. DRY-RUN de comprobación (NO escribe en producción): `istats cpu temp && CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/pre-apply-pf python3 /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --dry-run --json /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-pf-v2/pre-apply.json` → exige exit 0, idempotencia 0 diferencias, censo 0 defectos, 0 fallos de caché (el único fallo_pycel admitido es la IRR de 07!Proyecciones!B24, que cachea aparte cachear_irr con Newton-Raphson) y 9/9 gráficos.",
+  "5. RE-VERIFICAR LA CELDA DEL FIX 1 en esa copia (una orden, lectura): `python3 -c \"import openpyxl; wb=openpyxl.load_workbook('/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/pre-apply-pf/dryrun-v2/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx', data_only=True); ws=wb['Ratios']; print([ws['E'+str(r)].value for r in range(4,11)])\"` → tiene que imprimir siete '—'. Si aparece un '✅', PARAR: el fix no ha entrado.",
+  "6. APLICAR EN REAL (única orden que escribe en astro-site/public/dl/kit-plan-financiero/; deja respaldo con marca de tiempo en el scratchpad): `istats cpu temp && KIT_PLAN_FINANCIERO_APPLY=1 CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad python3 scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --json scripts/productos-digitales/auditorias/kit-plan-financiero-v2-real.json` → exit 0. Anotar la ruta del respaldo que imprime al final; NO borrarla hasta cerrar el paso 10.",
+  "7. CENSO: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/censo-entregables.py --only kit-plan-financiero --fail --quiet` → «10 ficheros censados» y 0 defectos.",
+  "8. GATE OFFLINE: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/gate-flujo-postpago.py --offline --only kit-plan-financiero` → exit 0 (cruza zona-app / verify-purchase / resend-access / get-download-urls / dashboard y comprueba que los 10 xlsx existen en disco y están trackeados).",
+  "9. COMMIT (lo hace el ORQUESTADOR, yo no toco git) con rutas EXPLÍCITAS, nunca `git add astro-site/public/dl/` a pelo: `git add astro-site/public/dl/kit-plan-financiero/ scripts/productos-digitales/kit-plan-financiero-v2_0/ scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md scripts/productos-digitales/auditorias/kit-plan-financiero-v2-*.json astro-site/src/data/productos/kits/kit-plan-financiero.ts astro-site/src/components/pages/ProductosDigitalesHubPage.astro src/components/kit-plan-financiero/ src/pages/KitPlanFinanciero.tsx src/pages/KitPlanFinancieroDashboard.tsx src/pages/ProductosDigitales.tsx src/data/productos-changelog.ts src/data/productos-digitales-config.ts netlify/functions/verify-purchase.ts netlify/functions/resend-access.ts` y `git status --short astro-site/public/dl/` DESPUÉS del add, para confirmar que no se ha colado ninguna carpeta de demos.",
+  "10. GATE LIVE (después de que Netlify termine el build en la nube): `python3 scripts/productos-digitales/gate-flujo-postpago.py --only kit-plan-financiero` → 0 fallos, y re-correr el baseline completo `python3 scripts/productos-digitales/gate-flujo-postpago.py` esperando 44 productos / 0 fallos con el contador de entregables actualizado.",
+  "11. RE-MEDIR las cifras de `cifras_capa_producto` sobre astro-site/public/dl/kit-plan-financiero/ ya aplicado, antes de que la landing publique ninguna de ellas."
+ ],
+ "recomendacion": "NO aplicar todavía, pero está a dos arreglos de distancia y los dos están medidos con celda y línea. (1) El semáforo del informe bancario compara TEXTO con NÚMERO: con el libro tal y como se entrega, 07!Ratios!E5:E9 salen en verde —DSCR, liquidez, margen EBITDA, ROI y fondos propios— junto a una celda que dice «Indica el préstamo», porque en Excel cualquier texto gana a cualquier número; lo he leído en la caché de mi copia, no lo deduzco. Es defecto NUEVO de la v2.0 (en la v1.1 esa columna no existía) y está en el fichero que el cliente se lleva al banco. El mismo patrón duerme en 06!Ratios!E20/E22/E23/E25 y despierta en cuanto alguien vacía «Ventas totales». Se arregla envolviendo el semáforo en ISNUMBER en grupo_c.py:616-625 y :304-310. (2) COM-23 del mapa §8 —«anos» → «años» y barrido de acentos— se perdió por el camino: no lo aplicó nadie, no lo declaró pendiente nadie y ninguna de las cuatro fases posteriores lo nombra; sigue vivo en la página de pago («El plan previsional a 3 anos», el badge rojo del hero, «Disenado para Hosteleria», «sector hostelero espanol»), en 36 líneas del fichero que se sirve. Y no choca con la decisión 9 de John: arreglar una tilde no cambia una reseña. Lo demás lo he verificado yo, no me lo he creído: los 84 ids de los tres refutadores cierran 1:1 sin huecos, y de los 90 del R1 —que NADIE cruzó, porque los refutadores auditaron un paquete en el que grupo_a/b/c aún no existían— he comprobado en el Excel los 26 que nunca se volvieron a nombrar; 25 están hechos en sustancia (el cuadro francés existe, el GOP es USALI con el alquiler fuera y documentado, el RevPASH es por plaza, la tesorería encadena C5→B29, los cubiertos redondean hacia arriba a 41, el checklist cuenta 54 y no 48, hay 9 gráficos donde había 0 y 56/56 hojas protegidas sin contraseña donde había 0/53) y sólo COM-23 se ha perdido. La producción sigue intacta, los 10 nombres de fichero no cambian —así que ninguna descarga ya vendida se rompe— y este kit no arrastra el bug de demos que bloqueó al de Gestión de Personal: main.py:95 ancla las demos al scratchpad. Hechos los dos fixes, correr el paso 4, comprobar los siete «—» del paso 5 y encadenar 6→11 sin saltarse el gate LIVE."
 }
