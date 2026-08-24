@@ -1,0 +1,277 @@
+{
+  "lente": "REFUTADOR de dominio — jefe/a de compras y almacen de restaurante con 15 anos: datos precargados producto a producto, unidades, coste de materia prima, proveedores y desembolsos de apertura. Copia propia generada con CLAUDE_SCRATCHPAD=.../propio-ref-dominio python3 kit-plan-financiero-v2_0/main.py --dry-run --json .../ref-dominio.json (produccion NO tocada). Verificado ademas que los ids que la tabla final de la SPEC da por «resuelto en §2/§3/§4» NO estan resueltos en esta copia.",
+  "hallazgos": [
+    {
+      "id": "RD-01",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/",
+      "ubicacion": "paquete: solo existen main.py y motor.py",
+      "hallazgo": "No existen grupo_a.py, grupo_b.py ni grupo_c.py. El pipeline los omite y aun asi imprime «TODO VERDE», de modo que TODA la §2 (01/01b/05), la §3 (02/03/04) y la §4 (06/07/BONUS-08/BONUS-09) de la SPEC estan SIN APLICAR: ~60 de los 90 ids del mapa §8 siguen vivos aunque la tabla los da por resueltos. El gate no distingue «no hay defectos» de «no se ha hecho nada».",
+      "evidencia": "Salida de mi ejecucion: «grupo_a no existe todavia — se omite» / «grupo_b ...» / «grupo_c ...», y luego «TODO VERDE (idempotencia, cache, TIR, graficos, censo, demos)». Contaje de formulas nuevas por fichero: 01=0, 01b=0, 04=0, 05=0, 07=0, BONUS-08=0, BONUS-09=0 (solo 02=3, 03=12, 06=8, todas del motor). ls del paquete: main.py, motor.py, __pycache__.",
+      "fix": "El veredicto del gate debe ser rojo mientras falte un modulo de grupo: sustituir el aviso «se omite» por exit!=0 salvo --solo motor explicito, y no permitir KIT_PLAN_FINANCIERO_APPLY sin los tres modulos presentes."
+    },
+    {
+      "id": "RD-02",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "'Flujo Mensual'!C5:M5",
+      "hallazgo": "El bug insignia del R1 (DOM-01/TEC-01/COM-01, «resuelto en §3») sigue exactamente igual: el saldo inicial de cada mes encadena con «Otros pagos», no con el saldo final. Once meses de tesoreria mal, y ahora ademas RE-cacheados por inject_cache dentro de un fichero rotulado «Version 2.0».",
+      "evidencia": "En la copia dry-run: C5='=B22' (D5='=C22' ... M5='=L22'), mientras A22='Otros pagos' y A25='SALDO FINAL' con B25='=B5+B24'. inject_cache reporta 03: formulas=95 cache_inyectado=95.",
+      "fix": "C5='=B25' ... M5='=L25' (o fila 29 si grupo_b renumera con la hoja Parametros) y regenerar el cache; anadir al gate una comprobacion pycel de que 'Flujo Mensual'!C5 == B25."
+    },
+    {
+      "id": "RD-03",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B8:F8, B9:F9, B12:F14, B16:F16",
+      "hallazgo": "El informe que se vende «para presentarlo a un banco» sigue con TOTAL GASTOS, EBITDA, BAI, Impuesto, BENEFICIO NETO y CASH FLOW OPERATIVO como constantes 0 sin relleno de input (DOM-02/TEC-02/COM-18, «resuelto en §4»). Se imprime en A4 con todas las lineas de resultado en cero.",
+      "evidencia": "B8=0 (lock=True, sin fill), B9=0, B12=0, B13=0, B14=0, B16=0 — todas constantes, no formulas; las unicas formulas de la hoja son B21 y B22. A13 sigue rotulado 'Impuesto Sociedades (25%)' con el tipo clavado en la etiqueta (DOM-19 sin hacer).",
+      "fix": "Aplicar §4: B8:F8 '=SUM(B5:B7)', B9 '=$B4-$B8', B12 '=$B9-$B10-$B11', B13 '=IF($B12>0,$B12*$C$31,0)', B14 '=$B12-$B13', B16 '=$B14+$B10', con C31 como parametro en celda."
+    },
+    {
+      "id": "RD-04",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B19:F19, B21, B22, A23",
+      "hallazgo": "TIR, VAN y payback siguen sin existir (DOM-03/TEC-03/COM-02, «resuelto en §4 + §1.8»). La fila 19 solo tiene el -150.000 precargado, C19:F19 estan vacias, la TIR queda en «—» y el VAN se entrega como -150.000,00 EUR. La celda de payback ni siquiera existe.",
+      "evidencia": "B19=-150000 (verde, editable); B21='=IFERROR(IRR(B19:F19),\"N/A\")' con cache '—'; B22='=IFERROR(NPV(0.08,C19:F19)+B19,\"N/A\")' -> -150000.0; A23='Payback (anos)' sin celda B23. El propio main.py lo canta y lo da por bueno: «TIR cacheada: '—' en Proyecciones!B21 (OK) · flujos: [-150000.0, 0.0, 0.0, 0.0, 0.0]». Instrucciones!B9 sigue prometiendo «TIR, VAN y Payback se calculan automaticamente».",
+      "fix": "Fila 19 desde el Resumen Ejecutivo y desde la fila 16 (C19:F19 '=C16'...), tasa de descuento en C25, payback por formula COUNTIF/INDEX y cachear_irr() sobre flujos reales; el gate debe FALLAR si la TIR cacheada es '—' o si algun flujo 1-5 es 0."
+    },
+    {
+      "id": "RD-05",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Ratios!C4:C10 y hoja 'Financiacion' (inexistente)",
+      "hallazgo": "Los siete ratios de solvencia (DOM-11/TEC-19/COM-17, «resuelto en §4») no se calculan: el motor ha creado las celdas pero como INPUT VERDE editable. El banco recibe un DSCR que el propio solicitante teclea a mano. No existe la hoja 'Financiacion', asi que el cuadro de amortizacion del que sale el DSCR tampoco esta.",
+      "evidencia": "Ratios!C4:C10 vacias, fill=E8F5E9, lock=False (7 celdas desbloqueadas); B5='Cobertura de deuda (DSCR)' con D5='> 1.25x' y C5 vacia. Hojas del libro: ['Instrucciones','Resumen Ejecutivo','Proyecciones','Ratios','Garantias'] — sin 'Financiacion'. Ademas la regla de formato condicional se aplico a E4:E10, columna que no tiene ni encabezado ni contenido.",
+      "fix": "Crear 'Financiacion' con anualidad algebraica y calcular C4:C10 por formula (DSCR = Proyecciones!B16/Financiacion!D5, etc.), dejando verdes solo los datos de balance; anadir la columna E «Estado» antes de pintarle el CF."
+    },
+    {
+      "id": "RD-06",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Escenarios!C4:E7 (hoja protegida, 0 celdas desbloqueadas)",
+      "hallazgo": "REGRESION NUEVA de la v2.0: motor.cerrar() protege las 53 hojas y desbloquea solo lo que esta pintado de E8F5E9. En 'Escenarios' los inputs van pintados en rojo/ambar/verde de escenario (FFCDD2 / FFF9C4 / C8E6C9), asi que quedan BLOQUEADOS: un lunes no puedes cambiar ni el ticket ni los cubiertos del escenario. La hoja entera tiene cero celdas editables.",
+      "evidencia": "Escenarios: prot=True, desbloq=0. C4=18 fill=FFCDD2 lock=True; D5=55 fill=FFF9C4 lock=True; E6=0,3 fill=C8E6C9 lock=True; C7:E7=19000 lock=True. Comparar con Datos!C6:C13, que si estan en E8F5E9 y lock=False.",
+      "fix": "Desbloquear por ROL de la celda (input vs calculada) y no por color de relleno; en Escenarios, Protection(locked=False) en C4:E7 conservando su color de escenario."
+    },
+    {
+      "id": "RD-07",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx",
+      "ubicacion": "Checklist!F5:F52 (Estado), C55, C59 y banda B21:B28",
+      "hallazgo": "La unica columna que el usuario tiene que tocar en una checklist —Estado— queda BLOQUEADA al proteger la hoja, mientras que la banda de color de la fase «3. Licencias» se desbloquea por accidente (usa el mismo E8F5E9 de los editables). Encima la DV lleva showErrorMessage=False (la SPEC exige True) y el contador sigue mintiendo: C55=48 constante y C59 divide por el literal 48 sin IFERROR (DOM-26/TEC-24/COM-30, «resuelto en §4»). Falta la fase 7 laboral (DOM-20).",
+      "evidencia": "F5..F9 = 'Pendiente' con lock=True; DV list \"Pendiente,En curso,Completada\" sobre F5:F52 con showErrorMessage=False; C55=48; C59='=COUNTIF(F5:F52,\"Completada\")/48'; B21='3. Licencias' fill=E8F5E9 lock=False. El CF cubre F5:F64 pero la DV solo F5:F52.",
+      "fix": "Desbloquear F5:F64 (y D/E/G), showErrorMessage=True, C55='=COUNTIF($A$5:$A$64,\"<>\")', C59='=IFERROR(COUNTIF($F$5:$F$64,\"Completada\")/$C$55,0)', cambiar el color de banda de fase para que no colisione con E8F5E9, y anadir la fase 7 (54 tareas)."
+    },
+    {
+      "id": "RD-08",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "'Resumen Anual'!B5:N10",
+      "hallazgo": "El Resumen Anual sigue siendo un bloque de 78 constantes 0 sin una sola referencia a las 12 pestanas (DOM-05/TEC-04/COM-04, «resuelto en §2») y la columna TOTAL tampoco suma. Y ahora el motor ha colgado encima un BarChart que se alimenta justo de esas constantes: un grafico permanentemente plano.",
+      "evidencia": "B5..N5 = 0 (constantes, lock=True, sin fill), idem filas 6-10; N5=0 y no '=SUM(B5:M5)'. Chart en 'Resumen Anual' con series 'Resumen Anual'!$B$5:$M$5 y $B$6:$M$6.",
+      "fix": "B5=\"='Ene'!B10\", B6=\"='Ene'!C10\", ... arrastrado C..M y N5:N10 '=SUM(B5:M5)' antes de insertar el grafico."
+    },
+    {
+      "id": "RD-09",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx",
+      "ubicacion": "Resumen!B5:E8 (identico en 01b!Resumen!B5:G8)",
+      "hallazgo": "Las dos hojas «Resumen» que las Instrucciones venden como consolidacion para banco/inversores siguen a 0 constante (DOM-04/TEC-05/DOM-27, «resuelto en §2»), con el grafico nuevo dibujado sobre ellas. La columna de crecimiento solo tiene formula en E5.",
+      "evidencia": "01!Resumen: B5=0, C5=0, D5=0 (constantes); E5='=IF(B5=0,0,(D5-B5)/B5)' pero E6=0, E7=0, E8=0 constantes en formato 0,0%. Instrucciones!B10: «La pestana Resumen consolida los 3 anos para presentacion a inversores o bancos». Chart series 'Resumen'!$B$5:$D$5 / $B$6:$D$6 / $B$7:$D$7.",
+      "fix": "B5=\"='Ano 1'!N10\", C5=\"='Ano 2'!N10\", D5=\"='Ano 3'!N10\"; fila 6 -> N19; fila 7 -> N21; B8='=IFERROR($B7/$B5,\"\")'; E6:E7 replicando el crecimiento y E8 en p.p."
+    },
+    {
+      "id": "RD-10",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx",
+      "ubicacion": "Simulador!C11 y C19/C21; Comparativa!D7",
+      "hallazgo": "La doble contabilizacion del personal (DOM-06/TEC-21/TEC-22/COM-08, «resuelto en §4») sigue viva: los 19.000 EUR de «costes fijos» ya llevan dentro las nominas del 02 y encima se aplica un 28 % de labor cost. El escenario BASE —el que se ensena a un inversor— cierra en -5.272 EUR/mes y -63.264 EUR/ano, y ahora ademas sale dibujado en el grafico nuevo de Comparativa.",
+      "evidencia": "Simulador!A11='Costes fijos mensuales (EUR)' con C11=19000 (mismo importe que 02!Datos!C14, que incluye C7=12.000 de nominas); C10=0,28; C19='=C14-C18' -> -5272,0; C21 -> -63264,0. Comparativa!D7='=Simulador!C21' -> -63264,0, y el BarChart usa 'Comparativa'!$C$7:$E$7. Instrucciones!B7 sigue diciendo «Ocupacion» (COM-26) cuando la variable es A7='Cubiertos / dia'.",
+      "fix": "A11 -> «Costes fijos mensuales SIN personal ...», recalibrar a 9.500/9.800/9.200 con la base comun del 02 (22 EUR, 55 cubiertos, 26 dias) y corregir la palabra «Ocupacion» en las cuatro superficies."
+    },
+    {
+      "id": "RD-11",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!C22 y D22",
+      "hallazgo": "El RevPASH sigue dividiendo por METROS CUADRADOS y comparandose con un umbral por plaza (DOM-07/TEC-13/COM-07, «resuelto en §4»). El ejemplo da 2,95 EUR contra un benchmark de 8 EUR: quien abra el dashboard el lunes concluye que va tres veces por debajo del sector cuando el ratio ni siquiera es el que dice ser. No existe el input «Numero de plazas (aforo)».",
+      "evidencia": "B22='RevPASH (EUR/m2/hora)'; C22='=IFERROR(C6/(C11*C12),\"Indica plazas y horas\")' -> 2,9514; C11='m2 de sala'=80; C12='Horas de servicio / mes'=360; D22='> 8EUR casual dining'. El propio texto de error dice «Indica plazas» pero no hay celda de plazas.",
+      "fix": "Anadir input C13 «N.o de plazas (aforo)», C22='=IFERROR($C6/($C11*$C13),\"—\")' con etiqueta «RevPASH (EUR/plaza/hora)» y fila aparte «Ventas por m2 de sala» con su propio benchmark."
+    },
+    {
+      "id": "RD-12",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "hoja 'Parametros' (inexistente); 'Flujo Mensual'!A21/B21:M21; Instrucciones!B8",
+      "hallazgo": "Todo lo que hace util una tesoreria para quien compra —plazo de pago a proveedores, desfase de abono de tarjeta, SS del mes siguiente, IVA trimestral, estacionalidad— sigue sin existir (DOM-10/DOM-23/TEC-17/COM-09/COM-15, «resuelto en §3»). La «Liquidacion IVA trimestral» es una celda verde que se teclea a mano en los 12 meses, mientras las Instrucciones prometen que se calcula sola.",
+      "evidencia": "Hojas del libro: ['Instrucciones','Flujo Mensual','Alertas'] — no hay 'Parametros'. A21='Liquidacion IVA trimestral' con B21..M21 = 0 verdes editables (DV decimal >=0). Instrucciones!B8: «El IVA trimestral se calcula automaticamente (linea 'Liquidacion IVA')». A14='Compras materia prima' es una linea suelta sin plazo de pago ni enlace a las ventas.",
+      "fix": "Crear 'Parametros' (% tarjeta, D+n, plazo proveedores, IVA 10/10/21 %, estacionalidad) y el mapa de filas 12-29 de la SPEC, con la liquidacion calculada solo en abril/julio/octubre/enero."
+    },
+    {
+      "id": "RD-13",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx",
+      "ubicacion": "'Ano 1'!A13:A18 (idem 01b, 05!A13:A18, 07!Proyecciones!A5:A7, 03!A14:A22)",
+      "hallazgo": "HALLAZGO NUEVO, no esta en el R1: el kit desglosa los INGRESOS de delivery en las cuatro plantillas de P&L pero no tiene NI UNA linea de gasto para la comision de las plataformas (30-35 % de esa venta) ni para el packaging. Un restaurante con 20 % de venta en delivery ve el ingreso completo y ninguno de sus costes: el EBITDA previsional sale inflado en 6-7 puntos y es el numero que se lleva al banco.",
+      "evidencia": "Lineas de ingreso 01!A8='Delivery (sin IVA)', 05!A8, 03!A9='Ventas delivery (IVA incl.)'. Lineas de gasto 01!A13:A18 = Food Cost, Personal, Alquiler, Suministros, Marketing, Administracion/Otros; 07!Proyecciones!A5:A7 = Food Cost, Personal, Otros Gastos Operativos; 03!A14:A22 sin comisiones. El kit conoce el canal: BONUS-09!C35='Firmar contrato con plataformas delivery'.",
+      "fix": "Fila «Comisiones de plataformas (delivery)» en 01, 01b, 05 y 07 y en el bloque de pagos del 03, con un % en celda sobre la venta de delivery; anadir «Envases y packaging» al menos como nota en Otros."
+    },
+    {
+      "id": "RD-14",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "'Ene'!B25 y C25 (x12 pestanas); idem 06!Ratios!C17",
+      "hallazgo": "HALLAZGO NUEVO: el Food Cost % se calcula sobre el TOTAL de ingresos, que incluye barra (bebida) y eventos, y luego se compara con un benchmark de food cost puro (28-32 %). En un negocio con 25 % de venta de barra el ratio sale ~4 puntos por debajo del real y el jefe de compras cree que va bien cuando no. El kit separa las ventas en cuatro lineas pero solo tiene UNA linea de coste.",
+      "evidencia": "05!B25='=IF(B10=0,0,B13/B10)' con B10='=B6+B7+B8+B9' (Comedor + Barra + Delivery + Eventos) y B13='Food Cost'; 06!C17='=IFERROR(C7/C6,...)' con C6='Ventas totales (EUR, sin IVA)' y C7='Coste materia prima (EUR)'. Barrido de las 47 hojas con (bebida|barra|vino|bodega): las 24 coincidencias son etiquetas de VENTA (01/01b!'Año n'!A7='Barra (sin IVA)', 05!'Ene'..'Dic'!A7, 03!A8) o mobiliario (04!'Mobiliario Sala'!A7/A8); ni una sola línea de COSTE de bebida.",
+      "fix": "Desdoblar el coste en «Coste de comida» y «Coste de bebida» y calcular Food Cost % = coste comida / (ventas comedor + delivery + eventos) y Beverage Cost % = coste bebida / ventas barra, cada uno contra su benchmark (bebida 18-24 %)."
+    },
+    {
+      "id": "RD-15",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!B7/C7 (y 01/05/07, linea «Food Cost»)",
+      "hallazgo": "HALLAZGO NUEVO: «Coste materia prima» no define si es COMPRAS o CONSUMO, y en ningun sitio del kit hay existencias iniciales/finales. Quien compra sabe que el mes en que entra el pedido grande o se llena la bodega el ratio se dispara sin que haya pasado nada: consumo = Ei + compras - Ef. Con un solo campo, el food cost del kit es el de las facturas del mes, no el del consumo.",
+      "evidencia": "06!B7='Coste materia prima (EUR)' C7=25500 (input suelto, sin nota); 05!A13='Food Cost'; 03!A14='Compras materia prima'. Barrido de las 10 plantillas (47 hojas) con regex (inventar|existenc|merma|stock|almac|caduc|pedido): 0 coincidencias en celdas de dato; las únicas coincidencias del barrido ampliado son textos de tarea de BONUS-09 (B29:B36 '4. Proveedores', C36 'Negociar condiciones de pago con proveedores clave') y 07!'Resumen Ejecutivo'!B16 'Plazo de amortización solicitado'.",
+      "fix": "Anadir en el 06 (y en la nota del 05) «Existencias iniciales» y «Existencias finales» y calcular Consumo = Ei + Compras - Ef; la etiqueta debe decir «consumo (no compras)» para que el dato entre bien."
+    },
+    {
+      "id": "RD-16",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "'Break-Even'!C10 y C11",
+      "hallazgo": "El umbral de cubiertos sigue sin ROUNDUP (DOM-25/TEC-16/COM-27, «resuelto en §3»): la celda vale 51,1027 y el formato #,##0 ensena «51». 51 x 22 EUR x 26 dias = 29.172 EUR, es decir 58,77 EUR POR DEBAJO del propio break-even que la hoja acaba de calcular. Y la fila «Ticket medio necesario» que promete la ficha sigue sin existir.",
+      "evidencia": "C8='=IFERROR(Datos!C14/(1-Datos!C17),...)' -> 29.230,769; C9 -> 1.124,26; C10='=IFERROR(C9/Datos!C20,\"Indica el ticket medio\")' -> 51,1027 con number_format '#,##0'; C11='=C10*Datos!C21' -> 1.328,67 (tampoco redondeado). La hoja acaba en la fila 11.",
+      "fix": "C10='=IFERROR(ROUNDUP($C9/Datos!$C$20,0),\"Indica el ticket medio\")', C11='=IFERROR(ROUNDUP($C8/Datos!$C$20,0),\"—\")' y fila nueva «Ticket medio necesario (EUR)» con su input de cubiertos previstos."
+    },
+    {
+      "id": "RD-17",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Datos!C12 dentro de C14; Datos!B7",
+      "hallazgo": "La cuota del prestamo sigue dentro de TOTAL COSTES FIJOS (TEC-23/DOM-24, «resuelto en §3»), asi que el «EBITDA» de Escenarios va despues del servicio de deuda y luego se compara con los benchmarks de EBITDA del 06 y del 07: no son la misma magnitud. Ademas la etiqueta del personal se contradice consigo misma.",
+      "evidencia": "Datos!B12='Cuota prestamo' C12=800; C14='=SUM(C6:C13)' -> 19000; Break-Even!C5='=Datos!C14'. Datos!B7='Nominas fijas (bruto)' con nota D7='EUR/mes — incluye SS empresa' (bruto y bruto+SS no son lo mismo; 12.000 EUR con SS al 32 % serian ~9.090 de bruto).",
+      "fix": "Sacar la cuota a C15 fuera del sumatorio (C14='=SUM(C6:C11)+C13'), anadir break-even operativo y break-even de caja, y unificar B7 como «Coste total de personal fijo (salario bruto + SS empresa)» con la nota «~ bruto x 1,32»."
+    },
+    {
+      "id": "RD-18",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Escenarios!C7:E7 y C10:E10",
+      "hallazgo": "Escenarios sigue desconectado de Datos (DOM-13/TEC-08/COM-20, «resuelto en §3»): los costes fijos son tres constantes de 19.000 y los dias de apertura van clavados como 26 dentro de la formula. Cambias los dias en Datos y el escenario no se entera: el mismo libro sostiene dos verdades.",
+      "evidencia": "C7=19000, D7=19000, E7=19000 (constantes); C10='=C4*C5*26' -> 18.720; D10='=D4*D5*26'; E10='=E4*E5*26'. En cambio Break-Even!C5='=Datos!C14'.",
+      "fix": "C7:E7 '=Datos!$C$14' y C10='=C4*C5*Datos!$C$21' (idem D/E); renombrar la fila 6 «% Coste variable (food + comisiones; NO incluye personal fijo)»."
+    },
+    {
+      "id": "RD-19",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!E17/E18/E19 vs D17/D18/D19 vs Benchmarks!D4:E6 vs Instrucciones!B12:B14",
+      "hallazgo": "Los umbrales siguen contradiciendose en cuatro sitios (DOM-29/TEC-12/COM-29, «resuelto en §4»). Consecuencia medible con el ejemplo cargado: un food cost del 30 %, que las propias Instrucciones llaman ideal, sale marcado «ATENCION Aceptable». El jefe de compras se pone a apretar proveedores por un dato que su propio manual califica de bueno.",
+      "evidencia": "C17 -> 0,30; E17='=IF(C17<0.28,\"Excelente\",IF(C17<0.33,\"Aceptable\",\"Alto\"))' -> «Aceptable»; D17='28% - 32%'; Benchmarks!D4='28% - 33%', E4='> 33%'; Instrucciones!B12='Food Cost ideal: 28-32%'. Igual en labor (E18 usa <0,31 frente a Benchmarks!E5 '> 30%') y en prime (E19 usa <0,66 frente a Benchmarks!E6 '> 65%').",
+      "fix": "Columnas numericas F («optimo hasta») y G («peligro desde») en Benchmarks y que E17:E25 las lean; reescribir Instrucciones!B12:B15 con esos mismos numeros."
+    },
+    {
+      "id": "RD-20",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!E21:E24 (vacias) y C21/C23",
+      "hallazgo": "Las filas 21-24 siguen sin semaforo (DOM-22, «resuelto en §4») y justo ahi el ejemplo precargado situa al restaurante en «Peligro» segun su propio benchmark, sin que nada lo indique: coste por cubierto / ticket = 85 %, cuando Benchmarks!E11 marca peligro por encima del 70 %.",
+      "evidencia": "C21='=IFERROR(C9/C10,...)' -> 22,578 EUR; C23='=IFERROR(C6/C10,...)' -> 26,5625 EUR; 22,578/26,5625 = 0,85. Benchmarks!B11='Coste cubierto / Ticket' con C11='< 60%', D11='60% - 70%', E11='> 70%'. E21, E22, E23 y E24 no existen (D21='Varia por concepto').",
+      "fix": "Anadir la fila «Coste cubierto / Ticket» calculada y el semaforo de E21:E24 leyendo las columnas numericas de Benchmarks; recalibrar el ejemplo para que no nazca en rojo."
+    },
+    {
+      "id": "RD-21",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B19 (valor y validacion de datos)",
+      "hallazgo": "REGRESION NUEVA de la v2.0: la validacion numerica «>= 0» del §1.3 se ha aplicado tambien a la celda «Inversion inicial (negativa)», que se entrega con -150.000. El fichero sale con un valor que incumple su propia validacion y, si el usuario reescribe su inversion en negativo —como pide la etiqueta—, Excel se lo RECHAZA con error bloqueante (showErrorMessage=True).",
+      "evidencia": "A19='Inversion inicial (negativa)'; B19=-150000 (verde, lock=False); DV de la hoja: decimal greaterThanOrEqual f1=0 showErrorMessage=True sobre «B4 B5 B6 B7 B19 C4 ...». Ademas el 150.000 sigue precargado con aspecto de dato real en un documento que se imprime y se entrega (DOM-21/COM-16, «resuelto en §4»).",
+      "fix": "Excluir B19 de la validacion >=0 (o validarla <=0) y sustituir el valor por \"=-'Resumen Ejecutivo'!$C$13\", dejando el 150.000 solo como texto de ejemplo."
+    },
+    {
+      "id": "RD-22",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx",
+      "ubicacion": "las 5 hojas de partidas (cabecera A4:E4) y Resumen!A5:A10",
+      "hallazgo": "El CAPEX sigue sin IVA y sin amortizacion (DOM-15/COM-13, «resuelto en §3»). Quien firma los pedidos paga base + 21 %: con 150.000 de presupuesto el desembolso real es 181.500 y el kit no lo dice en ninguna parte. Ademas el 07 tiene una fila «Amortizacion» que nadie alimenta porque aqui no hay coeficientes.",
+      "evidencia": "Cabecera de las 5 hojas: A4='Partida', B4='Presupuesto (EUR)', C4='Real (EUR)', D4='Desviacion %', E4='Notas' — sin IVA ni coeficiente. Resumen!A5:A10 = Obra, Equipamiento Cocina, Mobiliario Sala, Tecnologia, Licencias, INVERSION TOTAL. Barrido del libro: la cadena «IVA» aparece en UNA sola celda de las 7 hojas, Instrucciones!B15 («Todas las cifras van SIN IVA...»), añadida por el motor; ninguna hoja de partidas ni el Resumen la mencionan. 07!Proyecciones!A10='Amortizacion' con B10:F10 = 0 constantes.",
+      "fix": "Cabecera Base / IVA % / IVA (EUR) / Total con IVA / Real / Desviacion / Coef. amortizacion / Dotacion anual, coeficiente por hoja (obra 3 %, cocina 12 %, mobiliario 10 %, tecnologia 25 %, licencias 0 %) y llevar la dotacion al 07."
+    },
+    {
+      "id": "RD-23",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx",
+      "ubicacion": "hoja 'Otros conceptos de apertura' (inexistente)",
+      "hallazgo": "Sigue sin existir la hoja de conceptos de apertura (DOM-16, «resuelto en §3»), y con ella se cae lo que mas descuadra una apertura desde compras: el STOCK INICIAL de despensa y bodega (dos a cuatro semanas de consumo, 8.000-15.000 EUR en un casual de 60 plazas), las fianzas y traspaso, el marketing de lanzamiento, los imprevistos y el fondo de maniobra. El propio kit se lo pide al usuario y no le da donde ponerlo.",
+      "evidencia": "Hojas del 04: ['Instrucciones','Obra','Equipamiento Cocina','Mobiliario Sala','Tecnologia','Licencias','Resumen']. BONUS-09!C15='Determinar capital circulante necesario (3-6 meses)' — tarea sin celda de calculo en ningun libro del kit. 04!Licencias!A13='Seguros (ano 1)' sigue mezclado con el CAPEX pese a ser OPEX y duplicar 02!Datos!C8=400 EUR/mes.",
+      "fix": "Crear la hoja con traspaso/fianza/primeras rentas, constitucion, STOCK INICIAL (con nota «semanas de consumo x coste diario de materia prima»), nominas y formacion pre-apertura, marketing de lanzamiento, imprevistos 5-10 % y fondo de maniobra 3-6 meses; mover ahi «Seguros (ano 1)»."
+    },
+    {
+      "id": "RD-24",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx",
+      "ubicacion": "'Mobiliario Sala'!A5:A12 y 'Equipamiento Cocina'!A5:A14",
+      "hallazgo": "HALLAZGO NUEVO: en la lista de compra de apertura no hay ni una linea de VAJILLA, CRISTALERIA, CUBERTERIA ni menaje de sala, que en 60 plazas con dos juegos de reposicion son 4.000-8.000 EUR, ni de uniformes/EPI. Todo el menaje esta condensado en «Pequeno material cocina», que un cocinero interpreta como cuchillos y gastronorms, no como 240 platos. Es el olvido clasico que revienta el presupuesto la semana de la apertura.",
+      "evidencia": "'Mobiliario Sala'!A5:A12 = Mesas, Sillas, Barra, Taburetes barra, Estanterias/decoracion, Iluminacion, Terraza, Textil (manteles, servilletas). 'Equipamiento Cocina'!A5:A14 = Cocina industrial, Horno combinado, Plancha/Grill, Freidora, Camara frigorifica, Congelador, Mesa de trabajo inox, Lavavajillas industrial, Campana extractora, Pequeno material cocina.",
+      "fix": "Anadir a Mobiliario Sala «Vajilla, cristaleria y cuberteria (con reposicion)» y «Uniformes y EPI», y a Equipamiento Cocina «Menaje y utillaje de cocina (gastronorms, cuchilleria)» y «Estanteria de almacen y camara de bebidas»."
+    },
+    {
+      "id": "RD-25",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "Alertas!D7:D17 (valores cacheados)",
+      "hallazgo": "El fichero se entrega con once de los doce meses en «BAJO MINIMO» ya cacheados, porque el unico dato de ejemplo es el saldo inicial (15.000) y todo lo demas esta a 0. Se abre el lunes y la pestana de alertas es un muro de rojo antes de teclear nada: o se le hace caso a un aviso falso o se aprende a ignorar el semaforo, que es peor.",
+      "evidencia": "C6=\"='Flujo Mensual'!B25\" -> 15.000 y D6 -> 'OK'; C7..C17 -> 0,0 y D7..D17 -> 'ATENCION BAJO MINIMO' (11 celdas), con C3 (umbral) = 5.000. El formato condicional CF C6:C17 '=$C6<$C$3' los pinta ademas en rojo.",
+      "fix": "Cargar un ejemplo coherente de 12 meses (o dejar la fila de saldo inicial vacia) y anadir la guarda '=IF(SUM(cobros;pagos)=0;\"—\";...)' para que el semaforo no opine sobre un mes sin datos."
+    },
+    {
+      "id": "RD-26",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "Alertas!F5, serie 2 del LineChart",
+      "hallazgo": "REGRESION NUEVA: el grafico de tesoreria incluye como serie numerica la columna D, que es TEXTO («OK» / «BAJO MINIMO»). Excel la dibujara como una linea plana en cero pegada al eje, con leyenda «Alerta», dentro del unico grafico que el cliente va a ensenar. La SPEC §1.1 pedia saldo final + umbral (columnas C y E), no D.",
+      "evidencia": "Chart en 'Alertas' (LineChart) con series: 'Alertas'!$C$6:$C$17 (tx C5='Saldo Final'), 'Alertas'!$D$6:$D$17 (tx D5='Alerta', valores 'OK'/'ATENCION BAJO MINIMO'), 'Alertas'!$E$6:$E$17 (tx E5='Umbral').",
+      "fix": "Quitar la serie D del grafico y dejar solo C (saldo) y E (umbral)."
+    },
+    {
+      "id": "RD-27",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "'Ene'!F6:F21, E21, y filas 22 y 25-27 (x12 pestanas)",
+      "hallazgo": "El semaforo sigue con ABS (DOM-12/TEC-09/TEC-10, «resuelto en §2»): vender un 20 % POR ENCIMA del presupuesto o gastar un 12 % MENOS en materia prima se marcan «Alerta» igual que pasarse. Y para el jefe de compras hay algo peor que sigue igual: la desviacion del food cost se juzga en EUROS absolutos, no en % sobre ventas, asi que un mes bueno de ventas sale en rojo por comprar mas. Las filas de ratios no tienen columnas de desviacion.",
+      "evidencia": "F6='=IF(ABS(E6)<0.05,\"OK\",IF(ABS(E6)<0.1,\"Atencion\",\"Alerta\"))' (identico en F13 food cost y F21 EBITDA); E21='=IF(B21=0,0,(C21-B21)/B21)' sin ABS en el denominador (con EBITDA presupuestado negativo invierte el signo); A22='Margen EBITDA %' solo tiene B22 y C22; A25:A27 (Food/Labor/Prime Cost %) solo B y C, sin D, E ni F.",
+      "fix": "Semaforo con signo (ingresos '>=-0,05'; gastos '<=0,05'), E21 sobre ABS($B21), y crear D/E/F en 22 y 25-27 comparando PUNTOS PORCENTUALES; para gastos variables, comparar el % sobre ventas y no el importe."
+    },
+    {
+      "id": "RD-28",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/main.py",
+      "ubicacion": "paso 6/8 del gate (gate de graficos)",
+      "hallazgo": "El 02 y el 06 se quedan sin grafico y el gate lo declara «PENDIENTE ... lo desbloquea grupo_b/c» sin fallar, cerrando en «TODO VERDE». Es exactamente el mecanismo que dejo pasar la v1.1: un gate que se auto-exonera de lo que falta. La landing promete graficos «en cada plantilla» seis veces.",
+      "evidencia": "Salida: «02-calculadora-punto-equilibrio.xlsx: 0 grafico(s) []» y «06-dashboard-ratios-financieros.xlsx: 0 grafico(s) []», seguidas de «PENDIENTE ... sin grafico — lo desbloquea grupo_b» y del veredicto «TODO VERDE ... (pendientes de grupo, esperados sin ese grupo cargado: 2)».",
+      "fix": "Los «pendientes de grupo» solo pueden ser verdes con --solo motor; en una pasada completa (los tres grupos declarados) deben contar como fallo y devolver exit!=0."
+    },
+    {
+      "id": "RD-29",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Ratios!D7 frente a 06!Benchmarks!C10/D10/E10",
+      "hallazgo": "Cuarta fuente de umbrales sin unificar: el margen EBITDA exige «> 12 %» en el informe bancario y «> 15 % optimo / < 10 % peligro» en el dashboard. El mismo restaurante aprueba en un libro y queda en ambar en el otro, y los dos se entregan juntos.",
+      "evidencia": "07!Ratios!B7='Margen EBITDA / Ventas' D7='> 12%'; 06!Benchmarks!B10='EBITDA %' con C10='> 15%', D10='10% - 15%', E10='< 10%'. Instrucciones del 06 B15 habla ademas de GOP «objetivo >15%».",
+      "fix": "Una sola tabla de umbrales (Benchmarks del 06) y que el 07 la cite explicitamente en la columna de referencia."
+    },
+    {
+      "id": "RD-30",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "'Flujo Mensual'!B5 (validacion de datos)",
+      "hallazgo": "La validacion «>= 0» del §1.3 se aplico tambien al SALDO INICIAL, y un restaurante puede empezar el mes en descubierto o con la poliza dispuesta. Excel bloquea el dato real con error, y el usuario acaba desprotegiendo la hoja el primer dia — que es justo lo que la proteccion pretendia evitar.",
+      "evidencia": "'Flujo Mensual'!B5=15000 verde lock=False, incluida en la DV «decimal greaterThanOrEqual f1=0 showErrorMessage=True» junto a B7:B22. La misma validacion se hereda en C5:M5 aunque ya son formulas.",
+      "fix": "Excluir el saldo inicial (y cualquier celda que pueda ser negativa) de la validacion >=0; validar solo cobros y pagos."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "La copia que produce hoy el paquete NO es la v2.0 de la SPEC: faltan grupo_a.py, grupo_b.py y grupo_c.py, y con ellos las secciones §2, §3 y §4 enteras. He verificado uno a uno los ids que la tabla final da por «resuelto en §2/§3/§4» y siguen vivos en el fichero: el saldo del 03 encadena con «Otros pagos» (C5='=B22'), el P&L del 07 son constantes 0, la TIR sale «—» y el VAN -150.000, los tres Resumen no consolidan nada, el RevPASH divide por m2, el escenario BASE del BONUS-08 cierra a -63.264 EUR/ano y el contador del BONUS-09 sigue dividiendo por 48. Encima el motor introduce tres REGRESIONES nuevas que no estaban en la v1.1: la proteccion de hoja bloquea justo los inputs que no van pintados de verde (02!Escenarios queda con CERO celdas editables y BONUS-09!F5:F52 impide marcar una tarea), la validacion >=0 cae sobre 07!Proyecciones!B19 «Inversion inicial (negativa)» = -150.000 (Excel rechaza el dato correcto) y el grafico del 03 lleva como serie una columna de texto. Y hay cuatro huecos de dominio que el R1 no recogia y que un jefe de compras ve el primer lunes: no existe linea de comision de plataformas de delivery en ningun P&L pese a haber linea de ingreso de delivery; el food cost se calcula sobre ventas totales con la barra dentro; «coste materia prima» no distingue compras de consumo y no hay existencias en ninguna de las 47 hojas; y la lista de compra de apertura no tiene vajilla, cristaleria, cuberteria ni stock inicial. Con todo eso, los 10 ficheros ya llevan escrito «Version 2.0 · agosto 2026» y subject «... · v2.0», y el gate cierra en «TODO VERDE»: si esto se aplicara a produccion, se publicaria una v2.0 con los bloqueos de la ronda 1 intactos y tres formas nuevas de que el cliente no pueda ni escribir en la plantilla."
+}

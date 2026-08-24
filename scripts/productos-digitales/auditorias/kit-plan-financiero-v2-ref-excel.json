@@ -1,0 +1,241 @@
+{
+ "lente": "REFUTADOR tecnico Excel (openpyxl 3.1.3 + pycel 1.0b30) sobre copia propia del Kit Plan Financiero v2.0 generada con --dry-run",
+ "hallazgos": [
+  {
+   "id": "RT-01",
+   "severidad": "alta",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/",
+   "ubicacion": "paquete completo (falta grupo_a.py, grupo_b.py, grupo_c.py)",
+   "hallazgo": "El paquete NO esta terminado: solo existen main.py y motor.py. Los tres modulos de grupo no se han escrito, asi que las secciones §2, §3 y §4 de la SPEC estan sin ejecutar: 63 de los 90 ids del R1 siguen exactamente igual que en v1.1. Siete de los diez xlsx salen con CERO formulas nuevas.",
+   "evidencia": "ls del paquete: solo main.py (34 KB) y motor.py (66 KB). Traza de mi copia: 'grupo_a no existe todavia - se omite' x3, y en 1/8: 01=0, 01b=0, 04=0, 05=0, 07=0, BONUS-08=0, BONUS-09=0 formulas nuevas. Clasificando la tabla §8 de la SPEC: 63 ids apuntan a §2/§3/§4, 14 a §1, 10 a §5, 3 aparcados.",
+   "fix": "Escribir grupo_a/b/c antes de volver a auditar; hasta entonces el kit no puede declararse v2.0."
+  },
+  {
+   "id": "RT-02",
+   "severidad": "alta",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py",
+   "ubicacion": "main.py:737-770 (bloque veredicto) y salida final",
+   "hallazgo": "El gate imprime TODO VERDE y devuelve exit 0 aunque el propio informe contiene defectos que el script ya ha medido: demostraciones.saldo_encadenado_03.ok = false (el bug DOM-01 vivo) y 21 literales_sospechosos. Ninguno de los dos entra en la lista `fallos`. Un gate que no gatea es peor que no tener gate: el orquestador lee VERDE.",
+   "evidencia": "ref-excel.json: \"fallos\": [], \"exit\": 0, junto a gates/demostraciones/saldo_encadenado_03 = {\"C5_apunta_al_saldo_final\": false, \"ok\": false} y literales_sospechosos en 02, 05, 06, 07 y BONUS-09.",
+   "fix": "Anadir a `fallos`: demos[\"saldo_encadenado_03\"][\"ok\"] is False, cualquier literal_sospechoso, cache[i][2] != 0 e irr[\"inyectada\"] is False."
+  },
+  {
+   "id": "RT-03",
+   "severidad": "alta",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:504 (RX_REF) y motor.py:511-524 (_traducir_formula)",
+   "hallazgo": "RX_REF = r'(\\$?)([A-Z]{1,3})(\\$?)(\\d+)' no distingue una referencia local de una referencia a OTRA hoja: al insertar una fila/columna, `Datos!C14` se convierte en `Datos!C15`. La corrupcion es silenciosa (la formula sigue siendo valida) y afecta a las hojas que la SPEC manda reestructurar (02!Break-Even, 04!Obra..Licencias, 03!Flujo Mensual).",
+   "evidencia": "Ejecutado sobre el propio motor: motor._traducir_formula(\"=IFERROR(Datos!C14/(1-Datos!C17),'x')\", 10, 'fila') devuelve \"=IFERROR(Datos!C15/(1-Datos!C18),'x')\" y motor._traducir_formula(\"='Flujo Mensual'!B25\", 10, 'fila') devuelve \"='Flujo Mensual'!B26\".",
+   "fix": "Anteponer un negative-lookbehind a RX_REF para no tocar lo que va tras `!` (o parsear por tokens); anadir un test que fije `=Datos!C14` invariante ante insercion en la hoja actual."
+  },
+  {
+   "id": "RT-04",
+   "severidad": "alta",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:591-616 (insertar_fila) y motor.py:561-589 (insertar_columna)",
+   "hallazgo": "El reverso del RT-03: las dos funciones solo traducen formulas DENTRO de la hoja que modifican. Las referencias que otras hojas hacen a esa hoja no se mueven, y tampoco se mueven las referencias de los graficos. Con el mapa nuevo del 03 (§3 lleva SALDO FINAL de la fila 25 a la 29) las 36 formulas de Alertas seguirian leyendo la fila 25.",
+   "evidencia": "Copia generada: 03!Alertas!C6 = ='Flujo Mensual'!B25 (x12 meses); 04!Resumen!B5 = ='Obra'!B15, B7 = ='Mobiliario Sala'!B13, B9 = ='Licencias'!B14; grafico 03 con series fijas 'Alertas'!$C$6:$C$17.",
+   "fix": "Que insertar_fila/insertar_columna recorran TODO el workbook reescribiendo las referencias cualificadas a la hoja modificada, y reanclen las Reference de los charts."
+  },
+  {
+   "id": "RT-05",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+   "ubicacion": "03!'Flujo Mensual'!C5:M5 y 03!Alertas!C7:C17",
+   "hallazgo": "DOM-01/TEC-01 siguen vivos y el motor los AGRAVA: C5 lee =B22 (Otros pagos) en vez del saldo final. Once meses de tesoreria erroneos y once alertas rojas falsas, que ahora ademas se pintan de rojo con el formato condicional nuevo que el motor acaba de anadir (regla expression =$C6<$C$3 sobre C6:C17).",
+   "evidencia": "pycel sobre mi copia con cobros 40.000 y pagos 35.000 en enero: 'Flujo Mensual'!B25 = 20000 pero 'Flujo Mensual'!C5 = 0.0 y Alertas!D7 = '⚠️ BAJO MINIMO'. Cache del fichero entregado: Alertas!C7:C17 = 0.0 y 11 celdas 'BAJO MINIMO' contra un umbral de 5.000.",
+   "fix": "grupo_b: C5=B29 ... M5=L29 con la numeracion nueva, y re-anclar Alertas a la fila del saldo final."
+  },
+  {
+   "id": "RT-06",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "ubicacion": "07!Proyecciones!B4:F16, B21, B22, B23 y 07!Ratios!C4:C10",
+   "hallazgo": "El fichero que se vende para presentarlo a un banco se entrega con 40 ceros constantes, el P&L sin una sola formula (3 formulas en todo el libro, dos de ellas en Proyecciones), la hoja Ratios SIN NINGUNA celda en la columna Valor y el payback vacio. El VAN cacheado que veria el analista es -150.000,00 EUR.",
+   "evidencia": "openpyxl sobre mi copia: 07 contadores = {formulas: 3, ceros_constantes: 40}; Ratios max_column = 4 (columna C sin crear, C4:C10 inexistentes); XML sheet3: <c r=\"B22\"><f>IFERROR(NPV(0.08,C19:F19)+B19,\"N/A\")</f><v>-150000.0</v></c> y <c r=\"B23\" s=\"26\" t=\"n\"></c>.",
+   "fix": "grupo_c: §4 completo (P&L, flujos, TIR/VAN/payback, hoja Financiacion, siete ratios)."
+  },
+  {
+   "id": "RT-07",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "ubicacion": "07!Proyecciones!B19 (valor) y la DV decimal >= 0 de Proyecciones",
+   "hallazgo": "La inversion ficticia de 150.000 EUR sigue precargada en verde (DOM-21) y, ademas, el motor le ha puesto encima una validacion de datos `decimal >= 0` con showErrorMessage=True. El valor que trae el fichero VIOLA su propia validacion, y la SPEC exige que esa celda sea negativa (=-Resumen Ejecutivo!$C$13): al escribirla, Excel la rechazara.",
+   "evidencia": "Copia generada: DV Proyecciones | B4 B5 B6 B7 B19 C4 ... | type=decimal op=greaterThanOrEqual f1=0 err=True, y B19 = -150000 con relleno E8F5E9. La DV la crea motor.validaciones() (motor.py:465-505), que aplica >= 0 a TODA celda verde con formato numerico sin excepciones.",
+   "fix": "Excluir de la DV >= 0 las celdas que la SPEC define como negativas (07!Proyecciones!B19, EBITDA presupuestado) o usar una lista de excepciones por fichero!hoja!celda."
+  },
+  {
+   "id": "RT-08",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx",
+   "ubicacion": "BONUS-09!Checklist: DV lista F5:F52, CF F5:F64, C55, C59",
+   "hallazgo": "La DV de estado sigue siendo la de v1.1: showErrorMessage=False y solo hasta F52. El motor ha anadido formato condicional hasta F64. Resultado nuevo: un « Completada » con espacio (o cualquier texto libre) se pinta VERDE por el CF -SEARCH encuentra la subcadena- mientras C59 =COUNTIF(F5:F52,\"Completada\")/48 sigue devolviendo 0 %. La v2.0 convierte el bug TEC-24 en una contradiccion visible dentro de la misma fila.",
+   "evidencia": "Copia generada: DV Checklist | F5 F6 ... F52 | type=list f1=\"Pendiente,En curso,Completada\" err=False; CF Checklist | F5:F64 | containsText 'Completada'. Celdas: A1='Checklist Financiero Pre-Apertura - 48 Tareas', C55=48 (constante), C59='=COUNTIF(F5:F52,\"Completada\")/48'.",
+   "fix": "grupo_c: DV con showErrorMessage=True sobre F5:F64, C55 = COUNTIF($A$5:$A$64,\"<>\") y C59 = IFERROR(COUNTIF($F$5:$F$64,\"Completada\")/$C$55,0)."
+  },
+  {
+   "id": "RT-09",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+   "ubicacion": "06!Ratios!D17:E19 vs 06!Benchmarks!C4:E6",
+   "hallazgo": "DOM-29/TEC-12 vivos, con tres contradicciones numericas medibles: E17 usa 0,33 mientras D17 ensena «28% - 32%»; E18 usa 0,31 mientras D18 ensena «25% - 30%» y Benchmarks!E5 dice «> 30%» = Peligro; E19 usa 0,66 mientras D19 ensena «< 65%». El usuario lee un umbral y el libro aplica otro.",
+   "evidencia": "pycel: fijando Ratios!C8 = 25.925 (30,5 % de 85.000), C18 = 0.305 y E18 = '⚠️ Aceptable', con D18 = '25% - 30%' y Benchmarks!E5 = '> 30%'. Formulas: E17 = IF(C17<0.28,...,IF(C17<0.33,...)), E19 = IF(C19<0.6,...,IF(C19<0.66,...)).",
+   "fix": "grupo_c: columnas numericas Benchmarks!F/G y E17:E25 leyendolas; reescribir D17:D19 e Instrucciones!B12:B15 con esos numeros."
+  },
+  {
+   "id": "RT-10",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/05-pyl-mensual-real-vs-presupuesto.xlsx",
+   "ubicacion": "05!Ene..Dic!F6:F21 y E21 (x12 pestanas)",
+   "hallazgo": "DOM-12/TEC-09/TEC-10 vivos y ahora con color: el motor ha anadido el formato condicional que pinta de ROJO justo los falsos positivos. El ABS() marca «Alerta» cuando vendes por encima del presupuesto, y E21 divide entre B21 sin ABS, asi que con EBITDA presupuestado negativo -lo normal en una apertura- una mejora sale en rojo.",
+   "evidencia": "pycel sobre mi copia. Caso 1: Ene!B6=10.000, C6=12.000 -> E6 = 0.2 y F6 = '🔴 Alerta' (vender un 20 % mas). Caso 2: Ene!B21 = -3.000 (ppto) y C21 = 0 (real) -> D21 = +3.000, E21 = -1.0 y F21 = '🔴 Alerta'. CF anadido por motor.semaforos(): 3 reglas containsText sobre F6:F27 en las 12 pestanas.",
+   "fix": "grupo_a: semaforo con signo (ingresos >= -0,05 / gastos <= 0,05) y E21 = IFERROR(($C21-$B21)/ABS($B21),\"\")."
+  },
+  {
+   "id": "RT-11",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:1086 (grafico del 03) -> 03!Alertas chart1.xml",
+   "hallazgo": "El LineChart del 03 se construye sobre C:E, e incluye como serie NUMERICA la columna D, que es TEXTO («⚠️ BAJO MINIMO» / «OK»). En Excel una serie numRef sobre celdas de texto vale 0 en todos los puntos: sale una linea plana en cero titulada «Alerta» junto al saldo. La SPEC §1.1 pedia dos series: saldo final y umbral.",
+   "evidencia": "motor.py:1086: Reference(ws, min_col=3, max_col=5, min_row=5, max_row=17). chart1.xml del fichero generado: tres <c:ser> con <c:numRef><c:f>'Alertas'!$C$6:$C$17</c:f>, 'Alertas'!$D$6:$D$17 y 'Alertas'!$E$6:$E$17.",
+   "fix": "Construir el grafico con dos Reference separadas (C y E) o mover la columna de texto fuera del bloque C:E."
+  },
+  {
+   "id": "RT-12",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:632-653 (print_setup, fitToWidth=1) + anclas 03!Alertas!F5, 04!Resumen!F4, 07!Proyecciones!H3",
+   "hallazgo": "Tres de los siete graficos se anclan a la DERECHA de su tabla, y print_setup fuerza fitToWidth=1 / fitToHeight=0. Excel escala TODA la hoja para que tabla + grafico entren en un A4 de ancho: la tabla se imprime a la mitad de tamano. En un kit cuyo liston es «que el 07 se imprima y se entregue», la v2.0 empeora la impresion.",
+   "evidencia": "Medido sobre mi copia (1 caracter Calibri 11 = 2,117 mm; grafico = 6.480.000 EMU = 18,0 cm): 03!Alertas A-E = 87,0 car. = 18,4 cm + 18,0 cm de grafico = 36,4 cm contra 18,0 cm utiles de A4 vertical -> escala ~49 %. 04!Resumen = 19,1 + 18,0 = 37,1 cm -> ~48 %. 07!Proyecciones (apaisada, 26,7 cm utiles) = 23,3 + 1,8 (col G) + 18,0 = 43,1 cm -> ~62 %.",
+   "fix": "Anclar los tres graficos DEBAJO de la tabla (como en 01, 05 y BONUS-08) o definir print_area excluyendolos y darles su propia hoja/pagina."
+  },
+  {
+   "id": "RT-13",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:1522 (cachear_irr) -> 07!Proyecciones!B21",
+   "hallazgo": "El valor cacheado no coincide con lo que devuelve la propia formula: cachear_irr inyecta '—' fijo cuando no hay TIR, pero B21 es =IFERROR(IRR(B19:F19),\"N/A\"). Quien abra el fichero sin recalcular (Vista previa de macOS, Google Sheets, un conversor a PDF) lee «—»; quien recalcule en Excel lee «N/A». Dos verdades para la celda estrella del informe.",
+   "evidencia": "motor.py:1522: valor = tir if tir is not None else '—'. XML de mi copia, sheet3: <c r=\"B21\" s=\"14\" t=\"str\"><f>IFERROR(IRR(B19:F19),\"N/A\")</f><v>—</v></c>.",
+   "fix": "Leer el texto alterno de la propia formula (o unificar el literal a \"N/A\" en los dos sitios) antes de inyectar."
+  },
+  {
+   "id": "RT-14",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:1322-1325 (contadores) -> BONUS-09!Checklist!C59",
+   "hallazgo": "La guarda `'/' in v and 'IFERROR' not in v.upper() and 'IF(' not in v.upper()` da falso verde: la subcadena «IF(» aparece dentro de COUNTIF( y SUMIF(. Toda division escrita con COUNTIF -que la SPEC IMPONE porque pycel no implementa COUNTA- se contabiliza como protegida sin estarlo.",
+   "evidencia": "Mi copia: BONUS-09 contadores.divisiones_sin_iferror = 0 mientras Checklist!C59 = '=COUNTIF(F5:F52,\"Completada\")/48', que no lleva IFERROR. 'IF(' in 'COUNTIF(F5:F52,\"COMPLETADA\")/48' es True.",
+   "fix": "Detectar la guarda con un regex sobre el prefijo de la formula (^=IF\\(|IFERROR\\() en lugar de una subcadena suelta."
+  },
+  {
+   "id": "RT-15",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py",
+   "ubicacion": "main.py:273-277 (verificar_cache)",
+   "hallazgo": "El gate de cache clasifica como «vacia por diseno» cualquier formula que contenga la subcadena `\"\"`, mire donde mire. Una formula como =IFERROR($B7/$B5,\"\") que DEBIA devolver un numero y sale None por un fallo de pycel se cuenta como exito. Precisamente las consolidaciones de §2 usan ese patron.",
+   "evidencia": "main.py:275-277: if v is None: if '\"\"' in formula: vacias += 1 ... En mi corrida hay 23 con valor y 0 vacias, asi que la rama no se ha ejercitado todavia: entrara en cuanto grupo_a escriba las formulas con alterna vacia.",
+   "fix": "Registrar por celda si la alterna vacia es la rama esperada (evaluar la formula con pycel) en vez de deducirlo de la presencia del literal."
+  },
+  {
+   "id": "RT-16",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py",
+   "ubicacion": "main.py:228",
+   "hallazgo": "El informe JSON recorta los literales a 12 por fichero (`'literales_sospechosos': literales[:12]`). En el 05 hay 12 por pestana x 12 pestanas = 144 y el JSON solo ensena los 12 de «Ene»: quien lea el informe creera que el problema esta acotado. Es el mismo fallo que ya costo 32 hallazgos perdidos por un slice el 2026-08-22.",
+   "evidencia": "main.py:228: 'literales_sospechosos': literales[:12]. ref-excel.json, fichero 05: 12 entradas, todas de la hoja Ene (F6..F19); las de Feb..Dic no aparecen.",
+   "fix": "Guardar la lista completa (o al menos el total) y anadir el recuento al veredicto."
+  },
+  {
+   "id": "RT-17",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "ubicacion": "07!Ratios!E4:E10, 06!Ratios!E21:E25, 05!Ene..Dic!F22:F27",
+   "hallazgo": "El motor pone formato condicional sobre rangos que no tienen ni una celda, y el gate cuenta reglas, no efectos. En 07!Ratios la hoja termina en la columna D: las 3 reglas de E4:E10 no pueden encenderse jamas. En 06!Ratios E21:E25 estan vacias (DOM-22 sin resolver) y en 05 las filas 22 y 25-27 no tienen columna F.",
+   "evidencia": "Copia generada: 07!Ratios max_column = 4 con CF 'Ratios | E4:E10 | containsText' x3; 06!Ratios CF sobre E17:E25 con formulas solo en E17:E20; 05!Ene CF sobre F6:F27 con formulas solo hasta F21. El propio docstring de motor.semaforos() (motor.py:1173-1180) lo admite: «una regla sobre un rango vacio no rompe nada, pero tampoco demuestra nada».",
+   "fix": "Condicionar cada semaforo a que exista la celda ancla, como ya se hace en graficos(), y anotarlo como pendiente en vez de contarlo como hecho."
+  },
+  {
+   "id": "RT-18",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:1207-1209 (semaforos, rama del 07)",
+   "hallazgo": "Falta una de las dos reglas que exige §1.2: «regla expression =$C6<$C$3 en 03!Alertas Y PARA EL DSCR». El 07 solo recibe tres reglas containsText sobre la columna Estado; no hay ninguna regla de expresion contra el 1,25x del DSCR, que es el numero que decide la operacion bancaria.",
+   "evidencia": "Copia generada, 07!Ratios: CF | E4:E10 | containsText x3 y ninguna de tipo expression. Comparese con 03!Alertas, que si tiene la suya: CF | C6:C17 | type=expression | formula=[\"=$C6<$C$3\"].",
+   "fix": "Anadir regla_expresion sobre la celda del DSCR (C5) contra el umbral 1,25 cuando grupo_c cree la columna C."
+  },
+  {
+   "id": "RT-19",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+   "ubicacion": "02!Break-Even (sin grafico) y 06!Ratios (sin grafico)",
+   "hallazgo": "Solo hay 7 graficos de los 8 que promete §1.1, en 7 ficheros de los 9. El gate los marca «PENDIENTE ... lo desbloquea grupo_b/c» y aun asi devuelve verde, de modo que las seis afirmaciones de «graficos automaticos» de la landing siguen siendo falsas en el 02 y el 06 -y nada lo bloquea.",
+   "evidencia": "ref-excel.json gates/graficos: 02 charts=0, 06 charts=0, pendientes_grupo con dos entradas, fallos: []. gate_graficos() (main.py:283-311) solo convierte el pendiente en fallo si el grupo esta cargado.",
+   "fix": "Mantener la tolerancia solo mientras se corre --solo motor, y exigir 9/9 en la pasada final con a,b,c cargados."
+  },
+  {
+   "id": "RT-20",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx",
+   "ubicacion": "BONUS-08!Simulador!C11 y Comparativa!C7 · 02!Datos!C7 · 06!Ratios!C9:C10",
+   "hallazgo": "§1.4 y §7.5 mandan recalibrar los datos de ejemplo, no solo etiquetarlos. El motor ha puesto el rotulo y ha dejado los numeros: el escenario BASE del fichero «para negociar con inversores» sigue cacheado en -5.272 EUR/mes y -63.264 EUR/ano por la doble contabilizacion del personal (fijos 19.000 que ya incluyen nominas + labor cost 28 %).",
+   "evidencia": "Cache del fichero generado, BONUS-08!Simulador: B19/C19/D19 = -14.700 / -5.272 / +13.859,5 y B21/C21/D21 = -176.400 / -63.264 / +166.314. 02!Datos: nominas 12.000 sobre un break-even de 29.230,77 = 41 % de labor cost. 06!Ratios: coste por cubierto 22,58 / ticket 26,56 = 85 %, contra el «> 70 % = Peligro» de Benchmarks!E11, sin semaforo en la fila.",
+   "fix": "grupo_c: A11 «costes fijos SIN personal», base comun con el 02 (22 EUR, 55 cubiertos, 26 dias) y fijos 9.500/9.800/9.200."
+  },
+  {
+   "id": "RT-21",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "ubicacion": "07 (ninguna hoja) y 01, 01b, 04, 05",
+   "hallazgo": "El rotulo «VALORES DE EJEMPLO - sustituyelos por los tuyos» se ha colocado en 4 ficheros y falta justo en el 07, que es el que se imprime y se entrega a un tercero con 150.000 EUR precargados. La regla de familia de §4 («en un fichero que se entrega a un tercero, ningun dato de ejemplo queda precargado con aspecto de dato real») queda sin cumplir donde mas duele.",
+   "evidencia": "Barrido sobre mi copia: el texto aparece en 02!Datos!B3, 03!'Flujo Mensual'!A3, 06!Ratios!B3 y BONUS-08!Simulador!A3, y en ningun otro sitio. 07!Proyecciones!B19 = -150000 en verde, sin rotulo.",
+   "fix": "Anadir la entrada del 07 a motor.EJEMPLOS (Proyecciones y/o Resumen Ejecutivo) y ejecutar la regla de §4 sobre B19."
+  },
+  {
+   "id": "RT-22",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+   "ubicacion": "motor.py:465-505 (validaciones) -> 03!Flujo Mensual!B5",
+   "hallazgo": "validaciones() aplica «decimal >= 0» a TODA celda verde con formato numerico, sin lista de excepciones. Entre ellas cae el SALDO INICIAL de la tesoreria: un negocio que arranca el mes en descubierto -el caso que esta plantilla existe para detectar- no puede teclear su saldo real, porque la DV lo rechaza con showErrorMessage=True.",
+   "evidencia": "Copia generada: DV 'Flujo Mensual' | B5 B7 B8 ... | type=decimal op=greaterThanOrEqual f1=0 err=True, y 03!'Flujo Mensual'!A5 = 'SALDO INICIAL' con B5 = 15000 en verde.",
+   "fix": "Mantener una lista de celdas que admiten negativo (saldos, EBITDA, flujos) y aplicarles DV sin minimo o con minimo -1e12."
+  },
+  {
+   "id": "RT-23",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+   "ubicacion": "02!Break-Even!C10 y C11",
+   "hallazgo": "DOM-25/TEC-16 vivos: el motor anadio el IFERROR que pedia §1.3 pero NO el ROUNDUP que pide §3, y el formato #,##0 sigue redondeando hacia abajo. El usuario lee «51 cubiertos/dia» y con 51 cubiertos NO llega al punto de equilibrio.",
+   "evidencia": "pycel sobre mi copia: Break-Even!C8 = 29.230,77 EUR y C10 = 51,102743... con number_format = \"#,##0\" (se ve «51»). 51 x 22 EUR x 26 dias = 29.172 EUR, 58,77 EUR por debajo del break-even. C11 = 1.328,67 cubiertos/mes, tambien fraccionario.",
+   "fix": "C10 = IFERROR(ROUNDUP($C9/Datos!$C$20,0),\"Indica el ticket medio\") y C11 = IFERROR(ROUNDUP($C8/Datos!$C$20,0),\"-\"), como manda §3."
+  },
+  {
+   "id": "RT-24",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+   "ubicacion": "03!Instrucciones!B8 frente a 03!Flujo Mensual!B21",
+   "hallazgo": "El motor reescribio otras lineas de Instrucciones (01b!B9) y dejo intacta la que la propia SPEC senala como falsa: «El IVA trimestral se calcula automaticamente (linea Liquidacion IVA)» mientras la fila 21 sigue siendo un input manual a 0. El fichero afirma una funcion que no tiene, en la pagina que el cliente lee primero.",
+   "evidencia": "Copia generada: 03!Instrucciones!B8 = \"▸ El IVA trimestral se calcula automaticamente (linea 'Liquidacion IVA').\" y 03!'Flujo Mensual'!A21 = 'Liquidacion IVA trimestral' con B21 = 0 constante, sin formula ni hoja Parametros.",
+   "fix": "grupo_b: hoja Parametros + fila 25 con el calendario AEAT (§3); hasta entonces, la linea de Instrucciones no puede quedarse como esta."
+  },
+  {
+   "id": "RT-25",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "ubicacion": "07!Proyecciones!B22 · 02!Escenarios!C10:E10 · 06!Ratios!E17:E20 · BONUS-09!Checklist!C59",
+   "hallazgo": "§1.3 prohibe que un parametro que existe como input vaya como literal dentro de una formula, y el motor solo INFORMA. Quedan 21 literales vivos, incluidos los dos que la propia SPEC cita por su nombre: el 0,08 de la tasa de descuento del VAN (que un banco pregunta) y el 26 de los dias de apertura del 02.",
+   "evidencia": "ref-excel.json literales_sospechosos: 07!Proyecciones!B22 -> \"=IFERROR(NPV(0.08,C19:F19)+B19,\\\"N/A\\\")\"; 02!Escenarios!C10/D10/E10 -> \"=C4*C5*26\"; 06!Ratios!E17-E20 -> 0.28/0.25/0.6/0.15; BONUS-09!C59 -> /48. Ademas 07!Proyecciones!A13 = \"Impuesto Sociedades (25%)\", con el tipo clavado en la etiqueta (DOM-19).",
+   "fix": "Sacar los parametros a celda (07!C25 tasa, 07!C31 tipo IS, 02!Datos!C21 dias, Benchmarks!F/G) y convertir literales_sospechosos en fallo del gate."
+  },
+  {
+   "id": "RT-26",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "ubicacion": "07!'Resumen Ejecutivo'!C16 y C19 (motor.py:958 RESUMEN_EJECUTIVO_FMT / motor.py:983)",
+   "hallazgo": "formatos() crea las celdas verdes de C5:C25 y les asigna number_format desde un mapa de 8 entradas; todo lo que no esta en el mapa recibe «General». C16 «Plazo de amortizacion solicitado» y C19 «Payback estimado» son magnitudes numericas (anos) y quedan sin formato, en la hoja que §1.6 existe para arreglar.",
+   "evidencia": "Copia generada: 07!'Resumen Ejecutivo' filas 5-25 con C5..C25 en verde y number_format 'General' salvo C8/C9 (#,##0), C10 (fecha) y C13/C14/C15/C17/C18 (#,##0.00 EUR). RESUMEN_EJECUTIVO_FMT (motor.py:958) no incluye C16 ni C19.",
+   "fix": "Anadir 'C16': '0,0 \"anos\"' y 'C19': '0,0 \"anos\"' al mapa."
+  }
+ ],
+ "veredicto": "no listo",
+ "motivo": "El paquete esta a medio construir y su propio gate lo declara VERDE. grupo_a.py, grupo_b.py y grupo_c.py NO EXISTEN: 63 de los 90 ids del R1 -las secciones §2, §3 y §4- siguen intactos, y siete de los diez xlsx salen con cero formulas nuevas (RT-01). main.py imprime «TODO VERDE» y devuelve exit 0 con demostraciones.saldo_encadenado_03.ok = false y 21 literales sospechosos en su propio informe, porque ninguno de los dos entra en la lista `fallos` (RT-02). Los tres bugs que el R1 marco como altos siguen vivos y medidos con pycel en mi copia: el 03 abre febrero en 0 aunque enero cierre en 20.000 (RT-05), el 07 se entregaria al banco con 40 ceros, la hoja Ratios sin columna de valores y un VAN cacheado de -150.000 EUR (RT-06), y el 05 marca «Alerta» roja al vender un 20 % por encima del presupuesto y al mejorar el EBITDA en 3.000 EUR (RT-10). Peor: en tres sitios la capa nueva AGRAVA lo que no se ha arreglado -el formato condicional pinta de rojo las once alertas falsas del 03, pinta de verde un « Completada » que el contador del BONUS-09 sigue sin contar (RT-08), y los tres graficos anclados a la derecha con fitToWidth=1 reducen la impresion A4 al 48-62 % (RT-12)-. Y el propio motor lleva dos defectos que corromperan el trabajo de los grupos cuando se escriban: _traducir_formula desplaza referencias a otras hojas (Datos!C14 -> Datos!C15, verificado ejecutandolo) e insertar_fila no toca las referencias que otras hojas hacen a la hoja modificada (RT-03, RT-04). Nada de esto se puede publicar: hay que escribir los tres grupos, arreglar el motor y, sobre todo, hacer que el gate falle cuando falla."
+}
