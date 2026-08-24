@@ -1,0 +1,50 @@
+{
+ "rol": "integracion",
+ "producto": "kit-plan-financiero",
+ "fecha": "2026-08-24",
+ "spec": "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md §5, con §7-bis (segundo bloque, decisiones 3/5/6)",
+ "hallazgo_principal_BLOQUEANTE": {
+  "que": "grupo_a.py, grupo_b.py y grupo_c.py (SPEC §2/§3/§4) NO EXISTEN. Solo motor.py + main.py están en scripts/productos-digitales/kit-plan-financiero-v2_0/. Verificado tres veces: integ.json (08:39), integ-final.json (07:41) — ambos con --solo a,b,c piden los 3 grupos y grupos_cargados queda [] — y una ejecución propia mía con el comando EXACTO que se me dio (--dry-run --json .../kit-pf-v2/integ-run-final.json, 2026-08-24), con el mismo resultado: 'grupo_a no existe todavía — se omite' (misma frase para b y c). main.py:646-650 hace el import con try/except ImportError y sigue sin abortar, por lo que main.py sale con exit 0 aunque no se aplique NADA del §2/§3/§4 — el exit verde no es señal de que el kit esté completo.",
+  "impacto_medido_en_la_copia_dry_run": [
+   "03!'Flujo Mensual'!C5 sigue leyendo la fila 22 (Otros pagos), NO la 25 (SALDO FINAL): el bug DOM-01/MOT-03 sigue vivo en el fichero que se genera hoy.",
+   "07!Ratios!C4:C10 (endeudamiento, DSCR, liquidez, margen EBITDA, ROI, FFPP/Inversión, Deuda/EBITDA): las 7 celdas de valor están vacías (None). No existe la hoja 'Financiación'. Confirmado con openpyxl sobre el propio dry-run.",
+   "07!Proyecciones flujos siguen en [-150000, 0, 0, 0, 0]: TIR=None, VAN=-150000 (cachear_irr() inyecta '—', honesto). El caso trazado de la SPEC (TIR 11.9592%) es una DEMOSTRACIÓN AISLADA de motor.py (fórmula tir_newton() probada con datos de ejemplo), no el resultado de abrir el 07 real.",
+   "BONUS-09!Checklist!C55 = 48 (constante, no fórmula), 49 tareas no vacías en A5:A64, y NO hay fila con texto 'FASE 7' ni ninguna fase laboral. Sigue en 48/6, no en 54/7.",
+   "Gráficos: 7 de 10 ficheros (01, 01b, 03, 04, 05, 07, BONUS-08), NO 9. Pendientes 02 (necesita el bloque auxiliar de grupo_b) y 06 (necesita Benchmarks!F/G de grupo_c) — así lo marca el propio gate de main.py.",
+   "01/01b 'Resumen' y 05 'Resumen Anual': sin abrir (no forman parte de motor.py), pero el informe del rol motor confirma que nadie ha tocado aún esas hojas — grupo_a no existe.",
+   "Producción (astro-site/public/dl/kit-plan-financiero/07-...xlsx, NO tocado, solo leído): metadata subject = 'v1.1'. El download que recibe hoy un comprador sigue siendo v1.1, no v2.0."
+  ]
+ },
+ "accion_tomada": {
+  "resumen": "El working tree (uncommitted, ya modificado antes de que yo entrara) tenía landing/dashboard/changelog escritos COMO SI el v2.0 completo (motor + grupo_a + grupo_b + grupo_c) ya estuviera aplicado: '9 de los 10 ficheros con gráficos', BONUS-09 '54 items en 7 fases (altas laborales, RETA, contratos)', dashboard 'TIR, VAN, payback y DSCR con cuadro de amortización', changelog v2.0 con 13 cambios de dominio (P&L calculado, saldo encadenado, RevPASH, Resúmenes, Escenarios, etc.), updateNote 'Versión 2.0'. Ninguna de esas afirmaciones es cierta en el dry-run de HOY ni en el fichero que se descarga. He revertido esas afirmaciones concretas a su estado verificado (y en 2 casos — 'grafico visual de break-even' del 02, 'ticket medio necesario' del 02 en el resumen de plantillas — a texto más conservador, porque son overclaims PRE-EXISTENTES de v1.1 que además delatan lo mismo: el 02 no tiene gráfico y el ticket medio es hoy un dato de ENTRADA, no una fórmula, per SPEC COM-27). MANTENIDO sin tocar todo lo que SÍ es cierto independientemente de los grupos: badge sin cifra inventada (§7.3), 'coherentes entre sí' en vez de 'fórmulas encadenadas entre plantillas' (COM-10, ya era falso en v1.1 y sigue siéndolo — 0 externalLink en los 10 paquetes OOXML), FAQ del banco sin garantizar aprobación + '5 años' no '3' (COM-25/31), FAQPage con las mismas 6 preguntas que el acordeón on-page (COM-21), email/config 'las 10 plantillas (8+2 bonus)' en vez de 'las 9' (COM-11, siempre ha habido 10 ficheros, no depende de ningún grupo), 'ocupación'→'cubiertos/día' (COM-26, la variable del simulador YA se llama así, solo la etiqueta de la copia estaba mal)."
+ },
+ "ficheros_tocados": [
+  "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+  "src/data/productos-changelog.ts",
+  "src/components/kit-plan-financiero/ContentGrid.tsx",
+  "src/components/kit-plan-financiero/BonusSection.tsx",
+  "src/components/kit-plan-financiero/WhySection.tsx",
+  "src/pages/KitPlanFinancieroDashboard.tsx (revertido a estado idéntico al commit HEAD)"
+ ],
+ "ficheros_ya_correctos_sin_tocar": [
+  "src/components/kit-plan-financiero/HeroSection.tsx",
+  "src/components/kit-plan-financiero/FaqAccordion.tsx",
+  "src/pages/KitPlanFinanciero.tsx (JSON-LD FAQPage)",
+  "src/pages/ProductosDigitales.tsx",
+  "netlify/functions/resend-access.ts",
+  "netlify/functions/verify-purchase.ts",
+  "src/data/productos-digitales-config.ts"
+ ],
+ "verificacion_sintaxis": "typescript.transpileModule (TS 5.8.3, node_modules del repo) sobre los 12 ficheros de superficie (ts+tsx) — 0 errores. No se ha corrido build ni Playwright (regla térmica).",
+ "aviso_sobre_el_encargo_recibido": "El encargo que me llegó cita 'APPCC matizado', '10 categorias' y '50-100 EUR/mes' y una 'FAQ licencia §7-bis.5' que NO existen en kit-plan-financiero-v2-SPEC.md (ese SPEC no menciona APPCC en ningún punto, ni una tabla de 10 categorías, ni ese rango de precio, ni una FAQ de licencia bajo el número 7-bis.5 — 7-bis.5 en el SPEC es la recalibración de datos de ejemplo, no licencia). Parece una plantilla de otro producto (posiblemente kit-gestion-personal o kit-inventario, que sí están en curso en paralelo) mezclada al redactar mi encargo. He trabajado sobre el SPEC real del producto (kit-plan-financiero-v2-SPEC.md) y sobre lo que de verdad está en el dry-run, ignorando esas líneas que no aplican.",
+ "dudas_para_el_orquestador": [
+  "¿Se van a construir grupo_a.py / grupo_b.py / grupo_c.py en esta ronda, o el plan es congelar el v2.0 de plan-financiero y avanzar con otros kits primero? Si la respuesta es 'sí, ya vienen', mi reversión es temporal y hay que re-aplicar el v2.0 completo (tengo el texto original en el historial de este informe / en 'git diff' antes de mi commit) en cuanto pasen los gates 6-8 con los 3 grupos cargados.",
+  "Si se decide congelar: recomiendo NO tocar production (public/dl) ni el KIT_PLAN_FINANCIERO_APPLY hasta que exista el paquete completo — hoy aplicar solo motor.py dejaría el saldo de caja (DOM-01) y el informe bancario (DOM-02/03) exactamente igual de rotos que antes, solo que con gráficos y colores encima, que es peor: parece más terminado de lo que es.",
+  "El informe del rol motor (kit-plan-financiero-v2-motor.json) señala MOT-01 (53 hojas, no 47) y MOT-02 (8 divisiones desnudas en 06!Ratios, no 6) — si se escribe el changelog completo de v2.0 más adelante, esas cifras del SPEC habrá que corregirlas contra lo medido, no copiarlas literales."
+ ],
+ "pendiente": [
+  "Construir grupo_a.py (§2: 01/01b/05), grupo_b.py (§3: 02/03/04) y grupo_c.py (§4: 06/07/BONUS-08/BONUS-09) — no es tarea de este rol (integración), pero bloquea por completo poder publicar el v2.0 real.",
+  "Una vez existan y pasen los gates (idempotencia, inject_cache, gráficos 9/9, censo, demostraciones con TIR/VAN/payback reales encadenados), volver a este rol para reponer: grid.subtitle (9 gráficos), BONUS-09 54/7 fases, dashboard TIR/VAN/payback+DSCR, changelog v2.0 con los 13 cambios de dominio, updateNote 'Versión 2.0', y el badge/quirk de precio que sigue aparcado por John (§7.1/§7.2, fuera de mi alcance).",
+  "aggregateRating/reviews/testimonios/precios: NO tocados, tal y como se me indicó."
+ ]
+}
