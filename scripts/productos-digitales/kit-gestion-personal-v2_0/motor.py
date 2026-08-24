@@ -405,7 +405,9 @@ BLOQUES = {
         ('Nóminas', 4, 5, 24, 4 + CAPACIDAD),                    # 5..34
         # tabla de referencia de ratios por tipo de negocio (A13:C19 hoy; el
         # grupo_b le añade las dos columnas numéricas del VLOOKUP)
-        ('Ratio Coste Laboral', 13, 14, 19, 19),
+        # RD-21 · el bloque de coste gana cuatro filas, así que la tabla de
+        # referencia baja de la 13 a la 17. RC-11 · y pasa de 6 a 10 tipos.
+        ('Ratio Coste Laboral', 17, 18, 27, 27),
     ],
     '04-onboarding-nuevo-empleado.xlsx': [
         # los 5 tramos se DETECTAN (ver `secciones_04`): sus filas se mueven en
@@ -414,7 +416,10 @@ BLOQUES = {
     ],
     '05-planificacion-vacaciones.xlsx': [
         ('Calendario Anual', 5, 6, 20, 5 + CAPACIDAD),           # 6..35
-        ('Solicitudes', 4, 5, 34, 4 + CAPACIDAD),                # 5..34
+        # RD-09/RT-03 · «Solicitudes» se indexa por PETICIÓN, no por
+        # empleado: 30 filas para 30 personas era una solicitud por persona y
+        # año. Cinco periodos por persona.
+        ('Solicitudes', 4, 5, 34, 4 + 5 * CAPACIDAD),            # 5..154
         ('Cobertura', 5, 6, 8, 8),                               # turnos
         ('Cobertura', 11, 12, 27, 11 + CAPACIDAD),               # sustituciones
     ],
@@ -598,7 +603,9 @@ CF_CELDA = {
     '05-planificacion-vacaciones.xlsx': [
         # fila 38 del calendario: alerta de cobertura (§4). Sólo existe cuando
         # grupo_c la construye; el centinela es el rótulo de `A38`.
-        ('Calendario Anual', 'B38:BB38', 'A38', 'Cobertura', VOC_COBERTURA),
+        # RD-12/RD-13/RT-11 · la fila de ausencias se desdobla (rejilla ·
+        # solicitudes · la mayor), así que la alerta baja de la 38 a la 40.
+        ('Calendario Anual', 'B40:BB40', 'A40', 'Cobertura', VOC_COBERTURA),
     ],
 }
 
@@ -1583,6 +1590,25 @@ def aplicar_cf(wb, fname, informe, pendientes):
                     continue
                 refs.add(ref)
                 listos.append(('expr', ref, expr, extra))
+        # RT-04 · las reglas de EXPRESIÓN van SIEMPRE las últimas.
+        #
+        # openpyxl numera la prioridad por orden de inserción y Excel resuelve
+        # un conflicto a favor de la regla de MENOR número. La banda gris por
+        # mes del calendario del 05 y las cuatro reglas de color de código
+        # escriben la MISMA propiedad —el relleno—, así que insertar la banda
+        # antes le daba precedencia: medido en la copia dry-run, prioridades
+        # 3 (banda, `stopIfTrue=False`) frente a 4-7 (PE, V, B, F). En los
+        # meses IMPARES —enero, marzo, mayo, julio, septiembre, noviembre— la
+        # banda ganaba y una V, una B, una F o un PE se pintaban GRISES.
+        # Julio y septiembre son justamente las semanas 27-35 que el propio
+        # fichero precarga como temporada alta: el semáforo se anulaba medio
+        # año en la hoja donde más se ve.
+        #
+        # El orden viene del orden de `objetivos` (CF_COLUMNA, CF_CELDA,
+        # CF_EXPRESION y por último los códigos), así que se reordena aquí en
+        # vez de confiar en cómo se construyó la lista. `sort` es estable: el
+        # resto conserva su orden.
+        listos.sort(key=lambda x: x[0] == 'expr')
         _limpiar_cf(ws, refs)
         for tipo, ref, dato, extra in listos:
             if tipo == 'texto':

@@ -39,6 +39,7 @@ condicional propio.
 import copy
 import datetime
 
+import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
@@ -941,17 +942,56 @@ COL_S1 = 'B'                                    # semana 1
 COL_SN = get_column_letter(1 + SEMANAS)         # BB · semana 53
 COL_TOT = get_column_letter(2 + SEMANAS)        # BC · «Días Usados»
 EMP0, EMP1 = 6, 5 + motor.CAPACIDAD             # 6..35
-F_TEMP, F_AUS, F_ALERTA = EMP1 + 1, EMP1 + 2, EMP1 + 3      # 36 · 37 · 38
+#: RD-12/RD-13/RT-11 · la fila de ausencias se DESDOBLA. 36 temporada ·
+#: 37 lo marcado a mano en la rejilla · 38 lo que sale de las solicitudes
+#: aprobadas · 39 la mayor de las dos · 40 la alerta.
+F_TEMP = EMP1 + 1                               # 36
+F_AUS = EMP1 + 2                                # 37 · rejilla
+F_SOL = EMP1 + 3                                # 38 · solicitudes aprobadas
+F_MAX = EMP1 + 4                                # 39 · la mayor
+F_ALERTA = EMP1 + 5                             # 40
 
-#: Lunes de la semana 1 por defecto: 4 de enero de 2027, que es el primer lunes
-#: del año siguiente al de publicación del kit (el calendario de vacaciones se
-#: cierra con dos meses de antelación, art. 38.3 ET). Es una celda VERDE: el
-#: cliente escribe el lunes de SU semana 1 y las 52 restantes se recalculan.
-LUNES_SEMANA_1 = datetime.datetime(2027, 1, 4)
+#: RD-09/RT-03 · «Solicitudes» NO está indexada por empleado, está indexada
+#: por PETICIÓN, y estaba dimensionada a 30 filas «porque §1.3 dice 30
+#: empleados». Con 30 personas eso es UNA sola solicitud por persona y año:
+#: nadie coge los 30 días del tirón —en hostelería se parten en verano,
+#: Navidad y algún puente—, así que la hoja se agotaba a los 10-15 empleados
+#: y a partir de ahí el saldo dejaba de ser cierto EN SILENCIO (los SUMIFS
+#: del saldo y el INDEX/MATCH de cobertura tenían el rango cerrado en la 34,
+#: y una fila 35 escrita a mano ni sumaba ni traía fórmulas). El 02 ya subió
+#: a 300 filas por este mismo razonamiento (COM-18).
+SOL0 = 5
+SOL_FILAS = 150                                 # 30 personas × 5 periodos
+SOL1 = SOL0 + SOL_FILAS - 1                     # 154
+
+#: RD-11/RT-13/RC-17 · el calendario estaba anclado a 2027 con DOS literales
+#: (`datetime(2027, 1, 4)` y `datetime(2027, 12, 31)`) en un producto sellado
+#: «Versión 2.0 · agosto 2026»: quien compraba en 2026 no encontraba el año
+#: que estaba gestionando, y quien compre en 2029 seguiría recibiendo 2027 —
+#: con el agravante de que esa fecha de cierre es el input del prorrateo
+#: (RT-08). Ahora se DERIVA de la fecha de construcción: el primer lunes del
+#: año siguiente (el calendario de vacaciones se cierra con dos meses de
+#: antelación, art. 38.3 ET). Sigue siendo una celda VERDE y `main.py` tiene
+#: un gate que falla si el año del fichero es anterior al año en curso.
+def _primer_lunes(anio):
+    d = datetime.datetime(anio, 1, 1)
+    return d + datetime.timedelta(days=(7 - d.weekday()) % 7)
+
+
+ANIO_CALENDARIO = datetime.datetime.now().year + 1
+LUNES_SEMANA_1 = _primer_lunes(ANIO_CALENDARIO)
 
 #: Temporada alta por defecto en un negocio de hostelería español: julio y
-#: agosto (semanas 27-35) y la Navidad (51-52). Se precarga y se edita.
-TEMPORADA_ALTA = list(range(27, 36)) + [51, 52]
+#: agosto y la Navidad. RT-13 · se calcula por el MES del lunes de cada
+#: semana, no por su NÚMERO: el número de semana no se mueve si cambia el
+#: ancla, y la banda gris del formato condicional —que sí usa `MONTH(B$5)`—
+#: se descuadraba con ella. Se precarga y se edita.
+def _temporada(lunes):
+    if lunes.month in (7, 8):
+        return 'Alta'
+    if lunes.month == 12 and lunes.day >= 15:
+        return 'Alta'
+    return 'Normal'
 
 #: Puestos reales de una plantilla de restauración, para la DV de la tabla de
 #: sustituciones. No es una lista genérica de RR. HH.: son las categorías con
@@ -980,6 +1020,21 @@ def _rehacer(wb, titulo, indice):
 #: 05 se quedaban sin valor cacheado y las demostraciones leían
 #: `ERR:FormulaEvalError` donde tiene que haber una celda en blanco. Medido
 #: el 2026-08-24. En Excel es inocuo: la rama nunca se ejecuta.
+#: RD-10 · los SUMIFS del saldo sumaban las solicitudes SIN filtrar por año.
+#: En cuanto el libro se reutiliza el año siguiente —que es lo que invita a
+#: hacer un calendario «Anual»— las vacaciones de 2028 y las de 2029
+#: descuentan del mismo derecho de 30 días y todo el mundo aparece con saldo
+#: negativo. Se añaden los dos criterios de fecha contra la fecha de INICIO,
+#: verificados con pycel (SUMIFS con cuatro criterios evalúa).
+def _sumifs_solicitudes(celda_nombre, estado):
+    return ('SUMIFS(Solicitudes!$D${a}:$D${b},'
+            'Solicitudes!$A${a}:$A${b},{n}&"",'
+            'Solicitudes!$G${a}:$G${b},"{e}",'
+            'Solicitudes!$B${a}:$B${b},">="&\'Saldo Vacaciones\'!$E$2,'
+            'Solicitudes!$B${a}:$B${b},"<="&\'Saldo Vacaciones\'!$G$2)'
+            .format(a=SOL0, b=SOL1, n=celda_nombre, e=estado))
+
+
 def _n05_calendario(wb, cambios):
     """§4 · DOM-04/TEC-04/COM-06 — el calendario cuenta DÍAS.
 
@@ -994,7 +1049,11 @@ def _n05_calendario(wb, cambios):
     """
     ws = _rehacer(wb, 'Calendario Anual', 1)
 
-    ws['A1'] = 'Calendario de Vacaciones — Año: ______'
+    # RC-17 · el título dejaba el año en blanco («— Año: ______»), así que
+    # nada en pantalla avisaba de para qué ejercicio venía preparada la hoja:
+    # había que darse cuenta leyendo la fecha del lunes de la semana 1.
+    _formula(ws, 'A1',
+             '="Calendario de Vacaciones — Año "&TEXT(YEAR($B$5),"0")')
     ws['A1'].font = Font(bold=True, size=14)
     ws['A2'] = 'AI Chef Pro · aichef.pro — Kit Gestión de Personal y Turnos'
     ws['A3'] = 'Códigos:'
@@ -1024,6 +1083,21 @@ def _n05_calendario(wb, cambios):
         fecha.alignment = Alignment(horizontal='center')
         ws.column_dimensions[col].width = 2.4
     motor.marcar_verde(ws, 'B5')
+    # RD-11 · B5 es EL parámetro del que cuelga la hoja entera y no estaba
+    # rotulado como tal. El SPEC §4 pedía además dos verdes en esta hoja —«B2
+    # Lunes de la semana 1» y «B3 Días de vacaciones por convenio»— y ninguna
+    # existía: B2 estaba vacía y B3 llevaba la leyenda.
+    _dv(ws, 'B5', None, 'Fecha no válida',
+        'Lunes de la SEMANA 1 — cámbialo cada año y las 52 fechas restantes '
+        'se recalculan solas (cada una es la anterior + 7). De aquí salen '
+        'también el año del título, la fecha de cierre del saldo y la banda '
+        'gris que separa los meses.',
+        'Escribe una fecha posterior al año 2000 (el lunes con el que '
+        'quieres empezar el año).',
+        marca='Ancla', tipo='custom', formula='B5>36526')   # 01/01/2000
+    ws['A5'] = 'Lunes de la semana 1 →'
+    ws['A5'].font = Font(bold=True, size=9)
+    ws['A5'].alignment = Alignment(horizontal='right')
 
     ws['{}5'.format(COL_TOT)] = 'Días Usados'
     ws['{}5'.format(COL_TOT)].font = Font(bold=True, size=9)
@@ -1033,9 +1107,8 @@ def _n05_calendario(wb, cambios):
     # 30 empleados × 53 semanas
     for f in range(EMP0, EMP1 + 1):
         _formula(ws, '{}{}'.format(COL_TOT, f),
-                 '=IF($A{f}="","",SUMIFS(Solicitudes!$D$5:$D$34,'
-                 'Solicitudes!$A$5:$A$34,$A{f}&"",'
-                 'Solicitudes!$G$5:$G$34,"Aprobado"))'.format(f=f))
+                 '=IF($A{f}="","",{s})'.format(f=f, s=_sumifs_solicitudes(
+                     '$A{}'.format(f), 'Aprobado')))
     motor.marcar_verde(ws, 'A{}:{}{}'.format(EMP0, COL_SN, EMP1))
     for f in range(EMP0, EMP1 + 1):
         for n in range(1, SEMANAS + 1):
@@ -1045,27 +1118,62 @@ def _n05_calendario(wb, cambios):
 
     # fila 36 · temporada · fila 37 · ausencias · fila 38 · alerta
     ws['A{}'.format(F_TEMP)] = 'Temporada (Alta / Normal)'
-    ws['A{}'.format(F_AUS)] = 'Ausencias en la semana'
+    ws['A{}'.format(F_AUS)] = 'Ausencias marcadas en la rejilla (V, B, PE)'
+    ws['A{}'.format(F_SOL)] = 'Ausencias por solicitudes APROBADAS'
+    ws['A{}'.format(F_MAX)] = 'Ausencias en la semana (la mayor de las dos)'
     ws['A{}'.format(F_ALERTA)] = 'Cobertura (alerta)'
-    for f in (F_TEMP, F_AUS, F_ALERTA):
+    for f in (F_TEMP, F_AUS, F_SOL, F_MAX, F_ALERTA):
         ws.cell(row=f, column=1).font = Font(bold=True, size=9)
     for n in range(1, SEMANAS + 1):
         col = get_column_letter(1 + n)
-        ws['{}{}'.format(col, F_TEMP)] = ('Alta' if n in TEMPORADA_ALTA
-                                          else 'Normal')
+        lunes = LUNES_SEMANA_1 + datetime.timedelta(days=7 * (n - 1))
+        ws['{}{}'.format(col, F_TEMP)] = _temporada(lunes)
         ws['{}{}'.format(col, F_TEMP)].font = Font(size=7)
         ws['{}{}'.format(col, F_TEMP)].alignment = Alignment(
             horizontal='center', text_rotation=90)
+        # RD-13 · la fila contaba SÓLO V y B. Un permiso retribuido (PE) es
+        # una ausencia que hay que cubrir igual —boda, mudanza, fallecimiento,
+        # examen—, está en la leyenda única, está en la DV de la propia
+        # rejilla y el formato condicional lo pinta de naranja: la semana con
+        # dos personas de permiso se veía como una semana sin ausencias. El
+        # festivo (F) NO suma: no es una ausencia individual.
         _formula(ws, '{}{}'.format(col, F_AUS),
-                 '=COUNTIF({c}${a}:{c}${b},"V")+COUNTIF({c}${a}:{c}${b},"B")'
-                 .format(c=col, a=EMP0, b=EMP1))
+                 '=' + '+'.join('COUNTIF({c}${a}:{c}${b},"{q}")'
+                                .format(c=col, a=EMP0, b=EMP1, q=q)
+                                for q in ('V', 'B', 'PE')))
+        # RD-12 · la doble fuente de verdad seguía viva, sólo que repartida:
+        # el SALDO salía de las solicitudes y la COBERTURA de las 1.590 celdas
+        # pintadas a mano. Quien trabaja con «Solicitudes» —que es lo que
+        # dicen las Instrucciones— dejaba esta rejilla en blanco y la promesa
+        # de cobertura no se cumplía un lunes. Esta fila lee las solicitudes
+        # aprobadas cuyo periodo SOLAPA con la semana.
+        _formula(ws, '{}{}'.format(col, F_SOL),
+                 '=SUMPRODUCT((Solicitudes!$A${a}:$A${b}<>"")*'
+                 '(Solicitudes!$G${a}:$G${b}="Aprobado")*'
+                 '(Solicitudes!$B${a}:$B${b}<={c}$5+6)*'
+                 '(Solicitudes!$C${a}:$C${b}>={c}$5))'
+                 .format(a=SOL0, b=SOL1, c=col))
+        _formula(ws, '{}{}'.format(col, F_MAX),
+                 '=MAX({c}${s},{c}${p})'.format(c=col, s=F_AUS, p=F_SOL))
+        # RT-11 · la alerta mezclaba magnitud y temporada, y la más grave
+        # quedaba tapada por la más frecuente: la rama de temporada alta se
+        # evaluaba PRIMERO y con `>0`, así que UNA sola ausencia en cualquiera
+        # de las 11 semanas precargadas como «Alta» pintaba el bloqueante ⛔ —
+        # y con 10 ausencias sobre un máximo de 4 el «⚠ EXCESO», la única
+        # alerta que compara contra el parámetro que el cliente ha fijado, no
+        # aparecía NUNCA. Ahora manda la magnitud y la temporada agrava, con
+        # su propio umbral en celda (Cobertura!D3).
         _formula(ws, '{}{}'.format(col, F_ALERTA),
-                 '=IF({c}${s}=0,"",IF(AND({c}${t}="Alta",{c}${s}>0),'
-                 '"⛔ TEMP. ALTA",IF({c}${s}>Cobertura!$B$3,"⚠ EXCESO","")))'
-                 .format(c=col, s=F_AUS, t=F_TEMP))
-        ws['{}{}'.format(col, F_AUS)].font = Font(size=8)
-        ws['{}{}'.format(col, F_AUS)].alignment = Alignment(
-            horizontal='center')
+                 '=IF({c}${m}=0,"",'
+                 'IF({c}${m}>Cobertura!$B$3,'
+                 'IF({c}${t}="Alta","⛔ EXCESO en TEMP. ALTA","⚠ EXCESO"),'
+                 'IF(AND({c}${t}="Alta",{c}${m}>Cobertura!$D$3),'
+                 '"⛔ TEMP. ALTA","")))'
+                 .format(c=col, m=F_MAX, t=F_TEMP))
+        for f in (F_AUS, F_SOL, F_MAX):
+            ws['{}{}'.format(col, f)].font = Font(size=8)
+            ws['{}{}'.format(col, f)].alignment = Alignment(
+                horizontal='center')
         ws['{}{}'.format(col, F_ALERTA)].font = Font(size=7)
     motor.marcar_verde(ws, 'B{f}:{c}{f}'.format(f=F_TEMP, c=COL_SN))
     ws.row_dimensions[F_TEMP].height = 42
@@ -1114,17 +1222,37 @@ def _n05_saldo(wb, cambios):
     ws['A1'].font = Font(bold=True, size=14)
 
     coord = motor.parametro(ws, 2, 'dias_convenio', col_rotulo=1, col_valor=2)
-    ws['D2'] = 'Fecha de cierre del año:'
-    _verde(ws, 'E2', datetime.datetime(2027, 12, 31), motor.FMT_FECHA)
-    ws['A3'] = ('▸ Los nombres salen del Calendario Anual. Rellena sólo la '
-                'fecha de alta (para prorratear a quien entra a mitad de año) '
-                'y, si alguien tiene un derecho distinto del general, sus '
-                'días propios.')
+    # RD-11/RT-13 · las dos fechas del ejercicio DERIVAN del ancla del
+    # calendario en vez de ser dos literales de 2027 congelados en el
+    # generador. Y RD-10 necesitaba una fecha de INICIO que no existía: sin
+    # ella, los SUMIFS del saldo sumaban las solicitudes de todos los años.
+    ws['D2'] = 'Inicio del año:'
+    _formula(ws, 'E2', '=DATE(YEAR($G$2),1,1)', motor.FMT_FECHA)
+    ws['F2'] = 'Fecha de cierre del año:'
+    _formula(ws, 'G2',
+             "=DATE(YEAR('Calendario Anual'!$B$5),12,31)", motor.FMT_FECHA)
+    for coord_rot in ('D2', 'F2'):
+        ws[coord_rot].font = Font(bold=True)
+    ws['H2'] = ('← salen del lunes de la semana 1 (Calendario Anual!B5): '
+                'cámbialo allí y el ejercicio entero se mueve')
+    ws['H2'].font = Font(size=9, italic=True, color='666666')
+    ws['A3'] = ('▸ Los nombres salen del Calendario Anual. Rellena la fecha '
+                'de alta (para prorratear a quien entra a mitad de año), la '
+                'de baja o fin de contrato si la hay (ese número es el que va '
+                'al finiquito) y, si alguien tiene un derecho distinto del '
+                'general, sus días propios.')
     ws['A3'].font = Font(size=9, italic=True)
     ws['A3'].alignment = Alignment(wrap_text=True, vertical='top')
     ws.row_dimensions[3].height = 28
 
-    _cabecera(ws, 4, ['Empleado', 'Fecha de alta', 'Días propios',
+    # RD-27 · el prorrateo sólo funcionaba por un extremo: se prorrateaba el
+    # ALTA y no la BAJA. Un temporal o un fijo-discontinuo de enero a junio
+    # conservaba los 30 días enteros de derecho cuando le corresponden 15 — y
+    # 15 es justo el número que se liquida en el finiquito. El 07 ya tiene
+    # «Fecha Fin Contrato» (columna L) y su DV contempla Temporal, Prácticas,
+    # Formación y Fijo-discontinuo; aquí no había dónde escribirla.
+    _cabecera(ws, 4, ['Empleado', 'Fecha de alta',
+                      'Fecha de baja / fin de contrato', 'Días propios',
                       'Derecho del año', 'Disfrutados', 'Pendientes',
                       'Le quedan', 'Aviso'])
     for i in range(motor.CAPACIDAD):
@@ -1133,55 +1261,99 @@ def _n05_saldo(wb, cambios):
                  "=IF('Calendario Anual'!$A{c}=\"\",\"\","
                  "'Calendario Anual'!$A{c})".format(c=cal))
         _verde(ws, 'B{}'.format(f), fmt=motor.FMT_FECHA)
-        _verde(ws, 'C{}'.format(f), fmt=motor.FMT_ENT)
-        # derecho: el general (B2) o el propio (C); prorrateado por la fecha de
-        # alta y acotado con MIN para que un alta anterior al 1 de enero no
-        # genere MÁS días de los que hay.
-        _formula(ws, 'D{}'.format(f),
-                 '=IFERROR(IF($A{f}="","",IF($B{f}="",IF($C{f}="",$B$2,$C{f}),'
-                 'MIN(IF($C{f}="",$B$2,$C{f}),'
-                 'ROUND(IF($C{f}="",$B$2,$C{f})*($E$2-$B{f}+1)/365,1)))),"")'
-                 .format(f=f), motor.FMT_DEC1)
-        for col, estado in (('E', 'Aprobado'), ('F', 'Pendiente')):
+        _verde(ws, 'C{}'.format(f), fmt=motor.FMT_FECHA)
+        _verde(ws, 'D{}'.format(f), fmt=motor.FMT_ENT)
+        # Derecho: el general (B2) o el propio (D), prorrateado por los días
+        # de PERMANENCIA dentro del ejercicio.
+        #
+        #   · inicio = MAX(fecha de alta, 1 de enero)      → $B{f} o $E$2
+        #   · fin    = MIN(fecha de baja, cierre del año)  → $C{f} o $G$2
+        #
+        # RT-08 · y con suelo: la versión anterior cubría por ARRIBA con MIN
+        # y no por abajo, así que una fecha de alta posterior al cierre del
+        # año —trivial de teclear— producía un DERECHO NEGATIVO que se
+        # arrastraba a «Le quedan» y disparaba «⛔ saldo negativo», que el
+        # cliente lee como un exceso de vacaciones. El divisor tampoco puede
+        # ser un 365 cableado: sale del propio ejercicio, y así no falla en
+        # bisiesto.
+        derecho = 'IF($D{f}="",$B$2,$D{f})'.format(f=f)
+        ini = 'IF($B{f}="",$E$2,MAX($B{f},$E$2))'.format(f=f)
+        fin = 'IF($C{f}="",$G$2,MIN($C{f},$G$2))'.format(f=f)
+        _formula(ws, 'E{}'.format(f),
+                 '=IFERROR(IF($A{f}="","",'
+                 'MAX(0,MIN({d},ROUND({d}*(({fin})-({ini})+1)/'
+                 '($G$2-$E$2+1),1)))),"")'
+                 .format(f=f, d=derecho, ini=ini, fin=fin), motor.FMT_DEC1)
+        for col, estado in (('F', 'Aprobado'), ('G', 'Pendiente')):
             _formula(ws, '{}{}'.format(col, f),
-                     '=IF($A{f}="","",SUMIFS(Solicitudes!$D$5:$D$34,'
-                     'Solicitudes!$A$5:$A$34,$A{f}&"",'
-                     'Solicitudes!$G$5:$G$34,"{e}"))'.format(f=f, e=estado),
+                     '=IF($A{f}="","",{s})'
+                     .format(f=f,
+                             s=_sumifs_solicitudes('$A{}'.format(f), estado)),
                      motor.FMT_DEC1)
-        _formula(ws, 'G{}'.format(f),
-                 '=IF($D{f}="","",ROUND($D{f}-$E{f}-$F{f},1))'.format(f=f),
-                 motor.FMT_DEC1)
         _formula(ws, 'H{}'.format(f),
-                 '=IF($G{f}="","",IF($G{f}<0,"⛔ saldo negativo",'
-                 'IF($G{f}=0,"⚠ sin días disponibles","")))'.format(f=f))
-    _cf(ws, 'H5:H{}'.format(4 + motor.CAPACIDAD), motor.VOC_ALERTA)
+                 '=IF($E{f}="","",ROUND($E{f}-$F{f}-$G{f},1))'.format(f=f),
+                 motor.FMT_DEC1)
+        # RT-08 · el aviso explícito de la fecha imposible, que es lo que
+        # convierte un número raro en algo accionable.
+        _formula(ws, 'I{}'.format(f),
+                 '=IF($A{f}="","",'
+                 'IF(AND($B{f}<>"",$B{f}>$G$2),'
+                 '"⚠ la fecha de alta es posterior al cierre del año",'
+                 'IF(AND($C{f}<>"",$B{f}<>"",$C{f}<$B{f}),'
+                 '"⚠ la fecha de baja es anterior a la de alta",'
+                 'IF($H{f}<0,"⛔ saldo negativo",'
+                 'IF($H{f}=0,"⚠ sin días disponibles","")))))'.format(f=f))
+    _cf(ws, 'I5:I{}'.format(4 + motor.CAPACIDAD), motor.VOC_ALERTA)
 
     fin = 4 + motor.CAPACIDAD
     ws['A{}'.format(fin + 2)] = (
         '▸ «Le quedan» descuenta las solicitudes APROBADAS y también las '
         'PENDIENTES: es el saldo que puedes comprometer hoy sin aprobar dos '
-        'veces los mismos días.')
+        'veces los mismos días. Y sólo cuenta las de ESTE ejercicio (las '
+        'fechas de arriba), así que el mismo libro sirve varios años sin '
+        'falsear el saldo.')
     ws['A{}'.format(fin + 3)] = (
-        '▸ El prorrateo de quien entra a mitad de año es lineal sobre 365 '
-        'días. Tu convenio puede calcularlo por meses completos: en ese caso '
-        'escribe los días que correspondan en «Días propios».')
+        '▸ El prorrateo es lineal sobre los días que la persona está de alta '
+        'DENTRO del ejercicio: entra la fecha de alta y también la de baja o '
+        'fin de contrato. Un temporal de enero a junio genera 15 días, no 30 '
+        '— y ése es el número que va al finiquito. Tu convenio puede '
+        'calcularlo por meses completos: en ese caso escribe los días que '
+        'correspondan en «Días propios».')
     for r in (fin + 2, fin + 3):
         ws.cell(row=r, column=1).font = Font(size=9, italic=True)
         ws.cell(row=r, column=1).alignment = Alignment(wrap_text=True,
                                                        vertical='top')
-        ws.row_dimensions[r].height = 26
+        ws.row_dimensions[r].height = 30
     ws['A{}'.format(fin + 5)] = motor.PIE
     ws['A{}'.format(fin + 5)].font = Font(size=8, color='888888')
-    _anchos(ws, {'A': 24, 'B': 16, 'C': 14, 'D': 16, 'E': 14, 'F': 14,
-                 'G': 14, 'H': 24})
-    _merges(ws, ['A1:H1', 'A3:H3', 'A{0}:H{0}'.format(fin + 2),
-                 'A{0}:H{0}'.format(fin + 3),
-                 'A{0}:H{0}'.format(fin + 5)])
+    _anchos(ws, {'A': 24, 'B': 16, 'C': 22, 'D': 14, 'E': 16, 'F': 14,
+                 'G': 14, 'H': 14, 'I': 34})
+    _merges(ws, ['A1:I1', 'A3:I3', 'A{0}:I{0}'.format(fin + 2),
+                 'A{0}:I{0}'.format(fin + 3),
+                 'A{0}:I{0}'.format(fin + 5)])
     ws.freeze_panes = 'A5'
     cambios.append('05:Saldo Vacaciones!{}: días de convenio en UNA celda '
                    '(antes en 30 fórmulas), prorrateo por fecha de alta y '
                    'saldo que descuenta la solicitud en curso '
                    '(DOM-19/TEC-18/COM-24)'.format(coord))
+    cambios.append('05:Saldo Vacaciones!C4:C34: columna nueva «Fecha de baja '
+                   '/ fin de contrato». El prorrateo sólo funcionaba por un '
+                   'extremo: un temporal de enero a junio conservaba los 30 '
+                   'días enteros cuando le corresponden 15, que es el número '
+                   'que se liquida en el finiquito — RD-27')
+    cambios.append('05:Saldo Vacaciones!E5:E34/I5:I34: el derecho lleva '
+                   'MAX(0, MIN(...)) —una fecha de alta posterior al cierre '
+                   'del año daba derecho NEGATIVO y disparaba «⛔ saldo '
+                   'negativo», que se lee como exceso de vacaciones— y el '
+                   'divisor sale del propio ejercicio en vez de un 365 '
+                   'cableado, que falla en bisiesto. La columna «Aviso» '
+                   'nombra las dos fechas imposibles — RT-08')
+    cambios.append('05:Saldo Vacaciones!E2/G2 y F5:G34: los SUMIFS filtran '
+                   'por AÑO contra la fecha de inicio de la solicitud. Sin '
+                   'ese filtro, reutilizar el libro al año siguiente hacía '
+                   'que las vacaciones de dos ejercicios descontaran del '
+                   'mismo derecho de 30 días y toda la plantilla apareciera '
+                   'en negativo — RD-10')
 
 
 def _n05_solicitudes(wb, cambios):
@@ -1192,35 +1364,63 @@ def _n05_solicitudes(wb, cambios):
     al revés, y ese número entraba tal cual en el saldo.
     """
     ws = wb['Solicitudes']
-    ult = 4 + motor.CAPACIDAD
-    _vaciar(ws, 5, ult)          # la E de la v1.1 era de entrada y hoy calcula
+    ult = SOL1
+    saldo_ult = 4 + motor.CAPACIDAD
+    # Las combinaciones se deshacen ANTES de escribir: el pie de la v1.1 va
+    # combinado (A36:H36) y ahora ahí hay filas de solicitud — escribir sobre
+    # una `MergedCell` revienta con «value is read-only».
+    _merges(ws, [])
+    _vaciar(ws, 5, max(ult + 4, ws.max_row))
     _cabecera(ws, 4, ['Empleado', 'Fecha Inicio', 'Fecha Fin',
                       'Días solicitados', 'Ya disfrutados', 'Le quedan',
                       'Estado', 'Aviso'])
-    for f in range(5, ult + 1):
+    for f in range(SOL0, ult + 1):
         _formula(ws, 'D{}'.format(f),
                  '=IF(OR($B{f}="",$C{f}=""),"",IF($C{f}<$B{f},'
                  '"⚠ fechas invertidas",$C{f}-$B{f}+1))'.format(f=f))
-        for col, origen in (('E', 'E'), ('F', 'G')):
+        # El saldo se lee del bloque de 30 EMPLEADOS de «Saldo Vacaciones»
+        # (que sí está indexado por persona), no de las 150 peticiones.
+        for col, origen in (('E', 'F'), ('F', 'H')):
             _formula(ws, '{}{}'.format(col, f),
                      "=IFERROR(IF($A{f}=\"\",\"\",INDEX("
                      "'Saldo Vacaciones'!${o}$5:${o}${u},MATCH($A{f},"
                      "'Saldo Vacaciones'!$A$5:$A${u},0))),\"\")"
-                     .format(f=f, o=origen, u=ult), motor.FMT_DEC1)
+                     .format(f=f, o=origen, u=saldo_ult), motor.FMT_DEC1)
         _formula(ws, 'H{}'.format(f),
                  '=IF($A{f}="","",IF(COUNTIF(\'Calendario Anual\'!$A${a}:$A${b}'
                  ',$A{f}&"")=0,"⚠ ese nombre no está en el calendario",""))'
                  .format(f=f, a=EMP0, b=EMP1))
-    _cf(ws, 'D5:D{}'.format(ult), motor.VOC_ALERTA)
-    _cf(ws, 'H5:H{}'.format(ult), motor.VOC_ALERTA)
+    _cf(ws, 'D{}:D{}'.format(SOL0, ult), motor.VOC_ALERTA)
+    _cf(ws, 'H{}:H{}'.format(SOL0, ult), motor.VOC_ALERTA)
     _anchos(ws, {'A': 24, 'B': 14, 'C': 14, 'D': 16, 'E': 14, 'F': 12,
                  'G': 14, 'H': 30})
-    ws['A{}'.format(ult + 2)] = motor.PIE
-    ws['A{}'.format(ult + 2)].font = Font(size=8, color='888888')
-    _merges(ws, ['A1:H1', 'A2:H2', 'A{0}:H{0}'.format(ult + 2)])
-    cambios.append('05:Solicitudes!D5:H{}: aviso de fechas invertidas, saldo '
+    nota = ult + 2
+    ws['A{}'.format(nota)] = (
+        '▸ Esta hoja se indexa por PETICIÓN, no por persona: caben {} '
+        'solicitudes, unas cinco por empleado. Nadie coge los 30 días del '
+        'tirón — en hostelería se parten en verano, Navidad y algún puente—, '
+        'y el saldo sólo es cierto si TODOS los periodos están aquí.'
+        .format(SOL_FILAS))
+    ws['A{}'.format(nota)].font = Font(size=9, italic=True)
+    ws['A{}'.format(nota)].alignment = Alignment(wrap_text=True,
+                                                 vertical='top')
+    ws.row_dimensions[nota].height = 30
+    ws['A{}'.format(nota + 2)] = motor.PIE
+    ws['A{}'.format(nota + 2)].font = Font(size=8, color='888888')
+    _merges(ws, ['A1:H1', 'A2:H2', 'A{0}:H{0}'.format(nota),
+                 'A{0}:H{0}'.format(nota + 2)])
+    cambios.append('05:Solicitudes!D{}:H{}: aviso de fechas invertidas, saldo '
                    'por INDEX/MATCH sobre «Saldo Vacaciones» y verificación '
-                   'del nombre contra el calendario (DOM-20)'.format(ult))
+                   'del nombre contra el calendario (DOM-20)'
+                   .format(SOL0, ult))
+    cambios.append('05:Solicitudes: {} → {} filas. La hoja NO está indexada '
+                   'por empleado sino por PETICIÓN, y con 30 filas para 30 '
+                   'personas era UNA solicitud por persona y año: partir las '
+                   'vacaciones en dos o tres periodos la agotaba a los 10-15 '
+                   'empleados y a partir de ahí el saldo dejaba de ser cierto '
+                   'en silencio, porque los SUMIFS y los INDEX/MATCH tenían '
+                   'el rango cerrado en la fila 34 — RD-09/RT-03'
+                   .format(motor.CAPACIDAD, SOL_FILAS))
 
 
 def _n05_cobertura(wb, cambios):
@@ -1237,16 +1437,23 @@ def _n05_cobertura(wb, cambios):
 
     _rotulo(ws, 3, 'Máximo de ausencias simultáneas por semana:')
     _verde(ws, 'B3', 4, motor.FMT_ENT)
-    ws['C3'] = ('← por encima de esto, la fila «Cobertura» del calendario '
-                'salta en ámbar')
-    ws['C3'].font = Font(size=9, italic=True)
+    # RT-11 · el umbral de la temporada alta era un `>0` fijo dentro de la
+    # fórmula: UNA sola ausencia en cualquiera de las 11 semanas precargadas
+    # como «Alta» pintaba el bloqueante ⛔, así que el usuario aprendía a
+    # ignorarlo. Ahora es un parámetro, como manda §1.4.
+    _rotulo(ws, 3, 'Máximo en TEMPORADA ALTA:', col=3)
+    _verde(ws, 'D3', 1, motor.FMT_ENT)
     _seccion(ws, 4, 'PERSONAL MÍNIMO POR TURNO', 6)
     _cabecera(ws, 5, ['Turno', 'Mínimo Personal', 'Cocina', 'Sala', 'Barra'])
-    # Un mínimo de servicio realista en un casual de 80 cubiertos/día: la
-    # mañana es montaje y comidas, la tarde es el servicio fuerte y la noche
-    # cierra con menos sala.
-    for i, fila in enumerate([('Mañana', 2, 2, 0), ('Tarde', 3, 2, 1),
-                              ('Noche', 2, 2, 1)]):
+    # RD-14 · los mínimos precargados contradecían al resto del kit: la tarde
+    # pedía 6 personas mientras 03!'Previsión por Servicio'!E18 y
+    # BONUS-02!E26 calculaban 5 para el mismo caso por defecto, y la NOCHE
+    # (23:00-07:00 según 01!'Turnos') pedía 5, que no corresponde a un casual
+    # de 80 cubiertos. Se alinean con lo que calculan los otros dos ficheros:
+    # el turno de servicio son las 5 personas del dimensionado, la mañana es
+    # montaje y comidas y la noche es cierre.
+    for i, fila in enumerate([('M · Mañana', 2, 2, 0), ('T · Tarde', 2, 2, 1),
+                              ('N · Noche (cierre)', 1, 1, 0)]):
         f = 6 + i
         ws['A{}'.format(f)] = fila[0]
         for j, col in enumerate(('C', 'D', 'E')):
@@ -1254,53 +1461,104 @@ def _n05_cobertura(wb, cambios):
         _formula(ws, 'B{}'.format(f),
                  '=IF(COUNT($C{f}:$E{f})=0,"",$C{f}+$D{f}+$E{f})'.format(f=f),
                  motor.FMT_ENT)
+    ws['A9'] = ('▸ Por encima del máximo de B3 la fila «Cobertura» del '
+                'calendario salta en ámbar; en temporada alta el umbral es el '
+                'de D3. Los mínimos por turno son los que calculan el fichero '
+                '03 y el BONUS-02 para el caso por defecto (5 personas por '
+                'servicio): son un punto de partida, ajústalos a tu carta. Y '
+                'no son decorativos: el último indicador de abajo cuenta las '
+                'semanas en que la plantilla disponible no llega al turno más '
+                'exigente.')
+    ws['A9'].font = Font(size=9, italic=True)
+    ws['A9'].alignment = Alignment(wrap_text=True, vertical='top')
+    ws.row_dimensions[9].height = 42
 
     _seccion(ws, 10, 'COBERTURA: QUIÉN SUSTITUYE A QUIÉN', 6)
     _cabecera(ws, 11, ['Empleado Ausente', 'Puesto', 'Sustituto 1',
-                       'Sustituto 2', 'Notas', 'Días pendientes'])
+                       'Sustituto 2', 'Notas', 'Días pendientes', 'Aviso'])
     for f in range(12, fin_sust + 1):
         _formula(ws, 'F{}'.format(f),
                  "=IFERROR(IF($A{f}=\"\",\"\",INDEX('Saldo Vacaciones'!"
-                 "$G$5:$G${u},MATCH($A{f},'Saldo Vacaciones'!$A$5:$A${u},0))"
+                 "$H$5:$H${u},MATCH($A{f},'Saldo Vacaciones'!$A$5:$A${u},0))"
                  "),\"\")".format(f=f, u=4 + motor.CAPACIDAD),
                  motor.FMT_DEC1)
+        # RT-18 · «Empleado Ausente» era texto libre y su «Días pendientes»
+        # resolvía por INDEX/MATCH envuelto en IFERROR: un nombre mal escrito
+        # devolvía celda VACÍA, indistinguible de alguien sin días
+        # pendientes. La hoja hermana 'Solicitudes' sí traía el aviso para el
+        # mismo riesgo y la columna B de ESTA hoja sí trae DV: la
+        # incoherencia estaba dentro de la misma pantalla.
+        _formula(ws, 'G{}'.format(f),
+                 '=IF($A{f}="","",IF(COUNTIF(\'Calendario Anual\'!$A${a}:$A${b}'
+                 ',$A{f}&"")=0,"⚠ ese nombre no está en el calendario",""))'
+                 .format(f=f, a=EMP0, b=EMP1))
+    _cf(ws, 'G12:G{}'.format(fin_sust), motor.VOC_ALERTA)
     _dv(ws, 'B12:B{}'.format(fin_sust), PUESTOS, 'Puesto no válido',
         'El puesto decide quién puede sustituir a quién: un ayudante de sala '
         'no cubre una jefatura de cocina. Si te falta alguno, desprotege la '
         'hoja y edita la lista.', 'Elige el puesto de la persona ausente.')
 
-    _seccion(ws, 43, 'INDICADORES DE COBERTURA', 6)
+    _seccion(ws, 43, 'INDICADORES DE COBERTURA', 7)
     indicadores = [
         (44, 'Plantilla total en el calendario:',
          "=COUNTIF('Calendario Anual'!$A${a}:$A${b},\"?*\")"),
         (45, 'Pico de ausencias simultáneas (peor semana):',
-         "=MAX('Calendario Anual'!$B${s}:${c}${s})"),
+         "=MAX('Calendario Anual'!$B${m}:${c}${m})"),
         (46, 'Semanas por encima de tu máximo:',
-         "=COUNTIF('Calendario Anual'!$B${s}:${c}${s},\">\"&$B$3)"),
+         "=COUNTIF('Calendario Anual'!$B${m}:${c}${m},\">\"&$B$3)"),
         (47, 'Semanas de temporada alta con alguien ausente:',
          "=SUMPRODUCT(('Calendario Anual'!$B${t}:${c}${t}=\"Alta\")*"
-         "('Calendario Anual'!$B${s}:${c}${s}>0))"),
+         "('Calendario Anual'!$B${m}:${c}${m}>0))"),
+        # RD-14/RT-14 · el bloque «PERSONAL MÍNIMO POR TURNO» era decorativo:
+        # ninguna fórmula del kit lo leía —ni los indicadores de esta hoja ni
+        # la alerta del calendario, que sólo miraba B3—, así que el cliente
+        # que ajustara esos mínimos no veía cambiar nada en ningún sitio. Y
+        # encima contradecía al 03 y al BONUS-02 con cifras inventadas. Este
+        # indicador lo CONECTA: cuenta las semanas en que la plantilla que
+        # queda disponible no llega a cubrir el turno más exigente.
+        (48, 'Semanas en que NO se cubre el turno más exigente '
+             '(plantilla − ausencias < mínimo):',
+         "=SUMPRODUCT((($B$44-'Calendario Anual'!$B${m}:${c}${m})"
+         "<MAX($B$6:$B$8))*1)"),
     ]
     for fila, rotulo, formula in indicadores:
         _rotulo(ws, fila, rotulo)
         _formula(ws, 'B{}'.format(fila),
-                 formula.format(a=EMP0, b=EMP1, s=F_AUS, t=F_TEMP, c=COL_SN),
+                 formula.format(a=EMP0, b=EMP1, m=F_MAX, t=F_TEMP, c=COL_SN),
                  motor.FMT_ENT)
 
-    ws['A49'] = ('▸ Los indicadores leen la fila «Ausencias en la semana» del '
-                 'Calendario Anual, que cuenta las V y las B marcadas en la '
-                 'rejilla. Marca ahí lo que planifiques y aquí verás si te '
-                 'quedas sin equipo.')
-    ws['A49'].font = Font(size=9, italic=True)
-    ws['A49'].alignment = Alignment(wrap_text=True, vertical='top')
-    ws.row_dimensions[49].height = 26
-    ws['A51'] = motor.PIE
-    ws['A51'].font = Font(size=8, color='888888')
-    _anchos(ws, {'A': 40, 'B': 18, 'C': 22, 'D': 22, 'E': 26, 'F': 16})
-    _merges(ws, ['A1:F1', 'A2:F2', 'A49:F49', 'A51:F51'])
+    ws['A50'] = ('▸ Los indicadores leen la fila «Ausencias en la semana» del '
+                 'Calendario Anual, que ahora es la MAYOR de dos cuentas: lo '
+                 'que hayas pintado a mano en la rejilla (V, B y PE) y lo que '
+                 'sale solo de las solicitudes APROBADAS. Trabajes con la '
+                 'rejilla o con las solicitudes, la cobertura se entera.')
+    ws['A50'].font = Font(size=9, italic=True)
+    ws['A50'].alignment = Alignment(wrap_text=True, vertical='top')
+    ws.row_dimensions[50].height = 34
+    ws['A52'] = motor.PIE
+    ws['A52'].font = Font(size=8, color='888888')
+    _anchos(ws, {'A': 46, 'B': 18, 'C': 26, 'D': 12, 'E': 26, 'F': 16,
+                 'G': 30})
+    _merges(ws, ['A1:G1', 'A2:G2', 'A9:G9', 'A50:G50', 'A52:G52'])
     cambios.append('05:Cobertura!B3/B44:B47: máximo de ausencias en celda, '
                    'personal mínimo por turno precargado e indicadores reales '
                    'de pico y temporada alta (COM-20)')
+    cambios.append('05:Cobertura!D3: umbral propio de la TEMPORADA ALTA en '
+                   'celda verde (1 por defecto). Antes la rama de temporada '
+                   'alta se evaluaba primero y con «>0», así que una sola '
+                   'ausencia en cualquiera de las 11 semanas precargadas '
+                   'pintaba el bloqueante ⛔ y el «⚠ EXCESO» —la única alerta '
+                   'que compara contra el máximo del cliente— no aparecía '
+                   'nunca — RT-11')
+    cambios.append('05:Cobertura!B48: indicador nuevo que CONECTA el bloque '
+                   '«Personal mínimo por turno», hasta ahora decorativo: '
+                   'cuenta las semanas en que la plantilla disponible no '
+                   'llega al turno más exigente. Y los mínimos precargados '
+                   'dejan de contradecir al 03 y al BONUS-02 — RD-14/RT-14')
+    cambios.append('05:Cobertura!G12:G41: aviso «⚠ ese nombre no está en el '
+                   'calendario», el mismo que ya tenía «Solicitudes». Un '
+                   'nombre mal escrito dejaba «Días pendientes» en blanco, '
+                   'indistinguible de alguien sin días pendientes — RT-18')
 
 
 def _n05_instrucciones(wb, cambios):
@@ -1502,7 +1760,12 @@ def _d03_semaforo(carpeta):
     hoja = "'Ratio Coste Laboral'!"
 
     def escena(sets, lecturas=('B11', 'B13', 'D11', 'D12', 'B9')):
+        # ⚠ las SALIDAS se evalúan ANTES de escribir las entradas: pycel sólo
+        # propaga un `set_value` a las celdas que ya están en su grafo de
+        # dependencias (ver `_calentar`). Compilador limpio por escena para no
+        # arrastrar estado entre casos.
         xl = _xl(p)
+        _calentar(xl, [hoja + c for c in lecturas])
         for ref, val in sets:
             _calentar(xl, [hoja + ref])
             _sv(xl, hoja + ref, val)
@@ -1672,131 +1935,250 @@ def _d04_progreso(carpeta):
 
 
 def _d05_dias(carpeta):
-    """§4 · agosto entero deja de contar como «1 día usado»."""
+    """§4 + RD-09/RD-10/RD-27/RT-03/RT-08 — el saldo de vacaciones.
+
+    Lo que ya medía: agosto entero deja de contar como «1 día usado» y las
+    fechas invertidas dejan de producir días negativos.
+
+    Lo que se añade, todo cambiando entradas sobre MI copia:
+
+      · **RD-09/RT-03**: tres periodos del MISMO empleado suman en el saldo.
+        Con las 30 filas anteriores esa era la capacidad ENTERA de la hoja
+        para toda la plantilla.
+      · **RD-10**: una solicitud de OTRO ejercicio no descuenta del derecho de
+        éste. Sin el filtro por año, reutilizar el libro dejaba a toda la
+        plantilla en negativo.
+      · **RD-27**: una baja a mitad de año prorratea por los dos extremos.
+      · **RT-08**: un alta posterior al cierre del año da 0, no un derecho
+        NEGATIVO, y lo dice en la columna de aviso.
+    """
     p = os.path.join(carpeta, '05-planificacion-vacaciones.xlsx')
     if not os.path.isfile(p):
         return None
-    xl = _xl(p)
     cal, sol, sal = "'Calendario Anual'!", "'Solicitudes'!", \
                     "'Saldo Vacaciones'!"
-    calientes = _calentar(xl, [cal + '{}6'.format(COL_TOT)]
-                          + [sal + c + '5' for c in 'ADEFGH']
-                          + [sol + c + '5' for c in 'DEFH'])
-    fresco = {'dias_usados_BC6': calientes[cal + '{}6'.format(COL_TOT)],
-              'derecho_D5': calientes[sal + 'D5'],
-              'le_quedan_G5': calientes[sal + 'G5']}
-    _sv(xl, cal + 'A6', 'Ana Ruiz')
-    _sv(xl, sol + 'A5', 'Ana Ruiz')
-    _sv(xl, sol + 'B5', _serie(2027, 8, 1))
-    _sv(xl, sol + 'C5', _serie(2027, 8, 30))
-    _sv(xl, sol + 'G5', 'Aprobado')
-    agosto = {'dias_solicitados_D5': _ev(xl, sol + 'D5'),
-              'derecho_D5': _ev(xl, sal + 'D5'),
-              'disfrutados_E5': _ev(xl, sal + 'E5'),
-              'le_quedan_G5': _ev(xl, sal + 'G5'),
-              'aviso_H5': _ev(xl, sal + 'H5'),
-              'dias_usados_calendario': _ev(xl, cal + '{}6'.format(COL_TOT))}
-    _sv(xl, sol + 'G5', 'Pendiente')
-    pendiente = {'disfrutados_E5': _ev(xl, sal + 'E5'),
-                 'pendientes_F5': _ev(xl, sal + 'F5'),
-                 'le_quedan_G5': _ev(xl, sal + 'G5')}
-    _sv(xl, sol + 'G5', 'Aprobado')
-    _sv(xl, sal + 'B5', _serie(2027, 7, 1))
-    prorrateo = {'derecho_D5': _ev(xl, sal + 'D5'),
-                 'le_quedan_G5': _ev(xl, sal + 'G5')}
-    _sv(xl, sal + 'B5', None)
-    _sv(xl, sol + 'B5', _serie(2027, 8, 30))
-    _sv(xl, sol + 'C5', _serie(2027, 8, 1))
-    invertidas = _ev(xl, sol + 'D5')
-    ok = (all(v in ('', None) for v in fresco.values())
-          and agosto['dias_solicitados_D5'] == 30
-          and agosto['derecho_D5'] == 30
-          and agosto['disfrutados_E5'] == 30
-          and agosto['le_quedan_G5'] == 0
-          and agosto['dias_usados_calendario'] == 30
-          and pendiente['disfrutados_E5'] == 0
-          and pendiente['pendientes_F5'] == 30
-          and pendiente['le_quedan_G5'] == 0
-          and _num(prorrateo['derecho_D5'])
-          and 14 < prorrateo['derecho_D5'] < 16
-          and 'invertidas' in str(invertidas))
-    return {'ref': '05-planificacion-vacaciones.xlsx:Calendario '
-                   'Anual:{}6'.format(COL_TOT),
+    anio = ANIO_CALENDARIO
+    salidas = [cal + '{}6'.format(COL_TOT)] + [sal + c + '5' for c in 'ABCEFGHI']
+
+    def escena(sets, extra=()):
+        xl = _xl(p)
+        _calentar(xl, salidas + list(extra))
+        for ref, val in sets:
+            _calentar(xl, [ref])
+            _sv(xl, ref, val)
+        lect = dict((r.split('!')[-1], _ev(xl, r)) for r in salidas)
+        for r in extra:
+            lect[r] = _ev(xl, r)
+        return lect
+
+    def peticion(fila, ini, fin, estado='Aprobado', quien='Ana Ruiz'):
+        return [(sol + 'A{}'.format(fila), quien),
+                (sol + 'B{}'.format(fila), _serie(*ini)),
+                (sol + 'C{}'.format(fila), _serie(*fin)),
+                (sol + 'G{}'.format(fila), estado)]
+
+    nombre = [(cal + 'A6', 'Ana Ruiz')]
+    fresco = escena([])
+    agosto = escena(nombre + peticion(5, (anio, 8, 1), (anio, 8, 30)),
+                    extra=[sol + 'D5'])
+    pendiente = escena(nombre + peticion(5, (anio, 8, 1), (anio, 8, 30),
+                                         'Pendiente'))
+    # RD-09/RT-03 · tres periodos de la misma persona
+    tres = escena(nombre
+                  + peticion(5, (anio, 8, 1), (anio, 8, 10))     # 10 días
+                  + peticion(6, (anio, 12, 24), (anio, 12, 31))  # 8 días
+                  + peticion(7, (anio, 4, 1), (anio, 4, 7)))     # 7 días
+    # y una en la última fila de la hoja: el rango llega hasta ahí
+    ultima = escena(nombre + peticion(SOL1, (anio, 5, 1), (anio, 5, 5)))
+    # RD-10 · la misma petición, un año después
+    otro_anio = escena(nombre + peticion(5, (anio + 1, 8, 1), (anio + 1, 8, 30)))
+    # RD-27 · alta el 1 de enero y baja el 30 de junio → medio derecho
+    baja = escena(nombre + [(sal + 'C5', _serie(anio, 6, 30))])
+    # RT-08 · alta posterior al cierre del año
+    imposible = escena(nombre + [(sal + 'B5', _serie(anio + 1, 3, 1))])
+    invertidas = escena(nombre + peticion(5, (anio, 8, 30), (anio, 8, 1)),
+                        extra=[sol + 'D5'])
+
+    ok = (all(fresco[c] in ('', None) for c in ('E5', 'H5', 'BC6'))
+          and agosto[sol + 'D5'] == 30 and agosto['E5'] == 30
+          and agosto['F5'] == 30 and agosto['H5'] == 0
+          and agosto['BC6'] == 30
+          and pendiente['F5'] == 0 and pendiente['G5'] == 30
+          and pendiente['H5'] == 0
+          and tres['F5'] == 25 and tres['H5'] == 5
+          and ultima['F5'] == 5
+          and otro_anio['F5'] == 0 and otro_anio['H5'] == 30
+          and _num(baja['E5']) and 14 < baja['E5'] < 16
+          and imposible['E5'] == 0
+          and 'posterior al cierre' in str(imposible['I5'])
+          and 'invertidas' in str(invertidas[sol + 'D5']))
+    return {'ref': '05-planificacion-vacaciones.xlsx:Saldo Vacaciones:'
+                   'E5/F5/H5/I5',
             'hoja_recien_descargada': dict((k, str(v))
                                            for k, v in fresco.items()),
-            'agosto_entero_aprobado': agosto,
-            'la_misma_solicitud_en_PENDIENTE': pendiente,
-            'alta_el_1_de_julio_prorrateo': prorrateo,
-            'fechas_al_reves_D5': str(invertidas),
+            'agosto entero aprobado':
+                {'dias': agosto[sol + 'D5'], 'derecho': agosto['E5'],
+                 'disfrutados': agosto['F5'], 'le_quedan': agosto['H5'],
+                 'dias_usados_calendario': agosto['BC6']},
+            'la misma solicitud en PENDIENTE':
+                {'disfrutados': pendiente['F5'],
+                 'pendientes': pendiente['G5'],
+                 'le_quedan': pendiente['H5']},
+            'TRES periodos de la misma persona (10 + 8 + 7 días) — RD-09':
+                {'disfrutados': tres['F5'], 'le_quedan': tres['H5']},
+            'una petición en la ÚLTIMA fila (%d) — RT-03' % SOL1:
+                {'disfrutados': ultima['F5']},
+            'la misma petición pero del año SIGUIENTE — RD-10':
+                {'disfrutados': otro_anio['F5'],
+                 'le_quedan': otro_anio['H5']},
+            'baja el 30 de junio (medio año de alta) — RD-27':
+                {'derecho': baja['E5']},
+            'alta posterior al cierre del año — RT-08':
+                {'derecho': imposible['E5'], 'aviso': imposible['I5']},
+            'fechas al revés': str(invertidas[sol + 'D5']),
             'ok': ok,
             'nota': 'la v1.1 tenía una celda por MES: agosto entero contaba '
                     '1 día usado y 29 restantes, y las fechas invertidas '
                     'daban días NEGATIVOS que entraban en el saldo '
-                    '(DOM-04/DOM-20/TEC-04/COM-06)'}
+                    '(DOM-04/DOM-20/TEC-04/COM-06). Y la v2.0 dejaba la hoja '
+                    'de peticiones en 30 filas para 30 personas (RD-09), '
+                    'sumaba las de TODOS los años (RD-10), prorrateaba sólo '
+                    'el alta (RD-27) y podía dar derecho negativo (RT-08)'}
 
 
 def _d05_cobertura(carpeta):
-    """§4 · la fila de cobertura del calendario y los indicadores."""
+    """§4 + RD-12/RD-13/RD-14/RT-11/RT-14 — la fila de cobertura y sus
+    indicadores.
+
+      · **RD-13**: un PERMISO RETRIBUIDO (PE) es una ausencia que hay que
+        cubrir y no computaba: la fila sólo contaba V y B.
+      · **RD-12**: la cobertura salía de las 1.590 celdas pintadas a mano
+        mientras el saldo salía de las solicitudes; quien trabajaba con
+        «Solicitudes» —que es lo que dicen las Instrucciones— dejaba la
+        cobertura a cero.
+      · **RT-11**: la temporada alta se evaluaba PRIMERO y con `>0`, así que
+        una sola ausencia pintaba el bloqueante ⛔ y el «⚠ EXCESO» —la única
+        alerta que compara contra el máximo del cliente— no salía nunca.
+      · **RD-14/RT-14**: el bloque de personal mínimo por turno no lo leía
+        ninguna fórmula.
+    """
     p = os.path.join(carpeta, '05-planificacion-vacaciones.xlsx')
     if not os.path.isfile(p):
         return None
-    xl = _xl(p)
-    cal, cob = "'Calendario Anual'!", "'Cobertura'!"
-    sem_normal, sem_alta = 'B', get_column_letter(1 + TEMPORADA_ALTA[0])
-    # el grafo tiene que incluir las DOS semanas que se van a tocar (ver
-    # `_calentar`): si no, el «V» de la semana 27 no llega al indicador.
-    calientes = _calentar(xl, [
-        cal + '{}{}'.format(c, f)
-        for c in (sem_normal, sem_alta) for f in (F_TEMP, F_AUS, F_ALERTA)
-    ] + [cob + 'B{}'.format(r) for r in (44, 45, 46, 47, 6, 7, 8)])
-    fresco = {'ausencias_semana_1': calientes[cal + '{}{}'.format(sem_normal,
-                                                                 F_AUS)],
-              'alerta_semana_1': calientes[cal + '{}{}'.format(sem_normal,
-                                                               F_ALERTA)],
-              'pico_B45': calientes[cob + 'B45'],
-              'plantilla_B44': calientes[cob + 'B44'],
-              'temp_alta_con_ausencias_B47': calientes[cob + 'B47']}
-    for i in range(3):
-        _sv(xl, cal + 'A{}'.format(EMP0 + i), 'Empleado {}'.format(i + 1))
-        _sv(xl, cal + '{}{}'.format(sem_normal, EMP0 + i), 'V')
-    tres = {'ausencias': _ev(xl, cal + '{}{}'.format(sem_normal, F_AUS)),
-            'alerta': _ev(xl, cal + '{}{}'.format(sem_normal, F_ALERTA)),
-            'plantilla_B44': _ev(xl, cob + 'B44'),
-            'pico_B45': _ev(xl, cob + 'B45'),
-            'sobre_el_maximo_B46': _ev(xl, cob + 'B46')}
-    _sv(xl, cob + 'B3', 2)
-    exceso = {'alerta': _ev(xl, cal + '{}{}'.format(sem_normal, F_ALERTA)),
-              'sobre_el_maximo_B46': _ev(xl, cob + 'B46')}
-    _sv(xl, cal + '{}{}'.format(sem_alta, EMP0), 'V')
-    alta = {'semana': TEMPORADA_ALTA[0],
-            'temporada': _ev(xl, cal + '{}{}'.format(sem_alta, F_TEMP)),
-            'alerta': _ev(xl, cal + '{}{}'.format(sem_alta, F_ALERTA)),
-            'temp_alta_con_ausencias_B47': _ev(xl, cob + 'B47')}
-    minimos = dict((t, _ev(xl, cob + 'B{}'.format(6 + i)))
-                   for i, t in enumerate(('mañana', 'tarde', 'noche')))
-    ok = (fresco['ausencias_semana_1'] == 0
-          and fresco['temp_alta_con_ausencias_B47'] == 0
-          and fresco['alerta_semana_1'] in ('', None)
-          and tres['ausencias'] == 3 and tres['plantilla_B44'] == 3
-          and tres['pico_B45'] == 3 and tres['alerta'] in ('', None)
-          and tres['sobre_el_maximo_B46'] == 0
-          and 'EXCESO' in str(exceso['alerta'])
-          and exceso['sobre_el_maximo_B46'] == 1
-          and 'TEMP. ALTA' in str(alta['alerta'])
-          and alta['temp_alta_con_ausencias_B47'] == 1
-          and minimos['tarde'] == 6)
+    cal, cob, sol = "'Calendario Anual'!", "'Cobertura'!", "'Solicitudes'!"
+    # semana 1 (normal) y la primera precargada como «Alta»
+    wb = openpyxl.load_workbook(p)
+    hoja = wb['Calendario Anual']
+    sem_alta = None
+    for n in range(1, SEMANAS + 1):
+        col = get_column_letter(1 + n)
+        if hoja['{}{}'.format(col, F_TEMP)].value == 'Alta':
+            sem_alta = col
+            break
+    sem_normal = 'B'
+    salidas = [cal + '{}{}'.format(c, f)
+               for c in (sem_normal, sem_alta)
+               for f in (F_TEMP, F_AUS, F_SOL, F_MAX, F_ALERTA)]
+    salidas += [cob + 'B{}'.format(r) for r in (6, 7, 8, 44, 45, 46, 47, 48)]
+
+    def escena(sets):
+        xl = _xl(p)
+        _calentar(xl, salidas)
+        for ref, val in sets:
+            _calentar(xl, [ref])
+            _sv(xl, ref, val)
+        return dict((r.split('!')[-1], _ev(xl, r)) for r in salidas)
+
+    plantilla = [(cal + 'A{}'.format(EMP0 + i), 'Empleado {}'.format(i + 1))
+                 for i in range(10)]
+
+    def marca(col, codigos):
+        return [(cal + '{}{}'.format(col, EMP0 + i), c)
+                for i, c in enumerate(codigos)]
+
+    fresco = escena([])
+    tres = escena(plantilla + marca(sem_normal, ['V', 'V', 'V']))
+    # RD-13 · dos vacaciones y dos permisos retribuidos
+    permisos = escena(plantilla + marca(sem_normal, ['V', 'V', 'PE', 'PE']))
+    # RT-11 · el exceso manda sobre la temporada
+    exceso = escena(plantilla + marca(sem_normal, ['V'] * 6))
+    exceso_alta = escena(plantilla + marca(sem_alta, ['V'] * 6))
+    una_en_alta = escena(plantilla + marca(sem_alta, ['V']))
+    # RD-12 · sin pintar NADA en la rejilla, sólo con solicitudes aprobadas
+    lunes = LUNES_SEMANA_1
+    solicitudes = escena(
+        plantilla
+        + [(sol + 'A5', 'Empleado 1'),
+           (sol + 'B5', _serie(lunes.year, lunes.month, lunes.day)),
+           (sol + 'C5', _serie((lunes + datetime.timedelta(days=4)).year,
+                               (lunes + datetime.timedelta(days=4)).month,
+                               (lunes + datetime.timedelta(days=4)).day)),
+           (sol + 'G5', 'Aprobado')])
+    # RD-14/RT-14 · el mínimo por turno decide un indicador
+    sin_cubrir = escena(plantilla + marca(sem_normal, ['V'] * 7))
+
+    ok = (fresco['{}{}'.format(sem_normal, F_MAX)] == 0
+          and fresco['{}{}'.format(sem_normal, F_ALERTA)] in ('', None)
+          and fresco['B47'] == 0 and fresco['B48'] == 0
+          and tres['{}{}'.format(sem_normal, F_AUS)] == 3
+          and tres['{}{}'.format(sem_normal, F_MAX)] == 3
+          and tres['B44'] == 10 and tres['B45'] == 3
+          and tres['{}{}'.format(sem_normal, F_ALERTA)] in ('', None)
+          and permisos['{}{}'.format(sem_normal, F_AUS)] == 4
+          and 'EXCESO' in str(exceso['{}{}'.format(sem_normal, F_ALERTA)])
+          and 'TEMP. ALTA' not in str(
+              exceso['{}{}'.format(sem_normal, F_ALERTA)])
+          and 'EXCESO en TEMP. ALTA' in str(
+              exceso_alta['{}{}'.format(sem_alta, F_ALERTA)])
+          and 'TEMP. ALTA' in str(
+              una_en_alta['{}{}'.format(sem_alta, F_ALERTA)])
+          and 'EXCESO' not in str(
+              una_en_alta['{}{}'.format(sem_alta, F_ALERTA)])
+          and solicitudes['{}{}'.format(sem_normal, F_AUS)] == 0
+          and solicitudes['{}{}'.format(sem_normal, F_SOL)] == 1
+          and solicitudes['{}{}'.format(sem_normal, F_MAX)] == 1
+          and sin_cubrir['B48'] >= 1
+          and tres['B48'] == 0
+          and permisos['B6'] == 4 and permisos['B7'] == 5
+          and permisos['B8'] == 2)
     return {'ref': '05-planificacion-vacaciones.xlsx:Calendario '
-                   'Anual:B{}'.format(F_ALERTA),
-            'hoja_recien_descargada': dict((k, str(v))
-                                           for k, v in fresco.items()),
-            'tres_ausentes_la_semana_1': tres,
-            'bajando_el_maximo_a_2': exceso,
-            'una_ausencia_en_temporada_alta': alta,
-            'minimo_por_turno': minimos,
+                   'Anual:B{}:B{}'.format(F_AUS, F_ALERTA),
+            'hoja_recien_descargada':
+                {'ausencias': fresco['{}{}'.format(sem_normal, F_MAX)],
+                 'alerta': str(fresco['{}{}'.format(sem_normal, F_ALERTA)]),
+                 'semanas_sin_cubrir_B48': fresco['B48']},
+            'tres ausentes la semana 1 (máximo 4)':
+                {'rejilla': tres['{}{}'.format(sem_normal, F_AUS)],
+                 'la_mayor': tres['{}{}'.format(sem_normal, F_MAX)],
+                 'plantilla': tres['B44'], 'pico': tres['B45'],
+                 'alerta': str(tres['{}{}'.format(sem_normal, F_ALERTA)])},
+            'dos V y dos PE — el permiso ahora cuenta (RD-13)':
+                {'ausencias': permisos['{}{}'.format(sem_normal, F_AUS)]},
+            'seis ausentes en semana NORMAL (RT-11)':
+                {'alerta': str(exceso['{}{}'.format(sem_normal, F_ALERTA)])},
+            'seis ausentes en TEMPORADA ALTA (RT-11)':
+                {'alerta': str(
+                    exceso_alta['{}{}'.format(sem_alta, F_ALERTA)])},
+            'UNA ausencia en temporada alta (RT-11)':
+                {'alerta': str(
+                    una_en_alta['{}{}'.format(sem_alta, F_ALERTA)])},
+            'sin pintar nada, sólo una solicitud APROBADA (RD-12)':
+                {'rejilla': solicitudes['{}{}'.format(sem_normal, F_AUS)],
+                 'por_solicitudes':
+                     solicitudes['{}{}'.format(sem_normal, F_SOL)],
+                 'la_mayor': solicitudes['{}{}'.format(sem_normal, F_MAX)]},
+            'mínimo por turno (M · T · N)': {'M': permisos['B6'],
+                                             'T': permisos['B7'],
+                                             'N': permisos['B8']},
+            'semanas que NO cubren el turno más exigente (RD-14/RT-14)':
+                {'con 3 ausentes': tres['B48'],
+                 'con 7 ausentes de 10': sin_cubrir['B48']},
             'ok': ok,
             'nota': "la hoja 'Cobertura' de la v1.1 eran dos cabeceras y cero "
-                    'datos, mientras la landing prometía cobertura mínima y '
-                    'periodos de máxima demanda (COM-20)'}
+                    'datos (COM-20); la v2.0 la llenó pero la dejó sin '
+                    'conectar (RD-14/RT-14), contaba sólo V y B (RD-13), no '
+                    'se enteraba de las solicitudes aprobadas (RD-12) y '
+                    'tapaba el exceso con la temporada alta (RT-11)'}
 
 
 def demos(carpeta, origen):

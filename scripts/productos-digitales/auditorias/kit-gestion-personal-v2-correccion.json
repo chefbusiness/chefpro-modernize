@@ -1,7 +1,7 @@
 {
  "informe": "Corrección de los 74 hallazgos de las 3 lentes refutadoras del Kit de Gestión de Personal y Turnos v2.0",
  "fecha": "2026-08-24",
- "estado": "EN CURSO — motor, main, grupo_a y grupo_c hechos",
+ "estado": "EN CURSO — motor, main, grupo_a, grupo_c y el 03 de grupo_b hechos",
  "entrada": {
   "total": 74,
   "ids": [
@@ -236,6 +236,31 @@
    "id": "RD-23",
    "fichero": "grupo_a.py:LIMITES_TEMP",
    "fix": "Dos filas nuevas de mantenimiento en caliente (65/90) y 'Expositor / vitrina' renombrado a 'Expositor / vitrina FRÍA'. Demo: baño maría a 55 °C → '⛔ FUERA DE RANGO'."
+  },
+  {
+   "id": "RD-01",
+   "fichero": "grupo_b.py:_n03_ratio B11/B13",
+   "fix": "La guarda mira las DOS entradas y B13 nombra el hueco. Demo grupo_b_03_semaforo_por_tipo: ventas 50.000 sin ninguna nómina → '— aún no hay coste: vuelca las nóminas en la hoja «Nóminas»' (antes '🟢 EXCELENTE'). Suelo de plausibilidad: coste 2.500 / ventas 50.000 = 5 % → '⚠ ratio implausible: revisa que estén TODAS las nóminas'."
+  },
+  {
+   "id": "RT-01",
+   "fichero": "grupo_b.py:_n03_ratio B11/B13",
+   "fix": "Mismo cambio; escena del gate añadida (fijar ventas y dejar Nóminas vacía debe devolver el mensaje, no un veredicto verde)."
+  },
+  {
+   "id": "RD-21",
+   "fichero": "grupo_b.py:_n03_ratio B5:B9",
+   "fix": "B5 «Nóminas del mes» (calculada) + tres verdes: horas extra del mes (02!'Resumen Mensual'!G37), personal externo/ETT y otros costes; B9 = SUM(B5:B8). Demo: 20.000 + 1.200 + 800 + 500 → B9=22.500 y ratio 45 % (antes 40 %)."
+  },
+  {
+   "id": "RC-11",
+   "fichero": "grupo_b.py:TIPOS_NEGOCIO_EXTRA",
+   "fix": "La tabla del 03 pasa de 6 a 10 tipos con los MISMOS umbrales que grupo_c.TIPOS_BONUS. Demo: 'Hotel (restaurante)' → D11=0,42 y D12=0,44 (antes caía al 0,30/0,35 genérico mientras el BONUS-02 daba 42/44)."
+  },
+  {
+   "id": "RD-20",
+   "fichero": "grupo_b.py:SEMANAS_EFECTIVAS + _n03_nominas I",
+   "fix": "Celda verde F2 «Semanas efectivas al año» (46,5) y el coste/hora divide por $H*$F$2/12. Demo grupo_b_03_coste_por_empleado: 2.327,50 €/mes y 40 h → 15,02 €/h con 46,5 semanas y 13,43 €/h con 52 (el valor anterior, un 11 % corto)."
   }
  ],
  "no_aplicados": [
