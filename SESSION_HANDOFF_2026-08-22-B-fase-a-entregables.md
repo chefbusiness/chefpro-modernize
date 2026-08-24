@@ -308,3 +308,18 @@ webhook/strict, marca CB en 7 productos.
 (`auditorias/gate-live-2026-08-24-cierre.json`); main `d77d7c2` limpio; capa de producto de plan-financiero en la
 rama `wip/plan-financiero-capa-producto` (pusheada, NO mergear hasta aplicar los grupos). Sesión pausada por consumo
 de tokens; retomar por §11 en sesión fresca.
+
+## 12. Broadcast de la v2.0 enviado (24-ago mediodía, orden de John)
+
+Dos broadcasts en Resend anunciando los 11 Kits de Tareas v2.0, con los kits listados por nombre y
+enlazados a su landing pública (UTM `utm_content=kits-tareas-v2`):
+- **«2026-08-24 Kits de Tareas v2.0 (ES)»** → segmento AI Chef Pro ES, **239 destinatarios**, From
+  `AI Chef Pro <hola@news.aichef.pro>`, Reply-To info@aichef.pro. SENT.
+- **«2026-08-24 Kits de Tareas v2.0 (ChefBusiness)»** → segmento Chefbusiness, **19 destinatarios**,
+  From `ChefBusiness <hola@mailer.chefbusiness.co>`, Reply-To john@chefbusiness.co. SENT.
+- HTML reutilizable en `scripts/productos-digitales/emails/broadcast-kits-tareas-v2-es.html`
+  (negro #111 + dorado #FFD700 — regla de John: nunca más el marrón; pie con RESEND_UNSUBSCRIBE_URL).
+- Método completo (Upload HTML + file_upload, duplicado para el 2.º segmento, slider por JS) documentado
+  en la skill `~/.claude/skills/resend-operaciones-grupo`. Queda un Draft de prueba en el panel
+  («2026-08-17 Modelos open source (ES) (copy)») que John puede borrar. Métricas de apertura: tracking
+  no activado en news.aichef.pro (activarlo en Domains si se quiere medir el próximo).
