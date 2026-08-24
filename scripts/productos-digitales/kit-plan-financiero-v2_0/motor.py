@@ -908,6 +908,14 @@ CORRECCIONES_INSTRUCCIONES = {
          '▸ Los cinco años van con desglose mensual (Ene-Dic) y total anual '
          'en la columna N.'),
     ],
+    'BONUS-08-simulador-escenarios.xlsx': [
+        # RC-12/COM-26: la variable del simulador se llama «Cubiertos / día»;
+        # «Ocupación» no existe en ninguna celda. Es la superficie que más
+        # manda, porque el comprador la lee con el fichero abierto.
+        (re.compile(r'^▸ Cambia los valores de Ticket Medio'),
+         '▸ Cambia los valores de Ticket medio, Cubiertos / día y Food Cost '
+         'en la zona de inputs.'),
+    ],
     '04-presupuesto-inversion-capex.xlsx': [
         # TEC-28: nombraba «Obra civil» y «Licencias y Permisos», pestañas que
         # no existen — las reales son «Obra» y «Licencias».
@@ -1014,6 +1022,9 @@ def sin_iva(wb, fname, informe):
 # tres del 02 que la SPEC cita una por una: `02!Break-Even!C8` revienta con un
 # coste variable del 100 %, `C9` con 0 días de apertura y `C10` con ticket 0.
 GUARDAS = {
+    # El 06 lo reescribe entero grupo_c con un mapa de filas nuevo y ya escribe
+    # sus propias guardas; esto queda como red de seguridad para el caso
+    # `--solo motor`, en el que la hoja sigue siendo la de la v1.1.
     '06-dashboard-ratios-financieros.xlsx': {
         'Ratios': {
             'C17': 'Indica las ventas',
@@ -1205,19 +1216,36 @@ def _lineas(ws, titulo, y_titulo, datos, categorias, ancla, from_rows=True):
     return ch
 
 
+def _es_formula(ws, coord):
+    try:
+        v = ws[coord].value
+    except Exception:                                        # noqa: BLE001
+        return False
+    return isinstance(v, str) and v.startswith('=')
+
+
 def graficos(wb, fname, informe):
-    """§1.1 — «gráficos automáticos» se anuncia SEIS veces en la landing y hoy
-    hay 0 charts en las 47 hojas. Aquí se construyen de verdad en 9 de los 10
-    (el BONUS-09 es una checklist: no tiene serie que dibujar).
+    """§1.1 — «gráficos automáticos» se anuncia SEIS veces en la landing y en
+    la v1.1 había 0 charts en las 47 hojas. Aquí se construyen de verdad en 9
+    de los 10 (el BONUS-09 es una checklist: no tiene serie que dibujar).
 
-    Cada gráfico declara su **precondición**. Si el bloque de datos que
-    necesita todavía no existe —porque lo crea un grupo que aún no está
-    escrito— se omite y se anota como `pendiente`: un gráfico sobre celdas
-    inexistentes es peor que ningún gráfico, porque el cliente lo ve vacío.
+    Tres reglas que la v2.0 aprendió por las malas:
 
-    Se llama DESPUÉS de los grupos y ANTES de `wb.save()` (§1.8). Las
-    plantillas ya existentes se borran antes de dibujar: openpyxl las conserva
-    al recargar, así que la 2.ª pasada las duplicaría.
+    1. **Precondición.** Si el bloque de datos que el gráfico necesita todavía
+       no existe se OMITE y se anota como pendiente. Un gráfico sobre celdas
+       vacías es peor que ninguno: el cliente lo ve plano en cero y cree que su
+       negocio lo está (RC-10: los tres «Resumen» seguían a 0 y el motor les
+       colgó encima un BarChart).
+    2. **Ninguna serie de TEXTO** (RT-11/RD-26). El LineChart del 03 se
+       construía sobre `C:E` de un tirón e incluía la columna `D`, que es
+       «OK» / «⚠️ BAJO MÍNIMO»: Excel la dibuja como una línea plana en cero
+       con leyenda «Alerta», dentro del único gráfico que el cliente enseña.
+       Las series no contiguas se añaden con dos `Reference`.
+    3. **Anclados DEBAJO de la tabla** (RT-12). Con `fitToWidth=1`, un gráfico
+       a la derecha obliga a Excel a escalar TODA la hoja para que tabla +
+       gráfico entren en el ancho de un A4: medido, el 03 y el 04 se imprimían
+       al 48-49 % y el 07 al 62 %. En un kit cuyo listón es «que el 07 se
+       imprima y se entregue», eso empeoraba la impresión.
     """
     hechos, pendientes = [], []
 
@@ -1230,101 +1258,134 @@ def graficos(wb, fname, informe):
         ultima = 4 if fname.startswith('01-') else 6      # col D o col F
         if ws is None:
             pendientes.append('Resumen: la hoja no existe')
-        elif not _hay_datos(ws, 'B5'):
-            pendientes.append('Resumen!B5 vacía: el consolidado es de grupo_a')
+        elif not _es_formula(ws, 'B5'):
+            pendientes.append('Resumen!B5 no consolida todavía: es de grupo_a')
         else:
             _limpiar(ws)
             datos = Reference(ws, min_col=1, max_col=ultima, min_row=5,
                               max_row=7)
             cats = Reference(ws, min_col=2, max_col=ultima, min_row=4)
             _barras(ws, 'Ingresos, gastos y EBITDA por año', '€', datos, cats,
-                    'A10')
-            hechos.append('Resumen!A10 BarChart ingresos/gastos/EBITDA')
+                    'A11')
+            hechos.append('Resumen!A11 BarChart ingresos/gastos/EBITDA')
 
     elif fname == '02-calculadora-punto-equilibrio.xlsx':
         ws = wb['Break-Even'] if 'Break-Even' in wb.sheetnames else None
         if ws is None or not _hay_datos(ws, 'A20'):
-            pendientes.append('Break-Even!A20:D31: el bloque auxiliar de '
+            pendientes.append('Break-Even!A20:D28: el bloque auxiliar de '
                               'ingresos vs costes lo crea grupo_b')
         else:
             _limpiar(ws)
-            datos = Reference(ws, min_col=2, max_col=4, min_row=20, max_row=31)
-            cats = Reference(ws, min_col=1, min_row=21, max_row=31)
-            _lineas(ws, 'Ingresos vs costes totales', '€', datos, cats, 'F4',
-                    from_rows=False)
-            hechos.append('Break-Even!F4 LineChart ingresos vs costes')
+            datos = Reference(ws, min_col=2, max_col=4, min_row=20, max_row=28)
+            cats = Reference(ws, min_col=1, min_row=21, max_row=28)
+            _lineas(ws, 'Ingresos vs costes totales por cubiertos/día', '€',
+                    datos, cats, 'A31', from_rows=False)
+            hechos.append('Break-Even!A31 LineChart ingresos vs costes')
 
     elif fname == FICHERO_CAJA:
         ws = wb['Alertas'] if 'Alertas' in wb.sheetnames else None
-        if ws is None or not _hay_datos(ws, 'C6'):
-            pendientes.append('Alertas!C6:C17 vacía')
+        if ws is None or not _hay_datos(ws, 'C6') or not _hay_datos(ws, 'E6'):
+            pendientes.append('Alertas!C6:C17 o la serie de umbral E6:E17')
         else:
             _limpiar(ws)
-            datos = Reference(ws, min_col=3, max_col=5, min_row=5, max_row=17)
-            cats = Reference(ws, min_col=2, min_row=6, max_row=17)
-            _lineas(ws, 'Saldo final vs umbral de seguridad', '€', datos, cats,
-                    'F5', from_rows=False)
-            hechos.append('Alertas!F5 LineChart saldo + umbral')
+            ch = LineChart()
+            ch.style = 12
+            ch.title = 'Saldo final vs umbral de seguridad'
+            ch.y_axis.title = '€'
+            # SÓLO C (saldo) y E (umbral): la D es texto (RT-11/RD-26).
+            ch.add_data(Reference(ws, min_col=3, max_col=3, min_row=5,
+                                  max_row=17), titles_from_data=True)
+            ch.add_data(Reference(ws, min_col=5, max_col=5, min_row=5,
+                                  max_row=17), titles_from_data=True)
+            ch.set_categories(Reference(ws, min_col=2, min_row=6, max_row=17))
+            ch.width, ch.height = 18, 9
+            ws.add_chart(ch, 'B20')
+            hechos.append('Alertas!B20 LineChart saldo + umbral (sin la '
+                          'columna de texto)')
 
     elif fname == '04-presupuesto-inversion-capex.xlsx':
         ws = wb['Resumen'] if 'Resumen' in wb.sheetnames else None
-        if ws is None or not _hay_datos(ws, 'B5'):
-            pendientes.append('Resumen!B5 vacía')
+        if ws is None or not _es_formula(ws, 'E5'):
+            pendientes.append('Resumen!E5 (columna Real del mapa nuevo): la '
+                              'crea grupo_b')
         else:
             _limpiar(ws)
-            datos = Reference(ws, min_col=2, max_col=3, min_row=4, max_row=9)
-            cats = Reference(ws, min_col=1, min_row=5, max_row=9)
-            _barras(ws, 'Presupuesto vs real por categoría', '€', datos, cats,
-                    'F4', from_rows=False)
-            hechos.append('Resumen!F4 BarChart presupuesto vs real')
+            ch = BarChart()
+            ch.type = 'col'
+            ch.style = 10
+            ch.title = 'Presupuesto (base) vs real por categoría'
+            ch.y_axis.title = '€'
+            ch.add_data(Reference(ws, min_col=2, max_col=2, min_row=4,
+                                  max_row=9), titles_from_data=True)
+            ch.add_data(Reference(ws, min_col=5, max_col=5, min_row=4,
+                                  max_row=9), titles_from_data=True)
+            ch.set_categories(Reference(ws, min_col=1, min_row=5, max_row=9))
+            ch.width, ch.height = 18, 9
+            ws.add_chart(ch, 'A18')
+            hechos.append('Resumen!A18 BarChart presupuesto vs real')
 
     elif fname == '05-pyl-mensual-real-vs-presupuesto.xlsx':
         ws = wb['Resumen Anual'] if 'Resumen Anual' in wb.sheetnames else None
         if ws is None:
             pendientes.append("'Resumen Anual' no existe")
+        elif not _es_formula(ws, 'B5'):
+            pendientes.append("'Resumen Anual'!B5 no consolida todavía: es de "
+                              'grupo_a')
         else:
             _limpiar(ws)
             datos = Reference(ws, min_col=1, max_col=13, min_row=5, max_row=6)
             cats = Reference(ws, min_col=2, max_col=13, min_row=4)
-            _barras(ws, 'Previsto vs real por mes', '€', datos, cats, 'A18')
-            hechos.append("'Resumen Anual'!A18 BarChart previsto vs real")
+            _barras(ws, 'Ingresos previstos vs reales por mes', '€', datos,
+                    cats, 'A27')
+            hechos.append("'Resumen Anual'!A27 BarChart previsto vs real")
 
     elif fname == '06-dashboard-ratios-financieros.xlsx':
         ws = wb['Ratios'] if 'Ratios' in wb.sheetnames else None
         bm = wb['Benchmarks'] if 'Benchmarks' in wb.sheetnames else None
         numerico = bm is not None and isinstance(
             bm['F4'].value, (int, float))
-        if ws is None or not numerico:
-            pendientes.append('Benchmarks!F:G (columnas numéricas «óptimo '
-                              'hasta»/«peligro desde») las crea grupo_c')
+        if ws is None or not numerico or not _es_formula(ws, 'F17'):
+            pendientes.append('Benchmarks!F:G (columnas numéricas «óptimo»/'
+                              '«límite») y Ratios!F17: las crea grupo_c')
         else:
             _limpiar(ws)
-            datos = Reference(ws, min_col=3, max_col=3, min_row=16, max_row=20)
-            cats = Reference(ws, min_col=2, min_row=17, max_row=20)
-            _barras(ws, 'Tu valor vs objetivo del sector', '%', datos, cats,
-                    'G16', from_rows=False)
-            hechos.append('Ratios!G16 BarChart tu valor vs objetivo')
+            ch = BarChart()
+            ch.type = 'col'
+            ch.style = 10
+            ch.title = 'Tu valor vs objetivo del sector'
+            ch.y_axis.title = '%'
+            ch.add_data(Reference(ws, min_col=3, max_col=3, min_row=16,
+                                  max_row=20), titles_from_data=True)
+            ch.add_data(Reference(ws, min_col=6, max_col=6, min_row=16,
+                                  max_row=20), titles_from_data=True)
+            ch.set_categories(Reference(ws, min_col=2, min_row=17, max_row=20))
+            ch.width, ch.height = 18, 9
+            ws.add_chart(ch, 'A42')
+            hechos.append('Ratios!A42 BarChart tu valor vs objetivo')
 
     elif fname == '07-informe-viabilidad-bancos.xlsx':
         ws = wb['Proyecciones'] if 'Proyecciones' in wb.sheetnames else None
         if ws is None:
             pendientes.append('Proyecciones no existe')
+        elif not _es_formula(ws, 'B11') or not _es_formula(ws, 'B18'):
+            pendientes.append('Proyecciones!B11 (EBITDA) y B18 (cash flow) '
+                              'siguen siendo constantes: son de grupo_c')
         else:
             _limpiar(ws)
             ch = LineChart()
             ch.style = 12
             ch.title = 'EBITDA y cash flow operativo (años 1-5)'
             ch.y_axis.title = '€'
-            ch.add_data(Reference(ws, min_col=1, max_col=6, min_row=9,
-                                  max_row=9), titles_from_data=True,
+            ch.add_data(Reference(ws, min_col=1, max_col=6, min_row=11,
+                                  max_row=11), titles_from_data=True,
                         from_rows=True)
-            ch.add_data(Reference(ws, min_col=1, max_col=6, min_row=16,
-                                  max_row=16), titles_from_data=True,
+            ch.add_data(Reference(ws, min_col=1, max_col=6, min_row=18,
+                                  max_row=18), titles_from_data=True,
                         from_rows=True)
             ch.set_categories(Reference(ws, min_col=2, max_col=6, min_row=3))
             ch.width, ch.height = 18, 9
-            ws.add_chart(ch, 'H3')
-            hechos.append('Proyecciones!H3 LineChart EBITDA + cash flow')
+            ws.add_chart(ch, 'A34')
+            hechos.append('Proyecciones!A34 LineChart EBITDA + cash flow')
 
     elif fname == 'BONUS-08-simulador-escenarios.xlsx':
         ws = wb['Comparativa'] if 'Comparativa' in wb.sheetnames else None
@@ -1334,8 +1395,8 @@ def graficos(wb, fname, informe):
             _limpiar(ws)
             datos = Reference(ws, min_col=2, max_col=5, min_row=7, max_row=7)
             cats = Reference(ws, min_col=3, max_col=5, min_row=3)
-            _barras(ws, 'EBITDA anual por escenario', '€', datos, cats, 'B10')
-            hechos.append('Comparativa!B10 BarChart EBITDA por escenario')
+            _barras(ws, 'EBITDA anual por escenario', '€', datos, cats, 'B11')
+            hechos.append('Comparativa!B11 BarChart EBITDA por escenario')
 
     for h in hechos:
         informe.append(fname + ': gráfico ' + h)
@@ -1348,51 +1409,68 @@ def graficos(wb, fname, informe):
 # §1.2 — semáforos que el motor puede poner ya (los rangos que hoy existen)
 # ==========================================================================
 def semaforos(wb, fname, informe):
-    """Formato condicional sobre los rangos de estado que YA existen.
+    """Formato condicional sobre los rangos de estado.
 
-    Los que dependen de columnas que crean los grupos (`07!Ratios!E4:E10`,
-    `BONUS-09!F5:F64`) se intentan igual pero sólo si la celda ancla existe:
-    una regla sobre un rango vacío no rompe nada, pero tampoco demuestra nada,
-    y el gate cuenta reglas, no intenciones.
+    RT-17: cada regla se condiciona a que su rango tenga al menos una celda con
+    contenido. Antes se escribían igual sobre rangos SIN una sola celda
+    —`07!Ratios!E4:E10` en una hoja que terminaba en la columna D— y el gate
+    contaba reglas, no efectos: 3 reglas que no podían encenderse jamás
+    figuraban como trabajo hecho.
     """
-    puestos = []
+    puestos, pendientes = [], []
+
+    def _poner(ws, rango, vocab, etiqueta):
+        if semaforo(ws, rango, vocab):
+            puestos.append(etiqueta)
+            return True
+        pendientes.append(etiqueta + ' (rango sin celdas: no se escribe)')
+        return False
+
     if fname == FICHERO_CAJA and 'Alertas' in wb.sheetnames:
         ws = wb['Alertas']
-        semaforo(ws, 'D6:D17', SEM_TESORERIA)
+        _poner(ws, 'D6:D17', SEM_TESORERIA, 'Alertas!D6:D17')
         # §1.2: además de la palabra, el saldo bajo umbral se pinta él mismo.
-        regla_expresion(ws, 'C6:C17', '=$C6<$C$3')
+        # El `<>"—"` evita que se pinte de rojo un mes SIN DATOS (RD-25): el
+        # fichero salía con once meses en «BAJO MÍNIMO» ya cacheados.
+        regla_expresion(ws, 'C6:C17', '=AND($C6<$C$3,$D6<>"—")')
         # Serie de umbral del gráfico (§1.1): columna E = el umbral repetido.
         for r in range(6, 18):
             f(ws, 'E' + str(r), '=$C$3', FMT_EUR)
         ws['E5'] = 'Umbral'
         ws['E5']._style = copy.copy(ws['D5']._style)
-        puestos.append('Alertas!D6:D17 + C6:C17 + serie de umbral E6:E17')
+        puestos.append('Alertas!C6:C17 (expresión) + serie de umbral E6:E17')
 
     if fname == '05-pyl-mensual-real-vs-presupuesto.xlsx':
         for mes in ('Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago',
                     'Sep', 'Oct', 'Nov', 'Dic'):
             if mes in wb.sheetnames:
-                semaforo(wb[mes], 'F6:F27', SEM_DESVIACION)
-        puestos.append('12 pestañas mensuales: F6:F27')
+                _poner(wb[mes], 'F6:F30', SEM_DESVIACION, mes + '!F6:F30')
 
     if fname == '06-dashboard-ratios-financieros.xlsx' \
             and 'Ratios' in wb.sheetnames:
-        ws = wb['Ratios']
-        semaforo(ws, 'E17:E25', SEM_RATIO + SEM_GOP)
-        puestos.append('Ratios!E17:E25')
+        _poner(wb['Ratios'], 'E17:E25', SEM_RATIO + SEM_GOP, 'Ratios!E17:E25')
 
     if fname == '07-informe-viabilidad-bancos.xlsx' \
             and 'Ratios' in wb.sheetnames:
-        semaforo(wb['Ratios'], 'E4:E10', SEM_BANCO)
-        puestos.append('Ratios!E4:E10 (la columna Estado la llena grupo_c)')
+        ws = wb['Ratios']
+        _poner(ws, 'E4:E10', SEM_BANCO, 'Ratios!E4:E10')
+        # RT-18: §1.2 pedía regla de EXPRESIÓN «para el DSCR», que es el número
+        # que decide la operación bancaria, y sólo había tres containsText.
+        if isinstance(ws['G5'].value, (int, float)):
+            regla_expresion(ws, 'C5:C5', '=$C$5<$G$5')
+            puestos.append('Ratios!C5 (expresión contra el 1,25x del DSCR)')
+        else:
+            pendientes.append('Ratios!C5: el umbral numérico G5 lo crea '
+                              'grupo_c')
 
     if fname == 'BONUS-09-checklist-pre-apertura.xlsx' \
             and 'Checklist' in wb.sheetnames:
-        semaforo(wb['Checklist'], 'F5:F64', SEM_ESTADO)
-        puestos.append('Checklist!F5:F64 por estado')
+        _poner(wb['Checklist'], 'F5:F64', SEM_ESTADO, 'Checklist!F5:F64')
 
     for p in puestos:
         informe.append(fname + ': formato condicional ' + p)
+    for p in pendientes:
+        informe.append(fname + ': formato condicional PENDIENTE — ' + p)
     return puestos
 
 
@@ -1661,8 +1739,13 @@ def inyectar_valor(path, hoja, coord, valor):
     return True
 
 
-CELDA_IRR = ('Proyecciones', 'B21')
-RANGO_FLUJOS = ('Proyecciones', 'B19', 'F19')
+# §4 reordena el 07: el P&L crece con «Coste de bebida» y «Comisiones de
+# plataformas» (RD-13/RD-14) y el bloque de flujos gana la columna del AÑO 0,
+# que antes no existía —`NPV(0.08,C19:F19)+B19` sólo tomaba cuatro años de
+# cinco—. De ahí las direcciones nuevas.
+CELDA_IRR = ('Proyecciones', 'B24')
+RANGO_FLUJOS = ('Proyecciones', 'B22', 'G22')
+CELDA_TASA = 'C27'
 
 
 def cachear_irr(path, informe=None):
@@ -1697,14 +1780,26 @@ def cachear_irr(path, informe=None):
     wbf = openpyxl.load_workbook(path)
     if hoja_irr in wbf.sheetnames:
         # la tasa de descuento del VAN vive en celda desde la v2.0 (C25)
-        celda_tasa = wbf[hoja_irr]['C25'].value
+        celda_tasa = wbf[hoja_irr][CELDA_TASA].value
         if isinstance(celda_tasa, (int, float)):
             tasa = float(celda_tasa)
     tir = tir_newton(flujos)
     fuera['tir'] = tir
     fuera['van'] = van(tasa if tasa is not None else 0.08, flujos)
     fuera['payback'] = payback(flujos)
-    valor = tir if tir is not None else '—'
+    # RT-13: el literal alterno se LEE de la propia fórmula. Antes se inyectaba
+    # un «—» fijo mientras la celda decía `IFERROR(IRR(...),"N/A")`: quien
+    # abriera el fichero sin recalcular (Vista previa de macOS, Google Sheets,
+    # un conversor a PDF) leía «—» y quien recalculara en Excel leía «N/A».
+    alterna = '—'
+    if hoja_irr in wbf.sheetnames:
+        formula = wbf[hoja_irr][coord_irr].value
+        if isinstance(formula, str):
+            m = re.search(r',\s*"([^"]*)"\s*\)\s*$', formula)
+            if m:
+                alterna = m.group(1)
+    fuera['alterna_de_la_formula'] = alterna
+    valor = tir if tir is not None else alterna
     if tir is None:
         fuera['motivo'] = ('sin cambio de signo en los flujos: la TIR no '
                            'existe (el libro se entrega con el ejemplo a 0)')
@@ -1750,7 +1845,7 @@ def cerrar(wb, fname, informe, proteger_hojas=True):
             if proteger_hojas:
                 proteger(ws, informe)
             continue
-        validaciones(ws, informe)
+        validaciones(ws, informe, fname)
         print_setup(ws)
         if proteger_hojas:
             proteger(ws, informe)

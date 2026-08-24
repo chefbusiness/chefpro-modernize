@@ -222,10 +222,15 @@ def procesar(carpeta, fname, grupos, informe_global):
     registro = list(motor.REGISTRO)
     registro += [(h, c, fm) for h, c, fm in registro_grupo
                  if isinstance(fm, str) and fm.startswith('=')]
+    # RT-16: el informe recortaba los literales a 12 POR FICHERO. En el 05
+    # había 12 por pestaña × 12 pestañas y el JSON sólo enseñaba los de «Ene»:
+    # quien lo leyera creería que el problema estaba acotado. Se guarda el
+    # total y una muestra amplia, y el total entra en el veredicto.
     informe_global.append({'fichero': fname, 'cambios': cambios,
                            'formulas_nuevas': len(registro),
                            'graficos': graficos,
-                           'literales_sospechosos': literales[:12],
+                           'literales_sospechosos_total': len(literales),
+                           'literales_sospechosos': literales[:60],
                            'contadores': cuenta})
     return registro
 
@@ -256,9 +261,17 @@ def inject_cache(carpeta, nombres):
 
 
 def verificar_cache(carpeta, registros):
-    """Cada fórmula NUEVA debe tener valor cacheado, salvo las que devuelven
-    `""` por diseño y la `IRR`, que la cachea `motor.cachear_irr()`."""
+    """Cada fórmula NUEVA debe tener valor cacheado.
+
+    RT-15: la versión anterior daba por buena cualquier celda vacía cuya
+    fórmula contuviera la subcadena `""`, mirara donde mirase. Una
+    `=IFERROR($B7/$B5,"")` que DEBÍA devolver un número y salía `None` por un
+    fallo de pycel se contaba como éxito — y ese patrón es justo el de las
+    consolidaciones del §2. Ahora las candidatas se EVALÚAN con pycel: si la
+    rama que gana no es la alterna vacía, es un fallo de caché de verdad.
+    """
     fallos, vacias, ok, irr = [], 0, 0, 0
+    sospechosas, no_verificadas = {}, []
     for fname, registro in registros.items():
         path = os.path.join(carpeta, fname)
         wbv = openpyxl.load_workbook(path, data_only=True)
@@ -269,24 +282,53 @@ def verificar_cache(carpeta, registros):
                 continue
             v = wbv[hoja][coord].value
             if v is None:
-                if '""' in formula:
-                    vacias += 1
-                elif 'IRR(' in formula.upper():
+                if 'IRR(' in formula.upper():
                     irr += 1
+                elif '""' in formula:
+                    vacias += 1
+                    sospechosas.setdefault(fname, []).append((hoja, coord,
+                                                              formula))
                 else:
                     fallos.append(fname + ':' + hoja + '!' + coord
                                   + ': sin cache (' + formula[:60] + ')')
             else:
                 ok += 1
+
+    comprobadas = 0
+    for fname, celdas in sospechosas.items():
+        path = os.path.join(carpeta, fname)
+        try:
+            xl = _pycel(path)
+        except Exception as e:                               # noqa: BLE001
+            no_verificadas.append(fname + ': no se pudo compilar ('
+                                  + type(e).__name__ + ')')
+            continue
+        for hoja, coord, formula in celdas:
+            ref = "'" + hoja + "'!" + coord
+            valor = _ev(xl, ref)
+            comprobadas += 1
+            if isinstance(valor, str) and valor.startswith('ERR:'):
+                no_verificadas.append(fname + ':' + ref + ': ' + valor)
+            elif valor not in ('', None):
+                fallos.append(
+                    fname + ':' + ref + ': la fórmula devuelve ' + repr(valor)
+                    + ' pero se entregó SIN caché (' + formula[:60] + ')')
+
     return {'con_valor': ok, 'vacias_por_diseno': vacias,
+            'vacias_comprobadas_con_pycel': comprobadas,
+            'vacias_no_verificadas': no_verificadas,
             'irr_cacheada_aparte': irr, 'fallos': fallos}
 
 
-def gate_graficos(carpeta, grupos_cargados, informe_ficheros):
+def gate_graficos(carpeta, grupos_cargados, informe_ficheros,
+                  grupos_pedidos=()):
     """§5: `len(ws._charts) >= 1` en los 9, contado tras el post-proceso.
 
-    Un gráfico pendiente cuyo grupo NO se ha cargado no es un fallo: es la
-    consecuencia esperada de correr `--solo motor`.
+    RT-19/RD-28: la tolerancia sólo vale mientras se corre `--solo motor`. Si
+    el grupo se PIDIÓ —da igual que se haya podido importar o no— un gráfico
+    que falta es un fallo. Antes el gate se auto-exoneraba de lo que faltaba y
+    cerraba en «TODO VERDE» con dos ficheros sin gráfico: exactamente el
+    mecanismo que dejó pasar la v1.1.
     """
     detalle, fallos, pendientes = [], [], []
     for fname in CON_GRAFICO:
@@ -304,6 +346,9 @@ def gate_graficos(carpeta, grupos_cargados, informe_ficheros):
         if grupo in grupos_cargados:
             fallos.append(fname + ': 0 gráficos con grupo_' + str(grupo)
                           + ' cargado')
+        elif grupo in grupos_pedidos:
+            fallos.append(fname + ': 0 gráficos y grupo_' + str(grupo)
+                          + ' se pidió pero no se pudo cargar')
         else:
             pendientes.append(fname + ': sin gráfico — lo desbloquea grupo_'
                               + str(grupo))
@@ -476,21 +521,29 @@ def demo_semaforo(carpeta):
     xl = _pycel(copia)
     base = _ev(xl, "'Ratios'!E17")
     ventas = _ev(xl, "'Ratios'!C6")
-    xl.set_value("'Ratios'!C7", float(ventas) * 0.45)      # food cost 45 %
+    # Mapa v2.0: el coste de comida es CONSUMO (Ei + compras − Ef), así que se
+    # mueve la compra, no el resultado; y la barra a 0 para que el food cost se
+    # mida sobre el total.
+    _ev(xl, "'Ratios'!C8")
+    xl.set_value("'Ratios'!C7", 0)
+    xl.set_value("'Ratios'!C33", 0)
+    xl.set_value("'Ratios'!C35", 0)
+    xl.set_value("'Ratios'!C34", float(ventas) * 0.45)     # food cost 45 %
     alto = _ev(xl, "'Ratios'!E17")
     return {'fichero': fname, 'reglas_cf_en_E17_E25': reglas,
             'estado_base': base, 'estado_con_food_cost_45pct': alto,
-            'cambia': base != alto}
+            'cambia': base != alto,
+            'ok': base != alto and reglas > 0}
 
 
 def demo_saldo_03(carpeta):
     """DOM-01/TEC-01: el saldo inicial de cada mes tiene que ser el saldo FINAL
-    del anterior. Caso trazado: saldo 15.000, cobros 40.000, pagos 35.000 en
-    enero → febrero abre en 20.000.
+    del anterior — y no la fila «Otros pagos», que es lo que leía la v1.1.
 
-    Mientras grupo_b no reescriba el 03, esto DOCUMENTA el fallo vivo (C5 lee
-    la fila de «Otros pagos», no la del saldo final): once meses de tesorería
-    erróneos ya cacheados en el fichero que se descarga.
+    La prueba se hace SIN depender del mapa de filas: se localiza la fila
+    «SALDO FINAL», se comprueba que `C5` la referencia y se mueve el saldo
+    inicial de enero para ver que febrero abre donde cerró enero. Así sigue
+    valiendo aunque §3 renumere la hoja (que la renumera).
     """
     fname = '03-cash-flow-forecast.xlsx'
     path = os.path.join(carpeta, fname)
@@ -510,17 +563,11 @@ def demo_saldo_03(carpeta):
                    == '=B' + str(fila_saldo))
     xl = _pycel(copia)
     # pycel sólo deja escribir en una celda que ya esté en su mapa: hay que
-    # EVALUAR antes lo que la referencia (aquí, la apertura de febrero y el
-    # saldo final de enero), o revienta con «not found in the cell map».
+    # EVALUAR antes lo que la referencia, o revienta con «not found in the
+    # cell map».
     _ev(xl, "'Flujo Mensual'!C5")
     _ev(xl, "'Flujo Mensual'!B" + str(fila_saldo or 25))
-    xl.set_value("'Flujo Mensual'!B5", 15000)
-    xl.set_value("'Flujo Mensual'!B7", 40000)
-    for col in ('B8', 'B9', 'B10', 'B11'):
-        xl.set_value("'Flujo Mensual'!" + col, 0)
-    xl.set_value("'Flujo Mensual'!B14", 35000)
-    for col in ('B15', 'B16', 'B17', 'B18', 'B19', 'B20', 'B21', 'B22'):
-        xl.set_value("'Flujo Mensual'!" + col, 0)
+    xl.set_value("'Flujo Mensual'!B5", 18000)
     saldo_ene = _ev(xl, "'Flujo Mensual'!B" + str(fila_saldo or 25))
     apertura_feb = _ev(xl, "'Flujo Mensual'!C5")
     return {
@@ -528,10 +575,11 @@ def demo_saldo_03(carpeta):
         'formula_C5': formula_c5,
         'fila_SALDO_FINAL': fila_saldo,
         'C5_apunta_al_saldo_final': apunta_bien,
-        'saldo_final_enero': saldo_ene,
+        'saldo_final_enero_con_18000_de_apertura': saldo_ene,
         'apertura_febrero': apertura_feb,
-        'esperado': 20000,
-        'ok': apunta_bien and apertura_feb == saldo_ene,
+        'esperado': 18000,
+        'ok': (apunta_bien and apertura_feb == saldo_ene
+               and apertura_feb == 18000),
         'nota': ('si `ok` es False y grupo_b no está cargado, esto es el bug '
                  'DOM-01 vivo, no un fallo del motor'),
     }
@@ -637,8 +685,9 @@ def main():
         shutil.copytree(ORIGEN, respaldo)
         log('  respaldo previo de los entregables: ' + respaldo)
 
-    grupos, cargados = [], []
+    grupos, cargados, ausentes = [], [], []
     pedidos = [g.strip().lower() for g in args.solo.split(',') if g.strip()]
+    solo_motor = all(l in ('motor', 'ninguno', 'none', '') for l in pedidos)
     for letra in pedidos:
         if letra in ('motor', 'ninguno', 'none', ''):
             continue
@@ -646,8 +695,14 @@ def main():
             grupos.append(importlib.import_module('grupo_' + letra))
             cargados.append(letra)
             log('  grupo_' + letra + ' cargado')
-        except ImportError:
-            log('  grupo_' + letra + ' no existe todavía — se omite')
+        except ImportError as e:                             # noqa: BLE001
+            # RD-01/RT-01: la v2.0 anterior imprimía «se omite» y seguía hasta
+            # «TODO VERDE», de modo que un paquete a medio construir se
+            # declaraba terminado. Un grupo PEDIDO que no carga es rojo.
+            ausentes.append('grupo_' + letra + ' se pidió y NO se pudo cargar '
+                            '(' + str(e) + '): las secciones que le tocan '
+                            'quedan SIN aplicar')
+            log('  ERROR grupo_' + letra + ' no se pudo cargar: ' + str(e))
 
     nombres = ficheros_a_tocar(grupos)
     informe_ficheros, registros = [], {}
@@ -701,7 +756,8 @@ def main():
         log('    ' + fl)
 
     log('\n== 6/8 · gate de gráficos (tras el post-proceso e inject_cache) ==')
-    gra = gate_graficos(carpeta, cargados, informe_ficheros)
+    gra = gate_graficos(carpeta, cargados, informe_ficheros,
+                        grupos_pedidos=pedidos)
     for d in gra['detalle']:
         log('  ' + d['fichero'] + ': ' + str(d['charts']) + ' gráfico(s) '
             + str(d['hojas']))
@@ -741,6 +797,7 @@ def main():
             propias = g.demos(carpeta, ORIGEN, DEMOS)
             fallos += propias.pop('fallos', [])
             demos.update(propias)
+    fallos += ausentes
     if idem.get('diferencias'):
         fallos.append('idempotencia: ' + str(idem['diferencias'])
                       + ' diferencias')
@@ -750,6 +807,43 @@ def main():
     fallos += gra['fallos']
     if cen['exit'] != 0:
         fallos.append('censo-entregables --fail devolvió ' + str(cen['exit']))
+
+    # ---- RT-02: el gate imprimía TODO VERDE con defectos que él mismo había
+    # medido. Un gate que no gatea es peor que no tener gate, porque el
+    # orquestador lee VERDE. Todo esto entra ahora en el veredicto.
+    for nombre, salida, rc in cache:
+        if rc != 0:
+            fallos.append('inject_cache falló en ' + nombre + ' (exit '
+                          + str(rc) + ')')
+    literales_total = sum(fi.get('literales_sospechosos_total', 0)
+                          for fi in informe_ficheros)
+    if literales_total:
+        muestra = []
+        for fi in informe_ficheros:
+            for lit in fi.get('literales_sospechosos', [])[:3]:
+                muestra.append(lit['hoja'] + '!' + lit['celda'] + '='
+                               + lit['literal'])
+        fallos.append('§1.3: ' + str(literales_total) + ' literales dentro de '
+                      'fórmulas que deberían ser parámetro en celda ('
+                      + ', '.join(muestra[:8]) + ')')
+    if irr is not None and not irr.get('inyectada'):
+        fallos.append('la TIR de 07!' + '!'.join(motor.CELDA_IRR)
+                      + ' NO quedó cacheada: se entregaría en blanco en Vista '
+                        'previa y en Google Sheets')
+    if demos:
+        saldo = demos.get('saldo_encadenado_03') or {}
+        if saldo and not saldo.get('ok'):
+            fallos.append('03: el saldo inicial de febrero NO encadena con el '
+                          'saldo final de enero (' + str(saldo.get('formula_C5'))
+                          + ')')
+        sem = demos.get('semaforo_06') or {}
+        if sem and not sem.get('ok'):
+            fallos.append('06: el semáforo no cambia con un food cost del '
+                          '45 % o su rango no tiene reglas de color')
+        ife = demos.get('iferror_02') or {}
+        if ife and not ife.get('ok'):
+            fallos.append('02: las guardas de Break-Even no sustituyen el '
+                          '#¡DIV/0! por un texto de ayuda')
     if demos:
         fallos += demos.get('proteccion', {}).get('fallos', [])
         fallos += demos.get('bio_y_version', {}).get('fallos', [])
@@ -775,6 +869,11 @@ def main():
         'carpeta_trabajo': carpeta,
         'grupos_pedidos': pedidos,
         'grupos_cargados': cargados,
+        'grupos_ausentes': ausentes,
+        'solo_motor': solo_motor,
+        'literales_sospechosos_total': sum(
+            fi.get('literales_sospechosos_total', 0)
+            for fi in informe_ficheros),
         'ficheros': informe_ficheros,
         'gates': {
             'idempotencia': idem,
