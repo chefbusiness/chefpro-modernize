@@ -755,7 +755,16 @@ def main():
     #: motor` NO se pidió ninguno: la pasada es parcial DECLARADA y los gates
     #: que miden trabajo de grupo informan en vez de suspender.
     completo = set(pedidos) >= {'a', 'b', 'c'} and not ausentes
-    parcial_declarada = not set(pedidos) & {'a', 'b', 'c'}
+    #: …y es DECLARADA mientras todos los grupos que se pidieron EXISTAN.
+    #: `--solo motor` (ninguno) y `--solo motor,grupo_b` (uno) son las dos
+    #: formas legítimas de construir por partes, que es como se reparte el
+    #: trabajo entre los tres constructores. Lo que sigue siendo FALLO —y es
+    #: el RD-29/RC-11 que este `main` protege— es pedir un grupo y que su
+    #: módulo NO exista: ahí la pasada dice haber construido algo que no
+    #: construyó. Antes se miraba `pedidos`, así que `--solo motor,grupo_b`
+    #: con `grupo_b.py` presente se declaraba «parcial con grupos ausentes» y
+    #: suspendía con exit 1 sin que faltara nada.
+    parcial_declarada = not ausentes
 
     nombres = ficheros_a_tocar(grupos)
     informe_ficheros, registros, gates_fichero = [], {}, {}

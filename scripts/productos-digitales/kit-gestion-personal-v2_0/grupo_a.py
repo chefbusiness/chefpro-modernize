@@ -43,7 +43,6 @@ diferencia no se ve en el contenido pero sí en el fichero.
 Python 3.7 / openpyxl 3.1.3: sin walrus ni f-strings de depuración.
 """
 import copy
-import datetime
 import os
 import re
 import sys
@@ -232,8 +231,55 @@ def _nota_parametro(ws, fila, clave, col_rotulo=1, col_valor=2, alto=None):
     return coord
 
 
-def _instr(ws, texto, patron):
-    return motor.linea_instrucciones(ws, texto, re.compile(patron))
+def _instrucciones(ws, lineas):
+    """Reescribe el CUERPO de `Instrucciones` entero y de forma determinista.
+
+    `motor.linea_instrucciones` sustituye la línea que case con un patrón y, si
+    no casa ninguna, la AÑADE en `max_row + 2`. Eso no es idempotente en este
+    kit: el bloque de bio y versión de `motor.bio_y_version` se ancla en la
+    línea de versión —que en la v1.1 es la ÚLTIMA— y pisa lo que se haya
+    añadido debajo. Medido el 2026-08-24: la 1.ª pasada perdía una línea de
+    cada fichero y la 2.ª la volvía a escribir dos filas más abajo → 6
+    diferencias de idempotencia, una por línea nueva y otra por el `print_area`
+    que crecía con ella.
+
+    Reescribiendo el cuerpo entero no hay líneas «añadidas»: hay una lista. Las
+    tres últimas son las del motor (nota de desprotección, bio y versión), que
+    `bio_y_version` reconoce por su literal y reescribe EN SU SITIO.
+    """
+    col = motor.col_instrucciones(ws)
+    estilos = {}
+    for r in range(4, min(ws.max_row, 30) + 1):
+        v = ws.cell(row=r, column=col).value
+        if not isinstance(v, str):
+            continue
+        clave = 'texto' if v.startswith('▸') else 'titulo'
+        if clave not in estilos:
+            estilos[clave] = copy.copy(ws.cell(row=r, column=col)._style)
+    for r in range(3, ws.max_row + 1):
+        ws.cell(row=r, column=col).value = None
+    fila = 4
+    for texto in list(lineas) + [None, motor.NOTA_DESPROTEGER, motor.BIO,
+                                 motor.VERSION_LINE]:
+        if texto is None:
+            fila += 1
+            continue
+        cel = ws.cell(row=fila, column=col)
+        cel.value = texto
+        est = estilos.get('texto' if texto.startswith('▸') else 'titulo')
+        if est is not None:
+            cel._style = copy.copy(est)
+        cel.alignment = Alignment(wrap_text=True, vertical='top')
+        fila += 1
+    return fila - 1
+
+
+#: Las dos líneas que `motor.escribir_leyenda` reescribe en el 01 (§1.1). Se
+#: toman del motor —no se copian— para que el cuerpo que escribe este módulo
+#: contenga ya su literal exacto: si no estuvieran, `linea_instrucciones` las
+#: añadiría DESPUÉS del bloque de bio y versión.
+def _lineas_leyenda(fname):
+    return [t for f, _rx, t in motor.LINEAS_LEYENDA if f == fname]
 
 
 # ==========================================================================
@@ -321,14 +367,43 @@ def _hoja_turnos(wb, cambios):
 # 01 — cuadrante semanal: bloque auxiliar + las 4 alertas
 # ==========================================================================
 def _aux_formulas(fila):
-    """Las 27 fórmulas del bloque auxiliar de una fila (§2)."""
+    """Las 27 fórmulas del bloque auxiliar de una fila (§2).
+
+    ⚠ TODAS devuelven la cadena vacía cuando el día no tiene turno, y las
+    alertas que las leen neutralizan ese vacío con `IF(x="",neutro,x)` en vez
+    de comparar contra él. No es estilo: es lo único que hace MEDIBLE la
+    batería §5 de `main.py`, y se descubrió midiendo, el 2026-08-24:
+
+      · **pycel devuelve el valor CACHEADO de una celda de fórmula si el libro
+        lo trae**, y `main.py` corre `inject_cache` (paso 3) ANTES de las
+        demostraciones (paso 7). Con el auxiliar devolviendo `0`/`24` en la
+        hoja vacía, `inject_cache` graba esos ceros y `demo_descanso` —que
+        planifica `B6='T'`, `C6='M'` y lee `K6`— seguía leyendo el 24 cacheado:
+        el gate daba «sin alerta» con la alerta perfectamente escrita. Medido:
+        con cache, `P6` vale 0,0 con `B6='M'`; sobre el MISMO libro re-guardado
+        sin cache, vale 8.
+      · Como la cadena vacía no se cachea (`inject_cache` la salta), la cadena
+        `B6 → P6 → AK6 → K6` queda entera sin cache y pycel la recalcula. El
+        efecto secundario es además el que pide §1.5: la hoja recién descargada
+        enseña las columnas auxiliares y el total EN BLANCO, no una pared de
+        ceros.
+      · Y el mismo motivo obliga a que ninguna alerta lea un RANGO de celdas de
+        fórmula: pycel tampoco propaga `set_value` a través de un nodo rango
+        (`K6=IF(COUNTIF($AK6:$AP6,…))` nunca recalculaba). Por eso las seis
+        transiciones se comparan una a una.
+
+    Ojo con el 0: un día marcado L, V o B SÍ tiene horas (0), así que la
+    transición tiene que excluirlo explícitamente o un día libre seguido de una
+    mañana daría «7 h de descanso» y una alerta falsa.
+    """
     fuera = []
     for j in range(7):
         dia = get_column_letter(2 + j)
         for base, col_tabla in ((AUX_HORAS, 5), (AUX_INI, 3), (AUX_FIN, 4)):
             coord = '{}{}'.format(get_column_letter(base + j), fila)
             fuera.append((coord,
-                          '=IFERROR(VLOOKUP(${d}{f},{t},{c},FALSE),0)'
+                          '=IF(${d}{f}="","",'
+                          'IFERROR(VLOOKUP(${d}{f},{t},{c},FALSE),0))'
                           .format(d=dia, f=fila, t=TURNOS_TABLA, c=col_tabla)))
     for j in range(6):
         h1 = get_column_letter(AUX_HORAS + j)
@@ -338,8 +413,8 @@ def _aux_formulas(fila):
         fin1 = get_column_letter(AUX_FIN + j)
         coord = '{}{}'.format(get_column_letter(AUX_TRANS + j), fila)
         fuera.append((coord,
-                      '=IF(OR(${h1}{f}=0,${h2}{f}=0),"",'
-                      'IF(${fin1}{f}<=${ini1}{f},${ini2}{f}-${fin1}{f},'
+                      '=IF(OR(${h1}{f}="",${h2}{f}="",${h1}{f}=0,${h2}{f}=0),'
+                      '"",IF(${fin1}{f}<=${ini1}{f},${ini2}{f}-${fin1}{f},'
                       '24-${fin1}{f}+${ini2}{f}))'
                       .format(h1=h1, h2=h2, ini1=ini1, ini2=ini2, fin1=fin1,
                               f=fila)))
@@ -348,30 +423,43 @@ def _aux_formulas(fila):
 
 def _alertas_semanal(fila):
     """Las CUATRO alertas que la landing vende desde el día uno y que el
-    fichero no tenía (COM-01). Cada una cita su artículo."""
-    ak = get_column_letter(AUX_TRANS)
-    ap = get_column_letter(AUX_TRANS + 5)
-    p = get_column_letter(AUX_HORAS)
-    v = get_column_letter(AUX_HORAS + 6)
+    fichero no tenía (COM-01). Cada una cita su artículo.
+
+    Sin guarda de `$A6=""`: no hace falta y estorba. No hace falta porque una
+    fila recién descargada deja el bloque auxiliar en blanco y las cuatro
+    salen vacías por su propia aritmética (§1.5, y así lo mide el gate). Y
+    estorba porque condicionaría la alerta a haber TECLEADO EL NOMBRE: quien
+    planifica reparte turnos antes de escribir nada en la columna A, que es
+    justo cuando la alerta tiene que estar viva — y es lo que hace la batería
+    §5 de `main.py`, que planifica `B6`/`C6` y no toca `A6`.
+    """
+    p = [get_column_letter(AUX_HORAS + j) for j in range(7)]
+    tr = [get_column_letter(AUX_TRANS + j) for j in range(6)]
+    d, m = TURNOS_DESCANSO, TURNOS_JORNADA_MAX
+    dias = '+'.join('IF(${c}{f}="",0,IF(${c}{f}>0,1,0))'.format(c=c, f=fila)
+                    for c in p)
     return [
+        # el total se calla con la fila vacía en vez de enseñar 30 ceros
         ('I{}'.format(fila),
-         '=SUM(${p}{f}:${v}{f})'.format(p=p, v=v, f=fila)),
+         '=IF(COUNT(${a}{f}:${b}{f})=0,"",ROUND(SUM(${a}{f}:${b}{f}),2))'
+         .format(a=p[0], b=p[-1], f=fila)),
+        # «neutro = el propio umbral»: sin encadenamiento, d<d es FALSO sea
+        # cual sea el convenio. Un literal (24, 99) mentiría con un umbral alto.
         ('K{}'.format(fila),
-         '=IF($A{f}="","",IF(COUNTIF(${ak}{f}:${ap}{f},"<"&{d})>0,'
-         '"⛔ <"&{d}&" h",""))'.format(f=fila, ak=ak, ap=ap,
-                                      d=TURNOS_DESCANSO)),
+         '=IF(OR({o}),"⛔ <"&{d}&" h","")'
+         .format(o=','.join('IF(${c}{f}="",{d},${c}{f})<{d}'
+                            .format(c=c, f=fila, d=d) for c in tr), d=d)),
         ('L{}'.format(fila),
-         '=IF($A{f}="","",IF(7-COUNTIF(${p}{f}:${v}{f},">0")=0,"⛔ 0 días",'
-         'IF(7-COUNTIF(${p}{f}:${v}{f},">0")=1,'
-         '"⚠ 1 día (el ET pide 1,5, acumulable en 14 días — art. 37.1)","")))'
-         .format(f=fila, p=p, v=v)),
+         '=IF(7-({c})=0,"⛔ 0 días",IF(7-({c})=1,'
+         '"⚠ 1 día (el ET pide 1,5, acumulable en 14 días — art. 37.1)",""))'
+         .format(c=dias)),
         ('M{}'.format(fila),
-         '=IF($A{f}="","",IF($I{f}>$J{f},"⛔ +"&TEXT($I{f}-$J{f},"0")&" h",""))'
-         .format(f=fila)),
+         '=IF(OR($I{f}="",$J{f}=""),"",IF($I{f}>$J{f},'
+         '"⛔ +"&TEXT($I{f}-$J{f},"0")&" h",""))'.format(f=fila)),
         ('N{}'.format(fila),
-         '=IF($A{f}="","",IF(COUNTIF(${p}{f}:${v}{f},">"&{m})>0,'
-         '"⛔ jornada > "&{m}&" h",""))'.format(f=fila, p=p, v=v,
-                                               m=TURNOS_JORNADA_MAX)),
+         '=IF(OR({o}),"⛔ jornada > "&{m}&" h","")'
+         .format(o=','.join('IF(${c}{f}="",0,${c}{f})>{m}'
+                            .format(c=c, f=fila, m=m) for c in p), m=m)),
     ]
 
 
@@ -592,67 +680,64 @@ def _cuadrante_mensual(wb, cambios, r0_sem):
 
 
 def _instrucciones_01(wb, cambios):
-    ws = wb['Instrucciones']
-    _instr(ws, '▸ Escribe los nombres de tu equipo UNA sola vez, en la '
-               'columna A de esta hoja: el \'Cuadrante Mensual\' los arrastra '
-               'solo y no hay que teclearlos cinco veces.',
-           r'^▸ Introduce los nombres')
-    _instr(ws, '▸ Las horas NO están escritas dentro de la fórmula: salen de '
-               'la hoja \'Turnos\'. Si tu mañana empieza a las 8:00, cámbialo '
-               'allí y se recalcula el kit entero.',
-           r'^▸ Las horas se calculan')
-    _instr(ws, '▸ La hoja \'Cuadrante Mensual\' repite la rejilla cinco '
-               'semanas (los meses de 31 días no caben en cuatro), suma el '
-               'total del mes por empleado y saca la media semanal, que es lo '
-               'que se compara con el contrato cuando distribuyes la jornada '
-               'de forma irregular.',
-           r'^▸ La hoja .Cuadrante Mensual.')
-    _instr(ws, 'Las 4 alertas del cuadrante (columnas K a N):',
-           r'^Alertas autom')
-    _instr(ws, '▸ K · Descanso entre jornadas: compara la hora de FIN de cada '
-               'día con la de INICIO del siguiente, contando el turno que '
-               'cruza la medianoche. Salta por debajo de las 12 h del art. '
-               '34.3 ET (el umbral está en Turnos!B3).',
-           r'^▸ La columna .Alertas.')
-    _instr(ws, '▸ L · Descanso semanal: art. 37.1 ET, día y medio '
-               'ininterrumpido, acumulable en periodos de hasta 14 días. Con '
-               'cero días libres en la semana la alerta es roja.',
-           r'^▸ Recuerda: m.nimo')
-    _instr(ws, '▸ M · Jornada semanal: compara con las horas CONTRATADAS de '
-               'esa persona (columna J, verde, 40 por defecto), no con un 40 '
-               'fijo: a un contrato de 20 h se le disparan las alertas a las '
-               '20, no a las 40.',
-           r'^▸ M · Jornada semanal')
-    _instr(ws, '▸ N · Jornada diaria: art. 34.3 ET, máximo 9 h ordinarias al '
-               'día salvo distribución irregular pactada (umbral en '
-               'Turnos!B2). Es la que caza el turno doble.',
-           r'^▸ M.ximo 9h de jornada')
-    _instr(ws, 'La tabla de turnos vive en la hoja \'Turnos\':',
-           r'^Turnos est')
-    _instr(ws, '▸ Cada código lleva su hora de inicio, su hora de fin y sus '
-               'horas efectivas. Las horas se escriben como número: 7 = 07:00 '
-               'y 15,5 = 15:30.',
-           r'^▸ M = Ma.ana')
-    _instr(ws, '▸ El PARTIDO (P) son 9 h efectivas entre las 10:00 y las '
-               '23:00; el DOBLE (D) son 16 h y existe para que la alerta de '
-               'jornada diaria tenga algo que cazar.',
-           r'^▸ T = Tarde')
-    _instr(ws, '▸ Las columnas P a AP están OCULTAS: son el cálculo auxiliar '
-               '(horas, hora de inicio, hora de fin y las 6 transiciones '
-               'entre jornadas). Muéstralas si quieres auditar una alerta.',
-           r'^▸ N = Noche')
-    _instr(ws, '▸ V (vacaciones) y B (baja) se marcan aquí igual que en el '
-               '05, con las mismas letras, y cuentan 0 h.',
-           r'^▸ P = Partido')
-    _instr(ws, '▸ Una letra que no esté en la tabla cuenta 0 h: por eso las '
-               'celdas de turno llevan desplegable.',
-           r'^▸ L = Libre')
-    cambios.append('{}:Instrucciones: 14 líneas reescritas — las 4 alertas '
+    ley = _lineas_leyenda(F01)
+    lineas = [
+        'Cómo usar esta plantilla:',
+        '▸ Escribe los nombres de tu equipo UNA sola vez, en la columna A de '
+        'esta hoja: el \'Cuadrante Mensual\' los arrastra solo y no hay que '
+        'teclearlos cinco veces.',
+        ley[0] if ley else None,
+        '▸ Las horas NO están escritas dentro de la fórmula: salen de la hoja '
+        '\'Turnos\'. Si tu mañana empieza a las 8:00, cámbialo allí y se '
+        'recalcula el kit entero.',
+        ley[1] if len(ley) > 1 else None,
+        '▸ La hoja \'Cuadrante Mensual\' repite la rejilla cinco semanas '
+        '(los meses de 31 días no caben en cuatro), hereda los nombres del '
+        '\'Cuadrante Semanal\', suma el total del mes por empleado y saca la '
+        'media semanal, que es lo que se compara con el contrato cuando '
+        'distribuyes la jornada de forma irregular.',
+        None,
+        'Las 4 alertas del cuadrante (columnas K a N):',
+        '▸ K · Descanso entre jornadas: compara la hora de FIN de cada día con '
+        'la de INICIO del siguiente, contando el turno que cruza la '
+        'medianoche. Salta por debajo de las 12 h del art. 34.3 ET; el umbral '
+        'es la celda Turnos!B3.',
+        '▸ L · Descanso semanal: art. 37.1 ET, día y medio ininterrumpido, '
+        'acumulable en periodos de hasta 14 días. Con cero días libres en la '
+        'semana la alerta es roja; con uno, ámbar.',
+        '▸ M · Jornada semanal: compara con las horas CONTRATADAS de esa '
+        'persona (columna J, verde, {jor} por defecto), no con un 40 fijo: a '
+        'un contrato de 20 h las alertas le saltan a las 20.',
+        '▸ N · Jornada diaria: art. 34.3 ET, máximo {max} h ordinarias al día '
+        'salvo distribución irregular pactada (umbral en Turnos!B2). Es la que '
+        'caza el turno doble.',
+        None,
+        'La tabla de turnos vive en la hoja \'Turnos\':',
+        '▸ Cada código lleva su hora de inicio, su hora de fin y sus horas '
+        'efectivas. Las horas se escriben como número: 7 = 07:00 y 15,5 = '
+        '15:30.',
+        '▸ El PARTIDO (P) son 9 h efectivas entre las 10:00 y las 23:00; el '
+        'DOBLE (D) son 16 h y existe para que la alerta de jornada diaria '
+        'tenga algo que cazar.',
+        '▸ V (vacaciones) y B (baja) se marcan aquí con las mismas letras que '
+        'en el 05 y cuentan 0 h. El permiso es PE y sólo existe en el 05: en '
+        'este cuadrante la P es el turno Partido.',
+        '▸ Una letra que no esté en la tabla cuenta 0 h: por eso las celdas de '
+        'turno llevan desplegable.',
+        '▸ Las columnas P a AP están OCULTAS: son el cálculo auxiliar (horas, '
+        'hora de inicio, hora de fin y las 6 transiciones entre jornadas). '
+        'Muéstralas si quieres '
+        'auditar una alerta.',
+    ]
+    lineas = [x.format(jor=motor.PARAMETROS['jornada_semanal'][1],
+                       max=motor.PARAMETROS['jornada_diaria_max'][1])
+              if isinstance(x, str) and '{' in x else x for x in lineas]
+    _instrucciones(wb['Instrucciones'], lineas)
+    cambios.append('{}:Instrucciones: cuerpo reescrito — las 4 alertas '
                    'descritas una a una con su artículo, el descanso pasa a '
-                   '12 h (art. 34.3 ET; las de la Directiva 2003/88/CE son '
-                   'otra cosa) y aparecen por fin la hoja \'Turnos\' y el '
-                   '\'Cuadrante Mensual\', hoy no mencionado ni una vez '
-                   '(TEC-23)'.format(F01))
+                   '12 h (art. 34.3 ET) y aparecen por fin la hoja '
+                   '\'Turnos\' y el \'Cuadrante Mensual\', hoy no '
+                   'mencionado ni una vez (TEC-23)'.format(F01))
 
 
 # ==========================================================================
@@ -737,6 +822,15 @@ def _resumen_mensual(ws, cambios, reg0, reg1):
     _nota_parametro(ws, 3, 'recargo_extra', 3, 4)
     _nota_parametro(ws, 3, 'limite_extra_anual', 5, 6, alto=58)
 
+    # ⚠ La columna E era «Coste ×1.75» y traía fórmula en E6:E20. Ahora es la
+    # casilla VERDE del acumulado del año: si no se vacía, la hoja conserva un
+    # coste calculado con el multiplicador que esta versión retira, `aplicar_
+    # verde` la ve «calculada» y no la pinta, y el cliente no puede escribir en
+    # ella. Lo mismo la F, que era «Coste ×2.0».
+    for f in range(r0, r1 + 1):
+        ws.cell(row=f, column=5).value = None
+        ws.cell(row=f, column=5).number_format = motor.FMT_DEC2
+
     _cab(ws, 5, ['Empleado', 'Total H. Extra del mes',
                  'H. extra no computables (art. 35.2)',
                  'H. extra computables', 'H. extra acumuladas en el año',
@@ -750,11 +844,11 @@ def _resumen_mensual(ws, cambios, reg0, reg1):
     n = 0
     for f in range(r0, r1 + 1):
         _f(ws, 'B{}'.format(f),
-           '=IF($A{f}="","",ROUND(SUMIF({e},$A{f},{x}),2))'
+           '=IF($A{f}="","",ROUND(SUMIF({e},$A{f}&"",{x}),2))'
            .format(f=f, e=emp, x=ext))
         _f(ws, 'C{}'.format(f),
-           '=IF($A{f}="","",ROUND(SUMIFS({x},{e},$A{f},{t},"Fuerza mayor")'
-           '+SUMIFS({x},{e},$A{f},{t},"Compensada con descanso"),2))'
+           '=IF($A{f}="","",ROUND(SUMIFS({x},{e},$A{f}&"",{t},"Fuerza mayor")'
+           '+SUMIFS({x},{e},$A{f}&"",{t},"Compensada con descanso"),2))'
            .format(f=f, e=emp, x=ext, t=tip))
         _f(ws, 'D{}'.format(f),
            '=IF($A{f}="","",ROUND($B{f}-$C{f},2))'.format(f=f))
@@ -786,52 +880,52 @@ def _resumen_mensual(ws, cambios, reg0, reg1):
 
 
 def _instrucciones_02(wb, cambios):
-    ws = wb['Instrucciones']
-    _instr(ws, '▸ Registra entrada, salida y PAUSA. La pausa es lo que hace '
-               'registrable el turno partido: 10:00 → 23:00 con 4 h de pausa '
-               'son 9 h trabajadas, no 13.',
-           r'^▸ Registra cada d.a')
-    _instr(ws, '▸ El turno de NOCHE se registra igual: 23:00 → 07:00 son 8 h. '
-               'La fórmula contempla el cruce de medianoche.',
-           r'^▸ Las horas trabajadas y las horas extra')
-    _instr(ws, motor.AVISO_REGISTRO, r'^▸ Esta hoja trae ')
-    _instr(ws, 'Lo que dice el Estatuto de los Trabajadores:',
-           r'^Legislaci.n espa.ola')
-    _instr(ws, '▸ Art. 35.2: máximo 80 horas extra al año por trabajador. NO '
-               'computan en ese tope las compensadas con descanso dentro de '
-               'los 4 meses siguientes ni las de fuerza mayor: por eso el '
-               'registro pide el tipo y el resumen las descuenta.',
-           r'^▸ M.ximo 80 horas extra')
-    _instr(ws, '▸ Art. 35.1: la hora extra no puede valer MENOS que la '
-               'ordinaria. La cuantía exacta la fija tu convenio o tu '
-               'contrato, y puede compensarse con descanso en vez de pagarse. '
-               'Por eso el recargo es una celda verde (D3), no un número '
-               'dentro de la fórmula.',
-           r'^▸ Las primeras 80h')
-    _instr(ws, '▸ El 1,25 que trae D3 es un valor de partida, no una cifra '
-               'legal: sustitúyelo por el de tu convenio provincial de '
-               'hostelería antes de usar la columna de coste.',
-           r'^▸ Horas por encima de 80')
-    _instr(ws, '▸ Horas trabajadas = salida − entrada − pausa. Escribe las '
-               'horas en formato hh:mm (9:00, no 9).',
-           r'^▸ Horas Contratadas =')
-    _instr(ws, '▸ H. Contratadas = jornada CONTRATADA de ese día, precargada '
-               'a 8. Si la borras, la hora extra se queda en blanco: sin '
-               'saber lo contratado no hay forma de decir qué sobra.',
-           r'^▸ Horas Extra = max')
-    _instr(ws, '▸ Tipo: Voluntaria · Obligatoria · Fuerza mayor · Compensada '
-               'con descanso. Las dos últimas no suman al tope de 80 h.',
-           r'^▸ Tipo: Voluntaria')
-    _instr(ws, '▸ La columna «H. extra acumuladas en el año» del resumen es '
-               'verde y la llevas tú de mes en mes: suma el acumulado '
-               'anterior y las computables de este mes (columna D). Es la que '
-               'vigila el límite.',
-           r'^▸ La columna .H. extra acumuladas')
-    cambios.append('{}:Instrucciones: bloque legal reescrito — ×1,75 y ×2,0 '
-                   'dejan de presentarse como «Legislación española» (art. '
-                   '35.1: sólo se exige que no valga menos que la ordinaria) '
-                   'y entran las dos excepciones del art. 35.2 — '
-                   'DOM-12/COM-19'.format(F02))
+    lineas = [
+        'Cómo usar esta plantilla:',
+        '▸ Registra entrada, salida y PAUSA. La pausa es lo que hace '
+        'registrable el turno partido: 10:00 → 23:00 con 4 h de pausa son 9 h '
+        'trabajadas, no 13.',
+        '▸ El turno de NOCHE se registra igual: 23:00 → 07:00 son 8 h. La '
+        'fórmula contempla el cruce de medianoche.',
+        '▸ El \'Resumen Mensual\' agrega por empleado con SUMIF: no hay que '
+        'transcribir nada a mano.',
+        motor.AVISO_REGISTRO,
+        None,
+        'Lo que dice el Estatuto de los Trabajadores:',
+        '▸ Art. 35.2: máximo 80 horas extra al año por trabajador. NO computan '
+        'en ese tope las compensadas con descanso dentro de los 4 meses '
+        'siguientes ni las de fuerza mayor: por eso el registro pide el tipo y '
+        'el resumen las descuenta.',
+        '▸ Art. 35.1: la hora extra no puede valer MENOS que la ordinaria. La '
+        'cuantía exacta la fija tu convenio o tu contrato, y puede compensarse '
+        'con descanso en vez de pagarse.',
+        '▸ Por eso el recargo es una celda verde (D3) y no un número dentro de '
+        'la fórmula. El 1,25 que trae de fábrica es un punto de partida, no '
+        'una cifra legal: sustitúyelo por el de tu convenio provincial de '
+        'hostelería antes de usar la columna de coste.',
+        '▸ Las horas extra son voluntarias salvo pacto en convenio o contrato '
+        '(art. 35.4 ET).',
+        None,
+        'Columnas del registro:',
+        '▸ Horas trabajadas = salida − entrada − pausa. Escribe las horas en '
+        'formato hh:mm (9:00, no 9).',
+        '▸ H. Contratadas = jornada CONTRATADA de ese día, precargada a 8. Si '
+        'la borras, la hora extra se queda en blanco a propósito: sin saber lo '
+        'contratado no hay forma de decir qué sobra.',
+        '▸ Tipo: Voluntaria · Obligatoria · Fuerza mayor · Compensada con '
+        'descanso. Las dos últimas no suman al tope de 80 h.',
+        '▸ En el \'Resumen Mensual\', «H. extra acumuladas en el año» es '
+        'verde y la llevas tú de mes en mes: suma el acumulado anterior y las '
+        'computables de este mes. Es la que vigila el límite.',
+        '▸ Antes de usar la tarifa de B3, sácala de la columna «Coste/hora» '
+        'del 03: es el coste real por hora, no el bruto del convenio.',
+    ]
+    _instrucciones(wb['Instrucciones'], lineas)
+    cambios.append('{}:Instrucciones: cuerpo reescrito — ×1,75 y ×2,0 dejan '
+                   'de presentarse como «Legislación española» (art. 35.1: '
+                   'sólo se exige que no valga menos que la ordinaria) y '
+                   'entran las dos excepciones del art. 35.2 — DOM-12/COM-19'
+                   .format(F02))
 
 
 # ==========================================================================
@@ -933,17 +1027,33 @@ def _bonus01(wb, cambios):
             ws.row_dimensions[f].height = 30
     motor.marcar_verde(ws, 'A{}:D{}'.format(obs + 1, obs + 3))
 
-    ws2 = wb['Instrucciones']
-    _instr(ws2, '▸ Caja: fondo inicial, recaudación y diferencia, con la '
-                'firma de quien entrega y de quien recibe.',
-           r'^▸ Caja: fondo inicial')
-    _instr(ws2, '▸ Temperaturas de cámara, congelador y expositor al cambio '
-                'de turno: es el punto donde el APPCC cambia de responsable.',
-           r'^▸ Temperaturas de c.mara')
-    _instr(ws2, '▸ Gravedad de la incidencia y prioridad de la tarea van con '
-                'desplegable: sin escala fija, cada encargado escribe una '
-                'cosa y el archivo no es comparable de un día para otro.',
-           r'^▸ Gravedad de la incidencia')
+    _instrucciones(wb['Instrucciones'], [
+        'Cómo usar esta plantilla:',
+        '▸ El turno saliente completa este briefing ANTES de irse.',
+        '▸ El turno entrante lo revisa y firma al llegar.',
+        '▸ Imprime una copia diaria o úsalo en la tablet.',
+        '▸ Archiva los briefings: son la trazabilidad del traspaso, y las '
+        'temperaturas de abajo son además registro de autocontrol APPCC.',
+        None,
+        'Secciones incluidas:',
+        '▸ Reservas pendientes y VIPs del siguiente turno.',
+        '▸ Incidencias: averías, falta de stock, quejas. La gravedad va con '
+        'desplegable (Alta · Media · Baja): sin escala fija cada encargado '
+        'escribe una cosa y el archivo deja de ser comparable.',
+        '▸ Tareas pendientes que no se completaron, con prioridad (Urgente · '
+        'Alta · Normal).',
+        '▸ Stock bajo que necesita pedido urgente.',
+        '▸ Personal: ausencias y cambios de último momento.',
+        '▸ CAJA: fondo inicial, recaudación y diferencia, con la firma de '
+        'quien entrega y de quien recibe. Es lo que convierte el traspaso en '
+        'un arqueo.',
+        '▸ TEMPERATURAS al cambio de turno (cámara, congelador y expositor): '
+        'es el punto exacto en que el APPCC cambia de responsable. El límite '
+        'viene precargado y la columna «Conforme» se pinta sola.',
+        '▸ Observaciones generales: las tres líneas admiten texto largo (van '
+        'con ajuste de línea y alto de fila, para que no se corten al '
+        'imprimir).',
+    ])
     cambios.append('{}:Briefing!A{}:D{}: bloque de CAJA (fondo · recaudación '
                    '· diferencia · firma) y bloque de TEMPERATURAS (cámara '
                    '≤ 4 °C, congelador ≤ −18 °C, expositor ≤ 4 °C) con '
@@ -1014,266 +1124,303 @@ def _pycel_helpers():
 
 def demos(carpeta, origen):
     """Cada bloque CAMBIA una entrada y comprueba la DIRECCIÓN del resultado.
-    Un valor correcto con la hoja vacía no demuestra nada: lo que se mide es
-    que la fórmula reacciona, y en el sentido que dice la SPEC."""
+    Un valor correcto con la hoja vacía no demuestra nada.
+
+    Cada escenario usa un compilador de pycel **limpio** (`ExcelCompiler`
+    cuesta 0,16 s sobre el 01, medido). No es celo: pycel **no propaga la
+    invalidación de `set_value` a través de un nodo RANGO**, así que reutilizar
+    un compilador para escenarios encadenados devuelve valores de la ronda
+    anterior — en la primera ejecución de esta batería, `Resumen Mensual!F6`
+    llegó a informar «⛔ EXCEDE (25 h)» con la celda de acumulado VACÍA. Un
+    gate que arrastra estado no es un gate.
+    """
     _pyc, _ev, _set, _hora = _pycel_helpers()
+
+    def esc(path, sets, lecturas):
+        """Compilador limpio → aplica las entradas → lee las salidas."""
+        xl = _pyc(path)
+        for ref, val in sets:
+            _set(xl, ref, val)
+        return dict((k, _ev(xl, r)) for k, r in lecturas)
+
     fuera = {}
     p01 = os.path.join(carpeta, F01)
     p02 = os.path.join(carpeta, F02)
     pb1 = os.path.join(carpeta, FB1)
+    cs = "'Cuadrante Semanal'!"
 
     # ---- 01 · las 4 alertas ---------------------------------------------
     if os.path.isfile(p01):
-        xl = _pyc(p01)
-        cs = "'Cuadrante Semanal'"
-        pruebas = []
+        def plan(codigos, contratadas=40, nombre='Demo'):
+            sets = [(cs + '{}6'.format(get_column_letter(2 + j)), c)
+                    for j, c in enumerate(codigos)]
+            return sets + [(cs + 'J6', contratadas), (cs + 'A6', nombre)]
 
-        def _plan(codigos, contratadas=40):
-            for j, cod in enumerate(codigos):
-                _set(xl, '{}!{}6'.format(cs, get_column_letter(2 + j)), cod)
-            _set(xl, '{}!J6'.format(cs), contratadas)
-            _set(xl, '{}!A6'.format(cs), 'Demo')
+        L = ('I', 'K', 'L', 'M', 'N')
+        lect = [(c, cs + '{}6'.format(c)) for c in L]
+        vacia = esc(p01, [], lect)
+        tm = esc(p01, plan(['T', 'M', 'L', 'L', 'L', 'L', 'L']), lect)
+        mm = esc(p01, plan(['M', 'M', 'L', 'L', 'L', 'L', 'L']), lect)
+        nt = esc(p01, plan(['N', 'T', 'L', 'L', 'L', 'L', 'L']), lect)
+        siete = esc(p01, plan(['M'] * 7), lect)
+        seis = esc(p01, plan(['M'] * 6 + ['L']), lect)
+        cinco = esc(p01, plan(['M'] * 5 + ['L', 'L']), lect)
+        parcial = esc(p01, plan(['M'] * 4 + ['L', 'L', 'L'], contratadas=20),
+                      lect)
+        doble = esc(p01, plan(['D', 'L', 'L', 'L', 'L', 'L', 'L']), lect)
+        partido = esc(p01, plan(['P', 'L', 'L', 'L', 'L', 'L', 'L']), lect)
 
-        # K · descanso entre jornadas (art. 34.3 ET, 12 h)
-        _plan(['T', 'M', 'L', 'L', 'L', 'L', 'L'])
-        k_mal = _ev(xl, '{}!K6'.format(cs))
-        _plan(['M', 'M', 'L', 'L', 'L', 'L', 'L'])
-        k_bien = _ev(xl, '{}!K6'.format(cs))
-        _plan(['N', 'T', 'L', 'L', 'L', 'L', 'L'])
-        k_noche = _ev(xl, '{}!K6'.format(cs))
-        pruebas.append({
-            'alerta': 'K · descanso entre jornadas',
-            'ref': '{}:Cuadrante Semanal:K6'.format(F01),
-            'T→M (8 h de descanso)': k_mal,
-            'M→M (16 h de descanso)': k_bien,
-            'N→T (cruza medianoche: 8 h)': k_noche,
-            'ok': bool(k_mal) and not k_bien and bool(k_noche)})
-
-        # L · descanso semanal (art. 37.1)
-        _plan(['M'] * 7)
-        l_cero = _ev(xl, '{}!L6'.format(cs))
-        _plan(['M'] * 6 + ['L'])
-        l_uno = _ev(xl, '{}!L6'.format(cs))
-        _plan(['M'] * 5 + ['L', 'L'])
-        l_dos = _ev(xl, '{}!L6'.format(cs))
-        pruebas.append({
-            'alerta': 'L · descanso semanal',
-            'ref': '{}:Cuadrante Semanal:L6'.format(F01),
-            '7 días trabajados': l_cero, '1 día libre': l_uno,
-            '2 días libres': l_dos,
-            'ok': '0 días' in str(l_cero) and '1 día' in str(l_uno)
-            and not l_dos})
-
-        # M · jornada semanal contra las horas CONTRATADAS (DOM-25)
-        _plan(['M'] * 5 + ['L', 'L'], contratadas=40)
-        m_completa = _ev(xl, '{}!M6'.format(cs))
-        i_completa = _ev(xl, '{}!I6'.format(cs))
-        _plan(['M'] * 4 + ['L', 'L', 'L'], contratadas=20)
-        m_parcial = _ev(xl, '{}!M6'.format(cs))
-        pruebas.append({
-            'alerta': 'M · jornada semanal',
-            'ref': '{}:Cuadrante Semanal:M6'.format(F01),
-            '40 h planificadas / 40 contratadas': m_completa,
-            'horas de esa semana': i_completa,
-            '32 h planificadas / 20 contratadas (parcial)': m_parcial,
-            'ok': not m_completa and '+12' in str(m_parcial)
-            and i_completa == 40})
-
-        # N · jornada diaria / turno doble
-        _plan(['D', 'L', 'L', 'L', 'L', 'L', 'L'])
-        n_doble = _ev(xl, '{}!N6'.format(cs))
-        _plan(['P', 'L', 'L', 'L', 'L', 'L', 'L'])
-        n_partido = _ev(xl, '{}!N6'.format(cs))
-        pruebas.append({
-            'alerta': 'N · jornada diaria (art. 34.3 ET)',
-            'ref': '{}:Cuadrante Semanal:N6'.format(F01),
-            'turno DOBLE de 16 h': n_doble,
-            'turno PARTIDO de 9 h': n_partido,
-            'ok': bool(n_doble) and not n_partido})
+        pruebas = [
+            {'alerta': 'K · descanso entre jornadas (art. 34.3 ET, 12 h)',
+             'ref': '{}:Cuadrante Semanal:K6'.format(F01),
+             'hoja recién descargada': vacia['K'],
+             'T→M · 8 h de descanso': tm['K'],
+             'M→M · 16 h de descanso': mm['K'],
+             'N→T · el turno cruza la medianoche, 8 h': nt['K'],
+             'ok': (vacia['K'] in ('', None) and bool(tm['K'])
+                    and mm['K'] in ('', None) and bool(nt['K']))},
+            {'alerta': 'L · descanso semanal (art. 37.1 ET)',
+             'ref': '{}:Cuadrante Semanal:L6'.format(F01),
+             'hoja recién descargada': vacia['L'],
+             '7 días con turno': siete['L'], '1 día libre': seis['L'],
+             '2 días libres': cinco['L'],
+             'ok': (vacia['L'] in ('', None) and '0 días' in str(siete['L'])
+                    and '1 día' in str(seis['L'])
+                    and cinco['L'] in ('', None))},
+            {'alerta': 'M · jornada semanal contra lo CONTRATADO (DOM-25)',
+             'ref': '{}:Cuadrante Semanal:M6'.format(F01),
+             'hoja recién descargada': vacia['M'],
+             '40 h planificadas / 40 contratadas': cinco['M'],
+             'horas de esa semana (I6)': cinco['I'],
+             '32 h planificadas / 20 contratadas': parcial['M'],
+             'ok': (vacia['M'] in ('', None) and cinco['M'] in ('', None)
+                    and cinco['I'] == 40 and '+12' in str(parcial['M'])
+                    and parcial['I'] == 32)},
+            {'alerta': 'N · jornada diaria (art. 34.3 ET, 9 h)',
+             'ref': '{}:Cuadrante Semanal:N6'.format(F01),
+             'hoja recién descargada': vacia['N'],
+             'turno DOBLE de 16 h': doble['N'],
+             'turno PARTIDO de 9 h': partido['N'],
+             'ok': (vacia['N'] in ('', None) and bool(doble['N'])
+                    and partido['N'] in ('', None))},
+        ]
         fuera['grupo_a_4_alertas_01'] = {
             'ref': '{}:Cuadrante Semanal:K6:N6'.format(F01),
             'pruebas': pruebas, 'ok': all(p['ok'] for p in pruebas),
             'nota': 'las cuatro alertas que la landing vende desde la v1.0 y '
-                    'que el fichero no tenía: sólo existía «>40 h» (COM-01)'}
+                    'que el fichero no tenía: la única era «>40 h» con el 40 '
+                    'escrito dentro de la fórmula (COM-01/DOM-25)'}
 
-        # el parámetro MANDA: subir Turnos!B3 a 14 h hace saltar M→M
-        _plan(['M', 'M', 'L', 'L', 'L', 'L', 'L'])
-        antes = _ev(xl, '{}!K6'.format(cs))
-        _set(xl, 'Turnos!B3', 14)
-        despues = _ev(xl, '{}!K6'.format(cs))
-        _set(xl, 'Turnos!B3', 12)
+        # el umbral es un PARÁMETRO, no un literal (§1.4)
+        base = plan(['M', 'M', 'L', 'L', 'L', 'L', 'L'])
+        con12 = esc(p01, base, [('K', cs + 'K6')])
+        con18 = esc(p01, base + [('Turnos!B3', 18)], [('K', cs + 'K6')])
         fuera['grupo_a_parametro_descanso_01'] = {
             'ref': '{}:Turnos:B3 → Cuadrante Semanal:K6'.format(F01),
-            'con 12 h (art. 34.3 ET)': antes, 'con 14 h': despues,
-            'ok': (not antes) and bool(despues),
-            'nota': 'el umbral está en celda, no dentro de la fórmula (§1.4): '
-                    'M→M deja 16 h de descanso, así que sólo salta cuando el '
-                    'convenio exige más de 16'}
+            'M→M con el mínimo legal de 12 h': con12['K'],
+            'M→M con un convenio que exija 18 h': con18['K'],
+            'ok': con12['K'] in ('', None) and bool(con18['K']),
+            'nota': 'M→M deja 16 h de descanso: cumple las 12 del art. 34.3 y '
+                    'no cumpliría un convenio de 18. El umbral vive en celda, '
+                    'no dentro de la fórmula (§1.4)'}
 
-        # la tabla Turnos manda sobre las horas
-        _plan(['M', 'L', 'L', 'L', 'L', 'L', 'L'])
-        h8 = _ev(xl, '{}!I6'.format(cs))
-        _set(xl, 'Turnos!E5', 6)
-        h6 = _ev(xl, '{}!I6'.format(cs))
-        _set(xl, 'Turnos!E5', 8)
+        # la tabla `Turnos` manda sobre las horas (DOM-05)
+        uno = plan(['M', 'L', 'L', 'L', 'L', 'L', 'L'])
+        h8 = esc(p01, uno, [('I', cs + 'I6'), ('N', cs + 'N6')])
+        h6 = esc(p01, uno + [('Turnos!E5', 6)], [('I', cs + 'I6')])
+        h11 = esc(p01, uno + [('Turnos!E5', 11)],
+                  [('I', cs + 'I6'), ('N', cs + 'N6')])
         fuera['grupo_a_turnos_manda_01'] = {
-            'ref': '{}:Turnos:E5 → Cuadrante Semanal:I6'.format(F01),
-            'M = 8 h': h8, 'M reconfigurado a 6 h': h6,
-            'ok': h8 == 8 and h6 == 6,
+            'ref': '{}:Turnos:E5 → Cuadrante Semanal:I6/N6'.format(F01),
+            'M = 8 h (tabla de fábrica)': h8['I'],
+            'alerta de jornada diaria con 8 h': h8['N'],
+            'M reconfigurado a 6 h': h6['I'],
+            'M reconfigurado a 11 h': h11['I'],
+            'alerta de jornada diaria con 11 h': h11['N'],
+            'ok': (h8['I'] == 8 and h6['I'] == 6 and h11['I'] == 11
+                   and h8['N'] in ('', None) and bool(h11['N'])),
             'nota': 'las horas salen de la tabla, no de los siete IF anidados '
-                    'de 700 caracteres de la v1.1 (DOM-05)'}
+                    'de 700 caracteres de `Cuadrante Semanal!I6` de la v1.1 '
+                    '(DOM-05)'}
 
-        # la hoja mensual bebe del semanal
-        _set(xl, "'Cuadrante Semanal'!A7", 'Marta Ibáñez')
-        nombre = _ev(xl, "'Cuadrante Mensual'!A6")
-        _set(xl, "'Cuadrante Mensual'!B6", 'M')
-        _set(xl, "'Cuadrante Mensual'!C6", 'D')
-        horas_mes = _ev(xl, "'Cuadrante Mensual'!I6")
+        # la hoja mensual bebe del semanal y calcula (DOM-17/COM-12)
+        men = esc(p01, [(cs + 'A7', 'Marta Ibáñez'), (cs + 'J7', 40),
+                        ("'Cuadrante Mensual'!B6", 'M'),
+                        ("'Cuadrante Mensual'!C6", 'D'),
+                        ("'Cuadrante Mensual'!D6", 'D')],
+                  [('nombre', "'Cuadrante Mensual'!A6"),
+                   ('horas', "'Cuadrante Mensual'!I6"),
+                   ('alerta', "'Cuadrante Mensual'!J6"),
+                   ('sem1_del_total', "'Cuadrante Mensual'!B171"),
+                   ('total_mes', "'Cuadrante Mensual'!G171")])
         fuera['grupo_a_mensual_vivo_01'] = {
-            'ref': '{}:Cuadrante Mensual:A6/I6'.format(F01),
-            'nombre heredado de Cuadrante Semanal!A7': nombre,
-            'M + D = 24 h': horas_mes,
-            'ok': nombre == 'Marta Ibáñez' and horas_mes == 24,
-            'nota': 'la hoja mensual tenía CERO fórmulas y CERO validación '
-                    '(DOM-17/COM-12); ahora hereda los nombres y calcula'}
+            'ref': '{}:Cuadrante Mensual:A6/I6/J6 y G171'.format(F01),
+            'nombre heredado de Cuadrante Semanal!A7': men['nombre'],
+            'M + D + D = 8 + 16 + 16': men['horas'],
+            'alerta contra las 40 h contratadas': men['alerta'],
+            'esa semana en el total del mes': men['sem1_del_total'],
+            'total del mes': men['total_mes'],
+            'ok': (men['nombre'] == 'Marta Ibáñez' and men['horas'] == 40
+                   and men['alerta'] in ('', None)
+                   and men['sem1_del_total'] == 40
+                   and men['total_mes'] == 40),
+            'nota': 'la hoja mensual tenía 30 rótulos, CERO fórmulas, CERO '
+                    'validación y 28 días (DOM-17/TEC-23/COM-12)'}
 
     # ---- 02 · medianoche, pausa, guarda y límite -------------------------
     if os.path.isfile(p02):
-        xl = _pyc(p02)
-        rh = "'Registro Horas'"
+        rh = "'Registro Horas'!"
         casos = []
-        for etiqueta, ent, sal, pausa, contratadas, esperado_h in (
-                ('turno de noche 23:00 → 07:00', 23, 7, 0, 8, 8.0),
-                ('cierre 19:00 → 01:30', 19, 1.5, 0, 8, 6.5),
-                ('partido 10:00 → 23:00 con 4 h de pausa', 10, 23, 4, 8, 9.0)):
-            _set(xl, '{}!C5'.format(rh), _hora(int(ent), int(round((ent % 1)
-                                                                   * 60))))
-            _set(xl, '{}!D5'.format(rh), _hora(int(sal), int(round((sal % 1)
-                                                                   * 60))))
-            _set(xl, '{}!E5'.format(rh), pausa)
-            _set(xl, '{}!G5'.format(rh), contratadas)
-            h = _ev(xl, '{}!F5'.format(rh))
-            x = _ev(xl, '{}!H5'.format(rh))
-            casos.append({'caso': etiqueta, 'esperado_horas': esperado_h,
-                          'horas': h, 'extra': x,
-                          'ok': isinstance(h, (int, float))
-                          and abs(h - esperado_h) < 0.005})
-        # guarda: sin «H. contratadas» la extra se calla
-        _set(xl, '{}!C5'.format(rh), _hora(9))
-        _set(xl, '{}!D5'.format(rh), _hora(17))
-        _set(xl, '{}!E5'.format(rh), 0)
-        _set(xl, '{}!G5'.format(rh), None)
-        x_vacia = _ev(xl, '{}!H5'.format(rh))
-        _set(xl, '{}!G5'.format(rh), 6)
-        x_seis = _ev(xl, '{}!H5'.format(rh))
-        casos.append({'caso': 'H. contratadas VACÍA (8 h trabajadas)',
-                      'extra': x_vacia, 'ok': x_vacia in ('', None)})
+        for etiqueta, ent, sal, pausa, contratadas, esperado in (
+                ('turno de noche 23:00 → 07:00', (23, 0), (7, 0), 0, 8, 8.0),
+                ('cierre 19:00 → 01:30', (19, 0), (1, 30), 0, 8, 6.5),
+                ('partido 10:00 → 23:00 con 4 h de pausa', (10, 0), (23, 0), 4,
+                 8, 9.0)):
+            r = esc(p02, [(rh + 'C5', _hora(*ent)), (rh + 'D5', _hora(*sal)),
+                          (rh + 'E5', pausa), (rh + 'G5', contratadas)],
+                    [('horas', rh + 'F5'), ('extra', rh + 'H5')])
+            casos.append({'caso': etiqueta, 'esperado_horas': esperado,
+                          'horas': r['horas'], 'extra': r['extra'],
+                          'ok': isinstance(r['horas'], (int, float))
+                          and abs(r['horas'] - esperado) < 0.005})
+        jornada = [(rh + 'C5', _hora(9)), (rh + 'D5', _hora(17)),
+                   (rh + 'E5', 0)]
+        sin_g = esc(p02, jornada + [(rh + 'G5', '')],
+                    [('extra', rh + 'H5'), ('horas', rh + 'F5')])
+        con_g = esc(p02, jornada + [(rh + 'G5', 6)], [('extra', rh + 'H5')])
+        igual = esc(p02, jornada + [(rh + 'G5', 8)], [('extra', rh + 'H5')])
+        casos.append({'caso': 'H. contratadas VACÍA con 8 h trabajadas',
+                      'horas': sin_g['horas'], 'extra': sin_g['extra'],
+                      'ok': sin_g['extra'] in ('', None)
+                      and sin_g['horas'] == 8})
         casos.append({'caso': '8 h trabajadas contra 6 contratadas',
-                      'extra': x_seis, 'ok': isinstance(x_seis, (int, float))
-                      and abs(x_seis - 2) < 0.005})
+                      'extra': con_g['extra'],
+                      'ok': isinstance(con_g['extra'], (int, float))
+                      and abs(con_g['extra'] - 2) < 0.005})
+        casos.append({'caso': '8 h trabajadas contra 8 contratadas',
+                      'extra': igual['extra'],
+                      'ok': isinstance(igual['extra'], (int, float))
+                      and abs(igual['extra']) < 0.005})
         fuera['grupo_a_horas_y_guarda_02'] = {
             'ref': '{}:Registro Horas:F5/H5'.format(F02),
             'pruebas': casos, 'ok': all(c['ok'] for c in casos),
             'nota': 'la v1.1 hacía (D5−C5)*24 y el turno de noche fichaba '
                     '−16 h; y con la columna de contratadas vacía declaraba '
-                    'extra la jornada ENTERA (DOM-03/DOM-11/DOM-21)'}
+                    'extra la jornada ENTERA — 8 h × 12 € × 1,25 = 120 € por '
+                    'día y empleado que el cliente no debe '
+                    '(DOM-03/DOM-11/DOM-21/TEC-01/TEC-09/COM-07)'}
 
-        # Resumen: agrega, descuenta el art. 35.2 y usa el recargo en celda
-        _set(xl, '{}!A5'.format(rh), 'Ana Prieto')
-        _set(xl, '{}!G5'.format(rh), 6)
-        _set(xl, '{}!I5'.format(rh), 'Voluntaria')
-        _set(xl, '{}!A6'.format(rh), 'Ana Prieto')
-        _set(xl, '{}!C6'.format(rh), _hora(9))
-        _set(xl, '{}!D6'.format(rh), _hora(20))
-        _set(xl, '{}!E6'.format(rh), 0)
-        _set(xl, '{}!G6'.format(rh), 8)
-        _set(xl, '{}!I6'.format(rh), 'Fuerza mayor')
-        _set(xl, "'Resumen Mensual'!A6", 'Ana Prieto')
-        total = _ev(xl, "'Resumen Mensual'!B6")
-        nocomp = _ev(xl, "'Resumen Mensual'!C6")
-        comp = _ev(xl, "'Resumen Mensual'!D6")
-        coste125 = _ev(xl, "'Resumen Mensual'!G6")
-        _set(xl, "'Resumen Mensual'!D3", 1.5)
-        coste150 = _ev(xl, "'Resumen Mensual'!G6")
-        _set(xl, "'Resumen Mensual'!D3", 1.25)
+        # el resumen AGREGA, descuenta el art. 35.2 y usa el recargo en celda
+        registros = [
+            (rh + 'A5', 'Ana Prieto'), (rh + 'C5', _hora(9)),
+            (rh + 'D5', _hora(17)), (rh + 'E5', 0), (rh + 'G5', 6),
+            (rh + 'I5', 'Voluntaria'),
+            (rh + 'A6', 'Ana Prieto'), (rh + 'C6', _hora(9)),
+            (rh + 'D6', _hora(20)), (rh + 'E6', 0), (rh + 'G6', 8),
+            (rh + 'I6', 'Fuerza mayor'),
+            (rh + 'A7', 'Luis Cabo'), (rh + 'C7', _hora(9)),
+            (rh + 'D7', _hora(19)), (rh + 'E7', 0), (rh + 'G7', 8),
+            (rh + 'I7', 'Voluntaria'),
+            ("'Resumen Mensual'!A6", 'Ana Prieto'),
+            ("'Resumen Mensual'!A7", 'Luis Cabo')]
+        lect = [('B', "'Resumen Mensual'!B6"), ('C', "'Resumen Mensual'!C6"),
+                ('D', "'Resumen Mensual'!D6"), ('G', "'Resumen Mensual'!G6"),
+                ('otro', "'Resumen Mensual'!B7")]
+        r125 = esc(p02, registros, lect)
+        r150 = esc(p02, registros + [("'Resumen Mensual'!D3", 1.5)], lect)
+        r20 = esc(p02, registros + [("'Resumen Mensual'!B3", 20.0)], lect)
         fuera['grupo_a_resumen_agrega_02'] = {
             'ref': '{}:Resumen Mensual:B6/C6/D6/G6'.format(F02),
-            'extra del mes (2+3 h)': total,
-            'no computables (fuerza mayor, art. 35.2)': nocomp,
-            'computables': comp,
-            'coste con recargo 1,25': coste125,
-            'coste con recargo 1,50': coste150,
-            'ok': (isinstance(total, (int, float)) and abs(total - 5) < 0.005
-                   and isinstance(nocomp, (int, float))
-                   and abs(nocomp - 3) < 0.005
-                   and isinstance(comp, (int, float)) and abs(comp - 2) < 0.005
-                   and isinstance(coste125, (int, float))
-                   and abs(coste125 - 75) < 0.01
-                   and isinstance(coste150, (int, float))
-                   and abs(coste150 - 90) < 0.01),
-            'nota': 'B era transcripción MANUAL (COM-14) y el ×1,75/×2,0 '
-                    'estaba escrito dentro de 30 fórmulas (TEC-06)'}
+            'extra de Ana en el mes (2 h + 3 h)': r125['B'],
+            'de las que NO computan (fuerza mayor, art. 35.2)': r125['C'],
+            'computables en el tope de 80 h': r125['D'],
+            'no mezcla empleados: extra de Luis (2 h)': r125['otro'],
+            'coste con recargo 1,25 y tarifa 12 €': r125['G'],
+            'coste subiendo el recargo a 1,50': r150['G'],
+            'coste subiendo la tarifa a 20 €': r20['G'],
+            'ok': (r125['B'] == 5 and r125['C'] == 3 and r125['D'] == 2
+                   and r125['otro'] == 2
+                   and abs(r125['G'] - 75) < 0.01
+                   and abs(r150['G'] - 90) < 0.01
+                   and abs(r20['G'] - 125) < 0.01),
+            'nota': 'la columna B era transcripción MANUAL (COM-14) y el '
+                    '×1,75 / ×2,0 estaba escrito dentro de 30 fórmulas '
+                    '(TEC-06); ahora los dos son celda verde'}
 
-        # límite anual con el tope en celda
-        _set(xl, "'Resumen Mensual'!E6", 40)
-        v40 = _ev(xl, "'Resumen Mensual'!F6")
-        _set(xl, "'Resumen Mensual'!E6", 70)
-        v70 = _ev(xl, "'Resumen Mensual'!F6")
-        _set(xl, "'Resumen Mensual'!E6", 95)
-        v95 = _ev(xl, "'Resumen Mensual'!F6")
-        _set(xl, "'Resumen Mensual'!F3", 120)
-        v95_120 = _ev(xl, "'Resumen Mensual'!F6")
-        _set(xl, "'Resumen Mensual'!F3", 80)
-        _set(xl, "'Resumen Mensual'!E6", None)
-        vacio = _ev(xl, "'Resumen Mensual'!F6")
+        # el contador del límite anual, con el tope en celda
+        def lim(acum, tope=None):
+            sets = [("'Resumen Mensual'!E6", acum)]
+            if tope is not None:
+                sets.append(("'Resumen Mensual'!F3", tope))
+            return esc(p02, sets, [('F', "'Resumen Mensual'!F6")])['F']
+        v_vacio, v40, v70, v95, v95_120 = (lim(''), lim(40), lim(70), lim(95),
+                                           lim(95, 120))
         fuera['grupo_a_limite_80h_02'] = {
             'ref': '{}:Resumen Mensual:F6 (tope en F3)'.format(F02),
+            'recién descargado, sin acumulado': v_vacio,
             'acumuladas 40 h': v40, 'acumuladas 70 h': v70,
             'acumuladas 95 h': v95,
             'acumuladas 95 h con el tope subido a 120': v95_120,
-            'sin acumulado (recién descargado)': vacio,
-            'ok': ('dentro' in str(v40) and 'cerca' in str(v70)
-                   and 'EXCEDE' in str(v95) and 'dentro' in str(v95_120)
-                   and vacio in ('', None)),
-            'nota': 'art. 35.2 ET: 80 h/año. El tope es celda verde porque '
-                    'el cómputo se prorratea en los contratos parciales y de '
+            'ok': (v_vacio in ('', None) and 'dentro' in str(v40)
+                   and 'cerca' in str(v70) and 'EXCEDE' in str(v95)
+                   and 'dentro' in str(v95_120)),
+            'nota': 'art. 35.2 ET: 80 h/año. El tope es celda verde porque se '
+                    'prorratea en los contratos parciales y en los de '
                     'duración inferior al año'}
 
     # ---- BONUS-01 · caja y temperaturas ---------------------------------
     if os.path.isfile(pb1):
         import openpyxl
         wsb = openpyxl.load_workbook(pb1)['Briefing']
-        fila_caja = _fila_con(wsb, 1, 'CAJA')
-        fila_temp = _fila_con(wsb, 1, 'TEMPERATURAS')
-        if fila_caja and fila_temp:
-            xl = _pyc(pb1)
-            b = fila_caja + 2
-            _set(xl, "'Briefing'!B{}".format(b), 200)
-            _set(xl, "'Briefing'!C{}".format(b), 1450.5)
-            dif = _ev(xl, "'Briefing'!D{}".format(b))
-            t = fila_temp + 2
-            _set(xl, "'Briefing'!B{}".format(t), 3)
-            ok_frio = _ev(xl, "'Briefing'!D{}".format(t))
-            _set(xl, "'Briefing'!B{}".format(t), 8)
-            mal_frio = _ev(xl, "'Briefing'!D{}".format(t))
-            _set(xl, "'Briefing'!B{}".format(t + 1), -22)
-            ok_cong = _ev(xl, "'Briefing'!D{}".format(t + 1))
-            _set(xl, "'Briefing'!B{}".format(t + 1), -12)
-            mal_cong = _ev(xl, "'Briefing'!D{}".format(t + 1))
+        fc = _fila_con(wsb, 1, 'CAJA')
+        ft = _fila_con(wsb, 1, 'TEMPERATURAS')
+        if fc and ft:
+            b, t = fc + 2, ft + 2
+            bri = "'Briefing'!"
+            caja = esc(pb1, [(bri + 'B{}'.format(b), 200),
+                             (bri + 'C{}'.format(b), 1450.5),
+                             (bri + 'B{}'.format(b + 1), 150),
+                             (bri + 'C{}'.format(b + 1), 620.25)],
+                       [('dif', bri + 'D{}'.format(b)),
+                        ('total_fondo', bri + 'B{}'.format(fc + 4)),
+                        ('total_dif', bri + 'D{}'.format(fc + 4))])
+            frio = esc(pb1, [(bri + 'B{}'.format(t), 3),
+                             (bri + 'B{}'.format(t + 1), -22),
+                             (bri + 'B{}'.format(t + 2), 4)],
+                       [('camara', bri + 'D{}'.format(t)),
+                        ('congelador', bri + 'D{}'.format(t + 1)),
+                        ('expositor', bri + 'D{}'.format(t + 2))])
+            malo = esc(pb1, [(bri + 'B{}'.format(t), 8),
+                             (bri + 'B{}'.format(t + 1), -12)],
+                       [('camara', bri + 'D{}'.format(t)),
+                        ('congelador', bri + 'D{}'.format(t + 1))])
+            vacio = esc(pb1, [], [('camara', bri + 'D{}'.format(t)),
+                                  ('dif', bri + 'D{}'.format(b))])
             fuera['grupo_a_caja_y_temperaturas_bonus01'] = {
-                'ref': '{}:Briefing:D{} y D{}'.format(FB1, b, t),
-                'diferencia 1450,50 − 200': dif,
-                'cámara a 3 °C (límite 4)': ok_frio,
-                'cámara a 8 °C': mal_frio,
-                'congelador a −22 °C (límite −18)': ok_cong,
-                'congelador a −12 °C': mal_cong,
-                'ok': (isinstance(dif, (int, float))
-                       and abs(dif - 1250.5) < 0.01
-                       and 'CONFORME' in str(ok_frio)
-                       and 'FUERA' in str(mal_frio)
-                       and 'CONFORME' in str(ok_cong)
-                       and 'FUERA' in str(mal_cong)),
+                'ref': '{}:Briefing:D{} (caja) y D{} (temperaturas)'
+                       .format(FB1, b, t),
+                'recién descargado · conforme': vacio['camara'],
+                'recién descargado · diferencia': vacio['dif'],
+                'diferencia 1450,50 − 200': caja['dif'],
+                'fondo total de las dos cajas': caja['total_fondo'],
+                'diferencia total': caja['total_dif'],
+                'cámara a 3 °C (límite 4)': frio['camara'],
+                'congelador a −22 °C (límite −18)': frio['congelador'],
+                'expositor a 4 °C (límite 4)': frio['expositor'],
+                'cámara a 8 °C': malo['camara'],
+                'congelador a −12 °C': malo['congelador'],
+                'ok': (vacio['camara'] in ('', None)
+                       and vacio['dif'] in ('', None)
+                       and abs(caja['dif'] - 1250.5) < 0.01
+                       and caja['total_fondo'] == 350
+                       and abs(caja['total_dif'] - 1720.75) < 0.01
+                       and 'CONFORME' in str(frio['camara'])
+                       and 'CONFORME' in str(frio['congelador'])
+                       and 'CONFORME' in str(frio['expositor'])
+                       and 'FUERA' in str(malo['camara'])
+                       and 'FUERA' in str(malo['congelador'])),
                 'nota': 'el signo importa: con −18 de límite, «conforme» es '
-                        '≤ −18, así que −12 tiene que fallar y −22 pasar '
-                        '(DOM-29)'}
+                        '≤ −18, así que −12 °C tiene que fallar y −22 °C '
+                        'pasar. Y el límite en el borde (4 °C contra 4) es '
+                        'conforme, no incumplimiento (DOM-29)'}
     return fuera

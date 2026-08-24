@@ -76,6 +76,29 @@ def _anchos(ws, mapa):
         ws.column_dimensions[letra].width = ancho
 
 
+def _vaciar(ws, min_row=1, max_row=None, fills=True):
+    """Vacía valor, relleno y formato de las celdas que YA EXISTEN.
+
+    Se recorre `iter_rows()` en vez de `ws.cell(r, c)`: pedir una celda que no
+    existe la CREA y con ella agranda `ws.max_row`/`max_column`, y el
+    `print_area` que fija `motor.cerrar` sale con filas y columnas en blanco
+    dentro. Y se limpia el RELLENO, no sólo el valor: la v1.1 pinta de verde
+    las columnas que en ella eran de entrada, y al reordenar las columnas ese
+    verde se queda debajo de una columna ya CALCULADA diciéndole al cliente
+    que puede sobrescribir la fórmula (`03!Nóminas!F` era «Horas Contratadas»
+    y pasa a ser la cotización; `05!Solicitudes!E` era «Días Usados YTD» y
+    pasa a leerse por INDEX/MATCH). Medido el 2026-08-24.
+    """
+    for fila in ws.iter_rows(min_row=min_row,
+                             max_row=max_row or ws.max_row):
+        for cel in fila:
+            if isinstance(cel.value, str) or cel.value is not None:
+                cel.value = None
+            if fills:
+                cel.fill = PatternFill()
+                cel.number_format = 'General'
+
+
 def _rotulo(ws, fila, texto, col=1, negrita=False):
     cel = ws.cell(row=fila, column=col, value=texto)
     if negrita:
@@ -104,10 +127,15 @@ def _verde(ws, coord, valor=None, fmt=None):
     return cel
 
 
-def _dv(ws, rango, valores, titulo, prompt, error, marca=MARCA_B):
-    """DV de lista inline, marcada para poder retirarla en la 2.ª pasada."""
+def _dv(ws, rango, valores, titulo, prompt, error, marca=MARCA_B,
+        tipo='list', formula=None):
+    """DV marcada para poder retirarla en la 2.ª pasada. `tipo='custom'` +
+    `formula` para las validaciones que NO pueden ser una lista inline (ver
+    la fila de temporada del calendario del 05)."""
     dv = DataValidation(
-        type='list', formula1='"{}"'.format(','.join(valores)),
+        type=tipo,
+        formula1=formula if tipo != 'list' else '"{}"'.format(
+            ','.join(valores)),
         allow_blank=True, showErrorMessage=True, errorTitle=titulo,
         error=error, errorStyle='stop', showInputMessage=True,
         promptTitle='{} · {}'.format(marca, titulo), prompt=prompt)
@@ -203,7 +231,6 @@ def _n03_nominas(wb, cambios):
     «Horas Contratadas» que no alimentaba nada.
     """
     ws = wb['Nóminas']
-    sub = ws['A2'].value if isinstance(ws['A2'].value, str) else None
 
     # 1) 20 → 30 empleados. La cola (TOTALES en 25, pie en 27) baja 10 filas y
     #    `=SUM(C5:C24)` se ESTIRA a `C34` (lo hace `motor._corre_cola`).
@@ -215,8 +242,11 @@ def _n03_nominas(wb, cambios):
     _merges(ws, ['A1:I1', 'A3:I3',
                  'A{0}:I{0}'.format(FILA_TOT_03 + 2)])
     ws['A1'] = 'Nóminas — Mes: _______________'
-    ws['A3'] = sub or ('AI Chef Pro · aichef.pro — Kit Gestión de Personal '
-                       'y Turnos')
+    # el subtítulo de marca baja a la fila 3: la 2 pasa a ser el parámetro de
+    # cotización (§3, «verde C2»). Se escribe LITERAL, no copiando lo que haya
+    # en A2: en la 2.ª pasada A2 ya es el rótulo del parámetro y copiarlo
+    # sustituiría el subtítulo por «Tipo de SS a cargo de la empresa (%):».
+    ws['A3'] = 'AI Chef Pro · aichef.pro — Kit Gestión de Personal y Turnos'
     ws['A2'] = None
     ws['B2'] = None
     ws['C2'] = None
@@ -239,6 +269,9 @@ def _n03_nominas(wb, cambios):
     _anchos(ws, {'A': 24, 'B': 18, 'C': 18, 'D': 14, 'E': 20, 'F': 20,
                  'G': 18, 'H': 20, 'I': 14})
 
+    # el verde heredado de la v1.1 (A, C y F eran las entradas de entonces)
+    # se borra ENTERO: la F de hoy es la cotización, que es calculada.
+    _vaciar(ws, 5, 4 + motor.CAPACIDAD)
     for f in range(5, 4 + motor.CAPACIDAD + 1):
         ws['C{}'.format(f)].value = None
         ws['D{}'.format(f)].value = 14          # §3 · por defecto 14 pagas
@@ -377,9 +410,11 @@ def _n03_prevision(wb, cambios):
     """
     ws = wb['Previsión por Servicio']
     motor._limpiar_dv(ws)
-    for r in range(1, 31):
-        for c in range(1, 7):
-            ws.cell(row=r, column=c).value = None
+    # deshacer TODAS las combinaciones antes de vaciar: escribir en una celda
+    # de un rango combinado revienta con «'MergedCell' object attribute
+    # 'value' is read-only», y aquí hay tres heredadas (A1:D1, A2:D2, A19:D19).
+    _merges(ws, [])
+    _vaciar(ws)
     _anchos(ws, {'A': 44, 'B': 16, 'C': 14, 'D': 14, 'E': 18, 'F': 4})
 
     ws['A1'] = 'Previsión de Personal por Servicio'
@@ -618,6 +653,27 @@ def _n04(wb, cambios):
     _anchos(ws, {'A': 5, 'B': 52, 'C': 22, 'D': 18, 'E': 14, 'F': 10,
                  'G': 24})
 
+    # ⚠ `motor.insertar_fila` mueve valores, estilos, combinaciones y DV, pero
+    # NO el formato condicional: la única regla que trae la v1.1 —«pinta la
+    # fila entera de verde cuando la tarea está hecha», `A7:G65` con
+    # `$F7="✓"`— se quedaba cubriendo hasta la fila 65 con las tareas llegando
+    # a la 68, así que las tres últimas del periodo de prueba nunca se
+    # pintaban. Se reengancha al rango real conservando su propio `dxf`.
+    ultima = tramos[-1][1]
+    viejas, refs = [], set()
+    for bloque in list(ws.conditional_formatting):
+        if str(bloque.sqref).startswith('A7:G'):
+            viejas.extend(bloque.rules)
+            refs.add(str(bloque.sqref))
+    if viejas:
+        motor._limpiar_cf(ws, refs)
+        for regla in viejas:
+            ws.conditional_formatting.add('A7:G{}'.format(ultima), regla)
+        cambios.append('04:Checklist Onboarding!A7:G{}: la regla de formato '
+                       'condicional heredada llegaba sólo a la fila 65 — '
+                       '`insertar_fila` no desplaza el formato condicional'
+                       .format(ultima))
+
     # 4) validación de «Hecho» sobre TODOS los tramos, incluidas las 3 nuevas.
     #    Se retiran todas las DV de la hoja antes: la heredada de la v1.1
     #    enumeraba las 47 celdas una a una y no cubría las filas nuevas.
@@ -716,3 +772,823 @@ def _n04_instrucciones(wb, cambios):
     ])
     cambios.append('04:Instrucciones!B2:B26: reescritas — «Hecho», el papel '
                    'de la marca «—» y los tres plazos legales nuevos')
+
+
+# ==========================================================================
+# 05 · PLANIFICACIÓN DE VACACIONES  (SPEC §4, bloque 05)
+# ==========================================================================
+SEMANAS = 53
+COL_S1 = 'B'                                    # semana 1
+COL_SN = get_column_letter(1 + SEMANAS)         # BB · semana 53
+COL_TOT = get_column_letter(2 + SEMANAS)        # BC · «Días Usados»
+EMP0, EMP1 = 6, 5 + motor.CAPACIDAD             # 6..35
+F_TEMP, F_AUS, F_ALERTA = EMP1 + 1, EMP1 + 2, EMP1 + 3      # 36 · 37 · 38
+
+#: Lunes de la semana 1 por defecto: 4 de enero de 2027, que es el primer lunes
+#: del año siguiente al de publicación del kit (el calendario de vacaciones se
+#: cierra con dos meses de antelación, art. 38.3 ET). Es una celda VERDE: el
+#: cliente escribe el lunes de SU semana 1 y las 52 restantes se recalculan.
+LUNES_SEMANA_1 = datetime.datetime(2027, 1, 4)
+
+#: Temporada alta por defecto en un negocio de hostelería español: julio y
+#: agosto (semanas 27-35) y la Navidad (51-52). Se precarga y se edita.
+TEMPORADA_ALTA = list(range(27, 36)) + [51, 52]
+
+#: Puestos reales de una plantilla de restauración, para la DV de la tabla de
+#: sustituciones. No es una lista genérica de RR. HH.: son las categorías con
+#: las que se cubre un turno.
+PUESTOS = ['Jefe/a de cocina', 'Segundo/a de cocina', 'Cocinero/a',
+           'Ayudante de cocina', 'Pastelero/a', 'Office',
+           'Jefe/a de sala', 'Camarero/a', 'Ayudante de camarero/a',
+           'Barman / Bartender', 'Sumiller', 'Host / Recepción',
+           'Repartidor/a', 'Encargado/a']
+
+
+def _rehacer(wb, titulo, indice):
+    """Reconstruye una hoja entera en su posición. Es la forma más barata de
+    ser idempotente cuando cambia la GEOMETRÍA: el calendario pasa de 12
+    columnas (una por MES) a 55 (una por semana + el total), y parchear eso
+    dejaría restos de la rejilla vieja a la derecha."""
+    if titulo in wb.sheetnames:
+        wb.remove(wb[titulo])
+    return wb.create_sheet(titulo, indice)
+
+
+#: ⚠ El `&""` de los criterios de `SUMIFS`/`COUNTIF` NO es decorativo: el
+#: `IF` de pycel NO es perezoso —evalúa las DOS ramas— y con la celda del
+#: nombre VACÍA el criterio llega como `None`, que su `criteria_parser`
+#: rechaza («Couldn't parse criteria: None»). Sin el `&""`, 60 fórmulas del
+#: 05 se quedaban sin valor cacheado y las demostraciones leían
+#: `ERR:FormulaEvalError` donde tiene que haber una celda en blanco. Medido
+#: el 2026-08-24. En Excel es inocuo: la rama nunca se ejecuta.
+def _n05_calendario(wb, cambios):
+    """§4 · DOM-04/TEC-04/COM-06 — el calendario cuenta DÍAS.
+
+    Lo que había: **una celda por MES** (`B5:M5` = Ene..Dic) y
+    `N6='=IF(B6="V",1,0)+…'`, doce sumandos: quien disfruta agosto entero
+    figuraba con **1 día usado y 29 restantes**. Y el 30 del convenio estaba
+    escrito dentro de 30 fórmulas de `Solicitudes!F` (COM-24).
+
+    Lo que hay: una fila por empleado × 53 semanas, y el cómputo NO sale de
+    las celdas pintadas sino de las FECHAS de las solicitudes aprobadas —que
+    es lo que elimina la doble fuente de verdad—.
+    """
+    ws = _rehacer(wb, 'Calendario Anual', 1)
+
+    ws['A1'] = 'Calendario de Vacaciones — Año: ______'
+    ws['A1'].font = Font(bold=True, size=14)
+    ws['A2'] = 'AI Chef Pro · aichef.pro — Kit Gestión de Personal y Turnos'
+    ws['A3'] = 'Códigos:'
+    ws['A3'].font = Font(bold=True, size=9)
+
+    # fila 4 · número de semana · fila 5 · lunes de esa semana
+    ws['A4'] = 'Semana nº'
+    ws['A5'] = 'Lunes de la semana'
+    for c in (1,):
+        ws.cell(row=4, column=c).font = Font(bold=True, size=9)
+        ws.cell(row=5, column=c).font = Font(bold=True, size=9)
+    for n in range(1, SEMANAS + 1):
+        col = get_column_letter(1 + n)
+        cel = ws['{}4'.format(col)]
+        cel.value = n
+        cel.font = Font(bold=True, size=8, color='FFFFFF')
+        cel.fill = PatternFill('solid', fgColor=motor.CAB)
+        cel.alignment = Alignment(horizontal='center')
+        fecha = ws['{}5'.format(col)]
+        if n == 1:
+            fecha.value = LUNES_SEMANA_1
+        else:
+            anterior = get_column_letter(n)
+            _formula(ws, '{}5'.format(col), '={}5+7'.format(anterior))
+        fecha.number_format = 'dd/mm'
+        fecha.font = Font(size=8)
+        fecha.alignment = Alignment(horizontal='center')
+        ws.column_dimensions[col].width = 2.4
+    motor.marcar_verde(ws, 'B5')
+
+    ws['{}5'.format(COL_TOT)] = 'Días Usados'
+    ws['{}5'.format(COL_TOT)].font = Font(bold=True, size=9)
+    ws['{}5'.format(COL_TOT)].alignment = Alignment(wrap_text=True,
+                                                    horizontal='center')
+
+    # 30 empleados × 53 semanas
+    for f in range(EMP0, EMP1 + 1):
+        _formula(ws, '{}{}'.format(COL_TOT, f),
+                 '=IF($A{f}="","",SUMIFS(Solicitudes!$D$5:$D$34,'
+                 'Solicitudes!$A$5:$A$34,$A{f}&"",'
+                 'Solicitudes!$G$5:$G$34,"Aprobado"))'.format(f=f))
+    motor.marcar_verde(ws, 'A{}:{}{}'.format(EMP0, COL_SN, EMP1))
+    for f in range(EMP0, EMP1 + 1):
+        for n in range(1, SEMANAS + 1):
+            ws.cell(row=f, column=1 + n).alignment = Alignment(
+                horizontal='center')
+            ws.cell(row=f, column=1 + n).font = Font(size=8)
+
+    # fila 36 · temporada · fila 37 · ausencias · fila 38 · alerta
+    ws['A{}'.format(F_TEMP)] = 'Temporada (Alta / Normal)'
+    ws['A{}'.format(F_AUS)] = 'Ausencias en la semana'
+    ws['A{}'.format(F_ALERTA)] = 'Cobertura (alerta)'
+    for f in (F_TEMP, F_AUS, F_ALERTA):
+        ws.cell(row=f, column=1).font = Font(bold=True, size=9)
+    for n in range(1, SEMANAS + 1):
+        col = get_column_letter(1 + n)
+        ws['{}{}'.format(col, F_TEMP)] = ('Alta' if n in TEMPORADA_ALTA
+                                          else 'Normal')
+        ws['{}{}'.format(col, F_TEMP)].font = Font(size=7)
+        ws['{}{}'.format(col, F_TEMP)].alignment = Alignment(
+            horizontal='center', text_rotation=90)
+        _formula(ws, '{}{}'.format(col, F_AUS),
+                 '=COUNTIF({c}${a}:{c}${b},"V")+COUNTIF({c}${a}:{c}${b},"B")'
+                 .format(c=col, a=EMP0, b=EMP1))
+        _formula(ws, '{}{}'.format(col, F_ALERTA),
+                 '=IF({c}${s}=0,"",IF(AND({c}${t}="Alta",{c}${s}>0),'
+                 '"⛔ TEMP. ALTA",IF({c}${s}>Cobertura!$B$3,"⚠ EXCESO","")))'
+                 .format(c=col, s=F_AUS, t=F_TEMP))
+        ws['{}{}'.format(col, F_AUS)].font = Font(size=8)
+        ws['{}{}'.format(col, F_AUS)].alignment = Alignment(
+            horizontal='center')
+        ws['{}{}'.format(col, F_ALERTA)].font = Font(size=7)
+    motor.marcar_verde(ws, 'B{f}:{c}{f}'.format(f=F_TEMP, c=COL_SN))
+    ws.row_dimensions[F_TEMP].height = 42
+
+    # ⚠ La fila de temporada NO puede llevar una DV de LISTA. Dos gates del
+    # motor lo impiden, y los dos son correctos: `leyenda_coherente` trata
+    # cualquier lista de valores de 1-2 caracteres de ESTA hoja como códigos
+    # de la leyenda única (adiós a «S»/«N»), y `main.demo_leyenda` exige que
+    # la hoja tenga EXACTAMENTE UNA lista inline —la de los códigos de
+    # ausencia—, así que hasta «Alta,Normal» la tumbaba. Se resuelve con una
+    # validación `custom`: sin desplegable, pero con mensaje de entrada y
+    # rechazo de lo que no sea Alta/Normal. Las 53 celdas van precargadas
+    # justo por eso: el cliente sólo cambia texto que ya está escrito.
+    # Su `promptTitle` NO lleva la marca del motor a propósito: `aplicar_dv`
+    # limpia por marca TODAS las DV de esta hoja antes de escribir la suya.
+    _dv(ws, 'B{f}:{c}{f}'.format(f=F_TEMP, c=COL_SN), None,
+        'Temporada no válida',
+        'Escribe «Alta» en tus semanas de máxima demanda. Una ausencia en una '
+        'semana de temporada alta salta en rojo aunque no supere el máximo de '
+        'ausencias simultáneas.', 'Sólo se admite Alta o Normal.',
+        marca='Temporada', tipo='custom',
+        formula='OR(B{f}="Alta",B{f}="Normal")'.format(f=F_TEMP))
+
+    _anchos(ws, {'A': 22, COL_TOT: 11})
+    ws['A{}'.format(F_ALERTA + 2)] = motor.PIE
+    ws['A{}'.format(F_ALERTA + 2)].font = Font(size=8, color='888888')
+    _merges(ws, ['A1:{}1'.format(COL_TOT), 'A2:{}2'.format(COL_TOT),
+                 'A{0}:{1}{0}'.format(F_ALERTA + 2, COL_TOT)])
+    cambios.append('05:Calendario Anual!B4:{}{}: rejilla de 12 meses → 53 '
+                   'semanas; «Días Usados» ({}) suma los DÍAS de las '
+                   'solicitudes aprobadas en vez de contar meses marcados '
+                   '(DOM-04/TEC-04/COM-06)'
+                   .format(COL_SN, F_ALERTA, COL_TOT))
+
+
+def _n05_saldo(wb, cambios):
+    """§4 · DOM-19/TEC-18/COM-24 — hoja nueva `Saldo Vacaciones`.
+
+    El derecho deja de estar escrito en 30 fórmulas (`Solicitudes!F5:F34` era
+    `=IF(E5<>"",30-E5,"")`) y pasa a UNA celda verde, con prorrateo para quien
+    entra a mitad de año y con el saldo descontando ya la solicitud EN CURSO,
+    que es lo que impide aprobar dos veces los mismos días.
+    """
+    ws = _rehacer(wb, 'Saldo Vacaciones', 3)
+    ws['A1'] = 'Saldo de Vacaciones por Empleado'
+    ws['A1'].font = Font(bold=True, size=14)
+
+    coord = motor.parametro(ws, 2, 'dias_convenio', col_rotulo=1, col_valor=2)
+    ws['D2'] = 'Fecha de cierre del año:'
+    _verde(ws, 'E2', datetime.datetime(2027, 12, 31), motor.FMT_FECHA)
+    ws['A3'] = ('▸ Los nombres salen del Calendario Anual. Rellena sólo la '
+                'fecha de alta (para prorratear a quien entra a mitad de año) '
+                'y, si alguien tiene un derecho distinto del general, sus '
+                'días propios.')
+    ws['A3'].font = Font(size=9, italic=True)
+    ws['A3'].alignment = Alignment(wrap_text=True, vertical='top')
+    ws.row_dimensions[3].height = 28
+
+    _cabecera(ws, 4, ['Empleado', 'Fecha de alta', 'Días propios',
+                      'Derecho del año', 'Disfrutados', 'Pendientes',
+                      'Le quedan', 'Aviso'])
+    for i in range(motor.CAPACIDAD):
+        f, cal = 5 + i, EMP0 + i
+        _formula(ws, 'A{}'.format(f),
+                 "=IF('Calendario Anual'!$A{c}=\"\",\"\","
+                 "'Calendario Anual'!$A{c})".format(c=cal))
+        _verde(ws, 'B{}'.format(f), fmt=motor.FMT_FECHA)
+        _verde(ws, 'C{}'.format(f), fmt=motor.FMT_ENT)
+        # derecho: el general (B2) o el propio (C); prorrateado por la fecha de
+        # alta y acotado con MIN para que un alta anterior al 1 de enero no
+        # genere MÁS días de los que hay.
+        _formula(ws, 'D{}'.format(f),
+                 '=IFERROR(IF($A{f}="","",IF($B{f}="",IF($C{f}="",$B$2,$C{f}),'
+                 'MIN(IF($C{f}="",$B$2,$C{f}),'
+                 'ROUND(IF($C{f}="",$B$2,$C{f})*($E$2-$B{f}+1)/365,1)))),"")'
+                 .format(f=f), motor.FMT_DEC1)
+        for col, estado in (('E', 'Aprobado'), ('F', 'Pendiente')):
+            _formula(ws, '{}{}'.format(col, f),
+                     '=IF($A{f}="","",SUMIFS(Solicitudes!$D$5:$D$34,'
+                     'Solicitudes!$A$5:$A$34,$A{f}&"",'
+                     'Solicitudes!$G$5:$G$34,"{e}"))'.format(f=f, e=estado),
+                     motor.FMT_DEC1)
+        _formula(ws, 'G{}'.format(f),
+                 '=IF($D{f}="","",ROUND($D{f}-$E{f}-$F{f},1))'.format(f=f),
+                 motor.FMT_DEC1)
+        _formula(ws, 'H{}'.format(f),
+                 '=IF($G{f}="","",IF($G{f}<0,"⛔ saldo negativo",'
+                 'IF($G{f}=0,"⚠ sin días disponibles","")))'.format(f=f))
+    _cf(ws, 'H5:H{}'.format(4 + motor.CAPACIDAD), motor.VOC_ALERTA)
+
+    fin = 4 + motor.CAPACIDAD
+    ws['A{}'.format(fin + 2)] = (
+        '▸ «Le quedan» descuenta las solicitudes APROBADAS y también las '
+        'PENDIENTES: es el saldo que puedes comprometer hoy sin aprobar dos '
+        'veces los mismos días.')
+    ws['A{}'.format(fin + 3)] = (
+        '▸ El prorrateo de quien entra a mitad de año es lineal sobre 365 '
+        'días. Tu convenio puede calcularlo por meses completos: en ese caso '
+        'escribe los días que correspondan en «Días propios».')
+    for r in (fin + 2, fin + 3):
+        ws.cell(row=r, column=1).font = Font(size=9, italic=True)
+        ws.cell(row=r, column=1).alignment = Alignment(wrap_text=True,
+                                                       vertical='top')
+        ws.row_dimensions[r].height = 26
+    ws['A{}'.format(fin + 5)] = motor.PIE
+    ws['A{}'.format(fin + 5)].font = Font(size=8, color='888888')
+    _anchos(ws, {'A': 24, 'B': 16, 'C': 14, 'D': 16, 'E': 14, 'F': 14,
+                 'G': 14, 'H': 24})
+    _merges(ws, ['A1:H1', 'A3:H3', 'A{0}:H{0}'.format(fin + 2),
+                 'A{0}:H{0}'.format(fin + 3),
+                 'A{0}:H{0}'.format(fin + 5)])
+    ws.freeze_panes = 'A5'
+    cambios.append('05:Saldo Vacaciones!{}: días de convenio en UNA celda '
+                   '(antes en 30 fórmulas), prorrateo por fecha de alta y '
+                   'saldo que descuenta la solicitud en curso '
+                   '(DOM-19/TEC-18/COM-24)'.format(coord))
+
+
+def _n05_solicitudes(wb, cambios):
+    """§4 · DOM-20 — fechas invertidas, saldo por INDEX/MATCH y verificación
+    de que el nombre existe en el calendario.
+
+    `D5='=IF(AND(B5<>"",C5<>""),C5-B5+1,"")'` daba **-4 días** con las fechas
+    al revés, y ese número entraba tal cual en el saldo.
+    """
+    ws = wb['Solicitudes']
+    ult = 4 + motor.CAPACIDAD
+    _vaciar(ws, 5, ult)          # la E de la v1.1 era de entrada y hoy calcula
+    _cabecera(ws, 4, ['Empleado', 'Fecha Inicio', 'Fecha Fin',
+                      'Días solicitados', 'Ya disfrutados', 'Le quedan',
+                      'Estado', 'Aviso'])
+    for f in range(5, ult + 1):
+        _formula(ws, 'D{}'.format(f),
+                 '=IF(OR($B{f}="",$C{f}=""),"",IF($C{f}<$B{f},'
+                 '"⚠ fechas invertidas",$C{f}-$B{f}+1))'.format(f=f))
+        for col, origen in (('E', 'E'), ('F', 'G')):
+            _formula(ws, '{}{}'.format(col, f),
+                     "=IFERROR(IF($A{f}=\"\",\"\",INDEX("
+                     "'Saldo Vacaciones'!${o}$5:${o}${u},MATCH($A{f},"
+                     "'Saldo Vacaciones'!$A$5:$A${u},0))),\"\")"
+                     .format(f=f, o=origen, u=ult), motor.FMT_DEC1)
+        _formula(ws, 'H{}'.format(f),
+                 '=IF($A{f}="","",IF(COUNTIF(\'Calendario Anual\'!$A${a}:$A${b}'
+                 ',$A{f}&"")=0,"⚠ ese nombre no está en el calendario",""))'
+                 .format(f=f, a=EMP0, b=EMP1))
+    _cf(ws, 'D5:D{}'.format(ult), motor.VOC_ALERTA)
+    _cf(ws, 'H5:H{}'.format(ult), motor.VOC_ALERTA)
+    _anchos(ws, {'A': 24, 'B': 14, 'C': 14, 'D': 16, 'E': 14, 'F': 12,
+                 'G': 14, 'H': 30})
+    ws['A{}'.format(ult + 2)] = motor.PIE
+    ws['A{}'.format(ult + 2)].font = Font(size=8, color='888888')
+    _merges(ws, ['A1:H1', 'A2:H2', 'A{0}:H{0}'.format(ult + 2)])
+    cambios.append('05:Solicitudes!D5:H{}: aviso de fechas invertidas, saldo '
+                   'por INDEX/MATCH sobre «Saldo Vacaciones» y verificación '
+                   'del nombre contra el calendario (DOM-20)'.format(ult))
+
+
+def _n05_cobertura(wb, cambios):
+    """§4 · DOM-20/COM-20 — `Cobertura` deja de ser una tabla vacía.
+
+    La hoja tenía dos cabeceras y CERO datos, mientras la landing prometía
+    «cobertura mínima» y «periodos de máxima demanda».
+    """
+    ws = wb['Cobertura']
+    motor._limpiar_dv(ws)
+    _merges(ws, [])            # el pie de la v1.1 va combinado en A29:E29
+    fin_sust = 11 + motor.CAPACIDAD                      # 41
+    _vaciar(ws, 28)
+
+    _rotulo(ws, 3, 'Máximo de ausencias simultáneas por semana:')
+    _verde(ws, 'B3', 4, motor.FMT_ENT)
+    ws['C3'] = ('← por encima de esto, la fila «Cobertura» del calendario '
+                'salta en ámbar')
+    ws['C3'].font = Font(size=9, italic=True)
+    _seccion(ws, 4, 'PERSONAL MÍNIMO POR TURNO', 6)
+    _cabecera(ws, 5, ['Turno', 'Mínimo Personal', 'Cocina', 'Sala', 'Barra'])
+    # Un mínimo de servicio realista en un casual de 80 cubiertos/día: la
+    # mañana es montaje y comidas, la tarde es el servicio fuerte y la noche
+    # cierra con menos sala.
+    for i, fila in enumerate([('Mañana', 2, 2, 0), ('Tarde', 3, 2, 1),
+                              ('Noche', 2, 2, 1)]):
+        f = 6 + i
+        ws['A{}'.format(f)] = fila[0]
+        for j, col in enumerate(('C', 'D', 'E')):
+            _verde(ws, '{}{}'.format(col, f), fila[1 + j], motor.FMT_ENT)
+        _formula(ws, 'B{}'.format(f),
+                 '=IF(COUNT($C{f}:$E{f})=0,"",$C{f}+$D{f}+$E{f})'.format(f=f),
+                 motor.FMT_ENT)
+
+    _seccion(ws, 10, 'COBERTURA: QUIÉN SUSTITUYE A QUIÉN', 6)
+    _cabecera(ws, 11, ['Empleado Ausente', 'Puesto', 'Sustituto 1',
+                       'Sustituto 2', 'Notas', 'Días pendientes'])
+    for f in range(12, fin_sust + 1):
+        _formula(ws, 'F{}'.format(f),
+                 "=IFERROR(IF($A{f}=\"\",\"\",INDEX('Saldo Vacaciones'!"
+                 "$G$5:$G${u},MATCH($A{f},'Saldo Vacaciones'!$A$5:$A${u},0))"
+                 "),\"\")".format(f=f, u=4 + motor.CAPACIDAD),
+                 motor.FMT_DEC1)
+    _dv(ws, 'B12:B{}'.format(fin_sust), PUESTOS, 'Puesto no válido',
+        'El puesto decide quién puede sustituir a quién: un ayudante de sala '
+        'no cubre una jefatura de cocina. Si te falta alguno, desprotege la '
+        'hoja y edita la lista.', 'Elige el puesto de la persona ausente.')
+
+    _seccion(ws, 43, 'INDICADORES DE COBERTURA', 6)
+    indicadores = [
+        (44, 'Plantilla total en el calendario:',
+         "=COUNTIF('Calendario Anual'!$A${a}:$A${b},\"?*\")"),
+        (45, 'Pico de ausencias simultáneas (peor semana):',
+         "=MAX('Calendario Anual'!$B${s}:${c}${s})"),
+        (46, 'Semanas por encima de tu máximo:',
+         "=COUNTIF('Calendario Anual'!$B${s}:${c}${s},\">\"&$B$3)"),
+        (47, 'Semanas de temporada alta con alguien ausente:',
+         "=SUMPRODUCT(('Calendario Anual'!$B${t}:${c}${t}=\"Alta\")*"
+         "('Calendario Anual'!$B${s}:${c}${s}>0))"),
+    ]
+    for fila, rotulo, formula in indicadores:
+        _rotulo(ws, fila, rotulo)
+        _formula(ws, 'B{}'.format(fila),
+                 formula.format(a=EMP0, b=EMP1, s=F_AUS, t=F_TEMP, c=COL_SN),
+                 motor.FMT_ENT)
+
+    ws['A49'] = ('▸ Los indicadores leen la fila «Ausencias en la semana» del '
+                 'Calendario Anual, que cuenta las V y las B marcadas en la '
+                 'rejilla. Marca ahí lo que planifiques y aquí verás si te '
+                 'quedas sin equipo.')
+    ws['A49'].font = Font(size=9, italic=True)
+    ws['A49'].alignment = Alignment(wrap_text=True, vertical='top')
+    ws.row_dimensions[49].height = 26
+    ws['A51'] = motor.PIE
+    ws['A51'].font = Font(size=8, color='888888')
+    _anchos(ws, {'A': 40, 'B': 18, 'C': 22, 'D': 22, 'E': 26, 'F': 16})
+    _merges(ws, ['A1:F1', 'A2:F2', 'A49:F49', 'A51:F51'])
+    cambios.append('05:Cobertura!B3/B44:B47: máximo de ausencias en celda, '
+                   'personal mínimo por turno precargado e indicadores reales '
+                   'de pico y temporada alta (COM-20)')
+
+
+def _n05_instrucciones(wb, cambios):
+    ws = wb['Instrucciones']
+    _instrucciones(ws, [
+        '05 · Planificación de Vacaciones Anual',
+        None,
+        'Cómo usar esta plantilla:',
+        "▸ Escribe los nombres una sola vez, en la columna A del 'Calendario "
+        "Anual'. El resto de hojas los leen de ahí.",
+        '▸ La rejilla es de SEMANAS, no de meses: la fila 4 numera las 53 '
+        'semanas del año y la fila 5 enseña el lunes de cada una. Cambia el '
+        'lunes de la semana 1 (celda verde B5) y las 52 restantes se '
+        'recalculan solas.',
+        '▸ ' + motor.LEYENDA_AUSENCIA + '.',
+        "▸ Registra cada petición en 'Solicitudes' con sus fechas de inicio y "
+        'fin. Los días se cuentan SOLOS y avisan si las fechas están al revés.',
+        "▸ El saldo real vive en 'Saldo Vacaciones': derecho del año, "
+        'disfrutados, pendientes y lo que le queda a cada persona. Descuenta '
+        'también las solicitudes pendientes, para que no apruebes dos veces '
+        'los mismos días.',
+        "▸ En 'Cobertura' fijas el personal mínimo por turno y el máximo de "
+        'ausencias que aguantas a la vez. Con eso, la fila «Cobertura» del '
+        'calendario avisa semana a semana.',
+        None,
+        'Por qué el calendario ya no cuenta meses:',
+        '▸ En la versión 1.1 había una casilla por MES, así que quien '
+        'disfrutaba agosto entero figuraba con 1 día usado y 29 restantes. '
+        'Ahora la columna «Días Usados» suma los DÍAS de las solicitudes '
+        'aprobadas de esa persona: la rejilla sirve para VER el año de un '
+        'vistazo y las solicitudes son la fuente del cómputo.',
+        None,
+        'Legislación española:',
+        '▸ 30 días naturales de vacaciones al año (art. 38 ET). El número '
+        "está en UNA celda verde ('Saldo Vacaciones', B2): si tu convenio "
+        'habla de 22 días laborables, escribe 22 y cuenta sólo días de '
+        'trabajo en las solicitudes.',
+        '▸ El calendario de vacaciones se fija de común acuerdo y se conoce '
+        'con al menos dos meses de antelación a su disfrute (art. 38.3 ET).',
+        '▸ Las vacaciones no se sustituyen por dinero salvo al liquidar el '
+        'contrato.',
+        None,
+        'Aviso: tu convenio de hostelería manda sobre los mínimos del '
+        'Estatuto y puede mejorar cualquiera de estos números.',
+    ])
+    cambios.append('05:Instrucciones!B2:B24: reescritas — rejilla por '
+                   'semanas, hoja «Saldo Vacaciones» y el 30 como celda '
+                   'editable, no como constante de 30 fórmulas')
+
+
+# ==========================================================================
+# Contrato con main.py
+# ==========================================================================
+def pre(wb, fname, cambios):
+    """Todo el trabajo del grupo, ANTES de `motor.aplicar` (ver la cabecera)."""
+    if fname.startswith('03-'):
+        _n03_nominas(wb, cambios)
+        _n03_ratio(wb, cambios)
+        _n03_prevision(wb, cambios)
+        _n03_instrucciones(wb, cambios)
+    elif fname.startswith('04-'):
+        _n04(wb, cambios)
+        _n04_instrucciones(wb, cambios)
+    elif fname.startswith('05-'):
+        _n05_calendario(wb, cambios)
+        _n05_saldo(wb, cambios)
+        _n05_solicitudes(wb, cambios)
+        _n05_cobertura(wb, cambios)
+        _n05_instrucciones(wb, cambios)
+    return cambios
+
+
+# ==========================================================================
+# Demostraciones con pycel (SPEC §5) — se cambian ENTRADAS y se comprueba la
+# DIRECCIÓN del resultado, que es lo único que demuestra que la cadena existe.
+# ==========================================================================
+import contextlib                                          # noqa: E402
+import os                                                  # noqa: E402
+
+EPOCA = datetime.datetime(1899, 12, 30)
+
+
+def _serie(y, m, d):
+    """Fecha → número de serie de Excel. pycel opera con el serial, no con el
+    `datetime`: pasarle un objeto fecha en `set_value` deja la resta de
+    `C5-B5+1` en `#VALUE!`."""
+    return (datetime.datetime(y, m, d) - EPOCA).days
+
+
+def _xl(path):
+    from pycel import ExcelCompiler
+    return ExcelCompiler(filename=path)
+
+
+def _ev(xl, ref):
+    with open(os.devnull, 'w') as dn, contextlib.redirect_stderr(dn):
+        try:
+            return xl.evaluate(ref)
+        except Exception as e:                              # noqa: BLE001
+            return 'ERR:{}'.format(type(e).__name__)
+
+
+def _sv(xl, ref, valor):
+    with open(os.devnull, 'w') as dn, contextlib.redirect_stderr(dn):
+        try:
+            xl.evaluate(ref)
+            xl.set_value(ref, valor)
+            return True
+        except Exception:                                   # noqa: BLE001
+            return False
+
+
+def _num(v):
+    return isinstance(v, (int, float)) and not isinstance(v, bool)
+
+
+def _calentar(xl, refs):
+    """⚠ pycel sólo propaga un `set_value` a las celdas que YA están en su
+    grafo de dependencias. Medido el 2026-08-24 con la fila de cobertura del
+    05: escribir «V» en `Calendario Anual!AB6` sin haber evaluado antes nada
+    de esa columna dejaba `AB37` valiendo 0 y el indicador
+    `Cobertura!B47` (SUMPRODUCT sobre las 53 semanas) en 0 — la demostración
+    «fallaba» por un artefacto del evaluador, no por la hoja. Evaluando primero
+    las SALIDAS, la cadena entera entra en el grafo y la invalidación funciona.
+    """
+    return dict((r, _ev(xl, r)) for r in refs)
+
+
+def _d03_coste(carpeta):
+    """§3 · la cotización, las pagas y el coste/hora salen de CELDAS."""
+    p = os.path.join(carpeta, '03-coste-laboral-mensual.xlsx')
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    ref = lambda c: "'Nóminas'!{}".format(c)                # noqa: E731
+    vacia = dict((c, _ev(xl, ref(c + '5'))) for c in 'EFGI')
+    _sv(xl, ref('C5'), 1500)
+    _sv(xl, ref('D5'), 14)
+    _sv(xl, ref('H5'), 40)
+    base = dict((c, _ev(xl, ref(c + '5'))) for c in 'EFGI')
+    _sv(xl, ref('D5'), 12)
+    doce = _ev(xl, ref('E5'))
+    _sv(xl, ref('D5'), 14)
+    _sv(xl, ref('C2'), 0.40)
+    ss40 = _ev(xl, ref('F5'))
+    ok = (all(v in ('', None) for v in vacia.values())
+          and _num(base['E']) and abs(base['E'] - 1750.0) < 0.01
+          and _num(base['F']) and abs(base['F'] - 577.5) < 0.01
+          and _num(base['G']) and abs(base['G'] - 2327.5) < 0.01
+          and _num(base['I']) and abs(base['I'] - 13.43) < 0.02
+          and _num(doce) and abs(doce - 1500.0) < 0.01
+          and _num(ss40) and ss40 > base['F'])
+    return {
+        'ref': '03-coste-laboral-mensual.xlsx:Nóminas:C2/E5/F5/G5/I5',
+        'fila_vacia': dict((k, str(v)) for k, v in vacia.items()),
+        'bruto_1500_x14_pagas': {'prorrateado_E5': base['E'],
+                                 'cotizacion_F5': base['F'],
+                                 'coste_total_G5': base['G'],
+                                 'coste_hora_I5': base['I']},
+        'mismo_bruto_en_12_pagas_E5': doce,
+        'cotizacion_al_40_por_ciento_F5': ss40,
+        'ok': ok,
+        'nota': 'la v1.1 hacía `=IF(C5<>"",C5*0.30,"")` sin pagas: 1.500 € en '
+                '14 pagas costaban 1.950 €/mes en vez de 2.327,50 € — un 19 % '
+                'de error a favor del optimismo (DOM-08/DOM-31/TEC-14)'}
+
+
+def _d03_semaforo(carpeta):
+    """§3 · el MISMO ratio del 40 % es rojo en un casual y ámbar en un fine
+    dining, porque los umbrales salen de la tabla por VLOOKUP (DOM-16)."""
+    p = os.path.join(carpeta, '03-coste-laboral-mensual.xlsx')
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    hoja = "'Ratio Coste Laboral'!"
+    fresco = {'ratio_B7': _ev(xl, hoja + 'B7'),
+              'veredicto_B9': _ev(xl, hoja + 'B9')}
+    _sv(xl, hoja + 'B5', 20000)
+    _sv(xl, hoja + 'B4', 50000)
+    sin_tipo = {'ratio_B7': _ev(xl, hoja + 'B7'),
+                'objetivo_D7': _ev(xl, hoja + 'D7'),
+                'maximo_D8': _ev(xl, hoja + 'D8'),
+                'veredicto_B9': _ev(xl, hoja + 'B9')}
+    _sv(xl, hoja + 'B3', 'Fine Dining / Alta Cocina')
+    fine = {'objetivo_D7': _ev(xl, hoja + 'D7'),
+            'maximo_D8': _ev(xl, hoja + 'D8'),
+            'veredicto_B9': _ev(xl, hoja + 'B9')}
+    _sv(xl, hoja + 'B3', 'Fast Casual / Comida Rápida')
+    fast = {'objetivo_D7': _ev(xl, hoja + 'D7'),
+            'maximo_D8': _ev(xl, hoja + 'D8'),
+            'veredicto_B9': _ev(xl, hoja + 'B9')}
+    ok = (fresco['ratio_B7'] in ('', None)
+          and 'introduce' in str(fresco['veredicto_B9'])
+          and abs((sin_tipo['ratio_B7'] or 0) - 0.4) < 0.0001
+          and 'ACCIÓN CORRECTIVA' in str(sin_tipo['veredicto_B9'])
+          and abs((fine['objetivo_D7'] or 0) - 0.40) < 0.0001
+          and 'VIGILAR' in str(fine['veredicto_B9'])
+          and abs((fast['maximo_D8'] or 0) - 0.30) < 0.0001
+          and 'ACCIÓN CORRECTIVA' in str(fast['veredicto_B9']))
+    return {'ref': '03-coste-laboral-mensual.xlsx:Ratio Coste Laboral:B9',
+            'hoja_recien_descargada': dict((k, str(v))
+                                           for k, v in fresco.items()),
+            'ratio_40_sin_tipo_elegido': sin_tipo,
+            'ratio_40_en_fine_dining': fine,
+            'ratio_40_en_fast_casual': fast,
+            'ok': ok,
+            'nota': 'la v1.1 daba «🟢 EXCELENTE (<30%)» con la hoja vacía y '
+                    'suspendía a cualquiera por encima del 35 %, incluida la '
+                    'alta cocina que su propia tabla declara correcta hasta '
+                    'el 42 % (DOM-16/COM-11/COM-17)'}
+
+
+def _d03_fte(carpeta):
+    """§3 · la cadena de dimensionamiento por SERVICIO: 7 FTE por defecto, y
+    reacciona a los cubiertos, a los servicios y a un ratio a cero."""
+    p = os.path.join(carpeta, '03-coste-laboral-mensual.xlsx')
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    h = "'Previsión por Servicio'!"
+    base = dict(cubiertos_por_servicio_B6=_ev(xl, h + 'B6'),
+                cocina_B18=_ev(xl, h + 'B18'), sala_C18=_ev(xl, h + 'C18'),
+                barra_D18=_ev(xl, h + 'D18'),
+                por_servicio_E18=_ev(xl, h + 'E18'),
+                presencias_B19=_ev(xl, h + 'B19'),
+                horas_semana_B20=_ev(xl, h + 'B20'),
+                fte_B21=_ev(xl, h + 'B21'), coste_B22=_ev(xl, h + 'B22'))
+    _sv(xl, h + 'B4', 160)
+    doble = {'fte_B21': _ev(xl, h + 'B21'), 'coste_B22': _ev(xl, h + 'B22')}
+    _sv(xl, h + 'B4', 80)
+    _sv(xl, h + 'B11', 7)
+    siete_dias = _ev(xl, h + 'B21')
+    _sv(xl, h + 'B11', 6)
+    _sv(xl, h + 'B9', 0)
+    sin_barra = {'barra_D18': _ev(xl, h + 'D18'),
+                 'por_servicio_E18': _ev(xl, h + 'E18')}
+    ok = (base['cubiertos_por_servicio_B6'] == 40
+          and base['por_servicio_E18'] == 5
+          and base['presencias_B19'] == 10
+          and base['horas_semana_B20'] == 240
+          and base['fte_B21'] == 7
+          and _num(base['coste_B22'])
+          and abs(base['coste_B22'] - 16292.50) < 0.01
+          and _num(doble['fte_B21']) and doble['fte_B21'] > 7
+          and _num(siete_dias) and siete_dias > 7
+          and sin_barra['barra_D18'] == 0
+          and sin_barra['por_servicio_E18'] == 4)
+    return {'ref': '03-coste-laboral-mensual.xlsx:Previsión por Servicio:B21',
+            'por_defecto_80_cubiertos_2_servicios_casual': base,
+            'al_doblar_los_cubiertos_a_160': doble,
+            'abriendo_7_dias_en_vez_de_6_fte': siete_dias,
+            'con_el_ratio_de_barra_a_cero': sin_barra,
+            'ok': ok,
+            'nota': 'la v1.1 dividía los cubiertos del DÍA entre el ratio y '
+                    'daba 15 personas por turno para 80 cubiertos; y sus '
+                    '«días de apertura» no entraban en ninguna fórmula '
+                    '(DOM-09/DOM-18/TEC-15/COM-09)'}
+
+
+def _d04_progreso(carpeta):
+    """§4 · 0 % recién descargado, y la marca «—» sale del denominador."""
+    p = os.path.join(carpeta, '04-onboarding-nuevo-empleado.xlsx')
+    if not os.path.isfile(p):
+        return None
+    import openpyxl
+    ws = openpyxl.load_workbook(p)['Checklist Onboarding']
+    tramos = [(r0, r1) for _t, _h, r0, r1 in motor.secciones_04(ws)]
+    fila = None
+    for r in range(1, ws.max_row + 1):
+        v = ws.cell(row=r, column=1).value
+        if isinstance(v, str) and v.strip().upper() == 'RESUMEN':
+            fila = r
+            break
+    if fila is None:
+        return {'ok': False, 'nota': 'no se encuentra el bloque RESUMEN'}
+    h = "'Checklist Onboarding'!"
+    c1, c2, c3 = 'C{}'.format(fila + 1), 'C{}'.format(fila + 2), \
+                 'C{}'.format(fila + 3)
+    tot = 'E{}'.format(fila + 1)
+    xl = _xl(p)
+    fresco = {'completadas': _ev(xl, h + c1), 'aplicables': _ev(xl, h + c2),
+              'total': _ev(xl, h + tot), 'progreso': _ev(xl, h + c3)}
+    _sv(xl, h + 'F{}'.format(tramos[0][0]), '✓')
+    _sv(xl, h + 'F{}'.format(tramos[1][0]), '✓')
+    dos = {'completadas': _ev(xl, h + c1), 'progreso': _ev(xl, h + c3)}
+    _sv(xl, h + 'F{}'.format(tramos[2][0]), '—')
+    noaplica = {'aplicables': _ev(xl, h + c2), 'progreso': _ev(xl, h + c3)}
+    total_tareas = sum(b - a + 1 for a, b in tramos)
+    ok = (fresco['completadas'] == 0 and fresco['progreso'] == 0
+          and fresco['total'] == total_tareas == 50
+          and fresco['aplicables'] == 50
+          and dos['completadas'] == 2
+          and noaplica['aplicables'] == 49
+          and noaplica['progreso'] > dos['progreso'])
+    return {'ref': '04-onboarding-nuevo-empleado.xlsx:Checklist '
+                   'Onboarding:{}'.format(c1),
+            'tramos': tramos, 'tareas': total_tareas,
+            'recien_descargado': fresco,
+            'con_2_tareas_hechas': dos,
+            'y_1_marcada_como_no_aplicable': noaplica,
+            'ok': ok,
+            'nota': 'la v1.1 barría `F7:F65` de corrido y se tragaba las 4 '
+                    'cabeceras de sección, que valen literalmente «✓»: abría '
+                    'en «4 de 51 completadas» y 8,51 % con el checklist en '
+                    'blanco (DOM-01/TEC-02/TEC-13/COM-03)'}
+
+
+def _d05_dias(carpeta):
+    """§4 · agosto entero deja de contar como «1 día usado»."""
+    p = os.path.join(carpeta, '05-planificacion-vacaciones.xlsx')
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    cal, sol, sal = "'Calendario Anual'!", "'Solicitudes'!", \
+                    "'Saldo Vacaciones'!"
+    calientes = _calentar(xl, [cal + '{}6'.format(COL_TOT)]
+                          + [sal + c + '5' for c in 'ADEFGH']
+                          + [sol + c + '5' for c in 'DEFH'])
+    fresco = {'dias_usados_BC6': calientes[cal + '{}6'.format(COL_TOT)],
+              'derecho_D5': calientes[sal + 'D5'],
+              'le_quedan_G5': calientes[sal + 'G5']}
+    _sv(xl, cal + 'A6', 'Ana Ruiz')
+    _sv(xl, sol + 'A5', 'Ana Ruiz')
+    _sv(xl, sol + 'B5', _serie(2027, 8, 1))
+    _sv(xl, sol + 'C5', _serie(2027, 8, 30))
+    _sv(xl, sol + 'G5', 'Aprobado')
+    agosto = {'dias_solicitados_D5': _ev(xl, sol + 'D5'),
+              'derecho_D5': _ev(xl, sal + 'D5'),
+              'disfrutados_E5': _ev(xl, sal + 'E5'),
+              'le_quedan_G5': _ev(xl, sal + 'G5'),
+              'aviso_H5': _ev(xl, sal + 'H5'),
+              'dias_usados_calendario': _ev(xl, cal + '{}6'.format(COL_TOT))}
+    _sv(xl, sol + 'G5', 'Pendiente')
+    pendiente = {'disfrutados_E5': _ev(xl, sal + 'E5'),
+                 'pendientes_F5': _ev(xl, sal + 'F5'),
+                 'le_quedan_G5': _ev(xl, sal + 'G5')}
+    _sv(xl, sol + 'G5', 'Aprobado')
+    _sv(xl, sal + 'B5', _serie(2027, 7, 1))
+    prorrateo = {'derecho_D5': _ev(xl, sal + 'D5'),
+                 'le_quedan_G5': _ev(xl, sal + 'G5')}
+    _sv(xl, sal + 'B5', None)
+    _sv(xl, sol + 'B5', _serie(2027, 8, 30))
+    _sv(xl, sol + 'C5', _serie(2027, 8, 1))
+    invertidas = _ev(xl, sol + 'D5')
+    ok = (all(v in ('', None) for v in fresco.values())
+          and agosto['dias_solicitados_D5'] == 30
+          and agosto['derecho_D5'] == 30
+          and agosto['disfrutados_E5'] == 30
+          and agosto['le_quedan_G5'] == 0
+          and agosto['dias_usados_calendario'] == 30
+          and pendiente['disfrutados_E5'] == 0
+          and pendiente['pendientes_F5'] == 30
+          and pendiente['le_quedan_G5'] == 0
+          and _num(prorrateo['derecho_D5'])
+          and 14 < prorrateo['derecho_D5'] < 16
+          and 'invertidas' in str(invertidas))
+    return {'ref': '05-planificacion-vacaciones.xlsx:Calendario '
+                   'Anual:{}6'.format(COL_TOT),
+            'hoja_recien_descargada': dict((k, str(v))
+                                           for k, v in fresco.items()),
+            'agosto_entero_aprobado': agosto,
+            'la_misma_solicitud_en_PENDIENTE': pendiente,
+            'alta_el_1_de_julio_prorrateo': prorrateo,
+            'fechas_al_reves_D5': str(invertidas),
+            'ok': ok,
+            'nota': 'la v1.1 tenía una celda por MES: agosto entero contaba '
+                    '1 día usado y 29 restantes, y las fechas invertidas '
+                    'daban días NEGATIVOS que entraban en el saldo '
+                    '(DOM-04/DOM-20/TEC-04/COM-06)'}
+
+
+def _d05_cobertura(carpeta):
+    """§4 · la fila de cobertura del calendario y los indicadores."""
+    p = os.path.join(carpeta, '05-planificacion-vacaciones.xlsx')
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    cal, cob = "'Calendario Anual'!", "'Cobertura'!"
+    sem_normal, sem_alta = 'B', get_column_letter(1 + TEMPORADA_ALTA[0])
+    # el grafo tiene que incluir las DOS semanas que se van a tocar (ver
+    # `_calentar`): si no, el «V» de la semana 27 no llega al indicador.
+    calientes = _calentar(xl, [
+        cal + '{}{}'.format(c, f)
+        for c in (sem_normal, sem_alta) for f in (F_TEMP, F_AUS, F_ALERTA)
+    ] + [cob + 'B{}'.format(r) for r in (44, 45, 46, 47, 6, 7, 8)])
+    fresco = {'ausencias_semana_1': calientes[cal + '{}{}'.format(sem_normal,
+                                                                 F_AUS)],
+              'alerta_semana_1': calientes[cal + '{}{}'.format(sem_normal,
+                                                               F_ALERTA)],
+              'pico_B45': calientes[cob + 'B45'],
+              'plantilla_B44': calientes[cob + 'B44'],
+              'temp_alta_con_ausencias_B47': calientes[cob + 'B47']}
+    for i in range(3):
+        _sv(xl, cal + 'A{}'.format(EMP0 + i), 'Empleado {}'.format(i + 1))
+        _sv(xl, cal + '{}{}'.format(sem_normal, EMP0 + i), 'V')
+    tres = {'ausencias': _ev(xl, cal + '{}{}'.format(sem_normal, F_AUS)),
+            'alerta': _ev(xl, cal + '{}{}'.format(sem_normal, F_ALERTA)),
+            'plantilla_B44': _ev(xl, cob + 'B44'),
+            'pico_B45': _ev(xl, cob + 'B45'),
+            'sobre_el_maximo_B46': _ev(xl, cob + 'B46')}
+    _sv(xl, cob + 'B3', 2)
+    exceso = {'alerta': _ev(xl, cal + '{}{}'.format(sem_normal, F_ALERTA)),
+              'sobre_el_maximo_B46': _ev(xl, cob + 'B46')}
+    _sv(xl, cal + '{}{}'.format(sem_alta, EMP0), 'V')
+    alta = {'semana': TEMPORADA_ALTA[0],
+            'temporada': _ev(xl, cal + '{}{}'.format(sem_alta, F_TEMP)),
+            'alerta': _ev(xl, cal + '{}{}'.format(sem_alta, F_ALERTA)),
+            'temp_alta_con_ausencias_B47': _ev(xl, cob + 'B47')}
+    minimos = dict((t, _ev(xl, cob + 'B{}'.format(6 + i)))
+                   for i, t in enumerate(('mañana', 'tarde', 'noche')))
+    ok = (fresco['ausencias_semana_1'] == 0
+          and fresco['temp_alta_con_ausencias_B47'] == 0
+          and fresco['alerta_semana_1'] in ('', None)
+          and tres['ausencias'] == 3 and tres['plantilla_B44'] == 3
+          and tres['pico_B45'] == 3 and tres['alerta'] in ('', None)
+          and tres['sobre_el_maximo_B46'] == 0
+          and 'EXCESO' in str(exceso['alerta'])
+          and exceso['sobre_el_maximo_B46'] == 1
+          and 'TEMP. ALTA' in str(alta['alerta'])
+          and alta['temp_alta_con_ausencias_B47'] == 1
+          and minimos['tarde'] == 6)
+    return {'ref': '05-planificacion-vacaciones.xlsx:Calendario '
+                   'Anual:B{}'.format(F_ALERTA),
+            'hoja_recien_descargada': dict((k, str(v))
+                                           for k, v in fresco.items()),
+            'tres_ausentes_la_semana_1': tres,
+            'bajando_el_maximo_a_2': exceso,
+            'una_ausencia_en_temporada_alta': alta,
+            'minimo_por_turno': minimos,
+            'ok': ok,
+            'nota': "la hoja 'Cobertura' de la v1.1 eran dos cabeceras y cero "
+                    'datos, mientras la landing prometía cobertura mínima y '
+                    'periodos de máxima demanda (COM-20)'}
+
+
+def demos(carpeta, origen):
+    fuera = {}
+    for nombre, fn in (('grupo_b_03_coste_por_empleado', _d03_coste),
+                       ('grupo_b_03_semaforo_por_tipo', _d03_semaforo),
+                       ('grupo_b_03_fte_por_servicio', _d03_fte),
+                       ('grupo_b_04_progreso_onboarding', _d04_progreso),
+                       ('grupo_b_05_dias_y_saldo', _d05_dias),
+                       ('grupo_b_05_cobertura', _d05_cobertura)):
+        try:
+            r = fn(carpeta)
+        except Exception as e:                              # noqa: BLE001
+            r = {'ok': False, 'error': '{}: {}'.format(type(e).__name__, e)}
+        if r is not None:
+            fuera[nombre] = r
+    return fuera
