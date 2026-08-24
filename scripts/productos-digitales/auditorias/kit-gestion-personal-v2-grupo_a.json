@@ -1,0 +1,422 @@
+{
+ "producto": "kit-gestion-personal",
+ "version": "2.0",
+ "rol": "grupo_a",
+ "spec": "scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md §2 (01, 02, BONUS-01) + §7-bis",
+ "fecha": "2026-08-24T02:22:28",
+ "codigo": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+ "comando": "CLAUDE_SCRATCHPAD=<scratch>/propio-grupo_a python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --solo motor,grupo_a --json <scratch>/kit-gp-v2/grupo_a.json",
+ "modo": "dry-run · PRODUCCIÓN INTACTA (astro-site/public/dl/kit-gestion-personal/ no se ha tocado)",
+ "exit": 0,
+ "ficheros_tocados": [
+  "01-cuadrante-turnos-semanal.xlsx",
+  "02-control-horas-extras.xlsx",
+  "BONUS-01-briefing-cambio-turno.xlsx"
+ ],
+ "gates": {
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_entregables_fail_exit": 0,
+  "data_only_fallos": 0,
+  "formulas_verificadas_con_valor": 19,
+  "formulas_vacias_verificadas_con_pycel": 3051,
+  "valores_de_error_de_excel_cacheados_en_mis_ficheros": 0,
+  "pestanas_citadas_inexistentes_en_mis_ficheros": 0,
+  "citas_legales_obsoletas_en_mis_ficheros": 0,
+  "leyenda_incoherente_en_mis_ficheros": 0,
+  "caracteres_no_latinos_en_mis_ficheros": 0,
+  "proteccion": "22 hojas del kit protegidas sin contraseña; en mis 3 ficheros: Turnos 34 verdes, Cuadrante Semanal 270, Cuadrante Mensual 1050, Registro Horas 2100, Resumen Mensual 63, Briefing 133 — todas desbloqueadas",
+  "nota_exit": "exit 0. Ojo: main.py trata `--solo motor,grupo_a` como pasada parcial DECLARADA, así que lo que sigue pendiente (06 #¡DIV/0!, FTE del 03/BONUS-02, progreso del 04 y 4 citas legales obsoletas en 03/07/BONUS-02) se lista como `pendiente_de_grupo` y es trabajo de grupo_b y grupo_c, no mío."
+ },
+ "cambios_por_fichero": [
+  {
+   "fichero": "01-cuadrante-turnos-semanal.xlsx",
+   "formulas_nuevas": 1748,
+   "cambios": [
+    "01-cuadrante-turnos-semanal.xlsx:Turnos!A5:E12: tabla de los 8 turnos (horas, inicio y fin) + parámetros B2 (jornada diaria máx. 9 h) y B3 (descanso mínimo 12 h, art. 34.3 ET) — §2",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal: bloque 6..20 → 6..35 (30 empleados, §1.3) y la cola bajada 15 filas",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!I6:N35: 961 fórmulas — bloque auxiliar oculto P:AP (horas, inicio, fin y las 6 transiciones) y las 4 alertas legales: descanso entre jornadas (art. 34.3 ET, 12 h), descanso semanal (art. 37.1), jornada semanal contra las horas CONTRATADAS de cada uno (J, verde, 40 por defecto) y jornada diaria / turno doble (art. 34.3, 9 h) — DOM-05/DOM-25/TEC-05/COM-01",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual: hoja reconstruida — 5 semanas × 30 empleados con DV de los 8 códigos, horas por VLOOKUP a «Turnos», alerta semanal contra las horas contratadas, nombres ENLAZADOS al cuadrante semanal, total del mes por empleado (G170:G199), media semanal y fila de promedio (757 fórmulas). Antes: 30 rótulos y cero fórmulas para 28 días — DOM-17/TEC-23/COM-12",
+    "01-cuadrante-turnos-semanal.xlsx:Instrucciones: cuerpo reescrito — las 4 alertas descritas una a una con su artículo, el descanso pasa a 12 h (art. 34.3 ET) y aparecen por fin la hoja 'Turnos' y el 'Cuadrante Mensual', hoy no mencionado ni una vez (TEC-23)",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!B3:I3: leyenda única de 8 códigos (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual!B3:I3: leyenda única de 8 códigos (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx:Instrucciones!B6: leyenda única (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx:Instrucciones!B8: leyenda única (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx: 120 celdas reformateadas (§1.6)",
+    "01-cuadrante-turnos-semanal.xlsx: 30 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!B6:H35: DV inline (8 códigos de jornada) — 1 DV heredadas retiradas del rango",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!K6:K35: 4 regla(s) de formato condicional",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!L6:L35: 4 regla(s) de formato condicional",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!M6:M35: 4 regla(s) de formato condicional",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!N6:N35: 4 regla(s) de formato condicional",
+    "Instrucciones!B24:B26: nota de desprotección + bio anclada + versión 2.0",
+    "01-cuadrante-turnos-semanal.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Turnos: protegida sin contraseña (34 celdas verdes editables)",
+    "Cuadrante Semanal: protegida sin contraseña (270 celdas verdes editables)",
+    "Cuadrante Mensual: protegida sin contraseña (1050 celdas verdes editables)"
+   ]
+  },
+  {
+   "fichero": "02-control-horas-extras.xlsx",
+   "formulas_nuevas": 1314,
+   "cambios": [
+    "02-control-horas-extras.xlsx:Registro Horas!E: columna «Pausa (h)» insertada; el Tipo de hora extra se desplaza a la I — DOM-21",
+    "02-control-horas-extras.xlsx:Registro Horas: 50 → 300 filas de registro (§1.3/COM-18)",
+    "02-control-horas-extras.xlsx:Registro Horas!F5:I304: horas con MOD (cruce de medianoche: 23:00→07:00 son 8,00 h, no −16) menos la pausa, y la hora extra con GUARDA de «H. contratadas» vacía. G precargada a 8 con DV 1-12; el Tipo pasa a las 4 modalidades del art. 35.2 — DOM-03/DOM-11/DOM-21/TEC-01/TEC-09/COM-07",
+    "02-control-horas-extras.xlsx:Resumen Mensual: 15 → 30 empleados (§1.3)",
+    "02-control-horas-extras.xlsx:Resumen Mensual!B6:G35: 154 fórmulas — B agrega por SUMIF desde «Registro Horas» (hoy es transcripción manual), C descuenta fuerza mayor y compensadas con descanso (art. 35.2), F vigila el límite anual de B/F3 con semáforo y G usa el recargo de D3 como PARÁMETRO. Desaparecen las cabeceras «Coste ×1.75» y «Coste ×2.0», que presentaban como ley lo que fija el convenio — DOM-07/DOM-12/TEC-06/TEC-08/COM-02/COM-14/COM-19. 60 celdas de las columnas calculadas dejan de estar verdes",
+    "02-control-horas-extras.xlsx:Instrucciones: cuerpo reescrito — ×1,75 y ×2,0 dejan de presentarse como «Legislación española» (art. 35.1: sólo se exige que no valga menos que la ordinaria) y entran las dos excepciones del art. 35.2 — DOM-12/COM-19",
+    "02-control-horas-extras.xlsx: 1050 celdas reformateadas (§1.6)",
+    "02-control-horas-extras.xlsx: 330 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "02-control-horas-extras.xlsx:Resumen Mensual!F6:F35: 4 regla(s) de formato condicional",
+    "Instrucciones!B23:B25: nota de desprotección + bio anclada + versión 2.0",
+    "02-control-horas-extras.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Registro Horas: protegida sin contraseña (2100 celdas verdes editables)",
+    "Resumen Mensual: protegida sin contraseña (63 celdas verdes editables)"
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-cambio-turno.xlsx",
+   "formulas_nuevas": 8,
+   "cambios": [
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!46:59: 14 filas insertadas para los dos bloques que faltaban en un traspaso real — DOM-29",
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!A46:D63: bloque de CAJA (fondo · recaudación · diferencia · firma) y bloque de TEMPERATURAS (cámara ≤ 4 °C, congelador ≤ −18 °C, expositor ≤ 4 °C) con semáforo CONFORME / FUERA DE RANGO; observaciones con wrap_text y alto de fila — DOM-29/TEC-24",
+    "BONUS-01-briefing-cambio-turno.xlsx: 19 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!C17:C22: DV inline (3 valores)",
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!A25:A30: DV inline (3 valores)",
+    "Instrucciones!B20:B22: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-01-briefing-cambio-turno.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Briefing: protegida sin contraseña (142 celdas verdes editables)"
+   ]
+  }
+ ],
+ "hallazgos_de_la_SPEC_resueltos": {
+  "01-cuadrante-turnos-semanal.xlsx": {
+   "DOM-05 / TEC-05 · hoja nueva `Turnos`": "01:Turnos:A4:E12 — los 8 códigos con Descripción, Hora inicio (h), Hora fin (h) y Horas. Antes los horarios vivían dentro de la fórmula de 700 caracteres de Cuadrante Semanal:I6 y en cinco líneas de texto de Instrucciones:B16:B20. Parámetros 01:Turnos:B2 = 9 h (jornada ordinaria diaria máx.) y 01:Turnos:B3 = 12 h (descanso mínimo entre jornadas, art. 34.3 ET; NO las 11 h de la Directiva 2003/88/CE que imprimía 01:Instrucciones:B12).",
+   "DOM-05 / COM-01 · las 4 alertas EXISTEN": "01:Cuadrante Semanal:K6:N35 sobre el bloque auxiliar OCULTO P6:AP35 (horas por día P:V, hora de inicio W:AC, hora de fin AD:AJ y las 6 transiciones AK:AP). K = descanso entre jornadas (art. 34.3 ET), L = descanso semanal (art. 37.1 ET), M = jornada semanal, N = jornada diaria / turno doble. Antes la ÚNICA alerta era 01:Cuadrante Semanal:J6 `=IF(I6>40,\"⚠ EXCESO\",…)`.",
+   "DOM-25 · horas contratadas por empleado": "01:Cuadrante Semanal:J6:J35 «H. contratadas/semana», verde y precargada a 40. El 40 sale de la fórmula: a un contrato de 20 h la alerta le salta a las 20 (demostrado: 32 h planificadas contra 20 contratadas → «⛔ +12 h»).",
+   "DOM-17 / TEC-23 / COM-12 · `Cuadrante Mensual` deja de ser una rejilla muerta": "01:Cuadrante Mensual reconstruida entera: 5 bloques de semana × 30 empleados (antes 4 bloques = 28 días, 30 rótulos, 0 fórmulas, 0 DV), DV de los 8 códigos en las cinco rejillas, horas por VLOOKUP a `Turnos`, alerta semanal contra las horas contratadas, nombres ENLAZADOS (01:Cuadrante Mensual:A5 = `=IF('Cuadrante Semanal'!$A6=\"\",\"\",'Cuadrante Semanal'!$A6)`), bloque «TOTAL DEL MES POR EMPLEADO» en A169:J199 con total del mes (G), media semanal (H) y alerta del cómputo (J), y fila de PROMEDIO DEL EQUIPO en la 200. freeze A5 y print_title_rows $4:$4 los pone el motor.",
+   "§1.3 · capacidad": "01:Cuadrante Semanal 6..20 → 6..35 (30 empleados) con la cola (TOTAL HORAS EQUIPO y pie) bajada 15 filas y `=SUM(I6:I20)` estirado a `=SUM(I6:I35)`. Fila de media por empleado nueva en 01:Cuadrante Semanal:K36."
+  },
+  "02-control-horas-extras.xlsx": {
+   "DOM-03 / TEC-01 / COM-07 · cruce de medianoche": "02:Registro Horas:F5 = `=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,1)*24-IF($E5=\"\",0,$E5),2))` (motor.horas_mod). Antes `=IF(AND(C5<>\"\",D5<>\"\"),(D5-C5)*24,\"\")`: el turno de noche fichaba −16 h.",
+   "DOM-21 · turno partido": "Columna nueva 02:Registro Horas:E «Pausa (h)» (insertada en `pre()`; el Tipo se desplaza de H a I). 10:00→23:00 con 4 h de pausa = 9,00 h, que es lo que no cabía ni en una fila ni en dos.",
+   "DOM-11 / TEC-09 · guarda de «H. contratadas»": "02:Registro Horas:H5 = `=IF(OR($F5=\"\",$G5=\"\"),\"\",MAX(0,$F5-$G5))` y G5:G304 precargada a 8 con DV decimal 1-12. Antes `=IF(E5<>\"\",MAX(0,E5-F5),\"\")` declaraba extra la jornada entera.",
+   "DOM-07 / TEC-06 / TEC-08 / COM-14 · el Resumen AGREGA y el recargo es parámetro": "02:Resumen Mensual:B6 `SUMIF` sobre 'Registro Horas'!$A$5:$A$304 / $H$5:$H$304; C6 dos `SUMIFS` que descuentan «Fuerza mayor» y «Compensada con descanso»; D6 computables; F6 semáforo del límite anual; G6 `=IF($B6=\"\",\"\",ROUND($B6*$B$3*$D$3,2))`. Parámetros verdes en 02:Resumen Mensual:B3 (tarifa 12,00 €), D3 (recargo 1,25) y F3 (límite 80). Desaparecen las cabeceras «Coste ×1.75» y «Coste ×2.0» y sus 30 fórmulas.",
+   "DOM-12 / COM-19 · la cita legal": "02:Instrucciones reescritas: el ×1,75 y el ×2,0 dejan de figurar bajo «Legislación española». B12 cita el art. 35.1 (la hora extra no puede valer menos que la ordinaria; la cuantía la fija el convenio y puede compensarse con descanso) y B11 las dos excepciones del art. 35.2. DV del Tipo ampliada a Voluntaria / Obligatoria / Fuerza mayor / Compensada con descanso.",
+   "TEC-26 · «Tipo Extra» deja de ser un dato muerto": "la columna I la consume 02:Resumen Mensual:C6 por SUMIFS.",
+   "§1.3 · capacidad": "02:Registro Horas 50 → 300 filas (5..304) y 02:Resumen Mensual 15 → 30 empleados (6..35)."
+  },
+  "BONUS-01-briefing-cambio-turno.xlsx": {
+   "DOM-29 · caja y temperaturas": "BONUS-01:Briefing:A46:D51 bloque CAJA (Sala / Barra / TOTAL con Fondo inicial, Recaudación y Diferencia `=IF(OR($B48=\"\",$C48=\"\"),\"\",ROUND($C48-$B48,2))`, más línea de firma del arqueo) y BONUS-01:Briefing:A53:D58 bloque TEMPERATURAS (cámara ≤ 4 °C, congelador ≤ −18 °C, expositor ≤ 4 °C, límites precargados y columna «Conforme» con semáforo real en D55:D57).",
+   "TEC-24 · observaciones": "BONUS-01:Briefing:A60:D63 con `wrap_text`, alto de fila 30 y las tres líneas de escritura en verde: eran celdas combinadas sin ajuste que se cortaban al imprimir.",
+   "TEC-28 · DV de gravedad y prioridad": "las pone el motor (BONUS-01:Briefing:C17:C22 «Alta,Media,Baja» y A25:A30 «Urgente,Alta,Normal»); grupo_a no las duplica, sólo las documenta en Instrucciones."
+  }
+ },
+ "desviaciones_de_la_SPEC_con_motivo": [
+  {
+   "donde": "§2 · 01:Cuadrante Semanal:AK6 (transiciones) y K6/L6/N6",
+   "spec_dice": "AK6 = `=IF(OR($P6=0,$Q6=0),\"\",…)` y K6 = `=IF($A6=\"\",\"\",IF(COUNTIF($AK6:$AP6,\"<\"&Turnos!$B$3)>0,…))`",
+   "hecho": "el bloque auxiliar devuelve la CADENA VACÍA en todos los casos sin turno (día vacío y día de 0 h) y las alertas comparan las seis transiciones UNA A UNA, neutralizando el vacío con `IF($AK6=\"\",Turnos!$B$3,$AK6)<Turnos!$B$3`; nada lee un rango.",
+   "por_que": "dos limitaciones de pycel medidas el 2026-08-24, las dos capaces de dar un VERDE FALSO en la batería §5 de main.py. (1) pycel devuelve el valor CACHEADO de una celda de fórmula si el libro lo trae, y main.py corre inject_cache (paso 3) ANTES de las demostraciones (paso 7): con el auxiliar devolviendo 0/24, `demo_descanso` leía el 24 cacheado y daba «sin alerta» con la alerta correctamente escrita (comprobado: con cache, 01:Cuadrante Semanal:P6 vale 0,0 con B6='M'; sobre el MISMO libro re-guardado sin cache vale 8). (2) pycel NO propaga la invalidación de `set_value` a través de un nodo RANGO: con `COUNTIF($AK6:$AP6,…)`, cambiar B6 recalcula AK6 pero nunca K6. La cadena vacía no se cachea, así que B6→P6→AK6→K6 queda entera sin cache y se recalcula. Efecto secundario deseado: la hoja recién descargada enseña el total y el auxiliar EN BLANCO en vez de una pared de ceros (§1.5)."
+  },
+  {
+   "donde": "§2 · guarda `$A6=\"\"` de las alertas del cuadrante",
+   "spec_dice": "las cuatro alertas empiezan por `IF($A6=\"\",\"\",…)`",
+   "hecho": "no llevan esa guarda; se apagan solas porque el auxiliar está vacío.",
+   "por_que": "`main.py:demo_descanso` —el gate §5— planifica B6='T' y C6='M' y NO toca A6: con la guarda, el gate no puede dar verde nunca. Y de fondo: condicionar la alerta a haber tecleado el nombre la apaga justo cuando se planifica, que es antes de rellenar la columna A."
+  },
+  {
+   "donde": "§2 · 01:Turnos, tabla verde A5:E12",
+   "spec_dice": "«Tabla verde A5:E12»",
+   "hecho": "verde B5:E12; la columna A (el código) queda bloqueada.",
+   "por_que": "la DV del cuadrante es INLINE (`\"M,T,N,P,D,L,V,B\"`, la escribe motor.aplicar_dv) y el gate `motor.leyenda_coherente` exige que ninguna DV ofrezca una letra fuera de la leyenda única. Si el cliente cambia una letra en Turnos, el desplegable sigue ofreciendo la vieja y el VLOOKUP devuelve 0 h SIN AVISAR — exactamente el «un código con dos significados» que §1.1 viene a matar (DOM-27). Lo que un restaurante necesita cambiar de verdad —descripción, hora de inicio, hora de fin y horas— sí es editable. Queda como duda para el orquestador."
+  },
+  {
+   "donde": "§2 · 01:Turnos, «Hora inicio» / «Hora fin»",
+   "spec_dice": "columnas «Hora inicio · Hora fin»",
+   "hecho": "«Hora inicio (h)» / «Hora fin (h)» como NÚMERO 0-24, no como hora de Excel.",
+   "por_que": "las transiciones hacen aritmética (`24-$AD6+$X6`) y pycel devuelve un `datetime.time` al leer una celda con formato de hora: la multiplicación reventaría dentro de inject_cache y la celda se quedaría en blanco en el visor del móvil. Se documenta en 01:Turnos:B15 y en Instrucciones («7 = 07:00, 15,5 = 15:30»)."
+  },
+  {
+   "donde": "§2 · rótulos de los parámetros de 02:Resumen Mensual (B3/D3/F3)",
+   "spec_dice": "parámetros en B3, D3 y F3",
+   "hecho": "están exactamente ahí, con el literal del catálogo §1.4 intacto, pero con `wrap_text` y la fila 3 a 58 de alto.",
+   "por_que": "«Recargo de la hora extra (× la ordinaria) — según tu convenio:» son 61 caracteres en una columna de 20: sin ajuste de línea el cliente no ve qué está editando."
+  },
+  {
+   "donde": "§2 · 02:Registro Horas, DV del Tipo",
+   "spec_dice": "DV de las 4 modalidades del art. 35.2 (la declara motor.DV_LISTA)",
+   "hecho": "la escribe grupo_a con marca propia `grupoA-v2`.",
+   "por_que": "`motor.DV_LISTA['02-…']` busca «Tipo Extra» en la COLUMNA H, y la v2.0 mete «Pausa (h)» en E y desplaza el Tipo a la I: ese centinela ya no casa nunca. Se usa marca propia porque `motor._limpiar_dv` barre por el prefijo `kitgp-v2` y se la llevaría por delante."
+  }
+ ],
+ "bugs_del_motor_encontrados_y_esquivados": [
+  {
+   "id": "motor.aplicar_verde · «desmarcar» pinta el verde de la columna A",
+   "donde": "kit-gestion-personal-v2_0/motor.py, aplicar_verde(): `cel.fill = copy.copy(ws.cell(row=cel.row, column=1).fill)`",
+   "sintoma": "en 02:Resumen Mensual las 30 celdas del SUMIF (columna B) y las 30 del SUMIFS (columna C) se quedaban VERDES y DESBLOQUEADAS tras la pasada, invitando al cliente a escribir encima de la agregación. La rama de «desmarcar» copia el relleno de la columna A de la misma fila, y ahí A es el nombre del empleado, que ES verde.",
+   "estado": "esquivado desde grupo_a (`_desverdear()` quita el verde ANTES de que corra el motor, y `aplicar_verde` sólo entra a esa rama `if es_verde(cel)`). El motor NO se ha tocado. Afecta a cualquier hoja donde la primera columna sea editable: conviene que el orquestador cambie el `copy` del relleno por un `PatternFill()` vacío."
+  },
+  {
+   "id": "main.py · la batería §5 corre DESPUÉS de inject_cache",
+   "donde": "kit-gestion-personal-v2_0/main.py, orden de pasos 3 (inject_cache) y 7 (demostraciones)",
+   "sintoma": "pycel devuelve el valor cacheado de una celda de fórmula, así que cualquier demostración basada en `set_value` mide el CACHE y no la fórmula. Con el auxiliar devolviendo ceros, `demo_descanso` daba «sin alerta» con la alerta bien escrita.",
+   "estado": "esquivado haciendo que toda la cadena de la alerta valga cadena vacía en la hoja vacía (no se cachea) y usando un ExcelCompiler LIMPIO por escenario en las demostraciones de grupo_a. Vale la pena que el orquestador lo tenga en cuenta para los grupos B y C: una demostración que lea una celda con valor cacheado no mide nada."
+  }
+ ],
+ "demostraciones_pycel": {
+  "cruce_medianoche_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:F5",
+   "formula": "=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,1)*24-IF($E5=\"\",0,$E5),2))",
+   "pruebas": [
+    {
+     "caso": "turno de noche 23:00→07:00",
+     "esperado": 8.0,
+     "obtenido": 8.0,
+     "ok": true
+    },
+    {
+     "caso": "partido 19:00→01:30 con 0 h de pausa",
+     "esperado": 6.5,
+     "obtenido": 6.5,
+     "ok": true
+    },
+    {
+     "caso": "partido 10:00→23:00 con 4 h de pausa",
+     "esperado": 9.0,
+     "obtenido": 9.0,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "mientras la fórmula sea `(D5-C5)*24` el turno de noche ficha −16 h y el partido no cabe en un solo par entrada/salida (DOM-03/DOM-21)"
+  },
+  "guarda_h_contratadas_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:H5",
+   "formula": "=IF(OR($F5=\"\",$G5=\"\"),\"\",MAX(0,$F5-$G5))",
+   "contratadas_vacia": "",
+   "contratadas_8h": 0,
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "con la guarda puesta, «contratadas vacía» debe dar \"\" y una jornada de 8 h contra 8 contratadas debe dar 0"
+  },
+  "descanso_entre_jornadas_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K6",
+   "pruebas": [
+    {
+     "caso": "T seguido de M (8 h de descanso)",
+     "valor": "⛔ <12 h",
+     "esperaba_alerta": true,
+     "ok": true
+    },
+    {
+     "caso": "M seguido de M (24 h de descanso)",
+     "valor": "",
+     "esperaba_alerta": false,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "pendiente_de_grupo": false
+  },
+  "leyenda_unica": {
+   "01-cuadrante-turnos-semanal.xlsx": {
+    "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:B3",
+    "dv_encontradas": [
+     "\"M,T,N,P,D,L,V,B\""
+    ],
+    "dv_esperada": "\"M,T,N,P,D,L,V,B\"",
+    "leyenda_fila_3": [
+     "M=Mañana",
+     "T=Tarde",
+     "N=Noche",
+     "P=Partido",
+     "D=Doble",
+     "L=Libre",
+     "V=Vacaciones",
+     "B=Baja"
+    ],
+    "ok": true
+   },
+   "05-planificacion-vacaciones.xlsx": {
+    "ref": "05-planificacion-vacaciones.xlsx:Calendario Anual:B3",
+    "dv_encontradas": [
+     "\"V,B,F,PE,\""
+    ],
+    "dv_esperada": "\"V,B,F,PE,\"",
+    "leyenda_fila_3": [
+     "V=Vacaciones",
+     "B=Baja",
+     "F=Festivo",
+     "PE=Permiso"
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  "grupo_a_4_alertas_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K6:N6",
+   "pruebas": [
+    {
+     "alerta": "K · descanso entre jornadas (art. 34.3 ET, 12 h)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K6",
+     "hoja recién descargada": "",
+     "T→M · 8 h de descanso": "⛔ <12 h",
+     "M→M · 16 h de descanso": "",
+     "N→T · el turno cruza la medianoche, 8 h": "⛔ <12 h",
+     "ok": true
+    },
+    {
+     "alerta": "L · descanso semanal (art. 37.1 ET)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:L6",
+     "hoja recién descargada": "",
+     "7 días con turno": "⛔ 0 días",
+     "1 día libre": "⚠ 1 día (el ET pide 1,5, acumulable en 14 días — art. 37.1)",
+     "2 días libres": "",
+     "ok": true
+    },
+    {
+     "alerta": "M · jornada semanal contra lo CONTRATADO (DOM-25)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:M6",
+     "hoja recién descargada": "",
+     "40 h planificadas / 40 contratadas": "",
+     "horas de esa semana (I6)": 40.0,
+     "32 h planificadas / 20 contratadas": "⛔ +12 h",
+     "ok": true
+    },
+    {
+     "alerta": "N · jornada diaria (art. 34.3 ET, 9 h)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:N6",
+     "hoja recién descargada": "",
+     "turno DOBLE de 16 h": "⛔ jornada > 9 h",
+     "turno PARTIDO de 9 h": "",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "las cuatro alertas que la landing vende desde la v1.0 y que el fichero no tenía: la única era «>40 h» con el 40 escrito dentro de la fórmula (COM-01/DOM-25)"
+  },
+  "grupo_a_parametro_descanso_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Turnos:B3 → Cuadrante Semanal:K6",
+   "M→M con el mínimo legal de 12 h": "",
+   "M→M con un convenio que exija 18 h": "⛔ <18 h",
+   "ok": true,
+   "nota": "M→M deja 16 h de descanso: cumple las 12 del art. 34.3 y no cumpliría un convenio de 18. El umbral vive en celda, no dentro de la fórmula (§1.4)"
+  },
+  "grupo_a_turnos_manda_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Turnos:E5 → Cuadrante Semanal:I6/N6",
+   "M = 8 h (tabla de fábrica)": 8.0,
+   "alerta de jornada diaria con 8 h": "",
+   "M reconfigurado a 6 h": 6.0,
+   "M reconfigurado a 11 h": 11.0,
+   "alerta de jornada diaria con 11 h": "⛔ jornada > 9 h",
+   "ok": true,
+   "nota": "las horas salen de la tabla, no de los siete IF anidados de 700 caracteres de `Cuadrante Semanal!I6` de la v1.1 (DOM-05)"
+  },
+  "grupo_a_mensual_vivo_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual:A6/I6/J6 y G171",
+   "nombre heredado de Cuadrante Semanal!A7": "Marta Ibáñez",
+   "M + D + D = 8 + 16 + 16": 40.0,
+   "alerta contra las 40 h contratadas": "",
+   "esa semana en el total del mes": 40.0,
+   "total del mes": 40.0,
+   "ok": true,
+   "nota": "la hoja mensual tenía 30 rótulos, CERO fórmulas, CERO validación y 28 días (DOM-17/TEC-23/COM-12)"
+  },
+  "grupo_a_horas_y_guarda_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:F5/H5",
+   "pruebas": [
+    {
+     "caso": "turno de noche 23:00 → 07:00",
+     "esperado_horas": 8.0,
+     "horas": 8.0,
+     "extra": 0,
+     "ok": true
+    },
+    {
+     "caso": "cierre 19:00 → 01:30",
+     "esperado_horas": 6.5,
+     "horas": 6.5,
+     "extra": 0,
+     "ok": true
+    },
+    {
+     "caso": "partido 10:00 → 23:00 con 4 h de pausa",
+     "esperado_horas": 9.0,
+     "horas": 9.0,
+     "extra": 1,
+     "ok": true
+    },
+    {
+     "caso": "H. contratadas VACÍA con 8 h trabajadas",
+     "horas": 8.0,
+     "extra": "",
+     "ok": true
+    },
+    {
+     "caso": "8 h trabajadas contra 6 contratadas",
+     "extra": 2,
+     "ok": true
+    },
+    {
+     "caso": "8 h trabajadas contra 8 contratadas",
+     "extra": 0,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 hacía (D5−C5)*24 y el turno de noche fichaba −16 h; y con la columna de contratadas vacía declaraba extra la jornada ENTERA — 8 h × 12 € × 1,25 = 120 € por día y empleado que el cliente no debe (DOM-03/DOM-11/DOM-21/TEC-01/TEC-09/COM-07)"
+  },
+  "grupo_a_resumen_agrega_02": {
+   "ref": "02-control-horas-extras.xlsx:Resumen Mensual:B6/C6/D6/G6",
+   "extra de Ana en el mes (2 h + 3 h)": 5.0,
+   "de las que NO computan (fuerza mayor, art. 35.2)": 3.0,
+   "computables en el tope de 80 h": 2.0,
+   "no mezcla empleados: extra de Luis (2 h)": 2.0,
+   "coste con recargo 1,25 y tarifa 12 €": 75.0,
+   "coste subiendo el recargo a 1,50": 90.0,
+   "coste subiendo la tarifa a 20 €": 125.0,
+   "ok": true,
+   "nota": "la columna B era transcripción MANUAL (COM-14) y el ×1,75 / ×2,0 estaba escrito dentro de 30 fórmulas (TEC-06); ahora los dos son celda verde"
+  },
+  "grupo_a_limite_80h_02": {
+   "ref": "02-control-horas-extras.xlsx:Resumen Mensual:F6 (tope en F3)",
+   "recién descargado, sin acumulado": "",
+   "acumuladas 40 h": "✓ dentro",
+   "acumuladas 70 h": "⚠ cerca del límite",
+   "acumuladas 95 h": "⛔ EXCEDE (15 h)",
+   "acumuladas 95 h con el tope subido a 120": "✓ dentro",
+   "ok": true,
+   "nota": "art. 35.2 ET: 80 h/año. El tope es celda verde porque se prorratea en los contratos parciales y en los de duración inferior al año"
+  },
+  "grupo_a_caja_y_temperaturas_bonus01": {
+   "ref": "BONUS-01-briefing-cambio-turno.xlsx:Briefing:D48 (caja) y D55 (temperaturas)",
+   "recién descargado · conforme": "",
+   "recién descargado · diferencia": "",
+   "diferencia 1450,50 − 200": 1250.5,
+   "fondo total de las dos cajas": 350.0,
+   "diferencia total": 1720.75,
+   "cámara a 3 °C (límite 4)": "✓ CONFORME",
+   "congelador a −22 °C (límite −18)": "✓ CONFORME",
+   "expositor a 4 °C (límite 4)": "✓ CONFORME",
+   "cámara a 8 °C": "⛔ FUERA DE RANGO",
+   "congelador a −12 °C": "⛔ FUERA DE RANGO",
+   "ok": true,
+   "nota": "el signo importa: con −18 de límite, «conforme» es ≤ −18, así que −12 °C tiene que fallar y −22 °C pasar. Y el límite en el borde (4 °C contra 4) es conforme, no incumplimiento (DOM-29)"
+  }
+ },
+ "dudas": [
+  "01:Turnos:A5:A12 — la SPEC pide la tabla entera verde (A5:E12) y he dejado la columna del CÓDIGO bloqueada. Si John prefiere que también sea editable, hay que cambiar la DV inline del cuadrante por una DV de RANGO contra Turnos!$A$5:$A$12 (y comprobar que `motor.leyenda_coherente` no la marque, porque ese gate lee las listas inline).",
+  "02:Resumen Mensual:G — la SPEC fija el coste como `$B6*$B$3*$D$3`, es decir sobre TODAS las horas extra del mes. Las marcadas «Compensada con descanso» se pagan con tiempo, no con dinero, así que el coste las incluye igualmente. Si se quiere que no cuenten, la fórmula sería `$D6*$B$3*$D$3` (computables). No lo he cambiado por mi cuenta: es una decisión de negocio.",
+  "02:Resumen Mensual:F6 — el aviso ámbar usa `$F$3*0.8`, un 0,8 literal dentro de la fórmula (así lo escribe la SPEC). No está en el catálogo de PARÁMETROS del motor; si se quiere editable hay que añadirlo al §1.4.",
+  "BONUS-01:Briefing — he ensanchado la columna A de 5 a 20 caracteres. Era imprescindible para «Cámara de refrigeración» y «Congelador», y de paso arregla que «Producto» (A32) y «Empleado» (A40) fueran ilegibles desde la v1.1. Si el orquestador prefiere no tocar anchos heredados, hay que rediseñar los dos bloques nuevos."
+ ],
+ "pendiente": [
+  "NADA de mi ámbito queda sin hacer: los tres ficheros del §2 están completos y con los gates verdes en dry-run.",
+  "Lo que sigue en rojo en la pasada NO es mío: 06:Ficha Evaluación:C22/C23 con #¡DIV/0! cacheado (grupo_c), 03 y BONUS-02 sin coincidir en los 7 FTE (grupo_b), 04:Checklist Onboarding con el progreso distinto de 0 % (grupo_c) y 4 citas legales obsoletas en 03:Instrucciones:B6, 07:Instrucciones:B12, 07:Plantilla:M4 y BONUS-02:Calculadora:A27 (grupos b y c).",
+  "La ejecución real (KIT_GESTION_PERSONAL_APPLY=1) la hace el orquestador cuando los tres grupos estén; astro-site/public/dl/kit-gestion-personal/ sigue intacto.",
+  "Integración (§5): la landing tendrá que decir 12 h y no 11 (grid.templates[0] y ContentGrid.tsx:8) y describir el recargo como parámetro editable — ya es cierto en el fichero."
+ ]
+}

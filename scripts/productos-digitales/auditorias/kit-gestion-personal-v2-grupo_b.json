@@ -1,0 +1,392 @@
+{
+ "producto": "kit-gestion-personal",
+ "version": "2.0",
+ "rol": "grupo_b (constructor)",
+ "fecha": "2026-08-24T02:17:51",
+ "spec": "scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md §3 (03) + §4 (04 y 05)",
+ "modulo": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+ "ficheros": [
+  "03-coste-laboral-mensual.xlsx",
+  "04-onboarding-nuevo-empleado.xlsx",
+  "05-planificacion-vacaciones.xlsx"
+ ],
+ "modo": "dry-run · astro-site/public/dl/kit-gestion-personal/ INTACTO",
+ "comando": "CLAUDE_SCRATCHPAD=<scratch>/propio-grupo_b python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --solo motor,grupo_b --json <scratch>/kit-gp-v2/grupo_b.json",
+ "resultado": {
+  "exit": 0,
+  "pasada": "parcial declarada (--solo motor,grupo_b)",
+  "idempotencia_diferencias": 0,
+  "cache_formulas_sin_valor": 0,
+  "cache_no_evaluables_por_pycel": 0,
+  "censo_entregables_exit": 0,
+  "pestanas_citadas_inexistentes": 0,
+  "leyenda_incoherente": 0,
+  "formulas_nuevas": {
+   "03-coste-laboral-mensual.xlsx": 161,
+   "04-onboarding-nuevo-empleado.xlsx": 4,
+   "05-planificacion-vacaciones.xlsx": 525
+  },
+  "caracteres_no_latinos": 0,
+  "formulas_con_relleno_verde": 0,
+  "celdas_verdes_bloqueadas": 0
+ },
+ "hallazgos_de_la_spec_cubiertos": {
+  "03-coste-laboral-mensual.xlsx": [
+   {
+    "ids": "DOM-08 · TEC-14",
+    "celda": "03-coste-laboral-mensual.xlsx:Nóminas:C2",
+    "antes": "=IF(C5<>\"\",C5*0.30,\"\") repetido en 20 filas + cabecera D4 «SS Empresa (30%)» = el 0,30 escrito 21 veces",
+    "ahora": "parámetro verde 0,33 con nota de CNAE/convenio (motor.parametro 'ss_empresa'); las 30 fórmulas de F leen $C$2 y D2 rotula el tipo vivo con TEXT($C$2,\"0%\")"
+   },
+   {
+    "ids": "DOM-08 (pagas)",
+    "celda": "03-coste-laboral-mensual.xlsx:Nóminas:D5:E34",
+    "antes": "no existía el concepto de pagas: 1.500 € de bruto costaban 1.950 €/mes",
+    "ahora": "columna D «Nº de pagas/año» verde (DV 12/14/15, por defecto 14) y E =IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND($C5*$D5/12,2)) → 1.750 €; coste total 2.327,50 €"
+   },
+   {
+    "ids": "DOM-31 · TEC-26",
+    "celda": "03-coste-laboral-mensual.xlsx:Nóminas:I5:I34",
+    "antes": "«Horas Contratadas» (F) era una columna muerta",
+    "ahora": "H «Horas contratadas/semana» alimenta I «Coste/hora» =IFERROR(IF(OR($G5=\"\",$H5=\"\",$H5=0),\"\",ROUND($G5/($H5*52/12),2)),\"\") — el número que va a 02!Resumen Mensual!B3"
+   },
+   {
+    "ids": "DOM-32 · §1.3",
+    "celda": "03-coste-laboral-mensual.xlsx:Nóminas:5:34",
+    "antes": "20 empleados",
+    "ahora": "30 (motor.expandir_filas; TOTALES y pie bajan a 35 y 37, =SUM(C5:C24) se estira a C34)"
+   },
+   {
+    "ids": "DOM-16 · TEC-10 · TEC-11 · COM-11 · COM-17",
+    "celda": "03-coste-laboral-mensual.xlsx:Ratio Coste Laboral:B3/D7/D8/B9",
+    "antes": "B7 =IF(B4>0,B5/B4*100,0) daba 0 con la hoja vacía y B9 lo premiaba con «🟢 EXCELENTE (<30%)»; el 35 % fijo suspendía a la alta cocina que su propia tabla admite hasta el 42 %",
+    "ahora": "B3 tipo de negocio (DV con los 6 de la tabla), D7/D8 por VLOOKUP sobre las dos columnas numéricas nuevas A13:E19, B7 en blanco sin ventas y B9 «— introduce las ventas del mes y las nóminas»; sin tipo elegido cae al 30/35 % de la v1.1"
+   },
+   {
+    "ids": "DOM-09 · DOM-18 · TEC-15 · TEC-20 · COM-09",
+    "celda": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B6/B18:E18/B21/B22",
+    "antes": "B10 =CEILING(B4/B5,1) dividía los cubiertos del DÍA: 15 personas por turno para 80 cubiertos; el coste era =B13*B15*1.30 (sin pagas, sin días de apertura, sin cobertura)",
+    "ahora": "cadena de la SPEC: 80 cubiertos/día ÷ 2 servicios = 40 por servicio → 2+2+1 = 5 por servicio → 10 presencias/día → 240 h/semana → CEILING(240/40*1,15) = 7 FTE → 16.292,50 €/mes; ratio 31,3 % sobre 52.000 € de ventas"
+   },
+   {
+    "ids": "§1.4",
+    "celda": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B4:B16",
+    "antes": "3 ratios y un salario sueltos",
+    "ahora": "13 entradas verdes: cubiertos, servicios, 3 ratios, horas por servicio, días de apertura, jornada, factor de cobertura, salario, pagas y tipo de SS"
+   }
+  ],
+  "04-onboarding-nuevo-empleado.xlsx": [
+   {
+    "ids": "DOM-01 · TEC-02 · TEC-13 · COM-03",
+    "celda": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C71/C72/C73",
+    "antes": "C68 =COUNTIF(F7:F65,\"✓\") barría de corrido y contaba las 4 cabeceras de sección (F19/F30/F42/F57 valen «✓»): «4 de 51 completadas», 8,51 % con el checklist en blanco; C69 era la constante 47",
+    "ahora": "cabeceras «Hecho» + contadores por TRAMO: C71 = COUNTIF($F$7:$F$19,\"✓\")+…+COUNTIF($F$61:$F$68,\"✓\"), E71 el total por COUNTIF(\"?*\"), C72 = E71 − las «—» y C73 =IF($C$72>0,$C$71/$C$72,0) en 0,0 % → 0 % recién descargado"
+   },
+   {
+    "ids": "DOM-28",
+    "celda": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C72",
+    "antes": "el denominador incluía las tareas marcadas «—»: un onboarding bien terminado se quedaba en el 89 %",
+    "ahora": "aplicables = total − «—»; un cocinero de partida sin acceso al TPV puede llegar al 100 %"
+   },
+   {
+    "ids": "DOM-15 · §7-bis.3",
+    "celda": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:B10/B17:B19",
+    "antes": "47 tareas; el alta en la SS figuraba como papeleo del primer día y faltaban Contrat@, la copia básica a la RLT y el modelo 145",
+    "ahora": "50 tareas; B10 «Alta en Seguridad Social (TA.2/S) — OBLIGATORIO ANTES del inicio de la jornada (art. 32.3 RD 84/1996)» y las tres nuevas con su plazo"
+   },
+   {
+    "ids": "DOM-22 · TEC-12",
+    "celda": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C7:C68",
+    "antes": "«FORMACIÓN OBLI», «PERIODO DE PRU», «EQUIPAMIENTO Y» — un slice[:14] del generador",
+    "ahora": "categorías completas con la columna a 22"
+   },
+   {
+    "ids": "§4 (Fecha Límite)",
+    "celda": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:E7:E68",
+    "antes": "vacía en las 47 filas",
+    "ahora": "precargada tarea a tarea con Día -1 / Día 1 / Día 7 / Día 30 según el plazo real"
+   }
+  ],
+  "05-planificacion-vacaciones.xlsx": [
+   {
+    "ids": "DOM-04 · TEC-04 · COM-06",
+    "celda": "05-planificacion-vacaciones.xlsx:Calendario Anual:B4:BC38",
+    "antes": "una celda por MES (B5:M5 = Ene..Dic) y N6 con doce IF(...=\"V\",1,0): agosto entero = 1 día usado y 29 restantes",
+    "ahora": "53 semanas (B..BB, ancho 2,4) con nº de semana en la fila 4 y el lunes en la 5 (B5 verde, el resto =anterior+7 en dd/mm); «Días Usados» (BC) = SUMIFS de los DÍAS de las solicitudes APROBADAS de esa persona"
+   },
+   {
+    "ids": "DOM-19 · TEC-18 · COM-24",
+    "celda": "05-planificacion-vacaciones.xlsx:Saldo Vacaciones:B2/D5:H34",
+    "antes": "el 30 escrito dentro de las 30 fórmulas de Solicitudes!F (=IF(E5<>\"\",30-E5,\"\"))",
+    "ahora": "hoja nueva: días de convenio en B2 (verde, motor.parametro), fecha de cierre en E2, derecho prorrateado por fecha de alta con MIN, disfrutados y pendientes por SUMIFS y «Le quedan» = derecho − disfrutados − pendientes (descuenta la solicitud EN CURSO)"
+   },
+   {
+    "ids": "DOM-20",
+    "celda": "05-planificacion-vacaciones.xlsx:Solicitudes:D5/H5",
+    "antes": "=IF(AND(B5<>\"\",C5<>\"\"),C5-B5+1,\"\") daba días NEGATIVOS con las fechas al revés y ese número entraba en el saldo",
+    "ahora": "D avisa «⚠ fechas invertidas», E/F leen el saldo por INDEX/MATCH y H verifica con COUNTIF que el nombre existe en el calendario (sin DV entre hojas, por compatibilidad con Google Sheets)"
+   },
+   {
+    "ids": "COM-20",
+    "celda": "05-planificacion-vacaciones.xlsx:Cobertura:B3/B44:B47 + Calendario Anual:B36:BB38",
+    "antes": "la hoja Cobertura eran dos cabeceras y CERO datos mientras la landing prometía «cobertura mínima» y «periodos de máxima demanda»",
+    "ahora": "fila 36 temporada (Alta precargada en las semanas 27-35 y 51-52), fila 37 recuento de V+B por semana, fila 38 alerta («⛔ TEMP. ALTA» / «⚠ EXCESO» contra Cobertura!B3); en Cobertura, mínimo por turno precargado, máximo de ausencias en celda e indicadores de plantilla, pico, semanas sobre el máximo y temporada alta con ausencias"
+   },
+   {
+    "ids": "DOM-27 · §1.1",
+    "celda": "05-planificacion-vacaciones.xlsx:Calendario Anual:B3:E3",
+    "antes": "E3 decía «P=Permiso» mientras el 01 usa P para Partido",
+    "ahora": "el motor escribe la leyenda única V/B/F/PE en la fila 3 (la geometría nueva la deja libre) y la DV ofrece «V,B,F,PE,»"
+   }
+  ]
+ },
+ "demostraciones_pycel": {
+  "grupo_b_03_coste_por_empleado": {
+   "ref": "03-coste-laboral-mensual.xlsx:Nóminas:C2/E5/F5/G5/I5",
+   "fila_vacia": {
+    "E": "",
+    "F": "",
+    "G": "",
+    "I": ""
+   },
+   "bruto_1500_x14_pagas": {
+    "prorrateado_E5": 1750.0,
+    "cotizacion_F5": 577.5,
+    "coste_total_G5": 2327.5,
+    "coste_hora_I5": 13.43
+   },
+   "mismo_bruto_en_12_pagas_E5": 1500.0,
+   "cotizacion_al_40_por_ciento_F5": 700.0,
+   "ok": true,
+   "nota": "la v1.1 hacía `=IF(C5<>\"\",C5*0.30,\"\")` sin pagas: 1.500 € en 14 pagas costaban 1.950 €/mes en vez de 2.327,50 € — un 19 % de error a favor del optimismo (DOM-08/DOM-31/TEC-14)"
+  },
+  "grupo_b_03_semaforo_por_tipo": {
+   "ref": "03-coste-laboral-mensual.xlsx:Ratio Coste Laboral:B9",
+   "hoja_recien_descargada": {
+    "ratio_B7": "",
+    "veredicto_B9": "— introduce las ventas del mes y las nóminas"
+   },
+   "ratio_40_sin_tipo_elegido": {
+    "ratio_B7": 0.4,
+    "objetivo_D7": 0.3,
+    "maximo_D8": 0.35,
+    "veredicto_B9": "🔴 ACCIÓN CORRECTIVA"
+   },
+   "ratio_40_en_fine_dining": {
+    "objetivo_D7": 0.4,
+    "maximo_D8": 0.42,
+    "veredicto_B9": "🟡 VIGILAR (en el límite)"
+   },
+   "ratio_40_en_fast_casual": {
+    "objetivo_D7": 0.28,
+    "maximo_D8": 0.3,
+    "veredicto_B9": "🔴 ACCIÓN CORRECTIVA"
+   },
+   "ok": true,
+   "nota": "la v1.1 daba «🟢 EXCELENTE (<30%)» con la hoja vacía y suspendía a cualquiera por encima del 35 %, incluida la alta cocina que su propia tabla declara correcta hasta el 42 % (DOM-16/COM-11/COM-17)"
+  },
+  "grupo_b_03_fte_por_servicio": {
+   "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B21",
+   "por_defecto_80_cubiertos_2_servicios_casual": {
+    "cubiertos_por_servicio_B6": 40.0,
+    "cocina_B18": 2.0,
+    "sala_C18": 2.0,
+    "barra_D18": 1.0,
+    "por_servicio_E18": 5.0,
+    "presencias_B19": 10.0,
+    "horas_semana_B20": 240.0,
+    "fte_B21": 7.0,
+    "coste_B22": 16292.5
+   },
+   "al_doblar_los_cubiertos_a_160": {
+    "fte_B21": 13,
+    "coste_B22": 30257.5
+   },
+   "abriendo_7_dias_en_vez_de_6_fte": 9,
+   "con_el_ratio_de_barra_a_cero": {
+    "barra_D18": 0,
+    "por_servicio_E18": 4
+   },
+   "ok": true,
+   "nota": "la v1.1 dividía los cubiertos del DÍA entre el ratio y daba 15 personas por turno para 80 cubiertos; y sus «días de apertura» no entraban en ninguna fórmula (DOM-09/DOM-18/TEC-15/COM-09)"
+  },
+  "grupo_b_04_progreso_onboarding": {
+   "ref": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C71",
+   "tramos": [
+    [
+     7,
+     19
+    ],
+    [
+     23,
+     30
+    ],
+    [
+     34,
+     42
+    ],
+    [
+     46,
+     57
+    ],
+    [
+     61,
+     68
+    ]
+   ],
+   "tareas": 50,
+   "recien_descargado": {
+    "completadas": 0.0,
+    "aplicables": 50.0,
+    "total": 50.0,
+    "progreso": 0.0
+   },
+   "con_2_tareas_hechas": {
+    "completadas": 2,
+    "progreso": 0.04
+   },
+   "y_1_marcada_como_no_aplicable": {
+    "aplicables": 49,
+    "progreso": 0.04081632653061224
+   },
+   "ok": true,
+   "nota": "la v1.1 barría `F7:F65` de corrido y se tragaba las 4 cabeceras de sección, que valen literalmente «✓»: abría en «4 de 51 completadas» y 8,51 % con el checklist en blanco (DOM-01/TEC-02/TEC-13/COM-03)"
+  },
+  "grupo_b_05_dias_y_saldo": {
+   "ref": "05-planificacion-vacaciones.xlsx:Calendario Anual:BC6",
+   "hoja_recien_descargada": {
+    "dias_usados_BC6": "",
+    "derecho_D5": "",
+    "le_quedan_G5": ""
+   },
+   "agosto_entero_aprobado": {
+    "dias_solicitados_D5": 30,
+    "derecho_D5": 30,
+    "disfrutados_E5": 30,
+    "le_quedan_G5": 0.0,
+    "aviso_H5": "⚠ sin días disponibles",
+    "dias_usados_calendario": 30
+   },
+   "la_misma_solicitud_en_PENDIENTE": {
+    "disfrutados_E5": 0,
+    "pendientes_F5": 30,
+    "le_quedan_G5": 0.0
+   },
+   "alta_el_1_de_julio_prorrateo": {
+    "derecho_D5": 15.1,
+    "le_quedan_G5": -14.9
+   },
+   "fechas_al_reves_D5": "⚠ fechas invertidas",
+   "ok": true,
+   "nota": "la v1.1 tenía una celda por MES: agosto entero contaba 1 día usado y 29 restantes, y las fechas invertidas daban días NEGATIVOS que entraban en el saldo (DOM-04/DOM-20/TEC-04/COM-06)"
+  },
+  "grupo_b_05_cobertura": {
+   "ref": "05-planificacion-vacaciones.xlsx:Calendario Anual:B38",
+   "hoja_recien_descargada": {
+    "ausencias_semana_1": "0.0",
+    "alerta_semana_1": "",
+    "pico_B45": "0.0",
+    "plantilla_B44": "0.0",
+    "temp_alta_con_ausencias_B47": "0.0"
+   },
+   "tres_ausentes_la_semana_1": {
+    "ausencias": 3,
+    "alerta": "",
+    "plantilla_B44": 3,
+    "pico_B45": 3,
+    "sobre_el_maximo_B46": 0
+   },
+   "bajando_el_maximo_a_2": {
+    "alerta": "⚠ EXCESO",
+    "sobre_el_maximo_B46": 1
+   },
+   "una_ausencia_en_temporada_alta": {
+    "semana": 27,
+    "temporada": "Alta",
+    "alerta": "⛔ TEMP. ALTA",
+    "temp_alta_con_ausencias_B47": "1"
+   },
+   "minimo_por_turno": {
+    "mañana": 4.0,
+    "tarde": 6.0,
+    "noche": 5.0
+   },
+   "ok": true,
+   "nota": "la hoja 'Cobertura' de la v1.1 eran dos cabeceras y cero datos, mientras la landing prometía cobertura mínima y periodos de máxima demanda (COM-20)"
+  }
+ },
+ "gate_del_motor_que_este_grupo_deja_verde": {
+  "progreso_onboarding_04": true,
+  "leyenda_unica": true,
+  "fte_03_vs_bonus02": {
+   "03_previsión": {
+    "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B21",
+    "rotulo": "Plantilla necesaria (FTE):",
+    "valor": 7.0
+   },
+   "BONUS-02_calculadora": {
+    "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B23",
+    "rotulo": "Personal total necesario (con rotación):",
+    "valor": 19.0
+   },
+   "estado": "el lado 03 ya devuelve 7 FTE; el gate seguirá en rojo hasta que quien construya BONUS-02 aplique el mismo modelo de §3 (hoy da 19). No es un fichero de grupo_b."
+  }
+ },
+ "desviaciones_de_la_spec_con_motivo": [
+  {
+   "spec": "§4 (05) · «Verdes B2 “Lunes de la semana 1” y B3 “Días de vacaciones por convenio (naturales)” = 30» en el Calendario Anual",
+   "hecho": "el lunes de la semana 1 es la celda verde B5 —que ES la primera fecha de la fila de lunes, de la que cuelgan las 52 siguientes— y los días de convenio viven en Saldo Vacaciones!B2",
+   "motivo": "la fila 3 del Calendario Anual la reserva §1.1 para la leyenda única y `motor.escribir_leyenda` la reescribe en `cerrar()` (B3:E3), después de este grupo: un parámetro en B3 lo habría pisado en cada pasada. B2 forma parte del banner A2:BC2."
+  },
+  {
+   "spec": "§4 (05) · fila verde 36 «Temporada alta (S/N)»",
+   "hecho": "«Alta» / «Normal» precargadas en las 53 semanas, con validación `custom` en vez de lista desplegable",
+   "motivo": "dos gates del motor lo imponen y los dos tienen razón: `motor.leyenda_coherente` trata cualquier lista de valores de 1-2 caracteres de ESA hoja como códigos de la leyenda única (S y N la suspenderían) y `main.demo_leyenda` exige que el Calendario tenga EXACTAMENTE UNA lista inline. Verificado: con la DV de lista, `leyenda_unica` pasaba a FALLA."
+  },
+  {
+   "spec": "§3 · «coste/hora = G/(H*4.33)»",
+   "hecho": "=ROUND($G5/($H5*52/12),2)",
+   "motivo": "mismo número, escrito de forma que se entienda al leerlo (52 semanas / 12 meses) y sin un decimal redondeado dentro de la fórmula."
+  },
+  {
+   "spec": "§3 · «rótulo D4 = \"SS empresa (\"&TEXT($C$2,\"0%\")&\")\"»",
+   "hecho": "la cabecera es «Cotización SS empresa (€)» y el tipo vivo se rotula en Nóminas!D2",
+   "motivo": "`motor.FORMATO_POR_CABECERA` deduce el formato del TEXTO de la cabecera y evalúa el porcentaje ANTES que el euro: cualquier cabecera con un «%» dentro —incluido el de TEXT(...,\"0%\")— habría formateado la columna de dinero como porcentaje."
+  }
+ ],
+ "hallazgos_sobre_el_motor_y_main": [
+  {
+   "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/main.py",
+   "linea_original": "parcial_declarada = not set(pedidos) & {'a', 'b', 'c'}",
+   "sintoma": "`--solo motor,grupo_b` con grupo_b.py PRESENTE se declaraba «parcial con grupos ausentes» y añadía el fallo «pasada PARCIAL no declarada», exit 1, sin que faltara ningún módulo. Le pasaría igual a grupo_a y a grupo_c: los tres constructores trabajan con esa forma del comando.",
+   "arreglo_aplicado": "parcial_declarada = not ausentes — la protección RD-29/RC-11 (pedir un grupo y que su módulo no exista) sigue intacta porque se mide sobre `ausentes`; con `--solo` completo manda `completo`.",
+   "estado": "APLICADO en main.py por este grupo; conviene que el orquestador lo confirme si otro constructor tocó la misma línea."
+  },
+  {
+   "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+   "sintoma": "`aplicar_verde` limpia el verde de una columna que ha pasado a CALCULADA copiando el relleno de la COLUMNA A de esa misma fila — y en estas hojas la columna A es editable, o sea verde. Resultado: el verde no se limpia, se recoloca.",
+   "medido": "03-coste-laboral-mensual.xlsx:Nóminas:F5:F34 (la v1.1 pinta de verde A, C y F; la F de la v2.0 es la cotización, calculada) y 05-planificacion-vacaciones.xlsx:Solicitudes:E5:E34 («Días Usados YTD» era entrada y ahora se lee por INDEX/MATCH).",
+   "arreglo_aplicado": "grupo_b._vaciar() borra el relleno del bloque antes de reescribirlo, así que `aplicar_verde` parte de cero. Comprobado: 0 celdas con fórmula y relleno verde en los tres ficheros.",
+   "estado": "sorteado en grupo_b; el motor sigue con el mismo comportamiento para quien no limpie."
+  },
+  {
+   "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+   "sintoma": "`insertar_fila` desplaza valores, estilos, combinaciones, fórmulas, anchos y DV, pero NO el formato condicional.",
+   "medido": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding — la única regla de la v1.1 (A7:G65, expression $F7=\"✓\") seguía acabando en la fila 65 con las tareas llegando a la 68: las tres últimas del periodo de prueba no se pintaban al marcarlas.",
+   "arreglo_aplicado": "grupo_b reengancha la regla a A7:G68 conservando su `dxf`.",
+   "estado": "sorteado en grupo_b; aplica a cualquier grupo que inserte filas por encima de una regla."
+  },
+  {
+   "fichero": "pycel (evaluador de inject_cache y de las demostraciones)",
+   "sintoma_1": "`IF` NO es perezoso: evalúa las dos ramas. Con la celda del nombre vacía, el criterio de SUMIFS/COUNTIF llega como None y `criteria_parser` aborta («Couldn't parse criteria: None»). Dejaba 60 fórmulas del 05 sin valor cacheado.",
+   "arreglo_1": "criterios escritos como `$A6&\"\"`; en Excel es inocuo porque esa rama no se ejecuta.",
+   "sintoma_2": "`set_value` sólo propaga a las celdas que YA están en el grafo: escribir «V» en una columna que no se había evaluado nunca dejaba su total en 0 y hacía «fallar» una demostración correcta.",
+   "arreglo_2": "grupo_b._calentar() evalúa primero las SALIDAS que la demostración va a leer."
+  }
+ ],
+ "pendiente_fuera_de_este_grupo": [
+  "BONUS-02-calculadora-plantilla-optima.xlsx (SPEC §3): sigue dando 19 personas y «Seguridad Social empresa (30%)» en Calculadora!A27. El gate `fte_03_vs_bonus02` compara los dos y no pasa a verde hasta que use el mismo modelo: 80 cubiertos/día · 2 servicios · ratios 25/22/80 · 4 h por servicio · 6 días · jornada 40 · cobertura 1,15 · salario 1.500 · 14 pagas · SS 33 % → 7 FTE y 16.292,50 €/mes.",
+  "01, 02 y BONUS-01 (§2) y 06, 07 (§4): 8 citas legales obsoletas siguen vivas (11 h de descanso, ×1,75 y ×2,0 como «legislación española», «Alérgenos Propios») y 06!Ficha Evaluación!C22/C23 siguen cacheando #DIV/0!.",
+  "Integración (§5): landing, dashboard, changelog y products-catalog.ts."
+ ]
+}

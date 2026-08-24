@@ -44,7 +44,6 @@ Python 3.7 / openpyxl 3.1.3: sin walrus ni f-strings de depuración.
 """
 import copy
 import os
-import re
 import sys
 
 from openpyxl.styles import Alignment, Font, PatternFill, Protection
@@ -158,6 +157,32 @@ def _cola(ws, r_ult):
                for c in range(1, ws.max_column + 1)):
             fuera.append(r)
     return tuple(fuera)
+
+
+def _desverdear(ws, rango):
+    """Quita el verde de un rango que pasa a ser CALCULADO, y lo bloquea.
+
+    Hay que hacerlo AQUÍ y no dejárselo a `motor.aplicar_verde`, que sí detecta
+    la columna que pasó a calculada pero la «desmarca» copiándole el relleno de
+    la **columna A de su misma fila** — y en `02!Resumen Mensual` la columna A
+    es el nombre del empleado, o sea VERDE. Resultado medido el 2026-08-24: las
+    30 celdas del `SUMIF` de la columna B y las 30 del `SUMIFS` de la C se
+    quedaban verdes y DESBLOQUEADAS, invitando al cliente a escribir encima de
+    la agregación que acabamos de construir. Como `aplicar_verde` sólo entra a
+    esa rama `if es_verde(cel)`, basta con haber quitado el verde antes: el
+    motor las deja en paz.
+    """
+    n = 0
+    filas = ws[rango]
+    if not isinstance(filas, tuple):
+        filas = ((filas,),)
+    for fila in filas:
+        for cel in (fila if isinstance(fila, tuple) else (fila,)):
+            if motor.es_verde(cel):
+                n += 1
+            cel.fill = PatternFill()
+            cel.protection = Protection(locked=True)
+    return n
 
 
 def _limpiar_mis_dv(ws, rangos=()):
@@ -860,11 +885,17 @@ def _resumen_mensual(ws, cambios, reg0, reg1):
            '=IF($B{f}="","",ROUND($B{f}*$B$3*$D$3,2))'.format(f=f))
         n += 5
 
+    heredadas = 0
+    for col in ('B', 'C', 'D', 'F', 'G'):
+        heredadas += _desverdear(ws, '{c}{a}:{c}{b}'.format(c=col, a=r0, b=r1))
+
     fila_tot = _fila_con(ws, 1, 'TOTALES', r1 + 1)
     if fila_tot:
         for col in ('B', 'C', 'D', 'G'):
             _f(ws, '{}{}'.format(col, fila_tot),
                '=ROUND(SUM({c}{a}:{c}{b}),2)'.format(c=col, a=r0, b=r1))
+            ws['{}{}'.format(col, fila_tot)].number_format = (
+                motor.FMT_EUR if col == 'G' else motor.FMT_DEC2)
             n += 1
         for col in ('E', 'F'):
             ws['{}{}'.format(col, fila_tot)] = None
@@ -875,8 +906,9 @@ def _resumen_mensual(ws, cambios, reg0, reg1):
                    'con semáforo y G usa el recargo de D3 como PARÁMETRO. '
                    'Desaparecen las cabeceras «Coste ×1.75» y «Coste ×2.0», '
                    'que presentaban como ley lo que fija el convenio — '
-                   'DOM-07/DOM-12/TEC-06/TEC-08/COM-02/COM-14/COM-19'
-                   .format(F02, r0, r1, n))
+                   'DOM-07/DOM-12/TEC-06/TEC-08/COM-02/COM-14/COM-19. {} celdas '
+                   'de las columnas calculadas dejan de estar verdes'
+                   .format(F02, r0, r1, n, heredadas))
 
 
 def _instrucciones_02(wb, cambios):
