@@ -1,0 +1,7 @@
+{
+ "rol": "corrector",
+ "estado": "EN CURSO — stub inicial (se sobrescribe al terminar)",
+ "entrada": {"ref-dominio": 30, "ref-excel": 26, "ref-coherencia": 28, "total": 84},
+ "resueltos": [],
+ "no_aplicados": []
+}

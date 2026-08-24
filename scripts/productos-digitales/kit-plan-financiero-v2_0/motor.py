@@ -144,6 +144,11 @@ FICHEROS = [
 # El 03 es el único libro cuya base es CAJA (con IVA): §1.5.
 FICHERO_CAJA = '03-cash-flow-forecast.xlsx'
 
+# Ficheros donde la línea «Todas las cifras van SIN IVA» NO tiene sentido
+# (RC-28): la checklist no tiene importes y el CAPEX desglosa base + IVA.
+SIN_NOTA_IVA = ('BONUS-09-checklist-pre-apertura.xlsx',
+                '04-presupuesto-inversion-capex.xlsx')
+
 # ==========================================================================
 # Taxonomía canónica — las 10 categorías del kit
 # ==========================================================================
@@ -324,6 +329,60 @@ def verde(ws, rango):
             cel.protection = Protection(locked=False)
 
 
+def limpiar_rango(ws, rango):
+    """Vacía un rango antes de reescribirlo con un mapa de filas NUEVO.
+
+    No basta con poner `value = None`: si el relleno verde de la v1.1 sobrevive
+    en una celda que ya no es un input, `proteger()` la deja desbloqueada y
+    `validaciones()` le cuelga una DV que no le corresponde. Se limpian valor,
+    relleno, formato de número y bloqueo.
+    """
+    for fila in ws[rango] if ':' in rango else [[ws[rango]]]:
+        for cel in fila:
+            cel.value = None
+            cel.fill = PatternFill()
+            cel.number_format = 'General'
+            cel.protection = Protection(locked=True)
+
+
+def marcar_editable(ws, rango):
+    """Desbloquea por ROL, no por color (RD-06).
+
+    `proteger()` desbloqueaba SÓLO lo pintado de `E8F5E9`. En `02!Escenarios`
+    los inputs van pintados con los colores de escenario (rojo/ámbar/verde de
+    semáforo), así que la hoja entera quedaba con CERO celdas editables: un
+    lunes no se podía cambiar ni el ticket ni los cubiertos. Aquí se declara
+    que una celda es input aunque su relleno diga otra cosa.
+    """
+    marcadas = getattr(ws, '_pf_editables', None)
+    if marcadas is None:
+        marcadas = set()
+        ws._pf_editables = marcadas
+    for fila in ws[rango] if ':' in rango else [[ws[rango]]]:
+        for cel in fila:
+            marcadas.add(cel.coordinate)
+            cel.protection = Protection(locked=False)
+
+
+def permitir_negativo(ws, rango):
+    """Excluye un rango de la validación «≥ 0» del §1.3 (RD-30/RT-22/RT-07).
+
+    Hay celdas que TIENEN que poder ser negativas: el saldo inicial de una
+    tesorería en descubierto —el caso que el 03 existe para detectar—, un
+    EBITDA presupuestado o el flujo del año 0. Con la DV genérica, Excel
+    rechazaba el dato correcto con un error bloqueante y el usuario acababa
+    desprotegiendo la hoja el primer día, que es justo lo que la protección
+    venía a evitar.
+    """
+    libres = getattr(ws, '_pf_negativos', None)
+    if libres is None:
+        libres = set()
+        ws._pf_negativos = libres
+    for fila in ws[rango] if ':' in rango else [[ws[rango]]]:
+        for cel in fila:
+            libres.add(cel.coordinate)
+
+
 def gris(ws, rango):
     """Bloque auxiliar «datos base, no son caja» (§3 del 03)."""
     for fila in ws[rango] if ':' in rango else [[ws[rango]]]:
@@ -359,7 +418,8 @@ def _dxf(bg, fg):
                                               fill_type='solid'))
 
 
-def semaforo(ws, rango, vocabulario=SEM_DESVIACION):
+def semaforo(ws, rango, vocabulario=SEM_DESVIACION,
+             exigir_datos=True):
     """Colorea por TEXTO contenido: verde/ámbar/rojo de verdad.
 
     Hoy el kit tiene 0 reglas de formato condicional y los emojis salen en
@@ -370,11 +430,27 @@ def semaforo(ws, rango, vocabulario=SEM_DESVIACION):
     """
     _limpiar_cf(ws, rango)
     ancla = rango.split(':')[0]
+    # RT-17: una regla sobre un rango SIN una sola celda con contenido no puede
+    # encenderse jamás, y el gate contaba reglas, no efectos. Si no hay ancla
+    # con valor, no se escribe la regla y se devuelve False para que quien
+    # llama lo anote como pendiente.
+    if exigir_datos:
+        hay = False
+        for fila in ws[rango] if ':' in rango else [[ws[rango]]]:
+            for cel in fila:
+                if cel.value is not None:
+                    hay = True
+                    break
+            if hay:
+                break
+        if not hay:
+            return False
     for texto, bg, fg in vocabulario:
         regla = Rule(type='containsText', operator='containsText', text=texto,
                      dxf=_dxf(bg, fg), stopIfTrue=True)
         regla.formula = ['NOT(ISERROR(SEARCH("' + texto + '",' + ancla + ')))']
         ws.conditional_formatting.add(rango, regla)
+    return True
 
 
 def regla_expresion(ws, rango, formula, bg=CF_ROJO_BG, fg=CF_ROJO_FG,
@@ -462,7 +538,15 @@ def _purgar_dv_duplicadas(ws):
     ws.data_validations.dataValidation = fuera
 
 
-def validaciones(ws, informe=None):
+# §1.3 — celdas que la SPEC define como negativas o que pueden serlo por
+# naturaleza. Las pone el motor incluso si el grupo que reescribe la hoja no
+# está cargado (RD-30/RT-22).
+NEGATIVOS = {
+    '03-cash-flow-forecast.xlsx': {'Flujo Mensual': ['B5']},
+}
+
+
+def validaciones(ws, informe=None, fname=None):
     """§1.3: DV numérica sobre TODAS las celdas verdes de la hoja.
 
     Se clasifica por formato de número: `€`/`#,##0` → importe ≥ 0;
@@ -477,13 +561,17 @@ def validaciones(ws, informe=None):
                 for fila in ws[str(r)] if ':' in str(r) else [[ws[str(r)]]]:
                     for c in fila:
                         con_lista.add(c.coordinate)
-    importes, porcentajes = [], []
+    libres = set(getattr(ws, '_pf_negativos', set()))
+    libres.update(NEGATIVOS.get(fname or '', {}).get(ws.title, []))
+    importes, porcentajes, negativos = [], [], []
     for row in ws.iter_rows():
         for c in row:
             if not es_verde(c) or c.coordinate in con_lista:
                 continue
             fmt = c.number_format or ''
-            if '%' in fmt:
+            if c.coordinate in libres:
+                negativos.append(c.coordinate)
+            elif '%' in fmt:
                 porcentajes.append(c.coordinate)
             elif '€' in fmt or fmt.startswith('#,##0') or fmt == '0':
                 importes.append(c.coordinate)
@@ -491,38 +579,84 @@ def validaciones(ws, informe=None):
         dv_numerica(ws, importes, minimo=0)
     if porcentajes:
         dv_numerica(ws, porcentajes, minimo=0, maximo=1)
-    if informe is not None and (importes or porcentajes):
+    if negativos:
+        # Sin mínimo: un saldo en descubierto es un dato, no un error.
+        dv_numerica(ws, negativos, minimo=-1000000000000,
+                    titulo='Importe no válido',
+                    mensaje='Escribe un número (puede ser negativo).')
+    if informe is not None and (importes or porcentajes or negativos):
         informe.append(ws.title + ': DV numérica en ' + str(len(importes))
-                       + ' importes y ' + str(len(porcentajes))
-                       + ' porcentajes')
+                       + ' importes, ' + str(len(porcentajes))
+                       + ' porcentajes y ' + str(len(negativos))
+                       + ' celdas que admiten negativo')
     return len(importes), len(porcentajes)
 
 
 # ==========================================================================
 # Utilidades de rejilla (copiadas del motor de escandallos v2.0)
 # ==========================================================================
+# RT-03: la versión anterior era `(\$?)([A-Z]{1,3})(\$?)(\d+)` y NO distinguía
+# una referencia local de una referencia a OTRA hoja: al insertar una fila,
+# `Datos!C14` se convertía en `Datos!C15`. La corrupción era silenciosa —la
+# fórmula seguía siendo sintácticamente válida— y caía justo sobre las hojas
+# que la SPEC manda reestructurar. Ahora el patrón captura el prefijo de hoja
+# (con o sin comillas) y el tramo `:REF` de un rango, y `_traducir_formula`
+# devuelve intacto todo lo que venga cualificado.
 RX_REF = re.compile(r'(\$?)([A-Z]{1,3})(\$?)(\d+)')
+RX_REF_CTX = re.compile(
+    r"(?<![A-Za-z0-9_])"
+    r"((?:'[^']+'|[A-Za-z_][A-Za-z0-9_.]*)!)?"
+    r"(\$?[A-Z]{1,3}\$?\d+)"
+    r"(:\$?[A-Z]{1,3}\$?\d+)?"
+    r"(?![A-Za-z0-9_(])")
+RX_UNA_REF = re.compile(r'(\$?)([A-Z]{1,3})(\$?)(\d+)$')
 
 CAMPOS_DV = ('type', 'formula1', 'formula2', 'operator', 'allow_blank',
              'showErrorMessage', 'errorTitle', 'error', 'errorStyle',
              'showInputMessage', 'promptTitle', 'prompt', 'showDropDown')
 
 
-def _traducir_formula(valor, idx, eje):
+def _mover_una(ref, idx, eje):
+    m = RX_UNA_REF.match(ref)
+    if not m:
+        return ref
+    d1, col, d2, fila = m.groups()
+    ci, fi = column_index_from_string(col), int(fila)
+    if eje == 'col' and ci >= idx:
+        col = get_column_letter(ci + 1)
+    if eje == 'fila' and fi >= idx:
+        fila = str(fi + 1)
+    return d1 + col + d2 + fila
+
+
+def _traducir_formula(valor, idx, eje, solo_hoja=None):
+    """Desplaza las referencias de una fórmula al insertar fila/columna.
+
+    `solo_hoja=None` → sólo las referencias SIN prefijo de hoja (las locales).
+    `solo_hoja='Datos'` → sólo las que apuntan explícitamente a esa hoja: es lo
+    que necesita `insertar_fila` para arreglar las fórmulas que OTRAS hojas
+    hacen contra la hoja modificada (RT-04).
+    """
     if not (isinstance(valor, str) and valor.startswith('=')):
         return valor
 
     def _sub(m):
-        d1, col, d2, fila = m.groups()
-        ci = column_index_from_string(col)
-        fi = int(fila)
-        if eje == 'col' and ci >= idx:
-            col = get_column_letter(ci + 1)
-        if eje == 'fila' and fi >= idx:
-            fila = str(fi + 1)
-        return d1 + col + d2 + fila
+        hoja, ref, rango = m.group(1), m.group(2), m.group(3)
+        nombre = None
+        if hoja:
+            nombre = hoja[:-1].strip("'")
+        if solo_hoja is None:
+            if hoja:
+                return m.group(0)
+        else:
+            if nombre != solo_hoja:
+                return m.group(0)
+        fuera = (hoja or '') + _mover_una(ref, idx, eje)
+        if rango:
+            fuera += ':' + _mover_una(rango[1:], idx, eje)
+        return fuera
 
-    return RX_REF.sub(_sub, valor)
+    return RX_REF_CTX.sub(_sub, valor)
 
 
 def _rangos_dv(ws):
@@ -558,6 +692,38 @@ def _desplazar_rango(ref, idx, eje):
     return ':'.join(fuera)
 
 
+def _propagar_a_otras_hojas(ws, idx, eje):
+    """RT-04: reescribe las referencias que OTRAS hojas hacen a `ws`.
+
+    `insertar_fila`/`insertar_columna` sólo traducían las fórmulas de la hoja
+    que modificaban. Con el mapa nuevo del 03 (el SALDO FINAL baja de la fila
+    25 a la 29) las 36 fórmulas de `Alertas` seguirían leyendo la fila 25 —y el
+    fichero se vería perfectamente bien—. También se sueltan los gráficos: sus
+    `Reference` son fijas y `graficos()` los reconstruye al final del pipeline
+    (§1.8), así que dejarlos apuntando al mapa viejo sería peor que rehacerlos.
+    """
+    wb = ws.parent
+    tocadas = 0
+    if wb is None:
+        return tocadas
+    for otra in wb.worksheets:
+        if otra is ws:
+            continue
+        for row in otra.iter_rows():
+            for c in row:
+                v = c.value
+                if not (isinstance(v, str) and v.startswith('=')):
+                    continue
+                nueva = _traducir_formula(v, idx, eje, solo_hoja=ws.title)
+                if nueva != v:
+                    c.value = nueva
+                    tocadas += 1
+        if otra._charts:
+            otra._charts = []
+    ws._charts = []
+    return tocadas
+
+
 def insertar_columna(ws, idx):
     """Inserta una columna manteniendo a mano lo que openpyxl NO mueve:
     combinaciones, validaciones, fórmulas y anchos."""
@@ -587,6 +753,8 @@ def insertar_columna(ws, idx):
         if ci >= idx:
             ws.column_dimensions[get_column_letter(ci + 1)].width = ancho
 
+    _propagar_a_otras_hojas(ws, idx, 'col')
+
 
 def insertar_fila(ws, idx):
     """Equivalente por filas de `insertar_columna`."""
@@ -613,6 +781,8 @@ def insertar_fila(ws, idx):
     for fila, alto in sorted(alturas.items(), reverse=True):
         if fila >= idx:
             ws.row_dimensions[fila + 1].height = alto
+
+    _propagar_a_otras_hojas(ws, idx, 'fila')
 
 
 def anchos(ws, mapa):
@@ -711,8 +881,14 @@ def cierre_instrucciones(ws, fname):
     for r in range(1, ws.max_row + 1):
         if ws.cell(row=r, column=col).value is not None:
             ultima = r
-    lineas = [NOTA_IVA_CAJA if fname == FICHERO_CAJA else NOTA_IVA,
-              NOTA_DESPROTEGER, BIO_LINE, VERSION_LINE]
+    lineas = []
+    if fname not in SIN_NOTA_IVA:
+        # RC-28: la checklist pre-apertura no tiene UNA sola cifra monetaria;
+        # «Todas las cifras van SIN IVA» ahí es ruido que delata que la línea
+        # se inyectó en bloque. El 04 tampoco la lleva: desde §3 desglosa base,
+        # IVA y total con IVA en cada partida y lo dice en su cabecera.
+        lineas.append(NOTA_IVA_CAJA if fname == FICHERO_CAJA else NOTA_IVA)
+    lineas += [NOTA_DESPROTEGER, BIO_LINE, VERSION_LINE]
     fila = ultima + 2
     for texto in lineas:
         cel = ws.cell(row=fila, column=col, value=texto)
@@ -958,7 +1134,8 @@ ANCHOS = {
 RESUMEN_EJECUTIVO_FMT = {
     'C8': FMT_ENT, 'C9': FMT_ENT, 'C10': FMT_FECHA,
     'C13': FMT_EUR, 'C14': FMT_EUR, 'C15': FMT_EUR,
-    'C17': FMT_EUR, 'C18': FMT_EUR,
+    'C16': '0.0" años"', 'C17': FMT_EUR, 'C18': FMT_EUR,
+    'C19': '0.0" años"',
 }
 
 
@@ -1245,10 +1422,11 @@ def proteger(ws, informe=None):
     la cadena vacía → Excel pide contraseña justo donde las Instrucciones dicen
     que no hay ninguna. Se deja sin asignar.
     """
+    extras = getattr(ws, '_pf_editables', set())
     verdes = 0
     for row in ws.iter_rows():
         for c in row:
-            if es_verde(c):
+            if es_verde(c) or c.coordinate in extras:
                 c.protection = Protection(locked=False)
                 verdes += 1
             else:
@@ -1302,6 +1480,9 @@ def literales_sospechosos(wb, fname):
     return fuera
 
 
+RX_GUARDA = re.compile(r'^=\s*(IFERROR|IF)\s*\(', re.I)
+
+
 def contadores(wb, fname):
     """Contador auxiliar del estado de un libro (alimenta el informe/gates)."""
     r = {'fichero': fname, 'hojas': len(wb.worksheets), 'formulas': 0,
@@ -1320,8 +1501,12 @@ def contadores(wb, fname):
                 v = c.value
                 if isinstance(v, str) and v.startswith('='):
                     r['formulas'] += 1
-                    if '/' in v and 'IFERROR' not in v.upper() \
-                            and 'IF(' not in v.upper():
+                    if '/' in v and not RX_GUARDA.match(v):
+                        # RT-14: la guarda anterior buscaba la subcadena
+                        # «IF(», que aparece dentro de COUNTIF( y SUMIF(. Toda
+                        # división escrita con COUNTIF —que la SPEC IMPONE
+                        # porque pycel no implementa COUNTA— se contaba como
+                        # protegida sin estarlo: BONUS-09!C59 daba 0.
                         r['divisiones_sin_iferror'] += 1
                 elif v == 0 and not es_verde(c):
                     # 0 constante SIN relleno de input = resultado en cero, el
