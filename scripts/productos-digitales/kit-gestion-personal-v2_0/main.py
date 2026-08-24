@@ -420,6 +420,35 @@ def gate_autofiltro(carpeta, nombres):
     return fuera
 
 
+def gate_anio_calendario(carpeta, nombres):
+    """RT-13/RD-11/RC-17 — el calendario no puede venir de un año pasado.
+
+    El 05 estaba anclado a 2027 con dos literales del generador —el lunes de
+    la semana 1 y la fecha de cierre del saldo— dentro de un producto sellado
+    «Versión 2.0 · agosto 2026» que se vende sin reconstruirse durante años:
+    un cliente de 2029 abriría un calendario de 2027 y un saldo que cierra en
+    un año pasado, que además es el input del prorrateo (RT-08). Ahora se
+    deriva de la fecha de construcción; esto lo comprueba.
+    """
+    fuera = {}
+    hoy = datetime.datetime.now().year
+    for n in nombres:
+        path = os.path.join(carpeta, n)
+        if not os.path.isfile(path) or not n.startswith('05-'):
+            continue
+        ws = openpyxl.load_workbook(path)['Calendario Anual']
+        ancla = ws['B5'].value
+        if not isinstance(ancla, datetime.datetime):
+            fuera[n] = ['Calendario Anual!B5 no es una fecha: {!r}'
+                        .format(ancla)]
+            continue
+        if ancla.year < hoy:
+            fuera[n] = ['Calendario Anual!B5 = {} — el calendario es de un '
+                        'año ANTERIOR al actual ({})'
+                        .format(ancla.strftime('%d/%m/%Y'), hoy)]
+    return fuera
+
+
 def censo(carpeta):
     r = subprocess.run([sys.executable, CENSO, '--only', carpeta, '--fail',
                         '--quiet'], capture_output=True, text=True)
@@ -987,6 +1016,12 @@ def main():
     for n, lineas in veredictos.items():
         for l in lineas[:4]:
             log('    {}: {}'.format(n, l))
+    anios = gate_anio_calendario(carpeta, nombres)
+    n_anio = sum(len(v) for v in anios.values())
+    log('  calendarios anclados a un año pasado (RT-13): {}'.format(n_anio))
+    for n, lineas in anios.items():
+        for l in lineas:
+            log('    {}: {}'.format(n, l))
     filtros = gate_autofiltro(carpeta, nombres)
     n_filt = sum(len(v) for v in filtros.values())
     log('  autofiltros que no llegan a la última columna (RD-06): {}'
@@ -1079,6 +1114,10 @@ def main():
             '(RT-21): {}'
             .format(n_ver, '; '.join('{}:{}'.format(n, v[0])
                                      for n, v in list(veredictos.items())[:3])))
+    if n_anio:
+        pendientes_contenido.append(
+            'calendario del 05 anclado a un año pasado (RT-13): {}'
+            .format('; '.join(v[0] for v in anios.values())))
     if n_filt:
         pendientes_contenido.append(
             '{} autofiltros que no abarcan toda la tabla (RD-06): {}'
@@ -1127,6 +1166,7 @@ def main():
             'valores_cacheados_con_error': errores,
             'veredictos_cacheados_fuera_de_lista_blanca': veredictos,
             'autofiltro_incompleto': filtros,
+            'anio_calendario_pasado': anios,
             'censo_entregables': cen,
             'pestanas_citadas_inexistentes': pest,
             'citas_legales_obsoletas': citas,

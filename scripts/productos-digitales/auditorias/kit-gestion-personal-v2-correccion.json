@@ -1,7 +1,7 @@
 {
  "informe": "Corrección de los 74 hallazgos de las 3 lentes refutadoras del Kit de Gestión de Personal y Turnos v2.0",
  "fecha": "2026-08-24",
- "estado": "EN CURSO — motor, main, grupo_a, grupo_c y el 03 de grupo_b hechos",
+ "estado": "EN CURSO — toda la capa Excel hecha; falta la capa de integración (.ts/.tsx)",
  "entrada": {
   "total": 74,
   "ids": [
@@ -261,6 +261,96 @@
    "id": "RD-20",
    "fichero": "grupo_b.py:SEMANAS_EFECTIVAS + _n03_nominas I",
    "fix": "Celda verde F2 «Semanas efectivas al año» (46,5) y el coste/hora divide por $H*$F$2/12. Demo grupo_b_03_coste_por_empleado: 2.327,50 €/mes y 40 h → 15,02 €/h con 46,5 semanas y 13,43 €/h con 52 (el valor anterior, un 11 % corto)."
+  },
+  {
+   "id": "RD-09",
+   "fichero": "grupo_b.py:SOL0/SOL_FILAS/SOL1 + motor.py:BLOQUES",
+   "fix": "05!'Solicitudes' de 30 a 150 filas (5 periodos × 30 personas) con fórmulas, verde y DV replicados; SUMIFS e INDEX/MATCH ampliados. Demo grupo_b_05_dias_y_saldo: petición en la fila 154 → 'Disfrutados'=5."
+  },
+  {
+   "id": "RT-03",
+   "fichero": "grupo_b.py:_n05_solicitudes",
+   "fix": "Mismo cambio. Caso pedido por el hallazgo verificado: 3 solicitudes del mismo empleado (10+8+7) → Disfrutados 25 y Le quedan 5."
+  },
+  {
+   "id": "RD-10",
+   "fichero": "grupo_b.py:_sumifs_solicitudes",
+   "fix": "Los SUMIFS del saldo y el 'Días Usados' del calendario filtran por AÑO contra la fecha de inicio ('Saldo Vacaciones'!E2/G2, derivadas del ancla). Demo: la misma petición del año siguiente → Disfrutados 0 y Le quedan 30."
+  },
+  {
+   "id": "RD-11",
+   "fichero": "grupo_b.py:_primer_lunes/ANIO_CALENDARIO + A1 + B5",
+   "fix": "El ancla se calcula (primer lunes del año siguiente al build), A1='=\"Calendario de Vacaciones — Año \"&TEXT(YEAR($B$5),\"0\")', B5 rotulada y con DV, E2/G2 derivadas por fórmula. Gate nuevo gate_anio_calendario."
+  },
+  {
+   "id": "RT-13",
+   "fichero": "grupo_b.py + main.py:gate_anio_calendario",
+   "fix": "Mismo cambio + gate que suspende si Calendario Anual!B5 es de un año anterior al actual (0 en la pasada verde). La temporada alta se precarga por MES del lunes de cada semana, no por número de semana."
+  },
+  {
+   "id": "RC-17",
+   "fichero": "grupo_b.py:_n05_calendario A1",
+   "fix": "El título ya no deja el año en blanco y el fichero se construye para el ejercicio siguiente al de compilación; las Instrucciones lo dicen y explican cómo cambiarlo."
+  },
+  {
+   "id": "RD-12",
+   "fichero": "grupo_b.py:_n05_calendario fila 38/39",
+   "fix": "Fila nueva 'Ausencias por solicitudes APROBADAS' (SUMPRODUCT por solape con la semana) y fila 39 = la mayor de las dos. Demo: sin pintar nada en la rejilla, una solicitud aprobada da rejilla=0, solicitudes=1, la_mayor=1."
+  },
+  {
+   "id": "RD-13",
+   "fichero": "grupo_b.py:_n05_calendario fila 37",
+   "fix": "+COUNTIF(...,\"PE\"). Demo: dos V y dos PE → 4 ausencias (antes 2). El festivo F sigue sin sumar."
+  },
+  {
+   "id": "RT-11",
+   "fichero": "grupo_b.py:_n05_calendario fila 40 + Cobertura!D3",
+   "fix": "El EXCESO se evalúa primero y la temporada agrava. Demo: 6 ausencias en semana normal → '⚠ EXCESO'; en alta → '⛔ EXCESO en TEMP. ALTA'; 1 en alta con umbral 1 → sin alerta; 2 → '⛔ TEMP. ALTA'."
+  },
+  {
+   "id": "RD-14",
+   "fichero": "grupo_b.py:_n05_cobertura B48 + mínimos",
+   "fix": "Indicador nuevo B48 que compara plantilla−ausencias con MAX(B6:B8) y mínimos realineados con el 03/BONUS-02 (M 4 · T 5 · N 2). Demo: 3 ausentes de 10 → 0 semanas sin cubrir; 7 → 1."
+  },
+  {
+   "id": "RT-14",
+   "fichero": "grupo_b.py:_n05_cobertura B48",
+   "fix": "Mismo cambio: la tabla deja de ser decorativa; ajustar los mínimos mueve el indicador."
+  },
+  {
+   "id": "RD-27",
+   "fichero": "grupo_b.py:_n05_saldo columna C",
+   "fix": "Columna verde 'Fecha de baja / fin de contrato' y prorrateo por los dos extremos. Demo: alta implícita 1-ene y baja 30-jun → derecho 14,9 (antes 30)."
+  },
+  {
+   "id": "RT-08",
+   "fichero": "grupo_b.py:_n05_saldo E/I",
+   "fix": "MAX(0, MIN(...)) y divisor ($G$2-$E$2+1) en vez del 365 cableado; aviso explícito. Demo: alta posterior al cierre → derecho 0 y '⚠ la fecha de alta es posterior al cierre del año' (antes −4,9 y '⛔ saldo negativo')."
+  },
+  {
+   "id": "RT-18",
+   "fichero": "grupo_b.py:_n05_cobertura columna G",
+   "fix": "Aviso '⚠ ese nombre no está en el calendario' con el mismo COUNTIF de 'Solicitudes'!H."
+  },
+  {
+   "id": "RT-04",
+   "fichero": "motor.py:aplicar_cf (listos.sort)",
+   "fix": "Las reglas de tipo expression se insertan las ÚLTIMAS, así que la banda gris del 05 deja de tener precedencia sobre las cuatro reglas de código: en los meses impares V/B/F/PE se pintaban grises."
+  },
+  {
+   "id": "RD-28",
+   "fichero": "grupo_b.py:PLAZOS_04 + COL_FECHA_04",
+   "fix": "E pasa a 'Plazo' (texto, formato General) y H a 'Fecha límite' = '=IF($E$3=\"\",\"\",$E$3+N)'. Verificado en el .xlsx: E61='Día 1' General, H61='=IF($E$3=\"\",\"\",$E$3+1)' dd/mm/yyyy."
+  },
+  {
+   "id": "RT-19",
+   "fichero": "grupo_b.py:PLAZOS_04",
+   "fix": "Mismo cambio: se acaba el estado mixto texto/fecha en la misma columna."
+  },
+  {
+   "id": "RD-29",
+   "fichero": "grupo_b.py:PLAZOS_04 (tramo 5)",
+   "fix": "Escalones -1/1/3/7/15/30. B64 'Evaluación informal día 3' → E64='Día 3' (antes 'Día 7'); B65 'Evaluación formal día 15' → E65='Día 15' (antes 'Día 30')."
   }
  ],
  "no_aplicados": [
