@@ -279,3 +279,27 @@ Homologación AICP↔CB sigue pendiente (los 11 kits v2.0 deben llegar a CB).
 - **Plan-financiero v2.0**: construcción EN CURSO (workflow `wf_b368e319-e72`, auto-commit cada 15 min); si se corta,
   relanzar el workflow entero revisando el paquete `kit-plan-financiero-v2_0/` existente. Al dar verde el crítico:
   fixes → dry-run → APPLY → censo → gate offline → commit rutas explícitas → deploy → gate LIVE (nunca `git add dl/` entero).
+
+## 11. PARADA por consumo de tokens (24-ago ~11:25, orden de John) — cómo retomar plan-financiero
+
+**Contexto del gasto:** el incidente global de Anthropic (529 en Opus, 05:27-09:00 UTC) tumbó 3 veces la fase de
+grupos del workflow de plan-financiero; cada reintento re-ejecutó integración/refutadores contra una copia sin
+grupos (~1M tokens quemados en verificaciones inválidas). Todo parado: workflow, auto-commit y vigilantes.
+
+**Estado real:**
+- LIVE y cerrado: 11 kits de tareas v2.0 · kit-inventario v2.0 · kit-gestion-personal v2.0 (gates verdes, prod = repo).
+- plan-financiero: `kit-plan-financiero-v2_0/motor.py + main.py` COMPLETOS y verificados (TIR Newton, 51 CF, 53 hojas
+  protegidas, gráficos; informe `auditorias/kit-plan-financiero-v2-motor.json`). Los GRUPOS A/B/C no existen.
+  ⚠️ Los informes de integración/refutación/corrección/ronda2/crítico de auditorias/ describen una copia SIN grupos:
+  INVÁLIDOS para dar por bueno nada. El integrador ya revirtió del copy las afirmaciones que dependían de los grupos.
+  `dl/kit-plan-financiero` INTACTO (sigue v1.1 en producción, funcional como siempre).
+
+**Para retomar (sesión nueva; el runId no sobrevive):** relanzar
+`Workflow({scriptPath:'scripts/productos-digitales/kit-plan-financiero-v2-workflow.js', args:{par:2}})` SIN resume —
+el motor se re-ejecuta (~40 min; su prompt es el mismo y el código ya está en el repo, así que el agente debería
+detectarlo hecho y solo verificar). El script ya lleva el nonce T2. Después: fixes del crítico → dry-run → APPLY →
+censo → gate offline → commit rutas explícitas → deploy → gate LIVE.
+
+**Después de plan-financiero (orden del plan):** guías → planes → hotel completo → eBook · homologación AICP↔CB ·
+SEO landings ES+LATAM. Pendientes de John: avisos legales (ancla 190 €, aggregateRating), licencia inventario,
+webhook/strict, marca CB en 7 productos.
