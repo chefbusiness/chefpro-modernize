@@ -1,7 +1,7 @@
 {
  "informe": "Corrección de los 74 hallazgos de las 3 lentes refutadoras del Kit de Gestión de Personal y Turnos v2.0",
  "fecha": "2026-08-24",
- "estado": "EN CURSO — toda la capa Excel hecha; falta la capa de integración (.ts/.tsx)",
+ "estado": "CERRADO — 74/74 tratados, dry-run exit 0 e idempotencia 0",
  "entrada": {
   "total": 74,
   "ids": [
@@ -351,6 +351,101 @@
    "id": "RD-29",
    "fichero": "grupo_b.py:PLAZOS_04 (tramo 5)",
    "fix": "Escalones -1/1/3/7/15/30. B64 'Evaluación informal día 3' → E64='Día 3' (antes 'Día 7'); B65 'Evaluación formal día 15' → E65='Día 15' (antes 'Día 30')."
+  },
+  {
+   "id": "RC-01",
+   "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts:schema.reviews[0].body + src/pages/KitGestionPersonal.tsx (JSON-LD)",
+   "fix": "«alertas de 11h entre turnos y maximo 40h/semana» → «alertas de 12 h de descanso entre jornadas y de las horas que tiene contratadas cada uno». §7-bis.8 aparca aggregateRating, el número de reseñas y el ancla de precio (intactos); §7-bis.4 ordena expresamente que la cita pase a 12 h, art. 34.3 ET — corregir una cifra legal falsa dentro del JSON-LD no es tocar la prueba social."
+  },
+  {
+   "id": "RC-03",
+   "fichero": "kit-gestion-personal.ts:testimonials.items[0] + src/data/testimonials-gestion-personal.ts",
+   "fix": "Mismo texto en el testimonio on-page y en su gemelo de la SPA: 12 h y «las horas que tiene contratadas cada uno»."
+  },
+  {
+   "id": "RD-08",
+   "fichero": "kit-gestion-personal.ts:53/263 + ContentGrid.tsx:8 + KitGestionPersonal.tsx (JSON-LD) + testimonials-gestion-personal.ts:14",
+   "fix": "Las cuatro apariciones de «11h» pasan a 12 h (art. 34.3 ET), que es lo que entrega 01!'Turnos'!B3. Gate nuevo gate_copy_producto para que no vuelva."
+  },
+  {
+   "id": "RC-02",
+   "fichero": "kit-gestion-personal.ts:testimonials[2] y [7] + testimonials-gestion-personal.ts",
+   "fix": "§7-bis.1 al pie de la letra: Francisco Torres describe ahora el coste laboral con la cotización y el recargo en celda y el semáforo por tipo de negocio; Enrique Vidal, el refuerzo del día PICO por servicio (Calculadora!B16/B35). aggregateRating y el resto de testimonios sin tocar."
+  },
+  {
+   "id": "RC-04",
+   "fichero": "kit-gestion-personal.ts:schema.reviews[0-2] y testimonials.items[0-7]",
+   "fix": "Los 11 textos y los nombres pasan por el barrido de tildes de DOM-26 (§5, que ya listaba 'testimonials'): Lucía, Méndez, Jiménez, Sánchez, mediterráneo, desempeño, gastronómico…"
+  },
+  {
+   "id": "RD-26",
+   "fichero": "kit-gestion-personal.ts + src/data/testimonials-gestion-personal.ts",
+   "fix": "Mismo barrido en el .ts de Astro y en el gemelo de la SPA, en el mismo commit. No toca aggregateRating ni el número de reseñas."
+  },
+  {
+   "id": "RC-05",
+   "fichero": "src/data/products-catalog.ts:56-57",
+   "fix": "description.es/en pasan al texto del SPEC §5: «Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo». Verificado que ni el fichero ni ningún .ts de casos de uso conservan «ratios de productividad»."
+  },
+  {
+   "id": "RD-25",
+   "fichero": "products-catalog.ts + use-cases-content.{es,en}.ts + use-cases-content.{es,en}.consultor.ts",
+   "fix": "Además del catálogo, las 16 apariciones de «ratios de productividad» / «productivity ratios» en los casos de uso (9 bloques del consultor + hub + jornada + spokes). Los .md del blog NO se tocan: hablan de productividad en otro contexto."
+  },
+  {
+   "id": "RD-07",
+   "fichero": "src/components/kit-gestion-personal/{HeroSection,WhySection,FaqAccordion,ContentGrid}.tsx + src/pages/KitGestionPersonal.tsx",
+   "fix": "Portado VERBATIM el texto del .ts de Astro: badge «Registro de jornada obligatorio en España desde 2019 — art. 34.9 ET» (y tono de rojo a oro), FAQ con el art. 7.5 LISOS y el JSON-LD del FAQPage. Gate gate_copy_producto: 21 coincidencias en HEAD, 0 ahora."
+  },
+  {
+   "id": "RC-06",
+   "fichero": "los cinco ficheros de la SPA",
+   "fix": "Mismo pase, en el mismo commit, incluido WhySection ('Cumplimiento Legal 2026' → 'Cumplimiento Legal, con Cita Exacta') y el «40 EUR/mes» → «30-60 EUR/mes» que ya decía el .ts."
+  },
+  {
+   "id": "RC-07",
+   "fichero": "astro-site/src/components/pages/ProductosDigitalesHubPage.astro + src/pages/ProductosDigitales.tsx",
+   "fix": "Nombre, descripción y las 4 features de la tarjeta del hub acentuados en las dos gemelas."
+  },
+  {
+   "id": "RC-08",
+   "fichero": "src/data/productos-changelog.ts + kit-gestion-personal.ts:grid.templates[7]/bonus.items[0] + KitGestionPersonalDashboard.tsx",
+   "fix": "Bullet nuevo del BONUS-01 en el changelog de la v2.0 (arqueo con lectura Z + temperaturas al relevo con mínimo y máximo) y las tres descripciones del briefing actualizadas."
+  },
+  {
+   "id": "RC-09",
+   "fichero": "kit-gestion-personal.ts:grid.templates[7].desc y bonus.items[0].desc",
+   "fix": "«avisos de mantenimiento» —que no existe en ninguno de los 8 bloques del BONUS-01— se sustituye por los bloques reales: personal, arqueo de caja y temperaturas."
+  },
+  {
+   "id": "RC-10",
+   "fichero": "src/data/productos-changelog.ts (bullet 5 de la v2.0)",
+   "fix": "«aparece un contador» → «las horas acumuladas del año —que arrastras tú de mes en mes— llevan ahora un semáforo del tope legal»: describe el semáforo, que es lo que el fichero hace. De paso nombra las tres excepciones, incluidas las complementarias de RD-18."
+  },
+  {
+   "id": "RC-13",
+   "fichero": "kit-gestion-personal.ts:hero.badgeTone/badge",
+   "fix": "badgeTone 'red' → 'gold' (el badge ya no amenaza) y el texto se acorta a la cláusula que informa: «Registro de jornada obligatorio en España desde 2019 — art. 34.9 ET» (66 caracteres). La divergencia se retira de la cabecera."
+  },
+  {
+   "id": "RC-14",
+   "fichero": "kit-gestion-personal.ts:guarantee.headingPre",
+   "fix": "«Garantia de Satisfaccion » → «Garantía de Satisfacción » y el punto 4 de la lista de divergencias, retirado: la divergencia se documentó cuando TODO el fichero iba sin tildes."
+  },
+  {
+   "id": "RC-15",
+   "fichero": "kit-gestion-personal.ts (cabecera, líneas 1-30)",
+   "fix": "La cabecera declara ahora que ESTE fichero es la fuente del copy y que la SPA se porta desde aquí en el mismo commit; se enumeran los gemelos (incluida la tarjeta del hub) y se retira el punto 5 que se contradecía a sí mismo («authorBadges SIN tildes» citando dos badges que sí las llevan)."
+  },
+  {
+   "id": "RC-16",
+   "fichero": "kit-gestion-personal.ts:138 y :249 + ContentGrid.tsx + testimonials",
+   "fix": "Unificado en «50 tareas» (cifra medida: 13+8+9+12+8) en las cuatro ubicaciones, según recomienda el hallazgo; el dashboard y el changelog ya decían 50."
+  },
+  {
+   "id": "RC-19",
+   "fichero": "src/data/productos-changelog.ts:276",
+   "fix": "El bullet de la v1.1 se matiza: «se añade el contador de progreso (el cálculo se corrigió después, en la versión 2.0: contaba las cabeceras de sección como tareas hechas)», así que deja de leerse como promesa incumplida junto a su desmentido."
   }
  ],
  "no_aplicados": [
@@ -359,5 +454,56 @@
    "motivo": "FALSO POSITIVO en su premisa + choca con §7-bis.6. BONUS-02!Calculadora!B27 = '=IF(OR($E$26=\"\",$B$6=\"\"),\"\",$E$26*$B$6)' y su rótulo es «Presencias al día (personas × servicios)»: una presencia es persona-SERVICIO, no persona-día. Las 10 presencias son 5 personas × 2 servicios, y esas 5 personas hacen un turno de 8 h (4 h por servicio × 2) → 5 × 8 × 6 = 240 h/semana, exactamente B28. El cálculo de 480 h del hallazgo duplica el turno de cada persona. Subir B12 a 8 daría 14 FTE y violaría §3/§7-bis.6 («BONUS-02 debe dar 6-9 FTE para 80 cubiertos/día») y §7-bis.4 (ratio por defecto ~31 %). Se aplica la parte no conflictiva: B12 se re-rotula «Horas pagadas por presencia y servicio (el turno completo sale de multiplicarlas por los servicios)» con nota que lo reconcilia con 01!'Turnos', y la nota A50 explica la unidad."
   }
  ],
- "cruce": {}
+ "cruce": {
+  "entrada": 74,
+  "resueltos": 73,
+  "no_aplicados": 1,
+  "suma": 74,
+  "duplicados": [],
+  "perdidos_no_tratados": [],
+  "inventados_no_estaban_en_la_entrada": [],
+  "cuadra": true
+ },
+ "verificacion": {
+  "comando": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-corrector python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --json .../kit-gp-v2/final.json",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_entregables": "0 defectos (--fail)",
+  "valores_cacheados_con_error": 0,
+  "veredictos_cacheados_fuera_de_lista_blanca": 0,
+  "afirmaciones_legales_falsas_en_el_copy": 0,
+  "autofiltros_incompletos": 0,
+  "calendarios_de_un_ano_pasado": 0,
+  "demostraciones": "31/31 OK (24 propias de grupo + 7 del motor)",
+  "produccion": "astro-site/public/dl/kit-gestion-personal/ INTACTA — `git status --short` sobre esa carpeta: sin cambios",
+  "typescript": "los 15 .ts/.tsx tocados parsean sin errores (ts.createSourceFile)"
+ },
+ "gates_nuevos": [
+  "main.py:gate_veredictos_cacheados (RT-21) — lista blanca CACHE_DELIBERADO",
+  "main.py:gate_autofiltro (RD-06)",
+  "main.py:gate_anio_calendario (RT-13)",
+  "main.py:gate_copy_producto (RD-07/RC-06) — 21 coincidencias en HEAD, 0 ahora",
+  "main.py:demo_proteccion ampliada (RT-12/RT-23)"
+ ],
+ "demostraciones_nuevas": [
+  "grupo_a_turnos_manda_01 (reescrita, RT-02)",
+  "grupo_a_menores_01 (RD-16)",
+  "grupo_a_coste_por_tipo_02 (RD-02/RT-06/RD-18)",
+  "grupo_a_saldo_neto_02 (RD-17)",
+  "grupo_a_avisos_registro_02 (RD-19/RT-05/RT-09/RT-15)",
+  "grupo_a_caja_y_temperaturas_bonus01 (reescrita, RD-04/RD-22/RD-23)",
+  "grupo_b_03_semaforo_por_tipo (reescrita, RD-01/RT-01/RD-21/RC-11)",
+  "grupo_b_03_coste_por_empleado (ampliada, RD-20)",
+  "grupo_b_05_dias_y_saldo (reescrita, RD-09/RD-10/RD-27/RT-03/RT-08)",
+  "grupo_b_05_cobertura (reescrita, RD-12/RD-13/RD-14/RT-11/RT-14)",
+  "grupo_c_06_ficha_y_na (ampliada, RD-24)",
+  "grupo_c_07_aviso_menor_de_edad (ampliada, RD-15/RT-07)"
+ ],
+ "aprendizajes": [
+  "openpyxl 3.1.3 PIERDE al guardar el fill y el Protection de una MergedCell: se escribe el `s=` pero al releer devuelve locked=False y fill=None. Por eso RT-23 se cierra documentando la excepción y midiéndola, no «arreglándola».",
+  "pycel devuelve el valor CACHEADO de una celda de fórmula, así que una demo que atraviese una celda con cache (Turnos!E) no mide nada: hay que volver a guardar el libro con openpyxl (borra todos los <v>) — helper `sin_cache` en grupo_a.demos.",
+  "pycel NO propaga la invalidación de set_value a través de un nodo MAX sobre dos celdas de fórmula de la misma hoja; IF(a>b,a,b) sí. En Excel son idénticas (Calendario Anual!B39).",
+  "pycel sólo propaga a las celdas que YA están en su grafo: hay que evaluar las SALIDAS antes de escribir las entradas (`_calentar`).",
+  "pycel SÍ evalúa SUMIFS con CUATRO criterios y SUMPRODUCT con MAX dentro: medido antes de escribir las fórmulas del saldo por año (RD-10)."
+ ]
 }

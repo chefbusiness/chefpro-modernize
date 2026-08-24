@@ -449,6 +449,85 @@ def gate_anio_calendario(carpeta, nombres):
     return fuera
 
 
+#: RD-07/RC-06 · las tres afirmaciones legales FALSAS del kit y las cifras que
+#: la v2.0 corrigió, como patrones. El SPEC §5 exigía tocar el `.ts` de Astro y
+#: sus gemelos de la SPA «en el MISMO commit, o vuelven a divergir»: no se
+#: tocaron, y el defecto sobrevivió una versión entera en cinco ficheros,
+#: incluido un `<script type="application/ld+json">`. Esto lo mide.
+#:
+#: `(regex, motivo)`. Se barre `src/` y `astro-site/src/` acotado a los
+#: ficheros del producto: barrer el repo entero cazaría el blog y el gate
+#: dejaría de leerse.
+COPY_PROHIBIDO = [
+    (re.compile(r'homolog', re.I),
+     'no existe homologación oficial de sistemas de fichaje en España'),
+    (re.compile(r'obligatori\w*\s+(en\s+Espa\w+\s+)?desde\s+2026|'
+                r'obligatorio\s+2026|Legal\s+2026', re.I),
+     'el registro de jornada es obligatorio desde el 12-05-2019 '
+     '(RD-ley 8/2019, art. 34.9 ET), no desde 2026'),
+    (re.compile(r'10\.?000\s*EUR\s*/\s*empleado|'
+                r'multas?\s+hasta\s+10\.?000', re.I),
+     'la sanción es infracción grave del art. 7.5 LISOS: de 751 a 7.500 EUR '
+     'por CENTRO DE TRABAJO, no 10.000 EUR por empleado'),
+    (re.compile(r'11\s*h\s+entre\s+turnos|11h\s+entre', re.I),
+     'el descanso entre jornadas son 12 h (art. 34.3 ET); las 11 h son el '
+     'mínimo de la Directiva 2003/88/CE'),
+    (re.compile(r'ratios?\s+de\s+productividad|productivity\s+ratios',
+                re.I),
+     'el kit no calcula ningún ratio de productividad (COM-22)'),
+]
+
+COPY_FICHEROS = [
+    'src/pages/KitGestionPersonal.tsx',
+    'src/pages/KitGestionPersonalDashboard.tsx',
+    'src/data/testimonials-gestion-personal.ts',
+    'src/data/products-catalog.ts',
+    'astro-site/src/data/productos/kits/kit-gestion-personal.ts',
+]
+COPY_DIRS = ['src/components/kit-gestion-personal']
+
+
+def gate_copy_producto():
+    """RD-07/RC-06 — ninguna afirmación legal falsa viva en el copy publicado.
+
+    Se ignoran las líneas de COMENTARIO: la corrección explica en el propio
+    fichero qué decía antes y por qué era falso, y un gate que suspendiera por
+    su propia documentación sería inútil.
+    """
+    rutas = list(COPY_FICHEROS)
+    for d in COPY_DIRS:
+        base = os.path.join(ROOT, d)
+        if os.path.isdir(base):
+            rutas += [os.path.join(d, f) for f in sorted(os.listdir(base))
+                      if f.endswith(('.ts', '.tsx', '.astro'))]
+    fuera = {}
+    for rel in rutas:
+        path = os.path.join(ROOT, rel)
+        if not os.path.isfile(path):
+            continue
+        malas = []
+        dentro = False          # dentro de un bloque /* … */ o {/* … */}
+        with open(path, encoding='utf-8') as fh:
+            for i, linea in enumerate(fh, 1):
+                limpia = linea.strip()
+                abre = ('/*' in limpia
+                        and limpia.index('/*') > limpia.rfind('*/'))
+                comentada = dentro or limpia.startswith(('//', '/*', '{/*'))
+                if abre:
+                    dentro = True
+                elif '*/' in limpia:
+                    dentro = False
+                if comentada:
+                    continue
+                for rx, motivo in COPY_PROHIBIDO:
+                    if rx.search(limpia):
+                        malas.append('{}:{}: «{}» — {}'
+                                     .format(rel, i, rx.pattern[:28], motivo))
+        if malas:
+            fuera[rel] = malas
+    return fuera
+
+
 def censo(carpeta):
     r = subprocess.run([sys.executable, CENSO, '--only', carpeta, '--fail',
                         '--quiet'], capture_output=True, text=True)
@@ -1016,6 +1095,13 @@ def main():
     for n, lineas in veredictos.items():
         for l in lineas[:4]:
             log('    {}: {}'.format(n, l))
+    copy = gate_copy_producto()
+    n_copy = sum(len(v) for v in copy.values())
+    log('  afirmaciones legales falsas vivas en el copy (RD-07/RC-06): {}'
+        .format(n_copy))
+    for n, lineas in copy.items():
+        for l in lineas[:4]:
+            log('    ' + l)
     anios = gate_anio_calendario(carpeta, nombres)
     n_anio = sum(len(v) for v in anios.values())
     log('  calendarios anclados a un año pasado (RT-13): {}'.format(n_anio))
@@ -1114,6 +1200,11 @@ def main():
             '(RT-21): {}'
             .format(n_ver, '; '.join('{}:{}'.format(n, v[0])
                                      for n, v in list(veredictos.items())[:3])))
+    if n_copy:
+        pendientes_contenido.append(
+            '{} afirmaciones legales falsas vivas en el copy publicado '
+            '(RD-07/RC-06): {}'
+            .format(n_copy, '; '.join(v[0] for v in list(copy.values())[:3])))
     if n_anio:
         pendientes_contenido.append(
             'calendario del 05 anclado a un año pasado (RT-13): {}'
@@ -1167,6 +1258,7 @@ def main():
             'veredictos_cacheados_fuera_de_lista_blanca': veredictos,
             'autofiltro_incompleto': filtros,
             'anio_calendario_pasado': anios,
+            'copy_con_afirmaciones_falsas': copy,
             'censo_entregables': cen,
             'pestanas_citadas_inexistentes': pest,
             'citas_legales_obsoletas': citas,

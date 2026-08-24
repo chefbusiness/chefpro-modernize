@@ -1720,10 +1720,23 @@ def colores_seccion_04(wb, fname, informe):
 # ==========================================================================
 # §1.6 — formatos
 # ==========================================================================
+#: RT-20 · cabeceras cuyo contenido es TEXTO aunque su palabra caiga en una de
+#: las familias de arriba. El caso medido: `07!'Plantilla'!G` se llama
+#: «Jornada» —que el mapa envía a `0.00` por la familia de las horas— y su DV
+#: sólo admite las cadenas «Completa» y «Parcial»: un formato numérico sobre
+#: una columna donde no se puede escribir un número. Va con coincidencia
+#: EXACTA, no por subcadena: «Jornada contratada (h/semana)» sí es numérica.
+CABECERAS_DE_TEXTO = frozenset(['jornada', 'estado', 'aviso', 'alerta',
+                                'conforme', 'veredicto', 'plazo', 'tendencia',
+                                'nivel', 'semáforo', 'semaforo'])
+
+
 def _formato_de_cabecera(texto):
     if not isinstance(texto, str):
         return None
-    t = texto.lower()
+    t = texto.lower().strip()
+    if t in CABECERAS_DE_TEXTO:
+        return 'General'
     for fmt, claves in FORMATO_POR_CABECERA:
         for k in claves:
             if k in t:
