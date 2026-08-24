@@ -83,16 +83,33 @@ FILAS_REG = motor.FILAS_REGISTRO            # 300
 #: motor deduce formato y verde por el texto de esa fila, y una cabecera aquí
 #: metería 27 columnas auxiliares en `aplicar_verde`. La etiqueta va en la
 #: fila 4, que el motor no mira, para quien las muestre.
-AUX_HORAS = 16      # P..V  · horas de cada día
-AUX_INI = 23        # W..AC · hora de inicio
-AUX_FIN = 30        # AD..AJ· hora de fin
-AUX_TRANS = 37      # AK..AP· las 6 transiciones entre jornadas
-AUX_ULT = 42        # AP
+#:
+#: RD-16 · el bloque arrancaba en la P (16) y se ha desplazado dos columnas
+#: para que O y P queden libres: son la casilla verde «Menor de edad (S/N)» y
+#: su alerta. El único aviso de minoría de edad del kit vivía en el 07 y no
+#: llegaba al sitio donde se comete la infracción — en el cuadrante se podía
+#: poner N (noche 23:00-07:00) o D (doble, 16 h) a un menor y ninguna de las
+#: cuatro alertas decía nada, porque el 01 no conoce las fechas de nacimiento
+#: y §6 prohíbe los enlaces entre libros.
+AUX_HORAS = 18      # R..X  · horas de cada día
+AUX_INI = 25        # Y..AE · hora de inicio
+AUX_FIN = 32        # AF..AL· hora de fin
+AUX_TRANS = 39      # AM..AR· las 6 transiciones entre jornadas
+AUX_ULT = 44        # AR
+
+#: RD-16 · columnas nuevas del cuadrante semanal.
+COL_MENOR = 'O'     # verde · S/N, se copia del 07
+COL_ALERTA_MENOR = 'P'
+#: Jornada máxima de un menor: 8 h al día INCLUIDA la formación (art. 34.3 ET
+#: por remisión del art. 6). No es el parámetro `jornada_diaria_max` del
+#: convenio: para un menor no hay distribución irregular que lo suba.
 
 DIAS = ('Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado',
         'Domingo')
 
 #: Rango de la tabla de turnos, tal cual lo referencian todas las fórmulas.
+JORNADA_MENOR = 8
+
 TURNOS_TABLA = 'Turnos!$A$5:$E$12'
 TURNOS_JORNADA_MAX = 'Turnos!$B$2'
 TURNOS_DESCANSO = 'Turnos!$B$3'
@@ -332,10 +349,10 @@ def _hoja_turnos(wb, cambios):
     ws = wb.create_sheet('Turnos', idx)
 
     for letra, ancho in (('A', 30), ('B', 34), ('C', 14), ('D', 14),
-                         ('E', 10)):
+                         ('E', 10), ('F', 12)):
         ws.column_dimensions[letra].width = ancho
 
-    ws.merge_cells('A1:E1')
+    ws.merge_cells('A1:F1')
     ws['A1'] = 'Turnos y límites legales — edítalos aquí, valen para todo el kit'
     ws['A1'].font = Font(bold=True, size=13)
     ws.row_dimensions[1].height = 22
@@ -347,27 +364,51 @@ def _hoja_turnos(wb, cambios):
     for coord in ('C2', 'C3'):
         ws[coord].font = Font(italic=True, size=9, color='666666')
 
+    # RT-02 · «Horas» era una CONSTANTE verde independiente de la hora de
+    # inicio y de fin, y TODO el cálculo del 01 —I6, las cinco semanas del
+    # mensual y la alerta N de jornada diaria— la lee por VLOOKUP con índice 5.
+    # Medido en la copia dry-run: con `Turnos!D5 = 17` (mañana de 7 a 17, 10 h
+    # reales, por encima del máximo de 9 h de B2), `I6` seguía en 48,0 y `N6`
+    # seguía callada. Y `Instrucciones!B7` prometía justo lo contrario: «Si tu
+    # mañana empieza a las 8:00, cámbialo allí y se recalcula el kit entero».
+    #
+    # Ahora E es CALCULADA a partir de C, D y una columna nueva de PAUSA (que
+    # es lo único que impedía derivarla: el partido no es D − C). `MOD(D-C,24)`
+    # resuelve el turno de noche —23 → 7 da MOD(-16,24) = 8— igual que el
+    # `MOD(...,1)` del 02 resuelve el cruce de medianoche con horas de Excel.
     _cab(ws, 4, ['Código', 'Descripción', 'Hora inicio (h)', 'Hora fin (h)',
-                 'Horas'])
+                 'Horas', 'Pausa (h)'])
     for i, cod in enumerate(motor.CODIGOS_JORNADA):
         fila = 5 + i
         ini = int(cod[2].split(':')[0])
         fin = int(cod[3].split(':')[0])
+        # La pausa es lo que separa las horas EFECTIVAS del hueco entre
+        # extremos: el partido va de 10 a 23 (13 h) con 4 de pausa → 9 h.
+        pausa = round((fin - ini) % 24 - cod[4], 2)
         ws.cell(row=fila, column=1, value=cod[0]).alignment = CENTRO
         ws.cell(row=fila, column=1).font = NEGRITA
         ws.cell(row=fila, column=1).fill = PatternFill('solid',
                                                        fgColor=cod[-1])
         ws.cell(row=fila, column=2, value=cod[1])
-        for col, valor in ((3, ini), (4, fin), (5, cod[4])):
+        for col, valor in ((3, ini), (4, fin), (6, pausa)):
             cel = ws.cell(row=fila, column=col, value=valor)
             cel.number_format = motor.FMT_DEC2
             cel.alignment = CENTRO
-    motor.marcar_verde(ws, 'B5:E12')
+        _f(ws, 'E{}'.format(fila),
+           '=IF(OR($C{f}="",$D{f}=""),"",'
+           'ROUND(MOD($D{f}-$C{f},24)-IF($F{f}="",0,$F{f}),2))'.format(f=fila))
+        ws.cell(row=fila, column=5).number_format = motor.FMT_DEC2
+        ws.cell(row=fila, column=5).alignment = CENTRO
+    motor.marcar_verde(ws, 'B5:D12')
+    motor.marcar_verde(ws, 'F5:F12')
+    _desverdear(ws, 'E5:E12')
 
     ws['B13'] = ('El PARTIDO son 10:00-15:00 y 19:00-23:00: 13 h entre '
-                 'extremos y 9 h efectivas. La columna «Horas» es la que '
-                 'cuenta para la jornada; el inicio y el fin son los que '
-                 'miden el descanso entre jornadas.')
+                 'extremos y 9 h efectivas, porque lleva 4 h de PAUSA. La '
+                 'columna «Horas» ya NO se teclea: sale de fin − inicio menos '
+                 'la pausa, así que cambiar un horario recalcula de verdad el '
+                 'cuadrante y las alertas. El inicio y el fin son además los '
+                 'que miden el descanso entre jornadas.')
     ws['B14'] = ('El DOBLE (D) es el turno de 16 h que dispara la alerta de '
                  'jornada diaria. Existe para poder MARCARLO y que salte, no '
                  'para planificarlo.')
@@ -378,11 +419,16 @@ def _hoja_turnos(wb, cambios):
         ws.cell(row=r, column=2).alignment = Alignment(wrap_text=True,
                                                        vertical='top')
         ws.row_dimensions[r].height = 32
-        ws.merge_cells('B{0}:E{0}'.format(r))
+        ws.merge_cells('B{0}:F{0}'.format(r))
 
-    cambios.append('{}:Turnos!A5:E12: tabla de los 8 turnos (horas, inicio y '
-                   'fin) + parámetros B2 (jornada diaria máx. {} h) y B3 '
-                   '(descanso mínimo {} h, art. 34.3 ET) — §2'
+    cambios.append('{}:Turnos!A5:F12: tabla de los 8 turnos + parámetros B2 '
+                   '(jornada diaria máx. {} h) y B3 (descanso mínimo {} h, '
+                   'art. 34.3 ET). La columna «Horas» (E) pasa de constante '
+                   'verde a FÓRMULA derivada de la hora de inicio, la de fin '
+                   'y la PAUSA nueva (F): antes cambiar el horario de un '
+                   'turno dejaba intactos los totales del cuadrante y la '
+                   'alerta de jornada diaria, en contra de lo que prometían '
+                   'las Instrucciones — §2/RT-02'
                    .format(F01, motor.PARAMETROS['jornada_diaria_max'][1],
                            motor.PARAMETROS['descanso_min'][1]))
     return ws
@@ -481,10 +527,30 @@ def _alertas_semanal(fila):
         ('M{}'.format(fila),
          '=IF(OR($I{f}="",$J{f}=""),"",IF($I{f}>$J{f},'
          '"⛔ +"&TEXT($I{f}-$J{f},"0")&" h",""))'.format(f=fila)),
+        # RD-16 · N usa 8 h en vez del umbral del convenio cuando la fila es
+        # de un menor: para un menor no hay distribución irregular que suba la
+        # jornada ordinaria (art. 34.3 ET por remisión del art. 6).
         ('N{}'.format(fila),
-         '=IF(OR({o}),"⛔ jornada > "&{m}&" h","")'
-         .format(o=','.join('IF(${c}{f}="",0,${c}{f})>{m}'
-                            .format(c=c, f=fila, m=m) for c in p), m=m)),
+         '=IF(${men}{f}="S",IF(OR({om}),"⛔ jornada > {jm} h (MENOR)",""),'
+         'IF(OR({o}),"⛔ jornada > "&{m}&" h",""))'
+         .format(men=COL_MENOR, f=fila, jm=JORNADA_MENOR, m=m,
+                 om=','.join('IF(${c}{f}="",0,${c}{f})>{jm}'
+                             .format(c=c, f=fila, jm=JORNADA_MENOR)
+                             for c in p),
+                 o=','.join('IF(${c}{f}="",0,${c}{f})>{m}'
+                            .format(c=c, f=fila, m=m) for c in p))),
+        # RD-16 · la alerta que no existía: nocturnidad y turno doble
+        # prohibidos al menor de 18 años (art. 6.2 y 6.3 ET). Se comparan los
+        # SIETE días uno a uno, no con un COUNTIF sobre el rango: pycel no
+        # propaga `set_value` a través de un nodo rango (ver `_aux_formulas`).
+        ('{}{}'.format(COL_ALERTA_MENOR, fila),
+         '=IF(${men}{f}<>"S","",IF(OR({no}),'
+         '"⛔ MENOR: trabajo nocturno y turno doble prohibidos (art. 6 ET)",'
+         '"⚠ menor: sin horas extra (art. 6.3 ET)"))'
+         .format(men=COL_MENOR, f=fila,
+                 no=','.join('${c}{f}="N",${c}{f}="D"'
+                             .format(c=get_column_letter(2 + j), f=fila)
+                             for j in range(7)))),
     ]
 
 
@@ -499,9 +565,9 @@ def _cuadrante_semanal(ws, cambios):
     _cab(ws, 5, ['Empleado'] + list(DIAS)
          + ['Total Horas', 'H. contratadas/semana',
             'Descanso entre jornadas', 'Descanso semanal', 'Jornada semanal',
-            'Jornada diaria'])
+            'Jornada diaria', 'Menor de edad (S/N)', 'Alerta menores'])
     for letra, ancho in (('I', 13), ('J', 15), ('K', 20), ('L', 26),
-                         ('M', 18), ('N', 22)):
+                         ('M', 18), ('N', 22), ('O', 18), ('P', 34)):
         ws.column_dimensions[letra].width = ancho
 
     # etiquetas del bloque auxiliar en la fila 4 (el motor sólo mira la 5)
@@ -521,6 +587,27 @@ def _cuadrante_semanal(ws, cambios):
         cel.value = motor.PARAMETROS['jornada_semanal'][1]
         cel.number_format = motor.FMT_DEC2
         cel.alignment = CENTRO
+        # RD-16 · O es la ÚNICA forma de cumplir sin enlazar libros (§6): el
+        # usuario copia la S del aviso del 07 y el 01 empieza a mirar los
+        # límites del menor.
+        cel = ws.cell(row=fila, column=15)         # O · menor de edad
+        cel.alignment = CENTRO
+        ws.cell(row=fila, column=16).alignment = Alignment(  # P · alerta
+            wrap_text=True, vertical='center')
+    motor.marcar_verde(ws, '{c}{a}:{c}{b}'.format(c=COL_MENOR, a=r0, b=r1))
+    _limpiar_mis_dv(ws, ('{c}{a}:{c}{b}'.format(c=COL_MENOR, a=r0, b=r1),))
+    _dv(ws, '{c}{a}:{c}{b}'.format(c=COL_MENOR, a=r0, b=r1), ['S', 'N'],
+        'Valor no válido',
+        'Escribe S si esa persona es MENOR de 18 años. Lo sabe el fichero 07: '
+        'su columna «Aviso» te lo dice en cuanto pones la fecha de '
+        'nacimiento. Con una S, la alerta de jornada diaria baja a '
+        '{jm} h y salta si le pones un turno de noche (N) o un doble (D): '
+        'art. 6 ET.'.format(jm=JORNADA_MENOR),
+        'Escribe S o N.')
+    motor._limpiar_cf(ws, set(['{c}{a}:{c}{b}'
+                               .format(c=COL_ALERTA_MENOR, a=r0, b=r1)]))
+    motor.semaforo(ws, '{c}{a}:{c}{b}'.format(c=COL_ALERTA_MENOR, a=r0, b=r1),
+                   motor.VOC_ALERTA)
     for col in range(AUX_HORAS, AUX_ULT + 1):
         ws.column_dimensions[get_column_letter(col)].hidden = True
 
@@ -529,6 +616,16 @@ def _cuadrante_semanal(ws, cambios):
     fila_total = _fila_con(ws, 1, 'TOTAL HORAS EQUIPO', r1 + 1)
     if fila_total:
         ws.cell(row=fila_total, column=11).value = None
+        # RD-30 · las columnas de ALERTA sólo devuelven texto y arrastraban el
+        # '0.00' del bloque numérico vecino (L, que hace lo mismo, iba en
+        # 'General'). Lo mismo las dos cabeceras nuevas.
+        for col in ('K', 'M', 'N', COL_MENOR, COL_ALERTA_MENOR):
+            for f in range(r0, r1 + 1):
+                if col != COL_MENOR:
+                    ws['{}{}'.format(col, f)].number_format = 'General'
+        for col in ('I', 'J', 'K', 'L', 'M', 'N', COL_MENOR,
+                    COL_ALERTA_MENOR):
+            ws['{}5'.format(col)].number_format = 'General'
         _f(ws, 'K{}'.format(fila_total),
            motor.guarda_media('$I${}:$I${}'.format(r0, r1)))
         ws.cell(row=fila_total, column=10,
@@ -537,6 +634,13 @@ def _cuadrante_semanal(ws, cambios):
             horizontal='right')
         n += 1
 
+    cambios.append('{}:Cuadrante Semanal!O{}:P{}: casilla verde «Menor de '
+                   'edad (S/N)» (se copia del aviso del 07) + alerta propia: '
+                   'con S, la jornada diaria se mide contra {} h y salta si '
+                   'aparece un turno N (noche) o D (doble) — art. 6 ET. Era '
+                   'la única infracción del kit que se cometía en el 01 y sólo '
+                   'se avisaba en el 07 (RD-16)'
+                   .format(F01, r0, r1, JORNADA_MENOR))
     cambios.append('{}:Cuadrante Semanal!I{}:N{}: {} fórmulas — bloque '
                    'auxiliar oculto {}:{} (horas, inicio, fin y las 6 '
                    'transiciones) y las 4 alertas legales: descanso entre '
@@ -714,7 +818,9 @@ def _instrucciones_01(wb, cambios):
         ley[0] if ley else None,
         '▸ Las horas NO están escritas dentro de la fórmula: salen de la hoja '
         '\'Turnos\'. Si tu mañana empieza a las 8:00, cámbialo allí y se '
-        'recalcula el kit entero.',
+        'recalcula el kit entero: la columna «Horas» de esa hoja es una '
+        'fórmula (fin − inicio − pausa), no un número que haya que corregir a '
+        'mano.',
         ley[1] if len(ley) > 1 else None,
         '▸ La hoja \'Cuadrante Mensual\' repite la rejilla cinco semanas '
         '(los meses de 31 días no caben en cuatro), hereda los nombres del '
@@ -736,20 +842,26 @@ def _instrucciones_01(wb, cambios):
         '▸ N · Jornada diaria: art. 34.3 ET, máximo {max} h ordinarias al día '
         'salvo distribución irregular pactada (umbral en Turnos!B2). Es la que '
         'caza el turno doble.',
+        '▸ O y P · Menores de edad: marca S en la columna O (te lo dice el '
+        'aviso del fichero 07 en cuanto pones la fecha de nacimiento). Con la '
+        'S, la alerta N baja a 8 h —a un menor no le vale la distribución '
+        'irregular— y la P salta si le has puesto un turno de NOCHE (N) o un '
+        'DOBLE (D): al menor de 18 años le están prohibidos el trabajo '
+        'nocturno y las horas extraordinarias (art. 6 ET).',
         None,
         'La tabla de turnos vive en la hoja \'Turnos\':',
-        '▸ Cada código lleva su hora de inicio, su hora de fin y sus horas '
-        'efectivas. Las horas se escriben como número: 7 = 07:00 y 15,5 = '
-        '15:30.',
-        '▸ El PARTIDO (P) son 9 h efectivas entre las 10:00 y las 23:00; el '
-        'DOBLE (D) son 16 h y existe para que la alerta de jornada diaria '
-        'tenga algo que cazar.',
+        '▸ Cada código lleva su hora de inicio, su hora de fin y su PAUSA; '
+        'las horas efectivas se calculan solas. Las horas se escriben como '
+        'número: 7 = 07:00 y 15,5 = 15:30.',
+        '▸ El PARTIDO (P) son 9 h efectivas entre las 10:00 y las 23:00 '
+        '(13 h entre extremos menos 4 de pausa); el DOBLE (D) son 16 h y '
+        'existe para que la alerta de jornada diaria tenga algo que cazar.',
         '▸ V (vacaciones) y B (baja) se marcan aquí con las mismas letras que '
         'en el 05 y cuentan 0 h. El permiso es PE y sólo existe en el 05: en '
         'este cuadrante la P es el turno Partido.',
         '▸ Una letra que no esté en la tabla cuenta 0 h: por eso las celdas de '
         'turno llevan desplegable.',
-        '▸ Las columnas P a AP están OCULTAS: son el cálculo auxiliar (horas, '
+        '▸ Las columnas R a AR están OCULTAS: son el cálculo auxiliar (horas, '
         'hora de inicio, hora de fin y las 6 transiciones entre jornadas). '
         'Muéstralas si quieres '
         'auditar una alerta.',

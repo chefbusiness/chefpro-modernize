@@ -286,6 +286,9 @@ FICHA_ANCHO = 4
 FICHA_HDR = 11
 FICHA_R0 = 12
 FICHA_R1 = 21
+#: RD-24 · mínimo de competencias PUNTUADAS (número, las N/A no cuentan)
+#: para que la ficha emita un nivel. Con menos, C23 pide que se puntúe.
+MIN_COMPETENCIAS = 5
 
 #: Bloques de texto libre: `(fila_del_titulo, título, primera_fila, filas)`.
 FICHA_TEXTOS = [
@@ -423,12 +426,22 @@ def _ficha(ws, ejemplo=None):
     _f(ws, 'C22', motor.guarda_media('$C${}:$C${}'.format(FICHA_R0, FICHA_R1)),
        motor.FMT_DEC2)
     _rotulo(ws, 23, 'NIVEL', col=2, negrita=True)
+    # RD-24 · el nivel se emitía con UNA sola competencia puntuada: con `C12=5`
+    # y las otras nueve en blanco, `C22=5,00` y `C23='⭐ EXCELENTE'` en el
+    # documento que se firma y que puede acabar en un expediente. Es el mismo
+    # «veredicto sin datos suficientes» que se corrigió en el semáforo del 03.
+    # El contador de C24 ya decía «1 de 10», pero es una celda que nadie mira
+    # antes de firmar: el aviso tiene que estar EN la casilla del nivel, y con
+    # el mismo ámbar del semáforo (motor.VOC_NIVEL).
     _f(ws, 'C23',
-       '=IF($C$22="","",'
+       '=IF(COUNT($C${r0}:$C${r1})<{m},'
+       '"⚠ puntúa al menos {m} competencias",'
+       'IF($C$22="","",'
        'IF($C$22>=4.5,"⭐ EXCELENTE",'
        'IF($C$22>=3.5,"✓ BUENO",'
        'IF($C$22>=2.5,"→ ADECUADO",'
-       'IF($C$22>=1.5,"⚠ MEJORABLE","✗ DEFICIENTE")))))')
+       'IF($C$22>=1.5,"⚠ MEJORABLE","✗ DEFICIENTE"))))))'
+       .format(r0=FICHA_R0, r1=FICHA_R1, m=MIN_COMPETENCIAS))
     ws['C23'].alignment = Alignment(vertical='center')
     if ejemplo:
         # `motor.CF_CELDA` sólo cubre 'Ficha Evaluación'; la hoja de ejemplo es
@@ -833,6 +846,20 @@ def _n07_vencimientos(wb, cambios):
 
     _rotulo(ws, 3, 'Fecha de hoy:', negrita=True)
     _f(ws, 'B3', '=TODAY()', motor.FMT_FECHA)
+    # RT-24 · es el ÚNICO punto del kit donde una función volátil se cruza con
+    # el cache. En Excel no hay problema (los nueve libros llevan
+    # `fullCalcOnLoad`), pero el cache existe justo para los visores que NO
+    # recalculan —la vista previa de Drive, el Quick Look del móvil—, y ahí la
+    # celda enseña para siempre la fecha en que se construyó el fichero y los
+    # 120 semáforos que dependen de ella son los de ese día. No se puede dejar
+    # sin cachear sin tocar `inject_cache.py`, que es compartido por todos los
+    # kits; se avisa al lado de la celda, que es donde se lee.
+    _nota_celda(ws, 'B3', 'Se actualiza al abrir en Excel',
+                'Esta celda es =HOY(). Excel la recalcula al abrir el fichero. '
+                'En la VISTA PREVIA del móvil o de Drive, que no recalcula, '
+                'verás la fecha en que se descargó el kit y los semáforos de '
+                'esa fecha: ábrelo en Excel o en LibreOffice antes de fiarte '
+                'de los avisos.')
     _rotulo(ws, 4, 'Aviso ROJO — faltan menos de (días):')
     _verde(ws, 'B4', 30, motor.FMT_ENT)
     _nota_celda(ws, 'B4', 'Umbral del aviso rojo',
@@ -909,10 +936,17 @@ def _n07_vencimientos(wb, cambios):
           '▸ El preaviso de fin de contrato temporal de más de un año son 15 '
           'días (art. 49.1.c ET); dejar vencer un temporal sin preaviso o '
           'encadenarlo puede convertirlo en indefinido.', ANCHO_VENC, 30)
+    # RT-24 · el aviso de la función volátil, escrito donde se lee.
+    _nota(ws, nota0 + 3,
+          '▸ «Fecha de hoy» (B3) es =HOY() y Excel la recalcula cada vez que '
+          'abres el fichero. En la VISTA PREVIA del móvil o de Google Drive, '
+          'que no recalcula, verás la fecha en que descargaste el kit y los '
+          'semáforos de ESE día: ábrelo en Excel o LibreOffice antes de '
+          'fiarte de los avisos.', ANCHO_VENC, 30)
     merges += ['A{f}:{c}{f}'.format(f=nota0 + i,
                                     c=get_column_letter(ANCHO_VENC))
-               for i in range(3)]
-    merges.append(_pie(ws, nota0 + 4, ANCHO_VENC))
+               for i in range(4)]
+    merges.append(_pie(ws, nota0 + 5, ANCHO_VENC))
     _merges(ws, merges)
     cambios.append('07:Vencimientos!A7:I36: 30 empleados × 4 vencimientos '
                    '(contrato, periodo de prueba, carnet de manipulador y '
@@ -1184,8 +1218,18 @@ def _bonus_calculadora(wb, cambios):
         (10, 'Nº de pagas / año:', 14, motor.FMT_ENT, None),
         (11, 'Tipo de SS a cargo de la empresa (%):', 0.33, motor.FMT_PCT1,
          motor.PARAMETROS['ss_empresa'][3]),
-        (12, 'Horas efectivas por servicio:', 4, motor.FMT_ENT,
-         motor.PARAMETROS['horas_por_servicio'][3]),
+        # RD-03 (refutado) · la unidad es HORAS PAGADAS POR PRESENCIA, y una
+        # presencia es una persona en UN servicio (B27 = personal/servicio ×
+        # servicios). Quien lo lea como «horas de la persona al día» concluirá
+        # que faltan la mise en place y el cierre; el rótulo lo dice ahora.
+        (12, 'Horas pagadas por presencia y servicio '
+             '(el turno completo sale de multiplicarlas por los servicios):',
+         4, motor.FMT_ENT,
+         'Son las horas que le cuestas a la empresa CADA persona por CADA '
+         'servicio que cubre, montaje y cierre incluidos. Con 2 servicios al '
+         'día, 4 h por servicio son el turno de 8 h de la hoja «Turnos» del '
+         'fichero 01. Súbelas si tu servicio es más largo o si montas y '
+         'desmontas fuera del turno.'),
         (13, 'Jornada contratada (h/semana):', 40, motor.FMT_ENT,
          motor.PARAMETROS['jornada_semanal'][3]),
         (14, 'Factor de cobertura (vacaciones, bajas y descansos):', 1.15,
@@ -1335,15 +1379,28 @@ def _bonus_calculadora(wb, cambios):
 
     nota0 = 50
     _nota(ws, nota0,
-          '▸ FTE = personas a jornada completa, no personas por turno. Con los '
-          'datos de ejemplo son 5 personas por servicio, 10 presencias al día '
-          'y 240 h a la semana: siete contratos de 40 h con el 15 % de '
-          'cobertura de libranzas, vacaciones y bajas ya dentro.',
-          ANCHO_CALC, 30)
+          '▸ FTE = personas a jornada completa, no personas por turno. Y una '
+          'PRESENCIA no es una persona: es una persona en UN servicio. Con '
+          'los datos de ejemplo son 5 personas por servicio y 2 servicios al '
+          'día = 10 presencias, que son esas MISMAS 5 personas haciendo un '
+          'turno de 8 h (4 h pagadas por servicio × 2): 5 × 8 h × 6 días = '
+          '240 h a la semana = siete contratos de 40 h con el 15 % de '
+          'cobertura de libranzas, vacaciones y bajas ya dentro. Cuadra con '
+          "la hoja 'Turnos' del 01 (M, T y N son de 8 h; el partido, 9).",
+          ANCHO_CALC, 46)
+    # RC-12 · la nota anterior decía que una discrepancia con el 03 sólo
+    # podía venir de «un parámetro cambiado en uno y no en el otro». Es falso
+    # como diagnóstico: 03!'Previsión por Servicio' NO tiene selector de tipo
+    # de negocio —sus tres ratios son constantes de Restaurante Casual—, así
+    # que en cuanto aquí se elige otro tipo los dos ficheros divergen POR
+    # DISEÑO y el cliente se ponía a buscar un error que no había cometido.
     _nota(ws, nota0 + 1,
           '▸ La hoja «Previsión por Servicio» del fichero 03 hace este mismo '
-          'cálculo y devuelve el mismo número: si los dos no coinciden, es que '
-          'has cambiado un parámetro en uno y no en el otro.', ANCHO_CALC, 30)
+          'cálculo y con los valores de fábrica devuelve el mismo número. Si '
+          'cambias aquí el TIPO DE NEGOCIO, esa hoja no se entera: sus tres '
+          'ratios son constantes de Restaurante Casual. Copia entonces B19, '
+          'B20 y B21 de esta calculadora a B7, B8 y B9 de «Previsión por '
+          'Servicio» y volverán a coincidir.', ANCHO_CALC, 42)
     _nota(ws, nota0 + 2,
           '▸ El refuerzo del día pico es personal EXTRA de ese día (horas '
           'complementarias, un fijo-discontinuo o un contrato por '
@@ -1535,19 +1592,30 @@ def _d06_ficha(carpeta):
     # la novena competencia sube de 3 a 5: la media TIENE que subir
     _sv(xl, "'Ficha Evaluación'!C20", 5)
     subida = _ev(xl, refs[0])
+    # RD-24 · el caso que abría el hallazgo: una sola competencia puntuada.
+    solo = _xl(p)
+    _calentar(solo, refs)
+    _sv(solo, "'Ficha Evaluación'!C{}".format(FICHA_R0), 5)
+    una_sola = dict((r.split('!')[1], str(_ev(solo, r))) for r in refs)
     ejemplo = _xl(p)
     ej = dict((r.replace('Ficha Evaluación', 'Ficha (ejemplo relleno)'),
                _ev(ejemplo, r.replace('Ficha Evaluación',
                                       'Ficha (ejemplo relleno)')))
               for r in refs)
     media = con_na["'Ficha Evaluación'!C22"]
+    # RD-24 · con la ficha en blanco el NIVEL ya no calla: reclama que se
+    # puntúen al menos MIN_COMPETENCIAS. Callar era lo que dejaba emitir
+    # «⭐ EXCELENTE» con UNA competencia rellena, en el documento que se firma.
     ok = (vacia["'Ficha Evaluación'!C22"] in ('', None)
-          and vacia["'Ficha Evaluación'!C23"] in ('', None)
+          and isinstance(vacia["'Ficha Evaluación'!C23"], str)
+          and 'puntúa al menos' in vacia["'Ficha Evaluación'!C23"]
           and vacia["'Ficha Evaluación'!C24"] == '0 de 10'
           and _num(media) and abs(media - 4.22) < 0.005
           and con_na["'Ficha Evaluación'!C24"] == '9 de 10'
           and con_na["'Ficha Evaluación'!C23"] == '✓ BUENO'
-          and _num(subida) and subida > media)
+          and _num(subida) and subida > media
+          and 'puntúa al menos' in una_sola['C23']
+          and una_sola['C24'] == '1 de 10')
     return {'ref': '06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22/C23/C24',
             'formula_media': motor.guarda_media('$C$12:$C$21'),
             'ficha_en_blanco': dict((k.split('!')[1], str(v))
@@ -1558,9 +1626,13 @@ def _d06_ficha(carpeta):
             'hoja_de_ejemplo': dict((k.split('!')[1], str(v))
                                     for k, v in ej.items()),
             'ok': ok,
+            'una_sola_competencia_puntuada': una_sola,
             'nota': 'con 9 competencias puntuadas y una N/A la media son '
                     '38/9 = 4,22 (no 38/10 = 3,80): el N/A no penaliza, y el '
-                    'contador dice sobre cuántas se ha calculado'}
+                    'contador dice sobre cuántas se ha calculado. Y con UNA '
+                    'sola competencia puntuada el nivel NO se emite (RD-24): '
+                    'antes C12=5 y las otras nueve en blanco daban '
+                    '«⭐ EXCELENTE»'}
 
 
 def _d06_tendencia(carpeta):
@@ -1674,12 +1746,41 @@ def _d07_menor_edad(carpeta):
         salta = isinstance(v, str) and v.startswith('⚠')
         pruebas.append({'caso': etiqueta, 'esperaba_aviso': avisa,
                         'obtenido': v, 'ok': salta == avisa})
+
+    # RD-15/RT-07 · el borde que la constante 6570 (= 18 × 365) se comía. Entre
+    # 2008 y 2026 hay cinco bisiestos, así que 18 años reales son 6.574-6.575
+    # días: con la fórmula vieja, quien llevaba 6.570 días vivo YA no recibía
+    # el aviso pese a seguir siendo menor. Se prueban los tres días del borde
+    # por FECHA, que es lo único que no depende de bisiestos.
+    for etiqueta, dias_desplaza, avisa in (
+            ('cumple 18 MAÑANA (aún menor)', 1, True),
+            ('cumple 18 HOY (ya mayor)', 0, False),
+            ('cumplió 18 AYER', -1, False),
+            ('hoy − 6.570 días (18 × 365: aún menor por los bisiestos)',
+             None, True)):
+        if dias_desplaza is None:
+            nacimiento = hoy - datetime.timedelta(days=6570)
+        else:
+            cumple = hoy + datetime.timedelta(days=dias_desplaza)
+            nacimiento = datetime.datetime(cumple.year - 18, cumple.month,
+                                           min(cumple.day, 28))
+        _sv(xl, "'Plantilla'!C5",
+            _serie(nacimiento.year, nacimiento.month, nacimiento.day))
+        v = _ev(xl, ref)
+        salta = isinstance(v, str) and v.startswith('⚠')
+        pruebas.append({'caso': etiqueta,
+                        'nacimiento': nacimiento.strftime('%d/%m/%Y'),
+                        'esperaba_aviso': avisa, 'obtenido': v,
+                        'ok': salta == avisa})
     return {'ref': '07-directorio-plantilla.xlsx:Plantilla:{}5'
                    .format(COL_AVISO),
             'sin_fecha_de_nacimiento': str(vacio),
             'pruebas': pruebas, 'ok': all(x['ok'] for x in pruebas),
             'nota': 'la columna «Aviso» es la única calculada del directorio; '
-                    'con la casilla vacía se queda EN BLANCO, no en 0'}
+                    'con la casilla vacía se queda EN BLANCO, no en 0. La '
+                    'mayoría de edad se mide con DATE(YEAR+18,MONTH,DAY) y no '
+                    'contando 6.570 días, que apagaba el aviso hasta cinco '
+                    'días antes del cumpleaños (RD-15/RT-07)'}
 
 
 def _d_bonus_fte(carpeta):

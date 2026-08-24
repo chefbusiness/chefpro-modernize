@@ -1,7 +1,7 @@
 {
  "informe": "Corrección de los 74 hallazgos de las 3 lentes refutadoras del Kit de Gestión de Personal y Turnos v2.0",
  "fecha": "2026-08-24",
- "estado": "EN CURSO",
+ "estado": "EN CURSO — grupo_c, motor y main hechos",
  "entrada": {
   "total": 74,
   "ids": [
@@ -81,7 +81,83 @@
    "RT-24"
   ]
  },
- "resueltos": [],
- "no_aplicados": [],
+ "resueltos": [
+  {
+   "id": "RC-18",
+   "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py:CODIGOS_JORNADA",
+   "fix": "T=Tarde pasa de BBDEFB a B2EBF2; BBDEFB queda reservado a V=Vacaciones. Prueba: 01!'Cuadrante Semanal'!C3 (T) y H3 (V) ya no comparten relleno."
+  },
+  {
+   "id": "RT-22",
+   "fichero": "motor.py:PRESENTACION",
+   "fix": "03!'Ratio Coste Laboral' freeze_panes A14 → A13: la zona desplazable pasa de 9 a 10 filas y deja de inmovilizar 13 de las 22."
+  },
+  {
+   "id": "RT-23",
+   "fichero": "motor.py:celdas_no_ancla() + main.py:demo_proteccion",
+   "fix": "Medido: openpyxl 3.1.3 PIERDE al guardar el fill y el Protection de una MergedCell (probado sobre 06!D4 y 06!C27). Se documenta la excepción y el gate excluye SÓLO las no ancla, suspendiendo por cualquier otra celda editable sin verde."
+  },
+  {
+   "id": "RT-12",
+   "fichero": "main.py:demo_proteccion + HOJAS_SIN_PROTEGER_OK",
+   "fix": "El gate ya no ignora 'protegida': falla toda hoja con protection.sheet=False fuera de la lista blanca ('Instrucciones'), y añade el recuento de desbloqueadas SIN verde."
+  },
+  {
+   "id": "RT-21",
+   "fichero": "main.py:gate_veredictos_cacheados + CACHE_DELIBERADO",
+   "fix": "Lista blanca explícita (BONUS-02!Calculadora y Ratios por Tipo, 03!'Previsión por Servicio', 06!'Ficha (ejemplo relleno)'); cualquier otro veredicto cacheado suspende. Verificado: 0 fuera de lista."
+  },
+  {
+   "id": "RD-06",
+   "fichero": "main.py:gate_autofiltro + grupo_c.py:_n07_plantilla",
+   "fix": "ws.auto_filter.ref = 'A4:V34'. El gate cazó el A4:O34 antes del fix y da 0 después."
+  },
+  {
+   "id": "RD-15",
+   "fichero": "grupo_c.py:FECHA_18",
+   "fix": "07!'Plantilla'!V5 = IF(DATE(YEAR($C5)+18,MONTH($C5),DAY($C5))>TODAY(),...). Gate ampliado con los bordes: cumple mañana/hoy/ayer y hoy−6570 días."
+  },
+  {
+   "id": "RT-07",
+   "fichero": "grupo_c.py:FECHA_18",
+   "fix": "Mismo cambio que RD-15; DIAS_18=6570 eliminada. Caso de gate exacto pedido por el hallazgo (hoy−6570 días DEBE avisar) verificado."
+  },
+  {
+   "id": "RD-05",
+   "fichero": "grupo_c.py:_tendencia()",
+   "fix": "06!'Histórico'!G5 usa dos cascadas de IF sobre E,D,C,B (último informado y anterior). Q1=4,0/Q2 vacío/Q3=4,5 → '↑ Mejora'."
+  },
+  {
+   "id": "RT-10",
+   "fichero": "grupo_c.py:_tendencia()",
+   "fix": "Mismo cambio. Q1=5/Q2=1/Q3 vacío/Q4=4 → '↑ Mejora' (antes '↓ Baja')."
+  },
+  {
+   "id": "RD-24",
+   "fichero": "grupo_c.py:_ficha() C23 + MIN_COMPETENCIAS",
+   "fix": "06!'Ficha Evaluación'!C23 = IF(COUNT($C$12:$C$21)<5,'⚠ puntúa al menos 5 competencias',...). Demo: una sola competencia puntuada → C24='1 de 10' y C23 = el aviso, no '⭐ EXCELENTE'."
+  },
+  {
+   "id": "RT-20",
+   "fichero": "grupo_c.py:COLS_07 + _bonus_ratios",
+   "fix": "07!'Plantilla'!G (Jornada) → 'General'; BONUS-02!'Ratios por Tipo'!B:D y H → 'General'."
+  },
+  {
+   "id": "RT-24",
+   "fichero": "grupo_c.py:_n07_vencimientos",
+   "fix": "07!'Vencimientos'!B3 conserva =TODAY() (inject_cache.py es compartido) pero gana comentario en celda y nota visible bajo la tabla explicando la vista previa del móvil."
+  },
+  {
+   "id": "RC-12",
+   "fichero": "grupo_c.py:_bonus_calculadora nota A51",
+   "fix": "La nota deja de culpar al usuario: dice que 03!'Previsión por Servicio' no tiene selector de tipo y que hay que copiar B19:B21 a B7:B9."
+  }
+ ],
+ "no_aplicados": [
+  {
+   "id": "RD-03",
+   "motivo": "FALSO POSITIVO en su premisa + choca con §7-bis.6. BONUS-02!Calculadora!B27 = '=IF(OR($E$26=\"\",$B$6=\"\"),\"\",$E$26*$B$6)' y su rótulo es «Presencias al día (personas × servicios)»: una presencia es persona-SERVICIO, no persona-día. Las 10 presencias son 5 personas × 2 servicios, y esas 5 personas hacen un turno de 8 h (4 h por servicio × 2) → 5 × 8 × 6 = 240 h/semana, exactamente B28. El cálculo de 480 h del hallazgo duplica el turno de cada persona. Subir B12 a 8 daría 14 FTE y violaría §3/§7-bis.6 («BONUS-02 debe dar 6-9 FTE para 80 cubiertos/día») y §7-bis.4 (ratio por defecto ~31 %). Se aplica la parte no conflictiva: B12 se re-rotula «Horas pagadas por presencia y servicio (el turno completo sale de multiplicarlas por los servicios)» con nota que lo reconcilia con 01!'Turnos', y la nota A50 explica la unidad."
+  }
+ ],
  "cruce": {}
 }

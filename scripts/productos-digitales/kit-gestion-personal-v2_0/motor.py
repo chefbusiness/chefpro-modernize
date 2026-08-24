@@ -538,8 +538,13 @@ VOC_LIMITE = [('EXCEDE', 'rojo'), ('cerca del límite', 'ambar'),
               ('dentro', 'verde'), ('OK', 'verde')]
 VOC_RATIO = [('ACCIÓN CORRECTIVA', 'rojo'), ('VIGILAR', 'ambar'),
              ('EXCELENTE', 'verde')]
+#: RD-24 · «puntúa al menos» es el aviso de datos insuficientes de la ficha
+#: (06!C23): un nivel emitido con UNA competencia puntuada no es un nivel.
+#: Va en ámbar y no comparte ninguna palabra con los cinco veredictos, así
+#: que el orden entre ellos no importa.
 VOC_NIVEL = [('DEFICIENTE', 'rojo'), ('MEJORABLE', 'ambar'),
-             ('ADECUADO', 'ambar'), ('EXCELENTE', 'verde'), ('BUENO', 'verde')]
+             ('ADECUADO', 'ambar'), ('EXCELENTE', 'verde'),
+             ('BUENO', 'verde'), ('puntúa al menos', 'ambar')]
 VOC_VENCIMIENTO = [('VENCIDO', 'rojo'), ('URGENTE', 'rojo'), ('🔴', 'rojo'),
                    ('🟡', 'ambar'), ('PRONTO', 'ambar'), ('🟢', 'verde'),
                    ('OK', 'verde')]
@@ -1778,34 +1783,34 @@ def aplicar_verde(wb, fname, informe):
 # ==========================================================================
 # §1.6 — protección sin contraseña
 # ==========================================================================
-def _propagar_merges(ws):
-    """RT-23 — propaga el RELLENO del ancla a las celdas NO ancla de cada
-    región combinada, antes de bloquear.
+def celdas_no_ancla(ws):
+    """RT-23 — coordenadas NO ancla de cada región combinada.
 
-    Una `MergedCell` nace con `styleId = 0`, y el estilo 0 del libro acaba
-    siendo el primer `Protection` que se escribe — que en este kit es
-    `locked=False`. Resultado medido en la copia dry-run: 55 celdas
-    desbloqueadas SIN verde (23 en `06!'Ficha Evaluación'` —`D4:D8`,
-    `C27:D29`, `C32:D34`, `C37:D39`—, otras 23 en `06!'Ficha (ejemplo
-    relleno)'` y 9 en `BONUS-01!'Briefing'!B61:D63`), que rompe la invariante
-    de familia «en una hoja protegida sólo las verdes están desbloqueadas».
+    Medido el 2026-08-24: la copia dry-run traía **55 celdas desbloqueadas sin
+    verde** (23 en `06!'Ficha Evaluación'` —`D4:D8`, `C27:D29`, `C32:D34`,
+    `C37:D39`—, otras 23 en `06!'Ficha (ejemplo relleno)'` y 9 en
+    `BONUS-01!'Briefing'!B61:D63`). Todas son celdas NO ancla de un rango
+    combinado, y **openpyxl no puede arreglarlo**: probado en este mismo
+    fichero, asignar `fill` y `Protection(locked=True)` a una `MergedCell`
+    funciona en memoria y se PIERDE al guardar (openpyxl 3.1.3 escribe el
+    `s=` pero al releer devuelve `locked=False` y `fill=None`).
 
-    En Excel no se veía porque la región combinada se pinta con el estilo del
-    ancla; en los bytes sí, y basta con que alguien deshaga una combinación
-    para que aparezcan celdas editables sin marcar. Propagando el relleno del
-    ancla, el bucle de `proteger` clasifica bien las dos mitades: verde →
-    desbloqueada, resto → bloqueada.
+    En Excel el efecto es nulo: una región combinada se comporta según su
+    celda ANCLA —es la que se selecciona al hacer clic y la que gobierna el
+    bloqueo—, y se pinta con su estilo. Así que la convención de familia se
+    precisa en vez de romperse: «en una hoja protegida, sólo las celdas verdes
+    (o las no ancla de una región cuya ancla es verde) están desbloqueadas».
+    El gate de `main.py` usa esta lista para excluirlas del recuento y seguir
+    suspendiendo por cualquier OTRA celda editable sin marcar.
     """
-    for rango in list(ws.merged_cells.ranges):
-        ancla = ws.cell(row=rango.min_row, column=rango.min_col)
-        relleno = _relleno(ancla)
-        if not relleno:
-            continue
+    fuera = set()
+    for rango in ws.merged_cells.ranges:
         for fila in range(rango.min_row, rango.max_row + 1):
             for col in range(rango.min_col, rango.max_col + 1):
                 if fila == rango.min_row and col == rango.min_col:
                     continue
-                ws.cell(row=fila, column=col).fill = copy.copy(ancla.fill)
+                fuera.add('{}{}'.format(get_column_letter(col), fila))
+    return fuera
 
 
 def proteger(ws, informe):
@@ -1815,7 +1820,6 @@ def proteger(ws, informe):
     entera es peor que dejarla abierta — el cliente no podría escribir nada y
     creería que el fichero está roto.
     """
-    _propagar_merges(ws)
     verdes = 0
     for row in ws.iter_rows():
         for c in row:
@@ -2060,6 +2064,25 @@ def hojas_esqueleto(wb, fname):
     return fuera
 
 
+def _columnas_de_sqref(sqref):
+    """Índices de columna que cubre un `sqref` de validación de datos."""
+    fuera = set()
+    for trozo in str(sqref).split():
+        for parte in trozo.split(','):
+            if not parte:
+                continue
+            extremos = parte.split(':')
+            try:
+                c0 = column_index_from_string(
+                    re.match(r'\$?([A-Z]+)', extremos[0]).group(1))
+                c1 = column_index_from_string(
+                    re.match(r'\$?([A-Z]+)', extremos[-1]).group(1))
+            except (AttributeError, ValueError):
+                continue
+            fuera |= set(range(min(c0, c1), max(c0, c1) + 1))
+    return fuera
+
+
 def leyenda_coherente(wb, fname):
     """Gate §1.1 — ninguna DV de la REJILLA puede ofrecer una letra que la
     leyenda no explique. Es lo que impide que vuelva el `P` con dos
@@ -2076,6 +2099,18 @@ def leyenda_coherente(wb, fname):
         set(c[0] for c in CODIGOS_AUSENCIA)
     hojas = set(e[0] for e in DV_CODIGOS.get(fname, []))
     hojas |= set(e[0] for e in LEYENDA_REJILLA.get(fname, []))
+    #: RD-16 · y se acota además por COLUMNA. Antes bastaba con que una DV
+    #: viviera en la misma HOJA de la rejilla para que el gate la juzgara con
+    #: la leyenda de códigos: la casilla nueva «Menor de edad (S/N)» del 01,
+    #: que está en la O y no tiene nada que ver con los turnos, suspendía por
+    #: «ofrecer una S que no está en la leyenda». Un gate que suspende por lo
+    #: que no mide deja de leerse — el mismo razonamiento que ya excluyó el
+    #: `"✓,✗,—"` del 04.
+    columnas = set()
+    for e in DV_CODIGOS.get(fname, []):
+        c0 = column_index_from_string(e[1])
+        c1 = column_index_from_string(e[2]) if e[2] else 16384
+        columnas |= set((e[0], c) for c in range(c0, min(c1, 60) + 1))
     for ws in wb.worksheets:
         if ws.title not in hojas:
             continue
@@ -2083,6 +2118,10 @@ def leyenda_coherente(wb, fname):
             f1 = getattr(dv, 'formula1', None)
             if not (isinstance(f1, str) and f1.startswith('"')):
                 continue
+            if columnas and not any(
+                    (ws.title, c) in columnas
+                    for c in _columnas_de_sqref(dv.sqref)):
+                continue          # la DV no está en la rejilla de códigos
             valores = [v for v in f1.strip('"').split(',') if v]
             if not valores or max(len(v) for v in valores) > 2:
                 continue          # no es una lista de códigos

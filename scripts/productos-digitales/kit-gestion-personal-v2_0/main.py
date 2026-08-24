@@ -590,14 +590,22 @@ def demo_ficha_vacia(carpeta):
     xl = _pycel(path)
     media = _ev(xl, "'Ficha Evaluación'!C22")
     nivel = _ev(xl, "'Ficha Evaluación'!C23")
-    ok = media in ('', None) and nivel in ('', None)
+    # RD-24 · con la ficha en blanco el NIVEL ya no se calla: pide que se
+    # puntúe. Callarse era lo que permitía emitir «⭐ EXCELENTE» con una sola
+    # competencia rellena, en el documento que se firma. Lo que no puede haber
+    # —que es lo que este gate mide— es un `#¡DIV/0!` ni un veredicto.
+    ok = (media in ('', None)
+          and isinstance(nivel, str)
+          and 'puntúa al menos' in nivel)
     return {'ref': '06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22',
             'formula_media': ws['C22'].value, 'formula_nivel': ws['C23'].value,
             'media_con_ficha_vacia': str(media), 'nivel': str(nivel),
             'ok': ok, 'pendiente_de_grupo': not ok,
             'nota': 'es un documento que se FIRMA delante del empleado: no '
                     'puede abrir con un error de Excel en la nota media '
-                    '(DOM-02/COM-04)'}
+                    '(DOM-02/COM-04) ni emitir un NIVEL sin datos '
+                    'suficientes (RD-24): con la ficha en blanco, C23 pide '
+                    'que se puntúen al menos 5 competencias'}
 
 
 def demo_fte(carpeta):
@@ -802,6 +810,11 @@ def demo_proteccion(carpeta, nombres):
             continue
         wb = openpyxl.load_workbook(path)
         for ws in wb.worksheets:
+            # RT-23 · las celdas NO ancla de una región combinada no se pueden
+            # bloquear con openpyxl (el estilo se pierde al guardar) y en Excel
+            # son inertes: manda el ancla. Se excluyen del recuento con la
+            # lista explícita, no ignorando el caso.
+            no_ancla = motor.celdas_no_ancla(ws)
             verdes = abiertas = sueltas = 0
             for row in ws.iter_rows():
                 for c in row:
@@ -811,7 +824,7 @@ def demo_proteccion(carpeta, nombres):
                         verdes += 1
                         if libre:
                             abiertas += 1
-                    elif libre:
+                    elif libre and c.coordinate not in no_ancla:
                         sueltas += 1
             fuera.append({'ref': '{}:{}'.format(n, ws.title),
                           'protegida': bool(ws.protection.sheet),
