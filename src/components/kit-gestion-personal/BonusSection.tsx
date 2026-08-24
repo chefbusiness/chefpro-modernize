@@ -13,7 +13,7 @@ const bonuses = [
   {
     icon: Calculator,
     label: 'BONUS 2',
-    title: 'Calculadora Plantilla Optima',
+    title: 'Calculadora Plantilla Óptima',
     value: '9 EUR',
     desc: 'Calcula cuantos empleados necesitas segun tus covers por servicio, dias de apertura, ratio empleado/cubierto y picos de demanda. Deja de tener plantilla de mas o de menos.',
     image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-oficina.jpg',

@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: '¿En que se diferencia del software de RRHH?',
-    a: 'El software de gestion de personal cobra entre 30 y 60 EUR/mes por establecimiento. Este kit cuesta 14 EUR, pago unico, sin suscripcion. Tienes las mismas herramientas de planificacion en Excel, que puedes personalizar al 100%.',
+    a: 'El software de gestión de personal cobra entre 30 y 60 EUR/mes por establecimiento. Este kit cuesta 14 EUR, pago unico, sin suscripcion. Tienes las mismas herramientas de planificación en Excel, que puedes personalizar al 100%.',
   },
   {
     q: '¿Puedo usarlo en varios restaurantes?',
-    a: 'Si. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para grupos de restauracion, multi-unidades y consultores.',
+    a: 'Si. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiónes. Ideal para grupos de restauracion, multi-unidades y consultores.',
   },
   {
     q: '¿Hay garantia de devolucion?',

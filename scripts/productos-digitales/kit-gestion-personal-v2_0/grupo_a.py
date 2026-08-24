@@ -1606,7 +1606,7 @@ def demos(carpeta, origen):
         La copia va a un directorio HERMANO del de trabajo: nada de dejar un
         décimo .xlsx dentro de la carpeta que audita el censo.
         """
-        destino = os.path.join(os.path.dirname(carpeta), 'demos-sin-cache')
+        destino = os.path.join(os.environ.get('CLAUDE_SCRATCHPAD', os.path.dirname(carpeta)), 'demos-sin-cache')
         if not os.path.isdir(destino):
             os.makedirs(destino)
         fuera_path = os.path.join(destino, os.path.basename(path))

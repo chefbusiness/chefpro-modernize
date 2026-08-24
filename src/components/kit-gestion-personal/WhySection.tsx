@@ -20,7 +20,7 @@ const reasons = [
   {
     icon: RefreshCw,
     title: 'Software de Gestión Cobra 30-60 EUR/mes. Esto es 14 EUR',
-    desc: 'Las mismas herramientas de planificacion que usan el software de RRHH premium, pero en Excel por un pago unico. Sin suscripcion.',
+    desc: 'Las mismas herramientas de planificación que usan el software de RRHH premium, pero en Excel por un pago unico. Sin suscripcion.',
   },
 ];
 

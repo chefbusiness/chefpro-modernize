@@ -15,7 +15,7 @@ export default function AuthorSection() {
               <p className="text-[#FFD700] text-xs font-bold tracking-[0.2em] uppercase mb-2">Creado por</p>
               <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Chef John Guerrero</h3>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-4">
-                CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Especialista en gestion de equipos en restaurantes y hoteles, ha disenado sistemas de planificacion de personal para cientos de establecimientos.
+                CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Especialista en gestión de equipos en restaurantes y hoteles, ha disenado sistemas de planificación de personal para cientos de establecimientos.
               </p>
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
                 <span className="px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] text-xs font-medium">CEO AI Chef Pro</span>

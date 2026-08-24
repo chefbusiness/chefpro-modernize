@@ -32,10 +32,10 @@ export default function ContentGrid() {
         <FadeIn>
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-3">
-              <span className="text-[#FFD700]">9</span> Plantillas de Gestion de Personal
+              <span className="text-[#FFD700]">9</span> Plantillas de Gestión de Personal
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Cada plantilla incluye formulas automaticas y esta disenada para la realidad de la hosteleria. Solo ajusta a tu negocio y empieza a planificar.
+              Cada plantilla incluye formulas automáticas y esta disenada para la realidad de la hosteleria. Solo ajusta a tu negocio y empieza a planificar.
             </p>
           </div>
         </FadeIn>

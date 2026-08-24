@@ -1,0 +1,1763 @@
+{
+ "producto": "kit-gestion-personal",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md §1 (motor)",
+ "rol": "motor",
+ "fecha": "2026-08-24T06:14:33",
+ "modo": "produccion",
+ "pasada": "completa",
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal",
+ "grupos_pedidos": [
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_ausentes": [],
+ "ficheros": [
+  {
+   "fichero": "01-cuadrante-turnos-semanal.xlsx",
+   "cambios": [
+    "01-cuadrante-turnos-semanal.xlsx:Turnos!A5:F12: tabla de los 8 turnos + parámetros B2 (jornada diaria máx. 9 h) y B3 (descanso mínimo 12 h, art. 34.3 ET). La columna «Horas» (E) pasa de constante verde a FÓRMULA derivada de la hora de inicio, la de fin y la PAUSA nueva (F): antes cambiar el horario de un turno dejaba intactos los totales del cuadrante y la alerta de jornada diaria, en contra de lo que prometían las Instrucciones — §2/RT-02",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal: bloque 6..20 → 6..35 (30 empleados, §1.3) y la cola bajada 15 filas",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!O6:P35: casilla verde «Menor de edad (S/N)» (se copia del aviso del 07) + alerta propia: con S, la jornada diaria se mide contra 8 h y salta si aparece un turno N (noche) o D (doble) — art. 6 ET. Era la única infracción del kit que se cometía en el 01 y sólo se avisaba en el 07 (RD-16)",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!I6:N35: 991 fórmulas — bloque auxiliar oculto R:AR (horas, inicio, fin y las 6 transiciones) y las 4 alertas legales: descanso entre jornadas (art. 34.3 ET, 12 h), descanso semanal (art. 37.1), jornada semanal contra las horas CONTRATADAS de cada uno (J, verde, 40 por defecto) y jornada diaria / turno doble (art. 34.3, 9 h) — DOM-05/DOM-25/TEC-05/COM-01",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual: hoja reconstruida — 5 semanas × 30 empleados con DV de los 8 códigos, horas por VLOOKUP a «Turnos», alerta semanal contra las horas contratadas, nombres ENLAZADOS al cuadrante semanal, total del mes por empleado (G170:G199), media semanal y fila de promedio (757 fórmulas). Antes: 30 rótulos y cero fórmulas para 28 días — DOM-17/TEC-23/COM-12",
+    "01-cuadrante-turnos-semanal.xlsx:Instrucciones: cuerpo reescrito — las 4 alertas descritas una a una con su artículo, el descanso pasa a 12 h (art. 34.3 ET) y aparecen por fin la hoja 'Turnos' y el 'Cuadrante Mensual', hoy no mencionado ni una vez (TEC-23)",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!B3:I3: leyenda única de 8 códigos (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual!B3:I3: leyenda única de 8 códigos (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx:Instrucciones!B6: leyenda única (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx:Instrucciones!B8: leyenda única (§1.1)",
+    "01-cuadrante-turnos-semanal.xlsx: 30 celdas reformateadas (§1.6)",
+    "01-cuadrante-turnos-semanal.xlsx: 30 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!B6:H35: DV inline (8 códigos de jornada) — 1 DV heredadas retiradas del rango",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!K6:K35: 4 regla(s) de formato condicional",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!L6:L35: 4 regla(s) de formato condicional",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!M6:M35: 4 regla(s) de formato condicional",
+    "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!N6:N35: 4 regla(s) de formato condicional",
+    "Instrucciones!B25:B27: nota de desprotección + bio anclada + versión 2.0",
+    "01-cuadrante-turnos-semanal.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Turnos: protegida sin contraseña (34 celdas verdes editables)",
+    "Cuadrante Semanal: protegida sin contraseña (300 celdas verdes editables)",
+    "Cuadrante Mensual: protegida sin contraseña (1050 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 1787,
+   "gates": {
+    "fichero": "01-cuadrante-turnos-semanal.xlsx",
+    "dv_aplicadas": 1,
+    "cf_aplicadas": 16,
+    "pendientes_de_grupo": [
+     "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal!J: ningún bloque dice «Alerta» en la cabecera — formato condicional aplazado al grupo"
+    ],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 4,
+     "formulas": 1757,
+     "verdes": 1384,
+     "verdes_con_dato": 64,
+     "dv": 9,
+     "cf": 44,
+     "protegidas": 3,
+     "celdas": 1976
+    }
+   }
+  },
+  {
+   "fichero": "02-control-horas-extras.xlsx",
+   "cambios": [
+    "02-control-horas-extras.xlsx:Registro Horas!E: columna «Pausa (h)» insertada; el Tipo de hora extra se desplaza a la I — DOM-21",
+    "02-control-horas-extras.xlsx:Registro Horas: 50 → 300 filas de registro (§1.3/COM-18)",
+    "02-control-horas-extras.xlsx:Registro Horas!F5:I304: horas con MOD (cruce de medianoche: 23:00→07:00 son 8,00 h, no −16) menos la pausa, y la hora extra con GUARDA de «H. contratadas» vacía. G precargada a 8 con DV 1-12; el Tipo pasa a las 4 modalidades del art. 35.2 — DOM-03/DOM-11/DOM-21/TEC-01/TEC-09/COM-07",
+    "02-control-horas-extras.xlsx:Resumen Mensual: 15 → 30 empleados (§1.3)",
+    "02-control-horas-extras.xlsx:Resumen Mensual!B6:H35: 185 fórmulas — B agrega por SUMIF desde «Registro Horas» (hoy es transcripción manual), C descuenta fuerza mayor, compensadas con descanso y complementarias (arts. 35.2 y 12.5), F vigila el límite anual de B/F3 con semáforo y G usa el recargo de D3 como PARÁMETRO. Desaparecen las cabeceras «Coste ×1.75» y «Coste ×2.0», que presentaban como ley lo que fija el convenio — DOM-07/DOM-12/TEC-06/TEC-08/COM-02/COM-14/COM-19. 60 celdas de las columnas calculadas dejan de estar verdes",
+    "02-control-horas-extras.xlsx:Resumen Mensual!G6:G35: el coste deja de pagar las horas COMPENSADAS CON DESCANSO —que por definición del art. 35.1 ET se pagan con tiempo, no con dinero: el kit las pagaba dos veces— y retribuye las COMPLEMENTARIAS del contrato parcial como ordinarias, sin el recargo (art. 12.5 ET). Las de fuerza mayor siguen dentro: sólo no computan en el tope — RD-02/RT-06/RD-18",
+    "02-control-horas-extras.xlsx:Resumen Mensual!H6:H35: columna nueva «Saldo del mes (trabajadas − contratadas)» CON SIGNO. La columna H del registro es exceso DIARIO con MAX(0,…): oculta los días por debajo de lo contratado, así que con distribución irregular no había forma de saber si el exceso estaba compensado dentro del periodo — RD-17",
+    "02-control-horas-extras.xlsx:Resumen Mensual!F5: la cabecera pasa a «Estado frente al límite anual» (era el rótulo del parámetro de E3, dos filas más arriba, en una columna que devuelve texto) y su formato de '0.00' a General — RT-16/RC-20",
+    "02-control-horas-extras.xlsx:Instrucciones: cuerpo reescrito — ×1,75 y ×2,0 dejan de presentarse como «Legislación española» (art. 35.1: sólo se exige que no valga menos que la ordinaria) y entran las dos excepciones del art. 35.2 — DOM-12/COM-19",
+    "02-control-horas-extras.xlsx: 1020 celdas reformateadas (§1.6)",
+    "02-control-horas-extras.xlsx: 330 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "02-control-horas-extras.xlsx:Resumen Mensual!F6:F35: 4 regla(s) de formato condicional",
+    "Instrucciones!B27:B29: nota de desprotección + bio anclada + versión 2.0",
+    "02-control-horas-extras.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Registro Horas: protegida sin contraseña (2100 celdas verdes editables)",
+    "Resumen Mensual: protegida sin contraseña (63 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 1645,
+   "gates": {
+    "fichero": "02-control-horas-extras.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 4,
+    "pendientes_de_grupo": [
+     "02-control-horas-extras.xlsx:Registro Horas!H: ningún bloque tiene «Tipo Extra» en la cabecera — DV aplazada al grupo",
+     "02-control-horas-extras.xlsx:Resumen Mensual!D: ningún bloque dice «Dentro Límite» en la cabecera — formato condicional aplazado al grupo"
+    ],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [
+     "Resumen Mensual"
+    ],
+    "contadores": {
+     "hojas": 3,
+     "formulas": 1085,
+     "verdes": 2163,
+     "verdes_con_dato": 303,
+     "dv": 7,
+     "cf": 8,
+     "protegidas": 2,
+     "celdas": 1440
+    }
+   }
+  },
+  {
+   "fichero": "03-coste-laboral-mensual.xlsx",
+   "cambios": [
+    "03:Nóminas!5:34: bloque de empleados 20 → 30 (§1.3, DOM-32)",
+    "03:Nóminas!C2: tipo de cotización empresarial en celda verde (33 %) — antes iba dentro de 20 fórmulas y de la cabecera D4 (DOM-08/TEC-14)",
+    "03:Nóminas!D4:I35: pagas prorrateadas, cotización por parámetro y coste/hora — la columna «Horas Contratadas» deja de estar muerta (DOM-31/TEC-26)",
+    "03:Nóminas!F2: «Semanas efectivas al año» en celda verde (46.5 por defecto) y el «Coste/hora» divide por ella en vez de por las 52 del calendario: contar como trabajadas las semanas de vacaciones y los festivos dejaba el coste por hora un 10-13 % corto, y ese número es el que las Instrucciones mandan llevar a la tarifa del 02 — RD-20",
+    "03:Ratio Coste Laboral!B3/D11/D12/B13: umbrales por VLOOKUP sobre A18:E27 y veredicto en blanco con la hoja vacía (DOM-16/TEC-10/TEC-11/COM-17)",
+    "03:Ratio Coste Laboral!B11/B13: la guarda deja de mirar sólo las VENTAS. Antes bastaba teclear las ventas del mes sin una sola nómina volcada para que el ratio saliera 0,0 % y el semáforo dijera «🟢 EXCELENTE» —B5 era un SUM sobre una hoja vacía, que vale 0 y no «»—. Ahora los dos huecos se nombran por separado y por debajo del 60 % del objetivo el veredicto avisa de ratio implausible — RD-01/RT-01",
+    "03:Ratio Coste Laboral!B5:B9: el coste laboral deja de ser sólo las nóminas y bloqueado. B5 sigue saliendo de «Nóminas» y entran tres verdes —horas extra del mes (02!Resumen Mensual!G37), personal externo / ETT y otros costes de personal— que B9 suma. El ratio salía sistemáticamente por debajo del real y el semáforo aprobaba de más — RD-21",
+    "03:Ratio Coste Laboral!A18:E27: la tabla pasa de 6 a 10 tipos —entran hotel, pizzería, dark kitchen y heladería con los MISMOS umbrales que el BONUS-02—, así que un hotelero deja de caer al 30/35 % genérico mientras el bonus le daba 42/44 % para el mismo negocio — RC-11",
+    "03:Previsión por Servicio!B6/B18:E18/B21/B22: un solo modelo de dimensionamiento (cubiertos por SERVICIO → 7 FTE → 16.292,50 €/mes) — antes 15 personas por turno (DOM-09/TEC-15/TEC-20/COM-09)",
+    "03:Instrucciones!B2:B22: reescritas — desaparece «La Seguridad Social empresa (~30%)» y el semáforo fijo de 30/35 % (DOM-08/COM-17)",
+    "03-coste-laboral-mensual.xlsx: 210 celdas reformateadas (§1.6)",
+    "03-coste-laboral-mensual.xlsx: 150 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "Instrucciones!B34:B36: nota de desprotección + bio anclada + versión 2.0",
+    "03-coste-laboral-mensual.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Nóminas: protegida sin contraseña (152 celdas verdes editables)",
+    "Ratio Coste Laboral: protegida sin contraseña (5 celdas verdes editables)",
+    "Previsión por Servicio: protegida sin contraseña (12 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 162,
+   "gates": {
+    "fichero": "03-coste-laboral-mensual.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [
+     "03-coste-laboral-mensual.xlsx:Ratio Coste Laboral!A9: no dice «Semáforo» todavía — formato condicional aplazado al grupo"
+    ],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 4,
+     "formulas": 142,
+     "verdes": 169,
+     "verdes_con_dato": 44,
+     "dv": 8,
+     "cf": 0,
+     "protegidas": 3,
+     "celdas": 320
+    }
+   }
+  },
+  {
+   "fichero": "04-onboarding-nuevo-empleado.xlsx",
+   "cambios": [
+    "04:Checklist Onboarding!B17:B19: +3 tareas con plazo legal (Contrat@/SEPE, copia básica a la RLT, modelo 145) — 47 → 50 (DOM-15)",
+    "04:Checklist Onboarding!B10: el alta en la SS pasa a ser previa al inicio de la jornada (art. 32.3 RD 84/1996, DOM-15)",
+    "04:Checklist Onboarding!A7:H68: la regla de formato condicional heredada llegaba sólo a la fila 65 — `insertar_fila` no desplaza el formato condicional",
+    "04:Checklist Onboarding!C71/C72/C73: contadores acotados por tramo y denominador sin las tareas «—» — el checklist recién descargado marca 0 %, no 8,51 % (DOM-01/DOM-28/TEC-02/TEC-13)",
+    "04:Instrucciones!B2:B26: reescritas — «Hecho», el papel de la marca «—» y los tres plazos legales nuevos",
+    "04:Checklist Onboarding!E/H: la columna «Fecha Límite» se desdobla en «Plazo» (texto, formato General) y «Fecha límite» (=fecha de alta + días). Antes guardaba TEXTO («Día -1») en celdas con formato dd/mm/yyyy: ni se podía ordenar por vencimiento ni saber qué día real era, y en cuanto alguien escribía una fecha encima la columna mezclaba los dos tipos — RD-28/RT-19",
+    "04:Checklist Onboarding!E64/E65: los escalones de plazo pasan de cuatro (-1/1/7/30) a seis (-1/1/3/7/15/30), así que «Evaluación informal día 3» deja de llevar «Día 7» y «Evaluación formal día 15» deja de llevar «Día 30»: la tarea y su plazo dicen por fin lo mismo — RD-29",
+    "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding: 49 celdas de sección recoloreadas — el «EQUIPAMIENTO» pintado de E8F5E9 colisionaba con el verde de EDICIÓN de la familia (§1.2)",
+    "04-onboarding-nuevo-empleado.xlsx: 106 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "Instrucciones!B34:B36: nota de desprotección + bio anclada + versión 2.0",
+    "04-onboarding-nuevo-empleado.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Checklist Onboarding: protegida sin contraseña (202 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 54,
+   "gates": {
+    "fichero": "04-onboarding-nuevo-empleado.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 2,
+     "formulas": 54,
+     "verdes": 202,
+     "verdes_con_dato": 50,
+     "dv": 1,
+     "cf": 1,
+     "protegidas": 1,
+     "celdas": 331
+    }
+   }
+  },
+  {
+   "fichero": "05-planificacion-vacaciones.xlsx",
+   "cambios": [
+    "05:Calendario Anual!B4:BB40: rejilla de 12 meses → 53 semanas; «Días Usados» (BC) suma los DÍAS de las solicitudes aprobadas en vez de contar meses marcados (DOM-04/TEC-04/COM-06)",
+    "05:Saldo Vacaciones!B2: días de convenio en UNA celda (antes en 30 fórmulas), prorrateo por fecha de alta y saldo que descuenta la solicitud en curso (DOM-19/TEC-18/COM-24)",
+    "05:Saldo Vacaciones!C4:C34: columna nueva «Fecha de baja / fin de contrato». El prorrateo sólo funcionaba por un extremo: un temporal de enero a junio conservaba los 30 días enteros cuando le corresponden 15, que es el número que se liquida en el finiquito — RD-27",
+    "05:Saldo Vacaciones!E5:E34/I5:I34: el derecho lleva MAX(0, MIN(...)) —una fecha de alta posterior al cierre del año daba derecho NEGATIVO y disparaba «⛔ saldo negativo», que se lee como exceso de vacaciones— y el divisor sale del propio ejercicio en vez de un 365 cableado, que falla en bisiesto. La columna «Aviso» nombra las dos fechas imposibles — RT-08",
+    "05:Saldo Vacaciones!E2/G2 y F5:G34: los SUMIFS filtran por AÑO contra la fecha de inicio de la solicitud. Sin ese filtro, reutilizar el libro al año siguiente hacía que las vacaciones de dos ejercicios descontaran del mismo derecho de 30 días y toda la plantilla apareciera en negativo — RD-10",
+    "05:Solicitudes!D5:H154: aviso de fechas invertidas, saldo por INDEX/MATCH sobre «Saldo Vacaciones» y verificación del nombre contra el calendario (DOM-20)",
+    "05:Solicitudes: 30 → 150 filas. La hoja NO está indexada por empleado sino por PETICIÓN, y con 30 filas para 30 personas era UNA solicitud por persona y año: partir las vacaciones en dos o tres periodos la agotaba a los 10-15 empleados y a partir de ahí el saldo dejaba de ser cierto en silencio, porque los SUMIFS y los INDEX/MATCH tenían el rango cerrado en la fila 34 — RD-09/RT-03",
+    "05:Cobertura!B3/B44:B47: máximo de ausencias en celda, personal mínimo por turno precargado e indicadores reales de pico y temporada alta (COM-20)",
+    "05:Cobertura!D3: umbral propio de la TEMPORADA ALTA en celda verde (1 por defecto). Antes la rama de temporada alta se evaluaba primero y con «>0», así que una sola ausencia en cualquiera de las 11 semanas precargadas pintaba el bloqueante ⛔ y el «⚠ EXCESO» —la única alerta que compara contra el máximo del cliente— no aparecía nunca — RT-11",
+    "05:Cobertura!B48: indicador nuevo que CONECTA el bloque «Personal mínimo por turno», hasta ahora decorativo: cuenta las semanas en que la plantilla disponible no llega al turno más exigente. Y los mínimos precargados dejan de contradecir al 03 y al BONUS-02 — RD-14/RT-14",
+    "05:Cobertura!G12:G41: aviso «⚠ ese nombre no está en el calendario», el mismo que ya tenía «Solicitudes». Un nombre mal escrito dejaba «Días pendientes» en blanco, indistinguible de alguien sin días pendientes — RT-18",
+    "05:Instrucciones!B2:B24: reescritas — rejilla por semanas, hoja «Saldo Vacaciones» y el 30 como celda editable, no como constante de 30 fórmulas",
+    "05-planificacion-vacaciones.xlsx:Calendario Anual!B3:E3: leyenda única de 4 códigos (§1.1)",
+    "05-planificacion-vacaciones.xlsx:Instrucciones!B7: leyenda única (§1.1)",
+    "05-planificacion-vacaciones.xlsx: 510 celdas reformateadas (§1.6)",
+    "05-planificacion-vacaciones.xlsx: 675 celdas marcadas como editables (verde E8F5E9), 3 desmarcadas por pasar a calculadas",
+    "05-planificacion-vacaciones.xlsx:Calendario Anual!B6:BB35: DV inline (5 códigos de ausencia)",
+    "05-planificacion-vacaciones.xlsx:Solicitudes!G5:G154: DV inline (3 valores) — 1 DV heredadas retiradas del rango",
+    "05-planificacion-vacaciones.xlsx:Calendario Anual!B40:BB40: 2 regla(s) de formato condicional",
+    "05-planificacion-vacaciones.xlsx:Calendario Anual!B6:BB35: 4 regla(s) de formato condicional",
+    "05-planificacion-vacaciones.xlsx:Calendario Anual!B6:BB35: 1 regla(s) de formato condicional",
+    "Instrucciones!B34:B36: nota de desprotección + bio anclada + versión 2.0",
+    "05-planificacion-vacaciones.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Calendario Anual: protegida sin contraseña (1674 celdas verdes editables)",
+    "Solicitudes: protegida sin contraseña (600 celdas verdes editables)",
+    "Saldo Vacaciones: protegida sin contraseña (91 celdas verdes editables)",
+    "Cobertura: protegida sin contraseña (161 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 1145,
+   "gates": {
+    "fichero": "05-planificacion-vacaciones.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 7,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [
+     "Calendario Anual",
+     "Solicitudes"
+    ],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 1145,
+     "verdes": 2526,
+     "verdes_con_dato": 66,
+     "dv": 6,
+     "cf": 23,
+     "protegidas": 4,
+     "celdas": 1359
+    }
+   }
+  },
+  {
+   "fichero": "06-evaluacion-desempeno.xlsx",
+   "cambios": [
+    "06:Ficha Evaluación!C22/C23/C24: media con guarda de rango vacío, nivel que se calla sin media y contador de competencias valoradas — la v1.1 entregaba «#DIV/0!» CACHEADO en las dos celdas de un documento que se firma (DOM-02/TEC-03/COM-04)",
+    "06:Ficha Evaluación!C12:C21: la escala pasa de decimal 1-5 a lista 1,2,3,4,5,N/A — a un cocinero de partida no se le puntúa «Atención al cliente» y la media sale sólo de lo valorado (DOM-30)",
+    "06:Ficha Evaluación!B27:D29/B32:D34/B37:D39: wrap_text y alto de fila en las nueve celdas combinadas de texto libre — sin ellos el comentario se corta al imprimir la ficha que se firma (TEC-24)",
+    "06:Ficha Evaluación!A41:D45: bloque PLAN DE DESARROLLO INDIVIDUAL (acción · fecha objetivo · responsable e indicador), que la landing prometía y no existía (COM-21)",
+    "06:Ficha (ejemplo relleno): hoja nueva — la misma ficha con un caso real terminado (9 competencias puntuadas y una N/A), que es la respuesta a «¿una ficha o varias?» de §7.5 (COM-26)",
+    "06:Histórico!G5:G34: la tendencia compara los DOS últimos trimestres INFORMADOS aunque falte uno intermedio — el INDEX/COUNT anterior confundía posición con recuento y devolvía el veredicto contrario (Q1=4,0 · Q2 vacío · Q3=4,5 daba «↓ Baja»); la hoja pasa de 15 a 30 empleados (TEC-27/COM-21/DOM-32/RD-05/RT-10)",
+    "06:Instrucciones: escala con N/A, cómo duplicar la ficha, cómo volcar la media al histórico y qué es el plan de desarrollo (COM-26/COM-21/DOM-30)",
+    "06-evaluacion-desempeno.xlsx: 40 celdas reformateadas (§1.6)",
+    "06-evaluacion-desempeno.xlsx: 170 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "06-evaluacion-desempeno.xlsx:Ficha Evaluación!C23:C23: 6 regla(s) de formato condicional",
+    "Instrucciones!B34:B36: nota de desprotección + bio anclada + versión 2.0",
+    "06-evaluacion-desempeno.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Ficha Evaluación: protegida sin contraseña (43 celdas verdes editables)",
+    "Ficha (ejemplo relleno): protegida sin contraseña (23 celdas verdes editables)",
+    "Histórico: protegida sin contraseña (150 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 66,
+   "gates": {
+    "fichero": "06-evaluacion-desempeno.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 6,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [
+     "Histórico"
+    ],
+    "contadores": {
+     "hojas": 4,
+     "formulas": 66,
+     "verdes": 216,
+     "verdes_con_dato": 18,
+     "dv": 2,
+     "cf": 12,
+     "protegidas": 3,
+     "celdas": 263
+    }
+   }
+  },
+  {
+   "fichero": "07-directorio-plantilla.xlsx",
+   "cambios": [
+    "07:Plantilla: auto_filter A4:O34 → A4:V34 — abarca por fin las 22 columnas; ordenar por el desplegable ya no cruza salario, teléfono, contacto de emergencia y aviso de menor de edad con la persona equivocada (RD-06)",
+    "07:Plantilla!A4:V4: 22 columnas — entran NAF, fecha de nacimiento, convenio aplicable, grupo profesional, fin de periodo de prueba, caducidad del carnet de manipulador y caducidad de PRL, y SALE «Alérgenos Propios» (art. 9 RGPD) (DOM-13/DOM-24/TEC-19/COM-16)",
+    "07:Plantilla!V5:V34: columna calculada «Aviso» con la alerta de minoría de edad (art. 6 ET), que es para lo que entra la fecha de nacimiento (DOM-24)",
+    "07:Vencimientos!A7:I36: 30 empleados × 4 vencimientos (contrato, periodo de prueba, carnet de manipulador y PRL), leídos del directorio — la v1.1 miraba a 15 de 30 y sólo al contrato, y los carnets se tecleaban dos veces (DOM-14/TEC-07/COM-16)",
+    "07:Vencimientos!B4/B5/E3:E5: los dos umbrales del semáforo en celda verde y contador de alertas por gravedad — antes los 30/60/90 días estaban escritos dentro de las 30 fórmulas (§1.4)",
+    "07:Instrucciones!B14+: sección de protección de datos reescrita — base jurídica (art. 6.1.b y 6.1.c), minimización, plazos (4 años, art. 34.9 ET y art. 21 LISOS), contacto de emergencia como dato de tercero, derechos de los arts. 15-22 y el CÓMO cifrar el libro (COM-25/DOM-13)",
+    "07-directorio-plantilla.xlsx: 240 celdas reformateadas (§1.6)",
+    "07-directorio-plantilla.xlsx: 630 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "07-directorio-plantilla.xlsx:Plantilla!D5:D34: DV inline (5 valores) — 2 DV heredadas retiradas del rango",
+    "07-directorio-plantilla.xlsx:Plantilla!G5:G34: DV inline (2 valores)",
+    "07-directorio-plantilla.xlsx:Vencimientos!C7:C36: 7 regla(s) de formato condicional",
+    "07-directorio-plantilla.xlsx:Vencimientos!E7:E36: 7 regla(s) de formato condicional",
+    "07-directorio-plantilla.xlsx:Vencimientos!G7:G36: 7 regla(s) de formato condicional",
+    "07-directorio-plantilla.xlsx:Vencimientos!I7:I36: 7 regla(s) de formato condicional",
+    "Instrucciones!B29:B31: nota de desprotección + bio anclada + versión 2.0",
+    "07-directorio-plantilla.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Plantilla: protegida sin contraseña (630 celdas verdes editables)",
+    "Vencimientos: protegida sin contraseña (2 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 304,
+   "gates": {
+    "fichero": "07-directorio-plantilla.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 28,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [
+     "Plantilla",
+     "Vencimientos"
+    ],
+    "contadores": {
+     "hojas": 3,
+     "formulas": 304,
+     "verdes": 632,
+     "verdes_con_dato": 2,
+     "dv": 5,
+     "cf": 28,
+     "protegidas": 2,
+     "celdas": 382
+    }
+   }
+  },
+  {
+   "fichero": "BONUS-01-briefing-cambio-turno.xlsx",
+   "cambios": [
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!46:64: 19 filas insertadas para los dos bloques que faltaban en un traspaso real — DOM-29",
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!A46:F68: bloque de ARQUEO DE CAJA (fondo · efectivo contado · ventas en efectivo del TPV · DESCUADRE · veredicto contra una tolerancia en celda verde · firma) y bloque de TEMPERATURAS con MÍNIMO y máximo para cinco equipos —cámara 0/4, congelador −30/−18, vitrina fría 0/4 y los dos de mantenimiento en CALIENTE a 65/90— con semáforo CONFORME / FUERA DE RANGO; observaciones con wrap_text y alto de fila. Antes la «Diferencia» era recaudación − fondo (no detectaba ningún descuadre) y la conformidad sólo miraba el límite SUPERIOR (una cámara a −5 °C salía «✓ CONFORME») — DOM-29/TEC-24/RD-04/RD-22/RD-23",
+    "BONUS-01-briefing-cambio-turno.xlsx: 19 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!C17:C22: DV inline (3 valores)",
+    "BONUS-01-briefing-cambio-turno.xlsx:Briefing!A25:A30: DV inline (3 valores)",
+    "Instrucciones!B21:B23: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-01-briefing-cambio-turno.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Briefing: protegida sin contraseña (154 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 14,
+   "gates": {
+    "fichero": "BONUS-01-briefing-cambio-turno.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [
+     "BONUS-01-briefing-cambio-turno.xlsx:Briefing!D: ningún bloque dice «Conforme» en la cabecera — formato condicional aplazado al grupo"
+    ],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [
+     "Briefing"
+    ],
+    "contadores": {
+     "hojas": 2,
+     "formulas": 14,
+     "verdes": 154,
+     "verdes_con_dato": 13,
+     "dv": 3,
+     "cf": 5,
+     "protegidas": 1,
+     "celdas": 103
+    }
+   }
+  },
+  {
+   "fichero": "BONUS-02-calculadora-plantilla-optima.xlsx",
+   "cambios": [
+    "BONUS-02:Ratios por Tipo!E4:J4: tres columnas numéricas de cubiertos por empleado y SERVICIO + objetivo y máximo aceptable del ratio de coste laboral, que es lo que lee el VLOOKUP de la calculadora (DOM-23/TEC-16/DOM-10)",
+    "BONUS-02:Calculadora!B24:B29: un solo modelo de dimensionamiento (cubiertos por SERVICIO → 5 personas por servicio → 10 presencias → 240 h/semana → 7 FTE), el mismo que el 03 — la v1.1 daba 19 empleados y un ratio del 99,7 % (DOM-10/COM-09)",
+    "BONUS-02:Calculadora!B7/B28: «Días de apertura / semana» entra por fin en el cálculo, a través de las horas semanales — era una celda muerta que ninguna de las 16 fórmulas leía (DOM-18/COM-13)",
+    "BONUS-02:Calculadora!B8/B19:B21: el tipo de negocio pasa a DV de lista con los 10 nombres de la tabla y VLOOKUP, con 0 = puesto inexistente — antes eran tres IF anidados con cajón de sastre a fast casual (DOM-23/TEC-16)",
+    "BONUS-02:Calculadora!B10/B39: el ×14 escondido pasa a la celda de pagas y el coste anual son doce meses del coste mensual, que ya las lleva dentro (TEC-21)",
+    "BONUS-02:Calculadora!B32:B35: refuerzo del día PICO (personal del día pico − personal del día normal), que es lo que la landing vende como «picos de demanda» y no existía (COM-13)",
+    "BONUS-02:Calculadora!B40:B42: ventas estimadas, ratio de coste laboral y semáforo contra el objetivo de la tabla — el contraste que impide volver a entregar un resultado del 99,7 % sin un solo aviso (DOM-10)",
+    "BONUS-02:Instrucciones: la cadena de cálculo explicada, el porqué del ticket medio, el día pico y el aviso de que esto no es la nómina (COM-13/TEC-21)",
+    "BONUS-02-calculadora-plantilla-optima.xlsx: 50 celdas reformateadas (§1.6)",
+    "Instrucciones!B25:B27: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-02-calculadora-plantilla-optima.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+    "Calculadora: protegida sin contraseña (13 celdas verdes editables)",
+    "Ratios por Tipo: protegida sin contraseña (50 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 26,
+   "gates": {
+    "fichero": "BONUS-02-calculadora-plantilla-optima.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "citas_legales_obsoletas": [],
+    "leyenda_incoherente": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 3,
+     "formulas": 26,
+     "verdes": 63,
+     "verdes_con_dato": 62,
+     "dv": 11,
+     "cf": 6,
+     "protegidas": 2,
+     "celdas": 235
+    }
+   }
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-cuadrante-turnos-semanal.xlsx",
+    "salida": "01-cuadrante-turnos-semanal.xlsx: formulas=1757 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-control-horas-extras.xlsx",
+    "salida": "02-control-horas-extras.xlsx: formulas=1085 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-coste-laboral-mensual.xlsx",
+    "salida": "03-coste-laboral-mensual.xlsx: formulas=142 cache_inyectado=20 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-onboarding-nuevo-empleado.xlsx",
+    "salida": "04-onboarding-nuevo-empleado.xlsx: formulas=54 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-planificacion-vacaciones.xlsx",
+    "salida": "05-planificacion-vacaciones.xlsx: formulas=1145 cache_inyectado=221 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-evaluacion-desempeno.xlsx",
+    "salida": "06-evaluacion-desempeno.xlsx: formulas=66 cache_inyectado=5 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-directorio-plantilla.xlsx",
+    "salida": "07-directorio-plantilla.xlsx: formulas=304 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-cambio-turno.xlsx",
+    "salida": "BONUS-01-briefing-cambio-turno.xlsx: formulas=14 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calculadora-plantilla-optima.xlsx",
+    "salida": "BONUS-02-calculadora-plantilla-optima.xlsx: formulas=26 cache_inyectado=24 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 311,
+   "vacias_verificadas_con_pycel": 4892,
+   "sin_pycel": 0,
+   "no_evaluables_por_pycel": 0,
+   "fallos": []
+  },
+  "valores_cacheados_con_error": {},
+  "veredictos_cacheados_fuera_de_lista_blanca": {},
+  "autofiltro_incompleto": {},
+  "anio_calendario_pasado": {},
+  "copy_con_afirmaciones_falsas": {},
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "9 ficheros censados (9 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ],
+   "stderr": []
+  },
+  "pestanas_citadas_inexistentes": {},
+  "citas_legales_obsoletas": {},
+  "leyenda_incoherente": {}
+ },
+ "demostraciones": {
+  "cruce_medianoche_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:F5",
+   "formula": "=IF(OR($C5=\"\",$D5=\"\"),\"\",IF(OR($C5>=1,$D5>=1,$C5=$D5,IF($E5=\"\",0,$E5)>MOD($D5-$C5,1)*24),\"\",ROUND(MOD($D5-$C5,1)*24-IF($E5=\"\",0,$E5),2)))",
+   "pruebas": [
+    {
+     "caso": "turno de noche 23:00→07:00",
+     "esperado": 8.0,
+     "obtenido": 8.0,
+     "ok": true
+    },
+    {
+     "caso": "partido 19:00→01:30 con 0 h de pausa",
+     "esperado": 6.5,
+     "obtenido": 6.5,
+     "ok": true
+    },
+    {
+     "caso": "partido 10:00→23:00 con 4 h de pausa",
+     "esperado": 9.0,
+     "obtenido": 9.0,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "mientras la fórmula sea `(D5-C5)*24` el turno de noche ficha −16 h y el partido no cabe en un solo par entrada/salida (DOM-03/DOM-21)"
+  },
+  "guarda_h_contratadas_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:H5",
+   "formula": "=IF(OR($F5=\"\",$G5=\"\"),\"\",MAX(0,$F5-$G5))",
+   "contratadas_vacia": "",
+   "contratadas_8h": 0,
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "con la guarda puesta, «contratadas vacía» debe dar \"\" y una jornada de 8 h contra 8 contratadas debe dar 0"
+  },
+  "ficha_vacia_06": {
+   "ref": "06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22",
+   "formula_media": "=IF(COUNT($C$12:$C$21)=0,\"\",ROUND(AVERAGE($C$12:$C$21),2))",
+   "formula_nivel": "=IF(COUNT($C$12:$C$21)<5,\"⚠ puntúa al menos 5 competencias\",IF($C$22=\"\",\"\",IF($C$22>=4.5,\"⭐ EXCELENTE\",IF($C$22>=3.5,\"✓ BUENO\",IF($C$22>=2.5,\"→ ADECUADO\",IF($C$22>=1.5,\"⚠ MEJORABLE\",\"✗ DEFICIENTE\"))))))",
+   "media_con_ficha_vacia": "",
+   "nivel": "⚠ puntúa al menos 5 competencias",
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "es un documento que se FIRMA delante del empleado: no puede abrir con un error de Excel en la nota media (DOM-02/COM-04) ni emitir un NIVEL sin datos suficientes (RD-24): con la ficha en blanco, C23 pide que se puntúen al menos 5 competencias"
+  },
+  "fte_03_vs_bonus02": {
+   "esperado_fte": 7,
+   "03_previsión": {
+    "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B21",
+    "rotulo": "Plantilla necesaria (FTE):",
+    "valor": 7.0
+   },
+   "BONUS-02_calculadora": {
+    "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B29",
+    "rotulo": "Plantilla necesaria (FTE):",
+    "valor": 7.0
+   },
+   "coinciden": true,
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "un solo modelo de dimensionamiento: cubiertos por SERVICIO → personal por servicio → presencias/día → horas semanales → FTE (§3, grupo_b)"
+  },
+  "descanso_entre_jornadas_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K6",
+   "pruebas": [
+    {
+     "caso": "T seguido de M (8 h de descanso)",
+     "valor": "⛔ <12 h",
+     "esperaba_alerta": true,
+     "ok": true
+    },
+    {
+     "caso": "M seguido de M (24 h de descanso)",
+     "valor": "",
+     "esperaba_alerta": false,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "pendiente_de_grupo": false
+  },
+  "progreso_onboarding_04": {
+   "ref": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C71",
+   "formula_completadas": "=COUNTIF($F$7:$F$19,\"✓\")+COUNTIF($F$23:$F$30,\"✓\")+COUNTIF($F$34:$F$42,\"✓\")+COUNTIF($F$46:$F$57,\"✓\")+COUNTIF($F$61:$F$68,\"✓\")",
+   "completadas_recien_descargado": 0.0,
+   "total_declarado": 50.0,
+   "progreso": 0.0,
+   "tramos_detectados": [
+    {
+     "cabecera": 6,
+     "primera": 7,
+     "ultima": 19,
+     "tareas": 13
+    },
+    {
+     "cabecera": 22,
+     "primera": 23,
+     "ultima": 30,
+     "tareas": 8
+    },
+    {
+     "cabecera": 33,
+     "primera": 34,
+     "ultima": 42,
+     "tareas": 9
+    },
+    {
+     "cabecera": 45,
+     "primera": 46,
+     "ultima": 57,
+     "tareas": 12
+    },
+    {
+     "cabecera": 60,
+     "primera": 61,
+     "ultima": 68,
+     "tareas": 8
+    }
+   ],
+   "tareas_detectadas": 50,
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "los contadores tienen que acotarse por TRAMO (COUNTIF por sección) y las cabeceras pasar de «✓» a «Hecho» — se hacen las dos cosas (§4)"
+  },
+  "leyenda_unica": {
+   "01-cuadrante-turnos-semanal.xlsx": {
+    "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:B3",
+    "dv_encontradas": [
+     "\"M,T,N,P,D,L,V,B\""
+    ],
+    "dv_esperada": "\"M,T,N,P,D,L,V,B\"",
+    "leyenda_fila_3": [
+     "M=Mañana",
+     "T=Tarde",
+     "N=Noche",
+     "P=Partido",
+     "D=Doble",
+     "L=Libre",
+     "V=Vacaciones",
+     "B=Baja"
+    ],
+    "ok": true
+   },
+   "05-planificacion-vacaciones.xlsx": {
+    "ref": "05-planificacion-vacaciones.xlsx:Calendario Anual:B3",
+    "dv_encontradas": [
+     "\"V,B,F,PE,\""
+    ],
+    "dv_esperada": "\"V,B,F,PE,\"",
+    "leyenda_fila_3": [
+     "V=Vacaciones",
+     "B=Baja",
+     "F=Festivo",
+     "PE=Permiso"
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  "proteccion": {
+   "hojas": [
+    {
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Turnos",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 34,
+     "verdes_desbloqueadas": 34,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 300,
+     "verdes_desbloqueadas": 300,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 1050,
+     "verdes_desbloqueadas": 1050,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "02-control-horas-extras.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "02-control-horas-extras.xlsx:Registro Horas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 2100,
+     "verdes_desbloqueadas": 2100,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "02-control-horas-extras.xlsx:Resumen Mensual",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 63,
+     "verdes_desbloqueadas": 63,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "03-coste-laboral-mensual.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "03-coste-laboral-mensual.xlsx:Nóminas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 152,
+     "verdes_desbloqueadas": 152,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "03-coste-laboral-mensual.xlsx:Ratio Coste Laboral",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 5,
+     "verdes_desbloqueadas": 5,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 12,
+     "verdes_desbloqueadas": 12,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "04-onboarding-nuevo-empleado.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 202,
+     "verdes_desbloqueadas": 202,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "05-planificacion-vacaciones.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "05-planificacion-vacaciones.xlsx:Calendario Anual",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 1674,
+     "verdes_desbloqueadas": 1674,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "05-planificacion-vacaciones.xlsx:Solicitudes",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 600,
+     "verdes_desbloqueadas": 600,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "05-planificacion-vacaciones.xlsx:Saldo Vacaciones",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 91,
+     "verdes_desbloqueadas": 91,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "05-planificacion-vacaciones.xlsx:Cobertura",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 161,
+     "verdes_desbloqueadas": 161,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "06-evaluacion-desempeno.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "06-evaluacion-desempeno.xlsx:Ficha Evaluación",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 43,
+     "verdes_desbloqueadas": 43,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "06-evaluacion-desempeno.xlsx:Ficha (ejemplo relleno)",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 23,
+     "verdes_desbloqueadas": 23,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "06-evaluacion-desempeno.xlsx:Histórico",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 150,
+     "verdes_desbloqueadas": 150,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "07-directorio-plantilla.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "07-directorio-plantilla.xlsx:Plantilla",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 630,
+     "verdes_desbloqueadas": 630,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "07-directorio-plantilla.xlsx:Vencimientos",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 2,
+     "verdes_desbloqueadas": 2,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "BONUS-01-briefing-cambio-turno.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "BONUS-01-briefing-cambio-turno.xlsx:Briefing",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 145,
+     "verdes_desbloqueadas": 145,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": true
+    },
+    {
+     "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 13,
+     "verdes_desbloqueadas": 13,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    },
+    {
+     "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Ratios por Tipo",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 50,
+     "verdes_desbloqueadas": 50,
+     "desbloqueadas_sin_verde": 0,
+     "excepcion_documentada": false
+    }
+   ],
+   "fallos": []
+  },
+  "grupo_a_4_alertas_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K6:N6",
+   "pruebas": [
+    {
+     "alerta": "K · descanso entre jornadas (art. 34.3 ET, 12 h)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K6",
+     "hoja recién descargada": "",
+     "T→M · 8 h de descanso": "⛔ <12 h",
+     "M→M · 16 h de descanso": "",
+     "N→T · el turno cruza la medianoche, 8 h": "⛔ <12 h",
+     "ok": true
+    },
+    {
+     "alerta": "L · descanso semanal (art. 37.1 ET)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:L6",
+     "hoja recién descargada": "",
+     "7 días con turno": "⛔ 0 días",
+     "1 día libre": "⚠ 1 día (el ET pide 1,5, acumulable en 14 días — art. 37.1)",
+     "2 días libres": "",
+     "ok": true
+    },
+    {
+     "alerta": "M · jornada semanal contra lo CONTRATADO (DOM-25)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:M6",
+     "hoja recién descargada": "",
+     "40 h planificadas / 40 contratadas": "",
+     "horas de esa semana (I6)": 40.0,
+     "32 h planificadas / 20 contratadas": "⛔ +12 h",
+     "ok": true
+    },
+    {
+     "alerta": "N · jornada diaria (art. 34.3 ET, 9 h)",
+     "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:N6",
+     "hoja recién descargada": "",
+     "turno DOBLE de 16 h": "⛔ jornada > 9 h",
+     "turno PARTIDO de 9 h": "",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "las cuatro alertas que la landing vende desde la v1.0 y que el fichero no tenía: la única era «>40 h» con el 40 escrito dentro de la fórmula (COM-01/DOM-25)"
+  },
+  "grupo_a_parametro_descanso_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Turnos:B3 → Cuadrante Semanal:K6",
+   "M→M con el mínimo legal de 12 h": "",
+   "M→M con un convenio que exija 18 h": "⛔ <18 h",
+   "ok": true,
+   "nota": "M→M deja 16 h de descanso: cumple las 12 del art. 34.3 y no cumpliría un convenio de 18. El umbral vive en celda, no dentro de la fórmula (§1.4)"
+  },
+  "grupo_a_turnos_manda_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Turnos:C5/D5/F8 → Turnos:E → Cuadrante Semanal:I6/N6",
+   "M de fábrica (7→15, sin pausa)": {
+    "E5": 8.0,
+    "I6": 8.0,
+    "N6": ""
+   },
+   "M con la hora de FIN a las 17 (10 h > 9 del máximo)": {
+    "E5": 10.0,
+    "I6": 10.0,
+    "N6": "⛔ jornada > 9 h"
+   },
+   "M con la hora de FIN a las 13": {
+    "E5": 6.0,
+    "I6": 6.0
+   },
+   "M empezando a las 8": {
+    "E5": 7.0,
+    "I6": 7.0
+   },
+   "P de fábrica (10→23 con 4 h de pausa)": {
+    "E8": 9.0,
+    "I6": 9.0
+   },
+   "P sin pausa (13 h entre extremos)": {
+    "E8": 13.0,
+    "I6": 13.0
+   },
+   "ok": true,
+   "nota": "las horas salen de la tabla —no de los siete IF anidados de 700 caracteres de la v1.1 (DOM-05)— y la columna «Horas» sale a su vez del horario menos la pausa: mover la hora de fin recalcula el total del cuadrante Y despierta la alerta de jornada diaria (RT-02)"
+  },
+  "grupo_a_menores_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:O6 → N6/P6",
+   "mayor de edad, 5 mañanas de 8 h": {
+    "N": "",
+    "P": ""
+   },
+   "MENOR, 5 mañanas de 8 h": {
+    "N": "",
+    "P": "⚠ menor: sin horas extra (art. 6.3 ET)"
+   },
+   "MENOR con un PARTIDO de 9 h (legal para un adulto)": {
+    "N": "⛔ jornada > 8 h (MENOR)",
+    "P": "⚠ menor: sin horas extra (art. 6.3 ET)"
+   },
+   "MENOR con turno de NOCHE": {
+    "N": "",
+    "P": "⛔ MENOR: trabajo nocturno y turno doble prohibidos (art. 6 ET)"
+   },
+   "MENOR con turno DOBLE": {
+    "N": "⛔ jornada > 8 h (MENOR)",
+    "P": "⛔ MENOR: trabajo nocturno y turno doble prohibidos (art. 6 ET)"
+   },
+   "ok": true,
+   "nota": "el único aviso de minoría de edad del kit vivía en el 07 y no llegaba al 01, que es donde se comete la infracción: a un menor se le podía poner N o D sin que ninguna de las cuatro alertas dijera nada (art. 6 ET) — RD-16"
+  },
+  "grupo_a_mensual_vivo_01": {
+   "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Mensual:A6/I6/J6 y G171",
+   "nombre heredado de Cuadrante Semanal!A7": "Marta Ibáñez",
+   "M + D + D = 8 + 16 + 16": 40.0,
+   "alerta contra las 40 h contratadas": "",
+   "esa semana en el total del mes": 40.0,
+   "total del mes": 40.0,
+   "ok": true,
+   "nota": "la hoja mensual tenía 30 rótulos, CERO fórmulas, CERO validación y 28 días (DOM-17/TEC-23/COM-12)"
+  },
+  "grupo_a_horas_y_guarda_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:F5/H5",
+   "pruebas": [
+    {
+     "caso": "turno de noche 23:00 → 07:00",
+     "esperado_horas": 8.0,
+     "horas": 8.0,
+     "extra": 0,
+     "ok": true
+    },
+    {
+     "caso": "cierre 19:00 → 01:30",
+     "esperado_horas": 6.5,
+     "horas": 6.5,
+     "extra": 0,
+     "ok": true
+    },
+    {
+     "caso": "partido 10:00 → 23:00 con 4 h de pausa",
+     "esperado_horas": 9.0,
+     "horas": 9.0,
+     "extra": 1,
+     "ok": true
+    },
+    {
+     "caso": "H. contratadas VACÍA con 8 h trabajadas",
+     "horas": 8.0,
+     "extra": "",
+     "ok": true
+    },
+    {
+     "caso": "8 h trabajadas contra 6 contratadas",
+     "extra": 2,
+     "ok": true
+    },
+    {
+     "caso": "8 h trabajadas contra 8 contratadas",
+     "extra": 0,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 hacía (D5−C5)*24 y el turno de noche fichaba −16 h; y con la columna de contratadas vacía declaraba extra la jornada ENTERA — 8 h × 12 € × 1,25 = 120 € por día y empleado que el cliente no debe (DOM-03/DOM-11/DOM-21/TEC-01/TEC-09/COM-07)"
+  },
+  "grupo_a_resumen_agrega_02": {
+   "ref": "02-control-horas-extras.xlsx:Resumen Mensual:B6/C6/D6/G6",
+   "extra de Ana en el mes (2 h + 3 h)": 5.0,
+   "de las que NO computan (fuerza mayor, art. 35.2)": 3.0,
+   "computables en el tope de 80 h": 2.0,
+   "no mezcla empleados: extra de Luis (2 h)": 2.0,
+   "coste con recargo 1,25 y tarifa 12 €": 75.0,
+   "coste subiendo el recargo a 1,50": 90.0,
+   "coste subiendo la tarifa a 20 €": 125.0,
+   "ok": true,
+   "nota": "la columna B era transcripción MANUAL (COM-14) y el ×1,75 / ×2,0 estaba escrito dentro de 30 fórmulas (TEC-06); ahora los dos son celda verde"
+  },
+  "grupo_a_coste_por_tipo_02": {
+   "ref": "02-control-horas-extras.xlsx:Resumen Mensual:C6/D6/G6 (4 h extra a 12,00 € × 1,25)",
+   "Voluntaria": {
+    "total": 4.0,
+    "no_computables": 0.0,
+    "computables": 4.0,
+    "coste": 60.0
+   },
+   "Fuerza mayor (se paga; no computa en el tope)": {
+    "no_computables": 4.0,
+    "computables": 0.0,
+    "coste": 60.0
+   },
+   "Compensada con descanso (NO se paga en dinero)": {
+    "no_computables": 4.0,
+    "computables": 0.0,
+    "coste": 0.0
+   },
+   "Complementaria (contrato parcial: se paga SIN recargo)": {
+    "no_computables": 4.0,
+    "computables": 0.0,
+    "coste": 48.0
+   },
+   "ok": true,
+   "nota": "antes G se calculaba sobre B —TODAS las horas extra— y facturaba a 1,25× las COMPENSADAS CON DESCANSO, que por definición del art. 35.1 ET se pagan con tiempo y no con dinero: 4 h imputaban 60 € que nadie desembolsa y encima ya se había dado el descanso. Las de fuerza mayor SÍ se pagan (60 €) y sólo salen del tope; las complementarias del contrato parcial se pagan como ORDINARIAS, sin el 1,25 (48 €, art. 12.5 ET) — RD-02/RT-06/RD-18"
+  },
+  "grupo_a_saldo_neto_02": {
+   "ref": "02-control-horas-extras.xlsx:Resumen Mensual:H6",
+   "lunes 10 h y martes 6 h, 8 contratadas cada día": {
+    "horas extra declaradas (columna B)": 2.0,
+    "saldo NETO del mes (columna H)": 0.0
+   },
+   "dos días de 6 h contra 8 contratadas": {
+    "horas extra declaradas": 0.0,
+    "saldo NETO": -4.0
+   },
+   "ok": true,
+   "nota": "la columna «Horas extra» es exceso DIARIO con MAX(0,…): diez horas el lunes y seis el martes producen 2 h extra que no existen —la jornada se compensa dentro de la semana— y los días por debajo de lo contratado no se veían en ningún sitio. El saldo neto sale 0 en el primer caso y −4 en el segundo (RD-17)"
+  },
+  "grupo_a_avisos_registro_02": {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:F5/J5",
+   "hora tecleada como número (9 y 17)": {
+    "F": "",
+    "aviso": "⚠ escribe la hora con dos puntos: 9:00, no 9"
+   },
+   "entrada igual que salida (9:00 y 9:00)": {
+    "F": "",
+    "aviso": "⚠ entrada y salida iguales: la jornada no suma"
+   },
+   "pausa de 6 h en una jornada de 4": {
+    "F": "",
+    "aviso": "⚠ la pausa es mayor que la jornada"
+   },
+   "nombre con un espacio final que el SUMIF no encuentra": {
+    "F": 12.0,
+    "extra": 4,
+    "aviso": "⚠ ese nombre no está en el «Resumen Mensual»: sus horas no se agregan"
+   },
+   "la misma fila con el nombre correcto": {
+    "F": 12.0,
+    "aviso": ""
+   },
+   "ok": true,
+   "nota": "antes las tres primeras devolvían 0,00 h o −2,00 h en silencio y la cuarta hacía desaparecer las horas del cómputo y del coste sin un solo aviso, en el documento que hay que conservar cuatro años (art. 34.9 ET) — RD-19/RT-05/RT-09/RT-15"
+  },
+  "grupo_a_limite_80h_02": {
+   "ref": "02-control-horas-extras.xlsx:Resumen Mensual:F6 (tope en F3)",
+   "recién descargado, sin acumulado": "",
+   "acumuladas 40 h": "✓ dentro",
+   "acumuladas 70 h": "⚠ cerca del límite",
+   "acumuladas 95 h": "⛔ EXCEDE (15 h)",
+   "acumuladas 95 h con el tope subido a 120": "✓ dentro",
+   "ok": true,
+   "nota": "art. 35.2 ET: 80 h/año. El tope es celda verde porque se prorratea en los contratos parciales y en los de duración inferior al año"
+  },
+  "grupo_a_caja_y_temperaturas_bonus01": {
+   "ref": "BONUS-01-briefing-cambio-turno.xlsx:Briefing:E49/F49 (arqueo) y E56 (temperaturas)",
+   "recién descargado": {
+    "conforme": "",
+    "descuadre": "",
+    "veredicto": ""
+   },
+   "caja cuadrada (fondo 200 · contado 1650,50 · Z 1450,50)": {
+    "descuadre": 0.0,
+    "veredicto": "✓ CUADRA"
+   },
+   "FALTAN 80 € (el caso que el bloque anterior no veía)": {
+    "descuadre": -80.0,
+    "veredicto": "⛔ FALTAN 80.00 €"
+   },
+   "sobran 10 €": {
+    "descuadre": 10.0,
+    "veredicto": "⚠ SOBRAN 10.00 €"
+   },
+   "+3 € con tolerancia de 5": {
+    "descuadre": 3.0,
+    "veredicto": "✓ CUADRA"
+   },
+   "los mismos +3 € con la tolerancia bajada a 1": {
+    "veredicto": "⚠ SOBRAN 3.00 €"
+   },
+   "TOTAL de las dos cajas": {
+    "fondo": 350.0,
+    "descuadre": -70.0,
+    "veredicto": "⛔ FALTAN 70.00 €"
+   },
+   "temperaturas correctas (3 · −22 · 4 · 70 · 68)": {
+    "Cámara de refrigeración": "✓ CONFORME",
+    "Congelador": "✓ CONFORME",
+    "Expositor / vitrina FRÍA": "✓ CONFORME",
+    "Baño maría / mesa caliente": "✓ CONFORME",
+    "Buffet o vitrina CALIENTE": "✓ CONFORME"
+   },
+   "temperaturas malas (8 · −12 · 4 · 55 · 60)": {
+    "Cámara de refrigeración": "⛔ FUERA DE RANGO",
+    "Congelador": "⛔ FUERA DE RANGO",
+    "Expositor / vitrina FRÍA": "✓ CONFORME",
+    "Baño maría / mesa caliente": "⛔ FUERA DE RANGO",
+    "Buffet o vitrina CALIENTE": "⛔ FUERA DE RANGO"
+   },
+   "cámara ESCARCHADA a −5 °C y vitrina fría a −6 °C": {
+    "Cámara de refrigeración": "⛔ FUERA DE RANGO",
+    "Congelador": "✓ CONFORME",
+    "Expositor / vitrina FRÍA": "⛔ FUERA DE RANGO",
+    "Baño maría / mesa caliente": "✓ CONFORME",
+    "Buffet o vitrina CALIENTE": "✓ CONFORME"
+   },
+   "ok": true,
+   "nota": "el bloque anterior calculaba «Diferencia» = recaudación − fondo, que es la recaudación NETA: un faltante de 80 € salía exactamente igual que una caja cuadrada, y aun así se firmaba como arqueo. Y la conformidad de temperatura sólo miraba el límite SUPERIOR: una cámara escarchada a −5 °C —producto fresco congelado por accidente— salía «✓ CONFORME». Ahora hay lectura Z, descuadre con tolerancia en celda, y mínimo Y máximo por equipo, con las dos filas de mantenimiento en caliente a 65 °C que faltaban (DOM-29/RD-04/RD-22/RD-23)"
+  },
+  "grupo_b_03_coste_por_empleado": {
+   "ref": "03-coste-laboral-mensual.xlsx:Nóminas:C2/E5/F5/G5/I5",
+   "fila_vacia": {
+    "E": "",
+    "F": "",
+    "G": "",
+    "I": ""
+   },
+   "bruto_1500_x14_pagas": {
+    "prorrateado_E5": 1750.0,
+    "cotizacion_F5": 577.5,
+    "coste_total_G5": 2327.5,
+    "coste_hora_I5_con_46_5_semanas": 15.02,
+    "coste_hora_I5_con_52_semanas": 13.43
+   },
+   "mismo_bruto_en_12_pagas_E5": 1500.0,
+   "cotizacion_al_40_por_ciento_F5": 700.0,
+   "ok": true,
+   "nota": "la v1.1 hacía `=IF(C5<>\"\",C5*0.30,\"\")` sin pagas: 1.500 € en 14 pagas costaban 1.950 €/mes en vez de 2.327,50 € — un 19 % de error a favor del optimismo (DOM-08/DOM-31/TEC-14). Y el coste/hora dividía entre las 52 semanas del calendario, contando como trabajadas las de vacaciones y los festivos: 13,43 €/h en vez de 15,02 (RD-20)"
+  },
+  "grupo_b_03_semaforo_por_tipo": {
+   "ref": "03-coste-laboral-mensual.xlsx:Ratio Coste Laboral:B9/B11/B13",
+   "hoja_recien_descargada": {
+    "ratio": "",
+    "veredicto": "— introduce las VENTAS netas del mes (B4)"
+   },
+   "ventas 50.000 SIN una sola nómina (RD-01/RT-01)": {
+    "coste_B9": "0.0",
+    "ratio": "",
+    "veredicto": "— aún no hay coste: vuelca las nóminas en la hoja «Nóminas»"
+   },
+   "ratio 40 % sin tipo elegido": {
+    "ratio": 0.4,
+    "veredicto": "🔴 ACCIÓN CORRECTIVA"
+   },
+   "ratio 40 % en fine dining": {
+    "objetivo": 0.4,
+    "maximo": 0.42,
+    "veredicto": "🟡 VIGILAR (en el límite)"
+   },
+   "ratio 40 % en fast casual": {
+    "objetivo": 0.28,
+    "maximo": 0.3,
+    "veredicto": "🔴 ACCIÓN CORRECTIVA"
+   },
+   "ratio 40 % en HOTEL, que antes no existía en el 03 (RC-11)": {
+    "objetivo": 0.42,
+    "maximo": 0.44,
+    "veredicto": "🟢 EXCELENTE (por debajo de tu objetivo)"
+   },
+   "con horas extra 1.200 + ETT 800 + otros 500 (RD-21)": {
+    "coste_total_B9": 22500.0,
+    "ratio": 0.45,
+    "veredicto": "🔴 ACCIÓN CORRECTIVA"
+   },
+   "coste 2.500 sobre ventas de 50.000 = 5 % (RD-01)": {
+    "ratio": 0.05,
+    "veredicto": "⚠ ratio implausible: revisa que estén TODAS las nóminas"
+   },
+   "ok": true,
+   "nota": "la v1.1 daba «🟢 EXCELENTE (<30%)» con la hoja vacía y suspendía a cualquiera por encima del 35 %, incluida la alta cocina que su propia tabla declara correcta hasta el 42 %. Y la v2.0 seguía dando EXCELENTE en cuanto se tecleaban las ventas sin nóminas, porque la guarda sólo miraba B4 (DOM-16/COM-11/COM-17/RD-01/RT-01/RD-21/RC-11)"
+  },
+  "grupo_b_03_fte_por_servicio": {
+   "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B21",
+   "por_defecto_80_cubiertos_2_servicios_casual": {
+    "cubiertos_por_servicio_B6": 40.0,
+    "cocina_B18": 2.0,
+    "sala_C18": 2.0,
+    "barra_D18": 1.0,
+    "por_servicio_E18": 5.0,
+    "presencias_B19": 10.0,
+    "horas_semana_B20": 240.0,
+    "fte_B21": 7.0,
+    "coste_B22": 16292.5
+   },
+   "al_doblar_los_cubiertos_a_160": {
+    "fte_B21": 13,
+    "coste_B22": 30257.5
+   },
+   "abriendo_7_dias_en_vez_de_6_fte": 9,
+   "con_el_ratio_de_barra_a_cero": {
+    "barra_D18": 0,
+    "por_servicio_E18": 4
+   },
+   "ok": true,
+   "nota": "la v1.1 dividía los cubiertos del DÍA entre el ratio y daba 15 personas por turno para 80 cubiertos; y sus «días de apertura» no entraban en ninguna fórmula (DOM-09/DOM-18/TEC-15/COM-09)"
+  },
+  "grupo_b_04_progreso_onboarding": {
+   "ref": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C71",
+   "tramos": [
+    [
+     7,
+     19
+    ],
+    [
+     23,
+     30
+    ],
+    [
+     34,
+     42
+    ],
+    [
+     46,
+     57
+    ],
+    [
+     61,
+     68
+    ]
+   ],
+   "tareas": 50,
+   "recien_descargado": {
+    "completadas": 0.0,
+    "aplicables": 50.0,
+    "total": 50.0,
+    "progreso": 0.0
+   },
+   "con_2_tareas_hechas": {
+    "completadas": 2,
+    "progreso": 0.04
+   },
+   "y_1_marcada_como_no_aplicable": {
+    "aplicables": 49,
+    "progreso": 0.04081632653061224
+   },
+   "ok": true,
+   "nota": "la v1.1 barría `F7:F65` de corrido y se tragaba las 4 cabeceras de sección, que valen literalmente «✓»: abría en «4 de 51 completadas» y 8,51 % con el checklist en blanco (DOM-01/TEC-02/TEC-13/COM-03)"
+  },
+  "grupo_b_05_dias_y_saldo": {
+   "ref": "05-planificacion-vacaciones.xlsx:Saldo Vacaciones:E5/F5/H5/I5",
+   "hoja_recien_descargada": {
+    "BC6": "",
+    "A5": "",
+    "B5": "None",
+    "C5": "None",
+    "E5": "",
+    "F5": "",
+    "G5": "",
+    "H5": "",
+    "I5": ""
+   },
+   "agosto entero aprobado": {
+    "dias": 30,
+    "derecho": 30,
+    "disfrutados": 30,
+    "le_quedan": 0.0,
+    "dias_usados_calendario": 30
+   },
+   "la misma solicitud en PENDIENTE": {
+    "disfrutados": 0,
+    "pendientes": 30,
+    "le_quedan": 0.0
+   },
+   "TRES periodos de la misma persona (10 + 8 + 7 días) — RD-09": {
+    "disfrutados": 25,
+    "le_quedan": 5.0
+   },
+   "una petición en la ÚLTIMA fila (154) — RT-03": {
+    "disfrutados": 5
+   },
+   "la misma petición pero del año SIGUIENTE — RD-10": {
+    "disfrutados": 0,
+    "le_quedan": 30.0
+   },
+   "baja el 30 de junio (medio año de alta) — RD-27": {
+    "derecho": 14.9
+   },
+   "alta posterior al cierre del año — RT-08": {
+    "derecho": 0,
+    "aviso": "⚠ la fecha de alta es posterior al cierre del año"
+   },
+   "fechas al revés": "⚠ fechas invertidas",
+   "ok": true,
+   "nota": "la v1.1 tenía una celda por MES: agosto entero contaba 1 día usado y 29 restantes, y las fechas invertidas daban días NEGATIVOS que entraban en el saldo (DOM-04/DOM-20/TEC-04/COM-06). Y la v2.0 dejaba la hoja de peticiones en 30 filas para 30 personas (RD-09), sumaba las de TODOS los años (RD-10), prorrateaba sólo el alta (RD-27) y podía dar derecho negativo (RT-08)"
+  },
+  "grupo_b_05_cobertura": {
+   "ref": "05-planificacion-vacaciones.xlsx:Calendario Anual:B37:B40",
+   "hoja_recien_descargada": {
+    "ausencias": 0.0,
+    "alerta": "",
+    "semanas_sin_cubrir_B48": ""
+   },
+   "tres ausentes la semana 1 (máximo 4)": {
+    "rejilla": 3,
+    "la_mayor": 3,
+    "plantilla": 10,
+    "pico": 3,
+    "alerta": ""
+   },
+   "dos V y dos PE — el permiso ahora cuenta (RD-13)": {
+    "ausencias": 4
+   },
+   "seis ausentes en semana NORMAL (RT-11)": {
+    "alerta": "⚠ EXCESO"
+   },
+   "seis ausentes en TEMPORADA ALTA (RT-11)": {
+    "alerta": "⛔ EXCESO en TEMP. ALTA"
+   },
+   "UNA ausencia en temporada alta, con el umbral en 1 (RT-11)": {
+    "alerta": ""
+   },
+   "DOS ausencias en temporada alta (RT-11)": {
+    "alerta": "⛔ TEMP. ALTA"
+   },
+   "sin pintar nada, sólo una solicitud APROBADA (RD-12)": {
+    "rejilla": 0.0,
+    "por_solicitudes": "1",
+    "la_mayor": "1"
+   },
+   "mínimo por turno (M · T · N)": {
+    "M": 4.0,
+    "T": 5.0,
+    "N": 2.0
+   },
+   "semanas que NO cubren el turno más exigente (RD-14/RT-14)": {
+    "con 3 ausentes": "0",
+    "con 7 ausentes de 10": "1"
+   },
+   "ok": true,
+   "nota": "la hoja 'Cobertura' de la v1.1 eran dos cabeceras y cero datos (COM-20); la v2.0 la llenó pero la dejó sin conectar (RD-14/RT-14), contaba sólo V y B (RD-13), no se enteraba de las solicitudes aprobadas (RD-12) y tapaba el exceso con la temporada alta (RT-11)"
+  },
+  "grupo_c_06_ficha_y_na": {
+   "ref": "06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22/C23/C24",
+   "formula_media": "=IF(COUNT($C$12:$C$21)=0,\"\",ROUND(AVERAGE($C$12:$C$21),2))",
+   "ficha_en_blanco": {
+    "C22": "",
+    "C23": "⚠ puntúa al menos 5 competencias",
+    "C24": "0 de 10"
+   },
+   "nueve_notas_y_una_NA": {
+    "C22": "4.22",
+    "C23": "✓ BUENO",
+    "C24": "9 de 10"
+   },
+   "media_al_subir_C20_de_3_a_5": 4.44,
+   "hoja_de_ejemplo": {
+    "C22": "4.22",
+    "C23": "✓ BUENO",
+    "C24": "9 de 10"
+   },
+   "ok": true,
+   "una_sola_competencia_puntuada": {
+    "C22": "5.0",
+    "C23": "⚠ puntúa al menos 5 competencias",
+    "C24": "1 de 10"
+   },
+   "nota": "con 9 competencias puntuadas y una N/A la media son 38/9 = 4,22 (no 38/10 = 3,80): el N/A no penaliza, y el contador dice sobre cuántas se ha calculado. Y con UNA sola competencia puntuada el nivel NO se emite (RD-24): antes C12=5 y las otras nueve en blanco daban «⭐ EXCELENTE»"
+  },
+  "grupo_c_06_tendencia_dos_ultimos": {
+   "ref": "06-evaluacion-desempeno.xlsx:Histórico:G5",
+   "pruebas": [
+    {
+     "caso": "sólo Q1 = 3,0 (un dato: no hay con qué comparar)",
+     "esperado": "",
+     "obtenido": "",
+     "media_anual": 3.0,
+     "ok": true
+    },
+    {
+     "caso": "Q1 = 3,0 y Q2 = 4,0 (la v1.1 seguía en blanco)",
+     "esperado": "↑ Mejora",
+     "obtenido": "↑ Mejora",
+     "media_anual": 3.5,
+     "ok": true
+    },
+    {
+     "caso": "Q1, Q2 y Q3 = 2,0",
+     "esperado": "↓ Baja",
+     "obtenido": "↓ Baja",
+     "media_anual": 3.0,
+     "ok": true
+    },
+    {
+     "caso": "Q1, Q2, Q3 y Q4 = 2,0",
+     "esperado": "→ Estable",
+     "obtenido": "→ Estable",
+     "media_anual": 2.75,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "la comparación es INDEX sobre COUNT: el último trimestre informado contra el anterior, sin `LOOKUP(9^9;…)`"
+  },
+  "grupo_c_07_vencimientos_30x4": {
+   "ref": "07-directorio-plantilla.xlsx:Vencimientos:C36/G36/E3:E5",
+   "fila_probada": "Vencimientos!36 ← Plantilla!34 (empleado 30 de 30; la v1.1 llegaba al 15)",
+   "recien_descargado": {
+    "C36": "",
+    "G36": "",
+    "E3": "0.0",
+    "E4": "0.0",
+    "E5": "0.0"
+   },
+   "pruebas": [
+    {
+     "caso": "contrato del empleado 30 vencido hace 10 días",
+     "empieza_por": "❌",
+     "obtenido": "❌ VENCIDO hace 10 d",
+     "ok": true
+    },
+    {
+     "caso": "contrato del empleado 30 a 15 días (umbral rojo = 30)",
+     "empieza_por": "🔴",
+     "obtenido": "🔴 15 d",
+     "ok": true
+    },
+    {
+     "caso": "contrato del empleado 30 a 45 días (umbral ámbar = 60)",
+     "empieza_por": "🟡",
+     "obtenido": "🟡 45 d",
+     "ok": true
+    },
+    {
+     "caso": "contrato del empleado 30 a 200 días",
+     "empieza_por": "🟢",
+     "obtenido": "🟢 OK",
+     "ok": true
+    },
+    {
+     "caso": "carnet de manipulador del empleado 30 a 5 días",
+     "empieza_por": "🔴",
+     "obtenido": "🔴 5 d",
+     "ok": true
+    },
+    {
+     "caso": "contador de alertas en ROJO de la cabecera",
+     "empieza_por": "1 — al acabar la batería el contrato está a 200 días (verde) y sólo queda el carnet de manipulador a 5 días",
+     "obtenido": 1,
+     "ok": true
+    }
+   ],
+   "contadores_finales": {
+    "E3": 0,
+    "E4": 1,
+    "E5": 0
+   },
+   "ok": true,
+   "nota": "los dos umbrales (30 y 60 días) son celdas verdes B4 y B5, no literales dentro de las 120 fórmulas de alerta"
+  },
+  "grupo_c_07_aviso_menor_de_edad": {
+   "ref": "07-directorio-plantilla.xlsx:Plantilla:V5",
+   "sin_fecha_de_nacimiento": "",
+   "pruebas": [
+    {
+     "caso": "nacido hace 17 años",
+     "esperaba_aviso": true,
+     "obtenido": "⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)",
+     "ok": true
+    },
+    {
+     "caso": "nacido hace 19 años",
+     "esperaba_aviso": false,
+     "obtenido": "",
+     "ok": true
+    },
+    {
+     "caso": "nacido hace 34 años",
+     "esperaba_aviso": false,
+     "obtenido": "",
+     "ok": true
+    },
+    {
+     "caso": "cumple 18 MAÑANA (aún menor)",
+     "nacimiento": "25/08/2008",
+     "esperaba_aviso": true,
+     "obtenido": "⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)",
+     "ok": true
+    },
+    {
+     "caso": "cumple 18 HOY (ya mayor)",
+     "nacimiento": "24/08/2008",
+     "esperaba_aviso": false,
+     "obtenido": "",
+     "ok": true
+    },
+    {
+     "caso": "cumplió 18 AYER",
+     "nacimiento": "23/08/2008",
+     "esperaba_aviso": false,
+     "obtenido": "",
+     "ok": true
+    },
+    {
+     "caso": "hoy − 6.570 días (18 × 365: aún menor por los bisiestos)",
+     "nacimiento": "28/08/2008",
+     "esperaba_aviso": true,
+     "obtenido": "⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "la columna «Aviso» es la única calculada del directorio; con la casilla vacía se queda EN BLANCO, no en 0. La mayoría de edad se mide con DATE(YEAR+18,MONTH,DAY) y no contando 6.570 días, que apagaba el aviso hasta cinco días antes del cumpleaños (RD-15/RT-07)"
+  },
+  "grupo_c_bonus02_fte_y_ratio": {
+   "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B29 (FTE) y B41 (ratio)",
+   "pruebas": [
+    {
+     "caso": "valores por defecto (80 cubiertos, 2 servicios, casual, 6 días, 1.500 € en 14 pagas)",
+     "esperado": "7 FTE · 16.292,50 €/mes · 195.510 €/año · 52.000 € de ventas · ratio 31,3 % · 🟢",
+     "obtenido": {
+      "B24": 40.0,
+      "E26": 5.0,
+      "B27": 10.0,
+      "B28": 240.0,
+      "B29": 7.0,
+      "B38": 16292.5,
+      "B39": 195510.0,
+      "B40": 52000.0,
+      "B41": 0.3133,
+      "B43": "🟢 EXCELENTE (por debajo de tu objetivo)",
+      "B19": 25.0,
+      "C26": 2.0
+     },
+     "ok": true
+    },
+    {
+     "caso": "abrir 7 días en vez de 6 (celda B7, muerta en la v1.1)",
+     "esperado": "más horas semanales y más FTE",
+     "obtenido": {
+      "B28": 280,
+      "B29": 9
+     },
+     "ok": true
+    },
+    {
+     "caso": "abrir 4 días",
+     "esperado": "menos FTE que con 6",
+     "obtenido": {
+      "B29": 5
+     },
+     "ok": true
+    },
+    {
+     "caso": "tipo de negocio = Dark Kitchen / Delivery",
+     "esperado": "sala y barra a 0 personas (no hay sala) y el objetivo del semáforo baja a 28 %",
+     "obtenido": {
+      "B19": 40,
+      "B20": 0,
+      "B21": 0,
+      "B26": 1,
+      "C26": 0,
+      "D26": 0,
+      "E26": 1,
+      "B29": 2,
+      "D41": 0.28
+     },
+     "ok": true
+    },
+    {
+     "caso": "tipo de negocio = Fine Dining / Alta Cocina",
+     "esperado": "más plantilla que un casual y objetivo 40 %",
+     "obtenido": {
+      "B19": 12,
+      "E26": 9,
+      "B29": 13,
+      "B41": 0.5819,
+      "D41": 0.4,
+      "B43": "🔴 ACCIÓN CORRECTIVA"
+     },
+     "ok": true
+    },
+    {
+     "caso": "ticket medio de 12 € en vez de 25 €",
+     "esperado": "el ratio se dispara y el semáforo pide acción correctiva",
+     "obtenido": {
+      "B40": 24960.0,
+      "B41": 0.6527,
+      "B43": "🔴 ACCIÓN CORRECTIVA"
+     },
+     "ok": true
+    },
+    {
+     "caso": "convenio que prorratea (12 pagas en vez de 14)",
+     "esperado": "el coste baja; en la v1.1 el 14 estaba escrito dentro de `=B28*14`",
+     "obtenido": {
+      "B38": 13965.0,
+      "B39": 167580.0
+     },
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "el mismo modelo que `03!Previsión por Servicio`: cubiertos por SERVICIO → personal por servicio → presencias/día → horas/semana → FTE (`main.demo_fte` compara los dos)"
+  },
+  "grupo_c_bonus02_dia_pico": {
+   "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B32:B35",
+   "pruebas": [
+    {
+     "caso": "día pico de 120 cubiertos contra 80 de un día normal",
+     "esperado": "60 por servicio, 7 personas por servicio y 2 de refuerzo",
+     "obtenido": {
+      "B32": 60.0,
+      "E34": 7.0,
+      "B35": 2.0,
+      "E26": 5.0,
+      "B29": 7.0
+     },
+     "ok": true
+    },
+    {
+     "caso": "día pico igual que un día normal (80)",
+     "esperado": "0 de refuerzo",
+     "obtenido": 0,
+     "ok": true
+    },
+    {
+     "caso": "día pico de 200 cubiertos",
+     "esperado": "más refuerzo, y el FTE NO cambia (es personal extra de ese día)",
+     "obtenido": {
+      "B32": 100.0,
+      "E34": 11,
+      "B35": 6,
+      "B29": 7.0
+     },
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "el refuerzo es personal de ESE día y por eso no se suma al FTE: es lo que la landing vende como «picos de demanda» (COM-13)"
+  }
+ },
+ "pendiente_de_grupo": [],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-gestion-personal.bak-20260824-061235"
+}

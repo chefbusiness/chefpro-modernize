@@ -78,14 +78,14 @@ export default function HeroSection() {
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-          Kit Gestion de <span className="text-[#FFD700]">Personal y Turnos</span>
+          Kit Gestión de <span className="text-[#FFD700]">Personal y Turnos</span>
           <span className="block text-2xl md:text-4xl lg:text-5xl mt-2 text-gray-200">
-            Planifica, Controla Costes Laborales y Gestiona tu Equipo
+            Planifica, Controla Costes Laborales y Gestióna tu Equipo
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          9 plantillas Excel con formulas automaticas para gestionar turnos, horas extra, coste laboral, onboarding, vacaciones y evaluacion de tu equipo de hosteleria. Planifica como un profesional.
+          9 plantillas Excel con formulas automáticas para gestiónar turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de tu equipo de hosteleria. Planifica como un profesional.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

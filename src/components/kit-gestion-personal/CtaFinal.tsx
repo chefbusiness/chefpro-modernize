@@ -6,13 +6,13 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GESTION_PERSONAL || 
 const items = [
   'Cuadrante de turnos semanal y mensual con alertas legales',
   'Control de horas extra con calculo automatico de coste',
-  'Ratio de coste laboral mensual con semaforo',
-  'Onboarding nuevo empleado: 40+ tareas',
-  'Planificacion de vacaciones con cobertura minima',
-  'Evaluacion de desempeno: 10 competencias, scoring 1-5',
+  'Ratio de coste laboral mensual con semáforo',
+  'Onboarding nuevo empleado: 50 tareas',
+  'Planificación de vacaciones con cobertura minima',
+  'Evaluación de desempeno: 10 competencias, scoring 1-5',
   'Directorio de plantilla con vencimientos y carnets',
   'BONUS: Briefing Cambio de Turno (9 EUR)',
-  'BONUS: Calculadora Plantilla Optima (9 EUR)',
+  'BONUS: Calculadora Plantilla Óptima (9 EUR)',
 ];
 
 export default function CtaFinal() {
@@ -24,8 +24,8 @@ export default function CtaFinal() {
       <div className="absolute inset-0 bg-[#0a0a0a]/90" />
       <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,215,0,0.06) 0%, transparent 70%)' }} />
       <div className="relative max-w-3xl mx-auto text-center z-10">
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">Deja de Improvisar la Gestion de Tu Equipo</h2>
-        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">9 plantillas profesionales para gestionar personal por menos de lo que cuesta una hora de consultoria laboral.</p>
+        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">Deja de Improvisar la Gestión de Tu Equipo</h2>
+        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">9 plantillas profesionales para gestiónar personal por menos de lo que cuesta una hora de consultoria laboral.</p>
         <div className="bg-white/5 border border-[#FFD700]/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm">
           <div className="flex flex-col items-start gap-3 mb-8 max-w-md mx-auto">
             {items.map((item) => (

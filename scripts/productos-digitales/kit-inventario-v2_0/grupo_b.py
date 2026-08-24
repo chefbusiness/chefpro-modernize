@@ -1715,8 +1715,10 @@ def demos(carpeta, origen):
     la ronda 1 encontró es precisamente lógica que parecía existir y no
     existía.
     """
-    dir_demos = os.path.join(os.path.dirname(os.path.abspath(carpeta)),
-                             'demos-grupo-b')
+    dir_demos = os.path.join(
+        os.environ.get('CLAUDE_SCRATCHPAD',
+                       os.path.dirname(os.path.abspath(carpeta))),
+        'demos-grupo-b')
     if os.path.isdir(dir_demos):
         shutil.rmtree(dir_demos)
     os.makedirs(dir_demos)

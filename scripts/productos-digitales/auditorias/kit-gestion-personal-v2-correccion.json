@@ -145,7 +145,7 @@
   {
    "id": "RT-24",
    "fichero": "grupo_c.py:_n07_vencimientos",
-   "fix": "07!'Vencimientos'!B3 conserva =TODAY() (inject_cache.py es compartido) pero gana comentario en celda y nota visible bajo la tabla explicando la vista previa del móvil."
+   "fix": "07!'Vencimientos'!B3 conserva =TODAY() (inject_cache.py es compartido) y gana la nota visible bajo la tabla explicando la vista previa del móvil (sin comentario en celda: no se implementó)."
   },
   {
    "id": "RC-12",
