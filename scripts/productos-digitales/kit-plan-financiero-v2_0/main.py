@@ -37,6 +37,29 @@ ninguno y el pipeline funciona igual: el motor hace su §1 y los gráficos cuyos
 datos ya existen; los que dependen de un bloque que crea un grupo ausente se
 anotan como `pendientes_grupo` y NO cuentan como fallo.
 
+CONTRATO de `grupo_a.py` / `grupo_b.py` / `grupo_c.py` (probado con un grupo de
+prueba antes de entregar esto):
+
+    FICHEROS = ['06-....xlsx', ...]     # obligatorio: qué ficheros toca
+    PROPIOS  = [...]                    # opcional: ficheros donde el §1 del
+                                        # motor NO debe aplicarse (el grupo se
+                                        # encarga entero, incluido motor.cerrar)
+    def pre(wb, fname, cambios): ...    # opcional, antes de motor.aplicar
+    def post(wb, fname, cambios, registro): ...   # tras motor.aplicar
+    def demos(carpeta, origen, destino) -> dict   # opcional; su clave
+                                        # 'fallos' se suma al veredicto
+
+Las FÓRMULAS se escriben con `motor.f(ws, coord, formula, fmt)` —queda
+registrada y `main.py` verifica una por una que acabó con valor cacheado— o, si
+se escriben a mano, se añaden a la lista `registro` como `(hoja, coord,
+formula)`. Los valores editables, con `motor.val(..., verde_=True)`: el verde
+es lo que `motor.cerrar()` usa para decidir qué celda queda desbloqueada.
+
+Los grupos NO tienen que ocuparse de: protección, A4, bio/versión, el sufijo
+«(sin IVA)» de las etiquetas de ventas (se aplica DESPUÉS, en `motor.cerrar`,
+justo para que los grupos busquen las etiquetas tal como están hoy), la
+validación numérica de las celdas verdes ni los gráficos.
+
 Térmica: todo en SERIE, un python cada vez. No hay builds ni navegador.
 """
 import argparse
@@ -486,6 +509,11 @@ def demo_saldo_03(carpeta):
                    and formula_c5.replace('$', '').upper()
                    == '=B' + str(fila_saldo))
     xl = _pycel(copia)
+    # pycel sólo deja escribir en una celda que ya esté en su mapa: hay que
+    # EVALUAR antes lo que la referencia (aquí, la apertura de febrero y el
+    # saldo final de enero), o revienta con «not found in the cell map».
+    _ev(xl, "'Flujo Mensual'!C5")
+    _ev(xl, "'Flujo Mensual'!B" + str(fila_saldo or 25))
     xl.set_value("'Flujo Mensual'!B5", 15000)
     xl.set_value("'Flujo Mensual'!B7", 40000)
     for col in ('B8', 'B9', 'B10', 'B11'):

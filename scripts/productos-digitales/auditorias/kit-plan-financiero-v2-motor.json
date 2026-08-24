@@ -1,0 +1,794 @@
+{
+ "rol": "motor",
+ "producto": "kit-plan-financiero",
+ "version": "2.0",
+ "fecha": "2026-08-24T06:37:35",
+ "spec": "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md §1 + convenciones de cabecera + §7-bis",
+ "ficheros_codigo": [
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py"
+ ],
+ "como_ejecutar": "CLAUDE_SCRATCHPAD=<scratch> python3 scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --dry-run [--solo motor|a,b,c] --json <informe>.json  · producción SOLO con KIT_PLAN_FINANCIERO_APPLY=1",
+ "secciones_cubiertas": {
+  "1.1 graficos": "openpyxl.chart en 9 ficheros, con precondicion por gráfico; 7/9 construidos ya con --solo motor, 2 pendientes de grupo_b (02, bloque auxiliar A20:D31) y grupo_c (06, columnas numericas Benchmarks!F:G). Verificado con un grupo de prueba: al crear Benchmarks!F/G el 06 pasa de 0 a 1 grafico sin tocar el motor.",
+  "1.2 formato condicional": "semaforo() containsText + regla_expresion(); 51 reglas nuevas: 03!Alertas!D6:D17 y C6:C17 (=$C6<$C$3), 05!Ene..Dic!F6:F27 (x12), 06!Ratios!E17:E25, 07!Ratios!E4:E10, BONUS-09!Checklist!F5:F64. Purga previa por sqref: sin ella la 2.a pasada duplicaba cada regla.",
+  "1.3 guardas/proteccion/DV": "IFERROR en 11 divisiones (8 en 06!Ratios, 3 en 02!Break-Even); proteccion SIN contrasena en las 53 hojas con las celdas verdes desbloqueadas (1.706 verdes, 1.706 libres); DV numerica >=0 en importes y 0-1 en porcentajes sobre TODA celda verde, showErrorMessage=True. Tras el motor, divisiones sin guarda en TODO el kit: 0.",
+  "1.4 datos de ejemplo": "fila \"VALORES DE EJEMPLO — sustitúyelos por los tuyos\" en 02!Datos!B3, 06!Ratios!B3, BONUS-08!Simulador!A3 y 03!Flujo Mensual!A3. La RECALIBRACION numerica (§7.5) la hacen los grupos leyendo motor.EJEMPLO_CANONICO (ticket 22, 55 cubiertos/dia, 26 dias, fijos sin personal 9.500, cuota 800).",
+  "1.5 base sin IVA": "sufijo \"(sin IVA)\" en 117 etiquetas de ventas/ticket de 01, 01b, 02, 05, 06, 07 y BONUS-08 + linea de cierre en las 10 Instrucciones (en el 03, la variante que dice que ahi va CON IVA porque es caja). Se aplica en cerrar(), DESPUES de los grupos.",
+  "1.6 formatos/anchos/cabeceras": "07!'Resumen Ejecutivo'!C5:C25 creado: 17 celdas verdes con #,##0.00 € / #,##0 / fecha y freeze_panes='C5'; anchos 07!Garantias!B=45, 03!Alertas!B=26 y 8 mas.",
+  "1.7 instrucciones/bio/version": "bio anclada INSERTADA en los 10 (no la llevaba ninguno), 1 vez por fichero; linea \"Versión 2.0 · agosto 2026 · aichef.pro/kit-plan-financiero · info@aichef.pro\"; 01b!B9 y 04!B13 corregidas; subject/keywords -> v2.0 y creator = AI Chef Pro en los 10.",
+  "1.8 orden y cache de la TIR": "main.py: hojas -> graficos -> save -> inject_cache.py -> cachear_irr() -> verificacion data_only -> gate de graficos. tir_newton() reproduce el caso trazado de la SPEC al cuarto decimal."
+ },
+ "gates": {
+  "idempotencia_diferencias": 0,
+  "inject_cache": [
+   {
+    "fichero": "01-plan-financiero-previsional.xlsx",
+    "salida": "01-plan-financiero-previsional.xlsx: formulas=187 cache_inyectado=187 fallos_pycel=0"
+   },
+   {
+    "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+    "salida": "01b-plan-financiero-previsional-5-anos.xlsx: formulas=311 cache_inyectado=311 fallos_pycel=0"
+   },
+   {
+    "fichero": "02-calculadora-punto-equilibrio.xlsx",
+    "salida": "02-calculadora-punto-equilibrio.xlsx: formulas=20 cache_inyectado=20 fallos_pycel=0"
+   },
+   {
+    "fichero": "03-cash-flow-forecast.xlsx",
+    "salida": "03-cash-flow-forecast.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0"
+   },
+   {
+    "fichero": "04-presupuesto-inversion-capex.xlsx",
+    "salida": "04-presupuesto-inversion-capex.xlsx: formulas=78 cache_inyectado=78 fallos_pycel=0"
+   },
+   {
+    "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+    "salida": "05-pyl-mensual-real-vs-presupuesto.xlsx: formulas=636 cache_inyectado=636 fallos_pycel=0"
+   },
+   {
+    "fichero": "06-dashboard-ratios-financieros.xlsx",
+    "salida": "06-dashboard-ratios-financieros.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0"
+   },
+   {
+    "fichero": "07-informe-viabilidad-bancos.xlsx",
+    "salida": "07-informe-viabilidad-bancos.xlsx: formulas=3 cache_inyectado=2 fallos_pycel=1"
+   },
+   {
+    "fichero": "BONUS-08-simulador-escenarios.xlsx",
+    "salida": "BONUS-08-simulador-escenarios.xlsx: formulas=39 cache_inyectado=39 fallos_pycel=0"
+   },
+   {
+    "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+    "salida": "BONUS-09-checklist-pre-apertura.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0"
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 23,
+   "vacias_por_diseno": 0,
+   "irr_cacheada_aparte": 0,
+   "fallos": []
+  },
+  "graficos": {
+   "construidos": [
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen"
+     ]
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen"
+     ]
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Alertas"
+     ]
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen"
+     ]
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen Anual"
+     ]
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Proyecciones"
+     ]
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Comparativa"
+     ]
+    }
+   ],
+   "pendientes_grupo": [
+    "02-calculadora-punto-equilibrio.xlsx: sin gráfico — lo desbloquea grupo_b",
+    "06-dashboard-ratios-financieros.xlsx: sin gráfico — lo desbloquea grupo_c"
+   ],
+   "fallos": []
+  },
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "10 ficheros censados (10 xlsx, 0 docx, 0 pdf) en 1 productos (only=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-motor/dryrun-v2/kit-plan-financiero)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  },
+  "cachear_irr": {
+   "fichero": "07-informe-viabilidad-bancos.xlsx",
+   "flujos": [
+    -150000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "tir": null,
+   "van": -150000.0,
+   "payback": null,
+   "inyectada": true,
+   "motivo": "sin cambio de signo en los flujos: la TIR no existe (el libro se entrega con el ejemplo a 0)"
+  },
+  "exit": 0,
+  "fallos": [],
+  "prueba_con_grupo_de_prueba": {
+   "que_valida": "protocolo pre/post/demos/PROPIOS de main.py y que un grupo desbloquea su grafico; el fixture se BORRO tras la prueba",
+   "idempotencia": 0,
+   "graficos_06": [
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Ratios"
+     ]
+    }
+   ],
+   "exit": 0
+  }
+ },
+ "demostraciones": {
+  "tir_van_payback": {
+   "flujos": [
+    -150000.0,
+    30000.0,
+    45000.0,
+    60000.0,
+    70000.0
+   ],
+   "tir_newton": 0.119592,
+   "tir_pct": 11.9592,
+   "esperado_spec_pct": 11.9592,
+   "van_8pct_python": 15440.05,
+   "van_8pct_pycel": 15440.05,
+   "esperado_van_spec": 15440.05,
+   "payback_anios": 3.21,
+   "esperado_payback_spec": 3.21,
+   "pycel_con_IRR": "ERR:UnknownFunction",
+   "nota": "pycel devuelve error en IRR: por eso la TIR se cachea aparte (§1.8). El VAN sí lo evalúa y coincide con el cálculo propio."
+  },
+  "anualidad_sin_PMT": {
+   "importe": 100000,
+   "tipo_nominal": 0.05,
+   "meses": 60,
+   "cuota_algebraica": 1887.12,
+   "esperado_spec": 1887.12,
+   "misma_formula_con_PMT": "ERR:UnknownFunction",
+   "nota": "PMT revienta en pycel y su IFERROR no lo atrapa: la celda se quedaría sin caché y en blanco en Vista previa."
+  },
+  "countif_sin_COUNTA": {
+   "countif": 4,
+   "esperado": 4,
+   "counta_en_pycel": "ERR:UnknownFunction"
+  },
+  "iferror_02": {
+   "fichero": "02-calculadora-punto-equilibrio.xlsx",
+   "C9_con_26_dias": 1124.2603550295858,
+   "C9_con_0_dias": "Indica los días de apertura",
+   "C8_con_35pct_variable": 29230.76923076923,
+   "C8_con_100pct_variable": "Revisa el % de coste variable (no puede ser 100 %)",
+   "ok": true
+  },
+  "semaforo_06": {
+   "fichero": "06-dashboard-ratios-financieros.xlsx",
+   "reglas_cf_en_E17_E25": 6,
+   "estado_base": "⚠️ Aceptable",
+   "estado_con_food_cost_45pct": "🔴 Alto",
+   "cambia": true
+  },
+  "saldo_encadenado_03": {
+   "fichero": "03-cash-flow-forecast.xlsx",
+   "formula_C5": "=B22",
+   "fila_SALDO_FINAL": 25,
+   "C5_apunta_al_saldo_final": false,
+   "saldo_final_enero": 20000,
+   "apertura_febrero": 0.0,
+   "esperado": 20000,
+   "ok": false,
+   "nota": "si `ok` es False y grupo_b no está cargado, esto es el bug DOM-01 vivo, no un fallo del motor"
+  },
+  "proteccion": {
+   "hojas": [
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Año 1",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Año 2",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Año 3",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 1",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 2",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 3",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 4",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 5",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Datos",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 11,
+     "verdes_desbloqueadas": 11
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Break-Even",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Escenarios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Flujo Mensual",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 169,
+     "verdes_desbloqueadas": 169
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Alertas",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 1,
+     "verdes_desbloqueadas": 1
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Obra",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Equipamiento Cocina",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Mobiliario Sala",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 16,
+     "verdes_desbloqueadas": 16
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Tecnología",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 16,
+     "verdes_desbloqueadas": 16
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Licencias",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 18,
+     "verdes_desbloqueadas": 18
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Ene",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Feb",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Mar",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Abr",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "May",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Jun",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Jul",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Ago",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Sep",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Oct",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Nov",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Dic",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Resumen Anual",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "hoja": "Ratios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 7,
+     "verdes_desbloqueadas": 7
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "hoja": "Benchmarks",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Resumen Ejecutivo",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 17,
+     "verdes_desbloqueadas": 17
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Proyecciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 22,
+     "verdes_desbloqueadas": 22
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Ratios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 7,
+     "verdes_desbloqueadas": 7
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Garantías",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 12,
+     "verdes_desbloqueadas": 12
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "hoja": "Simulador",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 18,
+     "verdes_desbloqueadas": 18
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "hoja": "Comparativa",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+     "hoja": "Checklist",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 152,
+     "verdes_desbloqueadas": 152
+    }
+   ],
+   "fallos": [],
+   "total_hojas": 53,
+   "protegidas": 53
+  },
+  "bio_y_version": {
+   "ficheros": [
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    }
+   ],
+   "fallos": []
+  }
+ },
+ "hallazgos": [
+  {
+   "id": "MOT-01",
+   "gravedad": "media",
+   "donde": "kit-plan-financiero-v2-SPEC.md §1.1/§1.2/§1.3 (\"las 47 hojas\")",
+   "que": "el kit tiene 53 hojas, no 47: 5+7+4+3+7+14+3+5+3+2. El gate de proteccion las recorre todas y devuelve 53/53; cualquier recuento de la SPEC basado en 47 (charts, protected=False, reglas CF) esta corto en 6 hojas."
+  },
+  {
+   "id": "MOT-02",
+   "gravedad": "media",
+   "donde": "06-dashboard-ratios-financieros.xlsx:Ratios:C18 y C20",
+   "que": "§1.3 enumera SEIS divisiones desnudas en esta hoja (C17, C19, C21, C22, C23, C24) y son OCHO: C18 (=C8/C6, labor cost) y C20 (=(C6-C9)/C6, GOP) dividen por C6 igual y revientan con ventas 0. El motor les pone IFERROR tambien, por la convencion de familia \"IFERROR en toda division\". Si grupo_c reescribe C20 con el GOP nuevo, que lo haga con guarda."
+  },
+  {
+   "id": "MOT-03",
+   "gravedad": "alta",
+   "donde": "03-cash-flow-forecast.xlsx:Flujo Mensual:C5",
+   "que": "DOM-01 CONFIRMADO en vivo con pycel sobre el fichero que se descarga: C5 vale \"=B22\" (Otros pagos) y SALDO FINAL es la fila 25. Con el caso trazado de la SPEC (saldo 15.000 + cobros 40.000 - pagos 35.000) enero cierra en 20.000 y febrero ABRE EN 0,00. Es de grupo_b; queda medido en demostraciones.saldo_encadenado_03."
+  },
+  {
+   "id": "MOT-04",
+   "gravedad": "media",
+   "donde": "motor.py:sin_iva (bug propio, ya corregido)",
+   "que": "la primera version aplicaba \"(sin IVA)\" a los 9 ficheros no-03 y renombraba 04!'Mobiliario Sala'!A7 'Barra' -> 'Barra (sin IVA)': ahi Barra es un MUEBLE del CAPEX. §1.5 nombra 01, 01b, 02, 05, 06 y 07; el motor los limita a esos + BONUS-08 (copia el ticket del 02) y deja fuera el 04."
+  },
+  {
+   "id": "MOT-05",
+   "gravedad": "baja",
+   "donde": "BONUS-09-checklist-pre-apertura.xlsx:Checklist:F5",
+   "que": "la DV de lista heredada tiene showErrorMessage=False, que es justo lo que deja entrar \"completado\" o \"COMPLETADA \" y congela el avance en 0 % (DOM-26). motor.dv_lista(ws, \"F5:F64\", (\"Pendiente\",\"En curso\",\"Completada\")) lo deja bien; el cambio es de grupo_c."
+  },
+  {
+   "id": "MOT-06",
+   "gravedad": "baja",
+   "donde": "literales_sospechosos (auditor auxiliar)",
+   "que": "el auditor encuentra por su cuenta los literales que la SPEC cita: 02!Escenarios!C10:E10 (el 26), 06!Ratios!E17:E20 (0,28/0,25/0,60/0,15), 07!Proyecciones!B22 (el 0,08 del VAN) y BONUS-09!C59 (el 48). Ademas marca 05!Ene..Dic!F* (0,05 y 0,1 del semaforo), que la SPEC no pide sacar a celda: decision del orquestador."
+  },
+  {
+   "id": "MOT-07",
+   "gravedad": "baja",
+   "donde": "prompt del rol vs SPEC §1.7",
+   "que": "el encargo pedia la linea \"Versión 2.0 · agosto 2026 · aichef.pro/kit-INVENTARIO · info@aichef.pro\" (copia-pega del kit hermano). Se ha usado la de la SPEC, aichef.pro/kit-plan-financiero, que es la URL del producto."
+  }
+ ],
+ "dudas_para_el_orquestador": [
+  "§1.5 no nombra el BONUS-08 entre los ficheros que declaran \"sin IVA\", pero copia el ticket medio y la facturacion del 02. El motor SI lo marca. Si se quiere literalidad estricta, quitarlo de motor.FICHEROS_SIN_IVA.",
+  "§1.4 pide \"recalibrar\" los ejemplos del 02, 06 y BONUS-08 (§7.5). El motor solo pone el ROTULO y publica motor.EJEMPLO_CANONICO; los numeros los escriben grupo_b y grupo_c para que no haya dos manos escribiendo la misma celda. Si se prefiere que los escriba el motor, es un cambio de una funcion.",
+  "07!'Resumen Ejecutivo'!C19 'Payback estimado' queda como celda verde de texto. §4 calcula el payback en Proyecciones!B23 por formula: decidir si C19 pasa a \"=Proyecciones!$B$23\" (recomendado: es el mismo dato dos veces en el documento que se entrega al banco).",
+  "§1.2 pide la regla expression del DSCR; vive en 07!Ratios!C5, que hoy no existe. El motor deja el semaforo por texto en E4:E10 y grupo_c anade la regla numerica cuando cree la columna."
+ ],
+ "pendiente": [
+  "grupo_a.py, grupo_b.py y grupo_c.py (§2, §3, §4): main.py ya los carga si aparecen.",
+  "Con grupo_b: el grafico del 02 necesita el bloque auxiliar Break-Even!A20:D31.",
+  "Con grupo_c: el grafico del 06 necesita Benchmarks!F4 numerico (columnas \"optimo hasta\" / \"peligro desde\").",
+  "La TIR real solo se puede cachear cuando grupo_c encadene Proyecciones!B19:F19; hoy los flujos son -150.000/0/0/0/0 y cachear_irr() inyecta el \"—\" honesto de la propia formula.",
+  "Integracion (§5): landing, dashboard, changelog y emails — otro rol."
+ ]
+}

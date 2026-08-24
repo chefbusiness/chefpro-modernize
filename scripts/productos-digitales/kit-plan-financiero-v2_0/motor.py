@@ -767,6 +767,30 @@ RX_VENTAS = re.compile(
     r'Comedor|Barra|Delivery|Eventos)', re.I)
 SIN_IVA = ' (sin IVA)'
 
+# §1.5 nombra exactamente estos ficheros: 01, 01b, 02, 05, 06 y 07. Se añade el
+# BONUS-08 porque copia el ticket medio y la facturación del 02 —dejarlo sin
+# marcar reproduce en él la incoherencia que el §1.5 viene a cerrar—, y se deja
+# FUERA el 04: es un CAPEX, sus importes se desglosan con las columnas Base /
+# IVA / Total del §3, y ahí «Barra» es un mueble de sala, no una línea de
+# ingreso (la primera versión de esta función le puso «(sin IVA)» a
+# `04!'Mobiliario Sala'!A7`, que es una barra de bar).
+FICHEROS_SIN_IVA = (
+    '01-plan-financiero-previsional.xlsx',
+    '01b-plan-financiero-previsional-5-anos.xlsx',
+    '02-calculadora-punto-equilibrio.xlsx',
+    '05-pyl-mensual-real-vs-presupuesto.xlsx',
+    '06-dashboard-ratios-financieros.xlsx',
+    '07-informe-viabilidad-bancos.xlsx',
+    'BONUS-08-simulador-escenarios.xlsx',
+)
+
+
+def _con_sin_iva(etiqueta):
+    """«Ticket medio (€)» → «Ticket medio (€, sin IVA)», no «(€) (sin IVA)»."""
+    if etiqueta.endswith(')'):
+        return etiqueta[:-1] + ', sin IVA)'
+    return etiqueta + SIN_IVA
+
 
 def sin_iva(wb, fname, informe):
     """«(sin IVA)» en las etiquetas de ventas y de ticket (§1.5/DOM-17).
@@ -774,8 +798,12 @@ def sin_iva(wb, fname, informe):
     El error número uno del sector: con el 10 % de restauración, un food cost
     calculado sobre ventas CON IVA sale ~3 puntos por debajo del real. El 03 ya
     lo aclaraba («IVA incl.»), así que el kit se contradecía consigo mismo.
+
+    Se ejecuta en `cerrar()`, DESPUÉS de los grupos: así los grupos buscan sus
+    etiquetas tal y como estaban («Facturación», «Ticket medio») sin tener que
+    saber nada de este sufijo, y las filas que ELLOS creen también lo reciben.
     """
-    if fname == FICHERO_CAJA:
+    if fname not in FICHEROS_SIN_IVA:
         return 0
     tocadas = 0
     for ws in wb.worksheets:
@@ -795,7 +823,7 @@ def sin_iva(wb, fname, informe):
                     rgb = cel.fill.fgColor.rgb
                     if isinstance(rgb, str) and rgb.upper().endswith(CAB):
                         continue
-                cel.value = v + SIN_IVA
+                cel.value = _con_sin_iva(v)
                 tocadas += 1
     if tocadas:
         informe.append(fname + ': ' + str(tocadas)
@@ -813,7 +841,14 @@ GUARDAS = {
     '06-dashboard-ratios-financieros.xlsx': {
         'Ratios': {
             'C17': 'Indica las ventas',
+            # §1.3 enumera SEIS divisiones desnudas en esta hoja (C17, C19,
+            # C21, C22, C23, C24), pero son OCHO: `C18` (labor cost) y `C20`
+            # (GOP) dividen por `C6` exactamente igual y revientan con ventas
+            # a 0. La convención de familia manda —«IFERROR en toda
+            # división»— así que van también.
+            'C18': 'Indica las ventas',
             'C19': 'Indica las ventas',
+            'C20': 'Indica las ventas',
             'C21': 'Indica los cubiertos',
             'C22': 'Indica plazas y horas',
             'C23': 'Indica los cubiertos',
@@ -1503,7 +1538,6 @@ def aplicar(wb, fname, informe):
     """§1 transversal ANTES del trabajo de los grupos."""
     metadatos(wb, fname)
     instrucciones(wb, fname, informe)
-    sin_iva(wb, fname, informe)
     guardas(wb, fname, informe)
     formatos(wb, fname, informe)
     ejemplos(wb, fname, informe)
@@ -1517,6 +1551,7 @@ def cerrar(wb, fname, informe, proteger_hojas=True):
     Va DESPUÉS de los grupos: si se protegiera antes, cada celda que un grupo
     creara después nacería bloqueada aunque fuese verde.
     """
+    sin_iva(wb, fname, informe)
     semaforos(wb, fname, informe)
     for ws in wb.worksheets:
         for row in ws.iter_rows():
