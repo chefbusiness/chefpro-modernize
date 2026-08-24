@@ -769,9 +769,21 @@ def demo_leyenda(carpeta):
         if hoja not in wb.sheetnames:
             continue
         ws = wb[hoja]
+        # RD-16 · sólo las DV de la REJILLA de códigos. Al 01 le entra una DV
+        # nueva de «S,N» en la columna O (menor de edad), que no es una lista
+        # de códigos de turno: contarla dejaba el gate en rojo por una casilla
+        # con la que no tiene nada que ver.
+        rejilla = set()
+        for e in motor.DV_CODIGOS.get(fname, []):
+            c0 = openpyxl.utils.column_index_from_string(e[1])
+            c1 = (openpyxl.utils.column_index_from_string(e[2]) if e[2]
+                  else ws.max_column)
+            rejilla |= set(range(c0, c1 + 1))
         listas = [str(dv.formula1) for dv in ws.data_validations.dataValidation
                   if isinstance(getattr(dv, 'formula1', None), str)
-                  and dv.formula1.startswith('"')]
+                  and dv.formula1.startswith('"')
+                  and (not rejilla
+                       or motor._columnas_de_sqref(dv.sqref) & rejilla)]
         leyenda = [ws.cell(row=3, column=c).value
                    for c in range(2, ws.max_column + 1)
                    if isinstance(ws.cell(row=3, column=c).value, str)]
