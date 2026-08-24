@@ -1,13 +1,13 @@
 {
-  "rol": "ronda2",
+  "rol": "ronda2-verificador",
   "producto": "kit-plan-financiero",
   "version": "2.0",
-  "fecha": "2026-08-24T07:20:00",
+  "fecha": "2026-08-24T08:10:00",
+  "reejecucion_de": "kit-plan-financiero-v2-ronda2.json (fecha previa 2026-08-24T07:20:00) — esta pasada verifica de forma INDEPENDIENTE (dry-run propio, lectura directa de xlsx, transpileModule propio) las mismas conclusiones y confirma que la situación no cambió entre una pasada y otra.",
   "bloqueo_de_entrada": {
-    "que": "No se puede ejecutar la Ronda 2 tal como está encargada: no existen los 3 ref-*.json de los refutadores ni kit-plan-financiero-v2-correccion.json — ni en scripts/productos-digitales/auditorias/ ni en ningún worktree. Tampoco existen scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py, grupo_b.py ni grupo_c.py: la única fase que ha corrido de verdad es 'Motor' (kit-plan-financiero-v2-motor.json, 2026-08-24T06:37:35, commits 13a7fc4/3b8a997).",
-    "contraste_con_hermanos": "kit-inventario y kit-gestion-personal SÍ tienen en auditorias/ el set completo (motor, grupo_a/b/c, ref-dominio/excel/coherencia, correccion, critico, ronda2, real). kit-plan-financiero solo tiene R1 y motor.",
-    "verificado_con": "find + ls -la sobre scripts/productos-digitales/{kit-plan-financiero-v2_0,auditorias}/, git log --oneline sobre esas rutas, ps aux (solo hay un cron de auto-commit cada 15 min, ningún main.py corriendo)",
-    "decision": "Ante la ausencia del insumo, NO invento ids ni hallazgos de refutadores que nunca se generaron. En su lugar: (1) regenero la copia dry-run con lo que SÍ existe (--solo motor, único --solo válido hoy) para tener gates reales, y (2) abro el kit como cliente recién pagado sobre esa copia — y ahí SÍ aparece un problema grave y verificable: la fase de Integración (que edita landing/dashboard/changelog) corrió igualmente y ya describe funcionalidades de grupo_b/grupo_c que la copia real todavía no tiene."
+    "que": "Sigue sin poder ejecutarse la Ronda 2 tal como está encargada: no existen los 3 ref-*.json de los refutadores (dominio/excel/coherencia) ni kit-plan-financiero-v2-correccion.json, ni en scripts/productos-digitales/auditorias/ ni en ningún worktree (.claude/worktrees/**). Tampoco existen grupo_a.py, grupo_b.py ni grupo_c.py en scripts/productos-digitales/kit-plan-financiero-v2_0/ (solo motor.py y main.py). La única fase que ha corrido de verdad sigue siendo 'Motor' (kit-plan-financiero-v2-motor.json, 2026-08-24T06:37:35).",
+    "verificado_con": "find/ls -la sobre scripts/productos-digitales/{kit-plan-financiero-v2_0,auditorias}/ y .claude/worktrees/**, git log --oneline sobre esas rutas (último commit real: b274fff, auto-commit periódico — no hay commit de grupo_a/b/c ni de refutadores), ps aux sin ningún main.py en ejecución",
+    "decision": "Mismo criterio que la pasada anterior: no se inventan ids de refutadores que no existen. Se regenera copia dry-run PROPIA (--solo motor) para gates independientes y se repite la revisión 'cliente recién pagado' sobre esa copia y sobre los 13 ficheros de código sin commitear."
   },
   "ids_entrada": 0,
   "verificados_ok": 0,
@@ -21,55 +21,55 @@
     "ts_diagnosticos": 0
   },
   "gates_detalle": {
-    "dryrun": "CLAUDE_SCRATCHPAD=.../propio-ronda2 python3 scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --dry-run --solo motor --json .../kit-pf-v2/ronda2-motor.json → exit 0, 'TODO VERDE' (idempotencia, cache, TIR, gráficos, censo, demos), 2 pendientes de grupo esperados y declarados como tal.",
-    "idempotencia": "diferencias 1.ª vs 2.ª pasada: 0",
-    "censo": "censo-entregables.py --only kit-plan-financiero --fail → 10 xlsx censados, 'OK: 0 defectos'",
-    "cache_fallos": "inject_cache: 9/10 ficheros con fallos_pycel=0; 07-informe-viabilidad-bancos.xlsx trae 1 fallo_pycel (la función IRR, que pycel no implementa) — es el mismo fallo que ya documenta motor.json §1.8 como esperado/honesto (TIR se cachea aparte con Newton propio), no un defecto nuevo.",
-    "ts_diagnosticos": "typescript.transpileModule sobre los 13 ficheros que la Integración dejó modificados (git status): astro-site/.../kit-plan-financiero.ts, netlify/functions/{resend-access,verify-purchase}.ts, src/components/kit-plan-financiero/{BonusSection,ContentGrid,FaqAccordion,HeroSection,WhySection}.tsx, src/data/{productos-changelog,productos-digitales-config}.ts, src/pages/{KitPlanFinanciero,KitPlanFinancieroDashboard,ProductosDigitales}.tsx → 0 errores de sintaxis en los 13."
+    "dryrun": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-verificador-r2 python3 scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --dry-run --solo motor --json .../kit-pf-v2/ronda2-verif.json → exit 0, 'TODO VERDE' (idempotencia, cache, TIR, gráficos, censo, demos), con los mismos 2 pendientes de grupo declarados (02 y 06 sin gráfico).",
+    "idempotencia": "diferencias 1.ª vs 2.ª pasada sobre clon: 0 (línea '== 2/8 · idempotencia ==' del log propio)",
+    "censo": "censo-entregables --fail sobre la copia propia → '10 ficheros censados (10 xlsx, 0 docx, 0 pdf)' · 'OK: 0 defectos'",
+    "cache_fallos": "inject_cache: 9/10 ficheros con fallos_pycel=0; 07-informe-viabilidad-bancos.xlsx trae 1 fallo_pycel — es la fórmula IRR (B21), que pycel no implementa; motor.json §1.8 y cachear_irr() ya lo tratan como esperado/honesto (TIR se cacha aparte por Newton-Raphson). No es un defecto nuevo, verificado leyendo el propio B21: '=IFERROR(IRR(B19:F19),\"N/A\")' con flujos [-150000,0,0,0,0] → sin cambio de signo, TIR no existe, cachea '—'.",
+    "ts_diagnosticos": "ts.transpileModule (TypeScript del propio node_modules, reportDiagnostics:true, jsx:React solo en .tsx) corrido a mano sobre los 13 ficheros que 'git status' marca modificados: astro-site/src/data/productos/kits/kit-plan-financiero.ts, netlify/functions/{resend-access,verify-purchase}.ts, src/components/kit-plan-financiero/{BonusSection,ContentGrid,FaqAccordion,HeroSection,WhySection}.tsx, src/data/{productos-changelog,productos-digitales-config}.ts, src/pages/{KitPlanFinanciero,KitPlanFinancieroDashboard,ProductosDigitales}.tsx → 0 errores en los 13 (13/13 'errors: 0')."
   },
+  "verificacion_regla_dura_1": "git status --short astro-site/public/dl/kit-plan-financiero/ → vacío (sin cambios); los 10 xlsx publicados siguen fechados 2026-08-22 11:11 (v1.1). Confirmado que no se ha tocado ese directorio en ninguna fase, ni en esta verificación.",
   "hallazgos_nuevos": [
     {
       "severidad": "alta",
-      "donde": "src/data/productos-changelog.ts (entrada 'kit-plan-financiero' v2.0) + src/pages/KitPlanFinancieroDashboard.tsx:22 ('viabilidad') vs 07-informe-viabilidad-bancos.xlsx real",
-      "hallazgo": "El changelog anuncia 'Nueva hoja Financiación en el informe bancario: cuadro de amortización del préstamo... y el ratio DSCR... calculado contra esa cuota' y el dashboard dice 'TIR, VAN, payback y DSCR con cuadro de amortizacion'. Verificado en la copia dry-run (wb.sheetnames de 07-informe-viabilidad-bancos.xlsx): ['Instrucciones', 'Resumen Ejecutivo', 'Proyecciones', 'Ratios', 'Garantías'] — NO existe hoja 'Financiación'. Ratios!C5 ('Cobertura de deuda (DSCR)', columna Valor) está VACÍA, sin fórmula. Es contenido de grupo_c (§4 SPEC), que nunca se construyó."
+      "donde": "src/data/productos-changelog.ts (entrada v2.0, líneas 1-3 del bloque de cambios) + src/pages/KitPlanFinancieroDashboard.tsx:22 vs 07-informe-viabilidad-bancos.xlsx:Proyecciones y Ratios",
+      "hallazgo": "El changelog anuncia P&L bancario calculado por fórmula, 'TIR, VAN y payback period calculados de verdad' y una hoja nueva 'Financiación' con cuadro de amortización y DSCR. Verificado en copia dry-run propia (openpyxl, data_only=False): 07 solo tiene 5 hojas (Instrucciones, Resumen Ejecutivo, Proyecciones, Ratios, Garantías) — 'Financiación' no existe; Proyecciones!B21 = '=IFERROR(IRR(B19:F19),\"N/A\")' con flujos -150000/0/0/0/0 (sin cambio de signo, TIR inexistente, cachea '—'); Proyecciones!B23 (payback) está vacía; Ratios!C5 ('Cobertura de deuda (DSCR)', columna Valor) está vacía sin fórmula. Es contenido de grupo_c (§4 SPEC), inexistente."
     },
     {
       "severidad": "alta",
-      "donde": "src/data/productos-changelog.ts (entrada v2.0) vs 07-informe-viabilidad-bancos.xlsx:Proyecciones:B4:F23 y B21",
-      "hallazgo": "El changelog dice 'TIR, VAN y payback period calculados de verdad a partir de tus flujos de caja proyectados... antes las fórmulas apuntaban a una fila vacía'. Verificado data_only en la copia dry-run: Proyecciones!B4:F14 (Facturación, Food Cost, Personal, EBITDA, BAI, Beneficio Neto...) son literalmente 0 en las 5 columnas de año; Proyecciones!B21 (TIR) cachea '—' (motor.json lo documenta: 'sin cambio de signo en los flujos, la TIR no existe'); Proyecciones!B23 (Payback) está vacía. El P&L por fórmula y el encadenado de flujos es alcance de grupo_c, que no se ha construido: la afirmación describe el resultado ESPERADO de una fase futura, no el estado actual del fichero que hoy se serviría."
+      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea 4) vs 03-cash-flow-forecast.xlsx:Flujo Mensual:C5",
+      "hallazgo": "El changelog dice que el saldo mensual 'ya encadena con el saldo final real del mes anterior — antes leía una fila equivocada'. Verificado directamente (openpyxl, data_only=False) sobre la copia dry-run: C5 sigue siendo '=B22' (fila 'Otros pagos'), no '=B25' (fila 'SALDO FINAL', fórmula real '=B5+B24'). El bug DOM-01/MOT-03 que el propio motor.json marca como 'gravedad alta, CONFIRMADO en vivo con pycel' y deja para grupo_b sigue reproduciéndose byte a byte; el changelog lo anuncia como ya corregido."
     },
     {
       "severidad": "alta",
-      "donde": "src/data/productos-changelog.ts (entrada v2.0) vs 03-cash-flow-forecast.xlsx:Flujo Mensual:C5",
-      "hallazgo": "El changelog dice 'Cash Flow Forecast: el saldo de cada mes ya encadena con el saldo final real del mes anterior — antes leía una fila equivocada y generaba alertas de liquidez falsas en once de los doce meses'. Verificado en la copia dry-run: C5 sigue siendo '=B22' (fila 'Otros pagos', valor 0), NO apunta a la fila 25 ('SALDO FINAL', fórmula '=B5+B24'). Es el bug que el propio motor.json marca como 'MOT-03, gravedad alta, DOM-01 CONFIRMADO en vivo con pycel' y deja explícitamente para grupo_b ('queda medido en demostraciones.saldo_encadenado_03', 'ok': false). El changelog anuncia como YA CORREGIDO un bug que sigue reproduciéndose en la copia dry-run de hoy."
+      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea 5) vs 03-cash-flow-forecast.xlsx.sheetnames",
+      "hallazgo": "El changelog anuncia una hoja nueva 'Parámetros' en el Cash Flow (desfase de cobro, plazo de pago, IVA trimestral). Verificado: 03-cash-flow-forecast.xlsx tiene solo 3 hojas (Instrucciones, Flujo Mensual, Alertas). Alcance de grupo_b (§3 SPEC), no construido."
     },
     {
       "severidad": "alta",
-      "donde": "src/data/productos-changelog.ts (entrada v2.0) vs 03-cash-flow-forecast.xlsx.sheetnames",
-      "hallazgo": "El changelog anuncia 'Nueva hoja Parámetros en el Cash Flow: desfase de cobro con tarjeta, plazo de pago a proveedores e IVA trimestral con el calendario real de Hacienda'. Verificado: 03-cash-flow-forecast.xlsx tiene solo 3 hojas (Instrucciones, Flujo Mensual, Alertas) — no existe 'Parámetros'. Alcance de grupo_b (§3 SPEC), no construido."
+      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea de CAPEX) vs 04-presupuesto-inversion-capex.xlsx.sheetnames",
+      "hallazgo": "El changelog promete en 04 'IVA y coeficiente de amortización por partida, con totales con y sin IVA, y nueva hoja \"Otros conceptos de apertura\"'. Verificado: 04 tiene las mismas 7 hojas de siempre (Instrucciones, Obra, Equipamiento Cocina, Mobiliario Sala, Tecnología, Licencias, Resumen); no existe 'Otros conceptos de apertura'. Alcance de grupo_a/b, no construido."
+    },
+    {
+      "severidad": "alta",
+      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea de Break-Even) vs 02-calculadora-punto-equilibrio.xlsx:Datos",
+      "hallazgo": "El changelog dice que la Calculadora de Punto de Equilibrio queda 'conectada a los datos reales del resto del kit (antes tenía sus propias cifras escritas aparte)'. Verificado: 02!Datos!C6:C13 sigue con los mismos valores tecleados sueltos (alquiler 3000, nóminas 12000, seguros 400...) sin una sola referencia a otra hoja del kit. No hay cambio respecto al estado que el propio changelog describe como 'antes'."
     },
     {
       "severidad": "media",
-      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea final del bloque de cambios) vs motor.json.gates.graficos",
-      "hallazgo": "El changelog dice 'Gráficos automáticos en 9 de los 10 ficheros'. En el estado actual (solo motor) son 7/10 con gráfico ya insertado; 02-calculadora-punto-equilibrio.xlsx y 06-dashboard-ratios-financieros.xlsx siguen 'pendientes de grupo' (motor.json líneas 124-127). Si la cifra 9/10 es la meta final tras grupo_b/grupo_c, no lo dice el changelog — se lee como estado actual y hoy no lo es."
-    },
-    {
-      "severidad": "media",
-      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea de checklist) vs BONUS-09-checklist-pre-apertura.xlsx",
-      "hallazgo": "A diferencia de los 4 hallazgos anteriores, esta cifra SÍ está verificada y es correcta: la copia dry-run trae 54 tareas con texto en Checklist!B5:B58 (contadas con openpyxl), coincide con 'crece de 48 a 54 tareas' del changelog y con 'Checklist Pre-Apertura: 54 items en 7 fases' del dashboard. Se deja constancia para que quede claro que no todo lo que tocó Integración es falso — el patrón del hallazgo es específicamente 'promete lo que construye grupo_b/grupo_c', no 'todo el diff es inventado'."
+      "donde": "src/data/productos-changelog.ts (entrada v2.0, línea de gráficos) vs gate de gráficos de la copia dry-run propia",
+      "hallazgo": "El changelog dice 'Gráficos automáticos en 9 de los 10 ficheros'. El estado real hoy (solo motor cargado) es 7/10 con gráfico insertado; 02-calculadora-punto-equilibrio.xlsx y 06-dashboard-ratios-financieros.xlsx siguen sin ninguno ('PENDIENTE ... lo desbloquea grupo_b/grupo_c' en el propio log del dry-run). Si 9/10 es la meta tras grupo_b/c, el changelog no lo aclara y se lee como estado actual."
     },
     {
       "severidad": "alta",
-      "donde": "proceso — no hay fichero:línea único",
-      "hallazgo": "La fase 'Integración' del workflow (kit-plan-financiero-v2-workflow.js) SÍ corrió y dejó sin commitear 13 ficheros (git status: landing .ts, 5 componentes .tsx, dashboard, changelog, config de productos, resend-access.ts, verify-purchase.ts, ProductosDigitales.tsx) redactados como si grupo_a/b/c YA hubieran corrido. Pero 'Refutar' (3 lentes), 'Corregir' y esta misma 'Ronda 2' nunca llegaron a ejecutarse con esos insumos. Si el orquestador aplicase (KIT_PLAN_FINANCIERO_APPLY=1) o commiteara el estado actual del repo, el cliente recibiría un Excel con el bug de caja vivo (C5) y cifras bancarias en cero, mientras la landing y el email post-compra afirman que están arreglados. Es el escenario exacto que el lente 'coherencia comercial' (RC) del workflow existe para cazar, y no ha corrido."
+      "donde": "proceso — kit-plan-financiero-v2-workflow.js; sin fichero:línea único",
+      "hallazgo": "La fase 'Integración' del workflow ya dejó sin commitear 13 ficheros de código (landing, 5 componentes, dashboard, changelog, config de productos, 2 funciones Netlify, ProductosDigitales.tsx) redactados como si grupo_a/b/c hubieran corrido, pero Refutar (3 lentes), Corregir y esta Ronda 2 nunca han tenido esos insumos que verificar. Confirmado de nuevo en esta pasada: git status sigue mostrando los mismos 13 ficheros modificados, sin avance desde la verificación anterior (07:20). Si se aplicara (KIT_PLAN_FINANCIERO_APPLY=1) o se commiteara tal cual, el comprador recibiría el Excel v1.1 real (astro-site/public/dl/ intacto, confirmado en verificacion_regla_dura_1) con el bug de caja vivo y las cifras bancarias en cero, mientras landing/changelog/dashboard afirman que ya está arreglado."
     }
   ],
   "listo": false,
   "fichero_json": "scripts/productos-digitales/auditorias/kit-plan-financiero-v2-ronda2.json",
   "recomendacion_al_orquestador": [
-    "NO aplicar (KIT_PLAN_FINANCIERO_APPLY=1) ni commitear el estado actual: astro-site/public/dl/kit-plan-financiero/** no se ha tocado (verificado, git status limpio ahí), pero los 13 ficheros de Integración sí están modificados y hoy son publicidad engañosa de un producto que no existe todavía.",
-    "Retomar el pipeline en el punto real donde está: falta correr grupo_a.py/grupo_b.py/grupo_c.py (§2/§3/§4 de la SPEC) — hoy no existen en scripts/productos-digitales/kit-plan-financiero-v2_0/ — y SOLO DESPUÉS validar si el diff de Integración que ya existe sigue siendo cierto o hay que regenerarlo.",
-    "Cuando grupo_b y grupo_c existan: repetir Refutar (3 lentes → ref-dominio/excel/coherencia.json), Corregir (→ correccion.json) y esta Ronda 2 de verdad, con ids reales que verificar uno a uno.",
-    "El lente 'coherencia' (RC) del refutador, cuando corra, debería encontrar los mismos 4 hallazgos altos de este informe si Integración no se regenera antes: son el mismo patrón (landing/changelog por delante de lo que el Excel realmente tiene)."
+    "Situación sin cambios desde la pasada anterior (07:20 → 08:10): NO aplicar ni commitear el estado actual. astro-site/public/dl/kit-plan-financiero/** sigue intacto (verificado de nuevo), pero los 13 ficheros de Integración describen un producto que el Excel real todavía no es.",
+    "Construir grupo_a.py/grupo_b.py/grupo_c.py (§2/§3/§4 SPEC) — hoy no existen — antes de poder generar ref-dominio/excel/coherencia.json y kit-plan-financiero-v2-correccion.json con ids reales que esta Ronda 2 pueda verificar uno a uno.",
+    "Cuando ambos existan, revalidar si el diff de Integración que ya está escrito sigue describiendo bien el resultado final o hay que regenerarlo — varias de sus líneas (02 conectado, gráficos 9/10, hojas nuevas en 03/04/07) solo serán ciertas si grupo_b Y grupo_c terminan exactamente lo que prometen."
   ]
 }
