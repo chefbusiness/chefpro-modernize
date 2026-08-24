@@ -53,8 +53,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     price: '€14',
     name: { es: 'Kit Gestión de Personal y Turnos', en: 'Staff Scheduling & Management Kit' },
     description: {
-      es: 'Cuadrantes, control de horas, ratios de productividad.',
-      en: 'Schedules, hour tracking, and productivity ratios.',
+      // COM-22/RC-05/RD-25 · decía «ratios de productividad», que no existen
+      // en ninguno de los 9 ficheros del kit: lo más cercano son los
+      // cubiertos por empleado y servicio del BONUS-02, que son un ratio de
+      // DIMENSIONAMIENTO y viven en el bonus. Y se omitían onboarding,
+      // vacaciones y evaluación, que sí están. Este texto se sirve en producción (UseCasePageContent
+      // y PSeoCityPageContent vía getProductsByIds).
+      es: 'Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.',
+      en: 'Shift schedules, overtime, labor cost, onboarding, holidays, and team performance reviews.',
     },
   },
   'kit-inventario': {

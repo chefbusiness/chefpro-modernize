@@ -5,11 +5,11 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Incluye registro horario digital?',
-    a: 'No. El registro/fichaje horario digital requiere un software homologado (obligatoria en Espana desde 2026). Este kit es para PLANIFICACION de turnos, control de costes laborales, onboarding y gestion de equipo. Es el complemento perfecto a cualquier software de fichaje.',
+    a: 'No. El registro de jornada es obligatorio en España desde el 12-05-2019 (RD-ley 8/2019, art. 34.9 ET), y no tenerlo implantado es infracción grave: de 751 a 7.500 EUR por centro de trabajo (art. 7.5 LISOS). Este kit no es ese sistema de fichaje: es para PLANIFICACIÓN de turnos, control de costes laborales, onboarding y gestión de equipo. Es el complemento perfecto a cualquier software de registro de jornada.',
   },
   {
     q: '¿Las formulas calculan horas extra automaticamente?',
-    a: 'Si. La plantilla de control de horas extra calcula automaticamente el coste de cada hora extra segun el porcentaje de tu convenio colectivo. Solo introduces las horas trabajadas y el sistema hace el resto.',
+    a: 'Sí. La plantilla de control de horas extra calcula automáticamente el coste de cada hora extra según el recargo de tu convenio colectivo (una celda editable, 1,25x por defecto). Solo introduces las horas trabajadas y el sistema hace el resto.',
   },
   {
     q: '¿Sirve para cualquier tipo de restaurante?',

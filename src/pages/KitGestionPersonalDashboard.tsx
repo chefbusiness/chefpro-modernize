@@ -12,15 +12,15 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 const TEMPLATES = [
-  { key: 'cuadrante', icon: CalendarDays, title: 'Cuadrante de Turnos', desc: 'Semanal y mensual con alertas de cumplimiento legal.' },
-  { key: 'horas-extra', icon: Clock, title: 'Control de Horas Extra', desc: 'Registro y calculo automatico de coste segun convenio.' },
-  { key: 'coste-laboral', icon: Euro, title: 'Coste Laboral Mensual', desc: 'Ratio coste/ventas con semaforo y prevision.' },
-  { key: 'onboarding', icon: UserPlus, title: 'Onboarding Nuevo Empleado', desc: '40+ tareas: documentacion, formacion, equipamiento.' },
-  { key: 'vacaciones', icon: Palmtree, title: 'Planificacion Vacaciones', desc: 'Calendario anual, solicitudes y cobertura minima.' },
-  { key: 'evaluacion', icon: Star, title: 'Evaluacion de Desempeno', desc: '10 competencias, scoring 1-5, historico trimestral.' },
-  { key: 'directorio', icon: Users, title: 'Directorio de Plantilla', desc: 'Base de datos, vencimientos contratos, carnets.' },
-  { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Cambio de Turno', desc: 'Traspaso de informacion entre turnos.' },
-  { key: 'bonus-calculadora', icon: Calculator, title: 'BONUS: Calculadora Plantilla Optima', desc: 'Cuantos empleados necesitas segun covers.' },
+  { key: 'cuadrante', icon: CalendarDays, title: 'Cuadrante de Turnos', desc: 'Semanal y mensual con las 4 alertas legales: descansos y jornada máxima.' },
+  { key: 'horas-extra', icon: Clock, title: 'Control de Horas Extra', desc: 'Registro y cálculo automático de coste según tu convenio (recargo editable).' },
+  { key: 'coste-laboral', icon: Euro, title: 'Coste Laboral Mensual', desc: 'Ratio coste/ventas con semáforo por tipo de negocio y previsión por servicio.' },
+  { key: 'onboarding', icon: UserPlus, title: 'Onboarding Nuevo Empleado', desc: '50 tareas: documentación, formación, equipamiento.' },
+  { key: 'vacaciones', icon: Palmtree, title: 'Planificación Vacaciones', desc: 'Calendario anual por semanas, solicitudes y cobertura mínima.' },
+  { key: 'evaluacion', icon: Star, title: 'Evaluación de Desempeño', desc: '10 competencias, scoring 1-5, histórico trimestral.' },
+  { key: 'directorio', icon: Users, title: 'Directorio de Plantilla', desc: 'Base de datos, convenio, vencimientos de contrato y carnets.' },
+  { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Cambio de Turno', desc: 'Traspaso entre turnos + arqueo de caja con lectura Z y temperaturas al relevo (APPCC).' },
+  { key: 'bonus-calculadora', icon: Calculator, title: 'BONUS: Calculadora Plantilla Óptima', desc: 'Cuántos empleados necesitas según tus covers y días de apertura.' },
 ];
 
 export default function KitGestionPersonalDashboard() {
@@ -54,11 +54,11 @@ export default function KitGestionPersonalDashboard() {
         </header>
         <section className="py-12 md:py-16 px-4 text-center">
           <LogoBadge />
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Gestion de <span className="text-[#FFD700]">Personal y Turnos</span></h1>
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Gestión de <span className="text-[#FFD700]">Personal y Turnos</span></h1>
           <div className="mb-3">
             <ProductVersionBadge productId="kit-gestion-personal" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 9 plantillas de gestion de personal listas para descargar. Planifica, controla y gestiona.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 9 plantillas de gestión de personal listas para descargar. Planifica, controla y gestiona.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
@@ -86,14 +86,14 @@ export default function KitGestionPersonalDashboard() {
             </div>
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">Compatibles con Excel, Google Sheets, LibreOffice, Numbers + Imprimible A4</p>
-              <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y abrelos con tu programa favorito.</p>
+              <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y ábrelos con tu programa favorito.</p>
             </div>
           </div>
         </section>
         <ProductChangelog productId="kit-gestion-personal" />
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center space-y-4">
-            <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestion hostelera</p>
+            <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestión hostelera</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="/kit-tareas" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit Tareas Restaurante — 14 EUR</a>
               <a href="/kit-escandallos" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit de Escandallos Pro — 12 EUR</a>
@@ -103,7 +103,7 @@ export default function KitGestionPersonalDashboard() {
         </section>
         <footer className="py-8 px-4 border-t border-white/10">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Kit Gestion de Personal y Turnos · Todos los derechos reservados</p>
+            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Kit Gestión de Personal y Turnos · Todos los derechos reservados</p>
             <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
               <span className="text-gray-700 hidden md:inline">·</span>

@@ -14,12 +14,12 @@ const reasons = [
   },
   {
     icon: ShieldCheck,
-    title: 'Cumplimiento Legal 2026',
-    desc: 'El control horario digital es obligatorio en Espana desde 2026. Estas plantillas te ayudan a planificar turnos, descansos y vacaciones segun la normativa vigente.',
+    title: 'Cumplimiento Legal, con Cita Exacta',
+    desc: 'El registro de jornada es obligatorio en España desde 2019 (RD-ley 8/2019, art. 34.9 ET). Estas plantillas aplican los artículos reales: descanso de 12h entre jornadas (art. 34.3 ET), descanso semanal (art. 37.1 ET) y el tope de 80h/año en horas extra (art. 35.2 ET).',
   },
   {
     icon: RefreshCw,
-    title: 'Software de Gestión Cobra 40 EUR/mes. Esto es 14 EUR',
+    title: 'Software de Gestión Cobra 30-60 EUR/mes. Esto es 14 EUR',
     desc: 'Las mismas herramientas de planificacion que usan el software de RRHH premium, pero en Excel por un pago unico. Sin suscripcion.',
   },
 ];

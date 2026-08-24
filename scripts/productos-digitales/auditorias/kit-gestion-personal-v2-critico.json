@@ -1,10 +1,139 @@
 {
-  "informe": "Crítico de completitud — Kit de Gestión de Personal y Turnos v2.0 (EN CURSO, se irá actualizando)",
-  "fecha": "2026-08-24",
-  "estado": "PARCIAL — escrito pronto a propósito (regla 5); las cifras y bloqueos definitivos llegan en la siguiente escritura",
-  "listo_para_real": false,
-  "bloqueos": [],
-  "cifras_capa_producto": [],
-  "orden_ejecucion_real": [],
-  "recomendacion": "pendiente"
+ "productId": "kit-gestion-personal",
+ "version": "2.0",
+ "rol": "crítico de completitud (ronda 3)",
+ "fecha": "2026-08-24",
+ "spec": "scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md",
+ "entradas_leidas": [
+  "auditorias/kit-gestion-personal-v2-ronda2.json (74 ids verificados, 71 OK, 2 mal_resueltos, 1 hallazgo nuevo)",
+  "auditorias/kit-gestion-personal-v2-correccion.json (73 resueltos + 1 no_aplicado = 74)",
+  "auditorias/kit-gestion-personal-v2-ref-dominio.json (RD-01..RD-30)",
+  "auditorias/kit-gestion-personal-v2-ref-excel.json (RT-01..RT-24)",
+  "auditorias/kit-gestion-personal-v2-ref-coherencia.json (RC-01..RC-20)",
+  "auditorias/kit-gestion-personal-v2-motor.json y -grupo_a/-grupo_b/-grupo_c.json",
+  "kit-gestion-personal-v2-SPEC.md §8 (mapa id→sección, 86 ids del R1)",
+  "código: kit-gestion-personal-v2_0/{main,motor,grupo_a,grupo_b,grupo_c}.py",
+  "capa de producto: astro-site/src/data/productos/kits/kit-gestion-personal.ts, astro-site/src/components/pages/ProductosDigitalesHubPage.astro, src/components/kit-gestion-personal/*.tsx, src/pages/KitGestionPersonal*.tsx, src/data/{products-catalog,productos-changelog,testimonials-gestion-personal}.ts"
+ ],
+ "metodo": "SOLO LECTURA. No se ha ejecutado main.py (ni en dry-run ni en APPLY): se han medido con openpyxl los 9 xlsx de la ÚLTIMA copia dry-run existente — /private/tmp/.../scratchpad/propio-verificador/dryrun-v2/kit-gestion-personal/ (05:40 del 24-ago, posterior al último cambio de código: motor.py 05:33, main.py 05:23) — más lectura de fuente y greps sobre el árbol. Único comando ejecutado que toca el repo: gate-flujo-postpago.py --offline (lectura). Temperatura vigilada con istats antes de cada python: máximo observado 44,25 °C.",
+ "cruce_de_ids": {
+  "R1_en_la_SPEC": 86,
+  "desglose": "DOM-01..32 (32) + TEC-01..28 (28) + COM-01..26 (26)",
+  "R2_lentes": {
+   "RD": 30,
+   "RT": 24,
+   "RC": 20,
+   "total": 74,
+   "huecos_en_la_numeracion": 0
+  },
+  "corrección": {
+   "entrada": 74,
+   "resueltos": 73,
+   "no_aplicados": 1,
+   "suma": 74,
+   "perdidos": 0
+  },
+  "veredicto": "NINGÚN id del R1 se ha perdido por el camino, pero hay que decir DÓNDE está cada uno: 76 de los 86 se citan literalmente en los informes de motor/grupo_a/grupo_b/grupo_c. Los 10 que no aparecen por id son: (a) COM-10 y TEC-17 (§1.2 formato condicional) y TEC-22 (§1.7 freeze/títulos de impresión/fitToWidth), que el motor SÍ implementó pero describió por sección y no por id — verificado en fichero: 127 reglas de formato condicional vivas y freeze_panes en 21 de las 30 hojas; (b) COM-05, DOM-06, DOM-26, COM-22 y COM-23, que la SPEC asigna a §5 (integración) — verificados uno a uno en el código: badge y FAQ legales con «2019 · RD-ley 8/2019 art. 34.9 ET» y «art. 7.5 LISOS 751-7.500 € por centro» (kit-gestion-personal.ts:119, :79, :235), tildes en el .ts, products-catalog.ts:56-63 sin los «ratios de productividad» inexistentes y «30-60 EUR/mes» coherente en las 3 apariciones; (c) COM-08 y COM-15, que §6/§7-bis.1 declaran APARCADOS por John (reviews, aggregateRating y ancla de precio) y siguen intactos, como debe ser. Lo que NO existe en el repo es un informe JSON del rol de integración (§5): los otros seis roles dejaron el suyo en auditorias/. No es una pérdida de ids —los cinco están hechos y medidos— pero sí un agujero en la trazabilidad de la sesión."
+ },
+ "verificacion_en_solo_lectura_5_celdas_clave": [
+  {
+   "celda": "propio-verificador/dryrun-v2/kit-gestion-personal/03-coste-laboral-mensual.xlsx : hoja 'Ratio Coste Laboral' : freeze_panes",
+   "medido": "A15",
+   "declarado": "la corrección (RT-22) dice «freeze_panes A14 → A13»",
+   "veredicto": "DISCREPANCIA DOCUMENTAL confirmada, exactamente como la vio la ronda 2. La geometría es la correcta tras las 4 filas que insertó RD-21 (la hoja va de A1 a E30; encabezado 1-14 fijo, zona desplazable 15-30). El .xlsx NO hay que tocarlo: hay que corregir la prosa del informe."
+  },
+  {
+   "celda": "07-directorio-plantilla.xlsx : 'Vencimientos' : B3",
+   "medido": "'=TODAY()' · comentarios de celda en TODO el workbook = 0 (barrido de las 9 hojas de los 9 ficheros: 0 comentarios en total)",
+   "declarado": "la corrección (RT-24) promete «comentario en celda Y nota visible bajo la tabla»",
+   "veredicto": "Sólo existe la segunda mitad (la nota). Confirmo el mal_resuelto de la ronda 2 y añado el dato transversal: NO hay un solo comentario de celda en los 9 ficheros, así que no es un olvido en una hoja, es un componente que nunca se implementó en ningún sitio. El objetivo (avisar de que la vista previa del móvil no recalcula TODAY()) queda cubierto por la nota."
+  },
+  {
+   "celda": "BONUS-02-calculadora-plantilla-optima.xlsx : 'Calculadora' : B29 (FTE) y B41 (ratio)",
+   "medido": "B29 = 7 · B41 = 0,3133 · D41 = 0,33 · D42 = 0,35 · B43 = '🟢 EXCELENTE (por debajo de tu objetivo)' · B38 = 16.292,50 €/mes · B40 = 52.000 €/mes · B35 (refuerzo del día pico) = 2",
+   "veredicto": "CUMPLE §7-bis.4 (ratio por defecto ~31 %) y §3 (6-9 FTE para 80 cubiertos). Y cierra el gate de coherencia: 03!'Previsión por Servicio'!B21 = 7 y B22 = 16.292,50 € — los dos ficheros dan el MISMO número, que era el bloqueo que grupo_b dejó abierto. De paso valida el testimonio reescrito de Enrique Vidal («2 personas de refuerzo»), que coincide con B35 medido."
+  },
+  {
+   "celda": "04-onboarding-nuevo-empleado.xlsx : 'Checklist Onboarding' : E71 / C71 / C72",
+   "medido": "E71 = 50 (tareas totales) · C71 = 0 (completadas, hoja en blanco) · C72 = 50 (aplicables sin las «—») · C73 = 0 (progreso). Tareas numeradas contadas a mano: 50, en 5 bloques (filas 5, 21, 32, 44, 59)",
+   "veredicto": "CUMPLE. Mata TEC-13/TEC-01/DOM-01/DOM-28 a la vez: el checklist recién descargado abre en «0 de 50» y no en «4 de 51», y los COUNTIF están acotados por tramo (F7:F19, F23:F30, F34:F42, F46:F57, F61:F68), así que ninguna cabecera de sección cuenta como tarea hecha. Es la cifra que publica la landing (50 tareas)."
+  },
+  {
+   "celda": "02-control-horas-extras.xlsx : 'Resumen Mensual' : D3 y F3 · 01-cuadrante-turnos-semanal.xlsx : 'Turnos' : B3 · 03-coste-laboral-mensual.xlsx : 'Nóminas' : C2",
+   "medido": "02!D3 = 1,25 (recargo, verde E8F5E9, locked=False) · 02!F3 = 80 (tope anual) · 01!Turnos!B3 = 12 (descanso entre jornadas, art. 34.3 ET) · 01!Turnos!B2 = 9 (jornada diaria máx.) · 03!Nóminas!C2 = 0,33 (SS empresa) · 03!Nóminas!F2 = 46,5 (semanas efectivas)",
+   "veredicto": "CUMPLE. Los cuatro números que la landing publica como editables son celdas verdes desbloqueadas de verdad. Barrido completo: 7.500 celdas con relleno E8F5E9 en los 9 ficheros y CERO de ellas bloqueada en hoja protegida — el kit NO repite el bloqueo que sí tenía el Kit de Inventario en 'Dashboard Mermas'!C6."
+  }
+ ],
+ "gates_reproducidos_por_mi": {
+  "produccion_intacta": "SÍ — `git status --short astro-site/public/dl/kit-gestion-personal/` sin salida; los 9 xlsx siguen con fecha 22-ago 11:21 (v1.1). Yo no he ejecutado main.py.",
+  "gate_offline_postpago": "python3 scripts/productos-digitales/gate-flujo-postpago.py --offline --only kit-gestion-personal → exit 0 · 9 entregables · 9 tarjetas · 0 fallos · 1 aviso (sección D no verificable en --offline).",
+  "estructura_medida": "9 xlsx · 30 hojas · 4.593 fórmulas · 52 validaciones de datos · 127 reglas de formato condicional · 21 hojas protegidas sin contraseña (las 9 «Instrucciones» quedan abiertas a propósito) · 0 comentarios de celda · v2.0 estampada en las 9 Instrucciones y en el subject/title de los 9 ficheros.",
+  "no_reproducidos": "dry-run exit 0, idempotencia y censo --fail NO los he vuelto a correr: el encargo es SOLO LECTURA y la ronda 2 ya los midió a las 05:41 sobre esta misma copia, que es posterior al último cambio de código (motor.py 05:33)."
+ },
+ "listo_para_real": false,
+ "bloqueos": [
+  {
+   "id": "BLOQUEO-1",
+   "severidad": "alto · higiene de producción (el APPLY ensucia public/dl)",
+   "donde": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py:1609 (función `sin_cache` dentro de `demos`)",
+   "medido": "`destino = os.path.join(os.path.dirname(carpeta), 'demos-sin-cache')`. En main.py:996 `carpeta = DESTINO if args.dry_run else ORIGEN`, y ORIGEN es astro-site/public/dl/kit-gestion-personal → en la pasada REAL el dirname es `astro-site/public/dl` y la demo escribe `astro-site/public/dl/demos-sin-cache/01-cuadrante-turnos-semanal.xlsx`. En mi copia dry-run ese fichero existe y pesa 48.099 bytes (propio-verificador/dryrun-v2/demos-sin-cache/). Las demostraciones corren también en APPLY (`--sin-demos` no está puesto) y nada las limpia después.",
+   "por_que_importa": "Es EXACTAMENTE el bug que ya está vivo en el árbol por culpa del kit de inventario (ver BLOQUEO-2). `public/` entero se copia a `dist`, así que un xlsx de trabajo —sin caché de valores, con la hoja de turnos dentro— quedaría servido en https://aichef.pro/dl/demos-sin-cache/01-...xlsx. Y como `git add astro-site/public/dl/kit-gestion-personal/` no lo alcanza, se queda sin trackear y sin que nadie lo vea en el diff.",
+   "fix": "Una línea en grupo_a.py:1609 — anclar la carpeta de demos al scratchpad en vez de al hermano de `carpeta`: `destino = os.path.join(os.environ.get('CLAUDE_SCRATCHPAD', os.path.dirname(carpeta)), 'demos-sin-cache')`. Con eso el dry-run sigue igual (ya corre con CLAUDE_SCRATCHPAD) y la pasada real deja de escribir en public/dl. Verificación posterior: tras el APPLY, `git status --short astro-site/public/dl/` no debe listar ningún directorio nuevo."
+  },
+  {
+   "id": "BLOQUEO-2",
+   "severidad": "alto · ya está en el árbol y contamina el commit de este kit",
+   "donde": "astro-site/public/dl/demos-grupo-b/ (5 xlsx, 24-ago 01:12) · origen: scripts/productos-digitales/kit-inventario-v2_0/grupo_b.py:1719-1720",
+   "medido": "`git status --short` lo lista como `?? astro-site/public/dl/demos-grupo-b/`. Contiene 03-pedidos-compra-guarda.xlsx, 03-pedidos-compra-iva.xlsx, 04-recepcion-mercancias-conforme.xlsx, 05-control-mermas-agregacion.xlsx y 05-control-mermas-agregacion-sin-datos.xlsx (~103 KB) — todos del KIT DE INVENTARIO, no de éste. La línea culpable es `dir_demos = os.path.join(os.path.dirname(os.path.abspath(carpeta)), 'demos-grupo-b')`, el mismo patrón del BLOQUEO-1.",
+   "por_que_importa": "Cualquier `git add astro-site/public/dl/` (o un `git add -A` del orquestador al cerrar la fase) lo mete en el commit del Kit de Gestión de Personal y lo publica. No es de este kit ni de esta sesión: hay que borrarlo antes del build y arreglar el generador del kit de inventario.",
+   "fix": "1) `rm -rf astro-site/public/dl/demos-grupo-b` (decisión del orquestador: yo no borro nada). 2) Mismo parche de una línea en kit-inventario-v2_0/grupo_b.py:1719. 3) En el commit, `git add` de rutas EXPLÍCITAS, nunca `astro-site/public/dl/` a pelo."
+  },
+  {
+   "id": "BLOQUEO-3",
+   "severidad": "medio · capa de producto (cifra falsa en el repo, hoy no visible en producción)",
+   "donde": "src/components/kit-gestion-personal/CtaFinal.tsx:10 (y :9)",
+   "medido": "CtaFinal.tsx:10 = `'Onboarding nuevo empleado: 40+ tareas'` y :9 = `'Ratio de coste laboral mensual con semaforo'` (sin tilde), frente a las 50 tareas MEDIDAS en 04!'Checklist Onboarding'!E71 y frente al mismo bullet de la landing viva (astro-site/src/data/productos/kits/kit-gestion-personal.ts:267 = «Onboarding nuevo empleado: 50 tareas con su plazo legal»).",
+   "por_que_importa": "La corrección portó a la SPA 4 de los 6 componentes con copy de este kit (ContentGrid, FaqAccordion, HeroSection, WhySection) y dejó fuera CtaFinal y BonusSection. La ruta /kit-gestion-personal la sirve Astro (astro-site/src/pages/kit-gestion-personal.astro monta KitExcelLandingPage con el .ts), así que HOY el comprador no ve el «40+»; pero se commitea como parte de la v2.0 una cifra que el propio kit desmiente, y el gemelo SPA es la fuente declarada de los islands. Es la misma clase de defecto que el hallazgo nuevo de la ronda 2 (tildes a medias en WhySection/ContentGrid).",
+   "fix": "Dos frases en CtaFinal.tsx: «Onboarding nuevo empleado: 50 tareas» y «Ratio de coste laboral mensual con semáforo». De paso, cerrar el hallazgo nuevo de la ronda 2 acentuando los bullets restantes de WhySection.tsx:12-13,21-22 y ContentGrid.tsx, y revisar BonusSection.tsx:18 («covers», sin tildes)."
+  }
+ ],
+ "avisos_no_bloqueantes": [
+  "RT-22 y RT-24: NO tocar los .xlsx. Lo que hay que corregir es la PROSA de kit-gestion-personal-v2-correccion.json — decir freeze_panes A15 (medido) en vez de A13, y retirar la promesa del «comentario en celda» de RT-24 o implementarlo (hoy hay 0 comentarios en los 9 ficheros). Ninguno reintroduce el defecto original.",
+  "Deriva documental del motor: kit-gestion-personal-v2-motor.json §1.2 afirma formato condicional en «03!'Ratio Coste Laboral'!B9». MEDIDO: el fichero 03 tiene 0 reglas de formato condicional en sus 4 hojas — el semáforo de coste laboral es TEXTO (B13 devuelve '🟢 EXCELENTE' / '🟡 VIGILAR' / '🔴 ACCIÓN CORRECTIVA' con los umbrales por VLOOKUP). No contradice a la landing («Ratio de coste laboral con semáforo: verde, amarillo, rojo», kit-gestion-personal.ts:129) porque los emoji SON los tres colores, y RD-21 rehízo esa hoja después del motor. Pero el recuento «27 reglas» del informe del motor ya no describe el entregable: hoy son 127 repartidas en 8 de los 9 ficheros y CERO en el 03.",
+  "Decisión de negocio pendiente de John (ya escalada por el corrector, la repito porque tiene fecha): 05!'Calendario Anual'!B5 = 04/01/2027 — el calendario se construye para el año SIGUIENTE al de la compilación. En agosto de 2026 planificar 2027 es lo normal, y B5 es verde y editable (las otras 52 semanas se recalculan solas), pero reconstruir el kit en enero de 2028 lo llevaría a 2029. La palanca es una constante: grupo_b.ANIO_CALENDARIO.",
+  "Trazabilidad: falta el informe JSON del rol de INTEGRACIÓN (§5) en auditorias/. Los cinco ids de §5 están hechos y los he verificado en el código, pero conviene que el orquestador deje constancia (aunque sea dentro del propio JSON del crítico) para que el próximo hermano no crea que §5 se saltó.",
+  "Cosmético: la descripción de la tarjeta de onboarding («50 tareas organizadas en cinco bloques: documentación legal, formación APPCC, prevención de riesgos, uniforme, formación de puesto, sistemas y accesos», kit-gestion-personal.ts:152 y ContentGrid.tsx:11) acierta en «cinco bloques» —medidos: 5— pero enumera siete cosas que no son los nombres de los bloques y se deja fuera el quinto real, «PERIODO DE PRUEBA Y EVALUACIÓN», que es justo el que más vende. No es falso; es mejorable.",
+  "grupo_c dejó 5 dudas para el orquestador sin respuesta escrita (07!Plantilla con 22 columnas en vez de 21, los umbrales derivados de los 4 tipos que sólo existen en el BONUS-02, el formato 0,00 heredado en 07!Plantilla!G «Jornada», el puente 06!Ficha→Histórico por instrucciones y el testimonio de Enrique Vidal). Las cinco están resueltas de facto en el fichero entregado y ninguna bloquea; conviene cerrarlas por escrito en el handoff.",
+  "Trampa del propio main.py que conviene tener delante en el paso 7: una pasada parcial DECLARADA (`--solo motor,a` con grupo_a.py presente) termina con exit 0 — `completo` es False, asi que `pendientes_contenido` NO se suma a `fallos` (main.py:1228-1235). Solo la parcial NO declarada suspende. Un APPLY con `--solo` daria un kit a medias y un verde."
+ ],
+ "cifras_capa_producto": [
+  "9 ficheros .xlsx · 30 hojas · 4.593 fórmulas · 52 validaciones de datos (listas desplegables) · 127 reglas de formato condicional · 7.500 celdas verdes editables (0 bloqueadas) · 21 hojas protegidas SIN contraseña + las 9 «Instrucciones» abiertas",
+  "Capacidad real y uniforme: 30 empleados en los 5 ficheros que llevan lista (01!'Cuadrante Semanal'!6:35, 02!'Resumen Mensual'!6:35, 05!'Calendario Anual'!6:35 y 05!'Saldo Vacaciones'!5:34, 06!Histórico!5:34, 07!Plantilla!5:34) y 300 filas de registro de jornada (02!'Registro Horas'!5:304)",
+  "Cuadrante: 4 alertas legales por empleado (columnas K/L/M/N) — descanso entre jornadas 12 h (01!Turnos!B3, art. 34.3 ET), descanso semanal (art. 37.1 ET), jornada semanal contra las horas CONTRATADAS de cada uno (columna J, 40 por defecto) y jornada diaria máxima 9 h (01!Turnos!B2), con regla de menor de edad a 8 h",
+  "Horas extra: recargo 1,25× editable (02!'Resumen Mensual'!D3), tarifa ordinaria 12 €/h (B3) y tope anual 80 h (F3, art. 35.2 ET) con estado «✓ dentro / ⚠ cerca del límite / ⛔ EXCEDE»; 4 tipos de hora extra por desplegable (Voluntaria, Obligatoria, Fuerza mayor, Compensada con descanso) y columna «Pausa (h)» para el turno partido",
+  "Coste laboral: cotización de empresa 33 % en UNA celda (03!Nóminas!C2) y semanas efectivas 46,5 (F2); tabla de 10 tipos de negocio con objetivo y máximo numéricos (03!'Ratio Coste Laboral'!A18:E27) que alimentan el semáforo por VLOOKUP",
+  "Dimensionamiento (los dos ficheros dan el MISMO número, medido): con 80 cubiertos/día, 2 servicios, 6 días de apertura, ratios 25/22/80 cubiertos por cocinero/camarero/barra y servicio, jornada de 40 h y factor de cobertura 1,15 → 40 cubiertos por servicio, 5 personas por servicio (2 cocina + 2 sala + 1 barra), 240 h/semana y 7 FTE. Coste estimado 16.292,50 €/mes sobre unas ventas de 52.000 €/mes = ratio 31,33 % (objetivo 33 %, máximo 35 %) → «🟢 EXCELENTE». Día pico de 120 cubiertos → 2 personas de REFUERZO por servicio, no plantilla fija",
+  "Onboarding: 50 tareas en 5 bloques, cada una con responsable, plazo en días desde el alta y fecha límite calculada; contador «0 de 50» y progreso 0 % con la hoja en blanco",
+  "Vacaciones: rejilla de 53 SEMANAS (no 12 casillas), lunes de la semana 1 en celda verde, 30 días naturales en UNA celda (05!'Saldo Vacaciones'!B2, art. 38 ET), derecho prorrateado por fecha de alta y días disfrutados leídos de las solicitudes APROBADAS; hoja «Cobertura» con máximo de ausencias simultáneas (4, y 1 en temporada alta), personal mínimo por turno y tabla de sustituciones",
+  "Evaluación: 10 competencias con escala 1-5 más N/A (la media sale sólo de lo puntuado, «X de 10»), histórico Q1-Q4 con media anual y tendencia sobre los dos últimos trimestres informados, plan de desarrollo individual de 3 líneas y hoja «Ficha (ejemplo relleno)» aparte de la ficha en blanco",
+  "Directorio: 22 columnas (incluye NAF, fecha de nacimiento, convenio aplicable, grupo profesional, fin de periodo de prueba y caducidades de carnet de manipulador y PRL), aviso automático de MENOR DE EDAD por fórmula, y hoja «Vencimientos» que vigila 4 fechas × 30 empleados con umbrales editables de 30 y 60 días. Ya NO se piden alérgenos del empleado (dato de salud, art. 9 RGPD)",
+  "Sin errores a la vista: 0 valores de error de Excel cacheados y 0 comentarios de celda en los 9 ficheros; los 9 llevan «Versión 2.0 · agosto 2026» al pie de sus Instrucciones y v2.0 en los metadatos",
+  "Cifras que NO conviene publicar tal cual: «4.593 fórmulas» y «7.500 celdas verdes» son ciertas pero incluyen las filas en blanco preparadas; si se usan en la landing, decir «más de 4.500 fórmulas» y «300 filas de registro preparadas». Y el número de reglas de color (127) no se reparte por igual: el fichero 03 no tiene ninguna, su semáforo es texto con 🟢/🟡/🔴"
+ ],
+ "orden_ejecucion_real": [
+  "0. TÉRMICA: `istats cpu temp` antes de CADA python; si ≥ 60 °C, `sleep 90` y repetir. Un python cada vez, sin paralelismo, sin builds locales ni Playwright (el build va en la nube).",
+  "1. FIX BLOQUEO-1 (una línea) — en /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py:1609 sustituir `destino = os.path.join(os.path.dirname(carpeta), 'demos-sin-cache')` por `destino = os.path.join(os.environ.get('CLAUDE_SCRATCHPAD', os.path.dirname(carpeta)), 'demos-sin-cache')`.",
+  "2. FIX BLOQUEO-2 — `rm -rf /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b` y, en el kit vecino, mismo parche en /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-inventario-v2_0/grupo_b.py:1719 (`os.path.dirname(os.path.abspath(carpeta))` → scratchpad). Comprobar después: `git status --short astro-site/public/dl/` sin salida.",
+  "3. FIX BLOQUEO-3 (dos frases) — en /Users/johnguerrero/chefpro-modernize/src/components/kit-gestion-personal/CtaFinal.tsx:10 «Onboarding nuevo empleado: 50 tareas» y :9 «Ratio de coste laboral mensual con semáforo»; de paso las tildes pendientes de WhySection.tsx:12-13,21-22, ContentGrid.tsx y BonusSection.tsx:18.",
+  "4. CORREGIR LA PROSA de /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/auditorias/kit-gestion-personal-v2-correccion.json: RT-22 → freeze_panes «A15» (no A13); RT-24 → retirar «comentario en celda» o implementarlo. No se toca ningún .xlsx por esto.",
+  "5. DRY-RUN de comprobación (NO escribe en producción): `istats cpu temp && CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/pre-apply-gp python3 /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --json /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-gp-v2/pre-apply.json` → exige exit 0, idempotencia 0 diferencias, censo 0 defectos, 0 cacheados con error, 31/31 demostraciones. Comprobar además que la demo cayó en `$CLAUDE_SCRATCHPAD/demos-sin-cache/` y NO en `dryrun-v2/`.",
+  "6. RE-VERIFICAR LA CELDA DEL FIX 1 (una orden, lectura): `python3 -c \"import os; print(os.path.isdir('/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-sin-cache'), os.path.isdir('/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b'))\"` → tiene que imprimir `False False`. Si sale un True, PARAR.",
+  "7. APLICAR EN REAL (única orden que escribe en astro-site/public/dl/kit-gestion-personal/; deja respaldo con marca de tiempo en el scratchpad): `istats cpu temp && KIT_GESTION_PERSONAL_APPLY=1 CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --json scripts/productos-digitales/auditorias/kit-gestion-personal-v2-real.json` → exit 0. Anotar la ruta del respaldo que imprime al final y NO borrarla hasta el paso 12. NUNCA usar `--solo` en la pasada real: el default (motor,a,b,c) construye el kit entero, y OJO —lo he leido en main.py:1028-1035 y 1228-1235— una pasada parcial DECLARADA (p. ej. `--solo motor,a`, con el modulo presente) devuelve exit 0 y se salta los gates de contenido de los grupos que no corrieron. Solo suspende la parcial NO declarada (pedir un grupo cuyo .py no existe). Es decir: `--solo` en APPLY dejaria el kit a medias EN VERDE.",
+  "8. CENSO: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/censo-entregables.py --only kit-gestion-personal --fail --quiet` → 9 ficheros, 0 defectos.",
+  "9. GATE OFFLINE: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/gate-flujo-postpago.py --offline --only kit-gestion-personal` → exit 0, 9 entregables / 9 tarjetas / 0 fallos (así sale hoy con la v1.1 en disco: sirve para detectar que un fichero se ha perdido en el APPLY).",
+  "10. COMMIT (lo hace el orquestador, nunca el subagente; rutas EXPLÍCITAS, jamás `astro-site/public/dl/` entero): `cd /Users/johnguerrero/chefpro-modernize && git add astro-site/public/dl/kit-gestion-personal/ scripts/productos-digitales/kit-gestion-personal-v2_0/ scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md scripts/productos-digitales/auditorias/kit-gestion-personal-v2-*.json astro-site/src/data/productos/kits/kit-gestion-personal.ts astro-site/src/components/pages/ProductosDigitalesHubPage.astro src/components/kit-gestion-personal/ src/pages/KitGestionPersonal.tsx src/pages/KitGestionPersonalDashboard.tsx src/pages/ProductosDigitales.tsx src/data/productos-changelog.ts src/data/products-catalog.ts src/data/testimonials-gestion-personal.ts src/data/use-cases-content.es.ts src/data/use-cases-content.en.ts src/data/use-cases-content.es.consultor.ts src/data/use-cases-content.en.consultor.ts && git commit -m \"feat(kit-gestion-personal): v2.0 — 9 xlsx reconstruidos (4.593 formulas, 127 reglas de color, 30 hojas, 30 empleados, 50 tareas de onboarding) + landing/changelog/catalogo al dia\" && git push`. Los 9 xlsx TIENEN que ir en el mismo commit que la landing: si no, la página anuncia una v2.0 que no se descarga.",
+  "11. DEPLOY: esperar a que Netlify termine el build desde `main` (build EN LA NUBE, nunca `npm run build` local). Sin deploy verde el paso 12 mide la v1.1.",
+  "12. GATE LIVE: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/gate-flujo-postpago.py --only kit-gestion-personal` (sin --offline) → los 9 /dl/… deben servir 200 con content-type binario y el MISMO tamaño que en disco, y /kit-gestion-personal, -access y -library 200. Sólo entonces borrar el respaldo del paso 7."
+ ],
+ "recomendacion": "NO aplicar todavía, pero falta muy poco: dos líneas de Python, un `rm -rf`, dos frases de copy y dos frases de informe. El kit en sí está sano y lo he medido yo, no me lo he creído: los 74 ids de las tres lentes cierran sin huecos (RD 1-30, RT 1-24, RC 1-20) y los 86 del R1 están todos colocados —76 citados por id en los informes de motor y grupos, 5 en la capa de producto que he verificado en el código (badge legal de 2019, LISOS 7.5, products-catalog sin los «ratios de productividad» inventados, 30-60 EUR/mes coherente, tildes) y 2 aparcados por John a propósito (reviews y ancla de precio)—; las cinco celdas clave dan el número que promete la landing (7 FTE y 31,33 % en el BONUS-02 y en el 03, «0 de 50» en el onboarding, 12 h de descanso, 1,25× y 80 h/año, 33 % de SS) y las 7.500 celdas verdes están desbloqueadas sin una sola excepción, que era el bloqueo que hundió al kit de inventario. Lo que impide dar la orden es de fontanería: la demo de grupo_a escribe su copia sin caché en el HERMANO de la carpeta de trabajo, y en la pasada real ese hermano es `astro-site/public/dl/` — el mismo error que ya ha dejado ahí `demos-grupo-b/` del kit de inventario, sin trackear y a un `git add` de publicarse. Arreglar ese patrón en los dos kits, borrar la carpeta huérfana, poner las 50 tareas en CtaFinal.tsx y encadenar 5→12 sin saltarse el gate LIVE."
 }

@@ -57,9 +57,9 @@ export default function KitGestionPersonal() {
           },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "8", "bestRating": "5", "worstRating": "1" },
           "review": [
-            { "@type": "Review", "author": { "@type": "Person", "name": "David Ruiz" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "El cuadrante de turnos me ha cambiado la vida. Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente." },
-            { "@type": "Review", "author": { "@type": "Person", "name": "Carmen Delgado" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "La plantilla de onboarding es brutal. El tiempo de incorporacion bajo de 2 semanas a 4 dias en todas las unidades." },
-            { "@type": "Review", "author": { "@type": "Person", "name": "Marta Jimenez" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Lo recomiendo a todos mis clientes. Las plantillas cumplen con la normativa vigente: descansos, jornada maxima, vacaciones." }
+            { "@type": "Review", "author": { "@type": "Person", "name": "David Ruiz" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "El cuadrante de turnos me ha cambiado la vida. Las alertas de 12 h de descanso entre jornadas y de las horas que tiene contratadas cada uno me avisan automáticamente." },
+            { "@type": "Review", "author": { "@type": "Person", "name": "Carmen Delgado" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "La plantilla de onboarding es brutal. El tiempo de incorporación bajó de 2 semanas a 4 días en todas las unidades." },
+            { "@type": "Review", "author": { "@type": "Person", "name": "Marta Jiménez" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Lo recomiendo a todos mis clientes. Las plantillas cumplen con la normativa vigente: descansos, jornada máxima, vacaciones." }
           ]
         })}</script>
 
@@ -67,10 +67,10 @@ export default function KitGestionPersonal() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Incluye registro horario digital?", "acceptedAnswer": { "@type": "Answer", "text": "No. El registro/fichaje horario digital requiere un software homologado. Este kit es para planificacion de turnos, control de costes laborales, onboarding y gestion de equipo." }},
-            { "@type": "Question", "name": "¿Las formulas calculan horas extra automaticamente?", "acceptedAnswer": { "@type": "Answer", "text": "Si. La plantilla calcula automaticamente el coste de cada hora extra segun el porcentaje de tu convenio colectivo." }},
-            { "@type": "Question", "name": "¿En que se diferencia del software de RRHH?", "acceptedAnswer": { "@type": "Answer", "text": "El software de RRHH cobra entre 30 y 60 EUR/mes. Este kit cuesta 14 EUR, pago unico, sin suscripcion." }},
-            { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. 100% reembolso sin preguntas." }}
+            { "@type": "Question", "name": "¿Incluye registro horario digital?", "acceptedAnswer": { "@type": "Answer", "text": "No. El registro de jornada es obligatorio en España desde 2019 (RD-ley 8/2019, art. 34.9 ET) y no tenerlo es infracción grave: de 751 a 7.500 EUR por centro de trabajo (art. 7.5 LISOS). Este kit es para planificación de turnos, control de costes laborales, onboarding y gestión de equipo." }},
+            { "@type": "Question", "name": "¿Las fórmulas calculan horas extra automáticamente?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La plantilla calcula automáticamente el coste de cada hora extra según el recargo de tu convenio colectivo, que es una celda editable (1,25x por defecto)." }},
+            { "@type": "Question", "name": "¿En qué se diferencia del software de RRHH?", "acceptedAnswer": { "@type": "Answer", "text": "El software de RRHH cobra entre 30 y 60 EUR/mes. Este kit cuesta 14 EUR, pago único, sin suscripción." }},
+            { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>
 

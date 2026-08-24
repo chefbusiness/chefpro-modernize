@@ -67,8 +67,14 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium animate-fade-in">
-          Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado
+        {/* RD-07/RC-06 · las tres afirmaciones eran FALSAS: el registro de
+            jornada es obligatorio desde el 12-05-2019 (RD-ley 8/2019, art. 34.9
+            ET), NO existe homologación oficial de sistemas de fichaje y la
+            sanción es infracción grave del art. 7.5 LISOS —de 751 a 7.500 EUR
+            POR CENTRO DE TRABAJO—, no 10.000 EUR por empleado. Texto y tono
+            portados VERBATIM de astro-site/src/data/productos/kits/kit-gestion-personal.ts */}
+        <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium animate-fade-in">
+          Registro de jornada obligatorio en España desde 2019 — art. 34.9 ET
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">

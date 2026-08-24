@@ -304,17 +304,19 @@ const products = [
     tags: ['pdf', 'guias', 'dark-kitchen'],
   },
   {
-    name: 'Kit Gestion de Personal y Turnos',
+    // RC-07 · la tarjeta conservaba la copia sin tildes y la descripción de la
+    // v1.1: el comprador saltaba de aquí a una landing ya acentuada.
+    name: 'Kit Gestión de Personal y Turnos',
     slug: '/kit-gestion-personal',
     price: '€14',
     originalPrice: '€49',
     discount: '-71%',
-    description: '9 plantillas Excel con formulas automaticas: cuadrante turnos, horas extra, coste laboral, onboarding, vacaciones, evaluacion de desempeno y directorio de plantilla.',
+    description: '9 plantillas Excel con fórmulas automáticas: cuadrante de turnos, horas extra, coste laboral, onboarding, vacaciones, evaluación de desempeño y directorio de plantilla.',
     features: [
-      'Cuadrante turnos con alertas legales',
-      'Control horas extra automatico',
-      'Ratio coste laboral con semaforo',
-      'Onboarding, vacaciones y evaluacion',
+      'Cuadrante de turnos con alertas legales',
+      'Control de horas extra automático',
+      'Ratio de coste laboral con semáforo',
+      'Onboarding, vacaciones y evaluación',
     ],
     iconName: 'Users',
     image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',

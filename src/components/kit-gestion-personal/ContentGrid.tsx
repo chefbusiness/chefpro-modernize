@@ -5,15 +5,15 @@ import {
 import FadeIn from '../ebook/FadeIn';
 
 const templates = [
-  { icon: CalendarDays, title: 'Cuadrante de Turnos', desc: 'Planificacion semanal y mensual con alertas automaticas: descanso minimo 11h entre turnos, maximo 40h/semana, libranzas y rotacion de turnos.' },
-  { icon: Clock, title: 'Control de Horas Extra', desc: 'Registro de horas extra por empleado con calculo automatico de coste segun convenio colectivo. Alertas cuando se superan limites legales.' },
-  { icon: Euro, title: 'Coste Laboral Mensual', desc: 'Ratio coste laboral/ventas con semaforo (verde <30%, amarillo 30-35%, rojo >35%). Prevision por servicio y comparativa mensual.' },
-  { icon: UserPlus, title: 'Onboarding Nuevo Empleado', desc: '40+ tareas organizadas: documentacion legal, formacion APPCC, prevencion riesgos, uniforme, formacion de puesto, sistemas y accesos.' },
-  { icon: Palmtree, title: 'Planificacion Vacaciones', desc: 'Calendario anual de vacaciones por empleado. Solicitudes, aprobaciones, cobertura minima por puesto y periodos de maxima demanda.' },
-  { icon: Star, title: 'Evaluacion de Desempeno', desc: '10 competencias clave para hosteleria con scoring 1-5. Historico trimestral, objetivos por periodo y plan de desarrollo individual.' },
-  { icon: Users, title: 'Directorio de Plantilla', desc: 'Base de datos completa: datos personales, puesto, convenio, vencimiento contrato, carnets (manipulador, PRL), tallas de uniforme.' },
-  { icon: Megaphone, title: 'BONUS: Briefing Cambio de Turno', desc: 'Plantilla de traspaso de informacion entre turnos: incidencias, reservas VIP, tareas pendientes, stock bajo, avisos de mantenimiento.' },
-  { icon: Calculator, title: 'BONUS: Calculadora Plantilla Optima', desc: 'Calcula cuantos empleados necesitas segun covers por servicio, ratio empleado/cubierto, dias de apertura y picos de demanda.' },
+  { icon: CalendarDays, title: 'Cuadrante de Turnos', desc: 'Planificación semanal y mensual con las 4 alertas reales: descanso mínimo de 12h entre jornadas (art. 34.3 ET), descanso semanal, jornada diaria máxima y horas sobre lo contratado.' },
+  { icon: Clock, title: 'Control de Horas Extra', desc: 'Registro de horas extra por empleado con cálculo automático de coste según el recargo de tu convenio (celda editable). Alerta al superar el tope legal de 80h/año.' },
+  { icon: Euro, title: 'Coste Laboral Mensual', desc: 'Ratio coste laboral/ventas con semáforo por tipo de negocio (fast casual, casual, fine dining, catering...). Previsión de plantilla por servicio y comparativa mensual.' },
+  { icon: UserPlus, title: 'Onboarding Nuevo Empleado', desc: '50 tareas organizadas en cinco bloques: documentación legal, formación APPCC, prevención de riesgos, uniforme, formación de puesto, sistemas y accesos. Cada una con su plazo en días desde el alta.' },
+  { icon: Palmtree, title: 'Planificación Vacaciones', desc: 'Calendario anual por semanas con saldo real de vacaciones. Solicitudes, aprobaciones, cobertura mínima por puesto y aviso en temporada alta.' },
+  { icon: Star, title: 'Evaluación de Desempeño', desc: '10 competencias clave para hostelería con scoring 1-5. Histórico trimestral, objetivos por periodo y plan de desarrollo individual.' },
+  { icon: Users, title: 'Directorio de Plantilla', desc: 'Base de datos completa: datos personales, puesto, convenio aplicable, vencimiento de contrato, carnets (manipulador, PRL) y aviso de menores de edad.' },
+  { icon: Megaphone, title: 'BONUS: Briefing Cambio de Turno', desc: 'Traspaso entre turnos: incidencias, reservas VIP, tareas pendientes, stock bajo, ausencias y cambios de personal, ARQUEO DE CAJA con lectura Z y descuadre, y TEMPERATURAS al relevo (APPCC) con mínimo y máximo por equipo.' },
+  { icon: Calculator, title: 'BONUS: Calculadora Plantilla Óptima', desc: 'Calcula cuántos empleados necesitas según covers por servicio, ratio empleado/cubierto, días de apertura y picos de demanda.' },
 ];
 
 const galleryImages = [
