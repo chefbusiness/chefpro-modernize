@@ -7,14 +7,14 @@ import FadeIn from '../ebook/FadeIn';
 const templates = [
   { icon: TrendingUp, title: 'Plan Financiero Previsional (3 Años)', desc: 'Proyección de ingresos y gastos a 3 años con desglose mensual. Líneas de ingreso (comedor, barra, delivery, eventos), costes variables/fijos, EBITDA y gráficos automáticos.' },
   { icon: TrendingUp, title: 'Plan Financiero Previsional (5 Años)', desc: 'Misma estructura que el plan a 3 años pero con proyección a 5 años. Ideal para presentaciones a bancos, inversores o franquicias que requieren horizontes más largos.' },
-  { icon: Target, title: 'Calculadora Punto de Equilibrio', desc: 'Calcula ticket medio necesario, comensales/dia minimos y umbral de facturacion. Incluye 3 escenarios (pesimista/realista/optimista) con grafico visual de break-even.' },
+  { icon: Target, title: 'Calculadora Punto de Equilibrio', desc: 'Calcula comensales/dia minimos, umbral de facturacion y el ticket medio necesario para los cubiertos que preveas, con grafico de ingresos vs costes. Break-even operativo y de caja, y 3 escenarios: pesimista, realista y optimista.' },
   { icon: Wallet, title: 'Cash Flow Forecast (12 Meses)', desc: 'Flujo de caja mensual con desfase cobros/pagos, IVA trimestral y estacionalidad. Alerta automatica en rojo cuando el saldo cae por debajo del umbral de seguridad.' },
   { icon: Building2, title: 'Presupuesto de Inversion / CAPEX', desc: 'Desglose por partida: obra, equipamiento cocina, mobiliario sala, tecnologia, licencias. Presupuesto vs real con % desviacion. Totales con y sin IVA.' },
   { icon: BarChart3, title: 'P&L Mensual Real vs Presupuesto', desc: 'Cada mes compara real vs presupuesto con desviacion % y semaforo (verde <5%, amarillo 5-10%, rojo >10%). Food cost, labor cost y prime cost automaticos.' },
   { icon: PieChart, title: 'Dashboard de Ratios Financieros', desc: 'Calcula food cost %, labor cost %, prime cost %, GOP, RevPASH, coste por cubierto. Compara contra benchmarks del sector hostelero espanol.' },
   { icon: FileText, title: 'Informe de Viabilidad para Bancos', desc: 'Formato profesional listo para presentar: resumen ejecutivo, proyecciones, TIR, VAN, payback period. Disenado para lo que los bancos realmente piden.' },
-  { icon: Shuffle, title: 'BONUS: Simulador de Escenarios', desc: 'Modifica ticket medio, ocupacion, food cost y ve impacto instantaneo en rentabilidad. 3 escenarios con comparativa visual lado a lado.' },
-  { icon: ClipboardList, title: 'BONUS: Checklist Pre-Apertura Financiero', desc: '48 items agrupados en 6 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria. Con estado, responsable y fecha limite.' },
+  { icon: Shuffle, title: 'BONUS: Simulador de Escenarios', desc: 'Modifica ticket medio, cubiertos/dia, food cost y ve impacto instantaneo en rentabilidad. 3 escenarios con comparativa visual lado a lado.' },
+  { icon: ClipboardList, title: 'BONUS: Checklist Pre-Apertura Financiero', desc: '54 items agrupados en 7 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria y obligaciones laborales. Con estado, responsable y fecha limite.' },
 ];
 
 const galleryImages = [
@@ -36,7 +36,7 @@ export default function ContentGrid() {
               <span className="text-[#FFD700]">10</span> Plantillas de Plan Financiero
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Cada plantilla incluye formulas encadenadas, graficos profesionales y benchmarks reales del sector hostelero espanol.
+              Las 10 plantillas son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA (salvo la tesoreria, que va con IVA porque es caja). Benchmarks reales del sector hostelero espanol.
             </p>
           </div>
         </FadeIn>

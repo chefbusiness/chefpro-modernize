@@ -7,7 +7,7 @@ const bonuses = [
     label: 'BONUS 1',
     title: 'Simulador de Escenarios (What-If)',
     value: '14 EUR',
-    desc: 'Modifica ticket medio, ocupacion, food cost y ve impacto instantaneo en rentabilidad. Compara 3 escenarios lado a lado: pesimista, realista y optimista.',
+    desc: 'Modifica ticket medio, cubiertos/dia, food cost y ve impacto instantaneo en rentabilidad. Compara 3 escenarios lado a lado: pesimista, realista y optimista.',
     image: '/lovable-uploads/ai-gallery/plan-financiero-graficos.jpg',
   },
   {
@@ -15,7 +15,7 @@ const bonuses = [
     label: 'BONUS 2',
     title: 'Checklist Pre-Apertura Financiero',
     value: '14 EUR',
-    desc: '48 items agrupados en 6 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria. Con estado, responsable y fecha limite para no olvidar nada.',
+    desc: '54 items agrupados en 7 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria y obligaciones laborales. Con estado, responsable y fecha limite para no olvidar nada.',
     image: '/lovable-uploads/ai-gallery/plan-financiero-reunion.jpg',
   },
 ];

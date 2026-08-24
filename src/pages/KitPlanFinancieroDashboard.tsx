@@ -21,7 +21,7 @@ const TEMPLATES = [
   { key: 'ratios', icon: PieChart, title: 'Dashboard de Ratios Financieros', desc: 'Food cost, labor cost, prime cost, GOP, RevPASH.' },
   { key: 'viabilidad', icon: FileText, title: 'Informe de Viabilidad para Bancos', desc: 'TIR, VAN, payback period. Formato profesional.' },
   { key: 'bonus-simulador', icon: Shuffle, title: 'BONUS: Simulador de Escenarios', desc: 'What-if con 3 escenarios comparados.' },
-  { key: 'bonus-checklist', icon: ClipboardList, title: 'BONUS: Checklist Pre-Apertura', desc: '48 items en 6 fases financieras.' },
+  { key: 'bonus-checklist', icon: ClipboardList, title: 'BONUS: Checklist Pre-Apertura', desc: '54 items en 7 fases financieras.' },
 ];
 
 export default function KitPlanFinancieroDashboard() {

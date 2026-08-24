@@ -874,10 +874,10 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     accessPath: '/kit-plan-financiero-access',
     emailSubject: 'Tu acceso al Kit Plan Financiero para Restaurantes',
     emailTitle: '¡Gracias por tu compra!',
-    emailBodyPostPurchase: 'Tu acceso al <strong>Kit Plan Financiero para Restaurantes</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas financieras:',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Kit Plan Financiero para Restaurantes</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 10 plantillas financieras (8 + 2 bonus):',
     emailCta: 'Acceder a mis Plantillas',
     emailTitleResend: 'Accede a tu Kit Plan Financiero',
-    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas financieras:',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar las 10 plantillas financieras (8 + 2 bonus):',
     files: {
       'plan-previsional': '/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx',
       'plan-previsional-5': '/dl/kit-plan-financiero/01b-plan-financiero-previsional-5-anos.xlsx',

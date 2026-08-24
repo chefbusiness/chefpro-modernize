@@ -67,10 +67,12 @@ export default function KitPlanFinanciero() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Sirve para un restaurante que ya esta abierto?", "acceptedAnswer": { "@type": "Answer", "text": "Si. El P&L mensual, el dashboard de ratios y el cash flow son especialmente utiles para restaurantes en funcionamiento." }},
-            { "@type": "Question", "name": "¿Necesito conocimientos de contabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Solo introduces tus numeros y las formulas calculan todo automaticamente: ratios, graficos, escenarios." }},
-            { "@type": "Question", "name": "¿El banco aceptara este informe?", "acceptedAnswer": { "@type": "Answer", "text": "Si. El formato sigue la estructura que las entidades financieras esperan: TIR, VAN, payback period, escenarios." }},
-            { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. 100% reembolso sin preguntas." }}
+            { "@type": "Question", "name": "¿Sirve para un restaurante que ya esta abierto?", "acceptedAnswer": { "@type": "Answer", "text": "Si. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente utiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son mas para aperturas o expansiones." }},
+            { "@type": "Question", "name": "¿Necesito conocimientos de contabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Las plantillas estan disenadas para hosteleros, no para contables. Solo introduces tus numeros (ventas, costes, inversiones) y las formulas calculan todo automaticamente: ratios, graficos, escenarios." }},
+            { "@type": "Question", "name": "¿El banco aceptara este informe de viabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "Te da la estructura que piden las entidades: resumen ejecutivo, proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende de tu proyecto y del banco." }},
+            { "@type": "Question", "name": "¿Las plantillas se conectan entre si?", "acceptedAnswer": { "@type": "Answer", "text": "Son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en las 10 plantillas. Dentro de cada libro si hay formulas encadenadas (mensual, total anual, resumen); entre libros no." }},
+            { "@type": "Question", "name": "¿Puedo usarlo para varios restaurantes?", "acceptedAnswer": { "@type": "Answer", "text": "Si. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauracion, inversores y consultores." }},
+            { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. Si no estas satisfecho, 100% reembolso sin preguntas." }}
           ]
         })}</script>
 

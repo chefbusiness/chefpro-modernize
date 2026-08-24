@@ -4,28 +4,28 @@ import FadeIn from '../ebook/FadeIn';
 
 const faqs = [
   {
-    q: '¿Sirve para un restaurante que ya esta abierto?',
-    a: 'Si. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente utiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son mas para aperturas o expansiones.',
+    q: '¿Sirve para un restaurante que ya está abierto?',
+    a: 'Sí. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente útiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son más para aperturas o expansiones.',
   },
   {
     q: '¿Necesito conocimientos de contabilidad?',
-    a: 'No. Las plantillas estan disenadas para hosteleros, no para contables. Solo introduces tus numeros (ventas, costes, inversiones) y las formulas calculan todo automaticamente: ratios, graficos, escenarios.',
+    a: 'No. Las plantillas están diseñadas para hosteleros, no para contables. Solo introduces tus números (ventas, costes, inversiones) y las fórmulas calculan todo automáticamente: ratios, gráficos, escenarios.',
   },
   {
-    q: '¿El banco aceptara este informe de viabilidad?',
-    a: 'Si. El formato sigue la estructura que las entidades financieras esperan ver: resumen ejecutivo, proyecciones a 3 anos, TIR, VAN, payback period y escenarios. Lo hemos validado con asesores financieros.',
+    q: '¿El banco aceptará este informe de viabilidad?',
+    a: 'Te da la estructura que piden las entidades: resumen ejecutivo, proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende de tu proyecto y del banco.',
   },
   {
-    q: '¿Las plantillas se conectan entre si?',
-    a: 'Si. Las formulas estan encadenadas: los datos del CAPEX alimentan el cash flow, el plan previsional alimenta el break-even, y los ratios se calculan automaticamente desde el P&L.',
+    q: '¿Las plantillas se conectan entre sí?',
+    a: 'Son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas (mensual, total anual, resumen); entre libros no, para que puedas mover o abrir cada plantilla por separado sin romper ninguna referencia.',
   },
   {
     q: '¿Puedo usarlo para varios restaurantes?',
-    a: 'Si. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauracion, inversores y consultores.',
+    a: 'Sí. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauración, inversores y consultores.',
   },
   {
-    q: '¿Hay garantia de devolucion?',
-    a: '30 dias de garantia completa. Si no estas satisfecho, 100% reembolso sin preguntas.',
+    q: '¿Hay garantía de devolución?',
+    a: '30 días de garantía completa. Si no estás satisfecho, 100 % reembolso sin preguntas.',
   },
 ];
 
