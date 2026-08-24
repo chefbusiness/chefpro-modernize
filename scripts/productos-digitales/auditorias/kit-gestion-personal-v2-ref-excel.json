@@ -1,0 +1,223 @@
+{
+  "lente": "REFUTADOR — técnica Excel (openpyxl + pycel) del Kit de Gestión de Personal y Turnos v2.0. Copia propia generada con CLAUDE_SCRATCHPAD=.../propio-ref-excel python3 kit-gestion-personal-v2_0/main.py --dry-run (informe .../kit-gp-v2/ref-excel.json). El pipeline cierra en VERDE (idempotencia 0, cache 0 fallos, censo 0 defectos, 28/28 demostraciones OK); lo que sigue es lo que ese verde NO mide. Toda fórmula citada se ha leído del .xlsx generado y las de comportamiento se han evaluado con pycel cambiando inputs. Producción (astro-site/public/dl/kit-gestion-personal/) NO se ha tocado.",
+  "hallazgos": [
+    {
+      "id": "RT-01",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "03-coste-laboral-mensual.xlsx :: 'Ratio Coste Laboral' :: B7 y B9",
+      "hallazgo": "TEC-10 y COM-17 («verde EXCELENTE sin datos») figuran como resueltos en §3 del mapa 86/86 y NO lo están: sólo se ha tapado el caso del fichero recién descargado. La guarda de B7 es IF(OR($B$4=\"\",$B$4<=0),\"\") — mira ÚNICAMENTE las ventas. El coste laboral, B5='=Nóminas!$G$35', es un SUM sobre una hoja vacía, así que vale 0 y no \"\": en cuanto el cliente teclea las ventas del mes (y todavía no ha metido una sola nómina) el ratio sale 0,0 % y el semáforo declara «EXCELENTE». Es el mismo falso positivo tranquilizador del R1, a un solo pulsación de distancia, en la métrica que la landing vende como argumento principal del 03.",
+      "evidencia": "B7='=IFERROR(IF(OR($B$4=\"\",$B$4<=0),\"\",ROUND($B$5/$B$4,4)),\"\")' · B5='=Nóminas!$G$35' · B9='=IF($B$7=\"\",\"— introduce las ventas del mes y las nóminas\",IF($B$7<$D$7,\"🟢 EXCELENTE (por debajo de tu objetivo)\",...))'. pycel sobre MI copia, poniendo sólo B4=50000: sin tipo → B5=0.0 B7=0.0 D7=0.3 → B9='🟢 EXCELENTE (por debajo de tu objetivo)'; tipo='Restaurante Casual' → D7=0.33, mismo veredicto; tipo='Fine Dining / Alta Cocina' → D7=0.4, mismo veredicto. El gate valores_cacheados_con_error no lo ve porque el fichero se entrega con B9 cacheado en el mensaje «— introduce las ventas...».",
+      "fix": "Añadir el coste a la guarda: B7='=IFERROR(IF(OR($B$4=\"\",$B$4<=0,$B$5=\"\",$B$5<=0),\"\",ROUND($B$5/$B$4,4)),\"\")' y que B9 distinga los dos huecos («— faltan las ventas» / «— faltan las nóminas»). Añadir la escena al gate: fijar B4 y dejar Nóminas vacía debe devolver el mensaje, no un veredicto verde."
+    },
+    {
+      "id": "RT-02",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+      "ubicacion": "01-cuadrante-turnos-semanal.xlsx :: 'Turnos' :: E5:E12, contra 'Instrucciones'!B7",
+      "hallazgo": "La hoja «Turnos» es el corazón de la v2.0 (DOM-05/TEC-05: «los horarios salen de la fórmula monstruo de I6») y está partida en dos parámetros independientes que nadie ata: C (hora inicio) y D (hora fin) son verdes editables, pero E (Horas) es una CONSTANTE verde, no una fórmula. Todo el cálculo de horas del fichero —I6, las 5 semanas del Cuadrante Mensual, la alerta N de jornada diaria— lee la columna 5 (=E) por VLOOKUP; sólo la alerta K de descanso lee C y D. Cambiar el horario de un turno deja los totales y la alerta de jornada intactos. Y las Instrucciones prometen lo contrario textualmente.",
+      "evidencia": "Turnos!E5=8 (valor, number_format 0.00, verde E8F5E9, desbloqueada), igual E6..E12. 'Instrucciones'!B7: «▸ Las horas NO están escritas dentro de la fórmula: salen de la hoja 'Turnos'. Si tu mañana empieza a las 8:00, cámbialo allí y se recalcula el kit entero». pycel sobre MI copia: A6='Ana', B6:G6='M', H6='L' → I6=48.0 y N6=''; poniendo Turnos!D5=17 (mañana de 7 a 17, 10 h reales, por encima del máximo de 9 h de Turnos!B2) → I6 SIGUE en 48.0 y N6 SIGUE en '' (E5 sigue valiendo 8). El cuadrante declara 48 h semanales donde hay 60 y calla la alerta de jornada diaria.",
+      "fix": "E5:E12 = fórmula derivada de C y D, calculada y bloqueada: '=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,24)-pausa,2))' con la pausa del partido en su propia columna verde; o, si E debe seguir siendo editable (el partido no es D−C), añadir una columna de aviso «⚠ las horas no cuadran con el horario» y corregir Instrucciones!B7. Gate: mover Turnos!D5 y exigir que I6 y N6 cambien."
+    },
+    {
+      "id": "RT-03",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "05-planificacion-vacaciones.xlsx :: 'Solicitudes' :: filas 5-34 y 'Saldo Vacaciones'!E5:F34",
+      "hallazgo": "§1.3 impone 30 empleados «en toda hoja indexada por empleado», y «Solicitudes» se ha dimensionado a 30 filas — pero esa hoja NO está indexada por empleado, está indexada por PETICIÓN. Con 30 personas eso es una única solicitud de vacaciones por persona y año. Partir las vacaciones en dos o tres periodos (lo normal en hostelería: verano + Navidad + puente) agota la hoja a los 10-15 empleados, y a partir de ahí el saldo deja de ser cierto en silencio: los SUMIFS del Saldo y la columna «Días Usados» del calendario tienen el rango cerrado en la fila 34, así que una fila 35 escrita a mano no suma en ninguna parte y además no lleva fórmulas.",
+      "evidencia": "'Solicitudes' dims A1:H36; las fórmulas D/E/F/H existen sólo en las filas 5..34 (n=30 cada una). 'Saldo Vacaciones'!E5='=IF($A5=\"\",\"\",SUMIFS(Solicitudes!$D$5:$D$34,Solicitudes!$A$5:$A$34,$A5&\"\",Solicitudes!$G$5:$G$34,\"Aprobado\"))' — rango cerrado en 34. Igual F5 (Pendientes) y 'Calendario Anual'!BC6. 'Cobertura'!F12 hace el mismo INDEX/MATCH sobre 30 filas. El saldo real por empleado (DOM-19/TEC-18, altas del R1) depende entero de esa hoja.",
+      "fix": "Dimensionar 'Solicitudes' a peticiones, no a personas: 120-150 filas (30 empleados × 4-5 periodos) con fórmulas, verde y DV replicados, y los SUMIFS/INDEX ampliados al mismo rango. Añadir al gate un caso de 3 solicitudes del mismo empleado y comprobar que el Saldo las suma."
+    },
+    {
+      "id": "RT-04",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+      "ubicacion": "05-planificacion-vacaciones.xlsx :: 'Calendario Anual' :: reglas de formato condicional sobre B6:BB35",
+      "hallazgo": "El semáforo por formato condicional real (TEC-17/COM-10, §1.2) queda anulado la mitad del año en la hoja donde más se ve. La banda gris alterna por mes lleva PRIORIDAD 3 y stopIfTrue=False, y las cuatro reglas de color de código (PE, V, B, F) llevan prioridades 4, 5, 6 y 7 — todas escriben la MISMA propiedad, el relleno. Excel resuelve el conflicto a favor de la regla de mayor precedencia, que es la de menor número: en los meses impares (enero, marzo, mayo, julio, septiembre, noviembre) la banda F5F5F5 se impone y una V, una B, una F o un PE se pintan GRISES. Julio y septiembre son precisamente las semanas 27-35 que el propio fichero precarga como temporada alta.",
+      "evidencia": "Volcado de conditional_formatting de MI copia: 'Calendario Anual' B6:BB35 → prio=3 stop=False type=expression formula=['ISODD(MONTH(B$5))'] fill=00F5F5F5 · prio=4 stop=True containsText 'PE' fill=00FFE0B2 · prio=5 'V' fill=00BBDEFB · prio=6 'B' fill=00FFC7CE · prio=7 'F' fill=00C6EFCE. En el resto del kit el patrón está bien: en 'Cuadrante Semanal' las reglas de texto van de la 1 a la 16 sin ninguna regla de expresión por encima.",
+      "fix": "Invertir el orden: insertar la banda con la prioridad MÁS ALTA (el número mayor, después de las de texto) o quitarle el relleno y darle sólo borde/fuente. Gate: comprobar que ninguna regla de tipo expression que pinta relleno tiene prioridad menor que las containsText del mismo rango."
+    },
+    {
+      "id": "RT-05",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+      "ubicacion": "02-control-horas-extras.xlsx :: 'Registro Horas'!A5:A304 y 'Resumen Mensual'!A6:A35",
+      "hallazgo": "TEC-08/COM-14 se resuelven con SUMIF/SUMIFS por NOMBRE, y el nombre se teclea dos veces a mano, en dos hojas, sin DV, sin lista y sin ninguna comprobación cruzada. Un espacio final, una tilde de menos o «Ana P.» frente a «Ana Pérez» y el resumen devuelve 0,00 h y 0,00 € para esa persona, sin un solo aviso: las horas extra existen en el registro, están calculadas, y desaparecen del cómputo y del coste. En el 05 este mismo riesgo SÍ se cubrió («⚠ ese nombre no está en el calendario», 'Solicitudes'!H5); en el 02, que es el fichero del dinero y del registro de jornada obligatorio, no.",
+      "evidencia": "'Registro Horas'!A5: sin DV (las dos únicas DV de la hoja son 'decimal between 1 12' en G5:G304 y la lista de Tipo en I5:I304), formato General, verde. 'Resumen Mensual'!A6: sin DV. B6='=IF($A6=\"\",\"\",ROUND(SUMIF(\\'Registro Horas\\'!$A$5:$A$304,$A6&\"\",\\'Registro Horas\\'!$H$5:$H$304),2))'. pycel sobre MI copia: 'Registro Horas'!A5='Ana Pérez ' (espacio final), 09:00→21:00 → H5=4 h extra; 'Resumen Mensual'!A6='Ana Pérez' → B6=0.0 y por tanto G6=0,00 €. Compárese con 'Solicitudes'!H5='=IF($A5=\"\",\"\",IF(COUNTIF(\\'Calendario Anual\\'!$A$6:$A$35,$A5&\"\")=0,\"⚠ ese nombre no está en el calendario\",\"\"))'.",
+      "fix": "Que 'Resumen Mensual'!A6:A35 sea la plantilla (fórmula enlazada o DV de lista) y que 'Registro Horas'!A5:A304 valide contra ella, más una columna de aviso en el registro con el mismo COUNTIF del 05. Como mínimo, replicar el aviso «ese nombre no está en el resumen» en el 02."
+    },
+    {
+      "id": "RT-06",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+      "ubicacion": "02-control-horas-extras.xlsx :: 'Resumen Mensual'!G6:G35",
+      "hallazgo": "El coste de las horas extra se calcula sobre B (TODAS las horas extra del mes) y no sobre D (las computables). Las columnas C y D existen precisamente para descontar las del art. 35.2 —fuerza mayor y compensadas con descanso—, y las compensadas con descanso, por definición, se pagan en tiempo de descanso y no en dinero. El resultado es que el kit factura a 1,25× unas horas que él mismo acaba de declarar no computables dos columnas antes. La fórmula reproduce lo que dice §2 de la SPEC, así que el defecto viene de la especificación, pero se entrega en el fichero.",
+      "evidencia": "G6='=IF($B6=\"\",\"\",ROUND($B6*$B$3*$D$3,2))' con B3=12,00 € y D3=1,25. D6='=IF($A6=\"\",\"\",ROUND($B6-$C6,2))' y C6 suma los dos SUMIFS de 'Fuerza mayor' y 'Compensada con descanso'. pycel sobre MI copia: una jornada 09:00→21:00 marcada Tipo='Compensada con descanso' → B6=4.0, C6=4.0, D6=0.0 y aun así G6=60,0 €. SPEC §2 escribe literalmente '=IF($B6=\"\",\"\",ROUND($B6*$B$3*$D$3,2))'.",
+      "fix": "G6 sobre $D6 (computables) y, si se quiere conservar el bruto, una columna aparte «coste si se pagaran todas». Corregir §2 de la SPEC en el mismo commit para que no se vuelva a generar."
+    },
+    {
+      "id": "RT-07",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_c.py",
+      "ubicacion": "grupo_c.py:703 (DIAS_18) → 07-directorio-plantilla.xlsx :: 'Plantilla'!V5:V34",
+      "hallazgo": "La constante que marca la mayoría de edad está mal: 18 años son 6.574 días (18 × 365,2425), no 6.570. El comentario del código dice «18 años en días» y añade que va dentro de la fórmula «a propósito: no es un parámetro del negocio, es la mayoría de edad» — es decir, se ha razonado la decisión de cablearla y se ha cableado el número equivocado. Consecuencia: el aviso «MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)» se APAGA hasta cinco días antes de que el trabajador cumpla 18, justo en el tramo en que sigue siendo menor y en que la restricción legal sigue viva.",
+      "evidencia": "grupo_c.py:703 'DIAS_18 = 6570'. V5='=IF($C5=\"\",\"\",IF(TODAY()-$C5<6570,\"⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)\",\"\"))'. pycel sobre MI copia con TODAY()=24/08/2026: nacido 29/08/2008 (6.569 d, cumple 18 el 29/08/2026) → avisa ✓; nacido 28/08/2008 (6.570 d, cumple 18 el 28/08/2026, AÚN MENOR) → V5='' ✗; nacido 27/08/2008 (cumple el 27/08/2026, aún menor) → V5='' ✗.",
+      "fix": "No contar días: '=IF($C5=\"\",\"\",IF(EDATE($C5,216)>TODAY(),\"⚠ MENOR DE EDAD...\",\"\"))' o DATE(YEAR($C5)+18,MONTH($C5),DAY($C5))>TODAY(). Si EDATE no evalúa en pycel, usar la variante DATE. Caso de gate: fecha de nacimiento = hoy − 6570 días debe avisar."
+    },
+    {
+      "id": "RT-08",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "05-planificacion-vacaciones.xlsx :: 'Saldo Vacaciones'!D5:D34",
+      "hallazgo": "El prorrateo por fecha de alta (DOM-19) no tiene suelo: cubre por arriba con MIN(derecho, prorrateo) pero no por abajo con MAX(0, ...). Una fecha de alta posterior a la de cierre del año —trivial de teclear, porque la fecha de cierre por defecto es 31/12/2027 y basta con dar de alta a alguien en 2028— produce un DERECHO NEGATIVO, que se arrastra a «Le quedan» y dispara la alerta «⛔ saldo negativo», que el cliente leerá como un problema de exceso de vacaciones. §1.5 exige guarda «en restas y productos» y aquí hay las dos.",
+      "evidencia": "D5='=IFERROR(IF($A5=\"\",\"\",IF($B5=\"\",IF($C5=\"\",$B$2,$C5),MIN(IF($C5=\"\",$B$2,$C5),ROUND(IF($C5=\"\",$B$2,$C5)*($E$2-$B5+1)/365,1)))),\"\")' con E2=31/12/2027 y B2=30. pycel sobre MI copia: alta 01/07/2027 → D5=15,1 ✓; alta 01/03/2020 → D5=30 ✓ (el MIN cubre por arriba); alta 01/03/2028 → D5=-4,9, G5=-4,9 y H5='⛔ saldo negativo'. Además el divisor 365 está cableado y no se lee del año de $E$2.",
+      "fix": "MAX(0, MIN(...)) en D5 y, mejor, una alerta explícita «⚠ la fecha de alta es posterior al cierre del año» en la columna H. Sustituir el 365 por ($E$2-DATE(YEAR($E$2),1,1)+1)."
+    },
+    {
+      "id": "RT-09",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+      "ubicacion": "02-control-horas-extras.xlsx :: 'Registro Horas'!F5:F304",
+      "hallazgo": "La columna «Horas trabajadas» del registro de jornada devuelve valores NEGATIVOS si la pausa supera el tramo entrada-salida. La DV de la pausa (E) es inexistente —las únicas dos DV de la hoja son la de G y la de I— así que nada impide teclear 6 en una jornada de 4 h, ni un 8 donde se quería un 0,8. §1.5 exige guarda en toda resta y ésta no la tiene: F5 resta la pausa después de calcular el tramo y entrega el resultado sin acotar. En un documento que es el soporte del registro de jornada del art. 34.9 ET, una fila con −2,00 h es un asiento inválido.",
+      "evidencia": "F5='=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,1)*24-IF($E5=\"\",0,$E5),2))'. E5:E304 verde, number_format 0.00, sin DV. pycel sobre MI copia: C5=09:00, D5=13:00, E5=6 → F5=-2.0 (H5=0 porque MAX(0,...) sí protege la columna de extras, de modo que el error no salta en ningún total y se queda sólo en el registro).",
+      "fix": "F5 = MAX(0, ...) o, mejor, IF(pausa>tramo,\"⚠ pausa mayor que la jornada\", ...), más DV decimal 0-8 en E5:E304 con showErrorMessage=True, como la que ya tiene G."
+    },
+    {
+      "id": "RT-10",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_c.py",
+      "ubicacion": "06-evaluacion-desempeno.xlsx :: 'Histórico'!G5:G34",
+      "hallazgo": "TEC-27 figura como resuelto en §4 («la tendencia compara los dos últimos trimestres informados») y la fórmula no hace eso: INDEX($B5:$E5, COUNT($B5:$E5)) devuelve la posición N-ésima, no el N-ésimo valor informado. Sólo coincide si los trimestres se rellenan de izquierda a derecha sin huecos. Con un hueco —una evaluación que no se hizo ese trimestre, que es exactamente el caso que motivó el hallazgo— compara el par equivocado y puede invertir el veredicto que el jefe de sala lleva a la entrevista.",
+      "evidencia": "G5='=IF(COUNT($B5:$E5)<2,\"\",IF(INDEX($B5:$E5,COUNT($B5:$E5))>INDEX($B5:$E5,COUNT($B5:$E5)-1),\"↑ Mejora\",IF(INDEX($B5:$E5,COUNT($B5:$E5))<INDEX($B5:$E5,COUNT($B5:$E5)-1),\"↓ Baja\",\"→ Estable\")))'. pycel sobre MI copia: Q1=5,0 · Q2=1,0 · Q3 vacío · Q4=4,0 → los dos últimos informados son Q2 (1,0) y Q4 (4,0), o sea MEJORA, y G5 devuelve '↓ Baja' (compara D5, vacío, contra C5=1,0).",
+      "fix": "Usar la posición del último informado, no el contador: MATCH sobre el último no vacío (LOOKUP(2,1/($B5:$E5<>\"\"),$B5:$E5) y la penúltima con el mismo patrón sobre el rango recortado), o dejar la comparación entre los dos últimos CONTIGUOS y decirlo así en la columna. Añadir el caso con hueco a la batería del gate."
+    },
+    {
+      "id": "RT-11",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "05-planificacion-vacaciones.xlsx :: 'Calendario Anual'!B38:BB38",
+      "hallazgo": "La fila de alerta de cobertura mezcla dos cosas incompatibles y la más grave queda tapada por la más frecuente. La rama de temporada alta se evalúa primero y con la condición B$37>0, así que UNA sola ausencia en cualquiera de las 11 semanas precargadas como «Alta» pinta el bloqueante ⛔; y a la vez, si en esa misma semana hay 10 ausencias con un máximo configurado de 4, el «⚠ EXCESO» —la única alerta que compara contra el parámetro que el cliente ha fijado en Cobertura!B3— NUNCA aparece. El resultado es un ⛔ constante que el usuario aprende a ignorar y una alerta útil que no se ve.",
+      "evidencia": "B38='=IF(B$37=0,\"\",IF(AND(B$36=\"Alta\",B$37>0),\"⛔ TEMP. ALTA\",IF(B$37>Cobertura!$B$3,\"⚠ EXCESO\",\"\")))'. TEMPORADA_ALTA (grupo_b.py) precarga 'Alta' en las semanas 27-35 y 51-52. pycel sobre MI copia con Cobertura!B3=4: 10 ausencias en la semana 1 con B36='Alta' → B37=10, B38='⛔ TEMP. ALTA'; las MISMAS 10 con B36='Normal' → B38='⚠ EXCESO'; UNA sola ausencia con B36='Alta' → B37=1, B38='⛔ TEMP. ALTA'.",
+      "fix": "Separar magnitud y temporada: evaluar primero el exceso sobre B3 y usar la temporada como agravante («⛔ EXCESO en TEMP. ALTA»), o poner en temporada alta un umbral propio (p. ej. 1) en vez de >0 fijo, con su celda verde."
+    },
+    {
+      "id": "RT-12",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/main.py",
+      "ubicacion": "main.py:672-695 (demo_proteccion) y línea final del resumen (main.py:959)",
+      "hallazgo": "El gate de protección recoge el dato que importa y no lo usa. demo_proteccion() construye por hoja un dict con 'protegida', 'con_password', 'verdes' y 'verdes_desbloqueadas', pero la lista de fallos sólo se alimenta de dos comprobaciones: verdes != verdes_desbloqueadas, y con_password. El campo 'protegida' no aparece en ninguna condición: una hoja con protection.sheet=False pasa el gate en verde. Hoy salen así 9 de las 30 hojas (las nueve 'Instrucciones', por la regla deliberada de motor.proteger de no proteger hojas sin verdes) mientras §1.6 de la SPEC pide «protección de las 22 hojas sin contraseña» y el resumen imprime «MOTOR VERDE (idempotencia, cache, censo, protección, leyenda única)». El riesgo no es esta excepción documentada, es que el gate no puede detectar ninguna otra.",
+      "evidencia": "main.py:690-694: «fallos = ['{}: {} verdes y sólo {} desbloqueadas'... for d in fuera if d['verdes'] != d['verdes_desbloqueadas']]; fallos += ['{}: protegida CON contraseña'... for d in fuera if d['con_password']]» — no hay un tercer bloque sobre d['protegida']. motor.py:1789: «if not verdes and ws.title not in PROTEGER_SIN_VERDE: ws.protection.sheet = False; return 0». Recuento en MI copia: 21 hojas con protection.sheet=True y 9 con False (todas 'Instrucciones'). El informe ref-excel.json cierra con exit 0.",
+      "fix": "Añadir a demo_proteccion el fallo «{}: hoja SIN proteger» para toda hoja con protegida=False que no esté en una lista blanca explícita (las 9 Instrucciones), y cuadrar §1.6 con el número real de hojas (30, no 22)."
+    },
+    {
+      "id": "RT-13",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "grupo_b.py:791 (LUNES_SEMANA_1) y grupo_b.py:959 (fecha de cierre) → 05-planificacion-vacaciones.xlsx",
+      "hallazgo": "El calendario anual entero está anclado a 2027 con literales, y ese año se cachea en el fichero que se descarga: las 53 fechas de la fila 5 se entregan calculadas de 04/01/2027 a 03/01/2028 y la fecha de cierre del saldo es 31/12/2027. El comentario justifica el año siguiente al de publicación, pero es un literal, no una derivación: el kit se vende sin reconstruirse durante años, así que un cliente de 2028 o 2029 abre un calendario de 2027 y un saldo que cierra en un año pasado (que además es el input del prorrateo, ver RT-08). Ningún gate compara el año del fichero contra el año en curso.",
+      "evidencia": "grupo_b.py:791 'LUNES_SEMANA_1 = datetime.datetime(2027, 1, 4)'; grupo_b.py:959 '_verde(ws, \\'E2\\', datetime.datetime(2027, 12, 31), motor.FMT_FECHA)'. En MI copia, 'Calendario Anual'!B5 = 2027-01-04 y los valores cacheados de C5..BB5 van de 11/01/2027 a 03/01/2028 (53 fechas escritas por inject_cache). 'Saldo Vacaciones'!E2 = 31/12/2027. Añádase que la fila 36 (temporada alta) se precarga por NÚMERO de semana (27-35, 51-52) y no se mueve si el cliente cambia B5, mientras la banda gris sí (usa MONTH(B$5)): dos cosas que dependen del mismo ancla y sólo una la sigue.",
+      "fix": "Derivar el ancla en tiempo de construcción (primer lunes del año siguiente a la fecha de build) y el cierre como 31/12 de ese mismo año, y añadir un gate que falle si el año del calendario es anterior al año en curso. Para la temporada alta, calcularla por mes de B5 en vez de por número de semana."
+    },
+    {
+      "id": "RT-14",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "05-planificacion-vacaciones.xlsx :: 'Cobertura'!B6:E8",
+      "hallazgo": "El bloque «PERSONAL MÍNIMO POR TURNO» —seis celdas verdes precargadas (2/2/0, 3/2/1, 2/2/1) y tres totales— no alimenta ninguna fórmula del kit. Ni los cuatro indicadores de la propia hoja (B44:B47) ni la fila de alerta del calendario (B38, que sólo lee Cobertura!B3) lo consultan. Es exactamente el defecto que el R1 señalaba en esta hoja («Cobertura deja de ser una tabla vacía», DOM-20/COM-20): ha dejado de estar vacía, pero sigue sin estar conectada, y el cliente que ajuste esos mínimos no verá cambiar nada en ningún sitio. La promesa reformulada de la landing («cobertura mínima real») descansa sobre esa tabla.",
+      "evidencia": "'Cobertura'!B6='=IF(COUNT($C6:$E6)=0,\"\",$C6+$D6+$E6)' (n=3, filas 6-8). Búsqueda de referencias a B6:B8 o C6:E8 en los 9 ficheros de MI copia: ninguna. Los indicadores son B44='=COUNTIF(\\'Calendario Anual\\'!$A$6:$A$35,\"?*\")', B45='=MAX(\\'Calendario Anual\\'!$B$37:$BB$37)', B46='=COUNTIF(\\'Calendario Anual\\'!$B$37:$BB$37,\">\"&$B$3)', B47=SUMPRODUCT(...B$36=\"Alta\"...) — todos contra B3, ninguno contra B6:B8. 'Calendario Anual'!B38 idem.",
+      "fix": "Enlazarlo: derivar el máximo de ausencias simultáneas del mínimo por turno y la plantilla total (B3 = plantilla − MAX(B6:B8), como fórmula sugerida y editable), o añadir un indicador «semanas en que la plantilla disponible cae por debajo del mínimo del turno más exigente»."
+    },
+    {
+      "id": "RT-15",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+      "ubicacion": "02-control-horas-extras.xlsx :: 'Registro Horas'!F5:F304",
+      "hallazgo": "MOD($D5-$C5,1) hace indistinguibles dos casos que en un registro de jornada son opuestos: entrada = salida devuelve 0,00 h en silencio. Ocurre al teclear la misma hora dos veces (error frecuente de transcripción de un parte de firmas) y también en la jornada de 24 h. La celda queda a cero, la fila parece cumplimentada y el empleado pierde el día entero del cómputo sin que ninguna de las cuatro alertas del kit lo detecte: 'Resumen Mensual' agrega H (extras), que también sale 0. La SPEC documenta la alternativa IF(D<C,D+1-C,D-C)*24, que tiene el mismo punto ciego.",
+      "evidencia": "F5='=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,1)*24-IF($E5=\"\",0,$E5),2))'. pycel sobre MI copia: C5=09:00 D5=09:00 → F5=0.0 (mismo resultado que una jornada no trabajada); C5=23:00 D5=07:00 → F5=8.0 (esto sí, correcto).",
+      "fix": "Distinguir el caso: '=IF(OR($C5=\"\",$D5=\"\"),\"\",IF($C5=$D5,\"⚠ entrada y salida iguales\",ROUND(...)))', o una columna de aviso con la misma condición."
+    },
+    {
+      "id": "RT-16",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_a.py",
+      "ubicacion": "02-control-horas-extras.xlsx :: 'Resumen Mensual'!F5 (cabecera) y F6:F35 (formato)",
+      "hallazgo": "La columna del veredicto frente al tope anual se titula «Límite anual de horas extra», que es literalmente el rótulo del parámetro E3/F3 dos filas más arriba. El cliente lee una cabecera que anuncia un número y encuentra «✓ dentro» o «⛔ EXCEDE (12 h)». Además esas celdas llevan number_format '0.00' aunque siempre contienen texto, herencia del bloque numérico vecino.",
+      "evidencia": "'Resumen Mensual'!F5='Límite anual de horas extra' y E3='Límite anual de horas extra:' con F3=80. F6='=IF($E6=\"\",\"\",IF($E6>$F$3,\"⛔ EXCEDE (\"&TEXT($E6-$F$3,\"0\")&\" h)\",IF($E6>$F$3*0.8,\"⚠ cerca del límite\",\"✓ dentro\")))' con number_format '0.00'.",
+      "fix": "Cabecera «Estado frente al límite anual» y number_format 'General' en F6:F35."
+    },
+    {
+      "id": "RT-17",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+      "ubicacion": "01-cuadrante-turnos-semanal.xlsx :: 'Cuadrante Mensual' (print_title_rows)",
+      "hallazgo": "TEC-22/TEC-23 piden títulos de impresión en las rejillas anchas y en el mensual se ha fijado '$4:$4', que es la cabecera del bloque SEMANA 1. La hoja tiene 202 filas y seis bloques con su propia cabecera (filas 4, 37, 70, 103, 136 y 169), así que al imprimir se repite en todas las páginas la cabecera de la primera semana; y como la fila 3 (leyenda de códigos y rótulo «SEMANA 1») queda fuera del título repetido, las páginas de las semanas 2 a 5 salen sin saber a qué semana pertenecen. Detalle relacionado: «SEMANA 1» vive en A3 compartiendo fila con la leyenda, mientras SEMANA 2..5 sí tienen su fila combinada propia (A36:J36, A69:J69, A102:J102, A135:J135).",
+      "evidencia": "'Cuadrante Mensual': print_title_rows='$4:$4', print_title_cols='$A:$A', print_area='$A$1:$J$202', 202 filas. Cabeceras 'Empleado|Lunes|...|Alerta semanal' en las filas 4, 37, 70, 103, 136 y 169. merged_cells incluye A36:J36, A69:J69, A102:J102, A135:J135 y A168:J168, pero no A3:J3.",
+      "fix": "Poner un salto de página por bloque (ws.row_breaks) y repetir '$1:$2' (título del documento) en vez de la cabecera de un bloque concreto; o mover 'SEMANA 1' a su propia fila combinada para que los cinco bloques sean iguales."
+    },
+    {
+      "id": "RT-18",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "05-planificacion-vacaciones.xlsx :: 'Cobertura'!A12:A41 y F12:F41",
+      "hallazgo": "«Empleado Ausente» es texto libre sin DV ni comprobación, y la columna «Días pendientes» que lo acompaña resuelve por INDEX/MATCH envuelto en IFERROR: un nombre mal escrito devuelve celda vacía, indistinguible de un empleado que no tiene días pendientes. La hoja hermana 'Solicitudes' sí trae el aviso «⚠ ese nombre no está en el calendario» para el mismo riesgo, y la columna B de esta misma hoja sí trae DV de puesto con 14 valores. La incoherencia es dentro de la misma pantalla.",
+      "evidencia": "'Cobertura'!F12='=IFERROR(IF($A12=\"\",\"\",INDEX(\\'Saldo Vacaciones\\'!$G$5:$G$34,MATCH($A12,\\'Saldo Vacaciones\\'!$A$5:$A$34,0))),\"\")'. La única DV de la hoja es la lista de puestos sobre B12:B41. 'Solicitudes'!H5 hace el COUNTIF de control que aquí falta.",
+      "fix": "Replicar el aviso de 'Solicitudes'!H en una columna G de 'Cobertura', con el mismo COUNTIF sobre 'Calendario Anual'!$A$6:$A$35."
+    },
+    {
+      "id": "RT-19",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_b.py",
+      "ubicacion": "04-onboarding-nuevo-empleado.xlsx :: 'Checklist Onboarding'!E7:E68",
+      "hallazgo": "La columna «Fecha Límite», que §4 manda precargar, se ha rellenado con TEXTO («Día -1», «Día 1», «Día 7», «Día 30») sobre celdas con number_format 'dd/mm/yyyy'. El formato de fecha no hace nada sobre texto, pero deja la columna en un estado mixto: si el cliente sustituye «Día 1» por la fecha real (que es justo lo que la columna invita a hacer) esa celda se vuelve fecha y las demás siguen siendo texto, con lo que ordenar o filtrar por fecha límite mezcla los dos tipos.",
+      "evidencia": "E7='Día -1' con number_format 'dd/mm/yyyy'; igual E8:E19 ('Día -1'/'Día 1'), E23:E30, E34:E42, E46:E57, E61:E68 ('Día 1'/'Día 30'). Las 50 celdas son texto.",
+      "fix": "O number_format 'General' y dejarlo como plazo relativo (coherente), o una columna de plazo relativo en texto más otra de fecha real formateada, precargada con '=fecha_alta+N' a partir de la celda D3 «Fecha alta»."
+    },
+    {
+      "id": "RT-20",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_c.py",
+      "ubicacion": "BONUS-02 :: 'Ratios por Tipo'!B5:D14 y H5:H14 · 07 :: 'Plantilla'!G5:G34",
+      "hallazgo": "§1.6 impone formatos por tipo de dato y quedan tres columnas con el formato del tipo contrario: los rangos orientativos de la tabla de ratios («22-28», «—») llevan number_format '0'; la columna «Ratio Coste Laboral» de la misma tabla («28-33%») lleva '0.0%'; y la columna «Jornada» del directorio lleva '0.00' cuando su DV sólo admite las cadenas «Completa» y «Parcial». No rompe nada en Excel —el texto se muestra tal cual— pero deja tres columnas cuyo formato contradice lo que se puede escribir en ellas, y basta con que alguien teclee un número donde hay un rango para que se muestre como porcentaje o con dos decimales sin querer.",
+      "evidencia": "'Ratios por Tipo'!B5='22-28' [0], C5='20-25' [0], D5='70-90' [0], B9='—' [0], H5='28-33%' [0.0%], H11='22-28%' [0.0%]. 'Plantilla'!G5 vacía con number_format '0.00' y DV list '\"Completa,Parcial\"' sobre G5:G34.",
+      "fix": "number_format 'General' (o '@') en las columnas de texto: B:D y H de 'Ratios por Tipo' y G de 'Plantilla'."
+    },
+    {
+      "id": "RT-21",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/main.py",
+      "ubicacion": "main.py:844-880 (gate 4/7) y §1.5 de la SPEC",
+      "hallazgo": "§1.5 pide cuatro cosas del fichero recién descargado —«ninguna hoja puede enseñar un #¡DIV/0!, un veredicto, un porcentaje ni un contador distinto de cero»— y el gate implementa una: la lista de los ocho errores de Excel. Los otros tres no se comprueban, y de hecho el kit los incumple a propósito en el BONUS-02, que se entrega con el veredicto «🟢 EXCELENTE» y el porcentaje 31,3 % cacheados porque §3 exige que el caso por defecto se vea resuelto. La SPEC se contradice consigo misma y no hay nada que arbitre: si mañana un veredicto se cuela por error en el 03 o en el 06, el gate seguirá en verde.",
+      "evidencia": "El informe de MI copia trae gates.valores_cacheados_con_error = {} y ningún gate sobre veredictos, porcentajes o contadores. Valores cacheados que se entregan: 'BONUS-02'!B41=0.3133 [0.0%] y B43='🟢 EXCELENTE (por debajo de tu objetivo)'; '03'!'Previsión por Servicio'!B21=7.0, B22=16292.5; '06'!'Ficha (ejemplo relleno)'!C23='✓ BUENO'. En cambio '03'!'Ratio Coste Laboral'!B9 sí sale con el mensaje neutro y '04'!C73=0.0.",
+      "fix": "Escribir el gate con lista blanca explícita: hojas y celdas donde un veredicto o un porcentaje cacheado es DELIBERADO (BONUS-02!B41/B43, Previsión, Ficha ejemplo) y fallo en cualquier otra. Y corregir §1.5 para que reconozca la excepción."
+    },
+    {
+      "id": "RT-22",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+      "ubicacion": "03-coste-laboral-mensual.xlsx :: 'Ratio Coste Laboral' (freeze_panes)",
+      "hallazgo": "§1.6 pide freeze_panes en 'Ratio' y se ha fijado en A14, que inmoviliza 13 de las 22 filas de la hoja. La zona desplazable queda en nueve filas (la tabla de referencia) y el resto de la pantalla se lo comen unas cabeceras que no necesitan quedar fijas porque la hoja cabe entera. En una ventana de portátil eso deja la tabla de referencia reducida a un par de filas visibles.",
+      "evidencia": "'Ratio Coste Laboral': freeze_panes='A14', dims A1:E22, print_title_rows='$13:$13'. Compárese con 'Previsión por Servicio' (freeze A4, 26 filas) y con 'Nóminas' (freeze A5, 37 filas).",
+      "fix": "freeze_panes en A13 sólo si se quiere fijar la cabecera de la tabla, o ninguno: la hoja entra en pantalla."
+    },
+    {
+      "id": "RT-23",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+      "ubicacion": "06-evaluacion-desempeno.xlsx :: 'Ficha Evaluación' y 'Ficha (ejemplo relleno)' (23 celdas cada una) · BONUS-01 :: 'Briefing'!B61:D63",
+      "hallazgo": "La convención de familia dice que en una hoja protegida sólo las verdes E8F5E9 están desbloqueadas, y hay 55 celdas desbloqueadas sin verde. Todas son celdas NO ancla de rangos combinados (C4:D8 sobre C4:D4..C8:D8, C27:D29/C32:D34/C37:D39 sobre B27:D27.., B61:D63 sobre A61:D61..), donde motor.proteger no puede fijar Protection porque openpyxl devuelve MergedCell de sólo lectura. En Excel el efecto visible es nulo —la región combinada se pinta con el estilo del ancla, que sí es verde— pero deja la invariante rota en los bytes y, si mañana alguien deshace una combinación, aparecen celdas editables sin marcar.",
+      "evidencia": "'Ficha Evaluación': desbloqueadas sin verde = D4,D5,D6,D7,D8,C27,D27,C28,D28,C29,D29,C32,D32,C33,D33,C34,D34,C37,D37,C38,D38,C39,D39 (23); merged_cells incluye C4:D4..C8:D8 y B27:D27..B39:D39. Ídem 'Ficha (ejemplo relleno)'. 'Briefing': B61,C61,D61,B62,C62,D62,B63,C63,D63 (9), con merges A61:D61, A62:D62, A63:D63. En las 27 hojas restantes verdes == desbloqueadas exactamente.",
+      "fix": "En motor.proteger, después de fijar Protection, propagar el estilo del ancla a las celdas de cada MergedCellRange (ws.merged_cells.ranges → asignar fill y protection sobre las celdas subyacentes con ws._cells), o excluir explícitamente las no-ancla del recuento y documentarlo en la convención."
+    },
+    {
+      "id": "RT-24",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_c.py",
+      "ubicacion": "07-directorio-plantilla.xlsx :: 'Vencimientos'!B3",
+      "hallazgo": "B3='=TODAY()' se entrega con el valor cacheado de la fecha de CONSTRUCCIÓN, y de él dependen las 120 alertas de vencimiento y los tres contadores de la cabecera. En Excel no hay problema (los nueve libros llevan fullCalcOnLoad=True y recalculan al abrir), pero el cache existe precisamente para los visores que no recalculan —la vista previa de Drive, el Quick Look del móvil—, y ahí la hoja rotula «Fecha de hoy: 24/08/2026» para siempre y sus semáforos son los de ese día. Es el único punto del kit donde el cache y una función volátil se cruzan.",
+      "evidencia": "'Vencimientos'!B3='=TODAY()' con valor cacheado datetime(2026,8,24) — la fecha en que se construyó MI copia. E3/E4/E5 cacheados a 0. wb.calculation.fullCalcOnLoad=True en los 9 ficheros.",
+      "fix": "No cachear las volátiles: excluir TODAY()/NOW() en inject_cache.py, o añadir bajo la celda la nota «se actualiza al abrir en Excel; en la vista previa del móvil verás la fecha de descarga»."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "El pipeline cierra en verde y aun así el kit no está listo: cinco defectos altos, dos de ellos sobre hallazgos que el mapa 86/86 declara resueltos. (1) RT-01: TEC-10/COM-17 «verde EXCELENTE sin datos» sigue vivo — con las nóminas vacías y sólo las ventas tecleadas, 03!'Ratio'!B9 declara EXCELENTE con un ratio del 0,0 % (verificado con pycel para los tres tipos de negocio); sólo se tapó el caso del fichero intacto. (2) RT-02: Turnos!E5:E12 son constantes, así que cambiar el horario de un turno NO recalcula nada — 01!Instrucciones!B7 promete «se recalcula el kit entero» y una mañana de 7 a 17 sigue contando 8 h y no dispara la alerta de jornada diaria. (3) RT-03: 'Solicitudes' tiene 30 filas para 30 empleados, o sea una petición de vacaciones por persona y año, y los SUMIFS del saldo cierran en la fila 34: el sistema de saldo real (DOM-04/DOM-19) se queda corto en cuanto alguien parte sus vacaciones en dos. (4) RT-04: en 05!'Calendario Anual' la banda gris por mes tiene prioridad 3 y los colores de código 4-7, de modo que en los seis meses impares —julio y septiembre incluidos, que son temporada alta— el semáforo de la v2.0 se pinta gris. (5) RT-05: el cruce 02 Registro↔Resumen se hace por nombre tecleado dos veces sin DV ni chequeo; un espacio final borra las horas extra de una persona del cómputo y del coste, sin aviso, cuando en el 05 ese mismo control sí se construyó. A eso se suman siete medios con consecuencia legal o de dinero (RT-06 cobra a 1,25× las horas compensadas con descanso; RT-07 apaga el aviso de menor de edad hasta cinco días antes de los 18 por una constante de 6570 días donde van 6574; RT-08 entrega derechos de vacaciones negativos; RT-09 horas trabajadas negativas en un registro de jornada; RT-10 la tendencia del histórico compara el par equivocado en cuanto hay un hueco; RT-11 el ⛔ de temporada alta enmascara el ⚠ de exceso y salta con una sola ausencia; RT-13 el calendario está cableado a 2027) y, sobre todo, RT-12 y RT-21: los gates que dan el verde no comprueban la protección de hoja ni tres de las cuatro cláusulas de §1.5, así que ese verde no cubre lo que su propio resumen dice cubrir. Nada de esto se ha ejecutado sobre producción: todo sale de una copia --dry-run propia."
+}

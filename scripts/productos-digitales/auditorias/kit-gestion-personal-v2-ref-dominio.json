@@ -1,6 +1,277 @@
 {
-  "lente": "REFUTADOR de dominio (EN CURSO — borrador parcial, se sobrescribe al cerrar)",
-  "hallazgos": [],
+  "lente": "REFUTADOR de dominio — jefe/a de operaciones y almacen de restaurante con 15 anos (el encargo llegaba con la lente literal del kit de INVENTARIO: temperaturas legales, FIFO, EOQ, unidades; se aplica lo que existe en ESTE kit —el bloque de temperaturas APPCC y el arqueo de caja del BONUS-01, las unidades de hora/euro/dia y los datos precargados— y se completa con la lente laboral que el producto realmente sirve). Pregunta unica: un lunes por la manana, delante de 30 personas, esto se usa o se cierra. Copia propia generada con CLAUDE_SCRATCHPAD=.../propio-ref-dominio main.py --dry-run (informe .../kit-gp-v2/ref-dominio.json, MOTOR VERDE). Cero escrituras en astro-site/public/dl/.",
+  "hallazgos": [
+    {
+      "id": "RD-01",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "'Ratio Coste Laboral'!B9 (formula en grupo_b.py:355 para B7)",
+      "hallazgo": "El semaforo sigue felicitando a quien no ha medido: TEC-10/COM-17 («nada de verde con la hoja vacia») figura como resuelto en el SPEC §3 y no lo esta. La guarda se puso solo del lado de las ventas.",
+      "evidencia": "B5 = '=Nominas!$G$35' y su cache es 0.0 (las 30 filas G5:G34 devuelven \"\" y SUM(\"\")=0). B7 = '=IFERROR(IF(OR($B$4=\"\",$B$4<=0),\"\",ROUND($B$5/$B$4,4)),\"\")' no mira B5. En cuanto el usuario teclea las ventas del mes sin haber volcado una sola nomina, B7 = 0 (0,0 %) y B9 = '=IF($B$7=\"\",\"— introduce...\",IF($B$7<$D$7,\"🟢 EXCELENTE (por debajo de tu objetivo)\"...' devuelve 0 < 0,33 -> verde EXCELENTE con formato condicional verde incluido.",
+      "fix": "Ampliar la guarda a las dos entradas: =IF(OR($B$4=\"\",$B$4<=0,$B$5=\"\",$B$5<=0),\"\",...) y anadir un suelo de plausibilidad al veredicto (por debajo de ~0,60 x objetivo, «⚠ ratio implausible: revisa que esten todas las nominas»), porque un ratio muy BAJO es tan alarma como uno alto."
+    },
+    {
+      "id": "RD-02",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "'Resumen Mensual'!G6:G35 (grupo_a.py:885)",
+      "hallazgo": "El coste de las horas extra se calcula sobre el TOTAL del mes, incluidas las que el propio usuario ha marcado «Compensada con descanso». Esas horas, por definicion del art. 35.1 ET, se pagan con tiempo de descanso y NO con dinero: el kit las paga dos veces.",
+      "evidencia": "G6 = '=IF($B6=\"\",\"\",ROUND($B6*$B$3*$D$3,2))' con B6 = SUMIF sobre TODA la columna H del registro. La columna C ya separa las no computables ('=...SUMIFS(...,\"Fuerza mayor\")+SUMIFS(...,\"Compensada con descanso\")') y la D las computables, pero G ignora las dos. Con 20 h compensadas a 12,00 EUR x 1,25 el resumen imputa 300 EUR que no se pagan, y ademas ya se ha dado el descanso.",
+      "fix": "G = ROUND(($B6 - SUMIFS(...,\"Compensada con descanso\"))*$B$3*$D$3,2), o mas limpio: una columna «H. extra retribuidas» = B - compensadas, y que G multiplique esa. Las de fuerza mayor SI se pagan (solo no computan en el tope), asi que no deben salir del coste."
+    },
+    {
+      "id": "RD-03",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "'Calculadora'!B12 y B28; espejo en 03!'Prevision por Servicio'!B10 y B20",
+      "hallazgo": "El numero estrella de la v2.0 (7 FTE, 16.292,50 EUR/mes, ratio 31,3 %) descansa en «horas efectivas por servicio = 4», y en todo el kit NO EXISTE un turno de 4 h: el 01 define M/T/N de 8 h y el Partido de 9 h. Los dos modelos del mismo kit no se pueden reconciliar.",
+      "evidencia": "BONUS-02!B28 = '=IF(...,$B$27*$B$12*$B$7)' -> 10 presencias x 4 h x 6 dias = 240 h/semana -> B29 = CEILING(240/40*1,15,1) = 7. Con los turnos que el propio kit define en 01!'Turnos'!A5:E12 (M 7->15 = 8 h; P 10->23 = 9 h), esas mismas 10 presencias/dia son 480 h/semana en turnos simples de 8 h (-> 14 FTE) o 270 h/semana si 5 personas hacen partido los 6 dias (-> 8 FTE), nunca 240. Ademas la mise en place, el cierre y la limpieza quedan fuera de la «hora efectiva de servicio».",
+      "fix": "Dimensionar en TURNOS, no en «horas de servicio»: presencias/dia x horas del turno elegido en 01!'Turnos' (con VLOOKUP, no un 4 suelto), y renombrar B12 a «Horas del turno que cubre ese servicio (incluida mise en place y cierre)» con un valor por defecto de 8. Si el resultado por defecto deja de ser 7, hay que recalibrar la nota A50 y el changelog, no maquillar el 4."
+    },
+    {
+      "id": "RD-04",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx",
+      "ubicacion": "'Briefing'!A46:D51 (bloque CAJA), formulas D48, D49, D50",
+      "hallazgo": "El bloque de caja que se firma como arqueo no puede detectar un descuadre, que es la unica razon de arquear al cambio de turno. Calcula un numero que ya se sabe y lo etiqueta «Diferencia».",
+      "evidencia": "D48 = '=IF(OR($B48=\"\",$C48=\"\"),\"\",ROUND($C48-$B48,2))' con B = «Fondo inicial (EUR)» y C = «Recaudacion (EUR)». C-B es la recaudacion neta, no una diferencia. No hay ninguna columna con la lectura Z / ventas declaradas por el TPV, asi que un faltante de 80 EUR sale exactamente igual que una caja cuadrada. Y A51 hace firmar el resultado: «Arqueo hecho por: ___ . Conforme turno entrante: ___».",
+      "fix": "Cuatro columnas: Fondo inicial | Efectivo contado al cierre | Ventas en efectivo segun TPV (Z) | Descuadre = contado - fondo - ventas_efectivo, con formato condicional a partir de un umbral verde de tolerancia en celda (p. ej. +/- 5 EUR). Sin la columna del TPV el bloque no debe llamarse arqueo."
+    },
+    {
+      "id": "RD-05",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "'Historico'!G5:G34 (grupo_c.py:522)",
+      "hallazgo": "La tendencia devuelve el veredicto CONTRARIO al real cuando falta un trimestre intermedio, que es el caso normal de quien evalua dos veces al ano. TEC-27 cambio un error (solo Q4 contra Q3) por otro.",
+      "evidencia": "G5 = '=IF(COUNT($B5:$E5)<2,\"\",IF(INDEX($B5:$E5,COUNT($B5:$E5))>INDEX($B5:$E5,COUNT($B5:$E5)-1),\"↑ Mejora\",IF(INDEX(...)<INDEX(...),\"↓ Baja\",\"→ Estable\")))'. COUNT cuenta celdas con numero; INDEX toma POSICION. Con Q1=4,0 y Q3=4,5 (Q2 vacio) COUNT=2 -> INDEX(...,2) apunta a Q2, que esta vacio y vale 0 -> 0 < 4,0 -> '↓ Baja'. La ficha dice que ha mejorado medio punto y el historico dice que empeora. La propia instruccion A36 admite el fallo («un hueco en medio la desplaza») en vez de corregirlo.",
+      "fix": "Localizar las dos ULTIMAS columnas con dato, no las dos primeras posiciones: con las funciones que pycel admite, dos celdas auxiliares ocultas con LOOKUP(9^9;$B5:$E5) para el ultimo y una cadena de IF anidados sobre E,D,C,B para el penultimo; o, mas barato, sustituir los cuatro trimestres por dos columnas «Evaluacion anterior» / «Evaluacion actual»."
+    },
+    {
+      "id": "RD-06",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "'Plantilla'!auto_filter.ref = A4:O34 (heredado de la v1.1: astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx tiene 15 columnas)",
+      "hallazgo": "El autofiltro se quedo en la columna O mientras la tabla crecio a 22 columnas (A:V). Ordenar desde el desplegable del filtro reordena solo A:O y deja P:V clavadas: salario, telefono, email, contacto de emergencia, talla, taquilla y el aviso de menor de edad se cruzan con la persona equivocada, en el fichero mas sensible del kit.",
+      "evidencia": "openpyxl sobre mi copia: auto_filter.ref = 'A4:O34', max_column = 22. Cabeceras fuera del filtro: P4 'Salario Bruto Anual', Q4 'Telefono', R4 'Email', S4 'Contacto Emergencia', T4 'Talla Uniforme', U4 'Taquilla', V4 'Aviso'. El generador anade columnas y nunca toca auto_filter (grep 'auto_filter' en kit-gestion-personal-v2_0/*.py: sin resultados). Ademas Instrucciones!B6 invita expresamente a usarlo: «Usa los filtros de Excel para buscar por puesto, convenio o modalidad de contrato».",
+      "fix": "ws.auto_filter.ref = 'A4:V34' al final de la construccion del 07, y anadir al gate de familia una comprobacion de que auto_filter.ref abarca hasta ws.max_column en toda hoja tabular: este defecto se hereda en cualquier kit al que se le anadan columnas."
+    },
+    {
+      "id": "RD-07",
+      "severidad": "alta",
+      "fichero": "src/components/kit-gestion-personal/HeroSection.tsx, src/components/kit-gestion-personal/FaqAccordion.tsx, src/pages/KitGestionPersonal.tsx",
+      "ubicacion": "HeroSection.tsx:71 · FaqAccordion.tsx:8 · KitGestionPersonal.tsx:70",
+      "hallazgo": "Las tres afirmaciones legales falsas que DOM-06/COM-05 (altas) daban por resueltas en el SPEC §5 siguen vivas en los gemelos de la SPA. El propio SPEC avisaba: «se tocan en el mismo commit, o vuelven a divergir». Divergieron.",
+      "evidencia": "HeroSection.tsx:71 'Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado'. FaqAccordion.tsx:8 'El registro/fichaje horario digital requiere un software homologado (obligatoria en Espana desde 2026)'. KitGestionPersonal.tsx:70, dentro del JSON-LD de FAQPage: 'requiere un software homologado'. Los tres hechos son falsos: obligatorio desde el 12-05-2019 (RD-ley 8/2019, art. 34.9 ET), no existe homologacion oficial de sistemas de fichaje, y la sancion es infraccion grave del art. 7.5 LISOS por CENTRO DE TRABAJO (751-7.500 EUR), no 10.000 EUR por empleado.",
+      "fix": "Portar verbatim el texto ya corregido de astro-site/src/data/productos/kits/kit-gestion-personal.ts:105 (badge), :217 (FAQ) y :70 (schema) a los tres ficheros de la SPA, en el mismo commit, y anadir al gate un grep de 'homolog', 'obligatorio 2026' y '10.000 EUR' sobre src/ y astro-site/src/."
+    },
+    {
+      "id": "RD-08",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "linea 53 (schema.reviews[0].body) y linea 263 (testimonials), mas src/components/kit-gestion-personal/ContentGrid.tsx:8 y src/pages/KitGestionPersonal.tsx:60",
+      "hallazgo": "El fichero que SIRVE produccion se contradice a si mismo sobre la cifra legal que la v2.0 dice haber corregido: la linea 156 promete 12 h (art. 34.3 ET) y las lineas 53 y 263 siguen vendiendo «alertas de 11h entre turnos». La 53 esta dentro del JSON-LD, que es lo que indexa Google.",
+      "evidencia": ":53 'Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente.' · :263 identico dentro del testimonio de David Ruiz · :156 'descanso de 12h entre jornadas (art. 34.3 ET)'. Y ContentGrid.tsx:8 'descanso minimo 11h entre turnos, maximo 40h/semana'. El xlsx entregado dice 12: 01!'Turnos'!B3 = 12 con C3 = 'Art. 34.3 ET'.",
+      "fix": "Reescribir el cuerpo del testimonio de David Ruiz en las dos apariciones (.ts:53 y :263) y en KitGestionPersonal.tsx:60, y ContentGrid.tsx:8. No toca aggregateRating ni el numero de resenas, asi que no entra en lo aparcado por John (SPEC §6/COM-08): es corregir una cifra legal, no un review."
+    },
+    {
+      "id": "RD-09",
+      "severidad": "alta",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Solicitudes'!A5:H34 (30 filas) frente a 'Calendario Anual'!A6:A35 (30 empleados)",
+      "hallazgo": "La hoja de solicitudes tiene exactamente tantas filas como empleados: una peticion por persona y ano. Nadie coge los 30 dias del tiron; en hosteleria se parten en dos o tres periodos mas los puentes. Con 30 personas se agota en febrero. El 02 subio a 300 filas precisamente por este razonamiento (COM-18) y aqui no se aplico.",
+      "evidencia": "DV 'list \"Pendiente,Aprobado,Denegado\" sqref=G5:G34' y todas las formulas de la hoja acotadas a 5:34 (D5..H34). El agregador que las consume tambien: 'Saldo Vacaciones'!E5 = '=IF($A5=\"\",\"\",SUMIFS(Solicitudes!$D$5:$D$34,...))'. 30 filas = 30 solicitudes para 30 empleados y 53 semanas.",
+      "fix": "Llevar 'Solicitudes' a 150-200 filas (3-5 periodos por persona) y ampliar en el mismo paso los rangos de los SUMIFS de 'Saldo Vacaciones' E/F y de los INDEX/MATCH de 'Cobertura'!F, mas la nota de Instrucciones sobre cuantas caben."
+    },
+    {
+      "id": "RD-10",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Saldo Vacaciones'!E5:E34 y F5:F34",
+      "hallazgo": "El saldo suma las solicitudes sin filtrar por ano. En cuanto el libro se reutiliza el ano siguiente (que es lo que invita a hacer un calendario «Anual»), las vacaciones de 2027 y las de 2028 descuentan del mismo derecho de 30 dias y todo el mundo aparece con saldo negativo.",
+      "evidencia": "E5 = '=IF($A5=\"\",\"\",SUMIFS(Solicitudes!$D$5:$D$34,Solicitudes!$A$5:$A$34,$A5&\"\",Solicitudes!$G$5:$G$34,\"Aprobado\"))' — dos criterios, ninguno de fecha, pese a que 'Solicitudes' tiene Fecha Inicio en B y la hoja ya dispone de un cierre de ano en 'Saldo Vacaciones'!E2.",
+      "fix": "Anadir dos criterios de fecha al SUMIFS contra la fecha de inicio: '>='&$B$1 (1 de enero, celda verde nueva) y '<='&$E$2. Con ellos el mismo libro sirve varios anos sin falsear el saldo."
+    },
+    {
+      "id": "RD-11",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Calendario Anual'!B5 y 'Saldo Vacaciones'!E2 (grupo_b.py:791 LUNES_SEMANA_1 y grupo_b.py:959)",
+      "hallazgo": "Un kit fechado «Version 2.0 · agosto 2026» entrega el calendario de vacaciones de 2027 y congela el ano en dos literales del generador. Quien compra hoy no encuentra el ano que esta gestionando, y quien compre en 2028 seguira recibiendo 2027. Ademas el SPEC §4 exigia dos verdes en esa hoja, «B2 Lunes de la semana 1» y «B3 Dias de vacaciones por convenio», y ninguna de las dos existe.",
+      "evidencia": "B5 = 2027-01-04 (valor literal, formato dd/mm) y toda la fila 5 encadenada '=B5+7'. 'Saldo Vacaciones'!E2 = 2027-12-31. En la hoja del calendario, B2 esta VACIA y B3 contiene la leyenda 'V=Vacaciones', no el parametro; los 30 dias viven en 'Saldo Vacaciones'!B2. En el generador: 'LUNES_SEMANA_1 = datetime.datetime(2027, 1, 4)' (grupo_b.py:791) y '_verde(ws, \"E2\", datetime.datetime(2027, 12, 31), ...)' (grupo_b.py:959).",
+      "fix": "Rotular explicitamente B5 como parametro verde «Lunes de la semana 1 — cambialo cada ano» (el resto de la fila ya se recalcula sola), derivar E2 como '=$B$5+364' o EOMONTH, y sustituir A1 '— Ano: ______' por '=YEAR($B$5)'. En el generador, calcular el primer lunes del ano SIGUIENTE al de compilacion en vez de dos literales."
+    },
+    {
+      "id": "RD-12",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Calendario Anual'!B6:BB35 (rejilla manual) frente a 'Solicitudes'!A5:H34",
+      "hallazgo": "La doble fuente de verdad que DOM-04 decia haber eliminado sigue viva, solo que repartida: el SALDO sale de las solicitudes y la COBERTURA sale de las celdas pintadas a mano. Quien trabaje con 'Solicitudes' —que es lo que dicen las instrucciones— deja 'Cobertura' en blanco y la promesa de «cobertura minima y periodos de maxima demanda» (COM-20) sigue sin cumplirse un lunes.",
+      "evidencia": "La rejilla B6:BB35 no tiene ni una formula (solo DV 'list \"V,B,F,PE,\"'): son 30 x 53 = 1.590 celdas de entrada manual. La fila que alimenta las alertas las lee a ellas: B37 = '=COUNTIF(B$6:B$35,\"V\")+COUNTIF(B$6:B$35,\"B\")' (grupo_b.py:901), no a 'Solicitudes'. Nada escribe la V en el calendario cuando se aprueba una solicitud.",
+      "fix": "Derivar la rejilla de las solicitudes aprobadas con SUMPRODUCT sobre el par (fecha inicio, fecha fin) y el lunes de cada columna —=IF(SUMPRODUCT((Solicitudes!$A$5:$A$34=$A6)*(Solicitudes!$G$5:$G$34=\"Aprobado\")*(Solicitudes!$B$5:$B$34<=B$5+6)*(Solicitudes!$C$5:$C$34>=B$5))>0,\"V\",\"\")— y dejar la entrada manual solo para B/F/PE. Si se prefiere no tocar la geometria, al menos que fila 37 lea 'Solicitudes' y la rejilla quede como vista."
+    },
+    {
+      "id": "RD-13",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Calendario Anual'!B37:BB37",
+      "hallazgo": "La fila que se llama «Ausencias en la semana» solo cuenta V y B. Un permiso retribuido (PE) es una ausencia que hay que cubrir igual —boda, mudanza, fallecimiento, examen—, esta en la leyenda unica y esta en la DV de la propia rejilla, y no computa. La semana en la que dos personas estan de permiso se ve como una semana sin ausencias.",
+      "evidencia": "B37 = '=COUNTIF(B$6:B$35,\"V\")+COUNTIF(B$6:B$35,\"B\")'. La DV de la rejilla es 'list \"V,B,F,PE,\"' y el formato condicional pinta las cuatro (PE en naranja). B38 depende de B37, asi que la alerta de cobertura tampoco los ve.",
+      "fix": "Anadir +COUNTIF(B$6:B$35,\"PE\") a la fila 37 (F=Festivo no debe sumar: no es una ausencia individual), o mejor una celda verde de decision con la lista de codigos que cuentan como ausencia."
+    },
+    {
+      "id": "RD-14",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Cobertura'!A4:E8 (PERSONAL MINIMO POR TURNO)",
+      "hallazgo": "El bloque de personal minimo por turno es decorativo —ninguna formula del kit lo lee— y ademas contradice al resto del kit con numeros inventados. COM-20 daba por hecho que «Cobertura deja de ser una tabla vacia»: ahora esta llena, pero sigue sin decidir nada.",
+      "evidencia": "Unico consumidor de la hoja: 'Calendario Anual'!B38 = '=IF(B$37=0,\"\",IF(AND(B$36=\"Alta\",B$37>0),\"⛔ TEMP. ALTA\",IF(B$37>Cobertura!$B$3,\"⚠ EXCESO\",\"\")))' — solo B3. Los minimos B6=4 (M: 2 cocina + 2 sala + 0 barra), B7=6 (T: 3+2+1), B8=5 (N: 2+2+1) no los usa nadie, y el 6 de la tarde contradice a 03!'Prevision por Servicio'!E18 = 5 y a BONUS-02!E26 = 5 para el mismo caso por defecto. Un minimo de 5 personas en el turno de NOCHE (23:00-07:00 segun 01!'Turnos') no corresponde a un casual de 80 cubiertos.",
+      "fix": "O se conecta —comparar el personal minimo con las presencias reales del cuadrante del 01 y avisar cuando la semana no llega— o se precarga desde el resultado del 03/BONUS-02 con una nota de que es un punto de partida. Dejar tres cifras sueltas que contradicen a las otras dos hojas del mismo kit es peor que la tabla vacia."
+    },
+    {
+      "id": "RD-15",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "'Plantilla'!V5:V34 (constante DIAS_18 = 6570 en grupo_c.py:703)",
+      "hallazgo": "La alerta de menor de edad se apaga entre 4 y 5 dias ANTES de que la persona cumpla los 18, porque mide la mayoria de edad en 18 x 365 dias e ignora los bisiestos. Justo en esos dias el kit deja de avisar de que no puede hacer nocturnidad ni horas extra.",
+      "evidencia": "V5 = '=IF($C5=\"\",\"\",IF(TODAY()-$C5<6570,\"⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)\",\"\"))'. Entre 2008 y 2026 hay 4 bisiestos (2008, 2012, 2016, 2020, 2024): 18 anos reales son 6.574-6.575 dias, no 6.570.",
+      "fix": "=IF($C5=\"\",\"\",IF(DATE(YEAR($C5)+18,MONTH($C5),DAY($C5))>TODAY(),\"⚠ MENOR DE EDAD...\",\"\")) — DATE y YEAR/MONTH/DAY estan en la lista de funciones verificadas con pycel del propio SPEC."
+    },
+    {
+      "id": "RD-16",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "'Cuadrante Semanal'!K6:N35 (las 4 alertas) frente a 07!'Plantilla'!V5",
+      "hallazgo": "El unico aviso de menor de edad del kit vive en el directorio y no llega al sitio donde se comete la infraccion. En el cuadrante se le puede poner N (noche 23:00-07:00) o D (doble, 16 h) a un menor y ninguna de las cuatro alertas dice nada, porque el 01 no conoce las fechas de nacimiento.",
+      "evidencia": "Las cuatro columnas son K (descanso entre jornadas, umbral Turnos!$B$3), L (descanso semanal), M (horas contratadas, columna J) y N (jornada diaria, umbral Turnos!$B$2). Ninguna referencia a edad, y 01 no lee el 07 (decision de SPEC §6: nada de enlaces entre libros). Para un menor los limites son otros: prohibicion de trabajo nocturno y de horas extra (art. 6 ET) y jornada de 8 h incluida la formacion.",
+      "fix": "Una columna verde en el 01 —«Menor de edad (S/N)», que el usuario copia del 07— y dos anadidos: que N use 8 h en vez de Turnos!$B$2 cuando sea S, y una alerta nueva si aparece N o D en su fila. Es la unica forma de cumplir sin enlazar libros."
+    },
+    {
+      "id": "RD-17",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "'Registro Horas'!H5:H304 y su nota de DV en G5:G304",
+      "hallazgo": "La hora extra se declara DIA a DIA contra 8 h, mientras el fichero 01 predica distribucion irregular y su 'Cuadrante Mensual' saca precisamente la media semanal para compararla con el contrato. Diez horas el lunes y seis el martes producen 2 h extra que no existen: la jornada se compensa dentro de la semana.",
+      "evidencia": "H5 = '=IF(OR($F5=\"\",$G5=\"\"),\"\",MAX(0,$F5-$G5))' con G precargada a 8 y la nota de DV: «Jornada CONTRATADA de ese dia, en horas. Viene precargada a 8». En el 01: J5 'H. contratadas/semana' = 40 y el mensual H197 = '=IF(COUNT($B197:$F197)=0,\"\",ROUND(AVERAGE($B197:$F197),2))' con J197 comparando la MEDIA semanal. El MAX(0,...) ademas oculta el signo contrario: los dias por debajo de lo contratado no se ven, asi que no hay forma de saber si la irregularidad esta compensada.",
+      "fix": "Anadir al 'Resumen Mensual' una fila o columna de saldo NETO del periodo (horas trabajadas - horas contratadas del mes, con signo) y matizar en Instrucciones que la columna H es exceso diario, util para el registro, pero que lo que se paga como extra sale del saldo del periodo de referencia pactado."
+    },
+    {
+      "id": "RD-18",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "'Resumen Mensual'!D3/F3/G6 y 01!'Instrucciones'!B14",
+      "hallazgo": "El kit invita expresamente a tratar como «horas extra» con recargo lo que en un contrato a tiempo PARCIAL son horas complementarias. Son figuras distintas: al parcial le estan prohibidas las horas extraordinarias (art. 12.4.c ET) y las complementarias exigen pacto escrito, tope del 30 % y preaviso, y se retribuyen como ordinarias (art. 12.5 ET). Aplicarles un 1,25 y contarlas contra las 80 h/ano es un error que un acta de inspeccion recoge.",
+      "evidencia": "01!'Instrucciones'!B14: «M · Jornada semanal: compara con las horas CONTRATADAS de esa persona (columna J, verde, 40 por defecto), no con un 40 fijo: a un contrato de 20 h las alertas le saltan a las 20». En el 02, todo lo que pase de G (8 h por defecto) entra en H y de ahi al recargo D3 = 1,25 y al tope F3 = 80, sin distinguir jornada completa de parcial. La DV de Tipo (I5:I304) tiene 'Voluntaria, Obligatoria, Fuerza mayor, Compensada con descanso' y ninguna opcion 'Complementaria'.",
+      "fix": "Anadir 'Complementaria (contrato parcial)' a la DV de Tipo, excluirla del tope de 80 h y del recargo (se paga como ordinaria) y anadir una linea a Instrucciones con los arts. 12.4.c y 12.5 ET. Sin eso, la promesa de «cumplimiento legal con cita exacta» de la landing no cubre a la mitad de las plantillas de hosteleria."
+    },
+    {
+      "id": "RD-19",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "'Registro Horas'!C5:D304 (formato hh:mm, sin DV) y F5",
+      "hallazgo": "El formato hh:mm cambio el sintoma pero no cerro el agujero: teclear «9» y «17» ya no da 192 h, da 0,00 h. Una jornada entera desaparece del registro sin un solo aviso, y el registro de jornada es el documento que hay que conservar 4 anos (art. 34.9 ET).",
+      "evidencia": "C5 y D5: fill E8F5E9, locked False, number_format 'hh:mm', sin DV (las unicas DV de la hoja son 'decimal between 1 12' en G5:G304 y la lista de Tipo en I5:I304). F5 = '=IF(OR($C5=\"\",$D5=\"\"),\"\",ROUND(MOD($D5-$C5,1)*24-IF($E5=\"\",0,$E5),2))': con C=9 y D=17 (numeros, no horas) MOD(8,1)=0 -> F=0,00 y H5 = MAX(0, 0-8) = 0. La celda muestra 00:00, que es facil de leer como «aun no lo he puesto».",
+      "fix": "DV de tipo 'time' entre 0:00 y 23:59 con showErrorMessage=True en C5:D304, y una guarda visible en F: =IF(OR($C5=\"\",$D5=\"\"),\"\",IF(OR($C5>=1,$D5>=1),\"⚠ escribe la hora como 9:00\",ROUND(...))). El aviso vale mas que el formato."
+    },
+    {
+      "id": "RD-20",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "'Nominas'!I5:I34 y su instruccion Instrucciones!B8",
+      "hallazgo": "El «coste/hora» que las instrucciones mandan llevar al 02 no es el coste real por hora trabajada: divide entre las horas CONTRATADAS del ano completo, contando como trabajadas las 30 dias naturales de vacaciones y los 14 festivos que se pagan y no se producen. Sale entre un 10 y un 13 % corto, y ese error se propaga al coste de las horas extra.",
+      "evidencia": "I5 = '=IFERROR(IF(OR($G5=\"\",$H5=\"\",$H5=0),\"\",ROUND($G5/($H5*52/12),2)),\"\")' — 52/12 = 4,333 semanas al mes, las 52 del ano. Instrucciones!B8: «La columna «Coste/hora» es el numero que hay que llevar a la tarifa horaria del fichero 02: es coste real de empresa, no el bruto del convenio». Con 30 dias naturales de vacaciones (05!'Saldo Vacaciones'!B2 = 30, el propio kit) y 14 festivos, las semanas efectivamente trabajadas son ~46,5, no 52.",
+      "fix": "Anadir una celda verde «Semanas efectivas al ano (52 menos vacaciones y festivos)» con 46,5 por defecto y dividir por $H5*$C$3/12, o dejar 52 pero renombrar la columna a «Coste/hora contratada» y quitar la palabra «real» de B8. Lo que no puede ser es llamarlo real y no serlo."
+    },
+    {
+      "id": "RD-21",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "'Ratio Coste Laboral'!B5 (bloqueada, locked=True)",
+      "hallazgo": "El KPI que el producto vende como «coste laboral vs ventas» solo suma las nominas de la hoja 'Nominas' y esta bloqueado, asi que no hay manera de incluir las horas extra del 02, los extras de fin de semana, una ETT ni el personal de refuerzo del dia pico que el propio BONUS-02 recomienda contratar. El ratio sale sistematicamente por debajo del real y el semaforo aprueba de mas.",
+      "evidencia": "B5 = '=Nominas!$G$35' con locked=True y fill 00000000 (no verde). Nominas!G35 = '=SUM($G$5:$G$34)' — 30 contratos y nada mas. En el mismo kit, 02!'Resumen Mensual'!G37 = '=ROUND(SUM(G6:G35),2)' totaliza el coste de las horas extra y no lo lee nadie; BONUS-02!B35 calcula un refuerzo de 2 personas por servicio en el dia pico y A52 dice explicitamente que se cubre con contratos que no son plantilla fija.",
+      "fix": "Convertir B5 en 'Nominas del mes' (calculada) mas tres verdes: 'Horas extra del mes (EUR)' —con la nota de copiar 02!'Resumen Mensual'!G37—, 'Personal externo / ETT (EUR)' y 'Otros costes de personal', y que el ratio use la suma. Es el mismo patron de «parametro en celda» que el resto del kit."
+    },
+    {
+      "id": "RD-22",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx",
+      "ubicacion": "'Briefing'!D55 y D57 (camara de refrigeracion y expositor)",
+      "hallazgo": "El control de temperaturas solo comprueba el limite SUPERIOR. Una camara de refrigeracion escarchada a -5 grados —producto fresco congelado por accidente, no conformidad APPCC de manual y merma directa— sale «✓ CONFORME» en el documento que firman los dos jefes de turno.",
+      "evidencia": "D55 = '=IF(OR($B55=\"\",$C55=\"\"),\"\",IF($B55<=$C55,\"✓ CONFORME\",\"⛔ FUERA DE RANGO\"))' con C55 = 4. Con B55 = -5: -5 <= 4 -> CONFORME. Lo mismo en D57 (expositor, C57 = 4). Solo el congelador (C56 = -18) esta bien servido por la comparacion unilateral. Y A58 lo presenta como el punto en que «el APPCC cambia de responsable».",
+      "fix": "Dos columnas de limite (minimo y maximo) y D = IF(AND($B>=$Cmin,$B<=$Cmax),\"✓ CONFORME\",\"⛔ FUERA DE RANGO\"), con 0/4 para refrigeracion y expositor frio y -30/-18 para congelacion. Es la misma correccion que ya se aplico en el kit de inventario."
+    },
+    {
+      "id": "RD-23",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx",
+      "ubicacion": "'Briefing'!A55:A57 (los tres equipos precargados)",
+      "hallazgo": "Falta el unico control de temperatura que se hace justo en el cambio de turno con producto en la mano: el mantenimiento EN CALIENTE. Y el 'Expositor / vitrina' se precarga a 4 grados como si solo existieran vitrinas frias.",
+      "evidencia": "Las tres filas precargadas son A55 'Camara de refrigeracion' (C55=4), A56 'Congelador' (C56=-18) y A57 'Expositor / vitrina' (C57=4). No hay ninguna fila de bano maria, mesa caliente, buffet ni vitrina caliente, que es donde la normativa de comidas preparadas exige mantener a 65 grados o mas y donde el producto se pasa fisicamente de un turno al siguiente.",
+      "fix": "Anadir dos filas: 'Bano maria / mesa caliente' y 'Buffet o vitrina caliente' con limite MINIMO de 65 grados, y renombrar A57 a 'Expositor / vitrina FRIA' para que quede claro cual es cual. Con los limites min/max de RD-22 la misma formula sirve para las cinco."
+    },
+    {
+      "id": "RD-24",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "'Ficha Evaluacion'!C23 (y C24)",
+      "hallazgo": "El nivel se emite con una sola competencia puntuada. Es el mismo defecto de «veredicto sin datos suficientes» que se corrigio en el semaforo del 03, dejado sin corregir en el documento que se firma y que puede acabar en un expediente.",
+      "evidencia": "C23 = '=IF($C$22=\"\",\"\",IF($C$22>=4.5,\"⭐ EXCELENTE\",IF($C$22>=3.5,\"✓ BUENO\",...)))'. C22 solo se guarda contra COUNT()=0. Con C12 = 5 y las otras nueve en blanco: C22 = 5,00 y C23 = '⭐ EXCELENTE', mientras C24 = '=COUNT($C$12:$C$21)&\" de 10\"' dice '1 de 10' en una celda que nadie mira antes de firmar.",
+      "fix": "Elevar el umbral de la guarda: =IF(COUNT($C$12:$C$21)<5,\"— puntua al menos 5 competencias\",IF(...)) y aplicar el mismo formato condicional ambar a ese texto, para que el hueco se vea igual que se ve el nivel."
+    },
+    {
+      "id": "RD-25",
+      "severidad": "media",
+      "fichero": "src/data/products-catalog.ts",
+      "ubicacion": "linea 56 (description.es del kit) y su description.en",
+      "hallazgo": "COM-22 figura como resuelto en el SPEC §5 y no se ha tocado: el catalogo sigue vendiendo «ratios de productividad», que no existen en ninguno de los 9 ficheros ni antes ni despues de la v2.0.",
+      "evidencia": "products-catalog.ts:56 \"es: 'Cuadrantes, control de horas, ratios de productividad.'\". Barrido de las 22 hojas de mi copia: no hay ninguna hoja, columna ni formula de productividad; lo mas cercano son los cubiertos por empleado y servicio del BONUS-02, que son un ratio de DIMENSIONAMIENTO, no de productividad, y viven en el bonus. El texto sustituto ya estaba redactado en el SPEC: «Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluacion de equipo».",
+      "fix": "Aplicar el texto del SPEC §5 en es y en en. De paso, la misma frase se repite en src/data/use-cases-content.es.ts:29 y en ocho bloques de src/data/use-cases-content.es.consultor.ts (141, 171, 258, 372, 485, 711, 932, 1049): si se corrige solo el catalogo, la promesa falsa sigue publicada en nueve landings de casos de uso."
+    },
+    {
+      "id": "RD-26",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "lineas 53, 263 y 267 (schema.reviews y testimonials)",
+      "hallazgo": "DOM-26 («toda la copia visible esta sin acentos») se aplico a seo/schema/hero/grid/why/bonus/faqs/cta pero no a los testimonios, que son ocho bloques de texto visibles y ademas viajan al JSON-LD.",
+      "evidencia": ":53 'maximo 40h/semana me avisan automaticamente' · :263 'Antes lo hacia a mano y siempre habia errores' · :267 'La planificacion de vacaciones con cobertura minima' y el autor 'Alberto Mendez'. En el mismo fichero, :156 y :217 ya estan acentuados, asi que la pagina mezcla las dos ortografias.",
+      "fix": "Pasar los ocho testimonios y sus nombres por el mismo barrido, aqui y en los gemelos de la SPA (src/pages/KitGestionPersonal.tsx, src/components/kit-gestion-personal/*). Es una correccion ortografica, no toca aggregateRating ni el numero de resenas: no entra en lo aparcado por John."
+    },
+    {
+      "id": "RD-27",
+      "severidad": "media",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Saldo Vacaciones'!D5:D34",
+      "hallazgo": "El prorrateo solo funciona por un extremo: se prorratea la ALTA y no la BAJA. Un temporal o un fijo-discontinuo que trabaja de enero a junio conserva los 30 dias enteros de derecho, cuando le corresponden 15. Es justo el numero que se liquida en el finiquito.",
+      "evidencia": "D5 = '=IFERROR(IF($A5=\"\",\"\",IF($B5=\"\",IF($C5=\"\",$B$2,$C5),MIN(IF($C5=\"\",$B$2,$C5),ROUND(IF($C5=\"\",$B$2,$C5)*($E$2-$B5+1)/365,1)))),\"\")' — solo entra la 'Fecha de alta' (B) y el cierre fijo del ano (E2). No hay columna de fecha de baja, pese a que la DV del 07 contempla 'Temporal', 'Practicas', 'Formacion' y 'Fijo-discontinuo' (07!'Plantilla'!D5:D34) y el 07 si tiene 'Fecha Fin Contrato' en L.",
+      "fix": "Anadir una columna verde 'Fecha de baja / fin de contrato' y usar MIN(fin, $E$2) en lugar de $E$2, con la nota de que ese numero es el que va al finiquito. La constante 365 tambien deberia ser =$E$2-$B$1+1 para no fallar en bisiesto."
+    },
+    {
+      "id": "RD-28",
+      "severidad": "baja",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "'Checklist Onboarding'!E7:E19, E23:E30, E34:E42, E46:E57, E61:E68",
+      "hallazgo": "La columna 'Fecha Limite' guarda TEXTO ('Dia -1', 'Dia 1', 'Dia 7', 'Dia 30') en celdas con formato dd/mm/yyyy. Ni se puede ordenar por vencimiento ni se puede saber que dia real es, y el formato invita a escribir encima una fecha de verdad, con lo que la columna acaba mezclando texto y fechas.",
+      "evidencia": "E7 = 'Dia -1' con number_format 'dd/mm/yyyy'; E30 = 'Dia 30' con el mismo formato. Las 50 filas igual. La cabecera de la hoja tiene 'Fecha alta:' en D3, que es exactamente el ancla que haria falta.",
+      "fix": "Dos columnas: 'Plazo' (texto: Dia -1 / Dia 1 / Dia 7 / Dia 30, formato General) y 'Fecha limite' calculada =IF($D$3=\"\",\"\",$D$3+offset) con el offset numerico en una columna auxiliar oculta. Asi el checklist se ordena por urgencia y el plazo del Contrat@ deja de ser una etiqueta."
+    },
+    {
+      "id": "RD-29",
+      "severidad": "baja",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "'Checklist Onboarding'!B64 y E64; comparar con B65/E65",
+      "hallazgo": "La tarea dice un dia y su plazo dice otro. Es la clase de descuido que un jefe con anos encima detecta a la primera y que le hace desconfiar del resto de los plazos legales de la misma hoja.",
+      "evidencia": "B64 = 'Evaluacion informal dia 3 — primeras impresiones' con E64 = 'Dia 7'. En la misma seccion, B65 = 'Evaluacion formal dia 15 — revision intermedia' con E65 = 'Dia 30'. Los cuatro escalones disponibles (-1/1/7/30) no dan para expresar dia 3 ni dia 15.",
+      "fix": "Con la columna de plazo real de RD-28 el problema desaparece (offset -1, 1, 3, 7, 15, 30). Mientras tanto, alinear el texto con el escalon: 'Evaluacion informal primera semana' y 'Evaluacion formal a mitad del periodo de prueba'."
+    },
+    {
+      "id": "RD-30",
+      "severidad": "baja",
+      "fichero": "scratchpad/propio-ref-dominio/dryrun-v2/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "'Cuadrante Semanal'!K6:K35, M6:M35, N6:N35 e I36; 'Cuadrante Mensual'!I4 y J4",
+      "hallazgo": "Restos de formato y una guarda que falta, en la hoja que es la portada del producto: tres columnas que solo devuelven texto llevan formato numerico 0.00, dos cabeceras tambien, y el unico total sin guarda de rango vacio es precisamente el que se ve al abrir.",
+      "evidencia": "K6/M6/N6 devuelven '⛔ ...' o \"\" y su number_format es '0.00'; L6, que hace lo mismo, es 'General'. En 'Cuadrante Mensual', I4 'Total Horas' y J4 'Alerta semanal' —cabeceras de texto— tambien llevan '0.00'. I36 = '=SUM(I6:I35)' (cache 0.0, formato General) mientras la celda de al lado si la lleva: K36 = '=IF(COUNT($I$6:$I$35)=0,\"\",ROUND(AVERAGE($I$6:$I$35),2))'.",
+      "fix": "number_format 'General' en las columnas y cabeceras de alerta, e I36 = '=IF(COUNT($I$6:$I$35)=0,\"\",ROUND(SUM($I$6:$I$35),2))' con formato 0.00, por coherencia con la convencion de familia («ninguna hoja recien descargada ensena un contador») y con su propia vecina."
+    }
+  ],
   "veredicto": "no listo",
-  "motivo": "auditoría en curso"
+  "motivo": "Nueve hallazgos altos, y seis de ellos son ids que el SPEC §8 da por RESUELTOS. Tres son mentiras que el cliente ve o que Google indexa: el hero de la SPA sigue diciendo «Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado» y la FAQ (tambien en JSON-LD) sigue exigiendo «software homologado» (RD-07, DOM-06/COM-05 «altas»), y el fichero que sirve produccion se contradice a si mismo sobre 11 h o 12 h de descanso en la misma pagina (RD-08). Otros tres son numeros que salen mal sin avisar: el semaforo de coste laboral vuelve a felicitar con la hoja de nominas vacia (RD-01, exactamente TEC-10/COM-17), el resumen de horas extra paga a 1,25 unas horas que por definicion se compensan con descanso (RD-02) y el historico de evaluaciones dice «Baja» de quien ha mejorado en cuanto falta un trimestre intermedio (RD-05). A eso se suman un autofiltro que se quedo en la columna O y que al ordenar cruza salarios y contactos de emergencia con la persona equivocada (RD-06), un bloque de caja que se firma como arqueo y no puede detectar un descuadre porque no pregunta la Z del TPV (RD-04), 30 filas de solicitudes para 30 empleados y 53 semanas (RD-09) y el hecho de que el 7 FTE que sostiene el ratio del 31,3 % del changelog se apoya en un turno de 4 h que no existe en la tabla de turnos del propio kit (RD-03). Un lunes por la manana el 01, el 04, el 06 y el 07 se sostienen —las cuatro alertas del cuadrante estan bien construidas, el cruce de medianoche funciona, la ficha de ejemplo del 06 esta escrita por alguien que ha estado en una cocina y la seccion RGPD del 07 es de las mejores del catalogo—, pero el 03, el 05 y los dos BONUS todavia dan respuestas equivocadas en silencio, que es peor que no darlas."
 }
