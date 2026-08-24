@@ -1,0 +1,51 @@
+{
+ "informe": "Ronda 2 — verificación uno a uno de los 74 hallazgos de las 3 lentes refutadoras del Kit de Gestión de Personal y Turnos v2.0, contra la corrección declarada en kit-gestion-personal-v2-correccion.json",
+ "fecha": "2026-08-24",
+ "metodo": "Copia dry-run propia (CLAUDE_SCRATCHPAD=.../propio-verificador), exit 0. Lectura celda a celda con openpyxl (fórmulas, DV, formatos, protección, CF, comentarios) sobre los 9 xlsx generados; grep + lectura de fuente en los 15 .ts/.tsx + 1 .astro tocados; transpileModule de TypeScript sobre los 15 ficheros; comprobación de que astro-site/public/dl/kit-gestion-personal/ sigue con git status limpio.",
+ "ids_entrada": 74,
+ "verificados_ok": 71,
+ "mal_resueltos": [
+  {
+   "id": "RT-22",
+   "evidencia": "El fix declara «freeze_panes A14 → A13» en 03!'Ratio Coste Laboral'. En el .xlsx generado, freeze_panes = 'A15' (motor.py:707, literal hardcodeado), no 'A13'. Causa: RD-21 (resuelto en el mismo lote) insertó 4 filas nuevas (B5:B9, coste laboral desglosado) que desplazaron toda la hoja de 22 a 30 filas; el freeze_panes se reajustó a A15 para la nueva geometría pero la prosa de la corrección no se actualizó. Funcionalmente el objetivo SÍ se cumple — encabezado 1-14 (14 filas) fijo, zona desplazable 15-30 (16 filas, 53%), mejor proporción que el bug original (13 de 22 fijas, 59%) — así que no hay regresión visible para el cliente, pero la evidencia citada en el informe de corrección no corresponde al fichero entregado."
+  },
+  {
+   "id": "RT-24",
+   "evidencia": "El fix declara que 07!'Vencimientos'!B3 «gana comentario en celda Y nota visible bajo la tabla». Verificado con openpyxl: no existe NINGÚN comentario de celda en las 9 hojas de todo el workbook (barrido completo con ws.iter_rows(), 0 comments) ni un solo `Comment(` en grupo_c.py. Sólo se implementó la segunda mitad: Instrucciones!A41 SÍ explica con claridad el caso de la vista previa del móvil/Drive que no recalcula TODAY(). El objetivo sustantivo del hallazgo (avisar al usuario) queda cubierto por la nota, pero el informe afirma un componente del fix (el comentario en celda) que nunca se implementó."
+  }
+ ],
+ "no_aplicados_injustificados": [],
+ "no_aplicados_verificados_ok": [
+  {
+   "id": "RD-03",
+   "nota": "Justificación verificada in situ: BONUS-02!Calculadora!B12 = 'Horas pagadas por presencia y servicio (el turno completo sale de multiplicarlas por los servicios):' (valor 4, re-rotulado tal como dice el motivo) y A50 explica la reconciliación con 01!Turnos (5 personas × 8h × 6 días = 240h/semana = 7 FTE). El cálculo de 480h que citaba el hallazgo original duplicaba el turno; subir B12 a 8 rompería §3/§7-bis.6 (6-9 FTE para 80 cubiertos) tal y como argumenta el no_aplicado. Motivo se sostiene."
+  }
+ ],
+ "gates": {
+  "dryrun_exit": 0,
+  "idempotencia": 0,
+  "censo_exit": 0,
+  "cache_fallos": 0,
+  "ts_diagnosticos": 0
+ },
+ "gates_detalle": {
+  "comando": "CLAUDE_SCRATCHPAD=/private/tmp/.../scratchpad/propio-verificador python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --json /private/tmp/.../scratchpad/kit-gp-v2/ronda2.json",
+  "dryrun_exit": "0 — 'MOTOR VERDE (idempotencia, cache, censo, protección, leyenda única)'",
+  "idempotencia_diferencias": "0 (2.ª pasada sobre clon)",
+  "censo_fail": "9 ficheros censados, 0 defectos (--fail)",
+  "cache_fallos_detalle": "fallos_pycel=0 en los 9 xlsx · valores de error de Excel cacheados=0 · veredictos cacheados fuera de la lista blanca (RT-21)=0 · afirmaciones legales falsas vivas en el copy (RD-07/RC-06)=0 · calendarios anclados a un año pasado (RT-13)=0 · autofiltros incompletos (RD-06)=0",
+  "demostraciones": "31/31 OK",
+  "ts_diagnosticos_detalle": "ts.transpileModule sobre los 15 .ts/.tsx que aparecen en `git status --short` (kit-gestion-personal.ts, ContentGrid/FaqAccordion/HeroSection/WhySection.tsx, productos-changelog.ts, products-catalog.ts, testimonials-gestion-personal.ts, use-cases-content.{es,en}.ts, use-cases-content.{es,en}.consultor.ts, KitGestionPersonal.tsx, KitGestionPersonalDashboard.tsx, ProductosDigitales.tsx): 0 diagnósticos en los 15. El 16.º fichero tocado (ProductosDigitalesHubPage.astro) no es TS, se verificó por lectura directa.",
+  "produccion": "astro-site/public/dl/kit-gestion-personal/ — `git status --short` sin salida: intacta.",
+  "aviso_no_relacionado": "astro-site/public/dl/demos-grupo-b/ sigue sin trackear (5 xlsx del kit de INVENTARIO, grupo_b.py:1719, fecha 24-ago 01:12) — confirmado que NO pertenece a este kit ni a esta sesión; no se ha tocado, tal como advertía la corrección."
+ },
+ "hallazgos_nuevos": [
+  {
+   "severidad": "baja",
+   "donde": "src/components/kit-gestion-personal/WhySection.tsx:12-13,21-22 y ContentGrid.tsx (mismo patrón)",
+   "hallazgo": "Acentuación mixta dentro del mismo componente visible: RC-06/RD-07 portaron VERBATIM sólo las frases con la cifra legal corregida (que sí llevan tildes, tomadas del .ts) mientras el resto de bullets del mismo bloque siguen sin tildes de antes de la v2.0 — p. ej. WhySection.tsx:12 'Formulas Reales'/'Calculo automatico'/'ratios covers/empleado'/'prevision de plantilla' y :22 'planificacion'/'Sin suscripcion', a un scroll de 'Cumplimiento Legal, con Cita Exacta' que sí lleva tildes. No estaba entre los 74 ids (RD-26/RC-04 acotaban el barrido de tildes a kit-gestion-personal.ts y testimonials-gestion-personal.ts, no a estos 4 componentes de la SPA), así que no es un 'mal resuelto' de ningún id, pero es la misma clase de inconsistencia visual que motivó RC-04/RD-26 y un comprador la ve en la misma landing."
+  }
+ ],
+ "listo": false,
+ "motivo_no_listo": "Los gates cierran limpios (dry-run exit 0, idempotencia 0, censo --fail 0 defectos, cache_fallos 0, ts_diagnosticos 0) y 71 de los 74 ids verifican celda a celda exactamente lo que dice la corrección, incluido el no_aplicado (RD-03), cuya justificación se sostiene con la fórmula y la nota reales. Pero 2 ids (RT-22, RT-24) tienen evidencia en el informe de corrección que NO coincide con lo que hay en el fichero entregado: RT-22 cita freeze_panes='A13' cuando el .xlsx trae 'A15' (geometría correcta tras el desplazamiento de RD-21, pero cifra distinta a la documentada), y RT-24 promete un comentario de celda que no existe en ningún sitio del workbook (0 comentarios en las 9 hojas). Ninguno de los dos reintroduce el defecto original que motivó el hallazgo — en ambos casos el objetivo sustantivo se cumple por otra vía — pero como comprobación estricta 'evidencia declarada = evidencia real', los dos son mal_resueltos. Antes de dar el kit por listo: (1) corregir la prosa de RT-22 en el informe de corrección para que diga A15 (no requiere tocar el .xlsx, ya está bien), y (2) decidir si RT-24 necesita también el comentario en celda o si la nota A41 basta y se retira esa cláusula del texto del fix. Ninguna de las dos exige tocar producción."
+}
