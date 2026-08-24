@@ -72,6 +72,7 @@ from openpyxl.formatting.rule import FormulaRule, Rule
 from openpyxl.styles import Alignment, Font, PatternFill, Protection
 from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import column_index_from_string, get_column_letter
+from openpyxl.worksheet.cell_range import CellRange
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.worksheet.page import PageMargins
 
@@ -237,10 +238,18 @@ EJEMPLO_CANONICO = {
     'ventas_mes': 22.0 * 55 * 26,                     # 31.460,00 €
     'food_cost_pct': 0.30,
     'labor_cost_pct': 0.28,
-    'fijos_sin_personal': 9500.0,   # alquiler, suministros, seguros, gestoría
+    # Alquiler 3.000 + seguros 400 + suministros 1.500 + marketing 500 +
+    # gestoría 300 + otros 500 = 6.200 €. Son EXACTAMENTE los del 02 sin
+    # las nóminas ni la cuota: si no coinciden, el 02 y el BONUS-08 dan
+    # EBITDA distinto para el mismo restaurante.
+    'fijos_sin_personal': 6200.0,
     'cuota_prestamo': 800.0,        # fuera del EBITDA (TEC-23)
     'aforo_plazas': 60,             # plazas para el RevPASH (DOM-07)
-    'horas_servicio_mes': 360,
+    # Horas de SERVICIO, no de apertura: el RevPASH mide plaza·hora con
+    # clientes sentados. 6 h/día × 26 días = 156. Con las 360 «horas de
+    # servicio/mes» de la v1.1 (12 h/día × 30) el ratio salía cuatro veces más
+    # bajo de lo que le toca y el benchmark parecía inalcanzable.
+    'horas_servicio_mes': 156,
     'm2_sala': 80,
 }
 
@@ -337,12 +346,39 @@ def limpiar_rango(ws, rango):
     `validaciones()` le cuelga una DV que no le corresponde. Se limpian valor,
     relleno, formato de número y bloqueo.
     """
+    # Las combinaciones se DESHACEN primero: en estos diez ficheros el pie
+    # «© 2026 AI Chef Pro» va combinado a lo ancho de la tabla, y una
+    # `MergedCell` tiene el `value` de sólo lectura — asignarle nada revienta
+    # con AttributeError. Se rehace el pie donde toque, sin combinar.
+    objetivo = CellRange(rango) if ':' in rango else CellRange(rango + ':'
+                                                              + rango)
+    for m in [str(r) for r in ws.merged_cells.ranges]:
+        # `intersection` LANZA ValueError cuando no hay solape (no devuelve
+        # None): hay que atraparlo, no comprobarlo.
+        try:
+            CellRange(m).intersection(objetivo)
+        except ValueError:
+            continue
+        ws.unmerge_cells(m)
     for fila in ws[rango] if ':' in rango else [[ws[rango]]]:
         for cel in fila:
             cel.value = None
             cel.fill = PatternFill()
             cel.number_format = 'General'
             cel.protection = Protection(locked=True)
+
+
+def aplicar_estilo(ws, coord, estilo, fmt=None):
+    """Copia un estilo y REPONE el formato de número.
+
+    `_style` arrastra el `numFmtId`, así que asignarlo DESPUÉS de `f()`/`val()`
+    pisaba en silencio el formato que se acababa de poner. Se veía sólo en la
+    idempotencia: `0.0%` en la primera pasada y `General` en la segunda.
+    """
+    ws[coord]._style = copy.copy(estilo)
+    if fmt:
+        ws[coord].number_format = fmt
+    return ws[coord]
 
 
 def marcar_editable(ws, rango):
@@ -393,6 +429,13 @@ def gris(ws, rango):
 # ==========================================================================
 # Formato condicional (§1.2) — SIEMPRE purgando antes de escribir
 # ==========================================================================
+def _norm_rango(ref):
+    try:
+        return CellRange(ref).coord
+    except Exception:                                        # noqa: BLE001
+        return ref
+
+
 def _limpiar_cf(ws, rango):
     """Quita las reglas cuyo sqref es exactamente `rango`.
 
@@ -400,9 +443,13 @@ def _limpiar_cf(ws, rango):
     el fichero sigue viéndose igual en Excel, pero la idempotencia salta y el
     XML crece en cada ejecución.
     """
+    # El sqref se compara NORMALIZADO: openpyxl guarda `C5:C5` como `C5`, así
+    # que comparar cadenas sueltas no encontraba la regla anterior y la 2.ª
+    # pasada apilaba una copia (idempotencia rota por una sola regla).
+    objetivo = _norm_rango(rango)
     supervivientes = []
     for cf in ws.conditional_formatting:
-        if str(cf.sqref) == rango:
+        if _norm_rango(str(cf.sqref)) == objetivo:
             continue
         supervivientes.append((str(cf.sqref), list(cf.rules)))
     nueva = ConditionalFormattingList()

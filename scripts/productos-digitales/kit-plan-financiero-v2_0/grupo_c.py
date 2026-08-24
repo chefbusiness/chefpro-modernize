@@ -96,7 +96,7 @@ BENCHMARKS = (
     (10, 'EBITDA %', 0.15, 0.10, 'mayor', 'pct'),
     (11, 'Coste cubierto / Ticket', 0.60, 0.70, 'menor', 'pct'),
     (12, 'Beverage Cost %', 0.18, 0.24, 'menor', 'pct'),
-    (13, 'RevPASH (€/plaza/hora)', 12.0, 8.0, 'mayor', 'eur'),
+    (13, 'RevPASH (€/plaza/hora)', 6.0, 3.0, 'mayor', 'eur'),
     (14, 'Margen bruto %', 0.70, 0.65, 'mayor', 'pct'),
 )
 BM_POR_ETIQUETA = dict((b[1], b) for b in BENCHMARKS)
@@ -138,6 +138,13 @@ COMIDA_EJ = round((VENTAS_EJ - BARRA_EJ) * EJ['food_cost_pct'], 2)
 BEBIDA_EJ = round(BARRA_EJ * 0.22, 2)
 PERSONAL_EJ = round(VENTAS_EJ * EJ['labor_cost_pct'], 2)
 CUBIERTOS_EJ = EJ['cubiertos_dia'] * EJ['dias_apertura']
+
+
+
+def _es_num(x):
+    """pycel devuelve `int` cuando el resultado es entero: comprobar sólo
+    `float` daba falsos fallos (121000 no es `float`)."""
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
 
 
 def _pct(v):
@@ -209,7 +216,8 @@ DATOS_06 = (
     (9, 'Gastos operativos totales (€)', None, 'calc', 'Mensual'),
     (10, 'Coste personal total (€)', PERSONAL_EJ, 'eur', 'Mensual'),
     (11, 'm² de sala', EJ['m2_sala'], 'ent', ''),
-    (12, 'Horas de servicio / mes', EJ['horas_servicio_mes'], 'ent', ''),
+    (12, 'Horas de SERVICIO / mes (con clientes sentados)',
+     EJ['horas_servicio_mes'], 'ent', ''),
     (13, 'Nº de plazas (aforo)', EJ['aforo_plazas'], 'ent', ''),
     (14, 'Nº de cubiertos servidos', CUBIERTOS_EJ, 'ent', 'Mensual'),
 )
@@ -224,9 +232,10 @@ COMPLEMENTARIOS_06 = (
      'compras se disparan y el consumo NO.'),
     (36, 'Coste de bebida — consumo (€)', BEBIDA_EJ,
      'Barra y bodega, aparte de la comida.'),
-    (37, 'Otros gastos operativos (€)', 3300.0,
-     'Suministros, marketing, gestoría, mantenimiento… SIN alquiler ni '
-     'amortización (van aparte, USALI).'),
+    (37, 'Otros gastos operativos (€)', 5400.0,
+     'Suministros, marketing, gestoría, comisiones de delivery… SIN alquiler '
+     'ni amortización (van aparte, USALI). Con este valor el EBITDA del '
+     'ejemplo sale al 17,3 %, el mismo que dan el 02 y el BONUS-08.'),
     (38, 'Alquiler (€)', 3000.0,
      'Fuera del GOP: en USALI es carga de propiedad.'),
 )
@@ -257,8 +266,7 @@ def _ratios_06(wb, informe):
         ws['B' + r]._style = copy.copy(est_label)
         if tipo == 'calc':
             continue
-        motor.val(ws, 'C' + r, valor, fmts[tipo], verde_=True)
-        ws['C' + r]._style = copy.copy(est_input)
+        motor.aplicar_estilo(ws, 'C' + r, est_input, fmts[tipo])
         motor.val(ws, 'C' + r, valor, fmts[tipo], verde_=True)
         if periodo:
             ws['D' + r] = periodo
@@ -313,8 +321,7 @@ def _ratios_06(wb, informe):
         r = str(fila)
         ws['B' + r] = etiqueta
         ws['B' + r]._style = copy.copy(est_label)
-        motor.val(ws, 'C' + r, valor, motor.FMT_EUR, verde_=True)
-        ws['C' + r]._style = copy.copy(est_input)
+        motor.aplicar_estilo(ws, 'C' + r, est_input, motor.FMT_EUR)
         motor.val(ws, 'C' + r, valor, motor.FMT_EUR, verde_=True)
         ws['D' + r] = nota
         ws['D' + r].font = Font(size=9, italic=True)
@@ -350,7 +357,10 @@ def _instrucciones_06(wb):
         rx=_re.compile(r'^▸ Los benchmarks del sector'))
     motor.linea_instrucciones(
         ws, '▸ El RevPASH se mide por PLAZA y hora (aforo × horas de '
-            'servicio), no por m². Las ventas por m² tienen su propia fila.')
+            'servicio), no por m². «Horas de servicio» son aquellas en las '
+            'que hay clientes sentados (p. ej. 6 h/día × 26 días = 156), no '
+            'las que el local está abierto. Las ventas por m² tienen su '
+            'propia fila.')
 
 
 # ==========================================================================
@@ -486,10 +496,12 @@ def _financiacion_07(wb, informe):
 
 def _proyecciones_07(wb, informe):
     ws = wb['Proyecciones']
+    # B8 es TOTAL GASTOS en la v1.1 y «Comisiones de plataformas» (input) en
+    # la v2.0; B10 es un valor calculado en las dos. El título se construye,
+    # no se copia: A18 cambia de papel.
     est_label = copy.copy(ws['A4']._style)
     est_input = copy.copy(ws['B4']._style)
-    est_total = copy.copy(ws['B8']._style)
-    est_titulo = copy.copy(ws['A18']._style)
+    est_total = copy.copy(ws['B10']._style)
 
     motor.limpiar_rango(ws, 'A4:G40')
 
@@ -500,14 +512,13 @@ def _proyecciones_07(wb, informe):
         for i, L in enumerate(COLS_07):
             coord = L + r
             if regla == 'input':
-                motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
-                ws[coord]._style = copy.copy(est_input)
+                motor.aplicar_estilo(ws, coord, est_input, motor.FMT_EUR)
                 motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
             else:
+                motor.aplicar_estilo(ws, coord, est_total, motor.FMT_EUR)
                 motor.f(ws, coord,
                         regla.replace('{L}', L).replace('{F}', str(12 + i)),
                         motor.FMT_EUR)
-                ws[coord]._style = copy.copy(est_total)
     ws['A12'].value = 'Amortización'
     ws['G12'] = ('Cópiala de 04!Resumen, columna «Dotación anual (€)» de la '
                  'fila INVERSIÓN TOTAL.')
@@ -515,7 +526,7 @@ def _proyecciones_07(wb, informe):
 
     # --- bloque de flujos, ahora CON el año 0 -------------------------------
     ws['A20'] = 'FLUJOS DEL PROYECTO E INDICADORES DE RENTABILIDAD'
-    ws['A20']._style = copy.copy(est_titulo)
+    ws['A20'].font = Font(bold=True, size=11)
     encabezados = ('Concepto', 'Año 0', 'Año 1', 'Año 2', 'Año 3', 'Año 4',
                    'Año 5')
     for i, texto in enumerate(encabezados):
@@ -664,22 +675,30 @@ def _resumen_ejecutivo_07(wb, informe):
 # BONUS-08 · Simulador
 # ==========================================================================
 ESCENARIOS_08 = {
-    'B': {'ticket': 18, 'cubiertos': 40, 'dias': 25, 'food': 0.38,
-          'labor': 0.32, 'fijos': 9800},
+    'B': {'ticket': 18, 'cubiertos': 40, 'dias': 25, 'food': 0.40,
+          'labor': 0.32, 'fijos': 6500},
     'C': {'ticket': EJ['ticket'], 'cubiertos': EJ['cubiertos_dia'],
-          'dias': EJ['dias_apertura'], 'food': 0.32, 'labor': EJ['labor_cost_pct'],
+          'dias': EJ['dias_apertura'], 'food': 0.35,
+          'labor': EJ['labor_cost_pct'],
           'fijos': EJ['fijos_sin_personal']},
-    'D': {'ticket': 28, 'cubiertos': 75, 'dias': 27, 'food': 0.28,
-          'labor': 0.25, 'fijos': 9200},
+    'D': {'ticket': 28, 'cubiertos': 75, 'dias': 27, 'food': 0.30,
+          'labor': 0.25, 'fijos': 5900},
 }
 
 
 def _bonus_08(wb, informe):
     ws = wb['Simulador']
-    ws['A11'] = ('Costes fijos mensuales SIN personal (alquiler, suministros, '
-                 'seguros, gestoría, cuota de préstamo)')
-    ws['A12'] = ('Si copias los costes fijos del 02, RESTA antes las nóminas: '
-                 'el personal ya entra arriba como % sobre ventas.')
+    # La variable de la fila 9 no es «food cost» a secas: incluye las
+    # comisiones de delivery, igual que el `% Coste variable` del 02. Con dos
+    # nombres para la misma magnitud, los dos libros daban EBITDA distinto
+    # para el mismo restaurante.
+    ws['A9'] = '% Coste variable (food + comisiones de delivery)'
+    ws['A11'] = ('Costes fijos mensuales SIN personal y SIN cuota de préstamo '
+                 '(alquiler, suministros, seguros, marketing, gestoría, '
+                 'otros)')
+    ws['A12'] = ('Si copias los costes fijos del 02, RESTA antes las nóminas y '
+                 'la cuota: el personal ya entra arriba como % sobre ventas y '
+                 'el EBITDA se mide antes del servicio de deuda.')
     ws['A12'].font = Font(size=9, italic=True)
     fmts = {'ticket': motor.FMT_EUR, 'cubiertos': motor.FMT_ENT,
             'dias': motor.FMT_ENT, 'food': motor.FMT_PCT,
@@ -690,8 +709,11 @@ def _bonus_08(wb, informe):
         for clave, valor in valores.items():
             motor.val(ws, col + str(filas[clave]), valor, fmts[clave],
                       verde_=True)
-    ws['A22'] = ('Base común con el 02: mismo ticket, mismos cubiertos/día y '
-                 'mismos días de apertura en el escenario Base.')
+    ws['A22'] = ('Base común con el 02: mismo ticket (22 €), mismos '
+                 'cubiertos/día (55), mismos días (26), mismo % de coste '
+                 'variable (35 %) y los mismos costes fijos sin personal '
+                 '(6.200 €). El EBITDA base coincide: ~17 % sobre ventas en '
+                 'los dos libros.')
     ws['A22'].font = Font(size=9, italic=True)
     motor.anchos(ws, {'A': 56})
     informe.append('BONUS-08: fin de la doble contabilización del personal y '
@@ -923,7 +945,7 @@ def demos(carpeta, origen, destino):
         flujos = [flujo0] + [_ev(xl, "'Proyecciones'!" + L + '22')
                              for L in ('C', 'D', 'E', 'F', 'G')]
         tir = None
-        if all(isinstance(x, float) for x in flujos):
+        if all(_es_num(x) for x in flujos):
             tir = motor.tir_newton(flujos)
         fuera['grupo_c']['07'] = {
             'cuota_anual_100000_al_6pct_8anios': cuota,
@@ -934,19 +956,19 @@ def demos(carpeta, origen, destino):
             'flujos': flujos,
             'TIR_newton_sobre_esos_flujos': tir,
         }
-        if not (isinstance(ebitda1, float) and ebitda1 > 0):
+        if not (_es_num(ebitda1) and ebitda1 > 0):
             fuera['fallos'].append(
                 '07: el EBITDA del año 1 no calcula (' + str(ebitda1) + ')')
         if flujo0 != -150000:
             fuera['fallos'].append(
                 "07: el flujo del año 0 no sale del Resumen Ejecutivo ("
                 + str(flujo0) + ')')
-        if not isinstance(van, float):
+        if not _es_num(van):
             fuera['fallos'].append('07: el VAN no evalúa (' + str(van) + ')')
-        if not isinstance(pb, (float, int)):
+        if not _es_num(pb):
             fuera['fallos'].append(
                 '07: el payback no evalúa (' + str(pb) + ')')
-        if not (isinstance(dscr, float) and dscr > 0):
+        if not (_es_num(dscr) and dscr > 0):
             fuera['fallos'].append('07: el DSCR no calcula (' + str(dscr)
                                    + ')')
         if tir is None:
@@ -982,7 +1004,7 @@ def demos(carpeta, origen, destino):
             fuera['fallos'].append(
                 '06: la fila «Coste por cubierto / Ticket» sigue sin semáforo '
                 '(DOM-22)')
-        if isinstance(revpash, float) and isinstance(food, float):
+        if _es_num(revpash) and _es_num(food):
             # 31.460 € / (60 plazas × 360 h) = 1,456 €/plaza/hora.
             if abs(revpash - (VENTAS_EJ / (EJ['aforo_plazas']
                                            * EJ['horas_servicio_mes']))) > 0.01:
@@ -1044,11 +1066,11 @@ def demos(carpeta, origen, destino):
             'margen_base': margen, 'EBITDA_optimista': opt,
             'EBITDA_pesimista_(negativo_a_proposito)': pes,
         }
-        if not (isinstance(base_mes, float) and base_mes > 0):
+        if not (_es_num(base_mes) and base_mes > 0):
             fuera['fallos'].append(
                 'BONUS-08: el escenario BASE sigue en pérdidas ('
                 + str(base_mes) + ')')
-        if not (isinstance(margen, float) and 0.05 <= margen <= 0.20):
+        if not (_es_num(margen) and 0.05 <= margen <= 0.20):
             fuera['fallos'].append(
                 'BONUS-08: el margen del escenario base es ' + str(margen)
                 + ', fuera del 5-20 % razonable')

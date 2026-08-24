@@ -116,6 +116,13 @@ PAGOS_INPUT = (
 TRIMESTRES = (('E', 'B', 'D'), ('H', 'E', 'G'), ('K', 'H', 'J'))
 
 
+
+def _es_num(x):
+    """pycel devuelve `int` cuando el resultado es entero: comprobar sólo
+    `float` daba falsos fallos (121000 no es `float`)."""
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+
 def _col(n):
     from openpyxl.utils import get_column_letter
     return get_column_letter(n)
@@ -194,25 +201,27 @@ def _parametros_03(wb, informe):
 
 def _flujo_mensual(wb, informe):
     ws = wb['Flujo Mensual']
+    # Fuentes de estilo ESTABLES: la fila 23 es «TOTAL PAGOS» en la v1.1 y
+    # «Cuota de préstamo» (input) en la v2.0, así que copiar de ahí pintaba de
+    # verde los totales en la 2.ª pasada. La 12 es un total en las dos.
     est_label = copy.copy(ws['A7']._style)
     est_input = copy.copy(ws['B7']._style)
     est_titulo = copy.copy(ws['A6']._style)
-    est_total_lbl = copy.copy(ws['A23']._style)
-    est_total_val = copy.copy(ws['B23']._style)
+    est_total_lbl = copy.copy(ws['A12']._style)
+    est_total_val = copy.copy(ws['B12']._style)
 
     motor.limpiar_rango(ws, 'A5:M45')
 
     # --- SALDO INICIAL: encadenado al SALDO FINAL del mes anterior ----------
     ws['A5'] = 'SALDO INICIAL'
     ws['A5']._style = copy.copy(est_total_lbl)
-    motor.val(ws, 'B5', 15000, motor.FMT_EUR, verde_=True)
-    ws['B5']._style = copy.copy(est_input)
+    motor.aplicar_estilo(ws, 'B5', est_input)
     motor.val(ws, 'B5', 15000, motor.FMT_EUR, verde_=True)
     motor.permitir_negativo(ws, 'B5')
     for i in range(1, 12):
+        motor.aplicar_estilo(ws, COLS[i] + '5', est_total_val)
         motor.f(ws, COLS[i] + '5',
                 '=' + COLS[i - 1] + str(F_SALDO_FIN), motor.FMT_EUR)
-        ws[COLS[i] + '5']._style = copy.copy(est_total_val)
 
     def _bloque(fila, etiqueta, estilo=est_label):
         ws['A' + str(fila)] = etiqueta
@@ -221,8 +230,7 @@ def _flujo_mensual(wb, informe):
     def _inputs(fila):
         for L in COLS:
             coord = L + str(fila)
-            motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
-            ws[coord]._style = copy.copy(est_input)
+            motor.aplicar_estilo(ws, coord, est_input)
             motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
 
     _bloque(6, 'COBROS (Entradas)', est_titulo)
@@ -235,9 +243,10 @@ def _flujo_mensual(wb, informe):
                        'viene)')
     _bloque(F_COBROS, 'TOTAL COBROS DE CAJA', est_total_lbl)
     for i, L in enumerate(COLS):
+        motor.aplicar_estilo(ws, L + str(F_VENTAS), est_total_val)
         motor.f(ws, L + str(F_VENTAS), '=SUM(' + L + '7:' + L + '11)',
                 motor.FMT_EUR)
-        ws[L + str(F_VENTAS)]._style = copy.copy(est_total_val)
+        motor.aplicar_estilo(ws, L + str(F_COBROS), est_total_val)
         motor.f(ws, L + str(F_TARJETA),
                 '=' + L + str(F_VENTAS)
                 + '*Parámetros!$C$4*Parámetros!$C$5/30', motor.FMT_EUR)
@@ -249,7 +258,6 @@ def _flujo_mensual(wb, informe):
             motor.f(ws, L + str(F_COBROS),
                     '=' + L + str(F_VENTAS) + '-' + L + str(F_TARJETA) + '+'
                     + COLS[i - 1] + str(F_TARJETA), motor.FMT_EUR)
-        ws[L + str(F_COBROS)]._style = copy.copy(est_total_val)
 
     _bloque(15, 'PAGOS (Salidas)', est_titulo)
     _bloque(F_PROVEEDORES, 'Pago a proveedores (según el plazo negociado)')
@@ -265,8 +273,7 @@ def _flujo_mensual(wb, informe):
                     + '*Parámetros!$C$6/30', motor.FMT_EUR)
 
     _bloque(18, 'Pago de Seguridad Social (la del mes anterior)')
-    motor.val(ws, 'B18', 0, motor.FMT_EUR, verde_=True)
-    ws['B18']._style = copy.copy(est_input)
+    motor.aplicar_estilo(ws, 'B18', est_input)
     motor.val(ws, 'B18', 0, motor.FMT_EUR, verde_=True)
     for i in range(1, 12):
         motor.f(ws, COLS[i] + '18', '=' + COLS[i - 1] + str(F_SS_DEVENGADA),
@@ -277,8 +284,7 @@ def _flujo_mensual(wb, informe):
         _inputs(fila)
 
     _bloque(25, 'Liquidación de IVA (mod. 303)')
-    motor.val(ws, 'B25', 0, motor.FMT_EUR, verde_=True)
-    ws['B25']._style = copy.copy(est_input)
+    motor.aplicar_estilo(ws, 'B25', est_input)
     motor.val(ws, 'B25', 0, motor.FMT_EUR, verde_=True)
     calculadas = set()
     for destino, ini, fin in TRIMESTRES:
@@ -295,6 +301,8 @@ def _flujo_mensual(wb, informe):
     _bloque(F_FLUJO, 'FLUJO NETO DEL MES', est_total_lbl)
     _bloque(F_SALDO_FIN, 'SALDO FINAL', est_total_lbl)
     for L in COLS:
+        for fila in (F_TOTAL_PAGOS, F_FLUJO, F_SALDO_FIN):
+            motor.aplicar_estilo(ws, L + str(fila), est_total_val)
         motor.f(ws, L + str(F_TOTAL_PAGOS),
                 '=SUM(' + L + '16:' + L + '26)', motor.FMT_EUR)
         motor.f(ws, L + str(F_FLUJO),
@@ -302,8 +310,6 @@ def _flujo_mensual(wb, informe):
                 motor.FMT_EUR)
         motor.f(ws, L + str(F_SALDO_FIN),
                 '=' + L + '5+' + L + str(F_FLUJO), motor.FMT_EUR)
-        for fila in (F_TOTAL_PAGOS, F_FLUJO, F_SALDO_FIN):
-            ws[L + str(fila)]._style = copy.copy(est_total_val)
 
     # --- Bloque gris: datos base que NO son caja ----------------------------
     _bloque(31, 'DATOS BASE — no son caja, pero alimentan las filas de arriba',
@@ -392,11 +398,10 @@ def _datos_02(wb, informe):
         r = str(fila)
         ws['B' + r] = etiqueta
         ws['B' + r]._style = copy.copy(est_label)
+        motor.aplicar_estilo(ws, 'C' + r, est_input)
         motor.val(ws, 'C' + r, valor, fmt, verde_=True)
-        ws['C' + r]._style = copy.copy(est_input)
-        motor.val(ws, 'C' + r, valor, fmt, verde_=True)
+        motor.aplicar_estilo(ws, 'D' + r, est_nota)
         ws['D' + r] = nota
-        ws['D' + r]._style = copy.copy(est_nota)
 
     ws['B12'] = ('La cuota del préstamo NO es un coste fijo operativo: va en '
                  'la fila 15, fuera del EBITDA.')
@@ -404,27 +409,25 @@ def _datos_02(wb, informe):
 
     ws['B14'] = 'TOTAL COSTES FIJOS OPERATIVOS'
     ws['B14']._style = copy.copy(est_total_lbl)
+    motor.aplicar_estilo(ws, 'C14', est_total_val)
     motor.f(ws, 'C14', '=SUM(C6:C11)+C13', motor.FMT_EUR)
-    ws['C14']._style = copy.copy(est_total_val)
 
     ws['B15'] = 'Cuota de préstamo (servicio de deuda)'
     ws['B15']._style = copy.copy(est_label)
+    motor.aplicar_estilo(ws, 'C15', est_input)
     motor.val(ws, 'C15', 800, motor.FMT_EUR, verde_=True)
-    ws['C15']._style = copy.copy(est_input)
-    motor.val(ws, 'C15', 800, motor.FMT_EUR, verde_=True)
+    motor.aplicar_estilo(ws, 'D15', est_nota)
     ws['D15'] = 'Cópiala del cuadro de amortización: 07!Financiación'
-    ws['D15']._style = copy.copy(est_nota)
 
     ws['B16'] = 'COSTES VARIABLES'
     ws['B16'].font = Font(bold=True)
     ws['B17'] = '% Coste variable sobre ventas'
     ws['B17']._style = copy.copy(est_label)
+    motor.aplicar_estilo(ws, 'C17', est_input, motor.FMT_PCT)
     motor.val(ws, 'C17', 0.35, motor.FMT_PCT, verde_=True)
-    ws['C17']._style = copy.copy(est_input)
-    motor.val(ws, 'C17', 0.35, motor.FMT_PCT, verde_=True)
+    motor.aplicar_estilo(ws, 'D17', est_nota)
     ws['D17'] = ('Food cost + comisiones de delivery + variables (30-40 % '
                  'típico). NO incluye el personal fijo.')
-    ws['D17']._style = copy.copy(est_nota)
 
     ws['B19'] = 'TICKET MEDIO'
     ws['B19'].font = Font(bold=True)
@@ -453,12 +456,12 @@ def _break_even_02(wb, informe):
     motor.limpiar_rango(ws, 'A5:F32')
 
     def _fila(r, etiqueta, formula, fmt, fuerte=False):
-        ws['B' + str(r)] = etiqueta
         ws['B' + str(r)]._style = copy.copy(
             est_total_lbl if fuerte else est_label)
+        ws['B' + str(r)] = etiqueta
+        motor.aplicar_estilo(ws, 'C' + str(r),
+                             est_total_val if fuerte else est_val, fmt)
         motor.f(ws, 'C' + str(r), formula, fmt)
-        ws['C' + str(r)]._style = copy.copy(
-            est_total_val if fuerte else est_val)
 
     _fila(5, 'Total costes fijos operativos / mes', '=Datos!$C$14',
           motor.FMT_EUR)
@@ -531,6 +534,10 @@ def _break_even_02(wb, informe):
 
 def _escenarios_02(wb, informe):
     ws = wb['Escenarios']
+    # El pie © venía combinado en A16:E16 y ahí van ahora el resultado después
+    # de deuda y el margen: `limpiar_rango` deshace la combinación (una
+    # `MergedCell` tiene el valor de sólo lectura).
+    motor.limpiar_rango(ws, 'A14:E22')
     ws['B6'] = ('% Coste variable (food + comisiones; NO incluye personal '
                 'fijo)')
     for L in ('C', 'D', 'E'):
@@ -557,7 +564,6 @@ def _escenarios_02(wb, informe):
     ws['B18'] = ('El EBITDA de la fila 13 va ANTES del servicio de deuda: es '
                  'el que se compara con los benchmarks del 06 y del 07.')
     ws['B18'].font = Font(size=9, italic=True)
-    ws['A16'] = None
     ws['A20'] = '© 2026 AI Chef Pro · aichef.pro'
     ws['A20'].font = Font(size=8)
     motor.anchos(ws, {'B': 52})
@@ -924,7 +930,7 @@ def demos(carpeta, origen, destino):
         if apertura_feb != saldo_ene or apertura_feb != 20000:
             fuera['fallos'].append(
                 '03: febrero no abre en 20.000 (' + str(apertura_feb) + ')')
-        if not (isinstance(iva_abril, float) and iva_abril > 0):
+        if not (_es_num(iva_abril) and iva_abril > 0):
             fuera['fallos'].append(
                 '03: la liquidación de IVA de abril no calcula ('
                 + str(iva_abril) + ')')
@@ -953,11 +959,11 @@ def demos(carpeta, origen, destino):
             'Escenarios_C10_con_dias_de_Datos': esc_fact,
             'celdas_editables_en_Escenarios_C4_E6': editables,
         }
-        if isinstance(cub, float) and cub != int(cub):
+        if _es_num(cub) and cub != int(cub):
             fuera['fallos'].append(
                 '02: los cubiertos/día no están redondeados (' + str(cub)
                 + ')')
-        if isinstance(cub, float) and isinstance(be, float):
+        if _es_num(cub) and _es_num(be):
             # Con el umbral redondeado hacia ARRIBA hay que llegar o pasarse.
             ticket = 22.0
             dias = 26
@@ -969,7 +975,7 @@ def demos(carpeta, origen, destino):
             fuera['fallos'].append(
                 '02: Escenarios!C4:E6 tiene ' + str(editables)
                 + '/9 celdas editables (RD-06)')
-        if not (isinstance(caja, float) and isinstance(be, float)
+        if not (_es_num(caja) and _es_num(be)
                 and caja > be):
             fuera['fallos'].append(
                 '02: el break-even de caja no supera al operativo ('
@@ -994,12 +1000,12 @@ def demos(carpeta, origen, destino):
             'dotacion_anual_obra_3pct': dotacion,
             'Resumen_D10_total_con_IVA': resumen_iva,
         }
-        if not (isinstance(total_con_iva, float)
+        if not (_es_num(total_con_iva)
                 and abs(total_con_iva - 121000) < 0.01):
             fuera['fallos'].append(
                 '04: 100.000 € de base no dan 121.000 € con IVA ('
                 + str(total_con_iva) + ')')
-        if not (isinstance(dotacion, float) and abs(dotacion - 3000) < 0.01):
+        if not (_es_num(dotacion) and abs(dotacion - 3000) < 0.01):
             fuera['fallos'].append(
                 '04: la dotación anual de obra al 3 % no da 3.000 € ('
                 + str(dotacion) + ')')

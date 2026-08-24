@@ -111,6 +111,13 @@ TOL_PP_VERDE = "'Resumen Anual'!$B$24"
 TOL_PP_AMBAR = "'Resumen Anual'!$B$25"
 
 
+
+def _es_num(x):
+    """pycel devuelve `int` cuando el resultado es entero: comprobar sólo
+    `float` daba falsos fallos (121000 no es `float`)."""
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+
 def _sem_mayor_mejor(celda, verde_ref, ambar_ref):
     """Ingresos, EBITDA y márgenes: lo malo es quedarse CORTO."""
     return ('=IF(' + celda + '>=-' + verde_ref + ',"✅ OK",IF('
@@ -139,12 +146,16 @@ def _clonar_estilo(ws, origen, destinos):
 # ==========================================================================
 def _pestana_anual(ws, informe):
     """Reescribe el bloque de GASTOS hacia abajo con el mapa nuevo."""
-    est_label = copy.copy(ws['A13']._style)
-    est_input = copy.copy(ws['B13']._style)
-    est_total_lbl = copy.copy(ws['A19']._style)
-    est_total_val = copy.copy(ws['B19']._style)
-    est_pct = copy.copy(ws['B22']._style)
-    est_titulo = copy.copy(ws['A12']._style)
+    # Los estilos se copian SÓLO de celdas cuyo papel es el mismo antes y
+    # después del mapa nuevo. Copiarlos de `A19`/`B19` —TOTAL GASTOS en la
+    # v1.1, «Marketing» (input verde) en la v2.0— hacía que la 2.ª pasada
+    # pintara de verde las fórmulas de total: 721 diferencias de idempotencia
+    # que en Excel se habrían visto como celdas de resultado «editables».
+    est_label = copy.copy(ws['A6']._style)
+    est_input = copy.copy(ws['B6']._style)
+    est_total_lbl = copy.copy(ws['A10']._style)
+    est_total_val = copy.copy(ws['B10']._style)
+    est_titulo = copy.copy(ws['A5']._style)
 
     motor.limpiar_rango(ws, 'A12:N40')
 
@@ -159,25 +170,24 @@ def _pestana_anual(ws, informe):
             coord = _col(c) + str(fila)
             if tipo == 'delivery':
                 # 30-35 % de la venta de delivery, con el % en celda (§1.3).
+                motor.aplicar_estilo(ws, coord, est_total_val)
                 motor.f(ws, coord,
                         '=' + _col(c) + '8*$B$' + str(FILA_PARAM_DELIVERY),
                         motor.FMT_EUR)
-                ws[coord]._style = copy.copy(est_total_val)
             else:
+                motor.aplicar_estilo(ws, coord, est_input)
                 motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
-                ws[coord]._style = copy.copy(est_input)
-                motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
+        motor.aplicar_estilo(ws, 'N' + str(fila), est_total_val)
         motor.f(ws, 'N' + str(fila),
                 '=SUM(B' + str(fila) + ':M' + str(fila) + ')', motor.FMT_EUR)
-        ws['N' + str(fila)]._style = copy.copy(est_total_val)
 
     ws['A' + str(FILA_TOTAL_GASTOS)].value = 'TOTAL GASTOS'
     ws['A' + str(FILA_TOTAL_GASTOS)]._style = copy.copy(est_total_lbl)
     for c in range(2, 15):
         L = _col(c)
+        motor.aplicar_estilo(ws, L + str(FILA_TOTAL_GASTOS), est_total_val)
         motor.f(ws, L + str(FILA_TOTAL_GASTOS),
                 '=SUM(' + L + '13:' + L + '20)', motor.FMT_EUR)
-        ws[L + str(FILA_TOTAL_GASTOS)]._style = copy.copy(est_total_val)
 
     ws['A' + str(FILA_EBITDA)].value = 'EBITDA'
     ws['A' + str(FILA_EBITDA)]._style = copy.copy(est_total_lbl)
@@ -185,15 +195,16 @@ def _pestana_anual(ws, informe):
     ws['A' + str(FILA_MARGEN)]._style = copy.copy(est_label)
     for c in range(2, 15):
         L = _col(c)
+        motor.aplicar_estilo(ws, L + str(FILA_EBITDA), est_total_val)
         motor.f(ws, L + str(FILA_EBITDA),
                 '=' + L + str(FILA_TOTAL_INGRESOS) + '-' + L
                 + str(FILA_TOTAL_GASTOS), motor.FMT_EUR)
-        ws[L + str(FILA_EBITDA)]._style = copy.copy(est_total_val)
+        motor.aplicar_estilo(ws, L + str(FILA_MARGEN), est_total_val,
+                             motor.FMT_PCT)
         motor.f(ws, L + str(FILA_MARGEN),
                 '=IF(' + L + str(FILA_TOTAL_INGRESOS) + '=0,0,' + L
                 + str(FILA_EBITDA) + '/' + L + str(FILA_TOTAL_INGRESOS) + ')',
                 motor.FMT_PCT)
-        ws[L + str(FILA_MARGEN)]._style = copy.copy(est_pct)
 
     ws['A26'].value = 'PARÁMETROS Y NOTAS'
     ws['A26']._style = copy.copy(est_titulo)
@@ -255,8 +266,10 @@ def _pestana_mensual(ws, informe):
     est_calc = copy.copy(ws['D13']._style)
     est_pct = copy.copy(ws['E13']._style)
     est_sem = copy.copy(ws['F13']._style)
-    est_total_lbl = copy.copy(ws['A19']._style)
-    est_total_val = copy.copy(ws['B19']._style)
+    # A19/B19 son TOTAL GASTOS en la v1.1 y «Marketing» en la v2.0: el estilo
+    # se copia de la fila 10 (TOTAL INGRESOS), que no cambia de papel.
+    est_total_lbl = copy.copy(ws['A10']._style)
+    est_total_val = copy.copy(ws['B10']._style)
     est_titulo = copy.copy(ws['A12']._style)
 
     # 1) INGRESOS: sólo cambia el semáforo (deja de castigar vender de más).
@@ -275,61 +288,59 @@ def _pestana_mensual(ws, informe):
         ws['A' + r].value = etiqueta
         ws['A' + r]._style = copy.copy(est_label)
         for coord in ('B' + r, 'C' + r):
+            motor.aplicar_estilo(ws, coord, est_input)
             motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
-            ws[coord]._style = copy.copy(est_input)
-            motor.val(ws, coord, 0, motor.FMT_EUR, verde_=True)
+        motor.aplicar_estilo(ws, 'D' + r, est_calc, motor.FMT_EUR)
         motor.f(ws, 'D' + r, '=C' + r + '-B' + r, motor.FMT_EUR)
-        ws['D' + r]._style = copy.copy(est_calc)
+        motor.aplicar_estilo(ws, 'E' + r, est_pct, motor.FMT_PCT)
         motor.f(ws, 'E' + r, '=IF(B' + r + '=0,0,(C' + r + '-B' + r + ')/B'
                 + r + ')', motor.FMT_PCT)
-        ws['E' + r]._style = copy.copy(est_pct)
+        motor.aplicar_estilo(ws, 'F' + r, est_sem)
         motor.f(ws, 'F' + r,
                 _sem_menor_mejor('$E' + r, TOL_PCT_VERDE, TOL_PCT_AMBAR))
-        ws['F' + r]._style = copy.copy(est_sem)
 
     r = str(FILA_TOTAL_GASTOS_MES)
     ws['A' + r].value = 'TOTAL GASTOS'
     ws['A' + r]._style = copy.copy(est_total_lbl)
+    for L in ('B', 'C', 'D', 'E', 'F'):
+        motor.aplicar_estilo(ws, L + r, est_total_val)
     for L in ('B', 'C'):
         motor.f(ws, L + r, '=SUM(' + L + '13:' + L + '20)', motor.FMT_EUR)
-        ws[L + r]._style = copy.copy(est_total_val)
     motor.f(ws, 'D' + r, '=C' + r + '-B' + r, motor.FMT_EUR)
     motor.f(ws, 'E' + r, '=IF(B' + r + '=0,0,(C' + r + '-B' + r + ')/B'
             + r + ')', motor.FMT_PCT)
     motor.f(ws, 'F' + r,
             _sem_menor_mejor('$E' + r, TOL_PCT_VERDE, TOL_PCT_AMBAR))
-    for L in ('D', 'E', 'F'):
-        ws[L + r]._style = copy.copy(est_total_val)
 
     # EBITDA: la desviación % divide entre ABS() del presupuesto (TEC-10).
     e = str(FILA_EBITDA_MES)
     ws['A' + e].value = 'EBITDA'
     ws['A' + e]._style = copy.copy(est_total_lbl)
+    for L in ('B', 'C', 'D', 'E', 'F'):
+        motor.aplicar_estilo(ws, L + e, est_total_val)
     for L in ('B', 'C'):
         motor.f(ws, L + e, '=' + L + '10-' + L + r, motor.FMT_EUR)
-        ws[L + e]._style = copy.copy(est_total_val)
     motor.f(ws, 'D' + e, '=C' + e + '-B' + e, motor.FMT_EUR)
     motor.f(ws, 'E' + e, motor.iferror('($C' + e + '-$B' + e + ')/ABS($B'
                                        + e + ')'), motor.FMT_PCT)
     motor.f(ws, 'F' + e,
             _sem_mayor_mejor('$E' + e, TOL_PCT_VERDE, TOL_PCT_AMBAR))
-    for L in ('D', 'E', 'F'):
-        ws[L + e]._style = copy.copy(est_total_val)
 
     # Margen EBITDA % — fila que hasta hoy sólo tenía B y C (TEC-26).
     m = str(FILA_MARGEN_MES)
     ws['A' + m].value = 'Margen EBITDA %'
     ws['A' + m]._style = copy.copy(est_label)
     for L in ('B', 'C'):
+        motor.aplicar_estilo(ws, L + m, est_pct, motor.FMT_PCT)
         motor.f(ws, L + m, '=IF(' + L + '10=0,0,' + L + e + '/' + L + '10)',
                 motor.FMT_PCT)
-        ws[L + m]._style = copy.copy(est_pct)
+    motor.aplicar_estilo(ws, 'D' + m, est_pct, motor.FMT_PP)
     motor.f(ws, 'D' + m, '=C' + m + '-B' + m, motor.FMT_PP)
     ws['E' + m].value = 'p.p.'
     ws['E' + m].alignment = Alignment(horizontal='center')
+    motor.aplicar_estilo(ws, 'F' + m, est_sem)
     motor.f(ws, 'F' + m,
             _sem_mayor_mejor('$D' + m, TOL_PP_VERDE, TOL_PP_AMBAR))
-    ws['F' + m]._style = copy.copy(est_sem)
 
     # RATIOS AUTOMÁTICOS, ahora con D/E/F (TEC-26) y con el food cost medido
     # sobre las ventas de COMIDA, no sobre el total con la barra dentro.
@@ -346,17 +357,18 @@ def _pestana_mensual(ws, informe):
         ws['A' + rr].value = etiqueta
         ws['A' + rr]._style = copy.copy(est_label)
         for L in ('B', 'C'):
+            motor.aplicar_estilo(ws, L + rr, est_pct, motor.FMT_PCT)
             motor.f(ws, L + rr, formulas[fila].replace('{L}', L),
                     motor.FMT_PCT)
-            ws[L + rr]._style = copy.copy(est_pct)
+        motor.aplicar_estilo(ws, 'D' + rr, est_pct, motor.FMT_PP)
         motor.f(ws, 'D' + rr, '=C' + rr + '-B' + rr, motor.FMT_PP)
         ws['E' + rr].value = 'p.p.'
         ws['E' + rr].alignment = Alignment(horizontal='center')
+        motor.aplicar_estilo(ws, 'F' + rr, est_sem)
         motor.f(ws, 'F' + rr,
                 _sem_menor_mejor('$D' + rr, TOL_PP_VERDE, TOL_PP_AMBAR)
                 if sentido == 'menor'
                 else _sem_mayor_mejor('$D' + rr, TOL_PP_VERDE, TOL_PP_AMBAR))
-        ws['F' + rr]._style = copy.copy(est_sem)
 
     ws['A32'].value = '© 2026 AI Chef Pro · aichef.pro'
     ws['A32'].font = Font(size=8)
@@ -416,9 +428,9 @@ def _resumen_anual(ws, informe):
             motor.f(ws, 'N12', motor.iferror('(N6-N5)/ABS(N5)'),
                     motor.FMT_PCT)
             continue
+        motor.aplicar_estilo(ws, 'N' + str(fila), est_val, motor.FMT_EUR)
         motor.f(ws, 'N' + str(fila), '=SUM(B' + str(fila) + ':M' + str(fila)
                 + ')', motor.FMT_EUR)
-        ws['N' + str(fila)]._style = copy.copy(est_val)
     motor.f(ws, 'N18', '=IF(N6=0,0,N17/N6)', motor.FMT_PCT)
 
     # Tolerancias del semáforo EN CELDA (RT-25): las leen las 12 pestañas.
@@ -584,7 +596,7 @@ def demos(carpeta, origen, destino):
         if b5 != 30000:
             fuera['fallos'].append(
                 "01: 'Resumen'!B5 no consolida 'Año 1'!N10 (" + str(b5) + ')')
-        if not (isinstance(comision, float) and abs(comision - 3000) < 0.01):
+        if not (_es_num(comision) and abs(comision - 3000) < 0.01):
             fuera['fallos'].append(
                 '01: la comisión de delivery no calcula el 30 % ('
                 + str(comision) + ')')
