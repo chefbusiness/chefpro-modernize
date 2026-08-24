@@ -1,0 +1,259 @@
+{
+  "lente": "COHERENCIA COMERCIAL — landing/dashboard/changelog EDITADOS vs la copia dry-run del kit (cada cifra y cada promesa, verificable en una celda)",
+  "hallazgos": [
+    {
+      "id": "RC-01",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-plan-financiero-v2_0/",
+      "ubicacion": "paquete: solo main.py y motor.py",
+      "hallazgo": "El paquete NO tiene grupo_a.py / grupo_b.py / grupo_c.py, que son los que ejecutan las secciones 2, 3 y 4 de la SPEC. La copia dry-run sale con 0 formulas nuevas en 7 de los 10 ficheros (01, 01b, 04, 05, 07, BONUS-08, BONUS-09) y el propio main.py declara PENDIENTE en 2 ficheros. Mientras tanto, la landing, la FAQ, el schema y los emails YA estan reescritos en clave v2.0: el copy va por delante del producto.",
+      "evidencia": "`ls scripts/productos-digitales/kit-plan-financiero-v2_0/` -> ['__pycache__','main.py','motor.py']. Salida del dry-run: '01-plan-financiero-previsional.xlsx: 0 formulas nuevas' ... '07-informe-viabilidad-bancos.xlsx: 0 formulas nuevas'; 'PENDIENTE 02-calculadora-punto-equilibrio.xlsx: sin grafico - lo desbloquea grupo_b'; 'PENDIENTE 06-dashboard-ratios-financieros.xlsx: sin grafico - lo desbloquea grupo_c'.",
+      "fix": "No publicar ninguna superficie hasta que existan y corran grupo_a/b/c. Si hubiera que publicar hoy, habria que REVERTIR el copy a v1.1, no al reves."
+    },
+    {
+      "id": "RC-02",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":163 grid.templates[7] · :178 why.reasons[2] · :275 cta.items[6] · :293 testimonials[7]",
+      "hallazgo": "Cuatro superficies venden 'TIR, VAN, payback period' del informe bancario. En la copia el 07 no calcula ninguno de los tres: la TIR queda cacheada como texto, el VAN devuelve la inversion cambiada de signo y el payback es una celda VACIA. Es el entregable mas caro del kit y el que se imprime para el banco.",
+      "evidencia": "07-informe-viabilidad-bancos.xlsx!Proyecciones (data_only): B21 = '—' (TIR), B22 = -150000.0 (VAN), B23 = None (payback, ni celda). Formula viva B21 = '=IFERROR(IRR(B19:F19),\"N/A\")' sobre B19:F19 donde solo B19=-150000 y C19:F19 estan vacias. Log del dry-run: 'flujos: [-150000.0, 0.0, 0.0, 0.0, 0.0] · TIR: None'.",
+      "fix": "Ejecutar SPEC 4 (07) y 1.8 antes de tocar el copy; verificar B21/B22/B23 con data_only distintos de '—'/negativo/None."
+    },
+    {
+      "id": "RC-03",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":90 (schema.faqs[2]) y :248 (faqs[2]) — tambien src/components/kit-plan-financiero/FaqAccordion.tsx:16 y src/pages/KitPlanFinanciero.tsx:73",
+      "hallazgo": "La FAQ del banco se reescribio en la v2.0 y en la reescritura se AÑADIO una promesa nueva que antes no estaba: 'ratios de solvencia'. La hoja Ratios del 07 no tiene ni una sola celda creada en la columna Valor: solo etiquetas y la referencia bancaria. La correccion de COM-25 (retirar la garantia) introdujo de paso una afirmacion falsa.",
+      "evidencia": "07-informe-viabilidad-bancos.xlsx!Ratios: B4:B10 con las 7 etiquetas y D4:D10 con las referencias ('> 1.25x' en D5), pero C4:C10 = None en las siete filas. El libro entero tiene 3 formulas (log inject_cache: 'formulas=3').",
+      "fix": "O se construye el bloque de ratios de SPEC 4 (07) o se quita 'ratios de solvencia' de las 4 superficies. Hoy la frase no es verificable en ninguna celda."
+    },
+    {
+      "id": "RC-04",
+      "severidad": "alta",
+      "fichero": "astro-site/src/components/pages/ProductosDigitalesHubPage.astro",
+      "ubicacion": ":333 (description del producto en el hub)",
+      "hallazgo": "COM-10 se corrigio en el gemelo MUERTO (la SPA) y se dejo vivo en la superficie que sirve produccion. El hub de Astro —el que renderiza /productos-digitales— sigue diciendo '10 plantillas Excel con formulas encadenadas', justo la frase que la SPEC manda sustituir por 'coherentes entre si'. La SPEC solo nombraba 'ProductosDigitales.tsx:320' y el integrador se quedo ahi.",
+      "evidencia": "astro-site/src/components/pages/ProductosDigitalesHubPage.astro:333 = \"description: '10 plantillas Excel con fórmulas encadenadas: plan financiero a 3 y 5 años, ...'\" frente a src/pages/ProductosDigitales.tsx:322 ya corregido a '10 plantillas Excel coherentes entre sí'. astro-site/src/pages/productos-digitales.astro:29 monta ese componente.",
+      "fix": "Aplicar el mismo texto en ProductosDigitalesHubPage.astro:333. Y añadir al gate un grep de 'encadenad' sobre astro-site/src, no solo sobre src/."
+    },
+    {
+      "id": "RC-05",
+      "severidad": "alta",
+      "fichero": "src/data/productos-changelog.ts + astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": "changelog :324-341 (version '1.1', sin entrada 2.0) · updateNote :319",
+      "hallazgo": "Los 10 ficheros de la copia salen sellados como v2.0 (metadata subject y linea de version en Instrucciones) mientras la ficha y el changelog siguen declarando v1.1 y no existe ninguna entrada 2.0. El changelog se renderiza en el dashboard POST-PAGO, es decir, en la misma pantalla desde la que el comprador se descarga un fichero que dice 2.0. COM-22 quedo a medias: se hizo el retitulado de la 1.1 y no el resto.",
+      "evidencia": "productos-changelog.ts:325 \"version: '1.1'\", :326 \"updated: '2026-08-22'\", entries[] con una sola entrada (1.1). kit-plan-financiero.ts:319 \"updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026'\". En la copia: los 10 xlsx con properties.subject = 'Kit Plan Financiero para Restaurantes · v2.0' y, p.ej., 03!Instrucciones!B19 = 'Versión 2.0 · agosto 2026 · aichef.pro/kit-plan-financiero · info@aichef.pro'. src/pages/KitPlanFinancieroDashboard.tsx:94 monta <ProductChangelog productId=\"kit-plan-financiero\" />.",
+      "fix": "O se añade la entrada 2.0 + version/updated/updateNote, o el motor deja de sellar los ficheros como 2.0. Las dos cosas a la vez no pueden salir a produccion."
+    },
+    {
+      "id": "RC-06",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":94, :153, :177, :252 (y src/components/kit-plan-financiero/FaqAccordion.tsx:20, WhySection.tsx:13, ContentGrid.tsx:39)",
+      "hallazgo": "La redaccion nueva de COM-10 introduce una afirmacion FALSA en 7 sitios: 'la misma base sin IVA en las 10 plantillas'. El 03 va CON IVA por diseño —lo dice la propia SPEC 1.5 y lo dice el fichero— asi que la frase se contradice con el entregable en el momento de abrirlo. Al arreglar una promesa se ha creado otra.",
+      "evidencia": "kit-plan-financiero.ts:153 = 'Las 10 plantillas son coherentes entre si: ... y la misma base sin IVA.' frente a 03-cash-flow-forecast.xlsx!Instrucciones!B16 = 'Todas las cifras de esta plantilla van CON IVA: es caja. En el resto del kit (01, 01b, 02, 05, 06 y 07) van SIN IVA.' y a 03!'Flujo Mensual'!A7 = 'Ventas comedor (IVA incl.)'.",
+      "fix": "Redactar 'la misma base sin IVA en 9 de las 10 (el 03 va con IVA porque es caja)' — que ademas es un argumento de venta, no una excepcion vergonzante."
+    },
+    {
+      "id": "RC-07",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":159 grid.templates[3] · :291 testimonials[5] (Maria Herrero)",
+      "hallazgo": "La landing sigue vendiendo la alerta de tesoreria ('Alerta automatica en rojo cuando el saldo cae por debajo del umbral') y el testimonio promete 'ven 3 meses antes cuando van a tener tension de tesoreria', pero el encadenado del saldo del 03 SIGUE ROTO en la copia: febrero abre con la fila 'Otros pagos' del mes anterior, no con el saldo final. Es el hallazgo alta DOM-01/TEC-01/COM-01 y no se ha tocado.",
+      "evidencia": "03-cash-flow-forecast.xlsx!'Flujo Mensual'!C5 = '=B22' y D5 = '=C22', donde A22 = 'Otros pagos'; el saldo final vive en la fila 25 (A25 = 'SALDO FINAL', B25 = '=B5+B24'). La hoja Alertas cuelga de la fila correcta (C6 = \"='Flujo Mensual'!B25\"), asi que las alertas de feb-dic se calculan sobre un saldo inicial equivocado.",
+      "fix": "SPEC 3 (03): C5:M5 al saldo final del mes anterior. Es el unico hallazgo del R1 que ya viaja mal cacheado en el fichero que se descarga hoy."
+    },
+    {
+      "id": "RC-08",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":159 grid.templates[3] (y ContentGrid.tsx:11)",
+      "hallazgo": "'IVA trimestral y estacionalidad' sigue en la ficha sin nada detras: en la copia no existe la hoja Parametros que la SPEC 3 manda crear, la linea de liquidacion de IVA son ceros tecleados y no hay ni una celda de estacionalidad en todo el libro. Ademas las Instrucciones del propio fichero repiten la promesa, asi que el comprador la lee dos veces.",
+      "evidencia": "03-cash-flow-forecast.xlsx: hojas = ['Instrucciones','Flujo Mensual','Alertas'] (sin 'Parametros'); !'Flujo Mensual'!A21 = 'Liquidación IVA trimestral' con B21=C21=D21=0 constantes; !Instrucciones!B8 = \"▸ El IVA trimestral se calcula automáticamente (línea 'Liquidación IVA').\"",
+      "fix": "Ejecutar SPEC 3 (03) completo (hoja Parametros, calendario AEAT, desfase de tarjeta y proveedores) o retirar la promesa de las dos superficies y del B8."
+    },
+    {
+      "id": "RC-09",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":160 grid.templates[4] (y ContentGrid.tsx:12)",
+      "hallazgo": "'Totales con y sin IVA' en el CAPEX: la SPEC 5 daba esta ficha por 'respaldada por 3', pero en la copia las cinco hojas de inversion mantienen la cabecera de la v1.1 y el libro no menciona el IVA ni una vez. El desembolso real que el comprador tiene que financiar es un 21 % mayor que el presupuesto que se le enseña.",
+      "evidencia": "04-presupuesto-inversion-capex.xlsx!Obra!A4:E4 = 'Partida' | 'Presupuesto (€)' | 'Real (€)' | 'Desviación %' | 'Notas' — ni columna Base, ni IVA %, ni Total con IVA, ni coeficiente de amortizacion. !Resumen!A4:D4 igual. Ninguna hoja 'Otros conceptos de apertura'.",
+      "fix": "SPEC 3 (04). Hasta entonces, la frase no es verificable en ninguna celda del kit."
+    },
+    {
+      "id": "RC-10",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":133 hero.checkItems[0] · :156 grid.templates[0] · :269 cta.items[0] · :286 testimonials[0]",
+      "hallazgo": "Los graficos ya existen (motor 1.1) pero se han montado sobre los tres 'Resumen' que la SPEC 2 tenia que rellenar y que siguen siendo ceros constantes: el resultado es un grafico REAL que dibuja una linea plana en cero. Se vende 'graficos automaticos' y 'Lo presente tal cual, con los graficos'; lo que el comprador imprime para el banco es un cuadro vacio.",
+      "evidencia": "01-plan-financiero-previsional.xlsx!Resumen: B5:D8 todo 0 constante (E6, E7, E8 tambien 0) y el chart de esa hoja apunta a \"'Resumen'!$B$5:$D$5\", \"$B$6:$D$6\", \"$B$7:$D$7\". Igual en 05!'Resumen Anual' (B5:N10 = 0, chart sobre $B$5:$M$5 y $B$6:$M$6) y en 07!Proyecciones (chart sobre $B$9:$F$9 y $B$16:$F$16, con B9=B16=0 cacheados).",
+      "fix": "Los graficos solo son ciertos DESPUES de SPEC 2 y 4; el gate de graficos (len(ws._charts)>=1) da verde sobre datos vacios y no protege de esto. Añadir al gate que la serie del chart no sea toda cero/vacia."
+    },
+    {
+      "id": "RC-11",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":206 bonus.items[0].desc (y src/components/kit-plan-financiero/BonusSection.tsx:10)",
+      "hallazgo": "El BONUS-08 se vende como 've impacto instantaneo en rentabilidad' y sus propias Instrucciones lo proponen para 'negociar con inversores o socios'. En la copia el escenario BASE —el que se enseña— sigue dando -5.272 €/mes y -63.264 €/año por la doble contabilizacion del personal, y contradice al 02 con el mismo ticket de 22 €. DOM-06/COM-08 sin tocar.",
+      "evidencia": "BONUS-08!Simulador (data_only): C19 = -5272.0, C20 = -0.1536 (margen -15,4 %), C21 = -63264.0, con C11 = 19000 ('Costes fijos mensuales (€)', que ya incluyen nomina) y C10 = 0.28 de labor cost encima. Frente a 02!Escenarios!D13 = 1449.0 (EBITDA base positivo, mismo ticket 22 €). Ademas la base no es homogenea: BONUS-08!C7 = 60 cubiertos vs 02!Escenarios!D5 = 55.",
+      "fix": "SPEC 4 (BONUS-08): fijos SIN personal, base comun con el 02 y recalibrado. Dos de los tres escenarios en perdidas no se enseñan a un inversor."
+    },
+    {
+      "id": "RC-12",
+      "severidad": "media",
+      "fichero": "scripts/.../dryrun BONUS-08 + astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": "BONUS-08!Instrucciones!B7 · kit-plan-financiero.ts:287 (testimonials[1])",
+      "hallazgo": "COM-26 se aplico a 3 superficies (grid, bonus, gemelo SPA) y se dejaron 2: la propia plantilla sigue diciendo 'Ocupacion' —que es la superficie que mas manda, porque el comprador la lee con el fichero abierto— y el testimonio de Ana Beltran tambien. La palabra corregida en la landing choca con la palabra del Excel.",
+      "evidencia": "BONUS-08-simulador-escenarios.xlsx!Instrucciones!B7 = '▸ Cambia los valores de Ticket Medio, Ocupación y Food Cost en la zona de inputs.' mientras !Simulador!A7 = 'Cubiertos / día'. kit-plan-financiero.ts:287 = '...cambias el ticket medio o la ocupacion y ves al instante...'.",
+      "fix": "Reescribir B7 en el motor (es una linea de Instrucciones, cabe en motor.py) y decidir con John el testimonio."
+    },
+    {
+      "id": "RC-13",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":158 grid.templates[2] (y ContentGrid.tsx:10)",
+      "hallazgo": "Promesa RETIRADA en vez de cumplida, y retirada dos veces en la misma linea. La ficha del 02 decia 'Calcula ticket medio necesario ... con grafico visual de break-even' y ahora dice solo 'Calcula comensales/dia minimos y umbral de facturacion. Incluye 3 escenarios'. Pero SPEC 3 (COM-27) mandaba AÑADIR la fila 'Ticket medio necesario' y SPEC 1.1 / 7-bis 7 mandaba AÑADIR el LineChart del break-even. Se ha alineado el copy con un producto sin construir, bajando lo que se entrega por 39 € sin que nadie lo haya decidido.",
+      "evidencia": "02-calculadora-punto-equilibrio.xlsx!Break-Even: filas B5:B11, ninguna 'Ticket medio necesario'; el libro tiene 0 charts (gate del dry-run: '02-calculadora-punto-equilibrio.xlsx: 0 gráfico(s) []' + 'PENDIENTE ... lo desbloquea grupo_b'). Diff de la landing: '- Calcula ticket medio necesario, comensales/dia minimos ... con grafico visual de break-even.' / '+ Calcula comensales/dia minimos y umbral de facturacion.'",
+      "fix": "Revertir el recorte del copy y ejecutar grupo_b; si de verdad se decide no construirlo, que la retirada sea una decision escrita de John, no un efecto colateral."
+    },
+    {
+      "id": "RC-14",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":290 testimonials[4] (Fernando Reyes) vs 02!Break-Even!C10",
+      "hallazgo": "El testimonio pone una cifra concreta —'necesitaba 45 cubiertos diarios a 22 EUR de ticket medio'— que el propio fichero desmiente con ese mismo ticket: da 51,10. Y el 51,10 se muestra como '51' por el formato, de modo que quien siga el numero de la pantalla factura POR DEBAJO de su break-even. DOM-25/TEC-16 sin resolver.",
+      "evidencia": "02-calculadora-punto-equilibrio.xlsx!Break-Even!C10 (data_only) = 51.102743410435714, formula '=IFERROR(C9/Datos!C20,\"Indica el ticket medio\")' sin ROUNDUP; C8 = 29230.769. 51 x 22 x 26 = 29.172 € < 29.230,77 €. Datos!C20 = 22. Testimonio en kit-plan-financiero.ts:290.",
+      "fix": "ROUNDUP en C10/C11 (SPEC 3) y revisar la cifra del testimonio con John."
+    },
+    {
+      "id": "RC-15",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":162 grid.templates[6] ('RevPASH') vs 06!Ratios!C22/B22",
+      "hallazgo": "La ficha vende el calculo de RevPASH y el fichero calcula otra cosa: divide por metros cuadrados y luego lo compara con un umbral por plaza y hora. Con el ejemplo del propio kit sale 2,95 frente a '> 8€ casual dining', asi que el dashboard le dice al comprador que va tres veces por debajo del sector por un error de denominador. DOM-07/COM-07 sin tocar.",
+      "evidencia": "06-dashboard-ratios-financieros.xlsx!Ratios!B22 = 'RevPASH (€/m²/hora)', C22 = '=IFERROR(C6/(C11*C12),\"Indica plazas y horas\")' con B11 = 'm² de sala' (C11=80) y B12 = 'Horas de servicio / mes' (C12=360); valor cacheado C22 = 2.9514. No existe input de aforo/plazas en la hoja.",
+      "fix": "SPEC 4 (06). Ojo ademas: el texto de guarda ya dice 'Indica plazas y horas' cuando no hay input de plazas — el motor 1.3 escribio la ayuda de la version que aun no se ha construido."
+    },
+    {
+      "id": "RC-16",
+      "severidad": "media",
+      "fichero": "dryrun 06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!D17 vs Ratios!E17 vs Benchmarks!E4 (y D18/E18 vs E5, D19/E19 vs E6)",
+      "hallazgo": "El mismo libro da tres umbrales distintos para el food cost, y la ficha vende 'Compara contra benchmarks del sector'. Con el ejemplo precargado (30 %) la columna de referencia dice que esta fuera de rango y el semaforo dice 'Aceptable'. COM-29/TEC-12/DOM-29 sin resolver.",
+      "evidencia": "06!Ratios!D17 = '28% - 32%', E17 = '=IF(C17<0.28,\"✅ Excelente\",IF(C17<0.33,\"⚠️ Aceptable\",\"🔴 Alto\"))', Benchmarks!E4 = '> 33%'. Labor: D18 = '25% - 30%', E18 usa 0.31, Benchmarks!E5 = '> 30%'. Prime: D19 = '< 65%', E19 usa 0.66, Benchmarks!E6 = '> 65%'.",
+      "fix": "SPEC 4 (06): columnas numericas F/G en Benchmarks y E17:E25 leyendolas."
+    },
+    {
+      "id": "RC-17",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":165 y :214 ('48 items ... 6 fases') · src/pages/KitPlanFinancieroDashboard.tsx:24",
+      "hallazgo": "La decision 3 de 7-bis (BONUS-09 a 54 tareas con la fase laboral) no se ha ejecutado ni en el fichero ni en ninguna de las 6 superficies. Hoy landing y fichero coinciden en 48, asi que no hay contradiccion visible — pero la v2.0 se anuncia sin la unica fase que tiene sancion directa, y el contador sigue siendo deshonesto.",
+      "evidencia": "BONUS-09-checklist-pre-apertura.xlsx!Checklist: A5:A52 = 1..48, sin fase 7; C55 = 48 constante; C59 = '=COUNTIF(F5:F52,\"Completada\")/48' con el 48 dentro de la formula; !Instrucciones!B2 = 'BONUS 09 · Checklist Financiero Pre-Apertura — 48 Tareas'. Valores cacheados C56 = 0.0, C59 = 0.0.",
+      "fix": "SPEC 4 (BONUS-09) + actualizar el 48 en las 6 superficies a la vez, en el mismo commit."
+    },
+    {
+      "id": "RC-18",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":161 grid.templates[5] ('semaforo verde <5%, amarillo 5-10%, rojo >10%')",
+      "hallazgo": "La ficha describe el semaforo del 05 como si midiera desviacion con signo, y la formula usa ABS: vender un 20 % POR ENCIMA del presupuesto sale '🔴 Alerta' igual que quedarse corto. Lo que la landing vende como control de gestion, el fichero lo convierte en una alarma que castiga los meses buenos. DOM-12/TEC-09 sin tocar, x12 pestañas.",
+      "evidencia": "05-pyl-mensual-real-vs-presupuesto.xlsx!Ene!F6 = '=IF(ABS(E6)<0.05,\"✅ OK\",IF(ABS(E6)<0.1,\"⚠️ Atención\",\"🔴 Alerta\"))' (identico en F7:F21 y en las 12 pestañas). E21 = '=IF(B21=0,0,(C21-B21)/B21)' sin ABS en el denominador: con EBITDA presupuestado negativo invierte el signo.",
+      "fix": "SPEC 2 (05): criterio con signo por familia de fila y ABS solo en el denominador de E21."
+    },
+    {
+      "id": "RC-19",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":161 ('Food cost, labor cost y prime cost automaticos') vs 05!Ene filas 22 y 25-27",
+      "hallazgo": "Media tabla sigue vacia bajo su propio encabezado: el Margen EBITDA % y los tres ratios de 'RATIOS AUTOMATICOS' solo tienen Presupuesto y Real; las columnas Desviacion (€), Desviacion % y Semaforo no existen, x12 pestañas. La ficha promete los tres ratios 'automaticos' con semaforo y el comprador ve cuatro filas mochas. TEC-26 sin tocar.",
+      "evidencia": "05!Ene: fila 22 ('Margen EBITDA %') con B22 y C22 y D22=E22=F22=None; filas 25, 26 y 27 ('Food Cost %', 'Labor Cost %', 'Prime Cost %') igual. La regla de formato condicional cubre F6:F27, es decir, tambien las celdas que no existen.",
+      "fix": "SPEC 2 (05)."
+    },
+    {
+      "id": "RC-20",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":286, :291, :293 (testimonials 0, 5 y 7)",
+      "hallazgo": "La razon por la que 7-bis 1 decide NO tocar los testimonios es literal: 'La v2.0 si hace CIERTAS las tres funcionalidades que los testimonios citan'. En esta copia esa premisa no se cumple para ninguna de las tres, asi que la decision de John se tomo sobre un supuesto que hoy es falso y hay que volver a plantearsela antes de publicar.",
+      "evidencia": "(1) ':286 Lo presente tal cual, con los graficos' -> el chart del 07 apunta a Proyecciones!$B$9:$F$9 y $B$16:$F$16, cacheadas a 0. (2) ':293 TIR, VAN, payback period - todo calculado automaticamente' -> 07!Proyecciones!B21='—', B22=-150000.0, B23=None. (3) ':291 ven 3 meses antes cuando van a tener tension de tesoreria' -> 03!'Flujo Mensual'!C5='=B22' (fila 'Otros pagos').",
+      "fix": "Volver a subir el punto a John con esta evidencia, o construir 2/3/4 antes de publicar. No es 'aparcado por John': el motivo de aparcarlo era que la v2.0 lo arreglaba."
+    },
+    {
+      "id": "RC-21",
+      "severidad": "media",
+      "fichero": "dryrun (los 10 xlsx)",
+      "ubicacion": "conditional_formatting: 01=0, 01b=0, 02=0, 04=0, BONUS-08=0 · 07!Ratios=1 sobre celdas vacias",
+      "hallazgo": "SPEC 1.2 (COM-14, 'la alerta es roja de verdad') solo llega a la mitad del kit: cinco ficheros salen con CERO reglas de formato condicional y la unica regla del 07 cae sobre un rango sin celdas. Las tres Instrucciones que prometen colores lo siguen prometiendo.",
+      "evidencia": "Recuento sobre la copia: 01 CF=0, 01b CF=0, 02 CF=0, 04 CF=0, BONUS-08 CF=0; 03 CF=2 (Alertas), 05 CF=12 (una por mes), 06 CF=1 (Ratios), 07 CF=1 (Ratios, cuyo C4:C10 son None), BONUS-09 CF=1.",
+      "fix": "Cerrar 1.2 en los diez y, en el gate, exigir que el rango de cada regla contenga celdas con valor."
+    },
+    {
+      "id": "RC-22",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":158 y :274 ('Break-even con 3 escenarios' / hub features) vs 02!Escenarios",
+      "hallazgo": "El bloque de escenarios que la landing vende sigue desconectado de la hoja Datos del mismo libro: los costes fijos se repiten como constantes y los dias de apertura van clavados dentro de la formula. Cambiar un dato en Datos no mueve Escenarios: dos verdades distintas en el mismo fichero. DOM-13/TEC-08/COM-20 sin tocar.",
+      "evidencia": "02-calculadora-punto-equilibrio.xlsx!Escenarios: C7 = D7 = E7 = 19000 (constantes) frente a Datos!C14 = '=SUM(C6:C13)'; C10 = '=C4*C5*26' con el 26 literal frente a Datos!C21 = 26. Break-Even si lee de Datos (C5 = '=Datos!C14').",
+      "fix": "SPEC 3 (02)."
+    },
+    {
+      "id": "RC-23",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":178 why.reasons[2] ('TIR, VAN, payback, escenarios') vs 02!Datos!C12/C14 y B7",
+      "hallazgo": "El 'EBITDA' que el kit enseña en Escenarios va despues del servicio de deuda, porque la cuota del prestamo esta dentro del total de costes fijos; luego ese EBITDA se compara con los benchmarks de EBITDA del 06 y del 07. Y la etiqueta del personal sigue contradiciendose consigo misma. DOM-24/TEC-23 sin tocar.",
+      "evidencia": "02!Datos!B12 = 'Cuota préstamo', C12 = 800, dentro de C14 = '=SUM(C6:C13)'; Escenarios!C13 = '=C12-C7' etiquetado 'EBITDA'. Datos!B7 = 'Nóminas fijas (bruto)' con D7 = '€/mes — incluye SS empresa' (bruto y bruto+SS no son lo mismo).",
+      "fix": "SPEC 3 (02): cuota a fila propia, C14 = C6:C11 + C13, y break-even operativo + break-even de caja."
+    },
+    {
+      "id": "RC-24",
+      "severidad": "media",
+      "fichero": "dryrun 02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Datos!B3 ('VALORES DE EJEMPLO — sustitúyelos por los tuyos') vs Datos!C7 y Break-Even!C8",
+      "hallazgo": "La decision 4 de 7-bis era 'recalibrar los datos de ejemplo Y etiquetarlos'. En la copia solo se ha hecho lo segundo, con lo cual la etiqueta nueva ahora CERTIFICA como ejemplo un negocio que el propio kit calificaria de inviable: sobre su break-even, el labor cost del ejemplo es del 41 % y el prime cost del 76 %, contra el '> 30 %' y el '> 65 %' de Peligro de sus propios Benchmarks.",
+      "evidencia": "02!Datos!B3 = 'VALORES DE EJEMPLO — sustitúyelos por los tuyos'; C7 = 12000 (nominas) y Break-Even!C8 (cacheado) = 29230.769 -> 12000/29230,77 = 41,0 %; C17 = 0.35 de coste variable -> prime 76 %. Umbrales del kit: 06!Benchmarks!E5 = '> 30%' y E6 = '> 65%'.",
+      "fix": "Recalibrar el ejemplo del 02 (y revisar 06 y BONUS-08) antes de etiquetarlo. Etiquetar sin recalibrar empeora el problema: le da estatus oficial."
+    },
+    {
+      "id": "RC-25",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":64 (schema.reviews[0].body) y :287 (testimonials[1].role)",
+      "hallazgo": "COM-23 ('anos' -> 'años') se dio por hecho pero quedan dos ocurrencias, una de ellas dentro del JSON-LD que se sirve a Google. El barrido que la SPEC 5 propone (grep de anos/formulas/graficos/...) no se ha corrido sobre el fichero de Astro, que es el que sirve produccion.",
+      "evidencia": "kit-plan-financiero.ts:64 = \"body: 'El plan previsional a 3 anos fue lo que me pidio el banco...'\" (dentro de schema.reviews) y :287 = \"role: 'Consultora gastronomica, +15 anos'\". El grep 'anos' sobre ese fichero devuelve esas dos lineas.",
+      "fix": "Correr el barrido de la SPEC 5 sobre astro-site/src/data/productos/kits/ ademas de src/components/."
+    },
+    {
+      "id": "RC-26",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+      "ubicacion": ":90/:248 y :94/:252 frente al resto del fichero",
+      "hallazgo": "Las cadenas nuevas de la v2.0 se han escrito CON tildes dentro de un fichero cuyo copy es deliberadamente sin tildes (asi esta documentado en su cabecera como VERBATIM de la SPA). El resultado es una FAQ donde dos respuestas llevan acentos y las otras cuatro no, y hasta dentro de la misma frase conviven 'proyecciones a 5 años' y 'coherentes entre si'.",
+      "evidencia": "kit-plan-financiero.ts:248 = '...proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende...' junto a :244 = 'No. Las plantillas estan disenadas para hosteleros...' y :252 = 'Son coherentes entre si: mismas categorias...'.",
+      "fix": "Decidir una politica unica para este producto (acentuar todo el copy o ninguno) y aplicarla en la misma pasada; hoy la mezcla se lee como texto pegado."
+    },
+    {
+      "id": "RC-27",
+      "severidad": "baja",
+      "fichero": "dryrun 07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!A13",
+      "hallazgo": "La decision 5 de 7-bis (tipo del IS al 25 % EN CELDA, con nota del 15 % de nueva creacion) no se ha ejecutado: el 25 % sigue clavado en la etiqueta, en un documento que se entrega a un banco y cuyo destinatario tipico es precisamente una entidad de nueva creacion.",
+      "evidencia": "07!Proyecciones!A13 = 'Impuesto Sociedades (25%)' con B13:F13 = 0 constantes; no existe ninguna celda C31 ni equivalente con el tipo. DV de la hoja: 'Proyecciones: B4 B5 B6 B7 B19 C4...F7' — el 25 % no es editable en ningun sitio.",
+      "fix": "SPEC 4 (07) + 7.6."
+    },
+    {
+      "id": "RC-28",
+      "severidad": "baja",
+      "fichero": "dryrun BONUS-09-checklist-pre-apertura.xlsx",
+      "ubicacion": "Instrucciones!B20",
+      "hallazgo": "La linea de la base sin IVA de la SPEC 1.5 se ha aplicado a los diez ficheros sin mirar el contenido: en la checklist pre-apertura, que no tiene una sola cifra monetaria, el comprador lee 'Todas las cifras van SIN IVA'. Es ruido en el entregable mas simple del kit y delata que la linea se inyecto en bloque.",
+      "evidencia": "BONUS-09!Instrucciones!B20 = 'Todas las cifras van SIN IVA; en el 03 (tesorería) van CON IVA porque es caja.' — la hoja Checklist (A5:F52) solo tiene #, Fase, Tarea, Responsable, Fecha Límite y Estado; ninguna columna de importe.",
+      "fix": "Excluir BONUS-09 (y revisar 04) del inyector de esa linea en motor.py."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "El paquete v2.0 esta a medio construir —faltan grupo_a.py, grupo_b.py y grupo_c.py, y 7 de los 10 ficheros salen del dry-run con 0 formulas nuevas— mientras la landing, la FAQ, el JSON-LD y los emails ya se han reescrito en clave v2.0. El resultado es el peor de los dos mundos: promesas que siguen sin respaldo en ninguna celda (TIR/VAN/payback con '—' y -150.000 €; 'ratios de solvencia' sobre una hoja sin celdas; 'IVA trimestral y estacionalidad' sin hoja Parametros; 'totales con y sin IVA' sin columna de IVA), promesas RETIRADAS a medias en vez de cumplidas (el ticket medio necesario y el grafico del break-even, que la SPEC mandaba construir), una promesa NUEVA y falsa introducida al corregir COM-10 ('la misma base sin IVA en las 10 plantillas', cuando el 03 va con IVA por diseño), la correccion aplicada al gemelo muerto de la SPA dejando viva la del hub de Astro que sirve produccion, y un desfase de version que el comprador ve en la misma pantalla: changelog y updateNote en v1.1 frente a diez ficheros sellados como v2.0. Ademas, la premisa con la que 7-bis decide no tocar los testimonios —'la v2.0 si hace ciertas las tres funcionalidades'— no se cumple para ninguna de las tres."
+}
