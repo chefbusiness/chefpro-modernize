@@ -1514,6 +1514,47 @@ def semaforos(wb, fname, informe):
             and 'Checklist' in wb.sheetnames:
         _poner(wb['Checklist'], 'F5:F64', SEM_ESTADO, 'Checklist!F5:F64')
 
+    # RC-21: §1.2 sólo llegaba a la mitad del kit — cinco ficheros salían con
+    # CERO reglas de formato condicional mientras tres Instrucciones prometían
+    # colores. Aquí no hay columna de «Estado» que colorear por texto, así que
+    # lo que se pinta es el número que duele: un EBITDA negativo y una
+    # desviación de obra por encima del 10 %.
+    def _rojo_si(hoja, rango, formula, etiqueta, ancla):
+        if hoja not in wb.sheetnames:
+            pendientes.append(etiqueta + ' (la hoja no existe)')
+            return
+        ws = wb[hoja]
+        if not _es_formula(ws, ancla):
+            pendientes.append(etiqueta + ' (' + ancla + ' todavía no calcula)')
+            return
+        regla_expresion(ws, rango, formula)
+        puestos.append(etiqueta)
+
+    if fname in ('01-plan-financiero-previsional.xlsx',
+                 '01b-plan-financiero-previsional-5-anos.xlsx'):
+        ultima = 'D' if fname.startswith('01-') else 'F'
+        _rojo_si('Resumen', 'B7:' + ultima + '7', '=B7<0',
+                 'Resumen!B7:' + ultima + '7 (EBITDA anual negativo)', 'B7')
+
+    if fname == '02-calculadora-punto-equilibrio.xlsx':
+        _rojo_si('Escenarios', 'C13:E13', '=C13<0',
+                 'Escenarios!C13:E13 (EBITDA negativo)', 'C13')
+
+    if fname == '04-presupuesto-inversion-capex.xlsx':
+        _rojo_si('Resumen', 'F5:F12', '=ABS(F5)>0.1',
+                 'Resumen!F5:F12 (desviación de más del 10 %)', 'F5')
+
+    if fname == '05-pyl-mensual-real-vs-presupuesto.xlsx':
+        _rojo_si('Resumen Anual', 'B13:N13', '=B13<0',
+                 "'Resumen Anual'!B13:N13 (EBITDA por debajo del "
+                 'presupuesto)', 'B13')
+
+    if fname == 'BONUS-08-simulador-escenarios.xlsx':
+        _rojo_si('Simulador', 'B19:D19', '=B19<0',
+                 'Simulador!B19:D19 (escenario en pérdidas)', 'B19')
+        _rojo_si('Comparativa', 'C7:E7', '=C7<0',
+                 'Comparativa!C7:E7 (escenario en pérdidas)', 'C7')
+
     for p in puestos:
         informe.append(fname + ': formato condicional ' + p)
     for p in pendientes:

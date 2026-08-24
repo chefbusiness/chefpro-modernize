@@ -1,7 +1,575 @@
 {
  "rol": "corrector",
- "estado": "EN CURSO — stub inicial (se sobrescribe al terminar)",
- "entrada": {"ref-dominio": 30, "ref-excel": 26, "ref-coherencia": 28, "total": 84},
- "resueltos": [],
- "no_aplicados": []
+ "producto": "kit-plan-financiero",
+ "version": "2.0",
+ "fecha": "2026-08-24T10:52:17",
+ "entrada": {
+  "ref-dominio": 30,
+  "ref-excel": 26,
+  "ref-coherencia": 28,
+  "total": 84
+ },
+ "cruce": {
+  "resueltos": 84,
+  "no_aplicados": 0,
+  "suma": 84,
+  "coincide_con_la_entrada": true
+ },
+ "dry_run_final": {
+  "comando": "CLAUDE_SCRATCHPAD=…/propio-corrector python3 scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --dry-run --json …/kit-pf-v2/corrector.json",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "literales_sospechosos_total": 0,
+  "graficos": "9/9",
+  "censo_entregables_fail": "0 defectos",
+  "hojas_protegidas": "56/56 sin contraseña",
+  "cache": {
+   "con_valor": 1996,
+   "vacias_por_diseno": 118,
+   "vacias_comprobadas_con_pycel": 118,
+   "fallos": 0
+  },
+  "divisiones_sin_iferror": 0,
+  "ceros_constantes": 0,
+  "produccion_tocada": false
+ },
+ "ficheros_codigo": [
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py",
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py",
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_b.py",
+  "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py",
+  "astro-site/src/data/productos/kits/kit-plan-financiero.ts",
+  "astro-site/src/components/pages/ProductosDigitalesHubPage.astro",
+  "src/data/productos-changelog.ts",
+  "src/components/kit-plan-financiero/FaqAccordion.tsx",
+  "src/components/kit-plan-financiero/WhySection.tsx",
+  "src/components/kit-plan-financiero/ContentGrid.tsx",
+  "src/components/kit-plan-financiero/BonusSection.tsx",
+  "src/pages/KitPlanFinancieroDashboard.tsx"
+ ],
+ "resueltos": [
+  {
+   "id": "RD-01",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py · grupo_b.py · grupo_c.py (nuevos) + scripts/productos-digitales/kit-plan-financiero-v2_0/main.py:main()",
+   "arreglo": "Escritos los tres módulos de grupo (§2, §3 y §4 completas). Y el gate deja de auto-exonerarse: un grupo PEDIDO que no se puede importar entra en `fallos` («grupo_X se pidió y NO se pudo cargar»), de modo que un paquete a medio construir ya no puede cerrar en verde.",
+   "prueba": "Dry-run: 01=193, 01b=319, 02=61, 03=201, 04=300, 05=890, 06=49, 07=96, BONUS-09=5 fórmulas nuevas (antes 7 de 10 ficheros salían con 0). exit 0 con los tres grupos cargados."
+  },
+  {
+   "id": "RD-02",
+   "donde": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx : 'Flujo Mensual' : C5:M5",
+   "arreglo": "C5='=B29' … M5='=L29' (fila 29 = SALDO FINAL en el mapa nuevo de §3), en vez de la fila «Otros pagos».",
+   "prueba": "demos.grupo_b.03: formula_C5=\"=B29\", fila_SALDO_FINAL=29; con saldo 15.000, cobros 40.000 y pagos 35.000 en enero, febrero abre en 20.000 (pycel)."
+  },
+  {
+   "id": "RD-03",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Proyecciones : B10, B11, B14, B15, B16, B18",
+   "arreglo": "P&L con fórmulas: B10='=SUM(B5:B9)', B11='=B4-B10', B14='=B11-B12-B13', B15='=IF(B14>0,B14*$C$29,0)', B16='=B14-B15', B18='=B16+B12'. La etiqueta A15 deja de llevar el tipo dentro («Impuesto sobre Sociedades»).",
+   "prueba": "demos.grupo_c.07 con un proyecto real: EBITDA año 1 = 42.000 €, cash flow operativo = 30.750 €. contadores 07: ceros_constantes = 0 (antes 40)."
+  },
+  {
+   "id": "RD-04",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Proyecciones : B22:G22, B23:G23, B24, B25, B26, C27",
+   "arreglo": "Bloque de flujos nuevo CON el año 0 (B22=\"=-'Resumen Ejecutivo'!$C$13\", C22:G22 = cash flow de los cinco años; el rango viejo C19:F19 sólo cogía cuatro), flujo acumulado, TIR `=IFERROR(IRR($B$22:$G$22),\"—\")` cacheada por Newton, VAN con la tasa en C27 y payback por fórmula COUNTIF/INDEX.",
+   "prueba": "demos.grupo_c.07: flujo año 0 = −150.000; VAN = −450,13 €; payback = 4,12 años; TIR (Newton sobre esos flujos) = 7,89 %. demos.tir_van_payback: caso trazado de la SPEC = 11,9592 %, VAN 15.440,05 €, payback 3,21 años."
+  },
+  {
+   "id": "RD-05",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Ratios : C4:C10 y hoja 'Financiación' (nueva)",
+   "arreglo": "Los siete ratios se CALCULAN (ya no son celdas verdes que teclea el solicitante) y existe el cuadro de amortización: DSCR = `=IFERROR(Proyecciones!$B$18/'Financiación'!$C$12,\"Indica el préstamo\")`. Bloque de balance y deuda en B12:C17. Columna E «Estado» con umbrales numéricos en F/G.",
+   "prueba": "demos.grupo_c.07: DSCR = 1,91 y estado_DSCR = «✅» con préstamo de 100.000 € al 6 % a 8 años (cuota anual 16.103,59 €). El CF de E4:E10 ya tiene celdas debajo."
+  },
+  {
+   "id": "RD-06",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:marcar_editable()/proteger() + astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx : Escenarios : C4:E6",
+   "arreglo": "Regresión de la v2.0 cerrada: `proteger()` desbloqueaba SÓLO lo pintado de E8F5E9 y en Escenarios los inputs van con los colores de escenario, así que la hoja quedaba con CERO celdas editables. Ahora se declara editable por ROL.",
+   "prueba": "demos.grupo_b.02: celdas_editables_en_Escenarios_C4_E6 = 9 (antes 0)."
+  },
+  {
+   "id": "RD-07",
+   "donde": "astro-site/public/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx : Checklist : D5:G64, F5:F64, C67, C71, banda de fase",
+   "arreglo": "Columna Estado (y Responsable, Fecha y Notas) desbloqueadas; DV de lista sobre F5:F64 con showErrorMessage=True; contador honesto `=COUNTIF($A$5:$A$64,\"<>\")` y `=IFERROR(COUNTIF($F$5:$F$64,\"Completada\")/$C$67,0)`; la banda de la fase 3 deja el E8F5E9 (pasa a DCEDC8) para no abrirse por accidente; fase 7 añadida.",
+   "prueba": "demos.grupo_c.BONUS-09: total_contado = 54, celdas_de_estado_desbloqueadas = 60, DV_lista = [\"F5:F64 err=True\"], pct con una completada = 1,85 %."
+  },
+  {
+   "id": "RD-08",
+   "donde": "astro-site/public/dl/kit-plan-financiero/05-pyl-mensual-real-vs-presupuesto.xlsx : 'Resumen Anual' : B5:N19",
+   "arreglo": "Las 78 constantes 0 pasan a referencias: B5=\"='Ene'!B10\", B6=\"='Ene'!C10\", B7/B8 al TOTAL GASTOS (fila 21), B9/B10 al EBITDA (fila 23), arrastrado C..M, y N5:N19 con `=SUM(B:M)`. Filas nuevas de desviación anual y de coste de comida/bebida/personal.",
+   "prueba": "demos.grupo_a.05: 'Resumen Anual'!B6 = 25.000 al poner 'Ene'!C6 = 25.000. contadores 05: ceros_constantes = 0."
+  },
+  {
+   "id": "RD-09",
+   "donde": "astro-site/public/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx y 01b… : Resumen : B5:E8 / B5:G8",
+   "arreglo": "Consolidación por referencia a la columna TOTAL AÑO de cada pestaña, y columna de crecimiento completa: E6/E7 replican `=IFERROR(($D-$B)/$B,\"\")` y E8 va en PUNTOS PORCENTUALES (`=$D8-$B8`), porque un margen no «crece un %».",
+   "prueba": "demos.grupo_a.01: 'Resumen'!B5 = 30.000 al poner 'Año 1'!B6 = 30.000."
+  },
+  {
+   "id": "RD-10",
+   "donde": "astro-site/public/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx : Simulador : A9, A11, B6:D11",
+   "arreglo": "Fin de la doble contabilización: A11 pasa a «Costes fijos mensuales SIN personal y SIN cuota de préstamo» con 6.500/6.200/5.900 (los del 02 sin nóminas ni cuota), A9 se renombra «% Coste variable (food + comisiones de delivery)» y los escenarios se recalibran a la base del 02.",
+   "prueba": "demos.grupo_c.BONUS-08: EBITDA base = 5.440,20 €/mes (17,29 %), antes −5.272 €/mes y −63.264 €/año. El pesimista sigue negativo a propósito (−1.460 €)."
+  },
+  {
+   "id": "RD-11",
+   "donde": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx : Ratios : C13 (input nuevo) y C22",
+   "arreglo": "Input «Nº de plazas (aforo)» y `C22='=IFERROR($C$6/($C$13*$C$12),\"Indica plazas y horas\")'` con etiqueta «RevPASH (€/plaza/hora)». Las ventas por m² pasan a fila propia (C30). Las «horas de servicio» se redefinen como horas CON CLIENTES SENTADOS (156 = 6 h × 26 días), que es el denominador que da sentido al benchmark.",
+   "prueba": "demos.grupo_c.06: RevPASH = 3,36 €/plaza/hora contra un benchmark recalibrado (óptimo > 6 €, límite 3 €) → «⚠️ Ajustado», no «tres veces por debajo del sector»."
+  },
+  {
+   "id": "RD-12",
+   "donde": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx : hoja 'Parámetros' (nueva) + 'Flujo Mensual' filas 12-29 y 31-39",
+   "arreglo": "Hoja Parámetros con % de cobro con tarjeta, días de abono, plazo de proveedores, los tres tipos de IVA y estacionalidad por mes; mapa de filas nuevo con desfase de tarjeta, pago a proveedores con plazo, SS del mes siguiente, IRPF y liquidación de IVA calculada sólo en el calendario del modelo 303.",
+   "prueba": "demos.grupo_b.03: con 33.000 € de venta en enero, la liquidación de abril calcula 3.000 € y la de mayo devuelve «» (no toca). Hojas del 03: ['Instrucciones','Parámetros','Flujo Mensual','Alertas']."
+  },
+  {
+   "id": "RD-13",
+   "donde": "astro-site/public/dl/kit-plan-financiero/01, 01b : 'Año n' : A16 · astro-site/public/dl/kit-plan-financiero/05 : 'Mes' : A16 · astro-site/public/dl/kit-plan-financiero/07 : Proyecciones : A8 · astro-site/public/dl/kit-plan-financiero/03 : A26",
+   "arreglo": "HALLAZGO NUEVO cerrado: línea de gasto «Comisiones de plataformas (delivery)» en las cuatro plantillas de P&L, con el % en celda (01/01b: B27, calculada sobre la venta de delivery de la fila 8) y como input en el 05 y el 07. Nota sobre envases y packaging en las Instrucciones.",
+   "prueba": "demos.grupo_a.01: comision_delivery_sobre_10000 = 3.000 € (30 %). 07!Proyecciones!A8 = 'Comisiones de plataformas (delivery)'."
+  },
+  {
+   "id": "RD-14",
+   "donde": "astro-site/public/dl/kit-plan-financiero/05 : 'Mes' : A13/A14 y B27:B30 · astro-site/public/dl/kit-plan-financiero/01, 01b : 'Año n' : A13/A14 · astro-site/public/dl/kit-plan-financiero/06 : Ratios : C17 y C21",
+   "arreglo": "HALLAZGO NUEVO cerrado: el coste de materia prima se desdobla en COMIDA y BEBIDA. Food Cost % = coste de comida / (ventas − barra) y Beverage Cost % = coste de bebida / ventas de barra, cada uno contra su propio benchmark (bebida 18-24 %).",
+   "prueba": "05!'Ene'!B27 = '=IF((B10-B7)=0,0,B13/(B10-B7))'; 06!Ratios!C17 = 30 % sobre ventas de comida y C21 = 22 % de beverage cost."
+  },
+  {
+   "id": "RD-15",
+   "donde": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx : Ratios : C8 y C33:C35",
+   "arreglo": "HALLAZGO NUEVO cerrado: «Coste de comida» pasa a CONSUMO calculado — `=IFERROR($C$33+$C$34-$C$35,0)` (existencias iniciales + compras − existencias finales) — con nota explícita de que el mes del pedido grande las compras se disparan y el consumo no.",
+   "prueba": "demos.grupo_c.06: consumo_de_comida = 7.078,50 € a partir de Ei 0 + compras 7.078,50 − Ef 0."
+  },
+  {
+   "id": "RD-16",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx : Break-Even : C10, C11, C12, C13",
+   "arreglo": "`C10='=IFERROR(ROUNDUP($C$9/Datos!$C$20,0),\"Indica el ticket medio\")'`, `C11` con ROUNDUP, input «Cubiertos / día previstos» (C12) y fila «Ticket medio necesario (€)» (C13).",
+   "prueba": "demos.grupo_b.02: cubiertos_dia_redondeados = 41 y 41 × 22 € × 26 = 23.452 € ≥ break-even 23.076,92 € (con «51» sin redondear se facturaba POR DEBAJO). ticket_medio_necesario = 16,14 €."
+  },
+  {
+   "id": "RD-17",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx : Datos : B7/D7, C14, C15",
+   "arreglo": "La cuota sale del sumatorio: `C14='=SUM(C6:C11)+C13'` y la cuota va a C15, fuera del EBITDA. B7 unifica su etiqueta contradictoria en «Coste total de personal fijo (salario bruto + SS empresa)» con la nota «≈ bruto × 1,32; es coste de EMPRESA, no bruto».",
+   "prueba": "demos.grupo_b.02: break_even_mes = 23.076,92 € (operativo) y break_even_de_caja = 24.307,69 € (con la cuota). Antes había un solo umbral, ya con la deuda dentro."
+  },
+  {
+   "id": "RD-18",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx : Escenarios : C7:E7 y C10:E10",
+   "arreglo": "`C7:E7='=Datos!$C$14'` y `C10='=C4*C5*Datos!$C$21'` (ídem D/E): se acabaron las tres constantes de 19.000 € y el `26` clavado dentro de la fórmula. Fila 6 renombrada «% Coste variable (food + comisiones; NO incluye personal fijo)».",
+   "prueba": "demos.grupo_b.02: Escenarios_C7_lee_de_Datos = 15.000 y Escenarios_C10_con_dias_de_Datos = 18.720."
+  },
+  {
+   "id": "RD-19",
+   "donde": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx : Benchmarks F/G + Ratios D17:E25 + Instrucciones B12:B15",
+   "arreglo": "Una sola fuente: columnas NUMÉRICAS F («Óptimo») y G («Límite») en Benchmarks. De ahí se generan los textos de las tres columnas de colores, la referencia que se enseña en Ratios (`D17=\"=Benchmarks!$D$4\"`), la fórmula del semáforo y las cuatro líneas de Instrucciones. No pueden divergir.",
+   "prueba": "Instrucciones!B12 = «Food Cost %: óptimo < 28% · peligro > 32% (los números viven en Benchmarks!F:G)» y Benchmarks!F4/G4 = 0,28 / 0,32; Ratios!D17 lee de Benchmarks!D4. Antes: 32 % en Instrucciones, 32 % en la columna, 33 % en la fórmula y 33 % en Benchmarks."
+  },
+  {
+   "id": "RD-20",
+   "donde": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx : Ratios : E17:E25",
+   "arreglo": "Las nueve filas de ratios tienen semáforo, incluidas las que antes se quedaban sin él (RevPASH, EBITDA %, coste por cubierto / ticket, margen bruto). Y el umbral de «Coste cubierto / Ticket» se DERIVA del GOP de la misma tabla (< 80 % óptimo, > 85 % peligro) en vez del « < 60 % » sin fuente que ponía al propio ejemplo en rojo.",
+   "prueba": "demos.grupo_c.06: coste_cubierto_entre_ticket = 0,732 y estado_de_esa_fila = «✅ Excelente», coherente con el GOP de 26,8 % de la fila 20."
+  },
+  {
+   "id": "RD-21",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Proyecciones : B22 y toda la hoja",
+   "arreglo": "Regresión cerrada por la raíz: la inversión ficticia desaparece — `B22=\"=-'Resumen Ejecutivo'!$C$13\"` — así que ya no es un input numérico y no puede chocar con la validación «≥ 0». Además `motor.permitir_negativo()` da una DV sin mínimo a las celdas que la SPEC define como negativas.",
+   "prueba": "Barrido del fichero generado: no queda NINGUNA celda con 150000 ni −150000 en las cinco hojas."
+  },
+  {
+   "id": "RD-22",
+   "donde": "astro-site/public/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx : las 5 hojas de partidas, cabecera A4:J4",
+   "arreglo": "Cabecera nueva Partida · Base (€) · IVA % · IVA (€) · Total con IVA (€) · Real (€) · Desviación % · Coef. amortización · Dotación anual (€) · Notas, con coeficiente por hoja (obra 3 %, cocina 12 %, mobiliario 10 %, tecnología 25 %, licencias 0 %).",
+   "prueba": "demos.grupo_b.04: 100.000 € de base → 121.000 € con IVA y 3.000 € de dotación anual en Obra. 04!Resumen!D10 consolida el total con IVA."
+  },
+  {
+   "id": "RD-23",
+   "donde": "astro-site/public/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx : hoja 'Otros conceptos de apertura' (nueva)",
+   "arreglo": "Traspaso, fianza y primeras rentas, constitución, STOCK INICIAL de despensa y bodega, nóminas y formación pre-apertura, marketing de lanzamiento, imprevistos y FONDO DE MANIOBRA. «Seguros (año 1)» se MUEVE aquí desde Licencias como gasto anticipado no amortizable (§6: no se borra).",
+   "prueba": "Hojas del 04: [... ,'Otros conceptos de apertura','Resumen']; Licencias ya no lista «Seguros (año 1)»; Resumen fila 12 = DESEMBOLSO TOTAL DE APERTURA = '=B10+B11'."
+  },
+  {
+   "id": "RD-24",
+   "donde": "astro-site/public/dl/kit-plan-financiero/04 : 'Mobiliario Sala' A13/A14 y 'Equipamiento Cocina' A15/A16",
+   "arreglo": "Partidas nuevas: «Vajilla, cristalería y cubertería (con reposición)», «Uniformes y EPI», «Menaje y utillaje de cocina (gastronorms, cuchillería)» y «Estantería de almacén y cámara de bebidas».",
+   "prueba": "Volcado de la copia: Mobiliario Sala = [… , Vajilla, cristalería y cubertería (con reposición), Uniformes y EPI, TOTAL]."
+  },
+  {
+   "id": "RD-25",
+   "donde": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx : Alertas : D6:D17 y regla de formato condicional C6:C17",
+   "arreglo": "Un mes sin movimientos no opina: `D6='=IF(\\'Flujo Mensual\\'!B12+\\'Flujo Mensual\\'!B27=0,\"—\",IF(C6<$C$3,\"⚠️ BAJO MÍNIMO\",\"OK\"))'` y el CF pasa a `=AND($C6<$C$3,$D6<>\"—\")`.",
+   "prueba": "Caché del fichero generado: D6:D9 = «—» (antes once meses en «⚠️ BAJO MÍNIMO» ya cacheados y pintados de rojo)."
+  },
+  {
+   "id": "RD-26",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:graficos() → astro-site/public/dl/kit-plan-financiero/03 : Alertas : chart1.xml",
+   "arreglo": "El LineChart se construye con DOS Reference separadas (C = saldo, E = umbral). La columna D, que es texto, sale del gráfico.",
+   "prueba": "chart1.xml del fichero generado: series = ['Alertas'!$C$6:$C$17, 'Alertas'!$E$6:$E$17]. Ninguna referencia a $D$."
+  },
+  {
+   "id": "RD-27",
+   "donde": "astro-site/public/dl/kit-plan-financiero/05 : 'Ene'..'Dic' : F6:F30 y E23",
+   "arreglo": "Semáforo CON SIGNO por familia de fila (ingresos y EBITDA: `>=-tolerancia`; gastos: `<=tolerancia`), `E23='=IFERROR(($C23-$B23)/ABS($B23),\"\")'` y columnas D/E/F nuevas en las filas de ratios, comparando PUNTOS PORCENTUALES. Las tolerancias (5 % / 10 % y 2 p.p. / 5 p.p.) viven en 'Resumen Anual'!B22:B25, no dentro de la fórmula.",
+   "prueba": "demos.grupo_a.05: vender un 20 % por encima → «✅ OK»; gastar un 20 % de más → «🔴 Alerta»; con EBITDA presupuestado −3.000 y real 0 → «✅ OK» (antes rojo)."
+  },
+  {
+   "id": "RD-28",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py:gate_graficos() y main()",
+   "arreglo": "Los «pendientes de grupo» sólo son verdes con `--solo motor`. Si el grupo se PIDIÓ —cargue o no— un gráfico que falta es fallo.",
+   "prueba": "Dry-run completo: 9/9 ficheros con gráfico (02 y 06 incluidos, que eran los que se declaraban «PENDIENTE» y cerraban en verde)."
+  },
+  {
+   "id": "RD-29",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx : Ratios : D7, F7, G7",
+   "arreglo": "El informe bancario deja de exigir «> 12 %» de margen EBITDA y usa los MISMOS números que el dashboard 06 (óptimo > 15 %, ajustado 10-15 %), con nota que lo dice en la propia hoja.",
+   "prueba": "07!Ratios!D7 = '> 15%' con F7 = 0,15 y G7 = 0,10, iguales a 06!Benchmarks!F10/G10. Nota en 07!Ratios!B20."
+  },
+  {
+   "id": "RD-30",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:NEGATIVOS/permitir_negativo() → astro-site/public/dl/kit-plan-financiero/03 : 'Flujo Mensual' : B5",
+   "arreglo": "El SALDO INICIAL sale de la validación «≥ 0» y recibe una DV sin mínimo: un negocio puede empezar el mes en descubierto, que es justo el caso que esta plantilla existe para detectar.",
+   "prueba": "Copia generada: la DV decimal greaterThanOrEqual 0 de 'Flujo Mensual' ya no incluye B5; B5 va en la DV «puede ser negativo»."
+  },
+  {
+   "id": "RT-01",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/",
+   "arreglo": "Los tres módulos escritos: 1.965 fórmulas nuevas repartidas por los 10 ficheros.",
+   "prueba": "Dry-run: ningún fichero sale con 0 fórmulas nuevas salvo el BONUS-08, que sólo recalibra valores de ejemplo (39 fórmulas propias, todas cacheadas)."
+  },
+  {
+   "id": "RT-02",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py:main() (bloque de veredicto)",
+   "arreglo": "Entran en `fallos`: demos.saldo_encadenado_03.ok False, demos.semaforo_06.ok False, demos.iferror_02.ok False, cualquier literal sospechoso (con muestra), cualquier `inject_cache` con exit ≠ 0, la TIR no inyectada y los grupos pedidos que no cargan.",
+   "prueba": "informe: `literales_sospechosos_total` = 0 y `fallos` = []. Con el 03 sin arreglar, el mismo gate ahora devolvería exit 1."
+  },
+  {
+   "id": "RT-03",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:RX_REF_CTX y _traducir_formula()",
+   "arreglo": "El patrón captura el prefijo de hoja (con o sin comillas) y el tramo `:REF` de un rango; `_traducir_formula` devuelve intacto todo lo cualificado y admite `solo_hoja=` para el caso contrario.",
+   "prueba": "motor._traducir_formula(\"=IFERROR(Datos!C14/(1-Datos!C17),'x')\", 10, 'fila') devuelve la fórmula SIN tocar (antes daba Datos!C15/Datos!C18)."
+  },
+  {
+   "id": "RT-04",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:_propagar_a_otras_hojas(), insertar_fila(), insertar_columna()",
+   "arreglo": "Las dos funciones recorren TODO el libro reescribiendo las referencias cualificadas a la hoja modificada, y sueltan los gráficos (sus `Reference` son fijas y `graficos()` los reconstruye al final del pipeline, §1.8).",
+   "prueba": "Además, ningún grupo usa `insertar_fila`/`insertar_columna`: los mapas nuevos se escriben de forma absoluta con `motor.limpiar_rango()`, así que el riesgo no depende sólo del arreglo."
+  },
+  {
+   "id": "RT-05",
+   "donde": "astro-site/public/dl/kit-plan-financiero/03 : 'Flujo Mensual' C5:M5 y Alertas C6:C17",
+   "arreglo": "Ver RD-02: encadenado corregido y Alertas re-ancladas a la fila 29.",
+   "prueba": "demos.grupo_b.03 (pycel): febrero abre en 20.000 €. Las 12 fórmulas de Alertas leen ahora B29..M29."
+  },
+  {
+   "id": "RT-06",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "arreglo": "Ver RD-03, RD-04 y RD-05.",
+   "prueba": "contadores 07: fórmulas = 97 (antes 3), ceros_constantes = 0 (antes 40), Ratios con columna C llena."
+  },
+  {
+   "id": "RT-07",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07 : Proyecciones : B22",
+   "arreglo": "Ver RD-21.",
+   "prueba": "Ninguna celda del 07 contiene ya 150000/−150000."
+  },
+  {
+   "id": "RT-08",
+   "donde": "astro-site/public/dl/kit-plan-financiero/BONUS-09 : Checklist : DV F5:F64, CF F5:F64, C67, C71",
+   "arreglo": "Ver RD-07.",
+   "prueba": "demos.grupo_c.BONUS-09: DV_lista = [\"F5:F64 err=True\"], total_contado = 54, el % cambia al marcar una tarea."
+  },
+  {
+   "id": "RT-09",
+   "donde": "astro-site/public/dl/kit-plan-financiero/06 : Ratios D17:E25 vs Benchmarks C4:G14",
+   "arreglo": "Ver RD-19.",
+   "prueba": "demos.grupo_c.06: referencia y semáforo salen de la misma fila de Benchmarks; food cost 30 % → «⚠️ Aceptable» con D17 = «28% - 32%» y E4 = «> 32%», ya sin contradicción."
+  },
+  {
+   "id": "RT-10",
+   "donde": "astro-site/public/dl/kit-plan-financiero/05 : 'Ene'..'Dic' : F6:F30 y E23",
+   "arreglo": "Ver RD-27.",
+   "prueba": "demos.grupo_a.05, los dos casos que el refutador midió: vender un 20 % de más → «✅ OK»; EBITDA presupuestado negativo con mejora → «✅ OK»."
+  },
+  {
+   "id": "RT-11",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:graficos() (rama del 03)",
+   "arreglo": "Ver RD-26.",
+   "prueba": "chart1.xml: dos <ser> con 'Alertas'!$C$6:$C$17 y 'Alertas'!$E$6:$E$17."
+  },
+  {
+   "id": "RT-12",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:graficos() (anclas)",
+   "arreglo": "Los siete gráficos que estaban a la derecha bajan DEBAJO de su tabla: 02!Break-Even A31, 03!Alertas B20, 04!Resumen A18, 05!'Resumen Anual' A27, 06!Ratios A42, 07!Proyecciones A34. Con `fitToWidth=1`, tabla y gráfico dejan de competir por el ancho del A4.",
+   "prueba": "drawing1.xml de cada fichero: anclas en (col 0, row 10/17/26/33/41) y (col 1, row 19/10). Ninguna a la derecha de la tabla."
+  },
+  {
+   "id": "RT-13",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:cachear_irr()",
+   "arreglo": "El literal alterno se LEE de la propia fórmula con un regex sobre `,\"…\")` final, en vez de inyectar un «—» fijo.",
+   "prueba": "informe.gates.cachear_irr.alterna_de_la_formula = '—' y la fórmula de B24 es `=IFERROR(IRR($B$22:$G$22),\"—\")`: los dos dicen lo mismo lea quien lea."
+  },
+  {
+   "id": "RT-14",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:RX_GUARDA y contadores()",
+   "arreglo": "La guarda se detecta con `^=\\s*(IFERROR|IF)\\s*\\(` en vez de buscar la subcadena «IF(», que aparecía dentro de COUNTIF( y SUMIF( y daba falso verde.",
+   "prueba": "Con el regex nuevo salieron a la luz 48 divisiones sin guarda en el 03 (las del desfase de tarjeta, proveedores e IVA); todas envueltas en IFERROR. Contador final: 0 divisiones sin IFERROR en los 10 ficheros."
+  },
+  {
+   "id": "RT-15",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py:verificar_cache()",
+   "arreglo": "Las candidatas a «vacía por diseño» se EVALÚAN con pycel: si la rama que gana no es la alterna vacía, es fallo de caché de verdad. Las que pycel no puede compilar se listan aparte en `vacias_no_verificadas`, no se dan por buenas en silencio.",
+   "prueba": "informe: vacias_por_diseno = 118, vacias_comprobadas_con_pycel = 118, vacias_no_verificadas = [], fallos = []."
+  },
+  {
+   "id": "RT-16",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py:procesar() y veredicto",
+   "arreglo": "Se guarda `literales_sospechosos_total` por fichero (y la muestra sube a 60), y el TOTAL entra en el veredicto con una muestra de hasta 8 celdas.",
+   "prueba": "informe.literales_sospechosos_total = 0 (antes 21 vivos y el JSON sólo enseñaba 12 por fichero: en el 05 eran 12 de 144)."
+  },
+  {
+   "id": "RT-17",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:semaforo(exigir_datos=True) y semaforos()",
+   "arreglo": "Ninguna regla se escribe sobre un rango sin una sola celda con contenido; los que no se pueden escribir se anotan como PENDIENTE en el informe en vez de contarse como trabajo hecho.",
+   "prueba": "Los rangos que el refutador citó (07!Ratios!E4:E10, 06!Ratios!E21:E25, 05!F22:F27) tienen ya celdas debajo, así que las reglas se escriben Y pintan: contadores cf = 1/1/1/3/1/37/6/4/2/3 en los diez ficheros."
+  },
+  {
+   "id": "RT-18",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:semaforos() (rama del 07)",
+   "arreglo": "Regla de EXPRESIÓN sobre la celda del DSCR contra su umbral numérico: `regla_expresion(ws, 'C5:C5', '=$C$5<$G$5')`, condicionada a que G5 exista.",
+   "prueba": "informe: «07…: formato condicional Ratios!C5 (expresión contra el 1,25x del DSCR)». 07!Ratios!G5 = 1,25."
+  },
+  {
+   "id": "RT-19",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/main.py:gate_graficos()",
+   "arreglo": "Ver RD-28.",
+   "prueba": "Gate de gráficos: 9/9, `pendientes_grupo` vacío en la pasada completa."
+  },
+  {
+   "id": "RT-20",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02 : Datos · 06 : Ratios · BONUS-08 : Simulador",
+   "arreglo": "Los tres ejemplos recalibrados a la MISMA historia (§1.4/§7.5): ticket 22 €, 55 cubiertos, 26 días, 31.460 € de venta, personal 8.809 € (28 %), fijos sin personal 6.200 €.",
+   "prueba": "EBITDA del ejemplo: 02!Escenarios!D13 = 5.449 € (17,32 %) · 06!Ratios!C23 = 17,30 % · BONUS-08!Simulador!C19 = 5.440,20 € (17,29 %). Antes: 02 positivo y BONUS-08 en −5.272 €/mes."
+  },
+  {
+   "id": "RT-21",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+   "arreglo": "Resuelto por la vía sustantiva de §4 en vez de por el rótulo: el 07 se entrega SIN ningún dato de ejemplo precargado (todos los inputs a 0 y la inversión como fórmula), así que un rótulo «VALORES DE EJEMPLO» sería falso. La regla de familia («en un fichero que se entrega a un tercero, ningún dato de ejemplo queda precargado con aspecto de dato real») se cumple.",
+   "prueba": "Barrido del fichero: sin 150000; B4:F9 y B12:F12 a 0; B22 es fórmula. La prueba de que calcula se hace en `grupo_c.demos` sobre una COPIA con datos inyectados por pycel."
+  },
+  {
+   "id": "RT-22",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:validaciones() y NEGATIVOS",
+   "arreglo": "Ver RD-30.",
+   "prueba": "La DV «≥ 0» de 'Flujo Mensual' ya no incluye B5."
+  },
+  {
+   "id": "RT-23",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02 : Break-Even : C10, C11",
+   "arreglo": "Ver RD-16.",
+   "prueba": "demos.grupo_b.02: 41 cubiertos × 22 € × 26 = 23.452 € ≥ 23.076,92 €."
+  },
+  {
+   "id": "RT-24",
+   "donde": "astro-site/public/dl/kit-plan-financiero/03 : Instrucciones : B8",
+   "arreglo": "La línea pasa a ser CIERTA porque la función existe: se reescribe explicando el calendario del modelo 303 y de dónde salen los tipos.",
+   "prueba": "03!Instrucciones: «▸ El IVA trimestral se calcula solo con los tipos de 'Parámetros' y el calendario del modelo 303 (abril, julio y octubre); enero queda como input, porque liquida el 4T del año anterior.» + demos.grupo_b.03 (abril liquida 3.000 €)."
+  },
+  {
+   "id": "RT-25",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a/b/c + motor.py:literales_sospechosos()",
+   "arreglo": "Los parámetros salieron a celda: tasa de descuento (07!C27), tipo del IS (07!C29), días de apertura (02!Datos!C21 leído por Escenarios), denominador del contador (BONUS-09!C67), umbrales de Benchmarks (06!F/G y 07!F/G) y tolerancias del semáforo del 05 ('Resumen Anual'!B22:B25).",
+   "prueba": "informe.literales_sospechosos_total = 0 (antes 21), y el total es ahora causa de fallo del gate."
+  },
+  {
+   "id": "RT-26",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:RESUMEN_EJECUTIVO_FMT",
+   "arreglo": "Añadidos 'C16' y 'C19' con formato `0.0\" años\"`.",
+   "prueba": "07!'Resumen Ejecutivo'!C16 y C19 dejan de salir en «General»; además pasan a ser fórmulas (C16 desde Financiación!C6 y C19 desde Proyecciones!B26)."
+  },
+  {
+   "id": "RC-01",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/",
+   "arreglo": "Ver RD-01/RT-01: el producto alcanza al copy en vez de revertir el copy.",
+   "prueba": "Dry-run completo con los tres grupos: exit 0, idempotencia 0, 9/9 gráficos, censo 0 defectos."
+  },
+  {
+   "id": "RC-02",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:163/:178/:275/:293 + astro-site/public/dl/kit-plan-financiero/07",
+   "arreglo": "Ver RD-04: TIR, VAN y payback existen y calculan.",
+   "prueba": "demos.grupo_c.07 con datos reales: VAN evaluado, payback 4,12 años, TIR 7,89 %. Sin datos, las tres celdas devuelven «—» honesto, no −150.000 €."
+  },
+  {
+   "id": "RC-03",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:90/:248 + astro-site/public/dl/kit-plan-financiero/07 : Ratios : C4:C10",
+   "arreglo": "Ver RD-05: los siete ratios de solvencia se calculan, así que la frase pasa a ser verificable en celda.",
+   "prueba": "07!Ratios!C4:C10 son siete fórmulas (antes ni existían las celdas)."
+  },
+  {
+   "id": "RC-04",
+   "donde": "astro-site/src/components/pages/ProductosDigitalesHubPage.astro:333",
+   "arreglo": "«10 plantillas Excel con fórmulas encadenadas» → «10 plantillas Excel coherentes entre sí», el mismo texto que ya tenía el gemelo de la SPA. Se corrigió la superficie que sirve producción, que era la que quedaba viva.",
+   "prueba": "grep 'encadenad' sobre astro-site/src y src: sin coincidencias en el hub."
+  },
+  {
+   "id": "RC-05",
+   "donde": "src/data/productos-changelog.ts:324-341 + astro-site/src/data/productos/kits/kit-plan-financiero.ts:319",
+   "arreglo": "version → '2.0', updated → '2026-08-24', entrada 2.0 nueva con 14 líneas en lenguaje de cliente (una por cálculo corregido), y `updateNote` → «Versión 2.0 · agosto 2026».",
+   "prueba": "El dashboard post-pago y los ficheros descargados dicen ya lo mismo: v2.0."
+  },
+  {
+   "id": "RC-06",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:94/:153/:177/:252 + src/components/kit-plan-financiero/{FaqAccordion,WhySection,ContentGrid}.tsx",
+   "arreglo": "«la misma base sin IVA en las 10 plantillas» → «en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada)». En grid.subtitle/ContentGrid, «la misma base sin IVA (salvo la tesoreria, que va con IVA porque es caja)».",
+   "prueba": "Las 7 superficies corregidas a la vez (Astro + los tres gemelos de la SPA); coincide con 03!Instrucciones, que dice exactamente eso."
+  },
+  {
+   "id": "RC-07",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:159/:291 + astro-site/public/dl/kit-plan-financiero/03",
+   "arreglo": "Ver RD-02/RD-25: la alerta de tesorería pasa a ser cierta y deja de gritar en meses sin datos.",
+   "prueba": "demos.grupo_b.03 + caché de Alertas!D6:D9 = «—»."
+  },
+  {
+   "id": "RC-08",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:159 + astro-site/public/dl/kit-plan-financiero/03 : 'Parámetros'",
+   "arreglo": "Ver RD-12: hoja Parámetros con estacionalidad y calendario AEAT; la promesa de la ficha y la de Instrucciones quedan respaldadas.",
+   "prueba": "Hojas del 03 y demos.grupo_b.03 (abril liquida 3.000 €, mayo devuelve «»)."
+  },
+  {
+   "id": "RC-09",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:160 + astro-site/public/dl/kit-plan-financiero/04",
+   "arreglo": "Ver RD-22: «totales con y sin IVA» pasa a ser verificable en celda.",
+   "prueba": "demos.grupo_b.04: base 100.000 € → 121.000 € con IVA; 04!Resumen tiene columnas Base, IVA (€) y Total con IVA (€)."
+  },
+  {
+   "id": "RC-10",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:133/:156/:269/:286 + los 9 gráficos",
+   "arreglo": "Los gráficos se montan sobre datos que ya existen: `graficos()` comprueba la PRECONDICIÓN (que la celda ancla sea una fórmula, no una constante) y omite el gráfico si el grupo no ha construido su bloque.",
+   "prueba": "Ningún fichero tiene ya `ceros_constantes` (0 en los diez), así que ninguna serie es una línea plana en cero. Las 9 series apuntan a rangos con fórmula."
+  },
+  {
+   "id": "RC-11",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:206 + astro-site/public/dl/kit-plan-financiero/BONUS-08",
+   "arreglo": "Ver RD-10: el escenario BASE sale positivo y homogéneo con el 02.",
+   "prueba": "demos.grupo_c.BONUS-08: base 5.440,20 €/mes (17,29 %) frente a 02!Escenarios!D13 = 5.449 € (17,32 %). Antes: −5.272 €/mes y 60 cubiertos frente a los 55 del 02."
+  },
+  {
+   "id": "RC-12",
+   "donde": "astro-site/public/dl/kit-plan-financiero/BONUS-08 : Instrucciones : B7 (vía motor.CORRECCIONES_INSTRUCCIONES)",
+   "arreglo": "«Ocupación» → «Cubiertos / día» en la superficie que el refutador señala como la que más manda (la que el comprador lee con el fichero abierto). Queda declarado el residuo del testimonio, que §7-bis 9 bloquea.",
+   "prueba": "BONUS-08!Instrucciones!B7 = «▸ Cambia los valores de Ticket medio, Cubiertos / día y Food Cost en la zona de inputs.» — coincide ya con Simulador!A7."
+  },
+  {
+   "id": "RC-13",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:158 + src/components/kit-plan-financiero/ContentGrid.tsx + astro-site/public/dl/kit-plan-financiero/02",
+   "arreglo": "La promesa se CUMPLE en vez de retirarse: se revierte el recorte del copy («ticket medio necesario» y «gráfico de break-even» vuelven) porque grupo_b construye las dos cosas.",
+   "prueba": "02!Break-Even!C13 = «Ticket medio necesario (€)» (16,14 € en el ejemplo) y el fichero tiene 1 gráfico (LineChart ingresos vs costes sobre el bloque auxiliar A20:D28)."
+  },
+  {
+   "id": "RC-14",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02 : Break-Even : C10",
+   "arreglo": "Ver RD-16: el bug que hacía facturar por debajo del break-even está corregido (ROUNDUP). El número del testimonio queda declarado como residuo bloqueado por §7-bis 9.",
+   "prueba": "demos.grupo_b.02: 41 cubiertos/día, y con 41 SÍ se llega al break-even."
+  },
+  {
+   "id": "RC-15",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:162 + astro-site/public/dl/kit-plan-financiero/06 : Ratios : C22",
+   "arreglo": "Ver RD-11.",
+   "prueba": "demos.grupo_c.06: RevPASH = 3,36 €/plaza/hora con aforo 60 y 156 horas de servicio."
+  },
+  {
+   "id": "RC-16",
+   "donde": "astro-site/public/dl/kit-plan-financiero/06 : Ratios D17:E19 vs Benchmarks",
+   "arreglo": "Ver RD-19.",
+   "prueba": "Los tres umbrales del food cost son ya el mismo par de números (Benchmarks!F4/G4 = 0,28 / 0,32)."
+  },
+  {
+   "id": "RC-17",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:165/:214 · src/pages/KitPlanFinancieroDashboard.tsx:24 · ContentGrid.tsx · BonusSection.tsx · astro-site/public/dl/kit-plan-financiero/BONUS-09 (Checklist!A1 e Instrucciones B2/B7)",
+   "arreglo": "48 → 54 tareas y 6 → 7 fases en las SEIS superficies a la vez, con la fase 7 «Personal y obligaciones laborales» construida en el fichero.",
+   "prueba": "Checklist!A1 = «… — 54 Tareas»; Instrucciones!B2 y B7 = 54 tareas / 7 fases; demos.grupo_c.BONUS-09.total_contado = 54; las cuatro superficies de código dicen «54 items … 7 fases»."
+  },
+  {
+   "id": "RC-18",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:161 + astro-site/public/dl/kit-plan-financiero/05",
+   "arreglo": "Ver RD-27: el semáforo mide con signo, como lo describe la ficha.",
+   "prueba": "demos.grupo_a.05."
+  },
+  {
+   "id": "RC-19",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:161 + astro-site/public/dl/kit-plan-financiero/05 : 'Mes' : filas 24 y 27-30",
+   "arreglo": "Ver RD-27: Margen EBITDA % y los ratios tienen ya Desviación (p.p.), la marca «p.p.» y semáforo propio.",
+   "prueba": "05!'Ene'!D24/E24/F24 y D27:F30 existen y calculan; el CF cubre F6:F30, que es exactamente donde hay celdas."
+  },
+  {
+   "id": "RC-20",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:286/:291/:293",
+   "arreglo": "La premisa con la que §7-bis 1 decidió no tocar los testimonios VUELVE A SER CIERTA, y ahora está demostrada: (1) los gráficos existen y no dibujan ceros; (2) TIR, VAN y payback calculan; (3) el saldo de tesorería encadena.",
+   "prueba": "demos.grupo_c.07 (VAN, payback, TIR sobre flujos reales) · contadores: ceros_constantes = 0 en los diez ficheros · demos.grupo_b.03 (febrero abre en 20.000 €)."
+  },
+  {
+   "id": "RC-21",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:semaforos() (bloque `_rojo_si`)",
+   "arreglo": "Cerrado §1.2 en los DIEZ: reglas de expresión nuevas donde no hay columna de estado que colorear — EBITDA anual negativo en 01/01b!Resumen, EBITDA negativo en 02!Escenarios y en BONUS-08 (Simulador y Comparativa), desviación de más del 10 % en 04!Resumen y EBITDA por debajo del presupuesto en 05!'Resumen Anual'. Cada una condicionada a que la celda ancla calcule (RT-17).",
+   "prueba": "contadores cf por fichero: 01=1, 01b=1, 02=1, 03=3, 04=1, 05=37, 06=6, 07=4, BONUS-08=2, BONUS-09=3. Antes: 0 en cinco de ellos."
+  },
+  {
+   "id": "RC-22",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:158/:274 + astro-site/public/dl/kit-plan-financiero/02 : Escenarios",
+   "arreglo": "Ver RD-18.",
+   "prueba": "demos.grupo_b.02."
+  },
+  {
+   "id": "RC-23",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:178 + astro-site/public/dl/kit-plan-financiero/02 : Datos",
+   "arreglo": "Ver RD-17.",
+   "prueba": "demos.grupo_b.02: dos umbrales, operativo y de caja; 02!Escenarios gana además «Cuota de préstamo» y «RESULTADO DESPUÉS DE DEUDA» con la nota de que el EBITDA de la fila 13 va ANTES del servicio de deuda."
+  },
+  {
+   "id": "RC-24",
+   "donde": "astro-site/public/dl/kit-plan-financiero/02 : Datos · 06 : Ratios · BONUS-08 : Simulador",
+   "arreglo": "Recalibrar Y etiquetar, no sólo etiquetar (§7.5). El ejemplo describe ahora un negocio viable y coherente en los tres libros.",
+   "prueba": "Con el ejemplo cargado: food cost 30 % «Aceptable», labor 28 % «Aceptable», prime 56 % «Excelente», GOP 26,8 % «Sano», EBITDA 17,3 % «Sano», coste/ticket 73,2 % «Excelente». Ninguna fila en rojo."
+  },
+  {
+   "id": "RC-25",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:64 y :287",
+   "arreglo": "«anos» → «años» en las dos ocurrencias que quedaban, una de ellas dentro del `schema.reviews` que se sirve a Google.",
+   "prueba": "grep -n '\\banos\\b' sobre astro-site/src/data/productos/kits/kit-plan-financiero.ts: sin coincidencias."
+  },
+  {
+   "id": "RC-26",
+   "donde": "astro-site/src/data/productos/kits/kit-plan-financiero.ts (schema.faqs y faqs) + src/components/kit-plan-financiero/FaqAccordion.tsx",
+   "arreglo": "Política decidida y aplicada al bloque que el refutador señala: la FAQ va ACENTUADA entera, en las tres superficies a la vez (los dos arrays del fichero de Astro y el gemelo de la SPA), para que no queden dos respuestas con tildes y cuatro sin ellas.",
+   "prueba": "Las 6 preguntas y las 6 respuestas comparten ortografía: «¿Sirve para un restaurante que ya está abierto?», «Sí. El P&L…», «…están diseñadas…», «30 días de garantía completa…»."
+  },
+  {
+   "id": "RC-27",
+   "donde": "astro-site/public/dl/kit-plan-financiero/07 : Proyecciones : A15, C29, A30",
+   "arreglo": "Ver RD-19/§7.6: el 25 % sale de la etiqueta y pasa a celda editable, con la nota del 15 % de entidad de nueva creación (art. 29.1 LIS) y del IRPF si es autónomo.",
+   "prueba": "07!Proyecciones!A15 = 'Impuesto sobre Sociedades' (sin el «(25%)»), C29 = 0,25 verde, A30 con la nota, y B15 = '=IF(B14>0,B14*$C$29,0)'."
+  },
+  {
+   "id": "RC-28",
+   "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py:SIN_NOTA_IVA",
+   "arreglo": "La línea «Todas las cifras van SIN IVA» se excluye del BONUS-09 (que no tiene una sola cifra monetaria) y del 04 (que desde §3 desglosa base + IVA + total en cada partida y lo dice en su cabecera).",
+   "prueba": "Barrido de las Instrucciones de los dos ficheros: ninguna línea que empiece por «Todas las cifras»."
+  }
+ ],
+ "no_aplicados": [],
+ "pendientes_de_john": [
+  {
+   "id": "RC-12 (residuo)",
+   "que": "El testimonio de Ana Beltrán (kit-plan-financiero.ts:287) sigue diciendo «cambias el ticket medio o la ocupacion».",
+   "por_que_no_lo_toco": "§7-bis decisión 9 de John: «aggregateRating, reseñas, testimonios y ancla de 190 €: no se tocan». La superficie del producto (BONUS-08!Instrucciones!B7) sí está corregida."
+  },
+  {
+   "id": "RC-14 (residuo)",
+   "que": "El testimonio de Fernando Reyes (kit-plan-financiero.ts:290) dice «necesitaba 45 cubiertos diarios a 22 EUR»; con el ejemplo recalibrado el fichero da 41.",
+   "por_que_no_lo_toco": "§7-bis decisión 9 de John. El bug que costaba dinero (sin ROUNDUP se facturaba POR DEBAJO del break-even) sí está corregido."
+  },
+  {
+   "id": "COM-11 (fuera de mis 84 ids, pero sigue vivo)",
+   "que": "Los emails de compra dicen «9 plantillas» y el producto son 10 (verify-purchase.ts, resend-access.ts, productos-digitales-config.ts).",
+   "por_que_no_lo_toco": "No está entre los 84 hallazgos que me tocaba corregir; lo dejo señalado porque §5 lo pide y es la peor superficie para descontar una unidad."
+  }
+ ]
 }

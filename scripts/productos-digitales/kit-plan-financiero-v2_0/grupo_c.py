@@ -94,7 +94,12 @@ BENCHMARKS = (
     (8, 'Alquiler / Ventas', 0.08, 0.12, 'menor', 'pct'),
     (9, 'Marketing / Ventas', 0.05, 0.08, 'menor', 'pct'),
     (10, 'EBITDA %', 0.15, 0.10, 'mayor', 'pct'),
-    (11, 'Coste cubierto / Ticket', 0.60, 0.70, 'menor', 'pct'),
+    # Se deriva del GOP, no se inventa: si el GOP óptimo es > 20 % y el
+    # peligro < 15 %, el coste operativo por cubierto sobre el ticket es su
+    # complementario (< 80 % óptimo, > 85 % peligro). Con el « < 60 % » de
+    # la v1.1 el propio ejemplo del kit nacía en rojo contra un umbral que
+    # contradecía la fila del GOP de la misma tabla.
+    (11, 'Coste cubierto / Ticket', 0.80, 0.85, 'menor', 'pct'),
     (12, 'Beverage Cost %', 0.18, 0.24, 'menor', 'pct'),
     (13, 'RevPASH (€/plaza/hora)', 6.0, 3.0, 'mayor', 'eur'),
     (14, 'Margen bruto %', 0.70, 0.65, 'mayor', 'pct'),

@@ -248,8 +248,8 @@ def _flujo_mensual(wb, informe):
                 motor.FMT_EUR)
         motor.aplicar_estilo(ws, L + str(F_COBROS), est_total_val)
         motor.f(ws, L + str(F_TARJETA),
-                '=' + L + str(F_VENTAS)
-                + '*Parámetros!$C$4*Parámetros!$C$5/30', motor.FMT_EUR)
+                '=IFERROR(' + L + str(F_VENTAS)
+                + '*Parámetros!$C$4*Parámetros!$C$5/30,0)', motor.FMT_EUR)
         if i == 0:
             motor.f(ws, L + str(F_COBROS),
                     '=' + L + str(F_VENTAS) + '-' + L + str(F_TARJETA),
@@ -264,13 +264,14 @@ def _flujo_mensual(wb, informe):
     for i, L in enumerate(COLS):
         if i == 0:
             motor.f(ws, L + str(F_PROVEEDORES),
-                    '=' + L + str(F_COMPRAS)
-                    + '*(1-Parámetros!$C$6/30)', motor.FMT_EUR)
+                    '=IFERROR(' + L + str(F_COMPRAS)
+                    + '*(1-Parámetros!$C$6/30),0)', motor.FMT_EUR)
         else:
             motor.f(ws, L + str(F_PROVEEDORES),
-                    '=' + L + str(F_COMPRAS) + '*(1-Parámetros!$C$6/30)+'
+                    '=IFERROR(' + L + str(F_COMPRAS)
+                    + '*(1-Parámetros!$C$6/30)+'
                     + COLS[i - 1] + str(F_COMPRAS)
-                    + '*Parámetros!$C$6/30', motor.FMT_EUR)
+                    + '*Parámetros!$C$6/30,0)', motor.FMT_EUR)
 
     _bloque(18, 'Pago de Seguridad Social (la del mes anterior)')
     motor.aplicar_estilo(ws, 'B18', est_input)
@@ -323,13 +324,13 @@ def _flujo_mensual(wb, informe):
     _bloque(F_SUGERIDAS, 'Ventas sugeridas por estacionalidad (informativo)')
     for i, L in enumerate(COLS):
         motor.f(ws, L + str(F_IVA_REP),
-                '=' + L + str(F_VENTAS) + '-' + L + str(F_VENTAS)
-                + '/(1+Parámetros!$C$7)', motor.FMT_EUR)
+                '=IFERROR(' + L + str(F_VENTAS) + '-' + L + str(F_VENTAS)
+                + '/(1+Parámetros!$C$7),0)', motor.FMT_EUR)
         gastos = ('+'.join(L + str(n) for n in (19, 20, 21, 22)))
         motor.f(ws, L + str(F_IVA_SOP),
-                '=' + L + str(F_COMPRAS) + '-' + L + str(F_COMPRAS)
+                '=IFERROR(' + L + str(F_COMPRAS) + '-' + L + str(F_COMPRAS)
                 + '/(1+Parámetros!$C$8)+(' + gastos + ')-(' + gastos
-                + ')/(1+Parámetros!$C$9)', motor.FMT_EUR)
+                + ')/(1+Parámetros!$C$9),0)', motor.FMT_EUR)
         motor.f(ws, L + str(F_SUGERIDAS),
                 '=Parámetros!$D$' + str(13 + i), motor.FMT_EUR)
     # OJO: el gris NO puede pisar los inputs de las filas 33 y 34 — el relleno
