@@ -1,0 +1,187 @@
+{
+  "lente": "REFUTADOR — coherencia comercial (landing / dashboard / changelog / catálogo vs. la copia dry-run del Kit de Gestión de Personal y Turnos v2.0)",
+  "veredicto": "no listo",
+  "motivo": "La capa de integración (§5 de la SPEC) está a medias y no es un matiz de estilo: la decisión ya tomada de §7-bis.1 (reescribir los testimonios de Francisco Torres y Enrique Vidal) NO se ha ejecutado; el `schema.reviews[0]` que la propia R1 citaba en COM-01 sigue emitiendo a producción, dentro del JSON-LD, la promesa de «alertas de 11h entre turnos y maximo 40h/semana» que la v2.0 acaba de sustituir por 12 h (art. 34.3 ET) y por horas contratadas por empleado; COM-22 (`products-catalog.ts:56`, «ratios de productividad») no se ha tocado y se sirve en las tarjetas de use-cases y pSEO; y los cinco ficheros gemelos de la SPA que la SPEC obliga a tocar «en el mismo commit» conservan íntegro el gancho legal falso (obligatorio 2026, software homologado, multas hasta 10.000 EUR/empleado). El barrido de tildes se detiene justo antes de los dos bloques que la SPEC nombra por su nombre (`schema` y `testimonials`) y del hub que enlaza a la landing. Los xlsx, en cambio, sostienen bien las cifras: 12 h, 1,25, 80 h, 33 %, 7 FTE / 16.292,50 €/mes / 195.510 €/año / ratio 31,3 %, 50 tareas y progreso 0 %, 30 empleados, sin «Alérgenos Propios» y sin restos de ×1,75/×2,0 ni caracteres no latinos. El problema no está en el Excel: está en lo que se cuenta sobre él.",
+  "hallazgos": [
+    {
+      "id": "RC-01",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "schema.reviews[0].body:53 (emitido como Review en el JSON-LD por astro-site/src/components/pages/KitExcelLandingPage.astro:81-84)",
+      "hallazgo": "La reseña que va al JSON-LD de producción sigue vendiendo la funcionalidad que la v2.0 acaba de cambiar: «Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente». La R1 citaba EXACTAMENTE esta ubicación en COM-01 («kit-gestion-personal.ts:grid.templates[0] / schema.reviews[0] / hero.checkItems[0] / cta.items[0]»); se arreglaron las otras tres y esta se quedó. El mapa §8 de la SPEC da COM-01 por resuelto en §2(01)+§5.",
+      "evidencia": "kit-gestion-personal.ts:53 → body: 'El cuadrante de turnos me ha cambiado la vida. Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente.' · contradicho por kit-gestion-personal.ts:135 → 'descanso mínimo de 12h entre jornadas (art. 34.3 ET) … y horas sobre lo contratado' y por la copia dry-run 01-cuadrante-turnos-semanal.xlsx!Turnos!B3=12 y 01!'Cuadrante Semanal'!J5='H. contratadas/semana' (J6=40 editable por empleado, ya no un 40 dentro de la fórmula).",
+      "fix": "Reescribir el body de schema.reviews[0] (y el testimonio gemelo, RC-03) a 12 h y a «las horas que tiene contratadas cada uno», o retirar esa reseña del schema. Es la única de las tres del JSON-LD que describe una cifra concreta."
+    },
+    {
+      "id": "RC-02",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "testimonials.items[2]:265 (Francisco Torres) y testimonials.items[7]:270 (Enrique Vidal)",
+      "hallazgo": "§7-bis.1 de la SPEC no es una duda abierta, es una decisión tomada: «se reescriben SOLO los dos que siguen describiendo funcionalidades inexistentes tras la v2.0 (Francisco Torres y Enrique Vidal)». Ninguno de los dos se ha tocado. Torres sigue diciendo «controlo el coste laboral en tiempo real … me dice al momento», y el 03 es una hoja MENSUAL de entrada manual; Vidal sigue diciendo «2 personas mas en servicio de viernes y sabado», y la calculadora no tiene ninguna entrada de día de la semana.",
+      "evidencia": "kit-gestion-personal.ts:265 → 'Por fin controlo el coste laboral en tiempo real. El semaforo … me dice al momento' vs. copia dry-run 03-coste-laboral-mensual.xlsx!'Ratio Coste Laboral'!A4='Ventas Netas del Mes (€):' (B4 verde, vacía) y B5='=Nóminas!$G$35' — nada se actualiza solo. · kit-gestion-personal.ts:270 → '2 personas mas en servicio de viernes y sabado' vs. BONUS-02-calculadora-plantilla-optima.xlsx!Calculadora!B5:B16, cuyas 12 entradas son cubiertos/día, servicios/día, días de apertura, tipo, salario, pagas, SS, horas por servicio, jornada, cobertura, ticket y 'Cubiertos del día PICO' (B16=120): no existe el concepto de día de la semana.",
+      "fix": "Reescribir los dos textos a lo que el kit SÍ hace: Torres → coste laboral con la cotización y el recargo de su convenio en celda (Nóminas!C2, Resumen Mensual!D3); Vidal → refuerzo del día pico por servicio (Calculadora!A35, B35=2). Sin tocar aggregateRating ni el resto de testimonios, como fija §7-bis.8."
+    },
+    {
+      "id": "RC-03",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "testimonials.items[0]:263 (David Ruiz)",
+      "hallazgo": "El mismo 11h/40h de RC-01, pero on-page y a la vista: el visitante lee en el grid «descanso mínimo de 12h entre jornadas (art. 34.3 ET)» y unos scrolls más abajo un cliente que dice que el kit le avisa a las 11h. Dos cifras legales distintas para la misma alerta en la misma página; la que aparece en boca de un cliente es la derogada.",
+      "evidencia": "kit-gestion-personal.ts:263 → 'Ahora las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente.' frente a kit-gestion-personal.ts:135 (12h) y a 01-cuadrante-turnos-semanal.xlsx!Instrucciones!B12 → 'Salta por debajo de las 12 h del art. 34.3 ET'.",
+      "fix": "Actualizar el texto a 12 h y a «las horas que tengo contratadas», en el mismo pase que RC-01."
+    },
+    {
+      "id": "RC-04",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "schema.reviews[0-2]:51-63 y testimonials.items[0-7]:263-270",
+      "hallazgo": "DOM-26 (§5): «Se reescriben seo, schema, hero, grid, why, bonus, faqs, cta y testimonials del .ts». Los dos únicos bloques de esa lista que NO se han reescrito son precisamente `schema.reviews` y `testimonials`, que son 11 textos completos sin una sola tilde. El resultado es peor que antes de empezar: la página ahora alterna copia acentuada (hero, grid, why, faqs, cta) con un bloque de testimonios que escribe «hosteleria», «desempeno», «gastronomico», «Lucia», «Mendez», «Jimenez», «Sanchez» y «mediterraneo» a dos scrolls de distancia.",
+      "evidencia": "kit-gestion-personal.ts:266 → \"name: 'Lucia Navarro', role: 'Jefa de cocina, restaurante mediterraneo', text: '… Calcula automaticamente el coste segun nuestro convenio y me avisa cuando un cocinero esta cerca del limite legal.'\" · kit-gestion-personal.ts:269 → 'La evaluacion de desempeno con 10 competencias …' · frente a kit-gestion-personal.ts:141 ya acentuado: 'Base de datos completa: datos personales, puesto, convenio aplicable, vencimiento de contrato, carnets (manipulador, PRL) y aviso de menores de edad.'",
+      "fix": "Pasar los 11 textos (3 reviews + 8 testimonios) por el mismo barrido de tildes que el resto del fichero, aprovechando el mismo commit que RC-01/RC-02/RC-03."
+    },
+    {
+      "id": "RC-05",
+      "severidad": "alta",
+      "fichero": "src/data/products-catalog.ts",
+      "ubicacion": "líneas 56-57 (description.es y description.en de 'kit-gestion-personal')",
+      "hallazgo": "COM-22, mapeado a §5 de la SPEC («products-catalog.ts:56 cambia «Cuadrantes, control de horas, ratios de productividad» —que no existen— por … y su description.en en paralelo»), no se ha ejecutado: el fichero ni siquiera aparece en el árbol modificado. Sigue anunciando «ratios de productividad», que ningún fichero del kit calcula, y omite onboarding, vacaciones y evaluación. Y no es texto muerto: se sirve en producción.",
+      "evidencia": "src/data/products-catalog.ts:56 → \"es: 'Cuadrantes, control de horas, ratios de productividad.'\" y :57 → \"en: 'Schedules, hour tracking, and productivity ratios.'\" · consumido por astro-site/src/components/pages/UseCasePageContent.astro:33 y astro-site/src/components/pages/PSeoCityPageContent.astro:35 vía getProductsByIds · `git status --short` no lista src/data/products-catalog.ts. · Ningún xlsx de la copia dry-run contiene un ratio de productividad: 03!'Ratio Coste Laboral' es coste/ventas y BONUS-02!Calculadora es cubiertos/empleado.",
+      "fix": "Aplicar el texto que la SPEC ya redactó: «Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo», más su equivalente en inglés."
+    },
+    {
+      "id": "RC-06",
+      "severidad": "alta",
+      "fichero": "src/components/kit-gestion-personal/HeroSection.tsx, WhySection.tsx, FaqAccordion.tsx, ContentGrid.tsx y src/pages/KitGestionPersonal.tsx",
+      "ubicacion": "HeroSection.tsx:71 · WhySection.tsx:18 · FaqAccordion.tsx:8 · ContentGrid.tsx:8 · KitGestionPersonal.tsx:70",
+      "hallazgo": "La SPEC §5 abre con una condición explícita: «sus gemelos de la SPA (src/pages/KitGestionPersonal.tsx, src/components/kit-gestion-personal/*) son el original del copy VERBATIM y se tocan en el MISMO commit, o vuelven a divergir». No se ha tocado ninguno. El resultado es que el defecto DOM-06/COM-05 —clasificado alta por ser una afirmación normativa falsa— sigue vivo palabra por palabra en cinco ficheros, incluido un JSON-LD. Y la cabecera del .ts de Astro los sigue citando como fuente del copy, así que el próximo que regenere la landing desde la SPA reintroduce el gancho falso.",
+      "evidencia": "src/components/kit-gestion-personal/HeroSection.tsx:71 → 'Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado' · WhySection.tsx:18 → 'El control horario digital es obligatorio en Espana desde 2026.' · FaqAccordion.tsx:8 → 'requiere un software homologado (obligatoria en Espana desde 2026)' · ContentGrid.tsx:8 → 'descanso minimo 11h entre turnos, maximo 40h/semana' · KitGestionPersonal.tsx:70 → JSON-LD Question con 'requiere un software homologado'. Todo ello frente a kit-gestion-personal.ts:105 ('obligatorio en España desde 2019') y :217 ('desde el 12-05-2019 … infracción grave: de 751 a 7.500 EUR por centro de trabajo (art. 7.5 LISOS)').",
+      "fix": "Portar los cinco textos del .ts de Astro a los cinco ficheros de la SPA en el mismo commit, incluido el <script type=application/ld+json> de KitGestionPersonal.tsx:70."
+    },
+    {
+      "id": "RC-07",
+      "severidad": "media",
+      "fichero": "astro-site/src/components/pages/ProductosDigitalesHubPage.astro",
+      "ubicacion": "líneas 307-318 (tarjeta 'Kit Gestion de Personal y Turnos')",
+      "hallazgo": "El hub que enlaza a la landing —y que SÍ se sirve desde Astro (astro-site/src/pages/productos-digitales.astro:15 monta este componente)— conserva la copia sin tildes y la descripción de la v1.1. El comprador salta de una tarjeta que dice «formulas automaticas … evaluacion de desempeno» a una landing acentuada: el barrido de DOM-26 se detiene en la puerta de la landing.",
+      "evidencia": "ProductosDigitalesHubPage.astro:307 → \"name: 'Kit Gestion de Personal y Turnos'\" · :312 → \"description: '9 plantillas Excel con formulas automaticas: cuadrante turnos, horas extra, coste laboral, onboarding, vacaciones, evaluacion de desempeno y directorio de plantilla.'\" · :314-317 → 'Cuadrante turnos con alertas legales', 'Control horas extra automatico', 'Ratio coste laboral con semaforo', 'Onboarding, vacaciones y evaluacion'. Frente a kit-gestion-personal.ts:31 ya acentuado.",
+      "fix": "Acentuar nombre, descripción y las 4 features de la tarjeta, y su gemela en src/pages/ProductosDigitales.tsx:295-305."
+    },
+    {
+      "id": "RC-08",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts + astro-site/src/data/productos/kits/kit-gestion-personal.ts + src/pages/KitGestionPersonalDashboard.tsx",
+      "ubicacion": "productos-changelog.ts:255-268 (los 13 bullets de la v2.0) · kit-gestion-personal.ts:142 y :184 · KitGestionPersonalDashboard.tsx:22",
+      "hallazgo": "El BONUS-01 gana en la v2.0 dos bloques enteros —arqueo de caja y temperaturas APPCC al relevo, con fórmula de conformidad— y dos desplegables, y NO aparece en ninguno de los tres sitios donde se cuenta la versión: los 13 bullets del changelog no lo mencionan una sola vez, el grid y el bonus de la landing repiten el texto de la v1.1 y el dashboard sigue diciendo «Traspaso de información entre turnos». Valor construido que no se vende, en el fichero que la landing cobra como bonus de 9 EUR.",
+      "evidencia": "Copia dry-run BONUS-01-briefing-cambio-turno.xlsx!Briefing!A46='💶 CAJA: FONDO, RECAUDACIÓN Y DIFERENCIA' (D50='=IF(OR($B50=\"\",$C50=\"\"),\"\",ROUND($C50-$B50,2))') y !A53='🌡️ TEMPERATURAS AL CAMBIO DE TURNO (APPCC)' (C55=4, C56=-18, C57=4, D55='=IF(…,IF($B55<=$C55,\"✓ CONFORME\",\"⛔ FUERA DE RANGO\"))') · frente a productos-changelog.ts:256-268, donde ningún bullet nombra el briefing, y a kit-gestion-personal.ts:142 → 'incidencias, reservas VIP, tareas pendientes, stock bajo, avisos de mantenimiento.'",
+      "fix": "Añadir un bullet de BONUS-01 al changelog v2.0 y meter «arqueo de caja» y «temperaturas al relevo (APPCC)» en grid.templates[7], bonus.items[0] y el TEMPLATES['bonus-briefing'] del dashboard."
+    },
+    {
+      "id": "RC-09",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "grid.templates[7].desc:142 y bonus.items[0].desc:184",
+      "hallazgo": "Las dos descripciones del Briefing enumeran cinco contenidos y el quinto, «avisos de mantenimiento», no existe en el fichero: el BONUS-01 tiene ocho bloques y ninguno es de mantenimiento. Es un resto literal de la v1.1 que sobrevive a una reescritura que sí tocó los otros ocho templates.",
+      "evidencia": "kit-gestion-personal.ts:142 y :184 → '… stock bajo, avisos de mantenimiento' · copia dry-run BONUS-01-briefing-cambio-turno.xlsx!Briefing, encabezados de bloque completos: A7 'RESERVAS PENDIENTES / VIPs', A15 'INCIDENCIAS DEL TURNO', A23 'TAREAS PENDIENTES PARA SIGUIENTE TURNO', A31 'STOCK BAJO — PEDIDOS URGENTES', A39 'PERSONAL: AUSENCIAS Y CAMBIOS', A46 'CAJA…', A53 'TEMPERATURAS…', A60 'OBSERVACIONES GENERALES:'. La palabra «mantenimiento» no aparece en ninguna celda del libro.",
+      "fix": "Sustituir «avisos de mantenimiento» por los bloques que sí existen (personal y sustitutos, arqueo de caja, temperaturas), en las dos ubicaciones."
+    },
+    {
+      "id": "RC-10",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "productos-changelog.ts:260 (bullet 5 de la v2.0)",
+      "hallazgo": "El changelog anuncia que «aparece un CONTADOR con alerta del tope legal de 80h/año». No hay contador: la columna de horas acumuladas del año es una celda verde de entrada manual que el propio fichero pide al usuario que arrastre de mes en mes. Lo que sí existe es el semáforo sobre esa cifra. La palabra promete automatismo donde hay transcripción, que es exactamente el tipo de afirmación que la R1 penalizó en COM-14.",
+      "evidencia": "productos-changelog.ts:260 → '… y aparece un contador con alerta del tope legal de 80h/año (art. 35.2 ET)' · copia dry-run 02-control-horas-extras.xlsx!'Resumen Mensual'!E5='H. extra acumuladas en el año' (columna sin fórmula, verde) y !Instrucciones!B20 → \"«H. extra acumuladas en el año» es verde y la llevas TÚ de mes en mes: suma el acumulado anterior y las computables de este mes\". Sólo F6 tiene fórmula ('⛔ EXCEDE …' / '⚠ cerca del límite' / '✓ dentro').",
+      "fix": "Cambiar «contador» por «alerta sobre las horas acumuladas que arrastras cada mes», o describirlo como semáforo del tope, que es lo que el fichero hace."
+    },
+    {
+      "id": "RC-11",
+      "severidad": "media",
+      "fichero": "03-coste-laboral-mensual.xlsx + BONUS-02-calculadora-plantilla-optima.xlsx + astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "03!'Ratio Coste Laboral'!B3 (DV) vs BONUS-02!Calculadora!B8 (DV) · kit-gestion-personal.ts:225 (faqs[2].a)",
+      "hallazgo": "La FAQ promete explícitamente que las plantillas se adaptan a «restaurante casual, fine dining, fast casual, HOTEL, catering, cadenas». El semáforo del 03 sólo ofrece 6 tipos y hotel no está entre ellos, así que un hotelero cae al 30/35 % genérico; el BONUS-02, con 10 tipos, le da 42/44 % para el mismo negocio. Dos ficheros del mismo kit emiten veredictos opuestos sobre el mismo ratio de coste laboral (12 puntos de diferencia en el umbral), y lo mismo pasa con pizzería, dark kitchen y heladería.",
+      "evidencia": "Copia dry-run 03-coste-laboral-mensual.xlsx!'Ratio Coste Laboral'!B3 DV = '\"Fast Casual / Comida Rápida,Restaurante Casual,Fine Dining / Alta Cocina,Catering / Eventos,Cafetería / Brunch,Bar / Cocktails\"' (6) · BONUS-02!Calculadora!B8 DV = '\"Restaurante Casual,Fine Dining / Alta Cocina,Fast Casual / Comida Rápida,Cafetería / Brunch,Bar / Cocktails,Pizzería,Dark Kitchen / Delivery,Hotel (restaurante),Catering / Eventos,Heladería / Obrador\"' (10), con !'Ratios por Tipo'!I12=0.42 y J12=0.44 para 'Hotel (restaurante)'; el 03 cae al IFERROR de B9/D7-D8 → 0,30 / 0,35. · kit-gestion-personal.ts:225 nombra 'hotel' como formato soportado.",
+      "fix": "O se añaden a la tabla A13:E19 del 03 los cuatro tipos que faltan (hotel, pizzería, dark kitchen, heladería) con los mismos umbrales que el BONUS-02, o la FAQ deja de enumerar formatos que el semáforo no conoce."
+    },
+    {
+      "id": "RC-12",
+      "severidad": "media",
+      "fichero": "BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "Calculadora!A51 (nota al pie)",
+      "hallazgo": "La nota le dice al cliente que si el 03 y el bonus no coinciden es porque «has cambiado un parámetro en uno y no en el otro». Falso como diagnóstico: la hoja 'Previsión por Servicio' del 03 no tiene selector de tipo de negocio, sus tres ratios están escritos a mano como constantes de Restaurante Casual, así que en cuanto el cliente elige cualquier otro tipo en el bonus los dos ficheros divergen POR DISEÑO y la nota le manda a buscar un error que no ha cometido. Además ninguna instrucción del 03 dice de dónde copiar esos ratios.",
+      "evidencia": "Copia dry-run BONUS-02!Calculadora!A51 → \"▸ La hoja «Previsión por Servicio» del fichero 03 hace este mismo cálculo y devuelve el mismo número: si los dos no coinciden, es que has cambiado un parámetro en uno y no en el otro.\" · 03-coste-laboral-mensual.xlsx!'Previsión por Servicio'!B7=25, B8=22, B9=80 (valores literales, sin DV — la lista de DV del libro sólo tiene Nóminas!D5:D34 y Previsión!B5) frente a BONUS-02!Calculadora!B19='=IFERROR(VLOOKUP($B$8,\\'Ratios por Tipo\\'!$A$5:$J$14,5,FALSE),0)'.",
+      "fix": "Completar la nota: «…si has cambiado el tipo de negocio en la calculadora, copia sus tres ratios (B19:B21) a B7:B9 de esta hoja», o dar al 03 el mismo selector de tipo."
+    },
+    {
+      "id": "RC-13",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "hero.badgeTone:104 y hero.badge:105",
+      "hallazgo": "El badge cambia de amenaza («multas hasta 10.000 EUR/empleado») a informativo, pero conserva `badgeTone: 'red'`, que es el tono de alarma diseñado para la amenaza retirada: queda una píldora roja diciendo algo que no alarma. Y pasa de 66 a 109 caracteres (×1,65), en un componente de píldora de una o dos líneas: es el único badge del catálogo que no cabe holgado en móvil.",
+      "evidencia": "kit-gestion-personal.ts:104 → \"badgeTone: 'red',\" y :105 → \"badge: 'Registro de jornada obligatorio en España desde 2019 — planifica turnos, descansos y coste laboral sin errores'\" (109 car.), frente al texto anterior 'Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado' (66 car.). La cabecera del propio fichero, línea 13, documenta badgeTone='red' como divergencia deliberada del producto de referencia, justificada por el badge viejo.",
+      "fix": "Acortar el badge a la primera cláusula («Registro de jornada obligatorio en España desde 2019 — art. 34.9 ET») y decidir el tono: si ya no amenaza, no debería ser rojo."
+    },
+    {
+      "id": "RC-14",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "guarantee.headingPre:203 frente a guarantee.text:205 y guarantee.stats[0].label:207",
+      "hallazgo": "Dentro de un mismo bloque visible el titular se queda sin tildes por decisión explícita («SIC: divergencia intencional») mientras el párrafo y la primera estadística sí las llevan. El lector ve «Garantia de Satisfaccion» encabezando un texto que dice «gestión» y una cifra que dice «Días de garantía». La divergencia se documentó cuando TODO el fichero iba sin tildes; ahora que el resto se ha acentuado, mantenerla es lo que produce la incoherencia.",
+      "evidencia": "kit-gestion-personal.ts:203 → \"headingPre: 'Garantia de Satisfaccion ', // SIC: sin tildes, divergencia intencional (ver cabecera del fichero)\" · :205 → 'Si las plantillas no te ayudan a mejorar la gestión de personal…' · :207 → \"{ number: '30', label: 'Días de garantía' }\".",
+      "fix": "Acentuar el titular y retirar el punto 4 de la lista de divergencias de la cabecera, o dejar constancia de por qué esta sección concreta se queda fuera del pase de DOM-26."
+    },
+    {
+      "id": "RC-15",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "cabecera del fichero, líneas 2-16",
+      "hallazgo": "La cabecera sigue declarando que este fichero es «Copy VERBATIM de la SPA» y enumera cinco divergencias respecto a ella. Tras la v2.0 ya no es verbatim en casi ninguna línea (RC-06 lo confirma: la SPA sigue en 2026/11h/10.000 EUR), así que la cabecera describe una relación que dejó de existir y va a inducir al siguiente mantenedor a resincronizar en la dirección equivocada. Además el punto 5 se contradice a sí mismo: dice «authorBadges SIN tildes» y el ejemplo que cita las lleva.",
+      "evidencia": "kit-gestion-personal.ts:2 → '// LÍNEA KITS EXCEL — producto kit-gestion-personal. Copy VERBATIM de la SPA:' · :16 → \"//   5. authorBadges SIN tildes (['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años']).\" (los dos badges llevan tilde) · git status --short no lista ningún fichero de src/components/kit-gestion-personal/.",
+      "fix": "Reescribir la cabecera: o la SPA se actualiza (RC-06) y se mantiene la nota de verbatim, o se declara que desde la v2.0 la fuente es este .ts y la SPA queda como histórico."
+    },
+    {
+      "id": "RC-16",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts + src/pages/KitGestionPersonalDashboard.tsx + src/data/productos-changelog.ts",
+      "ubicacion": "kit-gestion-personal.ts:138 y :249 · KitGestionPersonalDashboard.tsx:18 · productos-changelog.ts:265",
+      "hallazgo": "El mismo entregable se cuenta con tres cifras: «40+ tareas» en el grid y en el CTA de la landing, «50 tareas» en el dashboard y «suma 50 tareas» en el changelog. Las tres son ciertas (el fichero trae 50), pero la vaga es la que está en la página que vende, mientras la precisa se reserva para quien ya ha pagado. §7-bis.3 permitía mantener «40+»; conviene decidirlo, no heredarlo.",
+      "evidencia": "Copia dry-run 04-onboarding-nuevo-empleado.xlsx!'Checklist Onboarding': 13+8+9+12+8 = 50 tareas (E71 cacheado = 50.0, C72 = 50.0, C73 = 0.0) · kit-gestion-personal.ts:138 → '40+ tareas organizadas' · :249 → 'Onboarding nuevo empleado: 40+ tareas' · KitGestionPersonalDashboard.tsx:18 → '50 tareas: documentación, formación, equipamiento.'",
+      "fix": "Unificar en «50 tareas» en las cuatro ubicaciones: es una cifra medida y mejor argumento de venta que «40+»."
+    },
+    {
+      "id": "RC-17",
+      "severidad": "baja",
+      "fichero": "05-planificacion-vacaciones.xlsx",
+      "ubicacion": "'Calendario Anual'!A1 y B5 · 'Saldo Vacaciones'!E2",
+      "hallazgo": "El fichero se entrega con el año 2027 precargado en un producto sellado «Versión 2.0 · agosto 2026». Quien compre en agosto o septiembre de 2026 y quiera cuadrar lo que queda del año se encuentra las 53 semanas apuntando al año siguiente, y el título deja el año en blanco, así que nada en pantalla le avisa: tiene que darse cuenta leyendo la fecha del lunes de la semana 1.",
+      "evidencia": "Copia dry-run 05-planificacion-vacaciones.xlsx!'Calendario Anual'!A1='Calendario de Vacaciones — Año: ______', B5=datetime(2027,1,4) (las 52 restantes son '=B5+7') · !'Saldo Vacaciones'!E2=datetime(2027,12,31) ('Fecha de cierre del año') · frente a !Instrucciones (bloque de versión) → 'Versión 2.0 · agosto 2026'.",
+      "fix": "O precargar 2026 y dejar 2027 documentado como «cámbialo en B5 y todo se recalcula», o escribir el año en A1 y añadir una línea de Instrucciones que diga que el calendario viene preparado para el ejercicio siguiente."
+    },
+    {
+      "id": "RC-18",
+      "severidad": "baja",
+      "fichero": "01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "'Cuadrante Semanal'!C3 y H3 (leyenda) frente a Instrucciones!B8",
+      "hallazgo": "Las Instrucciones afirman que «cada código lleva su color» y dos códigos comparten exactamente el mismo azul en la leyenda: T=Tarde y V=Vacaciones. En una leyenda cuyo único propósito es distinguir por color, dos entradas idénticas la invalidan parcialmente — y son justo el turno más frecuente y la ausencia más frecuente.",
+      "evidencia": "Copia dry-run 01-cuadrante-turnos-semanal.xlsx!'Cuadrante Semanal': C3='T=Tarde' fill=BBDEFB · H3='V=Vacaciones' fill=BBDEFB (idénticos) · !Instrucciones!B8 → '▸ Cada código lleva su color en la fila 3 de la rejilla: es la misma leyenda en el cuadrante semanal y en el mensual.'",
+      "fix": "Dar a V otro tono (el 05 ya usa BBDEFB para V, así que lo coherente es mover T a otro color, p. ej. FFE0B2 libre si P pasa a otro)."
+    },
+    {
+      "id": "RC-19",
+      "severidad": "baja",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "productos-changelog.ts:276 (bullet 1 de la entrada v1.1) frente a :266 (bullet 11 de la v2.0)",
+      "hallazgo": "El changelog del dashboard muestra las dos entradas seguidas: la v1.1 dice «el porcentaje de progreso ahora se calcula de verdad» y la v2.0, doce líneas más arriba, explica que abría en «4 de 51» con el checklist en blanco. El cliente lee una promesa incumplida y su desmentido en la misma pantalla. Es honesto, pero conviene decidirlo a propósito y no por inercia.",
+      "evidencia": "productos-changelog.ts:276 → 'Checklist de onboarding: el porcentaje de progreso ahora se calcula de verdad.' · :266 → 'Onboarding Nuevo Empleado: el progreso ya se calcula bien (antes se comía las cabeceras de sección y abría en \"4 de 51\" con el checklist en blanco)…'.",
+      "fix": "Matizar el bullet de la v1.1 («se añadió el contador; en la 2.0 se corrigió el cálculo») o dejarlo tal cual de forma consciente, anotándolo en el handoff."
+    },
+    {
+      "id": "RC-20",
+      "severidad": "baja",
+      "fichero": "02-control-horas-extras.xlsx",
+      "ubicacion": "'Resumen Mensual'!F5 (cabecera) frente a F3 y F6",
+      "hallazgo": "La cabecera de la columna del veredicto se llama «Límite anual de horas extra», pero el límite (80) está en F3 y lo que la columna muestra es «✓ dentro», «⚠ cerca del límite» o «⛔ EXCEDE (n h)». Una cabecera que anuncia un número y devuelve un texto es la clase de detalle que hace dudar de la hoja al cliente que la imprime para su gestoría.",
+      "evidencia": "Copia dry-run 02-control-horas-extras.xlsx!'Resumen Mensual': E3='Límite anual de horas extra:' con F3=80, y F5='Límite anual de horas extra' con F6='=IF($E6=\"\",\"\",IF($E6>$F$3,\"⛔ EXCEDE (\"&TEXT($E6-$F$3,\"0\")&\" h)\",IF($E6>$F$3*0.8,\"⚠ cerca del límite\",\"✓ dentro\")))'.",
+      "fix": "Renombrar F5 a «Estado frente al límite anual» y dejar el rótulo del parámetro sólo en E3."
+    }
+  ]
+}
