@@ -369,7 +369,8 @@ def _ficha(ws, ejemplo=None):
     _merges(ws, [])
     _vaciar(ws)
     _anchos(ws, {'A': 5, 'B': 35, 'C': 16, 'D': 40})
-    merges = _titulo(ws, FICHA_ANCHO, 'Ficha de Evaluación de Desempeño')
+    merges = _titulo(ws, FICHA_ANCHO, 'Ficha de Evaluación de Desempeño'
+                     + (' — EJEMPLO RELLENO' if ejemplo else ''))
 
     campos = ['Empleado:', 'Puesto:', 'Periodo evaluado:', 'Evaluador:',
               'Fecha evaluación:']
@@ -730,10 +731,11 @@ def _n07_plantilla(wb, cambios):
 
     nota0 = R1_07 + 2
     _nota(ws, nota0,
-          '▸ Esta hoja NO pide datos de salud. La v1.1 traía una columna '
-          '«Alérgenos Propios» y se ha retirado: es una categoría especial del '
-          'art. 9 RGPD y no se trata al mismo nivel que la talla de camiseta. '
-          "Lee la sección de protección de datos en 'Instrucciones'.",
+          '▸ Esta hoja NO pide datos de salud. La versión 1.1 traía una '
+          'columna con las alergias e intolerancias del trabajador y se ha '
+          'retirado: son categoría especial del art. 9 RGPD y no se tratan al '
+          'mismo nivel que la talla de camiseta. Lee la sección de protección '
+          "de datos en 'Instrucciones'.",
           ANCHO_07, 30)
     _nota(ws, nota0 + 1,
           '▸ «Fin periodo de prueba», «Caducidad carnet manipulador» y '
@@ -908,8 +910,9 @@ def _n07_instrucciones(wb, cambios):
         'alimentos y de la formación en PRL.',
         '▸ Contacto: teléfono, email y contacto de emergencia.',
         '▸ Operativos: salario bruto anual, talla de uniforme y taquilla.',
-        '▸ NO se piden datos de salud. La versión 1.1 incluía una columna '
-        '«Alérgenos Propios» y se ha retirado (ver más abajo).',
+        '▸ NO se piden datos de salud: la columna de alergias e intolerancias '
+        'del trabajador que traía la versión 1.1 se ha retirado (ver más '
+        'abajo).',
         None,
         'Protección de datos (RGPD):',
         '▸ Base jurídica: el tratamiento de estos datos se ampara en la '
@@ -919,7 +922,7 @@ def _n07_instrucciones(wb, cambios):
         'ellos, y pedirlo sería confuso.',
         '▸ Minimización (art. 5.1.c): sólo lo que necesitas para gestionar la '
         'relación laboral. Por eso este directorio ya no pide alergias ni '
-        'intolerancias del empleado: son datos de salud, categoría especial '
+        'intolerancias del trabajador: son datos de salud, categoría especial '
         'del art. 9 RGPD, y exigen una base jurídica distinta y reforzada. Si '
         'tu prevención de riesgos necesita alguna, la custodia el servicio de '
         'prevención, no la hoja de RRHH.',
@@ -1054,6 +1057,10 @@ def _bonus_ratios(wb, cambios):
             if j >= 1:
                 cel.alignment = CENTRO
         ws.cell(row=r, column=1).alignment = Alignment(vertical='center')
+    # 'Ratios por Tipo' está en `motor.SIN_VERDE_AUTO`: el verde de esta hoja
+    # se marca a mano y no lo pisa nadie.
+    motor.marcar_verde(ws, 'E5:G14')
+    motor.marcar_verde(ws, 'I5:J14')
 
     nota0 = 16
     _nota(ws, nota0,
@@ -1126,7 +1133,8 @@ def _bonus_calculadora(wb, cambios):
          motor.PARAMETROS['ss_empresa'][3]),
         (12, 'Horas efectivas por servicio:', 4, motor.FMT_ENT,
          motor.PARAMETROS['horas_por_servicio'][3]),
-        (13, 'Jornada contratada (h/semana):', 40, motor.FMT_ENT, None),
+        (13, 'Jornada contratada (h/semana):', 40, motor.FMT_ENT,
+         motor.PARAMETROS['jornada_semanal'][3]),
         (14, 'Factor de cobertura (vacaciones, bajas y descansos):', 1.15,
          motor.FMT_DEC2, motor.PARAMETROS['factor_cobertura'][3]),
         (15, 'Ticket medio sin IVA (€):', 25, motor.FMT_EUR,
@@ -1367,10 +1375,12 @@ def _bonus_instrucciones(wb, cambios):
         'Lo que esta hoja NO es:',
         '▸ No es tu coste de nómina: parte de un salario medio y de un tipo de '
         'cotización únicos para todo el equipo. El coste real, contrato a '
-        "contrato, sale de la hoja 'Nóminas' del fichero 03.",
-        '▸ Los ratios son orientativos. Si tu carta es más laboriosa o tu '
-        'servicio más exigente, baja el ratio de cocina o de sala en la hoja '
-        "'Ratios por Tipo' y la calculadora lo recoge sola.",
+        'contrato, sale de la hoja «Nóminas» del fichero 03 — que es otro '
+        'libro, no una pestaña de éste.',
+        '▸ Los ratios son orientativos y editables: si tu carta es más '
+        'laboriosa o tu servicio más exigente, baja el número de cubiertos por '
+        "cocinero o por camarero en las celdas verdes de 'Ratios por Tipo' y "
+        'la calculadora lo recoge sola.',
     ])
     cambios.append('BONUS-02:Instrucciones: la cadena de cálculo explicada, el '
                    'porqué del ticket medio, el día pico y el aviso de que '
@@ -1395,3 +1405,391 @@ def pre(wb, fname, cambios):
     elif fname.startswith('BONUS-02'):
         _bonus(wb, cambios)
     return cambios
+
+
+# ==========================================================================
+# Demostraciones con pycel (SPEC §5) — se cambian ENTRADAS y se comprueba la
+# DIRECCIÓN del resultado, que es lo único que demuestra que la cadena existe.
+# ==========================================================================
+EPOCA = datetime.datetime(1899, 12, 30)
+
+
+def _serie(y, m, d):
+    """Fecha → número de serie de Excel. pycel opera con el serial, no con el
+    `datetime`: pasarle un objeto fecha en `set_value` deja la resta de
+    `$B7-$B$3` en `#VALUE!`."""
+    return (datetime.datetime(y, m, d) - EPOCA).days
+
+
+def _hoy():
+    return (datetime.datetime.now().replace(hour=0, minute=0, second=0,
+                                            microsecond=0) - EPOCA).days
+
+
+def _xl(path):
+    from pycel import ExcelCompiler
+    return ExcelCompiler(filename=path)
+
+
+def _ev(xl, ref):
+    with open(os.devnull, 'w') as dn, contextlib.redirect_stderr(dn):
+        try:
+            return xl.evaluate(ref)
+        except Exception as e:                              # noqa: BLE001
+            return 'ERR:{}'.format(type(e).__name__)
+
+
+def _sv(xl, ref, valor):
+    with open(os.devnull, 'w') as dn, contextlib.redirect_stderr(dn):
+        try:
+            xl.evaluate(ref)
+            xl.set_value(ref, valor)
+            return True
+        except Exception:                                   # noqa: BLE001
+            return False
+
+
+def _num(v):
+    return isinstance(v, (int, float)) and not isinstance(v, bool)
+
+
+def _calentar(xl, refs):
+    """⚠ pycel sólo propaga un `set_value` a las celdas que YA están en su
+    grafo de dependencias: hay que evaluar primero las SALIDAS para que la
+    cadena entera entre en el grafo y la invalidación funcione."""
+    return dict((r, _ev(xl, r)) for r in refs)
+
+
+def _d06_ficha(carpeta):
+    """§4 · la ficha en blanco NO enseña `#¡DIV/0!` y el `N/A` sale de la media.
+
+    La v1.1 entregaba `C22` y `C23` con el error CACHEADO en un documento que
+    se imprime y se firma (DOM-02/TEC-03/COM-04), y su DV `whole 1..5` no
+    admitía «no aplica»: la única forma de no puntuar una competencia era
+    dejarla en blanco, indistinguible de un olvido (DOM-30).
+    """
+    p = os.path.join(carpeta, F06)
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    refs = ["'Ficha Evaluación'!C22", "'Ficha Evaluación'!C23",
+            "'Ficha Evaluación'!C24"]
+    vacia = _calentar(xl, refs)
+    notas = [5, 5, 4, 4, 5, 4, 'N/A', 4, 3, 4]      # el mismo caso del ejemplo
+    for i, nota in enumerate(notas):
+        _sv(xl, "'Ficha Evaluación'!C{}".format(FICHA_R0 + i), nota)
+    con_na = dict((r, _ev(xl, r)) for r in refs)
+    # la novena competencia sube de 3 a 5: la media TIENE que subir
+    _sv(xl, "'Ficha Evaluación'!C20", 5)
+    subida = _ev(xl, refs[0])
+    ejemplo = _xl(p)
+    ej = dict((r.replace('Ficha Evaluación', 'Ficha (ejemplo relleno)'),
+               _ev(ejemplo, r.replace('Ficha Evaluación',
+                                      'Ficha (ejemplo relleno)')))
+              for r in refs)
+    media = con_na["'Ficha Evaluación'!C22"]
+    ok = (vacia["'Ficha Evaluación'!C22"] in ('', None)
+          and vacia["'Ficha Evaluación'!C23"] in ('', None)
+          and vacia["'Ficha Evaluación'!C24"] == '0 de 10'
+          and _num(media) and abs(media - 4.22) < 0.005
+          and con_na["'Ficha Evaluación'!C24"] == '9 de 10'
+          and con_na["'Ficha Evaluación'!C23"] == '✓ BUENO'
+          and _num(subida) and subida > media)
+    return {'ref': '06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22/C23/C24',
+            'formula_media': motor.guarda_media('$C$12:$C$21'),
+            'ficha_en_blanco': dict((k.split('!')[1], str(v))
+                                    for k, v in vacia.items()),
+            'nueve_notas_y_una_NA': dict((k.split('!')[1], str(v))
+                                         for k, v in con_na.items()),
+            'media_al_subir_C20_de_3_a_5': subida,
+            'hoja_de_ejemplo': dict((k.split('!')[1], str(v))
+                                    for k, v in ej.items()),
+            'ok': ok,
+            'nota': 'con 9 competencias puntuadas y una N/A la media son '
+                    '38/9 = 4,22 (no 38/10 = 3,80): el N/A no penaliza, y el '
+                    'contador dice sobre cuántas se ha calculado'}
+
+
+def _d06_tendencia(carpeta):
+    """§4 · la tendencia compara los DOS ÚLTIMOS trimestres informados.
+
+    La v1.1 miraba sólo Q4 contra Q3 (`=IF(AND(E5<>"",D5<>""),…)`), así que la
+    columna estaba en blanco nueve meses al año (TEC-27/COM-21).
+    """
+    p = os.path.join(carpeta, F06)
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    _calentar(xl, ["'Histórico'!F5", "'Histórico'!G5"])
+    pasos = []
+    for etiqueta, valores, esperado in (
+            ('sólo Q1 = 3,0 (un dato: no hay con qué comparar)',
+             [3, None, None, None], ''),
+            ('Q1 = 3,0 y Q2 = 4,0 (la v1.1 seguía en blanco)',
+             [3, 4, None, None], '↑ Mejora'),
+            ('Q1, Q2 y Q3 = 2,0', [3, 4, 2, None], '↓ Baja'),
+            ('Q1, Q2, Q3 y Q4 = 2,0', [3, 4, 2, 2], '→ Estable')):
+        for i, v in enumerate(valores):
+            _sv(xl, "'Histórico'!{}5".format(get_column_letter(2 + i)),
+                v if v is not None else None)
+        obtenido = _ev(xl, "'Histórico'!G5")
+        media = _ev(xl, "'Histórico'!F5")
+        pasos.append({'caso': etiqueta, 'esperado': esperado,
+                      'obtenido': obtenido, 'media_anual': media,
+                      'ok': obtenido == esperado})
+    return {'ref': '06-evaluacion-desempeno.xlsx:Histórico:G5',
+            'pruebas': pasos, 'ok': all(x['ok'] for x in pasos),
+            'nota': 'la comparación es INDEX sobre COUNT: el último trimestre '
+                    'informado contra el anterior, sin `LOOKUP(9^9;…)`'}
+
+
+def _d07_vencimientos(carpeta):
+    """§4 · los CUATRO vencimientos y los 30 empleados.
+
+    La v1.1 leía `Plantilla!A5:A19` —15 de 30— y sólo el fin de contrato: del
+    empleado 16 en adelante nadie avisaba (DOM-14/TEC-07). Se prueba sobre el
+    EMPLEADO 30 (`Plantilla` fila 34 → `Vencimientos` fila 36), que es
+    justamente el que la v1.1 no miraba, y sobre el carnet de manipulador, que
+    antes se tecleaba a mano en otra tabla.
+    """
+    p = os.path.join(carpeta, F07)
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    hoy = _hoy()
+    salidas = ["'Vencimientos'!C36", "'Vencimientos'!G36",
+               "'Vencimientos'!E3", "'Vencimientos'!E4", "'Vencimientos'!E5"]
+    vacio = _calentar(xl, salidas)
+    pruebas = []
+    for etiqueta, dias, empieza in (
+            ('contrato del empleado 30 vencido hace 10 días', -10, '❌'),
+            ('contrato del empleado 30 a 15 días (umbral rojo = 30)', 15,
+             '🔴'),
+            ('contrato del empleado 30 a 45 días (umbral ámbar = 60)', 45,
+             '🟡'),
+            ('contrato del empleado 30 a 200 días', 200, '🟢')):
+        _sv(xl, "'Plantilla'!L34", hoy + dias)
+        v = _ev(xl, "'Vencimientos'!C36")
+        pruebas.append({'caso': etiqueta, 'empieza_por': empieza,
+                        'obtenido': v,
+                        'ok': isinstance(v, str) and v.startswith(empieza)})
+    # el carnet de manipulador, que la v1.1 no leía del directorio
+    _sv(xl, "'Plantilla'!N34", hoy + 5)
+    carnet = _ev(xl, "'Vencimientos'!G36")
+    pruebas.append({'caso': 'carnet de manipulador del empleado 30 a 5 días',
+                    'empieza_por': '🔴', 'obtenido': carnet,
+                    'ok': isinstance(carnet, str) and carnet.startswith('🔴')})
+    contadores = dict((r.split('!')[1], _ev(xl, r)) for r in salidas[2:])
+    pruebas.append({'caso': 'contador de alertas en ROJO de la cabecera',
+                    'empieza_por': '1 — al acabar la batería el contrato está '
+                                   'a 200 días (verde) y sólo queda el carnet '
+                                   'de manipulador a 5 días',
+                    'obtenido': contadores.get('E4'),
+                    'ok': contadores.get('E4') == 1})
+    return {'ref': '07-directorio-plantilla.xlsx:Vencimientos:C36/G36/E3:E5',
+            'fila_probada': 'Vencimientos!36 ← Plantilla!34 (empleado 30 de '
+                            '30; la v1.1 llegaba al 15)',
+            'recien_descargado': dict((k.split('!')[1], str(v))
+                                      for k, v in vacio.items()),
+            'pruebas': pruebas,
+            'contadores_finales': contadores,
+            'ok': all(x['ok'] for x in pruebas),
+            'nota': 'los dos umbrales (30 y 60 días) son celdas verdes B4 y '
+                    'B5, no literales dentro de las 120 fórmulas de alerta'}
+
+
+def _d07_menor_edad(carpeta):
+    """§4 · DOM-24 — la fecha de nacimiento entró para ESTO.
+
+    Sin ella nadie puede saber que a esa persona no se le puede poner un turno
+    de noche ni una hora extra (art. 6 ET).
+    """
+    p = os.path.join(carpeta, F07)
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    ref = "'Plantilla'!{}5".format(COL_AVISO)
+    vacio = _calentar(xl, [ref])[ref]
+    hoy = datetime.datetime.now()
+    pruebas = []
+    for etiqueta, anos, avisa in (('nacido hace 17 años', 17, True),
+                                  ('nacido hace 19 años', 19, False),
+                                  ('nacido hace 34 años', 34, False)):
+        _sv(xl, "'Plantilla'!C5",
+            _serie(hoy.year - anos, hoy.month, min(hoy.day, 28)))
+        v = _ev(xl, ref)
+        salta = isinstance(v, str) and v.startswith('⚠')
+        pruebas.append({'caso': etiqueta, 'esperaba_aviso': avisa,
+                        'obtenido': v, 'ok': salta == avisa})
+    return {'ref': '07-directorio-plantilla.xlsx:Plantilla:{}5'
+                   .format(COL_AVISO),
+            'sin_fecha_de_nacimiento': str(vacio),
+            'pruebas': pruebas, 'ok': all(x['ok'] for x in pruebas),
+            'nota': 'la columna «Aviso» es la única calculada del directorio; '
+                    'con la casilla vacía se queda EN BLANCO, no en 0'}
+
+
+def _d_bonus_fte(carpeta):
+    """§3 · DOM-10/DOM-18/DOM-23 — 7 FTE, ratio 31,3 % y las entradas VIVAS.
+
+    La v1.1 daba 19 empleados y 622.440 €/año para el mismo casual de 80
+    cubiertos —un ratio del 99,7 %—, «Días apertura/semana» no la leía ninguna
+    fórmula y el tipo de negocio caía en fast casual con cualquier valor
+    distinto de 1 o 2.
+    """
+    p = os.path.join(carpeta, FB2)
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    salidas = ["'Calculadora'!B24", "'Calculadora'!E26", "'Calculadora'!B27",
+               "'Calculadora'!B28", "'Calculadora'!B29", "'Calculadora'!B38",
+               "'Calculadora'!B39", "'Calculadora'!B40", "'Calculadora'!B41",
+               "'Calculadora'!B43", "'Calculadora'!B19", "'Calculadora'!C26"]
+    base = _calentar(xl, salidas)
+    fte0 = base["'Calculadora'!B29"]
+    ratio0 = base["'Calculadora'!B41"]
+    pruebas = [{'caso': 'valores por defecto (80 cubiertos, 2 servicios, '
+                        'casual, 6 días, 1.500 € en 14 pagas)',
+                'esperado': '7 FTE · 16.292,50 €/mes · 195.510 €/año · '
+                            '52.000 € de ventas · ratio 31,3 % · 🟢',
+                'obtenido': dict((k.split('!')[1], v)
+                                 for k, v in base.items()),
+                'ok': (fte0 == 7
+                       and abs(base["'Calculadora'!B38"] - 16292.50) < 0.01
+                       and abs(base["'Calculadora'!B39"] - 195510.0) < 0.01
+                       and abs(base["'Calculadora'!B40"] - 52000.0) < 0.01
+                       and abs(ratio0 - 0.3133) < 0.0001
+                       and isinstance(base["'Calculadora'!B43"], str)
+                       and 'EXCELENTE' in base["'Calculadora'!B43"])}]
+
+    # DOM-18: los días de apertura ENTRAN en el cálculo — la celda muerta
+    _sv(xl, "'Calculadora'!B7", 7)
+    fte7 = _ev(xl, "'Calculadora'!B29")
+    horas7 = _ev(xl, "'Calculadora'!B28")
+    pruebas.append({'caso': 'abrir 7 días en vez de 6 (celda B7, muerta en la '
+                            'v1.1)',
+                    'esperado': 'más horas semanales y más FTE',
+                    'obtenido': {'B28': horas7, 'B29': fte7},
+                    'ok': _num(fte7) and fte7 > fte0 and horas7 == 280})
+    _sv(xl, "'Calculadora'!B7", 4)
+    fte4 = _ev(xl, "'Calculadora'!B29")
+    pruebas.append({'caso': 'abrir 4 días', 'esperado': 'menos FTE que con 6',
+                    'obtenido': {'B29': fte4},
+                    'ok': _num(fte4) and fte4 < fte0})
+    _sv(xl, "'Calculadora'!B7", 6)
+
+    # DOM-23/TEC-16: los 10 tipos por VLOOKUP, y el 0 = puesto inexistente
+    _sv(xl, "'Calculadora'!B8", 'Dark Kitchen / Delivery')
+    dark = dict((c, _ev(xl, "'Calculadora'!{}".format(c)))
+                for c in ('B19', 'B20', 'B21', 'B26', 'C26', 'D26', 'E26',
+                          'B29', 'D41'))
+    pruebas.append({'caso': 'tipo de negocio = Dark Kitchen / Delivery',
+                    'esperado': 'sala y barra a 0 personas (no hay sala) y el '
+                                'objetivo del semáforo baja a 28 %',
+                    'obtenido': dark,
+                    'ok': (dark['C26'] == 0 and dark['D26'] == 0
+                           and dark['B26'] > 0
+                           and abs(dark['D41'] - 0.28) < 0.0001)})
+    _sv(xl, "'Calculadora'!B8", 'Fine Dining / Alta Cocina')
+    fine = dict((c, _ev(xl, "'Calculadora'!{}".format(c)))
+                for c in ('B19', 'E26', 'B29', 'B41', 'D41', 'B43'))
+    pruebas.append({'caso': 'tipo de negocio = Fine Dining / Alta Cocina',
+                    'esperado': 'más plantilla que un casual y objetivo 40 %',
+                    'obtenido': fine,
+                    'ok': (_num(fine['B29']) and fine['B29'] > fte0
+                           and abs(fine['D41'] - 0.40) < 0.0001)})
+    _sv(xl, "'Calculadora'!B8", 'Restaurante Casual')
+
+    # DOM-10: el contraste con las ventas, que es lo que impide volver a
+    # entregar un 99,7 % sin un solo aviso
+    _sv(xl, "'Calculadora'!B15", 12)
+    caro = dict((c, _ev(xl, "'Calculadora'!{}".format(c)))
+                for c in ('B40', 'B41', 'B43'))
+    pruebas.append({'caso': 'ticket medio de 12 € en vez de 25 €',
+                    'esperado': 'el ratio se dispara y el semáforo pide '
+                                'acción correctiva',
+                    'obtenido': caro,
+                    'ok': (_num(caro['B41']) and caro['B41'] > ratio0
+                           and isinstance(caro['B43'], str)
+                           and 'ACCIÓN CORRECTIVA' in caro['B43'])})
+    _sv(xl, "'Calculadora'!B15", 25)
+
+    # TEC-21: el ×14 escondido pasa a la celda de pagas
+    _sv(xl, "'Calculadora'!B10", 12)
+    doce = dict((c, _ev(xl, "'Calculadora'!{}".format(c)))
+                for c in ('B38', 'B39'))
+    pruebas.append({'caso': 'convenio que prorratea (12 pagas en vez de 14)',
+                    'esperado': 'el coste baja; en la v1.1 el 14 estaba '
+                                'escrito dentro de `=B28*14`',
+                    'obtenido': doce,
+                    'ok': (_num(doce['B38'])
+                           and doce['B38'] < base["'Calculadora'!B38"])})
+    _sv(xl, "'Calculadora'!B10", 14)
+    return {'ref': 'BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:'
+                   'B29 (FTE) y B41 (ratio)',
+            'pruebas': pruebas, 'ok': all(x['ok'] for x in pruebas),
+            'nota': 'el mismo modelo que `03!Previsión por Servicio`: '
+                    'cubiertos por SERVICIO → personal por servicio → '
+                    'presencias/día → horas/semana → FTE (`main.demo_fte` '
+                    'compara los dos)'}
+
+
+def _d_bonus_pico(carpeta):
+    """§3 · COM-13 — «picos de demanda» deja de ser una promesa de la landing.
+
+    En la v1.1 no había ninguna celda de día pico: la calculadora daba una sola
+    cifra para toda la semana.
+    """
+    p = os.path.join(carpeta, FB2)
+    if not os.path.isfile(p):
+        return None
+    xl = _xl(p)
+    salidas = ["'Calculadora'!B32", "'Calculadora'!E34", "'Calculadora'!B35",
+               "'Calculadora'!E26", "'Calculadora'!B29"]
+    base = _calentar(xl, salidas)
+    pruebas = [{'caso': 'día pico de 120 cubiertos contra 80 de un día normal',
+                'esperado': '60 por servicio, 7 personas por servicio y 2 de '
+                            'refuerzo',
+                'obtenido': dict((k.split('!')[1], v)
+                                 for k, v in base.items()),
+                'ok': (base["'Calculadora'!B32"] == 60
+                       and base["'Calculadora'!E34"] == 7
+                       and base["'Calculadora'!B35"] == 2)}]
+    _sv(xl, "'Calculadora'!B16", 80)
+    igual = _ev(xl, "'Calculadora'!B35")
+    pruebas.append({'caso': 'día pico igual que un día normal (80)',
+                    'esperado': '0 de refuerzo', 'obtenido': igual,
+                    'ok': igual == 0})
+    _sv(xl, "'Calculadora'!B16", 200)
+    fuerte = dict((c, _ev(xl, "'Calculadora'!{}".format(c)))
+                  for c in ('B32', 'E34', 'B35', 'B29'))
+    pruebas.append({'caso': 'día pico de 200 cubiertos',
+                    'esperado': 'más refuerzo, y el FTE NO cambia (es '
+                                'personal extra de ese día)',
+                    'obtenido': fuerte,
+                    'ok': (_num(fuerte['B35']) and fuerte['B35'] > 2
+                           and fuerte['B29'] == base["'Calculadora'!B29"])})
+    _sv(xl, "'Calculadora'!B16", 120)
+    return {'ref': 'BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:'
+                   'B32:B35',
+            'pruebas': pruebas, 'ok': all(x['ok'] for x in pruebas),
+            'nota': 'el refuerzo es personal de ESE día y por eso no se suma '
+                    'al FTE: es lo que la landing vende como «picos de '
+                    'demanda» (COM-13)'}
+
+
+def demos(carpeta, origen):
+    fuera = {}
+    for nombre, fn in (('grupo_c_06_ficha_y_na', _d06_ficha),
+                       ('grupo_c_06_tendencia_dos_ultimos', _d06_tendencia),
+                       ('grupo_c_07_vencimientos_30x4', _d07_vencimientos),
+                       ('grupo_c_07_aviso_menor_de_edad', _d07_menor_edad),
+                       ('grupo_c_bonus02_fte_y_ratio', _d_bonus_fte),
+                       ('grupo_c_bonus02_dia_pico', _d_bonus_pico)):
+        try:
+            r = fn(carpeta)
+        except Exception as e:                              # noqa: BLE001
+            r = {'ok': False, 'error': '{}: {}'.format(type(e).__name__, e)}
+        if r is not None:
+            fuera[nombre] = r
+    return fuera

@@ -1,0 +1,595 @@
+{
+ "producto": "kit-gestion-personal",
+ "version": "2.0",
+ "rol": "grupo_c",
+ "fecha": "2026-08-24T02:54:04",
+ "spec": "scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md §4 (06 y 07) + §3 (BONUS-02) + §7-bis.5/§7-bis.6",
+ "modulo": "scripts/productos-digitales/kit-gestion-personal-v2_0/grupo_c.py",
+ "ficheros": [
+  "06-evaluacion-desempeno.xlsx",
+  "07-directorio-plantilla.xlsx",
+  "BONUS-02-calculadora-plantilla-optima.xlsx"
+ ],
+ "contrato_con_main": [
+  "FICHEROS",
+  "pre(wb, fname, cambios)",
+  "demos(carpeta, origen)"
+ ],
+ "produccion_intacta": true,
+ "comando_de_prueba": "CLAUDE_SCRATCHPAD=<scratch>/propio-grupo_c python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --solo motor,grupo_c --json <scratch>/kit-gp-v2/grupo_c.json",
+ "resultado": {
+  "exit": 0,
+  "pasada": "parcial declarada (--solo motor,grupo_c)",
+  "fallos": [],
+  "idempotencia_diferencias": 0,
+  "censo_entregables_exit": 0,
+  "data_only": {
+   "con_valor": 32,
+   "vacias_verificadas_con_pycel": 364,
+   "sin_pycel": 0,
+   "no_evaluables_por_pycel": 0
+  },
+  "valores_cacheados_con_error": 0,
+  "pestanas_citadas_inexistentes": 0,
+  "citas_legales_obsoletas_en_mis_ficheros": [],
+  "caracteres_no_latinos": 0,
+  "pendientes_de_grupo_en_mis_ficheros": {
+   "06-evaluacion-desempeno.xlsx": [],
+   "07-directorio-plantilla.xlsx": [],
+   "BONUS-02-calculadora-plantilla-optima.xlsx": []
+  },
+  "formulas_nuevas": {
+   "06-evaluacion-desempeno.xlsx": 66,
+   "07-directorio-plantilla.xlsx": 304,
+   "BONUS-02-calculadora-plantilla-optima.xlsx": 26
+  },
+  "contadores": {
+   "06-evaluacion-desempeno.xlsx": {
+    "hojas": 4,
+    "formulas": 66,
+    "verdes": 216,
+    "verdes_con_dato": 18,
+    "dv": 2,
+    "cf": 10,
+    "protegidas": 3,
+    "celdas": 263
+   },
+   "07-directorio-plantilla.xlsx": {
+    "hojas": 3,
+    "formulas": 304,
+    "verdes": 632,
+    "verdes_con_dato": 2,
+    "dv": 4,
+    "cf": 28,
+    "protegidas": 2,
+    "celdas": 381
+   },
+   "BONUS-02-calculadora-plantilla-optima.xlsx": {
+    "hojas": 3,
+    "formulas": 26,
+    "verdes": 63,
+    "verdes_con_dato": 62,
+    "dv": 11,
+    "cf": 6,
+    "protegidas": 2,
+    "celdas": 235
+   }
+  }
+ },
+ "cruce_con_grupo_b": {
+  "comando": "main.py --dry-run --solo motor,grupo_b,grupo_c",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "demo_fte_03_vs_bonus02": {
+   "esperado_fte": 7,
+   "03_previsión": {
+    "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B21",
+    "rotulo": "Plantilla necesaria (FTE):",
+    "valor": 7.0
+   },
+   "BONUS-02_calculadora": {
+    "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B29",
+    "rotulo": "Plantilla necesaria (FTE):",
+    "valor": 7.0
+   },
+   "coinciden": true,
+   "ok": true,
+   "pendiente_de_grupo": false,
+   "nota": "un solo modelo de dimensionamiento: cubiertos por SERVICIO → personal por servicio → presencias/día → horas semanales → FTE (§3, grupo_b)"
+  },
+  "nota": "gate de §5: el 03 y el BONUS-02 tienen que devolver los MISMOS 7 FTE con los datos por defecto. Con los dos grupos cargados: OK (03!Previsión por Servicio!B21 = 7 y BONUS-02!Calculadora!B29 = 7). En la pasada de sólo grupo_c el 03 sigue en la v1.1 (15 personas por turno) y el gate queda «pendiente de grupo», que es lo correcto."
+ },
+ "cobertura_spec": {
+  "DOM-02": {
+   "fichero": "06",
+   "donde": "Ficha Evaluación!C22 y C23",
+   "que": "la media lleva IF(COUNT(...)=0,\"\",...) y el nivel se calla sin media; el fichero LIVE entregaba '#DIV/0!' CACHEADO en las dos",
+   "verificado": "demo grupo_c_06_ficha_y_na (C22='' y C23='' con la ficha en blanco) + gate valores_cacheados_con_error = 0"
+  },
+  "TEC-03": {
+   "fichero": "06",
+   "donde": "Ficha Evaluación!C22:C23",
+   "que": "mismo defecto desde la lente técnica; la guarda es la de Histórico!F5, que ya la tenía",
+   "verificado": "main.demo_ficha_vacia = OK"
+  },
+  "COM-04": {
+   "fichero": "06",
+   "donde": "Ficha Evaluación!C22:C23",
+   "que": "el documento que se firma abre sin errores de Excel",
+   "verificado": "gate §1.5 (ningún cacheado empieza por '#')"
+  },
+  "DOM-30": {
+   "fichero": "06",
+   "donde": "Ficha Evaluación!C12:C21 (DV) y C24",
+   "que": "la DV pasa de 'whole 1..5' a lista 1,2,3,4,5,N/A y entra la fila «Competencias valoradas» =COUNT(...)&\" de 10\"",
+   "verificado": "demo: 9 notas + una N/A → media 4,22 (38/9) y «9 de 10»; con la ficha vacía «0 de 10»"
+  },
+  "TEC-24": {
+   "fichero": "06",
+   "donde": "Ficha Evaluación!B27:D29, B32:D34, B37:D39",
+   "que": "wrap_text y alto de fila 30 en las nueve celdas combinadas de texto libre",
+   "verificado": "row_dimensions 27-29/32-34/37-39 = 30 y alignment.wrap_text=True en el dump del fichero generado"
+  },
+  "COM-21": {
+   "fichero": "06",
+   "donde": "Ficha Evaluación!A41:D45",
+   "que": "bloque PLAN DE DESARROLLO INDIVIDUAL (acción formativa · fecha objetivo · responsable e indicador de logro), 3 filas",
+   "verificado": "presente y relleno en la hoja de ejemplo (B43/C43/D43)"
+  },
+  "TEC-27": {
+   "fichero": "06",
+   "donde": "Histórico!G5:G34",
+   "que": "la tendencia compara los DOS últimos trimestres informados con INDEX sobre COUNT",
+   "verificado": "demo grupo_c_06_tendencia_dos_ultimos: Q1+Q2 → '↑ Mejora' (la v1.1 seguía en blanco), +Q3 → '↓ Baja', +Q4 igual → '→ Estable'"
+  },
+  "COM-26": {
+   "fichero": "06",
+   "donde": "hoja nueva «Ficha (ejemplo relleno)» + Instrucciones",
+   "que": "§7-bis.5: una ficha en blanco + una hoja de ejemplo + la instrucción de duplicar y de volcar la media al Histórico",
+   "verificado": "hoja creada con C22=4,22 · C23='✓ BUENO' · C24='9 de 10' cacheados; gate de pestañas citadas = 0"
+  },
+  "DOM-32": {
+   "fichero": "06",
+   "donde": "Histórico!5:34",
+   "que": "de 15 a 30 empleados, los mismos que el 07 y el 01",
+   "verificado": "bloque 5..34 con fórmula en F y G en las 30 filas"
+  },
+  "DOM-13": {
+   "fichero": "07",
+   "donde": "Plantilla (cabecera) e Instrucciones",
+   "que": "la columna de alergias/intolerancias del trabajador SE ELIMINA (art. 9 RGPD) y no se sustituye por nada",
+   "verificado": "cabecera A4:V4 sin ella; gate citas_legales_obsoletas no marca el 07"
+  },
+  "COM-25": {
+   "fichero": "07",
+   "donde": "Instrucciones (sección RGPD)",
+   "que": "base jurídica (art. 6.1.b y 6.1.c), minimización (art. 5.1.c), plazos (4 años: art. 34.9 ET y art. 21 LISOS), contacto de emergencia como dato de tercero, derechos arts. 15-22 y el CÓMO cifrar (Archivo → Información → Proteger libro → Cifrar)",
+   "verificado": "texto en el fichero generado; se distingue explícitamente cifrar el LIBRO de proteger la HOJA"
+  },
+  "DOM-24": {
+   "fichero": "07",
+   "donde": "Plantilla!A4:V4",
+   "que": "entran NAF, fecha de nacimiento, grupo profesional y fin del periodo de prueba",
+   "verificado": "cabecera del fichero generado"
+  },
+  "TEC-19": {
+   "fichero": "07",
+   "donde": "Plantilla!I/N/O",
+   "que": "entran «Convenio Aplicable», «Caducidad Carnet Manipulador» y «Caducidad PRL», que la landing enumeraba y no existían",
+   "verificado": "cabecera + demo grupo_c_07_vencimientos_30x4 (el carnet se lee del directorio, ya no se teclea dos veces)"
+  },
+  "COM-16": {
+   "fichero": "07",
+   "donde": "Plantilla + Vencimientos",
+   "que": "convenio y carnets como columnas del directorio, y los vencimientos leyendo de ahí",
+   "verificado": "Vencimientos!F/H = Plantilla!N/O"
+  },
+  "DOM-14": {
+   "fichero": "07",
+   "donde": "Vencimientos!A7:I36",
+   "que": "30 empleados (Plantilla filas 5-34), no 15",
+   "verificado": "demo sobre el EMPLEADO 30 (Vencimientos!36 ← Plantilla!34): '❌ VENCIDO hace 10 d' / '🔴 15 d' / '🟡 45 d' / '🟢 OK'"
+  },
+  "TEC-07": {
+   "fichero": "07",
+   "donde": "Vencimientos",
+   "que": "cuatro vencimientos por empleado con alerta por pares y contador de alertas en cabecera",
+   "verificado": "CF real en C7:C36, E7:E36, G7:G36 e I7:I36 (7 reglas cada uno); contadores E3/E4/E5 = 0 recién descargado y E4 = 1 con un carnet a 5 días"
+  },
+  "DOM-10": {
+   "fichero": "BONUS-02",
+   "donde": "Calculadora!B29 y B38:B43",
+   "que": "resultado por defecto creíble: 7 FTE · 16.292,50 €/mes · 195.510 €/año · 52.000 € de ventas · ratio 31,3 % · 🟢, contra los 19 empleados y el 99,7 % de la v1.1",
+   "verificado": "demo grupo_c_bonus02_fte_y_ratio + main.demo_fte con grupo_b cargado (03 y BONUS-02 devuelven los mismos 7)"
+  },
+  "DOM-18": {
+   "fichero": "BONUS-02",
+   "donde": "Calculadora!B7 → B28",
+   "que": "«Días de apertura / semana» entra en el cálculo por las horas semanales",
+   "verificado": "demo: 6 días → 240 h y 7 FTE · 7 días → 280 h y 9 FTE · 4 días → 5 FTE"
+  },
+  "DOM-23": {
+   "fichero": "BONUS-02",
+   "donde": "Calculadora!B8 + Ratios por Tipo!E:G",
+   "que": "DV de lista con los 10 tipos y VLOOKUP sobre la tabla, con 0 = puesto inexistente",
+   "verificado": "demo: Dark Kitchen → sala 0 y barra 0 personas; Fine Dining → 13 FTE y objetivo 40 %"
+  },
+  "TEC-16": {
+   "fichero": "BONUS-02",
+   "donde": "Calculadora!B8/B19:B21",
+   "que": "se cierra el cajón de sastre de '=IF(B8=1,20,IF(B8=2,8,30))'",
+   "verificado": "la DV con showErrorMessage=True impide el valor libre; el VLOOKUP es exacto (FALSE) con IFERROR a 0"
+  },
+  "TEC-21": {
+   "fichero": "BONUS-02",
+   "donde": "Calculadora!B10 y B39",
+   "que": "el ×14 escondido pasa a la celda «Nº de pagas / año» (DV 12/14/15) y el anual son 12 meses del mensual",
+   "verificado": "demo: con 12 pagas el coste baja de 16.292,50 a 13.965,00 €/mes"
+  },
+  "COM-13": {
+   "fichero": "BONUS-02",
+   "donde": "Calculadora!B16 y B32:B35",
+   "que": "el día pico produce el refuerzo por servicio, que es lo que la landing vende como «picos de demanda»",
+   "verificado": "demo grupo_c_bonus02_dia_pico: pico 120 → 60/servicio, 7 personas y 2 de refuerzo; pico = normal → 0; pico 200 → 6 de refuerzo y el FTE NO cambia"
+  }
+ },
+ "demostraciones_pycel": {
+  "grupo_c_06_ficha_y_na": {
+   "ref": "06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22/C23/C24",
+   "formula_media": "=IF(COUNT($C$12:$C$21)=0,\"\",ROUND(AVERAGE($C$12:$C$21),2))",
+   "ficha_en_blanco": {
+    "C22": "",
+    "C23": "",
+    "C24": "0 de 10"
+   },
+   "nueve_notas_y_una_NA": {
+    "C22": "4.22",
+    "C23": "✓ BUENO",
+    "C24": "9 de 10"
+   },
+   "media_al_subir_C20_de_3_a_5": 4.44,
+   "hoja_de_ejemplo": {
+    "C22": "4.22",
+    "C23": "✓ BUENO",
+    "C24": "9 de 10"
+   },
+   "ok": true,
+   "nota": "con 9 competencias puntuadas y una N/A la media son 38/9 = 4,22 (no 38/10 = 3,80): el N/A no penaliza, y el contador dice sobre cuántas se ha calculado"
+  },
+  "grupo_c_06_tendencia_dos_ultimos": {
+   "ref": "06-evaluacion-desempeno.xlsx:Histórico:G5",
+   "pruebas": [
+    {
+     "caso": "sólo Q1 = 3,0 (un dato: no hay con qué comparar)",
+     "esperado": "",
+     "obtenido": "",
+     "media_anual": 3.0,
+     "ok": true
+    },
+    {
+     "caso": "Q1 = 3,0 y Q2 = 4,0 (la v1.1 seguía en blanco)",
+     "esperado": "↑ Mejora",
+     "obtenido": "↑ Mejora",
+     "media_anual": 3.5,
+     "ok": true
+    },
+    {
+     "caso": "Q1, Q2 y Q3 = 2,0",
+     "esperado": "↓ Baja",
+     "obtenido": "↓ Baja",
+     "media_anual": 3.0,
+     "ok": true
+    },
+    {
+     "caso": "Q1, Q2, Q3 y Q4 = 2,0",
+     "esperado": "→ Estable",
+     "obtenido": "→ Estable",
+     "media_anual": 2.75,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "la comparación es INDEX sobre COUNT: el último trimestre informado contra el anterior, sin `LOOKUP(9^9;…)`"
+  },
+  "grupo_c_07_vencimientos_30x4": {
+   "ref": "07-directorio-plantilla.xlsx:Vencimientos:C36/G36/E3:E5",
+   "fila_probada": "Vencimientos!36 ← Plantilla!34 (empleado 30 de 30; la v1.1 llegaba al 15)",
+   "recien_descargado": {
+    "C36": "",
+    "G36": "",
+    "E3": "0.0",
+    "E4": "0.0",
+    "E5": "0.0"
+   },
+   "pruebas": [
+    {
+     "caso": "contrato del empleado 30 vencido hace 10 días",
+     "empieza_por": "❌",
+     "obtenido": "❌ VENCIDO hace 10 d",
+     "ok": true
+    },
+    {
+     "caso": "contrato del empleado 30 a 15 días (umbral rojo = 30)",
+     "empieza_por": "🔴",
+     "obtenido": "🔴 15 d",
+     "ok": true
+    },
+    {
+     "caso": "contrato del empleado 30 a 45 días (umbral ámbar = 60)",
+     "empieza_por": "🟡",
+     "obtenido": "🟡 45 d",
+     "ok": true
+    },
+    {
+     "caso": "contrato del empleado 30 a 200 días",
+     "empieza_por": "🟢",
+     "obtenido": "🟢 OK",
+     "ok": true
+    },
+    {
+     "caso": "carnet de manipulador del empleado 30 a 5 días",
+     "empieza_por": "🔴",
+     "obtenido": "🔴 5 d",
+     "ok": true
+    },
+    {
+     "caso": "contador de alertas en ROJO de la cabecera",
+     "empieza_por": "1 — al acabar la batería el contrato está a 200 días (verde) y sólo queda el carnet de manipulador a 5 días",
+     "obtenido": 1,
+     "ok": true
+    }
+   ],
+   "contadores_finales": {
+    "E3": 0,
+    "E4": 1,
+    "E5": 0
+   },
+   "ok": true,
+   "nota": "los dos umbrales (30 y 60 días) son celdas verdes B4 y B5, no literales dentro de las 120 fórmulas de alerta"
+  },
+  "grupo_c_07_aviso_menor_de_edad": {
+   "ref": "07-directorio-plantilla.xlsx:Plantilla:V5",
+   "sin_fecha_de_nacimiento": "",
+   "pruebas": [
+    {
+     "caso": "nacido hace 17 años",
+     "esperaba_aviso": true,
+     "obtenido": "⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)",
+     "ok": true
+    },
+    {
+     "caso": "nacido hace 19 años",
+     "esperaba_aviso": false,
+     "obtenido": "",
+     "ok": true
+    },
+    {
+     "caso": "nacido hace 34 años",
+     "esperaba_aviso": false,
+     "obtenido": "",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "la columna «Aviso» es la única calculada del directorio; con la casilla vacía se queda EN BLANCO, no en 0"
+  },
+  "grupo_c_bonus02_fte_y_ratio": {
+   "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B29 (FTE) y B41 (ratio)",
+   "pruebas": [
+    {
+     "caso": "valores por defecto (80 cubiertos, 2 servicios, casual, 6 días, 1.500 € en 14 pagas)",
+     "esperado": "7 FTE · 16.292,50 €/mes · 195.510 €/año · 52.000 € de ventas · ratio 31,3 % · 🟢",
+     "obtenido": {
+      "B24": 40.0,
+      "E26": 5.0,
+      "B27": 10.0,
+      "B28": 240.0,
+      "B29": 7.0,
+      "B38": 16292.5,
+      "B39": 195510.0,
+      "B40": 52000.0,
+      "B41": 0.3133,
+      "B43": "🟢 EXCELENTE (por debajo de tu objetivo)",
+      "B19": 25.0,
+      "C26": 2.0
+     },
+     "ok": true
+    },
+    {
+     "caso": "abrir 7 días en vez de 6 (celda B7, muerta en la v1.1)",
+     "esperado": "más horas semanales y más FTE",
+     "obtenido": {
+      "B28": 280,
+      "B29": 9
+     },
+     "ok": true
+    },
+    {
+     "caso": "abrir 4 días",
+     "esperado": "menos FTE que con 6",
+     "obtenido": {
+      "B29": 5
+     },
+     "ok": true
+    },
+    {
+     "caso": "tipo de negocio = Dark Kitchen / Delivery",
+     "esperado": "sala y barra a 0 personas (no hay sala) y el objetivo del semáforo baja a 28 %",
+     "obtenido": {
+      "B19": 40,
+      "B20": 0,
+      "B21": 0,
+      "B26": 1,
+      "C26": 0,
+      "D26": 0,
+      "E26": 1,
+      "B29": 2,
+      "D41": 0.28
+     },
+     "ok": true
+    },
+    {
+     "caso": "tipo de negocio = Fine Dining / Alta Cocina",
+     "esperado": "más plantilla que un casual y objetivo 40 %",
+     "obtenido": {
+      "B19": 12,
+      "E26": 9,
+      "B29": 13,
+      "B41": 0.5819,
+      "D41": 0.4,
+      "B43": "🔴 ACCIÓN CORRECTIVA"
+     },
+     "ok": true
+    },
+    {
+     "caso": "ticket medio de 12 € en vez de 25 €",
+     "esperado": "el ratio se dispara y el semáforo pide acción correctiva",
+     "obtenido": {
+      "B40": 24960.0,
+      "B41": 0.6527,
+      "B43": "🔴 ACCIÓN CORRECTIVA"
+     },
+     "ok": true
+    },
+    {
+     "caso": "convenio que prorratea (12 pagas en vez de 14)",
+     "esperado": "el coste baja; en la v1.1 el 14 estaba escrito dentro de `=B28*14`",
+     "obtenido": {
+      "B38": 13965.0,
+      "B39": 167580.0
+     },
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "el mismo modelo que `03!Previsión por Servicio`: cubiertos por SERVICIO → personal por servicio → presencias/día → horas/semana → FTE (`main.demo_fte` compara los dos)"
+  },
+  "grupo_c_bonus02_dia_pico": {
+   "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B32:B35",
+   "pruebas": [
+    {
+     "caso": "día pico de 120 cubiertos contra 80 de un día normal",
+     "esperado": "60 por servicio, 7 personas por servicio y 2 de refuerzo",
+     "obtenido": {
+      "B32": 60.0,
+      "E34": 7.0,
+      "B35": 2.0,
+      "E26": 5.0,
+      "B29": 7.0
+     },
+     "ok": true
+    },
+    {
+     "caso": "día pico igual que un día normal (80)",
+     "esperado": "0 de refuerzo",
+     "obtenido": 0,
+     "ok": true
+    },
+    {
+     "caso": "día pico de 200 cubiertos",
+     "esperado": "más refuerzo, y el FTE NO cambia (es personal extra de ese día)",
+     "obtenido": {
+      "B32": 100.0,
+      "E34": 11,
+      "B35": 6,
+      "B29": 7.0
+     },
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "nota": "el refuerzo es personal de ESE día y por eso no se suma al FTE: es lo que la landing vende como «picos de demanda» (COM-13)"
+  }
+ },
+ "cambios_por_fichero": {
+  "06-evaluacion-desempeno.xlsx": [
+   "06:Ficha Evaluación!C22/C23/C24: media con guarda de rango vacío, nivel que se calla sin media y contador de competencias valoradas — la v1.1 entregaba «#DIV/0!» CACHEADO en las dos celdas de un documento que se firma (DOM-02/TEC-03/COM-04)",
+   "06:Ficha Evaluación!C12:C21: la escala pasa de decimal 1-5 a lista 1,2,3,4,5,N/A — a un cocinero de partida no se le puntúa «Atención al cliente» y la media sale sólo de lo valorado (DOM-30)",
+   "06:Ficha Evaluación!B27:D29/B32:D34/B37:D39: wrap_text y alto de fila en las nueve celdas combinadas de texto libre — sin ellos el comentario se corta al imprimir la ficha que se firma (TEC-24)",
+   "06:Ficha Evaluación!A41:D45: bloque PLAN DE DESARROLLO INDIVIDUAL (acción · fecha objetivo · responsable e indicador), que la landing prometía y no existía (COM-21)",
+   "06:Ficha (ejemplo relleno): hoja nueva — la misma ficha con un caso real terminado (9 competencias puntuadas y una N/A), que es la respuesta a «¿una ficha o varias?» de §7.5 (COM-26)",
+   "06:Histórico!G5:G34: la tendencia compara los DOS últimos trimestres informados (antes sólo Q4 contra Q3, en blanco nueve meses al año) y la hoja pasa de 15 a 30 empleados (TEC-27/COM-21/DOM-32)",
+   "06:Instrucciones: escala con N/A, cómo duplicar la ficha, cómo volcar la media al histórico y qué es el plan de desarrollo (COM-26/COM-21/DOM-30)",
+   "06-evaluacion-desempeno.xlsx: 40 celdas reformateadas (§1.6)",
+   "06-evaluacion-desempeno.xlsx: 170 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+   "06-evaluacion-desempeno.xlsx:Ficha Evaluación!C23:C23: 5 regla(s) de formato condicional",
+   "Instrucciones!B34:B36: nota de desprotección + bio anclada + versión 2.0",
+   "06-evaluacion-desempeno.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+   "Ficha Evaluación: protegida sin contraseña (43 celdas verdes editables)",
+   "Ficha (ejemplo relleno): protegida sin contraseña (23 celdas verdes editables)",
+   "Histórico: protegida sin contraseña (150 celdas verdes editables)"
+  ],
+  "07-directorio-plantilla.xlsx": [
+   "07:Plantilla!A4:V4: 22 columnas — entran NAF, fecha de nacimiento, convenio aplicable, grupo profesional, fin de periodo de prueba, caducidad del carnet de manipulador y caducidad de PRL, y SALE «Alérgenos Propios» (art. 9 RGPD) (DOM-13/DOM-24/TEC-19/COM-16)",
+   "07:Plantilla!V5:V34: columna calculada «Aviso» con la alerta de minoría de edad (art. 6 ET), que es para lo que entra la fecha de nacimiento (DOM-24)",
+   "07:Vencimientos!A7:I36: 30 empleados × 4 vencimientos (contrato, periodo de prueba, carnet de manipulador y PRL), leídos del directorio — la v1.1 miraba a 15 de 30 y sólo al contrato, y los carnets se tecleaban dos veces (DOM-14/TEC-07/COM-16)",
+   "07:Vencimientos!B4/B5/E3:E5: los dos umbrales del semáforo en celda verde y contador de alertas por gravedad — antes los 30/60/90 días estaban escritos dentro de las 30 fórmulas (§1.4)",
+   "07:Instrucciones!B14+: sección de protección de datos reescrita — base jurídica (art. 6.1.b y 6.1.c), minimización, plazos (4 años, art. 34.9 ET y art. 21 LISOS), contacto de emergencia como dato de tercero, derechos de los arts. 15-22 y el CÓMO cifrar el libro (COM-25/DOM-13)",
+   "07-directorio-plantilla.xlsx: 270 celdas reformateadas (§1.6)",
+   "07-directorio-plantilla.xlsx: 630 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+   "07-directorio-plantilla.xlsx:Plantilla!D5:D34: DV inline (5 valores) — 2 DV heredadas retiradas del rango",
+   "07-directorio-plantilla.xlsx:Plantilla!G5:G34: DV inline (2 valores)",
+   "07-directorio-plantilla.xlsx:Vencimientos!C7:C36: 7 regla(s) de formato condicional",
+   "07-directorio-plantilla.xlsx:Vencimientos!E7:E36: 7 regla(s) de formato condicional",
+   "07-directorio-plantilla.xlsx:Vencimientos!G7:G36: 7 regla(s) de formato condicional",
+   "07-directorio-plantilla.xlsx:Vencimientos!I7:I36: 7 regla(s) de formato condicional",
+   "Instrucciones!B29:B31: nota de desprotección + bio anclada + versión 2.0",
+   "07-directorio-plantilla.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+   "Plantilla: protegida sin contraseña (630 celdas verdes editables)",
+   "Vencimientos: protegida sin contraseña (2 celdas verdes editables)"
+  ],
+  "BONUS-02-calculadora-plantilla-optima.xlsx": [
+   "BONUS-02:Ratios por Tipo!E4:J4: tres columnas numéricas de cubiertos por empleado y SERVICIO + objetivo y máximo aceptable del ratio de coste laboral, que es lo que lee el VLOOKUP de la calculadora (DOM-23/TEC-16/DOM-10)",
+   "BONUS-02:Calculadora!B24:B29: un solo modelo de dimensionamiento (cubiertos por SERVICIO → 5 personas por servicio → 10 presencias → 240 h/semana → 7 FTE), el mismo que el 03 — la v1.1 daba 19 empleados y un ratio del 99,7 % (DOM-10/COM-09)",
+   "BONUS-02:Calculadora!B7/B28: «Días de apertura / semana» entra por fin en el cálculo, a través de las horas semanales — era una celda muerta que ninguna de las 16 fórmulas leía (DOM-18/COM-13)",
+   "BONUS-02:Calculadora!B8/B19:B21: el tipo de negocio pasa a DV de lista con los 10 nombres de la tabla y VLOOKUP, con 0 = puesto inexistente — antes eran tres IF anidados con cajón de sastre a fast casual (DOM-23/TEC-16)",
+   "BONUS-02:Calculadora!B10/B39: el ×14 escondido pasa a la celda de pagas y el coste anual son doce meses del coste mensual, que ya las lleva dentro (TEC-21)",
+   "BONUS-02:Calculadora!B32:B35: refuerzo del día PICO (personal del día pico − personal del día normal), que es lo que la landing vende como «picos de demanda» y no existía (COM-13)",
+   "BONUS-02:Calculadora!B40:B42: ventas estimadas, ratio de coste laboral y semáforo contra el objetivo de la tabla — el contraste que impide volver a entregar un resultado del 99,7 % sin un solo aviso (DOM-10)",
+   "BONUS-02:Instrucciones: la cadena de cálculo explicada, el porqué del ticket medio, el día pico y el aviso de que esto no es la nómina (COM-13/TEC-21)",
+   "BONUS-02-calculadora-plantilla-optima.xlsx: 90 celdas reformateadas (§1.6)",
+   "Instrucciones!B25:B27: nota de desprotección + bio anclada + versión 2.0",
+   "BONUS-02-calculadora-plantilla-optima.xlsx: 2 propiedades OOXML actualizadas (subject → v2.0)",
+   "Calculadora: protegida sin contraseña (13 celdas verdes editables)",
+   "Ratios por Tipo: protegida sin contraseña (50 celdas verdes editables)"
+  ]
+ },
+ "desviaciones_respecto_a_la_spec": [
+  {
+   "que": "07!Plantilla tiene 22 columnas (A4:V4), no las 21 (A4:U4) que dice la SPEC §4",
+   "por_que": "las dos afirmaciones de la SPEC no caben a la vez: las 15 columnas de la v1.1 menos «Alérgenos Propios» son 14, más las 7 nuevas que la propia SPEC enumera (NAF, fecha de nacimiento, convenio aplicable, grupo profesional, fin de periodo de prueba, caducidad de manipulador y caducidad de PRL) son ya 21 — así que la columna calculada «Aviso» que la SPEC pide «además» es la 22.ª.",
+   "decision": "se mantiene la SUSTANCIA (ninguna columna de la v1.1 se pierde salvo la de salud, entran las siete nuevas y el Aviso es calculado) y la hoja llega a V. `fitToWidth=2` y `print_title_cols='$A:$A'` ya estaban previstos por el motor, así que la impresión en dos páginas A4 (§7.6) no cambia.",
+   "cita": "kit-gestion-personal-v2-SPEC.md §4 (bloque 07) · grupo_c.py:COLS_07"
+  },
+  {
+   "que": "«Ratios por Tipo» del BONUS-02 gana CINCO columnas nuevas (E, F, G numéricas de ratios + I, J de umbrales del semáforo), no tres",
+   "por_que": "las tres numéricas son las que pide la SPEC §3; las dos de porcentaje las exige el contraste con las ventas de DOM-10 («mostrar el ratio de coste laboral resultante junto al objetivo de la tabla, con aviso si se desvía»), que sin umbral numérico no se puede construir sin meter literales en la fórmula.",
+   "decision": "los seis tipos que también están en el 03 llevan EXACTAMENTE los umbrales de `grupo_b.TIPOS_NEGOCIO` (casual 0,33/0,35 · fine dining 0,40/0,42 · fast casual 0,28/0,30 · catering 0,35/0,38 · cafetería 0,32/0,35 · bar 0,30/0,33), para que los dos ficheros no puedan dar veredictos distintos sobre el mismo ratio.",
+   "cita": "grupo_c.py:TIPOS_BONUS · grupo_b.py:TIPOS_NEGOCIO"
+  },
+  {
+   "que": "los rangos de texto de «Ratios por Tipo» (columnas B, C, D) se reescriben",
+   "por_que": "en la v1.1 eran cubiertos por empleado y DÍA (casual 18-22 por cocinero); el modelo v2.0 dimensiona por SERVICIO. Dejar los rangos viejos al lado de los números nuevos habría puesto dos cifras contradictorias del mismo concepto en la misma fila.",
+   "decision": "los rangos pasan a ser por servicio y los números caen dentro de su rango.",
+   "cita": "grupo_c.py:TIPOS_BONUS"
+  },
+  {
+   "que": "las hojas «Instrucciones» de los tres ficheros quedan SIN proteger",
+   "por_que": "`motor.proteger()` no protege una hoja sin celdas verdes a propósito («dejarla bloqueada entera es peor que dejarla abierta»), y `motor.PROTEGER_SIN_VERDE` está vacío. Es el mismo comportamiento en los 9 ficheros del kit.",
+   "decision": "no se fuerza desde el grupo: si se quiere cambiar, es una línea del motor.",
+   "cita": "motor.py:proteger · motor.py:PROTEGER_SIN_VERDE"
+  }
+ ],
+ "dudas_para_el_orquestador": [
+  "¿Se acepta que 07!Plantilla llegue a la columna V (22 columnas) en vez de a la U? La aritmética de la SPEC §4 no cierra en 21 sin sacrificar una columna de la v1.1 o el «Aviso» calculado. Recomiendo V.",
+  "Los umbrales del semáforo de coste laboral para los CUATRO tipos que sólo existen en el BONUS-02 (pizzería 0,30/0,32 · dark kitchen 0,28/0,30 · hotel 0,42/0,44 · heladería 0,30/0,32) se han derivado del rango de texto que la propia hoja ya imprimía (el objetivo es su extremo superior) más 2 puntos de margen. Los seis compartidos con el 03 son idénticos a los suyos. ¿Se validan los cuatro derivados o se prefiere dejarlos sin umbral?",
+  "El testimonio de Enrique Vidal («2 personas más el viernes y el sábado») que §7.1 daba por falso pasa a ser CIERTO con el bloque de día pico: con los valores por defecto el refuerzo son exactamente 2 personas por servicio (Calculadora!B35). ¿Lo recoge el integrador en §7-bis.1, que hoy manda reescribirlo?",
+  "Sigue sin haber puente entre 06!Ficha Evaluación!C22 y 06!Histórico: se resuelve con instrucciones (duplicar la hoja y copiar la media), no con fórmula, porque enlazar 30×4 fichas duplicadas exigiría nombres de hoja fijos. Es la opción de §7.5; se confirma que no se quiere el enlace.",
+  "07!Plantilla!G «Jornada» hereda formato numérico 0,00 de `motor.FORMATO_POR_CABECERA` (la clave 'jornada' apunta a FMT_DEC2) sobre una columna que contiene «Completa»/«Parcial». No afecta a la vista (el texto se muestra como texto) y no se ha tocado el motor. Si molesta, la solución está en motor.py, no aquí."
+ ],
+ "pendiente": [
+  "La integración (§5) es de otro rol: `astro-site/src/data/productos/kits/kit-gestion-personal.ts` y los gemelos de la SPA siguen prometiendo «alérgenos propios» no, pero sí «convenio» y «carnets» (ContentGrid.tsx:14) — que AHORA son ciertos— y «picos de demanda» (grid.templates[8]), que también lo es ya. No se ha tocado nada fuera de `kit-gestion-personal-v2_0/`.",
+  "Ejecución real: sólo con KIT_GESTION_PERSONAL_APPLY=1 y tras la ronda 2. Este rol nunca la ha corrido.",
+  "Los tres ficheros de grupo_a (01, 02, BONUS-01) siguen con sus citas legales obsoletas vivas (11 h de descanso, ×1,75/×2,0 como «legislación española»): no son de este grupo."
+ ]
+}
