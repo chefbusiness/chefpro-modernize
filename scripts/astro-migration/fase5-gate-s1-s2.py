@@ -10,7 +10,8 @@ Para cada uno de los 44 productos del registro (astro-site/src/lib/zona-app.ts):
             SPA (derivación INDEPENDIENTE del generador) · noindex · island ·
             patch · chunk 200
 
-Extra: robots.txt con los Disallow en los 5 grupos · sitemap sin -access/-library ·
+Extra: robots.txt con los Disallow anclados en los 5 grupos (la semántica la
+verifica robots-gate.py) · sitemap sin URLs de zona app ·
 anti-regresión (home, landing Fase 4, spoke Fase 2).
 
 Uso: python3 scripts/astro-migration/fase5-gate-s1-s2.py [BASE_URL]
@@ -119,20 +120,32 @@ def main():
     print('-- robots.txt')
     st, robots = fetch('/robots.txt')
     check(st == 200, f'/robots.txt: HTTP {st}')
+    # 2026-08-27: los comodines sueltos (`/*-access`, `/*-library`) casaban por
+    # PREFIJO y bloqueaban /en/blog/prompt-library-… — 26 posts sin rastrear
+    # durante un mes. Ahora van anclados al prefijo de cada familia.
+    # Esto sólo detecta manipulación; la SEMÁNTICA (ninguna URL pública
+    # bloqueada, toda la zona app bloqueada) la verifica robots-gate.py.
+    esperados = [f'Disallow: /{p}-*-{s}'
+                 for p in ('guia', 'kit', 'mega', 'pack', 'plan', 'pro')
+                 for s in ('access', 'library')] + ['Disallow: /admin/']
     for ua in ['Googlebot', 'Bingbot', 'Twitterbot', 'facebookexternalhit', '*']:
         block = re.search(
             rf'User-agent: {re.escape(ua)}\n(.*?)(?:\n\n|\Z)', robots, re.S)
-        ok = block and all(d in block.group(1) for d in
-                           ['Disallow: /*-access', 'Disallow: /*-library', 'Disallow: /admin/'])
-        check(bool(ok), f'robots.txt: grupo {ua} sin los 3 Disallow')
+        faltan = [] if not block else [d for d in esperados if d not in block.group(1)]
+        check(bool(block) and not faltan,
+              f'robots.txt: grupo {ua} sin {faltan[:3] or "bloque"}')
 
     print('-- sitemap')
     sm = ''
     for smp in ['/sitemap-index.xml', '/sitemap-0.xml']:
         _, body = fetch(smp)
         sm += body
-    check(re.search(r'-access</loc>|-library</loc>', sm) is None,
-          'sitemap: contiene URLs -access/-library')
+    # La zona app es SIEMPRE de un solo segmento en la raíz. Buscar
+    # `-library</loc>` a secas daba un falso positivo con la categoría pública
+    # /en/blog/category/prompt-library (2026-08-27).
+    fugas = [u for u in re.findall(r'<loc>([^<]+)</loc>', sm)
+             if re.match(r'^https?://[^/]+/[^/]+-(?:access|library)/?$', u.strip())]
+    check(not fugas, f'sitemap: contiene URLs de zona app {fugas[:3]}')
 
     print('-- anti-regresión')
     _, home = fetch('/')

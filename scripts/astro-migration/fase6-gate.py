@@ -268,8 +268,12 @@ def main():
         check('/productos-digitales' in new, 'sitemap: falta /productos-digitales')
         for p in ['/legales', '/en/ai-food-cost-calculator', '/admin/generar-acceso']:
             check(p not in stg, f'sitemap: {p} NO debería estar')
-        check(re.search(r'-access</loc>|-library</loc>', str(sorted(stg))) is None,
-              'sitemap: fuga -access/-library')
+        # `stg` son PATHS, no XML: el regex de antes buscaba `-access</loc>`
+        # sobre ellos y no casaba nunca (check vacuo). Y la zona app es siempre
+        # de un solo segmento en la raíz — `/en/blog/category/prompt-library`
+        # es blog público, no una fuga (2026-08-27).
+        fuga_app = [p for p in stg if re.match(r'^/[^/]+-(?:access|library)$', p)]
+        check(not fuga_app, f'sitemap: fuga de zona app {sorted(fuga_app)[:3]}')
         no_lm = [p for p, v in stg.items() if not v]
         check(not no_lm, f'sitemap: {len(no_lm)} URLs sin lastmod')
         # @astrojs/sitemap emite W3C datetime completo; prod fecha pelada →

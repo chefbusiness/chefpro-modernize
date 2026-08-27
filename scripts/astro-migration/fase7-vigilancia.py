@@ -75,7 +75,10 @@ EXPECTED = 696 + len(_F8_EXTRA) + _np + 1 + (-(-_np // 24) - 1) + _nc
 check(n == EXPECTED, f'sitemap: {n} URLs != {EXPECTED}')
 
 st, robots = curl('/robots.txt')
-check(st == 200 and 'Disallow: /*-access' in robots, 'robots.txt alterado')
+# 2026-08-27: las reglas de la zona app van ancladas al PREFIJO de cada familia.
+# El comodín suelto de antes bloqueaba /en/blog/prompt-library-… (26 posts).
+check(st == 200 and 'Disallow: /kit-*-access' in robots
+      and 'Disallow: /admin/' in robots, 'robots.txt alterado')
 
 # 8B.5 cutover 2026-07-19: el subdominio blog debe 301-ear al path nuevo
 # (TLS estricto: si el cert del subdominio caduca o se rompe, esto avisa).

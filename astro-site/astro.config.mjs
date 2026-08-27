@@ -51,8 +51,14 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname.replace(/\/$/, '') || '/';
         return !(
-          path.endsWith('-access') ||
-          path.endsWith('-library') ||
+          // Las 88 páginas de la zona app son SIEMPRE de un único segmento en
+          // la raíz (/kit-escandallos-library, /guia-dark-kitchen-access…).
+          // Antes esto era un endsWith() que no miraba la profundidad y se
+          // llevaba por delante /en/blog/category/prompt-library —una
+          // categoría PÚBLICA del blog—, que desaparecía del sitemap sin un
+          // solo aviso. Cazado el 2026-08-27, junto al mismo fallo de patrón
+          // en robots.txt, que además bloqueaba los 26 posts de la categoría.
+          /^\/[^/]+-(access|library)$/.test(path) ||
           // '/admin' o '/admin/...' — NO startsWith('/admin') a secas, que
           // excluiría por error futuras rutas tipo /administracion-... (BAJA
           // del revisor adversarial de Fase 6).

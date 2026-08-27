@@ -1,34 +1,115 @@
+# aichef.pro — robots.txt
+#
+# ⚠️ 2026-08-27 — POR QUÉ LAS REGLAS DE LA ZONA APP VAN ANCLADAS.
+# Hasta hoy aquí ponía `Disallow: /*-access` y `Disallow: /*-library` a secas.
+# En robots.txt un patrón SIN `$` casa con cualquier URL que EMPIECE por él una
+# vez expandido el comodín: `/*-library` no significa «acaba en -library», sino
+# «contiene -library en algún punto y sigue lo que sea». Por eso también casaba
+# con /en/blog/prompt-library-…  → los 26 posts de librerías de prompts en
+# inglés y su categoría llevaban desde el 1-ago SIN PODER RASTREARSE (GSC:
+# «Blocked by robots.txt» y «URL is unknown to Google»), mientras sus gemelos
+# españoles estaban indexados. El sitemap los declaraba; Googlebot no podía ir.
+#
+# Ahora cada regla va anclada al PREFIJO de la familia de producto, que es lo
+# que impide que puedan volver a tocar el blog: ninguna URL del blog empieza por
+# `/kit-`, `/guia-`… Las 88 páginas de la zona app son de UN SOLO SEGMENTO y
+# empiezan por: guia- kit- mega- pack- plan- pro-.  Si nace una familia con OTRO
+# prefijo, hay que añadir sus dos líneas.
+#
+# Sin ancla final `$` A PROPÓSITO: con ella se escapaban las variantes con barra
+# (`/kit-escandallos-library/`) y con query (`?x=1`), que sirven 200 o 301. Sin
+# ella la cobertura es total y —comprobado sobre las 1.220 URLs del dist— sigue
+# sin bloquear ni una URL pública.
+#
+# Segunda capa (la que de verdad protege): las 88 llevan `noindex` en el HTML y
+# están excluidas del sitemap por el filtro de astro.config.mjs.
+#
+# Gate: python3 scripts/astro-migration/robots-gate.py
+#   comprueba con un parser de la spec de Google que TODA URL pública del dist
+#   es rastreable y que TODA ruta de la zona app está bloqueada, para cada
+#   user-agent declarado aquí.
+
 User-agent: Googlebot
 Allow: /
-Disallow: /*-access
-Disallow: /*-library
+Disallow: /guia-*-access
+Disallow: /guia-*-library
+Disallow: /kit-*-access
+Disallow: /kit-*-library
+Disallow: /mega-*-access
+Disallow: /mega-*-library
+Disallow: /pack-*-access
+Disallow: /pack-*-library
+Disallow: /plan-*-access
+Disallow: /plan-*-library
+Disallow: /pro-*-access
+Disallow: /pro-*-library
 Disallow: /admin/
 
 User-agent: Bingbot
 Allow: /
-Disallow: /*-access
-Disallow: /*-library
+Disallow: /guia-*-access
+Disallow: /guia-*-library
+Disallow: /kit-*-access
+Disallow: /kit-*-library
+Disallow: /mega-*-access
+Disallow: /mega-*-library
+Disallow: /pack-*-access
+Disallow: /pack-*-library
+Disallow: /plan-*-access
+Disallow: /plan-*-library
+Disallow: /pro-*-access
+Disallow: /pro-*-library
 Disallow: /admin/
 
 User-agent: Twitterbot
 Allow: /
-Disallow: /*-access
-Disallow: /*-library
+Disallow: /guia-*-access
+Disallow: /guia-*-library
+Disallow: /kit-*-access
+Disallow: /kit-*-library
+Disallow: /mega-*-access
+Disallow: /mega-*-library
+Disallow: /pack-*-access
+Disallow: /pack-*-library
+Disallow: /plan-*-access
+Disallow: /plan-*-library
+Disallow: /pro-*-access
+Disallow: /pro-*-library
 Disallow: /admin/
 
 User-agent: facebookexternalhit
 Allow: /
-Disallow: /*-access
-Disallow: /*-library
+Disallow: /guia-*-access
+Disallow: /guia-*-library
+Disallow: /kit-*-access
+Disallow: /kit-*-library
+Disallow: /mega-*-access
+Disallow: /mega-*-library
+Disallow: /pack-*-access
+Disallow: /pack-*-library
+Disallow: /plan-*-access
+Disallow: /plan-*-library
+Disallow: /pro-*-access
+Disallow: /pro-*-library
 Disallow: /admin/
 
 User-agent: *
 Allow: /
-Disallow: /*-access
-Disallow: /*-library
+Disallow: /guia-*-access
+Disallow: /guia-*-library
+Disallow: /kit-*-access
+Disallow: /kit-*-library
+Disallow: /mega-*-access
+Disallow: /mega-*-library
+Disallow: /pack-*-access
+Disallow: /pack-*-library
+Disallow: /plan-*-access
+Disallow: /plan-*-library
+Disallow: /pro-*-access
+Disallow: /pro-*-library
 Disallow: /admin/
 
-Sitemap: https://aichef.pro/sitemap.xml
+Sitemap: https://aichef.pro/sitemap-index.xml
 
 # AI / LLM index — see https://llmstxt.org
 # https://aichef.pro/llms.txt

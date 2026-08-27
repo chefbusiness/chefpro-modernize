@@ -152,7 +152,18 @@ Bloques que en WordPress eran dinámicos y al exportar quedaron serializados com
 ### Dos trampas del `BaseLayout` y del sitemap
 
 - **`basePath` va SIN el prefijo de idioma.** `urlFor()` ya antepone `/${lang}` a los idiomas no por defecto, así que pasar `/en/prompt-library` da un canonical `/en/en/prompt-library`. Se pasa `/prompt-libraries` y el layout compone.
-- **El filtro del sitemap excluye TODA ruta que acabe en `-library`** (y en `-access`): así se llaman los dashboards de la zona de pago, que nunca deben indexarse. Una página pública cuyo slug acabe así **desaparece del sitemap sin un solo aviso** — le pasó al hub inglés, que nació como `/en/prompt-library`. Se renombró a `/en/prompt-libraries` en vez de meterle una excepción a una regla que protege URLs de dinero.
+- **El filtro del sitemap excluye las rutas de la zona de pago (`-access`, `-library`)**, que nunca deben indexarse. Hasta el 2026-08-27 el test era un `endsWith()` a secas y una página pública cuyo slug acabase así **desaparecía del sitemap sin un solo aviso** — le pasó al hub inglés, que nació como `/en/prompt-library` y se renombró a `/en/prompt-libraries`, y después a la categoría `/en/blog/category/prompt-library`. Ahora el test es `/^\/[^/]+-(access|library)$/`: la zona app es SIEMPRE de un solo segmento en la raíz, así que el blog ya no puede caer dentro.
+
+### ⚠️ El comodín de `robots.txt` no significa «acaba en» — borró 26 posts ingleses
+
+Cazado el **2026-08-27** revisando en GSC por qué los posts ingleses de librerías de prompts no aparecían. `astro-site/public/robots.txt` protegía la zona app con `Disallow: /*-access` y `Disallow: /*-library`. **En robots.txt un patrón SIN `$` casa por PREFIJO una vez expandido el comodín**: `/*-library` no quiere decir «rutas que acaban en `-library`», sino «`/` + lo que sea + `-library` + lo que venga después». Casaba con `/en/blog/prompt-library-barista-consulting` y con los otros 25, más la categoría `/en/blog/category/prompt-library`.
+
+Resultado, medido en GSC: **27 URLs sin poder rastrearse desde el 1 de agosto** («Blocked by robots.txt» en la que Google llegó a intentar, «URL is unknown to Google» / «Discovered - currently not indexed» en el resto, *last crawled: Never* en las 26), mientras sus **gemelas españolas estaban indexadas**. El sitemap las declaraba correctamente y el build salía verde: **un bloqueo de robots.txt no rompe nada, no sale en ningún diff y no da ningún aviso**.
+
+- Las reglas van ahora ancladas al **prefijo de cada familia de producto** (`/kit-*-library`, `/guia-*-access`…): ninguna URL del blog empieza por `/kit-` ni `/guia-`, así que no puede volver a rozarlas. Las 88 páginas de la zona app son de un solo segmento y empiezan por `guia- kit- mega- pack- plan- pro-`; **si nace una familia con otro prefijo hay que añadir sus dos líneas**. Sin ancla final `$` a propósito: con ella se escapaban `/kit-escandallos-library/` y `?x=1`.
+- La protección de verdad de esas 88 no es el `robots.txt`: es el **`noindex` del HTML** (las 88 lo llevan) más la exclusión del sitemap. Bloquear por robots impide justamente que Google lea el `noindex`.
+- Gate: **`python3 scripts/astro-migration/robots-gate.py`** — implementa la spec de Google (comodín, `$`, gana el path más largo y en empate Allow; validado contra Protego en 6.445 decisiones) y comprueba, para cada user-agent del fichero, que **toda URL del `dist/` es rastreable** y que **toda ruta de la zona app está bloqueada**. Con el `robots.txt` viejo canta las 27; con el nuevo, cero. **Correrlo siempre que se toque `robots.txt` o nazca una familia de producto.**
+- Regla general: **al publicar contenido nuevo, comprobar que su URL no cae en ningún patrón de `robots.txt`**. Cuesta un comando y aquí ha costado casi un mes de indexación de 26 posts.
 
 ### Banners de productos digitales: política obligatoria
 
