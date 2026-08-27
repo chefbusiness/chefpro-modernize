@@ -5,7 +5,8 @@ Fase 7 — Vigilancia post-cutover de aichef.pro (hasta ~2026-08-16).
 Chequeo de salud de PRODUCCIÓN vía curl (ligero, sin navegador):
   1. Home 200 + huella Astro (/_astro/) + meta robots index,follow
   2. verify-purchase same-origin → 400 unknown_product (dinero vivo)
-  3. sitemap-index 200 con 696 <loc> + /sitemap.xml → 301
+  3. sitemap-index 200 con el nº de <loc> esperado (calculado del repo, los 6
+     blogs incluidos) + /sitemap.xml → 301
   4. robots.txt con Disallows de zona app
   5. Muestra de URLs críticas en 200 (home ×2 idiomas, use case, pSEO,
      landing producto, access gate)
@@ -61,17 +62,28 @@ _, sm0 = curl('/sitemap-0.xml')
 n = sm0.count('<loc>')
 # 696 (Fase 6) + blog Fase 8B (posts + hub + paginación + categorías),
 # computado del repo para que crezca solo al publicar contenido nuevo.
+#
+# ⚠️ 2026-08-27: esto contaba SOLO el blog español y llevaba rojo de forma
+# permanente desde que nacieron los blogs EN/IT/FR/DE/PT (decía 1.184 != 1.051).
+# Una alarma siempre roja no avisa de nada — se generaliza a los 6 idiomas:
+# por idioma, posts publicados + hub + páginas 2..n (POSTS_PER_PAGE = 24) + una
+# archive por categoría CON posts (las vacías no se generan).
 from pathlib import Path
-_blog = list((Path(__file__).resolve().parents[2]
-              / 'astro-site/src/content/blog/es').glob('*.md'))
-_np = len(_blog)
-_nc = len(set(re.search(r'^category: (\S+)', p.read_text(), re.M).group(1)
-              for p in _blog))
+_CONTENT = Path(__file__).resolve().parents[2] / 'astro-site/src/content/blog'
+_blog_urls = 0
+for _dir in sorted(p for p in _CONTENT.iterdir() if p.is_dir()):
+    _txt = [f.read_text() for f in _dir.glob('*.md')]
+    _txt = [t for t in _txt if not re.search(r'^draft:\s*true', t, re.M)]
+    _n = len(_txt)
+    _cats = {re.search(r'^category:\s*(\S+)', t, re.M).group(1) for t in _txt}
+    _blog_urls += _n + 1 + max(0, -(-_n // 24) - 1) + len(_cats)
 # F8: URLs nativas nuevas fuera del blog (mantener lista al día al crear páginas)
 _F8_EXTRA = ['/precios', '/en/pricing', '/fr/tarifs', '/de/preise',
              '/it/prezzi', '/pt/precos', '/nl/prijzen',
-             '/contacto', '/sobre-nosotros', '/faq']
-EXPECTED = 696 + len(_F8_EXTRA) + _np + 1 + (-(-_np // 24) - 1) + _nc
+             '/contacto', '/sobre-nosotros', '/faq',
+             # 8C: los dos hubs de librerías de prompts (ES e EN)
+             '/libreria-de-prompts', '/en/prompt-libraries']
+EXPECTED = 696 + len(_F8_EXTRA) + _blog_urls
 check(n == EXPECTED, f'sitemap: {n} URLs != {EXPECTED}')
 
 st, robots = curl('/robots.txt')
