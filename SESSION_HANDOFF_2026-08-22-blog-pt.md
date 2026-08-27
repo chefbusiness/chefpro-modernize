@@ -7,6 +7,20 @@
 > John empuja desde el Mac a docenas de commits por sesión (en esta tanda ya
 > hubo que rebasar sobre uno suyo).
 
+## ✅ Revalidado el 2026-08-27 (sin tocar nada)
+
+Cinco días y **77 commits de la pista de productos** después, los dos posts de
+la tanda 3 siguen sirviendo correctamente en producción: HTTP 200, un solo
+`<h1>`, 2 tablas, 2 figuras y `FAQPage` con 5 `Question` cada uno. Árbol limpio
+y `main` sincronizado con origin. **No hay nada pendiente de commitear en esta
+pista.**
+
+**Al retomar, lo primero:** los posts PT 1-4 se publicaron el 21-22 de agosto y
+los 5-6 el 22 — hacia el **15-22 de septiembre** ya habrá ventana de GSC para
+la primera lectura por página+query (con la trampa de la URL legacy presente,
+aunque en PT no debería haberla: el árbol nació migrado). Esa lectura puede
+cambiar el orden de la cola tanto como lo cambió el research de la tanda 3.
+
 ## Estado del frente de idiomas
 
 | Idioma | Estado | Siguiente |
