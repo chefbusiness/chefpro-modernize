@@ -1129,6 +1129,10 @@ def guardas(wb, fname, informe):
 # precargado, que en los tres casos está vacía).
 EJEMPLOS = {
     '02-calculadora-punto-equilibrio.xlsx': [('Datos', 3, 2)],
+    # RX-09: el 07 se entrega con TIN 6 % y plazo 8 años precargados en
+    # 'Financiación' y la portada los imprime. B3 está libre y es la misma
+    # fila que usan los otros cuatro ficheros.
+    '07-informe-viabilidad-bancos.xlsx': [('Resumen Ejecutivo', 3, 2)],
     '06-dashboard-ratios-financieros.xlsx': [('Ratios', 3, 2)],
     'BONUS-08-simulador-escenarios.xlsx': [('Simulador', 3, 1)],
     '03-cash-flow-forecast.xlsx': [('Flujo Mensual', 3, 1)],

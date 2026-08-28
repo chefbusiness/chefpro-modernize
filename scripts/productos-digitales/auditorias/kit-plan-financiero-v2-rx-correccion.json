@@ -1,0 +1,96 @@
+{
+  "producto": "kit-plan-financiero",
+  "version": "2.0",
+  "rol": "corrector RX-01..RX-10 (refutador Excel)",
+  "fecha": "2026-08-29",
+  "spec": "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md (§7-bis decisión 10 añadida)",
+  "dryrun": {
+    "comando": "CLAUDE_SCRATCHPAD=.../scratchpad/corr python3 scripts/productos-digitales/kit-plan-financiero-v2_0/main.py --dry-run --json .../corr/dryrun.json",
+    "exit": 0,
+    "idempotencia_diferencias": 0,
+    "censo_defectos": 0,
+    "cache_fallos": 1,
+    "cache_fallos_detalle": "el único fallo_pycel es 07!Proyecciones!B24 =IFERROR(IRR($B$22:$G$22),\"—\"): pycel no evalúa IRR y la cachea motor.cachear_irr en el paso 4/8. Demostrado aislándolo: copia del 07 con la caché borrada por openpyxl → inject_cache deja SIN caché exactamente esa celda y ninguna más.",
+    "data_only_formulas_nuevas": {
+      "con_valor": 1711,
+      "vacias_por_diseno": 468,
+      "vacias_comprobadas_con_pycel": 468,
+      "vacias_no_verificadas": 0,
+      "fallos": 0
+    },
+    "graficos": "9/9",
+    "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/corr/dryrun-v2/kit-plan-financiero/"
+  },
+  "resueltos": [
+    {
+      "id": "RX-01",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py:121-141 (_sem_mayor_mejor 121-134 y _sem_menor_mejor 136-141, los DOS envueltos en ISNUMBER con «—» de salida)",
+      "prueba": "05!Ene!F23 = '=IFERROR(IF(ISNUMBER($E23),IF($E23>=-'Resumen Anual'!$B$22,\"✅ OK\",...),\"—\"),\"—\")'; caché data_only del dry-run: 05!Ene!F23 = '—' (antes '✅ OK'). pycel sobre copia (scratchpad/corr/pycel/rx05.xlsx): con B23=0 y C23=-8000 → E23='' y F23='—' (antes '✅ OK' con un EBITDA real de −8.000 €). Los helpers son los únicos emisores de semáforo del 05; 'Resumen Anual' NO los usa (sólo tiene formato condicional B13:N13), así que no hay más consumidores."
+    },
+    {
+      "id": "RX-02",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py:276-282 (_resumen_previsional, fila 8 de crecimiento con motor.iferror, el mismo helper que las filas 5-7)",
+      "prueba": "01!Resumen!E8 = '=IFERROR($D8-$B8,\"\")' y 01b!Resumen!G8 = '=IFERROR($F8-$B8,\"\")'; caché data_only con el libro en blanco: E8 = None y G8 = None (antes '#VALUE!' en las dos plantillas). Eran los dos únicos errores de Excel cacheados del kit."
+    },
+    {
+      "id": "RX-03",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:111-118 (RATIOS_06, fila 17 arreglada EN ORIGEN)",
+      "prueba": "06!Ratios!C17 = '=IF(($C$6-$C$7)<=0,\"Indica las ventas\",$C$8/($C$6-$C$7))'. pycel sobre copia (pycel/rx03.xlsx): con el ejemplo intacto C17=0,30 y E17='⚠️ Aceptable'; con set_value C6=0 (C7=7.865 del ejemplo) C17='Indica las ventas' y E17='—' (antes C17=−0,90 y E17='✅ Excelente'). Barrido de los otros ratios del 06: C17 es el ÚNICO con resta en el denominador — C18/C19/C20/C23/C25 dividen entre $C$6, C21 entre $C$7, C22 entre $C$13*$C$12 y C24 entre $C$29; en todos ellos un denominador ≤ 0 sólo puede venir de un input negativo, que la DV numérica (mínimo 0) ya impide. No se ha tocado el semáforo: la guarda en origen protege a cualquier consumidor de C17, no sólo a E17."
+    },
+    {
+      "id": "RX-04",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:412-441 (comentario + RATIOS_07 con límite propio en las 6 filas; margen EBITDA ya lo tenía)",
+      "prueba": "Caché del dry-run 07!Ratios: F4/G4=0,60/0,70 · F5/G5=1,25/1,15 · F6/G6=1,00/0,90 · F7/G7=0,15/0,10 · F8/G8=0,10/0,05 · F9/G9=0,30/0,20 · F10/G10=3,5/4,5. La columna D sigue imprimiendo el ÓPTIMO ('< 60%', '> 1.25x', '> 1.0x', '> 15%', '> 10%', '> 30%', '< 3.5x'). pycel sobre copia (pycel/rx04.xlsx), tres valores por fila: E4 0,50→✅ 0,65→⚠️ 0,80→🔴 · E5 1,40→✅ 1,20→⚠️ 1,00→🔴 · E6 1,20→✅ 0,95→⚠️ 0,80→🔴 · E7 0,20→✅ 0,12→⚠️ 0,05→🔴 · E8 0,15→✅ 0,07→⚠️ 0,02→🔴 · E9 0,40→✅ 0,25→⚠️ 0,10→🔴 · E10 3,0→✅ 4,0→⚠️ 5,0→🔴. Las 7 filas alcanzan los tres estados."
+    },
+    {
+      "id": "RX-05",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py:143-156 (_desviacion_pct, nuevo) y sus usos en _pestana_mensual: ingresos 6-10 (grupo_a.py:307, la E de esas filas venía intacta de la v1.1), gastos 13-20 (:327), TOTAL GASTOS 21 (:340), EBITDA 23 con ABS($B23) (:354-356), margen 24 (:366-372) y ratios 27-30 (:383-390 y :400-402)",
+      "prueba": "Caché data_only de la copia dry-run, F6:F30 de las 12 pestañas: Counter({'—': 240}) — 0 verdes (antes Counter({'✅ OK': 240})). Fórmulas: 05!Ene!E6 = '=IF($B6=0,\"\",IFERROR(($C6-$B6)/$B6,\"\"))', E23 = '=IF($B23=0,\"\",IFERROR(($C23-$B23)/ABS($B23),\"\"))'. pycel (pycel/rx05.xlsx), «mayor es mejor» 05!Ene!F6: ppto 10.000/real 12.000 → E6=0,20 F6='✅ OK'; real 9.800 → −0,02 '✅ OK'; real 9.000 → −0,10 '⚠️ Atención'; real 8.000 → −0,20 '🔴 Alerta'. «menor es mejor» 05!Ene!F13: real 10.200 → 0,02 '✅ OK'; 10.800 → 0,08 '⚠️ Atención'; 12.000 → 0,20 '🔴 Alerta'; 9.000 → −0,10 '✅ OK'. Y con EBITDA presupuestado −3.000 y real 0, F23='✅ OK' (la mejora sigue en verde: el ABS del divisor no se ha tocado). Filas 24 y 27-30: sus B/C devuelven ahora «» cuando la base es 0 y su D va con IFERROR, porque si no la diferencia en p.p. valía 0 y el semáforo se ponía verde igual."
+    },
+    {
+      "id": "RX-06",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:399-407 (PYL_07, fila 17 nueva «Flujo libre del proyecto (sin deuda)»), :572-575 (nota G17), :593-595 (B22:G22 leen la fila 17), :603/:607/:612 (A24/A25/A26 renombradas), :640-644 (nota en cursiva A33) y :936-942 (07!Instrucciones); SPEC §7-bis decisión 10",
+      "prueba": "07!Proyecciones!A17='Flujo libre del proyecto (sin deuda)' con B17='=B11-MAX(0,(B11-B12)*$C$29)'; C22='=B17' … G22='=F17' (antes '=B18'…'=F18'); A24='TIR del proyecto (sin apalancamiento)', A25='VAN del proyecto', A26='Payback del proyecto (años)'; A33 = la nota exacta pedida. Copia rellena (pycel/rx06_lleno.xlsx, ventas 300-420 k€, amortización 15.000, inversión 150.000, préstamo 100.000) + inject_cache + motor.cachear_irr: fila 17 = [35.250, 38.400, 41.550, 44.700, 47.850] e igual, euro a euro, a EBIT×(1−t)+amortización en los 5 años (coincide True ×5), frente a la fila 18 apalancada [30.750, 34.354,66, 37.986,60, 41.647,46, 45.338,97]; B22:G22 = [−150.000, 35.250, 38.400, 41.550, 44.700, 47.850]; B24 (TIR) cacheada NUMÉRICA = 0,11287565595574248 (11,29 %), B25 (VAN) = 13.966,17 €, B26 (payback) = 3,7785 años. Con el libro tal y como se entrega (todo a 0) motor.cachear_irr inyecta '—' en B24 y B26 queda '—': coherente. El rango que lee cachear_irr sigue siendo Proyecciones!B22:G22 y CELDA_IRR B24 (motor.py:1834-1836), sin tocar. El caso trazado de main.py (−200.000/40.000…) sigue dando TIR 11,9592 % = SPEC. DSCR intacto: 07!Ratios!C5 lee Proyecciones!B18 (cash flow APALANCADO) contra 'Financiación'!C12 → 1,9095 y E5='✅' en la copia rellena."
+    },
+    {
+      "id": "RX-07",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:466-472 (notas D5/D6/D7), :486-494 (C8 sobre el plazo restante y nota D8), :514-521 (columna C del cuadro con IF por año) y :531-534 (nota B20)",
+      "prueba": "'Financiación'!C8 = '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0)' y C12:C16 = '=IF($A12<=$C$7,$B12*$C$5,$C$8)' (A12:A16 son los años 1-5). pycel sobre copia (pycel/rx07.xlsx), préstamo 100.000 € al 6 % a 8 años: con C7=0 el cuadro es IDÉNTICO al de antes (C8=16.103,59; año 1 intereses 6.000, amortiza 10.103,59, pendiente 89.896,41; …; suma amortizada en 5 años 56.954,89). Con C7=1: C8=17.913,50; año 1 cuota 6.000 = intereses 6.000, amortización 0, capital pendiente 100.000 sin bajar; año 2 primera cuota francesa 17.913,50 (intereses 6.000, amortiza 11.913,50, pendiente 88.086,50); años 3-5 encadenan hasta 47.883,00; suma amortizada en los 5 años 52.116,99 < 100.000 (plazo 8 > 5). Con C7=2 el patrón se repite (dos años sólo de intereses, C8=20.336,26). Consumidores de la cuota: el DSCR (07!Ratios!C5) y la línea de tesorería del 03 leen la columna C del CUADRO (C12), que ahora ES el servicio del año, no C8 a secas; los intereses del P&L (Proyecciones!B13='Financiación'!$D$12) leen la columna D, que no cambia de semántica. Nota D7 = «Años iniciales en los que sólo pagas intereses; después la cuota se calcula sobre el plazo restante.»"
+    },
+    {
+      "id": "RX-08",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_b.py:288-300 (etiqueta A25 + openpyxl Comment en B25, con el import en :63) y :357-360 (ancho de la columna A)",
+      "prueba": "03!'Flujo Mensual'!A25 = 'Liquidación de IVA (mod. 303) · enero = input (4T anterior)' (59 caracteres) y ancho de la columna A = 62 (antes 46, truncaba). B25 lleva un Comment de autor 'AI Chef Pro' con el texto EXACTO: «Enero es input: aquí pagas el IVA del 4T del año ANTERIOR (modelo 303, del 1 al 30 de enero). Los demás meses los calcula la hoja sola en abril, julio y octubre.» — es el único comentario de la hoja y sobrevive a inject_cache (leído en la copia final del dry-run). NO se ha añadido columna N: max_column de la hoja sigue siendo 13 (M) y N25 = None; el A4 no sufre porque print_setup fija fitToWidth=1 (paperSize 9 verificado)."
+    },
+    {
+      "id": "RX-09",
+      "donde": "(b) scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:721-724 (C16 con IF) y :466-469 (notas D5/D6); (a) motor.py:1132-1135 (EJEMPLOS: entrada nueva para el 07, hoja «Resumen Ejecutivo», fila 3, columna B)",
+      "prueba": "(b) 07!'Resumen Ejecutivo'!C16 = '=IF(''Financiación''!$C$4=0,\"—\",''Financiación''!$C$6)'; caché con el libro en blanco: C16 = '—' (antes 8,0 años junto a una financiación de 0,00 €). En la copia rellena con C4=100.000 vuelve a imprimir 8,0. Notas: 'Financiación'!D5 = 'TIN, no TAE. (valor orientativo — cámbialo)' y D6 = 'Plazo TOTAL, carencia incluida. (valor orientativo — cámbialo)' (D6 tuvo que dejar de decir «Sin contar la carencia», que contradecía la C8 de RX-07). (a) SÍ había celda libre con la convención de los otros cuatro ficheros: B3 estaba vacía y la fila 3 es la misma que usan 02!Datos!B3, 03!'Flujo Mensual'!A3, 06!Ratios!B3 y BONUS-08!Simulador!A3 → 07!'Resumen Ejecutivo'!B3 = 'VALORES DE EJEMPLO — sustitúyelos por los tuyos' en ámbar (color 009C6500), sin desplazar nada."
+    },
+    {
+      "id": "RX-10",
+      "donde": "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py:943-956 (la lista de pestañas se escribe entera en B15/B16/B17 con el estilo de B14; se retira la llamada a linea_instrucciones que colgaba «Financiación» al final)",
+      "prueba": "07!Instrucciones leído en la copia final: B12 'Pestañas:' · B13 Resumen Ejecutivo · B14 Proyecciones · B15 '▸ Financiación: cuadro de amortización del préstamo. De ahí salen los intereses del P&L, la cuota del DSCR y la línea de cuota de la tesorería del 03.' · B16 Ratios · B17 Garantías. Las cinco seguidas y en su orden real de aparición, sin hueco; ya no queda ninguna línea de 'Financiación' suelta en B20 (ahí vive ahora la única línea suelta legítima, la de la amortización del inmovilizado). B9 (TIR) actualizada por RX-06."
+    }
+  ],
+  "no_aplicados": [],
+  "ficheros_codigo": [
+    "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py",
+    "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_b.py",
+    "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py",
+    "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2_0/motor.py",
+    "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md",
+    "/Users/johnguerrero/chefpro-modernize/src/data/productos-changelog.ts"
+  ],
+  "changelog_tocado": true,
+  "notas": [
+    "El dry-run falló la primera vez con dos demos en rojo («vender un 20 % por encima del presupuesto sigue sin ser OK») y NO era el fix: es un artefacto de orden de pycel. Si se compila primero la celda del SEMÁFORO y luego se hace set_value sobre B6/C6, pycel no invalida la celda de desviación E6 y el semáforo se queda con el «—» de la primera pasada; evaluando E6 ANTES da '✅ OK'. La demo de EBITDA ya lo hacía en ese orden y por eso pasaba. Arreglado en grupo_a.py:566-580 (se calienta E antes que F) y aprovechado para añadir dos comprobaciones nuevas: sin presupuesto, F6 y F13 tienen que valer '—'.",
+    "RX-05 obligó a ir más allá de la columna E. El criterio de aceptación era «F6:F30 = — (0 verdes)», y las filas 24 (margen EBITDA) y 27-30 (ratios) no leen E sino D (diferencia en p.p.): con B y C devolviendo 0 por falta de base, D valía 0 y el semáforo salía verde igual. Sus B/C devuelven ahora «» cuando la base es 0 y su D va con IFERROR. De paso deja de afirmarse que el food cost de un mes sin ventas es del 0 %.",
+    "RX-07 forzó cambiar la nota D6. La fórmula que fija el orquestador —cuota sobre (C6 − C7)— implica que C6 es el plazo TOTAL con la carencia dentro, y la nota decía literalmente «Sin contar la carencia»: se habría entregado una contradicción entre la celda y su propia leyenda. D6 dice ahora «Plazo TOTAL, carencia incluida», y D8 añade que la anualidad se calcula sobre el plazo posterior a la carencia.",
+    "La validación de C7 sigue siendo la numérica genérica del motor (importe ≥ 0, motor.validaciones), no una de enteros: el motor clasifica las celdas verdes por formato de número y darle una DV propia a C7 exigiría una excepción dentro de motor.cerrar. El modelo tolera un decimal sin romperse (con C7=0,5 el año 1 ya no es ≤ 0,5 y paga cuota completa), pero la carencia se documenta en años enteros.",
+    "CHANGELOG: se han editado DOS viñetas de la entrada 2.0 de kit-plan-financiero, porque si no dejaban de ser ciertas. La de TIR/VAN/payback (src/data/productos-changelog.ts:336) ahora dice que se calculan «sobre el dinero que genera el negocio antes de la deuda —es decir, miden si el proyecto se sostiene por sí mismo—, y si puedes pagar la cuota del préstamo te lo dice el DSCR de la pestaña Ratios». La de Financiación (:337) suma media frase por la carencia: «Si pides carencia, los primeros años pagas solo intereses y la cuota se recalcula sobre el plazo que queda».",
+    "LANDING: NO necesita cambios. Las seis superficies que hablan de esto (astro-site/src/data/productos/kits/kit-plan-financiero.ts:99/:172/:187/:258/:285/:303 y sus gemelos src/components/kit-plan-financiero/{CtaFinal,WhySection,FaqAccordion,ContentGrid}.tsx y src/pages/KitPlanFinanciero.tsx:72) dicen «TIR, VAN, payback» sin comprometerse con ninguna convención, así que siguen siendo ciertas. No se ha tocado ninguna.",
+    "El único fallo_pycel del dry-run (1) es 07!Proyecciones!B24, la IRR, que cachea motor.cachear_irr en el paso 4/8. Verificado por aislamiento: borrando la caché de una copia del 07 con openpyxl y pasando inject_cache, la ÚNICA fórmula que queda sin valor es B24.",
+    "Se ha respetado la regla dura: main.py sólo con --dry-run y CLAUDE_SCRATCHPAD apuntando a .../scratchpad/corr; astro-site/public/dl/kit-plan-financiero/ sólo se ha LEÍDO (para comparar la v1.1) y no se ha escrito nada allí; sin KIT_PLAN_FINANCIERO_APPLY; ningún git commit/push/checkout/reset/stash. Térmica: un solo python cada vez, máximo registrado 45,4 °C."
+  ]
+}

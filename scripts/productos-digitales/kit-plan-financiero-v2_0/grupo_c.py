@@ -108,8 +108,14 @@ BM_POR_ETIQUETA = dict((b[1], b) for b in BENCHMARKS)
 
 # (fila de Ratios, etiqueta, fórmula, formato, etiqueta de Benchmarks)
 RATIOS_06 = (
+    # RX-03: el IFERROR sólo atrapa el #¡DIV/0!. Si el cliente borra C6
+    # (ventas totales) y deja C7 (barra) del ejemplo, el denominador es
+    # NEGATIVO y no hay error: C17 daba −0,9 y el semáforo «✅ Excelente»
+    # con un food cost del −90 %. Se anula EN ORIGEN, que además protege a
+    # cualquier consumidor de C17, no sólo al semáforo.
     (17, 'Food Cost % (sobre ventas de comida)',
-     '=IFERROR($C$8/($C$6-$C$7),"Indica las ventas")', 'pct', 'Food Cost %'),
+     '=IF(($C$6-$C$7)<=0,"Indica las ventas",$C$8/($C$6-$C$7))', 'pct',
+     'Food Cost %'),
     (18, 'Labor Cost %', '=IFERROR($C$10/$C$6,"Indica las ventas")', 'pct',
      'Labor Cost %'),
     (19, 'Prime Cost % (comida + bebida + personal)',
@@ -390,33 +396,46 @@ PYL_07 = (
     (14, 'BAI (Beneficio Antes de Impuestos)', '={L}11-{L}12-{L}13'),
     (15, 'Impuesto sobre Sociedades', '=IF({L}14>0,{L}14*$C$29,0)'),
     (16, 'BENEFICIO NETO', '={L}14-{L}15'),
+    # RX-06 — convención (a): TIR/VAN/payback DEL PROYECTO, sin apalancar.
+    # El año 0 es la inversión TOTAL, así que los años 1-5 tienen que ser el
+    # flujo libre del proyecto: EBITDA − IS calculado SIN intereses (que es
+    # EBIT×(1−t)+amortización). Mezclar la inversión total con un flujo del
+    # que ya se han restado los intereses —y en el que nunca sale la
+    # devolución del principal— no medía ni el proyecto ni al inversor.
+    (17, 'Flujo libre del proyecto (sin deuda)',
+     '={L}11-MAX(0,({L}11-{L}12)*$C$29)'),
     (18, 'CASH FLOW OPERATIVO', '={L}16+{L}12'),
 )
 COLS_07 = ('B', 'C', 'D', 'E', 'F')
 COLS_FLUJO = ('B', 'C', 'D', 'E', 'F', 'G')
 
+# RX-04: el óptimo y el LÍMITE eran el mismo número en 6 de las 7 filas, así
+# que el segundo IF repetía la condición del primero y la banda «⚠️» era
+# código muerto: el informe anunciaba tres estados y sólo podía servir dos.
+# La columna D sigue imprimiendo la referencia del ÓPTIMO (la que el analista
+# espera leer); el límite es el suelo por debajo del cual ya no hay ámbar.
 RATIOS_07 = (
     (4, 'Ratio de endeudamiento',
      '=IFERROR($C$16/($C$16+$C$15),"Indica deuda y fondos propios")',
-     motor.FMT_PCT, 0.60, 0.60, 'menor', 'pct'),
+     motor.FMT_PCT, 0.60, 0.70, 'menor', 'pct'),
     (5, 'Cobertura de deuda (DSCR)',
      "=IFERROR(Proyecciones!$B$18/'Financiación'!$C$12,\"Indica el préstamo\")",
-     motor.FMT_X, 1.25, 1.25, 'mayor', 'x'),
+     motor.FMT_X, 1.25, 1.15, 'mayor', 'x'),
     (6, 'Ratio de liquidez corriente',
-     '=IFERROR($C$13/$C$14,"Indica el balance")', motor.FMT_X, 1.0, 1.0,
+     '=IFERROR($C$13/$C$14,"Indica el balance")', motor.FMT_X, 1.00, 0.90,
      'mayor', 'x'),
     (7, 'Margen EBITDA / Ventas',
      '=IFERROR(Proyecciones!$B$11/Proyecciones!$B$4,"Indica la facturación")',
      motor.FMT_PCT, 0.15, 0.10, 'mayor', 'pct'),
     (8, 'ROI (Return on Investment)',
      '=IFERROR(Proyecciones!$B$16/$C$17,"Indica la inversión")',
-     motor.FMT_PCT, 0.10, 0.10, 'mayor', 'pct'),
+     motor.FMT_PCT, 0.10, 0.05, 'mayor', 'pct'),
     (9, 'Fondos propios / Inversión',
      '=IFERROR($C$15/$C$17,"Indica la inversión")', motor.FMT_PCT, 0.30,
-     0.30, 'mayor', 'pct'),
+     0.20, 'mayor', 'pct'),
     (10, 'Deuda / EBITDA',
      '=IFERROR($C$16/Proyecciones!$B$11,"Indica el EBITDA")', motor.FMT_X,
-     3.5, 3.5, 'menor', 'x'),
+     3.5, 4.5, 'menor', 'x'),
 )
 BALANCE_07 = (
     (13, 'Activo corriente (€)', 'input'),
@@ -445,10 +464,12 @@ def _financiacion_07(wb, informe):
         (4, 'Importe solicitado (€)', 0, motor.FMT_EUR,
          'El que pides al banco.'),
         (5, 'Tipo de interés nominal anual (%)', 0.06, motor.FMT_PCT,
-         'TIN, no TAE.'),
-        (6, 'Plazo (años)', 8, motor.FMT_ENT, 'Sin contar la carencia.'),
+         'TIN, no TAE. (valor orientativo — cámbialo)'),
+        (6, 'Plazo (años)', 8, motor.FMT_ENT,
+         'Plazo TOTAL, carencia incluida. (valor orientativo — cámbialo)'),
         (7, 'Carencia de capital (años)', 0, motor.FMT_ENT,
-         'Informativa: durante la carencia sólo se pagan intereses.'),
+         'Años iniciales en los que sólo pagas intereses; después la cuota '
+         'se calcula sobre el plazo restante.'),
     )
     for fila, etiqueta, valor, fmt, nota in datos:
         r = str(fila)
@@ -462,10 +483,14 @@ def _financiacion_07(wb, informe):
     # y su IFERROR no lo atrapa, así que la celda se quedaría sin caché y en
     # blanco en Vista previa—. Verificado: 100.000 € al 5 % en 60 meses →
     # 1.887,12 €/mes.
+    # RX-07: la cuota se calcula sobre el plazo que QUEDA tras la carencia
+    # (C6 − C7). Con C7 = 0 la fórmula es idéntica a la anterior.
     motor.f(ws, 'C8',
-            '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-$C$6)),0)', motor.FMT_EUR)
+            '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0)',
+            motor.FMT_EUR)
     ws['C8'].font = Font(bold=True)
-    ws['D8'] = 'Anualidad constante (sistema francés).'
+    ws['D8'] = ('Anualidad constante (sistema francés), calculada sobre el '
+                'plazo posterior a la carencia.')
     ws['D8'].font = Font(size=9, italic=True)
 
     ws['B10'] = 'CUADRO DE AMORTIZACIÓN (años 1-5)'
@@ -486,7 +511,13 @@ def _financiacion_07(wb, informe):
             motor.f(ws, 'B' + r, '=$C$4', motor.FMT_EUR)
         else:
             motor.f(ws, 'B' + r, '=$F$' + str(11 + i), motor.FMT_EUR)
-        motor.f(ws, 'C' + r, '=$C$8', motor.FMT_EUR)
+        # RX-07: durante la carencia el SERVICIO del año son sólo intereses
+        # (el capital pendiente no baja); la cuota francesa arranca el año
+        # C7+1. Todo lo que lee la cuota —el DSCR de Ratios (C12) y la línea
+        # de tesorería del 03— lee esta columna, no el C8 a secas.
+        motor.f(ws, 'C' + r,
+                '=IF($A' + r + '<=$C$7,$B' + r + '*$C$5,$C$8)',
+                motor.FMT_EUR)
         motor.f(ws, 'D' + r, '=$B' + r + '*$C$5', motor.FMT_EUR)
         motor.f(ws, 'E' + r, '=$C' + r + '-$D' + r, motor.FMT_EUR)
         motor.f(ws, 'F' + r, '=$B' + r + '-$E' + r, motor.FMT_EUR)
@@ -497,11 +528,16 @@ def _financiacion_07(wb, informe):
     ws['B19'] = ('Los intereses de la columna D alimentan la fila «Intereses '
                  'de la deuda» de Proyecciones: no los teclees dos veces.')
     ws['B19'].font = Font(size=9, italic=True)
+    ws['B20'] = ('Con carencia, los primeros años la columna «Amortización de '
+                 'capital» sale a 0 y el capital pendiente no baja: es lo que '
+                 'de verdad pasa en un ICO de apertura.')
+    ws['B20'].font = Font(size=9, italic=True)
     ws['A22'] = '© 2026 AI Chef Pro · aichef.pro'
     ws['A22'].font = Font(size=8)
     motor.anchos(ws, {'A': 8, 'B': 30, 'C': 20, 'D': 18, 'E': 26, 'F': 24})
-    informe.append("07: hoja 'Financiación' con anualidad algebraica; de ahí "
-                   'salen los intereses del P&L y el DSCR (DOM-14/DOM-11)')
+    informe.append("07: hoja 'Financiación' con anualidad algebraica y "
+                   'carencia modelada; de ahí salen los intereses del P&L y '
+                   'el DSCR (DOM-14/DOM-11/RX-07)')
 
 
 def _proyecciones_07(wb, informe):
@@ -533,6 +569,10 @@ def _proyecciones_07(wb, informe):
     ws['G12'] = ('Cópiala de 04!Resumen, columna «Dotación anual (€)» de la '
                  'fila INVERSIÓN TOTAL.')
     ws['G12'].font = Font(size=9, italic=True)
+    ws['G17'] = ('EBITDA menos el Impuesto de Sociedades calculado SIN '
+                 'intereses. Es la fila que alimenta la TIR, el VAN y el '
+                 'payback de abajo.')
+    ws['G17'].font = Font(size=9, italic=True)
 
     # --- bloque de flujos, ahora CON el año 0 -------------------------------
     ws['A20'] = 'FLUJOS DEL PROYECTO E INDICADORES DE RENTABILIDAD'
@@ -550,7 +590,9 @@ def _proyecciones_07(wb, informe):
     ws['A22']._style = copy.copy(est_label)
     motor.f(ws, 'B22', "=-'Resumen Ejecutivo'!$C$13", motor.FMT_EUR)
     for i, L in enumerate(COLS_FLUJO[1:]):
-        motor.f(ws, L + '22', '=' + COLS_07[i] + '18', motor.FMT_EUR)
+        # RX-06: la fila 17 (flujo libre del proyecto), no la 18 (cash flow
+        # operativo, que ya lleva los intereses restados).
+        motor.f(ws, L + '22', '=' + COLS_07[i] + '17', motor.FMT_EUR)
     ws['A23'] = 'Flujo acumulado'
     ws['A23']._style = copy.copy(est_label)
     motor.f(ws, 'B23', '=B22', motor.FMT_EUR)
@@ -558,16 +600,16 @@ def _proyecciones_07(wb, informe):
         L, prev = COLS_FLUJO[i], COLS_FLUJO[i - 1]
         motor.f(ws, L + '23', '=$' + prev + '23+' + L + '22', motor.FMT_EUR)
 
-    ws['A24'] = 'TIR (Tasa Interna de Retorno)'
+    ws['A24'] = 'TIR del proyecto (sin apalancamiento)'
     ws['A24']._style = copy.copy(est_label)
     motor.f(ws, 'B24', '=IFERROR(IRR($B$22:$G$22),"—")', motor.FMT_PCT)
     ws['B24'].font = Font(bold=True)
-    ws['A25'] = 'VAN (a la tasa de descuento de abajo)'
+    ws['A25'] = 'VAN del proyecto'
     ws['A25']._style = copy.copy(est_label)
     motor.f(ws, 'B25',
             '=IFERROR(NPV($C$27,$C$22:$G$22)+$B$22,"—")', motor.FMT_EUR)
     ws['B25'].font = Font(bold=True)
-    ws['A26'] = 'Payback (años)'
+    ws['A26'] = 'Payback del proyecto (años)'
     ws['A26']._style = copy.copy(est_label)
     motor.f(ws, 'B26',
             '=IFERROR(IF($G$23<0,"No se recupera en 5 años",'
@@ -595,12 +637,18 @@ def _proyecciones_07(wb, informe):
                  'informe se entrega a un tercero y ningún dato de ejemplo '
                  'queda precargado con aspecto de dato real.')
     ws['A32'].font = Font(size=9, italic=True)
+    ws['A33'] = ('TIR/VAN/payback se calculan sobre el flujo libre del '
+                 'proyecto, sin deuda ni intereses: miden si el negocio se '
+                 'sostiene por sí mismo. La capacidad de pagar el préstamo se '
+                 'mide con el DSCR de la hoja Ratios.')
+    ws['A33'].font = Font(size=9, italic=True)
     ws['A45'] = '© 2026 AI Chef Pro · aichef.pro'
     ws['A45'].font = Font(size=8)
     motor.anchos(ws, {'A': 38, 'G': 30})
-    informe.append('07!Proyecciones: P&L con fórmulas, flujos con año 0, TIR, '
-                   'VAN con tasa en celda, payback y tipo del IS en celda '
-                   '(DOM-02/DOM-03/DOM-19/DOM-21)')
+    informe.append('07!Proyecciones: P&L con fórmulas, fila de flujo libre '
+                   'del proyecto (sin deuda) que alimenta los flujos con año '
+                   '0, TIR, VAN con tasa en celda, payback y tipo del IS en '
+                   'celda (DOM-02/DOM-03/DOM-19/DOM-21/RX-06)')
 
 
 def _ratios_07(wb, informe):
@@ -670,7 +718,10 @@ def _resumen_ejecutivo_07(wb, informe):
     ws = wb['Resumen Ejecutivo']
     derivadas = (
         ('C15', "='Financiación'!$C$4", motor.FMT_EUR),
-        ('C16', "='Financiación'!$C$6", '0.0" años"'),
+        # RX-09: la portada del informe decía «0,00 € a 8,0 años». Sin
+        # importe no hay plazo que enseñar.
+        ('C16', "=IF('Financiación'!$C$4=0,\"—\",'Financiación'!$C$6)",
+         '0.0" años"'),
         ('C17', '=Proyecciones!$B$4', motor.FMT_EUR),
         ('C18', '=Proyecciones!$B$11', motor.FMT_EUR),
         ('C19', '=Proyecciones!$B$26', '0.00" años"'),
@@ -883,14 +934,26 @@ def post(wb, fname, cambios, registro):
         import re as _re
         ws = wb['Instrucciones']
         motor.linea_instrucciones(
-            ws, '▸ TIR, VAN y Payback se calculan solos en Proyecciones a '
-                'partir del cash flow operativo y de la inversión del Resumen '
-                'Ejecutivo. La tasa de descuento es tuya (celda C27).',
+            ws, '▸ TIR, VAN y Payback se calculan solos en Proyecciones sobre '
+                'el FLUJO LIBRE DEL PROYECTO (sin deuda ni intereses) y la '
+                'inversión del Resumen Ejecutivo; la capacidad de pagar el '
+                'préstamo la mide el DSCR de Ratios. La tasa de descuento es '
+                'tuya (celda C27).',
             rx=_re.compile(r'^▸ TIR, VAN'))
-        motor.linea_instrucciones(
-            ws, "▸ Financiación: cuadro de amortización del préstamo. De ahí "
-                'salen los intereses del P&L, la cuota del DSCR y la línea de '
-                'cuota de la tesorería del 03.')
+        # RX-10: la lista de pestañas enumeraba CUATRO y se dejaba fuera
+        # 'Financiación', que es la hoja nueva de la v2.0 — se la nombraba
+        # cuatro líneas más abajo, tras un hueco. Se escribe en su orden real
+        # de aparición: Resumen Ejecutivo · Proyecciones · Financiación ·
+        # Ratios · Garantías.
+        est_lista = copy.copy(ws['B14']._style)
+        for fila, texto in (
+                (15, '▸ Financiación: cuadro de amortización del préstamo. De '
+                     'ahí salen los intereses del P&L, la cuota del DSCR y la '
+                     'línea de cuota de la tesorería del 03.'),
+                (16, '▸ Ratios: indicadores de solvencia y rentabilidad.'),
+                (17, '▸ Garantías: avales y garantías ofrecidas.')):
+            ws['B' + str(fila)] = texto
+            ws['B' + str(fila)]._style = copy.copy(est_lista)
         motor.linea_instrucciones(
             ws, '▸ La amortización del inmovilizado se copia de 04!Resumen, '
                 'columna «Dotación anual (€)».')

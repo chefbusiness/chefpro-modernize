@@ -1,0 +1,97 @@
+{
+  "producto": "kit-plan-financiero",
+  "version": "2.0",
+  "rol": "verificador INDEPENDIENTE de la corrección RX-01..RX-10 + RC2-02..RC2-06",
+  "fecha": "2026-08-29",
+  "listo": true,
+  "copia_propia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/ver/dryrun-v2/kit-plan-financiero/",
+  "gates": {
+    "dryrun_exit": 0,
+    "idempotencia_diferencias": 0,
+    "censo_defectos": 0,
+    "cache_fallos": 1,
+    "cache_fallos_detalle": "07!Proyecciones!B24 =IFERROR(IRR($B$22:$G$22),\"—\"): pycel no implementa IRR. Es el fallo por diseño que cubre motor.cachear_irr (paso 4/8). Reproducido: con el libro en blanco inyecta '—' (flujos [0,0,0,0,0,0]); sobre una copia rellena mía, tras inject_cache, inyecta 0.06221783598647066 — número, no blanco.",
+    "data_only_formulas_nuevas": {"con_valor": 1711, "vacias_por_diseno": 468, "fallos": 0},
+    "graficos": "9/9",
+    "protegidas": "56/56 sin contraseña",
+    "transpile_ts": true,
+    "transpile_detalle": "typescript.transpileModule (node_modules/typescript) sobre 18 ficheros .ts/.tsx tocados o implicados (productos-changelog.ts, KitPlanFinanciero.tsx, KitPlanFinancieroDashboard.tsx, testimonials-plan-financiero.ts, los 3 data files de Astro, productos-digitales-config.ts y los 10 componentes de src/components/kit-plan-financiero/): 0 diagnósticos.",
+    "errores_excel_cacheados": "0 en los 10 ficheros (#VALUE!/#REF!/#DIV/0!/#N/A/#NAME?/#NUM!/#NULL!)"
+  },
+  "por_id": [
+    {"id": "RX-01", "estado": "resuelto", "evidencia": "grupo_a.py:121-134 (_sem_mayor_mejor) y :136-141 (_sem_menor_mejor) llevan los DOS el envoltorio ISNUMBER. Medido en mi copia: 05!Ene!F23 = '=IFERROR(IF(ISNUMBER($E23),IF($E23>=-'Resumen Anual'!$B$22,\"✅ OK\",…)),\"—\"),\"—\")'; caché data_only = '—'. Barrido: de las 240 fórmulas F6:F30 de las 12 pestañas, 0 sin ISNUMBER. pycel: B23=0 / C23=-8000 → E23='' y F23='—' (antes '✅ OK' con un EBITDA real de −8.000 €). 'Resumen Anual' no tiene ni una celda de semáforo (0 emojis), así que no hay más consumidores de los helpers."},
+    {"id": "RX-02", "estado": "resuelto", "evidencia": "grupo_a.py:276-282 con motor.iferror. 01!Resumen!E8 = '=IFERROR($D8-$B8,\"\")' → caché None; 01b!Resumen!G8 = '=IFERROR($F8-$B8,\"\")' → caché None. Barrido de errores de Excel cacheados en los 10 ficheros del kit: 0 (antes eran los dos únicos)."},
+    {"id": "RX-03", "estado": "resuelto", "evidencia": "Arreglado EN ORIGEN como pedía la decisión: 06!Ratios!C17 = '=IF(($C$6-$C$7)<=0,\"Indica las ventas\",$C$8/($C$6-$C$7))'. pycel sobre copia propia: con C6=0 y C7=7.865 → C17='Indica las ventas' y E17='—' (antes C17=−0,90 y E17='✅ Excelente'); con C7=99.999 > C6 → también 'Indica las ventas' / '—'; con el ejemplo intacto C17=0,30 y E17='⚠️ Aceptable'. El semáforo NO se ha tocado, correcto. Verificado además que C17 es el único ratio del 06 con resta en el denominador: C18/C19/C20/C23/C25 dividen entre $C$6, C21 entre $C$7, C22 entre $C$13*$C$12 y C24 entre $C$29; ninguno puede quedar negativo sin error con la DV numérica ≥ 0."},
+    {"id": "RX-04", "estado": "resuelto", "evidencia": "07!Ratios F/G leídos en mi copia: 0,60/0,70 · 1,25/1,15 · 1,00/0,90 · 0,15/0,10 · 0,10/0,05 · 0,30/0,20 · 3,5/4,5; la columna D sigue imprimiendo el óptimo ('< 60%','> 1.25x','> 1.0x','> 15%','> 10%','> 30%','< 3.5x'). pycel, tres valores por fila: E4 0,50→✅ 0,65→⚠️ 0,80→🔴 · E5 1,40/1,20/1,00 · E6 1,20/0,95/0,80 · E7 0,20/0,12/0,05 · E8 0,15/0,07/0,02 · E9 0,40/0,25/0,10 · E10 3,0/4,0/5,0. Las 7 filas alcanzan los tres estados."},
+    {"id": "RX-05", "estado": "resuelto", "evidencia": "grupo_a.py:143-156 (_desviacion_pct). 05!Ene!E6 = '=IF($B6=0,\"\",IFERROR(($C6-$B6)/$B6,\"\"))' y E23 conserva ABS($B23). Caché de F6:F30 en las 12 pestañas: Counter({'—': 240, None: 60}) — 0 verdes. pycel, «mayor es mejor» F6: 10.000/12.000→+0,20 '✅ OK'; /9.800→−0,02 '✅ OK'; /9.000→−0,10 '⚠️ Atención'; /8.000→−0,20 '🔴 Alerta'; sin presupuesto → '—'. «menor es mejor» F13: 10.000/10.200→+0,02 '✅ OK'; /10.800→+0,08 '⚠️'; /12.000→+0,20 '🔴'; /9.000→−0,10 '✅ OK'; sin presupuesto → '—'. EBITDA F23: ppto −3.000 / real 0 → E23=1,0 '✅ OK' (no invierte el signo); ppto −3.000 / real −6.000 → −1,0 '🔴'. Filas 24 y 27-30 (que leen D, no E): sin ventas B24/C24/D24='' y F24='—'; con ventas (margen 15 %→9 %) D24=−0,06 y F24='🔴 Alerta'."},
+    {"id": "RX-06", "estado": "resuelto", "evidencia": "Convención (a) aplicada tal cual. 07!Proyecciones!A17='Flujo libre del proyecto (sin deuda)' con B17='=B11-MAX(0,(B11-B12)*$C$29)' y nota G17; C22='=B17' … G22='=F17'; B22 sigue siendo '=-'Resumen Ejecutivo'!$C$13'. A24/A25/A26 renombradas a «TIR del proyecto (sin apalancamiento)» / «VAN del proyecto» / «Payback del proyecto (años)»; A33 lleva la nota exacta pedida; Instrucciones!B9 reescrita. SPEC §7-bis:240-245 tiene la decisión 10 con fecha 2026-08-29. Copia rellena propia (ventas 300-420 k€, amortización 15.000, inversión 150.000, préstamo 100.000 al 6 %/8 años): fila 17 = [30.750, 33.450, 36.150, 38.850, 41.550] y coincide euro a euro con EBIT×(1−t)+amortización en los 5 años (True ×5), frente a la fila 18 apalancada [26.250, 29.404,66, 32.586,60, 35.797,46, 39.038,97]; B22:G22 = [−150.000, 30.750, …, 41.550]; acumulado [−150.000, −119.250, −85.800, −49.650, −10.800, +30.750]. Tras inject_cache + motor.cachear_irr: B24 = 0,0622178 (6,22 %) NUMÉRICO, B25 VAN@8 % = −7.318,62 €, B26 payback = 4,2599 años. Coherencia: signo del año 0 negativo, payback cuadra con el acumulado (4 + 10.800/41.550 = 4,26) y VAN>0 ⇔ TIR>tasa se cumple (TIR 6,22 % < 8 % ⇒ VAN < 0). Con el libro en blanco cachear_irr inyecta '—' y B26 = '—'. CELDA_IRR/RANGO_FLUJOS (motor.py:1838-1839) sin tocar. El caso trazado de main.py sigue dando 11,9592 % = SPEC."},
+    {"id": "RX-07", "estado": "resuelto", "evidencia": "'Financiación'!C8 = '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0)' y C12:C16 = '=IF($A12<=$C$7,$B12*$C$5,$C$8)'. pycel, 100.000 € al 6 % a 8 años: C7=0 reproduce el cuadro anterior exacto (C8=16.103,59; año 1 int 6.000 / amort 10.103,59 / pendiente 89.896,41; suma amortizada 5 años 56.954,90). C7=1: C8=17.913,50; año 1 cuota=6.000=intereses, amortización 0,00, capital pendiente 100.000 sin bajar; año 2 primera cuota francesa 17.913,50 (int 6.000, amort 11.913,50); suma amortizada 5 años 52.117,00 < 100.000. C7=2: dos años sólo de intereses, C8=20.336,26, suma 45.640,93. Consumidores: 07!Ratios!C5 divide por 'Financiación'!$C$12 (el SERVICIO del año, no C8) — con C7=1 el DSCR pasa de 2,748 a 7,375 porque el servicio del año 1 baja a 6.000 €; los intereses del P&L leen la columna D (Proyecciones!B13='Financiación'!$D$12). Notas D6/D7/D8 y B20 coherentes con la fórmula."},
+    {"id": "RX-08", "estado": "resuelto", "evidencia": "03!'Flujo Mensual'!A25 = 'Liquidación de IVA (mod. 303) · enero = input (4T anterior)' (59 caracteres) con ancho de la columna A = 62,0 (no trunca). B25 lleva el ÚNICO comentario de la hoja (autor 'AI Chef Pro') con el texto exacto pedido, sobrevive a inject_cache. NO se añadió columna N: max_column = 13 (M) y N25 = None; page_setup fitToWidth=1, paperSize=9 (A4), landscape."},
+    {"id": "RX-09", "estado": "resuelto", "evidencia": "(b) 07!'Resumen Ejecutivo'!C16 = '=IF('Financiación'!$C$4=0,\"—\",'Financiación'!$C$6)' → caché '—' con el libro en blanco; en mi copia rellena con C4=100.000 devuelve 8,0. 'Financiación'!D5 = 'TIN, no TAE. (valor orientativo — cámbialo)' y D6 = 'Plazo TOTAL, carencia incluida. (valor orientativo — cámbialo)'. (a) SÍ se aplicó: 07!'Resumen Ejecutivo'!B3 = 'VALORES DE EJEMPLO — sustitúyelos por los tuyos', misma fila y convención que 02!Datos!B3, 03!'Flujo Mensual'!A3, 06!Ratios!B3 y BONUS-08!Simulador!A3; nada se desplazó (B4 sigue siendo 'DATOS DEL PROYECTO')."},
+    {"id": "RX-10", "estado": "resuelto", "evidencia": "07!Instrucciones B12='Pestañas:' · B13 Resumen Ejecutivo · B14 Proyecciones · B15 Financiación (con el texto largo del cuadro de amortización) · B16 Ratios · B17 Garantías — las cinco seguidas y en el orden real de las hojas ['Instrucciones','Resumen Ejecutivo','Proyecciones','Financiación','Ratios','Garantías']. B20 ya no repite Financiación: ahí vive la línea de la amortización del inmovilizado. B9 (TIR) actualizada por RX-06."},
+    {"id": "RC2-02", "estado": "resuelto", "evidencia": "src/pages/KitPlanFinanciero.tsx:73 (FAQPage) dice ahora «…la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas…», idéntico a astro-site/src/data/productos/kits/kit-plan-financiero.ts:101/:260 y a FaqAccordion.tsx:20. Commit fad42b7."},
+    {"id": "RC2-03", "estado": "resuelto", "evidencia": "src/data/productos-changelog.ts:326 updated: '2026-08-29' y :330 date: '2026-08-29', coherente con la cabecera del data file de Astro (kit-plan-financiero.ts:21/:23/:31 «COM-23 (v2.0, 2026-08-29)»). Commit fad42b7."},
+    {"id": "RC2-04", "estado": "resuelto", "evidencia": "src/pages/KitPlanFinanciero.tsx:75 dice «…100 % reembolso sin preguntas.» con espacio fino de separación, igual que FaqAccordion.tsx:28 y kit-plan-financiero.ts:109/:268."},
+    {"id": "RC2-05", "estado": "resuelto", "evidencia": "astro-site/src/data/productos/kits/kit-inventario.ts:293 y kit-plan-financiero.ts:325 dicen los DOS { href: '/kit-gestion-personal', label: 'Kit Gestión Personal' }: el label ya está unificado, que es la parte del fix que estaba en alcance. La segunda mitad («decidir con John si pasa a Kit Gestión de Personal y Turnos», kit-gestion-personal.ts:94) el propio hallazgo la declara fuera de alcance y sigue abierta como decisión de John, no como defecto."},
+    {"id": "RC2-06", "estado": "resuelto", "evidencia": "astro-site/src/data/productos/kits/kit-plan-financiero.ts:15-18: el comentario de cabecera dice ahora «hero.badgeTone = 'red' (badge de alerta). OJO: el badge YA NO cita «El 60% de los restaurantes cierra…» — esa cifra sin fuente se retiró a propósito (COM-24, v2.0); hoy dice «La mayoría de los cierres tempranos…». No restaurarla.», y coincide con hero.badge:133."}
+  ],
+  "celdas_clave_del_critico_repetidas": [
+    "03-cash-flow-forecast.xlsx : 'Flujo Mensual' : C5 = '=B29' con A29 = 'SALDO FINAL'; caché C5:M5 = 15.000 en los 12 meses. SIN REGRESIÓN.",
+    "02-calculadora-punto-equilibrio.xlsx : 'Break-Even' : C10 = '=IFERROR(ROUNDUP($C$9/Datos!$C$20,0),\"Indica el ticket medio\")' → 41,0; C8=23.076,92 · C9=887,57 · C13=16,1377 · C17=43. SIN REGRESIÓN.",
+    "06-dashboard-ratios-financieros.xlsx : Ratios : C20 = '=IFERROR(($C$6-$C$9)/$C$6,…)' → 0,26835; C9 = '=IFERROR($C$8+$C$36+$C$10+$C$37,0)' → 23.017,6; C22 = '=IFERROR($C$6/($C$13*$C$12),…)' → 3,3611 (por plaza y hora); C38 alquiler 3.000 fuera del GOP. SIN REGRESIÓN.",
+    "07-informe-viabilidad-bancos.xlsx : Financiación : C8 + A11:F16 — C8 CAMBIADA A PROPÓSITO por RX-07 a '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0)'; con C7=0 el cuadro es idéntico al que certificó el crítico (B13='=$F$12', D12='=$B12*$C$5'). SIN REGRESIÓN.",
+    "07-informe-viabilidad-bancos.xlsx : Ratios : C5 y E5 · Proyecciones : B24 — C5 = '=IFERROR(Proyecciones!$B$18/'Financiación'!$C$12,\"Indica el préstamo\")' intacta, E5 caché '—'; B24 = '=IFERROR(IRR($B$22:$G$22),\"—\")' intacta, caché '—' con el libro en blanco. SIN REGRESIÓN.",
+    "BONUS-09-checklist-pre-apertura.xlsx : Checklist : A1 = '…— 54 Tareas', C67 = '=COUNTIF($A$5:$A$64,\"<>\")' → 54,0; C71 → 0,0. SIN REGRESIÓN."
+  ],
+  "changelog_v2_verificado": {
+    "fichero": "src/data/productos-changelog.ts:324-347 (14 viñetas)",
+    "veredicto": "las 14 siguen siendo ciertas en mi copia",
+    "las_dos_editadas": [
+      ":336 TIR/VAN/payback «sobre el dinero que genera el negocio antes de la deuda … y si puedes pagar la cuota del préstamo te lo dice el DSCR de la pestaña Ratios» — CIERTA: B22:G22 leen la fila 17 (flujo libre) y A33/Instrucciones!B9 lo declaran. «La tasa de descuento y el tipo del IS son ahora celdas que puedes cambiar» — CIERTA: Proyecciones!C27 (0,08) y C29 (0,25) locked=False, relleno E8F5E9, DV decimal between, con la nota del 25 %/15 % en A30.",
+      ":337 «Si pides carencia, los primeros años pagas solo intereses y la cuota se recalcula sobre el plazo que queda» — CIERTA: demostrado con C7=1 y C7=2."
+    ],
+    "otras_afectadas_por_los_RX": [
+      ":339 «el semáforo ya no castiga vender por encima del presupuesto ni gastar de menos, y con EBITDA presupuestado negativo deja de invertir el signo. Las filas de ratios tienen por fin su desviación en puntos porcentuales» — CIERTA en los cuatro extremos (pycel).",
+      ":334 «La liquidación de IVA se calcula sola en abril, julio y octubre» — CIERTA: sólo E25/H25/K25 llevan MAX(0,…); el resto '=\"\"'.",
+      ":346 «Gráficos de verdad en 9 de las 10 plantillas … hojas protegidas sin contraseña» — CIERTA: 9/9 charts, 56/56 protegidas."
+    ],
+    "landing": "sin cambios necesarios, confirmado: las 6 superficies que citan TIR/VAN/payback (kit-plan-financiero.ts:99/:172/:187/:258/:285/:303 y los gemelos FaqAccordion/ContentGrid/WhySection/CtaFinal/KitPlanFinanciero.tsx:72) no se comprometen con ninguna convención."
+  },
+  "hallazgos_nuevos": [
+    {
+      "id": "V-01",
+      "severidad": "media",
+      "donde": "07-informe-viabilidad-bancos.xlsx : Ratios : C5 (DSCR) · generador scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py (tabla RATIOS_07, fila del DSCR)",
+      "medido": "C5 = '=IFERROR(Proyecciones!$B$18/'Financiación'!$C$12,…)'. El numerador B18 es el CASH FLOW OPERATIVO = beneficio neto + amortización = EBITDA − intereses − IS, y el denominador C12 es el servicio COMPLETO del año (intereses + capital): los intereses se restan dos veces. Medido en mi copia rellena (EBITDA 36.000, amortización 15.000, intereses 6.000, IS 3.750, servicio 16.103,59): C5 = 1,6301 y E5 = '✅'. El DSCR canónico (CFADS = EBITDA − IS = 32.250) daría 2,0026 — un 18 % más alto. No produce verdes falsos (sesga a la baja), pero sí ROJOS falsos: un proyecto con DSCR real 1,30 se imprime como ~1,06 y cae en 🔴 en el documento que va al banco. Gana relevancia con RX-06, porque A33 y el changelog:336 remiten ahora explícitamente al DSCR como la medida de si puedes pagar el préstamo.",
+      "fix": "Numerador = flujo antes de deuda: C5 = '=IFERROR((Proyecciones!$B$11-Proyecciones!$B$15)/'Financiación'!$C$12,\"Indica el préstamo\")' (EBITDA menos IS), o directamente la fila 17 de flujo libre que RX-06 acaba de crear: '=IFERROR(Proyecciones!$B$17/'Financiación'!$C$12,\"Indica el préstamo\")'. Es preexistente (el crítico lo dio por bueno), no una regresión del corrector."
+    },
+    {
+      "id": "V-02",
+      "severidad": "media",
+      "donde": "07-informe-viabilidad-bancos.xlsx : Financiación : C7/C8 · generador grupo_c.py (bloque de datos del préstamo, DV 'C4 C6 C7' decimal ≥ 0)",
+      "medido": "RX-07 mete C7 en el denominador de C8 pero la validación de C7 sigue siendo la genérica «decimal ≥ 0», sin techo. pycel sobre copia propia, préstamo 100.000 € al 6 %: con C6=8 y C7=10 → C8 = −48.543,69 €, es decir una «CUOTA ANUAL (€)» NEGATIVA impresa en la portada financiera del informe bancario; con C6=8 y C7=8 → C8 = 0,00 € y el cuadro amortiza 0 los 5 años con el capital pendiente clavado en 100.000. Antes de RX-07 esto era imposible porque C8 no leía C7. Requiere un input que contradice la propia nota D6 («Plazo TOTAL, carencia incluida»), pero nada lo impide.",
+      "fix": "Anular en origen igual que se hizo con 06!Ratios!C17 en RX-03: C8 = '=IF(($C$6-$C$7)<=0,\"La carencia no puede igualar ni superar el plazo\",IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0))'. Las celdas del cuadro que leen C8 ya están dentro de un IF y el ISNUMBER de los semáforos del 07 absorbe el texto."
+    },
+    {
+      "id": "V-03",
+      "severidad": "baja",
+      "donde": "05-pyl-mensual-real-vs-presupuesto.xlsx : Instrucciones : B7-B10 (frente a 03-cash-flow-forecast.xlsx : Alertas, que sí tiene la leyenda)",
+      "medido": "Tras RX-01/RX-05 el 05 se entrega con 240 celdas «—» en F6:F30 (contadas en la caché: Counter({'—': 240})) y su hoja de Instrucciones no explica en ningún sitio qué significa el guion: B8 sólo habla del signo del semáforo y de los umbrales B22:B25. El 03 sí tiene esa leyenda literal en su hoja Alertas («El estado «—» significa que ese mes todavía no tiene ni cobros ni pagos: el semáforo no opina sobre un mes vacío»). El cliente que abre el 05 recién comprado ve 240 guiones sin explicación.",
+      "fix": "Una línea en 05!Instrucciones, con el mismo tono que la del 03: «▸ El estado «—» significa que ese mes todavía no tiene presupuesto: el semáforo no opina hasta que lo pongas.» Es consecuencia directa de los dos fixes, no un defecto previo."
+    },
+    {
+      "id": "V-04",
+      "severidad": "baja",
+      "donde": "01-plan-financiero-previsional.xlsx : 'Año 1'..'Año 3' : fila 24 · 01b : 'Año 1'..'Año 5' : fila 24 · 05 : 'Resumen Anual' : B18:N18 · 02 : Escenarios : C16:E16 · BONUS-08 : Simulador : B20:D20",
+      "medido": "RX-05 sustituyó '=IF(B10=0,0,B23/B10)' por '=IF(B10=0,\"\",…)' SÓLO en las 12 pestañas mensuales del 05 (filas 24 y 27-30). Barrido del patrón '=IF(<ref>=0,0,' en los 10 ficheros: quedan 123 celdas con la versión antigua — p. ej. 01!'Año 1'!B24 = '=IF(B10=0,0,B23/B10)' y 05!'Resumen Anual'!B18 = '=IF(B6=0,0,B17/B6)'. Con el libro tal y como se entrega imprimen «0,0 %» de margen EBITDA y de Prime Cost para meses sin una sola venta, que es exactamente la afirmación falsa que RX-05 vino a quitar. NO produce ningún verde falso: comprobado que ninguna de esas 123 celdas alimenta un semáforo (05!'Resumen Anual' no tiene ni una celda con emoji; 01/01b no tienen columna de semáforo; el formato condicional del 02 vive en C13:E13, no en la fila 16).",
+      "fix": "Extender el criterio de RX-05 a esas 123 celdas (mismo '=IF(x=0,\"\",…)'), o dejarlo documentado como decisión consciente de que sólo el 05 mensual distingue «sin datos» de «cero»."
+    }
+  ],
+  "fuera_de_mi_alcance_pero_material": "RC2-01 sigue en pie por definición (lo cierra el APPLY): medido en solo lectura sobre astro-site/public/dl/kit-plan-financiero/ el 2026-08-29 → hojas=53, charts=0, protegidas=0, y 01!Instrucciones dice 'Versión 1.1 · agosto 2026'. La capa de copy de main ya afirma v2.0 con 14 viñetas. Ninguna de mis conclusiones autoriza publicar sin ejecutar el build v2.0 sobre dl/.",
+  "higiene": {
+    "termica": "istats cpu temp antes de cada python/node; un solo proceso cada vez; máximo registrado 41,5 °C (el dry-run) y mínimo 38,7 °C. Sin builds, sin Playwright, sin navegador.",
+    "produccion": "main.py sólo con --dry-run y CLAUDE_SCRATCHPAD=/private/tmp/.../scratchpad/ver; astro-site/public/dl/kit-plan-financiero/ únicamente LEÍDO (openpyxl, sin guardar); sin KIT_PLAN_FINANCIERO_APPLY.",
+    "git": "ningún commit, push, checkout, reset ni stash. Sólo git status/log/diff/show de lectura.",
+    "pycel": "1.0b30, siempre sobre copias en scratchpad/ver/pycel/. Nota de método: hay que evaluar la celda objetivo ANTES del set_value para que pycel construya el grafo; si se hace al revés devuelve el valor cacheado del fichero y da falsos resultados (me pasó en la primera pasada y por eso repetí todos los escenarios)."
+  }
+}

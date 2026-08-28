@@ -119,15 +119,40 @@ def _es_num(x):
 
 
 def _sem_mayor_mejor(celda, verde_ref, ambar_ref):
-    """Ingresos, EBITDA y márgenes: lo malo es quedarse CORTO."""
-    return ('=IF(' + celda + '>=-' + verde_ref + ',"✅ OK",IF('
-            + celda + '>=-' + ambar_ref + ',"⚠️ Atención","🔴 Alerta"))')
+    """Ingresos, EBITDA y márgenes: lo malo es quedarse CORTO.
+
+    RX-01 — el `ISNUMBER` no es decorativo: la celda de desviación devuelve
+    TEXTO cuando no hay presupuesto (cadena vacía de `_desviacion_pct`) o
+    cuando un `IFERROR` se dispara, y en Excel `"" >= -0,05` es VERDADERO
+    (cualquier texto gana a cualquier número). Sin la guarda, las 240 celdas
+    de `F6:F30` de las 12 pestañas salían «✅ OK» con el libro vacío, y un
+    EBITDA real de −8.000 € contra un presupuesto de 0 también.
+    """
+    return ('=IFERROR(IF(ISNUMBER(' + celda + '),IF(' + celda + '>=-'
+            + verde_ref + ',"✅ OK",IF(' + celda + '>=-' + ambar_ref
+            + ',"⚠️ Atención","🔴 Alerta")),"—"),"—")')
 
 
 def _sem_menor_mejor(celda, verde_ref, ambar_ref):
-    """Gastos y ratios de coste: lo malo es PASARSE."""
-    return ('=IF(' + celda + '<=' + verde_ref + ',"✅ OK",IF('
-            + celda + '<=' + ambar_ref + ',"⚠️ Atención","🔴 Alerta"))')
+    """Gastos y ratios de coste: lo malo es PASARSE. `ISNUMBER`: RX-01."""
+    return ('=IFERROR(IF(ISNUMBER(' + celda + '),IF(' + celda + '<='
+            + verde_ref + ',"✅ OK",IF(' + celda + '<=' + ambar_ref
+            + ',"⚠️ Atención","🔴 Alerta")),"—"),"—")')
+
+
+def _desviacion_pct(fila, divisor=None):
+    """Desviación % de una fila del 05 (RX-05).
+
+    «Sin presupuesto» y «desviación cero» NO son lo mismo. La fórmula anterior
+    —`=IF(B6=0,0,(C6-B6)/B6)`— devolvía 0 con el presupuesto en blanco, que es
+    el estado en que se entrega el fichero, y el semáforo lo leía como
+    «clavado»: 240 verdes de fábrica. Ahora devuelve la cadena vacía y el
+    `ISNUMBER` de los semáforos la traduce a «—».
+    """
+    f = str(fila)
+    div = divisor or ('$B' + f)
+    return ('=IF($B' + f + '=0,"",IFERROR(($C' + f + '-$B' + f + ')/' + div
+            + ',""))')
 
 
 def _col(n):
@@ -248,8 +273,13 @@ def _resumen_previsional(ws, anios, informe):
                 motor.iferror('($' + ultima_l + str(fila) + '-$' + primera
                               + str(fila) + ')/$' + primera + str(fila)),
                 motor.FMT_PCT)
+    # RX-02: B8 y D8/F8 son `=IFERROR($B7/$B5,"")` y con el libro en blanco
+    # devuelven la cadena vacía; `"" - ""` es #¡VALOR!, y así se entregaba
+    # cacheado en el Resumen de las dos plantillas estrella. Mismo helper que
+    # las filas 5-7.
     motor.f(ws, crec + '8',
-            '=$' + ultima_l + '8-$' + primera + '8', motor.FMT_PP)
+            motor.iferror('$' + ultima_l + '8-$' + primera + '8'),
+            motor.FMT_PP)
     ws[crec + '4'].value = ('Crecimiento Y1→Y' + str(anios)
                             + ' (margen en p.p.)')
     informe.append('Resumen: ' + str(anios * 4)
@@ -274,6 +304,7 @@ def _pestana_mensual(ws, informe):
 
     # 1) INGRESOS: sólo cambia el semáforo (deja de castigar vender de más).
     for fila in (6, 7, 8, 9, 10):
+        motor.f(ws, 'E' + str(fila), _desviacion_pct(fila), motor.FMT_PCT)
         motor.f(ws, 'F' + str(fila),
                 _sem_mayor_mejor('$E' + str(fila), TOL_PCT_VERDE,
                                  TOL_PCT_AMBAR))
@@ -293,8 +324,7 @@ def _pestana_mensual(ws, informe):
         motor.aplicar_estilo(ws, 'D' + r, est_calc, motor.FMT_EUR)
         motor.f(ws, 'D' + r, '=C' + r + '-B' + r, motor.FMT_EUR)
         motor.aplicar_estilo(ws, 'E' + r, est_pct, motor.FMT_PCT)
-        motor.f(ws, 'E' + r, '=IF(B' + r + '=0,0,(C' + r + '-B' + r + ')/B'
-                + r + ')', motor.FMT_PCT)
+        motor.f(ws, 'E' + r, _desviacion_pct(fila), motor.FMT_PCT)
         motor.aplicar_estilo(ws, 'F' + r, est_sem)
         motor.f(ws, 'F' + r,
                 _sem_menor_mejor('$E' + r, TOL_PCT_VERDE, TOL_PCT_AMBAR))
@@ -307,8 +337,8 @@ def _pestana_mensual(ws, informe):
     for L in ('B', 'C'):
         motor.f(ws, L + r, '=SUM(' + L + '13:' + L + '20)', motor.FMT_EUR)
     motor.f(ws, 'D' + r, '=C' + r + '-B' + r, motor.FMT_EUR)
-    motor.f(ws, 'E' + r, '=IF(B' + r + '=0,0,(C' + r + '-B' + r + ')/B'
-            + r + ')', motor.FMT_PCT)
+    motor.f(ws, 'E' + r, _desviacion_pct(FILA_TOTAL_GASTOS_MES),
+            motor.FMT_PCT)
     motor.f(ws, 'F' + r,
             _sem_menor_mejor('$E' + r, TOL_PCT_VERDE, TOL_PCT_AMBAR))
 
@@ -321,8 +351,9 @@ def _pestana_mensual(ws, informe):
     for L in ('B', 'C'):
         motor.f(ws, L + e, '=' + L + '10-' + L + r, motor.FMT_EUR)
     motor.f(ws, 'D' + e, '=C' + e + '-B' + e, motor.FMT_EUR)
-    motor.f(ws, 'E' + e, motor.iferror('($C' + e + '-$B' + e + ')/ABS($B'
-                                       + e + ')'), motor.FMT_PCT)
+    motor.f(ws, 'E' + e,
+            _desviacion_pct(FILA_EBITDA_MES, 'ABS($B' + e + ')'),
+            motor.FMT_PCT)
     motor.f(ws, 'F' + e,
             _sem_mayor_mejor('$E' + e, TOL_PCT_VERDE, TOL_PCT_AMBAR))
 
@@ -332,10 +363,12 @@ def _pestana_mensual(ws, informe):
     ws['A' + m]._style = copy.copy(est_label)
     for L in ('B', 'C'):
         motor.aplicar_estilo(ws, L + m, est_pct, motor.FMT_PCT)
-        motor.f(ws, L + m, '=IF(' + L + '10=0,0,' + L + e + '/' + L + '10)',
+        # RX-05: sin ventas el margen no es 0 %, es desconocido. Devolver 0
+        # hacía que la diferencia en p.p. fuese 0 y el semáforo verde.
+        motor.f(ws, L + m, '=IF(' + L + '10=0,"",' + L + e + '/' + L + '10)',
                 motor.FMT_PCT)
     motor.aplicar_estilo(ws, 'D' + m, est_pct, motor.FMT_PP)
-    motor.f(ws, 'D' + m, '=C' + m + '-B' + m, motor.FMT_PP)
+    motor.f(ws, 'D' + m, motor.iferror('$C' + m + '-$B' + m), motor.FMT_PP)
     ws['E' + m].value = 'p.p.'
     ws['E' + m].alignment = Alignment(horizontal='center')
     motor.aplicar_estilo(ws, 'F' + m, est_sem)
@@ -346,11 +379,13 @@ def _pestana_mensual(ws, informe):
     # sobre las ventas de COMIDA, no sobre el total con la barra dentro.
     ws['A26'].value = 'RATIOS AUTOMÁTICOS'
     ws['A26']._style = copy.copy(est_titulo)
+    # RX-05: la rama «sin base» devuelve «» (no 0), para que la diferencia
+    # en p.p. de la columna D no valga 0 y el semáforo no se ponga verde.
     formulas = {
-        27: '=IF(({L}10-{L}7)=0,0,{L}13/({L}10-{L}7))',
-        28: '=IF({L}7=0,0,{L}14/{L}7)',
-        29: '=IF({L}10=0,0,{L}15/{L}10)',
-        30: '=IF({L}10=0,0,({L}13+{L}14+{L}15)/{L}10)',
+        27: '=IF(({L}10-{L}7)<=0,"",{L}13/({L}10-{L}7))',
+        28: '=IF({L}7=0,"",{L}14/{L}7)',
+        29: '=IF({L}10=0,"",{L}15/{L}10)',
+        30: '=IF({L}10=0,"",({L}13+{L}14+{L}15)/{L}10)',
     }
     for fila, etiqueta, sentido in RATIOS_MES:
         rr = str(fila)
@@ -361,7 +396,8 @@ def _pestana_mensual(ws, informe):
             motor.f(ws, L + rr, formulas[fila].replace('{L}', L),
                     motor.FMT_PCT)
         motor.aplicar_estilo(ws, 'D' + rr, est_pct, motor.FMT_PP)
-        motor.f(ws, 'D' + rr, '=C' + rr + '-B' + rr, motor.FMT_PP)
+        motor.f(ws, 'D' + rr, motor.iferror('$C' + rr + '-$B' + rr),
+                motor.FMT_PP)
         ws['E' + rr].value = 'p.p.'
         ws['E' + rr].alignment = Alignment(horizontal='center')
         motor.aplicar_estilo(ws, 'F' + rr, est_sem)
@@ -525,11 +561,16 @@ def demos(carpeta, origen, destino):
         copia = os.path.join(destino, '_ga_' + f05)
         shutil.copy2(p05, copia)
         xl = ExcelCompiler(filename=copia)
-        _ev(xl, "'Ene'!F6")
+        # OJO al ORDEN: hay que evaluar la celda de DESVIACIÓN antes que la
+        # del semáforo. Si se compila primero `F6`, pycel no invalida `E6` al
+        # hacer `set_value` sobre `B6`/`C6` y el semáforo se queda con el «—»
+        # de la primera pasada — un falso fallo que no existe en Excel
+        # (comprobado: evaluando `E6` primero, `F6` da «✅ OK»).
+        sin_ppto_ingresos = (_ev(xl, "'Ene'!E6"), _ev(xl, "'Ene'!F6"))
         xl.set_value("'Ene'!B6", 10000)
         xl.set_value("'Ene'!C6", 12000)
         vender_mas = _ev(xl, "'Ene'!F6")
-        _ev(xl, "'Ene'!F13")
+        sin_ppto_gastos = (_ev(xl, "'Ene'!E13"), _ev(xl, "'Ene'!F13"))
         xl.set_value("'Ene'!B13", 10000)
         xl.set_value("'Ene'!C13", 12000)
         gastar_mas = _ev(xl, "'Ene'!F13")
@@ -549,6 +590,8 @@ def demos(carpeta, origen, destino):
         consolida = _ev(xl3, "'Resumen Anual'!B6")
 
         d = {
+            'sin_presupuesto_ingresos_E6_F6': sin_ppto_ingresos,
+            'sin_presupuesto_gastos_E13_F13': sin_ppto_gastos,
             'vender_20pct_por_encima': vender_mas,
             'gastar_20pct_de_mas': gastar_mas,
             'EBITDA_ppto_-3000_real_0': ebitda_neg,
@@ -556,6 +599,14 @@ def demos(carpeta, origen, destino):
             "'Resumen Anual'!B6_con_'Ene'!C6=25000": consolida,
         }
         fuera['grupo_a']['05'] = d
+        # RX-01/RX-05: sin presupuesto el semáforo NO opina. Antes salían
+        # 240 «✅ OK» de fábrica en las 12 pestañas.
+        for etiqueta, par in (('ingresos', sin_ppto_ingresos),
+                              ('gastos', sin_ppto_gastos)):
+            if par[1] != '—':
+                fuera['fallos'].append(
+                    '05: sin presupuesto, el semáforo de ' + etiqueta
+                    + ' no calla (' + str(par) + ')')
         if not (isinstance(vender_mas, str) and 'OK' in vender_mas):
             fuera['fallos'].append(
                 '05: vender un 20 % por encima del presupuesto sigue sin ser '

@@ -60,6 +60,7 @@ Qué arregla, id por id:
 import copy
 import re
 
+from openpyxl.comments import Comment
 from openpyxl.styles import Alignment, Font
 
 import motor
@@ -284,9 +285,19 @@ def _flujo_mensual(wb, informe):
         _bloque(fila, etiqueta)
         _inputs(fila)
 
-    _bloque(25, 'Liquidación de IVA (mod. 303)')
+    # RX-08: B25 es la única casilla verde de una fila que el resto del año
+    # se calcula sola, y no había ni etiqueta ni comentario que lo dijera —la
+    # explicación vivía en otras dos hojas—. NO se usa la columna N: añadir
+    # una columna a esta hoja rompe el ajuste A4.
+    _bloque(25, 'Liquidación de IVA (mod. 303) · enero = input '
+                '(4T anterior)')
     motor.aplicar_estilo(ws, 'B25', est_input)
     motor.val(ws, 'B25', 0, motor.FMT_EUR, verde_=True)
+    ws['B25'].comment = Comment(
+        'Enero es input: aquí pagas el IVA del 4T del año ANTERIOR (modelo '
+        '303, del 1 al 30 de enero). Los demás meses los calcula la hoja '
+        'sola en abril, julio y octubre.',
+        'AI Chef Pro', height=110, width=320)
     calculadas = set()
     for destino, ini, fin in TRIMESTRES:
         motor.f(ws, destino + '25',
@@ -343,7 +354,10 @@ def _flujo_mensual(wb, informe):
 
     ws['A41'] = '© 2026 AI Chef Pro · aichef.pro'
     ws['A41'].font = Font(size=8)
-    motor.anchos(ws, {'A': 46})
+    # 62: la etiqueta más larga de la columna es la de la fila 25 (RX-08),
+    # de 59 caracteres. El A4 no sufre: `print_setup` fija `fitToWidth = 1`
+    # y Excel reescala la hoja entera.
+    motor.anchos(ws, {'A': 62})
     informe.append('03: mapa nuevo de «Flujo Mensual» — saldo encadenado a la '
                    'fila ' + str(F_SALDO_FIN) + ', desfase de tarjeta, plazo '
                    'de proveedores, SS del mes siguiente e IVA trimestral '

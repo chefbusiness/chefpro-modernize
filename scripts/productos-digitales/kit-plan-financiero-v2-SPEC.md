@@ -237,6 +237,12 @@ revienta antes. Obligatorio: `COUNTA` → `COUNTIF(rango,"<>")`; `PMT`/`PAGO` �
 7. **Gráficos**: de verdad (§1.1), antes de `inject_cache`, y el gate los cuenta tras el post-proceso.
 8. **«Fórmulas encadenadas entre plantillas»** → «coherentes entre sí»; dentro de cada libro sí se encadena.
 9. **`aggregateRating`, reseñas, testimonios y ancla de 190 €**: no se tocan (John); las dos primeras suben a §7.
+10. **TIR/VAN/payback del proyecto (flujo libre sin deuda); el préstamo se mide con el DSCR** (2026-08-29, a raíz de RX-06). El año 0 es la inversión TOTAL,
+   así que los años 1-5 tienen que ser flujo **libre del proyecto** = EBITDA − IS calculado SIN intereses (= EBIT×(1−t)+amortización), en fila propia y visible
+   de `07!Proyecciones` («Flujo libre del proyecto (sin deuda)», fila 17), que es la que alimenta `B22:G22`. Se descarta la convención del inversor (flujo
+   apalancado contra fondos propios) porque lo que pide un analista de riesgos es si el negocio se sostiene solo. Los indicadores se renombran («TIR del
+   proyecto (sin apalancamiento)», «VAN del proyecto», «Payback del proyecto (años)») y la hoja lo dice bajo la tabla. La capacidad de devolver el préstamo la
+   mide el **DSCR** de `07!Ratios`, que sí lee el servicio de deuda del año.
 
 ## 8. Mapa id → sección (90/90)
 
