@@ -15,11 +15,11 @@ export default function AuthorSection() {
               <p className="text-[#FFD700] text-xs font-bold tracking-[0.2em] uppercase mb-2">Creado por</p>
               <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Chef John Guerrero</h3>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-4">
-                CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura y el plan financiero de mas de 200 establecimientos hosteleros.
+                CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura y el plan financiero de más de 200 establecimientos hosteleros.
               </p>
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
                 <span className="px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] text-xs font-medium">CEO AI Chef Pro</span>
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">Consultor Gastronomico</span>
+                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">Consultor Gastronómico</span>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">+200 aperturas asesoradas</span>
               </div>
             </div>

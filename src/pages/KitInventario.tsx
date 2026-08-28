@@ -115,7 +115,7 @@ export default function KitInventario() {
               <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pack-appcc" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pack APPCC</a>
               <span className="text-gray-700 hidden md:inline">·</span>
-              <a href="/kit-gestion-personal" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Gestion Personal</a>
+              <a href="/kit-gestion-personal" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Gestión Personal</a>
               <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pro-prompts-ebook" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pro Prompts eBook</a>
               <span className="text-gray-700 hidden md:inline">·</span>

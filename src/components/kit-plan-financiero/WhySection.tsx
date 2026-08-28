@@ -4,13 +4,13 @@ import FadeIn from '../ebook/FadeIn';
 const reasons = [
   {
     icon: Utensils,
-    title: 'Disenado para Hosteleria',
-    desc: 'Ratios, benchmarks y estructura de costes especificos del sector: food cost, labor cost, prime cost, GOP. No son plantillas financieras genericas.',
+    title: 'Diseñado para Hostelería',
+    desc: 'Ratios, benchmarks y estructura de costes específicos del sector: food cost, labor cost, prime cost, GOP. No son plantillas financieras genéricas.',
   },
   {
     icon: Calculator,
-    title: 'Plantillas Coherentes Entre Si',
-    desc: 'Mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro las formulas si estan encadenadas: mensual, total anual y resumen.',
+    title: 'Plantillas Coherentes Entre Sí',
+    desc: 'Mismas categorías de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro las fórmulas sí están encadenadas: mensual, total anual y resumen.',
   },
   {
     icon: ShieldCheck,
@@ -35,10 +35,10 @@ export default function WhySection() {
         <FadeIn>
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-3">
-              ¿Por Que Este <span className="text-[#FFD700]">Kit</span>?
+              ¿Por Qué Este <span className="text-[#FFD700]">Kit</span>?
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              No son plantillas financieras genericas. Son herramientas disenadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010, asesorando aperturas.
+              No son plantillas financieras genéricas. Son herramientas diseñadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010, asesorando aperturas.
             </p>
           </div>
         </FadeIn>
@@ -57,7 +57,7 @@ export default function WhySection() {
         </div>
         <FadeIn>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-center">
-            <p className="text-gray-300 mb-4 text-sm">Compatible con cualquier software de hojas de calculo:</p>
+            <p className="text-gray-300 mb-4 text-sm">Compatible con cualquier software de hojas de cálculo:</p>
             <div className="flex flex-wrap justify-center gap-2">
               {[
                 { label: 'Excel', highlight: true },

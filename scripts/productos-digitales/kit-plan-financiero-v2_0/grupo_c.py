@@ -302,13 +302,18 @@ def _ratios_06(wb, informe):
         motor.f(ws, 'D' + r, '=Benchmarks!$D$' + bfila)
         ws['D' + r].alignment = Alignment(horizontal='center')
         if sentido == 'menor':
-            estado = ('=IFERROR(IF($C' + r + '<Benchmarks!$F$' + bfila
+            # ISNUMBER: si C trae el literal de aviso («Indica las ventas»),
+            # Excel compararía TEXTO > NÚMERO como verdadero y encendería el
+            # verde con el libro vacío (BLOQUEO 1-bis del crítico, 24-ago).
+            estado = ('=IFERROR(IF(ISNUMBER($C' + r + '),IF($C' + r
+                      + '<Benchmarks!$F$' + bfila
                       + ',"✅ Excelente",IF($C' + r + '<=Benchmarks!$G$'
-                      + bfila + ',"⚠️ Aceptable","🔴 Alto")),"—")')
+                      + bfila + ',"⚠️ Aceptable","🔴 Alto")),"—"),"—")')
         else:
-            estado = ('=IFERROR(IF($C' + r + '>Benchmarks!$F$' + bfila
+            estado = ('=IFERROR(IF(ISNUMBER($C' + r + '),IF($C' + r
+                      + '>Benchmarks!$F$' + bfila
                       + ',"✅ Sano",IF($C' + r + '>=Benchmarks!$G$' + bfila
-                      + ',"⚠️ Ajustado","🔴 Peligro")),"—")')
+                      + ',"⚠️ Ajustado","🔴 Peligro")),"—"),"—")')
         motor.f(ws, 'E' + r, estado)
         motor.f(ws, 'F' + r, '=Benchmarks!$F$' + bfila, fmts[tipo])
 
@@ -616,13 +621,18 @@ def _ratios_07(wb, informe):
         if sentido == 'menor':
             ref = '< ' + (_pct(opt) if tipo == 'pct'
                           else str(opt) + 'x')
-            estado = ('=IFERROR(IF($C' + r + '<=$F$' + r + ',"✅",IF($C' + r
-                      + '<=$G$' + r + ',"⚠️","🔴")),"—")')
+            # ISNUMBER: con el libro en blanco C es «Indica el préstamo» y
+            # Excel da TEXTO >= NÚMERO como verdadero → cinco ✅ sin datos en
+            # el informe que va al banco (BLOQUEO 1 del crítico, 24-ago).
+            estado = ('=IFERROR(IF(ISNUMBER($C' + r + '),IF($C' + r + '<=$F$'
+                      + r + ',"✅",IF($C' + r + '<=$G$' + r
+                      + ',"⚠️","🔴")),"—"),"—")')
         else:
             ref = '> ' + (_pct(opt) if tipo == 'pct'
                           else str(opt) + 'x')
-            estado = ('=IFERROR(IF($C' + r + '>=$F$' + r + ',"✅",IF($C' + r
-                      + '>=$G$' + r + ',"⚠️","🔴")),"—")')
+            estado = ('=IFERROR(IF(ISNUMBER($C' + r + '),IF($C' + r + '>=$F$'
+                      + r + ',"✅",IF($C' + r + '>=$G$' + r
+                      + ',"⚠️","🔴")),"—"),"—")')
         ws['D' + r] = ref
         ws['D' + r].alignment = Alignment(horizontal='center')
         motor.f(ws, 'E' + r, estado)

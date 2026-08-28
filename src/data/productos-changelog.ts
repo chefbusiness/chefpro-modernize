@@ -323,11 +323,11 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
   },
   'kit-plan-financiero': {
     version: '2.0',
-    updated: '2026-08-24',
+    updated: '2026-08-29',
     entries: [
       {
         version: '2.0',
-        date: '2026-08-24',
+        date: '2026-08-29',
         title: 'Los cálculos que faltaban: tesorería encadenada, informe bancario que calcula y ratios con una sola vara de medir',
         changes: [
           'Tesorería (03): el saldo con el que abre cada mes es ahora el saldo con el que cerró el anterior. Antes arrastraba la línea «Otros pagos», así que once de los doce meses salían mal.',

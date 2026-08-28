@@ -1,9 +1,9 @@
 import FadeIn from '../ebook/FadeIn';
 
 const stats = [
-  { number: '30', label: 'Dias de garantia' },
+  { number: '30', label: 'Días de garantía' },
   { number: '100%', label: 'Reembolso garantizado' },
-  { number: '0', label: 'Preguntas incomodas' },
+  { number: '0', label: 'Preguntas incómodas' },
 ];
 
 export default function GuaranteeSection() {
@@ -12,7 +12,7 @@ export default function GuaranteeSection() {
       <div className="max-w-3xl mx-auto text-center">
         <FadeIn>
           <img src="/money-back-badge.png" alt="100% Money Back Guaranteed" className="w-28 h-28 md:w-32 md:h-32 mx-auto mb-6 object-contain" />
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Garantia de Satisfaccion <span className="text-[#FFD700]">100%</span></h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Garantía de Satisfacción <span className="text-[#FFD700]">100%</span></h2>
           <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
             Si las plantillas no te ayudan a planificar mejor las finanzas de tu restaurante, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.
           </p>

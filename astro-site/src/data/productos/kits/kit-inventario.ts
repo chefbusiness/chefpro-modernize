@@ -290,7 +290,7 @@ const data: KitExcelData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
-    { href: '/kit-gestion-personal', label: 'Kit Gestion Personal' },
+    { href: '/kit-gestion-personal', label: 'Kit Gestión Personal' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],

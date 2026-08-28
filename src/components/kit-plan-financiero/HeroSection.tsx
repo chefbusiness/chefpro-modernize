@@ -19,7 +19,7 @@ const checkItems = [
   'Plan financiero previsional a 3 y 5 años con gráficos automáticos',
   'Calculadora de punto de equilibrio con 3 escenarios',
   'Cash flow forecast 12 meses con alertas de liquidez',
-  'P&L mensual real vs presupuesto con semaforo de desviaciones',
+  'P&L mensual real vs presupuesto con semáforo de desviaciones',
   'Informe de viabilidad listo para presentar al banco',
 ];
 
@@ -68,13 +68,13 @@ export default function HeroSection() {
         </div>
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium animate-fade-in">
-          La mayoria de los cierres tempranos se explican por una planificacion financiera inexistente
+          La mayoría de los cierres tempranos se explican por una planificación financiera inexistente
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
           Kit <span className="text-[#FFD700]">Plan Financiero</span> para Restaurantes
           <span className="block text-2xl md:text-4xl lg:text-5xl mt-2 text-gray-200">
-            Planifica, Controla y Presenta tus Numeros
+            Planifica, Controla y Presenta tus Números
           </span>
         </h1>
 

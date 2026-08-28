@@ -16,12 +16,12 @@ const TEMPLATES = [
   { key: 'plan-previsional-5', icon: TrendingUp, title: 'Plan Financiero Previsional (5 Años)', desc: 'Proyección a 5 años — ideal para bancos, inversores y franquicias.' },
   { key: 'break-even', icon: Target, title: 'Calculadora Punto de Equilibrio', desc: 'Ticket medio, comensales/día y 3 escenarios.' },
   { key: 'cash-flow', icon: Wallet, title: 'Cash Flow Forecast (12 Meses)', desc: 'Flujo de caja con alertas de liquidez.' },
-  { key: 'capex', icon: Building2, title: 'Presupuesto de Inversion / CAPEX', desc: 'Desglose por partida con desviacion real vs presupuesto.' },
-  { key: 'pyl', icon: BarChart3, title: 'P&L Mensual Real vs Presupuesto', desc: 'Desviaciones con semaforo y ratios automaticos.' },
+  { key: 'capex', icon: Building2, title: 'Presupuesto de Inversión / CAPEX', desc: 'Desglose por partida con desviación real vs presupuesto.' },
+  { key: 'pyl', icon: BarChart3, title: 'P&L Mensual Real vs Presupuesto', desc: 'Desviaciones con semáforo y ratios automáticos.' },
   { key: 'ratios', icon: PieChart, title: 'Dashboard de Ratios Financieros', desc: 'Food cost, labor cost, prime cost, GOP, RevPASH.' },
   { key: 'viabilidad', icon: FileText, title: 'Informe de Viabilidad para Bancos', desc: 'TIR, VAN, payback period. Formato profesional.' },
   { key: 'bonus-simulador', icon: Shuffle, title: 'BONUS: Simulador de Escenarios', desc: 'What-if con 3 escenarios comparados.' },
-  { key: 'bonus-checklist', icon: ClipboardList, title: 'BONUS: Checklist Pre-Apertura', desc: '54 items en 7 fases financieras.' },
+  { key: 'bonus-checklist', icon: ClipboardList, title: 'BONUS: Checklist Pre-Apertura', desc: '54 ítems en 7 fases financieras.' },
 ];
 
 export default function KitPlanFinancieroDashboard() {
@@ -87,18 +87,18 @@ export default function KitPlanFinancieroDashboard() {
             </div>
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">Compatibles con Excel, Google Sheets, LibreOffice, Numbers + Imprimible A4</p>
-              <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y abrelos con tu programa favorito.</p>
+              <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y ábrelos con tu programa favorito.</p>
             </div>
           </div>
         </section>
         <ProductChangelog productId="kit-plan-financiero" />
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center space-y-4">
-            <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestion hostelera</p>
+            <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestión hostelera</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="/kit-escandallos" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit de Escandallos — 12 EUR</a>
               <a href="/kit-inventario" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit Inventario — 14 EUR</a>
-              <a href="/kit-gestion-personal" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit Gestion Personal — 14 EUR</a>
+              <a href="/kit-gestion-personal" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit Gestión Personal — 14 EUR</a>
             </div>
           </div>
         </section>

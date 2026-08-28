@@ -23,17 +23,17 @@ revienta antes. Obligatorio: `COUNTA` → `COUNTIF(rango,"<>")`; `PMT`/`PAGO` �
 ## 1. Motor común (`motor.py`) — los 10 ficheros
 
 - **1.1 Gráficos: se construyen de verdad** (DOM-08/TEC-06/COM-03, altas). «Gráficos automáticos» se anuncia **seis veces** (hero, ContentGrid ×3, CTA, FAQ con JSON-LD y
-  dashboard) más un testimonio, y hoy hay **0 charts en las 47 hojas**. Con `openpyxl.chart` en **9 de los 10** (todos menos el BONUS-09): `01`/`01b`!Resumen `A10` `BarChart` de ingresos, gastos y EBITDA por año ·
+  dashboard) más un testimonio, y hoy hay **0 charts en las 53 hojas de la v1.1 (56 en la v2.0)**. Con `openpyxl.chart` en **9 de los 10** (todos menos el BONUS-09): `01`/`01b`!Resumen `A10` `BarChart` de ingresos, gastos y EBITDA por año ·
   `02`!Break-Even `F4` `LineChart` de ingresos vs costes totales sobre el bloque auxiliar nuevo `A20:D31` · `03`!Alertas `F5` `LineChart` de saldo final + serie de umbral
   (columna `E` = `=$C$3`) · `04`!Resumen `F4` `BarChart` presupuesto vs real por categoría · `05`!'Resumen Anual' `A18` `BarChart` previsto vs real · `06`!Ratios `G16`
   `BarChart` tu valor vs objetivo (columnas numéricas nuevas de `Benchmarks`, §4) · `07`!Proyecciones `H3` `LineChart` de EBITDA y cash flow operativo 1-5 ·
   `BONUS-08`!Comparativa `B10` `BarChart` de EBITDA anual por escenario.
-- **1.2 Formato condicional real** (TEC-18/COM-14): **0 reglas** en las 47 hojas y tres Instrucciones prometen colores; hay emojis en texto negro, que en el A4 en blanco y
+- **1.2 Formato condicional real** (TEC-18/COM-14): **0 reglas** en las 53 hojas de la v1.1 (56 en la v2.0) y tres Instrucciones prometen colores; hay emojis en texto negro, que en el A4 en blanco y
   negro de la Fase A no destacan. `semaforo(ws, rango, vocabulario)` con `containsText` en `03!Alertas!C6:D17`, `05!Ene..Dic!F6:F21`, `06!Ratios!E17:E25` y `07!Ratios!E4:E10`;
   regla `expression` `=$C6<$C$3` en `03!Alertas` y para el DSCR.
 - **1.3 Guardas, parámetros en celda y protección** (TEC-11/TEC-15/TEC-25): `IFERROR` en las seis divisiones desnudas de `06!Ratios` (`C17`, `C19`, `C21`, `C22`, `C23`, `C24`)
   y en las tres de `02!Break-Even` (`C8` revienta con coste variable al 100 %, `C9` con 0 días de apertura, `C10` con ticket 0), con texto de ayuda en vez de `#¡DIV/0!`. Ningún
-  parámetro que exista como input en otra hoja del libro va como literal en una fórmula. `ws.protection.sheet = True` sin contraseña en las 47 hojas (hoy `protected=False` en
+  parámetro que exista como input en otra hoja del libro va como literal en una fórmula. `ws.protection.sheet = True` sin contraseña en las 53 hojas de la v1.1 (56 en la v2.0) (hoy `protected=False` en
   todas), verdes con `Protection(locked=False)`, línea «Revisar → Desproteger hoja» y validación numérica ≥ 0 en importes y 0-1 en porcentajes.
 - **1.4 Datos de ejemplo etiquetados y coherentes** (TEC-27/COM-19): `03!B5`=15.000, `06!Ratios!C6:C12` y `02!Datos!C6:C21` van tecleados sin marca, y el ejemplo del 02
   describe un negocio inviable según el propio kit (labor cost 41 %, prime cost ~71 %, «Peligro» en `06!Benchmarks`). Fila «VALORES DE EJEMPLO — sustitúyelos por los tuyos» en

@@ -96,7 +96,7 @@ export default function KitInventarioDashboard() {
             <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestion hostelera</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="/kit-escandallos" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit de Escandallos Pro — 12 EUR</a>
-              <a href="/kit-gestion-personal" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit Gestion Personal — 14 EUR</a>
+              <a href="/kit-gestion-personal" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Kit Gestión Personal — 14 EUR</a>
               <a href="/pack-appcc" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Ver Pack APPCC — 14 EUR</a>
             </div>
           </div>

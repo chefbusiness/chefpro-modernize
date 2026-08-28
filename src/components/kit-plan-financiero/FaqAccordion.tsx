@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: '¿Las plantillas se conectan entre sí?',
-    a: 'Son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas (mensual, total anual, resumen); entre libros no, para que puedas mover o abrir cada plantilla por separado sin romper ninguna referencia.',
+    a: 'Son coherentes entre sí: mismas categorías de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas (mensual, total anual, resumen); entre libros no, para que puedas mover o abrir cada plantilla por separado sin romper ninguna referencia.',
   },
   {
     q: '¿Puedo usarlo para varios restaurantes?',

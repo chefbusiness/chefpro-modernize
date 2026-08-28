@@ -18,7 +18,7 @@ export default function BuyBox() {
           </div>
           <p className="text-gray-400 text-sm mb-6">Precio especial de lanzamiento — 72% de descuento</p>
           <a href={stripeLink} className="inline-block w-full px-8 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">
-            SI, QUIERO EL KIT FINANCIERO — 39 EUR
+            SÍ, QUIERO EL KIT FINANCIERO — 39 EUR
           </a>
           <PaymentBadges className="mt-5" />
         </div>

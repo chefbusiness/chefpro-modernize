@@ -26,7 +26,7 @@ export default function KitPlanFinanciero() {
         <title>Kit Plan Financiero para Restaurantes — Plantillas Excel | AI Chef Pro</title>
         <meta name="description" content="10 plantillas Excel con fórmulas automáticas: plan financiero a 3 y 5 años, punto de equilibrio, cash flow, P&L, CAPEX, ratios e informe de viabilidad para bancos. 39 EUR." />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="plan financiero restaurante, plan de negocio restaurante, punto equilibrio restaurante, cash flow restaurante, P&L hosteleria, viabilidad restaurante, CAPEX restaurante, food cost, abrir restaurante, AI Chef Pro" />
+        <meta name="keywords" content="plan financiero restaurante, plan de negocio restaurante, punto equilibrio restaurante, cash flow restaurante, P&L hostelería, viabilidad restaurante, CAPEX restaurante, food cost, abrir restaurante, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/kit-plan-financiero" />
         <meta property="og:title" content="Kit Plan Financiero para Restaurantes — Plantillas Excel" />
         <meta property="og:description" content="10 plantillas Excel: plan financiero 3 y 5 años, break-even, cash flow, P&L, ratios, informe bancario. 39 EUR." />
@@ -57,9 +57,9 @@ export default function KitPlanFinanciero() {
           },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "8", "bestRating": "5", "worstRating": "1" },
           "review": [
-            { "@type": "Review", "author": { "@type": "Person", "name": "Ricardo Gomez" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "El plan previsional a 3 anos fue lo que me pidio el banco. Lo presente tal cual y me aprobaron 120.000 EUR." },
-            { "@type": "Review", "author": { "@type": "Person", "name": "Ana Beltran" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Lo uso con todos mis clientes. El simulador de escenarios profesionaliza cualquier proyecto de apertura." },
-            { "@type": "Review", "author": { "@type": "Person", "name": "Isabel Campos" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "El dashboard de ratios con benchmarks del sector es exactamente lo que necesitaba para los comites de direccion." }
+            { "@type": "Review", "author": { "@type": "Person", "name": "Ricardo Gómez" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "El plan previsional a 3 años fue lo que me pidió el banco. Lo presenté tal cual y me aprobaron 120.000 EUR." },
+            { "@type": "Review", "author": { "@type": "Person", "name": "Ana Beltrán" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Lo uso con todos mis clientes. El simulador de escenarios profesionaliza cualquier proyecto de apertura." },
+            { "@type": "Review", "author": { "@type": "Person", "name": "Isabel Campos" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "El dashboard de ratios con benchmarks del sector es exactamente lo que necesitaba para los comités de dirección." }
           ]
         })}</script>
 
@@ -67,12 +67,12 @@ export default function KitPlanFinanciero() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Sirve para un restaurante que ya esta abierto?", "acceptedAnswer": { "@type": "Answer", "text": "Si. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente utiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son mas para aperturas o expansiones." }},
-            { "@type": "Question", "name": "¿Necesito conocimientos de contabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Las plantillas estan disenadas para hosteleros, no para contables. Solo introduces tus numeros (ventas, costes, inversiones) y las formulas calculan todo automaticamente: ratios, graficos, escenarios." }},
-            { "@type": "Question", "name": "¿El banco aceptara este informe de viabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "Te da la estructura que piden las entidades: resumen ejecutivo, proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende de tu proyecto y del banco." }},
-            { "@type": "Question", "name": "¿Las plantillas se conectan entre si?", "acceptedAnswer": { "@type": "Answer", "text": "Son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en las 10 plantillas. Dentro de cada libro si hay formulas encadenadas (mensual, total anual, resumen); entre libros no." }},
-            { "@type": "Question", "name": "¿Puedo usarlo para varios restaurantes?", "acceptedAnswer": { "@type": "Answer", "text": "Si. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauracion, inversores y consultores." }},
-            { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. Si no estas satisfecho, 100% reembolso sin preguntas." }}
+            { "@type": "Question", "name": "¿Sirve para un restaurante que ya está abierto?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente útiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son más para aperturas o expansiones." }},
+            { "@type": "Question", "name": "¿Necesito conocimientos de contabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Las plantillas están diseñadas para hosteleros, no para contables. Solo introduces tus números (ventas, costes, inversiones) y las fórmulas calculan todo automáticamente: ratios, gráficos, escenarios." }},
+            { "@type": "Question", "name": "¿El banco aceptará este informe de viabilidad?", "acceptedAnswer": { "@type": "Answer", "text": "Te da la estructura que piden las entidades: resumen ejecutivo, proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende de tu proyecto y del banco." }},
+            { "@type": "Question", "name": "¿Las plantillas se conectan entre sí?", "acceptedAnswer": { "@type": "Answer", "text": "Son coherentes entre sí: mismas categorías de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas (mensual, total anual, resumen); entre libros no." }},
+            { "@type": "Question", "name": "¿Puedo usarlo para varios restaurantes?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauración, inversores y consultores." }},
+            { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. Si no estás satisfecho, 100 % reembolso sin preguntas." }}
           ]
         })}</script>
 
@@ -117,7 +117,7 @@ export default function KitPlanFinanciero() {
               <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/kit-inventario" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Inventario</a>
               <span className="text-gray-700 hidden md:inline">·</span>
-              <a href="/kit-gestion-personal" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Gestion Personal</a>
+              <a href="/kit-gestion-personal" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Gestión Personal</a>
               <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pro-prompts-ebook" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pro Prompts eBook</a>
               <span className="text-gray-700 hidden md:inline">·</span>
