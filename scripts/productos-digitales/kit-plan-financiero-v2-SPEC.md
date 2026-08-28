@@ -262,6 +262,10 @@ revienta antes. Obligatorio: `COUNTA` → `COUNTIF(rango,"<>")`; `PMT`/`PAGO` �
    `01b`, `05!'Resumen Anual'`, `02!Escenarios` y `BONUS-08!Simulador` afirmaban un margen del «0,0 %» para un mes sin una sola venta. Censo de consumidores
    previo al cambio: **ninguno** en 01, 01b, 02 y 05 (ni fórmulas, ni series de gráfico, ni formato condicional — que vive en otras filas), y en BONUS-08 sólo
    `Comparativa!C8:E8`, que es un pase directo `=Simulador!B20` sin aritmética. `AVERAGE`/`SUM` ignoran el texto y no necesitaban cambio.
+14. **El cuadro de amortización se apaga pasado el vencimiento** (2026-08-29, orquestador, defecto preexistente que el fixer de V-02 dejó anotado). El cuadro
+   `07!Financiación!A11:F16` pinta siempre 5 años, así que un préstamo a 3 seguía amortizando en los años 4 y 5 y el capital pendiente se volvía **negativo**.
+   Ahora, si `$A > $C$6` (año posterior al plazo), cuota, intereses y amortización valen 0 —numéricos, no «—», por la misma razón que en la decisión 12—.
+   Demostrado con pycel: plazo 3 → años 4-5 a 0 y capital pendiente final 0; plazo 4 con carencia 1 → año 1 sólo intereses, 3 cuotas francesas, año 5 a 0.
 
 ## 8. Mapa id → sección (90/90)
 

@@ -1,0 +1,1334 @@
+{
+ "producto": "kit-plan-financiero",
+ "version": "2.0",
+ "rol": "motor",
+ "spec": "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md §1",
+ "fecha": "2026-08-29T01:27:02",
+ "modo": "produccion",
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero",
+ "grupos_pedidos": [
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_cargados": [
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_ausentes": [],
+ "solo_motor": false,
+ "literales_sospechosos_total": 0,
+ "ficheros": [
+  {
+   "fichero": "01-plan-financiero-previsional.xlsx",
+   "cambios": [
+    "Año 1: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Año 2: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Año 3: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Resumen: 12 celdas consolidadas por referencia + columna de crecimiento completa (DOM-04/DOM-27)",
+    "01-plan-financiero-previsional.xlsx: 16 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "01-plan-financiero-previsional.xlsx: formato condicional Resumen!B7:D7 (EBITDA anual negativo)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Año 1: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 1: protegida sin contraseña (133 celdas verdes editables)",
+    "Año 2: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 2: protegida sin contraseña (133 celdas verdes editables)",
+    "Año 3: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 3: protegida sin contraseña (133 celdas verdes editables)",
+    "Resumen: protegida sin contraseña (0 celdas verdes editables)",
+    "01-plan-financiero-previsional.xlsx: gráfico Resumen!A11 BarChart ingresos/gastos/EBITDA"
+   ],
+   "formulas_nuevas": 193,
+   "graficos": {
+    "hechos": [
+     "Resumen!A11 BarChart ingresos/gastos/EBITDA"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "01-plan-financiero-previsional.xlsx",
+    "hojas": 5,
+    "formulas": 244,
+    "verdes": 399,
+    "charts": 1,
+    "cf": 1,
+    "dv": 6,
+    "protegidas": 5,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+   "cambios": [
+    "Instrucciones!B9: línea corregida (§1.7)",
+    "Año 1: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Año 2: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Año 3: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Año 4: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Año 5: gastos con comisión de delivery y coste de bebida (RD-13/RD-14); TOTAL en la fila 21, EBITDA en la 23",
+    "Resumen: 20 celdas consolidadas por referencia + columna de crecimiento completa (DOM-04/DOM-27)",
+    "01b-plan-financiero-previsional-5-anos.xlsx: 26 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "01b-plan-financiero-previsional-5-anos.xlsx: formato condicional Resumen!B7:F7 (EBITDA anual negativo)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Año 1: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 1: protegida sin contraseña (133 celdas verdes editables)",
+    "Año 2: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 2: protegida sin contraseña (133 celdas verdes editables)",
+    "Año 3: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 3: protegida sin contraseña (133 celdas verdes editables)",
+    "Año 4: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 4: protegida sin contraseña (133 celdas verdes editables)",
+    "Año 5: DV numérica en 132 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Año 5: protegida sin contraseña (133 celdas verdes editables)",
+    "Resumen: protegida sin contraseña (0 celdas verdes editables)",
+    "01b-plan-financiero-previsional-5-anos.xlsx: gráfico Resumen!A11 BarChart ingresos/gastos/EBITDA"
+   ],
+   "formulas_nuevas": 319,
+   "graficos": {
+    "hechos": [
+     "Resumen!A11 BarChart ingresos/gastos/EBITDA"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+    "hojas": 7,
+    "formulas": 404,
+    "verdes": 665,
+    "charts": 1,
+    "cf": 1,
+    "dv": 10,
+    "protegidas": 7,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "02-calculadora-punto-equilibrio.xlsx",
+   "cambios": [
+    "02-calculadora-punto-equilibrio.xlsx: 3 divisiones con IFERROR (§1.3)",
+    "02-calculadora-punto-equilibrio.xlsx: 1 hojas con rótulo de datos de ejemplo (§1.4)",
+    "02: la cuota sale del TOTAL COSTES FIJOS y el personal tiene una etiqueta única (TEC-23/DOM-24); ejemplo recalibrado a la base común del kit (§7.5)",
+    "02: ROUNDUP en el umbral, ticket medio necesario, break-even de caja y bloque auxiliar del gráfico (DOM-25/TEC-16/COM-27/§1.1)",
+    "02: Escenarios lee de Datos y sus inputs vuelven a ser editables (DOM-13/TEC-08/COM-20/RD-06)",
+    "02-calculadora-punto-equilibrio.xlsx: 7 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "02-calculadora-punto-equilibrio.xlsx: formato condicional Escenarios!C13:E13 (EBITDA negativo)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Datos: DV numérica en 10 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Datos: protegida sin contraseña (11 celdas verdes editables)",
+    "Break-Even: DV numérica en 1 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Break-Even: protegida sin contraseña (1 celdas verdes editables)",
+    "Escenarios: protegida sin contraseña (9 celdas verdes editables)",
+    "02-calculadora-punto-equilibrio.xlsx: gráfico Break-Even!A31 LineChart ingresos vs costes"
+   ],
+   "formulas_nuevas": 61,
+   "graficos": {
+    "hechos": [
+     "Break-Even!A31 LineChart ingresos vs costes"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "02-calculadora-punto-equilibrio.xlsx",
+    "hojas": 4,
+    "formulas": 67,
+    "verdes": 12,
+    "charts": 1,
+    "cf": 1,
+    "dv": 3,
+    "protegidas": 4,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "03-cash-flow-forecast.xlsx",
+   "cambios": [
+    "03-cash-flow-forecast.xlsx: 1 hojas con rótulo de datos de ejemplo (§1.4)",
+    "03: hoja 'Parámetros' con tarjeta, plazo de proveedores, tipos de IVA y estacionalidad (DOM-10/DOM-23/COM-15)",
+    "03: mapa nuevo de «Flujo Mensual» — saldo encadenado a la fila 29, desfase de tarjeta, plazo de proveedores, SS del mes siguiente e IVA trimestral calculado (DOM-01/TEC-01/DOM-10/DOM-23)",
+    "03: Alertas leen el SALDO FINAL de la fila 29 y callan en los meses sin datos (RD-25)",
+    "03-cash-flow-forecast.xlsx: formato condicional Alertas!D6:D17",
+    "03-cash-flow-forecast.xlsx: formato condicional Alertas!C6:C17 (expresión) + serie de umbral E6:E17",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Parámetros: DV numérica en 3 importes, 4 porcentajes y 0 celdas que admiten negativo",
+    "Parámetros: protegida sin contraseña (19 celdas verdes editables)",
+    "Flujo Mensual: DV numérica en 182 importes, 0 porcentajes y 1 celdas que admiten negativo",
+    "Flujo Mensual: protegida sin contraseña (183 celdas verdes editables)",
+    "Alertas: DV numérica en 1 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Alertas: protegida sin contraseña (1 celdas verdes editables)",
+    "03-cash-flow-forecast.xlsx: gráfico Alertas!B20 LineChart saldo + umbral (sin la columna de texto)"
+   ],
+   "formulas_nuevas": 201,
+   "graficos": {
+    "hechos": [
+     "Alertas!B20 LineChart saldo + umbral (sin la columna de texto)"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "03-cash-flow-forecast.xlsx",
+    "hojas": 4,
+    "formulas": 201,
+    "verdes": 203,
+    "charts": 1,
+    "cf": 3,
+    "dv": 5,
+    "protegidas": 4,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "04-presupuesto-inversion-capex.xlsx",
+   "cambios": [
+    "Instrucciones!B13: línea corregida (§1.7)",
+    "04!Obra: base, IVA, total con IVA y coeficiente de amortización en 10 partidas",
+    "04!Equipamiento Cocina: base, IVA, total con IVA y coeficiente de amortización en 12 partidas",
+    "04!Mobiliario Sala: base, IVA, total con IVA y coeficiente de amortización en 10 partidas",
+    "04!Tecnología: base, IVA, total con IVA y coeficiente de amortización en 8 partidas",
+    "04!Licencias: base, IVA, total con IVA y coeficiente de amortización en 8 partidas",
+    "04: hoja 'Otros conceptos de apertura' con stock inicial, fianza, imprevistos y fondo de maniobra (DOM-16/RD-23)",
+    "04!Resumen: base, IVA soportado, desembolso total y dotación anual a la amortización (DOM-15/COM-13)",
+    "04-presupuesto-inversion-capex.xlsx: formato condicional Resumen!F5:F12 (desviación de más del 10 %)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Obra: DV numérica en 20 importes, 20 porcentajes y 0 celdas que admiten negativo",
+    "Obra: protegida sin contraseña (50 celdas verdes editables)",
+    "Equipamiento Cocina: DV numérica en 24 importes, 24 porcentajes y 0 celdas que admiten negativo",
+    "Equipamiento Cocina: protegida sin contraseña (60 celdas verdes editables)",
+    "Mobiliario Sala: DV numérica en 20 importes, 20 porcentajes y 0 celdas que admiten negativo",
+    "Mobiliario Sala: protegida sin contraseña (50 celdas verdes editables)",
+    "Tecnología: DV numérica en 16 importes, 16 porcentajes y 0 celdas que admiten negativo",
+    "Tecnología: protegida sin contraseña (40 celdas verdes editables)",
+    "Licencias: DV numérica en 16 importes, 16 porcentajes y 0 celdas que admiten negativo",
+    "Licencias: protegida sin contraseña (40 celdas verdes editables)",
+    "Otros conceptos de apertura: DV numérica en 18 importes, 9 porcentajes y 0 celdas que admiten negativo",
+    "Otros conceptos de apertura: protegida sin contraseña (27 celdas verdes editables)",
+    "Resumen: protegida sin contraseña (0 celdas verdes editables)",
+    "04-presupuesto-inversion-capex.xlsx: gráfico Resumen!A18 BarChart presupuesto vs real"
+   ],
+   "formulas_nuevas": 300,
+   "graficos": {
+    "hechos": [
+     "Resumen!A18 BarChart presupuesto vs real"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "04-presupuesto-inversion-capex.xlsx",
+    "hojas": 8,
+    "formulas": 300,
+    "verdes": 267,
+    "charts": 1,
+    "cf": 1,
+    "dv": 12,
+    "protegidas": 8,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+   "cambios": [
+    "Ene: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Feb: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Mar: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Abr: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "May: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Jun: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Jul: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Ago: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Sep: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Oct: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Nov: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "Dic: semáforo con signo, desviaciones en p.p. y ratios completos (DOM-12/TEC-09/TEC-10/TEC-26)",
+    "'Resumen Anual': 12 meses consolidados por referencia, columna TOTAL que suma y tolerancias del semáforo en celda (DOM-05/TEC-04/RT-25)",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: 62 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Ene!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Feb!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Mar!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Abr!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional May!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Jun!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Jul!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Ago!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Sep!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Oct!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Nov!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional Dic!F6:F30",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: formato condicional 'Resumen Anual'!B13:N13 (EBITDA por debajo del presupuesto)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Ene: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Ene: protegida sin contraseña (24 celdas verdes editables)",
+    "Feb: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Feb: protegida sin contraseña (24 celdas verdes editables)",
+    "Mar: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Mar: protegida sin contraseña (24 celdas verdes editables)",
+    "Abr: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Abr: protegida sin contraseña (24 celdas verdes editables)",
+    "May: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "May: protegida sin contraseña (24 celdas verdes editables)",
+    "Jun: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Jun: protegida sin contraseña (24 celdas verdes editables)",
+    "Jul: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Jul: protegida sin contraseña (24 celdas verdes editables)",
+    "Ago: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Ago: protegida sin contraseña (24 celdas verdes editables)",
+    "Sep: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Sep: protegida sin contraseña (24 celdas verdes editables)",
+    "Oct: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Oct: protegida sin contraseña (24 celdas verdes editables)",
+    "Nov: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Nov: protegida sin contraseña (24 celdas verdes editables)",
+    "Dic: DV numérica en 24 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Dic: protegida sin contraseña (24 celdas verdes editables)",
+    "Resumen Anual: DV numérica en 0 importes, 2 porcentajes y 0 celdas que admiten negativo",
+    "Resumen Anual: protegida sin contraseña (4 celdas verdes editables)",
+    "05-pyl-mensual-real-vs-presupuesto.xlsx: gráfico 'Resumen Anual'!A27 BarChart previsto vs real"
+   ],
+   "formulas_nuevas": 950,
+   "graficos": {
+    "hechos": [
+     "'Resumen Anual'!A27 BarChart previsto vs real"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+    "hojas": 14,
+    "formulas": 1034,
+    "verdes": 292,
+    "charts": 1,
+    "cf": 37,
+    "dv": 13,
+    "protegidas": 14,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "06-dashboard-ratios-financieros.xlsx",
+   "cambios": [
+    "06-dashboard-ratios-financieros.xlsx: 8 divisiones con IFERROR (§1.3)",
+    "06-dashboard-ratios-financieros.xlsx: 1 hojas con rótulo de datos de ejemplo (§1.4)",
+    "06!Benchmarks: umbrales NUMÉRICOS en F/G y textos generados desde ellos — una sola fuente (DOM-29/TEC-12)",
+    "06!Ratios: RevPASH por plaza, food cost sobre ventas de comida, consumo = Ei + compras − Ef, GOP definido y semáforo en las nueve filas (DOM-07/DOM-18/DOM-22/RD-15)",
+    "06-dashboard-ratios-financieros.xlsx: 1 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "06-dashboard-ratios-financieros.xlsx: formato condicional Ratios!E17:E25",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Ratios: DV numérica en 13 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Ratios: protegida sin contraseña (13 celdas verdes editables)",
+    "Benchmarks: protegida sin contraseña (0 celdas verdes editables)",
+    "06-dashboard-ratios-financieros.xlsx: gráfico Ratios!A42 BarChart tu valor vs objetivo"
+   ],
+   "formulas_nuevas": 49,
+   "graficos": {
+    "hechos": [
+     "Ratios!A42 BarChart tu valor vs objetivo"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "06-dashboard-ratios-financieros.xlsx",
+    "hojas": 3,
+    "formulas": 41,
+    "verdes": 13,
+    "charts": 1,
+    "cf": 6,
+    "dv": 1,
+    "protegidas": 3,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "07-informe-viabilidad-bancos.xlsx",
+   "cambios": [
+    "07-informe-viabilidad-bancos.xlsx: 1 hojas con rótulo de datos de ejemplo (§1.4)",
+    "07: hoja 'Financiación' con anualidad algebraica, carencia modelada y aviso en C8 cuando la carencia iguala o supera el plazo; de ahí salen los intereses del P&L y el DSCR (DOM-14/DOM-11/RX-07/V-02)",
+    "07!Proyecciones: P&L con fórmulas, fila de flujo libre del proyecto (sin deuda) que alimenta los flujos con año 0, TIR, VAN con tasa en celda, payback y tipo del IS en celda (DOM-02/DOM-03/DOM-19/DOM-21/RX-06)",
+    "07!Ratios: los siete se calculan, con el DSCR dividiendo el flujo libre del proyecto (Proyecciones!B17, antes de intereses) entre el servicio de deuda del año 1, y columna Estado (DOM-11/TEC-19/RD-29/V-01)",
+    "07!Resumen Ejecutivo: cinco líneas dejan de ser input y se calculan (TEC-20)",
+    "07-informe-viabilidad-bancos.xlsx: 1 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "07-informe-viabilidad-bancos.xlsx: formato condicional Ratios!E4:E10",
+    "07-informe-viabilidad-bancos.xlsx: formato condicional Ratios!C5 (expresión contra el 1,25x del DSCR)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Resumen Ejecutivo: DV numérica en 4 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Resumen Ejecutivo: protegida sin contraseña (12 celdas verdes editables)",
+    "Proyecciones: DV numérica en 35 importes, 2 porcentajes y 0 celdas que admiten negativo",
+    "Proyecciones: protegida sin contraseña (37 celdas verdes editables)",
+    "Financiación: DV numérica en 3 importes, 1 porcentajes y 0 celdas que admiten negativo",
+    "Financiación: protegida sin contraseña (4 celdas verdes editables)",
+    "Ratios: DV numérica en 4 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Ratios: protegida sin contraseña (4 celdas verdes editables)",
+    "Garantías: DV numérica en 6 importes, 0 porcentajes y 0 celdas que admiten negativo",
+    "Garantías: protegida sin contraseña (12 celdas verdes editables)",
+    "07-informe-viabilidad-bancos.xlsx: gráfico Proyecciones!A34 LineChart EBITDA + cash flow"
+   ],
+   "formulas_nuevas": 101,
+   "graficos": {
+    "hechos": [
+     "Proyecciones!A34 LineChart EBITDA + cash flow"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "07-informe-viabilidad-bancos.xlsx",
+    "hojas": 6,
+    "formulas": 102,
+    "verdes": 69,
+    "charts": 1,
+    "cf": 4,
+    "dv": 7,
+    "protegidas": 6,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "BONUS-08-simulador-escenarios.xlsx",
+   "cambios": [
+    "Instrucciones!B7: línea corregida (§1.7)",
+    "BONUS-08-simulador-escenarios.xlsx: 1 hojas con rótulo de datos de ejemplo (§1.4)",
+    "BONUS-08: fin de la doble contabilización del personal, escenarios homogéneos con el 02 y margen EBITDA que se calla sin facturación (DOM-06/TEC-21/TEC-22/V-04)",
+    "BONUS-08-simulador-escenarios.xlsx: 3 etiquetas de ventas/ticket marcadas «(sin IVA)»",
+    "BONUS-08-simulador-escenarios.xlsx: formato condicional Simulador!B19:D19 (escenario en pérdidas)",
+    "BONUS-08-simulador-escenarios.xlsx: formato condicional Comparativa!C7:E7 (escenario en pérdidas)",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Simulador: DV numérica en 12 importes, 6 porcentajes y 0 celdas que admiten negativo",
+    "Simulador: protegida sin contraseña (18 celdas verdes editables)",
+    "Comparativa: protegida sin contraseña (0 celdas verdes editables)",
+    "BONUS-08-simulador-escenarios.xlsx: gráfico Comparativa!B11 BarChart EBITDA por escenario"
+   ],
+   "formulas_nuevas": 3,
+   "graficos": {
+    "hechos": [
+     "Comparativa!B11 BarChart EBITDA por escenario"
+    ],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "BONUS-08-simulador-escenarios.xlsx",
+    "hojas": 3,
+    "formulas": 39,
+    "verdes": 18,
+    "charts": 1,
+    "cf": 2,
+    "dv": 2,
+    "protegidas": 3,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  },
+  {
+   "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+   "cambios": [
+    "BONUS-09: fase 7 laboral (54 tareas), contador honesto, DV bloqueante hasta la fila 64 y columna Estado desbloqueada (DOM-20/DOM-26/TEC-24/RD-07)",
+    "BONUS-09-checklist-pre-apertura.xlsx: formato condicional Checklist!F5:F64",
+    "Instrucciones: protegida sin contraseña (0 celdas verdes editables)",
+    "Checklist: protegida sin contraseña (240 celdas verdes editables)"
+   ],
+   "formulas_nuevas": 5,
+   "graficos": {
+    "hechos": [],
+    "pendientes": []
+   },
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+    "hojas": 2,
+    "formulas": 5,
+    "verdes": 144,
+    "charts": 0,
+    "cf": 3,
+    "dv": 1,
+    "protegidas": 2,
+    "ceros_constantes": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0
+   }
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-plan-financiero-previsional.xlsx",
+    "salida": "01-plan-financiero-previsional.xlsx: formulas=244 cache_inyectado=198 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+    "salida": "01b-plan-financiero-previsional-5-anos.xlsx: formulas=404 cache_inyectado=330 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-calculadora-punto-equilibrio.xlsx",
+    "salida": "02-calculadora-punto-equilibrio.xlsx: formulas=67 cache_inyectado=67 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-cash-flow-forecast.xlsx",
+    "salida": "03-cash-flow-forecast.xlsx: formulas=201 cache_inyectado=193 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-presupuesto-inversion-capex.xlsx",
+    "salida": "04-presupuesto-inversion-capex.xlsx: formulas=300 cache_inyectado=229 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+    "salida": "05-pyl-mensual-real-vs-presupuesto.xlsx: formulas=1034 cache_inyectado=648 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-dashboard-ratios-financieros.xlsx",
+    "salida": "06-dashboard-ratios-financieros.xlsx: formulas=41 cache_inyectado=41 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-informe-viabilidad-bancos.xlsx",
+    "salida": "07-informe-viabilidad-bancos.xlsx: formulas=102 cache_inyectado=101 fallos_pycel=1",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-08-simulador-escenarios.xlsx",
+    "salida": "BONUS-08-simulador-escenarios.xlsx: formulas=39 cache_inyectado=39 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+    "salida": "BONUS-09-checklist-pre-apertura.xlsx: formulas=5 cache_inyectado=5 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "cachear_irr": {
+   "fichero": "07-informe-viabilidad-bancos.xlsx",
+   "flujos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "tir": null,
+   "van": 0.0,
+   "payback": null,
+   "inyectada": true,
+   "motivo": "sin cambio de signo en los flujos: la TIR no existe (el libro se entrega con el ejemplo a 0)",
+   "alterna_de_la_formula": "—"
+  },
+  "data_only_formulas_nuevas": {
+   "con_valor": 1597,
+   "vacias_por_diseno": 585,
+   "vacias_comprobadas_con_pycel": 585,
+   "vacias_no_verificadas": [],
+   "irr_cacheada_aparte": 0,
+   "fallos": []
+  },
+  "graficos": {
+   "detalle": [
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen"
+     ]
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen"
+     ]
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Break-Even"
+     ]
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Alertas"
+     ]
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen"
+     ]
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Resumen Anual"
+     ]
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Ratios"
+     ]
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Proyecciones"
+     ]
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "charts": 1,
+     "hojas": [
+      "Comparativa"
+     ]
+    }
+   ],
+   "fallos": [],
+   "pendientes_grupo": []
+  },
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "10 ficheros censados (10 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-plan-financiero)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones": {
+  "tir_van_payback": {
+   "flujos": [
+    -150000.0,
+    30000.0,
+    45000.0,
+    60000.0,
+    70000.0
+   ],
+   "tir_newton": 0.119592,
+   "tir_pct": 11.9592,
+   "esperado_spec_pct": 11.9592,
+   "van_8pct_python": 15440.05,
+   "van_8pct_pycel": 15440.05,
+   "esperado_van_spec": 15440.05,
+   "payback_anios": 3.21,
+   "esperado_payback_spec": 3.21,
+   "pycel_con_IRR": "ERR:UnknownFunction",
+   "nota": "pycel devuelve error en IRR: por eso la TIR se cachea aparte (§1.8). El VAN sí lo evalúa y coincide con el cálculo propio."
+  },
+  "anualidad_sin_PMT": {
+   "importe": 100000,
+   "tipo_nominal": 0.05,
+   "meses": 60,
+   "cuota_algebraica": 1887.12,
+   "esperado_spec": 1887.12,
+   "misma_formula_con_PMT": "ERR:UnknownFunction",
+   "nota": "PMT revienta en pycel y su IFERROR no lo atrapa: la celda se quedaría sin caché y en blanco en Vista previa."
+  },
+  "countif_sin_COUNTA": {
+   "countif": 4,
+   "esperado": 4,
+   "counta_en_pycel": "ERR:UnknownFunction"
+  },
+  "iferror_02": {
+   "fichero": "02-calculadora-punto-equilibrio.xlsx",
+   "C9_con_26_dias": 887.5739644970413,
+   "C9_con_0_dias": "Indica los días de apertura",
+   "C8_con_35pct_variable": 23076.923076923074,
+   "C8_con_100pct_variable": "Revisa el % de coste variable (no puede ser 100 %)",
+   "ok": true
+  },
+  "semaforo_06": {
+   "fichero": "06-dashboard-ratios-financieros.xlsx",
+   "reglas_cf_en_E17_E25": 6,
+   "estado_base": "⚠️ Aceptable",
+   "estado_con_food_cost_45pct": "🔴 Alto",
+   "cambia": true,
+   "ok": true
+  },
+  "saldo_encadenado_03": {
+   "fichero": "03-cash-flow-forecast.xlsx",
+   "formula_C5": "=B29",
+   "fila_SALDO_FINAL": 29,
+   "C5_apunta_al_saldo_final": true,
+   "saldo_final_enero_con_18000_de_apertura": 18000,
+   "apertura_febrero": 18000,
+   "esperado": 18000,
+   "ok": true,
+   "nota": "si `ok` es False y grupo_b no está cargado, esto es el bug DOM-01 vivo, no un fallo del motor"
+  },
+  "proteccion": {
+   "hojas": [
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Año 1",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Año 2",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Año 3",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 1",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 2",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 3",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 4",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Año 5",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 133,
+     "verdes_desbloqueadas": 133
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Datos",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 11,
+     "verdes_desbloqueadas": 11
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Break-Even",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 1,
+     "verdes_desbloqueadas": 1
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "hoja": "Escenarios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Parámetros",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 19,
+     "verdes_desbloqueadas": 19
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Flujo Mensual",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 183,
+     "verdes_desbloqueadas": 183
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "hoja": "Alertas",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 1,
+     "verdes_desbloqueadas": 1
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Obra",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 50,
+     "verdes_desbloqueadas": 50
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Equipamiento Cocina",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 60,
+     "verdes_desbloqueadas": 60
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Mobiliario Sala",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 50,
+     "verdes_desbloqueadas": 50
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Tecnología",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 40,
+     "verdes_desbloqueadas": 40
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Licencias",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 40,
+     "verdes_desbloqueadas": 40
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Otros conceptos de apertura",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 27,
+     "verdes_desbloqueadas": 27
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Ene",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Feb",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Mar",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Abr",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "May",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Jun",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Jul",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Ago",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Sep",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Oct",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Nov",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Dic",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 24,
+     "verdes_desbloqueadas": 24
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "hoja": "Resumen Anual",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 4,
+     "verdes_desbloqueadas": 4
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "hoja": "Ratios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 13,
+     "verdes_desbloqueadas": 13
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "hoja": "Benchmarks",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Resumen Ejecutivo",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 12,
+     "verdes_desbloqueadas": 12
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Proyecciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 37,
+     "verdes_desbloqueadas": 37
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Financiación",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 4,
+     "verdes_desbloqueadas": 4
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Ratios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 4,
+     "verdes_desbloqueadas": 4
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "hoja": "Garantías",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 12,
+     "verdes_desbloqueadas": 12
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "hoja": "Simulador",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 18,
+     "verdes_desbloqueadas": 18
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "hoja": "Comparativa",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+     "hoja": "Checklist",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 144,
+     "verdes_desbloqueadas": 144
+    }
+   ],
+   "fallos": [],
+   "total_hojas": 56,
+   "protegidas": 56
+  },
+  "bio_y_version": {
+   "ficheros": [
+    {
+     "fichero": "01-plan-financiero-previsional.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "02-calculadora-punto-equilibrio.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "03-cash-flow-forecast.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "04-presupuesto-inversion-capex.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 0,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "06-dashboard-ratios-financieros.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "BONUS-08-simulador-escenarios.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 1,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    },
+    {
+     "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+     "bio": 1,
+     "version_2_0": 1,
+     "nota_iva": 0,
+     "subject": "Kit Plan Financiero para Restaurantes · v2.0"
+    }
+   ],
+   "fallos": []
+  },
+  "grupo_a": {
+   "05": {
+    "sin_presupuesto_ingresos_E6_F6": [
+     "",
+     "—"
+    ],
+    "sin_presupuesto_gastos_E13_F13": [
+     "",
+     "—"
+    ],
+    "vender_20pct_por_encima": "✅ OK",
+    "gastar_20pct_de_mas": "🔴 Alerta",
+    "EBITDA_ppto_-3000_real_0": "✅ OK",
+    "desviacion_con_ABS_en_denominador": 1.0,
+    "'Resumen Anual'!B6_con_'Ene'!C6=25000": 25000
+   },
+   "01": {
+    "'Resumen'!B5_con_'Año 1'!B6=30000": 30000.0,
+    "comision_delivery_sobre_10000": 3000.0
+   }
+  },
+  "grupo_b": {
+   "03": {
+    "formula_C5": "=B29",
+    "fila_SALDO_FINAL": 29,
+    "C5_apunta_al_saldo_final": true,
+    "saldo_final_enero": 20000,
+    "apertura_febrero": 20000,
+    "esperado": 20000,
+    "IVA_liquidado_en_abril_con_33000_de_venta_en_enero": 3000.0000000000036,
+    "IVA_en_mayo_(no_toca)": ""
+   },
+   "02": {
+    "break_even_mes": 23076.923076923074,
+    "cubiertos_dia_redondeados": 41.0,
+    "break_even_de_caja": 24307.69230769231,
+    "ticket_medio_necesario": 16.13770844540075,
+    "Escenarios_C7_lee_de_Datos": 15000.0,
+    "Escenarios_C10_con_dias_de_Datos": 18720.0,
+    "celdas_editables_en_Escenarios_C4_E6": 9
+   },
+   "04": {
+    "base_100000_total_con_IVA": 121000,
+    "dotacion_anual_obra_3pct": 3000.0,
+    "Resumen_D10_total_con_IVA": 121000.0
+   }
+  },
+  "grupo_c": {
+   "07": {
+    "cuota_anual_100000_al_6pct_8anios": 16103.594264812895,
+    "EBITDA_anio_1": 42000,
+    "cash_flow_operativo_anio_1": 30750,
+    "flujo_anio_0": -150000,
+    "flujo_acumulado_anio_5": 57750,
+    "VAN_al_8pct": 13966.169600931928,
+    "payback": 3.778523489932886,
+    "DSCR": 2.1889523183667694,
+    "estado_DSCR": "✅",
+    "flujos": [
+     -150000,
+     35250,
+     38400,
+     41550,
+     44700,
+     47850
+    ],
+    "TIR_newton_sobre_esos_flujos": 0.11287565595574248
+   },
+   "06": {
+    "food_cost_sobre_ventas_de_comida": 0.3,
+    "estado_food_cost": "⚠️ Aceptable",
+    "referencia_que_se_enseña": "=Benchmarks!$D$4",
+    "RevPASH_por_plaza_y_hora": 3.361111111111111,
+    "GOP": 0.26835346471710114,
+    "consumo_de_comida": 7078.5,
+    "coste_cubierto_entre_ticket": 0.7316465352828989,
+    "estado_de_esa_fila": "✅ Excelente"
+   },
+   "BONUS-09": {
+    "total_contado": 54.0,
+    "pct_inicial": 0.0,
+    "pct_con_una_completada": 0.018518518518518517,
+    "celdas_de_estado_desbloqueadas": 60,
+    "DV_lista": [
+     "F5:F64 err=True"
+    ]
+   },
+   "BONUS-08": {
+    "EBITDA_base_mensual": 5440.199999999997,
+    "EBITDA_base_anual": 65282.399999999965,
+    "margen_base": 0.17292434837889373,
+    "EBITDA_optimista": 19615.0,
+    "EBITDA_pesimista_(negativo_a_proposito)": -1460.0
+   }
+  }
+ },
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/apply/kit-plan-financiero.bak-20260829-012633"
+}
