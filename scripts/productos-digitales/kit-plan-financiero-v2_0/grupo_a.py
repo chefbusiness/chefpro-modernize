@@ -160,6 +160,34 @@ def _col(n):
     return get_column_letter(n)
 
 
+def _linea_tras_bullets(ws, texto):
+    """Añade una línea de instrucciones JUSTO detrás del último «▸».
+
+    `motor.linea_instrucciones` la escribiría en `max_row + 2`, y cuando corre
+    el grupo el bloque de cierre (nota de IVA, «Revisar → Desproteger», bio y
+    versión) TODAVÍA está en la hoja: la línea nueva acabaría por debajo de la
+    versión y, tras `motor.cierre_instrucciones`, con un hueco de seis filas en
+    mitad de las instrucciones. Aquí sólo se escribe si la fila siguiente al
+    último «▸» está VACÍA —no se desplaza nada, ni una fila— y si no, se
+    delega en el motor. Idempotente: si el texto ya está, devuelve su fila.
+    """
+    col = motor._col_texto(ws)
+    ultimo = 0
+    for r in range(1, ws.max_row + 1):
+        v = ws.cell(row=r, column=col).value
+        if isinstance(v, str):
+            if v == texto:
+                return r
+            if v.startswith('▸'):
+                ultimo = r
+    destino = ultimo + 1
+    if ultimo and ws.cell(row=destino, column=col).value in (None, ''):
+        cel = ws.cell(row=destino, column=col, value=texto)
+        cel._style = copy.copy(ws.cell(row=ultimo, column=col)._style)
+        return destino
+    return motor.linea_instrucciones(ws, texto)
+
+
 def _clonar_estilo(ws, origen, destinos):
     est = copy.copy(ws[origen]._style)
     for d in destinos:
@@ -226,8 +254,14 @@ def _pestana_anual(ws, informe):
                 + str(FILA_TOTAL_GASTOS), motor.FMT_EUR)
         motor.aplicar_estilo(ws, L + str(FILA_MARGEN), est_total_val,
                              motor.FMT_PCT)
+        # V-04: mismo criterio que RX-05 (`=IF(x=0,"",…)`). Con `0` en la
+        # rama verdadera, el libro se entrega afirmando un margen del
+        # 0,0 % para un mes sin una sola venta: eso no es un cero, es un
+        # dato que todavía no existe. Censo de consumidores previo: ninguna
+        # celda del libro referencia esta fila, ningún gráfico la usa y el
+        # formato condicional vive en otra fila (detalle en el informe).
         motor.f(ws, L + str(FILA_MARGEN),
-                '=IF(' + L + str(FILA_TOTAL_INGRESOS) + '=0,0,' + L
+                '=IF(' + L + str(FILA_TOTAL_INGRESOS) + '=0,"",' + L
                 + str(FILA_EBITDA) + '/' + L + str(FILA_TOTAL_INGRESOS) + ')',
                 motor.FMT_PCT)
 
@@ -441,7 +475,8 @@ def _resumen_anual(ws, informe):
         motor.f(ws, L + '16', '=' + h + 'C15', motor.FMT_EUR)
         motor.f(ws, L + '17', '=' + L + '14+' + L + '15+' + L + '16',
                 motor.FMT_EUR)
-        motor.f(ws, L + '18', '=IF(' + L + '6=0,0,' + L + '17/' + L + '6)',
+        # V-04: idéntico criterio al de RX-05 en las 12 pestañas mensuales.
+        motor.f(ws, L + '18', '=IF(' + L + '6=0,"",' + L + '17/' + L + '6)',
                 motor.FMT_PCT)
 
     etiquetas = {
@@ -467,7 +502,7 @@ def _resumen_anual(ws, informe):
         motor.aplicar_estilo(ws, 'N' + str(fila), est_val, motor.FMT_EUR)
         motor.f(ws, 'N' + str(fila), '=SUM(B' + str(fila) + ':M' + str(fila)
                 + ')', motor.FMT_EUR)
-    motor.f(ws, 'N18', '=IF(N6=0,0,N17/N6)', motor.FMT_PCT)
+    motor.f(ws, 'N18', '=IF(N6=0,"",N17/N6)', motor.FMT_PCT)   # V-04
 
     # Tolerancias del semáforo EN CELDA (RT-25): las leen las 12 pestañas.
     ws['A21'].value = 'TOLERANCIAS DEL SEMÁFORO (edítalas si tu negocio manda)'
@@ -533,6 +568,13 @@ def post(wb, fname, cambios, registro):
                 ws, '▸ Food Cost % se mide sobre las ventas de comida (total '
                     'menos barra) y Beverage Cost % sobre las de barra.',
                 rx=__import__('re').compile(r'^▸ Food Cost %'))
+            # V-03: tras RX-01 y RX-05 el 05 se entrega con 240 «—» en las
+            # columnas de estado de las 12 pestañas y estas Instrucciones no
+            # decían en ningún sitio qué significa el guion. El 03 sí lo
+            # explica en su hoja Alertas; se copia el tono.
+            _linea_tras_bullets(
+                ws, '▸ El estado «—» significa que ese mes todavía no tiene '
+                    'presupuesto: el semáforo no opina hasta que lo pongas.')
     return cambios
 
 

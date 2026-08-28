@@ -1,0 +1,109 @@
+{
+  "producto": "kit-plan-financiero",
+  "version": "2.0",
+  "rol": "corrector FINAL del paquete generador — hallazgos V-01..V-04 del verificador",
+  "fecha": "2026-08-29",
+  "listo": true,
+  "ficheros_tocados": [
+    "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_a.py",
+    "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_b.py",
+    "scripts/productos-digitales/kit-plan-financiero-v2_0/grupo_c.py",
+    "scripts/productos-digitales/kit-plan-financiero-v2-SPEC.md (§7-bis, decisiones 11-13)"
+  ],
+  "resueltos": [
+    {
+      "id": "V-01",
+      "donde": "grupo_c.py:437 (tabla RATIOS_07, fila del DSCR) · razonamiento en grupo_c.py:421-436 · leyenda nueva en grupo_c.py:750-760 (07!Ratios!B21) · grupo_c.py:1021-1024 (07!Instrucciones!B16) · grupo_c.py:765-768 (línea de informe)",
+      "cambio": "07!Ratios!C5 = \"=IFERROR(Proyecciones!$B$17/'Financiación'!$C$12,\\\"Indica el préstamo\\\")\" — antes leía $B$18.",
+      "eleccion_de_numerador": "Entre B17 (flujo libre del proyecto = EBITDA − IS sobre el EBIT = EBIT×(1−t)+amortización) y B11−B15 (EBITDA − IS contable) se elige B17: es una fila IMPRESA que el analista puede trazar en Proyecciones —B11−B15 no existe como línea— y su impuesto no depende del apalancamiento, así que pedir más deuda no infla el propio ratio que mide si puedes pagarla. Es además la lectura conservadora de las dos (1,9095 frente a 2,0026 en el ejemplo del verificador). Comprobado que B17 es EBIT×(1−t)+amortización: grupo_c.py:404-405 la define como '={L}11-MAX(0,({L}11-{L}12)*$C$29)', y B11−MAX(0,EBIT×t) = EBIT−EBIT×t+amortización.",
+      "prueba": "pycel 1.0b30 sobre copias en scratchpad/fix-v/pycel/, MISMOS inputs sobre la copia ANTES y la copia AHORA (préstamo 100.000 € al 6 % a 8 años sin carencia, ventas 300.000 €, amortización 15.000 €). (a) Ejemplo exacto del verificador — EBITDA 36.000 / amortización 15.000 / intereses 6.000 (Financiación!D12) / IS 3.750 (Proyecciones!B15) / servicio 16.103,594264812895 (Financiación!C12): B18=26.250 → C5 ANTES 1,6300708753795092 ✅; B17=30.750 → C5 AHORA 1,9095115968731393 ✅ = 30.750/16.103,59, coherente. (b) El ROJO FALSO, medido: proyecto con DSCR real 1,30 (EBITDA 22.912,89 → B17=20.934,6675): ANTES C5=1,0205589652684262 y E5='🔴'; AHORA C5=1,2999996867620565 y E5='✅'. (c) Libro tal como se entrega: C5 caché 'Indica el préstamo' y E5 caché '—' (sin regresión). Datos crudos en scratchpad/fix-v/demo_v01.json."
+    },
+    {
+      "id": "V-02",
+      "donde": "grupo_c.py:511-515 (07!Financiación!C8) · grupo_c.py:546-566 (columnas C y E del cuadro A11:F16) · grupo_c.py:517-522 (nota D8) · grupo_c.py:578-581 (línea de informe)",
+      "cambio": "C8 = '=IF(($C$6-$C$7)<=0,\"La carencia no puede igualar ni superar el plazo\",IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0))'. Además, en el cuadro: C12:C16 = '=IF($C$6<=$C$7,\"—\",IF($A12<=$C$7,$B12*$C$5,$C$8))' y E12:E16 = '=IF($C$6<=$C$7,0,$C12-$D12)'. B, D y F se dejan SIEMPRE numéricas a propósito.",
+      "censo_de_consumidores_de_C8_y_C12": "(1) Cuadro A11:F16 — la afirmación del verificador de que «las celdas del cuadro que leen C8 ya están dentro de un IF» es INCOMPLETA: el IF de la cuota sólo protege los años i ≤ C7. En cuanto existe un año i > C7 con la carencia inválida (p. ej. plazo 3 y carencia 3, que deja los años 4 y 5 fuera) la rama else devolvía el texto y 'E = C − D' habría dado #¡VALOR!. Por eso C abstiene con «—» y E cae a 0 (que además es la amortización real: si la carencia se come el plazo no se amortiza nada). (2) Intereses del P&L — Proyecciones!B13 = ='Financiación'!$D$12 (grupo_c.py:395): la columna D NO se toca, sigue siendo '=$B12*$C$5' y numérica, o el #¡VALOR! habría bajado a BAI, IS y beneficio neto. Lo mismo con F, de la que cuelga el capital pendiente del año siguiente (B13='=$F$12'). (3) DSCR — 07!Ratios!C5 divide por C12: con C12 texto, el IFERROR devuelve 'Indica el préstamo' y el ISNUMBER del semáforo (grupo_c.py:753-758) da '—'. (4) Resumen Ejecutivo — C15 lee C4 y C16 lee C6 (grupo_c.py:745-748); ninguno lee C8 ni C12.",
+      "prueba": "pycel, préstamo 100.000 € al 6 %, cuatro casos, cada uno corrido sobre la copia ANTES y la AHORA. · C6=8 C7=10: ANTES C8=−48.543,68932038829 € (cuota anual NEGATIVA en la portada del informe bancario); AHORA C8='La carencia no puede igualar ni superar el plazo', cuadro C='—' / D=6.000 / E=0 / F=100.000 en las cinco filas (0 números negativos), Ratios C5='Indica el préstamo' y E5='—', P&L B13=6.000 numérico. · C6=8 C7=0: cuadro IDÉNTICO al actual celda a celda — C8=16.103,594264812895, año 1 (100.000 / 16.103,59 / 6.000 / 10.103,59 / 89.896,41), año 5 (55.800,65 / 16.103,59 / 3.348,04 / 12.755,55 / 43.045,10). · C6=8 C7=2 (carencia válida): idéntico antes/después, C8=20.336,262847489532, dos años sólo de intereses. · C6=3 C7=3 (el caso que el IF no cubría): ANTES amortizaba −6.000 y −6.360 con el capital pendiente CRECIENDO a 106.000 y 112.360; AHORA abstiene entero, sin un solo #¡VALOR!. Barrido de errores de Excel cacheados en los 10 ficheros: 0. Datos crudos en scratchpad/fix-v/demo_v02.json."
+    },
+    {
+      "id": "V-03",
+      "donde": "grupo_a.py:571-577 (rama 05 de post()) con el helper nuevo grupo_a.py:163-188 (_linea_tras_bullets)",
+      "cambio": "Línea nueva en 05!Instrucciones: '▸ El estado «—» significa que ese mes todavía no tiene presupuesto: el semáforo no opina hasta que lo pongas.' Mismo tono que la del 03!Alertas!B19.",
+      "por_que_un_helper": "motor.linea_instrucciones la habría escrito en max_row+2 = B17, o sea POR DEBAJO del bloque de cierre (nota de IVA, «Revisar → Desproteger», bio y versión), que todavía vive en la hoja cuando corre el grupo; tras motor.cierre_instrucciones habría quedado un hueco de seis filas (B11-B16) en mitad de las instrucciones. _linea_tras_bullets escribe SÓLO si la fila siguiente al último «▸» está vacía —no desplaza ni una fila— y si no, delega en el motor. Es idempotente por texto.",
+      "prueba": "05!Instrucciones tras el dry-run: B7-B10 los bullets de siempre, B11 la línea nueva, y el bloque de cierre en B13-B16 (lo REESCRIBE motor.cierre_instrucciones desde `ultima`, por diseño: motor.py:906-940). Ningún bloque se insertó desplazando nada. Idempotencia del pipeline completo: 0 diferencias en la 2.ª pasada. Comparación celda a celda de la hoja antes/después: 6 diferencias, todas esperadas (B11 nueva + el bloque de cierre una fila más abajo), 0 diferencias numéricas."
+    },
+    {
+      "id": "V-04",
+      "donde": "grupo_a.py:257-266 (01/01b, «Margen EBITDA %» de cada pestaña de año, 13 columnas × 3 y × 5 años) · grupo_a.py:478-480 y :505 (05!'Resumen Anual' «Prime Cost %» B18:N18) · grupo_b.py:577-583 (02!Escenarios «Margen EBITDA %» C16:E16) · grupo_c.py:832-844 (BONUS-08!Simulador «Margen EBITDA %» B20:D20, celdas que el paquete NO reescribía antes)",
+      "cambio": "'=IF(<ref>=0,0,…)' → '=IF(<ref>=\"\",…)' en las 123 celdas censadas, extendiendo el criterio de RX-05 a todo el kit.",
+      "prueba": "Censo posterior sobre los 10 ficheros del dry-run: 0 celdas con el patrón viejo '=IF(<ref>=0,0,' y 399 con el nuevo (los 276 que RX-05 ya tenía en las 12 pestañas mensuales del 05 + las 123 de V-04). LIBRO EN BLANCO: de las 123, 117 quedan con caché None (01: 39, 01b: 65, 05!'Resumen Anual': 13) — antes las 117 cacheaban 0.0 y se entregaban imprimiendo «0,0 %»; las otras 6 (02 y BONUS-08) se entregan con datos de ejemplo y siguen mostrando sus porcentajes reales, así que NINGUNA imprime «0,0 %». EJEMPLO RELLENO, mismos inputs sobre la copia ANTES y la AHORA con pycel: 01!'Año 1'!B24 = −0.9363636363636364 en las dos (idéntico bit a bit), N24 = −0.9363636363636364 en las dos; 05!'Resumen Anual'!B18 = 0.5645161290322581 y N18 = 0.5645161290322581 en las dos; y la columna de un mes SIN datos pasa de 0.0 a '' (01!'Año 1'!C24), que es justo lo que se buscaba. COMPARACIÓN DE CACHÉ celda a celda de TODAS las hojas afectadas (01: 3 pestañas de año · 01b: 5 · 02!Escenarios · 05!'Resumen Anual' + Instrucciones · 07!Financiación+Ratios+Proyecciones+Instrucciones · BONUS-08!Simulador+Comparativa): 0 diferencias numéricas en las seis; las únicas diferencias son las 117 celdas 0.0 → vacía y los 4 textos nuevos/editados. Datos crudos en scratchpad/fix-v/demo_v04.json y difs.json."
+    }
+  ],
+  "no_aplicados": [],
+  "consumidores_v04": {
+    "celdas_cambiadas": 123,
+    "desglose_celdas_cambiadas": {
+      "01-plan-financiero-previsional.xlsx": "'Año 1'..'Año 3' fila 24 (B24:N24) = 39",
+      "01b-plan-financiero-previsional-5-anos.xlsx": "'Año 1'..'Año 5' fila 24 (B24:N24) = 65",
+      "02-calculadora-punto-equilibrio.xlsx": "Escenarios C16:E16 = 3",
+      "05-pyl-mensual-real-vs-presupuesto.xlsx": "'Resumen Anual' B18:N18 = 13",
+      "BONUS-08-simulador-escenarios.xlsx": "Simulador B20:D20 = 3"
+    },
+    "metodo": "openpyxl recorriendo TODAS las fórmulas de cada libro (no sólo las de la hoja afectada), con un parser de referencias que expande los rangos A1:B2 y resuelve el prefijo de hoja; más las series de TODOS los gráficos (numRef/strRef de val/cat/xVal/yVal) y TODOS los rangos de formato condicional. Script en scratchpad/fix-v/consumidores.py, salida en consumidores.json.",
+    "consumidores_protegidos": [
+      {
+        "celdas": "BONUS-08!Simulador!B20:D20",
+        "consumidor": "BONUS-08!Comparativa!C8:E8 = '=Simulador!B20' / '=Simulador!C20' / '=Simulador!D20'",
+        "veredicto": "NO necesita protección y no se le tocó nada: es un pase directo, sin aritmética, sin comparación numérica. Un texto vacío se propaga como texto vacío. Verificado que Comparativa!C8:E8 no alimenta nada más (ningún consumidor de segundo orden en el libro), que el gráfico de la Comparativa cuelga de 'Comparativa'!$C$7:$E$7 (EBITDA anual, fila 7) y que el formato condicional vive en Comparativa!C7:E7 y Simulador!B19:D19 — la fila 20 no entra en ninguno de los dos. Caché antes/después de Simulador y Comparativa: 0 diferencias (el libro se entrega con datos de ejemplo)."
+      }
+    ],
+    "sin_ningun_consumidor": [
+      "01!'Año 1'..'Año 3'!fila 24 — 0 fórmulas la referencian; el único gráfico del libro cuelga de 'Resumen'!$B$4:$D$7 y el formato condicional, de 'Resumen'!B7:D7",
+      "01b!'Año 1'..'Año 5'!fila 24 — 0 fórmulas; gráfico en 'Resumen'!$B$4:$F$7; formato condicional en 'Resumen'!B7:F7",
+      "02!Escenarios!C16:E16 — 0 fórmulas; gráfico en 'Break-Even'!$A$21:$D$28; formato condicional en Escenarios!C13:E13 (fila 13, no 16)",
+      "05!'Resumen Anual'!B18:N18 — 0 fórmulas; gráfico en 'Resumen Anual'!$B$4:$M$6; formato condicional en 'Resumen Anual'!B13:N13 (fila 13, no 18) y en F6:F30 de las 12 pestañas mensuales"
+    ],
+    "excluidas": [],
+    "nota_average_sum": "Confirmado que ninguna de las 123 celdas cae dentro de un rango de AVERAGE o SUM: al no tener consumidores (salvo el pase directo de BONUS-08) no hay agregación que proteger. Aun así el criterio se sostiene: AVERAGE y SUM ignoran el texto."
+  },
+  "dryrun": {
+    "exit": 0,
+    "idempotencia": 0,
+    "censo": 0,
+    "cache_fallos": 1,
+    "cache_fallos_detalle": "07-informe-viabilidad-bancos.xlsx: la única, 07!Proyecciones!B24 =IFERROR(IRR($B$22:$G$22),\"—\") — pycel no implementa IRR. Es el fallo por diseño que cubre motor.cachear_irr (paso 4/8), que inyectó '—' con el libro en blanco (flujos [0,0,0,0,0,0], sin cambio de signo). Los otros 9 ficheros: fallos_pycel=0.",
+    "graficos": "9/9",
+    "errores_excel": 0,
+    "errores_excel_detalle": "Barrido de '#' en data_only sobre los 10 ficheros (#VALUE!/#¡VALOR!/#REF!/#DIV/0!/#¡DIV/0!/#N/A/#NAME?/#¿NOMBRE?/#NUM!/#¡NUM!/#NULL!/#¡NULO!): 0 celdas.",
+    "verificacion_data_only": {"con_valor": 1597, "vacias_por_diseno": 585, "vacias_comprobadas_con_pycel": 585, "vacias_no_verificadas": 0, "fallos": 0},
+    "protegidas": "56/56 sin contraseña",
+    "demos_del_pipeline": "TIR del caso trazado 11,9592 % (SPEC 11,9592 %) · VAN 15.440,05 € · payback 3,21 años · cuota algebraica 100.000/5 %/60m = 1.887,12 €",
+    "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/fix-v/dryrun-v2/kit-plan-financiero/",
+    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/fix-v/dryrun.json"
+  },
+  "changelog_tocado": false,
+  "changelog_revision": {
+    "fichero": "src/data/productos-changelog.ts:324-347 (14 viñetas de la v2.0)",
+    "veredicto": "Las 14 siguen siendo CIERTAS tras V-01..V-04; no se editó ni una palabra.",
+    "las_que_podían_haber_caído": [
+      ":336 «TIR, VAN y payback … sobre el dinero que genera el negocio antes de la deuda … y si puedes pagar la cuota del préstamo te lo dice el DSCR de la pestaña Ratios» — sigue cierta y ahora es MÁS exacta: tras V-01 el DSCR usa ese mismo flujo de antes de la deuda. La frase no se compromete con ningún numerador, así que no hay nada que reescribir.",
+      ":337 «Si pides carencia, los primeros años pagas solo intereses y la cuota se recalcula sobre el plazo que queda» — cierta, verificada con C7=2 (dos años sólo de intereses, C8=20.336,26). V-02 sólo añade un aviso para un input imposible (carencia ≥ plazo), que la frase nunca prometió admitir.",
+      ":339 «el semáforo ya no castiga vender por encima del presupuesto…» — intacta, V-01..V-04 no tocan los semáforos del 05.",
+      ":343 «Simulador (BONUS 08): … El escenario base deja de salir en pérdidas» — cierta: el margen EBITDA del escenario base sigue en 0,17292434837889373 (17,3 %), caché idéntica antes y después.",
+      ":346 «Gráficos de verdad en 9 de las 10 plantillas … hojas protegidas sin contraseña» — 9/9 gráficos y 56/56 protegidas en el dry-run."
+    ]
+  },
+  "notas": [
+    "SPEC actualizada con las decisiones nuevas para que nadie las revierta: kit-plan-financiero-v2-SPEC.md §7-bis, decisiones 11 (numerador del DSCR y por qué B17 y no B11−B15), 12 (anulación de la carencia inválida y por qué B/D/F siguen numéricas) y 13 («sin dato» se escribe \"\", con el censo de consumidores). La decisión 3 («DSCR contra la cuota») sigue siendo cierta: lo que cambia es el numerador, no el denominador.",
+    "AMPLIACIÓN sobre lo que pedía V-02: el verificador daba por hecho que el cuadro absorbía el texto de C8 porque «ya está dentro de un IF». Medido, no es así — con plazo 3 y carencia 3 los años 4 y 5 caen fuera de la carencia, la rama else devuelve el texto y E=C−D habría dado #¡VALOR!. Por eso, además de C8, se guardan las columnas C y E. Y por eso NO se guardan B, D ni F: de D salen los intereses del P&L (Proyecciones!B13) y de F el capital pendiente encadenado; un «—» ahí habría propagado el #¡VALOR! a BAI, IS y beneficio neto.",
+    "DEFECTO PREEXISTENTE OBSERVADO Y NO CORREGIDO (fuera del alcance de V-01..V-04, y anterior a RX-07): el cuadro de amortización siempre pinta 5 años, así que un préstamo de plazo MENOR de 5 años sigue aplicando la anualidad más allá de su vencimiento. Medido con C6=3 y C7=0: los años 4 y 5 vuelven a amortizar y el capital pendiente final sale negativo. No es texto ni #¡VALOR!, es una fila de más; nada que ver con la carencia. Se documenta aquí para que quien lo aborde lo haga con su propio hallazgo y su propia prueba.",
+    "BONUS-08!Simulador!B20:D20 (3 de las 123 celdas) NO las generaba el paquete: venían heredadas del fichero v1.1 de origen y ningún módulo las reescribía. Se añaden a _bonus_08 (grupo_c.py:832-844). El enunciado enumeraba «01, 01b, 05!'Resumen Anual' y 02!Escenarios» pero cifraba 123 celdas, que es el censo COMPLETO e incluye estas tres; se han corregido las 123 y no se ha excluido ninguna.",
+    "El 05!'Resumen Anual' y las pestañas mensuales del 05 comparten ahora criterio: 289 celdas del 05 usan '=IF(x=0,\"\",…)' (276 de RX-05 + 13 de V-04). La nueva línea de Instrucciones (V-03) es lo que le pone nombre al guion resultante.",
+    "Higiene térmica: `istats cpu temp` antes de cada python, un solo proceso cada vez, máximo registrado 43,31 °C y mínimo 39,94 °C. Sin builds, sin navegador, sin Playwright.",
+    "Higiene de producción: astro-site/public/dl/kit-plan-financiero/ NO se ha tocado — `git status --porcelain astro-site/public/dl/` sale vacío. main.py sólo con --dry-run y CLAUDE_SCRATCHPAD apuntando al scratchpad; sin KIT_PLAN_FINANCIERO_APPLY. pycel siempre sobre copias en scratchpad/fix-v/pycel/.",
+    "Higiene de git: ningún commit, push, checkout, reset ni stash. `git status --porcelain` deja exactamente 4 ficheros modificados: los tres módulos del paquete y la SPEC.",
+    "Método pycel: se evalúa la celda objetivo ANTES de cada set_value para que se construya el grafo (si se hace al revés devuelve la caché del fichero y da falsos resultados). Cada escenario se corrió sobre la copia ANTES y la copia AHORA con inputs idénticos, para que la comparación sea del cambio y no del ejemplo.",
+    "Barrido de caracteres no latinos (CJK, cirílico, hangul, árabe, hebreo, tailandés) sobre los cuatro ficheros editados: 0 ocurrencias.",
+    "RC2-01 sigue en pie por definición y ninguna conclusión de este informe autoriza publicar: producción (dl/) sigue sirviendo la v1.1. El build v2.0 sobre dl/ lo ejecuta el orquestador con KIT_PLAN_FINANCIERO_APPLY."
+  ]
+}

@@ -574,7 +574,12 @@ def _escenarios_02(wb, informe):
     for L in ('C', 'D', 'E'):
         motor.f(ws, L + '14', '=Datos!$C$15', motor.FMT_EUR)
         motor.f(ws, L + '15', '=' + L + '13-' + L + '14', motor.FMT_EUR)
-        motor.f(ws, L + '16', '=IF(' + L + '10=0,0,' + L + '13/' + L + '10)',
+        # V-04: `""` en vez de `0` (criterio de RX-05). Sin facturación no hay
+        # margen que enseñar; «0,0 %» sería una afirmación falsa. Consumidores
+        # censados: cero — nadie referencia C16:E16, el gráfico del libro
+        # cuelga de 'Break-Even'!A21:D28 y el formato condicional de
+        # Escenarios vive en C13:E13.
+        motor.f(ws, L + '16', '=IF(' + L + '10=0,"",' + L + '13/' + L + '10)',
                 motor.FMT_PCT)
     ws['B18'] = ('El EBITDA de la fila 13 va ANTES del servicio de deuda: es '
                  'el que se compara con los benchmarks del 06 y del 07.')

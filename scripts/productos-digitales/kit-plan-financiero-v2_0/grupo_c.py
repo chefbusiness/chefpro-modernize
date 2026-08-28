@@ -418,8 +418,23 @@ RATIOS_07 = (
     (4, 'Ratio de endeudamiento',
      '=IFERROR($C$16/($C$16+$C$15),"Indica deuda y fondos propios")',
      motor.FMT_PCT, 0.60, 0.70, 'menor', 'pct'),
+    # V-01: el numerador era B18 (CASH FLOW OPERATIVO = beneficio neto +
+    # amortización), que ya tiene los intereses restados, contra un
+    # denominador que es el servicio COMPLETO de la deuda: los intereses se
+    # descontaban DOS veces. Medido con EBITDA 36.000, amortización 15.000,
+    # intereses 6.000 y servicio 16.103,59 → 1,63 en vez de ~1,9. No da verdes
+    # falsos (sesga a la baja), pero sí ROJOS falsos en el documento que va al
+    # banco. El numerador pasa a la fila 17, el FLUJO LIBRE DEL PROYECTO que
+    # creó RX-06: EBITDA − IS sobre el EBIT, o sea EBIT×(1−t)+amortización.
+    # Frente al otro candidato canonico (EBITDA − IS contable, B11−B15) se
+    # elige la fila 17 por dos razones: es una fila IMPRESA que el analista
+    # puede trazar en Proyecciones —B11−B15 no existe como línea— y su
+    # impuesto no depende del apalancamiento, así que pedir más deuda no
+    # infla el propio ratio que mide si puedes pagarla (con el ejemplo de
+    # arriba: 30.750/16.103,59 = 1,91 frente a 32.250/16.103,59 = 2,00; la
+    # fila 17 es la lectura conservadora, que es la que corresponde aquí).
     (5, 'Cobertura de deuda (DSCR)',
-     "=IFERROR(Proyecciones!$B$18/'Financiación'!$C$12,\"Indica el préstamo\")",
+     "=IFERROR(Proyecciones!$B$17/'Financiación'!$C$12,\"Indica el préstamo\")",
      motor.FMT_X, 1.25, 1.15, 'mayor', 'x'),
     (6, 'Ratio de liquidez corriente',
      '=IFERROR($C$13/$C$14,"Indica el balance")', motor.FMT_X, 1.00, 0.90,
@@ -485,12 +500,25 @@ def _financiacion_07(wb, informe):
     # 1.887,12 €/mes.
     # RX-07: la cuota se calcula sobre el plazo que QUEDA tras la carencia
     # (C6 − C7). Con C7 = 0 la fórmula es idéntica a la anterior.
+    # V-02: y con C7 ≥ C6 el exponente se vuelve positivo o nulo y la anualidad
+    # deja de existir. Medido antes de este fix, préstamo de 100.000 € al 6 %
+    # con C6=8: C7=10 imprimía una «CUOTA ANUAL» de −48.543,69 € y C7=8 una de
+    # 0,00 € que amortizaba cero durante cinco años — las dos en la portada
+    # financiera de un informe que se entrega a un banco. La DV de C7 es
+    # «decimal ≥ 0» y no tiene techo, así que el input es alcanzable. Se anula
+    # EN ORIGEN, como en 06!Ratios!C17 (RX-03): el mensaje sustituye al número
+    # y protege a CUALQUIER consumidor, no sólo al que hoy se conoce.
     motor.f(ws, 'C8',
-            '=IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0)',
+            '=IF(($C$6-$C$7)<=0,'
+            '"La carencia no puede igualar ni superar el plazo",'
+            'IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0))',
             motor.FMT_EUR)
     ws['C8'].font = Font(bold=True)
     ws['D8'] = ('Anualidad constante (sistema francés), calculada sobre el '
-                'plazo posterior a la carencia.')
+                'plazo posterior a la carencia. La carencia tiene que ser '
+                'MENOR que el plazo: si no, no queda ningún año sobre el que '
+                'repartir el capital y aquí sale un aviso en vez de una '
+                'cifra.')
     ws['D8'].font = Font(size=9, italic=True)
 
     ws['B10'] = 'CUADRO DE AMORTIZACIÓN (años 1-5)'
@@ -515,11 +543,29 @@ def _financiacion_07(wb, informe):
         # (el capital pendiente no baja); la cuota francesa arranca el año
         # C7+1. Todo lo que lee la cuota —el DSCR de Ratios (C12) y la línea
         # de tesorería del 03— lee esta columna, no el C8 a secas.
+        # V-02: con la carencia inválida C8 es TEXTO. El IF de la cuota NO
+        # basta para absorberlo: en cuanto existe un año i > C7 (p. ej. C6=3
+        # y C7=3, que deja los años 4 y 5 fuera de la carencia) la rama else
+        # devuelve el texto y `E = C − D` daría #¡VALOR!. Así que la columna
+        # de la cuota abstiene con «—» y la de amortización cae a 0 —que es
+        # además lo correcto: si la carencia se come el plazo no se amortiza
+        # nada—. Las columnas B, D y F siguen SIEMPRE numéricas a propósito:
+        # de D salen los intereses del P&L (Proyecciones!B13) y de F el
+        # capital pendiente que encadena el año siguiente; un «—» ahí
+        # propagaría el #¡VALOR! al P&L entero.
+        # Vencimiento (29-ago, orquestador): el cuadro pinta siempre 5 años,
+        # así que un préstamo a 3 seguía amortizando en los años 4 y 5 y el
+        # capital pendiente se volvía NEGATIVO. Pasado el plazo ($A > $C$6)
+        # cuota, intereses y amortización caen a 0 (numéricos, no «—»).
         motor.f(ws, 'C' + r,
-                '=IF($A' + r + '<=$C$7,$B' + r + '*$C$5,$C$8)',
+                '=IF($C$6<=$C$7,"—",IF($A' + r + '>$C$6,0,IF($A' + r
+                + '<=$C$7,$B' + r + '*$C$5,$C$8)))',
                 motor.FMT_EUR)
-        motor.f(ws, 'D' + r, '=$B' + r + '*$C$5', motor.FMT_EUR)
-        motor.f(ws, 'E' + r, '=$C' + r + '-$D' + r, motor.FMT_EUR)
+        motor.f(ws, 'D' + r, '=IF($A' + r + '>$C$6,0,$B' + r + '*$C$5)',
+                motor.FMT_EUR)
+        motor.f(ws, 'E' + r,
+                '=IF($C$6<=$C$7,0,IF($A' + r + '>$C$6,0,$C' + r + '-$D' + r
+                + '))', motor.FMT_EUR)
         motor.f(ws, 'F' + r, '=$B' + r + '-$E' + r, motor.FMT_EUR)
     ws['B18'] = ('La cuota de la columna C es la que se copia a '
                  '03!«Flujo Mensual», fila 23 (dividida entre 12), y la que '
@@ -535,9 +581,10 @@ def _financiacion_07(wb, informe):
     ws['A22'] = '© 2026 AI Chef Pro · aichef.pro'
     ws['A22'].font = Font(size=8)
     motor.anchos(ws, {'A': 8, 'B': 30, 'C': 20, 'D': 18, 'E': 26, 'F': 24})
-    informe.append("07: hoja 'Financiación' con anualidad algebraica y "
-                   'carencia modelada; de ahí salen los intereses del P&L y '
-                   'el DSCR (DOM-14/DOM-11/RX-07)')
+    informe.append("07: hoja 'Financiación' con anualidad algebraica, "
+                   'carencia modelada y aviso en C8 cuando la carencia iguala '
+                   'o supera el plazo; de ahí salen los intereses del P&L y '
+                   'el DSCR (DOM-14/DOM-11/RX-07/V-02)')
 
 
 def _proyecciones_07(wb, informe):
@@ -706,12 +753,25 @@ def _ratios_07(wb, informe):
                  'y quedaba en ámbar en el otro.')
     ws['B20'].font = Font(size=9, italic=True)
     ws['B20'].alignment = Alignment(wrap_text=True, vertical='top')
+    # V-01: la leyenda del DSCR. B21 estaba vacía y cae dentro del
+    # `limpiar_rango(A3:H30)` de arriba, así que no desplaza nada y la 2.ª
+    # pasada la reescribe igual.
+    ws['B21'] = ('El DSCR divide el FLUJO LIBRE DEL PROYECTO del año 1 '
+                 '(Proyecciones, fila 17: EBITDA menos el Impuesto sobre '
+                 'Sociedades, antes de intereses) entre el servicio de deuda '
+                 'de ese mismo año (Financiación, columna «Cuota anual», año '
+                 '1). El numerador va ANTES de la deuda a propósito: si le '
+                 'restaras los intereses, estarías descontándolos dos veces.')
+    ws['B21'].font = Font(size=9, italic=True)
+    ws['B21'].alignment = Alignment(wrap_text=True, vertical='top')
     ws['A24'] = '© 2026 AI Chef Pro · aichef.pro'
     ws['A24'].font = Font(size=8)
     motor.anchos(ws, {'B': 34, 'C': 16, 'D': 24, 'E': 12, 'F': 14, 'G': 14,
                       'H': 18})
-    informe.append('07!Ratios: los siete se calculan, con DSCR contra la cuota '
-                   'y columna Estado (DOM-11/TEC-19/RD-29)')
+    informe.append('07!Ratios: los siete se calculan, con el DSCR dividiendo '
+                   'el flujo libre del proyecto (Proyecciones!B17, antes de '
+                   'intereses) entre el servicio de deuda del año 1, y '
+                   'columna Estado (DOM-11/TEC-19/RD-29/V-01)')
 
 
 def _resumen_ejecutivo_07(wb, informe):
@@ -775,6 +835,18 @@ def _bonus_08(wb, informe):
         for clave, valor in valores.items():
             motor.val(ws, col + str(filas[clave]), valor, fmts[clave],
                       verde_=True)
+    # V-04: las tres últimas celdas del patrón `=IF(x=0,0,…)` del kit. Este
+    # libro SÍ se entrega con datos de ejemplo, así que hoy no imprime ningún
+    # «0,0 %» falso; el guardián sólo salta si el cliente pone a cero el ticket
+    # o los cubiertos de un escenario, y entonces conviene que el margen se
+    # calle en vez de afirmar un 0,0 %. Consumidor censado: `Comparativa`!C8:E8
+    # (`=Simulador!B20`, un pase directo sin aritmética) y nada más — el
+    # gráfico de la Comparativa cuelga de C7:E7 (EBITDA anual) y el formato
+    # condicional, de C7:E7 y de Simulador!B19:D19; la fila 20 no alimenta
+    # ninguno de los dos. Un texto vacío se propaga como texto vacío.
+    for L in ('B', 'C', 'D'):
+        motor.f(ws, L + '20', '=IF(' + L + '14=0,"",' + L + '19/' + L + '14)',
+                motor.FMT_PCT)
     ws['A22'] = ('Base común con el 02: mismo ticket (22 €), mismos '
                  'cubiertos/día (55), mismos días (26), mismo % de coste '
                  'variable (35 %) y los mismos costes fijos sin personal '
@@ -782,8 +854,9 @@ def _bonus_08(wb, informe):
                  'los dos libros.')
     ws['A22'].font = Font(size=9, italic=True)
     motor.anchos(ws, {'A': 56})
-    informe.append('BONUS-08: fin de la doble contabilización del personal y '
-                   'escenarios homogéneos con el 02 (DOM-06/TEC-21/TEC-22)')
+    informe.append('BONUS-08: fin de la doble contabilización del personal, '
+                   'escenarios homogéneos con el 02 y margen EBITDA que se '
+                   'calla sin facturación (DOM-06/TEC-21/TEC-22/V-04)')
 
 
 # ==========================================================================
@@ -950,7 +1023,10 @@ def post(wb, fname, cambios, registro):
                 (15, '▸ Financiación: cuadro de amortización del préstamo. De '
                      'ahí salen los intereses del P&L, la cuota del DSCR y la '
                      'línea de cuota de la tesorería del 03.'),
-                (16, '▸ Ratios: indicadores de solvencia y rentabilidad.'),
+                (16, '▸ Ratios: indicadores de solvencia y rentabilidad. El '
+                     'DSCR compara el flujo libre del proyecto del año 1 '
+                     '(Proyecciones, fila 17) con el servicio de deuda de ese '
+                     'año (Financiación): mide si el negocio paga la cuota.'),
                 (17, '▸ Garantías: avales y garantías ofrecidas.')):
             ws['B' + str(fila)] = texto
             ws['B' + str(fila)]._style = copy.copy(est_lista)

@@ -244,6 +244,25 @@ revienta antes. Obligatorio: `COUNTA` → `COUNTIF(rango,"<>")`; `PMT`/`PAGO` �
    proyecto (sin apalancamiento)», «VAN del proyecto», «Payback del proyecto (años)») y la hoja lo dice bajo la tabla. La capacidad de devolver el préstamo la
    mide el **DSCR** de `07!Ratios`, que sí lee el servicio de deuda del año.
 
+11. **El numerador del DSCR va ANTES de la deuda: `07!Proyecciones!B17`** (2026-08-29, a raíz de V-01). Estaba en `B18` («CASH FLOW OPERATIVO» = beneficio neto +
+   amortización), que ya lleva los intereses restados, dividido entre el servicio COMPLETO del año: los intereses se descontaban **dos veces**. Medido con EBITDA
+   36.000 €, amortización 15.000 €, intereses 6.000 €, IS 3.750 € y servicio 16.103,59 €: **1,63** en vez de 1,91. Sesga a la baja, así que no da verdes falsos,
+   pero **sí rojos falsos** en el documento que va al banco (comprobado: un proyecto con DSCR real 1,30 se imprimía como 1,02 → 🔴). Entre los dos numeradores
+   candidatos se elige la **fila 17** —no `B11−B15` (EBITDA − IS contable)— por dos razones: es una fila **impresa** que el analista puede trazar en la hoja, y su
+   impuesto no depende del apalancamiento, así que pedir más deuda no infla el propio ratio que mide si puedes pagarla. Es la lectura conservadora de las dos
+   (1,91 frente a 2,00 en el ejemplo). Leyenda en `07!Ratios!B21` y en `07!Instrucciones!B16`.
+12. **La carencia se anula EN ORIGEN si iguala o supera el plazo** (2026-08-29, a raíz de V-02). RX-07 metió `C7` en el denominador de `07!Financiación!C8` pero la
+   validación de `C7` es «decimal ≥ 0» y no tiene techo: con plazo 8 y carencia 10 la portada del informe bancario imprimía una **CUOTA ANUAL de −48.543,69 €**, y
+   con carencia 8 una de 0,00 € que amortizaba cero durante cinco años. `C8` devuelve ahora el aviso «La carencia no puede igualar ni superar el plazo», igual que
+   `06!Ratios!C17` en RX-03. **Las columnas B, D y F del cuadro siguen siendo siempre numéricas a propósito**: de `D` salen los intereses del P&L
+   (`Proyecciones!B13`) y de `F` el capital pendiente que encadena el año siguiente, así que un texto ahí propagaría `#¡VALOR!` al P&L entero. Abstienen `C`
+   («—») y `E` (0, que además es la amortización real cuando la carencia se come el plazo). El `IF` de la cuota **no** bastaba: con plazo 3 y carencia 3 los años
+   4 y 5 caen fuera de la carencia y la rama `else` devolvía el texto a `E = C − D`.
+13. **«Sin dato» se escribe `""`, no `0`** (2026-08-29, a raíz de V-04, extendiendo RX-05 a todo el kit). Las 123 celdas `=IF(<ref>=0,0,…)` que quedaban en `01`,
+   `01b`, `05!'Resumen Anual'`, `02!Escenarios` y `BONUS-08!Simulador` afirmaban un margen del «0,0 %» para un mes sin una sola venta. Censo de consumidores
+   previo al cambio: **ninguno** en 01, 01b, 02 y 05 (ni fórmulas, ni series de gráfico, ni formato condicional — que vive en otras filas), y en BONUS-08 sólo
+   `Comparativa!C8:E8`, que es un pase directo `=Simulador!B20` sin aritmética. `AVERAGE`/`SUM` ignoran el texto y no necesitaban cambio.
+
 ## 8. Mapa id → sección (90/90)
 
 | id | dónde | qué |
