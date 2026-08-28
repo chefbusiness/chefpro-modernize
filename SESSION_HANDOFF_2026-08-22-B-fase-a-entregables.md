@@ -323,3 +323,45 @@ enlazados a su landing pública (UTM `utm_content=kits-tareas-v2`):
   en la skill `~/.claude/skills/resend-operaciones-grupo`. Queda un Draft de prueba en el panel
   («2026-08-17 Modelos open source (ES) (copy)») que John puede borrar. Métricas de apertura: tracking
   no activado en news.aichef.pro (activarlo en Domains si se quiere medir el próximo).
+
+## 13. Sesión 28→29-ago (Mac, ultracode) — **Kit Plan Financiero v2.0 LIVE** · `ffb12e3`
+
+**Corrección del §11:** los grupos A/B/C SÍ existían (auto-commit `321c992`, 24-ago 10:45; los agentes murieron por el 529
+sin reportar, pero un reintento posterior los escribió). Un dry-run el 28-ago dio TODO VERDE a la primera. Lección en memoria
+`feedback_handoff-verificar-disco-antes-de-declarar-inexistente`: `ls` + `git log -- fichero` + dry-run antes de escribir «no existe».
+
+**Cadena ejecutada (todo en serie, istats antes de cada python, máx. 58 °C, sin builds ni navegador):**
+1. `wip/plan-financiero-capa-producto` fundida en main (0 conflictos): changelog 2.0, «10 plantillas» en los emails (COM-11), dashboard.
+2. Bloqueos del crítico del 24-ago: **1/1-bis** → `ISNUMBER` en los 4 semáforos de `grupo_c.py` (07!Ratios en blanco daba cinco ✅
+   junto a «Indica el préstamo»); **2 (COM-23)** → barrido de tildes/ñ por opus: 242 sustituciones en 5 superficies
+   (Astro `.ts`, 10 islands, testimonios, Helmet/JSON-LD de la SPA, dashboard), frases idénticas Astro↔SPA↔schema; cabecera del `.ts` con los
+   puntos «SIN tildes» derogados. Aviso 4 → SPEC dice ya «53 hojas v1.1 / 56 v2.0».
+3. Workflow `plan-financiero-v2-cierre` (opus ×3, schema): refutador Excel (10 RX) + refutador de copy (6 RC2). Los 26 ids del mapa §8 que
+   ninguna fase nombraba: cerrados (HECHO / aparcado-John), sólo COM-23 estaba de verdad perdido.
+4. Workflow `plan-financiero-v2-rx` (corrector opus → verificador opus independiente, 15/15 resueltos) y fixer opus de V-01..V-04:
+   - **RX-01/05**: los 240 semáforos del 05 salían «✅ OK» con el libro en blanco (`"" >= -0,05` es VERDADERO en Excel; y «sin presupuesto» se leía
+     como desviación 0). Ahora `ISNUMBER` + `IF(B=0,"",…)` → 240 «—» y leyenda en Instrucciones (V-03).
+   - **RX-02**: `#¡VALOR!` en 01!Resumen!E8 y 01b!Resumen!G8 (únicos errores de Excel cacheados). **RX-03**: food cost −90 % con C6=0 → anulado en origen.
+   - **RX-04**: RATIOS_07 tenía óptimo = límite en 6 de 7 filas (⚠️ código muerto) → bandas reales (0,60/0,70 · 1,25/1,15 · 1,00/0,90 · 0,10/0,05 · 0,30/0,20 · 3,5/4,5).
+   - **RX-06 → decisión 10**: TIR/VAN/payback **del proyecto** (flujo libre sin deuda, fila 17 visible); **V-01 → decisión 11**: el DSCR restaba los
+     intereses dos veces (rojos falsos: DSCR real 1,30 se imprimía 1,02 🔴) → numerador = fila 17.
+   - **RX-07 → carencia modelada** (años 1..C7 sólo intereses, cuota francesa sobre el plazo restante); **V-02 → decisión 12**: carencia ≥ plazo
+     imprimía cuota −48.543 € → anulada en origen; **decisión 14 (orquestador)**: el cuadro pinta 5 años y un préstamo a 3 amortizaba en los años 4-5
+     (capital negativo) → 0 pasado el vencimiento. Demostrado con pycel (plazo 3 → 0,00 en el año 3; plazo 4 + carencia 1; plazo 8 idéntico al anterior).
+   - **RX-08** nota IVA enero (A25 + Comment en B25) · **RX-09** Resumen Ejecutivo C16 «—» sin préstamo + rótulo de ejemplo · **RX-10** lista de 5 pestañas.
+   - **V-04 → decisión 13**: 123 celdas `=IF(x=0,0,…)` afirmaban «0,0 %» de margen sin ventas → `""`, con censo de consumidores (0 aritméticos).
+   - Copy: RC2-02/04 (JSON-LD de la SPA divergía del acordeón en la FAQ 4 y en «100 %»), RC2-03 fecha 29-ago, RC2-05 «Kit Gestión Personal» también en inventario, RC2-06 cabecera.
+5. Dry-run final propio TODO VERDE → **APPLY** (`KIT_PLAN_FINANCIERO_APPLY=1`, respaldo en scratchpad) → censo 0 defectos → gate offline 10/0 →
+   commit `ffb12e3` (rutas explícitas) → push → deploy → gate LIVE (ver abajo). Cifras reales en `dl/`: 56 hojas · 2.437 fórmulas · 9 gráficos.
+
+**Informes** (`auditorias/`): `kit-plan-financiero-v2-rx-correccion.json`, `-rx-verificacion.json`, `-v-correccion.json`, `-real.json`.
+Commits de la sesión: `af2f4f9` (merge) · `fad42b7` · `45cfb8d` · `e65479f` · `ffb12e3`.
+
+**Gate LIVE (29-ago 01:30, deploy `6a921989` ready en 109 s):** plan-financiero **10 entregables · 0 fallos**; md5 de las 10 descargas = repo; la landing sirve «Versión 2.0 · agosto 2026», «SÍ, QUIERO…», «Garantía de Satisfacción», «Diseñado para Hostelería»; **baseline completo 44 productos · 650 entregables · 0 fallos** (`auditorias/gate-live-2026-08-29-cierre.json`). Rama `wip/plan-financiero-capa-producto` borrada (fundida en `af2f4f9`).
+
+**Pendientes de John (sin cambios + 1 nuevo):** avisos legales (ancla 190 €, aggregateRating), licencia inventario, webhook/strict, marca CB en
+7 productos, residuos RC-12/RC-14 en testimonios (cifras), −79 % vs 72 % en la misma pantalla · **nuevo**: el pie enlaza «Kit Gestión Personal» y la
+página se llama «Kit Gestión de Personal y Turnos» (regla del nombre del destino, RC2-05).
+
+**Siguiente (orden del plan):** guías → planes → hotel completo → eBook · homologación AICP↔CB (a CB le faltan los 42 v1.1 + pastelería/inventario/
+gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casual y el catering de CB) · SEO landings ES+LATAM.
