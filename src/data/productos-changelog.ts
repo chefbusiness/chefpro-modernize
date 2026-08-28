@@ -322,13 +322,34 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'kit-plan-financiero': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.0',
+    updated: '2026-08-24',
     entries: [
+      {
+        version: '2.0',
+        date: '2026-08-24',
+        title: 'Los cálculos que faltaban: tesorería encadenada, informe bancario que calcula y ratios con una sola vara de medir',
+        changes: [
+          'Tesorería (03): el saldo con el que abre cada mes es ahora el saldo con el que cerró el anterior. Antes arrastraba la línea «Otros pagos», así que once de los doce meses salían mal.',
+          'Tesorería (03): pestaña «Parámetros» nueva — % de cobro con tarjeta y su desfase, plazo de pago a proveedores, tipos de IVA y estacionalidad. La liquidación de IVA se calcula sola en abril, julio y octubre (modelo 303), y la Seguridad Social se paga al mes siguiente.',
+          'Informe de viabilidad (07): el P&L calcula de verdad. Total gastos, EBITDA, BAI, Impuesto de Sociedades, beneficio neto y cash flow operativo eran ceros escritos a mano.',
+          'Informe de viabilidad (07): TIR, VAN y payback reales, sobre los cinco años y con el año 0 de la inversión. La tasa de descuento y el tipo del Impuesto de Sociedades son ahora celdas que puedes cambiar (25 % general; 15 % si eres entidad de nueva creación).',
+          'Informe de viabilidad (07): pestaña «Financiación» nueva con el cuadro de amortización del préstamo. De ahí salen los intereses del P&L y el DSCR que mira el banco, que antes había que teclear a mano.',
+          'Los tres «Resumen» (01, 01b y 05) consolidan por referencia: cambias un mes o un año y el resumen se mueve. Antes eran ceros fijos con un gráfico plano encima.',
+          'P&L mensual (05): el semáforo ya no castiga vender por encima del presupuesto ni gastar de menos, y con EBITDA presupuestado negativo deja de invertir el signo. Las filas de ratios tienen por fin su desviación en puntos porcentuales.',
+          'Dashboard (06): el RevPASH se mide por plaza y hora, no por metro cuadrado, y los umbrales viven en una sola tabla numérica — el food cost decía 32 % en un sitio y 33 % en otro.',
+          'Punto de equilibrio (02): los cubiertos necesarios se redondean hacia arriba (con «51» no se llegaba), aparece el ticket medio necesario y hay dos umbrales: el operativo y el de caja. La cuota del préstamo sale del EBITDA.',
+          'CAPEX (04): cada partida lleva base, IVA y total con IVA — el desembolso real es un 21 % mayor —, coeficiente de amortización por categoría y una pestaña nueva de conceptos de apertura con stock inicial, fianza, imprevistos y fondo de maniobra.',
+          'Nuevas líneas de gasto en los P&L: comisiones de las plataformas de delivery y coste de bebida separado del de comida, para que el food cost no se diluya con la barra dentro.',
+          'Simulador (BONUS 08): los costes fijos ya no incluían las nóminas dos veces. El escenario base deja de salir en pérdidas.',
+          'Checklist (BONUS 09): 54 tareas en 7 fases — la nueva es Personal y obligaciones laborales (SS, RETA, apertura del centro de trabajo, contratos, altas previas, registro de jornada). El porcentaje completado cuenta las tareas que hay, no un 48 escrito a mano.',
+          'Gráficos de verdad en 9 de las 10 plantillas, colores que se encienden solos en los semáforos, hojas protegidas sin contraseña con las celdas editables abiertas, y validación de datos que ya no rechaza un saldo negativo.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
-        title: 'Revisión completa de los 10 ficheros',
+        title: 'Formato de impresión (A4), metadatos y versión en los 10 ficheros',
         changes: [
           'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
           'Número de versión actualizado a 1.1 en la hoja de instrucciones de cada fichero.',

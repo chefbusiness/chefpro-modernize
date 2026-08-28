@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium animate-fade-in">
-          El 60% de los restaurantes cierra en los primeros 3 anos por falta de planificacion financiera
+          La mayoria de los cierres tempranos se explican por una planificacion financiera inexistente
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">

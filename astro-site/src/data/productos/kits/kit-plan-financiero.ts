@@ -25,10 +25,11 @@
 //     inconsistencia real de la SPA (mismo patrón ya visto en otros productos de esta línea).
 //   - buyBox.ctaLabel / cta.ctaLabel usan "SI" sin tilde ("SI, QUIERO EL KIT FINANCIERO — 39 EUR"),
 //     a diferencia de escandallos ("SÍ, QUIERO EL KIT — €12"). Copiado VERBATIM.
-//   - schema.faqs (4 preguntas) es un SUBCONJUNTO DISTINTO de faqs on-page (6 preguntas): dos
-//     preguntas on-page ("¿Las plantillas se conectan entre si?" y "¿Puedo usarlo para varios
-//     restaurantes?") NO están en el FAQPage schema, y las 4 que sí coinciden tienen texto/pregunta
-//     más corto en el schema. Ambos bloques VERBATIM, cada uno según su origen en la SPA.
+//   - Fix 2026-08-24 (COM-21, independiente de la versión del xlsx): schema.faqs pasa a ser el
+//     MISMO array que faqs on-page (6 preguntas) — antes era un subconjunto recortado de 4 y el
+//     FAQPage no coincidía con lo que veía el visitante. Esto es una corrección de SEO/schema, no
+//     un cambio de contenido del producto: NO implica que el kit ya esté en v2.0 (sigue en v1.1,
+//     ver nota más abajo sobre updateNote).
 import type { KitExcelData } from './types';
 
 const data: KitExcelData = {
@@ -60,7 +61,7 @@ const data: KitExcelData = {
       {
         author: 'Ricardo Gomez',
         rating: '5',
-        body: 'El plan previsional a 3 anos fue lo que me pidio el banco. Lo presente tal cual y me aprobaron 120.000 EUR.',
+        body: 'El plan previsional a 3 años fue lo que me pidio el banco. Lo presente tal cual y me aprobaron 120.000 EUR.',
       },
       {
         author: 'Ana Beltran',
@@ -73,23 +74,32 @@ const data: KitExcelData = {
         body: 'El dashboard de ratios con benchmarks del sector es exactamente lo que necesitaba para los comites de direccion.',
       },
     ],
-    // FAQPage schema (4 preguntas — SUBCONJUNTO DISTINTO de las 6 FAQ on-page, VERBATIM del Helmet)
+    // FAQPage schema — v2.0 (COM-21): MISMO array que la FAQ on-page (6 preguntas), no un
+    // subconjunto recortado — antes el FAQPage declaraba solo 4 de las 6 preguntas visibles.
     faqs: [
       {
-        q: '¿Sirve para un restaurante que ya esta abierto?',
-        a: 'Si. El P&L mensual, el dashboard de ratios y el cash flow son especialmente utiles para restaurantes en funcionamiento.',
+        q: '¿Sirve para un restaurante que ya está abierto?',
+        a: 'Sí. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente útiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son más para aperturas o expansiones.',
       },
       {
         q: '¿Necesito conocimientos de contabilidad?',
-        a: 'No. Solo introduces tus numeros y las formulas calculan todo automaticamente: ratios, graficos, escenarios.',
+        a: 'No. Las plantillas están diseñadas para hosteleros, no para contables. Solo introduces tus números (ventas, costes, inversiones) y las fórmulas calculan todo automáticamente: ratios, gráficos, escenarios.',
       },
       {
-        q: '¿El banco aceptara este informe?',
-        a: 'Si. El formato sigue la estructura que las entidades financieras esperan: TIR, VAN, payback period, escenarios.',
+        q: '¿El banco aceptará este informe de viabilidad?',
+        a: 'Te da la estructura que piden las entidades: resumen ejecutivo, proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende de tu proyecto y del banco.',
       },
       {
-        q: '¿Hay garantia de devolucion?',
-        a: '30 dias de garantia completa. 100% reembolso sin preguntas.',
+        q: '¿Las plantillas se conectan entre sí?',
+        a: 'Son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas (mensual, total anual, resumen); entre libros no.',
+      },
+      {
+        q: '¿Puedo usarlo para varios restaurantes?',
+        a: 'Sí. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauración, inversores y consultores.',
+      },
+      {
+        q: '¿Hay garantía de devolución?',
+        a: '30 días de garantía completa. Si no estás satisfecho, 100 % reembolso sin preguntas.',
       },
     ],
     breadcrumbName: 'Kit Plan Financiero para Restaurantes',
@@ -112,7 +122,7 @@ const data: KitExcelData = {
 
   hero: {
     badgeTone: 'red',
-    badge: 'El 60% de los restaurantes cierra en los primeros 3 anos por falta de planificacion financiera',
+    badge: 'La mayoria de los cierres tempranos se explican por una planificacion financiera inexistente',
     titlePre: 'Kit ',
     titleGold: 'Plan Financiero',
     titlePost: ' para Restaurantes',
@@ -140,19 +150,19 @@ const data: KitExcelData = {
     countGold: '10',
     headingRest: ' Plantillas de Plan Financiero',
     subtitle:
-      'Cada plantilla incluye formulas encadenadas, graficos profesionales y benchmarks reales del sector hostelero espanol.',
+      'Las 10 plantillas son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA (salvo la tesoreria, que va con IVA porque es caja). Benchmarks reales del sector hostelero espanol.',
     // fourCols omitido (3-col, igual que el resto de la línea salvo escandallos)
     templates: [
       { icon: 'TrendingUp', title: 'Plan Financiero Previsional (3 Años)', desc: 'Proyección de ingresos y gastos a 3 años con desglose mensual. Líneas de ingreso (comedor, barra, delivery, eventos), costes variables/fijos, EBITDA y gráficos automáticos.' },
       { icon: 'TrendingUp', title: 'Plan Financiero Previsional (5 Años)', desc: 'Misma estructura que el plan a 3 años pero con proyección a 5 años. Ideal para presentaciones a bancos, inversores o franquicias que requieren horizontes más largos.' },
-      { icon: 'Target', title: 'Calculadora Punto de Equilibrio', desc: 'Calcula ticket medio necesario, comensales/dia minimos y umbral de facturacion. Incluye 3 escenarios (pesimista/realista/optimista) con grafico visual de break-even.' },
+      { icon: 'Target', title: 'Calculadora Punto de Equilibrio', desc: 'Calcula comensales/dia minimos, umbral de facturacion y el ticket medio necesario para los cubiertos que preveas, con grafico de ingresos vs costes. Break-even operativo y de caja, y 3 escenarios: pesimista, realista y optimista.' },
       { icon: 'Wallet', title: 'Cash Flow Forecast (12 Meses)', desc: 'Flujo de caja mensual con desfase cobros/pagos, IVA trimestral y estacionalidad. Alerta automatica en rojo cuando el saldo cae por debajo del umbral de seguridad.' },
       { icon: 'Building2', title: 'Presupuesto de Inversion / CAPEX', desc: 'Desglose por partida: obra, equipamiento cocina, mobiliario sala, tecnologia, licencias. Presupuesto vs real con % desviacion. Totales con y sin IVA.' },
       { icon: 'BarChart3', title: 'P&L Mensual Real vs Presupuesto', desc: 'Cada mes compara real vs presupuesto con desviacion % y semaforo (verde <5%, amarillo 5-10%, rojo >10%). Food cost, labor cost y prime cost automaticos.' },
       { icon: 'PieChart', title: 'Dashboard de Ratios Financieros', desc: 'Calcula food cost %, labor cost %, prime cost %, GOP, RevPASH, coste por cubierto. Compara contra benchmarks del sector hostelero espanol.' },
       { icon: 'FileText', title: 'Informe de Viabilidad para Bancos', desc: 'Formato profesional listo para presentar: resumen ejecutivo, proyecciones, TIR, VAN, payback period. Disenado para lo que los bancos realmente piden.' },
-      { icon: 'Shuffle', title: 'BONUS: Simulador de Escenarios', desc: 'Modifica ticket medio, ocupacion, food cost y ve impacto instantaneo en rentabilidad. 3 escenarios con comparativa visual lado a lado.' },
-      { icon: 'ClipboardList', title: 'BONUS: Checklist Pre-Apertura Financiero', desc: '48 items agrupados en 6 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria. Con estado, responsable y fecha limite.' },
+      { icon: 'Shuffle', title: 'BONUS: Simulador de Escenarios', desc: 'Modifica ticket medio, cubiertos/dia, food cost y ve impacto instantaneo en rentabilidad. 3 escenarios con comparativa visual lado a lado.' },
+      { icon: 'ClipboardList', title: 'BONUS: Checklist Pre-Apertura Financiero', desc: '54 items agrupados en 7 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria y obligaciones laborales. Con estado, responsable y fecha limite.' },
     ],
   },
 
@@ -164,7 +174,7 @@ const data: KitExcelData = {
       'No son plantillas financieras genericas. Son herramientas disenadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010, asesorando aperturas.',
     reasons: [
       { icon: 'Utensils', title: 'Disenado para Hosteleria', desc: 'Ratios, benchmarks y estructura de costes especificos del sector: food cost, labor cost, prime cost, GOP. No son plantillas financieras genericas.' },
-      { icon: 'Calculator', title: 'Formulas Encadenadas', desc: 'Los datos del CAPEX alimentan el cash flow. El plan previsional alimenta el break-even. Los ratios se calculan solos. Todo conectado automaticamente.' },
+      { icon: 'Calculator', title: 'Plantillas Coherentes Entre Si', desc: 'Mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro las formulas si estan encadenadas: mensual, total anual y resumen.' },
       { icon: 'ShieldCheck', title: 'Formato Banco-Ready', desc: 'El informe de viabilidad sigue la estructura exacta que las entidades financieras esperan: TIR, VAN, payback, escenarios. Listo para presentar.' },
       { icon: 'RefreshCw', title: 'Un Consultor Cobra 2.000 EUR. Esto es 39 EUR', desc: 'Las mismas herramientas que usan los consultores financieros para preparar planes de negocio, pero en Excel por un pago único. Sin suscripción.' },
     ],
@@ -193,7 +203,7 @@ const data: KitExcelData = {
         label: 'BONUS 1',
         title: 'Simulador de Escenarios (What-If)',
         value: '14 EUR',
-        desc: 'Modifica ticket medio, ocupacion, food cost y ve impacto instantaneo en rentabilidad. Compara 3 escenarios lado a lado: pesimista, realista y optimista.',
+        desc: 'Modifica ticket medio, cubiertos/dia, food cost y ve impacto instantaneo en rentabilidad. Compara 3 escenarios lado a lado: pesimista, realista y optimista.',
         image: '/lovable-uploads/ai-gallery/plan-financiero-graficos.jpg',
       },
       {
@@ -201,7 +211,7 @@ const data: KitExcelData = {
         label: 'BONUS 2',
         title: 'Checklist Pre-Apertura Financiero',
         value: '14 EUR',
-        desc: '48 items agrupados en 6 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria. Con estado, responsable y fecha limite para no olvidar nada.',
+        desc: '54 items agrupados en 7 fases: constitucion, financiacion, licencias, proveedores, seguros, tesoreria y obligaciones laborales. Con estado, responsable y fecha limite para no olvidar nada.',
         image: '/lovable-uploads/ai-gallery/plan-financiero-reunion.jpg',
       },
     ],
@@ -226,28 +236,28 @@ const data: KitExcelData = {
   // FAQ on-page (acordeón) — VERBATIM de FaqAccordion.tsx (6 preguntas, distinto subconjunto/texto que schema.faqs)
   faqs: [
     {
-      q: '¿Sirve para un restaurante que ya esta abierto?',
-      a: 'Si. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente utiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son mas para aperturas o expansiones.',
+      q: '¿Sirve para un restaurante que ya está abierto?',
+      a: 'Sí. El P&L mensual real vs presupuesto, el dashboard de ratios y el cash flow forecast son especialmente útiles para restaurantes en funcionamiento. El plan previsional y el informe de viabilidad son más para aperturas o expansiones.',
     },
     {
       q: '¿Necesito conocimientos de contabilidad?',
-      a: 'No. Las plantillas estan disenadas para hosteleros, no para contables. Solo introduces tus numeros (ventas, costes, inversiones) y las formulas calculan todo automaticamente: ratios, graficos, escenarios.',
+      a: 'No. Las plantillas están diseñadas para hosteleros, no para contables. Solo introduces tus números (ventas, costes, inversiones) y las fórmulas calculan todo automáticamente: ratios, gráficos, escenarios.',
     },
     {
-      q: '¿El banco aceptara este informe de viabilidad?',
-      a: 'Si. El formato sigue la estructura que las entidades financieras esperan ver: resumen ejecutivo, proyecciones a 3 anos, TIR, VAN, payback period y escenarios. Lo hemos validado con asesores financieros.',
+      q: '¿El banco aceptará este informe de viabilidad?',
+      a: 'Te da la estructura que piden las entidades: resumen ejecutivo, proyecciones a 5 años, ratios de solvencia, TIR, VAN y payback. La aprobación final depende de tu proyecto y del banco.',
     },
     {
-      q: '¿Las plantillas se conectan entre si?',
-      a: 'Si. Las formulas estan encadenadas: los datos del CAPEX alimentan el cash flow, el plan previsional alimenta el break-even, y los ratios se calculan automaticamente desde el P&L.',
+      q: '¿Las plantillas se conectan entre sí?',
+      a: 'Son coherentes entre si: mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro sí hay fórmulas encadenadas (mensual, total anual, resumen); entre libros no, para que puedas mover o abrir cada plantilla por separado sin romper ninguna referencia.',
     },
     {
       q: '¿Puedo usarlo para varios restaurantes?',
-      a: 'Si. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauracion, inversores y consultores.',
+      a: 'Sí. La licencia es personal — puedes usar las plantillas en todos los proyectos que gestiones. Ideal para grupos de restauración, inversores y consultores.',
     },
     {
-      q: '¿Hay garantia de devolucion?',
-      a: '30 dias de garantia completa. Si no estas satisfecho, 100% reembolso sin preguntas.',
+      q: '¿Hay garantía de devolución?',
+      a: '30 días de garantía completa. Si no estás satisfecho, 100 % reembolso sin preguntas.',
     },
   ],
 
@@ -274,7 +284,7 @@ const data: KitExcelData = {
       'Propietarios, inversores y consultores que ya planifican sus finanzas con estas plantillas',
     items: [
       { name: 'Ricardo Gomez', role: 'Propietario, restaurante casual recien abierto', text: 'El plan previsional a 3 anos fue lo que me pidio el banco para el prestamo. Lo presente tal cual, con los graficos y los escenarios. Me aprobaron 120.000 EUR en 2 semanas.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Ana Beltran', role: 'Consultora gastronomica, +15 anos', text: 'Lo uso con todos mis clientes que van a abrir. El simulador de escenarios es brutal: cambias el ticket medio o la ocupacion y ves al instante como afecta a la rentabilidad. Profesionaliza cualquier proyecto.', avatar: '/avatars/avatar-2.jpg' },
+      { name: 'Ana Beltran', role: 'Consultora gastronomica, +15 años', text: 'Lo uso con todos mis clientes que van a abrir. El simulador de escenarios es brutal: cambias el ticket medio o la ocupacion y ves al instante como afecta a la rentabilidad. Profesionaliza cualquier proyecto.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Javier Morales', role: 'Gerente, grupo de 3 restaurantes en Valencia', text: 'El P&L mensual real vs presupuesto me cambio la vida. Antes me enteraba a final de ano de que algo iba mal. Ahora detecto desviaciones cada mes con el semaforo y corrijo a tiempo.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Isabel Campos', role: 'Directora financiera, cadena de restaurantes', text: 'El dashboard de ratios financieros con benchmarks del sector es exactamente lo que necesitaba para los comites de direccion. Food cost, labor cost, prime cost, GOP — todo automatico.', avatar: '/avatars/avatar-4.jpg' },
       { name: 'Fernando Reyes', role: 'Chef emprendedor, primer restaurante', text: 'La calculadora de punto de equilibrio me abrio los ojos. Descubri que necesitaba 45 cubiertos diarios a 22 EUR de ticket medio para ser rentable. Sin eso habria abierto a ciegas.', avatar: '/avatars/avatar-5.jpg' },
@@ -306,7 +316,7 @@ const data: KitExcelData = {
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-plan-financiero',

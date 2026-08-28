@@ -197,7 +197,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/kit-plan-financiero-access',
     emailSubject: 'Tu acceso al Kit Plan Financiero para Restaurantes',
     emailTitle: 'Accede a tu Kit Plan Financiero',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas financieras:',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 10 plantillas financieras (8 + 2 bonus):',
     emailCta: 'Acceder a mis Plantillas',
   },
   'kit-tareas-sushi-bar': {

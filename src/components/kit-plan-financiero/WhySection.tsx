@@ -9,8 +9,8 @@ const reasons = [
   },
   {
     icon: Calculator,
-    title: 'Formulas Encadenadas',
-    desc: 'Los datos del CAPEX alimentan el cash flow. El plan previsional alimenta el break-even. Los ratios se calculan solos. Todo conectado automaticamente.',
+    title: 'Plantillas Coherentes Entre Si',
+    desc: 'Mismas categorias de ingreso/gasto, mismos ratios y la misma base sin IVA en 9 de las 10 (la de tesorería va con IVA porque es caja, y lo dice en su portada). Dentro de cada libro las formulas si estan encadenadas: mensual, total anual y resumen.',
   },
   {
     icon: ShieldCheck,
