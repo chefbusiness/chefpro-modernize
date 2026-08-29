@@ -142,7 +142,14 @@ RX_FINDE = re.compile(r'(?i)^fin(es)? de semana$')
 #: DOM-R2-21 — los dos BONUS firmaban sin el nombre del kit (y uno con un guion
 #: suelto al final). El pie se reescribe entero desde CTX en cualquier celda que
 #: se parezca a un pie, no sólo en la que decía «© AI Chef Pro».
-RX_PIE = re.compile(r'^\s*(©\s*AI Chef Pro|—\s*Kit de Tareas Recurrentes)')
+#: §7-bis.17 — «— Kit de Tareas: <kit> · ChefBusiness …» es el pie de sushi-bar
+#: y asador (13 celdas cada uno). Sin esta alternativa, `cerrar` no lo
+#: reconocía como pie y la única razón por la que no quedaban DOS pies en la
+#: hoja era que `reescribir_instrucciones` descarta las líneas que empiezan por
+#: «—». Ningún kit de la familia escribe «Kit de Tareas:» con dos puntos
+#: (medido: 0 celdas en los 13), así que la alternativa no los alcanza.
+RX_PIE = re.compile(
+    r'^\s*(©\s*AI Chef Pro|—\s*Kit de Tareas Recurrentes|—\s*Kit de Tareas:)')
 
 #: DOM-R2-22 — el corpus mezclaba «−20 °C» (menos tipográfico + espacio) con
 #: «-18°C» y «>65°C». Se normaliza a U+2212 + espacio ANTES de la unidad. El
@@ -1186,13 +1193,24 @@ def papel_del_fichero(wb):
     return None, detalle
 
 
-def contexto(carpeta, ficheros, abrir):
+def contexto(carpeta, ficheros, abrir, producto=None):
     """Rellena CTX leyendo los ficheros del kit. `abrir(fname)` → Workbook.
 
     Sólo lee. Recorre TODOS los ficheros (también los que el motor no toca: de
     ellos salen la hora ancla del kit de hotel, cuyos 01-17 son otro molde),
     pero `ficheros` en el contexto lista únicamente los que están en alcance.
     """
+    # CB-E3/CB-E9 — el identificador del producto tiene que estar puesto ANTES
+    # de leer un solo fichero: `hojas_reconocidas` consulta `sub_cb()` para
+    # decidir si el molde REGISTRO está activo, y `sub_cb()` mira `CTX`. Hasta
+    # esta tanda `main.py` lo asignaba DESPUÉS de `contexto()`, y el gate de
+    # idempotencia lo cazó con 34 diferencias: en la 1.ª pasada el contexto de
+    # sushi-bar clasificaba `03-seguridad-anisakis-appcc.xlsx` como
+    # «checklist» (CTX aún vacío) y en la 2.ª como «registro» (CTX ya
+    # heredado del proceso anterior), así que sus «Instrucciones» salían con
+    # el bloque «Cómo personalizar» EQUIVOCADO la primera vez.
+    if producto:
+        CTX['producto'] = producto
     ctx = {'kit': '', 'pie': '', 'sufijo': '', 'hora_apertura': '07:00',
            'literal_cierre': 'Cierre', 'f_negocio': None, 'f_caja': None,
            'f_areas': None, 'ficheros': [], 'con_checklist': set(),
@@ -1211,8 +1229,20 @@ def contexto(carpeta, ficheros, abrir):
            # CB-E7 — kit SIN fichero de negocio y SIN fichero de caja (y sin
            # ninguna firma del dinero en ningún fichero, esté o no en alcance).
            # Lo rellena esta misma función, al final.
-           'sin_caja': False}
+           'sin_caja': False,
+           # CB-E4 — {fichero: True} si sus «Instrucciones» traen el bloque
+           # «Cómo personalizar» que el motor sustituye, y {fichero: papel}
+           # con el TIPO de entregable (checklist / registro / formulario /
+           # calendario) con el que se redacta ese bloque.
+           'personalizar': {}, 'papel_instrucciones': {}}
     horas, cierres, sufijos, kits = {}, {}, [], []
+    #: §7-bis.17 / regla de marca — ¿este kit lleva la razón social de
+    #: ChefBusiness? Se decide por DATO, no por lista de productos: los 13 kits
+    #: de la familia no la mencionan NI UNA vez (medido sobre `dl/` el
+    #: 2026-08-29), y de la sub-familia la llevan seis (13 celdas en sushi-bar
+    #: y asador, 22 en marisquería, panadería, food-truck y tapas-bar) y
+    #: chef-privado ninguna.
+    marca_cb = False
     #: CB-E6/CB-E7 — ficheros del molde P4 y ficheros con firma del DINERO.
     #: Los dos se miden sobre TODOS los ficheros del kit, en alcance o no: el
     #: molde P4 vive entero fuera del alcance del molde ▸ (chef-privado: 0 de 9
@@ -1227,6 +1257,26 @@ def contexto(carpeta, ficheros, abrir):
         wb = abrir(fname)
         recon = hojas_reconocidas(wb)
         horas[fname], cierres[fname] = [], []
+
+        # --- CB-E4: ¿este fichero trae el «Cómo personalizar» heredado? -----
+        if 'Instrucciones' in wb.sheetnames:
+            ins = wb['Instrucciones']
+            for r in range(1, ins.max_row + 1):
+                for c in (2, 1):
+                    v = ins.cell(row=r, column=c).value
+                    if isinstance(v, str) and RX_PERSONALIZAR.match(
+                            v.strip().rstrip(':')):
+                        ctx['personalizar'][fname] = True
+                        break
+        ctx['papel_instrucciones'][fname] = papel_instrucciones(recon)
+
+        if not marca_cb:
+            for ws in wb.worksheets:
+                if any('ChefBusiness' in c.value
+                       for row in ws.iter_rows() for c in row
+                       if isinstance(c.value, str)):
+                    marca_cb = True
+                    break
 
         # --- hora ancla: SÓLO de las hojas de apertura, estén o no en alcance
         for ws in wb.worksheets:
@@ -1423,9 +1473,24 @@ def contexto(carpeta, ficheros, abrir):
         ctx['literal_cierre'] = _mayoria(lit)
     ctx['kit'] = _mayoria(kits)
     ctx['sufijo'] = _mayoria(sufijos)
+    # §7-bis.17 — el pie CONSERVA la marca que el producto ya tiene. Hasta esta
+    # tanda la línea era el literal de AI Chef Pro y `reescribir_instrucciones`
+    # la escribía en los 11 ficheros, así que el dry-run de sushi-bar convertía
+    # «— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica ·
+    # chefbusiness.co» en «— Kit de Tareas Recurrentes · Sushi Bar · AI Chef
+    # Pro · aichef.pro»: un REBRANDEO de seis productos, que es exactamente lo
+    # que la decisión firmada prohíbe (y que ningún gate miraba). La estructura
+    # sí se unifica con la de la familia; lo que se preserva es la marca.
+    # chef-privado no menciona ChefBusiness en ninguna celda y se queda, como
+    # está firmado, con AI Chef Pro.
+    ctx['marca'], ctx['dominio'] = (
+        ('ChefBusiness Consultoría Gastronómica', 'chefbusiness.co')
+        if marca_cb else ('AI Chef Pro', 'aichef.pro'))
     ctx['pie'] = ('— Kit de Tareas Recurrentes · '
                   + (ctx['kit'] + ' · ' if ctx['kit'] else '')
-                  + 'AI Chef Pro · aichef.pro')
+                  + ctx['marca'] + ' · ' + ctx['dominio'])
+    if producto:
+        ctx['producto'] = producto
     CTX.clear()
     CTX.update(ctx)
     # R3-f — los textos del MARCO (08 y 09) viven fuera de `ctx` a propósito:
@@ -3250,6 +3315,96 @@ MIS_BLOQUES = ('Cómo cuenta el contador', 'Filas libres', 'Protección de la '
                'hoja', 'Se conecta con', 'Dónde encaja este fichero',
                'Qué resuelve', 'Cómo usar',
                'Celdas editables', 'Registro Mensual')
+#: CB-E4 — «Cómo personalizar» NO entra en `MIS_BLOQUES`, y la diferencia es de
+#: 46 celdas: esa tupla se descarta SIEMPRE, y `kit-tareas/01-apertura-cierre
+#: .xlsx` —el representante, publicado— trae ese mismo encabezado con sus dos
+#: viñetas. Metiéndolo ahí, el dry-run del representante lo BORRABA sin poner
+#: nada en su lugar (el bloque nuevo sólo se emite en la sub-familia CB). Se
+#: descarta por `RX_PERSONALIZAR` y sólo cuando `sub_cb()` va a reemitirlo.
+
+#: CB-E4 — el encabezado LITERAL que traen los 77 ficheros de la sub-familia
+#: («Como personalizar», sin tilde) y que `ortografia()` acentuará. Se compara
+#: sin tildes para que dé igual el orden de los pasos. Los 13 kits de la
+#: familia NO lo tienen —cafetería escribe «Consejos de personalización» y
+#: hotel «Personalización:»—, así que la sustitución no los alcanza: es la
+#: condición que mantiene la regresión en 0.
+RX_PERSONALIZAR = re.compile(r'(?i)^c[oó]mo personalizar$')
+
+
+def _bloque_personalizar(papel):
+    """CB-E4 — «Cómo personalizar», escrito para el TIPO de entregable.
+
+    El bloque heredado es un literal único, copiado en los 11 ficheros de cada
+    kit, y en tres de ellos describe columnas que no existen. Medido en el
+    representante: `03-seguridad-anisakis-appcc.xlsx:Instrucciones!B14/B17`
+    habla de «responsables y horarios» y de «horas límite» dentro de un libro
+    de REGISTROS (que no tiene ni responsables ni horas), y
+    `BONUS-01-briefing-servicio.xlsx:Instrucciones!B13` promete «celdas verdes»
+    en una hoja con CERO rellenos. Cierra TEC-10 y COM-19.
+    """
+    comun = ('Nada lleva contraseña: si necesitas cambiar la estructura, '
+             'Revisar → Desproteger hoja.')
+    if papel == 'registro':
+        return [
+            ('h', 'Cómo personalizar'),
+            ('b', 'Esto es un REGISTRO, no un checklist: cada fila es un lote, '
+                  'un equipo o un día, y se rellena a mano el día que toca. No '
+                  'hay responsables ni horas límite que ajustar.'),
+            ('b', 'Las columnas de fecha ya vienen con formato DD/MM/AAAA y '
+                  'las de temperatura en «0,0 °C»: escribe sólo el número. Si '
+                  'una lectura se sale del rango que declara su propia fila, '
+                  'la celda se pone en ROJO sola.'),
+            ('b', 'Añade equipos o especies escribiendo en las filas verdes '
+                  'libres. Lo que cambies aquí no cambia la ley: los límites '
+                  'que trae cada fila son los de la norma citada arriba.'),
+            ('b', comun),
+        ]
+    if papel == 'formulario':
+        return [
+            ('h', 'Cómo personalizar'),
+            ('b', 'Esto es un FORMULARIO para imprimir y rellenar a mano, no '
+                  'una tabla de tareas: no tiene celdas verdes ni desplegable '
+                  'porque se escribe sobre el papel.'),
+            ('b', 'Cambia los rótulos que no encajen con tu servicio y borra '
+                  'los apartados que no uses; la hoja está pensada para caber '
+                  'en un A4 y repartirse en el pase.'),
+            ('b', comun),
+        ]
+    if papel == 'calendario':
+        return [
+            ('h', 'Cómo personalizar'),
+            ('b', 'Esto es un CALENDARIO anual: las fechas y las campañas son '
+                  'las del calendario español. Cambia las de tu zona (fiestas '
+                  'locales, ferias, temporada alta) escribiendo encima.'),
+            ('b', 'La antelación es orientativa y está pensada para que la '
+                  'compra y la carta lleguen a tiempo: ajústala a tus '
+                  'proveedores.'),
+            ('b', comun),
+        ]
+    return [
+        ('h', 'Cómo personalizar'),
+        ('b', 'Escribe encima de las celdas VERDES: Responsable, la columna de '
+              'tiempo, la marca y la firma. El texto de la tarea también es '
+              'tuyo — cámbialo a tu vocabulario.'),
+        ('b', 'Lo que no aplique en tu local se marca «N/A» en el desplegable, '
+              'no se borra: así sale del total y el porcentaje sigue siendo '
+              'verdad.'),
+        ('b', comun),
+    ]
+
+
+def papel_instrucciones(recon):
+    """CB-E4 — tipo de entregable a partir de las hojas RECONOCIDAS."""
+    tipos = set(recon.values())
+    if 'checklist' in tipos:
+        return 'checklist'
+    if 'registro_appcc' in tipos or 'registro' in tipos:
+        return 'registro'
+    if 'briefing' in tipos:
+        return 'formulario'
+    if 'calendario' in tipos:
+        return 'calendario'
+    return 'checklist'
 
 #: DOM-R2-30/COM-R2-09 — líneas heredadas de la v1.1 que dicen lo CONTRARIO que
 #: los bloques nuevos, cuatro líneas más arriba y por tanto leídas antes: «borra
@@ -3621,6 +3776,11 @@ def reescribir_instrucciones(wb, fname, cambios):
               if isinstance(ws.cell(row=r, column=col).value, str)
               and ws.cell(row=r, column=col).value.strip()]
 
+    # CB-E4 — el bloque heredado sólo se descarta cuando el motor va a emitir
+    # el suyo en su lugar. Descartarlo siempre borraría contenido bueno de los
+    # kits de la familia que usan el mismo encabezado.
+    sustituye_personalizar = bool(
+        sub_cb() and CTX.get('personalizar', {}).get(fname))
     propio = fname in (CTX.get('f_caja'), CTX.get('f_negocio'))
     if propio:
         if fname == CTX.get('f_caja'):
@@ -3641,12 +3801,19 @@ def reescribir_instrucciones(wb, fname, cambios):
                     or RX_CONTACTO.match(v) or RX_COPY.match(v):
                 continue
             if v.startswith('▸'):
-                if actual in MIS_BLOQUES or RX_OBSOLETO.search(v):
+                if actual in MIS_BLOQUES or RX_OBSOLETO.search(v) \
+                        or (sustituye_personalizar and actual
+                            and RX_PERSONALIZAR.match(actual)):
                     continue
                 bloques.append(('b', v[1:].strip()))
             else:
                 actual = v.strip().rstrip(':')
-                if actual in MIS_BLOQUES or v.startswith('Marca con'):
+                # CB-E4 — «Cómo personalizar» pasa a ser un bloque del motor:
+                # se descarta el heredado (aquí) y se emite el del TIPO de
+                # entregable más abajo.
+                if actual in MIS_BLOQUES or v.startswith('Marca con') \
+                        or (sustituye_personalizar
+                            and RX_PERSONALIZAR.match(actual)):
                     continue
                 bloques.append(('h', actual))
         # Un encabezado que se ha quedado sin ni una viñeta detrás (todas
@@ -3657,6 +3824,18 @@ def reescribir_instrucciones(wb, fname, cambios):
 
     if fname == CTX.get('f_plantilla'):
         bloques = _bloque_plantilla() + bloques
+    # CB-E4 — sólo en la sub-familia CB y sólo donde había un «Cómo
+    # personalizar» que sustituir.
+    #
+    # La condición del encabezado NO basta, y lo dice un dato: el barrido de
+    # los 13 kits de la familia (2026-08-29) encontró que
+    # `kit-tareas/01-apertura-cierre.xlsx` —el REPRESENTANTE, publicado— trae
+    # exactamente ese encabezado, así que sin `sub_cb()` la extensión le
+    # habría reescrito las Instrucciones. Y el gate bloqueante de §7-bis.24
+    # NO lo habría visto: corre sobre cafetería y hotel, no sobre `kit-tareas`.
+    if sustituye_personalizar:
+        bloques += _bloque_personalizar(
+            CTX.get('papel_instrucciones', {}).get(fname, 'checklist'))
     if fname in CTX.get('con_checklist', ()):
         bloques += _bloques_contador()
         bloques += _bloque_proteccion()
@@ -4122,6 +4301,15 @@ def ortografia(wb, fname, cambios):
             ws.title = nuevo
             hojas += 1
             palabras += n
+            # El REGISTRO de fórmulas guarda el TÍTULO de la hoja, y `main.py`
+            # lo usa después para comprobar una a una que quedaron con valor
+            # cacheado. Renombrar la pestaña sin actualizarlo dejaba el gate
+            # buscando «Temporadas Pescado Espana» en un libro donde ya se
+            # llamaba «…España»: dos fórmulas del 08 de sushi-bar salían como
+            # «hoja ausente» con la caché perfectamente inyectada.
+            for i, (t, coord, f) in enumerate(REGISTRO):
+                if t == viejo:
+                    REGISTRO[i] = (nuevo, coord, f)
             cambios.append(f'CB-E1: pestaña «{viejo}» → «{nuevo}»')
         for row in ws.iter_rows():
             for c in row:
@@ -4261,6 +4449,13 @@ def aplicar(wb, fname, cambios):
                 if recon[titulo] == 'checklist':
                     anotar_duplicados(wb[titulo], cambios)
 
+    # 2bis) CB-E2 — crear la fila de totales ANTES de normalizar: a partir de
+    #    ahí `geometria` ya la encuentra y la maquinaria de siempre (5 filas
+    #    libres dentro del rango, COUNTIFS y denominador honesto) hace el resto.
+    for titulo, tipo in recon.items():
+        if tipo == 'checklist':
+            crear_contador(wb[titulo], fname, cambios)
+
     # 3) normalización de los checklists (§2.1/§2.2/§1.5)
     cuerpos = {}
     for titulo, tipo in recon.items():
@@ -4289,6 +4484,12 @@ def aplicar(wb, fname, cambios):
                 cuerpos[titulo] = cuerpo
         elif tipo == 'briefing':
             briefing(ws, cambios)
+        elif tipo == 'registro_appcc':
+            # CB-E3 — formatos de fecha y temperatura, desplegable de
+            # verificación, CF de fuera-de-rango y alturas de cabecera.
+            cuerpo = registro_appcc(ws, cambios)
+            if cuerpo:
+                cuerpos[titulo] = cuerpo
         textos_de_tarea(ws, cambios, 2 if tipo == 'checklist' else None,
                         facturado=not es_cobros)
     if 'Instrucciones' in wb.sheetnames:
@@ -4303,9 +4504,13 @@ def aplicar(wb, fname, cambios):
             ajustar_cabecera_tiempo(wb[titulo], cambios)
 
     # 4ter) alturas — R3-d: SIEMPRE después del último cambio de texto, o la
-    #   2.ª pasada mide un texto distinto del que midió la 1.ª.
+    #   2.ª pasada mide un texto distinto del que midió la 1.ª. CB-E9 (a) va
+    #   JUSTO ANTES por el mismo motivo al revés: `autoalto` decide mirando
+    #   `wrap_text`, así que si el ajuste de texto llegara después, la 1.ª
+    #   pasada mediría la hoja sin envolver y la 2.ª con ella.
     for titulo, tipo in recon.items():
         if tipo == 'checklist':
+            legibilidad_tareas(wb[titulo], cambios)
             autoaltos(wb[titulo], cambios)
 
     # 4quater) las hojas del libro que NO son del molde ▸ (un kit puede
@@ -4369,6 +4574,8 @@ def cerrar(wb, fname, estado, cambios):
             hr = fila_registro_eventos(ws)          # m6
         elif fila_calendario(ws):
             hr = fila_calendario(ws)
+        elif fila_registro_appcc(ws)[0]:
+            hr = fila_registro_appcc(ws)[0]            # CB-E3
         # TEC-19: apaisado en las hojas anchas (las de 8 columnas de 08
         # escalaban al ~60 %). Nunca al revés: «Calendario Anual» y «Registro
         # Mensual» ya venían en apaisado y forzarles vertical las estropearía.
@@ -4392,7 +4599,7 @@ def cerrar(wb, fname, estado, cambios):
         # por `proteger`, y las fórmulas del IVA, el total, el saldo, el
         # pendiente y el ESTADO, bloqueadas.
         if tipo in ('checklist', 'registro', 'registro_eventos', 'liquidacion',
-                    'briefing', 'calendario'):
+                    'briefing', 'calendario', 'registro_appcc'):
             protegidas += 1
             proteger(ws, cuerpos.get(titulo), cambios)
     if protegidas:

@@ -293,6 +293,7 @@ def procesar(carpeta, fname, etapas, contenido, informe):
     wb = openpyxl.load_workbook(path)
     cambios = []
     estado = None
+    orto = None
     # El registro de fórmulas se vacía AQUÍ y no dentro de `motor.aplicar`:
     # aplicar() sale antes de tocarlo cuando el fichero está fuera de alcance
     # (los 01-17 del hotel), y entonces este fichero heredaba el registro del
@@ -329,6 +330,14 @@ def procesar(carpeta, fname, etapas, contenido, informe):
     # cambio sea la metadata también se guarde.
     if 'motor' in etapas:
         motor.set_metadata(wb, fname, cambios)
+        # CB-E1 — la ortografía va AQUÍ, la última: `motor.cerrar` reconstruye
+        # «Instrucciones» leyendo el texto que ya había y reinyecta el que
+        # venía sin tildes (demostrado: tras el dry-run del 2026-08-29,
+        # `01:Instrucciones!B4` seguía diciendo «Como usar estas plantillas»).
+        # Corriendo antes, el motor lo desharía (§7-bis.11). Va también DESPUÉS
+        # de `set_metadata`, que compone el `title` desde esa misma hoja, y
+        # ANTES de `inject_cache`, que es lo último de todo el pipeline.
+        orto = motor.ortografia(wb, fname, cambios)
     registro = list(motor.REGISTRO)
     guardado = bool(estado or cambios)
     if guardado:
@@ -343,7 +352,9 @@ def procesar(carpeta, fname, etapas, contenido, informe):
                     'guardado': guardado,
                     'en_alcance': bool(estado),
                     'hojas_tocadas': sorted((estado or {}).get('hojas', {})),
+                    'hojas_por_tipo': (estado or {}).get('hojas', {}),
                     'cambios': cambios,
+                    'ortografia': orto,
                     'formulas_nuevas': len(registro)})
     return registro
 
@@ -897,6 +908,72 @@ def gate_dv_y_bio(carpeta, nombres):
             'aviso_dv_mezcladas': mezcla}
 
 
+def gate_ortografia(carpeta, nombres):
+    """CB-E1 §1.3 — 0 lemas de `LEX_TILDES` vivos en celdas y en pestañas.
+
+    Baseline a batir (medido sobre `dl/` el 2026-08-29, los 7 kits de la
+    sub-familia): 845 palabras · 653 celdas · 6 pestañas.
+
+    El gate NO es simétrico con el paso: además de contar lo que queda mal,
+    EMITE la lista de palabras AMBIGUAS («esta/está», «solo/sólo», «mas/más»,
+    «como/cómo»…), que el diccionario no toca a propósito y que resuelve el
+    módulo de contenido del kit celda a celda (§1.2 CB-E1). Sin esa lista, «0
+    lemas» se leería como «ortografía perfecta», que es otra cosa.
+    """
+    vivos, ambiguas = [], []
+    for n in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, n))
+        for hoja, celda, texto in motor.palabras_sin_tilde(wb):
+            vivos.append({'ref': f'{n}!{hoja}!{celda}', 'texto': texto[:160]})
+        for a in motor.ambiguas_del_libro(wb):
+            ambiguas.append({'ref': f"{n}!{a['hoja']}!{a['celda']}",
+                             'palabra': a['palabra'], 'texto': a['texto']})
+    return {'aplica': motor.sub_cb(),
+            'lemas_vivos': vivos,
+            'ambiguas': ambiguas,
+            'resumen': f'{len(vivos)} celdas con lema de LEX_TILDES · '
+                       f'{len(ambiguas)} ocurrencias ambiguas para el módulo '
+                       'de contenido'}
+
+
+def gate_contadores(carpeta, nombres):
+    """CB-E2 §1.3 — toda hoja con geometría de checklist tiene contador.
+
+    `kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx:'Plantilla en
+    Blanco'` entraba en alcance con `contador = None` y 0 fórmulas mientras sus
+    «Instrucciones» estrenaban los bloques que lo explican.
+    """
+    sin, con = [], 0
+    for n in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, n))
+        for ws in wb.worksheets:
+            g = motor.geometria(ws)
+            if not g:
+                continue
+            if g['contador'] is None:
+                sin.append(f'{n}!{ws.title}: geometría de checklist SIN fila '
+                           'de totales')
+            else:
+                con += 1
+    return {'con_contador': con, 'sin_contador': sin}
+
+
+def gate_moldes(carpeta, nombres):
+    """§1.3 `molde` — cada fichero, clasificado; y cada hoja, con su tipo."""
+    por_fichero, sin_clasificar = {}, []
+    for n in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, n))
+        recon = motor.hojas_reconocidas(wb)
+        p4 = [ws.title for ws in wb.worksheets
+              if ws.title not in recon and motor.geometria_p4(ws)]
+        sueltas = [ws.title for ws in wb.worksheets
+                   if ws.title != 'Instrucciones' and ws.title not in recon
+                   and ws.title not in p4]
+        por_fichero[n] = {'reconocidas': recon, 'p4': p4, 'sin_molde': sueltas}
+        sin_clasificar += [f'{n}!{t}' for t in sueltas]
+    return {'por_fichero': por_fichero, 'hojas_sin_molde': sin_clasificar}
+
+
 def gate_precargado(carpeta):
     """§6 — «08: ninguna tarea sin Responsable/Hora» (DOM-06/TEC-06).
 
@@ -1066,7 +1143,8 @@ def main():
     try:
         ctx = motor.contexto(
             carpeta, nombres,
-            lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)))
+            lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)),
+            producto=pid)
     except (motor.KitAmbiguo, motor.MoldeDesconocido) as e:
         # R3-a — el motor NO adivina el papel de un fichero. Se aborta con el
         # informe escrito, para que el orquestador vea por qué.
@@ -1161,7 +1239,8 @@ def main():
         antes = {n: digest(os.path.join(carpeta, n)) for n in nombres}
         motor.contexto(
             idem_dir, nombres,
-            lambda f: openpyxl.load_workbook(os.path.join(idem_dir, f)))
+            lambda f: openpyxl.load_workbook(os.path.join(idem_dir, f)),
+            producto=pid)
         motor.CTX['producto'] = pid
         for fname in nombres:
             procesar(idem_dir, fname, etapas, contenido, [])
@@ -1175,7 +1254,8 @@ def main():
             log('    ' + d)
         motor.contexto(
             carpeta, nombres,
-            lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)))
+            lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)),
+            producto=pid)
         motor.CTX['producto'] = pid
 
     log('\n== 4/7 · inject_cache (al final del todo) ==')
@@ -1253,6 +1333,23 @@ def main():
     for d in tpv['tareas_encender_tpv']:
         log(f"    {d['ref']} [{d['papel']}]: {d['texto']}")
 
+    orto = gate_ortografia(carpeta, nombres)
+    log('  CB-E1 ortografía: ' + orto['resumen']
+        + ('' if orto['aplica'] else ' (el paso NO aplica: el producto no es '
+                                    'de la sub-familia ChefBusiness)'))
+    for d in orto['lemas_vivos'][:8]:
+        log(f"    {d['ref']}: {d['texto']}")
+    cont = gate_contadores(carpeta, nombres)
+    log(f"  CB-E2 contadores: {cont['con_contador']} hojas de checklist con "
+        f"fila de totales, {len(cont['sin_contador'])} sin ella")
+    for d in cont['sin_contador']:
+        log('    ' + d)
+    moldes = gate_moldes(carpeta, nombres)
+    log(f"  molde: {len(moldes['hojas_sin_molde'])} hojas sin clasificar")
+    for d in moldes['hojas_sin_molde'][:10]:
+        log('    AVISO molde · ' + d + ': ningún molde la reconoce (no recibe '
+            'DV, ni contador, ni A4, ni protección)')
+
     log('\n== 7/7 · censo-entregables --fail ==')
     cen = censo(carpeta)
 
@@ -1275,6 +1372,11 @@ def main():
     fallos += [f'{n}: en alcance y SIN hoja «Instrucciones»'
                for n in gates['sin_hoja_instrucciones']
                if n in ctx['ficheros']]
+    # CB-E1 §1.3 — rojo si sobrevive UN solo lema del diccionario.
+    fallos += [f"ortografía: {d['ref']}: {d['texto']}"
+               for d in orto['lemas_vivos'][:20]]
+    # CB-E2 §1.3 — rojo si una hoja de checklist se queda sin contador.
+    fallos += cont['sin_contador']
     if cen['exit'] != 0:
         fallos.append('censo-entregables --fail devolvió ' + str(cen['exit']))
     if not args.sin_demos and not demostraciones:
@@ -1308,6 +1410,9 @@ def main():
             'tpv_duplicado': tpv,
             'bandas_solapadas': solapes,
             'censo_entregables': cen,
+            'ortografia': orto,
+            'contadores': cont,
+            'molde': moldes,
         },
         'demostraciones_spec_6': demostraciones,
         'fallos': fallos,
