@@ -1,0 +1,539 @@
+{
+ "rol": "CORRECTOR de la familia Guías v2.0 — representante «guia-restaurante-gastronomico» (T2c)",
+ "fecha": "2026-08-29",
+ "entrada": {
+  "guias-v2-ref-dominio.json": 35,
+  "guias-v2-ref-excel.json": 30,
+  "guias-v2-ref-coherencia.json": 35,
+  "total": 100
+ },
+ "cruce": {
+  "ids_de_entrada": 100,
+  "resueltos": 92,
+  "no_aplicados": 8,
+  "suma": 100
+ },
+ "dry_run_final": {
+  "comando": "CLAUDE_SCRATCHPAD=.../guias/propio-corrector python3 guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run --json .../guias/corrector-final.json",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "fallos": 0,
+  "formulas_nuevas_totales": 1898,
+  "formulas_nuevas_antes": 1176,
+  "censo_entregables_fail": "0 defectos",
+  "hojas_protegidas": "41/41"
+ },
+ "resueltos": [
+  {
+   "id": "RD-01",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PLAN[\"inversion\"], 21 conceptos) + scripts/productos-digitales/guias-v2_0/grupo_a.py:_precargar_inversion()",
+   "prueba": "Inversión!C5:C25 precargadas en verde y C27 = 1.668.340,88 € (era 0,0). Los ocho conceptos de equipamiento suman 161.430,40 €, exactamente el TOTAL del checklist-equipamiento; sala 108.200 €; vajilla+textil 30.230 €; web+marketing 23.800 €."
+  },
+  {
+   "id": "RD-02",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:fondo_de_maniobra() + plan_representante() (col_etq)",
+   "prueba": "Inversión!C26 = 934.320,48 € por fórmula (era None). La función existía y NO escribía: `_fila()` buscaba el concepto en la columna A —donde «Inversión» sólo tiene el «#»— en vez de en la B. Bloque nuevo con «Meses de colchón» en verde (mínimo 6, con CF) y «Coste mensual de estructura» leído del P&L."
+  },
+  {
+   "id": "RD-03",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (CAPEX) + scripts/productos-digitales/guias-v2_0/grupo_a.py:_capex_rangos_y_notas()",
+   "prueba": "CAPEX!C15:E15 conserva el rango de mercado y estrena columna «De dónde sale este rango» con la nota: seis meses de la estructura del propio pack son 6 × 155.720,08 € = 934.320,48 €, y el número que vale lo calcula plan-financiero."
+  },
+  {
+   "id": "RD-04",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py (TURNOS[\"brutos\"] y [\"cuadrante\"]) + scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos()",
+   "prueba": "'Turnos Semana'!L6:L30 con los brutos del cap. 13/14 (dos puestos elevados al SMI), D6:J30 con la rotación de ejemplo y C51 «Jornada anual aplicada» = 1.797 h. TOTAL BRIGADA: 1.040 h, 539.564 € de bruto y 717.620,12 € de coste anual con SS (antes las 24 filas y los tres totales devolvían \"\")."
+  },
+  {
+   "id": "RD-05",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_break_even()",
+   "prueba": "'Cash Flow 12 Meses'!B46:B54: «Umbral de ventas — sólo explotación» 141.428,57 € y «Umbral CON el servicio de la deuda» 146.011,90 €, con la cuota en celda verde (3.208,33 €). Los cubiertos/día pasan a 53,87 y la nota ya dice lo mismo que la fórmula."
+  },
+  {
+   "id": "RD-06",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (CASH[\"rampa\"], [\"mes_tipo\"]) + scripts/productos-digitales/guias-v2_0/grupo_a.py:_precargar_cash()",
+   "prueba": "'Cash Flow 12 Meses'!B6:M18 precargadas con el escenario realista y una rampa 60→100 %. B54 «Mes de break-even de caja» = 5 (era el texto «No alcanzado» nada más abrir el fichero)."
+  },
+  {
+   "id": "RD-07",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda() (bloque «TESORERÍA DE LA APERTURA»)",
+   "prueba": "Filas 38-43: «Saldo inicial de tesorería» (934.320,48 €, el fondo de maniobra), «(-) Desembolso de la inversión pagado en estos 12 meses», «(-) IVA soportado de la inversión» y «SALDO DE TESORERÍA (fin de mes)» con semáforo. B42 = 915.022,81 €. El flujo acumulado sigue midiendo la explotación; la caja se mide aparte."
+  },
+  {
+   "id": "RD-08",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PLAN[\"preapertura\"]) + scripts/productos-digitales/guias-v2_0/grupo_a.py:fondo_de_maniobra()",
+   "prueba": "Inversión!C35:C39: 6 meses de renta (102.000 €) + 2 de nómina de brigada (119.603,36 €) = «TOTAL COSTES DE PREAPERTURA» 221.603,36 €, con los meses en verde y los importes leídos del P&L. Alimenta la «NECESIDAD TOTAL DE FINANCIACIÓN» de C46 = 1.889.944,24 €."
+  },
+  {
+   "id": "RD-09",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (TICKET y PL, escenarios recalibrados)",
+   "prueba": "Los tres escenarios son ya el MISMO restaurante en los dos libros: 60/70/78 cubiertos y 22 días, y los tickets de comida y cena están calibrados para que (Nc·tk_com + Nn·tk_cena)·días = T·N·días EXACTAMENTE. calculadora-ticket-medio!B20:D20 = 131.736 / 189.728 / 233.376 € = pl-mensual!B17:D17. Diferencia medida en la fila de cuadre: 0,0 % en las tres columnas."
+  },
+  {
+   "id": "RD-10",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PL[\"notas\"][r\"^coste personal\"])",
+   "prueba": "'Escenarios'!E12 reescrita: «Coste con la SS de la empresa YA incluida (33 %…). Los rangos del capítulo 13 son BRUTOS, sin SS: con el 33 % son cocina 322.400-601.900 € y sala 234.000-403.000 €, o 556 k€-1,0 M€». La afirmación que DOM-02/COM-10 declaran falsa ya no está en ninguna celda."
+  },
+  {
+   "id": "RD-11",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:pl_escenarios_columnas() + scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py",
+   "prueba": "'Escenarios' estrena «Amortización mensual (€)» (fila 23, verde, 6.000 €) y «EBIT — resultado de explotación» (fila 24), y la nota de «Otros costes fijos» ya no la incluye. El EBITDA de esta hoja (34.007,92 €) es ahora el mismo concepto que el de plan-financiero!'P&L Mensual'!B34 (34.007,92 €)."
+  },
+  {
+   "id": "RD-12",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (APPCC, ítem de anisakis)",
+   "prueba": "APPCC!C27: «Congelación preventiva (‑20 °C durante al menos 24 h en todo el producto, o ‑35 °C durante 15 h) … RD 1420/2006 y Reg. (CE) 853/2004», y la nota explica que los «5 días» son la recomendación de AESAN para congeladores DOMÉSTICOS."
+  },
+  {
+   "id": "RD-13",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_bodega()",
+   "prueba": "Bodega estrena columna T «PVP sin IVA (€)» = PVP de carta / (1 + IVA de bebida alcohólica, celda verde al 21 %), y el multiplicador, el margen s/PVP, el food cost y el valor a PVP cuelgan de ella. Demostración del motor: con coste 10 € y carta 30 €, food cost 40,3 % (antes 33,3 %)."
+  },
+  {
+   "id": "RD-14",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda()",
+   "prueba": "B30 = (Total ingresos − Bebidas y vinos)·tipo_restauración + Bebidas·tipo_bebida, con «Tipo de IVA de la bebida alcohólica (%)» = 0,21 en celda verde (B26)."
+  },
+  {
+   "id": "RD-15",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:NOTA_IVA_CAJA y NOTA_IVA",
+   "prueba": "A3 pasa a «Escribe los ingresos y los gastos SIN IVA, igual que en el P&L: la capa de IVA (modelo 303) de más abajo lo añade, porque el cash flow es caja». Instrucciones!A14 se genera del mismo literal: una sola redacción en los dos sitios."
+  },
+  {
+   "id": "RD-16",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (VAJILLA[\"precarga\"] y cabecera_entrada)",
+   "prueba": "El factor por comensal pasa de 11 a 28 filas: cubertería completa, vaso de agua, copa de generoso, cuchara de degustación, servilletas y manteles. Las 22 restantes son equipo de servicio y el propio rótulo lo dice: «Factor por comensal (menú degustación) — vacío = no es pieza por comensal»."
+  },
+  {
+   "id": "RD-17",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_b.py:_columna_coste_ajustado() + scripts/productos-digitales/guias-v2_0/motor.py (_g_totalizar)",
+   "prueba": "Columnas K «Dotación de carta (uds)» (leída del propio ítem, «(×80)») y L «Coste ajustado a menú degustación (€)», con su fila de TOTAL en el bloque de cierre: 45.303,75 € frente a los 30.230 € de la dotación de carta."
+  },
+  {
+   "id": "RD-18",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (EQUIPAMIENTO[\"alternativas\"]) + scripts/productos-digitales/guias-v2_0/grupo_b.py:_columna_incluir()",
+   "prueba": "Columna I «Incluir en el total» con DV Sí/No y semáforo; el túnel de lavado y el bloque modular de alta gama entran como «No». G98 pasa a '=SUMIF($I$5:$I$95,\"Sí\",$G$5:$G$95)' y los subtotales por categoría a SUMIFS sobre la misma columna."
+  },
+  {
+   "id": "RD-19",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (EQUIPAMIENTO[\"fila_porcentual\"][\"excluir_categorias\"]) + scripts/productos-digitales/guias-v2_0/grupo_b.py:_fila_porcentual()",
+   "prueba": "El 12 % se calcula con SUMIFS excluyendo «Extracción e instalaciones» y «Tecnología». G98 baja de 164.718,40 € a 161.430,40 €: los 3.288 € de instalación cobrada sobre la instalación."
+  },
+  {
+   "id": "RD-20",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:plan_de_financiacion()",
+   "prueba": "Financiación!B29:B35: necesidad 1.889.944,24 € (referencia a «Inversión»), fondos propios, préstamo, otras fuentes, TOTAL y «Diferencia» con ROUND y semáforo si ≠ 0. Con el ejemplo cuadra en 0,00 €."
+  },
+  {
+   "id": "RD-21",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda() (cuota y nota)",
+   "prueba": "B33:M33 precargadas con 3.208,33 €/mes —la cuota DURANTE la carencia, porque estos 12 meses son el año 1— y la nota ya no lleva ninguna cifra: remite a las dos celdas de «Financiación» y explica cuál toca."
+  },
+  {
+   "id": "RD-22",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_escandallo_e1()",
+   "prueba": "'Ficha (plantilla)'!H33 «PVP REAL de carta, con IVA (€)» (verde) y H34 «Food cost real sobre el precio de carta (%)» = coste ración / (PVP real / (1+IVA)); si el PVP real está vacío cae al sugerido. La tautología H29/H30 ≡ H4 ha desaparecido."
+  },
+  {
+   "id": "RD-23",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_ticket_iva_y_cuadre() y scripts/productos-digitales/guias-v2_0/grupo_c.py:_menu()",
+   "prueba": "calculadora-ticket-medio!B23 «Tipo de IVA de los precios de esta hoja (%)» + fila «Ticket medio CON IVA» (109,78 / 135,52 / 149,60 €). menu-engineering estrena «PVP en carta, con IVA (€)» con el tipo en celda."
+  },
+  {
+   "id": "RD-24",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_menu() (nota de cabecera + Instrucciones)",
+   "prueba": "Nota sobre la columna «Coste (€)»: «es el Coste por ración de la ficha correspondiente de escandallo-maestro.xlsx; cópialo desde su hoja Resumen. Incluye la merma…». Los 12 costes quedan declarados como ejemplo."
+  },
+  {
+   "id": "RD-25",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos() (columna Q)",
+   "prueba": "Columna Q «% de jornada» (verde, 100 % por defecto) y el formato condicional del SMI pasa a '=AND(ISNUMBER($L6),ISNUMBER($Q6),$L6<$C$42*$Q6)': un contrato a tiempo parcial legítimo deja de pintarse en rojo."
+  },
+  {
+   "id": "RD-26",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_registro_jornada()",
+   "prueba": "El parte pasa de 40 a 168 filas (24 puestos × 7 días) y el desplegable de «Trabajador» apunta a la columna «Nombre» del cuadrante; si está vacía cae a los puestos y el mensaje de la DV lo dice."
+  },
+  {
+   "id": "RD-27",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos() (dv_lista sobre D:J)",
+   "prueba": "La DV del cuadrante se reescribe con showErrorMessage=True y un mensaje que enumera M/T/P/L/V y avisa de que cualquier otra letra cuenta 0 h. Era la única DV del producto sin él."
+  },
+  {
+   "id": "RD-28",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (LEGAL[\"nuevas\"])",
+   "prueba": "Legal!C22 «Arqueta separadora de grasas y autorización o declaración de vertido a la red de saneamiento», categoría Licencias, con la nota de por qué (freidora, brasa y fregadero de doble seno ya presupuestados)."
+  },
+  {
+   "id": "RD-29",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (GANTT[\"nuevas_tareas\"])",
+   "prueba": "Gantt: «Solicitud de acometidas y aumento de potencia (luz, gas y agua)», meses 7-10, dependiendo del proyecto técnico."
+  },
+  {
+   "id": "RD-30",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (GANTT[\"nuevas_tareas\"] y [\"tareas\"])",
+   "prueba": "Gantt: «Certificado final de obra y certificados de las instalaciones (BT, gas, ventilación)» (mes 13) y «Resolución de la licencia de actividad y acta de comprobación municipal» (mes 14), después de la obra; el registro sanitario se recoloca detrás del certificado."
+  },
+  {
+   "id": "RD-31",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (MICHELIN[\"sustituciones\"]) + scripts/productos-digitales/guias-v2_0/grupo_b.py:_sustituir() (soporte de 'categoria')",
+   "prueba": "'Preparación Inspección'!B39 pasa de «Prensa y notoriedad (NO influye en la inspección)» a «Requisitos previos», con la nota «Esto SÍ cuenta: no es comunicación»."
+  },
+  {
+   "id": "RD-32",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (LEGAL[\"sustituciones\"])",
+   "prueba": "Legal!C45 deja de repetir el alta censal y pasa a «Sistema informático de facturación verificable en el TPV (RD 1007/2023…)», con la nota que remite al Modelo 036/037 de la fila 9."
+  },
+  {
+   "id": "RD-33",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:cerrar_checklist() + scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (LEGAL[\"costes_formula\"])",
+   "prueba": "Legal!G50 «Fianza legal de 2 mensualidades» = 2 × renta mensual (celda verde en Instrucciones) = 34.000 €; el subtotal «Local» pasa de 0,00 € a 34.000 € y el TOTAL de 23.960 € a 57.960 €. Y los 8 checklists estrenan la fila «Partidas SIN importe (a presupuestar)» con semáforo ámbar (10 en legal, 32 en equipamiento)."
+  },
+  {
+   "id": "RD-34",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (DISENO_SALA) + scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PL[\"notas\"])",
+   "prueba": "Las dos notas que decían «22-30 personas» pasan a citar el cuadrante: «las 24 personas de plantilla-turnos-brigada.xlsx (15 de cocina y 9 de sala), que es la fuente única de plantilla de este producto»."
+  },
+  {
+   "id": "RD-35",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:correspondencia_capex() (col_etq)",
+   "prueba": "Inversión!F5:F26 rellena con las 12 categorías de calculadora-capex (F5 = «Obra civil y reforma integral»…). Mismo fallo de localización que RD-02: buscaba el concepto en la columna A."
+  },
+  {
+   "id": "RT-01",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_suma_guardada() y el bloque de fermentación",
+   "prueba": "La guarda pasa de 'COUNTIF(rango,\"<>\")=0' a 'COUNT(rango)=0'. En Excel una fórmula que devuelve \"\" NO es una celda vacía para COUNTIF, así que el guardián valía 0 en pycel —donde se verificaba— y el número de fórmulas en Excel. escandallo!H28, budget-bodega!N56/O56 y turnos!K33/P33 dejan de imprimir 0,00 € donde el gate certificaba \"\"."
+  },
+  {
+   "id": "RT-02",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PLAN[\"pl_mensual\"]) + scripts/productos-digitales/guias-v2_0/grupo_a.py:_precargar_pl_mensual()",
+   "prueba": "'P&L Mensual'!B6:B31 precargado con el escenario realista: B10 = 189.728 €, B15 = 56.918,40 €, B32 = 98.801,68 €, B34 (EBITDA) = 34.007,92 €, B37 (EBIT) = 28.007,92 €. Los siete ceros con formato de euro han desaparecido."
+  },
+  {
+   "id": "RT-03",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:fondo_de_maniobra()",
+   "prueba": "Ver RD-02: C26 pasa de None a 934.320,48 € por fórmula, con la celda verde de meses y su mínimo de 6."
+  },
+  {
+   "id": "RT-04",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:correspondencia_capex()",
+   "prueba": "Ver RD-35: las 22 celdas de F ya no están vacías, así que la frase de Instrucciones!A19 describe algo que existe."
+  },
+  {
+   "id": "RT-05",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos()",
+   "prueba": "Ver RD-04: C43 se queda como override del convenio y el divisor pasa a «Jornada anual aplicada» (1.797 h), calculada de cuatro parámetros con fuente legal (art. 34.1, 38.1 y 37.2 ET). Coste/hora 40,71 €, coste semana 2.035,34 € en la primera fila."
+  },
+  {
+   "id": "RT-06",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:NOTA_IVA_CAJA",
+   "prueba": "Ver RD-15: una sola frase, y la que describe lo que el libro hace."
+  },
+  {
+   "id": "RT-08",
+   "donde": "scripts/productos-digitales/guias-v2_0/main.py (gate «xlsx SIN una sola fórmula»)",
+   "prueba": "Tras el post-proceso se recorren los xlsx y se cuenta la fórmula; si alguno queda a 0, FALLO §9 y exit 1. Es el gate que hacía falta para que un cronograma sin §3.5 no pudiera pasar bajo «TODO VERDE»."
+  },
+  {
+   "id": "RT-09",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:cerrar_checklist() (ETIQUETA_SIN_TASAR)",
+   "prueba": "No se inventa ni un importe (regla capital): se DICE cuántos faltan. Fila «Partidas SIN importe (a presupuestar)» = COUNTIF(categoría,\"<>\") − COUNT(coste), con CF ámbar y la nota «El TOTAL de arriba es un SUELO». Equipamiento 32, legal 10, vajilla 7. Además el TOTAL deja de sumar las alternativas excluyentes (RD-18)."
+  },
+  {
+   "id": "RT-10",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_escandallo_e1()",
+   "prueba": "Ver RD-22, más la fila nueva «Food cost si pusieras el PVP SIN IVA en la carta (%)», que es el 30,8 % que la nota prometía y ninguna celda calculaba."
+  },
+  {
+   "id": "RT-11",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (TICKET, PL, PLAN[\"pl_mensual\"], CASH[\"break_even\"])",
+   "prueba": "Un solo juego de parámetros para los cuatro libros: ticket 123,20 € y facturación 189.728 €/mes en el simulador, en el P&L de escenarios, en el P&L mensual del plan financiero y en el break-even; costes fijos 98.801,68 € en el P&L y en el break-even; coste de personal 59.801,68 €/mes = el coste de la brigada del cuadrante."
+  },
+  {
+   "id": "RT-12",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PL[\"notas\"])",
+   "prueba": "Ver RD-10. Además el pesimista sube a 47.000 €/mes (564 k€/año), por encima del suelo corregido de 556 k€."
+  },
+  {
+   "id": "RT-13",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PL[\"escenarios\"][\"B\"])",
+   "prueba": "Pesimista recalibrado: 60 cubiertos, ticket 99,80 €, 131.736 €/mes → EBITDA +3.580,48 € (+2,7 %). Malo, no inviable (§7-bis.14). La nota del alquiler ya no defiende un EBITDA negativo."
+  },
+  {
+   "id": "RT-14",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:dv_propia() + scripts/productos-digitales/guias-v2_0/grupo_a.py:hoja_proyeccion()",
+   "prueba": "'Proyección 3 Años'!C6:D7 pasa de 'decimal >= -1e12' a 'decimal between -0,5 y 1' con su mensaje, más un semáforo ámbar si el crecimiento supera el 30 %."
+  },
+  {
+   "id": "RT-15",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:prompt_porcentaje()/PCT_DEFECTO + scripts/productos-digitales/guias-v2_0/grupo_c.py",
+   "prueba": "El texto de la merma queda SÓLO en la columna F del escandallo (motor.PCT_MERMA); las demás celdas de porcentaje llevan el genérico «Se escribe en tanto por uno: 0,20 = 20 %»."
+  },
+  {
+   "id": "RT-16",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:PCT_DEFECTO (0-1) y PCT_MERMA (0-0,95)",
+   "prueba": "El tope 0,95 se queda donde tiene sentido (la merma entra en una división por 1−x). Los «% de comensales» admiten ya el 100 % que su propio semáforo exige."
+  },
+  {
+   "id": "RT-17",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_b.py:_gantt()",
+   "prueba": "DV decimal 1-18 sobre «Duración (meses)» (escrita con `motor.dv_propia` porque `validaciones()` corre después y purgaba una DV suelta) y DV de fecha sobre «Fin», que ya la tenía «Inicio»."
+  },
+  {
+   "id": "RT-18",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:nombre_pestana() y PARTICULAS",
+   "prueba": "El corte retrocede mientras la última palabra sea una partícula: la pestaña pasa de «Vajilla, Cristalería y» a «Vajilla, Cristalería»."
+  },
+  {
+   "id": "RT-19",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:RX_DINERO y RX_RECUENTO",
+   "prueba": "Las dos filas de IVA con rótulo largo pasan a '#,##0.00 €'. La causa era `n[ºo]\\b` en RX_RECUENTO, que cazaba la palabra «no» de «las nóminas NO llevan» y de «(NO es caja de este ejercicio)». Medido: 0 celdas de la columna N con formato distinto del euro."
+  },
+  {
+   "id": "RT-20",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_desviacion_sin_dato()",
+   "prueba": "Semáforo ISNUMBER sobre Inversión!E5:E27 al 10 %: era la única columna de desviación del pack sin una sola regla."
+  },
+  {
+   "id": "RT-21",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda()",
+   "prueba": "Ver RD-21: la cifra sale de la nota."
+  },
+  {
+   "id": "RT-22",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_registro_jornada()",
+   "prueba": "El descanso pasa a ($A6+$D6)−($A5+$E5) cuando hay fecha, y sin fecha suma un día si MOD da 0. Un descanso de 24 h ya no dispara el aviso legal."
+  },
+  {
+   "id": "RT-25",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:calculadora_capex()",
+   "prueba": "F17 = 'IF(COUNT(F5:F16)=0,\"\",SUM(F5:F16))' y F19 guarda por '' en vez de por 0: la columna «Tu Presupuesto» deja de imprimir 0,00 € junto a una celda vacía."
+  },
+  {
+   "id": "RT-27",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:semaforo_texto()",
+   "prueba": "Las reglas pasan de containsText+SEARCH a cellIs equal. Medido en checklist-legal: tres reglas 'cellIs equal' sobre F5:F53 con «Completado», «En Curso» y «Pendiente»."
+  },
+  {
+   "id": "RT-28",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:cerrar_checklist()",
+   "prueba": "La condición del bloque de subtotales pasa de `molde == 'A' and col_cat and col_coste` a `col_cat and col_coste`: el molde D de dark-kitchen tiene las dos columnas y se quedaba sin desglose por una lista blanca."
+  },
+  {
+   "id": "RT-29",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_pl_mensual_representante()",
+   "prueba": "B32 = '=SUM(B20:B29)+B31' (helper `_tramo`, que no emite un SUM de una sola celda) y nota nueva en D32: «No incluye la amortización de la fila 30: por eso la fila de abajo es EBITDA y no EBIT»."
+  },
+  {
+   "id": "RT-30",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py (BODEGA[\"referencias\"]) + scripts/productos-digitales/guias-v2_0/grupo_c.py:_bodega()",
+   "prueba": "Diez referencias de ejemplo en verde con multiplicador entre ×2,5 y ×3,5 y food cost de bebida dentro del 28-40 % del capítulo. El libro pasa de 355 fórmulas sin un solo resultado a un TOTAL BODEGA con valor a coste y a PVP."
+  },
+  {
+   "id": "RC-01",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py + scripts/productos-digitales/guias-v2_0/grupo_a.py",
+   "prueba": "Ver RD-01 y RT-02: los tres bloques (P&L, Inversión y Proyección) dan cifra. Proyección!B11 = 2.276.736 € y B15 = 408.095,04 €."
+  },
+  {
+   "id": "RC-02",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (TICKET[\"cabeceras\"], [\"reconciliacion\"]) + scripts/productos-digitales/guias-v2_0/grupo_a.py:_ticket_iva_y_cuadre()",
+   "prueba": "Las columnas se llaman Pesimista/Realista/Optimista, los cubiertos y los días son los del P&L, y el bloque nuevo repite la facturación del P&L con su nota y una fila «Diferencia con este simulador (%)» con semáforo: 0,0 % en las tres."
+  },
+  {
+   "id": "RC-03",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:fondo_de_maniobra()",
+   "prueba": "Ver RD-02 y RD-03."
+  },
+  {
+   "id": "RC-04",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:correspondencia_capex()",
+   "prueba": "Ver RD-35."
+  },
+  {
+   "id": "RC-05",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (CAPEX[\"rangos\"], PLAN[\"inversion\"]) + scripts/productos-digitales/guias-v2_0/grupo_a.py:_capex_rangos_y_notas()",
+   "prueba": "El rango alto de «Equipamiento cocina profesional» sube a 180.000 € con la nota de por qué (el checklist del propio pack tasa 161.430,40 €), y las 21 partidas de «Inversión» se han precargado cuadrando con los totales de los checklists."
+  },
+  {
+   "id": "RC-06",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py (PL[\"notas\"])",
+   "prueba": "Ver RD-10."
+  },
+  {
+   "id": "RC-07",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda()",
+   "prueba": "La cuota y el IVA soportado ya se calculan en los 12 meses (B33:M33 y B31:M31), así que la nota A44 dice la verdad."
+  },
+  {
+   "id": "RC-08",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_precargar_cash()",
+   "prueba": "Ver RD-06. De los seis libros que abrían sin un número, los seis dan resultado: plan-financiero, cash-flow, escandallo, turnos, bodega y gantt."
+  },
+  {
+   "id": "RC-09",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_pl_mensual_representante() y _total_inversion_guardado()",
+   "prueba": "Los totales del P&L y de «Inversión» pasan a 'IF(COUNT(rango)=0,\"\",SUM(rango))' y toda la cadena (margen bruto, EBITDA, amortización, EBIT y la columna de %) se encadena con IF(...=\"\",\"\",...). Verificado con la demo, que ahora VACÍA las entradas antes de exigir \"\"."
+  },
+  {
+   "id": "RC-11",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:prompt_porcentaje()",
+   "prueba": "Ver RT-15."
+  },
+  {
+   "id": "RC-12",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos()",
+   "prueba": "Ver RD-04 y RT-05."
+  },
+  {
+   "id": "RC-13",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_registro_jornada()",
+   "prueba": "El SUMPRODUCT del resumen pasa a la forma con COMAS: '--(...),--(...),IFERROR($F:$F*1,0)'. Con el parte a medio rellenar ya no propaga #¡VALOR!."
+  },
+  {
+   "id": "RC-14",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos()",
+   "prueba": "Ver RD-27."
+  },
+  {
+   "id": "RC-15",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (LEGAL[\"costes_formula\"])",
+   "prueba": "Ver RD-33: el subtotal «Local» pasa de 0,00 € a 34.000 €."
+  },
+  {
+   "id": "RC-16",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (GANTT[\"tareas\"]) + scripts/productos-digitales/guias-v2_0/grupo_b.py:_gantt()",
+   "prueba": "Plan replanificado entero: medidas 29 tareas, 0 violaciones de dependencia y fin máximo en el mes 18. Y regla de formato condicional sobre «Depende de» que se enciende si la tarea no existe o si empieza antes de que termine su predecesora."
+  },
+  {
+   "id": "RC-17",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_menu()",
+   "prueba": "Columnas «Margen medio de SU familia (€)» y «Umbral de popularidad de SU familia (%)», y el mix también es dentro de la familia. Medido: los principales se comparan contra 26,52 € y 14,0 %, los entrantes contra 15,72 € y 17,5 %."
+  },
+  {
+   "id": "RC-18",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_escandallo_e1()",
+   "prueba": "Ver RD-22."
+  },
+  {
+   "id": "RC-19",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_hoja_resumen()",
+   "prueba": "La hoja pasa a 12 filas: la 5 sigue cableada a «Ficha (plantilla)» (el gate de §4.1 comprueba que al tocar una línea el Resumen se mueve, e INDIRECT no deja seguir esa dependencia) y las 6-16 se alimentan del NOMBRE de la hoja en la columna A, verde, con INDIRECT guardado por IF/IFERROR."
+  },
+  {
+   "id": "RC-22",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos() (nota del convenio)",
+   "prueba": "D43 redactada de nuevo, sin los dos puntos dobles ni la mayúscula en mitad de la oración: «La fija el convenio provincial de hostelería, en su tabla salarial anual. No se precarga con una cifra inventada: escríbela tú y prevalece sobre la jornada de referencia de abajo»."
+  },
+  {
+   "id": "RC-23",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py + scripts/productos-digitales/guias-v2_0/motor.py:cerrar_checklist()",
+   "prueba": "Ver RD-18 y RT-09."
+  },
+  {
+   "id": "RC-24",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:RX_RECUENTO",
+   "prueba": "Ver RT-19."
+  },
+  {
+   "id": "RC-25",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:normalizar_texto()/convencion()",
+   "prueba": "Barrido único al final del cierre con el guion no separable en los rangos y el espacio fino antes de la unidad, con los caracteres por ESCAPE. ⚠️ La 2.ª pasada llegó a dar 457 diferencias hasta que los `_norm()` de los tres grupos y la comparación de líneas de Instrucciones pasaron también por `motor.convencion()`."
+  },
+  {
+   "id": "RC-26",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:SUSTITUCIONES_TEXTO",
+   "prueba": "'->' → '→'. Medido en los 18 xlsx: 0 ocurrencias de la flecha ASCII."
+  },
+  {
+   "id": "RC-27",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:SUSTITUCIONES_TEXTO",
+   "prueba": "«sólo» → «solo» (y sus mayúsculas). Medido: 0 ocurrencias de la forma con tilde."
+  },
+  {
+   "id": "RC-28",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:SUSTITUCIONES_TEXTO",
+   "prueba": "'≤'→'<=', '≥'→'>=', '₂'→'2', '₃'→'3', '−'→'-'. Medido: 0 caracteres fuera de WinAnsi en los 18 xlsx, que es lo que el gate de §5.6.6 va a exigir en T7."
+  },
+  {
+   "id": "RC-30",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda()",
+   "prueba": "Ver RD-21/RT-21: la nota ya no lleva ninguna cifra, así que tampoco un separador de miles equivocado."
+  },
+  {
+   "id": "RC-31",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:fijar_ancho() + scripts/productos-digitales/guias-v2_0/grupo_c.py:_escandallo_e1()",
+   "prueba": "La columna G del escandallo queda clavada en 22 (§1.12); `ensanchar_etiquetas` respeta ahora los anchos fijados por el grupo, que era lo que la llevaba a 54."
+  },
+  {
+   "id": "RC-32",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:nombre_pestana()",
+   "prueba": "Ver RT-18."
+  },
+  {
+   "id": "RC-33",
+   "donde": "scripts/productos-digitales/guias-v2_0/motor.py:semaforo_texto()",
+   "prueba": "Ver RT-27: el color y el contador de avance usan ya la misma comparación exacta."
+  },
+  {
+   "id": "RC-34",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_pl_mensual_representante()",
+   "prueba": "Ver RT-29."
+  },
+  {
+   "id": "RC-35",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_registro_jornada() y _turnos()",
+   "prueba": "'Registro de jornada'!G5 se queda VACÍA (era la fórmula '=\"\"') y 'Turnos Semana'!N33, que es una etiqueta, pasa a formato General."
+  }
+ ],
+ "no_aplicados": [
+  {
+   "id": "RT-07",
+   "motivo": "Hermano (guia-panaderia-obrador), no el representante: es T6. Recalibrar B16:D21 para que los tres márgenes caigan en el 15-22 % exige cifras de coste que no están ni en la SPEC ni en el fichero, y panadería todavía no tiene su contenido_<pid>. Se deja anotado para su tanda, con la alternativa que el propio hallazgo admite (convertir E24 en un rango honesto y añadir el semáforo ISNUMBER)."
+  },
+  {
+   "id": "RT-23",
+   "motivo": "Hermano (guia-dark-kitchen), T6. Extraer el 0,05 de calculadora-viabilidad-dark-kitchen!P&L Mensual!B30 a una celda verde con rótulo y nota exige saber QUÉ es ese 0,05, y ese producto no tiene módulo de contenido. El motor ya lo detecta y lo marca en rojo (exit 1), que es el comportamiento correcto hasta que se resuelva; lo que NO se hace es declararlo excepción para maquillar el rojo."
+  },
+  {
+   "id": "RT-24",
+   "motivo": "Hermano (guia-panaderia-obrador), T6. Mover la creación de «Proyección 3 Años» y «Financiación» a grupo_a con parámetros por defecto es un cambio de alcance de familia que hay que verificar contra los 5 hermanos, y este corrector sólo puede correr el representante. El síntoma peligroso que el hallazgo denuncia —el gantt de panadería a 0 fórmulas bajo «TODO VERDE»— SÍ queda cerrado: el gate nuevo de RT-08 lo convierte en FALLO con exit 1."
+  },
+  {
+   "id": "RT-26",
+   "motivo": "Falso positivo de MEDICIÓN, comprobado con un caso mínimo: openpyxl NO persiste el estilo de una `MergedCell` al guardar (se crea el libro, se pinta D4 de verde, se guarda y al releer D4 vuelve a fill_type=None), y Excel pinta un rango combinado con el formato de la celda ANCLA, que aquí es C4 y sí es verde y sí está desbloqueada. La asimetría que ve openpyxl no existe en pantalla y no se puede eliminar desde openpyxl. Aun así se ha dejado la mejora en `motor.verde()`, que propaga el relleno a todo el rango combinado cuando el merge ya existe al pintarlo."
+  },
+  {
+   "id": "RC-10",
+   "motivo": "T7 (§5, documentos). Es el propio hallazgo el que lo dice: «T7 es BLOQUEANTE para publicar». La guía en PDF y los dos bonus DOCX no se tocan en la capa de xlsx y `documentos.py` no existe todavía. Queda como pendiente de la siguiente tanda, con el inventario de contradicciones ya levantado (licencia C3, Resy, «Tendencias 2025-2026», salarios bajo el SMI, «250.000-450.000 € incluyendo SS»)."
+  },
+  {
+   "id": "RC-20",
+   "motivo": "T8 (§6, capa de producto: landing, dashboard, FAQ y JSON-LD). La condición que el propio hallazgo pone para poder escribir la frase —«resolver RC-01 y RC-08 antes de T8»— queda cumplida: plan-financiero y cash-flow ya calculan con datos al abrirlos y el break-even devuelve el mes 5."
+  },
+  {
+   "id": "RC-21",
+   "motivo": "T8 (§6.11, gate de coherencia de cifras). Son siete afirmaciones de la landing y del dashboard, no de los xlsx. Se dejan MEDIDAS para que T8 decida con el número, no con el heredado: 49 ítems en checklist-legal (el dashboard dice 40), 24 personas en el cuadrante (dice 25), «Zwiesel» sin una sola ocurrencia en los 18 xlsx, «Resy» declarado fuera por checklist-marketing, y la inversión: 1.889.944,24 € de necesidad total frente al «500K-900K€» de la landing (de los que 734.020,40 € son el CAPEX de los 21 conceptos, que sí cae dentro de ese rango)."
+  },
+  {
+   "id": "RC-29",
+   "motivo": "T7 (§5). El emoji «💡» que el PDF imprime como una «I» suelta se corrige en `documentos.py`, que todavía no existe: es el guion de maquetado el que tiene que sanear los emojis antes de `construir_pdf()`. Anotado con el caso («Desglose de inversión (CAPEX) I Consejo del Chef», ×2)."
+  }
+ ],
+ "pendientes_de_john": [
+  "§7.3 (sin cambios, siguen aparcados por él): aggregateRating fabricado en las 8 landings, testimonios con credenciales verificables y ancla de precio permanente.",
+  "T7 — regenerar la guía en PDF y los dos bonus DOCX: hasta que corra, la misma descarga se desmiente (el cuadrante pinta en rojo los sueldos que la guía recomienda, y el checklist dice que Resy no opera en España mientras el capítulo 21 lo presupuesta en dólares).",
+  "T8 — las siete cifras de landing y dashboard de RC-21, con el número MEDIDO.",
+  "DECISIÓN NUEVA que conviene que vea: la necesidad total de financiación que el libro calcula ahora son 1.889.944,24 € (CAPEX 734.020,40 € + preapertura 221.603,36 € + fondo de maniobra 934.320,48 €), porque §7-bis.3 dimensiona el fondo como 6 meses de coste fijo MÁS variable. El CAPEX solo (734 k€) sí cae dentro del «500.000-900.000 €» del capítulo 4; la necesidad total, no. El ejemplo de financiación se ha subido a 700.000 € de préstamo para que el cuadre salga en cero."
+ ],
+ "ficheros_tocados": [
+  "scripts/productos-digitales/guias-v2_0/motor.py",
+  "scripts/productos-digitales/guias-v2_0/grupo_a.py",
+  "scripts/productos-digitales/guias-v2_0/grupo_b.py",
+  "scripts/productos-digitales/guias-v2_0/grupo_c.py",
+  "scripts/productos-digitales/guias-v2_0/main.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py"
+ ],
+ "nota_produccion": "NADA escrito en astro-site/public/dl/**: todo el trabajo se ha hecho con --dry-run sobre CLAUDE_SCRATCHPAD y GUIAS_APPLY nunca se ha usado."
+}

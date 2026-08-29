@@ -568,7 +568,7 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
     # ---- la merma entra en el coste (DOM-04) ------------------------------
     # RC-31 · §1.12 fija G en 22; el ensanchado automático la llevaba a 41
     # sobre un A4 con `fitToWidth=1`.
-    ws.column_dimensions['G'].width = 22.0
+    motor.fijar_ancho(ws, 'G', 22.0)
     ws['D' + str(fila_cab)].value = 'Cantidad NETA (ración)'
     ws['G' + str(fila_cab)].value = 'Cantidad BRUTA a comprar'
     for r in range(primera, fin + 1):

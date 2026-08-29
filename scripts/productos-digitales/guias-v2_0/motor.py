@@ -786,9 +786,13 @@ def validaciones(ws, informe=None, fname=''):
 # ==========================================================================
 RX_PCT = re.compile(r'\(\s*%\s*\)|%\s*$|^%\s|\bmargen\b.*\(%\)', re.I)
 RX_FECHA_ET = re.compile(r'^(fecha|inicio|fin)\b|fecha l[íi]mite', re.I)
+#: ⚠️ `n[ºo]\b` cazaba la palabra «no»: «las nóminas … NO llevan» y «(NO es
+#: caja de este ejercicio)» hacían que dos filas de IVA se formatearan como un
+#: recuento —«#,##0», sin € y sin decimales— junto a trece vecinas en euros
+#: (RC-24/RT-19). Sólo el indicador ordinal, nunca el adverbio.
 RX_RECUENTO = re.compile(
     r'\b(uds|unidades|uds\.?\s*vendidas|cubiertos|comensales|d[íi]as|'
-    r'pedidos|tickets|plazas|personas|piezas|raciones|meses|n[ºo]\b)', re.I)
+    r'pedidos|tickets|plazas|personas|piezas|raciones|meses)\b|n[º°]', re.I)
 RX_IMPORTE = re.compile(r'\(\s*€\s*\)|\b€\b|\(eur\)', re.I)
 #: RT-19/RC-24 · etiquetas que son DINERO aunque no traigan «(€)». La regla de
 #: §1.4 decide por el texto, y dos filas de IVA con el rótulo largo quedaban en
@@ -966,6 +970,23 @@ def anchos(ws, mapa):
             ws.column_dimensions[col].width = w
 
 
+def fijar_ancho(ws, letra, ancho):
+    """§1.12 — CLAVA el ancho de una columna frente a `ensanchar_etiquetas`.
+
+    RC-31: el escandallo tiene en la columna G las etiquetas largas del bloque
+    RESUMEN («PVP REAL de carta, con IVA (€) — el que imprimes»), y el
+    ensanchado automático la llevaba a 54 sobre un A4 con `fitToWidth=1`. §1.12
+    fija 22.
+    """
+    fijados = getattr(ws, '_g_anchos', None)
+    if fijados is None:
+        fijados = {}
+        ws._g_anchos = fijados
+    fijados[letra] = ancho
+    ws.column_dimensions[letra].width = ancho
+    return letra
+
+
 def ensanchar_etiquetas(ws, informe=None, fname='', margen=2, tope=60):
     """§1.12/TEC-22 — ninguna etiqueta más larga que su columna con la contigua
     ocupada. Sólo ENSANCHA (nunca estrecha): así es idempotente y no deshace un
@@ -997,6 +1018,8 @@ def ensanchar_etiquetas(ws, informe=None, fname='', margen=2, tope=60):
             if vecina.value is None:
                 continue          # puede desbordar sin tapar nada
             L = get_column_letter(col)
+            if L in getattr(ws, '_g_anchos', {}):
+                continue
             actual = ws.column_dimensions[L].width or 8.43
             necesario = min(tope, len(v) + margen)
             if necesario > actual:
@@ -2010,6 +2033,19 @@ def cerrar(wb, fname, informe, pid=None, proteger_hojas=True):
         ensanchar_etiquetas(ws, informe, fname)
         retirar_verde_de_calculadas(ws, informe, fname)
         verdes_por_dv(ws, informe, fname)
+        # RT-26 · los rangos combinados se crean en el cierre, DESPUÉS de que
+        # el grupo haya pintado la celda ancla: `escandallo!C4:D4` se veía
+        # medio verde y medio blanco, y D4 quedaba desbloqueada sin verde — la
+        # única excepción del producto a «verde ⇔ desbloqueada» (§1.3).
+        for mr in list(ws.merged_cells.ranges):
+            celdas = [c for fila in ws[str(mr)] for c in fila]
+            ancla = celdas[0]
+            if not es_verde(ancla):
+                continue
+            for otra in celdas[1:]:
+                otra.fill = PatternFill('solid', fgColor=VERDE)
+                otra.protection = Protection(locked=False)
+
 
     # el censo cuenta `''` como defecto `empty_str`
     for ws in wb.worksheets:

@@ -287,7 +287,11 @@ PLAN = {
     #   sala (2 conceptos)          = 108.200,00 € = checklist-diseno-sala
     #   vajilla + textil            =  30.230,00 € = checklist-vajilla
     #   web + marketing lanzamiento =  23.800,00 € = checklist-marketing
-    #   proyecto técnico y licencias=  23.960,00 € = checklist-legal
+    #   proyecto técnico y licencias=  23.960,00 € = checklist-legal SIN el
+    #                                 bloque «Local» (su TOTAL es 57.960 €,
+    #                                 de los que 34.000 € son la fianza:
+    #                                 un depósito recuperable, no CAPEX;
+    #                                 va con la preapertura, no aquí)
     'inversion': {
         r'^obra civil y reforma integral': 250000,  # capex, rango medio
         r'^instalaciones \(electricidad': 60000,    # parametrizado
