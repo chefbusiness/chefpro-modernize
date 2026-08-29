@@ -499,6 +499,17 @@ INSTRUCCIONES = {
 # re.search(a[0], ws.title...)` cuando el libro tiene más de dos hojas).
 # ==========================================================================
 CHECKLIST = {
+    # ⚠️ `grupo_a.checklist()` corre DESPUÉS del §1 transversal del motor
+    # (tildes + `EUR`→`€`), así que un patrón escrito contra el texto CRUDO
+    # de v1.1 («autonomos», «EUR», «ano») ya no encuentra nada: la 1.ª pasada
+    # de esta tanda dejó 3 reemplazos SIN aplicar (DOM-25, DOM-26 y el
+    # epígrafe IAE) porque el motor ya había escrito «autónomos», «€» y, en
+    # el caso del epígrafe, «cafés» (con tilde) pero «Epigrafe»/«espectaculos»
+    # sin ella —una mezcla, no un texto limpio—. Los patrones de abajo NO
+    # anclan con `^…$` (serían frágiles otra vez ante el próximo ajuste del
+    # diccionario de tildes del motor): buscan la SUBCADENA estable —el
+    # número, la cifra en euros o una palabra que no cambia— con acentos
+    # opcionales, y sustituyen la celda ENTERA.
     'reemplazos': [
         # DOM-08 / COM-11 (FAMILIA) — el carnet de manipulador está
         # DEROGADO (RD 109/2010); la responsabilidad es de la EMPRESA
@@ -509,14 +520,19 @@ CHECKLIST = {
          'El «carnet de manipulador» está derogado (RD 109/2010): la '
          'formación la acredita la EMPRESA y se documenta en el plan '
          'APPCC'),
-        # DOM-25 (FAMILIA) — cuota de autónomo parametrizada, con nota de año
-        (r'^Tarifa plana autonomos 80 EUR/mes primer ano$',
+        # DOM-25 (FAMILIA) — cuota de autónomo parametrizada, con nota de
+        # año. Medido tras el §1 transversal: «Tarifa plana autónomos '
+        # 80 €/mes primer año» (tilde y € ya puestos por el motor).
+        (r'Tarifa plana aut[oó]nomos? 80\s*(EUR|€)/mes primer a[nñ]o',
          'Cuota según la base mínima del tramo que te corresponda. '
          'Consulta el importe del ejercicio en curso y verifica con tu '
          'gestoría si te aplica la cuota reducida de inicio de actividad'),
         # DOM-26 (FAMILIA) — el PRL obligatorio es el PLAN, no el proveedor
         (r'^SPA$', 'Titular o servicio ajeno'),
-        (r'^Servicio de Prevencion Ajeno obligatorio$',
+        # Medido tras el §1 transversal: «Prevencion» es palabra «-ción» y
+        # el motor YA la acentúa (regla generativa RX_CION) antes de que
+        # este reemplazo corra, así que el patrón acepta las dos formas.
+        (r'Servicio de Prevenci[oó]n Ajeno obligatorio',
          'El plan de prevención es obligatorio; el proveedor externo, no: '
          'con menos de 25 trabajadores y un solo centro el titular puede '
          'asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y '
@@ -526,10 +542,21 @@ CHECKLIST = {
         # el epígrafe de RESTAURANTES de un tenedor. Una cafetería con
         # servicio de mesa va en el grupo 672 (Cafeterías), no en el 671
         # (Restaurantes) ni en el 673 (café-bares sin servicio de mesa).
-        (r'^Epigrafe IAE: 671\.4 \(cafes y bares sin espectaculos\)$',
+        # El «671.4» y el paréntesis de después no cambian de ortografía:
+        # es la ancla estable del patrón.
+        (r'Epigrafe IAE: 671\.4 \(caf[eé]s y bares sin espect[aá]culos\)',
          'Epígrafe IAE: Grupo 672 (Cafeterías, por categoría 672.1/672.2/'
          '672.3 según el servicio) o 673.2 (café-bar sin música) si no hay '
          'servicio de mesa; el 671 es de restaurantes'),
+        # §1.7 — «cafeterias» (plural) no está en `motor.TILDES` (sólo el
+        # singular «cafeteria»→«cafetería»): dos notas del checklist se
+        # quedaban sin tilde. Medido el 2026-08-29 en el gate de esta misma
+        # tanda; no está en el R1 del representante (que no habla de
+        # cafeterías).
+        (r'Instagram es el canal #1 para cafeterias/brunch',
+         'Instagram es el canal #1 para cafeterías/brunch'),
+        (r'Visitar otras cafeterias de la zona, comparar',
+         'Visitar otras cafeterías de la zona, comparar'),
     ],
     'suprimir': [],
     'fases': {},

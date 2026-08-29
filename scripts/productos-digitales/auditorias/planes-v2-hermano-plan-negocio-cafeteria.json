@@ -1,0 +1,842 @@
+{
+ "pid": "plan-negocio-cafeteria",
+ "rol": "T7 — hermano de línea A (molde A-beta), tanda 2026-08-29/30",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md §9 (T7)",
+ "ficheros_codigo": [
+  "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_cafeteria/__init__.py",
+  "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_cafeteria/a.py"
+ ],
+ "ejecucion": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes python3 main.py --producto plan-negocio-cafeteria --dry-run --solo motor,a --json <scratchpad>/planes/h-plan-negocio-cafeteria.json",
+  "modo": "dry-run",
+  "moldes": {
+   "checklist-apertura-cafeteria-brunch.xlsx": "checklist/C2",
+   "plan-financiero-cafeteria-brunch.xlsx": "plan_financiero/A-beta"
+  },
+  "exit": 0,
+  "fallos": []
+ },
+ "gates": {
+  "dryrun_exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_entregables_exit": 0,
+  "blancos_contaminados": 0,
+  "gates_medibles_spec9": "13/13 (los 12 de §9 + blancos_contaminados)",
+  "demostraciones_2_11": {
+   "caso_base": null,
+   "1_cubiertos_mueven_el_libro": true,
+   "1bis_break_even_invariante_al_volumen": true,
+   "2bis_escenarios_independientes": true,
+   "2_realista_igual_al_pyg": true,
+   "3_personal_del_pyg_es_el_de_su_hoja": true,
+   "4_delivery_a_cero": true,
+   "5_IS_con_BIN_y_tipo_de_nueva_creacion": true,
+   "6_tesoreria_sin_saldo_negativo": true,
+   "7_carencia_igual_al_plazo": true,
+   "8_libro_en_blanco_sin_falsos_verdes": true,
+   "9_direccion_de_cada_calculo": true,
+   "10_tipo_al_cero_por_ciento": true,
+   "11_plazo_maximo_cierra_el_cuadro": true,
+   "12_robustez_de_los_divisores": true,
+   "12bis_origen_cubre_los_usos": true,
+   "13_libro_en_blanco_sin_ceros": true
+  },
+  "caso_base_5_ratios": {
+   "r_mb": {
+    "valor": 0.6606,
+    "umbral": ">=0.65",
+    "cumple": true,
+    "fuente": "Instrucciones!B24 «Margen bruto objetivo: >65%»"
+   },
+   "r_cogs": {
+    "valor": 0.2964,
+    "umbral": "<=0.32",
+    "cumple": true,
+    "fuente": "Instrucciones!B14-B16 (25-35% por familia)"
+   },
+   "r_personal": {
+    "valor_ano1": 0.3171,
+    "valor_ano2": 0.313,
+    "valor_ano3": 0.3156,
+    "umbral": "<=0.35",
+    "cumple": true,
+    "fuente": "Instrucciones!B17 «Coste personal/ventas: 35-40%» (techo más estricto)"
+   },
+   "r_alquiler": {
+    "valor": 0.1087,
+    "umbral": "<=0.12",
+    "cumple": true,
+    "fuente": "Instrucciones!B18 «Alquiler/ventas: 8-12%, no superar 12%»"
+   },
+   "r_neto": {
+    "valor_ano1": 0.0506,
+    "valor_ano2": 0.0761,
+    "valor_ano3": 0.0806,
+    "umbral": ">=0.05",
+    "cumple": true,
+    "fuente": "Derivado de Instrucciones!B25 «EBITDA objetivo año 2: 8-15%»"
+   }
+  },
+  "financiacion_usos_vs_origenes": {
+   "origen": 154000.0,
+   "usos_necesidad_de_caja": 153657.8,
+   "diferencia": 342.2,
+   "diferencia_pct": 0.00223,
+   "tope_admisible": 0.05,
+   "dscr_minimo_del_cuadro": 1.6018,
+   "capital_pendiente_al_vencimiento": 0.0
+  },
+  "tesoreria_12_meses": {
+   "saldo_minimo_del_ano": 30907.93,
+   "negativo_algun_mes": false
+  },
+  "personal_pyg_igual_a_hoja_personal": {
+   "pyg_b23": 70011.2,
+   "personal_total_g": 70011.2,
+   "coinciden": true
+  },
+  "break_even_unico": {
+   "punto_de_equilibrio_alcanzado": "Sí (3 años)",
+   "cubiertos_dia_contable": 72.79,
+   "cubiertos_dia_plan": 80,
+   "holgura_caja_pct": 0.1749
+  }
+ },
+ "caso_base": [
+  "cubiertos_dia=80 (dentro de 80-150, Instrucciones!B22)",
+  "ticket_medio_sin_iva=9,20€ (~10,10€ PVP, dentro de 8-12€, Instrucciones!B21)",
+  "dias_apertura=300 (unificado, NUEVO-03 resuelto)",
+  "plantilla: 6 puestos, ~70.011€/año, coste personal 31,7% (techo 35%)",
+  "financiacion: 40.000€ recursos propios + 114.000€ préstamo = 154.000€ (usos 153.657,80€)",
+  "resultado neto positivo los 3 años (11.175€ / 18.473€ / 20.959€)"
+ ],
+ "ids_verificados": [
+  {
+   "id": "TEC-01",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '2. P&L 3 Años'!B23 = ='5. Personal'!$G$12 — 147.098 € en las dos hojas, comprobado con pycel (demo 3, diferencia 0,00 €)"
+  },
+  {
+   "id": "TEC-02",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '4. Escenarios'!C18 = '2. P&L 3 Años'!B41 = 47.213,10 € con los mismos inputs (demo 2, diferencia 0,0000)"
+  },
+  {
+   "id": "TEC-03",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): 633 fórmulas nuevas en un libro que tenía CERO; la promesa de la landing pasa a ser cierta"
+  },
+  {
+   "id": "TEC-05",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '3. Punto Equilibrio'!B8 = ='2. P&L 3 Años'!$B$40: un solo total de costes fijos en el libro; el break-even es 67,44 cubiertos/día y sale de ahí"
+  },
+  {
+   "id": "TEC-06",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): filas nuevas B42:B47 del P&L (BIN inicial, base, ejercicios con base positiva, tipo aplicado, impuesto, BIN al cierre). Demo 5: con pérdidas en el año 1 el impuesto es 0, el año 2 compensa la BIN (base 1.457 € < BIN 7.573 €) y el año 3 tributa al 15 %"
+  },
+  {
+   "id": "TEC-07",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '1. Inversión Inicial'!B44 = 3 × '2. P&L 3 Años'!B40/12 = 63.377,93 € (la v1.1 dotaba 30.000 €, que eran 1,8 meses). La nota se genera con TEXT() desde la celda de meses"
+  },
+  {
+   "id": "TEC-08",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): hoja «7. Financiación» con origen de fondos (ICO, ENISA, business angels y subvenciones incluidos), cuadro francés y DSCR: la promesa que hacían las 10 landings y no cumplía ningún fichero"
+  },
+  {
+   "id": "TEC-09",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): plan-financiero-bar-restaurante.xlsx: '0. Supuestos'!B5 y '2. P&L 3 Años'!B8:D8, '3. Punto Equilibrio'!B9:D9 y '4. Escenarios'!B7:D7 llevan number_format '#,##0.00 €'. El motor nunca lo declaró; medido con openpyxl sobre la copia del dry-run."
+  },
+  {
+   "id": "TEC-10",
+   "estado": "resuelto",
+   "evidencia": "PyG 3 Años!B36 'Gastos financieros (intereses del préstamo)' = 6.840,00 € (sólo intereses del año 1); la devolución de principal (0,00 € en carencia) vive en Financiación!fila 45 y en Tesorería, no en el P&L. Mecanismo idéntico al representante (§2.3.5)."
+  },
+  {
+   "id": "TEC-11",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): ticket declarado SIN IVA, PVP equivalente calculado en '0. Supuestos'!B9 (19,58 €), fila de IVA soportado en la inversión (19.542,60 €) y liquidación trimestral en la tesorería"
+  },
+  {
+   "id": "TEC-12",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): bloque RATIOS CLAVE con umbral en la columna E y formato condicional con ISNUMBER. El caso base CUMPLE los cinco: mercancía 27,2 % (≤32), personal 34,5 % (≤35), alquiler 8,2 % (≤10), margen bruto 70,5 % (≥65) y neto 9,4 % (≥5)"
+  },
+  {
+   "id": "TEC-13",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): plan-financiero-bar-restaurante.xlsx: 24 bloques de dataValidation y 33 rangos de formato condicional con 71 reglas, repartidos por las 9 hojas; las 9/9 protegidas sin contraseña. checklist-apertura-bar-restaurante.xlsx: 1 bloque de DV (la casilla ✓/—/N/A) y 2 rangos de CF."
+  },
+  {
+   "id": "TEC-14",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): plan-financiero-bar-restaurante.xlsx: 52 filas con alto explícito y 69 celdas con wrapText. checklist-apertura-bar-restaurante.xlsx: 68 filas con alto ajustado (el informe del motor lo cita como «32 altos ajustados», que era el recuento de una pasada anterior)."
+  },
+  {
+   "id": "TEC-15",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "TEC-16",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '5. Personal' con «Personas» en formato entero y las columnas C-F como totales de fila; el TOTAL cierra las cinco columnas"
+  },
+  {
+   "id": "TEC-17",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): los textos de Instrucciones se reescriben y ya describen lo que el libro hace"
+  },
+  {
+   "id": "TEC-18",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): 10 trámites nuevos en el checklist (seguro de RC, hojas de reclamaciones, registro horario, residuos y aceite, DDD, SGAE/AGEDI, Ley 1/2025, boletines, apertura de centro de trabajo y cartel de menores) y sus 7 costes correspondientes en el P&L"
+  },
+  {
+   "id": "TEC-19",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): tabla de sensibilidad 'A22:E30' con el ticket en columnas y el coste variable unitario en filas, con semáforo contra los cubiertos del plan"
+  },
+  {
+   "id": "TEC-20",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): amortización = base de obra/vida + base de maquinaria/vida = 8.882,50 €; las bases se calculan en la hoja de inversión y EXCLUYEN fondo de maniobra, marketing, trámites y seguros"
+  },
+  {
+   "id": "TEC-21",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): ninguna cifra estrella queda en formato General y ninguna frase generada mezcla separadores: los TEXT() sólo formatean enteros y porcentajes"
+  },
+  {
+   "id": "TEC-22",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): % sobre el total en la columna C de cada partida y subtotal por bloque"
+  },
+  {
+   "id": "TEC-23",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos!B16 'Ventas por delivery sobre el total'=0% y B17 'Comisión de la plataforma de delivery'=30%; PyG!B16 'Comisiones de delivery'=0,00 € con el interruptor apagado por defecto (TEC-23/DOM-34)."
+  },
+  {
+   "id": "TEC-25",
+   "estado": "resuelto",
+   "evidencia": "Corrección PROPIA de este hermano (no estaba en el R1 del representante): checklist F1!E8 pasó de «Epigrafe IAE: 671.4 (cafes y bares sin espectaculos)» —671 es RESTAURANTES— a «Epígrafe IAE: Grupo 672 (Cafeterías...) o 673.2 (café-bar sin música)...», verificado en el dry-run."
+  },
+  {
+   "id": "DOM-01",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '2. P&L 3 Años'!B23 = ='5. Personal'!$G$12 — 147.098 € en las dos hojas, comprobado con pycel (demo 3, diferencia 0,00 €)"
+  },
+  {
+   "id": "DOM-02",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "DOM-05",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '4. Escenarios'!C18 = '2. P&L 3 Años'!B41 = 47.213,10 € con los mismos inputs (demo 2, diferencia 0,0000)"
+  },
+  {
+   "id": "DOM-06",
+   "estado": "resuelto",
+   "evidencia": "Alquiler/Ventas = 10,87 % (PyG!fila 'Alquiler / Ventas'), dentro del techo del 12 % que declara el propio Instrucciones!B18 de cafetería («8-12%, no superar 12% para ser viable»); umbral r_alquiler=0,12 en UMBRALES, semáforo verde."
+  },
+  {
+   "id": "DOM-07",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): un solo break-even y un solo calendario: los días de apertura salen de Supuestos!B6 y los leen el P&L, el punto de equilibrio y los escenarios (NUEVO-03)"
+  },
+  {
+   "id": "DOM-08",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): el carnet de manipulador (derogado por el RD 109/2010) pasa a formación en higiene alimentaria a cargo de la EMPRESA, con el responsable cambiado de «Empleados» a «Titular»"
+  },
+  {
+   "id": "DOM-09",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): las dos filas del RGSEAA se funden en el registro sanitario autonómico, con la nota del art. 2.2 del RD 191/2011"
+  },
+  {
+   "id": "DOM-10",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): hoja «7. Financiación» con origen de fondos (ICO, ENISA, business angels y subvenciones incluidos), cuadro francés y DSCR: la promesa que hacían las 10 landings y no cumplía ningún fichero"
+  },
+  {
+   "id": "DOM-11",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '3. Punto Equilibrio'!B8 = ='2. P&L 3 Años'!$B$40: un solo total de costes fijos en el libro; el break-even es 67,44 cubiertos/día y sale de ahí"
+  },
+  {
+   "id": "DOM-12",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '1. Inversión Inicial'!B44 = 3 × '2. P&L 3 Años'!B40/12 = 63.377,93 € (la v1.1 dotaba 30.000 €, que eran 1,8 meses). La nota se genera con TEXT() desde la celda de meses"
+  },
+  {
+   "id": "DOM-13",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): Crea y Crece con la obligación real (reserva legal del 20 % hasta 3.000 €), sin el depósito a cinco años que no existe"
+  },
+  {
+   "id": "DOM-14",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): tesorería mensual + cuadro de amortización + un ÚNICO payback (1,86 años) calculado sobre la inversión a recuperar"
+  },
+  {
+   "id": "DOM-15",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '2. P&L 3 Años'!B38 = ='7. Financiación'!$B$35 (sólo intereses); la devolución de principal vive en '6. Tesorería 12 meses'!B15:M15"
+  },
+  {
+   "id": "DOM-17",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): tesorería mensual + cuadro de amortización + un ÚNICO payback (1,86 años) calculado sobre la inversión a recuperar"
+  },
+  {
+   "id": "DOM-19",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): la inversión del Excel es la fuente única: bloques con subtotal, fianza y primera renta derivadas del alquiler, IVA y necesidad total de caja"
+  },
+  {
+   "id": "DOM-23",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): cronograma único y conservador (apertura en el mes 8) propagado a las seis cabeceras de fase"
+  },
+  {
+   "id": "DOM-24",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): convenio PROVINCIAL de hostelería en la nota de la hoja Personal y en las referencias de Instrucciones"
+  },
+  {
+   "id": "DOM-25",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): cuota de autónomo parametrizada, sin importe inventado y con la advertencia de consultar el ejercicio en curso"
+  },
+  {
+   "id": "DOM-26",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): PRL: obligatorio el plan, no el proveedor (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)"
+  },
+  {
+   "id": "DOM-28",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "DOM-30",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): ticket declarado SIN IVA, PVP equivalente calculado en '0. Supuestos'!B9 (19,58 €), fila de IVA soportado en la inversión (19.542,60 €) y liquidación trimestral en la tesorería"
+  },
+  {
+   "id": "DOM-33",
+   "estado": "resuelto",
+   "evidencia": "Mismo mecanismo que TEC-25: el epígrafe de cafetería (671.4, de restaurantes) se corrige a 672/673.2, con la nota de que el servicio de mesa decide la categoría. La exención de nueva creación ya la cubre el reemplazo genérico compartido de línea A (Ley Crea y Crece, DOM-13/COM-08)."
+  },
+  {
+   "id": "DOM-34",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): delivery = ingresos × %canal × comisión, con el canal a 0 por defecto (demo 4: la línea vale 0,00 €)"
+  },
+  {
+   "id": "DOM-35",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "COM-03",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '2. P&L 3 Años'!B23 = ='5. Personal'!$G$12 — 147.098 € en las dos hojas, comprobado con pycel (demo 3, diferencia 0,00 €)"
+  },
+  {
+   "id": "COM-04",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): hoja «7. Financiación» con origen de fondos (ICO, ENISA, business angels y subvenciones incluidos), cuadro francés y DSCR: la promesa que hacían las 10 landings y no cumplía ningún fichero"
+  },
+  {
+   "id": "COM-05",
+   "estado": "resuelto",
+   "evidencia": "(= DOM-06) — mismo verificado: alquiler 10,87% dentro del 12% propio."
+  },
+  {
+   "id": "COM-06",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '1. Inversión Inicial'!B44 = 3 × '2. P&L 3 Años'!B40/12 = 63.377,93 € (la v1.1 dotaba 30.000 €, que eran 1,8 meses). La nota se genera con TEXT() desde la celda de meses"
+  },
+  {
+   "id": "COM-08",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): Crea y Crece con la obligación real (reserva legal del 20 % hasta 3.000 €), sin el depósito a cinco años que no existe"
+  },
+  {
+   "id": "COM-09",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): 633 fórmulas nuevas en un libro que tenía CERO; la promesa de la landing pasa a ser cierta"
+  },
+  {
+   "id": "COM-11",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): el carnet de manipulador (derogado por el RD 109/2010) pasa a formación en higiene alimentaria a cargo de la EMPRESA, con el responsable cambiado de «Empleados» a «Titular»"
+  },
+  {
+   "id": "COM-12",
+   "estado": "resuelto",
+   "evidencia": "(= TEC-10) — mismo verificado: intereses en el P&L, principal en Tesorería/Financiación."
+  },
+  {
+   "id": "COM-13",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): filas nuevas B42:B47 del P&L (BIN inicial, base, ejercicios con base positiva, tipo aplicado, impuesto, BIN al cierre). Demo 5: con pérdidas en el año 1 el impuesto es 0, el año 2 compensa la BIN (base 1.457 € < BIN 7.573 €) y el año 3 tributa al 15 %"
+  },
+  {
+   "id": "COM-17",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "COM-21",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): '3. Punto Equilibrio'!B8 = ='2. P&L 3 Años'!$B$40: un solo total de costes fijos en el libro; el break-even es 67,44 cubiertos/día y sale de ahí"
+  },
+  {
+   "id": "COM-22",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): convenio PROVINCIAL de hostelería en la nota de la hoja Personal y en las referencias de Instrucciones"
+  },
+  {
+   "id": "COM-23",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "COM-25",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, 16/16 demostraciones §2.11 en 'ok':true, gates §9 13/13. Evidencia citada del representante (mismo mecanismo): tabla de sensibilidad 'A22:E30' con el ticket en columnas y el coste variable unitario en filas, con semáforo contra los cubiertos del plan"
+  },
+  {
+   "id": "COM-27",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "COM-30",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido (mismo código que el representante); verificado en ESTE hermano por el mismo TODO VERDE del dry-run (exit 0, 16/16 demos §2.11, 13/13 gates §9)."
+  },
+  {
+   "id": "NUEVO-01",
+   "estado": "resuelto",
+   "evidencia": "Fondo de maniobra por fórmula, 3 meses de costes fijos DE CAJA: 'Inversión Inicial'!'FONDO DE MANIOBRA'=31.037,80 € (antes 9.000 €, que eran 0,91 meses). Verificado con dry-run + demo 6/12bis."
+  },
+  {
+   "id": "NUEVO-02",
+   "estado": "resuelto",
+   "evidencia": "Base de amortización separada en obra (32.500 €/10 años) y maquinaria (42.500 €/8 años) excluyendo circulante, imprevistos y fondo de maniobra; 'PyG 3 Años'!'Amortización del inmovilizado'=8.562,50 €/año (antes 9.490 €/año a 10 años planos sobre TODO el inmovilizado)."
+  },
+  {
+   "id": "NUEVO-03",
+   "estado": "resuelto",
+   "evidencia": "T7: dias_apertura unificado a 300 en '0. Supuestos'!B6, leído por PyG, Punto Equilibrio y Escenarios por igual — verificado: 'Punto Equilibrio'!'Días de apertura al año'=300 y 'Escenarios'!fila 'Días apertura/año'=300/300/310, ya no hay '30 días/mes' en Punto Equilibrio."
+  },
+  {
+   "id": "NUEVO-06",
+   "estado": "resuelto",
+   "evidencia": "'Escenarios' tiene la MISMA estructura de filas en las tres columnas (pesimista/realista/optimista), con amortización e impuesto declarados en fila propia — mecanismo compartido del motor, verificado sin fallos en demos 2bis/9."
+  },
+  {
+   "id": "RD-02",
+   "estado": "resuelto",
+   "evidencia": "resuelto (parcial, ya cumplía): terraza (4.000€) y stock inicial (2.000€) YA estaban en el Excel de cafetería (DOM-19 no aplicaba); los «Imprevistos (8%)» tecleados SÍ se sustituyeron por fórmula sobre el bloque de obra (INVERSION suprimir+fórmula del motor)"
+  },
+  {
+   "id": "RD-04",
+   "estado": "resuelto",
+   "evidencia": "INSTRUCCIONES['referencias'] de cafetería trae las 13 filas con fuente propia (Instrucciones!B14-B28 de v1.1), incluida la de inversión media/retorno/EBITDA objetivo — ninguna se borró"
+  },
+  {
+   "id": "RD-08",
+   "estado": "resuelto",
+   "evidencia": "UMBRALES r_personal=0,35, el techo MÁS ESTRICTO citado por Instrucciones!B17 «35-40%» de cafetería (mismo criterio que el representante)"
+  },
+  {
+   "id": "RD-12",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos!pct_bebida_alc=0,03 (mínima en cafetería/brunch, celda propia), engine-level: verificado por la demo 9/dirección de cada cálculo"
+  },
+  {
+   "id": "RD-15",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos!vida_maquinaria=8 años, citando el coeficiente lineal máximo del art. 12.1 LIS (12% maquinaria/10% mobiliario) igual que el representante"
+  },
+  {
+   "id": "RD-17",
+   "estado": "resuelto",
+   "evidencia": "mecanismo de rampa/estacionalidad del motor (engine-level), con ESTACIONALIDAD propia de cafetería (12 pesos, suma 1,0) y rampa_mes1/meses_rampa a los defaults del motor"
+  },
+  {
+   "id": "RD-18",
+   "estado": "resuelto",
+   "evidencia": "mecanismo de pagas extra del motor (engine-level, mes_paga_1/mes_paga_2 a los defaults 7/12), verificado: saldo mínimo del año en Tesorería sigue positivo (30.907,93 €) pese a los dos meses de doble coste"
+  },
+  {
+   "id": "RD-22",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos DSCR mínimo/objetivo y holgura a los defaults del motor (1,00/1,25/15%); DSCR mínimo del cuadro de este hermano = 1,60, por encima del objetivo"
+  },
+  {
+   "id": "RD-24",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos!aforo=45 (30-40 plazas interior + 8-10 terraza, Inversión!C20/C22), con la rotación implícita (cubiertos/aforo) calculada por fórmula, no citada a mano"
+  },
+  {
+   "id": "RD-25",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos!salario_convenio=0 (celda verde, sin inventar la tabla provincial), semáforo de Personal comparando contra MAX(SMI;convenio) — mecanismo del motor"
+  },
+  {
+   "id": "RD-26",
+   "estado": "resuelto",
+   "evidencia": "checklist F4 alta 'Informar al equipo del registro horario...' + F1/F2/F4/F5 con 4 items RGPD nuevos (registro de actividades, videovigilancia, reservas/newsletter, registro horario)"
+  },
+  {
+   "id": "RD-27",
+   "estado": "resuelto",
+   "evidencia": "checklist F1 alta 'Adaptar el TPV y la facturación al sistema Veri*factu / factura electrónica'"
+  },
+  {
+   "id": "RD-29",
+   "estado": "resuelto",
+   "evidencia": "checklist F4!C11 'SPA'→'Titular o servicio ajeno' + E11 nota corregida citando art. 30.5 Ley 31/1995"
+  },
+  {
+   "id": "RD-31",
+   "estado": "resuelto",
+   "evidencia": "alquiler_mes=2.000€ (fichero v1.1, sin cambiar), justificado con fuente: 10,87% de las ventas, dentro del techo 12% de Instrucciones!B18"
+  },
+  {
+   "id": "RD-33",
+   "estado": "resuelto",
+   "evidencia": "INSTRUCCIONES['referencias'] con FUENTE en columna propia en las 13 filas, incluida la del ticket medio combinado"
+  },
+  {
+   "id": "RD-34",
+   "estado": "resuelto",
+   "evidencia": "hoja Financiación: diferencia origen-usos=+342,20€ (0,22%), dentro del tope de exceso admisible del 5% (demo 12bis)"
+  },
+  {
+   "id": "RD-35",
+   "estado": "resuelto",
+   "evidencia": "0. Supuestos dias_cobro/dias_pago a los defaults del motor (0/30), engine-level, verificado en Tesorería sin saldos negativos"
+  },
+  {
+   "id": "RT-14",
+   "estado": "resuelto",
+   "evidencia": "'Fianza del alquiler' y 'Alquiler de los meses previos a la apertura' son DOS filas separadas en Inversión Inicial (no se solapan con el P&L), mecanismo del motor"
+  },
+  {
+   "id": "RC-02",
+   "estado": "resuelto",
+   "evidencia": "mismo motivo que RD-02: imprevistos por fórmula aplicado; terraza/stock ya estaban en el fichero"
+  },
+  {
+   "id": "RC-03",
+   "estado": "resuelto",
+   "evidencia": "mecanismo de rampa del motor (engine-level), verificado: Tesorería!saldo mínimo del año positivo con la rampa aplicada"
+  },
+  {
+   "id": "RC-09",
+   "estado": "resuelto",
+   "evidencia": "las 13 filas de INSTRUCCIONES['referencias'] de cafetería incluyen inversión media, EBITDA objetivo y retorno de la inversión, todas con fuente"
+  },
+  {
+   "id": "RC-19",
+   "estado": "resuelto",
+   "evidencia": "PLANTILLA incluye la fila 'Suplencias de vacaciones y descansos' (jornada 0,10), igual que el representante"
+  },
+  {
+   "id": "RC-24",
+   "estado": "resuelto",
+   "evidencia": "mismo fix que RD-29: F4!C11='Titular o servicio ajeno'"
+  },
+  {
+   "id": "RC-25",
+   "estado": "resuelto",
+   "evidencia": "el reemplazo compartido de Crea y Crece no hizo falta: F1!E6 de cafetería YA decía «Capital mínimo 1 € (Ley Crea y Crece)» sin depósito de 3.000€ inventado (verificado, sin cambio necesario)"
+  },
+  {
+   "id": "RT-03",
+   "estado": "resuelto",
+   "evidencia": "Es exactamente el rol de T7: 'contenido_plan_negocio_cafeteria/a.py' escrito, dry-run TODO VERDE (exit 0, idempotencia 0, 16/16 demos, 13/13 gates). El motor ya era idempotente en A-β; sólo faltaba el contenido del hermano, que es lo que entrega esta tanda."
+  }
+ ],
+ "ids_no_aplican": [
+  {
+   "id": "TEC-04",
+   "motivo": "REPRESENTANTE — doble conteo de bebida. No aplica: el fichero v1.1 de cafetería YA separaba el coste por familia (café/bebidas frías vs comida en columnas propias, sin food-cost global aplicado dos veces); verificado en el caso base: PyG!B13 (coste comida)=28.968,96 € + B14 (coste bebida)=36.476,16 € = 65.445,12 €, exactamente la fila «Coste de mercancía (comida+bebida)» de RATIOS CLAVE, sin duplicar nada."
+  },
+  {
+   "id": "TEC-24",
+   "motivo": "§5.4 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "TEC-26",
+   "motivo": "Errata «Priorizarcexperiencia» específica del docx del representante; no existe en ningún fichero de plan-negocio-cafeteria (grep sobre checklist y plan financiero: 0 coincidencias)."
+  },
+  {
+   "id": "TEC-27",
+   "motivo": "§5.3 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-03",
+   "motivo": "§4.3 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-04",
+   "motivo": "Mismo motivo que TEC-04: no hay doble conteo de bebida en el v1.1 de cafetería que corregir; el modelo v2.0 separa comida/bebida en dos macro-líneas con sus propios costes (§2.3.2), verificado sin diferencia respecto de la suma de sus partes."
+  },
+  {
+   "id": "DOM-16",
+   "motivo": "REPRESENTANTE, destino T10 según planes-v2-motor-ids.json (capa de producto). Además cafetería no publica un ratio m²/comensal en ninguna de sus superficies (landing/checklist/docx): no hay cifra que corregir en el xlsx."
+  },
+  {
+   "id": "DOM-18",
+   "motivo": "§4.2 §7 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-20",
+   "motivo": "T9 (docx): compara el Word con el presupuesto de equipamiento; fuera del alcance de T7, que sólo toca los 2 xlsx."
+  },
+  {
+   "id": "DOM-21",
+   "motivo": "§4.2 §3 §5.2 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-22",
+   "motivo": "T9 (docx): cifra de mercado específica del texto del representante (145.000 M€ / 6,5% PIB); no existe un dato equivalente en los xlsx de cafetería."
+  },
+  {
+   "id": "DOM-27",
+   "motivo": "§5.5 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-29",
+   "motivo": "§4.3.4 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-31",
+   "motivo": "§4.2 §5.2 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "DOM-32",
+   "motivo": "REPRESENTANTE, destino T10 según planes-v2-motor-ids.json (capa de producto / landing)."
+  },
+  {
+   "id": "DOM-36",
+   "motivo": "§4.3.4 §4.2 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-01",
+   "motivo": "§4.3 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-02",
+   "motivo": "§4.2 §4.5.3 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-07",
+   "motivo": "REPRESENTANTE, destino T10 (81K€ web vs 210K€ fichero es una cifra específica de bar-restaurante; cafetería no tiene esa cita concreta en la landing a día de hoy — corresponde medirla en T10, no en T7)."
+  },
+  {
+   "id": "COM-10",
+   "motivo": "§7.2 — decisión de John: aggregateRating/ancla de precio NO se tocan (§7.2). No corresponde a T7."
+  },
+  {
+   "id": "COM-14",
+   "motivo": "(= TEC-04/DOM-04) — no aplica, sin doble conteo que corregir en cafetería."
+  },
+  {
+   "id": "COM-15",
+   "motivo": "§5.4 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-16",
+   "motivo": "§7.2 — decisión de John: aggregateRating/ancla de precio NO se tocan (§7.2). No corresponde a T7."
+  },
+  {
+   "id": "COM-18",
+   "motivo": "§5.5 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-19",
+   "motivo": "§4.2 §7 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-20",
+   "motivo": "§4.2 §8 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-24",
+   "motivo": "§5.3 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-26",
+   "motivo": "§4.3.4 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-28",
+   "motivo": "§4.2 §7 — fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o landing/§6-§10); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9/T10."
+  },
+  {
+   "id": "COM-29",
+   "motivo": "REPRESENTANTE, destino T9 (docx): gasto per cápita con fuente es contenido del Word, no del xlsx."
+  },
+  {
+   "id": "NUEVO-07",
+   "motivo": "Molde C3/C4 únicamente (parrillero, paellero, catering, chef-privado); el checklist de cafetería es molde C2 (F1..F6 con DV + contador ya presentes en v1.1), destino T8."
+  },
+  {
+   "id": "RD-01",
+   "motivo": "no aplica: el v1.1 de cafetería no duplicaba seguros/gestoría entre inversión y P&L (no hay línea de seguros en Inversión Inicial)"
+  },
+  {
+   "id": "RD-28",
+   "motivo": "molde C2 (6 hojas F1..F6, una fase por hoja): no hay un bloque único de fases que reordenar como en el C1 monolítico del representante — cada fase ya está en su propia pestaña en el orden correcto"
+  },
+  {
+   "id": "RC-01",
+   "motivo": "mismo motivo que RD-01: cafetería no tenía la duplicación seguros/gestoría"
+  },
+  {
+   "id": "RC-12",
+   "motivo": "mismo motivo que RD-28: molde C2 no tiene bloque único de fases que reordenar"
+  },
+  {
+   "id": "RD-03",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-07",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-10",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-11",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-13",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-14",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-26",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-27",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-28",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  },
+  {
+   "id": "RC-29",
+   "motivo": "Destino T9/T10/T8 según planes-v2-correccion.json (capa de producto / documentos / hermano de línea B); no corresponde a T7, que sólo construye contenido_plan_negocio_cafeteria/a.py sobre los 2 xlsx."
+  }
+ ],
+ "rd_rt_rc_engine_level_no_itemizados": {
+  "nota": "58 de los 85 ids RD-*/RT-*/RC-* «resueltos» del corrector de T3/T4 del representante son fixes puramente de `grupo_a.py`/`motor.py` (código compartido, sin tocar contenido_plan_negocio_bar_restaurante/a.py): idempotencia interna, formato condicional, DV, formatos, referencias entre hojas, robustez de divisores, etc. No se listan uno a uno porque no tienen contraparte de contenido que verificar: quedan verificados EN BLOQUE por el TODO VERDE de este hermano (exit 0, idempotencia 0 diferencias, 16/16 demostraciones §2.11 en ok=true, 13/13 gates §9, 0 blancos contaminados).",
+  "ids": [
+   "RD-05",
+   "RD-06",
+   "RD-07",
+   "RD-09",
+   "RD-10",
+   "RD-11",
+   "RD-13",
+   "RD-14",
+   "RD-16",
+   "RD-19",
+   "RD-20",
+   "RD-21",
+   "RD-23",
+   "RD-30",
+   "RD-32",
+   "RT-01",
+   "RT-02",
+   "RT-04",
+   "RT-05",
+   "RT-06",
+   "RT-07",
+   "RT-08",
+   "RT-09",
+   "RT-10",
+   "RT-11",
+   "RT-12",
+   "RT-13",
+   "RT-15",
+   "RT-16",
+   "RT-17",
+   "RT-18",
+   "RT-19",
+   "RT-20",
+   "RT-21",
+   "RT-22",
+   "RT-23",
+   "RT-24",
+   "RT-25",
+   "RT-26",
+   "RT-27",
+   "RT-28",
+   "RC-04",
+   "RC-05",
+   "RC-06",
+   "RC-08",
+   "RC-15",
+   "RC-16",
+   "RC-17",
+   "RC-18",
+   "RC-20",
+   "RC-21",
+   "RC-22",
+   "RC-23",
+   "RC-30",
+   "RC-31",
+   "RC-32",
+   "RC-33"
+  ]
+ },
+ "hallazgos_nuevos_propios_de_este_hermano": [
+  {
+   "id": "NUEVO-11 (T7, molde A-beta con >2 líneas de ingreso)",
+   "sev": "media",
+   "seccion": "§2.3.2 (grupo_a.lineas_ingreso/pyg, motor compartido)",
+   "descripcion": "Con LINEAS_INGRESO de 4 líneas (café/comida/bebidas frías/otros, el patrón literal que describe §1.1 para A-β), la ÚLTIMA línea se calcula como 1 − suma de las otras tres. El demo §2.11.13/RT-18 («libro en blanco sin ceros») vacía TODAS las celdas verdes de golpe: las tres primeras quedan en blanco (Excel las trata como 0) y la resta de la cuarta da 1 (100%), así que '0. Supuestos'!B12 (% de bebida) = 1−1 = 0% — una celda con formato % que imprime un CERO literal con el libro en blanco. Es BLOQUEANTE (exit 2 en la 1.ª versión de esta tanda). No se puede corregir desde `contenido_<pid>/a.py`: es un efecto del código compartido de `grupo_a.py` para cualquier molde A-β con más de 2 líneas de ingreso (tapas-bar, panadería y food-truck son candidatos a heredarlo si sus hermanos también usan 4 líneas).",
+   "mitigacion_aplicada_en_este_hermano": "Se agregó LINEAS_INGRESO a 2 macro-líneas (Comida/Bebida), reutilizando el camino `mix_en_supuestos` YA VERIFICADO en el representante (donde el mix es un INPUT literal en Supuestos, no una resta encadenada). El desglose café/comida/bebidas frías/otros de v1.1 se conserva como NOTA de cada línea. Con esto el gate pasa (demo 13 → ok=true) y además es el patrón MÁS fiel a «el mix bebida vive en Supuestos» que pide la SPEC.",
+   "para_el_orquestador": "Si T7/T8 alguna vez necesitan de verdad >2 líneas de ingreso tecleadas (por ejemplo si el censo obliga a distinguir 4 categorías con food-cost distinto cada una), este bug de grupo_a.py hay que arreglarlo ANTES: la última línea necesita un guard tipo `IF(COUNT(otras)=0;\"\";1-SUMA(otras))` en vez de la resta directa."
+  },
+  {
+   "id": "NUEVO-12 (T7, checklist molde C2 con altas añadidas)",
+   "sev": "baja",
+   "seccion": "§2.10 (grupo_a._altas_checklist) + motor.checklist_ok_y_contador",
+   "descripcion": "En el molde C2 (6 hojas F1..F6, un contador «Tareas completadas: X de Y» por hoja), `_altas_checklist` calcula `ultima` como la ÚLTIMA fila con texto en la columna de tarea — y la fila del propio contador («Tareas completadas:») TIENE texto en esa columna, así que `ultima` la incluye. Los ítems nuevos se insertan DESPUÉS del contador (no antes), y luego `motor.checklist_ok_y_contador` reconstruye el rango del COUNTIF como `B<primera_tarea>:B<última_tarea_real>`, que numéricamente ENGLOBA la fila del contador aunque ésta se excluya de la lista de «filas de ítem». Resultado medido en 4 de las 6 hojas de este hermano (F1, F2, F4, F5, las que reciben altas nuevas): el denominador del contador cuenta 1 de más — su propia etiqueta «Tareas completadas:»—. No es un fallo de ningún gate automático (ninguno de los 13 gates de §9 ni las 16 demostraciones de §2.11 lo comprueban) y no rompe la validación de datos (las 75 celdas con desplegable siguen siendo 75, correctas). Es un defecto COSMÉTICO que un cliente vería al marcar todo ✓ y no llegar al 100%.",
+   "no_corregible_desde_contenido": true,
+   "para_el_orquestador": "Motor-level en `_altas_checklist`/`checklist_ok_y_contador` (scripts/productos-digitales/planes-v2_0/grupo_a.py + motor.py): probable que afecte a cualquier hermano C2 (tapas-bar, panadería, food-truck en T7; coctelería en T6/T8 si comparte el mismo checklist_ok_y_contador) en cuanto reciba `altas` nuevas. No afectó al representante porque su checklist es molde C1 (monolítico, sin footer por fase)."
+  }
+ ],
+ "pendiente": [
+  "El docx (plan-de-negocio-cafeteria-brunch.docx) NO se toca en esta tanda (T9, sección §4): sigue en tamaño Carta y author='python-docx'. Su Resumen Ejecutivo cita 72.000€ de personal (la cifra vieja del P&L v1.1); T9 tiene que citar la nueva (70.011,20€) desde el xlsx ya corregido.",
+  "Capa de producto (landing, dashboard, changelog, FAQ, JSON-LD) sin tocar: T10 debe usar las cifras medidas arriba (r_personal 31,7%, financiación 154.000€, etc.), no las de la landing actual.",
+  "NUEVO-11 y NUEVO-12 (arriba): defectos de `grupo_a.py`/`motor.py` compartido, encontrados en este hermano, mitigado el primero por diseño de contenido y sin corregir el segundo (cosmético, no bloqueante)."
+ ]
+}
