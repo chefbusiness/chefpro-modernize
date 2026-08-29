@@ -1,0 +1,1313 @@
+{
+ "productId": "guia-restaurante-gastronomico",
+ "familia": "guia",
+ "inventario": {
+  "productId": "guia-restaurante-gastronomico",
+  "ficheros": [
+   {
+    "nombre": "guia-restaurante-gastronomico.pdf",
+    "tipo": "pdf",
+    "bytes": 23332,
+    "resumen": "10 páginas reales (pypdf) frente a las '80+ páginas' prometidas en landing y dashboard"
+   },
+   {
+    "nombre": "guia-restaurante-gastronomico.docx",
+    "tipo": "docx",
+    "bytes": 45833,
+    "hojas": [
+     "22 capítulos confirmados (1 a 22, incluye 19. The World's 50 Best)"
+    ],
+    "resumen": "229 párrafos, 48 headings, solo ~2.395 palabras totales (2157 cuerpo + 238 en 4 tablas) para 22 capítulos — ~109 palabras/capítulo, incompatible con '80+ páginas'"
+   },
+   {
+    "nombre": "business-plan-modelo.docx",
+    "tipo": "docx",
+    "bytes": 38045,
+    "resumen": "66 párrafos, 10 headings (10 secciones de plan de negocio)"
+   },
+   {
+    "nombre": "manual-servicio-sala.docx",
+    "tipo": "docx",
+    "bytes": 37730,
+    "resumen": "26 párrafos, 7 headings (protocolo de sala completo)"
+   },
+   {
+    "nombre": "plan-financiero-3-anos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10138,
+    "hojas": [
+     "Instrucciones",
+     "Inversión (25 fórmulas)",
+     "P&L Mensual (30 fórmulas)"
+    ],
+    "formulas": 55,
+    "resumen": "Plan a 3 años con fórmulas encadenadas reales"
+   },
+   {
+    "nombre": "calculadora-capex.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7593,
+    "hojas": [
+     "Instrucciones",
+     "CAPEX (4 fórmulas)"
+    ],
+    "formulas": 4,
+    "resumen": "Desglose CAPEX con totales calculados"
+   },
+   {
+    "nombre": "pl-mensual-escenarios.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7255,
+    "hojas": [
+     "Instrucciones",
+     "Escenarios (0 fórmulas)"
+    ],
+    "formulas": 0,
+    "resumen": "HOJA COMPLETAMENTE VACÍA: 19 filas de etiquetas (Pesimista/Realista/Optimista, EBITDA, etc.) sin un solo valor ni fórmula — no calcula nada pese a llamarse 'con fórmulas encadenadas' en el FAQ"
+   },
+   {
+    "nombre": "cash-flow-break-even.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7598,
+    "hojas": [
+     "Instrucciones",
+     "Cash Flow 12 Meses (10 fórmulas)"
+    ],
+    "formulas": 10,
+    "resumen": "Cash flow con fórmulas, aunque pocas para 12 meses + break-even prometido"
+   },
+   {
+    "nombre": "escandallo-maestro.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7985,
+    "hojas": [
+     "Instrucciones",
+     "Escandallo (42 fórmulas)"
+    ],
+    "formulas": 42,
+    "resumen": "Fichas técnicas con coste/PVP calculados"
+   },
+   {
+    "nombre": "menu-engineering-matrix.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7780,
+    "hojas": [
+     "Instrucciones",
+     "Menu Engineering (25 fórmulas)"
+    ],
+    "formulas": 25,
+    "resumen": "Clasificación Stars/Plowhorses/Puzzles/Dogs con fórmulas"
+   },
+   {
+    "nombre": "budget-bodega.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9355,
+    "hojas": [
+     "Instrucciones",
+     "Bodega (100 fórmulas)"
+    ],
+    "formulas": 100,
+    "resumen": "Inventario de vinos con margen/rotación calculados"
+   },
+   {
+    "nombre": "calculadora-ticket-medio.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7180,
+    "hojas": [
+     "Instrucciones",
+     "Ticket Medio (0 fórmulas)"
+    ],
+    "formulas": 0,
+    "resumen": "HOJA COMPLETAMENTE VACÍA: 14 filas de etiquetas (% comensales, precios, ticket ponderado) sin ningún valor ni fórmula — no es un 'simulador', es una tabla en blanco"
+   },
+   {
+    "nombre": "cronograma-apertura-gantt.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8297,
+    "hojas": [
+     "Instrucciones",
+     "Gantt (0 fórmulas)"
+    ],
+    "formulas": 0,
+    "resumen": "Cronograma de 18 meses con fases/tareas y columnas M1-M18 para marcar, sin datos precargados (aceptable como plantilla, no promete fórmulas)"
+   },
+   {
+    "nombre": "plantilla-turnos-brigada.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8512,
+    "hojas": [
+     "Instrucciones",
+     "Turnos Semana (0 fórmulas)"
+    ],
+    "formulas": 0,
+    "resumen": "Cuadrante semanal por puestos de cocina/sala, plantilla vacía para rellenar"
+   },
+   {
+    "nombre": "checklist-legal.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8722,
+    "resumen": "42 filas de ítem reales (dashboard promete '40 trámites') — OK"
+   },
+   {
+    "nombre": "checklist-equipamiento-cocina.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9284,
+    "resumen": "Solo 56 filas de ítem reales frente a los '90 ítems' que promete el dashboard (déficit del 38%)"
+   },
+   {
+    "nombre": "checklist-vajilla-cristaleria.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8480,
+    "resumen": "45 ítems reales vs '50 ítems' prometidos — déficit menor"
+   },
+   {
+    "nombre": "checklist-appcc.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8980,
+    "resumen": "47 ítems reales vs '55 prerrequisitos y controles' prometidos"
+   },
+   {
+    "nombre": "checklist-inspeccion-michelin-repsol.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8828,
+    "resumen": "42 ítems reales vs '45 ítems' prometidos (también en bonus de landing)"
+   },
+   {
+    "nombre": "checklist-diseno-sala.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8234,
+    "resumen": "33 ítems reales vs '35 ítems' prometidos"
+   },
+   {
+    "nombre": "checklist-contratacion.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8133,
+    "resumen": "32 ítems reales vs '30 ítems' prometidos — OK"
+   },
+   {
+    "nombre": "checklist-marketing-preapertura.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8136,
+    "resumen": "32 ítems reales vs '35 acciones' prometidas"
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "guia-pdf",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:20",
+    "title": "Guía Completa (PDF) — desc dice '22 capítulos, 80+ páginas'; el PDF real tiene 10 páginas"
+   },
+   {
+    "key": "guia-docx",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:21"
+   },
+   {
+    "key": "plan-financiero",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:27"
+   },
+   {
+    "key": "calculadora-capex",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:28"
+   },
+   {
+    "key": "pl-mensual",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:29",
+    "title": "desc dice 'Pesimista, realista y optimista con fórmulas encadenadas' pero el xlsx no tiene ni una fórmula ni un valor"
+   },
+   {
+    "key": "cash-flow",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:30"
+   },
+   {
+    "key": "escandallo-maestro",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:31"
+   },
+   {
+    "key": "menu-engineering",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:32"
+   },
+   {
+    "key": "budget-bodega",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:33"
+   },
+   {
+    "key": "calculadora-ticket",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:34",
+    "title": "desc dice 'Simulador de escenarios' pero el xlsx está totalmente vacío (0 fórmulas, 0 valores)"
+   },
+   {
+    "key": "cronograma-gantt",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:35"
+   },
+   {
+    "key": "plantilla-turnos",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:36"
+   },
+   {
+    "key": "checklist-legal",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:42"
+   },
+   {
+    "key": "checklist-equipamiento",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:43",
+    "title": "desc dice '90 ítems por zona' pero el xlsx tiene 56 filas de ítem reales"
+   },
+   {
+    "key": "checklist-vajilla",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:44"
+   },
+   {
+    "key": "checklist-appcc",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:45"
+   },
+   {
+    "key": "checklist-michelin",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:46"
+   },
+   {
+    "key": "checklist-sala",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:47"
+   },
+   {
+    "key": "checklist-contratacion",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:48"
+   },
+   {
+    "key": "checklist-marketing",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:49"
+   },
+   {
+    "key": "business-plan",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:55"
+   },
+   {
+    "key": "manual-sala",
+    "ruta": "src/pages/GuiaRestauranteGastronomicoDashboard.tsx:56"
+   }
+  ],
+  "landing": {
+   "productName": "Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol)",
+   "cifras_prometidas": [
+    "22 capítulos (CONFIRMADO: 22 headings numerados en el docx)",
+    "80+ páginas (astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts:13,23 — REFUTADO: el PDF real tiene 10 páginas)",
+    "10 plantillas Excel con fórmulas (línea 26, 108, 142, 152 — 2 de las 10 (pl-mensual-escenarios.xlsx y calculadora-ticket-medio.xlsx) están completamente vacías, sin fórmulas ni datos)",
+    "8 checklists (correcto en cantidad; equipamiento-cocina anuncia 90 ítems en dashboard pero el fichero trae 56)",
+    "Inversión 500K-900K€ (recurrente en headers, FAQ y testimonios)",
+    "45 ítems checklist Michelin/Repsol (línea 124, bonus — el xlsx real trae 42)"
+   ],
+   "entregables_prometidos": [
+    "Guía PDF+DOCX 22 capítulos/80+ páginas",
+    "10 plantillas Excel con fórmulas",
+    "8 checklists",
+    "Business Plan Modelo (bonus)",
+    "Manual de Servicio de Sala (bonus)"
+   ],
+   "bonus": [
+    "Business Plan Modelo para Bancos (49€)",
+    "Manual de Servicio de Sala (39€)",
+    "Checklist Inspección Michelin/Repsol 45 ítems (29€, real 42)",
+    "Cronograma Apertura Gantt 18 meses (24€)",
+    "Calculadora Menú Engineering (19€)"
+   ],
+   "faqs": [
+    "¿Cuánto cuesta montar un restaurante gastronómico? (500K-900K€, capítulo 4)",
+    "¿Incluye información sobre Estrella Michelin? (capítulos 17-19, confirmado que existen)",
+    "¿Las plantillas Excel incluyen fórmulas? — línea 142/187: 'Sí, las 10 plantillas... fórmulas automáticas / todo con fórmulas encadenadas' — REFUTADO por pl-mensual-escenarios.xlsx y calculadora-ticket-medio.xlsx, ambas sin ninguna fórmula ni valor de ejemplo",
+    "¿Hay garantía de devolución? (30 días)"
+   ]
+  },
+  "emails": {
+   "verify": "netlify/functions/verify-purchase.ts:147-148 — mapa presente, accessPath '/guia-restaurante-gastronomico-access'",
+   "resend": "netlify/functions/resend-access.ts:147-148 — mapa presente, mismo accessPath"
+  },
+  "gate": "gate-flujo-postpago.py --offline --only guia-restaurante-gastronomico: 22 ficheros/22 dl_ok, 0 fallos, 1 aviso (sección D: drift webhook sin verificar en modo offline, esperado). censo-entregables.py --only guia-restaurante-gastronomico --fail --quiet: 22 ficheros censados (18 xlsx, 3 docx, 1 pdf), OK: 0 defectos deterministas. Ambos gates confirman que la Fase A técnica (cache, A4, metadata, bio, casillas, fórmulas rotas) está correctamente aplicada — los hallazgos de este informe son de contenido/promesa, invisibles para scripts deterministas.",
+  "notas": [
+   "HALLAZGO CRÍTICO 1 — Páginas: la landing (líneas 13 y 23 de guia-restaurante-gastronomico.ts) y el dashboard (GuiaRestauranteGastronomicoDashboard.tsx:20) prometen '80+ páginas'; el PDF entregado (guia-restaurante-gastronomico.pdf) tiene 10 páginas reales (verificado con pypdf) y el docx apenas 2.395 palabras para 22 capítulos (~109 palabras/capítulo). Es la promesa más grave del producto (85€) por ser cuantitativa, verificable y falsa por un factor de 8x.",
+   "HALLAZGO CRÍTICO 2 — Plantillas 'vacías': pl-mensual-escenarios.xlsx (hoja 'Escenarios') y calculadora-ticket-medio.xlsx (hoja 'Ticket Medio') no tienen NINGÚN valor ni fórmula, solo etiquetas de fila/columna. El FAQ de landing (línea 142 y 187) afirma explícitamente 'las 10 plantillas Excel incluyen fórmulas automáticas' / 'todo con fórmulas encadenadas' y el dashboard describe pl-mensual como 'con fórmulas encadenadas' (línea 29) y calculadora-ticket como 'Simulador de escenarios' (línea 34) — ninguna de las dos afirmaciones es cierta para estos 2 ficheros de los 10. Esto es lógica de negocio ausente, no un bug de script: son las 2 únicas 'calculadoras' vacías de las 10.",
+   "HALLAZGO 3 — checklist-equipamiento-cocina.xlsx: dashboard (línea 43) promete '90 ítems por zona: frío, carnes, pescados, pastelería, pase'; el fichero real trae 56 filas de ítem (38% menos). Es el mayor déficit de contenido entre los 8 checklists (el resto está entre -5 y +2 respecto a lo prometido, dentro de margen razonable).",
+   "HALLAZGO MENOR — checklist-inspeccion-michelin-repsol.xlsx: bonus de landing (línea 124) y dashboard (línea 46) prometen '45 ítems'; el fichero trae 42.",
+   "No se han encontrado casos de Fase A no aplicada (cache, A4, metadata, bio, versión 1.1, casilla unificada) — según lo pedido, no se reporta salvo excepción y no se encontró ninguna.",
+   "Changelog (productos-changelog.ts:117-122): versión 1.1, actualizado 2026-08-22, entrada presente — consistente con la Fase A aplicada.",
+   "gate-flujo-postpago y censo-entregables, al ser deterministas, dan verde total porque no evalúan si una hoja calcula algo ni si el nº de páginas/ítems coincide con lo prometido — de ahí el valor de esta auditoría de contenido."
+  ]
+ },
+ "rondas": {
+  "R1": {
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + pycel) — 18 ficheros .xlsx de /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico/",
+    "veredicto": "no listo",
+    "motivo": "De los 18 xlsx, 11 no calculan lo que su propia hoja «Instrucciones» promete. Cuatro son inutilizables como herramienta (calculadora-ticket-medio y pl-mensual-escenarios con 0 fórmulas y las filas de RESULTADOS pintadas de verde como si el cliente tuviera que calcularlas a mano; cash-flow-break-even sin las filas de totales, flujo neto, flujo acumulado ni break-even; menu-engineering sin la columna de clasificación Stars/Plowhorses/Puzzles/Dogs que es su único motivo de existir). Además hay dos errores de cálculo verificados con pycel que un cliente usaría para fijar precios y para presentar números a un banco: el escandallo devuelve el PVP sugerido del LOTE ENTERO ignorando la celda «Raciones» (18 € de coste para 10 raciones → «PVP sugerido 64,29 €» en vez de 6,43 €), y el «EBITDA» del plan financiero resta la amortización, con lo que es EBIT y subestima el EBITDA en el importe íntegro de la amortización (26.000 € mostrados frente a 32.000 € reales en el escenario probado). A esto se suma que teclear «20» en la columna «Merma (%)» —formato General, sin validación— produce cantidades netas negativas (-9,5). Un cliente que ha pagado 85 € por «10 plantillas Excel con fórmulas encadenadas» recibe cuatro plantillas en blanco y dos calculadoras que dan cifras equivocadas: es motivo de reembolso.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ubicacion": "hoja 'Ticket Medio', B16:D20 (y B5:D14)",
+      "hallazgo": "El fichero no tiene ni una sola fórmula. Las filas de resultado —A16 'TICKET MEDIO PONDERADO (€)', A18 'Facturación diaria (€)', A20 'Facturación mensual (€)'— están pintadas del mismo verde E8F5E9 que las entradas, es decir, la hoja le dice al cliente que teclee él los resultados.",
+      "evidencia": "openpyxl: total de celdas que empiezan por '=' en el libro = 0. Relleno 00E8F5E9 en 45 celdas: B5:D14 (entradas) Y TAMBIÉN B16:D20, B17:D17, B18:D18, B19:D19, B20:D20. Instrucciones!A6 = '2. Calcula el ticket medio ponderado y la facturación estimada.'; dashboard src/pages/GuiaRestauranteGastronomicoDashboard.tsx:34 = 'Simulador de escenarios según mix de menús y vinos.'",
+      "fix": "Escribir las fórmulas y quitar el verde de las filas 16-20: B16 = B5*B6 + B7*B8 + B9*B10 + B11*B12 + B13*B14; B18 = B16*B17; B20 = B18*B19 (y replicar en C y D). Añadir una fila de control '% comensales asignado' = B5+B7+B9 con aviso si ≠ 100 %, y formato 0,0 % en las filas 5, 7, 9, 11 y 13."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ubicacion": "hoja 'Escenarios', B17:D22",
+      "hallazgo": "Cero fórmulas. El bloque RESULTADOS (Facturación, Coste materia prima, Margen bruto, Costes fijos, EBITDA, Margen EBITDA) está vacío y pintado de verde como campo editable. La hoja no encadena nada.",
+      "evidencia": "openpyxl: 0 celdas con '='. Relleno 00E8F5E9 = 45 celdas: B6:D14 (parámetros) y B17:D22 (los supuestos resultados). Instrucciones!A7 = '3. Los resultados se calculan automáticamente.'; dashboard GuiaRestauranteGastronomicoDashboard.tsx:29 = 'Pesimista, realista y optimista con fórmulas encadenadas.'",
+      "fix": "B17 = (B6*B8 + B7*B9)*B10; B18 = B17*B11; B19 = B17-B18; B20 = B12+B13+B14; B21 = B19-B20; B22 = IF(B17=0;0;B21/B17). Replicar en C y D, retirar el relleno verde de 17:22 y formatear B22 como 0,0 %."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "hoja 'Cash Flow 12 Meses', filas 10, 19, 21 y 22 (B:N)",
+      "hallazgo": "Las cuatro filas que dan sentido al fichero están muertas: 'Total Ingresos', 'Total Gastos', 'FLUJO DE CAJA NETO' y 'FLUJO ACUMULADO' no tienen fórmula, no tienen relleno verde y su formato es General. Y no existe ninguna celda de break-even en todo el libro, pese al nombre del fichero.",
+      "evidencia": "Las únicas 10 fórmulas del libro son N6:N9 y N13:N18 ('=SUM(B6:M6)'…), que suman filas de entrada. B10, N10, B19, N19, B21, B22, N21, N22: value=None, fill=None, number_format='General'. Instrucciones!A6 = '2. El cash flow acumulado y el break-even se calculan automáticamente.'",
+      "fix": "B10 = SUM(B6:B9) arrastrado a B10:N10; B19 = SUM(B13:B18) a B19:N19; B21 = B10-B19; B22 = B21 y C22 = B22+C21 arrastrado hasta M22. Añadir una celda 'Mes de break-even' = IFERROR(MATCH(TRUE;INDEX(B22:M22>0;0);0);\"No alcanzado\") y formato #,##0.00 € en las filas 10, 19, 21 y 22."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ubicacion": "hoja 'Menu Engineering', H5:H29 y falta de fila de referencias",
+      "hallazgo": "La columna 'Clasificación' —Stars/Plowhorses/Puzzles/Dogs, el único motivo por el que existe esta plantilla— está completamente vacía y sin fórmula. Peor: tampoco hay total de unidades vendidas, ni % de mix, ni margen medio, de modo que el cliente no puede aplicar Kasavana & Smith ni a mano.",
+      "evidencia": "Las 25 fórmulas del libro son todas G5:G29 = '=F5-E5'. H5 tiene value=None, fill=None, bold=True (formateada como celda de salida, nunca rellenada). No existe ninguna fila de totales por debajo de la 29 (max_row=29). Instrucciones!A6 = '2. La clasificación Stars/Plowhorses/Puzzles/Dogs se calcula automáticamente.'; landing astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts:142 = 'calculadora de menú engineering (matrix Stars/Plowhorses/Puzzles/Dogs)… con fórmulas automáticas'.",
+      "fix": "Añadir fila 31 con D31 = SUM(D5:D29) y G31 = SUMPRODUCT(D5:D29;G5:G29)/D31 (margen medio ponderado). Añadir columna I '% mix' = IF($D$31=0;0;D5/$D$31) y el umbral de popularidad 0,7/nº de platos. H5 = IF(D5=\"\";\"\";IF(AND(I5>=$umbral;G5>=$G$31);\"Star\";IF(AND(I5>=$umbral;G5<$G$31);\"Plowhorse\";IF(AND(I5<$umbral;G5>=$G$31);\"Puzzle\";\"Dog\")))) arrastrado a H29."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "alta",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja 'Escandallo', H28 (y E4)",
+      "hallazgo": "El 'PVP Sugerido' se calcula sobre el coste del LOTE COMPLETO e ignora la celda E4 'Raciones', que no entra en ninguna fórmula del libro. Un chef que escandalla una elaboración de 10 raciones lee un PVP diez veces mayor que el que debe poner en la carta.",
+      "evidencia": "H28 = '=H27/0.28' y H27 = '=SUM(H7:H26)'. E4 'Raciones:' es una etiqueta y la celda contigua, aun rellenada, no la consume ninguna fórmula. Verificado con pycel tras cargar 2 ingredientes y E4=10: H27 = 18.0, H28 = 64.2857… El PVP por ración correcto sería 6,43 €.",
+      "fix": "Convertir E4 en etiqueta y F4 en la celda de entrada numérica de raciones (con valor por defecto 1), y cambiar H28 a '=IF(F4=0;0;H27/F4/0,28)'. Añadir una fila 'Coste por ración' = IF(F4=0;0;H27/F4) y otra 'PVP con IVA (10 %)' = H28*1,1, que es el número que va a la carta en España."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "alta",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja 'Escandallo', F7:F26 y G7:G26",
+      "hallazgo": "La columna 'Merma (%)' tiene number_format 'General' y ninguna validación de datos, mientras la fórmula de cantidad neta espera un decimal. Quien teclee 20 (lo natural bajo un encabezado que dice '%') obtiene una cantidad neta negativa, sin ningún aviso.",
+      "evidencia": "F7 number_format='General', fill=00E8F5E9, ws.data_validations vacío en toda la hoja. G7 = '=D7*(1-F7)'. Con pycel y D7=0,5 · E7=30 · F7=20: G7 = -9.5. Con F8=0,2 el mismo bloque da G8 = 0,16 (correcto), así que el fichero acepta ambas convenciones sin distinguirlas. Además E7 'Precio/Ud (€)' también está en 'General', sin formato de moneda, mientras H7 sí lleva '#,##0.00 €'.",
+      "fix": "Poner number_format '0,0%' en F7:F26 y '#,##0.00 €' en E7:E26, y añadir una validación decimal entre 0 y 0,95 en F7:F26 con mensaje de entrada. Blindar la fórmula: G7 = 'IFERROR(MAX(0;D7*(1-IF(F7>1;F7/100;F7)));0)'."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "hoja 'Instrucciones', A6 y A9 · libro completo",
+      "hallazgo": "El fichero se llama 'plan-financiero-3-anos' y sus propias instrucciones remiten a una pestaña 'Proyección 3 Años' que NO EXISTE. El libro sólo trae Inversión y un P&L de UN mes: no hay proyección plurianual, ni crecimiento, ni año 2 ni año 3 en ninguna celda.",
+      "evidencia": "wb.sheetnames = ['Instrucciones', 'Inversión', 'P&L Mensual']. Instrucciones!A6 = '2. Las fórmulas calcularán automáticamente P&L, margen y proyección a 3 años.' y A9 = \"5. La pestaña 'Proyección 3 Años' extrapola con crecimiento anual.\" Dashboard GuiaRestauranteGastronomicoDashboard.tsx:27 = 'Inversión, P&L mensual y proyección a 3 años con fórmulas.'",
+      "fix": "Crear la hoja 'Proyección 3 Años' con Año 1 = P&L mensual ×12 referenciado ('P&L Mensual'!B10*12 etc.), entradas de % de crecimiento de ventas y de inflación de costes por año, y las tres columnas Año 1/2/3 encadenadas. Si se decide no construirla, quitar A9 y corregir A6 y el texto del dashboard."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "hoja 'P&L Mensual', B34 y A30",
+      "hallazgo": "La celda etiquetada EBITDA resta la amortización, porque 'Amortización equipamiento' está dentro del bloque de costes fijos que suma B32. Lo que la hoja llama EBITDA es en realidad EBIT. Es el número que un cliente lleva al banco o a un inversor, y sale sistemáticamente por debajo del real.",
+      "evidencia": "A30 = 'Amortización equipamiento'; B32 = '=SUM(B20:B31)' (incluye la fila 30); B34 = '=B17-B32' bajo la etiqueta A34 = 'EBITDA'. Verificado con pycel con un escenario realista (ventas 140.000 €, amortización 6.000 €): B32 = 66.000, B34 = 26.000 cuando el EBITDA correcto es 32.000 € — un 23 % de desviación.",
+      "fix": "Sacar la amortización del sumatorio: dejar B32 = SUM(B20:B29)+B31, poner la amortización en su propia línea por debajo del EBITDA y añadir 'EBIT' = EBITDA − amortización. Alternativa mínima: renombrar A34 a 'EBIT (resultado de explotación)' y añadir una fila 'EBITDA' = B34+B30."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "hoja 'P&L Mensual', B35",
+      "hallazgo": "El 'Margen EBITDA' es un ratio pero lleva formato de moneda: en pantalla el cliente lee «0,19 €» donde debería leer «18,6 %».",
+      "evidencia": "B35 = '=IF(B10=0,0,B34/B10)' con number_format '#,##0.00 €'. Evaluado con pycel = 0.18571428571428572. Las celdas de porcentaje del resto del libro (C6:C35, E5:E27) sí llevan '0.0%'.",
+      "fix": "Cambiar el number_format de B35 a '0.0%'."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "hoja 'P&L Mensual', C35",
+      "hallazgo": "La columna '% s/Ventas' se ha arrastrado una fila de más y divide un porcentaje entre la facturación, produciendo una celda sin ningún significado.",
+      "evidencia": "C35 = '=IF($B$10=0,0,B35/$B$10)' donde B35 ya es un ratio. Con pycel: C35 = 1.326530612244898e-06, que en formato 0,0% se pinta como «0,0%». (C34 además duplica el mismo dato que B35: ambos dan 0,1857.)",
+      "fix": "Vaciar C35 (o poner '=B35' si se quiere mantener el eco) y revisar el arrastre de la columna C, que también aplica a las filas separadoras C11, C16, C18, C33."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "hoja 'Turnos Semana', K5:K30 · Instrucciones!A7",
+      "hallazgo": "Instrucciones promete que «las horas y costes se calculan automáticamente», pero la columna 'Horas/Semana' está vacía sin fórmula y en todo el libro no existe ninguna columna, celda ni concepto de coste.",
+      "evidencia": "0 celdas con '=' en el libro. K4 = 'Horas/Semana' y K6 = None. max_column = 11 (A:K); no hay columna de €/hora ni de coste semanal. Instrucciones!A7 = '3. Las horas y costes se calculan automáticamente.'",
+      "fix": "Añadir una tabla de equivalencia turno→horas (M=8, T=8, P=10, L=0, V=0) y K6 = SUMPRODUCT((D6:J6=\"M\")*8+(D6:J6=\"T\")*8+(D6:J6=\"P\")*10). Añadir columna L '€/hora' y M 'Coste semana' = K6*L6, más una fila de total de coste de brigada."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "hoja 'Turnos Semana', validación de D6:J30 vs Instrucciones!A6",
+      "hallazgo": "El desplegable admite un quinto código, 'V', que las instrucciones no documentan. El usuario ve una opción cuyo significado no está en ninguna parte del fichero.",
+      "evidencia": "data_validation type='list', formula1='\"M,T,P,L,V\"' sobre D6:J30. Instrucciones!A6 = '2. Rellena los turnos (M=Mañana, T=Tarde, P=Partido, L=Libre).' — sólo cuatro códigos.",
+      "fix": "Documentar 'V=Vacaciones' en Instrucciones!A6 (y en la leyenda de la propia hoja) o retirar la V de la lista de validación."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "hoja 'Instrucciones' A1 vs hoja 'Turnos Semana' C6:C30",
+      "hallazgo": "El título anuncia una brigada de 25 personas y el cuadrante sólo tiene 24 puestos.",
+      "evidencia": "Instrucciones!A1 = 'Plantilla Turnos Brigada (25 personas)'. Puestos reales: C6:C20 = 15 de cocina (Chef Ejecutivo … Plonge 2) y C22:C30 = 9 de sala (Maître … Hostess) = 24. Las filas 5 y 21 son los separadores 'COCINA' y 'SALA'.",
+      "fix": "Añadir el puesto que falta (lo más coherente con una sala de 65 plazas: un segundo Hostess/Recepción o un Camarero Rango 5) o corregir el título a '(24 personas)'. De paso, numerar la columna A, que está vacía en A6:A30 mientras el resto de plantillas del producto sí numeran."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ubicacion": "hoja 'Gantt', F5:W34 · Instrucciones!A5",
+      "hallazgo": "Las instrucciones afirman que «cada fase tiene una barra de duración estimada» y la rejilla de 18 meses está completamente vacía; ni siquiera está marcada como editable (el verde llega sólo hasta la columna E), así que el cliente no sabe si debe rellenarla él.",
+      "evidencia": "0 fórmulas en el libro. Relleno 00E8F5E9 = 96 celdas, todas en B6:E34 (Responsable/Estado/Inicio/Fin); F:W sin relleno y sin valores. Instrucciones!A5 = '1. Cada fase tiene una barra de duración estimada.'",
+      "fix": "Precargar las barras por fase (p. ej. Fase 1 M1-M3, Fase 2 M3-M6, Fase 3 M6-M12, Fase 4 M11-M14, Fase 5 M14-M17, Fase 6 M18) o generarlas con formato condicional a partir de D/E: regla de fórmula =Y(F$4>=$D6;F$4<=$E6) con relleno sólido sobre F6:W34."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ubicacion": "hoja 'Gantt', D5:E34",
+      "hallazgo": "Las columnas 'Inicio' y 'Fin' de un cronograma no tienen formato de fecha ni validación: quedan como texto libre y no se pueden restar ni ordenar.",
+      "evidencia": "D4='Inicio', E4='Fin'; las celdas D6:E34 tienen number_format 'General' y no hay data_validation de tipo date en la hoja (la única DV es la lista de Estado en C6:C34).",
+      "fix": "Aplicar number_format 'dd/mm/yyyy' a D6:E34 y una validación de fecha, y añadir una columna 'Días' = E6-D6 con formato número."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "checklist-appcc.xlsx, checklist-contratacion.xlsx, checklist-diseno-sala.xlsx, checklist-equipamiento-cocina.xlsx, checklist-inspeccion-michelin-repsol.xlsx, checklist-legal.xlsx, checklist-marketing-preapertura.xlsx, checklist-vajilla-cristaleria.xlsx",
+      "ubicacion": "hoja 'Sheet', columna G ('Coste Est. (€)') de los 8 ficheros",
+      "hallazgo": "Los ocho checklists traen importes reales precargados en la columna de coste y ninguno tiene una sola fórmula: no hay fila TOTAL. El cliente que compra la guía para presupuestar su apertura tiene que sumar 313 partidas a mano.",
+      "evidencia": "openpyxl: 0 celdas con '=' en los 8 libros. Sumando la columna G a mano: equipamiento-cocina 112.070 €, diseño-sala 108.200 €, vajilla-cristalería 30.230 €, legal 23.980 €, marketing-preapertura 22.800 €, michelin-repsol 11.000 €, appcc 3.400 €, contratación 1.610 €. Ninguno de esos totales aparece en el fichero.",
+      "fix": "Añadir en cada checklist una fila TOTAL justo debajo del último ítem con '=SUM(G5:G<último>)' en formato '#,##0.00 €', y de paso una celda '% completado' = COUNTIF(F5:F<n>;\"Completado\")/CONTARA(F5:F<n>)."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "checklist-legal.xlsx (y los otros 7 checklists)",
+      "ubicacion": "hoja 'Sheet', columna E ('Fecha Límite') y columna F ('Estado')",
+      "hallazgo": "La columna de fecha límite no tiene formato de fecha ni validación —queda como texto—, y el desplegable de Estado no va acompañado de ningún formato condicional, así que en una lista de 45 ítems no se distingue de un vistazo lo completado de lo pendiente.",
+      "evidencia": "En los 8 ficheros, E5:E<n> tienen number_format 'General' y no hay validación de fecha; la única DV es la lista '\"Pendiente,En Curso,Completado\"' sobre F5:F<n>. ws.conditional_formatting está vacío en los 18 xlsx del producto.",
+      "fix": "number_format 'dd/mm/yyyy' + validación de fecha en E5:E<n>; formato condicional por texto exacto sobre F5:F<n> (Completado verde, En Curso ámbar, Pendiente gris)."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "budget-bodega.xlsx",
+      "ubicacion": "hoja 'Bodega', columna J ('Rotación/Mes') vs Instrucciones!A6",
+      "hallazgo": "Instrucciones dice que «el margen y la rotación se calculan automáticamente». El margen sí; la rotación es una celda verde de entrada manual sin ninguna fórmula detrás.",
+      "evidencia": "Las 100 fórmulas del libro son G5:G54 ('=F5-E5') y H5:H54 ('=IF(E5=0,0,(F5-E5)/E5)'). J5 tiene value=None, fill=00E8F5E9, number_format '#,##0'. Instrucciones!A6 = '2. El margen y la rotación se calculan automáticamente.'",
+      "fix": "O bien añadir una columna 'Uds vendidas/mes' y calcular J5 = IF(I5=0;0;<vendidas>/I5), o corregir Instrucciones!A6 a 'El margen se calcula automáticamente; la rotación se introduce a mano'."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "budget-bodega.xlsx",
+      "ubicacion": "hoja 'Bodega', fin de tabla (max_row = 54) y columnas E/I",
+      "hallazgo": "Un fichero llamado 'Budget de Bodega' no valora la bodega: no hay fila de totales ni columna que multiplique coste × stock, de modo que no se puede saber cuánto dinero hay inmovilizado en vino ni cuánto vale a PVP.",
+      "evidencia": "ws.max_row = 54 (última referencia, sin fila TOTAL debajo). Existen E 'Coste (€)' e I 'Stock (uds)' pero ninguna fórmula los cruza; las 100 fórmulas son sólo G (margen €) y H (margen %) por línea.",
+      "fix": "Añadir columna K 'Valor stock coste (€)' = E5*I5 y L 'Valor stock PVP (€)' = F5*I5, y una fila 56 TOTAL con SUM de E, K y L más el margen medio ponderado."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "media",
+      "fichero": "budget-bodega.xlsx",
+      "ubicacion": "hoja 'Bodega', H5:H54",
+      "hallazgo": "La columna rotulada 'Margen (%)' calcula markup sobre coste, no margen sobre PVP. En bodega, donde los multiplicadores son de ×3, la celda devuelve valores como 200 % que un margen no puede tener y que no son comparables con el food cost del resto del producto.",
+      "evidencia": "H5 = '=IF(E5=0,0,(F5-E5)/E5)' con formato 0.0%. Con coste 10 € y PVP 30 € devuelve 2,0 → «200,0 %». El margen sobre venta sería (30-10)/30 = 66,7 %.",
+      "fix": "Renombrar H4 a 'Markup s/coste (%)' y añadir una columna 'Margen s/PVP (%)' = IF(F5=0;0;(F5-E5)/F5), que es la que se compara con los objetivos de coste de bebida de la guía."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "media",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja 'Escandallo', H4 y H28",
+      "hallazgo": "'Food Cost Objetivo' se presenta como celda editable (relleno verde) pero es la CADENA de texto '28%' y el PVP sugerido lleva 0.28 escrito a fuego. Cambiar el objetivo a 30 % no altera el resultado, y el cliente no tiene forma de saberlo.",
+      "evidencia": "H4: value='28%' (tipo str), number_format='General', fill=00E8F5E9. H28 = '=H27/0.28' — no referencia H4. Comprobado con pycel: e.evaluate('Escandallo!H4') devuelve la cadena '28%'.",
+      "fix": "Poner H4 = 0,28 como número con formato '0%' y cambiar H28 a '=IF(H4=0;0;H27/H4)'. Actualizar también la etiqueta G28, que hoy dice 'PVP Sugerido (28%):' y debe pasar a 'PVP Sugerido:' para no fijar el porcentaje en el texto."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "media",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja 'Escandallo', A4 y G4",
+      "hallazgo": "Las dos etiquetas de la cabecera de la ficha aparecen cortadas en pantalla: están en columnas estrechas y la celda contigua está ocupada, así que el texto no puede desbordar. Es lo primero que ve el cliente al abrir el fichero.",
+      "evidencia": "A4 = 'Nombre del plato:' (17 caracteres) en la columna A con width=5.0 y wrap_text=None, con B4:D4 combinada a su derecha (una celda combinada bloquea el desbordamiento aunque esté vacía). G4 = 'Food Cost Objetivo:' (19 caracteres) en la columna G con width=14.0 y H4 ocupada con '28%'.",
+      "fix": "Combinar A4:B4 para la etiqueta y usar C4:D4 como campo de entrada del nombre del plato; ensanchar G a 22 o combinar F4:G4. Alternativa rápida: mover ambas etiquetas a la fila 3 sobre sus campos."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "media",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "libro completo (2 hojas) vs Instrucciones!A5",
+      "hallazgo": "El 'Escandallo Maestro' contiene UNA sola ficha técnica, sin hoja plantilla que duplicar ni instrucción de cómo hacerlo, pese a pedir una ficha por plato. Un menú degustación de fine dining tiene 15-25 elaboraciones.",
+      "evidencia": "wb.sheetnames = ['Instrucciones', 'Escandallo']; la hoja Escandallo tiene un único bloque A6:I28 (20 líneas de ingrediente y un solo par COSTE TOTAL / PVP Sugerido). Instrucciones!A5 = '1. Crea una ficha técnica por plato del menú.'",
+      "fix": "Renombrar la hoja a 'Ficha (plantilla)' y añadir un paso a Instrucciones: 'clic derecho sobre la pestaña → Mover o copiar → Crear una copia, y renómbrala con el nombre del plato'. Mejor aún: añadir una hoja 'Resumen' que consolide coste y PVP de cada ficha."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "media",
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ubicacion": "hoja 'Menu Engineering', D5:D29",
+      "hallazgo": "La columna 'Uds Vendidas' está formateada como moneda: las unidades de un plato se muestran en euros.",
+      "evidencia": "D4 = 'Uds Vendidas' y D5 number_format = '#,##0.00 €'. Un valor de 120 unidades se pinta «120,00 €».",
+      "fix": "number_format '#,##0' en D5:D29."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "media",
+      "fichero": "pl-mensual-escenarios.xlsx y calculadora-ticket-medio.xlsx",
+      "ubicacion": "'Escenarios' B6:D7, B10:D11, B22:D22 · 'Ticket Medio' B5:D5, B7:D7, B9:D9, B11:D11, B13:D13, B17:D17, B19:D19",
+      "hallazgo": "El formato de moneda se ha aplicado en bloque a toda la rejilla, incluidas las filas que son porcentajes o recuentos. El cliente ve «Food cost (%) 30,00 €», «Cubiertos/día 45,00 €» y «Días abierto/mes 24,00 €».",
+      "evidencia": "En 'Escenarios': B6 ('Cubiertos/día comida') y B11 ('Food cost (%)') y B22 ('Margen EBITDA (%)') tienen todos number_format '#,##0.00 €'. En 'Ticket Medio': B5 ('% comensales menú degustación largo') y B11 ('% comensales con maridaje vinos') igual, '#,##0.00 €'.",
+      "fix": "Aplicar '0.0%' a las filas de porcentaje (Escenarios 11 y 22; Ticket Medio 5, 7, 9, 11, 13) y '#,##0' a las de recuento (Escenarios 6, 7, 10; Ticket Medio 17, 19), dejando el € sólo en las filas de importe."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "media",
+      "fichero": "plan-financiero-3-anos.xlsx y calculadora-capex.xlsx",
+      "ubicacion": "'Inversión' B5:B26 (22 conceptos) vs 'CAPEX' B5:B16 (12 categorías)",
+      "hallazgo": "El producto entrega dos desgloses de CAPEX distintos e irreconciliables, sin ninguna referencia cruzada entre libros. Quien rellene uno tiene que volver a introducir todo en el otro, y los conceptos no mapean 1:1 (p. ej. 'Equipamiento cocina caliente' + 'cocina fría' + 'Pastelería y obrador' + 'Zona de pase' + 'Plonge' + 'Almacenamiento' del primero frente a un único 'Equipamiento cocina profesional' del segundo).",
+      "evidencia": "plan-financiero-3-anos.xlsx!'Inversión' A5:A26 numera 22 conceptos con C27 = '=SUM(C5:C26)'. calculadora-capex.xlsx!'CAPEX' A5:A16 numera 12 con C17/D17/E17/F17 = SUM. Ninguna fórmula de un libro referencia al otro.",
+      "fix": "Decidir cuál es la fuente única. Lo más limpio: dejar calculadora-capex como la hoja de rangos de mercado y hacer que la columna 'Presupuesto' de plan-financiero!'Inversión' se rellene desde ella (o fundir ambas en un solo libro con una hoja 'Rangos' y otra 'Mi CAPEX')."
+     },
+     {
+      "id": "TEC-27",
+      "severidad": "media",
+      "fichero": "calculadora-capex.xlsx",
+      "ubicacion": "hoja 'CAPEX', C17/D17/E17 vs astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts:67",
+      "hallazgo": "Los totales que calcula la propia herramienta no encajan con la horquilla de inversión que la landing vende como cifra de referencia del producto.",
+      "evidencia": "Evaluado con pycel: C17 (rango bajo) = 373.000 €, D17 (medio) = 703.000 €, E17 (alto) = 1.275.000 €. La landing dice 'Inversión 500K-900K€' (guia-restaurante-gastronomico.ts:67). Ni el suelo (373 K < 500 K) ni el techo (1,275 M > 900 K) coinciden.",
+      "fix": "Alinear ambos: o ajustar los rangos por categoría de C5:E16 para que sus sumas caigan en 500-900 K€, o corregir el texto de la landing a la horquilla real que produce la calculadora (≈370 K – 1,3 M€, con el escenario medio en 700 K€)."
+     },
+     {
+      "id": "TEC-28",
+      "severidad": "media",
+      "fichero": "los 8 checklist-*.xlsx",
+      "ubicacion": "hoja única, nombre de pestaña y pie de página",
+      "hallazgo": "Escape de la Fase A: los 8 checklists son los únicos xlsx del producto sin la línea 'Versión 1.1 · agosto 2026 …' y sin hoja 'Instrucciones', y su pestaña conserva el nombre por defecto 'Sheet'. Los otros 10 ficheros llevan las tres cosas.",
+      "evidencia": "Barrido de la cadena 'Versi' en los 18 libros: los 10 ficheros con hoja 'Instrucciones' la tienen en A10/A11/A13; los 8 checklists devuelven 'SIN LINEA DE VERSION'. wb.sheetnames de todos ellos = ['Sheet']. (La metadata de documento sí está bien: creator='AI Chef Pro', title y description correctos.)",
+      "fix": "Renombrar la pestaña al nombre del checklist ('Legal', 'APPCC', 'Equipamiento'…) y añadir la línea de versión en la fila combinada del pie, que ya existe (p. ej. checklist-legal A46 hoy sólo lleva la marca)."
+     },
+     {
+      "id": "TEC-29",
+      "severidad": "baja",
+      "fichero": "los 18 .xlsx del producto",
+      "ubicacion": "todas las hojas",
+      "hallazgo": "Ningún libro del producto usa formato condicional. En un pack financiero eso significa que una desviación de CAPEX del +60 %, un EBITDA negativo o un flujo acumulado en rojo se ven exactamente igual que un dato sano.",
+      "evidencia": "Recorriendo ws.conditional_formatting._cf_rules en las 30 hojas de los 18 libros: 0 reglas. Candidatos evidentes sin marcar: plan-financiero!'Inversión' E5:E27 (desviación %), 'P&L Mensual' B34/B35 (EBITDA), cash-flow B21:M22, budget-bodega H5:H54.",
+      "fix": "Escala de color o regla de valor sobre las columnas de desviación y margen (rojo por debajo de 0, ámbar en el umbral, verde por encima) y regla de texto sobre las columnas 'Estado'."
+     },
+     {
+      "id": "TEC-30",
+      "severidad": "baja",
+      "fichero": "los 18 .xlsx del producto",
+      "ubicacion": "todas las hojas (ws.protection.sheet = False)",
+      "hallazgo": "Ninguna hoja está protegida ni desbloquea selectivamente las celdas verdes. Basta con arrastrar una entrada sobre una columna calculada para borrar las fórmulas —y como no hay formato condicional ni avisos, el fichero seguirá dando un número, sólo que equivocado.",
+      "evidencia": "ws.protection.sheet = False en las 30 hojas. Zonas expuestas: escandallo G7:H26 y H27:H28, plan-financiero 'Inversión' E5:E27 y 'P&L Mensual' B10/B15/B17/B32/B34, menu-engineering G5:G29, budget-bodega G5:H54.",
+      "fix": "Marcar como desbloqueadas sólo las celdas con relleno E8F5E9 y activar la protección de hoja sin contraseña (permitiendo seleccionar celdas), que es el patrón habitual en plantillas comerciales."
+     }
+    ]
+   },
+   "dominio": {
+    "lente": "Consultor/a de aperturas de restaurantes en España — realismo de cifras (inversión, márgenes, ratios, plantillas, licencias, proveedores), vigencia legal y económica, y si con estos ficheros se puede montar el negocio de verdad",
+    "veredicto": "no listo",
+    "motivo": "Con la lente de un consultor de aperturas, este producto de 85 € no sostiene una apertura real y en varios puntos la empeora. Tres bloques de problemas. (1) ECONOMÍA ROTA EN EL NÚCLEO: el coste de personal que da el libro (250-450 k cocina + 200-350 k sala «incluyendo SS ~30 %») no incluye la SS —sumando su propia tabla de puestos y multiplicando por 1,30 sale 556-1.005 k€/año—, y sobre esa base el «fondo de maniobra 6 meses» de 60.000-200.000 € no cubre ni 4 meses de la nómina más barata, justo la partida que su propio Consejo del Chef llama «la que más se subestima». La palabra IVA no aparece ni una vez en los 22 ficheros: ni en el PVP de escandallo y vinos, ni el soportado del CAPEX (100-190 k€ de tesorería adelantada), ni la liquidación del 303 en el cash flow. Y no hay ni una línea de financiación (préstamo, intereses, servicio de deuda) ni de contrato de arrendamiento (fianza, traspaso, carencia de obra) en ningún entregable ni en el Gantt. (2) HERRAMIENTAS QUE NO CALCULAN LO QUE PROMETEN: el «Plan Financiero 3 Años» no tiene pestaña de 3 años (sus propias Instrucciones la anuncian); el P&L de 3 escenarios y la Calculadora de Ticket Medio tienen 0 fórmulas y 0 valores; el «Cash Flow y Break-Even» no tiene fila de break-even ni acumulado calculado; el Menu Engineering no clasifica nada; en el escandallo la merma no afecta al coste y el PVP sugerido no divide por raciones. (3) CONTENIDO LEGAL CADUCO O ERRÓNEO: «licencia C3» presentada como requisito nacional cuando es nomenclatura de Madrid, «Libro de visitas de la Inspección de Trabajo» suprimido en 2015, dos salarios por debajo del SMI, un APPCC sin congelación preventiva de anisakis pese a listar ceviches y tartares, y un cuadrante de turnos que no vale como registro de jornada. Súmese que el PDF prometido con «80+ páginas» tiene 10 y 2.488 palabras, con cuatro tablas descolgadas detrás del copyright. Antes de seguir vendiéndolo hay que reparar los seis xlsx de cálculo, corregir los bloques legal/laboral y recalibrar landing y dashboard a lo que el producto entrega.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 4 tabla 0 fila «Fondo de maniobra (3-6 meses)» · calculadora-capex.xlsx!CAPEX!B15:E15 · plan-financiero-3-anos.xlsx!Inversión!B26",
+      "hallazgo": "El fondo de maniobra presupuestado (60.000 / 120.000 / 200.000 €) no cubre ni la mitad de 6 meses de la plantilla que el propio libro describe. Es la partida que hunde aperturas y el producto la infradota por un factor de 2 a 5.",
+      "evidencia": "El docx declara «Fondo de maniobra (3-6 meses) | 60.000€ | 120.000€ | 200.000€» y el consejo del cap. 4 dice «Un gastronómico tarda 6-12 meses en alcanzar velocidad de crucero». Pero las tablas 2 y 3 del mismo docx dan una plantilla de 22-30 personas cuyo coste real con SS (×1,30) es 556.400-1.004.900 €/año, es decir 46.400-83.700 €/mes SOLO en nóminas. Seis meses = 278.000-502.000 €. El escenario alto (200.000 €) no llega a 4 meses de la nómina más barata, y eso sin alquiler (el propio cap. 7 lo cifra en 8-12 % de la facturación), sin materia prima ni suministros.",
+      "fix": "Recalcular la partida como «6-9 meses de coste operativo total» a partir de la nómina real con SS + alquiler + suministros + stock: rango 350.000-600.000 €. Cambiar «(3-6 meses)» a «(6-9 meses)» en las tres ubicaciones y añadir en el plan-financiero una celda que lo calcule = (Total costes fijos mensuales + coste variable estimado) × meses, en vez de un importe tecleado."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 13 párrafo 140 y cap. 14 párrafo 143 (tablas 2 y 3)",
+      "hallazgo": "Los costes de personal declarados NO incluyen la Seguridad Social pese a afirmar explícitamente que sí. El mayor coste del negocio está infravalorado entre un 13 % y un 25 %.",
+      "evidencia": "Cap. 13: «Coste total anual personal cocina: 250.000-450.000€ (incluyendo SS empresa ~30%)». Sumando la tabla 2 en su configuración mínima: 35.000 (Chef) + 28.000 (Sous) + 3×22.000 + 4×18.000 + 2×16.000 + 1×15.000 = 248.000 € de salario BRUTO — exactamente la cifra declarada como «incluyendo SS». Con SS son 322.400 €. Máximo: 463.000 € brutos → 601.900 € con SS, frente a los 450.000 € declarados. Cap. 14 igual: mínimo 180.000 € brutos → 234.000 € con SS frente a 200.000 € declarados; máximo 310.000 € → 403.000 € frente a 350.000 €.",
+      "fix": "Sustituir por «Coste total anual personal cocina: 322.000-602.000 € (incluyendo SS empresa ~30 %)» y «personal sala: 234.000-403.000 €». Añadir bajo cada tabla la fila «Total bruto» y «Total con SS (×1,31)» para que el lector vea el cálculo. Revisar de paso el porcentaje: la cotización empresarial real en 2026 está en 31-33 % con el MEI, no en 30 %."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "todos los entregables",
+      "ubicacion": "escandallo-maestro.xlsx!Escandallo!H28 · budget-bodega.xlsx!Bodega!G:H · cash-flow-break-even.xlsx!Cash Flow 12 Meses · guia-restaurante-gastronomico.docx cap. 12 y 15",
+      "hallazgo": "La palabra IVA no aparece ni una sola vez en los 22 ficheros. Un producto que enseña a fijar PVP, a montar un P&L y un cash flow de apertura sin mencionar el IVA induce a errores de precio del 10 % y omite la principal causa de asfixia de tesorería en una apertura.",
+      "evidencia": "Barrido con regex \\bIVA\\b sobre el texto completo de los 14 xlsx, los 3 docx y el PDF: cero coincidencias (tampoco «impuesto», «intereses»; «fiscal» solo aparece como categoría en checklist-legal). Sin embargo el producto fija precios: escandallo H28 = H27/0,28; cap. 12 «Multiplicador estándar ×2,5 a ×3,5 sobre coste»; cap. 15 «Carta: entrantes 18-28€, principales 32-48€». En España el precio de carta lleva el 10 % de IVA incluido, así que un plato con coste 10 € vendido a 35,71 € (=10/0,28) tiene un food cost real del 30,8 %, no del 28 %. Y el cash flow a 12 meses no tiene ninguna fila de IVA: ni el soportado del CAPEX (sobre 500-900 k€ son 105-189 k€ que hay que adelantar y esperar a recuperar) ni la liquidación trimestral del modelo 303.",
+      "fix": "(1) Declarar en escandallo y menu-engineering que los PVP son SIN IVA y añadir una columna «PVP con IVA (10 %)» = PVP×1,1. (2) Añadir al cash-flow tres filas: «IVA soportado», «IVA repercutido» y «Liquidación 303 (trimestral)». (3) Añadir un epígrafe al cap. 4 sobre el IVA del CAPEX como necesidad de tesorería, con su plazo de devolución."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja «Escandallo», celdas G7:G26 y H7:H26",
+      "hallazgo": "La columna de merma no afecta al coste: es decorativa. El escandallo calcula el coste sobre la cantidad tecleada sin corregir por rendimiento, así que quien introduzca el gramaje del plato (lo natural en una ficha técnica) infravalora el coste tanto como la merma que haya puesto.",
+      "evidencia": "G7 = '=D7*(1-F7)' (Cantidad Neta) y H7 = '=D7*E7' (Coste). H no referencia nunca a G ni a F. Con un lomo de merluza a 22 €/kg, 0,180 kg y 40 % de merma, la hoja da coste 3,96 € cuando el coste real de servir 180 g netos es 0,180/0,6 × 22 = 6,60 €: un 67 % de desviación en la partida de pescado. La columna G queda calculada y sin uso en ninguna fórmula del libro.",
+      "fix": "Invertir el sentido: renombrar D como «Cantidad Neta (ración)», G como «Cantidad Bruta a comprar» con G7 = '=IF(F7>=1,0,D7/(1-F7))' y H7 = '=G7*E7'. Añadir validación que impida F ≥ 1."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja «Escandallo», celdas E4 (Raciones) y H28 (PVP Sugerido)",
+      "hallazgo": "El PVP sugerido no divide entre el número de raciones: la celda «Raciones» no la usa ninguna fórmula. Una ficha de 4 raciones devuelve un PVP cuatro veces superior al correcto.",
+      "evidencia": "E4 rotula «Raciones:» y queda huérfana — ninguna fórmula del libro la referencia. H27 = '=SUM(H7:H26)' es el coste de TODA la elaboración y H28 = '=H27/0.28' lo convierte directamente en PVP. Para una ficha de fondo oscuro de 10 raciones con 60 € de coste, la hoja propone un PVP de 214,29 € por plato en lugar de 21,43 €.",
+      "fix": "H28 = '=IF($E$4=0,0,H27/$E$4/$H$4)' y añadir una celda intermedia «Coste por ración = H27/E4», que es el dato que después alimenta el menu-engineering."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "libro completo: hojas «Instrucciones», «Inversión», «P&L Mensual»",
+      "hallazgo": "El fichero se llama «Plan Financiero 3 Años» y sus propias instrucciones anuncian una pestaña de proyección a 3 años que NO existe. El producto entero se vende sobre esa proyección.",
+      "evidencia": "Instrucciones!A9 dice literalmente «5. La pestaña 'Proyección 3 Años' extrapola con crecimiento anual», pero el libro solo tiene tres hojas: Instrucciones, Inversión y P&L Mensual (un único mes, sin columnas de meses ni de años). La landing lo repite en el cap. 04 («proyecciones a 3 años») y el business-plan-modelo.docx §7 pide al usuario «Cuenta de resultados previsional (3 años)» remitiendo a una herramienta que no la tiene.",
+      "fix": "Crear la hoja «Proyección 3 Años» con columnas Año 1/2/3, filas enlazadas al P&L Mensual (×12) y celdas verdes de crecimiento anual de ventas y de inflación de costes; o renombrar el producto y corregir instrucciones, dashboard y landing."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ubicacion": "hoja «Escenarios», filas 6-14 (parámetros) y 17-22 (resultados)",
+      "hallazgo": "Hoja completamente inerte: 0 fórmulas y 0 valores. Las seis filas de RESULTADOS son etiquetas de texto. No calcula ningún escenario.",
+      "evidencia": "Volcado completo de la hoja: A17 'Facturación mensual (€)', A18 'Coste materia prima (€)', A19 'Margen bruto (€)', A20 'Costes fijos totales (€)', A21 'EBITDA mensual (€)', A22 'Margen EBITDA (%)' — las columnas B, C y D (Pesimista/Realista/Optimista) están vacías en las 22 filas. Instrucciones!A7 promete «3. Los resultados se calculan automáticamente» y el dashboard (GuiaRestauranteGastronomicoDashboard.tsx:29) vende «Pesimista, realista y optimista con fórmulas encadenadas».",
+      "fix": "B17 = '=(B6*B8+B7*B9)*B10'; B18 = '=B17*B11'; B19 = '=B17-B18'; B20 = '=SUM(B12:B14)'; B21 = '=B19-B20'; B22 = '=IF(B17=0,0,B21/B17)', replicado en C y D, y precargar los tres escenarios con valores realistas (p. ej. realista: 25/35 cubiertos, 65/110 €, 22 días, 28 % FC)."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ubicacion": "hoja «Ticket Medio», filas 5-20",
+      "hallazgo": "No es un simulador: es una tabla en blanco. 0 fórmulas y 0 valores, incluida la celda que da nombre al fichero («TICKET MEDIO PONDERADO»).",
+      "evidencia": "A16 'TICKET MEDIO PONDERADO (€)', A18 'Facturación diaria (€)' y A20 'Facturación mensual (€)' están vacías en las columnas B, C y D de los tres escenarios. Instrucciones!A6 promete «2. Calcula el ticket medio ponderado y la facturación estimada» y el dashboard (línea 34) lo llama «Simulador de escenarios según mix de menús y vinos».",
+      "fix": "B16 = '=B5*B6+B7*B8+B9*B10+B11*B12+B13*B14'; B18 = '=B16*B17'; B20 = '=B18*B19'. Añadir una celda de control '=B5+B7+B9' con formato condicional que avise si el mix de comensales no suma 100 %. Precargar un escenario realista coherente con el cap. 15 (menú largo 130 €, corto 75 €, maridaje 60 €)."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "hoja «Cash Flow 12 Meses», filas 10, 19, 21 y 22",
+      "hallazgo": "El break-even que da nombre al fichero no existe en ninguna celda, y las cuatro filas de resultado (Total Ingresos, Total Gastos, Flujo Neto, Flujo Acumulado) están sin fórmula en los 12 meses. Las únicas 10 fórmulas del libro son los SUM de la columna anual de líneas individuales.",
+      "evidencia": "Filas A10 'Total Ingresos', A19 'Total Gastos', A21 'FLUJO DE CAJA NETO' y A22 'FLUJO ACUMULADO' no tienen contenido en B:N. No hay ninguna fila, celda ni hoja de punto de equilibrio. Instrucciones!A6: «2. El cash flow acumulado y el break-even se calculan automáticamente». Dashboard línea 30: «12 meses de cash flow + punto de equilibrio automático». Landing línea 107: «punto de equilibrio calculado».",
+      "fix": "B10 = '=SUM(B6:B9)'; B19 = '=SUM(B13:B18)'; B21 = '=B10-B19'; B22 = '=B21' y C22 = '=B22+C21' arrastrado hasta M. Añadir un bloque «Break-even» con costes fijos mensuales, margen de contribución (%) y umbral de ventas = CF/MC, más el mes en que el flujo acumulado cruza a positivo (MATCH)."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "alta",
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ubicacion": "hoja «Menu Engineering», columnas D y H (filas 5-29)",
+      "hallazgo": "La columna «Clasificación» está vacía en las 25 filas y el libro no implementa nada del método Kasavana & Smith que anuncia en el título: no calcula el menu mix, ni el umbral de popularidad, ni el margen de contribución medio.",
+      "evidencia": "Las 25 fórmulas del libro son todas G = '=F-E' (margen unitario). H5:H29 sin fórmula. Instrucciones!A6: «2. La clasificación Stars/Plowhorses/Puzzles/Dogs se calcula automáticamente». Landing línea 126 (BONUS 5, valorado en 19 EUR): «Matrix automática Stars/Plowhorses/Puzzles/Dogs. Introduce tus platos, food cost y ventas, y obtén recomendaciones de pricing y carta al instante». El método requiere: mix% = uds/total uds, umbral = (1/nº platos)×0,70, y comparar el MC unitario con el MC medio ponderado; nada de eso está.",
+      "fix": "Añadir fila de totales (SUM D, y MC medio ponderado = SUMPRODUCT(D,G)/SUM(D)); columna «Mix %» = D5/$D$30; y H5 = '=IF(AND(mix>=umbral,G5>=MCmedio),\"Star\",IF(AND(mix>=umbral,G5<MCmedio),\"Plowhorse\",IF(AND(mix<umbral,G5>=MCmedio),\"Puzzle\",\"Dog\")))'. Añadir columna de acción recomendada por cuadrante."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 5, párrafo 49 y viñeta 51 · checklist-legal.xlsx fila 11 · cronograma-apertura-gantt.xlsx!Gantt!A13",
+      "hallazgo": "Se presenta la «licencia C3» como el requisito nacional de un restaurante en España cuando es nomenclatura del catálogo de la Comunidad de Madrid, y la definición que se le da contradice el modelo de cocina abierta que el propio producto recomienda.",
+      "evidencia": "Cap. 5: «Un restaurante gastronómico necesita licencia C3 (restaurante con cocina profesional completa separada físicamente del comedor)», y viñeta 51 «Licencia de Actividad (C3): proyecto técnico + tasas municipales (1.500-3.000€). Plazo: 4-8 meses». El mismo capítulo reconoce después que cada CCAA tiene su régimen (LEPAR en Madrid, Llei catalana, Nomenclátor andaluz), lo que desmiente que «C3» sea universal: en Cataluña, Andalucía o Valencia ese epígrafe no existe. Además la definición («cocina separada físicamente del comedor») choca con el Modelo 3 del cap. 3 («Barra/Counter, cocina abierta»), con el cap. 22 («Cocina abierta y counter dining») y con checklist-diseno-sala fila 8 (barra/counter 8.000 €), que el producto vende como tendencia.",
+      "fix": "Reescribir como «licencia de actividad clasificada de restaurante (epígrafe C3 en la Comunidad de Madrid; la denominación cambia por CCAA — consultar el catálogo autonómico)» y eliminar la coletilla de la separación física, sustituyéndola por los requisitos reales (extracción independiente, aseos, evacuación). Corregir igual la fila 11 del checklist-legal y A13 del Gantt."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "alta",
+      "fichero": "checklist-legal.xlsx",
+      "ubicacion": "hoja «Sheet», fila 33 (categoría Laboral)",
+      "hallazgo": "Se lista como trámite obligatorio el «Libro de visitas de la Inspección de Trabajo», suprimido hace más de una década. El cliente compra un cuaderno inútil y, peor, se le da una checklist legal caducada como si estuviera vigente.",
+      "evidencia": "Fila 33: «Laboral | Libro de visitas de la Inspección de Trabajo | Papelería | Pendiente | 20». La obligación de llevar libro de visitas desapareció con la Ley 23/2015 Ordenadora del Sistema de Inspección de Trabajo y su desarrollo (Orden ESS/1452/2016): desde entonces el inspector extiende diligencia y no existe libro que el empresario deba adquirir ni conservar.",
+      "fix": "Eliminar la fila 33 y sustituirla por trámites laborales que sí faltan y sí son obligatorios: «Comunicación de apertura del centro de trabajo a la autoridad laboral», «Registro retributivo (RD 902/2020, todas las empresas)» y «Protocolo de prevención del acoso sexual (LO 3/2007 art. 48, todas las empresas)». Revisar el resto del bloque legal con fecha y norma citada."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 13, tabla 2, filas «Ayudante de cocina» y «Plonge»",
+      "hallazgo": "Dos de los seis puestos de cocina se presupuestan por debajo del salario mínimo interprofesional. Una guía de apertura que publica esos rangos induce al comprador a planificar contratos ilegales.",
+      "evidencia": "Tabla 2: «Ayudante de cocina | 2-3 | 16.000-19.000€/ud» y «Plonge | 1-2 | 15.000-17.000€/ud». El SMI de 2025 ya era de 16.576 €/año (1.184 € × 14 pagas) y en 2026 es superior, de modo que el extremo inferior de ambos rangos es inferior al mínimo legal; además los convenios provinciales de hostelería fijan tablas por encima del SMI para esas categorías. El error se propaga al cálculo de coste total del capítulo y al fondo de maniobra.",
+      "fix": "Subir los suelos a la tabla del convenio provincial aplicable (nunca por debajo del SMI vigente) y añadir una nota: «Los importes son orientativos; el mínimo lo fija el convenio colectivo de hostelería de tu provincia, que prevalece sobre el SMI». Rehacer los totales del cap. 13 con los nuevos suelos."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "alta",
+      "fichero": "checklist-appcc.xlsx",
+      "ubicacion": "hoja «Sheet», bloque «Temperaturas» (filas 16-21) y bloque «PCC» (filas 38-41)",
+      "hallazgo": "El APPCC no contempla la congelación preventiva frente a anisakis, obligatoria en España, pese a que el propio libro sitúa ceviches y tartares en el cuarto frío. Es un riesgo sanitario y sancionador directo.",
+      "evidencia": "Barrido de los 22 ficheros: «anisakis» no aparece en ninguno. El bloque de Temperaturas del checklist cubre cámaras, cocción, recepción y enfriamiento, pero ninguna línea de congelación a −20 °C durante 5 días para pescado destinado a consumo en crudo, marinado, escabechado o salazón (RD 1420/2006). Y el cap. 8 del docx define expresamente «Cuarto frío: entrantes, ensaladas, tartares, ceviches», y el cap. 22 promociona los crudos y las fermentaciones.",
+      "fix": "Añadir al bloque Temperaturas: «Protocolo de congelación preventiva anisakis (−20 °C / 5 días o −35 °C / 15 h) para pescado de consumo en crudo, marinado o escabechado — RD 1420/2006», «Registro de lotes congelados preventivamente» e «Información al consumidor de que el pescado ha sido congelado». Añadir también la línea en el cap. 6 del docx."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "alta",
+      "fichero": "checklist-appcc.xlsx",
+      "ubicacion": "hoja «Sheet», bloque «PCC» (filas 38-41) frente a guia-restaurante-gastronomico.docx cap. 8 y checklist-equipamiento-cocina.xlsx filas 4 y 22",
+      "hallazgo": "El APPCC no tiene ni un control de cocción a baja temperatura ni de envasado al vacío, que son el proceso de mayor riesgo microbiológico del restaurante que este mismo producto diseña.",
+      "evidencia": "El checklist-equipamiento presupuesta «Envasadora al vacío profesional 2.500 €» (fila 4) y «Roner / sous-vide profesional 1.500 €» (fila 22); el cap. 8 del docx pone el roner en la partida de calientes. Pero el bloque PCC del checklist-appcc solo contiene cuatro líneas genéricas («Identificación de todos los PCC», «Límites críticos definidos», «Acciones correctivas documentadas», «Verificación mensual») sin un solo binomio tiempo-temperatura, sin validación de vida útil del envasado al vacío ni control de enfriamiento post-cocción prolongada.",
+      "fix": "Añadir un bloque «Cocción a baja temperatura / vacío»: tabla de binomios tiempo-temperatura validados por producto, registro de sonda por lote, enfriamiento a ≤10 °C en <2 h tras la cocción, etiquetado con vida útil justificada y validación documental del proceso. Es también lo que el inspector pide primero en un gastronómico con roner."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "alta",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "hoja «Turnos Semana», columnas D:J (Lun-Dom) y K (Horas/Semana), filas 6-30",
+      "hallazgo": "El cuadrante no calcula ni horas ni coste (las promete) y, sobre todo, no sirve como registro de jornada, que sí es obligatorio — y que el propio producto lista como obligación en otro fichero.",
+      "evidencia": "K5:K30 «Horas/Semana» sin ninguna fórmula (el libro tiene 0 fórmulas) y no existe columna de coste, pese a Instrucciones!A7 «3. Las horas y costes se calculan automáticamente» y al dashboard línea 36 «Cuadrante semanal para 25 personas con coste». Además el registro de jornada del art. 34.9 ET exige hora de inicio y fin de cada trabajador cada día: unas letras M/T/P/L en siete columnas no lo cumplen, y checklist-contratacion.xlsx fila 29 lo exige («Registro de jornada digital (obligatorio) | 100 €»). Tampoco hay control del descanso de 12 h entre jornadas ni de las 40 h semanales, críticos con turno partido y dos servicios.",
+      "fix": "Convertir cada día en dos columnas (entrada/salida) o añadir una hoja «Registro de jornada» con fecha, trabajador, hora inicio, hora fin y firma; K = SUM de horas del día; nueva columna «Coste semanal» = horas × coste/hora del puesto; y celdas de alerta si se superan 40 h/semana o no median 12 h entre jornadas."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 1 párrafo 12, cap. 4 párrafo 43 y tabla 0 · calculadora-capex.xlsx!CAPEX!C17:E17",
+      "hallazgo": "Hay tres cifras distintas de inversión total en el mismo producto, y los escenarios bajo y medio del CAPEX quedan desmentidos por los propios checklists de compra, que valen entre 2 y 4,6 veces más en las mismas partidas.",
+      "evidencia": "El texto afirma «La inversión inicial oscila entre 500.000€ y 900.000€» (caps. 1 y 4, y FAQ de la landing líneas 139 y 185); la tabla 0 del mismo capítulo totaliza 363.000 / 685.000 / 1.240.000 €; y calculadora-capex.xlsx suma 373.000 / 703.000 / 1.275.000 € (incluye dos partidas que la tabla del docx omite). Ninguna coincide con el rango publicitado. Y cruzando con los checklists tasados uno a uno: equipamiento de cocina suma 112.070 € frente a los 55.000 € del escenario bajo y los 90.000 € del medio; diseño de sala suma 108.200 € frente a 50.000 € (mobiliario + interiorismo) del bajo; vajilla suma 30.230 € frente a 15.000 €; marketing 22.800 € frente a 5.000 €; legal 23.980 € frente a los 8.000 € de «proyecto técnico + licencias».",
+      "fix": "Recalcular la tabla 0 a partir de los checklists (que son la fuente detallada) y alinear los tres escenarios con el rango publicitado; o al revés, marcar los checklists como «escenario alto». En cualquier caso una sola cifra: corregir caps. 1 y 4, tabla 0, calculadora-capex y las dos FAQ de la landing para que digan lo mismo."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.pdf",
+      "ubicacion": "documento completo (10 páginas); tablas en páginas 9-10",
+      "hallazgo": "El entregable principal tiene 10 páginas y 2.488 palabras frente a las «80+ páginas» que anuncian landing y dashboard, y además está roto de maquetación: las cuatro tablas se han descolgado al final, detrás del copyright, dejando tres capítulos convertidos en una sola frase.",
+      "evidencia": "pypdf: 10 páginas, 17.537 caracteres, 2.488 palabras para 22 capítulos (≈113 palabras por capítulo). La tabla CAPEX, la de equipamiento y las dos de brigada aparecen todas juntas en las páginas 9 y 10, después de la línea «AI Chef Pro · aichef.pro © 2026 Todos los derechos reservados», y sin encabezado que las identifique. Consecuencia: el cap. 4 pasa de «Desglose de inversión (CAPEX)» directamente al Consejo del Chef sin tabla; el cap. 9 queda reducido a «Presupuesto de equipamiento cocina completa para 65 plazas: 90.000-150.000€» y nada más; los caps. 13 y 14 quedan en una línea cada uno. Landing líneas 13, 23, 25 y 151 y dashboard línea 20: «22 capítulos, 80+ páginas».",
+      "fix": "Dos frentes. (1) Maquetación: anclar cada tabla dentro de su capítulo en el generador del PDF y verificar que ningún contenido queda tras el pie de cierre. (2) Volumen: o se amplía el contenido a la extensión prometida (los capítulos 9, 13, 14, 19 y 21 son los más delgados) o se cambia «80+ páginas» por la cifra real en los cuatro puntos de la landing y en el dashboard."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "alta",
+      "fichero": "business-plan-modelo.docx",
+      "ubicacion": "documento completo, §1 a §10",
+      "hallazgo": "No es una plantilla rellenable ni un modelo: es un índice con bullets de instrucciones. No tiene tablas, ni proyecciones, ni análisis de mercado, ni un solo dato del sector — justo lo que la landing dice que incluye y por lo que le pone un valor de 49 EUR.",
+      "evidencia": "66 párrafos, 10 headings, 0 tablas. El único hueco rellenable de todo el documento es «[Tu resumen ejecutivo aquí — es lo primero que lee el banco/inversor]»; el resto son enunciados de lo que el usuario debe escribir («Análisis del mercado gastronómico local y nacional», «Cuenta de resultados previsional (3 años)»). La landing (línea 122, BONUS 1, 49 EUR) promete que «Incluye resumen ejecutivo, proyecciones financieras a 3 años y análisis de mercado», y el testimonio de la línea 99 afirma «Lo presenté tal cual a mi banco y me aprobaron la financiación». Además §7 remite a una proyección a 3 años que la herramienta del producto no tiene (ver DOM-06).",
+      "fix": "Convertirlo en modelo real: tablas de inversión, P&L a 3 años y cash flow enlazadas a los xlsx, un caso de ejemplo completo de un gastronómico de 65 plazas con cifras (que es lo que un banco quiere ver), el análisis de mercado del cap. 2 ya redactado, y el análisis de riesgos con escenarios. Mientras no lo sea, retirar de la landing la promesa de proyecciones y análisis y el testimonio del «tal cual»."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "alta",
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "hoja «Sheet», fila 35 (Campana extractora 2.500 €) y ausencia del horno mixto en las 54 filas",
+      "hallazgo": "El checklist de equipamiento omite el horno mixto Rational (17.500 €, el equipo nº 1 del propio libro) y presupuesta la extracción en 2.500 € cuando el sistema completo hasta cubierta —que el mismo libro llama «obstáculo técnico número 1»— cuesta un orden de magnitud más.",
+      "evidencia": "Las 54 filas del checklist no contienen ningún horno combi: la única línea de horno es la 27, «Pastelería/Obrador | Horno de convección 10 GN | 6.000 €». Sin embargo la tabla 1 del docx abre con «Horno racional combi 10 GN | Rational iCombi Pro | 17.500€». La fila 35 es «Pase/Expedición | Campana extractora industrial | Instalador | 2.500», y no hay ninguna línea de conducto hasta cubierta, ventilador, silenciador, filtros ni aportación de aire, pese a que el cap. 5 dice «Salida de humos: conducto independiente hasta cubierta. Sin esto, no hay licencia C3» y el cap. 7 lo repite. Tampoco hay ninguna línea de instalación, transporte y puesta en marcha de la maquinaria (habitualmente 10-15 % del equipamiento), ni de sistema automático de extinción en campana (exigido por la aseguradora y por el CTE DB-SI con freidora, fila 24).",
+      "fix": "Añadir al checklist: «Horno mixto 10 GN (Rational o equivalente) 17.500 €», «Conducto de extracción hasta cubierta + ventilador + silenciador 12.000-30.000 €», «Sistema de aportación de aire 3.000-6.000 €», «Sistema automático de extinción en campana 2.500-4.000 €» e «Instalación, transporte y puesta en marcha (12 %)». Recalcular el total y contrastarlo con el rango 90.000-150.000 € del cap. 9."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "alta",
+      "fichero": "checklist-vajilla-cristaleria.xlsx",
+      "ubicacion": "hoja «Sheet», filas 1-17 (platos y cristalería)",
+      "hallazgo": "La dotación de vajilla y cristalería está dimensionada para un restaurante de plato único, no para el menú degustación con maridaje que el producto recomienda. Con estas cantidades no se puede dar un servicio a sala llena.",
+      "evidencia": "Para 65 plazas el checklist compra 80 copas de Borgoña + 80 de Burdeos + 80 de blanco + 60 de espumoso = 300 copas de vino. Pero el cap. 15 vende «Menú degustación largo (8-12 pases)» con «Maridaje vinos: 45-90€ adicional», y el cap. 12 llama al maridaje «la venta cruzada más rentable»: un maridaje de 5-7 vinos consume 5-7 copas por comensal, o sea 325-455 copas en un solo servicio de sala llena, sin margen para el lavado entre pases ni para el segundo servicio del día. Igual en vajilla: 100 platos llanos + 80 hondos + 80 de postre + 60 boles + 70 de petit fours ≈ 560 piezas para un menú de 8-12 pases que necesita ~650 piezas por servicio.",
+      "fix": "Redimensionar por el modelo de negocio: piezas = plazas × pases × 1,5 de rotación de lavado. Para 65 plazas y menú de 10 pases con maridaje de 6 vinos: ~450 copas de vino y ~900 piezas de vajilla, o bien declarar explícitamente que la dotación es para un servicio de carta y añadir una segunda columna «Menú degustación» con las cantidades correctas. Recalcular el presupuesto resultante contra los 15.000-65.000 € del cap. 11."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "alta",
+      "fichero": "todos los entregables",
+      "ubicacion": "plan-financiero-3-anos.xlsx!P&L Mensual!A19:A31 · cash-flow-break-even.xlsx!Cash Flow 12 Meses · cronograma-apertura-gantt.xlsx!Gantt",
+      "hallazgo": "No hay financiación en ninguna parte del producto: ni fuentes, ni préstamo, ni cuadro de amortización, ni intereses, ni servicio de deuda en el cash flow. Nadie abre un gastronómico de 500-900 k€ con fondos propios, y el break-even sin cuota de préstamo es un break-even falso.",
+      "evidencia": "Barrido de los 22 ficheros: «préstamo» y «financiación» solo aparecen en business-plan-modelo.docx §7 como enunciado de lo que el usuario debe escribir («Fuentes de financiación (fondos propios, préstamo, inversores)»); «intereses» no aparece en ningún fichero. El P&L Mensual va de INGRESOS a EBITDA (B34) y se detiene ahí: no hay filas de gastos financieros, amortización de deuda ni impuesto de sociedades. El cash flow a 12 meses tiene «Otros gastos» pero ninguna fila de cuota. El Gantt de 18 meses no tiene ninguna tarea de búsqueda o cierre de financiación.",
+      "fix": "Añadir al plan-financiero una hoja «Financiación» (importe, plazo, tipo, carencia, cuadro francés) y prolongar el P&L por debajo del EBITDA: −Amortización = EBIT, −Gastos financieros = BAI, −IS = Resultado neto. Enlazar la cuota al cash flow. Añadir al Gantt las tareas «Preparación del dossier bancario», «Negociación de financiación» y «Firma y disposición» en las fases 1-2."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "alta",
+      "fichero": "todos los entregables",
+      "ubicacion": "checklist-legal.xlsx (40 filas) · cronograma-apertura-gantt.xlsx!Gantt!A5:A9 (Fase 1) · guia-restaurante-gastronomico.docx cap. 7",
+      "hallazgo": "El contrato de arrendamiento no existe en el producto: ni fianza, ni traspaso, ni carencia de obra, ni duración ni cláusulas. Es el documento más caro de negociar en una apertura y su omisión, con una licencia de 4-8 meses por delante, cuesta medio año de renta pagada sobre un local cerrado.",
+      "evidencia": "Barrido de los 22 ficheros: «arrendamiento», «fianza», «traspaso» y «carencia» no aparecen en ninguno. El checklist-legal de 40 filas cubre constitución, licencias, sanidad, seguros, laboral, RGPD y fiscal, pero no tiene una sola línea de contrato de alquiler. La Fase 1 del Gantt es «Estudio de viabilidad / Búsqueda y selección de local / Constitución de sociedad / Contratación arquitecto», sin firma de contrato ni negociación de carencia, y la Fase 2 (licencia C3, «4-8 meses» según el cap. 5) va antes de la obra: son 6-10 meses de renta antes de facturar un euro. El cap. 7 solo habla del alquiler como porcentaje de la facturación («8-12 % en zona premium»).",
+      "fix": "Añadir al checklist-legal un bloque «Local»: informe de compatibilidad urbanística ANTES de firmar, contrato de arrendamiento de uso distinto de vivienda (duración, prórrogas, renta, actualización), fianza legal (2 mensualidades) y garantía adicional, carencia de renta durante obra y licencia, cláusula de cesión y traspaso, y condición suspensiva por denegación de licencia. Añadir esas tareas a la Fase 1 del Gantt y un epígrafe al cap. 7."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts",
+      "ubicacion": "líneas 94 y 99 (bloque de testimonios)",
+      "hallazgo": "Dos testimonios sintéticos con avatar de stock atribuyen un cargo institucional identificable y un resultado concreto que el entregable no puede producir. Es exposición legal por publicidad engañosa, además de motivo de reembolso.",
+      "evidencia": "Línea 94: «Ana Beltrán, Consultora gastronómica, ex-directora Guía Repsol» con avatar '/avatars/avatar-2.jpg'. La dirección de la Guía Repsol es un cargo real ocupado por personas identificables. Línea 99: «Pablo Fernández, Inversor, 3 restaurantes en Madrid y Valencia — El business plan modelo para bancos me ahorró 5.000€ en consultoría. Lo presenté tal cual a mi banco y me aprobaron la financiación», cuando el fichero es un índice de bullets con un único placeholder (ver DOM-19): presentarlo «tal cual» a un banco es imposible.",
+      "fix": "Retirar la atribución «ex-directora Guía Repsol» (sustituir por un rol genérico y no vinculable a una institución concreta) y reescribir el testimonio del business plan para que no afirme un resultado que el fichero no permite. Revisar en la misma pasada los otros testimonios del bloque (líneas 96 y 98) contra lo que los ficheros entregan realmente."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "alta",
+      "fichero": "manual-servicio-sala.docx",
+      "ubicacion": "documento completo, §1 a §7",
+      "hallazgo": "El «manual» son siete párrafos (~350 palabras) y no incluye el protocolo de alérgenos en sala que el propio APPCC del producto le asigna al maître. La landing lo valora en 39 EUR y un testimonio dice que «vale más que el precio de la guía entera».",
+      "evidencia": "26 párrafos, 7 headings, un párrafo por sección. Falta todo lo que un manual de sala de gastronómico necesita: mise en place de sala, secuencia del menú degustación (marcaje de cubiertos y cambio de copa por pase), temperaturas de servicio y decantación, timing entre pases, no-shows y prepago del menú, gestión de la cuenta, briefing pre-servicio. Sobre todo falta el protocolo de alérgenos, que checklist-appcc.xlsx fila 25 asigna expresamente al maître («Protocolo de gestión de alergia en servicio | Maître») y que es exigible por el Reglamento UE 1169/2011 y el RD 126/2015. Landing línea 123 (BONUS 2, 39 EUR) y línea 98 («vale más que el precio de la guía entera»).",
+      "fix": "Ampliar a un manual real por secuencia de servicio, empezando por el bloque de alérgenos (pregunta obligatoria en la toma de comanda, comunicación a cocina, marcaje del plato, servicio segregado, qué NO decir) y añadiendo mise en place, servicio del menú degustación pase a pase, política de no-show y briefing. Alinear después el valor declarado en la landing."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "hoja «P&L Mensual», celdas A30 (Amortización equipamiento) y B34 (EBITDA)",
+      "hallazgo": "El «EBITDA» está mal calculado por definición: resta la amortización, que es precisamente lo que la E de EBITDA excluye. La cifra que el usuario llevará al banco no es un EBITDA.",
+      "evidencia": "A30 'Amortización equipamiento' está dentro del bloque COSTES FIJOS (A19:A31), B32 = '=SUM(B20:B31)' lo incluye, y B34 'EBITDA' = '=B17-B32'. Es decir, EBITDA = Margen bruto − (costes fijos + amortización), lo que da un EBIT, no un EBITDA. El mismo error se arrastra a B35 'Margen EBITDA' y, por coherencia de rótulos, al pl-mensual-escenarios (A21 'EBITDA mensual').",
+      "fix": "Sacar la amortización del bloque de costes fijos: B32 = '=SUM(B20:B29)+B31'; B34 EBITDA = '=B17-B32'; añadir debajo B36 'Amortización' y B37 'EBIT = B34-B36'. Replicar la corrección en el pl-mensual-escenarios cuando se le pongan fórmulas (DOM-07)."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "media",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "hoja «P&L Mensual», celda C35",
+      "hallazgo": "La celda «% s/Ventas» del margen EBITDA divide un porcentaje entre la facturación total: devuelve un número sin significado que ensucia la columna de ratios.",
+      "evidencia": "B35 = '=IF(B10=0,0,B34/B10)' ya es el margen EBITDA en tanto por uno; C35 = '=IF($B$10=0,0,B35/$B$10)' lo vuelve a dividir entre el total de ingresos. Con 200.000 € de ventas y 30.000 € de EBITDA, B35 = 0,15 y C35 = 0,00000075 formateado como porcentaje.",
+      "fix": "Vaciar C35 (o poner '=B35') y aplicar el mismo criterio a cualquier otra fila que ya sea un ratio."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "media",
+      "fichero": "budget-bodega.xlsx",
+      "ubicacion": "hoja «Bodega», columna H (filas 5-54) y columna J (Rotación/Mes)",
+      "hallazgo": "Lo que la hoja llama «Margen (%)» es el markup sobre coste, no el margen; el error triplica la rentabilidad aparente de cada referencia. Y la rotación, que las instrucciones dicen que se calcula, es una columna vacía.",
+      "evidencia": "H5 = '=IF(E5=0,0,(F5-E5)/E5)' con rótulo «Margen (%)». Con un vino de coste 10 € y PVP de carta 30 €, la hoja muestra «200,0 %» cuando el margen bruto real sobre venta es del 66,7 % (y menos aún descontando el 10 % de IVA, ver DOM-03). J5:J54 «Rotación/Mes» no tiene ninguna fórmula, pese a Instrucciones!A6 «2. El margen y la rotación se calculan automáticamente» y al dashboard línea 33 («coste, PVP, margen, rotación, stock»). Tampoco hay fila de totales: un fichero llamado «Budget de Bodega» no suma el valor del inventario ni el margen medio.",
+      "fix": "Añadir columna «Multiplicador» = F/E y corregir H a '=IF(F5=0,0,(F5-E5)/F5)' con rótulo «Margen s/PVP (%)». Añadir columna «Uds vendidas/mes» y J = uds vendidas / stock medio. Añadir fila 55 de totales: valor de inventario a coste, a PVP y margen medio ponderado. Añadir también columnas que cualquier sommelier espera y no están: formato, añada, proveedor y ubicación/bin."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 2, párrafos 22 y 24",
+      "hallazgo": "El posicionamiento de España en el ranking mundial es incorrecto y las cifras de estrellas se dan con precisión de dato verificado, sin fuente ni fecha de corte, en un capítulo que se titula «2026».",
+      "evidencia": "«Con 306 restaurantes con Estrella Michelin (2026), es el tercer país del mundo tras Francia y Japón»: Italia supera a España en número de restaurantes estrellados, de modo que España no es tercera tras Francia y Japón. Y «12 restaurantes con 3 estrellas» está por debajo del número de tres estrellas que España acumula desde la edición 2024. Todo el bloque («más de 600 Soles», «factura más de 3.000 millones», «+12 % anual de turismo gastronómico») se presenta sin una sola fuente.",
+      "fix": "Verificar los cuatro datos contra la edición vigente de la Guía Michelin España y la Guía Repsol antes de cada actualización, citar fuente y fecha de corte en el propio capítulo («Datos: Guía Michelin España, edición 2026»), y corregir el ranking (o suavizarlo a «uno de los países con más restaurantes estrellados del mundo»)."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "media",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja «Escandallo», celdas H4 (Food Cost Objetivo 28 %) y H28",
+      "hallazgo": "El food cost objetivo es una celda editable que ninguna fórmula lee: el PVP sugerido lleva el 0,28 escrito a mano. El usuario cambia el objetivo y el resultado no se mueve.",
+      "evidencia": "G4 'Food Cost Objetivo:' con H4 = '28%', y H28 = '=H27/0.28' con rótulo 'PVP Sugerido (28%):'. Un restaurante que trabaje al 32 % (el propio cap. 3, Modelo 2, dice «Food cost 28-32%») pondrá 32 % en H4 y seguirá viendo el PVP calculado al 28 %, un 14 % por encima del que busca.",
+      "fix": "H28 = '=IF($H$4=0,0,H27/$E$4/$H$4)' (ver también DOM-05) y sustituir el rótulo fijo por '=\"PVP Sugerido (\"&TEXT($H$4,\"0%\")&\"):\"'."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "media",
+      "fichero": "manual-servicio-sala.docx",
+      "ubicacion": "§4 Servicio de Platos y §3 Servicio de Vinos",
+      "hallazgo": "El manual con el que se va a formar a la brigada de sala enseña la regla de servicio invertida para plato emplatado, y mantiene un protocolo de género obsoleto.",
+      "evidencia": "§4: «Servir por la izquierda, retirar por la derecha». En servicio emplatado —el único que se usa en un menú degustación de 8-12 pases, que es el modelo que vende este producto— el plato se sirve y se retira por la derecha; la izquierda se reserva para el servicio en fuente, del que el comensal se sirve. §3: «sirve a los demás comenzando por las señoras», criterio abandonado en fine dining internacional en favor del sentido de las agujas del reloj desde el invitado de honor, con el anfitrión al final.",
+      "fix": "Reescribir §4 como «Plato emplatado: servir y retirar por la derecha. Servicio en fuente o gueridón: ofrecer por la izquierda» y §3 como «servir en sentido horario empezando por el invitado de honor y terminando por el anfitrión, que es quien cata»."
+     },
+     {
+      "id": "DOM-32",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 7, párrafos 85 y 87",
+      "hallazgo": "El plan de superficies no cuadra consigo mismo: los metros asignados a sala y cocina no dejan espacio suficiente para aseos, vestuarios y almacén, y la cocina mínima incumple el propio ratio que el capítulo fija dos líneas antes.",
+      "evidencia": "Párrafo 85: «un local de aproximadamente 250 m² (cocina + sala + servicios + almacén)». Párrafo 87: «la cocina debe ocupar entre el 25% y el 35% del espacio total. Para 65 plazas: sala 120-160 m² y cocina 60-80 m²». En el extremo alto quedan 250 − 160 − 80 = 10 m² para aseos de clientes, aseo adaptado (obligatorio, checklist-diseno-sala fila 26), vestuarios y aseos de personal para 22-30 trabajadores, oficina y almacén seco. Y 60 m² sobre 250 son el 24 %, por debajo del 25 % mínimo que el mismo párrafo establece.",
+      "fix": "Recalcular: para 65 plazas con la sala en 120-160 m² y la cocina al 25-35 %, el local necesario son 280-340 m². Corregir el párrafo 85, o bajar el aforo. Añadir explícitamente la reserva de vestuarios y aseos de personal (RD 486/1997), que hoy no aparece en ningún fichero del producto."
+     },
+     {
+      "id": "DOM-33",
+      "severidad": "media",
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "hoja «Sheet», fila 44 · guia-restaurante-gastronomico.docx cap. 8 párrafo 105",
+      "hallazgo": "El libro especifica túnel de lavado en el plonge y el checklist presupuesta un lavavajillas de capota: entre uno y otro hay entre 8.000 y 20.000 € de diferencia en la partida.",
+      "evidencia": "Cap. 8: «Plonge: lavado vajilla. Túnel de lavado, fregaderos industriales». Checklist fila 44: «Plonge/Lavado | Lavavajillas de capota 50×50 | 3.500». La tabla 1 del docx repite el de capota («Lavavajillas capota | 50×50 gama alta | 2.700-4.000€»). Con la dotación de vajilla que exige un menú degustación (ver DOM-21), un lavavajillas de capota no da abasto en servicio.",
+      "fix": "Decidir un único criterio. Si el modelo es menú degustación con maridaje, el túnel es el correcto: sustituir la fila 44 por «Túnel de lavado con mesas de entrada y salida 12.000-25.000 €» y actualizar la tabla 1 del docx y el total de la partida."
+     },
+     {
+      "id": "DOM-34",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 9, tabla 1, fila «Cocina industrial 6 fuegos» · checklist-equipamiento-cocina.xlsx fila 20",
+      "hallazgo": "El bloque de cocción está presupuestado a precio de hostelería estándar en una guía que enseña a aspirar a estrella Michelin. El rango declarado no compra una cocina de gama alta.",
+      "evidencia": "Tabla 1: «Cocina industrial 6 fuegos | Gama alta + horno | 5.000-5.200€» (un rango de solo 200 € de amplitud, lo que ya delata que no es un precio de mercado observado) y checklist fila 20 «Cocina industrial 6 fuegos + horno | 5.200». Un bloque modular de gama alta para fine dining está un orden de magnitud por encima. El mismo checklist presupuesta un Josper a 12.000 € y una marmita basculante a 4.000 €, lo que hace aún más incoherente el precio del bloque principal.",
+      "fix": "Sustituir por un rango realista con dos escalones («gama profesional estándar» frente a «bloque modular de alta gama») y recalcular el total del checklist y el rango 90.000-150.000 € del cap. 9."
+     },
+     {
+      "id": "DOM-35",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 21, viñeta 210 · checklist-marketing-preapertura.xlsx fila 21",
+      "hallazgo": "Se recomienda como sistema de reservas una plataforma que no opera en España, y con precio en dólares, en un capítulo dedicado al mercado español.",
+      "evidencia": "Viñeta 210: «Resy: segmento premium. Propiedad de American Express. 300-500 USD/mes». Resy no da servicio en el mercado español, así que un restaurante en España no puede contratarlo; y es la única moneda extranjera de toda la guía. El checklist-marketing fila 21 lo repite: «Sistema de reservas configurado (Tock/Resy/TheFork)».",
+      "fix": "Sustituir Resy por alternativas disponibles en España para el segmento (Tock, TheFork, Cover Manager, Restoo) con precios en euros, y corregir la fila 21 del checklist."
+     },
+     {
+      "id": "DOM-36",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 17, párrafo 173",
+      "hallazgo": "El libro afirma tajantemente que Michelin no evalúa servicio, vajilla ni decoración, y con ello desautoriza la inversión de 15.000-65.000 € que él mismo recomienda dos capítulos antes y los ítems de su propio checklist de inspección.",
+      "evidencia": "Párrafo 173: «Lo que NO evalúan: servicio, vajilla, decoración, ambiente. Estos aspectos se documentan pero no influyen en la decisión». Pero el cap. 11 justifica 15.000-65.000 € en vajilla y cristalería porque «cada detalle cuenta», y checklist-inspeccion-michelin-repsol.xlsx incluye como ítems a preparar para la inspección el 37 («Limpieza visible en cocina y sala, incluido baños»), el 38 («Uniformes limpios y profesionales») y el 40 («Tiempos entre pases controlados y fluidos»), todos de servicio y ambiente. Además la guía no menciona en ningún momento la Estrella Verde de sostenibilidad, que es hoy una vía de reconocimiento real y encaja con el cap. 16 y con el bloque Repsol.",
+      "fix": "Matizar el párrafo: las estrellas se otorgan por lo que hay en el plato, pero el confort y el servicio se reflejan en la clasificación por cubiertos y la Estrella Verde reconoce la sostenibilidad. Añadir un epígrafe sobre la Estrella Verde y un bloque de ítems verdes al checklist de inspección."
+     },
+     {
+      "id": "DOM-37",
+      "severidad": "media",
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ubicacion": "hoja «Gantt», columnas F:W (M1-M18), filas 5-34",
+      "hallazgo": "El Gantt no tiene ninguna barra ni dependencia: las 18 columnas de meses están vacías en las 30 tareas, pese a que instrucciones, dashboard y landing prometen duraciones y dependencias.",
+      "evidencia": "F5:W34 completamente vacías; las únicas celdas con contenido son las etiquetas de tarea y «Pendiente» en la columna C. Instrucciones!A5: «1. Cada fase tiene una barra de duración estimada». Dashboard línea 35: «18 meses con fases, dependencias e hitos clave». Landing línea 125 (BONUS 4, 24 EUR): «Todas las fases y dependencias». Además la secuencia es incoherente con el propio libro: la licencia C3 (Fase 2) tarda «4-8 meses» según el cap. 5 y la obra (Fase 3) va después, sin que exista ninguna tarea de financiación ni de contrato de alquiler (ver DOM-22 y DOM-23).",
+      "fix": "Precargar el sombreado de cada tarea en sus meses estimados (con formato condicional a partir de columnas Mes inicio / Duración), añadir una columna «Depende de», e insertar en la Fase 1 la negociación del arrendamiento y el cierre de financiación."
+     },
+     {
+      "id": "DOM-38",
+      "severidad": "media",
+      "fichero": "checklist-contratacion.xlsx",
+      "ubicacion": "hoja «Sheet», filas 16 y 30",
+      "hallazgo": "Faltan obligaciones laborales exigibles a toda empresa y el umbral del plan de igualdad está mal escrito; además se propone un pacto de no competencia que sin compensación económica es nulo.",
+      "evidencia": "Fila 30: «Plan de igualdad (si >50 empleados)» — la obligación alcanza a las empresas de 50 o más personas trabajadoras desde marzo de 2022, de modo que «>50» deja fuera precisamente a la empresa de 50. En las 30 filas no aparece el registro retributivo (RD 902/2020), obligatorio para todas las empresas sin umbral, ni el protocolo de prevención del acoso sexual (LO 3/2007 art. 48), también sin umbral. Fila 16: «Cláusula de confidencialidad y no competencia (chef) | Abogado | 200» — el pacto de no competencia postcontractual exige compensación económica adecuada y tiene límite temporal (art. 21.2 ET); sin ella el pacto es nulo y el cliente cree tener una protección que no tiene.",
+      "fix": "Corregir la fila 30 a «(50 o más personas trabajadoras)»; añadir «Registro retributivo (todas las empresas)» y «Protocolo frente al acoso sexual (todas las empresas)»; y reformular la fila 16 como «Pacto de no competencia postcontractual CON compensación económica pactada (máx. 2 años para técnicos)»."
+     },
+     {
+      "id": "DOM-39",
+      "severidad": "media",
+      "fichero": "checklist-diseno-sala.xlsx",
+      "ubicacion": "hoja «Sheet», filas 16 (hilo musical) y 25-29 (baños y accesibilidad)",
+      "hallazgo": "El checklist de sala presupuesta sonido, climatización y acabados pero omite tres exigencias que condicionan la licencia y la póliza: limitador acústico, alumbrado de emergencia y vestuarios de personal.",
+      "evidencia": "Fila 16: «Hilo musical: sistema de sonido discreto | 2.000 €», sin ninguna línea de limitador-registrador acústico ni de aislamiento, cuando el propio cap. 5 del docx reconoce que en Cataluña el estudio de impacto acústico es obligatorio (y lo es también en buena parte de las ordenanzas municipales del resto de CCAA para locales con música). Barrido de los 22 ficheros: «limitador» y «vestuario» no aparecen en ninguno; «extinción» tampoco (ver DOM-20). El checklist cubre baños de clientes y baño adaptado (filas 25-26) pero no aseos ni vestuarios de personal para 22-30 trabajadores, ni alumbrado de emergencia y señalización de evacuación.",
+      "fix": "Añadir al checklist-diseno-sala: «Limitador-registrador acústico homologado + estudio de impacto acústico», «Alumbrado de emergencia y señalización de evacuación (CTE DB-SUA/SI)», «Aseos y vestuarios de personal separados (RD 486/1997)» y «Certificación de aforo y anchura de recorridos de evacuación». Reflejar los costes en la partida de obra del CAPEX."
+     },
+     {
+      "id": "DOM-40",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts",
+      "ubicacion": "líneas 74, 122-126 · src/pages/GuiaRestauranteGastronomicoDashboard.tsx líneas 43-49",
+      "hallazgo": "Seis de los ocho checklists tienen menos ítems de los anunciados y la landing nombra una marca que no aparece en ningún entregable. Son desajustes menores uno a uno, pero sistemáticos y todos en la misma dirección.",
+      "evidencia": "Contando las filas numeradas de cada fichero frente a lo que promete el dashboard: equipamiento 54 vs «90 ítems» (−40 %), APPCC 45 vs «55 prerrequisitos», vajilla 43 vs «50 ítems», Michelin 40 vs «45 ítems» (repetido en la landing línea 124), sala 31 vs «35 ítems», marketing 30 vs «35 acciones». Solo legal (40 vs 40) y contratación (30 vs 30) cuadran. Además la landing línea 74 promete «Selección de marcas (Riedel, Zwiesel, RAK)» pero el cap. 11 del docx nombra Riedel, Zalto, RAK, Villeroy & Boch, Bernardaud, Noritake, WMF y Christofle: Zwiesel no aparece en ningún fichero. Y checklist-marketing fila 8 presupuesta «Sesión de fotos profesional de platos (15-25 platos) | 500 €», precio irreal para fotografía gastronómica profesional y contradictorio con el propio rango de marketing de lanzamiento (5.000-30.000 €).",
+      "fix": "Completar cada checklist hasta la cifra anunciada (hay margen real de contenido útil en equipamiento y APPCC, ver DOM-14, DOM-15 y DOM-20) o bajar los números del dashboard y la landing a los reales. Sustituir «Zwiesel» por una marca que sí esté en la guía y subir el presupuesto de la sesión de fotos a 1.500-3.000 €."
+     }
+    ]
+   },
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (seo/hero/grid/bonus/faqs/cta/schema), dashboard, email de acceso, changelog y catálogo contra el contenido REAL leído de los 22 ficheros de /astro-site/public/dl/guia-restaurante-gastronomico/",
+    "veredicto": "no listo",
+    "motivo": "El producto no está listo para un cliente que ha pagado 85 EUR. Hay tres bloques de defecto que se refuerzan entre sí. (1) Promesas de volumen incumplidas por un margen que no admite matiz: se venden «80+ páginas» cinco veces y el PDF tiene 10 (2.488 palabras, sin una sola imagen, pese a anunciarse como «diseño editorial profesional»); el DOCX reparte 2.395 palabras entre 22 capítulos. (2) Herramientas que no hacen lo que la tarjeta dice: 4 de las 10 plantillas Excel tienen CERO fórmulas —dos de ellas (P&L con 3 escenarios y calculadora de ticket medio) son hojas de etiquetas en blanco—, el «Plan Financiero 3 Años» no tiene proyección a 3 años y sus propias instrucciones citan una pestaña que no existe, el «cash-flow-break-even» no calcula ni los totales ni el break-even (la cadena «punto de equilibrio» no aparece en ninguno de los 22 ficheros), y la Menu Engineering Matrix no clasifica: su columna 'Clasificación' está vacía. La FAQ contesta «Sí» a la pregunta exacta del escéptico («¿Las plantillas incluyen fórmulas?») y ese «Sí» viaja además en el JSON-LD. (3) Números que se contradicen dentro del propio producto: la tabla de CAPEX suma 363.000€ mientras el texto repite dos veces «500.000-900.000€», y los costes de personal declarados (250-450K€) están mal calculados contra sus propias tablas de salarios, que dan 322-602K€ con la SS que el mismo párrafo menciona — un error de más de 150.000€/año en la partida que decide la viabilidad. A eso se suman dos riesgos legales vivos: un AggregateRating 4,9/8 fabricado a partir de ocho testimonios inventados con credenciales verificables (Estrella Michelin, ex-directora de Guía Repsol, 2 Soles), y un ancla permanente de 220€ con «-61%» y «Precio de lanzamiento» sobre un producto que sólo ha existido a 85€; más un checklist legal que manda comprar el derogado libro de visitas y omite el registro de jornada. Mínimo para reabrir la venta con honestidad: COM-01 a COM-16. Los arreglos de fórmula (COM-04 a COM-08, COM-14, COM-20, COM-22) son horas de trabajo, no días, y devuelven de golpe la credibilidad de la mitad del paquete; la ampliación de la guía y la corrección de las cifras de inversión y personal son el trabajo de fondo. Nota aparte para la Fase A: su pasada cubrió los 18 .xlsx pero dejó fuera el PDF y los 3 DOCX, que siguen con autor «python-docx»/«(anonymous)» y sin línea de versión (COM-24).",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.pdf",
+      "ubicacion": "documento completo (PyMuPDF: page_count=10)",
+      "hallazgo": "La promesa central y más repetida del producto — «80+ páginas» — es falsa por un factor de 8. El PDF tiene 10 páginas y 2.488 palabras, cero imágenes y cero elementos de diseño (producer: ReportLab, title: '(anonymous)').",
+      "evidencia": "PDF: pages=10, palabras por página 262/312/252/282/226/222/285/248/237/162 = 2.488 total, get_images()=0 en las 10. Frente a: guia-restaurante-gastronomico.ts:13 (meta description), :23 (hero), :25 (checkItem), :151 (cta) «22 capítulos, 80+ páginas» y GuiaRestauranteGastronomicoDashboard.tsx:20 «22 capítulos, 80+ páginas. Diseño editorial profesional.»",
+      "fix": "O se amplía la guía a un volumen real de 80+ páginas (≈20.000 palabras), o se sustituye la cifra en los 5 puntos por la real («10 páginas / 22 capítulos de referencia rápida») y se reajusta el precio/posicionamiento. Mientras coexistan las dos cosas, cualquier comprador tiene motivo de reembolso documentado."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "22 headings de nivel 1; 229 párrafos; 2.395 palabras (2.157 cuerpo + 238 en 4 tablas)",
+      "hallazgo": "Los 22 capítulos existen como titulares pero no como contenido: ~109 palabras por capítulo. El capítulo 9 «Equipamiento de Cocina» —que la landing describe como «Lista completa con costes»— es UNA frase y una tabla de 10 líneas. Los capítulos 13 y 14 son una frase + tabla.",
+      "evidencia": "Cap. 9 completo: «Presupuesto de equipamiento cocina completa para 65 plazas: 90.000-150.000€.» + tabla de 10 equipos. Cap. 13 completo: «Coste total anual personal cocina: 250.000-450.000€ (incluyendo SS empresa ~30%).» + tabla. Frente a grid.chapters de guia-restaurante-gastronomico.ts:66-87, que promete para cada uno un desarrollo temático.",
+      "fix": "Ampliar con bridge.py capítulo a capítulo hasta la densidad que la landing promete (mínimo ~800-1.000 palabras/capítulo en los 8 capítulos de dinero: 4, 5, 9, 13, 14, 15, 17, 18) antes de volver a vender «22 capítulos»."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts",
+      "ubicacion": "faqs[3] (línea ~142) y schema.faqs[2] (línea ~187)",
+      "hallazgo": "La FAQ contesta con un «Sí» rotundo a la pregunta exacta que hace el cliente escéptico, y es falso: 4 de las 10 plantillas Excel tienen CERO fórmulas. La misma afirmación está duplicada en el JSON-LD, así que se sirve también a Google como dato estructurado.",
+      "evidencia": "FAQ: «¿Las plantillas Excel incluyen fórmulas? Sí. Las 10 plantillas Excel incluyen fórmulas automáticas… cronograma Gantt y más.» Realidad medida con openpyxl: pl-mensual-escenarios.xlsx 0 fórmulas, calculadora-ticket-medio.xlsx 0, cronograma-apertura-gantt.xlsx 0, plantilla-turnos-brigada.xlsx 0. El propio texto cita el Gantt como ejemplo de plantilla «con fórmulas» y el Gantt no tiene ninguna.",
+      "fix": "Implementar las fórmulas que faltan (COM-04 a COM-08) o reescribir la FAQ enumerando qué plantillas calculan y cuáles son formularios en blanco. Y quitar la afirmación del schema: es la que puede acabar en un rich result."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ubicacion": "hoja 'Ticket Medio', A5:E20",
+      "hallazgo": "El fichero es una lista de 14 etiquetas sin un solo valor ni fórmula. Se vende como «Simulador de escenarios» con tres columnas de escenario, y no simula nada: el usuario tendría que escribir él mismo el cálculo del ticket ponderado.",
+      "evidencia": "Todas las celdas de B5:D20 vacías. A16='TICKET MEDIO PONDERADO (€)', A18='Facturación diaria (€)', A20='Facturación mensual (€)' — las tres filas de resultado están vacías. Instrucciones!A6 dice «Calcula el ticket medio ponderado y la facturación estimada». Dashboard línea 34: «Simulador de escenarios según mix de menús y vinos».",
+      "fix": "B16 = SUMPRODUCT de los pares %/precio de B5:B14; B18 = B16*B17; B20 = B18*B19, replicado en C y D. Y validación de que B5+B7+B9 = 100%."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ubicacion": "hoja 'Escenarios', A5:E22",
+      "hallazgo": "Segunda plantilla completamente vacía: 19 etiquetas (parámetros + resultados) sin valores ni fórmulas. Es el fichero al que el dashboard atribuye «fórmulas encadenadas».",
+      "evidencia": "B5:D22 sin una sola celda con valor. A17='Facturación mensual (€)' … A21='EBITDA mensual (€)', A22='Margen EBITDA (%)' vacías. Instrucciones!A7: «Los resultados se calculan automáticamente». Dashboard línea 29: «Pesimista, realista y optimista con fórmulas encadenadas».",
+      "fix": "Encadenar: B17=(B6*B8+B7*B9)*B10; B18=B17*B11; B19=B17-B18; B20=B12+B13+B14; B21=B19-B20; B22=B21/B17. Precargar los tres escenarios con los rangos que ya da la guía (cap. 15: menú largo 90-180€, corto 55-90€) para que se entienda de un vistazo."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "alta",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "hoja 'Cash Flow 12 Meses', filas 10, 19, 21, 22",
+      "hallazgo": "El fichero se llama «break-even» y no contiene el break-even por ninguna parte; además le faltan las cuatro filas de total: 'Total Ingresos', 'Total Gastos', 'FLUJO DE CAJA NETO' y 'FLUJO ACUMULADO' son etiquetas sin fórmula en las 12 columnas mensuales y en el total anual. Las 10 fórmulas del fichero son sólo los SUM horizontales de las líneas de detalle.",
+      "evidencia": "A10='Total Ingresos' (B10:N10 vacías), A19='Total Gastos' (B19:N19 vacías), A21='FLUJO DE CAJA NETO' (vacía), A22='FLUJO ACUMULADO' (vacía). Instrucciones!A6: «El cash flow acumulado y el break-even se calculan automáticamente». Dashboard línea 30: «12 meses de cash flow + punto de equilibrio automático». Barrido de texto en los 22 ficheros: la cadena «punto de equilibrio» aparece 0 veces.",
+      "fix": "B10=SUM(B6:B9); B19=SUM(B13:B18); B21=B10-B19; B22=B21 y C22=B22+C21 arrastrado; añadir bloque de break-even (costes fijos mensuales / margen de contribución %) y una fila de mes en que el acumulado cruza cero con MATCH."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "libro completo (hojas: Instrucciones, Inversión, P&L Mensual) vs Instrucciones!A9",
+      "hallazgo": "El «Plan Financiero 3 Años» no proyecta 3 años: no existe ninguna hoja de proyección. El propio fichero se autodelata — sus instrucciones remiten a una pestaña «Proyección 3 Años» que no está en el libro. Lo que hay es un P&L de UN mes.",
+      "evidencia": "wb.sheetnames = ['Instrucciones','Inversión','P&L Mensual']. Instrucciones!A9: «5. La pestaña 'Proyección 3 Años' extrapola con crecimiento anual.» Instrucciones!A6: «Las fórmulas calcularán automáticamente P&L, margen y proyección a 3 años». Dashboard línea 27: «Inversión, P&L mensual y proyección a 3 años con fórmulas». schema.faqs[2]: «Plan financiero a 3 años… Todo con fórmulas encadenadas».",
+      "fix": "Añadir la hoja 'Proyección 3 Años' (Año 1 = P&L Mensual ×12 con estacionalidad, Años 2-3 con % de crecimiento y de inflación de costes como celdas de entrada) o renombrar el fichero y las 4 referencias comerciales. Un banco es exactamente el destinatario de esa hoja."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "alta",
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ubicacion": "hoja 'Menu Engineering', columna H (H5:H29) y columnas D/F",
+      "hallazgo": "La columna 'Clasificación' —la única razón de ser de la herramienta— no tiene ninguna fórmula. Las 25 fórmulas del fichero son 25 restas G=F-E. No hay índice de popularidad, ni mix de menú, ni margen medio, ni umbral del 70%/N: nada de la matriz de Kasavana & Smith que anuncia su propio título.",
+      "evidencia": "H5:H29 vacías. Únicas fórmulas: G5='=F5-E5' … G29='=F29-E29'. Instrucciones!A5 pide «popularidad y margen» pero la tabla sólo tiene D='Uds Vendidas' sin columna de % de mix. Frente a dashboard línea 32 «Clasificación Stars/Plowhorses/Puzzles/Dogs automática» y bonus.items[4] (19 EUR) «Matrix automática… obtén recomendaciones de pricing y carta al instante».",
+      "fix": "Añadir: I = D/SUM(D) (mix); umbral popularidad = 0,7/nº platos; margen medio ponderado; H = IF(AND(mix>=umbral;G>=margen_medio);\"Star\";IF(AND(mix>=umbral;G<margen_medio);\"Plowhorse\";IF(AND(mix<umbral;G>=margen_medio);\"Puzzle\";\"Dog\"))). Sin esto el BONUS 5 no existe."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "tabla 0 (cap. 4, fila TOTAL) vs cap. 1 y cap. 4 (cuerpo)",
+      "hallazgo": "La cifra bandera del producto se contradice a sí misma en el mismo documento: el texto afirma dos veces que la inversión es de 500.000-900.000€ y la tabla de desglose que lo sostiene suma 363.000€ en el rango bajo y 1.240.000€ en el alto. Ninguno de los dos extremos cae dentro del rango vendido.",
+      "evidencia": "Tabla 0 fila TOTAL: 363.000€ / 685.000€ / 1.240.000€ (aritmética correcta sobre sus 10 partidas). Cap. 1: «La inversión inicial oscila entre 500.000€ y 900.000€ para un local de 65 plazas». Cap. 4: idéntica frase. calculadora-capex.xlsx!CAPEX C17/D17/E17 da además otros totales (373.000/703.000/1.275.000) por tener 12 partidas en vez de 10. Landing why.reasons[1] «Números Reales, No Fantasía… Inversión real (500K-900K€)», faqs[0] y schema.faqs[0] repiten el rango; el testimonio de Ana Beltrán se apoya justo en él.",
+      "fix": "Decidir una cifra y propagarla: o se ajustan las partidas para que el rango bajo/alto dé 500K-900K, o se cambia el rango a «363K-1,24M€ (medio 685K)» en el docx, el PDF, la landing (2 sitios), el schema y el testimonio. Que la tabla desmienta al titular es lo primero que ve un inversor."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "alta",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 13 (texto + tabla 2) y cap. 14 (texto + tabla 3)",
+      "hallazgo": "Los costes de personal declarados están mal calculados contra las propias tablas de salarios del capítulo, y el error es de más de 150.000€/año en el extremo alto — justo la partida que decide la viabilidad de un gastronómico.",
+      "evidencia": "Cap. 13 declara «250.000-450.000€ (incluyendo SS empresa ~30%)». Su tabla 2, configuración mínima y banda baja: 35.000+28.000+3×22.000+4×18.000+2×16.000+15.000 = 248.000€ brutos → ×1,30 = 322.400€, ya por encima del mínimo declarado. Configuración máxima y banda alta: 80.000+40.000+4×30.000+6×22.000+3×19.000+2×17.000 = 463.000€ → ×1,30 = 601.900€, un 34% por encima del techo declarado. Cap. 14 igual: declara 200.000-350.000€ y su tabla 3 da 180.000×1,3 = 234.000€ y 310.000×1,3 = 403.000€.",
+      "fix": "Recalcular los dos rangos desde las tablas (cocina 322-602K€, sala 234-403K€, total 556K-1,0M€) y revisar aguas abajo: el P&L y el break-even se dimensionan con esta cifra. Añadir la fila de coste total como fórmula en plantilla-turnos-brigada.xlsx para que el cliente lo verifique."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "alta",
+      "fichero": "business-plan-modelo.docx",
+      "ubicacion": "documento completo (66 párrafos, 300 palabras, 0 tablas) vs testimonials.items[6] y bonus.items[0]",
+      "hallazgo": "El BONUS 1, valorado en 49 EUR, es un índice de 10 epígrafes con viñetas-instrucción y placeholders. No contiene lo que la landing dice que contiene («proyecciones financieras a 3 años»), y el testimonio describe un uso materialmente imposible.",
+      "evidencia": "El documento entero son bullets del tipo «[Tu resumen ejecutivo aquí — es lo primero que lee el banco/inversor]» y «Cuenta de resultados previsional (3 años)» (una instrucción al lector, no una proyección). 0 tablas, 0 cifras. Frente a bonus.items[0]: «Incluye resumen ejecutivo, proyecciones financieras a 3 años y análisis de mercado» y testimonials.items[6] (Pablo Fernández): «El business plan modelo para bancos me ahorró 5.000€ en consultoría. Lo presenté tal cual a mi banco y me aprobaron la financiación.» Presentarlo «tal cual» sería entregar al banco un documento con corchetes vacíos. Agravante: el plan-financiero-3-anos.xlsx tampoco tiene la proyección a 3 años (COM-07), así que el comprador no la encuentra en ningún sitio.",
+      "fix": "O se convierte en un business plan modelo RELLENO (caso de 65 plazas con las cifras de la guía, tablas de CAPEX/P&L/cash flow enlazadas a las plantillas) o se rebaja la descripción del bonus a «esquema/índice guiado» y se retira el testimonio, que es el más frágil de los ocho."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts",
+      "ubicacion": "schema.aggregateRating (línea 183) + testimonials.items (líneas 92-101)",
+      "hallazgo": "Se emite un AggregateRating 4,9/5 con reviewCount 8 en el JSON-LD, y esas «8 reseñas» son los 8 testimonios redactados con avatares de stock. No existe sistema de reseñas: nadie ha puntuado el producto. Además, los testimonios atribuyen a personas inventadas credenciales verificables y escasas («Chef ejecutivo, 1 Estrella Michelin en Madrid», «ex-directora Guía Repsol», «Propietario, restaurante 2 Soles Repsol en Galicia»), lo que estrecha mucho el círculo de personas reales a las que apuntan.",
+      "evidencia": "aggregateRating: { ratingValue: '4.9', reviewCount: '8' } — exactamente el número de items del array testimonials, con avatar: '/avatars/avatar-1.jpg'…'avatar-8.jpg'. No hay ninguna función ni endpoint de reseñas en netlify/functions para este producto.",
+      "fix": "Retirar aggregateRating del schema hasta que haya reseñas verificables de compradores (art. 20 y 20 bis TRLGDCU tras la Ley 4/2022 exige poder acreditar que proceden de compradores reales; las políticas de rich results de Google prohíben las valoraciones autogeneradas). Y despersonalizar los testimonios: cargo genérico sin distintivo Michelin/Repsol atribuible, o recabar testimonios reales con permiso. Está en la lista de decisiones pendientes de John — este producto es uno de los expuestos."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts",
+      "ubicacion": "pricing (líneas 36-43)",
+      "hallazgo": "Ancla de precio permanente: se anuncia «220 EUR» tachado, «-61%», «Precio de lanzamiento — ahorra 135 EUR» dos veces y «Ahorra 135 EUR HOY», sobre un producto que en el catálogo vale 85€ y que se lanzó a 85€ (sesión del 2026-04-06, «Guía Gastronómico #22 €85»). El producto nunca se ha vendido a 220€, y el «lanzamiento» lleva más de cuatro meses.",
+      "evidencia": "pricing: { priceOld: '220 EUR', price: '85 EUR', discountBadge: '-61%', heroNote/buyBoxNote: 'Precio de lanzamiento — ahorra 135 EUR', bonusSaveLine: 'Ahorra 135 EUR HOY' }. src/data/products-catalog.ts:229 price: '€85' (único precio del catálogo). schema.price '85.00' con priceValidUntil '2026-12-31'.",
+      "fix": "O se retira el tachado y el «-61%» y se presenta 85€ como precio, o se documenta un precio anterior realmente aplicado y se indica «precio más bajo de los últimos 30 días» como exige el art. 20 TRLGDCU tras el RDL 24/2021 (Directiva Ómnibus). El «HOY» y el «lanzamiento» perpetuos son el agravante clásico en estos expedientes."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "alta",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja 'Escandallo', H4, H27 y H28",
+      "hallazgo": "Dos defectos de cálculo en la herramienta de precios: (1) la celda de entrada «Food Cost Objetivo» es decorativa —el PVP tiene el 0,28 hardcodeado, así que cambiarla no altera nada, y además está guardada como texto '28%'—; (2) el PVP sugerido no contempla el IVA, y en España el precio de carta se muestra con IVA incluido, de modo que aplicar literalmente el resultado deja el food cost real en ~30,8% en vez del 28% objetivo.",
+      "evidencia": "G4='Food Cost Objetivo:', H4='28%' (str, no 0.28). H28='=H27/0.28' con etiqueta G28='PVP Sugerido (28%):'. Barrido de las 22 entregas: la cadena «IVA» aparece 0 veces en la guía y en las 18 hojas de cálculo. Con IVA del 10%: base = (C/0,28)/1,10 → food cost = C/base = 30,8%.",
+      "fix": "H28 = H27/VALUE(SUBSTITUTE($H$4,\"%\",\"\"))*100 (o convertir H4 a número 0,28 y usar =H27/$H$4), y añadir dos filas: 'PVP sin IVA' y 'PVP con IVA (10%)' con la tasa como celda editable. Son 3 celdas y evitan que un cliente ponga precio a toda su carta con 2,8 puntos de food cost de más."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "alta",
+      "fichero": "checklist-legal.xlsx",
+      "ubicacion": "hoja 'Sheet', fila 37 (categoría 'Laboral') y categoría 'Laboral' completa (filas 33-37)",
+      "hallazgo": "El checklist legal —el entregable con más exposición jurídica del pack— manda comprar un trámite derogado y omite el que sí es obligatorio. Fila 37 pide «Libro de visitas de la Inspección de Trabajo» con responsable «Papelería» y 20€ de coste: el libro de visitas está suprimido desde la Ley 23/2015 y la Orden ESS/1452/2016 (la Inspección extiende diligencias). En cambio, en las 5 filas de 'Laboral' no aparece el registro diario de jornada, obligatorio desde el RDL 8/2019 y una de las infracciones más sancionadas en hostelería.",
+      "evidencia": "Fila 37: Categoría='Laboral' | Tarea='Libro de visitas de la Inspección de Trabajo' | Responsable='Papelería' | Coste=20. Filas 33-36: alta en SS, contratos, plan de PRL, reconocimientos médicos. Ninguna de las 40 filas menciona registro de jornada, control horario ni registro retributivo.",
+      "fix": "Sustituir la fila 37 por «Registro diario de jornada (RDL 8/2019): sistema de fichaje y conservación 4 años» y añadir «Registro retributivo (RD 902/2020)». Revisar de paso las 40 filas contra normativa vigente 2026 antes de volver a venderlo como checklist legal."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "alta",
+      "fichero": "manual-servicio-sala.docx",
+      "ubicacion": "documento completo (26 párrafos, 255 palabras, 7 headings)",
+      "hallazgo": "El BONUS 2 son 255 palabras: siete apartados de un párrafo cada uno. La landing lo vende en 39 EUR y un testimonio afirma que «vale más que el precio de la guía entera» (85€). No hay guiones de servicio, ni estándares de tiempos, ni fichas de formación, ni casuística — nada que permita «formar a tu equipo de sala» como dice la descripción.",
+      "evidencia": "Apartado 5 completo («Gestión de Quejas»): «Escuchar sin interrumpir. Disculparse sinceramente. Ofrecer solución inmediata (rehacer el plato, compensar). Informar al maître y al chef. Registrar la incidencia. Hacer seguimiento post-visita.» — 26 palabras. testimonials.items[5] (Lucía Martín): «El manual de servicio de sala que incluye como bonus vale más que el precio de la guía entera.»",
+      "fix": "Ampliarlo a un manual utilizable (guiones literales por momento del servicio, tiempos objetivo entre pases, checklist de briefing, casuística de quejas con respuestas, protocolo de alérgenos en sala) o bajar el valor declarado y reescribir el testimonio."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "hoja 'Sheet', filas 5-58 (54 ítems numerados)",
+      "hallazgo": "Déficit del 40% sobre la cifra anunciada: la tarjeta del dashboard promete «90 ítems por zona» y el fichero tiene 54.",
+      "evidencia": "Filas con # numérico en columna A: 54 (última fila de ítem = 58; fila 60 = pie). Reparto: Cuarto Frío 8, Partida Carnes 6, Partida Pescados 5, Cocina Caliente 7, Pastelería/Obrador 7, Pase/Expedición 5, Almacenamiento 5, Plonge/Lavado 4, Tecnología 7. Frente a GuiaRestauranteGastronomicoDashboard.tsx:43 «90 ítems por zona: frío, carnes, pescados, pastelería, pase.»",
+      "fix": "Completar hasta 90 ítems (las zonas están bien planteadas, faltan referencias por zona) o corregir la tarjeta a 54. Es la cifra con mayor desviación de todo el pack."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "checklist-appcc.xlsx / checklist-inspeccion-michelin-repsol.xlsx / checklist-vajilla-cristaleria.xlsx / checklist-diseno-sala.xlsx / checklist-marketing-preapertura.xlsx",
+      "ubicacion": "filas 5-N de cada hoja (recuento de # numéricos en columna A)",
+      "hallazgo": "Cinco checklists más entregan menos ítems de los anunciados. El caso del Michelin/Repsol es el más sensible porque la cifra «45 ítems» aparece TRES veces en la venta (tarjeta del dashboard, BONUS 3 y la FAQ de Michelin) y el fichero tiene 40.",
+      "evidencia": "APPCC 45 reales vs «55 prerrequisitos y controles» (dashboard:45). Michelin/Repsol 40 reales vs «45 ítems» (dashboard:46, bonus.items[2], faqs[2] «un checklist de 45 ítems como bonus»). Vajilla 43 vs «50 ítems» (dashboard:44). Diseño de sala 31 vs «35 ítems» (dashboard:47). Marketing 30 vs «35 acciones» (dashboard:49). Correctos: legal 40 vs «40 trámites» y contratación 30 vs «30 ítems».",
+      "fix": "Completar cada uno hasta su cifra (son 10, 5, 7, 4 y 5 ítems) — es más barato que tocar seis textos de venta, y en el de Michelin la cifra está en el bonus valorado en 29 EUR."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ubicacion": "hoja 'Gantt', columnas B, D, E y F:W (M1-M18), filas 5-34",
+      "hallazgo": "El «Gantt visual» no tiene nada visual ni ninguna dependencia: las 18 columnas de mes están completamente vacías, igual que Responsable, Inicio y Fin. Sus propias instrucciones prometen barras de duración que no existen, y un testimonio elogia unas dependencias que el fichero no contiene.",
+      "evidencia": "F5:W34 sin una sola celda con valor ni formato de barra; B (Responsable), D (Inicio) y E (Fin) vacías en las 24 tareas; sólo C='Pendiente' repetido. Instrucciones!A5: «Cada fase tiene una barra de duración estimada». bonus.items[3] (24 EUR): «Todas las fases y dependencias… Hitos, responsables y fechas límite en formato visual Gantt». testimonials.items[2] (Fernando Ruiz): «El cronograma Gantt de 18 meses… Cada fase con sus dependencias.»",
+      "fix": "Precargar las barras (relleno condicional entre D y E, o marcas en F:W según la duración típica de cada fase, que la guía ya conoce: licencia C3 4-8 meses, obra, formación 2-4 semanas) y añadir columna 'Depende de'. Un Gantt en blanco no es un bonus de 24 EUR."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "hoja 'Turnos Semana', columna K y filas 6-30",
+      "hallazgo": "Ni horas ni coste: la columna 'Horas/Semana' no tiene fórmula y no existe ninguna columna de coste, pese a que las instrucciones y la tarjeta del dashboard prometen ambas cosas. Además el cuadrante tiene 24 puestos y se anuncia como de 25 personas.",
+      "evidencia": "K5:K30 vacías; el libro tiene 0 fórmulas. Instrucciones!A7: «Las horas y costes se calculan automáticamente». Instrucciones!A1: «Plantilla Turnos Brigada (25 personas)». Dashboard línea 36: «Cuadrante semanal para 25 personas con coste». Recuento real: cocina filas 6-20 = 15 puestos, sala filas 22-30 = 9 puestos = 24.",
+      "fix": "Añadir tabla de equivalencia turno→horas (M/T/P/L) y K = SUMPRODUCT sobre D:J, más columnas 'Coste/hora' y 'Coste semana' con total. Y cuadrar el headcount con COM-21."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx + plantilla-turnos-brigada.xlsx + GuiaRestauranteGastronomicoDashboard.tsx",
+      "ubicacion": "docx cap. 13/14 (tablas 2 y 3 + texto), xlsx 'Turnos Semana' filas 6-30, dashboard línea 36",
+      "hallazgo": "Cuatro cifras distintas de plantilla en el mismo producto. Un comprador que quiera dimensionar su equipo no sabe cuál creer.",
+      "evidencia": "(a) Suma de las tablas: cocina 12-17 + sala 9-12 = 21-29 personas. (b) Texto del cap. 14: «Plantilla total: 22-30 personas». (c) plantilla-turnos-brigada.xlsx: 24 filas de puesto. (d) Dashboard e Instrucciones del xlsx: «25 personas». Los rangos de las tablas sí cuadran con los títulos de capítulo (12-17 y 9-12), así que el error está en el «22-30» y en el «25».",
+      "fix": "Fijar 21-29 (o el número que se decida), corregir el texto del cap. 14, ajustar las filas del cuadrante y la tarjeta del dashboard."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "media",
+      "fichero": "budget-bodega.xlsx",
+      "ubicacion": "hoja 'Bodega', columna H (H5:H54), columna J (J5:J54) y ausencia de fila de total",
+      "hallazgo": "La columna 'Margen (%)' calcula markup sobre coste, no margen, y contradice el criterio que enseña la propia guía. Con el multiplicador ×3 que recomienda el capítulo 12, la hoja mostrará «Margen 200%», un número imposible como margen que descuadra cualquier conversación con un sumiller o un banco. Además la rotación no se calcula (es una casilla manual) y un fichero llamado «Budget de Bodega» no tiene ninguna fila de total: ni inversión en stock ni valor de inventario.",
+      "evidencia": "H5='=IF(E5=0,0,(F5-E5)/E5)' replicado hasta H54. Cap. 12 del docx: «Multiplicador estándar: ×2,5 a ×3,5 sobre coste. Food cost vino: 28-40%». Con E=10 y F=30 la hoja imprime 200%. J4='Rotación/Mes' sin fórmula en J5:J54, pese a Instrucciones!A6 «El margen y la rotación se calculan automáticamente». No hay fila 55 de totales.",
+      "fix": "H = (F-E)/F (margen sobre PVP) o renombrar la columna a 'Markup (%)' y añadir 'Food cost (%)' = E/F para poder contrastarlo con el 28-40% del capítulo; J = uds vendidas/mes ÷ stock; y fila TOTAL con SUMPRODUCT(E5:E54;I5:I54) = valor de la bodega, que es lo que pide el nombre del fichero y la partida CAPEX 'Bodega inicial'."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 9 (texto + tabla 1) vs grid.chapters[8] de la landing",
+      "hallazgo": "La tarjeta del capítulo 9 nombra seis equipos concretos como gancho y dos de ellos no aparecen en ningún fichero del producto. Además el presupuesto que declara el capítulo no coincide con el de sus propias tablas ni con lo que suma su lista.",
+      "evidencia": "Barrido de texto sobre los 22 entregables: «thermomix» 0 ocurrencias, «pacojet» 0. Frente a grid.chapters[8]: «Lista completa con costes: hornos Rational, Thermomix, abatidores, Pacojet, Roner, plancha Josper». Presupuesto: cap. 9 dice «90.000-150.000€»; tabla 0 del mismo docx dice «Equipamiento cocina 55.000€ / 90.000€ / 150.000€» y calculadora-capex.xlsx!C6:E6 lo mismo; los 10 equipos de la tabla 1 suman ~55.000€ a precio medio, no 90.000-150.000€.",
+      "fix": "Añadir Thermomix y Pacojet a la tabla 1 (o quitarlos de la tarjeta), completar la lista hasta cubrir el presupuesto declarado y unificar el rango en 55.000-150.000€. Que la 'lista completa' cubra el 40-60% del presupuesto que ella misma cita es lo que hace saltar al comprador técnico."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.pdf, guia-restaurante-gastronomico.docx, business-plan-modelo.docx, manual-servicio-sala.docx",
+      "ubicacion": "metadatos del documento (core properties / PDF info)",
+      "hallazgo": "Caso escapado a la Fase A: la pasada de metadatos y de línea de versión cubrió los 18 .xlsx pero no los 4 documentos principales, que son precisamente los que el cliente abre en Word y Acrobat. El PDF sigue sin título ni autor y con fecha de creación del 6-abr-2026 (no se regeneró en la v1.1), y los tres DOCX se presentan como escritos por «python-docx» en 2013.",
+      "evidencia": "PDF: title='(anonymous)', author='(anonymous)', producer='ReportLab PDF Library', creationDate=D:20260406005028. Los 3 DOCX: author='python-docx', comments='generated by python-docx', created=2013-12-23 23:15. Contraste: escandallo-maestro.xlsx creator='AI Chef Pro', title='Escandallo Maestro — Fichas Técnicas · Cómo Montar un Restaurante Gastronómico 65 Plazas'. Y el changelog (src/data/productos-changelog.ts:117-131) dice literalmente «Revisión completa de las 18 plantillas» y «los 18 ficheros» — los 4 documentos quedaron fuera por diseño.",
+      "fix": "Aplicar a los 4 documentos el mismo bloque de metadatos que a los xlsx (autor AI Chef Pro, título, asunto) y añadirles el pie «Versión 1.1 · agosto 2026 · aichef.pro/guia-restaurante-gastronomico», que hoy sólo llevan las hojas de cálculo."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "media",
+      "fichero": "netlify/functions/verify-purchase.ts",
+      "ubicacion": "líneas 147-153 (emailBody de 'guia-restaurante-gastronomico'); duplicado en netlify/functions/resend-access.ts:147",
+      "hallazgo": "El primer mensaje que recibe el cliente después de pagar cuenta mal el paquete: promete «20 plantillas y checklists Excel» cuando sólo 18 son Excel; las otras dos (business plan y manual de sala) son .docx. La misma frase está duplicada en resend-access.ts, así que el reenvío repite el error.",
+      "evidencia": "emailBody: «…descargar la guía PDF + DOCX + 20 plantillas y checklists Excel». Realidad en /dl/guia-restaurante-gastronomico/: 18 .xlsx + 2 .docx adicionales (+ el PDF y el DOCX de la guía). El dashboard sí lo dice bien: «Tu guía completa + 20 herramientas».",
+      "fix": "Cambiar a «18 plantillas y checklists Excel + business plan y manual de sala en Word» en los dos ficheros. Es la frase que el cliente contrasta con el dashboard nada más entrar."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 21 y cap. 20 vs grid.chapters[20] y grid.chapters[19] de la landing",
+      "hallazgo": "Dos tarjetas de capítulo prometen contenidos que el capítulo no contiene. El 21 se queda en TPV y reservas; el 20 no menciona el evento inaugural.",
+      "evidencia": "Cap. 21 completo = 2 subapartados (TPV/POS con 3 productos, Reservas con 3 productos). grid.chapters[20]: «TPV, reservas (TheFork, Resy), CRM de comensales, gestión de alérgenos y digitalización discreta» — de CRM sólo hay una mención de pasada en el manual de sala, y de gestión de alérgenos en tecnología, nada. grid.chapters[19] promete «evento inaugural»: la cadena «evento inaugural» tiene 0 ocurrencias en los 22 ficheros.",
+      "fix": "Añadir a los capítulos 20 y 21 los bloques prometidos (software de CRM de comensales y de alérgenos para fine dining; guion de evento inaugural) o alinear las dos tarjetas con lo que hay."
+     },
+     {
+      "id": "COM-27",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "líneas 117-131 (entrada 'guia-restaurante-gastronomico', v1.1 del 2026-08-22)",
+      "hallazgo": "El changelog que ve el comprador titula la v1.1 «Revisión completa de las 18 plantillas», y lo que enumera debajo son sólo cambios de impresión, versión y metadatos. Un cliente que lea «revisión completa», vuelva a descargar y encuentre dos plantillas todavía en blanco (COM-04, COM-05) leerá el changelog como una promesa incumplida — y el bloque le acaba de decir «cada mejora que hacemos en este producto aparece aquí».",
+      "evidencia": "title: 'Revisión completa de las 18 plantillas'; changes: [impresión A4, número de versión en instrucciones, metadatos/instrucciones/autoría]. Ningún cambio de contenido. pl-mensual-escenarios.xlsx y calculadora-ticket-medio.xlsx siguen con 0 fórmulas y 0 valores tras esa «revisión completa».",
+      "fix": "Retitular a lo que fue («Mejoras de impresión y metadatos en las 18 plantillas») y reservar «revisión completa» para la v1.2 en la que se arreglen las plantillas vacías y las cifras."
+     },
+     {
+      "id": "COM-28",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 5, apartados «Licencias y permisos obligatorios» y «Diferencias por Comunidad Autónoma»",
+      "hallazgo": "Dos imprecisiones en el capítulo legal, que es el que más confianza tiene que sostener: la «licencia C3» se presenta como categoría nacional (y se repite como requisito absoluto en el cap. 7 y en checklist-legal.xlsx fila 15) cuando es nomenclatura de ordenanza municipal, no estatal; y CIRCE se atribuye a Andalucía cuando es la plataforma estatal de constitución de sociedades (DUE), no un sistema autonómico de licencias de actividad.",
+      "evidencia": "Cap. 5: «Un restaurante gastronómico necesita licencia C3 (restaurante con cocina profesional completa separada físicamente del comedor)» y, tres párrafos más abajo, su propio apartado de CCAA describe vías distintas por territorio (Madrid LEPAR con declaración responsable, Cataluña con estudio acústico), lo que desmiente el «necesita C3». «Andalucía: plataformas telemáticas CIRCE simplifican trámites». Cap. 7: «Sin esto, no hay licencia C3».",
+      "fix": "Reformular a «licencia de actividad (la clasificación y el nombre dependen de la ordenanza municipal; en algunos municipios se denomina C3)» en los tres sitios, y corregir la línea de Andalucía (CIRCE/DUE es estatal y sirve para constituir la sociedad, no para la licencia de actividad)."
+     },
+     {
+      "id": "COM-29",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 22 «Tendencias 2025-2026» (y grid.chapters[21] de la landing)",
+      "hallazgo": "El capítulo de tendencias —y su tarjeta en la landing— llevan en el título un año ya pasado, en un producto que se vende en agosto de 2026 y cuya portada dice «Guía España 2026». Es el defecto de fecha caduca que ya nos costó dinero en las librerías de prompts.",
+      "evidencia": "Heading 1: «22. Tendencias 2025-2026». Portada del mismo docx: «65 Plazas de Aforo — Guía España 2026». grid.chapters[21].title: 'Tendencias 2025-2026'.",
+      "fix": "Retitular a «Tendencias 2026-2027» y revisar que el contenido siga vigente (fermentación, brasa, counter dining y maridaje sin alcohol lo están). Cambiar también la tarjeta de la landing."
+     },
+     {
+      "id": "COM-30",
+      "severidad": "media",
+      "fichero": "guia-restaurante-gastronomico.docx / calculadora-capex.xlsx / plan-financiero-3-anos.xlsx",
+      "ubicacion": "docx tabla 0 fila «Fondo de maniobra (3-6 meses)»; calculadora-capex!B15; plan-financiero!Inversión B26",
+      "hallazgo": "La partida que la propia guía señala como la más subestimada aparece etiquetada con dos horizontes distintos y con un tercero en el consejo del chef, todos con las mismas cifras. Con los 60.000€ del rango bajo no se cubren ni 3 meses de la estructura que la guía describe.",
+      "evidencia": "docx tabla 0: «Fondo de maniobra (3-6 meses) | 60.000€ | 120.000€ | 200.000€». calculadora-capex.xlsx!B15: «Fondo de maniobra (6 meses)» con C15=60000, D15=120000, E15=200000 (idénticos). plan-financiero-3-anos.xlsx!Inversión B26: «Fondo de maniobra (6 meses)». Consejo del cap. 4: «Un gastronómico tarda 6-12 meses en alcanzar velocidad de crucero. Sin fondo, cierras antes de despegar.» Contraste con COM-10: sólo el personal cuesta 556K-1M€/año, es decir 46-84K€/mes.",
+      "fix": "Unificar el rótulo y recalcular la partida contra el coste mensual real de estructura (personal + alquiler + fijos) por los meses que el propio consejo recomienda. Es la partida que decide si el cliente cierra en el mes 8."
+     },
+     {
+      "id": "COM-31",
+      "severidad": "media",
+      "fichero": "checklist-legal.xlsx, checklist-equipamiento-cocina.xlsx, checklist-diseno-sala.xlsx, checklist-vajilla-cristaleria.xlsx, checklist-appcc.xlsx, checklist-marketing-preapertura.xlsx, checklist-contratacion.xlsx, checklist-inspeccion-michelin-repsol.xlsx",
+      "ubicacion": "columna G 'Coste Est. (€)' de los 8 ficheros; no existe fila de total en ninguno",
+      "hallazgo": "Los 8 checklists traen la columna de coste rellena en todas sus filas —es información valiosa y trabajada— y ninguno la suma. El comprador tiene delante 313.290€ de presupuesto de apertura repartido en 8 ficheros y no puede leer ni un subtotal sin hacerlo a mano; ninguno de los 8 libros tiene una sola fórmula.",
+      "evidencia": "Sumas reales (calculadas por mí, no presentes en el fichero): equipamiento 112.070€, sala 108.200€, vajilla 30.230€, legal 23.980€, marketing 22.800€, michelin 11.000€, APPCC 3.400€, contratación 1.610€. Tras el último ítem de cada hoja sólo hay el pie 'AI Chef Pro · aichef.pro — Restaurante Gastronómico'.",
+      "fix": "Añadir fila TOTAL con =SUM(G5:Gn) y, mejor aún, subtotales por categoría con SUMIF sobre la columna B. Es una fórmula por fichero y convierte 8 listas en un presupuesto de apertura — que además permitiría cruzarlo con la calculadora CAPEX."
+     },
+     {
+      "id": "COM-32",
+      "severidad": "baja",
+      "fichero": "plan-financiero-3-anos.xlsx / calculadora-capex.xlsx",
+      "ubicacion": "plan-financiero!Inversión A5:E27 (22 partidas) vs calculadora-capex!CAPEX A5:F17 (12 partidas)",
+      "hallazgo": "Dos herramientas del mismo pack piden la misma información de CAPEX con desgloses distintos y sin ninguna referencia cruzada, y sus totales no coinciden. El cliente rellena dos veces y obtiene dos cifras.",
+      "evidencia": "plan-financiero!Inversión: 22 conceptos, sin rangos de referencia, C27='=SUM(C5:C26)'. calculadora-capex!CAPEX: 12 categorías con rangos bajo/medio/alto (totales 373.000/703.000/1.275.000) y F17 para el presupuesto propio. Ni una fórmula enlaza los dos libros, y ninguna instrucción explica cuál usar.",
+      "fix": "Dejar la calculadora CAPEX como única entrada y que la hoja Inversión del plan financiero la referencie (o eliminar el solape agrupando las 22 partidas en las 12 categorías). Y añadir en ambas Instrucciones la frase de qué fichero es la fuente."
+     },
+     {
+      "id": "COM-33",
+      "severidad": "baja",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "hoja 'Escandallo', columna G (G7:G26) y columna H (H7:H26)",
+      "hallazgo": "La columna 'Cantidad Neta' se calcula pero no la usa nadie: la merma que el usuario introduce no afecta al coste ni al PVP. Un cocinero que ponga 40% de merma en una alcachofa verá el mismo coste que con 0%, y las instrucciones le han pedido explícitamente ese dato.",
+      "evidencia": "G7='=D7*(1-F7)' pero H7='=D7*E7' (cantidad BRUTA × precio); G no aparece en ninguna fórmula posterior. H27='=SUM(H7:H26)'. Instrucciones!A6: «Introduce ingredientes, gramaje, precio y merma»; A7: «El coste total y PVP sugerido se calculan automáticamente».",
+      "fix": "O bien documentar en la cabecera que el precio es de compra en bruto y la merma es informativa, o —más útil— invertir el modelo: que el usuario introduzca la cantidad NETA de la receta y G calcule la bruta a comprar (=D/(1-F)), con H=G*E. Así la merma pesa donde debe."
+     },
+     {
+      "id": "COM-34",
+      "severidad": "baja",
+      "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+      "ubicacion": "hoja 'Sheet', filas 35 y 38 (categoría 'Reputación')",
+      "hallazgo": "Dentro de un checklist titulado «Inspección Michelin/Repsol» se presupuestan 3.000€ en «invitaciones estratégicas a críticos y periodistas» y 5.000€ en eventos, contiguos a ítems de estrella. El propio capítulo 17 de la guía explica que los inspectores son anónimos y evalúan sólo el plato, así que la yuxtaposición sugiere —sin decirlo— que la estrella se puede empujar con invitaciones, que es justo lo que Michelin niega.",
+      "evidencia": "Fila 38: 'Reputación | Invitaciones estratégicas a críticos y periodistas | Chef | 3000'. Fila 35: 'Participación en eventos gastronómicos (Madrid Fusión, etc.) | Chef | 5000'. Cap. 17: «La Guía Michelin envía inspectores anónimos que evalúan exclusivamente lo que hay en el plato».",
+      "fix": "Separar la categoría 'Reputación' a un bloque propio rotulado «Prensa y notoriedad (no influye en la inspección)» o moverla al checklist de marketing, y añadir en la fila 38 la nota de que no aplica a inspectores."
+     },
+     {
+      "id": "COM-35",
+      "severidad": "baja",
+      "fichero": "manual-servicio-sala.docx",
+      "ubicacion": "apartado 3, «Servicio de Vinos»",
+      "hallazgo": "El protocolo de servicio de vino ordena servir «comenzando por las señoras», criterio de género retirado hace años del estándar de fine dining (hoy se sirve por el invitado de honor y se continúa en sentido antihorario). En un manual que se vende como «estándar fine dining para formar a tu equipo», es lo primero que un maître formado marcaría en rojo.",
+      "evidencia": "«Presenta la botella, descorcha en mesa, sirve pequeña muestra al anfitrión, sirve a los demás comenzando por las señoras.»",
+      "fix": "Sustituir por «sirve al invitado de honor y continúa en sentido antihorario, terminando por el anfitrión». Un renglón."
+     },
+     {
+      "id": "COM-36",
+      "severidad": "baja",
+      "fichero": "guia-restaurante-gastronomico.docx",
+      "ubicacion": "cap. 2, «Datos clave del sector» (y datos sueltos en cap. 5, 17, 18 y 19)",
+      "hallazgo": "El capítulo de mercado se apoya en cifras precisas y perecederas sin fuente ni fecha de corte. Son datos que cambian cada noviembre con la gala Michelin y que un comprador del sector verifica en un minuto; sin fuente, un solo número desfasado desacredita el capítulo entero.",
+      "evidencia": "«306 restaurantes con Estrella Michelin (2026)… 12 con 3 estrellas, 40 con 2 estrellas, 254 con 1 estrella» (suma internamente correcta), «más de 600 restaurantes con Soles», «factura más de 3.000 millones de euros anuales», «+12% anual», «El 85% de los restaurantes con Estrella Michelin en España están fuera de Madrid y Barcelona», «Valencia: tasas reducidas (~752€)», «12 inspectores en España», «70 inspectores» de Repsol, «1.120 expertos… 28 regiones» en 50 Best. Ninguna cifra lleva fuente.",
+      "fix": "Añadir fuente y fecha a cada dato («Guía Michelin España 2026, gala de nov-2025») y verificar el reparto de estrellas contra la última gala antes de republicar; o pasar a formulaciones robustas («más de 300 estrellas»). Cuesta un párrafo y blinda el capítulo que más se cita."
+     }
+    ]
+   }
+  }
+ }
+}
