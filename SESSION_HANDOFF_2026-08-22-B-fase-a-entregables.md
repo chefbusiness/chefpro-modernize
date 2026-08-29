@@ -530,3 +530,7 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   los no procesados (v1.1) fallan → exit 1 tras escribir el fichero. Se restauró `pl-mensual-escenarios.xlsx` desde el respaldo y se lanzó el APPLY
   completo (cadena en `scratchpad/guias/real3.log`). Pendiente menor: acotar ese gate a los ficheros procesados cuando se use `--fichero`.
 - **Research con fuentes para la guía PDF** (decisión 21) lanzado (opus + WebSearch) → `auditorias/guias-v2-research-sector.json`.
+- **Guías representante LIVE (`2a4062d`, deploy ready 09:49):** canario `--fichero` verificado (21 fórmulas, 2/2 hojas protegidas, 0 errores), restaurado
+  y APPLY completo con respaldo → 18 xlsx → censo 0 → gate offline 22/0 → no-latinos 0 → idempotencia desde lo aplicado 0 → gate LIVE 22 · 0 fallos →
+  md5 18/18. Los 3 docx y el PDF siguen v1.1 hasta T7. **T6 hermanos de guías LANZADO** (`guias-v2-hermanos-workflow.js`, runId `wf_0275b1de-bea`,
+  7 en serie). Pendiente T7: `documentos.py` + `guion_<pid>.py` + bridge.py (guía ≥ páginas prometidas, 2 bonus) cuando llegue el research con fuentes.
