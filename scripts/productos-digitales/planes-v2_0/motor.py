@@ -1486,8 +1486,16 @@ TILDES = {
 }
 #: Excepción legítima: la campana de extracción convive en el mismo libro con
 #: «Campaña lanzamiento RRSS», que sí es errata. Se resuelve por CONTEXTO.
+#: T7/panadería (2026-08-29): «Salida humos + campana + extractor» y
+#: «Obligatoria: campana + extractor + filtros» (2 celdas, `Inversion
+#: Inicial`!C11 y checklist F3!B12) no casaban con NINGUNA de las cuatro
+#: frases de arriba —todas esperan «extractorA», nunca «campana + extractor»
+#: con el sustantivo suelto y el «+» de por medio— así que la campana de
+#: humos de un obrador se acentuaba a «campaña», literalmente «Obligatoria:
+#: campaña + extractor + filtros». Se añade la forma con «+».
 EXCEPCIONES_CAMPANA = ('campana extractora', 'campana de extraccion',
-                       'campana extraccion', 'campana industrial')
+                       'campana extraccion', 'campana industrial',
+                       'campana + extractor', 'campana y extractor')
 
 #: Erratas puntuales medidas (TEC-26, TEC-23).
 ERRATAS = (
@@ -1576,6 +1584,20 @@ TILDES_EXTRA = {
     'busqueda': 'búsqueda', 'busquedas': 'búsquedas',
     'consejeria': 'consejería', 'consejerias': 'consejerías',
     'codigo': 'código', 'codigos': 'códigos',
+    # T7/panadería (2026-08-29), REF-08 (`…tapas-bar-ref.json`): cuatro de
+    # las palabras que el gate de ortografía daba por buenas y que
+    # sobreviven sin tilde en el corpus de esta familia. «gestion» no la
+    # coge la regla generativa `RX_CION` porque termina en «-tion», no en
+    # «-cion»/«-sion» (compárese con «gestión», que si se escribe con
+    # tilde SÍ es «-sión» pero SIN ella la letra previa es una «t»).
+    'fotografo': 'fotógrafo', 'fotografa': 'fotógrafa',
+    'urbanistico': 'urbanístico', 'urbanistica': 'urbanística',
+    'recien': 'recién', 'gestion': 'gestión',
+    # «frío» es hiato (í tónica junto a vocal fuerte): SIEMPRE lleva tilde,
+    # sea adjetivo, sustantivo o verbo («yo frío»). A diferencia de
+    # «critica»/«campana» no hay lectura legítima sin ella: seguro para
+    # generalizar sin guardián de contexto.
+    'frio': 'frío', 'fria': 'fría', 'frios': 'fríos', 'frias': 'frías',
     'clausula': 'cláusula', 'clausulas': 'cláusulas',
     # CRIT-05 — «crítico/crítica/críticos/críticas» llevan tilde SIEMPRE como
     # adjetivo y como sustantivo («la crítica»). Estaban clasificados como
@@ -1740,6 +1762,50 @@ def _reescribir_enlaces_internos(wb, viejo, nuevo):
     return tocados
 
 
+def _reescribir_cf_dv(wb, viejo, nuevo):
+    """REF-02 (`…tapas-bar-ref.json`, 2026-08-29): `_reescribir_referencias`
+    sólo recorre `ws.iter_rows()` — las fórmulas de CELDA—, nunca las de
+    `ws.conditional_formatting` ni las de `data_validations`. openpyxl no
+    las trata como «fórmulas de celda» y `ws.title = nuevo` no las toca: un
+    semáforo o una lista creados ANTES del renombrado (grupo_a construye el
+    libro con el nombre `'PyG 3 Anos'`; el §1.7 lo renombra DESPUÉS a
+    `'PyG 3 Años'`) se queda apuntando a la hoja vieja, y Excel lo señala al
+    abrir el fichero. Mismo patrón de sustitución que `_reescribir_referencias`,
+    aplicado a `rule.formula` y a `dv.formula1`/`dv.formula2`.
+    """
+    tocadas = 0
+
+    def _sub(m):
+        nombre = m.group(1) or m.group(2)
+        if nombre != viejo:
+            return m.group(0)
+        return "'" + nuevo + "'!"
+
+    for ws in wb.worksheets:
+        for cf in ws.conditional_formatting:
+            for regla in cf.rules:
+                formulas = getattr(regla, 'formula', None)
+                if not formulas:
+                    continue
+                for i, f in enumerate(formulas):
+                    if not isinstance(f, str) or '!' not in f:
+                        continue
+                    nuevo_f = RX_REF_HOJA.sub(_sub, f)
+                    if nuevo_f != f:
+                        formulas[i] = nuevo_f
+                        tocadas += 1
+        for dv in ws.data_validations.dataValidation:
+            for attr in ('formula1', 'formula2'):
+                f = getattr(dv, attr, None)
+                if not isinstance(f, str) or '!' not in f:
+                    continue
+                nuevo_f = RX_REF_HOJA.sub(_sub, f)
+                if nuevo_f != f:
+                    setattr(dv, attr, nuevo_f)
+                    tocadas += 1
+    return tocadas
+
+
 def renombrar_hojas(wb, informe):
     """§1.7 — los nombres de hoja también llevan tilde.
 
@@ -1760,6 +1826,7 @@ def renombrar_hojas(wb, informe):
         ws.title = nuevo
         _reescribir_referencias(wb, viejo, nuevo)
         _reescribir_enlaces_internos(wb, viejo, nuevo)
+        _reescribir_cf_dv(wb, viejo, nuevo)
         hechos[viejo] = nuevo
         RENOMBRES[viejo] = nuevo
         if informe is not None:

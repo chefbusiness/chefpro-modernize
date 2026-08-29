@@ -318,15 +318,26 @@ RX_INGRESO = re.compile(r'^(ventas|ingresos|otros\b)', re.I)
 #: TEC-20 y `NUEVO-02`: la base NO puede incluir circulante, stock ni
 #: imprevistos).
 AMORT_DEFECTO = {
+    # ⚠️ T7/panadería (2026-08-29): «Amasadora», «Divisora + boleadora»,
+    # «Laminadora» y «Salida humos + ventilación obrador» no casaban con
+    # NINGÚN grupo y `_clasificar_amortizable` los mandaba por defecto a
+    # 'no' — un obrador entero (18.000 € de horno aparte) quedándose fuera
+    # de la base amortizable, la misma familia de defecto que TEC-20/
+    # `NUEVO-02`, sólo que por FALTA de patrón en vez de por sobra. Se
+    # añaden `humos`/`ventilaci[oó]n` a obra y el equipamiento específico de
+    # panadería a maquinaria; son términos que no aparecen en ningún otro
+    # hermano medido, así que la ampliación no reclasifica nada ajeno.
     'obra': (r'obra civil|adecuaci|reforma|instalaci|fontaner|el[eé]ctric|'
              r'climatizaci|extracci|proyecto t[eé]cnico|decoraci|interiorismo|'
-             r'rotulaci|campana extractora|licencia de obras',),
+             r'rotulaci|campana extractora|licencia de obras|humos|'
+             r'ventilaci[oó]n',),
     'maquinaria': (r'equipamiento|maquina|m[aá]quina|horno|nevera|c[aá]mara|'
                    r'vitrina|mobiliario|barra|mostrador|tpv|vajilla|'
                    r'cristaler|cuberter|menaje|plancha|molinillo|lavavajillas|'
                    r'grifo|freidora|cafetera|batidora|tostadora|mesa|silla|'
                    r'taburete|estanter|fregadero|vinoteca|terraza|'
-                   r'sandwichera|expositor|comandero|software|utensilios',),
+                   r'sandwichera|expositor|comandero|software|utensilios|'
+                   r'amasadora|divisora|boleadora|laminadora|balanza',),
     # ⚠️ CRIT-02 — «Primera compra de despensa y cámaras» (6.500 €) y «Primera
     # compra de bodega y barra» (5.500 €) casaban con `c[aá]mara` y con
     # `barra` y se amortizaban a 10 años como si fueran maquinaria, inflando
@@ -3264,12 +3275,18 @@ class Plan(object):
             # entre las tres primeras suman 26 celdas VERDES con validación
             # de datos, que por la convención del propio fichero son
             # justamente lo que hay que teclear.
-            '3. Sólo «3. Punto de Equilibrio» se deriva entera de lo '
-            'anterior. En las otras tres hojas sí hay celdas verdes que '
-            'puedes tocar: el escenario pesimista y el optimista en «4. '
-            'Escenarios», la estacionalidad y la rampa de arranque en «6. '
-            'Tesorería 12 meses», y las cuatro fuentes alternativas de '
-            'financiación en «7. Financiación». Todo lo demás se calcula.',
+            # REF-10 (`…tapas-bar-ref.json`, 2026-08-29): este párrafo citaba
+            # los nombres de hoja NUMERADOS del molde A-α aunque el libro
+            # fuera A-β (hojas SIN numerar): se compone con el título REAL
+            # de cada hoja, ya resuelto en `__init__` (`self.ws_<clave>`),
+            # para que valga en los dos moldes.
+            '3. Sólo «' + self.ws_equilibrio.title + '» se deriva entera de '
+            'lo anterior. En las otras tres hojas sí hay celdas verdes que '
+            'puedes tocar: el escenario pesimista y el optimista en «'
+            + self.ws_escenarios.title + '», la estacionalidad y la rampa '
+            'de arranque en «' + self.ws_tesoreria.title + '», y las '
+            'cuatro fuentes alternativas de financiación en «'
+            + self.ws_financiacion.title + '». Todo lo demás se calcula.',
             '4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin '
             'IVA, divide entre 1,10 en comida y entre 1,21 en bebida '
             'alcohólica; el IVA de la inversión se adelanta y se recupera con '
@@ -3417,6 +3434,13 @@ class Plan(object):
                          or cols.get('tramite / accion') or cols.get('hito'))
             if col_tarea is None:
                 continue
+            # REF-04 (`…tapas-bar-ref.json`, 2026-08-29): en el molde C2 la
+            # columna «OK» (la casilla ☐/✓/N/A) va ANTES de la de tarea, y
+            # las altas se escribían sin nada en ella — el desplegable que
+            # `motor.checklist_ok_y_contador` añade después las deja
+            # marcables, pero en blanco, distintas a simple vista de las
+            # filas heredadas.
+            col_ok = cols.get('ok')
             # (a) reemplazos de contenido, celda a celda
             for r in range(1, ws.max_row + 1):
                 for c in range(1, ws.max_column + 1):
@@ -3465,19 +3489,33 @@ class Plan(object):
                     ws, cab, col_tarea, destino,
                     cabecera=reglas.get('cabecera_altas'),
                     rx_fase_final=reglas.get('fase_final'),
-                    fase_final_nueva=reglas.get('fase_final_nueva'))
+                    fase_final_nueva=reglas.get('fase_final_nueva'),
+                    col_ok=col_ok)
         self.anota('Checklist: ' + str(tocados) + ' celdas corregidas y '
                    + str(anadidos) + ' trámites nuevos (§2.10)')
         return tocados, anadidos
 
     def _altas_checklist(self, ws, cab, col_tarea, altas, cabecera=None,
-                         rx_fase_final=None, fase_final_nueva=None):
+                         rx_fase_final=None, fase_final_nueva=None,
+                         col_ok=None):
         """Añade trámites conservando la estructura de fases del fichero.
 
         IDEMPOTENTE por CONTENIDO: los que ya están no se vuelven a añadir. Sin
         esto la 2.ª pasada duplicaba los diez trámites nuevos y el contador del
         checklist pasaba de 59 a 69 sin que nadie lo hubiera pedido.
         """
+        # REF-04 — la marca de «sin marcar» se COPIA de una fila heredada
+        # (nunca se inventa `motor.VOCAB_MARCA[1]`, que es «—»: los ficheros
+        # de esta familia ya traen su propio vocabulario, «☐»/«✓»/«N/A», y
+        # escribir un símbolo distinto del que usa el resto de la hoja
+        # rompería la lectura visual de las filas heredadas).
+        marca_vacia = None
+        if col_ok:
+            for r in range(cab + 1, ws.max_row + 1):
+                v = ws.cell(row=r, column=col_ok).value
+                if isinstance(v, str) and v.strip():
+                    marca_vacia = v
+                    break
         existentes = set()
         for r in range(cab + 1, ws.max_row + 1):
             v = ws.cell(row=r, column=col_tarea).value
@@ -3567,6 +3605,8 @@ class Plan(object):
         for _hoja, fase, tarea, responsable, plazo, nota in altas:
             _desmerge_fila(ws, fila)
             valores = {col_tarea: tarea}
+            if col_ok and marca_vacia:
+                valores[col_ok] = marca_vacia
             if usa_fase:
                 valores[cols['fase']] = fase
             if 'responsable' in cols:
