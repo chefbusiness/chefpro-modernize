@@ -488,6 +488,40 @@ def _unmerge(ws, m):
             pass
 
 
+def _borrar_fila(ws, r):
+    """`delete_rows` + arreglo de las COMBINADAS, que openpyxl no mueve.
+
+    Medido: al borrar la fila duplicada del RGSEAA, las seis cabeceras de
+    fase (combinadas `A4:F4`, `A15:F15`…) se quedaban en su posición vieja.
+    Las filas de contenido que subían a esas posiciones caían DENTRO de una
+    combinada muerta y openpyxl las serializa VACÍAS: se perdían «Reforma y
+    acondicionamiento del local» y «Publicar ofertas de empleo» sin que nada
+    lo dijera.
+    """
+    from openpyxl.worksheet.cell_range import MultiCellRange
+    rangos = []
+    for m in list(ws.merged_cells.ranges):
+        cr = CellRange(str(m))
+        if cr.min_row <= r <= cr.max_row and cr.min_row == cr.max_row:
+            continue                       # la combinada de la fila borrada
+        if cr.min_row > r:
+            cr.shift(row_shift=-1)
+        elif cr.max_row >= r:
+            cr.max_row -= 1
+        rangos.append(str(cr))
+    ws.delete_rows(r)
+    ws.merged_cells = MultiCellRange()
+    for ref in rangos:
+        ws.merged_cells.add(ref)
+    alturas = sorted((f, d.height) for f, d in ws.row_dimensions.items()
+                     if d.height)
+    for fila_, alto in alturas:
+        if fila_ > r:
+            ws.row_dimensions[fila_ - 1].height = alto
+    if alturas and alturas[-1][0] > r:
+        ws.row_dimensions[alturas[-1][0]].height = None
+
+
 def _desmerge_fila(ws, fila):
     """Deshace cualquier combinada que toque la fila: `MergedCell.value` es
     de sólo lectura y escribir en ella revienta con AttributeError."""
@@ -2435,14 +2469,28 @@ class Plan(object):
                  'optimista': [None, None, None]}
         patrones = ((r'^(clientes|cubiertos)', 0), (r'^ticket', 1),
                     (r'd[ií]as', 2))
+        # ⚠️ RT-02 — el bucle se quedaba con la ÚLTIMA fila que casaba, y la
+        # hoja que este mismo grupo escribe tiene DOS filas que empiezan por
+        # «Cubiertos/día»: el driver (input) y «Cubiertos/día para el
+        # equilibrio» (fórmula). En la 2.ª pasada leía la fórmula, `_num`
+        # devolvía None y los tres drivers de los escenarios se recalculaban
+        # desde el caso base: idempotencia rota en el molde A-β, que es el de
+        # cuatro de los diez productos. Se toma la PRIMERA fila que casa y
+        # sólo si trae un número, no una fórmula.
         for r in range(cab + 1, ws.max_row + 1):
             rot = motor._rotulo_de_fila(ws, r, max_col=1)
             if not rot:
                 continue
             for patron, idx in patrones:
-                if re.search(patron, rot, re.I):
-                    fuera['pesimista'][idx] = _num(ws['B' + str(r)].value)
-                    fuera['optimista'][idx] = _num(ws['D' + str(r)].value)
+                if fuera['pesimista'][idx] is not None:
+                    continue
+                if not re.search(patron, rot, re.I):
+                    continue
+                b, d = ws['B' + str(r)].value, ws['D' + str(r)].value
+                if motor._es_formula(b) or motor._es_formula(d):
+                    continue
+                fuera['pesimista'][idx] = _num(b)
+                fuera['optimista'][idx] = _num(d)
         base = [self.p.valor('cubiertos_dia'), self.p.valor('ticket_medio'),
                 self.p.valor('dias_apertura')]
         for clave, factor in (('pesimista', 0.72), ('optimista', 1.25)):
@@ -3310,7 +3358,7 @@ class Plan(object):
                 for r in range(ws.max_row, cab, -1):
                     v = ws.cell(row=r, column=col_tarea).value
                     if isinstance(v, str) and motor.norm(v) in suprimir:
-                        ws.delete_rows(r)
+                        _borrar_fila(ws, r)
                         tocados += 1
                         self.anota(ws.title + ': fila ' + str(r)
                                    + ' BORRADA (no vaciada) — ' + v[:60])
@@ -3719,6 +3767,8 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'int1': R(fin, 'Intereses del año 1'),
         'cap2': R(fin, 'Devolución de principal del año 2'),
         'dif': R(fin, 'Diferencia (origen - usos)'),
+        'dif_pct': R(fin, 'Diferencia sobre los usos (%)'),
+        'holgura_max': R(fin, 'Exceso de financiación admisible (%)'),
         'fondo_inv': R(inv, 'Colchón operativo hasta alcanzar el equilibrio'),
         'caja': R(inv, 'NECESIDAD TOTAL DE CAJA AL ARRANQUE'),
         'iva_inv': R(inv, 'IVA soportado sobre la inversión (recuperable)'),
@@ -3743,8 +3793,73 @@ def demos(carpeta, demos_dir, pid, origen=None):
                              + ', '.join(sorted(faltan)))
         return res
 
+    # RC-32 — el mapa de celdas de §4.2 de la SPEC quedó OBSOLETO al
+    # reestructurar el libro en T1: seis de las nueve referencias que manda
+    # citar apuntan hoy a otra magnitud (`1!B46` es el IVA soportado, no la
+    # inversión; `2!B34` son 600 € de PRL, no el resultado neto). Si
+    # `guion_<pid>.py` se escribe siguiendo la tabla, el docx publicará el
+    # IVA como inversión total y el gate de cifras lo dará por bueno porque
+    # coincidirá con la celda citada. Aquí se publica el mapa REAL, leído del
+    # fichero por RÓTULO, para que T9 cite celdas y no coordenadas de memoria.
+    mapa_t9 = {}
+    for magnitud, hoja_, rotulo, columna in (
+            ('inversion_total', inv, 'INVERSIÓN TOTAL (suma de los bloques)',
+             'B'),
+            ('capex', inv, 'CAPEX (inversión sin el fondo de maniobra)', 'B'),
+            ('iva_de_la_inversion', inv,
+             'IVA soportado sobre la inversión (recuperable)', 'B'),
+            ('necesidad_de_caja', inv,
+             'NECESIDAD TOTAL DE CAJA AL ARRANQUE', 'B'),
+            ('fondo_de_maniobra', inv,
+             'Colchón operativo hasta alcanzar el equilibrio', 'B'),
+            ('amortizacion_anual', inv,
+             'Amortización anual del inmovilizado', 'B'),
+            ('facturacion_ano_1', pyg, 'INGRESOS TOTALES (sin IVA)', 'B'),
+            ('facturacion_ano_2', pyg, 'INGRESOS TOTALES (sin IVA)', 'C'),
+            ('facturacion_ano_3', pyg, 'INGRESOS TOTALES (sin IVA)', 'D'),
+            ('margen_bruto', pyg, 'MARGEN BRUTO', 'B'),
+            ('resultado_antes_de_impuestos', pyg,
+             'RESULTADO ANTES DE IMPUESTOS', 'B'),
+            ('resultado_neto_ano_1', pyg, 'RESULTADO NETO', 'B'),
+            ('resultado_neto_ano_3', pyg, 'RESULTADO NETO', 'D'),
+            ('margen_neto_pct', pyg, 'Resultado neto / Ventas', 'B'),
+            ('ratio_personal_pct', pyg, 'Coste de personal / Ventas', 'B'),
+            ('ratio_cogs_pct', pyg, 'Coste de mercancía / Ventas', 'B'),
+            ('coste_de_personal', pyg,
+             'Personal (nóminas + Seguridad Social)', 'B'),
+            ('plantilla_personas', per, 'TOTAL PLANTILLA', 'B'),
+            ('plantilla_jornadas', per, 'TOTAL PLANTILLA', 'C'),
+            ('coste_plantilla_ano', per, 'TOTAL PLANTILLA', 'G'),
+            ('break_even_contable_dia', eq, 'Cubiertos necesarios al día',
+             'B'),
+            ('break_even_caja_dia', eq, 'Cubiertos necesarios al día (caja)',
+             'B'),
+            ('break_even_ingresos', eq, 'Ingresos necesarios al año (caja)',
+             'B'),
+            ('saldo_minimo_de_caja', tes, 'Saldo mínimo del año', 'B'),
+            ('mes_de_caja_minima', tes, 'Mes en el que la caja toca fondo',
+             'B'),
+            ('payback_anos', tes, 'Payback del proyecto (años)', 'B'),
+            ('cuota_anual_prestamo', fin,
+             'Cuota anual durante la amortización', 'B'),
+            ('dscr_minimo', fin, 'DSCR mínimo de todo el cuadro', 'B'),
+            ('origen_menos_usos', fin, 'Diferencia (origen - usos)', 'B')):
+        mapa_t9[magnitud] = R(hoja_, rotulo, columna)
+    res['mapa_de_celdas_para_T9'] = {
+        'fichero': os.path.basename(path),
+        'aviso': 'Mapa REAL leído del fichero por rótulo. La tabla de §4.2 de '
+                 'la SPEC está obsoleta desde T1 (RC-32): el guion tiene que '
+                 'resolver por RÓTULO, no por coordenada, y abortar si el '
+                 'rótulo no aparece.',
+        'celdas': mapa_t9,
+        'sin_localizar': sorted(k for k, v in mapa_t9.items() if v is None)}
+
     xl = _pycel(path)
     base = dict((k, _ev(xl, v)) for k, v in celdas.items() if v)
+    res['mapa_de_celdas_para_T9']['valores'] = dict(
+        (k, (round(_ev(xl, v), 4) if isinstance(_ev(xl, v), float)
+             else _ev(xl, v)))
+        for k, v in mapa_t9.items() if v)
     res['demostraciones_2_11']['caso_base'] = dict(
         (k, (round(v, 2) if isinstance(v, float) else v))
         for k, v in base.items())
@@ -4090,6 +4205,24 @@ def demos(carpeta, demos_dir, pid, origen=None):
                                  + ' a ' + str(v) + ' (regla ' + regla + ')')
     res['demostraciones_2_11']['12_robustez_de_los_divisores'] = {
         'comprobaciones': robustez, 'ok': all(r['ok'] for r in robustez)}
+
+    # 12-bis (RD-34) — el origen de fondos tiene que CUBRIR los usos, y sin
+    # pasarse: el semáforo sólo comprobaba que la diferencia no fuese
+    # negativa, así que un exceso de 20.000 € pasaba igual de verde.
+    dif = num(base.get('dif'))
+    dif_pct = num(base.get('dif_pct'))
+    tope = num(base.get('holgura_max'))
+    ok12b = (dif is not None and dif >= -0.01
+             and dif_pct is not None and tope is not None
+             and dif_pct <= tope + 1e-9)
+    res['demostraciones_2_11']['12bis_origen_cubre_los_usos'] = {
+        'diferencia': dif, 'diferencia_pct': dif_pct, 'tope': tope,
+        'ok': ok12b}
+    if not ok12b:
+        res['fallos'].append('§2.11.12-bis / RD-34: el origen de fondos no '
+                             'cuadra con los usos (diferencia ' + str(dif)
+                             + ' €, ' + str(dif_pct) + ' sobre los usos, '
+                             'tope ' + str(tope) + ')')
 
     # 13 (RT-18) — libro EN BLANCO: además de no dar errores, ninguna celda
     # puede imprimir «0 €» ni «0,0 %». Un libro vacío entregado así parece un

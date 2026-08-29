@@ -601,7 +601,7 @@ def demo_iferror(carpeta, nombres, demos_dir):
 
 def demo_moldes():
     """Los 30 xlsx de los 10 productos se clasifican (§1.1). Solo LECTURA."""
-    fuera, fallos = [], []
+    fuera, fallos, largos = [], [], []
     for pid in PRODUCTOS:
         carpeta = os.path.join(DL, pid)
         if not os.path.isdir(carpeta):
@@ -613,6 +613,11 @@ def demo_moldes():
                 det = motor.detectar(wb, n)
                 fuera.append({'producto': pid, 'fichero': n,
                               'tipo': det['tipo'], 'molde': det['molde']})
+                # RC-29 — el aviso de openpyxl («Title is more than 31
+                # characters») se pierde entre la salida del run y se queda
+                # sin reportar; al reescribir el fichero, Excel puede pedir
+                # reparación. Aquí se MIDE sobre los 30 xlsx de la familia.
+                largos += motor.gate_nombres_hoja(wb, pid + '/' + n)
             except motor.MoldeDesconocido as e:              # noqa: BLE001
                 fallos.append(str(e))
     moldes = {}
@@ -620,6 +625,7 @@ def demo_moldes():
         moldes[r['molde']] = moldes.get(r['molde'], 0) + 1
     return {'xlsx_clasificados': len(fuera), 'por_molde': moldes,
             'detalle': fuera, 'fallos': fallos,
+            'nombres_de_hoja_demasiado_largos': largos,
             'ok': not fallos and len(fuera) == 30}
 
 
@@ -965,11 +971,18 @@ def main():
     # RC-29 — los nombres de pestaña de más de 31 caracteres los corrige el
     # módulo de contenido de su producto (parrillero, T8): aquí se MIDEN para
     # que el aviso de openpyxl deje de perderse entre la salida.
-    if g9['nombres_hoja']:
-        pendientes.append('RC-29: ' + str(len(g9['nombres_hoja']))
-                          + ' nombres de hoja de más de 31 caracteres ('
-                          + ', '.join(x['fichero'] + '!' + x['hoja']
-                                      for x in g9['nombres_hoja']) + ')')
+    largos = (g9['nombres_hoja']
+              + ((demos.get('deteccion_de_moldes') or {})
+                 .get('nombres_de_hoja_demasiado_largos') or []))
+    if largos:
+        pendientes.append('RC-29: ' + str(len(largos)) + ' nombres de hoja de '
+                          'más de 31 caracteres, que Excel corta y puede '
+                          'obligar a reparar el fichero ('
+                          + ', '.join(x['fichero'] + '!' + x['hoja'] + ' ('
+                                      + str(x['longitud']) + ')'
+                                      for x in largos)
+                          + '); el renombrado va en el módulo de contenido de '
+                            'su producto')
     sin_prot = (demos.get('proteccion') or {}).get(
         'sin_proteger_por_falta_de_inputs') or []
     if sin_prot:

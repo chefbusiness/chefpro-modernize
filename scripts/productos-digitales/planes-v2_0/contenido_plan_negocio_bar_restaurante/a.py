@@ -69,11 +69,20 @@ CONCEPTO = 'Bar-Restaurante / Restaurante Casual'
 # `None` en coord/etiqueta/formato/nota = se queda el que trae `grupo_a`.
 # ==========================================================================
 SUPUESTOS = {
+    # RD-24 — la nota citaba MAL su fuente: presentaba el 1,8 como un TECHO
+    # de rotación cuando el documento del propio producto lo enuncia como
+    # «mínimo 1,8 covers por servicio por mesa» y, dos apartados después,
+    # como «rotación media de 1,8 servicios diarios en temporada alta». Y las
+    # 56 plazas iban escritas a mano, contradiciendo las «40 a 50 comensales
+    # en interior» del documento. Ahora el aforo vive en celda (B51), la
+    # rotación implícita se CALCULA (B50) y la nota cita literalmente.
     'cubiertos_dia': (
         None, None, 80, None,
-        'Sobre 56 plazas (12 mesas × 4 sillas + 8 taburetes de barra, hoja de '
-        'Inversión) son 1,43 rotaciones al día, por debajo del techo de 1,8 '
-        'que usa el propio plan',
+        'Comensales servidos al día de media del año, contando todos los '
+        'servicios. La rotación que implica sobre el aforo la calcula la '
+        'celda «Rotaciones al día implícitas» de esta misma hoja; el '
+        'documento del plan pide un MÍNIMO de 1,8 covers por mesa y servicio '
+        'en temporada alta',
         'recalibrado §7-bis.17 (v1.1: 55)'),
     'ticket_medio': (
         None, None, 17.20, None,
@@ -153,11 +162,19 @@ SUPUESTOS = {
         'Aportación de los socios. Con menos, el banco no entra: pide un '
         '35-40 % de fondos propios sobre la inversión',
         'parametrizado'),
+    # Recalibrado al alza porque la inversión creció al incorporar la
+    # terraza, las existencias iniciales y los imprevistos de obra que exige
+    # §2.2 (RD-02): con 110.000 € el origen de fondos se quedaba 16.629 €
+    # por debajo de la necesidad de caja y la hoja de Financiación lo
+    # marcaba en ROJO. La cifra sale de la propia celda «Préstamo que
+    # ajustaría el origen a la necesidad» de esa hoja.
     'prestamo': (
-        None, None, 110000, None,
+        None, None, 128000, None,
         'Principal solicitado. La hoja de Financiación comprueba que origen y '
-        'usos cuadran',
-        'parametrizado'),
+        'usos cuadran, y trae una celda que calcula el importe exacto que los '
+        'ajusta',
+        'recalibrado (v1.1: 110.000 €; la hoja de Financiación lo cuadra con '
+        'la necesidad de caja)'),
     'tipo_prestamo': (None, None, 0.06, None,
                       'Tipo nominal anual; pide oferta a dos entidades y a '
                       'una línea ICO antes de fijarlo', 'parametrizado'),
