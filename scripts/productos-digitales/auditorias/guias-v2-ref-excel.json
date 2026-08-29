@@ -1,0 +1,277 @@
+{
+  "lente": "TECNICA EXCEL (refutador) — guias-v2_0 sobre el representante guia-restaurante-gastronomico, con contraste en guia-panaderia-obrador (molde B) y guia-dark-kitchen (molde C/D). Copia propia generada con CLAUDE_SCRATCHPAD=.../propio-ref-excel python3 main.py --producto guia-restaurante-gastronomico --dry-run (18 xlsx, 1.176 formulas nuevas, informe .../ref-excel.json). Herramientas: openpyxl 3.x + pycel 1.0b30. Todos los libros llevan calcPr fullCalcOnLoad=1, asi que lo que ve el cliente es la evaluacion de EXCEL, no la cache inyectada ni la de pycel.",
+  "hallazgos": [
+    {
+      "id": "RT-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/escandallo-maestro.xlsx (+ budget-bodega.xlsx, plantilla-turnos-brigada.xlsx)",
+      "ubicacion": "escandallo-maestro.xlsx:'Ficha (plantilla)'!H28 · budget-bodega.xlsx:Bodega!N56 y O56 · plantilla-turnos-brigada.xlsx:'Turnos Semana'!K33 y P33",
+      "hallazgo": "La guarda de «libro en blanco» usa COUNTIF(rango,\"<>\")=0 sobre rangos que contienen FORMULAS que devuelven \"\". Excel y pycel discrepan: pycel devuelve 0 (guarda TRUE -> \"\"), Excel devuelve el numero de celdas con formula (guarda FALSE -> SUM = 0). Como los libros llevan fullCalcOnLoad=1, el cliente ve la respuesta de Excel: 0,00 € donde el gate certifico \"\". Es el unico punto donde el motor apoya una regla de negocio en una semantica en la que su verificador miente.",
+      "evidencia": "H28 = '=IF(COUNTIF(H7:H26,\"<>\")=0,\"\",SUM(H7:H26))' y H7:H26 son 20 formulas '=IFERROR(IF(OR($D7=\"\",$F7>=1),\"\",$D7/(1-$F7)),\"\")'. Prueba controlada hecha hoy: libro con A1:A5 = '=IF(1=1,\"\",1)' -> pycel COUNTIF(A1:A5,\"<>\") = 0 (medido), mientras que en Excel/LibreOffice una formula que devuelve \"\" NO es celda vacia para COUNTIF/COUNTA (solo COUNTBLANK la cuenta como vacia) y el resultado es 5. Mismo patron en budget-bodega!N56='=IF(COUNTIF(N5:N54,\"<>\")=0,\"\",SUM(N5:N54))' con N5:N54 = 50 formulas, y en turnos!P33='=IF(COUNTIF(P6:P30,\"<>\")=0,\"\",SUM(P6:P30))' con P6:P30 = 24 formulas. Consecuencia medida por etiqueta: «COSTE TOTAL DE LA FICHA (€)» 0,00 €, «TOTAL BODEGA» 0,00 €, «TOTAL BRIGADA» 0,0 h y 0,00 €.",
+      "fix": "Sustituir la guarda por una que no dependa de esa semantica: COUNT(rango) para rangos numericos (COUNT ignora el texto \"\") o SUMPRODUCT(--(rango<>\"\")). En escandallo H28: '=IF(COUNT(H7:H26)=0,\"\",SUM(H7:H26))'. Idem N56/O56 de bodega y K33/P33 de turnos. Y añadir al gate de main.py una comprobacion Excel-fiel de este patron (o prohibir COUNTIF(...,\"<>\") sobre rangos con formulas), porque pycel no puede verlo."
+    },
+    {
+      "id": "RT-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'P&L Mensual'!B6:B9, B13:B14, B20:B31 (vacias) -> B10, B15, B17, B32, B34, B36, B37",
+      "hallazgo": "El libro que la SPEC declara FUENTE UNICA de inversion, coste de personal, fondo de maniobra y headcount (§7-bis.7, §6.6) se entrega sin un solo dato en la columna de entrada. Las siete celdas de resultado quedan cacheadas a 0 con formato de euro: el cliente abre «el plan financiero que lleva al banco» y lee TOTAL INGRESOS 0,00 €, EBITDA 0,00 € y EBIT 0,00 €. Ademas rompe por construccion la convencion de familia («sin dato» se escribe \"\", nunca 0), que si se respeta en la columna C de porcentajes de la misma hoja.",
+      "evidencia": "Lectura data_only del dry-run: B10='=SUM(B6:B9)' cache=0.0 fmt='#,##0.00 €'; B15 cache=0.0; B17='=B10-B15' cache=0.0; B32='=SUM(B20:B29)+SUM(B31:B31)' cache=0.0; B34='=B17-B32' cache=0.0 bajo A34='EBITDA'; B36='=B30' cache=0.0; B37='=B34-B36' cache=0.0. En la misma fila, C34='=IF($B$10=0,\"\",B34/$B$10)' si devuelve \"\". El propio informe del motor lo confirma: demostraciones.grupo_a.plan_financiero.pl_precargado = 0.0 y proyeccion_con_el_pl_en_blanco.B11_ingresos_ano_1 = \"\".",
+      "fix": "Precargar B6:B9/B13:B14/B20:B31 con el escenario realista que el producto ya defiende (el mismo que pl-mensual-escenarios!C, 169.950 € de facturacion), etiquetado como valor de ejemplo (§1.2), o —si se decide dejarlo vacio— envolver los siete totales en la misma guarda que la columna C: '=IF(COUNT(B6:B9)=0,\"\",SUM(B6:B9))' y encadenar el resto con IF($B$10=\"\",\"\",...). Sin una de las dos cosas, el §7-bis.7 (una sola cifra citada por PDF, landing y dashboard) no tiene de donde salir en T7/T8."
+    },
+    {
+      "id": "RT-03",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'Inversión'!B26 / C26",
+      "hallazgo": "§2.3.5 (DOM-01 + COM-30, marcado «alta») NO esta implementado: el fondo de maniobra sigue siendo una celda de entrada libre. No hay formula, no hay celda verde de «meses», no hay minimo de 6 y no hay lectura del coste de personal de la hoja Turnos ni del P&L. El rotulo sigue diciendo «(6 meses)» sin que nada lo calcule.",
+      "evidencia": "Lectura del dry-run: B26='Fondo de maniobra (6 meses)' y C26 es None (sin valor y sin formula); la unica formula de la fila es E26='=IF(D26=\"\",\"\",IFERROR((D26-C26)/C26,\"\"))', la desviacion generica. Las 144 formulas nuevas del libro se reparten entre la columna E de Inversion (22), la columna C del P&L (24) y las hojas nuevas Proyeccion/Financiacion; ninguna toca C26.",
+      "fix": "Escribir C26 = '=IFERROR(IF(OR($B$<meses>=\"\",'P&L Mensual'!$B$32=\"\"),\"\",('P&L Mensual'!$B$32+'P&L Mensual'!$B$15)*$B$<meses>),\"\")' con una celda verde «Meses de fondo de maniobra» (por defecto 6, DV decimal >= 6) y su nota, tal como pide §2.3.5, y dejar constancia en el informe de fichero de que la partida pasa de entrada libre a calculada."
+    },
+    {
+      "id": "RT-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'Inversión'!F4 (cabecera) con F5:F26 vacia · 'Instrucciones'!A19",
+      "hallazgo": "§2.3.6/TEC-26 se ha implementado a medias y el libro AFIRMA que esta completo. Se ha creado la columna «Categoría equivalente en calculadora-capex.xlsx» y se ha escrito una instruccion que dice que esa columna resuelve la correspondencia 22 conceptos -> 12 categorias, pero las 22 celdas estan vacias. El cliente lee una promesa en Instrucciones y encuentra una columna en blanco: es peor que no haberla puesto.",
+      "evidencia": "F4='Categoría equivalente en calculadora-capex.xlsx'; recuento medido de celdas no vacias en F5:F26 = 0. Instrucciones!A19 = «Fuente de cada cifra: esta hoja «Inversión» es TU CAPEX (el que va al banco). calculadora-capex.xlsx es la hoja de RANGOS DE MERCADO, con el desglose por categorías; la última columna de «Inversión» dice a qué categoría suya corresponde cada concepto.»",
+      "fix": "Rellenar F5:F26 con el nombre exacto de la categoria de calculadora-capex!CAPEX!B5:B16 que corresponde a cada uno de los 22 conceptos (es un mapa fijo, va en contenido_<pid>.py), y añadir en calculadora-capex una fila de comprobacion que compare su TOTAL con el de Inversion. Si el mapa no se aporta, retirar la frase de Instrucciones!A19: no puede quedar una instruccion que describa algo que no existe."
+    },
+    {
+      "id": "RT-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "'Turnos Semana'!C43 (vacia), L6:L30 (vacias), O6:O30, P6:P30, K33, L33, O33, P33",
+      "hallazgo": "El cuadrante que la tarjeta vende como «para 25 personas CON COSTE» (§6.7) se entrega sin ningun coste calculable: falta el divisor (jornada anual de convenio) y falta el bruto anual de las 24 filas, asi que las columnas Coste/hora y Coste semana y la fila TOTAL devuelven \"\" en las 24 filas. La decision de no inventar cifras es correcta, pero deja la promesa §6.7 sin cumplir y la demostracion exigida por §4.4 («el coste semanal responde al coste/hora y al tipo de SS») solo se puede enseñar inyectando datos que el fichero no trae. Y la nota que justifica la decision es falsa por RT-01.",
+      "evidencia": "C43 = None con A43='Jornada anual de convenio (h/año)'; L6..L30 = None; O6='=IFERROR(IF(OR($L6=\"\",$C$43=\"\",$C$43=0),\"\",$L6*(1+$C$41)/$C$43),\"\")' -> \"\" siempre; P6 depende de O6 -> \"\". D43 promete literalmente «Mientras esté vacío, las celdas que dependen de él muestran \"\" y no un cero que parezca un resultado», pero P33='=IF(COUNTIF(P6:P30,\"<>\")=0,\"\",SUM(P6:P30))' devuelve 0,00 € en Excel (RT-01) y K33 devuelve 0,0: la fila TOTAL mezcla \"\" en L33/O33 con 0 en K33/P33.",
+      "fix": "Precargar C43 con la jornada de referencia del convenio provincial que el producto ya cita (o, si no la hay, 1.800 h con nota de fuente y DV) y precargar L6:L30 con los brutos del capitulo 13 YA CORREGIDOS al suelo del SMI de C42 (§7-bis.16) marcados como ejemplo; asi el semaforo SMI, el coste/hora y el coste semanal se ven al abrir. Y arreglar K33/P33 con la guarda de RT-01 para que la fila TOTAL sea coherente consigo misma."
+    },
+    {
+      "id": "RT-06",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!A3 frente a A26 y a B27:M27",
+      "hallazgo": "La hoja se contradice sobre si las cifras se escriben con o sin IVA, y las dos frases las ha escrito la v2.0. La cabecera ordena meter importes CON IVA; la nota de la fila 26 dice que las filas de arriba van SIN IVA y que la capa de IVA la añade el libro. Si el cliente hace caso de A3 (que es lo que lee primero y lo que repite Instrucciones!A14), B27 vuelve a aplicar el 10 % sobre un importe que ya lo lleva: el IVA repercutido se cuenta dos veces, el flujo acumulado con IVA y deuda se infla y el mes de break-even sale antes de tiempo.",
+      "evidencia": "A3 = 'Las cifras de esta hoja van CON IVA: es caja. En el resto del producto van SIN IVA.' · A26 = '... Las filas de arriba se escriben SIN IVA, igual que el P&L; esta capa lo añade porque el cash flow es caja.' · B27 = '=B10*$B$25' con B25=0,10. Con la facturacion mensual que el propio producto propone (116.270 € de pl-mensual!B17), seguir A3 añade 11.627 €/mes de IVA inexistente: 139.524 € al año sobre el flujo acumulado que alimenta B43 ('=IFERROR(MATCH(TRUE,INDEX(B32:M32>0,0),0),\"No alcanzado\")').",
+      "fix": "Dejar UNA sola frase: A3 pasa a «Escribe los ingresos y gastos SIN IVA, igual que el P&L: la capa de IVA (filas 25-29) lo añade porque el cash flow es caja». Alinear Instrucciones!A14 con esa redaccion y aplicar la revision a la variante de los 5 hermanos (hoja 'Cash Flow') antes de T6."
+    },
+    {
+      "id": "RT-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-panaderia-obrador/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'P&L 3 años'!B23:D25 y la nota E24",
+      "hallazgo": "NUEVO-02 se corrige en el año 1 pero deja los años 2 y 3 fuera del rango que la propia hoja declara, y no coincide con los valores de control que la SPEC §2.5 da por resultado esperado (16,1 % / 15,6 % / 14,0 %). Los costes fijos B16:B21 se quedan congelados mientras la facturacion crece un 67 %, asi que el margen EBITDA se dispara. Se ha cambiado un margen imposible (122,97 %) por otro que sigue contradiciendo la nota contigua.",
+      "evidencia": "Medido en el dry-run: B23='=SUM(B12:B21)' -> 251.600 €, B24='=B9-B23' -> 48.400 €, B25='=IF(B9=0,\"\",B24/B9)' -> 0,1613 (16,1 %, correcto). Pero C25 -> 0,27697 (27,7 %) y D25 -> 0,3472 (34,7 %), junto a E24='15-22% objetivo'. La SPEC §2.5 dice «Con la corrección los tres años dan 16,1 % / 15,6 % / 14,0 % de margen, dentro del rango que la propia hoja declara»: dos de los tres no salen.",
+      "fix": "O bien recalibrar B16:D21 (personal, alquiler, suministros, marketing) para que los costes fijos acompañen al crecimiento de facturacion y los tres margenes caigan en el 15-22 % que anuncia E24, o bien —si las constantes se declaran intocables— convertir E24 en un rango honesto y añadir un semaforo ISNUMBER que marque en rojo el año cuyo margen se salga del objetivo declarado. Y revisar por que los valores de control de la SPEC no cuadran con la aritmetica de la hoja antes de cerrar T6."
+    },
+    {
+      "id": "RT-08",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/guias-v2_0/main.py",
+      "ubicacion": "main.py, bloque de gates (pasos 1/7 a 7/7) — comparar con guias-v2-SPEC.md §9 «Gates que cierran la meta»",
+      "hallazgo": "El gate de §9 «0 xlsx con 0 fórmulas» no esta implementado. En guia-panaderia-obrador, cronograma-apertura-gantt.xlsx termina el post-proceso con CERO formulas —§3.5 entero sin aplicar: sin Mes inicio, sin Duración, sin Depende de, sin Días y sin la regla de formato condicional de la barra— y el pipeline imprime «TODO VERDE» con exit 0. El verde del motor no es evidencia de que la SPEC se haya cumplido en ese producto.",
+      "evidencia": "Salida del dry-run de panaderia: «cronograma-apertura-gantt.xlsx: 0 fórmulas nuevas» y «cronograma-apertura-gantt.xlsx: formulas=0 cache_inyectado=0»; recuento propio con openpyxl sobre el resultado: cronograma-apertura-gantt.xlsx formulas=0, hojas ['Instrucciones','Gantt apertura']. Ultima linea de la ejecucion: «TODO VERDE (moldes, idempotencia, cache, censo, demos)». En el representante ese mismo fichero recibe 26 formulas.",
+      "fix": "Añadir a main.py un paso de gate que, tras el post-proceso, recorra los xlsx del producto, cuente formulas por fichero y marque FALLO si alguno queda a 0 salvo los declarados como formulario en §7; y un segundo gate que compare la lista de secciones de la SPEC aplicables al producto con lo que el grupo dice haber tocado, para que un contenido_<pid> ausente sea ROJO y no un AVISO."
+    },
+    {
+      "id": "RT-09",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/checklist-*.xlsx (7 de los 8)",
+      "ubicacion": "checklist-equipamiento-cocina.xlsx:'Equipamiento Cocina'!G13:G17, G24:G26, G32:G34, G43:G47, G55:G58, G64:G66, G72:G74, G79:G81, G89:G91 · checklist-legal.xlsx:Legal!G37:G40 y G48:G52 · y equivalentes en appcc, diseno-sala, michelin, marketing, vajilla",
+      "hallazgo": "Los 76 items nuevos añadidos para llegar al recuento anunciado se han insertado con la columna «Coste Est. (€)» VACIA. El resultado es que el TOTAL PRESUPUESTADO —lo que §1.9 vende como «los 313.290 € dejan de sumarse a mano»— queda sistematicamente infravalorado, y diez categorias enteras muestran subtotal 0,00 €. Ademas 32 de los 37 items nuevos de equipamiento son relleno («Robot térmico tipo Thermomix», «Pacojet», «KDS», «Túnel de lavado (ALTERNATIVA a la capota)») justo lo que §3.4 prohibe («con ítems que hoy faltan y son obligatorios, no con relleno»).",
+      "evidencia": "Recuento medido fichero a fichero (items v2 / items originales / items sin coste): equipamiento 91/54/32, appcc 55/45/10, legal 48/40/9, vajilla 50/43/7, michelin 45/40/5, marketing 35/30/5, diseno-sala 35/31/4. Subtotales cacheados a 0: checklist-legal!G66 ('Local')=0, checklist-appcc!G73 ('Proveedores')=G75 ('PCC')=G77 ('Baja temperatura y vacío')=0, checklist-inspeccion-michelin-repsol!G56..G61 y G64 = 0 (siete categorias), checklist-marketing-preapertura!G51..G53 = 0. Y la propia fila del 12 % de instalacion se calcula sobre la base incompleta: G95='=IFERROR(ROUND((SUM($G$5:$G$94))*Instrucciones!$B$11,2),\"\")' -> 17.648,40 € sobre 147.070 € en vez de sobre el equipamiento completo.",
+      "fix": "Para cada item nuevo, o se aporta importe (los cuatro que la SPEC §3.4 ya tasa —horno mixto 17.500 €, extraccion 12.000-30.000 €, aportacion de aire 3.000-6.000 €, extincion 2.500-4.000 €— si lo tienen; el resto lo aporta contenido_<pid>.py) o el item no entra. Y añadir un gate: «ningun item de un checklist del molde A con columna de coste puede quedar con G vacio», que es la unica forma de que el TOTAL siga siendo el argumento de venta."
+    },
+    {
+      "id": "RT-10",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/escandallo-maestro.xlsx",
+      "ubicacion": "'Ficha (plantilla)'!G33/H33 y la nota A35 · 'Resumen'!G5",
+      "hallazgo": "«Food cost real sobre el PVP sin IVA (%)» es una tautologia: H33 = H29/H30 y H30 = H29/H4, luego H33 == H4 siempre, para cualquier escandallo. La celda ocupa sitio y no informa de nada. Peor: la nota A35 anuncia que aplicar el PVP sin IVA deja el food cost real 2,8 puntos por encima (28 % -> 30,8 %) y ninguna celda del libro calcula ese 30,8 %, que es justamente el numero que da valor a la fila de IVA.",
+      "evidencia": "Evaluado con pycel sobre la copia del dry-run, con D7=0,180 · E7=22 · F7=0,40: H29=6,60 € y H33=0,28 con H4=0,28; tras cambiar H4 a 0,32, H30 pasa de 23,57 € a 20,63 € y H33 pasa a 0,32. Es decir, H33 devuelve exactamente H4 en los dos casos. 'Resumen'!G5='=IFERROR(IF(OR($D$5=\"\",$E$5=\"\",$E$5=0),\"\",$D$5/$E$5),\"\")' arrastra la misma tautologia.",
+      "fix": "Cambiar H33 por el dato que la nota promete: «Food cost real si pones el PVP sin IVA en la carta (%)» = '=IFERROR(IF(OR($H$29=\"\",$H$30=\"\",$H$30=0),\"\",$H$29/($H$30/(1+$H$31))),\"\")', que con 28 % y IVA 10 % da 30,8 % y se mueve con el tipo de IVA. Replicar el cambio en Resumen!G5 y en el modelo de los hermanos (G20 del escandallo-maestro-<concepto>)."
+    },
+    {
+      "id": "RT-11",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/ (varios libros)",
+      "ubicacion": "calculadora-ticket-medio.xlsx:'Ticket Medio'!B16 y B20 · cash-flow-break-even.xlsx:'Cash Flow 12 Meses'!B37, B40 · pl-mensual-escenarios.xlsx:Escenarios!B17:D17 · plan-financiero-3-anos.xlsx:'P&L Mensual'!B10",
+      "hallazgo": "§7-bis.7 exige UNA sola cifra por magnitud en todo el producto y las plantillas se han parametrizado por separado: hay cuatro tickets medios y cuatro facturaciones mensuales distintas dentro del mismo pack, ninguna de las cuales cita a las otras. El gate de coherencia de cifras de §9 no existe todavia y el defecto ya esta en el dry-run del representante.",
+      "evidencia": "Medido: calculadora-ticket-medio!B16 = 91,95 € (ponderado del escenario 1) frente a cash-flow!B40 'Ticket medio (€)' = 110 (constante verde tecleada). Facturacion mensual: ticket-medio!B20 = 111.259,50 €, pl-mensual!B17 = 116.270 €, cash-flow!B39 'Umbral de ventas mensual' = 130.000 € (con B37 'Costes fijos mensuales' = 91.000 € que no coincide con pl-mensual!B20 = 85.000 €), y plan-financiero!'P&L Mensual'!B10 = 0. Cubiertos: ticket-medio!D17 = 62 frente a pl-mensual!D6+D7 = 28+50 = 78 en el mismo escenario optimista.",
+      "fix": "Fijar en contenido_<pid>.py un unico juego de parametros (cubiertos comida/cena, tickets, dias abiertos, costes fijos) y derivar de el la precarga de los tres libros, con una nota «de donde sale este dato» en cada uno (§1.13: se repite el dato, no se enlaza). Implementar ya el gate de coherencia de §9 comparando por celda, no a ojo, antes de T7: el PDF va a citar estas cifras."
+    },
+    {
+      "id": "RT-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/pl-mensual-escenarios.xlsx",
+      "ubicacion": "Escenarios!E12 (nota) y B12:D12",
+      "hallazgo": "La nota nueva de la v2.0 reproduce literalmente la cifra que la propia SPEC declara falsa. §5.4/DOM-02 dice que «250.000-450.000 €/año ... incluyendo SS empresa ~30 %» es en realidad el BRUTO SIN SS y que las cifras correctas son cocina 322.400-601.900 € y sala 234.000-403.000 € (total 556 k€-1,0 M€). La celda vuelve a publicar el rango viejo como si fuera con SS y ademas lo usa para justificar que el escenario pesimista (552 k€/año) «cabe en el rango», cuando queda por debajo del suelo corregido de 556 k€.",
+      "evidencia": "E12 = 'Capítulo 13: cocina 250.000-450.000 €/año y sala 200.000-350.000 €/año con la SS de la empresa, para una plantilla de 22-30 personas. Los tres escenarios caben en ese rango (552 / 624 / 768 k€ al año).' B12=46.000, C12=52.000, D12=64.000 (×12 = 552 / 624 / 768 k€). Suelo corregido segun SPEC §5.4: 556 k€.",
+      "fix": "Reescribir E12 con las cifras corregidas (cocina 322.400-601.900 €, sala 234.000-403.000 €, total 556 k€-1,0 M€, ya con el 33 % de SS de plantilla-turnos-brigada!C41) y subir B12 hasta que el pesimista no quede por debajo del suelo. La nota de un xlsx es tan citable como el PDF: no puede ir por delante de la correccion que §5.4 obliga a hacer en el texto."
+    },
+    {
+      "id": "RT-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/pl-mensual-escenarios.xlsx",
+      "ubicacion": "Escenarios!B21 y B22 (columna Pesimista)",
+      "hallazgo": "§7-bis.14 decide que el escenario Pesimista se recalibra a «malo, no inviable». El representante se entrega con un pesimista de EBITDA negativo: −5.936,40 €/mes, −71.237 €/año, margen −5,1 %. Es la mitad de lo que se condeno en el hermano japones (−12.055 €/mes), pero sigue siendo un negocio que cierra, no un escenario malo; y la nota E13 lo defiende explicitamente («eso es exactamente lo que significa un escenario malo»), con lo que la decision del orquestador queda reabierta desde una celda.",
+      "evidencia": "B21='=B19-B20' cache=-5936.399999999994 con formato '#,##0.00 €'; B22='=IF(B17=0,\"\",B21/B17)' cache=-0.05105702244775087 (−5,1 %). Parametros del pesimista: B6=18 y B7=35 cubiertos, B8=70 € y B9=115 €, B11=0,32 de food cost, B12=46.000 € de personal, B13=17.000 € de alquiler, B14=22.000 € de otros fijos. E13 justifica el alquiler al 14,6 % de la facturacion como «exactamente lo que significa un escenario malo».",
+      "fix": "Recalibrar el pesimista para que el EBITDA quede ligeramente positivo (p. ej. 2-4 % de margen): con 18+35 cubiertos y 22 dias, basta bajar los otros fijos a ~16.000 € o subir el ticket de cena a 130 €. Y reescribir E13 para que no defienda un EBITDA negativo como escenario de planificacion; un pesimista que pierde 71 k€/año le dice al comprador que el modelo que acaba de pagar no funciona."
+    },
+    {
+      "id": "RT-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'Proyección 3 Años'!C6, C7, D6, D7 (data validation)",
+      "hallazgo": "Las dos entradas que gobiernan toda la proyeccion a 3 años llevan una DV que no valida nada: decimal >= −1.000.000.000.000. §1.7 exige DV con sentido en toda columna de porcentaje, y el propio motor la aplica bien en las celdas de merma, IVA y food cost. Teclear «8» pensando en 8 % —el error que la SPEC documenta para la merma («teclear 20 bajo un encabezado que dice % produce cantidad neta −9,5 sin un solo aviso»)— pasa el filtro y multiplica los ingresos del año 2 por 9 sin un aviso.",
+      "evidencia": "DV medida en la hoja: sqref 'C6 C7 D6 D7' type=decimal operator=greaterThanOrEqual formula1=-1000000000000, showErrorMessage=True, sin prompt. C6=0,08 y D6=0,05 con formato '0.0%'. C11='=IF($B$11=\"\",\"\",B11*(1+C6))': con C6=8 el año 2 pasa de 1.814.400 € a 15.120.000 € (base B11=1.680.000 € medida en la demo del motor).",
+      "fix": "Cambiar la DV de C6/D6/C7/D7 a decimal between −0,5 y 1 con promptTitle 'Porcentaje' y el mensaje correcto («0,08 = 8 %; admite negativo para una caida de ventas»), y añadir un semaforo ISNUMBER que marque en ambar un crecimiento mayor del 30 %. Lo mismo en la variante de tres hojas de los hermanos."
+    },
+    {
+      "id": "RT-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/ (todos los libros con celdas de porcentaje)",
+      "ubicacion": "pl-mensual-escenarios.xlsx:Escenarios!B11:D11 · escandallo-maestro.xlsx:'Ficha (plantilla)'!H4 y H31 · cash-flow-break-even.xlsx:'Cash Flow 12 Meses'!B25 y B38 · plan-financiero-3-anos.xlsx:'Proyección 3 Años'!B8:D8 y Financiación!B7 · menu-engineering-matrix.xlsx:'Menu Engineering'!I32",
+      "hallazgo": "El mensaje de entrada de la DV de porcentaje se ha copiado tal cual a todas las celdas de porcentaje del pack, incluidas las que no tienen nada que ver con la merma. Al hacer clic en el food cost, en el tipo de IVA, en el tipo del Impuesto de Sociedades, en el tipo de interes del prestamo o en el factor del umbral de Kasavana & Smith, el cliente ve un globo que le explica el descuento por merma.",
+      "evidencia": "DV leida en pl-mensual-escenarios!Escenarios: sqref 'B11 C11 D11', promptTitle='Porcentaje', prompt='Se escribe en tanto por uno: 0,20 = 20 %. Tope 0,95 porque la merma entra en el coste como neta/(1-merma).'. La misma cadena aparece en la DV de escandallo!H4 y H31, cash-flow!B25 y B38, Proyección!B8:D8, Financiación!B7 y menu-engineering!I32.",
+      "fix": "Parametrizar el prompt en la primitiva de DV del motor: dejar la explicacion de la merma solo para las columnas de merma y dar a las demas un texto propio («0,10 = 10 %. Tipo general de restauracion»; «0,25 = 25 %. Tipo general del Impuesto de Sociedades»; «0,055 = 5,5 % nominal anual»). Es la misma clase de copy-paste que §1.4 corrige para los formatos."
+    },
+    {
+      "id": "RT-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/calculadora-ticket-medio.xlsx",
+      "ubicacion": "'Ticket Medio'!B5, B7, B9, B11, B13 y sus gemelas de C y D (data validation)",
+      "hallazgo": "El tope 0,95 de la DV de merma se ha reutilizado en «% comensales carta», «% comensales menú degustación largo/corto», «% con maridaje» y «% con copa». Un restaurante 100 % carta —o 100 % menu degustacion, que es el modelo que el propio producto vende en el capitulo 3— no puede teclear 1 en su celda: la DV lo rechaza con showErrorMessage=True. El tope tiene sentido en la merma (por la division entre 1−merma) y ninguno aqui.",
+      "evidencia": "DV medida: sqref 'B5 B7 B9 B11 B13 C5 C7 C9 C11 C13 D5 D7 D9 D11 D13' type=decimal operator=between formula1=0 formula2=0.95, error='Escribe un porcentaje entre 0 y 0,95 (0,20 = 20 %).'. Y la propia celda de control B15='=B5+B7+B9' lleva un formato condicional '=AND(ISNUMBER(B15),B15<>1)' que exige que los tres sumen exactamente 1: con el tope a 0,95 la unica forma de llegar a 1 con un solo tramo es imposible.",
+      "fix": "Separar dos plantillas de DV en el motor: 'merma' (0 a 0,95) y 'porcentaje' (0 a 1). Aplicar la segunda a los % de mix de comensales, al margen de contribucion y al food cost. Es contradictorio que el semaforo de B15 pida sumar 100 % y la DV impida escribirlo."
+    },
+    {
+      "id": "RT-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/cronograma-apertura-gantt.xlsx",
+      "ubicacion": "Gantt!Y6:Y36 (sin DV) y E6:E36 (sin DV de fecha)",
+      "hallazgo": "§3.5 pide DV de fecha en Inicio y Fin y §1.7 pide DV numerica en las entradas. La columna «Duración (meses)», que es la que gobierna la barra por formato condicional, no tiene ninguna DV, y la columna «Fin» tampoco tiene la DV de fecha que si tiene «Inicio». Una duracion negativa o un texto en Y apagan la barra sin ningun aviso, y una fecha de fin mal escrita produce un «Días» negativo.",
+      "evidencia": "DV medidas en la hoja Gantt: 'D6 D7 ... D36' type=date between DATE(2020,1,1) y DATE(2040,12,31); 'C6..C36' type=list; 'X6..X36' type=decimal >= 0. No hay ninguna entrada de DV cuyo sqref incluya E ni Y. La barra depende de Y: CF sobre F6:W36 = '=AND(ISNUMBER($X6),ISNUMBER($Y6),F$4>=$X6,F$4<$X6+$Y6)'; y AA6='=IFERROR(IF(OR($D6=\"\",$E6=\"\"),\"\",$E6-$D6),\"\")'.",
+      "fix": "Añadir DV decimal between 1 y 18 en Y6:Y36 (con el mensaje «meses de duracion; el horizonte del cuadro son 18 meses») y clonar la DV de fecha de D en E6:E36. Opcionalmente, un CF en AA que marque en rojo un «Días» negativo."
+    },
+    {
+      "id": "RT-18",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/guias-v2_0/motor.py",
+      "ubicacion": "motor.py:1322-1338 (nombre_pestana) -> checklist-vajilla-cristaleria.xlsx, pestaña 'Vajilla, Cristalería y'",
+      "hallazgo": "El renombrado de pestaña del molde A produce un nombre cortado en una conjuncion. El titulo del libro tiene 33 caracteres tras quitar «Checklist », el corte por palabra dentro de los 31 primeros cae justo antes de la ultima palabra y el guardan (>= 12) lo acepta. El cliente ve en la barra de pestañas «Vajilla, Cristalería y», que es peor que el 'Sheet' original porque parece un fichero roto.",
+      "evidencia": "A1 del libro = 'Checklist Vajilla, Cristalería y Cubertería'. Codigo: corte = t[:31].rsplit(' ', 1)[0]; t = corte if len(corte) >= 12 else t[:31] (motor.py:1336-1337) -> 'Vajilla, Cristalería y' (22 caracteres). Verificado en la copia del dry-run: openpyxl devuelve wb.sheetnames = ['Instrucciones', 'Vajilla, Cristalería y'], y el informe del motor lo arrastra a la demostracion de checklists ('hoja': 'Vajilla, Cristalería y').",
+      "fix": "Rechazar el corte si la ultima palabra resultante esta en una lista de conjunciones/preposiciones ('y','e','o','u','de','del','la','el','en','con','para','a') y volver a cortar por la palabra anterior; si el resultado baja de 12 caracteres, usar t[:30]+'…'. Verificar en los 38 checklists del molde A de la familia, no solo en el representante."
+    },
+    {
+      "id": "RT-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!N28 y N33",
+      "hallazgo": "El §1.4 «formato por tipo, no por bloque» falla en las dos filas cuyo rotulo es largo y no contiene «(€)»: dos totales anuales de IVA quedan en '#,##0' (sin simbolo de moneda y sin decimales) mientras las trece filas vecinas de la misma columna van en '#,##0.00 €'. En una hoja de tesoreria, dos cifras de IVA sin € y redondeadas a la unidad, junto a trece que si lo llevan, se leen como si fueran otra magnitud.",
+      "evidencia": "Medido: N28='=SUM(B28:M28)' number_format='#,##0' con A28='(-) IVA soportado (compras y gastos con IVA; las nóminas y la Seguridad Social no llevan)'; N33='=SUM(K27:M27)-SUM(K28:M28)' number_format='#,##0' con A33='IVA del 4.º trimestre — se liquida en enero del año siguiente (no es caja de este ejercicio)'. Sus vecinas N27, N29, N30 y N31 llevan '#,##0.00 €'.",
+      "fix": "En formato_por_etiqueta, cuando la etiqueta contenga 'IVA', 'importe', 'coste', 'cuota' o 'liquidación' y no traiga una unidad explicita, resolver a '#,##0.00 €' en vez de caer al formato de conteo; y añadir al gate una comprobacion de homogeneidad por columna: dentro de una misma columna de totales no puede haber dos formatos numericos distintos."
+    },
+    {
+      "id": "RT-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'Inversión'!E5:E27 (sin formato condicional)",
+      "hallazgo": "§1.6 enumera explicitamente «la desviación de CAPEX» entre los sitios donde va el semaforo con ISNUMBER, y la hoja Inversion se ha quedado sin ninguna regla de formato condicional. Es la unica columna de desviacion del pack que no avisa: la del molde C de dark-kitchen tampoco la recibe (checklist-equipamiento-obra!G5:G39).",
+      "evidencia": "Lectura de ws.conditional_formatting sobre la copia del dry-run: la hoja 'Inversión' devuelve cero reglas, mientras 'P&L Mensual' tiene 2 (B34 y B37), 'Proyección 3 Años' tiene 3 (B15:D15, B21:D21, B22:D22) y 'Financiación' tiene 1 (F18:F27). E5='=IF(D5=\"\",\"\",IFERROR((D5-C5)/C5,\"\"))' con formato '0.0%'.",
+      "fix": "Añadir CF sobre E5:E27 con '=AND(ISNUMBER($E5),$E5>$<umbral>)' en rojo y '=AND(ISNUMBER($E5),$E5<-$<umbral>)' en verde, con el umbral (0,10 por defecto) en celda verde y su nota; replicar en checklist-equipamiento-obra!G5:G39 de dark-kitchen, que §3.3 pide explicitamente para el molde C."
+    },
+    {
+      "id": "RT-21",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!A34",
+      "hallazgo": "La cuota del prestamo se ha incrustado como literal narrativo dentro de una nota, tomada de los parametros por defecto de OTRO libro. En cuanto el cliente cambie importe, plazo, tipo o carencia en plan-financiero-3-anos!Financiación —que es exactamente lo que la hoja le pide hacer— la nota le sigue diciendo que copie 3.528,00 €. Es el mismo defecto de «parametro fuera de celda» que §1.13 y la convencion de familia prohiben, solo que escrito en prosa en vez de en una formula.",
+      "evidencia": "A34 = 'Con el préstamo de ejemplo de plan-financiero-3-anos.xlsx la cuota mensual es 3528,00\\u202f€; cópiala aquí cuando cierres tu financiación.' El valor sale de Financiación!B12='=IF(B5=0,\"\",IF(B11<=0,\"\",IFERROR(B5*B10/(1-(1+B10)^-B11),\"\")))' con los defaults B5=300.000, B6=10, B7=0,055, B8=1 -> 3.527,999 €. Cambiando B7 a 0,06 la cuota pasa a ~3.612 € y la nota queda desfasada sin ningun aviso.",
+      "fix": "Quitar la cifra de la nota y dejarla como referencia sin numero («la calcula plan-financiero-3-anos.xlsx, hoja Financiación, celda B12: copia ahi el valor»), o —mejor— añadir en esta hoja una celda verde «Cuota mensual del préstamo (€)» que el cliente rellena una vez y de la que se alimenta B30:M30, en lugar de pedirle doce copias manuales."
+    },
+    {
+      "id": "RT-22",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "'Registro de jornada'!G6:G63 y H6:H63",
+      "hallazgo": "El aviso de descanso minimo entre jornadas (art. 34.3 ET), que es la razon de ser de la hoja nueva de §4.4/DOM-16, se apoya en MOD(entrada − salida anterior, 1). MOD con modulo 1 devuelve solo la parte fraccionaria del dia: un descanso de exactamente 24 h da 0:00 y dispara el aviso legal, y uno de 36 h da 12:00 y tambien lo dispara. Ademas la comparacion solo se hace con la fila inmediatamente anterior y exige que el registro este ordenado por trabajador, cuando un registro diario se rellena por fecha.",
+      "evidencia": "G30 = '=IF(OR($B30=\"\",$B30<>$B29,$D30=\"\",$E29=\"\"),\"\",MOD($D30-$E29,1))' con formato '[h]:mm'; H30 = '=IF($G30=\"\",\"\",IF($G30<$C$47,\"Descanso inferior al mínimo legal entre jornadas (art. 34.3 ET)\",\"\"))'. La demostracion del propio motor solo prueba el caso corto: registro_jornada.descanso_23_a_08_esperado_9h = 0.375 y aviso_menos_de_12h con texto; no hay ningun caso de descanso >= 24 h.",
+      "fix": "Sustituir MOD por la diferencia real de fecha+hora: si la hoja tiene columna de fecha (A) y horas (D/E), G = '=IF(...,\"\",($A30+$D30)-($A29+$E29))', que soporta cualquier separacion. Si se quiere seguir sin fecha, envolver con IF(resultado<=0, resultado+1, resultado) y limitar el aviso a cuando el resultado sea > 0 y < C47. Y añadir un caso de 24 h y otro de 36 h a la demostracion, que hoy no los cubre."
+    },
+    {
+      "id": "RT-23",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-dark-kitchen/calculadora-viabilidad-dark-kitchen.xlsx",
+      "ubicacion": "'P&L Mensual'!B30 (literal 0.05 dentro de una formula) — reportado por main.py como FALLO §1.3 con exit 1",
+      "hallazgo": "La ejecucion de dark-kitchen termina en rojo (exit 1) con un literal dentro de formula que el motor detecta y NO corrige, y el unico xlsx del producto que calcula algo (48 formulas) recibe 0 formulas nuevas. Es decir: la familia tiene hoy un producto que el motor no puede cerrar, y la deteccion no lleva aparejada una correccion ni una excepcion declarada en §7.",
+      "evidencia": "Salida del dry-run: «FALLOS: §1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (calculadora-viabilidad-dark-kitchen.xlsx:P&L Mensual!B30=0.05)» y, en el mismo informe, «calculadora-viabilidad-dark-kitchen.xlsx: 0 fórmulas nuevas»; el JSON registra exit=1 y fallos con esa unica entrada.",
+      "fix": "Extraer el 0,05 a una celda verde con rotulo y nota (§1.5/§1.13), como se ha hecho con el food cost del escandallo y el IVA del cash flow, y volver a correr hasta exit 0. Si se decide que ese 0,05 no es parametrizable, declararlo como excepcion nominal en §7 y hacer que el detector lo consulte, en vez de dejar un rojo permanente."
+    },
+    {
+      "id": "RT-24",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/guia-panaderia-obrador/plan-financiero-3-anos.xlsx y cronograma-apertura-gantt.xlsx",
+      "ubicacion": "hojas del libro tras el dry-run: ['Instrucciones', 'P&L 3 años'] — sin 'Proyección 3 Años', sin 'Financiación', sin 'Inversión'",
+      "hallazgo": "Las dos hojas nuevas de §2.3.1 y §2.3.4 (Proyeccion a 3 años y Financiacion con cuadro frances) son estructuralmente genericas —sus entradas son crecimiento, inflacion, tipo del IS, importe, plazo, tipo y carencia, nada especifico de la cocina— y sin embargo se han implementado como dependientes del modulo de contenido: sin contenido_<pid> no se crean. En panaderia, que §2.3.4 marca como «alta» junto a las otras seis guias de restaurante, el libro sigue teniendo dos hojas y 21 formulas, sin una sola linea de prestamo, y el pipeline lo da por verde.",
+      "evidencia": "Recuento propio sobre el resultado del dry-run de panaderia: plan-financiero-3-anos.xlsx formulas=21 hojas=['Instrucciones','P&L 3 años'] (el original tiene las mismas 21 que la SPEC §2.5 cita); cronograma-apertura-gantt.xlsx formulas=0. Avisos del motor: «contenido_guia_panaderia_obrador/a.py no existe — grupo_a trabaja sin contenido propio» (idem b y c) y aun asi la ultima linea es «TODO VERDE».",
+      "fix": "Mover a grupo_a.py la creacion de 'Proyección 3 Años' y 'Financiación' con sus parametros por defecto, dejando en contenido_<pid> solo el mapa de filas del P&L de cada guia; y convertir los tres AVISO de contenido ausente en FALLO cuando el producto no sea el representante, para que T6 no pueda cerrarse con seis productos a medio post-procesar bajo un «TODO VERDE»."
+    },
+    {
+      "id": "RT-25",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/calculadora-capex.xlsx",
+      "ubicacion": "CAPEX!F17 frente a F19",
+      "hallazgo": "Incoherencia interna en la misma columna: la celda de texto que evalua el presupuesto propio guarda correctamente el caso «libro en blanco» y devuelve \"\", pero el TOTAL de esa misma columna devuelve 0 y se pinta como 0,00 €. El cliente lee «Tu Presupuesto (€) TOTAL: 0,00 €» y, dos filas mas abajo, una celda vacia donde deberia decir si esta dentro del rango.",
+      "evidencia": "F17='=SUM(F5:F16)' cache=0.0 number_format='#,##0.00 €' (medido en la copia del dry-run) y F19='=IF(F17=0,\"\",IF(F17<C17,\"Por debajo del rango bajo\",IF(F17>E17,\"Por encima del rango alto\",\"Dentro del rango\")))'. El propio informe del motor lo registra: demostraciones.grupo_a.capex.totales.F17.valor = 0.0.",
+      "fix": "F17 = '=IF(COUNT(F5:F16)=0,\"\",SUM(F5:F16))' y F19 = '=IF($F$17=\"\",\"\",IF(...))'. Mismo criterio que RT-01: COUNT, no COUNTIF(...,\"<>\")."
+    },
+    {
+      "id": "RT-26",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/escandallo-maestro.xlsx",
+      "ubicacion": "'Ficha (plantilla)'!D4 dentro de la combinada C4:D4",
+      "hallazgo": "El campo donde se escribe el nombre del plato es una celda combinada C4:D4 cuya mitad derecha esta desbloqueada pero sin relleno verde. En pantalla el campo se ve medio verde y medio blanco, y ademas rompe la regla §1.3 «verde <=> desbloqueada <=> el cliente escribe ahi», que el resto del pack cumple sin una sola excepcion.",
+      "evidencia": "Barrido de todas las hojas del producto: 41 hojas, 0 celdas verdes bloqueadas y una sola celda desbloqueada sin verde, escandallo-maestro.xlsx:'Ficha (plantilla)'!D4 (value=None, fill_type=None, locked=False). C4 si es verde (fill 00E8F5E9, locked=False). Rangos combinados de la hoja: ['C4:D4','A2:I2','A4:B4','A1:I1'].",
+      "fix": "Al pintar de verde una celda que encabeza un rango combinado, aplicar el relleno a todas las celdas del rango. En el motor, resolver el rango combinado antes de aplicar fill y protection, no solo la celda ancla."
+    },
+    {
+      "id": "RT-27",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/checklist-*.xlsx y cronograma-apertura-gantt.xlsx",
+      "ubicacion": "checklist-equipamiento-cocina.xlsx:'Equipamiento Cocina' CF sobre F5:F95 · cronograma-apertura-gantt.xlsx:Gantt CF sobre C6:C36",
+      "hallazgo": "§3.3 pide «formato condicional por texto EXACTO» sobre la columna de Estado y lo que se ha escrito es containsText con SEARCH, que es busqueda de subcadena e insensible a mayusculas. Hoy no colisiona porque los tres valores del desplegable no son subcadena unos de otros, pero cualquier estado futuro que contenga a otro (por ejemplo «No completado», «Pendiente de proveedor») se pintaria con el color equivocado, y un estado escrito a mano con otra caja tambien entra.",
+      "evidencia": "Reglas medidas: F5:F95 type=containsText, formula=['NOT(ISERROR(SEARCH(\"Completado\",F5)))'], text='Completado' (idem 'En Curso' y 'Pendiente'); C6:C36 del Gantt, las mismas tres. La DV de esas mismas columnas si es de lista cerrada: '\"Pendiente,En Curso,Completado\"'.",
+      "fix": "Cambiar a type='cellIs' operator='equal' formula=['\"Completado\"'] (idem los otros dos), que es la comparacion exacta que pide §3.3 y la que casa con la DV de lista cerrada."
+    },
+    {
+      "id": "RT-28",
+      "severidad": "baja",
+      "fichero": "scripts/productos-digitales/guias-v2_0/motor.py",
+      "ubicacion": "motor.py:1282 (if molde == 'A' and col_cat and col_coste) -> astro-site/public/dl/guia-dark-kitchen/checklist-apertura-legal.xlsx",
+      "hallazgo": "El bloque de subtotales por categoria se condiciona al molde A, no a que existan columna de categoria y columna de coste. El molde D (el que el motor reconoce en checklist-apertura-legal de dark-kitchen) tiene las dos —B 'Categoría' y F 'Coste Estimado (€)'— y se queda sin subtotales, aunque su TOTAL ya existe. El resultado es que el unico checklist de dark-kitchen con presupuesto no ofrece el desglose que §1.9 vende para el resto de la familia.",
+      "evidencia": "Cabecera medida del fichero: ['#','Categoría','Tarea','Responsable','Fecha Límite','Coste Estimado (€)','Estado','Notas']; molde detectado 'D' (informe: moldes_detectados). Formulas del resultado del dry-run: solo F40='=SUM(F5:F39)' (preexistente) y G43='=IFERROR(COUNTIF(G5:G39,\"Completado\")/COUNTIF(G5:G39,\"<>\"),\"\")'. Demostracion del motor: «checklist-apertura-legal.xlsx: total=None avance=0.0 -> 0.0285 subtot=0 cuadra=None».",
+      "fix": "Cambiar la condicion de motor.py:1282 a 'if col_cat and col_coste' (independiente del molde) y dejar que _fin_datos y la deteccion de columnas hagan el resto; el molde C, que no tiene columna de categoria, seguira sin subtotales por ausencia de col_cat, no por una lista blanca de moldes."
+    },
+    {
+      "id": "RT-29",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'P&L Mensual'!B32",
+      "hallazgo": "La correccion de TEC-08 se ha escrito como '=SUM(B20:B29)+SUM(B31:B31)'. Es aritmeticamente correcta, pero un SUM sobre un rango de una sola celda invita a que el proximo que inserte una fila entre la 30 y la 31 crea que el rango se extiende, y no dice al lector por que la fila 30 esta excluida. La SPEC §2.3.2 escribe la formula como '=SUM(B20:B29)+B31'.",
+      "evidencia": "B32 = '=SUM(B20:B29)+SUM(B31:B31)' con A32='TOTAL COSTES FIJOS (sin amortización)' y A30='Amortización equipamiento' (la fila deliberadamente excluida). Cache 0.0.",
+      "fix": "Escribir '=SUM(B20:B29)+B31' como dice §2.3.2 y añadir en la nota de la fila 32 (columna D) la frase «no incluye la amortización de la fila 30: por eso B34 es EBITDA y no EBIT», que hoy solo se deduce del rotulo de B36."
+    },
+    {
+      "id": "RT-30",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/budget-bodega.xlsx",
+      "ubicacion": "Bodega!A5:S54 (50 referencias sin un solo dato) frente a menu-engineering-matrix.xlsx:'Menu Engineering'!A5:J29 (12 platos precargados)",
+      "hallazgo": "Criterio de precarga incoherente dentro del mismo pack: el motor precarga 12 platos de ejemplo en el menu engineering (y lo demuestra con clasificaciones reales) pero deja las 50 referencias del budget de bodega completamente vacias, con lo que sus 355 formulas nuevas —multiplicador, margen s/PVP, food cost de bebida, valor de stock a coste y a PVP— no muestran ni un solo resultado al abrir. Es el libro que §4.3 convierte en la fuente de la partida «Bodega inicial (vinos)» del plan financiero.",
+      "evidencia": "Recuento propio: filas con dato en Bodega!E5:E54 = 0; inject_cache sobre ese fichero: «budget-bodega.xlsx: formulas=355 cache_inyectado=0 fallos_pycel=0» (355 formulas, ninguna con valor). En el mismo producto, menu-engineering-matrix.xlsx: formulas=103 cache_inyectado=51 con D31=930 uds y 12 clasificaciones calculadas.",
+      "fix": "Precargar 8-12 referencias de ejemplo coherentes con la carta del capitulo 12 (tipo, D.O., coste, PVP, stock, uds vendidas), etiquetadas como ejemplo igual que los 12 platos del menu engineering, para que el multiplicador, el food cost de bebida y el valor de stock se vean al abrir y la fila TOTAL alimente de verdad plan-financiero!'Inversión'!C17."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "El paquete corre limpio y muchas de las piezas dificiles estan bien resueltas (cuadro frances con carencia y apagado tras el vencimiento —1.887,12 €/mes verificado—, Kasavana & Smith completo con umbral 0,7/N y clasificacion por formula, merma que entra en el coste con 6,60 € en el caso de la merluza, PVP que divide por raciones, MATCH del mes de break-even que devuelve «No alcanzado» y no #N/A, IVA trimestral del 303 en E/H/K, proteccion sin contraseña en 41/41 hojas con 0 verdes bloqueadas, A4 y metadata v2.0 intactos, idempotencia 0 diferencias). Pero no esta listo, por tres razones que se pueden comprobar celda a celda. (1) Hay un fallo de VERIFICACION, no solo de implementacion: la guarda COUNTIF(rango,\"<>\") sobre rangos de formulas (RT-01) evalua distinto en pycel y en Excel, y como todos los libros llevan fullCalcOnLoad=1 el cliente ve la respuesta de Excel —0,00 € en «COSTE TOTAL DE LA FICHA», «TOTAL BODEGA» y «TOTAL BRIGADA»— mientras el gate del motor certifica \"\"; hay una nota del propio producto (turnos!D43) que promete justo lo contrario de lo que su formula hara. (2) Tres apartados marcados «alta» en la SPEC no estan implementados y uno de ellos se documenta como si lo estuviera: el fondo de maniobra dimensionado (RT-03), la tabla de correspondencia 22->12 del CAPEX cuyo header existe, cuyas 22 celdas estan vacias y cuya existencia afirma Instrucciones!A19 (RT-04), y el coste de la brigada, que no calcula nada porque falta el divisor (RT-05). Ademas el libro declarado FUENTE UNICA de cifras para el PDF y la landing se entrega con la columna de entrada vacia y siete ceros en euros, EBITDA incluido (RT-02). (3) El «TODO VERDE» no cubre la familia: el gate de §9 «0 xlsx con 0 formulas» no existe, panaderia sale verde con un Gantt a cero formulas y sin las hojas Proyeccion/Financiacion (RT-08, RT-24), dark-kitchen sale en rojo con un literal sin corregir (RT-23), y los 76 items nuevos de checklist entran con la columna de coste vacia, lo que infravalora el TOTAL que §1.9 vende como argumento (RT-09). Bloqueantes antes de firmar T2: RT-01, RT-02, RT-03, RT-04, RT-05, RT-06, RT-07, RT-08 y RT-09."
+}

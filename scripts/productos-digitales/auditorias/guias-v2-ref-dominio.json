@@ -1,0 +1,322 @@
+{
+  "lente": "REFUTADOR de dominio — consultor/a de aperturas de restaurantes gastronómicos en España (20 años). Copia propia generada con CLAUDE_SCRATCHPAD=.../propio-ref-dominio y guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run (informe del motor en .../scratchpad/guias/ref-dominio.json). Auditados los 18 xlsx del representante contra guias-v2-SPEC.md (§1-§4, §7-bis) con openpyxl (fórmulas, DV y formato condicional) y openpyxl data_only (valores tras inject_cache). Los 3 docx y el PDF no entran: siguen siendo los de la v1.1 (sin tocar en este dry-run) y su reescritura es T7.",
+  "hallazgos": [
+    {
+      "id": "RD-01",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "Inversión!C5:C26 y C27",
+      "hallazgo": "El libro que la SPEC designa FUENTE ÚNICA de la inversión (§7-bis.7) se entrega con las 22 partidas de CAPEX vacías: no hay ni una cifra de inversión en todo el producto. La cascada entera (Proyección 3 Años, fondo de maniobra, break-even, y las cifras que el texto y la landing deben citar) queda muda.",
+      "evidencia": "Leído con openpyxl data_only tras inject_cache: Inversión!C27 ('=SUM(C5:C26)') = 0.0 y C5:C26 = None en las 22 filas. Los checklists del mismo pack SÍ están tasados: equipamiento 164.718,40 € (G98), diseño-sala 108.200 €, vajilla 30.230 €, legal 23.960 €, marketing 23.800 €, michelin 11.000 €, APPCC 3.400 €, contratación 1.610 €.",
+      "fix": "Precargar C5:C26 como VALOR DE EJEMPLO (§1.2: celda verde + nota) cuadrando cada concepto con el total tasado de su checklist y con el rango medio de calculadora-capex, para que C27 devuelva la cifra única que exige §7-bis.7."
+    },
+    {
+      "id": "RD-02",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "Inversión!C26 ('Fondo de maniobra (6 meses)')",
+      "hallazgo": "DOM-01/COM-30 y la decisión 7-bis.3 exigen que el fondo de maniobra deje de estar tecleado y pase a FÓRMULA '(coste fijo mensual + coste variable del mes) × meses', con los meses en celda verde y un mínimo de 6. No se ha hecho: la celda sigue sin fórmula y sin valor, y no existe ninguna celda de «meses» en toda la hoja.",
+      "evidencia": "Inversión!C26 = None (sin fórmula y sin valor, verificado en el .xlsx generado). En Inversión no aparece ninguna etiqueta de meses de fondo de maniobra; B26 sigue siendo 'Fondo de maniobra (6 meses)'.",
+      "fix": "C26 = '=IFERROR(('P&L Mensual'!$B$32+'P&L Mensual'!$B$15)*$<meses>,\"\")' con celda verde <meses> (DV >= 6) y la nota de que el coste de personal sale de plantilla-turnos-brigada."
+    },
+    {
+      "id": "RD-03",
+      "severidad": "alta",
+      "fichero": "calculadora-capex.xlsx",
+      "ubicacion": "CAPEX!C15:E15 ('Fondo de maniobra (6 meses)')",
+      "hallazgo": "El rango con el que el cliente dimensiona la caja (60.000 / 120.000 / 200.000 €) es incompatible con los costes fijos que el propio pack fija en 91.000 €/mes: seis meses son 546.000 € y el rango ALTO cubre 2,2 meses. Es el número que descapitaliza una apertura y sigue igual que en la v1.1.",
+      "evidencia": "calculadora-capex!C15=60000, D15=120000, E15=200000. En el mismo producto: cash-flow-break-even!B37 = 91000 y pl-mensual-escenarios!C20 ('Costes fijos totales', Realista) = 91000,0 (data_only). 200.000/91.000 = 2,20 meses.",
+      "fix": "Sustituir el rango tecleado por una fórmula que lea los costes fijos del pack, o conservar el rango de mercado y añadir debajo la fila calculada «6 meses de tus costes fijos = …» con semáforo si «Tu Presupuesto» queda por debajo."
+    },
+    {
+      "id": "RD-04",
+      "severidad": "alta",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "Turnos Semana!L6:L30, C43, O6:P30, L33/O33/P33",
+      "hallazgo": "El libro que la tarjeta vende como cuadrante «con coste» y que §7-bis.7 designa fuente del coste de personal no entrega ni un euro: los brutos anuales se dejan vacíos a propósito y la jornada anual de convenio también, así que coste/hora, coste semana y los tres totales devuelven \"\" en las 24 filas.",
+      "evidencia": "L6:L30 = None (A45: «El «Bruto anual» se deja vacío a propósito»); C43 ('Jornada anual de convenio (h/año)') = None; O6 = '=IFERROR(IF(OR($L6=\"\",$C$43=\"\",$C$43=0),\"\",$L6*(1+$C$41)/$C$43),\"\")' → \"\"; L33, O33 y P33 → \"\". El propio run informa: plantilla-turnos-brigada.xlsx: formulas=230 cache_inyectado=0.",
+      "fix": "Precargar L6:L30 con los rangos del cap. 13 ELEVADOS al SMI de C42 (17.094 €) y marcados como ejemplo (§1.2), y dar a C43 un valor por defecto parametrizado con nota («lo fija tu convenio provincial; sustitúyelo»), en vez de dejar muda toda la cadena de coste."
+    },
+    {
+      "id": "RD-05",
+      "severidad": "alta",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "Cash Flow 12 Meses!B37, B39 y B42 frente a A12 y A44",
+      "hallazgo": "El break-even que el libro publica como cifra (umbral de ventas y cubiertos/día necesarios) NO incluye la cuota del préstamo, justo lo que las notas del propio fichero afirman que sí incluye. Es el «break-even falso» que la SPEC se propuso eliminar.",
+      "evidencia": "B37 ('Costes fijos mensuales') = 91000, tomado del P&L, que no tiene servicio de deuda; B39 = 130000,0; B42 = 53,72 cubiertos/día. A12: «El break-even se lee sobre el flujo acumulado CON IVA y con la cuota del préstamo». Con la cuota de ejemplo (Financiación!B12 = 3.527,999 €) el umbral serían 135.040 € y 55,8 cubiertos/día.",
+      "fix": "Añadir fila verde 'Cuota mensual del préstamo (€)' bajo B37 y B39 = '=IFERROR((B37+<cuota>)/B38,\"\")', o publicar dos líneas explícitas (umbral de explotación / umbral con servicio de deuda) para que la nota y la fórmula digan lo mismo."
+    },
+    {
+      "id": "RD-06",
+      "severidad": "alta",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "Cash Flow 12 Meses!B43 y B6:M18, B28:M28, B30:M30",
+      "hallazgo": "El fichero se entrega con el punto de equilibrio devolviendo literalmente «No alcanzado»: las 12 columnas de ingresos y gastos, el IVA soportado y la cuota del préstamo están vacías, así que el flujo acumulado es cero los 12 meses. La tarjeta lo vende como «punto de equilibrio automático» y es lo primero que el comprador abre.",
+      "evidencia": "data_only: B43 = 'No alcanzado'. B6:M9, B13:M18, B28:M28 y B30:M30 = None. A44 explica que si el acumulado no cruza a positivo devuelve ese texto.",
+      "fix": "Precargar los 12 meses con la serie del escenario Realista de pl-mensual (169.950 € de ingresos, 91.000 € de fijos, 30 % de materia prima) y la cuota que corresponda, etiquetados como valor de ejemplo (§1.2), para que B43 devuelva un mes."
+    },
+    {
+      "id": "RD-07",
+      "severidad": "alta",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "Cash Flow 12 Meses!A5:A22 (no hay saldo inicial ni salida de inversión)",
+      "hallazgo": "El cash flow de una APERTURA no tiene saldo inicial de tesorería, ni la salida de caja de la inversión, ni el IVA soportado del CAPEX. El acumulado arranca en 0, así que el «mes de break-even de caja» es sólo el primer mes con flujo operativo positivo, no el momento en que se recupera lo invertido: para un proyecto de cientos de miles de euros la diferencia son años.",
+      "evidencia": "Filas A5 'INGRESOS' … A22 'FLUJO ACUMULADO': no hay ninguna etiqueta de saldo inicial, aportación de socios, desembolso de CAPEX ni IVA soportado de inversión (A28, el único IVA soportado, es de compras corrientes y va vacío). En los 5 hermanos esa fila de saldo inicial sí existe (SPEC §2.4).",
+      "fix": "Añadir 'Saldo inicial de tesorería (€)' verde en B5 encadenando C5='=B27' como en los hermanos, más '(-) Desembolso de inversión' y '(-) IVA soportado de la inversión (recuperable, con su plazo)', para que el acumulado parta del capital real."
+    },
+    {
+      "id": "RD-08",
+      "severidad": "alta",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "Inversión!A5:A26 frente a cronograma-apertura-gantt.xlsx!Gantt!X8 y X23",
+      "hallazgo": "No hay ninguna partida de costes de PREAPERTURA —renta durante obra y licencia, y nóminas de la brigada contratada antes de abrir— pese a que el propio pack cifra las dos cosas y programa las dos fechas. Es la partida que más aperturas mata y no aparece en ninguno de los 18 xlsx.",
+      "evidencia": "Gantt: X8 = 3 ('Negociación y firma del arrendamiento (con carencia)') y X23 = 12 ('Selección y contratación brigada cocina') para una apertura en X34 = 18. checklist-legal!H50: «son 6-10 meses de renta antes de facturar un euro»; pl-mensual!C13 = 17.000 €/mes de alquiler y C12 = 52.000 €/mes de personal. Inversión!A5:A26 (22 conceptos) no recoge ninguno de los dos.",
+      "fix": "Añadir a Inversión dos conceptos calculados: 'Rentas y suministros de preapertura (meses fuera de carencia × alquiler)' y 'Nóminas de preapertura (meses × coste de brigada)', con los meses en celda verde y leyendo alquiler y personal del P&L."
+    },
+    {
+      "id": "RD-09",
+      "severidad": "alta",
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ubicacion": "Ticket Medio!C16, C17, C19, C20 frente a pl-mensual-escenarios.xlsx!Escenarios!C17",
+      "hallazgo": "El producto tiene DOS escenarios «realistas» de facturación que no coinciden, con los mismos 70 cubiertos/día y los mismos 22 días abiertos. §7-bis.7 exige una sola fuente por magnitud y el ticket medio es la primera de todas: el consultor no sabe cuál llevar al banco.",
+      "evidencia": "data_only: calculadora-ticket-medio!C16 = 123,20 €, C17 = 70, C19 = 22 → C20 = 189.728,00 €/mes. pl-mensual-escenarios!C17 = 169.950,00 €/mes con C6+C7 = 70 cubiertos y C10 = 22 días (ticket implícito 110,36 €, que es el que copia cash-flow!B40 = 110). Diferencia 19.778 €/mes = 237.336 €/año (11,6 %).",
+      "fix": "Recalibrar mix y precios de la calculadora para que el escenario central reproduzca el ticket de 110,36 € del P&L (o al revés), y dejar en las dos hojas la nota «esta cifra sale de …», que es la coherencia que permite §1.13 sin externalLink."
+    },
+    {
+      "id": "RD-10",
+      "severidad": "alta",
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ubicacion": "Escenarios!E12 (nota de 'Coste personal mensual')",
+      "hallazgo": "La nota que justifica el coste de personal repite palabra por palabra la afirmación que DOM-02/COM-10 y §5.4 declaran FALSA: que el rango de 250.000-450.000 €/año de cocina va «con la SS de la empresa». Ese rango es el bruto SIN Seguridad Social; con el 33 % del propio pack son 322.400-601.900 €. La v2.0 canoniza el error en una celda nueva.",
+      "evidencia": "Escenarios!E12: «Capítulo 13: cocina 250.000-450.000 €/año y sala 200.000-350.000 €/año con la SS de la empresa, para una plantilla de 22-30 personas». plantilla-turnos-brigada!C41 = 0,33 y O33 = '=IFERROR(IF($L$33=\"\",\"\",$L$33*(1+$C$41)),\"\")'.",
+      "fix": "Reescribir E12 con las cifras corregidas de §5.4 (cocina 322.400-601.900 €, sala 234.000-403.000 €, total 556 k€-1,0 M€) y decir que el rango del capítulo es BRUTO y que la SS se añade con el tipo de plantilla-turnos-brigada!C41."
+    },
+    {
+      "id": "RD-11",
+      "severidad": "alta",
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ubicacion": "Escenarios!A21/B21 y E14 frente a plan-financiero-3-anos.xlsx!'P&L Mensual'!B32/B34",
+      "hallazgo": "Hay dos EBITDA distintos en el mismo producto. plan-financiero excluye la amortización del EBITDA (corrección TEC-08 aplicada), pero pl-mensual la mete dentro de «Otros costes fijos» por decisión declarada en su propia nota y sigue rotulando la fila «EBITDA mensual»: es un EBIT con nombre de EBITDA, el defecto que la SPEC daba por corregido.",
+      "evidencia": "pl-mensual!E14: «Suministros, seguros, marketing, tecnología, mantenimiento, limpieza, gestoría y amortización»; A21 = 'EBITDA mensual', B21 = '=B19-B20' con B20 = '=SUM(B12:B14)'. plan-financiero!'P&L Mensual'!B32 = '=SUM(B20:B29)+SUM(B31:B31)' (excluye B30 'Amortización equipamiento') y A34 = 'EBITDA', con A36/A37 de amortización y EBIT.",
+      "fix": "Sacar la amortización de «Otros costes fijos» a su propia fila en Escenarios y añadir 'Amortización' y 'EBIT' debajo del EBITDA, igual que en plan-financiero; como mínimo, renombrar A21 a 'EBIT' y decirlo en la nota."
+    },
+    {
+      "id": "RD-12",
+      "severidad": "alta",
+      "fichero": "checklist-appcc.xlsx",
+      "ubicacion": "APPCC!C27 (y checklist-equipamiento-cocina.xlsx!C34)",
+      "hallazgo": "El ítem de congelación preventiva de anisakis cita el RD 1420/2006 y le atribuye un binomio que la norma no contiene: «‑20 °C / 5 días». El RD 1420/2006 y el Reglamento (CE) 853/2004 (anexo III, secc. VIII, cap. III) exigen ‑20 °C en la totalidad del producto durante al menos 24 HORAS, o ‑35 °C durante 15 h. Los 5 días son la recomendación de AESAN para congeladores DOMÉSTICOS. Es una instrucción sanitaria que el cliente ejecuta, con la norma citada al lado.",
+      "evidencia": "checklist-appcc!C27: «Congelación preventiva (‑20 °C / 5 días o ‑35 °C / 15 h) para pescado de consumo en crudo, marinado, escabechado o en salazón — RD 1420/2006». El mismo binomio se repite en checklist-equipamiento-cocina!C34 («Verificar que el abatidor alcanza ‑20 °C / ‑35 °C…»).",
+      "fix": "Corregir a «‑20 °C durante al menos 24 h en todo el producto, o ‑35 °C durante 15 h (RD 1420/2006 y Reg. (CE) 853/2004)»; si se quiere mantener un margen de seguridad mayor, decir explícitamente que es un margen propio y no el requisito legal."
+    },
+    {
+      "id": "RD-13",
+      "severidad": "alta",
+      "fichero": "budget-bodega.xlsx",
+      "ubicacion": "Bodega!F4 y M5:M54 ('Food cost bebida (%)')",
+      "hallazgo": "El indicador que el cap. 12 usa de vara (food cost de bebida 28-40 %) cruza un coste sin IVA con un PVP de CARTA, que en España se muestra CON IVA y que en vino alcohólico es del 21 %. El resultado subestima el food cost de bebida en unos 7 puntos, justo en la magnitud que decide si la bodega gana dinero. En todo el libro no hay ninguna celda de tipo de IVA.",
+      "evidencia": "Bodega!F4 = 'PVP Carta (€)'; M5 = '=IFERROR(IF(OR($E5=\"\",$F5=\"\",$F5=0),\"\",$E5/$F5),\"\")'. Con coste 10 € y carta 30 €: M = 33,3 %; sin IVA (30/1,21 = 24,79 €) el food cost real es 40,3 %. El escandallo sí lo resuelve: Ficha (plantilla)!H31 = 0,1 con la nota «21 % en bebidas alcohólicas».",
+      "fix": "Añadir celda verde de tipo de IVA de bebida (0,21) y columna 'PVP sin IVA (€)' = F/(1+tipo), y calcular G, H, L, M y O sobre ella, como ya hace el escandallo (§1.5 a)."
+    },
+    {
+      "id": "RD-14",
+      "severidad": "media",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "Cash Flow 12 Meses!B25 y B27:M27 (sobre B10, que incluye A8)",
+      "hallazgo": "El IVA repercutido se calcula con un tipo único del 10 % sobre TODA la facturación, incluida la de bebidas alcohólicas, que van al 21 %. El propio libro lo sabe y lo dice en la nota de al lado. En un gastronómico con maridaje la bodega es una parte grande de la venta, así que la liquidación del 303 sale sistemáticamente corta.",
+      "evidencia": "B25 = 0,1; B27 = '=B10*$B$25' con B10 = '=SUM(B6:B9)' y A8 = 'Bebidas y vinos'. A26: «10 % general en restauración; 21 % en bebidas alcohólicas». Con el escenario Realista (169.950 €/mes) y un 30 % de bodega, la diferencia son ~5.600 €/mes de IVA repercutido no previsto.",
+      "fix": "Desdoblar en dos filas de IVA repercutido (restauración al tipo general y bebida alcohólica al 21 %) con dos celdas de tipo, o al menos una fila '(+) IVA repercutido de bebida alcohólica' que use su propio tipo sobre B8."
+    },
+    {
+      "id": "RD-15",
+      "severidad": "media",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "Cash Flow 12 Meses!A3 e Instrucciones!A14 frente a A26",
+      "hallazgo": "El mismo libro dice dos cosas opuestas sobre cómo hay que teclear las cifras: la cabecera y las Instrucciones afirman que la hoja va CON IVA, y la nota del bloque de IVA dice que las filas de arriba se escriben SIN IVA porque la capa de abajo lo añade. Quien haga caso de las dos primeras teclea importes con IVA y B27 se lo vuelve a sumar.",
+      "evidencia": "A3: «Las cifras de esta hoja van CON IVA: es caja»; Instrucciones!A14: «Todas las cifras van SIN IVA, salvo el cash flow, que va CON IVA porque es caja»; A26: «Las filas de arriba se escriben SIN IVA, igual que el P&L; esta capa lo añade porque es caja».",
+      "fix": "Dejar una sola redacción —las filas 6-19 se escriben SIN IVA y el IVA se añade en el bloque 24-33— y corregir A3 y la línea genérica de §1.5(b) que el motor inyecta en las Instrucciones de esta hoja."
+    },
+    {
+      "id": "RD-16",
+      "severidad": "media",
+      "fichero": "checklist-vajilla-cristaleria.xlsx",
+      "ubicacion": "Vajilla, Cristalería y Cubertería!I8, I17:I24, I25:I35, I36:I54",
+      "hallazgo": "La columna nueva «Factor por comensal (menú degustación)» —que es toda la respuesta a DOM-21— sólo está rellena en 11 de las 50 filas. El bloque de CUBERTERÍA entero va vacío, y también el vaso de agua, la copa de generoso y la cuchara de degustación. En un menú de 8-12 pases la cubertería es la pieza que más rota: es justo donde hacía falta el cálculo.",
+      "evidencia": "Medido sobre el fichero generado: 11 filas con factor (5,6,7,9,10,11,12,13,14,15,16) y 39 sin él, entre ellas C8 'Plato pan', C17 'Vaso de agua', C23 'Copa de vino generoso / jerez', C25:C35 (todo 'Cubertería') y C34 'Cuchara de degustación / amuse-bouche (×100)'. En esas filas J devuelve \"\".",
+      "fix": "Rellenar I en cubertería, vaso de agua y petit menage con las piezas por comensal que exige el número de pases (dato del módulo de contenido), o retirar la columna donde no aplique y decirlo, para que no parezca un cálculo que falta."
+    },
+    {
+      "id": "RD-17",
+      "severidad": "media",
+      "fichero": "checklist-vajilla-cristaleria.xlsx",
+      "ubicacion": "Vajilla, Cristalería y Cubertería!J13:J16 frente a G13:G16 y G57",
+      "hallazgo": "La segunda columna dice cuántas piezas hacen falta para el menú degustación, pero no toca el dinero: el presupuesto y el TOTAL siguen siendo los de la dotación de carta. El cliente lee que necesita casi el doble de copas y sigue llevando al banco la mitad del importe.",
+      "evidencia": "J13:J16 = 6 × 65 × 1,5 = 585 copas (I13=2, I14=2, I15=1, I16=1; Instrucciones!B11 = 65 plazas y B12 = 1,5 de rotación) frente a las 300 copas presupuestadas en C13:C16 por 5.300 € (G13=1600, G14=1600, G15=1200, G16=900). G57 ('TOTAL PRESUPUESTADO') = 30.230 €, el mismo de la v1.1.",
+      "fix": "Añadir columna 'Coste ajustado a menú degustación (€)' = (J / uds de la dotación de carta) × G y una segunda fila de TOTAL, para que la dotación calculada tenga precio y pueda ir a Inversión!C15."
+    },
+    {
+      "id": "RD-18",
+      "severidad": "media",
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "Equipamiento Cocina!C43 y C79 dentro de G98 ('=SUM(G5:G95)')",
+      "hallazgo": "Se han añadido dos ítems que son ALTERNATIVAS excluyentes de otros dos ya presupuestados, y los cuatro entran en el mismo sumatorio. En cuanto el cliente tase la alternativa, el TOTAL presupuesta las dos opciones a la vez; no hay ninguna marca que las excluya, y los subtotales por categoría heredan el mismo problema.",
+      "evidencia": "C43 = 'Bloque modular de cocción de alta gama (alternativa al bloque estándar)' frente a C35 = 'Cocina industrial 6 fuegos + horno' (G35 = 5.200 €); C79 = 'Túnel de lavado con mesas de entrada y salida (ALTERNATIVA a la capota)' frente a C75 = 'Lavavajillas de capota 50×50' (G75 = 3.500 €, H75: «Elige UNA de las dos»). G98 = '=SUM(G5:G95)' incluye las cuatro filas; G105 y G109 (SUMIF por categoría) también.",
+      "fix": "Añadir columna 'Incluir en el total (Sí/No)' con DV y cambiar G98 y los SUMIF de categoría a SUMIFS sobre ella, con las alternativas en 'No' por defecto."
+    },
+    {
+      "id": "RD-19",
+      "severidad": "media",
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "Equipamiento Cocina!G95",
+      "hallazgo": "El 12 % de «Instalación, transporte y puesta en marcha» se aplica sobre la suma de TODAS las filas, incluidas las tres que ya son obra e instalación (conducto hasta cubierta, aportación de aire y extinción en campana) y el bloque de Tecnología, que instala otro proveedor. Se cobra instalación sobre la instalación.",
+      "evidencia": "G95 = '=IFERROR(ROUND((SUM($G$5:$G$94))*Instrucciones!$B$11,2),\"\")' con Instrucciones!B11 = 0,12 → 17.648,40 €. Dentro de la base van G92 = 12.000 €, G93 = 3.000 € y G94 = 2.500 € (categoría 'Extracción e instalaciones'), es decir 17.500 € × 12 % = 2.100 € de instalación duplicada, más los 9.900 € de la categoría 'Tecnología'.",
+      "fix": "Cambiar la base a un SUMIF que excluya las categorías 'Extracción e instalaciones' y 'Tecnología', y explicarlo en la nota de la fila."
+    },
+    {
+      "id": "RD-20",
+      "severidad": "media",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "Financiación!A4:A16 y B5 frente a Inversión!C27",
+      "hallazgo": "La hoja de financiación trae 300.000 € de préstamo precargados contra un CAPEX de 0 € y sin ninguna fila de aportación de socios ni comprobación de que préstamo + fondos propios = necesidad de inversión. Es lo primero que cuadra un analista de riesgos y el libro no lo plantea.",
+      "evidencia": "Financiación!B5 = 300000 (celda verde); Inversión!C27 = 0.0 (data_only). En Financiación no hay ninguna etiqueta de 'fondos propios', 'aportación' ni 'necesidad de financiación': A4:A16 son sólo parámetros del préstamo y sus derivados.",
+      "fix": "Añadir un bloque 'Plan de financiación': necesidad total (= Inversión!C27), fondos propios (verde), préstamo (B5), otras fuentes y una fila de cuadre con semáforo si la suma no iguala la necesidad."
+    },
+    {
+      "id": "RD-21",
+      "severidad": "media",
+      "fichero": "cash-flow-break-even.xlsx",
+      "ubicacion": "Cash Flow 12 Meses!A34 frente a plan-financiero-3-anos.xlsx!Financiación!B12 y B13",
+      "hallazgo": "La nota manda copiar al cash flow la cuota de 3.528,00 €/mes, pero con los parámetros de ejemplo el primer año es precisamente el año de CARENCIA, en el que se pagan sólo intereses: 1.375 €/mes. La instrucción envía a la celda equivocada y sobreestima la salida de caja del primer año en 25.836 €.",
+      "evidencia": "cash-flow!A34: «Con el préstamo de ejemplo de plan-financiero-3-anos.xlsx la cuota mensual es 3528,00 €; cópiala aquí cuando cierres tu financiación». Financiación!B8 = 1 (carencia en años), B12 = 3.527,999 €, B13 ('Cuota mensual DURANTE la carencia') = 1.375,0 €, C18 (cuota del año 1) = 16.500 € = 1.375 × 12.",
+      "fix": "Reescribir A34 para que remita a B13 mientras dure la carencia y a B12 después, o precargar B30:M30 con la cuota que corresponda a los 12 meses que representa este cash flow."
+    },
+    {
+      "id": "RD-22",
+      "severidad": "media",
+      "fichero": "escandallo-maestro.xlsx",
+      "ubicacion": "Ficha (plantilla)!H30, H33 y Resumen!G5",
+      "hallazgo": "«Food cost real sobre el PVP sin IVA» es una tautología: como el PVP se calcula dividiendo el coste entre el objetivo, el indicador devuelve siempre exactamente el objetivo. No existe ninguna celda para el PVP REAL de carta, que es lo único que hace útil ese dato cuando el precio se redondea (de 76,79 € a 79 €, por ejemplo).",
+      "evidencia": "H30 = '=IFERROR(IF(OR($H$29=\"\",$H$4=\"\",$H$4=0),\"\",$H$29/$H$4),\"\")' y H33 = '=IFERROR(IF(OR($H$29=\"\",$H$30=\"\",$H$30=0),\"\",$H$29/$H$30),\"\")', luego H33 ≡ H4 siempre. Lo mismo en Resumen!G5 = '…$D$5/$E$5…'.",
+      "fix": "Añadir 'PVP real de carta (con IVA)' como celda verde y calcular el food cost real contra ella descontando el IVA de H31; el PVP sugerido se queda como referencia."
+    },
+    {
+      "id": "RD-23",
+      "severidad": "media",
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ubicacion": "Ticket Medio!A6, A8, A10, A12, A14 y menu-engineering-matrix.xlsx!Menu Engineering!F4",
+      "hallazgo": "La regla §1.5(a) («toda hoja que fije un PVP lleva PVP sin IVA y PVP con IVA, con el tipo en celda») se aplicó al escandallo y no a las otras dos hojas que fijan precios. Ni el simulador de ticket ni la matriz de menu engineering dicen si sus precios llevan IVA ni tienen celda de tipo, y en España el precio que el cliente ve en la carta lo lleva: un menú anunciado a 150 € son 136,36 € sin IVA.",
+      "evidencia": "calculadora-ticket-medio!A6 'Precio menú largo (€)', A8 'Precio menú corto (€)', A10 'Ticket medio carta (€)', A12 'Precio maridaje (€)', A14 'Precio copa media (€)': ninguna nota de IVA en la hoja salvo la línea genérica A3. menu-engineering!F4 = 'PVP (€)' con 12 platos precargados (F5=24 … F12=46) y sin celda de tipo. escandallo!I31 sí la tiene.",
+      "fix": "Añadir en las dos hojas la celda verde de tipo de IVA y una fila/columna 'sin IVA' derivada, o rotular las columnas «PVP sin IVA (€)», para que la facturación y la clasificación de Kasavana & Smith no se muevan un 10 %."
+    },
+    {
+      "id": "RD-24",
+      "severidad": "media",
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ubicacion": "Menu Engineering!E4 y E5:E16",
+      "hallazgo": "La matriz se precarga con 12 platos y sus costes, pero no dice de dónde salen ni remite al escandallo, pese a que §4.1 designa el «Coste por ración» de la ficha como su alimento y §1.13 obliga a repetir el dato con la nota de origen cuando no se enlazan libros. Un consultor no puede saber si esos costes incluyen merma, guarnición o pan.",
+      "evidencia": "menu-engineering!E4 = 'Coste (€)' sin nota; E5 = 7,2 … E12 = 16,1 (12 valores tecleados). En escandallo-maestro está 'Coste por ración (€)' (Ficha (plantilla)!H29) y su consolidado (Resumen!D5), pero ninguna nota de la matriz los menciona.",
+      "fix": "Escribir en E4 o en Instrucciones la línea «este coste es el 'Coste por ración' de la ficha correspondiente de escandallo-maestro.xlsx; cópialo desde su hoja Resumen» y marcar los 12 valores como ejemplo."
+    },
+    {
+      "id": "RD-25",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "Turnos Semana, formato condicional sobre L6:L30",
+      "hallazgo": "El semáforo del SMI compara el bruto anual contra 17.094 € SIN proporcionalidad de jornada. En hostelería el contrato a tiempo parcial es habitual y su bruto legítimo está por debajo del SMI anual a jornada completa: la regla pinta en rojo contratos correctos y no distingue el incumplimiento real, que es lo que el gate pretende cazar.",
+      "evidencia": "Regla de formato condicional de Turnos Semana: '=AND(ISNUMBER($L6),$L6<$C$42)' sobre L6:L30, con C42 = 17094 y la nota D42 («1.221 €/mes × 14 pagas … RD 126/2026»). No hay columna de porcentaje de jornada ni comparación de las horas de K contra C43.",
+      "fix": "Añadir columna '% de jornada' (100 % por defecto) y cambiar la guarda a '=AND(ISNUMBER($L6),ISNUMBER($<pct>6),$L6<$C$42*$<pct>6)', con la nota de que el SMI se prorratea a la jornada efectiva."
+    },
+    {
+      "id": "RD-26",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "Registro de jornada!A5:I44, DV de B5:B44 y A50:C60",
+      "hallazgo": "La hoja que se presenta como cumplimiento del art. 34.9 ET tiene 40 filas de registro y 10 de resumen semanal para una brigada de 24 personas: menos de dos días. Y el desplegable de la columna «Trabajador» ofrece PUESTOS («Chef Ejecutivo», «Commis 1»), no personas identificadas, que es precisamente lo que el registro tiene que acreditar.",
+      "evidencia": "Registro de jornada: fórmulas en F5:H44 (40 filas) y C51:C60 (10 de resumen). DV de B5:B44 = lista '\"Chef Ejecutivo,Sous Chef,…,Hostess\"' (los 24 puestos). A62: «Un cuadrante con letras M/T/P/L en siete columnas NO cumple el registro de jornada». 24 trabajadores × 7 días = 168 registros por semana.",
+      "fix": "Extender el rango a al menos una semana completa de brigada (168 filas) o documentar en Instrucciones el paso de duplicar la hoja por semana, y apuntar la DV a la columna 'Nombre' del cuadrante (B6:B30) en vez de a los puestos."
+    },
+    {
+      "id": "RD-27",
+      "severidad": "media",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "Turnos Semana, DV de D6:J30",
+      "hallazgo": "La única validación de datos del producto con showErrorMessage=False es precisamente la de los turnos: teclear una letra que no esté en la lista pasa sin aviso y K la cuenta como 0 h, restando horas y coste de brigada sin que nadie lo vea. §1.7 exige True en toda DV y el resto del pack la cumple.",
+      "evidencia": "DV D6:J30 type=list f1='\"M,T,P,L,V\"' showErrorMessage=False. Todas las demás DV del producto (los 8 checklists, escandallo, capex, cash flow, gantt, menu engineering, pl-mensual y la propia hoja Registro de jornada) van con showErrorMessage=True.",
+      "fix": "Poner showErrorMessage=True en esa DV, con un mensaje de error que enumere M/T/P/L/V y su equivalencia en horas (C36:C40)."
+    },
+    {
+      "id": "RD-28",
+      "severidad": "media",
+      "fichero": "checklist-legal.xlsx",
+      "ubicacion": "Legal!B12:C21 (bloque Licencias) — y ausencia en los 18 xlsx",
+      "hallazgo": "En los 18 ficheros no aparece ni una vez «grasa», «separador» ni «vertido»: no hay arqueta separadora de grasas ni autorización/declaración de vertido a la red de saneamiento. En la mayoría de ordenanzas municipales es requisito para un local con plonge, freidora y parrilla de brasa, y es una causa clásica de acta desfavorable o de denegación de la licencia.",
+      "evidencia": "Barrido de las 18 hojas de cálculo generadas: 'grasa' = 0 coincidencias, 'separador' = 0, 'vertido' = 0. El pack sí presupuesta freidora doble cuba (checklist-equipamiento!C39), Josper HJX-25 (C18) y fregadero industrial doble seno (C76); el bloque Licencias del checklist legal llega hasta C21 sin mencionarlo.",
+      "fix": "Añadir al bloque Licencias «Arqueta separadora de grasas y autorización/declaración de vertido a la red de saneamiento (según ordenanza municipal)» con su coste en verde, y su tarea en la Fase 2 del Gantt."
+    },
+    {
+      "id": "RD-29",
+      "severidad": "media",
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ubicacion": "Gantt!A13:A16 (Fase 2) y A18:A21 (Fase 3)",
+      "hallazgo": "El cronograma no tiene ninguna tarea de contratación y aumento de potencia de los suministros (electricidad, gas, agua), que en una cocina con Josper, horno mixto 10 GN, abatidor y dos cámaras es un trámite de meses y de miles de euros de derechos de acometida. El checklist legal pide los certificados, pero nadie planifica el alta.",
+      "evidencia": "Fase 2 = A13 'Proyecto técnico (arquitecto)', A14 'Solicitud licencia de obras', A15 'Solicitud de licencia de actividad clasificada', A16 'Registro sanitario CCAA'; Fase 3 = A18 obra civil, A19 instalación cocina, A20 mobiliario, A21 tecnología. Ninguna fila de suministros en las 24 tareas. checklist-legal!C17 y C18 exigen los certificados de instalación eléctrica (BT) y de gas.",
+      "fix": "Añadir en la Fase 2 «Solicitud de acometidas y aumento de potencia (luz, gas, agua)» con Mes inicio y Duración, y su coste en el checklist legal o en el de equipamiento."
+    },
+    {
+      "id": "RD-30",
+      "severidad": "media",
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ubicacion": "Gantt!X15/Y15 y X18/Y18",
+      "hallazgo": "La secuencia de licencias no se sostiene: la licencia de actividad se cierra en el mes 11 y la obra civil termina en el 12, así que el trámite acabaría antes de que exista el certificado final de obra y el acta de comprobación, que es lo que permite iniciar la actividad. Tampoco hay tarea para ninguno de los dos documentos.",
+      "evidencia": "Gantt: A15 'Solicitud de licencia de actividad clasificada' con X15 = 6 e Y15 = 6 (meses 6-11); A18 'Obra civil y reforma integral' con X18 = 9 e Y18 = 4 (meses 9-12); A16 'Registro sanitario CCAA' con X16 = 12. Ninguna fila de las 24 contiene 'certificado final de obra' ni 'acta de comprobación'.",
+      "fix": "Separar la licencia en 'Solicitud' y 'Resolución / acta de comprobación tras el final de obra', esta última con Mes inicio posterior al fin de la obra, y añadir la tarea de certificado final de obra e instalaciones."
+    },
+    {
+      "id": "RD-31",
+      "severidad": "media",
+      "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+      "ubicacion": "Preparación Inspección!B39 y C39",
+      "hallazgo": "El ítem que fija la antigüedad mínima de operación para aspirar a una distinción está clasificado dentro del bloque «Prensa y notoriedad (NO influye en la inspección)». Es justo al revés: los meses de servicio consistente sí condicionan cuándo tiene sentido aspirar, y el rótulo le está diciendo al cliente que no cuenta.",
+      "evidencia": "B39 = 'Prensa y notoriedad (NO influye en la inspección)' con C39 = 'Mínimo 18-24 meses de operación consistente antes de aspirar'. El bloque se creó (COM-34) para separar las cuatro acciones de comunicación: C35 eventos, C36 relación con prensa, C37 redes, C38 invitaciones a críticos.",
+      "fix": "Mover C39 al bloque 'Operativa' o a uno propio de 'Requisitos previos', dejando en 'Prensa y notoriedad' sólo las cuatro acciones de comunicación."
+    },
+    {
+      "id": "RD-32",
+      "severidad": "baja",
+      "fichero": "checklist-legal.xlsx",
+      "ubicacion": "Legal!C9 y C44",
+      "hallazgo": "El checklist, subido de 40 a 48 ítems para cumplir el recuento anunciado, contiene el mismo trámite dos veces con dos nombres. Duplicar un ítem en una lista que el cliente ejecuta y tacha es exactamente el relleno que §3.4 prohíbe.",
+      "evidencia": "C9 = 'Alta censal en Hacienda (Modelo 036/037)' (categoría Constitución, G9 = 0) y C44 = 'Alta en el censo de empresarios (Modelo 036)' (categoría Fiscal, G44 = 0).",
+      "fix": "Fundir las dos en una sola fila y usar la que queda libre para un trámite fiscal real que hoy no está (por ejemplo el sistema informático de facturación exigible al TPV), con su norma y su coste en verde."
+    },
+    {
+      "id": "RD-33",
+      "severidad": "baja",
+      "fichero": "checklist-legal.xlsx",
+      "ubicacion": "Legal!G55 frente a G37:G40 y G48:G52",
+      "hallazgo": "El «TOTAL PRESUPUESTADO» se presenta como el presupuesto legal de la apertura, pero las nueve filas nuevas van sin importe, incluida la fianza de dos mensualidades, que con el alquiler del propio pack son 34.000 € — más que el total entero. No hay ningún contador de partidas sin tasar que avise de que la cifra está incompleta.",
+      "evidencia": "G55 = '=SUM(G5:G52)' = 23.960 € (el propio run informa checklist-legal.xlsx: total=23960.0). Sin importe: G37 (registro de jornada), G38 (comunicación de apertura), G39 (registro retributivo), G40 (protocolo de acoso) y todo G48:G52 (bloque 'Local', con C49 = 'Fianza legal de 2 mensualidades y garantía adicional'). pl-mensual-escenarios!C13 = 17.000 €/mes de alquiler.",
+      "fix": "Añadir bajo el TOTAL una fila 'Partidas sin tasar' con COUNTBLANK(G5:G52) y semáforo, y precargar la fianza como fórmula = 2 × alquiler mensual."
+    },
+    {
+      "id": "RD-34",
+      "severidad": "baja",
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ubicacion": "Instrucciones!A1 frente a pl-mensual-escenarios.xlsx!Escenarios!E12 y checklist-diseno-sala.xlsx!H33",
+      "hallazgo": "TEC-13 y §7-bis.7 exigen una sola cifra de plantilla en todo el producto. Después de corregir el cuadrante a 24, las notas nuevas vuelven a introducir el rango antiguo: el mismo pack dice 24 en un sitio y 22-30 en otros dos.",
+      "evidencia": "plantilla-turnos-brigada!Instrucciones!A1 = 'Plantilla Turnos Brigada (24 personas)' y el cuadrante numera A6:A30 del 1 al 24. pl-mensual-escenarios!E12: «… para una plantilla de 22-30 personas». checklist-diseno-sala!H33: «son 22-30 personas según el cap. 13».",
+      "fix": "Unificar a 24 en las dos notas (o al valor que fije el módulo de contenido), citando el cuadrante como fuente única."
+    },
+    {
+      "id": "RD-35",
+      "severidad": "baja",
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ubicacion": "Inversión!F4 y F5:F26; Instrucciones!A19",
+      "hallazgo": "La reconciliación de los dos CAPEX que exige §2.3.6 (TEC-26/COM-32) se ha quedado en un encabezado: la columna «Categoría equivalente en calculadora-capex.xlsx» está vacía en las 22 filas, y las Instrucciones afirman que esa columna dice la correspondencia. Sin ella los dos desgloses siguen sin poder compararse, y el checklist de equipamiento supera el rango alto de su categoría sin que nada lo señale.",
+      "evidencia": "Inversión!F4 = 'Categoría equivalente en calculadora-capex.xlsx'; F5:F26 sin una sola celda con valor (medido). Instrucciones!A19: «la última columna de «Inversión» dice a qué categoría suya corresponde cada concepto». checklist-equipamiento-cocina!G98 = 164.718,40 € frente a calculadora-capex!C6:E6 = 55.000 / 90.000 / 150.000 €.",
+      "fix": "Rellenar F5:F26 con la categoría de calculadora-capex de cada uno de los 22 conceptos y añadir en calculadora-capex una columna con el subtotal agregado desde «Inversión», para que los dos totales sean comparables de un vistazo."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "NO ESTÁ LISTO. Con estos 18 xlsx no se monta un restaurante gastronómico, y no por acabado: el producto sigue sin entregar UNA SOLA de las cuatro cifras que §7-bis.7 declara fuente única. La hoja «Inversión» —el fichero que va al banco— evalúa a 0,0 € con las 22 partidas vacías (RD-01); el fondo de maniobra, decisión firmada del orquestador (7-bis.3), sigue sin fórmula y sin valor (RD-02) mientras la calculadora de CAPEX mantiene un rango de 60.000-200.000 € que cubre 2,2 meses de los 91.000 €/mes de costes fijos que el propio pack fija (RD-03); y la plantilla de turnos, designada fuente del coste de personal, devuelve cadena vacía en las 24 filas y en sus tres totales porque los brutos y la jornada de convenio se dejaron en blanco (RD-04). Sobre esa base, el break-even que la landing vende como automático abre diciendo «No alcanzado» (RD-06), su umbral de ventas y sus cubiertos/día se calculan sin la cuota del préstamo justo debajo de una nota que promete lo contrario (RD-05), y el acumulado ignora el desembolso de la inversión, el saldo inicial y el IVA del CAPEX (RD-07), además de no existir partida alguna de preapertura pese a que el Gantt firma el alquiler en el mes 3 y contrata la brigada en el 12 para abrir en el 18 (RD-08). A eso se suman dos incoherencias de las que un consultor no se recupera delante de un cliente: dos escenarios «realistas» que difieren en 237.336 €/año con los mismos 70 cubiertos y los mismos 22 días (RD-09) y dos EBITDA distintos en el mismo pack, uno con la amortización dentro (RD-11), más la nota que vuelve a afirmar que 250.000-450.000 € de cocina van «con la SS de la empresa» cuando es el bruto (RD-10). Y tres riesgos que no son de modelo sino de ejecución: se cita el RD 1420/2006 y se le atribuye un binomio de congelación de anisakis que la norma no contiene —24 h, no 5 días— (RD-12), el food cost de bebida se calcula sobre un PVP de carta con el 21 % de IVA dentro y sale 7 puntos bajo (RD-13), y en ningún fichero aparece la arqueta separadora de grasas ni la autorización de vertido, que condicionan la licencia (RD-28). Lo que sí está bien y no hay que rehacer: los recuentos de ítems ya cumplen o superan lo anunciado (legal 48, APPCC 55, equipamiento 91, vajilla 50, michelin 45, diseño-sala 35, marketing 35, contratación 30), el bloque «Local» con carencia, fianza y condición suspensiva es exactamente lo que hacía falta, el registro de jornada existe, el cuadro francés con carencia calcula bien (3.527,999 € y 1.375 € verificados), Kasavana & Smith está completo y clasifica, el SMI de 17.094 € y la SS al 33 % están en celda con su fuente, y Resy ya no está. El paquete está bien construido; le falta precargar los datos de ejemplo que lo hacen demostrable y cerrar la cadena de coherencia entre libros."
+}
