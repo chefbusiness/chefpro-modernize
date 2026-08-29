@@ -300,6 +300,12 @@ def _sustituir(ws, roles, fila_cab, fin, regla, cambios, fname):
             return 'ya'
         return None
     _escribir_celda(ws, fila, roles['tarea'], regla['tarea'])
+    # RD-31 · un ítem puede estar bien redactado y MAL CLASIFICADO: «mínimo
+    # 18-24 meses de operación consistente antes de aspirar» colgaba de
+    # «Prensa y notoriedad (NO influye en la inspección)», que le dice al
+    # cliente justo lo contrario de lo que el ítem significa.
+    if regla.get('categoria') and roles['categoria']:
+        _escribir_celda(ws, fila, roles['categoria'], regla['categoria'])
     if regla.get('responsable') and roles['responsable']:
         _escribir_celda(ws, fila, roles['responsable'], regla['responsable'])
     if 'coste' in regla and roles['coste']:
@@ -636,13 +642,27 @@ def _fila_porcentual(ws, wb, roles, fila_cab, fin, cfg, cambios, fname):
     ref = _param(wb, cfg['etiqueta'], cfg['valor'], motor.FMT_PCT,
                  cfg['nota'], cambios, fname, porcentaje=True)
     col = roles['coste']
+    # RD-19 · el 12 % de «instalación, transporte y puesta en marcha» se
+    # aplicaba sobre TODAS las filas, incluidas las tres que YA son obra e
+    # instalación (conducto hasta cubierta, aportación de aire, extinción en
+    # campana) y el bloque de Tecnología, que instala otro proveedor: se
+    # cobraba instalación sobre la instalación (2.100 € de más medidos).
+    excluir = cfg.get('excluir_categorias') or ()
+    cat = roles['categoria'] if excluir else None
+
+    def _tramo(a, b):
+        if not cat:
+            return 'SUM($' + col + '$' + str(a) + ':$' + col + '$' + str(b) + ')'
+        crit = ''.join(',$' + cat + '$' + str(a) + ':$' + cat + '$' + str(b)
+                       + ',"<>' + c.replace('"', '""') + '"' for c in excluir)
+        return ('SUMIFS($' + col + '$' + str(a) + ':$' + col + '$' + str(b)
+                + crit + ')')
+
     tramos = []
     if fila - 1 >= fila_cab + 1:
-        tramos.append('SUM($' + col + '$' + str(fila_cab + 1) + ':$' + col
-                      + '$' + str(fila - 1) + ')')
+        tramos.append(_tramo(fila_cab + 1, fila - 1))
     if fin >= fila + 1:
-        tramos.append('SUM($' + col + '$' + str(fila + 1) + ':$' + col + '$'
-                      + str(fin) + ')')
+        tramos.append(_tramo(fila + 1, fin))
     if not tramos:
         return None
     formula = motor.iferror('ROUND((' + '+'.join(tramos) + ')*' + ref + ',2)')
@@ -656,6 +676,96 @@ def _fila_porcentual(ws, wb, roles, fila_cab, fin, cfg, cambios, fname):
 # ==========================================================================
 # §3.4 — la segunda columna «Menú degustación» de la vajilla (DOM-21)
 # ==========================================================================
+def _columna_incluir(ws, roles, fila_cab, fin, alternativas, cambios, fname):
+    """RD-18/RC-23 — dos parejas de líneas MUTUAMENTE EXCLUYENTES sumaban las
+    dos en el mismo TOTAL.
+
+    `checklist-equipamiento-cocina` trae «Lavavajillas de capota 50×50»
+    (3.500 €) y «Túnel de lavado … (ALTERNATIVA a la capota)», y «Cocina
+    industrial 6 fuegos + horno» (5.200 €) y «Bloque modular de cocción de alta
+    gama (alternativa al bloque estándar)». La nota decía «elige una y pon la
+    otra a 0» y el `SUM` no tenía forma de saberlo. Con esta columna el TOTAL
+    (y los subtotales por categoría) pasan a ser el de la configuración
+    ELEGIDA, no el de todas las opciones a la vez.
+    """
+    if not roles['coste']:
+        return None
+    col = None
+    for c in range(1, ws.max_column + 1):
+        if _txt(ws.cell(row=fila_cab, column=c).value) == motor.COL_INCLUIR:
+            col = get_column_letter(c)
+            break
+    if col is None:
+        idx = ws.max_column + 1
+        cel = ws.cell(row=fila_cab, column=idx, value=motor.COL_INCLUIR)
+        cel._style = _estilo_de(ws, fila_cab, _col(roles['coste']))
+        cel.alignment = Alignment(horizontal='center', vertical='center',
+                                  wrap_text=True)
+        col = get_column_letter(idx)
+        ws.column_dimensions[col].width = 15.0
+    excluidas, coords = 0, []
+    for r in range(fila_cab + 1, fin + 1):
+        if not _txt(ws.cell(row=r, column=_col(roles['tarea'])).value):
+            continue
+        texto = _norm(ws.cell(row=r, column=_col(roles['tarea'])).value)
+        es_alt = any(_norm(a) in texto for a in alternativas)
+        cel = ws[col + str(r)]
+        cel.value = motor.INCLUIR_NO if es_alt else motor.INCLUIR_SI
+        cel.alignment = Alignment(horizontal='center')
+        cel.fill = PatternFill('solid', fgColor=motor.VERDE)
+        cel.protection = Protection(locked=False)
+        coords.append(col + str(r))
+        if es_alt:
+            excluidas += 1
+    motor.dv_lista(ws, coords, (motor.INCLUIR_SI, motor.INCLUIR_NO),
+                   titulo='Incluir en el total',
+                   mensaje='Escribe «Sí» o «No». Las líneas marcadas «No» no '
+                           'suman en el TOTAL ni en los subtotales: son la '
+                           'opción que NO has elegido.')
+    motor.semaforo_texto(ws, col + str(fila_cab + 1) + ':' + col + str(fin),
+                         ((motor.INCLUIR_SI, motor.CF_VERDE_BG,
+                           motor.CF_VERDE_FG),
+                          (motor.INCLUIR_NO, motor.CF_AMBAR_BG,
+                           motor.CF_AMBAR_FG)))
+    # el motor lee esta marca al escribir el TOTAL y los subtotales (§1.9)
+    ws._g_col_incluir = col
+    cambios.append(fname + ':' + ws.title + ': columna «' + motor.COL_INCLUIR
+                   + '» en ' + col + ' con ' + str(excluidas) + ' alternativas '
+                   'excluyentes marcadas «No»; el TOTAL y los subtotales pasan '
+                   'a SUMIF/SUMIFS sobre ella (RD-18, RC-23)')
+    return col
+
+
+def _coste_por_formula(ws, wb, roles, fila_cab, fin, reglas, cambios, fname):
+    """RC-15/RD-33 — una partida cuyo importe SE CALCULA, no se teclea.
+
+    El bloque «Local» del checklist legal aportaba 0,00 € al presupuesto de la
+    apertura, y su partida más cara —la fianza legal de dos mensualidades del
+    art. 36 LAU— son 34.000 € con el alquiler que el propio pack precarga: más
+    que el TOTAL entero del checklist. Se calcula desde una celda verde de
+    renta mensual, igual que el 12 % de instalación se calcula desde la suya.
+    """
+    if not roles['coste']:
+        return 0
+    hechas = 0
+    for regla in reglas:
+        fila = _buscar_fila(ws, roles['tarea'], regla['buscar'], fila_cab, fin)
+        if fila is None:
+            continue
+        ref = _param(wb, regla['etiqueta'], regla['valor'], motor.FMT_EUR,
+                     regla['nota'], cambios, fname)
+        motor.f(ws, roles['coste'] + str(fila),
+                regla['formula'].replace('<param>', ref), fmt=motor.FMT_EUR)
+        if regla.get('notas') and roles['notas']:
+            _escribir_celda(ws, fila, roles['notas'], regla['notas'])
+        hechas += 1
+        cambios.append(fname + ':' + ws.title + '!' + roles['coste']
+                       + str(fila) + ': ' + regla['etiqueta'] + ' → '
+                       + regla['formula'].replace('<param>', ref)
+                       + ' [' + regla.get('id', '') + ']')
+    return hechas
+
+
 def _columna_calculada(ws, wb, roles, fila_cab, fin, cfg, cambios, fname):
     """DOM-21 — no se redimensiona la dotación de carta (que es correcta para su
     supuesto): se añade una **segunda columna** con la regla explícita
@@ -718,7 +828,75 @@ def _columna_calculada(ws, wb, roles, fila_cab, fin, cfg, cambios, fname):
                        + ' factores uds/comensal precargados (el resto los '
                          'pone el cliente; la columna calculada da "" sin '
                          'factor)')
+    if cfg.get('cabecera_coste'):
+        _columna_coste_ajustado(ws, roles, fila_cab, fin, cfg, col_calc,
+                                cambios, fname)
     return col_entrada, col_calc
+
+
+RX_DOTACION = re.compile(r'[(\[]\s*[x×]\s*(\d+)\s*[)\]]', re.I)
+
+
+def _columna_coste_ajustado(ws, roles, fila_cab, fin, cfg, col_calc, cambios,
+                            fname):
+    """RD-17 — la dotación de menú degustación no tocaba el DINERO.
+
+    La columna nueva decía que hacen falta 585 copas donde el presupuesto
+    compra 300, y el TOTAL seguía siendo el de la dotación de carta: el cliente
+    leía que necesita casi el doble y llevaba al banco la mitad del importe.
+
+    Las unidades de la dotación de carta NO se inventan: están escritas en el
+    propio ítem («Copa vino tinto Burgundy (×80)»), así que se leen de ahí y se
+    publican en su columna para que la regla de tres sea auditable.
+    """
+    if not roles['coste']:
+        return None
+    cab_uds = cfg.get('cabecera_dotacion', 'Dotación de carta (uds)')
+    cab_cos = cfg['cabecera_coste']
+    col_uds = col_cos = None
+    for c in range(1, ws.max_column + 1):
+        v = _norm(ws.cell(row=fila_cab, column=c).value)
+        if v == _norm(cab_uds):
+            col_uds = get_column_letter(c)
+        elif v == _norm(cab_cos):
+            col_cos = get_column_letter(c)
+    if col_uds is None or col_cos is None:
+        base = ws.max_column
+        col_uds = get_column_letter(base + 1)
+        col_cos = get_column_letter(base + 2)
+        motor.val(ws, col_uds + str(fila_cab), cab_uds, bold=True, wrap=True)
+        motor.val(ws, col_cos + str(fila_cab), cab_cos, bold=True, wrap=True)
+        for L in (col_uds, col_cos):
+            ws.cell(row=fila_cab, column=_col(L))._style = _estilo_de(
+                ws, fila_cab, _col(roles['coste']))
+            ws.column_dimensions[L].width = 18.0
+    leidas = 0
+    for r in range(fila_cab + 1, fin + 1):
+        texto = _txt(ws.cell(row=r, column=_col(roles['tarea'])).value)
+        m = RX_DOTACION.search(texto or '')
+        cel = ws[col_uds + str(r)]
+        cel.value = int(m.group(1)) if m else None
+        cel.number_format = '#,##0'
+        if m:
+            leidas += 1
+        motor.f(ws, col_cos + str(r),
+                '=IFERROR(IF(OR($' + col_uds + str(r) + '="",$' + col_uds
+                + str(r) + '=0,$' + col_calc + str(r) + '="",$'
+                + roles['coste'] + str(r) + '=""),"",ROUND($'
+                + roles['coste'] + str(r) + '*$' + col_calc + str(r) + '/$'
+                + col_uds + str(r) + ',2)),"")', fmt=motor.FMT_EUR)
+    # el motor totaliza esta columna en el bloque de cierre (§1.9)
+    totalizar = getattr(ws, '_g_totalizar', None) or []
+    par = (col_cos, 'TOTAL AJUSTADO A MENÚ DEGUSTACIÓN (€)')
+    if par not in totalizar:
+        totalizar.append(par)
+    ws._g_totalizar = totalizar
+    cambios.append(fname + ':' + ws.title + ': columnas «' + cab_uds + '» ('
+                   + col_uds + ', ' + str(leidas) + ' leídas del propio ítem) '
+                   'y «' + cab_cos + '» (' + col_cos + '), con su TOTAL en el '
+                   'bloque de cierre: la dotación de degustación deja de ser '
+                   'sólo un recuento y tiene precio (RD-17)')
+    return col_cos
 
 
 # ==========================================================================
@@ -1046,6 +1224,50 @@ def _gantt(wb, fname, cambios, contenido):
                            'Mes inicio + Duración se sale del horizonte del '
                            'propio Gantt (' + aviso[:70] + '…)')
 
+            # RT-17 · «Duración (meses)» es la columna que GOBIERNA la barra y
+            # no tenía ninguna validación: una duración negativa o un texto la
+            # apagan sin un solo aviso.
+            filas_tarea = [r for r in range(primera_fila, fin + 1)
+                           if _es_fila_tarea(ws, r, rol_tarea, roles)]
+            tope = 18
+            try:
+                tope = int(float(str(ws.cell(row=fila_cab,
+                                             column=fin_col).value)))
+            except (TypeError, ValueError):
+                pass
+            motor.dv_numerica(
+                ws, [col_dur + str(r) for r in filas_tarea], minimo=1,
+                maximo=tope, titulo='Duración',
+                mensaje='Escribe los meses que dura la tarea, entre 1 y '
+                        + str(tope) + ' (el horizonte de este cuadro).',
+                prompt='Meses de duración. La barra se pinta desde «'
+                       + COL_MES_INICIO + '» y durante estos meses.')
+
+            # RC-16 · las dependencias precargadas se incumplían en 7 de 20 y
+            # nada en el fichero lo detectaba; además «Depende de» es texto
+            # libre, así que renombrar una tarea rompía el vínculo en silencio.
+            rango_t = ('$' + rol_tarea + '$' + str(primera_fila) + ':$'
+                       + rol_tarea + '$' + str(fin))
+            rango_i = ('$' + col_ini + '$' + str(primera_fila) + ':$' + col_ini
+                       + '$' + str(fin))
+            rango_d = ('$' + col_dur + '$' + str(primera_fila) + ':$' + col_dur
+                       + '$' + str(fin))
+            p0 = str(primera_fila)
+            regla_dep = (
+                '=AND($' + col_dep + p0 + '<>"",OR(COUNTIF(' + rango_t + ',$'
+                + col_dep + p0 + ')=0,AND(ISNUMBER($' + col_ini + p0 + '),$'
+                + col_ini + p0 + '<=SUMIF(' + rango_t + ',$' + col_dep + p0
+                + ',' + rango_i + ')+SUMIF(' + rango_t + ',$' + col_dep + p0
+                + ',' + rango_d + ')-1)))')
+            motor.regla_expresion(
+                ws, col_dep + p0 + ':' + col_dep + str(fin), regla_dep,
+                bg=motor.CF_ROJO_BG, fg=motor.CF_ROJO_FG, parar=True)
+            cambios.append(fname + ':' + ws.title + ': DV de duración (1-'
+                           + str(tope) + ') y aviso en rojo sobre «'
+                           + COL_DEPENDE + '» cuando la tarea no existe o '
+                           'empieza antes de que termine su predecesora '
+                           '(RT-17, RC-16)')
+
         # --- Estado: desplegable y semáforo, si el molde lo tiene ---------
         if roles['estado'] and primera_fila:
             coords = [roles['estado'] + str(r)
@@ -1107,6 +1329,12 @@ def _checklist(wb, fname, cambios, contenido, cfg):
         if fin != fila_cab + antes:
             _reparar_rangos_nativos(ws, fila_cab, fin, cambios, fname)
 
+        if cfg.get('alternativas'):
+            _columna_incluir(ws, roles, fila_cab, fin, cfg['alternativas'],
+                             cambios, fname)
+        if cfg.get('costes_formula'):
+            _coste_por_formula(ws, wb, roles, fila_cab, fin,
+                               cfg['costes_formula'], cambios, fname)
         if cfg.get('columna_calculada'):
             _columna_calculada(ws, wb, roles, fila_cab, fin,
                                cfg['columna_calculada'], cambios, fname)

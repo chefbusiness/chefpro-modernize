@@ -134,6 +134,11 @@ RX_HOJA_CAJA = re.compile(r'cash\s*flow|flujo de caja|tesorer', re.I)
 # delimita la región que se borra y se reescribe entera en cada pasada: así el
 # bloque nunca se duplica ni se desplaza.
 MARCA_BLOQUE = 'RESUMEN — lo calcula el libro (v2.0)'
+#: Etiqueta de la fila que cuenta las partidas SIN importe (RT-09/RD-33) y
+#: valor de la columna que decide si una fila entra en el TOTAL (RD-18/RC-23).
+ETIQUETA_SIN_TASAR = 'Partidas SIN importe (a presupuestar)'
+COL_INCLUIR = 'Incluir en el total'
+INCLUIR_SI, INCLUIR_NO = 'Sí', 'No'
 RX_MARCA = re.compile(r'^RESUMEN — lo calcula el libro')
 
 RX_PIE_MARCA = re.compile(r'^AI Chef Pro\s+·\s+aichef\.pro')
@@ -1366,14 +1371,52 @@ def cerrar_checklist(ws, molde, fila_cab, fname='', informe=None,
     r = inicio
     val(ws, 'A' + str(r), MARCA_BLOQUE, bold=True)
     r += 1
+    # RD-18/RC-23 — el grupo puede haber marcado alternativas EXCLUYENTES (una
+    # capota o un túnel de lavado, un bloque de cocción estándar o uno de alta
+    # gama). Si las dos entran en el mismo `SUM`, el TOTAL presupuesta las dos
+    # opciones a la vez en cuanto el cliente tase la segunda.
+    col_inc = getattr(ws, '_g_col_incluir', None)
+    ini_d, fin_d = str(fila_cab + 1), str(fin)
+
+    def _suma(col):
+        if col_inc:
+            return ('=SUMIF($' + col_inc + '$' + ini_d + ':$' + col_inc + '$'
+                    + fin_d + ',"' + INCLUIR_SI + '",$' + col + '$' + ini_d
+                    + ':$' + col + '$' + fin_d + ')')
+        return '=SUM(' + col + ini_d + ':' + col + fin_d + ')'
+
     if col_coste and not fila_total:
         # §1.9/TEC-16/COM-31 — los 313.290 € del representante repartidos en 8
         # listas dejan de sumarse a mano.
         val(ws, 'A' + str(r), ETIQUETA_TOTAL, bold=True)
-        f(ws, col_coste + str(r),
-          '=SUM(' + col_coste + str(fila_cab + 1) + ':' + col_coste + str(fin)
-          + ')', fmt=FMT_EUR, bold=True)
+        f(ws, col_coste + str(r), _suma(col_coste), fmt=FMT_EUR, bold=True)
         r += 1
+        # RT-09/RD-33 — el TOTAL es el argumento de venta de §1.9 y se
+        # entregaba sistemáticamente corto: 32 de los 91 ítems de equipamiento
+        # y las nueve filas nuevas del checklist legal (entre ellas la fianza,
+        # que con el alquiler del propio pack son 34.000 €) van sin importe.
+        # No se inventa el precio: se DICE cuántas partidas faltan por tasar.
+        val(ws, 'A' + str(r), ETIQUETA_SIN_TASAR, bold=True)
+        f(ws, col_coste + str(r),
+          '=COUNTBLANK(' + col_coste + ini_d + ':' + col_coste + fin_d + ')',
+          fmt='#,##0', bold=True)
+        fijar_formato(ws, col_coste + str(r), '#,##0')
+        regla_expresion(ws, col_coste + str(r),
+                        '=AND(ISNUMBER(' + col_coste + str(r) + '),'
+                        + col_coste + str(r) + '>0)', bg=CF_AMBAR_BG,
+                        fg=CF_AMBAR_FG)
+        val(ws, get_column_letter(min(ncol, _col(col_coste) + 1)) + str(r),
+            'El TOTAL de arriba es un SUELO: no incluye estas partidas, que '
+            'van a presupuestar.')
+        r += 1
+        # RD-17 — columnas de importe DERIVADAS que el grupo ha marcado para
+        # que también se totalicen (la dotación de menú degustación con
+        # precio, por ejemplo): sin su total, el cliente lee que necesita el
+        # doble de piezas y sigue llevando al banco el importe de la carta.
+        for col_x, etiqueta in (getattr(ws, '_g_totalizar', None) or []):
+            val(ws, 'A' + str(r), etiqueta, bold=True)
+            f(ws, col_x + str(r), _suma(col_x), fmt=FMT_EUR, bold=True)
+            r += 1
     elif fila_total and informe is not None:
         informe.append(fname + ':' + ws.title + ': TOTAL ya presente en la '
                        'fila ' + str(fila_total) + ', no se duplica (§3.3)')
@@ -1405,11 +1448,20 @@ def cerrar_checklist(ws, molde, fila_cab, fname='', informe=None,
             # El criterio va por REFERENCIA a la etiqueta, no como literal
             # entrecomillado: una categoría con coma o comilla rompería el
             # SUMIF y el fallo no se vería hasta abrir el fichero.
-            f(ws, col_coste + str(r),
-              '=SUMIF($' + col_cat + '$' + str(fila_cab + 1) + ':$' + col_cat
-              + '$' + str(fin) + ',$A' + str(r) + ',$' + col_coste + '$'
-              + str(fila_cab + 1) + ':$' + col_coste + '$' + str(fin) + ')',
-              fmt=FMT_EUR)
+            base_sub = ('$' + col_cat + '$' + ini_d + ':$' + col_cat + '$'
+                        + fin_d + ',$A' + str(r))
+            if col_inc:
+                # el subtotal hereda la exclusión del TOTAL: si no, la suma de
+                # las categorías no cuadraría con él (§1.9).
+                f(ws, col_coste + str(r),
+                  '=SUMIFS($' + col_coste + '$' + ini_d + ':$' + col_coste
+                  + '$' + fin_d + ',' + base_sub + ',$' + col_inc + '$' + ini_d
+                  + ':$' + col_inc + '$' + fin_d + ',"' + INCLUIR_SI + '")',
+                  fmt=FMT_EUR)
+            else:
+                f(ws, col_coste + str(r),
+                  '=SUMIF(' + base_sub + ',$' + col_coste + '$' + ini_d + ':$'
+                  + col_coste + '$' + fin_d + ')', fmt=FMT_EUR)
             r += 1
     if pie:
         r += 1

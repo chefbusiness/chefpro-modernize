@@ -82,7 +82,7 @@ def _rango(a, b):
 # checklist-legal.xlsx — 40 ítems medidos (A5:A44). §3.1 + DOM-23
 # ==========================================================================
 LEGAL = {
-    'anuncia': 40,
+    'anuncia': 48,
     'sustituciones': [
         {
             'id': 'DOM-12/COM-15',
@@ -102,6 +102,27 @@ LEGAL = {
                       'sancionadas en hostelería. ' + PRESUPUESTAR),
         },
         {
+            # RD-32 · «Alta censal en Hacienda (Modelo 036/037)» (fila 9,
+            # Constitución) y «Alta en el censo de empresarios (Modelo 036)»
+            # (fila 41, Fiscal) son EL MISMO trámite escrito dos veces, y
+            # duplicar un ítem en una lista que el cliente tacha es
+            # exactamente el relleno que §3.4 prohíbe. La fila liberada se usa
+            # para un trámite fiscal REAL que no estaba: el sistema de
+            # facturación verificable, que en hostelería se implanta en el TPV.
+            'id': 'RD-32',
+            'fuente': 'SPEC §3.4 (sin duplicados) · RD 1007/2023',
+            'buscar': 'Alta en el censo de empresarios (Modelo 036)',
+            'tarea': ('Sistema informático de facturación verificable en el '
+                      'TPV (RD 1007/2023 y su Orden de desarrollo)'),
+            'responsable': 'Asesor fiscal + proveedor de TPV',
+            'coste': None,
+            'notas': ('El alta censal ya está en el bloque «Constitución» '
+                      '(Modelo 036/037): estaba dos veces. Aquí va lo que '
+                      'faltaba de verdad — que tu TPV emita facturas con los '
+                      'registros y la huella que exige la norma. '
+                      + PRESUPUESTAR),
+        },
+        {
             'id': 'DOM-11/COM-28',
             'fuente': 'SPEC §3.1 (redacción única en los cuatro sitios)',
             'buscar': 'Licencia de actividad C3 (restaurante)',
@@ -116,6 +137,26 @@ LEGAL = {
                       '(cap.' + N + '5).'),
         },
     ],
+    #: RC-15/RD-33 · el bloque «Local» aportaba 0,00 € al presupuesto y su
+    #: partida más cara —la fianza legal del art. 36 LAU— son dos mensualidades
+    #: de la renta que el propio pack precarga: 34.000 €, más que el TOTAL
+    #: entero del checklist. No se teclea: se calcula desde la renta.
+    'costes_formula': [
+        {'id': 'RC-15/DOM-23',
+         'buscar': 'Fianza legal de 2 mensualidades y garantía adicional',
+         'etiqueta': 'Renta mensual del local (€)',
+         'valor': 17000,
+         'nota': ('Alquiler mensual del escenario realista de '
+                  'pl-mensual-escenarios.xlsx (§7-bis.7: una sola cifra por '
+                  'magnitud). Escribe el tuyo y la fianza se recalcula.'),
+         'formula': '=IF(<param>="","",2*<param>)',
+         'notas': ('Dos mensualidades de la renta, que es el mínimo legal del '
+                   'art.' + N + '36 LAU para uso distinto de vivienda. La '
+                   'garantía adicional (aval o depósito) se negocia aparte y '
+                   'suele ser de otras ' + _rango('2', '6') + N + 'mensualidades: '
+                   'añádela a mano si tu propiedad la pide.')},
+    ],
+    'sustituciones_extra': [],
     'notas': [
         {
             'id': 'DOM-23',
@@ -175,6 +216,19 @@ LEGAL = {
          'responsable': 'Abogado', 'estado': 'Pendiente', 'coste': None,
          'notas': ('Sin ella, vender el negocio depende del criterio de la '
                    'propiedad.')},
+        {'id': 'RD-28', 'fuente': 'parametrizado (ordenanza municipal)',
+         'categoria': 'Licencias',
+         'tarea': ('Arqueta separadora de grasas y autorización o declaración '
+                   'de vertido a la red de saneamiento'),
+         'responsable': 'Arquitecto / instalador', 'estado': 'Pendiente',
+         'coste': None,
+         'notas': ('Las cadenas «grasa», «separador» y «vertido» no aparecían '
+                   'en ninguno de los 18 entregables, y este pack presupuesta '
+                   'freidora de doble cuba, parrilla de brasa y fregadero de '
+                   'doble seno. La mayoría de ordenanzas municipales lo exigen '
+                   'para conceder la licencia de actividad, y su ausencia es '
+                   'causa clásica de acta desfavorable. Va en obra: pídelo en '
+                   'el proyecto técnico. ' + PRESUPUESTAR)},
         {'id': 'DOM-23', 'fuente': 'SPEC §3.1', 'categoria': 'Local',
          'tarea': ('Condición suspensiva por denegación de la licencia de '
                    'actividad'),
@@ -246,16 +300,24 @@ APPCC = {
         # --- anisakis (DOM-14): la cadena no aparecía en ninguno de los 141 --
         {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1420/2006',
          'categoria': 'Temperaturas',
-         'tarea': ('Congelación preventiva (' + G + '20' + N + '°C / '
-                   '5' + N + 'días o ' + G + '35' + N + '°C / 15' + N + 'h) '
-                   'para pescado de consumo en crudo, marinado, escabechado o '
-                   'en salazón — RD 1420/2006'),
+         'tarea': ('Congelación preventiva (' + G + '20' + N + '°C durante al '
+                   'menos 24' + N + 'h en todo el producto, o ' + G + '35' + N
+                   + '°C durante 15' + N + 'h) para pescado de consumo en crudo, '
+                   'marinado, escabechado o en salazón — RD 1420/2006 y '
+                   'Reg. (CE) 853/2004'),
          'responsable': 'Chef', 'estado': 'Pendiente', 'coste': None,
          'equivale_a': ('Congelación preventiva anisakis',
                         'Protocolo de congelación preventiva anisakis'),
          'notas': ('El cap.' + N + '8 sitúa ceviches y tartares en el cuarto '
                    'frío y el cap.' + N + '22 promociona los crudos: esto es '
-                   'obligatorio, no opcional. ' + PRESUPUESTAR)},
+                   'obligatorio, no opcional. El binomio legal son 24' + N + 'h '
+                   'a ' + G + '20' + N + '°C EN TODO EL PRODUCTO (RD 1420/2006 y '
+                   'anexo III, secc.' + N + 'VIII, cap.' + N + 'III del '
+                   'Reg. (CE) 853/2004); los «5' + N + 'días» son la '
+                   'recomendación de AESAN para congeladores DOMÉSTICOS, que no '
+                   'garantizan esa temperatura. Si tu abatidor no la certifica, '
+                   'usa un margen mayor y dilo por escrito como margen propio, '
+                   'no como requisito legal. ' + PRESUPUESTAR)},
         {'id': 'DOM-14', 'fuente': 'SPEC §3.2', 'categoria': 'Temperaturas',
          'tarea': 'Registro de lotes congelados preventivamente',
          'responsable': 'Resp. APPCC', 'estado': 'Pendiente', 'coste': None,
@@ -403,7 +465,37 @@ VAJILLA = {
             'Copa vino tinto Bordeaux (×80)': 2,
             'Copa vino blanco (×80)': 1,
             'Copa champán / espumoso (×60)': 1,
+            # RD-16 · la columna estaba rellena en 11 de 50 filas y el bloque
+            # de CUBERTERÍA entero iba vacío, que es justo donde el menú de
+            # 8-12 pases exige el cálculo: cada pase se come una pieza y no
+            # se lava entre medias.
+            'Plato pan (×80)': 1,
+            'Vaso de agua (×80)': 1,
+            'Copa de cóctel / aperitivo (×40)': 1,
+            'Copa de postre / licor (×40)': 1,
+            'Copa de vino generoso / jerez (×40)': 1,
+            # Cubertería: un menú largo cambia cubierto en cada pase. 10 pases
+            # = 10 piezas por comensal repartidas por tipo, que es el mismo
+            # reparto que suman los platos de arriba.
+            'Cuchillo mesa principal (×80)': 2,
+            'Tenedor mesa principal (×80)': 2,
+            'Cuchara sopera (×80)': 1,
+            'Pala pescado (×80)': 2,
+            'Tenedor postre (×80)': 1,
+            'Cuchara postre (×80)': 1,
+            'Cuchillo mantequilla (×80)': 1,
+            'Cucharilla café / infusión (×80)': 1,
+            'Cuchara de degustación / amuse-bouche (×100)': 2,
+            'Cubertería de crudos y tartar (tenedor y cucharilla pequeños, ×80)': 1,
+            # Petit menage y mantelería: por comensal, no por pase.
+            'Servilletas tela (×120)': 2,
+            'Manteles individuales o de mesa (×40)': 1,
         },
+        # RD-17 · la dotación calculada no tocaba el dinero: el cliente leía
+        # que necesita 585 copas donde el presupuesto compra 300 y seguía
+        # llevando al banco el importe de la dotación de carta.
+        'cabecera_dotacion': 'Dotación de carta (uds)',
+        'cabecera_coste': 'Coste ajustado a menú degustación (€)',
     },
     'nuevas': [
         {'id': 'DOM-21', 'fuente': 'parametrizado (dotación de degustación)',
@@ -462,6 +554,23 @@ MICHELIN = {
     'renombrar_categoria': {
         'Reputación': 'Prensa y notoriedad (NO influye en la inspección)',
     },
+    #: RD-31 · «Mínimo 18-24 meses de operación consistente antes de aspirar»
+    #: colgaba del bloque «Prensa y notoriedad (NO influye en la inspección)»,
+    #: que le dice al cliente exactamente lo contrario de lo que el ítem
+    #: significa: los meses de servicio consistente SÍ condicionan cuándo tiene
+    #: sentido aspirar. Se mueve a su propio bloque de requisitos previos.
+    'sustituciones': [
+        {'id': 'RD-31', 'fuente': 'SPEC §3.4 (clasificación correcta)',
+         'buscar': 'Mínimo 18-24 meses de operación consistente antes de aspirar',
+         'tarea': ('Mínimo ' + _rango('18', '24') + N + 'meses de operación '
+                   'consistente antes de aspirar'),
+         'categoria': 'Requisitos previos',
+         'notas': ('Esto SÍ cuenta: no es comunicación. Los inspectores '
+                   'necesitan varias visitas en fechas distintas para juzgar '
+                   'la regularidad, y ése es el reloj que manda. Estaba '
+                   'clasificado en «Prensa y notoriedad», donde el propio '
+                   'rótulo dice que no influye.')},
+    ],
     'notas': [
         {'id': 'COM-34',
          'buscar': 'Invitaciones estratégicas a críticos y periodistas',
@@ -584,12 +693,29 @@ EQUIPAMIENTO = {
                   'equipamiento)'),
         'etiqueta': 'Instalación, transporte y puesta en marcha (%)',
         'valor': 0.12,
+        # RD-19 · el 12 % se aplicaba también sobre las tres líneas que YA son
+        # obra e instalación (conducto hasta cubierta, aportación de aire,
+        # extinción en campana: 17.500 €) y sobre el bloque de Tecnología
+        # (9.900 €), que instala otro proveedor: 2.100 € de instalación sobre
+        # la instalación.
+        'excluir_categorias': ('Extracción e instalaciones', 'Tecnología'),
         'nota': ('12' + N + '% sobre la suma del resto de partidas de este '
                  'checklist (SPEC §3.4). Es lo que cuesta subir, colocar, '
                  'conexionar y poner en marcha la maquinaria, y no estaba '
-                 'presupuestado en ninguna línea. Cámbialo y el importe se '
-                 'recalcula.'),
+                 'presupuestado en ninguna línea. NO se aplica sobre las '
+                 'categorías «Extracción e instalaciones» ni «Tecnología»: la '
+                 'primera YA es obra e instalación y la segunda la monta otro '
+                 'proveedor. Cámbialo y el importe se recalcula.'),
     },
+    #: RD-18/RC-23 · dos parejas de líneas MUTUAMENTE EXCLUYENTES entraban las
+    #: dos en el mismo sumatorio: en cuanto el cliente tase la alternativa, el
+    #: TOTAL presupuesta las dos opciones a la vez. Estas dos van a «No» por
+    #: defecto (la opción estándar es la que ya está tasada); cambiar el
+    #: desplegable cambia el TOTAL y los subtotales.
+    'alternativas': (
+        'Túnel de lavado',
+        'Bloque modular de cocción de alta gama',
+    ),
     'notas': [
         {'id': 'DOM-20', 'buscar': 'Campana extractora industrial',
          'notas': ('Esto es SÓLO la campana. El sistema completo hasta '
@@ -907,79 +1033,130 @@ GANTT = {
          'tarea': ('Dossier bancario, negociación de financiación, firma y '
                    'disposición'),
          'responsable': 'Propietario', 'estado': 'Pendiente'},
+        # RD-29 · en una cocina con Josper, horno mixto de 10 GN, abatidor y
+        # dos cámaras, la contratación y el aumento de potencia de luz, gas y
+        # agua son meses de trámite y miles de euros de derechos de acometida.
+        # El checklist legal pide los certificados de instalación y nadie
+        # planificaba el alta.
+        {'id': 'RD-29', 'fuente': 'parametrizado (trámite de suministros)',
+         'despues_de': 'Proyecto técnico (arquitecto)',
+         'tarea': ('Solicitud de acometidas y aumento de potencia (luz, gas y '
+                   'agua)'),
+         'responsable': 'Arquitecto + instalador', 'estado': 'Pendiente'},
+        # RD-30 · la licencia de actividad se cerraba ANTES de que terminase la
+        # obra, es decir, antes de que existieran el certificado final de obra
+        # y el acta de comprobación que permiten iniciar la actividad. Ninguna
+        # de las 24 tareas los mencionaba.
+        {'id': 'RD-30', 'fuente': 'parametrizado (secuencia de licencias)',
+         'despues_de': 'Obra civil y reforma integral',
+         'tarea': ('Certificado final de obra y certificados de las '
+                   'instalaciones (BT, gas, ventilación)'),
+         'responsable': 'Arquitecto + instaladores', 'estado': 'Pendiente'},
+        {'id': 'RD-30', 'fuente': 'parametrizado (secuencia de licencias)',
+         'despues_de': ('Certificado final de obra y certificados de las '
+                        'instalaciones (BT, gas, ventilación)'),
+         'tarea': ('Resolución de la licencia de actividad y acta de '
+                   'comprobación municipal'),
+         'responsable': 'Ayuntamiento', 'estado': 'Pendiente'},
     ],
     #: tarea (tal como está escrita en la columna A) → mes de inicio,
     #: duración en meses y tarea de la que depende.
+    #: RC-16 · el plan precargado incumplía en 7 de 20 la regla que sus propias
+    #: Instrucciones enuncian («"Depende de" dice qué tarea tiene que estar
+    #: terminada antes de empezar ésta»): tres tareas encadenadas caían en el
+    #: mismo mes y el registro sanitario arrancaba a la vez que terminaba la
+    #: obra de la que depende. Replanificado entero para que TODA tarea empiece
+    #: el mes siguiente al fin de su predecesora, sin salirse de los 18 meses:
+    #:
+    #:   1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
+    #:   viabilidad ▮▮ · local ▮▮▮ · SL ▮ · dossier ▮▮▮▮ · arrendamiento ▮▮
+    #:   proyecto ▮▮ · licencias ▮▮▮/▮▮▮▮▮ · acometidas ▮▮▮▮ · obra ▮▮▮▮
+    #:   certificados ▮ · resolución ▮ · equipos ▮▮ · pruebas ▮ · apertura ▮
     'tareas': {
         # FASE 1: PLANIFICACIÓN
         'Estudio de viabilidad financiera': {
             'mes': 1, 'duracion': 2, 'depende': ''},
         'Búsqueda y selección de local': {
             'mes': 1, 'duracion': 3, 'depende': ''},
-        'Negociación y firma del arrendamiento (con carencia)': {
-            'mes': 3, 'duracion': 2,
-            'depende': 'Búsqueda y selección de local'},
         'Constitución de sociedad (SL)': {
             'mes': 2, 'duracion': 1, 'depende': ''},
         'Dossier bancario, negociación de financiación, firma y disposición': {
-            'mes': 2, 'duracion': 4,
+            'mes': 3, 'duracion': 4,
             'depende': 'Estudio de viabilidad financiera'},
+        'Negociación y firma del arrendamiento (con carencia)': {
+            'mes': 4, 'duracion': 2,
+            'depende': 'Búsqueda y selección de local'},
         'Contratación arquitecto/interiorista': {
-            'mes': 3, 'duracion': 1,
+            'mes': 4, 'duracion': 1,
             'depende': 'Búsqueda y selección de local'},
         # FASE 2: LICENCIAS Y PROYECTO
         'Proyecto técnico (arquitecto)': {
-            'mes': 4, 'duracion': 2,
+            'mes': 5, 'duracion': 2,
             'depende': 'Contratación arquitecto/interiorista'},
         'Solicitud licencia de obras': {
-            'mes': 6, 'duracion': 3,
+            'mes': 7, 'duracion': 2,
             'depende': 'Proyecto técnico (arquitecto)'},
         'Solicitud de licencia de actividad clasificada (el nombre depende de '
         'la ordenanza municipal; C3 en algunos municipios)': {
-            'mes': 6, 'duracion': 6,
+            'mes': 7, 'duracion': 5,
             'depende': 'Proyecto técnico (arquitecto)'},
-        'Registro sanitario CCAA': {
-            'mes': 12, 'duracion': 1,
-            'depende': 'Obra civil y reforma integral'},
+        'Solicitud de acometidas y aumento de potencia (luz, gas y agua)': {
+            'mes': 7, 'duracion': 4,
+            'depende': 'Proyecto técnico (arquitecto)'},
         # FASE 3: OBRA Y EQUIPAMIENTO
         'Obra civil y reforma integral': {
             'mes': 9, 'duracion': 4, 'depende': 'Solicitud licencia de obras'},
-        'Instalación cocina profesional': {
-            'mes': 12, 'duracion': 2, 'depende': 'Obra civil y reforma integral'},
-        'Mobiliario y decoración sala': {
-            'mes': 13, 'duracion': 2, 'depende': 'Obra civil y reforma integral'},
-        'Instalación tecnología (TPV, etc.)': {
+        'Certificado final de obra y certificados de las instalaciones (BT, '
+        'gas, ventilación)': {
+            'mes': 13, 'duracion': 1,
+            'depende': 'Obra civil y reforma integral'},
+        'Resolución de la licencia de actividad y acta de comprobación '
+        'municipal': {
             'mes': 14, 'duracion': 1,
+            'depende': ('Certificado final de obra y certificados de las '
+                        'instalaciones (BT, gas, ventilación)')},
+        'Registro sanitario CCAA': {
+            'mes': 14, 'duracion': 1,
+            'depende': ('Certificado final de obra y certificados de las '
+                        'instalaciones (BT, gas, ventilación)')},
+        'Instalación cocina profesional': {
+            'mes': 13, 'duracion': 2,
+            'depende': 'Obra civil y reforma integral'},
+        'Mobiliario y decoración sala': {
+            'mes': 13, 'duracion': 2,
+            'depende': 'Obra civil y reforma integral'},
+        'Instalación tecnología (TPV, etc.)': {
+            'mes': 15, 'duracion': 1,
             'depende': 'Instalación cocina profesional'},
         # FASE 4: EQUIPO Y BODEGA
         'Selección y contratación brigada cocina': {
             'mes': 12, 'duracion': 3, 'depende': ''},
-        'Selección equipo de sala': {'mes': 13, 'duracion': 3, 'depende': ''},
+        'Selección equipo de sala': {'mes': 13, 'duracion': 2, 'depende': ''},
         'Compra vajilla/cristalería/cubertería': {
-            'mes': 14, 'duracion': 2, 'depende': 'Mobiliario y decoración sala'},
+            'mes': 15, 'duracion': 1,
+            'depende': 'Mobiliario y decoración sala'},
         'Selección proveedores y bodega': {
-            'mes': 13, 'duracion': 3, 'depende': ''},
+            'mes': 13, 'duracion': 2, 'depende': ''},
         # FASE 5: PRE-APERTURA
         'Formación de equipo (2-4 semanas)': {
-            'mes': 16, 'duracion': 1,
+            'mes': 15, 'duracion': 1,
             'depende': 'Selección y contratación brigada cocina'},
         'Pruebas de carta y menús': {
-            'mes': 16, 'duracion': 2,
+            'mes': 15, 'duracion': 1,
             'depende': 'Instalación cocina profesional'},
         'Fotografía profesional de platos': {
-            'mes': 17, 'duracion': 1, 'depende': 'Pruebas de carta y menús'},
+            'mes': 16, 'duracion': 1, 'depende': 'Pruebas de carta y menús'},
         'Marketing pre-apertura y prensa': {
-            'mes': 16, 'duracion': 2, 'depende': ''},
+            'mes': 15, 'duracion': 2, 'depende': ''},
         'Servicios de prueba (soft opening)': {
-            'mes': 17, 'duracion': 1, 'depende': 'Formación de equipo (2-4 semanas)'},
+            'mes': 16, 'duracion': 1, 'depende': 'Pruebas de carta y menús'},
         # FASE 6: APERTURA
         'Apertura oficial': {
-            'mes': 18, 'duracion': 1,
+            'mes': 17, 'duracion': 1,
             'depende': 'Servicios de prueba (soft opening)'},
         'Primeros 30 días: monitorización': {
             'mes': 18, 'duracion': 1, 'depende': 'Apertura oficial'},
         'Ajustes de carta según feedback': {
-            'mes': 18, 'duracion': 1,
-            'depende': 'Primeros 30 días: monitorización'},
+            'mes': 18, 'duracion': 1, 'depende': 'Apertura oficial'},
     },
 }

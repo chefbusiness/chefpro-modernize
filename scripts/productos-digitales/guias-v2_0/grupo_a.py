@@ -287,6 +287,12 @@ RX_PRECIO_FILA = re.compile(r'\(\s*(eur|€)\s*\)|precio|ticket')
 RX_TICKET_RES = re.compile(r'^ticket medio (ponderado|estimado|proyectado)')
 
 
+#: Los tres rótulos con los que puede venir cabecerada una columna de
+#: escenario, ya normalizados (sin acentos y en minúscula).
+NOMBRES_ESCENARIO = ('pesimista', 'realista', 'optimista', 'conservador',
+                     'base', 'moderado')
+
+
 def variante_ticket(wb, fname=''):
     """`'escenarios-3col'` | `'columna-unica'` | `'mix-producto'`.
 
@@ -303,10 +309,18 @@ def variante_ticket(wb, fname=''):
     for fila in (3, 4):
         cab = [_norm(ws.cell(row=fila, column=c).value)
                for c in range(1, ws.max_column + 1)]
-        if any(c.startswith('escenario ') for c in cab):
-            return 'escenarios-3col', fila
+        # El mix de producto se mira PRIMERO: su cabecera también tiene tres
+        # columnas y si el otro criterio se ensancha lo atraparía antes.
         if any('mix' in c for c in cab) and any('aporte' in c for c in cab):
             return 'mix-producto', fila
+        # RC-02 renombra «Escenario 1/2/3» a «Pesimista/Realista/Optimista»
+        # para poder cruzarlos con el P&L. El detector NO puede depender de la
+        # palabra «escenario»: en la 2.ª pasada dejaba de reconocer su propia
+        # salida y el libro se procesaba como si fuera el de los hermanos —
+        # 10 diferencias de idempotencia y la hoja reescrita con otra rejilla.
+        if any(c.startswith('escenario ') or c in NOMBRES_ESCENARIO
+               for c in cab):
+            return 'escenarios-3col', fila
     if _fila(ws, RX_TICKET_RES.pattern, obligatoria=False):
         return 'columna-unica', None
     raise VarianteDesconocida(
@@ -353,7 +367,8 @@ def ticket_escenarios_3col(wb, fname, cambios, contenido):
     """Representante: tres escenarios en B/C/D (TEC-01, DOM-08, COM-04)."""
     ws = wb['Ticket Medio']
     cols = [c for c in ('B', 'C', 'D')
-            if _norm(ws[c + '4'].value).startswith('escenario ')]
+            if (_norm(ws[c + '4'].value).startswith('escenario ')
+                or _norm(ws[c + '4'].value) in NOMBRES_ESCENARIO)]
     f_ticket = _fila(ws, RX_TICKET_RES.pattern, fname=fname)
     f_cub = _fila(ws, r'^cubiertos\s*/\s*d[ií]a|^cubiertos por dia',
                   hasta=ws.max_row, fname=fname)
@@ -1679,12 +1694,15 @@ def plan_de_financiacion(wb, fname, cambios, contenido, inv):
     r += 1
     motor.val(ws, 'A' + str(r), 'Diferencia (necesidad − financiación) (€)',
               bold=True)
+    # ROUND obligatorio: sin él la resta de dos sumas de decimales deja
+    # −2,3E−10 y el semáforo pinta en rojo un plan que cuadra al céntimo.
     motor.f(ws, 'B' + str(r),
-            '=IF(OR(B' + str(f_nec) + '="",B' + str(f_tot) + '=""),"",B'
-            + str(f_nec) + '-B' + str(f_tot) + ')', fmt=FMT_EUR, bold=True)
+            '=IF(OR(B' + str(f_nec) + '="",B' + str(f_tot) + '=""),"",ROUND(B'
+            + str(f_nec) + '-B' + str(f_tot) + ',2))', fmt=FMT_EUR, bold=True)
     motor.permitir_negativo(ws, 'B' + str(r))
     motor.regla_expresion(ws, 'B' + str(r),
-                          '=AND(ISNUMBER(B' + str(r) + '),B' + str(r) + '<>0)')
+                          '=AND(ISNUMBER(B' + str(r) + '),ABS(B' + str(r)
+                          + ')>0.01)')
     nota(ws, 'A' + str(r + 1),
          'Si esta fila no es cero, el plan NO está financiado: sube el '
          'préstamo o los fondos propios, baja los meses de colchón o recorta '
@@ -1976,24 +1994,41 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
               fmt=FMT_PCT, verde_=True)
     motor.fijar_formato(ws, 'B' + str(base + 2), FMT_PCT)
     celda_iva_beb = '$B$' + str(base + 2)
-    nota(ws, 'A' + str(base + 3),
+    # §1.3 — ningún literal dentro de una fórmula: el tipo de los gastos y la
+    # base de gasto con IVA son parámetros del cliente, no constantes.
+    iva_conf0 = ((conf.get('mes_tipo') or {}).get('iva_soportado') or {})
+    motor.val(ws, 'A' + str(base + 3),
+              'Tipo de IVA general de los gastos (%)')
+    motor.val(ws, 'B' + str(base + 3), iva_conf0.get('tipo_fijos', 0.21),
+              fmt=FMT_PCT, verde_=True)
+    motor.fijar_formato(ws, 'B' + str(base + 3), FMT_PCT)
+    celda_iva_gas = '$B$' + str(base + 3)
+    motor.val(ws, 'A' + str(base + 4), 'Base mensual de gastos con IVA '
+              '(alquiler, suministros, marketing, otros) (€)')
+    motor.val(ws, 'B' + str(base + 4), iva_conf0.get('fijos_con_iva'),
+              fmt=FMT_EUR, verde_=True)
+    motor.fijar_formato(ws, 'B' + str(base + 4), FMT_EUR)
+    celda_base_gas = '$B$' + str(base + 4)
+    nota(ws, 'A' + str(base + 5),
          '10 % general de restauración y 21 % en bebidas alcohólicas (art. 91 '
-         'de la Ley del IVA). Las filas de arriba se escriben SIN IVA, igual '
-         'que el P&L; esta capa lo añade porque el cash flow es caja.')
+         'de la Ley del IVA). Las nóminas y la Seguridad Social NO llevan IVA: '
+         'por eso la base de gastos con IVA no es el total de gastos. Las '
+         'filas de arriba se escriben SIN IVA, igual que el P&L; esta capa lo '
+         'añade porque el cash flow es caja.')
     filas = {
-        'repercutido': (base + 4, '(+) IVA repercutido (cobrado con las '
+        'repercutido': (base + 6, '(+) IVA repercutido (cobrado con las '
                                   'ventas)'),
-        'soportado': (base + 5, '(-) IVA soportado (compras y gastos con IVA; '
+        'soportado': (base + 7, '(-) IVA soportado (compras y gastos con IVA; '
                                 'las nóminas y la Seguridad Social no llevan)'),
-        'liquidacion': (base + 6, '(-) Liquidación de IVA (modelo 303) — '
+        'liquidacion': (base + 8, '(-) Liquidación de IVA (modelo 303) — '
                                   'trimestre natural, se ingresa del 1 al 20 '
                                   'del mes siguiente'),
-        'cuota': (base + 7, '(-) Cuota del préstamo (capital + intereses) — la '
+        'cuota': (base + 9, '(-) Cuota del préstamo (capital + intereses) — la '
                             'calcula plan-financiero-3-anos.xlsx, hoja «'
                             + HOJA_FIN + '»'),
-        'neto': (base + 8, ET_NETO_IVA),
-        'acum': (base + 9, ET_ACUM_IVA),
-        'q4': (base + 10, 'IVA del 4.º trimestre — se liquida en enero del año '
+        'neto': (base + 10, ET_NETO_IVA),
+        'acum': (base + 11, ET_ACUM_IVA),
+        'q4': (base + 12, 'IVA del 4.º trimestre — se liquida en enero del año '
                           'siguiente (no es caja de este ejercicio)'),
     }
     for clave, (r, etiqueta) in filas.items():
@@ -2029,9 +2064,9 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
         if f_mp and iva_conf.get('fijos_con_iva') is not None:
             motor.f(ws, col + str(f_sop),
                     '=IF(ISNUMBER(' + col + str(f_mp) + '),' + col + str(f_mp)
-                    + '*' + str(iva_conf.get('variables', 0.10)) + ',0)+'
-                    + str(iva_conf['fijos_con_iva']) + '*'
-                    + str(iva_conf.get('tipo_fijos', 0.21)), fmt=FMT_EUR)
+                    + '*' + celda_iva + ',0)+IF(ISNUMBER(' + celda_base_gas
+                    + '),' + celda_base_gas + '*' + celda_iva_gas + ',0)',
+                    fmt=FMT_EUR)
         else:
             motor.val(ws, col + str(f_sop), None, fmt=FMT_EUR)
             motor.verde(ws, col + str(f_sop))
@@ -2459,8 +2494,15 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
             continue
         from openpyxl.utils import get_column_letter as gcl
         col = gcl(c)
-        nueva = '=SUM(' + col + str(fila_cab + 1) + ':' + col + str(ultima) \
-            + ')'
+        rango = col + str(fila_cab + 1) + ':' + col + str(ultima)
+        # RT-25 · la columna «Tu Presupuesto» llega VACÍA y su TOTAL imprimía
+        # «0,00 €» mientras la celda de al lado, que sí guarda el caso «libro
+        # en blanco», devolvía "". Misma incoherencia, misma columna.
+        # `COUNT` (no `COUNTIF(...,"<>")`, ver RT-01) sólo cuenta números.
+        propia = _norm(ws.cell(row=fila_cab, column=c).value).startswith(
+            ('tu presupuesto', 'tu importe'))
+        nueva = ('=IF(COUNT(' + rango + ')=0,"",SUM(' + rango + '))'
+                 if propia else '=SUM(' + rango + ')')
         if _norm(cel.value) != _norm(nueva):
             reparadas.append(col + str(f_total) + ': ' + str(cel.value)
                              + ' → ' + nueva)
@@ -2479,7 +2521,7 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
             motor.val(ws, 'A' + str(fila),
                       'Tu presupuesto frente al rango de mercado')
             motor.f(ws, propio + str(fila),
-                    '=IF(' + propio + str(f_total) + '=0,"",IF(' + propio
+                    '=IF(' + propio + str(f_total) + '="","",IF(' + propio
                     + str(f_total) + '<' + bajo + str(f_total)
                     + ',"Por debajo del rango bajo",IF(' + propio
                     + str(f_total) + '>' + alto + str(f_total)
@@ -2487,6 +2529,7 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
             motor.fijar_formato(ws, propio + str(fila), 'General')
             apunta(cambios, fname, ws, 'aviso de encaje del presupuesto propio '
                    'en ' + propio + str(fila) + ' (§2.3.6)')
+    _capex_rangos_y_notas(ws, fila_cab, ultima, fname, cambios, contenido)
     instruccion(wb, 'Esta calculadora es la hoja de RANGOS DE MERCADO. TU '
                     'CAPEX, el que va al banco, se rellena en '
                     'plan-financiero-3-anos.xlsx, hoja «Inversión», que trae '
@@ -2494,6 +2537,65 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
                     'dos libros se comparan; ninguno lee del otro (un .xlsx '
                     'movido de carpeta daría #REF!).', RX_INSTR_RANGOS)
     return variante
+
+
+def _capex_rangos_y_notas(ws, fila_cab, ultima, fname, cambios, contenido):
+    """RC-05 y RD-03 — el propio pack se desmentía en dos partidas.
+
+    (a) El checklist de equipamiento de esta misma guía tasa 164.718,40 € y el
+        «rango alto» de esta hoja decía 150.000 €.
+    (b) El fondo de maniobra seguía siendo un rango tecleado de 60.000-200.000 €
+        con la etiqueta «(6 meses)», cuando seis meses de la estructura que el
+        P&L de este pack calcula son 935.510,40 €: el rango ALTO no cubre ni
+        1,3 meses. El rango se queda (es mercado) y se dice al lado de dónde
+        sale el número que vale.
+    """
+    conf = ((getattr(contenido, 'CAPEX', None) or {}) if contenido else {})
+    if not conf:
+        return 0
+    from openpyxl.utils import get_column_letter as gcl
+    cols = _columnas_rango(ws, fila_cab)
+    # La columna se localiza por su CABECERA, no con `max_column + 1`: eso
+    # añadiría una columna nueva en cada pasada (la trampa que ya documenta
+    # `correspondencia_capex`, y que la 2.ª pasada delata como diferencias).
+    titulo_nota = 'De dónde sale este rango'
+    indice = None
+    for c in range(1, ws.max_column + 1):
+        if _norm(ws.cell(row=fila_cab, column=c).value) == _norm(titulo_nota):
+            indice = c
+            break
+    col_nota = gcl(indice or (ws.max_column + 1))
+    tocadas = 0
+    for patron, (bajo, medio, alto) in (conf.get('rangos') or {}).items():
+        r = _fila(ws, patron, col=2, desde=fila_cab + 1, hasta=ultima,
+                  obligatoria=False)
+        if r is None or not cols:
+            continue
+        from openpyxl.utils import column_index_from_string as cifs
+        c_bajo = cifs(cols[0])
+        for off, valor in enumerate((bajo, medio, alto)):
+            motor.val(ws, gcl(c_bajo + off) + str(r), valor, fmt=FMT_EUR)
+        tocadas += 1
+    notas = conf.get('notas') or {}
+    if notas:
+        cel = ws[col_nota + str(fila_cab)]
+        cel.value = titulo_nota
+        cel.font = Font(bold=True, color='FFFFFF', size=10)
+        cel.fill = motor.PatternFill('solid', fgColor='2D2D2D')
+        cel.alignment = Alignment(horizontal='center', wrap_text=True)
+        ws.column_dimensions[col_nota].width = 52.0
+        for patron, texto in notas.items():
+            r = _fila(ws, patron, col=2, desde=fila_cab + 1, hasta=ultima,
+                      obligatoria=False)
+            if r is not None:
+                nota(ws, col_nota + str(r), texto)
+                tocadas += 1
+    if tocadas:
+        apunta(cambios, fname, ws, str(tocadas) + ' rangos/notas de CAPEX '
+               'cuadrados con lo que este mismo pack tasa: el equipamiento '
+               'sube a 180.000 € en el rango alto y el fondo de maniobra dice '
+               'de dónde sale el número que vale (RC-05, RD-03)')
+    return tocadas
 
 
 def _columnas_rango(ws, fila_cab):
@@ -2920,15 +3022,28 @@ def _demo_plan(carpeta, destino):
                               + ' sigue dividiendo un porcentaje entre la '
                                 'facturación (TEC-10)')
             xl = _compilar(carpeta, destino, fname)
+            # El P&L ya NO se entrega en blanco (RD-01/RT-02/RC-01: llegaba con
+            # «TOTAL INGRESOS 0,00 €» y «EBITDA 0,00 €»), así que el caso
+            # «libro en blanco» hay que PROVOCARLO vaciando las entradas. Leer
+            # las celdas tal cual mediría la precarga, no la guarda.
+            todas = ([P + 'B' + str(x) for x in range(f_ing_bloque + 1, f_ing)]
+                     + [P + 'B' + str(x) for x in range(f_var + 1, f_tot_var)]
+                     + [P + 'B' + str(x) for x in range(f_fij + 1, f_tot_fij)])
+            _mover(xl, [P + 'B' + str(f_me), P + 'C' + str(f_eb)],
+                   [(ref, '') for ref in todas])
             r['con_el_libro_en_blanco'] = {
                 'margen': _ev(xl, P + 'B' + str(f_me)),
                 'pct_s_ventas_del_ebitda': _ev(xl, P + 'C' + str(f_eb))}
             for clave, valor in r['con_el_libro_en_blanco'].items():
-                if valor not in ('', None):
+                if valor not in ('', None, 0):
                     fallos.append(fname + ': con el libro en blanco «' + clave
                                   + '» dice ' + repr(valor)
                                   + ' (§7-bis.13: debe ser "")')
-            entradas = [(P + 'B' + str(f_ing_bloque + 1), 140000)]
+            # TODAS las líneas de ingreso a cero antes de poner los 140.000 €:
+            # con la precarga hay cuatro, no una, y sumarlas daba 290.000 €.
+            entradas = [(P + 'B' + str(x), 0)
+                        for x in range(f_ing_bloque + 1, f_ing)]
+            entradas += [(P + 'B' + str(f_ing_bloque + 1), 140000)]
             entradas += [(P + 'B' + str(x), 0)
                          for x in range(f_var + 1, f_tot_var)]
             entradas += [(P + 'B' + str(x), 0)
