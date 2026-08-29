@@ -695,6 +695,28 @@ def texto_num(refcelda, prefijo, sufijo='', fmt='0'):
             + sufijo + '"')
 
 
+def dec1(refcelda):
+    """Un decimal con COMA, idéntico en Excel y en la caché de pycel.
+
+    `TEXT(x,"0.0")` no vale: el separador decimal de un código de formato se
+    guarda siempre en canónico anglosajón, así que Excel en español pinta
+    «1,4» y la caché que ve el cliente en Vista previa, en el móvil o en
+    Google Sheets dice «1.4». En la MISMA frase que habla de «1,8
+    rotaciones»: es exactamente la mezcla de separadores que cerró TEC-21.
+
+    Y `"0,0"` es peor todavía: la coma de un código de formato es el
+    separador de MILES, nunca el decimal, por mucho que la interfaz española
+    se teclee así. Imprimía literalmente «Son 01 servicios por plaza y día».
+
+    Se compone la cifra a mano, con la coma como TEXTO. El `ROUND` va FUERA
+    del troceado para que el acarreo sea correcto: con 1,96 hay que leer
+    «2,0», no «1,10».
+    """
+    r = 'ROUND(' + refcelda + ',1)'
+    return ('TEXT(INT(' + r + '),"0")&","&TEXT(ROUND(MOD(' + r
+            + ',1)*10,0),"0")')
+
+
 # ==========================================================================
 # Lectura del fichero de partida
 # ==========================================================================
@@ -968,7 +990,10 @@ class Plan(object):
         motor.val(ws, 'A50', 'Rotaciones al día implícitas (calculado)')
         fx(ws, 'B50', '=' + self._loc('cubiertos_dia') + '/' + aforo,
            motor.FMT_DEC2)
-        fx(ws, 'C50', '="Son "&TEXT(B50,"0,0")&" servicios por plaza y día '
+        # ⚠️ este era el único TEXT() del libro con decimales y el único que
+        # seguía mezclando separadores dentro de la frase (ver `dec1`).
+        fx(ws, 'C50', '="Son "&' + dec1('B50')
+           + '&" servicios por plaza y día '
            'sobre las "&TEXT(' + aforo + ',"0")&" plazas de la celda de '
            'arriba. El documento de este plan pide un MÍNIMO de 1,8 '
            'rotaciones por mesa y servicio en temporada alta: compáralo con '
@@ -1523,8 +1548,12 @@ class Plan(object):
                     # publica el capex aparte.
                     'D': (lambda R: '="Los porcentajes de la columna C se '
                           'leen sobre esta cifra, que incluye el fondo de '
+                          # la coma de «0,0%» NO es un decimal: en un
+                          # código de formato es el separador de MILES, así
+                          # que ya imprimía «34%» y no «33,9%». Se escribe
+                          # «0%», que es lo que de verdad hace.
                           'maniobra ("&TEXT(' + R.c('b_fondo', 'C')
-                          + ',"0,0%")&" del total). Para comparar el '
+                          + ',"0%")&" del total). Para comparar el '
                           'desglose con otro plan, usa la fila de CAPEX de '
                           'abajo."')})
         rej.add('capex', rot='CAPEX (inversión sin el fondo de maniobra)',
@@ -1603,10 +1632,17 @@ class Plan(object):
                           'la fianza, el alquiler previo, el marketing de '
                           'lanzamiento, los gastos de constitución ni las '
                           'existencias iniciales: no son inmovilizado. Suman '
+                          # TEC-21 residual (decisión del orquestador,
+                          # 2026-08-29): «#,##0» es un formato con separador
+                          # de MILES, y el separador de un código de formato
+                          # se guarda en canónico anglosajón: la caché salía
+                          # «Suman 95,205 € de los 179,165 €» y Excel, en
+                          # español, escribe «95.205». Con «0» las dos
+                          # coinciden exactamente.
                           '"&TEXT(' + R.c('total') + '-' + R.c('base_obra')
                           + '-' + R.c('base_maquinaria')
-                          + ',"#,##0")&" € de los "&TEXT(' + R.c('total')
-                          + ',"#,##0")&" € de inversión."')})
+                          + ',"0")&" € de los "&TEXT(' + R.c('total')
+                          + ',"0")&" € de inversión."')})
         self.pendientes.append(rej)
         motor.semaforo_num(ws, rej.c('caja') + ':' + rej.c('caja'),
                            verde_si=rej.c('caja') + '>0')

@@ -1,5 +1,5 @@
 {
- "rol": "T5-bis — CORRECTOR FINAL del representante de línea A («plan-negocio-bar-restaurante», molde A-α) sobre los bloqueos CRIT-01..06 del crítico",
+ "rol": "T5-bis — CORRECTOR FINAL del representante de línea A («plan-negocio-bar-restaurante», molde A-α) sobre los bloqueos CRIT-01..06 del crítico, más las dos decisiones del orquestador del 2026-08-29 (TEC-21 residual y gate blancos_contaminados)",
  "fecha": "2026-08-29",
  "spec": "scripts/productos-digitales/planes-v2-SPEC.md",
  "entradas": [
@@ -44,6 +44,16 @@
    "id": "CRIT-04",
    "donde": "scripts/productos-digitales/auditorias/planes-v2-motor-ids.json (nuevo)",
    "prueba": "Tabla id → fix de los 74 ids que §8 mapea a §1 o §2 (67 de la tabla §8.1 con «§1» o «§2» en su columna de sección + 7 NUEVO-01..07 de §8.3; NUEVO-08/09/10 quedan fuera porque van a §3/§5/§7). Construida LEYENDO la SPEC y el ids_resueltos de planes-v2-grupo_a.json, no a mano. Cruce: 57 declarados por grupo_a (el 58.º que declara, COM-20, cae fuera de los 74 porque §8.1 lo manda a «§4.2 §8») y 17 que no cruzaba nadie, cada uno ahora con estado: TEC-09, TEC-13 y TEC-14 HECHOS por el motor y verificados por mí con celda («0. Supuestos'!B5 y '2. P&L 3 Años'!B8:D8 con '#,##0.00 €'; 24 bloques de dataValidation y 33 rangos de formato condicional con 71 reglas, 9/9 hojas protegidas; 52 filas con alto explícito y 69 celdas con wrapText en el plan, 68 altos en el checklist); TEC-15, COM-23 y la parte §1.7 de COM-27 CERRADOS hoy por CRIT-05; y los 11 restantes con tanda declarada (NUEVO-03 → T7; NUEVO-04, NUEVO-05, NUEVO-07 y el resto de TEC-15 → T8; DOM-02, DOM-28 y la parte §4.3.4 de COM-27 → T9; DOM-35 y COM-30 → T9/T10; COM-17, DOM-32 y DOM-16 → T10)."
+  },
+  {
+   "id": "TEC-21 residual (decisión 1 del orquestador)",
+   "donde": "planes-v2_0/grupo_a.py: (a) la nota de la base de amortización ('1. Inversión Inicial'!D55) pasa de TEXT(…,\"#,##0\") ×2 a TEXT(…,\"0\"); (b) la nota de la inversión total (D48) pasa de \"0,0%\" a \"0%\"; (c) la rotación por plaza de \"0. Supuestos\"!C50 deja de usar \"0,0\" y estrena el helper `dec1()`",
+   "prueba": "Censo previo: 15 celdas del libro llevan TEXT(); sólo 3 usaban un código con separador. Medido en la caché ANTES → DESPUÉS: D55 «Suman 95,205 € de los 179,165 €» → «Suman 95205 € de los 179165 €», que es exactamente lo que Excel escribe en español con el código \"0\" (el separador de un CÓDIGO de formato se guarda siempre en canónico anglosajón, de ahí la coma). D48 «(34% del total)» → «(34% del total)»: sin cambio visible, porque «0,0%» NUNCA imprimió un decimal — la coma de un código de formato es el separador de MILES, así que ya redondeaba; ahora el código dice lo que hace. Y C50 era el peor de los tres: «0,0» imprimía literalmente «Son 01 servicios por plaza y día». Con \"0.0\" habría dicho «Son 1.4 …» en la caché y «1,4» en Excel, y esa frase sigue con «un MÍNIMO de 1,8 rotaciones» tres palabras más allá: es la mezcla de separadores que TEC-21 cerró. Por eso `dec1()` compone la cifra a mano —TEXT(INT(ROUND(x,1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(x,1),1)*10,0),\"0\")— con el ROUND FUERA del troceado para que 1,96 lea «2,0» y no «1,10». Resultado medido: «Son 1,4 servicios por plaza y día … MÍNIMO de 1,8 rotaciones», idéntico en pycel y en Excel. Barrido final sobre las 15 celdas con TEXT(): 0 separadores anglosajones en el texto cacheado. Ninguna cifra de celdas_clave se mueve: el diff de las 40 magnitudes contra la medición anterior es NINGUNA."
+  },
+  {
+   "id": "GATE blancos_contaminados (decisión 2 del orquestador)",
+   "donde": "planes-v2_0/main.py: función `blancos_contaminados()` + `_guarda_y_cuerpo()` detrás de `verificar_cache()`; llamada y línea de log en el paso 4/8; fallo BLOQUEANTE en la lista de `fallos`; `gates.blancos_contaminados` en el informe JSON; contador «gates medibles a 0: N/13» en el paso 5/8 y mención en la línea de TODO VERDE; punto 5 del docstring de cabecera",
+   "prueba": "La regla exige las TRES condiciones a la vez: caché `None` + CUERPO —quitadas envoltura y guarda— sin ningún literal \"\" propio + guarda FALSA. Es lo que `verificar_cache` no puede hacer: su prueba es `'\"\"' in formula` y la envoltura de §1.2 SIEMPRE trae un \"\". POSITIVO: sobre una copia del paquete FINAL en <scratchpad> con sólo el fix de CRIT-01 revertido → exit 1, «gates medibles a 0: 12/13» y **13** celdas detectadas: las 12 de tesorería (E21, H21, K21 y E22:M22) MÁS '4. Escenarios'!C26, que desde CRIT-06 cuelga de M22 — el gate cubre la cadena entera, no sólo el punto de origen. NEGATIVO: sobre la copia actual → 0, con exit 0 y 13/13. Barrido con el gate sobre los 10 productos: 0 en el representante, coctelería, paellero, parrillero, catering y chef-privado (los seis que estaban en verde SIGUEN en verde: el gate no hace regresar a ninguno); y HALLAZGO NUEVO en los cuatro A-β, que ya estaban en exit 1 y sólo suman una línea de fallo: tapas-bar 68, cafetería 68, panadería 68, food-truck 66. No son un defecto independiente: cascadean del mismo origen que ya declaraban (Financiación no calcula sin su contenido_<pid>.py, y de ahí se propaga a 'PyG 3 Años'!B32:E32, 'Punto Equilibrio'!B12:D12, 'Tesorería 12 meses' —40 celdas— y 'Escenarios'). Lo que aporta el gate es la MAGNITUD: 66-68 celdas que el cliente vería en blanco, invisibles hasta hoy. T7 tiene que dejarlas a 0."
   }
  ],
  "no_aplicados": [
@@ -62,10 +72,6 @@
   {
    "id": "Avisos del crítico que no son míos",
    "motivo": "RC-29 (3 nombres de hoja de más de 31 caracteres en parrillero) sigue saltando en cada ejecución → T8. El docx del representante sigue con 0 tablas, tamaño carta y author «python-docx» → T9. Coctelería y paellero dejan 1 xlsx sin fórmulas cada uno → T8. Ninguno lo puede cerrar este rol."
-  },
-  {
-   "id": "TEC-21 residual (separador anglosajón en una caché)",
-   "motivo": "HALLAZGO NUEVO, no pedido y no arreglado: '1. Inversión Inicial'!D55 se genera con TEXT(…,\"#,##0\") y su valor CACHEADO sale «Suman 95,205 € de los 179,165 € de inversión» — separador anglosajón. Excel lo recalcula bien al abrir (mostrará 95.205 y 179.165), así que sólo se ve hasta el primer recálculo, pero es exactamente el patrón que TEC-21 cerró en las demás frases usando formatos sin separador de millares. Es PREVIO a esta corrección (antes decía «83,205 €»). Lo dejo medido para que el orquestador decida: el fix sería generar esa nota con \"0\" en vez de \"#,##0\", o que inject_cache localice el TEXT()."
   }
  ],
  "celdas_clave": {
@@ -161,12 +167,12 @@
   "checklist!B5": "Elegir forma jurídica (SL recomendada, capital mín. 1 €)"
  },
  "dryrun": {
-  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/fix/final python3 scripts/productos-digitales/planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run --json <scratchpad>/planes/fix/final.json",
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/fix/final2 python3 scripts/productos-digitales/planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run --json <scratchpad>/planes/fix/final2.json",
   "exit": 0,
   "idempotencia": 0,
   "censo": 0,
   "cache_fallos": 0,
-  "copia": "<scratchpad>/planes/fix/final/dryrun/plan-negocio-bar-restaurante (y el run de trabajo en <scratchpad>/planes/fix/dryrun/…). astro-site/public/dl/ sólo se ha leído: los tres ficheros del representante conservan su mtime (22-ago 11:13 los dos xlsx, 29-ago 03:09 el docx).",
+  "copia": "<scratchpad>/planes/fix/final2/dryrun/plan-negocio-bar-restaurante. astro-site/public/dl/ sólo se ha leído: los tres ficheros del representante conservan su mtime (22-ago 11:13 los dos xlsx, 29-ago 03:09 el docx).",
   "formulas": {
    "plan_financiero": 766,
    "checklist": 2,
@@ -203,124 +209,117 @@
    "grupo_b y grupo_c aún no existen",
    "RC-29 (3 nombres de hoja > 31, T8)",
    "1 docx sin A4 / sin author (T9)"
-  ]
+  ],
+  "blancos_contaminados": 0,
+  "gates_medibles_a_0": "13/13 (los 12 de §9 + blancos_contaminados)",
+  "prueba_negativa_del_gate": "copia del paquete FINAL en <scratchpad>/planes/fix/repo con SÓLO el fix de CRIT-01 revertido → exit 1, 12/13 gates y 13 celdas detectadas (las 12 de tesorería + Escenarios!C26)."
  },
  "regresion_hermanos": [
   {
-   "pid": "plan-negocio-tapas-bar",
-   "modo": "--solo motor",
-   "exit": 0,
-   "fallos": 0
-  },
-  {
-   "pid": "plan-negocio-cocteleria-eventos",
-   "modo": "--solo motor",
+   "pid": "plan-negocio-bar-restaurante",
+   "modo": "dry-run COMPLETO (canario)",
    "exit": 0,
    "fallos": 0,
-   "nota": "ortografía 9 (Catalogo/catalogo/movil), previos → T8"
-  },
-  {
-   "pid": "plan-negocio-paellero-eventos",
-   "modo": "--solo motor",
-   "exit": 0,
-   "fallos": 0,
-   "nota": "1 xlsx sin fórmulas (plantilla-proveedores), previo → T8"
-  },
-  {
-   "pid": "plan-negocio-tapas-bar",
-   "modo": "dry-run COMPLETO",
-   "exit": 1,
-   "fallos": 12,
-   "nota": "idéntico al baseline del crítico y al A/B con el código PREVIO: diff de los bloques FALLOS = 0 líneas. idempotencia 0. Pendiente de T7."
+   "blancos_contaminados": 0,
+   "gates": "13/13"
   },
   {
    "pid": "plan-negocio-cocteleria-eventos",
    "modo": "dry-run COMPLETO",
    "exit": 0,
    "fallos": 0,
-   "nota": "TODO VERDE, igual que el crítico"
+   "blancos_contaminados": 0,
+   "nota": "sigue TODO VERDE con el gate nuevo; ortografía 9 previos → T8"
   },
   {
    "pid": "plan-negocio-paellero-eventos",
    "modo": "dry-run COMPLETO",
    "exit": 0,
    "fallos": 0,
-   "nota": "TODO VERDE, igual que el crítico"
-  },
-  {
-   "pid": "plan-negocio-cafeteria",
-   "modo": "dry-run COMPLETO",
-   "exit": 1,
-   "fallos": 12,
-   "nota": "A/B con el código PREVIO: diff de FALLOS = 0 líneas. No es regresión; falta su contenido_<pid>.py. T7."
-  },
-  {
-   "pid": "plan-negocio-panaderia",
-   "modo": "dry-run COMPLETO",
-   "exit": 1,
-   "fallos": 49,
-   "nota": "A/B con el codigo PREVIO: diff de FALLOS = 0 lineas. No es regresion; falta su contenido_<pid>.py. T7."
-  },
-  {
-   "pid": "plan-negocio-food-truck",
-   "modo": "dry-run COMPLETO",
-   "exit": 1,
-   "fallos": 49,
-   "nota": "A/B con el codigo PREVIO: diff de FALLOS = 0 lineas. No es regresion; falta su contenido_<pid>.py. T7."
-  },
-  {
-   "pid": "plan-negocio-panaderia",
-   "modo": "--solo motor",
-   "exit": 0,
-   "fallos": 0
-  },
-  {
-   "pid": "plan-negocio-food-truck",
-   "modo": "--solo motor",
-   "exit": 0,
-   "fallos": 0
-  },
-  {
-   "pid": "plan-negocio-cafeteria",
-   "modo": "--solo motor",
-   "exit": 0,
-   "fallos": 0
+   "blancos_contaminados": 0,
+   "nota": "sigue TODO VERDE; 1 xlsx sin fórmulas previo → T8"
   },
   {
    "pid": "plan-negocio-parrillero-asador-eventos",
-   "modo": "--solo motor",
+   "modo": "dry-run COMPLETO",
    "exit": 0,
    "fallos": 0,
-   "nota": "ortografía 2 (Catalogo, Manteleria) + 3 nombres de hoja > 31 caracteres (RC-29), todos previos → T8"
+   "blancos_contaminados": 0,
+   "nota": "ortografía 2 y RC-29 previos → T8"
   },
   {
    "pid": "plan-catering-tematico-eventos",
-   "modo": "--solo motor",
+   "modo": "dry-run COMPLETO",
    "exit": 0,
-   "fallos": 0
+   "fallos": 0,
+   "blancos_contaminados": 0
   },
   {
    "pid": "plan-chef-privado-showcooking-eventos",
-   "modo": "--solo motor",
+   "modo": "dry-run COMPLETO",
    "exit": 0,
-   "fallos": 0
+   "fallos": 0,
+   "blancos_contaminados": 0
+  },
+  {
+   "pid": "plan-negocio-tapas-bar",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 13,
+   "blancos_contaminados": 68,
+   "nota": "12 líneas idénticas al baseline del crítico y al A/B con el código previo + 1 línea NUEVA, la del gate. T7."
+  },
+  {
+   "pid": "plan-negocio-cafeteria",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 13,
+   "blancos_contaminados": 68,
+   "nota": "12 previas (A/B: diff 0 líneas) + 1 del gate nuevo. T7."
+  },
+  {
+   "pid": "plan-negocio-panaderia",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 50,
+   "blancos_contaminados": 68,
+   "nota": "49 previas (A/B: diff 0 líneas) + 1 del gate nuevo. T7."
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 50,
+   "blancos_contaminados": 66,
+   "nota": "49 previas (A/B: diff 0 líneas) + 1 del gate nuevo. T7."
+  },
+  {
+   "pid": "los 10 productos",
+   "modo": "--solo motor, en serie",
+   "exit": 0,
+   "fallos": 0,
+   "nota": "exit 0 en los 10; gate de ortografía a 0 en 8 (quedan 9 en coctelería y 2 en parrillero, previos → T8)"
   }
  ],
  "ficheros_tocados": [
-  "scripts/productos-digitales/planes-v2_0/grupo_a.py (CRIT-01, CRIT-02, CRIT-06)",
+  "scripts/productos-digitales/planes-v2_0/grupo_a.py (CRIT-01, CRIT-02, CRIT-06 + TEC-21 residual: helper dec1() y 3 formatos de TEXT())",
   "scripts/productos-digitales/planes-v2_0/motor.py (CRIT-05)",
+  "scripts/productos-digitales/planes-v2_0/main.py (gate blancos_contaminados: función, log, fallo bloqueante, informe JSON y contador 13/13)",
   "scripts/productos-digitales/auditorias/planes-v2-correccion.json (CRIT-03 + rectificación de RD-02/RC-02)",
   "scripts/productos-digitales/auditorias/planes-v2-motor-ids.json (CRIT-04, nuevo)",
   "scripts/productos-digitales/auditorias/planes-v2-crit-correccion.json (este informe)"
  ],
  "notas": [
   "CRIT-01..06: los seis cerrados. Los tres de código, en el generador; los dos de informe, en los JSON; y CRIT-02 arrastraba además una afirmación falsa en RD-02/RC-02 que queda rectificada.",
-  "Ojo al leer el diff: hay un AUTOCOMMIT en marcha cada 15 minutos («wip(productos): auto-commit periódico de la construcción de planes v2.0») que ya se ha llevado grupo_a.py y motor.py a main mientras yo trabajaba. No he ejecutado ni un comando de git; lo aviso porque el orquestador verá los cambios ya commiteados y podría creer que alguien hizo el APPLY. NO se ha hecho: astro-site/public/dl/ está intacto y PLANES_APPLY nunca se ha exportado.",
-  "El detector del patrón de CRIT-01 («número + celda que vale \"\"») es reutilizable y vale la pena que T7/T8 lo hereden: una celda cuya caché es None, cuyo cuerpo no contiene ningún literal \"\" propio y cuya guarda es FALSA está en blanco por contaminación, no por diseño. Es la comprobación que a la verificación data_only de main.py le falta: hoy clasifica esas celdas como «vacías por diseño» y las da por buenas. Recomiendo subirlo a main.py antes de T7 —son ~20 líneas— porque grupo_a.py se aplica a los 5 productos de línea A y el patrón se replicaría.",
+  "Las dos decisiones del orquestador del 2026-08-29 quedan APLICADAS y verificadas: (1) TEC-21 residual — 3 formatos de TEXT() saneados, 0 separadores anglosajones en las 15 celdas con TEXT(); (2) el gate blancos_contaminados vive en main.py, es BLOQUEANTE y está probado en las dos direcciones (0 sobre la copia actual, 13 sobre la copia con CRIT-01 revertido).",
+  "El gate destapó de paso 66-68 celdas en blanco en CADA uno de los cuatro A-β, invisibles hasta hoy. No son un defecto nuevo —cascadean de que Financiación no calcula sin su contenido_<pid>.py, que ya estaba declarado— pero sí miden el daño: son las celdas que el cliente vería vacías. T7 tiene que dejar ese gate a 0 en los cuatro, y ahora ya no puede no enterarse.",
+  "Ninguno de los seis productos que estaban en verde ha regresado con el gate nuevo. Los cuatro que estaban en rojo suman exactamente una línea de fallo, la del gate.",
+  "Ojo al leer el diff: hay un AUTOCOMMIT en marcha cada 15 minutos («wip(productos): auto-commit periódico de la construcción de planes v2.0») que ya se ha llevado grupo_a.py, motor.py y main.py a main mientras yo trabajaba. No he ejecutado ni un comando de git; lo aviso porque el orquestador verá los cambios ya commiteados y podría creer que alguien hizo el APPLY. NO se ha hecho: astro-site/public/dl/ está intacto y PLANES_APPLY nunca se ha exportado.",
   "El gate de ortografía tenía un segundo agujero, más silencioso que el de CRIT-05 y ya cerrado: miraba SÓLO la primera coincidencia de la celda y, si era la campana extractora, se saltaba la celda entera. Cualquier errata posterior en el mismo texto se perdía sin un aviso.",
-  "Cifras del caso base que el orquestador tiene que propagar a T9/T10 y que HAN CAMBIADO: amortización anual 8.396,00 € · RAI 57.566,40 € · IS 8.634,96 € · resultado neto año 1 48.931,44 € y año 3 73.493,68 € · margen neto 10,84 % · costes fijos año 1 251.615,20 € · break-even CONTABLE 65,10 cubiertos/día · flujo de caja libre año 1 105.415,02 € · saldo de cierre 166.219,82 € · payback 2,58 años. NO cambian: inversión 179.164,80 €, CAPEX 118.360,00 €, necesidad de caja 201.899,40 €, fondo de maniobra 60.804,80 €, break-even de CAJA 62,93 cubiertos/día, facturación 451.360 / 496.496 / 526.285,76 €, personal 151.939,20 € (33,66 %), mercancía 27,20 %, alquiler 7,98 %, margen bruto 68,5 %, DSCR 9,59/3,79, checklist 64 ítems en 7 fases.",
+  "Cifras del caso base que el orquestador tiene que propagar a T9/T10 y que HAN CAMBIADO: amortización anual 8.396,00 € · RAI 57.566,40 € · IS 8.634,96 € · resultado neto año 1 48.931,44 € y año 3 73.493,68 € · margen neto 10,84 % · costes fijos año 1 251.615,20 € · break-even CONTABLE 65,10 cubiertos/día · flujo de caja libre año 1 105.415,02 € · saldo de cierre 166.219,82 € · payback 2,58 años. NO cambian: inversión 179.164,80 €, CAPEX 118.360,00 €, necesidad de caja 201.899,40 €, fondo de maniobra 60.804,80 €, break-even de CAJA 62,93 cubiertos/día, facturación 451.360 / 496.496 / 526.285,76 €, personal 151.939,20 € (33,66 %), mercancía 27,20 %, alquiler 7,98 %, margen bruto 68,5 %, DSCR 9,59/3,79, checklist 64 ítems en 7 fases. Los arreglos de TEXT() no mueven ninguna: el diff de las 40 magnitudes de celdas_clave contra la medición anterior es NINGUNA.",
   "Los cinco ratios del caso base siguen pasando su propio semáforo, y dos MEJORAN con el fix de CRIT-02: margen neto 10,84 % (suelo 5 %) y margen bruto 68,5 % (suelo 65 %); personal 33,66 % (techo 34 % en el libro), mercancía 27,20 % (techo 32 %) y alquiler 7,98 % (techo 10 %) no se mueven.",
-  "Térmica: 42,2-50,5 °C en todo el trabajo, un python cada vez, sin builds ni navegador. 20 ejecuciones de main.py en total (10 --solo motor, 6 dry-run completos, 3 del A/B con el código previo y el canario final).",
-  "Siguiente paso para el orquestador: el paso 3 del orden_ejecucion_real del crítico está VERIFICADO celda a celda con los valores nuevos, así que el APPLY del representante puede ejecutarse. Antes conviene decidir sobre el hallazgo TEC-21 residual de D55 y sobre si se sube el detector de blancos contaminados a main.py."
+  "Térmica: 41,9-54,1 °C en todo el trabajo, un python cada vez, sin builds ni navegador. 34 ejecuciones de main.py (10 --solo motor, 16 dry-run completos, 5 del A/B con el código previo, 2 de la prueba negativa del gate y el canario final).",
+  "`dec1()` queda disponible en grupo_a.py para T7/T8: es el único modo de escribir un decimal con coma dentro de un texto concatenado que salga igual en Excel y en la caché. Cualquier hermano que necesite decimales en una nota debe usarlo en vez de TEXT(…,\"0.0\") o, peor, TEXT(…,\"0,0\").",
+  "Siguiente paso para el orquestador: el paso 3 del orden_ejecucion_real del crítico está VERIFICADO celda a celda con los valores nuevos y el canario sale exit 0 / idempotencia 0 / censo 0 / caché 0 / 13 gates a 0. El APPLY del representante puede ejecutarse."
  ]
 }

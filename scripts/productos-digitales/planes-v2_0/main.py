@@ -30,7 +30,11 @@ QUÉ HACE, EN ORDEN
    es fallo.
 4. `inject_cache.py` (siempre el último paso que toca el zip).
 5. Verificación `data_only` de **cada fórmula nueva**: las que devuelven `None`
-   sin ser `""` por diseño son fallo.
+   sin ser `""` por diseño son fallo. Y encima el gate
+   **`blancos_contaminados`** (CRIT-01, 0 exigido), que es el que de verdad
+   los distingue: caché `None` +
+   CUERPO sin ningún literal `""` propio + guarda FALSA = la celda quedó muda
+   porque un operando valía `""`, no porque nadie lo quisiera.
 6. Gates de §9 medibles sobre xlsx: no latinos, ortografía, formatos
    (0 importes con %, 0 recuentos con €), referencias colgando, 0 xlsx con 0
    fórmulas, ítems de checklist, A4, bio y versión.
@@ -83,6 +87,7 @@ import inspect
 import json
 import logging
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -430,6 +435,91 @@ def verificar_cache(carpeta, registros):
     return {'con_valor': ok, 'vacias_por_diseno': vacias,
             'vacias_comprobadas_con_pycel': comprobadas,
             'vacias_no_verificadas': no_verificadas, 'fallos': fallos}
+
+
+# --------------------------------------------------------------------------
+# Gate «blancos contaminados» (CRIT-01) — 0 exigido
+# --------------------------------------------------------------------------
+#: La envoltura estándar de §1.2: `IFERROR(IF(<guarda>="","", CUERPO),"")`.
+RX_ENVOLTURA = re.compile(r'^IFERROR\((.*),""\)$', re.S)
+RX_GUARDA = re.compile(r'^IF\((.*?)="","",(.*)\)$', re.S)
+RX_REF_SIMPLE = re.compile(r"^(?:'([^']+)'!)?\$?([A-Z]{1,3})\$?(\d+)$")
+
+
+def _guarda_y_cuerpo(formula):
+    """Separa la guarda de §1.2 del CUERPO de la fórmula.
+
+    Devuelve `(guarda, cuerpo)`; la guarda es `None` si la fórmula no lleva
+    la forma canónica `IF(<celda>="","", …)`.
+    """
+    s = formula[1:]
+    m = RX_ENVOLTURA.match(s)
+    if m:
+        s = m.group(1)
+    m = RX_GUARDA.match(s)
+    if m:
+        return m.group(1), m.group(2)
+    return None, s
+
+
+def blancos_contaminados(carpeta, nombres):
+    """CRIT-01 — celdas en blanco por CONTAMINACIÓN, no por diseño.
+
+    En Excel `número + ""` es `#¡VALOR!`, y el `IFERROR` de la envoltura lo
+    convierte en `""`: la celda queda muda y ningún gate se entera. Le pasó a
+    la hoja de tesorería del representante —la que el propio libro anuncia
+    como «la primera que mira un banco»—, que quedó EN BLANCO de los meses 4
+    a 12 porque el flujo del mes sumaba con `+` el pago del IVA, que vale `""`
+    en los meses sin liquidación. `verificar_cache` la daba por buena: su
+    prueba es `'""' in formula`, y la envoltura SIEMPRE trae un `""`.
+
+    La regla que sí distingue los dos casos mira tres cosas a la vez:
+
+    1. la celda no tiene valor cacheado (`data_only` devuelve `None`);
+    2. su CUERPO —quitadas la envoltura y la guarda— no contiene ningún
+       literal `""` propio, así que nada en ella estaba pensado para salir en
+       blanco;
+    3. su guarda es FALSA (la celda de la que cuelga la fila sí tiene valor),
+       luego el blanco tampoco viene de ahí.
+
+    Las tres juntas sólo se cumplen cuando un operando contaminó la suma.
+    Calibrado sobre el representante: 36 candidatas brutas, de las que 24 son
+    los años fuera del plazo del préstamo en `7. Financiación` (guarda cierta)
+    y 12 son el defecto real.
+    """
+    fuera = []
+    for fname in nombres:
+        path = os.path.join(carpeta, fname)
+        wf = openpyxl.load_workbook(path)
+        wd = openpyxl.load_workbook(path, data_only=True)
+        for ws in wf.worksheets:
+            wsd = wd[ws.title]
+            for row in ws.iter_rows():
+                for c in row:
+                    formula = c.value
+                    if not motor._es_formula(formula):
+                        continue
+                    if wsd[c.coordinate].value is not None:
+                        continue
+                    guarda, cuerpo = _guarda_y_cuerpo(formula)
+                    if '""' in cuerpo:
+                        continue            # blanco por diseño
+                    if guarda is not None:
+                        m = RX_REF_SIMPLE.match(guarda.replace('$', ''))
+                        if m:
+                            hoja = m.group(1) or ws.title
+                            coord = m.group(2) + m.group(3)
+                            try:
+                                v = wd[hoja][coord].value
+                            except KeyError:
+                                v = 'HOJA-AUSENTE'
+                            if v is None or v == '':
+                                continue    # la guarda manda: blanco legítimo
+                    fuera.append({'fichero': fname, 'hoja': ws.title,
+                                  'celda': c.coordinate,
+                                  'formula': formula[:160],
+                                  'cuerpo': cuerpo[:110]})
+    return fuera
 
 
 def gates_spec9(carpeta, nombres, dets):
@@ -839,14 +929,27 @@ def main():
         + str(len(ver['fallos'])))
     for fl in ver['fallos'][:10]:
         log('    ' + fl)
+    # CRIT-01 — el gate que `verificar_cache` no puede ser: aquí no vale
+    # preguntar si la fórmula «puede» devolver "", porque la envoltura de
+    # §1.2 siempre trae uno. 0 exigido.
+    blancos = blancos_contaminados(carpeta, nombres)
+    log('  blancos_contaminados: ' + str(len(blancos)))
+    for b in blancos[:10]:
+        log('    ' + b['fichero'] + ':' + b['hoja'] + '!' + b['celda']
+            + ' → ' + b['cuerpo'])
 
     log('\n== 5/8 · gates de §9 sobre los xlsx ==')
     g9 = gates_spec9(carpeta, nombres, dets)
-    for clave in ('no_latinos', 'ortografia', 'formatos', 'referencias',
-                  'sin_formulas', 'sin_bio', 'sin_version',
-                  'sin_instrucciones', 'hojas_sin_a4', 'creator_mal',
-                  'nombres_hoja', 'cf_desanclado'):
+    G9_CLAVES = ('no_latinos', 'ortografia', 'formatos', 'referencias',
+                 'sin_formulas', 'sin_bio', 'sin_version',
+                 'sin_instrucciones', 'hojas_sin_a4', 'creator_mal',
+                 'nombres_hoja', 'cf_desanclado')
+    for clave in G9_CLAVES:
         log('  ' + clave + ': ' + str(len(g9[clave])))
+    limpios = (sum(1 for k in G9_CLAVES if not g9[k])
+               + (0 if blancos else 1))
+    log('  --- gates medibles a 0: ' + str(limpios) + '/'
+        + str(len(G9_CLAVES) + 1) + ' (los 12 de §9 + blancos_contaminados)')
     for c in g9['checklists']:
         log('  checklist ' + c['fichero'] + ' [' + c['molde'] + ']: '
             + str(c['items_con_desplegable']) + ' ítems con desplegable')
@@ -903,6 +1006,13 @@ def main():
     if ver['fallos']:
         fallos.append('caché: ' + str(len(ver['fallos']))
                       + ' fórmulas nuevas sin valor')
+    if blancos:
+        fallos.append(
+            'CRIT-01 / blancos_contaminados: ' + str(len(blancos))
+            + ' celdas quedan EN BLANCO por contaminación, no por diseño '
+            '(un operando vale "" y en Excel número + "" es #¡VALOR!, que el '
+            'IFERROR convierte en blanco): '
+            + ', '.join(b['hoja'] + '!' + b['celda'] for b in blancos[:8]))
     for nombre, salida, rc in cache:
         if rc != 0:
             fallos.append('inject_cache falló en ' + nombre + ' (exit '
@@ -1016,6 +1126,7 @@ def main():
             'inject_cache': [{'fichero': n, 'salida': s, 'exit': rc}
                              for n, s, rc in cache],
             'data_only_formulas_nuevas': ver,
+            'blancos_contaminados': blancos,
             'spec9': g9,
             'docx_solo_lectura': docx,
             'censo_entregables': cen,
@@ -1038,8 +1149,8 @@ def main():
         log('\ninforme → ' + args.json)
 
     log('\n' + ('FALLOS:\n  ' + '\n  '.join(str(x) for x in fallos) if fallos
-                else 'TODO VERDE (moldes, idempotencia, caché, gates §9, '
-                     'censo, demos)'))
+                else 'TODO VERDE (moldes, idempotencia, caché, blancos '
+                     'contaminados, gates §9, censo, demos)'))
     if pendientes:
         log('\nPENDIENTE (no lo cierra el motor):\n  '
             + '\n  '.join(pendientes))
