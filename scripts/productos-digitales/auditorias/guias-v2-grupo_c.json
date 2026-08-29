@@ -1,0 +1,616 @@
+{
+ "rol": "constructor grupo_c (guías v2.0, §4 entero)",
+ "fecha": "2026-08-29T06:15:10",
+ "spec": "scripts/productos-digitales/guias-v2-SPEC.md §4 (+ §7 descartes, §7-bis 1-22)",
+ "representante": "guia-restaurante-gastronomico",
+ "ficheros_codigo": [
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/grupo_c.py",
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py"
+ ],
+ "alcance_medido": {
+  "escandallo-maestro[-concepto].xlsx": "7 guías (NO 8: guia-dark-kitchen no lo lleva)",
+  "menu-engineering-matrix.xlsx": "6 guías",
+  "budget-bodega.xlsx": "1 (representante)",
+  "plantilla-turnos-brigada.xlsx": "7 guías",
+  "plan-fermentacion-y-produccion.xlsx": "1 (panadería)"
+ },
+ "modelos_detectados": {
+  "escandallo": {
+   "E1": "representante — cab. fila 6, C=Unidad, E=Precio/Ud (€); banda de ficha en fila 4; 20 líneas VACÍAS; H27=SUM, H28==H27/0.28",
+   "E2": "5 hermanos — cab. fila 4, C=Cantidad (g/ml), D=Precio/Kg (€); ficha precargada de 8-13 ingredientes; G18=SUM, G19==G18/<fc>, G20==G19*1.10",
+   "E3": "panadería — cab. fila 3, tabla de 25 PRODUCTOS (A=Producto, C=Coste materia €, D=PVP €); hoja «Escandallos»; SIN merma, SIN raciones, SIN PVP sugerido, SIN IVA"
+  },
+  "menu": {
+   "M1": "representante — hoja «Menu Engineering», A:H, 25 filas VACÍAS, H (Clasificación) sin fórmula",
+   "M2": "5 hermanos — hoja «Matrix», A:J, 15 platos reales, I (Popularidad) y J (Clasificación) rotuladas y vacías"
+  },
+  "turnos": {
+   "T1": "representante — cab. fila 4, A vacía, K=Horas/Semana, bandas COCINA (B5) y SALA (B21), 24 puestos",
+   "T2": "5 hermanos — cab. fila 4, A numerada desde la fila 5, SIN columna K, rejilla ya rellena de P/T/M",
+   "T3": "panadería — cab. fila 3, A=Persona, B=Rol, C:I con RANGO HORARIO en texto («03-11», «12:30-14», «libre»), J=Total h constantes, K=Plus nocturnidad, sin DV y sin hoja Instrucciones"
+  }
+ },
+ "secciones_spec_cubiertas": {
+  "4.1 escandallo-maestro": "merma en el coste (D=Cantidad NETA, G=Cantidad BRUTA=neta/(1-merma), H=bruta*precio) en E1; merma como rendimiento (G=E/(1-F)) en E2; raciones en celda (F4/E<n>) con coste por ración; food cost objetivo NÚMERO en celda y usado por la fórmula, con rótulo dinámico TEXT(); PVP sin IVA y PVP con IVA con el tipo en celda; food cost real; hoja renombrada a «Ficha (plantilla)» + hoja «Resumen» + instrucción de duplicar (E1/E2). E3 recibe IFERROR en las divisiones, IVA en celda y columna «PVP sugerido al food cost objetivo»; NO se renombra ni recibe Resumen (no hay ficha).",
+  "4.2 menu-engineering-matrix": "Kasavana & Smith completo en M1 y M2: fila TOTAL con SUM de uds y margen de contribución medio ponderado (ROUND(SUMPRODUCT(...),2)/total), columna Mix %, umbral 70 %/N con el FACTOR en celda verde, clasificación por fórmula (Star/Plowhorse/Puzzle/Dog), columna «Acción recomendada» por cuadrante y formato condicional por texto. 12 platos de ejemplo precargados en M1 (PVP dentro de las bandas del cap. 15).",
+  "4.3 budget-bodega": "H deja de llamar «Margen (%)» a un markup: pasa a «Multiplicador (×)» = PVP/coste; columnas nuevas «Margen s/PVP (%)», «Food cost bebida (%)», «Uds vendidas/mes», «Valor stock a coste (€)», «Valor stock a PVP (€)» y las cuatro de sommelier (Formato, Añada, Proveedor, Ubicación/bin); rotación CALCULADA (uds vendidas ÷ stock); fila TOTAL con uds, valor a coste, valor a PVP, margen medio ponderado y food cost medio; nota de la partida «Bodega inicial» del plan financiero SIN externalLink; DV de tipo de vino.",
+  "4.4 plantilla-turnos-brigada": "horas por SUMPRODUCT sobre la tabla de equivalencia turno→horas en celdas verdes (M/T/P/L/V, V documentada como Vacaciones); columnas «Bruto anual (€)», «Nº de pagas» (DV 12/14/15, por defecto 14), «Bruto por paga (€)», «Coste/hora (€)» y «Coste semana (€)»; SS empresarial al 33 % EN CELDA y coste anual con SS; celda «SMI vigente (€/año, 14 pagas)» = 17.094 (RD 126/2026) con semáforo rojo ISNUMBER sobre todo bruto por debajo; «Jornada máxima semanal (h)» = 40 (art. 34.1 ET) con semáforo ámbar; columna # numerada; headcount unificado a la cifra MEDIDA; hoja nueva «Registro de jornada» (art. 34.9 ET) con fecha, trabajador, semana, entrada, salida, horas del día (MOD, cruce de medianoche), descanso desde la jornada anterior, aviso del art. 34.3 ET, firma y resumen por trabajador y semana.",
+  "4.5 plan-fermentacion-y-produccion": "«Tiempo total h» pasa de 15 constantes tecleadas a =SUM(bulk+bloque frío+final) CONSERVANDO el número (comprobado fila a fila antes de tocar: coincidía en las 15) y columna nueva «Inicio del amasado (hora)» = retroplanning desde la hora objetivo de salida del horno (celda verde, vacía por falta de fuente).",
+  "7 descartes respetados": "no se crean ficheros nuevos (sólo hojas dentro de un libro), no se renombra ni retira ningún entregable, no se enlazan libros con externalLink, no se toca aggregateRating/reseñas/testimonios/ancla de precio, no se añade columna de coste al molde B de panadería.",
+  "7-bis respetado": "4 (raciones y merma en el coste, food cost en celda y usada, PVP con y sin IVA), 5 (SMI), 11 (aborta si no reconoce la estructura), 12 (constantes → fórmulas conservando el número), 13 («sin dato» = \"\" y guarda ISNUMBER), 16 (SMI 17.094 con el RD), 17 (panadería sin columna de coste), 10 (dry-run, un python cada vez, istats antes de cada ejecución)."
+ },
+ "pruebas": {
+  "guia-panaderia-obrador": {
+   "exit": 1,
+   "modo": "dry-run",
+   "idempotencia_diferencias": 0,
+   "censo_exit": 0,
+   "data_only_fallos": 0,
+   "fallos": [
+    "§1.3: 9 literales dentro de fórmulas que deberían ser parámetro en celda (plan-financiero-3-anos.xlsx:P&L 3 años!B12=0.20, plan-financiero-3-anos.xlsx:P&L 3 años!C12=0.19, plan-financiero-3-anos.xlsx:P&L 3 años!D12=0.18)"
+   ],
+   "demos_grupo_c": {
+    "formulas_con_marcador_sin_sustituir": [],
+    "formulas_con_marcador_sin_sustituir_total": 0,
+    "escandallo": [
+     {
+      "fichero": "escandallo-maestro-panaderia.xlsx",
+      "modelo": "E3",
+      "hoja": "Escandallos",
+      "coste_1_pvp_4_food_cost_esperado_0_25": 0.25,
+      "margen_esperado_3": 3,
+      "pvp_sugerido_al_25_esperado_4": 4.0,
+      "pvp_con_iva_esperado_4_40": 4.4,
+      "food_cost_sin_pvp_esperado_vacio": "",
+      "ok": true
+     }
+    ],
+    "fermentacion": [
+     {
+      "fichero": "plan-fermentacion-y-produccion.xlsx",
+      "fila": 4,
+      "tiempo_total_original": 2.5,
+      "tiempo_total_con_12h_mas_de_bloque_frio": 14.5,
+      "diferencia_esperada_12": 12.0,
+      "ok": true
+     }
+    ],
+    "turnos": [
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "modelo": "T3",
+      "hoja": "Turnos obrador",
+      "puestos": 8,
+      "horas_fila_4_al_abrir": 40,
+      "total_horas_al_abrir": 306.0,
+      "coste_hora_30000_bruto_1800h_ss33_esperado_22_17": 22.166666666666668,
+      "coste_semana": 886.6666666666667,
+      "coste_hora_con_ss_0_esperado_16_67": 16.666666666666668,
+      "semaforo_smi_celda_vacia": false,
+      "semaforo_smi_15000": true,
+      "semaforo_smi_22000": false,
+      "ok": true
+     }
+    ],
+    "registro_jornada": [
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "F5_libro_en_blanco": "",
+      "horas_12_a_23_esperado_11h": 0.45833333333333337,
+      "descanso_23_a_08_esperado_9h": 0.375,
+      "aviso_menos_de_12h": "Descanso inferior al mínimo legal entre jornadas (art. 34.3 ET)",
+      "cruce_medianoche_22_a_06_esperado_8h": 0.33333333333333337,
+      "ok": true
+     }
+    ]
+   },
+   "ficheros_grupo_c": {
+    "escandallo-maestro-panaderia.xlsx": {
+     "formulas_nuevas": 125,
+     "cambios": [
+      "escandallo-maestro-panaderia.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+      "escandallo-maestro-panaderia.xlsx:Escandallos!E4:J28: divisiones guardadas con IFERROR (antes «=C/D» daba #DIV/0! en cuanto se borraba un PVP), IVA en celda y columna «PVP sugerido al food cost objetivo» — la tabla decía qué food cost tienes y no a qué precio vender [DOM-03 · DOM-30 · COM-14 · §4.1]",
+      "escandallo-maestro-panaderia.xlsx:Escandallos: modelo E3 (tabla de 25 productos): NO se renombra a «Ficha (plantilla)» ni se le añade hoja «Resumen» (TEC-23) — no hay ficha que duplicar, y tampoco columna de merma donde aplicar DOM-04. Queda como hallazgo para la capa de producto."
+     ]
+    },
+    "plan-fermentacion-y-produccion.xlsx": {
+     "formulas_nuevas": 30,
+     "cambios": [
+      "plan-fermentacion-y-produccion.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+      "plan-fermentacion-y-produccion.xlsx:Plan fermentación!H4:H18: «Tiempo total h» pasa de 15 constantes tecleadas a =SUM(bulk+bloque frío+final), conservando el número (comprobado fila a fila: coincidía en las 15), y la columna «Inicio del amasado» hace el retroplanning desde la hora de salida del horno. La hoja tenía 0 fórmulas [§4.5 · §1.2 · §7-bis.12]"
+     ]
+    },
+    "plantilla-turnos-brigada.xlsx": {
+     "formulas_nuevas": 158,
+     "cambios": [
+      "plantilla-turnos-brigada.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+      "plantilla-turnos-brigada.xlsx:Turnos obrador!J4:P11: horas por SUMPRODUCT sobre la tabla de turnos, bruto anual, nº de pagas, bruto por paga, coste/hora con la SS al 33 % EN CELDA y coste semana, con TOTAL y coste anual con SS. El libro tenía 0 fórmulas y ninguna columna de coste, y sus Instrucciones prometían que «las horas y costes se calculan automáticamente» [TEC-11 · DOM-02 · DOM-16 · COM-10 · COM-20 · §4.4]",
+      "plantilla-turnos-brigada.xlsx:Turnos obrador!L4:L11: semáforo rojo por formato condicional sobre todo bruto anual por debajo del SMI (17094.0 EUR/año, RD 126/2026), con la guarda ISNUMBER para que no se encienda con una celda vacía [DOM-13 · §1.6 · §7-bis.16]",
+      "plantilla-turnos-brigada.xlsx: hoja «Registro de jornada» CREADA — fecha, trabajador, semana, entrada, salida, horas del día con cruce de medianoche, descanso desde la jornada anterior con aviso del art. 34.3 ET, firma, y resumen de horas por trabajador y semana [DOM-16 · §4.4]"
+     ]
+    }
+   }
+  },
+  "guia-restaurante-gastronomico": {
+   "exit": 0,
+   "modo": "dry-run",
+   "idempotencia_diferencias": 0,
+   "censo_exit": 0,
+   "data_only_fallos": 0,
+   "fallos": [],
+   "demos_grupo_c": {
+    "formulas_con_marcador_sin_sustituir": [],
+    "formulas_con_marcador_sin_sustituir_total": 0,
+    "bodega": [
+     {
+      "fichero": "budget-bodega.xlsx",
+      "hoja": "Bodega",
+      "total_en_blanco": {
+       "N": "",
+       "O": "",
+       "L": "",
+       "M": ""
+      },
+      "coste_10_pvp_30": {
+       "multiplicador_esperado_3": 3.0,
+       "margen_s_pvp_esperado_0_667": 0.6666666666666666,
+       "food_cost_esperado_0_333": 0.3333333333333333
+      },
+      "rotacion_12_vendidas_24_stock_esperado_0_5": 0.5,
+      "valor_stock_coste_esperado_240": 240,
+      "TOTAL_valor_a_coste_esperado_240": 240,
+      "ok": true
+     }
+    ],
+    "escandallo": [
+     {
+      "fichero": "escandallo-maestro.xlsx",
+      "modelo": "E1",
+      "hoja": "Ficha (plantilla)",
+      "libro_en_blanco": {
+       "coste_total": "",
+       "coste_racion": "",
+       "pvp_sin_iva": "",
+       "pvp_con_iva": ""
+      },
+      "coste_sin_merma_esperado_3_96": 3.96,
+      "coste_con_merma_40_esperado_6_60": 6.6,
+      "pvp_1_racion_esperado_214_29": 214.28571428571428,
+      "pvp_10_raciones_esperado_21_43": 21.428571428571427,
+      "pvp_food_cost_32_esperado_18_75": 18.75,
+      "pvp_con_iva": 20.625,
+      "ok": true
+     }
+    ],
+    "resumen": [
+     {
+      "fichero": "escandallo-maestro.xlsx",
+      "C5_antes": "",
+      "C5_tras_tocar_la_ficha": 20,
+      "ok": true
+     }
+    ],
+    "menu": [
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "modelo": "M1",
+      "hoja": "Menu Engineering",
+      "total_uds": 930.0,
+      "mc_medio_ponderado": 18.580645161290324,
+      "umbral_70_pct_N": 0.05833333333333333,
+      "mix_primer_plato": 0.0967741935483871,
+      "clasificaciones": [
+       "Plowhorse",
+       "Plowhorse",
+       "Plowhorse",
+       "Plowhorse",
+       "Star",
+       "Star",
+       "Star",
+       "Puzzle",
+       "Star",
+       "Plowhorse",
+       "Plowhorse",
+       "Dog",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       "",
+       ""
+      ],
+      "al_triplicar_ventas_del_menos_vendido": {
+       "fila": 12,
+       "antes": "Puzzle",
+       "despues": "Star"
+      },
+      "ok": true
+     }
+    ],
+    "turnos": [
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "modelo": "T1",
+      "hoja": "Turnos Semana",
+      "puestos": 24,
+      "horas_fila_6_al_abrir": "",
+      "total_horas_al_abrir": "",
+      "siete_libres_esperado_0": 0.0,
+      "un_partido_esperado_10": 10.0,
+      "partido_mas_manana_esperado_18": 18.0,
+      "coste_hora_30000_bruto_1800h_ss33_esperado_22_17": 22.166666666666668,
+      "coste_semana": 399.0,
+      "coste_hora_con_ss_0_esperado_16_67": 16.666666666666668,
+      "semaforo_smi_celda_vacia": false,
+      "semaforo_smi_15000": true,
+      "semaforo_smi_22000": false,
+      "ok": true
+     }
+    ],
+    "registro_jornada": [
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "F5_libro_en_blanco": "",
+      "horas_12_a_23_esperado_11h": 0.45833333333333337,
+      "descanso_23_a_08_esperado_9h": 0.375,
+      "aviso_menos_de_12h": "Descanso inferior al mínimo legal entre jornadas (art. 34.3 ET)",
+      "cruce_medianoche_22_a_06_esperado_8h": 0.33333333333333337,
+      "ok": true
+     }
+    ]
+   },
+   "ficheros_grupo_c": {
+    "budget-bodega.xlsx": {
+     "formulas_nuevas": 355,
+     "cambios": [
+      "budget-bodega.xlsx:Bodega!H5:M54: «Margen (%)» era un MARKUP sobre coste — con coste 10 EUR y PVP 30 EUR imprimía «200,0 %», imposible como margen. Ahora H es «Multiplicador (x)» (=PVP/coste, el x2,5-x3,5 del cap. 12), L es el margen sobre PVP (66,7 % en ese ejemplo) y M el food cost de bebida, que es el que se contrasta con el 28-40 % del capítulo [TEC-20 · DOM-28 · COM-22 · §4.3]",
+      "budget-bodega.xlsx:Bodega!J5:J54: la rotación se CALCULA (uds vendidas/mes ÷ stock) con la columna K nueva. Instrucciones!A6 prometía que se calculaba y era una celda verde vacía [TEC-18 · DOM-28 · §4.3]",
+      "budget-bodega.xlsx:Bodega!fila 56: fila TOTAL con uds en stock, valor a coste, valor a PVP, margen medio ponderado y food cost medio. Un fichero llamado «Budget de Bodega» no sumaba nada: 100 fórmulas y ninguna cruzaba coste con stock [TEC-19 · COM-22 · §4.3]"
+     ]
+    },
+    "escandallo-maestro.xlsx": {
+     "formulas_nuevas": 52,
+     "cambios": [
+      "escandallo-maestro.xlsx: pestaña 'Escandallo' → 'Ficha (plantilla)' (§1.10/TEC-28)",
+      "escandallo-maestro.xlsx:Ficha (plantilla)!H4: food cost objetivo '28%' (CADENA de texto, que ninguna fórmula podía leer) -> número 0.28 con formato 0% [TEC-21 · DOM-30 · §4.1]",
+      "escandallo-maestro.xlsx:Ficha (plantilla)!G7:H26: la merma ENTRA en el coste — D pasa a «Cantidad NETA (ración)», G a «Cantidad BRUTA a comprar» = neta/(1-merma) y H = bruta x precio. Antes H=D*E no leía ni F ni G: con merluza a 22 EUR/kg, 0,180 kg y 40 % de merma daba 3,96 EUR en vez de 6,60 EUR [DOM-04 · TEC-06 · COM-33 · §4.1]",
+      "escandallo-maestro.xlsx:Ficha (plantilla)!$H$28..H34: el PVP divide por raciones y usa el food cost objetivo de la celda + PVP con y sin IVA. Antes H28=H27/0.28 sobre el coste del LOTE: una ficha de 10 raciones y 60 EUR de coste proponía 214,29 EUR por plato en vez de 21,43 EUR [TEC-05 · TEC-21 · DOM-05 · DOM-30 · DOM-03 · COM-14 · §4.1]",
+      "escandallo-maestro.xlsx: hoja «Resumen» CREADA — consolida coste por ración y PVP de cada ficha [TEC-23 · §4.1]"
+     ]
+    },
+    "menu-engineering-matrix.xlsx": {
+     "formulas_nuevas": 103,
+     "cambios": [
+      "menu-engineering-matrix.xlsx:Menu Engineering!B5:F16: 12 platos de EJEMPLO precargados (la hoja se entregaba con 25 filas vacías y ni una fórmula que clasificar). PVP dentro de las bandas del cap. 15 de la guía (entrantes 18-28 EUR, principales 32-48 EUR, postres 14-22 EUR, degustación 90-180 EUR). Todas las celdas son verdes: se sustituyen por la carta real [§4.2]",
+      "menu-engineering-matrix.xlsx:Menu Engineering!H5:J29 + fila 31: Kasavana & Smith COMPLETO — mix %, margen de contribución medio ponderado (SUMPRODUCT envuelto en ROUND: pycel devuelve numpy.int64 y el SUM de arriba daría 0), umbral 70 %/N con el factor en celda, clasificación por fórmula y acción recomendada por cuadrante. Antes las 25 fórmulas del libro eran restas «=PVP-coste» y la columna Clasificación estaba vacía [TEC-04 · DOM-10 · COM-08 · §4.2]"
+     ]
+    },
+    "plantilla-turnos-brigada.xlsx": {
+     "formulas_nuevas": 230,
+     "cambios": [
+      "plantilla-turnos-brigada.xlsx:Turnos Semana!A6:A30: columna # numerada 1-24 (estaba vacía mientras el resto de plantillas del producto sí numera) [TEC-13]",
+      "plantilla-turnos-brigada.xlsx:Turnos Semana!K6:P30: horas por SUMPRODUCT sobre la tabla de turnos, bruto anual, nº de pagas, bruto por paga, coste/hora con la SS al 33 % EN CELDA y coste semana, con TOTAL y coste anual con SS. El libro tenía 0 fórmulas y ninguna columna de coste, y sus Instrucciones prometían que «las horas y costes se calculan automáticamente» [TEC-11 · DOM-02 · DOM-16 · COM-10 · COM-20 · §4.4]",
+      "plantilla-turnos-brigada.xlsx:Turnos Semana!L6:L30: semáforo rojo por formato condicional sobre todo bruto anual por debajo del SMI (17094.0 EUR/año, RD 126/2026), con la guarda ISNUMBER para que no se encienda con una celda vacía [DOM-13 · §1.6 · §7-bis.16]",
+      "plantilla-turnos-brigada.xlsx: hoja «Registro de jornada» CREADA — fecha, trabajador, semana, entrada, salida, horas del día con cruce de medianoche, descanso desde la jornada anterior con aviso del art. 34.3 ET, firma, y resumen de horas por trabajador y semana [DOM-16 · §4.4]",
+      "plantilla-turnos-brigada.xlsx: headcount UNIFICADO a 24 puestos, que es lo que hay en el cuadrante (Instrucciones!A1, propiedades.title). El texto del cap. 14 («22-30»), la suma de las tablas del docx (21-29) y la tarjeta del dashboard («25 personas») siguen diciendo otra cosa: son de T7/T8 [TEC-13 · COM-21 · §7-bis.7]"
+     ]
+    }
+   }
+  },
+  "guia-restaurante-japones": {
+   "exit": 0,
+   "modo": "dry-run",
+   "idempotencia_diferencias": 0,
+   "censo_exit": 0,
+   "data_only_fallos": 0,
+   "fallos": [],
+   "demos_grupo_c": {
+    "formulas_con_marcador_sin_sustituir": [],
+    "formulas_con_marcador_sin_sustituir_total": 0,
+    "escandallo": [
+     {
+      "fichero": "escandallo-maestro-japones.xlsx",
+      "modelo": "E2",
+      "hoja": "Ficha (plantilla)",
+      "coste_total_original": 13.9429090840444,
+      "coste_merma_0": 13.632320848750282,
+      "coste_merma_20": 14.072320848750282,
+      "pvp_sin_iva": 42.643396511364486,
+      "pvp_con_iva": 46.90773616250094,
+      "ok": true
+     }
+    ],
+    "resumen": [
+     {
+      "fichero": "escandallo-maestro-japones.xlsx",
+      "C5_antes": 13.9429090840444,
+      "C5_tras_tocar_la_ficha": 11.895850260514989,
+      "ok": true
+     }
+    ],
+    "menu": [
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "modelo": "M2",
+      "hoja": "Matrix",
+      "total_uds": 1890.0,
+      "mc_medio_ponderado": 9.973544973544973,
+      "umbral_70_pct_N": 0.04666666666666666,
+      "mix_primer_plato": 0.07407407407407407,
+      "clasificaciones": [
+       "Star",
+       "Plowhorse",
+       "Puzzle",
+       "Plowhorse",
+       "Star",
+       "Plowhorse",
+       "Plowhorse",
+       "Plowhorse",
+       "Star",
+       "Plowhorse",
+       "Puzzle",
+       "Puzzle",
+       "Puzzle",
+       "Plowhorse",
+       "Star"
+      ],
+      "al_triplicar_ventas_del_menos_vendido": {
+       "fila": 15,
+       "antes": "Puzzle",
+       "despues": "Star"
+      },
+      "ok": true
+     }
+    ],
+    "turnos": [
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "modelo": "T2",
+      "hoja": "Turnos Semana",
+      "puestos": 14,
+      "horas_fila_5_al_abrir": 70.0,
+      "total_horas_al_abrir": 938.0,
+      "siete_libres_esperado_0": 0.0,
+      "un_partido_esperado_10": 10.0,
+      "partido_mas_manana_esperado_18": 18.0,
+      "coste_hora_30000_bruto_1800h_ss33_esperado_22_17": 22.166666666666668,
+      "coste_semana": 399.0,
+      "coste_hora_con_ss_0_esperado_16_67": 16.666666666666668,
+      "semaforo_smi_celda_vacia": false,
+      "semaforo_smi_15000": true,
+      "semaforo_smi_22000": false,
+      "ok": true
+     }
+    ],
+    "registro_jornada": [
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "F5_libro_en_blanco": "",
+      "horas_12_a_23_esperado_11h": 0.45833333333333337,
+      "descanso_23_a_08_esperado_9h": 0.375,
+      "aviso_menos_de_12h": "Descanso inferior al mínimo legal entre jornadas (art. 34.3 ET)",
+      "cruce_medianoche_22_a_06_esperado_8h": 0.33333333333333337,
+      "ok": true
+     }
+    ]
+   },
+   "ficheros_grupo_c": {
+    "escandallo-maestro-japones.xlsx": {
+     "formulas_nuevas": 34,
+     "cambios": [
+      "escandallo-maestro-japones.xlsx: pestaña 'Escandallo' → 'Ficha (plantilla)' (§1.10/TEC-28)",
+      "escandallo-maestro-japones.xlsx:Ficha (plantilla)!G6:G16: la merma pasa de RECARGO a rendimiento — antes G=E*(1+F) daba x1,20 para una merma del 20 % cuando lo correcto es /(1-0,20) = x1,25 (-4 % de coste por línea, -20 % con las mermas del 40 % del pescado); ahora G=E/(1-F) [DOM-04 · §4.1]",
+      "escandallo-maestro-japones.xlsx:Ficha (plantilla)!$G$18..G24: food cost e IVA salen de la fórmula a celda verde (antes «=G/0.33» y «=G*1.10» incrustados) + coste por ración + food cost real [TEC-21 · DOM-03 · DOM-30 · COM-14 · §4.1]",
+      "escandallo-maestro-japones.xlsx: hoja «Resumen» CREADA — consolida coste por ración y PVP de cada ficha [TEC-23 · §4.1]"
+     ]
+    },
+    "menu-engineering-matrix.xlsx": {
+     "formulas_nuevas": 93,
+     "cambios": [
+      "menu-engineering-matrix.xlsx:Matrix!I5:K19 + fila 21: Kasavana & Smith COMPLETO — mix %, margen de contribución medio ponderado (SUMPRODUCT envuelto en ROUND: pycel devuelve numpy.int64 y el SUM de arriba daría 0), umbral 70 %/N con el factor en celda, clasificación por fórmula y acción recomendada por cuadrante. Antes las 15 fórmulas del libro eran restas «=PVP-coste» y la columna Clasificación estaba vacía [TEC-04 · DOM-10 · COM-08 · §4.2]"
+     ]
+    },
+    "plantilla-turnos-brigada.xlsx": {
+     "formulas_nuevas": 190,
+     "cambios": [
+      "plantilla-turnos-brigada.xlsx:Turnos Semana!K5:P18: horas por SUMPRODUCT sobre la tabla de turnos, bruto anual, nº de pagas, bruto por paga, coste/hora con la SS al 33 % EN CELDA y coste semana, con TOTAL y coste anual con SS. El libro tenía 0 fórmulas y ninguna columna de coste, y sus Instrucciones prometían que «las horas y costes se calculan automáticamente» [TEC-11 · DOM-02 · DOM-16 · COM-10 · COM-20 · §4.4]",
+      "plantilla-turnos-brigada.xlsx:Turnos Semana!L5:L18: semáforo rojo por formato condicional sobre todo bruto anual por debajo del SMI (17094.0 EUR/año, RD 126/2026), con la guarda ISNUMBER para que no se encienda con una celda vacía [DOM-13 · §1.6 · §7-bis.16]",
+      "plantilla-turnos-brigada.xlsx: hoja «Registro de jornada» CREADA — fecha, trabajador, semana, entrada, salida, horas del día con cruce de medianoche, descanso desde la jornada anterior con aviso del art. 34.3 ET, firma, y resumen de horas por trabajador y semana [DOM-16 · §4.4]"
+     ]
+    }
+   }
+  }
+ },
+ "hallazgos": [
+  {
+   "id": "C-01",
+   "sev": "media",
+   "tipo": "alcance de la SPEC",
+   "donde": "guias-v2-SPEC.md §4 cabecera vs astro-site/public/dl/guia-dark-kitchen/",
+   "hallazgo": "La SPEC dice «escandallo-maestro[-<concepto>].xlsx (8 guías, dos modelos)». Son SIETE: guia-dark-kitchen no lo lleva — sus 5 entregables son calculadora-viabilidad-dark-kitchen.xlsx, 2 checklists, el docx y el PDF. Igual con plantilla-turnos-brigada (7, no 8).",
+   "accion": "`ficheros(ctx)` resuelve por GLOB sobre la carpeta del producto, así que el módulo no se rompe; se corrige la cifra en el informe para que la capa de producto no prometa un escandallo que dark-kitchen no tiene."
+  },
+  {
+   "id": "C-02",
+   "sev": "alta",
+   "tipo": "molde no descrito",
+   "donde": "astro-site/public/dl/guia-panaderia-obrador/escandallo-maestro-panaderia.xlsx:Escandallos!A3:H28",
+   "hallazgo": "TERCER modelo de escandallo que la SPEC §4.1 no contempla: no es una ficha, es una tabla de 25 PRODUCTOS con cabecera en la fila 3 (Producto · Peso final g · Coste materia € · PVP € · Food cost % · Margen bruto % · Margen € unidad · Notas técnicas). No tiene columna de merma, ni raciones, ni PVP sugerido, ni IVA, y su hoja se llama «Escandallos», no «Escandallo». Aplicarle la rejilla del representante (D=Cantidad NETA, G=Cantidad BRUTA) habría escrito fórmulas encima de «PVP €» y «Food cost %».",
+   "accion": "Modelo E3 con firma propia. Recibe IFERROR, IVA en celda y «PVP sugerido al food cost objetivo». NO se renombra a «Ficha (plantilla)» ni recibe hoja «Resumen» (TEC-23): no hay ficha que duplicar, y decirlo sería mentir en la landing."
+  },
+  {
+   "id": "C-03",
+   "sev": "alta",
+   "tipo": "molde no descrito",
+   "donde": "astro-site/public/dl/guia-panaderia-obrador/plantilla-turnos-brigada.xlsx:Turnos obrador!A3:K11",
+   "hallazgo": "TERCER modelo de cuadrante. Los días NO llevan la letra del turno: llevan el RANGO HORARIO como texto («03-11», «12:30-14», «libre»), la cabecera está en la fila 3, «Total h» son constantes tecleadas (40/40/40/40/48/48/41/9), no hay validación de datos y no hay hoja «Instrucciones». La tabla de equivalencia turno→horas del §4.4 no tiene dónde aplicarse.",
+   "accion": "En T3 «Total h» queda como entrada verde documentada (no se inventa un parser de «12:30-14»); las horas calculadas viven en la hoja nueva «Registro de jornada», que es la que cumple el art. 34.9 ET. Las columnas de coste, la SS, el SMI y los semáforos sí se aplican."
+  },
+  {
+   "id": "C-04",
+   "sev": "media",
+   "tipo": "molde no descrito",
+   "donde": "astro-site/public/dl/guia-restaurante-{casual,mexicano,peruano,japones,nikkei}/plantilla-turnos-brigada.xlsx",
+   "hallazgo": "El cuadrante de los 5 hermanos NO tiene columna «Horas/Semana» (llega hasta J=Dom), numera la columna A desde la primera fila de datos y trae la rejilla YA rellena de P/T/M. T1 y T2 comparten cabecera, así que después de la 1.ª pasada —que añade la K a T2— serían indistinguibles por cabecera.",
+   "accion": "La firma que los separa es la primera fila de datos: en T1 es una BANDA de sección (A vacía, B=«COCINA») y en T2 es el puesto nº 1 (A=1). Sobrevive a la propia pasada del módulo, que es el requisito."
+  },
+  {
+   "id": "C-05",
+   "sev": "media",
+   "tipo": "dato del fichero",
+   "donde": "escandallo-maestro.xlsx (casual) G16 = «=G15/0.30» vs (japonés) G19 = «=G18/0.33»",
+   "hallazgo": "El food cost incrustado en la fórmula del PVP NO es 0,33 en los cinco hermanos: casual trabaja al 30 %. Teclear 0,33 para toda la familia habría subido el PVP de casual un 10 %.",
+   "accion": "`_literal_de()` lo LEE de la fórmula original y lo deposita en la celda verde. Lo mismo con el 1,10 del IVA."
+  },
+  {
+   "id": "C-06",
+   "sev": "alta",
+   "tipo": "bug propio, cazado por la demo",
+   "donde": "grupo_c.py (E3, columna «PVP con IVA»; §4.5, columna «Inicio del amasado»)",
+   "hallazgo": "Precedencia de Python: `motor.iferror('IF($D{r}=…' + ref + '))'.format(r=f_))` aplica el `.format` al ÚLTIMO literal (`'))'`), no a la concatenación, y deja `{r}` DENTRO de la fórmula guardada. 25 celdas de panadería quedaron con `=IFERROR(IF($D{r}=\"\",\"\",$D{r}*(1+$B$32)),\"\")`. El fichero se guarda sin error, `censo-entregables --fail` lo da por bueno y `verificar_cache` lo manda a «vacías no verificadas» —que NO es fallo— porque la fórmula contiene `\"\"`. En Excel el cliente vería #¿NOMBRE?.",
+   "accion": "Corregido en los dos sitios y añadido un GATE propio bloqueante en `demos()`: barrido de todas las fórmulas de los ficheros del grupo buscando `{` o `}`. Hoy da 0 en los tres productos probados."
+  },
+  {
+   "id": "C-07",
+   "sev": "alta",
+   "tipo": "trampa de pycel, medida",
+   "donde": "pycel 1.0b30 en este Mac, 2026-08-29",
+   "hallazgo": "`SUMPRODUCT` con multiplicación de booleanos —la forma canónica de contar horas por turno— devuelve un `numpy.int64` que el propio pycel no reconoce después: con K10 = 44, `SUM(K10:K12)` da 0 y `AND(ISNUMBER(K10),K10<100)` da False. Excel calcula bien las dos formas; lo que se rompe en silencio es la VERIFICACIÓN, devolviendo un cero plausible en una fila de coste de personal.",
+   "accion": "Todo SUMPRODUCT de este módulo va envuelto en `ROUND(...,2)`, que devuelve float. Verificado: SUM=44,0 y el semáforo enciende."
+  },
+  {
+   "id": "C-08",
+   "sev": "alta",
+   "tipo": "falso verde en las demos, medido",
+   "donde": "escandallo-maestro-panaderia.xlsx:Escandallos!G4",
+   "hallazgo": "pycel devuelve el valor CACHEADO de una celda que todavía no está en su mapa, así que un `set_value` sobre una entrada NO mueve una salida que nunca se evaluó: tras poner C4=1 y D4=4, G4 seguía dando 1,82 (el valor del fichero, 2,20-0,38). Una demo escrita así da «ok» leyendo el número viejo.",
+   "accion": "`_precalentar()` evalúa todas las salidas ANTES de tocar ningún input, en las cinco demos. Además, `set_value(..., None)` NO vacía la celda: el caso «libro en blanco» se prueba vaciándola con openpyxl y recompilando."
+  },
+  {
+   "id": "C-09",
+   "sev": "media",
+   "tipo": "hueco del gate del motor",
+   "donde": "main.py:876-930 (veredicto) y motor.py:1606-1636 (`literales_sospechosos`)",
+   "hallazgo": "`main.py` convierte los literales en FALLO en cuanto se carga cualquier grupo (con `--solo motor` es sólo aviso). El heurístico marca como «parámetro que debería ir en celda» cosas que no lo son: el 6 de `ROUND(...,6)` y el 24 de `MOD(...)*24`. Al mismo tiempo, `LITERALES_TOLERADOS` incluye 0-5, 12, 30 y 100, así que la misma expresión pasa o no según la precisión que se elija — un umbral que no distingue un tipo impositivo de una constante física.",
+   "accion": "Este módulo evita el problema sin gamear el gate: las horas van como DURACIÓN (`MOD(salida-entrada,1)` con formato [h]:mm, sin el 24), el redondeo del resumen del registro va a 5 decimales (0,9 s sobre un día), y las dos constantes de unidades que sí hacían falta —1.000 g/kg del modelo E2 y 24 h/día del retroplanning de panadería— van en CELDA etiquetada y bloqueada. Queda como aviso para el orquestador: el heurístico necesitaría distinguir «argumento de función» de «operando»."
+  },
+  {
+   "id": "C-10",
+   "sev": "media",
+   "tipo": "interacción motor/grupo",
+   "donde": "motor.py:639-684 (`validaciones`)",
+   "hallazgo": "`motor.validaciones()` reclasifica TODA celda verde por su formato de número y purga la DV `decimal` que hubiera, así que las validaciones específicas que pone un grupo se pierden: «Raciones ≥ 1» del escandallo y «Jornada anual ≤ 2.500 h» quedan como el genérico «≥ 0». Sólo respeta las de tipo `list` y `date`.",
+   "accion": "Sin impacto funcional aquí (las fórmulas guardan el caso 0 y devuelven \"\"), pero el orquestador debería saberlo antes de que un grupo confíe en una DV suya."
+  },
+  {
+   "id": "C-11",
+   "sev": "baja",
+   "tipo": "bug propio corregido",
+   "donde": "grupo_c.py `_pie_existente`",
+   "hallazgo": "La cadena del pie («AI Chef Pro · aichef.pro — Restaurante Gastronómico») está TAMBIÉN en A2 como subtítulo de la cabecera en las tres familias. Buscándola desde el final sin cortar por debajo de la cabecera, el cuadrante del representante —que no tiene pie— capturaba su propio subtítulo y lo reescribía al final de la hoja: una línea duplicada que no estaba antes.",
+   "accion": "`_pie_existente(ws, desde=fila_cab+1)`."
+  },
+  {
+   "id": "C-12",
+   "sev": "alta",
+   "tipo": "bug propio corregido (idempotencia)",
+   "donde": "grupo_c.py `_param` / `_snapshot_parametros`",
+   "hallazgo": "El bloque de parámetros se borra y se reescribe entero en cada pasada, y algunos valores NO se pueden recalcular: el food cost de los hermanos se lee del literal de la fórmula original («=G18/0.33»), que en la 2.ª pasada ya no existe. La 2.ª pasada dejaba `escandallo-maestro-japones!E20` vacío (idempotencia = 1 diferencia) y, en producción, se habría llevado por delante el valor que el cliente hubiera escrito ahí.",
+   "accion": "`_snapshot_parametros()` fotografía etiqueta→valor antes de borrar, y `_param` nunca pisa un valor existente con `None`."
+  },
+  {
+   "id": "C-13",
+   "sev": "alta",
+   "tipo": "bug propio corregido",
+   "donde": "grupo_c.py `_escandallo_e2` / `_primera_por_columna`",
+   "hallazgo": "La primera fila de datos NO es «cabecera + 1»: en el modelo E2 la fila 5 es `B5=NOMBRE DEL PLATO:` con el nombre en C5. Dando por hecho cabecera+1 se escribían las fórmulas de coste EN la fila del título del plato y se incluían en el SUM del coste total. Sólo se ve corriendo el módulo contra un HERMANO; contra el representante la primera fila sí es la 7.",
+   "accion": "`_primera_por_columna()` mide también el principio de la tabla, igual que `_fin_por_columna()` mide el final."
+  },
+  {
+   "id": "C-14",
+   "sev": "media",
+   "tipo": "bug propio corregido (idempotencia de la medición)",
+   "donde": "grupo_c.py `_fin_por_columna(..., tope)`",
+   "hallazgo": "El bloque de parámetros deja NÚMEROS en las mismas columnas por las que se mide el final de los datos (el valor de «Horas del turno M» vive en la columna C, la misma que los puestos del cuadrante). Sin cortar en el marcador, la 2.ª pasada medía `fin` diez filas más abajo, trataba los parámetros como puestos y el bloque bajaba en cada ejecución.",
+   "accion": "`tope = fila_del_marcador - 1` en las cinco familias de fichero."
+  },
+  {
+   "id": "C-15",
+   "sev": "media",
+   "tipo": "gate propio que fallaba en silencio",
+   "donde": "grupo_c.py `demos()` (demo del «Resumen» en japonés)",
+   "hallazgo": "Una demo marcada `ok: False` no producía ningún fallo y el veredicto salía TODO VERDE. El criterio del `Resumen` asumía «antes estaba vacío», que sólo vale para el representante: el escandallo de los hermanos viene con 11 ingredientes precargados.",
+   "accion": "Criterio corregido (lo que demuestra la referencia entre hojas es que el número CAMBIE al tocar la ficha) y red de seguridad: cualquier `ok: False` que no tenga fallo propio se convierte en fallo."
+  },
+  {
+   "id": "C-16",
+   "sev": "media",
+   "tipo": "defecto de método de dominio",
+   "donde": "menu-engineering-matrix.xlsx (representante) + contenido_.../c.py",
+   "hallazgo": "Kasavana & Smith se aplica DENTRO de una familia de carta. Mezclando los dos menús degustación (145 y 78 EUR) con los platos, el margen de contribución medio ponderado se dispara a 34,63 EUR y la matriz devuelve 2 Stars, 9 Plowhorses, 3 Dogs y NINGÚN Puzzle: casi toda la carta suspende por comparar un postre de 15 EUR con un menú de 145. Con las 12 filas de carta solas: MC medio 18,58 EUR y 4 Stars, 6 Plowhorses, 1 Puzzle y 1 Dog.",
+   "accion": "El ejemplo precarga sólo la carta; la categoría «Menú degustación» sigue en el desplegable y las Instrucciones advierten de que los menús se analizan aparte."
+  },
+  {
+   "id": "C-17",
+   "sev": "alta",
+   "tipo": "contenido de un hermano (no se toca aquí)",
+   "donde": "guia-panaderia-obrador/plantilla-turnos-brigada.xlsx:Turnos obrador!J8=48, J9=48",
+   "hallazgo": "El cuadrante de panadería programa 48 h semanales a las dos dependientas de mañana (07-15 de lunes a sábado) y 41 a la de tarde, por encima de las 40 h de promedio del art. 34.1 ET. Con el semáforo ámbar nuevo se enciende solo al abrir el fichero.",
+   "accion": "No se toca el dato (es contenido del hermano, T6): se deja el semáforo encendido y el hallazgo anotado. Ojo: el fichero se publica hoy como plantilla de referencia."
+  },
+  {
+   "id": "C-18",
+   "sev": "media",
+   "tipo": "coherencia de cifras",
+   "donde": "plantilla-turnos-brigada.xlsx (representante) · docx cap. 13/14 · GuiaRestauranteGastronomicoDashboard.tsx:36",
+   "hallazgo": "Cuatro cifras de plantilla en el mismo producto: el cuadrante tiene 24 puestos MEDIDOS (15 de cocina C6:C20 + 9 de sala C22:C30), el título del xlsx decía «(25 personas)», el cap. 14 dice «22-30» y las tablas 2 y 3 del docx suman 21-29.",
+   "accion": "El xlsx (título de la hoja Instrucciones y metadata) pasa a la cifra MEDIDA, 24. El texto del capítulo y la tarjeta del dashboard NO son de este grupo: quedan para T7 y T8 [TEC-13 · COM-21 · §7-bis.7]."
+  },
+  {
+   "id": "C-19",
+   "sev": "media",
+   "tipo": "decisión de contenido",
+   "donde": "contenido_guia_restaurante_gastronomico/c.py · docx cap. 13 tabla 2",
+   "hallazgo": "La columna «Bruto anual» del cuadrante se entrega VACÍA a propósito. Los rangos del cap. 13 incluyen dos puestos por debajo del SMI vigente («Ayudante de cocina 16.000-19.000 EUR», «Plonge 15.000-17.000 EUR» frente a 17.094 EUR/año), y §7-bis.5/§7-bis.16 prohíben publicarlos; subirlos «a ojo» sería inventar la tabla del convenio provincial, que es quien manda.",
+   "accion": "Celda verde vacía + SMI en celda + semáforo rojo automático + nota. La corrección del texto del cap. 13 es de T7."
+  },
+  {
+   "id": "C-20",
+   "sev": "baja",
+   "tipo": "contenido que se conserva",
+   "donde": "guia-panaderia-obrador/plantilla-turnos-brigada.xlsx:Turnos obrador!A13:A17",
+   "hallazgo": "Debajo de la tabla, T3 lleva cinco «Recordatorios legales» (descanso de 12 h, descanso semanal de 1,5 días, plus de nocturnidad del 25 % del convenio de panadería, control horario digital obligatorio). Un bloque de totales escrito «a partir de la última fila de datos» se los llevaba por delante.",
+   "accion": "En T3 el bloque se escribe por DEBAJO de todo el contenido vivo (`ws.max_row + 2`), no por debajo de la tabla."
+  },
+  {
+   "id": "C-21",
+   "sev": "baja",
+   "tipo": "observación de gate",
+   "donde": "main.py:348-401 (`verificar_cache`)",
+   "hallazgo": "Una fórmula que pycel no puede compilar (por ejemplo la de C-06, con `{r}` dentro) acaba en `vacias_no_verificadas`, que NO entra en el veredicto. Es la vía por la que 25 celdas rotas pasaron los gates del motor.",
+   "accion": "Se compensa con el gate propio de marcadores; el orquestador debería valorar subir `vacias_no_verificadas` a fallo cuando el motivo sea un error de tokenización (distinto de una función no implementada)."
+  }
+ ],
+ "dudas": [
+  "Panadería (E3) no recibe «Ficha (plantilla)» ni hoja «Resumen» (TEC-23) porque su escandallo no es una ficha. ¿Confirma el orquestador que la landing/dashboard de panadería NO promete fichas duplicables? Si lo promete, hay que decidir entre cambiar el texto o crear una hoja de ficha nueva (crear ficheros está descartado, pero una HOJA sí se puede añadir).",
+  "Food cost objetivo de panadería: no hay fuente ni en la SPEC ni en el fichero (su tabla calcula el food cost REAL, no un objetivo). La celda queda verde y vacía y la columna «PVP sugerido» devuelve \"\". ¿Se pide research para un objetivo por familia de producto (pan / bollería / pastelería) o se queda vacía?",
+  "«Jornada anual de convenio (h/año)» queda vacía por la misma razón (la fija el convenio provincial). Todas las columnas de coste/hora dependen de ella, así que el cuadrante llega al cliente sin coste hasta que la rellena. ¿Se acepta, o el orquestador aporta un valor con fuente como hizo con el SMI (§7-bis.16)?",
+  "Los 12 platos precargados en el menu engineering del representante son EJEMPLO: nombre y categoría son texto descriptivo, el PVP sale de las bandas del cap. 15 y el coste de aplicarle el food cost objetivo del cap. 3/15, pero las «Uds vendidas/mes» no tienen fuente posible (el restaurante no ha abierto). Van en verde y la hoja lo dice. ¿Se firma este criterio para los hermanos, que ya traen 15 platos reales y no necesitan precarga?",
+  "El «Nº de pagas» se precarga a 14 sólo donde la celda está vacía. En los hermanos con cuadrante precargado eso son las 14 filas. ¿Se quiere 14 en toda la familia o depende del convenio de cada concepto?"
+ ],
+ "pendiente": [
+  "T6 (hermanos): escribir `contenido_<pid>/c.py` para los 6 hermanos. Lo mínimo es el desplegable de categorías del menú (M2 ya trae 15 platos reales) y el food cost objetivo de panadería si John lo aporta. Los tres modelos ya están cubiertos por `grupo_c.py`: casual/mexicano/peruano/nikkei sólo necesitan la verificación id a id.",
+  "T8 (capa de producto): la tarjeta del dashboard dice «Cuadrante semanal para 25 personas con coste» y el cuadrante tiene 24. Con la v2.0 el «con coste» pasa a ser cierto; la cifra no.",
+  "T8: la landing del representante puede afirmar ya, sin mentir, que el escandallo aplica merma y raciones, que el PVP se da con y sin IVA, que la matriz clasifica Stars/Plowhorses/Puzzles/Dogs y que el cuadrante calcula horas y coste. Antes ninguna de las cuatro era cierta.",
+  "Grupo A: `guia-panaderia-obrador/plan-financiero-3-anos.xlsx` tiene 9 literales vivos dentro de fórmulas (P&L 3 años!B12=0.20, C12=0.19, D12=0.18, y otros con 0.025 y 0.015). Es el único fallo que impide que panadería salga verde con `--solo motor,c`.",
+  "T7 (documentos): el cap. 13 publica dos puestos por debajo del SMI y el cap. 14 dice «22-30 personas»; el capítulo de bodega enseña el multiplicador x2,5-x3,5 que ahora el xlsx llama por su nombre.",
+  "Orquestador: valorar si `vacias_no_verificadas` de `main.verificar_cache` debe ser fallo cuando el motivo es un TokenizerError (ver C-06/C-21), y si `motor.LITERALES_TOLERADOS` debe distinguir argumento de función de operando (C-09)."
+ ]
+}
