@@ -192,7 +192,7 @@ CASH = {
     # Repetidas con nota, no enlazadas (§1.13): son las cuotas del préstamo
     # de ejemplo de PLAN.financiacion (380.000 EUR, 8 años, 6,0 %, 6 meses de
     # carencia). Verificado tras ejecutar `hoja_financiacion` (§ informe).
-    'cuota_mensual': 5317.03,  # verificado: Financiación!B12 (post-carencia)
+    'cuota_mensual': 5551.25,  # verificado: Financiación!B12 (post-carencia)
     'cuota_carencia': 1900.0,  # verificado: Financiación!B13 (solo intereses)
     'anio': 1,
     'necesidad_total': 568600.0,   # verificado: Inversión!C40
