@@ -161,6 +161,13 @@ RX_AUTORIA = re.compile(r'John\s+Guerrero', re.I)
 #: y el post-proceso dejarán de coincidir y el saneamiento nunca dará verde.
 FALSOS_POSITIVOS_BIO = frozenset({
     '▸ El mantenimiento del Josper es clave: un horno bien cuidado dura 15+ anos',
+    # CB-E1 (2026-08-29) — la MISMA frase con la ñ puesta. `motor.ortografia`
+    # corrige «anos» → «años» en los siete kits de ChefBusiness, así que la
+    # entrada de arriba deja de casar y el gate marcaba `bio_vieja` en
+    # `kit-tareas-asador/07-semanales-mensuales.xlsx` — una lista blanca por
+    # LITERAL EXACTO invalidada por una normalización posterior. Se conservan
+    # las dos formas: la vieja mientras el fichero publicado siga sin la ñ.
+    '▸ El mantenimiento del Josper es clave: un horno bien cuidado dura 15+ años',
 })
 
 #: Funciones de Excel que pycel NO implementa: la celda se queda sin cache por

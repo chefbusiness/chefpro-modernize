@@ -375,17 +375,24 @@ SYSTEM = (
     'haya dado yo con su fuente.')
 
 
-def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=3,
+def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
            temperatura=0.45, verbose=True):
     """Llama a bridge.py. Medido el 2026-08-29: con --max-tokens 8192 el modelo
-    puede agotar el presupuesto razonando y devolver un fichero VACÍO; por eso
-    se reintenta con presupuestos menores antes de rendirse."""
-    presupuestos = [max_tokens, 6000, 4500][:intentos]
+    puede agotar el presupuesto razonando y devolver un fichero VACÍO, y la API
+    devuelve contenido vacío con rc=0 de forma intermitente (tres veces
+    seguidas en el capítulo 1, y el MISMO prompt funcionó a la cuarta). Por eso
+    se reintenta con presupuestos distintos, con espera entre intentos y
+    variando la temperatura: un vacío no es un fallo del prompt."""
+    presupuestos = [max_tokens, 6000, 8192, 5000, 7000, 4500][:intentos]
+    texto = ''
     for k, mt in enumerate(presupuestos):
+        if k:
+            time.sleep(15)
         respirar()
         cmd = [sys.executable, BRIDGE, '--task', 'content', '--domain', 'aichef',
                '--lang', 'es', '--model', MODELO, '--max-tokens', str(mt),
-               '--temperature', str(temperatura), '--system', SYSTEM,
+               '--temperature', str(round(temperatura + 0.05 * (k % 3), 2)),
+               '--system', SYSTEM,
                '--prompt', prompt, '--output', salida_txt]
         r = subprocess.run(cmd, capture_output=True, text=True)
         texto = ''

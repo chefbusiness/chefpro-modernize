@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Fish,
     title: 'Anisakis APPCC Cumplido',
-    desc: 'Registro de congelación a -20 ºC durante 7 días por lote, conforme al RD 1420/2006. Si Sanidad pide auditoría, tienes todo documentado por proveedor y partida.',
+    desc: 'Registro de congelación por lote y proveedor, conforme al RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006). Si Sanidad pide auditoría, tienes todo documentado por proveedor y partida.',
   },
   {
     icon: Thermometer,

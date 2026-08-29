@@ -15,9 +15,9 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes: Sushi Bar — Checklists Operativos con Protocolo Anisakis | AI Chef Pro',
     description:
-      '11 checklists operativos para sushi bar: barra sushi, arroz con control pH, protocolo anisakis APPCC obligatorio (RD 1420/2006), vitrina neta case, perfiles itamae, temporadas pescado y omakase. Solo €14.',
+      '11 checklists operativos para sushi bar: barra sushi, arroz con control pH, protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1), vitrina neta case, perfiles itamae, temporadas pescado y omakase. Solo €14.',
     keywords:
-      'checklist sushi bar, tareas sushi bar, protocolo anisakis APPCC, control pH arroz sushi, vitrina neta case, itamae checklist, restaurante japonés operativa, RD 1420/2006, AI Chef Pro',
+      'checklist sushi bar, tareas sushi bar, protocolo anisakis APPCC, control pH arroz sushi, vitrina neta case, itamae checklist, restaurante japonés operativa, RD 1021/2022 anisakis, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-sushi-bar.jpg',
   },
 
@@ -49,7 +49,7 @@ const data: KitTareasData = {
     faqs: [
       {
         q: '¿Incluye el protocolo de anisakis obligatorio por ley?',
-        a: 'Sí. Registro de congelación a -20 ºC durante 7 días por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1420/2006.',
+        a: 'Sí. Registro de congelación por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006): -20 ºC durante al menos 24 h en todo el producto, o -35 ºC durante al menos 15 h.',
       },
       {
         q: '¿Sirve para mi tipo de restaurante japonés?',
@@ -94,7 +94,7 @@ const data: KitTareasData = {
       '11 checklists Excel pre-rellenados para sushi bar y restaurante japonés: barra sushi, preparación de arroz con control de pH, protocolo anisakis APPCC obligatorio por ley, vitrina neta case, perfiles itamae, temporadas de pescado y omakase. Imprime, organiza y cumple Sanidad.',
     checkItems: [
       '11 checklists pre-rellenados listos para imprimir',
-      'Protocolo anisakis APPCC obligatorio (RD 1420/2006) con registro -20 ºC / 7 días',
+      'Protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1) con registro de congelación por lote',
       'Preparación de arroz sushi con control de pH (≤4.6) y tiempos de descarte',
       'Barra sushi y vitrina neta case (2-4 ºC) con rotación FIFO',
       'Tareas por perfil: itamae, ayudante, cocina caliente, sala',
@@ -123,7 +123,7 @@ const data: KitTareasData = {
       {
         icon: 'ShieldCheck',
         title: 'Seguridad Anisakis y APPCC',
-        desc: 'Registro de congelación a -20 ºC durante 7 días por lote (RD 1420/2006), control de temperaturas, alérgenos y trazabilidad completa de pescado y proveedores.',
+        desc: 'Registro de congelación por lote y proveedor (RD 1021/2022, art. 8.1: -20 ºC durante al menos 24 h en todo el producto, o -35 ºC durante 15 h), control de temperaturas, alérgenos y trazabilidad completa de pescado y proveedores.',
       },
       {
         icon: 'Refrigerator',
@@ -183,7 +183,7 @@ const data: KitTareasData = {
       {
         icon: 'Fish',
         title: 'Anisakis APPCC Cumplido',
-        desc: 'Registro de congelación a -20 ºC durante 7 días por lote, conforme al RD 1420/2006. Si Sanidad pide auditoría, tienes todo documentado por proveedor y partida.',
+        desc: 'Registro de congelación por lote y proveedor, conforme al RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006). Si Sanidad pide auditoría, tienes todo documentado por proveedor y partida.',
       },
       {
         icon: 'Thermometer',
@@ -250,7 +250,7 @@ const data: KitTareasData = {
   faqs: [
     {
       q: '¿Incluye el protocolo de anisakis obligatorio por ley?',
-      a: 'Sí. El kit incluye un checklist específico con registro de congelación a -20 ºC durante 7 días por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1420/2006 vigente y te deja todo documentado para auditorías de Sanidad.',
+      a: 'Sí. El kit incluye un checklist específico con registro de congelación por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) —que exige -20 ºC durante al menos 24 h en todo el producto, o -35 ºC durante 15 h— y te deja todo documentado para auditorías de Sanidad.',
     },
     {
       q: '¿Sirve para mi tipo de restaurante japonés?',
@@ -281,7 +281,7 @@ const data: KitTareasData = {
     items: [
       'Apertura y cierre completo de barra sushi, cocina y sala',
       'Preparación de arroz con control de pH (≤4.6) y técnicas de corte',
-      'Protocolo anisakis APPCC: -20 ºC / 7 días por lote, RD 1420/2006',
+      'Protocolo anisakis APPCC: -20 ºC / 24 h por lote, RD 1021/2022, art. 8.1',
       'Vitrina neta case (2-4 ºC), rotación FIFO y mise en place itamae',
       'Tareas por perfil: itamae, ayudante, cocina caliente, sala, delivery',
       'Calendario anual de pescado, omakases y festivos asiáticos',

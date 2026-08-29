@@ -58,7 +58,7 @@ export default function GuiaRestauranteJapones() {
           "@type": "FAQPage",
           "mainEntity": [
             { "@type": "Question", "name": "¿Cuánto cuesta montar un restaurante japonés en España?", "acceptedAnswer": { "@type": "Answer", "text": "Entre 250.000€ y 500.000€ para 60 plazas. El equipamiento japonés específico (suihanki, vitrina sashimi, robata, teppanyaki, cuchillos japoneses) y el itamae cualificado suponen la mayor parte del coste, pero los márgenes en sake y whisky japonés (75-85%) lo compensan." }},
-            { "@type": "Question", "name": "¿Qué normativa debo cumplir para sushi y sashimi?", "acceptedAnswer": { "@type": "Answer", "text": "El RD 1420/2006 OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas (anisakis). La guía incluye el PCC completo, el checklist y el protocolo de trazabilidad." }},
+            { "@type": "Question", "name": "¿Qué normativa debo cumplir para sushi y sashimi?", "acceptedAnswer": { "@type": "Answer", "text": "El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas (anisakis). La guía incluye el PCC completo, el checklist y el protocolo de trazabilidad." }},
             { "@type": "Question", "name": "¿Las plantillas Excel incluyen fórmulas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Plan financiero a 3 años, escandallos de 15 platos japoneses, menú engineering con coctelería de sake y whisky, cash flow y break-even." }},
           ]
         })}</script>

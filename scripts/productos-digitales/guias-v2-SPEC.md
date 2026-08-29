@@ -354,7 +354,8 @@ cosmético, es una instrucción errónea que el cliente ejecuta.
 
 - **Anisakis**: la cadena no aparece en ninguno de los 141 ficheros, y el producto sitúa ceviches y tartares en el cuarto frío (cap. 8) y promociona los crudos
   (cap. 22) — en las guías japonesa, nikkei y peruana el riesgo es aún más directo. Filas nuevas en el bloque `Temperaturas` de `checklist-appcc`: **«Congelación
-  preventiva (−20 °C / 5 días o −35 °C / 15 h) para pescado de consumo en crudo, marinado, escabechado o en salazón — RD 1420/2006»**, **«Registro de lotes
+  preventiva (−20 °C durante al menos 24 h en todo el producto, o −35 °C / 15 h) para pescado de consumo en crudo, marinado, escabechado o en salazón — RD
+  1021/2022, art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D»**, **«Registro de lotes
   congelados preventivamente»** e **«Información al consumidor de que el pescado ha sido congelado»**.
 - **Cocción a baja temperatura y envasado al vacío**: el `checklist-equipamiento` presupuesta envasadora (2.500 €) y roner (1.500 €) y el bloque `PCC` del APPCC
   tiene cuatro líneas genéricas sin un solo binomio tiempo-temperatura. Bloque nuevo: tabla de binomios validados por producto · registro de sonda por lote ·
@@ -1029,3 +1030,33 @@ prometidas** en los 8 · **0 caracteres no latinos** en `.md`, `.docx` y PDF · 
 coherencia de cifras** cruzando landing, dashboard, email, changelog, xlsx y PDF.
 
 **Lo que NO se hace en local**: builds de Astro, Playwright, navegador. La verificación de producción es por `curl`/gate, como en el resto de la familia.
+
+---
+
+## Decisión ANISAKIS-2026-08-29 — la norma española del anisakis cambió en 2022
+
+Esta SPEC prescribía citar el **RD 1420/2006** —hoy derogado— y un binomio «−20 °C / 5 días» que la norma
+nunca contuvo. Las dos cosas están corregidas en el texto de arriba:
+
+- El **RD 1420/2006 está DEROGADO** desde el **22-dic-2022** por la disposición derogatoria
+  única.h) del **RD 1021/2022** (ficha de estado del BOE, `BOE-A-2006-22171`). Citarlo como
+  derecho vigente es un error que cualquier comprador comprueba en el BOE en un minuto.
+- La norma vigente es el **art. 8.1 del RD 1021/2022** (`BOE-A-2022-21681`): congelación a
+  **−20 °C o inferior en la totalidad del producto durante ≥ 24 h**, o **−35 °C durante ≥ 15 h**;
+  la puede haber hecho una etapa anterior de la cadena **siempre que esté justificado
+  documentalmente** (el restaurante guarda el justificante del proveedor). El **art. 8.2** mantiene
+  la obligación de informar a la persona consumidora «mediante carteles o cartas-menú».
+- El marco europeo no cambia: **Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D**, en la
+  redacción del **Rgto. (UE) 1276/2011**.
+- Los «5 días» que circulan son una recomendación para congeladores DOMÉSTICOS. El research
+  (`auditorias/guias-v2-research-sector.json`, ANIS-06) **no pudo confirmar su atribución a la
+  AESAN**: no publicarla con esa atribución.
+
+**Texto canónico de la cita** (adaptando sólo el formato de cada fichero):
+
+> RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III,
+> Secc. VIII, Cap. III.D
+
+**Gate**: `guias-v2_0/motor.py` → `PROHIBIDAS` / `restos_prohibidos()`. Cualquier celda de texto
+con «RD 1420/2006» que no vaya precedida de «derogó el» es FALLO en el veredicto de `main.py`.
+Fuentes: ANIS-01 a ANIS-05 del research, con URL y cita literal del BOE y de EUR-Lex.

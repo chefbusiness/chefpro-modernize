@@ -67,7 +67,7 @@ const data: GuiaData = {
       { icon: 'TrendingUp', num: '02', title: 'El Mercado Japonés en España 2026', desc: 'Crecimiento +35% en 5 años, ciudades con mayor demanda, omakase con listas de espera, público foodie.' },
       { icon: 'Briefcase', num: '03', title: 'Modelos de Negocio', desc: 'Sushi-ya, ramen-ya, izakaya, omakase premium, robatayaki, mixto y dark kitchen japonesa.' },
       { icon: 'Calculator', num: '04', title: 'Estudio de Viabilidad y Plan Financiero', desc: 'Inversión 250K-500K€, food cost 30-35%, márgenes sake/whisky 75-85%, break-even mes 10-16.' },
-      { icon: 'Scale', num: '05', title: 'Requisitos Legales + Normativa Anisakis', desc: 'Licencias, RD 1420/2006 congelación preventiva -20°C/24h, importación, registro sanitario.' },
+      { icon: 'Scale', num: '05', title: 'Requisitos Legales + Normativa Anisakis', desc: 'Licencias, congelación preventiva anti-anisakis (RD 1021/2022, art. 8.1) -20°C/24h, importación, registro sanitario.' },
       { icon: 'ShieldCheck', num: '06', title: 'APPCC para Pescado Crudo y Shari', desc: 'APPCC con PCC específicos: anisakis, temperatura arroz sushi, caldos ramen, alérgenos.' },
       { icon: 'MapPin', num: '07', title: 'Ubicación y Local', desc: 'Zonas ideales, metros para 60 plazas, barra sushi, proximidad a mercados de pescado fresco.' },
       { icon: 'Layout', num: '08', title: 'Diseño de Cocina Japonesa', desc: 'Barra de sushi, estación shari, ramen station, robata binchotan, teppanyaki, zona tempura.' },
@@ -138,7 +138,7 @@ const data: GuiaData = {
   faqs: [
     { q: '¿Cuánto cuesta montar un restaurante japonés en España?', a: 'Entre 250.000€ y 500.000€ dependiendo de la ubicación, nivel de acabados, modelo (sushi-ya, ramen-ya, izakaya, omakase, robatayaki) y equipamiento japonés específico (suihanki, vitrina sashimi, robata, cuchillos yanagiba). Los márgenes en sake premium y whisky japonés (75-85%) ayudan a compensar el coste del pescado fresco.' },
     { q: '¿Dónde consigo pescado sashimi-grade y productos japoneses en España?', a: 'La guía incluye un capítulo completo (cap. 15) con proveedores: Mercamadrid, Mercabarna, lonjas, distribuidores especializados (Japan Sushi Express, Oriental Gourmet, Comercial Minamoto) y importadores directos de pescado premium, arroz Koshihikari, algas nori, sake y whisky japonés.' },
-    { q: '¿Qué normativa debo cumplir para sushi y sashimi (anisakis)?', a: 'El RD 1420/2006 OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas. La guía incluye un PCC específico en el plan APPCC, el checklist de anisakis y el protocolo completo de trazabilidad. Es crítico: un caso positivo puede cerrar tu restaurante.' },
+    { q: '¿Qué normativa debo cumplir para sushi y sashimi (anisakis)?', a: 'El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas. La guía incluye un PCC específico en el plan APPCC, el checklist de anisakis y el protocolo completo de trazabilidad. Es crítico: un caso positivo puede cerrar tu restaurante.' },
     { q: '¿Sushi-ya, ramen-ya, izakaya u omakase?', a: 'Depende de tu inversión, equipo y zona. Un ramen-ya tiene menor inversión y carta enfocada. Un sushi-ya exige un itamae cualificado pero ofrece máximo prestigio. Un omakase premium tiene ticket 80-180€ pero requiere barra de 8-14 plazas. La guía analiza los 7 modelos en detalle.' },
     { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Las 8 plantillas incluyen fórmulas automáticas: plan financiero, escandallos de 15 platos japoneses (sashimi, ramen, nigiri, yakitori wagyu), menú engineering con coctelería de sake/whisky, cash flow y más.' },
     { q: '¿El DOCX es editable?', a: 'Sí. Recibes dos versiones: el PDF editorial con diseño profesional para leer y consultar, y el DOCX editable para personalizar, añadir notas y presentar a socios o inversores.' },
@@ -184,7 +184,7 @@ const data: GuiaData = {
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     faqs: [
       { q: '¿Cuánto cuesta montar un restaurante japonés en España?', a: 'Entre 250.000€ y 500.000€ para 60 plazas. El equipamiento japonés específico (suihanki, vitrina sashimi, robata, teppanyaki, cuchillos japoneses) y el itamae cualificado suponen la mayor parte del coste, pero los márgenes en sake y whisky japonés (75-85%) lo compensan.' },
-      { q: '¿Qué normativa debo cumplir para sushi y sashimi?', a: 'El RD 1420/2006 OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas (anisakis). La guía incluye el PCC completo, el checklist y el protocolo de trazabilidad.' },
+      { q: '¿Qué normativa debo cumplir para sushi y sashimi?', a: 'El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas (anisakis). La guía incluye el PCC completo, el checklist y el protocolo de trazabilidad.' },
       { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Plan financiero a 3 años, escandallos de 15 platos japoneses, menú engineering con coctelería de sake y whisky, cash flow y break-even.' },
     ],
     breadcrumb: [

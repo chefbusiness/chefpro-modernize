@@ -6,7 +6,7 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_TAREAS_SUSHI_BAR || 
 const items = [
   'Apertura y cierre completo de barra sushi, cocina y sala',
   'Preparación de arroz con control de pH (≤4.6) y técnicas de corte',
-  'Protocolo anisakis APPCC: -20 ºC / 7 días por lote, RD 1420/2006',
+  'Protocolo anisakis APPCC: -20 ºC / 24 h por lote, RD 1021/2022, art. 8.1',
   'Vitrina neta case (2-4 ºC), rotación FIFO y mise en place itamae',
   'Tareas por perfil: itamae, ayudante, cocina caliente, sala, delivery',
   'Calendario anual de pescado, omakases y festivos asiáticos',

@@ -11,7 +11,7 @@ const chapters = [
   { icon: TrendingUp, num: '02', title: 'El Mercado Nikkei en España 2026', desc: 'Tendencia premium alcista, ciudades clave, omakase nikkei con lista de espera, público foodie 30-50.' },
   { icon: Briefcase, num: '03', title: 'Modelos de Negocio Nikkei', desc: 'Barra de tiraditos, cevichería nikkei, robata nikkei, omakase premium, casual premium, dark kitchen nikkei.' },
   { icon: Calculator, num: '04', title: 'Estudio de Viabilidad y Plan Financiero', desc: 'Inversión 280K-520K€, food cost 32-34%, márgenes pisco/sake 75-85%, break-even mes 10-16.' },
-  { icon: Scale, num: '05', title: 'Requisitos Legales + Normativa Anisakis', desc: 'Licencias, RD 1420/2006 congelación preventiva -20°C/24h para tiraditos, importación peruana, registro sanitario.' },
+  { icon: Scale, num: '05', title: 'Requisitos Legales + Normativa Anisakis', desc: 'Licencias, congelación preventiva anti-anisakis (RD 1021/2022, art. 8.1) -20°C/24h para tiraditos, importación peruana, registro sanitario.' },
   { icon: ShieldCheck, num: '06', title: 'APPCC Pescado Crudo + Leche de Tigre', desc: 'PCC específicos: anisakis tiraditos, cadena de frío leches de tigre, shari, alérgenos, ají.' },
   { icon: MapPin, num: '07', title: 'Ubicación y Local', desc: 'Zonas premium urbanas, metros para 60 plazas, barra tiraditos visible, proximidad mercados pescado.' },
   { icon: Layout, num: '08', title: 'Diseño de Cocina Nikkei', desc: 'Barra tiraditos, cold station leche de tigre, robata/josper, wok chaufa, hot kitchen anticuchos.' },

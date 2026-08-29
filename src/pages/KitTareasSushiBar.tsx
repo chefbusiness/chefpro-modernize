@@ -24,9 +24,9 @@ export default function KitTareasSushiBar() {
     <>
       <Helmet>
         <title>Kit de Tareas Recurrentes: Sushi Bar — Checklists Operativos con Protocolo Anisakis | AI Chef Pro</title>
-        <meta name="description" content="11 checklists operativos para sushi bar: barra sushi, arroz con control pH, protocolo anisakis APPCC obligatorio (RD 1420/2006), vitrina neta case, perfiles itamae, temporadas pescado y omakase. Solo €14." />
+        <meta name="description" content="11 checklists operativos para sushi bar: barra sushi, arroz con control pH, protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1), vitrina neta case, perfiles itamae, temporadas pescado y omakase. Solo €14." />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="checklist sushi bar, tareas sushi bar, protocolo anisakis APPCC, control pH arroz sushi, vitrina neta case, itamae checklist, restaurante japonés operativa, RD 1420/2006, AI Chef Pro" />
+        <meta name="keywords" content="checklist sushi bar, tareas sushi bar, protocolo anisakis APPCC, control pH arroz sushi, vitrina neta case, itamae checklist, restaurante japonés operativa, RD 1021/2022 anisakis, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/kit-tareas-sushi-bar" />
         <meta property="og:title" content="Kit de Tareas Recurrentes: Sushi Bar — Protocolo Anisakis APPCC" />
         <meta property="og:description" content="11 checklists operativos para sushi bar con protocolo anisakis APPCC. Arroz con pH, neta case, itamae, omakase. €14." />
@@ -70,7 +70,7 @@ export default function KitTareasSushiBar() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Incluye el protocolo de anisakis obligatorio por ley?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Registro de congelación a -20 ºC durante 7 días por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1420/2006." }},
+            { "@type": "Question", "name": "¿Incluye el protocolo de anisakis obligatorio por ley?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Registro de congelación por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006): -20 ºC durante al menos 24 h en todo el producto, o -35 ºC durante al menos 15 h." }},
             { "@type": "Question", "name": "¿Sirve para mi tipo de restaurante japonés?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Sushi bar tradicional, japonés con cocina caliente, nikkei, kaiten, omakase y cualquier local que sirva pescado crudo. 100% editable." }},
             { "@type": "Question", "name": "¿Incluye preparación de arroz sushi profesional?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Lavado, cocción, sazonado con sushi-zu, control de pH obligatorio (≤4.6), tiempos de descarte y temperaturas de servicio." }},
             { "@type": "Question", "name": "¿Qué es la vitrina neta case?", "acceptedAnswer": { "@type": "Answer", "text": "La vitrina refrigerada de la barra de sushi (2-4 ºC). El kit incluye montaje, rotación FIFO y exposición máxima de 2 horas." }},

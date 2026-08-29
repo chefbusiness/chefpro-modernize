@@ -272,7 +272,9 @@ Redacción obligatoria, con la fuente en la celda de nota inmediatamente debajo 
 - **Anisakis:** «Congelación previa obligatoria para pescado que se sirva crudo, marinado,
   en salazón, ahumado en frío o poco cocinado: **−20 °C en la totalidad del producto durante al
   menos 24 h, o −35 °C durante al menos 15 h**.» Nota: «Rgto. (CE) 853/2004, Anexo III, Secc. VIII,
-  Cap. III.D, modificado por el Rgto. (UE) 1276/2011; exigido en España por el RD 1420/2006.»
+  Cap. III.D, modificado por el Rgto. (UE) 1276/2011; exigido en España por el art. 8.1 del
+  RD 1021/2022, que derogó el RD 1420/2006. El art. 8.2 obliga además a informar a la persona
+  consumidora mediante carteles o cartas-menú.» (ver la decisión ANISAKIS-2026-08-29 al final)
 - **Excepción:** «Quedan exentos los productos de la acuicultura criados con pienso que no puede
   contener parásitos y en un entorno libre de parásitos vivos, siempre que el proveedor lo
   acredite por escrito (Rgto. UE 1276/2011). Archiva esa acreditación junto a este registro.»
@@ -292,7 +294,7 @@ Redacción obligatoria, con la fuente en la celda de nota inmediatamente debajo 
 |---|---|---|---|---|---|---|
 | **sushi-bar** (representante) | Anisakis mal citado en `03:Instrucciones!B7` y `03:'Registro Congelacion'!A2/B27` (DOM-01, COM-01, TEC-11); dos límites `−20`/`−18` (DOM-02, COM-16); falta la excepción de acuicultura (DOM-15); cámara `−2 a 0` vs `0-2` (DOM-12, COM-15) | Cadena del arroz imposible: `02:'Protocolo Arroz Sushi'!E6-E10` (reposo 30 min de 10:20 a 10:25) y desalineada con `01!E13-E18` (DOM-03, COM-18); vitrina «encender y verificar 2-4 °C» a las 10:00 (DOM-25); pedido a lonja a las 22:00/23:30 (DOM-24); turno Almuerzo/Cena con horas sólo de mediodía y sin 2.º lote de arroz (DOM-11); `05` anuncia 3 checklists y trae 2 (COM-17); 07 mensual vs BONUS-02 semestral (COM-10) | `06:'Sala y Servicio'!B8` enumera 4 y **omite pescado** (DOM-07); `03` no tiene ninguna hoja de alérgenos pese a venderlo (TEC-12) | Bonito y atún rojo **cruzados** (`08!B11`/`B16`, `BONUS-02!A7`/`A8`); sardina en marzo; lubina en otoño (DOM-09, DOM-18, COM-03) | `03` → **Matriz de Alérgenos**, **Registro de pH del arroz**, **Control de Recepción**; `01` o `03` → **Registro de Mermas**; `06` → **Delivery y Take Away**, **Office y Lavado**; `05` → **Comparativa de Proveedores** y **Reporting Diario** | 233 / 181 / `08!'Temporadas Pescado Espana'` |
 | **asador** | Sin citas normativas propias (0 encontradas). Verificar las temperaturas de combustión declaradas: `02!B24-B26` («encina 800 °C, quebracho 900 °C, marabú 750 °C») | Coherencia de `03:'Temperaturas Coccion'!B6-B11` (blue 46-49 … well 70+) con «la temperatura sube 3-5 °C en reposo» (`B25`) | La landing no promete alérgenos; el corpus no los trata: se deja o se añade 1 tarea | Caza oct-feb y calçotada: sólo 1 mención de «caza» en todo el kit frente a la promesa del BONUS | `03` → **Registro de Mermas** (`03:'Control Maduracion Carne'!B25` remite a una «hoja de control» que no existe); `05` → **Comparativa de Proveedores** y **Reporting** (`reporting` y `comparativa`: 0 apariciones) | 202 / 152 / `03!'Temperaturas Coccion'` |
-| **marisqueria** | **La cita falsa del anisakis se repite aquí**: `03:'Trazabilidad APPCC'!B22 = 'Anisakis: congelacion previa -20°C/7d para consumo crudo/marinado'` con `F22 = 'Obligatorio RD 1420/2006'`. Cita correcta de `UE 1379/2013` en `F6` | Expositor con tres cadencias: `01!B12` (0-4 °C), `03!B21` («en hielo max 4 °C, rotación cada 2 h»), `04!B13` («hielo cada 90 min, 0-4 °C») | Promete «alérgenos de crustáceos y moluscos»; 3 menciones genéricas en el corpus | Vedas y temporadas SÍ presentes (percebe 8, ostra 10, veda 8) | **Registro de Mermas** (`06:'Perfiles'!B9` remite a un «libro de produccion» inexistente); hoja de **arqueo/caja** o corregir el copy (§5 duda 4) | 122 / 95 / — |
+| **marisqueria** | **La cita falsa del anisakis se repite aquí**: `03:'Trazabilidad APPCC'!B22 = 'Anisakis: congelacion previa -20°C/7d para consumo crudo/marinado'` con `F22 = 'Obligatorio RD 1420/2006'` (cita del DEFECTO tal como está LIVE; **ese RD está derogado desde el 22-dic-2022**, ver la decisión ANISAKIS-2026-08-29). Cita correcta de `UE 1379/2013` en `F6` | Expositor con tres cadencias: `01!B12` (0-4 °C), `03!B21` («en hielo max 4 °C, rotación cada 2 h»), `04!B13` («hielo cada 90 min, 0-4 °C») | Promete «alérgenos de crustáceos y moluscos»; 3 menciones genéricas en el corpus | Vedas y temporadas SÍ presentes (percebe 8, ostra 10, veda 8) | **Registro de Mermas** (`06:'Perfiles'!B9` remite a un «libro de produccion» inexistente); hoja de **arqueo/caja** o corregir el copy (§5 duda 4) | 122 / 95 / — |
 | **panaderia** | 1 sola mención APPCC (`07!B16`). Sin citas normativas | Temperaturas de obrador/masa/horno coherentes entre sí | 4 menciones de alérgenos | — | **Registro de Mermas** (2 menciones sin destino) | 101 / 77 / `03!'Hornos y Coccion'`, `BONUS-01!'Briefing Produccion'` |
 | **food-truck** | `04!B6` cita el RGSEAA correctamente. `03:'APPCC Movil'!B8` fija `≥74 °C aves / ≥63 °C otros`, que choca con el `>75 °C` de chef-privado y el `≥63 °C` de marisquería: unificar criterio de familia | `03!B9` («caliente >65 °C o servido <2 h») OK | 8 menciones | — | **Registro de Mermas** (1 mención) | 93 / 74 / `02!'Operaciones Moviles'`, `03!'APPCC Movil'` |
 | **tapas-bar** | 1 mención APPCC (`07!B19`). Sin citas | `03!B18` («mantenimiento >65 °C») y `01!B13` (`0-4` / `−18`) coherentes | 12 menciones (el mejor de los cuatro planos) | Calendario `BONUS-02` mes a mes, correcto y rico | **Registro de Mermas** (3 menciones) | 94 / 74 / — |
@@ -329,7 +331,10 @@ intocables.
    tapas-bar **172** · panadería **160** · food-truck **153** (los cuatro últimos, contados a
    mano hasta que CB-E5 les dé contador). Ninguna landing publica hoy una cifra de tareas: al
    ponerla, sale de aquí.
-2. **Anisakis**: sustituir «-20 ºC durante 7 días … RD 1420/2006» en las **8 apariciones** de
+2. **Anisakis**: sustituir «-20 ºC durante 7 días … RD 1420/2006» —cita del DEFECTO; ese RD está
+   derogado, ver la decisión ANISAKIS-2026-08-29— por «−20 °C en la totalidad del producto durante
+   al menos 24 h, o −35 °C durante al menos 15 h (RD 1021/2022, art. 8.1, que derogó el
+   RD 1420/2006, y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D)» en las **8 apariciones** de
    `kit-tareas-sushi-bar.ts` (líneas 41, 52, 97, 126, 186, 253, 284, 307 — incluido el testimonio
    y la FAQ del schema) y en la tarjeta `anisakis-appcc` de `KitTareasSushiBarDashboard.tsx:18`.
    Revisar en paralelo `kit-tareas-marisqueria.ts` («Trazabilidad y APPCC Marisco»).
@@ -498,7 +503,8 @@ Las ocho del orquestador, tal cual, más las mías argumentadas.
    habiendo tocado exactamente nada.
 10. **La cita falsa del anisakis se corrige en DOS kits, no en uno.** `marisqueria/03-trazabilidad
     -appcc-marisco.xlsx:'Trazabilidad APPCC'!B22` repite «−20 °C/7 d» con `F22 = 'Obligatorio
-    RD 1420/2006'`. Tratarlo como hallazgo exclusivo del representante habría dejado vivo el
+    RD 1420/2006'` (cita del DEFECTO; RD derogado, ver la decisión ANISAKIS-2026-08-29).
+    Tratarlo como hallazgo exclusivo del representante habría dejado vivo el
     segundo. **Los refutadores del representante NO ven los hermanos: el censo transversal se
     corre antes de la tanda 1, no después.**
 11. **El barrido de ortografía va DESPUÉS del motor, como paso propio.** Demostrado: tras el
@@ -529,7 +535,7 @@ Las ocho del orquestador, tal cual, más las mías argumentadas.
     4 landings. Lo prometido se entrega.
 19. **Temperaturas (duda 5): criterio ÚNICO de familia, con fuente en celda de nota**: cocción ≥ 70 °C en el centro del alimento (≥ 75 °C en aves,
     picados y recalentados) según las recomendaciones de AESAN; mantenimiento en caliente ≥ 65 °C y en frío ≤ 8 °C / ≤ 4 °C según RD 3484/2000
-    (comidas preparadas); marisco y pescado crudo con su régimen específico (anisakis: −20 °C ≥ 24 h o −35 °C ≥ 15 h, RD 1420/2006 y Rgto. 853/2004).
+    (comidas preparadas) ⚠️ **el RD 3484/2000 también está derogado, por el mismo RD 1021/2022, que ya NO fija temperaturas: las fija y justifica el operador en su APPCC**; marisco y pescado crudo con su régimen específico (anisakis: −20 °C ≥ 24 h en la totalidad del producto o −35 °C ≥ 15 h, RD 1021/2022, art. 8.1, que derogó el RD 1420/2006, y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D — ver la decisión ANISAKIS-2026-08-29).
     Un solo valor por PCC; el constructor cita la norma en la celda y NO teclea ninguna cifra sin fuente.
 20. **pH del arroz (duda 6): tiras de rango 4,0-5,0 con resolución 0,2 Y registro de acidificación medida** (vinagre dosificado por kg de arroz),
     las dos a la vez; el pHmetro se menciona como opción, no como obligación.
@@ -720,3 +726,32 @@ Se para y se pregunta si: (a) `MoldeDesconocido` salta en un kit que no sea del 
 (b) el diff del representante no cuadra con el recuento independiente del verificador; (c)
 `gates.limite_unico` encuentra un conflicto que no esté en la R1; (d) cualquier cambio que toque
 `aggregateRating`, `reviews`, `priceOld` o la marca ChefBusiness.
+
+---
+
+## Decisión ANISAKIS-2026-08-29 — el RD 1420/2006 está derogado
+
+Vale para los 11 kits CB y para el representante. Verificado en el BOE
+(`auditorias/guias-v2-research-sector.json`, entradas ANIS-01 a ANIS-05):
+
+- El **RD 1420/2006** quedó **DEROGADO el 22-dic-2022** por la disposición derogatoria única.h)
+  del **RD 1021/2022** (`BOE-A-2006-22171`, ficha de estado).
+- Vigente: **art. 8.1 del RD 1021/2022** (`BOE-A-2022-21681`) — **−20 °C o inferior en la
+  totalidad del producto durante ≥ 24 h**, o **−35 °C durante ≥ 15 h**; la congelación puede
+  haberla hecho una etapa anterior **si está justificado documentalmente**. El **art. 8.2** obliga
+  a informar a la persona consumidora «mediante carteles o cartas-menú».
+- Europa: **Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D** (redacción del
+  **Rgto. (UE) 1276/2011**).
+
+**Texto canónico**: «RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004,
+Anexo III, Secc. VIII, Cap. III.D».
+
+**Gate**: `kit-tareas-v2_0/motor.py` → `PROHIBIDAS` / `restos_prohibidos()`, enganchado al veredicto
+de `main.py`. **Sólo FALLA, nunca reescribe**: este motor sostiene 11 kits LIVE y una sustitución
+automática los repintaría todos sin que nadie leyese la frase resultante.
+
+⚠️ **Pendiente, fuera del alcance de la corrección del 2026-08-29**: los dos ficheros LIVE que
+todavía llevan la cita derogada — `kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx:'Registro
+Congelacion'!A2` y `kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx:'Trazabilidad
+APPCC'!F22` — **no tienen constructor**: esta SPEC (CB) todavía no se ha ejecutado, así que no hay
+`contenido_*.py` que los reescriba. Se corrigen cuando se construya la familia CB.

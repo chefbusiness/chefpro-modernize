@@ -42,7 +42,9 @@ suprimió con el RD 109/2010)»; escala de gravedad «GRAVE/MODERADA/LEVE» → 
 (Ley 17/2011, arts. 50-52)»; «hasta €60.000» → «de 5.001 a 20.000 € en las graves y hasta 600.000 €
 en las muy graves (Ley 17/2011)». Bloque «Marco normativo» en las Instrucciones del 12: Reg. (CE)
 852/2004 art. 5, RD 3484/2000, Reg. (CE) 178/2002 arts. 18-19, Reg. (UE) 1169/2011 + RD 126/2015,
-Reg. (CE) 853/2004 Anexo III + RD 1420/2006 (anisakis), Reg. (CE) 2073/2005, Ley 17/2011.
+RD 1021/2022 art. 8.1 —que derogó el RD 1420/2006— + Reg. (CE) 853/2004 Anexo III, Secc. VIII,
+Cap. III.D (anisakis; el art. 8.2 añade informar al consumidor con carteles o carta-menú),
+Reg. (CE) 2073/2005, Ley 17/2011. Ver la decisión ANISAKIS-2026-08-29 al final.
 1.8 **Instrucciones** de cada fichero reescritas para describir exactamente la hoja (columnas nuevas,
 límites, frecuencia recomendada, semáforo, conservación); línea «Versión 2.0 · agosto 2026 ·
 aichef.pro/pack-appcc · info@aichef.pro». Metadata de la Fase A se conserva.
@@ -116,8 +118,8 @@ aichef.pro/pack-appcc · info@aichef.pro». Metadata de la Fase A se conserva.
   T.ª inicio, hora y T.ª a 2 h, destino; Estado: de ≥60 a ≤10 °C en ≤2 h → OK / ALERTA) y pestaña
   «Descongelación» (producto, lote, inicio, fin, T.ª cámara ≤4, uso en ≤24 h; Estado).
 - **18-registro-congelacion-anisakis.xlsx** (nuevo): pescado, lote, fecha/hora entrada y salida,
-  T.ª congelador, Estado: ≥24 h a ≤−20 °C (o ≥15 h a ≤−35) → OK; nota legal Reg. 853/2004 + RD
-  1420/2006.
+  T.ª congelador, Estado: ≥24 h a ≤−20 °C (o ≥15 h a ≤−35) → OK; nota legal RD 1021/2022 art. 8.1
+  (que derogó el RD 1420/2006) + Reg. 853/2004 Anexo III, Secc. VIII, Cap. III.D.
 - **19-verificacion-termometros.xlsx** (nuevo): equipo/sonda, fecha, método (hielo fundente 0 °C ±1
   / ebullición), lectura, desviación calculada, Apto S/N con fórmula, acción, firma; mensual.
 - **BONUS-01 formación**: «Válido hasta», «Firma del empleado», Estado con TODAY() (VIGENTE / RENOVAR
@@ -166,3 +168,27 @@ en la landing.
 - COM-10 como «generar PDF»: se corrige el copy; los PDF de los carteles quedan para otra versión.
 - TEC-23/DOM-23 «fusionar 02 y 05»: no (claves y tarjetas distintas); se complementan.
 - TEC-26 como ListObject: no; rangos ampliados con fórmula/DV replicadas (§1.3).
+
+---
+
+## Decisión ANISAKIS-2026-08-29 — el RD 1420/2006 está derogado
+
+El mismo caso que el RD 3484/2000 de la ronda 2, y con el mismo tratamiento. Verificado en el BOE
+(`auditorias/guias-v2-research-sector.json`, ANIS-01 a ANIS-05):
+
+- El **RD 1420/2006** quedó **DEROGADO el 22-dic-2022** por la disposición derogatoria única.h) del
+  **RD 1021/2022** — el mismo real decreto que derogó al RD 3484/2000.
+- Vigente: **art. 8.1 del RD 1021/2022** — **−20 °C o inferior en la totalidad del producto durante
+  ≥ 24 h**, o **−35 °C durante ≥ 15 h**; puede haberla hecho una etapa anterior de la cadena si
+  está justificado documentalmente. El **art. 8.2** obliga a informar a la persona consumidora
+  «mediante carteles o cartas-menú» — la obligación de cartel NO desaparece, sólo cambia de norma.
+- Europa: **Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D** (redacción del
+  **Rgto. (UE) 1276/2011**).
+
+Celdas afectadas y reescritas por los grupos (5 en 2 ficheros LIVE):
+`12-analisis-peligros-haccp.xlsx:'Análisis Peligros'!I13` y `Instrucciones!B32` (grupo B);
+`18-registro-congelacion-anisakis.xlsx:'Congelación Anisakis'!A46` y `!A49`, y `Instrucciones!B28`
+(grupo C).
+
+**Gate**: entrada nueva en `motor.PROHIBIDAS` con lookbehind, igual que la del RD 3484/2000: la
+única mención admitida es «… que derogó el RD 1420/2006».

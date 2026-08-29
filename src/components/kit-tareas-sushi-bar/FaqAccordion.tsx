@@ -5,7 +5,7 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Incluye el protocolo de anisakis obligatorio por ley?',
-    a: 'Sí. El kit incluye un checklist específico con registro de congelación a -20 ºC durante 7 días por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1420/2006 vigente y te deja todo documentado para auditorías de Sanidad.',
+    a: 'Sí. El kit incluye un checklist específico con registro de congelación por lote y proveedor, control de temperaturas y trazabilidad completa del pescado. Cumple con el RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) —que exige -20 ºC durante al menos 24 h en todo el producto, o -35 ºC durante 15 h— y te deja todo documentado para auditorías de Sanidad.',
   },
   {
     q: '¿Sirve para mi tipo de restaurante japonés?',

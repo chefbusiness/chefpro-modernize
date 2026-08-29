@@ -8,7 +8,7 @@ import FadeIn from '../ebook/FadeIn';
 const templates = [
   { icon: DoorOpen, title: 'Apertura y Cierre Sushi', desc: 'Checklists de barra sushi, cocina caliente y sala: temperaturas de neta case, arroz cocido del día, pescado expuesto, cierre completo y arqueo.' },
   { icon: Sparkles, title: 'Arroz Sushi y Corte de Pescado', desc: 'Protocolo de arroz: lavado, cocción, sazonado con sushi-zu, control de pH (≤4.6) y tiempos de descarte. Técnicas de corte: yanagiba, sashimi, nigiri y maki.' },
-  { icon: ShieldCheck, title: 'Seguridad Anisakis y APPCC', desc: 'Registro de congelación a -20 ºC durante 7 días por lote (RD 1420/2006), control de temperaturas, alérgenos y trazabilidad completa de pescado y proveedores.' },
+  { icon: ShieldCheck, title: 'Seguridad Anisakis y APPCC', desc: 'Registro de congelación por lote y proveedor (RD 1021/2022, art. 8.1: -20 ºC durante al menos 24 h en todo el producto, o -35 ºC durante 15 h), control de temperaturas, alérgenos y trazabilidad completa de pescado y proveedores.' },
   { icon: Refrigerator, title: 'Barra Sushi y Vitrina Neta Case', desc: 'Mise en place de la vitrina refrigerada (2-4 ºC), rotación FIFO por lotes, exposición máxima de 2 horas, organización de la estación itamae y limpieza por turno.' },
   { icon: Briefcase, title: 'Tareas del Manager', desc: 'Pedidos a lonja, control de stock de pescado, gestión del equipo, reservas (incluido omakase), revenue diario, comparativa de proveedores y reporting.' },
   { icon: Users, title: 'Perfiles: Itamae y Equipo', desc: 'Tareas claras por perfil: itamae, ayudante de sushi, cocina caliente, sala y servicio, delivery. Roles y responsabilidades sin solapes.' },

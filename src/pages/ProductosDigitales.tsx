@@ -776,7 +776,7 @@ const products = [
     price: '€14',
     originalPrice: '€69',
     discount: '-80%',
-    description: '11 checklists operativos para sushi bar con protocolo anisakis APPCC obligatorio (RD 1420/2006), control de pH del arroz, vitrina neta case, perfiles itamae y omakase.',
+    description: '11 checklists operativos para sushi bar con protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1), control de pH del arroz, vitrina neta case, perfiles itamae y omakase.',
     features: [
       'Anisakis APPCC: -20 ºC / 7 días por lote',
       'Arroz sushi con control de pH (≤4.6)',

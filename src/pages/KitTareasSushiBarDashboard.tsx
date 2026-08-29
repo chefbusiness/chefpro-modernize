@@ -15,7 +15,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 const TEMPLATES = [
   { key: 'apertura-cierre', icon: DoorOpen, title: 'Apertura y Cierre Sushi', desc: 'Barra sushi, cocina caliente y sala. Temperaturas, arroz cocido, pescado expuesto, cierre completo.' },
   { key: 'arroz-pescado', icon: Sparkles, title: 'Arroz y Corte de Pescado', desc: 'Lavado, cocción, sushi-zu, control pH ≤4.6, descarte. Yanagiba, sashimi, nigiri, maki.' },
-  { key: 'anisakis-appcc', icon: ShieldCheck, title: 'Seguridad Anisakis y APPCC', desc: 'Registro -20 ºC / 7 días por lote (RD 1420/2006), temperaturas, alérgenos, trazabilidad.' },
+  { key: 'anisakis-appcc', icon: ShieldCheck, title: 'Seguridad Anisakis y APPCC', desc: 'Registro de congelación por lote (RD 1021/2022, art. 8.1: -20 ºC / 24 h), temperaturas, alérgenos, trazabilidad.' },
   { key: 'barra-neta-case', icon: Refrigerator, title: 'Barra Sushi y Neta Case', desc: 'Mise en place vitrina (2-4 ºC), rotación FIFO, exposición máx 2 h, estación itamae.' },
   { key: 'manager', icon: Briefcase, title: 'Tareas del Manager', desc: 'Pedidos a lonja, stock pescado, equipo, reservas omakase, revenue, proveedores, reporting.' },
   { key: 'perfiles', icon: Users, title: 'Perfiles: Itamae y Equipo', desc: 'Itamae, ayudante de sushi, cocina caliente, sala/servicio, delivery. Roles sin solapes.' },

@@ -1,0 +1,207 @@
+{
+ "tarea": "Corrección transversal de la cita legal DEROGADA del anisakis (RD 1420/2006 → RD 1021/2022, art. 8.1)",
+ "fecha": "2026-08-29T10:32:29",
+ "texto_canonico": "RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D",
+ "fundamento": {
+  "research": "scripts/productos-digitales/auditorias/guias-v2-research-sector.json (ANIS-01 a ANIS-06)",
+  "ANIS-01": "RD 1420/2006 DEROGADO con efectos de 22-dic-2022 por la disp. derogatoria única.h) del RD 1021/2022 — ficha de estado del BOE, BOE-A-2006-22171",
+  "ANIS-03": "Vigente: art. 8.1 del RD 1021/2022 (BOE-A-2022-21681) — −20 °C o inferior en la TOTALIDAD del producto ≥ 24 h, o −35 °C ≥ 15 h; la operación puede haberla hecho una etapa anterior si está justificado documentalmente",
+  "ANIS-04/05": "Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D, en la redacción del Rgto. (UE) 1276/2011",
+  "ANIS-06": "La recomendación de «5 días» NO se pudo confirmar atribuida a la AESAN (todas las rutas de aesan.gob.es dan 404): se ha RETIRADO esa atribución de las celdas que la llevaban",
+  "verificacion_adicional_2026-08-29": {
+   "por_que": "El pack APPCC atribuía al RD 1420/2006 la obligación de CARTEL al consumidor, y el art. 8.1 citado en el research no la contiene: había riesgo de sustituir una cita falsa por otra.",
+   "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681 (texto consolidado, artículo 8, 9 apartados)",
+   "hallazgo": "El art. 8.2 del RD 1021/2022 SÍ mantiene la obligación de informar: «deberán informar a las personas consumidoras de que dichos productos han sido congelados o, en su caso, que proceden de sistemas de acuicultura que garantizan que están libres de anisakis, mediante los procedimientos que estimen apropiados, entre otros, mediante carteles o cartas-menú.»",
+   "consecuencia": "Las celdas del cartel citan el art. 8.2 (no el 8.1) y NO se ha reescrito su semántica."
+  }
+ },
+ "ficheros_editados": [
+  "scripts/productos-digitales/guias-v2_0/motor.py (GATE nuevo: PROHIBIDAS + restos_prohibidos)",
+  "scripts/productos-digitales/guias-v2_0/main.py (cableado del gate: procesar() + veredicto)",
+  "scripts/productos-digitales/guias-v2_0/documentos.py (comentarios de citas legales aceptadas)",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py (regla 'sustituciones' nueva + fuente/tarea/notas de DOM-14 ×2)",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_casual/b.py (fuente + tarea + notas de DOM-14)",
+  "scripts/productos-digitales/kit-tareas-v2_0/motor.py (GATE nuevo: PROHIBIDAS + restos_prohibidos, SOLO FALLA)",
+  "scripts/productos-digitales/kit-tareas-v2_0/main.py (cableado del gate: procesar() + veredicto)",
+  "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas.py (mensaje de `cambios` DOM-02)",
+  "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_restaurante_creativo.py (mensaje de `cambios` DOM-02)",
+  "scripts/productos-digitales/pack-appcc-v2_0/motor.py (entrada nueva en PROHIBIDAS, con lookbehind)",
+  "scripts/productos-digitales/pack-appcc-v2_0/grupo_b.py (comentario + celdas I13 y B32 del fichero 12)",
+  "scripts/productos-digitales/pack-appcc-v2_0/grupo_c.py (comentario + celdas A46, A49 y B28 del fichero 18)",
+  "scripts/productos-digitales/guias-v2-SPEC.md (§3.2 + decisión ANISAKIS-2026-08-29)",
+  "scripts/productos-digitales/kit-tareas-cb-v2-SPEC.md (§2, censo marisquería, §5.2, §7-bis.10, §7-bis.19 + decisión)",
+  "scripts/productos-digitales/pack-appcc-v2-SPEC.md (§1.7 marco normativo, ficha del 18 + decisión)",
+  "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts (8 cadenas)",
+  "astro-site/src/data/productos/guias/guia-restaurante-japones.ts (3 cadenas)",
+  "astro-site/src/data/productos/guias/guia-restaurante-nikkei.ts (3 cadenas)",
+  "astro-site/src/components/pages/ProductosDigitalesHubPage.astro (1 cadena)",
+  "src/components/kit-tareas-sushi-bar/{HeroSection,WhySection,ContentGrid,FaqAccordion,CtaFinal}.tsx",
+  "src/components/guia-restaurante-japones/{ContentGrid,FaqAccordion}.tsx",
+  "src/components/guia-restaurante-nikkei/{ContentGrid,FaqAccordion}.tsx",
+  "src/pages/{KitTareasSushiBar,KitTareasSushiBarDashboard,GuiaRestauranteJapones,GuiaRestauranteNikkei,ProductosDigitales}.tsx"
+ ],
+ "celdas_que_cambiaran": {
+  "guias": [
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "celda": "C27",
+    "antes": "Congelación preventiva (‑20 °C durante al menos 24 h en todo el producto, o ‑35 °C durante 15 h) para pescado de consumo en crudo, marinado, escabechado o en salazón — RD 1420/2006 y Reg. (CE) 853/2004",
+    "despues": "… — RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "celda": "H27",
+    "antes": "… El binomio legal son 24 h a ‑20 °C EN TODO EL PRODUCTO (RD 1420/2006 y anexo III, secc. VIII, cap. III del Reg. (CE) 853/2004); los «5 días» son la recomendación de AESAN para congeladores DOMÉSTICOS …",
+    "despues": "… (art. 8.1 del RD 1021/2022, que derogó el RD 1420/2006, y anexo III, secc. VIII, cap. III.D del Rgto. (CE) 853/2004); los «5 días» son la recomendación para congeladores DOMÉSTICOS … + «La congelación puede haberla hecho el proveedor si está justificado documentalmente (art. 8.1): guarda ese justificante.»",
+    "nota": "se RETIRA la atribución «de AESAN» (ANIS-06: sin fuente viva)"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "celda": "C18 (fila NUEVA)",
+    "nota": "la v2.0 de casual todavía NO se ha aplicado a dl/; la fila se inserta ya con la cita correcta. Dry-run exit 0."
+   }
+  ],
+  "kit_tareas": [],
+  "restaurante_creativo": [],
+  "pack_appcc": [
+   {
+    "fichero": "12-analisis-peligros-haccp.xlsx",
+    "hoja": "Análisis Peligros",
+    "celda": "I13",
+    "que": "límite crítico del PCC de anisakis"
+   },
+   {
+    "fichero": "12-analisis-peligros-haccp.xlsx",
+    "hoja": "Instrucciones",
+    "celda": "B32",
+    "que": "bloque «Marco normativo» (+ mención al art. 8.2, cartel/carta-menú)"
+   },
+   {
+    "fichero": "18-registro-congelacion-anisakis.xlsx",
+    "hoja": "Congelación Anisakis",
+    "celda": "A46",
+    "que": "pie «Base legal»"
+   },
+   {
+    "fichero": "18-registro-congelacion-anisakis.xlsx",
+    "hoja": "Congelación Anisakis",
+    "celda": "A49",
+    "que": "pie «Informa al cliente» → ahora art. 8.2"
+   },
+   {
+    "fichero": "18-registro-congelacion-anisakis.xlsx",
+    "hoja": "Instrucciones",
+    "celda": "B28",
+    "que": "«Obligación de informar» → ahora art. 8.2"
+   }
+  ]
+ },
+ "gates_nuevos": [
+  {
+   "paquete": "guias-v2_0",
+   "donde": "motor.py → PROHIBIDAS + restos_prohibidos(wb, fname); main.py lo llama en procesar() ANTES de wb.save() y mete los restos en `fallos` del veredicto",
+   "patron": "(?<!derogó al )(?<!derogó el )RD\\s*1420/2006  (re.I)",
+   "probado": "SÍ — el primer dry-run (antes de la corrección) FALLÓ con exit 1 señalando checklist-appcc.xlsx:APPCC!C27 y !H27"
+  },
+  {
+   "paquete": "kit-tareas-v2_0",
+   "donde": "motor.py → PROHIBIDAS + restos_prohibidos(wb, fname); main.py lo llama en procesar() y suma a `fallos`",
+   "patron": "idéntico",
+   "nota": "SÓLO FALLA, nunca reescribe: el motor sostiene 11 kits LIVE"
+  },
+  {
+   "paquete": "pack-appcc-v2_0",
+   "donde": "motor.py → entrada nueva en PROHIBIDAS (el cableado restos_prohibidos → informe → `fallos` ya existía, igual que para el RD 3484/2000)",
+   "patron": "idéntico (mismo estilo que la entrada del RD 3484/2000)"
+  }
+ ],
+ "dryruns": [
+  {
+   "paquete": "guias-v2_0",
+   "producto": "guia-restaurante-gastronomico",
+   "exit": 0,
+   "comando": "CLAUDE_SCRATCHPAD=<scratch>/anisakis/guias python3 guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run --origen astro-site/public/dl/guia-restaurante-gastronomico --json …",
+   "diff_celdas": [
+    "checklist-appcc.xlsx:APPCC!C27",
+    "checklist-appcc.xlsx:APPCC!H27"
+   ],
+   "diff_total": 2,
+   "regresion": "TODO VERDE (moldes, idempotencia, cache, censo --fail 0 defectos, demos, 41/41 hojas protegidas)"
+  },
+  {
+   "paquete": "guias-v2_0",
+   "producto": "guia-restaurante-casual",
+   "exit": 0,
+   "diff_celdas": [
+    "no comparable: la v2.0 de casual no está aplicada en dl/"
+   ],
+   "diff_total": null,
+   "regresion": "TODO VERDE; la fila insertada cita ya el RD 1021/2022 art. 8.1"
+  },
+  {
+   "paquete": "kit-tareas-v2_0",
+   "producto": "kit-tareas",
+   "exit": 0,
+   "diff_celdas": [],
+   "diff_total": 0,
+   "regresion": "TODO VERDE (idempotencia, cache, §6, DV, bio, censo). 0 diferencias contra dl/: la cita sólo vivía en mensajes de `cambios`, no en celdas"
+  },
+  {
+   "paquete": "kit-tareas-v2_0",
+   "producto": "kit-tareas-restaurante-creativo",
+   "exit": 0,
+   "diff_celdas": [],
+   "diff_total": 0,
+   "regresion": "TODO VERDE; 0 diferencias contra dl/"
+  },
+  {
+   "paquete": "kit-tareas-v2_0",
+   "producto": "kit-tareas-cafeteria (REGRESIÓN)",
+   "exit": 0,
+   "diff_celdas": [],
+   "diff_total": 0,
+   "regresion": "0 diferencias — el gate nuevo no toca nada en un hermano no afectado"
+  },
+  {
+   "paquete": "pack-appcc-v2_0",
+   "producto": "pack-appcc (--solo a,b,c)",
+   "exit": 0,
+   "diff_celdas": [
+    "12-analisis-peligros-haccp.xlsx:'Análisis Peligros'!I13",
+    "12-analisis-peligros-haccp.xlsx:Instrucciones!B32",
+    "18-registro-congelacion-anisakis.xlsx:'Congelación Anisakis'!A46",
+    "18-registro-congelacion-anisakis.xlsx:'Congelación Anisakis'!A49",
+    "18-registro-congelacion-anisakis.xlsx:Instrucciones!B28"
+   ],
+   "diff_total": 14,
+   "regresion": "TODO VERDE; «normas derogadas vivas = 0» en los tres grupos. Las 9 celdas restantes del diff son PREEXISTENTES y ajenas: BONUS-01-registro-formacion.xlsx:'Formación Personal'!D5-D7/E5-E7/H5-H7, sembradas desde `datetime.date.today()` en grupo_c.py:1119-1122 — cambian solas cada día que se ejecute"
+  }
+ ],
+ "capa_producto": [
+  "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts — 8 cadenas (meta description, keywords, FAQ corta, bullet, 2 desc de bloque, FAQ del schema —decía literalmente «RD 1420/2006 vigente»— y bullet del CTA)",
+  "astro-site/src/data/productos/guias/guia-restaurante-japones.ts — 3 (bloque 05 + 2 FAQ)",
+  "astro-site/src/data/productos/guias/guia-restaurante-nikkei.ts — 3 (bloque 05 + 2 FAQ)",
+  "astro-site/src/components/pages/ProductosDigitalesHubPage.astro — 1 (description del hub)",
+  "SPA gemela (src/): 5 componentes de kit-tareas-sushi-bar, 2 de guia-restaurante-japones, 2 de guia-restaurante-nikkei y 5 páginas (incluye el JSON-LD de FAQPage de 3 de ellas y la tarjeta del dashboard post-pago KitTareasSushiBarDashboard.tsx)",
+  "src/data/productos-changelog.ts — SIN cambios: no cita el RD 1420/2006 en ninguna entrada (comprobado)",
+  "transpileModule sobre los 17 .ts/.tsx tocados: 0 diagnósticos"
+ ],
+ "notas": [
+  "TRAMPA CAZADA (y por eso el primer dry-run falló): en las guías, `grupo_b._insertar` sólo AÑADE filas y deduplica por el TEXTO de la tarea. Cambiar el texto en `APPCC['nuevas']` NO reescribe la fila que ya está publicada: DUPLICA la fila (medido: APPCC!C27 con la cita vieja + C31 con la nueva, 81 filas en vez de 80). La corrección se hace con una regla `'sustituciones'` (buscar = texto viejo → tarea/notas nuevos), que corre ANTES que `'nuevas'`; después `_insertar` encuentra el texto nuevo y devuelve 'ya'. Los dos textos (`sustituciones['tarea']` y `nuevas['tarea']`, y sus `notas`) se han verificado IDÉNTICOS: si divergen, vuelve el duplicado.",
+  "En kit-tareas la cita NO estaba en ninguna celda: sólo en dos mensajes de `cambios.append(...)` (contenido_kit_tareas.py:402 y contenido_kit_tareas_restaurante_creativo.py:598). Los textos de las tareas ANISAKIS_FRIOS / ANISAKIS_MEP / ANISAKIS_DIA / ANISAKIS_LARGO y los de los otros 9 hermanos ya decían «≥24 h a −20 °C (o −35 °C 15 h)» sin citar norma, que es correcto con la norma vigente. Por eso el diff de kit-tareas es 0 celdas y no había nada que reescribir en las constantes.",
+  "VERIFICACIÓN LEGAL EXTRA: el pack APPCC atribuía al RD 1420/2006 la obligación de CARTEL, que el art. 8.1 (la cita canónica) no contiene. Se comprobó el texto consolidado del BOE: es el art. 8.2 del mismo RD 1021/2022 («mediante carteles o cartas-menú»). Las 3 celdas del cartel citan el 8.2 y su significado NO se ha tocado. Sin esa comprobación se habría cambiado una cita falsa por otra.",
+  "Se ha RETIRADO la atribución «recomendación de AESAN» de los «5 días» en las notas de gastronómico y casual: ANIS-06 dice explícitamente que no se pudo confirmar contra página oficial viva (todas las rutas de aesan.gob.es sobre anisakis dan 404). La cifra se mantiene como recomendación para congeladores domésticos, sin atribuir.",
+  "PENDIENTE (fuera de alcance, SIN constructor): dos ficheros LIVE siguen con la cita derogada y NINGÚN script los genera, porque la SPEC de la familia CB todavía no se ha ejecutado — astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx:'Registro Congelacion'!A2 («Normativa: RD 1420/2006 y Reglamento CE 853/2004») y astro-site/public/dl/kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx:'Trazabilidad APPCC'!F22 («Obligatorio RD 1420/2006»). Queda anotado en kit-tareas-cb-v2-SPEC.md (decisión ANISAKIS-2026-08-29). El mismo sushi-bar arrastra el defecto de «-20 ºC / 7 días» (DOM-01 del censo CB).",
+  "La landing del sushi-bar prometía «registro de congelación a -20 ºC durante 7 días … conforme al RD 1420/2006». Se ha quitado la atribución del binomio de 7 días a la norma (era doblemente falsa: norma derogada + cifra que la norma nunca fijó) y la promesa se ha reformulado como «registro de congelación por lote y proveedor», que es lo que el fichero entrega. Los DOS testimonios que mencionan «7 días» (kit-tareas-sushi-bar.ts:41 y :307) NO se han tocado: no citan norma y congelar más del mínimo no es falso.",
+  "El único «RD 1420/2006» que queda sin ir precedido de «derogó el» en todo scripts/productos-digitales/ (fuera de auditorias/*.json y de las citas del defecto en las SPEC) es la cadena `'buscar'` de la regla de sustitución en contenido_guia_restaurante_gastronomico/b.py: es el patrón que localiza el texto viejo para reescribirlo, y tiene que ser literal. Está documentado con el comentario ANISAKIS-2026-08-29 justo encima.",
+  "El repo se está tocando en paralelo: mis ediciones de guias-v2_0/ y kit-tareas-v2_0/ ya han sido barridas por los auto-commits de otros workflows (913ec11 «guías v2.0» y eae9833 «kits CB v2.0»). Lo que sigue sin commitear son las SPEC, pack-appcc-v2_0/ y la capa de producto. NO se ha hecho ningún commit ni push desde esta tarea.",
+  "NADA de APPLY: no se ha exportado GUIAS_APPLY / KIT_TAREAS_APPLY / PACK_APPCC_APPLY en ningún momento; astro-site/public/dl/ no se ha tocado (verificado: los 5 dry-runs escribieron sólo en el scratchpad). Sin builds ni navegador; la única salida a red fue una consulta de lectura al texto consolidado del BOE. CPU entre 43,5 y 50,4 °C durante toda la sesión.",
+  "Para APLICAR de verdad hacen falta 3 ejecuciones con su APPLY correspondiente: guías (guia-restaurante-gastronomico; casual sigue sin aplicar su v2.0 entera), pack-appcc con --solo a,b,c (¡el default de --solo es 'a', y con el default el diff sale 0 y parece que no hay nada que hacer!) y ninguna para kit-tareas (0 celdas)."
+ ]
+}

@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '¿Qué normativa debo cumplir para sushi y sashimi (anisakis)?',
-    a: 'El RD 1420/2006 OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas. La guía incluye un PCC específico en el plan APPCC, el checklist de anisakis y el protocolo completo de trazabilidad. Es crítico: un caso positivo puede cerrar tu restaurante.',
+    a: 'El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas. La guía incluye un PCC específico en el plan APPCC, el checklist de anisakis y el protocolo completo de trazabilidad. Es crítico: un caso positivo puede cerrar tu restaurante.',
   },
   {
     q: '¿Sushi-ya, ramen-ya, izakaya u omakase?',

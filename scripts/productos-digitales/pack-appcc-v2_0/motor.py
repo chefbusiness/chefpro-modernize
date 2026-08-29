@@ -142,6 +142,23 @@ PROHIBIDAS = [
     # norma derogada presentada como vigente.
     ('RD 3484/2000 (derogado por el RD 1021/2022)',
      re.compile(r'(?<!derogó al )(?<!derogó el )RD\s*3484/2000', re.I)),
+    # ANIS-01/ANIS-03 (research `auditorias/guias-v2-research-sector.json`,
+    # verificado en la ficha de estado del BOE): el RD 1420/2006 está DEROGADO
+    # desde el 22-dic-2022 por la disposición derogatoria única.h) del RD
+    # 1021/2022. La norma vigente es el art. 8.1 del RD 1021/2022 (congelación
+    # a −20 °C o inferior ≥ 24 h en la totalidad del producto, o −35 °C ≥ 15 h;
+    # la puede haber hecho una etapa anterior si está justificado
+    # documentalmente) junto al Rgto. (CE) 853/2004, Anexo III, Secc. VIII,
+    # Cap. III.D, en la redacción del Rgto. (UE) 1276/2011. La obligación de
+    # informar al consumidor con cartel o carta-menú NO desaparece: pasa al
+    # art. 8.2 del mismo RD 1021/2022.
+    # Igual que con el 3484/2000, aquí NO hay sustitución automática: cada
+    # grupo reescribe su frase entera, porque cambiar sólo la sigla dejaría el
+    # apartado equivocado colgado de la nueva norma. Esto es el gate que impide
+    # que la cita derogada vuelva. El lookbehind deja pasar la única mención
+    # legítima: «… que derogó el RD 1420/2006».
+    ('RD 1420/2006 (derogado por el RD 1021/2022)',
+     re.compile(r'(?<!derogó al )(?<!derogó el )RD\s*1420/2006', re.I)),
     ('escala de gravedad inventada («MODERADA»)', re.compile(r'\bMODERADA\b')),
 ]
 

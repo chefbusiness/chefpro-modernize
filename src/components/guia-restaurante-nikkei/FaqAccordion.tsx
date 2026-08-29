@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '¿Qué normativa aplica a tiraditos, ceviches nikkei y leches de tigre?',
-    a: 'El RD 1420/2006 OBLIGA a congelar preventivamente todo pescado destinado a ser consumido crudo o marinado (tiraditos, ceviches nikkei, sashimi) a -20°C durante mínimo 24 horas. La guía incluye un PCC específico para pescado crudo Y para leches de tigre (cadena de frío), checklist anisakis y protocolo completo de trazabilidad.',
+    a: 'El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado destinado a ser consumido crudo o marinado (tiraditos, ceviches nikkei, sashimi) a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas. La guía incluye un PCC específico para pescado crudo Y para leches de tigre (cadena de frío), checklist anisakis y protocolo completo de trazabilidad.',
   },
   {
     q: '¿Cevichería nikkei, omakase nikkei o casual premium?',

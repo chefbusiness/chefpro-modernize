@@ -17,7 +17,7 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_TAREAS_SUSHI_BAR || 
 
 const checkItems = [
   '11 checklists pre-rellenados listos para imprimir',
-  'Protocolo anisakis APPCC obligatorio (RD 1420/2006) con registro -20 ºC / 7 días',
+  'Protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1) con registro de congelación por lote',
   'Preparación de arroz sushi con control de pH (≤4.6) y tiempos de descarte',
   'Barra sushi y vitrina neta case (2-4 ºC) con rotación FIFO',
   'Tareas por perfil: itamae, ayudante, cocina caliente, sala',

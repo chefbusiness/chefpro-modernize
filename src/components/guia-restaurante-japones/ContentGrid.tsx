@@ -11,7 +11,7 @@ const chapters = [
   { icon: TrendingUp, num: '02', title: 'El Mercado Japonés en España 2026', desc: 'Crecimiento +35% en 5 años, ciudades con mayor demanda, omakase con listas de espera, público foodie.' },
   { icon: Briefcase, num: '03', title: 'Modelos de Negocio', desc: 'Sushi-ya, ramen-ya, izakaya, omakase premium, robatayaki, mixto y dark kitchen japonesa.' },
   { icon: Calculator, num: '04', title: 'Estudio de Viabilidad y Plan Financiero', desc: 'Inversión 250K-500K€, food cost 30-35%, márgenes sake/whisky 75-85%, break-even mes 10-16.' },
-  { icon: Scale, num: '05', title: 'Requisitos Legales + Normativa Anisakis', desc: 'Licencias, RD 1420/2006 congelación preventiva -20°C/24h, importación, registro sanitario.' },
+  { icon: Scale, num: '05', title: 'Requisitos Legales + Normativa Anisakis', desc: 'Licencias, congelación preventiva anti-anisakis (RD 1021/2022, art. 8.1) -20°C/24h, importación, registro sanitario.' },
   { icon: ShieldCheck, num: '06', title: 'APPCC para Pescado Crudo y Shari', desc: 'APPCC con PCC específicos: anisakis, temperatura arroz sushi, caldos ramen, alérgenos.' },
   { icon: MapPin, num: '07', title: 'Ubicación y Local', desc: 'Zonas ideales, metros para 60 plazas, barra sushi, proximidad a mercados de pescado fresco.' },
   { icon: Layout, num: '08', title: 'Diseño de Cocina Japonesa', desc: 'Barra de sushi, estación shari, ramen station, robata binchotan, teppanyaki, zona tempura.' },

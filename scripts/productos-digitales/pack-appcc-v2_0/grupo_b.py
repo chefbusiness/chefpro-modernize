@@ -1262,7 +1262,8 @@ def _post_11(wb, fname, cambios):
 #     enfriamiento). El plan se autoincumplía en su documento maestro.
 #   DOM-06 — no existía el anisakis en todo el pack, siendo obligación con
 #     sanción en cualquier local que sirva boquerones en vinagre, ceviche o
-#     sushi (Reg. 853/2004 Anexo III + RD 1420/2006).
+#     sushi (RD 1021/2022, art. 8.1, que derogó el RD 1420/2006, y Reg.
+#     853/2004 Anexo III, Secc. VIII, Cap. III.D).
 #   DOM-17/TEC-08/COM-20 — faltaban las columnas de medida preventiva y de
 #     verificación (principio 6), Probabilidad y Gravedad no alimentaban nada, y
 #     dos filas con la MISMA puntuación que otras se resolvían al revés. Dos
@@ -1395,7 +1396,8 @@ PELIGROS_12 = [
      'elaboración',
      'Alta', 'Alta', 'PCC',
      '-20 °C durante al menos 24 h en todas las partes de la pieza, o -35 °C '
-     'durante al menos 15 h (Reg. (CE) 853/2004, Anexo III + RD 1420/2006)',
+     'durante al menos 15 h (RD 1021/2022, art. 8.1, que derogó el '
+     'RD 1420/2006, y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D)',
      '18 Congelación preventiva de anisakis',
      'En cada lote destinado a crudo o semicrudo; jefe de cocina',
      'No servir la pieza: repetir la congelación completa o desecharla',
@@ -1731,8 +1733,11 @@ def _instrucciones_12(wb, cambios, n, fases):
               'información inmediata a la autoridad competente.'),
         ('b', 'Reg. (UE) 1169/2011 y RD 126/2015 — información alimentaria '
               'facilitada al consumidor, incluidos los alérgenos.'),
-        ('b', 'Reg. (CE) 853/2004, Anexo III y RD 1420/2006 — congelación '
-              'preventiva del pescado destinado a consumo en crudo (anisakis).'),
+        ('b', 'RD 1021/2022, art. 8.1 —que derogó el RD 1420/2006— y '
+              'Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D — '
+              'congelación preventiva del pescado destinado a consumo en crudo '
+              '(anisakis). El art. 8.2 añade informar al consumidor con cartel '
+              'o carta-menú.'),
         ('b', 'Reg. (CE) 2073/2005 — criterios microbiológicos aplicables a '
               'los productos alimenticios.'),
         ('b', 'Ley 17/2011, de seguridad alimentaria y nutrición — régimen '

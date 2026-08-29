@@ -12,8 +12,9 @@ nuevos y los dos bonos.
     apuntaba a un registro que no existía (DOM-01/TEC-04/COM-04, altas).
   · 17 enfriamiento / descongelación — NUEVO, dos pestañas. Ídem.
   · 18 congelación preventiva de anisakis — NUEVO. Obligación con sanción en
-    España (Reg. (CE) 853/2004 Anexo III + RD 1420/2006) que el pack no cubría
-    por ninguna parte (DOM-06, alta).
+    España (RD 1021/2022, art. 8.1, que derogó el RD 1420/2006, y Reg. (CE)
+    853/2004 Anexo III, Secc. VIII, Cap. III.D) que el pack no cubría por
+    ninguna parte (DOM-06, alta).
   · 19 verificación de termómetros — NUEVO. Todo el pack decide con sondas que
     nadie contrastaba (DOM-10/COM-07).
   · BONUS-01 formación — «Válido hasta», «Firma del empleado» y Estado con
@@ -829,10 +830,10 @@ def _post_18(wb, fname, cambios):
                   marca_col='K')
 
     _pie(ws, F1_18 + 2, 11, extra=[
-        'Base legal: Reg. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III, D '
-        'y RD 1420/2006, de 1 de diciembre. El tratamiento debe alcanzar '
-        '-20 °C durante al menos 24 horas EN TODAS LAS PARTES de la pieza, o '
-        '-35 °C durante al menos 15 horas.',
+        'Base legal: RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) y '
+        'Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D. El '
+        'tratamiento debe alcanzar -20 °C durante al menos 24 horas EN TODAS '
+        'LAS PARTES de la pieza, o -35 °C durante al menos 15 horas.',
         'Un congelador doméstico de tres estrellas no llega a -20 °C con carga: '
         'mide la temperatura del equipo cada vez y anótala, porque es la '
         'columna que el inspector cruza con este registro y con el fichero 01.',
@@ -843,8 +844,9 @@ def _post_18(wb, fname, cambios):
                   'la exención del Reg. (CE) 853/2004 con la acreditación '
                   'escrita del productor, '
         'ni en moluscos bivalvos.',
-        'Informa al cliente: el RD 1420/2006 obliga a poner un cartel visible '
-        'diciendo que el pescado servido crudo o poco cocinado ha sido '
+        'Informa al cliente: el art. 8.2 del RD 1021/2022 —el mismo que '
+        'derogó el RD 1420/2006— obliga a decir, con carteles o en la '
+        'carta-menú, que el pescado servido crudo o poco cocinado ha sido '
         'congelado previamente.',
     ])
     motor.IMPRESION[(fname, ws.title)] = (4, True, 'C5')  # TEC-08
@@ -890,8 +892,9 @@ def _post_18(wb, fname, cambios):
                   'acredite POR ESCRITO: guarda esa ficha del proveedor, es lo '
                   'que pide el inspector. Y los moluscos bivalvos.'),
             ('h', 'Obligación de informar'),
-            ('p', 'El RD 1420/2006 obliga a informar al consumidor, con un '
-                  'cartel visible o en la carta, de que el pescado servido '
+            ('p', 'El art. 8.2 del RD 1021/2022 —el mismo que derogó el '
+                  'RD 1420/2006— obliga a informar al consumidor, con '
+                  'carteles o en la carta-menú, de que el pescado servido '
                   'crudo o poco cocinado ha sido congelado previamente.'),
             ('h', 'Frecuencia y archivo'),
             ('b', 'Frecuencia: cada lote de pescado que vaya a servirse crudo. '
