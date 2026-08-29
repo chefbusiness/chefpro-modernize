@@ -186,6 +186,54 @@ BODEGA = {
               'Dulce', 'Sake', 'Otros'],
     'fuente': 'guía cap. 12 (carta de 300-500 referencias; multiplicador '
               'x2,5-x3,5 sobre coste; food cost de vino 28-40 %)',
+    #: RT-30 — criterio de precarga INCOHERENTE dentro del mismo pack: el
+    #: motor precargaba 12 platos en el menu engineering y dejaba las 50
+    #: referencias de la bodega completamente vacías, así que sus 355 fórmulas
+    #: nuevas (multiplicador, margen s/PVP, food cost de bebida, valor de stock
+    #: a coste y a PVP) no enseñaban ni un resultado al abrir el fichero. Diez
+    #: referencias de EJEMPLO, en verde, con el mismo criterio que los platos.
+    #:
+    #: De dónde sale cada número:
+    #:   · el MULTIPLICADOR está entre ×2,5 y ×3,5 sobre el coste, que es la
+    #:     banda del cap. 12; el PVP de carta se anuncia CON IVA (21 % en
+    #:     bebida alcohólica), así que PVP carta = coste × multiplicador × 1,21;
+    #:   · el food cost de bebida resultante cae entre el 28 % y el 40 % del
+    #:     mismo capítulo (que es lo que la columna M contrasta);
+    #:   · el STOCK y las UDS VENDIDAS/MES son EJEMPLO: no hay ninguna fuente
+    #:     de rotación para una bodega que aún no ha abierto, y no se finge que
+    #:     la haya. Son cifras redondas, en celda verde, y la hoja lo dice.
+    'referencias': [
+        {'referencia': 'Rioja Reserva — tempranillo de finca',
+         'tipo': 'Tinto', 'do': 'D.O.Ca. Rioja', 'coste': 12.0,
+         'pvp': 40.0, 'stock': 48, 'uds': 22},
+        {'referencia': 'Ribera del Duero crianza',
+         'tipo': 'Tinto', 'do': 'D.O. Ribera del Duero', 'coste': 15.0,
+         'pvp': 50.0, 'stock': 36, 'uds': 16},
+        {'referencia': 'Mencía de parcela',
+         'tipo': 'Tinto', 'do': 'D.O. Bierzo', 'coste': 18.0,
+         'pvp': 58.0, 'stock': 24, 'uds': 10},
+        {'referencia': 'Albariño sobre lías',
+         'tipo': 'Blanco', 'do': 'D.O. Rías Baixas', 'coste': 10.0,
+         'pvp': 34.0, 'stock': 48, 'uds': 26},
+        {'referencia': 'Godello de viñas viejas',
+         'tipo': 'Blanco', 'do': 'D.O. Valdeorras', 'coste': 13.0,
+         'pvp': 44.0, 'stock': 30, 'uds': 12},
+        {'referencia': 'Verdejo fermentado en barrica',
+         'tipo': 'Blanco', 'do': 'D.O. Rueda', 'coste': 9.0,
+         'pvp': 30.0, 'stock': 36, 'uds': 18},
+        {'referencia': 'Rosado de lágrima',
+         'tipo': 'Rosado', 'do': 'D.O. Navarra', 'coste': 8.0,
+         'pvp': 27.0, 'stock': 24, 'uds': 9},
+        {'referencia': 'Corpinnat brut nature gran reserva',
+         'tipo': 'Espumoso', 'do': 'Penedès', 'coste': 16.0,
+         'pvp': 54.0, 'stock': 30, 'uds': 14},
+        {'referencia': 'Manzanilla pasada en rama',
+         'tipo': 'Generoso', 'do': 'D.O. Manzanilla-Sanlúcar', 'coste': 11.0,
+         'pvp': 37.0, 'stock': 18, 'uds': 8},
+        {'referencia': 'Pedro Ximénez viejo (media botella)',
+         'tipo': 'Dulce', 'do': 'D.O. Montilla-Moriles', 'coste': 14.0,
+         'pvp': 47.0, 'stock': 12, 'uds': 6},
+    ],
 }
 
 
