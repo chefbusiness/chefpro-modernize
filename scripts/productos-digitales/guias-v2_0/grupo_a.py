@@ -2303,6 +2303,8 @@ def cash_flow(wb, fname, cambios, contenido, subtitulo):
            + '/' + str(f_acum) + ' sobre ' + str(len(meses))
            + ' meses (TEC-03, DOM-09)')
 
+    _precargar_cash(ws, meses, cambios, fname, contenido,
+                    (f_ing_bloque, f_tot_ing), (f_gas_bloque, f_tot_gas))
     capa = _bloque_iva_y_deuda(ws, meses, total,
                                {'ingresos': f_tot_ing, 'neto': f_neto},
                                f_acum, cambios, fname, contenido)
@@ -2317,6 +2319,50 @@ def cash_flow(wb, fname, cambios, contenido, subtitulo):
                     'equilibrio sale antes de tiempo.',
                 re.compile(r'^El break-even se lee'))
     return variante
+
+
+def _precargar_cash(ws, meses, cambios, fname, contenido, bloque_ing,
+                    bloque_gas):
+    """RD-06/RC-08 — las 12 columnas se entregaban VACÍAS y el punto de
+    equilibrio decía «No alcanzado» nada más abrir el fichero, en la plantilla
+    que la tarjeta vende como «punto de equilibrio automático».
+
+    Se precarga el escenario REALISTA con una rampa de apertura (§7-bis.7: la
+    misma facturación que el P&L), en VERDE y como valor de ejemplo (§1.2). Si
+    el módulo de contenido no la trae, la hoja se queda vacía: aquí no se
+    inventa ninguna serie.
+    """
+    conf = ((getattr(contenido, 'CASH', None) or {}) if contenido else {})
+    mes_tipo = conf.get('mes_tipo') or {}
+    rampa = conf.get('rampa')
+    if not mes_tipo or not rampa:
+        return 0
+    grupos = ((mes_tipo.get('ingresos') or {}, bloque_ing, True),
+              (mes_tipo.get('variables') or {}, bloque_gas, True),
+              (mes_tipo.get('fijos') or {}, bloque_gas, False))
+    puestas = 0
+    for valores, (ini, fin), con_rampa in grupos:
+        for patron, valor in valores.items():
+            r = _fila(ws, patron, desde=ini + 1, hasta=fin - 1,
+                      obligatoria=False)
+            if r is None:
+                continue
+            for i, col in enumerate(meses):
+                if ws[col + str(r)].data_type == 'f':
+                    continue
+                factor = rampa[i] if (con_rampa and i < len(rampa)) else 1.0
+                motor.val(ws, col + str(r), round(valor * factor, 2),
+                          fmt=FMT_EUR, verde_=True)
+                motor.fijar_formato(ws, col + str(r), FMT_EUR)
+                puestas += 1
+    if puestas:
+        apunta(cambios, fname, ws, str(puestas) + ' celdas de los 12 meses '
+               'precargadas en verde con el escenario REALISTA y una rampa de '
+               'apertura (' + ' · '.join('%d %%' % round(x * 100)
+                                         for x in rampa)
+               + '): el punto de equilibrio deja de decir «No alcanzado» al '
+               'abrir el fichero (RD-06, RC-08)')
+    return puestas
 
 
 def _break_even_hoja_propia(ws, capa, meses, hoja_caja, cambios, fname,
