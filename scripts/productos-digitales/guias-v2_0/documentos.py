@@ -151,9 +151,24 @@ def guard_no_latinos(texto, etiqueta=''):
     return fallos
 
 
+RX_CITA = re.compile(r'\(\s*[^)]{8,}\)|\b\d{4}-\d{2}\b')
+RX_TENDENCIA_CADUCA = re.compile(
+    r'(tendencias?|previsiones?|novedades)[^.\n]{0,25}\b(19\d{2}|20[0-2]\d)\b'
+    r'|\b20[0-2]\d\s*[-/]\s*20[0-2]\d\b', re.I)
+
+
 def erratas_fechas(texto):
-    """Ningún año anterior a 2026 a menos de 90 caracteres de lenguaje de
-    precios o de «tendencias» (§5.6.7), sin tumbar las citas legales."""
+    """Ningun anio anterior a 2026 a menos de 90 caracteres de lenguaje de
+    precios (SPEC 5.6.7), sin tumbar las citas legales NI las fuentes fechadas.
+
+    Un anio pasado ACOMPANADO DE SU FUENTE no es una fecha caduca: es un dato
+    fechado, que es justamente lo que exige la decision 7-bis.21 («cada cifra
+    con su fuente y su fecha de corte»). La fecha caduca del incidente de las
+    librerias de prompts —«precios HORECA de mayo de 2025»— no llevaba
+    ninguna. Lo que NO se salva por llevar cita es un ROTULO con anio pasado
+    («Tendencias 2025-2026» en un producto de agosto de 2026), que es el
+    defecto COM-29: por eso va aparte y sin exencion.
+    """
     fallos = []
     for m in re.finditer(r'\b(19\d{2}|20[0-2]\d)\b', texto):
         anio = int(m.group(1))
@@ -161,11 +176,19 @@ def erratas_fechas(texto):
             continue
         antes = texto[max(0, m.start() - 60):m.start()]
         if RX_LEGAL_ANTES.search(antes) or re.search(r'\d+/$', antes):
-            continue                      # «RD 1021/2022», «853/2004»
+            continue
         ventana = texto[max(0, m.start() - 90):m.end() + 90]
-        if RX_PRECIO.search(ventana):
-            fallos.append({'anio': anio,
-                           'contexto': ventana.replace('\n', ' ')})
+        if not RX_PRECIO.search(ventana):
+            continue
+        if RX_CITA.search(texto[max(0, m.start() - 250):m.end() + 250]):
+            continue
+        fallos.append({'anio': anio, 'contexto': ventana.replace('\n', ' ')})
+    for m in RX_TENDENCIA_CADUCA.finditer(texto):
+        frag = m.group(0)
+        anios = [int(x) for x in re.findall(r'\b(19\d{2}|20\d{2})\b', frag)]
+        if anios and min(anios) < 2026:
+            fallos.append({'anio': min(anios), 'contexto': frag,
+                           'tipo': 'rotulo_con_anio_pasado'})
     return fallos
 
 
@@ -177,6 +200,25 @@ RX_MORTALIDAD = re.compile(
     r'quiebran?)', re.I)
 RX_MORTALIDAD2 = re.compile(
     r'(cierran?|fracasan?|no\s+sobreviv|mueren)[^.]{0,60}?(\d{1,3})\s*%', re.I)
+
+
+# El capítulo 5 se publicó con «Debo asegurarme de no mencionar el libro de
+# visitas. No mencionar "fracaso" de restaurantes...» DENTRO del texto: el
+# modelo volcó su razonamiento en el cuerpo. Y cuatro bloques escribieron «la
+# tabla de abajo, que el maquetador insertará»: vocabulario del taller, no del
+# libro. Las dos cosas se venden tal cual si nadie las mide.
+RX_META = re.compile(
+    r'(debo asegurar|me piden|se me pide|el maquetador|el prompt|'
+    r'las instrucciones|como modelo|no puedo escribir|voy a redactar|'
+    r'el guion dice|el usuario quiere|epígrafes que me)', re.I)
+
+
+def erratas_meta(texto):
+    fallos = []
+    for m in RX_META.finditer(texto):
+        ini = max(0, m.start() - 70)
+        fallos.append(texto[ini:m.end() + 90].replace('\n', ' '))
+    return fallos
 
 
 def erratas_mortalidad(texto, permitidos):
@@ -469,10 +511,13 @@ def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
             + ctx_sector)
     if cap.get('tablas_anunciadas'):
         partes.append(
-            'En este capítulo el maquetador insertará estas tablas DESPUÉS de '
-            'tu texto: ' + '; '.join(cap['tablas_anunciadas']) +
-            '. Puedes referirte a ellas («la tabla de abajo»), pero NO las '
-            'escribas tú.')
+            'Justo DESPUÉS de tu texto, en el documento, aparecerán estas '
+            'tablas ya montadas: ' + '; '.join(cap['tablas_anunciadas']) +
+            '. NO las escribas tú. Puedes remitir a ellas con naturalidad («la '
+            'tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el '
+            'proceso de edición ni palabras como «maquetador», «prompt», '
+            '«instrucciones» o «guion»: el lector compra un libro, no ve el '
+            'taller. Tampoco escribas tu propio razonamiento.')
     if cap.get('prohibido'):
         partes.append('LO QUE NO DEBES DECIR (son errores reales de la edición '
                       'anterior de esta guía y no se pueden repetir):\n'
@@ -1001,6 +1046,10 @@ def valores_admitidos(xlsx_dir, idx_research, extra=()):
         for dec in (0, 1, 2):
             vals.add(num(f, dec))
             vals.add(num(round(f), 0))
+            # el texto escribe «-19.116» como «19.116» detras de un signo: el
+            # buscador de cifras no captura el menos
+            vals.add(num(abs(f), dec))
+            vals.add(num(round(abs(f)), 0))
         if 0 < abs(f) <= 1:
             for dec in (0, 1, 2):
                 vals.add(num(f * 100, dec))
@@ -1022,11 +1071,19 @@ def valores_admitidos(xlsx_dir, idx_research, extra=()):
                     if isinstance(c.value, str):
                         for m in re.finditer(r'\d[\d.,]*', c.value):
                             vals.add(m.group(0))
+    # Del research entra la cifra Y los numeros de su texto (cita literal,
+    # nota, titulo de la fuente): son datos CON FUENTE, y el redactor los cita
+    # («el dato cerrado de 2024 fue de 29.800 millones» sale de la nota de
+    # SECT-03, no de la cabeza del modelo).
     for d in idx_research.values():
         mete(d.get('cifra'))
-        if isinstance(d.get('cifra'), str):
-            for m in re.finditer(r'\d[\d.,]*', d['cifra']):
-                vals.add(m.group(0))
+        for campo in ('cifra', 'cita_literal', 'nota', 'fuente_titulo', 'dato',
+                      'unidad'):
+            v = d.get(campo)
+            if isinstance(v, str):
+                for m in re.finditer(r'\d[\d.,]*', v):
+                    vals.add(m.group(0))
+                    vals.add(m.group(0).rstrip('.,'))
     for e in extra:
         vals.add(str(e))
         mete(e)
@@ -1037,19 +1094,25 @@ RX_CIFRA_GRANDE = re.compile(r'\b\d{1,3}(?:\.\d{3})+(?:,\d+)?\b')
 
 
 def coherencia_cifras(md_text, admitidos, ignorar=()):
-    """Cada cifra «de dinero» del texto (con separador de miles) tiene que
-    existir en una celda del xlsx o en el research. Devuelve la lista de las
-    que no, con su contexto: es un informe, no una adivinanza."""
-    fallos, vistas = [], set()
+    """Cada cifra con separador de miles del texto tiene que existir en una
+    celda de los xlsx del producto o en el research (SPEC 5.6.8). Devuelve DOS
+    listas: las de DINERO (con moneda pegada) son BLOQUEANTES —una cifra de
+    inversion inventada es el defecto que esta v2.0 viene a corregir— y las
+    demas quedan como aviso, porque una temperatura de color de 2.700 K o una
+    superficie no son cifras de negocio."""
+    euro, otras, vistas = [], [], set()
     for m in RX_CIFRA_GRANDE.finditer(md_text):
-        s = m.group(0)
-        if s in admitidos or s in ignorar or s in vistas:
+        t = m.group(0)
+        if t in admitidos or t in ignorar or t in vistas:
             continue
-        vistas.add(s)
-        ini = max(0, m.start() - 70)
-        fallos.append({'cifra': s,
-                       'contexto': md_text[ini:m.end() + 70].replace('\n', ' ')})
-    return fallos
+        vistas.add(t)
+        ini = max(0, m.start() - 80)
+        ctx = md_text[ini:m.end() + 80].replace('\n', ' ')
+        cerca = md_text[m.end():m.end() + 32].lower()
+        es_dinero = ('\u20ac' in cerca or 'eur' in cerca or 'euro' in cerca
+                     or 'millones' in cerca)
+        (euro if es_dinero else otras).append({'cifra': t, 'contexto': ctx})
+    return euro, otras
 
 
 def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
@@ -1057,7 +1120,10 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
     d_docx, t_docx = texto_docx(docx_path)
     n_pdf, n_docx = palabras(t_pdf), palabras(t_docx)
     caps = re.findall(r'^## (\d+)\. (.+)$', md_text, re.M)
-    tablas_md = len(re.findall(r'^\|[^\n]*\|\s*\n\|[\s:|-]+\|', md_text, re.M))
+    # Las tablas se cuentan con el MISMO parser que maqueta (no con un regex
+    # propio): un regex distinto contaba 33 donde el maquetador emitia 32 y la
+    # paridad fallaba por una tabla que no existia en ningun formato.
+    tablas_md = sum(1 for t, _ in parsear(md_text) if t == 'table')
 
     # palabras por capítulo
     trozos = re.split(r'^## ', md_text, flags=re.M)
@@ -1082,7 +1148,15 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
     faltan_en_pdf = [t for _, t in caps if norm(t)[:38] not in t_pdf_n]
 
     admitidos = valores_admitidos(xlsx_dir, idx_research, cfg.get('cifras_extra', ()))
-    incoherentes = coherencia_cifras(md_text, admitidos, cfg.get('cifras_ignorar', ()))
+    incoherentes, avisos_cifras = coherencia_cifras(
+        md_text, admitidos, cfg.get('cifras_ignorar', ()))
+
+    # El PDF lleva cabecera y pie EN CADA PAGINA; el DOCX no. Comparar los dos
+    # en bruto acusaba un 3,3 % de diferencia que es exactamente el mobiliario
+    # de pagina, no contenido que falte. La paridad se mide sobre el CUERPO.
+    palabras_marco = palabras(cfg.get('cabecera', '')) + \
+        palabras(cfg.get('pie', '')) + 2          # «Pagina N»
+    n_pdf_cuerpo = n_pdf - doc_pdf.page_count * palabras_marco
 
     r = {
         'paginas_pdf': doc_pdf.page_count,
@@ -1101,15 +1175,18 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
         'fechas_caducas': erratas_fechas(md_text),
         'mortalidad_sin_fuente': erratas_mortalidad(
             md_text, cfg.get('mortalidad_permitida', [])),
+        'fugas_de_taller': erratas_meta(md_text),
         'tabla_tras_ultimo_capitulo': bool(tabla_tras_ultimo_cap and tabla_en_cola),
         'titulos_ausentes_en_pdf': faltan_en_pdf,
         'cifras_no_encontradas': incoherentes,
+        'cifras_aviso_no_dinero': avisos_cifras,
+        'palabras_pdf_cuerpo': n_pdf_cuerpo,
         'meta_pdf': {'author': doc_pdf.metadata.get('author'),
                      'title': doc_pdf.metadata.get('title')},
     }
     d = __import__('docx').Document(docx_path).core_properties
     r['meta_docx'] = {'author': d.author, 'title': d.title}
-    dif = abs(n_pdf - n_docx) / max(1, max(n_pdf, n_docx))
+    dif = abs(n_pdf_cuerpo - n_docx) / max(1, max(n_pdf_cuerpo, n_docx))
     r['paridad_palabras_pct'] = round(dif * 100, 2)
 
     r['ok'] = {
@@ -1122,6 +1199,7 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
         'no_latinos': (r['no_latinos_md'] + r['no_latinos_pdf'] + r['no_latinos_docx']) == 0,
         'fechas': not r['fechas_caducas'],
         'mortalidad': not r['mortalidad_sin_fuente'],
+        'sin_fugas_de_taller': not r['fugas_de_taller'],
         'metadata': (r['meta_pdf']['author'] == 'AI Chef Pro'
                      and bool(r['meta_pdf']['title'])
                      and r['meta_docx']['author'] == 'AI Chef Pro'
@@ -1179,6 +1257,8 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
     docx_path, pdf_path, saneados = maquetar(md_text,
                                              os.path.join(salida, nombre), meta)
     cfg = dict(guia['gates'])
+    cfg['cabecera'] = meta['cabecera']
+    cfg['pie'] = meta['pie']
     if cfg_extra:
         cfg.update({k: v for k, v in cfg_extra.items() if k != 'meta'})
     g = gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research)

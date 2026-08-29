@@ -1,0 +1,2080 @@
+{
+  "_meta": {
+    "pid": "guia-restaurante-gastronomico",
+    "generado": "2026-08-29 11:48",
+    "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico",
+    "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico",
+    "modelo": "~deepseek/deepseek-v4-flash-latest",
+    "research": "2026-08-29",
+    "research_ausente": false
+  },
+  "documentos": {
+    "guia-restaurante-gastronomico": {
+      "gates": {
+        "paginas_pdf": 129,
+        "paginas_prometidas": 80,
+        "palabras_md": 68966,
+        "palabras_pdf": 66911,
+        "palabras_docx": 64727,
+        "palabras_objetivo": 37000,
+        "capitulos": 22,
+        "tablas_md": 33,
+        "tablas_docx": 32,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [
+          {
+            "anio": 2025,
+            "contexto": " los cuales los restaurantes generan aproximadamente 31.000 millones (Profesional Horeca, 2025). El ticket medio por transacción con tarjeta es de 21 euros (CaixaBank Research, 2025), "
+          },
+          {
+            "anio": 2025,
+            "contexto": "a, 2025). El ticket medio por transacción con tarjeta es de 21 euros (CaixaBank Research, 2025), muy lejos de los 123,20 € de nuestro escenario. Esa distancia explica por qué el restau"
+          },
+          {
+            "anio": 2025,
+            "contexto": "n (Observatorio CaixaBank Food&Drinks / Campus CaixaBankLab, datos de CaixaBank Research, 2025). Ese dato sirve para entender el mercado, no para fijar precios. El sector de restaurant"
+          },
+          {
+            "anio": 2025,
+            "contexto": "a hostelería que supera los 300.000 establecimientos (Restauración News, sobre el Anuario 2025 de Hostelería de España, 2026-01-07) y que produce 166.211 millones de euros incluyendo a"
+          },
+          {
+            "anio": 2025,
+            "contexto": "ería, así llega el sector a 2026: estable y exigido — Restauración News, sobre el Anuario 2025 de Hostel, 2026-01-07). El sector en su conjunto factura 166.211 millones de euros (misma"
+          },
+          {
+            "anio": 2025,
+            "contexto": " con una facturación de 31.000 millones — Profesional Horeca, sobre el estudio sectorial, 2025-12). El censo de empresas y locales de restaurantes en España es de 70.997 empresas (mism"
+          },
+          {
+            "anio": 2025,
+            "contexto": "dad del sector, medida como variación interanual, cerró en -0,9 % (La hostelería finaliza 2025 con un aumento de la facturación hasta el 4 %, en un año marcado por la incertidumbre, 20"
+          },
+          {
+            "anio": 2025,
+            "contexto": "25 con un aumento de la facturación hasta el 4 %, en un año marcado por la incertidumbre, 2025-12-16). Es decir, la facturación agregada sube, pero el resultado de explotación medio se"
+          },
+          {
+            "anio": 2025,
+            "contexto": "cir, la facturación agregada sube, pero el resultado de explotación medio se comprime. En 2025 se registraron 11.183 establecimientos de restauración cerrados en el año (La restauració"
+          },
+          {
+            "anio": 2025,
+            "contexto": "ales en España, por todos los motivos, alcanzó los 134.700 millones de euros al cierre de 2025 (El gasto de los turistas internacionales supera los 134.700 millones de euros al cierre "
+          },
+          {
+            "anio": 2025,
+            "contexto": "l gasto de los turistas internacionales supera los 134.700 millones de euros al cierre de 2025, un 6,8 % más — 2026-02). Sobre ese total, los viajes en los que el turista realizó al me"
+          },
+          {
+            "anio": 2025,
+            "contexto": "nes de euros (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 — Agenttravel, sobre el informe, 2026-06-15). Esa cifra suena rotunda, pero hay que leerl"
+          },
+          {
+            "anio": 2025,
+            "contexto": "tabilidad es el dato que más te importa. La restauración española facturó un 3,1 % más en 2025, pero perdió rentabilidad: -0,9 % interanual, por el aumento de costes (Hostelería Digita"
+          },
+          {
+            "anio": 2025,
+            "contexto": "ilidad: -0,9 % interanual, por el aumento de costes (Hostelería Digital, sobre el Anuario 2025 de Hostelería de España, 2025-12-16). El alojamiento, en cambio, ganó un +2,1 %. Es decir"
+          },
+          {
+            "anio": 2025,
+            "contexto": " el aumento de costes (Hostelería Digital, sobre el Anuario 2025 de Hostelería de España, 2025-12-16). El alojamiento, en cambio, ganó un +2,1 %. Es decir: más ingresos, menos margen. "
+          },
+          {
+            "anio": 2025,
+            "contexto": "llame. La facturación del subsector de restaurantes ronda los 31.000 millones de euros en 2025, con un desglose de 23.310 millones en servicio en mesa y 6.490 en servicio rápido (DBK, "
+          },
+          {
+            "anio": 2025,
+            "contexto": " dos millones en verano (Diario de Gastronomía, sobre el Anuario de Hostelería de España, 2025-12-21).  No hay una cifra única de «facturación de la restauración»: tienes 166.211 millo"
+          },
+          {
+            "anio": 2025,
+            "contexto": "asto total de los turistas internacionales en España alcanzó 134.700 millones de euros en 2025, un 6,8 % más que el año anterior (Ministerio de Industria y Turismo, 2026-02). Los 37.26"
+          },
+          {
+            "anio": 2025,
+            "contexto": "aga 31,2 euros de media (Observatorio CaixaBank Food&Drinks, datos de CaixaBank Research, 2025). Ese es el ticket de todo el sector, no el de un restaurante gastronómico. No lo extrapo"
+          },
+          {
+            "anio": 2025,
+            "contexto": "s de lo que parece. El gasto en foodservice comercial alcanzó 43.500 millones de euros en 2025, con 7.200 millones de visitas; la restauración independiente concentra el 68 % del gasto"
+          },
+          {
+            "anio": 2015,
+            "contexto": "ar \"fracaso\" de restaurantes. No citar años anteriores a 2026 salvo las normas que son de 2015 y 2019, pero esas son fechas de las normas, no de precios o tendencias. Está permitido ci"
+          },
+          {
+            "anio": 2019,
+            "contexto": "caso\" de restaurantes. No citar años anteriores a 2026 salvo las normas que son de 2015 y 2019, pero esas son fechas de las normas, no de precios o tendencias. Está permitido citar nor"
+          },
+          {
+            "anio": 2011,
+            "contexto": "a redacción dada por el Reglamento (UE) 1276/2011 (EUR-Lex, texto consolidado 02004R0853, 2011-12-09), fija los mismos valores de -20 / -35 °C durante 24 h ó 15 h respectivamente. Es i"
+          },
+          {
+            "anio": 2025,
+            "contexto": "dió rentabilidad en 2025, con una variación interanual del -0,9 % (La hostelería finaliza 2025 con un aumento de la facturación hasta el 4 %, en un año marcado por la incertidumbre, 20"
+          },
+          {
+            "anio": 2025,
+            "contexto": "25 con un aumento de la facturación hasta el 4 %, en un año marcado por la incertidumbre, 2025-12-16). Es decir, se factura más, pero se gana menos. Esa es la justificación numérica pa"
+          }
+        ],
+        "mortalidad_sin_fuente": [
+          "58 % de los restaurantes cierra"
+        ],
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [
+          {
+            "cifra": "2.419,52",
+            "contexto": " | 6.000,00 € | 6.000,00 € | | EBIT — resultado de explotación (€) | -2.419,52 € | 28.007,92 € | 41.030,72 € |  *Los tres escenarios están calculado"
+          },
+          {
+            "cifra": "37.000",
+            "contexto": "61 millones de euros (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 — Agenttravel, sobre el informe, 2026-06-15"
+          },
+          {
+            "cifra": "13.600",
+            "contexto": "ontabilizó 11.183 cierres en 2025, unos 31,1 diarios, frente a más de 13.600 en 2024 (Revista Hostelería, 2026-02-11). Atención: es un número de e"
+          },
+          {
+            "cifra": "328.139",
+            "contexto": "et Horeca 2026 cuenta 281.578 locales en el canal Horeca comercial, y 328.139 si se incluyen colectividades (Revista Hostelería, 2026-07-06). El Ob"
+          },
+          {
+            "cifra": "83.714",
+            "contexto": "l DBK de Informa, que solo mira restaurantes, censa 70.997 empresas y 83.714 locales a enero de 2024 (Profesional Horeca, 2025-12). Tres cifras, t"
+          },
+          {
+            "cifra": "23.310",
+            "contexto": "rantes ronda los 31.000 millones de euros en 2025, con un desglose de 23.310 millones en servicio en mesa y 6.490 en servicio rápido (DBK, citado "
+          },
+          {
+            "cifra": "6.490",
+            "contexto": "ros en 2025, con un desglose de 23.310 millones en servicio en mesa y 6.490 en servicio rápido (DBK, citado por Profesional Horeca, 2025-12). El "
+          },
+          {
+            "cifra": "19.116",
+            "contexto": "874 € | 155.720 € | 155.720 € | 1.800.339 € | | FLUJO DE CAJA NETO | -19.116 € | 7.446 € | 27.367 € | 34.008 € | 34.008 € | 248.724 € | | FLUJO AC"
+          },
+          {
+            "cifra": "17.505",
+            "contexto": " | 34.008 € | 34.008 € | 248.724 € | | FLUJO ACUMULADO | -19.116 € | -17.505 € | 44.676 € | 146.700 € | 248.724 € |  | | Tipo de IVA de restauraci"
+          },
+          {
+            "cifra": "20.289",
+            "contexto": ".208 € | 3.208 € | 38.500 € | | FLUJO DE CAJA NETO CON IVA Y DEUDA | -20.289 € | 9.681 € | 32.159 € | 39.651 € | 39.651 € | 236.778 € | | FLUJO AC"
+          },
+          {
+            "cifra": "15.912",
+            "contexto": ".651 € | 236.778 € | | FLUJO ACUMULADO CON IVA Y DEUDA | -20.289 € | -15.912 € | 46.868 € | 144.380 € | 236.778 € |  | | IVA del 4.º trimestre — s"
+          },
+          {
+            "cifra": "160.000,00",
+            "contexto": "zación de la reforma. La obra civil e instalaciones suman un total de 160.000,00 € entre reforma integral y sistemas, y con esa inversión no se puede "
+          },
+          {
+            "cifra": "2.700",
+            "contexto": "s alimentos se vean reales. Pero además, se instala una luz cálida de 2.700 Kelvin sobre la zona de emplatado, porque la luz fría hace que los pl"
+          },
+          {
+            "cifra": "18.000",
+            "contexto": "ocina clásica, pero su precio de hostelería estándar ronda los 12.000-18.000 € según el fabricante y la potencia. Si el proyecto aspira a una bras"
+          },
+          {
+            "cifra": "34.200,00",
+            "contexto": "sado, el bloque de cocción (fuegos, plancha, freidora y campana) suma 34.200,00 €, y el horno mixto de 10 niveles con sonda, 12.800,00 €. La brasa de"
+          },
+          {
+            "cifra": "12.800,00",
+            "contexto": " campana) suma 34.200,00 €, y el horno mixto de 10 niveles con sonda, 12.800,00 €. La brasa de carbón con campana específica aparece con 28.500,00 €."
+          },
+          {
+            "cifra": "28.500,00",
+            "contexto": "a, 12.800,00 €. La brasa de carbón con campana específica aparece con 28.500,00 €. Estas cifras salen de la plantilla checklist-equipamiento-cocina.x"
+          },
+          {
+            "cifra": "9.000",
+            "contexto": " m³, con puertas abatibles y estanterías. El coste conjunto ronda los 9.000-12.000 € instaladas, incluyendo la obra de aislamiento y el compresor"
+          },
+          {
+            "cifra": "5.900,00",
+            "contexto": " entre 800 y 1.500 €. En el checklist tasado, el abatidor aparece con 5.900,00 €, la cámara positiva con 7.400,00 €, la negativa con 4.800,00 €, y l"
+          },
+          {
+            "cifra": "7.400,00",
+            "contexto": "st tasado, el abatidor aparece con 5.900,00 €, la cámara positiva con 7.400,00 €, la negativa con 4.800,00 €, y la maduración con 8.200,00 €. La máq"
+          },
+          {
+            "cifra": "8.200,00",
+            "contexto": "itiva con 7.400,00 €, la negativa con 4.800,00 €, y la maduración con 8.200,00 €. La máquina de hielo en escamas suma 1.900,00 €. Estas líneas están"
+          },
+          {
+            "cifra": "1.900,00",
+            "contexto": ", y la maduración con 8.200,00 €. La máquina de hielo en escamas suma 1.900,00 €. Estas líneas están en la tabla de abajo, con su coste tasado, y so"
+          },
+          {
+            "cifra": "2.480,00",
+            "contexto": "e presupuestar.  En el checklist tasado, el robot térmico aparece con 2.480,00 €, el Pacojet con 6.450,00 €, la deshidratadora con 690,00 €, los sif"
+          },
+          {
+            "cifra": "6.450,00",
+            "contexto": "klist tasado, el robot térmico aparece con 2.480,00 €, el Pacojet con 6.450,00 €, la deshidratadora con 690,00 €, los sifones (cuatro unidades) con "
+          },
+          {
+            "cifra": "1.850,00",
+            "contexto": " sifones (cuatro unidades) con 240,00 €, y la envasadora al vacío con 1.850,00 €. Todas estas líneas están en la tabla de abajo, con su coste tasado"
+          },
+          {
+            "cifra": "4.200,00",
+            "contexto": "opción. En el checklist tasado, el lavavajillas de capota aparece con 4.200,00 €, y el túnel no está incluido porque se considera una ampliación. El"
+          },
+          {
+            "cifra": "4.200",
+            "contexto": "esional de dos puertas, con capacidad para bandejas GN 2/1, ronda los 4.200 €. Si se opta por una cámara de fermentación dedicada, con control de"
+          },
+          {
+            "cifra": "7.800",
+            "contexto": "ación dedicada, con control de frío y calor, el desembolso asciende a 7.800 €. La alternativa de usar la cámara de frío general con un fermentado"
+          },
+          {
+            "cifra": "2.900",
+            "contexto": "500 €. La segunda, la mantecadora de helado blando, es más económica (2.900 €) pero limita el producto a una textura cremosa de servicio inmediat"
+          },
+          {
+            "cifra": "3.300",
+            "contexto": "pósito de acero inoxidable y control de temperatura por fases, cuesta 3.300 €. La alternativa es el baño maría profesional con termostato, que no"
+          },
+          {
+            "cifra": "1.499",
+            "contexto": "TM6, con función de cocción guiada y conectividad, tiene un precio de 1.499 €. La alternativa de un robot de cocina industrial con brazo batidor "
+          },
+          {
+            "cifra": "32.450",
+            "contexto": "ficada. En la tabla de abajo, la partida de obrador y pastelería suma 32.450 €, incluyendo armario de fermentación, mantecadora, templadora, robot"
+          },
+          {
+            "cifra": "5.900",
+            "contexto": " con ciclo de 90 segundos y capacidad para 20 cestas por hora, cuesta 5.900 €. Este modelo es suficiente para un servicio de 65 cubiertos si se l"
+          },
+          {
+            "cifra": "14.500",
+            "contexto": " es un lavavajillas de túnel, que procesa 60 cestas por hora y cuesta 14.500 €. La diferencia de precio es notable, pero el túnel permite lavar ta"
+          },
+          {
+            "cifra": "1.250",
+            "contexto": " con entrepaños regulables (5 unidades de 1,5 metros de alto) cuestan 1.250 €. Las cámaras de refrigeración y congelación ya se han presupuestado"
+          },
+          {
+            "cifra": "27.890",
+            "contexto": "de esta sección, incluyendo pase, plonge y almacenamiento, asciende a 27.890 €. De nuevo, remitimos a la tabla de abajo para ver el desglose línea"
+          },
+          {
+            "cifra": "1.900",
+            "contexto": "ar (marca Fagor o similares, con potencia de 3,5 kW por fuego) cuesta 1.900 €. Un horno de brasa de gama alta (con piedra refractaria y parrilla "
+          },
+          {
+            "cifra": "8.500",
+            "contexto": "a refractaria y parrilla de carbón, tipo Josper o similar) supera los 8.500 €. Si se instalan ambos en la misma línea, el resultado es una cocina"
+          },
+          {
+            "cifra": "5.600",
+            "contexto": "io, y el horno de brasa se sustituye por un horno combinado de vapor (5.600 €). En ambos casos, la partida total de cocción no debe superar el 25"
+          },
+          {
+            "cifra": "40.357",
+            "contexto": "de equipamiento. Con un total de 161.430,40 €, ese límite se sitúa en 40.357 €. Si se supera, habrá que recortar en otras partidas, como el plonge"
+          },
+          {
+            "cifra": "8.600",
+            "contexto": "upuesto de un lavavajillas de capota no lo cubre. La diferencia es de 8.600 € (14.500 € frente a 5.900 €). Esa cantidad puede parecer asumible, p"
+          },
+          {
+            "cifra": "3.600",
+            "contexto": "parque tasado en 30.230,00 €, la reposición anual ronda entre 2.400 y 3.600 €. Esa cantidad se incluye en el plan financiero como partida de mant"
+          },
+          {
+            "cifra": "10.400",
+            "contexto": "7.800 €. La vajilla (platos, fuentes, tazas) se lleva otro 40 %, unos 10.400 €, y la cubertería el 30 % restante, 7.800 €. Pero dentro de esa inve"
+          },
+          {
+            "cifra": "29.720",
+            "contexto": "n-financiero-3-anos.xlsx!Inversión!C18], el resto de la partida (unos 29.720 €) se destina a estanterías, iluminación, climatización adicional, me"
+          },
+          {
+            "cifra": "178.056,12",
+            "contexto": " (plantilla-turnos-brigada.xlsx!Turnos Semana!O33). Esa diferencia de 178.056,12 € es lo que la empresa paga por encima del salario que ve el trabajad"
+          },
+          {
+            "cifra": "47.600,00",
+            "contexto": "a suma de las tres partidas (lanzamiento, web y checklist) asciende a 47.600,00 €, una cantidad que debe estar contemplada en el plan de inversión in"
+          }
+        ],
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar un Restaurante Gastronómico"
+        },
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar un Restaurante Gastronómico"
+        },
+        "paridad_palabras_pct": 3.26,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": false,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": false,
+          "mortalidad": false,
+          "metadata": true,
+          "coherencia_cifras": false
+        },
+        "verde": false,
+        "saneados_winansi": 860,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Qué es un Restaurante Gastronómico",
+          "tablas": 1,
+          "sector_usado": [
+            "SECT-01",
+            "SECT-02",
+            "SECT-03",
+            "TICK-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Facturación mensual del escenario realista",
+              "189.728,00 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!C17"
+            ],
+            [
+              "Ticket medio ponderado realista",
+              "123,20 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C16"
+            ],
+            [
+              "Ticket medio que ve el comensal, con IVA",
+              "135,52 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C24"
+            ],
+            [
+              "Cubiertos al día del escenario realista",
+              "70",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C17"
+            ],
+            [
+              "Personas en el cuadrante de la brigada",
+              "24",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!A30"
+            ],
+            [
+              "Coste anual de la brigada con Seguridad Social",
+              "717.620,12 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!O33"
+            ],
+            [
+              "Coste de materia prima sobre ventas (escenario realista)",
+              "30 %",
+              "pl-mensual-escenarios.xlsx!Escenarios!C11"
+            ],
+            [
+              "EBITDA mensual del escenario realista",
+              "34.007,92 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!C21"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "El Mercado de la Alta Cocina en España 2026",
+          "tablas": 1,
+          "sector_usado": [
+            "SECT-01",
+            "SECT-02",
+            "SECT-03",
+            "SECT-04",
+            "SECT-05",
+            "SECT-06",
+            "SECT-07",
+            "SECT-08",
+            "SECT-09",
+            "TURG-01",
+            "TURG-02",
+            "TURG-03",
+            "TURG-05",
+            "TICK-01",
+            "TICK-03",
+            "MICH-04",
+            "MICH-10",
+            "REPS-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ticket medio del pack, con IVA",
+              "135,52 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C24"
+            ],
+            [
+              "Facturación anual del año 1 del plan financiero",
+              "2.049.062,40 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B13"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Modelos de Negocio",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost objetivo de la ficha de escandallo",
+              "28 %",
+              "escandallo-maestro.xlsx!Ficha (plantilla)!H4"
+            ],
+            [
+              "Food cost del escenario pesimista",
+              "32 %",
+              "pl-mensual-escenarios.xlsx!Escenarios!B11"
+            ],
+            [
+              "Food cost del escenario realista",
+              "30 %",
+              "pl-mensual-escenarios.xlsx!Escenarios!C11"
+            ],
+            [
+              "Food cost del escenario optimista",
+              "28 %",
+              "pl-mensual-escenarios.xlsx!Escenarios!D11"
+            ],
+            [
+              "Precio del menú degustación largo (escenario realista)",
+              "130,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C6"
+            ],
+            [
+              "Precio del menú degustación corto (escenario realista)",
+              "75,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C8"
+            ],
+            [
+              "Ticket medio de carta (escenario realista)",
+              "85,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C10"
+            ],
+            [
+              "Precio del maridaje (escenario realista)",
+              "60,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C12"
+            ],
+            [
+              "Margen bruto mensual del escenario realista",
+              "132.809,60 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!C19"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Estudio de Viabilidad y Plan Financiero",
+          "tablas": 7,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "CAPEX total del plan, con el fondo de maniobra dentro",
+              "1.668.340,88 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C27"
+            ],
+            [
+              "Fondo de maniobra dimensionado (6 meses)",
+              "934.320,48 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C26"
+            ],
+            [
+              "Coste mensual de estructura",
+              "155.720,08 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C32"
+            ],
+            [
+              "Alquiler mensual",
+              "17.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C33"
+            ],
+            [
+              "Coste mensual de la brigada",
+              "59.801,68 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C34"
+            ],
+            [
+              "Rentas y suministros de preapertura",
+              "102.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C37"
+            ],
+            [
+              "Nóminas de preapertura",
+              "119.603,36 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C38"
+            ],
+            [
+              "Total de costes de preapertura",
+              "221.603,36 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C39"
+            ],
+            [
+              "NECESIDAD TOTAL DE FINANCIACIÓN",
+              "1.889.944,24 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C46"
+            ],
+            [
+              "Importe del préstamo del ejemplo",
+              "700.000,00 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B5"
+            ],
+            [
+              "Plazo del préstamo (años)",
+              "10",
+              "plan-financiero-3-anos.xlsx!Financiación!B6"
+            ],
+            [
+              "Tipo de interés nominal anual",
+              "5,5 %",
+              "plan-financiero-3-anos.xlsx!Financiación!B7"
+            ],
+            [
+              "Cuota mensual tras la carencia",
+              "8.232,00 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B12"
+            ],
+            [
+              "Cuota mensual durante la carencia (solo intereses)",
+              "3.208,33 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B13"
+            ],
+            [
+              "Fondos propios necesarios en el ejemplo",
+              "1.189.944,24 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B31"
+            ],
+            [
+              "Total ingresos del mes tipo",
+              "189.728,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B10"
+            ],
+            [
+              "Total costes variables del mes tipo",
+              "56.918,40 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B15"
+            ],
+            [
+              "Total costes fijos sin amortización",
+              "98.801,68 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B32"
+            ],
+            [
+              "EBITDA del mes tipo",
+              "34.007,92 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B34"
+            ],
+            [
+              "EBIT del mes tipo",
+              "28.007,92 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B37"
+            ],
+            [
+              "Umbral de ventas mensual solo explotación",
+              "141.145,26 €",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B48"
+            ],
+            [
+              "Umbral de ventas mensual con el servicio de la deuda",
+              "145.728,59 €",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B50"
+            ],
+            [
+              "Cubiertos al día necesarios para el equilibrio",
+              "53,8",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B53"
+            ],
+            [
+              "Mes de break-even de caja",
+              "5",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B54"
+            ],
+            [
+              "Ingresos del año 1 de la proyección",
+              "2.049.062,40 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B13"
+            ],
+            [
+              "Ingresos del año 3 de la proyección",
+              "2.581.818,62 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!D13"
+            ],
+            [
+              "EBITDA del año 1",
+              "248.723,52 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B17"
+            ],
+            [
+              "EBITDA del año 3",
+              "502.278,78 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!D17"
+            ],
+            [
+              "Resultado neto del año 1",
+              "103.667,64 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B23"
+            ],
+            [
+              "Meses de rampa hasta el ritmo de crucero",
+              "6",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B9"
+            ],
+            [
+              "Porcentaje del crucero que se factura el primer mes",
+              "60 %",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B10"
+            ],
+            [
+              "Tipo de IVA de restauración",
+              "10 %",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B25"
+            ],
+            [
+              "Tipo de IVA de la bebida alcohólica",
+              "21 %",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B26"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Requisitos Legales en España",
+          "tablas": 1,
+          "sector_usado": [
+            "JORN-01",
+            "JORN-02"
+          ],
+          "sector_huecos": [
+            "JORN-04"
+          ],
+          "cifras": [
+            [
+              "Coste tasado del checklist legal",
+              "57.960,00 €",
+              "checklist-legal.xlsx!Legal!G56"
+            ],
+            [
+              "Partidas del checklist legal aún sin presupuestar",
+              "10",
+              "checklist-legal.xlsx!Legal!G57"
+            ],
+            [
+              "Proyecto técnico y licencias en el plan financiero",
+              "23.960,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C22"
+            ],
+            [
+              "Seguros del primer año en el plan financiero",
+              "4.500,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C23"
+            ],
+            [
+              "Meses de renta antes de abrir previstos en el plan",
+              "6",
+              "plan-financiero-3-anos.xlsx!Inversión!C35"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "APPCC y Seguridad Alimentaria",
+          "tablas": 2,
+          "sector_usado": [
+            "ANIS-02",
+            "ANIS-03",
+            "ANIS-04"
+          ],
+          "sector_huecos": [
+            "ANIS-01",
+            "ANIS-05",
+            "ANIS-06"
+          ],
+          "cifras": [
+            [
+              "Coste tasado del checklist APPCC",
+              "3.400,00 €",
+              "checklist-appcc.xlsx!APPCC!G62"
+            ],
+            [
+              "Partidas del APPCC sin importe tasado",
+              "10",
+              "checklist-appcc.xlsx!APPCC!G63"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Ubicación y Local",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Alquiler mensual del plan financiero",
+              "17.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C33"
+            ],
+            [
+              "Peso del alquiler sobre ventas en el mes tipo",
+              "9,0 %",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!C22"
+            ],
+            [
+              "Meses de renta antes de abrir",
+              "6",
+              "plan-financiero-3-anos.xlsx!Inversión!C35"
+            ],
+            [
+              "Rentas y suministros de preapertura",
+              "102.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C37"
+            ],
+            [
+              "Obra civil y reforma integral en el plan",
+              "250.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C5"
+            ],
+            [
+              "Instalaciones (electricidad, fontanería, gas, ventilación)",
+              "60.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C6"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Diseño de Cocina Profesional",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Equipamiento de cocina caliente en el plan",
+              "78.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C7"
+            ],
+            [
+              "Equipamiento de cocina fría en el plan",
+              "42.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C8"
+            ],
+            [
+              "Pastelería y obrador en el plan",
+              "14.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C9"
+            ],
+            [
+              "Zona de pase y expedición en el plan",
+              "8.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C10"
+            ],
+            [
+              "Plonge y lavado en el plan",
+              "6.430,40 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C11"
+            ],
+            [
+              "Almacenamiento y cámaras en el plan",
+              "13.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C12"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Equipamiento de Cocina",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste tasado del checklist de equipamiento de cocina",
+              "161.430,40 €",
+              "checklist-equipamiento-cocina.xlsx!Equipamiento Cocina!G98"
+            ],
+            [
+              "Líneas del checklist aún sin importe",
+              "32",
+              "checklist-equipamiento-cocina.xlsx!Equipamiento Cocina!G99"
+            ],
+            [
+              "Rango bajo de equipamiento de cocina profesional",
+              "55.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!C6"
+            ],
+            [
+              "Rango medio de equipamiento de cocina profesional",
+              "110.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!D6"
+            ],
+            [
+              "Rango alto de equipamiento de cocina profesional",
+              "180.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!E6"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Diseño de Sala para 65 Plazas",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste tasado del checklist de diseño de sala",
+              "108.200,00 €",
+              "checklist-diseno-sala.xlsx!Diseño de Sala (FOH)!G42"
+            ],
+            [
+              "Partidas del checklist de sala sin importe",
+              "4",
+              "checklist-diseno-sala.xlsx!Diseño de Sala (FOH)!G43"
+            ],
+            [
+              "Mobiliario de sala en el plan financiero",
+              "62.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C13"
+            ],
+            [
+              "Iluminación y decoración en el plan financiero",
+              "46.200,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C14"
+            ],
+            [
+              "Rango bajo de mobiliario de sala",
+              "30.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!C7"
+            ],
+            [
+              "Rango alto de mobiliario de sala",
+              "120.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!E7"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Vajilla, Cristalería y Cubertería Premium",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste tasado del checklist de vajilla y cristalería",
+              "30.230,00 €",
+              "checklist-vajilla-cristaleria.xlsx!Vajilla, Cristalería!G57"
+            ],
+            [
+              "Partidas de vajilla sin importe",
+              "7",
+              "checklist-vajilla-cristaleria.xlsx!Vajilla, Cristalería!G58"
+            ],
+            [
+              "Vajilla, cristalería y cubertería en el plan financiero",
+              "26.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C15"
+            ],
+            [
+              "Mantelería y textil en el plan financiero",
+              "4.230,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C16"
+            ],
+            [
+              "Rango bajo de vajilla en la calculadora de CAPEX",
+              "15.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!C8"
+            ],
+            [
+              "Rango alto de vajilla en la calculadora de CAPEX",
+              "65.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!E8"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Bodega y Servicio de Vinos",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Valor del stock de bodega a coste",
+              "3.780,00 €",
+              "budget-bodega.xlsx!Bodega!N56"
+            ],
+            [
+              "Valor del stock de bodega a PVP",
+              "10.447,93 €",
+              "budget-bodega.xlsx!Bodega!O56"
+            ],
+            [
+              "Margen medio sobre PVP de la bodega",
+              "63,8 %",
+              "budget-bodega.xlsx!Bodega!L56"
+            ],
+            [
+              "Food cost medio de bebida",
+              "36,2 %",
+              "budget-bodega.xlsx!Bodega!M56"
+            ],
+            [
+              "Botellas en stock",
+              "306",
+              "budget-bodega.xlsx!Bodega!I56"
+            ],
+            [
+              "IVA de la bebida alcohólica",
+              "21 %",
+              "budget-bodega.xlsx!Bodega!C59"
+            ],
+            [
+              "Bodega inicial en el plan financiero",
+              "40.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C17"
+            ],
+            [
+              "Vitrina climatizada en el plan financiero",
+              "6.500,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C18"
+            ],
+            [
+              "Ingresos mensuales de vinos y bebidas",
+              "34.188,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B8"
+            ],
+            [
+              "Coste mensual de bodega",
+              "11.282,04 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B14"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "Brigada de Cocina",
+          "tablas": 1,
+          "sector_usado": [
+            "JORN-01",
+            "JORN-02"
+          ],
+          "sector_huecos": [
+            "JORN-03",
+            "JORN-04"
+          ],
+          "cifras": [
+            [
+              "Personas en el cuadrante completo",
+              "24",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!A30"
+            ],
+            [
+              "Bruto anual sumado de toda la brigada",
+              "539.564,00 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!L33"
+            ],
+            [
+              "Coste anual con Seguridad Social",
+              "717.620,12 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!O33"
+            ],
+            [
+              "Horas semanales programadas en el cuadrante",
+              "960",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!K33"
+            ],
+            [
+              "Seguridad Social a cargo de la empresa",
+              "33 %",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C41"
+            ],
+            [
+              "Salario mínimo vigente en cómputo anual (14 pagas)",
+              "17.094 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C42"
+            ],
+            [
+              "Jornada anual de referencia",
+              "1.797",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C50"
+            ],
+            [
+              "Jornada máxima semanal",
+              "40",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C44"
+            ],
+            [
+              "Coste mensual de personal de cocina en el P&L",
+              "38.390,01 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B20"
+            ],
+            [
+              "Peso del personal de cocina sobre ventas",
+              "20,2 %",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!C20"
+            ],
+            [
+              "Coste mensual total de la brigada",
+              "59.801,68 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C34"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "Equipo de Sala",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste mensual de personal de sala en el P&L",
+              "21.411,67 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B21"
+            ],
+            [
+              "Peso del personal de sala sobre ventas",
+              "11,3 %",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!C21"
+            ],
+            [
+              "Seguridad Social a cargo de la empresa",
+              "33 %",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C41"
+            ],
+            [
+              "Salario mínimo vigente en cómputo anual (14 pagas)",
+              "17.094 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C42"
+            ],
+            [
+              "Coste anual de toda la plantilla con Seguridad Social",
+              "717.620,12 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!O33"
+            ],
+            [
+              "Coste tasado del checklist de contratación",
+              "1.610,00 €",
+              "checklist-contratacion.xlsx!Contratación Equipo!G37"
+            ],
+            [
+              "Cubiertos al día del escenario realista",
+              "70",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C17"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "Menú Engineering para Fine Dining",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost objetivo de la ficha",
+              "28 %",
+              "escandallo-maestro.xlsx!Ficha (plantilla)!H4"
+            ],
+            [
+              "IVA de restauración en la ficha",
+              "10 %",
+              "escandallo-maestro.xlsx!Ficha (plantilla)!H31"
+            ],
+            [
+              "Unidades vendidas en el ejemplo de la matriz",
+              "930",
+              "menu-engineering-matrix.xlsx!Menu Engineering!D31"
+            ],
+            [
+              "Margen medio ponderado de la carta de ejemplo",
+              "18,58 €",
+              "menu-engineering-matrix.xlsx!Menu Engineering!G31"
+            ],
+            [
+              "Factor del umbral de popularidad",
+              "70 %",
+              "menu-engineering-matrix.xlsx!Menu Engineering!I32"
+            ],
+            [
+              "Food cost del escenario realista",
+              "30 %",
+              "pl-mensual-escenarios.xlsx!Escenarios!C11"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "Proveedores Km0 y Producto de Temporada",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Stock inicial de materias primas en el plan",
+              "12.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C24"
+            ],
+            [
+              "Coste mensual de materia prima en el mes tipo",
+              "45.636,36 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B13"
+            ],
+            [
+              "Peso de la materia prima sobre ventas",
+              "24,1 %",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!C13"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "Cómo Aspirar a una Estrella MICHELIN",
+          "tablas": 2,
+          "sector_usado": [
+            "MICH-01",
+            "MICH-02",
+            "MICH-03",
+            "MICH-04",
+            "MICH-05",
+            "MICH-06",
+            "MICH-07",
+            "MICH-10"
+          ],
+          "sector_huecos": [
+            "MICH-08",
+            "MICH-09"
+          ],
+          "cifras": [
+            [
+              "Coste tasado del checklist de preparación de inspección",
+              "11.000,00 €",
+              "checklist-inspeccion-michelin-repsol.xlsx!Preparación Inspección!G52"
+            ],
+            [
+              "Ítems del checklist de inspección",
+              "45",
+              "checklist-inspeccion-michelin-repsol.xlsx!Preparación Inspección!A49"
+            ]
+          ]
+        },
+        {
+          "n": 18,
+          "titulo": "Cómo Aspirar a un Sol Repsol",
+          "tablas": 1,
+          "sector_usado": [
+            "REPS-01",
+            "REPS-02",
+            "REPS-03",
+            "REPS-04",
+            "REPS-05"
+          ],
+          "sector_huecos": [
+            "REPS-06",
+            "REPS-07"
+          ],
+          "cifras": [
+            [
+              "Coste tasado del checklist de preparación de inspección",
+              "11.000,00 €",
+              "checklist-inspeccion-michelin-repsol.xlsx!Preparación Inspección!G52"
+            ]
+          ]
+        },
+        {
+          "n": 19,
+          "titulo": "The World's 50 Best Restaurants",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Marketing de lanzamiento en el plan financiero",
+              "15.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C21"
+            ],
+            [
+              "Web, branding y diseño gráfico en el plan financiero",
+              "8.800,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C20"
+            ],
+            [
+              "Marketing mensual en el P&L",
+              "3.500,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B25"
+            ],
+            [
+              "Peso del marketing sobre ventas",
+              "1,8 %",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!C25"
+            ],
+            [
+              "Coste tasado del checklist de marketing de preapertura",
+              "23.800,00 €",
+              "checklist-marketing-preapertura.xlsx!Marketing Pre-Apertura!G42"
+            ]
+          ]
+        },
+        {
+          "n": 20,
+          "titulo": "Marketing, PR y Lanzamiento",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste tasado del checklist de marketing de preapertura",
+              "23.800,00 €",
+              "checklist-marketing-preapertura.xlsx!Marketing Pre-Apertura!G42"
+            ],
+            [
+              "Partidas de marketing sin importe",
+              "5",
+              "checklist-marketing-preapertura.xlsx!Marketing Pre-Apertura!G43"
+            ],
+            [
+              "Marketing de lanzamiento en el plan financiero",
+              "15.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C21"
+            ],
+            [
+              "Marketing mensual en el P&L",
+              "3.500,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B25"
+            ],
+            [
+              "Meses de rampa hasta el ritmo de crucero",
+              "6",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B9"
+            ],
+            [
+              "Porcentaje del crucero que se factura el primer mes",
+              "60 %",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B10"
+            ],
+            [
+              "Facturación del mes 1 del cash flow",
+              "113.836,80 €",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B10"
+            ],
+            [
+              "Facturación del mes 12 del cash flow",
+              "189.728,00 €",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!M10"
+            ]
+          ]
+        },
+        {
+          "n": 21,
+          "titulo": "Tecnología para Fine Dining",
+          "tablas": 1,
+          "sector_usado": [
+            "JORN-02"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "TPV, software y tablets en el plan financiero",
+              "9.900,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C19"
+            ],
+            [
+              "Tecnología y software mensual en el P&L",
+              "1.200,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B26"
+            ],
+            [
+              "Peso de tecnología sobre ventas",
+              "0,6 %",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!C26"
+            ],
+            [
+              "Rango bajo de tecnología en la calculadora de CAPEX",
+              "5.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!C12"
+            ],
+            [
+              "Rango medio de tecnología en la calculadora de CAPEX",
+              "10.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!D12"
+            ],
+            [
+              "Rango alto de tecnología en la calculadora de CAPEX",
+              "20.000,00 €",
+              "calculadora-capex.xlsx!CAPEX!E12"
+            ],
+            [
+              "Unidades vendidas del ejemplo de ingeniería de menú",
+              "930",
+              "menu-engineering-matrix.xlsx!Menu Engineering!D31"
+            ]
+          ]
+        },
+        {
+          "n": 22,
+          "titulo": "Tendencias 2026-2027",
+          "tablas": 1,
+          "sector_usado": [
+            "MICH-05",
+            "TURG-02",
+            "SECT-07"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost objetivo de la ficha",
+              "28 %",
+              "escandallo-maestro.xlsx!Ficha (plantilla)!H4"
+            ],
+            [
+              "Coste mensual de materia prima",
+              "45.636,36 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B13"
+            ],
+            [
+              "EBITDA del mes tipo",
+              "34.007,92 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B34"
+            ]
+          ]
+        }
+      ]
+    },
+    "business-plan-modelo": {
+      "gates": {
+        "paginas_pdf": 26,
+        "paginas_prometidas": 12,
+        "palabras_md": 9973,
+        "palabras_pdf": 9470,
+        "palabras_docx": 9041,
+        "palabras_objetivo": 3000,
+        "capitulos": 10,
+        "tablas_md": 12,
+        "tablas_docx": 11,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [
+          {
+            "anio": 2025,
+            "contexto": "e el corto plazo.  El sector ofrece un contexto favorable. La restauración española cerró 2025 con una facturación estimada de 31.000 millones de euros, según la publicación especializ"
+          },
+          {
+            "anio": 2025,
+            "contexto": ".000 millones de euros, según la publicación especializada (Profesional Horeca, diciembre 2025). Esta cifra refleja un crecimiento del 3,5 % respecto al año anterior, impulsado por el "
+          },
+          {
+            "anio": 2025,
+            "contexto": "ividades relacionadas con la gastronomía y el vino superó los 37.000 millones de euros en 2025, según datos de Agenttravel (junio 2026), basados en el informe de Turespaña sobre segmen"
+          },
+          {
+            "anio": 2025,
+            "contexto": "ería, así llega el sector a 2026: estable y exigido — Restauración News (sobre el Anuario 2025 de Hostel, 2026-01-07). La facturación total del sector, que incluye restauración y aloja"
+          },
+          {
+            "anio": 2025,
+            "contexto": "bstante, el subsector de restaurantes facturó aproximadamente 31.000 millones de euros en 2025, según la previsión de cierre del año (La restauración española acaba el año con una fact"
+          },
+          {
+            "anio": 2025,
+            "contexto": "la acaba el año con una facturación de 31.000 millones — Profesional Horeca (sobre el es, 2025-12). El dato cerrado de 2024 fue de 29.800 millones, con un desglose de 23.310 millones e"
+          },
+          {
+            "anio": 2024,
+            "contexto": "resas de restaurantes, según DBK, contabiliza 70.997 empresas y 83.714 locales a enero de 2024 (La restauración española acaba el año con una facturación de 31.000 millones — Profesion"
+          },
+          {
+            "anio": 2025,
+            "contexto": "la acaba el año con una facturación de 31.000 millones — Profesional Horeca (Observatori, 2025-12). Aproximadamente el 75 % son independientes y el 25 % pertenecen a cadenas. En cuanto"
+          },
+          {
+            "anio": 2025,
+            "contexto": "a: Demografía Armonizada de Empresas. Año 2023 — Instituto Nacional de Estadística (INE), 2025-11-12).  El turismo enogastronómico aporta 37.261 millones de euros de gasto total de via"
+          },
+          {
+            "anio": 2024,
+            "contexto": "or diferenciación, no por precio. La facturación del servicio en mesa (23.310 millones en 2024) muestra que el cliente valora la experiencia presencial. La tabla de abajo detalla los p"
+          },
+          {
+            "anio": 2025,
+            "contexto": "ostrado signos de recuperación, pero también de fragilidad. Según el informe de cierre de 2025, la hostelería finalizó el año con un aumento de la facturación hasta el 4 %, en un año m"
+          },
+          {
+            "anio": 2025,
+            "contexto": "ño con un aumento de la facturación hasta el 4 %, en un año marcado por la incertidumbre (2025-12-16). Sin embargo, esa misma fuente señala una variación interanual de la rentabilidad "
+          }
+        ],
+        "mortalidad_sin_fuente": [],
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [
+          {
+            "cifra": "37.000",
+            "contexto": "s en actividades relacionadas con la gastronomía y el vino superó los 37.000 millones de euros en 2025, según datos de Agenttravel (junio 2026), b"
+          },
+          {
+            "cifra": "320.000",
+            "contexto": " fondos se emplearán en:  - Acondicionamiento del local y obra civil: 320.000 €, incluyendo cocina industrial, instalaciones de climatización, elec"
+          },
+          {
+            "cifra": "210.000",
+            "contexto": "tización, electricidad y fontanería. - Equipamiento de cocina y sala: 210.000 €, con maquinaria profesional, mobiliario a medida, vajilla y cristal"
+          },
+          {
+            "cifra": "90.000",
+            "contexto": "os primeros tres meses de operación. - Fondo de maniobra y tesorería: 90.000 €, para garantizar el pago de nóminas y proveedores durante la fase d"
+          },
+          {
+            "cifra": "29.800",
+            "contexto": "esional Horeca (sobre el es, 2025-12). El dato cerrado de 2024 fue de 29.800 millones, con un desglose de 23.310 millones en servicio en mesa y 6."
+          },
+          {
+            "cifra": "23.310",
+            "contexto": "). El dato cerrado de 2024 fue de 29.800 millones, con un desglose de 23.310 millones en servicio en mesa y 6.490 millones en servicio rápido.  El"
+          },
+          {
+            "cifra": "6.490",
+            "contexto": "00 millones, con un desglose de 23.310 millones en servicio en mesa y 6.490 millones en servicio rápido.  El censo de empresas de restaurantes, s"
+          },
+          {
+            "cifra": "83.714",
+            "contexto": "de empresas de restaurantes, según DBK, contabiliza 70.997 empresas y 83.714 locales a enero de 2024 (La restauración española acaba el año con un"
+          },
+          {
+            "cifra": "2.419,52",
+            "contexto": "apenas cubre los costes fijos. El EBIT, por su parte, es negativo: **-2.419,52 €** (pl-mensual-escenarios.xlsx!Escenarios!B24). Es decir, en el peor"
+          },
+          {
+            "cifra": "400.000,00",
+            "contexto": "vinculadas a hitos verificables del proyecto:  - Primera disposición: 400.000,00 € a la firma de la escritura de préstamo. Este importe cubre el pago "
+          }
+        ],
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Plan de Negocio Modelo — Restaurante Gastronómico 65 Plazas"
+        },
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Plan de Negocio Modelo — Restaurante Gastronómico 65 Plazas"
+        },
+        "paridad_palabras_pct": 4.53,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": false,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": false,
+          "mortalidad": true,
+          "metadata": true,
+          "coherencia_cifras": false
+        },
+        "verde": false,
+        "saneados_winansi": 275,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/business-plan-modelo.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/business-plan-modelo.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Resumen Ejecutivo",
+          "tablas": 1,
+          "sector_usado": [
+            "SECT-03",
+            "TURG-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Necesidad total de financiación",
+              "1.889.944,24 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C46"
+            ],
+            [
+              "Préstamo solicitado",
+              "700.000,00 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B5"
+            ],
+            [
+              "Fondos propios aportados",
+              "1.189.944,24 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B31"
+            ],
+            [
+              "Ingresos previstos del año 1",
+              "2.049.062,40 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B13"
+            ],
+            [
+              "Ingresos previstos del año 3",
+              "2.581.818,62 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!D13"
+            ],
+            [
+              "EBITDA previsto del año 1",
+              "248.723,52 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B17"
+            ],
+            [
+              "Resultado neto previsto del año 1",
+              "103.667,64 €",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B23"
+            ],
+            [
+              "Mes de break-even de caja",
+              "5",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B54"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Concepto y Propuesta de Valor",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ticket medio ponderado",
+              "123,20 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C16"
+            ],
+            [
+              "Ticket medio con IVA que ve el comensal",
+              "135,52 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C24"
+            ],
+            [
+              "Precio del menú largo",
+              "130,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C6"
+            ],
+            [
+              "Precio del menú corto",
+              "75,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C8"
+            ],
+            [
+              "Cubiertos al día previstos",
+              "70",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C17"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Análisis de Mercado",
+          "tablas": 1,
+          "sector_usado": [
+            "SECT-01",
+            "SECT-02",
+            "SECT-03",
+            "SECT-04",
+            "SECT-06",
+            "SECT-08",
+            "SECT-09",
+            "TURG-01",
+            "TURG-02",
+            "TURG-03",
+            "MICH-04",
+            "REPS-01"
+          ],
+          "sector_huecos": [],
+          "cifras": []
+        },
+        {
+          "n": 4,
+          "titulo": "Ubicación, Local e Inversión",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "CAPEX total con fondo de maniobra",
+              "1.668.340,88 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C27"
+            ],
+            [
+              "Fondo de maniobra",
+              "934.320,48 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C26"
+            ],
+            [
+              "Total de preapertura",
+              "221.603,36 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C39"
+            ],
+            [
+              "Necesidad total de financiación",
+              "1.889.944,24 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C46"
+            ],
+            [
+              "Alquiler mensual",
+              "17.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C33"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Plan de Operaciones",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Cubiertos al día previstos",
+              "70",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C17"
+            ],
+            [
+              "Días de apertura al mes",
+              "22",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C19"
+            ],
+            [
+              "Personas en plantilla",
+              "24",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!A30"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Equipo y Organización",
+          "tablas": 1,
+          "sector_usado": [
+            "JORN-02"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Bruto anual de toda la plantilla",
+              "539.564,00 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!L33"
+            ],
+            [
+              "Coste anual con Seguridad Social",
+              "717.620,12 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!O33"
+            ],
+            [
+              "Seguridad Social a cargo de la empresa",
+              "33 %",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C41"
+            ],
+            [
+              "Salario mínimo vigente anual",
+              "17.094 €",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!C42"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Plan de Marketing y Ventas",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Marketing de lanzamiento",
+              "15.000,00 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C21"
+            ],
+            [
+              "Marketing mensual",
+              "3.500,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B25"
+            ],
+            [
+              "Meses de rampa",
+              "6",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B9"
+            ],
+            [
+              "Porcentaje del crucero el primer mes",
+              "60 %",
+              "plan-financiero-3-anos.xlsx!Proyección 3 Años!B10"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Plan Financiero",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Total ingresos del mes tipo",
+              "189.728,00 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B10"
+            ],
+            [
+              "EBITDA del mes tipo",
+              "34.007,92 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B34"
+            ],
+            [
+              "EBIT del mes tipo",
+              "28.007,92 €",
+              "plan-financiero-3-anos.xlsx!P&L Mensual!B37"
+            ],
+            [
+              "Umbral de ventas con servicio de deuda",
+              "145.728,59 €",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B50"
+            ],
+            [
+              "Cubiertos al día para el equilibrio",
+              "53,8",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B53"
+            ],
+            [
+              "Mes de break-even de caja",
+              "5",
+              "cash-flow-break-even.xlsx!Cash Flow 12 Meses!B54"
+            ],
+            [
+              "Cuota mensual tras la carencia",
+              "8.232,00 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B12"
+            ],
+            [
+              "Cuota durante la carencia",
+              "3.208,33 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B13"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Análisis de Riesgos y Escenarios",
+          "tablas": 1,
+          "sector_usado": [
+            "SECT-07",
+            "SECT-08"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Facturación mensual pesimista",
+              "131.736,00 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!B17"
+            ],
+            [
+              "EBITDA mensual pesimista",
+              "3.580,48 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!B21"
+            ],
+            [
+              "EBIT mensual pesimista",
+              "-2.419,52 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!B24"
+            ],
+            [
+              "Facturación mensual optimista",
+              "233.376,00 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!D17"
+            ],
+            [
+              "EBITDA mensual optimista",
+              "47.030,72 €",
+              "pl-mensual-escenarios.xlsx!Escenarios!D21"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Petición, Garantías y Calendario de Ejecución",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Necesidad total de financiación",
+              "1.889.944,24 €",
+              "plan-financiero-3-anos.xlsx!Inversión!C46"
+            ],
+            [
+              "Préstamo solicitado",
+              "700.000,00 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B5"
+            ],
+            [
+              "Plazo en años",
+              "10",
+              "plan-financiero-3-anos.xlsx!Financiación!B6"
+            ],
+            [
+              "Tipo de interés nominal",
+              "5,5 %",
+              "plan-financiero-3-anos.xlsx!Financiación!B7"
+            ],
+            [
+              "Carencia en años",
+              "1",
+              "plan-financiero-3-anos.xlsx!Financiación!B8"
+            ],
+            [
+              "Fondos propios",
+              "1.189.944,24 €",
+              "plan-financiero-3-anos.xlsx!Financiación!B31"
+            ]
+          ]
+        }
+      ]
+    },
+    "manual-servicio-sala": {
+      "gates": {
+        "paginas_pdf": 23,
+        "paginas_prometidas": 12,
+        "palabras_md": 9063,
+        "palabras_pdf": 9009,
+        "palabras_docx": 8581,
+        "palabras_objetivo": 3000,
+        "capitulos": 9,
+        "tablas_md": 9,
+        "tablas_docx": 9,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Manual de Servicio de Sala — Fine Dining"
+        },
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Manual de Servicio de Sala — Fine Dining"
+        },
+        "paridad_palabras_pct": 4.75,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": false,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "metadata": true,
+          "coherencia_cifras": true
+        },
+        "verde": false,
+        "saneados_winansi": 0,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/manual-servicio-sala.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/manual-servicio-sala.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/docs/build/guia-restaurante-gastronomico/manual-servicio-sala.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Protocolo de Alérgenos en Sala",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": []
+        },
+        {
+          "n": 2,
+          "titulo": "Mise en Place de Sala y Briefing Previo",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Plazas de la sala",
+              "24",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!A30"
+            ],
+            [
+              "Cubiertos al día previstos",
+              "70",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C17"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Recepción, Acomodo y Toma de Comanda",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Precio del menú largo",
+              "130,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C6"
+            ],
+            [
+              "Precio del menú corto",
+              "75,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C8"
+            ],
+            [
+              "Precio del maridaje",
+              "60,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C12"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Secuencia del Menú Degustación, Pase a Pase",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": []
+        },
+        {
+          "n": 5,
+          "titulo": "Servicio de Vinos: Temperaturas, Decantación y Maridaje",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Margen medio sobre PVP de la bodega",
+              "63,8 %",
+              "budget-bodega.xlsx!Bodega!L56"
+            ],
+            [
+              "Food cost medio de bebida",
+              "36,2 %",
+              "budget-bodega.xlsx!Bodega!M56"
+            ],
+            [
+              "Precio del maridaje",
+              "60,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C12"
+            ],
+            [
+              "Precio de la copa media",
+              "14,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C14"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Gestión de Quejas y Casuística Difícil",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": []
+        },
+        {
+          "n": 7,
+          "titulo": "Reservas, No-Show, Prepago y Gestión de la Cuenta",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ticket medio con IVA",
+              "135,52 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C24"
+            ],
+            [
+              "Ticket medio sin IVA",
+              "123,20 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C16"
+            ],
+            [
+              "Cubiertos al día previstos",
+              "70",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C17"
+            ],
+            [
+              "Facturación diaria prevista",
+              "8.624,00 €",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!C18"
+            ],
+            [
+              "IVA de restauración",
+              "10 %",
+              "calculadora-ticket-medio.xlsx!Ticket Medio!B23"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Fichas de Formación y Evaluación del Equipo",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas en plantilla",
+              "24",
+              "plantilla-turnos-brigada.xlsx!Turnos Semana!A30"
+            ],
+            [
+              "Coste tasado del checklist de contratación",
+              "1.610,00 €",
+              "checklist-contratacion.xlsx!Contratación Equipo!G37"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Protocolo VIP, Ocasiones Especiales y Cierre del Servicio",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": []
+        }
+      ]
+    }
+  }
+}

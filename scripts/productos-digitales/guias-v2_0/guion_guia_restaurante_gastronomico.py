@@ -74,7 +74,16 @@ GUIA = {
         #  · 734.020,40 € = C27 (1.668.340,88) - C26 (934.320,48) → CAPEX sin
         #    el fondo de maniobra, que es como se presenta en el capítulo 4.
         #  · 1.155.923,84 € = calculadora-capex!F18 (total de la columna verde).
-        'cifras_extra': ('734.020,40', '734.020', '1.155.923,84'),
+        # Derivadas por aritmética de celdas del propio libro, documentadas:
+        #  · 734.020,40 € = Inversión!C27 (1.668.340,88) - C26 (934.320,48):
+        #    el CAPEX sin el fondo de maniobra, que es como lo presenta el cap. 4.
+        #  · 1.155.923,84 € = calculadora-capex!F18 (total de la columna verde).
+        #  · 178.056,12 € = turnos!O33 (717.620,12) - L33 (539.564,00): lo que
+        #    cuesta la Seguridad Social de la brigada, la resta que hace el cap. 13.
+        #  · 47.600,00 € = Inversión!C21 (15.000) + C20 (8.800) + checklist de
+        #    marketing G42 (23.800): las tres partidas de proyección del cap. 19.
+        'cifras_extra': ('734.020,40', '734.020', '1.155.923,84',
+                         '178.056,12', '178.056', '47.600,00', '47.600'),
         'cifras_ignorar': (),
         # Única formulación de mortalidad admitida: la del INE, con fuente.
         'mortalidad_permitida': ['41,9', '41.9', 'INE', '11.183'],
@@ -110,6 +119,20 @@ NO_COMUN = [
     'No cites años anteriores a 2026 junto a precios ni a tendencias.',
     'No escribas «IVA incluido» sin decir el tipo: en restauración es el 10 % y '
     'en bebida alcohólica el 21 %.',
+    # Cazado por el gate de coherencia el 2026-08-29: el capítulo 9 escribió '
+    # «en el checklist tasado, el abatidor aparece con 5.900,00 €» — un importe
+    # por línea que NO está en ninguna celda del libro.
+    'De los checklists sólo tienes el TOTAL tasado: NO atribuyas un importe por '
+    'línea a ninguno («el abatidor aparece con X €»). Si hablas de una partida '
+    'concreta, remite a la tabla de abajo y no des su precio.',
+    'No repartas una inversión en partidas cuyo importe no esté en la lista de '
+    'cifras: el desglose ya va en la tabla de CAPEX.',
+    # Cazado por el gate de mortalidad: el capítulo 2 escribió «no se puede usar
+    # como "el 58 % de los restaurantes cierra"». Negar una cifra inventada
+    # sigue imprimiéndola, y el lector que hojea sólo ve el número.
+    'No escribas ninguna cifra de mortalidad, cierre o fracaso de restaurantes '
+    'NI SIQUIERA PARA NEGARLA, ENTRECOMILLARLA O DESMENTIRLA. Si el dato no '
+    'está en la lista con su fuente, la frase se escribe sin número.',
 ]
 
 
