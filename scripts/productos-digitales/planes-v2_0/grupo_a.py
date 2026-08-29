@@ -183,12 +183,12 @@ SUPUESTOS_BASE = (
      'Se aplica solo sobre las ventas del canal, no sobre el total'),
     ('comision_tpv', 'B18', 'Comisión de los medios de pago', 0.008,
      motor.FMT_PCT, 'Tarjeta y bizum sobre el total facturado'),
-    ('alquiler_mes', 'B24', 'Alquiler del local (€/mes)', None,
+    ('alquiler_mes', 'B24', 'Alquiler mensual del local (€)', None,
      motor.FMT_EUR0, 'De aquí salen la fianza, el primer mes y el ratio '
      'alquiler/ventas'),
     ('fianza_meses', 'B25', 'Fianza del alquiler (meses)', 3, motor.FMT_ENT,
      'Meses de renta que pide el arrendador como fianza'),
-    ('suministros_mes', 'B26', 'Suministros (€/mes)', None, motor.FMT_EUR0,
+    ('suministros_mes', 'B26', 'Suministros mensuales de luz, agua y gas (€)', None, motor.FMT_EUR0,
      'Luz, agua y gas'),
     ('seguros_ano', 'B27', 'Seguros (€/año)', None, motor.FMT_EUR0,
      'Responsabilidad civil + multirriesgo del local'),
@@ -237,11 +237,16 @@ RX_CANON_INV = re.compile(
     r'fianza|primer mes.*alquiler|fondo de maniobra|colch[oó]n operativo|'
     r'iva soportado|base amortizable|amortizaci[oó]n anual|'
     r'necesidad total de caja', re.I)
+#: ⚠️ «comisiones» a secas se tragaba «Comisiones de reservas online», que es
+#: una partida NUEVA y preservable: al excluirla del barrido, la 2.ª pasada la
+#: volvía a añadir al final y las dos últimas filas de costes fijos cambiaban
+#: de orden. El patrón nombra sólo las dos comisiones que genera este grupo.
 RX_CANON_PYG = re.compile(
     r'^(alquiler|n[oó]minas|salarios|personal|suministros|seguros?|'
     r'amortizaci[oó]n|cuota pr[eé]stamo|gastos financieros|'
     r'varios e imprevistos|coste de mercanc[ií]a|food cost|bebidas? cost|'
-    r'consumibles|comisiones|ingresos|cubiertos|clientes|ticket|d[ií]as|'
+    r'consumibles|comisiones de (delivery|los medios|medios)|'
+    r'ingresos|cubiertos|clientes|ticket|d[ií]as|'
     r'ventas |otros \(|coste (materias|cafe|ingredientes|bebidas|cocteles)|'
     r'packaging)', re.I)
 RX_INGRESO = re.compile(r'^(ventas|ingresos|otros\b)', re.I)
@@ -609,6 +614,18 @@ class Plan(object):
         self.cambios = cambios
         self.molde = det['molde']
         self.numerado = self.molde == 'A-alfa'
+        self.concepto = self.dato('CONCEPTO', pid)
+        self.rej = {}
+        #: Rejillas declaradas y pendientes de volcar. El volcado va al FINAL
+        #: de todo (§ ver `post`): las hojas se citan entre sí en las dos
+        #: direcciones —el P&L lee los intereses de Financiación y el fondo de
+        #: maniobra de Inversión sale de los costes fijos del P&L—, así que
+        #: ninguna fórmula puede resolverse hasta que estén todas colocadas.
+        self.pendientes = []
+        if det['tipo'] != 'plan_financiero':
+            # el checklist comparte módulo de contenido pero no tiene ni
+            # supuestos ni hojas de modelo: se construye sin ellas
+            return
         for clave, nombres in HOJAS.items():
             ws = None
             for nombre in nombres:
@@ -624,8 +641,6 @@ class Plan(object):
             if ws is None:
                 ws = wb.create_sheet(titulo)
             setattr(self, 'ws_' + clave, ws)
-        self.concepto = self.dato('CONCEPTO', pid)
-        self.rej = {}
 
     # -- acceso al módulo de contenido -----------------------------------
     def dato(self, clave, defecto=None):
@@ -698,10 +713,12 @@ class Plan(object):
         # nota generada: el PVP con IVA equivalente al ticket sin IVA (TEC-11)
         red, gen = self._loc('iva_reducido'), self._loc('iva_general')
         tic = self._loc('ticket_medio')
-        fx(ws, 'C5', '="PVP equivalente con IVA ("&TEXT(' + red + ',"0%")&'
-           '" en comida y "&TEXT(' + gen + ',"0%")&" en bebida): "&TEXT('
-           + tic + '*(B11*(1+' + red + ')+B12*(1+' + gen + ')),"#,##0.00")'
-           '&" €"')
+        motor.val(ws, 'A9', 'PVP equivalente con IVA (calculado)')
+        fx(ws, 'B9', '=' + tic + '*(B11*(1+' + red + ')+B12*(1+' + gen + '))',
+           motor.FMT_EUR)
+        fx(ws, 'C9', '="Es el ticket sin IVA con el IVA de cada familia: '
+           '"&TEXT(' + red + ',"0%")&" en comida y "&TEXT(' + gen + ',"0%")&'
+           '" en bebida. Compáralo con el rango del sector, que va con IVA."')
         for coord in ('B11', 'B12'):
             ws[coord].fill = PatternFill()
             ws[coord].protection = Protection(locked=True)
@@ -808,7 +825,15 @@ class Plan(object):
         ws = self.ws_personal
         cab = _cabecera(ws)
         plantilla = self.dato('PLANTILLA') or self._leer_plantilla(ws, cab)
-        pie = _pie(ws, cab)
+        # el pie del fichero v1.1 lleva el tipo de Seguridad Social escrito a
+        # mano («33.4%»): repetiría un parámetro que ahora vive en celda y
+        # quedaría desmintiendo a la propia columna (§7-bis.11)
+        pie = [t for t in _pie(ws, cab)
+               if not re.search(r'\d+[.,]?\d*\s*%', t)]
+        for t in _pie(ws, cab):
+            if re.search(r'\d+[.,]?\d*\s*%', t):
+                self.anota('Personal: fuera la nota con el porcentaje escrito '
+                           'a mano «' + t[:60] + '» (§7-bis.11)')
         _limpiar_area(ws, cab, ws.max_row, 8)
         # ⚠️ Las cabeceras llevan «(€)» a propósito: `motor.formatos_por_tipo`
         # decide por la CABECERA de la columna, y «Bruto mes» contiene la
@@ -822,6 +847,7 @@ class Plan(object):
             motor.val(ws, get_column_letter(i + 1) + str(cab), texto,
                       bold=True, wrap=True)
         rej = Rejilla(ws, cab + 1)
+        self.rej['personal'] = rej
         ss = self.p.ref('ss_empresa')
         pagas = self.p.ref('pagas')
         for i, fila in enumerate(plantilla):
@@ -845,7 +871,7 @@ class Plan(object):
                            + R.c(ultimo, c) + ')'))
                     for col in ('B', 'C', 'D', 'E', 'F')),
                 fmt=motor.FMT_EUR, fmt_B=motor.FMT_ENT)
-        escribir(rej)
+        self.pendientes.append(rej)
         # el bruto/persona NUNCA por debajo del SMI (§2.6)
         rango = rej.c(primero, 'C') + ':' + rej.c(ultimo, 'C')
         smi = self.p.ref('smi_anual')
@@ -861,18 +887,17 @@ class Plan(object):
                   'personas incluyen a las dos. El tipo de Seguridad Social y '
                   'el número de pagas están en la hoja «0. Supuestos».',
                   wrap=True)
-        fx(ws, 'A' + str(fila_nota + 1),
-           texto_num(smi, 'Suelo legal por jornada completa: ',
-                     ' € al año (SMI vigente, en «0. Supuestos»). Las jornadas '
-                     'parciales lo llevan en proporción. Convenio de '
-                     'HOSTELERÍA PROVINCIAL: las tablas salariales son '
-                     'provinciales, no estatales.', fmt='#,##0'))
+        motor.val(ws, 'A' + str(fila_nota + 1),
+                  'El SMI de referencia está en la hoja «0. Supuestos» y es '
+                  'el suelo por jornada completa; las jornadas parciales lo '
+                  'llevan en proporción. El convenio aplicable es el '
+                  'PROVINCIAL de hostelería: no existe una tabla salarial '
+                  'estatal única.', wrap=True)
         for i, texto in enumerate(pie):
             motor.val(ws, 'A' + str(fila_nota + 2 + i), texto)
         motor.anchos(ws, {'A': 34, 'B': 10, 'C': 16, 'D': 18, 'E': 16,
                           'F': 16, 'G': 40})
         motor.print_setup(ws, header_row=cab)
-        self.rej['personal'] = rej
         return rej
 
     def _leer_plantilla(self, ws, cab):
@@ -954,6 +979,7 @@ class Plan(object):
             bloques[bloque].append((rot, importe, nota))
 
         rej = Rejilla(ws, cab + 1)
+        self.rej['inversion'] = rej
         alq = self.p.ref('alquiler_mes')
         fianza_m = self.p.ref('fianza_meses')
         claves_bloque, amortiza = [], {'obra': [], 'maquinaria': []}
@@ -1018,8 +1044,12 @@ class Plan(object):
         rej.add('fondo', rot='Colchón operativo hasta alcanzar el equilibrio',
                 fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
                 formulas={
-                    'B': (lambda R: '=' + meses + '*'
-                          + self.rej['pyg'].r('tcf') + '/12'),
+                    # ⚠️ una referencia a una celda VACÍA devuelve 0, no
+                    # `""`: sin este guarda, un libro en blanco dota un fondo
+                    # de «0 €» y el semáforo de la tesorería se pone verde
+                    'B': (lambda R: '=IF(' + meses + '*'
+                          + self.rej['pyg'].r('tcf') + '=0,"",' + meses + '*'
+                          + self.rej['pyg'].r('tcf') + '/12)'),
                     'C': (lambda R: '=' + R.c('fondo') + '/'
                           + R.c('total', absoluta=True)),
                     'D': texto_num(meses, 'Cubre ', ' meses de costes fijos '
@@ -1071,7 +1101,7 @@ class Plan(object):
                           + self.p.ref('vida_maquinaria')),
                     'D': '="El fondo de maniobra, el stock y los imprevistos '
                          "NO se amortizan: no son inmovilizado\""})
-        escribir(rej)
+        self.pendientes.append(rej)
         motor.semaforo_num(ws, rej.c('caja') + ':' + rej.c('caja'),
                            verde_si=rej.c('caja') + '>0')
         fila = rej.ultima + 2
@@ -1079,7 +1109,6 @@ class Plan(object):
             motor.val(ws, 'A' + str(fila + i), texto, wrap=True)
         motor.anchos(ws, {'A': 46, 'B': 15, 'C': 13, 'D': 58})
         motor.print_setup(ws, header_row=cab)
-        self.rej['inversion'] = rej
         return rej
 
     # -- §2.3 -------------------------------------------------------------
@@ -1241,8 +1270,8 @@ class Plan(object):
 
         fijo('cf_alquiler', 'Alquiler del local',
              '=' + P('alquiler_mes') + '*12',
-             nota=texto_num(P('alquiler_mes'), '', ' € al mes, en la hoja de '
-                            'Supuestos', fmt='#,##0'))
+             nota='="El importe mensual está en la hoja de Supuestos; aquí '
+                  'se multiplica por doce"')
         fijo('cf_personal', 'Personal (nóminas + Seguridad Social)',
              (lambda R: '=' + self.rej['personal'].r('total', 'F')),
              nota='="Sale de la hoja de Personal: es el MISMO número, no una '
@@ -1397,7 +1426,7 @@ class Plan(object):
         motor.semaforo_texto(rej.ws, rej.c('r_be') + ':' + rej.c('r_be', 'D'),
                              (('Sí', motor.CF_VERDE_BG, motor.CF_VERDE_FG),
                               ('No', motor.CF_ROJO_BG, motor.CF_ROJO_FG)))
-        escribir(rej)
+        self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
                   'Todas las cifras van SIN IVA. Las columnas de los años 2 '
@@ -1440,8 +1469,14 @@ class Plan(object):
                            + str(accion[0]) + ' — ' + (accion[1] or ''))
                 importe, nota = float(accion[0]), accion[1] or nota
             fuera.append((rot, importe, nota))
+        # los extras se añaden UNA vez: en la 2.ª pasada ya están dentro del
+        # bloque de costes fijos y `_partidas` los devuelve como preservados
+        ya = set(motor.norm(r) for r, _i, _n in fuera)
         for extra in (self.dato('FIJOS_EXTRA', []) or []):
             rot, importe, nota, _fuente = (list(extra) + [None] * 4)[:4]
+            if motor.norm(rot) in ya:
+                continue
+            ya.add(motor.norm(rot))
             fuera.append((rot, importe, nota))
         return fuera
 
@@ -1510,20 +1545,19 @@ class Plan(object):
         rej.add(rot='INTERPRETACIÓN', bold=True)
         rej.add('texto', wrap=True, alto=46,
                 formulas={'A': (lambda R:
-                                '="Con un ticket medio de "&TEXT('
-                                + R.c('ticket') + ',"#,##0.00")&" € sin IVA '
-                                'necesitas servir "&TEXT(' + R.c('cub_dia')
-                                + ',"#,##0")&" cubiertos al día durante los '
-                                '"&TEXT(' + R.c('dias') + ',"#,##0")&" días '
-                                'que abres, es decir "&TEXT('
-                                + R.c('ingresos_be') + ',"#,##0")&" € al año, '
-                                'para cubrir todos los costes fijos y '
-                                'variables. Por debajo de esa cifra el '
-                                'negocio pierde dinero; por encima, cada '
-                                'cubierto aporta "&TEXT(' + R.c('mc')
-                                + ',"#,##0.00")&" € de margen."')})
-        self._sensibilidad(ws, rej)
-        fila = rej.ultima + 1
+                                '="Con el ticket medio sin IVA de la fila de '
+                                'arriba necesitas servir "&TEXT('
+                                + R.c('cub_dia') + ',"0")&" cubiertos al día '
+                                'durante los "&TEXT(' + R.c('dias') + ',"0")&'
+                                '" días que abres para cubrir todos los '
+                                'costes fijos y variables; en la fila '
+                                '«Ingresos necesarios al año» tienes esa '
+                                'misma cifra en euros. Por debajo el negocio '
+                                'pierde dinero y por encima cada cubierto '
+                                'aporta el margen de contribución de la fila '
+                                'de arriba."')})
+        self.pendientes.append(rej)
+        fila = self._sensibilidad(ws, rej) + 2
         for i, texto in enumerate(pie):
             motor.val(ws, 'A' + str(fila + i), texto)
         motor.anchos(ws, {'A': 44, 'B': 16, 'C': 46, 'D': 14, 'E': 14,
@@ -1569,8 +1603,7 @@ class Plan(object):
         rango = 'B' + str(cabf + 1) + ':E' + str(cabf + 5)
         motor.semaforo_num(ws, rango, verde_si='B' + str(cabf + 1) + '<='
                            + plan, rojo_si='B' + str(cabf + 1) + '>' + plan)
-        rej.add('sens_fin', rot=None)
-        rej._pos['sens_fin'] = cabf + 6
+        return cabf + 5
 
     # -- §2.5 -------------------------------------------------------------
     def escenarios(self):
@@ -1662,7 +1695,7 @@ class Plan(object):
                            + R.c('ticket', c) + '-' + R.c('tcv', c) + '/('
                            + R.c('cub', c) + '*' + R.c('dias', c) + '))/'
                            + R.c('dias', c) + ')')) for col in cols))
-        escribir(rej)
+        self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
                   'La columna «Realista» lee sus tres datos de la hoja de '
@@ -1832,9 +1865,14 @@ class Plan(object):
                            + rej.c('saldo', cols[11]),
                            verde_si=rej.c('saldo', cols[0]) + '>0',
                            rojo_si=rej.c('saldo', cols[0]) + '<0')
+        # `MIN` sobre doce celdas vacías devuelve 0, y un 0 aquí pinta el
+        # semáforo de VERDE en un libro sin datos: hay que preguntar antes si
+        # hay algún número que comparar
         rej.add('minimo', rot='Saldo mínimo del año', fmt=motor.FMT_EUR0,
-                formulas={'B': (lambda R: '=MIN(' + R.c('saldo', cols[0])
-                                + ':' + R.c('saldo', cols[11]) + ')'),
+                formulas={'B': (lambda R: '=IF(COUNT(' + R.c('saldo', cols[0])
+                                + ':' + R.c('saldo', cols[11]) + ')=0,"",MIN('
+                                + R.c('saldo', cols[0]) + ':'
+                                + R.c('saldo', cols[11]) + '))'),
                           'D': '="Si es negativo, sube el fondo de maniobra o '
                                'el préstamo: te quedas sin caja"'})
         motor.semaforo_num(ws, rej.c('minimo') + ':' + rej.c('minimo'),
@@ -1871,7 +1909,7 @@ class Plan(object):
                     'D': '="ÚNICO payback del pack: inversión a recuperar '
                          'entre el flujo de caja libre de los tres años. El '
                          'Word cita esta celda, no recalcula"'})
-        escribir(rej)
+        self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
                   'El IVA del cuarto trimestre se liquida en enero del año '
@@ -1939,8 +1977,11 @@ class Plan(object):
                            verde_si=rej.c('dif') + '>=0',
                            rojo_si=rej.c('dif') + '<0')
         rej.add(rot='CONDICIONES DEL PRÉSTAMO', bold=True)
+        # sin préstamo declarado el cuadro entero se apaga: un «0 €» de
+        # capital pendiente al vencimiento pintaría de verde un libro vacío
         rej.add('importe', rot='Importe del principal', fmt=motor.FMT_EUR0,
-                formulas={'B': '=' + P('prestamo')})
+                formulas={'B': '=IF(' + P('prestamo') + '=0,"",'
+                          + P('prestamo') + ')'})
         rej.add('tipo', rot='Tipo de interés nominal anual',
                 fmt=motor.FMT_PCT, formulas={'B': '=' + P('tipo_prestamo')})
         rej.add('plazo', rot='Plazo total (años)', fmt=motor.FMT_ENT,
@@ -1973,9 +2014,14 @@ class Plan(object):
             rej.add(clave, valores={'A': i}, fmt=motor.FMT_EUR,
                     fmt_A=motor.FMT_ENT,
                     formulas={
+                        # pasada la última anualidad el cuadro se APAGA
+                        # entero (decisión 14): sin el guarda del plazo, la
+                        # fila del año 8 imprimía «0 €» de capital pendiente
+                        # en un préstamo a 7 años
                         'B': ((lambda R: '=' + R.c('importe')) if i == 1 else
-                              (lambda R, a=anterior: '=IF(' + R.c(a, 'F')
-                               + '="","",' + R.c(a, 'F') + ')')),
+                              (lambda R, a=anterior, n=i: '=IF(OR(' + str(n)
+                               + '>' + R.c('plazo') + ',' + R.c(a, 'F')
+                               + '=""),"",' + R.c(a, 'F') + ')')),
                         'C': (lambda R, k=clave, n=i: '=IF(OR(' + str(n) + '>'
                               + R.c('plazo') + ',' + R.c(k) + '=""),"",'
                               + R.c(k) + '*' + R.c('tipo') + ')'),
@@ -1991,9 +2037,10 @@ class Plan(object):
                               + '="","",' + R.c(k) + '-' + R.c(k, 'D') + ')')})
         rej.add('cierre', rot='Capital pendiente al vencimiento',
                 fmt=motor.FMT_EUR,
-                formulas={'B': (lambda R: '=IF(' + R.c('y_%d' % plazo_max, 'F')
+                formulas={'B': (lambda R: '=IF(' + R.c('importe')
+                                + '="","",IF(' + R.c('y_%d' % plazo_max, 'F')
                                 + '="",0,' + R.c('y_%d' % plazo_max, 'F')
-                                + ')'),
+                                + '))'),
                           'C': '="Tiene que ser cero: si no, el cuadro no '
                                'cierra"'})
         motor.semaforo_num(ws, rej.c('cierre') + ':' + rej.c('cierre'),
@@ -2025,7 +2072,7 @@ class Plan(object):
                                verde_si=rej.c('dscr_%d' % i) + '>=1.25',
                                ambar_si=rej.c('dscr_%d' % i) + '>=1',
                                rojo_si=rej.c('dscr_%d' % i) + '<1')
-        escribir(rej)
+        self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
                   'El DSCR se calcula ANTES de la deuda: al resultado antes '
@@ -2223,7 +2270,20 @@ class Plan(object):
         return tocados, anadidos
 
     def _altas_checklist(self, ws, cab, col_tarea, altas, cabecera=None):
-        """Añade trámites conservando la estructura de fases del fichero."""
+        """Añade trámites conservando la estructura de fases del fichero.
+
+        IDEMPOTENTE por CONTENIDO: los que ya están no se vuelven a añadir. Sin
+        esto la 2.ª pasada duplicaba los diez trámites nuevos y el contador del
+        checklist pasaba de 59 a 69 sin que nadie lo hubiera pedido.
+        """
+        existentes = set()
+        for r in range(cab + 1, ws.max_row + 1):
+            v = ws.cell(row=r, column=col_tarea).value
+            if isinstance(v, str) and v.strip():
+                existentes.add(motor.norm(v))
+        altas = [a for a in altas if motor.norm(a[2]) not in existentes]
+        if not altas:
+            return 0
         # última fila con contenido en la columna de tarea
         ultima = cab
         for r in range(cab + 1, ws.max_row + 1):
@@ -2321,18 +2381,19 @@ def post(wb, fname, det, pid, params, cambios, contenido, carpeta=None):
     # construyen en dos fases (declarar y escribir), así que una hoja puede
     # citar coordenadas de otra que todavía no se ha volcado.
     plan.supuestos_altas()
+    # ORDEN DE DECLARACIÓN: cada hoja cita coordenadas de las anteriores; las
+    # citas «hacia atrás» (el P&L pide los intereses a Financiación, que
+    # todavía no existe) van como función y se resuelven en el volcado final.
     plan.personal()
-    plan.rej['financiacion'] = Rejilla(plan.ws_financiacion, 5)
-    plan.rej['inversion'] = Rejilla(plan.ws_inversion, 5)
-    plan.rej['equilibrio'] = Rejilla(plan.ws_equilibrio, 5)
-    plan.rej['tesoreria'] = Rejilla(plan.ws_tesoreria, 5)
-    plan.financiacion()
-    plan.inversion()
     plan.pyg()
+    plan.inversion()
     plan.equilibrio()
     plan.escenarios()
+    plan.financiacion()
     plan.tesoreria()
-    plan.instrucciones()
+    for rej in plan.pendientes:
+        escribir(rej)
+    plan.instrucciones()          # cita celdas de todas las anteriores
     plan.supuestos_calculadas()   # necesita las coordenadas del P&L
     recalibrado = plan.dato('RECALIBRADO', []) or []
     for entrada in recalibrado:
@@ -2391,6 +2452,12 @@ def _mapa(path):
     return wb, mapa
 
 
+#: Cubiertos/día del ensayo de la demo 5. Con 65 el año 1 pierde, el año 2
+#: gana menos de lo que arrastra en bases negativas y el año 3 tributa al tipo
+#: reducido: las tres ramas del impuesto quedan demostradas de una vez.
+DEMO5_CUBIERTOS = 65
+
+
 def demos(carpeta, demos_dir, pid, origen=None):
     """Las 8 demostraciones de §2.11, evaluadas con pycel."""
     res = {'fallos': [], 'demostraciones_2_11': {}}
@@ -2445,6 +2512,8 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'is2': R(pyg, 'Impuesto de Sociedades', 'C'),
         'is3': R(pyg, 'Impuesto de Sociedades', 'D'),
         'tipo3': R(pyg, 'Tipo de Impuesto de Sociedades aplicado', 'D'),
+        'rai2': R(pyg, 'RESULTADO ANTES DE IMPUESTOS', 'C'),
+        'bin_ini2': R(pyg, 'Bases negativas pendientes al inicio', 'C'),
         'be_dia': R(eq, 'Cubiertos necesarios al día'),
         'esc_rai': R(esc, 'RESULTADO ANTES DE IMPUESTOS', 'C'),
         'esc_neto': R(esc, 'RESULTADO NETO', 'C'),
@@ -2536,23 +2605,35 @@ def demos(carpeta, demos_dir, pid, origen=None):
                              + str(v4))
 
     # 5 — IS: pérdida en el año 1, BIN compensada en el 2, tipo reducido
+    # El escenario se elige para que se vean las TRES ramas: año 1 en
+    # pérdidas (impuesto cero), año 2 con base positiva MENOR que la base
+    # negativa pendiente (impuesto cero por compensación) y año 3 tributando
+    # al tipo de entidad de nueva creación, que es su primer ejercicio con
+    # base positiva.
     p5 = _clon(path, os.path.join(demos_dir, 'd5.xlsx'),
-               [(sup, celdas['cubiertos'].split('!')[-1],
-                 (num(base['cubiertos']) or 55) * 0.55)])
+               [(sup, celdas['cubiertos'].split('!')[-1], DEMO5_CUBIERTOS)])
     x5 = _pycel(p5)
     is1, is2, is3 = (_ev(x5, celdas['is1']), _ev(x5, celdas['is2']),
                      _ev(x5, celdas['is3']))
-    rai1 = _ev(x5, celdas['rai'])
+    rai1, rai2 = _ev(x5, celdas['rai']), _ev(x5, celdas['rai2'])
     tipo3 = _ev(x5, celdas['tipo3'])
+    bin2 = _ev(x5, celdas['bin_ini2'])
     ok5 = (num(rai1) is not None and rai1 < 0 and num(is1) == 0
-           and num(is2) == 0)
+           and num(rai2) is not None and rai2 > 0 and num(is2) == 0
+           and num(bin2) is not None and bin2 > rai2
+           and num(tipo3) is not None and abs(tipo3 - 0.15) < 1e-9
+           and num(is3) is not None and is3 > 0)
     res['demostraciones_2_11']['5_IS_con_BIN_y_tipo_de_nueva_creacion'] = {
-        'rai_ano_1': rai1, 'is_ano_1': is1, 'is_ano_2': is2, 'is_ano_3': is3,
-        'tipo_ano_3': tipo3, 'ok': ok5}
+        'cubiertos_del_ensayo': DEMO5_CUBIERTOS,
+        'rai_ano_1': rai1, 'is_ano_1': is1,
+        'rai_ano_2': rai2, 'bin_pendiente_ano_2': bin2, 'is_ano_2': is2,
+        'is_ano_3': is3, 'tipo_ano_3': tipo3, 'ok': ok5}
     if not ok5:
-        res['fallos'].append('§2.11.5: con pérdidas en el año 1 el impuesto '
-                             'no es cero o no se compensa la BIN ('
-                             + str([rai1, is1, is2]) + ')')
+        res['fallos'].append('§2.11.5: no se demuestran las tres ramas del '
+                             'impuesto (RAI1 ' + str(rai1) + ', IS1 '
+                             + str(is1) + ', RAI2 ' + str(rai2) + ', BIN2 '
+                             + str(bin2) + ', IS2 ' + str(is2) + ', tipo3 '
+                             + str(tipo3) + ', IS3 ' + str(is3) + ')')
 
     # 6 — la caja nunca se agota con el fondo dotado
     ok6 = num(base['saldo_min']) is not None and base['saldo_min'] >= 0
@@ -2569,16 +2650,22 @@ def demos(carpeta, demos_dir, pid, origen=None):
                 (sup, celdas['carencia'].split('!')[-1], 3)])
     x7 = _pycel(p7)
     cierre = _ev(x7, celdas['cierre'])
+    # las filas del cuadro llevan el AÑO como número en la columna A, así que
+    # no tienen rótulo de texto y no se pueden buscar por él
     apagados = []
-    wb7, mapa7 = _mapa(p7)
+    import openpyxl as _px
+    ws7 = motor.hoja(_px.load_workbook(p7), fin, obligatoria=True)
     for anio in (4, 5):
-        fila = mapa7.get(motor.norm(fin), {}).get(motor.norm(str(anio)))
-        ref_ = None
-        if fila:
-            ref_ = "'" + fin + "'!E" + str(fila)
-            apagados.append([anio, _ev(x7, ref_)])
+        for r in range(1, ws7.max_row + 1):
+            if ws7.cell(row=r, column=1).value == anio:
+                for col in ('C', 'D', 'E'):
+                    apagados.append([anio, col,
+                                     _ev(x7, "'" + fin + "'!" + col + str(r))])
+                break
     ok7 = (num(cierre) is not None and abs(cierre) <= 0.5
-           and all(v in ('', None, 0) or num(v) == 0 for _a, v in apagados))
+           and len(apagados) == 6
+           and all(v in ('', None) or num(v) == 0
+                   for _a, _c, v in apagados))
     res['demostraciones_2_11']['7_carencia_igual_al_plazo'] = {
         'capital_al_vencimiento': cierre, 'cuotas_anos_4_y_5': apagados,
         'ok': ok7}
@@ -2588,17 +2675,22 @@ def demos(carpeta, demos_dir, pid, origen=None):
                              + str(cierre) + ', ' + str(apagados) + ')')
 
     # 8 — libro EN BLANCO: ni un semáforo verde ni un 0,0 % falso
-    blancos = [(sup, celdas[k].split('!')[-1], None)
-               for k in ('cubiertos',)]
-    blancos.append((sup, celdas['cubiertos'].split('!')[-1], None))
+    # se vacían TODAS las celdas de entrada de la hoja de supuestos, no una:
+    # el libro en blanco es el estado en el que un semáforo verde o un
+    # «0,0 %» mienten más caro
+    import openpyxl as _px2
+    wb8 = _px2.load_workbook(path)
+    ws8 = motor.hoja(wb8, sup, obligatoria=True)
+    blancos = [(sup, c.coordinate, None) for row in ws8.iter_rows()
+               for c in row if motor.es_verde(c)]
     p8 = _clon(path, os.path.join(demos_dir, 'd8.xlsx'), blancos)
     x8 = _pycel(p8)
     vacias = {}
-    for clave in ('ingresos', 'r_personal', 'be_dia', 'esc_rai'):
+    for clave in ('ingresos', 'rai', 'neto', 'r_personal', 'be_dia',
+                  'esc_rai', 'saldo_min', 'cierre'):
         vacias[clave] = _ev(x8, celdas[clave])
     falsos = [k for k, v in vacias.items()
-              if isinstance(v, (int, float)) and not isinstance(v, bool)
-              and k in ('r_personal', 'be_dia')]
+              if isinstance(v, (int, float)) and not isinstance(v, bool)]
     res['demostraciones_2_11']['8_libro_en_blanco_sin_falsos_verdes'] = {
         'valores': vacias, 'ok': not falsos}
     if falsos:
