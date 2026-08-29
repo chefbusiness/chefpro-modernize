@@ -435,3 +435,14 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
   **SPEC v2.0 de la sub-familia (7 kits CB + mega-pack) en redacción (opus)** → `kit-tareas-cb-v2-SPEC.md`, reutilizando el motor de familia
   `kit-tareas-v2_0` (la SPEC debe demostrar en dry-run si el motor 2.4 reconoce este molde o qué extender) + `contenido_<pid>.py`; 8 decisiones firmadas
   (marca CB se queda —decisión de John— pero acentuada; normativa citada con fuente; 14 alérgenos; tildes en todas las celdas; rating/ancla → John).
+- **SPEC v2.0 de PLANES ESCRITA y firmada** (`ff23b8e`, `planes-v2-SPEC.md`, 18.319 palabras, 191/191 ids + 10 NUEVO-*): **4 moldes de plan financiero**
+  (A-α bar · A-β los otros 4 sin input de ticket · B-γ coctelería/parrillero · B-δ paellero/catering/chef con fórmulas pero tasas dentro); **no existe
+  ningún generador** (los 76 ficheros salieron de agentes ad-hoc nunca commiteados) → post-proceso de familia + producción nueva de los 10 planes de
+  negocio docx con bridge.py; los 5 planes de línea A son **inviables con sus propios datos** (personal del P&L ≠ hoja Personal: tapas-bar −113.174 €);
+  10/10 landings prometen «plan de financiación» y 0/30 xlsx lo tienen; changelog falso en los 10; 46 docx en US Letter con `author='python-docx'`;
+  NUEVO-05 anticipo «48348,0 %» en 3 calculadoras B-δ; catering: break-even 0,46 eventos/mes en fichero vs «14» en landing. Decisiones 17-21 del
+  orquestador (caso base recalibrado por los dos lados o pérdidas declaradas; catering a la baja; B-δ a 6.500-7.000 palabras; bridge en el Mac con
+  --model explícito; columna OK en C3/C4).
+- **Construcción del representante A LANZADA**: `planes-v2-workflow.js` (`f4577f1`), runId `wf_bfa5c64b-148`, paquete `planes-v2_0/` (motor + grupo_a +
+  contenido_plan_negocio_bar_restaurante/a.py + main.py con `PLANES_APPLY=1`), informes `auditorias/planes-v2-*.json`; auto-commit nohup
+  `scratchpad/autocommit-planes.sh`. Después: T6 (grupo_b + refutación de coctelería) → hermanos → documentos → capa de producto.
