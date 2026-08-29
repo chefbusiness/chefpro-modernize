@@ -778,25 +778,51 @@ def pl_tres_hojas(wb, fname, cambios, contenido):
         col_anual = 'C' if _norm(ws['C4'].value).startswith('anual') else None
         col_pct = 'D' if 's/ventas' in _norm(ws['D4'].value) else None
 
+        # §7-bis.14/§1.2 — cuando `contenido` RECALIBRA las líneas de detalle
+        # de un escenario (japonés: el Pesimista citado por nombre en la
+        # SPEC), los TOTALES que dependían de esas líneas dejan de coincidir
+        # con la constante vieja por diseño, no por error. `_precargar_pl`
+        # (variante «escenarios-columnas», representante) ya sabe adjuntar la
+        # nota que justifica la diferencia (§1.2); esta variante «tres hojas»
+        # no tenía el mismo cableado — el propio contenido de peruano/mexicano
+        # lo documentó como límite conocido al NO recalibrar por esta razón.
+        # Se añade aquí, leyendo el mismo `conf['notas']` por patrón de
+        # etiqueta, para que un hermano que SÍ necesite recalibrar (como esta
+        # guía) pueda hacerlo sin que el gate de §1.2 lo rechace en falso: la
+        # nota sigue siendo obligatoria para que la demo no calle una
+        # diferencia SIN justificar, sólo dejamos de bloquear la que SÍ la
+        # trae. Sin `conf['notas']` (el caso de casual/mexicano/peruano, que
+        # no recalibran ningún escenario) `notas_fila` queda vacío y el
+        # comportamiento no cambia ni un byte.
+        notas_fila = {}
+        for patron, texto in ((conf or {}).get('notas') or {}).items():
+            rr = _fila(ws, patron, obligatoria=False)
+            if rr is not None:
+                notas_fila[rr] = texto
+
         motor.verde(ws, 'B' + str(f_ing + 1) + ':B' + str(f_tot_ing - 1))
         motor.verde(ws, 'B' + str(f_fij + 1) + ':B' + str(f_tot_fij - 1))
         a_formula(ws, 'B' + str(f_tot_ing),
                   '=SUM(B' + str(f_ing + 1) + ':B' + str(f_tot_ing - 1) + ')',
-                  fname, cambios, fmt=FMT_EUR)
+                  fname, cambios, fmt=FMT_EUR,
+                  nota_dif=notas_fila.get(f_tot_ing))
         # el food cost deja de ir en el rótulo y baja a celda verde
         celda_fc = _celda_food_cost(ws, f_fc, conf, cambios, fname)
         a_formula(ws, 'B' + str(f_fc), '=B' + str(f_tot_ing) + '*' + celda_fc,
-                  fname, cambios, fmt=FMT_EUR)
+                  fname, cambios, fmt=FMT_EUR, nota_dif=notas_fila.get(f_fc))
         motor.verde(ws, 'B' + str(f_fc + 1) + ':B' + str(f_tot_var - 1))
         a_formula(ws, 'B' + str(f_tot_var),
                   '=SUM(B' + str(f_fc) + ':B' + str(f_tot_var - 1) + ')',
-                  fname, cambios, fmt=FMT_EUR)
+                  fname, cambios, fmt=FMT_EUR,
+                  nota_dif=notas_fila.get(f_tot_var))
         a_formula(ws, 'B' + str(f_tot_fij),
                   '=SUM(B' + str(f_fij + 1) + ':B' + str(f_tot_fij - 1) + ')',
-                  fname, cambios, fmt=FMT_EUR)
+                  fname, cambios, fmt=FMT_EUR,
+                  nota_dif=notas_fila.get(f_tot_fij))
         a_formula(ws, 'B' + str(f_eb),
                   '=B' + str(f_tot_ing) + '-B' + str(f_tot_var) + '-B'
-                  + str(f_tot_fij), fname, cambios, fmt=FMT_EUR)
+                  + str(f_tot_fij), fname, cambios, fmt=FMT_EUR,
+                  nota_dif=notas_fila.get(f_eb))
         if f_pct:
             motor.f(ws, 'B' + str(f_pct),
                     '=IF(B' + str(f_tot_ing) + '=0,"",B' + str(f_eb) + '/B'
@@ -806,7 +832,8 @@ def pl_tres_hojas(wb, fname, cambios, contenido):
                 if ws['B' + str(r)].value is None:
                     continue
                 a_formula(ws, col_anual + str(r), '=B' + str(r) + '*12',
-                          fname, cambios, fmt=FMT_EUR)
+                          fname, cambios, fmt=FMT_EUR,
+                          nota_dif=notas_fila.get(r))
             cols.append(col_anual)
         if col_pct:
             for r, _n, _c in etiquetas(ws, 1, f_ing, f_eb):

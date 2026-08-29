@@ -87,6 +87,28 @@ TICKET = {
     'dias_mes': 26,          # fuente: fichero original — Break-Even!B7
 }
 
+#: Nota única, reutilizada en las 8 filas que cambian de valor por la
+#: recalibración del Pesimista (§7-bis.14, ver cabecera del módulo): las 4
+#: líneas de ingreso, su TOTAL, el food cost, el TOTAL COSTES VARIABLES y el
+#: EBITDA — y, por la columna `C` anual (`=B*12`), las mismas 8 filas otra
+#: vez. `demos._demo_constantes()` exige nota o coincidencia exacta por
+#: CELDA: sin una entrada por fila, esa fila sigue fallando aunque las demás
+#: la tengan.
+_NOTA_RECALIBRACION = (
+    'Recalibrado (§7-bis.14): el original de v1.1 daba EBITDA -12.055 '
+    'EUR/mes (-144.660 EUR/año, -20,6% de margen) tecleado a mano y '
+    'aritméticamente correcto, pero es el caso que la propia SPEC cita por '
+    'nombre como "no prudencia, error de calibración que invalida la '
+    'herramienta". El Pesimista pasa del 75% al 90% del Realista en las '
+    'cuatro líneas de ingreso (Ventas sala, Barra sake+whisky, Delivery, '
+    'Bebidas), con el mismo food cost (33%) y los mismos costes fijos '
+    '(50.550 EUR/mes, iguales en las tres hojas por diseño de v1.1, '
+    'Instrucciones!A7): EBITDA -4.216 EUR/mes (-50.592 EUR/año, -6,0% de '
+    'margen). Sigue siendo el peor de los tres escenarios y sigue en '
+    'pérdidas — no se maquilla a positivo — pero deja de ser un año que por '
+    'sí solo agotaría el fondo de maniobra en menos de 12 meses.'
+)
+
 # ==========================================================================
 # §2.2 · pl-mensual-escenarios.xlsx — variante «tres hojas»
 # ==========================================================================
@@ -107,17 +129,21 @@ PL = {
         },
     },
     'notas': {
-        r'^ebitda': ('Recalibrado (§7-bis.14): el original de v1.1 daba '
-                     '-12.055 EUR/mes (-144.660 EUR/año, -20,6% de margen) '
-                     'tecleado a mano y aritméticamente correcto pero es el '
-                     'caso que la propia SPEC cita como "no prudencia, error '
-                     'de calibración". Ahora el Pesimista es el 90% del '
-                     'Realista (antes 75%) en las cuatro líneas de ingreso, '
-                     'con el mismo food cost (33%) y los mismos costes fijos '
-                     '(50.550 EUR/mes, iguales en las tres hojas por diseño '
-                     'de v1.1): EBITDA -4.216 EUR/mes (-6,0% de margen). '
-                     'Sigue siendo el peor escenario y sigue en pérdidas: no '
-                     'se maquilla a positivo.'),
+        # §1.2/§7-bis.14 — una nota por CADA fila cuyo total (o cuya columna
+        # `C` anual) deja de coincidir con la constante vieja de v1.1 porque
+        # depende, directa o indirectamente, de las 4 líneas de ingreso
+        # recalibradas de arriba. El gate `_demo_constantes()` (grupo_a.py)
+        # exige nota o coincidencia exacta en CADA celda que pasa de
+        # constante a fórmula: sin una entrada por fila, la fila sin nota
+        # sigue fallando aunque las demás la tengan.
+        r'^ventas sala': _NOTA_RECALIBRACION,
+        r'^barra sake': _NOTA_RECALIBRACION,
+        r'^delivery': _NOTA_RECALIBRACION,
+        r'^bebidas': _NOTA_RECALIBRACION,
+        r'^total ingresos': _NOTA_RECALIBRACION,
+        r'^food cost': _NOTA_RECALIBRACION,
+        r'^total costes variables': _NOTA_RECALIBRACION,
+        r'^ebitda': _NOTA_RECALIBRACION,
     },
 }
 

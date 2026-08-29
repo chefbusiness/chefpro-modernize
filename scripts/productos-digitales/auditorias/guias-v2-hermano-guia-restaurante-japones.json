@@ -1,0 +1,615 @@
+{
+ "producto": "guia-restaurante-japones",
+ "tanda": "T6 (hermano de guia-restaurante-gastronomico)",
+ "rol": "sonnet — verificacion id a id contra el representante + censo propio",
+ "fecha": "2026-08-29",
+ "paquete": [
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_japones/a.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_japones/b.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_japones/c.py"
+ ],
+ "gates": {
+  "dryrun_exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_entregables_fail": "OK: 0 defectos (19 ficheros: 15 xlsx, 3 docx, 1 pdf)",
+  "xlsx_totales": 15,
+  "formulas_en_los_15_xlsx": 1185,
+  "data_only_fallos": 0,
+  "data_only_con_valor": 721,
+  "data_only_vacias_por_diseno": 404,
+  "data_only_vacias_no_verificadas_pycel": "10 (plantilla-turnos-brigada.xlsx:'Registro de jornada'!C179:C188 -- SUMPRODUCT+IFERROR que pycel 1.0b30 no evalua; misma excepcion PRE-EXISTENTE documentada en la SPEC §9 para el representante y los 3 hermanos anteriores, mismo patron, mismo recuento exacto de filas",
+  "checklists_con_bloque_resumen": 6,
+  "checklists_cuadran_subtotales": "6/6 True",
+  "hojas_protegidas": "39/39",
+  "brigada_horas_max": "40.0 (los 14 puestos, ninguno por encima; verificado puesto a puesto en el fichero real: K5:K18 = [40.0]*14)",
+  "brigada_bruto_min": "19600.0 (Runner, 15% por encima del SMI 17094.0 vigente RD 126/2026; los 14 puestos ya estaban por encima del SMI tomando el tercio bajo del rango del docx, sin necesidad de elevar ninguno)",
+  "proyeccion_ano1_vs_cashflow": {
+   "proyeccion_3_anos_B13": 842400.0,
+   "cash_flow_total_12_meses_entradas": 842400.0,
+   "coincide": true
+  },
+  "necesidad_total_financiacion": 828340.0,
+  "fondo_de_maniobra_calculado": 461940.0,
+  "fondo_de_maniobra_meses": 6,
+  "cuota_prestamo_verificada": {
+   "importe": 580000,
+   "plazo_anos": 8,
+   "tipo": 0.06,
+   "carencia_anos": 1,
+   "cuota_mensual_post_carencia_B12": 8472.961600593004,
+   "cuota_mensual_durante_carencia_B13": 2900.0,
+   "cuota_carencia_en_contenido": 2900.0,
+   "coincide": true
+  },
+  "pesimista_recalibrado_japones": {
+   "motivo": "§7-bis.14: japones es el caso citado por nombre en la SPEC (\"el de japones entrega un EBITDA de -12.055 EUR/mes... se recalibra con el modulo de contenido\")",
+   "ebitda_v1_1": -12055,
+   "ebitda_v1_1_anual": -144660,
+   "ebitda_recalibrado": -4216,
+   "ebitda_recalibrado_anual": -50592,
+   "pct_del_realista_antes": 0.75,
+   "pct_del_realista_ahora": 0.9,
+   "sigue_en_perdidas": true,
+   "nota_de_justificacion_1_2_adjunta": true
+  }
+ },
+ "recuentos_checklist": [
+  {
+   "fichero": "checklist-legal.xlsx",
+   "items_medidos": 52,
+   "anuncia": 42,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-contratacion.xlsx",
+   "items_medidos": 31,
+   "anuncia": 31,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-appcc.xlsx",
+   "items_medidos": 47,
+   "anuncia": 46,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-diseno-sala-japonesa.xlsx",
+   "items_medidos": 36,
+   "anuncia": 32,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-equipamiento-cocina-japonesa.xlsx",
+   "items_medidos": 39,
+   "anuncia": 36,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-marketing-preapertura.xlsx",
+   "items_medidos": 32,
+   "anuncia": 31,
+   "ok": true
+  }
+ ],
+ "hallazgos_propios_de_japones": [
+  {
+   "id": "RD-JP-01",
+   "motivo": "checklist-legal.xlsx sin duplicado de alta censal (1 sola fila, categoria Empresa): el item de facturacion verificable (RD 1007/2023) entra como NUEVO, no liberando una fila existente — mismo patron que RD-CASUAL-01/RD-MEX-01/RD-PERU-03."
+  },
+  {
+   "id": "RD-JP-02",
+   "motivo": "checklist-equipamiento-cocina-japonesa.xlsx (36 items, unico de los 4 hermanos verificados hasta ahora que YA presupuesta horno mixto Y campana reforzada): solo faltaba la extincion automatica en campana (DOM-20) + instalacion/transporte (parametrizado, patron del representante) + sonda dedicada de congelacion (DOM-14/§3.2)."
+  },
+  {
+   "id": "RD-JP-03",
+   "motivo": "plantilla-turnos-brigada.xlsx: v1.1 tenia los 14 puestos SIN NINGUN dia de libranza (11 en 'P' x7=70h, 2 en 'T' x7=56h, 1 en 'M' x7=56h) — el MISMO defecto exacto (11+2+1) que ya cazaron casual (RD-CASUAL-02), mexicano (RD-MEX-03) y peruano (RD-PERU-02) en sus propios v1.1. Recalibrado a 40h/puesto con libranza real y patrones escalonados (forzar_cuadrante=True)."
+  },
+  {
+   "id": "§7-bis.14 (japones, caso citado por nombre)",
+   "motivo": "unico de los 4 hermanos T6 verificados hasta ahora donde la SPEC exige recalibrar el escenario Pesimista (no solo documentar sin tocar, como en peruano/RD-PERU-01 y mexicano/RD-MEX-04): el motor compartido (grupo_a.pl_tres_hojas) no tenia el cableado para adjuntar una nota de justificacion §1.2 a los TOTALES de la variante \"tres hojas\" — se extendio grupo_a.py con un lookup \"notas por patron de etiqueta\" (mismo mecanismo que ya usa _precargar_pl para la variante del representante), retrocompatible: sin conf[\"notas\"] (casual/mexicano/peruano) el comportamiento no cambia."
+  },
+  {
+   "id": "DOM-14 (nota de cobertura)",
+   "motivo": "checklist-appcc.xlsx de japones es el MAS completo de anisakis de los 4 hermanos verificados: las 5 piezas (congelador con registro, registro de lotes, archivo 12 meses, certificado acuicultura, informacion al cliente) YA estaban en v1.1; solo faltaba la cita legal exacta (RD 1021/2022 en vez de RD 1420/2006 derogado)."
+  },
+  {
+   "id": "COM-17/18 (dashboard ya honesto)",
+   "motivo": "a diferencia de casual/mexicano/peruano (donde el dashboard copiaba las MISMAS 6 cifras entre hermanos), el dashboard de japones (GuiaRestauranteJaponesDashboard.tsx) YA trae sus propias 6 cifras y las 6 CUADRAN con el fichero real (42/36/46/32/31/31 anunciados vs 42/36/46/32/31/32 medidos en v1.1, antes de anadir ningun item nuevo) — unico de los 4 hermanos donde no hace falta tocar T8 para que el numero cuadre."
+  }
+ ],
+ "ids_verificados": [
+  {
+   "id": "TEC-01",
+   "estado": "resuelto",
+   "evidencia": "calculadora-ticket-medio.xlsx!'Ticket Medio'!B15 pasa de vacia a formula (variante columna unica, 9 valores precargados de v1.1 respetados). Demo T6 (main.py): precio_movido B6 22->32 mueve el ticket 41.15->48.15; 0 fallos data_only en 7 formulas del fichero."
+  },
+  {
+   "id": "TEC-02",
+   "estado": "resuelto",
+   "evidencia": "pl-mensual-escenarios.xlsx: las 3 hojas (Pesimista/Realista/Optimista) pasan de constantes a formula encadenada (B10/B13/B15/B29/B31 + C=B*12). Demo T6: mover Pesimista!B6 40500->48600 mueve la cascada facturacion 70200->78300, materia prima 23166->25839, EBITDA -4216->1211 (grupo_a.pl_escenarios en el informe)."
+  },
+  {
+   "id": "TEC-03",
+   "estado": "resuelto",
+   "evidencia": "cash-flow-break-even.xlsx: Cash Flow con 12 meses encadenados (saldo acumulado B27:M27) y Break-Even!B13 con MATCH/INDEX. Demo T6: acumulado = [-15000..480000] coincide con el esperado; mes_de_break_even=4; con serie siempre negativa devuelve 'No alcanzado'."
+  },
+  {
+   "id": "TEC-04",
+   "estado": "resuelto",
+   "evidencia": "menu-engineering-matrix.xlsx!Matrix: columnas I (Popularidad/mix) y J (Clasificacion) anadidas sobre los 15 platos ya precargados de v1.1. Demo T6: total_uds=1890, mc_medio_ponderado=9.97, umbral=0.047, clasificaciones ['Star','Plowhorse','Puzzle',...] (15), al triplicar ventas del menos vendido (fila 15) pasa de Puzzle a Star."
+  },
+  {
+   "id": "TEC-06",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx!'Ficha (plantilla)': DV decimal 0-0.95 en la columna de merma (F) + formula blindada IFERROR(IF(F>=1,\"\",D/(1-F)),\"\"). Demo T6 escandallo: coste_merma_0=13.63, coste_merma_20=14.07 (sube con la merma, signo correcto)."
+  },
+  {
+   "id": "TEC-07",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx: hoja nueva 'Proyeccion 3 Anos' creada (Instrucciones!A9 ya la anunciaba). Verificado abriendo el fichero escrito: B13(Ano1 Ingresos)=842400, coincide EXACTO con la suma de las 12 entradas de cash-flow-break-even.xlsx (gate 'Proyeccion ano1=cash flow')."
+  },
+  {
+   "id": "TEC-11",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx!'Turnos Semana': columna K con SUMPRODUCT sobre D:J + columnas L(Bruto anual)/M(pagas)/N/O(coste hora)/P(coste semana). Demo T6 turnos: 14 puestos, horas_fila_5=40.0, total_horas=560.0, coste_hora con los parametros de control da los valores esperados (22.17 / 16.67)."
+  },
+  {
+   "id": "TEC-12",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx: nota en D bajo la tabla de equivalencia de turnos documentando la 'V' como Vacaciones (antes sin documentar en ningun fichero de esta guia)."
+  },
+  {
+   "id": "TEC-14",
+   "estado": "resuelto",
+   "evidencia": "cronograma-apertura-gantt.xlsx!Gantt: formato condicional sobre F6:W34 con AND(ISNUMBER(mes_inicio), mes>=inicio, mes<inicio+duracion). Demo T6 gantt_barra: fila 5 ('Estudio de mercado'), meses_pintados=[1,2], al mover mes_inicio+2 pasa a [3,4] (ok:true)."
+  },
+  {
+   "id": "TEC-15",
+   "estado": "resuelto",
+   "evidencia": "cronograma-apertura-gantt.xlsx: D/E a dd/mm/yyyy con DV de fecha + columna Dias '=E-D'. Verificado: 0 fallos en las 28 formulas del fichero (informe T6)."
+  },
+  {
+   "id": "TEC-16",
+   "estado": "resuelto",
+   "evidencia": "los 6 checklists molde A de esta guia (legal, contratacion, appcc, diseno-sala, equipamiento, marketing) reciben fila TOTAL '=SUM(G)' + subtotales SUMIF(B) + '% completado'. Demo T6 checklists: los 6 'cuadra':true (subtotales = TOTAL)."
+  },
+  {
+   "id": "TEC-17",
+   "estado": "resuelto",
+   "evidencia": "los 6 checklists molde A: Fecha Limite a dd/mm/yyyy con DV + semaforo ISNUMBER sobre Estado. Verificado: 0 fallos en las 14/7/15/12/14/10 formulas de cada uno (informe T6)."
+  },
+  {
+   "id": "TEC-21",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx!Escandallo!G19: el 33% sale de la formula original '=G18/0.33' a celda verde E19 y G19 pasa a '=IFERROR(G18/$F$4/$E$19,\"\")' (usa la celda, no el 0.33 incrustado). Demo T6 escandallo: pvp_sin_iva=42.64, pvp_con_iva=46.91, ok:true."
+  },
+  {
+   "id": "TEC-23",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx: hoja renombrada 'Ficha (plantilla)' + hoja nueva 'Resumen' + instruccion de 'clic derecho -> Mover o copiar -> Crear una copia'. Verificado en el fichero escrito (informe T6)."
+  },
+  {
+   "id": "TEC-25",
+   "estado": "resuelto",
+   "evidencia": "formato por tipo de etiqueta aplicado en los 15 xlsx: %, Uds/Cubiertos/Dias en #,##0, importes en #,##0.00 EUR, fechas en dd/mm/yyyy — verificado sin fallos data_only (721 con valor, 404 vacias por diseno, 0 fallos)."
+  },
+  {
+   "id": "TEC-26",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx!Inversion: tabla de correspondencia 46 partidas -> 13 categorias (capex_map de contenido_guia_restaurante_japones/a.py) frente a calculadora-capex.xlsx!'CAPEX Desglosado' (35 partidas, mismas 13 categorias). No se fusionan los libros (§7.1)."
+  },
+  {
+   "id": "TEC-27",
+   "estado": "resuelto",
+   "evidencia": "calculadora-capex.xlsx!'CAPEX Desglosado'!D41 (TOTAL) = 435300.0 (demo T6: totales.D41.valor=435300.0, suma_celda_a_celda coincide) — es la cifra que T8 debe citar en la landing, no medida aqui pero la fuente de T6 ya es correcta y unica."
+  },
+  {
+   "id": "TEC-28",
+   "estado": "resuelto",
+   "evidencia": "los 6 checklists molde A: hoja 'Instrucciones' creada, pestana renombrada del generico 'Sheet' al nombre del checklist, linea de version 'Version 2.0 - agosto 2026' y bio anclada. Verificado en el fichero escrito."
+  },
+  {
+   "id": "TEC-29",
+   "estado": "resuelto",
+   "evidencia": "formato condicional anadido: semaforo verde/ambar/gris sobre Estado (6 checklists molde A) y semaforo ISNUMBER rojo sobre margenes/EBITDA/flujo. Antes 0 reglas en los 15 xlsx de esta guia (verificado v1.1)."
+  },
+  {
+   "id": "TEC-30",
+   "estado": "resuelto",
+   "evidencia": "proteccion de hoja SIN contrasena en las 39 hojas de los 15 xlsx (demo T6: hojas_protegidas=39/39), con las celdas verdes en Protection(locked=False)."
+  },
+  {
+   "id": "DOM-01",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx!Inversion!C50 'Fondo de maniobra' pasa de constante (70000, 3 meses) a formula = (TOTAL COSTES FIJOS 50550 + TOTAL COSTES VARIABLES Realista 26440) x 6 meses = 461940 EUR. Verificado abriendo el fichero escrito: C50=461940.0 exacto, TOTAL INVERSION C52=828340.0."
+  },
+  {
+   "id": "DOM-02",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx: celda verde 'Tipo de SS a cargo de la empresa (%) = 33%' + columna O 'Coste/hora' que multiplica el bruto x(1+SS). Verificado: cocina 21117 EUR/mes bruto x1.33 = 28085 EUR/mes (justo en el techo del rango del docx, que YA decia 'incluye SS empresa' sin haberla sumado — el mismo defecto de fondo que DOM-02 documenta para el representante)."
+  },
+  {
+   "id": "DOM-03",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx: PVP sin/con IVA con el 10% extraido de '=G19*1.10' a celda verde. cash-flow-break-even.xlsx: 3 filas de IVA (repercutido, soportado, liquidacion 303) anadidas — antes 0 menciones de IVA en el cash flow de esta guia (verificado v1.1)."
+  },
+  {
+   "id": "DOM-04",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx (modelo E2, merma como recargo): G='=E*(1+F)' corregido a '=IFERROR(IF(F>=1,\"\",E/(1-F)),\"\")'. Demo T6: con merma 20% el coste sube de 13.63 a 14.07 EUR (antes el modelo E2 la trataba como recargo x1.20 en vez de /(1-0.20)=x1.25, -4% de coste por linea)."
+  },
+  {
+   "id": "DOM-06",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx!'Proyeccion 3 Anos': Ano1 por referencia al P&L mensual, Ano2/Ano3 con crecimiento e inflacion en celda verde. Verificado: B13=842400 (Ano1) coincide con el cash flow de 12 meses."
+  },
+  {
+   "id": "DOM-07",
+   "estado": "resuelto",
+   "evidencia": "pl-mensual-escenarios.xlsx: las 3 hojas dejan de ser TODO tecleado; los TOTALES (B10/B13/B15/B29/B31) pasan a formula encadenada, verificado por pycel (informe T6, 'constantes_a_formulas': Realista/Optimista coinciden exacto con la constante vieja; Pesimista recalibrado con nota, ver NUEVO-01)."
+  },
+  {
+   "id": "DOM-08",
+   "estado": "resuelto",
+   "evidencia": "calculadora-ticket-medio.xlsx!'Ticket Medio'!B15: la celda que da nombre al fichero ('TICKET MEDIO ESTIMADO') estaba VACIA en v1.1 y ahora calcula '=B5*B6+B7+B8*B9+B10*B11+B12*B13'."
+  },
+  {
+   "id": "DOM-09",
+   "estado": "resuelto",
+   "evidencia": "cash-flow-break-even.xlsx!'Break-Even'!B13 'Break-Even (meses)' pasa de vacia a '=IFERROR(MATCH(TRUE,INDEX(...>0,0),0),\"No alcanzado\")'. Demo T6 cash_flow: mes_de_break_even=4 con la serie de ejemplo; 'No alcanzado' con serie siempre negativa."
+  },
+  {
+   "id": "DOM-10",
+   "estado": "resuelto",
+   "evidencia": "menu-engineering-matrix.xlsx: Kasavana & Smith completo (mix%, umbral 70%/N, margen medio ponderado, clasificacion Star/Plowhorse/Puzzle/Dog) + columna 'Accion recomendada'. Demo T6: umbral=0.047, mc_medio=9.97, 15 clasificaciones coherentes con el cuadrante."
+  },
+  {
+   "id": "DOM-11",
+   "estado": "resuelto",
+   "evidencia": "checklist-legal.xlsx fila 13 'Licencia de actividad / declaracion responsable' YA era generica en v1.1 de japones (verificado: sin la cadena 'C3' en ninguno de los 19 xlsx) — no aplica como sustitucion; se deja constancia en contenido_guia_restaurante_japones/b.py."
+  },
+  {
+   "id": "DOM-12",
+   "estado": "resuelto",
+   "evidencia": "checklist-legal.xlsx: sin 'Libro de visitas' que sustituir (verificado, las 4 filas Laboral de v1.1 no lo tenian); 2 items NUEVOS anadidos: 'Registro diario de jornada (RD-ley 8/2019)' y 'Comunicacion de apertura del centro de trabajo'."
+  },
+  {
+   "id": "DOM-13",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx: celda 'SMI vigente (EUR/ano, 14 pagas) = 17094' (RD 126/2026) + semaforo ISNUMBER rojo bajo el minimo. Verificado en el fichero escrito: los 14 puestos (L5:L18) van de 19600 a 49000 EUR/ano, TODOS por encima del SMI sin necesidad de elevar ninguno (a diferencia de peruano, cuyo Runner si necesitaba el suelo)."
+  },
+  {
+   "id": "DOM-14",
+   "estado": "resuelto",
+   "evidencia": "checklist-appcc.xlsx: las 5 piezas de anisakis YA estaban en v1.1 (congelador con registro, registro de lotes, archivo 12 meses, certificado acuicultura, informacion al cliente) — la MAS completa de las 4 guias hermanas verificadas hasta ahora en T6; solo se sustituyo la cita legal de la fila 13 (RD 1420/2006 derogado -> RD 1021/2022 art. 8.1, con la alternativa -35C/15h)."
+  },
+  {
+   "id": "DOM-15",
+   "estado": "resuelto",
+   "evidencia": "checklist-appcc.xlsx: 1 item NUEVO condicional de baja temperatura/vacio, adaptado porque el equipamiento de esta guia no presupuesta roner ni envasadora (verificado: las cadenas 'roner'/'envasadora' no aparecen en las 36 filas de checklist-equipamiento-cocina-japonesa.xlsx)."
+  },
+  {
+   "id": "DOM-16",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx: hoja nueva 'Registro de jornada' con alertas de descanso <12h (art 34.3 ET) y >40h semanales. Demo T6 registro_jornada: cruce de medianoche 22h->6h da 8h correctamente, aviso de descanso <12h se dispara (ok:true)."
+  },
+  {
+   "id": "DOM-22",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx: hoja nueva 'Financiacion' con cuadro frances (anualidad algebraica). Verificado: prestamo de ejemplo 580000 EUR/8 anos/6.0%/1 ano carencia -> B12 (cuota post-carencia)=8472.96, B13 (cuota carencia)=2900.0; cash-flow-break-even.xlsx fila 40 repite la cuota de carencia (2900) en los 12 meses del Ano1 (dentro de la carencia)."
+  },
+  {
+   "id": "DOM-23",
+   "estado": "resuelto",
+   "evidencia": "checklist-legal.xlsx: bloque 'Local' NUEVO con 5 items (arrendamiento, fianza 2 mensualidades, carencia de renta, cesion/traspaso, condicion suspensiva) — las cadenas 'arrendamiento'/'fianza'/'traspaso'/'carencia' no aparecian en ninguno de los 19 xlsx de v1.1."
+  },
+  {
+   "id": "DOM-30",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx: el 33% deja de estar solo en el rotulo 'Food cost (33%)' y pasa a celda verde E19 leida por la formula del PVP (antes G19 llevaba '0.33' incrustado sin que ninguna otra formula lo referenciara)."
+  },
+  {
+   "id": "DOM-35",
+   "estado": "resuelto",
+   "evidencia": "checklist-marketing-preapertura.xlsx: sin mencion a Resy en ninguna de las 32 filas de v1.1 (verificado) — DOM-35 no aplica como sustitucion en esta guia; se deja constancia."
+  },
+  {
+   "id": "DOM-37",
+   "estado": "resuelto",
+   "evidencia": "cronograma-apertura-gantt.xlsx: v1.1 YA incluia 'Negociacion alquiler y contrato' (fila 8, M4-M5) y 'Plan financiero y busqueda financiacion' (fila 2, M1-M3) — los 2 huecos que DOM-22/23 encontraron vacios en el representante ya estaban cubiertos aqui; 0 tareas nuevas necesarias, solo el formato condicional de barras (TEC-14)."
+  },
+  {
+   "id": "DOM-38",
+   "estado": "resuelto",
+   "evidencia": "checklist-legal.xlsx: 2 items NUEVOS (Registro retributivo RD 902/2020, Protocolo de prevencion del acoso sexual LO 3/2007) sin umbral de plantilla. checklist-contratacion.xlsx (31 items, sin 'Plan de igualdad' ni 'clausula de no competencia' en v1.1): nota de remision al checklist legal, sin duplicar el presupuesto (14 puestos, muy por debajo del umbral de 50)."
+  },
+  {
+   "id": "DOM-39",
+   "estado": "resuelto",
+   "evidencia": "checklist-diseno-sala-japonesa.xlsx: 4 items NUEVOS (limitador-registrador acustico, alumbrado de emergencia CTE DB-SUA/SI, vestuario de personal RD 486/1997, certificacion de aforo). 32 -> 36 items, sigue por encima del anunciado (32)."
+  },
+  {
+   "id": "DOM-40",
+   "estado": "resuelto",
+   "evidencia": "checklist-marketing-preapertura.xlsx: sustitucion de 'Sesion fotografica profesional' de 600 EUR a 1500 EUR (minimo del rango real 1500-3000 EUR). 'Zwiesel' no aparece en ninguno de los 19 xlsx de japones (nada que quitar). Recuentos: los 6 checklists ya cuadraban o superaban lo anunciado por el dashboard antes de anadir ningun item (b.py, censo propio T6)."
+  },
+  {
+   "id": "COM-04",
+   "estado": "resuelto",
+   "evidencia": "calculadora-ticket-medio.xlsx calcula de verdad: B15 pasa de vacia a formula, con Cubiertos/dia (65, fuente Break-Even!B6) y Dias abierto/mes (26, fuente Break-Even!B7) anadidos debajo."
+  },
+  {
+   "id": "COM-05",
+   "estado": "resuelto",
+   "evidencia": "pl-mensual-escenarios.xlsx: los 3 escenarios encadenados de verdad (ver DOM-07/TEC-02); Pesimista ademas recalibrado del 75% al 90% del Realista (§7-bis.14, unico hermano donde la SPEC exige recalibrar por nombre)."
+  },
+  {
+   "id": "COM-06",
+   "estado": "resuelto",
+   "evidencia": "cash-flow-break-even.xlsx: Cash Flow con 12 meses encadenados + capa de IVA/deuda + Break-Even con meses de equilibrio calculados (ver DOM-09/TEC-03)."
+  },
+  {
+   "id": "COM-07",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx: proyeccion a 3 anos real, EBITDA/EBIT separados, financiacion con cuadro frances, fondo de maniobra dimensionado (ver DOM-01/06/22)."
+  },
+  {
+   "id": "COM-08",
+   "estado": "resuelto",
+   "evidencia": "menu-engineering-matrix.xlsx: metodo Kasavana & Smith completo sobre los 15 platos reales de v1.1 (ver DOM-10)."
+  },
+  {
+   "id": "COM-10",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx: coste de personal recalculado con SS al 33% en celda, no en el rotulo del docx (ver DOM-02); ademas hoja Registro de jornada nueva (DOM-16)."
+  },
+  {
+   "id": "COM-14",
+   "estado": "resuelto",
+   "evidencia": "escandallo-maestro-japones.xlsx: food cost en celda + PVP con y sin IVA, los dos extraidos de la formula incrustada de v1.1 (ver DOM-03/DOM-30/TEC-21)."
+  },
+  {
+   "id": "COM-15",
+   "estado": "resuelto",
+   "evidencia": "checklist-legal.xlsx vigente: registro de jornada, registro retributivo, comunicacion de apertura y protocolo de acoso anadidos, todos en categoria Laboral, una sola vez (ver DOM-12/DOM-38)."
+  },
+  {
+   "id": "COM-19",
+   "estado": "resuelto",
+   "evidencia": "cronograma-apertura-gantt.xlsx deja de estar en blanco: formato condicional sobre Mes inicio/Duracion pinta las barras (ver TEC-14); v1.1 YA marcaba los meses activos con 'X' (variante T2/'hermanos' del Gantt, distinta de la vacia del representante)."
+  },
+  {
+   "id": "COM-20",
+   "estado": "resuelto",
+   "evidencia": "plantilla-turnos-brigada.xlsx: horas por SUMPRODUCT + coste/hora + coste semana + headcount medido en tiempo de ejecucion (14 puestos, coherente con el docx '8-10 cocina + 5-8 sala' = 9+5=14)."
+  },
+  {
+   "id": "COM-24",
+   "estado": "resuelto",
+   "evidencia": "los 15 xlsx: title/subject -> '... - v2.0' (§1.11, motor comun). Los 3 docx y el 1 PDF de esta guia NO se tocan en T6 (documentos.py, T7): metadata actual author='python-docx'/'(anonymous)' sigue sin corregir hasta T7 — resuelto PARCIALMENTE aqui (los xlsx), el resto queda para T7."
+  },
+  {
+   "id": "COM-28",
+   "estado": "resuelto",
+   "evidencia": "checklist-legal.xlsx fila 13 y cronograma-apertura-gantt.xlsx fila 9: 'Licencia de actividad / declaracion responsable', sin atribuir 'C3' a nada; ninguno de los 19 xlsx de v1.1 menciona 'CIRCE'. DOM-11/COM-28 no encuentran nada que sustituir en esta guia — verificado, no asumido."
+  },
+  {
+   "id": "COM-30",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx!Inversion: 'Fondo de maniobra (3 meses)' pasa a formula calculada a 6 meses (ver DOM-01); el rotulo de la partida no se toca (§2.3.5: 'el rotulo queda igual'), solo la cifra."
+  },
+  {
+   "id": "COM-31",
+   "estado": "resuelto",
+   "evidencia": "los 6 checklists molde A suman su presupuesto: fila TOTAL con SUM(G) + subtotales SUMIF(B). Demo T6: checklist-legal total=23430, checklist-appcc total=9650, checklist-diseno-sala total=89400, checklist-equipamiento total=110550, checklist-contratacion total=3000, checklist-marketing total=14100 — los 6 con cuadra=True."
+  },
+  {
+   "id": "COM-32",
+   "estado": "resuelto",
+   "evidencia": "calculadora-capex.xlsx ('rangos de mercado', 35 partidas, TOTAL D41=435300 verificado) y plan-financiero-3-anos.xlsx!Inversion ('Mi CAPEX', 46 partidas) NO se fusionan; capex_map (a.py) los reconcilia por 13 categorias comunes sin externalLink entre libros (§7.1)."
+  },
+  {
+   "id": "NUEVO-01",
+   "estado": "resuelto",
+   "evidencia": "plan-financiero-3-anos.xlsx!'P&L Mensual': las filas A10/A13/A15/A29/A31/A32 estaban VACIAS en las 13 columnas B:N de v1.1 (peor que el representante, que al menos tenia algunas). Verificado escrito: N10 (TOTAL INGRESOS anual)=842400 tras aplicar la rampa del Ano1 (coincide con Proyeccion!B13); 238 formulas en el fichero, 0 fallos data_only."
+  }
+ ],
+ "ids_no_aplican": [
+  {
+   "id": "TEC-05",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-08",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-09",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-10",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-13",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-18",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-19",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-20",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-22",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "TEC-24",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-05",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-20",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-21",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-26",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-27",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-28",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-33",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-34",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-17",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-18",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-21",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-22",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-33",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-34",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "NUEVO-02",
+   "motivo": "Ambito exclusivo de guia-panaderia-obrador (defecto del P&L a 3 anos de panaderia, mismo hoja/formula que no existe en esta guia). No aplica a japones."
+  },
+  {
+   "id": "DOM-17",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "DOM-18",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "DOM-19",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "DOM-25",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "DOM-31",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-01",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-02",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-11",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-16",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-29",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-35",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §5 -- documentos (guia-restaurante-japones.pdf/.docx, business-plan-modelo.docx, manual-operaciones-japones.docx), que se produce en T7 con bridge.py desde un guion, no se post-procesa. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-03",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §6 -- capa de producto (landing, dashboard, changelog, email de Astro), que se actualiza en T8 con las cifras YA medidas aqui en T6. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-09",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §6 -- capa de producto (landing, dashboard, changelog, email de Astro), que se actualiza en T8 con las cifras YA medidas aqui en T6. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-25",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §6 -- capa de producto (landing, dashboard, changelog, email de Astro), que se actualiza en T8 con las cifras YA medidas aqui en T6. No corresponde a este paquete."
+  },
+  {
+   "id": "COM-27",
+   "motivo": "Fuera del alcance de T6 (post-proceso de los 15 xlsx, grupos a/b/c): vive en §6 -- capa de producto (landing, dashboard, changelog, email de Astro), que se actualiza en T8 con las cifras YA medidas aqui en T6. No corresponde a este paquete."
+  },
+  {
+   "id": "DOM-24",
+   "motivo": "Fuera del alcance de T6: decision aparcada explicitamente por John (§7.3 de la SPEC) -- no se toca en ninguna tanda hasta que el decida."
+  },
+  {
+   "id": "COM-12",
+   "motivo": "Fuera del alcance de T6: decision aparcada explicitamente por John (§7.3 de la SPEC) -- no se toca en ninguna tanda hasta que el decida."
+  },
+  {
+   "id": "COM-13",
+   "motivo": "Fuera del alcance de T6: decision aparcada explicitamente por John (§7.3 de la SPEC) -- no se toca en ninguna tanda hasta que el decida."
+  },
+  {
+   "id": "DOM-29",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-32",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "DOM-36",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-23",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-26",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  },
+  {
+   "id": "COM-36",
+   "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico; §2.5 exige medirlo, no darlo por replicado). Verificado en los 15 xlsx de japones (censo propio T6, dump openpyxl de v1.1 antes de tocar nada): sin equivalente medido — el molde/fichero de esta guia no reproduce el defecto del representante."
+  }
+ ]
+}
