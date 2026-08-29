@@ -182,6 +182,66 @@ de contenido portugués, es que los cinco repiten la misma fórmula y el mismo
 28-35 % — que es exactamente lo que Google ya sirve en su AI Overview. El
 diferenciador no puede ser explicar la fórmula.
 
+## ✅ Re-medición del 2026-08-28 (tanda 4): el roadmap ACIERTA por primera vez
+
+Cuatro tandas seguidas refutando censos, y en la 4 los dos datos aguantan —
+incluso al alza. Que conste, porque el patrón anterior invitaba a desconfiar de
+todo: **el censo no es siempre falso, es siempre viejo**. Hay que re-medir, no
+descartar de antemano.
+
+| Lo que decía el roadmap | Lo medido el 28-ago |
+|---|---|
+| `mise en place` clúster 1.930/mes | **1.900 la cabecera** (serie 1900,1900,2400,1900,2400,2400) + 170 `mise en place restaurante` + 140 `organização da cozinha` + 70 `significado` → **clúster ≈ 2.350** |
+| cortes clúster 1.070/mes | mirepoix **590** + brunoise **210** + `corte juliana` **170** + chiffonade 90 + julienne 70 + `corte brunoise` 50 + `cortes de legumes` 50 → **clúster ≈ 1.280** |
+
+**Lo que sí cambió el enfoque, y no estaba en el roadmap:**
+
+1. **La regla 7 (marcas homónimas) aplica a la VARIANTE, no a la cabecera.** El
+   restaurante Mise En Place de Marinha Grande ocupa **#1, #2, #5 y #8 en
+   `mise en place restaurante`** y copa sus relacionadas — esa variante es una
+   SERP de marca y no se ataca. En la cabecera `mise en place` solo tiene #1, #3
+   y #9, y deja libres todos los puestos informativos. **Se titula por la
+   cabecera cualificando el ángulo**, no por la variante «profesional», que era
+   lo que parecía obvio.
+2. **El PAA de `mise en place` está PARTIDO: seis de ocho preguntas son de
+   SALA** (como servir à mesa, em que mão se usa o garfo, onde se põe o
+   guardanapo). Los contenidos brasileños hablan solo de cocina y los dos PT-PT
+   solo de mesa. **Nadie cubre las dos** — ese fue el hueco.
+3. **`corte juliana` (170) NO se titula**: tiene AI Overview servido de fuentes
+   **españolas** (Arroz SOS, Brillante) y su PAA es cocina de casa («Como cortar
+   feijão verde em juliana?», «Quanto tempo leva para cozinhar feijão verde?»).
+   Se cubre dentro del post, en la tabla.
+
+### ⚠️ La SERP portuguesa de `mirepoix` se contradice, y el #1 está MAL
+
+El caso más limpio hasta ahora de «hueco por CALIDAD, no por ausencia». Ninguna
+de las dos cabeceras (mirepoix, brunoise) tiene AI Overview, y en mirepoix **no
+hay un solo resultado PT-PT** entre los doce primeros: Brasil ×8, Wikipedia,
+Instagram, Reddit y en.wikipedia. En brunoise, el único PT-PT es el blog de una
+marca de arroz, y aparecen **bonviveur.es (#9) y ALDI España (#11)**.
+
+Verificado contra las fuentes primarias el 28-ago:
+
+| Fuente | Qué dice |
+|---|---|
+| **pt.wikipedia `Mirepoix (culinária)` — #1 en Portugal** | «Mirepoix é um **corte de 2 milímetros**» |
+| en.wikipedia `Julienning` | juliana **3 × 3 × 40-50 mm**; girada 90° da brunoise de 3 mm |
+| fr.wikipedia `Julienne (cuisine)` | «**4 à 5 cm sur 1 mm** d'épaisseur» |
+| en.wikipedia `Brunoise` | «about **3 mm** or less»; en Francia «**1 to 2 mm**» |
+| fr.wikipedia `Brunoise` | «dés de **2 mm** de côté» |
+| fr.wikipedia `Macédoine` | «**un demi-centimètre** de côté» |
+| en.wikipedia `Mirepoix` | **2:1:1**; «may be cut to a larger size, **depending on the cooking time**» |
+
+Dos conclusiones que valen para cualquier post de técnica: **2 mm no es un
+mirepoix, es más fino que una brunoise** —el #1 de Portugal describe el corte
+como su contrario—, y **las escuelas francesa y anglosajona no coinciden ni en
+la juliana ni en la brunoise**. Nadie en la SERP lo dice: todos sirven un número
+como si fuera dogma. El ángulo no es «dar la medida buena», es **dar las dos y
+explicar que lo que importa es la regularidad**, y separar lo que es un CORTE
+(definido por una medida) de lo que es una PREPARACIÓN (definida por una
+proporción). Regla general: **cuando la SERP se contradice a sí misma, el post
+no compite por añadir otro número — compite por ordenar los que ya existen.**
+
 ### Regla 10 (nueva) — `registo de temperaturas` es METEOROLOGÍA
 
 La SERP de `registo de temperaturas` (20/mes) la copan **IPMA, Portal do Clima,
