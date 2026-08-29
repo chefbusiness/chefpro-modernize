@@ -365,3 +365,18 @@ página se llama «Kit Gestión de Personal y Turnos» (regla del nombre del des
 
 **Siguiente (orden del plan):** guías → planes → hotel completo → eBook · homologación AICP↔CB (a CB le faltan los 42 v1.1 + pastelería/inventario/
 gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casual y el catering de CB) · SEO landings ES+LATAM.
+
+## 14. Madrugada del 29-ago (tras plan-financiero) — familia GUÍAS arrancada · planes R1 en curso
+
+- **R1 `guia-restaurante-gastronomico`** (`4abc60f`, `auditorias/guia-restaurante-gastronomico-R1.json`): **106 hallazgos / 49 altas, «no listo» ×3**.
+  Lo grave: 4 de 18 xlsx con CERO fórmulas (ticket medio, P&L escenarios, cash-flow «break-even» sin break-even, menu engineering sin
+  clasificación); «Plan Financiero 3 Años» sin proyección a 3 años; escandallo que ignora raciones y merma y con food cost objetivo decorativo;
+  **PDF de 10 páginas frente a «80+» vendidas** (5 veces en landing/dashboard); bonus docx de 255-350 palabras valorados en 39-49 €; checklist legal con
+  el libro de visitas (derogado); 2 puestos bajo el SMI; personal «con SS» sin SS; ni IVA ni financiación en los 22 ficheros; 3 cifras distintas de
+  inversión total. Los 7 generadores (`scripts/generate-guia-*.py`) son scripts distintos (~390 líneas comunes de 1.4-1.8k).
+- **SPEC v2.0 de FAMILIA en redacción (opus)** → `scripts/productos-digitales/guias-v2-SPEC.md`, con 10 decisiones ya firmadas por el orquestador
+  (mismos ficheros; las 4 plantillas muertas se convierten en herramientas; proyección 3 años real; legal/sanitario vigente; **la promesa de 80+ páginas
+  SE CUMPLE con bridge.py + reportlab, patrón `bono_guia.py`**; una sola fuente de cifras por guía; rating/testimonios/ancla → John; método de familia
+  con representante + hermanos sonnet + canario). Si esta sesión se corta antes de que exista el fichero: relanzar el redactor con el mismo encargo.
+- **R1 `plan-negocio-bar-restaurante`** (planes línea A) lanzada en paralelo (`auditoria-entregables-workflow.js`, familia `plan`); persistir con
+  `r1-desde-journal.py <journal> plan-negocio-bar-restaurante plan` y commitear. Pendiente: R1 de `plan-negocio-cocteleria-eventos` (línea B).
