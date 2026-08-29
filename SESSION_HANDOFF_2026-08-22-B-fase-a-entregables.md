@@ -471,3 +471,9 @@ credenciales identificables), **decisión 3 sigue** (anclas de precio; reversibl
 la ficha de un producto de 14 €.
 **05:20 — John: «¡déjalas!»** → capa comercial INTACTA: ni ratings/reviews (Product ni SoftwareApplication) ni anclas de precio ni testimonios. Sólo queda
 el inventario informativo `auditorias/capa-comercial-inventario-2026-08-29.json` para que él decida. La sesión sigue con los productos (guías, planes, kits CB).
+**05:30 — Segunda captura de John (`/kit-tareas-hotel`: «4,8 ★ (9.122) · 95,00 €»)** → el precio de la SERP era un PLAN del SaaS (la ficha lleva ofertas
+10/25/50/95/950 € del `SoftwareApplication` global) en un kit de 18,50 €. **John aprueba dejar de emitir el global en las landings de producto** para que
+Google use el `Product` de cada una (sus estrellas 4,9 y su precio real). Hecho en `e78e917`: prop `omitGlobalApp` en `BaseLayout.astro` (filtra sólo el
+`SoftwareApplication`; Organization y WebSite siguen) + `omitGlobalApp` en los 44 wrappers de `astro-site/src/pages/` (42 de las 4 plantillas + mega-pack +
+pro-prompts-ebook). Verificación por curl tras el deploy: landings con 0 SoftwareApplication y 1 AggregateRating; home/precios/blog con el global intacto.
+`Pricing.astro` (planes del SaaS) no se toca.
