@@ -1,0 +1,263 @@
+{
+ "pid": "guia-restaurante-peruano",
+ "rol": "REFUTADOR del hermano (lente CONSULTOR DE APERTURAS + lente TÉCNICA EXCEL)",
+ "fecha": "2026-08-29",
+ "listo": false,
+ "copia_auditada": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/r-guia-restaurante-peruano/dryrun/guia-restaurante-peruano",
+ "dry_run_propio": {
+  "comando": "CLAUDE_SCRATCHPAD=.../guias/r-guia-restaurante-peruano python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-peruano --dry-run --json .../r-guia-restaurante-peruano.json",
+  "resultado": "exit 0 · TODO VERDE (moldes, idempotencia 0, cache, censo 0 defectos, demos) · 1.189 fórmulas en 15 xlsx · data_only fallos 0 (727 con valor, 402 vacías por diseño) · 39/39 hojas protegidas sin contraseña · 10 fórmulas no evaluadas por pycel en 'Registro de jornada'!C109:C118 (excepción ya documentada en la SPEC §9)",
+  "lectura": "El dry-run reproduce exactamente el del constructor. Todos sus gates son de FORMA — que la fórmula exista, que no pete, que el recuento no baje. Ninguno comprueba que el rótulo diga lo mismo que la fórmula, que la nota describa algo que existe, ni que los quince libros cuenten la misma historia. Por eso el paquete sale verde con 594.200 € de inversión frente a 420.000 € de préstamo y un modelo que pierde dinero tres años."
+ },
+ "ids_del_constructor_refutados": [
+  {
+   "id": "TEC-26",
+   "veredicto": "REFUTADO",
+   "detalle": "La columna de correspondencia CAPEX no existe en el xlsx: Inversión tiene 8 columnas, F4='Notas' vacía en las 44 filas, G y H sin cabecera. Ver REF-01."
+  },
+  {
+   "id": "COM-32",
+   "veredicto": "REFUTADO",
+   "detalle": "Se apoya literalmente en «Ver TEC-26». Cae con él: los dos CAPEX (300.400 € y 594.200 €) no se reconcilian en ninguna celda. Ver REF-01 y REF-06."
+  },
+  {
+   "id": "DOM-01",
+   "veredicto": "REFUTADO",
+   "detalle": "Se cambió la cifra (343.800 € = 6 × 57.300) y se dejó el rótulo B48 «Fondo de maniobra (3 meses)». Ver REF-02."
+  },
+  {
+   "id": "COM-30",
+   "veredicto": "REFUTADO",
+   "detalle": "Declara «un solo rótulo y una cifra calculada por fórmula». Hay cuatro fondos de maniobra vivos (50.000 / 343.800 / «3 meses» / «seis meses»). Ver REF-02 y REF-03."
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "REFUTADO EN PARTE",
+   "detalle": "El cuadro francés es correcto y verificable (B12=6.135,59 €, B13=2.100 €, D18=25.200 €), pero Inversión!A62 promete un cuadre «fondos propios + préstamo + otras fuentes» que la hoja Financiación no tiene: 174.200 € sin financiar. Ver REF-05."
+  },
+  {
+   "id": "TEC-04",
+   "veredicto": "REFUTADO EN PARTE",
+   "detalle": "La clasificación se calcula, pero contra el umbral global, mientras Matrix!B22 dice al lector que se usa el de cada familia «columna L», que está vacía (L4=None, L5:L19=None). Ver REF-10."
+  },
+  {
+   "id": "TEC-25",
+   "veredicto": "REFUTADO",
+   "detalle": "«0 avisos de formato» con 8 celdas de texto llevando formato de moneda o porcentaje (escandallo D18/D19/D20, P&L Mensual O12, brigada D28/D33/D35/D36). Ver REF-20."
+  },
+  {
+   "id": "TEC-23",
+   "veredicto": "REFUTADO EN PARTE",
+   "detalle": "La hoja Resumen se creó, pero su columna 'Food cost real (%)' (G4) no se rellena nunca, ni en la fila cableada. Ver REF-14."
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "REFUTADO EN PARTE",
+   "detalle": "El escandallo sí trae PVP con y sin IVA. El cash flow declara B33 (21 % bebida alcohólica) y no la usa ninguna fórmula: los 10.000 €/mes de barra van al 10 %. Y la calculadora de ticket no tiene IVA. Ver REF-09 y REF-23."
+  },
+  {
+   "id": "DOM-14",
+   "veredicto": "REFUTADO EN PARTE",
+   "detalle": "El ítem nuevo con cita RD 1021/2022 art. 8.1 está (C20), pero no se sustituyó nada: la fila 16 sigue siendo «Registro temperaturas recepción mercancía» y el ítem viejo sin base normativa sobrevive en C18, contradiciendo al nuevo. Ver REF-17."
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "CIERTO PERO ENGAÑOSO",
+   "detalle": "B13 calcula bien y devuelve 'No alcanzado'. Citar ese resultado como evidencia de resolución esconde que el entregable estrella dice que el negocio no llega nunca al break-even. Ver REF-11."
+  },
+  {
+   "id": "DOM-06 / TEC-07",
+   "veredicto": "CIERTO PERO INCOMPLETO",
+   "detalle": "La Proyección existe y está encadenada, pero la amortización es una constante 0 disfrazada de fórmula y el crecimiento del año 2 no se aplica sobre el año anterior pese a lo que dice su nota. Ver REF-12 y REF-13."
+  },
+  {
+   "id": "TEC-06",
+   "veredicto": "REFUTADO EN PARTE",
+   "detalle": "La DV de merma es correcta (0-0,95), pero quedan entradas verdes sin validación: 'Margen Piscos'!B12 y B13. Ver REF-22."
+  },
+  {
+   "id": "no_aplica (49 ids)",
+   "veredicto": "ACEPTADOS SALVO UNO",
+   "detalle": "Los 49 «no aplican» se sostienen como ámbito de representante o de T7/T8, con una excepción de criterio: DOM-31 se lista como resuelto con el motivo «NO APLICA a T6», mezclando dos estados distintos en un mismo campo; debería estar en ids_no_aplican, no entre los resueltos."
+  }
+ ],
+ "fuente_de_las_cifras": "Todas las cifras citadas salen de los propios entregables de este hermano: los 15 xlsx de MI copia dry-run en el scratchpad (leídos con openpyxl en modo fórmula y data_only, con el caché que inyecta el propio pipeline) más el informe del constructor y los recuentos que él mismo declara. Ninguna cifra de sector inventada; los porcentajes ponderados (food cost 17,55 % de la matriz) están calculados sobre las celdas del propio libro y se indica la operación. No se ha tocado astro-site/public/dl/.",
+ "hallazgos": [
+  {
+   "id": "REF-01",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx!Inversión!F4 = 'Notas' (F5:F48 vacías; G y H sin cabecera ni datos; max_column=8)",
+   "hallazgo": "TEC-26 y COM-32 REFUTADOS. El informe declara «columna 'Categoría equivalente en calculadora-capex.xlsx' con 44/44 partidas mapeadas vía PLAN['capex_map']; 0 excepciones». Esa columna NO EXISTE en el fichero escrito: la hoja tiene 8 columnas, la 6.ª es 'Notas' y está vacía en las 44 filas, y la 7.ª y 8.ª no tienen ni cabecera. correspondencia_capex() se ejecuta sin excepción pero no escribe nada en el libro, y el gate sólo comprobó que la función no petara. Además calculadora-capex.xlsx!Instrucciones!A13 se lo PROMETE al cliente: «TU CAPEX... se rellena en plan-financiero-3-anos.xlsx, hoja «Inversión», que trae la correspondencia concepto → categoría de esta hoja». COM-32 («los dos CAPEX se reconcilian sin fusionar libros») se apoya literalmente en «Ver TEC-26», así que cae con él.",
+   "fix": "Escribir de verdad la columna de correspondencia en Inversión (cabecera + 44 valores) y verificarla releyendo el xlsx, no el retorno de la función. Si no se escribe, retirar la promesa de calculadora-capex.xlsx!Instrucciones!A13."
+  },
+  {
+   "id": "REF-02",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx!Inversión!B48 = 'Fondo de maniobra (3 meses)' sobre C48 = 343.800,00 € (= C55 57.300 × C57 6)",
+   "hallazgo": "DOM-01 y COM-30 REFUTADOS. La evidencia dice textualmente «fondo de maniobra dimensionado por fórmula (>=6 meses...) en vez de la constante '3 meses' tecleada» y «un solo rótulo y una cifra calculada por fórmula». Se cambió la CIFRA y se dejó el RÓTULO: la partida sigue llamándose «Fondo de maniobra (3 meses)» encima de un número que son 6. Es exactamente el defecto que el refutador de mexicano ya levantó y que aquí se da por cerrado sin abrir la celda.",
+   "fix": "Renombrar B48 a «Fondo de maniobra (C57 meses)» o componerlo por fórmula desde C57, para que rótulo y cifra no puedan divergir otra vez."
+  },
+  {
+   "id": "REF-03",
+   "severidad": "alta",
+   "celda": "calculadora-capex.xlsx!'CAPEX Desglosado'!C39 = 'Fondo 3 meses' D39 = 50.000,00 € · Instrucciones!A15 = «el fondo de maniobra de seis meses» · plan-financiero!Inversión!C48 = 343.800,00 € · cash-flow-break-even.xlsx!'Cash Flow'!B46 = 343.800,00 €",
+   "hallazgo": "Rotura de la fuente única (§7-bis.7) sobre la partida que más dinero mueve: conviven CUATRO fondos de maniobra en el mismo pack — 50.000 €, 343.800 €, «3 meses» y «seis meses». Un comprador que dimensione por calculadora-capex sale al banco pidiendo 293.800 € menos de los que su propio plan financiero dice que necesita.",
+   "fix": "Una sola fuente: el fondo se calcula en Inversión!C58 y todo lo demás lo cita. Poner en calculadora-capex!D39/E39 la cifra del plan financiero (o dejar la fila vacía remitiendo a él) y unificar el número de meses en los rótulos."
+  },
+  {
+   "id": "REF-04",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx!Inversión!A59 = «Los 60.000 / 120.000 / 200.000 € que trae calculadora-capex.xlsx no cubren ni dos meses de la estructura...»",
+   "hallazgo": "La nota describe un fichero que no existe en este hermano: calculadora-capex.xlsx no trae tres escalones de 60.000/120.000/200.000 €, trae UNA fila ('Fondo 3 meses', D39 = 50.000,00 €). El texto está copiado de otro hermano sin re-medir. El cliente que vaya a comprobarlo no encuentra ninguna de las tres cifras.",
+   "fix": "Reescribir A59 contra las cifras reales de este hermano (50.000 € frente a 57.300 €/mes de estructura), o generarla por fórmula desde calculadora-capex."
+  },
+  {
+   "id": "REF-05",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx!Inversión!C61 = 594.200,00 € vs !Financiación!B5 = 420.000,00 €; Financiación no tiene bloque de cuadre (A4:B14 parámetros + A17:F27 cuadro francés, y nada más)",
+   "hallazgo": "DOM-22 REFUTADO. La evidencia («hoja 'Financiación' añadida... cuadro francés... B12=6135.59, B13=2100, D18=25200») verifica la CUOTA, no el CUADRE. Inversión!A62 promete: «Esta es la cifra que tiene que cuadrar la hoja «Financiación»: fondos propios + préstamo + otras fuentes». Esa hoja no tiene fila de fondos propios, ni de otras fuentes, ni total, ni diferencia. Quedan 174.200 € sin financiar y ningún sitio donde se vea.",
+   "fix": "Añadir en Financiación un bloque de cuadre (fondos propios + préstamo + otras fuentes = total, y diferencia contra Inversión!C61) con semáforo cuando la diferencia sea ≠ 0."
+  },
+  {
+   "id": "REF-06",
+   "severidad": "alta",
+   "celda": "calculadora-capex.xlsx!'CAPEX Desglosado'!D41 = 300.400,00 € y !A1 = 'Calculadora CAPEX — Inversión 130K-300K€' vs plan-financiero-3-anos.xlsx!Inversión!C50 = 594.200,00 €",
+   "hallazgo": "Dos totales de inversión para el mismo proyecto, con 293.800 € de diferencia, y un título que anuncia una horquilla (130K-300K€) que el propio plan financiero del pack duplica. Aunque los dos libros «se comparan y ninguno lee del otro» (Instrucciones!A13), no hay ninguna celda donde se vea la diferencia, así que el comprador nunca sabe cuál de las dos cifras es la suya.",
+   "fix": "Dejar explícito en ambos libros qué mide cada total (capex sin fondo vs necesidad total) y actualizar el título A1 a la horquilla real, o añadir la fila de conciliación entre los dos totales."
+  },
+  {
+   "id": "REF-07",
+   "severidad": "alta",
+   "celda": "plantilla-turnos-brigada.xlsx!'Turnos Semana'!O20 = 437.030,02 €/año (L20 328.594 € × 1,33) vs plan-financiero-3-anos.xlsx!'P&L Mensual'!B19+B20 = 17.000 + 12.000 = 29.000 €/mes = 348.000 €/año",
+   "hallazgo": "Rotura de fuente única en la nómina, la partida más grande del P&L: la brigada que el propio kit propone (14 puestos, K20 = 560 h/semana) cuesta 89.030 €/año MÁS de lo que el P&L carga. Inversión!A59 afirma que «el coste de personal sale de plantilla-turnos-brigada.xlsx (§7-bis.7)» — no sale. El error se propaga a los 3 escenarios de pl-mensual-escenarios.xlsx, al cash flow (B16/B17) y a la Proyección 3 Años: con el coste real, incluso el escenario Optimista (B31 = +7.325 €/mes, +87.900 €/año) queda en negativo.",
+   "fix": "Cablear Personal cocina y Personal sala del P&L a O20 de la brigada (o, si no se enlazan libros, escribir en el P&L el valor que sale de la brigada y dejar la nota de procedencia). Recalcular después los 3 escenarios, el cash flow y la Proyección."
+  },
+  {
+   "id": "REF-08",
+   "severidad": "alta",
+   "celda": "escandallo-maestro-peruano.xlsx!'Ficha (plantilla)'!G18 = 5,2987 € y G20 = 19,4287 € · menu-engineering-matrix.xlsx!Matrix!C5 = 14,00 € D5 = 2,80 € · calculadora-ticket-medio.xlsx!'Ticket Medio'!B6 = 12,00 €",
+   "hallazgo": "El plato bandera de la guía tiene TRES precios y DOS costes incompatibles. El escandallo cuesta el ceviche de corvina a 5,30 €/ración y exige 19,43 € con IVA para el food cost objetivo del 30 %; la matriz lo vende a 14,00 € con un coste de 2,80 € (la mitad); la calculadora de ticket lo tarifa a 12,00 €. A 12 € con IVA (10,91 € sin IVA) el food cost REAL del escandallo es del 48,6 %, no del 30 %. Sobre las 160 uds/mes de Matrix!F5 la matriz se inventa ~400 €/mes de margen que el escandallo dice que no existen.",
+   "fix": "Una sola fuente por plato: que Matrix!D5 (y las 15 filas) se alimente del coste de la ficha del escandallo, y fijar el PVP en un único sitio. Si el PVP de carta es 14 €, corregir el food cost objetivo o el coste; no dejar tres números."
+  },
+  {
+   "id": "REF-09",
+   "severidad": "alta",
+   "celda": "cash-flow-break-even.xlsx!'Cash Flow'!B33 = 21,0 % ('Tipo de IVA de la bebida alcohólica (%)') — 0 referencias en todo el libro; B37:M37 usan sólo $B$32 (10 %) sobre B12, que incluye B9 (10.000 €/mes de barra de piscos) y B11 (7.000 €/mes de bebidas)",
+   "hallazgo": "DOM-03 sólo resuelto a medias. La celda del IVA de bebida alcohólica es una celda MUERTA: se declara, se pinta verde, se documenta en A36 («10 % general de restauración y 21 % en bebidas alcohólicas, art. 91 de la Ley del IVA») y no la usa ninguna fórmula. Todo el ingreso se repercute al 10 %. Con los 10.000 €/mes de la barra de piscos son 11 puntos de IVA sin declarar: 1.100 €/mes, 13.200 €/año de deuda con Hacienda que el cash flow no enseña.",
+   "fix": "Separar la base de bebida alcohólica del resto en el IVA repercutido (B37 = (B12-B9)*$B$32 + B9*$B$33, o una fila propia), o eliminar B33 y no prometer en A36 un tratamiento que no se hace."
+  },
+  {
+   "id": "REF-10",
+   "severidad": "alta",
+   "celda": "menu-engineering-matrix.xlsx!Matrix!B22 = «...la clasificación usa el de cada familia, columna L» · L4 = None y L5:L19 = None · J5:J19 usan $F$22 (umbral global 4,67 %)",
+   "hallazgo": "TEC-04 REFUTADO en su parte de criterio. La clasificación Kasavana&Smith se calcula, sí, pero contra el umbral GLOBAL, mientras la nota del propio libro le dice al lector que se usa el de cada familia y le señala una columna L que está completamente vacía (sin cabecera y sin un solo valor). La evidencia del constructor cita «umbral=0.0467», que es justamente el global que la nota dice que NO se usa. Además la matriz mete el Pisco Sour (fila 13, bebida al 21 % de IVA) entre los platos, lo que desplaza el margen medio ponderado (G21 = 9,65 €) que decide quién es Star y quién Dog.",
+   "fix": "O se implementa la columna L de familia y la clasificación por familia, o se borra la mención a la columna L de B22 y se deja dicho que el umbral es global. Y sacar las bebidas de la matriz de platos o darles su propia familia."
+  },
+  {
+   "id": "REF-11",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx!'Proyección 3 Años'!B17 = -73.200,00 € · C17 = -12.237,60 € · D17 = -10.035,60 € · B23 = -98.400,00 € · D23 = -30.811,01 € · cash-flow-break-even.xlsx!Break-Even!B13 = 'No alcanzado' · 'Cash Flow'!M42 = -88.569,00 €",
+   "hallazgo": "CONFIRMO RD-PERU-01 y lo mantengo como BLOQUEANTE de publicación: la guía «Cómo montar un restaurante peruano» entrega un modelo financiero que pierde dinero los TRES años, nunca alcanza el break-even y cierra el año 1 con -88.569 € de flujo acumulado. El constructor lo documenta y lo deja sin corregir por no inventar cifras — correcto como criterio, pero eso no lo convierte en publicable: el pack se vende como plan de apertura viable. Y con REF-07 (nómina real 89.030 €/año más alta) el agujero es aún mayor.",
+   "fix": "Decisión de producto antes de publicar: recalibrar el caso de ejemplo (ticket, cubiertos/día o estructura de coste) con una fuente declarada, o etiquetar explícitamente el escenario como «caso que NO sale» y añadir el que sí sale. Publicarlo tal cual es vender un plan de negocio que se refuta a sí mismo."
+  },
+  {
+   "id": "REF-12",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx!'Proyección 3 Años'!B18 = '=IFERROR(IF($B$13=\"\",\"\",0),\"\")' → 0,00 € (C18=B18, D18=C18)",
+   "hallazgo": "La fila 'Amortización (€)' está cableada a CERO sobre una inversión de 594.200 € (Inversión!C50). Consecuencias: EBIT (B19) es idéntico a EBITDA (B17), con lo que la distinción que la propia hoja rotula no significa nada; y la base del Impuesto de Sociedades (B22) es incorrecta — aquí no muerde porque el BAI es negativo, pero en cuanto alguien meta sus cifras y salga positivo tributará de más. La fórmula finge ser un cálculo (IFERROR/IF) cuando devuelve la constante 0.",
+   "fix": "Calcular la amortización desde la tabla de Inversión con vidas útiles por categoría (obra, maquinaria, mobiliario, tecnología), o dejar una celda verde de amortización anual con nota, pero nunca un 0 disfrazado de fórmula."
+  },
+  {
+   "id": "REF-13",
+   "severidad": "media",
+   "celda": "plan-financiero-3-anos.xlsx!'Proyección 3 Años'!E6 = 'Sobre el año anterior...' vs C13 = '=IF($B$13=\"\",\"\",(('P&L Mensual'!N10/12)*12)*(1+C6))' → 712.800,00 € frente a B13 = 594.000,00 €",
+   "hallazgo": "El rótulo miente sobre la fórmula. C6 = 8,0 % se anuncia «sobre el año anterior», pero C13 no crece sobre B13 (el año 1, que lleva rampa): crece sobre el año de CRUCERO. 712.800 / 594.000 = +20,0 %, no +8 %. Lo mismo en C14 (costes variables) y por tanto en el EBITDA del año 2. Quien audite el plan con una calculadora encuentra un 20 % donde el libro dice 8 %.",
+   "fix": "O cambiar C13 a '=B13*(1+C6)' (crecimiento real sobre el año anterior), o reescribir E6 explicando que el año 2 se mide sobre el ritmo de crucero y no sobre el año 1 con rampa."
+  },
+  {
+   "id": "REF-14",
+   "severidad": "media",
+   "celda": "escandallo-maestro-peruano.xlsx!Resumen!G4 = 'Food cost real (%)' con G5:G16 vacías (ni en la fila 5, cableada a la plantilla, cuyo origen 'Ficha (plantilla)'!G21 = 30,0 % sí existe)",
+   "hallazgo": "TEC-23 incompleto. La hoja Resumen se creó, pero una de sus siete columnas es una cabecera huérfana: 'Food cost real (%)' no se rellena nunca, ni siquiera en la fila cableada. Es la columna que decide si un plato está fuera de objetivo, o sea el motivo de tener un resumen. Además la cabecera A4:G4 de esta hoja no lleva el relleno oscuro (002D2D2D) que llevan todas las demás cabeceras del pack.",
+   "fix": "Añadir G5 = 'Ficha (plantilla)'!G21 y G6:G16 con el INDIRECT del mismo patrón que B:F, y aplicar el estilo de cabecera a A4:G4."
+  },
+  {
+   "id": "REF-15",
+   "severidad": "media",
+   "celda": "calculadora-ticket-medio.xlsx!'Ticket Medio'!B20 = 60.736,00 € · plan-financiero-3-anos.xlsx!'P&L Mensual'!B10 = 55.000,00 € · cash-flow-break-even.xlsx!Break-Even!B11 = 56.160,00 € (B5 ticket 27,00 € vs 'Ticket Medio'!B15 = 29,20 €)",
+   "hallazgo": "Tres facturaciones mensuales y dos tickets medios para el mismo restaurante de 80 plazas y 80 cubiertos/día, sin ninguna celda que las concilie. La calculadora de ticket, que es la herramienta que el comprador usa primero, es la más optimista (60.736 €) y es la única que nadie más lee. Desglosado, tampoco cuadra por líneas: la barra de piscos da 12.740 €/mes en 'Margen Piscos'!B15 y 10.000 €/mes en el P&L (B7).",
+   "fix": "Que Break-Even!B5 y el P&L tomen el ticket de 'Ticket Medio'!B15 (o al revés), y dejar una sola facturación de referencia con las demás derivadas de ella."
+  },
+  {
+   "id": "REF-16",
+   "severidad": "media",
+   "celda": "calculadora-capex.xlsx!'CAPEX Desglosado'!F5 = '=E5-D5' → -75.000,00 € ... F41 = '=E41-D41' → -300.400,00 € (E5:E39 verdes y vacías; E41 = 0,00 €)",
+   "hallazgo": "El libro se abre con toda la columna 'Diferencia' llena de negativos gigantes y un TOTAL Real de 0,00 €, porque las 35 restas no llevan guarda de vacío. Rompe la convención del propio pack: plan-financiero-3-anos.xlsx!Inversión!E5 hace exactamente lo mismo bien ('=IF(D5=\"\",\"\",D5-C5)' → celda vacía). Es el defecto de «libro en blanco» que la lente técnica busca, y el gate data_only no lo ve porque -75.000 es un número válido.",
+   "fix": "Envolver F5:F41 en IF(E=\"\",\"\",E-D), igual que Inversión."
+  },
+  {
+   "id": "REF-17",
+   "severidad": "media",
+   "celda": "checklist-appcc.xlsx!APPCC!C18 = 'Control temperatura congelación pescado ceviche (-20°C mín 24h)' junto a C20 = 'Congelación preventiva (-20 °C durante al menos 24 h, o -35 °C durante 15 h)... RD 1021/2022, art. 8.1' y C24 = 'Tiraditos: mismos requisitos que ceviche'",
+   "hallazgo": "DOM-14 sólo a medias. La evidencia dice «fila 16 SUSTITUIDA con cita RD 1021/2022 art.8.1»: la fila 16 es «Registro temperaturas recepción mercancía» y sigue intacta, y el ítem viejo sin base normativa NO se sustituyó — sobrevive en C18 al lado del nuevo C20. Quedan tres filas para un mismo punto de control, y las dos primeras se contradicen: C18 presenta las 24 h como única vía y C20 admite la alternativa de -35 °C/15 h. Además infla el recuento (39 → 41).",
+   "fix": "Borrar C18 (o fundirlo en C20) y dejar C24 como referencia cruzada explícita a C20, no como control independiente."
+  },
+  {
+   "id": "REF-18",
+   "severidad": "media",
+   "celda": "cash-flow-break-even.xlsx!'Cash Flow'!B40:M40 = 2.100,00 € constantes vs plan-financiero-3-anos.xlsx!Financiación!B12 = 6.135,59 €",
+   "hallazgo": "El cash flow carga los 12 meses a la cuota de CARENCIA. Es correcto para el año 1 (A44 lo explica), pero el pack no tiene ninguna vista del año 2, que es cuando la cuota sube a 6.135,59 € (+4.035,59 €/mes, +48.427 €/año) sobre un EBITDA que ya es de -2.300 €/mes. Break-Even!B13 lee justamente esos 12 meses de carencia, así que el «No alcanzado» que devuelve es todavía optimista. Y la cuota es una constante tecleada: si el comprador cambia el préstamo en Financiación!B5, el cash flow no se entera.",
+   "fix": "Extender el cash flow al mes 24 o añadir una fila de aviso con la cuota post-carencia, y tomar B40 por fórmula/nota desde Financiación!B12-B13 según el mes."
+  },
+  {
+   "id": "REF-19",
+   "severidad": "media",
+   "celda": "cash-flow-break-even.xlsx!Break-Even!B9 = 40.300,00 €, B5 = 27,00 €, B6 = 80, B7 = 26 (constantes verdes) · B12 = 39.312,00 € sin referencias",
+   "hallazgo": "La hoja Break-Even es una isla: sus cinco parámetros son constantes tecleadas que replican valores del P&L (40.300 €) y de la calculadora de ticket (80 cubiertos, 26 días) sin leerlos, de modo que editar el P&L no mueve el break-even. Encima B12 ('Margen contribución mensual') es una celda MUERTA: no la usa B13 (que va contra 'Cash Flow'!B42:M42) ni B17 (que va contra B9/(1-B8)). Y como margen de contribución está mal planteada: descuenta sólo el food cost e ignora el packaging de delivery.",
+   "fix": "Enlazar B9 al total de fijos del P&L y B5:B7 a la calculadora de ticket; usar B12 en B17 o eliminarla."
+  },
+  {
+   "id": "REF-20",
+   "severidad": "media",
+   "celda": "escandallo-maestro-peruano.xlsx!'Ficha (plantilla)'!D18/D19/D20 y plan-financiero-3-anos.xlsx!'P&L Mensual'!O12 con number_format '#,##0.00 €' sobre texto; plantilla-turnos-brigada.xlsx!'Turnos Semana'!D28 ('0.0%'), D33/D35/D36 ('#,##0') sobre texto",
+   "hallazgo": "TEC-25 REFUTADO. La evidencia dice «formato_por_etiqueta() aplicado en los 15 xlsx; 0 avisos de formato». Hay 8 celdas de TEXTO con formato numérico o de moneda: los rótulos 'Raciones que salen de esta ficha', 'Food cost objetivo (%)', 'Tipo de IVA de restauración (%)' y las notas legales de la brigada. El gate mira que los importes tengan formato de importe, pero no que los rótulos NO lo tengan; en cuanto alguien escriba un número encima aparecerá como € o como %.",
+   "fix": "Restringir formato_por_etiqueta() a celdas numéricas y añadir al gate la comprobación inversa (texto ⇒ number_format 'General')."
+  },
+  {
+   "id": "REF-21",
+   "severidad": "media",
+   "celda": "menu-engineering-matrix.xlsx!Matrix: SUMPRODUCT(D5:D19,F5:F19)/SUMPRODUCT(C5:C19,F5:F19) = 17,55 % vs plan-financiero-3-anos.xlsx!'P&L Mensual'!O13 = 30,0 % y escandallo!'Ficha (plantilla)'!E19 = 30,0 %",
+   "hallazgo": "La carta de ejemplo de la matriz trabaja a un food cost ponderado del 17,55 % (E5:E19 van del 11,4 % al 23,8 %), mientras el P&L y el escandallo dimensionan el negocio al 30 %. Son 12,45 puntos de diferencia: o la matriz regala margen que el P&L no reconoce, o el P&L castiga un food cost que la carta no tiene. Con los 15 platos vendiendo 15.280 €/mes (frente a 38.000 €/mes de comida en el P&L) tampoco se ve qué parte de la carta cubre la matriz.",
+   "fix": "Alinear los costes de la matriz con los escandallos (ver REF-08) y, si el ponderado real es 17,55 %, revisar el 30 % del P&L; en todo caso dejar dicho qué porcentaje de la facturación de comida representan estos 15 platos."
+  },
+  {
+   "id": "REF-22",
+   "severidad": "media",
+   "celda": "calculadora-ticket-medio.xlsx!'Margen Piscos'!B12 = 20 y B13 = 35 (verdes, fuera de la lista de DV — que cubre B5 B6 B9 B10 B14 — y sin number_format); B10 = 1,50 € vs menu-engineering-matrix.xlsx!Matrix!D13 = 1,20 €",
+   "hallazgo": "Dos celdas verdes de entrada sin validación ni formato en una hoja donde todas las demás la tienen: admiten texto o negativos y B15 ('=(B5*B12+B9*B13)*B14' = 12.740,00 €) se rompe o miente sin avisar. Refuta el «0 fallos en validaciones()» de TEC-06 leído como cobertura de las entradas. Y el coste del pisco sour vale 1,50 € aquí y 1,20 € en la matriz.",
+   "fix": "Añadir B12 y B13 a la DV de decimales ≥ 0 con formato '#,##0', y unificar el coste del pisco sour entre los dos libros."
+  },
+  {
+   "id": "REF-23",
+   "severidad": "media",
+   "celda": "calculadora-ticket-medio.xlsx!Instrucciones!A11 = «Todas las cifras van SIN IVA...» con 'Ticket Medio'!B6 = 12,00 €, B7 = 13,50 €, B13 = 4,50 € y B15 = 29,20 €; el libro no tiene ninguna celda de IVA",
+   "hallazgo": "La calculadora de ticket es la herramienta a la que el hostelero traslada los precios de SU CARTA, que en restauración se publican CON IVA. La nota que hereda del molde declara todo «sin IVA» y el libro no ofrece ninguna conversión, así que el ticket de 29,20 € es en realidad 32,12 € cobrados (o 26,55 € netos si los precios se metieron con IVA). De ahí sale la facturación de 60.736 € que luego no cuadra con nadie (REF-15). El escandallo sí distingue PVP con y sin IVA (G19/G20); esta hoja no.",
+   "fix": "Añadir el tipo de IVA como celda verde y dar el ticket en las dos versiones, igual que hace el escandallo, o decir explícitamente en el rótulo de cada precio que se escriben sin IVA."
+  },
+  {
+   "id": "REF-24",
+   "severidad": "media",
+   "celda": "calculadora-capex.xlsx!Instrucciones!A15 («incluyen la preapertura (rentas y nóminas antes de abrir) y el fondo de maniobra de seis meses... llegan con la cifra del plan financiero de este kit como EJEMPLO en la columna verde») vs 'CAPEX Desglosado' A5:C39 (35 partidas, ninguna de preapertura) y E39 vacía · plan-financiero!Inversión!A54 y A61 («+ preapertura») con C55:C58 calculando sólo el fondo · G5:G39 = 'Alta' en las 35",
+   "hallazgo": "Tres promesas incumplidas en la misma partida. (1) No hay ninguna línea de preapertura en el CAPEX, ni en el plan financiero, pese a que A54 titula el bloque «PREAPERTURA Y FONDO DE MANIOBRA» y A61 define la necesidad total como «CAPEX de la tabla + preapertura». (2) La cifra del plan financiero no llega a «la columna verde»: E39 está vacía y D39 (50.000 €) no es verde. (3) La columna 'Prioridad', que Instrucciones!A7 vende para «planificar fases de inversión», vale 'Alta' en las 35 filas, así que no prioriza nada. Añado que la vajilla de un local de 80 plazas va fundida con textiles, cerámica, madera e iluminación en una sola línea (C30, 12.800 €), sin unidades ni ratio por plaza.",
+   "fix": "Añadir la fila de preapertura (rentas + nóminas previas, que el propio checklist-legal!H51 cifra en meses 4 a 9) y calcularla como se calcula el fondo; volcar la cifra del plan en E39; repartir prioridades reales; y desglosar la vajilla con unidades por plaza."
+  },
+  {
+   "id": "REF-25",
+   "severidad": "baja",
+   "celda": "GuiaRestaurantePeruanoDashboard.tsx anuncia 32/35/33/30/24/25 vs recuento real tras el paso: checklist-legal 49, checklist-appcc 41, checklist-diseno-sala-peruana 36, checklist-equipamiento 35, checklist-contratacion 29, checklist-marketing 28",
+   "hallazgo": "Tras corregir el déficit de equipamiento (RD-PERU-04), CINCO de los seis checklists superan ahora lo que la landing anuncia — legal en 17 ítems (49 frente a 32) y APPCC en 8. El gate sólo exige «recuento >= anunciado», así que da verde mientras la cifra publicada se aleja. El constructor lo declara y lo deja para T8, lo cual es correcto, pero mientras tanto la ficha de producto describe un entregable más pobre que el que se entrega.",
+   "fix": "Actualizar las seis cifras del dashboard en T8 y cambiar el gate a igualdad (o a una tolerancia declarada) para que no vuelva a derivar."
+  }
+ ],
+ "motivo": "NO listo. Mi dry-run reproduce el verde del constructor (exit 0, idempotencia 0, censo 0, data_only 0 fallos), pero con las dos lentes aparecen 25 defectos, 12 de severidad alta, y siete de ellos son ids que el informe declara RESUELTOS sin haber abierto la celda: TEC-26/COM-32 (la columna de correspondencia CAPEX simplemente no está en el xlsx, y calculadora-capex!Instrucciones!A13 se la promete al cliente), DOM-01/COM-30 (el rótulo sigue diciendo «(3 meses)» sobre 343.800 € que son 6, y conviven cuatro fondos de maniobra: 50.000, 343.800, «3 meses» y «seis meses»), DOM-22 (la hoja Financiación no tiene el cuadre que Inversión!A62 promete: 594.200 € de necesidad frente a 420.000 € de préstamo, 174.200 € sin financiar), TEC-04 (la nota manda al lector a una columna L de familia que está vacía), TEC-25 (ocho rótulos de texto con formato de moneda o porcentaje) y TEC-23 (la columna 'Food cost real (%)' del Resumen no se rellena nunca). A eso se suman tres roturas de fuente única que mueven dinero real: la nómina —la brigada del propio kit cuesta 437.030,02 €/año con SS y el P&L carga 348.000 €, 89.030 €/año menos—, el plato bandera —el ceviche vale 12 €, 14 € y 19,43 € según el libro, con dos costes que difieren en un 89 %— y el IVA de la bebida alcohólica, una celda verde documentada en la nota legal y que no usa ninguna fórmula (13.200 €/año de IVA sin repercutir sobre la barra de piscos). Y por encima de todo sigue en pie RD-PERU-01, que el propio constructor documenta y no corrige: la guía entrega un plan que pierde dinero los tres años (EBITDA -73.200 / -12.237,60 / -10.035,60 €), nunca alcanza el break-even y cierra el año 1 con -88.569 € de flujo acumulado, con la amortización cableada a cero sobre 594.200 € de inversión. Eso es una decisión de producto que hay que tomar antes de publicar, no un id que se cierre en T6."
+}
