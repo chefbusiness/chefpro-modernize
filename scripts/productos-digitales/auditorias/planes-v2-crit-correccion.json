@@ -1,0 +1,326 @@
+{
+ "rol": "T5-bis — CORRECTOR FINAL del representante de línea A («plan-negocio-bar-restaurante», molde A-α) sobre los bloqueos CRIT-01..06 del crítico",
+ "fecha": "2026-08-29",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md",
+ "entradas": [
+  "scripts/productos-digitales/planes-v2_0/main.py (cabecera)",
+  "scripts/productos-digitales/auditorias/planes-v2-critico.json (entero: CRIT-01..06, avisos, cifras_medidas, orden_ejecucion_real)",
+  "scripts/productos-digitales/planes-v2-SPEC.md (§1, §2, §8.1, §8.3, §9)",
+  "scripts/productos-digitales/auditorias/planes-v2-grupo_a.json, planes-v2-motor.json, planes-v2-correccion.json"
+ ],
+ "metodo": "Todo corregido en el CÓDIGO GENERADOR (grupo_a.py y motor.py); ni un byte tocado a mano en un xlsx. Verificación con openpyxl 3.1.3 (fórmula + caché data_only) y pycel 1.0b30 sobre la copia del dry-run en <scratchpad>/planes/fix/, NUNCA sobre astro-site/public/dl/, que sólo se ha LEÍDO. Sin PLANES_APPLY, sin git, sin builds, sin navegador. Un python cada vez; istats entre ejecuciones: 42,2-50,5 °C.",
+ "resueltos": [
+  {
+   "id": "CRIT-01",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py, fila «flujo» de Plan.tesoreria(): el sumando del IVA pasa de «+iva_liq» a «+IF(iva_liq=\"\",0,iva_liq)». La fila «saldo» NO se toca: se restaura por cascada.",
+   "prueba": "plan-financiero-bar-restaurante.xlsx!'6. Tesorería 12 meses': B21:M21 = 12 valores NUMÉRICOS (antes E21, H21 y K21 eran \"\") y B22:M22 = 12 valores NUMÉRICOS (antes nueve de los doce eran \"\"). N21 = 105.415,02 € (antes 80.330,32 €, un 23,8 % menos), M22 = 166.219,82 € (antes en blanco), B31 payback = 2,5818 años (antes 2,976). B23 saldo mínimo 61.956,61 € y B24 mes 2 siguen igual, pero ahora son el mínimo REAL de doce meses y no de tres: la demostración §2.11.6 deja de ser un falso verde sobre una fila vacía en un 75 %. La verificación data_only del motor baja de 71 a 59 «vacías por diseño», exactamente las 12 celdas. Barrido de la clase entera del defecto (detector propio: celda con caché None cuyo cuerpo no tiene ningún literal \"\" propio y cuya guarda es falsa): 36 candidatas brutas → 24 son blancos legítimos de años fuera del plazo del préstamo (\"7. Financiación\" filas 34-41, guarda IF(C34=\"\",\"\")) → 12 reales, todas en tesorería, todas cerradas. Tras el fix: 0 en los 2 xlsx del representante."
+  },
+  {
+   "id": "CRIT-02",
+   "donde": "grupo_a.py: AMORT_DEFECTO[\"no\"] gana «existencias|primera compra» (va DELANTE porque _clasificar_amortizable prueba «no» primero) y se añade RX_BLOQUE_NO_AMORT, una segunda red por BLOQUE aplicada en Plan.inversion(): nada que cuelgue de un bloque de circulante o de gasto es inmovilizado, se llame como se llame la partida.",
+   "prueba": "plan-financiero-bar-restaurante.xlsx!'1. Inversión Inicial'!B54 = 40.460,00 € (antes 52.460,00 €; la fórmula pierde «+B44+B45») y B55 = 8.396,00 € (antes 9.596,00 €, −1.200 €/año). Cadena verificada celda a celda: P&L B38 = 8.396,00 · B40 = 251.615,20 · B43 RAI = 57.566,40 · B48 IS = 8.634,96 · B50 neto año 1 = 48.931,44 · B58 margen neto 10,84 %. NO se mueven, como predijo el crítico: B47 fondo de maniobra 60.804,80 €, break-even de CAJA 62,93 cubiertos/día, DSCR 9,59/3,79, B48 inversión total 179.164,80 €, B49 CAPEX 118.360,00 €, B51 necesidad de caja 201.899,40 €. Diff completo antes/después del libro: 14 fórmulas y 101 valores cacheados, todos trazables a los tres fixes. Los 4 hermanos de línea A no cambian de clasificación: rotulan la partida «Stock inicial …», que ya casaba con «stock»."
+  },
+  {
+   "id": "CRIT-02 (revisión de B53, pedida por el crítico)",
+   "donde": "grupo_a.py AMORT_DEFECTO, sin cambios",
+   "prueba": "B53 «Obra, instalaciones y acondicionamiento» = 43.500,00 € = B8 obra civil + B9 proyecto técnico y licencia + B10 decoración + B20 campana extractora + B26 barra de bar. NO se cambia, y el motivo es que la clasificación es correcta: B20 casa con «campana extractora», que la propia tabla declara obra, y B26 es «Barra de bar (fabricación + instalación)», que casa con «instalaci». Las dos son obra fija adherida al local (instalaciones técnicas), no equipamiento móvil. Hoy no tiene efecto numérico porque '0. Supuestos'!B44 y B45 valen los dos 10 años; si alguien separa las vidas útiles, la clasificación seguirá siendo la buena."
+  },
+  {
+   "id": "CRIT-06",
+   "donde": "grupo_a.py, fila «caja_cierre» de Plan.escenarios(): la columna C (REALISTA) pasa a leer la tesorería; B y D conservan el atajo. La nota de la columna E lo dice con todas las letras.",
+   "prueba": "plan-financiero-bar-restaurante.xlsx!'4. Escenarios'!C26 = =IFERROR(IF(C9=\"\",\"\",'6. Tesorería 12 meses'!$M$22),\"\") = 166.219,82 €, idéntico a M22 (antes 118.312,24 €, un 40 % menos). B26 pesimista 7.097,70 € y D26 optimista 182.785,28 € conservan el atajo. Nueva nota de E26: «En «Realista» es el saldo REAL del mes 12 de la hoja de tesorería, con su desfase de cobros y pagos y su liquidación de IVA. En «Pesimista» y «Optimista» es un saldo estimado (sin efecto de cobros/pagos ni IVA) — ver Tesorería: …». Nada más depende de C26: un grep de «caja_cierre» en grupo_a.py devuelve sólo su propia declaración y su semáforo (B:D, verde si >0). No hay referencia circular: la tesorería no lee Escenarios. Las demostraciones §2.11.8 («libro en blanco sin falsos verdes», que incluye «cierre») y §2.11.13 («libro en blanco sin ceros», 0 celdas) siguen en true."
+  },
+  {
+   "id": "CRIT-05",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py: (1) TILDES gana la familia «diseñ-» completa (disenador/-a/-es/-as, disenar, disena, disenan, disenado/-a/-os/-as), no sólo el sustantivo; (2) «critica»/«criticas» SALEN de HOMOGRAFAS y «critico/critica/criticos/criticas» entran en TILDES_EXTRA; (3) RX_CRITICA_VERBO documenta la única excepción real —el verbo criticar— y la respetan las DOS vías (corrector y gate); (4) RX_CAPITAL_MIN corrige «capital [social] min <cifra>» → «mín.»; (5) RX_SIN_TILDE_2 gana «critic[oa]s?» y la lista enumerada de «disen…»; (6) gate_ortografia deja de saltarse la CELDA ENTERA cuando la primera coincidencia es la campana extractora: recorre las coincidencias y se queda con la primera no excusada.",
+   "prueba": "checklist-apertura-bar-restaurante.xlsx!'Checklist Apertura': C42 = 'Diseñador', F44 = 'Crítico para SEO local', F49 = 'Primeras 4 semanas críticas', B5 = 'Elegir forma jurídica (SL recomendada, capital mín. 1 €)'. Refutación del falso verde: gate_ortografia corriendo sobre el fichero ORIGINAL de dl/ (sin corregir) ahora SÍ señala las cuatro (B43 Diseno, C43 Disenador, F45 Critico, F50 criticas), donde antes las perdonaba. Batería de corregir_texto: 14 casos, todos correctos e IDEMPOTENTES, incluidos los tres que no se deben tocar («Campana extractora + motor», «Si se critica el servicio…», «30 min de cocción» y «Tiempo min. 15 min») y los tres que sí («Campana lanzamiento RRSS» → «Campaña … inauguración»). Censo previo del corpus: 52 apariciones de critic*/disen* en los 30 xlsx, CERO de ellas uso verbal, así que la excepción no se dispara en producción. Dry-run --solo motor sobre los 10 productos, EN SERIE: exit 0 en los 10 y gate de ortografía a 0 en 8; quedan 9 en coctelería y 2 en parrillero, que son «Catalogo/catalogo» y un «Manteleria» PREVIOS y ajenos a este id (el crítico ya declaraba los 9 de coctelería como pendientes de T8)."
+  },
+  {
+   "id": "CRIT-03",
+   "donde": "scripts/productos-digitales/auditorias/planes-v2-correccion.json",
+   "prueba": "Las TRES citas de «178.894,80 €» pasan a «179.164,80 €» (RD-03, RC-10 y el motivo de no_aplicados[8] sobre el docx); un json.dumps del fichero entero ya no contiene la cadena vieja. B48 medido = 179.164,80 € y NO cambia con CRIT-01/CRIT-02 (las existencias siguen sumando a la inversión; lo que cambia es la base de amortización). El bloque cifras_medidas_del_caso_base se sustituye entero por la medición de HOY sobre la copia del dry-run: 8 cifras cambian (amortizacion_anual 9596,0 → 8396,0 · break_even_contable_dia 65,4153 → 65,1048 · margen_neto_pct 0,1061 → 0,1084 · payback_anos 2,976 → 2,5818 · resultado_antes_de_impuestos 56366,4 → 57566,4 · resultado_neto_ano_1 47911,44 → 48931,44 · resultado_neto_ano_3 72593,6779 → 73493,6779 · más las claves nuevas existencias_iniciales, base_amortizacion_obra/maquinaria, impuesto_sociedades_ano_1, total_costes_fijos_ano_1, margen_bruto_pct, ratio_alquiler_pct, dscr_ano_1, flujo_caja_libre_ano_1, saldo_caja_cierre_ano_1 y saldo_cierre_escenario_realista). Se añade cifras_medidas_del_caso_base_nota y una entrada en para_T7_T8_T9_T10, las dos con la instrucción explícita «T9/T10 leen SÓLO cifras_medidas_del_caso_base, NUNCA la prosa de los motivos». Y se RECTIFICA la prueba de RD-02 y RC-02, que afirmaba textualmente que ninguna de las tres partidas entraba en las bases B53/B54 — era falso y es justo lo que CRIT-02 medía."
+  },
+  {
+   "id": "CRIT-04",
+   "donde": "scripts/productos-digitales/auditorias/planes-v2-motor-ids.json (nuevo)",
+   "prueba": "Tabla id → fix de los 74 ids que §8 mapea a §1 o §2 (67 de la tabla §8.1 con «§1» o «§2» en su columna de sección + 7 NUEVO-01..07 de §8.3; NUEVO-08/09/10 quedan fuera porque van a §3/§5/§7). Construida LEYENDO la SPEC y el ids_resueltos de planes-v2-grupo_a.json, no a mano. Cruce: 57 declarados por grupo_a (el 58.º que declara, COM-20, cae fuera de los 74 porque §8.1 lo manda a «§4.2 §8») y 17 que no cruzaba nadie, cada uno ahora con estado: TEC-09, TEC-13 y TEC-14 HECHOS por el motor y verificados por mí con celda («0. Supuestos'!B5 y '2. P&L 3 Años'!B8:D8 con '#,##0.00 €'; 24 bloques de dataValidation y 33 rangos de formato condicional con 71 reglas, 9/9 hojas protegidas; 52 filas con alto explícito y 69 celdas con wrapText en el plan, 68 altos en el checklist); TEC-15, COM-23 y la parte §1.7 de COM-27 CERRADOS hoy por CRIT-05; y los 11 restantes con tanda declarada (NUEVO-03 → T7; NUEVO-04, NUEVO-05, NUEVO-07 y el resto de TEC-15 → T8; DOM-02, DOM-28 y la parte §4.3.4 de COM-27 → T9; DOM-35 y COM-30 → T9/T10; COM-17, DOM-32 y DOM-16 → T10)."
+  }
+ ],
+ "no_aplicados": [
+  {
+   "id": "CRIT-05 (resto de FAMILIA: 11 textos sin tilde en 2 hermanos)",
+   "motivo": "Coctelería deja 9 y parrillero 2, todos «Catalogo/catalogo» y un «Manteleria» que la heurística de convivencia caza contra su gemela acentuada del MISMO libro. Son PREVIOS a esta corrección y ajenos a la causa de CRIT-05 (medido: antes y después salen los mismos). El crítico ya los declaraba pendientes de T8. Fix listo, de una línea: tres entradas en TILDES_EXTRA de motor.py ('catalogo': 'catálogo', 'catalogos': 'catálogos', 'manteleria': 'mantelería'). NO lo aplico porque tocar el diccionario reescribe texto en 2 productos que T8 aún no ha construido y ampliaría el diff que el orquestador tiene que re-verificar antes del APPLY del representante."
+  },
+  {
+   "id": "CRIT-05 (falso negativo aceptado y documentado)",
+   "motivo": "RX_CRITICA_VERBO excusa «critica/criticas» cuando van precedidas de se/que/no/lo/la/le/les/me/te/nos/os, tal como pedía el encargo. Efecto lateral conocido: «la crítica gastronómica» (artículo + sustantivo, que SÍ lleva tilde) quedaría sin corregir. Se acepta porque el censo de los 30 xlsx no tiene ni una sola aparición precedida de clítico —ni verbal ni nominal— y porque el error contrario (escribir «no se crítica») es el que se lee como falta. Queda aquí para que quien lo vea en un hermano sepa que es deliberado."
+  },
+  {
+   "id": "RT-03 / hermanos de línea A (exit 1)",
+   "motivo": "tapas-bar y cafeteria salen con exit 1 y 12 lineas de fallo; panaderia y food-truck con exit 1 y 49 lineas. NO es regresion, y esta refutado con un A/B real: reconstrui el paquete PREVIO en <scratchpad>/planes/fix/repo (grupo_a.py con mis tres fixes revertidos, sobre una copia aislada de dl/) y el diff del bloque FALLOS es IDENTICO en los CUATRO. La causa es la ya declarada: falta contenido_<pid>.py de cada hermano. Es T7. Ojo a RT-03, que sigue desactualizado: habla de «de 9 fallos a 6»."
+  },
+  {
+   "id": "Avisos del crítico que no son míos",
+   "motivo": "RC-29 (3 nombres de hoja de más de 31 caracteres en parrillero) sigue saltando en cada ejecución → T8. El docx del representante sigue con 0 tablas, tamaño carta y author «python-docx» → T9. Coctelería y paellero dejan 1 xlsx sin fórmulas cada uno → T8. Ninguno lo puede cerrar este rol."
+  },
+  {
+   "id": "TEC-21 residual (separador anglosajón en una caché)",
+   "motivo": "HALLAZGO NUEVO, no pedido y no arreglado: '1. Inversión Inicial'!D55 se genera con TEXT(…,\"#,##0\") y su valor CACHEADO sale «Suman 95,205 € de los 179,165 € de inversión» — separador anglosajón. Excel lo recalcula bien al abrir (mostrará 95.205 y 179.165), así que sólo se ve hasta el primer recálculo, pero es exactamente el patrón que TEC-21 cerró en las demás frases usando formatos sin separador de millares. Es PREVIO a esta corrección (antes decía «83,205 €»). Lo dejo medido para que el orquestador decida: el fix sería generar esa nota con \"0\" en vez de \"#,##0\", o que inject_cache localice el TEXT()."
+  }
+ ],
+ "celdas_clave": {
+  "inversion_total": 179164.8,
+  "capex": 118360.0,
+  "iva_de_la_inversion": 22734.6,
+  "necesidad_de_caja": 201899.4,
+  "fondo_de_maniobra": 60804.8,
+  "existencias_iniciales": 12000.0,
+  "base_amortizacion_obra": 43500.0,
+  "base_amortizacion_maquinaria": 40460.0,
+  "amortizacion_anual": 8396.0,
+  "facturacion_ano_1": 451360.0,
+  "facturacion_ano_2": 496496.0,
+  "facturacion_ano_3": 526285.76,
+  "margen_bruto": 309181.6,
+  "total_costes_fijos_ano_1": 251615.2,
+  "resultado_antes_de_impuestos": 57566.4,
+  "impuesto_sociedades_ano_1": 8634.96,
+  "resultado_neto_ano_1": 48931.44,
+  "resultado_neto_ano_3": 73493.6779,
+  "margen_neto_pct": 0.1084,
+  "ratio_personal_pct": 0.3366,
+  "ratio_cogs_pct": 0.272,
+  "ratio_alquiler_pct": 0.0798,
+  "margen_bruto_pct": 0.685,
+  "coste_de_personal": 151939.2,
+  "plantilla_personas": 7.0,
+  "plantilla_jornadas": 5.4,
+  "coste_plantilla_ano": 151939.2,
+  "break_even_contable_dia": 65.1048,
+  "break_even_caja_dia": 62.9324,
+  "break_even_ingresos": 355064.5255,
+  "flujo_caja_libre_ano_1": 105415.0244,
+  "saldo_caja_cierre_ano_1": 166219.8244,
+  "saldo_minimo_de_caja": 61956.6147,
+  "mes_de_caja_minima": 2.0,
+  "payback_anos": 2.5818,
+  "cuota_anual_prestamo": 26030.4164,
+  "dscr_ano_1": 9.5889,
+  "dscr_minimo": 3.7864,
+  "origen_menos_usos": 1100.6,
+  "saldo_cierre_escenario_realista": 166219.8244
+ },
+ "celdas_clave_detalle": {
+  "'6. Tesorería 12 meses'!B21:M21": [
+   1869.1,
+   -717.29,
+   5717.3,
+   8819.06,
+   13957.51,
+   15227.7,
+   1591.11,
+   -18.21,
+   17083.32,
+   14674.54,
+   13574.12,
+   13636.77
+  ],
+  "'6. Tesorería 12 meses'!B22:M22": [
+   62673.9,
+   61956.61,
+   67673.92,
+   76492.97,
+   90450.48,
+   105678.18,
+   107269.29,
+   107251.08,
+   124334.4,
+   139008.94,
+   152583.06,
+   166219.82
+  ],
+  "celdas_vacias_en_esas_24": 0,
+  "'6. Tesorería 12 meses'!N21": 105415.0244,
+  "'6. Tesorería 12 meses'!M22": 166219.8244,
+  "'6. Tesorería 12 meses'!B23 (saldo mínimo, mes 2)": 61956.6147,
+  "'6. Tesorería 12 meses'!B31 (payback, años)": 2.5818,
+  "'1. Inversión Inicial'!B48": 179164.8,
+  "'1. Inversión Inicial'!B53": 43500.0,
+  "'1. Inversión Inicial'!B54": 40460.0,
+  "'1. Inversión Inicial'!B55": 8396.0,
+  "'2. P&L 3 Años'!B50": 48931.44,
+  "'4. Escenarios'!C19 == '2. P&L 3 Años'!B43": 57566.4,
+  "'4. Escenarios'!C26 == '6. Tesorería 12 meses'!M22": 166219.8244,
+  "'7. Financiación'!B15 (origen - usos)": 1100.6,
+  "'7. Financiación'!B15 sobre los usos (tope 0,05)": 0.0055,
+  "'7. Financiación'!B43 (capital al vencimiento)": 0.0,
+  "checklist: ítems con desplegable": 64,
+  "checklist!C42": "Diseñador",
+  "checklist!F44": "Crítico para SEO local",
+  "checklist!F49": "Primeras 4 semanas críticas",
+  "checklist!B5": "Elegir forma jurídica (SL recomendada, capital mín. 1 €)"
+ },
+ "dryrun": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/fix/final python3 scripts/productos-digitales/planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run --json <scratchpad>/planes/fix/final.json",
+  "exit": 0,
+  "idempotencia": 0,
+  "censo": 0,
+  "cache_fallos": 0,
+  "copia": "<scratchpad>/planes/fix/final/dryrun/plan-negocio-bar-restaurante (y el run de trabajo en <scratchpad>/planes/fix/dryrun/…). astro-site/public/dl/ sólo se ha leído: los tres ficheros del representante conservan su mtime (22-ago 11:13 los dos xlsx, 29-ago 03:09 el docx).",
+  "formulas": {
+   "plan_financiero": 766,
+   "checklist": 2,
+   "cache_inyectado": 707,
+   "fallos_pycel": 0
+  },
+  "data_only": {
+   "con_valor": 715,
+   "vacias_por_diseno": 59,
+   "vacias_no_verificadas": 0,
+   "fallos": 0,
+   "antes_del_fix": {
+    "con_valor": 703,
+    "vacias_por_diseno": 71
+   }
+  },
+  "gates_spec9": {
+   "no_latinos": 0,
+   "ortografia": 0,
+   "formatos": 0,
+   "referencias": 0,
+   "sin_formulas": 0,
+   "sin_bio": 0,
+   "sin_version": 0,
+   "sin_instrucciones": 0,
+   "hojas_sin_a4": 0,
+   "creator_mal": 0,
+   "nombres_hoja": 0,
+   "cf_desanclado": 0
+  },
+  "demostraciones_2_11": "17/17 en true (mismas que antes del fix)",
+  "moldes": "30/30 clasificados",
+  "pendientes_declarados": [
+   "grupo_b y grupo_c aún no existen",
+   "RC-29 (3 nombres de hoja > 31, T8)",
+   "1 docx sin A4 / sin author (T9)"
+  ]
+ },
+ "regresion_hermanos": [
+  {
+   "pid": "plan-negocio-tapas-bar",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0
+  },
+  {
+   "pid": "plan-negocio-cocteleria-eventos",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0,
+   "nota": "ortografía 9 (Catalogo/catalogo/movil), previos → T8"
+  },
+  {
+   "pid": "plan-negocio-paellero-eventos",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0,
+   "nota": "1 xlsx sin fórmulas (plantilla-proveedores), previo → T8"
+  },
+  {
+   "pid": "plan-negocio-tapas-bar",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 12,
+   "nota": "idéntico al baseline del crítico y al A/B con el código PREVIO: diff de los bloques FALLOS = 0 líneas. idempotencia 0. Pendiente de T7."
+  },
+  {
+   "pid": "plan-negocio-cocteleria-eventos",
+   "modo": "dry-run COMPLETO",
+   "exit": 0,
+   "fallos": 0,
+   "nota": "TODO VERDE, igual que el crítico"
+  },
+  {
+   "pid": "plan-negocio-paellero-eventos",
+   "modo": "dry-run COMPLETO",
+   "exit": 0,
+   "fallos": 0,
+   "nota": "TODO VERDE, igual que el crítico"
+  },
+  {
+   "pid": "plan-negocio-cafeteria",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 12,
+   "nota": "A/B con el código PREVIO: diff de FALLOS = 0 líneas. No es regresión; falta su contenido_<pid>.py. T7."
+  },
+  {
+   "pid": "plan-negocio-panaderia",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 49,
+   "nota": "A/B con el codigo PREVIO: diff de FALLOS = 0 lineas. No es regresion; falta su contenido_<pid>.py. T7."
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "modo": "dry-run COMPLETO",
+   "exit": 1,
+   "fallos": 49,
+   "nota": "A/B con el codigo PREVIO: diff de FALLOS = 0 lineas. No es regresion; falta su contenido_<pid>.py. T7."
+  },
+  {
+   "pid": "plan-negocio-panaderia",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0
+  },
+  {
+   "pid": "plan-negocio-cafeteria",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0
+  },
+  {
+   "pid": "plan-negocio-parrillero-asador-eventos",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0,
+   "nota": "ortografía 2 (Catalogo, Manteleria) + 3 nombres de hoja > 31 caracteres (RC-29), todos previos → T8"
+  },
+  {
+   "pid": "plan-catering-tematico-eventos",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0
+  },
+  {
+   "pid": "plan-chef-privado-showcooking-eventos",
+   "modo": "--solo motor",
+   "exit": 0,
+   "fallos": 0
+  }
+ ],
+ "ficheros_tocados": [
+  "scripts/productos-digitales/planes-v2_0/grupo_a.py (CRIT-01, CRIT-02, CRIT-06)",
+  "scripts/productos-digitales/planes-v2_0/motor.py (CRIT-05)",
+  "scripts/productos-digitales/auditorias/planes-v2-correccion.json (CRIT-03 + rectificación de RD-02/RC-02)",
+  "scripts/productos-digitales/auditorias/planes-v2-motor-ids.json (CRIT-04, nuevo)",
+  "scripts/productos-digitales/auditorias/planes-v2-crit-correccion.json (este informe)"
+ ],
+ "notas": [
+  "CRIT-01..06: los seis cerrados. Los tres de código, en el generador; los dos de informe, en los JSON; y CRIT-02 arrastraba además una afirmación falsa en RD-02/RC-02 que queda rectificada.",
+  "Ojo al leer el diff: hay un AUTOCOMMIT en marcha cada 15 minutos («wip(productos): auto-commit periódico de la construcción de planes v2.0») que ya se ha llevado grupo_a.py y motor.py a main mientras yo trabajaba. No he ejecutado ni un comando de git; lo aviso porque el orquestador verá los cambios ya commiteados y podría creer que alguien hizo el APPLY. NO se ha hecho: astro-site/public/dl/ está intacto y PLANES_APPLY nunca se ha exportado.",
+  "El detector del patrón de CRIT-01 («número + celda que vale \"\"») es reutilizable y vale la pena que T7/T8 lo hereden: una celda cuya caché es None, cuyo cuerpo no contiene ningún literal \"\" propio y cuya guarda es FALSA está en blanco por contaminación, no por diseño. Es la comprobación que a la verificación data_only de main.py le falta: hoy clasifica esas celdas como «vacías por diseño» y las da por buenas. Recomiendo subirlo a main.py antes de T7 —son ~20 líneas— porque grupo_a.py se aplica a los 5 productos de línea A y el patrón se replicaría.",
+  "El gate de ortografía tenía un segundo agujero, más silencioso que el de CRIT-05 y ya cerrado: miraba SÓLO la primera coincidencia de la celda y, si era la campana extractora, se saltaba la celda entera. Cualquier errata posterior en el mismo texto se perdía sin un aviso.",
+  "Cifras del caso base que el orquestador tiene que propagar a T9/T10 y que HAN CAMBIADO: amortización anual 8.396,00 € · RAI 57.566,40 € · IS 8.634,96 € · resultado neto año 1 48.931,44 € y año 3 73.493,68 € · margen neto 10,84 % · costes fijos año 1 251.615,20 € · break-even CONTABLE 65,10 cubiertos/día · flujo de caja libre año 1 105.415,02 € · saldo de cierre 166.219,82 € · payback 2,58 años. NO cambian: inversión 179.164,80 €, CAPEX 118.360,00 €, necesidad de caja 201.899,40 €, fondo de maniobra 60.804,80 €, break-even de CAJA 62,93 cubiertos/día, facturación 451.360 / 496.496 / 526.285,76 €, personal 151.939,20 € (33,66 %), mercancía 27,20 %, alquiler 7,98 %, margen bruto 68,5 %, DSCR 9,59/3,79, checklist 64 ítems en 7 fases.",
+  "Los cinco ratios del caso base siguen pasando su propio semáforo, y dos MEJORAN con el fix de CRIT-02: margen neto 10,84 % (suelo 5 %) y margen bruto 68,5 % (suelo 65 %); personal 33,66 % (techo 34 % en el libro), mercancía 27,20 % (techo 32 %) y alquiler 7,98 % (techo 10 %) no se mueven.",
+  "Térmica: 42,2-50,5 °C en todo el trabajo, un python cada vez, sin builds ni navegador. 20 ejecuciones de main.py en total (10 --solo motor, 6 dry-run completos, 3 del A/B con el código previo y el canario final).",
+  "Siguiente paso para el orquestador: el paso 3 del orden_ejecucion_real del crítico está VERIFICADO celda a celda con los valores nuevos, así que el APPLY del representante puede ejecutarse. Antes conviene decidir sobre el hallazgo TEC-21 residual de D55 y sobre si se sube el detector de blancos contaminados a main.py."
+ ]
+}

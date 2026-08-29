@@ -76,7 +76,7 @@
   {
    "id": "RD-02",
    "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION_EXTRA) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (fila «imprevistos» por fórmula)",
-   "prueba": "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!A35 «Mobiliario y toldo de terraza» 4.200 €; bloque nuevo A43 «EXISTENCIAS INICIALES» con A44 «Primera compra de despensa y cámaras» 6.500 € y A45 «Primera compra de bodega y barra» 5.500 €; A13 «Imprevistos de obra y acondicionamiento» B13 = =IF(COUNT(B7:B10)=0,\"\",ROUND(SUM(B7:B10)*Supuestos!$B$55,0)) = 3.800 € (10 % en celda verde B55, nunca literal). DOM-19 cerrado: las tres partidas están en el Excel."
+   "prueba": "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!A35 «Mobiliario y toldo de terraza» 4.200 €; bloque nuevo A43 «EXISTENCIAS INICIALES» con A44 «Primera compra de despensa y cámaras» 6.500 € y A45 «Primera compra de bodega y barra» 5.500 €; A13 «Imprevistos de obra y acondicionamiento» B13 = =IF(COUNT(B7:B10)=0,\"\",ROUND(SUM(B7:B10)*Supuestos!$B$55,0)) = 3.800 € (10 % en celda verde B55, nunca literal). DOM-19 cerrado: las tres partidas están en el Excel. ⚠️ RECTIFICADO POR T5-bis (CRIT-02, 2026-08-29): esta prueba afirmaba que ninguna de las tres entraba en las bases de amortización, y era FALSO. `AMORT_DEFECTO` clasificaba «Primera compra de despensa y cámaras» como maquinaria por «cámara» y «Primera compra de bodega y barra» por «barra», así que las 12.000 € de existencias se amortizaban a 10 años: B54 = 52.460,00 € y B55 = 9.596,00 €. Corregido en grupo_a.py («existencias|primera compra» en el grupo «no», más la red por BLOQUE `RX_BLOQUE_NO_AMORT`); medido ahora: B53 = 43.500,00 €, B54 = 40.460,00 € y B55 = 8.396,00 €, con las existencias fuera. La terraza (B35) sí es inmovilizado y sigue dentro, y los imprevistos de obra (B13) siguen fuera. B48 = 179.164,80 € y B51 = 201.899,40 € NO cambian: las existencias siguen sumando a la inversión, sólo dejan de amortizarse."
   },
   {
    "id": "RD-04",
@@ -381,7 +381,7 @@
   {
    "id": "RC-02",
    "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION_EXTRA) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion()",
-   "prueba": "Mismo fix que RD-02: terraza (B35 = 4.200 €), existencias iniciales (bloque A43 con 6.500 + 5.500 €) e imprevistos de obra por fórmula (B13 = 3.800 €, 10 % en celda). Ninguna de las tres entra en las bases de amortización B53/B54 (`AMORT_DEFECTO` las clasifica como no amortizables) y B48/B51 se recalculan solos."
+   "prueba": "Mismo fix que RD-02: terraza (B35 = 4.200 €), existencias iniciales (bloque A43 con 6.500 + 5.500 €) e imprevistos de obra por fórmula (B13 = 3.800 €, 10 % en celda). ⚠️ RECTIFICADO POR T5-bis (CRIT-02, 2026-08-29): esta prueba afirmaba que ninguna de las tres entraba en las bases de amortización, y era FALSO. `AMORT_DEFECTO` clasificaba «Primera compra de despensa y cámaras» como maquinaria por «cámara» y «Primera compra de bodega y barra» por «barra», así que las 12.000 € de existencias se amortizaban a 10 años: B54 = 52.460,00 € y B55 = 9.596,00 €. Corregido en grupo_a.py («existencias|primera compra» en el grupo «no», más la red por BLOQUE `RX_BLOQUE_NO_AMORT`); medido ahora: B53 = 43.500,00 €, B54 = 40.460,00 € y B55 = 8.396,00 €, con las existencias fuera. La terraza (B35) sí es inmovilizado y sigue dentro, y los imprevistos de obra (B13) siguen fuera. B48 = 179.164,80 € y B51 = 201.899,40 € NO cambian: las existencias siguen sumando a la inversión, sólo dejan de amortizarse."
   },
   {
    "id": "RC-03",
@@ -497,7 +497,7 @@
  "no_aplicados": [
   {
    "id": "RD-03",
-   "motivo": "CAPA DE PRODUCTO — T10 (§5.2 y decisión 13: «las cifras de la capa de producto se escriben DESPUÉS de medir el fichero»). El corrector de T3 sólo puede mover el fichero, y lo ha hecho: la inversión se ha reducido por RD-01 (−3.800 €) y RD-16 (colchón sobre costes fijos de caja) y ha subido por RD-02 (terraza, existencias e imprevistos, que la §2.2 EXIGE incorporar). La cifra medida y firme es 178.894,80 € de inversión y 201.899,40 € de necesidad de caja (mapa de celdas para T9: 1. Inversión Inicial!B48 y B51). La decisión ya está tomada dentro del Excel —el bloque de referencias devuelto por RD-04 declara el rango 80.000-150.000 € del sector Y la nota de por qué este plan queda por encima—, pero escribirla en landing, docx y JSON-LD es de T10, y el fichero de la landing no está entre los que este rol puede tocar."
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.2 y decisión 13: «las cifras de la capa de producto se escriben DESPUÉS de medir el fichero»). El corrector de T3 sólo puede mover el fichero, y lo ha hecho: la inversión se ha reducido por RD-01 (−3.800 €) y RD-16 (colchón sobre costes fijos de caja) y ha subido por RD-02 (terraza, existencias e imprevistos, que la §2.2 EXIGE incorporar). La cifra medida y firme es 179.164,80 € de inversión y 201.899,40 € de necesidad de caja (mapa de celdas para T9: 1. Inversión Inicial!B48 y B51). La decisión ya está tomada dentro del Excel —el bloque de referencias devuelto por RD-04 declara el rango 80.000-150.000 € del sector Y la nota de por qué este plan queda por encima—, pero escribirla en landing, docx y JSON-LD es de T10, y el fichero de la landing no está entre los que este rol puede tocar. · CORREGIDO POR T5-bis (CRIT-03, 2026-08-29): esta prosa daba una cifra de inversión que no coincidía con el bloque cifras_medidas_del_caso_base de este mismo fichero. La medida con openpyxl/pycel sobre '1. Inversión Inicial'!B48 es **179.164,80 €**, y NO se mueve con los arreglos CRIT-01 y CRIT-02 (las existencias siguen sumando a la inversión; lo que cambia es la BASE DE AMORTIZACIÓN). ⚠️ T9 y T10 leen SÓLO el bloque cifras_medidas_del_caso_base, NUNCA la prosa de estos motivos."
   },
   {
    "id": "RT-03",
@@ -509,7 +509,7 @@
   },
   {
    "id": "RC-10",
-   "motivo": "CAPA DE PRODUCTO — T10 (§5.2, decisión 13). Cifra única y medida, para que T10 la propague: inversión total **178.894,80 €** (1. Inversión Inicial!B48), capex 118.360 € (B49), necesidad total de caja **201.899,40 €** (B51). El testimonio de .ts:151 no se toca (§7-bis.6) y queda registrado en §7.2 como riesgo, igual que ya lo estaba."
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.2, decisión 13). Cifra única y medida, para que T10 la propague: inversión total **179.164,80 €** (1. Inversión Inicial!B48), capex 118.360 € (B49), necesidad total de caja **201.899,40 €** (B51). El testimonio de .ts:151 no se toca (§7-bis.6) y queda registrado en §7.2 como riesgo, igual que ya lo estaba. · CORREGIDO POR T5-bis (CRIT-03, 2026-08-29): esta prosa daba una cifra de inversión que no coincidía con el bloque cifras_medidas_del_caso_base de este mismo fichero. La medida con openpyxl/pycel sobre '1. Inversión Inicial'!B48 es **179.164,80 €**, y NO se mueve con los arreglos CRIT-01 y CRIT-02 (las existencias siguen sumando a la inversión; lo que cambia es la BASE DE AMORTIZACIÓN). ⚠️ T9 y T10 leen SÓLO el bloque cifras_medidas_del_caso_base, NUNCA la prosa de estos motivos."
   },
   {
    "id": "RC-11",
@@ -529,7 +529,7 @@
   },
   {
    "id": "RC-27",
-   "motivo": "DOCUMENTOS Y CAPA DE PRODUCTO — T9 y T10 (§7-bis.4: el docx se REGENERA desde un guion que cita el xlsx; §4.2-§4.3). El docx vivo es el de la v1.1 y contradice al Excel en las seis cifras que el guion debe citar; corregirlo a mano está PROHIBIDO por §6.4 («Recalcular a mano las cifras del docx»). Lo que sí queda hecho para T9: el run publica el mapa de celdas REAL con las 29 magnitudes y sus valores (ver RC-32), así que el guion puede citar 178.894,80 € de inversión, 20,72 € de PVP, 62,93 cubiertos/día de equilibrio de caja y el mes 2 como el de caja mínima sin volver a inventarlos. La tarjeta del dashboard (COM-24) es de T10."
+   "motivo": "DOCUMENTOS Y CAPA DE PRODUCTO — T9 y T10 (§7-bis.4: el docx se REGENERA desde un guion que cita el xlsx; §4.2-§4.3). El docx vivo es el de la v1.1 y contradice al Excel en las seis cifras que el guion debe citar; corregirlo a mano está PROHIBIDO por §6.4 («Recalcular a mano las cifras del docx»). Lo que sí queda hecho para T9: el run publica el mapa de celdas REAL con las 29 magnitudes y sus valores (ver RC-32), así que el guion puede citar 179.164,80 € de inversión, 20,72 € de PVP, 62,93 cubiertos/día de equilibrio de caja y el mes 2 como el de caja mínima sin volver a inventarlos. La tarjeta del dashboard (COM-24) es de T10. · CIFRA CORREGIDA POR T5-bis (CRIT-03): 179.164,80 € medidos en '1. Inversión Inicial'!B48. T9/T10 leen SÓLO cifras_medidas_del_caso_base."
   },
   {
    "id": "RC-28",
@@ -565,7 +565,8 @@
   "T7 (hermanos de línea A): RT-03. El motor ya es idempotente en A-β; falta contenido_<pid>.py de cada hermano.",
   "T8 (hermanos de línea B): RC-29, tres nombres de hoja de más de 31 caracteres en parrillero.",
   "T9 (documentos): RC-27 y RC-32 (el mapa de celdas REAL se publica en el informe del run) y RC-28.",
-  "T10 (capa de producto): RD-03, RC-07, RC-10, RC-11, RC-13, RC-14, RC-26 y RC-28, con las cifras medidas incluidas en cada motivo."
+  "T10 (capa de producto): RD-03, RC-07, RC-10, RC-11, RC-13, RC-14, RC-26 y RC-28, con las cifras medidas incluidas en cada motivo.",
+  "T9/T10: la ÚNICA fuente de cifras es cifras_medidas_del_caso_base (más el mapa_de_celdas_para_T9 del informe del run, que resuelve por RÓTULO). Lo que T5-bis movió con CRIT-01/CRIT-02: amortización anual 8.396,00 € (no 9.596,00), resultado antes de impuestos 57.566,40 €, resultado neto del año 1 48.931,44 €, margen neto 10,84 %, break-even CONTABLE 65,10 cubiertos/día (el de CAJA sigue en 62,93), flujo de caja libre del año 1 105.415,02 €, saldo de caja al cierre del año 1 166.219,82 € y payback 2,58 años. La inversión total sigue en 179.164,80 € y la necesidad de caja en 201.899,40 €."
  ],
  "cifras_medidas_del_caso_base": {
   "inversion_total": 179164.8,
@@ -573,29 +574,41 @@
   "iva_de_la_inversion": 22734.6,
   "necesidad_de_caja": 201899.4,
   "fondo_de_maniobra": 60804.8,
-  "amortizacion_anual": 9596.0,
+  "existencias_iniciales": 12000.0,
+  "base_amortizacion_obra": 43500.0,
+  "base_amortizacion_maquinaria": 40460.0,
+  "amortizacion_anual": 8396.0,
   "facturacion_ano_1": 451360.0,
   "facturacion_ano_2": 496496.0,
   "facturacion_ano_3": 526285.76,
   "margen_bruto": 309181.6,
-  "resultado_antes_de_impuestos": 56366.4,
-  "resultado_neto_ano_1": 47911.44,
-  "resultado_neto_ano_3": 72593.6779,
-  "margen_neto_pct": 0.1061,
+  "total_costes_fijos_ano_1": 251615.2,
+  "resultado_antes_de_impuestos": 57566.4,
+  "impuesto_sociedades_ano_1": 8634.96,
+  "resultado_neto_ano_1": 48931.44,
+  "resultado_neto_ano_3": 73493.6779,
+  "margen_neto_pct": 0.1084,
   "ratio_personal_pct": 0.3366,
   "ratio_cogs_pct": 0.272,
+  "ratio_alquiler_pct": 0.0798,
+  "margen_bruto_pct": 0.685,
   "coste_de_personal": 151939.2,
   "plantilla_personas": 7.0,
   "plantilla_jornadas": 5.4,
   "coste_plantilla_ano": 151939.2,
-  "break_even_contable_dia": 65.4153,
+  "break_even_contable_dia": 65.1048,
   "break_even_caja_dia": 62.9324,
   "break_even_ingresos": 355064.5255,
+  "flujo_caja_libre_ano_1": 105415.0244,
+  "saldo_caja_cierre_ano_1": 166219.8244,
   "saldo_minimo_de_caja": 61956.6147,
   "mes_de_caja_minima": 2.0,
-  "payback_anos": 2.976,
+  "payback_anos": 2.5818,
   "cuota_anual_prestamo": 26030.4164,
+  "dscr_ano_1": 9.5889,
   "dscr_minimo": 3.7864,
-  "origen_menos_usos": 1100.6
- }
+  "origen_menos_usos": 1100.6,
+  "saldo_cierre_escenario_realista": 166219.8244
+ },
+ "cifras_medidas_del_caso_base_nota": "Medidas el 2026-08-29 por T5-bis sobre la copia del dry-run (<scratchpad>/planes/fix/dryrun/), NUNCA sobre astro-site/public/dl/, DESPUÉS de CRIT-01 (guarda del IVA en el flujo de tesorería), CRIT-02 (existencias fuera de la base de amortización) y CRIT-06 (el saldo de cierre realista de '4. Escenarios' lee la tesorería). **T9 y T10 leen SÓLO este bloque; la prosa de resueltos y de no_aplicados es histórico y puede estar desfasada.** Cambios frente a la medición de T3: amortizacion_anual 9596.0 -> 8396.0, break_even_contable_dia 65.4153 -> 65.1048, margen_neto_pct 0.1061 -> 0.1084, payback_anos 2.976 -> 2.5818, resultado_antes_de_impuestos 56366.4 -> 57566.4, resultado_neto_ano_1 47911.44 -> 48931.44, resultado_neto_ano_3 72593.6779 -> 73493.6779. Claves nuevas: base_amortizacion_maquinaria, base_amortizacion_obra, dscr_ano_1, existencias_iniciales, flujo_caja_libre_ano_1, impuesto_sociedades_ano_1, margen_bruto_pct, ratio_alquiler_pct, saldo_caja_cierre_ano_1, saldo_cierre_escenario_realista, total_costes_fijos_ano_1."
 }
