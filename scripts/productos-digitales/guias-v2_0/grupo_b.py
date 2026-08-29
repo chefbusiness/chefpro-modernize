@@ -112,6 +112,16 @@ COL_MES_INICIO = 'Mes inicio'
 COL_DURACION = 'Duración (meses)'
 COL_DEPENDE = 'Depende de'
 COL_DIAS = 'Días'
+#: RT-08/§9 — en los moldes SIN Inicio/Fin (G2/G3: casual y el resto de los 5
+#: hermanos, panadería) el Gantt terminaba con CERO fórmulas: «Mes inicio» y
+#: «Duración» son VALORES (medidos o deducidos de las marcas), «Depende de»
+#: es texto y la barra vive en una regla de formato condicional, que no
+#: cuenta como fórmula de celda. Un xlsx con 0 fórmulas después de aplicar
+#: toda la sección que le toca es justo lo que el gate de §9 («0 xlsx con 0
+#: fórmulas») existe para cazar. Se añade esta columna, SÓLO cuando no hay
+#: Inicio/Fin, con la única fórmula que el propio par Mes inicio/Duración ya
+#: implica: el mes en que termina la tarea.
+COL_MES_FIN = 'Mes fin (calculado)'
 
 #: Las notas van SIN número: la numeración de `Instrucciones` no es fiable
 #: entre moldes —el representante tiene tres líneas numeradas y panadería no
@@ -973,6 +983,8 @@ def _columnas_gantt(ws, fila_cab, ultima_mes, con_fechas, cambios, fname):
     quiero = [COL_MES_INICIO, COL_DURACION, COL_DEPENDE]
     if con_fechas:
         quiero.append(COL_DIAS)
+    else:
+        quiero.append(COL_MES_FIN)
     mapa = {}
     for c in range(1, ws.max_column + 1):
         v = _txt(ws.cell(row=fila_cab, column=c).value)
@@ -1171,6 +1183,17 @@ def _gantt(wb, fname, cambios, contenido):
                         + tiene_fin + str(r) + '=""),"",$' + tiene_fin + str(r)
                         + '-$' + tiene_inicio + str(r) + '),"")',
                         fmt=motor.FMT_ENT)
+            else:
+                # RT-08/§9 — sin Inicio/Fin, la única fórmula que el propio
+                # par Mes inicio/Duración implica es el mes en que termina la
+                # tarea. Sin esto, moldes como el de casual (X-marks, sin
+                # columnas de fecha) terminaban el post-proceso con 0
+                # fórmulas de celda pese a tener aplicada toda la sección.
+                col_fin = mapa[COL_MES_FIN]
+                motor.f(ws, col_fin + str(r),
+                        '=IF(OR($' + col_ini + str(r) + '="",$' + col_dur
+                        + str(r) + '=""),"",$' + col_ini + str(r) + '+$'
+                        + col_dur + str(r) + '-1)', fmt=motor.FMT_ENT)
         if deducidas:
             cambios.append(
                 fname + ':' + ws.title + ': ' + str(deducidas) + ' tareas con '

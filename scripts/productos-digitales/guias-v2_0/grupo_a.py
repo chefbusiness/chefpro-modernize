@@ -1824,12 +1824,29 @@ def _columna_concepto(ws, fila_cab):
     En «Inversión» la columna A es el `#` y el concepto está en la B: leerlo de
     la cabecera evita el `col=1` por defecto de `_fila()`, que es lo que dejó
     §2.3.5 y §2.3.6 sin escribir (RT-03, RT-04, RC-03, RC-04).
+
+    RT-08-bis (medido en casual): cuando la tabla trae DOS cabeceras que
+    matchean (`Categoría` en A y `Partida` en B, como en los 6 hermanos con
+    ambas columnas), «categoria» ganaba por ir primero en la tupla y por
+    barrer de izquierda a derecha — devolvía la columna de GRUPO (`Obra
+    Civil`, `Cocina`, `Sala`…, que se repite en varias filas), no la de la
+    línea concreta (`Fondo de maniobra (3 meses)`). `_fila(r'^fondo de
+    maniobra', col=A)` no encontraba nada ahí y `fondo_de_maniobra()`
+    devolvía `None` en silencio — el mismo patrón de fallo por localización
+    que ya describe el docstring de esa función. `partida`/`concepto`/
+    `descripcion` son siempre más específicos que `categoria` cuando
+    coexisten: se prueban antes.
     """
-    rx = re.compile(r'^(concepto|categoria|partida|descripcion)')
+    principales = re.compile(r'^(partida|concepto|descripcion)')
+    generica = re.compile(r'^categoria')
+    columna_generica = None
     for c in range(1, ws.max_column + 1):
-        if rx.match(_norm(ws.cell(row=fila_cab, column=c).value)):
+        norm = _norm(ws.cell(row=fila_cab, column=c).value)
+        if principales.match(norm):
             return c
-    return 1
+        if generica.match(norm) and columna_generica is None:
+            columna_generica = c
+    return columna_generica or 1
 
 
 def plan_de_financiacion(wb, fname, cambios, contenido, inv):
