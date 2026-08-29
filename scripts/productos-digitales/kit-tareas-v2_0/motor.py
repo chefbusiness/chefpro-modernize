@@ -2246,6 +2246,13 @@ SUBTITULO = {
 }
 
 
+#: RC-16 — la cuenta atrás de la sub-familia CB («-48h», «-3 sem», «-2 días»,
+#: «-1 mes») no la reconocía `RX_ANTELACION`, así que las 17 filas del 08 de
+#: sushi-bar votaban «otro» y la columna se titulaba «Cuándo». Sólo dentro de
+#: la sub-familia: en los kits ▸ publicados la misma forma podría vivir en una
+#: columna que hoy se titula de otro modo, y §7-bis.24 los congela.
+RX_CUENTA_ATRAS = re.compile(
+    r'^\s*[-−]\s*\d+\s*(h|min|d[ií]as?|sem|semanas?|mes|meses)\b', re.I)
 MESES_LARGOS = frozenset((
     'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto',
     'septiembre', 'octubre', 'noviembre', 'diciembre', 'continuo'))
@@ -2276,7 +2283,7 @@ def cadencia(ws, g):
             votos['Día'] += 1
         elif RX_CADENCIA.match(v):
             votos['Cadencia'] += 1
-        elif RX_ANTELACION.search(v):
+        elif RX_ANTELACION.search(v) or (sub_cb() and RX_CUENTA_ATRAS.match(v)):
             votos['Antelación'] += 1
         # RC-16 — una columna llena de nombres de MES se titulaba «Cuándo»,
         # que no dice nada, y en el 08 convivía con una sección de cuentas
@@ -3683,10 +3690,19 @@ def _bloque_personalizar(papel):
             # RD 1021/2022 art. 8.1. Quién cita qué es trabajo del módulo de
             # contenido (§2.0, lista blanca normativa); aquí el texto se
             # limita a explicar cómo se rellena la hoja.
-            ('b', 'Añade equipos o especies escribiendo en las filas verdes '
-                  'libres. Cambiar una fila no cambia el límite legal que le '
-                  'aplique: si tu proceso es distinto, revísalo con tu plan '
-                  'APPCC antes de tocar el valor.'),
+            # RD-21 — la versión anterior invitaba a escribir «en las filas
+            # verdes libres» y estas hojas no tienen ninguna: son rejillas de
+            # filas numeradas y lo que hay debajo de la última está bloqueado.
+            # Lo que sí se puede hacer, y es lo que se explica, es insertar
+            # dentro de la tabla; y el límite entre paréntesis del rótulo es
+            # justo el que la hoja usa para pintar el rojo.
+            ('b', 'Para añadir un equipo o una especie, inserta una fila '
+                  'DENTRO de la tabla (clic derecho → Insertar) y escribe su '
+                  'rango entre paréntesis en el rótulo, como en las que ya '
+                  'están: de ahí sale el rojo automático. Cambiar una fila no '
+                  'cambia el límite legal que le aplique: si tu proceso es '
+                  'distinto, revísalo con tu plan APPCC antes de tocar el '
+                  'valor.'),
             ('b', comun),
         ]
     if papel == 'formulario':

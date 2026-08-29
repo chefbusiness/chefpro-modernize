@@ -301,6 +301,7 @@ def procesar(carpeta, fname, etapas, contenido, informe):
     motor.REGISTRO.clear()
     if 'motor' in etapas:
         estado = motor.aplicar(wb, fname, cambios)
+    del_contenido = []
     if 'contenido' in etapas and contenido is not None and \
             hasattr(contenido, 'post'):
         # El módulo de contenido devuelve True cuando ha cambiado la
@@ -312,7 +313,21 @@ def procesar(carpeta, fname, etapas, contenido, informe):
         # creada por el contenido no estaría en `recon`, así que se publicaría
         # sin DV, sin contador, sin A4 y sin protección. El motor es
         # idempotente, así que repasarlo no cuesta más que tiempo.
-        if contenido.post(wb, fname, cambios) and 'motor' in etapas and estado:
+        antes = [t for t in motor.REGISTRO]
+        estructura = contenido.post(wb, fname, cambios)
+        # RT-19 — las fórmulas que crea el módulo de CONTENIDO se registran en
+        # `motor.REGISTRO` igual que las del motor, y el `clear()` de la línea
+        # siguiente se las llevaba por delante: el gate de caché declaraba «36
+        # con valor» sobre las 36 del motor y las 8 del contenido (2 en el 03 y
+        # 6 en el 05) se entregaban sin verificar. Se guardan antes de limpiar
+        # y se reponen después.
+        # Sólo las que ha añadido el CONTENIDO: las del motor las vuelve a
+        # registrar la 2.ª llamada a `aplicar`, y con las coordenadas buenas.
+        # Arrastrar también las suyas apuntaría a filas que las inserciones
+        # del módulo de contenido han desplazado (21 «sin cache» medidos: el
+        # contador del 01 estaba en D42 cuando se registró y acabó en D43).
+        del_contenido = [t for t in motor.REGISTRO if t not in antes]
+        if estructura and 'motor' in etapas and estado:
             motor.REGISTRO.clear()
             extra = []
             estado = motor.aplicar(wb, fname, extra)
@@ -344,7 +359,13 @@ def procesar(carpeta, fname, etapas, contenido, informe):
     # este motor sostiene 11 kits LIVE y una reescritura automática los
     # repintaría todos sin que nadie leyese la frase resultante.
     restos = motor.restos_prohibidos(wb, fname)
+    # RD-02 — y el mismo tratamiento para las referencias internas del
+    # documento de trabajo («§7-bis.19», «CB-E3»…): el comprador no tiene la
+    # SPEC delante y una de ellas llegó a viajar dentro de la única celda del
+    # kit que le fija sus temperaturas de cocción.
+    marcas = motor.marcas_internas(wb, fname)
     registro = list(motor.REGISTRO)
+    registro += [t for t in del_contenido if t not in registro]     # RT-19
     guardado = bool(estado or cambios)
     if guardado:
         # Guardar con openpyxl BORRA el valor cacheado de TODAS las fórmulas del
@@ -362,6 +383,7 @@ def procesar(carpeta, fname, etapas, contenido, informe):
                     'cambios': cambios,
                     'ortografia': orto,
                     'restos_normativa_derogada': restos,
+                    'marcas_internas': marcas,
                     'formulas_nuevas': len(registro)})
     return registro
 
@@ -1045,11 +1067,23 @@ def gate_promesas(carpeta, nombres, promesas):
         hits = [f'{n}!{h}!{coord}' for n in alcance
                 for h, coord, v in corpus.get(n, []) if rx.search(v)]
         minimo = p.get('minimo', 1)
-        ok = len(set(hits)) >= minimo
+        # RC-04 — hay términos de la landing que el fichero tiene que
+        # CONTRADECIR, no respaldar: «salmón salvaje» en un kit cuyo 08 dice
+        # por escrito que el salmón de sushi es de acuicultura y no tiene
+        # temporada. Vigilarlos sólo «hacia arriba» dejaba fuera del gate
+        # justamente los cuatro que la R1 dio por rotos.
+        prohibido = bool(p.get('prohibido'))
+        ok = (len(hits) == 0) if prohibido else (len(set(hits)) >= minimo)
         filas.append({'termino': p['termino'], 'origen': p['origen'],
                       'fichero': p.get('fichero'), 'minimo': minimo,
+                      'prohibido': prohibido,
                       'apariciones': len(hits), 'donde': hits[:4], 'ok': ok})
-        if not ok:
+        if not ok and prohibido:
+            ausentes.append(
+                f"término que el fichero contradice y sigue vivo en él: "
+                f"«{p['termino']}» ({p['origen']}) — {len(hits)} apariciones: "
+                f"{hits[:3]}")
+        elif not ok:
             ausentes.append(
                 f"promesa sin respaldo: «{p['termino']}» ({p['origen']}) — "
                 f"{len(hits)} apariciones en "
@@ -1422,7 +1456,12 @@ def main():
 
     log('\n== 5/7 · data_only de las fórmulas nuevas ==')
     ver = verificar_cache(carpeta, registros)
-    log(f"  con valor: {ver['con_valor']} · fallos: {len(ver['fallos'])}")
+    # RC-25 — «vacías por diseño» son las fórmulas que evalúan a cadena vacía
+    # con la hoja en blanco (el ticket medio, el food cost, el coste de cada
+    # merma): `inject_cache` no inyecta '' y sin esta cifra el «8 de 10» del
+    # paso 4 parecía una pérdida.
+    log(f"  con valor: {ver['con_valor']} · vacías por diseño: "
+        f"{ver['vacias_por_diseno']} · fallos: {len(ver['fallos'])}")
     for f in ver['fallos'][:8]:
         log('    ' + f)
 
@@ -1522,8 +1561,13 @@ def main():
     moldes = gate_moldes(carpeta, nombres)
     log(f"  molde: {len(moldes['hojas_sin_molde'])} hojas sin clasificar")
     for d in moldes['hojas_sin_molde'][:10]:
+        # RT-12 — el aviso decía que esas hojas «no reciben A4» y el A4 SÍ
+        # está aplicado (paperSize 9, fitToWidth 1, márgenes 0,59): lo que no
+        # reciben es print_area, protección, DV y contador. El orquestador
+        # firma sobre este texto.
         log('    AVISO molde · ' + d + ': ningún molde la reconoce (no recibe '
-            'DV, ni contador, ni A4, ni protección)')
+            'print_area, ni protección, ni DV, ni contador; el A4 '
+            'sí lo tiene)')
 
     log('\n== 7/7 · censo-entregables --fail ==')
     cen = censo(carpeta)
@@ -1538,6 +1582,19 @@ def main():
     fallos += ['normativa derogada viva: ' + r
                for fi in informe_ficheros
                for r in fi.get('restos_normativa_derogada', [])]
+    # RD-02 — referencia interna filtrada a una celda que lee el cliente.
+    fallos += ['referencia interna del documento de trabajo en una celda del '
+               'cliente: ' + r
+               for fi in informe_ficheros
+               for r in fi.get('marcas_internas', [])]
+    # RC-01 — el gate «molde» era un AVISO y el run salía exit 0 con DOS de
+    # los once entregables (los dos BONUS, que la landing vende a 19 € cada
+    # uno) enteros fuera del post-proceso: sin DV, sin contador, sin
+    # print_area y sin protección. Dentro de la sub-familia CB, FALLA.
+    if motor.sub_cb():
+        fallos += ['molde sin clasificar (no recibe DV, ni contador, ni '
+                   'print_area, ni protección): ' + d
+                   for d in moldes['hojas_sin_molde']]
     fallos += gates['dv_incorrectas']
     fallos += prec.get('huecos_firma', [])
     fallos += prec['huecos'][:10]

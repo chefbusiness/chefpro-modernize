@@ -33,11 +33,17 @@ Qué compara, por celda (lo que pide el gate, ni más ni menos):
 Y, fuera de la celda, lo que haría inútil cualquier comparación de celdas: qué
 FICHEROS y qué HOJAS hay a cada lado, y en qué orden.
 
-Lo que NO compara (y por qué): rellenos, fuentes, anchos de columna, formato
-condicional, merges y metadata. No están en la lista del gate; `main.py:digest`
-ya cubre relleno, merges y CF en el gate de idempotencia, y meterlos aquí
-convertiría el informe en ruido antes de que nadie lo lea. Si algún día hacen
-falta, entran como una dimensión más de `_celdas()`.
+Con `--estricto` (RC-24) compara ADEMÁS anchos de columna, formato condicional
+(rango, tipo, fórmula y color del dxf), rellenos sólidos y merges: son las tres
+dimensiones que toca CB-E9 y el gate no podía ver una deriva en ellas. No van
+por defecto para que el informe del día a día no se convierta en ruido; se
+corren así en el T0 de cualquier extensión que toque presentación.
+
+Lo que sigue sin compararse: fuentes y metadata del documento.
+
+RT-10: las hojas se emparejan por nombre y, las que quedan sueltas, por
+POSICIÓN, de modo que una hoja NUEVA o RENOMBRADA se vuelca celda a celda
+contra un lado vacío en vez de resumirse en una sola línea de tipo «hojas».
 
 Salida: `exit 0` si no hay diferencias, `exit 1` si hay alguna, `exit 2` si una
 de las dos carpetas no existe o no se puede abrir un fichero.
@@ -84,7 +90,95 @@ def _ficheros(carpeta):
                   if n.endswith('.xlsx') and not n.startswith('~$'))
 
 
-def comparar_libro(pa, pb, fname, difs):
+def _emparejar(wa, wb):
+    """RT-10 — pares (hoja de A, hoja de B) de TODAS las hojas de los dos lados.
+
+    `comparar_libro` recorría sólo las hojas de A y saltaba las que no
+    existieran en B, así que una hoja NUEVA o RENOMBRADA aportaba UNA línea de
+    tipo «hojas» y su contenido no se comparaba jamás. En el representante de
+    la sub-familia CB eso dejaba fuera del diff que §9 T2.5 manda FIRMAR el
+    contenido de 10 de las 28 hojas —las 8 nuevas y las 2 renombradas por
+    CB-E1—, incluidas la cita normativa del anisakis, el registro de mermas y
+    la matriz de alérgenos: 4 líneas de «hojas» sobre 5.256 diferencias, y
+    ninguna de las que más importan.
+
+    Empareja primero por NOMBRE (que es lo que no cambia en el 99 % de los
+    casos) y después por POSICIÓN entre las que quedan sueltas a cada lado, que
+    es como se recupera un renombrado. Lo que no case con nada se compara
+    contra un lado vacío, así que sus celdas salen en el diff con A=None.
+    """
+    pares, sueltas_a, sueltas_b = [], [], []
+    for t in wa.sheetnames:
+        (pares if t in wb.sheetnames else sueltas_a).append(t)
+    pares = [(t, t) for t in pares]
+    sueltas_b = [t for t in wb.sheetnames if t not in wa.sheetnames]
+    for i, t in enumerate(sueltas_a):
+        pares.append((t, sueltas_b[i] if i < len(sueltas_b) else None))
+    for t in sueltas_b[len(sueltas_a):]:
+        pares.append((None, t))
+    return pares
+
+
+class _Vacia:
+    """Hoja inexistente: se compara contra ella para volcar la nueva entera."""
+    title = '(no existe)'
+
+    def iter_rows(self):
+        return iter(())
+
+    @property
+    def data_validations(self):
+        class _D:
+            dataValidation = []
+        return _D()
+
+    @property
+    def row_dimensions(self):
+        return {}
+
+    @property
+    def conditional_formatting(self):
+        return ()
+
+    @property
+    def column_dimensions(self):
+        return {}
+
+    @property
+    def merged_cells(self):
+        class _M:
+            ranges = ()
+        return _M()
+
+
+def _cf(ws):
+    """RC-24 — formato condicional por rango: tipo, fórmula y color del dxf."""
+    fuera = {}
+    for rango in getattr(ws, 'conditional_formatting', ()):
+        reglas = []
+        for r in rango.rules:
+            fill = getattr(r.dxf, 'fill', None) if r.dxf else None
+            color = getattr(getattr(fill, 'bgColor', None), 'rgb', None)
+            reglas.append((r.type, r.operator, tuple(r.formula or ()), color))
+        fuera[str(rango.sqref)] = tuple(reglas)
+    return fuera
+
+
+def _presentacion(ws):
+    """RC-24 — anchos, rellenos y merges: las tres dimensiones que toca CB-E9."""
+    anchos = {k: d.width for k, d in ws.column_dimensions.items()
+              if d.width is not None}
+    rellenos = {}
+    for row in ws.iter_rows():
+        for c in row:
+            f = c.fill
+            if f is not None and f.fill_type == 'solid':
+                rellenos[c.coordinate] = getattr(f.fgColor, 'rgb', None)
+    merges = sorted(str(m) for m in ws.merged_cells.ranges)
+    return anchos, rellenos, merges
+
+
+def comparar_libro(pa, pb, fname, difs, estricto=False):
     """Compara dos .xlsx y acumula las diferencias en `difs`."""
     try:
         wa = openpyxl.load_workbook(pa)
@@ -98,10 +192,12 @@ def comparar_libro(pa, pb, fname, difs):
                      'a': wa.sheetnames, 'b': wb.sheetnames,
                      'detalle': f'{fname}: hojas A={wa.sheetnames} '
                                 f'B={wb.sheetnames}'})
-    for titulo in wa.sheetnames:
-        if titulo not in wb.sheetnames:
-            continue
-        ha, hb = wa[titulo], wb[titulo]
+    for ta, tb in _emparejar(wa, wb):
+        titulo = ta or tb
+        if ta and tb and ta != tb:
+            titulo = f'{ta} → {tb}'
+        ha = wa[ta] if ta else _Vacia()
+        hb = wb[tb] if tb else _Vacia()
         va, la = _celdas(ha)
         vb, lb = _celdas(hb)
         for coord in sorted(set(va) | set(vb), key=_orden):
@@ -136,6 +232,41 @@ def comparar_libro(pa, pb, fname, difs):
                     'tipo': 'altura', 'a': aa.get(r), 'b': ab.get(r),
                     'detalle': f'{fname}!{titulo}!fila {r}: alto '
                                f'A={aa.get(r)} B={ab.get(r)}'})
+        if not estricto:
+            continue
+        # RC-24 — el gate BLOQUEANTE de §7-bis.24 no miraba anchos, formato
+        # condicional ni rellenos, que son EXACTAMENTE las tres dimensiones que
+        # toca CB-E9: una extensión sin condicionar por sub-familia repintaría
+        # 11 kits LIVE y el gate seguiría diciendo «0 diferencias».
+        ca, cb2 = _cf(ha), _cf(hb)
+        for ref in sorted(set(ca) | set(cb2)):
+            if ca.get(ref) != cb2.get(ref):
+                difs.append({
+                    'fichero': fname, 'hoja': titulo, 'celda': ref,
+                    'tipo': 'cf', 'a': str(ca.get(ref)), 'b': str(cb2.get(ref)),
+                    'detalle': f'{fname}!{titulo}!{ref}: CF A={ca.get(ref)} '
+                               f'B={cb2.get(ref)}'})
+        (an_a, re_a, me_a), (an_b, re_b, me_b) = (_presentacion(ha),
+                                                  _presentacion(hb))
+        for k in sorted(set(an_a) | set(an_b)):
+            if an_a.get(k) != an_b.get(k):
+                difs.append({
+                    'fichero': fname, 'hoja': titulo, 'celda': f'col {k}',
+                    'tipo': 'ancho', 'a': an_a.get(k), 'b': an_b.get(k),
+                    'detalle': f'{fname}!{titulo}!col {k}: ancho '
+                               f'A={an_a.get(k)} B={an_b.get(k)}'})
+        for k in sorted(set(re_a) | set(re_b), key=_orden):
+            if re_a.get(k) != re_b.get(k):
+                difs.append({
+                    'fichero': fname, 'hoja': titulo, 'celda': k,
+                    'tipo': 'relleno', 'a': re_a.get(k), 'b': re_b.get(k),
+                    'detalle': f'{fname}!{titulo}!{k}: relleno '
+                               f'A={re_a.get(k)} B={re_b.get(k)}'})
+        if me_a != me_b:
+            difs.append({
+                'fichero': fname, 'hoja': titulo, 'celda': '(merges)',
+                'tipo': 'merge', 'a': me_a, 'b': me_b,
+                'detalle': f'{fname}!{titulo}: merges A={me_a} B={me_b}'})
 
 
 def _orden(coord):
@@ -145,7 +276,7 @@ def _orden(coord):
     return (letras.rjust(3), int(numero) if numero else 0)
 
 
-def comparar(a, b, solo=None):
+def comparar(a, b, solo=None, estricto=False):
     """Compara dos carpetas. Devuelve el informe como dict."""
     for carpeta in (a, b):
         if not os.path.isdir(carpeta):
@@ -163,7 +294,8 @@ def comparar(a, b, solo=None):
                      'detalle': f'{n}: sólo está en B'})
     comunes = sorted(set(fa) & set(fb))
     for n in comunes:
-        comparar_libro(os.path.join(a, n), os.path.join(b, n), n, difs)
+        comparar_libro(os.path.join(a, n), os.path.join(b, n), n, difs,
+                       estricto)
     por_fichero = {}
     for d in difs:
         por_fichero[d['fichero']] = por_fichero.get(d['fichero'], 0) + 1
@@ -185,11 +317,14 @@ def main():
     ap.add_argument('--max', type=int, default=40,
                     help='diferencias que se imprimen (el JSON las lleva '
                          'TODAS)')
+    ap.add_argument('--estricto', action='store_true',
+                    help='RC-24: compara además anchos de columna, formato '
+                         'condicional, rellenos y merges (lo que toca CB-E9)')
     ap.add_argument('--solo', default=None,
                     help='subcadenas de nombre de fichero, separadas por coma')
     args = ap.parse_args()
     solo = [s.strip() for s in args.solo.split(',')] if args.solo else None
-    inf = comparar(args.a, args.b, solo)
+    inf = comparar(args.a, args.b, solo, args.estricto)
     print(f"ficheros comparados: {len(inf['ficheros_comparados'])} · "
           f"diferencias: {inf['diferencias']}")
     if inf['por_tipo']:

@@ -344,6 +344,8 @@ LEX_CONTEXTO = [
     (r'\bServir te verde\b', 'Servir té verde'),
     (r'\bcerveza japonesa, te\b', 'cerveza japonesa, té'),
     (r'☐ Si ☐ No', '☐ Sí ☐ No'),
+    # RD-30 — anglicismo suelto en la portada del fichero del manager.
+    (r'\bequipo y revenue\b', 'equipo y facturación'),
 ]
 _LEX_CONTEXTO = [(re.compile(rx), nuevo) for rx, nuevo in LEX_CONTEXTO]
 
@@ -1128,7 +1130,7 @@ def _f02(wb, cambios):
     if _insertar_tras(ws, 'Abanicar arroz',
                       [(ACIDIFICACION, 'Cocina', 'Ayudante sushi', '10:22')]):
         cambios.append('«Protocolo Arroz Sushi»: acidificación MEDIDA (ml de '
-                       'sushi-zu por kg de arroz cocido) registrada junto al '
+                       'sushi-zu por kg de arroz CRUDO) registrada junto al '
                        'pH — §7-bis.20')
         tocado = True
     if _bloque_al_final(ws, '  SEGUNDO LOTE (TURNO CENA)', SEGUNDO_LOTE):
@@ -1167,8 +1169,8 @@ def _f02(wb, cambios):
             'la decisión— o con pHmetro de punción calibrado.',
             'Cada lote se anota en la hoja «Registro de pH del Arroz» del '
             'fichero 03-seguridad-anisakis-appcc.xlsx, con los ml de sushi-zu '
-            'por kg de arroz cocido: esa acidificación medida es la que '
-            'respalda el valor.',
+            'por kg de arroz CRUDO —la misma base que la receta—: esa '
+            'acidificación medida es la que respalda el valor.',
             FUENTE_PH]):
         cambios.append('Instrucciones: método del pH y su registro, con la '
                        'fuente — DOM-04 / DOM-21 / DOM-22 / §7-bis.20')
@@ -1378,6 +1380,21 @@ def _f03(wb, cambios):
                        '— el registro anotaba la compra pero no la '
                        'temperatura con la que llegó — DOM-27')
         tocado = True
+    # RT-20 — CB-E3 nombra esta hoja explícitamente y se quedaba a medias: era
+    # la única de las siete hojas de registro del 03 sin columna de
+    # verificación, así que recibía formatos y protección pero ninguna ayuda de
+    # entrada. Con la columna, el motor le pone el desplegable ✓/—/N/A.
+    hr, cols = motor.fila_registro_appcc(ws)
+    if hr and not any(_clave(k).startswith('verif') for k in cols):
+        col_firma = next((c for k, c in cols.items()
+                          if _clave(k).startswith('firma')), max(cols.values()))
+        motor.insertar_columna(ws, col_firma)
+        ws.cell(row=hr, column=col_firma).value = 'Verif.'
+        ws.column_dimensions[L(col_firma)].width = 9
+        cambios.append('«Trazabilidad Pescado»: columna «Verif.» con el '
+                       'desplegable del resto del kit — era la única hoja de '
+                       'registro del 03 sin ninguna ayuda de entrada — RT-20')
+        tocado = True
 
     # --- Las cuatro hojas nuevas ------------------------------------------
     modelo = 'Trazabilidad Pescado'
@@ -1415,14 +1432,21 @@ def _f03(wb, cambios):
             wb, modelo, HOJA_PH,
             'Registro de pH del Arroz Avinagrado — Sushi Bar',
             'Semana del ___/___/______ al ___/___/______',
-            ['#', 'Fecha', 'Lote / hora de avinagrado', 'kg de arroz cocido',
-             'Sushi-zu añadido (ml/kg)', 'pH medido', 'Acción correctora',
+            ['#', 'Fecha', 'Lote / hora de avinagrado', 'kg de arroz crudo',
+             # RD-07 — UNA sola base en las cuatro celdas donde se dosifica
+             # o se anota el sushi-zu: kg de arroz CRUDO, que es como se
+             # pesa en la partida. Con dos bases el mismo lote se anotaba
+             # como 200 ml/kg o como ~91 ml/kg según quién rellenase.
+             'Sushi-zu añadido (ml/kg crudo)', 'pH medido',
+             'Acción correctora',
              'Verif.', 'Firma'],
             20,
             ['Una línea por LOTE de arroz, no por día: si haces arroz para el '
              'almuerzo y para la cena, son dos líneas. El límite crítico es '
              'pH ≤ 4,6.',
-             'La columna «Sushi-zu añadido» es la acidificación MEDIDA: es lo '
+             'La columna «Sushi-zu añadido» va en ml por kg de arroz CRUDO, '
+            'la misma base que la receta del 02, y es la acidificación '
+            'MEDIDA: es lo '
              'que permite repetir el resultado y lo que se enseña si un '
              'inspector pregunta por qué el arroz se mantiene a temperatura '
              'ambiente.',
@@ -1514,7 +1538,7 @@ def _f03(wb, cambios):
                        '#,##0.00" €"', cambios, 'RT-06 / RD-25')
     _formato_columna(wb[HOJA_MERMAS], 'kg descartados', '0.0" kg"')
     _formato_columna(wb[HOJA_MERMAS], 'Coste €/kg', '#,##0.00" €"')
-    _formato_columna(wb[HOJA_PH], 'kg de arroz cocido', '0.0" kg"')
+    _formato_columna(wb[HOJA_PH], 'kg de arroz crudo', '0.0" kg"')
     _formato_columna(wb[HOJA_PH], 'Sushi-zu añadido', '0" ml/kg"')
     _formato_columna(wb[HOJA_RECEPCION], 'kg', '0.0" kg"')
 
@@ -1524,8 +1548,8 @@ def _f03(wb, cambios):
             'más la casilla de contaminación cruzada. Es la información que '
             'sala tiene que poder dar en el momento.',
             f'«{HOJA_PH}»: una línea por lote de arroz con el pH medido y los '
-            'ml de sushi-zu por kg. Es el registro del límite crítico del '
-            'producto estrella.',
+            'ml de sushi-zu por kg de arroz CRUDO. Es el registro del límite '
+            'crítico del producto estrella.',
             f'«{HOJA_RECEPCION}»: temperatura, aspecto, etiquetado y decisión '
             'de aceptar o rechazar, con el motivo. Es el primer punto de '
             'control del pescado.',
@@ -2418,9 +2442,34 @@ PROMESAS = [
     {'termino': 'delivery / take away', 'rx': r'(?i)(delivery|take away)',
      'fichero': '06-tareas-perfiles.xlsx',
      'origen': 'kit-tareas-sushi-bar.ts:141 grid.templates[5] y :286 cta.items[4]'},
-    {'termino': 'festivos asiáticos (≥2)', 'rx': r'(?i)(hanami|tanabata|oshogatsu|a[ñn]o nuevo japon)',
+    # RD-34 — «festivos asiáticos» en plural se cumplía con festivos
+    # EXCLUSIVAMENTE japoneses, y el gate lo daba por bueno porque su propia
+    # expresión regular sólo buscaba los japoneses: el término nunca podía
+    # fallar. En un sushi bar lo honesto es el copy, no meter el Año Nuevo
+    # chino en un calendario japonés, así que la landing pasa a decir
+    # «festivos japoneses» (§3.3) y el gate vigila ese término.
+    {'termino': 'festivos japoneses (≥2)', 'rx': r'(?i)(hanami|tanabata|oshogatsu|a[ñn]o nuevo japon)',
      'fichero': None, 'minimo': 2,
-     'origen': 'kit-tareas-sushi-bar.ts:151 y :287 «festivos asiáticos» (plural)'},
+     'origen': 'kit-tareas-sushi-bar.ts:151 y :287 «festivos japoneses» (plural)'},
+    # RC-04 — los términos que la R1 dio por rotos NO estaban en la lista, así
+    # que el gate salía «0 de 11» sin haber mirado ninguno de los cuatro.
+    # «salmón salvaje» y «Año Nuevo Chino» se corrigen en la landing (§3.3) y
+    # se vigilan aquí AL REVÉS: tienen que seguir con 0 apariciones en el
+    # corpus, porque el fichero afirma lo contrario (08!Instrucciones dice que
+    # el salmón de sushi es de acuicultura y no tiene temporada).
+    {'termino': 'salmón salvaje (debe seguir SIN aparecer)',
+     'rx': r'(?i)salm[óo]n salvaje', 'fichero': None, 'minimo': 0,
+     'prohibido': True,
+     'origen': 'kit-tareas-sushi-bar.ts:151 y :231 — COM-07 / RD-33 / RC-03'},
+    {'termino': 'Año Nuevo Chino (debe seguir SIN aparecer)',
+     'rx': r'(?i)a[ñn]o nuevo chino', 'fichero': None, 'minimo': 0,
+     'prohibido': True,
+     'origen': 'KitTareasSushiBarDashboard.tsx:23 — COM-08 / RD-34'},
+    {'termino': 'checklists pre-rellenados (recuento honesto)',
+     'rx': r'(?i)plantilla en blanco', 'fichero':
+     '09-plantilla-personalizable.xlsx',
+     'origen': 'kit-tareas-sushi-bar.ts:28 «11 checklists pre-rellenados» — '
+               'son 8 pre-rellenados + 3 en blanco (COM-05, §3.3)'},
     {'termino': 'cierres por vacaciones', 'rx': r'(?i)vacacion',
      'fichero': 'BONUS-02-calendario-anual.xlsx',
      'origen': 'kit-tareas-sushi-bar.ts:166 y :231 bonus.items[1]'},
@@ -2434,6 +2483,12 @@ PROMESAS = [
 #: en el mismo kit es exactamente el defecto que se viene a arreglar.
 EQUIPOS_LIMITE = [
     ('cámara de pescado crudo', r'(?i)c[áa]mara (de )?(el )?pescado crudo'),
+    # RD-27 / RC-15 — el gate vigilaba NOMBRES DE EQUIPO y el segundo rango del
+    # pescado crudo (0-4 °C en la bolsa de reparto) entró como frase de
+    # PROCESO: tres números para el mismo alimento y el gate en 0 conflictos.
+    # Ahora se vigila el producto, no sólo la cámara que lo guarda.
+    ('pescado crudo (como producto, esté donde esté)',
+     r'(?i)(el )?pescado crudo'),
     ('cámara de congelación de anisakis',
      r'(?i)c[áa]mara (de )?congelaci[óo]n (de )?anisakis'),
     ('vitrina neta case', r'(?i)vitrina( neta case)?'),
