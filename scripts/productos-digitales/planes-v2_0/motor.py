@@ -1477,7 +1477,8 @@ TILDES = {
     'practico': 'práctico', 'automatico': 'automático',
     'organico': 'orgánico', 'economico': 'económico',
     'juridica': 'jurídica', 'publica': 'pública', 'publico': 'público',
-    'electrica': 'eléctrica', 'acustica': 'acústica',
+    'electrica': 'eléctrica', 'electrico': 'eléctrico',
+    'electricos': 'eléctricos', 'acustica': 'acústica',
     'energetica': 'energética', 'logistica': 'logística',
     'estrategia': None, 'garantia': 'garantía', 'garantias': 'garantías',
     'dia': 'día', 'dias': 'días', 'mas': None, 'segun': 'según',
@@ -1563,11 +1564,16 @@ TILDES_EXTRA = {
     'economico': 'económico', 'economica': 'económica',
     'estrategico': 'estratégico', 'estrategica': 'estratégica',
     'especifico': 'específico', 'especifica': 'específica',
+    'especificos': 'específicos', 'especificas': 'específicas',
     'electronico': 'electrónico', 'electronica': 'electrónica',
     'informatico': 'informático', 'informatica': 'informática',
     'logistica': 'logística', 'domestico': 'doméstico',
     'domestica': 'doméstica', 'higienico': 'higiénico',
     'higienica': 'higiénica',
+    # T7/panadería (2026-08-29): dos esdrújulas -ico/-ica más, medidas en
+    # este fichero y ausentes del listado («rústico/a», «típico/a»).
+    'rustico': 'rústico', 'rustica': 'rústica',
+    'tipico': 'típico', 'tipica': 'típica',
     # RD-32 / RC-20 — nueve palabras que el gate daba por buenas y que el
     # cliente ve en la hoja que imprime para el banco. Cinco de ellas
     # convivían con su forma acentuada en la MISMA celda («Pagina básica»,

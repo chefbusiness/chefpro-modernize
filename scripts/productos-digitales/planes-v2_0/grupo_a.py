@@ -2665,10 +2665,24 @@ class Plan(object):
                 formulas={'N': suma_ano('estacional'),
                           'O': 'Perfil de tu zona: agosto flojo en ciudad y '
                                'fuerte en costa. Tiene que sumar 100 %'})
+        # T7/panadería (2026-08-29): la igualdad ESTRICTA `=1`/`<>1` es
+        # inherentemente frágil sobre un `SUM()` de 12 decimales en coma
+        # flotante — probado en Python con los pesos de ESTE módulo, que
+        # suman 1,000 en aritmética decimal exacta: `sum(...)` da
+        # `0.9999999999999999`, no `1.0`. No es un caso raro: CUALQUIER
+        # conjunto de 12 pesos con dos o tres decimales tropieza con el
+        # mismo redondeo binario (probado también con `[1/12]*12` y con
+        # `[0.1]*10`). El REF-03 de esta misma familia («…tapas-bar-ref.
+        # json») pedía «que la suma dé exactamente 1,000», pero ningún
+        # conjunto de decimales lo hace de forma fiable en IEEE754: la regla
+        # buena es la ROJA de verdad (1,02, un 2 % de más) contra el RUIDO
+        # de redondeo (10⁻¹⁶), no una igualdad exacta entre los dos.
         motor.semaforo_num(ws, rej.c('estacional', 'N') + ':'
                            + rej.c('estacional', 'N'),
-                           verde_si=rej.c('estacional', 'N') + '=1',
-                           rojo_si=rej.c('estacional', 'N') + '<>1')
+                           verde_si='ABS(' + rej.c('estacional', 'N')
+                           + '-1)<0.005',
+                           rojo_si='ABS(' + rej.c('estacional', 'N')
+                           + '-1)>=0.005')
         rej.add('rampa', rot='Rampa de arranque (% de la actividad de '
                 'crucero)', fmt=motor.FMT_PCT,
                 formulas=dict(
@@ -3430,8 +3444,20 @@ class Plan(object):
             cab = _cabecera(ws)
             cols = dict((motor.norm(c.value), c.column) for c in ws[cab]
                         if isinstance(c.value, str))
+            # T7/panadería (2026-08-29): el checklist de este hermano
+            # rotula la columna simplemente «TRAMITE» —sin «/ Tarea» ni
+            # «/ Accion»—, un cuarto texto de cabecera que ninguno de los
+            # tres anteriores usaba. Sin `cols.get('tramite')` el método
+            # entero se saltaba la hoja (`continue`) — reemplazos Y altas,
+            # las dos cosas, en las 6 pestañas — SIN un solo aviso: el
+            # dry-run daba TODO VERDE porque ningún gate mide «¿se
+            # ejecutaron los reemplazos?», sólo que las fórmulas nuevas
+            # evalúen. Se añade como ÚLTIMO recurso (después de las tres
+            # variantes ya vistas) para no cambiar cuál gana si un fichero
+            # futuro trajera dos cabeceras candidatas.
             col_tarea = (cols.get('tramite / tarea') or cols.get('tarea')
-                         or cols.get('tramite / accion') or cols.get('hito'))
+                         or cols.get('tramite / accion') or cols.get('hito')
+                         or cols.get('tramite'))
             if col_tarea is None:
                 continue
             # REF-04 (`…tapas-bar-ref.json`, 2026-08-29): en el molde C2 la
