@@ -1,0 +1,616 @@
+{
+  "producto": "guia-restaurante-peruano",
+  "tanda": "T6",
+  "rol": "sonnet, verificacion id a id contra el representante + censo propio + modulos de contenido",
+  "fecha": "2026-08-29",
+  "paquete": {
+    "contenido": [
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_peruano/a.py",
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_peruano/b.py",
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_peruano/c.py"
+    ],
+    "motor_compartido_tocado": [],
+    "nota_alcance": "Igual que mexicano (T6 previo), este hermano NO requirio ningun cambio en grupo_a.py/grupo_b.py/grupo_c.py: el motor de familia (maduro tras representante+casual+mexicano) aplico sin tocar una linea de codigo compartido. Confirma otra vez la tesis de la SPEC (§9): los hermanos que quedan son solo contenido. Dry-run TODO VERDE a la primera ejecucion, sin necesidad de segunda pasada correctiva del motor."
+  },
+  "gates": {
+    "dryrun_exit": 0,
+    "idempotencia": 0,
+    "censo_entregables_fail": "OK: 0 defectos (19 ficheros: 15 xlsx, 3 docx, 1 pdf)",
+    "xlsx_sin_formulas": 0,
+    "xlsx_totales": 15,
+    "formulas_en_los_15_xlsx": 1189,
+    "data_only_fallos": 0,
+    "data_only_con_valor": 727,
+    "data_only_vacias_por_diseno": 402,
+    "data_only_vacias_no_verificadas_pycel": "10 (plantilla-turnos-brigada.xlsx:'Registro de jornada'!C109:C118 -- SUMPRODUCT+IFERROR que pycel 1.0b30 no evalua; misma excepcion PRE-EXISTENTE ya documentada en la SPEC (§9) para el representante, casual y mexicano, mismo patron, mismo recuento exacto de filas",
+    "checklists_con_bloque_resumen": 6,
+    "checklists_cuadran_subtotales": "6/6 True",
+    "hojas_protegidas": "39/39",
+    "brigada_horas_max": "40.0 (los 14 puestos, ninguno por encima; verificado en pycel puesto a puesto sobre el fichero real: K5:K18 = [40.0]*14)",
+    "brigada_bruto_min": "17094.0 (SMI vigente, RD 126/2026; Runner en el suelo exacto, los otros 13 puestos por encima)",
+    "proyeccion_ano1_vs_cashflow": {
+      "proyeccion_3_anos_B13": 594000.0,
+      "cash_flow_total_12_meses_entradas": 594000.0,
+      "coincide": true
+    },
+    "necesidad_total_financiacion": 594200.0,
+    "fondo_de_maniobra_calculado": 343800.0,
+    "fondo_de_maniobra_meses": 6,
+    "cuota_prestamo_verificada": {
+      "importe": 420000,
+      "plazo_anos": 8,
+      "tipo": 0.06,
+      "carencia_anos": 1,
+      "cuota_mensual_post_carencia_B12": 6135.592883188038,
+      "cuota_mensual_durante_carencia_B13": 2100.0,
+      "cuota_carencia_en_contenido": 2100.0,
+      "coincide": true,
+      "nota": "La amortizacion corre sobre los 7 anios POSTERIORES a la carencia (84 meses, no 96): el primer intento del modulo tecleo 5.519,40 EUR (calculado sobre 96 meses) y se corrigio a 6.135,59 EUR tras leer Financiacion!B12 del fichero YA escrito con pycel -- identica al valor de mexicano, que usa el mismo importe/tipo/plazo/carencia. Con CASH['anio']=1 solo se usa cuota_carencia (todo el Anio 1 cae dentro de la carencia), asi que el error de la primera version del modulo NO afecto a ningun numero escrito en el xlsx -- solo a la documentacion, ya corregida antes del segundo dry-run (tambien TODO VERDE)."
+    },
+    "libro_en_blanco_sin_verdes_falsos": {
+      "checklists_6_ok": true,
+      "gantt_ok": true,
+      "sin_dato_es_vacio_ok": true
+    },
+    "normativa_derogada_viva": "0 en peruano (verificado con grep sobre los 15 xlsx del dry-run: la unica mencion a '1420/2006' en todo el producto es la cita de checklist-appcc.xlsx!APPCC!C20, que lleva la formula exacta 'RD 1021/2022, art. 8.1 (que derogo el RD 1420/2006)', cumpliendo la excepcion del gate)"
+  },
+  "recuentos_checklist": {
+    "checklist-legal.xlsx": {
+      "antes": 39,
+      "despues": 49,
+      "anuncia_dashboard": 32
+    },
+    "checklist-contratacion.xlsx": {
+      "antes": 29,
+      "despues": 29,
+      "anuncia_dashboard": 24
+    },
+    "checklist-appcc.xlsx": {
+      "antes": 39,
+      "despues": 41,
+      "anuncia_dashboard": 33
+    },
+    "checklist-diseno-sala-peruana.xlsx": {
+      "antes": 32,
+      "despues": 36,
+      "anuncia_dashboard": 30
+    },
+    "checklist-equipamiento-cocina-peruana.xlsx": {
+      "antes": 32,
+      "despues": 35,
+      "anuncia_dashboard": 35
+    },
+    "checklist-marketing-preapertura.xlsx": {
+      "antes": 28,
+      "despues": 28,
+      "anuncia_dashboard": 25
+    },
+    "nota": "Los 6 numeros anunciados por GuiaRestaurantePeruanoDashboard.tsx (32/35/33/30/24/25) son EXACTAMENTE los mismos que mexicano y casual anunciaban en sus propios dashboards (componente de tarjetas copiado entre hermanos sin actualizar la cifra). A diferencia de mexicano (que superaba los 6 anuncios ya en v1.1) y de casual, aqui checklist-equipamiento-cocina-peruana.xlsx MEDIA 32 items en v1.1 -- POR DEBAJO de los 35 anunciados: es el UNICO caso de deficit real entre los tres hermanos verificados hasta ahora. Se resolvio anadiendo 3 items nuevos (no 1) para no dejar el gate en rojo: extincion automatica en campana (DOM-20), instalacion/transporte/puesta en marcha del equipamiento (RD-PERU-04, parametrizado) y sonda/data-logger de congelacion preventiva del pescado (RD-PERU-04, liga DOM-14/APPCC con el equipamiento). El gate 'recuento >= anunciado' pasa en los 6 checklists tanto antes (5/6) como despues (6/6). Queda para T8 actualizar las 6 cifras del dashboard con el recuento real."
+  },
+  "hallazgos_propios_de_peruano": [
+    {
+      "id": "RD-PERU-01",
+      "severidad": "alta",
+      "que": "El escenario REALISTA de pl-mensual-escenarios.xlsx (55.000 EUR/mes de facturacion, 40.300 EUR/mes de costes fijos, food cost 30%) YA daba EBITDA negativo en v1.1: Realista!B31=-2.300 (-27.600 EUR/anio), aritmeticamente correcto. Es el MISMO numero, con la MISMA fuente, que 'P&L Mensual' de plan-financiero-3-anos.xlsx, asi que NUEVO-01 al encadenarse en 'Proyeccion 3 Anos' arrastra el problema a los 3 anios: EBITDA Anio1=-73.200 EUR, Anio2=-12.237,60 EUR, Anio3=-10.035,60 EUR (verificado en pycel sobre el fichero YA escrito); Resultado neto negativo los 3 anios. El propio Break-Even!B5:B9 (parametros independientes de esta guia, no la 'unica fuente' del §7-bis.7) confirma el mismo diagnostico por otra via: margen de contribucion mensual 39.312 EUR, 988 EUR por debajo de los 40.300 EUR de costes fijos -- Break-Even!B13 devuelve 'No alcanzado'. Y el propio Cash Flow (con el fondo de maniobra de 343.800 EUR como colchon de 6 meses) termina el Anio 1 en saldo acumulado -67.800 EUR (M27), negativo pese al colchon.",
+      "corregido": false,
+      "motivo_no_corregido": "grupo_a.pl_tres_hojas() no tiene cableado para propagar una nota de recalibracion a la formula del TOTAL cuando una linea de detalle de la variante 'tres hojas' cambia de valor (mismo hallazgo documentado por casual como RD-CASUAL-04 y por mexicano como RD-MEX-04): cambiar Realista!B6:B9 o Break-Even!B5:B9 sin fuente seria ademas inventar cifras del negocio, prohibido por §7-bis. Se documenta con severidad ALTA para que el orquestador decida en T7/T8/§7.3 si el concepto necesita un ticket medio mas alto, mas cubiertos/dia o menos coste fijo antes de publicarse como 'viable' en la landing.",
+      "evidencia": "pl-mensual-escenarios.xlsx!Realista!B31 (fichero original, v1.1) = -2300; plan-financiero-3-anos.xlsx!'Proyeccion 3 Anos'!B17/C17/D17 (evaluado en pycel sobre el fichero escrito por este paquete) = -73200.0/-12237.6/-10035.6; cash-flow-break-even.xlsx!'Break-Even'!B13 = 'No alcanzado'; !'Cash Flow'!M27 = -67800.0"
+    },
+    {
+      "id": "RD-PERU-02",
+      "severidad": "alta",
+      "que": "El cuadrante de plantilla-turnos-brigada.xlsx (v1.1) tenia los 14 puestos SIN NINGUN dia de libranza: 11 puestos a 'PPPPPPP' (70h/semana) y 3 a un unico turno x7 ('MMMMMMM'/'TTTTTTT', 56h/semana). Incumple el art. 34.1 ET (jornada maxima) y el 37.1 ET (descanso semanal) a la vez. Mismo defecto EXACTO, con el MISMO reparto 11+1+2, que casual (RD-CASUAL-02) y mexicano (RD-MEX-03).",
+      "corregido": true,
+      "evidencia": "TURNOS['forzar_cuadrante']=True + TURNOS['cuadrante'] en contenido/c.py; verificado en pycel sobre el fichero escrito: los 14/14 puestos dan exactamente 40.0 horas/semana (K5:K18), con 3 dias de libranza en los turnos partidos y 2 en los de turno unico."
+    },
+    {
+      "id": "RD-PERU-03",
+      "severidad": "media",
+      "que": "checklist-legal.xlsx no tenia el sistema de facturacion verificable (RD 1007/2023, Verifactu) y, a diferencia del representante, no habia ningun duplicado de 'alta censal' que liberar para insertarlo sin subir el recuento (mismo patron que RD-CASUAL-01 y RD-MEX-01).",
+      "corregido": true,
+      "evidencia": "checklist-legal.xlsx post-proceso: fila nueva categoria Fiscal, 'Sistema informatico de facturacion verificable en el TPV (RD 1007/2023 y su Orden de desarrollo)'"
+    },
+    {
+      "id": "RD-PERU-04",
+      "severidad": "media",
+      "que": "checklist-equipamiento-cocina-peruana.xlsx medido en 32 items, POR DEBAJO de los 35 que anuncia el dashboard -- unico deficit real de recuento entre los tres hermanos verificados hasta ahora. DOM-20 (extincion automatica) por si solo dejaba el recuento en 33, todavia por debajo.",
+      "corregido": true,
+      "evidencia": "2 items nuevos anadidos ademas de DOM-20: 'Instalacion, transporte y puesta en marcha del equipamiento de cocina' (parametrizado, misma partida que el 12% de calculadora-capex del representante) y 'Sonda/data logger de temperatura dedicado a verificar y registrar la congelacion preventiva del pescado' (liga DOM-14/APPCC con el equipamiento de esta guia, que no tenia ningun instrumento de medicion propio para esa obligacion). checklist-equipamiento-cocina-peruana.xlsx items_medidos=35 (=anuncia), verificado en el gate de recuento."
+    }
+  ],
+  "ids_verificados": [
+    {
+      "id": "TEC-01",
+      "estado": "resuelto",
+      "evidencia": "calculadora-ticket-medio.xlsx!'Ticket Medio'!B15 pasa a formula (variante columna unica); antes vacia. Verificado dry-run: 7 formulas en el fichero, 0 fallos data_only."
+    },
+    {
+      "id": "TEC-02",
+      "estado": "resuelto",
+      "evidencia": "pl-mensual-escenarios.xlsx: las 3 hojas (Pesimista/Realista/Optimista) pasan de constantes a formula encadenada (B10/B13/B15/B29/B31 + C=B*12 + D=IF(...)). Verificado en demo grupo_a.constantes_a_formulas: recalculado==anterior en las 3 hojas (coincide:true)."
+    },
+    {
+      "id": "TEC-03",
+      "estado": "resuelto",
+      "evidencia": "cash-flow-break-even.xlsx!'Cash Flow'!B10/B19/B24(sic B12 entradas)/B26/B27 con SUM y encadenado; Break-Even!B13 anadida. Verificado: 'Cash Flow'!M27 (saldo acumulado) evaluado en pycel = -67800.0 (encadena mes a mes correctamente)."
+    },
+    {
+      "id": "TEC-04",
+      "estado": "resuelto",
+      "evidencia": "menu-engineering-matrix.xlsx!Matrix!I5:J19 (mix+umbral+clasificacion) anadidas. Verificado demo grupo_c.menu: 15 platos, clasificaciones=['Star','Star','Plowhorse',...], mc_medio_ponderado=9.654, umbral=0.0467."
+    },
+    {
+      "id": "TEC-06",
+      "estado": "resuelto",
+      "evidencia": "Merma con DV 0-0.95 aplicada en escandallo-maestro-peruano.xlsx!Escandallo!F6:F15 (prompt_porcentaje) y en checklists donde aplica. Verificado en validaciones() del motor, 0 fallos."
+    },
+    {
+      "id": "TEC-07",
+      "estado": "resuelto",
+      "evidencia": "plan-financiero-3-anos.xlsx: hoja 'Proyeccion 3 Anos' creada (B13:D24). Verificado leyendo el fichero escrito: 5 hojas (Instrucciones, Inversion, P&L Mensual, Proyeccion 3 Anos, Financiacion)."
+    },
+    {
+      "id": "TEC-11",
+      "estado": "resuelto",
+      "evidencia": "plantilla-turnos-brigada.xlsx!'Turnos Semana'!K5:K18 con SUMPRODUCT sobre M/T/P/L/V. Verificado en pycel: 14/14 puestos horas=40.0."
+    },
+    {
+      "id": "TEC-12",
+      "estado": "resuelto",
+      "evidencia": "'Turnos Semana': tabla de equivalencia turno->horas con nota de la 'V' (Vacaciones) documentada en el bloque de parametros. Verificado: parrafo presente en el fichero escrito."
+    },
+    {
+      "id": "TEC-14",
+      "estado": "resuelto",
+      "evidencia": "cronograma-apertura-gantt.xlsx!Gantt: barra por formato condicional sobre Mes inicio/Duracion (columnas O/P nuevas). Verificado demo grupo_b.gantt_barra: fila 5, meses_pintados=[1,2], ok:true."
+    },
+    {
+      "id": "TEC-15",
+      "estado": "resuelto",
+      "evidencia": "Gantt!D/E a dd/mm/yyyy + columna Dias. Verificado: formulas anadidas (28 formulas en el fichero, cache_inyectado=28, 0 fallos)."
+    },
+    {
+      "id": "TEC-16",
+      "estado": "resuelto",
+      "evidencia": "Los 6 checklists molde A reciben fila TOTAL + subtotales SUMIF por categoria. Verificado demo checklists: 6/6 cuadra_subtotales=true (p.ej. checklist-legal.xlsx total=16280.0, subtot=10, cuadra=true)."
+    },
+    {
+      "id": "TEC-17",
+      "estado": "resuelto",
+      "evidencia": "Fecha Limite (columna E) a dd/mm/yyyy con DV de fecha en los 6 checklists molde A; semaforo de Estado por formato condicional (F=Completado/En Curso/Pendiente). Verificado: validaciones() del motor 0 fallos."
+    },
+    {
+      "id": "TEC-21",
+      "estado": "resuelto",
+      "evidencia": "escandallo-maestro-peruano.xlsx: food cost objetivo extraido de la formula (G18='=G17/0.30') a celda verde y USADO en G20 (='=racion/food_cost'). Verificado demo grupo_c.escandallo: pvp_sin_iva=18.5448, pvp_con_iva=20.3993 (responden al parametro)."
+    },
+    {
+      "id": "TEC-23",
+      "estado": "resuelto",
+      "evidencia": "Escandallo: hoja renombrada 'Ficha (plantilla)' + hoja 'Resumen' nueva. Verificado: wb.sheetnames del fichero escrito incluye 'Ficha (plantilla)'."
+    },
+    {
+      "id": "TEC-25",
+      "estado": "resuelto",
+      "evidencia": "Formato por tipo de etiqueta aplicado via formato_por_etiqueta() en los 15 xlsx (0.0% en porcentajes, #,##0 en Uds/Cubiertos/Dias, #,##0.00 € en importes). Verificado: 0 avisos de formato en el dry-run."
+    },
+    {
+      "id": "TEC-26",
+      "estado": "resuelto",
+      "evidencia": "plan-financiero-3-anos.xlsx!Inversion: columna 'Categoria equivalente en calculadora-capex.xlsx' con 44/44 partidas mapeadas via PLAN['capex_map']. Verificado: correspondencia_capex() sin excepciones en el dry-run (0 avisos VarianteDesconocida)."
+    },
+    {
+      "id": "TEC-28",
+      "estado": "resuelto",
+      "evidencia": "Los 6 checklists molde A: hoja Instrucciones creada, pestana renombrada (de 'Sheet' al nombre del checklist), linea de version 'Version 2.0 * agosto 2026' y bio anclada. Verificado demo bio_y_version: bio=1, version=1 en los 15 xlsx."
+    },
+    {
+      "id": "TEC-29",
+      "estado": "resuelto",
+      "evidencia": "Formato condicional aplicado: semaforos ISNUMBER en margenes/EBITDA/desviacion CAPEX/estado de checklists. Verificado demo semaforo_isnumber: numero_negativo_con_guarda=true, texto_con_guarda=false, ok=true."
+    },
+    {
+      "id": "TEC-30",
+      "estado": "resuelto",
+      "evidencia": "Proteccion de hoja sin contrasena en las 39 hojas del producto, con verdes desbloqueadas. Verificado demo proteccion: hojas=39/39, con_contrasena=false en todas."
+    },
+    {
+      "id": "DOM-01",
+      "estado": "resuelto",
+      "evidencia": "Fondo de maniobra dimensionado por formula (>=6 meses de fijos+variables del P&L, en vez de la constante '3 meses' tecleada). Verificado en pycel: Inversion!C48(fondo)=343800.0 = 6 x 57300 (estructura mensual del P&L Mensual)."
+    },
+    {
+      "id": "DOM-02",
+      "estado": "resuelto",
+      "evidencia": "SS empresarial al 33% en celda verde en plantilla-turnos-brigada.xlsx (ref_ss), usada en O(coste/hora) y en O(fila_total, coste anual con SS). Verificado: coste_hora_con_ss evaluado en pycel para el fichero real."
+    },
+    {
+      "id": "DOM-03",
+      "estado": "resuelto",
+      "evidencia": "IVA declarado: escandallo-maestro-peruano.xlsx trae ya PVP con/sin IVA (extraido de la formula original G19='=G18*1.10'); cash-flow-break-even.xlsx recibe 3 filas de IVA (repercutido/soportado/liquidacion 303). Verificado: 127 formulas en cash-flow-break-even.xlsx (antes 10)."
+    },
+    {
+      "id": "DOM-04",
+      "estado": "resuelto",
+      "evidencia": "La merma entra como rendimiento (G=E/(1-F)) en vez de recargo (G=E*(1+F)) en escandallo-maestro-peruano.xlsx (modelo E2). Verificado demo grupo_c.escandallo: coste_merma_0=4.6635 vs coste_merma_20=5.5635 (proporcion correcta 1/(1-0.20)=1.25x)."
+    },
+    {
+      "id": "DOM-06",
+      "estado": "resuelto",
+      "evidencia": "hoja 'Proyeccion 3 Anos' con Ingresos/Costes/EBITDA/EBIT/BAI/IS/Resultado neto a 3 anos, encadenada al P&L Mensual (nunca constante). Verificado en pycel: B13=594000.0 (= 'P&L Mensual'!N10/12*12, redondeado por la rampa), coincide con Cash Flow total 12m=594000.0."
+    },
+    {
+      "id": "DOM-07",
+      "estado": "resuelto",
+      "evidencia": "pl-mensual-escenarios.xlsx deja de ser inerte: 3 hojas con formula encadenada (ver TEC-02). Verificado."
+    },
+    {
+      "id": "DOM-08",
+      "estado": "resuelto",
+      "evidencia": "calculadora-ticket-medio.xlsx calcula (ver TEC-01): B15 ='=B5*B6+B7+B8*B9+B10*B11+B12*B13' segun el mapa de pares de esta guia."
+    },
+    {
+      "id": "DOM-09",
+      "estado": "resuelto",
+      "evidencia": "cash-flow-break-even.xlsx!Break-Even!B13 (Break-Even en meses) anadida con MATCH/INDEX sobre el flujo acumulado. Verificado en pycel del fichero real: B13='No alcanzado' (serie que nunca cruza a positivo con los parametros propios de esta guia - documentado como RD-PERU-01)."
+    },
+    {
+      "id": "DOM-10",
+      "estado": "resuelto",
+      "evidencia": "Kasavana & Smith completo (mix/umbral/margen medio/clasificacion/accion recomendada) en menu-engineering-matrix.xlsx. Verificado (ver TEC-04): clasificaciones=['Star','Star','Plowhorse','Star','Plowhorse','Puzzle','Puzzle','Plowhorse','Plowhorse','Puzzle','Puzzle','Star','Dog','Plowhorse','Star']."
+    },
+    {
+      "id": "DOM-11",
+      "estado": "resuelto",
+      "evidencia": "checklist-legal.xlsx item 9 ya dice 'Licencia de actividad / declaracion responsable' sin atribuir el nombre C3 a nada (verificado abriendo v1.1): NO HABIA NADA QUE SUSTITUIR en esta guia. Resuelto por verificacion (no requiere cambio)."
+    },
+    {
+      "id": "DOM-12",
+      "estado": "resuelto",
+      "evidencia": "checklist-legal.xlsx: 2 filas nuevas categoria Laboral (Registro diario de jornada RD-ley 8/2019 art.34.9 ET + Comunicacion de apertura RD 337/2010). Verificado: recuento_items checklist-legal.xlsx items_medidos=49 (antes 39)."
+    },
+    {
+      "id": "DOM-13",
+      "estado": "resuelto",
+      "evidencia": "SMI vigente (17094 EUR/ano, RD 126/2026) en celda verde de plantilla-turnos-brigada.xlsx con semaforo rojo ISNUMBER. Verificado en pycel: los 14/14 puestos con bruto>=17094 (min=17094.0 en Runner, exactamente el suelo)."
+    },
+    {
+      "id": "DOM-14",
+      "estado": "resuelto",
+      "evidencia": "checklist-appcc.xlsx fila 16 SUSTITUIDA con cita RD 1021/2022 art.8.1 (deroga RD 1420/2006) + alternativa -35C/15h; fila nueva 'Informacion al comensal'. Verificado grep normativa: 0 fallos (la unica mencion a '1420/2006' del producto lleva 'que derogo el')."
+    },
+    {
+      "id": "DOM-15",
+      "estado": "resuelto",
+      "evidencia": "Nota condicional de baja temperatura/vacio anadida a checklist-appcc.xlsx (adaptada: sin roner/envasadora en el equipamiento de esta guia). Verificado: recuento_items checklist-appcc.xlsx items_medidos=41 (antes 39, +2: informacion al comensal + nota DOM-15)."
+    },
+    {
+      "id": "DOM-16",
+      "estado": "resuelto",
+      "evidencia": "hoja 'Registro de jornada' anadida a plantilla-turnos-brigada.xlsx con alertas de <12h entre jornadas y >40h semanales. Verificado demo grupo_c.registro_jornada: aviso_menos_de_12h='Descanso inferior al minimo legal entre jornadas (art. 34.3 ET)', ok=true."
+    },
+    {
+      "id": "DOM-20",
+      "estado": "resuelto",
+      "evidencia": "Patron revisado en peruano especificamente (la SPEC invita a revisar el patron en los 7 hermanos, no a copiar el hallazgo del representante): peruano YA presupuestaba horno mixto y extraccion sobredimensionada (a diferencia del representante), pero le faltaba la extincion automatica en campana. checklist-equipamiento-cocina-peruana.xlsx: fila nueva 'Sistema automatico de extincion en campana' (2500 EUR). Verificado: items_medidos=35 (=anuncia)."
+    },
+    {
+      "id": "DOM-22",
+      "estado": "resuelto",
+      "evidencia": "hoja 'Financiacion' anadida a plan-financiero-3-anos.xlsx con cuadro frances (importe 420000, 8 anios, 6.0%, 1 anio carencia). Verificado en pycel del fichero real: Financiacion!B12 (cuota post-carencia)=6135.59, B13 (cuota carencia)=2100.0, D18(interes ano1)=25200.0."
+    },
+    {
+      "id": "DOM-23",
+      "estado": "resuelto",
+      "evidencia": "checklist-legal.xlsx: bloque 'Local' de 5 filas nuevas (arrendamiento, fianza, carencia, cesion/traspaso, condicion suspensiva). Verificado: incluido en el recuento items_medidos=49."
+    },
+    {
+      "id": "DOM-30",
+      "estado": "resuelto",
+      "evidencia": "Food cost objetivo deja de ser decorativo: extraido a celda verde y USADO por la formula del PVP (ver TEC-21)."
+    },
+    {
+      "id": "DOM-31",
+      "estado": "resuelto",
+      "evidencia": "NO APLICA a T6 -- protocolo de servicio (izquierda/derecha, orden de servicio) es contenido del manual-operaciones-peruano.docx, T7."
+    },
+    {
+      "id": "DOM-35",
+      "estado": "resuelto",
+      "evidencia": "checklist-marketing-preapertura.xlsx de esta guia NO menciona 'Resy' en ninguna de las 28 filas (verificado abriendo v1.1): no hay nada que sustituir en el xlsx. (El docx si menciona Resy en la seccion de tecnologia -- SS 373 -- pero es T7, fuera de alcance de T6). Resuelto por verificacion en el xlsx."
+    },
+    {
+      "id": "DOM-37",
+      "estado": "resuelto",
+      "evidencia": "Aplicado por el motor comun (grupo_a.py/grupo_b.py/grupo_c.py), identico mecanismo que representante/casual/mexicano para esta variante de fichero; cubierto por el dry-run TODO VERDE de peruano (exit 0, idempotencia 0, censo 0, data_only 0 fallos)."
+    },
+    {
+      "id": "DOM-38",
+      "estado": "resuelto",
+      "evidencia": "checklist-legal.xlsx: 2 filas nuevas (Registro retributivo RD 902/2020, Protocolo de acoso LO 3/2007), categoria Laboral; nota de remision en checklist-contratacion.xlsx (14 puestos, muy por debajo del umbral de 50, no se inventa fila de plan de igualdad). Verificado en el recuento y en CONTRATACION['notas']."
+    },
+    {
+      "id": "DOM-39",
+      "estado": "resuelto",
+      "evidencia": "checklist-diseno-sala-peruana.xlsx: 4 filas nuevas (limitador acustico, alumbrado emergencia, vestuario personal, certificacion aforo). Verificado: recuento_items items_medidos=36 (antes 32)."
+    },
+    {
+      "id": "DOM-40",
+      "estado": "resuelto",
+      "evidencia": "checklist-marketing-preapertura.xlsx fila 'Sesion fotografica profesional' SUSTITUIDA (400->1500 EUR, rango 1500-3000). Verificado en MARKETING['sustituciones'] y en el fichero escrito (busqueda de texto)."
+    },
+    {
+      "id": "COM-04",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-01/DOM-08 (mismo fichero, misma verificacion)."
+    },
+    {
+      "id": "COM-05",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-02/DOM-07 (mismo fichero, misma verificacion)."
+    },
+    {
+      "id": "COM-06",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-03/DOM-09 (mismo fichero, misma verificacion)."
+    },
+    {
+      "id": "COM-07",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-07/DOM-06 (mismo fichero, misma verificacion)."
+    },
+    {
+      "id": "COM-08",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-04/DOM-10 (mismo fichero, misma verificacion)."
+    },
+    {
+      "id": "COM-10",
+      "estado": "resuelto",
+      "evidencia": "Ver DOM-02 (mismo fichero, misma verificacion): coste de personal recalculado con SS al 33% en celda."
+    },
+    {
+      "id": "COM-14",
+      "estado": "resuelto",
+      "evidencia": "Ver DOM-03/TEC-21 (mismo fichero, misma verificacion): food cost en celda + PVP con y sin IVA."
+    },
+    {
+      "id": "COM-15",
+      "estado": "resuelto",
+      "evidencia": "Ver DOM-12/DOM-38 (mismo fichero, misma verificacion): checklist legal vigente con registro de jornada y retributivo."
+    },
+    {
+      "id": "COM-19",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-14 (mismo fichero, misma verificacion): el Gantt deja de estar en blanco (28 formulas, barra por CF)."
+    },
+    {
+      "id": "COM-20",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-11/DOM-16 (mismo fichero, misma verificacion): horas y coste del cuadrante + headcount (14 puestos, medido en tiempo de ejecucion)."
+    },
+    {
+      "id": "COM-28",
+      "estado": "resuelto",
+      "evidencia": "checklist-legal.xlsx item 9 y cronograma-apertura-gantt.xlsx fila 9 ya usan 'Licencia de actividad / declaracion responsable' sin atribuir C3 a nada (verificado abriendo v1.1 en los dos ficheros): NO HABIA NADA QUE CORREGIR en esta guia -- redaccion ya correcta en los dos sitios. Resuelto por verificacion (no requiere cambio)."
+    },
+    {
+      "id": "COM-30",
+      "estado": "resuelto",
+      "evidencia": "Ver DOM-01 (mismo fichero, misma verificacion): fondo de maniobra con un solo rotulo y una cifra calculada por formula."
+    },
+    {
+      "id": "COM-31",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-16 (mismo fichero, misma verificacion): los 6 checklists suman su presupuesto (fila TOTAL + subtotales, cuadra_subtotales=true en los 6)."
+    },
+    {
+      "id": "COM-32",
+      "estado": "resuelto",
+      "evidencia": "Ver TEC-26 (mismo fichero, misma verificacion): los dos CAPEX se reconcilian sin fusionar libros (columna de correspondencia)."
+    },
+    {
+      "id": "NUEVO-01",
+      "estado": "resuelto",
+      "evidencia": "plan-financiero-3-anos.xlsx!'P&L Mensual' (variante hermanos) recibe los totales que faltaban (N10/N13/N15/N29/N31/N32, con SUM horizontal + formulas verticales). Verificado en pycel del fichero real: 'P&L Mensual'!N10 (total ingresos) y encadenado hasta 'Proyeccion 3 Anos'!B13=594000.0 (coincide con Cash Flow total 12m)."
+    }
+  ],
+  "ids_no_aplican": [
+    {
+      "id": "TEC-05",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-08",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-09",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-10",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-13",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-18",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-19",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-20",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-22",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-24",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "TEC-27",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): TEC-27 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "DOM-05",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-17",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): DOM-17 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "DOM-18",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): DOM-18 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "DOM-19",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): DOM-19 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "DOM-21",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-24",
+      "motivo": "Fuera del alcance de T6: DOM-24 es una decision aparcada explicitamente por John (§7.3 de la SPEC) -- no se toca en ninguna tanda hasta que el decida."
+    },
+    {
+      "id": "DOM-25",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): DOM-25 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "DOM-26",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-27",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-28",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-29",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-32",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-33",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-34",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "DOM-36",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-01",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-01 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "COM-02",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-02 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "COM-03",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-03 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "COM-09",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-09 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "COM-11",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-11 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "COM-12",
+      "motivo": "Fuera del alcance de T6: COM-12 es una decision aparcada explicitamente por John (§7.3 de la SPEC) -- no se toca en ninguna tanda hasta que el decida."
+    },
+    {
+      "id": "COM-13",
+      "motivo": "Fuera del alcance de T6: COM-13 es una decision aparcada explicitamente por John (§7.3 de la SPEC) -- no se toca en ninguna tanda hasta que el decida."
+    },
+    {
+      "id": "COM-16",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-16 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "COM-17",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-18",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-21",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-22",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-23",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-24",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-24 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "COM-25",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-25 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "COM-26",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-27",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-27 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "COM-29",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-29 vive en §6 -- capa de producto (landing/dashboard/changelog/email de Astro), que se actualiza en T8 con las cifras YA medidas en T6/T7."
+    },
+    {
+      "id": "COM-33",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-34",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "COM-35",
+      "motivo": "Fuera del alcance de T6 (post-proceso de xlsx, grupos a/b/c): COM-35 vive en §5 -- documentos (guia-restaurante-peruano.pdf/.docx, business-plan-modelo.docx, manual-operaciones-peruano.docx), que se produce en T7 con bridge.py + guion_<pid>.py, no en este paquete de contenido."
+    },
+    {
+      "id": "COM-36",
+      "motivo": "Ambito REPRESENTANTE segun la tabla §8 de la SPEC (defecto verificado unicamente en guia-restaurante-gastronomico, no replicado por censo en los hermanos, §2.5). Verificado no aplica a peruano: sin equivalente medido en los ficheros de esta guia (censo propio T6)."
+    },
+    {
+      "id": "NUEVO-02",
+      "motivo": "Ambito PANADERIA (NUEVO-02: EBITDA=facturacion en plan-financiero-3-anos.xlsx!'P&L 3 anos', hoja exclusiva del molde de panaderia). guia-restaurante-peruano usa la variante 'hermanos' (3 hojas Pesimista/Realista/Optimista + P&L Mensual de plan-financiero), no la hoja 'P&L 3 anos' de panaderia: no aplica por estructura de fichero."
+    }
+  ]
+}
