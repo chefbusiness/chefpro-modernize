@@ -1429,7 +1429,18 @@ TILDES = {
     'espanol': 'español', 'espanola': 'española', 'espanoles': 'españoles',
     'analisis': 'análisis', 'constitucion': 'constitución',
     'tramite': 'trámite', 'tramites': 'trámites', 'diseno': 'diseño',
-    'disenos': 'diseños', 'nomina': 'nómina', 'nominas': 'nóminas',
+    'disenos': 'diseños',
+    # CRIT-05 — el diccionario tenía el sustantivo («diseño») pero no el
+    # OFICIO ni el VERBO, y el corpus los usa: «Disenador» en 8 celdas de 6
+    # ficheros, «Disenar identidad visual» en 2 y «Disena carta tapas» en 1.
+    # El gate de ortografía salía en 0 sobre un fichero que el cliente imprime
+    # con la errata delante.
+    'disenador': 'diseñador', 'disenadora': 'diseñadora',
+    'disenadores': 'diseñadores', 'disenadoras': 'diseñadoras',
+    'disenar': 'diseñar', 'disena': 'diseña', 'disenan': 'diseñan',
+    'disenado': 'diseñado', 'disenada': 'diseñada',
+    'disenados': 'diseñados', 'disenadas': 'diseñadas',
+    'nomina': 'nómina', 'nominas': 'nóminas',
     'amortizacion': 'amortización', 'comision': 'comisión',
     'comisiones': 'comisiones', 'gestoria': 'gestoría',
     'bolleria': 'bollería', 'cumpleanos': 'cumpleaños', 'danos': 'daños',
@@ -1559,7 +1570,23 @@ TILDES_EXTRA = {
     'consejeria': 'consejería', 'consejerias': 'consejerías',
     'codigo': 'código', 'codigos': 'códigos',
     'clausula': 'cláusula', 'clausulas': 'cláusulas',
+    # CRIT-05 — «crítico/crítica/críticos/críticas» llevan tilde SIEMPRE como
+    # adjetivo y como sustantivo («la crítica»). Estaban clasificados como
+    # homógrafos y el gate los perdonaba: cuatro erratas vivas en el checklist
+    # («Critico para SEO local», «Primeras 4 semanas criticas») y 14 más en
+    # los hermanos. Lo único sin tilde es el VERBO criticar («se critica el
+    # servicio»), que no aparece ni una vez en los 30 xlsx (censo del
+    # 2026-08-29) y que `RX_CRITICA_VERBO` protege igualmente.
+    'critico': 'crítico', 'critica': 'crítica',
+    'criticos': 'críticos', 'criticas': 'críticas',
 }
+#: Excepción documentada de `critica`/`criticas`: formas del verbo «criticar».
+#: Se reconocen por el clítico o el relativo que las precede («se critica»,
+#: «que critica», «lo critica», «la criticas»). Sin este guardián, acentuar
+#: siempre sería correcto en todo el corpus medido, pero convertiría un futuro
+#: «no se critica al proveedor» en «no se crítica al proveedor».
+RX_CRITICA_VERBO = re.compile(
+    r'(?i)\b(?:se|que|no|lo|la|le|les|me|te|nos|os)\s+criticas?\b')
 
 
 def _reponer_caso(original, corregido):
@@ -1589,11 +1616,19 @@ def corregir_texto(texto):
             fuera.append(trozo)
             continue
         bajo = norm(trozo)
+        # CRIT-05 — tramos donde «critica/criticas» es el VERBO criticar y por
+        # tanto NO lleva tilde. Se calculan sobre el trozo original porque
+        # `_sub` recibe posiciones de ese mismo trozo.
+        verbal = [(m.start(), m.end())
+                  for m in RX_CRITICA_VERBO.finditer(trozo)]
 
         def _sub(m):
             palabra = m.group(0)
             clave = norm(palabra)
             if clave.startswith('campana'):
+                return palabra
+            if clave in ('critica', 'criticas') \
+                    and any(a <= m.start() < b for a, b in verbal):
                 return palabra
             correcto = TILDES.get(clave) or TILDES_EXTRA.get(clave)
             if not correcto and not RX_YA_ACENTUADA.search(palabra):
@@ -2324,17 +2359,27 @@ RX_SIN_TILDE = re.compile(
 #: («Camara frigorifica», «Estanterias inox almacen», «Molinillo cafe»,
 #: «Pagina básica», «notaria»). Van en su propio patrón, sin distinguir
 #: mayúsculas, porque aparecen tanto en rótulo como en nota.
+#: CRIT-05 añade `critic[oa]s?` y la familia de «diseñ-»: las dos salían en
+#: verde con erratas vivas en el fichero que el cliente imprime. La lista de
+#: «diseñ-» se enumera (no `disen\w*`) para no inventar palabras.
 RX_SIN_TILDE_2 = re.compile(
     r'(?i)\b(camaras?|frigorific[oa]s?|estanterias?|almacen|cafes?|paginas?|'
-    r'notaria|busquedas?|consejerias?|codigos?|clausulas?)\b')
+    r'notaria|busquedas?|consejerias?|codigos?|clausulas?|critic[oa]s?|'
+    r'disen(?:o|os|ador|adora|adores|adoras|ar|a|an|ado|ada|ados|adas))\b')
 #: RC-20 — heurística de CONVIVENCIA: la palabra sin tilde que comparte forma
 #: normalizada con otra ACENTUADA del mismo libro. Es la que caza los casos
 #: que ninguna lista cerrada prevé («Pagina básica» tiene la tilde dos
 #: palabras más allá). Se excluyen los homógrafos legítimos del español, que
 #: son pares reales y no erratas.
+#: ⚠️ CRIT-05 — `critica`/`criticas` SALIERON de esta lista. No son homógrafos
+#: útiles aquí: como sustantivo y como adjetivo llevan tilde («la crítica»,
+#: «semanas críticas»), y lo único sin tilde es el verbo criticar, que
+#: `RX_CRITICA_VERBO` reconoce por su clítico. Mientras estuvieron aquí, el
+#: gate daba VERDE sobre «Primeras 4 semanas criticas» y «Critico para SEO
+#: local» en el fichero que el cliente imprime.
 HOMOGRAFAS = frozenset((
     'publica', 'publico', 'publicas', 'publicos', 'practica', 'practicas',
-    'critica', 'criticas', 'termino', 'terminos', 'continuo', 'continua',
+    'termino', 'terminos', 'continuo', 'continua',
     'medico', 'valido', 'calculo', 'calculos', 'trabajo', 'numero',
     'deposito', 'depositos', 'limite', 'limites', 'titulo', 'titulos',
     'transito', 'estimulo', 'domicilio', 'ejercito', 'liquido', 'liquidos',
@@ -2390,18 +2435,44 @@ def gate_ortografia(wb, fname):
                 if not isinstance(v, str) or v.startswith('='):
                     continue
                 limpio = RX_URL_MAIL.sub(' ', v)
-                m = RX_SIN_TILDE.search(limpio) or RX_SIN_TILDE_2.search(limpio)
-                if m:
-                    if norm(m.group(0)) == 'campana':
-                        continue
+                # CRIT-05 — tramos donde «critica/criticas» es el verbo
+                # criticar y NO lleva tilde. Se calculan una vez por celda y
+                # los usan las dos vías del gate (lista cerrada y convivencia).
+                verbal = [(mm.start(), mm.end())
+                          for mm in RX_CRITICA_VERBO.finditer(limpio)]
+
+                def _excusada(clave, ini, _verbal=verbal):
+                    # «campana extractora» convive a propósito con «Campaña
+                    # lanzamiento RRSS»: es la excepción que documenta §1.7
+                    if clave.startswith('campana'):
+                        return True
+                    return (clave in ('critica', 'criticas')
+                            and any(a <= ini < b for a, b in _verbal))
+
+                # ⚠️ antes se miraba SÓLO la primera coincidencia y, si era la
+                # campana extractora, se saltaba la celda entera: una errata
+                # posterior en el mismo texto se perdía sin avisar.
+                m = None
+                for rx in (RX_SIN_TILDE, RX_SIN_TILDE_2):
+                    for mm in rx.finditer(limpio):
+                        if _excusada(norm(mm.group(0)), mm.start()):
+                            continue
+                        m = mm
+                        break
+                    if m is not None:
+                        break
+                if m is not None:
                     fuera.append({'fichero': fname, 'hoja': ws.title,
                                   'celda': c.coordinate,
                                   'palabra': m.group(0), 'texto': v[:80]})
                     continue
                 # heurística de convivencia (RC-20)
-                for palabra in RX_PALABRA.findall(limpio):
+                for mp in RX_PALABRA.finditer(limpio):
+                    palabra = mp.group(0)
                     clave = norm(palabra)
                     if len(clave) < 5 or clave in HOMOGRAFAS:
+                        continue
+                    if _excusada(clave, mp.start()):
                         continue
                     # «campana extractora» convive a propósito con «Campaña
                     # lanzamiento RRSS» en el mismo libro: es la excepción

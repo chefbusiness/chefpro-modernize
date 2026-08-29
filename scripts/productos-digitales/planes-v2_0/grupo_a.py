@@ -327,12 +327,30 @@ AMORT_DEFECTO = {
                    r'grifo|freidora|cafetera|batidora|tostadora|mesa|silla|'
                    r'taburete|estanter|fregadero|vinoteca|terraza|'
                    r'sandwichera|expositor|comandero|software|utensilios',),
-    'no': (r'fianza|primer mes|inmobiliaria|stock|fondo de maniobra|'
+    # ⚠️ CRIT-02 — «Primera compra de despensa y cámaras» (6.500 €) y «Primera
+    # compra de bodega y barra» (5.500 €) casaban con `c[aá]mara` y con
+    # `barra` y se amortizaban a 10 años como si fueran maquinaria, inflando
+    # la amortización en 1.200 €/año. Son EXISTENCIAS: su bloque se titula
+    # «EXISTENCIAS INICIALES». Los hermanos las rotulan «Stock inicial …» y
+    # por eso `stock` bastaba; el representante no. `primera compra` y
+    # `existencias` van DELANTE porque `_clasificar_amortizable` prueba el
+    # grupo «no» antes que los otros dos.
+    'no': (r'fianza|primer mes|inmobiliaria|stock|existencias|primera compra|'
+           r'fondo de maniobra|'
            r'colch[oó]n|imprevisto|marketing|lanzamiento|campa[ñn]a '
            r'lanzamiento|web|'
            r'constituci|notar[ií]a|registro|gestor[ií]a|seguro|licencia de '
            r'actividad|permiso|tasa|iva|marca|dise[ñn]o',),
 }
+#: Segunda red, por BLOQUE: nada de lo que cuelgue de un bloque de circulante
+#: o de gasto es inmovilizado, se llame como se llame la partida. Cierra la
+#: clase entera del defecto CRIT-02 para los hermanos de T7/T8, donde los
+#: rótulos son otros. En el molde A-β (lista plana sin bloques) el nombre por
+#: defecto es «INVERSIÓN» y no casa, así que no cambia nada allí.
+RX_BLOQUE_NO_AMORT = re.compile(
+    r'existencias|stock|g[ée]nero|fondo de maniobra|circulante|tesorer[ií]a|'
+    r'marketing|lanzamiento|legales|constituci|gastos previos|'
+    r'gastos de apertura', re.I)
 # ⚠️ «campana extractora» convive con «Campaña lanzamiento RRSS» en el mismo
 # libro y la primera va SIN tilde: por eso la lista de «no amortizable» exige
 # la palabra «lanzamiento» detrás y la extractora se declara obra a mano. Es
@@ -1377,7 +1395,8 @@ class Plan(object):
                 clave = 'i_%d' % len(rej.filas)
                 primero = primero or clave
                 ultimo_item = clave
-                grupo = _clasificar_amortizable(rot, tablas)
+                grupo = ('no' if RX_BLOQUE_NO_AMORT.search(bloque or '')
+                         else _clasificar_amortizable(rot, tablas))
                 if grupo in amortiza:
                     amortiza[grupo].append(clave)
                 con_iva.append(clave)
@@ -2428,18 +2447,38 @@ class Plan(object):
                     + [('E', '="Cubiertos que tendría que sacar cada jornada '
                         'completa del cuadro de Personal. En el optimista '
                         'dice si hace falta contratar"')]))
+        # CRIT-06 — dos «saldo de caja al cierre del año 1» distintos en el
+        # mismo libro: el atajo de esta hoja (fondo de maniobra + neto +
+        # amortización − principal) daba 118.312,24 € y la tesorería cierra el
+        # mes 12 en 166.219,82 €, un 40 % más, porque el atajo NO ve el desfase
+        # de cobro/pago, la rampa de arranque ni la compensación del IVA de la
+        # inversión. La columna REALISTA —la única que reproduce el caso base
+        # del P&L— pasa a leer la tesorería, que es la cifra buena. Pesimista y
+        # optimista conservan el atajo: no tienen tesorería propia. La nota lo
+        # dice, porque es la cifra que el guion del docx cita (§4.2).
+        def _caja(col):
+            if col == 'C':
+                return (lambda R: '='
+                        + self.rej['tesoreria'].r(
+                            'saldo', get_column_letter(2 + 11)))
+            return (lambda R, c=col: '='
+                    + self.rej['inversion'].r('fondo') + '+'
+                    + R.c('neto', c) + '+' + pyg.r('cf_amort')
+                    + '-' + self.rej['financiacion'].r('cap_1'))
+
         rej.add('caja_cierre', rot='Saldo de caja al cierre del año 1',
                 fmt=motor.FMT_EUR0, bold=True,
                 formulas=dict(
-                    [(col, (lambda R, c=col: '='
-                            + self.rej['inversion'].r('fondo') + '+'
-                            + R.c('neto', c) + '+' + pyg.r('cf_amort')
-                            + '-' + self.rej['financiacion'].r('cap_1')))
-                     for col in cols]
-                    + [('E', '="Fondo de maniobra más el resultado del año, '
-                        'devolviendo la amortización (que no se paga) y '
-                        'restando el principal del préstamo. En rojo, el '
-                        'escenario se queda sin caja"')]))
+                    [(col, _caja(col)) for col in cols]
+                    + [('E', '="En «Realista» es el saldo REAL del mes 12 de '
+                        'la hoja de tesorería, con su desfase de cobros y '
+                        'pagos y su liquidación de IVA. En «Pesimista» y '
+                        '«Optimista» es un saldo estimado (sin efecto de '
+                        'cobros/pagos ni IVA) — ver Tesorería: fondo de '
+                        'maniobra más el resultado del año, devolviendo la '
+                        'amortización (que no se paga) y restando el '
+                        'principal del préstamo. En rojo, el escenario se '
+                        'queda sin caja"')]))
         motor.semaforo_num(rej.ws, rej.c('caja_cierre') + ':'
                            + rej.c('caja_cierre', 'D'),
                            verde_si=rej.c('caja_cierre') + '>0',
@@ -2763,11 +2802,23 @@ class Plan(object):
                     'cero')
         rej.add('iva_liq', rot='Pago del IVA (modelo 303)',
                 fmt=motor.FMT_EUR0, formulas=liq)
+        # CRIT-01 — el sumando del IVA va GUARDADO. `iva_liq` vale `""` en los
+        # meses sin liquidación (es su diseño: «los meses sin liquidación van
+        # en blanco, no a cero»), y en Excel `número + ""` es #¡VALOR!, que el
+        # `IFERROR` de la envoltura convertía en `""`. Resultado medido: los
+        # meses 4, 7 y 10 del FLUJO en blanco y, por cascada, NUEVE de los doce
+        # SALDOS ACUMULADOS —la fila que el propio libro anuncia como «la
+        # primera que mira un banco»— con el flujo de caja libre del año 1 un
+        # 23,8 % por debajo del real y el payback en 2,98 años en vez de 2,58.
+        # Ningún gate lo cazaba: `data_only` clasificaba las 12 celdas como
+        # «vacías por diseño». `SUM` sí ignora el texto; la suma con `+` no.
         rej.add('flujo', rot='FLUJO DEL MES', bold=True, fmt=motor.FMT_EUR0,
                 formulas=dict(
                     [(cols[i], (lambda R, c=cols[i]: '=SUM(' + R.c('cobros', c)
-                                + ':' + R.c('p_principal', c) + ')+'
-                                + R.c('iva_liq', c))) for i in range(12)]
+                                + ':' + R.c('p_principal', c) + ')+IF('
+                                + R.c('iva_liq', c) + '="",0,'
+                                + R.c('iva_liq', c) + ')'))
+                     for i in range(12)]
                     + [('N', suma_ano('flujo'))]))
         rej.add('saldo', rot='SALDO ACUMULADO DE CAJA', bold=True,
                 fmt=motor.FMT_EUR0,
