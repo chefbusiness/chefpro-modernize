@@ -1802,6 +1802,11 @@ def instruccion(wb, texto, rx=None):
 RX_INSTR_FUENTE = re.compile(r'^Fuente de cada cifra:')
 RX_INSTR_PROY = re.compile(r'^La pesta.a «Proyecci')
 RX_INSTR_FIN = re.compile(r'^La pesta.a «Financiaci')
+#: Aviso del crítico: `'Inversión'!D27` es un TOTAL que evalúa a `""` porque
+#: `D5:D26` están vacías —correcto por §1 («sin dato» se escribe `""`, nunca
+#: 0)—, pero una fila TOTAL en blanco al lado de otra con 1.668.340,88 € se lee
+#: como un error. La hoja lo dice ahora en Instrucciones.
+RX_INSTR_REAL = re.compile(r'^La columna «Real')
 
 
 def _columna_concepto(ws, fila_cab):
@@ -2009,7 +2014,9 @@ def plan_hermanos(wb, fname, cambios, contenido, subtitulo):
                       fila_cab=fila_cab_h)
     _diferencia_hermanos(ws_inv, fname, cambios)
     instruccion(wb, 'La pestaña «' + HOJA_PROY + '» ya existe: el Año 1 sale '
-                    'del P&L Mensual por referencia.', RX_INSTR_PROY)
+                    'del P&L Mensual por referencia, corregido por la rampa '
+                    'de arranque de sus dos celdas verdes; los años 2 y 3, '
+                    'del ritmo de crucero.', RX_INSTR_PROY)
     instruccion(wb, 'La pestaña «' + HOJA_FIN + '» calcula la cuota del '
                     'préstamo y su cuadro de amortización.', RX_INSTR_FIN)
     return 'inversion-categorias', f_tot
@@ -2098,6 +2105,25 @@ RX_PCT_INCRUSTADO = re.compile(r'^=\s*([A-Z]{1,2}\d{1,4})\s*\*\s*'
                                r'(0?\.\d+)\s*$')
 
 
+def _etiqueta_pct(texto):
+    """B-04 — la etiqueta del bloque de parámetros tiene que DECIR que es un
+    porcentaje, o el motor la reclasifica a euros en la 2.ª pasada.
+
+    Medido en panadería: `A28 = 'Coste materias primas (harinas +
+    ingredientes)'` contiene «Coste» y no contiene «(%)», así que
+    `motor.formato_por_etiqueta` la leía como importe y `B28/C28/D28` pasaban
+    de `0.0%` a `#,##0.00 €` — el 0,20 dejaba de leerse «20,0 %» y pasaba a
+    «0,20 €» en el libro que se lleva al banco. La 1.ª pasada aguantaba sólo
+    porque `_parametrizar_porcentajes` clava el formato con `fijar_formato`; en
+    la 2.ª ya no hay literal que extraer, la función sale por el `return 0` de
+    arriba y el pin no se vuelve a poner. Con el «(%)» al final la etiqueta se
+    defiende sola —en las dos pasadas y sin depender de ningún pin— y la DV
+    tampoco se parte en dos grupos.
+    """
+    t = str(texto).strip()
+    return t if motor.RX_PCT.search(t) else (t + ' (%)')
+
+
 def _parametrizar_porcentajes(ws, cols, fname, cambios):
     """Convención de familia: **parámetro en celda, nunca literal dentro de la
     fórmula** (§1 «Convenciones», §1.5).
@@ -2130,7 +2156,8 @@ def _parametrizar_porcentajes(ws, cols, fname, cambios):
     for i, r in enumerate(sorted(filas)):
         destino = base + 1 + i
         motor.val(ws, 'A' + str(destino),
-                  str(ws['A' + str(r)].value or ('Fila ' + str(r))))
+                  _etiqueta_pct(ws['A' + str(r)].value
+                                or ('Fila ' + str(r))))
         for col, (ref, pct) in filas[r].items():
             motor.val(ws, col + str(destino), pct, fmt=FMT_PCT, verde_=True)
             motor.fijar_formato(ws, col + str(destino), FMT_PCT)
