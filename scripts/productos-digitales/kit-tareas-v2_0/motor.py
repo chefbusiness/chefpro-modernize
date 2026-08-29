@@ -55,6 +55,25 @@ from openpyxl.worksheet.page import PageMargins
 # ==========================================================================
 VERDE = 'E8F5E9'        # celda editable (la FAQ de la landing lo promete así)
 VERDE_OK = 'C8E6C9'     # fila completada (formato condicional)
+#: CB-E9 (d) — el mismo verde, un tono más marcado, para la sub-familia CB.
+#: `C8E6C9` y el `E8F5E9` de las celdas editables se distinguen mal impresos en
+#: gris, justo en las columnas «Zona» y «Responsable», que van verdes: la fila
+#: completada no se ve. **NO se cambia el de la familia**: el CF no entra en la
+#: comparación de `regresion.py`, así que un cambio global habría repintado los
+#: 11 kits publicados sin que el gate bloqueante lo cantase. Queda escrito en
+#: el informe como decisión para el orquestador.
+VERDE_OK_CB = 'A5D6A7'
+#: CB-E9 (a/b) — presupuesto de ancho de una fila en A4 apaisado con
+#: `fitToWidth = 1`, en unidades de columna de Excel, y tope de la columna de
+#: texto. El molde ▸ de CB mide 5+48+14+20+13+12+16 = 128, así que caben 12
+#: unidades más sin salirse.
+ANCHO_A4 = 140
+ANCHO_TAREA_CB = 60
+
+
+def verde_ok():
+    """CB-E9 (d) — color de la fila completada del kit en curso."""
+    return VERDE_OK_CB if sub_cb() else VERDE_OK
 SECCION = 'E3F2FD'      # banda de sección (TEC-15: el verde ya NO va aquí)
 AMBAR = 'FFF3CD'        # aviso de descuadre
 GRIS = 'F5F5F5'
@@ -791,6 +810,225 @@ def fila_calendario(ws):
     return None
 
 
+#: CB-E3 — vocabulario del molde REGISTRO. Un registro APPCC no es un
+#: checklist: no tiene columna «Tarea» ni marca de completada, tiene una fila
+#: por LOTE o por EQUIPO con fechas, temperaturas, lotes y firmas.
+RX_REG_CAMPO = re.compile(
+    r'(?i)^(fecha|temp|caducidad|firma|verif|lote|especie|proveedor|equipo|'
+    r'inicio|fin)')
+RX_REG_FECHA = re.compile(
+    r'(?i)^(fecha|caducidad|inicio|fin|entrada|salida|compra)')
+RX_REG_TEMP = re.compile(r'(?i)(temp|°\s*c)')
+RX_REG_VERIF = re.compile(r'(?i)^verif')
+DIAS_SEMANA = ('lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado',
+               'domingo')
+
+
+def fila_registro_appcc(ws):
+    """CB-E3 — (fila, {rótulo: columna}) de un REGISTRO APPCC, o (None, None).
+
+    Firma estructural, medida sobre las tres hojas de
+    `kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx` y sobre
+    `kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx`:
+    «#»/«Nº» en la columna A, cinco rótulos o más, **ninguna columna «Tarea»**
+    (eso sería el molde ▸ o el P4) y al menos un campo de registro — o siete
+    días de la semana, que es como `'Temperaturas Diario'` monta su rejilla.
+
+    Se excluye a propósito lo que lleva «Antelación»: son los BONUS-02 de
+    catering y de hotel («# | Fecha / Período | Impacto | Preparación F&B |
+    Antelación | Notas»), calendarios de dos kits LIVE que casarían con todo lo
+    demás. Sin esa exclusión, el gate de regresión de hotel se habría puesto
+    rojo en la primera pasada.
+    """
+    for r in range(2, 9):
+        if ws.cell(row=r, column=1).value not in ('#', 'Nº'):
+            continue
+        cols = {}
+        for c in range(1, ws.max_column + 1):
+            v = ws.cell(row=r, column=c).value
+            if isinstance(v, str) and v.strip():
+                cols[v.strip()] = c
+        if len(cols) < 5:
+            continue
+        rot = [_sin_tildes(k) for k in cols]
+        if 'tarea' in rot or 'antelacion' in rot:
+            continue
+        dias = sum(1 for d in DIAS_SEMANA if d in rot)
+        if not (any(RX_REG_CAMPO.match(k) for k in cols) or dias >= 5):
+            continue
+        # tiene que haber cuerpo: al menos dos filas numeradas debajo
+        n = sum(1 for rr in range(r + 1, ws.max_row + 1)
+                if isinstance(ws.cell(row=rr, column=1).value, int))
+        if n < 2:
+            continue
+        return r, cols
+    return None, None
+
+
+#: Rangos de temperatura escritos DENTRO del rótulo de la fila. Se leen del
+#: propio texto —«(−2 a 0 °C)», «(2-4 °C)», «(−20 °C o menos)»— porque el
+#: límite es del EQUIPO, no del kit: cada fila declara el suyo. La coherencia
+#: entre ficheros (gate `limite_unico`, §7-bis.23) la arregla el módulo de
+#: contenido ANTES; aquí sólo se pinta lo que la fila ya dice.
+RX_RANGO = re.compile(
+    r'(?<![\d])([−\-]?\d+(?:[.,]\d+)?)\s*(?:°\s*C)?\s*(?:a|y|hasta|/)\s*'
+    r'([−\-]?\d+(?:[.,]\d+)?)\s*°\s*C')
+RX_RANGO_GUION = re.compile(
+    r'(?<![\d\-−])(\d+(?:[.,]\d+)?)\s*-\s*(\d+(?:[.,]\d+)?)\s*°\s*C')
+RX_TOPE = re.compile(
+    r'([−\-]?\d+(?:[.,]\d+)?)\s*°\s*C\s*(o\s+menos|o\s+inferior|m[aá]ximo)')
+RX_SUELO = re.compile(
+    r'([−\-]?\d+(?:[.,]\d+)?)\s*°\s*C\s*(o\s+m[aá]s|o\s+superior|m[ií]nimo)')
+
+
+def _num(v):
+    return float(v.replace('−', '-').replace(',', '.'))
+
+
+def rango_de_texto(v):
+    """(min, max) de temperatura declarados en el texto, o None. min/max pueden
+    ser None cuando el texto sólo fija un tope o un suelo."""
+    if not isinstance(v, str):
+        return None
+    m = RX_RANGO.search(v) or RX_RANGO_GUION.search(v)
+    if m:
+        a, b = _num(m.group(1)), _num(m.group(2))
+        return (min(a, b), max(a, b))
+    m = RX_TOPE.search(v)
+    if m:
+        return (None, _num(m.group(1)))
+    m = RX_SUELO.search(v)
+    if m:
+        return (_num(m.group(1)), None)
+    return None
+
+
+def registro_appcc(ws, cambios):
+    """CB-E3 — formatos, desplegable, CF de rango y alturas de un REGISTRO.
+
+    Cierra TEC-07 (fechas sin formato), TEC-08 (columna de verificación sin
+    desplegable) y TEC-19 (`row_dimensions` vacío: la cabecera de nueve
+    columnas se imprimía en una línea recortada). Devuelve el cuerpo
+    (primera, última) para que `proteger` lo desbloquee.
+    """
+    hr, cols = fila_registro_appcc(ws)
+    if hr is None:
+        return None
+    ncol = max(cols.values())
+    ultima = hr
+    for r in range(hr + 1, ws.max_row + 1):
+        if isinstance(ws.cell(row=r, column=1).value, int):
+            ultima = r
+    if ultima <= hr:
+        return None
+
+    rot = {c: k for k, c in cols.items()}
+    dias = sum(1 for d in DIAS_SEMANA if d in [_sin_tildes(k) for k in cols])
+    col_etiqueta = 2 if 2 in rot else None
+    # La rejilla semanal («# | Equipo / Cámara | Lunes … Domingo») no dice
+    # «Temp» en ninguna cabecera: lo que lleva la temperatura son los días.
+    temp_por_dias = dias >= 5 and col_etiqueta is not None
+
+    fechas = tempes = verif = 0
+    ws.data_validations.dataValidation = [
+        dv for dv in ws.data_validations.dataValidation if dv.type != 'list']
+    dv_marca = None
+    for c in range(1, ncol + 1):
+        etq = rot.get(c, '')
+        es_temp = bool(RX_REG_TEMP.search(etq)) or (
+            temp_por_dias and _sin_tildes(etq) in DIAS_SEMANA)
+        for r in range(hr + 1, ultima + 1):
+            cel = ws.cell(row=r, column=c)
+            if c == 1:
+                continue
+            _verde(cel)
+            if RX_REG_FECHA.match(etq):
+                cel.number_format = 'DD/MM/YYYY'
+            elif es_temp:
+                cel.number_format = '0.0 "°C"'
+        if RX_REG_FECHA.match(etq):
+            fechas += 1
+        elif es_temp:
+            tempes += 1
+        if RX_REG_VERIF.match(etq):
+            if dv_marca is None:
+                dv_marca = DataValidation(
+                    type='list', formula1=DV_LISTA, allow_blank=True,
+                    showErrorMessage=True, errorStyle='stop',
+                    errorTitle=DV_ERROR_TIT, error=DV_ERROR)
+                ws.add_data_validation(dv_marca)
+            letra = get_column_letter(c)
+            dv_marca.add(f'{letra}{hr + 1}:{letra}{ultima}')
+            verif += 1
+
+    # --- CF de fuera de rango, fila a fila y con el límite que la fila dice --
+    ws.conditional_formatting = ConditionalFormattingList()
+    rojo = PatternFill('solid', start_color=ROJO, end_color=ROJO)
+    reglas = sin_rango = 0
+    if temp_por_dias:
+        cdias = sorted(c for c, k in rot.items()
+                       if _sin_tildes(k) in DIAS_SEMANA)
+        if cdias:
+            ini, fin = get_column_letter(cdias[0]), get_column_letter(cdias[-1])
+            for r in range(hr + 1, ultima + 1):
+                rango = rango_de_texto(ws.cell(row=r, column=col_etiqueta)
+                                       .value)
+                if not rango:
+                    sin_rango += 1
+                    continue
+                lo, hi = rango
+                ref = f'{ini}{r}:{fin}{r}'
+                if lo is not None and hi is not None:
+                    ws.conditional_formatting.add(
+                        ref, CellIsRule(operator='notBetween',
+                                        formula=[str(lo), str(hi)], fill=rojo))
+                elif hi is not None:
+                    ws.conditional_formatting.add(
+                        ref, CellIsRule(operator='greaterThan',
+                                        formula=[str(hi)], fill=rojo))
+                else:
+                    ws.conditional_formatting.add(
+                        ref, CellIsRule(operator='lessThan',
+                                        formula=[str(lo)], fill=rojo))
+                reglas += 1
+
+    # --- TEC-19: la cabecera con wrap y alto explícito ---------------------
+    for c in range(1, ncol + 1):
+        cel = ws.cell(row=hr, column=c)
+        cel.alignment = Alignment(wrap_text=True, vertical='center',
+                                  horizontal=cel.alignment.horizontal
+                                  or 'center')
+    largo = max((len(str(rot.get(c, ''))) for c in range(1, ncol + 1)),
+                default=0)
+    ancho = min(ws.column_dimensions[get_column_letter(c)].width or 8.43
+                for c in range(2, ncol + 1))
+    ws.row_dimensions[hr].height = max(30, 15 * (int(largo / max(ancho, 6)) + 1))
+
+    # --- CB-E9 (b): la columna del EQUIPO, ancha de verdad -----------------
+    if col_etiqueta:
+        letra = get_column_letter(col_etiqueta)
+        necesario = max((len(str(ws.cell(row=r, column=col_etiqueta).value))
+                         for r in range(hr + 1, ultima + 1)
+                         if isinstance(ws.cell(row=r, column=col_etiqueta)
+                                       .value, str)), default=0)
+        actual = ws.column_dimensions[letra].width or 8.43
+        tope = min(ANCHO_TAREA_CB, actual + (ANCHO_A4 - ancho_util(ws)))
+        if necesario > actual and tope > actual:
+            ws.column_dimensions[letra].width = round(min(necesario + 2, tope))
+            cambios.append(
+                f'CB-E9 «{ws.title}»: columna {letra} de {actual:g} a '
+                f'{ws.column_dimensions[letra].width:g} (el rótulo más largo '
+                f'mide {necesario} caracteres)')
+
+    cambios.append(
+        f'CB-E3 «{ws.title}»: registro APPCC normalizado ({fechas} columnas de '
+        f'fecha DD/MM/YYYY, {tempes} de temperatura 0,0 °C, {verif} con '
+        f'desplegable, {reglas} reglas de fuera-de-rango'
+        + (f', {sin_rango} filas sin límite legible en su rótulo' if sin_rango
+           else '') + ')')
+    return (hr + 1, ultima)
+
+
 def ncol_cabecera(ws, hr):
     """Última columna con rótulo en la fila de cabecera `hr`."""
     n = 0
@@ -830,6 +1068,11 @@ def hojas_reconocidas(wb):
             fuera[ws.title] = 'calendario'
         elif es_briefing(ws):
             fuera[ws.title] = 'briefing'
+        # CB-E3 — el molde REGISTRO va el ÚLTIMO de la cadena a propósito:
+        # así ninguna hoja que el motor ya sabía tratar puede cambiar de tipo
+        # por su culpa, y la extensión sólo puede AÑADIR alcance.
+        elif sub_cb() and fila_registro_appcc(ws)[0]:
+            fuera[ws.title] = 'registro_appcc'
     return fuera
 
 
@@ -1282,11 +1525,29 @@ def _tiene(wb, detector):
     return any(detector(ws) for ws in wb.worksheets)
 
 
+#: CB-E1 (efecto colateral obligatorio) — los rótulos del molde se comparan SIN
+#: TILDE. `ortografia()` corre al final de la pasada y reescribe la cabecera:
+#: con una comparación literal, la 1.ª pasada no vería la columna de tiempo de
+#: sushi-bar («Hora Limite») y la 2.ª —ya corregida— sí, con cabecera y
+#: subtítulo reescritos y la columna pintada de verde SÓLO en la segunda. El
+#: gate de idempotencia se pondría rojo sin que nada estuviera roto. En los 13
+#: kits de la familia, que ya escriben las tildes, esto no cambia nada:
+#: verificado con `regresion.py` sobre cafetería y hotel (0 diferencias).
+def _rotulo(nombre, candidatos):
+    """Devuelve la clave de `candidatos` que es `nombre` salvo tildes, o None."""
+    objetivo = _sin_tildes(nombre)
+    for clave in candidatos:
+        if _sin_tildes(clave) == objetivo:
+            return clave
+    return None
+
+
 def _col_tiempo(cols):
     for nombre in ('Hora Límite', 'Hora', 'Día', 'Cadencia', 'Antelación',
                    'Cuándo'):
-        if nombre in cols:
-            return cols[nombre]
+        clave = _rotulo(nombre, cols)
+        if clave is not None:
+            return cols[clave]
     return None
 
 
@@ -1301,6 +1562,53 @@ def _sumar_minutos(hhmm, minutos):
 # ==========================================================================
 EDITABLES = {'Responsable', 'Zona', 'Puesto', 'Hora Límite', 'Hora', 'Día',
              'Cadencia', 'Antelación', 'Cuándo', CAB_MARCA, 'Firma', 'Notas'}
+
+
+def crear_contador(ws, fname, cambios):
+    """CB-E2 — crea la fila de totales en la hoja de checklist que no la tiene.
+
+    `geometria` devuelve geometría válida y `contador = None` en
+    `09-plantilla-personalizable.xlsx:'Plantilla en Blanco'` de sushi-bar y de
+    asador: la hoja tiene cabecera, 15 filas numeradas y un pie «Verificado
+    por:», pero ninguna fila de totales. El motor sólo REESCRIBE contadores, no
+    los crea, así que la hoja entraba en alcance con 0 fórmulas mientras sus
+    «Instrucciones» estrenaban los bloques «Cómo cuenta el contador» y «Filas
+    libres»: tres bloques prometiendo lo que la hoja no hace (§0.2 defecto 3).
+
+    Se limita a escribir el RÓTULO en una fila nueva; el resto lo hace la
+    maquinaria de siempre, porque a partir de ahí `geometria` ya encuentra el
+    contador: `normalizar_checklist` mete las 5 filas libres dentro del rango y
+    `_contador` escribe el COUNTIFS y el denominador honesto. Escribir aquí las
+    fórmulas duplicaría ese código y las dos copias podrían divergir.
+
+    NO se aplica al fichero de NEGOCIO ni al de CAJA, y no es una precaución
+    teórica: `kit-tareas-pasteleria` —un kit LIVE— tiene exactamente esta firma
+    en `09-apertura-cierre-caja.xlsx:'Apertura de Caja'` y `'Cierre de Caja'`,
+    donde el total no es un recuento de tareas sino el Resumen de Cierre del
+    arqueo. Crearles un contador habría cambiado un producto publicado.
+    """
+    if fname in (CTX.get('f_caja'), CTX.get('f_negocio')):
+        return False
+    g = geometria(ws)
+    if not g or g['contador'] is not None:
+        return False
+    ncol = max(ws.max_column, max(g['cols'].values()))
+    # última fila ESCRITA del cuerpo (no la última numerada): si hubiera una
+    # banda de sección por debajo, el contador tiene que ir detrás de ella.
+    cuerpo_fin = g['ultima']
+    for r in range(g['ultima'] + 1, ws.max_row + 1):
+        if any(ws.cell(row=r, column=c).value is not None
+               for c in range(1, ncol + 1)):
+            break
+        cuerpo_fin = r
+    fila = g['ultima'] + 2                 # una fila en blanco de separación
+    insertar_filas(ws, fila, 1)
+    cel = ws.cell(row=fila, column=1, value=ETIQ_CONTADOR)
+    cel._style = copy.copy(ws.cell(row=g['hr'], column=1)._style)
+    cambios.append(f'CB-E2 «{ws.title}»: fila de totales CREADA (la hoja '
+                   'entraba en alcance sin contador y sus Instrucciones ya '
+                   'explicaban uno)')
+    return True
 
 
 def normalizar_checklist(ws, cambios):
@@ -1359,7 +1667,10 @@ def normalizar_checklist(ws, cambios):
         if not isinstance(ws.cell(row=r, column=1).value, int):
             continue
         for nombre, c in g['cols'].items():
-            if nombre in EDITABLES:
+            # CB-E1: sin tildes. «Hora Limite» de sushi-bar y asador NO estaba
+            # en EDITABLES y su columna se publicaba en blanco mientras las
+            # Instrucciones prometían «las celdas verdes son editables».
+            if _sin_tildes(nombre) in {_sin_tildes(e) for e in EDITABLES}:
                 _verde(ws.cell(row=r, column=c))
 
     # --- validación de datos ---------------------------------------------
@@ -1377,11 +1688,12 @@ def normalizar_checklist(ws, cambios):
             dv.add(ws.cell(row=r, column=marca))
 
     # --- formato condicional: fila verde al marcar ✓ ----------------------
+    _ok = verde_ok()
     ws.conditional_formatting.add(
         f'A{hr + 1}:{get_column_letter(ncol)}{fin}',
         FormulaRule(formula=[f'${letra}{hr + 1}="{MARCA_OK}"'],
-                    fill=PatternFill('solid', start_color=VERDE_OK,
-                                     end_color=VERDE_OK)))
+                    fill=PatternFill('solid', start_color=_ok,
+                                     end_color=_ok)))
 
     # --- contador honesto (§2.1) ------------------------------------------
     if contador:
@@ -1441,6 +1753,59 @@ def autoaltos(ws, cambios):
     if n:
         cambios.append(f'«{ws.title}»: {n} filas sin altura fija (el texto no '
                        'cabía y se imprimía recortado)')
+
+
+def legibilidad_tareas(ws, cambios):
+    """CB-E9 (a) — el texto de la tarea, legible impreso: `wrap_text` y ancho.
+
+    Los siete kits de CB traen la columna «Tarea» a 48 unidades y SIN
+    `wrap_text` en ninguna celda: 107 tareas de sushi-bar y 129 de asador miden
+    más de 48 caracteres, así que o invaden la columna «Zona» (si está vacía) o
+    se cortan (si no lo está). Se arregla con las dos cosas a la vez: se
+    envuelve el texto —que es lo que la familia ▸ ya hace: cafetería trae
+    `wrap_text` en las 446 celdas equivalentes— y se ensancha la columna con lo
+    que sobre del presupuesto de A4 apaisado, hasta `ANCHO_TAREA_CB`.
+
+    La altura se deja en `None` a propósito (Excel autoajusta al abrir): es la
+    misma decisión que documenta `autoalto`, y una altura fija de 24 pt con
+    `wrap_text` enseña ~1,6 líneas de 10 pt, o sea recorta por el final.
+
+    Sólo corre en la sub-familia CB. La firma del defecto es IDÉNTICA en cuatro
+    kits LIVE —cafetería (446 celdas), pizzería (319), hamburguesería (292) y
+    dark-kitchen (275)—, así que una versión sin `sub_cb()` habría reescrito
+    cuatro productos publicados que §7-bis.24 congela.
+    """
+    if not sub_cb():
+        return
+    g = geometria(ws)
+    if not g:
+        return
+    n = 0
+    for r in range(g['hr'] + 1, (g['contador'] or ws.max_row) + 1):
+        if es_fila_seccion(ws, r):
+            continue
+        cel = ws.cell(row=r, column=2)
+        if cel.alignment and cel.alignment.wrap_text:
+            continue
+        a = cel.alignment
+        cel.alignment = Alignment(wrap_text=True, vertical='top',
+                                  horizontal=a.horizontal if a else None,
+                                  indent=a.indent if a else 0)
+        n += 1
+    letra = get_column_letter(2)
+    actual = ws.column_dimensions[letra].width or 8.43
+    margen = ANCHO_A4 - ancho_util(ws)
+    nuevo = min(ANCHO_TAREA_CB, actual + max(margen, 0))
+    if nuevo > actual + 0.5:
+        ws.column_dimensions[letra].width = round(nuevo)
+        cambios.append(f'CB-E9 «{ws.title}»: columna «Tarea» de {actual:g} a '
+                       f'{ws.column_dimensions[letra].width:g} unidades '
+                       f'(la fila cabe en A4 apaisado: '
+                       f'{ancho_util(ws):.0f} ≤ {ANCHO_A4})')
+    if n:
+        cambios.append(f'CB-E9 «{ws.title}»: {n} celdas de tarea con ajuste de '
+                       'texto (el texto largo se imprimía cortado o pisando '
+                       '«Zona»)')
 
 
 def _es_color(cel, color):
@@ -2017,12 +2382,13 @@ def _cf_p4(ws, g):
     lo, hi = g['hr'] + 1, g['contador'] - 1
     if hi < lo:
         return
+    _ok = verde_ok()
     ws.conditional_formatting.add(
         f'A{lo}:{get_column_letter(g["ncol"])}{hi}',
         FormulaRule(formula=[f'${get_column_letter(g["marca"])}{lo}'
                              f'="{MARCA_OK}"'],
-                    fill=PatternFill('solid', start_color=VERDE_OK,
-                                     end_color=VERDE_OK)))
+                    fill=PatternFill('solid', start_color=_ok,
+                                     end_color=_ok)))
 
 
 def _dv_p4(ws, cambios):
@@ -3474,6 +3840,364 @@ def set_metadata(wb, fname, cambios):
         cambios.append(
             'metadata: title «{}» · subject «{}» · keywords «{}»'.format(
                 p.title, p.subject, p.keywords))
+
+
+
+# ==========================================================================
+# CB-E1 · ORTOGRAFÍA — tildes y ñ (sub-familia ChefBusiness)
+# ==========================================================================
+#: Los siete kits portados de ChefBusiness. Es una DECLARACIÓN explícita, no
+#: una heurística, y el motivo está medido: después de CB-E1 no queda ninguna
+#: firma estructural que los separe de la familia ▸ (misma cabecera de siete
+#: columnas, mismos rótulos; lo único que hoy los distingue —«Hora Limite» sin
+#: tilde— es justamente lo que este paso corrige, así que una detección por esa
+#: vía dejaría de funcionar en la 2.ª pasada). Y el precio de equivocarse es
+#: alto: `motor.py` sostiene 11 kits en producción y CB-E9 (anchos, wrap, verde
+#: del CF) tiene la MISMA firma de defecto en cafetería (446 celdas de tarea sin
+#: `wrap_text`), en pizzería (319), en hamburguesería (292) y en dark-kitchen
+#: (275) — kits ya publicados que §7-bis.24 congela. Sin esta lista, «arreglar
+#: la legibilidad» habría reescrito cuatro productos que nadie ha pedido tocar.
+SUBFAMILIA_CB = frozenset((
+    'kit-tareas-sushi-bar', 'kit-tareas-asador', 'kit-tareas-marisqueria',
+    'kit-tareas-panaderia', 'kit-tareas-food-truck', 'kit-tareas-tapas-bar',
+    'kit-tareas-chef-privado'))
+
+
+def sub_cb():
+    """¿El producto en curso es de la sub-familia ChefBusiness? (CB-E1/E9)"""
+    return CTX.get('producto') in SUBFAMILIA_CB
+
+
+#: Diccionario EXPLÍCITO de lemas mal escritos → forma correcta, en minúsculas.
+#: No es heurística: cada entrada se ha derivado del propio corpus (la misma
+#: palabra escrita con y sin tilde dentro de los 20 kits de `dl/`, medido el
+#: 2026-08-29) y se ha filtrado a mano. Fuera quedan, a propósito:
+#:  · los homógrafos donde la forma SIN tilde también es palabra («el/él»,
+#:    «esta/está», «mas/más», «solo/sólo», «como/cómo», «si/sí», «tu/tú»,
+#:    «te/té», «uso/usó», «paso/pasó», «cambio/cambió», «quien/quién»,
+#:    «donde/dónde», «critico/crítico», «perdida/pérdida», «publico/público»);
+#:  · «carnes» (que NO es «carnés»), «min»/«max» (abreviaturas legítimas),
+#:    «periodo» (variante válida) y «celiaco» (variante válida en el DLE);
+#:  · **«campana»/«campanas»**, que en hostelería es la CAMPANA extractora y
+#:    está bien escrita: el gemelo «campaña» del corpus es de otro contexto.
+#:    Traducirla habría escrito «campaña extractora» en `kit-tareas-hotel`
+#:    (`13-mantenimiento.xlsx:'Mensual'!B6`), un kit LIVE.
+#: Las ambigüedades no se resuelven aquí: el gate las EMITE para que el módulo
+#: de contenido de cada kit las decida celda a celda (§1.2 CB-E1).
+LEX_TILDES = {
+        'accion': 'acción', 'acompanamiento': 'acompañamiento',
+        'acompanar': 'acompañar', 'ademas': 'además',
+        'administracion': 'administración', 'albaran': 'albarán',
+        'alergeno': 'alérgeno', 'alergenos': 'alérgenos',
+        'alimentacion': 'alimentación', 'almacen': 'almacén', 'anade': 'añade',
+        'anadido': 'añadido', 'anadir': 'añadir', 'analisis': 'análisis',
+        'angulo': 'ángulo', 'ano': 'año', 'anos': 'años',
+        'antelacion': 'antelación', 'aqui': 'aquí', 'area': 'área',
+        'articulo': 'artículo', 'atencion': 'atención', 'atun': 'atún',
+        'auditoria': 'auditoría', 'autonoma': 'autónoma', 'azucar': 'azúcar',
+        'bano': 'baño', 'banos': 'baños', 'bascula': 'báscula',
+        'basculas': 'básculas', 'basica': 'básica', 'bolleria': 'bollería',
+        'boqueron': 'boquerón', 'cafeteria': 'cafetería', 'cajon': 'cajón',
+        'calabacin': 'calabacín', 'calefaccion': 'calefacción',
+        'calibracion': 'calibración', 'camara': 'cámara', 'camaras': 'cámaras',
+        'canapes': 'canapés', 'castanas': 'castañas', 'categoria': 'categoría',
+        'categorias': 'categorías', 'champan': 'champán',
+        'chocolateria': 'chocolatería', 'circulacion': 'circulación',
+        'coccion': 'cocción', 'cocteleria': 'coctelería',
+        'companeros': 'compañeros', 'congelacion': 'congelación',
+        'consultoria': 'consultoría', 'corazon': 'corazón',
+        'cristaleria': 'cristalería', 'crustaceos': 'crustáceos',
+        'cuberteria': 'cubertería', 'datafono': 'datáfono',
+        'decision': 'decisión', 'decoracion': 'decoración',
+        'degustacion': 'degustación', 'deposito': 'depósito',
+        'desague': 'desagüe', 'desagues': 'desagües',
+        'descongelacion': 'descongelación', 'desempeno': 'desempeño',
+        'desinfeccion': 'desinfección', 'despues': 'después', 'dia': 'día',
+        'dias': 'días', 'direccion': 'dirección', 'disenado': 'diseñado',
+        'disenar': 'diseñar', 'diseno': 'diseño',
+        'documentacion': 'documentación', 'donacion': 'donación',
+        'duracion': 'duración', 'ejecucion': 'ejecución',
+        'elaboracion': 'elaboración', 'electrica': 'eléctrica',
+        'espana': 'españa', 'espanol': 'español', 'espanola': 'española',
+        'esparragos': 'espárragos', 'espatula': 'espátula',
+        'espatulas': 'espátulas', 'especifica': 'específica',
+        'especificas': 'específicas', 'especifico': 'específico',
+        'especificos': 'específicos', 'estacion': 'estación', 'estan': 'están',
+        'estandar': 'estándar', 'estandares': 'estándares',
+        'evacuacion': 'evacuación', 'evaluacion': 'evaluación',
+        'exposicion': 'exposición', 'extraccion': 'extracción',
+        'facturacion': 'facturación', 'fermentacion': 'fermentación',
+        'fidelizacion': 'fidelización', 'formacion': 'formación',
+        'frias': 'frías', 'frigorificas': 'frigoríficas', 'frio': 'frío',
+        'frios': 'fríos', 'futbol': 'fútbol', 'gastronomica': 'gastronómica',
+        'gastronomicas': 'gastronómicas', 'gastronomicos': 'gastronómicos',
+        'gestion': 'gestión', 'hamburgueseria': 'hamburguesería',
+        'heladeria': 'heladería', 'hermetico': 'hermético',
+        'higienico': 'higiénico', 'higienicos': 'higiénicos', 'hollin': 'hollín',
+        'hosteleria': 'hostelería', 'humedo': 'húmedo',
+        'iluminacion': 'iluminación', 'informacion': 'información',
+        'inspeccion': 'inspección', 'jabon': 'jabón', 'jamon': 'jamón',
+        'lacteos': 'lácteos', 'laminas': 'láminas', 'lena': 'leña',
+        'limite': 'límite', 'limites': 'límites', 'limon': 'limón',
+        'linea': 'línea', 'lineas': 'líneas', 'liquidos': 'líquidos',
+        'logistica': 'logística', 'maduracion': 'maduración', 'manana': 'mañana',
+        'manipulacion': 'manipulación', 'marabu': 'marabú', 'maxima': 'máxima',
+        'maximo': 'máximo', 'menu': 'menú', 'mercancia': 'mercancía',
+        'miercoles': 'miércoles', 'minima': 'mínima', 'minimo': 'mínimo',
+        'movil': 'móvil', 'musica': 'música', 'navidenos': 'navideños',
+        'neumaticos': 'neumáticos', 'nino': 'niño', 'ninos': 'niños',
+        'numero': 'número', 'numeros': 'números', 'optimo': 'óptimo',
+        'otono': 'otoño', 'panaderia': 'panadería', 'pano': 'paño',
+        'panos': 'paños', 'participacion': 'participación',
+        'pasteleria': 'pastelería', 'pequeno': 'pequeño', 'pequenos': 'pequeños',
+        'periodica': 'periódica', 'periodico': 'periódico',
+        'pizzeria': 'pizzería', 'planificacion': 'planificación',
+        'portatil': 'portátil', 'posicion': 'posición', 'precision': 'precisión',
+        'preparacion': 'preparación', 'presentacion': 'presentación',
+        'presion': 'presión', 'prevision': 'previsión',
+        'produccion': 'producción', 'promocion': 'promoción',
+        'proteina': 'proteína', 'proteinas': 'proteínas', 'proxima': 'próxima',
+        'proximo': 'próximo', 'proximos': 'próximos', 'quimicos': 'químicos',
+        'racion': 'ración', 'rapida': 'rápida', 'rapido': 'rápido',
+        'recepcion': 'recepción', 'refrigeracion': 'refrigeración',
+        'renovacion': 'renovación', 'repeticion': 'repetición',
+        'reposicion': 'reposición', 'resenas': 'reseñas', 'reunion': 'reunión',
+        'revision': 'revisión', 'rigida': 'rígida', 'romantica': 'romántica',
+        'roscon': 'roscón', 'rotacion': 'rotación', 'sabado': 'sábado',
+        'salmon': 'salmón', 'sandia': 'sandía', 'seccion': 'sección',
+        'segun': 'según', 'seleccion': 'selección',
+        'senal': 'señal', 'senales': 'señales', 'senaletica': 'señalética',
+        'senalizacion': 'señalización', 'sesamo': 'sésamo', 'sesion': 'sesión',
+        'sifon': 'sifón', 'simbolos': 'símbolos', 'supervision': 'supervisión',
+        'tambien': 'también', 'tecnica': 'técnica', 'tecnicas': 'técnicas',
+        'tecnico': 'técnico', 'tematica': 'temática', 'tematico': 'temático',
+        'termometro': 'termómetro', 'termometros': 'termómetros',
+        'transicion': 'transición', 'turron': 'turrón', 'ubicacion': 'ubicación',
+        'ultima': 'última', 'ultimas': 'últimas', 'ultimo': 'último',
+        'ultimos': 'últimos', 'util': 'útil', 'vacias': 'vacías',
+        'vacio': 'vacío', 'vacios': 'vacíos', 'valentin': 'valentín',
+        'vehiculo': 'vehículo', 'ventilacion': 'ventilación',
+}
+
+#: Frases fijas donde «como» sí lleva tilde: son encabezados del molde, no
+#: lenguaje libre, así que se pueden tratar por literal sin ambigüedad.
+LEX_FRASES = {
+    'como usar': 'cómo usar',
+    'como personalizar': 'cómo personalizar',
+    'como cuenta': 'cómo cuenta',
+    'como se': 'cómo se',
+}
+
+#: Un token que contenga esto es una URL, un correo, un dominio o un NOMBRE DE
+#: FICHERO: no se toca.
+#: Va por TOKEN y no por celda, y la diferencia tiene nombre y apellidos: el pie
+#: de los seis kits de CB es «— Kit de Tareas: Sushi Bar · ChefBusiness
+#: Consultoria Gastronomica · chefbusiness.co», o sea la razón social mal
+#: escrita 11-13 veces por kit EN LA MISMA CELDA que el dominio. Excluyendo la
+#: celda entera (que fue el primer diseño) §7-bis.17 se quedaba sin aplicar.
+#: La regla es «un punto entre dos alfanuméricos», y no una lista de dominios,
+#: por un falso positivo MEDIDO: con la lista, «Se conecta con» de catering
+#: —un kit LIVE— pasaba a citar «09-cobros-facturación-eventos.xlsx», un
+#: fichero que no existe. El nombre del fichero es una referencia, no prosa.
+#: La barra NO entra en la regla: «Lote/Albaran» y «Proveedor/Lonja» son
+#: rótulos de tabla y sí hay que corregirlos.
+RX_TOKEN_URL = re.compile(r'(://|@|[A-Za-z0-9]\.[A-Za-z0-9])')
+#: Siglas y códigos: se dejan intactos aunque casen con un lema. En mayúsculas
+#: y de 2 a 5 letras («FAO», «RD», «CE», «UE», «APPCC», «IVA», «TPV»). «ANO» y
+#: «OTONO» no caen aquí: tienen 3 y 5 letras pero están en `LEX_TILDES` y la
+#: comprobación de sigla sólo se aplica a lo que NO está en el diccionario.
+RX_SIGLA = re.compile(r'^[A-ZÁÉÍÓÚÜÑ]{2,5}$')
+RX_PALABRA = re.compile(r'[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+')
+
+
+def _caso(origen, destino):
+    """Aplica a `destino` el caso de `origen` (minúscula / Título / VERSALITA)."""
+    if origen.isupper() and len(origen) > 1:
+        return destino.upper()
+    if origen[:1].isupper():
+        return destino[:1].upper() + destino[1:]
+    return destino
+
+
+def _orto_token(tok):
+    """Corrige UN token (trozo sin espacios). Devuelve (nuevo, nº de cambios)."""
+    if RX_TOKEN_URL.search(tok):
+        return tok, 0
+    n = 0
+
+    def _rep(m):
+        nonlocal n
+        p = m.group(0)
+        destino = LEX_TILDES.get(p.lower())
+        if not destino or destino == p.lower():
+            return p
+        if RX_SIGLA.match(p) and p.lower() not in LEX_TILDES:
+            return p
+        nuevo = _caso(p, destino)
+        if nuevo != p:
+            n += 1
+        return nuevo
+
+    return RX_PALABRA.sub(_rep, tok), n
+
+
+def orto_texto(v):
+    """Corrige un texto entero. Devuelve (nuevo, nº de palabras corregidas)."""
+    if not isinstance(v, str) or not v.strip():
+        return v, 0
+    total = 0
+    # 1) frases fijas (el «Cómo» de los encabezados del molde)
+    for mal, bien in LEX_FRASES.items():
+        rx = re.compile(r'(?i)\b' + re.escape(mal) + r'\b')
+
+        def _f(m, bien=bien):
+            nonlocal total
+            partes = m.group(0).split(' ')
+            arreglo = [_caso(a, b) for a, b in zip(partes, bien.split(' '))]
+            nuevo = ' '.join(arreglo)
+            if nuevo != m.group(0):
+                total += 1
+            return nuevo
+        v = rx.sub(_f, v)
+    # 2) palabra a palabra, token a token (los tokens de URL quedan fuera)
+    fuera = []
+    for tok in re.split(r'(\s+)', v):
+        if tok.strip():
+            tok, n = _orto_token(tok)
+            total += n
+        fuera.append(tok)
+    return ''.join(fuera), total
+
+
+#: Literales que son CONTRATO entre el motor y el fichero: los reconoce
+#: `geometria`, `_contador`, `cadencia` o la DV, y reescribirlos rompería la
+#: detección. Se comparan por valor exacto de celda.
+def _contrato():
+    return {DV_LISTA, CAB_MARCA, CAB_P4, ETIQ_CONTADOR, CAB_EFECTIVO,
+            ETIQ_FONDO, ETIQ_FONDO_RESUMEN, ETIQ_EFECTIVO, ETIQ_VENTAS_EF,
+            ETIQ_Z, MARCA_OK, MARCA_NO} | set(CAB_REGISTRO) | set(
+                CAB_RECUENTO) | set(CAB_CALENDARIO) | set(CAB_CAJA) | set(
+                    CAB_EVENTOS)
+
+
+def ortografia(wb, fname, cambios):
+    """CB-E1 — barrido de tildes y ñ. Paso PROPIO, DESPUÉS de todo lo demás.
+
+    El orden no es una preferencia: está medido. `reescribir_instrucciones`
+    RECONSTRUYE la hoja leyendo las líneas que ya había, así que reinyecta el
+    texto sin tilde del fichero original — tras el dry-run del 2026-08-29,
+    `01-apertura-cierre-sushi.xlsx:Instrucciones!B4` seguía diciendo «Como usar
+    estas plantillas». Corriendo antes, el motor lo desharía (§7-bis.11).
+
+    Y por eso mismo hay una condición que este paso IMPONE al resto del motor:
+    ningún detector puede depender de una tilde. Si `_col_tiempo` sólo conociera
+    «Hora Límite», la 1.ª pasada no vería la columna de tiempo de sushi-bar
+    («Hora Limite») y la 2.ª —ya corregida— sí: cabecera reescrita, subtítulo
+    reescrito, columna pintada de verde y el gate de idempotencia en rojo sin
+    nada roto de verdad. Por eso `_col_tiempo` y `EDITABLES` comparan sin
+    tildes desde esta misma tanda.
+
+    No toca: fórmulas (`data_type == 'f'`), tokens con URL / correo / dominio,
+    siglas de 2-5 letras que no estén en el diccionario, ni los literales de
+    `_contrato()`. Sí toca los NOMBRES DE PESTAÑA y el `title`/`subject` de la
+    metadata (no las `keywords`: son el índice del producto y `keywords_ok` las
+    da por buenas tal cual).
+    """
+    if not sub_cb():
+        # Fuera de la sub-familia el paso NO corre. No es prudencia genérica:
+        # el barrido encuentra 2 faltas REALES en `kit-tareas-hamburgueseria`
+        # («sesamo» en `02-partidas-cocina.xlsx:'Línea Montaje'!B9` y en
+        # `05-tareas-semanales-mensuales.xlsx:'Inventario Diario'!A13`), que es
+        # un kit LIVE y no está en esta tanda. Corregirlas de paso lo habría
+        # modificado sin diff firmado, sin regresión propia y sin APPLY — justo
+        # lo que §7-bis.24 viene a impedir. Quedan declaradas en el informe.
+        return {'palabras': 0, 'celdas': 0, 'hojas': 0, 'fuera_de_alcance': 1}
+    contrato = _contrato()
+    celdas = hojas = 0
+    palabras = 0
+    for ws in list(wb.worksheets):
+        nuevo, n = orto_texto(ws.title)
+        if n and nuevo not in wb.sheetnames:
+            viejo = ws.title
+            ws.title = nuevo
+            hojas += 1
+            palabras += n
+            cambios.append(f'CB-E1: pestaña «{viejo}» → «{nuevo}»')
+        for row in ws.iter_rows():
+            for c in row:
+                v = c.value
+                if not isinstance(v, str) or c.data_type == 'f' \
+                        or v.startswith('='):
+                    continue
+                if v in contrato:
+                    continue
+                nuevo, n = orto_texto(v)
+                if n and nuevo != v:
+                    c.value = nuevo
+                    celdas += 1
+                    palabras += n
+    p = wb.properties
+    for campo in ('title', 'subject'):
+        v = getattr(p, campo, None)
+        if isinstance(v, str):
+            nuevo, n = orto_texto(v)
+            if n and nuevo != v:
+                setattr(p, campo, nuevo)
+                palabras += n
+    if palabras:
+        cambios.append(f'CB-E1 ortografía: {palabras} palabras con tilde o ñ '
+                       f'restituidas en {celdas} celdas'
+                       + (f' y {hojas} pestañas' if hojas else ''))
+    return {'palabras': palabras, 'celdas': celdas, 'hojas': hojas}
+
+
+def palabras_sin_tilde(wb):
+    """Gate `ortografia`: lemas de `LEX_TILDES` que sobreviven. Debe ser 0."""
+    fuera = []
+    contrato = _contrato()
+    for ws in wb.worksheets:
+        _, n = orto_texto(ws.title)
+        if n:
+            fuera.append((ws.title, '·hoja·', ws.title))
+        for row in ws.iter_rows():
+            for c in row:
+                v = c.value
+                if not isinstance(v, str) or c.data_type == 'f' \
+                        or v.startswith('=') or v in contrato:
+                    continue
+                _, n = orto_texto(v)
+                if n:
+                    fuera.append((ws.title, c.coordinate, v))
+    return fuera
+
+
+#: CB-E1 (segunda mitad) — las AMBIGUAS. No se corrigen por diccionario: el
+#: gate las lista con su celda para que el módulo de contenido del kit las
+#: decida una a una. Cada pareja es (forma sin tilde, forma con tilde).
+AMBIGUAS = {
+    'el': 'él', 'esta': 'está', 'estas': 'estás', 'este': 'esté',
+    'mas': 'más', 'si': 'sí', 'solo': 'sólo', 'tu': 'tú', 'te': 'té',
+    'como': 'cómo', 'cuando': 'cuándo', 'donde': 'dónde', 'quien': 'quién',
+    'que': 'qué', 'uso': 'usó', 'paso': 'pasó', 'cambio': 'cambió',
+    'critico': 'crítico', 'criticas': 'críticas', 'perdida': 'pérdida',
+    'publico': 'público', 'publica': 'pública', 'min': 'mín', 'max': 'máx',
+}
+RX_AMBIGUA = re.compile(r'(?i)\b(' + '|'.join(sorted(AMBIGUAS)) + r')\b')
+
+
+def ambiguas_del_libro(wb):
+    """Ocurrencias de palabras AMBIGUAS, para que el contenido las decida."""
+    fuera = []
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                v = c.value
+                if not isinstance(v, str) or c.data_type == 'f':
+                    continue
+                for m in RX_AMBIGUA.finditer(v):
+                    fuera.append({'hoja': ws.title, 'celda': c.coordinate,
+                                  'palabra': m.group(0), 'texto': v[:120]})
+    return fuera
 
 
 # ==========================================================================
