@@ -401,7 +401,7 @@ def _limpiar_area(ws, r0, r1, ncols):
     for m in list(ws.merged_cells.ranges):
         cr = CellRange(str(m))
         if cr.max_row >= r0 and cr.min_row <= r1:
-            ws.unmerge_cells(str(m))
+            _unmerge(ws, m)
     vacio = PatternFill()
     borde = Border()
     for r in range(r0, r1 + 1):
@@ -473,6 +473,28 @@ def _es_mayusculas(texto):
     if not letras:
         return False
     return str(texto).upper() == str(texto)
+
+
+def _unmerge(ws, m):
+    """`unmerge_cells` revienta con KeyError cuando la combinada quedó
+    colgando de una fila BORRADA (`delete_rows` no toca `merged_cells`).
+    Se quita entonces del registro a mano."""
+    try:
+        ws.unmerge_cells(str(m))
+    except KeyError:
+        try:
+            ws.merged_cells.ranges.remove(m)
+        except Exception:                                    # noqa: BLE001
+            pass
+
+
+def _desmerge_fila(ws, fila):
+    """Deshace cualquier combinada que toque la fila: `MergedCell.value` es
+    de sólo lectura y escribir en ella revienta con AttributeError."""
+    for m in list(ws.merged_cells.ranges):
+        cr = CellRange(str(m))
+        if cr.min_row <= fila <= cr.max_row:
+            _unmerge(ws, m)
 
 
 def _ancho_combinado(ws, fila):
@@ -1280,8 +1302,17 @@ class Plan(object):
                 bloques[bloque] = []
                 orden.append(bloque)
             bloques[bloque].append((rot, importe, nota))
+        # las partidas nuevas se añaden UNA vez: en la 2.ª pasada ya están
+        # dentro de su bloque y `_partidas` las devuelve como preservadas.
+        # Sin esta guarda, la segunda pasada duplicaba la terraza y las dos
+        # líneas de existencias y desplazaba la hoja entera (idempotencia
+        # rota, que es la red de seguridad que exige la propia SPEC).
+        ya = set(motor.norm(r) for b in bloques for r, _i, _n in bloques[b])
         for bloque, rot, importe, nota, _fuente in [
                 tuple(list(e) + [None] * 5)[:5] for e in extras]:
+            if motor.norm(rot) in ya:
+                continue
+            ya.add(motor.norm(rot))
             bloque = bloque or (orden[0] if orden else 'INVERSIÓN')
             if bloque not in bloques:
                 bloques[bloque] = []
@@ -1554,8 +1585,12 @@ class Plan(object):
                                    'Tipo de IVA soportado (%)')):
             motor.val(ws, get_column_letter(i + 1) + str(cab), texto,
                       bold=True, wrap=True)
+        # ⚠️ la columna G (tipo de IVA) NO tiene columna gemela en la fila de
+        # ingresos: su driver es el del AÑO 1, o el `IF(G10="","",…)` dejaría
+        # todos los tipos en blanco y el IVA soportado del libro en cero.
         rej = Rejilla(ws, cab + 1,
-                      driver=lambda R, c, k: R.c('ingresos', c),
+                      driver=lambda R, c, k: R.c('ingresos',
+                                                 'B' if c == 'G' else c),
                       cols_driver=('B', 'C', 'D', 'G'))
         self.rej['pyg'] = rej
         P = self.p.ref
@@ -2206,8 +2241,11 @@ class Plan(object):
         tk = rej.c('ticket', absoluta=True)
         for j, delta in enumerate((-2, 0, 2, 4)):
             col = get_column_letter(2 + j)
-            fx(ws, col + str(cabf), '=' + tk + ('+' + str(delta) if delta
-                                                else ''), motor.FMT_EUR)
+            # RT-23 — concatenar «+» y un delta negativo producía `$B$9+-2`:
+            # Excel la acepta y pycel la evalúa, pero es una fórmula que el
+            # comprador ve al pinchar la celda y que delata el generador.
+            fx(ws, col + str(cabf),
+               '=' + tk + ('%+g' % delta if delta else ''), motor.FMT_EUR)
             ws[col + str(cabf)].font = Font(bold=True)
         cv = rej.c('cvu', absoluta=True)
         cf = rej.c('cf_ano', absoluta=True)
@@ -3079,9 +3117,16 @@ class Plan(object):
             '2. Las partidas de la inversión, los costes fijos y la plantilla '
             'se teclean en su propia hoja, también en verde. Ningún número se '
             'escribe dos veces.',
-            '3. El punto de equilibrio, los escenarios, la tesorería y el '
-            'cuadro del préstamo se derivan de lo anterior: no hay que '
-            'tocarlos.',
+            # RC-05 — decía que cuatro hojas «no hay que tocarlas» cuando
+            # entre las tres primeras suman 26 celdas VERDES con validación
+            # de datos, que por la convención del propio fichero son
+            # justamente lo que hay que teclear.
+            '3. Sólo «3. Punto de Equilibrio» se deriva entera de lo '
+            'anterior. En las otras tres hojas sí hay celdas verdes que '
+            'puedes tocar: el escenario pesimista y el optimista en «4. '
+            'Escenarios», la estacionalidad y la rampa de arranque en «6. '
+            'Tesorería 12 meses», y las cuatro fuentes alternativas de '
+            'financiación en «7. Financiación». Todo lo demás se calcula.',
             '4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin '
             'IVA, divide entre 1,10 en comida y entre 1,21 en bebida '
             'alcohólica; el IVA de la inversión se adelanta y se recupera con '
@@ -3154,20 +3199,59 @@ class Plan(object):
             motor.val(ws, letra + str(fila), rot)
             fx(ws, get_column_letter(col + 1) + str(fila), formula, fmt)
             fila += 1
+        # RD-07 — el caso base pasa de perder 22.170 € a ganar 40.131 €
+        # accionando a la vez dos palancas (+45 % de cubiertos y −29,7 % de
+        # nómina) y el fichero no dejaba rastro de qué se había movido ni por
+        # qué. Aquí queda, con la cifra vieja, la nueva y su justificación.
+        recalibrado = self.dato('RECALIBRADO', []) or []
+        if recalibrado:
+            fila += 1
+            motor.val(ws, letra + str(fila),
+                      'QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1',
+                      bold=True)
+            fila += 1
+            for i, texto in enumerate(('Concepto', 'v1.1', 'v2.0',
+                                       'Por qué')):
+                motor.val(ws, get_column_letter(col + i) + str(fila), texto,
+                          bold=True)
+            fila += 1
+            for entrada in recalibrado:
+                partes = (list(entrada) + [''] * 4)[:4]
+                for i, texto in enumerate(partes):
+                    # openpyxl toma por FÓRMULA cualquier cadena que empiece
+                    # por «=», y `inject_cache` la marca luego como fórmula
+                    # sin caché: un texto explicativo no puede abrir con «=»
+                    if isinstance(texto, str) and texto.startswith('='):
+                        texto = texto.lstrip('=').strip()
+                    motor.val(ws, get_column_letter(col + i) + str(fila),
+                              texto, wrap=(i == 3))
+                fila += 1
         fila += 1
         motor.val(ws, letra + str(fila),
                   'DATOS DE REFERENCIA DEL SECTOR', bold=True)
         fila += 1
-        for rot, valor, nota in (self.dato('INSTRUCCIONES', {}) or {}).get(
+        for i, texto in enumerate(('Referencia', 'Valor', 'Fuente',
+                                   'Nota')):
+            motor.val(ws, get_column_letter(col + i) + str(fila), texto,
+                      bold=True)
+        fila += 1
+        # RD-33 — cuatro de las cinco filas llevaban su procedencia y la del
+        # ticket medio no, pese a venir del mismo sitio: en el dato que más
+        # se discute con un banco, el que no decía de dónde salía era
+        # precisamente el ticket. La fuente pasa a ser una columna propia.
+        for entrada in (self.dato('INSTRUCCIONES', {}) or {}).get(
                 'referencias', []):
+            rot, valor, fuente, nota = (list(entrada) + [''] * 4)[:4]
             motor.val(ws, letra + str(fila), rot)
             motor.val(ws, get_column_letter(col + 1) + str(fila), valor)
-            motor.val(ws, get_column_letter(col + 2) + str(fila), nota)
+            motor.val(ws, get_column_letter(col + 2) + str(fila), fuente)
+            motor.val(ws, get_column_letter(col + 3) + str(fila), nota,
+                      wrap=True)
             fila += 1
         motor.anchos(ws, {letra: 62,
                           get_column_letter(col + 1): 18,
-                          get_column_letter(col + 2): 16,
-                          get_column_letter(col + 3): 14})
+                          get_column_letter(col + 2): 22,
+                          get_column_letter(col + 3): 54})
         motor.print_setup(ws)
         return fila
 
@@ -3218,26 +3302,33 @@ class Plan(object):
                         tocados += 1
             # (c) filas suprimidas (duplicados y trámites que no aplican)
             if suprimir:
-                for r in range(cab + 1, ws.max_row + 1):
+                # RD-30 / RC-22 — vaciar la fila dejaba un hueco con bordes y
+                # alto de 22 pt en mitad de la FASE 2, entre el Registro
+                # Sanitario y la licencia de terraza: se lee como una tarea
+                # que alguien se ha olvidado de rellenar en el fichero que se
+                # vende como «no te dejas nada pendiente». Se BORRA.
+                for r in range(ws.max_row, cab, -1):
                     v = ws.cell(row=r, column=col_tarea).value
                     if isinstance(v, str) and motor.norm(v) in suprimir:
-                        for c in range(1, ws.max_column + 1):
-                            ws.cell(row=r, column=c).value = None
+                        ws.delete_rows(r)
                         tocados += 1
                         self.anota(ws.title + ': fila ' + str(r)
-                                   + ' suprimida — ' + v[:60])
+                                   + ' BORRADA (no vaciada) — ' + v[:60])
             # (d) altas al final de su fase
             destino = altas if len(ws_libro.worksheets) <= 2 else [
                 a for a in altas if re.search(a[0], ws.title, re.I)]
             if destino:
                 anadidos += self._altas_checklist(
                     ws, cab, col_tarea, destino,
-                    cabecera=reglas.get('cabecera_altas'))
+                    cabecera=reglas.get('cabecera_altas'),
+                    rx_fase_final=reglas.get('fase_final'),
+                    fase_final_nueva=reglas.get('fase_final_nueva'))
         self.anota('Checklist: ' + str(tocados) + ' celdas corregidas y '
                    + str(anadidos) + ' trámites nuevos (§2.10)')
         return tocados, anadidos
 
-    def _altas_checklist(self, ws, cab, col_tarea, altas, cabecera=None):
+    def _altas_checklist(self, ws, cab, col_tarea, altas, cabecera=None,
+                         rx_fase_final=None, fase_final_nueva=None):
         """Añade trámites conservando la estructura de fases del fichero.
 
         IDEMPOTENTE por CONTENIDO: los que ya están no se vuelven a añadir. Sin
@@ -3258,8 +3349,35 @@ class Plan(object):
             if isinstance(ws.cell(row=r, column=col_tarea).value, str) \
                     and ws.cell(row=r, column=col_tarea).value.strip():
                 ultima = r
+        # RD-28 / RC-12 — la fase que hay que dejar la ÚLTIMA (los primeros
+        # 90 días de operación) se captura, se vacía y se reescribe DESPUÉS
+        # del bloque nuevo: si no, las obligaciones que hay que tener
+        # cerradas antes de abrir quedan detrás de las de la operación ya en
+        # marcha, y quien trabaja el checklist de arriba abajo contrata el
+        # seguro de RC con el local abierto.
+        cola, fila_fase = [], None
+        if rx_fase_final:
+            for r in range(cab + 1, ultima + 1):
+                v = ws.cell(row=r, column=1).value
+                if isinstance(v, str) and re.search(rx_fase_final, v, re.I):
+                    fila_fase = r
+                    break
+        if fila_fase is not None:
+            for r in range(fila_fase, ultima + 1):
+                fila = [(c, ws.cell(row=r, column=c).value)
+                        for c in range(1, ws.max_column + 1)
+                        if ws.cell(row=r, column=c).value is not None]
+                cola.append((r, fila, _ancho_combinado(ws, r)))
+            for r, fila, _a in cola:
+                for m in list(ws.merged_cells.ranges):
+                    cr = CellRange(str(m))
+                    if cr.min_row <= r <= cr.max_row:
+                        _unmerge(ws, m)
+                for c, _v in fila:
+                    ws.cell(row=r, column=c).value = None
+            ultima = fila_fase - 1
         pie = []
-        for r in range(ultima + 1, ws.max_row + 1):
+        for r in range(ultima + 1 + len(cola), ws.max_row + 1):
             fila = [(c, ws.cell(row=r, column=c).value)
                     for c in range(1, ws.max_column + 1)
                     if ws.cell(row=r, column=c).value is not None]
@@ -3272,20 +3390,29 @@ class Plan(object):
             for m in list(ws.merged_cells.ranges):
                 cr = CellRange(str(m))
                 if cr.min_row <= r <= cr.max_row:
-                    ws.unmerge_cells(str(m))
+                    _unmerge(ws, m)
             for c, _v in fila:
                 ws.cell(row=r, column=c).value = None
         cols = dict((motor.norm(c.value), c.column) for c in ws[cab]
                     if isinstance(c.value, str))
+        # el cuerpo se reescribe entero por debajo de `ultima`: cualquier
+        # combinada que sobreviva ahí convierte la celda destino en
+        # `MergedCell`, cuyo `.value` es de SÓLO LECTURA. Se deshacen todas
+        # de una vez y las que hacen falta se rehacen al escribir.
+        for m in list(ws.merged_cells.ranges):
+            if CellRange(str(m)).max_row > ultima:
+                _unmerge(ws, m)
         fila = ultima + 1
         n = 0
         usa_fase = 'fase' in cols
         if cabecera and altas:
+            _desmerge_fila(ws, fila)
             motor.val(ws, 'A' + str(fila), cabecera, bold=True)
             ws.merge_cells(start_row=fila, start_column=1, end_row=fila,
                            end_column=ws.max_column)
             fila += 1
         for _hoja, fase, tarea, responsable, plazo, nota in altas:
+            _desmerge_fila(ws, fila)
             valores = {col_tarea: tarea}
             if usa_fase:
                 valores[cols['fase']] = fase
@@ -3299,8 +3426,23 @@ class Plan(object):
                 motor.val(ws, get_column_letter(c) + str(fila), v, wrap=True)
             fila += 1
             n += 1
+        # la fase que va la última se reescribe aquí, ya por debajo
+        for _r, contenido, ancho in cola:
+            _desmerge_fila(ws, fila)
+            for c, v in contenido:
+                if c == 1 and fase_final_nueva and isinstance(v, str) \
+                        and rx_fase_final and re.search(rx_fase_final, v,
+                                                        re.I):
+                    v = fase_final_nueva
+                motor.val(ws, get_column_letter(c) + str(fila), v, wrap=True)
+            if ancho > 1:
+                ws.merge_cells(start_row=fila, start_column=1, end_row=fila,
+                               end_column=ancho)
+                ws[get_column_letter(1) + str(fila)].font = Font(bold=True)
+            fila += 1
         fila += 1
         for _r, contenido, ancho in pie:
+            _desmerge_fila(ws, fila)
             for c, v in contenido:
                 motor.val(ws, get_column_letter(c) + str(fila), v)
             if ancho > 1:

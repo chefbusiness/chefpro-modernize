@@ -92,6 +92,7 @@ import zipfile
 
 from openpyxl.formatting.formatting import ConditionalFormattingList
 from openpyxl.formatting.rule import FormulaRule, Rule
+from openpyxl.cell.cell import MergedCell
 from openpyxl.styles import Alignment, Font, PatternFill, Protection
 from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import column_index_from_string, get_column_letter
@@ -395,9 +396,42 @@ def reg(ws, coord, formula):
     REGISTRO.append((ws.title, coord, formula))
 
 
+def celda(ws, coord):
+    """`ws[coord]` con la garantía de que se puede ESCRIBIR en ella.
+
+    `MergedCell.value` es de sólo lectura, y openpyxl deja objetos
+    `MergedCell` colgando cuando una combinada se deshace o cuando
+    `delete_rows` desplaza el cuerpo sin tocar `merged_cells`: la celda ya no
+    pertenece a ninguna combinada viva y aun así revienta al escribirla con
+    `AttributeError: object attribute 'value' is read-only`. Se sustituye por
+    una celda normal.
+    """
+    cel = ws[coord]
+    if isinstance(cel, MergedCell):
+        fila, col = cel.row, cel.column
+        vivas = [CellRange(str(m)) for m in ws.merged_cells.ranges]
+        dentro = any(cr.min_row <= fila <= cr.max_row
+                     and cr.min_col <= col <= cr.max_col for cr in vivas)
+        if dentro:
+            for m in list(ws.merged_cells.ranges):
+                cr = CellRange(str(m))
+                if cr.min_row <= fila <= cr.max_row \
+                        and cr.min_col <= col <= cr.max_col:
+                    try:
+                        ws.unmerge_cells(str(m))
+                    except KeyError:
+                        try:
+                            ws.merged_cells.ranges.remove(m)
+                        except Exception:                    # noqa: BLE001
+                            pass
+        ws._cells.pop((fila, col), None)
+        cel = ws.cell(row=fila, column=col)
+    return cel
+
+
 def f(ws, coord, formula, fmt=None, align=None):
     """Escribe una FÓRMULA y la registra para la verificación `data_only`."""
-    cel = ws[coord]
+    cel = celda(ws, coord)
     cel.value = formula
     if fmt:
         cel.number_format = fmt
@@ -410,7 +444,7 @@ def f(ws, coord, formula, fmt=None, align=None):
 def val(ws, coord, valor, fmt=None, verde_=False, bold=None, align=None,
         wrap=None):
     """Escribe un VALOR constante. `verde_` lo marca como editable."""
-    cel = ws[coord]
+    cel = celda(ws, coord)
     cel.value = valor
     if fmt:
         cel.number_format = fmt
@@ -1826,10 +1860,30 @@ def linea_texto(ws, texto, rx=None, col=None):
 TITULOS_INSTRUCCIONES = 'INSTRUCCIONES DE USO'
 
 
+#: RC-21 — el texto del contador estaba escrito para el molde C2 (seis
+#: pestañas F1..F6 con un contador por hoja). En C1 y C4, que son
+#: MONOLÍTICOS, prometía «el contador de cada bloque», que no existe: el
+#: cliente que buscase el recuento de la FASE 3 no lo encontraba.
+LINEA_CONTADOR = {
+    'mono': 'El contador del pie cuenta sólo las ✓ de toda la lista; las N/A '
+            'salen del total.',
+    'bloques': 'El contador de cada pestaña cuenta sólo las ✓; las N/A salen '
+               'del total.',
+}
+RX_LINEA_CONTADOR = re.compile(r'^El contador d')
+
+
+def _linea_contador(det):
+    return LINEA_CONTADOR['mono' if det.get('molde') in ('C1', 'C4')
+                          else 'bloques']
+
+
 def asegurar_instrucciones(wb, det, pid, informe):
     """Crea la hoja `Instrucciones` en los 12 xlsx que no la tienen (§1.9)."""
     ws = hoja(wb, 'Instrucciones')
     if ws is not None:
+        if det['tipo'] == 'checklist':
+            linea_texto(ws, _linea_contador(det), RX_LINEA_CONTADOR)
         return ws, False
     ws = wb.create_sheet('Instrucciones')
     val(ws, 'A1', TITULOS_INSTRUCCIONES, bold=True)
@@ -1840,8 +1894,7 @@ def asegurar_instrucciones(wb, det, pid, informe):
     ]
     if det['tipo'] == 'checklist':
         lineas.append(LEYENDA_OK)
-        lineas.append('El contador de cada bloque cuenta sólo las ✓; las N/A '
-                      'salen del total.')
+        lineas.append(_linea_contador(det))
     if det['tipo'] == 'calculadora':
         lineas.append('Los campos con desplegable sólo admiten los valores de '
                       'la lista: una fórmula los compara por igualdad y un '

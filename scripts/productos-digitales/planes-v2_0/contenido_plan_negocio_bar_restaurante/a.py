@@ -122,13 +122,17 @@ SUPUESTOS = {
         'Tarjeta y bizum sobre el total facturado; pide oferta a dos '
         'proveedores de TPV',
         'parametrizado (el plan v1.1 no lo contemplaba)'),
+    # RD-31 — el alquiler bajaba de 3.000 a 2.900 €/mes sin ninguna
+    # justificación y sin necesidad: es un ajuste a la baja de un coste REAL
+    # que arrastra la fianza y el fondo de maniobra. Con el ticket
+    # recalibrado, 3.000 € son el 7,9 % de las ventas, dentro del techo de
+    # 8-10 % que fija el propio libro.
     'alquiler_mes': (
-        None, None, 2900, None,
+        None, None, 3000, None,
         'Dentro del rango 2.000-4.500 €/mes que declara este libro para un '
         'local de 80-120 m² en zona urbana, y respetando el techo del 10 % '
         'sobre ventas',
-        'recalibrado (v1.1: 3.000 €/mes = 11,4 % de sus ventas, por encima '
-        'de su propio techo)'),
+        'fichero v1.1'),
     'fianza_meses': (None, None, 3, None,
                      'Tres meses de renta, como en el contrato tipo de local '
                      'de negocio', 'fichero v1.1'),
@@ -171,12 +175,35 @@ SUPUESTOS = {
                   'Obra, instalaciones y decoración. Coeficientes de la tabla '
                   'del art. 12.1 LIS: confírmalo con tu asesor',
                   'fichero v1.1 (rótulo «Amortizacion equipos (10 anos)»)'),
+    # RD-15 — 8 años son el 12,5 % anual, POR ENCIMA del coeficiente lineal
+    # máximo de la tabla del art. 12.1 LIS que la propia nota invoca (12 %
+    # maquinaria, 10 % mobiliario). El exceso no sería deducible en el
+    # ejercicio y la base imponible del modelo quedaba infravalorada.
     'vida_maquinaria': (
-        None, None, 8, None,
-        'Maquinaria de cocina, mobiliario y equipos. Coeficientes de la tabla '
-        'del art. 12.1 LIS: confírmalo con tu asesor',
-        'parametrizado'),
+        None, None, 10, None,
+        'Maquinaria de cocina, mobiliario y equipos. El coeficiente lineal '
+        'máximo de la tabla del art. 12.1 LIS es del 12 % para maquinaria y '
+        'del 10 % para mobiliario: por debajo de 9-10 años el exceso no es '
+        'deducible. Confírmalo con tu asesor',
+        'recalibrado por RD-15 (v2.0 previa: 8 años = 12,5 % anual)'),
+    'ticket_medio_nota': (None, None, None, None, None, None),
 }
+del SUPUESTOS['ticket_medio_nota']
+
+# ---------------------------------------------------------------------------
+# §7-bis.17 — recalibración del ticket para cumplir el techo de labour cost
+# del 34 % (RD-08). Se hace por el lado del PRECIO, dentro de los dos rangos
+# que el propio producto publica: 15-22 € de PVP en el bloque de referencias
+# del libro y «ticket medio objetivo de 18 a 25 euros» en el documento. NO se
+# toca ningún porcentaje escondido.
+# ---------------------------------------------------------------------------
+SUPUESTOS['ticket_medio'] = (
+    None, None, 18.20, None,
+    'SIN IVA. Con el mix 65/35 equivale a 20,72 € de PVP: dentro del rango '
+    '15-22 € que declara este mismo libro y del 18-25 € que fija el '
+    'documento del plan',
+    'recalibrado por TEC-11/DOM-30 y RD-08 (v1.1: 18,50 € sin declarar si '
+    'llevaba IVA)')
 
 # ==========================================================================
 # §2.3.2 — líneas de venta y su peso (resuelve el doble conteo de la bebida)
@@ -218,6 +245,58 @@ PLANTILLA = (
     ('Extra de fin de semana', 1, 650,
      'Viernes, sábado y domingo, 20 horas semanales',
      'parametrizado', 0.50),
+    # RC-19 — la plantilla no tenía ninguna fila de suplencias, vacaciones ni
+    # descansos, que el convenio provincial que el propio libro invoca sí
+    # impone: seis personas con 30 días naturales de vacaciones (art. 38 ET)
+    # son 180 días de servicio que alguien tiene que cubrir.
+    ('Suplencias de vacaciones y descansos', 1, 260,
+     'Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso '
+     'semanal de los seis puestos. Equivale a una jornada del 15 %',
+     'parametrizado (RC-19)', 0.15),
+)
+
+# ==========================================================================
+# §2.2 — partidas de la inversión (RD-01, RD-02, RC-01, RC-02, RT-14)
+# ==========================================================================
+#: Reglas por rótulo NORMALIZADO: `('suprimir', motivo)` o `(importe, nota)`.
+INVERSION = {
+    # RD-01 / RC-01 / RT-14 — doble conteo de 3.800 € entre la inversión y el
+    # año 1 del P&L: el seguro y la gestoría del primer año se capitalizaban
+    # en la inversión Y se volvían a cargar como coste fijo anual. Es el
+    # mismo defecto que la SPEC §3.4.1 obliga a quitar en la línea B
+    # (TEC-12). Se quedan en el P&L, que es donde son gasto del ejercicio, y
+    # salen de la inversión.
+    'alta gestoria + contabilidad primer ano': (
+        'suprimir',
+        'RD-01: la anualidad de gestoría ya está en «Gestoría + '
+        'contabilidad» de los costes fijos del P&L. El alta en sí no llega a '
+        'los 100 € y va dentro de los gastos de constitución'),
+    'seguros (rc + multirriesgo + empleados)': (
+        'suprimir',
+        'RD-01: la prima del primer año ya está en «Seguros (RC + '
+        'multirriesgo)» de los costes fijos del P&L. Capitalizarla además '
+        'inflaba el IVA soportado y la necesidad de financiación'),
+}
+
+#: Partidas nuevas: `(bloque, rótulo, importe, nota, fuente)`.
+#: RD-02 / RC-02 — DOM-19 seguía abierto: terraza, stock inicial e
+#: imprevistos sólo existían en el Word, y la propia nota de la hoja los
+#: citaba como si estuvieran. Un bar-restaurante que abre sin presupuesto de
+#: primera compra de bodega y despensa no es financiable. Los imprevistos NO
+#: van aquí: los calcula `grupo_a` por fórmula sobre el bloque de obra.
+INVERSION_EXTRA = (
+    ('EQUIPAMIENTO SALA Y BARRA', 'Mobiliario y toldo de terraza', 4200,
+     'Mesas, sillas, toldo y estufas para las plazas de terraza que describe '
+     'el plan. Ponlo a 0 si tu local no tiene terraza o si la licencia no '
+     'sale', 'parametrizado (RD-02/DOM-19)'),
+    ('EXISTENCIAS INICIALES',
+     'Primera compra de despensa y cámaras', 6500,
+     'Materia prima para arrancar el servicio: seco, fresco y congelado. NO '
+     'se amortiza, es circulante', 'parametrizado (RD-02/DOM-19)'),
+    ('EXISTENCIAS INICIALES', 'Primera compra de bodega y barra', 5500,
+     'Vinos, cervezas, destilados y refrescos de la carta de salida. Pide '
+     'depósito a tus distribuidores antes de presupuestarlo',
+     'parametrizado (RD-02/DOM-19)'),
 )
 
 # ==========================================================================
@@ -257,9 +336,13 @@ UMBRALES = (
      'Por debajo, revisa precios de carta y escandallos'),
     ('r_cogs', 'Coste de mercancía / Ventas', 0.32,
      'Techo del propio libro: «Food cost objetivo 28-32 %»'),
-    ('r_personal', 'Coste de personal / Ventas', 0.35,
-     'Techo del propio libro: «Coste personal: no superar 35 % de los '
-     'ingresos»'),
+    # RD-08 — el producto publicaba TRES techos de labour cost (35 % en el
+    # Excel, 34 % y 30-35 % en el documento) y el caso base se declaraba
+    # viable contra el más laxo de los tres. Se elige el MÁS ESTRICTO que el
+    # producto publica, y el caso base se recalibra hasta cumplirlo (§2.3.1).
+    ('r_personal', 'Coste de personal / Ventas', 0.34,
+     'Techo MÁS ESTRICTO de los que publica este producto: «el labor cost no '
+     'debe superar el 34 %». Es el que manda'),
     ('r_alquiler', 'Alquiler / Ventas', 0.10,
      'Techo del propio libro: «Alquiler: no superar 8-10 % de los ingresos»'),
     ('r_neto', 'Resultado neto / Ventas', 0.05,
@@ -296,21 +379,44 @@ INSTRUCCIONES = {
         'aporta y monta el cuadro de amortización del préstamo. Si la '
         'diferencia sale en rojo, el plan no está financiado.',
     ],
+    # (rótulo, valor, FUENTE, nota). RD-33: la fuente va en su propia
+    # columna, también en la fila del ticket, que era la única que no la
+    # llevaba pese a venir del mismo sitio que las demás.
+    # RD-04 / RC-09: el post-proceso había BORRADO del bloque las tres filas
+    # que el nuevo caso base contradice o que aportan el riesgo —la inversión
+    # media de apertura y las dos tasas de cierre—, y son justo las que la
+    # landing sigue vendiendo. Vuelven, con su fuente, y la de la inversión
+    # con la nota de que este plan queda por encima del rango.
     'referencias': [
         # ⚠️ sin importe en la frase: `motor.cross_sell_sin_precios` borra los
         # euros de cualquier línea que hable de un «plan», y se llevaba por
         # delante el PVP. La cifra vive calculada en «0. Supuestos».
         ('Ticket medio de restaurante casual (PVP)', '15-22 €',
+         'Fichero v1.1',
          'El PVP equivalente de este plan lo calcula la hoja 0. Supuestos'),
         ('Alquiler de local de 80-120 m² en zona urbana', '2.000-4.500 €/mes',
-         'Fichero v1.1'),
-        ('Food cost objetivo', '28-32 %', 'Fichero v1.1'),
-        ('Coste de personal sobre ventas', 'máx. 35 %', 'Fichero v1.1'),
-        ('Margen neto medio del sector', '5-10 %', 'Fichero v1.1'),
+         'Fichero v1.1', ''),
+        ('Food cost objetivo', '28-32 %', 'Fichero v1.1', ''),
+        ('Coste de personal sobre ventas', 'máx. 34 %', 'Fichero v1.1',
+         'Se aplica el más estricto de los techos que publica este producto'),
+        ('Margen neto medio del sector', '5-10 %', 'Fichero v1.1', ''),
         ('Punto de equilibrio', 'alcanzable en menos de 12 meses',
-         'Fichero v1.1'),
+         'Fichero v1.1', ''),
+        ('Inversión media de apertura', '80.000-150.000 €', 'Fichero v1.1',
+         'Es el rango de referencia del sector. La inversión de ESTE plan la '
+         'calcula la hoja 1: si queda por encima, es porque incluye el fondo '
+         'de maniobra, las existencias iniciales y el IVA que hay que '
+         'adelantar, que ese rango no siempre cuenta'),
+        ('Tasa de cierre de restaurantes en el primer año', '25 %',
+         'Fichero v1.1',
+         'Es el dato que más pesa en un comité de riesgos: por eso el plan '
+         'lleva fondo de maniobra, escenario pesimista y tesorería mes a mes'),
+        ('Tasa de cierre de restaurantes a los cinco años', '50 %',
+         'Fichero v1.1', ''),
         ('Convenio colectivo aplicable', 'PROVINCIAL de hostelería',
-         'No existe una tabla salarial estatal única (DOM-24)'),
+         'DOM-24 / checklist F37',
+         'No existe una tabla salarial estatal única: copia la tabla de tu '
+         'provincia en la celda de Supuestos'),
     ],
 }
 
@@ -351,10 +457,17 @@ CHECKLIST = {
         (r'^Alta en el IAE',
          'Alta en el IAE: epígrafe 671.4 (restaurantes de dos tenedores) o '
          '673.1 (servicios de bar especiales), según el peso de la barra'),
-        (r'^Exento si facturaci[oó]n',
-         'Exento mientras la cifra de negocio no llegue al millón de euros. '
-         'La elección del epígrafe la valida tu gestor: condiciona '
-         'inspecciones y licencia'),
+        # RC-25 — la nota explicaba la exención por cifra de negocio y
+        # omitía la de los DOS PRIMEROS ejercicios para entidades de nueva
+        # creación, que es justo la que aplica al comprador de un plan de
+        # apertura. ⚠️ El texto final se escribe de UNA vez: encadenar dos
+        # reemplazos (uno al texto intermedio y otro al definitivo) rompe la
+        # idempotencia, porque la 2.ª pasada corrige lo que hizo la 1.ª.
+        (r'^(Exento si facturaci[oó]n|Exento mientras la cifra)',
+         'Doble exención: los dos primeros períodos impositivos de la '
+         'actividad (art. 82.1.b del TRLRHL) y, después, mientras la cifra '
+         'de negocio no llegue al millón de euros. La elección del epígrafe '
+         'la valida tu gestor: condiciona inspecciones y licencia'),
         # DOM-13 / COM-08 — Crea y Crece, sin el depósito de 3.000 € inventado
         (r'^Ley Crea y Crece',
          'Ley 18/2022 (Crea y Crece): capital mínimo 1 €, con la obligación '
@@ -364,6 +477,24 @@ CHECKLIST = {
         (r'^Capital social min 1 EUR',
          'Capital social mínimo 1 € (Ley 18/2022). No existe ningún depósito '
          'obligatorio de 3.000 € a cinco años'),
+        # DOM-26 / RD-29 / RC-24 — la nota decía que el servicio ajeno NO es
+        # obligatorio y la columna RESPONSABLE seguía asignando la tarea a un
+        # «Servicio PRL» externo: la celda que el usuario lee para saber a
+        # quién llamar contradecía a la que explica la ley.
+        (r'^Servicio PRL$', 'Titular o servicio ajeno'),
+        (r'^Prevención riesgos laborales$',
+         'Plan de prevención de riesgos laborales (asumido por el titular o '
+         'con servicio ajeno)'),
+        # RC-25 — DOM-33 pedía DOS cosas y sólo se hizo una: faltaba la
+        # exención de los dos primeros ejercicios para entidades de nueva
+        # creación, que es justo la que aplica al comprador de un plan de
+        # apertura. Y TEC-25 dejaba el 671.4 («dos tenedores») como primera
+        # opción para un casual con ticket de 20,72 € de PVP.
+        (r'^Alta en el IAE',
+         'Alta en el IAE: epígrafe 671.5 (restaurantes de un tenedor), 671.4 '
+         '(dos tenedores) o 673.1 (servicios de bar especiales), según el '
+         'peso de la barra y el nivel de servicio'),
+
         # TEC-26 — la errata visible del entregable
         (r'Priorizarcexperiencia',
          'Prioriza la experiencia en hostelería'),
@@ -381,10 +512,21 @@ CHECKLIST = {
         r'^FASE 3': 'FASE 3: OBRA Y EQUIPAMIENTO (meses 4-7)',
         r'^FASE 4': 'FASE 4: PERSONAL (mes 7)',
         r'^FASE 5': 'FASE 5: MARKETING Y LANZAMIENTO (meses 7-8)',
-        r'^FASE 6': 'FASE 6: PRIMEROS 90 DÍAS (meses 8-11)',
+        # ⚠️ la fase de los primeros 90 días se identifica por su CONTENIDO,
+        # no por su número: `_altas_checklist` la renumera al empujarla por
+        # debajo del bloque nuevo (RD-28), y un patrón por número renombraría
+        # en la 2.ª pasada el bloque equivocado.
+        r'^FASE \d+: PRIMEROS 90': 'FASE 7: PRIMEROS 90 DÍAS (meses 8-11)',
     },
-    'cabecera_altas': 'FASE 7: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES '
+    'cabecera_altas': 'FASE 6: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES '
                       'DE ABRIR (meses 6-8)',
+    # RD-28 / RC-12 — un checklist se trabaja de arriba abajo. Con el bloque
+    # nuevo añadido al final, el seguro de RC, los boletines de gas y la
+    # gestión de residuos quedaban DESPUÉS de los primeros 90 días de
+    # operación, es decir se contrataban con el local ya abierto. La fase de
+    # los primeros 90 días se empuja hacia abajo y queda la última.
+    'fase_final': r'^FASE \d+: PRIMEROS 90',
+    'fase_final_nueva': 'FASE 7: PRIMEROS 90 DÍAS (meses 8-11)',
     # TEC-18 — trámites que faltaban y cuestan dinero o multa
     # (hoja, categoría, tarea, responsable, plazo, nota)
     'altas': [
@@ -435,6 +577,42 @@ CHECKLIST = {
          'Cartel de prohibición de venta de alcohol y tabaco a menores',
          'Socios', '1 día',
          'La redacción exacta y el tamaño los fija tu Comunidad Autónoma'),
+        # RD-26 — en 59 trámites no había NI UNO de protección de datos. Un
+        # bar-restaurante con reservas online, fichaje de jornada,
+        # videovigilancia y proveedores trata datos personales desde el día
+        # uno, y la AEPD sanciona la falta de registro de actividades y de
+        # cartel de videovigilancia.
+        ('.', 'RGPD',
+         'Registro de actividades de tratamiento de datos personales',
+         'Socios', 'Antes de abrir',
+         'Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la '
+         'primera inspección. Incluye clientes, personal y proveedores'),
+        ('.', 'RGPD',
+         'Informar al equipo del registro horario y del tratamiento de sus '
+         'datos', 'Gestoría', 'Desde el primer contrato',
+         'La cláusula informativa se entrega con el contrato; el fichaje es '
+         'un tratamiento de datos, no sólo una obligación laboral'),
+        ('.', 'RGPD',
+         'Cartel y contrato de videovigilancia con la empresa de seguridad',
+         'Socios', 'Con la obra',
+         'Cartel homologado en zona visible, contrato de encargado de '
+         'tratamiento y plazo máximo de conservación de 30 días'),
+        ('.', 'RGPD',
+         'Cláusula informativa y consentimiento en el sistema de reservas y '
+         'en la lista de correo', 'Socios', 'Antes de abrir',
+         'Reservas online, WhatsApp y newsletter tratan datos: cada canal '
+         'necesita su información previa'),
+        # RD-27 — ningún ítem sobre la adaptación del sistema de facturación,
+        # que es una obligación viva en el ejercicio que el propio fichero
+        # rotula «España 2026» y que obliga a cambiar o actualizar el TPV que
+        # la hoja de inversión presupuesta.
+        ('.', 'Fiscal',
+         'Adaptar el TPV y la facturación al sistema Veri*factu / factura '
+         'electrónica', 'Gestoría', 'Antes de abrir',
+         'El RD 1007/2023 y su calendario escalonado obligan a que el '
+         'software de facturación sea verificable. Consulta la fecha que te '
+         'aplica antes de comprar el TPV que presupuesta la hoja de '
+         'Inversión: cambiarlo después cuesta el doble'),
     ],
 }
 
@@ -444,7 +622,7 @@ CHECKLIST = {
 # ==========================================================================
 RECALIBRADO = (
     ('Coste de personal imputado al P&L', '115.200 €',
-     '= hoja Personal, por fórmula',
+     'Sale de la hoja Personal, por fórmula',
      'TEC-01/DOM-01: el P&L decía «ver hoja Personal» y usaba otra cifra'),
     ('Plantilla', '7 personas / 209.171 €',
      '6 puestos (dos parciales) / ~147.100 €',
@@ -463,10 +641,10 @@ RECALIBRADO = (
      'Una cocina con horno, cámaras y campana no consume el 3,4 % de las '
      'ventas'),
     ('Fondo de maniobra', '30.000 € etiquetados «3 meses»',
-     '= 3 × costes fijos mensuales, por fórmula',
+     '3 × costes fijos de caja mensuales, por fórmula',
      'TEC-07/DOM-12/NUEVO-01: los 30.000 € cubrían 1,8 meses'),
     ('Amortización', '5.000 €/año (base implícita 50.000 €)',
-     '= base amortizable real / vida útil',
+     'Base amortizable real / vida útil, por fórmula',
      'TEC-20: el inmovilizado del propio libro suma bastante más, y el fondo '
      'de maniobra no se amortiza'),
     ('Cuota del préstamo en el P&L', '7.200 €/año de cuota completa',
