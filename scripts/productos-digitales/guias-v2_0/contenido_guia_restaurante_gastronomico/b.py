@@ -297,28 +297,69 @@ CONTRATACION = {
 # ==========================================================================
 APPCC = {
     'anuncia': 55,
+    # ANISAKIS-2026-08-29 · el RD 1420/2006 quedó DEROGADO el 22-dic-2022 por
+    # el RD 1021/2022 (ANIS-01/ANIS-03 del research, verificado en el BOE). La
+    # fila YA está escrita en el producto LIVE con la cita vieja, y `_insertar`
+    # sólo AÑADE: cambiar el texto de `nuevas` sin esto duplicaba la fila
+    # (medido en el dry-run del 2026-08-29: APPCC!C27 vieja + C31 nueva). Las
+    # `sustituciones` corren ANTES que las `nuevas`, así que aquí se reescribe
+    # la fila existente y después `_insertar` la encuentra y no duplica.
+    'sustituciones': [
+        {'id': 'DOM-14', 'fuente': ('ANISAKIS-2026-08-29 · RD 1021/2022, '
+                                    'art. 8.1 (que derogó el RD 1420/2006)'),
+         'buscar': ('Congelación preventiva (' + G + '20' + N + '°C durante al '
+                    'menos 24' + N + 'h en todo el producto, o ' + G + '35' + N
+                    + '°C durante 15' + N + 'h) para pescado de consumo en '
+                    'crudo, marinado, escabechado o en salazón — RD 1420/2006 '
+                    'y Reg. (CE) 853/2004'),
+         'tarea': ('Congelación preventiva (' + G + '20' + N + '°C durante al '
+                   'menos 24' + N + 'h en todo el producto, o ' + G + '35' + N
+                   + '°C durante 15' + N + 'h) para pescado de consumo en crudo, '
+                   'marinado, escabechado o en salazón — RD 1021/2022, '
+                   'art.' + N + '8.1 (que derogó el RD 1420/2006) y '
+                   'Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D'),
+         'notas': ('El cap.' + N + '8 sitúa ceviches y tartares en el cuarto '
+                   'frío y el cap.' + N + '22 promociona los crudos: esto es '
+                   'obligatorio, no opcional. El binomio legal son 24' + N + 'h '
+                   'a ' + G + '20' + N + '°C EN TODO EL PRODUCTO (art.' + N
+                   + '8.1 del RD 1021/2022, que derogó el RD 1420/2006, y '
+                   'anexo III, secc.' + N + 'VIII, cap.' + N + 'III.D del '
+                   'Rgto. (CE) 853/2004); los «5' + N + 'días» son la '
+                   'recomendación para congeladores DOMÉSTICOS, que no '
+                   'garantizan esa temperatura. Si tu abatidor no la '
+                   'certifica, usa un margen mayor y dilo por escrito como '
+                   'margen propio, no como requisito legal. La congelación '
+                   'puede haberla hecho el proveedor si está justificado '
+                   'documentalmente (art.' + N + '8.1): guarda ese '
+                   'justificante. ' + PRESUPUESTAR)},
+    ],
     'nuevas': [
         # --- anisakis (DOM-14): la cadena no aparecía en ninguno de los 141 --
-        {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1420/2006',
+        {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006)',
          'categoria': 'Temperaturas',
          'tarea': ('Congelación preventiva (' + G + '20' + N + '°C durante al '
                    'menos 24' + N + 'h en todo el producto, o ' + G + '35' + N
                    + '°C durante 15' + N + 'h) para pescado de consumo en crudo, '
-                   'marinado, escabechado o en salazón — RD 1420/2006 y '
-                   'Reg. (CE) 853/2004'),
+                   'marinado, escabechado o en salazón — RD 1021/2022, '
+                   'art.' + N + '8.1 (que derogó el RD 1420/2006) y '
+                   'Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D'),
          'responsable': 'Chef', 'estado': 'Pendiente', 'coste': None,
          'equivale_a': ('Congelación preventiva anisakis',
                         'Protocolo de congelación preventiva anisakis'),
          'notas': ('El cap.' + N + '8 sitúa ceviches y tartares en el cuarto '
                    'frío y el cap.' + N + '22 promociona los crudos: esto es '
                    'obligatorio, no opcional. El binomio legal son 24' + N + 'h '
-                   'a ' + G + '20' + N + '°C EN TODO EL PRODUCTO (RD 1420/2006 y '
-                   'anexo III, secc.' + N + 'VIII, cap.' + N + 'III del '
-                   'Reg. (CE) 853/2004); los «5' + N + 'días» son la '
-                   'recomendación de AESAN para congeladores DOMÉSTICOS, que no '
-                   'garantizan esa temperatura. Si tu abatidor no la certifica, '
-                   'usa un margen mayor y dilo por escrito como margen propio, '
-                   'no como requisito legal. ' + PRESUPUESTAR)},
+                   'a ' + G + '20' + N + '°C EN TODO EL PRODUCTO (art.' + N
+                   + '8.1 del RD 1021/2022, que derogó el RD 1420/2006, y '
+                   'anexo III, secc.' + N + 'VIII, cap.' + N + 'III.D del '
+                   'Rgto. (CE) 853/2004); los «5' + N + 'días» son la '
+                   'recomendación para congeladores DOMÉSTICOS, que no '
+                   'garantizan esa temperatura. Si tu abatidor no la '
+                   'certifica, usa un margen mayor y dilo por escrito como '
+                   'margen propio, no como requisito legal. La congelación '
+                   'puede haberla hecho el proveedor si está justificado '
+                   'documentalmente (art.' + N + '8.1): guarda ese '
+                   'justificante. ' + PRESUPUESTAR)},
         {'id': 'DOM-14', 'fuente': 'SPEC §3.2', 'categoria': 'Temperaturas',
          'tarea': 'Registro de lotes congelados preventivamente',
          'responsable': 'Resp. APPCC', 'estado': 'Pendiente', 'coste': None,
@@ -804,7 +845,7 @@ EQUIPAMIENTO = {
          'tarea': 'Expositor de pescado sobre hielo para mise en place',
          'responsable': 'Jefe Partida', 'estado': 'Pendiente', 'coste': None,
          'notas': PRESUPUESTAR},
-        {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1420/2006',
+        {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006)',
          'categoria': 'Partida Pescados',
          'tarea': ('Verificar que el abatidor alcanza ' + G + '20' + N + '°C / '
                    + G + '35' + N + '°C para la congelación preventiva de '

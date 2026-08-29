@@ -181,21 +181,25 @@ APPCC = {
     'anuncia': 33,
     'nuevas': [
         # --- anisakis (DOM-14): la carta de casual lleva TARTAR DE ATÚN ----
-        {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1420/2006',
+        {'id': 'DOM-14', 'fuente': 'SPEC §3.2 · RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006)',
          'categoria': 'Temperaturas',
          'tarea': ('Congelación preventiva (' + G + '20' + N + '°C durante al '
                    'menos 24' + N + 'h, o ' + G + '35' + N + '°C durante '
                    '15' + N + 'h) para pescado de consumo crudo o marinado — '
-                   'RD 1420/2006 y Reg. (CE) 853/2004'),
+                   'RD 1021/2022, art.' + N + '8.1 (que derogó el '
+                   'RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, '
+                   'Secc. VIII, Cap. III.D'),
          'responsable': 'Jefe cocina', 'estado': 'Pendiente', 'coste': None,
          'notas': ('El «Tartar de atún» de menu-engineering-matrix.xlsx es '
                    'pescado crudo: la congelación preventiva es obligatoria, '
                    'no opcional, y la cadena «anisakis» no aparecía en '
                    'ninguna de las 33 filas. El binomio legal son 24' + N
                    + 'h a ' + G + '20' + N + '°C EN TODO EL PRODUCTO; los '
-                   '«5' + N + 'días» son la recomendación de AESAN para '
-                   'congeladores DOMÉSTICOS, que no garantizan esa '
-                   'temperatura. ' + PRESUPUESTAR)},
+                   '«5' + N + 'días» son la recomendación para congeladores '
+                   'DOMÉSTICOS, que no garantizan esa temperatura. La '
+                   'congelación puede haberla hecho el proveedor si está '
+                   'justificado documentalmente (art.' + N + '8.1 del '
+                   'RD 1021/2022): guarda ese justificante. ' + PRESUPUESTAR)},
         {'id': 'DOM-14', 'fuente': 'SPEC §3.2', 'categoria': 'Temperaturas',
          'tarea': 'Registro de lotes congelados preventivamente',
          'responsable': 'Jefe cocina', 'estado': 'Pendiente', 'coste': None,

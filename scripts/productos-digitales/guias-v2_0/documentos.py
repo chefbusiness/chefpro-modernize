@@ -126,7 +126,10 @@ RX_NO_LATINOS = re.compile(
 RX_PRECIO = re.compile(
     r'(precio|coste|cuesta|€|EUR|euros|tarifa|presupuesto|inversión|factura|'
     r'tendencia|tendencias)', re.I)
-# Citas legales: «RD 1420/2006», «Reglamento (CE) 853/2004», «art. 34.9».
+# Citas legales: «RD 1021/2022», «Reglamento (CE) 853/2004», «art. 34.9».
+# (Ojo: «RD 1420/2006» ya NO es cita legal aceptada — quedó derogado el
+#  22-dic-2022 por el RD 1021/2022; sólo vale dentro de «que derogó el
+#  RD 1420/2006». Gate: `motor.PROHIBIDAS`.)
 RX_LEGAL_ANTES = re.compile(
     r'(RD|R\.D\.|Real\s+Decreto|RDL|Reglamento|Directiva|Ley|LIS|BOE|Estatuto|'
     r'art\.|artículo|CTE|UNE|ISO|edición|desde|Reg\.)[^.]{0,60}$', re.I)
@@ -158,7 +161,7 @@ def erratas_fechas(texto):
             continue
         antes = texto[max(0, m.start() - 60):m.start()]
         if RX_LEGAL_ANTES.search(antes) or re.search(r'\d+/$', antes):
-            continue                      # «RD 1420/2006», «853/2004»
+            continue                      # «RD 1021/2022», «853/2004»
         ventana = texto[max(0, m.start() - 90):m.end() + 90]
         if RX_PRECIO.search(ventana):
             fallos.append({'anio': anio,
@@ -214,24 +217,37 @@ def celda(xlsx_dir, ref):
 def eur(v, dec=0):
     if v is None:
         return ''
-    s = f'{float(v):,.{dec}f}'.replace(',', '\x00').replace('.', ',').replace('\x00', '.')
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return str(v)
+    s = f'{v:,.{dec}f}'.replace(',', '\x00').replace('.', ',').replace('\x00', '.')
     return f'{s}{NARROW}€'
 
 
 def pct(v, dec=1):
     if v is None:
         return ''
-    s = f'{float(v) * 100:,.{dec}f}'.replace(',', '\x00').replace('.', ',').replace('\x00', '.')
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return str(v)
+    s = f'{v * 100:,.{dec}f}'.replace(',', '\x00').replace('.', ',').replace('\x00', '.')
     return f'{s}{NARROW}%'
 
 
 def num(v, dec=0):
     if v is None:
         return ''
-    return f'{float(v):,.{dec}f}'.replace(',', '\x00').replace('.', ',').replace('\x00', '.')
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return str(v)
+    return f'{v:,.{dec}f}'.replace(',', '\x00').replace('.', ',').replace('\x00', '.')
 
 
-FORMATOS = {'eur': eur, 'eur2': lambda v: eur(v, 2), 'pct': pct,
+FORMATOS = {'eur': eur, 'eur2': lambda v: eur(v, 2), 'pct': pct, 'pct1': pct,
+            'pct2': lambda v: pct(v, 2),
             'pct0': lambda v: pct(v, 0), 'num': num, 'num1': lambda v: num(v, 1),
             'num2': lambda v: num(v, 2), 'txt': lambda v: '' if v is None else str(v)}
 
@@ -623,8 +639,6 @@ def parsear(md_text):
             bloques.append(('hr', None))
             i += 1
             continue
-        for k, tag in ((2, 'h1'), (3, 'h2'), (4, 'h3'), (5, 'h4')):
-            pass
         if linea.startswith('#### '):
             bloques.append(('h4', linea[5:].strip())); i += 1; continue
         if linea.startswith('### '):

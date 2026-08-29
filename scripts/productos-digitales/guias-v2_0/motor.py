@@ -962,6 +962,51 @@ def formato_por_etiqueta(ws, fila_cab, informe=None, fname=''):
 
 
 # ==========================================================================
+# Gate de normativa DEROGADA (mismo estilo que `pack-appcc-v2_0/motor.py`)
+# ==========================================================================
+#: Cadenas que NO pueden quedar vivas en ninguna celda de texto de un fichero
+#: PROCESADO. Va por regex y con lookbehind, porque la mención HISTÓRICA sí es
+#: legítima y además es la que le explica al comprador por qué han cambiado las
+#: citas de su guía.
+#:
+#: ANIS-01/ANIS-03 (research `auditorias/guias-v2-research-sector.json`,
+#: verificado en la ficha de estado del BOE): el RD 1420/2006 quedó DEROGADO el
+#: 22-dic-2022 por la disposición derogatoria única.h) del RD 1021/2022. La
+#: norma vigente es el art. 8.1 del RD 1021/2022 —congelación a −20 °C o
+#: inferior durante ≥ 24 h en la totalidad del producto, o −35 °C durante
+#: ≥ 15 h, y la puede haber hecho una etapa anterior de la cadena si está
+#: justificado documentalmente— junto al Rgto. (CE) 853/2004, Anexo III,
+#: Secc. VIII, Cap. III.D (redacción del Rgto. (UE) 1276/2011). La obligación
+#: de informar al consumidor con carteles o carta-menú no desaparece: es el
+#: art. 8.2 del mismo RD 1021/2022.
+#:
+#: Aquí NO hay sustitución automática a propósito: cambiar sólo la sigla dejaría
+#: frases que cuelgan el apartado equivocado de la norma nueva. Cada módulo de
+#: contenido reescribe su frase; esto es el gate que impide que vuelva.
+PROHIBIDAS = [
+    ('RD 1420/2006 (derogado por el RD 1021/2022)',
+     re.compile(r'(?<!derogó al )(?<!derogó el )RD\s*1420/2006', re.I)),
+]
+
+
+def restos_prohibidos(wb, fname=''):
+    """Celdas de texto con una cita derogada viva. Devuelve la lista de
+    `fichero:hoja!celda: etiqueta → texto`, que `main.py` mete en `fallos`."""
+    fuera = []
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                if not isinstance(c.value, str):
+                    continue
+                for etiqueta, rx in PROHIBIDAS:
+                    if rx.search(c.value):
+                        fuera.append((fname + ':' if fname else '')
+                                     + ws.title + '!' + c.coordinate + ': '
+                                     + etiqueta + ' → ' + repr(c.value[:90]))
+    return fuera
+
+
+# ==========================================================================
 # §1.12 — anchos y cabeceras cortadas
 # ==========================================================================
 def anchos(ws, mapa):

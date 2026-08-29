@@ -1824,9 +1824,25 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
     conf_t = ((getattr(contenido, 'TURNOS', None) or {}) if contenido else {})
     brutos = conf_t.get('brutos') or {}
     turnos_ej = conf_t.get('cuadrante') or {}
+    # RT-08-ter (medido en casual, T6) — `forzar_cuadrante` SOBRESCRIBE un
+    # patrón ya presente, no sólo huecos. Motivo: los 5 hermanos llegan con
+    # la rejilla YA rellena de v1.1, y en casual 8 de los 13 puestos estaban
+    # tecleados a 7 días de «P» o de un único turno corrido (70 h u 56 h /
+    # semana) SIN un solo día de libranza — peor que el B-02 del
+    # representante (que sí llevaba «L», sólo que insuficientes). Dejarlo tal
+    # cual incumple el art.º 34.1 ET (jornada máxima) y el 37.1 (descanso
+    # semanal) a la vez, y el gate de esta familia exige «brigada ≤ 40 h/
+    # puesto». La SPEC ya autorizó recalibrar un cuadrante de v1.1 para
+    # cumplir el límite legal en el propio representante (B-02, §7-bis.12
+    # aplicado a valores, no sólo a fórmulas); aquí se aplica el mismo
+    # criterio con el mismo mecanismo (`contenido` del paquete, no un valor
+    # inventado sin fuente): sólo cuando el módulo de contenido lo declara
+    # EXPLÍCITAMENTE con `forzar_cuadrante=True`, y sólo sobre los puestos
+    # para los que trae un patrón — nunca por defecto.
+    forzar = bool(conf_t.get('forzar_cuadrante'))
     puestos_txt = dict((f_, _norm(ws.cell(row=f_, column=3).value))
                        for f_ in puestos)
-    precargados = 0
+    precargados = recalibrados = 0
     for f_, etiqueta in puestos_txt.items():
         valor = brutos.get(etiqueta)
         if valor is not None and ws['L' + str(f_)].value is None:
@@ -1835,11 +1851,23 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
             precargados += 1
         patron = turnos_ej.get(etiqueta)
         if patron and modelo != 'T3':
+            tocado = False
             for i, letra in enumerate(patron[:7]):
                 col = chr(ord('D') + i)
-                if ws[col + str(f_)].value is None:
+                if ws[col + str(f_)].value is None or forzar:
+                    if ws[col + str(f_)].value != letra:
+                        tocado = True
                     motor.val(ws, col + str(f_), letra)
                     motor.verde(ws, col + str(f_))
+            if forzar and tocado:
+                recalibrados += 1
+    if recalibrados:
+        cambios.append(
+            fname + ':' + ws.title + ': ' + str(recalibrados) + ' cuadrantes '
+            'recalibrados a ≤ 40 h/semana con días de libranza reales — '
+            'v1.1 tenía puestos a 70 h/semana (7 días de «P») o 56 h/semana '
+            '(7 días de un único turno) sin un solo «L» [DOM-16 · §4.4 · '
+            'RT-08-ter]')
     if precargados:
         cambios.append(
             fname + ':' + ws.title + '!L' + str(puestos[0]) + ':L'

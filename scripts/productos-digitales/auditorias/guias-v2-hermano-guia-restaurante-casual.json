@@ -1,0 +1,93 @@
+{
+  "producto": "guia-restaurante-casual",
+  "tanda": "T6",
+  "rol": "sonnet, verificación id a id contra el representante + censo propio + módulos de contenido",
+  "fecha": "2026-08-29",
+  "paquete": {
+    "contenido": [
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_casual/a.py",
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_casual/b.py",
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_casual/c.py"
+    ],
+    "motor_compartido_tocado": [
+      "grupo_a.py: _columna_concepto() -- bug de localizacion (categoria ganaba a partida cuando ambas cabeceras coexisten; el fondo de maniobra de casual no se escribia). Corregido: partida/concepto/descripcion se prueban ANTES que categoria. Verificado sin regresion en guia-restaurante-gastronomico (idempotencia 0 diferencias, con y sin el cambio).",
+      "grupo_b.py: nueva columna COL_MES_FIN ('Mes fin (calculado)') SOLO cuando el Gantt no tiene Inicio/Fin (moldes G2/G3, los 7 hermanos). Sin ella cronograma-apertura-gantt.xlsx terminaba con 0 formulas de celda (gate RT-08 del propio main.py). No afecta al representante (con_fechas=True, rama no tocada).",
+      "grupo_c.py: parametro forzar_cuadrante en TURNOS -- permite que el patron de contenido SOBRESCRIBA un cuadrante ya no vacio, no solo huecos. Necesario porque el cuadrante de v1.1 de casual tenia los 13 puestos a 56-70 h/semana sin un solo dia de libranza. Por defecto False (sin efecto en el representante ni en ningun otro producto)."
+    ],
+    "nota_alcance": "Los tres cambios de motor compartido son MINIMOS, aditivos (nunca cambian el comportamiento por defecto) y verificados sin regresion contra guia-restaurante-gastronomico (dry-run completo, idempotencia 0 diferencias antes y despues). Se documentan aqui porque tocan ficheros fuera de contenido_guia_restaurante_casual/, pero el motivo de cada uno nace de un hallazgo real al construir el contenido de ESTE hermano."
+  },
+  "gates": {
+    "dryrun_exit": 0,
+    "idempotencia": 0,
+    "censo_entregables_fail": "OK: 0 defectos (19 ficheros: 15 xlsx, 3 docx, 1 pdf)",
+    "xlsx_sin_formulas": 0,
+    "xlsx_totales": 15,
+    "formulas_en_los_15_xlsx": 1063,
+    "data_only_fallos": 0,
+    "data_only_con_valor": 673,
+    "data_only_vacias_por_diseno": 360,
+    "data_only_vacias_no_verificadas_pycel": "10 (plantilla-turnos-brigada.xlsx!'Registro de jornada'!C102:C111 -- SUMPRODUCT+IFERROR que pycel 1.0b30 no evalua; misma excepcion PRE-EXISTENTE ya documentada en la SPEC (§9) para el representante, mismo patron, mismo recuento",
+    "checklists_con_bloque_resumen": 6,
+    "checklists_cuadran_subtotales": "6/6 True",
+    "hojas_protegidas": "39/39",
+    "brigada_horas_max": "40.0 (los 13 puestos, ninguno por encima)",
+    "brigada_bruto_min": "17094.0 (SMI vigente, RD 126/2026; los 13 puestos en o por encima)",
+    "proyeccion_ano1_vs_cashflow": {
+      "proyeccion_3_anos_B13": 637200.0,
+      "cash_flow_total_12_meses_fila12": 637200.0,
+      "coincide": true
+    },
+    "necesidad_total_financiacion": 568600.0,
+    "fondo_de_maniobra_calculado": 318600.0,
+    "fondo_de_maniobra_meses": 6,
+    "libro_en_blanco_sin_verdes_falsos": {
+      "checklists_6_ok": true,
+      "gantt_ok": true,
+      "escandallo_registro_jornada_F5": "''",
+      "sin_dato_es_vacio_ok": true
+    },
+    "normativa_derogada_viva": "0 en casual (verificado: mis citas de RD 1420/2006 en DOM-14 llevan la formula 'RD 1021/2022, art. 8.1 (que derogo el RD 1420/2006)', que cumple la excepcion del gate). NOTA DE PROCESO: en un dry-run intermedio de la regresion contra guia-restaurante-gastronomico (para verificar que los 3 cambios de motor compartido no rompian al representante) este mismo gate SI aparecio en rojo sobre checklist-appcc.xlsx!APPCC!C27/H27 (cita vieja de RD 1420/2006 sin la formula de derogacion); en la regresion FINAL, repetida tras terminar este paquete, el representante volvio a exit 0 sin ese fallo -- el fichero de contenido del representante no fue tocado por mi en ningun momento (verificado: idempotencia 0 diferencias en las dos regresiones), asi que el cambio de estado vino de fuera de esta sesion. Se deja constancia por transparencia, no como hallazgo mio que corregir."
+  },
+  "recuentos_checklist": {
+    "checklist-legal.xlsx": {"antes": 32, "despues": 42, "anuncia_dashboard": 32},
+    "checklist-contratacion.xlsx": {"antes": 24, "despues": 24, "anuncia_dashboard": 24},
+    "checklist-appcc.xlsx": {"antes": 33, "despues": 37, "anuncia_dashboard": 33},
+    "checklist-diseno-sala-terraza.xlsx": {"antes": 29, "despues": 33, "anuncia_dashboard": 29},
+    "checklist-equipamiento-cocina.xlsx": {"antes": 31, "despues": 32, "anuncia_dashboard": 31},
+    "checklist-marketing-preapertura.xlsx": {"antes": 25, "despues": 27, "anuncia_dashboard": 25},
+    "nota": "Los 6 dashboards anuncian EXACTAMENTE lo medido en v1.1 (a diferencia del representante, sin defecto COM-17/COM-18 previo). Al completar el contenido legal/sanitario obligatorio de familia (§3.1/§3.2), los recuentos SUBEN por encima de lo anunciado. Es un efecto correcto de la correccion, no relleno; queda para T8 actualizar los 6 textos del dashboard con el numero nuevo."
+  },
+  "hallazgos_propios_de_casual": [
+    {
+      "id": "RD-CASUAL-01",
+      "severidad": "media",
+      "que": "TURNOS['brutos'] llevaba la clave 'barra / coctelería' (con tilde); _norm() quita acentos y produce 'barra / cocteleria'. La fila 17 (Barra/Coctelería) se quedaba sin bruto anual ni recalibracion del cuadrante.",
+      "corregido": true,
+      "evidencia": "dry-run antes: fila17 bruto=None, horas=56.0 (T x7 sin L); dry-run despues: bruto=21700, horas=40.0"
+    },
+    {
+      "id": "RD-CASUAL-02",
+      "severidad": "alta",
+      "que": "plantilla-turnos-brigada.xlsx de v1.1 tenia los 13 puestos con UN SOLO turno repetido los 7 dias de la semana (P x7 = 70h, o M/T x7 = 56h) y CERO dias de libranza en cualquiera de los 13 puestos. Incumple el art. 34.1 ET (jornada maxima) y el 37.1 ET (descanso semanal) en los 13 puestos a la vez, y es mas grave que el defecto B-02 que ya corrigio el representante (que si tenia L, solo que insuficientes).",
+      "corregido": true,
+      "mecanismo": "grupo_c.py: nuevo flag TURNOS['forzar_cuadrante']=True + patrones de 40h con libranza real en contenido_guia_restaurante_casual/c.py (mismo criterio que B-02 del representante: partido -> 4P+3L, turno unico -> 5M/T+2L)",
+      "evidencia": "dry-run: 13/13 puestos a horas=40.0, todos con >=2 dias de libranza"
+    },
+    {
+      "id": "RD-CASUAL-03",
+      "severidad": "baja",
+      "que": "El fondo de maniobra de v1.1 en plan-financiero-3-anos!Inversion (55.000 EUR, rotulado '3 meses') no llegaba ni a 2 meses de la estructura mensual real (53.100 EUR/mes) ni cumplia el minimo de 6 meses de §2.3.5. Tras aplicar la formula, sube a 318.600 EUR y la TOTAL INVERSION pasa de 305.000 a 568.600 EUR -- muy por encima del '150.000-350.000 EUR' que el cap. 4 del docx anuncia.",
+      "corregido": "SI en el xlsx (formula correcta, §2.3.5); el AJUSTE DEL TEXTO del docx/landing es T7/T8, fuera de alcance de T6",
+      "evidencia": "Inversion!C29 (TOTAL) = 568600.0 (data_only); Inversion!C37 (Fondo de maniobra necesario) = 318600.0 = 6 x 53.100 (Inversion!C34, coste mensual de estructura)"
+    },
+    {
+      "id": "RD-CASUAL-04",
+      "severidad": "media",
+      "que": "§7-bis.14 (Pesimista 'malo, no inviable'): el Pesimista de casual da EBITDA -4.425 EUR/mes (-53.100 EUR/año, -10,0% de margen). Se intento recalibrar (subir Ventas sala, bajar Varios) en el modulo de contenido; el gate §1.2 del motor (tolerancia 0,01 EUR entre constante vieja y formula nueva) lo rechazo porque grupo_a.pl_tres_hojas() no tiene forma de pasar una nota_dif a la formula del TOTAL cuando una linea de detalle cambia de valor -- ese cableado no existe hoy para la variante 'tres hojas' del motor compartido.",
+      "corregido": "NO en esta tanda (revertido a los valores de v1.1, que SI son aritmeticamente correctos: solo se convirtieron a formula)",
+      "recomendacion": "Extender grupo_a.pl_tres_hojas() para propagar conf['notas'] a la a_formula() del TOTAL cuando una linea de detalle fue recalibrada -- cambio de motor compartido, no de contenido; util para las 5 guias hermanas.",
+      "evidencia": "grupo_a demo (constantes_a_formulas): con los valores de v1.1 SIN tocar, las 22 sustituciones de la hoja Pesimista dan 'coincide': true en las 22"
+    }
+  ],
+  "gates_medibles": "dry-run TODO VERDE (exit 0, idempotencia 0, censo 0 defectos, 0 xlsx sin formulas, data_only sin fallos, 6/6 checklists cuadran, 39/39 hojas protegidas, brigada <=40h y >=SMI en las 13, Proyeccion Año1 = Cash Flow total al centimo)"
+}

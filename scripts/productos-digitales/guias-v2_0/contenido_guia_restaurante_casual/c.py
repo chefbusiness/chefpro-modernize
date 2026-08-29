@@ -68,9 +68,13 @@ MENU = {}
 #: → 7 puestos de cocina aquí; docx cap. 14 «Equipo de Sala 6-8 personas» →
 #: 6 puestos de sala aquí, dentro de los dos rangos). NO hay columna «Horas/
 #: Semana» ni «Bruto anual»: `grupo_c.py` las añade y usa `brutos` para
-#: precargar un ejemplo por puesto — el cuadrante en sí (`cuadrante` de abajo,
-#: vacío) NO hace falta rellenarlo: las celdas D:J ya están escritas y
-#: `grupo_c._headcount`/`_precargar` sólo escriben donde la celda está VACÍA.
+#: precargar un ejemplo por puesto. El cuadrante en sí SÍ hace falta
+#: tocarlo, y no para rellenar huecos: v1.1 tenía los 13 puestos a 7 días
+#: de un único turno (P, M o T) SIN NINGÚN «L», es decir, 56-70 h/semana con
+#: cero días de libranza en los 13 puestos — verificado en el dry-run del
+#: gate «brigada ≤ 40 h/puesto» de T6 (§ informe). `cuadrante` de abajo trae
+#: el patrón CORREGIDO y `forzar_cuadrante=True` para que se escriba encima
+#: del que ya había.
 #:
 #: Fuente de cada bruto: docx caps. 13-14 («Organigrama tipo», rangos
 #: EUR brutos/mes), convertidos a bruto ANUAL con 14 pagas (la que el propio
@@ -108,10 +112,47 @@ TURNOS = {
         'camarero 3': 20300,
         'runner': 17094,                  # 1.200 EUR/mes x14 = 16.800 < SMI
                                           # → SUELO SMI (17.094 EUR/año)
-        'barra / coctelería': 21700,      # 1.550 EUR/mes x14
+        # ⚠️ La clave va SIN tilde en la í: es el resultado de
+        # `grupo_c._norm()` (quita acentos), no el texto que se ve en la
+        # celda C17 («Barra / Coctelería»). Con la tilde, la clave no
+        # matcheaba nunca y esta fila se quedaba sin bruto ni cuadrante —
+        # cazado en el dry-run de T6 (informe, hallazgo propio).
+        'barra / cocteleria': 21700,      # 1.550 EUR/mes x14
     },
-    # El cuadrante YA está relleno de P/T/M en el fichero original: no hay
-    # nada que precargar aquí (a diferencia del representante, cuya rejilla
-    # llegaba en blanco).
-    'cuadrante': {},
+    # RT-08-ter (T6) — el cuadrante NO se deja «tal cual»: medido en el
+    # fichero original, 8 de los 13 puestos estaban a 7 días de «P» (Partido,
+    # 10 h) = 70 h/semana, y 3 más a 7 días de un único turno (M o T, 8 h) =
+    # 56 h/semana — los 13 puestos, CERO días de libranza («L») en toda la
+    # semana. Incumple el art. 34.1 ET (jornada) y el 37.1 ET (descanso
+    # semanal) a la vez, y es peor que el B-02 del representante (que sí
+    # tenía «L», sólo que insuficientes: 5 «P» en vez de 4). Se recalibra con
+    # el mismo criterio que B-02: los turnos PARTIDOS bajan a 4 «P» (40 h) y
+    # los de un único turno corrido bajan a 5 «M»/«T» (40 h), los dos con
+    # libranza REAL, y `forzar_cuadrante=True` para que `grupo_c.py`
+    # sobrescriba el patrón viejo (no sólo huecos: aquí no hay huecos que
+    # rellenar, hay que corregir lo que ya estaba escrito). Ningún puesto
+    # queda por debajo de 2 días de libranza; los partidos, con 3.
+    'forzar_cuadrante': True,
+    #: Original v1.1 (medido) → recalibrado (40 h, con libranza):
+    #:   jefe/segundo/cocinero1-2/ayudante/office/encargado/camarero1-2/
+    #:   runner: «PPPPPPP» (70 h) → 4 «P» + 3 «L» (40 h)
+    #:   cocinero 3: «MMMMMMM» (56 h) → 5 «M» + 2 «L» (40 h)
+    #:   camarero 3 / barra-coctelería: «TTTTTTT» (56 h) → 5 «T» + 2 «L» (40 h)
+    #: Los días de libranza se reparten de forma escalonada (no todo el mundo
+    #: libra el mismo día), como ya hace el representante.
+    'cuadrante': {
+        'jefe de cocina':      'PPPPLLL',
+        'segundo de cocina':   'PPPLLLP',
+        'cocinero 1':          'PPLLLPP',
+        'cocinero 2':          'PLLLPPP',
+        'cocinero 3':          'MMMMMLL',
+        'ayudante cocina':     'LLLPPPP',
+        'office':              'PPPPLLL',
+        'encargado sala':      'PPPLLLP',
+        'camarero 1':          'PPLLLPP',
+        'camarero 2':          'PLLLPPP',
+        'camarero 3':          'TTTTTLL',
+        'runner':              'LLLPPPP',
+        'barra / cocteleria':  'TTTTTLL',
+    },
 }

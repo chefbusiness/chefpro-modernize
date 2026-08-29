@@ -320,6 +320,10 @@ def procesar(carpeta, fname, grupos, contenidos, informe_global, pid):
 
     literales = motor.literales_sospechosos(wb, fname)
     cuenta = motor.contadores(wb, fname)
+    # Gate de normativa DEROGADA (ANIS-01/ANIS-03): se mira el libro tal como
+    # va a quedar escrito, no el .py que lo genera — la frase se compone a
+    # trozos y un `grep` sobre el fuente no ve la cadena entera.
+    restos = motor.restos_prohibidos(wb, fname)
     wb.save(path)
 
     registro = list(motor.REGISTRO)
@@ -346,6 +350,7 @@ def procesar(carpeta, fname, grupos, contenidos, informe_global, pid):
             # y el lector creyó el problema acotado.
             'literales_sospechosos_total': len(literales),
             'literales_sospechosos': literales[:60],
+            'restos_normativa_derogada': restos,
             'contadores': cuenta})
     return registro, formulas_en_fichero
 
@@ -1069,6 +1074,9 @@ def main():
                               contenido=contenidos.get(letra)) or {}
             fallos += propias.pop('fallos', [])
             demos.update(propias)
+    fallos += ['normativa derogada viva: ' + r
+               for fi in informe_ficheros
+               for r in fi.get('restos_normativa_derogada', [])]
     if sin_formulas:
         fallos.append('§9: ' + str(len(sin_formulas)) + ' xlsx terminan el '
                       'post-proceso con CERO fórmulas (' 
