@@ -396,3 +396,13 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
   mexicano, peruano, japonés, nikkei. Gastronómico: PDF 10 p. Dark-kitchen: PDF 27 p = docx (7.0k). Ninguna se acerca a las «80+ páginas». Pasado al
   redactor de la SPEC: la decisión 6 aplica a las 8 y el pipeline genera PDF + docx desde el mismo texto.
 - **R1 `plan-negocio-cocteleria-eventos`** (planes línea B) lanzada; persistir con `r1-desde-journal.py … plan-negocio-cocteleria-eventos plan`.
+- **HOTFIX LIVE (`fcbe125`, deploy ready 03:14)**: 43 fragmentos / 192 caracteres → 0 en los 7 docx; gate LIVE de los 6 planes 0 fallos; md5 7/7 = repo.
+  Respaldo de los originales en el scratchpad de esta sesión (`hotfix-docx/bak/`). Una sustitución sin original recuperable: bar-restaurante p117
+  «restauración con伏 que superen los 75 m²» → «con locales que superen» (que John la valide si le importa).
+  **Gate permanente: `python3 scripts/productos-digitales/gate-no-latinos.py [--only <pid>]`** (`7b8ee48`; 495 ficheros, 0 hits). Gotcha: en un
+  docx SOLO se mira `document.xml` + cabeceras/pies — `theme1.xml`/`fontTable.xml` traen «ＭＳ ゴシック / 宋体 / 맑은 고딕» de serie (32 falsos
+  positivos por fichero); y la coma ideográfica «、» (U+3001) se escapaba del primer regex.
+  **Erratas vistas y NO tocadas (para la v2.0 de planes, que regenera los docx con bridge.py):** «horno de convención» ×3 en cafetería (debe ser
+  convección), «mudança» en panadería, restos en inglés en el catálogo de coctelería («tono amber», «colores cobalt», «condensationados»,
+  «punctuated», «captive»), comas sin espacio en los 7 subtítulos de portada y en RRHH de bar-restaurante, «este categoría», «debe recuperase»,
+  «mobiliarioselected». Lista completa en `auditorias/hotfix-no-latinos-docx-2026-08-29.json`.
