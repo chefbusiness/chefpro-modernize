@@ -178,6 +178,18 @@ FRASE_NIVELES_SIN_AREAS = (
     'Cada fichero cubre un nivel: el de negocio marca el HITO (encender, '
     'abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los '
     'dos, es a propósito: una es el hito y la otra el detalle.')
+#: CB-E7 (sub-familia ChefBusiness) — la tercera variante: kits SIN fichero de
+#: negocio y SIN fichero de caja (sushi-bar, asador, chef-privado). Las dos
+#: frases de arriba prometen un nivel de «negocio» y otro de «dinero» que estos
+#: kits no entregan: no existen los 08/09 de la familia y ningún fichero suyo
+#: tiene firma de recuento, registro mensual, liquidación ni registro de
+#: eventos (medido el 2026-08-29 sobre `dl/`). Es la misma clase de defecto que
+#: m1: una frase que enumera niveles que el kit no tiene.
+FRASE_NIVELES_SOLO_AREAS = (
+    'Este kit no trae un fichero aparte de negocio ni de caja: el de áreas es '
+    'el que detalla CÓMO se hace el día en cada zona, y es también el marco '
+    'del día. Si una tarea aparece en dos ficheros, es a propósito: uno la '
+    'enuncia y el otro la detalla.')
 
 
 #: m6 (motor 2.5) — MODELO DE CAJA POR EVENTOS. Una empresa de catering no
@@ -209,7 +221,18 @@ def frase_niveles():
 
     m6 — y con el vocabulario del modelo de caja que tiene: en catering no hay
     «caja», hay cobros por evento.
+
+    CB-E7 — y sin prometer un nivel de «negocio» o de «dinero» en los kits que
+    no tienen ninguno de los dos. Hoy esta rama no la alcanza nadie desde
+    `_bloque_conecta` (la frase sólo se imprime con `len(orden) > 1`, y sin
+    negocio ni caja el `orden` tiene como mucho un paso, «áreas»); queda como
+    la respuesta correcta para cualquier otro consumidor —el módulo de
+    contenido de un kit, un bloque nuevo de Instrucciones— y para que la
+    función no pueda devolver una frase falsa si mañana se la llama desde otro
+    sitio. Está declarado como hallazgo en el informe de T0.
     """
+    if CTX.get('sin_caja'):
+        return FRASE_NIVELES_SOLO_AREAS
     if es_modelo_eventos():
         return (FRASE_NIVELES_EVENTOS_AREAS if CTX.get('f_areas')
                 else FRASE_NIVELES_EVENTOS)
@@ -841,6 +864,24 @@ def _mayoria(valores):
 
 class KitAmbiguo(RuntimeError):
     """Dos ficheros compiten por el mismo papel: se ABORTA, no se adivina."""
+
+
+class MoldeDesconocido(RuntimeError):
+    """CB-E6 — el producto entero es de un molde que el motor no conoce.
+
+    Hermana de `KitAmbiguo` y por el mismo motivo: el motor no adivina. Hasta
+    ahora un kit del molde PLANO (una hoja por fichero, cabecera en la fila 3,
+    sin columna «Nº», sin contador y sin hoja «Instrucciones») atravesaba el
+    pipeline entero **en verde**: `hojas_reconocidas` devolvía `{}` en los 11
+    ficheros, `aplicar` caía en la rama P4, que tampoco reconocía nada,
+    `cerrar` no llegaba a correr — y aun así `main.py` GUARDABA los 11 ficheros
+    con la metadata nueva y el censo `--fail` daba 0 defectos. Medido el
+    2026-08-29 en `kit-tareas-tapas-bar`: «en alcance 0/11», 0 fórmulas, 11
+    cambios de sólo metadata. Un producto que sale «guardado sin novedad»
+    porque el motor no ha entendido NADA de él es la peor salida posible: el
+    informe dice verde y el entregable se queda en la v1.1 con el sello de la
+    v2.0.
+    """
 
 
 def papel_del_fichero(wb):

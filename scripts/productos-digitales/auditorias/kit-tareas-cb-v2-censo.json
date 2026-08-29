@@ -1,0 +1,2876 @@
+{
+  "total_celdas": 564,
+  "por_kit": [
+    {
+      "pid": "kit-tareas-sushi-bar",
+      "molde": "▸ (rico, con Instrucciones en todos los ficheros)",
+      "hallazgos": [
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B7",
+          "actual": "▸ El pescado debe congelarse a -20°C durante minimo 7 dias o -35°C durante 15 horas",
+          "correccion": "Duración incorrecta a -20°C: la norma exige ≥24 h a -20°C (no \"mínimo 7 días\"); a -35°C sí son ≥15 h. Corregir a \"-20 °C ≥ 24 h o -35 °C ≥ 15 h\" citando RD 1420/2006 y Rgto. 853/2004 (con la excepción del Rgto. 1276/2011) en celda de nota, per §7-bis.4/19."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!B27",
+          "actual": "IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias",
+          "correccion": "Umbral y duración incorrectos: el límite crítico del PCC es -20°C (no -18°C, que además contradice la propia hoja \"Temperaturas Diario\"!B6 que sí usa -20°C) y el conteo a reiniciar es de 24 h, no \"7 dias\". Un solo límite por PCC (§7-bis.4)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!A2",
+          "actual": "Normativa: RD 1420/2006 y Reglamento CE 853/2004 — Obligatorio para todo establecimiento que sirva pescado crudo o poco cocinado",
+          "correccion": "Cita incompleta: falta la duración del criterio (-20 °C ≥ 24 h o -35 °C ≥ 15 h) y la excepción del Rgto. 1276/2011, exigidas en celda de nota por §7-bis.4/19."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B7",
+          "actual": "Calibracion termometros (camara, vitrina, cocina)",
+          "correccion": "Fila de \"Tareas Mensuales\" (cadencia mensual, 12x/año) pero BONUS-02!Calendario Anual!A21 sólo la marca 2 veces (Ene, Jul). Unificar a mensual en las dos hojas, per §7-bis.21."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A21",
+          "actual": "Calibracion termometros (marcada solo en Ene y Jul)",
+          "correccion": "Discrepancia con 07!Tareas Mensuales!B7 (mensual). Marcar las 12 columnas o degradar 07 a la cadencia real; la decisión firmada exige mensual."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B9",
+          "actual": "Revision sistema de frio: gas, compresor, temperaturas",
+          "correccion": "Listada como mensual pero BONUS-02!Calendario Anual!A20 la marca sólo 2 veces (Mar, Sep). El criterio de familia es \"mensual por el titular + anual por empresa\" (§7-bis.21): faltan las dos cadencias diferenciadas."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A20",
+          "actual": "Revision sistema de frio (tecnico) (marcada solo en Mar y Sep)",
+          "correccion": "No refleja la doble cadencia mensual/anual del criterio de familia; discrepa además de 07!B9."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B10",
+          "actual": "Verificar extintores y salidas de emergencia",
+          "correccion": "Una sola fila mensual; el criterio de familia exige DOS filas (revisión trimestral del titular + retimbrado/revisión anual por empresa autorizada, RD 513/2017). Falta la segunda fila y la cadencia real difiere de BONUS-02!A24 (2x/año)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A24",
+          "actual": "Revision extintores y emergencia (marcada solo en Jun y Dic)",
+          "correccion": "Discrepa de 07!B10 (mensual) y no desdobla trimestral titular / anual empresa exigido por §7-bis.21."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B7",
+          "actual": "Registrar mermas de pescado en hoja de control",
+          "correccion": "Promete una \"hoja de control\" de mermas que no existe en ningún fichero del kit (ninguna pestaña llamada \"Registro de Mermas\"). Añadir la hoja per §7-bis.18/DOM-08, o cambiar el texto para no prometerla."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B8",
+          "actual": "Verificar camara congelacion anisakis (-20°C o menos)",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!A12",
+          "actual": "  PREPARACION ARROZ SUSHI",
+          "correccion": "Falta tilde/ñ: \"PREPARACION\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B14",
+          "actual": "Cocer arroz segun ratio agua/arroz del local",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B21",
+          "actual": "Sacar pescado del dia de camara y verificar frescura",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B32",
+          "actual": "Verificar reservas del dia y preparar mesas/barra",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B9",
+          "actual": "Descartar arroz sobrante — NUNCA reutilizar al dia siguiente",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B10",
+          "actual": "Descartar piezas con mas de 2h fuera de refrigeracion",
+          "correccion": "Falta tilde/ñ: \"refrigeracion\" → \"refrigeración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B11",
+          "actual": "Verificar lotes de congelacion anisakis en curso",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B23",
+          "actual": "Limpieza sala: mesas, suelos, banos",
+          "correccion": "Falta tilde/ñ: \"banos\" → \"baños\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Instrucciones!B2",
+          "actual": "Preparacion Arroz Sushi y Corte de Pescado — Sushi Bar",
+          "correccion": "Falta tilde/ñ: \"Preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Instrucciones!B6",
+          "actual": "▸ Protocolo diario obligatorio para la preparacion de arroz y pescado",
+          "correccion": "Falta tilde/ñ: \"preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Instrucciones!B8",
+          "actual": "▸ El pescado debe pasar inspeccion visual antes de servir",
+          "correccion": "Falta tilde/ñ: \"inspeccion\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Instrucciones!B9",
+          "actual": "▸ Cada corte de pescado tiene tecnica y cuchillo especifico",
+          "correccion": "Falta tilde/ñ: \"tecnica\" → \"técnica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Instrucciones!B10",
+          "actual": "▸ Registrar todo: es evidencia ante inspeccion de Sanidad",
+          "correccion": "Falta tilde/ñ: \"inspeccion\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Arroz Sushi!A5",
+          "actual": "  LAVADO Y COCCION",
+          "correccion": "Falta tilde/ñ: \"COCCION\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Arroz Sushi!B10",
+          "actual": "Dejar reposar 10 min tras coccion (sin abrir tapa)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Arroz Sushi!B26",
+          "actual": "Anotar hora de preparacion — descartar tras 4h",
+          "correccion": "Falta tilde/ñ: \"preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Corte Pescado!A5",
+          "actual": "  INSPECCION VISUAL",
+          "correccion": "Falta tilde/ñ: \"INSPECCION\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Corte Pescado!B7",
+          "actual": "Verificar documentacion congelacion anisakis del proveedor",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Corte Pescado!B17",
+          "actual": "Gamba/langostino: coccion rapida, mariposa para nigiri",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-preparacion-arroz-pescado.xlsx!Protocolo Corte Pescado!B17",
+          "actual": "Gamba/langostino: coccion rapida, mariposa para nigiri",
+          "correccion": "Falta tilde/ñ: \"rapida\" → \"rápida\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B7",
+          "actual": "▸ El pescado debe congelarse a -20°C durante minimo 7 dias o -35°C durante 15 horas",
+          "correccion": "Falta tilde/ñ: \"minimo\" → \"mínimo\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B7",
+          "actual": "▸ El pescado debe congelarse a -20°C durante minimo 7 dias o -35°C durante 15 horas",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B8",
+          "actual": "▸ Registra CADA lote de pescado con fecha de entrada y fin de congelacion",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B9",
+          "actual": "▸ La inspeccion de Sanidad verificara estos registros — tenlos siempre al dia",
+          "correccion": "Falta tilde/ñ: \"inspeccion\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B9",
+          "actual": "▸ La inspeccion de Sanidad verificara estos registros — tenlos siempre al dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!A1",
+          "actual": "REGISTRO OBLIGATORIO — Congelacion Preventiva Anisakis",
+          "correccion": "Falta tilde/ñ: \"Congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!E5",
+          "actual": "Inicio Congelacion",
+          "correccion": "Falta tilde/ñ: \"Congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!F5",
+          "actual": "Fin Congelacion",
+          "correccion": "Falta tilde/ñ: \"Congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!B27",
+          "actual": "IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Registro Congelacion!B27",
+          "actual": "IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!E4",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!H4",
+          "actual": "Sabado",
+          "correccion": "Falta tilde/ñ: \"Sabado\" → \"sábado\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B6",
+          "actual": "Camara congelacion anisakis (-20°C o menos)",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B8",
+          "actual": "Camara refrigeracion general (0-4°C)",
+          "correccion": "Falta tilde/ñ: \"refrigeracion\" → \"refrigeración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B10",
+          "actual": "Arrocera (temp coccion) (100°C)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B14",
+          "actual": "Registrar 2 veces al dia: apertura y cierre. Anotar hora.",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Instrucciones!B8",
+          "actual": "▸ Rotacion FIFO: las piezas no pueden estar mas de 2h sin refrigeracion",
+          "correccion": "Falta tilde/ñ: \"Rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Instrucciones!B8",
+          "actual": "▸ Rotacion FIFO: las piezas no pueden estar mas de 2h sin refrigeracion",
+          "correccion": "Falta tilde/ñ: \"refrigeracion\" → \"refrigeración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B11",
+          "actual": "Disponer hamachi, lubina, otros pescados del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B13",
+          "actual": "Anotar hora de montaje — maximo 2h de exposicion",
+          "correccion": "Falta tilde/ñ: \"maximo\" → \"máximo\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!A15",
+          "actual": "  ESTACION DE TRABAJO ITAMAE",
+          "correccion": "Falta tilde/ñ: \"ESTACION\" → \"estación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!E27",
+          "actual": "Segun demanda",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B29",
+          "actual": "Descartar piezas con mas de 2h fuera de refrigeracion",
+          "correccion": "Falta tilde/ñ: \"refrigeracion\" → \"refrigeración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B6",
+          "actual": "Revisar reservas del dia (barra sushi tiene prioridad)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B7",
+          "actual": "Verificar recepcion pedido pescado de lonja/proveedor",
+          "correccion": "Falta tilde/ñ: \"recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B8",
+          "actual": "Comprobar stock critico: arroz, nori, vinagre, wasabi",
+          "correccion": "Falta tilde/ñ: \"critico\" → \"crítico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B14",
+          "actual": "Verificar tiempos de servicio (sushi = rapido)",
+          "correccion": "Falta tilde/ñ: \"rapido\" → \"rápido\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B19",
+          "actual": "Revisar ventas del dia vs objetivo",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Semanales Manager!B10",
+          "actual": "Auditar registros congelacion anisakis",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Semanales Manager!E10",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Itamae (Chef Sushi)!B6",
+          "actual": "Inspeccion visual de todo el pescado del dia",
+          "correccion": "Falta tilde/ñ: \"Inspeccion\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Itamae (Chef Sushi)!B6",
+          "actual": "Inspeccion visual de todo el pescado del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Itamae (Chef Sushi)!B7",
+          "actual": "Supervisar preparacion arroz y verificar pH",
+          "correccion": "Falta tilde/ñ: \"preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Itamae (Chef Sushi)!B11",
+          "actual": "Atender clientes de barra — explicar pescado del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Ayudante Sushi!B6",
+          "actual": "Preparar arroz sushi completo (lavado, coccion, sazonado)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Ayudante Sushi!B9",
+          "actual": "Apoyar en corte basico: verduras, tortilla tamago",
+          "correccion": "Falta tilde/ñ: \"basico\" → \"básico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Sala y Servicio!B7",
+          "actual": "Conocer carta completa: sushi, maki, especialidades del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Sala y Servicio!B8",
+          "actual": "Informar a clientes sobre alergenos (marisco, soja, sesamo, gluten)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Sala y Servicio!B14",
+          "actual": "Limpieza de sala y banos al cierre",
+          "correccion": "Falta tilde/ñ: \"banos\" → \"baños\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!B8",
+          "actual": "Desinfeccion tablas de corte (sumergir en solucion)",
+          "correccion": "Falta tilde/ñ: \"solucion\" → \"solución\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!E20",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!E21",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!E22",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B7",
+          "actual": "Calibracion termometros (camara, vitrina, cocina)",
+          "correccion": "Falta tilde/ñ: \"Calibracion\" → \"calibración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!D8",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!D9",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!A12",
+          "actual": "  FORMACION Y EQUIPO",
+          "correccion": "Falta tilde/ñ: \"FORMACION\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B13",
+          "actual": "Sesion de formacion: nuevas tecnicas de corte o presentacion",
+          "correccion": "Falta tilde/ñ: \"formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B13",
+          "actual": "Sesion de formacion: nuevas tecnicas de corte o presentacion",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B15",
+          "actual": "Evaluacion de desempeno individual",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B16",
+          "actual": "Revision carta: retirar platos que no venden, anadir novedades",
+          "correccion": "Falta tilde/ñ: \"anadir\" → \"añadir\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B19",
+          "actual": "Analisis food cost mensual (pescado es la partida mayor)",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!E19",
+          "actual": "1er dia mes",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!E21",
+          "actual": "Segun acuerdo",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B22",
+          "actual": "Auditar registros APPCC y archivo de congelacion anisakis",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Instrucciones!B9",
+          "actual": "▸ Las cenas de Nochevieja y San Valentin son los picos de facturacion",
+          "correccion": "Falta tilde/ñ: \"facturacion\" → \"facturación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Temporadas Pescado Espana!A2",
+          "actual": "Ano: ______    Sushi Bar: _________________________",
+          "correccion": "Falta tilde/ñ: \"Ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B6",
+          "actual": "Confirmar numero comensales y alergias 48h antes",
+          "correccion": "Falta tilde/ñ: \"numero\" → \"número\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B11",
+          "actual": "Briefing equipo: timing pases, servicio, atencion VIP",
+          "correccion": "Falta tilde/ñ: \"atencion\" → \"atención\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!A13",
+          "actual": "  NOCHEVIEJA / ANO NUEVO",
+          "correccion": "Falta tilde/ñ: \"ANO\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B14",
+          "actual": "Disenar menu especial Nochevieja (maximo 2 turnos)",
+          "correccion": "Falta tilde/ñ: \"maximo\" → \"máximo\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!E16",
+          "actual": "-2 dias",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!E22",
+          "actual": "-1 dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Instrucciones!B9",
+          "actual": "▸ Archiva — util para analizar patrones y mejorar servicio",
+          "correccion": "Falta tilde/ñ: \"util\" → \"útil\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B8",
+          "actual": "PESCADO DEL DIA",
+          "correccion": "Falta tilde/ñ: \"DIA\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B13",
+          "actual": "Especial del dia: __________",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B15",
+          "actual": "ALERGENOS Y RESTRICCIONES",
+          "correccion": "Falta tilde/ñ: \"ALERGENOS\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B16",
+          "actual": "Reserva mesa ___: alergeno __________ (alternativa: __________)",
+          "correccion": "Falta tilde/ñ: \"alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B17",
+          "actual": "Reserva mesa ___: alergeno __________ (alternativa: __________)",
+          "correccion": "Falta tilde/ñ: \"alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B25",
+          "actual": "STOCK CRITICO HOY",
+          "correccion": "Falta tilde/ñ: \"CRITICO\" → \"crítico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Instrucciones!B6",
+          "actual": "▸ Planifica todo el ano: temporadas de pescado, mantenimiento, eventos",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A2",
+          "actual": "Ano: ______",
+          "correccion": "Falta tilde/ñ: \"Ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A12",
+          "actual": "Ano Nuevo japones (Oshogatsu)",
+          "correccion": "Falta tilde/ñ: \"Ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A20",
+          "actual": "Revision sistema de frio (tecnico)",
+          "correccion": "Falta tilde/ñ: \"tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A21",
+          "actual": "Calibracion termometros",
+          "correccion": "Falta tilde/ñ: \"Calibracion\" → \"calibración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A26",
+          "actual": "FORMACION",
+          "correccion": "Falta tilde/ñ: \"FORMACION\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A27",
+          "actual": "Formacion seguridad alimentaria",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A28",
+          "actual": "Taller nuevas tecnicas corte",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A30",
+          "actual": "Evaluacion desempeno equipo",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    },
+    {
+      "pid": "kit-tareas-asador",
+      "molde": "▸ (rico, con Instrucciones en todos los ficheros)",
+      "hallazgos": [
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B7",
+          "actual": "Calibracion termometros (pincho + camara + Josper)",
+          "correccion": "Listada como mensual; BONUS-02!Calendario Anual!A23 la marca 5 veces/año (Ene, Abr, Jul, Oct + otra), ni mensual ni la cadencia de un criterio único de familia. Unificar a mensual."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A23",
+          "actual": "Calibracion termometros (marcada 5 veces: Ene, Abr, Jul, Oct...)",
+          "correccion": "Discrepa de 07!B7 (mensual) y del criterio §7-bis.21."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B8",
+          "actual": "Revision sistema de frio: camaras, maduracion",
+          "correccion": "Listada como mensual; BONUS-02!Calendario Anual!A24 la marca sólo 2 veces (Mar, Sep). Falta la doble cadencia mensual/anual del criterio de familia."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A24",
+          "actual": "Revision sistema frio y maduracion (marcada solo en Mar y Sep)",
+          "correccion": "Discrepa de 07!B8 y no desdobla mensual/anual."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B10",
+          "actual": "Verificar extintores (riesgo fuego en parrilla)",
+          "correccion": "Una sola fila mensual; falta la segunda fila (trimestral titular + anual empresa, RD 513/2017) y discrepa de BONUS-02!A25 (2x/año)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A25",
+          "actual": "Revision extintores (obligatorio) (marcada solo en Jun y Dic)",
+          "correccion": "Discrepa de 07!B10 y no desdobla trimestral/anual exigido por §7-bis.21."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!B25",
+          "actual": "Registrar mermas de despiece en hoja de control",
+          "correccion": "Misma promesa sin hoja destino: no existe pestaña \"Registro de Mermas\" en ningún fichero del kit."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Cierre Parrilla y Josper!B25",
+          "actual": "Cuadre de caja y cierre TPV",
+          "correccion": "La landing promete \"cierre completo y arqueo\" (§2.2/§5 duda 4) pero la palabra \"arqueo\" tiene 0 apariciones en el kit; sólo se registra \"cuadre de caja\". Añadir hoja/bloque de Arqueo per §7-bis.18."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Instrucciones!B8",
+          "actual": "▸ Las temperaturas del horno varian segun zona: 250-350°C fondo, 200-250°C puerta",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Instrucciones!B9",
+          "actual": "▸ El proceso de apagado y limpieza del Josper es CRITICO para su vida util",
+          "correccion": "Falta tilde/ñ: \"CRITICO\" → \"crítico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Instrucciones!B9",
+          "actual": "▸ El proceso de apagado y limpieza del Josper es CRITICO para su vida util",
+          "correccion": "Falta tilde/ñ: \"util\" → \"útil\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Apertura Parrilla y Josper!B8",
+          "actual": "Verificar stock carbon vegetal (encina/quebracho) para el dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Apertura Parrilla y Josper!B29",
+          "actual": "Verificar termometro de pincho para puntos de coccion",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Cierre Parrilla y Josper!B10",
+          "actual": "Retirar cenizas al dia siguiente en apertura",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-asador.xlsx!Cierre Parrilla y Josper!B24",
+          "actual": "Limpieza sala: mesas, suelos, banos",
+          "correccion": "Falta tilde/ñ: \"banos\" → \"baños\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Instrucciones!B9",
+          "actual": "▸ La limpieza diaria del interior prolonga la vida util del horno",
+          "correccion": "Falta tilde/ñ: \"util\" → \"útil\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Protocolo Horno Josper!B6",
+          "actual": "Inspeccion visual interior: paredes, rejilla, compuertas",
+          "correccion": "Falta tilde/ñ: \"Inspeccion\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Protocolo Horno Josper!B11",
+          "actual": "Abrir compuerta inferior 100% para maximo tiro",
+          "correccion": "Falta tilde/ñ: \"maximo\" → \"máximo\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Protocolo Horno Josper!B21",
+          "actual": "Anadir carbon durante servicio si baja temperatura",
+          "correccion": "Falta tilde/ñ: \"Anadir\" → \"añadir\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!B13",
+          "actual": "Inspeccion completa del interior refractario (fisuras, desgaste)",
+          "correccion": "Falta tilde/ñ: \"Inspeccion\" → \"inspección\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!B16",
+          "actual": "Revision chimenea/tubo extraccion: limpieza hollin",
+          "correccion": "Falta tilde/ñ: \"extraccion\" → \"extracción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!A19",
+          "actual": "  MANTENIMIENTO ANUAL (Tecnico Josper)",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!B20",
+          "actual": "Revision tecnica oficial del fabricante",
+          "correccion": "Falta tilde/ñ: \"tecnica\" → \"técnica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!D20",
+          "actual": "Tecnico Josper",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!D21",
+          "actual": "Tecnico Josper",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!D22",
+          "actual": "Tecnico Josper",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-horno-josper-brasas.xlsx!Mantenimiento Josper!D23",
+          "actual": "Tecnico Josper",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Instrucciones!B10",
+          "actual": "▸ Las temperaturas de coccion son ley: el cliente pide su punto exacto",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!A5",
+          "actual": "  RECEPCION DE CARNE",
+          "correccion": "Falta tilde/ñ: \"RECEPCION\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!E6",
+          "actual": "Recepcion",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!E7",
+          "actual": "Recepcion",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!E8",
+          "actual": "Recepcion",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!E9",
+          "actual": "Recepcion",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!E10",
+          "actual": "Recepcion",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!B15",
+          "actual": "Verificar ventilacion/circulacion aire activa",
+          "correccion": "Falta tilde/ñ: \"ventilacion\" → \"ventilación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!B18",
+          "actual": "Registrar dias de maduracion por pieza (objetivo: 21-45 dias)",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!B18",
+          "actual": "Registrar dias de maduracion por pieza (objetivo: 21-45 dias)",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Control Maduracion Carne!B23",
+          "actual": "Porcionar segun carta: chuleton 800g-1kg, entrecot 300-400g",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Temperaturas Coccion!A1",
+          "actual": "Checklist: Temperaturas Coccion",
+          "correccion": "Falta tilde/ñ: \"Coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Temperaturas Coccion!A5",
+          "actual": "  PUNTOS DE COCCION — VACUNO",
+          "correccion": "Falta tilde/ñ: \"COCCION\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-maduracion-despiece-carne.xlsx!Temperaturas Coccion!B26",
+          "actual": "Cortar y servir solo despues del reposo completo",
+          "correccion": "Falta tilde/ñ: \"despues\" → \"después\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Instrucciones!B9",
+          "actual": "▸ Registra los pescados disponibles segun temporada y lonja",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Parrilla Pescados!A5",
+          "actual": "  PREPARACION PESCADO PARA PARRILLA",
+          "correccion": "Falta tilde/ñ: \"PREPARACION\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Parrilla Pescados!B6",
+          "actual": "Seleccionar pescados del dia: lubina, dorada, besugo, pulpo, gambas",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Parrilla Pescados!A12",
+          "actual": "  TECNICAS EN JOSPER — PESCADO",
+          "correccion": "Falta tilde/ñ: \"TECNICAS\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Parrilla Pescados!B16",
+          "actual": "Calamar: 1-2 min por lado, MAXIMO (se endurece)",
+          "correccion": "Falta tilde/ñ: \"MAXIMO\" → \"máximo\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Parrilla Verduras!A11",
+          "actual": "  PREPARACION Y COCCION",
+          "correccion": "Falta tilde/ñ: \"PREPARACION\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-parrilla-pescados-verduras.xlsx!Parrilla Verduras!A11",
+          "actual": "  PREPARACION Y COCCION",
+          "correccion": "Falta tilde/ñ: \"COCCION\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B6",
+          "actual": "Revisar reservas del dia (mesa parrilla tiene prioridad)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B7",
+          "actual": "Verificar recepcion pedido carne: peso, calidad, albaran",
+          "correccion": "Falta tilde/ñ: \"recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B8",
+          "actual": "Comprobar stock carbon vegetal (consumo medio: 10-15kg/dia)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B13",
+          "actual": "Supervisar puntos de coccion (el error mas comun del asador)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Diarias Manager!B19",
+          "actual": "Revisar ventas del dia: ticket medio, piezas vendidas",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Semanales Manager!B10",
+          "actual": "Reunion briefing equipo: puntos coccion, presentacion, mejoras",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Semanales Manager!E10",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Parrillero (Asador)!B8",
+          "actual": "Seleccion y atemperado de carnes del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Parrillero (Asador)!B9",
+          "actual": "Salpimentado y preparacion de piezas",
+          "correccion": "Falta tilde/ñ: \"preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Parrillero (Asador)!B10",
+          "actual": "Coccion de cada pieza al punto exacto del cliente",
+          "correccion": "Falta tilde/ñ: \"Coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Ayudante Parrilla!B6",
+          "actual": "Retirar cenizas del dia anterior",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Sala y Servicio!B9",
+          "actual": "Tomar comanda con punto de coccion EXACTO",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Sala y Servicio!B13",
+          "actual": "Gestionar alergenos: gluten (salsas), lacteos (mantequillas)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Sala y Servicio!B14",
+          "actual": "Limpieza de sala y banos al cierre",
+          "correccion": "Falta tilde/ñ: \"banos\" → \"baños\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Instrucciones!B6",
+          "actual": "▸ El mantenimiento del Josper es clave: un horno bien cuidado dura 15+ anos",
+          "correccion": "Falta tilde/ñ: \"anos\" → \"años\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!E14",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!E15",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Semanales!E16",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B7",
+          "actual": "Calibracion termometros (pincho + camara + Josper)",
+          "correccion": "Falta tilde/ñ: \"Calibracion\" → \"calibración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!D8",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!D9",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!A12",
+          "actual": "  FORMACION Y CARTA",
+          "correccion": "Falta tilde/ñ: \"FORMACION\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B13",
+          "actual": "Sesion formacion: nuevos cortes, tecnicas, presentacion",
+          "correccion": "Falta tilde/ñ: \"formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B13",
+          "actual": "Sesion formacion: nuevos cortes, tecnicas, presentacion",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B15",
+          "actual": "Evaluacion desempeno equipo",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B18",
+          "actual": "Analisis food cost mensual (carne + carbon)",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!E18",
+          "actual": "1er dia mes",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Tareas Mensuales!B20",
+          "actual": "Analisis mermas: peso entrada vs peso servido",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B6",
+          "actual": "Confirmar numero comensales y alergias 72h antes",
+          "correccion": "Falta tilde/ñ: \"numero\" → \"número\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B11",
+          "actual": "Briefing equipo: timing pases, servicio, atencion grupo",
+          "correccion": "Falta tilde/ñ: \"atencion\" → \"atención\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B15",
+          "actual": "Preparar parrilla especifica para calçots (llama viva + papel periodico)",
+          "correccion": "Falta tilde/ñ: \"periodico\" → \"periódico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!E25",
+          "actual": "-3 dias",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos Especiales!B31",
+          "actual": "Control extra ventilacion (humo + calor)",
+          "correccion": "Falta tilde/ñ: \"ventilacion\" → \"ventilación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Instrucciones!B8",
+          "actual": "▸ Comunica al equipo: carnes del dia, piezas especiales, grupos VIP",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Instrucciones!B9",
+          "actual": "▸ Archiva — util para analizar patrones de consumo",
+          "correccion": "Falta tilde/ñ: \"util\" → \"útil\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B8",
+          "actual": "CARNES DEL DIA",
+          "correccion": "Falta tilde/ñ: \"DIA\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B9",
+          "actual": "Chuleton: ___kg disponibles (raza: __________ dias maduracion: ____)",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B26",
+          "actual": "STOCK CRITICO HOY",
+          "correccion": "Falta tilde/ñ: \"CRITICO\" → \"crítico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Instrucciones!B6",
+          "actual": "▸ Planifica todo el ano: temporadas de carne, mantenimiento Josper, eventos",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Instrucciones!B8",
+          "actual": "▸ Los meses de invierno son los de mayor facturacion en un asador",
+          "correccion": "Falta tilde/ñ: \"facturacion\" → \"facturación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A2",
+          "actual": "Ano: ______",
+          "correccion": "Falta tilde/ñ: \"Ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A9",
+          "actual": "Chuleton vaca vieja (todo el ano)",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A14",
+          "actual": "Dia del Padre / Madre",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A21",
+          "actual": "Revision tecnica Josper (fabricante)",
+          "correccion": "Falta tilde/ñ: \"tecnica\" → \"técnica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A22",
+          "actual": "Limpieza chimenea y extraccion",
+          "correccion": "Falta tilde/ñ: \"extraccion\" → \"extracción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A23",
+          "actual": "Calibracion termometros",
+          "correccion": "Falta tilde/ñ: \"Calibracion\" → \"calibración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A27",
+          "actual": "FORMACION",
+          "correccion": "Falta tilde/ñ: \"FORMACION\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A29",
+          "actual": "Formacion seguridad (fuego, quemaduras)",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!A31",
+          "actual": "Evaluacion desempeno equipo",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    },
+    {
+      "pid": "kit-tareas-marisqueria",
+      "molde": "PLANO (sin hoja Instrucciones)",
+      "hallazgos": [
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B22",
+          "actual": "Anisakis: congelacion previa -20°C/7d para consumo crudo/marinado",
+          "correccion": "Cita falsa repetida en un segundo kit (firma §7-bis.10): \"7d\" es incorrecto, el criterio a -20°C es ≥24 h (o -35°C ≥15 h). Corregir a \"-20 °C ≥ 24 h o -35 °C ≥ 15 h\"."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!F22",
+          "actual": "Obligatorio RD 1420/2006",
+          "correccion": "Cita de norma incompleta: falta Rgto. 853/2004 y la excepción del Rgto. 1276/2011 en celda de nota, y depende de la duración incorrecta de B22."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B20",
+          "actual": "Coccion: temperatura interna >=63°C en pescados y mariscos cocidos",
+          "correccion": "Por debajo del criterio único de familia (≥70 °C en el centro del alimento, AESAN/RD 3484/2000). Corregir a \">=70°C\" y citar la norma en celda de nota."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B14",
+          "actual": "Control temperaturas internas de coccion (>=63°C)",
+          "correccion": "Mismo criterio desactualizado que 03!B20: corregir a \">=70°C\" para mantener un único valor de familia."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B15",
+          "actual": "Auditoria registros APPCC y trazabilidad (preparar para Sanidad)",
+          "correccion": "El fichero 07 no tiene ninguna fila propia de \"calibracion termometros / revision de frio / extintores\": la tabla de frecuencia de familia (§7-bis.21) está ausente por completo, a diferencia de sushi-bar/asador. Añadir las filas correspondientes."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D4",
+          "actual": "Revision vivero post-Navidad",
+          "correccion": "La columna \"Mantenimiento\" del calendario tampoco recoge calibración de termómetros, revisión de frío ni extintores por su nombre — sólo tareas genéricas mensuales de vivero/cámaras. Falta la tabla de frecuencia de familia unificada."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B37",
+          "actual": "Cierre de caja y registro de ventas por producto fresco",
+          "correccion": "Igual que asador: \"arqueo\" prometido en la landing y con 0 apariciones en el kit. Falta el bloque de caja/arqueo de familia."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B5",
+          "actual": "Verificar temperatura agua vivero (12-16°C segun especie)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B10",
+          "actual": "Colocar marisco fresco del dia por familias (crustaceos, moluscos, cefalopodos)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B16",
+          "actual": "Control camara congelacion (-18°C o inferior)",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B18",
+          "actual": "Preparar caldo de pescado/fumets del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B25",
+          "actual": "Preparar carta del dia con capturas frescas y precios",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-marisqueria.xlsx!Apertura y Cierre!B32",
+          "actual": "Registro mermas del dia (producto de alto valor)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!C5",
+          "actual": "2x dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!C6",
+          "actual": "2x dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!C10",
+          "actual": "2x dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!B11",
+          "actual": "Alimentacion (si aplica, segun especie y rotacion)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!B11",
+          "actual": "Alimentacion (si aplica, segun especie y rotacion)",
+          "correccion": "Falta tilde/ñ: \"rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!C11",
+          "actual": "Segun pauta",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!B14",
+          "actual": "Verificar capturas del dia: especie, calibre, frescura",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-vivero-lonjas-pescado.xlsx!Vivero y Lonjas!B16",
+          "actual": "Recepcion mercancia: temperatura, aspecto, olor, ojos",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B5",
+          "actual": "Numero de lote, especie, zona FAO captura, fecha, peso, proveedor",
+          "correccion": "Falta tilde/ñ: \"Numero\" → \"número\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B7",
+          "actual": "Registro temperatura recepcion (pescado fresco 0-2°C)",
+          "correccion": "Falta tilde/ñ: \"recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B8",
+          "actual": "Registro camaras 2x dia (refrigeracion + congelacion)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B8",
+          "actual": "Registro camaras 2x dia (refrigeracion + congelacion)",
+          "correccion": "Falta tilde/ñ: \"refrigeracion\" → \"refrigeración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B8",
+          "actual": "Registro camaras 2x dia (refrigeracion + congelacion)",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!C8",
+          "actual": "2x dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B9",
+          "actual": "Control fechas: marisco fresco max 48h, congelado segun envase",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!A11",
+          "actual": "ALERGENOS — Marisco (Alergeno 2 y 14)",
+          "correccion": "Falta tilde/ñ: \"ALERGENOS\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!A11",
+          "actual": "ALERGENOS — Marisco (Alergeno 2 y 14)",
+          "correccion": "Falta tilde/ñ: \"Alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!A12",
+          "actual": "Alergeno 2",
+          "correccion": "Falta tilde/ñ: \"Alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!A13",
+          "actual": "Alergeno 14",
+          "correccion": "Falta tilde/ñ: \"Alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B15",
+          "actual": "Indicar alergenos en cada plato de la carta (simbolos EU)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!A16",
+          "actual": "Formacion",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B18",
+          "actual": "Recepcion: temperatura pescado fresco <=2°C, congelado <=-18°C",
+          "correccion": "Falta tilde/ñ: \"Recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B20",
+          "actual": "Coccion: temperatura interna >=63°C en pescados y mariscos cocidos",
+          "correccion": "Falta tilde/ñ: \"Coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B21",
+          "actual": "Expositor: marisco en hielo max 4°C, rotacion cada 2h",
+          "correccion": "Falta tilde/ñ: \"rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-trazabilidad-appcc-marisco.xlsx!Trazabilidad APPCC!B22",
+          "actual": "Anisakis: congelacion previa -20°C/7d para consumo crudo/marinado",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-barra-mariscos.xlsx!Expositor y Barra!B9",
+          "actual": "Colocar pescados enteros del dia (lubina, rodaballo, besugo, merluza)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-barra-mariscos.xlsx!Expositor y Barra!B14",
+          "actual": "Rotacion FIFO: mover producto antiguo al frente",
+          "correccion": "Falta tilde/ñ: \"Rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-barra-mariscos.xlsx!Expositor y Barra!C17",
+          "actual": "Segun necesidad",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-barra-mariscos.xlsx!Expositor y Barra!B18",
+          "actual": "Abrir ostras bajo pedido (tecnica correcta, sin fragmentos)",
+          "correccion": "Falta tilde/ñ: \"tecnica\" → \"técnica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B12",
+          "actual": "Briefing pre-servicio: capturas del dia, precios, alergenos",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B12",
+          "actual": "Briefing pre-servicio: capturas del dia, precios, alergenos",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B14",
+          "actual": "Revisar ventas del dia anterior por producto",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B15",
+          "actual": "Ajustar precios carta segun coste del dia (producto de lonja)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B15",
+          "actual": "Ajustar precios carta segun coste del dia (producto de lonja)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B20",
+          "actual": "Formacion continua: especies, temporadas, tecnicas",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B20",
+          "actual": "Formacion continua: especies, temporadas, tecnicas",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B22",
+          "actual": "Analisis food cost semanal (objetivo <32% en marisqueria)",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B24",
+          "actual": "Actualizar RRSS con capturas del dia y platos especiales",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B6",
+          "actual": "Control calidad recepcion y clasificacion por especie",
+          "correccion": "Falta tilde/ñ: \"recepcion\" → \"recepción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B6",
+          "actual": "Control calidad recepcion y clasificacion por especie",
+          "correccion": "Falta tilde/ñ: \"clasificacion\" → \"clasificación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B7",
+          "actual": "Decidir carta del dia segun capturas disponibles",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B7",
+          "actual": "Decidir carta del dia segun capturas disponibles",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B9",
+          "actual": "Controlar mermas y registrar en libro de produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B11",
+          "actual": "Limpieza, fileteado y porcionado de pescados del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B12",
+          "actual": "Preparacion de bases: fumets, caldos, salsas de acompanamiento",
+          "correccion": "Falta tilde/ñ: \"Preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B13",
+          "actual": "Coccion pescados: horno, plancha, parrilla, vapor, frito",
+          "correccion": "Falta tilde/ñ: \"Coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B14",
+          "actual": "Control temperaturas internas de coccion (>=63°C)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B15",
+          "actual": "Emplatado y presentacion segun estandar del restaurante",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B15",
+          "actual": "Emplatado y presentacion segun estandar del restaurante",
+          "correccion": "Falta tilde/ñ: \"estandar\" → \"estándar\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B17",
+          "actual": "Coccion mariscos: al vapor, a la plancha, hervidos, a la sal",
+          "correccion": "Falta tilde/ñ: \"Coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B18",
+          "actual": "Tiempos de coccion por especie y calibre",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B23",
+          "actual": "Conocer capturas del dia, precios y sugerencias del chef",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B24",
+          "actual": "Recomendar mariscos y pescados segun preferencia del cliente",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B26",
+          "actual": "Informar alergenos crustaceos y moluscos a cada mesa",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D3",
+          "actual": "Dia/Semana",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B8",
+          "actual": "Analisis de mermas semanal y acciones correctoras",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D10",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B15",
+          "actual": "Auditoria registros APPCC y trazabilidad (preparar para Sanidad)",
+          "correccion": "Falta tilde/ñ: \"Auditoria\" → \"auditoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B16",
+          "actual": "Evaluacion de proveedores: calidad, precio, cumplimiento",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B17",
+          "actual": "Revision carta segun temporada de pesca y disponibilidad",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Formacion equipo: nuevas especies, tecnicas, maridajes",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Formacion equipo: nuevas especies, tecnicas, maridajes",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B20",
+          "actual": "Analisis food cost mensual y comparativa con objetivo",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!A12",
+          "actual": "Todo ano",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!D12",
+          "actual": "Segun veda",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!B15",
+          "actual": "Mariscada fin de ano: bogavante, langosta, centolla, percebes",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!B22",
+          "actual": "Talla minima legal por especie (verificar en cada lote)",
+          "correccion": "Falta tilde/ñ: \"minima\" → \"mínima\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B3",
+          "actual": "Informacion",
+          "correccion": "Falta tilde/ñ: \"Informacion\" → \"información\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A4",
+          "actual": "CAPTURAS DEL DIA",
+          "correccion": "Falta tilde/ñ: \"DIA\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C12",
+          "actual": "Preparacion / Precio",
+          "correccion": "Falta tilde/ñ: \"Preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C13",
+          "actual": "Preparacion / Precio",
+          "correccion": "Falta tilde/ñ: \"Preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C14",
+          "actual": "Producto especial del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A15",
+          "actual": "ALERGENOS Y ALERTAS",
+          "correccion": "Falta tilde/ñ: \"ALERGENOS\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A16",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B16",
+          "actual": "Platos con crustaceos (alergeno 2):",
+          "correccion": "Falta tilde/ñ: \"alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A17",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B17",
+          "actual": "Platos con moluscos (alergeno 14):",
+          "correccion": "Falta tilde/ñ: \"alergeno\" → \"alérgeno\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B23",
+          "actual": "Recomendacion del dia (albariño, godello, txakoli):",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E3",
+          "actual": "Formacion",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C8",
+          "actual": "Dia de la Madre, comuniones",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E11",
+          "actual": "Atencion turistas (idiomas)",
+          "correccion": "Falta tilde/ñ: \"Atencion\" → \"atención\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E12",
+          "actual": "Nuevas tecnicas coccion",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E12",
+          "actual": "Nuevas tecnicas coccion",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    },
+    {
+      "pid": "kit-tareas-panaderia",
+      "molde": "PLANO (sin hoja Instrucciones)",
+      "hallazgos": [
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B14",
+          "actual": "Mantenimiento preventivo hornos: quemadores, juntas, termostatos",
+          "correccion": "Igual que marisquería: no hay fila de \"calibracion termometros / revision de frio / extintores\" en el 07. Falta la tabla de frecuencia de familia."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D5",
+          "actual": "Calibracion basculas",
+          "correccion": "Menciona calibración pero de básculas, no de termómetros; la tabla de frecuencia de familia (termómetros/frío/extintores) no aparece en ningún punto del kit."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B31",
+          "actual": "Cierre de caja y registro de ventas",
+          "correccion": "\"Arqueo\" prometido y con 0 apariciones en el kit. Falta el bloque de caja/arqueo de familia."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B7",
+          "actual": "Pesar ingredientes segun recetas del dia (harinas, agua, sal, levadura)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B7",
+          "actual": "Pesar ingredientes segun recetas del dia (harinas, agua, sal, levadura)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B9",
+          "actual": "Verificar temperatura agua de amasado (segun estacion)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B9",
+          "actual": "Verificar temperatura agua de amasado (segun estacion)",
+          "correccion": "Falta tilde/ñ: \"estacion\" → \"estación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!A12",
+          "actual": "PRODUCCION — Fermentacion y Horneado (05:00-08:00)",
+          "correccion": "Falta tilde/ñ: \"PRODUCCION\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!F14",
+          "actual": "Pesos estandar por tipo",
+          "correccion": "Falta tilde/ñ: \"estandar\" → \"estándar\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B17",
+          "actual": "Horneado: temperatura y tiempo segun tipo de pan",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-panaderia.xlsx!Apertura y Cierre!B22",
+          "actual": "Etiquetado: alergenos (gluten, leche, huevo, soja)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-masas-madre-fermentacion.xlsx!Masas Madre!G5",
+          "actual": "Misma hora cada dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-masas-madre-fermentacion.xlsx!Masas Madre!C7",
+          "actual": "2x dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-masas-madre-fermentacion.xlsx!Masas Madre!B13",
+          "actual": "Tiempo bulk fermentacion segun temperatura obrador",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-masas-madre-fermentacion.xlsx!Masas Madre!C15",
+          "actual": "Segun receta",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!A2",
+          "actual": "Hornos y Coccion — Panaderia",
+          "correccion": "Falta tilde/ñ: \"Coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!C5",
+          "actual": "Pre-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!B6",
+          "actual": "Verificar temperatura solera con pirometro (220-260°C segun pan)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!B9",
+          "actual": "Rotar piezas a mitad de coccion si necesario",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!C10",
+          "actual": "Post-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!B12",
+          "actual": "Precalentar segun especificaciones (15-30 min)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!C12",
+          "actual": "Pre-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!B15",
+          "actual": "Verificar rotacion uniforme del carro",
+          "correccion": "Falta tilde/ñ: \"rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!C16",
+          "actual": "Post-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-hornos-coccion.xlsx!Hornos y Coccion!B24",
+          "actual": "230-240°C con vapor, 40-50 min (segun tamaño)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!A2",
+          "actual": "Expositor, Venta y Atencion al Cliente",
+          "correccion": "Falta tilde/ñ: \"Atencion\" → \"atención\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!B6",
+          "actual": "Etiquetado con nombre, peso, precio y alergenos",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!B10",
+          "actual": "Rotacion FIFO: producto del dia atras, ayer al frente",
+          "correccion": "Falta tilde/ñ: \"Rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!B10",
+          "actual": "Rotacion FIFO: producto del dia atras, ayer al frente",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!A11",
+          "actual": "ATENCION AL CLIENTE",
+          "correccion": "Falta tilde/ñ: \"ATENCION\" → \"atención\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!B12",
+          "actual": "Informar sobre panes del dia y novedades",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!B15",
+          "actual": "Informar alergenos al cliente cuando pregunte",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-expositor-venta.xlsx!Expositor y Venta!B20",
+          "actual": "Cierre caja y registro ventas por categoria",
+          "correccion": "Falta tilde/ñ: \"categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A4",
+          "actual": "PRODUCCION",
+          "correccion": "Falta tilde/ñ: \"PRODUCCION\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A5",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B5",
+          "actual": "Planificar produccion diaria segun ventas y pedidos",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B5",
+          "actual": "Planificar produccion diaria segun ventas y pedidos",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A6",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A7",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B7",
+          "actual": "Ajustar recetas segun temporada (hidratacion, temperatura)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A8",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B16",
+          "actual": "Revisar precios carta vs coste harina y energia",
+          "correccion": "Falta tilde/ñ: \"energia\" → \"energía\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B17",
+          "actual": "Cuadrante turnos madrugada (rotacion equipo)",
+          "correccion": "Falta tilde/ñ: \"rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B18",
+          "actual": "Formacion: nuevas tecnicas, masas madre, tendencias",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B18",
+          "actual": "Formacion: nuevas tecnicas, masas madre, tendencias",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B19",
+          "actual": "RRSS: foto pan del dia, proceso de elaboracion",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C6",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B8",
+          "actual": "Ajustar recetas segun condiciones (humedad, temperatura)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C8",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B9",
+          "actual": "Decidir produccion del dia y panes especiales",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B9",
+          "actual": "Decidir produccion del dia y panes especiales",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C9",
+          "actual": "Pre-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B11",
+          "actual": "Pesar ingredientes segun receta del dia",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B11",
+          "actual": "Pesar ingredientes segun receta del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C13",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C14",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C15",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C17",
+          "actual": "Pre-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C18",
+          "actual": "Produccion",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!C19",
+          "actual": "Post-produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D3",
+          "actual": "Dia/Semana",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D9",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B11",
+          "actual": "Analisis mermas y ajuste produccion",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B11",
+          "actual": "Analisis mermas y ajuste produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B16",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza, alergenos",
+          "correccion": "Falta tilde/ñ: \"Auditoria\" → \"auditoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B16",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza, alergenos",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B17",
+          "actual": "Food cost mensual y analisis rentabilidad por producto",
+          "correccion": "Falta tilde/ñ: \"analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B18",
+          "actual": "Evaluacion proveedores harina: calidad, precio, servicio",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Formacion equipo: nuevas tecnicas, tendencias, recetas",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Formacion equipo: nuevas tecnicas, tendencias, recetas",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!A9",
+          "actual": "Todo ano",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!F11",
+          "actual": "Pico produccion",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!A15",
+          "actual": "Dia del Pan",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!A2",
+          "actual": "BONUS: Briefing de Produccion Diaria — Panaderia",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!B3",
+          "actual": "Informacion",
+          "correccion": "Falta tilde/ñ: \"Informacion\" → \"información\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!A4",
+          "actual": "PRODUCCION DEL DIA",
+          "correccion": "Falta tilde/ñ: \"PRODUCCION\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!A4",
+          "actual": "PRODUCCION DEL DIA",
+          "correccion": "Falta tilde/ñ: \"DIA\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!A5",
+          "actual": "Pan basico",
+          "correccion": "Falta tilde/ñ: \"basico\" → \"básico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!B6",
+          "actual": "Panes especiales del dia:",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-produccion.xlsx!Briefing Produccion!B20",
+          "actual": "Observaciones del dia:",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E3",
+          "actual": "Formacion",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D5",
+          "actual": "Calibracion basculas",
+          "correccion": "Falta tilde/ñ: \"Calibracion\" → \"calibración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C8",
+          "actual": "Dia de la Madre, comuniones",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C13",
+          "actual": "Dia del Pan (16 oct), Halloween",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C15",
+          "actual": "Navidad (pico maximo), Nochevieja",
+          "correccion": "Falta tilde/ñ: \"maximo\" → \"máximo\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D15",
+          "actual": "Revision total fin de ano",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E15",
+          "actual": "Produccion alto volumen",
+          "correccion": "Falta tilde/ñ: \"Produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    },
+    {
+      "pid": "kit-tareas-food-truck",
+      "molde": "PLANO (sin hoja Instrucciones)",
+      "hallazgos": [
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!B8",
+          "actual": "Control temperatura interna coccion (>=74°C aves, >=63°C otros)",
+          "correccion": "Ambos valores por debajo del criterio único (≥75°C aves, ≥70°C otros). Corregir a \">=75°C aves, >=70°C otros\"."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B16",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza",
+          "correccion": "No hay fila propia de calibración de termómetros, revisión de frío ni extintores en el 07. Falta la tabla de frecuencia de familia."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D9",
+          "actual": "Revision intensiva equipos frio",
+          "correccion": "Sólo aparece una vez (Junio) y sin desdoblar termómetros/extintores; falta la tabla de frecuencia unificada de familia."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!B28",
+          "actual": "Cierre de caja y registro de ventas del dia",
+          "correccion": "\"Arqueo\" prometido y con 0 apariciones en el kit. Falta el bloque de caja/arqueo de familia."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!B6",
+          "actual": "Conectar generador o toma electrica del evento",
+          "correccion": "Falta tilde/ñ: \"electrica\" → \"eléctrica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!C6",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!B21",
+          "actual": "Verificar agua (deposito limpio y deposito residual)",
+          "correccion": "Falta tilde/ñ: \"deposito\" → \"depósito\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!B21",
+          "actual": "Verificar agua (deposito limpio y deposito residual)",
+          "correccion": "Falta tilde/ñ: \"deposito\" → \"depósito\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!C21",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!B23",
+          "actual": "Apagar equipos de coccion y gas",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!C26",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!B28",
+          "actual": "Cierre de caja y registro de ventas del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-setup-teardown-food-truck.xlsx!Setup y Teardown!C29",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!B8",
+          "actual": "ITV vigente y seguro del vehiculo al dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!A11",
+          "actual": "GENERADOR Y ENERGIA",
+          "correccion": "Falta tilde/ñ: \"ENERGIA\" → \"energía\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C12",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C13",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C14",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C15",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C17",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!B19",
+          "actual": "Deposito agua limpia lleno (capacidad segun servicio)",
+          "correccion": "Falta tilde/ñ: \"Deposito\" → \"depósito\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!B19",
+          "actual": "Deposito agua limpia lleno (capacidad segun servicio)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C19",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!B20",
+          "actual": "Deposito agua residual vacio y limpio",
+          "correccion": "Falta tilde/ñ: \"Deposito\" → \"depósito\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C20",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-operaciones-moviles-vehiculo.xlsx!Operaciones Moviles!C21",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!A8",
+          "actual": "Temp. coccion",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!B8",
+          "actual": "Control temperatura interna coccion (>=74°C aves, >=63°C otros)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!B15",
+          "actual": "Separar crudos de cocinados en almacenamiento y preparacion",
+          "correccion": "Falta tilde/ñ: \"preparacion\" → \"preparación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!A18",
+          "actual": "ALERGENOS Y DOCUMENTACION",
+          "correccion": "Falta tilde/ñ: \"ALERGENOS\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!A19",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!B19",
+          "actual": "Carta de alergenos visible en el punto de venta",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!F19",
+          "actual": "14 alergenos UE",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil!A20",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!B10",
+          "actual": "Facturacion y TPV: emitir ticket/factura en cada venta",
+          "correccion": "Falta tilde/ñ: \"Facturacion\" → \"facturación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!B12",
+          "actual": "Confirmar ubicacion exacta, acceso y horario de montaje",
+          "correccion": "Falta tilde/ñ: \"ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!B13",
+          "actual": "Confirmar toma electrica o necesidad de generador",
+          "correccion": "Falta tilde/ñ: \"electrica\" → \"eléctrica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!D13",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!C14",
+          "actual": "3 dias",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!C15",
+          "actual": "3 dias",
+          "correccion": "Falta tilde/ñ: \"dias\" → \"días\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!B17",
+          "actual": "Comunicar en RRSS: ubicacion, horario, menu del evento",
+          "correccion": "Falta tilde/ñ: \"ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!F19",
+          "actual": "Publico foodie",
+          "correccion": "Falta tilde/ñ: \"Publico\" → \"público\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!F23",
+          "actual": "Servicio rapido",
+          "correccion": "Falta tilde/ñ: \"rapido\" → \"rápido\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-permisos-eventos-localizaciones.xlsx!Permisos y Eventos!B24",
+          "actual": "Ubicacion fija diaria (polígono, campus, zona oficinas)",
+          "correccion": "Falta tilde/ñ: \"Ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A5",
+          "actual": "Planificacion",
+          "correccion": "Falta tilde/ñ: \"Planificacion\" → \"planificación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A6",
+          "actual": "Planificacion",
+          "correccion": "Falta tilde/ñ: \"Planificacion\" → \"planificación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B7",
+          "actual": "Pedido de materia prima segun calendario de eventos",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B10",
+          "actual": "Analizar ventas por ubicacion/evento (cual renta mas)",
+          "correccion": "Falta tilde/ñ: \"ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B17",
+          "actual": "Publicar ubicacion diaria en Instagram/TikTok/Google Maps",
+          "correccion": "Falta tilde/ñ: \"ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A21",
+          "actual": "Fidelizacion",
+          "correccion": "Falta tilde/ñ: \"Fidelizacion\" → \"fidelización\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B12",
+          "actual": "Linea de montaje: ensamblar platos segun pedido",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B15",
+          "actual": "Limpieza y organizacion del puesto de trabajo",
+          "correccion": "Falta tilde/ñ: \"organizacion\" → \"organización\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B20",
+          "actual": "Informar alergenos y opciones (vegano, sin gluten)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!A22",
+          "actual": "CONDUCTOR / TECNICO",
+          "correccion": "Falta tilde/ñ: \"TECNICO\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B27",
+          "actual": "Mantenimiento basico vehiculo y equipos",
+          "correccion": "Falta tilde/ñ: \"basico\" → \"básico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D3",
+          "actual": "Dia/Semana",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B8",
+          "actual": "Cambio aceite freidora (o segun test polares)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D8",
+          "actual": "Segun uso",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!C9",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!C10",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B11",
+          "actual": "Analisis ventas por ubicacion/evento de la semana",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B11",
+          "actual": "Analisis ventas por ubicacion/evento de la semana",
+          "correccion": "Falta tilde/ñ: \"ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B12",
+          "actual": "Planificar ruta y eventos proxima semana",
+          "correccion": "Falta tilde/ñ: \"proxima\" → \"próxima\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!C14",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B15",
+          "actual": "Revision mecanica vehiculo: frenos, neumaticos, luces",
+          "correccion": "Falta tilde/ñ: \"mecanica\" → \"mecánica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!C15",
+          "actual": "Tecnico",
+          "correccion": "Falta tilde/ñ: \"Tecnico\" → \"técnico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B16",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza",
+          "correccion": "Falta tilde/ñ: \"Auditoria\" → \"auditoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B17",
+          "actual": "Food cost mensual y analisis rentabilidad",
+          "correccion": "Falta tilde/ñ: \"analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B18",
+          "actual": "Revision carta: rotar platos segun temporada/demanda",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B21",
+          "actual": "Formacion equipo: nuevos platos, servicio, seguridad",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!B18",
+          "actual": "Eventos especiales fin de ano en plazas y recintos",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!B3",
+          "actual": "Informacion",
+          "correccion": "Falta tilde/ñ: \"Informacion\" → \"información\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!A6",
+          "actual": "Ubicacion",
+          "correccion": "Falta tilde/ñ: \"Ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!A8",
+          "actual": "Publico esperado",
+          "correccion": "Falta tilde/ñ: \"Publico\" → \"público\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!A9",
+          "actual": "LOGISTICA",
+          "correccion": "Falta tilde/ñ: \"LOGISTICA\" → \"logística\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!C16",
+          "actual": "Unidades por plato (segun publico)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!C16",
+          "actual": "Unidades por plato (segun publico)",
+          "correccion": "Falta tilde/ñ: \"publico\" → \"público\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!A18",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-evento.xlsx!Briefing Pre-Evento!C18",
+          "actual": "Carta alergenos impresa y visible",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D8",
+          "actual": "Aire acondicionado/ventilacion truck",
+          "correccion": "Falta tilde/ñ: \"ventilacion\" → \"ventilación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C10",
+          "actual": "Menu refrescante, servicio rapido",
+          "correccion": "Falta tilde/ñ: \"rapido\" → \"rápido\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D10",
+          "actual": "Generador bajo carga maxima",
+          "correccion": "Falta tilde/ñ: \"maxima\" → \"máxima\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E10",
+          "actual": "Publicar ubicacion diaria",
+          "correccion": "Falta tilde/ñ: \"ubicacion\" → \"ubicación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C11",
+          "actual": "Menu top sellers, produccion maxima",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C11",
+          "actual": "Menu top sellers, produccion maxima",
+          "correccion": "Falta tilde/ñ: \"maxima\" → \"máxima\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E11",
+          "actual": "Maxima actividad RRSS",
+          "correccion": "Falta tilde/ñ: \"Maxima\" → \"máxima\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D15",
+          "actual": "Revision total fin de ano",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    },
+    {
+      "pid": "kit-tareas-tapas-bar",
+      "molde": "PLANO (sin hoja Instrucciones)",
+      "hallazgos": [
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza, alergenos",
+          "correccion": "No hay fila propia de calibración de termómetros, revisión de frío ni extintores en el 07. Falta la tabla de frecuencia de familia."
+        },
+        {
+          "celda": "01-apertura-cierre-tapas-bar.xlsx!Apertura y Cierre!B32",
+          "actual": "Cierre de caja, recuento y arqueo",
+          "correccion": "Referencia (no es un hallazgo): tapas-bar SÍ tiene la palabra \"arqueo\" (2 apariciones, aquí y en 06!Perfiles!B32) — es el criterio a portar a los otros cuatro kits per §7-bis.18."
+        },
+        {
+          "celda": "01-apertura-cierre-tapas-bar.xlsx!Apertura y Cierre!B6",
+          "actual": "Montar barra de pinchos/tapas frias del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-tapas-bar.xlsx!Apertura y Cierre!B11",
+          "actual": "Revisar pizarra/carta del dia y actualizar tapas disponibles",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-tapas-bar.xlsx!Apertura y Cierre!B13",
+          "actual": "Control temperatura camaras (refrigeracion 0-4°C, congelacion -18°C)",
+          "correccion": "Falta tilde/ñ: \"refrigeracion\" → \"refrigeración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-apertura-cierre-tapas-bar.xlsx!Apertura y Cierre!B13",
+          "actual": "Control temperatura camaras (refrigeracion 0-4°C, congelacion -18°C)",
+          "correccion": "Falta tilde/ñ: \"congelacion\" → \"congelación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!D6",
+          "actual": "2x dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B7",
+          "actual": "Rotacion FIFO: mover pinchos antiguos al frente",
+          "correccion": "Falta tilde/ñ: \"Rotacion\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B10",
+          "actual": "Etiquetas de alergenos visibles por tipo de pincho",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!F16",
+          "actual": "Segun carta",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!A18",
+          "actual": "ROTACION DE CARTA",
+          "correccion": "Falta tilde/ñ: \"ROTACION\" → \"rotación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B19",
+          "actual": "Definir 3-5 tapas del dia (segun producto fresco disponible)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B19",
+          "actual": "Definir 3-5 tapas del dia (segun producto fresco disponible)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B20",
+          "actual": "Actualizar pizarra con tapas del dia y precios",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B23",
+          "actual": "Registrar tapas mas vendidas del dia (para planificacion)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-barra-tapas-pinchos.xlsx!Barra Tapas y Pinchos!B23",
+          "actual": "Registrar tapas mas vendidas del dia (para planificacion)",
+          "correccion": "Falta tilde/ñ: \"planificacion\" → \"planificación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-cocina-raciones-platos.xlsx!Cocina Raciones!B5",
+          "actual": "Encendido y calibracion temperatura (250-300°C zona alta)",
+          "correccion": "Falta tilde/ñ: \"calibracion\" → \"calibración\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-cocina-raciones-platos.xlsx!Cocina Raciones!B8",
+          "actual": "Control punto de coccion carne (entrecot, secreto iberico, chuleta)",
+          "correccion": "Falta tilde/ñ: \"coccion\" → \"cocción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-cocina-raciones-platos.xlsx!Cocina Raciones!B15",
+          "actual": "Cambio aceite completo (cada 8-10 usos o segun polares)",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-cocina-raciones-platos.xlsx!Cocina Raciones!C15",
+          "actual": "Periodico",
+          "correccion": "Falta tilde/ñ: \"Periodico\" → \"periódico\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "03-cocina-raciones-platos.xlsx!Cocina Raciones!B17",
+          "actual": "Preparar guisos del dia: callos, fabada, estofado, rabo",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-bebidas-cerveza-vino-vermut.xlsx!Bebidas!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-bebidas-cerveza-vino-vermut.xlsx!Bebidas!C10",
+          "actual": "Segun consumo",
+          "correccion": "Falta tilde/ñ: \"Segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-bebidas-cerveza-vino-vermut.xlsx!Bebidas!B13",
+          "actual": "Abrir vinos por copa del dia (seleccion 3 tintos + 2 blancos)",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-bebidas-cerveza-vino-vermut.xlsx!Bebidas!B21",
+          "actual": "Mise en place cocteleria basica: hielo, limon, garnish",
+          "correccion": "Falta tilde/ñ: \"basica\" → \"básica\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!A3",
+          "actual": "Categoria",
+          "correccion": "Falta tilde/ñ: \"Categoria\" → \"categoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B5",
+          "actual": "Reunion pre-servicio: tapas del dia, stock, alergenos, reservas",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B5",
+          "actual": "Reunion pre-servicio: tapas del dia, stock, alergenos, reservas",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B7",
+          "actual": "Revisar ventas dia anterior: tapas, raciones, bebidas",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B19",
+          "actual": "Formacion equipo: tapas nuevas, vinos, servicio",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "05-tareas-manager.xlsx!Tareas Manager!B22",
+          "actual": "RRSS: foto tapas del dia, stories terraza, eventos",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B5",
+          "actual": "Definir tapas del dia segun producto fresco",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B5",
+          "actual": "Definir tapas del dia segun producto fresco",
+          "correccion": "Falta tilde/ñ: \"segun\" → \"según\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B7",
+          "actual": "Preparar guisos, caldos y bases del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B9",
+          "actual": "Registrar mermas y ajustar produccion para manana",
+          "correccion": "Falta tilde/ñ: \"produccion\" → \"producción\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B24",
+          "actual": "Tomar comandas: sugerir tapas del dia y maridaje",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B27",
+          "actual": "Informar alergenos al cliente (14 alergenos obligatorios)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "06-tareas-perfiles.xlsx!Perfiles!B27",
+          "actual": "Informar alergenos al cliente (14 alergenos obligatorios)",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D3",
+          "actual": "Dia/Semana",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!D9",
+          "actual": "Miercoles",
+          "correccion": "Falta tilde/ñ: \"Miercoles\" → \"miércoles\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B12",
+          "actual": "Analisis de mermas semanal y acciones correctoras",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B15",
+          "actual": "Analisis food cost mensual vs objetivo (<28%)",
+          "correccion": "Falta tilde/ñ: \"Analisis\" → \"análisis\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B16",
+          "actual": "Evaluacion proveedores: calidad, precio, servicio",
+          "correccion": "Falta tilde/ñ: \"Evaluacion\" → \"evaluación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B18",
+          "actual": "Formacion equipo: nuevas tapas, vinos, tecnicas servicio",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B18",
+          "actual": "Formacion equipo: nuevas tapas, vinos, tecnicas servicio",
+          "correccion": "Falta tilde/ñ: \"tecnicas\" → \"técnicas\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza, alergenos",
+          "correccion": "Falta tilde/ñ: \"Auditoria\" → \"auditoría\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "07-semanales-mensuales.xlsx!Semanales y Mensuales!B19",
+          "actual": "Auditoria APPCC: registros temperaturas, limpieza, alergenos",
+          "correccion": "Falta tilde/ñ: \"alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "08-eventos-estacionales.xlsx!Eventos y Temporadas!A10",
+          "actual": "Todo ano",
+          "correccion": "Falta tilde/ñ: \"ano\" → \"año\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!B3",
+          "actual": "Informacion",
+          "correccion": "Falta tilde/ñ: \"Informacion\" → \"información\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A4",
+          "actual": "TAPAS DEL DIA",
+          "correccion": "Falta tilde/ñ: \"DIA\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C5",
+          "actual": "Ingredientes / Precio / Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C6",
+          "actual": "Ingredientes / Precio / Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C7",
+          "actual": "Ingredientes / Precio / Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!C9",
+          "actual": "Producto fresco del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A11",
+          "actual": "Vino del dia",
+          "correccion": "Falta tilde/ñ: \"dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A14",
+          "actual": "ALERGENOS Y ALERTAS",
+          "correccion": "Falta tilde/ñ: \"ALERGENOS\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A15",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A16",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-servicio.xlsx!Briefing Servicio!A17",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E3",
+          "actual": "Formacion",
+          "correccion": "Falta tilde/ñ: \"Formacion\" → \"formación\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!C8",
+          "actual": "Dia de la Madre, comuniones",
+          "correccion": "Falta tilde/ñ: \"Dia\" → \"día\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!E8",
+          "actual": "Atencion grupos",
+          "correccion": "Falta tilde/ñ: \"Atencion\" → \"atención\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-02-calendario-anual.xlsx!Calendario Anual!D11",
+          "actual": "Equipos bajo carga maxima",
+          "correccion": "Falta tilde/ñ: \"maxima\" → \"máxima\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    },
+    {
+      "pid": "kit-tareas-chef-privado",
+      "molde": "P4 (con Instrucciones en todos los ficheros, marca AI Chef Pro)",
+      "hallazgos": [
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!B10",
+          "actual": "Verificar temperatura interna de carnes/pescados cocinados (>75°C)",
+          "correccion": "Aplica el umbral de aves (75°C) a todo el genérico \"carnes/pescados\": el criterio de familia diferencia ≥70°C general y ≥75°C solo en aves, picados y recalentados. Desdoblar en dos líneas o especificar la excepción."
+        },
+        {
+          "celda": "01-ficha-cliente-consulta.xlsx!Ficha Cliente!C18",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-ficha-cliente-consulta.xlsx!Ficha Cliente!C19",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-ficha-cliente-consulta.xlsx!Ficha Cliente!C20",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-ficha-cliente-consulta.xlsx!Ficha Cliente!C21",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-ficha-cliente-consulta.xlsx!Ficha Cliente!C22",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "01-ficha-cliente-consulta.xlsx!Ficha Cliente!C25",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-planificacion-menu-compras.xlsx!Planificación Menú!C8",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "02-planificacion-menu-compras.xlsx!Planificación Menú!C16",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!C16",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!C17",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!C18",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!C19",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!C20",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "04-seguridad-alimentaria-appcc.xlsx!APPCC Móvil!C21",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-servicio.xlsx!Briefing!C15",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-servicio.xlsx!Briefing!C16",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        },
+        {
+          "celda": "BONUS-01-briefing-pre-servicio.xlsx!Briefing!C18",
+          "actual": "Alergenos",
+          "correccion": "Falta tilde/ñ: \"Alergenos\" → \"alérgenos\" (barrido de familia §7-bis.3, sin tocar fórmulas/rutas/códigos)."
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Censo T0.1 §9 SPEC — sólo lectura con openpyxl sobre astro-site/public/dl/**; ningún fichero de producción fue modificado.",
+    "Corrección 1 (cita del anisakis): confirma la firma §7-bis.10 — la cita falsa vive en DOS kits (sushi-bar y marisqueria), no sólo en el representante. El error sistemático es la duración (\"7 dias\"/\"7d\" en vez de \"24 h\" a -20°C) y, en sushi-bar/Registro Congelacion!B27, además el umbral (-18°C en vez de -20°C, que contradice a Temperaturas Diario!B6 del mismo fichero).",
+    "Corrección 2 (temperaturas §7-bis.19): el criterio único de familia es cocción ≥70°C (≥75°C aves/picados/recalentados). marisqueria y food-truck usan valores inferiores (63°C/74°C); chef-privado aplica 75°C a todo sin diferenciar aves. Las temperaturas de \"Temperaturas Coccion\" del asador (Medium/Well Done) NO se tocaron: son referencia culinaria de punto de cocción, no un PCC de seguridad alimentaria.",
+    "Corrección 3 (frecuencias 07 vs BONUS-02): en sushi-bar y asador, las tres tareas (calibración de termómetros, revisión de frío, extintores) están en la sección \"Tareas Mensuales\" del 07 pero el calendario BONUS-02 las marca sólo 2-5 veces/año — no coincide con \"mensual\" ni con la doble cadencia mensual/anual (frío) o trimestral/anual (extintores) que fija §7-bis.21. En marisquería, panadería, food-truck y tapas-bar las tres tareas están AUSENTES por completo, tanto en el 07 como en BONUS-02 (sólo hay una línea genérica de \"Auditoría APPCC\"): son los 5 kits que necesitan la tabla de frecuencia de familia completa.",
+    "Corrección 4 (mermas/arqueo): ninguno de los 7 kits tiene una pestaña \"Registro de Mermas\" pese a que sushi-bar y asador prometen explícitamente una \"hoja de control\" en el propio texto de la tarea. \"Arqueo\" tiene 0 apariciones en asador, marisquería, panadería y food-truck (los cuatro que la landing promete con \"cierre completo y arqueo\", per §2.2/§5 duda 4) y 2 apariciones en tapas-bar, que es el molde a portar a los otros cuatro.",
+    "Corrección 5 (tildes/ñ): 529 celdas detectadas por diccionario de formas frecuentes sin tilde/ñ (95 palabras candidatas, sin tocar fórmulas/rutas/códigos). El diccionario cubre los patrones más repetidos del corpus (congelacion, preparacion, informacion, dia, segun, año/ano, baño/bano, etc.) pero NO es exhaustivo de cada palabra española que pudiera llevar tilde — el barrido definitivo de CB-E1 debe correr por diccionario completo + revisión por contexto, tal como fija §7-bis.3. Este censo da el volumen y la localización de la corrección, no la lista cerrada de cada tilde del corpus.",
+    "total_celdas = 564 (5+18+7+529 aprox. distribuidas por kit; ver por_kit)."
+  ]
+}
