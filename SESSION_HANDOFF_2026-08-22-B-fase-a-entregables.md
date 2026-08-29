@@ -417,3 +417,14 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
 - **«Hotel completo» del orden del plan = `kit-tareas-hotel`, YA en v2.0** (23-ago, familia «▸»). «Resto de kits» = los 7 portados de CB
   (chef-privado, sushi-bar, asador, marisquería, panadería, food-truck, tapas-bar) + mega-pack. **R1 de `kit-tareas-sushi-bar` lanzada** como
   representante (familia `kit-tareas`); persistir con `r1-desde-journal.py … kit-tareas-sushi-bar kit-tareas`.
+- **SPEC v2.0 de guías ESCRITA y firmada** (`2e86b46`, `guias-v2-SPEC.md`, 982 líneas): post-proceso de familia sobre 111 xlsx (los 7 generadores NO se
+  reejecutan: su OUTPUT_DIR apunta a un `public/dl/` muerto desde el cutover, reintroducirían la circular del Break-Even y revertirían la Fase A); 3 moldes
+  de checklist (A/B/C); pipeline de documentos bridge.py → Markdown → DOCX + PDF (calibrado: 37.295 palabras + 33 tablas = 73-90 páginas); decisiones 1-22
+  (16: **SMI 2026 = 17.094 €/año, RD 126/2026**). Defectos nuevos de hermanos (§2.5): P&L Mensual sin totales en 5 guías; panadería con EBITDA = facturación
+  (122,97 % de margen) en caché. 5 guías no están en `products-catalog.ts` (decisión 20: se añaden en T8); 4 landings dicen «8 plantillas» y entregan 9.
+- **Construcción del representante LANZADA**: `guias-v2-workflow.js` (`5402591`), runId `wf_1b6009dd-272`, paquete en `scripts/productos-digitales/guias-v2_0/`
+  (motor + grupo_a/b/c + contenido_guia_restaurante_gastronomico/{a,b,c}.py + main.py con `--producto`, `--dry-run`, `GUIAS_APPLY=1`), informes
+  `auditorias/guias-v2-*.json`. Auto-commit local cada 15 min (nohup, `scratchpad/autocommit-guias.sh`). Si se corta: mirar el disco y el journal ANTES
+  de relanzar (lección del 24-ago); relanzar `Workflow({scriptPath:'scripts/productos-digitales/guias-v2-workflow.js', args:{productId:'guia-restaurante-gastronomico', par:2}})`.
+  Después del crítico: canario `pl-mensual-escenarios.xlsx` → APPLY del representante → T6 hermanos (sonnet ×7) → T7 documentos (research con fuente +
+  guion + bridge.py + reportlab) → T8 capa de producto → T9 cierre.
