@@ -469,3 +469,5 @@ Ejecución: pasada transversal propia (inventario → plantillas → datos → r
 **John: no quitar reseñas ni estrellas** → decisión 1 revocada (nada de ratings se toca), decisión 2 en pausa (se le listan los testimonios con
 credenciales identificables), **decisión 3 sigue** (anclas de precio; reversible). Riesgo residual anotado: ratings no acreditables + «Gratis» en
 la ficha de un producto de 14 €.
+**05:20 — John: «¡déjalas!»** → capa comercial INTACTA: ni ratings/reviews (Product ni SoftwareApplication) ni anclas de precio ni testimonios. Sólo queda
+el inventario informativo `auditorias/capa-comercial-inventario-2026-08-29.json` para que él decida. La sesión sigue con los productos (guías, planes, kits CB).
