@@ -803,6 +803,28 @@ def main():
         log('  ' + fname + ': ' + str(len(registros[fname]))
             + ' fórmulas nuevas')
 
+    # ---- RT-08 · gate de §9 «0 xlsx con 0 fórmulas» ----------------------
+    # No estaba implementado, y el motor imprimía «TODO VERDE» con exit 0 sobre
+    # un producto en el que `cronograma-apertura-gantt.xlsx` terminaba con CERO
+    # fórmulas — §3.5 entero sin aplicar (sin Mes inicio, sin Duración, sin
+    # Depende de, sin Días y sin la barra). El verde del motor no puede seguir
+    # significando «corre limpio» en vez de «la SPEC se ha cumplido».
+    sin_formulas = []
+    for fname in nombres:
+        if not fname.endswith('.xlsx'):
+            continue
+        try:
+            wbx = openpyxl.load_workbook(os.path.join(carpeta, fname))
+        except Exception:
+            continue
+        n = sum(1 for ws in wbx.worksheets for row in ws.iter_rows()
+                for c in row
+                if isinstance(c.value, str) and c.value.startswith('='))
+        if n == 0:
+            sin_formulas.append(fname)
+    if sin_formulas:
+        log('  ⚠️  xlsx SIN una sola fórmula: ' + ', '.join(sin_formulas))
+
     # ---- 3/7 idempotencia ------------------------------------------------
     idem = {'ejecutada': False}
     if not args.sin_idempotencia:
@@ -876,6 +898,11 @@ def main():
                               contenido=contenidos.get(letra)) or {}
             fallos += propias.pop('fallos', [])
             demos.update(propias)
+    if sin_formulas:
+        fallos.append('§9: ' + str(len(sin_formulas)) + ' xlsx terminan el '
+                      'post-proceso con CERO fórmulas (' 
+                      + ', '.join(sin_formulas) + '): la sección de la SPEC '
+                      'que les toca no se ha aplicado [RT-08]')
     if idem.get('diferencias'):
         fallos.append('idempotencia: ' + str(idem['diferencias'])
                       + ' diferencias entre la 1.ª y la 2.ª pasada')

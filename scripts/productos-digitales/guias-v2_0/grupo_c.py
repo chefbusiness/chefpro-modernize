@@ -209,7 +209,12 @@ def _norm(v):
     """
     if not isinstance(v, str):
         return ''
-    t = v.replace(motor.NARROW, ' ').replace(motor.NOBRK, '-')
+    # La convención tipográfica se aplica ANTES de comparar: el barrido
+    # de `motor.normalizar_texto` cambia «≤» por «<=» y «sólo» por «solo»
+    # en el fichero, y sin esto el módulo de contenido —que sigue
+    # escribiéndolos a la vieja usanza— no reconocería su propia salida.
+    t = motor.convencion(v).replace(motor.NARROW, ' ').replace(
+        motor.NOBRK, '-')
     return re.sub(r'\s+', ' ', _sin_acentos(t).lower()).strip()
 
 
@@ -1135,6 +1140,26 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
     _cabecera_nueva(ws, fila_cab, col_mix, 'Mix % (popularidad)', 16)
     _cabecera_nueva(ws, fila_cab, col_clase, 'Clasificación', 16)
     _cabecera_nueva(ws, fila_cab, col_accion, 'Acción recomendada', 34)
+    # RC-17 · las Instrucciones piden analizar familia por familia y la hoja
+    # hacía justo lo contrario: un umbral y un margen medio ÚNICOS para toda la
+    # carta, con la columna «Categoría» que no leía ninguna fórmula. Seguir la
+    # instrucción obligaba a BORRAR filas. Estas dos columnas calculan el
+    # margen medio y el umbral DE SU PROPIA FAMILIA para cada plato.
+    col_mfam, col_ufam, col_pvpiva = None, None, None
+    if modelo == 'M1' and col_cat:
+        col_mfam = chr(ord(col_accion) + 1)
+        col_ufam = chr(ord(col_accion) + 2)
+        col_pvpiva = chr(ord(col_accion) + 3)
+        _cabecera_nueva(ws, fila_cab, col_mfam,
+                        'Margen medio de SU familia (€)', 20)
+        _cabecera_nueva(ws, fila_cab, col_ufam,
+                        'Umbral de popularidad de SU familia (%)', 22)
+        # RD-23 · §1.5(a): toda hoja que fije un PVP lleva el precio sin IVA y
+        # con IVA, con el tipo en celda. Aquí no se decía ni una cosa ni otra,
+        # y en España la carta se anuncia CON IVA: un menú de 150 € son
+        # 136,36 € netos, y la clasificación se movería un 10 %.
+        _cabecera_nueva(ws, fila_cab, col_pvpiva,
+                        'PVP en carta, con IVA (€)', 20)
 
     # ---- bloque de totales y umbral ---------------------------------------
     r = ultima + 1
@@ -1171,6 +1196,13 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
                           + ',">0"))'), fmt=motor.FMT_PCT, bold=True)
     motor.fijar_formato(ws, col_uds + str(r), motor.FMT_PCT)
     ref_umbral = '$' + col_uds + '$' + str(r)
+    ref_iva_menu = None
+    if col_pvpiva:
+        r += 1
+        ref_iva_menu = _param(
+            ws, r, 'iva_restauracion', col_et='B', col_val=col_uds,
+            col_nota=col_margen)
+        motor.fijar_formato(ws, ref_iva_menu.replace('$', ''), motor.FMT_PCT)
     r += 2
     if pie_texto:
         _et(ws, 'A' + str(r), pie_texto)
@@ -1209,15 +1241,54 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
         motor.fijar_formato(ws, col_mix + str(f_), motor.FMT_PCT)
         mix = '$' + col_mix + str(f_)
         mar = '$' + col_margen + str(f_)
+        vs_mc, vs_umbral = ref_mc, ref_umbral
+        if col_mfam:
+            rc = ('$' + col_cat + '$' + str(primera) + ':$' + col_cat + '$'
+                  + str(ultima))
+            ru = ('$' + col_uds + '$' + str(primera) + ':$' + col_uds + '$'
+                  + str(ultima))
+            rm = ('$' + col_margen + '$' + str(primera) + ':$' + col_margen
+                  + '$' + str(ultima))
+            cat_f = '$' + col_cat + str(f_)
+            uds_fam = 'SUMPRODUCT(--(' + rc + '=' + cat_f + '),' + ru + ')'
+            motor.f(ws, col_mfam + str(f_),
+                    motor.iferror(
+                        'IF(' + cat_f + '="","",IF(' + uds_fam + '=0,"",'
+                        'ROUND(SUMPRODUCT(--(' + rc + '=' + cat_f + '),' + ru
+                        + ',' + rm + '),2)/' + uds_fam + '))'),
+                    fmt=motor.FMT_EUR)
+            motor.fijar_formato(ws, col_mfam + str(f_), motor.FMT_EUR)
+            n_fam = ('SUMPRODUCT(--(' + rc + '=' + cat_f + '),--(' + ru
+                     + '>0))')
+            motor.f(ws, col_ufam + str(f_),
+                    motor.iferror(
+                        'IF(' + cat_f + '="","",IF(' + n_fam + '=0,"",'
+                        + ref_factor + '/' + n_fam + '))'),
+                    fmt=motor.FMT_PCT)
+            motor.fijar_formato(ws, col_ufam + str(f_), motor.FMT_PCT)
+            # el mix también es DENTRO de su familia
+            motor.f(ws, col_mix + str(f_),
+                    motor.iferror(
+                        'IF(OR($' + col_uds + str(f_) + '="",' + cat_f
+                        + '=""),"",IF(' + uds_fam + '=0,"",$' + col_uds
+                        + str(f_) + '/' + uds_fam + '))'), fmt=motor.FMT_PCT)
+            motor.f(ws, col_pvpiva + str(f_),
+                    motor.iferror(
+                        'IF(OR($' + col_pvp + str(f_) + '="",' + ref_iva_menu
+                        + '=""),"",$' + col_pvp + str(f_) + '*(1+'
+                        + ref_iva_menu + '))'), fmt=motor.FMT_EUR)
+            motor.fijar_formato(ws, col_pvpiva + str(f_), motor.FMT_EUR)
+            vs_mc = '$' + col_mfam + str(f_)
+            vs_umbral = '$' + col_ufam + str(f_)
         motor.f(ws, col_clase + str(f_),
-                '=IF(OR(' + mix + '="",' + mar + '="",' + ref_mc + '="",'
-                + ref_umbral + '=""),"",'
-                + 'IF(AND(' + mix + '>=' + ref_umbral + ',' + mar + '>='
-                + ref_mc + '),"Star",'
-                + 'IF(AND(' + mix + '>=' + ref_umbral + ',' + mar + '<'
-                + ref_mc + '),"Plowhorse",'
-                + 'IF(AND(' + mix + '<' + ref_umbral + ',' + mar + '>='
-                + ref_mc + '),"Puzzle","Dog"))))')
+                '=IF(OR(' + mix + '="",' + mar + '="",' + vs_mc + '="",'
+                + vs_umbral + '=""),"",'
+                + 'IF(AND(' + mix + '>=' + vs_umbral + ',' + mar + '>='
+                + vs_mc + '),"Star",'
+                + 'IF(AND(' + mix + '>=' + vs_umbral + ',' + mar + '<'
+                + vs_mc + '),"Plowhorse",'
+                + 'IF(AND(' + mix + '<' + vs_umbral + ',' + mar + '>='
+                + vs_mc + '),"Puzzle","Dog"))))')
         cl = '$' + col_clase + str(f_)
         motor.f(ws, col_accion + str(f_),
                 '=IF(' + cl + '="","",IF(' + cl + '="Star","' + ACCIONES[0]
@@ -1238,17 +1309,34 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
           'las ' + str(ultima - primera + 1) + ' fórmulas del libro eran restas '
           '«=PVP-coste» y la columna Clasificación estaba vacía '
           '[TEC-04 · DOM-10 · COM-08 · §4.2]')
+    if col_mfam:
+        _et(ws, col_coste + str(fila_cab - 1),
+            'Coste por ración de escandallo-maestro.xlsx', wrap=True)
     _instr(wb, fname, cambios, [
+        # RD-24 · §4.1 designa el «Coste por ración» de la ficha como el
+        # alimento de esta matriz y §1.13 obliga a repetir el dato con su nota
+        # de origen cuando no se enlazan libros. Sin ella, un consultor no
+        # sabe si ese coste incluye merma, guarnición o pan.
+        'La columna «Coste (€)» es el «Coste por ración» de la ficha '
+        'correspondiente de escandallo-maestro.xlsx: cópialo desde su hoja '
+        '«Resumen». Incluye la merma (la ficha compra en BRUTO), así que no '
+        'vuelvas a añadirla aquí. Los costes que trae el libro son de EJEMPLO.',
         'La clasificación es automática: Star (alta popularidad y alto '
         'margen), Plowhorse (popular pero poco rentable), Puzzle (rentable '
         'pero poco pedido) y Dog (ni una cosa ni la otra). La columna «Acción '
         'recomendada» dice qué hacer con cada uno.',
         'El umbral de popularidad es 70 % / nº de platos con ventas, y el '
         'factor del 70 % es una celda verde por si tu carta es muy corta.',
-        'Aplica la matriz DENTRO de una familia de carta (entrantes con '
-        'entrantes, principales con principales). Un menú degustación de 145 € '
-        'y un postre de 15 € en la misma tabla arrastran el margen medio y '
-        'clasifican mal casi todo: analiza los menús aparte.'])
+        'La matriz se aplica DENTRO de cada familia de carta, no sobre toda '
+        'la tabla: cada plato se compara con el margen medio y con el umbral '
+        'de popularidad de SU familia (las dos columnas nuevas de la derecha). '
+        'Por eso un menú degustación de 145 € y un postre de 15 € pueden '
+        'convivir en la misma hoja sin arrastrarse el uno al otro. La fila '
+        'TOTAL sigue dando la media de toda la carta, que es la foto de '
+        'conjunto.',
+        'Los precios de la columna «PVP (€)» van SIN IVA, igual que en el '
+        'resto del producto. La columna «PVP en carta, con IVA (€)» es el '
+        'precio que ve el comensal, con el tipo del IVA en celda.'])
     registro_modelo['menu'] = {
         'modelo': modelo, 'primera': primera, 'ultima': ultima,
         'col_uds': col_uds, 'col_margen': col_margen, 'col_mix': col_mix,
@@ -1310,9 +1398,9 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
     _cabecera_nueva(ws, fila_cab, 'T', 'PVP sin IVA (€)', 15)
     for r in range(primera, ultima + 1):
         motor.f(ws, 'T' + str(r),
-                motor.iferror('IF(OR($F{r}="",' + ref_iva_beb + '=""),"",'
-                              '$F{r}/(1+' + ref_iva_beb + '))'.format(r=r)
-                              .format(r=r)), fmt=motor.FMT_EUR)
+                motor.iferror(('IF(OR($F{r}="",' + ref_iva_beb + '=""),"",'
+                               '$F{r}/(1+' + ref_iva_beb + '))').format(r=r)),
+                fmt=motor.FMT_EUR)
         motor.fijar_formato(ws, 'T' + str(r), motor.FMT_EUR)
     for r in range(primera, ultima + 1):
         motor.f(ws, 'G' + str(r),
@@ -1348,6 +1436,34 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
     if cfg.get('tipos'):
         motor.dv_lista(ws, ['C' + str(r) for r in range(primera, ultima + 1)],
                        cfg['tipos'])
+    # RT-30 · las 50 referencias llegaban VACÍAS y las 355 fórmulas del libro
+    # no enseñaban ni un resultado, mientras el menu engineering del mismo pack
+    # sí iba precargado. Mismo criterio para los dos.
+    puestas = 0
+    for i, ref in enumerate(cfg.get('referencias') or []):
+        f_ = primera + i
+        if f_ > ultima:
+            break
+        for L, clave, fmt in (('B', 'referencia', None), ('C', 'tipo', None),
+                              ('D', 'do', None),
+                              ('E', 'coste', motor.FMT_EUR),
+                              ('F', 'pvp', motor.FMT_EUR),
+                              ('I', 'stock', motor.FMT_ENT),
+                              ('K', 'uds', motor.FMT_ENT)):
+            if ref.get(clave) is None or ws[L + str(f_)].value is not None:
+                continue
+            motor.val(ws, L + str(f_), ref[clave], fmt=fmt, verde_=True)
+            if fmt:
+                motor.fijar_formato(ws, L + str(f_), fmt)
+            puestas += 1
+    if puestas:
+        cambios.append(
+            fname + ':' + ws.title + '!B' + str(primera) + ':K'
+            + str(primera + len(cfg.get('referencias') or []) - 1) + ': '
+            + str(puestas) + ' celdas de ejemplo precargadas en verde (10 '
+            'referencias con multiplicador entre ×2,5 y ×3,5 y food cost de '
+            'bebida dentro del 28-40 % del capítulo de bodega): el libro deja '
+            'de abrir con 355 fórmulas y ningún resultado [RT-30 · §1.2]')
     cambios.append(
         fname + ':' + ws.title + '!H' + str(primera) + ':' + 'M' + str(ultima)
         + ': «Margen (%)» era un MARKUP sobre coste — con coste 10 EUR y PVP '
@@ -2558,6 +2674,14 @@ def demos(carpeta, destino, contenido):
             pref = "'" + ws.title + "'!"
             xl = _pycel(_copia(carpeta, fname, destino))
             r0 = b['primera']
+            # RT-30 · la bodega ya NO se entrega vacía (llegaba con 355
+            # fórmulas y ningún resultado): el caso «en blanco» hay que
+            # PROVOCARLO vaciando las entradas de las filas precargadas.
+            _precalentar(xl, [pref + c + str(b['fila_total'])
+                              for c in ('N', 'O', 'L', 'M')])
+            for f_ in range(b['primera'], b['ultima'] + 1):
+                for L in ('E', 'F', 'I', 'K'):
+                    _set(xl, pref + L + str(f_), '')
             blanco = {c: _ev(xl, pref + c + str(b['fila_total']))
                       for c in ('N', 'O', 'L', 'M')}
             malos = {k: v for k, v in blanco.items() if v != ''}
@@ -2567,37 +2691,50 @@ def demos(carpeta, destino, contenido):
                     + ': con la bodega EN BLANCO el TOTAL devuelve ' + str(malos)
                     + ' en vez de "" (§7-bis.13)')
             _precalentar(xl, [pref + L + str(r0)
-                              for L in ('G', 'H', 'J', 'L', 'M', 'N', 'O')])
+                              for L in ('G', 'H', 'J', 'L', 'M', 'N', 'O',
+                                        'T')])
             _set(xl, pref + 'E' + str(r0), 10)
             _set(xl, pref + 'F' + str(r0), 30)
             _set(xl, pref + 'I' + str(r0), 24)
             _set(xl, pref + 'K' + str(r0), 12)
+            # RD-13 · el PVP de la columna F es el de CARTA, CON IVA (21 % en
+            # bebida alcohólica): 30 € de carta son 24,79 € netos. Los
+            # indicadores se miden sobre esa base, y por eso el food cost de
+            # bebida real es 40,3 % y no el 33,3 % que salía cruzando un coste
+            # sin IVA con un precio con IVA — 7 puntos de diferencia, justo en
+            # la magnitud que decide si la bodega gana dinero.
+            neto = round(30 / 1.21, 10)
             mult = _ev(xl, pref + 'H' + str(r0))
             margen = _ev(xl, pref + 'L' + str(r0))
             fc = _ev(xl, pref + 'M' + str(r0))
             rot = _ev(xl, pref + 'J' + str(r0))
             vcoste = _ev(xl, pref + 'N' + str(r0))
             tot_coste = _ev(xl, pref + 'N' + str(b['fila_total']))
-            ok = (_cerca(mult, 3.0) and _cerca(margen, 2.0 / 3.0, 0.001)
-                  and _cerca(fc, 1.0 / 3.0, 0.001) and _cerca(rot, 0.5)
+            # el resto de filas se ha vaciado justo arriba, así que el TOTAL
+            # tiene que ser exactamente el valor de la única fila con datos
+            ok = (_cerca(mult, neto / 10) and _cerca(margen, 1 - 10 / neto,
+                                                     0.001)
+                  and _cerca(fc, 10 / neto, 0.001) and _cerca(rot, 0.5)
                   and _cerca(vcoste, 240) and _cerca(tot_coste, 240))
             det.setdefault('bodega', []).append({
                 'fichero': fname, 'hoja': ws.title, 'total_en_blanco': blanco,
-                'coste_10_pvp_30': {'multiplicador_esperado_3': mult,
-                                    'margen_s_pvp_esperado_0_667': margen,
-                                    'food_cost_esperado_0_333': fc},
+                'coste_10_pvp_carta_30_con_iva_21': {
+                    'pvp_sin_iva_esperado_24_79': _ev(xl, pref + 'T' + str(r0)),
+                    'multiplicador_esperado_2_48': mult,
+                    'margen_s_pvp_esperado_0_597': margen,
+                    'food_cost_esperado_0_403': fc},
                 'rotacion_12_vendidas_24_stock_esperado_0_5': rot,
                 'valor_stock_coste_esperado_240': vcoste,
                 'TOTAL_valor_a_coste_esperado_240': tot_coste, 'ok': bool(ok)})
             if not ok:
                 fallos.append(
-                    fname + ':' + ws.title + ': con coste 10 EUR, PVP 30 EUR, '
-                    'stock 24 y 12 uds vendidas se esperaba multiplicador 3,00, '
-                    'margen s/PVP 66,7 %, food cost 33,3 %, rotación 0,5 y '
-                    'valor a coste 240 EUR; salió ' + repr((mult, margen, fc,
-                                                            rot, vcoste,
-                                                            tot_coste))
-                    + ' [TEC-19 · TEC-20 · TEC-18]')
+                    fname + ':' + ws.title + ': con coste 10 EUR, PVP de carta '
+                    '30 EUR (IVA de bebida 21 %), stock 24 y 12 uds vendidas se '
+                    'esperaba PVP sin IVA 24,79 EUR, multiplicador 2,48, margen '
+                    's/PVP 59,7 %, food cost 40,3 %, rotación 0,5 y valor a '
+                    'coste 240 EUR; salió ' + repr((mult, margen, fc, rot,
+                                                    vcoste, tot_coste))
+                    + ' [TEC-19 · TEC-20 · TEC-18 · RD-13]')
 
         # ---- 4. turnos -----------------------------------------------------
         if fname.startswith('plantilla-turnos') and est.get('turnos'):

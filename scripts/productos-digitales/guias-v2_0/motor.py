@@ -1048,7 +1048,7 @@ def cabeceras(ws, fila):
 
 
 def _norm(v):
-    return v.strip() if isinstance(v, str) else v
+    return convencion(v).strip() if isinstance(v, str) else v
 
 
 #: Firmas MEDIDAS el 2026-08-29 abriendo los 111 xlsx con openpyxl. La regla
@@ -1557,10 +1557,11 @@ def linea_instrucciones(ws, texto, rx=None):
     """Sustituye la línea que case con `rx` o la añade al final. Nunca duplica.
     """
     col = col_texto(ws)
+    objetivo = convencion(texto)
     for r in range(1, ws.max_row + 1):
         v = ws.cell(row=r, column=col).value
         if isinstance(v, str):
-            if v == texto:
+            if v == texto or convencion(v) == objetivo:
                 return r
             if rx and rx.match(v):
                 ws.cell(row=r, column=col).value = texto
@@ -1905,6 +1906,81 @@ def aplicar(wb, fname, informe, pid=None):
     return info
 
 
+#: RC-25/RC-26/RC-27/RC-28 · barrido tipográfico ÚNICO al final del cierre.
+#: Los cuatro defectos eran el mismo: la convención se aplicaba en el texto
+#: nuevo y no en el heredado, así que en la misma hoja convivían «→» y «->»,
+#: «sólo» y «solo», rangos con guion no separable y rangos con guion normal.
+#: Los caracteres se referencian por ESCAPE (CLAUDE.md): al pasar por un
+#: heredoc del shell el espacio fino y el guion no separable degeneran y
+#: ninguna sustitución encuentra su patrón.
+SUSTITUCIONES_TEXTO = (
+    ('->', '\u2192'),        # flecha ASCII → flecha tipográfica (RC-26)
+    ('sólo', 'solo'),        # tilde diacrítica retirada por la RAE (RC-27)
+    ('Sólo', 'Solo'),
+    ('SÓLO', 'SOLO'),
+    ('\u2264', '<='),        # ≤  fuera de WinAnsi: rompe el PDF de §5 (RC-28)
+    ('\u2265', '>='),        # ≥
+    ('\u2082', '2'),         # ₂  («N₂O» → «N2O»)
+    ('\u2083', '3'),         # ₃
+    ('\u2212', '-'),         # −  signo menos, distinto del guion
+)
+#: Rango numérico: el guion pasa a NO SEPARABLE. La lookbehind y la lookahead
+#: impiden que enganche dentro de un año o de una referencia normativa
+#: («2026-08-29», «RD 126/2026»): sólo casa números de 1 a 3 cifras con sus
+#: separadores de millar/decimal.
+RX_RANGO_NUM = re.compile(
+    r'(?<![\d/\u2011-])(\d{1,3}(?:[.,]\d+)?)-(\d{1,3}(?:[.,]\d+)?)(?![\d/])')
+#: Espacio fino antes de la unidad, cuando la precede un número.
+RX_UNIDAD = re.compile(
+    r'(?<=\d) (?=(?:€|°C|%|m²|kg|h\b|L\b|días|día|meses|mes\b|semanas|'
+    r'semana\b|personas|plazas|pases|copas|platos|uds\b|GN\b))')
+
+
+def convencion(texto):
+    """Texto con la convención tipográfica de la familia YA aplicada.
+
+    ⚠️ Todo lo que compare texto contra el fichero (los `_norm()` de los tres
+    grupos, las líneas de `Instrucciones`) tiene que pasar por aquí. Si no, la
+    2.ª pasada no reconoce su propia salida: el barrido convirtió «≤10 °C» en
+    «<=10 °C» y el módulo de contenido, que sigue diciendo «≤», volvió a
+    insertar el ítem. 457 diferencias de idempotencia medidas antes de esto.
+    """
+    if not isinstance(texto, str):
+        return texto
+    for viejo, bueno in SUSTITUCIONES_TEXTO:
+        texto = texto.replace(viejo, bueno)
+    texto = RX_RANGO_NUM.sub('\\1' + NOBRK + '\\2', texto)
+    return RX_UNIDAD.sub(NARROW, texto)
+
+
+def normalizar_texto(wb, fname, informe=None):
+    """Aplica la convención tipográfica de la familia a TODAS las celdas de
+    texto del libro, no sólo a las que escribe la v2.0."""
+    tocadas = 0
+    ejemplos = []
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                v = c.value
+                if not isinstance(v, str) or v.startswith('='):
+                    continue
+                if c.__class__.__name__ == 'MergedCell':
+                    continue
+                nuevo = convencion(v)
+                if nuevo != v:
+                    c.value = nuevo
+                    tocadas += 1
+                    if len(ejemplos) < 6:
+                        ejemplos.append(ws.title + '!' + c.coordinate)
+    if tocadas and informe is not None:
+        informe.append(fname + ': ' + str(tocadas) + ' celdas de texto '
+                       'normalizadas (flecha →, «solo» sin tilde, caracteres '
+                       'fuera de WinAnsi, guion no separable en los rangos y '
+                       'espacio fino antes de la unidad) '
+                       + str(ejemplos) + ' [RC-25 · RC-26 · RC-27 · RC-28]')
+    return tocadas
+
+
 def cerrar(wb, fname, informe, pid=None, proteger_hojas=True):
     """Cierre común, DESPUÉS de los grupos: si se protegiera antes, cada celda
     que un grupo creara nacería bloqueada aunque fuese verde.
@@ -1941,6 +2017,7 @@ def cerrar(wb, fname, informe, pid=None, proteger_hojas=True):
             for c in row:
                 if c.value == '' and c.__class__.__name__ != 'MergedCell':
                     c.value = None
+    normalizar_texto(wb, fname, informe)
 
     lleva_iva = bool(hojas_con_nota_iva(wb, fname))
     for ws in wb.worksheets:

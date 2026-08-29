@@ -150,7 +150,12 @@ def _norm(v):
     ítem puede venir escrito de las dos formas."""
     if not isinstance(v, str):
         return ''
-    t = v.replace(motor.NARROW, ' ').replace(motor.NOBRK, '-')
+    # La convención tipográfica se aplica ANTES de comparar: el barrido
+    # de `motor.normalizar_texto` cambia «≤» por «<=» y «sólo» por «solo»
+    # en el fichero, y sin esto el módulo de contenido —que sigue
+    # escribiéndolos a la vieja usanza— no reconocería su propia salida.
+    t = motor.convencion(v).replace(motor.NARROW, ' ').replace(
+        motor.NOBRK, '-')
     t = t.replace(' ', ' ')
     return re.sub(r'\s+', ' ', t).strip().lower()
 
@@ -1235,13 +1240,16 @@ def _gantt(wb, fname, cambios, contenido):
                                              column=fin_col).value)))
             except (TypeError, ValueError):
                 pass
-            motor.dv_numerica(
-                ws, [col_dur + str(r) for r in filas_tarea], minimo=1,
-                maximo=tope, titulo='Duración',
-                mensaje='Escribe los meses que dura la tarea, entre 1 y '
-                        + str(tope) + ' (el horizonte de este cuadro).',
-                prompt='Meses de duración. La barra se pinta desde «'
-                       + COL_MES_INICIO + '» y durante estos meses.')
+            # `dv_propia`, no `dv_numerica`: `motor.validaciones()` corre
+            # DESPUÉS, clasifica las celdas verdes por formato y purga las DV
+            # decimales que se solapen. Una DV escrita aquí a pelo desaparecía.
+            motor.dv_propia(
+                ws, col_dur + str(filas_tarea[0]) + ':' + col_dur
+                + str(filas_tarea[-1]), 1, tope, 'Duración',
+                'Escribe los meses que dura la tarea, entre 1 y ' + str(tope)
+                + ' (el horizonte de este cuadro).',
+                'Meses de duración. La barra se pinta desde «'
+                + COL_MES_INICIO + '» y durante estos meses.')
 
             # RC-16 · las dependencias precargadas se incumplían en 7 de 20 y
             # nada en el fichero lo detectaba; además «Depende de» es texto

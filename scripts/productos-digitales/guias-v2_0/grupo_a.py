@@ -137,7 +137,12 @@ def _norm(v):
     """
     if not isinstance(v, str):
         return ''
-    t = v.replace(motor.NARROW, ' ').replace(motor.NOBRK, '-')
+    # La convención tipográfica se aplica ANTES de comparar: el barrido
+    # de `motor.normalizar_texto` cambia «≤» por «<=» y «sólo» por «solo»
+    # en el fichero, y sin esto el módulo de contenido —que sigue
+    # escribiéndolos a la vieja usanza— no reconocería su propia salida.
+    t = motor.convencion(v).replace(motor.NARROW, ' ').replace(
+        motor.NOBRK, '-')
     t = _sin_acentos(t).lower()
     return re.sub(r'\s+', ' ', t).strip()
 
@@ -925,7 +930,9 @@ def _celda(col, fila, fijo=False):
 def _pl_mensual_representante(wb, fname, cambios, contenido):
     ws = wb['P&L Mensual']
     f_tot_ing = _fila(ws, RX_TOT_INGRESOS, fname=fname)
+    f_ing_bloque = _fila(ws, RX_BLOQUE_ING, fname=fname)
     f_tot_var = _fila(ws, RX_TOT_VARIABLES, fname=fname)
+    f_var_bloque = _fila(ws, RX_BLOQUE_VAR, fname=fname)
     f_mb = _fila(ws, r'^margen bruto', fname=fname)
     f_fij = _fila(ws, RX_BLOQUE_FIJ, fname=fname)
     f_tot_fij = _fila(ws, RX_TOT_FIJOS, fname=fname)
@@ -948,9 +955,31 @@ def _pl_mensual_representante(wb, fname, cambios, contenido):
         trozos.append(_tramo(f_fij + 1, f_amort - 1))
     if f_amort < f_tot_fij - 1:
         trozos.append(_tramo(f_amort + 1, f_tot_fij - 1))
-    motor.f(ws, 'B' + str(f_tot_fij), '=' + '+'.join(trozos), fmt=FMT_EUR)
-    motor.f(ws, 'B' + str(f_eb), '=B' + str(f_mb) + '-B' + str(f_tot_fij),
+    # RC-09 · la decisión 13 de §7-bis («sin dato se escribe "", nunca 0») se
+    # había aplicado a la columna de porcentajes y NO a la de importes, que es
+    # la que se lee: con el libro vaciado, «TOTAL INGRESOS», «EBITDA» y «EBIT»
+    # imprimían «0,00 €» con formato de euro, como si fueran resultados. La
+    # guarda es `COUNT` (números), nunca `COUNTIF(rango,"<>")` — ver RT-01.
+    conteo = ','.join(t.replace('SUM(', '').rstrip(')') if t.startswith('SUM(')
+                      else t for t in trozos)
+    motor.f(ws, 'B' + str(f_tot_fij),
+            '=IF(COUNT(' + conteo + ')=0,"",' + '+'.join(trozos) + ')',
+            fmt=FMT_EUR)
+    motor.f(ws, 'B' + str(f_tot_ing),
+            '=IF(COUNT(B' + str(f_ing_bloque + 1) + ':B' + str(f_tot_ing - 1)
+            + ')=0,"",SUM(B' + str(f_ing_bloque + 1) + ':B'
+            + str(f_tot_ing - 1) + '))', fmt=FMT_EUR, bold=True)
+    motor.f(ws, 'B' + str(f_tot_var),
+            '=IF(COUNT(B' + str(f_var_bloque + 1) + ':B' + str(f_tot_var - 1)
+            + ')=0,"",SUM(B' + str(f_var_bloque + 1) + ':B'
+            + str(f_tot_var - 1) + '))', fmt=FMT_EUR, bold=True)
+    motor.f(ws, 'B' + str(f_mb),
+            '=IF(OR(B' + str(f_tot_ing) + '="",B' + str(f_tot_var)
+            + '=""),"",B' + str(f_tot_ing) + '-B' + str(f_tot_var) + ')',
             fmt=FMT_EUR, bold=True)
+    motor.f(ws, 'B' + str(f_eb),
+            '=IF(OR(B' + str(f_mb) + '="",B' + str(f_tot_fij) + '=""),"",B'
+            + str(f_mb) + '-B' + str(f_tot_fij) + ')', fmt=FMT_EUR, bold=True)
     motor.val(ws, 'A' + str(f_tot_fij),
               'TOTAL COSTES FIJOS (sin amortización)')
     nota(ws, 'D' + str(f_tot_fij),
@@ -960,7 +989,8 @@ def _pl_mensual_representante(wb, fname, cambios, contenido):
     # la cabecera de la columna B dice «Importe (€)» y la regla de columna del
     # §1.4 lo devolvería a euros.
     motor.f(ws, 'B' + str(f_me),
-            '=IF(B' + str(f_tot_ing) + '=0,"",B' + str(f_eb) + '/B'
+            '=IF(OR(B' + str(f_tot_ing) + '="",B' + str(f_tot_ing)
+            + '=0,B' + str(f_eb) + '=""),"",B' + str(f_eb) + '/B'
             + str(f_tot_ing) + ')')
     motor.fijar_formato(ws, 'B' + str(f_me), FMT_PCT)
 
@@ -968,10 +998,14 @@ def _pl_mensual_representante(wb, fname, cambios, contenido):
     f_amo2, f_ebit = f_me + 1, f_me + 2
     motor.val(ws, 'A' + str(f_amo2),
               'Amortización (fuera del EBITDA, ver fila ' + str(f_amort) + ')')
-    motor.f(ws, 'B' + str(f_amo2), '=B' + str(f_amort), fmt=FMT_EUR)
+    motor.f(ws, 'B' + str(f_amo2),
+            '=IF(B' + str(f_amort) + '="","",B' + str(f_amort) + ')',
+            fmt=FMT_EUR)
     motor.val(ws, 'A' + str(f_ebit), 'EBIT (resultado de explotación)')
-    motor.f(ws, 'B' + str(f_ebit), '=B' + str(f_eb) + '-B' + str(f_amo2),
-            fmt=FMT_EUR, bold=True)
+    motor.f(ws, 'B' + str(f_ebit),
+            '=IF(B' + str(f_eb) + '="","",B' + str(f_eb) + '-IF(ISNUMBER(B'
+            + str(f_amo2) + '),B' + str(f_amo2) + ',0))', fmt=FMT_EUR,
+            bold=True)
 
     # 2.3.3 · la columna «% s/Ventas» deja de decir «0,0 %» con el libro en
     # blanco (§7-bis.13) y C35 deja de dividir un porcentaje entre la
@@ -989,7 +1023,8 @@ def _pl_mensual_representante(wb, fname, cambios, contenido):
                 limpiadas.append('C' + str(r))
             continue
         motor.f(ws, 'C' + str(r),
-                '=IF($B$' + str(f_tot_ing) + '=0,"",B' + str(r) + '/$B$'
+                '=IF(OR($B$' + str(f_tot_ing) + '="",$B$' + str(f_tot_ing)
+                + '=0,B' + str(r) + '=""),"",B' + str(r) + '/$B$'
                 + str(f_tot_ing) + ')', fmt=FMT_PCT)
         rehechas += 1
     _semaforo_negativo(ws, ['B'], (f_eb, f_ebit))
@@ -1315,11 +1350,16 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
         motor.val(ws, 'A' + str(r), etiqueta)
     guarda = '=IF($B$11="","",'
 
-    motor.f(ws, 'B11', '=IF(' + pl_ing_celda + '=0,"",' + pl_ing + ')',
-            fmt=FMT_EUR)
-    motor.f(ws, 'B12', guarda + pl_var + ')', fmt=FMT_EUR)
-    motor.f(ws, 'B14', guarda + pl_fij + ')', fmt=FMT_EUR)
-    motor.f(ws, 'B16', guarda + (pl_amo + ')' if pl_amo else '0)'),
+    # RC-09 · el P&L devuelve ahora `""` cuando no hay dato, así que la guarda
+    # de esta hoja no puede seguir siendo `=0`: `""=0` es FALSO en Excel y la
+    # proyección intentaría multiplicar una cadena por 12.
+    motor.f(ws, 'B11',
+            '=IF(OR(' + pl_ing_celda + '="",' + pl_ing_celda + '=0),"",'
+            + pl_ing + ')', fmt=FMT_EUR)
+    motor.f(ws, 'B12', motor.iferror(guarda[1:] + pl_var + ')'), fmt=FMT_EUR)
+    motor.f(ws, 'B14', motor.iferror(guarda[1:] + pl_fij + ')'), fmt=FMT_EUR)
+    motor.f(ws, 'B16',
+            motor.iferror(guarda[1:] + (pl_amo + ')' if pl_amo else '0)')),
             fmt=FMT_EUR)
     for i, col in enumerate(('C', 'D')):
         ant = 'BC'[i]
@@ -1441,22 +1481,28 @@ def fondo_de_maniobra(wb, fname, cambios, contenido, pl, hoja_inv, col_pres,
     motor.val(ws, 'A' + str(r), 'Coste mensual de estructura (fijos sin '
               'amortización + variables) (€)')
     motor.f(ws, col_pres + str(r),
-            "='P&L Mensual'!B" + str(pl['tot_fij']) + "+'P&L Mensual'!B"
-            + str(pl['tot_var']), fmt=FMT_EUR)
+            "=IF(OR('P&L Mensual'!B" + str(pl['tot_fij']) + "=\"\",'P&L "
+            "Mensual'!B" + str(pl['tot_var']) + "=\"\"),\"\",'P&L Mensual'!B"
+            + str(pl['tot_fij']) + "+'P&L Mensual'!B" + str(pl['tot_var'])
+            + ')', fmt=FMT_EUR)
     f_estr = r
 
     f_prea = None
     if con_prea:
         r += 1
         motor.val(ws, 'A' + str(r), 'Alquiler mensual (€)')
-        motor.f(ws, col_pres + str(r), "='P&L Mensual'!B" + str(pl['alquiler']),
-                fmt=FMT_EUR)
+        motor.f(ws, col_pres + str(r),
+                "=IF('P&L Mensual'!B" + str(pl['alquiler']) + "=\"\",\"\","
+                "'P&L Mensual'!B" + str(pl['alquiler']) + ')', fmt=FMT_EUR)
         f_alq = r
         r += 1
         motor.val(ws, 'A' + str(r), 'Coste mensual de la brigada (€)')
         motor.f(ws, col_pres + str(r),
-                "='P&L Mensual'!B" + str(pl['personal'][0])
-                + "+'P&L Mensual'!B" + str(pl['personal'][1]), fmt=FMT_EUR)
+                "=IF(COUNT('P&L Mensual'!B" + str(pl['personal'][0])
+                + ",'P&L Mensual'!B" + str(pl['personal'][1]) + ")=0,\"\","
+                "SUM('P&L Mensual'!B" + str(pl['personal'][0])
+                + ",'P&L Mensual'!B" + str(pl['personal'][1]) + '))',
+                fmt=FMT_EUR)
         f_bri = r
         r += 1
         motor.val(ws, 'A' + str(r), 'Meses de renta ANTES de abrir (fuera de '
@@ -1538,7 +1584,8 @@ def fondo_de_maniobra(wb, fname, cambios, contenido, pl, hoja_inv, col_pres,
             suma += ('+IF(ISNUMBER(' + col_pres + str(f_prea) + '),'
                      + col_pres + str(f_prea) + ',0)')
         motor.f(ws, col_pres + str(r),
-                '=IF(' + col_pres + str(f_total_tabla) + '=0,"",' + suma + ')',
+                '=IF(OR(' + col_pres + str(f_total_tabla) + '="",' + col_pres
+                + str(f_total_tabla) + '=0),"",' + suma + ')',
                 fmt=FMT_EUR, bold=True)
         f_neces = r
         r += 1
@@ -1730,6 +1777,7 @@ def plan_representante(wb, fname, cambios, contenido, subtitulo):
                             'C', col_etq=col_etq, fila_cab=fila_cab)
     correspondencia_capex(wb, fname, cambios, contenido, 'Inversión', fila_cab,
                           col_etq=col_etq)
+    _total_inversion_guardado(ws_inv, fname, cambios, fila_cab, col_etq)
     _desviacion_sin_dato(ws_inv, fname, cambios, 'C', 'D', 'E')
     plan_de_financiacion(wb, fname, cambios, contenido, inv)
     instruccion(wb, 'La pestaña «' + HOJA_PROY + '» ya existe: el Año 1 sale '
@@ -1745,6 +1793,31 @@ def plan_representante(wb, fname, cambios, contenido, subtitulo):
                     'última columna de «Inversión» dice a qué categoría suya '
                     'corresponde cada concepto.', RX_INSTR_FUENTE)
     return 'inversion-conceptos'
+
+
+def _total_inversion_guardado(ws, fname, cambios, fila_cab, col_etq):
+    """RC-09 — «TOTAL inversión 0,00 €» con la tabla vacía. Misma guarda `COUNT`
+    que el resto del paquete (nunca `COUNTIF(rango,"<>")`, ver RT-01)."""
+    f_tot = _fila(ws, r'^total', col=col_etq, desde=fila_cab + 1,
+                  obligatoria=False)
+    if not f_tot:
+        return 0
+    tocadas = 0
+    for c in range(2, ws.max_column + 1):
+        from openpyxl.utils import get_column_letter as gcl
+        col = gcl(c)
+        cel = ws[col + str(f_tot)]
+        if cel.data_type != 'f' or 'SUM' not in str(cel.value).upper():
+            continue
+        rango = col + str(fila_cab + 1) + ':' + col + str(f_tot - 1)
+        motor.f(ws, col + str(f_tot),
+                '=IF(COUNT(' + rango + ')=0,"",SUM(' + rango + '))',
+                fmt=FMT_EUR, bold=True)
+        tocadas += 1
+    if tocadas:
+        apunta(cambios, fname, ws, str(tocadas) + ' totales de la tabla con la '
+               'guarda «sin dato = ""» en vez de «0,00 €» (§7-bis.13, RC-09)')
+    return tocadas
 
 
 def _desviacion_sin_dato(ws, fname, cambios, col_prev, col_real, col_desv):

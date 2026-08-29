@@ -443,7 +443,15 @@ DISENO_SALA = {
 VAJILLA = {
     'anuncia': 50,
     'columna_calculada': {
-        'cabecera_entrada': 'Factor por comensal (menú degustación)',
+        # RD-16 · la columna estaba rellena en 11 de 50 filas y parecía un
+        # cálculo que faltaba. Se rellenan TODAS las piezas que se sirven
+        # por comensal (incluida la cubertería entera, que es la que más
+        # rota en un menú de 8-12 pases) y el propio rótulo dice qué
+        # significa una celda vacía: que esa línea no es una pieza por
+        # comensal, sino equipo de servicio (decantadores, pinzas,
+        # muletones, stock de seguridad).
+        'cabecera_entrada': ('Factor por comensal (menú degustación) — '
+                             'vacío = no es pieza por comensal'),
         'cabecera_calculada': 'Menú degustación (uds)',
         'parametros': [
             {'etiqueta': 'Plazas de sala', 'valor': 65, 'formato': '#,##0',
