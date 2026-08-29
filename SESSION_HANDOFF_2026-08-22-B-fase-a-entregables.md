@@ -380,3 +380,19 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
   con representante + hermanos sonnet + canario). Si esta sesión se corta antes de que exista el fichero: relanzar el redactor con el mismo encargo.
 - **R1 `plan-negocio-bar-restaurante`** (planes línea A) lanzada en paralelo (`auditoria-entregables-workflow.js`, familia `plan`); persistir con
   `r1-desde-journal.py <journal> plan-negocio-bar-restaurante plan` y commitear. Pendiente: R1 de `plan-negocio-cocteleria-eventos` (línea B).
+- **R1 `plan-negocio-bar-restaurante`** (`8957f01`/`3e792fd`): **93 hallazgos / 33 altas, «no listo» ×3**. El «plan financiero» tiene **0 fórmulas en
+  6 hojas** (resultados tecleados; la landing promete 5 veces que se recalculan); nóminas del P&L 93.971 € por debajo de su propia hoja de Personal (con la
+  cifra correcta el negocio es inviable); bebida con coste contado dos veces; break-even distinto en 3 sitios; «Plan de Financiación» vendido e
+  inexistente; carnet de manipulador «obligatorio» (derogado 2010) y RGSEAA que no corresponde; sin tesorería ni cuadro del préstamo.
+  Gotcha cazado: `r1-desde-journal.py` clasificaba por el TEXTO de la lente y la de dominio decía «coherencia de inversión…» → pisó los 30 COM-*;
+  ahora clasifica por prefijo de id y aborta si dos lentes caen en la misma clave.
+- **Barrido de caracteres no latinos en TODO `dl/`** (docx por XML, xlsx por sharedStrings/hojas, PDF por PyPDF2): **7 docx de 6 planes** con
+  fragmentos chinos/cirílicos/árabes en frases («押入れ器具 menores», «las传统ales restaurantes», «calidad продукти», «bebida ضمن paquete»,
+  «lo que意味着 … 我们可以»): bar-restaurante, cafetería, coctelería (plan + catálogo), food-truck, panadería, tapas-bar. xlsx y PDF: 0.
+  **HOTFIX en curso (opus)**: sustitución por contexto a nivel de run con python-docx, respaldo en scratchpad, gates (0 no-latinos, párrafos/tablas
+  iguales, diff sólo en los párrafos inyectados). Informe: `auditorias/hotfix-no-latinos-docx-2026-08-29.json`. Tras él: commit de los 7 docx, push,
+  gate LIVE de los 6 planes + md5.
+- **⚠️ En 6 de las 8 guías el PDF es SOLO UNA PORTADA (1 página, 33-55 palabras)** y la guía real es el docx (2.9k-6.3k palabras): casual, panadería,
+  mexicano, peruano, japonés, nikkei. Gastronómico: PDF 10 p. Dark-kitchen: PDF 27 p = docx (7.0k). Ninguna se acerca a las «80+ páginas». Pasado al
+  redactor de la SPEC: la decisión 6 aplica a las 8 y el pipeline genera PDF + docx desde el mismo texto.
+- **R1 `plan-negocio-cocteleria-eventos`** (planes línea B) lanzada; persistir con `r1-desde-journal.py … plan-negocio-cocteleria-eventos plan`.
