@@ -94,6 +94,28 @@ def ficheros(ctx):
     return [] if pid in SIN_GRUPO_A else list(FICHEROS)
 
 
+#: §1.2/§7-bis.12 — cada constante que el grupo convierte en fórmula queda
+#: anotada aquí `(fichero, hoja, celda, valor anterior, fórmula, nota)` y
+#: `demos()` la RECALCULA con pycel: el valor nuevo tiene que coincidir con el
+#: viejo con tolerancia 0,01 €, o la diferencia tiene que venir con una nota que
+#: la justifique (el caso de NUEVO-02, donde el número viejo estaba mal sumado).
+#: Sin esta comprobación, «conservar el número» es una promesa sin gate.
+SUSTITUCIONES = {}
+
+
+def a_formula(ws, coord, formula, fname, cambios, fmt=None, celda_ejemplo=None,
+              nota_dif=None):
+    anterior = motor.a_formula(ws, coord, formula, celda_ejemplo=celda_ejemplo,
+                               fmt=fmt, informe=cambios, fname=fname,
+                               nota=nota_dif)
+    if anterior is not None and isinstance(anterior, (int, float)) \
+            and not isinstance(anterior, bool):
+        SUSTITUCIONES.setdefault(fname, []).append(
+            {'hoja': ws.title, 'celda': coord, 'anterior': anterior,
+             'formula': formula, 'nota': nota_dif})
+    return anterior
+
+
 class VarianteDesconocida(Exception):
     """§1.1/§7-bis.11 aplicado al grupo A: el módulo NO adivina una rejilla."""
 
@@ -226,6 +248,19 @@ def cabecera(ws, titulo, subtitulo, columnas, fila=4, ancho_a=44):
         L = gcl(i + 1)
         if not ws.column_dimensions[L].width:
             ws.column_dimensions[L].width = 16.0
+
+
+def base_bloque(ws, marca_rx):
+    """Fila donde empieza un bloque que el grupo AÑADE, de forma IDEMPOTENTE.
+
+    Calcularla como `ws.max_row + 2` funciona la primera vez y **desplaza el
+    bloque dos filas en cada pasada siguiente**: medido, 100 diferencias entre
+    la 1.ª y la 2.ª pasada del cash flow. Igual que el `MARCA_BLOQUE` de
+    `motor.cerrar_checklist`, la posición se ancla en la ETIQUETA del propio
+    bloque: si ya está escrito se reescribe encima, y si no, va al final.
+    """
+    r = _fila(ws, marca_rx, obligatoria=False)
+    return r if r else ws.max_row + 2
 
 
 def nota(ws, coord, texto):
@@ -638,25 +673,23 @@ def pl_tres_hojas(wb, fname, cambios, contenido):
 
         motor.verde(ws, 'B' + str(f_ing + 1) + ':B' + str(f_tot_ing - 1))
         motor.verde(ws, 'B' + str(f_fij + 1) + ':B' + str(f_tot_fij - 1))
-        motor.a_formula(ws, 'B' + str(f_tot_ing),
-                        '=SUM(B' + str(f_ing + 1) + ':B' + str(f_tot_ing - 1)
-                        + ')', fmt=FMT_EUR, informe=cambios, fname=fname)
+        a_formula(ws, 'B' + str(f_tot_ing),
+                  '=SUM(B' + str(f_ing + 1) + ':B' + str(f_tot_ing - 1) + ')',
+                  fname, cambios, fmt=FMT_EUR)
         # el food cost deja de ir en el rótulo y baja a celda verde
         celda_fc = _celda_food_cost(ws, f_fc, conf, cambios, fname)
-        motor.a_formula(ws, 'B' + str(f_fc),
-                        '=B' + str(f_tot_ing) + '*' + celda_fc, fmt=FMT_EUR,
-                        informe=cambios, fname=fname)
+        a_formula(ws, 'B' + str(f_fc), '=B' + str(f_tot_ing) + '*' + celda_fc,
+                  fname, cambios, fmt=FMT_EUR)
         motor.verde(ws, 'B' + str(f_fc + 1) + ':B' + str(f_tot_var - 1))
-        motor.a_formula(ws, 'B' + str(f_tot_var),
-                        '=SUM(B' + str(f_fc) + ':B' + str(f_tot_var - 1) + ')',
-                        fmt=FMT_EUR, informe=cambios, fname=fname)
-        motor.a_formula(ws, 'B' + str(f_tot_fij),
-                        '=SUM(B' + str(f_fij + 1) + ':B' + str(f_tot_fij - 1)
-                        + ')', fmt=FMT_EUR, informe=cambios, fname=fname)
-        motor.a_formula(ws, 'B' + str(f_eb),
-                        '=B' + str(f_tot_ing) + '-B' + str(f_tot_var) + '-B'
-                        + str(f_tot_fij), fmt=FMT_EUR, informe=cambios,
-                        fname=fname)
+        a_formula(ws, 'B' + str(f_tot_var),
+                  '=SUM(B' + str(f_fc) + ':B' + str(f_tot_var - 1) + ')',
+                  fname, cambios, fmt=FMT_EUR)
+        a_formula(ws, 'B' + str(f_tot_fij),
+                  '=SUM(B' + str(f_fij + 1) + ':B' + str(f_tot_fij - 1) + ')',
+                  fname, cambios, fmt=FMT_EUR)
+        a_formula(ws, 'B' + str(f_eb),
+                  '=B' + str(f_tot_ing) + '-B' + str(f_tot_var) + '-B'
+                  + str(f_tot_fij), fname, cambios, fmt=FMT_EUR)
         if f_pct:
             motor.f(ws, 'B' + str(f_pct),
                     '=IF(B' + str(f_tot_ing) + '=0,"",B' + str(f_eb) + '/B'
@@ -665,9 +698,8 @@ def pl_tres_hojas(wb, fname, cambios, contenido):
             for r, _n, _c in etiquetas(ws, 1, f_ing, f_eb):
                 if ws['B' + str(r)].value is None:
                     continue
-                motor.a_formula(ws, col_anual + str(r),
-                                '=B' + str(r) + '*12', fmt=FMT_EUR,
-                                informe=cambios, fname=fname)
+                a_formula(ws, col_anual + str(r), '=B' + str(r) + '*12',
+                          fname, cambios, fmt=FMT_EUR)
             cols.append(col_anual)
         if col_pct:
             for r, _n, _c in etiquetas(ws, 1, f_ing, f_eb):
@@ -954,15 +986,21 @@ def hoja_financiacion(wb, fname, cambios, contenido, subtitulo):
     """DOM-22: hoy no hay una sola línea de préstamo en los 141 ficheros.
 
     `pycel` **no implementa `PMT`** (SPEC, cabecera): la cuota va como anualidad
-    algebraica `importe*i/(1-(1+i)^-n)`. El cuadro es ANUAL y con el tipo anual,
-    así que el capital pendiente cierra exactamente en 0; la cuota mensual se da
-    aparte (es la que se lleva al cash flow) con el tipo mensual.
+    algebraica `importe*i/(1-(1+i)^-n)` con el tipo MENSUAL, que es como se paga
+    un préstamo de verdad. El cuadro es anual pero se deriva del mismo préstamo
+    mensual con la forma cerrada del capital pendiente
+    `P*((1+i)^N-(1+i)^k)/((1+i)^N-1)`, verificada contra la amortización mes a
+    mes (100.000 € al 5 % en 60 meses: 43.014,90 € pendientes al cierre del año
+    3 por las dos vías). Así la cuota que se lleva al cash flow y los intereses
+    que se lleva la proyección **son del mismo préstamo**: un cuadro anual
+    calculado con el tipo anual daría 23.097 €/año donde la cuota mensual paga
+    22.645 €/año, y las dos cifras del producto se contradirían.
 
     Dos guardas heredadas del kit plan-financiero, que allí se pagaron caras:
       · **carencia ≥ plazo** → aviso de TEXTO en la columna `Cuota`, dejando
         `Capital inicial`, `Intereses` y `Capital pendiente` NUMÉRICAS: de los
         intereses vive el P&L y del capital pendiente el encadenado del año
-        siguiente, así que un texto ahí propagaría `#¡VALOR!` por todo el libro.
+        siguiente, así que un texto ahí propagaría `#¡VALOR!`.
       · **pasado el vencimiento** el cuadro se apaga a `0` numérico, o el
         capital pendiente se vuelve negativo y el préstamo «cobra» al banco.
     """
@@ -970,9 +1008,9 @@ def hoja_financiacion(wb, fname, cambios, contenido, subtitulo):
     conf = ((getattr(contenido, 'PLAN', None) or {}).get('financiacion')
             if contenido else None) or {}
     cabecera(ws, 'Financiación del proyecto', subtitulo,
-             ['Año', 'Capital inicial (€)', 'Cuota (€)', 'Intereses (€)',
-              'Amortización del principal (€)', 'Capital pendiente (€)'],
-             fila=17, ancho_a=46)
+             ['Año', 'Capital inicial (€)', 'Cuota del año (€)',
+              'Intereses (€)', 'Amortización del principal (€)',
+              'Capital pendiente (€)'], fila=17, ancho_a=48)
     motor.val(ws, 'A4', 'PARÁMETROS DEL PRÉSTAMO', bold=True)
     campos = (
         (5, 'Importe del préstamo (€)', conf.get('importe'), FMT_EUR),
@@ -986,53 +1024,61 @@ def hoja_financiacion(wb, fname, cambios, contenido, subtitulo):
     motor.val(ws, 'A10', 'Tipo mensual (%)')
     motor.f(ws, 'B10', '=B7/12')
     motor.fijar_formato(ws, 'B10', '0.000%')
-    motor.val(ws, 'A11', 'Nº de cuotas (meses)')
-    motor.f(ws, 'B11', '=B6*12', fmt=FMT_ENT)
-    motor.val(ws, 'A12', 'Cuota MENSUAL (€) — la que se lleva al cash flow')
+    motor.val(ws, 'A11', 'Cuotas de amortización (meses)')
+    motor.f(ws, 'B11', '=(B6-B8)*12', fmt=FMT_ENT)
+    motor.val(ws, 'A12',
+              'Cuota MENSUAL tras la carencia (€) — la que va al cash flow')
     motor.f(ws, 'B12',
-            '=IF(B5=0,"",IFERROR(B5*B10/(1-(1+B10)^-B11),""))', fmt=FMT_EUR,
-            bold=True)
-    motor.val(ws, 'A13', 'Cuota ANUAL del cuadro tras la carencia (€)')
-    motor.f(ws, 'B13',
-            '=IF(B5=0,"",IF(B6-B8<=0,"",IFERROR(B5*B7/(1-(1+B7)^-(B6-B8)),'
-            '"")))', fmt=FMT_EUR)
-    nota(ws, 'A14',
-         'La cuota se calcula como anualidad: importe × i / (1 − (1+i)^−n). '
-         'El cuadro de abajo es ANUAL y usa el tipo anual, por eso el capital '
-         'pendiente cierra en 0 exacto; la cuota mensual de B12 usa el tipo '
-         'mensual y es la que se repite en cash-flow-break-even.xlsx.')
+            '=IF(B5=0,"",IF(B11<=0,"",IFERROR(B5*B10/(1-(1+B10)^-B11),"")))',
+            fmt=FMT_EUR, bold=True)
+    motor.val(ws, 'A13', 'Cuota mensual DURANTE la carencia (€) — sólo '
+                         'intereses')
+    motor.f(ws, 'B13', '=IF(B5=0,"",IF(B8<=0,"",B5*B10))', fmt=FMT_EUR)
+    motor.val(ws, 'A14', 'Meses de carencia')
+    motor.f(ws, 'B14', '=B8*12', fmt=FMT_ENT)
     nota(ws, 'A15',
-         'Durante la carencia sólo se pagan intereses: el capital pendiente no '
-         'baja. El cuadro cubre ' + str(ANOS_CUADRO) + ' años; si tu plazo es '
-         'mayor, copia la última fila hacia abajo.')
+         'La cuota se calcula como anualidad: importe × i / (1 − (1+i)^−n), con '
+         'i mensual y n el número de cuotas. Durante la carencia sólo se pagan '
+         'intereses y el capital pendiente no baja.')
+    nota(ws, 'A16',
+         'El cuadro cubre ' + str(ANOS_CUADRO) + ' años; si tu plazo es mayor, '
+         'copia la última fila hacia abajo. La cuota mensual de B12 es la que '
+         'se repite en cash-flow-break-even.xlsx (no hay enlace entre libros: '
+         'un .xlsx movido de carpeta daría #REF!).')
 
     fila0 = 18
     for i in range(ANOS_CUADRO):
         r = fila0 + i
-        ano = i + 1
-        motor.val(ws, 'A' + str(r), ano, fmt=FMT_ENT)
+        motor.val(ws, 'A' + str(r), i + 1, fmt=FMT_ENT)
         if i == 0:
             motor.f(ws, 'B' + str(r), '=$B$5', fmt=FMT_EUR)
         else:
             motor.f(ws, 'B' + str(r), '=F' + str(r - 1), fmt=FMT_EUR)
-        motor.f(ws, 'D' + str(r), '=B' + str(r) + '*$B$7', fmt=FMT_EUR)
+        # capital pendiente por la forma cerrada del préstamo MENSUAL
+        motor.f(ws, 'F' + str(r),
+                '=IF($B$8>=$B$6,B' + str(r) + ',IF(A' + str(r) + '>=$B$6,0,'
+                'IFERROR($B$5*((1+$B$10)^$B$11-(1+$B$10)^MIN($B$11,MAX(0,12*A'
+                + str(r) + '-$B$14)))/((1+$B$10)^$B$11-1),B' + str(r) + ')))',
+                fmt=FMT_EUR)
         motor.f(ws, 'C' + str(r),
                 '=IF($B$8>=$B$6,"' + AVISO_CARENCIA + '",'
                 'IF(A' + str(r) + '>$B$6,0,'
-                'IF(A' + str(r) + '<=$B$8,D' + str(r) + ',$B$13)))',
-                fmt=FMT_EUR)
+                'IF(A' + str(r) + '<=$B$8,$B$5*$B$7,$B$12*12)))', fmt=FMT_EUR)
         motor.f(ws, 'E' + str(r),
-                '=IF(ISNUMBER(C' + str(r) + '),C' + str(r) + '-D' + str(r)
+                '=IF(ISNUMBER(C' + str(r) + '),B' + str(r) + '-F' + str(r)
                 + ',0)', fmt=FMT_EUR)
-        motor.f(ws, 'F' + str(r), '=B' + str(r) + '-E' + str(r), fmt=FMT_EUR)
-    ws.column_dimensions['A'].width = 46.0
+        motor.f(ws, 'D' + str(r),
+                '=IF(ISNUMBER(C' + str(r) + '),C' + str(r) + '-E' + str(r)
+                + ',B' + str(r) + '*$B$7)', fmt=FMT_EUR)
+    ws.column_dimensions['A'].width = 48.0
     motor.regla_expresion(ws, 'F' + str(fila0) + ':F'
                           + str(fila0 + ANOS_CUADRO - 1),
                           '=AND(ISNUMBER($F' + str(fila0) + '),$F' + str(fila0)
                           + '<0)')
     apunta(cambios, fname, ws, ('hoja CREADA' if nueva else 'hoja rehecha')
-           + ': parámetros, cuota mensual y anual y cuadro francés de '
-           + str(ANOS_CUADRO) + ' años con las dos guardas (DOM-22, §2.3.4)')
+           + ': parámetros, cuota mensual (la del cash flow) y cuadro de '
+           + str(ANOS_CUADRO) + ' años derivado del MISMO préstamo mensual, '
+             'con las dos guardas (DOM-22, §2.3.4)')
     return {'primer_ano': fila0, 'cuota_mensual': 'B12'}
 
 
@@ -1054,10 +1100,25 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
              ['Concepto', 'Año 1', 'Año 2', 'Año 3', 'Notas'], fila=4,
              ancho_a=46)
     ws.column_dimensions['E'].width = 52.0
-    pl_ing = "'P&L Mensual'!B" + str(pl['tot_ing'])
-    pl_var = "'P&L Mensual'!B" + str(pl['tot_var'])
-    pl_fij = "'P&L Mensual'!B" + str(pl['tot_fij'])
-    pl_amo = ("'P&L Mensual'!B" + str(pl['amort'])) if pl.get('amort') else None
+    # El Año 1 sale del P&L **anualizado**, y anualizar no es siempre «×12»:
+    # el representante tiene UN mes (B) y los hermanos una rejilla de 12 meses
+    # con columna de TOTAL. Multiplicar por 12 la columna de enero de un
+    # hermano daría el año sólo si los doce meses fuesen idénticos — que es
+    # justo lo que el cliente va a dejar de hacer en cuanto meta estacionalidad.
+    col_total = pl.get('total')
+
+    def _anual(fila):
+        if not fila:
+            return None
+        if col_total:
+            return "'P&L Mensual'!" + col_total + str(fila)
+        return "'P&L Mensual'!B" + str(fila) + '*12'
+
+    pl_ing_celda = ("'P&L Mensual'!" + (col_total or 'B') + str(pl['tot_ing']))
+    pl_ing = _anual(pl['tot_ing'])
+    pl_var = _anual(pl['tot_var'])
+    pl_fij = _anual(pl['tot_fij'])
+    pl_amo = _anual(pl.get('amort'))
 
     motor.val(ws, 'A5', 'PARÁMETROS', bold=True)
     motor.val(ws, 'A6', 'Crecimiento de ventas (%)')
@@ -1074,9 +1135,13 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
         motor.val(ws, col + '7', (conf.get('inflacion') or {}).get(col),
                   fmt=FMT_PCT, verde_=True)
         motor.permitir_negativo(ws, col + '6:' + col + '7')
+    # El tipo del IS NO se deja vacío aunque falte el módulo de contenido: una
+    # celda de impuesto en blanco hace que la línea «Impuesto de Sociedades»
+    # valga 0 sin decirlo, y el resultado neto sale inflado. El 25 % viene de
+    # la SPEC §2.3.1, no de una estimación del sector.
+    tipo_is = conf.get('impuesto_sociedades', 0.25)
     for col in ('B', 'C', 'D'):
-        motor.val(ws, col + '8', conf.get('impuesto_sociedades'), fmt=FMT_PCT,
-                  verde_=True)
+        motor.val(ws, col + '8', tipo_is, fmt=FMT_PCT, verde_=True)
 
     filas = ((11, 'Ingresos (€)'), (12, 'Costes variables (€)'),
              (13, 'Margen bruto (€)'), (14, 'Costes fijos sin amortización (€)'),
@@ -1091,11 +1156,11 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
         motor.val(ws, 'A' + str(r), etiqueta)
     guarda = '=IF($B$11="","",'
 
-    motor.f(ws, 'B11', '=IF(' + pl_ing + '=0,"",' + pl_ing + '*12)',
+    motor.f(ws, 'B11', '=IF(' + pl_ing_celda + '=0,"",' + pl_ing + ')',
             fmt=FMT_EUR)
-    motor.f(ws, 'B12', guarda + pl_var + '*12)', fmt=FMT_EUR)
-    motor.f(ws, 'B14', guarda + pl_fij + '*12)', fmt=FMT_EUR)
-    motor.f(ws, 'B16', guarda + (pl_amo + '*12)' if pl_amo else '0)'),
+    motor.f(ws, 'B12', guarda + pl_var + ')', fmt=FMT_EUR)
+    motor.f(ws, 'B14', guarda + pl_fij + ')', fmt=FMT_EUR)
+    motor.f(ws, 'B16', guarda + (pl_amo + ')' if pl_amo else '0)'),
             fmt=FMT_EUR)
     for i, col in enumerate(('C', 'D')):
         ant = 'BC'[i]
@@ -1128,8 +1193,11 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
         motor.f(ws, col + '22',
                 guarda + 'IFERROR(' + col + '15/' + col + '11,""))',
                 fmt=FMT_PCT)
-    nota(ws, 'E11', 'Año 1 = P&L Mensual × 12. Si cambias el P&L, cambia la '
-                    'proyección entera: no hay ni una constante aquí.')
+    nota(ws, 'E11',
+         ('Año 1 = columna TOTAL del P&L Mensual.' if col_total
+          else 'Año 1 = P&L Mensual × 12.')
+         + ' Si cambias el P&L, cambia la proyección entera: no hay ni una '
+           'constante aquí.')
     nota(ws, 'E18', 'Intereses del año, tomados del cuadro francés de la hoja '
                     '«' + HOJA_FIN + '».')
     _semaforo_negativo(ws, ['B', 'C', 'D'], (15, 21, 22))
@@ -1156,9 +1224,11 @@ def fondo_de_maniobra(wb, fname, cambios, contenido, pl, hoja_inv, col_pres):
     conf = ((getattr(contenido, 'PLAN', None) or {}).get('fondo_maniobra')
             if contenido else None) or {}
     meses = conf.get('meses', 6)
-    base = ws.max_row + 2
-    motor.val(ws, 'A' + str(base), 'FONDO DE MANIOBRA — cómo se calcula la '
-              'fila ' + str(f_fondo), bold=True)
+    # marca propia y DISTINTA del rótulo de la partida: `^fondo de maniobra`
+    # encontraría antes la fila 26 de la tabla y el bloque se escribiría encima.
+    base = base_bloque(ws, r'^como se calcula el fondo de maniobra')
+    motor.val(ws, 'A' + str(base), 'CÓMO SE CALCULA EL FONDO DE MANIOBRA (la '
+              'fila ' + str(f_fondo) + ' de esta tabla)', bold=True)
     motor.val(ws, 'A' + str(base + 1), 'Meses de colchón (mínimo 6)')
     motor.val(ws, col_pres + str(base + 1), meses, fmt=FMT_ENT, verde_=True)
     motor.fijar_formato(ws, col_pres + str(base + 1), FMT_ENT)
@@ -1204,9 +1274,18 @@ def correspondencia_capex(wb, fname, cambios, contenido, hoja_inv, fila_cab):
     if not mapa:
         return 0
     ws = wb[hoja_inv]
-    col = gcl(ws.max_column + 1)
-    cel = ws.cell(row=fila_cab, column=ws.max_column + 1,
-                  value='Categoría equivalente en calculadora-capex.xlsx')
+    titulo = 'Categoría equivalente en calculadora-capex.xlsx'
+    # la columna se busca por su CABECERA: `ws.max_column + 1` añadiría una
+    # columna nueva en cada pasada (misma trampa que la de `ws.max_row + 2`).
+    indice = None
+    for c in range(1, ws.max_column + 1):
+        if _norm(ws.cell(row=fila_cab, column=c).value) == _norm(titulo):
+            indice = c
+            break
+    if indice is None:
+        indice = ws.max_column + 1
+    col = gcl(indice)
+    cel = ws.cell(row=fila_cab, column=indice, value=titulo)
     cel.font = Font(bold=True, color='FFFFFF', size=10)
     cel.fill = motor.PatternFill('solid', fgColor='2D2D2D')
     cel.alignment = Alignment(horizontal='center', wrap_text=True)
@@ -1335,24 +1414,21 @@ def plan_panaderia(wb, fname, cambios, contenido, subtitulo):
     ultima = _ultimo_detalle(ws, f_var + 1, f_tot - 1, (RX_BLOQUE_FIJ,))
     cols = ['B', 'C', 'D']
     for col in cols:
-        motor.a_formula(ws, col + str(f_tot),
-                        '=SUM(' + col + str(f_var + 1) + ':' + col
-                        + str(ultima) + ')', fmt=FMT_EUR, informe=cambios,
-                        fname=fname,
-                        nota='NUEVO-02: sumaba dos veces el bloque de energía '
-                             'y se dejaba fuera «Seguros + tasas + '
-                             'amortización»')
-        motor.a_formula(ws, col + str(f_eb),
-                        '=' + col + str(f_fact) + '-' + col + str(f_tot),
-                        fmt=FMT_EUR, informe=cambios, fname=fname,
-                        nota='NUEVO-02: restaba una fila VACÍA, así que el '
-                             'EBITDA era la facturación entera')
-        motor.a_formula(ws, col + str(f_pct),
-                        '=IF(' + col + str(f_fact) + '=0,"",' + col + str(f_eb)
-                        + '/' + col + str(f_fact) + ')', fmt=FMT_PCT,
-                        informe=cambios, fname=fname,
-                        nota='NUEVO-02: dividía el TOTAL DE COSTES entre la '
-                             'facturación y publicaba 122,97 %')
+        a_formula(ws, col + str(f_tot),
+                  '=SUM(' + col + str(f_var + 1) + ':' + col + str(ultima)
+                  + ')', fname, cambios, fmt=FMT_EUR,
+                  nota_dif='NUEVO-02: sumaba dos veces el bloque de energía y '
+                           'se dejaba fuera «Seguros + tasas + amortización»')
+        a_formula(ws, col + str(f_eb),
+                  '=' + col + str(f_fact) + '-' + col + str(f_tot), fname,
+                  cambios, fmt=FMT_EUR,
+                  nota_dif='NUEVO-02: restaba una fila VACÍA, así que el '
+                           'EBITDA era la facturación entera')
+        a_formula(ws, col + str(f_pct),
+                  '=IF(' + col + str(f_fact) + '=0,"",' + col + str(f_eb) + '/'
+                  + col + str(f_fact) + ')', fname, cambios, fmt=FMT_PCT,
+                  nota_dif='NUEVO-02: dividía el TOTAL DE COSTES entre la '
+                           'facturación y publicaba 122,97 %')
     _semaforo_negativo(ws, cols, (f_eb, f_pct))
     apunta(cambios, fname, ws, 'NUEVO-02 corregido: TOTAL COSTES = SUM('
            + str(f_var + 1) + ':' + str(ultima) + '), EBITDA = facturación − '
@@ -1403,7 +1479,7 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
     la fila del flujo neto, sin insertar filas: `openpyxl.insert_rows` no
     reescribe las fórmulas y partiría los `SUM` horizontales que ya existen.
     """
-    base = ws.max_row + 2
+    base = base_bloque(ws, r'^iva \(modelo 303\) y servicio de la deuda$')
     motor.val(ws, 'A' + str(base),
               'IVA (MODELO 303) Y SERVICIO DE LA DEUDA', bold=True)
     celda_iva = motor.escribir_parametro(ws, base + 1, 'A', 'B',
@@ -1495,7 +1571,7 @@ def _bloque_break_even(ws, capa, meses, cambios, fname, contenido):
     """
     conf = ((getattr(contenido, 'CASH', None) or {}).get('break_even')
             if contenido else None) or {}
-    base = ws.max_row + 2
+    base = base_bloque(ws, r'^break-even$')
     motor.val(ws, 'A' + str(base), 'BREAK-EVEN', bold=True)
     campos = ((base + 1, 'Costes fijos mensuales (€)', conf.get('costes_fijos'),
                FMT_EUR, True),
@@ -1622,7 +1698,7 @@ def _break_even_hoja_propia(ws, capa, meses, hoja_caja, cambios, fname,
             "=IFERROR(MATCH(TRUE,INDEX('" + hoja_caja + "'!" + meses[0]
             + str(capa['acum']) + ':' + meses[-1] + str(capa['acum'])
             + ">0,0),0),\"No alcanzado\")", bold=True)
-    base = ws.max_row + 2
+    base = base_bloque(ws, r'^umbral de ventas mensual')
     motor.val(ws, 'A' + str(base), 'Umbral de ventas mensual (€)')
     if f_cf and f_margen:
         motor.f(ws, 'B' + str(base),
@@ -1818,6 +1894,22 @@ def _set(xl, ref, valor):
     xl.set_value(ref, valor)
 
 
+def _mover(xl, salidas, entradas):
+    """Evalúa `salidas`, cambia `entradas` y vuelve a evaluar `salidas`.
+
+    ⚠️ El orden NO es cosmético y costó las cuatro primeras demostraciones de
+    este módulo: `pycel` sólo propaga un `set_value` por el grafo de
+    dependencias **que ya ha construido**, y el grafo se construye al evaluar
+    una SALIDA. Cambiando primero el input, la salida se leía del caché del
+    fichero y la demostración «pasaba» enseñando el valor viejo — que es la
+    forma más cara de equivocarse: una demo que confirma lo que no ha probado.
+    """
+    antes = [_ev(xl, s) for s in salidas]
+    for ref, valor in entradas:
+        _set(xl, ref, valor)
+    return antes, [_ev(xl, s) for s in salidas]
+
+
 def _num(v):
     return isinstance(v, (int, float)) and not isinstance(v, bool)
 
@@ -1832,10 +1924,47 @@ def _busca(carpeta, fname, hoja, patron):
     return _fila(wb[hoja], patron, obligatoria=False), wb
 
 
+def _demo_constantes(carpeta, destino):
+    """§1.2/§7-bis.12 — «conservar el número» con gate.
+
+    Cada constante que el grupo convirtió en fórmula se RECALCULA con pycel y
+    se compara con el valor que había. Coincidencia a 0,01 € o, si no coincide,
+    la diferencia tiene que traer la nota que la justifica — que es el caso de
+    `NUEVO-02`, donde el número viejo estaba mal sumado y corregirlo es
+    precisamente el arreglo.
+    """
+    import os
+    fuera, fallos = [], []
+    for fname, registros in sorted(SUSTITUCIONES.items()):
+        if not os.path.isfile(os.path.join(carpeta, fname)):
+            continue
+        xl = _compilar(carpeta, destino, fname)
+        for reg in registros:
+            ref = "'" + reg['hoja'] + "'!" + reg['celda']
+            nuevo = _ev(xl, ref)
+            iguala = (_num(nuevo)
+                      and abs(nuevo - reg['anterior']) <= 0.01)
+            fila = dict(reg, recalculado=nuevo, coincide=iguala)
+            fuera.append(fila)
+            if iguala or reg.get('nota'):
+                continue
+            fallos.append(fname + ':' + ref + ': la fórmula nueva da '
+                          + repr(nuevo) + ' donde la constante decía '
+                          + repr(reg['anterior']) + ' y NO hay nota que '
+                          'justifique la diferencia (§1.2)')
+    return {'sustituciones': fuera,
+            'coinciden': sum(1 for x in fuera if x['coincide']),
+            'diferencias_justificadas': sum(
+                1 for x in fuera if not x['coincide'] and x.get('nota')),
+            'fallos': fallos}
+
+
 def demos(carpeta, destino, contenido):
     import os
     fuera, fallos = {}, []
-    for nombre, fn in (('ticket_medio', _demo_ticket),
+    for nombre, fn in (('constantes_a_formulas',
+                        lambda c, d: _demo_constantes(c, d)),
+                       ('ticket_medio', _demo_ticket),
                        ('pl_escenarios', _demo_pl),
                        ('plan_financiero', _demo_plan),
                        ('cash_flow', _demo_cash),
@@ -1854,6 +1983,9 @@ def demos(carpeta, destino, contenido):
 
 
 def _demo_ticket(carpeta, destino):
+    """§2.1 — el simulador simula: mover un precio mueve el ticket, mover los
+    días mueve la facturación mensual y el control del mix se pone en rojo si
+    los tramos no reparten el 100 % de los comensales."""
     import os
     fname = 'calculadora-ticket-medio.xlsx'
     if not os.path.isfile(os.path.join(carpeta, fname)):
@@ -1868,57 +2000,71 @@ def _demo_ticket(carpeta, destino):
     f_fmes = _fila(ws, r'^facturacion mensual', obligatoria=False)
     f_dias = _fila(ws, r'^dias abierto', obligatoria=False)
     pares, sueltos = pares_mix(ws, 4, f_ticket - 1)
-    xl = _compilar(carpeta, destino, fname)
     P = "'Ticket Medio'!"
     fallos = []
     r = {'fichero': fname, 'celda_ticket': 'B' + str(f_ticket),
-         'pares': pares, 'incondicionales': sueltos}
-    r['ticket_base'] = _ev(xl, P + 'B' + str(f_ticket))
-    # (1) mover un PRECIO sube el ticket
+         'pares_pct_precio': pares, 'incondicionales': sueltos}
+
+    # (1) subir un PRECIO sube el ticket ponderado
     precio = 'B' + str(pares[0][1])
+    xl = _compilar(carpeta, destino, fname)
     v0 = _ev(xl, P + precio)
-    _set(xl, P + precio, (v0 or 0) + 10)
-    r['ticket_tras_subir_' + precio + '_10eur'] = _ev(xl, P + 'B'
-                                                      + str(f_ticket))
-    if _num(r['ticket_base']) and _num(r['ticket_tras_subir_' + precio
-                                         + '_10eur']):
-        if r['ticket_tras_subir_' + precio + '_10eur'] <= r['ticket_base']:
-            fallos.append(fname + ': subir ' + precio + ' 10 € NO sube el '
-                          'ticket ponderado')
-    _set(xl, P + precio, v0)
-    # (2) los días del mes sólo mueven la facturación mensual
+    antes, despues = _mover(xl, [P + 'B' + str(f_ticket)],
+                            [(P + precio, (v0 or 0) + 10)])
+    r['precio_movido'] = {'celda': precio,
+                          'etiqueta': ws['A' + str(pares[0][1])].value,
+                          'de': v0, 'a': (v0 or 0) + 10}
+    r['ticket'] = {'antes': antes[0], 'despues': despues[0]}
+    if not (_num(antes[0]) and _num(despues[0]) and despues[0] > antes[0]):
+        fallos.append(fname + ': subir ' + precio + ' 10 € no sube el ticket '
+                      'ponderado (' + repr(antes[0]) + ' → '
+                      + repr(despues[0]) + ')')
+
+    # (2) los días abiertos sólo mueven la facturación MENSUAL
     if f_fmes and f_dias:
-        r['fact_mes_base'] = _ev(xl, P + 'B' + str(f_fmes))
+        xl = _compilar(carpeta, destino, fname)
         d0 = _ev(xl, P + 'B' + str(f_dias))
-        _set(xl, P + 'B' + str(f_dias), (d0 or 0) + 4)
-        r['fact_mes_mas_4_dias'] = _ev(xl, P + 'B' + str(f_fmes))
-        if _num(r['fact_mes_base']) and _num(r['fact_mes_mas_4_dias']) \
-                and r['fact_mes_mas_4_dias'] <= r['fact_mes_base']:
-            fallos.append(fname + ': +4 días abiertos NO sube la facturación '
-                          'mensual')
-        _set(xl, P + 'B' + str(f_dias), d0)
-    # (3) el control del mix se dispara si los tramos no suman 100 %
+        antes, despues = _mover(
+            xl, [P + 'B' + str(f_fmes), P + 'B' + str(f_ticket)],
+            [(P + 'B' + str(f_dias), (d0 or 0) + 4)])
+        r['dias_abiertos'] = {'de': d0, 'a': (d0 or 0) + 4}
+        r['facturacion_mensual'] = {'antes': antes[0], 'despues': despues[0]}
+        r['ticket_no_se_mueve_con_los_dias'] = (antes[1], despues[1])
+        # Sin `contenido_<pid>/a.py` la hoja queda con las fórmulas y SIN
+        # ejemplo: cubiertos/día y días son celdas verdes vacías y la
+        # facturación vale 0 con razón. Exigir ahí que «suba» sería exigir que
+        # el módulo de contenido exista, que es otro gate y de otra tanda.
+        if not _num(antes[1]) or antes[1] == 0:
+            r['sin_ejemplo_precargado'] = True
+        elif not (_num(antes[0]) and _num(despues[0])
+                  and despues[0] > antes[0]):
+            fallos.append(fname + ': +4 días abiertos no suben la facturación '
+                          'mensual (' + repr(antes[0]) + ' → '
+                          + repr(despues[0]) + ')')
+
+    # (3) el control del mix: con los tres tramos al 40 % debe dar 1,2
     if f_mix:
-        r['mix_base'] = _ev(xl, P + 'B' + str(f_mix))
-        tramos = [p for p, _q in pares
-                  if ws['B' + str(f_mix)].value
-                  and ('B' + str(p)) in ws['B' + str(f_mix)].value]
-        for p in tramos:
-            _set(xl, P + 'B' + str(p), 0.4)
-        r['tramos_del_control'] = tramos
-        r['mix_con_los_tres_al_40pct'] = _ev(xl, P + 'B' + str(f_mix))
-        if _num(r['mix_base']) and abs(r['mix_base'] - 1) > 0.001:
-            fallos.append(fname + ': el ejemplo precargado NO suma 100 % de '
-                          'comensales (' + str(r['mix_base']) + ')')
-        if _num(r['mix_con_los_tres_al_40pct']) \
-                and abs(r['mix_con_los_tres_al_40pct'] - 1.2) > 0.001:
+        formula = ws['B' + str(f_mix)].value or ''
+        tramos = [p for p, _q in pares if ('B' + str(p)) in formula]
+        xl = _compilar(carpeta, destino, fname)
+        antes, despues = _mover(xl, [P + 'B' + str(f_mix)],
+                                [(P + 'B' + str(p), 0.4) for p in tramos])
+        r['control_del_mix'] = {'celda': 'B' + str(f_mix),
+                                'tramos': tramos,
+                                'con_el_ejemplo_precargado': antes[0],
+                                'con_los_tres_al_40pct': despues[0]}
+        if not (_num(antes[0]) and abs(antes[0] - 1) < 0.001):
+            fallos.append(fname + ': el ejemplo precargado no reparte el 100 % '
+                          'de los comensales (' + repr(antes[0]) + ')')
+        if not (_num(despues[0]) and abs(despues[0] - 1.2) < 0.001):
             fallos.append(fname + ': con los tres tramos al 40 % el control '
-                          'debería dar 1,2 y da '
-                          + str(r['mix_con_los_tres_al_40pct']))
+                          'debería dar 1,2 y da ' + repr(despues[0]))
     return dict(r, fallos=fallos)
 
 
 def _demo_pl(carpeta, destino):
+    """§2.2 — el P&L encadena: subir una entrada mueve facturación, food cost,
+    margen y EBITDA; con los ingresos a 0 el margen devuelve `""`."""
     import os
     fname = 'pl-mensual-escenarios.xlsx'
     ruta = os.path.join(carpeta, fname)
@@ -1931,12 +2077,19 @@ def _demo_pl(carpeta, destino):
                    else ('Pesimista' if variante == 'tres-hojas'
                          else 'P&L 3 escenarios'))
     ws = wb[hoja_nombre]
-    xl = _compilar(carpeta, destino, fname)
     P = "'" + hoja_nombre + "'!"
     fallos, r = [], {'fichero': fname, 'variante': variante,
                      'hoja': hoja_nombre}
     f_fact = _fila(ws, r'^facturacion mensual|^total ingresos'
                        r'|^facturacion total mensual', obligatoria=False)
+    # ⚠️ El orden importa: `^food cost` casaría antes con la FILA DE
+    # PARÁMETRO «Food cost (%)» del representante (fila 11) que con la de
+    # resultado «Coste materia prima (€)» (fila 18), y la demostración
+    # comprobaría que un porcentaje de entrada no cambia — que es cierto y no
+    # demuestra nada.
+    f_mp = (_fila(ws, r'^coste materia prima|^coste materias primas',
+                  obligatoria=False)
+            or _fila(ws, r'^food cost \(', obligatoria=False))
     f_eb = _fila(ws, RX_EBITDA, obligatoria=False)
     f_me = _fila(ws, RX_PCT_EBITDA, obligatoria=False)
     f_mov = _fila(ws, r'^cubiertos.*comida|^ventas sala|^tickets/dia',
@@ -1944,33 +2097,40 @@ def _demo_pl(carpeta, destino):
     if not (f_fact and f_eb):
         return {'fallos': [fname + ': no encuentro facturación o EBITDA tras '
                            'el grupo A'], 'variante': variante}
-    for clave, fila in (('facturacion', f_fact), ('ebitda', f_eb),
-                        ('margen', f_me)):
-        if fila:
-            r[clave + '_base'] = _ev(xl, P + 'B' + str(fila))
+    salidas = [P + 'B' + str(x) for x in (f_fact, f_mp, f_eb, f_me) if x]
+    nombres = [n for n, x in (('facturacion', f_fact), ('materia_prima', f_mp),
+                              ('ebitda', f_eb), ('margen', f_me)) if x]
     if f_mov:
+        xl = _compilar(carpeta, destino, fname)
         v0 = _ev(xl, P + 'B' + str(f_mov))
         if _num(v0):
-            _set(xl, P + 'B' + str(f_mov), v0 * 1.2)
-            r['facturacion_mas_20pct_entrada'] = _ev(xl, P + 'B' + str(f_fact))
-            r['ebitda_mas_20pct_entrada'] = _ev(xl, P + 'B' + str(f_eb))
-            for clave in ('facturacion', 'ebitda'):
-                a, b = r.get(clave + '_base'), r.get(clave + '_mas_20pct_entrada')
-                if _num(a) and _num(b) and b <= a:
+            antes, despues = _mover(xl, salidas,
+                                    [(P + 'B' + str(f_mov), v0 * 1.2)])
+            r['entrada_movida'] = {'celda': 'B' + str(f_mov),
+                                   'etiqueta': ws['A' + str(f_mov)].value,
+                                   'de': v0, 'a': round(v0 * 1.2, 2)}
+            r['cascada'] = dict((n, {'antes': a, 'despues': d})
+                                for n, a, d in zip(nombres, antes, despues))
+            for n, a, d in zip(nombres, antes, despues):
+                if n == 'margen':
+                    continue
+                if not (_num(a) and _num(d) and d > a):
                     fallos.append(fname + ': subir «'
                                   + str(ws['A' + str(f_mov)].value)[:40]
-                                  + '» un 20 % NO sube ' + clave
-                                  + ' (' + str(a) + ' → ' + str(b) + ')')
-            _set(xl, P + 'B' + str(f_mov), v0)
-    # con ingresos a 0 el margen devuelve "" (§7-bis.13), nunca «0,0 %»
+                                  + '» un 20 % no mueve ' + n + ' ('
+                                  + repr(a) + ' → ' + repr(d) + ')')
+    # con los ingresos a 0 el margen devuelve "" (§7-bis.13), nunca «0,0 %»
     if f_me:
-        for fila_ing in _lineas_de_ingreso(ws, f_fact):
-            _set(xl, P + 'B' + str(fila_ing), 0)
-        r['margen_con_ingresos_cero'] = _ev(xl, P + 'B' + str(f_me))
-        if r['margen_con_ingresos_cero'] not in ('', None):
+        xl = _compilar(carpeta, destino, fname)
+        ceros = [(P + 'B' + str(fila), 0)
+                 for fila in _lineas_de_ingreso(ws, f_fact)]
+        _antes, despues = _mover(xl, [P + 'B' + str(f_me),
+                                      P + 'B' + str(f_fact)], ceros)
+        r['con_ingresos_a_cero'] = {'facturacion': despues[1],
+                                    'margen': despues[0]}
+        if despues[0] not in ('', None):
             fallos.append(fname + ': con la facturación a 0 el margen devuelve '
-                          + repr(r['margen_con_ingresos_cero'])
-                          + ' en vez de "" (§7-bis.13)')
+                          + repr(despues[0]) + ' en vez de "" (§7-bis.13)')
     return dict(r, fallos=fallos)
 
 
@@ -1978,12 +2138,15 @@ def _lineas_de_ingreso(ws, f_fact):
     """Celdas de entrada que alimentan la facturación (para ponerla a cero)."""
     f_ing = _fila(ws, RX_BLOQUE_ING, obligatoria=False)
     if f_ing and f_ing < f_fact:
-        return list(range(f_ing + 1, f_fact))
+        return [r for r in range(f_ing + 1, f_fact)
+                if ws['B' + str(r)].data_type != 'f']
     return [r for r, _n, _c in etiquetas(ws, 1, 5, f_fact - 1)
             if ws['B' + str(r)].data_type != 'f']
 
 
 def _demo_plan(carpeta, destino):
+    """§2.3 — EBITDA sin amortización + EBIT, cuadro francés con su valor de
+    control y sus dos guardas, y la proyección siguiendo al P&L."""
     import os
     fname = 'plan-financiero-3-anos.xlsx'
     ruta = os.path.join(carpeta, fname)
@@ -1992,135 +2155,161 @@ def _demo_plan(carpeta, destino):
     import openpyxl
     wb = openpyxl.load_workbook(ruta)
     fallos, r = [], {'fichero': fname, 'hojas': wb.sheetnames}
-    xl = _compilar(carpeta, destino, fname)
 
-    # (1) EBITDA que NO resta amortización + EBIT (TEC-08): el caso medido del
-    #     R1 — ventas 140.000 €, amortización 6.000 € → EBITDA 32.000 € y
-    #     EBIT 26.000 €, donde la v1.1 daba 26.000 € rotulado «EBITDA».
+    # (1) TEC-08 con el escenario EXACTO que midió el R1: ventas 140.000 € y
+    #     amortización 6.000 € → EBITDA 32.000 € y EBIT 26.000 €. La v1.1 daba
+    #     26.000 € rotulado «EBITDA»: un 23 % por debajo del real.
     if 'P&L Mensual' in wb.sheetnames:
         ws = wb['P&L Mensual']
         P = "'P&L Mensual'!"
+        f_ing_bloque = _fila(ws, RX_BLOQUE_ING, obligatoria=False)
         f_ing = _fila(ws, RX_TOT_INGRESOS, obligatoria=False)
+        f_var = _fila(ws, RX_BLOQUE_VAR, obligatoria=False)
+        f_tot_var = _fila(ws, RX_TOT_VARIABLES, obligatoria=False)
+        f_fij = _fila(ws, RX_BLOQUE_FIJ, obligatoria=False)
         f_amort = _fila(ws, r'^amortizacion equipamiento', obligatoria=False)
+        f_tot_fij = _fila(ws, RX_TOT_FIJOS, obligatoria=False)
         f_eb = _fila(ws, RX_EBITDA, obligatoria=False)
         f_me = _fila(ws, RX_PCT_EBITDA, obligatoria=False)
         f_ebit = _fila(ws, r'^ebit ', obligatoria=False)
-        f_ing_bloque = _fila(ws, RX_BLOQUE_ING, obligatoria=False)
-        f_fij = _fila(ws, RX_BLOQUE_FIJ, obligatoria=False)
-        f_tot_fij = _fila(ws, RX_TOT_FIJOS, obligatoria=False)
         if f_ing and f_amort and f_eb and f_ebit:
             r['margen_formato'] = ws['B' + str(f_me)].number_format
             if r['margen_formato'] != FMT_PCT:
                 fallos.append(fname + ": 'P&L Mensual'!B" + str(f_me)
                               + ' sigue en ' + repr(r['margen_formato'])
                               + ' y no en 0.0% (TEC-09)')
-            r['margen_con_libro_en_blanco'] = _ev(xl, P + 'B' + str(f_me))
-            if r['margen_con_libro_en_blanco'] not in ('', None):
-                fallos.append(fname + ': con el libro en blanco el margen dice '
-                              + repr(r['margen_con_libro_en_blanco'])
-                              + ' (§7-bis.13: debe ser "")')
-            _set(xl, P + 'B' + str(f_ing_bloque + 1), 140000)
-            for fila in range(f_fij + 1, f_tot_fij):
-                _set(xl, P + 'B' + str(fila), 0)
-            _set(xl, P + 'B' + str(f_amort), 6000)
-            r['ventas'] = _ev(xl, P + 'B' + str(f_ing))
-            r['costes_fijos_sin_amortizacion'] = _ev(xl, P + 'B'
-                                                     + str(f_tot_fij))
-            r['ebitda'] = _ev(xl, P + 'B' + str(f_eb))
-            r['ebit'] = _ev(xl, P + 'B' + str(f_ebit))
-            if not (_num(r['ebitda']) and abs(r['ebitda'] - 140000) < 0.01):
-                fallos.append(fname + ': con ventas 140.000 € y amortización '
-                              '6.000 € (y el resto de fijos a 0) el EBITDA '
-                              'debería ser 140.000 € y es ' + str(r['ebitda']))
-            if not (_num(r['ebit']) and abs(r['ebit'] - 134000) < 0.01):
-                fallos.append(fname + ': el EBIT debería ser el EBITDA menos '
-                              'los 6.000 € de amortización y es '
-                              + str(r['ebit']))
-            r['diferencia_ebitda_ebit'] = (
-                round(r['ebitda'] - r['ebit'], 2)
-                if _num(r['ebitda']) and _num(r['ebit']) else None)
+            r['C' + str(f_me) + '_vaciada'] = ws['C' + str(f_me)].value
+            if ws['C' + str(f_me)].value is not None:
+                fallos.append(fname + ": 'P&L Mensual'!C" + str(f_me)
+                              + ' sigue dividiendo un porcentaje entre la '
+                                'facturación (TEC-10)')
+            xl = _compilar(carpeta, destino, fname)
+            r['con_el_libro_en_blanco'] = {
+                'margen': _ev(xl, P + 'B' + str(f_me)),
+                'pct_s_ventas_del_ebitda': _ev(xl, P + 'C' + str(f_eb))}
+            for clave, valor in r['con_el_libro_en_blanco'].items():
+                if valor not in ('', None):
+                    fallos.append(fname + ': con el libro en blanco «' + clave
+                                  + '» dice ' + repr(valor)
+                                  + ' (§7-bis.13: debe ser "")')
+            entradas = [(P + 'B' + str(f_ing_bloque + 1), 140000)]
+            entradas += [(P + 'B' + str(x), 0)
+                         for x in range(f_var + 1, f_tot_var)]
+            entradas += [(P + 'B' + str(x), 0)
+                         for x in range(f_fij + 1, f_tot_fij)]
+            entradas += [(P + 'B' + str(f_fij + 1), 108000),
+                         (P + 'B' + str(f_amort), 6000)]
+            salidas = [P + 'B' + str(x) for x in
+                       (f_ing, f_tot_fij, f_eb, f_ebit, f_me)]
+            _antes, despues = _mover(xl, salidas, entradas)
+            r['escenario_R1'] = dict(zip(
+                ('ventas', 'costes_fijos_sin_amortizacion', 'ebitda', 'ebit',
+                 'margen_ebitda'), despues))
+            eb, ebit = despues[2], despues[3]
+            if not (_num(eb) and abs(eb - 32000) < 0.01):
+                fallos.append(fname + ': con ventas 140.000 €, fijos 108.000 € '
+                              'y amortización 6.000 €, el EBITDA debe ser '
+                              '32.000 € y es ' + repr(eb))
+            if not (_num(ebit) and abs(ebit - 26000) < 0.01):
+                fallos.append(fname + ': el EBIT debe ser 26.000 € (el EBITDA '
+                              'menos la amortización) y es ' + repr(ebit))
+            r['amortizacion_que_separa_ebitda_de_ebit'] = (
+                round(eb - ebit, 2) if _num(eb) and _num(ebit) else None)
 
-    # (2) cuadro francés: valor de control de la familia
+    # (2) cuadro francés: el valor de control ya verificado en la familia
     if HOJA_FIN in wb.sheetnames:
         F = "'" + HOJA_FIN + "'!"
+        salidas = ([F + 'B12'] +
+                   [F + c + str(18 + i) for i in range(ANOS_CUADRO)
+                    for c in 'BCDF'])
         xl2 = _compilar(carpeta, destino, fname)
-        _set(xl2, F + 'B5', 100000)
-        _set(xl2, F + 'B6', 5)
-        _set(xl2, F + 'B7', 0.05)
-        _set(xl2, F + 'B8', 0)
-        r['cuota_mensual_100k_5pct_60meses'] = _ev(xl2, F + 'B12')
-        cuota = r['cuota_mensual_100k_5pct_60meses']
-        if not (_num(cuota) and abs(cuota - 1887.12) < 0.01):
+        _antes, d = _mover(xl2, salidas, [(F + 'B5', 100000), (F + 'B6', 5),
+                                          (F + 'B7', 0.05), (F + 'B8', 0)])
+        r['cuota_mensual_100k_5pct_60meses'] = d[0]
+        if not (_num(d[0]) and abs(d[0] - 1887.12) < 0.01):
             fallos.append(fname + ': la anualidad de 100.000 € al 5 % en 60 '
-                          'meses debe dar 1.887,12 €/mes y da ' + str(cuota))
-        r['cuadro_100k_5anos'] = [
-            {'ano': _ev(xl2, F + 'A' + str(18 + i)),
-             'capital_inicial': _ev(xl2, F + 'B' + str(18 + i)),
-             'cuota': _ev(xl2, F + 'C' + str(18 + i)),
-             'intereses': _ev(xl2, F + 'D' + str(18 + i)),
-             'pendiente': _ev(xl2, F + 'F' + str(18 + i))}
-            for i in range(ANOS_CUADRO)]
-        pend = r['cuadro_100k_5anos'][4]['pendiente']
+                          'meses debe dar 1.887,12 €/mes y da ' + repr(d[0]))
+        cuadro = [dict(zip(('capital_inicial', 'cuota', 'intereses',
+                            'pendiente'), d[1 + i * 4:5 + i * 4]))
+                  for i in range(ANOS_CUADRO)]
+        r['cuadro_100k_5anos'] = cuadro
+        pend = cuadro[4]['pendiente']
         if not (_num(pend) and abs(pend) < 0.01):
             fallos.append(fname + ': con plazo 5 el capital pendiente al final '
-                          'del año 5 debería ser 0 y es ' + str(pend))
-        apagados = r['cuadro_100k_5anos'][5:]
+                          'del año 5 debe ser 0 y es ' + repr(pend))
+        apagados = cuadro[5:]
         if any(not _num(x['cuota']) or abs(x['cuota']) > 0.01
                for x in apagados):
             fallos.append(fname + ': pasado el vencimiento el cuadro no se '
                           'apaga a 0 numérico: '
                           + repr([x['cuota'] for x in apagados]))
-        # carencia >= plazo: aviso de TEXTO en C, numéricas B, D y F
+        # carencia ≥ plazo: aviso de TEXTO en C, y B, D y F NUMÉRICAS
         xl3 = _compilar(carpeta, destino, fname)
-        _set(xl3, F + 'B5', 100000)
-        _set(xl3, F + 'B6', 3)
-        _set(xl3, F + 'B7', 0.05)
-        _set(xl3, F + 'B8', 3)
-        r['carencia_igual_al_plazo'] = {
-            'C18': _ev(xl3, F + 'C18'), 'B18': _ev(xl3, F + 'B18'),
-            'D18': _ev(xl3, F + 'D18'), 'F18': _ev(xl3, F + 'F18')}
-        g = r['carencia_igual_al_plazo']
-        if g['C18'] != AVISO_CARENCIA:
-            fallos.append(fname + ': con carencia = plazo, C18 debería avisar '
-                          'y dice ' + repr(g['C18']))
-        for celda in ('B18', 'D18', 'F18'):
-            if not _num(g[celda]):
-                fallos.append(fname + ': con carencia = plazo, ' + celda
-                              + ' deja de ser numérica (' + repr(g[celda])
-                              + '): propagaría #¡VALOR! al P&L')
+        _antes, g = _mover(xl3, [F + 'C18', F + 'B18', F + 'D18', F + 'F18'],
+                           [(F + 'B5', 100000), (F + 'B6', 3),
+                            (F + 'B7', 0.05), (F + 'B8', 3)])
+        r['carencia_igual_al_plazo'] = dict(zip(('C18', 'B18', 'D18', 'F18'),
+                                                g))
+        if g[0] != AVISO_CARENCIA:
+            fallos.append(fname + ': con carencia = plazo, C18 debe avisar y '
+                          'dice ' + repr(g[0]))
+        for etiqueta, valor in zip(('B18', 'D18', 'F18'), g[1:]):
+            if not _num(valor):
+                fallos.append(fname + ': con carencia = plazo, ' + etiqueta
+                              + ' deja de ser numérica (' + repr(valor)
+                              + '): propagaría #¡VALOR! al P&L y al cash flow')
 
-    # (3) la proyección sigue al P&L y responde a los dos porcentajes
+    # (3) la proyección sigue al P&L y responde a los porcentajes
     if HOJA_PROY in wb.sheetnames and 'P&L Mensual' in wb.sheetnames:
         ws = wb['P&L Mensual']
         f_ing_bloque = _fila(ws, RX_BLOQUE_ING, obligatoria=False)
         Q = "'" + HOJA_PROY + "'!"
+        f_tot_ing2 = _fila(ws, RX_TOT_INGRESOS, obligatoria=False)
+        meses_pl, total_pl = columnas_mes(ws, 4)
+        col_ing = (total_pl or 'B') + str(f_tot_ing2)
         xl4 = _compilar(carpeta, destino, fname)
-        r['proyeccion_con_libro_en_blanco'] = {
-            'B11': _ev(xl4, Q + 'B11'), 'D21': _ev(xl4, Q + 'D21')}
-        if r['proyeccion_con_libro_en_blanco']['B11'] not in ('', None):
-            fallos.append(fname + ': con el P&L en blanco la proyección '
-                          'devuelve ' + repr(
-                              r['proyeccion_con_libro_en_blanco']['B11'])
-                          + ' en vez de "" (§7-bis.13)')
-        _set(xl4, "'P&L Mensual'!B" + str(f_ing_bloque + 1), 140000)
-        r['proy_ano1'] = _ev(xl4, Q + 'B11')
-        r['proy_ano3_base'] = _ev(xl4, Q + 'D11')
-        if not (_num(r['proy_ano1']) and abs(r['proy_ano1'] - 1680000) < 1):
-            fallos.append(fname + ': el Año 1 de la proyección debería ser '
-                          '140.000 × 12 = 1.680.000 € y es '
-                          + str(r['proy_ano1']))
+        # El «libro en blanco» sólo se puede exigir si el P&L lo está: los 5
+        # hermanos vienen con los doce meses precargados y ahí la proyección
+        # DEBE dar un número. Comprobarlo sin mirar antes es pedirle a la hoja
+        # que mienta.
+        r['pl_precargado'] = _ev(xl4, "'P&L Mensual'!" + col_ing)
+        if not _num(r['pl_precargado']) or r['pl_precargado'] == 0:
+            r['proyeccion_con_el_pl_en_blanco'] = {
+                'B11_ingresos_ano_1': _ev(xl4, Q + 'B11'),
+                'D21_resultado_neto_ano_3': _ev(xl4, Q + 'D21'),
+                'D22_margen_ebitda_ano_3': _ev(xl4, Q + 'D22')}
+            for clave, valor in r['proyeccion_con_el_pl_en_blanco'].items():
+                if valor not in ('', None):
+                    fallos.append(fname + ': con el P&L en blanco la proyección '
+                                  'devuelve ' + repr(valor) + ' en ' + clave
+                                  + ' (§7-bis.13: debe ser "")')
+        _antes, d = _mover(xl4, [Q + 'B11', Q + 'D11',
+                                 "'P&L Mensual'!" + col_ing],
+                           [("'P&L Mensual'!B" + str(f_ing_bloque + 1),
+                             140000)])
+        r['proyeccion_ano_1'] = d[0]
+        r['proyeccion_ano_3_base'] = d[1]
+        r['ingresos_anuales_del_pl'] = d[2]
+        esperado = (d[2] if total_pl else (d[2] * 12 if _num(d[2]) else None))
+        if not (_num(d[0]) and _num(esperado) and abs(d[0] - esperado) < 1):
+            fallos.append(fname + ': el Año 1 de la proyección debe ser el P&L '
+                          'anualizado (' + repr(esperado) + ') y es '
+                          + repr(d[0]))
         c0 = _ev(xl4, Q + 'C6')
-        _set(xl4, Q + 'C6', (c0 or 0) + 0.1)
-        r['proy_ano3_con_10pct_mas_de_crecimiento'] = _ev(xl4, Q + 'D11')
-        a, b = r['proy_ano3_base'], r['proy_ano3_con_10pct_mas_de_crecimiento']
-        if _num(a) and _num(b) and b <= a:
-            fallos.append(fname + ': +10 puntos de crecimiento en el año 2 NO '
-                          'suben los ingresos del año 3 (' + str(a) + ' → '
-                          + str(b) + ')')
+        _antes, d2 = _mover(xl4, [Q + 'D11', Q + 'D21'],
+                            [(Q + 'C6', (c0 or 0) + 0.1)])
+        r['crecimiento_ano_2'] = {'de': c0, 'a': (c0 or 0) + 0.1}
+        r['proyeccion_ano_3_con_mas_crecimiento'] = d2[0]
+        if _num(d[1]) and _num(d2[0]) and d2[0] <= d[1]:
+            fallos.append(fname + ': +10 puntos de crecimiento en el Año 2 no '
+                          'suben los ingresos del Año 3 (' + repr(d[1])
+                          + ' → ' + repr(d2[0]) + ')')
     return dict(r, fallos=fallos)
 
 
 def _demo_cash(carpeta, destino):
+    """§2.4 — el acumulado encadena, el break-even sale en el mes que cruza a
+    positivo y devuelve «No alcanzado» (no `#N/A`) si nunca cruza."""
     import os
     fname = 'cash-flow-break-even.xlsx'
     ruta = os.path.join(carpeta, fname)
@@ -2148,61 +2337,77 @@ def _demo_cash(carpeta, destino):
     f_mc = _fila(ws_be, r'^margen de contribucion', obligatoria=False)
     P = "'" + nombre_caja + "'!"
     B = "'" + ws_be.title + "'!"
-    fallos, r = [], {'fichero': fname, 'variante': variante,
-                     'meses': meses, 'fila_acumulado_con_iva': f_acum_iva}
+    fallos, r = [], {'fichero': fname, 'variante': variante, 'meses': meses,
+                     'fila_acumulado': f_acum,
+                     'fila_acumulado_con_iva_y_deuda': f_acum_iva}
+    entradas_filas = [x for x in range(f_ing_bloque + 1, f_tot_ing)
+                      if ws[meses[0] + str(x)].data_type != 'f']
+    salidas_filas = [x for x in range(f_gas_bloque + 1, f_tot_gas)
+                     if ws[meses[0] + str(x)].data_type != 'f']
 
-    xl = _compilar(carpeta, destino, fname)
-    # serie que cruza a positivo en el mes 4
-    entradas = list(range(f_ing_bloque + 1, f_tot_ing))
-    salidas = list(range(f_gas_bloque + 1, f_tot_gas))
+    # serie creciente: ingresos 10.000 × mes contra un gasto fijo de 25.000
+    entradas = []
     for i, col in enumerate(meses):
-        _set(xl, P + col + str(entradas[0]), 10000 * (i + 1))
-        for fila in entradas[1:]:
-            _set(xl, P + col + str(fila), 0)
-        _set(xl, P + col + str(salidas[0]), 25000)
-        for fila in salidas[1:]:
-            _set(xl, P + col + str(fila), 0)
-    r['acumulado'] = [_ev(xl, P + c + str(f_acum)) for c in meses]
-    r['acumulado_con_iva_y_deuda'] = [_ev(xl, P + c + str(f_acum_iva))
-                                      for c in meses] if f_acum_iva else None
+        entradas.append((P + col + str(entradas_filas[0]), 10000 * (i + 1)))
+        entradas += [(P + col + str(x), 0) for x in entradas_filas[1:]]
+        entradas.append((P + col + str(salidas_filas[0]), 25000))
+        entradas += [(P + col + str(x), 0) for x in salidas_filas[1:]]
+        if f_acum_iva:
+            entradas.append((P + col + str(f_acum_iva - 4), 0))   # IVA soport.
+            entradas.append((P + col + str(f_acum_iva - 2), 0))   # cuota
+    salidas = ([P + c + str(f_acum) for c in meses]
+               + ([P + c + str(f_acum_iva) for c in meses]
+                  if f_acum_iva else [])
+               + ([B + 'B' + str(f_be)] if f_be else []))
+    xl = _compilar(carpeta, destino, fname)
+    _antes, d = _mover(xl, salidas, entradas)
+    r['acumulado'] = d[:12]
+    r['acumulado_con_iva_y_deuda'] = d[12:24] if f_acum_iva else None
     serie = r['acumulado']
     if all(_num(x) for x in serie):
-        encadena = all(abs(serie[i] - (serie[i - 1] + (serie[i] - serie[i - 1])))
-                       < 0.01 for i in range(1, len(serie)))
-        r['encadena'] = encadena and serie[-1] > serie[0]
+        neto = [10000 * (i + 1) - 25000 for i in range(12)]
+        esperado, acumulado = [], 0.0
+        for x in neto:
+            acumulado += x
+            esperado.append(acumulado)
+        r['acumulado_esperado'] = esperado
+        r['encadena'] = all(abs(a - b) < 0.01
+                            for a, b in zip(serie, esperado))
         if not r['encadena']:
-            fallos.append(fname + ': el flujo acumulado no encadena mes a mes: '
-                          + repr(serie))
+            fallos.append(fname + ': el flujo acumulado no encadena mes a mes. '
+                          'calculado=' + repr(serie) + ' esperado='
+                          + repr(esperado))
     else:
         fallos.append(fname + ': el flujo acumulado no evalúa: ' + repr(serie))
     if f_be:
-        r['mes_break_even'] = _ev(xl, B + 'B' + str(f_be))
-        if not _num(r['mes_break_even']):
+        r['mes_de_break_even'] = d[-1]
+        if not _num(r['mes_de_break_even']):
             fallos.append(fname + ': con una serie que cruza a positivo, el '
                           'mes de break-even devuelve '
-                          + repr(r['mes_break_even']) + ' en vez de un número')
+                          + repr(r['mes_de_break_even'])
+                          + ' en vez de un número')
         # serie SIEMPRE negativa → «No alcanzado», nunca #N/A
         xl2 = _compilar(carpeta, destino, fname)
+        negativas = []
         for col in meses:
-            for fila in entradas:
-                _set(xl2, P + col + str(fila), 0)
-            _set(xl2, P + col + str(salidas[0]), 25000)
-        r['mes_break_even_serie_negativa'] = _ev(xl2, B + 'B' + str(f_be))
-        if r['mes_break_even_serie_negativa'] != 'No alcanzado':
+            negativas += [(P + col + str(x), 0) for x in entradas_filas]
+            negativas.append((P + col + str(salidas_filas[0]), 25000))
+            negativas += [(P + col + str(x), 0) for x in salidas_filas[1:]]
+        _a, d2 = _mover(xl2, [B + 'B' + str(f_be)], negativas)
+        r['mes_de_break_even_con_serie_siempre_negativa'] = d2[0]
+        if d2[0] != 'No alcanzado':
             fallos.append(fname + ': con una serie siempre negativa el mes de '
-                          'break-even devuelve '
-                          + repr(r['mes_break_even_serie_negativa'])
+                          'break-even devuelve ' + repr(d2[0])
                           + ' en vez de "No alcanzado"')
     if f_umbral and f_mc:
         xl3 = _compilar(carpeta, destino, fname)
-        _set(xl3, B + 'B' + str(f_mc), 0)
-        r['umbral_con_margen_de_contribucion_cero'] = _ev(
-            xl3, B + 'B' + str(f_umbral))
-        if r['umbral_con_margen_de_contribucion_cero'] not in ('', None):
+        _a, d3 = _mover(xl3, [B + 'B' + str(f_umbral)],
+                        [(B + 'B' + str(f_mc), 0)])
+        r['umbral_con_margen_de_contribucion_cero'] = d3[0]
+        if d3[0] not in ('', None):
             fallos.append(fname + ': con margen de contribución 0 el umbral '
-                          'devuelve '
-                          + repr(r['umbral_con_margen_de_contribucion_cero'])
-                          + ' en vez de "" (debería atraparlo IFERROR)')
+                          'devuelve ' + repr(d3[0]) + ' en vez de "" '
+                          '(debería atraparlo IFERROR)')
     return dict(r, fallos=fallos)
 
 

@@ -170,7 +170,8 @@ PLAN = {
     },
     'financiacion': {
         # parametrizado: préstamo de EJEMPLO, ~43 % del CAPEX medio que calcula
-        # calculadora-capex.xlsx (703.000 €). Da 3.255,79 €/mes.
+        # calculadora-capex.xlsx (703.000 €). Con 1 año de carencia da
+        # 1.375,00 €/mes el primer año y 3.528,00 €/mes los nueve siguientes.
         'importe': 300000,
         'plazo': 10,
         'tipo': 0.055,
@@ -213,8 +214,10 @@ PLAN = {
 CASH = {
     # Se REPITE con nota, no se enlaza: un .xlsx movido de carpeta daría #REF!
     # (§1.13). Es la cuota que calcula plan-financiero-3-anos!Financiación!B12
-    # con el préstamo de ejemplo de arriba: 300.000 € a 10 años al 5,5 %.
-    'cuota_mensual': 3255.79,
+    # con el préstamo de ejemplo de arriba: 300.000 € a 10 años al 5,5 % con
+    # 1 año de carencia → 108 cuotas de 3.528,00 € (durante la carencia se
+    # pagan sólo 1.375,00 €/mes de intereses).
+    'cuota_mensual': 3528.00,
     'break_even': {
         # = personal 52.000 + alquiler 17.000 + otros 22.000 del escenario
         # realista del P&L de esta misma guía (§7-bis.7: una sola fuente).

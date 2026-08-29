@@ -1,0 +1,378 @@
+{
+ "rol": "constructor grupo_b (checklists y cronograma) — familia Guías Cómo Montar v2.0",
+ "spec": "scripts/productos-digitales/guias-v2-SPEC.md §3 (3.1 a 3.5) + §7-bis 1-22",
+ "producto_representante": "guia-restaurante-gastronomico",
+ "fecha": "2026-08-29T04:55:24",
+ "ficheros_codigo": [
+  "scripts/productos-digitales/guias-v2_0/grupo_b.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py"
+ ],
+ "ficheros_entregables_tocados": [
+  "checklist-appcc.xlsx",
+  "checklist-contratacion.xlsx",
+  "checklist-diseno-sala.xlsx",
+  "checklist-equipamiento-cocina.xlsx",
+  "checklist-inspeccion-michelin-repsol.xlsx",
+  "checklist-legal.xlsx",
+  "checklist-marketing-preapertura.xlsx",
+  "checklist-vajilla-cristaleria.xlsx",
+  "cronograma-apertura-gantt.xlsx"
+ ],
+ "produccion_intacta": {
+  "regla": "astro-site/public/dl/** NO se ha modificado",
+  "comprobacion": "git status --porcelain astro-site/public/dl/ -> 0 lineas",
+  "modo": "siempre --dry-run con CLAUDE_SCRATCHPAD; nunca GUIAS_APPLY"
+ },
+ "comando_de_prueba": "CLAUDE_SCRATCHPAD=.../scratchpad/guias/propio-grupo_b python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run --solo motor,b --json .../scratchpad/guias/grupo_b.json",
+ "gates": {
+  "idempotencia_2a_pasada": 0,
+  "censo_entregables_fail_exit": 0,
+  "inject_cache_fallos_pycel": 0,
+  "data_only_formulas_nuevas": {
+   "con_valor": 97,
+   "vacias_por_diseno_verificadas_con_pycel": 65,
+   "fallos": []
+  },
+  "exit_de_main": 1,
+  "unico_fallo_y_por_que": "escandallo-maestro.xlsx:Escandallo!H28='=H27/0.28' — food cost HARDCODEADO. Es TEC-21, del §4.1 (grupo_c), y estaba YA en el fichero de produccion (verificado: openpyxl sobre astro-site/public/dl/.../escandallo-maestro.xlsx da '=H27/0.28'). main.py escala los literales a FALLO en cuanto se carga cualquier grupo, asi que hasta que exista grupo_c el exit no puede ser 0. NINGUN fichero de grupo_b aporta literales: literales_sospechosos_total=1 y esta fuera de mis 9 ficheros."
+ },
+ "recuentos_de_items": [
+  {
+   "fichero": "checklist-legal.xlsx",
+   "items_medidos": 48,
+   "anuncia": 40,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-contratacion.xlsx",
+   "items_medidos": 30,
+   "anuncia": 30,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-appcc.xlsx",
+   "items_medidos": 55,
+   "anuncia": 55,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-diseno-sala.xlsx",
+   "items_medidos": 35,
+   "anuncia": 35,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-vajilla-cristaleria.xlsx",
+   "items_medidos": 50,
+   "anuncia": 50,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+   "items_medidos": 45,
+   "anuncia": 45,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-marketing-preapertura.xlsx",
+   "items_medidos": 35,
+   "anuncia": 35,
+   "ok": true
+  },
+  {
+   "fichero": "checklist-equipamiento-cocina.xlsx",
+   "items_medidos": 91,
+   "anuncia": 90,
+   "ok": true
+  }
+ ],
+ "totales_presupuestados": {
+  "nota": "El TOTAL que escribe el motor reproduce EXACTAMENTE las sumas que el R1 habia hecho a mano en COM-31/TEC-16 (equipamiento 112.070, sala 108.200, vajilla 30.230, legal 23.980, marketing 22.800, michelin 11.000, appcc 3.400, contratacion 1.610). Es la comprobacion cruzada de que la fila TOTAL suma lo que debe.",
+  "checklist-legal.xlsx": {
+   "antes": 23980,
+   "despues": 23960,
+   "celda": "Legal!G55",
+   "por_que": "-20 EUR: el «Libro de visitas» derogado costaba 20 EUR de papeleria; su sustituto (registro de jornada) va sin importe tasado"
+  },
+  "checklist-marketing-preapertura.xlsx": {
+   "antes": 22800,
+   "despues": 23800,
+   "celda": "Marketing Pre-Apertura!G42",
+   "por_que": "+1.000 EUR: la sesion de fotos pasa de 500 a 1.500 EUR (DOM-40, minimo del rango 1.500-3.000 de la SPEC §3.4)"
+  },
+  "checklist-equipamiento-cocina.xlsx": {
+   "antes": 112070,
+   "despues": 164718.4,
+   "celda": "Equipamiento Cocina!G98",
+   "por_que": "+35.000 EUR de partidas con fuente (horno mixto 17.500 + conducto 12.000 + aportacion de aire 3.000 + extincion 2.500) y +17.648,40 del 12 % de instalacion sobre 147.070. Comprobado: 112.070+35.000=147.070; 147.070*1,12=164.718,40"
+  },
+  "resto": "sin cambio (appcc 3.400 / contratacion 1.610 / sala 108.200 / michelin 11.000 / vajilla 30.230): las filas nuevas van SIN importe tasado"
+ },
+ "demostraciones_pycel": {
+  "1_barra_del_gantt_sigue_al_dato": {
+   "fichero_celda": "cronograma-apertura-gantt.xlsx:Gantt!X6 (Mes inicio de «Estudio de viabilidad financiera»)",
+   "regla_evaluada": "=AND(ISNUMBER($X6),ISNUMBER($Y6),F$4>=$X6,F$4<$X6+$Y6) escrita en celdas auxiliares de una COPIA, columna a columna",
+   "antes": [
+    1,
+    2
+   ],
+   "tras_mover_mes_inicio_+2": [
+    3,
+    4
+   ],
+   "veredicto": "la barra se desplaza 2 meses y conserva su longitud (2 meses): sigue al dato, no es un sombreado fijo",
+   "ok": true
+  },
+  "2_columna_dias": {
+   "fichero_celda": "cronograma-apertura-gantt.xlsx:Gantt!AA6",
+   "formula": "=IFERROR(IF(OR($D6=\"\",$E6=\"\"),\"\",$E6-$D6),\"\")",
+   "libro_en_blanco": "",
+   "con_D6=46000_y_E6=46030": 30,
+   "veredicto": "con el libro en blanco devuelve \"\" (NO un 0 que se leeria «esta tarea dura cero dias»); con fechas, 30",
+   "ok": true
+  },
+  "3_instalacion_y_puesta_en_marcha": {
+   "fichero_celda": "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!G95",
+   "formula": "=IFERROR(ROUND((SUM($G$5:$G$94))*Instrucciones!$B$11,2),\"\")",
+   "parametro": "Instrucciones!B11 = 0,12 (celda verde, con DV 0-0,95 y nota)",
+   "valor": 17648.4,
+   "input_movido": "G5 +1.000 EUR",
+   "valor_despues": 17768.4,
+   "delta_esperado": 120.0,
+   "total_antes": 164718.4,
+   "total_despues": 165838.4,
+   "veredicto": "subir una partida 1.000 EUR sube la instalacion 120 EUR y el TOTAL 1.120 EUR: la fila calcula, no es un importe inventado",
+   "no_circular": "la formula suma G5:G94, es decir TODO el rango MENOS su propia fila (G95). No se referencia a si misma (el bug Break-Even!B12='=B12*(1-B8)' que la SPEC documenta reintroducido por 5 generadores)",
+   "ok": true
+  },
+  "4_columna_menu_degustacion": {
+   "fichero_celda": "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristaleria y!J5",
+   "formula": "=IF($I5=\"\",\"\",ROUND($I5*Instrucciones!$B$11*Instrucciones!$B$12,0))",
+   "parametros": "Instrucciones!B11 = 65 plazas · Instrucciones!B12 = 1,5 rotacion de lavado (los dos verdes, con nota y fuente)",
+   "valor": 195.0,
+   "input_movido": "Instrucciones!B11 (plazas) x2",
+   "valor_despues": 390.0,
+   "sin_factor_por_comensal": "''",
+   "veredicto": "doblar las plazas dobla la dotacion (195 -> 390); sin factor por comensal devuelve \"\" y no 0",
+   "ok": true
+  },
+  "5_libro_en_blanco_sin_verde_ni_0_falso": {
+   "detalle": [
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-legal.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "horizonte_meses": 18,
+     "tareas_fuera_del_horizonte": 0,
+     "detalle": [],
+     "ok": true
+    }
+   ],
+   "veredicto": "los 8 checklists se entregan con 0 items en estado terminal (ningun semaforo verde encendido; «Pendiente» pinta gris) y las 26 tareas del Gantt caben en su horizonte de 18 meses (0 avisos rojos). El «% completado» = 0,0 % es CIERTO, y el gate de main.py demuestra que sube al marcar un item (0,0 % -> 2,08 % en checklist-legal)"
+  }
+ },
+ "ids_del_R1_cubiertos": {
+  "DOM-11 / COM-28": "checklist-legal!Legal!C15 y cronograma!Gantt!A15: «licencia de actividad clasificada de restaurante — la clasificacion y el nombre dependen de la ordenanza municipal y del catalogo autonomico; en algunos municipios se denomina C3». Fuera la coletilla «cocina separada fisicamente del comedor». Los otros dos sitios (cap. 5 y cap. 7 del docx) son de documentos.py",
+  "DOM-12 / COM-15": "checklist-legal!Legal!C37: el «Libro de visitas de la Inspeccion de Trabajo» (fila 37, 20 EUR, responsable «Papeleria») se SUSTITUYE por «Registro diario de jornada (RD-ley 8/2019, art. 34.9 ET): sistema de fichaje y conservacion 4 anos»",
+  "DOM-23": "checklist-legal!Legal!C48:C52 — bloque «Local» nuevo (arrendamiento, fianza 2 mensualidades art. 36 LAU, carencia durante obra y licencia, cesion y traspaso, condicion suspensiva por denegacion) + nota en C12 («pidelo ANTES de firmar»). Y en el Gantt, la tarea «Negociacion y firma del arrendamiento (con carencia)» (Gantt!A8)",
+  "DOM-22": "cronograma!Gantt!A10: «Dossier bancario, negociacion de financiacion, firma y disposicion» — el Gantt no tenia ninguna tarea de financiacion",
+  "DOM-38": "checklist-contratacion!C34 «Plan de igualdad (50 o mas personas trabajadoras)» y !C20 «Pacto de no competencia postcontractual CON compensacion economica pactada (art. 21.2 ET; max. 2 anos para tecnicos)». Registro retributivo y protocolo de acoso van en checklist-legal!C39 y !C40 (ver «decisiones»)",
+  "DOM-14": "checklist-appcc.xlsx:APPCC — C27 congelacion preventiva (-20 C/5 dias o -35 C/15 h, RD 1420/2006), C28 registro de lotes congelados, C29 informacion al consumidor, C30 calibracion certificada (bloque Temperaturas) y C20 registro de descongelacion (Trazabilidad). Ademas checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!C34 «Verificar que el abatidor alcanza -20 C / -35 C»: no todos llegan, y sin eso no se pueden servir crudos",
+  "DOM-15": "checklist-appcc.xlsx:APPCC!C55:C59 — categoria nueva «Baja temperatura y vacio»: binomios tiempo-temperatura validados por producto, registro de sonda por lote, enfriamiento <=10 C en <2 h, etiquetado con vida util justificada y validacion documental. Su contrapartida de equipo: checklist-equipamiento-cocina!C46 (sonda multipunto con registro) y C45 (2.o roner)",
+  "DOM-20 / COM-17": "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina — C42 horno mixto 10 GN (G42 = 17.500, SPEC §3.4 y tabla 1 del docx) · C92 conducto hasta cubierta (G92 = 12.000, rango 12.000-30.000) · C93 aportacion de aire (G93 = 3.000, rango 3.000-6.000) · C94 extincion en campana (G94 = 2.500, rango 2.500-4.000) · C95 instalacion y puesta en marcha con G95 CALCULADA al 12 %. Nota en C60 (campana extractora, los 2.500 EUR que eran «toda» la extraccion). 54 -> 91 items",
+  "DOM-21": "checklist-vajilla: columnas I «Factor por comensal (menu degustacion)» y J «Menu degustacion (uds)» con la regla piezas = plazas x factor x rotacion. NO se toca la dotacion de carta (§7.1). 43 -> 50 items",
+  "DOM-33": "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!H75 (nota en el «Lavavajillas de capota 50x50») + C79 «Tunel de lavado con mesas de entrada y salida (ALTERNATIVA a la capota)», G79 VACIA a proposito: elegir una de las dos, no sumar las dos (rango medido 12.000-25.000 EUR en la nota)",
+  "DOM-34": "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!H35 — nota en «Cocina industrial 6 fuegos + horno» (5.200 EUR = escalon PROFESIONAL ESTANDAR) + C43 «Bloque modular de coccion de alta gama (alternativa al bloque estandar)» con G43 VACIA: son dos decisiones distintas, no dos partidas que se sumen",
+  "DOM-35": "checklist-marketing!C25: fuera Resy (no opera en Espana; unica cifra en dolares del producto) -> Tock, TheFork, Cover Manager o Restoo",
+  "DOM-36 / COM-34": "checklist-michelin: la categoria «Reputacion» pasa a «Prensa y notoriedad (NO influye en la inspeccion)» en las 5 filas 35-39, con nota en C38; + bloque «Estrella Verde» (C45:C49). 40 -> 45 items",
+  "DOM-37 / TEC-14 / COM-19": "cronograma!Gantt: columnas X «Mes inicio», Y «Duracion (meses)», Z «Depende de», AA «Dias»; barra por formato condicional sobre F6:W36; cabeceras F4:W4 de texto a numero con formato \"M\"0",
+  "DOM-39": "checklist-diseno-sala!C36:C39 — limitador-registrador acustico + estudio de impacto, alumbrado de emergencia y senalizacion (CTE DB-SUA/SI), aseos y vestuarios de personal (RD 486/1997) y certificacion de aforo y recorridos. 31 -> 35 items",
+  "DOM-40 / COM-18": "sesion de fotos 500 -> 1.500 EUR con el rango en la nota; y los 6 checklists por debajo de su cifra llegan a ella (ver recuentos_de_items)",
+  "TEC-15": "cronograma!Gantt!D6:E36 en dd/mm/yyyy con DV de fecha + columna AA «Dias» = Fin - Inicio",
+  "TEC-16 / TEC-17 / TEC-28 / TEC-29 / COM-31": "los cubre el MOTOR (fila TOTAL, subtotales SUMIF, % completado, DV de fecha, semaforo de Estado, hoja Instrucciones, pestana, version y bio). grupo_b solo aporta el contenido y repara los rangos nativos tras insertar filas",
+  "TEC-14 (parte de instrucciones)": "cronograma!Instrucciones: la promesa «cada fase tiene una barra de duracion estimada» pasa a describir como se pinta",
+  "COM-23": "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!C13 «Robot termico tipo Thermomix» y C55 «Pacojet»: la tarjeta del cap. 9 los nombra como gancho y no aparecian en ninguno de los 141 ficheros de la familia"
+ },
+ "logica_de_familia_verificada": {
+  "por_que": "La SPEC §3.5 describe el Gantt del representante como si fuera el de las 7 guias. Medido: hay TRES moldes de Gantt, y aplicarle la rejilla del representante a un hermano escribiria encima de su columna de tareas.",
+  "moldes_de_gantt": {
+   "G1 representante": "hojas Instrucciones+Gantt; cabecera fila 4 (A Fase/Tarea, B Responsable, C Estado, D Inicio, E Fin, F4:W4 = M1..M18); rejilla VACIA; fases en filas sueltas de la columna A",
+   "G2 los 5 hermanos": "cabecera fila 4 (A #, B Fase, C Tarea, D4:O4 = M1..M12); sin Responsable/Estado/Inicio/Fin; rejilla con marcas 'X'",
+   "G3 panaderia": "hoja unica «Gantt apertura», cabecera fila 3 (A Hito, B Responsable, C3:H3 = M1..M6, I Notas criticas); marcas '■'"
+  },
+  "como_se_resuelve": "se localiza la TIRA de cabeceras M<n> (unico invariante de los tres) y los roles se leen de la cabecera: lo que no existe, no se usa. Donde ya hay marcas, Mes inicio y Duracion se DEDUCEN de ellas (medicion del propio entregable) y las marcas se retiran, para que la barra siga al dato en vez de quedar una X vieja en el mes equivocado.",
+  "comprobado_en_dry_run": [
+   {
+    "producto": "guia-restaurante-mexicano (molde A + Gantt G2)",
+    "idempotencia": 0,
+    "censo_exit": 0,
+    "resultado": "28 tareas con Mes inicio/Duracion deducidos de las 'X'; columnas P/Q/R; SIN columna Dias (el molde no trae Inicio/Fin); demo de barra OK (M1-M2 -> M3-M4)"
+   },
+   {
+    "producto": "guia-panaderia-obrador (molde B + Gantt G3)",
+    "idempotencia": 0,
+    "censo_exit": 0,
+    "resultado": "los 6 checklists del molde B NO se tocan (sin contenido propio) y su contador COUNTIF(A4:A34,\"✓\") sigue intacto; el Gantt de 6 meses recibe J/K/L y la barra"
+   },
+   {
+    "producto": "guia-dark-kitchen (moldes C y D)",
+    "idempotencia": 0,
+    "censo_exit": 0,
+    "resultado": "molde C: umbral en D3 = 10 % y semaforo =AND(ISNUMBER($G5),$G5>$D$3) sobre G5:G44; el TOTAL nativo F45/E45 NO se duplica. Molde D: TOTAL nativo F40 respetado y % completado con el estado terminal REAL"
+   }
+  ],
+  "reparacion_de_rangos": "openpyxl no reajusta los rangos al insertar filas: `_reparar_rangos_nativos()` reescribe los SUM/COUNTIF nativos (checklist-apertura-legal!F40, checklist-equipamiento-obra!E45/F45 y los COUNTIF de panaderia) con el fin de datos MEDIDO. Sin eso, insertar una fila deja el TOTAL sumando de menos con el fichero abriendo bien."
+ },
+ "decisiones_tomadas_y_por_que": [
+  {
+   "tema": "Registro retributivo y protocolo de acoso: en UN solo fichero",
+   "decision": "van en checklist-legal!C39 y !C40 (categoria Laboral), NO tambien en checklist-contratacion",
+   "por_que": "DOM-38 los pide en contratacion y §3.1/COM-15 en el bloque laboral vigente de legal. Ponerlos en los dos haria que el cliente marcara dos veces la misma obligacion y la contara dos veces en el presupuesto. En contratacion se aplican los DOS arreglos de redaccion de DOM-38 (filas 20 y 34) y se anade una nota que remite al checklist legal.",
+   "riesgo": "un refutador puede leer DOM-38 al pie de la letra y darlo por no resuelto: esta cubierto, en otro fichero, y citado aqui"
+  },
+  {
+   "tema": "Registro de jornada aparece en dos checklists",
+   "decision": "checklist-legal!C37 (el tramite y la conservacion 4 anos) y checklist-contratacion!C33 (la implantacion del sistema, que YA existia en el fichero)",
+   "por_que": "son la misma obligacion vista desde dos sitios; se ha anotado en contratacion!H33 «son la misma cosa, no dos gastos» para que no se presupueste dos veces"
+  },
+  {
+   "tema": "70 de las 75 filas nuevas van SIN importe",
+   "decision": "celda de coste VACIA (nunca 0) + nota «pide presupuesto»",
+   "por_que": "regla capital: no se teclea una cifra del sector que no este en la SPEC, en el R1 o en el fichero. La celda ya es verde y editable: eso ES la parametrizacion. Las 5 con importe son las que la SPEC §3.4 cifra, y en las tres que son RANGO va precargado el MINIMO con el rango en la nota."
+  },
+  {
+   "tema": "Tunel de lavado y bloque modular de alta gama, sin importe",
+   "decision": "son ALTERNATIVAS, no partidas adicionales; van a 0 EUR con la nota «elige una de las dos y pon la otra a 0»",
+   "por_que": "cargarles su precio inflaria el presupuesto de apertura contando dos veces el mismo lavado y el mismo bloque de coccion"
+  },
+  {
+   "tema": "Cabeceras de mes del Gantt convertidas a NUMERO con formato \"M\"0",
+   "decision": "F4:W4 pasan de la cadena 'M1' al numero 1 mostrandose «M1»",
+   "por_que": "la barra compara F$4>=$X6 y en Excel cualquier TEXTO es mayor que cualquier numero: contra la cadena 'M1' la regla se cumpliria en las 18 columnas y la barra pintaria la fila entera. La celda se sigue viendo «M1»."
+  },
+  {
+   "tema": "Las columnas nuevas del Gantt van DETRAS de la rejilla, no insertadas antes",
+   "decision": "X/Y/Z/AA (representante), P/Q/R (hermanos), J/K/L (panaderia)",
+   "por_que": "insert_cols de openpyxl no mueve anchos, rangos combinados, formato condicional ni validaciones: la banda de titulo A1:V1 quedaria a medias y la rejilla perderia sus anchos de 5,0"
+  },
+  {
+   "tema": "Factores por comensal de la vajilla precargados solo donde hay dato",
+   "decision": "copas: 2+2+1+1 = 6 por comensal (centro del rango 5-7 que mide el R1 DOM-21); platos: 2+1+1+1+3+1+1 = 10 (los pases del menu largo, cap. 15: 8-12). Cuberteria, manteleria y petit menage quedan en blanco",
+   "por_que": "no hay dato del que colgar esos factores; la columna calculada devuelve \"\" y el cliente los pone"
+  }
+ ],
+ "hallazgos": [
+  {
+   "id": "GB-H1",
+   "severidad": "media",
+   "ambito": "motor.py (cross-grupo)",
+   "fichero": "scripts/productos-digitales/guias-v2_0/motor.py:formato_por_etiqueta() pasada (b)",
+   "hallazgo": "La pasada por FILA aplica el tipo de la etiqueta de la columna A a todas las «columnas libres», incluidas las de texto. Caso MEDIDO: cronograma-apertura-gantt.xlsx:Gantt!A35 = «Primeros 30 dias: monitorizacion» -> RX_RECUENTO casa «dias» -> B35 (Responsable, verde por el fichero original) pasa a #,##0 -> validaciones() la clasifica como importe y le cuelga una DV numerica: el cliente NO puede escribir «Arquitecto» en el responsable de esa tarea.",
+   "estado": "MITIGADO en grupo_b sin tocar motor.py, con motor.fijar_formato(ws, <Responsable/Depende de>, 'General') por fila de tarea. Verificado: Gantt!B35.number_format = 'General' y ya no aparece en la DV decimal",
+   "recomendacion": "que T2/T3 valore si la exclusion debe subir al motor (hoy solo excluye 'notas'/'nota'/'observaciones'), porque el mismo patron puede darse en plantilla-turnos-brigada (§4.4, grupo_c)"
+  },
+  {
+   "id": "GB-H2",
+   "severidad": "media",
+   "ambito": "grupo_b (propio, ya corregido)",
+   "fichero": "scripts/productos-digitales/guias-v2_0/grupo_b.py:_columna_calculada()",
+   "hallazgo": "La deteccion de cabeceras recorria range(1, ws.max_column + 2) y ws.cell() CREA la celda: max_column crecia una columna por pasada, el motor combinaba el pie hasta esa columna fantasma y la idempotencia saltaba con «cambia merges (A70:K70 -> A70:L70)».",
+   "estado": "CORREGIDO (range hasta max_column). Idempotencia 0 en los 4 productos probados"
+  },
+  {
+   "id": "GB-H3",
+   "severidad": "baja",
+   "ambito": "grupo_b (propio, ya corregido)",
+   "fichero": "scripts/productos-digitales/guias-v2_0/grupo_b.py:_linea_instr()",
+   "hallazgo": "Las notas del Gantt llevaban el numero «1.»/«2.» escrito a mano. En panaderia, que no tenia hoja Instrucciones, el motor la crea con sus propias lineas 1 y 2, asi que el fichero acababa con dos lineas «1.» seguidas; y ademas prometia una columna «Dias» que en G2/G3 no existe.",
+   "estado": "CORREGIDO: el prefijo lo hereda de la linea que sustituye, y la nota de «Dias» solo se escribe en los moldes que traen Inicio/Fin"
+  },
+  {
+   "id": "GB-H4",
+   "severidad": "alta",
+   "ambito": "grupo_c (§4.1, no es mio)",
+   "fichero": "astro-site/public/dl/guia-restaurante-gastronomico/escandallo-maestro.xlsx:Escandallo!H28",
+   "hallazgo": "'=H27/0.28' — el food cost objetivo esta HARDCODEADO dentro de la formula (TEC-21). Presente en el fichero de produccion, verificado con openpyxl",
+   "estado": "NO CORREGIDO — es del grupo_c. Es el UNICO fallo que devuelve main.py con --solo motor,b y por eso el exit es 1"
+  },
+  {
+   "id": "GB-H5",
+   "severidad": "baja",
+   "ambito": "riesgo latente de familia",
+   "fichero": "grupo_b.py:_param() y las formulas que lo referencian",
+   "hallazgo": "Las formulas de vajilla y equipamiento apuntan a Instrucciones!$B$11 / $B$12 por indice de fila fijado en el momento de escribir. Si otro grupo anadiese un parametro POR ENCIMA en la misma hoja Instrucciones de esos dos ficheros, la referencia apuntaria a la celda equivocada.",
+   "estado": "Hoy no puede pasar: grupo_a toca los financieros y grupo_c el escandallo/menu/bodega/turnos; ninguno toca checklist-*.xlsx. Queda anotado por si T6 o T8 anaden parametros a esos dos libros."
+  }
+ ],
+ "pruebas": [
+  "main.py --producto guia-restaurante-gastronomico --dry-run --solo motor,b: idempotencia 0 · censo-entregables --fail exit 0 · inject_cache fallos_pycel 0 en los 18 xlsx · data_only 97 con valor + 65 \"\" verificadas con pycel, 0 fallos · exit 1 SOLO por escandallo-maestro!H28 (grupo_c)",
+  "demo 1 (pycel): la barra del Gantt se desplaza de M1-M2 a M3-M4 al sumar 2 a Gantt!X6",
+  "demo 2 (pycel): Gantt!AA6 devuelve \"\" con el libro en blanco y 30 con D6=46000 / E6=46030",
+  "demo 3 (pycel): Equipamiento!G95 = 17.648,40 -> 17.768,40 al subir G5 1.000 EUR (+120 = 12 %) y el TOTAL G98 164.718,40 -> 165.838,40 (+1.120)",
+  "demo 4 (pycel): Vajilla!J5 = 195 -> 390 al doblar Instrucciones!B11 (plazas); J8 (sin factor) = \"\"",
+  "demo 5: los 8 checklists se entregan con 0 items en estado terminal y las 26 tareas del Gantt caben en M18 (0 avisos rojos)",
+  "gate de main.py: el % completado sube al marcar un item en los 8 checklists (0,0 % -> 1,1-3,3 %) y los subtotales por categoria cuadran con el TOTAL en los 8",
+  "familia: dry-run completo en guia-restaurante-mexicano, guia-panaderia-obrador y guia-dark-kitchen — idempotencia 0 y censo 0 defectos en los tres",
+  "produccion intacta: git status --porcelain astro-site/public/dl/ -> 0 lineas"
+ ],
+ "dudas": [
+  "DOM-38 pide el registro retributivo y el protocolo de acoso en checklist-contratacion y yo los he puesto una sola vez en checklist-legal (Laboral) para no duplicar la obligacion. Si el orquestador prefiere la lectura literal del R1, es cambiar dos entradas de la lista 'nuevas' de LEGAL a CONTRATACION.",
+  "checklist-equipamiento-cocina queda en 91 items y la tarjeta anuncia 90. He preferido pasarme por uno antes que ajustar al numero exacto: el gate del §9 pide «>= el anunciado». Si se quiere que la landing publique la cifra medida (decision 18 del §7-bis), el numero es 91.",
+  "Los factores por comensal de la vajilla (columna I) son 11 celdas precargadas: copas atadas al maridaje de 5-7 vinos del R1 y platos a los 8-12 pases del cap. 15. El reparto interno (2 Burgundy, 2 Bordeaux, 1 blanco, 1 espumoso / 2 llanos, 3 boles, ...) es criterio de oficio, no un dato citable. Van en celda verde con nota. Si el orquestador prefiere dejarlos TODOS en blanco, es borrar el dict 'precarga'.",
+  "El plan del Gantt (26 tareas x mes inicio/duracion/depende de) es una hipotesis de planificacion. Solo dos duraciones salen de un dato del producto: la licencia (4-8 meses, cap. 5, precargada en 6) y la formacion (2-4 semanas, precargada en 1 mes). Las otras 24 encadenan esas dos dentro del horizonte de 18 meses que da nombre al fichero. Todas son celdas verdes editables.",
+  "El molde B de panaderia no recibe NI UNA fila nueva (§7-bis.17: no se le anade columna de coste). Si en T6 se le anade contenido, `_insertar` ya lo soporta y `_reparar_rangos_nativos` reescribe sus COUNTIF; no esta ejercitado con contenido real."
+ ],
+ "pendiente": [
+  "grupo_c: escandallo-maestro!H28='=H27/0.28' (TEC-21) es el unico fallo que impide exit 0 en la orden --solo motor,b",
+  "documentos.py: la redaccion unica de la licencia (DOM-11/COM-28) tiene que aplicarse tambien en el cap. 5 y el cap. 7 del docx; aqui quedan hechos los DOS sitios de xlsx (checklist-legal!C15 y Gantt!A15)",
+  "documentos.py / §5.4: DOM-33 (tunel vs capota), DOM-34 (dos escalones de coccion), DOM-35 (fuera Resy) y DOM-39 tienen su contrapartida en el texto de la guia; en los xlsx ya estan",
+  "T6 hermanos: contenido_<pid>/b.py de las 7 guias restantes. La logica de familia ya esta probada en dry-run sobre mexicano (A+G2), panaderia (B+G3) y dark-kitchen (C+D)",
+  "T8 capa de producto: los recuentos medidos que hay que publicar son legal 48, contratacion 30, appcc 55, sala 35, vajilla 50, michelin 45, marketing 35, equipamiento 91; y el Gantt ya tiene dependencias reales (BONUS 4)"
+ ]
+}

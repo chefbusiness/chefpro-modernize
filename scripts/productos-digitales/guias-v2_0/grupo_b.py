@@ -113,15 +113,25 @@ COL_DURACION = 'Duración (meses)'
 COL_DEPENDE = 'Depende de'
 COL_DIAS = 'Días'
 
-NOTA_GANTT = ('1. Rellena «' + COL_MES_INICIO + '» y «' + COL_DURACION
+#: Las notas van SIN número: la numeración de `Instrucciones` no es fiable
+#: entre moldes —el representante tiene tres líneas numeradas y panadería no
+#: tiene hoja de instrucciones, así que se la crea el motor con otras dos—, y
+#: escribir «1.» a ciegas producía dos líneas «1.» seguidas. Si la nota
+#: SUSTITUYE a una línea numerada, `_linea_instr()` le conserva su prefijo.
+NOTA_GANTT = ('Rellena «' + COL_MES_INICIO + '» y «' + COL_DURACION
               + '»: la barra de los meses se pinta sola a partir de esas dos '
                 'celdas (formato condicional).')
 RX_NOTA_GANTT_VIEJA = re.compile(
-    r'^\s*1\.\s*(Cada fase tiene una barra|Fases y tareas)', re.I)
-NOTA_GANTT_2 = ('2. «' + COL_DEPENDE + '» dice qué tarea tiene que estar '
-                'terminada antes; «' + COL_DIAS + '» sale de Inicio y Fin.')
+    r'^\s*\d+\.\s*(Cada fase tiene una barra|Fases y tareas)', re.I)
+NOTA_GANTT_2 = ('«' + COL_DEPENDE + '» dice qué tarea tiene que estar '
+                'terminada antes de empezar ésta.')
 RX_NOTA_GANTT_2_VIEJA = re.compile(
-    r'^\s*2\.\s*(Rellena las fechas|Marca las celdas)', re.I)
+    r'^\s*\d+\.\s*(Rellena las fechas|Marca las celdas)', re.I)
+#: Ésta NO sustituye a ninguna línea: se añade, y sólo en los moldes que traen
+#: fechas (G1). En G2 y G3 no hay columnas Inicio/Fin, así que prometer un
+#: «Días» que no existe sería el mismo defecto que el §3.5 viene a arreglar.
+NOTA_GANTT_DIAS = ('«' + COL_DIAS + '» se calcula solo a partir de Inicio y '
+                   'Fin.')
 
 #: Etiqueta del bloque de parámetros que este grupo deja en `Instrucciones`.
 CAB_PARAMETROS = 'Parámetros de este libro (edítalos: el libro recalcula)'
@@ -802,6 +812,31 @@ def _columnas_gantt(ws, fila_cab, ultima_mes, con_fechas, cambios, fname):
     return mapa
 
 
+def _linea_instr(ws, texto, rx=None):
+    """Escribe una línea en `Instrucciones` **conservando el número de la que
+    sustituye**.
+
+    `motor.linea_instrucciones()` sustituye o añade, pero el texto se escribe
+    tal cual: si mi nota trae «1.» y la hoja ya tenía su propia «1.» (porque el
+    motor acaba de crearla, como en panadería, que no tenía ninguna), el
+    fichero acaba con dos líneas «1.» seguidas. Aquí el prefijo lo pone la
+    línea sustituida, no yo.
+    """
+    col = motor.col_texto(ws)
+    for r in range(1, ws.max_row + 1):
+        v = ws.cell(row=r, column=col).value
+        if not isinstance(v, str):
+            continue
+        if v == texto or v.endswith(texto):
+            return r                      # ya escrita (2.ª pasada)
+        if rx and rx.match(v):
+            pref = re.match(r'^\s*\d+\.\s*', v)
+            ws.cell(row=r, column=col).value = ((pref.group(0) if pref else '')
+                                               + texto)
+            return r
+    return motor.linea_instrucciones(ws, texto)
+
+
 def _es_fila_tarea(ws, fila, rol_tarea, roles_extra):
     """Distingue una TAREA de una cabecera de fase.
 
@@ -857,6 +892,7 @@ def _limpiar_marcas(ws, fila, ini, fin_col):
 def _gantt(wb, fname, cambios, contenido):
     """§3.5 completo sobre los tres moldes de Gantt."""
     cfg = (getattr(contenido, 'GANTT', None) or {}) if contenido else {}
+    hubo_fechas = False
     for ws in wb.worksheets:
         if ws.title == 'Instrucciones':
             continue
@@ -888,6 +924,7 @@ def _gantt(wb, fname, cambios, contenido):
             elif t == 'fin':
                 tiene_fin = get_column_letter(c)
         con_fechas = bool(tiene_inicio and tiene_fin)
+        hubo_fechas = hubo_fechas or con_fechas
 
         mapa = _columnas_gantt(ws, fila_cab, fin_col, con_fechas, cambios,
                                fname)
@@ -934,6 +971,16 @@ def _gantt(wb, fname, cambios, contenido):
             cel_dep.fill = PatternFill('solid', fgColor=motor.VERDE)
             cel_dep.protection = Protection(locked=False)
             cel_dep.alignment = Alignment(horizontal='left', wrap_text=True)
+            # Las columnas de TEXTO se clavan a `General` con el pin del §1.4.
+            # Caso medido: la tarea «Primeros 30 días: monitorización» lleva
+            # «días» en su etiqueta de fila, así que la pasada (b) de
+            # `formato_por_etiqueta` le ponía `#,##0` a TODA la fila —
+            # `Responsable` incluido— y después `validaciones()` clasificaba esa
+            # celda verde como importe y le colgaba una DV numérica: el cliente
+            # no podía escribir «Arquitecto» en el responsable de esa tarea.
+            for L in (roles.get('responsable'), col_dep):
+                if L:
+                    motor.fijar_formato(ws, L + str(r), 'General')
             if con_fechas:
                 col_dias = mapa[COL_DIAS]
                 motor.f(ws, col_dias + str(r),
@@ -1016,11 +1063,16 @@ def _gantt(wb, fname, cambios, contenido):
     # --- las Instrucciones dejan de prometer lo que no había --------------
     if 'Instrucciones' in wb.sheetnames:
         ws = wb['Instrucciones']
-        motor.linea_instrucciones(ws, NOTA_GANTT, RX_NOTA_GANTT_VIEJA)
-        motor.linea_instrucciones(ws, NOTA_GANTT_2, RX_NOTA_GANTT_2_VIEJA)
+        _linea_instr(ws, NOTA_GANTT, RX_NOTA_GANTT_VIEJA)
+        _linea_instr(ws, NOTA_GANTT_2, RX_NOTA_GANTT_2_VIEJA)
+        if hubo_fechas:
+            _linea_instr(ws, NOTA_GANTT_DIAS)
         cambios.append(fname + ':Instrucciones: la promesa «cada fase tiene '
                        'una barra de duración estimada» pasa a describir cómo '
-                       'se pinta (§3.5)')
+                       'se pinta' + (' + la columna Días' if hubo_fechas
+                                     else ' (este molde no lleva Inicio/Fin, '
+                                          'así que no se promete «Días»)')
+                       + ' (§3.5)')
 
 
 # ==========================================================================
@@ -1404,7 +1456,88 @@ def demos(carpeta, origen, destino, contenido):
                               'por comensal devuelve ' + repr(vacio)
                               + ' en vez de "" (§7-bis.13)')
 
-    # ---- 5: recuento de ítems contra lo que anuncia la tarjeta ----------
+    # ---- 5: EL LIBRO EN BLANCO no puede enseñar nada en verde -----------
+    #
+    # Es el gate que pide el §7-bis.13 leído al revés: con el fichero recién
+    # descargado —cero ítems marcados, cero fechas— ninguna regla verde puede
+    # encenderse y ningún cálculo puede devolver un `0` que se lea como un
+    # resultado. Se comprueban las dos vías:
+    #   · el semáforo de Estado: `COUNTIF(...,"<terminal>")` = 0 en los 8;
+    #   · el aviso rojo del Gantt: FALSO en todas las tareas precargadas (si
+    #     saltara, el plan que trae el producto no cabría en su propio
+    #     horizonte de meses).
+    blanco = []
+    for fname in sorted(os.listdir(carpeta)):
+        if 'checklist' not in fname.lower() or not fname.endswith('.xlsx'):
+            continue
+        wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
+        for ws in wb.worksheets:
+            if ws.title == 'Instrucciones':
+                continue
+            try:
+                molde, fila_cab = motor.molde_checklist(ws, fname, '')
+            except motor.MoldeDesconocido:
+                continue
+            roles = _roles(ws, fila_cab, molde)
+            if not roles['estado']:
+                continue
+            fin = _fin_datos(ws, molde, fila_cab, roles['tarea'])
+            terminal = motor.opciones_dv(
+                ws, roles['estado'] + str(fila_cab + 1))
+            if not terminal:
+                continue
+            marcados = sum(
+                1 for r in range(fila_cab + 1, fin + 1)
+                if _norm(ws.cell(row=r,
+                                 column=_col(roles['estado'])).value)
+                == _norm(terminal[-1]))
+            blanco.append({'fichero': fname, 'estado_terminal': terminal[-1],
+                           'items_en_terminal': marcados, 'ok': marcados == 0})
+            if marcados:
+                fallos.append(fname + ': ' + str(marcados) + ' ítems vienen ya '
+                              'marcados como «' + terminal[-1] + '» en el '
+                              'fichero que se descarga: el semáforo se '
+                              'enciende en verde sin que el cliente haya hecho '
+                              'nada')
+    for fname in sorted(os.listdir(carpeta)):
+        if not fname.startswith('cronograma-') or not fname.endswith('.xlsx'):
+            continue
+        wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
+        for ws in wb.worksheets:
+            rejilla = _rejilla_meses(ws)
+            if not rejilla:
+                continue
+            fila_cab, ini, fin_col, nums = rejilla
+            mapa = {}
+            for c in range(1, ws.max_column + 1):
+                v = _txt(ws.cell(row=fila_cab, column=c).value)
+                if v in (COL_MES_INICIO, COL_DURACION):
+                    mapa[v] = get_column_letter(c)
+            if len(mapa) < 2:
+                continue
+            ci, cd = mapa[COL_MES_INICIO], mapa[COL_DURACION]
+            tope = max(nums)
+            fuera_horizonte = []
+            for r in range(fila_cab + 1, ws.max_row + 1):
+                m = ws.cell(row=r, column=_col(ci)).value
+                d = ws.cell(row=r, column=_col(cd)).value
+                if isinstance(m, (int, float)) and isinstance(d, (int, float)) \
+                        and m + d - 1 > tope:
+                    fuera_horizonte.append(
+                        (r, ws.cell(row=r, column=1).value, m, d))
+            blanco.append({'fichero': fname, 'horizonte_meses': tope,
+                           'tareas_fuera_del_horizonte': len(fuera_horizonte),
+                           'detalle': fuera_horizonte[:6],
+                           'ok': not fuera_horizonte})
+            for r, tarea, m, d in fuera_horizonte:
+                fallos.append(fname + ':' + ws.title + '!' + ci + str(r)
+                              + ': «' + str(tarea)[:50] + '» empieza en M'
+                              + str(m) + ' y dura ' + str(d) + ' meses: se '
+                              'sale del horizonte de M' + str(tope) + ' y el '
+                              'fichero se entrega con el aviso en rojo puesto')
+    detalle['libro_en_blanco'] = blanco
+
+    # ---- 6: recuento de ítems contra lo que anuncia la tarjeta ----------
     recuentos = []
     for fname, cfg in cfgs.items():
         path = os.path.join(carpeta, fname)

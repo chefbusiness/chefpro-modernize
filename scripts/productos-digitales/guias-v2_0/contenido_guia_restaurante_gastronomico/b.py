@@ -190,6 +190,22 @@ LEGAL = {
 # ==========================================================================
 CONTRATACION = {
     'anuncia': 30,
+    'notas': [
+        {
+            'id': 'DOM-12/COM-15',
+            # La fila 33 («Registro de jornada digital») y la fila nueva del
+            # checklist legal («Registro diario de jornada… conservación 4
+            # años») son la MISMA obligación vista desde dos sitios: aquí, el
+            # sistema que se implanta; allí, el trámite y la conservación. La
+            # nota lo dice para que no se lea como dos tareas distintas ni se
+            # presupueste dos veces.
+            'buscar': 'Registro de jornada digital (obligatorio)',
+            'notas': ('Es la implantación del sistema de fichaje. La '
+                      'obligación y la conservación 4 años están en el '
+                      'checklist legal, categoría Laboral: son la misma cosa, '
+                      'no dos gastos.'),
+        },
+    ],
     'sustituciones': [
         {
             'id': 'DOM-38',

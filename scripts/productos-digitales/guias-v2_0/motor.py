@@ -865,6 +865,13 @@ def ensanchar_etiquetas(ws, informe=None, fname='', margen=2, tope=60):
             v = cel.value
             if not isinstance(v, str) or len(v) < 8:
                 continue
+            if cel.data_type == 'f':
+                # El `.value` de una celda de fórmula ES la fórmula. Sin este
+                # corte, `=IF('P&L Mensual'!B10=0,"",…)` cuenta como una
+                # etiqueta de 50 caracteres y ensancha su columna a 50: medido
+                # en la hoja «Proyección 3 Años» del representante y en 35
+                # columnas del cash flow japonés.
+                continue
             if cel.__class__.__name__ == 'MergedCell':
                 continue
             if any(cel.coordinate in CellRange(str(m))
