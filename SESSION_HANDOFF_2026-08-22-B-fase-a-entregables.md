@@ -481,3 +481,13 @@ pro-prompts-ebook). Verificación por curl tras el deploy: landings con 0 Softwa
 /pro-prompts-ebook, /kit-plan-financiero → 0 SoftwareApplication · 1 AggregateRating (el propio) · sólo el precio del producto (18,50 / 14 / 85 / 29 / 9 / 39 €);
 /mega-pack-tareas → 0 y 0 (su Product no lleva rating, como antes). Home, /precios, /blog, /en/pricing → SoftwareApplication intacto. Google tardará
 en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debería pasar de «4,8 (9.122) · 95 €» a «4,9 (N) · 18,50 €»).
+**Inventario de la capa comercial (informativo, NADA tocado): `auditorias/capa-comercial-inventario-2026-08-29.json`.** Para John:
+- **Testimonios**: `kit-tareas-hotel.ts` atribuye 6 de 10 citas a empleados ficticios de marcas hoteleras REALES (Hotel Palace Madrid, Meliá, W Barcelona/
+  Marriott, Ritz-Carlton, Four Seasons, NH) — exposición por uso de marca ajena; `guia-restaurante-gastronomico.ts` con «1 Estrella Michelin en Madrid»,
+  «ex-directora Guía Repsol», «2 Soles Repsol en Galicia»; patrón «lo presenté tal cual al banco y me aprobaron X €» en 11 productos. Los otros ~326 de
+  ~350 testimonios usan rol genérico + negocio claramente ficticio.
+- **Anclas de precio**: 42 de 44 con `priceOld` + `discountBadge` + `bonusSaveLine`; sólo `kit-tareas-pasteleria` está limpio (es la plantilla de cómo quedan
+  `heroNote`/`buyBoxNote`/`bonusTotalLabel`, obligatorios en `types.ts`); las 4 plantillas ya los pintan condicionalmente → retirar = editar data files;
+  `pro-prompts-ebook` y `mega-pack-tareas` van a mano en el `.astro`. 4 badges con aritmética falsa: plan-financiero −79 % vs «72 %», dark-kitchen −73 %
+  vs «71 %», **eBook «−90 %» cuando 50→9 € es −82 %**, guía gastronómica (bonus + precio ≠ priceOld).
+- Ratings: se mantienen (decisión de John); con `omitGlobalApp` la SERP pasará a usar el `Product` de cada landing.
