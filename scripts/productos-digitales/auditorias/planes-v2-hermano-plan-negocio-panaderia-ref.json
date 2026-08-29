@@ -1,0 +1,147 @@
+{
+ "pid": "plan-negocio-panaderia",
+ "rol": "REFUTADOR (analista de riesgos + tecnica excel)",
+ "fecha": "2026-08-29",
+ "listo": false,
+ "copia_auditada": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/r-plan-negocio-panaderia/dryrun/plan-negocio-panaderia",
+ "dryrun_propio": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/r-plan-negocio-panaderia python3 main.py --producto plan-negocio-panaderia --dry-run --json <scratchpad>/planes/r-plan-negocio-panaderia.json",
+  "exit_real_del_proceso": 0,
+  "fallos": [],
+  "gates_medibles": "13/13 a 0, los mismos que declara el constructor",
+  "nota": "el dry-run sale VERDE y aun asi el libro entrega 6 celdas ROJAS de semaforo en el caso base realista (Punto Equilibrio!B26:D26 y Tesoreria!E19/H19/K19), 1 ambar (Punto Equilibrio!C24), 31 celdas con jerga interna de auditoria visibles para el cliente, un changelog que publica un input que el libro no usa, y una errata de tilde con el gate de ortografia en 0. Ningun gate de la tanda mide nada de eso.",
+  "verificacion_cruzada_de_hermanos": {
+   "plan-negocio-cafeteria": "EXIT 1 — reproducido de forma independiente: '§2.11.12-bis / RD-34: el origen de fondos no cuadra con los usos (diferencia 9512.200000000012 EUR, 0.06583393199979523 sobre los usos, tope 0.05)'",
+   "plan-negocio-bar-restaurante": "EXIT 0, fallos []"
+  }
+ },
+ "motivo": "Refutado. (1) La tanda deja ROTO un hermano YA CERRADO: `plan-negocio-cafeteria` pasa a exit 1 por los cambios de `grupo_a.py` de esta misma tanda — reproducido aqui de forma independiente. El propio constructor lo documenta (PAN-13) y lo deja sin arreglar, asi que la familia queda con un producto en rojo por un fix que se hizo para otro. (2) El caso base NO cumple su propio semaforo: Punto Equilibrio!B26:D26 entrega los tres anos en ROJO (10,3 / 11,6 / 12,0 rotaciones exigidas frente al techo de 3 que declara la celda de al lado) y la Tesoreria pinta en ROJO las tres liquidaciones trimestrales cuando su propia nota dice que en negativo no se paga. (3) El libro que compra el cliente publica 31 celdas de JERGA INTERNA DE AUDITORIA — ids TEC-/DOM-/NUEVO-/REF-, el nombre del fichero de codigo `grupo_a.py`, la constante `AMORT_DEFECTO`, los parrafos de la SPEC (§7-bis.11) y la frase «la landing lo promete en las 10 lineas y ningun fichero lo tenia». (4) El changelog del propio libro (Instrucciones!C36) publica 165 transacciones/dia cuando el modelo corre con 180. (5) El unico hermano de la familia que vende PAN COMUN aplica el 10 % de IVA a toda la facturacion; el pan comun y las harinas panificables van al 4 % (art. 91.Dos.1.1 LIVA) y el libro no tiene ni una celda donde ponerlo. (6) La cobertura de horas sale 100,22 % porque cuenta 13 h «de la apertura al cierre» y deja fuera el turno de madrugada de 4:00-5:00 que el mismo libro staffea: contandolo, 88,3 % = ROJO. Y el informe del constructor cita cifras que no salen del fichero (facturacion, los tres resultados netos y una fila 'Mayorista' que no existe).",
+ "hallazgos": [
+  {
+   "id": "REF-01",
+   "severidad": "alta",
+   "celda": "plan-financiero-panaderia.xlsx!'Punto Equilibrio'!B26:D26 (y B25, y '0. Supuestos'!B50/C50/C51)",
+   "hallazgo": "Tres celdas ROJAS en el caso base realista, el mismo defecto que REF-01 de tapas-bar. Valores leidos con pycel: B26=10,281 · C26=11,649 · D26=12,002 «Rotaciones al dia que exige el equilibrio de caja», contra B25=3 «Rotaciones al dia que da el local como maximo». Regla CF leida del fichero: AND(ISNUMBER(B26),B26>$B$25) con relleno FFC7CE (rojo) y prioridad sobre la verde. La nota E26 remata: «Por encima del techo de arriba, el punto de equilibrio esta fuera del alcance del local». Un banco lee que el equilibrio es fisicamente inalcanzable. El libro YA SABE que la metrica no vale aqui: '0. Supuestos'!C51 dice literalmente «La rotacion implicita (transacciones/dia / aforo) no es una metrica util en este formato — se conserva por consistencia de familia, no como palanca de gestion». Se conservo el numero Y el semaforo. Ademas '0. Supuestos'!B50 = 12,00 rotaciones/dia sobre 15 plazas, con C50 diciendo «El documento de este plan pide un MINIMO de 1,8 rotaciones por mesa y servicio» — texto de restaurante en un obrador con mostrador.",
+   "fix": "En `contenido_plan_negocio_panaderia/a.py`, para el molde de panaderia: o (a) suprimir las filas Punto Equilibrio!A25/A26 y '0. Supuestos'!A50 (la metrica que el propio libro declara inutil), o (b) sustituir el techo B25=3 por el techo REAL del formato — piezas/dia que da el horno instalado (el libro ya publica 80-200 kg/dia en Instrucciones!B56) y renombrar la fila a «Piezas/dia que exige el equilibrio». Si se opta por (b), recalibrar B25 hasta que B26:D26 queden <= B25 en los tres anos. Verificacion: 0 celdas de B26:D26 casando AND(ISNUMBER(B26),B26>$B$25)."
+  },
+  {
+   "id": "REF-02",
+   "severidad": "alta",
+   "celda": "plan-financiero-panaderia.xlsx!Instrucciones!D34, D35, D37, D38, D39, D40, D41, D42, D43, D44, D46, C50:C62 y Personal!A12 (31 celdas)",
+   "hallazgo": "El libro que descarga el cliente de pago publica la trazabilidad interna de la auditoria. Textos leidos tal cual del fichero: D34 «TEC-01/DOM-01 (FAMILIA): el P&L usaba una cifra tecleada distinta de su propia hoja Personal (135.408 EUR), una diferencia de 63.408 EUR»; D35 «§7-bis.17: dimensionada por horas de servicio…»; D38 «NUEVO-03 (defecto propio de los cuatro hermanos A-beta, no visto por el R1 del representante A-alfa)» — con las letras griegas α/β literales, los UNICOS caracteres no latinos del libro; D40 «…no casaban con NINGUN grupo de `AMORT_DEFECTO` y se perdian de la base — corregido en `grupo_a.py` para toda la familia»; D41 «§7-bis.11: … Corrige ademas REF-06 (bug de regex en `grupo_a.py`…)»; D43 «TEC-08/DOM-10/COM-04 (FAMILIA 10/10): la landing lo promete en las 10 lineas y ningun fichero lo tenia»; Personal!A12 «CRECIMIENTO DE LA PLANTILLA (coste escalonado, RD-10)»; Instrucciones!C62 (columna «Fuente») «DOM-24 / checklist F4». D43 es ademas una confesion comercial: le dice al comprador que los 10 productos de la linea se vendian prometiendo un plan de financiacion que no existia. El gate «no latinos» de §9 dio 0 con α y β dentro.",
+   "fix": "En `grupo_a.py`, la tabla «QUE HA CAMBIADO RESPECTO DE LA VERSION 1.1» debe redactar la columna «Por que» en lenguaje de cliente y NUNCA interpolar el id del hallazgo ni la ruta del codigo: guardar el id en un campo aparte que no se escriba en el xlsx. Purgar tambien Personal!A12 (quitar «, RD-10») e Instrucciones!C62. Gate nuevo: abortar si alguna celda de un xlsx entregable casa r'(TEC|DOM|COM|NUEVO|REF|RD|RT|RC|PAN)-\\d|grupo_a\\.py|motor\\.py|main\\.py|AMORT_DEFECTO|§\\d|§7-bis|[α-ωΑ-Ω]'. Barrido de comprobacion: 0 coincidencias en los 2 xlsx (hoy 31 en el financiero, 0 en el checklist)."
+  },
+  {
+   "id": "REF-03",
+   "severidad": "alta",
+   "celda": "plan-financiero-panaderia.xlsx!Instrucciones!C36 = «165» frente a '0. Supuestos'!B4 = 180",
+   "hallazgo": "La columna «v2.0» del changelog que el cliente lee publica un input que el libro NO usa. Instrucciones!A36 «Transacciones/dia», B36 «148 (derivado de 200.000 EUR / 4,50 EUR / 300 dias, no un input real)», C36 «165», D36 «Dentro del rango 80-200 que declara Escenarios de la propia v1.1». Pero '0. Supuestos'!B4 = 180 y 'PyG 3 Anos'!B6 = 180 (pycel), y la propia nota '0. Supuestos'!C4 narra el cambio: «Con 165 el resultado neto del ano 1 quedaba en el 0,79 % de las ventas —por debajo del suelo 5 %—: sube a 180». Es decir: se recalibro de 165 a 180 y se actualizo la nota de Supuestos pero NO la fila del changelog. Con 165 la facturacion seria 281.325 EUR y el neto 2.229 EUR; con 180 es 306.900 EUR y 16.653 EUR. Ningun gate compara el changelog contra los inputs.",
+   "fix": "En `contenido_plan_negocio_panaderia/a.py`, CAMBIOS fila «Transacciones/dia»: C36 debe leerse del propio parametro (o escribirse 180). Mejor aun, en `grupo_a.py` componer esa celda por FORMULA (=TEXT('0. Supuestos'!$B$4,\"0\")) para que no pueda volver a desincronizarse. Gate: para cada fila del changelog cuyo concepto tenga celda espejo en Supuestos, exigir igualdad."
+  },
+  {
+   "id": "REF-04",
+   "severidad": "alta",
+   "celda": "plan-financiero-panaderia.xlsx!'0. Supuestos'!B39 = 0,10 (C39 «Tipo reducido de hosteleria») · 'PyG 3 Anos'!G13 = 0,10 · 'Tesoreria 12 meses'!N16 = 30.690,00 EUR · Instrucciones!A8 · '0. Supuestos'!B9 = 6,10 EUR",
+   "hallazgo": "El unico hermano de la linea A cuyo producto principal es PAN COMUN aplica el 10 % de IVA a toda la facturacion, y el libro no tiene ninguna celda donde poner el 4 %. El pan comun, las harinas panificables, la leche y los huevos van al tipo SUPERREDUCIDO del 4 % (art. 91.Dos.1.1 LIVA); el 10 % es el de hosteleria y bolleria/pasteleria. Medido con pycel: 'Tesoreria 12 meses'!N16 «IVA repercutido del ano» = 30.690,00 EUR = exactamente el 10 % de las ventas 'PyG 3 Anos'!B9 = 306.900,00 EUR, con 'PyG 3 Anos'!A10 «Ventas de pan, bolleria y mayorista» al 92,5 % del total. Efecto en caja, no solo contable: 'Tesoreria 12 meses'!N20 «Pago del IVA (modelo 303)» = 0,00 EUR — las tres liquidaciones del ano salen negativas, asi que el IVA repercutido de mas NUNCA se devuelve dentro del ano y se queda en el saldo. Con la mitad de la linea de comida al 4 %, el repercutido baja ~8.500 EUR: el «saldo minimo del ano» 'Tesoreria 12 meses'!B23 = 45.842,44 EUR y el saldo final M22 = 97.001,39 EUR estan inflados en ese orden de magnitud. Ademas Instrucciones!A8 instruye al panadero «divide entre 1,10 en comida» y '0. Supuestos'!B9 le publica un PVP con IVA de 6,10 EUR sobre un ticket de 5,50 EUR: para la barra de pan el PVP correcto seria 5,72 EUR.",
+   "fix": "Anadir en '0. Supuestos' un parametro propio de este hermano: «IVA superreducido de pan comun y harinas panificables (%)» = 0,04 y «Ventas de pan comun sobre el total de comida (%)», y cablear el repercutido de 'Tesoreria 12 meses'!B16:M16, B9:M9 y '0. Supuestos'!B9 al blend de los dos tipos (igual que ya se hace con B62 para la bebida alcoholica). Reescribir Instrucciones!A8 con los tres divisores (1,04 pan comun / 1,10 bolleria y cafe / 1,21 general). Verificar despues que N16 < 30.690 EUR y que B23 baja en consecuencia."
+  },
+  {
+   "id": "REF-05",
+   "severidad": "alta",
+   "celda": "scripts/productos-digitales/planes-v2_0/grupo_a.py (RX_PARENTESIS_NUM) → efecto en plan-financiero-cafeteria-brunch.xlsx!'Inversion Inicial'",
+   "hallazgo": "Los cambios de motor de ESTA tanda dejan en rojo a un hermano YA CERRADO. Reproducido de forma independiente con el codigo tal como esta hoy en el repo: `CLAUDE_SCRATCHPAD=… python3 main.py --producto plan-negocio-cafeteria --dry-run` devuelve EXIT 1 con el fallo «§2.11.12-bis / RD-34: el origen de fondos no cuadra con los usos (diferencia 9512.200000000012 EUR, 0.06583393199979523 sobre los usos, tope 0.05)». Causa: el fix del regex de imprevistos (PAN-01) suprime por fin la fila duplicada «Imprevistos (8%)» tambien en cafeteria, con lo que su necesidad de caja baja y su prestamo de 154.000 EUR queda por encima del 5 % admisible. Contrastado: `plan-negocio-bar-restaurante` sigue en EXIT 0 con fallos []. El constructor lo documenta como PAN-13 y lo deja sin corregir «por estar fuera del alcance». Un fix de codigo compartido que rompe a un hermano cerrado no es un pendiente: es una regresion de la tanda.",
+   "fix": "En `contenido_plan_negocio_cafeteria/a.py`, bajar `prestamo` en ~9.512 EUR (o subir `recursos_propios` en esa cantidad) hasta que Financiacion!B16 <= 0,05, y volver a correr su dry-run hasta EXIT 0 ANTES de dar por cerrada la tanda de panaderia. Y anadir al cierre de cada tanda un gate de regresion: correr el dry-run de los N hermanos ya cerrados cada vez que se toque `grupo_a.py` o `motor.py`, exigiendo exit 0 en todos."
+  },
+  {
+   "id": "REF-06",
+   "severidad": "alta",
+   "celda": "plan-financiero-panaderia.xlsx!Personal!B20 = 13 · B21 = 2 · B22 = 8.060 h · B23 = 8.077,6 h · B24 = 1,0022",
+   "hallazgo": "La cobertura de horas sale VERDE por 17,6 horas al ano (0,22 %) y solo porque el denominador deja fuera el turno que el propio libro declara. Personal!B20 = 13 «Horas de servicio al dia que hay que cubrir», con J20 «De la apertura al cierre, barra incluida». Pero Personal!J5 describe el puesto de maestro panadero como «Turno de madrugada (4:00-5:00 AM, checklist F4): amasado, formado y horneado de la primera hornada» e Instrucciones!B59/D59 fijan «Hora de inicio de produccion 4:00-5:00 AM · Turno de madrugada critico para tener pan a las 7:30». Esas 3,5 h diarias de obrador anteriores a la apertura estan PAGADAS en la plantilla (G11 = 113.861,30 EUR) pero no contadas en B22. Recalculado: (13 h x 2 personas + 3,5 h x 1 persona) x 310 dias = 9.145 h necesarias frente a 8.077,6 contratadas = 88,3 % de cobertura, por debajo del 90 % → celda B24 ROJA (regla CF leida del fichero: AND(ISNUMBER(B24),B24<0,9) con relleno FFC7CE). El semaforo verde de hoy es un artefacto del denominador.",
+   "fix": "En `contenido_plan_negocio_panaderia/a.py` separar el bloque de cobertura en dos franjas propias del formato: «Horas de OBRADOR al dia (antes de abrir)» = 3,5 con 1 persona, y «Horas de TIENDA al dia» = 13 con 2 personas, y que B22 sume las dos. Luego recalibrar la plantilla hasta B24 >= 1,00 (hacen falta ~1.070 h/ano mas, del orden de +0,58 jornadas equivalentes) comprobando que 'PyG 3 Anos'!B54 sigue <= 0,42. Reescribir J20/J21 sin «barra» ni «cocina, barra y sala»."
+  },
+  {
+   "id": "REF-07",
+   "severidad": "media",
+   "celda": "plan-financiero-panaderia.xlsx!Instrucciones!B30 = «Mas de 3 anos» (de 'Tesoreria 12 meses'!B31) frente a Instrucciones!B61 = «24-36 meses», misma hoja",
+   "hallazgo": "El bloque «CIFRAS DE ESTE PLAN» y el bloque «DATOS DE REFERENCIA DEL SECTOR» de la MISMA hoja se contradicen a 30 filas de distancia. B30 «Payback del proyecto (anos)» evalua a la cadena «Mas de 3 anos» (pycel), mientras B61 «Retorno de la inversion» publica «24-36 meses» como dato del propio producto. Los flujos leidos lo confirman: 'Tesoreria 12 meses'!B26 = 53.386,06 · B27 = 21.232,95 · B28 = 24.838,96, acumulado a 3 anos 99.457,97 EUR frente a B30 «Inversion a recuperar» = 169.281,33 EUR (y 106.850,00 EUR de CAPEX: tampoco se cubre). Ademas la celda Instrucciones!B30 tiene formato numerico «#,##0.0» y contiene texto. Y la comparacion mezcla magnitudes: el numerador B26 incluye el efecto del IVA y del desfase de pago a proveedor, y el denominador incluye 43.615,33 EUR de fondo de maniobra (que no se consume) y 18.816,00 EUR de IVA (que se recupera via 303).",
+   "fix": "Decidir cual de los dos numeros es el bueno y hacer que el otro salga de el. O bien (a) recalibrar el caso base hasta que el payback caiga dentro de 24-36 meses, o (b) — mas honesto — reescribir Instrucciones!B61 como «36-60 meses» con nota de que la inversion en obrador (horno, amasadora, camaras) alarga el retorno frente a una cafeteria, que es lo que ya dice D61. Y cambiar el denominador de 'Tesoreria 12 meses'!B30 a CAPEX ('Inversion Inicial'!B32), no a la necesidad total de caja, para no exigir recuperar el colchon ni el IVA deducible."
+  },
+  {
+   "id": "REF-08",
+   "severidad": "media",
+   "celda": "plan-financiero-panaderia.xlsx!'PyG 3 Anos'!A10/F10 · '0. Supuestos'!B4/C4 · '0. Supuestos'!B58 = 0 (C58) · checklist F1!E11, F3!B11",
+   "hallazgo": "El canal MAYORISTA se afirma en ocho sitios del producto y no esta modelado en ninguno. 'PyG 3 Anos'!A10 se titula «Ventas de pan, bolleria y mayorista (obrador + reparto HORECA)» y F10 lo justifica; el checklist crea tramites propios por el (F1!E11 el aviso de RGSEAA, F1!E15 Veri*factu, F3!B11 «Evaluar canal mayorista»); '0. Supuestos'!C7 dice «Segundo ano con el canal mayorista ya consolidado». Pero el motor de ingresos es UNO solo: transacciones/dia x ticket x dias ('PyG 3 Anos'!B9 = 180 x 5,50 x 310), de modo que un reparto a un hotel se contabiliza como una transaccion de mostrador de 5,50 EUR. Y el riesgo de caja va al reves de lo declarado: '0. Supuestos'!B58 «Dias medios de cobro» = 0 con la nota C58 «En barra y sala se cobra al contado (0 dias)» — un restaurante o un hotel paga a 30-60 dias, que es exactamente el circulante que este plan no dota. Ningun escenario ni la Tesoreria tienen una sola celda para el B2B.",
+   "fix": "O se modela o se retira. Minimo defendible: anadir en '0. Supuestos' «Peso del canal mayorista sobre las ventas (%)» y «Dias medios de cobro del canal mayorista» y hacer que '0. Supuestos'!B58 sea el promedio ponderado de 0 dias (mostrador) y ese plazo, para que la Tesoreria refleje el desfase. Si no se modela, quitar «mayorista» del rotulo de 'PyG 3 Anos'!A10 y del resto de notas y dejarlo solo como oportunidad en el checklist."
+  },
+  {
+   "id": "REF-09",
+   "severidad": "media",
+   "celda": "plan-financiero-panaderia.xlsx!'Tesoreria 12 meses'!E19 = -18.127,92 EUR · H19 = -15.944,26 EUR · K19 = -13.917,15 EUR",
+   "hallazgo": "Semaforo INVERTIDO: tres celdas rojas en el caso base por una situacion que la propia hoja califica de normal. Regla CF leida del fichero: AND(ISNUMBER(E19),E19<0) con relleno FFC7CE (rojo) y AND(ISNUMBER(E19),E19>0) con C6EFCE (verde), sobre la fila A19 «Resultado de la liquidacion trimestral». La nota O19 de esa misma fila dice: «En negativo NO se paga: se compensa en el trimestre siguiente». Es decir, el rojo marca el trimestre en que el negocio NO tiene que pagar IVA — y como el IVA de la inversion (18.816,00 EUR) se arrastra todo el ano, los tres trimestres del cuadro salen negativos: 'Tesoreria 12 meses'!N20 «Pago del IVA» = 0,00 EUR. Un libro que pinta en rojo su unico ano sin pago de IVA le da al banco una senal falsa.",
+   "fix": "En `grupo_a.py`, para la fila de liquidacion trimestral usar un semaforo NEUTRO (sin relleno para el negativo, o azul/gris «a compensar») y reservar el rojo para el caso en que el pago del modelo 303 (fila A20) supere el saldo de caja del mes. Verificar despues 0 celdas rojas en E19:K19 del caso base."
+  },
+  {
+   "id": "REF-10",
+   "severidad": "media",
+   "celda": "plan-financiero-panaderia.xlsx!'Punto Equilibrio'!C24 = 0,1332 frente a '0. Supuestos'!B67 = 0,15",
+   "hallazgo": "El ano 2 no llega al suelo de holgura que fija el propio libro. Valores pycel: B24 = 0,1672 (verde) · C24 = 0,1332 · D24 = 0,1768 (verde). Las tres reglas CF leidas del fichero son AND(ISNUMBER(B24),B24<0) → FFC7CE, AND(ISNUMBER(B24),B24>=0) → FFEB9C (ambar) y AND(ISNUMBER(B24),B24>='0. Supuestos'!$B$67) → C6EFCE (verde): con 0,1332 la ultima no casa, asi que el ano 2 se entrega en AMBAR. La causa es mecanica y esta en el propio modelo: el ano 2 sale de carencia y el «Punto Equilibrio de caja» le suma de golpe 17.203,52 EUR de principal ('Financiacion'!B47) que en el ano 1 valian 0, mientras los ingresos solo suben un 10 %. El constructor no lo menciona: su lista de 5 ratios verdes son 5 de los 9 semaforos del libro y todos del ano 1.",
+   "fix": "Suavizar el escalon: subir '0. Supuestos'!B34 «Carencia de principal» de 1 a 2 anos (el libro ya admite carencia y el plazo son 7), o subir el crecimiento del ano 2 dentro de lo defendible, hasta que C24 >= 0,15. Verificar los tres anos en verde y que Financiacion!B52 (DSCR ano 2, hoy 2,08) siga por encima de B66 = 1,25."
+  },
+  {
+   "id": "REF-11",
+   "severidad": "media",
+   "celda": "plan-financiero-panaderia.xlsx!'0. Supuestos'!B45 = 8 y su propia nota C45",
+   "hallazgo": "La celda incumple el limite que ella misma cita. '0. Supuestos'!B45 «Vida util de maquinaria y mobiliario (anos)» = 8, y C45 dice textualmente: «Horno, amasadora, divisora, camaras y vitrina. Coeficiente lineal maximo del art. 12.1 LIS: 12 % maquinaria — por debajo de 8 anos el exceso no es deducible». Amortizar en 8 anos es amortizar al 12,5 % anual, que YA supera el 12 % maximo: el umbral correcto es 1/0,12 = 8,34 anos, es decir 9 anos en numeros enteros. Con la base 'Inversion Inicial'!B37 = 47.000,00 EUR, la cuota de esa linea es 5.875,00 EUR/ano frente a los 5.640,00 EUR deducibles: 235,00 EUR/ano de exceso no deducible que el plan presenta como gasto fiscal, los tres anos. La nota, ademas, ensena al comprador un umbral equivocado.",
+   "fix": "Poner '0. Supuestos'!B45 = 9 (o 10, alineado con obra) y corregir C45 a «por debajo de 9 anos el exceso no es deducible (12 % anual maximo, art. 12.1 LIS)». Efecto: 'Inversion Inicial'!B38 baja de 9.575,00 a 8.922,22 EUR y sube el resultado; re-verificar 'PyG 3 Anos'!B56 >= 0,05 y el payback."
+  },
+  {
+   "id": "REF-12",
+   "severidad": "media",
+   "celda": "auditorias/planes-v2-hermano-plan-negocio-panaderia.json → bloques `caso_base` y `hallazgos_nuevos_propios_de_este_hermano` (PAN-10)",
+   "hallazgo": "Tres cifras del informe del constructor no salen del fichero que produce. (a) «facturacion ano 1 = 307.050 EUR»: el valor real es 'PyG 3 Anos'!B9 = 306.900,00 EUR (180 x 5,50 x 310). (b) «resultado neto positivo los 3 anos (2.229,41 / 12.995,44 / 18.520,29)»: los valores reales son 'PyG 3 Anos'!B48 = 16.653,07 · C48 = 28.861,47 · D48 = 33.499,68 EUR — la terna publicada corresponde a la calibracion ABANDONADA de 165 transacciones/dia (la misma que sobrevive en Instrucciones!C36, REF-03), asi que el bloque `caso_base` mezcla dos ejecuciones distintas: el ratio r_neto 5,43 % es de la de 180 y los resultados netos de la de 165. (c) PAN-10 cita como evidencia «'PyG 3 Anos'!A9 'Mayorista', 20.000-43.000 EUR/ano en el caso base»: en el fichero producido A9 es «INGRESOS TOTALES (sin IVA)», no existe ninguna fila «Mayorista» y la cadena «20.000» no aparece en ningun xlsx del producto.",
+   "fix": "Rehacer el bloque `caso_base` leyendo los valores del xlsx producido con pycel en la misma pasada que lo genera (no a mano), y borrar de PAN-10 la cita de celda inexistente. Regla de tanda: ninguna cifra del informe se teclea; todas se vuelcan del evaluador."
+  },
+  {
+   "id": "REF-13",
+   "severidad": "media",
+   "celda": "astro-site/public/dl/plan-negocio-panaderia/plan-de-negocio-panaderia.docx (word/document.xml y docProps/core.xml)",
+   "hallazgo": "El tercer fichero de la carpeta que se entrega al cliente contradice a los otros dos y sigue en v1.1. Leido del docx: `<w:pgSz w:w=\"12240\" w:h=\"15840\"/>` = tamano CARTA (8,5 x 11 pulgadas), no A4 (11906 x 16838); `<dc:creator>python-docx</dc:creator>` y `<dc:description>generated by python-docx</dc:description>`; el cuerpo dice «las proyecciones financieras para el primer ano de actividad preven una facturacion cercana a los 200.000 euros» frente a los 306.900,00 EUR del xlsx (un 53 % de diferencia) y «el ayudante y la dependienta oscilan entre 1.100 y 1.200 euros» frente a Personal!D7 = D8 = 1.235 EUR. El constructor lo declara pendiente de T9, pero el gate de A4/metadata de §9 solo mira los 2 xlsx: la carpeta que se descarga HOY tiene dos ficheros v2.0 y uno v1.1 que se contradicen entre si.",
+   "fix": "O T9 entra en esta misma tanda para el docx, o el producto no se publica como v2.0. Y ampliar el gate de §9 (A4 + metadata + bio + version) a los .docx de la carpeta, no solo a los .xlsx: hoy un docx en Carta con author python-docx pasa el gate sin un aviso."
+  },
+  {
+   "id": "REF-14",
+   "severidad": "baja",
+   "celda": "checklist-apertura-panaderia.xlsx!F6!E8 = «Potenciar lo que mas se vende»",
+   "hallazgo": "Sobrevive una errata de tilde con el gate de ortografia de §9 en 0 y con TEC-15 declarado «resuelto: ortografia 0 tras barrido programatico de 545 tokens unicos». «mas» va con tilde (comparativo), y el mismo par de ficheros escribe «Mas» correctamente acentuado en Instrucciones!A65, Instrucciones!A9 del checklist, Instrucciones!D61 y 'Tesoreria 12 meses'!B31. El barrido del constructor no lo caza porque `TILDES`/`TILDES_EXTRA` de `motor.py` es una lista de palabras y «mas» no puede estar en ella sin romper «mas o menos» — pero eso significa que la afirmacion «0 palabras sin tilde» no esta demostrada, solo que 0 palabras de la lista lo estan.",
+   "fix": "Corregir F6!E8 en `contenido_plan_negocio_panaderia/a.py`: «Potenciar lo que mas se vende» debe llevar tilde en «mas» (comparativo). Y bajar la afirmacion del informe: el gate de ortografia solo prueba las palabras de su diccionario, no la ausencia de erratas — el barrido que caza esta es cruzar cada token con su version sin diacriticos y marcar los que aparecen en el corpus con tilde Y sin ella."
+  },
+  {
+   "id": "REF-15",
+   "severidad": "baja",
+   "celda": "plan-financiero-panaderia.xlsx!Personal!B22",
+   "hallazgo": "Unica celda que no queda en blanco al vaciar el libro. Prueba hecha: copia del xlsx con las 151 celdas desbloqueadas (verdes) vaciadas y reevaluada con pycel — las 46 celdas de control comprobadas devuelven cadena vacia salvo Personal!B22 «Horas de servicio a cubrir al ano», que devuelve 0 con formato «#,##0», asi que el libro en blanco ensena un «0» suelto. La formula es `=IFERROR(B20*B21*'0. Supuestos'!$B$6,\"\")`, la unica del bloque sin la guarda `IF(...=\"\",\"\",...)` que llevan sus vecinas.",
+   "fix": "En `grupo_a.py`, envolver esa formula igual que las demas: `=IFERROR(IF(OR(B20=\"\",B21=\"\",'0. Supuestos'!$B$6=\"\"),\"\",B20*B21*'0. Supuestos'!$B$6),\"\")`. Re-correr la prueba de libro en blanco: 0 celdas con valor."
+  },
+  {
+   "id": "REF-16",
+   "severidad": "baja",
+   "celda": "plan-financiero-panaderia.xlsx!Instrucciones!C50:C61 (columna «Fuente»)",
+   "hallazgo": "Las doce referencias de sector que el libro publica como «DATOS DE REFERENCIA DEL SECTOR» declaran en su columna «Fuente» el texto «Fichero v1.1» — es decir, la version anterior de este mismo fichero. Es circular: food cost del pan 25-30 %, food cost de bolleria 32-38 %, coste de personal 35-42 %, alquiler 10-14 %, ticket 3-6 EUR, merma 5-10 %, EBITDA 10-18 % y retorno 24-36 meses se presentan al comprador como datos del sector sin ninguna fuente externa. Y esos mismos valores son los umbrales contra los que el libro se auto-aprueba: 'PyG 3 Anos'!E51:E56 sale de ahi, y Instrucciones!D17:D21 imprime «CUMPLE» cinco veces contra ellos. El caso base cumple los umbrales que el propio caso base define.",
+   "fix": "O se cita una fuente externa por fila (informe sectorial, convenio, estadistica publica) o se rotula la columna como «Origen: version anterior del propio kit — contrastar con tu zona», que es lo que realmente es. Decision de John si se contrata research; mientras tanto, no llamar «Fuente» a la autorreferencia."
+  },
+  {
+   "id": "REF-17",
+   "severidad": "baja",
+   "celda": "plan-financiero-panaderia.xlsx!Personal!J20, J21 · 'Punto Equilibrio'!E25 · '0. Supuestos'!C50",
+   "hallazgo": "Vocabulario del molde de restaurante sin adaptar en un obrador con tienda: Personal!J20 «De la apertura al cierre, barra incluida», J21 «Media de presencia simultanea entre cocina, barra y sala. En los dos servicios fuertes hara falta mas y a media tarde menos», 'Punto Equilibrio'!E25 «Servicios completos por plaza y dia», '0. Supuestos'!C50 «El documento de este plan pide un MINIMO de 1,8 rotaciones por mesa y servicio en temporada alta». Este producto no tiene barra, ni sala, ni mesas, ni «dos servicios fuertes»: tiene obrador, mostrador y un rincon de 15 plazas que la propia C51 describe como marginal. Es el mismo defecto que PAN-07 corrigio en Instrucciones (texto molde-consciente) y que aqui no se corrigio.",
+   "fix": "Parametrizar esos cuatro textos por molde en `grupo_a.py` (como ya se hizo con los nombres de hoja en PAN-07) y darle a panaderia su version: «obrador y mostrador», «presencia simultanea entre obrador y tienda», «transacciones por hora punta». Barrido: grep de «barra|sala|cubierto|mesa|servicio fuerte» en los 2 xlsx del hermano."
+  },
+  {
+   "id": "REF-18",
+   "severidad": "baja",
+   "celda": "plan-financiero-panaderia.xlsx!'PyG 3 Anos'!B57, C57, D57",
+   "hallazgo": "Guarda duplicada en una formula generada: `=IFERROR(IF(B9=\"\",\"\",IF(B9=\"\",\"\",IF(B9>='Punto Equilibrio'!$B$16,\"Si\",\"No\"))),\"\")` — el `IF(B9=\"\",\"\",...)` aparece dos veces anidado en las tres columnas. No cambia el resultado (evaluado: «Si» en los tres anos) pero delata que el post-proceso volvio a envolver una formula que ya venia envuelta; en una celda donde la guarda interna no fuera identica a la externa, el segundo envoltorio se comeria el operando correcto.",
+   "fix": "En `motor.f()`/`grupo_a.py`, detectar que el CUERPO ya empieza por `IF(<misma celda>=\"\",\"\",` antes de anadir la guarda. Barrido de comprobacion: 0 formulas del libro con la subcadena `IF(B9=\"\",\"\",IF(B9=\"\",\"\",` (hoy 3)."
+  }
+ ]
+}
