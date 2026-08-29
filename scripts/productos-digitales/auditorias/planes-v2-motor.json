@@ -1,0 +1,1031 @@
+{
+ "rol": "constructor del MOTOR de la familia Planes v2.0 (T1, §1 entero + main.py)",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md — cabecera, convenciones, §1.1-§1.10, §7-bis 1-22, §9",
+ "fecha": "2026-08-29T04:25:45",
+ "modo": "TODO en --dry-run sobre copias del scratchpad; astro-site/public/dl/** NO se ha modificado (git status limpio en dl/)",
+ "ficheros_entregados": [
+  "scripts/productos-digitales/planes-v2_0/motor.py",
+  "scripts/productos-digitales/planes-v2_0/main.py"
+ ],
+ "como_se_ejecuta": "CLAUDE_SCRATCHPAD=<scratchpad> python3 scripts/productos-digitales/planes-v2_0/main.py --producto <pid> --dry-run [--solo motor|a|b|c] --json <informe.json>  ·  exit 0 verde · 1 fallos · 2 molde no reconocido (aborta) · sin --dry-run aborta salvo PLANES_APPLY=1, y con PLANES_APPLY=1 hace respaldo previo en $CLAUDE_SCRATCHPAD/respaldos/<pid>.bak-<fecha>",
+ "prueba_exigida_por_el_encargo": {
+  "dry_run_solo_motor_exit_0": true,
+  "idempotencia_0_representante_A_bar_restaurante": 0,
+  "idempotencia_0_tapas_bar_A_beta": 0,
+  "idempotencia_0_cocteleria_B_gamma": 0,
+  "idempotencia_0_paellero_B_delta": 0,
+  "ademas_verificados_los_10_productos": [
+   "plan-catering-tematico-eventos",
+   "plan-chef-privado-showcooking-eventos",
+   "plan-negocio-bar-restaurante",
+   "plan-negocio-cafeteria",
+   "plan-negocio-cocteleria-eventos",
+   "plan-negocio-food-truck",
+   "plan-negocio-paellero-eventos",
+   "plan-negocio-panaderia",
+   "plan-negocio-parrillero-asador-eventos",
+   "plan-negocio-tapas-bar"
+  ],
+  "productos_con_exit_distinto_de_0": []
+ },
+ "deteccion_de_moldes_§1_1": {
+  "xlsx_clasificados": 30,
+  "por_molde": {
+   "A-alfa": 1,
+   "A-beta": 4,
+   "B-delta": 3,
+   "B-gamma": 2,
+   "C1": 1,
+   "C2": 5,
+   "C3": 1,
+   "C4": 3,
+   "P1": 2,
+   "P2": 3,
+   "calc-beta": 2,
+   "calc-gamma": 3
+  },
+  "aborta_si_no_reconoce": "probado con un xlsx inventado ('Hoja Rara') → exit 2 y el informe lleva 'abortado' con el nombre del fichero",
+  "nota": "el censo-base.json daba NO_RECONOCIDO a los dos B-gamma y NO_CLASIFICADO a 5 checklists; el motor los clasifica los 30. La firma se compara NORMALIZADA (sin tildes) porque el propio §1.7 renombra 'PyG 3 Anos' → 'PyG 3 Años' y la 2.ª pasada tiene que reconocer el mismo molde"
+ },
+ "resultado_por_producto": {
+  "plan-catering-tematico-eventos": {
+   "exit": 0,
+   "moldes": {
+    "calculadora-pricing-catering-tematico-eventos.xlsx": "calculadora/calc-gamma",
+    "checklist-apertura-catering-tematico-eventos.xlsx": "checklist/C4",
+    "plan-financiero-catering-tematico-eventos.xlsx": "plan_financiero/B-delta",
+    "plantilla-proveedores-catering-tematico-eventos.xlsx": "proveedores/P2"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 23,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 23,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "calculadora-pricing-catering-tematico-eventos.xlsx",
+     "salida": "calculadora-pricing-catering-tematico-eventos.xlsx: formulas=16 cache_inyectado=16 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+     "salida": "checklist-apertura-catering-tematico-eventos.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-catering-tematico-eventos.xlsx",
+     "salida": "plan-financiero-catering-tematico-eventos.xlsx: formulas=134 cache_inyectado=134 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plantilla-proveedores-catering-tematico-eventos.xlsx",
+     "salida": "plantilla-proveedores-catering-tematico-eventos.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [
+    "plantilla-proveedores-catering-tematico-eventos.xlsx"
+   ],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+     "molde": "C4",
+     "items_con_desplegable": 108,
+     "rangos_dv": 108
+    }
+   ],
+   "formatos_corregidos": 200,
+   "ortografia_corregida": 0,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "6/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "calculadora-pricing-catering-tematico-eventos.xlsx:Calculadora pricing: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "calculadora-pricing-catering-tematico-eventos.xlsx:10 ejemplos validados: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-catering-tematico-eventos.xlsx:P&L Año 1: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-catering-tematico-eventos.xlsx:Proyección 3 años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-catering-tematico-eventos.xlsx:Break-even: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-catering-tematico-eventos.xlsx:Mix B2C-B2B: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-catering-tematico-eventos.xlsx:KPIs: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plantilla-proveedores-catering-tematico-eventos.xlsx:96 proveedores: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "12-conceptos-tematicos-pre-empaquetados.docx",
+    "carta-12-menus-tematicos-cocinas-mundo.docx",
+    "catalogo-equipamiento-multi-cocina-catering-tematico.docx",
+    "guia-especializacion-catering-tematico-multi-concepto.docx",
+    "manual-tecnico-multi-cocina-appcc-catering.docx",
+    "modelos-contrato-catering-tematico-b2c-b2b.docx",
+    "plan-de-negocio-catering-tematico-eventos.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§9 «0 xlsx con 0 fórmulas»: siguen sin fórmula 1 (plantilla-proveedores-catering-tematico-eventos.xlsx)",
+    "§1.3: 8 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 7 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-chef-privado-showcooking-eventos": {
+   "exit": 0,
+   "moldes": {
+    "calculadora-pricing-chef-privado-showcooking.xlsx": "calculadora/calc-gamma",
+    "checklist-apertura-chef-privado-showcooking.xlsx": "checklist/C4",
+    "plan-financiero-chef-privado-showcooking.xlsx": "plan_financiero/B-delta",
+    "plantilla-proveedores-chef-privado-showcooking.xlsx": "proveedores/P2"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 19,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 19,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "calculadora-pricing-chef-privado-showcooking.xlsx",
+     "salida": "calculadora-pricing-chef-privado-showcooking.xlsx: formulas=15 cache_inyectado=15 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+     "salida": "checklist-apertura-chef-privado-showcooking.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-chef-privado-showcooking.xlsx",
+     "salida": "plan-financiero-chef-privado-showcooking.xlsx: formulas=130 cache_inyectado=130 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plantilla-proveedores-chef-privado-showcooking.xlsx",
+     "salida": "plantilla-proveedores-chef-privado-showcooking.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [
+    "plantilla-proveedores-chef-privado-showcooking.xlsx"
+   ],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+     "molde": "C4",
+     "items_con_desplegable": 104,
+     "rangos_dv": 104
+    }
+   ],
+   "formatos_corregidos": 183,
+   "ortografia_corregida": 0,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "6/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "calculadora-pricing-chef-privado-showcooking.xlsx:Calculadora pricing: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "calculadora-pricing-chef-privado-showcooking.xlsx:10 ejemplos validados: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-chef-privado-showcooking.xlsx:P&L Año 1: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-chef-privado-showcooking.xlsx:Proyección 3 años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-chef-privado-showcooking.xlsx:Break-even: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-chef-privado-showcooking.xlsx:Mix B2C-B2B: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-chef-privado-showcooking.xlsx:KPIs: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plantilla-proveedores-chef-privado-showcooking.xlsx:96 proveedores: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "10-experiencias-tematicas-chef-privado-showcooking.docx",
+    "carta-12-menus-tematicos-chef-privado.docx",
+    "catalogo-equipamiento-cuchilleria-vajilla-chef-privado.docx",
+    "guia-sistemas-chef-privado-personal-chef-caterer.docx",
+    "manual-tecnico-servicio-domicilio-appcc.docx",
+    "modelos-contrato-chef-privado-b2c-b2b.docx",
+    "plan-de-negocio-chef-privado-showcooking.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§9 «0 xlsx con 0 fórmulas»: siguen sin fórmula 1 (plantilla-proveedores-chef-privado-showcooking.xlsx)",
+    "§1.3: 8 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 7 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-bar-restaurante": {
+   "exit": 0,
+   "moldes": {
+    "checklist-apertura-bar-restaurante.xlsx": "checklist/C1",
+    "plan-financiero-bar-restaurante.xlsx": "plan_financiero/A-alfa"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 8,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 8,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "checklist-apertura-bar-restaurante.xlsx",
+     "salida": "checklist-apertura-bar-restaurante.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-bar-restaurante.xlsx",
+     "salida": "plan-financiero-bar-restaurante.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-bar-restaurante.xlsx",
+     "molde": "C1",
+     "items_con_desplegable": 50,
+     "rangos_dv": 50
+    }
+   ],
+   "formatos_corregidos": 65,
+   "ortografia_corregida": 150,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "5/9",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-bar-restaurante.xlsx:4. Escenarios: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-bar-restaurante.xlsx:5. Personal: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "plan-de-negocio-bar-restaurante.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§1.3: 4 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-cafeteria": {
+   "exit": 0,
+   "moldes": {
+    "checklist-apertura-cafeteria-brunch.xlsx": "checklist/C2",
+    "plan-financiero-cafeteria-brunch.xlsx": "plan_financiero/A-beta"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 26,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 26,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "checklist-apertura-cafeteria-brunch.xlsx",
+     "salida": "checklist-apertura-cafeteria-brunch.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-cafeteria-brunch.xlsx",
+     "salida": "plan-financiero-cafeteria-brunch.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-cafeteria-brunch.xlsx",
+     "molde": "C2",
+     "items_con_desplegable": 65,
+     "rangos_dv": 65
+    }
+   ],
+   "formatos_corregidos": 23,
+   "ortografia_corregida": 157,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "9/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "plan-financiero-cafeteria-brunch.xlsx:Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cafeteria-brunch.xlsx:PyG 3 Años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cafeteria-brunch.xlsx:Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cafeteria-brunch.xlsx:Escenarios: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cafeteria-brunch.xlsx:Personal: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "plan-de-negocio-cafeteria-brunch.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§1.3: 5 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-cocteleria-eventos": {
+   "exit": 0,
+   "moldes": {
+    "calculadora-pricing-eventos.xlsx": "calculadora/calc-beta",
+    "checklist-apertura-cocteleria-eventos.xlsx": "checklist/C2",
+    "plan-financiero-cocteleria-eventos.xlsx": "plan_financiero/B-gamma",
+    "plantilla-proveedores-cocteleria-eventos.xlsx": "proveedores/P1"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 26,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 26,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "calculadora-pricing-eventos.xlsx",
+     "salida": "calculadora-pricing-eventos.xlsx: formulas=13 cache_inyectado=13 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+     "salida": "checklist-apertura-cocteleria-eventos.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+     "salida": "plan-financiero-cocteleria-eventos.xlsx: formulas=10 cache_inyectado=10 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "salida": "plantilla-proveedores-cocteleria-eventos.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [
+    "plantilla-proveedores-cocteleria-eventos.xlsx"
+   ],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+     "molde": "C2",
+     "items_con_desplegable": 71,
+     "rangos_dv": 71
+    }
+   ],
+   "formatos_corregidos": 87,
+   "ortografia_corregida": 311,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [
+    {
+     "hoja": "PyG 3 Anos",
+     "celda": "E18",
+     "rotulo": "TOTAL COSTES VARIABLES",
+     "valor_tecleado": 0.58,
+     "suma_de_partidas": 0.52,
+     "diferencia": 0.06,
+     "formula_propuesta": "=SUM(E13:E16)"
+    }
+   ],
+   "hojas_protegidas": "21/28",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "calculadora-pricing-eventos.xlsx:Calculadora: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "calculadora-pricing-eventos.xlsx:Ejemplos: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cocteleria-eventos.xlsx:Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cocteleria-eventos.xlsx:PyG 3 Años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cocteleria-eventos.xlsx:Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cocteleria-eventos.xlsx:Escenarios: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-cocteleria-eventos.xlsx:Personal Freelance: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "carta-15-cocktails-tematicos.docx",
+    "catalogo-10-experiencias-tematicas.docx",
+    "catalogo-equipamiento-cocteleria-eventos.docx",
+    "modelo-contrato-cocteleria-eventos.docx",
+    "plan-de-negocio-cocteleria-eventos.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§9 «0 xlsx con 0 fórmulas»: siguen sin fórmula 1 (plantilla-proveedores-cocteleria-eventos.xlsx)",
+    "§1.3: 7 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 5 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-food-truck": {
+   "exit": 0,
+   "moldes": {
+    "checklist-apertura-food-truck.xlsx": "checklist/C2",
+    "plan-financiero-food-truck.xlsx": "plan_financiero/A-beta"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 26,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 26,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "checklist-apertura-food-truck.xlsx",
+     "salida": "checklist-apertura-food-truck.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-food-truck.xlsx",
+     "salida": "plan-financiero-food-truck.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-food-truck.xlsx",
+     "molde": "C2",
+     "items_con_desplegable": 59,
+     "rangos_dv": 59
+    }
+   ],
+   "formatos_corregidos": 17,
+   "ortografia_corregida": 111,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "9/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "plan-financiero-food-truck.xlsx:Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-food-truck.xlsx:PyG 3 Años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-food-truck.xlsx:Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-food-truck.xlsx:Escenarios: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-food-truck.xlsx:Personal: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "plan-de-negocio-food-truck.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§1.3: 5 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-paellero-eventos": {
+   "exit": 0,
+   "moldes": {
+    "calculadora-pricing-eventos-paellero.xlsx": "calculadora/calc-gamma",
+    "checklist-apertura-paellero-eventos.xlsx": "checklist/C4",
+    "plan-financiero-paellero-eventos.xlsx": "plan_financiero/B-delta",
+    "plantilla-proveedores-paellero-eventos.xlsx": "proveedores/P2"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 17,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 17,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "calculadora-pricing-eventos-paellero.xlsx",
+     "salida": "calculadora-pricing-eventos-paellero.xlsx: formulas=15 cache_inyectado=15 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "checklist-apertura-paellero-eventos.xlsx",
+     "salida": "checklist-apertura-paellero-eventos.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-paellero-eventos.xlsx",
+     "salida": "plan-financiero-paellero-eventos.xlsx: formulas=128 cache_inyectado=128 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plantilla-proveedores-paellero-eventos.xlsx",
+     "salida": "plantilla-proveedores-paellero-eventos.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [
+    "plantilla-proveedores-paellero-eventos.xlsx"
+   ],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-paellero-eventos.xlsx",
+     "molde": "C4",
+     "items_con_desplegable": 104,
+     "rangos_dv": 104
+    }
+   ],
+   "formatos_corregidos": 192,
+   "ortografia_corregida": 0,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "6/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "calculadora-pricing-eventos-paellero.xlsx:Calculadora pricing: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "calculadora-pricing-eventos-paellero.xlsx:10 ejemplos validados: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-paellero-eventos.xlsx:P&L Año 1: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-paellero-eventos.xlsx:Proyección 3 años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-paellero-eventos.xlsx:Break-even: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-paellero-eventos.xlsx:Mix B2C-B2B: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-paellero-eventos.xlsx:KPIs: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plantilla-proveedores-paellero-eventos.xlsx:96 proveedores: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "10-experiencias-tematicas-paellero.docx",
+    "carta-12-paellas-arroces.docx",
+    "catalogo-equipamiento-utensilios-menaje-paellero.docx",
+    "guia-tipos-paellero-roadmap-food-truck.docx",
+    "manual-tecnico-paellero-profesional.docx",
+    "modelos-contrato-paellero-eventos.docx",
+    "plan-de-negocio-paellero-eventos.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§9 «0 xlsx con 0 fórmulas»: siguen sin fórmula 1 (plantilla-proveedores-paellero-eventos.xlsx)",
+    "§1.3: 8 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 7 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-panaderia": {
+   "exit": 0,
+   "moldes": {
+    "checklist-apertura-panaderia.xlsx": "checklist/C2",
+    "plan-financiero-panaderia.xlsx": "plan_financiero/A-beta"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 26,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 26,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "checklist-apertura-panaderia.xlsx",
+     "salida": "checklist-apertura-panaderia.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-panaderia.xlsx",
+     "salida": "plan-financiero-panaderia.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-panaderia.xlsx",
+     "molde": "C2",
+     "items_con_desplegable": 56,
+     "rangos_dv": 56
+    }
+   ],
+   "formatos_corregidos": 23,
+   "ortografia_corregida": 102,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "9/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "plan-financiero-panaderia.xlsx:Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-panaderia.xlsx:PyG 3 Años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-panaderia.xlsx:Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-panaderia.xlsx:Escenarios: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-panaderia.xlsx:Personal: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "plan-de-negocio-panaderia.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§1.3: 5 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-parrillero-asador-eventos": {
+   "exit": 0,
+   "moldes": {
+    "calculadora-pricing-eventos-parrillero.xlsx": "calculadora/calc-beta",
+    "checklist-apertura-parrillero-asador-eventos.xlsx": "checklist/C3",
+    "plan-financiero-parrillero-asador-eventos.xlsx": "plan_financiero/B-gamma",
+    "plantilla-proveedores-parrillero-asador-eventos.xlsx": "proveedores/P1"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 22,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 22,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "calculadora-pricing-eventos-parrillero.xlsx",
+     "salida": "calculadora-pricing-eventos-parrillero.xlsx: formulas=15 cache_inyectado=15 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "checklist-apertura-parrillero-asador-eventos.xlsx",
+     "salida": "checklist-apertura-parrillero-asador-eventos.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-parrillero-asador-eventos.xlsx",
+     "salida": "plan-financiero-parrillero-asador-eventos.xlsx: formulas=30 cache_inyectado=30 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plantilla-proveedores-parrillero-asador-eventos.xlsx",
+     "salida": "plantilla-proveedores-parrillero-asador-eventos.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [
+    "plantilla-proveedores-parrillero-asador-eventos.xlsx"
+   ],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-parrillero-asador-eventos.xlsx",
+     "molde": "C3",
+     "items_con_desplegable": 93,
+     "rangos_dv": 93
+    }
+   ],
+   "formatos_corregidos": 224,
+   "ortografia_corregida": 211,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "20/28",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "calculadora-pricing-eventos-parrillero.xlsx:Calculadora: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "calculadora-pricing-eventos-parrillero.xlsx:Ejemplos: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-parrillero-asador-eventos.xlsx:Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-parrillero-asador-eventos.xlsx:PyG 3 Años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-parrillero-asador-eventos.xlsx:Estacionalidad: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-parrillero-asador-eventos.xlsx:Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-parrillero-asador-eventos.xlsx:Pricing Modelo: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plantilla-proveedores-parrillero-asador-eventos.xlsx:Índice: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "10-experiencias-tematicas-eventos.docx",
+    "carta-12-cortes-carne.docx",
+    "catalogo-equipamiento-utensilios-menaje.docx",
+    "guia-tipos-parrilla-roadmap-food-truck.docx",
+    "manual-tecnico-parrillero-profesional.docx",
+    "modelos-contrato-parrillero-asador-eventos.docx",
+    "plan-de-negocio-parrillero-asador-eventos.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§9 «0 xlsx con 0 fórmulas»: siguen sin fórmula 1 (plantilla-proveedores-parrillero-asador-eventos.xlsx)",
+    "§1.3: 8 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 7 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  },
+  "plan-negocio-tapas-bar": {
+   "exit": 0,
+   "moldes": {
+    "checklist-apertura-tapas-bar.xlsx": "checklist/C2",
+    "plan-financiero-tapas-bar.xlsx": "plan_financiero/A-beta"
+   },
+   "idempotencia_diferencias": 0,
+   "formulas_nuevas": 26,
+   "formulas_perdidas": 0,
+   "cache_data_only": {
+    "con_valor": 26,
+    "vacias_por_diseno": 0,
+    "vacias_comprobadas_con_pycel": 0,
+    "fallos": []
+   },
+   "inject_cache": [
+    {
+     "fichero": "checklist-apertura-tapas-bar.xlsx",
+     "salida": "checklist-apertura-tapas-bar.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+     "exit": 0
+    },
+    {
+     "fichero": "plan-financiero-tapas-bar.xlsx",
+     "salida": "plan-financiero-tapas-bar.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+     "exit": 0
+    }
+   ],
+   "censo_exit": 0,
+   "gate_no_latinos": 0,
+   "gate_ortografia": 0,
+   "gate_formatos": 0,
+   "gate_referencias": 0,
+   "xlsx_sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "sin_instrucciones": [],
+   "hojas_sin_a4": 0,
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-tapas-bar.xlsx",
+     "molde": "C2",
+     "items_con_desplegable": 63,
+     "rangos_dv": 63
+    }
+   ],
+   "formatos_corregidos": 24,
+   "ortografia_corregida": 123,
+   "pseudo_formulas_neutralizadas": 0,
+   "totales_descuadrados": [],
+   "hojas_protegidas": "9/14",
+   "hojas_sin_proteger_por_falta_de_inputs": [
+    "plan-financiero-tapas-bar.xlsx:Inversión Inicial: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-tapas-bar.xlsx:PyG 3 Años: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-tapas-bar.xlsx:Punto Equilibrio: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-tapas-bar.xlsx:Escenarios: sin proteger porque aún no tiene ningún input marcado (§2/§3)",
+    "plan-financiero-tapas-bar.xlsx:Personal: sin proteger porque aún no tiene ningún input marcado (§2/§3)"
+   ],
+   "docx_pendientes": [
+    "plan-de-negocio-tapas-bar.docx"
+   ],
+   "fallos": [],
+   "pendientes": [
+    "§2/§3: sin grupos cargados, el modelo financiero no está construido (0 fórmulas en los libros que sólo tenían constantes es esperable aquí)",
+    "§1.3: 5 hojas de datos quedan SIN proteger porque ningún grupo les ha marcado todavía una celda de input verde (protegerlas ahora las dejaría inservibles)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+   ],
+   "demos_ok": {
+    "anualidad_sin_PMT": true,
+    "tir_van_payback_sin_IRR": true,
+    "countif_sin_COUNTA": true,
+    "iferror_vivo": true,
+    "deteccion_de_moldes": true
+   }
+  }
+ },
+ "totales": {
+  "formulas_nuevas": 219,
+  "formulas_preexistentes_perdidas": 0,
+  "formatos_corregidos_§1_4": 1038,
+  "textos_con_tilde_corregidos_§1_7": 1165,
+  "diferencias_de_idempotencia": 0,
+  "gate_no_latinos": 0,
+  "gate_ortografia": 0,
+  "gate_formatos": 0,
+  "gate_referencias_colgando": 0,
+  "censo_entregables_fail": [
+   0
+  ],
+  "hojas_sin_a4": 0,
+  "hojas_sin_proteger_por_falta_de_inputs": 63
+ },
+ "hallazgos_del_corpus": [
+  {
+   "id": "MOTOR-01",
+   "gravedad": "alta",
+   "donde": "plan-financiero-bar-restaurante.xlsx:'3. Punto Equilibrio'!C14 y C15",
+   "que": "dos NOTAS guardadas como fórmula ('= CF anuales / MC unitario', '= 17950 / 310 dias'). Excel las calcula y devuelve #¿NOMBRE? en la columna de notas de la hoja estrella. El motor las devuelve a texto (neutralizar_pseudoformulas)",
+   "estado": "corregido por el motor"
+  },
+  {
+   "id": "MOTOR-02",
+   "gravedad": "media",
+   "donde": "plan-financiero-cocteleria-eventos.xlsx:'PyG 3 Anos'!E18",
+   "que": "el '% s/VENTAS' de TOTAL COSTES VARIABLES dice 58 % y sus componentes (E13:E16) suman 52 %. El motor NO lo cabla —cablearlo cambiaría la cifra en silencio— y lo deja anotado como descuadre para grupo_b",
+   "estado": "anotado, pendiente de §3 (grupo_b)"
+  },
+  {
+   "id": "MOTOR-03",
+   "gravedad": "media",
+   "donde": "plantillas de proveedores P1 (coctelería y parrillero)",
+   "que": "0 hipervínculos en las 11 hojas; el índice no enlazaba y sus rótulos no coincidían con el nombre de la pestaña. El motor los crea, iguala rótulo↔pestaña y convierte las URLs de texto plano en enlaces",
+   "estado": "corregido por el motor"
+  },
+  {
+   "id": "MOTOR-04",
+   "gravedad": "media",
+   "donde": "los 4 moldes de checklist",
+   "que": "C3 (parrillero) no tenía columna OK aunque su instrucción la nombraba, y C4 (3 productos) la tenía vacía sin DV, sin CF y sin contador. El motor añade columna, desplegable, semáforo y contador con COUNTIF (pycel no implementa COUNTA). Ítems medidos: catering-tematico-eventos.xlsx C4=108, chef-privado-showcooking.xlsx C4=104, bar-restaurante.xlsx C1=50, cafeteria-brunch.xlsx C2=65, cocteleria-eventos.xlsx C2=71, food-truck.xlsx C2=59, paellero-eventos.xlsx C4=104, panaderia.xlsx C2=56, parrillero-asador-eventos.xlsx C3=93, tapas-bar.xlsx C2=63",
+   "estado": "corregido por el motor (§7-bis.21)"
+  },
+  {
+   "id": "MOTOR-05",
+   "gravedad": "baja",
+   "donde": "5 plantillas de proveedores",
+   "que": "siguen con 0 fórmulas tras el motor: no tienen nada que sumar hasta que §3.7 les dé estructura",
+   "estado": "pendiente de grupo_b (§3.7)"
+  },
+  {
+   "id": "MOTOR-06",
+   "gravedad": "media",
+   "donde": "los 38 docx de los 10 productos",
+   "que": "todos siguen en tamaño Carta y con author distinto de 'AI Chef Pro'; el motor sólo los MIDE (solo lectura)",
+   "estado": "pendiente de documentos.py (T9, §4 y §7-bis.15)"
+  },
+  {
+   "id": "MOTOR-07",
+   "gravedad": "alta (evitada)",
+   "donde": "protección de hoja, §1.3, en las 3 calculadoras y las hojas de datos de los planes financieros",
+   "que": "proteger todas las hojas ANTES de que §2/§3 marquen los inputs en verde dejaba 112 hojas completamente bloqueadas: el cliente abría la calculadora y no podía teclear nada. El motor protege sólo las hojas con inputs declarados o de texto puro, y anota el resto como pendiente",
+   "estado": "resuelto en el motor; las hojas pendientes quedan listadas por producto"
+  }
+ ],
+ "bugs_propios_cazados_al_construir": [
+  "neutralizar_pseudoformulas tokenizaba mal '=D6/$D$15' (el '$' partía la referencia) y borró 9 fórmulas de 'Resumen'!E6:E14 en B-delta → se quita el '$' antes de tokenizar y main.py incorpora un gate de 'fórmulas perdidas' que compara el censo de fórmulas antes/después",
+  "la tolerancia fija de 0,50 € daba por buena una suma de 0,52 contra un 0,58 en una columna de porcentajes → tolerancia relativa por debajo de 100",
+  "la suma de 'TOTAL COSTES FIJOS' arrancaba en el total anterior y se tragaba el MARGEN BRUTO → el bloque empieza en su encabezado (_inicio_bloque); pasó de 6 descuadres falsos a 0 y cableó 3 totales más por libro",
+  "la regla de formato miraba sólo el rótulo de fila: 'Personas' de '5. Personal' seguía en euros y 'Vajilla eventos' perdía el euro → la CABECERA DE COLUMNA manda en el eje que ella define",
+  "el renombrado de hojas de §1.7 dejaba los hipervínculos internos apuntando a la pestaña vieja (enlace muerto que Excel no avisa) y los rótulos del índice sin tilde → se reescriben enlaces y rótulos al renombrar",
+  "la ortografía acentuaba el pid dentro de la línea de versión ('cocteleria-eventos') → los slugs se protegen como las URLs",
+  "el desplegable nuevo del checklist convivía con el viejo (dos DV sobre las mismas celdas, recuento inflado) → se purga el anterior",
+  "el contador se escribía sobre el pie COMBINADO del libro (MergedCell de sólo lectura) y se duplicaba en cada pasada → se reutiliza el contador existente o se busca fila libre",
+  "proteger todas las hojas dejaba inservibles las que aún no tienen inputs marcados (112 hojas) → protegible() + pendiente explícito"
+ ],
+ "contrato_para_los_grupos": {
+  "modulos": "grupo_a.py / grupo_b.py / grupo_c.py, hermanos de main.py (aún no existen; main funciona con los que encuentre)",
+  "atributos": [
+   "FICHEROS o ficheros(dets, contenido)",
+   "PROPIOS (ficheros que el grupo construye enteros: el §1 no se les aplica)"
+  ],
+  "ganchos": "pre(...), post(...), demos(carpeta, origen, demos_dir) — se invocan POR NOMBRE de parámetro; disponibles: wb, fname, det, pid, params, cambios, registro, contenido, carpeta",
+  "contenido_por_producto": "planes-v2_0/contenido_<pid con guiones bajos>/a.py|b.py|c.py (módulo por grupo y producto; el contenido va como dict del módulo)",
+  "api_del_motor": [
+   "detectar(wb,fname)",
+   "hoja(wb,nombre) [insensible a tildes]",
+   "parametros(wb,det).ref(clave)",
+   "f/val/iferror/verde/marcar_editable/permitir_negativo",
+   "semaforo_num (con ISNUMBER)/semaforo_texto",
+   "dv_lista/dv_numerica",
+   "cuota_anualidad/tir_newton/van/payback",
+   "inyectar_valor"
+  ],
+  "parametros_que_el_motor_ya_deja_en_celda": {
+   "linea_A": "hoja '0. Supuestos' — B20 SS 33 %, B21 pagas 14, B22 SMI 17.094 € (RD 126/2026), B37 IS 15 % nueva creación, B38 IS 25 %, B39 IVA 10 %, B40 IVA 21 %; los rótulos de bloque de §2.1 quedan escritos para que grupo_a rellene",
+   "linea_B": "bloque 'PARÁMETROS' en Instrucciones (B-gamma) o Resumen (B-delta) con los mismos siete parámetros"
+  }
+ },
+ "dudas_para_el_orquestador": [
+  "El motor NO unifica el vocabulario del desplegable de checklist: C1 usa '✓,—,N/A' y los cinco C2 usan '✓,☐,N/A' (sus celdas vienen precargadas con ☐). Se respeta el de cada fichero y se usa '✓,—,N/A' donde no había ninguno (C3/C4). ¿Se unifica en la familia (obliga a reescribir las 300+ celdas con ☐) o se deja así?",
+  "§1.9 pide 'línea de versión en 22 xlsx y bio en 28'. El motor las pone en los 30, que es lo que exige el gate de §9 y lo que ya hace el resto de familias. Si el 22/28 era una exclusión deliberada de dos ficheros, hay que decir cuáles.",
+  "El cross-sell con importes que cita §1.9 vive en el DOCX del representante A, no en los xlsx: el motor deja el limpiador implementado (cross_sell_sin_precios) y añade la línea sin precios a Instrucciones, pero quien tiene que quitarlos es documentos.py (T9).",
+  "§1.2 dice que en línea A la superficie es la hoja '0. Supuestos'. El motor la crea con los rótulos de bloque de §2.1 y ocupa B20/B21/B22 y B37-B40; grupo_a debe respetar esas celdas (constantes CELDAS_SUPUESTOS del motor) o moverlas ahí de común acuerdo."
+ ],
+ "pendiente_de_este_rol": [
+  "grupo_a.py (§2), grupo_b.py (§3) y los contenido_<pid>/ — no son de T1",
+  "documentos.py y los guiones de §4 (los 38 docx siguen en Carta)",
+  "capa de producto §5 (landing, changelog, emails, FAQ, JSON-LD)",
+  "ejecución real: ningún fichero de dl/ se ha tocado; el canario de §9 lo lanza el orquestador con PLANES_APPLY=1"
+ ]
+}

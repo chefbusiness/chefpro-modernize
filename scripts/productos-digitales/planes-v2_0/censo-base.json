@@ -1,0 +1,5249 @@
+{
+  "generado": "T0 planes-v2.0 — 2026-08-29",
+  "solo_lectura": true,
+  "fuente": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl",
+  "productos": {
+    "plan-negocio-bar-restaurante": {
+      "ficheros": [
+        {
+          "fichero": "checklist-apertura-bar-restaurante.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Checklist Apertura"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Checklist Apertura": {
+              "dimensions": "A1:F61",
+              "max_row": 61,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 251
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 251,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Checklist Apertura — Bar-Restaurante / Espana 2026 · Plan de Negocio: Bar-Restaurante",
+            "subject": "Plan de Negocio: Bar-Restaurante · v1.1"
+          },
+          "data_validations_total": 1,
+          "conditional_formatting_total": 1,
+          "molde_checklist": "C1/C4 (monolitico)"
+        },
+        {
+          "fichero": "plan-de-negocio-bar-restaurante.docx",
+          "tipo": "docx",
+          "n_parrafos": 148,
+          "n_tablas": 0,
+          "n_headings": 10,
+          "palabras_cuerpo": 6971,
+          "palabras_tablas": 0,
+          "palabras_totales": 6971,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-bar-restaurante.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "1. Inversion Inicial",
+            "2. P&L 3 Anos",
+            "3. Punto Equilibrio",
+            "4. Escenarios",
+            "5. Personal",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "A-alpha",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "1. Inversion Inicial": {
+              "dimensions": "A1:C49",
+              "max_row": 49,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 112
+            },
+            "2. P&L 3 Anos": {
+              "dimensions": "A1:D42",
+              "max_row": 42,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 4,
+              "n_no_vacias": 128
+            },
+            "3. Punto Equilibrio": {
+              "dimensions": "A1:C20",
+              "max_row": 20,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 2,
+              "n_verdes": 0,
+              "n_no_vacias": 33
+            },
+            "4. Escenarios": {
+              "dimensions": "A1:D15",
+              "max_row": 15,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 37
+            },
+            "5. Personal": {
+              "dimensions": "A1:F16",
+              "max_row": 16,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 51
+            },
+            "Instrucciones": {
+              "dimensions": "A1:A30",
+              "max_row": 30,
+              "max_col": 1,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 24
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 2,
+          "pseudo_formulas_detalle": [
+            {
+              "hoja": "3. Punto Equilibrio",
+              "celda": "C14",
+              "valor": "= CF anuales / MC unitario"
+            },
+            {
+              "hoja": "3. Punto Equilibrio",
+              "celda": "C15",
+              "valor": "= 17950 / 310 dias"
+            }
+          ],
+          "total_celdas_verdes": 4,
+          "total_celdas_no_vacias": 385,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Plan Financiero Bar-Restaurante · Plan de Negocio: Bar-Restaurante",
+            "subject": "Plan de Negocio: Bar-Restaurante · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 3
+    },
+    "plan-negocio-tapas-bar": {
+      "ficheros": [
+        {
+          "fichero": "checklist-apertura-tapas-bar.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "F1 - Constitucion",
+            "F2 - Local",
+            "F3 - Equipamiento",
+            "F4 - Personal",
+            "F5 - Marketing",
+            "F6 - 90 Dias"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "F1 - Constitucion": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 56
+            },
+            "F2 - Local": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 56
+            },
+            "F3 - Equipamiento": {
+              "dimensions": "A1:E19",
+              "max_row": 19,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 76
+            },
+            "F4 - Personal": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            },
+            "F5 - Marketing": {
+              "dimensions": "A1:E18",
+              "max_row": 18,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 71
+            },
+            "F6 - 90 Dias": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            }
+          },
+          "total_formulas": 12,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 381,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "CHECKLIST APERTURA — TAPAS BAR / GASTROBAR · Plan de Negocio: Tapas Bar / Gastrobar",
+            "subject": "Plan de Negocio: Tapas Bar / Gastrobar · v1.1"
+          },
+          "data_validations_total": 6,
+          "conditional_formatting_total": 6,
+          "molde_checklist": "NO_CLASIFICADO(hojas=['F1 - Constitucion', 'F2 - Local', 'F3 - Equipamiento', 'F4 - Personal', 'F5 - Marketing', 'F6 - 90 Dias'])"
+        },
+        {
+          "fichero": "plan-de-negocio-tapas-bar.docx",
+          "tipo": "docx",
+          "n_parrafos": 133,
+          "n_tablas": 0,
+          "n_headings": 10,
+          "palabras_cuerpo": 6873,
+          "palabras_tablas": 0,
+          "palabras_totales": 6873,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-tapas-bar.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Inversion Inicial",
+            "PyG 3 Anos",
+            "Punto Equilibrio",
+            "Escenarios",
+            "Personal",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "A-beta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Inversion Inicial": {
+              "dimensions": "A1:C26",
+              "max_row": 26,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 69
+            },
+            "PyG 3 Anos": {
+              "dimensions": "A1:E38",
+              "max_row": 38,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 121
+            },
+            "Punto Equilibrio": {
+              "dimensions": "A1:C13",
+              "max_row": 13,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 32
+            },
+            "Escenarios": {
+              "dimensions": "A1:D14",
+              "max_row": 14,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 46
+            },
+            "Personal": {
+              "dimensions": "A1:F12",
+              "max_row": 12,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 55
+            },
+            "Instrucciones": {
+              "dimensions": "A1:C22",
+              "max_row": 22,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 51
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 374,
+          "constantes_tecleadas_n": 5,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E10",
+              "valor": "100%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E17",
+              "valor": "28.1%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E19",
+              "valor": "71.9%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B6",
+              "valor": "71.9%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B13",
+              "valor": "25.1%"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "RATIOS REFERENCIA — TAPAS BAR / GASTROBAR ESPANA 2026 · Plan de Negocio: Tapas Bar / Gastrobar",
+            "subject": "Plan de Negocio: Tapas Bar / Gastrobar · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 3
+    },
+    "plan-negocio-cafeteria": {
+      "ficheros": [
+        {
+          "fichero": "checklist-apertura-cafeteria-brunch.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "F1 - Constitucion",
+            "F2 - Local",
+            "F3 - Equipamiento",
+            "F4 - Personal",
+            "F5 - Marketing",
+            "F6 - 90 Dias"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "F1 - Constitucion": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 56
+            },
+            "F2 - Local": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 56
+            },
+            "F3 - Equipamiento": {
+              "dimensions": "A1:E21",
+              "max_row": 21,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 86
+            },
+            "F4 - Personal": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            },
+            "F5 - Marketing": {
+              "dimensions": "A1:E18",
+              "max_row": 18,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 71
+            },
+            "F6 - 90 Dias": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            }
+          },
+          "total_formulas": 12,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 391,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "CHECKLIST APERTURA — CAFETERIA / BRUNCH · Plan de Negocio: Cafetería / Brunch",
+            "subject": "Plan de Negocio: Cafetería / Brunch · v1.1"
+          },
+          "data_validations_total": 6,
+          "conditional_formatting_total": 6,
+          "molde_checklist": "NO_CLASIFICADO(hojas=['F1 - Constitucion', 'F2 - Local', 'F3 - Equipamiento', 'F4 - Personal', 'F5 - Marketing', 'F6 - 90 Dias'])"
+        },
+        {
+          "fichero": "plan-de-negocio-cafeteria-brunch.docx",
+          "tipo": "docx",
+          "n_parrafos": 167,
+          "n_tablas": 0,
+          "n_headings": 10,
+          "palabras_cuerpo": 6508,
+          "palabras_tablas": 0,
+          "palabras_totales": 6508,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-cafeteria-brunch.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Inversion Inicial",
+            "PyG 3 Anos",
+            "Punto Equilibrio",
+            "Escenarios",
+            "Personal",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "A-beta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Inversion Inicial": {
+              "dimensions": "A1:C31",
+              "max_row": 31,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 84
+            },
+            "PyG 3 Anos": {
+              "dimensions": "A1:E38",
+              "max_row": 38,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 121
+            },
+            "Punto Equilibrio": {
+              "dimensions": "A1:C16",
+              "max_row": 16,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 34
+            },
+            "Escenarios": {
+              "dimensions": "A1:D16",
+              "max_row": 16,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 54
+            },
+            "Personal": {
+              "dimensions": "A1:F10",
+              "max_row": 10,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 44
+            },
+            "Instrucciones": {
+              "dimensions": "A1:C30",
+              "max_row": 30,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 58
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 395,
+          "constantes_tecleadas_n": 5,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E10",
+              "valor": "100%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E17",
+              "valor": "33.9%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E19",
+              "valor": "66.1%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B6",
+              "valor": "66.1%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B13",
+              "valor": "5.8%"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "RATIOS DE REFERENCIA — CAFETERIA / BRUNCH ESPANA 2026 · Plan de Negocio: Cafetería / Brunch",
+            "subject": "Plan de Negocio: Cafetería / Brunch · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 3
+    },
+    "plan-negocio-panaderia": {
+      "ficheros": [
+        {
+          "fichero": "checklist-apertura-panaderia.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "F1": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 52
+            },
+            "F2": {
+              "dimensions": "A1:E14",
+              "max_row": 14,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 51
+            },
+            "F3": {
+              "dimensions": "A1:E18",
+              "max_row": 18,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 68
+            },
+            "F4": {
+              "dimensions": "A1:E14",
+              "max_row": 14,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 49
+            },
+            "F5": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 55
+            },
+            "F6": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            }
+          },
+          "total_formulas": 12,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 336,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "CHECKLIST APERTURA — PANADERIA / OBRADOR · Plan de Negocio: Panadería / Obrador",
+            "subject": "Plan de Negocio: Panadería / Obrador · v1.1"
+          },
+          "data_validations_total": 6,
+          "conditional_formatting_total": 6,
+          "molde_checklist": "C2/C3 (F1..F6)"
+        },
+        {
+          "fichero": "plan-de-negocio-panaderia.docx",
+          "tipo": "docx",
+          "n_parrafos": 131,
+          "n_tablas": 0,
+          "n_headings": 10,
+          "palabras_cuerpo": 6924,
+          "palabras_tablas": 0,
+          "palabras_totales": 6924,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-panaderia.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Inversion Inicial",
+            "PyG 3 Anos",
+            "Punto Equilibrio",
+            "Escenarios",
+            "Personal",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "A-beta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Inversion Inicial": {
+              "dimensions": "A1:C27",
+              "max_row": 27,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 72
+            },
+            "PyG 3 Anos": {
+              "dimensions": "A1:E38",
+              "max_row": 38,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 121
+            },
+            "Punto Equilibrio": {
+              "dimensions": "A1:C13",
+              "max_row": 13,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 31
+            },
+            "Escenarios": {
+              "dimensions": "A1:D14",
+              "max_row": 14,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 45
+            },
+            "Personal": {
+              "dimensions": "A1:F10",
+              "max_row": 10,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 42
+            },
+            "Instrucciones": {
+              "dimensions": "A1:C17",
+              "max_row": 17,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 41
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 352,
+          "constantes_tecleadas_n": 5,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E10",
+              "valor": "100%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E17",
+              "valor": "34.6%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E19",
+              "valor": "65.4%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B6",
+              "valor": "65.4%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B13",
+              "valor": "8.5%"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "RATIOS — PANADERIA ESPANA 2026 · Plan de Negocio: Panadería / Obrador",
+            "subject": "Plan de Negocio: Panadería / Obrador · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 3
+    },
+    "plan-negocio-food-truck": {
+      "ficheros": [
+        {
+          "fichero": "checklist-apertura-food-truck.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "F1 - Constitucion",
+            "F2 - Vehiculo",
+            "F3 - Equipamiento",
+            "F4 - Personal",
+            "F5 - Marketing",
+            "F6 - 90 Dias"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "F1 - Constitucion": {
+              "dimensions": "A1:E15",
+              "max_row": 15,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 56
+            },
+            "F2 - Vehiculo": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            },
+            "F3 - Equipamiento": {
+              "dimensions": "A1:E18",
+              "max_row": 18,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 71
+            },
+            "F4 - Personal": {
+              "dimensions": "A1:E14",
+              "max_row": 14,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 51
+            },
+            "F5 - Marketing": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            },
+            "F6 - 90 Dias": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            }
+          },
+          "total_formulas": 12,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 361,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "CHECKLIST APERTURA — FOOD TRUCK · Plan de Negocio: Food Truck",
+            "subject": "Plan de Negocio: Food Truck · v1.1"
+          },
+          "data_validations_total": 6,
+          "conditional_formatting_total": 6,
+          "molde_checklist": "NO_CLASIFICADO(hojas=['F1 - Constitucion', 'F2 - Vehiculo', 'F3 - Equipamiento', 'F4 - Personal', 'F5 - Marketing', 'F6 - 90 Dias'])"
+        },
+        {
+          "fichero": "plan-de-negocio-food-truck.docx",
+          "tipo": "docx",
+          "n_parrafos": 131,
+          "n_tablas": 0,
+          "n_headings": 10,
+          "palabras_cuerpo": 6948,
+          "palabras_tablas": 0,
+          "palabras_totales": 6948,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-food-truck.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Inversion Inicial",
+            "PyG 3 Anos",
+            "Punto Equilibrio",
+            "Escenarios",
+            "Personal",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "A-beta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Inversion Inicial": {
+              "dimensions": "A1:C23",
+              "max_row": 23,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 60
+            },
+            "PyG 3 Anos": {
+              "dimensions": "A1:E37",
+              "max_row": 37,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 117
+            },
+            "Punto Equilibrio": {
+              "dimensions": "A1:C13",
+              "max_row": 13,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 32
+            },
+            "Escenarios": {
+              "dimensions": "A1:D15",
+              "max_row": 15,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 49
+            },
+            "Personal": {
+              "dimensions": "A1:F8",
+              "max_row": 8,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 30
+            },
+            "Instrucciones": {
+              "dimensions": "A1:C18",
+              "max_row": 18,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 44
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 332,
+          "constantes_tecleadas_n": 5,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E9",
+              "valor": "100%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E16",
+              "valor": "34.6%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E18",
+              "valor": "65.4%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B6",
+              "valor": "65.4%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B13",
+              "valor": "39.5%"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "RATIOS REFERENCIA — FOOD TRUCK ESPANA 2026 · Plan de Negocio: Food Truck",
+            "subject": "Plan de Negocio: Food Truck · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 3
+    },
+    "plan-negocio-cocteleria-eventos": {
+      "ficheros": [
+        {
+          "fichero": "calculadora-pricing-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Calculadora",
+            "Ejemplos"
+          ],
+          "n_hojas": 2,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": true,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Calculadora": {
+              "dimensions": "B1:F39",
+              "max_row": 39,
+              "max_col": 6,
+              "n_formulas": 13,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 75
+            },
+            "Ejemplos": {
+              "dimensions": "A1:H14",
+              "max_row": 14,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            }
+          },
+          "total_formulas": 13,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 165,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "CALCULADORA DE PRICING — COCTELERIA DE EVENTOS · Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil",
+            "subject": "Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_calculadora": "margen(gamma)"
+        },
+        {
+          "fichero": "carta-15-cocktails-tematicos.docx",
+          "tipo": "docx",
+          "n_parrafos": 288,
+          "n_tablas": 15,
+          "n_headings": 5,
+          "palabras_cuerpo": 2926,
+          "palabras_tablas": 583,
+          "palabras_totales": 3509,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "catalogo-10-experiencias-tematicas.docx",
+          "tipo": "docx",
+          "n_parrafos": 156,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 3955,
+          "palabras_tablas": 0,
+          "palabras_totales": 3955,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "catalogo-equipamiento-cocteleria-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 108,
+          "n_tablas": 0,
+          "n_headings": 20,
+          "palabras_cuerpo": 1186,
+          "palabras_tablas": 0,
+          "palabras_totales": 1186,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "F1 - Constitucion",
+            "F2 - Seguros",
+            "F3 - Equipamiento",
+            "F4 - Marca",
+            "F5 - Captacion",
+            "F6 - Operativa"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "F1 - Constitucion": {
+              "dimensions": "A1:E16",
+              "max_row": 16,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            },
+            "F2 - Seguros": {
+              "dimensions": "A1:E14",
+              "max_row": 14,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 51
+            },
+            "F3 - Equipamiento": {
+              "dimensions": "A1:E20",
+              "max_row": 20,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 81
+            },
+            "F4 - Marca": {
+              "dimensions": "A1:E18",
+              "max_row": 18,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 71
+            },
+            "F5 - Captacion": {
+              "dimensions": "A1:E19",
+              "max_row": 19,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 76
+            },
+            "F6 - Operativa": {
+              "dimensions": "A1:E20",
+              "max_row": 20,
+              "max_col": 5,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 81
+            }
+          },
+          "total_formulas": 12,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 421,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "CHECKLIST APERTURA — COCTELERIA DE EVENTOS / BARRA MOVIL · Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil",
+            "subject": "Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil · v1.1"
+          },
+          "data_validations_total": 6,
+          "conditional_formatting_total": 6,
+          "molde_checklist": "NO_CLASIFICADO(hojas=['F1 - Constitucion', 'F2 - Seguros', 'F3 - Equipamiento', 'F4 - Marca', 'F5 - Captacion', 'F6 - Operativa'])"
+        },
+        {
+          "fichero": "modelo-contrato-cocteleria-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 70,
+          "n_tablas": 1,
+          "n_headings": 5,
+          "palabras_cuerpo": 1526,
+          "palabras_tablas": 16,
+          "palabras_totales": 1542,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 150,
+          "n_tablas": 0,
+          "n_headings": 10,
+          "palabras_cuerpo": 6962,
+          "palabras_tablas": 0,
+          "palabras_totales": 6962,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Inversion Inicial",
+            "PyG 3 Anos",
+            "Punto Equilibrio",
+            "Escenarios",
+            "Personal Freelance",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "NO_RECONOCIDO(hojas=['Escenarios', 'Instrucciones', 'Inversion Inicial', 'Personal Freelance', 'Punto Equilibrio', 'PyG 3 Anos'])",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Inversion Inicial": {
+              "dimensions": "A1:C30",
+              "max_row": 30,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 81
+            },
+            "PyG 3 Anos": {
+              "dimensions": "A1:E40",
+              "max_row": 40,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 136
+            },
+            "Punto Equilibrio": {
+              "dimensions": "A1:C18",
+              "max_row": 18,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 40
+            },
+            "Escenarios": {
+              "dimensions": "A1:D15",
+              "max_row": 15,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 50
+            },
+            "Personal Freelance": {
+              "dimensions": "A1:F16",
+              "max_row": 16,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 53
+            },
+            "Instrucciones": {
+              "dimensions": "A1:C34",
+              "max_row": 34,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 70
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 430,
+          "constantes_tecleadas_n": 16,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E10",
+              "valor": "100%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E13",
+              "valor": "20.0%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E14",
+              "valor": "3.0%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E15",
+              "valor": "4.0%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E16",
+              "valor": "25.0%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E18",
+              "valor": "58.0%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E20",
+              "valor": "42.0%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E34",
+              "valor": "11.6%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E36",
+              "valor": "29.5%"
+            },
+            {
+              "hoja": "PyG 3 Anos",
+              "celda": "E40",
+              "valor": "19.7%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B6",
+              "valor": "42%"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B10",
+              "valor": "2.6"
+            },
+            {
+              "hoja": "Punto Equilibrio",
+              "celda": "B13",
+              "valor": "38%"
+            },
+            {
+              "hoja": "Personal Freelance",
+              "celda": "F13",
+              "valor": "350 EUR"
+            },
+            {
+              "hoja": "Personal Freelance",
+              "celda": "F14",
+              "valor": "80 EUR"
+            },
+            {
+              "hoja": "Personal Freelance",
+              "celda": "F16",
+              "valor": "880 EUR"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "RATIOS DE REFERENCIA — COCTELERIA EVENTOS ESPANA 2026 · Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil",
+            "subject": "Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        },
+        {
+          "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Indice",
+            "1. Licores y destilados",
+            "2. Mixers premium",
+            "3. Cristaleria",
+            "4. Hielo y refrigeracion",
+            "5. Equipamiento accesorio",
+            "6. Frutas y garnish",
+            "7. Consumibles eco",
+            "8. Servicios pro",
+            "9. Captacion B2B",
+            "10. Hosply.pro"
+          ],
+          "n_hojas": 11,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": true,
+          "hojas_detalle": {
+            "Indice": {
+              "dimensions": "B1:D32",
+              "max_row": 32,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 42
+            },
+            "1. Licores y destilados": {
+              "dimensions": "A1:H17",
+              "max_row": 17,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 106
+            },
+            "2. Mixers premium": {
+              "dimensions": "A1:H15",
+              "max_row": 15,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            },
+            "3. Cristaleria": {
+              "dimensions": "A1:H15",
+              "max_row": 15,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            },
+            "4. Hielo y refrigeracion": {
+              "dimensions": "A1:H16",
+              "max_row": 16,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 98
+            },
+            "5. Equipamiento accesorio": {
+              "dimensions": "A1:H15",
+              "max_row": 15,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            },
+            "6. Frutas y garnish": {
+              "dimensions": "A1:H15",
+              "max_row": 15,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            },
+            "7. Consumibles eco": {
+              "dimensions": "A1:H13",
+              "max_row": 13,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 74
+            },
+            "8. Servicios pro": {
+              "dimensions": "A1:H17",
+              "max_row": 17,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 106
+            },
+            "9. Captacion B2B": {
+              "dimensions": "A1:H18",
+              "max_row": 18,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 114
+            },
+            "10. Hosply.pro": {
+              "dimensions": "B1:C21",
+              "max_row": 21,
+              "max_col": 3,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 18
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 918,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "PLANTILLA DE PROVEEDORES · Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil",
+            "subject": "Plan de Negocio & Kit de Coctelería de Eventos / Barra Móvil · v1.1"
+          },
+          "data_validations_total": 9,
+          "conditional_formatting_total": 9
+        }
+      ],
+      "n_ficheros": 9
+    },
+    "plan-negocio-parrillero-asador-eventos": {
+      "ficheros": [
+        {
+          "fichero": "10-experiencias-tematicas-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 191,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 1457,
+          "palabras_tablas": 0,
+          "palabras_totales": 1457,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "calculadora-pricing-eventos-parrillero.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Calculadora",
+            "Ejemplos"
+          ],
+          "n_hojas": 2,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": true,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Calculadora": {
+              "dimensions": "A1:F36",
+              "max_row": 36,
+              "max_col": 6,
+              "n_formulas": 15,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 61
+            },
+            "Ejemplos": {
+              "dimensions": "A1:H14",
+              "max_row": 14,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            }
+          },
+          "total_formulas": 15,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 151,
+          "constantes_tecleadas_n": 10,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Ejemplos",
+              "celda": "H5",
+              "valor": "60%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H6",
+              "valor": "58%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H7",
+              "valor": "52%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H8",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H9",
+              "valor": "48%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H10",
+              "valor": "62%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H11",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H12",
+              "valor": "52%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H13",
+              "valor": "57%"
+            },
+            {
+              "hoja": "Ejemplos",
+              "celda": "H14",
+              "valor": "65%"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Calculadora pricing por evento · Parrillero / Asador para Eventos · Plan de Negocio & Kit de Parrillero / Asador para Eventos",
+            "subject": "Plan de Negocio & Kit de Parrillero / Asador para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_calculadora": "por-invitado(beta)"
+        },
+        {
+          "fichero": "carta-12-cortes-carne.docx",
+          "tipo": "docx",
+          "n_parrafos": 54,
+          "n_tablas": 12,
+          "n_headings": 0,
+          "palabras_cuerpo": 273,
+          "palabras_tablas": 525,
+          "palabras_totales": 798,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "catalogo-equipamiento-utensilios-menaje.docx",
+          "tipo": "docx",
+          "n_parrafos": 64,
+          "n_tablas": 17,
+          "n_headings": 0,
+          "palabras_cuerpo": 768,
+          "palabras_tablas": 699,
+          "palabras_totales": 1467,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "checklist-apertura-parrillero-asador-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "F1 - Constitucion y legal",
+            "F2 - Seguros y cobertura",
+            "F3 - Equipamiento y proveedores carne",
+            "F4 - Marca, web y materiales venta",
+            "F5 - Captacion B2C y B2B",
+            "F6 - Operativa primer evento y postventa"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "F1 - Constitucion y legal": {
+              "dimensions": "A1:E19",
+              "max_row": 19,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 68
+            },
+            "F2 - Seguros y cobertura": {
+              "dimensions": "A1:E14",
+              "max_row": 14,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 50
+            },
+            "F3 - Equipamiento y proveedores carne": {
+              "dimensions": "A1:E22",
+              "max_row": 22,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            },
+            "F4 - Marca, web y materiales venta": {
+              "dimensions": "A1:E20",
+              "max_row": 20,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 76
+            },
+            "F5 - Captacion B2C y B2B": {
+              "dimensions": "A1:E20",
+              "max_row": 20,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 74
+            },
+            "F6 - Operativa primer evento y postventa": {
+              "dimensions": "A1:E22",
+              "max_row": 22,
+              "max_col": 5,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 80
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 438,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "F1 - Constitucion y legal · Plan de Negocio & Kit de Parrillero / Asador para Eventos",
+            "subject": "Plan de Negocio & Kit de Parrillero / Asador para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_checklist": "NO_CLASIFICADO(hojas=['F1 - Constitucion y legal', 'F2 - Seguros y cobertura', 'F3 - Equipamiento y proveedores carne', 'F4 - Marca, web y materiales venta', 'F5 - Captacion B2C y B2B', 'F6 - Operativa primer evento y postventa'])"
+        },
+        {
+          "fichero": "guia-tipos-parrilla-roadmap-food-truck.docx",
+          "tipo": "docx",
+          "n_parrafos": 55,
+          "n_tablas": 13,
+          "n_headings": 0,
+          "palabras_cuerpo": 554,
+          "palabras_tablas": 1259,
+          "palabras_totales": 1813,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "manual-tecnico-parrillero-profesional.docx",
+          "tipo": "docx",
+          "n_parrafos": 61,
+          "n_tablas": 4,
+          "n_headings": 0,
+          "palabras_cuerpo": 634,
+          "palabras_tablas": 868,
+          "palabras_totales": 1502,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "modelos-contrato-parrillero-asador-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 113,
+          "n_tablas": 1,
+          "n_headings": 0,
+          "palabras_cuerpo": 1755,
+          "palabras_tablas": 61,
+          "palabras_totales": 1816,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-de-negocio-parrillero-asador-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 130,
+          "n_tablas": 6,
+          "n_headings": 0,
+          "palabras_cuerpo": 1934,
+          "palabras_tablas": 513,
+          "palabras_totales": 2447,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-parrillero-asador-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Inversion Inicial",
+            "PyG 3 Anos",
+            "Estacionalidad",
+            "Punto Equilibrio",
+            "Pricing Modelo",
+            "Instrucciones"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "NO_RECONOCIDO(hojas=['Estacionalidad', 'Instrucciones', 'Inversion Inicial', 'Pricing Modelo', 'Punto Equilibrio', 'PyG 3 Anos'])",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Inversion Inicial": {
+              "dimensions": "A1:D23",
+              "max_row": 23,
+              "max_col": 4,
+              "n_formulas": 3,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 75
+            },
+            "PyG 3 Anos": {
+              "dimensions": "A1:E35",
+              "max_row": 35,
+              "max_col": 5,
+              "n_formulas": 21,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 119
+            },
+            "Estacionalidad": {
+              "dimensions": "A1:D17",
+              "max_row": 17,
+              "max_col": 4,
+              "n_formulas": 2,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 57
+            },
+            "Punto Equilibrio": {
+              "dimensions": "A1:C11",
+              "max_row": 11,
+              "max_col": 3,
+              "n_formulas": 4,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 24
+            },
+            "Pricing Modelo": {
+              "dimensions": "A1:F12",
+              "max_row": 12,
+              "max_col": 6,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 56
+            },
+            "Instrucciones": {
+              "dimensions": "A1:A14",
+              "max_row": 14,
+              "max_col": 1,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 12
+            }
+          },
+          "total_formulas": 30,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 343,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Plan Financiero · Parrillero / Asador para Eventos · Plan de Negocio & Kit de Parrillero / Asador para Eventos",
+            "subject": "Plan de Negocio & Kit de Parrillero / Asador para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        },
+        {
+          "fichero": "plantilla-proveedores-parrillero-asador-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Indice",
+            "1. Carniceria mayorista",
+            "2. Carbon, leña y combustible",
+            "3. Equipamiento parrilla y asad",
+            "4. Cuchilleria, tablas, menaje ",
+            "5. Vajilla, cuberteria, mantele",
+            "6. Indumentaria y proteccion",
+            "7. Seguros, gestoria y asesoria",
+            "8. Transporte y vehiculos event",
+            "9. Captacion B2B planners y age",
+            "10. Hosply.pro · directorio HOR"
+          ],
+          "n_hojas": 11,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": true,
+          "hojas_detalle": {
+            "Indice": {
+              "dimensions": "A1:D17",
+              "max_row": 17,
+              "max_col": 4,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 39
+            },
+            "1. Carniceria mayorista": {
+              "dimensions": "A1:H16",
+              "max_row": 16,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 95
+            },
+            "2. Carbon, leña y combustible": {
+              "dimensions": "A1:H13",
+              "max_row": 13,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 74
+            },
+            "3. Equipamiento parrilla y asad": {
+              "dimensions": "A1:H17",
+              "max_row": 17,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 104
+            },
+            "4. Cuchilleria, tablas, menaje ": {
+              "dimensions": "A1:H13",
+              "max_row": 13,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 74
+            },
+            "5. Vajilla, cuberteria, mantele": {
+              "dimensions": "A1:H14",
+              "max_row": 14,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 82
+            },
+            "6. Indumentaria y proteccion": {
+              "dimensions": "A1:H12",
+              "max_row": 12,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 68
+            },
+            "7. Seguros, gestoria y asesoria": {
+              "dimensions": "A1:H14",
+              "max_row": 14,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 81
+            },
+            "8. Transporte y vehiculos event": {
+              "dimensions": "A1:H12",
+              "max_row": 12,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 67
+            },
+            "9. Captacion B2B planners y age": {
+              "dimensions": "A1:H14",
+              "max_row": 14,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 82
+            },
+            "10. Hosply.pro · directorio HOR": {
+              "dimensions": "A1:H8",
+              "max_row": 8,
+              "max_col": 8,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 39
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 805,
+          "constantes_tecleadas_n": 23,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "3. Equipamiento parrilla y asad",
+              "celda": "C11",
+              "valor": "..."
+            },
+            {
+              "hoja": "3. Equipamiento parrilla y asad",
+              "celda": "C12",
+              "valor": "..."
+            },
+            {
+              "hoja": "3. Equipamiento parrilla y asad",
+              "celda": "C14",
+              "valor": "..."
+            },
+            {
+              "hoja": "3. Equipamiento parrilla y asad",
+              "celda": "C15",
+              "valor": "..."
+            },
+            {
+              "hoja": "3. Equipamiento parrilla y asad",
+              "celda": "C17",
+              "valor": "..."
+            },
+            {
+              "hoja": "4. Cuchilleria, tablas, menaje ",
+              "celda": "C13",
+              "valor": "..."
+            },
+            {
+              "hoja": "5. Vajilla, cuberteria, mantele",
+              "celda": "C5",
+              "valor": "..."
+            },
+            {
+              "hoja": "6. Indumentaria y proteccion",
+              "celda": "C8",
+              "valor": "..."
+            },
+            {
+              "hoja": "6. Indumentaria y proteccion",
+              "celda": "C11",
+              "valor": "..."
+            },
+            {
+              "hoja": "6. Indumentaria y proteccion",
+              "celda": "C12",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C5",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C6",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C7",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C8",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C9",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C10",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C11",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C12",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C13",
+              "valor": "..."
+            },
+            {
+              "hoja": "9. Captacion B2B planners y age",
+              "celda": "C14",
+              "valor": "..."
+            },
+            {
+              "hoja": "10. Hosply.pro · directorio HOR",
+              "celda": "C6",
+              "valor": "..."
+            },
+            {
+              "hoja": "10. Hosply.pro · directorio HOR",
+              "celda": "C7",
+              "valor": "..."
+            },
+            {
+              "hoja": "10. Hosply.pro · directorio HOR",
+              "celda": "C8",
+              "valor": "..."
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Plantilla 96 Proveedores · Parrillero / Asador para Eventos · Plan de Negocio & Kit de Parrillero / Asador para Eventos",
+            "subject": "Plan de Negocio & Kit de Parrillero / Asador para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 11
+    },
+    "plan-negocio-paellero-eventos": {
+      "ficheros": [
+        {
+          "fichero": "10-experiencias-tematicas-paellero.docx",
+          "tipo": "docx",
+          "n_parrafos": 57,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 639,
+          "palabras_tablas": 0,
+          "palabras_totales": 639,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "calculadora-pricing-eventos-paellero.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Calculadora pricing",
+            "10 ejemplos validados"
+          ],
+          "n_hojas": 2,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": true,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Calculadora pricing": {
+              "dimensions": "A1:J33",
+              "max_row": 33,
+              "max_col": 10,
+              "n_formulas": 15,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 72
+            },
+            "10 ejemplos validados": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            }
+          },
+          "total_formulas": 15,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 162,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Calculadora Pricing — Paellero / Paella para Eventos · Plan de Negocio & Kit de Paellero / Paella para Eventos",
+            "subject": "Plan de Negocio & Kit de Paellero / Paella para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_calculadora": "margen(gamma)"
+        },
+        {
+          "fichero": "carta-12-paellas-arroces.docx",
+          "tipo": "docx",
+          "n_parrafos": 89,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 711,
+          "palabras_tablas": 0,
+          "palabras_totales": 711,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "catalogo-equipamiento-utensilios-menaje-paellero.docx",
+          "tipo": "docx",
+          "n_parrafos": 133,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 701,
+          "palabras_tablas": 0,
+          "palabras_totales": 701,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "checklist-apertura-paellero-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Checklist 6 fases"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Checklist 6 fases": {
+              "dimensions": "A1:J119",
+              "max_row": 119,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 534
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 534,
+          "constantes_tecleadas_n": 104,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A6",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A7",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A8",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A9",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A10",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A11",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A12",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A13",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A14",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A15",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A16",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A17",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A18",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A19",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A20",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A21",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A22",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A23",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A24",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A27",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A28",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A29",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A30",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A31",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A32",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A33",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A34",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A35",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A36",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A39",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A40",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A41",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A42",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A43",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A44",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A45",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A46",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A47",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A48",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A49",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A50",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A51",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A52",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A53",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A54",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A55",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A56",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A57",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A58",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A59",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A60",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A61",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A62",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A63",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A64",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A65",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A68",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A69",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A70",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A71",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A72",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A73",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A74",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A75",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A76",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A77",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A78",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A79",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A80",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A81",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A82",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A83",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A86",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A87",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A88",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A89",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A90",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A91",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A92",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A93",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A94",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A95",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A96",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A97",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A98",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A99",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A102",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A103",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A104",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A105",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A106",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A107",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A108",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A109",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A110",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A111",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A112",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A113",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A114",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A115",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A116",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A117",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A118",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A119",
+              "valor": "6"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Checklist Apertura — Paellero / Paella para Eventos · Plan de Negocio & Kit de Paellero / Paella para Eventos",
+            "subject": "Plan de Negocio & Kit de Paellero / Paella para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_checklist": "C4 (monolitico sin DV/CF/contador)"
+        },
+        {
+          "fichero": "guia-tipos-paellero-roadmap-food-truck.docx",
+          "tipo": "docx",
+          "n_parrafos": 101,
+          "n_tablas": 1,
+          "n_headings": 0,
+          "palabras_cuerpo": 813,
+          "palabras_tablas": 71,
+          "palabras_totales": 884,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "manual-tecnico-paellero-profesional.docx",
+          "tipo": "docx",
+          "n_parrafos": 52,
+          "n_tablas": 2,
+          "n_headings": 0,
+          "palabras_cuerpo": 705,
+          "palabras_tablas": 420,
+          "palabras_totales": 1125,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "modelos-contrato-paellero-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 91,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 1139,
+          "palabras_tablas": 0,
+          "palabras_totales": 1139,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-de-negocio-paellero-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 118,
+          "n_tablas": 2,
+          "n_headings": 0,
+          "palabras_cuerpo": 2231,
+          "palabras_tablas": 209,
+          "palabras_totales": 2440,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-paellero-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Resumen",
+            "P&L Año 1",
+            "Proyección 3 años",
+            "Break-even",
+            "Mix B2C-B2B",
+            "KPIs"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "B-delta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Resumen": {
+              "dimensions": "A1:J15",
+              "max_row": 15,
+              "max_col": 10,
+              "n_formulas": 12,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 68
+            },
+            "P&L Año 1": {
+              "dimensions": "A1:N19",
+              "max_row": 19,
+              "max_col": 14,
+              "n_formulas": 84,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 184
+            },
+            "Proyección 3 años": {
+              "dimensions": "A1:J18",
+              "max_row": 18,
+              "max_col": 10,
+              "n_formulas": 27,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 62
+            },
+            "Break-even": {
+              "dimensions": "A1:J10",
+              "max_row": 10,
+              "max_col": 10,
+              "n_formulas": 5,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 16
+            },
+            "Mix B2C-B2B": {
+              "dimensions": "A1:J13",
+              "max_row": 13,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 62
+            },
+            "KPIs": {
+              "dimensions": "A1:J13",
+              "max_row": 13,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 42
+            }
+          },
+          "total_formulas": 128,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 434,
+          "constantes_tecleadas_n": 16,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Resumen",
+              "celda": "E15",
+              "valor": "100%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F5",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F6",
+              "valor": "60%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F7",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F8",
+              "valor": "58%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F9",
+              "valor": "52%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F10",
+              "valor": "50%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F11",
+              "valor": "53%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F12",
+              "valor": "48%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F13",
+              "valor": "50%"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B6",
+              "valor": "1.200 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C6",
+              "valor": "1.450 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B12",
+              "valor": "85 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C12",
+              "valor": "55 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B13",
+              "valor": "8.500 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C13",
+              "valor": "14.000 €"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Plan Financiero — Paellero / Paella para Eventos · Plan de Negocio & Kit de Paellero / Paella para Eventos",
+            "subject": "Plan de Negocio & Kit de Paellero / Paella para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        },
+        {
+          "fichero": "plantilla-proveedores-paellero-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "96 proveedores"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": true,
+          "hojas_detalle": {
+            "96 proveedores": {
+              "dimensions": "A1:J92",
+              "max_row": 92,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 625
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 625,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "96 Proveedores Reales — Paellero / Paella para Eventos · Plan de Negocio & Kit de Paellero / Paella para Eventos",
+            "subject": "Plan de Negocio & Kit de Paellero / Paella para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 11
+    },
+    "plan-catering-tematico-eventos": {
+      "ficheros": [
+        {
+          "fichero": "12-conceptos-tematicos-pre-empaquetados.docx",
+          "tipo": "docx",
+          "n_parrafos": 194,
+          "n_tablas": 12,
+          "n_headings": 0,
+          "palabras_cuerpo": 1561,
+          "palabras_tablas": 155,
+          "palabras_totales": 1716,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "calculadora-pricing-catering-tematico-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Calculadora pricing",
+            "10 ejemplos validados"
+          ],
+          "n_hojas": 2,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": true,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Calculadora pricing": {
+              "dimensions": "A1:J35",
+              "max_row": 35,
+              "max_col": 10,
+              "n_formulas": 16,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 78
+            },
+            "10 ejemplos validados": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 101
+            }
+          },
+          "total_formulas": 16,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 179,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Calculadora Pricing — Catering Temático para Eventos · Plan de Negocio para Catering & Kit Temático para Eventos",
+            "subject": "Plan de Negocio para Catering & Kit Temático para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_calculadora": "margen(gamma)"
+        },
+        {
+          "fichero": "carta-12-menus-tematicos-cocinas-mundo.docx",
+          "tipo": "docx",
+          "n_parrafos": 137,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 1079,
+          "palabras_tablas": 0,
+          "palabras_totales": 1079,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "catalogo-equipamiento-multi-cocina-catering-tematico.docx",
+          "tipo": "docx",
+          "n_parrafos": 45,
+          "n_tablas": 11,
+          "n_headings": 0,
+          "palabras_cuerpo": 401,
+          "palabras_tablas": 780,
+          "palabras_totales": 1181,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Checklist 6 fases"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Checklist 6 fases": {
+              "dimensions": "A1:J123",
+              "max_row": 123,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 554
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 554,
+          "constantes_tecleadas_n": 108,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A6",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A7",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A8",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A9",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A10",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A11",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A12",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A13",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A14",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A15",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A16",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A17",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A18",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A19",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A20",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A21",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A22",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A25",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A26",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A27",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A28",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A29",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A30",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A31",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A32",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A33",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A34",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A37",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A38",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A39",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A40",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A41",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A42",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A43",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A44",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A45",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A46",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A47",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A48",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A49",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A50",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A51",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A52",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A53",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A54",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A55",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A56",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A57",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A58",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A59",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A60",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A61",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A62",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A63",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A64",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A67",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A68",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A69",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A70",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A71",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A72",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A73",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A74",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A75",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A76",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A77",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A78",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A79",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A80",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A81",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A82",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A83",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A86",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A87",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A88",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A89",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A90",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A91",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A92",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A93",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A94",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A95",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A96",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A97",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A98",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A99",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A100",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A101",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A104",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A105",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A106",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A107",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A108",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A109",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A110",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A111",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A112",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A113",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A114",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A115",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A116",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A117",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A118",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A119",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A120",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A121",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A122",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A123",
+              "valor": "6"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Checklist Apertura — Catering & Kit Temático para Eventos · Plan de Negocio para Catering & Kit Temático para Eventos",
+            "subject": "Plan de Negocio para Catering & Kit Temático para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_checklist": "C4 (monolitico sin DV/CF/contador)"
+        },
+        {
+          "fichero": "guia-especializacion-catering-tematico-multi-concepto.docx",
+          "tipo": "docx",
+          "n_parrafos": 64,
+          "n_tablas": 2,
+          "n_headings": 0,
+          "palabras_cuerpo": 752,
+          "palabras_tablas": 145,
+          "palabras_totales": 897,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "manual-tecnico-multi-cocina-appcc-catering.docx",
+          "tipo": "docx",
+          "n_parrafos": 77,
+          "n_tablas": 2,
+          "n_headings": 0,
+          "palabras_cuerpo": 793,
+          "palabras_tablas": 288,
+          "palabras_totales": 1081,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "modelos-contrato-catering-tematico-b2c-b2b.docx",
+          "tipo": "docx",
+          "n_parrafos": 105,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 1517,
+          "palabras_tablas": 0,
+          "palabras_totales": 1517,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-de-negocio-catering-tematico-eventos.docx",
+          "tipo": "docx",
+          "n_parrafos": 120,
+          "n_tablas": 7,
+          "n_headings": 0,
+          "palabras_cuerpo": 2059,
+          "palabras_tablas": 782,
+          "palabras_totales": 2841,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-catering-tematico-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Resumen",
+            "P&L Año 1",
+            "Proyección 3 años",
+            "Break-even",
+            "Mix B2C-B2B",
+            "KPIs"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "B-delta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Resumen": {
+              "dimensions": "A1:J21",
+              "max_row": 21,
+              "max_col": 10,
+              "n_formulas": 18,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 104
+            },
+            "P&L Año 1": {
+              "dimensions": "A1:N19",
+              "max_row": 19,
+              "max_col": 14,
+              "n_formulas": 84,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 184
+            },
+            "Proyección 3 años": {
+              "dimensions": "A1:J18",
+              "max_row": 18,
+              "max_col": 10,
+              "n_formulas": 27,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 62
+            },
+            "Break-even": {
+              "dimensions": "A1:J10",
+              "max_row": 10,
+              "max_col": 10,
+              "n_formulas": 5,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 16
+            },
+            "Mix B2C-B2B": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 68
+            },
+            "KPIs": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 46
+            }
+          },
+          "total_formulas": 134,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 480,
+          "constantes_tecleadas_n": 18,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Resumen",
+              "celda": "E21",
+              "valor": "100%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F5",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F6",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F7",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F8",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F9",
+              "valor": "60%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F10",
+              "valor": "52%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F11",
+              "valor": "50%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F12",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F13",
+              "valor": "50%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F14",
+              "valor": "48%"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B6",
+              "valor": "3.700 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C6",
+              "valor": "5.200 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B12",
+              "valor": "85 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C12",
+              "valor": "55 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B13",
+              "valor": "12.500 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C13",
+              "valor": "22.000 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B14",
+              "valor": "5"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Plan Financiero — Catering & Kit Temático para Eventos · Plan de Negocio para Catering & Kit Temático para Eventos",
+            "subject": "Plan de Negocio para Catering & Kit Temático para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        },
+        {
+          "fichero": "plantilla-proveedores-catering-tematico-eventos.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "96 proveedores"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": true,
+          "hojas_detalle": {
+            "96 proveedores": {
+              "dimensions": "A1:J100",
+              "max_row": 100,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 681
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 681,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "96 Proveedores Reales — Catering & Kit Temático para Eventos · Plan de Negocio para Catering & Kit Temático para Eventos",
+            "subject": "Plan de Negocio para Catering & Kit Temático para Eventos · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 11
+    },
+    "plan-chef-privado-showcooking-eventos": {
+      "ficheros": [
+        {
+          "fichero": "10-experiencias-tematicas-chef-privado-showcooking.docx",
+          "tipo": "docx",
+          "n_parrafos": 138,
+          "n_tablas": 10,
+          "n_headings": 0,
+          "palabras_cuerpo": 1262,
+          "palabras_tablas": 80,
+          "palabras_totales": 1342,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "calculadora-pricing-chef-privado-showcooking.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Calculadora pricing",
+            "10 ejemplos validados"
+          ],
+          "n_hojas": 2,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": true,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Calculadora pricing": {
+              "dimensions": "A1:J34",
+              "max_row": 34,
+              "max_col": 10,
+              "n_formulas": 15,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 75
+            },
+            "10 ejemplos validados": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 90
+            }
+          },
+          "total_formulas": 15,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 165,
+          "constantes_tecleadas_n": 0,
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Calculadora Pricing — Chef Privado / Showcooking · Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio",
+            "subject": "Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_calculadora": "margen(gamma)"
+        },
+        {
+          "fichero": "carta-12-menus-tematicos-chef-privado.docx",
+          "tipo": "docx",
+          "n_parrafos": 137,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 990,
+          "palabras_tablas": 0,
+          "palabras_totales": 990,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "catalogo-equipamiento-cuchilleria-vajilla-chef-privado.docx",
+          "tipo": "docx",
+          "n_parrafos": 64,
+          "n_tablas": 9,
+          "n_headings": 0,
+          "palabras_cuerpo": 574,
+          "palabras_tablas": 529,
+          "palabras_totales": 1103,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Checklist 6 fases"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": true,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Checklist 6 fases": {
+              "dimensions": "A1:J119",
+              "max_row": 119,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 534
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 534,
+          "constantes_tecleadas_n": 104,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A6",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A7",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A8",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A9",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A10",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A11",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A12",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A13",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A14",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A15",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A16",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A17",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A18",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A19",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A20",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A21",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A22",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A23",
+              "valor": "1"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A26",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A27",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A28",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A29",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A30",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A31",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A32",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A33",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A34",
+              "valor": "2"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A37",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A38",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A39",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A40",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A41",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A42",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A43",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A44",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A45",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A46",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A47",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A48",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A49",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A50",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A51",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A52",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A53",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A54",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A55",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A56",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A57",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A58",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A59",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A60",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A61",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A62",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A63",
+              "valor": "3"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A66",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A67",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A68",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A69",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A70",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A71",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A72",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A73",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A74",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A75",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A76",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A77",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A78",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A79",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A80",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A81",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A82",
+              "valor": "4"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A85",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A86",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A87",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A88",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A89",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A90",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A91",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A92",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A93",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A94",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A95",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A96",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A97",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A98",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A99",
+              "valor": "5"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A102",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A103",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A104",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A105",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A106",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A107",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A108",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A109",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A110",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A111",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A112",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A113",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A114",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A115",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A116",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A117",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A118",
+              "valor": "6"
+            },
+            {
+              "hoja": "Checklist 6 fases",
+              "celda": "A119",
+              "valor": "6"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Checklist Apertura — Chef Privado / Showcooking a domicilio · Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio",
+            "subject": "Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0,
+          "molde_checklist": "C4 (monolitico sin DV/CF/contador)"
+        },
+        {
+          "fichero": "guia-sistemas-chef-privado-personal-chef-caterer.docx",
+          "tipo": "docx",
+          "n_parrafos": 80,
+          "n_tablas": 1,
+          "n_headings": 0,
+          "palabras_cuerpo": 814,
+          "palabras_tablas": 83,
+          "palabras_totales": 897,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "manual-tecnico-servicio-domicilio-appcc.docx",
+          "tipo": "docx",
+          "n_parrafos": 83,
+          "n_tablas": 1,
+          "n_headings": 0,
+          "palabras_cuerpo": 917,
+          "palabras_tablas": 122,
+          "palabras_totales": 1039,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "modelos-contrato-chef-privado-b2c-b2b.docx",
+          "tipo": "docx",
+          "n_parrafos": 103,
+          "n_tablas": 0,
+          "n_headings": 0,
+          "palabras_cuerpo": 1813,
+          "palabras_tablas": 0,
+          "palabras_totales": 1813,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-de-negocio-chef-privado-showcooking.docx",
+          "tipo": "docx",
+          "n_parrafos": 122,
+          "n_tablas": 6,
+          "n_headings": 0,
+          "palabras_cuerpo": 2072,
+          "palabras_tablas": 532,
+          "palabras_totales": 2604,
+          "page_width_emu": 7772400,
+          "page_height_emu": 10058400,
+          "page_size_in": [
+            8.5,
+            11.0
+          ],
+          "tamano_pagina": "CARTA(US Letter)",
+          "metadata": {
+            "author": "python-docx",
+            "title": ""
+          }
+        },
+        {
+          "fichero": "plan-financiero-chef-privado-showcooking.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "Resumen",
+            "P&L Año 1",
+            "Proyección 3 años",
+            "Break-even",
+            "Mix B2C-B2B",
+            "KPIs"
+          ],
+          "n_hojas": 6,
+          "molde_plan_financiero": "B-delta",
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": false,
+          "hojas_detalle": {
+            "Resumen": {
+              "dimensions": "A1:J17",
+              "max_row": 17,
+              "max_col": 10,
+              "n_formulas": 14,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 80
+            },
+            "P&L Año 1": {
+              "dimensions": "A1:N19",
+              "max_row": 19,
+              "max_col": 14,
+              "n_formulas": 84,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 184
+            },
+            "Proyección 3 años": {
+              "dimensions": "A1:J18",
+              "max_row": 18,
+              "max_col": 10,
+              "n_formulas": 27,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 62
+            },
+            "Break-even": {
+              "dimensions": "A1:J10",
+              "max_row": 10,
+              "max_col": 10,
+              "n_formulas": 5,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 16
+            },
+            "Mix B2C-B2B": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 68
+            },
+            "KPIs": {
+              "dimensions": "A1:J14",
+              "max_row": 14,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 46
+            }
+          },
+          "total_formulas": 130,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 456,
+          "constantes_tecleadas_n": 17,
+          "constantes_tecleadas_detalle": [
+            {
+              "hoja": "Resumen",
+              "celda": "E17",
+              "valor": "100%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F5",
+              "valor": "62%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F6",
+              "valor": "60%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F7",
+              "valor": "60%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F8",
+              "valor": "58%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F9",
+              "valor": "60%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F10",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F11",
+              "valor": "55%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F12",
+              "valor": "53%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F13",
+              "valor": "52%"
+            },
+            {
+              "hoja": "Mix B2C-B2B",
+              "celda": "F14",
+              "valor": "50%"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B6",
+              "valor": "990 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C6",
+              "valor": "1.250 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B13",
+              "valor": "65 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C13",
+              "valor": "40 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "B14",
+              "valor": "9.500 €"
+            },
+            {
+              "hoja": "KPIs",
+              "celda": "C14",
+              "valor": "16.000 €"
+            }
+          ],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "Plan Financiero — Chef Privado / Showcooking a domicilio · Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio",
+            "subject": "Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        },
+        {
+          "fichero": "plantilla-proveedores-chef-privado-showcooking.xlsx",
+          "tipo": "xlsx",
+          "hojas": [
+            "96 proveedores"
+          ],
+          "n_hojas": 1,
+          "molde_plan_financiero": null,
+          "es_checklist": false,
+          "es_calculadora": false,
+          "es_proveedores": true,
+          "hojas_detalle": {
+            "96 proveedores": {
+              "dimensions": "A1:J100",
+              "max_row": 100,
+              "max_col": 10,
+              "n_formulas": 0,
+              "n_pseudo_formulas": 0,
+              "n_verdes": 0,
+              "n_no_vacias": 681
+            }
+          },
+          "total_formulas": 0,
+          "total_pseudo_formulas_texto": 0,
+          "total_celdas_verdes": 0,
+          "total_celdas_no_vacias": 681,
+          "constantes_tecleadas_n": 0,
+          "constantes_tecleadas_detalle": [],
+          "metadata": {
+            "creator": "AI Chef Pro",
+            "lastModifiedBy": "AI Chef Pro",
+            "title": "96 Proveedores Reales — Chef Privado / Showcooking · Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio",
+            "subject": "Plan de Negocio & Kit de Chef Privado / Showcooking a Domicilio · v1.1"
+          },
+          "data_validations_total": 0,
+          "conditional_formatting_total": 0
+        }
+      ],
+      "n_ficheros": 11
+    }
+  },
+  "resumen_global": {
+    "n_productos": 10,
+    "n_xlsx": 30,
+    "n_docx": 38,
+    "xlsx_0_formulas": [
+      "plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "plan-negocio-tapas-bar/plan-financiero-tapas-bar.xlsx",
+      "plan-negocio-cafeteria/plan-financiero-cafeteria-brunch.xlsx",
+      "plan-negocio-panaderia/plan-financiero-panaderia.xlsx",
+      "plan-negocio-food-truck/plan-financiero-food-truck.xlsx",
+      "plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "plan-negocio-cocteleria-eventos/plantilla-proveedores-cocteleria-eventos.xlsx",
+      "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+      "plan-negocio-parrillero-asador-eventos/plantilla-proveedores-parrillero-asador-eventos.xlsx",
+      "plan-negocio-paellero-eventos/checklist-apertura-paellero-eventos.xlsx",
+      "plan-negocio-paellero-eventos/plantilla-proveedores-paellero-eventos.xlsx",
+      "plan-catering-tematico-eventos/checklist-apertura-catering-tematico-eventos.xlsx",
+      "plan-catering-tematico-eventos/plantilla-proveedores-catering-tematico-eventos.xlsx",
+      "plan-chef-privado-showcooking-eventos/checklist-apertura-chef-privado-showcooking.xlsx",
+      "plan-chef-privado-showcooking-eventos/plantilla-proveedores-chef-privado-showcooking.xlsx"
+    ],
+    "docx_no_a4": 38
+  }
+}
