@@ -1,0 +1,1420 @@
+{
+ "meta": {
+  "rol": "constructor del MOTOR de la familia Guías v2.0 (T1)",
+  "fecha": "2026-08-29T04:11:40",
+  "spec": "scripts/productos-digitales/guias-v2-SPEC.md — cabecera, Convenciones, §1 entero, §7-bis.1-22, §9",
+  "entregado": [
+   "scripts/productos-digitales/guias-v2_0/motor.py",
+   "scripts/productos-digitales/guias-v2_0/main.py"
+  ],
+  "pendiente_de_otros": [
+   "grupo_a.py",
+   "grupo_b.py",
+   "grupo_c.py",
+   "contenido_<pid_>/a.py|b.py|c.py",
+   "documentos.py",
+   "guion_<pid>.py"
+  ],
+  "produccion_intocada": "astro-site/public/dl/** sin un solo byte modificado: `git status --porcelain astro-site/public/dl/` vacío tras las 8 ejecuciones; todo con --dry-run sobre copias en el scratchpad y sin GUIAS_APPLY",
+  "termica": "istats cpu temp antes de cada python; máximo observado 49,3 °C (umbral 65 °C); un proceso cada vez; sin builds ni navegador"
+ },
+ "resumen_ejecucion": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratch>/guias/propio-motor python3 guias-v2_0/main.py --producto <pid> --dry-run --solo motor --json <scratch>/guias/motor-<pid>.json",
+  "productos_ejecutados": 8,
+  "exit_0": 8,
+  "totales": {
+   "xlsx": 111,
+   "hojas": 250,
+   "protegidas": 250,
+   "formulas_nuevas": 371,
+   "verdes": 12557,
+   "cf": 127,
+   "dv": 216,
+   "idempotencia": 0,
+   "fallos": 0
+  },
+  "por_producto": [
+   {
+    "producto": "guia-dark-kitchen",
+    "xlsx": 3,
+    "hojas": 8,
+    "hojas_protegidas_sin_contrasena": 8,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 2,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (calculadora-viabilidad-dark-kitchen.xlsx:P&L Mensual!B30=0.05)"
+    ],
+    "variantes_pl": [],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-dark-kitchen.json"
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "xlsx": 15,
+    "hojas": 30,
+    "hojas_protegidas_sin_contrasena": 30,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 0,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 9 literales dentro de fórmulas que deberían ser parámetro en celda (plan-financiero-3-anos.xlsx:P&L 3 años!B12=0.20, plan-financiero-3-anos.xlsx:P&L 3 años!C12=0.19, plan-financiero-3-anos.xlsx:P&L 3 años!D12=0.18)"
+    ],
+    "variantes_pl": [
+     "hoja-unica"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-panaderia-obrador.json"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "xlsx": 15,
+    "hojas": 35,
+    "hojas_protegidas_sin_contrasena": 35,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 52,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 10 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro.xlsx:Escandallo!E6=1000, escandallo-maestro.xlsx:Escandallo!E7=1000, escandallo-maestro.xlsx:Escandallo!E8=1000)"
+    ],
+    "variantes_pl": [
+     "tres-hojas"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-restaurante-casual.json"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "xlsx": 18,
+    "hojas": 37,
+    "hojas_protegidas_sin_contrasena": 37,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 80,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro.xlsx:Escandallo!H28=0.28)"
+    ],
+    "variantes_pl": [
+     "escenarios-columnas"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-restaurante-gastronomico.json"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "xlsx": 15,
+    "hojas": 35,
+    "hojas_protegidas_sin_contrasena": 35,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 61,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 13 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-japones.xlsx:Escandallo!E6=1000, escandallo-maestro-japones.xlsx:Escandallo!E7=1000, escandallo-maestro-japones.xlsx:Escandallo!E8=1000)"
+    ],
+    "variantes_pl": [
+     "tres-hojas"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-restaurante-japones.json"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "xlsx": 15,
+    "hojas": 35,
+    "hojas_protegidas_sin_contrasena": 35,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 57,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 11 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-mexicano.xlsx:Escandallo!E6=1000, escandallo-maestro-mexicano.xlsx:Escandallo!E7=1000, escandallo-maestro-mexicano.xlsx:Escandallo!E8=1000)"
+    ],
+    "variantes_pl": [
+     "tres-hojas"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-restaurante-mexicano.json"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "xlsx": 15,
+    "hojas": 35,
+    "hojas_protegidas_sin_contrasena": 35,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 62,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 15 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-nikkei.xlsx:Escandallo!E6=1000, escandallo-maestro-nikkei.xlsx:Escandallo!E7=1000, escandallo-maestro-nikkei.xlsx:Escandallo!E8=1000)"
+    ],
+    "variantes_pl": [
+     "tres-hojas"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-restaurante-nikkei.json"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "xlsx": 15,
+    "hojas": 35,
+    "hojas_protegidas_sin_contrasena": 35,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_exit": 0,
+    "formulas_nuevas": 57,
+    "data_only_fallos": 0,
+    "inject_cache_fallos_pycel": 0,
+    "fallos": [],
+    "avisos": [
+     "§1.3: 12 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-peruano.xlsx:Escandallo!E6=1000, escandallo-maestro-peruano.xlsx:Escandallo!E7=1000, escandallo-maestro-peruano.xlsx:Escandallo!E8=1000)"
+    ],
+    "variantes_pl": [
+     "tres-hojas"
+    ],
+    "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/motor-guia-restaurante-peruano.json"
+   }
+  ],
+  "moldes": {
+   "A": 38,
+   "B": 6,
+   "C": 1,
+   "D": 1,
+   "total_checklists": 46
+  }
+ },
+ "gates_verdes": {
+  "dry_run_solo_motor_exit_0": "8/8 productos",
+  "idempotencia_2a_pasada": "0 diferencias en los 8 (celda a celda: valor, formato, relleno, bloqueo, merges, DV, CF, protección, anchos, área, pie y propiedades del libro)",
+  "censo_entregables_fail": "0 defectos en los 8 (141 ficheros censados)",
+  "inject_cache": "fallos_pycel=0 en los 111 xlsx",
+  "data_only_formulas_nuevas": "0 fórmulas nuevas sin valor cacheado",
+  "proteccion": "250/250 hojas protegidas SIN contraseña, con 0 celdas verdes bloqueadas",
+  "bio_y_version": "111/111 xlsx con la bio anclada y la línea «Versión 2.0 · agosto 2026 · aichef.pro/<pid> · info@aichef.pro» exactamente una vez, y subject «… · v2.0»",
+  "sin_perdida_de_contenido": "19.380 celdas con valor antes → 20.918 después; los ÚNICOS 55 valores que dejan de aparecer son las 55 líneas «Versión 1.1 …» sustituidas por la 2.0 (verificado comparando los 111 xlsx originales contra los producidos, valor a valor y admitiendo que un valor cambie de celda)",
+  "aborto_por_molde_desconocido": "probado: falseando guia-dark-kitchen/checklist-apertura-legal.xlsx!F4=«Presupuesto estimado» y G4=«Situación», main.py sale con exit 2, escribe el informe con abortado_por=molde_desconocido y NO modifica un solo libro",
+  "aborto_sin_GUIAS_APPLY": "probado: `python3 main.py --producto guia-dark-kitchen --solo motor` (sin --dry-run) sale con rc=1 y el mensaje de la SPEC"
+ },
+ "hallazgos": [
+  {
+   "id": "MOT-01",
+   "sev": "alta",
+   "que": "La regla literal del §1.1 de la SPEC reconoce 40 de los 46 checklists de la familia.",
+   "evidencia": "molde B según la SPEC = «A=✓ y D=Plazo orientativo», y eso sólo se cumple en guia-panaderia-obrador/checklist-legal.xlsx:Checklist Legal!D3. Los otros cinco de panadería tienen D3=«Registro» (checklist-appcc.xlsx:APPCC Obrador), D3=«Responsable» (checklist-contratacion.xlsx:Contratación), D3=«Precio min €» (checklist-equipamiento.xlsx:Equipamiento), D3=«Coste orientativo» (checklist-marketing-preapertura.xlsx:Marketing) y D3=«Plazo» (checklist-salida-humos.xlsx:Salida humos). El censo de T0 ya los tiene marcados como `checklist_atipico_no_reconocido_por_regla_1.1` en guias-v2_0/censo-base.json.",
+   "consecuencia": "Con la regla literal, el motor abortaría en 6 de los 8 productos y §9 no podría cerrarse.",
+   "resuelto": "motor.molde_checklist() usa para el molde B una firma ESTRUCTURAL —A=«✓» en la fila 3 MÁS casillas ☐/✓/N/A en la columna A— en vez de una etiqueta concreta. Los 6 se detectan."
+  },
+  {
+   "id": "MOT-02",
+   "sev": "alta",
+   "que": "Existe un CUARTO molde de checklist que la SPEC no describe, y aplicarle el molde A escribiría el TOTAL sobre una columna de texto.",
+   "evidencia": "guia-dark-kitchen/checklist-apertura-legal.xlsx:Checklist Apertura Legal, fila 4: A=«#» B=«Categoría» C=«Tarea» D=«Responsable» E=«Fecha Límite» F=«Coste Estimado (€)» G=«Estado» H=«Notas». Es el molde A con COSTE y ESTADO intercambiados. La SPEC (cabecera §6.c y §3.3) lo mete en el molde C y cita su TOTAL «checklist-apertura-legal!F40='=SUM(F5:F39)'», pero el molde C que describe (E=Presupuesto, G=Desviación (%)) es el del OTRO fichero, checklist-equipamiento-obra.xlsx, cuyo TOTAL está en la fila 45 (D45=«TOTAL», E45, F45, G45).",
+   "consecuencia": "Un motor que aplicara el molde A pondría `=SUM(G5:G39)` sobre la columna «Estado» (texto) y buscaría el coste donde está el estado: la fila TOTAL del checklist legal daría 0 y el % completado leería importes.",
+   "resuelto": "molde D con firma propia (F=«Coste Estimado (€)», G=«Estado»); el TOTAL nativo de la fila 40 se detecta y NO se duplica."
+  },
+  {
+   "id": "MOT-03",
+   "sev": "alta",
+   "que": "El estado terminal de un checklist NO es siempre «Completado»: hardcodearlo daría 0 % para siempre en dark-kitchen.",
+   "evidencia": "guia-dark-kitchen/checklist-equipamiento-obra.xlsx:Checklist Equipamiento!H5 tiene la DV \"Pendiente,Pedido,Recibido,Instalado\" → terminal «Instalado». guia-dark-kitchen/checklist-apertura-legal.xlsx!G5 tiene \"Pendiente,En Proceso,Completado\". Los 40 del molde A tienen \"Pendiente,En Curso,Completado\".",
+   "consecuencia": "`COUNTIF(H5:H44,\"Completado\")` sobre una lista que nunca dice «Completado» devuelve 0 y el avance del checklist se queda clavado en 0 %, con el fichero abriendo sin un solo aviso.",
+   "resuelto": "motor.opciones_dv() lee la lista del propio fichero y toma la ÚLTIMA opción. Demostrado con pycel: el avance de checklist-equipamiento-obra pasa de 0,0 a 0,025 al marcar un ítem como «Instalado», y el de apertura-legal a 0,0286 al marcarlo como «Completado»."
+  },
+  {
+   "id": "MOT-04",
+   "sev": "alta",
+   "que": "Con la protección del §1.8 activada, el verde deja de ser cosmético: es el mapa de lo que el cliente puede rellenar — y hoy hay checklists enteros sin una sola celda verde.",
+   "evidencia": "guia-dark-kitchen/checklist-apertura-legal.xlsx tiene 0 celdas verdes y 35 celdas con desplegable en la columna G. guia-panaderia-obrador: las 26-40 casillas ☐ de cada checklist tampoco llevan verde. guia-dark-kitchen/checklist-equipamiento-obra: D (Proveedor), H (Estado, con DV) e I (Notas) sin verde.",
+   "consecuencia": "Proteger sin pintar antes habría entregado checklists que el cliente no puede marcar: el desplegable existe pero la celda está bloqueada.",
+   "resuelto": "motor.verdes_por_dv() pinta y desbloquea TODA celda con desplegable, y ENTRADAS[molde] declara las columnas de entrada por molde (leídas por cabecera, no por letra). Gate: demo_proteccion exige verdes == verdes_desbloqueadas en las 250 hojas → 0 celdas verdes bloqueadas."
+  },
+  {
+   "id": "MOT-05",
+   "sev": "media",
+   "que": "BUG PROPIO cazado y corregido antes de entregar: el detector de fila de cabecera acertaba en el sitio equivocado y estropeaba formatos del escandallo.",
+   "evidencia": "la primera versión tomaba «la primera fila (4 o 3) con ≥3 textos». En guia-restaurante-gastronomico/escandallo-maestro.xlsx:Escandallo la fila 4 es la banda A4=«Nombre del plato:» E4=«Raciones:» G4=«Food Cost Objetivo:» H4=«28%», y la cabecera real está en la fila 6. Resultado medido: E7 («Precio/Ud (€)») pasó de General a `#,##0` porque «Raciones:» se leyó como recuento, y H7 («Coste (€)») pasó de `#,##0.00 €` a `0.0%` porque «28%» se leyó como porcentaje.",
+   "consecuencia": "Es exactamente el patrón que la SPEC del blog describe: «un regex de sección SIN acotar la zona no falla: acierta en el sitio equivocado».",
+   "resuelto": "motor.fila_cabecera_tabla() gana por MÁS textos CONSECUTIVOS desde la columna A (una cabecera no tiene huecos por la izquierda), mínimo 3, y devuelve None si no hay una clara — prefiere no tocar a tocar por aproximación. Verificado después: E7=`#,##0.00 €`, F7 («Merma (%)»)=`0.0%`, H7=`#,##0.00 €`."
+  },
+  {
+   "id": "MOT-06",
+   "sev": "media",
+   "que": "BUG PROPIO de idempotencia cazado y corregido: el bloque de resumen bajaba dos filas en cada ejecución.",
+   "evidencia": "primera pasada: 168 diferencias en el representante, del tipo checklist-appcc.xlsx:APPCC: merges A68:H68 → A70:H70. Causa: `_fila_total_existente()` encontraba en la 2.ª pasada el «TOTAL PRESUPUESTADO (€)» que había escrito el propio motor y lo tomaba por el TOTAL nativo del libro.",
+   "consecuencia": "Cada APPLY habría empujado el bloque dos filas y el gate de idempotencia de §9 no cerraría jamás.",
+   "resuelto": "la búsqueda del TOTAL nativo se corta en MARCA_BLOQUE (`_fila_marca`). Idempotencia: 0 diferencias en los 8 productos."
+  },
+  {
+   "id": "MOT-07",
+   "sev": "media",
+   "que": "censo-base.json SUBCUENTA las celdas verdes, y lo que le falta son justo las celdas de entrada del §1.3.",
+   "evidencia": "guias-v2_0/censo-base.json dice `n_celdas_verdes: 80` para guia-restaurante-gastronomico/checklist-legal.xlsx y lista sólo F5:G44. Medido con openpyxl: son 160 — E5:E44 («Fecha Límite») y H5:H44 («Notas») también llevan `00E8F5E9`. El censo sólo recogió las verdes que ADEMÁS tenían valor, y E y H están vacías por definición.",
+   "consecuencia": "Cualquier decisión de §1.3 tomada leyendo el censo creería que hay que pintar de verde columnas que ya lo están.",
+   "resuelto": "el motor mide el verde en tiempo de ejecución (motor.es_verde), nunca lo lee del censo."
+  },
+  {
+   "id": "MOT-08",
+   "sev": "baja",
+   "que": "Dos cifras de la SPEC no coinciden con lo medido hoy (no cambian ninguna decisión, pero sí los recuentos de un informe).",
+   "evidencia": "§1.10 dice «hoy 1.1 en 30 ficheros y ausente en los 81 restantes»; medido: la línea «Versión 1.1 · agosto 2026 · …» está en 55 de los 111 y falta en 56 (los 38 checklists del molde A, los 15 ficheros de panadería —que no lleva la hoja Instrucciones en NINGUNO— y los 3 de dark-kitchen: 38+15+3 = 56). §3.3/TEC-29 dice «hoy ws.conditional_formatting está vacío en los 141 libros»: es cierto en 105 xlsx, pero los 6 checklists de panadería YA traen una regla `expression` `$A4=\"✓\"` con relleno 00C8E6C9 sobre A4:E34/A4:F37.",
+   "consecuencia": "Un gate que exigiera «0 reglas antes, N después» daría falso rojo en panadería.",
+   "resuelto": "el motor RESPETA la regla de panadería (no la purga: sólo purga los rangos que él mismo escribe) y la bio/versión se calculan por fichero, no por la cifra del informe."
+  },
+  {
+   "id": "MOT-09",
+   "sev": "baja",
+   "que": "El food cost objetivo hardcodeado de los escandallos hermanos NO es siempre 0,33.",
+   "evidencia": "la SPEC cita `G19='=G18/0.33'`. Medido: japonés G19=/0.33 y nikkei G21=/0.33, pero casual G16=/0.30, mexicano G17=/0.30 y peruano G18=/0.30. El representante usa `H28='=H27/0.28'`. El `*1.10` del IVA sí es idéntico en los 5 (casual G17, japonés G20, mexicano G18, nikkei G22, peruano G19).",
+   "consecuencia": "grupo_c no puede escribir un 0,33 de familia: el valor de ejemplo de la celda verde de food cost objetivo es propio de cada guía.",
+   "resuelto": "lo informa el motor (literales_sospechosos, lista completa en `literales_vivos` de este JSON) y lo resolverá grupo_c con `motor.a_formula(..., celda_ejemplo=...)`."
+  },
+  {
+   "id": "MOT-10",
+   "sev": "informativo",
+   "que": "Corroboración de una cifra de la SPEC que sí cuadra: los 313.290 € del representante.",
+   "evidencia": "§1.9 dice «los 313.290 € del representante repartidos en 8 listas dejan de sumarse a mano». Los TOTAL que el motor calcula y pycel evalúa suman exactamente 313.290,00 €: appcc 3.400 + contratación 1.610 + diseño-sala 108.200 + equipamiento-cocina 112.070 + michelin 11.000 + legal 23.980 + marketing 22.800 + vajilla 30.230.",
+   "consecuencia": null,
+   "resuelto": "ninguna acción; sirve de ancla para T2."
+  },
+  {
+   "id": "MOT-11",
+   "sev": "informativo",
+   "que": "Clase de falso positivo conocida en `literales_sospechosos`, para que T2 no la persiga.",
+   "evidencia": "los 61 literales `1000` de `=(C6/1000)*D6` en los escandallos hermanos son la conversión g→kg entre «Cantidad (g/ml)» y «Precio/Kg (€)», no un parámetro de negocio. Los que SÍ son deuda real son los 15 de food cost / IVA / porcentajes de gasto que aparecen en `literales_vivos`.",
+   "consecuencia": null,
+   "resuelto": "el detector INFORMA y no corrige; con `--solo motor` el total va como AVISO y no como fallo, para que el motor no se ponga rojo por deuda de §2/§4."
+  },
+  {
+   "id": "MOT-12",
+   "sev": "baja",
+   "que": "Aritmética de la propia SPEC en §3.3: «Molde A (14 ficheros: 8 del representante + 6 por hermano ×5)» son 38, no 14.",
+   "evidencia": "medido abriendo los 111 xlsx: 38 checklists de molde A (8 en guia-restaurante-gastronomico y 6 en cada uno de casual, mexicano, peruano, japonés y nikkei), 6 de molde B (panadería), 1 de molde C y 1 de molde D (dark-kitchen) = 46 checklists en la familia.",
+   "consecuencia": "Un gate que exigiera «14 checklists del molde A tratados» daría por bueno un motor que dejó 24 sin tocar.",
+   "resuelto": "el motor cuenta en tiempo de ejecución; el censo por fichero va en `moldes_y_recuentos_medidos.checklists` de este JSON (46 filas)."
+  }
+ ],
+ "decisiones_del_motor_que_T2_debe_refutar": [
+  "La hoja «Instrucciones» se CREA donde falta (56 de los 111 xlsx), porque es donde §1.10 pone la línea de versión y la bio. Se crea en el índice 0, con su propio A4 (paperSize 9 + fitToPage + pie) porque el censo contaría `noprint` una hoja sin él; §1.13 protege las hojas que ya existían, no las que no existían.",
+  "La pestaña `Sheet` de los 40 checklists del molde A se renombra con el título de A1 limpio de «Checklist», del guion largo y de los caracteres ilegales de Excel (\\ / ? * [ ] :), truncado a 31 por palabra. Sólo se renombra si el nombre nuevo está libre y NINGUNA fórmula del libro nombra el viejo.",
+  "El bloque de resumen de los checklists se borra y se reescribe ENTERO en cada pasada, delimitado por MARCA_BLOQUE, y su posición se calcula desde la última fila de datos MEDIDA. El pie de marca («AI Chef Pro · aichef.pro — …») se recoloca al final del bloque y se vuelve a combinar.",
+  "El criterio del SUMIF por categoría va por REFERENCIA a la etiqueta ($A51), no como literal entrecomillado: una categoría con coma o comilla rompería la fórmula y el fallo no se vería hasta abrir el fichero.",
+  "En el molde A se pinta de verde también la columna D («Responsable»), que hoy no lo está: con la hoja protegida, dejarla bloqueada impediría reasignar un responsable. Mismo criterio para D/H/I del molde C y para la columna «Notas» del molde B (localizada por CABECERA: en checklist-appcc de panadería esa misma columna E es «Acción correctiva», que es contenido del producto y queda bloqueada).",
+  "La nota de base de IVA se escribe en A3 de las hojas de P&L / cash flow / ticket medio SÓLO si la fila 3 está entera libre. En panadería la fila 3 ES la cabecera de la tabla, así que allí la nota cae a Instrucciones. En las hojas de tesorería se usa la variante «Las cifras de esta hoja van CON IVA: es caja», porque la frase general leída dentro del cash flow dice lo contrario de lo que aplica.",
+  "`formato_ficha()` aplica el §1.4 en hojas SIN cabecera de tabla (etiqueta en A, valor a la derecha), que es como están `Break-Even` y el `Ticket Medio` de los hermanos. Sólo toca filas cuya etiqueta declara el tipo y celdas que no contienen texto."
+ ],
+ "moldes_y_recuentos_medidos": {
+  "nota": "recuento MEDIDO en tiempo de ejecución (§9, gate de recuento): «se toma la cifra medida por el motor, nunca la del informe». El R1 dice «checklist-legal 42 filas» y son 40.",
+  "checklists": [
+   {
+    "producto": "guia-dark-kitchen",
+    "fichero": "checklist-apertura-legal.xlsx",
+    "hoja": "Checklist Apertura Legal",
+    "molde": "D",
+    "fila_cabecera": 4,
+    "items_medidos": 35,
+    "fila_total_nativa": 40,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-dark-kitchen",
+    "fichero": "checklist-equipamiento-obra.xlsx",
+    "hoja": "Checklist Equipamiento",
+    "molde": "C",
+    "fila_cabecera": 4,
+    "items_medidos": 40,
+    "fila_total_nativa": 45,
+    "estado_terminal": "Instalado"
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC Obrador",
+    "molde": "B",
+    "fila_cabecera": 3,
+    "items_medidos": 40,
+    "fila_total_nativa": null,
+    "estado_terminal": null
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación",
+    "molde": "B",
+    "fila_cabecera": 3,
+    "items_medidos": 25,
+    "fila_total_nativa": null,
+    "estado_terminal": null
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "fichero": "checklist-equipamiento.xlsx",
+    "hoja": "Equipamiento",
+    "molde": "B",
+    "fila_cabecera": 3,
+    "items_medidos": 36,
+    "fila_total_nativa": null,
+    "estado_terminal": null
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Checklist Legal",
+    "molde": "B",
+    "fila_cabecera": 3,
+    "items_medidos": 33,
+    "fila_total_nativa": null,
+    "estado_terminal": null
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing",
+    "molde": "B",
+    "fila_cabecera": 3,
+    "items_medidos": 27,
+    "fila_total_nativa": null,
+    "estado_terminal": null
+   },
+   {
+    "producto": "guia-panaderia-obrador",
+    "fichero": "checklist-salida-humos.xlsx",
+    "hoja": "Salida humos",
+    "molde": "B",
+    "fila_cabecera": 3,
+    "items_medidos": 25,
+    "fila_total_nativa": null,
+    "estado_terminal": null
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 33,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 24,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-diseno-sala-terraza.xlsx",
+    "hoja": "Diseño de Sala + Terraza",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 29,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-equipamiento-cocina.xlsx",
+    "hoja": "Equipamiento",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 31,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Legal",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-casual",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing Pre-Apertura",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 25,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 45,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación Equipo",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 30,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-diseno-sala.xlsx",
+    "hoja": "Diseño de Sala (FOH)",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 31,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-equipamiento-cocina.xlsx",
+    "hoja": "Equipamiento Cocina",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 54,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+    "hoja": "Preparación Inspección",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 40,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Legal",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 40,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing Pre-Apertura",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 30,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-gastronomico",
+    "fichero": "checklist-vajilla-cristaleria.xlsx",
+    "hoja": "Vajilla, Cristalería y",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 43,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 46,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 31,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "fichero": "checklist-diseno-sala-japonesa.xlsx",
+    "hoja": "Diseño Sala Japonesa + Barra",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "fichero": "checklist-equipamiento-cocina-japonesa.xlsx",
+    "hoja": "Equipamiento Cocina Japonesa",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 36,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Legal",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 42,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-japones",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing Pre-Apertura",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 37,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 28,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "fichero": "checklist-diseno-sala-mexicana.xlsx",
+    "hoja": "Diseño Sala Mexicana + Barra",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "fichero": "checklist-equipamiento-cocina-mexicana.xlsx",
+    "hoja": "Equipamiento Cocina Mexicana",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 35,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Legal",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 38,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-mexicano",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing Pre-Apertura",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 27,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 48,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "fichero": "checklist-diseno-sala-nikkei.xlsx",
+    "hoja": "Diseño Sala Nikkei + Barra",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "fichero": "checklist-equipamiento-cocina-nikkei.xlsx",
+    "hoja": "Equipamiento Cocina Nikkei",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 37,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Legal",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 42,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-nikkei",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing Pre-Apertura",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 34,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "fichero": "checklist-appcc.xlsx",
+    "hoja": "APPCC",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 39,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "fichero": "checklist-contratacion.xlsx",
+    "hoja": "Contratación",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 29,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "fichero": "checklist-diseno-sala-peruana.xlsx",
+    "hoja": "Diseño Sala Peruana + Barra",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "fichero": "checklist-equipamiento-cocina-peruana.xlsx",
+    "hoja": "Equipamiento Cocina Peruana",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 32,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "fichero": "checklist-legal.xlsx",
+    "hoja": "Legal",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 39,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   },
+   {
+    "producto": "guia-restaurante-peruano",
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hoja": "Marketing Pre-Apertura",
+    "molde": "A",
+    "fila_cabecera": 4,
+    "items_medidos": 28,
+    "fila_total_nativa": null,
+    "estado_terminal": "Completado"
+   }
+  ]
+ },
+ "literales_vivos": [
+  {
+   "producto": "guia-dark-kitchen",
+   "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+   "hoja": "P&L Mensual",
+   "celda": "B30",
+   "literal": "0.05",
+   "formula": "=B14*0.05"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "B12",
+   "literal": "0.20",
+   "formula": "=B9*0.20"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "C12",
+   "literal": "0.19",
+   "formula": "=C9*0.19"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "D12",
+   "literal": "0.18",
+   "formula": "=D9*0.18"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "B13",
+   "literal": "0.015",
+   "formula": "=B9*0.015"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "C13",
+   "literal": "0.015",
+   "formula": "=C9*0.015"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "D13",
+   "literal": "0.015",
+   "formula": "=D9*0.015"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "B14",
+   "literal": "0.025",
+   "formula": "=B9*0.025"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "C14",
+   "literal": "0.025",
+   "formula": "=C9*0.025"
+  },
+  {
+   "producto": "guia-panaderia-obrador",
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hoja": "P&L 3 años",
+   "celda": "D14",
+   "literal": "0.025",
+   "formula": "=D9*0.025"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E6",
+   "literal": "1000",
+   "formula": "=(C6/1000)*D6"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E7",
+   "literal": "1000",
+   "formula": "=(C7/1000)*D7"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E8",
+   "literal": "1000",
+   "formula": "=(C8/1000)*D8"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E9",
+   "literal": "1000",
+   "formula": "=(C9/1000)*D9"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E10",
+   "literal": "1000",
+   "formula": "=(C10/1000)*D10"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E11",
+   "literal": "1000",
+   "formula": "=(C11/1000)*D11"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E12",
+   "literal": "1000",
+   "formula": "=(C12/1000)*D12"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E13",
+   "literal": "1000",
+   "formula": "=(C13/1000)*D13"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G16",
+   "literal": "0.30",
+   "formula": "=G15/0.30"
+  },
+  {
+   "producto": "guia-restaurante-casual",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G17",
+   "literal": "1.10",
+   "formula": "=G16*1.10"
+  },
+  {
+   "producto": "guia-restaurante-gastronomico",
+   "fichero": "escandallo-maestro.xlsx",
+   "hoja": "Escandallo",
+   "celda": "H28",
+   "literal": "0.28",
+   "formula": "=H27/0.28"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E6",
+   "literal": "1000",
+   "formula": "=(C6/1000)*D6"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E7",
+   "literal": "1000",
+   "formula": "=(C7/1000)*D7"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E8",
+   "literal": "1000",
+   "formula": "=(C8/1000)*D8"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E9",
+   "literal": "1000",
+   "formula": "=(C9/1000)*D9"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E10",
+   "literal": "1000",
+   "formula": "=(C10/1000)*D10"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E11",
+   "literal": "1000",
+   "formula": "=(C11/1000)*D11"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E12",
+   "literal": "1000",
+   "formula": "=(C12/1000)*D12"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E13",
+   "literal": "1000",
+   "formula": "=(C13/1000)*D13"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E14",
+   "literal": "1000",
+   "formula": "=(C14/1000)*D14"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E15",
+   "literal": "1000",
+   "formula": "=(C15/1000)*D15"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E16",
+   "literal": "1000",
+   "formula": "=(C16/1000)*D16"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G19",
+   "literal": "0.33",
+   "formula": "=G18/0.33"
+  },
+  {
+   "producto": "guia-restaurante-japones",
+   "fichero": "escandallo-maestro-japones.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G20",
+   "literal": "1.10",
+   "formula": "=G19*1.10"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E6",
+   "literal": "1000",
+   "formula": "=(C6/1000)*D6"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E7",
+   "literal": "1000",
+   "formula": "=(C7/1000)*D7"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E8",
+   "literal": "1000",
+   "formula": "=(C8/1000)*D8"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E9",
+   "literal": "1000",
+   "formula": "=(C9/1000)*D9"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E10",
+   "literal": "1000",
+   "formula": "=(C10/1000)*D10"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E11",
+   "literal": "1000",
+   "formula": "=(C11/1000)*D11"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E12",
+   "literal": "1000",
+   "formula": "=(C12/1000)*D12"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E13",
+   "literal": "1000",
+   "formula": "=(C13/1000)*D13"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E14",
+   "literal": "1000",
+   "formula": "=(C14/1000)*D14"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G17",
+   "literal": "0.30",
+   "formula": "=G16/0.30"
+  },
+  {
+   "producto": "guia-restaurante-mexicano",
+   "fichero": "escandallo-maestro-mexicano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G18",
+   "literal": "1.10",
+   "formula": "=G17*1.10"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E6",
+   "literal": "1000",
+   "formula": "=(C6/1000)*D6"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E7",
+   "literal": "1000",
+   "formula": "=(C7/1000)*D7"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E8",
+   "literal": "1000",
+   "formula": "=(C8/1000)*D8"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E9",
+   "literal": "1000",
+   "formula": "=(C9/1000)*D9"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E10",
+   "literal": "1000",
+   "formula": "=(C10/1000)*D10"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E11",
+   "literal": "1000",
+   "formula": "=(C11/1000)*D11"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E12",
+   "literal": "1000",
+   "formula": "=(C12/1000)*D12"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E13",
+   "literal": "1000",
+   "formula": "=(C13/1000)*D13"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E14",
+   "literal": "1000",
+   "formula": "=(C14/1000)*D14"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E15",
+   "literal": "1000",
+   "formula": "=(C15/1000)*D15"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E16",
+   "literal": "1000",
+   "formula": "=(C16/1000)*D16"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E17",
+   "literal": "1000",
+   "formula": "=(C17/1000)*D17"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E18",
+   "literal": "1000",
+   "formula": "=(C18/1000)*D18"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G21",
+   "literal": "0.33",
+   "formula": "=G20/0.33"
+  },
+  {
+   "producto": "guia-restaurante-nikkei",
+   "fichero": "escandallo-maestro-nikkei.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G22",
+   "literal": "1.10",
+   "formula": "=G21*1.10"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E6",
+   "literal": "1000",
+   "formula": "=(C6/1000)*D6"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E7",
+   "literal": "1000",
+   "formula": "=(C7/1000)*D7"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E8",
+   "literal": "1000",
+   "formula": "=(C8/1000)*D8"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E9",
+   "literal": "1000",
+   "formula": "=(C9/1000)*D9"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E10",
+   "literal": "1000",
+   "formula": "=(C10/1000)*D10"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E11",
+   "literal": "1000",
+   "formula": "=(C11/1000)*D11"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E12",
+   "literal": "1000",
+   "formula": "=(C12/1000)*D12"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E13",
+   "literal": "1000",
+   "formula": "=(C13/1000)*D13"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E14",
+   "literal": "1000",
+   "formula": "=(C14/1000)*D14"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "E15",
+   "literal": "1000",
+   "formula": "=(C15/1000)*D15"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G18",
+   "literal": "0.30",
+   "formula": "=G17/0.30"
+  },
+  {
+   "producto": "guia-restaurante-peruano",
+   "fichero": "escandallo-maestro-peruano.xlsx",
+   "hoja": "Escandallo",
+   "celda": "G19",
+   "literal": "1.10",
+   "formula": "=G18*1.10"
+  }
+ ],
+ "contrato_para_los_grupos": {
+  "modulo": "guias-v2_0/grupo_a.py | grupo_b.py | grupo_c.py",
+  "simbolos": {
+   "FICHEROS": "lista de nombres de fichero (o `def ficheros(ctx)`)",
+   "PROPIOS": "ficheros donde el §1 del motor NO se aplica (el grupo se encarga entero)",
+   "pre(wb, fname, cambios, contenido)": "antes de motor.aplicar",
+   "post(wb, fname, cambios, registro, contenido)": "tras motor.aplicar",
+   "demos(carpeta, origen, destino, contenido)": "dict; su clave 'fallos' entra al veredicto"
+  },
+  "firmas_flexibles": "main._llamar() inspecciona la firma y pasa sólo los argumentos declarados: un grupo escrito con la firma corta del kit-plan-financiero funciona sin cambios.",
+  "contenido_por_producto": "guias-v2_0/contenido_<pid con guiones bajos>/a.py|b.py|c.py",
+  "primitivas_del_motor": [
+   "f / val / iferror  — toda fórmula queda en motor.REGISTRO y main.py verifica su caché una por una",
+   "a_formula(ws, coord, formula, celda_ejemplo=...) — §1.2: convierte una constante en fórmula depositando el número viejo como dato de ejemplo en la celda de entrada, y lo anota",
+   "escribir_parametro(ws, fila, colEtiq, colValor, clave, col_nota) — §1.5/§7-bis.3/§7-bis.16 con PARAMETROS[iva_restauracion|ss_empresa|smi_anual]",
+   "semaforo_isnumber / semaforo_texto / regla_expresion — §1.6, siempre purgando el rango antes",
+   "dv_lista / dv_numerica / dv_porcentaje(0-0,95) / dv_fecha — §1.7, todas con showErrorMessage",
+   "formato_por_etiqueta / formato_ficha / tipo_por_etiqueta — §1.4",
+   "verde / quitar_verde / marcar_editable / permitir_negativo / limpiar_rango — §1.3",
+   "molde_checklist / variante_pl / opciones_dv / fila_cabecera_tabla / cabeceras — §1.1",
+   "ensanchar_etiquetas / anchos / arreglar_cabecera_escandallo — §1.12",
+   "literales_sospechosos / contadores — auditoría"
+  ],
+  "no_tienen_que_ocuparse_de": [
+   "protección",
+   "hoja Instrucciones",
+   "bio y línea de versión",
+   "nombre de la pestaña",
+   "formato por tipo de dato",
+   "DV de las celdas verdes",
+   "bloque de resumen de los checklists",
+   "metadata"
+  ]
+ },
+ "parametros_normativos_en_celda": {
+  "iva_restauracion": {
+   "valor": 0.1,
+   "nota": "PARAMETROS del motor; §1.5(a)"
+  },
+  "ss_empresa": {
+   "valor": 0.33,
+   "nota": "§7-bis.3"
+  },
+  "smi_anual": {
+   "valor": 17094.0,
+   "nota": "1.221 €/mes × 14 pagas = 17.094 €/año — Real Decreto 126/2026, de 18 de febrero (BOE-A-2026-3815), efectos desde el 1-ene-2026; el convenio provincial de hostelería prevalece si fija un mínimo superior. §7-bis.16"
+  },
+  "advertencia": "el motor NO los escribe en ninguna hoja por su cuenta: expone la primitiva `escribir_parametro()` y las notas. Quién los coloca y dónde es de grupo_a (plan-financiero) y grupo_c (plantilla-turnos-brigada), §2.3 y §4.4."
+ },
+ "dudas_para_el_orquestador": [
+  "¿La columna «Responsable» del molde A y «Proveedor» del molde C se quedan en verde? Es lo que hace el motor hoy, y el argumento es la protección: sin verde son de sólo lectura. Si se prefiere que el responsable venga fijado por el producto, hay que quitarlas de motor.ENTRADAS.",
+  "La nota de base de IVA queda por duplicado en los libros donde cabe en A3: en la hoja y otra vez en Instrucciones. ¿Se deja así (la de la hoja es la que se lee con el fichero abierto) o sólo una?",
+  "El molde B se queda sin fila TOTAL por §7-bis.17, pero SÍ tiene importes en dos ficheros de panadería (`checklist-equipamiento.xlsx` D/E = «Precio min €»/«Precio max €», numéricos) y textos de rango en otro (`checklist-marketing-preapertura.xlsx` D = «Coste orientativo» con valores como «600-1.800€»). Un TOTAL mín-máx del equipamiento sería calculable sin inventar nada: ¿se hace, o sigue fuera de alcance hasta que lo pida John?",
+  "§9 exige «0 xlsx con 0 fórmulas» salvo formularios declarados. Tras el motor quedan sin una sola fórmula: cronograma-apertura-gantt (los 7), plantilla-turnos-brigada (los 7), plan-fermentacion-y-produccion (panadería) y calculadora-ticket-medio / pl-mensual-escenarios del representante. Los desbloquean grupo_b (§3.5) y grupo_a/c (§2.1, §2.2, §4.4): confirmo que el motor no los toca y que ese gate se mide al final de T1, no ahora.",
+  "TEC-09 (`plan-financiero!'P&L Mensual'!B35` «Margen EBITDA» en `#,##0.00 €` debiendo ir en `0.0%`) NO lo arregla el motor: su etiqueta de fila no lleva «(%)» y la cabecera de su columna dice «Importe (€)», así que el §1.4 automático respeta la columna. Queda explícitamente para grupo_a (§2.3.3), que tiene que llamar a `motor.formato_por_etiqueta` o fijar el formato a mano."
+ ],
+ "pendiente": [
+  "grupo_a.py (§2), grupo_b.py (§3) y grupo_c.py (§4) — el motor ya corre con `--solo motor` y con los que aparezcan",
+  "contenido_<pid_>/a.py|b.py|c.py para las 8 guías",
+  "documentos.py y guion_<pid>.py (§5) — fuera del alcance del motor",
+  "la ejecución real con GUIAS_APPLY=1 y el canario de §9 (pl-mensual-escenarios.xlsx del representante), que hace el orquestador tras T5"
+ ]
+}
