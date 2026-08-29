@@ -2407,9 +2407,14 @@ def gate_formatos(wb, fname):
                                       'celda': c.coordinate, 'tipo':
                                       'importe con %', 'rotulo': rot[:50],
                                       'formato': fmt})
+                # un rótulo que declara euros («Coste anual … (€)») manda
+                # sobre la cabecera de su columna: si no, toda celda de
+                # importe que caiga bajo una columna llamada «Personas» se
+                # marcaba como recuento con € (RD-10, bloque nuevo de
+                # crecimiento de plantilla)
                 if not col_euro and not col_ratio and '€' in fmt \
-                        and ((RX_RECUENTO.search(rot)
-                              and not RX_EURO_FUERTE.search(rot))
+                        and not RX_EURO_FUERTE.search(rot) \
+                        and (RX_RECUENTO.search(rot)
                              or RX_RECUENTO.search(cab_col)):
                     fuera.append({'fichero': fname, 'hoja': ws.title,
                                   'celda': c.coordinate,
