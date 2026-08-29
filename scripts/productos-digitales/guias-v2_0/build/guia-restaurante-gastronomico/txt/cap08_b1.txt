@@ -1,0 +1,43 @@
+ ### El flujo: recepción, almacenamiento, mise en place, producción, pase y lavado
+
+La cocina de un restaurante de 65 plazas con servicio de ocho a doce pases por noche no se organiza por intuición, sino por flujo físico. El principio rector es la marcha adelante: el producto entra por un punto, avanza en una dirección y sale por otro, sin retrocesos. Eso significa que la recepción de mercancía se ubica en el extremo opuesto al pase, y que el lavado queda aislado del circuito de producción. Si un cocinero tiene que cruzar la zona de lavado para buscar una sartén limpia, el flujo se rompe y la cocina se convierte en un cuello de botella.
+
+La secuencia completa es: recepción, almacenamiento, mise en place, producción, pase y lavado. La recepción dispone de una banqueta de pesaje, un espacio para anotar albaranes y acceso directo a las cámaras. El almacenamiento se divide en seco, frío positivo y frío negativo, con estanterías de acero inoxidable y separación por familias: verduras, carnes, pescados, lácteos y huevos. La mise en place se realiza en mesas de trabajo independientes, cada una con su propia tabla de corte y su utillaje. La producción ocupa la línea caliente, la partida de frío y la pastelería. El pase es la frontera final, donde se emplata y se termina el plato antes de salir a sala. El lavado se sitúa al final del circuito, con salida directa hacia el office o la zona de recogida de vajilla.
+
+Para que la marcha adelante funcione, el sucio nunca cruza el limpio. La vajilla usada entra por una puerta del lavado, pasa por el túnel o la pila de tres senos, y sale por el otro lado, ya limpia, hacia el reparto de bandejas. Los carros de basura y los contenedores de residuos orgánicos se sacan por una salida independiente, nunca por la puerta de recepción de alimentos. Esta separación no es una preferencia estética: es la base de la seguridad alimentaria y de la eficiencia operativa. Un cocinero que recorre veinte metros de más por cada servicio pierde al final de la noche el equivalente a una hora de trabajo.
+
+### Las partidas y quién ocupa cada una
+
+La organización por partidas es la que permite que ocho o doce pases salgan sin retrasos. En una cocina de este tamaño, las partidas se reparten así:
+
+- **Entrantes y ensaladas**: una persona, con su mesa de frío, sus aliños preparados y sus raciones montadas en el momento. Es la partida más rápida, porque los primeros platos salen en los primeros minutos del servicio.
+- **Carnes**: una persona, con su plancha, su salamandra y su horno de convección. Gestiona los puntos de cocción y los descansos de las piezas.
+- **Pescados**: una persona, con su freidora, su plancha y su horno. Trabaja con piezas delicadas que no admiten espera.
+- **Guarniciones y salsas**: una persona, que mantiene las salsas calientes, saltea las guarniciones y monta los acompañamientos. Esta partida es la que más se satura, porque depende de las dos anteriores.
+- **Postres y pastelería**: una persona, que trabaja en frío y tiene su propio horno y su cámara de postres. No depende del ritmo de la línea caliente.
+- **Pase**: el jefe de cocina o el segundo, que recibe las comandas, marca los tiempos, corrige el emplatado y da el visto bueno final. Es la única persona que no cocina, pero la que más ve.
+
+Cada partida tiene su espacio físico delimitado, su batería asignada y su propia zona de mise en place. Las mesas de trabajo se colocan en línea o en isla, pero siempre con la misma lógica: el producto crudo llega por un lado, el cocinado sale por el otro. Las cámaras de refrigeración se sitúan cerca de las partidas que más las usan: la de pescados junto a la partida de pescados, la de carnes junto a la de carnes. Así se reduce el desplazamiento y se evita que un cocinero tenga que atravesar toda la cocina para buscar un ingrediente.
+
+El cuarto frío merece una mención especial, porque conecta directamente con el capítulo de APPCC. Los crudos y los marinados obligan a congelación preventiva y a separación física. La cámara de carnes no comparte estante con la de pescados, y los marinados se guardan en recipientes cerrados, etiquetados con fecha de elaboración y caducidad. La congelación preventiva se aplica a los pescados que van a consumirse en crudo o semicrudos, como el atún o la caballa, para eliminar parásitos. Esta práctica no es opcional: es un requisito sanitario que se audita. La separación física de los crudos y los marinados no se resuelve con un color de tabla, sino con cámaras distintas o, como mínimo, con estantes separados dentro de la misma cámara.
+
+### El pase: dimensión, altura, iluminación y tiempos
+
+El pase es el corazón de la cocina, y su diseño condiciona el ritmo de todo el servicio. La dimensión mínima para una cocina de 65 plazas es de tres metros lineales de pase, con una profundidad de trabajo de un metro. Esa superficie debe albergar la lámpara de calor, las placas de emplatado, los platos calientes y la zona de aliños finales. La altura del pase se fija entre 90 y 95 centímetros, que es la altura de trabajo cómoda para un cocinero de pie. Si el pase es más alto, se fuerza la espalda; si es más bajo, se pierde precisión en el emplatado.
+
+La iluminación del pase no es la iluminación general de la cocina. Sobre el pase se instalan luces puntuales, orientables, con una temperatura de color de 4.000 a 5.000 kelvin, que permiten ver el color real de los alimentos sin sombras. La luz general de la cocina se mantiene en 500 lux, pero sobre el pase se eleva a 800 lux. Esa diferencia no es cosmética: un emplatado con una salsa oscura sobre un plato blanco necesita luz direccional para que el contraste se aprecie. La lámpara de calor, por su parte, se regula a una potencia que mantenga el plato a 65 grados sin resecar la superficie.
+
+Los tiempos en el pase se gestionan con la comanda. Cada plato tiene un tiempo de salida asignado: los entrantes, de 4 a 6 minutos; los principales, de 8 a 12 minutos; los postres, de 3 a 5 minutos. El jefe de cocina marca el ritmo y decide qué plato se emplata primero. Para que esto funcione, el pase tiene que estar aislado del ruido de la campana y del lavado, pero visible desde la línea caliente. Una ventana de paso entre el pase y la sala permite que el maître vea el estado de la cocina sin entrar en ella. Esa ventana no es un lujo: es una herramienta de coordinación.
+
+El dimensionado eléctrico y de extracción es una partida que se decide en el proyecto, no en la compra del equipo. La campana de extracción se calcula por el volumen de la cocina y por el tipo de fuego: una cocina con parrilla de carbón necesita más caudal que una con inducción. La potencia eléctrica contratada se fija en función de los equipos que van a funcionar simultáneamente en hora punta, no de la suma de todas las potencias nominales. Si se instala una freidora de 9 kW y un horno de 12 kW, pero nunca se usan a la vez, la contratación se calcula con el factor de simultaneidad. Este cálculo lo hace un ingeniero, no el proveedor de electrodomésticos. Un error en esta fase se paga todos los meses en la factura de la luz, y no se corrige sin obras.
+
+En cuanto al equipamiento, el plan financiero recoge las siguientes partidas, que se detallan en la tabla de CAPEX del capítulo siguiente:
+
+- Equipamiento de cocina caliente en el plan: 78.000,00 €
+- Equipamiento de cocina fría en el plan: 42.000,00 €
+- Pastelería y obrador en el plan: 14.000,00 €
+- Zona de pase y expedición en el plan: 8.000,00 €
+- Plonge y lavado en el plan: 6.430,40 €
+- Almacenamiento y cámaras en el plan: 13.000,00 €
+
+Estas cifras son el total tasado del checklist de equipamiento, y ese total es un suelo: hay líneas del checklist sin importe asignado, así que un presupuesto real se irá por encima del rango alto de la calculadora. No se debe tomar esta tabla como un precio cerrado, sino como el punto de partida para negociar con los proveedores. El IVA que se aplica a estos equipos es el tipo general del 21 %, porque son bienes de inversión, no suministros de comidas. En la hoja «Inversión» de plan-financiero-3-anos.xlsx se detalla el desglose por partida, y esa hoja es la que se debe usar para cualquier modificación del presupuesto. La cocina no se compra por catálogo: se diseña, se mide, se presupuesta y se instala. Y ese proceso empieza por el flujo, no por la marca de la freidora.

@@ -1,0 +1,384 @@
+# Manual de Servicio de Sala — Fine Dining
+
+**Protocolo, guiones y fichas de formación · Bonus del pack «Cómo Montar un Restaurante Gastronómico»**
+
+*John Guerrero · AI Chef Pro · aichef.pro*
+
+Un manual para formar al equipo, no un índice de buenas intenciones: mise en place de sala, secuencia del menú pase a pase, tiempos objetivo, temperaturas de servicio, briefing previo, guiones literales para la casuística difícil y fichas de formación con criterios de evaluación. Empieza por el protocolo de alérgenos, que es el único apartado de este documento cuya omisión tiene consecuencias legales y sanitarias.
+
+**Versión 2.0 · agosto de 2026 · aichef.pro/guia-restaurante-gastronomico**
+
+---
+
+## Índice
+
+1. **Protocolo de Alérgenos en Sala** — los catorce alérgenos, quién responde, qué se pregunta y qué se registra.
+2. **Mise en Place de Sala y Briefing Previo** — qué se monta, quién lo revisa y qué se dice en el briefing.
+3. **Recepción, Acomodo y Toma de Comanda** — los primeros cinco minutos, que deciden el resto del servicio.
+4. **Secuencia del Menú Degustación, Pase a Pase** — marcaje, cambio de cubierto y de copa, tiempos entre pases y coordinación con el pase de cocina.
+5. **Servicio de Vinos: Temperaturas, Decantación y Maridaje** — cómo se presenta, se abre, se sirve y se repone cada tipo de vino.
+6. **Gestión de Quejas y Casuística Difícil** — guiones literales para lo que sale mal, con quién decide y hasta dónde.
+7. **Reservas, No-Show, Prepago y Gestión de la Cuenta** — la política que protege la caja sin espantar al cliente.
+8. **Fichas de Formación y Evaluación del Equipo** — qué tiene que saber cada puesto, cómo se enseña y cómo se comprueba.
+9. **Protocolo VIP, Ocasiones Especiales y Cierre del Servicio** — qué se hace distinto, qué se registra y cómo se cierra la sala.
+
+---
+
+## 1. Protocolo de Alérgenos en Sala
+
+### Quién responde y qué se pregunta al reservar y al sentar
+
+La responsabilidad operativa del protocolo de alérgenos recae en el maître, tal y como queda asignado en el checklist de APPCC de este pack. No es una delegación que pueda trasladarse al jefe de cocina ni al sumiller: el maître es quien recibe la reserva, quien conduce la conversación en la mesa y quien firma el registro. Si esa figura no está presente en el servicio, la función la asume el jefe de sala con la misma obligación.
+
+Al reservar, la pregunta no es «¿tiene alguna alergia?», porque invita a un sí o un no sin matices. La pregunta correcta es: «¿Hay alguna intolerancia o alergia alimentaria que debamos tener en cuenta para preparar su visita?». Esa formulación abre la puerta a información voluntaria y no presupone nada. Si la respuesta es afirmativa, se anota en el gestor de reservas con la etiqueta de dato sensible y se traslada a la ficha de la mesa. Si la respuesta es negativa, no se anota nada: no se archiva una ausencia de alergia, porque eso no aporta valor y podría inducir a error en un servicio posterior.
+
+Al sentar al cliente, se repite la pregunta, aunque ya conste en la reserva. La razón es doble: confirmar que la información sigue vigente (puede haber cambiado desde la llamada) y detectar casos que no se declararon por teléfono. El guion en sala es breve y se hace en voz baja, sin interrumpir la presentación del menú: «Antes de nada, para asegurarnos de que todo sea seguro, ¿hay algún alimento que debamos evitar?». Si el cliente menciona un alérgeno, se le agradece la información y se le indica que cocina lo confirmará. No se debate ni se tranquiliza con frases hechas del tipo «no se preocupe, aquí controlamos»: se actúa.
+
+La lista de referencia es la del Anexo II del Reglamento (UE) 1169/2011, que recoge los catorce alérgenos de declaración obligatoria. Esa lista es la que aparece en la tabla de abajo, con su guion en sala. La información sobre alimentos no envasados, que es el caso de un menú degustación, se rige por el Real Decreto 126/2015. Ese decreto exige que la información esté disponible por escrito o por medios electrónicos, y que el personal pueda explicarla. No basta con que el maître sepa la respuesta: tiene que estar documentada y accesible.
+
+### Qué se comunica a cocina y qué queda registrado
+
+La comunicación a cocina es verbal y escrita, siempre ambas. En el momento en que el maître recibe la alerta, avisa al jefe de cocina o al encargado de partida por el intercomunicador o en persona, y a continuación rellena la ficha de alérgenos de la mesa. Esa ficha es un documento físico o digital que viaja con la comanda. No se admite la transmisión solo verbal, porque el servicio de un menú degustación tiene varios pases y la memoria no es un soporte fiable.
+
+En un menú degustación, la ficha de alérgenos se hace por pase. No es un único bloque: cada pase lleva su propia línea, con el nombre del plato, los alérgenos presentes y la acción tomada (sustitución, retirada de un elemento, cambio de guarnición). Así, si el pase tres lleva un fondo de frutos secos y el cliente es alérgico a los frutos secos, la ficha lo indica en ese pase concreto, y el cocinero que lo emite lo verifica antes de emplatar. La ficha se cierra con la firma del maître y la del jefe de cocina, y se archiva al final del servicio.
+
+El registro tiene dos niveles. El primero es la ficha de mesa, que se guarda durante el servicio y se destruye al día siguiente, salvo que haya habido una incidencia. El segundo es el libro de registro de alérgenos, donde se anotan las alertas declaradas, las acciones tomadas y cualquier sustitución realizada. Ese libro se conserva durante el periodo que exige la normativa de APPCC, y es el documento que se muestra en una inspección.
+
+Un dato de alergia es un dato de salud. Eso implica que se trata con especial cuidado: no se comenta en voz alta en la sala, no se escribe en la comanda visible para otros comensales, y no se comparte con personal que no necesite saberlo para ejecutar el servicio. Solo se guarda si hay base para ello: es decir, si el cliente lo ha declarado y existe una obligación de trazabilidad. No se archivan alergias de clientes que no han venido, ni se conservan datos de una visita para usarlos en otra sin consentimiento. El registro se limita a lo necesario, y el acceso queda restringido al maître y a cocina.
+
+**Los catorce alérgenos de declaración obligatoria y su guion en sala**
+
+| # | Alérgeno | Qué se pregunta y qué se responde en sala |
+|---|---|---|
+| 1 | Cereales con gluten | Confirmar si es celiaquía o intolerancia; el pan propio y las masas se sustituyen, no se retiran del plato |
+| 2 | Crustáceos | Revisar fondos y jugos: la traza más frecuente no está en el pase, está en la salsa |
+| 3 | Huevos | Afecta a yemas curadas, helados, merengues y emulsiones |
+| 4 | Pescado | Revisar fumets, garum y gelatinas |
+| 5 | Cacahuetes | Revisar pralinés y aceites de repostería |
+| 6 | Soja | Revisar salsa de soja, miso propio y lecitina de las emulsiones |
+| 7 | Leche y lactosa | Distinguir alergia a la proteína de intolerancia a la lactosa: no es el mismo cambio |
+| 8 | Frutos de cáscara | Preguntar por cuál en concreto y anotarlo en la comanda |
+| 9 | Apio | Está en casi todos los fondos de verdura |
+| 10 | Mostaza | Vinagretas y encurtidos |
+| 11 | Sésamo | Panes, crujientes y aceites |
+| 12 | Sulfitos | Vinos y vinagres: afecta también al maridaje |
+| 13 | Altramuces | Harinas sin gluten y encurtidos |
+| 14 | Moluscos | Ostra, navaja, almeja y sus jugos |
+
+*La comanda con alérgeno se canta en voz alta en el pase y se confirma de vuelta. El plato modificado sale marcado y lo lleva siempre la misma persona hasta la mesa.*
+
+
+---
+
+## 2. Mise en Place de Sala y Briefing Previo
+
+### Mise en place de sala, paso a paso
+
+La mise en place de sala no empieza cuando se abre la puerta, sino la mañana anterior, con la verificación de reservas y la asignación de secciones. Con una sala de 24 plazas y una previsión de 70 cubiertos al día, el montaje se organiza en tres bloques: limpieza y reposición, montaje de mesas y mise en place de estaciones. El primer bloque, de 9:00 a 10:30, incluye aspirado, pulido de copas y cubertería, y reposición de pan, mantequilla y sal. El segundo, de 10:30 a 12:00, se dedica al montaje de mesas: mantelería impecable, vajilla alineada a un dedo del borde, copas según el menú del día y cubiertos ordenados de fuera hacia dentro. El tercer bloque, de 12:00 a 12:45, prepara las estaciones: la de pan, la de aguas y la de vinos, con su dotación de utensilios y productos de reposición. A las 12:45 se realiza el pase de sala: el jefe de rangos revisa cada mesa, cada estación y cada detalle de iluminación y temperatura. Cualquier incidencia se corrige antes de las 13:00, momento en que el equipo se reúne para el briefing. Los tiempos son estrictos porque la apertura no admite improvisación: un mantel arrugado o una copa con huella se percibe en el primer servicio.
+
+### El briefing pre-servicio: guion y duración
+
+El briefing comienza a las 13:00 y no supera los quince minutos. Se celebra con todo el equipo de sala en pie, frente a la pizarra de servicio, y lo dirige el jefe de rangos o el maître. El guion es fijo y se sigue en este orden: primero, los pases del día; segundo, las roturas y bajas de material; tercero, los alérgenos y restricciones alimentarias de las reservas; cuarto, las reservas VIP y los cumpleaños; quinto, el reparto de rangos y secciones. Los pases del día se anuncian con su nombre, los ingredientes principales y el tiempo de emplatado, para que cada camarero pueda describirlos con precisión. Las roturas se comunican en voz alta y se anotan en el parte, indicando qué pieza falta y quién la repone antes del servicio. Los alérgenos se leen de la lista de reservas: se nombra la mesa, el alergeno y el plato afectado, y se confirma que el cocinero ha recibido la misma información. Las reservas VIP y los cumpleaños se asignan a un camarero concreto, que será responsable de la atención especial, el detalle de bienvenida y, en su caso, el postre con vela. El reparto de rangos se hace por secciones: cada camarero conoce su número de mesas, su rango de acción y su apoyo en la estación de pan y aguas. El briefing termina con la confirmación de que cada miembro del equipo ha entendido su parte; si alguien tiene dudas, se resuelven en ese momento, nunca durante el servicio. La duración es fija: quince minutos, ni uno más, porque el tiempo de preparación ya está invertido y el objetivo es que el equipo salga a sala con la información fresca y la actitud activa. La tabla de abajo resume la mise en place de sala con los responsables y las horas límite de cada tarea; el cuadro siguiente detalla el guion del briefing con sus tiempos asignados.
+
+**Mise en place de sala con responsable y hora límite**
+
+| Tarea | Responsable | Hora límite | Cómo se verifica |
+|---|---|---|---|
+| Repaso de cristalería a contraluz | Camarero de rango | T menos 90 min | Muestreo de 10 copas por rango |
+| Montaje de mesas y alineación | Jefe de rango | T menos 75 min | Revisión visual del maître |
+| Repaso de cubertería y reposición | Runner | T menos 75 min | Cajón de repaso completo |
+| Puesta a punto del gueridón y carros | Jefe de rango | T menos 60 min | Material completo y limpio |
+| Comprobación de temperaturas de vinos | Sumiller | T menos 60 min | Termómetro y registro |
+| Lectura de reservas, alergias y notas | Maître | T menos 45 min | Impreso de sala firmado |
+| Briefing con cocina | Maître y chef | T menos 30 min | Todo el equipo presente |
+| Prueba de iluminación y música | Maître | T menos 15 min | Escena de servicio activada |
+
+
+---
+
+## 3. Recepción, Acomodo y Toma de Comanda
+
+### Recepción y acomodo
+
+La llegada del cliente define el tono de toda la experiencia. En nuestro servicio de sala, la recepción no es un trámite: es el primer acto de un ritual que debe transmitir seguridad, calidez y precisión. El objetivo es que el comensal se sienta esperado, no atendido por obligación.
+
+El protocolo comienza en la puerta. El responsable de recepción, o el maître en su defecto, debe estar posicionado en un punto visible, sin barreras físicas, y con las manos libres. Al ver llegar al cliente, se le recibe con una sonrisa genuina y contacto visual directo. La frase de bienvenida es fija, pero se adapta al momento del día: «Buenas tardes, bienvenido a [nombre del restaurante]. ¿Tiene reserva o prefieren una mesa en nuestra sala?». Si hay reserva, se confirma el nombre y se comprueba en el libro o sistema. Si no la hay, se ofrece la primera opción disponible sin mostrar prisa ni incomodidad.
+
+El tiempo de espera para acomodar a un cliente con reserva no debe superar los dos minutos desde que cruza la puerta. Si la mesa no está lista, se le invita a pasar a la zona de espera o al bar, y se le ofrece una bebida de cortesía —agua con gas o sin gas, o una copa de cava— mientras se termina de preparar. En ese caso, el maître debe volver personalmente a buscarle en un máximo de cinco minutos. Nunca se deja a un cliente esperando sin información.
+
+El acomodo en la mesa sigue un orden: el maître o el camarero con rango superior conduce al cliente, camina ligeramente por delante, y al llegar a la mesa, retira la silla principal —la que da mejor vista o la que está orientada a la entrada— y espera a que el comensal se siente. Después, se colocan las servilletas en el regazo de cada uno, comenzando por el invitado de honor si se conoce, o por la persona de mayor edad. En ese momento, se entrega la carta y la carta de vinos, siempre abiertas por la primera página, y se anuncia: «Les dejo la carta. Cuando quieran, estaré encantado de asesorarles». El camarero se retira sin dar la espalda, con un paso firme pero discreto.
+
+Durante el acomodo, se debe verificar que la mesa tenga todo el mise-en-place correcto: cubiertos completos, copas limpias sin huellas, pan caliente y agua a la temperatura adecuada. Si falta algo, se corrige antes de que el cliente lo pida. La primera intervención del camarero en la mesa, tras la entrega de cartas, debe producirse en un máximo de tres minutos para preguntar si desean alguna bebida no alcohólica o aperitivo. Ese es el momento de ofrecer el pan artesano y la mantequilla, si no están ya en la mesa.
+
+### Toma de comanda y venta sugerida
+
+La toma de comanda es el momento en que el cliente deposita su confianza en nosotros. No se trata de anotar platos, sino de interpretar deseos y anticiparse a necesidades. El camarero debe acercarse a la mesa con un bloc y un bolígrafo, nunca con las manos vacías, y mantener una postura erguida, ligeramente inclinada hacia el cliente, sin apoyarse en la mesa ni invadir el espacio personal.
+
+Antes de tomar la comanda, se ofrece la explicación del menú. El guion es flexible, pero debe incluir siempre los pilares de la casa: «Permítanme explicarles brevemente nuestra propuesta. Trabajamos con producto de temporada y de proximidad. Hoy tenemos un menú largo de 130,00 € y un menú corto de 75,00 €. Ambos incluyen pan, aceite de oliva virgen extra y petit fours. Además, ofrecemos un maridaje opcional por 60,00 €, que acompaña cada plato con una selección de vinos y cavas. ¿Les apetece que les detalle algún plato en concreto?». Esta explicación debe durar menos de un minuto y se adapta al ritmo del cliente: si muestra prisa, se resume; si muestra interés, se profundiza en dos o tres elaboraciones.
+
+La pregunta de alérgenos es obligatoria, no opcional. Se formula de manera natural, sin alarmismo: «Antes de nada, ¿alguien tiene alguna alergia, intolerancia o restricción alimentaria que debamos tener en cuenta? Nuestra cocina puede adaptar la mayoría de los platos». Esta pregunta se hace siempre, incluso si el cliente ya ha comido antes en el restaurante. La respuesta se anota en la comanda de forma clara, con una «A» mayúscula junto al plato afectado, y se comunica verbalmente al jefe de cocina antes de que comience el servicio.
+
+La venta sugerida no es una presión, es una recomendación honesta. El camarero debe conocer la carta al detalle y saber qué plato está en su mejor momento. Por ejemplo, si el pescado del día está especialmente fresco, se sugiere: «Hoy les recomiendo el lenguado a la plancha con salsa meunière, está en su punto óptimo». También se puede sugerir un vino por copas que armonice con el plato elegido, o un postre ligero si el cliente ha pedido un menú contundente. La clave es ofrecer siempre una opción, nunca dos o tres, para no abrumar. La comanda se repite al final, en voz alta y clara, para confirmar cada plato y cada punto de cocción: «Entonces, para empezar, la ensalada de tomate con burrata; de segundo, el solomillo al punto; y de postre, la tarta de queso. ¿Correcto?». Esta repetición evita errores y transmite profesionalidad.
+
+El tiempo objetivo para tomar la comanda completa, desde que el cliente cierra la carta hasta que el camarero se retira, es de cinco minutos como máximo. Si el cliente duda, se le ofrece más tiempo y se retira discretamente, pero se vuelve a los dos minutos para preguntar si necesita ayuda. La comanda se introduce en el sistema de cocina inmediatamente, antes de servir la siguiente mesa, y se marca la hora de entrada para controlar los tiempos de cocina. Con esta sistemática, aseguramos que el cliente recibe su primer plato en un máximo de quince minutos desde la toma de comanda, salvo que la elaboración requiera más tiempo, en cuyo caso se le informa de antemano.
+
+**Tiempos objetivo de los primeros minutos**
+
+| Momento | Tiempo objetivo | Quién | Señal de que algo va mal |
+|---|---|---|---|
+| Saludo desde que se abre la puerta | menos de 15 segundos | Hostess | El comensal busca con la mirada |
+| Acomodo en mesa | menos de 2 minutos | Hostess o maître | Espera de pie en la entrada |
+| Ofrecimiento de agua y aperitivo | menos de 3 minutos | Jefe de rango | Mesa sin nada sobre el mantel |
+| Explicación del menú | menos de 5 minutos | Jefe de rango | El comensal pregunta antes de que se le explique |
+| Toma de comanda cerrada | menos de 8 minutos | Jefe de rango | Cocina sin comanda a los 10 minutos |
+| Primer pase en mesa | menos de 15 minutos | Runner | Silencio prolongado en la mesa |
+
+
+---
+
+## 4. Secuencia del Menú Degustación, Pase a Pase
+
+### Marcaje, servicio y retirada
+
+El marcaje de la mesa se resuelve antes de que entre el primer pase. Cada comensal tiene un número de orden en el sentido horario, asignado en el momento de sentarse: el invitado de honor es el 1, el anfitrión el último. Ese número se anota en la comanda interna y en el plan de mesa del jefe de rango. No se memoriza: se escribe, porque con ocho o doce pases y cambios de vajilla, la memoria falla y la mesa lo nota.
+
+El servicio en plato emplatado se sirve y se retira **por la derecha** del comensal. Esta es la regla que la edición anterior enseñaba al revés, y la corregimos con carácter normativo: la derecha es para todo lo que llega ya montado en el plato desde cocina. La izquierda queda reservada exclusivamente para el servicio en fuente: cuando se trincha, se flambea o se presenta una pieza entera en la mesa y se sirve desde la bandeja. En ese caso, el comensal tiene el plato base a su izquierda y el camarero sirve desde la izquierda, con la fuente en la mano izquierda y el utensilio en la derecha. Pero si el plato sale emplatado de cocina, la derecha es la única vía, tanto para posar como para retirar.
+
+El orden de servicio es siempre en sentido horario, comenzando por el invitado de honor y terminando por el anfitrión. El anfitrión es quien cata, y por eso se le sirve el último: así prueba el plato en las mismas condiciones que sus invitados, pero con el margen de unos segundos que le permiten verificar la temperatura y el punto antes de que nadie más haya empezado. No se sirve «empezando por las señoras», ni por la persona de mayor edad, ni por la que está más cerca de la puerta. El protocolo es único: horario desde el invitado de honor. Si no hay invitado de honor declarado, se comienza por el comensal situado a la derecha del anfitrión, y se continúa en el mismo sentido.
+
+La retirada sigue el mismo orden y el mismo lado. Se retira por la derecha, con el plato en la mano derecha y el cubierto usado sobre el plato, sin apilar. Cuando se retira un plato, se retira también el pan y la mantequillera si el pase no los requiere; pero la copa de agua y la de vino permanecen en su sitio. El marcaje de la mesa incluye la posición de cada copa según el maridaje del pase, y el jefe de rango verifica antes de cada servicio que las copas correctas están en su sitio. Si un comensal no toma vino, se retira la copa correspondiente y se sustituye por una de agua, sin comentarios.
+
+### Tiempos entre pases y coordinación con cocina
+
+El tiempo objetivo entre pases es de tres a cuatro minutos desde que se retira el plato anterior hasta que se sirve el siguiente. Ese margen incluye el cambio de cubertería, la reposición de pan si procede, y el relleno de copas si el maridaje lo exige. En un menú de diez pases, el servicio completo debe durar entre dos horas y dos horas y media, y la tabla de abajo detalla la secuencia con los tiempos objetivo por pase. Esa tabla es la referencia operativa: no se improvisa sobre ella, se ejecuta.
+
+Si el tiempo se desajusta, la decisión no la toma el camarero: la toma el jefe de rango, que se comunica con cocina por el interfono o por el pase de cocina. Cuando el retraso supera los cinco minutos, se actúa en dos frentes. Primero, se informa a la mesa con una disculpa breve y sin detalles técnicos: «Cocina está terminando el siguiente pase, disculpe la espera». Segundo, se ofrece un recurso de cortesía: reposición de pan, un sorbo de vino o, si el retraso es superior a siete minutos, un pequeño amuse de cocina que no esté en el menú. Nunca se deja la mesa sin atención durante un retraso; la presencia del camarero en el lateral, con la botella de agua en la mano, ya comunica que el servicio sigue vivo.
+
+Cuando el retraso es de cocina, el jefe de rango decide si se ralentiza el ritmo de la mesa: se retira la cubertería con más pausa, se rellena el agua, se ofrece pan. Cuando el retraso es de sala —una mesa que se ha levantado al baño, una conversación que se alarga—, el jefe de rango avisa a cocina para que mantenga el pase en caliente o lo retrase, siempre con el criterio de que el plato no pierda punto. La coordinación se apoya en el golpe de cocina: el camarero anuncia el pase que va a servir y el número de cubiertos, y cocina confirma. Si la mesa ha cambiado de número de comensales —alguien se ha ido, alguien ha llegado—, se avisa antes de que cocina emplace.
+
+El ritmo lo marca la mesa, no el reloj. Los tiempos objetivo son una guía, pero la lectura de la mesa —si los comensales están conversando, si han dejado el tenedor sobre el plato, si piden pan— prevalece sobre el cronómetro. Un pase que llega cuando la mesa está en plena conversación se sirve igual, pero el camarero lo posa con un movimiento más lento y sin interrumpir. La tabla de abajo da los tiempos de referencia; el criterio del jefe de rango ajusta el matiz.
+
+**Secuencia de un menú de diez pases con tiempos objetivo**
+
+| Momento del servicio | Acción de sala | Tiempo objetivo | Quién |
+|---|---|---|---|
+| Aperitivos | Marcaje sin cubierto, servicio a la mano | 0 a 10 min | Jefe de rango |
+| Pase 1 a 3 (fríos) | Marcaje previo, servicio por la derecha, retirada por la derecha | 8 a 12 min entre pases | Runner y jefe de rango |
+| Cambio a pases calientes | Cambio completo de cubertería y repaso de mesa | menos de 3 min | Jefe de rango |
+| Pase 4 a 7 (principales) | Servicio por la derecha, salsa en mesa si procede | 10 a 14 min entre pases | Jefe de rango |
+| Cambio de copa por maridaje | Copa nueva por vino, retirada de la anterior | antes del pase | Sumiller |
+| Prepostre y postres | Repaso de mesa completo y cambio de cubertería | 8 a 10 min entre pases | Jefe de rango |
+| Petit fours y café | Servicio en mesa o en zona de sobremesa | 5 a 8 min | Jefe de rango |
+| Cuenta | Se presenta solo cuando se pide | menos de 4 min desde la petición | Maître |
+
+
+---
+
+## 5. Servicio de Vinos: Temperaturas, Decantación y Maridaje
+
+### Presentación, apertura y cata del anfitrión
+
+El servicio de vinos comienza antes de que la botella llegue a la mesa. Quien toma la comanda del vino asume la responsabilidad de la cata, y esa persona es el anfitrión de la mesa. El protocolo exige que el sumiller o el camarero presente la botella con la etiqueta orientada hacia el anfitrión, anunciando denominación, añada y bodega sin leer la etiqueta como si fuera un inventario. La apertura se hace en la mesa, con sacacorchos de palanca o de cuchilla, nunca con sacacorchos de aire si el vino tiene depósito. Se limpia el cuello con un paño limpio, se extrae el corcho y se ofrece al anfitrión para su inspección; el corcho no se huele como prueba de calidad, sino que se observa para detectar humedad o defectos evidentes.
+
+La cata la realiza quien ha pedido el vino. Se sirve una pequeña cantidad, apenas un dedo de vino, en la copa del anfitrión. Este evalúa el aspecto, el aroma y el sabor. El sumiller espera en silencio, sin invadir la decisión. Si el anfitrión aprueba, el servicio continúa: se sirve primero a los comensales que no son el anfitrión, en orden de mesa, y se termina rellenando la copa del anfitrión. Ese orden no es un capricho: garantiza que la persona que ha validado el vino recibe la última ración, la que cierra el servicio, y evita que el anfitrión se quede con una copa a medio llenar mientras los demás esperan.
+
+El sumiller no es un vendedor. Su función es sugerir dentro de un margen conocido. La bodega del pack tiene un margen medio sobre PVP del 63,8 % (budget-bodega.xlsx, hoja «Bodega»), lo que permite ofrecer una copa media a 14,00 € (calculadora-ticket-medio.xlsx, hoja «Ticket Medio») o un maridaje completo a 60,00 € (calculadora-ticket-medio.xlsx, hoja «Ticket Medio») sin que la recomendación suene a presión comercial. Cuando el anfitrión duda entre dos referencias, se propone la que mejor encaja con el plato y con el ticket medio, y se menciona el precio con naturalidad. La decisión final siempre es del cliente.
+
+### Temperaturas, decantación y reposición
+
+Cada tipo de vino tiene una temperatura de servicio que no se negocia. La tabla de abajo recoge el protocolo completo; aquí dejamos los valores operativos que todo el equipo debe memorizar:
+
+- Espumosos y cavas: 6-8 °C.
+- Blancos jóvenes y rosados: 8-10 °C.
+- Blancos con crianza: 10-12 °C.
+- Tintos jóvenes: 14-16 °C.
+- Tintos con crianza: 16-18 °C.
+- Generosos y dulces: 12-14 °C.
+
+La temperatura se mide con termómetro de sonda en la propia botella, no en la cubitera. Un vino blanco excesivamente frío pierde aroma; uno tinto demasiado caliente acentúa el alcohol. La cubitera con hielo y agua se usa para bajar, y el decantador a temperatura ambiente para subir ligeramente un tinto que ha estado en cámara.
+
+La decantación responde a dos motivos: oxigenar y separar posos. Los tintos jóvenes con cuerpo se decantan para abrir el aroma, con un trasiego directo y enérgico. Los tintos viejos se decantan con suavidad, dejando la botella en reposo antes de servir y vertiendo en un solo movimiento para que el poso quede en el hombro de la botella. No todos los vinos necesitan decantador; un blanco con crianza puede airearse en copa. El criterio lo marca el sumiller, pero el camarero debe saber ejecutarlo.
+
+La reposición es un acto de atención, no de relleno automático. Se repone cuando la copa está baja, nunca antes, y se retira la botella vacía o el decantador vacío de la mesa. En el servicio por copas, la reposición se ofrece siempre antes de que el comensal termine la copa, y se anota en la comanda. Con una copa media a 14,00 € y un food cost medio de bebida del 36,2 % (budget-bodega.xlsx, hoja «Bodega»), la reposición tiene margen para ser generosa sin descuidar la rentabilidad. El maridaje completo, a 60,00 € (calculadora-ticket-medio.xlsx, hoja «Ticket Medio»), incluye una copa por plato y se sirve con el mismo orden: el anfitrión prueba cada vino antes de que se sirva al resto.
+
+**Temperaturas y protocolo por tipo de vino**
+
+| Tipo | Temperatura de servicio | Copa | Decantación |
+|---|---|---|---|
+| Espumoso | 6 a 8 °C | Copa de vino blanco de tiro alto | No |
+| Blanco joven | 8 a 10 °C | Copa de blanco | No |
+| Blanco con crianza | 10 a 12 °C | Copa de blanco amplia | Ocasional, para abrir |
+| Rosado | 8 a 10 °C | Copa de blanco | No |
+| Tinto joven | 13 a 15 °C | Copa de tinto | Ocasional |
+| Tinto con crianza | 15 a 17 °C | Copa de tinto amplia | Sí, para airear |
+| Tinto de guarda | 16 a 18 °C | Copa de tinto amplia | Sí, con cuidado del poso |
+| Generoso seco | 7 a 9 °C | Copa de catavinos | No |
+| Dulce | 8 a 10 °C | Copa pequeña | No |
+
+
+---
+
+## 6. Gestión de Quejas y Casuística Difícil
+
+### El método: escuchar, reconocer, resolver y registrar
+
+El protocolo de quejas no admite improvisación. Se compone de cuatro fases que el equipo debe ejecutar en orden estricto, y cada fase tiene un responsable y un límite de actuación. La primera fase, escuchar, consiste en dejar que el cliente termine su exposición sin interrumpir, sin justificarse y sin ofrecer soluciones prematuras. El camarero asiente, mantiene contacto visual y anota mentalmente los tres datos clave: qué ha fallado, cuándo se ha detectado y qué espera el cliente. No se escribe delante del cliente; se memoriza y se traslada al registro en cuanto se retira.
+
+La segunda fase, reconocer, implica verbalizar el problema sin admitir culpa ni negar la evidencia. La fórmula exacta es: «Entiendo perfectamente que esto no es lo que esperaba, y lamento que haya tenido esta experiencia». Esta frase la pronuncia el camarero o el jefe de rango, según la gravedad. Reconocer no es disculparse: es validar la percepción del cliente. Nunca se dice «ha sido un error del cocinero» ni «esto no suele pasar». Se dice «voy a resolverlo ahora mismo».
+
+La tercera fase, resolver, se divide en dos escalones. El primer escalón lo ejecuta el camarero o el jefe de rango sin consultar a nadie, siempre dentro del catálogo de gestos que detallamos en la tabla de abajo. El segundo escalón requiere la intervención del maître o de dirección, según el importe o la naturaleza de la compensación. El criterio es simple: si la solución no implica retirar un plato, cambiar una botella o invitar a un postre, la decide el jefe de rango. Si implica descontar una parte de la cuenta, invitar una botella de más de 40 euros o modificar las condiciones de una reserva, la decide el maître. Si implica anular la cuenta completa, ofrecer una cena de compensación o responder por escrito, la decide dirección.
+
+La cuarta fase, registrar, es la más olvidada y la más rentable. Cada incidencia se anota en la hoja de quejas del día, con fecha, mesa, número de comensales, descripción objetiva del problema, solución aplicada y responsable. Esa hoja se revisa en la reunión semanal de equipo, donde se analizan tres cosas: si el guion se ha cumplido, si la solución ha sido proporcionada y si el problema tiene un patrón repetitivo. Un mismo fallo tres veces en una semana no es una queja, es un defecto de proceso, y se deriva a cocina o a compras. El registro no es un castigo: es la única herramienta que convierte una queja en una mejora medible.
+
+### Casuística con guion literal y límite de decisión
+
+Cada caso tiene una frase literal que el equipo debe usar tal cual, un responsable que la pronuncia y un límite de decisión. La tabla de abajo recoge la casuística completa; aquí desarrollamos los cinco casos más frecuentes.
+
+- **Plato devuelto por temperatura o punto de cocción.** El camarero retira el plato y dice: «Lamento que no esté en su punto. Se lo rehago ahora mismo, y mientras tanto le ofrezco un aperitivo de la casa». Puede ofrecer ese aperitivo sin consultar. Si el cliente prefiere otro plato, el jefe de rango autoriza el cambio sin coste. Si el cliente pide que se retire el plato y no quiere nada más, el jefe de rango puede retirarlo de la cuenta. Si el cliente exige que se descuente también el vino que acompañaba al plato, decide el maître.
+
+- **Botella con corcho defectuoso o sabor alterado.** El sumiller retira la botella y dice: «Esta botella no está en condiciones óptimas. Se la cambio por otra igual o, si lo prefiere, por cualquier otra de la carta con el mismo precio». Puede ofrecer el cambio sin consultar. Si el cliente quiere una botella de precio superior, el sumiller puede ofrecer la diferencia a cargo de la casa hasta un máximo de 20 euros; por encima, decide el maître. Si el cliente rechaza cualquier sustituto y pide que se retire la botella de la cuenta, decide el maître.
+
+- **Tiempo de espera excesivo entre platos.** El jefe de rango se acerca a la mesa y dice: «Sé que la espera está siendo más larga de lo habitual y le pido disculpas. Su siguiente plato sale en cinco minutos, y mientras tanto les invito a unas copas de cava». Puede ofrecer el cava sin consultar. Si la espera supera los veinte minutos adicionales, el jefe de rango puede invitar un postre o un café por mesa, siempre que no supere los 30 euros. Por encima de esa cantidad, o si el cliente pide un descuento en la cuenta, decide el maître.
+
+- **Error en la cuenta o cargo duplicado.** El camarero retira la cuenta y dice: «Tiene toda la razón, hay un error en el desglose. Se lo corrijo ahora mismo y le entrego la cuenta correcta». Puede corregir el error sin consultar. Si el error supera los 50 euros o si el cliente pide una compensación adicional por las molestias, decide el maître. Si el cliente se niega a pagar hasta recibir una explicación por escrito, decide dirección.
+
+- **Alergia o intolerancia no comunicada en la reserva.** El jefe de rango se acerca y dice: «No tenemos constancia de esa alergia en su reserva, pero voy a consultar con cocina ahora mismo. Si no podemos garantizar la ausencia total del alérgeno, se lo diré con total transparencia». En ningún caso se sirve un plato con duda. Si cocina confirma que puede adaptar el plato, el jefe de rango autoriza el cambio sin coste. Si no puede, el maître decide retirar el plato de la cuenta y ofrecer una alternativa. Si el cliente presenta síntomas, dirección activa el protocolo sanitario y asume la responsabilidad legal.
+
+El registro de cada caso sigue el mismo formato: fecha, mesa, responsable, descripción, solución y coste de la compensación. La revisión semanal clasifica las incidencias por tipo y por responsable, y cualquier caso que haya requerido la intervención de dirección se analiza individualmente. Esa revisión no busca culpables: busca si el guion ha protegido al equipo y al cliente. Si un camarero ha improvisado una solución fuera de su límite, se corrige en la formación, no se sanciona. Si un límite ha resultado insuficiente en la práctica, se revisa en la reunión mensual de dirección y se actualiza la tabla.
+
+**Casuística, guion y límite de decisión**
+
+| Situación | Qué se dice | Quién decide | Hasta dónde se puede llegar |
+|---|---|---|---|
+| Plato fuera de punto | «Lo retiro ahora mismo y le traigo otro recién hecho; disculpe la espera.» | Jefe de rango | Rehacer el pase sin consultar |
+| Espera larga entre pases | «Se ha retrasado el pase; le traigo algo mientras y lo compenso al final.» | Jefe de rango | Ofrecer un aperitivo de cortesía |
+| Vino en mal estado | «Tiene usted razón, esta botella no está bien; abrimos otra.» | Sumiller | Cambiar la botella sin discutir |
+| Reserva no encontrada | «Vamos a resolverlo ahora mismo; deme un momento y le acomodo.» | Maître | Acomodar aunque descuadre el rango |
+| Alergia comunicada tarde | «Gracias por decírnoslo; paro el pase y lo revisamos con cocina.» | Maître | Detener el servicio de esa mesa |
+| Queja por la cuenta | «Se lo reviso línea a línea con usted ahora mismo.» | Maître | Corregir el error en el momento |
+| Comensal molesto por el ruido | «Le cambio de mesa si le parece; tengo una más tranquila.» | Maître | Reubicar aunque suponga mover el rango |
+| Queja en reseña posterior | Respuesta escrita, sin discutir y con invitación a volver | Dirección | Ofrecer una segunda visita |
+
+
+---
+
+## 7. Reservas, No-Show, Prepago y Gestión de la Cuenta
+
+### Política de reserva, depósito y cancelación
+
+La gestión de reservas en un restaurante de alta cocina exige un equilibrio entre flexibilidad y protección de la operación. Por eso, nuestra política se basa en tres pilares: confirmación inmediata, depósito vinculante y cancelación con plazo definido. Al realizar una reserva, el cliente recibe por escrito las condiciones, y el personal de sala las recuerda verbalmente al confirmar la víspera.
+
+- **Depósito**: se solicita un importe fijo por cubierto, que se descuenta del total de la cuenta al finalizar la comida. Para grupos de seis o más personas, el depósito equivale al 50% del ticket medio estimado sin bebidas alcohólicas. En reservas individuales o de pareja, se aplica una cantidad simbólica que cubre los costes de mise en place.
+- **Devolución**: el depósito se reembolsa íntegramente si la cancelación se produce con un mínimo de 48 horas de antelación. Entre 24 y 48 horas, se devuelve el 50%. Pasadas las 24 horas o en caso de no presentarse, el depósito no se reembolsa.
+- **Comunicación al reservar**: en el momento de la reserva, ya sea por teléfono, web o presencial, se informa de estos términos. Además, en la confirmación escrita se incluye un recordatorio de la política de cancelación y del importe del depósito.
+
+Esta política se detalla en la tabla de política de reservas que se inserta a continuación, donde se especifican los rangos de antelación y los porcentajes de devolución aplicables.
+
+### Cierre de mesa y gestión de cuenta
+
+El cierre de mesa es el momento crítico donde se materializa la experiencia y se asegura la rentabilidad. Nuestro procedimiento está estandarizado para evitar errores y agilizar el pago, manteniendo siempre la cortesía.
+
+- **Proceso de cierre**: el maître o el jefe de rangos revisa la comanda, verifica que todos los platos y bebidas han sido servidos y traslada la cuenta al comensal en un folder de piel. Se pregunta si desea algo más antes de presentar el ticket.
+- **Formas de pago**: aceptamos efectivo, tarjetas de crédito/débito y transferencias para grupos. En caso de dividir la cuenta, se aplica un cargo de servicio por gestión, que se comunica previamente.
+- **No-show y su efecto**: en un restaurante de 65 plazas, una mesa no ocupada representa una pérdida directa de facturación. Con un ticket medio con IVA de 135,52 € y una ocupación prevista de 70 cubiertos al día, la facturación diaria estimada es de 8.624,00 €. Un solo no-show de una mesa de dos personas reduce esa cifra en aproximadamente un 3,1% (unos 271 €). Por eso, el depósito no reembolsable en caso de no presentarse cubre parte de ese coste y disuade de reservas frívolas.
+- **Precios e IVA**: todos los precios de carta se anuncian con IVA incluido. Para alimentos y bebidas no alcohólicas, el tipo aplicado es el 10% (restauración). Las bebidas alcohólicas tributan al 21%, por lo que en el ticket se desglosa el importe base y el impuesto correspondiente. El ticket medio sin IVA se sitúa en 123,20 €, mientras que el ticket medio con IVA alcanza los 135,52 €. Esta distinción es clave para el cálculo de márgenes y para la información al cliente, que siempre ve el desglose en su factura.
+
+La gestión de la cuenta se apoya en el software de caja, que genera un informe diario de ventas y de incidencias (no-shows, cancelaciones tardías). Este informe se revisa en la reunión de equipo para ajustar la política de depósitos si fuera necesario.
+
+**Política de reservas: qué se aplica en cada caso**
+
+| Caso | Qué se aplica | Qué se comunica al reservar |
+|---|---|---|
+| Reserva de 1 a 4 comensales | Tarjeta en garantía, sin cargo previo | Cargo por no presentarse, indicado al confirmar |
+| Reserva de 5 o más | Depósito por comensal a cuenta del menú | Importe, plazo de cancelación y devolución |
+| Cancelación con más de 48 h | Devolución íntegra | Se confirma por escrito |
+| Cancelación con menos de 24 h | Retención del depósito | Se avisa al reservar y se recuerda la víspera |
+| No presentarse | Cargo del importe comunicado | Se avisa al reservar y se recuerda la víspera |
+| Reducción de comensales el mismo día | Se mantiene el depósito de las plazas retiradas | Se avisa al reservar |
+| Comedor privado o evento | Contrato con calendario de pagos | Condiciones firmadas por las dos partes |
+
+
+---
+
+## 8. Fichas de Formación y Evaluación del Equipo
+
+### El plan de formación por puesto y por semana
+
+La formación de un incorporado a sala no se improvisa ni se delega en la buena voluntad del compañero que toque ese día. Se planifica por semanas y por puesto, con objetivos concretos que el jefe de sala supervisa personalmente. La plantilla tipo de nuestra brigada es de 24 personas, y con ese tamaño la rotación de un puesto vacante obliga a que el nuevo llegue a servicio real sin poner en riesgo la operación. Por eso las primeras cuatro semanas siguen una progresión que va de lo mecánico a lo relacional.
+
+La semana uno es de observación activa y manejo de mise en place. El incorporado no toca mesa: aprende el orden de la sala, la disposición de las estaciones, el plegado, el pulido de copa y la reposición de saleros y aceiteras. Cada tarde repasa con el jefe de sala el mapa de mesas y los códigos de comanda. El objetivo medible de esta semana es que sea capaz de montar una estación completa en menos de quince minutos sin preguntar dónde está cada cosa.
+
+La semana dos incorpora la toma de comanda y el servicio de agua y pan. Trabaja siempre con un compañero senior al lado, pero ya interviene en mesa. Se le exige conocer la carta de memoria: los alérgenos, los tiempos de cocina y el orden de salida de los platos. El criterio de superación es simple: en una simulación con el jefe de sala, describe cada plato de la carta sin mirar la ficha y señala los tres alérgenos principales de cada uno.
+
+La semana tres entra en el servicio real con mesa propia, pero con un número limitado de cubiertos: dos mesas de dos y una de cuatro. Aquí se evalúa la cadencia: el ritmo de desbarasado, la limpieza entre platos, la atención a las necesidades del cliente sin que se le tenga que llamar. El jefe de sala observa en vivo y anota en la ficha individual cada incidencia, no la opinión global.
+
+La semana cuatro es la de integración plena: el incorporado asume la misma carga que un miembro fijo de la brigada, con la única diferencia de que su evaluación se revisa a diario. Al final de esta semana se decide si continúa en plantilla o se le da de baja. Esa decisión se toma con los criterios observables que describimos en el siguiente epígrafe, nunca con impresiones.
+
+El coste tasado del checklist de contratación, que incluye la gestión documental, la formación inicial y el material de acogida, asciende a 1.610,00 €. Esa cantidad se amortiza en el primer mes si el incorporado rinde al nivel exigido; si no, es el precio de haber filtrado mal. Por eso el plan semanal no es un trámite, es la herramienta que evita pagar dos veces.
+
+### Cómo se evalúa: criterios observables, no impresiones
+
+Evaluar a un camarero con frases como «tiene buena mano» o «se desenvuelve bien» no sirve para nada: no se puede medir, no se puede comparar y no se puede defender ante una reclamación. Los criterios tienen que ser conductas que cualquier otro miembro del equipo pueda ver y registrar en el mismo servicio. La ficha de formación por puesto, que aparece en la tabla de abajo, se rellena con marcas, no con adjetivos.
+
+Los criterios observables se agrupan en cinco bloques. El primero es la secuencia de servicio: el orden correcto de presentación de carta, toma de comanda, servicio de vino, retirada de platos y ofrecimiento de postre. Se evalúa con una lista de pasos: si el camarero salta uno, se marca como fallo. El segundo es la técnica de transporte: cómo lleva la bandeja, cuántos platos puede portar sin riesgo de vuelco, cómo se posiciona al servir desde la izquierda y retirar desde la derecha. Todo eso se observa en vivo.
+
+El tercer bloque es la comunicación con cocina: la claridad de la comanda, la repetición de los platos con alergias, el aviso de tiempos. Se mide por el número de comandas devueltas por error en un turno. El cuarto es la gestión de la mesa: la frecuencia de reposición de agua, la retirada de migas, la atención a las copas vacías. Se registra con un contador de intervenciones por mesa y por hora.
+
+El quinto bloque es el más delicado: la resolución de incidencias. Un cliente que se queja, un plato que vuelve, una mancha en el mantel. El criterio no es que el camarero no tenga problemas, sino cómo los resuelve: si avisa al jefe de sala en menos de dos minutos, si ofrece una disculpa sin discutir, si propone una alternativa concreta. Eso se anota en el momento, no al final del turno cuando la memoria ya ha suavizado los hechos.
+
+Cada criterio tiene un peso en la nota final, y la suma de esos pesos da una puntuación de cero a cien. El aprobado está en ochenta. Si un camarero no llega, se le da una semana más de formación con un plan específico; si vuelve a suspender, se le invita a buscar otro proyecto. Ese proceso es el mismo para todos, sin excepciones ni amiguismos. La ficha no se rellena de memoria: se hace durante el servicio, con lápiz, y se contrasta al final con el jefe de sala. Así no hay discusión posible.
+
+**Ficha de formación por puesto de sala**
+
+| Puesto | Qué debe dominar al final del mes 1 | Cómo se comprueba | Quién evalúa |
+|---|---|---|---|
+| Hostess | Recepción, agenda, alergias en la reserva y acomodo | Observación de 3 servicios completos | Maître |
+| Runner | Marcaje, servicio por la derecha y rutas de sala | Servicio de 2 rangos sin corrección | Jefe de rango |
+| Camarero de rango | Secuencia completa del menú y repaso de mesa | Servicio de un rango completo solo | Jefe de rango |
+| Jefe de rango | Explicación del menú, comanda, tiempos y quejas de nivel 1 | Dos servicios llenos con evaluación escrita | Maître |
+| Sumiller | Carta completa, temperaturas, maridaje y venta sugerida | Cata a ciegas de la carta por copas | Maître y dirección |
+| Maître | Sala completa, incidencias, cuenta y coordinación con cocina | Un mes de servicios con revisión semanal | Dirección |
+
+
+---
+
+## 9. Protocolo VIP, Ocasiones Especiales y Cierre del Servicio
+
+### Comensal habitual, VIP y ocasiones especiales
+
+La ficha del comensal no es un expediente clínico, es una libreta de gustos. En ella se anota lo que el cliente ha manifestado de forma voluntaria y repetida: su mesa preferida, la temperatura de la sala que le acomoda, el vino que pidió en su última visita, si prefiere que le hablemos de usted o de tú, si le gusta el pan con sal en escamas o sin sal, si toma el café solo o con leche tibia. Eso es una preferencia: un dato que el cliente expresa y que podemos anticipar en la siguiente visita sin necesidad de preguntar.
+
+Un dato de salud es otra cosa. Una alergia, una intolerancia, una patología que condiciona la dieta o una medicación no se archivan en la ficha. No porque no importen, sino porque su gestión es puntual y confidencial: se comunica en el momento al jefe de sala y a cocina, se verifica con el comensal qué plato puede tomar y se deja constancia en la comanda de forma clara, pero no se incorpora a la ficha de preferencias. La razón es operativa y legal: una preferencia es estable y la podemos usar; un dato de salud es sensible, puede cambiar y su declaración corresponde al cliente, no a nuestra memoria. Cruzar esa línea convierte una herramienta de servicio en un historial médico que no estamos autorizados a guardar.
+
+Con el comensal habitual, el protocolo empieza antes de que cruce la puerta. El maitre revisa la ficha, avisa al equipo de la llegada y prepara la mesa asignada. Con el VIP, además, se designa a una persona concreta que lo recibe, lo acompaña y lo presenta al equipo si es necesario. En ocasiones especiales —un aniversario, una propuesta, una celebración— la ficha recoge el detalle que el cliente ha compartido, pero la sorpresa se prepara siempre confirmando antes con quien hace la reserva: no se improvisa un postre con velas si no sabemos si la pareja quiere ese momento en público.
+
+### Cierre de servicio y traspaso de información
+
+El cierre no es fregar y contar la caja. Es el momento en que el servicio de hoy deja preparado el de mañana. El jefe de sala —o el maitre, según la estructura— escribe el parte de cierre. Lo hace una única persona, no varias, para que la información no se diluya. En ese parte se registra: incidencias de sala (roturas, retrasos, problemas con un proveedor), comensales que han pedido algo fuera de carta y cómo se resolvió, preferencias nuevas detectadas durante el servicio, quejas o sugerencias, el estado de la mise en place, las necesidades de reposición de producto y de lencería, y las reservas o eventos previstos para el día siguiente que requieran preparación especial.
+
+Ese parte se escribe siempre al final del servicio, con la sala vacía y la mente despejada, no mientras se recogen las últimas copas. Se escribe en el cuaderno de sala o en la herramienta digital que use el restaurante, pero siempre en el mismo soporte y con el
+
+**Cierre de servicio: qué se registra y quién lo lee**
+
+| Registro | Quién lo escribe | Quién lo lee | Para qué |
+|---|---|---|---|
+| Incidencias de sala | Maître | Dirección y chef | Corregir antes del siguiente servicio |
+| Notas de comensales habituales | Jefe de rango | Maître | Reconocer al cliente en la siguiente visita |
+| Alergias atendidas | Maître | Chef y responsable de APPCC | Trazabilidad y mejora de las fichas por pase |
+| Roturas de material | Jefe de rango | Dirección | Presupuesto de reposición |
+| Ventas por plato y por vino | TPV | Chef y sumiller | Ingeniería de menú y de carta de vinos |
+| No-show y cancelaciones | Hostess | Dirección | Ajuste de la política de depósito |
+
+
+---
+
+
+---
+
+## Sobre el autor y condiciones de uso
+
+John Guerrero es CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010, ha asesorado la apertura de más de 200 establecimientos, incluidos restaurantes con Estrella MICHELIN y Soles Repsol en España y Europa. Más sobre su trabajo en johnguerrero.es.
+
+**Versión 2.0 · agosto de 2026 · aichef.pro/guia-restaurante-gastronomico · info@aichef.pro**
+
+*Esta guía es un documento de trabajo profesional, no un dictamen jurídico, fiscal ni laboral. Las cifras de inversión, costes y resultados son valores de ejemplo tomados de las plantillas Excel que acompañan a este pack y sirven para que las sustituyas por las tuyas: ninguna es una previsión de tus resultados. La nomenclatura de licencias y buena parte de los plazos son autonómicos y municipales, y el convenio provincial de hostelería prevalece sobre los mínimos estatales cuando fija condiciones superiores. Antes de firmar un arrendamiento, un contrato de trabajo o un préstamo, contrasta con tu asesoría, con tu ayuntamiento y con la autoridad sanitaria de tu comunidad autónoma.*

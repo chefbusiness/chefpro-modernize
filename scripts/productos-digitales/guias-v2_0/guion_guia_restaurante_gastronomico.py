@@ -55,7 +55,7 @@ GUIA = {
     'titulo': 'Cómo Montar un Restaurante Gastronómico',
     'subtitulo': '65 plazas · Guía completa España 2026 · MICHELIN y Soles Repsol',
     'autor_linea': 'John Guerrero · AI Chef Pro · aichef.pro',
-    'cabecera': 'AI Chef Pro · Cómo Montar un Restaurante Gastronomico',
+    'cabecera': 'AI Chef Pro · Cómo Montar un Restaurante Gastronómico',
     'fecha': 'agosto de 2026',
     'bio': BIO,
     'legal': LEGAL,
@@ -82,8 +82,11 @@ GUIA = {
         #    cuesta la Seguridad Social de la brigada, la resta que hace el cap. 13.
         #  · 47.600,00 € = Inversión!C21 (15.000) + C20 (8.800) + checklist de
         #    marketing G42 (23.800): las tres partidas de proyección del cap. 19.
+        #  · 310.000,00 € = Inversión!C5 (250.000) + C6 (60.000): obra civil
+        #    más instalaciones, la suma que hace el cap. 7.
         'cifras_extra': ('734.020,40', '734.020', '1.155.923,84',
-                         '178.056,12', '178.056', '47.600,00', '47.600'),
+                         '178.056,12', '178.056', '47.600,00', '47.600',
+                         '310.000,00', '310.000'),
         'cifras_ignorar': (),
         # Única formulación de mortalidad admitida: la del INE, con fuente.
         'mortalidad_permitida': ['41,9', '41.9', 'INE', '11.183'],
@@ -127,6 +130,15 @@ NO_COMUN = [
     'concreta, remite a la tabla de abajo y no des su precio.',
     'No repartas una inversión en partidas cuyo importe no esté en la lista de '
     'cifras: el desglose ya va en la tabla de CAPEX.',
+    # Segunda pasada del gate (2026-08-29): el cap. 9 seguía escribiendo «un
+    # equipo de 10 niveles con sonda cuesta entre 6.000 y 9.000 €» y el cap. 11
+    # «la reposición anual ronda entre 2.400 y 3.600 €». Ninguna de esas cifras
+    # existe en ninguna celda.
+    'PROHIBIDO escribir el precio de un equipo, de un local, de una reposición '
+    'o de cualquier partida concreta si ese número no está en la lista de '
+    'cifras que te doy. Los precios por línea van en las tablas y SOLO ahí: en '
+    'el texto se habla de criterio, de alternativa y de consecuencia, y como '
+    'mucho se cita el TOTAL tasado.',
     # Cazado por el gate de mortalidad: el capítulo 2 escribió «no se puede usar
     # como "el 58 % de los restaurantes cierra"». Negar una cifra inventada
     # sigue imprimiéndola, y el lector que hojea sólo ve el número.
@@ -383,9 +395,17 @@ CAPITULOS = [
                 'src': (X_PLAN, 'Inversión'),
                 'cols': [('Concepto', 'A', 'txt'), ('Importe', 'C', 'eur2')],
                 'filas': (32, 46),
-                'nota': 'El cronograma de este mismo pack firma el arrendamiento en el mes 3 y '
-                        'contrata la brigada en el 12 para abrir en el 18: hay renta y hay nóminas '
-                        'antes de facturar un euro.',
+                # RD-16 (2026-08-29): esta nota decía «mes 3… abre en el 18» y no
+                # cuadraba con su propio Gantt (firma en el 4, brigada en el 12,
+                # apertura en el 17). Ahora dice los meses REALES del cronograma
+                # y hace la resta delante del lector, que es donde está el
+                # agujero: 13 meses de renta presupuestados como 6.
+                'nota': 'Ojo a la resta: el cronograma de este mismo pack firma el arrendamiento '
+                        'en el mes 4, contrata la brigada de cocina en el 12 y abre en el 17. Con '
+                        'ese calendario son trece meses de renta y cinco de nómina antes de '
+                        'facturar un euro, no los seis y los dos que presupuesta esta tabla. Si '
+                        'mantienes el cronograma, sube estas dos partidas antes de pedir el '
+                        'préstamo; si no, adelanta la firma del arrendamiento.',
             },
             {
                 'titulo': 'Rangos de mercado por categoría (calculadora-capex.xlsx, hoja «CAPEX»)',
@@ -772,7 +792,12 @@ CAPITULOS = [
                      ('Coste est. (€)', 'G', 'eur')],
             'filas': (5, 54),
         }],
-        'prohibido': NO_COMUN,
+        'prohibido': NO_COMUN + [
+            'La reposición anual se explica como PORCENTAJE del parque tasado y '
+            'como método de presupuesto, NUNCA con un importe en euros: no hay '
+            'ninguna celda con esa cifra y en la pasada anterior el capítulo se '
+            'inventó «entre 2.400 y 3.600 €».',
+        ],
     },
     {
         'n': 12, 'titulo': 'Bodega y Servicio de Vinos',
@@ -883,6 +908,10 @@ CAPITULOS = [
             'bruto: si la cifra es bruta, dilo, y da aparte la del coste.',
             'No des un porcentaje de Seguridad Social «aproximado» escrito a mano: '
             'usa el de la celda del libro.',
+            'No pongas ejemplos numéricos HIPOTÉTICOS de convenio («si tu '
+            'convenio marca 18.500 € para un ayudante»): explica la regla —el '
+            'convenio provincial prevalece cuando fija más— sin inventar el '
+            'importe, porque el lector lo leerá como un dato.',
         ],
     },
     {
@@ -1369,7 +1398,8 @@ BONUS = [
             'paginas_prometidas': 12,
             'palabras_objetivo': 3000,
             'min_palabras_cap': 250,
-            'cifras_extra': ('734.020,40', '734.020', '1.155.923,84'),
+            'cifras_extra': ('734.020,40', '734.020', '1.155.923,84',
+                             '178.056,12', '47.600,00', '310.000,00'),
             'mortalidad_permitida': ['41,9', '41.9', 'INE', '11.183'],
             'meta': {'title': 'Plan de Negocio Modelo — Restaurante Gastronómico 65 Plazas',
                      'subject': 'Bonus 1 del pack Cómo Montar un Restaurante Gastronómico · Versión 2.0 · agosto 2026'},
@@ -1398,6 +1428,11 @@ BONUS = [
                     C('EBITDA previsto del año 1', f'{X_PLAN}!Proyección 3 Años!B17'),
                     C('Resultado neto previsto del año 1', f'{X_PLAN}!Proyección 3 Años!B23'),
                     C('Mes de break-even de caja', f'{X_CASH}!Cash Flow 12 Meses!B54', 'num'),
+                    C('Costes fijos mensuales sin amortización', f'{X_PLAN}!P&L Mensual!B32'),
+                    C('Total ingresos del mes tipo', f'{X_PLAN}!P&L Mensual!B10'),
+                    C('EBITDA del mes tipo', f'{X_PLAN}!P&L Mensual!B34'),
+                    C('Umbral de ventas con el servicio de la deuda', f'{X_CASH}!Cash Flow 12 Meses!B50'),
+                    C('Cubiertos al día necesarios para el equilibrio', f'{X_CASH}!Cash Flow 12 Meses!B53', 'num1'),
                 ],
                 'sector': ['SECT-03', 'TURG-01'],
                 'tablas': [{
@@ -1407,7 +1442,13 @@ BONUS = [
                              ('Año 2', 'C', 'eur'), ('Año 3', 'D', 'eur')],
                     'filas': (13, 24),
                 }],
-                'prohibido': NO_COMUN + ['No escribas «[Tu resumen ejecutivo aquí]»: el resumen va escrito.'],
+                'prohibido': NO_COMUN + [
+                    'No escribas «[Tu resumen ejecutivo aquí]»: el resumen va escrito.',
+                    'NO estimes los gastos fijos mensuales ni el punto muerto: los '
+                    'tienes medidos en la lista. En la pasada anterior este bloque '
+                    'escribió «los gastos fijos mensuales se han estimado en '
+                    '85.000 €», que contradice al propio libro que acompaña al plan.',
+                ],
             },
             {
                 'n': 2, 'titulo': 'Concepto y Propuesta de Valor',
@@ -1566,6 +1607,8 @@ BONUS = [
                 'puntos': [
                     'Explicar que el EBITDA no resta amortización.',
                     'Dar el punto de equilibrio con la cuota del préstamo dentro.',
+                    'Los costes fijos, el punto muerto y el colchón de caja SALEN '
+                    'de las cifras de la lista: no se estiman ni se redondean.',
                 ],
                 'cifras': [
                     C('Total ingresos del mes tipo', f'{X_PLAN}!P&L Mensual!B10'),
@@ -1576,6 +1619,11 @@ BONUS = [
                     C('Mes de break-even de caja', f'{X_CASH}!Cash Flow 12 Meses!B54', 'num'),
                     C('Cuota mensual tras la carencia', f'{X_PLAN}!Financiación!B12'),
                     C('Cuota durante la carencia', f'{X_PLAN}!Financiación!B13'),
+                    C('Costes fijos mensuales sin amortización', f'{X_PLAN}!P&L Mensual!B32'),
+                    C('Costes variables del mes tipo', f'{X_PLAN}!P&L Mensual!B15'),
+                    C('Margen de contribución', f'{X_CASH}!Cash Flow 12 Meses!B47', 'pct0'),
+                    C('Umbral de ventas solo explotación', f'{X_CASH}!Cash Flow 12 Meses!B48'),
+                    C('Amortización mensual', f'{X_PLAN}!P&L Mensual!B30'),
                 ],
                 'sector': [],
                 'tablas': [
@@ -1595,7 +1643,13 @@ BONUS = [
                         'filas': (18, 27),
                     },
                 ],
-                'prohibido': NO_COMUN,
+                'prohibido': NO_COMUN + [
+                    'NO estimes los costes fijos mensuales ni el punto muerto: '
+                    'los tienes medidos en la lista de cifras. En la pasada '
+                    'anterior este capítulo escribió «los gastos fijos mensuales '
+                    'se han estimado en 85.000 €» cuando el libro dice otra cosa, '
+                    'y de ahí sacó un punto muerto y un colchón de caja falsos.',
+                ],
             },
             {
                 'n': 9, 'titulo': 'Análisis de Riesgos y Escenarios',
@@ -1733,7 +1787,13 @@ BONUS = [
                     'Dar tiempos concretos de montaje.',
                 ],
                 'cifras': [
-                    C('Plazas de la sala', f'{X_TURNOS}!Turnos Semana!A30', 'num'),
+                    # RD-24 (2026-08-29): esta linea apuntaba a «Turnos Semana!A30»,
+                    # que son las 24 PERSONAS de la brigada, no las plazas. El manual
+                    # imprimio «una sala de 24 plazas» porque es lo que le dimos.
+                    C('Personas en la brigada (NO son las plazas de la sala)',
+                      f'{X_TURNOS}!Turnos Semana!A30', 'num'),
+                    C('Plano de sala del checklist de diseño (de aquí salen las plazas)',
+                      f'{CK_SALA}!Diseño de Sala (FOH)!C5', 'txt'),
                     C('Cubiertos al día previstos', f'{X_TICKET}!Ticket Medio!C17', 'num'),
                 ],
                 'sector': [],
@@ -1997,3 +2057,560 @@ BONUS = [
         ],
     },
 ]
+
+
+# ==========================================================================
+# REFUERZOS DEL GUION — corrección de los 53 hallazgos de las dos lentes
+# refutadoras del 2026-08-29 (`guias-v2-doc-ref-dominio.json` y
+# `guias-v2-doc-ref-tecnico.json`).
+#
+# Van aquí y no dentro de cada capítulo por dos razones: (a) cada entrada
+# lleva el ID del hallazgo que corrige, así que el diff se puede auditar
+# contra el informe, y (b) al fusionarse al final, un refuerzo nuevo no
+# obliga a tocar el cuerpo del guion, que es donde se rompen las comas.
+#
+# El id va DENTRO del texto del punto sólo en este fichero: `prompt_bloque`
+# manda al modelo el texto tal cual, así que las etiquetas se quitan al
+# fusionar (`_sin_id`). El modelo nunca ve «RD-14».
+# ==========================================================================
+
+REFUERZOS = {
+    # ---------------------------------------------------------------- GUÍA
+    ('guia', 1): {
+        'prohibido': [
+            'RD-17|No digas que la bebida alcohólica servida en mesa tributa al '
+            '21 % de IVA: el art. 91.Uno.2.2 de la Ley del IVA grava al 10 % los '
+            'servicios de hostelería y el suministro de comidas y bebidas para '
+            'consumir en el acto, sin excluir el alcohol. El ticket con IVA que '
+            'te doy está calculado al 10 % sobre todo el consumo en sala.',
+        ],
+    },
+    ('guia', 2): {
+        'puntos': [
+            'RD-32|El desglose de la Guía MICHELIN en España se escribe SIEMPRE '
+            'así y sin variantes: 16 restaurantes con tres Estrellas, 37 con dos '
+            'y 254 con una, que suman los 307 con Estrella. Comprueba que tu '
+            'desglose suma el total antes de escribirlo, y usa ese mismo total en '
+            'todas sus apariciones.',
+        ],
+        'prohibido': [
+            'RD-32|Prohibido escribir «16 con dos, 37 con una y 254 con una» ni '
+            'ninguna otra combinación: el error de la edición anterior era ese, y '
+            'cualquier lector del sector lo detecta al instante.',
+        ],
+    },
+    ('guia', 3): {
+        'cifras_mas': [
+            ('Cubiertos al día del servicio de comida', f'{X_PL}!Escenarios!C6', 'num'),
+            ('Cubiertos al día del servicio de cena', f'{X_PL}!Escenarios!C7', 'num'),
+        ],
+        'puntos': [
+            'RD-33|El reparto de los 70 cubiertos entre servicios es 25 en la '
+            'comida y 45 en la cena: es lo que sostienen las dos líneas de '
+            'ingresos del P&L del pack (25 cubiertos de comida y 45 de cena). '
+            'Escríbelo con esos dos números y no con ningún otro reparto.',
+        ],
+        'prohibido': [
+            'RD-33|Prohibido decir que la comida es el servicio grande («55 '
+            'cubiertos en comida y 15 en cena» o similar): en este restaurante la '
+            'cena es el servicio fuerte, y del reparto salen el cuadrante, la '
+            'compra y el dimensionado del pase.',
+        ],
+    },
+    ('guia', 4): {
+        'cifras_mas': [
+            ('Cuota mensual del préstamo que USA el umbral con deuda del libro '
+             '(es la cuota de carencia, la del año 1)', f'{X_CASH}!Cash Flow 12 Meses!B49', 'eur2'),
+            ('Margen de contribución con el que se calcula el umbral', f'{X_CASH}!Cash Flow 12 Meses!B47', 'pct0'),
+            ('Meses de renta presupuestados en la preapertura', f'{X_PLAN}!Inversión!C35', 'num'),
+            ('Meses de nómina presupuestados en la preapertura', f'{X_PLAN}!Inversión!C36', 'num'),
+            ('Mes del cronograma en que se firma el arrendamiento', f'{X_GANTT}!Gantt!X8', 'num'),
+            ('Mes del cronograma en que se contrata la brigada de cocina', f'{X_GANTT}!Gantt!X26', 'num'),
+            ('Mes del cronograma de la apertura oficial', f'{X_GANTT}!Gantt!X37', 'num'),
+        ],
+        'puntos': [
+            'RD-14|El umbral de ventas «con el servicio de la deuda» que te doy '
+            'está calculado con la cuota de CARENCIA (la del año 1), no con la '
+            'cuota plena posterior. Dilo así, con todas las letras, y explica que '
+            'desde el año 2, con la cuota plena, ese umbral sube. La diferencia '
+            'entre los dos umbrales NO es la cuota: es la cuota dividida por el '
+            'margen de contribución, y sin esa frase el lector no puede '
+            'reproducir el cálculo.',
+            'RD-15|El coste mensual de estructura se llama, literalmente en la '
+            'hoja, «coste mensual de estructura (fijos sin amortización + '
+            'variables)»: INCLUYE la materia prima y las bebidas. Nunca lo '
+            'describas como «lo que cuesta tener el restaurante abierto sin '
+            'contar materia prima», que es exactamente lo contrario. Y explica '
+            'que el fondo de maniobra son seis meses de esa estructura completa '
+            'con cero ingresos: es una hipótesis conservadora y hay que decirlo.',
+            'RD-16|Advertencia obligatoria sobre la preapertura: el plan '
+            'presupuesta los meses de renta y de nómina que te doy, pero el '
+            'cronograma de este mismo pack firma el arrendamiento y abre en los '
+            'meses que también te doy. Haz la resta delante del lector, di '
+            'cuántos meses de renta implica de verdad ese calendario y advierte '
+            'de que, si mantiene el cronograma, tiene que subir esas dos '
+            'partidas antes de pedir el préstamo. No lo escondas en una nota.',
+            'RD-22|Recuerda que la fianza del arrendamiento (dos mensualidades) '
+            'está en el checklist legal pero NO figura en ninguna fila del CAPEX: '
+            'es una salida de caja real que hay que sumar a la necesidad de '
+            'financiación o, como mínimo, tener apartada el día de la firma.',
+        ],
+        'prohibido': [
+            'RD-14|Prohibido escribir que «la diferencia entre los dos umbrales '
+            'es la cuota del préstamo» o que el umbral con deuda incluye la cuota '
+            'plena posterior a la carencia: las dos frases son falsas y las dos '
+            'estaban en la edición anterior.',
+        ],
+    },
+    ('guia', 5): {
+        'cifras_mas': [
+            ('Coste tasado del checklist legal COMPLETO (las 50 líneas, no sólo la constitución)',
+             f'{CK_LEGAL}!Legal!G56', 'eur2'),
+        ],
+        'puntos': [
+            'RD-30|El capital social mínimo de una sociedad limitada es de 1 euro '
+            'desde la Ley 18/2022, de 28 de septiembre, de creación y crecimiento '
+            'de empresas, que modificó el artículo 4 de la Ley de Sociedades de '
+            'Capital. Explica el régimen del artículo 4 bis: mientras el capital '
+            'no alcance los 3.000 euros hay que dotar la reserva legal con el '
+            '20 % del beneficio y los socios responden solidariamente hasta esa '
+            'cifra si la sociedad se liquida. Y añade el criterio: para un '
+            'proyecto de esta envergadura, constituir con capital simbólico es '
+            'mala señal delante del banco.',
+            'RD-31|El libro de visitas se suprimió por la Ley 23/2015, de 21 de '
+            'julio, ordenadora del Sistema de Inspección de Trabajo y Seguridad '
+            'Social, desarrollada por la Orden ESS/1452/2016. La Ley 14/2013 de '
+            'apoyo a los emprendedores lo que hizo fue prever el libro '
+            'electrónico, no suprimirlo.',
+            'RD-22|El coste tasado que te doy es el TOTAL del checklist legal '
+            'entero, no el de los trámites de constitución: el bloque de '
+            'constitución (notaría, registro, certificación negativa) suma poco '
+            'más de mil euros. No presentes el total como si fuera el coste de '
+            'constituir la sociedad, y avisa de que dentro de ese total hay una '
+            'fianza de arrendamiento de dos mensualidades que no está en el CAPEX.',
+        ],
+        'prohibido': [
+            'RD-30|Prohibido escribir que el capital mínimo de una SL son 3.000 '
+            'euros: lleva desactualizado desde septiembre de 2022.',
+            'RD-31|Prohibido atribuir la supresión del libro de visitas a la Ley '
+            '14/2013.',
+            'RT-04|El epígrafe se titula «Terraza, música, horarios y venta de '
+            'alcohol», con la ele final. Copia los títulos de epígrafe letra a '
+            'letra: en la edición anterior salió impreso «venta de alcoho» en un '
+            'capítulo de requisitos legales.',
+        ],
+    },
+    ('guia', 7): {
+        'puntos': [
+            'RD-29|Sobre la duración del arrendamiento: el local de negocio es un '
+            'arrendamiento PARA USO DISTINTO DE VIVIENDA (artículo 3 de la Ley de '
+            'Arrendamientos Urbanos) y se rige por lo que pacten las partes '
+            '(artículo 4.3). NO hay plazo mínimo legal: los cinco años de prórroga '
+            'obligatoria del artículo 9 son de arrendamiento de vivienda. Explica '
+            'que por eso la duración, las prórrogas, la actualización de la renta '
+            'y la renuncia o no a la indemnización del artículo 34 se negocian y '
+            'se firman por escrito antes de entrar en obra.',
+        ],
+        'prohibido': [
+            'RD-29|Prohibido escribir que «la ley urbana establece un plazo '
+            'mínimo de cinco años» para el local: es el error jurídico más caro '
+            'de la edición anterior, porque el promotor negocia el contrato más '
+            'caro de la apertura creyendo que tiene una garantía que no existe.',
+        ],
+    },
+    ('guia', 8): {
+        'puntos': [
+            'RD-34|El código de colores de tablas de corte se da UNA sola vez y '
+            'con el estándar: rojo para carnes rojas, azul para pescados, verde '
+            'para vegetales, amarillo para aves y blanco para pan y lácteos. Si '
+            'vuelves a mencionarlo en el capítulo, remite al párrafo anterior sin '
+            'repetir la lista y sin cambiar ningún color.',
+            'RD-23|Deja claro que el importe de equipamiento del plan financiero '
+            'coincide con el total tasado del checklist de cocina y que ese total '
+            'es un SUELO: hay líneas del checklist sin importe asignado, así que '
+            'un presupuesto real se irá por encima del rango alto de la '
+            'calculadora. Dilo en el texto, no en una nota al pie.',
+        ],
+        'prohibido': [
+            'RD-34|Prohibido asignar al amarillo un significado distinto de '
+            '«aves» en ninguna parte del capítulo. Los marinados se separan por '
+            'cámara, no por color de tabla.',
+        ],
+    },
+    ('guia', 11): {
+        'puntos': [
+            'RD-20|Fija UN solo criterio de vueltas de cristalería para todo el '
+            'capítulo y mantenlo: si dices tres vueltas en el dimensionado, no '
+            'digas antes que basta una vuelta y media. Y cierra el cálculo '
+            'aterrizándolo en la dotación real del checklist de vajilla y '
+            'cristalería del pack: explica que el checklist compra la dotación de '
+            'apertura y que el número teórico de vueltas se alcanza reponiendo, '
+            'porque si no el lector pide una compra que no cabe en el CAPEX.',
+            'RD-23|Recuerda que la partida de vajilla, cristalería y cubertería '
+            'del plan financiero es una sola cifra para las tres familias.',
+        ],
+        'prohibido': [
+            'RD-20|Prohibido dar dos criterios de vueltas distintos en el mismo '
+            'capítulo.',
+        ],
+    },
+    ('guia', 12): {
+        'cifras_mas': [
+            ('Unidades de vino que salen del cálculo de rotación de la plantilla de bodega',
+             f'{X_BODEGA}!Bodega!I56', 'num'),
+            ('Ingresos mensuales de vinos y bebidas del P&L', f'{X_PLAN}!P&L Mensual!B8', 'eur2'),
+            ('Coste mensual de bodega del P&L', f'{X_PLAN}!P&L Mensual!B14', 'eur2'),
+        ],
+        'puntos': [
+            'RD-18|La plantilla de bodega del pack trae diez referencias de '
+            'ejemplo con sus rotaciones, y esas diez referencias NO son el '
+            'surtido del restaurante: describen el MÉTODO para dimensionar una '
+            'bodega. Dilo explícitamente y explica que la hoja tiene filas vacías '
+            'para que el lector complete su carta hasta cuadrar con el coste '
+            'mensual de bodega del P&L.',
+            'RD-19|Sobre la partida «Bodega inicial (vinos)» del CAPEX: la vitrina '
+            'climatizada y la vajilla, cristalería y cubertería son partidas '
+            'APARTE en el mismo CAPEX. No digas que están dentro de la bodega '
+            'inicial ni que las partidas de la tabla suman esa cifra. Y explica '
+            'que el valor del stock de la plantilla de bodega es sólo la primera '
+            'compra de las diez referencias de ejemplo: la diferencia hasta la '
+            'partida del CAPEX es la profundidad de carta que el lector tiene que '
+            'presupuestar.',
+        ],
+        'prohibido': [
+            'RD-18|Prohibido decir que el stock a coste de la plantilla «implica '
+            'una rotación de varias veces al mes»: la columna de rotación de esa '
+            'misma hoja va por debajo de una vez al mes.',
+            'RD-19|Prohibido escribir que la partida de bodega inicial incluye la '
+            'vitrina climatizada, la estantería o las copas.',
+        ],
+    },
+    ('guia', 13): {
+        'puntos': [
+            'RD-35|Sobre el descanso entre jornadas: el cuadrante del pack sólo '
+            'trae letras de turno, sin horas, así que NO demuestra por sí mismo '
+            'que se respeten las doce horas. Escríbelo así: con las duraciones de '
+            'turno que asume el libro ninguna secuencia del cuadrante las vulnera, '
+            'pero la prueba ante una inspección es la hoja de registro de jornada, '
+            'no el cuadrante de letras.',
+        ],
+        'prohibido': [
+            'RD-35|Prohibido afirmar que el cuadrante «garantiza» o «contempla» '
+            'el descanso de doce horas y explicar dos párrafos después que un '
+            'cuadrante de letras no permite verificarlo: las dos frases juntas se '
+            'contradicen.',
+        ],
+    },
+    ('guia', 15): {
+        'puntos': [
+            'RT-02|Los dos epígrafes centrales de este capítulo son la matriz de '
+            'Kasavana y Smith familia por familia y qué se hace con cada '
+            'cuadrante. Desarróllalos de verdad: nombra los cuatro cuadrantes '
+            '(estrellas, caballos de batalla, rompecabezas y perros), di qué '
+            'combinación de popularidad y margen define a cada uno y qué decisión '
+            'concreta se toma con cada uno: mantener, subir precio, promocionar o '
+            'retirar.',
+        ],
+    },
+    ('guia', 17): {
+        'puntos': [
+            'RD-32|El total de restaurantes con Estrella MICHELIN en España se '
+            'escribe con el mismo número en todas sus apariciones del capítulo y '
+            'coincide con el del capítulo del mercado. No des dos totales.',
+        ],
+    },
+    ('guia', 19): {
+        'prohibido': [
+            'RD-21|Prohibido sumar el presupuesto de lanzamiento, el de web y el '
+            'total del checklist de marketing como si fueran tres partidas '
+            'distintas: el total del checklist ES la suma de las otras dos. '
+            'Sumarlas duplica el gasto y mete en el plan de inversión el doble de '
+            'lo que cuesta. Si citas el presupuesto de marketing de preapertura, '
+            'cita UNA cifra.',
+        ],
+    },
+    ('guia', 20): {
+        'prohibido': [
+            'RD-21|El presupuesto de marketing de preapertura es una sola cifra: '
+            'la del checklist, que ya contiene el lanzamiento y la web.',
+        ],
+    },
+    # -------------------------------------------------- BONUS: plan de negocio
+    ('business-plan-modelo', 1): {
+        'cifras_mas': [
+            ('Personas en plantilla (cuadrante de la brigada)', f'{X_TURNOS}!Turnos Semana!A30', 'num'),
+            ('Ticket medio ponderado por comensal', f'{X_TICKET}!Ticket Medio!C16', 'eur2'),
+            ('Cubiertos al día', f'{X_TICKET}!Ticket Medio!C17', 'num'),
+            ('Días de apertura al mes', f'{X_TICKET}!Ticket Medio!C19', 'num'),
+            ('Carencia de principal del préstamo (meses)', f'{X_PLAN}!Financiación!B14', 'num'),
+        ],
+        'puntos': [
+            'RD-05|La plantilla del proyecto es EXACTAMENTE la que te doy en las '
+            'cifras y coincide con el cuadrante del pack. No escribas ninguna '
+            'otra: el resumen ejecutivo es la única página que un analista de '
+            'riesgos lee entera, y una plantilla que no cuadra con el capítulo de '
+            'organización tumba el plan en el primer filtro.',
+            'RD-06|El ticket medio del proyecto es el ponderado que te doy y no '
+            'hay otro. No inventes un ticket «medio por persona» distinto ni '
+            'ninguna rotación que no esté en la lista de cifras.',
+            'RD-09|Las condiciones del préstamo se escriben con los valores que '
+            'te doy: carencia de principal de doce meses y amortización por el '
+            'SISTEMA FRANCÉS, de cuota constante. No digas amortización lineal ni '
+            'seis meses de carencia: son las dos primeras condiciones que compara '
+            'el banco y las dos estaban mal.',
+        ],
+        'prohibido': [
+            'RD-05|Prohibido escribir un número de empleados distinto del que te '
+            'doy.',
+            'RD-06|Prohibido escribir un ticket medio distinto del que te doy.',
+            'RD-09|Prohibido escribir «amortización lineal» o «carencia de seis '
+            'meses».',
+        ],
+    },
+    ('business-plan-modelo', 2): {
+        'cifras_mas': [
+            ('Porcentaje de comensales que pide carta', f'{X_TICKET}!Ticket Medio!C9', 'pct0'),
+            ('Ticket medio de carta', f'{X_TICKET}!Ticket Medio!C10', 'eur2'),
+        ],
+        'puntos': [
+            'RD-10|El concepto de este restaurante combina menús degustación Y '
+            'carta: la parte de comensales que pide carta que te doy es la que '
+            'sostiene el ticket ponderado y, con él, toda la facturación del '
+            'plan. Descríbelo así.',
+        ],
+        'prohibido': [
+            'RD-10|Prohibido escribir que no hay carta, que la única oferta es el '
+            'menú degustación o que no existe elección libre: contradice el mix '
+            'de oferta del propio plan y, si fuera cierto, habría que rehacer el '
+            'ticket y la facturación.',
+        ],
+    },
+    ('business-plan-modelo', 5): {
+        'cifras_mas': [
+            ('Días de apertura al mes con los que trabaja el plan', f'{X_TICKET}!Ticket Medio!C19', 'num'),
+        ],
+        'puntos': [
+            'RD-11|Los días de apertura al mes son los que te doy y son los que '
+            'usan todas las hojas del pack. Explica el calendario de forma que '
+            'CUADRE con ese número: dos días de cierre semanal, que es lo que '
+            'muestra el cuadrante (todos los puestos tienen dos libranzas por '
+            'semana). No describas una apertura de seis días a la semana ni '
+            'trescientos días al año, porque entonces el número que multiplica '
+            'todos los ingresos sería otro.',
+        ],
+        'prohibido': [
+            'RD-11|Prohibido escribir «de martes a domingo cerrando sólo los '
+            'lunes» junto a los días de apertura al mes que te doy: son seis días '
+            'por semana y no cuadran.',
+        ],
+    },
+    ('business-plan-modelo', 6): {
+        'puntos': [
+            'RD-12|Sobre el salario mínimo: la formulación correcta es que ningún '
+            'puesto de la brigada queda POR DEBAJO del SMI, que varios están '
+            'exactamente EN él y que, antes de cerrar el cuadrante, esos puestos '
+            'hay que llevarlos a la tabla salarial del convenio provincial de '
+            'hostelería, que en la mayoría de provincias fija mínimos superiores '
+            'al SMI para ayudante de cocina y friegaplatos.',
+        ],
+        'prohibido': [
+            'RD-12|Prohibido afirmar que el SMI está por debajo del bruto de '
+            'CUALQUIER puesto de la brigada, ni que eso sitúa a toda la plantilla '
+            'dentro del marco legal: hay puestos exactamente en el SMI y el '
+            'convenio provincial manda cuando es superior.',
+        ],
+    },
+    ('business-plan-modelo', 8): {
+        'cifras_mas': [
+            ('Ticket medio ponderado por comensal', f'{X_TICKET}!Ticket Medio!C16', 'eur2'),
+            ('Cubiertos al día', f'{X_TICKET}!Ticket Medio!C17', 'num'),
+            ('Días de apertura al mes', f'{X_TICKET}!Ticket Medio!C19', 'num'),
+            ('Cubiertos al día del servicio de comida', f'{X_PL}!Escenarios!C6', 'num'),
+            ('Cubiertos al día del servicio de cena', f'{X_PL}!Escenarios!C7', 'num'),
+            ('Cuota mensual del préstamo con la que está calculado el umbral con deuda (cuota de carencia)',
+             f'{X_CASH}!Cash Flow 12 Meses!B49', 'eur2'),
+        ],
+        'puntos': [
+            'RD-06|La facturación del mes tipo se explica con el desglose real de '
+            'los dos servicios: los cubiertos de comida y los de cena que te doy, '
+            'por sus respectivos tickets, por los días de apertura, más las '
+            'bebidas. Si escribes una fórmula, tiene que dar el resultado que te '
+            'doy; comprueba la multiplicación antes de escribirla.',
+            'RD-14|Si mencionas el punto de equilibrio con deuda, di que está '
+            'calculado con la cuota de carencia del primer año y que con la cuota '
+            'plena sube.',
+        ],
+        'prohibido': [
+            'RD-06|Prohibido escribir un ticket medio distinto del que te doy, y '
+            'prohibido escribir una fórmula cuyo resultado no coincida con la '
+            'facturación del plan.',
+        ],
+    },
+    ('business-plan-modelo', 10): {
+        'cifras_mas': [
+            ('Carencia de principal del préstamo (meses)', f'{X_PLAN}!Financiación!B14', 'num'),
+        ],
+        'puntos': [
+            'RD-09|Las condiciones de la operación se escriben con carencia de '
+            'principal de doce meses y amortización por el sistema francés, de '
+            'cuota constante, que es el cuadro que se reproduce en este mismo '
+            'capítulo.',
+            'RD-07|Cuando escribas un tipo de interés, escríbelo como porcentaje '
+            'con su símbolo («5,5 %»), nunca como fracción decimal («0,06»): un '
+            'plan que pide setecientos mil euros al 0,06 % anual se devuelve por '
+            'la ventanilla.',
+        ],
+        'prohibido': [
+            'RD-08|Prohibido poner el símbolo del euro delante de la cifra, '
+            'duplicarlo, o ponerlo junto a un plazo en años. El euro va detrás de '
+            'la cifra y sólo detrás de dinero.',
+        ],
+    },
+    # ---------------------------------------------------- BONUS: manual de sala
+    ('manual-servicio-sala', 2): {
+        'cifras_mas': [
+            ('Cubiertos previstos al día', f'{X_TICKET}!Ticket Medio!C17', 'num'),
+        ],
+        'puntos': [
+            'RD-24|La sala tiene SESENTA Y CINCO plazas. No confundas ese número '
+            'con el tamaño de la brigada, que es otro: es la primera cifra '
+            'operativa del manual y de ella salen el montaje, las estaciones y '
+            'los tiempos.',
+        ],
+        'prohibido': [
+            'RD-24|Prohibido escribir un número de plazas distinto de 65.',
+        ],
+    },
+    ('manual-servicio-sala', 3): {
+        'puntos': [
+            'RD-28|El guion literal de venta sugerida es el de un restaurante de '
+            'menús degustación, no el de una carta al uso. Los ejemplos de '
+            'palabra por palabra tienen que vender lo que este restaurante '
+            'vende: subir del menú corto al largo, ofrecer el maridaje completo '
+            'frente a la copa suelta, y confirmar que toda la mesa toma el mismo '
+            'menú porque el pase es simultáneo.',
+        ],
+        'prohibido': [
+            'RD-28|Prohibido poner en boca del camarero platos de carta '
+            '(recomendar un pescado del día, cerrar una comanda de entrante, '
+            'segundo y postre, o preguntar el punto de cocción de una carne): en '
+            'un menú degustación no hay nada de eso, y ese guion entrena al '
+            'equipo para vender un restaurante que no es este.',
+        ],
+    },
+    ('manual-servicio-sala', 4): {
+        'puntos': [
+            'RD-26|El tiempo entre pases lo fija la tabla de secuencia de esta '
+            'misma sección y va en la horquilla de ocho a catorce minutos según '
+            'el tramo del menú. El texto REMITE a la tabla y no da otra cifra: '
+            'con tres o cuatro minutos, diez pases duran cuarenta minutos, que no '
+            'es el servicio de dos horas a dos horas y media que promete el mismo '
+            'párrafo.',
+        ],
+        'prohibido': [
+            'RD-26|Prohibido dar un tiempo entre pases distinto del de la tabla.',
+        ],
+    },
+    ('manual-servicio-sala', 5): {
+        'puntos': [
+            'RD-25|Las temperaturas de servicio salen de la tabla de esta sección '
+            'y de ningún otro sitio: el texto remite a ella y no repite ninguna '
+            'cifra por su cuenta. Si quieres subrayar una, cópiala literalmente '
+            'de la tabla. Ojo con los generosos secos, que van fríos: la carta de '
+            'este restaurante lleva una manzanilla pasada, y servida templada '
+            'llega a la mesa inservible.',
+        ],
+        'prohibido': [
+            'RD-25|Prohibido dar una lista de temperaturas «que el equipo debe '
+            'memorizar» que no coincida, grado a grado, con la tabla de la misma '
+            'sección.',
+        ],
+    },
+    ('manual-servicio-sala', 8): {
+        'puntos': [
+            'RD-27|En todo este manual, el plato emplatado se SIRVE y se RETIRA '
+            'por la DERECHA del comensal. En el capítulo de evaluación, la ficha '
+            'del camarero y la del runner tienen que observar exactamente esa '
+            'regla, no la contraria.',
+        ],
+        'prohibido': [
+            'RD-27|Prohibido escribir «servir por la izquierda y retirar por la '
+            'derecha»: es la regla que la edición anterior enseñaba al revés y que '
+            'esta versión corrige con carácter normativo. No puede sobrevivir en '
+            'el capítulo donde se examina al equipo.',
+        ],
+    },
+}
+
+# Prohibiciones nuevas que van a TODOS los capítulos de los tres documentos.
+NO_COMUN_V2 = [
+    'RD-17|Si hablas de IVA: en hostelería, el suministro de comidas y bebidas '
+    'para consumir en el acto tributa al 10 % (artículo 91.Uno.2.2 de la Ley '
+    'del IVA), y ese artículo no excluye la bebida alcohólica servida en sala. '
+    'El 21 % es el tipo general y aplica a la venta para llevar. Las plantillas '
+    'de este pack repercuten un 21 % sobre la línea de bebidas como criterio '
+    'de PRUDENCIA de tesorería; si lo mencionas, dilo así y no cites el '
+    'artículo 91 como si amparase el 21 % en mesa.',
+    'RD-08|El símbolo del euro va SIEMPRE detrás de la cifra y separado de '
+    'ella («700.000,00 €»). Nunca delante, nunca dos veces en el mismo importe '
+    'y nunca pegado a algo que no sea dinero: los años, los meses, las '
+    'personas y las plazas no llevan euro.',
+    'RD-07|Un porcentaje se escribe como porcentaje con su símbolo («5,5 %»), '
+    'jamás como fracción decimal («0,055» ni «0,06»).',
+    'RT-11|Cita las hojas del pack como se citan en un libro —«la hoja '
+    '«Inversión» de plan-financiero-3-anos.xlsx»—, nunca con la sintaxis de '
+    'celda de una hoja de cálculo («P&L Mensual!B13»).',
+    'RT-03|Repasa la ortografía palabra por palabra antes de terminar: la '
+    'edición anterior se publicó con «degusación», «sofware», «renabilidad», '
+    '«octubure» y «decreo legislaivo», y son 292 erratas que el lector paga.',
+]
+
+
+def _sin_id(texto):
+    """Quita la etiqueta «RD-14|» con la que se documenta el hallazgo: el
+    modelo recibe la instrucción, no el número de la auditoría."""
+    return texto.split('|', 1)[1].strip() if '|' in texto.split('.')[0][:8] else texto
+
+
+def _aplicar(capitulos, clave):
+    for cap in capitulos:
+        ref = REFUERZOS.get((clave, cap['n']), {})
+        for destino in ('puntos', 'prohibido'):
+            if ref.get(destino):
+                cap[destino] = list(cap.get(destino, [])) + \
+                    [_sin_id(x) for x in ref[destino]]
+        if ref.get('cifras_mas'):
+            ya = {r for _e, r, _f in cap.get('cifras', [])}
+            cap['cifras'] = list(cap.get('cifras', [])) + \
+                [c for c in ref['cifras_mas'] if c[1] not in ya]
+        cap['prohibido'] = list(cap.get('prohibido', [])) + \
+            [_sin_id(x) for x in NO_COMUN_V2]
+
+
+_aplicar(CAPITULOS, 'guia')
+for _b in BONUS:
+    _aplicar(_b['capitulos'], _b['nombre'])
+
+# RD-21: «47.600,00 €» estaba en `cifras_extra` como derivada aprobada
+# (C21 + C20 + G42) y el gate la certificó aritméticamente… siendo un DOBLE
+# CÓMPUTO: el total del checklist de marketing YA es la suma de las otras dos
+# partidas. Las derivadas hay que validarlas por SIGNIFICADO, no porque las
+# celdas existan. Sale de las dos listas.
+GUIA['gates']['cifras_extra'] = tuple(
+    x for x in GUIA['gates']['cifras_extra'] if x not in ('47.600,00', '47.600'))
+for _b in BONUS:
+    _b['gates']['cifras_extra'] = tuple(
+        x for x in _b['gates'].get('cifras_extra', ()) if x not in ('47.600,00', '47.600'))
+
+# Erratas que el gate ortográfico marca y NO lo son (nombres propios, términos
+# del oficio y extranjerismos que no están en el léxico del blog). Revisadas
+# una a una el 2026-08-29.
+_ERRATAS_OK = ('Kasavana', 'Repsol', 'Michelin', 'Zalto', 'Riedel', 'Bernardaud',
+               'Noritake', 'Christofle', 'Villeroy', 'Boch', 'plonge', 'runner',
+               'runners', 'hostess', 'mise', 'place', 'meunière', 'burrata',
+               'sommelier', 'coupage', 'Horeca', 'Hostelería', 'Anuario',
+               'Agenttravel', 'Observatori', 'Gastronomía', 'briefing',
+               'Bordeaux', 'Burgundy', 'Pacojet', 'Thermomix', 'roner')
+GUIA['gates']['erratas_permitidas'] = _ERRATAS_OK
+for _b in BONUS:
+    _b['gates']['erratas_permitidas'] = _ERRATAS_OK

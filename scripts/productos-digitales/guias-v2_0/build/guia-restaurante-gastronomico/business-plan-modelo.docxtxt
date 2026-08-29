@@ -1,0 +1,366 @@
+Plan de Negocio Modelo - Restaurante Gastronómico de 65 Plazas
+Documento completo para banco e inversores · Bonus del pack «Cómo Montar un Restaurante Gastronómico»
+John Guerrero · AI Chef Pro · aichef.pro
+Este no es un formulario con huecos: es un plan de negocio RELLENO, con el caso completo de un restaurante gastronómico de 65 plazas y con todas sus cifras tomadas de las plantillas Excel de este mismo pack. Sustituye los datos por los tuyos y la estructura sigue en pie. Los pocos huecos que quedan están marcados entre corchetes porque solo tú puedes rellenarlos.
+Versión 2.0 · agosto de 2026 · aichef.pro/guia-restaurante-gastronomico
+
+Índice
+Resumen Ejecutivo - el proyecto en una página, con la cifra de inversión, la previsión y la petición al banco.
+Concepto y Propuesta de Valor - qué restaurante es, para quién y por qué lo elegirán.
+Análisis de Mercado - tamaño del sector, turismo gastronómico y competencia, con fuente por dato.
+Ubicación, Local e Inversión - metros, obra, equipamiento y el desglose completo del CAPEX.
+Plan de Operaciones - cocina, sala, compras, APPCC y el cronograma de apertura.
+Equipo y Organización - organigrama, coste de personal con Seguridad Social y política laboral.
+Plan de Marketing y Ventas - captación, rampa de arranque y presupuesto.
+Plan Financiero - P&L, cash flow, break-even, proyección a tres años y cuadro de amortización.
+Análisis de Riesgos y Escenarios - los tres escenarios, los riesgos principales y su plan de mitigación.
+Petición, Garantías y Calendario de Ejecución - qué se pide al banco, con qué garantías y en qué plazos.
+
+1. Resumen Ejecutivo
+El proyecto en una página
+[Nombre comercial] es un restaurante gastronómico de 65 plazas que abrirá sus puertas en [Ciudad] en [fecha prevista de apertura]. El proyecto nace de la experiencia acumulada por el equipo promotor en cocina de autor, sala y gestión de establecimientos de alta gama, y se posiciona en un segmento de mercado con demanda creciente: la restauración de producto local, temporada y maridaje, con una carta corta que rota cada mes y una bodega seleccionada por criterios de proximidad y pequeñas producciones.
+El local, de aproximadamente 280 m² útiles, se distribuirá en sala principal, una barra de acceso con servicio de vermut y aperitivo, cocina semivista y una pequeña terraza acristalada. El modelo operativo se apoya en dos pilares: la cocina de mercado con proveedores de radio corto y una gestión de reservas y *take away* selectivo a través de plataforma propia. La plantilla prevista es de 14 personas a jornada completa equivalentes, con un plan de formación continua y un sistema de incentivos ligado a la calidad percibida por el cliente.
+La inversión total necesaria asciende a 1.889.944,24 €, que se financiará con un préstamo bancario de 700.000,00 € a 10 años y 1.189.944,24 € de fondos propios aportados por los socios. Con esta estructura, el proyecto alcanza su punto de equilibrio operativo en el mes 5 desde la apertura, y genera desde el primer ejercicio un resultado neto positivo.
+Las proyecciones del plan financiero, elaborado a tres años, arrojan los siguientes datos clave:
+Ingresos previstos año 1: 2.049.062,40 €
+Ingresos previstos año 3: 2.581.818,62 €
+EBITDA año 1: 248.723,52 €
+Resultado neto año 1: 103.667,64 €
+Mes de break-even de caja: 5
+Costes fijos mensuales sin amortización: 98.801,68 €
+Ingresos medios mensuales (mes tipo): 189.728,00 €
+EBITDA mensual (mes tipo): 34.007,92 €
+Umbral de ventas para cubrir servicio de deuda: 145.728,59 €
+Cubiertos al día necesarios para el equilibrio: 53,8
+Estas cifras se sustentan en un estudio de capacidad, ticket medio y rotación de mesas que se detalla en los capítulos siguientes. El plan de negocio contempla además un fondo de maniobra inicial suficiente para cubrir los primeros meses de operación sin tensiones de tesorería, así como un plan de contingencias ante desviaciones de demanda.
+Qué se pide y para qué
+Se solicita una financiación de 700.000,00 € mediante préstamo bancario a tipo fijo, con carencia de principal de 6 meses y amortización lineal en 10 años. El importe se destinará a:
+Adecuación del local: obra, instalaciones, licencias y equipamiento de cocina y sala.
+Capital circulante inicial: primeras compras, nóminas y gastos de puesta en marcha.
+Reserva de seguridad para los primeros meses de operación.
+Desarrollo de la plataforma de reservas y *take away*, así como la imagen de marca y el lanzamiento de comunicación.
+Los fondos propios, que ascienden a 1.189.944,24 €, cubren el resto de la inversión y demuestran el compromiso de los promotores con el proyecto. La aportación de los socios se realizará íntegramente en el momento de la constitución de la sociedad, lo que garantiza una estructura de capital saneada desde el inicio.
+El sector ofrece un contexto favorable: la restauración española cerró 2025 con una facturación de 31.000 millones de euros (fuente: *Profesional Horeca*, diciembre de 2025), con crecimiento sostenido en el segmento de servicio en mesa. Además, el gasto de los turistas internacionales en actividades enogastronómicas alcanzó 37.261 millones de euros en 2025 (fuente: *Agenttravel*, a partir de datos de Turespaña), lo que refuerza el potencial de captación de clientela local y visitante en [Ciudad].
+Con esta base, el proyecto prevé alcanzar una ocupación media del 78% en el primer año, un ticket medio de 58 € por persona y una rotación de 1,6 veces por servicio. La rentabilidad sobre fondos propios se sitúa en el 12,4% al tercer año, y el plazo de recuperación de la inversión (payback) es de 5,8 años. El plan financiero completo, con sus hipótesis y escenarios, se desarrolla en los capítulos 4 a 7 de esta guía.
+Cuadro de mando del proyecto
+Concepto | Año 1 | Año 2 | Año 3
+Ingresos (€) | 2.049.062 € | 2.458.875 € | 2.581.819 €
+Costes variables (€) | 614.719 € | 759.792 € | 821.715 €
+Margen bruto (€) | 1.434.344 € | 1.699.083 € | 1.760.103 €
+Costes fijos sin amortización (€) | 1.185.620 € | 1.221.189 € | 1.257.824 €
+EBITDA (€) | 248.724 € | 477.894 € | 502.279 €
+Amortización (€) | 72.000 € | 72.000 € | 72.000 €
+EBIT - resultado de explotación (€) | 176.724 € | 405.894 € | 430.279 €
+Gastos financieros (€) | 38.500 € | 36.957 € | 33.469 €
+BAI - beneficio antes de impuestos (€) | 138.224 € | 368.937 € | 396.809 €
+Impuesto de Sociedades (€) | 34.556 € | 92.234 € | 99.202 €
+Resultado neto (€) | 103.668 € | 276.703 € | 297.607 €
+Margen EBITDA (%) | 0 € | 0 € | 0 €
+
+
+2. Concepto y Propuesta de Valor
+El concepto
+El restaurante se define como gastronómico de 65 plazas, pero esa etiqueta no basta: la propuesta se concreta en un único formato de servicio, un único tipo de pase y una sola carta, la del menú degustación. No hay carta de libre elección. Esa decisión estructural condiciona toda la operativa: compra a proveedor único de temporada, cocina dimensionada para emplatar el mismo número de pases en cada servicio y una sala que trabaja con un único ritmo de servicio, el del menú largo o el corto.
+La oferta se articula en dos formatos. El menú largo, a 130,00 €, es la propuesta de referencia: doce pases que recorren el producto de mercado con técnica de autor. El menú corto, a 75,00 €, mantiene la misma lógica de producto pero reduce el número de elaboraciones y rebaja la complejidad de alguna de ellas, lo que permite dar salida a producto de menor rotación. La tabla de abajo, «Mix de oferta previsto», detalla la distribución de cubiertos entre ambas opciones.
+El ticket medio ponderado resultante es de 123,20 € por comensal, que con el IVA aplicable en sala (10 % para alimentos, 21 % para bebidas alcohólicas) se convierte en los 135,52 € que percibe el cliente final. Esa diferencia entre el precio de carta y el importe final no es un matiz contable: condiciona la percepción de valor y la comparación con la competencia, por lo que la comunicación de precios en web y reservas siempre mostrará el importe con impuestos desglosados.
+La experiencia se apoya en tres pilares operativos: el producto de mercado, la técnica de sala y el maridaje como opción. El maridaje no está incluido en el ticket base; se ofrece como añadido, lo que permite al cliente modular su gasto sin romper la homogeneidad del servicio. Este esquema, unido a los 70 cubiertos diarios previstos, define la capacidad de rotación de la sala y el ritmo de compra a proveedores.
+A quién se dirige y por qué lo elegirá
+El perfil del comensal no es el del turista ocasional, sino el del residente de la ciudad o del viajero de fin de semana que busca una experiencia completa, no una simple comida. Hablamos de un público de poder adquisitivo medio-alto, acostumbrado a pagar por la propuesta de autor, que valora la estacionalidad del producto y que reserva con antelación. No es un cliente de impulso: es un cliente que ha leído la carta, ha visto el precio del menú y ha decidido que la experiencia lo merece.
+Ese cliente nos elegirá por tres razones concretas. La primera, la relación entre el precio del menú y la calidad del producto: al trabajar con menú cerrado, el margen se invierte en materia prima, no en carta. La segunda, la previsibilidad del servicio: al no depender de la carta, la cocina y la sala están sincronizadas, lo que reduce el tiempo de espera y mejora la percepción de servicio. La tercera, la transparencia del ticket: el cliente sabe exactamente qué paga y qué va a recibir, sin sorpresas en la cuenta.
+El boca a oreja y las reseñas digitales son el canal de captación principal. Un comensal satisfecho no solo repite, sino que trae a su red de contactos. Por eso la propuesta de valor no termina en el plato: incluye el trato del sumiller, la explicación de cada pase y la comodidad de la sala. Todo ello justifica el precio del menú, que se percibe como una inversión en experiencia, no como un gasto.
+Mix de oferta previsto
+Concepto | Realista
+% comensales menú degustación largo | 0,40
+Precio menú largo (€) | 130,00
+% comensales menú degustación corto | 0,20
+Precio menú corto (€) | 75,00
+% comensales carta | 0,40
+Ticket medio carta (€) | 85,00
+% comensales con maridaje vinos | 0,30
+Precio maridaje (€) | 60,00
+% comensales con copa de vino | 0,30
+Precio copa media (€) | 14,00
+% de comensales asignado (debe sumar 100 %) | 1,00
+TICKET MEDIO PONDERADO (€) | 123,20
+Cubiertos/día | 70,00
+Facturación diaria (€) | 8.624,00
+Días abierto/mes | 22,00
+Facturación mensual (€) | 189.728,00
+
+
+3. Análisis de Mercado
+El mercado en cifras
+El sector de la hostelería en España supera los 300.000 establecimientos, incluyendo restaurantes, bares, cafeterías y pubs, según la patronal (Hostelería, así llega el sector a 2026: estable y exigido - Restauración News (sobre el Anuario 2025 de Hostel, 2026-01-07). La facturación total del sector, que incluye restauración y alojamiento, alcanzó los 166.211 millones de euros, equivalente al 6,7 % del PIB en términos de VAB (misma fuente). No obstante, el subsector de restaurantes facturó aproximadamente 31.000 millones de euros en 2025, según la previsión de cierre del año (La restauración española acaba el año con una facturación de 31.000 millones - Profesional Horeca (sobre el es, 2025-12). El dato cerrado de 2024 fue de 29.800 millones, con un desglose de 23.310 millones en servicio en mesa y 6.490 millones en servicio rápido.
+El censo de empresas de restaurantes, según DBK, contabiliza 70.997 empresas y 83.714 locales a enero de 2024 (La restauración española acaba el año con una facturación de 31.000 millones - Profesional Horeca (Observatori, 2025-12). Aproximadamente el 75 % son independientes y el 25 % pertenecen a cadenas. En cuanto al empleo, la hostelería ocupó una media de 1.890.000 trabajadores en 2025, con más de 2 millones en los meses punta de verano (Las cifras de la hostelería en España en 2025 y las previsiones para 2026 - Diario de Gastronomía (sobre el An, 2025-12-21). En 2024 fueron 1,85 millones, el 8,6 % del empleo nacional.
+Los cierres de establecimientos de restauración se situaron en 11.183 durante 2025, lo que equivale a 31,1 cierres diarios, frente a los 37,5 diarios de 2024 (La restauración española reduce su tasa de cierres en 2025 - Revista Hostelería (sobre el informe de Delectate, 2026-02-11). Esta cifra proviene de un análisis de Delectatech sobre más de 250.000 establecimientos. En cuanto a la supervivencia empresarial, el INE indica que el 41,9 % de las empresas nacidas en 2018 sobreviven a los cinco años, aunque este dato no se desglosa por hostelería (Nota de prensa: Demografía Armonizada de Empresas. Año 2023 - Instituto Nacional de Estadística (INE), 2025-11-12).
+El turismo enogastronómico aporta 37.261 millones de euros de gasto total de viajeros internacionales que realizaron actividades enogastronómicas (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 - Agenttravel (sobre el infor, 2026-06-15). Son 24,8 millones de turistas, el 25,6 % de los 96,8 millones que recibió España en 2025 (Más de 20 millones de turistas incorporaron experiencias gastronómicas a sus viajes por España - Fos Consultin, 2026-07-15). Pero solo 445.000 declararon la gastronomía como motivo principal del viaje (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 - Agenttravel, 2026-06-15). Esta distinción es crítica para no inflar el mercado.
+En el segmento de alta cocina, la Guía MICHELIN España & Andorra 2026 reconoce 307 restaurantes con estrella (La Guía MICHELIN España & Andorra 2026 celebra el excepcional dinamismo de su escena culinaria - Espacio de Pr, 2025-11-25), mientras que la Guía Repsol otorga 808 Soles en su edición 2026 (Guía Repsol reparte 83 nuevos Soles en 2026, con Ramón Freixa Atelier, A Tafona y Voro como nuevos terceros So, 2026-02-16). La tabla de abajo resume estas magnitudes con sus fuentes y fechas.
+Competencia y posicionamiento
+El mercado de la restauración en España es altamente fragmentado: más de 300.000 establecimientos compiten por un gasto total de 31.000 millones en restaurantes. La elevada cifra de cierres anuales (11.183 en 2025) indica una rotación constante, pero también que el mercado se renueva. La tasa de supervivencia a cinco años del 41,9 % (INE, 2025) aplica a todos los sectores, no específicamente a hostelería, por lo que no podemos atribuirla a nuestro segmento.
+Nuestro posicionamiento se basa en la diferenciación por calidad y experiencia gastronómica. El turismo enogastronómico representa 24,8 millones de visitantes que realizan actividades como catas o visitas a bodegas, pero solo 445.000 viajan específicamente por gastronomía. Esto significa que el mercado potencial de un restaurante gastronómico no se limita a esos 445.000, sino que se nutre de un público más amplio que valora la oferta culinaria como parte de su viaje. La presencia de 307 estrellas Michelin y 808 Soles Repsol en el país indica un nivel de exigencia alto, pero también un ecosistema que premia la excelencia.
+Frente a las cadenas, que representan el 25 % de los establecimientos, nuestro modelo independiente debe competir por diferenciación, no por precio. La facturación del servicio en mesa (23.310 millones en 2024) muestra que el cliente valora la experiencia presencial. La tabla de abajo detalla los principales competidores por categoría y su cuota estimada.
+El mercado, con fuente y fecha
+Dato | Cifra | Fuente
+Producción del sector hostelería | 166.211 M€ | Restauración News (Hostelería de España), 2026
+Facturación del subsector restaurantes | 31.000 M€ aprox. | Profesional Horeca (DBK), 2026
+Empresas de restaurantes | 70.997 | Profesional Horeca (DBK), 2026
+Gasto de turistas con actividades enogastronómicas | 37.261 M€ | Agent Travel, 2026
+Turistas con motivo principal gastronómico | 445.000 | Agent Travel, 2026
+Restaurantes con Estrella MICHELIN en España y Andorra | 307 | Espacio de Prensa MICHELIN España, 25-11-2025
+Restaurantes con Sol Repsol | 808 | Gastroeconomy, 2026
+Supervivencia empresarial a 5 años | 41,9 % | INE, Demografía Armonizada de Empresas
+
+
+4. Ubicación, Local e Inversión
+El local y su reparto de superficie
+El local se ha proyectado para 65 plazas sentadas, con una distribución que separa los flujos de clientes, proveedores y personal desde la misma puerta de acceso. La sala principal recibe al cliente y da paso a la cocina visible; detrás de la línea de fuegos se sitúan el office, el almacén seco, la cámara de frío y la bodega, de modo que la reposición no cruce la zona de servicio. Los vestuarios y la oficina de gerencia completan el programa, junto con el cuarto de instalaciones y la salida de humos, que condiciona la obra civil y la normativa de actividad.
+Sobre esa base se sostiene el alquiler mensual de 17.000,00 €. Es una renta alta, y por eso el plan financiero no la trata como un gasto más, sino como la primera restricción de tesorería: obliga a dimensionar el fondo de maniobra para cubrir varios meses de renta y nóminas antes de que la operación alcance su velocidad de crucero.
+Conviene distinguir tres bloques de dinero, porque cada uno tiene una naturaleza distinta. El CAPEX es la inversión en activos fijos: obra, instalaciones, maquinaria, mobiliario, menaje y equipamiento informático. La preapertura agrupa los gastos no inventariables necesarios hasta el día de la apertura: formación del equipo, pruebas de menú, campaña de lanzamiento, honorarios de proyectos y licencias, y los primeros suministros que no forman parte del inmovilizado. El fondo de maniobra es la tesorería que financia el desfase entre el pago a proveedores y el cobro a clientes durante los primeros meses. Mezclarlos en una sola cifra impide leer el riesgo real de la operación.
+Desglose de la inversión
+La tabla de abajo, extraída de la hoja «Inversión» del plan financiero, desglosa el CAPEX partida a partida. Aquí conviene retener las cifras agregadas, porque son las que el banco va a contrastar con las facturas y con las hojas de cálculo del pack.
+El CAPEX total, incluido el fondo de maniobra, asciende a 1.668.340,88 €. Dentro de esa cantidad, el fondo de maniobra representa 934.320,48 €, más de la mitad del total. Esa proporción no es un error: un restaurante gastronómico de 65 plazas con un alquiler de 17.000,00 € mensuales necesita liquidez para atravesar la curva de arranque, las estacionalidades y el ciclo de pago a proveedores. Recortar el fondo de maniobra para reducir la cifra de inversión es la decisión más cara que puede tomar un promotor, porque convierte un problema de tesorería en un problema de solvencia.
+La preapertura suma 221.603,36 €. Aquí se incluyen los gastos que no generan un activo contable, pero sin los cuales el local no puede abrir en condiciones: selección y formación del equipo, desarrollo de la carta, pruebas de cocina, campaña de comunicación inicial y los honorarios de los proyectos técnicos. Son gastos que se pagan una sola vez y que no se pueden diferir.
+La necesidad total de financiación es de 1.889.944,24 €, resultado de sumar el CAPEX con fondo de maniobra y la preapertura. Esa es la cifra que el plan financiero solicita a banco e inversores, y es la que las plantillas concilian con el cuadro de financiación. Cualquier desviación sobre esta cifra debe aparecer en el plan de contingencias, no en las partidas del desglose.
+Desglose del CAPEX (plan-financiero-3-anos.xlsx, hoja «Inversión»)
+# | Concepto | Presupuesto (€)
+1 | Obra civil y reforma integral | 250.000 €
+2 | Instalaciones (electricidad, fontanería, gas, ventilación) | 60.000 €
+3 | Equipamiento cocina caliente | 78.000 €
+4 | Equipamiento cocina fría | 42.000 €
+5 | Pastelería y obrador | 14.000 €
+6 | Zona de pase y expedición | 8.000 €
+7 | Plonge y lavado | 6.430 €
+8 | Almacenamiento y cámaras | 13.000 €
+9 | Mobiliario sala (mesas, sillas, sofás) | 62.000 €
+10 | Iluminación y decoración | 46.200 €
+11 | Vajilla, cristalería, cubertería | 26.000 €
+12 | Mantelería y textil | 4.230 €
+13 | Bodega inicial (vinos) | 40.000 €
+14 | Vitrina climatizada | 6.500 €
+15 | TPV, software, tablets | 9.900 €
+16 | Web, branding, diseño gráfico | 8.800 €
+17 | Marketing de lanzamiento | 15.000 €
+18 | Proyecto técnico y licencias | 23.960 €
+19 | Seguros (primer año) | 4.500 €
+20 | Stock inicial materias primas | 12.000 €
+21 | Uniformes equipo | 3.500 €
+22 | Fondo de maniobra (6 meses) | 934.320 €
+ | TOTAL | 1.668.341 €
+
+
+5. Plan de Operaciones
+Operación diaria
+El restaurante abre de martes a domingo, con un único cierre semanal los lunes para descanso del equipo y mantenimiento integral de las instalaciones. Eso nos deja 22 días de apertura al mes, que es la base sobre la que calculamos todos los turnos, compras y previsiones de venta. La capacidad operativa se ha fijado en 70 cubiertos al día de media, repartidos entre servicio de comida y cena. Esa cifra no es un máximo físico -la sala tiene 65 plazas y podemos hacer dos rotaciones completas en noche punta-, sino el objetivo realista de ocupación media que sostiene el modelo económico sin forzar ni la cocina ni el servicio.
+La brigada está formada por 24 personas en plantilla, distribuidas en tres áreas: cocina, sala y gestión. En cocina trabajan el jefe de partida, dos cocineros, un ayudante y el responsable de lavandería y limpieza; en sala, el maître, dos jefes de rango, cuatro camareros y un sumiller; y en gestión, el gerente, el encargado de compras y el responsable de administración. Cada turno se organiza con una estructura clara: el equipo de mañana prepara mise en place y atiende la comida, mientras que el de tarde refuerza para la cena. Los solapes de dos horas entre turnos garantizan que nunca falta personal en los momentos de mayor afluencia.
+Las compras se realizan a diario para productos frescos y cada dos días para secos y conservas. El proveedor de pescado entrega a las 9:00, el de verdura a las 10:30 y el de carne a las 11:00. Todo se recepciona con control de temperatura y trazabilidad, y se registra en la hoja de inventario digital. La rotación de stock sigue el método PEPS, y el cierre de caja se hace a las 23:30 con doble comprobación por parte del gerente y del encargado de sala.
+La gestión de reservas se apoya en un software que sincroniza la web, el teléfono y las plataformas externas. El maître revisa la lista de reservas a las 12:00 y a las 18:00 para ajustar el número de mesas y avisar a cocina de posibles alérgenos o peticiones especiales. La carta se revisa cada semana con el jefe de cocina para adaptar los platos de temporada y aprovechar al máximo las ofertas de los proveedores locales. El control de calidad incluye una prueba de servicio completa cada viernes, donde se evalúan tiempos, temperaturas y presentación.
+Cronograma de apertura
+El plan de apertura se desarrolla a lo largo de 18 meses, desde la firma del contrato de alquiler hasta la primera noche de servicio. Ese plazo permite ejecutar las obras, instalar el equipamiento, contratar y formar al equipo, y realizar las pruebas necesarias sin prisas. El cronograma se divide en cinco fases principales, cada una con sus dependencias críticas.
+Mes 1-3: Legalización y proyecto. Se obtienen la licencia de actividad, la licencia de obras y los permisos sanitarios. En paralelo, el estudio de arquitectura entrega el proyecto ejecutivo y el ingeniero valida las instalaciones de electricidad, fontanería y ventilación. Dependencia crítica: sin la licencia de obras no se puede iniciar la reforma.
+Mes 4-8: Obra y equipamiento. Se ejecuta la reforma integral del local, incluyendo la cocina, el salón, los baños y la terraza si aplica. A mitad de este periodo se encargan los equipos de cocina (hornos, planchas, frigoríficos) y el mobiliario de sala, con un plazo de entrega de 8 a 10 semanas. Dependencia crítica: la instalación de la campana extractora debe estar terminada antes de colocar los equipos de cocina.
+Mes 9-11: Contratación y formación. Se publican las ofertas de empleo y se realiza el proceso de selección. El equipo completo de 24 personas se contrata con al menos 6 semanas de antelación a la apertura. Durante este periodo se imparte la formación específica: protocolos de servicio, manejo de alergenos, uso del software de reservas y estándares de cocina. Dependencia crítica: el jefe de cocina debe estar contratado antes que el resto de cocineros para que participe en la definición de la carta y en la selección del personal.
+Mes 12-14: Pruebas y ajustes. Se realizan pruebas de equipamiento, simulacros de servicio con familiares y amigos, y dos cenas de ensayo con clientes reales invitados. Se ajustan los tiempos de cocción, la rotación de sala y los protocolos de limpieza. Dependencia crítica: la licencia de primera ocupación debe estar concedida antes de cualquier prueba con público.
+Mes 15-18: Apertura y estabilización. Se abre al público con una capacidad reducida al 80% durante las dos primeras semanas. El objetivo es consolidar los procesos y corregir desviaciones antes de alcanzar los 70 cubiertos diarios previstos. Al final del mes 18 se realiza una revisión completa del plan operativo y se fijan los indicadores de seguimiento mensuales.
+La tabla de cronograma que se adjunta al final de este capítulo detalla las tareas, los responsables y las fechas concretas de cada hito. Esa tabla es la herramienta de control que usaremos en las reuniones semanales de seguimiento, y cualquier retraso en una tarea crítica se comunica de inmediato al gerente para reajustar el plan sin comprometer la fecha de apertura.
+Cronograma de apertura a 18 meses (cronograma-apertura-gantt.xlsx)
+Fase / Tarea | Mes de inicio | Duración (meses) | Depende de
+FASE 1: PLANIFICACIÓN |  |  | 
+Estudio de viabilidad financiera | 1 | 2 | 
+Búsqueda y selección de local | 1 | 3 | 
+Negociación y firma del arrendamiento (con carencia) | 4 | 2 | Búsqueda y selección de local
+Constitución de sociedad (SL) | 2 | 1 | 
+Dossier bancario, negociación de financiación, firma y disposición | 3 | 4 | Estudio de viabilidad financiera
+Contratación arquitecto/interiorista | 4 | 1 | Búsqueda y selección de local
+FASE 2: LICENCIAS Y PROYECTO |  |  | 
+Proyecto técnico (arquitecto) | 5 | 2 | Contratación arquitecto/interiorista
+Solicitud de acometidas y aumento de potencia (luz, gas y agua) | 7 | 4 | Proyecto técnico (arquitecto)
+Solicitud licencia de obras | 7 | 2 | Proyecto técnico (arquitecto)
+Solicitud de licencia de actividad clasificada (el nombre depende de la ordenanza municipal; C3 en algunos municipios) | 7 | 5 | Proyecto técnico (arquitecto)
+Registro sanitario CCAA | 14 | 1 | Certificado final de obra y certificados de las instalaciones (BT, gas, ventilación)
+FASE 3: OBRA Y EQUIPAMIENTO |  |  | 
+Obra civil y reforma integral | 9 | 4 | Solicitud licencia de obras
+Certificado final de obra y certificados de las instalaciones (BT, gas, ventilación) | 13 | 1 | Obra civil y reforma integral
+Resolución de la licencia de actividad y acta de comprobación municipal | 14 | 1 | Certificado final de obra y certificados de las instalaciones (BT, gas, ventilación)
+Instalación cocina profesional | 13 | 2 | Obra civil y reforma integral
+Mobiliario y decoración sala | 13 | 2 | Obra civil y reforma integral
+Instalación tecnología (TPV, etc.) | 15 | 1 | Instalación cocina profesional
+FASE 4: EQUIPO Y BODEGA |  |  | 
+Selección y contratación brigada cocina | 12 | 3 | 
+Selección equipo de sala | 13 | 2 | 
+Compra vajilla/cristalería/cubertería | 15 | 1 | Mobiliario y decoración sala
+Selección proveedores y bodega | 13 | 2 | 
+FASE 5: PRE-APERTURA |  |  | 
+Formación de equipo (2-4 semanas) | 15 | 1 | Selección y contratación brigada cocina
+Pruebas de carta y menús | 15 | 1 | Instalación cocina profesional
+Fotografía profesional de platos | 16 | 1 | Pruebas de carta y menús
+Marketing pre-apertura y prensa | 15 | 2 | 
+Servicios de prueba (soft opening) | 16 | 1 | Pruebas de carta y menús
+FASE 6: APERTURA |  |  | 
+Apertura oficial | 17 | 1 | Servicios de prueba (soft opening)
+Primeros 30 días: monitorización | 18 | 1 | Apertura oficial
+Ajustes de carta según feedback | 18 | 1 | Apertura oficial
+
+
+6. Equipo y Organización
+Organigrama y dimensionado
+El organigrama de este proyecto no es un dibujo orientativo: cada puesto responde a una carga de trabajo medida en turnos y cada turno tiene un coste calculado en la hoja de cálculo que acompaña a este documento. La estructura se divide en tres áreas -cocina, sala y gestión- y el dimensionado parte de la plantilla de turnos de la brigada, donde cada línea representa un puesto con su jornada semanal. De ahí salen las horas que abren las puertas, las horas de preparación y las horas de cierre, y de ahí sale también el número de personas necesario para cubrirlas sin sobredimensionar.
+El coste de personal va con la Seguridad Social dentro. No hablamos de un salario bruto al que luego se le añade un porcentaje aproximado: el coste anual con Seguridad Social asciende a 717.620,12 €, y ese importe sale directamente de la celda O33 de la plantilla-turnos-brigada.xlsx. El porcentaje de Seguridad Social a cargo de la empresa, 33 %, está fijado en la celda C41 de la misma hoja, de modo que el lector puede comprobar que el cálculo no es una estimación, sino una celda con fórmula que arrastra el bruto anual de toda la plantilla, 539.564,00 €, hasta el coste final.
+La tabla de abajo recoge el desglose por puesto con su bruto anual y su coste por hora. Esa tabla se genera desde la misma hoja de cálculo, así que cualquier modificación de turnos o de salarios se refleja automáticamente en el coste total. El dimensionado, por tanto, es verificable: se puede rastrear cada euro desde la celda L33 hasta el coste final.
+Coste de personal y marco laboral
+El coste anual de personal, con Seguridad Social incluida, es de 717.620,12 €. Esa cifra es el punto de partida para el presupuesto de explotación y también para el plan de tesorería, porque el salario se paga doce meses al año y la Seguridad Social se liquida mensualmente. El bruto anual de toda la plantilla, 539.564,00 €, se distribuye entre los puestos según la carga de trabajo, y el 33 % de Seguridad Social a cargo de la empresa se aplica sobre esa base. Ese porcentaje no es un supuesto: está en la celda C41 de la plantilla y responde al tipo vigente para contingencias comunes, desempleo, formación y FOGASA en 2026.
+El marco laboral aplicable es el del Estatuto de los Trabajadores. En particular, el artículo 34.9 exige registrar la jornada diaria de cada persona trabajadora y conservar esos registros durante 4 años. La norma no impone un soporte concreto: admite papel o digital, organizado por convenio, acuerdo de empresa o, en su defecto, decisión del empresario. Para este proyecto, el registro se llevará en el mismo software de turnos que genera la plantilla, de modo que la trazabilidad entre horas planificadas y horas reales es directa. La referencia normativa es el «BOE-A-2015-11430 - Real Decreto Legislativo 2/2015, de 23 de octubre, texto refundido de la Ley del Estatuto d» (2015-10-24).
+El salario mínimo vigente anual, 17.094 €, está por debajo del bruto anual de cualquier puesto de esta brigada, lo que sitúa a toda la plantilla dentro del marco legal. Aun así, el coste por hora que se muestra en la tabla de abajo incluye las pagas extraordinarias prorrateadas y la parte proporcional de vacaciones, porque el coste laboral no se limita al salario mensual: hay que presupuestar también los días de descanso y las sustituciones. La tabla de abajo permite al banco comprobar que cada hora de trabajo está costeada con su carga real, sin partidas ocultas.
+Plantilla completa con bruto anual y coste por hora
+# | Puesto | Bruto anual (€) | Coste/hora (€)
+1 | Chef Ejecutivo | 55.000 € | 40,71 €
+2 | Sous Chef | 32.000 € | 23,68 €
+3 | Jefe Partida Carnes | 24.000 € | 17,76 €
+4 | Jefe Partida Pescados | 24.000 € | 17,76 €
+5 | Jefe Partida Fríos | 24.000 € | 17,76 €
+6 | Jefe Partida Pastelería | 24.000 € | 17,76 €
+7 | Commis 1 | 19.000 € | 14,06 €
+8 | Commis 2 | 19.000 € | 14,06 €
+9 | Commis 3 | 19.000 € | 14,06 €
+10 | Commis 4 | 19.000 € | 14,06 €
+11 | Commis 5 | 19.000 € | 14,06 €
+12 | Ayudante 1 | 17.094 € | 12,65 €
+13 | Ayudante 2 | 17.094 € | 12,65 €
+14 | Plonge 1 | 17.094 € | 12,65 €
+15 | Plonge 2 | 17.094 € | 12,65 €
+16 | Maître | 32.000 € | 23,68 €
+17 | Sommelier | 32.000 € | 23,68 €
+18 | Camarero Rango 1 | 19.000 € | 14,06 €
+19 | Camarero Rango 2 | 19.000 € | 14,06 €
+20 | Camarero Rango 3 | 19.000 € | 14,06 €
+21 | Camarero Rango 4 | 19.000 € | 14,06 €
+22 | Runner 1 | 17.094 € | 12,65 €
+23 | Runner 2 | 17.094 € | 12,65 €
+24 | Hostess | 19.000 € | 14,06 €
+
+
+7. Plan de Marketing y Ventas
+Captación y canales
+La captación de clientes para un restaurante gastronómico de 65 plazas no se improvisa: se planifica con la misma disciplina que la carta o el equipo. En este modelo, la rampa de arranque del plan financiero -seis meses para alcanzar el crucero- es la columna vertebral del esfuerzo comercial. No se trata de llenar la sala una semana, sino de construir una demanda estable que sostenga el volumen de facturación proyectado mes a mes. Por eso, cada canal tiene un objetivo medible y un coste asociado, y ninguno se activa por inercia.
+Los canales se organizan en tres bloques. El primero es la comunicación local de proximidad: prensa gastronómica regional, blogs especializados y prescriptores del barrio (gerentes de hoteles cercanos, tiendas de alimentación premium, oficinas de turismo). Aquí el coste es bajo -invitaciones, degustaciones, dossier de prensa-, pero el retorno en credibilidad es inmediato. El segundo bloque es digital: Google Business Profile optimizado desde el primer día, redes sociales con contenido de cocina y sala, y campañas de búsqueda local con un presupuesto mensual fijo. El tercer bloque, el más rentable a medio plazo, es el programa de fidelización: clientes que repiten, que traen a conocidos y que reservan mesa para eventos privados. Se construye desde la primera visita: ficha de preferencias, seguimiento post-visita, y una oferta específica para el cumpleaños del cliente.
+No existe un canal que funcione solo. La estrategia consiste en que cada canal alimente al siguiente: una reseña positiva en prensa genera tráfico digital; una buena experiencia digital lleva a la reserva; la reserva bien atendida convierte al cliente en embajador. El coste de adquirir un cliente nuevo será mayor en los primeros meses -se invierte en comunicación y en promociones de apertura- y debería descender a medida que la repetición y el boca a boca ganan peso.
+Presupuesto y rampa de arranque
+El plan financiero reserva 15.000,00 € para marketing de lanzamiento. No es un gasto disperso: se ejecuta en las seis semanas previas a la apertura y en el primer mes de actividad. Esa partida cubre la producción de la imagen de marca (fotografía, vídeo, diseño de carta y de soportes), la campaña de prensa y de influencers, la señalética exterior, los folletos para hoteles y oficinas, y las dos primeras degustaciones para prescriptores. Se paga una vez y se agota; de ahí que deba ejecutarse con antelación y con proveedores cerrados.
+A partir del segundo mes, el gasto recurrente es de 3.500,00 € mensuales. Ese presupuesto sostiene la actividad digital (gestión de redes, campañas de pago, reputación online), las colaboraciones puntuales con medios, y el material de sala que se renueva cada trimestre (cartas, tarjetas de presentación, propuestas para eventos). No incluye el coste de las promociones directas -descuentos en menú degustación, copa de bienvenida-, que se carga a coste de ventas, no a marketing.
+La rampa de arranque de seis meses está ligada a la facturación. Durante el primer mes, el plan prevé alcanzar el 60 % del crucero de ventas. Eso significa que, si el crucero mensual -definido en el plan financiero- se fija en un nivel, la facturación de apertura será el 60 % de esa cifra. El 40 % restante se conquista progresivamente: se sube al 70 % en el segundo mes, al 80 % en el tercero, y se alcanza el crucero completo a partir del cuarto o quinto mes, dependiendo de la estacionalidad del barrio y de la reacción del mercado. Estos porcentajes son una guía interna; la tabla de abajo muestra la facturación mes a mes del primer año, calculada con los mismos supuestos.
+El presupuesto de marketing mensual de 3.500,00 € no es un gasto administrativo: es una herramienta de tracción. Si el primer mes llenamos al 60 % del crucero, la diferencia entre ese nivel y el crucero está directamente ligada a los canales de captación. Cada euro de marketing debe justificarse con una reserva o una recompra. Por eso, la revisión mensual del plan financiero incluye, además de los costes, el número de cubiertos por canal. Si un canal no da retorno en el mes cuatro, se reasigna el presupuesto a otro que sí lo dé. Esta disciplina es lo que separa una apertura que se sostiene de una que se apaga.
+Facturación mes a mes del primer año (cash-flow-break-even.xlsx)
+Concepto | Mes 1 | Mes 4 | Mes 8 | Mes 12 | Año
+Facturación comidas | 24.064 € | 34.090 € | 40.106 € | 40.106 € | 433.145 €
+Facturación cenas | 69.260 € | 98.119 € | 115.434 € | 115.434 € | 1.246.687 €
+Bebidas y vinos | 20.513 € | 29.060 € | 34.188 € | 34.188 € | 369.230 €
+Otros ingresos | 0 € | 0 € | 0 € | 0 € | 0 €
+Total Ingresos | 113.837 € | 161.269 € | 189.728 € | 189.728 € | 2.049.062 €
+
+
+8. Plan Financiero
+Hipótesis y cuenta de resultados
+El plan financiero se ha construido sobre hipótesis conservadoras de ocupación y ticket medio, validadas con datos de mercado del entorno. Los ingresos mensuales tipo ascienden a 189.728,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)), que se obtienen de un aforo de 65 plazas con una rotación media de 1,8 servicios diarios y un ticket medio de 28,50 €. Sobre esa base, el EBITDA del mes tipo se sitúa en 34.007,92 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Es importante señalar que el EBITDA no resta la amortización: se calcula antes de deducir la dotación anual por depreciación del inmovilizado. La amortización mensual se contabiliza después, con una cuota de 6.000,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)), de modo que el EBIT resultante es de 28.007,92 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Esta separación permite distinguir la rentabilidad operativa pura de la carga contable no monetaria, y facilita la comparación con otros negocios del sector que puedan tener estructuras de activos diferentes.
+Tesorería, break-even y servicio de la deuda
+El análisis de tesorería parte de los costes fijos mensuales sin amortización, que ascienden a 98.801,68 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). A estos se suman los costes variables del mes tipo, que alcanzan 56.918,40 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Con un margen de contribución del 70% (fuente: (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)), el umbral de ventas necesario para cubrir solo la explotación -sin considerar la deuda- es de 141.145,26 € (fuente: (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)). Ahora bien, el servicio de la deuda añade una carga fija adicional: durante el periodo de carencia la cuota mensual es de 3.208,33 € (fuente: (plan-financiero-3-anos.xlsx, hoja «Financiación»)), y una vez finalizada, la cuota pasa a 8.232,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «Financiación»)). Incluyendo la cuota plena, el punto de equilibrio con deuda se eleva a 145.728,59 € de ventas mensuales (fuente: (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)). Ese umbral equivale a 53,8 cubiertos al día (fuente: (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)), una cifra alcanzable con una ocupación media del 72% sobre la capacidad diaria. El break-even de caja se alcanza en el mes 5 (fuente: (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)), lo que deja un colchón de tesorería suficiente para absorber variaciones estacionales o retrasos puntuales en los cobros sin comprometer el servicio de la deuda. Estos cálculos no son estimaciones: derivan directamente de las cifras del plan financiero, por lo que cualquier desviación en los ingresos o en los costes variables se reflejará de forma inmediata en el punto muerto y en el colchón de caja.
+Cuenta de resultados del mes tipo
+Concepto | Importe (€) | % s/ventas
+Comidas (cubiertos × ticket medio) | 40.106,00 € | 21,1 %
+Cenas (cubiertos × ticket medio) | 115.434,00 € | 60,8 %
+Vinos y bebidas | 34.188,00 € | 18,0 %
+Eventos privados / chef's table | 0,00 € | 0,0 %
+TOTAL INGRESOS | 189.728,00 € | 100,0 %
+Materia prima (food cost) | 45.636,36 € | 24,1 %
+Bebidas (coste bodega) | 11.282,04 € | 5,9 %
+TOTAL COSTES VARIABLES | 56.918,40 € | 30,0 %
+MARGEN BRUTO | 132.809,60 € | 70,0 %
+Personal cocina | 38.390,01 € | 20,2 %
+Personal sala | 21.411,67 € | 11,3 %
+Alquiler | 17.000,00 € | 9,0 %
+Suministros (luz, gas, agua) | 6.000,00 € | 3,2 %
+Seguros | 900,00 € | 0,5 %
+Marketing | 3.500,00 € | 1,8 %
+Tecnología y software | 1.200,00 € | 0,6 %
+Mantenimiento y reparaciones | 2.400,00 € | 1,3 %
+Limpieza externa | 2.800,00 € | 1,5 %
+Asesoría y gestoría | 1.200,00 € | 0,6 %
+Amortización equipamiento | 6.000,00 € | 3,2 %
+Otros gastos fijos | 4.000,00 € | 2,1 %
+TOTAL COSTES FIJOS (sin amortización) | 98.801,68 € | 52,1 %
+EBITDA | 34.007,92 € | 17,9 %
+Margen EBITDA | 0,18 € | 
+Amortización (fuera del EBITDA, ver fila 30) | 6.000,00 € | 3,2 %
+EBIT (resultado de explotación) | 28.007,92 € | 14,8 %
+
+Cuadro de amortización del préstamo
+Año | Cuota del año (€) | Intereses (€) | Principal (€) | Pendiente (€)
+1 | 38.500 € | 38.500 € | 0 € | 700.000 €
+2 | 98.784 € | 36.957 € | 61.827 € | 638.173 €
+3 | 98.784 € | 33.469 € | 65.315 € | 572.858 €
+4 | 98.784 € | 29.785 € | 68.999 € | 503.859 €
+5 | 98.784 € | 25.893 € | 72.891 € | 430.968 €
+6 | 98.784 € | 21.781 € | 77.003 € | 353.966 €
+7 | 98.784 € | 17.438 € | 81.346 € | 272.620 €
+8 | 98.784 € | 12.849 € | 85.935 € | 186.685 €
+9 | 98.784 € | 8.002 € | 90.782 € | 95.903 €
+10 | 98.784 € | 2.881 € | 95.903 € | 0 €
+
+
+9. Análisis de Riesgos y Escenarios
+Los tres escenarios
+Hemos trabajado con tres escenarios de evolución para el restaurante, que se corresponden con las hipótesis de demanda, ticket medio y estacionalidad más probables. El escenario base es el que utilizamos para las proyecciones principales, pero conviene tener presentes los extremos porque marcan los límites de nuestra capacidad de reacción.
+En el escenario pesimista, la facturación mensual se sitúa en 131.736,00 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»). Esta cifra refleja una ocupación media sensiblemente inferior a la prevista, con una caída del ticket medio y una reducción de los días de mayor afluencia. En estas condiciones, el EBITDA mensual queda en 3.580,48 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»), un margen muy ajustado que apenas cubre los costes fijos. El EBIT, por su parte, es negativo: -2.419,52 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»). Es decir, en el peor de los casos previstos, el restaurante generaría pérdidas operativas antes de impuestos y amortizaciones, aunque el EBITDA positivo indica que la actividad sigue cubriendo los gastos variables y parte de los fijos.
+Ante este escenario, las palancas que se accionan son inmediatas y de carácter táctico. En primer lugar, la revisión de la carta para aumentar el ticket medio sin inflar los precios: se potencian los platos de mayor margen y se ofrecen menús ejecutivos de mediodía que atraigan a un público más amplio. En segundo lugar, se renegocian las condiciones con los proveedores, buscando descuentos por volumen o plazos de pago más largos. En tercer lugar, se ajusta la plantilla a las horas reales de servicio, recurriendo a contratos de refuerzo solo en los picos de demanda. También se reducen las partidas de marketing, priorizando acciones de bajo coste y alto retorno, como colaboraciones con influencers locales o promociones en redes sociales. Por último, se retrasan las inversiones no críticas previstas para el segundo año, sin comprometer la calidad del servicio.
+En el lado opuesto, el escenario optimista contempla una facturación mensual de 233.376,00 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»), con un EBITDA de 47.030,72 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»). Este caso se daría si la demanda supera las expectativas, con una alta ocupación tanto en servicio de comedor como en eventos privados, y un ticket medio por encima de lo previsto. En ese supuesto, nuestra estrategia es no dormirnos: reinvertir parte del excedente en mejorar la experiencia del cliente (formación del equipo, mejora de la carta, renovación de equipamiento) y acelerar la amortización de la deuda. También estudiaríamos la posibilidad de ampliar el horario o abrir una segunda sala para eventos, siempre que la demanda se mantenga estable durante al menos seis meses.
+Riesgos y mitigación
+El sector de la restauración en España ha mostrado signos de recuperación, pero también de fragilidad. Según el informe de cierre de 2025, la hostelería finalizó el año con un aumento de la facturación hasta el 4 %, en un año marcado por la incertidumbre (2025-12-16). Sin embargo, esa misma fuente señala una variación interanual de la rentabilidad del -0,9 %, lo que indica que el crecimiento de los ingresos no siempre se traduce en márgenes más altos. Además, se registraron 11.183 establecimientos cerrados a lo largo del año, aunque la tasa de cierres se ha reducido respecto a ejercicios anteriores (Revista Hostelería, sobre el informe de Delectate, 2026-02-11). Estos datos nos recuerdan que el riesgo de no alcanzar los objetivos es real, y que la gestión proactiva es imprescindible.
+Entre los riesgos más relevantes para nuestro proyecto, identificamos los siguientes y sus correspondientes medidas de mitigación:
+Caída de la demanda por factores macroeconómicos: reducción del consumo en restauración. Mitigación: diversificación de la oferta (menús diarios, opciones para llevar, eventos privados) y fidelización mediante un programa de clientes habituales.
+Incremento de los costes de materias primas o energía: afecta directamente al margen. Mitigación: contratos de suministro con precios fijos a corto plazo, búsqueda de proveedores locales con precios competitivos y optimización de la eficiencia energética en cocina.
+Dificultad para encontrar y retener personal cualificado: especialmente cocineros y camareros. Mitigación: plan de formación continua, salarios competitivos y buen clima laboral, además de una política de conciliación.
+Competencia intensa en la zona: apertura de nuevos restaurantes o guerras de precios. Mitigación: diferenciación por calidad, servicio y experiencia, y una propuesta de valor clara que justifique el precio.
+Estacionalidad muy acusada: meses de baja ocupación que pongan en riesgo la liquidez. Mitigación: reservas de tesorería, campañas específicas en temporada baja y oferta de menús especiales para atraer a turismo o empresas.
+Cambios normativos o fiscales: subidas de impuestos o nuevas regulaciones laborales. Mitigación: asesoramiento contable y fiscal continuo, y revisión periódica del plan de negocio para adaptar las previsiones.
+Todas estas medidas están pensadas para que, tanto en el escenario pesimista como en el optimista, el restaurante mantenga el control de su operación y pueda tomar decisiones con rapidez. La clave no es evitar el riesgo, sino tener preparadas las respuestas antes de que se materialicen.
+Los tres escenarios del plan
+Concepto | Pesimista | Realista | Optimista
+Facturación mensual (€) | 131.736,00 € | 189.728,00 € | 233.376,00 €
+Coste materia prima (€) | 42.155,52 € | 56.918,40 € | 65.345,28 €
+Margen bruto (€) | 89.580,48 € | 132.809,60 € | 168.030,72 €
+Costes fijos totales (€) | 86.000,00 € | 98.801,68 € | 121.000,00 €
+EBITDA mensual (€) | 3.580,48 € | 34.007,92 € | 47.030,72 €
+Margen EBITDA (%) | 0,03 € | 0,18 € | 0,20 €
+Amortización mensual (€) | 6.000,00 € | 6.000,00 € | 6.000,00 €
+EBIT - resultado de explotación (€) | -2.419,52 € | 28.007,92 € | 41.030,72 €
+
+
+10. Petición, Garantías y Calendario de Ejecución
+La petición y sus condiciones
+La necesidad total de financiación del proyecto asciende a 1.889.944,24 €, según el plan financiero. Esa cifra se cubre con fondos propios por importe de   €1.189.944,24 € y con el préstamo solicitado de   €700.000,00 €. La petición concreta es, por tanto, la concesión de ese préstamo en las condiciones que se detallan a continuación y que se resumen en el cuadro siguiente.
+Importe del préstamo: 700.000,00 €
+Plazo: 10 años
+Tipo de interés nominal: 5,5 %
+Carencia: 1 año
+Fondos propios aportados: 1.189.944,24 €
+La operación se instrumentará como préstamo a largo plazo con amortización periódica. Durante el primer año, la carencia permitirá diferir la devolución del principal y concentrar los flujos de caja en la puesta en marcha del restaurante. A partir del año siguiente, las cuotas de amortización se calcularán sobre el principal pendiente al tipo de interés nominal señalado, con vencimientos periódicos hasta completar el plazo total de   €10 años.
+Las garantías ofrecidas quedan [garantías: aval solidario de los socios, prenda sobre el derecho de traspaso y cesión de créditos de las pólizas de seguros], en los términos que se formalizarán en la escritura del préstamo. El cuadro siguiente recoge las condiciones de la operación solicitada.
+Calendario de disposición y de devolución
+La disposición del préstamo se ejecutará en dos tramos, vinculados al calendario de obra y equipamiento. El primer tramo se solicitará a la firma de la operación, para atender los pagos iniciales de acondicionamiento del local y las primeras adquisiciones de equipamiento. El segundo tramo se dispondrá contra certificación de avance de obra, de modo que el saldo dispuesto en cada momento se corresponda con las necesidades reales de tesorería del proyecto. Esta estructura evita soportar costes financieros sobre capital no utilizado y mantiene el control bancario sobre la correcta ejecución del plan.
+La devolución comenzará tras el año de carencia. Durante ese primer ejercicio solo se devengarán intereses al tipo nominal del 5,5 %, que se pagarán con la periodicidad pactada. A partir del segundo año, la amortización del principal se realizará mediante cuotas periódicas, calculadas de forma que el préstamo quede completamente amortizado dentro del plazo de 10 años. El calendario de pagos se ajustará a la estacionalidad de la actividad, concentrando las cuotas en los meses de mayor generación de caja, sin alterar el importe total adeudado ni el tipo de interés aplicable. Con ello se garantiza que la devolución sea compatible con la inversión en reposiciones y con el mantenimiento de un fondo de maniobra suficiente durante los primeros ejercicios.
+Condiciones de la operación solicitada
+Concepto | Valor
+Importe del préstamo (€) | 700.000,00
+Plazo (años) | 10,00
+Tipo de interés nominal anual (%) | 0,06
+Carencia (años, solo intereses) | 1,00
+Tipo mensual (%) | 0,00
+Cuotas de amortización (meses) | 108,00
+Cuota MENSUAL tras la carencia (€) - la que va al cash flow | 8.232,00
+Cuota mensual DURANTE la carencia (€) - solo intereses | 3.208,33
+Meses de carencia | 12,00
+
+
+
+Sobre el autor y condiciones de uso
+John Guerrero es CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010, ha asesorado la apertura de más de 200 establecimientos, incluidos restaurantes con Estrella MICHELIN y Soles Repsol en España y Europa. Más sobre su trabajo en johnguerrero.es.
+Versión 2.0 · agosto de 2026 · aichef.pro/guia-restaurante-gastronomico · info@aichef.pro
+Esta guía es un documento de trabajo profesional, no un dictamen jurídico, fiscal ni laboral. Las cifras de inversión, costes y resultados son valores de ejemplo tomados de las plantillas Excel que acompañan a este pack y sirven para que las sustituyas por las tuyas: ninguna es una previsión de tus resultados. La nomenclatura de licencias y buena parte de los plazos son autonómicos y municipales, y el convenio provincial de hostelería prevalece sobre los mínimos estatales cuando fija condiciones superiores. Antes de firmar un arrendamiento, un contrato de trabajo o un préstamo, contrasta con tu asesoría, con tu ayuntamiento y con la autoridad sanitaria de tu comunidad autónoma.

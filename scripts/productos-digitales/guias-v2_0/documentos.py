@@ -60,6 +60,11 @@ import importlib.util
 import json
 import os
 import re
+import collections
+import datetime
+import html
+import unicodedata
+import textwrap
 import subprocess
 import sys
 import time
@@ -151,10 +156,17 @@ def guard_no_latinos(texto, etiqueta=''):
     return fallos
 
 
-RX_CITA = re.compile(r'\(\s*[^)]{8,}\)|\b\d{4}-\d{2}\b')
+RX_CITA = re.compile(
+    r'\(\s*[^)]{8,}\)'                 # «(Restauracion News, 2026-01-07)»
+    r'|\(\s*(?:19|20)\d{2}\s*\)'       # «(2025)» — el ano de la fuente
+    r'|\b\d{4}-\d{2}\b'                # fecha ISO de publicacion
+    r'|seg\u00fan\s+(?:el\s+|la\s+|los\s+|datos\s+de\s+)?'
+    r'[A-Z\u00c1\u00c9\u00cd\u00d3\u00da]')  # «segun Profesional Horeca»
+# Solo anios REALMENTE pasados (<= 2025): «previsiones para 2026» es correcto.
 RX_TENDENCIA_CADUCA = re.compile(
-    r'(tendencias?|previsiones?|novedades)[^.\n]{0,25}\b(19\d{2}|20[0-2]\d)\b'
-    r'|\b20[0-2]\d\s*[-/]\s*20[0-2]\d\b', re.I)
+    r'(tendencias?|previsiones?|novedades)[^.\n]{0,25}'
+    r'\b(?:19\d{2}|20[01]\d|202[0-5])\b'
+    r'|\b(?:19\d{2}|20[01]\d|202[0-5])\s*[-/]\s*20[0-3]\d\b', re.I)
 
 
 def erratas_fechas(texto):
@@ -185,6 +197,10 @@ def erratas_fechas(texto):
         fallos.append({'anio': anio, 'contexto': ventana.replace('\n', ' ')})
     for m in RX_TENDENCIA_CADUCA.finditer(texto):
         frag = m.group(0)
+        # un titulo de fuente («Perspectivas 2026, informe de 2025») no es un
+        # rotulo caduco del libro: si lleva su cita al lado, se deja pasar
+        if RX_CITA.search(texto[max(0, m.start() - 120):m.end() + 120]):
+            continue
         anios = [int(x) for x in re.findall(r'\b(19\d{2}|20\d{2})\b', frag)]
         if anios and min(anios) < 2026:
             fallos.append({'anio': min(anios), 'contexto': frag,
@@ -230,6 +246,291 @@ def erratas_mortalidad(texto, permitidos):
                 continue
             fallos.append(frag.replace('\n', ' '))
     return fallos
+
+
+# --------------------------------------------------------------------------
+# 1-bis. Calidad del TEXTO (gates nuevos, 2026-08-29).
+# El gate anterior contaba páginas, palabras, tablas y cifras y NO miraba ni
+# una sola vez si el texto se podía leer: dio «verde: true» con tres páginas de
+# «(2) (2) (2)», cuatro párrafos cortados a media palabra y 292 erratas dentro
+# (RT-06). Estos cinco detectores son los que faltaban.
+# --------------------------------------------------------------------------
+LEXICO = os.path.join(AQUI, '..', 'lexico-es-corpus.txt')
+_LEX = None
+
+
+def lexico():
+    """Léxico español del propio grupo: tokens de >=4 letras que aparecen 2+
+    veces en los 325 posts ES del blog, los datos de producto y los guiones.
+    En este Mac no hay hunspell ni aspell: este fichero ES el diccionario del
+    gate, y es reproducible (se regenera del repo). Cada línea es
+    «forma sin tildes <TAB> forma con tildes más frecuente», porque el
+    reparador tiene que devolver «degustación» y no «degustacion»."""
+    global _LEX
+    if _LEX is None:
+        _LEX = {}
+        if os.path.exists(LEXICO):
+            with open(LEXICO, encoding='utf-8') as f:
+                for ln in f:
+                    if ln.startswith('#') or not ln.strip():
+                        continue
+                    partes = ln.rstrip('\n').split('\t')
+                    _LEX[partes[0]] = (partes[1] if len(partes) > 1 else partes[0],
+                                       int(partes[2]) if len(partes) > 2 else 1)
+        else:
+            print(f'  [aviso] no existe {LEXICO}: el gate de erratas queda ciego',
+                  file=sys.stderr)
+    return _LEX
+
+
+def _norm_tok(w):
+    return ''.join(c for c in unicodedata.normalize('NFD', w.lower())
+                   if unicodedata.category(c) != 'Mn')
+
+
+RX_TOKEN = re.compile(r'[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ]+')
+RX_ENTIDAD_HTML = re.compile(r'&(?:[a-zA-Z]{2,10}|#\d{2,5});')
+RX_EURO_DOBLE = re.compile('€[\\s  ]*[\\d.,]+[\\s  ]*€')
+RX_EURO_PREFIJO = re.compile('€[\\s  ]*\\d')
+# Correcciones aplicadas al salir del modelo (limpiar_bloque):
+RX_EURO_DOBLE_FIX = re.compile('€[\\s\u00a0\u202f]*([\\d.][\\d.,]*[\\s\u00a0\u202f]*€)')
+RX_EURO_PRE_FIX = re.compile('€[\\s\u00a0\u202f]*([\\d.][\\d.,]*)')
+RX_EURO_UNIDAD = re.compile('([\\d.,]+)\u202f€([\\s\u00a0\u202f]*(?:años|año|meses|mes|'
+                            'días|día|semanas|semana|personas|persona|plazas|plaza|'
+                            'cubiertos|puntos|%))')
+# «(P&L Mensual!B13)»: sintaxis de prompt que se coló porque el gate viejo
+# sólo buscaba «.xlsx!» y aquí la cita va sin nombre de fichero (RT-11).
+RX_CITA_HOJA = re.compile(
+    r'[A-Za-zÁÉÍÓÚÑáéíóúñ&][\w áéíóúñÁÉÍÓÚÑ&]{0,28}!\s*\$?[A-Z]{1,2}\$?\d{1,4}\b')
+RX_FUGA_MODELO = re.compile(
+    r'\b(ChatGPT|GPT-?[0-9]?|Claude|DeepSeek|Gemini|OpenAI|Anthropic|'
+    r'como modelo de lenguaje|como IA\b)\b', re.I)
+FIN_DE_FRASE = '.!?:»"”’)…'
+
+
+def erratas_degeneracion(texto, max_rep=12, max_linea=1500):
+    """Bucle del modelo: n-grama repetido SEGUIDO o línea kilométrica sin
+    puntos. Es lo que imprimió tres páginas de «(2) (2) (2)» en el PDF de 85 €
+    (RT-01).
+
+    Se mide la racha CONSECUTIVA, no la frecuencia. La primera versión contaba
+    el token más frecuente de la línea y rechazaba párrafos correctos porque en
+    un párrafo de 300 palabras «de» sale más de veinte veces: un contador de
+    frecuencia no distingue el español del bucle. Lo que no ocurre nunca en
+    prosa es la misma secuencia repetida doce veces SEGUIDAS.
+    """
+    fuera = []
+    for i, ln in enumerate(texto.split('\n'), 1):
+        s = ln.strip()
+        if len(s) > max_linea and s.count('.') < len(s) / 400.0:
+            fuera.append({'motivo': 'linea_larga_sin_puntos', 'linea': i,
+                          'chars': len(s), 'muestra': s[:110]})
+            continue
+        toks = s.split()
+        if len(toks) < max_rep * 2:
+            continue
+        for n in (1, 2, 3, 4):
+            gram = [' '.join(toks[k:k + n]) for k in range(0, len(toks) - n + 1, n)]
+            racha = mejor = 1
+            cual = ''
+            for a, b in zip(gram, gram[1:]):
+                racha = racha + 1 if a == b else 1
+                if racha > mejor:
+                    mejor, cual = racha, a
+            if mejor > max_rep:
+                fuera.append({'motivo': f'{n}-grama repetido {mejor} veces seguidas',
+                              'linea': i, 'muestra': cual[:80]})
+                break
+    return fuera
+
+
+def erratas_truncamiento(texto, min_chars=40):
+    """Todo párrafo de prosa termina en signo de cierre. Cuatro bloques se
+    publicaron cortados a media palabra («La fre», «el comensal no») porque
+    bridge() aceptaba una salida corta como válida (RT-05/RD-02)."""
+    fuera = []
+    for i, ln in enumerate(texto.split('\n'), 1):
+        s = ln.strip()
+        if len(s) < min_chars or s.startswith(('#', '|', '-', '*', '>', '`')):
+            continue
+        if s.endswith('|') or re.match(r'^\d+\.\s', s):
+            continue
+        cola = s.rstrip('*_ ')
+        if cola and cola[-1] not in FIN_DE_FRASE:
+            fuera.append({'linea': i, 'cola': s[-70:]})
+    return fuera
+
+
+def erratas_parentesis(texto):
+    fuera = []
+    for i, ln in enumerate(texto.split('\n'), 1):
+        s = ln.strip()
+        if s.startswith('|'):
+            continue
+        if s.count('(') != s.count(')'):
+            fuera.append({'linea': i, 'abre': s.count('('),
+                          'cierra': s.count(')'), 'muestra': s[:130]})
+    return fuera
+
+
+def erratas_ortograficas(texto, permitidas=(), min_freq_base=6, minlen=5):
+    """Errata por letra caída o transpuesta: token que NO está en el léxico y
+    que, reponiéndole una letra en posición interior o intercambiando dos
+    adyacentes, da una palabra del léxico. Las 292 de la v2.0 («degusación»,
+    «sofware», «decreo legislaivo») salen todas aquí (RT-03).
+
+    Cada hallazgo lleva `veces` (cuántas veces aparece la errata) y `apoyo`
+    (cuántas veces aparece en ESTE MISMO texto la palabra correcta). El apoyo
+    es lo que separa una errata de una palabra rara legítima: «renabilidad»
+    convive con 30 «rentabilidad», mientras que «capota» no tiene detrás
+    ninguna «capta».
+    """
+    lex = lexico()
+    perm = {_norm_tok(w) for w in permitidas}
+    toks = [_norm_tok(w) for w in RX_TOKEN.findall(texto)]
+    freq = collections.Counter(toks)
+    conocidas = {w for w, n in freq.items() if n >= min_freq_base} | set(lex)
+    fuera = {}
+    for w, n in freq.items():
+        if len(w) < minlen or w in conocidas or w in perm:
+            continue
+        cand = _reconstruir(w, conocidas)
+        if cand:
+            fuera[w] = {'errata': w, 'probable': cand, 'veces': n,
+                        'apoyo': freq.get(cand, 0),
+                        'freq_lexico': lex.get(cand, ('', 0))[1]}
+    return sorted(fuera.values(), key=lambda d: (-d['veces'], d['errata']))
+
+
+_ABC = 'abcdefghijklmnopqrstuvwxyzñ'
+MIN_FREQ_LEXICO = 5      # la palabra correcta tiene que ser corriente
+MIN_APOYO_DOC = 3        # y tiene que estar YA escrita bien en este documento
+
+
+def _reconstruir(w, conocidas):
+    """La palabra del léxico a UNA pulsación de distancia, por dos caminos y
+    sólo dos: letra caída en posición INTERIOR y dos letras intercambiadas.
+
+    Los otros dos caminos evidentes se probaron y se descartaron con datos
+    (2026-08-29, sobre los 64 bloques de la versión anterior): quitar una letra
+    y añadirla al final no reparan, DESTROZAN —«tasado» → «asado» 32 veces,
+    «nominal» → «nómina», «provincias» → «provincia»—, porque en español
+    quitar una letra o cambiar la última suele dar otra palabra válida. Y la
+    sustitución de una letra por otra multiplica los falsos positivos sin
+    cubrir el defecto medido, que es la letra que se cae.
+    """
+    for k in range(1, len(w)):
+        for ch in _ABC:
+            c = w[:k] + ch + w[k:]
+            if c in conocidas:
+                return c
+    for k in range(len(w) - 1):
+        c = w[:k] + w[k + 1] + w[k] + w[k + 2:]
+        if c in conocidas:
+            return c
+    return None
+
+
+def _con_mayusculas(original, nueva):
+    if original.isupper():
+        return nueva.upper()
+    if original[:1].isupper():
+        return nueva[:1].upper() + nueva[1:]
+    return nueva
+
+
+def reparar_erratas(texto, permitidas=()):
+    """Repone la letra caída, y SÓLO cuando no hay duda. MEDIDO el 2026-08-29:
+    este modelo deja caer una letra cada 1.000-1.600 palabras (la «t» y la «c»,
+    sobre todo), así que rechazar el bloque entero por una errata quemaba los
+    seis reintentos y abortaba el capítulo; y reparar a la ligera es peor que
+    la errata, porque cambia el significado sin que se note.
+
+    Por eso la corrección exige las DOS pruebas a la vez: la palabra correcta
+    es corriente en el léxico (>= MIN_FREQ_LEXICO) y ya está escrita bien en
+    este mismo documento (>= MIN_APOYO_DOC). Lo que no pasa las dos pruebas no
+    se toca: se queda marcado y el gate `sin_erratas` lo pone en rojo para que
+    lo mire una persona. Devuelve (texto, [cambios]) y los cambios van al
+    informe: nada se corrige en silencio.
+    """
+    fallos = erratas_ortograficas(texto, permitidas)
+    # ERRATAS_FORZADAS: correcciones REVISADAS UNA A UNA por una persona, para
+    # las erratas que el automatismo detecta pero no se atreve a tocar porque
+    # la palabra buena no aparece bien escrita en el propio documento
+    # («panalla» → «pantalla» cuando «pantalla» sólo sale una vez). Es una
+    # lista corta y explícita, no una heurística.
+    seguros = [d for d in fallos
+               if (d['errata'] in ERRATAS_FORZADAS
+                   or (d['freq_lexico'] >= MIN_FREQ_LEXICO
+                       and d['apoyo'] >= MIN_APOYO_DOC))]
+    if not seguros:
+        return texto, []
+    lex = lexico()
+    mapa = {}
+    for d in seguros:
+        if d['errata'] in ERRATAS_FORZADAS:
+            mapa[d['errata']] = ERRATAS_FORZADAS[d['errata']]
+        else:
+            mapa[d['errata']] = lex.get(d['probable'], (d['probable'], 0))[0]
+    cambios = []
+
+    def sub(m):
+        w = m.group(0)
+        n = _norm_tok(w)
+        if n not in mapa:
+            return w
+        nueva = _con_mayusculas(w, mapa[n])
+        cambios.append({'de': w, 'a': nueva})
+        return nueva
+
+    return RX_TOKEN.sub(sub, texto), cambios
+
+
+def erratas_entidades(texto):
+    """«acci&oacute;n» impreso tal cual en el PDF (RD-04)."""
+    return sorted(set(RX_ENTIDAD_HTML.findall(texto)))
+
+
+def erratas_euro(texto):
+    """«  €1.189.944,24 €» y «€10 años» en la petición al banco (RD-08/RT-09).
+    El símbolo va SIEMPRE detrás de la cifra y nunca delante."""
+    fuera = []
+    for rx, tipo in ((RX_EURO_DOBLE, 'doble'), (RX_EURO_PREFIJO, 'prefijo')):
+        for m in rx.finditer(texto):
+            fuera.append({'tipo': tipo,
+                          'muestra': texto[max(0, m.start() - 45):m.end() + 25]
+                          .replace('\n', ' ')})
+    return fuera
+
+
+def erratas_citas_hoja(texto):
+    return sorted(set(m.group(0) for m in RX_CITA_HOJA.finditer(texto)))
+
+
+def erratas_fuga_modelo(texto):
+    return sorted(set(m.group(0) for m in RX_FUGA_MODELO.finditer(texto)))
+
+
+def epigrafes_ausentes(md_text, capitulos):
+    """Cada epígrafe del guion tiene que estar como ### en SU capítulo. Sin
+    esto, el cap. 15 se publicó sin los dos epígrafes de la matriz de Kasavana
+    y Smith —que es lo que la landing promete— y el gate no dijo nada
+    (RT-02/RT-04)."""
+    fuera = []
+    por_cap = {}
+    for tr in re.split(r'^## ', md_text, flags=re.M)[1:]:
+        m = re.match(r'(\d+)\. ', tr)
+        if m:
+            por_cap[int(m.group(1))] = tr
+    for cap in capitulos:
+        cuerpo = por_cap.get(cap['n'], '')
+        vistos = [_norm_tok(x.strip()) for x in
+                  re.findall(r'^###\s+(.+)$', cuerpo, re.M)]
+        for e in cap.get('epigrafes', []):
+            ne = _norm_tok(e.strip())
+            if not any(ne == v or ne in v or v in ne for v in vistos):
+                fuera.append({'cap': cap['n'], 'epigrafe': e})
+    return fuera
 
 
 # --------------------------------------------------------------------------
@@ -311,6 +612,14 @@ def resolver_cifras(xlsx_dir, cifras):
     return fuera
 
 
+RX_ETIQUETA_PCT = re.compile(r'\(\s*%\s*\)|\ben\s*%|\(porcentaje\)|%\s*$')
+
+
+def es_fila_porcentual(celdas):
+    """La etiqueta de la fila (o el título de la columna) declara porcentaje."""
+    return any(isinstance(c, str) and RX_ETIQUETA_PCT.search(c) for c in celdas)
+
+
 def construir_tabla(xlsx_dir, t):
     """Devuelve (markdown, n_filas). Dos formas:
        - literal:  {'cabecera': [...], 'filas': [[...], ...]}
@@ -326,12 +635,28 @@ def construir_tabla(xlsx_dir, t):
         filas = []
         ini, fin = t['filas']
         for r in range(ini, fin + 1):
-            fila = []
+            fila, crudos = [], []
             for _tit, col, fmt in t['cols']:
                 if col.startswith('='):          # literal por columna
                     fila.append(col[1:])
+                    crudos.append(None)
                     continue
-                fila.append(formatear(ws[f'{col}{r}'].value, fmt))
+                v = ws[f'{col}{r}'].value
+                crudos.append(v)
+                fila.append(formatear(v, fmt))
+            # 2026-08-29 (RD-07/RD-13): una fila cuya ETIQUETA dice «(%)» se
+            # imprimía con el formato de su columna, así que el cuadro de mando
+            # que se le enseña al banco publicaba «Margen EBITDA (%) | 0 €» y
+            # el tipo de interés como «0,06» bajo un encabezado de porcentaje.
+            # Un solo bug envenenaba cuatro tablas: la etiqueta manda sobre la
+            # columna.
+            # La etiqueta no siempre es la primera celda: en la tabla de CAPEX
+            # la columna A es el «#» y el concepto va en la B.
+            if es_fila_porcentual(fila[:2]):
+                for k in range(1, len(fila)):
+                    v = crudos[k]
+                    if isinstance(v, (int, float)) and not isinstance(v, bool):
+                        fila[k] = pct(v, 1) if abs(v) <= 1.5 else num(v, 1) + NARROW + '%'
             if t.get('saltar_vacias', True) and not any(x for x in fila[1:]):
                 continue
             filas.append(fila)
@@ -386,11 +711,17 @@ def bloque_research(idx, ids, breve=False):
             continue
         cifra = d['cifra']
         unidad = d.get('unidad') or ''
+        # 2026-08-29: cortar por CARACTER metia en el libro «(sobre el
+        # Anuario 2025 de Hostel, 2026-01-07)» y «(sobre el es, 2025-12)» —el
+        # modelo copia el recorte literal—, y de paso dejaba paréntesis sin
+        # cerrar (RT-07). Se corta por límite de palabra y con sufijo explícito.
+        titulo = textwrap.shorten(d['fuente_titulo'], width=110, placeholder='…')
+        nota = textwrap.shorten(d.get('nota') or '-', width=240, placeholder='…')
         lineas.append(
             f'- [{i}] {d["dato"]}: **{cifra} {unidad}**. Fuente obligatoria a citar '
-            f'en el texto: «{d["fuente_titulo"][:110]}» '
+            f'en el texto: «{titulo}» '
             f'({d.get("fecha_publicacion") or d.get("anio_del_dato")}). '
-            + ('' if breve else f'Nota: {(d.get("nota") or "-")[:240]}'))
+            + ('' if breve else f'Nota: {nota}'))
         usados.append(i)
     return '\n'.join(lineas), usados, huecos
 
@@ -415,13 +746,80 @@ SYSTEM = (
     'las tablas y los títulos los pone el maquetador. (5) No cites años '
     'anteriores a 2026 junto a precios ni a tendencias. (6) Nunca digas que un '
     'porcentaje de restaurantes "cierra" o "fracasa" salvo que la cifra te la '
-    'haya dado yo con su fuente.')
+    'haya dado yo con su fuente. (7) TERMINA SIEMPRE la última frase: nada de '
+    'párrafos que acaben a media palabra o sin punto. (8) El símbolo del euro '
+    'va DETRÁS de la cifra y separado («1.250,00 €»), nunca delante y nunca '
+    'dos veces; y no pongas «€» junto a algo que no sea dinero (años, meses, '
+    'personas). (9) No escribas entidades HTML («&oacute;», «&nbsp;»): escribe '
+    'el carácter. (10) No repitas nunca una palabra, un número ni un símbolo '
+    'en bucle: si te encuentras repitiendo, cierra la frase y sigue. (11) '
+    'Nombra los ficheros y las hojas del pack en lenguaje de libro («la hoja '
+    '«Inversión» de plan-financiero-3-anos.xlsx»), NUNCA con la sintaxis de '
+    'celda («P&L Mensual!B13»). (12) Cuida la ortografía carácter a carácter: '
+    'la edición anterior se publicó con «degusación», «sofware» y «decreo '
+    'legislaivo», y eso en un producto de pago es inaceptable.')
+
+
+def reparar_cola(texto):
+    """Recorta la frase incompleta del final de un párrafo. Un truncamiento de
+    cola SE PUEDE reparar (se pierde media frase, no el capítulo); una
+    degeneración o una entidad HTML, no. Se usa sólo cuando bridge ha agotado
+    los reintentos y el ÚNICO defecto que queda es el corte."""
+    fuera = []
+    for ln in texto.split('\n'):
+        s = ln.rstrip()
+        cuerpo = s.strip()
+        if (len(cuerpo) < 40 or cuerpo.startswith(('#', '|', '-', '*', '>', '`'))
+                or cuerpo.endswith('|')):
+            fuera.append(ln)
+            continue
+        if cuerpo.rstrip('*_ ')[-1:] in FIN_DE_FRASE:
+            fuera.append(ln)
+            continue
+        corte = max(s.rfind('. '), s.rfind('! '), s.rfind('? '),
+                    s.rfind('.\u00bb'), s.rfind(': '))
+        if corte > 60:
+            fuera.append(s[:corte + 1].rstrip())
+    return '\n'.join(fuera)
+
+
+# Palabras que el detector ortográfico marca y NO son erratas (nombres
+# propios, términos del oficio, extranjerismos). Lo fija main() desde el guion.
+ERRATAS_PERMITIDAS = ()
+# Cada letra repuesta queda registrada aquí y sale en el informe: una
+# corrección automática que no se puede auditar es peor que la errata.
+ERRATAS_REPARADAS = []
+# {errata_normalizada: forma correcta} revisadas a mano; lo fija main() desde
+# el guion (clave `erratas_forzadas` de gates).
+ERRATAS_FORZADAS = {}
+
+
+def defectos_de_bloque(texto):
+    """Lo que descalifica una salida de bridge ANTES de guardarla: bucle del
+    modelo, párrafo cortado a media frase, entidad HTML cruda, mención al
+    motor, paréntesis sin cerrar o erratas por letra caída. Se comprueba en
+    cada intento, no al final: un bloque roto que llega al .md ya no lo ve
+    nadie hasta el PDF impreso."""
+    if not texto or not texto.strip():
+        return [{'tipo': 'vacio', 'muestra': ''}]
+    malos = []
+    for d in erratas_degeneracion(texto):
+        malos.append({'tipo': 'degeneracion', 'muestra': d['muestra']})
+    for d in erratas_truncamiento(texto):
+        malos.append({'tipo': 'truncamiento', 'muestra': d['cola']})
+    for e in erratas_entidades(texto):
+        malos.append({'tipo': 'entidad_html', 'muestra': e})
+    for f in erratas_fuga_modelo(texto):
+        malos.append({'tipo': 'fuga_de_modelo', 'muestra': f})
+    for d in erratas_parentesis(texto):
+        malos.append({'tipo': 'parentesis', 'muestra': d['muestra']})
+    return malos
 
 
 _MT_QUE_FUNCIONA = []
 
 
-def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
+def bridge(prompt, salida_txt, palabras_min, max_tokens=12000, intentos=6,
            temperatura=0.45, verbose=True, prompt_corto=None):
     """Llama a bridge.py. Medido el 2026-08-29: con --max-tokens 8192 el modelo
     puede agotar el presupuesto razonando y devolver un fichero VACÍO, y la API
@@ -435,11 +833,19 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
     # intenta primero el presupuesto que ya funcionó en esta ejecución para no
     # quemar una llamada por bloque; si aún no hay ninguno, se prueba 8192
     # (que es lo que manda la regla) y se cae a 6000.
-    presupuestos = [max_tokens, 6000, 8192, 5000, 7000, 4500][:intentos]
+    # MEDIDO OTRA VEZ el 2026-08-29, y esta vez con el mismo prompt Y el mismo
+    # --system que usa el pipeline: `deepseek-v4-flash` es un modelo de
+    # razonamiento y con --max-tokens 6000 gasta los 6000 razonando y devuelve
+    # el fichero VACÍO (2.556 in / 6.000 out / 0 palabras). El MISMO prompt sin
+    # --system sí responde, y con --max-tokens 12000 responde en 60 s con 1.146
+    # palabras gastando 3.887. O sea: el techo no sobraba, FALTABA. Esa es
+    # también la causa de fondo de los cuatro párrafos cortados a media palabra
+    # y de las tres páginas de «(2)»: presupuesto agotado a mitad de la salida.
+    presupuestos = [max_tokens, 14000, 10000, 16000, 11000, 8192][:intentos]
     if _MT_QUE_FUNCIONA:
         pref = _MT_QUE_FUNCIONA[-1]
         presupuestos = [pref] + [x for x in presupuestos if x != pref]
-    texto = ''
+    texto, mejor = '', ''
     for k, mt in enumerate(presupuestos):
         if k:
             time.sleep(15)
@@ -462,16 +868,52 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
         if verbose:
             print(f'    bridge intento {k + 1}/{len(presupuestos)} '
                   f'(max_tokens={mt}) → {n} palabras', flush=True)
-        if n >= palabras_min:
+        # 2026-08-29: una salida LARGA puede seguir siendo basura. Cuatro
+        # bloques se publicaron cortados a media palabra («La fre») y uno con
+        # tres páginas de «(2) (2) (2)» porque aquí sólo se contaban palabras.
+        malos = defectos_de_bloque(texto)
+        if not malos and n > len(mejor.split()):
+            mejor = texto              # la mejor salida LIMPIA vista hasta ahora
+        if n >= palabras_min and not malos:
             if mt not in _MT_QUE_FUNCIONA:
                 _MT_QUE_FUNCIONA.append(mt)
             return texto
+        if malos and verbose:
+            print(f'    bridge intento {k + 1}: RECHAZADO por '
+                  f'{", ".join(sorted(set(m["tipo"] for m in malos)))} '
+                  f'→ {malos[0]["muestra"][:90]!r}', flush=True)
         if r.returncode != 0 and verbose:
             print(f'    bridge rc={r.returncode} :: {r.stderr.strip()[:300]}',
                   flush=True)
-    if texto:
-        return texto                      # corto pero no vacío: se avisa arriba
-    raise SystemExit(f'ABORTADO: bridge.py no devolvió texto para {salida_txt}')
+    # Una salida LIMPIA pero algo corta vale más que otra llamada: el bloque se
+    # queda con la mejor de las que no tenían ningún defecto, y quien decide si
+    # el capítulo es demasiado corto es el gate de palabras por capítulo, que
+    # mide el capítulo entero y no el tramo. Sin esto, un bloque que se queda a
+    # cincuenta palabras del objetivo quema seis llamadas y aborta el build.
+    if mejor:
+        print(f'    bridge: se acepta la mejor salida limpia '
+              f'({len(mejor.split())} palabras, objetivo {palabras_min})', flush=True)
+        with open(salida_txt, 'w', encoding='utf-8') as f:
+            f.write(mejor)
+        return mejor
+    # Último recurso: si lo único que queda es una frase cortada al final, se
+    # recorta la frase; el resto del bloque es bueno. Cualquier otro defecto
+    # (bucle, entidad HTML, fuga del modelo, paréntesis) aborta: ese texto no
+    # se puede vender.
+    malos = defectos_de_bloque(texto)
+    if texto and malos and all(m['tipo'] == 'truncamiento' for m in malos):
+        reparado = reparar_cola(texto)
+        if reparado.strip() and not defectos_de_bloque(reparado):
+            print('    bridge: cola truncada RECORTADA '
+                  f'({len(texto.split())} → {len(reparado.split())} palabras)',
+                  flush=True)
+            with open(salida_txt, 'w', encoding='utf-8') as f:
+                f.write(reparado)
+            return reparado
+    raise SystemExit(
+        f'ABORTADO: bridge.py no devolvió texto LIMPIO para {salida_txt} '
+        f'({len(texto.split())} palabras, defectos: '
+        f'{[m["tipo"] for m in malos][:5]})')
 
 
 # --------------------------------------------------------------------------
@@ -535,7 +977,59 @@ def trocear(epigrafes, n_bloques):
     return [epigrafes[i:i + tam] for i in range(0, len(epigrafes), tam)]
 
 
-def limpiar_bloque(texto):
+def _hojas_conocidas(xlsx_dir):
+    """Los nombres de hoja REALES del producto, de mas largo a mas corto: hay
+    hojas con espacios («Turnos Semana», «Cash Flow 12 Meses») y adivinar donde
+    acaba el nombre con un regex generico se comia la palabra siguiente."""
+    import glob
+    from openpyxl import load_workbook
+    nombres = set()
+    for ruta in glob.glob(os.path.join(xlsx_dir, '*.xlsx')):
+        try:
+            nombres.update(load_workbook(ruta, read_only=True).sheetnames)
+        except Exception:
+            pass
+    return sorted(nombres, key=len, reverse=True)
+
+
+def normalizar_citas(texto, hojas=()):
+    """El prompt le da al modelo cada cifra con su celda —«[fuente:
+    plan-financiero-3-anos.xlsx!Inversion!C46]»— y el modelo la copia tal cual
+    al cuerpo del libro. La trazabilidad SE QUEDA (decision 7-bis.7: el texto
+    cita la hoja de la que sale el numero), pero escrita como se lee un libro y
+    no como se escribe un prompt: sin la exclamacion, sin la celda y sin el
+    corchete."""
+    if hojas:
+        alt = '|'.join(re.escape(h) for h in hojas)
+        rx = re.compile(
+            r'\[\s*fuente:\s*([\w-]+\.xlsx)!(' + alt + r')(?:![A-Z]+\d+)?\s*\]'
+            r'|\(\s*([\w-]+\.xlsx)!(' + alt + r')(?:![A-Z]+\d+)?\s*\)'
+            r'|([\w-]+\.xlsx)!(' + alt + r')(?:![A-Z]+\d+)?')
+
+        def sub(m):
+            g = m.groups()
+            fich, hoja = (g[0], g[1]) if g[0] else \
+                ((g[2], g[3]) if g[2] else (g[4], g[5]))
+            return f'({fich}, hoja \u00ab{hoja}\u00bb)'
+        texto = rx.sub(sub, texto)
+    # red de seguridad: cualquier «fichero.xlsx!Hoja!Celda» que quede
+    texto = re.sub(r'\[\s*fuente:\s*([\w-]+\.xlsx)![^!\]]+![A-Z]+\d+\s*\]',
+                   r'(\1)', texto)
+    texto = re.sub(r'([\w-]+\.xlsx)![^!\s,;.)\]]+![A-Z]+\d+', r'\1', texto)
+    # 2026-08-29 (RT-11): el modelo también escribe la cita SIN el fichero
+    # —«(P&L Mensual!B13)»—, y el gate viejo, que sólo buscaba «.xlsx!», la
+    # daba por limpia. Se deja el nombre de la hoja, que es lo que el lector
+    # puede abrir, y se quita la celda.
+    if hojas:
+        alt2 = '|'.join(re.escape(h) for h in hojas)
+        texto = re.sub(r'\(\s*(' + alt2 + r')!\s*\$?[A-Z]{1,2}\$?\d{1,4}\s*\)',
+                       lambda m: f'(hoja \u00ab{m.group(1)}\u00bb)', texto)
+        texto = re.sub(r'\b(' + alt2 + r')!\s*\$?[A-Z]{1,2}\$?\d{1,4}\b',
+                       lambda m: f'la hoja \u00ab{m.group(1)}\u00bb', texto)
+    return texto
+
+
+def limpiar_bloque(texto, hojas=()):
     """El modelo a veces devuelve H1/H2, una tabla o un preámbulo meta."""
     lineas = []
     for ln in texto.split('\n'):
@@ -548,6 +1042,17 @@ def limpiar_bloque(texto):
         lineas.append(ln)
     txt = '\n'.join(lineas)
     txt = re.sub(r'\n{3,}', '\n\n', txt).strip()
+    # 2026-08-29 (RD-04): «acci&oacute;n especifica» salió impreso en el PDF.
+    # El modelo devuelve entidades HTML de vez en cuando y nadie las miraba.
+    if RX_ENTIDAD_HTML.search(txt):
+        txt = html.unescape(txt)
+    # 2026-08-29 (RD-08/RT-09): «  €1.189.944,24 €» y «€10 años» en la petición
+    # al banco. El símbolo va SIEMPRE detrás; el prefijo sobra siempre.
+    txt = re.sub(RX_EURO_DOBLE_FIX, lambda m: m.group(1), txt)
+    txt = re.sub(RX_EURO_PRE_FIX, lambda m: m.group(1) + NARROW + '€', txt)
+    txt = re.sub(RX_EURO_UNIDAD, lambda m: m.group(1) + m.group(2), txt)
+    txt = re.sub('[ \u00a0]{2,}', ' ', txt)
+    txt = normalizar_citas(txt, hojas)
     # quita un preámbulo antes del primer ###
     i = txt.find('### ')
     if i > 0:
@@ -560,7 +1065,8 @@ def limpiar_bloque(texto):
 # --------------------------------------------------------------------------
 
 
-def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False):
+def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False,
+                     hojas=()):
     cifras = resolver_cifras(xlsx_dir, cap.get('cifras', []))
     ctx_cifras = '\n'.join(f'  - {e}: {v}   [fuente: {r}]' for e, v, r, _ in cifras)
     ctx_sector, usados, huecos = bloque_research(idx_research, cap.get('sector', []))
@@ -581,11 +1087,19 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False):
         if os.path.exists(ruta) and not forzar:
             with open(ruta, encoding='utf-8') as f:
                 t = f.read().strip()
-            if len(t.split()) >= por_bloque * 0.6:
+            malos = defectos_de_bloque(t)
+            if len(t.split()) >= por_bloque * 0.6 and not malos:
                 print(f'  cap {cap["n"]:02d} bloque {i + 1}: caché '
                       f'({len(t.split())} palabras)', flush=True)
-                piezas.append(limpiar_bloque(t))
+                piezas.append(limpiar_bloque(t, hojas))
                 continue
+            if malos:
+                # 2026-08-29: la caché era intocable y por eso las tres páginas
+                # de «(2)» sobrevivieron a todas las reconstrucciones. Un .txt
+                # con defectos se REGENERA aunque nadie haya pedido --regenerar.
+                print(f'  cap {cap["n"]:02d} bloque {i + 1}: caché DESCARTADA '
+                      f'({", ".join(sorted(set(m["tipo"] for m in malos)))})',
+                      flush=True)
         p = prompt_bloque(cap, epis, por_bloque, ctx_cifras, ctx_sector, guia,
                           es_ultimo=(i == len(bloques) - 1))
         print(f'  cap {cap["n"]:02d} bloque {i + 1}/{len(bloques)} '
@@ -595,7 +1109,7 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False):
                                 es_ultimo=(i == len(bloques) - 1))
         t = bridge(p, ruta, palabras_min=int(por_bloque * 0.72),
                    prompt_corto=p_corto)
-        piezas.append(limpiar_bloque(t))
+        piezas.append(limpiar_bloque(t, hojas))
 
     cuerpo = '\n\n'.join(piezas)
     md = [f'## {cap["n"]}. {cap["titulo"]}', '', cuerpo]
@@ -639,6 +1153,16 @@ def cierre(guia):
 GOLD = '#B8860B'
 DARK = '#1A1A1A'
 
+# RT-18 (2026-08-29) — DEJADO POR ESCRITO, que es lo que faltaba: las fuentes
+# del PDF son las Type-1 base de reportlab (Helvetica, Helvetica-Bold,
+# Helvetica-Oblique), que sólo cubren WinAnsi/cp1252. Este mapa degrada a
+# propósito el ESPACIO FINO (U+202F) y el GUION NO SEPARABLE (U+2011) que sí
+# llevan los .md a un espacio y un guion normales. Consecuencia práctica: un
+# gate o un parche que busque U+202F o U+2011 DENTRO DEL PDF no los encontrará
+# jamás —igual que ya pasó con los .md de los kits—, y hay que medirlos sobre
+# el Markdown. Si algún día se quiere conservar el espacio fino en el PDF, hay
+# que embeber una TrueType en vez de usar las Type-1 base; no basta con quitar
+# el mapa, porque entonces salen cuadrados .notdef.
 MAPA_WINANSI = {
     '☐': '[  ]', '☑': '[X]', '☒': '[X]', '✅': 'OK',
     '✔': 'OK', '❌': 'X', '✖': 'X', '⭐': '*', '★': '*',
@@ -777,16 +1301,25 @@ def cursiva_entera(texto):
     return texto, False
 
 
+RX_INLINE = re.compile(r'(\*\*[^*]+\*\*|(?<!\*)\*[^*\n]+\*(?!\*))')
+
+
 def negrita_runs(texto):
-    partes = re.split(r'(\*\*[^*]+\*\*)', texto)
+    """(texto, negrita, cursiva) por tramo. 2026-08-29 (RT-08): la versión
+    anterior sólo troceaba «**negrita**», así que el DOCX imprimía los
+    asteriscos de la cursiva inline —«*take away*», «*Clostridium botulinum*»—
+    mientras el PDF sí la convertía en <i>. El mismo Markdown tiene que dar el
+    mismo documento en los dos formatos (§7-bis.15)."""
     runs = []
-    for p in partes:
+    for p in RX_INLINE.split(texto):
         if not p:
             continue
-        if p.startswith('**') and p.endswith('**'):
-            runs.append((p[2:-2], True))
+        if p.startswith('**') and p.endswith('**') and len(p) > 4:
+            runs.append((p[2:-2], True, False))
+        elif p.startswith('*') and p.endswith('*') and len(p) > 2:
+            runs.append((p[1:-1], False, True))
         else:
-            runs.append((p, False))
+            runs.append((p, False, False))
     return runs
 
 
@@ -804,9 +1337,10 @@ def construir_docx(bloques, salida_docx, meta):
         s.left_margin = s.right_margin = Cm(2.2)
 
     def runs(p, texto, negrita_base=False):
-        for t, b in negrita_runs(texto):
+        for t, b, i in negrita_runs(texto):
             r = p.add_run(t)
             r.bold = b or negrita_base
+            r.italic = i
 
     primero_h1 = True
     for tipo, contenido in bloques:
@@ -868,6 +1402,12 @@ def construir_docx(bloques, salida_docx, meta):
     cp.subject = meta['subject']
     cp.category = meta.get('category', 'Guía profesional')
     cp.comments = meta.get('comments', '')
+    # 2026-08-29 (RT-10): los tres DOCX salían con la fecha por defecto de
+    # python-docx, 2013-12-23 23:15:00, y el gate de metadata sólo miraba
+    # author y title, así que no lo veía nadie.
+    ahora = datetime.datetime.now().replace(microsecond=0)
+    cp.created = ahora
+    cp.modified = ahora
     doc.save(salida_docx)
     return salida_docx
 
@@ -1028,6 +1568,14 @@ def palabras(t):
     return len([w for w in re.split(r'\s+', t) if w.strip()])
 
 
+def palabras_reales(t):
+    """Recuento robusto a la degeneración: un token sin ninguna letra no es
+    una palabra. Con el recuento antiguo, tres páginas de «(2)» aprobaban el
+    gate de extensión (RT-12)."""
+    return len([w for w in re.split(r'\s+', t)
+                if w.strip() and re.search(r'[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]', w)])
+
+
 def valores_admitidos(xlsx_dir, idx_research, extra=()):
     """Toda cifra del texto tiene que existir en una celda de los xlsx del
     producto o en el research (§5.6.8). Se generan las variantes de formato
@@ -1115,7 +1663,8 @@ def coherencia_cifras(md_text, admitidos, ignorar=()):
     return euro, otras
 
 
-def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
+def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research,
+          capitulos=()):
     doc_pdf, t_pdf = texto_pdf(pdf_path)
     d_docx, t_docx = texto_docx(docx_path)
     n_pdf, n_docx = palabras(t_pdf), palabras(t_docx)
@@ -1131,7 +1680,9 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
     for tr in trozos[1:]:
         m = re.match(r'(\d+)\. (.+)', tr.split('\n')[0])
         if m:
-            por_cap[int(m.group(1))] = palabras(tr)
+            # 2026-08-29 (RT-12): el cap. 15 declaraba 4.155 palabras de las
+            # que ~2.700 eran «(2)». Se cuentan sólo los tokens con letras.
+            por_cap[int(m.group(1))] = palabras_reales(tr)
     cortos = {k: v for k, v in por_cap.items() if v < cfg.get('min_palabras_cap', 900)}
 
     # tablas ancladas: ninguna tabla después del último ##
@@ -1158,6 +1709,27 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
         palabras(cfg.get('pie', '')) + 2          # «Pagina N»
     n_pdf_cuerpo = n_pdf - doc_pdf.page_count * palabras_marco
 
+    # ---------------------------------------------------------------- CALIDAD
+    # Los cinco detectores que faltaban (RT-06). Se miden sobre el .md Y sobre
+    # el texto extraído del PDF: lo que se vende es el PDF, no el Markdown.
+    perm = cfg.get('erratas_permitidas', ())
+    deg = erratas_degeneracion(md_text) + erratas_degeneracion(t_pdf)
+    trunc = erratas_truncamiento(md_text)
+    parent = erratas_parentesis(md_text)
+    orto = erratas_ortograficas(md_text, perm)
+    entid = erratas_entidades(md_text) + erratas_entidades(t_pdf) + \
+        erratas_entidades(t_docx)
+    # El euro se mide SOLO sobre el Markdown: al extraer el texto de un PDF las
+    # celdas de una tabla se pegan con un espacio («1.250,00 € 3.400,00 €») y
+    # eso dispara el patrón de «€ delante de cifra» sin que haya defecto. En el
+    # .md las celdas van separadas por «|» y no hay confusión posible.
+    euro = erratas_euro(md_text)
+    citas_hoja = erratas_citas_hoja(md_text)
+    fuga_modelo = erratas_fuga_modelo(md_text) + erratas_fuga_modelo(t_pdf)
+    epi = epigrafes_ausentes(md_text, capitulos)
+    # asteriscos de Markdown que se hayan colado impresos (RT-08)
+    asteriscos = t_docx.count('*') + t_pdf.count('*')
+
     r = {
         'paginas_pdf': doc_pdf.page_count,
         'paginas_prometidas': cfg['paginas_prometidas'],
@@ -1176,6 +1748,20 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
         'mortalidad_sin_fuente': erratas_mortalidad(
             md_text, cfg.get('mortalidad_permitida', [])),
         'fugas_de_taller': erratas_meta(md_text),
+        'citas_en_sintaxis_de_prompt': len(re.findall(r'\.xlsx!|\[fuente:', md_text))
+        + len(citas_hoja),
+        'citas_hoja_celda': citas_hoja,
+        'degeneracion': deg,
+        'truncamientos': trunc,
+        'parentesis_desequilibrados': parent,
+        'erratas_ortograficas': orto,
+        'erratas_ocurrencias': sum(d['veces'] for d in orto),
+        'entidades_html': entid,
+        'euro_mal_escrito': euro,
+        'fugas_de_modelo': fuga_modelo,
+        'epigrafes_ausentes': epi,
+        'asteriscos_impresos': asteriscos,
+        'palabras_reales_pdf': palabras_reales(t_pdf),
         'tabla_tras_ultimo_capitulo': bool(tabla_tras_ultimo_cap and tabla_en_cola),
         'titulos_ausentes_en_pdf': faltan_en_pdf,
         'cifras_no_encontradas': incoherentes,
@@ -1183,9 +1769,15 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
         'palabras_pdf_cuerpo': n_pdf_cuerpo,
         'meta_pdf': {'author': doc_pdf.metadata.get('author'),
                      'title': doc_pdf.metadata.get('title')},
+        # A4 = 595 x 842 pt. Se mide PAGINA A PAGINA: una sola pagina en otro
+        # tamano rompe la impresion del cliente y no se ve en el visor.
+        'paginas_no_a4': [i + 1 for i, pg in enumerate(doc_pdf)
+                          if not (abs(pg.rect.width - 595.276) < 2
+                                  and abs(pg.rect.height - 841.89) < 2)],
     }
     d = __import__('docx').Document(docx_path).core_properties
-    r['meta_docx'] = {'author': d.author, 'title': d.title}
+    r['meta_docx'] = {'author': d.author, 'title': d.title,
+                      'created': str(d.created)}
     dif = abs(n_pdf_cuerpo - n_docx) / max(1, max(n_pdf_cuerpo, n_docx))
     r['paridad_palabras_pct'] = round(dif * 100, 2)
 
@@ -1200,11 +1792,25 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research):
         'fechas': not r['fechas_caducas'],
         'mortalidad': not r['mortalidad_sin_fuente'],
         'sin_fugas_de_taller': not r['fugas_de_taller'],
+        'citas_legibles': r['citas_en_sintaxis_de_prompt'] == 0,
+        'a4': not r['paginas_no_a4'],
         'metadata': (r['meta_pdf']['author'] == 'AI Chef Pro'
                      and bool(r['meta_pdf']['title'])
                      and r['meta_docx']['author'] == 'AI Chef Pro'
-                     and bool(r['meta_docx']['title'])),
+                     and bool(r['meta_docx']['title'])
+                     # RT-10: la fecha por defecto de python-docx no vale
+                     and not r['meta_docx']['created'].startswith('2013-12-23')),
         'coherencia_cifras': not incoherentes,
+        # --- calidad del texto (nuevos, 2026-08-29) -----------------------
+        'sin_degeneracion': not deg,
+        'sin_truncamientos': not trunc,
+        'sin_erratas': not orto,
+        'parentesis_equilibrados': not parent,
+        'epigrafes_completos': not epi,
+        'sin_entidades_html': not entid,
+        'euro_bien_escrito': not euro,
+        'sin_fugas_de_modelo': not fuga_modelo,
+        'sin_asteriscos_impresos': asteriscos == 0,
     }
     r['verde'] = all(r['ok'].values())
     return r
@@ -1229,10 +1835,11 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
                         salida, dir_txt, forzar, cfg_extra=None):
     """Genera <nombre>.md/.docx/.pdf y devuelve (gates, detalle)."""
     detalle = []
+    hojas = _hojas_conocidas(xlsx_dir)
     partes = [portada_e_indice(guia, capitulos)]
     for cap in capitulos:
         md, det = generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt,
-                                   forzar=(cap['n'] in forzar))
+                                   forzar=(cap['n'] in forzar), hojas=hojas)
         f = guard_no_latinos(md, f'cap {cap["n"]}')
         if f:
             raise SystemExit(4)
@@ -1241,6 +1848,16 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
         detalle.append(det)
     partes.append(cierre(guia))
     md_text = '\n'.join(partes)
+
+    # 2026-08-29 (RT-03): las erratas por letra caída se corrigen sobre el
+    # DOCUMENTO ENTERO, no bloque a bloque. La prueba que autoriza el cambio es
+    # que la palabra correcta ya esté escrita bien en el mismo documento, y en
+    # un bloque de 800 palabras esa prueba casi nunca se cumple: «rentabilidad»
+    # sale 30 veces en el libro y una sola vez en el bloque que la escribió mal.
+    md_text, cambios = reparar_erratas(md_text, ERRATAS_PERMITIDAS)
+    if cambios:
+        ERRATAS_REPARADAS.extend([dict(c, doc=nombre) for c in cambios])
+        print(f'  letras repuestas en {nombre}: {len(cambios)}', flush=True)
 
     ruta_md = os.path.join(salida, nombre + '.md')
     with open(ruta_md, 'w', encoding='utf-8') as f:
@@ -1261,7 +1878,8 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
     cfg['pie'] = meta['pie']
     if cfg_extra:
         cfg.update({k: v for k, v in cfg_extra.items() if k != 'meta'})
-    g = gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research)
+    g = gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research,
+              capitulos=capitulos)
     g['saneados_winansi'] = saneados
     g['ficheros'] = {'md': ruta_md, 'docx': docx_path, 'pdf': pdf_path}
     return g, detalle
@@ -1293,6 +1911,10 @@ def main():
     salida = guarda_salida(args.salida or os.path.join(scratch, pid))
     dir_txt = os.path.join(salida, 'txt')
     os.makedirs(dir_txt, exist_ok=True)
+
+    global ERRATAS_PERMITIDAS, ERRATAS_FORZADAS
+    ERRATAS_PERMITIDAS = tuple(guia['gates'].get('erratas_permitidas', ()))
+    ERRATAS_FORZADAS = dict(guia['gates'].get('erratas_forzadas', {}))
 
     res = cargar_research()
     idx = indexar_research(res)
@@ -1330,6 +1952,10 @@ def main():
                                          cfg_extra=b['gates'])
             informe['documentos'][b['nombre']] = {'gates': gg, 'capitulos': dd}
             print(json.dumps(gg['ok'], ensure_ascii=False, indent=2), flush=True)
+
+    informe['_meta']['erratas_reparadas'] = ERRATAS_REPARADAS
+    informe['_meta']['erratas_reparadas_n'] = len(ERRATAS_REPARADAS)
+    print(f'letras repuestas: {len(ERRATAS_REPARADAS)}', flush=True)
 
     ruta_json = args.json or os.path.join(salida, f'{pid}-documentos.json')
     with open(ruta_json, 'w', encoding='utf-8') as f:
