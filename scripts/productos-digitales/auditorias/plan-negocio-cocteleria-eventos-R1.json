@@ -1,0 +1,1097 @@
+{
+ "productId": "plan-negocio-cocteleria-eventos",
+ "familia": "plan",
+ "inventario": {
+  "productId": "plan-negocio-cocteleria-eventos",
+  "ficheros": [
+   {
+    "nombre": "calculadora-pricing-eventos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9318,
+    "hojas": [
+     "Calculadora",
+     "Ejemplos"
+    ],
+    "formulas": 13,
+    "resumen": "Calculadora: inputs de evento (invitados/horas/nivel bebida/bartenders/runners/distancia/WP/decoración) -> desglose de costes (F16:F22) y 3 precios sugeridos (mínimo 35%, recomendado 45%, premium 55%) vía fórmulas encadenadas. Ejemplos: tabla de 10 casos 'reales' con coste total y precio recomendado ya calculados a mano (no derivan de la hoja Calculadora)."
+   },
+   {
+    "nombre": "plan-financiero-cocteleria-eventos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 17410,
+    "hojas": [
+     "Inversion Inicial",
+     "PyG 3 Anos",
+     "Punto Equilibrio",
+     "Escenarios",
+     "Personal Freelance",
+     "Instrucciones"
+    ],
+    "formulas": 0,
+    "resumen": "Todo el libro son valores estáticos (0 fórmulas Excel), no una calculadora editable; la aritmética interna (PyG, break-even, 3 escenarios con impuesto 25%) se verificó consistente a mano pero si el usuario cambia una celda (p.ej. nº eventos) nada se recalcula."
+   },
+   {
+    "nombre": "plantilla-proveedores-cocteleria-eventos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 30209,
+    "hojas": [
+     "Indice",
+     "1. Licores y destilados",
+     "2. Mixers premium",
+     "3. Cristaleria",
+     "4. Hielo y refrigeracion",
+     "5. Equipamiento accesorio",
+     "6. Frutas y garnish",
+     "7. Consumibles eco",
+     "8. Servicios pro",
+     "9. Captacion B2B",
+     "10. Hosply.pro"
+    ],
+    "formulas": 0,
+    "resumen": "96 proveedores reales confirmados por conteo de columna C (PROVEEDOR) en las 9 hojas de categoría (12+10+10+11+10+10+8+12+13=96), cifra que coincide exactamente con la promesa de landing/dashboard; 1 proveedor ('Bodeboca') repetido en dos categorías, menor."
+   },
+   {
+    "nombre": "checklist-apertura-cocteleria-eventos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 18127,
+    "hojas": [
+     "F1 - Constitucion",
+     "F2 - Seguros",
+     "F3 - Equipamiento",
+     "F4 - Marca",
+     "F5 - Captacion",
+     "F6 - Operativa"
+    ],
+    "formulas": 12,
+    "resumen": "71 trámites confirmados por conteo real de filas (10+8+14+12+13+14=71), coincide con la promesa 'checklist 71 trámites'; cada hoja lleva 2 fórmulas COUNTIF para el contador de marcados."
+   },
+   {
+    "nombre": "carta-15-cocktails-tematicos.docx",
+    "tipo": "docx",
+    "bytes": 46296,
+    "hojas": [],
+    "resumen": "288 párrafos, 5 títulos con estilo Heading (temáticas Speakeasy/Gin Lounge/Tropical/Mediterranean/Signature)."
+   },
+   {
+    "nombre": "catalogo-10-experiencias-tematicas.docx",
+    "tipo": "docx",
+    "bytes": 48148,
+    "hojas": [],
+    "resumen": "156 párrafos, 0 títulos con estilo Heading real (todo el documento usa estilo 'Normal', a diferencia de los otros 4 docx del kit que sí usan Heading) — sin navegación por títulos en Word."
+   },
+   {
+    "nombre": "catalogo-equipamiento-cocteleria-eventos.docx",
+    "tipo": "docx",
+    "bytes": 41744,
+    "hojas": [],
+    "resumen": "108 párrafos, 20 títulos Heading; catálogo de barras móviles, máquinas de hielo y cristalería con SKU/precios orientativos."
+   },
+   {
+    "nombre": "modelo-contrato-cocteleria-eventos.docx",
+    "tipo": "docx",
+    "bytes": 41500,
+    "hojas": [],
+    "resumen": "70 párrafos, 5 títulos Heading; contrato con cláusulas, anexo de carta de cócteles."
+   },
+   {
+    "nombre": "plan-de-negocio-cocteleria-eventos.docx",
+    "tipo": "docx",
+    "bytes": 53769,
+    "hojas": [],
+    "resumen": "150 párrafos, 10 títulos Heading (secciones 1-8 del plan de negocio)."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "plan-negocio",
+    "title": "Plan de Negocio (Word)",
+    "ruta": "plan-de-negocio-cocteleria-eventos.docx"
+   },
+   {
+    "key": "plan-financiero",
+    "title": "Plan Financiero Excel",
+    "ruta": "plan-financiero-cocteleria-eventos.xlsx"
+   },
+   {
+    "key": "calculadora-pricing",
+    "title": "Calculadora Pricing por Evento",
+    "ruta": "calculadora-pricing-eventos.xlsx"
+   },
+   {
+    "key": "plantilla-proveedores",
+    "title": "Plantilla 96 Proveedores Reales",
+    "ruta": "plantilla-proveedores-cocteleria-eventos.xlsx"
+   },
+   {
+    "key": "catalogo-equipamiento",
+    "title": "Catálogo Equipamiento",
+    "ruta": "catalogo-equipamiento-cocteleria-eventos.docx"
+   },
+   {
+    "key": "checklist-apertura",
+    "title": "Checklist Apertura (71 trámites)",
+    "ruta": "checklist-apertura-cocteleria-eventos.xlsx"
+   },
+   {
+    "key": "carta-cocktails",
+    "title": "Carta 15 Cocktails Temáticos",
+    "ruta": "carta-15-cocktails-tematicos.docx"
+   },
+   {
+    "key": "modelo-contrato",
+    "title": "Modelo de Contrato Profesional",
+    "ruta": "modelo-contrato-cocteleria-eventos.docx"
+   },
+   {
+    "key": "experiencias-tematicas",
+    "title": "10 Experiencias Temáticas Premium",
+    "ruta": "catalogo-10-experiencias-tematicas.docx"
+   }
+  ],
+  "landing": {
+   "productName": "Plan de Negocio: Coctelería de Eventos",
+   "entregables_prometidos": [
+    "Plan de Negocio DOCX (10 secciones)",
+    "Plan Financiero Excel (6 hojas)",
+    "Calculadora Pricing por Evento",
+    "Plantilla 96 Proveedores Reales",
+    "Catálogo Equipamiento (SKU reales)",
+    "Checklist Apertura (71 trámites)",
+    "Carta 15 Cocktails Temáticos",
+    "Modelo de Contrato Profesional",
+    "10 Experiencias Temáticas Premium"
+   ],
+   "cifras_prometidas": [
+    "9 entregables",
+    "96 proveedores reales — CONFIRMADO exacto por conteo",
+    "71 trámites — CONFIRMADO exacto por conteo",
+    "Inversión 18-35K EUR",
+    "Ticket medio 1.400 EUR/evento",
+    "50 eventos/año = 70K EUR facturación, margen 42%",
+    "Break-even 31 eventos/año",
+    "~6.600 palabras en el DOCX",
+    "Calculadora con 10 ejemplos reales del sector"
+   ],
+   "bonus": [],
+   "faqs": [
+    "¿La plantilla de 96 proveedores incluye contactos reales? (Sí, con web/contacto/cobertura/precio/plazo)"
+   ]
+  },
+  "gate": "gate-flujo-postpago.py --offline: 9 ficheros/9 cards OK, 0 fallos, 1 aviso (sección D drift/webhook sin verificar en modo offline, esperado). censo-entregables.py --fail: 9 ficheros censados (4 xlsx, 5 docx), 0 defectos.",
+  "notas": [
+   "HALLAZGO PRINCIPAL (lógica de negocio, no capturado por scripts): calculadora-pricing-eventos.xlsx, hoja 'Ejemplos' — los 10 casos 'reales para validar tu calculadora' NO se corresponden con lo que produce la propia fórmula de la hoja 'Calculadora' (F16:F27) al aplicar los mismos inputs. Reconstruyendo el cálculo con los parámetros de coste fijos de la hoja (F5-F13) para cada uno de los 10 ejemplos, el coste total real sale sistemáticamente entre 1.8x y 4.25x MÁS ALTO que la cifra publicada en la tabla de Ejemplos (p.ej. ejemplo #2 'Boda estándar finca, 100 invitados, 5h, con WP' declara coste total 805€/precio 1.670€, pero la fórmula con esos mismos inputs da ~2.330€ de coste solo en bebidas+personal, sin contar combustible). El patrón es consistente en las 10 filas, así que no es un caso aislado sino que la tabla de ejemplos se redactó a mano/con otra escala y nunca se pasó por el motor de fórmulas del propio Excel. Riesgo real: el comprador usa 'Ejemplos' como referencia rápida de precios de mercado (la landing lo vende como '10 ejemplos reales del sector' para validar la calculadora) y ancla sus presupuestos 2-4x por debajo de lo que su propia calculadora, con sus propios parámetros de coste, le diría que cobre — perdiendo margen real en cada evento cerrado con esa referencia.",
+   "plan-financiero-cocteleria-eventos.xlsx tiene 0 fórmulas Excel: es una tabla de valores fijos, no una calculadora editable pese a llamarse 'Plan Financiero'. La aritmética interna se verificó consistente a mano (PyG, break-even 31 eventos, los 3 escenarios con IS 25%), así que NO hay error de cálculo, pero si el comprador cambia un input (p.ej. 'Eventos/año' en la hoja Escenarios) el resto de la fila no se recalcula solo — a diferencia de la Calculadora de Pricing, que sí es dinámica. Merece una nota clara en la hoja 'Instrucciones' (que hoy no la tiene) avisando de que son cifras de referencia y no un modelo interactivo.",
+   "catalogo-10-experiencias-tematicas.docx usa estilo 'Normal' en el 100% de sus 156 párrafos (0 títulos Heading), a diferencia de los otros 4 .docx del mismo kit que sí llevan Heading1/2 reales — sin panel de navegación por títulos en Word/lector; cosmético/accesibilidad, no bloqueante.",
+   "El conteo inicial de '96 proveedores' que hice contando la columna A (checkboxes ☐) dio 114 y parecía un mismatch — al recontar por la columna C (PROVEEDOR, la correcta) el total real es exactamente 96, igual que promete la landing. Confirmado sin discrepancia; no reportar como bug.",
+   "Checklist 71 trámites: conteo real de filas por hoja (10+8+14+12+13+14) = 71, coincide exacto con la promesa del dashboard/landing.",
+   "Gates deterministas (gate-flujo-postpago --offline y censo-entregables --fail) en verde, 0 fallos — confirman que la Fase A (cache, A4, metadata, bio, casilla unificada, fórmulas rotas) sigue aplicada y no hay regresión mecánica."
+  ]
+ },
+ "rondas": {
+  "R1": {
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl: fórmulas, caché, evaluación de inputs, validaciones, formatos numéricos, celdas combinadas/wrap, tipos de dato, contraste contra promesas de landing/dashboard)",
+    "veredicto": "no listo",
+    "motivo": "Los dos entregables que el cliente compra por su cálculo (la Calculadora y el Plan Financiero) están rotos como herramientas. (1) La Calculadora abre con los mismos inputs que el ejemplo #2 de su propia hoja Ejemplos y devuelve 5.165 € / 51,65 € por invitado donde el ejemplo dice 1.670 € / 16,7 € y las Instrucciones del plan financiero dicen «12-18 EUR/pax»: el parámetro de bebida se multiplica por horas cuando el resto del kit lo trata como por invitado, así que el precio sale ~3x fuera de mercado y el usuario no sabe cuál de los dos números creer. (2) El Plan Financiero tiene CERO fórmulas mientras el dashboard promete literalmente «Todas las celdas editables con fórmulas» y sus propias Instrucciones piden «calibra nº eventos» y «ajusta partidas»: nada recalcula. Encima la columna «% s/VENTAS» del PyG mezcla años (11,6 % de costes fijos cuando en el año 1 son el 26,0 %) y el total de inversión (40.030 €) rompe el «18-35K EUR» que se anuncia en el hero, la meta description, el og:description y el dashboard. Con eso, la promesa de «formato que piden bancos para microcrédito o ICO» no se sostiene y hay base para reembolso.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F16 (y F5:F7, F23, F27, F30)",
+      "hallazgo": "La fórmula de coste de bebidas multiplica por invitados Y por horas un parámetro cuyo valor está calibrado como coste por invitado (evento entero). Resultado: la calculadora devuelve precios ~3x por encima de todas las demás referencias del propio kit, incluida su hoja de ejemplos y el plan financiero.",
+      "evidencia": "F16 = '=C5*C6*IF(C8=1,F5,IF(C8=2,F6,F7))' con F6=4,00 €/invitado/hora. Con los inputs por defecto (C5=100, C6=5, C8=2, C9=1, C10=1, C11=25, C12='S', C13=150) la caché del propio fichero da F16=2.000 €, F23=2.500 €, F27=5.165,29 € y F30=51,65 €/pax. La hoja Ejemplos fila 6 describe EXACTAMENTE ese caso ('Boda estandar finca', 100 invitados, '5h', 'Bebida media, 1 bartender + 1 runner, con WP 12%') y publica E6=805 € de coste y F6=1.670 € de precio, G6=16,70 €/pax. Y plan-financiero-cocteleria-eventos.xlsx!Instrucciones!B21 fija la referencia de mercado en '12-18 EUR' por persona para barra libre de 4h. Reconstruidas las 10 filas de Ejemplos con las fórmulas de la hoja Calculadora, el coste sale entre 1,86x y 4,26x más alto en las 10; reconstruidas SIN el factor horas (coste = C5 × F6 + personal + consumibles + hielo + combustible), encaja: 360 vs 410, 750 vs 805, 2.090 vs 2.010, 972 vs 1.080. Además 4 €/pax/hora × 5 h = 20 € de coste de bebida por invitado, por encima del precio de venta por invitado de las 10 filas de Ejemplos (14,50-23,00 €): la hoja vendería por debajo de coste.",
+      "fix": "Decidir la unidad y hacerla coherente en un solo sitio. Opción A (mínima): cambiar F16 a '=C5*IF(C8=1,F5,IF(C8=2,F6,F7))' y renombrar E5:E7 a 'Coste bebida básica/media/premium por invitado (evento completo)'. Opción B: dejar la fórmula por hora y recalibrar F5/F6/F7 a ~0,50 / 0,90 / 1,30 €/invitado/hora, que es lo que implican los 10 ejemplos. En cualquiera de las dos, recalcular la caché y verificar que con los inputs por defecto F27 aterriza en el entorno de 1.670 € y F30 dentro de los 12-18 €/pax que declara el propio kit."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "todo el libro (6 hojas, 0 fórmulas)",
+      "hallazgo": "El Plan Financiero no contiene ni una sola fórmula: es una tabla de valores fijos. El dashboard promete lo contrario de forma literal y las propias Instrucciones del fichero piden al usuario que modifique inputs que no recalculan nada.",
+      "evidencia": "openpyxl no encuentra ninguna celda cuyo valor empiece por '=' en las 6 hojas. Instrucciones!A5 dice \"2. 'PyG 3 Anos': calibra nº eventos segun tu red de wedding planners y tu zona.\" e Instrucciones!A4 \"1. Hoja 'Inversion Inicial': ajusta partidas a tu zona\". Si el usuario cambia Escenarios!C5 (Eventos/ano = 50), C7 (FACTURACION 70.000 €), C8, C9, C11, C13 y C14 se quedan quietos y el libro pasa a ser internamente falso. src/pages/PlanNegocioCocteleriaEventosDashboard.tsx:26 anuncia: 'Todas las celdas editables con fórmulas.'",
+      "fix": "Convertir en fórmulas al menos la cadena de cálculo: Inversion!B30 '=SUM(B6:B29)'; PyG B10 '=SUM(B6:B9)', B18 '=SUM(B13:B17)', B20 '=B10-B18', B34 '=SUM(B23:B33)', B36 '=B20-B34', B38 '=B36-B37', B39 '=MAX(0,B38*0.25)', B40 '=B38-B39' (y análogos en C y D); columna E '=B13/$B$10'; Punto Equilibrio B8 '=B7*B6', B9 '=CEILING(B5/B8,1)', B10 '=B9/12', B13 '=(B11-B9)/B11'; Escenarios B7 '=B5*B6', B8 '=B7*0,58', B9 '=B7-B8', B11 '=B9-B10', B13 '=B11-B12', B14 '=IF(B13>0,B13*0,75,B13)'. Después regenerar la caché de valores. Si por diseño se decide dejarlo estático, hay que corregir la línea 26 del dashboard y las Instrucciones antes de seguir vendiéndolo."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!E34, E36, E40 (columna E4 '% s/VENTAS')",
+      "hallazgo": "La columna de porcentaje sobre ventas mezcla años: las filas de costes variables son del Año 1 y las de costes fijos, EBITDA y resultado neto están calculadas sobre las ventas del Año 3. El caso de E34 no corresponde a ningún año: es coste fijo del Año 1 dividido entre ventas del Año 3.",
+      "evidencia": "E13='20.0%' = 14.000/70.000 ✓ (Año 1), E18='58.0%' = 40.600/70.000 ✓, E20='42.0%' = 29.400/70.000 ✓. Pero E34='11.6%' cuando B34=18.220 y B10=70.000 → 26,03 %; 11,6 % sólo sale de 18.220/157.500 (costes fijos Año 1 / ventas Año 3). E36='29.5%' con B36=11.180 y B10=70.000 → 15,97 %; 29,5 % = 46.410/157.500 (Año 3). E40='19.7%' con B40=4.635 → 6,62 %; 19,7 % = 31.058/157.500 (Año 3). Un lector que presente esto a un banco declara una estructura de costes fijos del 11,6 % cuando en el año de arranque es del 26 %.",
+      "fix": "Recalcular las tres celdas sobre B10 (Año 1): E34 '26,0 %', E36 '16,0 %', E40 '6,6 %' —o convertir toda la columna en fórmula '=B34/$B$10' etc., que además impide que vuelva a ocurrir. Si la intención era enseñar el Año 3, hay que renombrar E4 a '% s/VENTAS AÑO 3' y arreglar también E13:E20, que hoy son del Año 1."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!B30 y C30",
+      "hallazgo": "El total de inversión inicial del fichero (40.030 €) está fuera del rango 18.000-35.000 € que anuncian su propia celda de notas, el hero, la meta description, el og:description, el ContentGrid y el dashboard. El comprador que llega buscando 'inversión 18-35K' abre el Excel y encuentra un 14 % más que el techo prometido.",
+      "evidencia": "B30=40030 € (suma verificada de B6:B29: 600+800+400+0+600+350+2880+800+700+1800+600+1500+800+4000+12000+800+800+1200+700+1500+400+600+4000+2200 = 40.030). C30, en la misma fila, dice 'Rango tipico cocteleria eventos: 18.000 - 35.000 EUR'. src/components/plan-negocio-cocteleria-eventos/HeroSection.tsx:83 y WhySection.tsx:13 ('Inversión 18-35K EUR'), ContentGrid.tsx:9, PlanNegocioCocteleriaEventos.tsx:27 y :32, PlanNegocioCocteleriaEventosDashboard.tsx:26.",
+      "fix": "O bien recortar la hoja para que caiga dentro del rango —lo más limpio es sacar del total el vehículo (B20, 12.000 €) marcándolo como partida opcional/financiable y quitar B7 (800 € de constitución de SL, que es alternativa excluyente del alta de autónomo de B6)—, o bien actualizar el rango a la realidad del fichero (25-45K) en C30 y en los 6 puntos de la landing/dashboard. Lo que no puede quedarse es la contradicción dentro de la misma fila."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "alta",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Personal Freelance!C6:C9 y D6:D9",
+      "hallazgo": "Las columnas 'EVENTO 4H' y 'EVENTO 6H' no son la tarifa por 4 y 6 horas: son la tarifa por 5 y por 7,5 horas. Un 25 % de sobrecoste sistemático en la tabla que las propias Instrucciones mandan usar para presupuestar antes de aceptar un evento.",
+      "evidencia": "Bartender senior B6=22 €/h → C6=110 (22×5, no 22×4=88) y D6=165 (22×7,5, no 22×6=132). Junior B7=16 → C7=80 (×5) y D7=120 (×7,5). Runner B8=12 → C8=60 y D8=90. Camarera B9=14 → C9=70 y D9=105. El factor es exactamente 1,25 en las 8 celdas. Instrucciones!A8: \"5. 'Personal Freelance': calcula coste por evento ANTES de aceptar un presupuesto.\"",
+      "fix": "Dos salidas coherentes: (a) corregir los importes a 88/132, 64/96, 48/72 y 56/84; o (b) si el 1,25 es deliberado por montaje/desmontaje, renombrar los encabezados a 'EVENTO 4H (+1h montaje)' y 'EVENTO 6H (+1,5h montaje)' y decirlo en una nota. Mejor aún: convertirlas en fórmula '=$B6*5' / '=$B6*7,5' para que la relación quede a la vista."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "media",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Ejemplos!E5:F14 (en particular filas 5 y 7)",
+      "hallazgo": "Los 10 ejemplos son valores tecleados a mano, sin ninguna fórmula ni referencia a la hoja Calculadora, y 2 de las 10 filas ni siquiera respetan el margen del 45 % que su propio encabezado 'PRECIO RECOMENDADO' promete. La hoja se titula 'Casos reales para validar tu calculadora' y no puede validar nada.",
+      "evidencia": "Ninguna celda de Ejemplos empieza por '='. Margen implícito por fila (con la comisión WP del 12 % donde H lo indica): fila 6 45,2 %, fila 8 45,0 %, fila 9 44,9 %, fila 10 45,4 %, fila 11 45,0 %, fila 12 44,8 %, fila 13 45,0 %, fila 14 44,9 % — pero fila 5 (E5=410, F5=870, H5 'sin WP') da 52,9 % cuando 410/(1-0,45)=745, y fila 7 (E7=1530, F7=3450, H7 'con WP') da 49,6 % cuando (1530/0,55)/0,88=3.160.",
+      "fix": "Rehacer la tabla con fórmulas que apunten a los parámetros de la hoja Calculadora (o como mínimo a una fila de inputs por ejemplo), de forma que E y F se deriven de los mismos F5:F13. Mientras tanto, corregir F5 a 745 € (G5 14,90) y F7 a 3.160 € (G7 21,07), y añadir en B2 la nota de qué parámetros de coste se usaron."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Personal Freelance!B6:B9 (numFmt 165, styles.xml)",
+      "hallazgo": "El formato numérico personalizado '#,##0 €/h' deja la 'h' sin entrecomillar, y 'h' es el código de hora de Excel. Cualquier lector que detecte formatos de fecha/hora interpreta las tarifas como un valor temporal en lugar de mostrar '22 €/h'.",
+      "evidencia": "xl/styles.xml: <numFmt numFmtId=\"165\" formatCode=\"#,##0 €/h\"/>. xl/worksheets/sheet5.xml: <c r=\"B6\" s=\"17\" t=\"n\"><v>22</v></c> — el valor es el número 22, correcto, pero al leerlo openpyxl devuelve datetime.datetime(1900, 1, 22, 0, 0) para B6, y equivalentes para B7 (16), B8 (12) y B9 (14). Es el único numFmt del kit que mezcla placeholders numéricos con un código de fecha/hora.",
+      "fix": "Cambiar el formato a '#,##0\" €/h\"' (literal entre comillas dobles). El mismo criterio aplica a cualquier formato futuro que lleve d, m, y, h o s como texto: siempre entrecomillado."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Punto Equilibrio!B12 · Escenarios!B5, C5, D5",
+      "hallazgo": "Celdas que cuentan EVENTOS llevan el formato de moneda '#,##0 €', así que en pantalla el número de eventos se lee como euros.",
+      "evidencia": "Punto Equilibrio!B12=75 con number_format '#,##0 €' en la fila A12='Eventos OBJETIVO ano 2' → se muestra '75 €' (mientras que B9=31 y B11=50, las otras dos filas de eventos, sí usan '#,##0'). Escenarios!B5=30, C5=50, D5=75 con '#,##0 €' en la fila A5='Eventos/ano' → '30 €', '50 €', '75 €'. Un lector que compare Escenarios!B5 ('30 €') con B6 ('1.100 €', ticket medio) no distingue la unidad.",
+      "fix": "Poner '#,##0' (o '#,##0\" eventos\"') en Punto Equilibrio!B12 y en Escenarios!B5:D5, igualando el criterio ya usado en Punto Equilibrio!B9 y B11."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Punto Equilibrio!A18 (y Indice!B4:D7, 10. Hosply.pro!B5:C8 y B21 en proveedores; Calculadora!B35 y B36)",
+      "hallazgo": "Celdas combinadas con ajuste de texto activado y sin alto de fila fijado. Excel no autoajusta el alto de las celdas combinadas, así que el texto se corta y el lector sólo ve la primera línea.",
+      "evidencia": "Punto Equilibrio A18:C18 combinada, wrapText=True, 313 caracteres, ancho total 101 y una sola fila sin height → hacen falta ~4 líneas y se ve 1. Es la fila 'CONCLUSION', la interpretación de toda la hoja ('Con 31 eventos al ano cubres todos los costes fijos… La temporada alta (mayo-sep + dic) concentra 60-70% de la facturacion'). Igual en plantilla-proveedores: Indice!B4:D7 606 caracteres en 4 filas (necesita ~9) —es la nota de autoría y el aviso de 'Verifica directamente con cada proveedor antes de cerrar acuerdos'—, 10. Hosply.pro!B5:C8 506 caracteres en 4 filas y B21:C21 118 caracteres en 1 fila; y en la calculadora, Calculadora!B35 (111 car.) y B36 (127 car.), que son dos de las 6 notas de uso. Ninguna de esas filas tiene row_dimensions[...].height.",
+      "fix": "Fijar alto explícito en cada fila combinada con wrap: Punto Equilibrio fila 18 ≈ 70 pt; Indice filas 4-7 ≈ 40 pt cada una; Hosply filas 5-8 ≈ 35 pt y fila 21 ≈ 32 pt; Calculadora filas 35 y 36 ≈ 30 pt. Como norma para el generador: toda celda combinada con wrapText debe llevar height = ceil(len/ancho) × 15 pt repartido entre sus filas."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!C5:C13 (ninguna validación de datos) y fórmulas F16, F27, F28, F30",
+      "hallazgo": "La hoja de inputs no tiene ni una sola validación de datos y las fórmulas no llevan guarda, así que tres errores de tecleo perfectamente normales producen un precio silenciosamente equivocado en vez de un aviso.",
+      "evidencia": "ws.data_validations.dataValidation está vacío en las dos hojas del libro (la hoja Calculadora, la de inputs). (a) F16='=C5*C6*IF(C8=1,F5,IF(C8=2,F6,F7))': si C8 queda vacío o el usuario escribe 4, ninguna condición se cumple y cae en F7 = bebida PREMIUM 6,50 €, el parámetro más caro, sin avisar. (b) F27='=IF(C12=\"S\",(F23/(1-0.45))/(1-F13),F23/(1-0.45))': si en C12 se escribe 'Sí' o 'SI' —lo natural en un campo rotulado 'Wedding planner (S/N)'— el IF es FALSO y el precio sale un 12 % más bajo, justo la comisión que luego habrá que pagar. (c) Si C5 se deja vacío, F30='=F27/C5' devuelve #¡DIV/0!. Contrasta con checklist y proveedores, que sí llevan validación de lista ('✓,☐,N/A') en todas sus casillas.",
+      "fix": "Añadir validación de lista en C8 ('1,2,3') y en C12 ('S,N'), validación de decimal >0 en C5, C6 y C11, y >=0 en C9, C10, C13. Blindar además las fórmulas: F16 con IFS/CHOOSE y un IFERROR que devuelva un texto de aviso, y F30 '=IFERROR(F27/C5;\"\")'."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!C7 ('Tipo de evento')",
+      "hallazgo": "Input muerto: 'Tipo de evento' se pide al usuario pero no aparece en ninguna de las 13 fórmulas de la hoja. Y la 'complejidad' que promete la landing directamente no existe como campo.",
+      "evidencia": "C7='Boda'. Barrido de las 13 fórmulas (F16:F23, F26:F28, F30, F31): las referencias usadas son C5, C6, C8, C9, C10, C11, C12, C13 y F5:F13. C7 no aparece en ninguna. src/components/plan-negocio-cocteleria-eventos/ContentGrid.tsx:10 y PlanNegocioCocteleriaEventosDashboard.tsx:33 prometen 'invitados + horas + tipo + complejidad ⇒ precio sugerido en 3 niveles'.",
+      "fix": "Darle uso (por ejemplo un coeficiente por tipo en una tabla auxiliar con BUSCARV: boda ×1,15, corporativo ×1,10, privado ×1,00, y multiplicarlo en F27/F28) o eliminar la fila y ajustar el texto de landing y dashboard para que no prometa dos variables que la hoja no usa."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!B6, B10, B11 frente a PyG 3 Anos!B23 y B26",
+      "hallazgo": "La hoja de inversión inicial incluye partidas RECURRENTES del año 1 que el PyG vuelve a cargar como costes fijos del mismo año 1: el mismo euro se contabiliza dos veces y el total de inversión queda inflado.",
+      "evidencia": "Inversion Inicial!A6 'Alta autonomo + gestoria primer ano' B6=600 €, con C6 'Tarifa plana 80 EUR/mes primer ano, gestoria 50-80 EUR/mes'; y PyG 3 Anos!A23 'Cuota autonomo + gestoria' B23=3.960 € en el Año 1. Inversion Inicial!A10 'Seguro Responsabilidad Civil 600.000 EUR/ano' B10=600 € y A11 'Seguro multirriesgo equipo + transporte' B11=350 €; y PyG!A26 'Seguros RC + multirriesgo + transporte' B26=1.100 € en el Año 1. Son 1.550 € contados dos veces.",
+      "fix": "Sacar de Inversion Inicial las tres partidas recurrentes (B6, B10, B11) dejando sólo el alta/tasas de constitución, o marcarlas con una columna 'Recurrente (ya en PyG)' que no sume en B30. Recalcular B30 y el rango de C30 después."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "todos los .xlsx del kit",
+      "ubicacion": "64 apariciones; p. ej. plan-financiero!PyG 3 Anos (nombre de hoja), Inversion Inicial!A2, checklist!F2 - Seguros!E6, calculadora!Ejemplos!B10",
+      "hallazgo": "Ortografía: 64 palabras sin tilde ni eñe en los cuatro libros, conviviendo en el mismo fichero con celdas correctamente acentuadas. Varias cambian de significado: 'ano' no es 'año' y 'danos' no es 'daños'.",
+      "evidencia": "Barrido con openpyxl: 29 casos en plan-financiero, 25 en plantilla-proveedores, 9 en checklist, 1 en calculadora. Ejemplos leídos: nombre de hoja 'PyG 3 Anos'; Inversion Inicial!A2 'Inversion Inicial Estimada — Espana 2026'; Inversion Inicial!C6 'Tarifa plana 80 EUR/mes primer ano'; checklist!F2 - Seguros!E6 'Cubre rotura, robo, danos en transporte de barra y equipo'; checklist!F1!E11 'Cataluna: Llei 20/1985'; calculadora!Ejemplos!B10 'Cumpleanos privado'; PyG!E17 'Comision wedding planners'. En los mismos libros hay celdas correctas: proveedores!Indice!B2 'Coctelería de Eventos / Barra Móvil — España 2026' y B4 'John Guerrero (en cocina desde los 17 años, consultor gastronómico desde 2010)', y el pie 'Versión 1.1 · agosto 2026'. La incoherencia se ve dentro de la misma hoja Índice: cabecera con tildes, las 96 filas de proveedores sin ellas.",
+      "fix": "Pasar los cuatro libros por una corrección de acentuación (incluyendo los NOMBRES de hoja: 'PyG 3 Años', 'Inversión Inicial', 'Punto Equilibrio' ya está bien) y añadir al generador un gate que rechace 'ano/anos/danos/Espana/Cataluna/tamano/Cumpleanos' fuera de URLs y correos. Ojo con no tocar los dominios ('bodas.net', 'mercabarna.com')."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!B23",
+      "hallazgo": "El coste de cuota de autónomo + gestoría del Año 1 (3.960 €) es irreconciliable con los datos que el propio kit da para ese mismo año: como máximo salen 1.920 €. Son 2.040 € de gasto fantasma que hunden el resultado del año de arranque.",
+      "evidencia": "B23=3.960 € (Año 1). Inversion Inicial!C6 dice 'Tarifa plana 80 EUR/mes primer ano, gestoria 50-80 EUR/mes' → 80×12 + 80×12 = 1.920 € como techo. checklist!F1 - Constitucion!E7 repite 'Tarifa plana 80 EUR/mes primer ano (2026)'. Los años 2 y 3 sí cuadran: C23=D23=5.760 = 400 €/mes de cuota + 80 €/mes de gestoría. El Año 1 es el único que no se deja reconstruir.",
+      "fix": "Bajar B23 a 1.920 € y recalcular en cascada B34 (16.180 €), B36 (13.220 €), B38 (8.220 €), B39 (2.055 €), B40 (6.165 €), la columna E, y el break-even de Punto Equilibrio!B5 y B9 (16.180/588 = 28 eventos). O justificar en la columna de notas de dónde salen los 2.040 € extra."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Instrucciones!B22",
+      "hallazgo": "Ratio de referencia con la unidad equivocada por un factor ~10: 'Precio bartender por horas: 169-220 EUR/h'. Está en la hoja que el kit vende como cuadro de ratios de mercado, y contradice frontalmente la tarifa de coste del propio kit.",
+      "evidencia": "Instrucciones!A22 'Precio bartender por horas' · B22 '169-220 EUR/h' · C22 'Solo bartender, sin equipamiento ni bebidas'. En el mismo libro, Personal Freelance!B6 fija el coste de un bartender senior en 22 €/h y la Calculadora!F8 en 22 €/h. A 169 €/h, un servicio de 4 horas de un solo bartender costaría 676 €, más que el 'PRECIO RECOMENDADO' completo (540 €) del ejemplo #6 de la calculadora, que incluye bebidas, hielo, consumibles y desplazamiento para 30 invitados.",
+      "fix": "Corregir a '169-220 EUR por servicio (4-5h)', que es lo que el rango sugiere de verdad, o a '35-55 EUR/h' si se quiere expresar por hora de venta. Y añadir la unidad al rótulo de A22 para que no se vuelva a mezclar precio-hora con precio-servicio."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Personal Freelance!F13 (y F16)",
+      "hallazgo": "El bloque 'ESTIMACION COSTE PERSONAL POR EVENTO TIPO' no cuadra con la tabla de tarifas que tiene tres filas más arriba en la misma hoja.",
+      "evidencia": "A13='Boda 100 pax (5h): 1 fundador + 1 bartender senior + 1 runner' → F13='350 EUR'. Con la propia tabla: senior B6=22 €/h y runner B8=12 €/h → 5h = 110 + 60 = 170 €; usando la columna 'EVENTO 6H' (D6=165, D8=90) saldrían 255 €. Ninguna combinación da 350. A16='Boda premium 200 pax (6h): 2 bartenders senior + 2 runners + DJ' → F16='880 EUR' frente a 2×165 + 2×90 + 350 (D10, DJ 6h) = 860 €. En cambio F14='80 EUR' sí coincide exactamente con C7 (bartender junior 4H), lo que confirma que el criterio existía y se perdió en dos filas.",
+      "fix": "Recalcular F13 (170 € a 5h con las tarifas de B, o 255 € si se usa la columna de 6H) y F16 (860 €), y convertirlas en fórmulas que apunten a B6:B9 para que no se vuelvan a desacoplar. De paso, guardarlas como número con formato '#,##0 €' en vez de texto '350 EUR'."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Punto Equilibrio!B9, A18 y PyG 3 Anos!B37",
+      "hallazgo": "El break-even de 31 eventos —cifra que la landing, el dashboard, la FAQ y el JSON-LD repiten cuatro veces— sólo cubre los costes fijos: deja fuera la amortización que el propio PyG carga cada año. El punto de equilibrio real del modelo son 40 eventos.",
+      "evidencia": "Punto Equilibrio!B5=18.220 € 'Costes fijos anuales', B8=588 € de margen por evento, B9=31 (=18.220/588 ✓). Pero PyG 3 Anos!B37 carga 5.000 €/año de 'Amortizacion (5 anos sobre 25K)' por debajo del EBITDA, y con ella el umbral es (18.220+5.000)/588 = 39,5 → 40 eventos. Punto Equilibrio!A18 afirma 'Con 31 eventos al ano cubres todos los costes fijos', y el margen de seguridad B13='38%' se calcula sobre los 31. Además, en un modelo de autónomo el resultado neto del Año 1 (PyG!B40 = 4.635 €) es la retribución anual completa del fundador por 50 eventos, algo que la hoja no advierte en ningún sitio.",
+      "fix": "Añadir a Punto Equilibrio dos filas: 'Break-even incluyendo amortización' = 40 eventos y 'Break-even incluyendo retribución objetivo del fundador' (p. ej. 18.000 €/año → 63 eventos), y matizar el texto de A18. Mantener los 31 como 'cobertura de costes fijos' y decirlo con esas palabras en landing y FAQ."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F26 y nota B38",
+      "hallazgo": "El 'PRECIO MINIMO' no descuenta la comisión del wedding planner, pero la nota de la hoja lo presenta como suelo innegociable del 35 % de margen. Con wedding planner, ese suelo deja un margen real del 23 %.",
+      "evidencia": "F26='=F23/(1-0.35)' — sin el IF(C12=\"S\") que sí llevan F27 y F28. Rótulo B26: 'PRECIO MINIMO (margen 35%, sin comision WP)'. Nota B38: '5. Si el cliente regatea, NUNCA bajes del PRECIO MINIMO (margen 35%). Mejor declinar el evento.' Con C12='S' (el valor por defecto de la hoja) y F13=12 %: precio = C/0,65, cobro neto = 0,88 × C/0,65 = 1,3538·C, margen sobre precio = 0,88 − 0,65 = 23,0 %, no 35 %.",
+      "fix": "Igualar la fórmula al resto: F26 '=IF(C12=\"S\";(F23/(1-0,35))/(1-F13);F23/(1-0,35))', con lo que el suelo pasa a ser un 35 % real en ambos casos. Y reescribir B38 para que hable de margen neto tras comisión."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "baja",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F26, F27, F28 frente al rótulo E4",
+      "hallazgo": "Los tres márgenes objetivo están escritos a mano dentro de las fórmulas, así que son el único parámetro del modelo que el usuario no puede tocar sin editar fórmulas —justo en la hoja que se presenta como de parámetros editables.",
+      "evidencia": "F26 '=F23/(1-0.35)', F27 '=IF(C12=\"S\",(F23/(1-0.45))/(1-F13),F23/(1-0.45))', F28 '=IF(C12=\"S\",(F23/(1-0.55))/(1-F13),F23/(1-0.55))'. El rótulo E4 dice 'PARAMETROS DE COSTE (editables)' y la nota B37 invita a 'Ajusta los PARAMETROS DE COSTE (columna F derecha) cada 3-6 meses'; los 11 parámetros de F5:F13 sí son celdas, pero 0,35/0,45/0,55 no.",
+      "fix": "Sacar los tres márgenes a celdas nuevas (F14, F15 y una más, con formato 0,0 % y relleno dorado como el resto de inputs) y referenciarlas desde F26:F28. Un usuario de Madrid con costes distintos podrá subir el objetivo al 50 % sin abrir el editor de fórmulas."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "baja",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!A29 y B29",
+      "hallazgo": "La partida rotulada 'Imprevistos (8%)' no es el 8 % de nada de la hoja: es el 5,8 %.",
+      "evidencia": "B29=2.200 €. La suma de B6:B28 (todo lo anterior) es 37.830 €; el 8 % serían 3.026 €. 2.200/37.830 = 5,82 %.",
+      "fix": "Poner B29 como fórmula '=ROUND(SUM(B6:B28)*0,08;0)' → 3.026 € (y actualizar B30 a 40.856 €, o recortar antes según TEC-04), o cambiar el rótulo a 'Imprevistos (6%)'."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "baja",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "las 6 hojas del libro",
+      "hallazgo": "La landing promete un 'plan de financiación' dentro del Plan Financiero y el libro no tiene ninguna hoja ni bloque de financiación (fuentes, importe, cuadro de amortización de préstamo, ICO).",
+      "evidencia": "Hojas del libro: 'Inversion Inicial', 'PyG 3 Anos', 'Punto Equilibrio', 'Escenarios', 'Personal Freelance', 'Instrucciones'. src/components/plan-negocio-cocteleria-eventos/WhySection.tsx:23: 'P&L 3 años, break-even 31 eventos, escenarios pesimista/realista/optimista, cuadro freelance y plan de financiación. Formato ICO/microcrédito.' El único rastro de financiación en todo el libro es Instrucciones!B31 'Retorno inversion 18-30 meses'.",
+      "fix": "Añadir una séptima hoja 'Financiacion' con origen de fondos (aportación propia / préstamo ICO / leasing del vehículo), importe, tipo, plazo y cuadro de amortización mensual —es lo que de verdad piden en un microcrédito—, o quitar 'plan de financiación' de WhySection.tsx:23."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "baja",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Punto Equilibrio!B6, B10, B13 · PyG 3 Anos!E13:E40 · Personal Freelance!F13:F16",
+      "hallazgo": "Magnitudes numéricas guardadas como cadenas de texto y con punto decimal anglosajón en un documento en español. No se pueden usar en ninguna fórmula ni gráfico, y se alinean a la izquierda rompiendo la columna.",
+      "evidencia": "Punto Equilibrio!B6='42%' (texto), B10='2.6' (texto; en español '2,6'), B13='38%'. PyG!E13='20.0%', E14='3.0%', E15='4.0%', E16='25.0%', E18='58.0%', E20='42.0%', E34='11.6%', E36='29.5%', E40='19.7%'. Personal Freelance!F13='350 EUR', F14='80 EUR', F15='0 EUR (margen 100%)', F16='880 EUR'. Conviven con celdas numéricas correctas en la misma columna (Punto Equilibrio!B5=18220, B7=1400, B8=588).",
+      "fix": "Guardar como número con formato: los porcentajes como 0,42 con formato '0,0%' y los importes como 350 con '#,##0 €'. Donde haya que añadir texto (F15 'margen 100%'), llevarlo a la columna de notas. Y usar la coma como separador decimal en todo el kit."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "baja",
+      "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+      "ubicacion": "Indice!B10:B19 · 10. Hosply.pro!C11:C16",
+      "hallazgo": "El índice del libro de 96 proveedores no tiene ni un hipervínculo a las hojas, sus nombres no coinciden con los de las pestañas, y una entrada lleva una errata; las URLs de la hoja de Hosply tampoco son clicables.",
+      "evidencia": "ws._hyperlinks está vacío en las 11 hojas. Indice!B15 dice '6. Frutas, herbas y garnish' ('herbas' no existe en castellano; la hoja se llama '6. Frutas y garnish' y su A2 dice '6. Frutas, Hierbas y Garnish'). Otros desajustes: B11 '2. Mixers premium y refrescos' vs pestaña '2. Mixers premium'; B16 '7. Consumibles y eco' vs pestaña '7. Consumibles eco'; B12 '3. Cristaleria y vajilla' vs '3. Cristaleria'. En 10. Hosply.pro, B10 rotula 'ENLACES UTILES EN HOSPLY.PRO' y C11:C16 guardan las URLs como texto plano ('https://www.hosply.pro/categoria/bebidas/'), sin hyperlink.",
+      "fix": "Corregir 'herbas' → 'hierbas', igualar los 10 rótulos del índice a los nombres exactos de las pestañas, y añadir hipervínculos internos (openpyxl: celda.hyperlink = \"#'6. Frutas y garnish'!A1\") más los externos de C11:C16. Añadir además en el índice el número de proveedores por categoría, que es la cifra que vende la landing (96)."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "baja",
+      "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+      "ubicacion": "F1!C16 y E16 (y los 5 contadores gemelos)",
+      "hallazgo": "Los contadores de progreso son correctos hoja a hoja, pero no hay total global de los 71 trámites que anuncia la landing, y el valor 'N/A' que ofrece la propia validación de datos no se descuenta del denominador: quien marque un trámite como no aplicable nunca podrá llegar al 100 %.",
+      "evidencia": "Cada hoja lleva su par: F1 C16='=COUNTIF(A5:A14,\"✓\")' y E16='=COUNTIF(B5:B14,\"?*\")' → 0 de 10; los rangos son correctos en las 6 hojas (10+8+14+12+13+14=71) y el formato condicional 'expression $A5=\"✓\"' pinta la fila. Pero la validación de datos ofrece '✓,☐,N/A' y el denominador cuenta las filas con texto en B, N/A incluidas. No existe ninguna celda que sume los 6 contadores.",
+      "fix": "Cambiar el denominador a '=COUNTIF(A5:A14;\"✓\")+COUNTIF(A5:A14;\"☐\")' (excluye los N/A) y añadir en la primera hoja un bloque de resumen con '=SUM(...)' de los 6 numeradores y de los 6 denominadores, más un porcentaje global. Es el dato que el comprador quiere ver."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "baja",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!A37",
+      "hallazgo": "La base de amortización declarada en el rótulo no se corresponde con la inversión de la hoja anterior, y ni siquiera con el subconjunto amortizable.",
+      "evidencia": "A37='Amortizacion (5 anos sobre 25K)' con B37=C37=D37=5.000 €. Inversion Inicial!B30=40.030 €. Sumando sólo las partidas realmente amortizables de esa hoja (barra 2.880 + máquina hielo 800 + nevera 700 + cristalería 1.800 + herramientas 600 + decoración 1.500 + iluminación 800 + vehículo 12.000 + acondicionamiento 800) salen 21.880 €, que a 5 años dan 4.376 €/año.",
+      "fix": "Ajustar a la base real: '=21880/5' = 4.376 €/año y rotular 'Amortización (5 años sobre 21.880 € de activo)'. Mejor aún, calcularla con una fórmula que apunte a las celdas amortizables de Inversion Inicial para que se mueva sola si se ajustan las partidas."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "baja",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Escenarios!B8, C8, D8",
+      "hallazgo": "Los tres escenarios aplican el mismo 58 % de costes variables, así que el escenario pesimista sólo modela menos volumen, nunca peor estructura de costes — que es lo que suele pasar de verdad cuando bajan los eventos y el ticket.",
+      "evidencia": "A8='Costes variables (58%)' con B8=19.140 (=33.000×0,58), C8=40.600 (=70.000×0,58), D8=73.950 (=127.500×0,58). El ticket sí varía entre escenarios (B6=1.100, C6=1.400, D6=1.700) pero el personal freelance —el 25 % de las ventas según PyG!E16— no escala con el ticket: es coste por evento, así que con ticket de 1.100 € pesa más porcentaje, no el mismo.",
+      "fix": "Diferenciar el porcentaje por escenario (p. ej. pesimista 64 %, realista 58 %, optimista 55 %) o, mejor, construir los costes variables desde el coste por evento (materia prima + personal + transporte) × nº de eventos, para que el escenario pesimista muestre el efecto tijera real."
+     }
+    ]
+   },
+   "dominio": {
+    "lente": "CONSULTOR/A FINANCIERO de hostelería — coherencia inversión / P&L / punto de equilibrio / escenarios, enlace entre hojas, supuestos España 2026 y alineación de los DOCX con el Excel",
+    "veredicto": "no listo",
+    "motivo": "El kit no sobrevive a la lectura de un analista. Tres defectos lo hacen inutilizable tal cual: (1) los 15 escalados de compra de la carta están sistemáticamente al 50% de lo que exigen sus propias recetas — el comprador que siga la tabla compra la mitad del alcohol y se queda sin barra a mitad de boda; (2) toda la cuenta de resultados descansa en ~1 consumición por invitado en una barra libre de 5 h (materia prima 280 €/evento ÷ 3,53 €/cóctel de sus propios escandallos ≈ 79 copas para ~85 invitados): con un consumo real de 4-5 copas la materia prima pasa del 20% a >50% y el margen bruto del 42% —y con él el break-even de 31 eventos y el ticket de 1.400 €— se desploma; (3) el kit da tres presupuestos de inversión incompatibles (40.030 € en el Excel, 25.580 € en el catálogo, 18-35 K en el DOCX y en la landing) y cuatro escalas de precio distintas. A eso se suman 9 fragmentos en chino, cirílico y árabe vivos en dos DOCX de pago, dos cláusulas del contrato nulas frente a consumidor y una referencia legal inventada sobre la Ley Crea y Crece. La FAQ de la landing afirma «Sirve para presentarlo al banco»: en su estado actual un analista lo devolvería en la primera lectura.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/carta-15-cocktails-tematicos.docx",
+      "ubicacion": "bloques «ESCALADO POR INVITADOS» de los 15 cócteles (párrafos 58-60, 71-73, …)",
+      "hallazgo": "Los 15 escalados de compra están exactamente al 50% de lo que exigen las recetas de la propia carta: se multiplicó por el nº de INVITADOS en vez de por el nº de cócteles, pese a que el encabezado dice «asumiendo 2 cocktails/persona» y la propia línea rotula «(100 cocktails)». El comprador que use la tabla para hacer el pedido compra la mitad del alcohol de cada evento.",
+      "evidencia": "Old Fashioned: tabla de ingredientes «Whisky bourbon 60 ml»; 100 cócteles = 6 L, pero el escalado dice «50 invitados (100 cocktails): Bourbon: 3L». Negroni: 30+30+30 ml → 3 L de cada uno para 100 cócteles; dice «Gin: 1.5L | Vermouth rosso: 1.5L | Campari: 1.5L». Sazerac: «Absenta para enjuagar 5 ml» × 100 = 500 ml; dice «Absenta: 250ml». Mai Tai: «Ron oscuro 30 ml / Curacao 15 ml / Orgeat 15 ml» × 100 = 3 L / 1,5 L / 1,5 L; dice «Ron oscuro: 1.5L | Curacao: 750ml | Orgeat: 750ml». Gin Tonic: 100 gin-tonics necesitan 100 tónicas; dice «Tonica Fever-Tree: 50 botellas».",
+      "fix": "Recalcular los 45 bloques de escalado como (invitados × cócteles_por_persona × ml_por_cóctel) y no (invitados × ml_por_cóctel). Añadir un gate en el generador que compruebe, para cada cóctel, que el volumen escalado del ingrediente base = ml_receta × nº_cócteles declarado en el mismo párrafo."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!B13 / E13 y Punto Equilibrio!B7:B9",
+      "hallazgo": "El P&L completo está construido sobre ~1 consumición por invitado en un servicio de barra libre de 5 horas. Con el consumo real del sector (4-5 copas/invitado en 5 h) la materia prima pasa del 20% a >50% de la facturación, el margen bruto del 42% se hunde y el ticket medio de 1.400 € queda POR DEBAJO del coste de materia prima. Es el supuesto que sostiene el break-even, los escenarios y la promesa de la landing.",
+      "evidencia": "PyG!B13 materia prima 14.000 € ÷ 50 eventos = 280 €/evento. El coste medio de los 15 escandallos de la carta es 3,53 €/cóctel (3.40, 4.20, 2.80, 3.80, 4.50, 3.20, 4.20, 3.50, 4.10, 2.50, 2.80, 3.20, 3.80, 4.80, 2.20 → 53,00/15). 280 ÷ 3,53 = 79 cócteles para los ~85 invitados de media de la hoja Ejemplos (855/10) = 0,93 copas por invitado. Con 4 copas: 85 × 4 × 3,53 = 1.200 € de materia prima frente a un ticket de 1.400 € (86% de la facturación) antes de personal, hielo, consumibles y combustible.",
+      "fix": "Fijar un supuesto explícito de consumo (p.ej. 1 copa/invitado/hora, 4-5 en un evento de 5 h) y recalcular en cascada: PyG!B13:D13, el % E13, el margen bruto E20, el break-even y el ticket medio. Con consumo realista el ticket medio de referencia debe subir a 25-40 €/invitado, no 16,5."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!B30 y C30",
+      "hallazgo": "El kit da tres presupuestos de inversión inicial incompatibles y ninguno coincide con la cifra que vende la landing. La propia hoja se contradice a sí misma en la misma fila: el total suma 40.030 € y la nota de al lado dice que el rango típico es 18.000-35.000 €.",
+      "evidencia": "Inversion Inicial!B30 = 40.030 € (suma verificada de B6:B29) con C30 = «Rango tipico cocteleria eventos: 18.000 - 35.000 EUR». catalogo-equipamiento-cocteleria-eventos.docx, «RESUMEN ECONOMICO COMPLETO» (párrafos 85-95) = «TOTAL ARRANQUE BASICO PROFESIONAL 25.580 EUR». plan-de-negocio-cocteleria-eventos.docx párrafos 44, 49, 110 y 129 = «18.000 y 35.000 euros». src/pages/PlanNegocioCocteleriaEventos.tsx:32 (og:description) = «inversión 18-35K EUR» y ContentGrid.tsx:9 = «inversión inicial 18-35K EUR». El desfase del Excel viene de partidas que el DOCX y el catálogo omiten: decoración 1.500 + iluminación 800 + fotos 700 + marketing 1.500 + consumibles 600 + fondo de maniobra 4.000 + imprevistos 2.200.",
+      "fix": "Elegir una única cifra canónica. Si se mantiene el desglose del Excel (que es el correcto: incluye circulante e imprevistos), actualizar C30, los cuatro párrafos del DOCX, el resumen del catálogo y los dos textos de la landing a «arranque profesional ~40 K, versión ajustada desde ~25 K». Añadir al gate una comprobación de que la cifra de la landing coincide con Inversion Inicial!B30."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Ejemplos!E5:F14 frente a Calculadora!F16:F27",
+      "hallazgo": "Confirmado y acotado el hallazgo del inventario: los 10 «casos reales para validar tu calculadora» no salen del motor de la hoja. Con el escandallo de la carta como árbitro, el bando equivocado son los Ejemplos (y con ellos el P&L), no los parámetros de la calculadora.",
+      "evidencia": "Ejemplos!E6 declara 805 € de coste total para «Boda estandar finca, 100 invitados, 5h, bebida media, 1 bartender + 1 runner». La fórmula Calculadora!F16 (=C5*C6*F6) con esos inputs da 100×5×4 = 2.000 € solo de bebidas; +F17 110 +F18 60 +F19 120 +F20 40 = 2.330 € sin combustible. Descontando personal/consumibles/hielo de los 805 €, a los Ejemplos les quedan ~455 € de bebida = 4,55 €/invitado = 1,3 copas a 3,53 €/cóctel. La calculadora (20 €/invitado) implica 5,7 copas — la cifra realista. Además Ejemplos!F5 (870 €) y F7 (3.450 €) ni siquiera respetan el margen 45% que la propia columna declara: 410/(1−0,45) = 745 y (1.530/0,55)/0,88 = 3.160.",
+      "fix": "Sustituir la hoja Ejemplos por 10 filas generadas CON las fórmulas de la hoja Calculadora (o convertirlas en fórmulas que referencien Calculadora!F5:F13), y revisar al alza el ticket medio y el precio/pax resultantes. Verificar que E y F de cada fila se reproducen con los inputs de la propia fila."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Punto Equilibrio!B9 y C9",
+      "hallazgo": "El break-even de 31 eventos —que la landing y el JSON-LD venden como dato— sólo cubre costes fijos: ignora la amortización de 5.000 €. La propia hoja Escenarios lo refuta. El break-even real ronda los 40 eventos, y ni siquiera ahí el fundador cobra nada.",
+      "evidencia": "Punto Equilibrio!B9 = 31 con C9 = «18.220 EUR / 588 EUR margen». Pero PyG 3 Anos!B37 carga «Amortizacion (5 anos sobre 25K) 5.000». (18.220+5.000)/588 = 39,5 eventos. Escenarios!B5=30 eventos da B11 EBITDA = −4.360 € y B13 BAI = −9.360 €, es decir a 30 eventos —uno menos que el «break-even»— se pierden 9.360 €. La landing lo repite en WhySection.tsx:23 («break-even 31 eventos»), ContentGrid.tsx:9, FaqAccordion.tsx:20 y en el FAQPage de PlanNegocioCocteleriaEventos.tsx:76.",
+      "fix": "Publicar dos umbrales en la hoja: break-even EBITDA (31) y break-even después de amortización (40), y usar el segundo en la landing y el JSON-LD. Añadir una tercera fila con el break-even que incluya una retribución mínima del fundador (ver DOM-06)."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!B40 y Personal Freelance!F5",
+      "hallazgo": "El «RESULTADO NETO» del año 1 no es beneficio: es la retribución íntegra del fundador por un año de trabajo y ~50 eventos. El modelo no imputa ningún coste por su tiempo, y aun así el resultado queda por debajo del SMI. Presentado como beneficio, es la cifra que hace parecer viable un año que no lo es.",
+      "evidencia": "Personal Freelance!F5 (fila «Fundador / bartender principal»): «Ya cobra como autonomo, no se contabiliza extra». El único cargo asociado en el P&L es PyG!B23 «Cuota autonomo + gestoria» 3.960 €, que es cuota de RETA + gestoría, no salario. PyG!B40 «RESULTADO NETO» = 4.635 € para el año 1, con 50 eventos ejecutados y toda la carga comercial y logística encima del fundador.",
+      "fix": "Añadir en COSTES FIJOS una línea «Retribución del fundador (coste de oportunidad)» de al menos el SMI anual y recalcular EBITDA, BAI y break-even. Alternativamente, renombrar la fila 40 a «Resultado neto ANTES de retribuir al fundador» y decirlo también en el DOCX §8."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 114 (§8 «Plan Financiero», bloque de escenarios)",
+      "hallazgo": "Los tres escenarios del DOCX contradicen los del Excel en facturación, en resultado y en signo. El DOCX infla el EBITDA realista 2,2-2,7x y convierte en «positivo» un escenario pesimista que en el Excel pierde 9.360 €. Es exactamente el cuadro que un analista bancario cruza primero.",
+      "evidencia": "DOCX §8: «pesimista con 35 eventos y facturación de 52.500 euros, el resultado operativo sería positivo aunque reducido»; «realista con 50 eventos y facturación de 75.000 euros generaría un resultado bruto de explotación de aproximadamente 25.000-30.000 euros»; «optimista con 75 eventos y facturación de 112.500 euros permitiría alcanzar resultados de 45.000-50.000 euros». Excel Escenarios: B5=30 / B7=33.000 / B11 EBITDA −4.360 / B14 neto −9.360; C7=70.000 (no 75.000) / C11 EBITDA 11.180; D7=127.500 (no 112.500) / D11 EBITDA 35.330.",
+      "fix": "Regenerar el párrafo 114 leyendo las celdas de la hoja Escenarios, y decir explícitamente que el escenario pesimista arroja pérdidas. Añadir al gate del producto un cruce de las cifras del §8 contra Escenarios!B5:D14."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "ubicacion": "párrafos 22, 35, 36, 100, 114 (y plan-de-negocio…docx párrafo 67)",
+      "hallazgo": "Hay 9 fragmentos en chino, cirílico y árabe incrustados en mitad de frases españolas, vivos en dos DOCX de un producto de pago. Es la misma clase de defecto que el incidente de las inyecciones CJK ya documentado en CLAUDE.md, y aquí ha llegado a producción sin que ningún gate lo pare.",
+      "evidencia": "catalogo-10-experiencias-tematicas.docx par.22: «transporta a los invitados a los隐蔽的小酒馆 de la Nueva York de 1920» y «iluminado apenas por灯泡 de tono amber». Par.35: «tonos янтенos y琥珀». Par.36: «resulta идеаль para eventos corporativos» y «статус». Par.100: «La视觉 se llena de colores tierra». Par.114: «creando记忆 memorables». plan-de-negocio-cocteleria-eventos.docx par.67: «contratan servicio de bebida ضمن paquete integral de restauración». Además, contaminación en alfabeto latino: «erforderida» (par.44), «compared to» (par.53), «complemented by» (par.113), «montaje en lokasi del cliente» (par.94), «buscan differentiates sus eventos» (par.23), «equipmentaje» (par.91), «gestoríasupone» (par.112), «enlacesmatrimoniales» (par.56).",
+      "fix": "Regenerar los dos DOCX con `--strict-lang` (el `guard_idioma()` de bridge.py) y añadir al gate del producto un barrido de rangos no latinos sobre TODOS los .docx/.xlsx del directorio dl/, no sólo sobre el contenido del blog. Los defectos en alfabeto latino requieren además una relectura humana o un modelo bueno para este documento."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafos 45, 113 y 131",
+      "hallazgo": "El documento da cuatro respuestas distintas a la pregunta más importante del plan —cuándo llego al punto de equilibrio—, y una de ellas mezcla unidades (eventos contra meses) hasta quedar sin sentido.",
+      "evidencia": "Par.45: «punto de equilibrio alcanzado entre los meses seis y nueve de operación». Par.113: «El punto de equilibrio se alcanza con 30-40 eventos anuales». Par.131: «El CapEx bajo permite alcanzar el punto de equilibrio en seis a ocho eventos, frente a los 18-24 meses de un bar tradicional». Excel: Punto Equilibrio!B9 = 31 eventos y Escenarios!C15 «Meses hasta break-even: 10-12». Entre «6-8 eventos» y «31 eventos» hay un factor 4-5x, y entre «meses 6-9» y «10-12» no hay solape.",
+      "fix": "Unificar las tres menciones a la cifra que resulte de DOM-05 (break-even después de amortización) y a los meses de Escenarios!C15. El par.131 debe reescribirse entero: comparar eventos con meses no significa nada."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafos 52, 53, 88 y 131",
+      "hallazgo": "El kit contiene cuatro escalas de precio mutuamente incompatibles, y la que se presenta como «premium Madrid/Barcelona» es más barata que el ticket medio del propio plan. Un comprador que abra dos ficheros seguidos no sabe qué cobrar.",
+      "evidencia": "Par.52: «eventos de entre 50 y 200 invitados con presupuestos de 800 a 3.500 euros». Par.53: «bartender por hora desde 169 euros más IVA, precio por persona y hora entre 12 y 18 euros, eventos integrales desde 450 euros… hasta tarifas premium de partir de 600 euros en mercados de alta gama como Madrid y Barcelona». Par.88: «evento básico desde 450 EUR, estándar 600-900 EUR, premium desde 1.200 EUR». Par.131: «dispuesto a pagar 600-800 euros por evento premium en Madrid o Barcelona». Excel Instrucciones!B18 «Ticket medio boda 1.500-2.500 EUR» y Punto Equilibrio!B7 «Ticket medio 1.400». Además el par.53 dice «12-18 euros por persona Y HORA» mientras Instrucciones!B21 dice «Precio por persona barra libre 4h: 12-18 EUR» — un factor 4x sobre la misma métrica.",
+      "fix": "Definir una tabla única de precios (por invitado y por evento, por segmento) en la hoja Instrucciones y hacer que los párrafos 52, 53, 88 y 131 la citen. Corregir «por persona y hora» a «por persona para 4 h» o al revés, pero sólo una vez."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Instrucciones!B22",
+      "hallazgo": "El ratio de referencia «Precio bartender por horas: 169-220 EUR/h» está fuera de mercado por un factor 6-8x y contradice frontalmente la hoja de costes del propio libro. Está en la sección que el documento titula «RATIOS DE REFERENCIA» — es decir, la tabla que el comprador usa para tarificar.",
+      "evidencia": "Instrucciones!B22 = «169-220 EUR/h» con C22 = «Solo bartender, sin equipamiento ni bebidas». En el mismo libro, Personal Freelance!B6 paga al bartender senior 22 €/h (C6 = 110 € por 4 h). Y el DOCX lo propaga: par.53 «bartender por hora desde 169 euros más IVA». A 169 €/h un evento de 5 h serían 845 € sólo de bartender, más que el precio total de 6 de los 10 casos de la hoja Ejemplos.",
+      "fix": "Corregir a la horquilla de venta real (aprox. 30-50 €/h facturados, con coste 18-25 €/h) o convertirlo en precio por servicio («169-220 EUR por servicio de 4-6 h»), que es lo que probablemente se quiso decir, y alinear el par.53 del DOCX."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "cláusula SEXTA (párrafo 46) y DECIMOPRIMERA (párrafo 56)",
+      "hallazgo": "Dos cláusulas del «Modelo de Contrato Profesional» son inaplicables frente a un consumidor —y el 60% de la facturación del plan son bodas de particulares—. La penalización del 100% por cancelar a 29 días es desproporcionada y asimétrica, y la sumisión expresa de fuero es nula por imperativo legal.",
+      "evidencia": "Cláusula SEXTA: «Cancelacion con menos de 30 dias de antelacion: EL CLIENTE abona el 100% del precio total», mientras que «La cancelacion por parte del PRESTADOR sin causa justificada conllevara la devolucion integra del anticipo» más una indemnización sin cuantificar. Cobrar el 100% cuando el prestador se ahorra el 58% de costes variables (PyG!E18) es una penalización desproporcionada del art. 85-87 TRLGDCU. Cláusula DECIMOPRIMERA: «las partes se someten expresamente a los Juzgados y Tribunales de _____ (ciudad acordada o domicilio del PRESTADOR), con renuncia a cualquier otro fuero» — nula frente a consumidor (art. 90.2 TRLGDCU y art. 54.2 LEC, fuero imperativo del domicilio del consumidor).",
+      "fix": "Escalonar la cláusula SEXTA a porcentajes defendibles (p.ej. 30% >60 días, 50% 30-60 días, 75% <30 días, 100% en 72 h) y simetrizarla con una indemnización cuantificada si cancela el prestador. Sustituir la DECIMOPRIMERA por una cláusula de doble régimen: fuero del domicilio del consumidor cuando el cliente sea particular, sumisión pactada sólo en contratación B2B."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 119 (§9 Aspectos Legales y Licencias)",
+      "hallazgo": "El apartado legal inventa un requisito de la Ley Crea y Crece que no existe y omite los dos que sí existen. Es la sección que el comprador lee justo antes de ir al notario.",
+      "evidencia": "Par.119: «la Ley Crea y Crece de 2022 permite constituirla con capital social de tan solo 1 euro, aunque el registro mercantil exige un deposito de 3.000 EUR que puede realizarse en plazo de cinco años». No existe tal depósito ni tal plazo: la Ley 18/2022 impone (a) dotar la reserva legal con el 20% del beneficio hasta que reserva + capital alcancen 3.000 € y (b) responsabilidad solidaria de los socios por la diferencia entre el capital suscrito y 3.000 €. El mismo párrafo afirma además «tarifa plana de 60 EUR mensuales los meses 13 a 24», cifra que no corresponde a la prórroga de la tarifa plana y que contradice al par.104 del propio documento («cuota mensual de doscientos treinta a trescientos euros») y a la nota E7 de checklist-apertura (F1 - Constitucion!E7, «Tarifa plana 80 EUR/mes primer ano»).",
+      "fix": "Reescribir el par.119 con los dos requisitos reales de la Ley 18/2022 y con una única cifra de cuota RETA, coherente con checklist F1!E7, con el par.104 y con PyG!B23 (que hoy implica 330 €/mes en el año 1 pese a que las otras dos fuentes dicen 80 €/mes)."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!B13 y C13",
+      "hallazgo": "La máquina de hielo está presupuestada en 800 € para una capacidad que el catálogo del mismo kit tarifa entre 1.800 y 4.500 €, y el equipo que ese catálogo acaba recomendando en su resumen incumple el mínimo de capacidad que él mismo fija dos páginas antes. El comprador infrapresupuesta 1.000-3.700 € en la partida que el propio Excel marca como «Imprescindible».",
+      "evidencia": "Inversion Inicial!B13 = 800 € para «Maquina de hielo portatil (40-60kg/dia)» con C13 «Brema, Manitowoc, Hoshizaki. Imprescindible». catalogo-equipamiento-cocteleria-eventos.docx §2 (par.43): «Como minimo 40-60kg de produccion diaria»; sus precios: Hoshizaki KM-50A (50 kg/24h) «~3.500-4.500 EUR», ITV Spika 50 (50 kg/24h) «~1.800-2.500 EUR», Brema CB 246 «24kg/24h» «~900-1.400 EUR». El «RESUMEN ECONOMICO COMPLETO» del catálogo elige «2. Maquina hielo Brema CB 246 entrada 1.200 EUR» — 24 kg/día, la mitad del mínimo que el propio catálogo exige, y aun así 400 € por encima del Excel. Referencia de necesidad real: el escalado del Gin Tonic pide «Hielo: 25kg» para sólo 50 invitados.",
+      "fix": "Subir Inversion Inicial!B13 a la horquilla real de un equipo de 50 kg/24h (1.800-2.500 €) o cambiar la etiqueta de capacidad a la que corresponde a 800 €. Corregir el resumen del catálogo para que la opción recomendada cumpla el mínimo que él mismo declara, y propagar la diferencia a B30."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Personal Freelance!B6:D9 frente a plan-de-negocio…docx párrafos 96 y 102",
+      "hallazgo": "El coste de personal freelance —25% de la facturación, la segunda partida variable— tiene tres valores incompatibles en el kit, y el que usa el P&L es el más bajo de los tres: por debajo del suelo de mercado que el propio plan declara. Si el mercado es el que dice el DOCX, el P&L infravalora esta partida entre un 35% y un 90%.",
+      "evidencia": "Excel Personal Freelance: bartender senior 22 €/h → C6 «110 EUR» por 4 h y D6 «165 EUR» por 6 h. DOCX par.102: «entre dieciocho y veinticinco euros brutos por hora en eventos premium, o entre ciento cincuenta y doscientos cincuenta euros por servicio completo de cuatro a seis horas» — el suelo de 150 € por 4 h está por encima de los 110 € del Excel. DOCX par.96: «El coste de un bartender freelance oscila entre 80 y 120 euros por evento de 5 horas» — un tercer rango (16-24 €/h) que no coincide con ninguno de los dos anteriores.",
+      "fix": "Fijar una tarifa única por perfil en Personal Freelance!B6:B9, recalcular C:D con esa tarifa y reescribir los par.96 y 102 citándola. Después revisar si PyG!B16 (25% de ventas) sigue siendo suficiente con la tarifa elegida."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Personal Freelance!B6:B9 (formato numérico)",
+      "hallazgo": "Caso que se le escapó a la Fase A: las cuatro celdas de la columna TARIFA/H llevan el formato «#,##0 €/h», donde la «h» sin comillas es el código de HORA de Excel. El formato se interpreta como fecha/hora, no como número: openpyxl las lee como datetime(1900,1,22) etc., y en el visor la columna que el comprador consulta para tarificar personal no muestra «22 €/h».",
+      "evidencia": "Barrido de formatos sobre los 4 xlsx: únicos 4 aciertos, todos en esta hoja. Personal Freelance!B6 valor=datetime.datetime(1900, 1, 22, 0, 0), number_format='#,##0 €/h'; B7 → 1900-01-16 (16); B8 → 1900-01-12 (12); B9 → 1900-01-14 (14). El resto del libro usa '#,##0 €' y se lee correctamente (p.ej. C6=110).",
+      "fix": "Cambiar el formato a '#,##0 \"€/h\"' (con la unidad entrecomillada) en B6:B9. Añadir al postprocesado transversal una comprobación: cualquier number_format que contenga h/m/d/y/s fuera de comillas es un formato de fecha accidental."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/checklist-apertura-cocteleria-eventos.xlsx",
+      "ubicacion": "F1 - Constitucion!C16 (y las 5 hojas restantes: F2!C14, F3!C20, F4!C18, F5!C19, F6!C20)",
+      "hallazgo": "El contador de trámites completados nunca cuenta. Las 71 casillas vienen precargadas con «☐» (U+2610) y las 6 fórmulas COUNTIF buscan «✓» (U+2713). El libro no tiene hoja de instrucciones ni leyenda ni validación de datos que le diga al comprador que tiene que teclear ese carácter concreto, así que el contador se queda en 0 haga lo que haga.",
+      "evidencia": "F1 - Constitucion!A5:A14 contienen todas «☐». F1!C16 = '=COUNTIF(A5:A14,\"✓\")' y E16 = '=COUNTIF(B5:B14,\"?*\")'. Mismo patrón en las 6 hojas (12 fórmulas). Los sheetnames del libro son sólo ['F1 - Constitucion','F2 - Seguros','F3 - Equipamiento','F4 - Marca','F5 - Captacion','F6 - Operativa']: no hay hoja de instrucciones ni fila de leyenda.",
+      "fix": "Dos opciones: (a) añadir validación de datos en la columna A con lista ['☐','✓'] más una nota de leyenda en la fila 3, o (b) cambiar la fórmula a algo tolerante, p.ej. =COUNTA(A5:A14)-COUNTIF(A5:A14,\"☐\"), que cuenta cualquier marca que ponga el usuario."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "conjunto del libro (6 hojas) — falta hoja de tesorería",
+      "hallazgo": "El negocio más estacional posible se entrega sin previsión de tesorería mensual, que es la hoja que decide si sobrevive al invierno. Y el fondo de maniobra presupuestado no cubre ni los costes fijos del hueco que el propio plan describe.",
+      "evidencia": "Las hojas son Inversion Inicial, PyG 3 Anos, Punto Equilibrio, Escenarios, Personal Freelance e Instrucciones: ninguna mensualiza. Punto Equilibrio!A14/A15 documentan la estacionalidad («alta: 5-8 eventos mayo-sep + dic»; «baja: 1-3 eventos enero-abril + oct-nov») y el DOCX par.130 habla de «huecos de tres a cuatro meses con ingresos mínimos que deben financiarse con fondo de maniobra». Pero Inversion Inicial!B28 dota «Fondo de maniobra (3 meses)» con 4.000 €, cuando los costes fijos solos son 18.220/12 = 1.518 €/mes → 4 meses = 6.073 €, y el fundador no tiene retribución prevista (DOM-06). Además el DOCX par.132 sitúa la compra de 4.000 € de stock de licor en el Mes 2, antes de tener un solo evento cerrado.",
+      "fix": "Añadir una hoja «Tesoreria Mensual» con los 12 meses del año 1 repartiendo ingresos según los % de estacionalidad de Instrucciones!B25:B26, con cobros según el calendario de la cláusula SEGUNDA del contrato, y dimensionar B28 con el saldo mínimo acumulado que arroje esa hoja."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "landing WhySection.tsx:23 frente al contenido del libro",
+      "hallazgo": "La landing promete un «plan de financiación» en «formato ICO/microcrédito» que no existe en ningún entregable: no hay cuadro de amortización de préstamo, ni necesidades de financiación por período, ni hoja de origen y aplicación de fondos. Sólo hay un párrafo de prosa.",
+      "evidencia": "src/components/plan-negocio-cocteleria-eventos/WhySection.tsx:23: «P&L 3 años, break-even 31 eventos, escenarios pesimista/realista/optimista, cuadro freelance y plan de financiación. Formato ICO/microcrédito.» Las 6 hojas del libro no contienen ninguna partida de deuda, intereses ni devolución. Lo único que existe es plan-de-negocio…docx par.115: «los préstamos ICO para emprendedores o los microcréditos… (5.000-15.000 euros) ofrecen condiciones favorables con tipos de interés inferiores al 6% anual».",
+      "fix": "O añadir una hoja «Financiacion» (importe, plazo, tipo, cuadro de amortización y su impacto en el P&L: gastos financieros hoy inexistentes en PyG!A36:A38), o retirar «plan de financiación / formato ICO» de WhySection.tsx."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!C12 y PyG 3 Anos (ausencia de IVA)",
+      "hallazgo": "El IVA no aparece en ninguna parte del modelo, y la hoja de inversión mezcla importes brutos y netos sin marcarlo. Para una actividad al 21% con clientes particulares (que no lo deducen) y compras deducibles, esto altera tanto el desembolso real como la tesorería trimestral.",
+      "evidencia": "Inversion Inicial!C12 dice explícitamente «GGM Gastro MCSH bruto IVA» (B12 = 2.880) mientras el resto de partidas no indica régimen; el catálogo aclara que 2.880 es el bruto con IVA alemán del 19% sobre 2.420 netos («Precio neto sin IVA es lo que ves en web (sumar 19-21%)»), no el 21% español que el comprador autoliquidaría en una adquisición intracomunitaria (2.420 × 1,21 = 2.928). El P&L (PyG!A5:A40) no tiene ninguna línea de IVA ni de liquidación trimestral, y el modelo de contrato sí factura «mas el IVA aplicable (21%)» (cláusula SEGUNDA).",
+      "fix": "Declarar en A3 de la hoja Inversion Inicial que todas las cifras son netas de IVA, ajustar B12 a neto (2.420) o al bruto español (2.928), y añadir a la hoja de tesorería propuesta en DOM-18 las liquidaciones trimestrales de IVA."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!A39:B39",
+      "hallazgo": "Se aplica un Impuesto de Sociedades plano del 25% a un modelo que todo el resto del kit define como autónomo en IRPF. Con la base del año 1 el impuesto real sería próximo a cero, y en el año 3 el tipo efectivo sería superior: el P&L falsea el resultado neto en los dos sentidos.",
+      "evidencia": "PyG!A39 = «Impuesto Sociedades (25%) o IRPF», B39 = 1.545 (25% de 6.180). Pero Inversion Inicial!A6 da de alta un autónomo y A7 marca la SL como «(opcional) — Solo si facturacion >40-60K EUR/ano»; PyG!A23 es «Cuota autonomo + gestoria»; Personal Freelance!F5 dice que el fundador «ya cobra como autonomo»; y el DOCX par.119 recomienda «autónomo profesional» como forma jurídica de inicio. Con base liquidable de 6.180 € en IRPF y el mínimo personal de 5.550 €, la cuota real del año 1 es prácticamente nula; en el año 3, con 41.410 €, el tipo efectivo supera el 25% aplicado.",
+      "fix": "Sustituir la fila 39 por un cálculo IRPF por tramos (o dos filas alternativas: «si autónomo/IRPF» y «si SL/IS 25%») y recalcular B40:D40. Documentar en Instrucciones a partir de qué facturación conviene el salto a SL, coherente con Inversion Inicial!C7."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F13, F27, F28 frente a PyG 3 Anos!A17 e Instrucciones!B16",
+      "hallazgo": "La comisión del wedding planner tiene tres porcentajes distintos en el kit y, peor, dos tratamientos contables incompatibles: la calculadora la repercute al cliente subiendo el precio, mientras el P&L la resta como coste variable que erosiona el margen. No pueden ser ciertas las dos cosas a la vez.",
+      "evidencia": "Calculadora!F13 = 0,12 (12%) y F27 = '=IF(C12=\"S\",(F23/(1-0.45))/(1-F13),F23/(1-0.45))' — divide por (1−12%), es decir infla el precio para que la comisión la pague el cliente y el prestador conserve su 45%. PyG 3 Anos!A17 = «Comision wedding planners (10% en bodas)» con B17 = 4.200 dentro de TOTAL COSTES VARIABLES (B18), o sea restando margen. Instrucciones!B16 = «10-15%». Si la calculadora es correcta, PyG!B17 no debería existir y el margen bruto sería superior al 42%.",
+      "fix": "Decidir el modelo comercial (repercutir o absorber), unificar el porcentaje en las tres celdas y, si se repercute, eliminar B17:D17 del bloque de costes variables recalculando B18:E20."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F26 y nota B38",
+      "hallazgo": "La nota que fija el suelo de precio es falsa cuando hay wedding planner, que es el canal principal del plan (60% de la facturación). El «PRECIO MINIMO (margen 35%)» no descuenta la comisión, así que vender ahí con WP deja un margen real del 23%, no del 35%.",
+      "evidencia": "Calculadora!F26 = '=F23/(1-0.35)' etiquetada «PRECIO MINIMO (margen 35%, sin comision WP)». Nota B38: «Si el cliente regatea, NUNCA bajes del PRECIO MINIMO (margen 35%). Mejor declinar el evento.» Con C12=\"S\" y F13=0,12: precio = C/0,65 = 1,538·C; neto tras comisión = 0,88 × 1,538·C − C = 0,354·C → 23,0% sobre el precio de venta. La celda no tiene variante con WP, a diferencia de F27 y F28 que sí la tienen.",
+      "fix": "Añadir la rama IF(C12=\"S\";…) a F26 igual que en F27/F28, o crear una celda «PRECIO MINIMO con WP» y reescribir la nota B38 para que apunte a la celda correcta según el canal."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Punto Equilibrio!B7:B11 y PyG 3 Anos!B6:B10",
+      "hallazgo": "La cifra estrella de la landing —«50 eventos al año = 70K EUR»— no se sostiene con el propio mix de tickets del plan: ese mix da 42,8 eventos, no 50. Y una de las cuatro líneas de ingreso (catering y extras) no es un evento pero se cuenta dentro de la facturación que se divide entre 50.",
+      "evidencia": "Punto Equilibrio!C7: «Mix bodas (1.800), corporativo (1.500), privado (900)». Aplicando los pesos de PyG!B6:B9 sobre 70.000: bodas 42.000/1.800 = 23,3; corporativos 17.500/1.500 = 11,7; privados 7.000/900 = 7,8 → 42,8 eventos. Los 3.500 € de PyG!A9 «Catering bebidas + servicios extra (5%)» no son eventos. Con 50 eventos el ticket medio implícito es 66.500/50 = 1.330 €, no los 1.400 de Punto Equilibrio!B7 — y ese 1.400 es el divisor del break-even (B8 = 588 = 1.400 × 42%).",
+      "fix": "Reconciliar: o el ticket medio baja a 1.330 (y el break-even sube de 31 a 33 antes de amortización), o los tickets del mix suben. Hacer que B7 y B8 sean fórmulas que lean PyG!B6:B10 en vez de valores tecleados."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 103 (§7) frente a PyG 3 Anos!A16",
+      "hallazgo": "El plan afirma que los runners generan obligación de cotizar a la Seguridad Social y luego no imputa ese coste en ninguna parte del P&L, que trata el 100% del personal como factura de autónomo. Con contrato eventual, el coste empresa sube ~30% sobre la partida más grande después de materia prima.",
+      "evidencia": "Par.103: «Su coste oscila entre doce y dieciocho euros brutos por hora, y al tratarse de una relación laboral ocasional, la empresa debe formalizar un contrato eventual y cotizar a la Seguridad Social proporcionalmente». PyG!A16 «Personal freelance (bartenders, runners)» 17.500 € (25,0%) es la única línea de personal y no hay ninguna de cuotas a la SS ni de PRL. La hoja Personal Freelance!A2 afirma lo contrario del DOCX: «Modelo freelance bajo demanda — NO plantilla fija». La plantilla de proveedores añade un coste que tampoco está en el P&L: «Servicio Prevencion Ajeno (PRL) … 100-200 EUR/ano», hoja «8. Servicios pro».",
+      "fix": "Elegir un único encuadramiento para los runners. Si se contratan por cuenta ajena, añadir a PyG una línea de Seguridad Social a cargo de la empresa (~32% sobre la parte laboral) y otra de PRL/SPA en costes fijos, y recalcular el margen bruto E20."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 97 (§6 Plan de Operaciones)",
+      "hallazgo": "Dato normativo incorrecto y contradicho por el propio kit: la factura electrónica B2B de la Ley 18/2022 no está en vigor «desde 2024». Un comprador que lo lea puede creerse fuera de la ley o contratar software que no necesita todavía.",
+      "evidencia": "Par.97: «facturacion electronica obligatoria desde 2024». La plantilla del mismo kit dice lo contrario: plantilla-proveedores-cocteleria-eventos.xlsx, hoja «8. Servicios pro», fila «Software facturacion electronica (Ley 18/2022)», columna NOTAS: «Cumplimiento Veri*factu obligatorio 2026-2027».",
+      "fix": "Reescribir el par.97 con el calendario real (Veri*factu / factura electrónica B2B escalonada 2026-2027) y remitir a la fila de la plantilla de proveedores, que ya lo tiene bien."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!B8 y checklist-apertura…xlsx!F1 - Constitucion!B11",
+      "hallazgo": "Se presupuestan 400 € y se planifica un trámite de 1-2 semanas para un «permiso autonómico de venta de alcohol» que el propio §9 del plan dice que no hace falta cuando el evento es en espacio privado — que es el 100% del modelo (fincas, hoteles, salones).",
+      "evidencia": "Inversion Inicial!B8 = 400 € «Permiso venta alcohol + tasas autonomicas», C8 «Variable por CCAA». checklist F1 - Constitucion!B11 «Permiso autonomico venta alcohol», D11 «1-2 semanas», E11 «Madrid: Decreto 184/1998. Cataluna: Llei 20/1985». Pero plan-de-negocio…docx par.122 dice: «En espacios privados (hoteles, salones de celebraciones, fincas rurales), basta con que el establecimiento cliente disponga de su propia licencia de apertura y que la empresa de cocteleria presente el alta en Hacienda y el seguro de responsabilidad civil», y sólo en espacio público exige autorización municipal «con tasas que oscilan entre 50 y 200 EUR por dia». El par.121 además invoca una «Ley Reguladora de las Bebidas Alcoholicas» estatal que no existe como tal.",
+      "fix": "Reetiquetar B8 como provisión para autorizaciones municipales de eventos en vía pública (50-200 €/día) o eliminarla, alinear el trámite del checklist con el par.122, y sustituir la referencia estatal inventada del par.121 por la normativa autonómica que efectivamente aplique."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "PyG 3 Anos!A37:B37",
+      "hallazgo": "La base de amortización no corresponde a ningún activo amortizable del plan: los «25K» incluyen stock de bebidas y trámites, que no se amortizan, y no coinciden con ningún subtotal de la hoja de inversión.",
+      "evidencia": "PyG!A37 = «Amortizacion (5 anos sobre 25K)», B37 = 5.000. El activo amortizable real de Inversion Inicial es barra 2.880 + hielo 800 + nevera 700 + cristalería 1.800 + herramientas 600 + decoración 1.500 + iluminación 800 + vehículo 12.000 + acondicionamiento 800 = 21.880 € (23.880 con branding y web). Los 25K parecen tomados del «TOTAL ARRANQUE BASICO PROFESIONAL 25.580 EUR» del catálogo de equipamiento, que incluye «5. Stock inicial bebidas 4.000 EUR» y «10. Tramites + RC + manipulador + autonomo 3m 1.500 EUR», ninguno amortizable.",
+      "fix": "Recalcular B37:D37 sobre el inmovilizado real (21.880 €) con vidas útiles diferenciadas (vehículo, maquinaria, mobiliario) y actualizar la etiqueta de A37 citando el subtotal del que sale."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plantilla-proveedores-cocteleria-eventos.xlsx",
+      "ubicacion": "columnas «PRECIO / PEDIDO MIN» y «WEB / CONTACTO» de las 9 hojas de categoría",
+      "hallazgo": "La FAQ de la landing promete que los 96 proveedores vienen «con web/contacto/cobertura/precio/plazo». Poco más de la mitad de las filas no trae precio y 13 no traen web ni contacto utilizable.",
+      "evidencia": "Censo sobre las 96 filas de proveedor: 52 tienen la columna PRECIO/PEDIDO MIN vacía o con «Variable»/«Consultar» sin ninguna cifra; 13 no tienen URL válida en WEB/CONTACTO (p.ej. hoja «8. Servicios pro»: «Fotografia profesional eventos showcase» → «Variable por ciudad»; «Video promo / reels mensuales» → «Variable por ciudad»; «Asesor fiscal hosteleria» → «Variable por ciudad»). Además «Bodeboca» aparece duplicado en dos categorías. El recuento total de 96 sí coincide con la promesa.",
+      "fix": "O completar las 52 filas con horquillas orientativas (como ya se hace bien en la hoja 8, «Prima 350-700 EUR/ano», «50-80 EUR/mes»), o matizar la FAQ de la landing a «web, contacto, cobertura y plazo; precio orientativo cuando el proveedor lo publica». Y deduplicar Bodeboca."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/catalogo-equipamiento-cocteleria-eventos.docx",
+      "ubicacion": "portada (párrafo 7) y «RESUMEN ECONOMICO COMPLETO» (párrafos 85-95)",
+      "hallazgo": "La portada promete «12 productos reales con SKU, precio y proveedor»: hay 13 fichas, 4 sin precio, ninguna con SKU real (son nombres de modelo), y el resumen económico tarifa cuatro partidas que el catálogo nunca investiga.",
+      "evidencia": "Portada par.7: «12 productos reales con SKU, precio y proveedor». Hay 13 encabezados de producto (Heading 2). Sin precio: «Flexbar» → «Precio: Consultar Representaciones Beltran»; «Cuchilleria Navarro» → «Precio: Consultar (a medida)»; «IntegralBar Bartender 360» → «Precio: Consultar»; «Mewindo Drinkbox Evolution» → «~2.500-3.500 EUR consultar». Las secciones del catálogo son sólo 5 (barra, hielo, cristalería, distribuidores de bebida, vehículo), pero el resumen pone precio a «4. Set herramientas coctelero pro completo 600 EUR», «8. Iluminacion LED + decoracion 3 tematicas 2.000 EUR», «9. Uniformes + branding inicial 600 EUR» y «10. Tramites + RC + manipulador alimentos + autonomo 3m 1.500 EUR», ninguna investigada en el documento.",
+      "fix": "Ajustar el recuento de la portada a 13, marcar «precio bajo consulta» donde proceda en vez de prometer precio, y o bien añadir secciones para herramientas/iluminación/uniformes o bien retirar esas cuatro líneas del resumen económico (que además choca con la hoja Inversion Inicial: 800 vs 1.200 de hielo, 12.000 vs 10.000 de vehículo, 1.200 vs 600 de uniformes+branding)."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "cláusulas SEGUNDA (párrafo 38) y QUINTA (párrafo 44)",
+      "hallazgo": "Dos fugas de caja en el contrato: cobra sólo el 80% antes del evento, contra la política que el resto del kit da por buena, y factura los invitados que exceden lo previsto «al coste», es decir con margen cero justo en el tramo en el que debería haber margen.",
+      "evidencia": "Cláusula SEGUNDA: «Anticipo del 30%… 50% adicional 7 dias antes del evento… 20% restante en las 24 horas siguientes a la finalizacion del evento». Pero calculadora-pricing-eventos.xlsx!Calculadora!B39 dice «Anticipo recomendado: 30-50% en firma, resto 7 dias antes del evento» (100% cobrado antes), y plan-financiero…xlsx!Instrucciones!B27 sostiene el riesgo de cancelación en que «Anticipo 30-50% no reembolsable cubre el riesgo». Cláusula QUINTA: «Si el numero final supera en mas del 10% el estimado, se facturara el COSTE adicional proporcional» — sin ningún €/invitado definido en el contrato y facturando coste, no precio.",
+      "fix": "Alinear la cláusula SEGUNDA con la política del kit (30-50% en firma + resto 7 días antes) o cambiar la nota B39 y Instrucciones!B27. En la QUINTA, sustituir «coste adicional proporcional» por un precio por invitado adicional a rellenar en la cláusula PRIMERA, tomado de Calculadora!F30."
+     },
+     {
+      "id": "DOM-32",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/catalogo-equipamiento-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 43 (§2 Máquina de hielo)",
+      "hallazgo": "El hielo tiene tres costes distintos en el kit y la promesa de amortización de la máquina no sale con ninguno de ellos: se anuncia retorno en 6-12 meses cuando con las propias cifras del plan son 3-5 años.",
+      "evidencia": "Catálogo par.43: «coste 0.40-0.80 EUR/kg… Comprar maquina amortiza en 6-12 meses si haces 2+ eventos/mes». Calculadora!F11 = 0,40 «Coste hielo por invitado» (40 € en un evento de 100 pax). plan-de-negocio…docx par.95: «El hielo se adquiere localmente en cada evento… con un coste medio de 15 a 25 euros por evento». Con 2 eventos/mes a 25 €/evento son 600 €/año de ahorro máximo frente a una máquina de 1.800-2.500 € (ITV Spika 50, el modelo que cumple el mínimo de 40-60 kg/día): 36-50 meses, no 6-12.",
+      "fix": "Unificar el coste del hielo (kg por invitado × €/kg) entre la calculadora, el §6 del plan y el catálogo, y recalcular la frase de amortización con la cifra unificada y el precio del equipo que realmente se recomiende tras DOM-14."
+     },
+     {
+      "id": "DOM-33",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 120 (§9) y checklist-apertura…xlsx!F1 - Constitucion!E6",
+      "hallazgo": "El epígrafe de IAE está mal etiquetado en los dos ficheros que lo mencionan: el 673.2 no es «servicios de bar especiales» (esa es la categoría especial, 673.1), lo que puede llevar al gestor a un alta incorrecta.",
+      "evidencia": "DOCX par.120: «El código 673.2 (servicios de bar especiales) resulta el más adecuado». checklist F1 - Constitucion!E6: «Epigrafe IAE 673.2 servicios bar especiales o 677.9 otros servicios». El 673.2 corresponde a «Otros cafés y bares»; el de categoría especial es el 673.1. Para una actividad itinerante sin local, el epígrafe pertinente es el 677.9, que ambos textos citan en segundo lugar.",
+      "fix": "Corregir la etiqueta en los dos sitios y recomendar el 677.9 como opción principal para el modelo sin local, dejando el 673.x como alternativa a validar con el gestor."
+     },
+     {
+      "id": "DOM-34",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "párrafo 93 (§6 Plan de Operaciones)",
+      "hallazgo": "Error de concepto contable: la cuota de leasing del vehículo se clasifica como coste variable, cuando es un compromiso fijo mensual independiente del número de eventos. Además el kit no ofrece la variante «vehículo en leasing» en ninguna hoja, pese a proponerla.",
+      "evidencia": "Par.93: «este gasto puede financiarse parcialmente a través de leasing operativo, con cuotas mensuales de 250 a 400 euros que se integran en la estructura de COSTES VARIABLES». En el Excel, el vehículo aparece como CapEx (Inversion Inicial!B20 = 12.000) y sólo su mantenimiento está en fijos (PyG!A27 = 1.800); no hay ninguna línea de leasing ni escenario alternativo.",
+      "fix": "Corregir la clasificación a coste fijo en el par.93 y, si se mantiene la recomendación, añadir en la hoja de inversión un bloque alternativo «compra vs leasing» que muestre el efecto en CapEx (−12.000), en costes fijos (+3.000-4.800/año) y en la amortización (PyG!B37)."
+     },
+     {
+      "id": "DOM-35",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "ubicacion": "documento completo (0 estilos Heading) y párrafo 104",
+      "hallazgo": "Dos defectos menores pero visibles del catálogo de experiencias: es el único de los cinco DOCX sin un solo título con estilo Heading (no se puede navegar ni generar índice en Word), y su lista de props recomienda pajitas de plástico, prohibidas en España y en contradicción con el posicionamiento «eco» del propio kit.",
+      "evidencia": "Censo de estilos: los otros cuatro DOCX usan Heading 1/Heading 2 (el plan tiene 10, el catálogo de equipamiento 7+13, el contrato 5); este usa «Normal» en los 156 párrafos, incluidos los 10 títulos de experiencia («1. SPEAKEASY ANOS 20», «2. GIN LOUNGE»…). Par.104 (Latin Caribbean), PROPS Y MOBILIARIO: «pajitas plastico colores» — frente al par.52 del mismo documento que sí pide «pajitas bambu» y frente a Inversion Inicial!C27 «Pajitas eco, posavasos, servilletas branded» y a la hoja «7. Consumibles eco» de la plantilla de proveedores.",
+      "fix": "Aplicar Heading 1 a los 10 títulos de experiencia en el generador de este DOCX y sustituir «pajitas plastico colores» por una alternativa eco (papel, bambú o caña), coherente con el resto del kit."
+     },
+     {
+      "id": "DOM-36",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "ANEXO I (párrafo 62) y párrafo 38 del plan de negocio",
+      "hallazgo": "Dos referencias cruzadas rotas dentro del kit: el contrato remite a un fichero con un nombre que no existe en la entrega, y el índice del plan de negocio anuncia dos anexos en PDF que se entregan en DOCX.",
+      "evidencia": "Contrato, ANEXO I: «encontraras 15 cocteles tematicos completos en el archivo 'carta-15-cocktails-tematicos-cocteleria-eventos.docx'». El fichero real del directorio se llama «carta-15-cocktails-tematicos.docx». plan-de-negocio…docx par.38: «Anexos: … Catalogo Equipamiento PDF … Catalogo 10 Experiencias Tematicas PDF», cuando ambos se entregan como .docx.",
+      "fix": "Corregir el nombre de fichero en el ANEXO I y las dos extensiones del par.38. Añadir al gate del producto una comprobación de que todo nombre de fichero citado dentro de un entregable existe en public/dl/<producto>/."
+     },
+     {
+      "id": "DOM-37",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-cocteleria-eventos/calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!C7 y C8",
+      "hallazgo": "Dos entradas de la calculadora no están protegidas ni conectadas: «Tipo de evento» no interviene en ninguna fórmula (es decoración), y el nivel de bebida cae silenciosamente en «premium» ante cualquier valor distinto de 1 o 2.",
+      "evidencia": "Calculadora!C7 = «Boda» — ninguna de las 13 fórmulas del libro (F16:F31) referencia C7. Calculadora!F16 = '=C5*C6*IF(C8=1,F5,IF(C8=2,F6,F7))': si el usuario teclea 0, 4 o texto en C8, el IF anidado devuelve F7 (6,50 €, premium) sin ningún aviso, encareciendo el presupuesto un 62% respecto al nivel básico.",
+      "fix": "Añadir validación de datos en C8 (lista 1/2/3) y en C12 (lista S/N), y o bien conectar C7 a un coeficiente por tipo de evento o bien etiquetarla explícitamente como campo informativo para el presupuesto."
+     }
+    ]
+   },
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (seo/schema/hero/grid/bonus/faqs/cta), dashboard, changelog y email de acceso contra el contenido real de los 9 ficheros de /dl/plan-negocio-cocteleria-eventos/",
+    "veredicto": "no listo",
+    "motivo": "El kit falla en las tres cosas que la landing vende como su núcleo. (1) El escalado de la carta de 15 cócteles entrega EXACTAMENTE la mitad de ingredientes que su propia cabecera promete, en los 15 cócteles y en los 3 tramos (50/100/200 invitados): quien compre según esa tabla se planta en una boda de 100 invitados con la mitad del alcohol. (2) Hay 9 inyecciones de chino/ruso/árabe y 8 palabras en inglés/alemán vivas dentro del Plan de Negocio y del bonus de 10 Experiencias — exactamente el defecto que CLAUDE.md documenta como refund-grade. (3) Los tres ficheros que hablan de dinero se contradicen entre sí y con la landing: la inversión inicial es 40.030 € en el Excel, 25.580 € en el catálogo y «18-35K EUR» en la landing (repetido 6 veces); el break-even es 31 eventos en el Excel, «30-40» en la sección 8 del DOCX y «seis a ocho eventos» en la sección 10 del MISMO DOCX; y la Calculadora usa un coste de bebida 2,8x el que el propio escandallo del kit demuestra, lo que invalida sus 3 precios sugeridos. Además el Plan Financiero no tiene ni una fórmula pese a que el dashboard promete «Todas las celdas editables con fórmulas» y sus propias Instrucciones mandan «ajusta partidas» y «calibra nº eventos». Un cliente escéptico tiene material de sobra para el reembolso de 30 días; dos hallazgos (dato legal inventado sobre el Registro Mercantil y la promesa de «sustituye una asesoría jurídica») añaden riesgo legal.",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "carta-15-cocktails-tematicos.docx",
+      "ubicacion": "Los 15 bloques «ESCALADO POR INVITADOS», p58-60, p72-74, p86-88 … p262-264",
+      "hallazgo": "El escalado entrega sistemáticamente el 50 % de los ingredientes que su propia cabecera promete. La sección se titula «ESCALADO POR INVITADOS (asumiendo 2 cocktails/persona)» y cada fila dice «50 invitados (100 cocktails)», pero las cantidades cubren 50 cócteles. Ocurre en los 15 cócteles y en los 3 tramos (50/100/200), luego no es un desliz: es un factor 2 en el generador.",
+      "evidencia": "Old Fashioned: tabla de ingredientes «Whisky bourbon = 60 ml»; 100 cócteles × 60 ml = 6 L, pero p58 da «Bourbon: 3L» (y p59 da 6L para 200 cócteles, p60 12L para 400). Idéntico en los 15: Negroni 30 ml×100=3 L → dan 1,5 L; Gin Tonic tónica 200 ml×100=20 L → dan «50 botellas» Fever-Tree de 200 ml = 10 L; Aperol Spritz prosecco 90 ml×100=9 L → dan «6 botellas» (4,5 L); Mezcal 50 ml×100=5 L → dan 2,5 L. El French 75 se autorrefuta en la misma página: su CONSEJO PRO (p114) dice «una botella 75cl rinde 12 cocktails» —100 cócteles = 8,3 botellas— y su escalado (p116) dice «Cava: 4 botellas». Verificado programáticamente para los 15 primeros ingredientes.",
+      "fix": "Multiplicar por 2 todas las cantidades de los 45 bloques de escalado (15 cócteles × 3 tramos), o —mejor— regenerarlos con una fórmula única `cantidad = ml_receta × invitados × cocteles_por_persona` y añadir un gate que compruebe cada línea contra la tabla de ingredientes antes de publicar. Avisar por email a los compradores: es el único defecto del kit que puede arruinar un evento real."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "catalogo-10-experiencias-tematicas.docx + plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "experiencias p22, p35, p36, p100, p114, p115 · plan-negocio p44, p53, p67, p113",
+      "hallazgo": "9 inyecciones de caracteres no latinos (chino, ruso, árabe) y 8 palabras en inglés/alemán incrustadas en mitad de frases españolas, vivas en producción en el DOCX principal (~6.600 palabras, vendido como «profesionales» y «para presentar al banco») y en el BONUS 2 de €39. Es el defecto que CLAUDE.md documenta como causado por deepseek-v4-pro y que `guard_idioma()`/`--strict-lang` existe para bloquear; estos ficheros son del 18-ago y no pasaron por él.",
+      "evidencia": "experiencias p22: «transporta a los invitados a los隐蔽的小酒馆 de la Nueva York de 1920» y «iluminado apenas por灯泡 de tono amber»; p35: «tonos янтенos y琥珀» y «jazz instrumental de fondo punctuated por el tintineo»; p36: «resulta идеаль para eventos corporativos», «hablen de su статус», «La propuesta también captive a grupos»; p100: «La视觉 se llena de colores tierra y cobalt, de vasos condensationados»; p114: «creando记忆 memorables»; p115: «el lujo discreto y el refinement». plan-negocio p44: «cuatro y siete veces menos que la erforderida para abrir un bar tradicional»; p53: «del modelo compared to un bar fijo tradicional»; p67: «contratan servicio de bebida ضمن paquete integral»; p113: «complemented by el pico de diciembre».",
+      "fix": "Regenerar los pasajes afectados con `bridge.py --strict-lang` (o modelo bueno + gate, criterio de CLAUDE.md), y añadir al gate de entregables un barrido de rangos no latinos (CJK, cirílico, árabe, hangul, hebreo, tailandés) + lista negra de conectores ingleses sobre TODOS los .docx del catálogo, no solo sobre el blog. Este barrido cuesta un grep y estos 17 defectos llevan 10 días en producción."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F5:F7 vs hoja Ejemplos E5:F14",
+      "hallazgo": "Los parámetros de coste de bebida están inflados ~2,8x respecto al escandallo que el propio kit publica, y por eso los 3 precios sugeridos (F26/F27/F28) no reproducen ni de lejos los «10 ejemplos reales del sector» que la landing y el dashboard venden para «validar tu calculadora». El comprador tiene dos referencias irreconciliables y ninguna pista de cuál es la buena. Causa raíz probada con el propio material del kit.",
+      "evidencia": "F6 «Coste bebida media por invitado/hora» = 4,00 € → 20 €/pax de coste de bebida en un evento de 5 h. La carta del mismo kit da escandallos de 2,20 a 4,80 €/cóctel (media 3,53 €) y declara «asumiendo 2 cocktails/persona» → 7,06 €/pax, es decir 1,41 €/pax/hora (2,8x menos). Reconstruyendo F16:F27 con los inputs de cada ejemplo, el coste sale 1,78x-4,25x por encima del publicado: #2 «Boda estándar finca 100 pax 5h con WP» declara coste 805 € / precio 1.670 €, la fórmula da 2.330 € / 4.814 €; #3 «Boda premium hotel 5* 150 pax» declara 1.530 €/3.450 € y la fórmula da 6.498 €/13.426 €. Además, con los inputs por defecto (C5=100, C6=5, C8=2, C9=1, C10=1, C11=25, C12=S, C13=150) la hoja escupe un precio recomendado de 5.165 €, es decir 51,65 €/pax, contra el ratio del propio Plan Financiero (Instrucciones!B21: «Precio por persona barra libre 4h: 12-18 EUR») y contra el ticket medio de 1.400 € que la landing repite. Los Ejemplos, en cambio, dan 14,5-23 €/pax, coherentes con B21.",
+      "fix": "Bajar F5/F6/F7 a ≈0,90 / 1,45 / 1,95 €/pax/hora (escandallo real × 2 cócteles ÷ 5 h). Mejor aún: sustituir esos tres parámetros por «coste medio por cóctel» (2,20/3,53/4,80, tomados de la carta) más un input nuevo «cócteles por invitado» (default 2), que es como razona el resto del kit. Después regenerar la hoja Ejemplos CON las fórmulas de la hoja Calculadora en vez de a mano, para que la tabla de validación valide de verdad."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!B30 (y C30)",
+      "hallazgo": "La cifra más repetida de toda la landing —«Inversión 18-35K EUR»— la desmiente el propio fichero: el total es 40.030 €, un 14 % por encima del techo prometido. Y el catálogo de equipamiento da un tercer número, 25.580 €. Tres entregables del mismo producto, tres inversiones iniciales distintas.",
+      "evidencia": "Suma verificada de Inversion Inicial!B6:B29 = 40.030 €, que coincide con B30, mientras que la nota de la celda contigua C30 dice literalmente «Rango tipico cocteleria eventos: 18.000 - 35.000 EUR». El desfase viene de 12.850 € en partidas que el desglose del DOCX (p110) nunca menciona: decoración 1.500, iluminación 800, acondicionamiento vehículo 800, sesión de fotos 700, marketing 1.500, uniformes 400, consumibles 600, seguro multirriesgo 350, fondo de maniobra 4.000 e imprevistos 2.200. En paralelo, catalogo-equipamiento p85-p95 lista un «TOTAL ARRANQUE BASICO PROFESIONAL 25.580 EUR» con líneas distintas (hielo 1.200 vs 800, vehículo 10.000 vs 12.000, trámites 1.500 vs 2.400). La landing repite 18-35K en seo.description, schema.productDescription, grid.templates[1].desc y why.reasons[1]; el dashboard en TEMPLATES[1].desc; el DOCX en p44, p49, p56, p110 y p129.",
+      "fix": "Decidir UNA cifra y propagarla. Lo más honesto: dejar el Excel como está (40.030 € es el escenario completo y realista) y cambiar la promesa a «Inversión 25-40K EUR» en landing, dashboard, schema y DOCX, explicando en C30 que el rango 18-35K es el arranque sin fondo de maniobra ni imprevistos. Alternativa: sacar fondo de maniobra e imprevistos del TOTAL y mostrarlos como «además, reserva recomendada»."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "todo el libro (6 hojas, 0 fórmulas) vs src/pages/PlanNegocioCocteleriaEventosDashboard.tsx:26 y :142",
+      "hallazgo": "El fichero no tiene ni una sola fórmula: es una tabla de valores fijos. El dashboard promete literalmente «Todas las celdas editables con fórmulas» y «Todas las celdas y textos son editables», y las propias Instrucciones del fichero mandan al comprador editarlo. Quien siga esas instrucciones se queda con un libro internamente incoherente y no se entera.",
+      "evidencia": "Recuento programático: 0 celdas que empiecen por «=» en las 6 hojas. Instrucciones!A4 dice «ajusta partidas a tu zona» pero Inversion Inicial!B30 es el literal 40030, no =SUM(B6:B29). Instrucciones!A5 dice «calibra nº eventos» pero PyG 3 Anos!B10 es el literal 70000 y Punto Equilibrio!B9 el literal 31: cambiar Escenarios!C5 de 50 a 60 eventos no mueve ni la facturación, ni el margen, ni el break-even, ni el EBITDA. Dashboard línea 26: «...cuadro de personal freelance. Todas las celdas editables con fórmulas.»",
+      "fix": "O se cablean las fórmulas reales (B30=SUM(B6:B29); PyG con % sobre TOTAL INGRESOS; Punto Equilibrio!B9=B5/B8; Escenarios derivando de Eventos×Ticket) —que es lo que la landing ya cobró—, o se corrige el texto del dashboard a «tabla de referencia con la aritmética ya resuelta» y se añade una nota en Instrucciones avisando de que los totales no se recalculan solos. Lo primero es lo que espera alguien que va al banco con esto."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "alta",
+      "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "p131 vs p113 y vs plan-financiero-cocteleria-eventos.xlsx!Punto Equilibrio!B9",
+      "hallazgo": "El número estrella del producto —el break-even— aparece con tres valores distintos, dos de ellos en el MISMO documento y separados por 18 párrafos. Es el dato que la FAQ del schema JSON-LD usa para responder «¿Sirve para presentar al banco?»; un analista de riesgos lo detecta en la primera lectura y el plan pierde toda credibilidad.",
+      "evidencia": "p131 (sección 10, Conclusiones): «El CapEx bajo permite alcanzar el punto de equilibrio en seis a ocho eventos». p113 (sección 8, Plan Financiero): «El punto de equilibrio se alcanza con 30-40 eventos anuales, considerando un ticket medio de 1.400 euros». Punto Equilibrio!B9 = 31 (18.220 € de costes fijos / 588 € de margen por evento). Landing y dashboard venden «break-even 31 eventos/año» (grid.templates[1], why.reasons[3], schema.faqs[3]). Añadido: el break-even TEMPORAL también choca — p45 dice «entre los meses seis y nueve», Escenarios!C15 dice «10-12» y el testimonio de Fernando Delgado dice «break-even mes 10».",
+      "fix": "Reescribir p131 para que diga 31 eventos (o «30-40», el rango de p113) y armonizar el break-even temporal en 10-12 meses en las tres fuentes. Añadir al gate de entregables un chequeo cruzado de las 5 cifras ancla del producto (inversión, ticket medio, eventos/año, break-even eventos, break-even meses) entre DOCX, XLSX y landing."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "alta",
+      "fichero": "modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "p22 (AVISO LEGAL) vs landing bonus.items[0].desc (plan-negocio-cocteleria-eventos.ts:198)",
+      "hallazgo": "La landing vende el BONUS 1 diciendo que la plantilla «sustituye una asesoría jurídica de 200-400 EUR». El propio fichero, en su aviso legal, dice exactamente lo contrario. Es una promesa que el entregable desmiente en su primera página y que, si un cliente firma el contrato sin revisión y le sale mal, es material de reclamación.",
+      "evidencia": "Landing (astro-site/src/data/productos/planes/plan-negocio-cocteleria-eventos.ts:198): «Plantilla DOCX editable que sustituye una asesoría jurídica de 200-400 EUR». Contrato p22: «NO constituye asesoramiento juridico. Antes de utilizarlo en tu negocio, recomendamos su revision por un abogado o asesor legal de tu confianza, especialmente si vas a trabajar con clientes corporativos o eventos de gran volumen. ChefBusiness no se responsabiliza de los resultados derivados del uso de esta plantilla.»",
+      "fix": "Cambiar el copy del bonus a algo defendible y que además vende igual: «te ahorra la redacción desde cero de un contrato de evento — llévalo a tu asesor solo para revisión». Quitar la equivalencia en euros con una asesoría jurídica."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "alta",
+      "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "p119 (sección 9, Aspectos Legales)",
+      "hallazgo": "Dos datos fiscales/mercantiles inventados en el apartado legal, el que el comprador llevará a su gestor. Uno describe una obligación del Registro Mercantil que no existe; el otro pone una cuota de autónomo que no es la vigente. Riesgo de que alguien presupueste mal su constitución o su primer año.",
+      "evidencia": "p119: «la Ley Crea y Crece de 2022 permite constituirla con capital social de tan solo 1 euro, aunque el registro mercantil exige un depósito de 3.000 EUR que puede realizarse en plazo de cinco años». La Ley 18/2022 no establece ningún depósito ni plazo: lo que impone es dotar el 20 % del beneficio a reserva legal hasta que capital + reserva alcancen 3.000 €, y responsabilidad solidaria de los socios hasta la diferencia. En el mismo párrafo: «cuota reducida de 80 EUR mensuales durante el primer año … con posibilidad de tarifa plana de 60 EUR mensuales los meses 13 a 24 si los ingresos no superan el salario mínimo interprofesional» — la prórroga de los meses 13-24 mantiene los 80 €/mes; los 60 € no salen de ninguna norma. (El checklist F1!E7 sí dice bien «Tarifa plana 80 EUR/mes primer ano».)",
+      "fix": "Reescribir esas dos frases: sustituir el «depósito de 3.000 EUR» por la reserva legal del 20 % y la responsabilidad solidaria hasta 3.000 €, y corregir la prórroga a 80 €/mes en los meses 13-24 sujeta a rendimientos netos por debajo del SMI. Y añadir al gate una verificación manual del apartado legal de cada plan de la familia — es el que más caro sale si está mal."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "media",
+      "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+      "ubicacion": "2.Mixers!D10 y D15 · 3.Cristaleria!D13 · 5.Equipamiento!D11 y D15 · 6.Frutas!D8 y D11 · 7.Consumibles!D13 · 8.Servicios pro!D14, D15 y D17",
+      "hallazgo": "La FAQ estrella del producto —presente además en el FAQPage JSON-LD, o sea indexable— afirma en absoluto que «Cada proveedor lleva web/contacto, cobertura, precio orientativo, plazo y notas». 11 de las 96 filas no son proveedores: son categorías genéricas sin ningún contacto («Variable»). Y una empresa (Bodeboca) está contada dos veces, así que los proveedores nombrados únicos son 84, no 96.",
+      "evidencia": "Conteo verificado: 96 filas con PROVEEDOR (12+10+10+11+10+10+8+12+13), promesa cumplida en el número. Pero 3.Cristaleria!C13='Distribuidores HORECA' D13='Variable'; 5.Equipamiento!C15='Carrocero local especializado' D15='Variable'; 6.Frutas!C8='Huerto urbano local / Greenway' D8='Variable local'; 8.Servicios pro!C14='Fotografo bodas local' D14='Variable por ciudad', C17='Asesor especializado HORECA local' D17='Variable por ciudad'; etc. (11 filas). 'Bodeboca' aparece en dos hojas. FAQ on-page (faqs[2]) y schema.faqs[2] de la landing: «¿La plantilla de 96 proveedores incluye contactos reales? Sí. Cada proveedor lleva web/contacto, cobertura, precio orientativo, plazo y notas.»",
+      "fix": "Sustituir esas 11 filas por proveedores reales con web (hay candidatos obvios: carroceros de furgonetas profesionales, fotógrafos de bodas por CCAA), o moverlas a un bloque aparte titulado «categorías a resolver en tu zona» y ajustar el número a los proveedores nombrados. Y suavizar la FAQ: «la gran mayoría con web y contacto directo; unas pocas categorías son necesariamente locales y te indicamos qué buscar»."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Instrucciones!B22",
+      "hallazgo": "Un ratio de referencia con un error de escala de ~10x, en la hoja que el fichero presenta como «RATIOS DE REFERENCIA — COCTELERIA EVENTOS ESPANA 2026». Contradice de frente al propio libro y puede llevar a presupuestar un servicio de bartender a 10 veces su precio de mercado.",
+      "evidencia": "Instrucciones!A22='Precio bartender por horas' B22='169-220 EUR/h' C22='Solo bartender, sin equipamiento ni bebidas'. En la misma hoja de cálculo, Personal Freelance!B6 fija el coste del bartender senior en 22 €/h y C6/D6 dan 110 € por un evento de 4 h y 165 € por uno de 6 h. Cobrar 169-220 €/h por un bartender suelto sería un margen de 8-10x sobre coste.",
+      "fix": "Corregir a un rango coherente con el resto del libro: «169-220 EUR por servicio (4-6 h)» si la intención era el precio del gig, o «35-50 EUR/h» si era la tarifa horaria facturada. Como el número parece un 16-22 al que se le pegó un dígito, revisar de paso los demás valores de Instrucciones!B14:B32."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "catalogo-equipamiento-cocteleria-eventos.docx",
+      "ubicacion": "portada p7 y todo el cuerpo (p27-p82)",
+      "hallazgo": "Landing y dashboard venden «Catálogo Equipamiento (SKU reales)» y «Cristalería profesional con SKU y precios orientativos». En el fichero no hay ni un solo SKU, referencia de artículo o EAN: solo nombres de modelo y enlaces. Además su propia portada dice «12 productos» y el documento lista 18 productos más 9 distribuidores.",
+      "evidencia": "Portada p7: «12 productos reales con SKU, precio y proveedor». Recuento real: 6 barras móviles (p29-p40), 3 máquinas de hielo (p44-p49), 5 cristalerías (p53-p60), 4 vehículos (p76-p79) = 18 productos, más 9 distribuidores de bebidas (p64-p72). Lo más parecido a un SKU son designaciones de modelo («MCSH», «KM-50A», «Spika 50», «CB 246»); la cristalería (p53-p60) va sin referencia alguna, solo «6-15 EUR/unidad». Landing grid.templates[4].desc y dashboard TEMPLATES[4].desc: «SKU reales» / «con SKU y precios orientativos».",
+      "fix": "O se añaden las referencias reales de catálogo de cada proveedor (GGM, SERHS, Suministros Tres Árboles publican código de artículo), o se cambia el claim en landing + dashboard + portada del propio DOCX a «modelos y proveedores reales con precio orientativo y enlace directo». Y corregir «12 productos» a 18."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "catalogo-equipamiento-cocteleria-eventos.docx",
+      "ubicacion": "p57-p58 (ficha «Riedel — Premium para vinos y cocteles»)",
+      "hallazgo": "El enlace «Donde» de la ficha de Riedel apunta a la página de fabricante de Schott Zwiesel. El comprador que haga clic aterriza en otra marca, en un e-commerce de vino para consumidor final, no en un canal HORECA. En un catálogo cuya promesa es «no perder semanas investigando», un enlace cruzado es justo el fallo que destruye la confianza en los otros 17.",
+      "evidencia": "p57: «Riedel — Premium para vinos y cocteles / Precio: 10-25 EUR/unidad». p58: «Donde: https://www.bodeboca.com/fabricantes/schott-zwiesel?language_content_entity=es». Schott Zwiesel ya tiene su propia ficha en p53-p54 con el enlace correcto a Suministros Tres Árboles. Bodeboca, además, es el único proveedor duplicado de la plantilla de 96 (ver COM-09).",
+      "fix": "Sustituir por un distribuidor HORECA real de Riedel en España y verificar los 20 enlaces del catálogo con una comprobación de estado + presencia del nombre de la marca en el HTML (el mismo método que el gate de CTA a Pickaxe documentado en CLAUDE.md: un 200 no basta)."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-cocteleria-eventos.ts",
+      "ubicacion": "bonus.subtitle (línea 191) vs grid.templates (líneas 145-146)",
+      "hallazgo": "Los dos «BONUS valorados en €68» son dos de los 9 entregables que la landing ya ha contado arriba en la parrilla. Se venden dos veces, y la frase que los presenta no cuadra: 1 + 7 + 2 = 10, no 9. Un comprador atento lo lee como inflado.",
+      "evidencia": "grid.templates incluye «Modelo de Contrato Profesional» (línea 145) y «10 Experiencias Temáticas Premium» (línea 146) dentro de los 9 entregables. bonus.subtitle (línea 191): «Además del plan financiero y los 7 entregables principales, accedes a estos recursos extra — valorados en €68», y bonus.items son exactamente esos mismos «Modelo de Contrato Profesional» (€29) y «10 Experiencias Temáticas Premium» (€39), con descripciones idénticas palabra por palabra a las de la parrilla.",
+      "fix": "Reescribir el subtítulo a «Dos de los 9 entregables valen por sí solos €68» (honesto y sigue anclando valor), o mover contrato y experiencias fuera de la parrilla de 9 y renombrar el producto a «7 entregables + 2 bonus». Lo que no puede quedarse es «además de los 7 principales» delante de dos ítems ya contados."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "p38 (CLÁUSULA SEGUNDA) vs calculadora-pricing-eventos.xlsx!Calculadora!B39 y plan-financiero!Instrucciones!C27",
+      "hallazgo": "El kit da dos calendarios de cobro incompatibles para el mismo negocio, y el del contrato deja un 20 % por cobrar DESPUÉS del evento, justo lo que el resto del kit desaconseja. Es la cláusula económica más importante del entregable legal.",
+      "evidencia": "Contrato p38: «Anticipo del 30% … a la firma», «50% adicional 7 dias antes del evento», «20% restante en las 24 horas siguientes a la finalizacion del evento». Calculadora!B39 (NOTAS): «6. Anticipo recomendado: 30-50% en firma, resto 7 dias antes del evento» — es decir, 100 % cobrado antes de montar. plan-financiero!Instrucciones!B27/C27 refuerza: «Tasa cancelacion bodas 3-5% — Anticipo 30-50% no reembolsable cubre el riesgo».",
+      "fix": "Alinear el contrato con la política que el propio kit recomienda: 30-50 % a la firma y el resto 7 días antes del evento, dejando el saldo posterior solo para extras realmente consumidos durante el servicio (que la Cláusula Cuarta g ya contempla). Si se quiere mantener el 20 % a posteriori, decirlo explícitamente en la nota de la calculadora para que las dos fuentes digan lo mismo."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "p62 (ANEXO I)",
+      "hallazgo": "El contrato remite al comprador a un fichero que no existe con ese nombre. Quien lo busque en su carpeta de descargas no lo encuentra.",
+      "evidencia": "p62: «encontraras 15 cocteles tematicos completos en el archivo 'carta-15-cocktails-tematicos-cocteleria-eventos.docx'». El fichero real, servido por get-download-urls.ts:705, se llama `carta-15-cocktails-tematicos.docx` (sin el sufijo `-cocteleria-eventos`).",
+      "fix": "Corregir el nombre en p62 y añadir al gate de entregables una comprobación de que todo nombre de fichero citado dentro de un .docx/.xlsx existe realmente en la carpeta /dl/<producto>/ — es un chequeo trivial que cubre a los 44 productos."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "líneas 1005 y 1011",
+      "hallazgo": "El changelog que se pinta en el dashboard habla de «los 4 ficheros» tres líneas por debajo de un titular que dice «9 Entregables · Descarga Directa». El comprador lee que solo se revisaron 4 de los 9 que pagó, o directamente que el producto tiene 4 ficheros.",
+      "evidencia": "productos-changelog.ts:1005 title: 'Revisión completa de los 4 ficheros'; :1011 change: 'Metadatos, instrucciones y autoría actualizados en los 4 ficheros'. El dashboard (PlanNegocioCocteleriaEventosDashboard.tsx:118) imprime «9 Entregables · Descarga Directa» inmediatamente encima de <ProductChangelog productId=\"plan-negocio-cocteleria-eventos\" /> (línea 146). La revisión de Fase A afectó efectivamente a los 4 xlsx, pero el texto no lo dice.",
+      "fix": "Reescribir a «Revisión completa de los 4 ficheros Excel del kit» y «Metadatos, instrucciones y autoría actualizados en los 4 Excel». Revisar el mismo patrón en los demás planes de la familia, que comparten la redacción."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Escenarios!B5, C5, D5 y Punto Equilibrio!B12",
+      "hallazgo": "El número de eventos está formateado como moneda: la fila «Eventos/ano» del análisis de escenarios se imprime «30 €», «50 €», «75 €». Es la hoja que Instrucciones!A7 manda «presentar a banco/inversores … para mostrar rigor», y es lo primero que se ve.",
+      "evidencia": "Escenarios!B5=30, C5=50, D5=75, todas con number_format '#,##0 €' y etiqueta A5='Eventos/ano'. Punto Equilibrio!B12=75 ('Eventos OBJETIVO ano 2') también con '#,##0 €', mientras que B11=50 ('Eventos OBJETIVO ano 1') y B9=31 ('Eventos minimos para break-even') usan correctamente '#,##0'.",
+      "fix": "Cambiar el number_format de esas 4 celdas a '#,##0' y añadir al postprocesador transversal una regla que compruebe que ninguna celda cuya etiqueta de fila contenga «Eventos», «Meses», «Unidades» o «%» lleve formato de euro."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Personal Freelance!B6, B7, B8, B9",
+      "hallazgo": "Las cuatro tarifas horarias llevan un formato numérico personalizado con una barra sin escapar («€/h»). La barra es separador de fecha en los códigos de formato de hoja de cálculo, así que un lector conforme al estándar interpreta esos valores como fechas: 22 se convierte en 22/01/1900. La landing promete compatibilidad explícita con Google Sheets, LibreOffice y Apple Numbers, y ahí es donde puede reventar.",
+      "evidencia": "Leído con openpyxl, B6 devuelve datetime(1900,1,22) con number_format '#,##0 €/h' y data_type 'd'; ídem B7 (16), B8 (12) y B9 (14). Los valores subyacentes son correctos (22, 16, 12, 14 EUR/h, coherentes con C6=110 para 4 h y D6=165 para 6 h) — el defecto está solo en el código de formato. La celda de al lado, C6, usa '#,##0 €' y se lee bien como número.",
+      "fix": "Escapar el literal: usar '#,##0 \"€/h\"' (o '#,##0 €\\/h'). Y barrer el resto del catálogo de 44 productos buscando number_format que contengan «/» sin comillas: es un patrón que se habrá copiado a otros planes de la familia."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!C7, C8, C12 y F16",
+      "hallazgo": "La única hoja realmente editable del kit no valida ninguno de sus inputs y devuelve resultados equivocados en silencio. Además, uno de los cuatro inputs que la landing vende («tipo») no interviene en ningún cálculo.",
+      "evidencia": "F16 = '=C5*C6*IF(C8=1,F5,IF(C8=2,F6,F7))': cualquier valor de C8 distinto de 1 o 2 —incluidos 0, 4, celda vacía o texto— cae en la rama F7 y aplica precio de bebida PREMIUM sin avisar. C12 espera 'S'/'N' y C7 «Tipo de evento» es texto libre. Ninguna de las tres celdas tiene data validation (verificado: 0 dataValidation en las dos hojas del libro, frente a 1 por hoja en el checklist y en la plantilla de proveedores). Y C7 no aparece en ninguna de las 13 fórmulas de la hoja, pese a que landing grid.templates[2].desc y dashboard TEMPLATES[2].desc prometen «invitados + horas + tipo + complejidad ⇒ precio sugerido».",
+      "fix": "Añadir listas desplegables en C7 (Boda/Corporativo/Privado/Despedida/Inauguración), C8 (1/2/3) y C12 (S/N), cambiar el IF anidado por IFS con rama de error, y o bien hacer que el tipo de evento module algo real (un coeficiente de complejidad por tipo, que es lo que da sentido a la palabra «complejidad» del copy) o retirar «tipo + complejidad» del texto de la landing y del dashboard."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-cocteleria-eventos.ts",
+      "ubicacion": "schema.aggregateRating (líneas 43-48) y schema.reviews (líneas 49-65)",
+      "hallazgo": "Se emite un AggregateRating de 4,9 sobre 8 reseñas y tres Review con nombre y apellidos en el JSON-LD del producto, sin que exista ningún sistema de reseñas detrás: los 8 «testimonios» son copy de marketing con avatares de stock.",
+      "evidencia": "aggregateRating ratingValue '4.9' / reviewCount '8', que coincide exactamente con los 8 elementos de testimonials.items (líneas 154-161), cada uno con avatar '/avatars/avatar-N.jpg'. Los tres schema.reviews (Nadia y Lidia, Alejandro Vela, Laura Manchón) son copia literal de los tres primeros testimonios. No hay ninguna función, tabla ni endpoint de reseñas en el repo para este producto.",
+      "fix": "Es una decisión de John ya identificada como pendiente (memoria: «avisos legales — ancla 190 €, aggregateRating»). Mientras se decide: quitar aggregateRating y reviews del JSON-LD y dejar los testimonios como testimonios en la página, que no marcan nada. Si se quieren reseñas reales, el flujo post-pago ya manda un email y puede pedirlas."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-cocteleria-eventos.ts",
+      "ubicacion": "pricing (líneas 270-278) + HeroSection.tsx:97-101, BuyBox.tsx:15-19, CtaFinal.tsx:36, BonusSection.tsx:57",
+      "hallazgo": "Ancla de precio permanente: €165 tachado y «Precio especial de lanzamiento. Sube pronto» en cuatro puntos de la página, con el producto vivo desde el 18 de agosto y priceValidUntil fijado al 31-12-2026. Si los €165 no se han cobrado nunca, el «-67 %» no cumple la regla del precio anterior más bajo aplicado en los últimos 30 días (Directiva Ómnibus, transpuesta en el TRLGDCU).",
+      "evidencia": "pricing.priceOld '€165', price '€55', discountBadge '-67%', heroNote 'Precio especial de lanzamiento. Sube pronto', bonusSaveLine '¡Ahorra €110 HOY!'. El €165 tachado se repite en HeroSection.tsx:97, BuyBox.tsx:15, CtaFinal.tsx:36 y BonusSection.tsx:57. schema.priceValidUntil = '2026-12-31'. Ningún Payment Link ni env var refleja un precio de 165 €.",
+      "fix": "Decisión de John (ya en su lista como «ancla 190 €»). Opciones limpias: (a) presentar los €165 como «valor del pack por separado» —que es lo que bonusTotalLabel ya insinúa— en vez de como precio anterior tachado; (b) fijar una fecha real de fin de lanzamiento y subir el precio; (c) retirar el tachado."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "media",
+      "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "p38 (línea de Anexos, tras el índice)",
+      "hallazgo": "La lista de anexos del documento principal promete dos PDF que se entregan en DOCX y se olvida del entregable que la landing más publicita. Es la primera página que abre el comprador después del índice.",
+      "evidencia": "p38: «Anexos: Plan Financiero Excel + Checklist Apertura Excel + Catalogo Equipamiento PDF + Calculadora Pricing Excel + Carta 15 Cocktails Tematicos DOCX + Modelo Contrato DOCX + Catalogo 10 Experiencias Tematicas PDF». Los ficheros reales son catalogo-equipamiento-cocteleria-eventos.docx y catalogo-10-experiencias-tematicas.docx (get-download-urls.ts:703 y :707). Y falta «Plantilla 96 Proveedores Reales», que la landing lista como entregable 4 y el hero cita en el checkItem 3.",
+      "fix": "Corregir los dos «PDF» a «DOCX» y añadir la plantilla de proveedores a la lista de anexos, que son 8 más el propio plan = 9."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!A29:B29",
+      "hallazgo": "La partida se etiqueta «Imprevistos (8%)» pero el importe es el 5,8 % de la base. Un porcentaje explícito que no cuadra con su propio número es exactamente lo que un analista bancario comprueba primero.",
+      "evidencia": "A29='Imprevistos (8%)', B29=2200. La suma de las partidas anteriores (B6:B28) es 37.830 €; el 8 % serían 3.026 €. 2.200 / 37.830 = 5,82 %.",
+      "fix": "O se sube B29 a 3.026 € (y B30 a 40.856 €, lo que agrava COM-04 y refuerza la necesidad de recalibrar el rango publicitado), o se reetiqueta a «Imprevistos (6%)». Con la fórmula real de COM-05 puesta (=ROUND(SUM(B6:B28)*0,08;0)) el problema no vuelve."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "media",
+      "fichero": "catalogo-10-experiencias-tematicas.docx",
+      "ubicacion": "p29, p42, p55, p68, p81, p94, p107, p120, p133, p144 (líneas «PRICING SUGERIDO») y estilos de todo el documento",
+      "hallazgo": "Las 10 experiencias fijan su precio como «+X % sobre paquete estándar», pero en ningún sitio del kit se define qué es el paquete estándar — y las cuatro cifras candidatas difieren hasta 8x entre sí. Con eso, el bonus de €39 que la landing vende como «lista para vender en eventos» no se puede usar para cotizar. Añadido: es el único de los 5 DOCX sin estilos de encabezado, así que no tiene panel de navegación ni índice automático en Word.",
+      "evidencia": "p29 «+30% sobre paquete estandar», p68 «+50-70%», p144 «+60-100%». Bases posibles en el kit: plan de negocio p88 («evento básico desde 450 EUR, estándar 600-900 EUR, premium desde 1.200 EUR»), Punto Equilibrio!B7 (ticket medio 1.400 €), media de la hoja Ejemplos (1.541 €) y salida por defecto de la Calculadora (5.165 €). Estructura: los 156 párrafos usan estilo 'Normal' y 0 encabezados con estilo Heading, frente a 10 Headings en el plan de negocio, 20 en el catálogo de equipamiento y 5 en la carta y en el contrato.",
+      "fix": "Añadir al principio del catálogo una línea que fije el paquete estándar (lo coherente con el Excel: «paquete estándar = ticket medio de 1.400 € para 100 invitados / 5 h») y, mejor aún, traducir cada +X % a un euro concreto sobre esa base. Y aplicar Heading 1 a los 10 títulos de experiencia."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "media",
+      "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+      "ubicacion": "F1!C16, F2!C14, F3!C20, F4!C18, F5!C19, F6!C20",
+      "hallazgo": "El contador de tareas cuenta el carácter «✓», pero las 71 casillas vienen rellenas con «☐» y ninguna hoja explica en ningún sitio que hay que usar el desplegable para marcarlas. Quien escriba «X», «OK» o una x minúscula ve el contador clavado en 0 y da el fichero por roto.",
+      "evidencia": "F1!C16 = '=COUNTIF(A5:A14,\"✓\")' y las cinco hojas restantes replican el patrón; A5:A14 contienen '☐'. La validación de datos existe (1 dataValidation por hoja sobre el rango de casillas), pero el libro no tiene hoja de instrucciones ni una nota en la cabecera, y tampoco lleva la línea «Versión 1.1» que sí llevan el plan financiero (Instrucciones!A34) y la plantilla de proveedores (Indice!B32).",
+      "fix": "Añadir bajo el título de cada hoja una línea del tipo «Marca cada casilla con el desplegable de la columna OK (✓ / ☐ / N/A). El contador de abajo se actualiza solo.» Es una fila de texto por hoja y elimina el principal motivo de ticket de soporte de este tipo de fichero."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "media",
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ubicacion": "Inversion Inicial!A6:B7",
+      "hallazgo": "El total de inversión suma a la vez el alta de autónomo y la constitución de una SL, que son alternativas excluyentes según el propio fichero y el propio checklist. Son 800 € de más en una cifra que ya se sale del rango prometido.",
+      "evidencia": "B6=600 ('Alta autonomo + gestoria primer ano') y B7=800 ('Constitucion SL unipersonal (opcional)'), ambas dentro del rango B6:B29 que suma B30. La nota C7 dice «Solo si facturacion >40-60K EUR/ano», y todo el resto del modelo asume autónomo: PyG 3 Anos!A23 es «Cuota autonomo + gestoria» y checklist F1!B5 obliga a «Decidir forma juridica: autonomo o SL» (una o la otra).",
+      "fix": "Sacar la SL del sumatorio y mostrarla como partida condicional debajo del TOTAL («+800 € si constituyes SL en lugar de darte de alta como autónomo»), o poner su importe a 0 con la nota. Ver COM-04: cualquier ajuste aquí debe propagarse al rango publicitado."
+     },
+     {
+      "id": "COM-27",
+      "severidad": "media",
+      "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "p129 (sección 10)",
+      "hallazgo": "La landing afirma «Cifras del mercado español verificadas» y el documento apoya su conclusión final en dos datos de mercado sin ninguna fuente, en un documento cuyo resto sí cita (INE, Wedding Report de Bodas.net). Un comité de riesgos de banco pide la fuente de exactamente esas dos frases.",
+      "evidencia": "p129: «El sector de eventos privados y corporativos en España mueve más de 4.500 millones de euros anuales, con un crecimiento sostenido del 8% en bodas y celebraciones post-pandemia. El segmento de barra móvil profesional representa actualmente menos del 3% de ese mercado». Sin cita, frente a p56 que sí atribuye «Según datos del INE y el Wedding Report de Bodas.net». Landing why.reasons[1].desc: «Cifras del mercado español verificadas».",
+      "fix": "Añadir la fuente y el año de las dos cifras, o reformularlas como estimación propia («nuestra estimación, a partir de X»). Y ajustar el claim de la landing a «cifras del mercado español con fuente citada», que es verificable."
+     },
+     {
+      "id": "COM-28",
+      "severidad": "media",
+      "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "p88 (sección 5) vs p131 (sección 10)",
+      "hallazgo": "El mismo documento recomienda dos precios distintos para el mismo producto premium, con un factor 2 entre ellos. El comprador no sabe qué poner en su web, que es literalmente lo que p88 le pide hacer.",
+      "evidencia": "p88: «mostrando rangos orientativos en web (evento básico desde 450 EUR, estándar 600-900 EUR, premium desde 1.200 EUR)». p131: «segmentos de cliente con alto poder adquisitivo dispuesto a pagar 600-800 euros por evento premium en Madrid o Barcelona, frente a los 450 euros de barra libre estándar». Y ninguno de los dos casa con Punto Equilibrio!B7 (ticket medio 1.400 €) ni con el mix declarado en C7 («bodas 1.800, corporativo 1.500, privado 900»).",
+      "fix": "Unificar la escala de precios del producto entero (DOCX p88 y p131, Ejemplos de la calculadora, ticket medio del Excel y el «paquete estándar» de COM-24) partiendo del dato mejor sustentado: los 10 ejemplos, que dan 14,5-23 €/pax y 400-3.650 € por evento."
+     },
+     {
+      "id": "COM-29",
+      "severidad": "baja",
+      "fichero": "catalogo-10-experiencias-tematicas.docx",
+      "ubicacion": "p71 vs landing grid.templates[8].desc y bonus.items[1].desc y dashboard TEMPLATES[8].desc",
+      "hallazgo": "Una de las 10 experiencias se llama distinto en el fichero que en el escaparate. Quien compre buscando «Bourbon Tasting» no lo encuentra por ese nombre.",
+      "evidencia": "Landing (líneas 146 y 206) y dashboard (línea 75) enumeran «Speakeasy Años 20, Gin Lounge, Tropical Tiki, Mixología Molecular, Bourbon Tasting, Mediterranean, Latin, Whisky Tasting, Champagne y Signature». El fichero p71 la titula «5. VINTAGE BOURBON BAR». Las otras nueve coinciden en sustancia.",
+      "fix": "Usar «Vintage Bourbon Bar» en landing y dashboard (o renombrar la experiencia en el fichero). Conviene además fijar los 10 nombres como fuente única, igual que se hizo con el catálogo de agentes."
+     },
+     {
+      "id": "COM-30",
+      "severidad": "baja",
+      "fichero": "plan-de-negocio-cocteleria-eventos.docx",
+      "ubicacion": "p111 vs plan-financiero!PyG 3 Anos!D10 e Instrucciones!B24",
+      "hallazgo": "Las proyecciones del año 2 y 3 del DOCX no coinciden con las del Excel que las acompaña, y el volumen de eventos del año 3 supera el techo que el propio Excel declara para el modelo.",
+      "evidencia": "p111: año 2 «110.000 a 150.000 euros con 60-80 eventos», año 3 «160.000-220.000 euros con 90-120 eventos». PyG 3 Anos!C10 = 112.500 € y D10 = 157.500 €, es decir el año 3 del Excel queda por debajo del suelo del DOCX. Además Instrucciones!B24/C24 fija «Eventos/ano objetivo madurez: 75-100 — Limite del modelo unipersonal con 1 vehiculo», mientras el DOCX proyecta 90-120 para el año 3 sin mencionar la segunda barra ni el segundo vehículo (que p131 sí plantea, pero «a partir del año dos»).",
+      "fix": "Alinear las cifras del DOCX con el PyG del Excel (año 2 ≈112,5K, año 3 ≈157,5K) y, si se mantienen 90-120 eventos en el año 3, decir explícitamente que requiere la segunda barra y el segundo vehículo, con su CapEx."
+     },
+     {
+      "id": "COM-31",
+      "severidad": "baja",
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ubicacion": "Calculadora!F13 vs plan-financiero!PyG 3 Anos!A17 e Instrucciones!B16",
+      "hallazgo": "La comisión del wedding planner —la variable que más pesa en el precio final de una boda— toma tres valores distintos en tres ficheros del mismo kit.",
+      "evidencia": "Calculadora!F13 = 0,12 (12 %), usada en F27 y F28 para inflar el precio. PyG 3 Anos!A17 = 'Comision wedding planners (10% en bodas)' con B17=4200 sobre B6=42000, es decir 10 %. Instrucciones!B16 = '10-15%'. Checklist F5!E8 propone «comision 10-15%» en el email a los wedding planners.",
+      "fix": "Fijar 12 % (o el que se decida) en los tres sitios, o dejar F13 como parámetro editable y anotar en Instrucciones!B16 que el PyG está construido sobre el 10 %."
+     },
+     {
+      "id": "COM-32",
+      "severidad": "baja",
+      "fichero": "catalogo-equipamiento-cocteleria-eventos.docx",
+      "ubicacion": "p30 (ficha GGM Gastro MCSH)",
+      "hallazgo": "El precio bruto de la barra móvil aplica el IVA alemán (19 %) a una compra que hará una empresa española. Para un autónomo español dado de alta en el ROI, GGM factura sin IVA (inversión del sujeto pasivo) y el coste es el neto; si no está en el ROI, paga el 21 % local. Los 2.880 € no son ninguno de los dos escenarios, y esa cifra se propaga al Excel y al checklist.",
+      "evidencia": "p30: «Precio: 2.420 EUR (neto) | 2.880 EUR (bruto IVA)» — 2.420 × 1,19 = 2.879,8. La misma ficha dice «Precio neto sin IVA es lo que ves en web (sumar 19-21%)». Inversion Inicial!B12 = 2880 con la nota C12 «GGM Gastro MCSH bruto IVA», y checklist F3!E5 repite «GGM Gastro 2.880 EUR bruto». La landing publica 2.420 € (grid.templates[4].desc y dashboard TEMPLATES[4].desc) sin aclarar que es neto.",
+      "fix": "Sustituir por «2.420 € netos; si tu empresa está en el ROI/VIES la compra es intracomunitaria sin IVA, si no, súmale el 21 % español (2.928 €)» y ajustar Inversion Inicial!B12 al escenario que se elija. Añadir «(sin IVA)» junto a los 2.420 € de la landing."
+     },
+     {
+      "id": "COM-33",
+      "severidad": "baja",
+      "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+      "ubicacion": "F4!B15:E15",
+      "hallazgo": "Se presenta como hecho consumado una obligación de facturación electrónica B2B cuyo desarrollo reglamentario se ha ido posponiendo. Es el tipo de dato que caduca y deja el checklist anticuado ante el gestor del comprador.",
+      "evidencia": "F4!B15='Configurar facturacion electronica (Holded, Quaderno)', D15='1 dia', E15='Cumple obligacion factura electronica 2026'. La obligación B2B de la Ley Crea y Crece depende de un reglamento con entrada en vigor escalonada y aplazada; afirmar «obligación 2026» sin matiz es arriesgado.",
+      "fix": "Reformular a «Prepárate para la facturación electrónica B2B obligatoria (Ley Crea y Crece): calendario pendiente del reglamento, conviene tenerlo listo». Igual de accionable y no caduca."
+     },
+     {
+      "id": "COM-34",
+      "severidad": "baja",
+      "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+      "ubicacion": "F1!E6",
+      "hallazgo": "El epígrafe del IAE va con la denominación cambiada: se etiqueta 673.2 como «servicios bar especiales», que es la descripción del 673.1. El gestor lo corrige, pero es un dato erróneo en el trámite número dos del checklist.",
+      "evidencia": "F1!E6: «Epigrafe IAE 673.2 servicios bar especiales o 677.9 otros servicios alimentacion». En el grupo 673 («Servicios en cafés y bares»), el 673.1 es «De categoría especial» y el 673.2 «Otros cafés y bares». Para un servicio itinerante de coctelería lo habitual es el grupo 677 (servicios de catering / otros servicios de alimentación), que el propio texto ya cita.",
+      "fix": "Reescribir a «Epígrafe IAE 677.9 (otros servicios de alimentación) — es el habitual para servicio itinerante; consulta con tu gestor si además procede alguno del grupo 673». Confirmar la denominación exacta contra la tarifa vigente antes de publicar."
+     },
+     {
+      "id": "COM-35",
+      "severidad": "baja",
+      "fichero": "modelo-contrato-cocteleria-eventos.docx",
+      "ubicacion": "p46 (CLÁUSULA SEXTA — CANCELACIÓN)",
+      "hallazgo": "Asimetría fuerte en las penalizaciones de cancelación en un contrato cuyo caso de uso mayoritario, según todo el kit, son bodas con consumidores particulares: el cliente que cancela con menos de 30 días paga el 100 %, y el prestador que cancela sin causa paga el 20 %. Es el patrón que el TRLGDCU señala como falta de reciprocidad en contratos con consumidores.",
+      "evidencia": "p46: «Cancelacion con menos de 30 dias de antelacion: EL CLIENTE abona el 100% del precio total» frente a «La cancelacion por parte del PRESTADOR sin causa justificada conllevara la devolucion integra del anticipo y el pago al CLIENTE de una indemnizacion del 20% del precio total». También «Cancelacion con mas de 60 dias: EL PRESTADOR retiene el 100% del anticipo del 30%», sin ventana de desistimiento aunque falte un año para el evento. El propio kit asume que el 60 % de la facturación son bodas (PyG 3 Anos!A6).",
+      "fix": "Equilibrar la cláusula: subir la indemnización del prestador o escalonar la del cliente (p. ej. 100 % solo dentro de los 7-15 días, y retención del anticipo con más de 60 días limitada a los gastos efectivamente incurridos). Y añadir una nota al pie recordando que con consumidores las penalizaciones desproporcionadas pueden declararse abusivas — encaja con el aviso legal que ya recomienda revisión por abogado."
+     }
+    ]
+   }
+  }
+ }
+}
