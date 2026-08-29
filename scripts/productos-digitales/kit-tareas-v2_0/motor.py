@@ -1017,6 +1017,14 @@ DV_NUM_ERROR = ('Escribe sólo el número, sin la unidad y sin el signo «−» 
 #: tiene: sus hojas no llevan fila de recuento.
 DV_ERROR_REGISTRO = ('Usa el desplegable: ✓ verificado, — pendiente, '
                      'N/A no aplica.')
+#: RT-18 — desplegables de un REGISTRO que no salen de la cabecera sino del
+#: SIGNIFICADO de la hoja (la matriz de alérgenos: 252 casillas donde el blanco
+#: no puede confundirse con «no contiene»). Los declara el módulo de contenido
+#: del kit —`motor.DV_EXTRA[<hoja>] = [(ref, lista, título, mensaje)]`— porque
+#: `registro_appcc` VACÍA las listas al entrar y las reconstruye: una DV
+#: añadida desde `contenido.post` se perdería en la segunda pasada del motor,
+#: que corre después. Vacío fuera de los kits que lo usan.
+DV_EXTRA = {}
 
 
 def rango_de_rotulo(v):
@@ -1165,6 +1173,13 @@ def registro_appcc(ws, cambios):
                 ws.add_data_validation(dv_marca)
             dv_marca.add(f'{letra}{hr + 1}:{letra}{ultima}')
             verif += 1
+
+    for ref, lista, titulo, mensaje in DV_EXTRA.get(ws.title, ()):
+        dv_x = DataValidation(type='list', formula1=lista, allow_blank=True,
+                              showErrorMessage=True, errorStyle='stop',
+                              errorTitle=titulo, error=mensaje)
+        ws.add_data_validation(dv_x)
+        dv_x.add(ref)
 
     # --- CF de fuera de rango, fila a fila y con el límite que la fila dice --
     if temp_por_dias:
@@ -2231,6 +2246,11 @@ SUBTITULO = {
 }
 
 
+MESES_LARGOS = frozenset((
+    'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto',
+    'septiembre', 'octubre', 'noviembre', 'diciembre', 'continuo'))
+
+
 def cadencia(ws, g):
     """Clasifica la columna de tiempo por su CONTENIDO (DOM-25/TEC-10).
 
@@ -2242,7 +2262,8 @@ def cadencia(ws, g):
     col = _col_tiempo(g['cols'])
     if not col:
         return None
-    votos = {'hora': 0, 'Día': 0, 'Cadencia': 0, 'Antelación': 0, 'otro': 0}
+    votos = {'hora': 0, 'Día': 0, 'Cadencia': 0, 'Antelación': 0, 'Mes': 0,
+             'otro': 0}
     for r in range(g['hr'] + 1, g['ultima'] + 1):
         v = ws.cell(row=r, column=col).value
         if not isinstance(v, str) or not v.strip():
@@ -2257,12 +2278,20 @@ def cadencia(ws, g):
             votos['Cadencia'] += 1
         elif RX_ANTELACION.search(v):
             votos['Antelación'] += 1
+        # RC-16 — una columna llena de nombres de MES se titulaba «Cuándo»,
+        # que no dice nada, y en el 08 convivía con una sección de cuentas
+        # atrás: dos tipos de valor incompatibles bajo el mismo rótulo. Sólo
+        # en la sub-familia CB, para no retitular ninguna hoja de los 11 kits
+        # que §7-bis.24 congela.
+        elif sub_cb() and _sin_tildes(v).lower() in MESES_LARGOS:
+            votos['Mes'] += 1
         else:
             votos['otro'] += 1
     no_hora = sum(v for k, v in votos.items() if k != 'hora')
     if not no_hora:
         return None                        # todo son horas: «Hora Límite»
-    gana = max(('Día', 'Cadencia', 'Antelación'), key=lambda k: votos[k])
+    gana = max(('Día', 'Cadencia', 'Antelación', 'Mes'),
+               key=lambda k: votos[k])
     if votos[gana] * 2 >= no_hora and votos[gana]:
         return gana
     return 'Cuándo'

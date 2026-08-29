@@ -450,6 +450,153 @@ def _crear_registro(wb, modelo, titulo, encabezado, subtitulo, cabeceras,
 # ==========================================================================
 # Constructor genérico de HOJA DE CHECKLIST nueva (clon del molde del kit)
 # ==========================================================================
+RX_HHMM = re.compile(r'^([01]?\d|2[0-3]):([0-5]\d)$')
+
+
+def _ordenar_por_hora(ws, cambios):
+    """RD-35 / RC-14 / RC-28 / RC-29 — cada banda, en orden de reloj.
+
+    Un checklist de barra se sigue de arriba abajo, y las horas no iban en
+    orden dentro de las secciones impresas: en la apertura, la tarea más
+    temprana del día (arrancar el arroz) era la ÚLTIMA de su bloque, y en el
+    corte del pescado las dos filas prerrequisito quedaban DEBAJO de las que
+    las suceden en el tiempo. Quien sigue la hoja hace las tareas fuera de
+    hora o tiene que volver atrás.
+
+    Se PERMUTAN valores y estilos entre filas —no se insertan ni se borran—,
+    así que ninguna fórmula, validación ni rango condicional se desplaza. Sólo
+    se ordena una banda cuando TODAS sus filas llevan una hora HH:MM: en las
+    hojas cuya columna de tiempo dice «Servicio», «Lunes» o «Antelación» no
+    hay orden que imponer y no se toca nada. El orden es estable, así que dos
+    tareas a la misma hora conservan el suyo y la 2.ª pasada no mueve nada.
+    """
+    g = motor.geometria(ws)
+    if not g:
+        return False
+    col_t = g['cols'].get('Hora Límite') or g['cols'].get('Hora Limite') \
+        or g['cols'].get('Cuándo') or g['cols'].get('Cuando')
+    if not col_t:
+        return False
+    bandas, actual = [], []
+    for r in range(g['hr'] + 1, g['ultima'] + 1):
+        if motor.es_fila_seccion(ws, r):
+            if actual:
+                bandas.append(actual)
+            actual = []
+            continue
+        if isinstance(ws.cell(row=r, column=1).value, int):
+            actual.append(r)
+        elif actual:
+            bandas.append(actual)
+            actual = []
+    if actual:
+        bandas.append(actual)
+    movidas = 0
+    for filas in bandas:
+        horas = [ws.cell(row=r, column=col_t).value for r in filas]
+        if len(filas) < 2 or not all(isinstance(h, str) and RX_HHMM.match(h)
+                                     for h in horas):
+            continue
+        orden = sorted(range(len(filas)), key=lambda i: horas[i])
+        if orden == list(range(len(filas))):
+            continue
+        datos = [[(ws.cell(row=r, column=c).value,
+                   copy.copy(ws.cell(row=r, column=c)._style))
+                  for c in range(1, NCOL + 1)] for r in filas]
+        for destino, origen in zip(filas, orden):
+            for c, (v, st) in enumerate(datos[origen], start=1):
+                cel = ws.cell(row=destino, column=c)
+                cel.value = v
+                cel._style = copy.copy(st)
+        movidas += 1
+    if movidas:
+        cambios.append(f'«{ws.title}»: {movidas} bandas reordenadas por hora '
+                       '(el impreso se sigue de arriba abajo y las horas no '
+                       'iban en orden) — RD-35')
+    return False
+
+
+def _cuerpo_registro(ws):
+    """(fila de cabecera, primera fila de dato, última) de un REGISTRO."""
+    hr, cols = motor.fila_registro_appcc(ws)
+    if hr is None:
+        raise AnclaPerdida(f'«{ws.title}»: no la reconoce fila_registro_appcc')
+    ultima = hr
+    for r in range(hr + 1, ws.max_row + 1):
+        if isinstance(ws.cell(row=r, column=1).value, int):
+            ultima = r
+    return hr, cols, ultima
+
+
+def _rotular_limite(ws, prefijo, nuevo, cambios, motivo):
+    """RT-08/RT-09/RC-18/RC-19 — el límite crítico, EN LA CABECERA.
+
+    El motor pinta el formato condicional de fuera-de-rango con el límite que
+    declara el propio rótulo (igual que en la rejilla semanal lo declara el
+    rótulo de la fila). Escribirlo ahí resuelve dos cosas a la vez: la columna
+    empieza a avisar y el cliente lee el límite en la celda que rellena, no en
+    una nota al pie que además se imprimía recortada.
+    """
+    hr, cols, _ = _cuerpo_registro(ws)
+    # Punto fijo de las reescrituras del motor: si el rótulo no lo fuera, cada
+    # pasada lo volvería a escribir y el gate de idempotencia se pondría rojo
+    # sin nada roto de verdad.
+    nuevo = _est_texto(nuevo)
+    k = _clave(prefijo)
+    for rot, c in cols.items():
+        if _clave(rot).startswith(k):
+            if ws.cell(row=hr, column=c).value == nuevo:
+                return False
+            ws.cell(row=hr, column=c).value = nuevo
+            cambios.append(f'«{ws.title}»: la cabecera «{rot}» pasa a '
+                           f'«{nuevo}» — {motivo}')
+            return True
+    raise AnclaPerdida(f'«{ws.title}»: no hay cabecera que empiece por '
+                       f'«{prefijo}»')
+
+
+def _columna_calculada(ws, rotulo, plantilla, fmt, cambios, motivo):
+    """RT-06/RT-16/RT-17 — la columna que la hoja promete calcular, calculada.
+
+    Escritura ABSOLUTA fila a fila (idempotente) y registro en
+    `motor.REGISTRO` para que el gate de caché la vea. Las fórmulas devuelven
+    cadena vacía mientras falten datos: `inject_cache` no cachea '' y
+    `verificar_cache` ya las cuenta como «vacías por diseño».
+    """
+    hr, cols, ultima = _cuerpo_registro(ws)
+    k = _clave(rotulo)
+    col = next((c for rot, c in cols.items() if _clave(rot).startswith(k)),
+               None)
+    if col is None:
+        raise AnclaPerdida(f'«{ws.title}»: no hay columna «{rotulo}»')
+    n = 0
+    for r in range(hr + 1, ultima + 1):
+        f = plantilla.format(r=r)
+        cel = ws.cell(row=r, column=col)
+        if cel.value != f:
+            cel.value = f
+            n += 1
+        cel.number_format = fmt
+        motor.reg(ws, f'{L(col)}{r}', f)
+    if n:
+        cambios.append(f'«{ws.title}»: la columna «{rotulo}» se calcula sola '
+                       f'en sus {ultima - hr} filas — {motivo}')
+    return n > 0
+
+
+def _formato_columna(ws, rotulo, fmt):
+    """Propaga a las filas de DATO el formato que sólo tenía el total (RT-16)."""
+    hr, cols, ultima = _cuerpo_registro(ws)
+    k = _clave(rotulo)
+    col = next((c for rot, c in cols.items() if _clave(rot).startswith(k)),
+               None)
+    if col is None:
+        raise AnclaPerdida(f'«{ws.title}»: no hay columna «{rotulo}»')
+    for r in range(hr + 1, ultima + 1):
+        ws.cell(row=r, column=col).number_format = fmt
+    return col
+
+
 def _crear_checklist(wb, modelo, titulo, encabezado, bloques):
     """Hoja nueva del molde ▸, clonada de una hermana del mismo libro.
 
@@ -650,25 +797,36 @@ PEDIDO_CIERRE = ('Anotar las necesidades de pescado observadas en el servicio '
 #: COM-22 + promesa «cierre completo y arqueo» de la landing (grid.templates[0],
 #: `kit-tareas-sushi-bar.ts:116`), que el corpus no cumplía: 0 apariciones de
 #: «arqueo» en los 11 ficheros. Dueño único: el encargado, en el 01.
-ARQUEO = ('Arqueo de caja y cierre de TPV: contar el efectivo, cotejarlo con '
-          'la Z del TPV y anotar el descuadre')
+#: RC-22 — el gate `promesas` daba la promesa por cumplida porque la palabra
+#: aparecía en tres celdas de texto, no porque existiera el entregable: la
+#: tarea era una casilla de tick sin una sola celda donde escribir el efectivo
+#: contado ni el descuadre. El kit no tiene fichero de CAJA (CB-E7), así que lo
+#: prometido se entrega donde vive el cierre: con los tres huecos escritos en
+#: la propia tarea, que es como el kit resuelve el resto de sus lecturas.
+#: RD-20 — y se marca como tarea de cierre de DÍA: con la hoja impresa dos
+#: veces (almuerzo y cena) el arqueo se pedía dos veces, que es COM-22.
+ARQUEO = ('Arqueo de caja y cierre de TPV (sólo en el ÚLTIMO turno del día; '
+          'en el cierre de almuerzo, marca N/A): efectivo contado ______ € · '
+          'Z del TPV ______ € · descuadre ______ €')
 #: DOM-03 / COM-18 — la cadena horaria del arroz era físicamente imposible
 #: (reposo de 30 min de 10:20 a 10:25) y no cuadraba con la de 02. Ésta es la
 #: misma línea temporal en los dos ficheros, calculada hacia atrás desde el
 #: primer servicio (12:00).
 HORAS_01_ARROZ = {
-    'Lavar arroz': '09:35',
-    'Cocer arroz': '10:10',
-    'Preparar sushi-zu': '10:45',
-    'Mezclar arroz cocido con sushi-zu': '10:52',
-    'Medir el pH del arroz': '11:00',
-    'Cubrir arroz con pa': '11:05',
+    'Lavar arroz': '08:35',
+    'Cocer arroz': '09:15',
+    'Preparar sushi-zu': '10:10',
+    'Sacar el sushi-zu': '10:10',
+    'Mezclar arroz cocido con sushi-zu': '10:17',
+    'Medir el pH del arroz': '10:25',
+    'Cubrir arroz con pa': '10:30',
 }
 #: El arroz arranca antes que el resto de la apertura, así que su hora rompe
 #: la secuencia de la columna. Se dice en la propia tarea para que no parezca
 #: una errata al imprimir.
 ARROCERA = ('Encender arrocera / preparar olla para arroz sushi (el arroz '
-            'arranca a las 09:30, antes que el resto de la apertura)')
+            'arranca a las 08:30, antes que el resto de la apertura: el '
+            'protocolo completo está en el fichero 02)')
 PH_01 = ('Medir el pH del arroz avinagrado con tiras de rango 4,0-5,0 '
          '(resolución 0,2) o pHmetro de punción y anotarlo en «Registro de pH '
          'del Arroz» del fichero 03 — límite crítico ≤4,6')
@@ -709,14 +867,15 @@ def _f01(wb, cambios):
     r = _fila(ws, 'Encender arrocera', 2)
     if r:
         ws.cell(row=r, column=2).value = _est_tarea(ARROCERA)
-        if ws.cell(row=r, column=5).value != '09:30':
-            ws.cell(row=r, column=5).value = '09:30'
+        if ws.cell(row=r, column=5).value != '08:30':
+            ws.cell(row=r, column=5).value = '08:30'
             n += 1
     if n:
         cambios.append(f'«Apertura Barra Sushi»: {n} horas del bloque del '
                        'arroz recalculadas y alineadas con 02 (reposo de 30 '
                        'min que empezaba a las 10:20 y cocía a las 10:25) — '
                        'DOM-03 / COM-18')
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     ws = wb['Cierre Barra Sushi']
@@ -749,21 +908,39 @@ def _f01(wb, cambios):
                        'descuadre (la landing lo promete en '
                        '`kit-tareas-sushi-bar.ts:116` y el corpus no lo tenía '
                        'ni una vez) — COM-22 / gate promesas')
+    if _insertar_tras(ws, PEDIDO_CIERRE, DESCONGELAR_VISPERA):
+        cambios.append('«Cierre Barra Sushi»: la descongelación se programa la '
+                       'VÍSPERA, que es lo que necesita un lomo congelado '
+                       '(12-24 h en cámara); en el 02 quedaba a quince '
+                       'minutos del primer corte — RD-24 / RC-14')
+        tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     if _instrucciones(wb, 'Turno de almuerzo y turno de cena', [
-            'Las horas de estas hojas son las del turno de ALMUERZO, con la '
-            'barra abierta a las 12:00. Para el turno de cena, súmale a cada '
-            'hora la diferencia entre tus dos aperturas y marca la casilla '
-            '«Cena» de la cabecera.',
+            # RD-19 — la regla anterior valía para las dos hojas y el cierre ya
+            # va de 23:00 a 23:45, que es el cierre de la NOCHE: sumarle la
+            # diferencia entre aperturas lo llevaba de madrugada.
+            # RC-27 — y fijaba por escrito una apertura (12:00) que no es la
+            # que deduce el motor. Se redacta sin hora absoluta.
+            'Las horas de la hoja de APERTURA son las del turno de almuerzo. '
+            'Para el turno de cena, súmale a cada hora la diferencia entre '
+            'tus dos aperturas y marca la casilla «Cena» de la cabecera.',
+            'Las horas de la hoja de CIERRE son las del cierre del DÍA y no '
+            'se desplazan. Si haces cierre intermedio de almuerzo, imprime la '
+            'hoja y marca N/A lo que sólo se hace por la noche.',
             'El arroz avinagrado caduca 4 h después de mezclarse con el '
             'sushi-zu, así que la cena necesita SU PROPIO lote: el protocolo '
             'del segundo lote está en el fichero '
             '02-preparacion-arroz-pescado.xlsx.',
             'Lo que cambia de un turno a otro son las horas, no las tareas: '
-            'imprime la misma hoja dos veces y anota el turno arriba.']):
-        cambios.append('Instrucciones: turno de almuerzo y de cena, y el '
-                       'segundo lote de arroz — DOM-11')
+            'imprime la misma hoja dos veces y anota el turno arriba. El '
+            'arqueo de caja es la excepción: se hace UNA vez, en el cierre '
+            'del último turno, y en el otro se marca N/A.']):
+        cambios.append('Instrucciones: la regla de turnos se separa por HOJA '
+                       '(apertura desplazable, cierre absoluto) y el arqueo '
+                       'se marca N/A en el cierre de almuerzo — RD-19 / '
+                       'RD-20 / RC-27 / DOM-11')
     if _instrucciones(wb, 'Temperaturas y arqueo de este fichero', [
             'Cámara de pescado crudo: 0-2 °C en las tres hojas donde aparece '
             '(aquí, en el cierre y en «Temperaturas Diario» del 03). '
@@ -785,31 +962,51 @@ def _f01(wb, cambios):
 # ==========================================================================
 #: DOM-03 / COM-18 — la misma línea temporal que 01, calculada hacia atrás
 #: desde el primer servicio: reposo real de 30 min y cocción real en arrocera.
+#: RD-05 (2.ª vuelta) — la primera corrección seguía dejando la cadena sin
+#: cocción: el reposo de 30 min arrancaba a las 09:40 y la cocción figuraba a
+#: las 10:10 con «Hora Límite» en la cabecera, o sea CERO minutos para cocer un
+#: ciclo de arrocera de 45-50 min. Rehecha hacia atrás desde el servicio de las
+#: 12:00 con tiempos reales: remojo 08:45-09:15, cocción 09:15-10:05, reposo
+#: tapado 10:05-10:15, volcado y avinagrado 10:15-10:20, pH 10:25.
 HORAS_02 = {
-    'Pesar arroz sushi': '09:30',
-    'Lavar arroz 3-4 veces': '09:35',
-    'Dejar reposar arroz en agua 30 min': '09:40',
-    'Cocer arroz': '10:10',
-    'Dejar reposar 10 min tras': '10:40',
-    'Preparar sushi-zu': '10:45',
-    'Calentar mezcla': '10:47',
-    'Transferir arroz cocido a hangiri': '10:50',
-    'Verter sushi-zu': '10:52',
-    'Abanicar arroz': '10:55',
-    'Medir pH': '11:00',
-    'Cubrir con pa': '11:05',
-    'Textura:': '11:10',
-    'Temperatura:': '11:10',
-    'Brillo:': '11:10',
-    'Si pH': '11:10',
-    'Anotar hora de prepara': '11:10',
+    'Pesar arroz sushi': '08:30',
+    'Lavar arroz 3-4 veces': '08:35',
+    'Dejar reposar arroz en agua 30 min': '08:45',
+    'Cocer arroz': '09:15',
+    'Dejar reposar 10 min tras': '10:05',
+    'Preparar sushi-zu': '10:10',
+    'Calentar mezcla': '10:12',
+    'Si lo preparas en el día': '10:12',
+    'Transferir arroz cocido a hangiri': '10:15',
+    'Verter sushi-zu': '10:17',
+    'Abanicar arroz': '10:20',
+    'Anotar el sushi-zu realmente': '10:22',
+    'Medir pH': '10:25',
+    'Medir el pH del arroz avinagrado': '10:25',
+    'Cubrir con pa': '10:30',
+    'Textura:': '10:35',
+    'Temperatura:': '10:35',
+    'Brillo:': '10:35',
+    'Si pH': '10:35',
+    'Si el pH sale': '10:35',
+    'Anotar hora de prepara': '10:35',
+    'Anotar la hora de avinagrado': '10:35',
 }
 #: DOM-22 — «por 500g arroz» no decía si crudo o cocido (la diferencia es del
 #: doble largo) y la dosis quedaba por debajo del ~10 % de avinagrado que hace
 #: falta para bajar de 4,6 con seguridad.
-SUSHI_ZU = ('Preparar el sushi-zu por cada 1 kg de arroz CRUDO (≈2,2 kg '
-            'cocido): 200 ml de vinagre de arroz de acidez ≥4,3 %, 60-100 g '
+#: RD-06 — además, el sushi-zu se preparaba DESPUÉS del arroz y se vertía
+#: recién calentado: en barra se hace por lotes con antelación y se usa frío o
+#: templado. Verter vinagre caliente apelmaza el grano y evapora el ácido, que
+#: es justo lo que sostiene el pH ≤ 4,6 que el kit convierte en límite crítico.
+SUSHI_ZU = ('Sacar el sushi-zu preparado la víspera y comprobar que está a '
+            'temperatura ambiente: por cada 1 kg de arroz CRUDO (≈2,2 kg '
+            'cocido), 200 ml de vinagre de arroz de acidez ≥4,3 %, 60-100 g '
             'de azúcar y 30 g de sal')
+SUSHI_ZU_FRIO = ('Si lo preparas en el día: calienta la mezcla sólo hasta '
+                 'disolver —no hervir— y DÉJALA ENFRIAR a temperatura '
+                 'ambiente antes de usarla. El sushi-zu no se vierte nunca '
+                 'caliente')
 PH_02 = ('Medir el pH del arroz avinagrado con tiras de rango 4,0-5,0 '
          '(resolución 0,2) o pHmetro de punción calibrado, y anotar el valor '
          'en «Registro de pH del Arroz» del fichero 03 — límite crítico ≤4,6')
@@ -824,32 +1021,61 @@ PH_CORRECTORA = ('Si el pH sale >4,6: 1) añadir sushi-zu poco a poco, mezclar '
                  'no lo dejes en ambiente: guárdalo en frío (5 °C o menos) y '
                  'úsalo en elaboraciones cocinadas; 3) descarta sólo si no '
                  'sirve para ningún uso. Anota la acción tomada')
+#: RD-07 — la receta dosifica por kg de arroz CRUDO (que es como se pesa en la
+#: partida) y el registro pedía «ml/kg de arroz cocido»: el mismo lote se
+#: anotaba como 200 ml/kg o como ~91 ml/kg según quién rellenase, y la
+#: «acidificación medida» que respalda el PCC dejaba de ser comparable entre
+#: lotes. UNA sola base, la misma aquí, en el 01 y en la cabecera del registro.
 ACIDIFICACION = ('Anotar el sushi-zu realmente añadido (ml por kg de arroz '
-                 'cocido) en «Registro de pH del Arroz»: es la acidificación '
-                 'MEDIDA que respalda el pH del lote')
+                 'CRUDO, la misma base con la que se pesa en la receta) en '
+                 '«Registro de pH del Arroz»: es la acidificación MEDIDA que '
+                 'respalda el pH del lote')
 DESCARTE_4H = ('Anotar la hora de avinagrado en la hoja de pH: el lote se '
                'descarta 4 h después y nunca se guarda para el día siguiente')
 #: DOM-11 — el kit sólo cubría un servicio al día.
+#: RD-08 / RC-13 — y el bloque que lo resolvía se contradecía con la regla de
+#: las 4 h que la propia hoja fija tres filas más arriba: mandaba descartar el
+#: arroz del almuerzo a las 17:00 cuando caduca a las 14:20, y avinagraba el
+#: segundo lote a las 17:00 para una barra abierta hasta las 23:00 (dos horas
+#: largas de cena con arroz que el kit declara caducado). Las cuatro tareas van
+#: además en orden de reloj: el impreso se sigue de arriba abajo.
 SEGUNDO_LOTE = [
-    ('Programar el segundo lote de arroz para la cena: el del almuerzo caduca '
-     '4 h después de avinagrarse', 'Cocina', 'Ayudante sushi', '16:00'),
+    ('Descartar el arroz del turno de almuerzo 4 h después de haberlo '
+     'avinagrado: no se mezcla nunca con el lote nuevo', 'Cocina',
+     'Ayudante sushi', '14:20'),
+    ('Programar el arroz del turno de cena para avinagrarlo AL ABRIR la cena, '
+     'no antes: cada lote caduca 4 h después de avinagrarse', 'Cocina',
+     'Ayudante sushi', '17:30'),
     ('Repetir el protocolo completo (lavado, reposo, cocción y sushi-zu) para '
-     'el turno de cena', 'Cocina', 'Ayudante sushi', '17:00'),
+     'el turno de cena; si el servicio de cena pasa de 4 h, programa un tercer '
+     'lote', 'Cocina', 'Ayudante sushi', '18:30'),
     ('Medir el pH del segundo lote y anotarlo en «Registro de pH del Arroz» '
-     'del fichero 03', 'Cocina', 'Itamae', '18:30'),
-    ('Descartar el arroz del turno de almuerzo: no se mezcla nunca con el '
-     'lote nuevo', 'Cocina', 'Ayudante sushi', '17:00'),
+     'del fichero 03', 'Cocina', 'Itamae', '20:00'),
 ]
 #: DOM-14 — nadie comprobaba, ANTES de cortar, que la pieza que se va a servir
 #: cruda pertenece a un lote con la congelación terminada; y no había ni una
 #: mención de la descongelación, que es donde se rompe la cadena.
+#: RD-24 / RC-14 — la descongelación estaba programada quince minutos antes del
+#: primer corte, y un lomo de atún o de salmón a −20 °C necesita 12-24 h en
+#: cámara: la tarea pertenece a la VÍSPERA (donde se programa, en el cierre del
+#: 01) y aquí queda la comprobación. RD-23 — y ya no manda anotar la
+#: descongelación en columnas que el «Registro Congelación» no tiene: se anota
+#: en la línea del lote, que sí existe.
 LOTE_ANTES = [
     ('Comprobar la etiqueta del lote ANTES de cortar para consumo en crudo: '
      'congelación antiparasitaria terminada y validada, o acreditación de '
-     'acuicultura del proveedor', 'Cámara', 'Itamae', '10:55'),
-    ('Descongelar en cámara a 0-2 °C, nunca a temperatura ambiente ni bajo el '
-     'grifo, y anotar en «Registro Congelación» la fecha y la hora de entrada '
-     'y de uso', 'Cámara', 'Itamae', '10:55'),
+     'acuicultura del proveedor', 'Cámara', 'Itamae', '10:45'),
+    ('Comprobar que las piezas bajadas a cámara la víspera están '
+     'descongeladas y a 0-2 °C (nunca a temperatura ambiente ni bajo el '
+     'grifo): un lomo congelado necesita 12-24 h en cámara. Anota la lectura '
+     'y el nº de lote en «Registro Congelación»', 'Cámara', 'Itamae',
+     '10:50'),
+]
+#: RD-24 — la otra mitad: la víspera, en el cierre del 01.
+DESCONGELAR_VISPERA = [
+    ('Bajar a cámara a 0-2 °C los lotes que se cortarán mañana (12-24 h de '
+     'antelación) y anotar la hora en «Registro Congelación» del fichero 03',
+     'Cámara', 'Itamae', '23:15'),
 ]
 #: TEC-20 (c) — la landing vende «yanagiba, sashimi, nigiri y maki» y «maki» no
 #: aparecía ni una vez en el corpus.
@@ -883,7 +1109,12 @@ def _f02(wb, cambios):
     if _sustituir(ws, 'Preparar sushi-zu: 80ml', SUSHI_ZU):
         cambios.append('«Protocolo Arroz Sushi»: el sushi-zu se dosifica por '
                        'kg de arroz CRUDO, con la acidez del vinagre y una '
-                       'dosis que sí baja de 4,6 — DOM-22')
+                       'dosis que sí baja de 4,6, y se prepara con antelación '
+                       'para usarlo FRÍO — DOM-22 / RD-06')
+    if _sustituir(ws, 'Calentar mezcla solo hasta disolver', SUSHI_ZU_FRIO):
+        cambios.append('«Protocolo Arroz Sushi»: el sushi-zu no se vierte '
+                       'caliente — apelmaza el grano y evapora el ácido que '
+                       'sostiene el pH ≤4,6 — RD-06')
     if _sustituir(ws, 'Medir pH con tiras reactivas', PH_02):
         cambios.append('«Protocolo Arroz Sushi»: tiras de rango 4,0-5,0 con '
                        'resolución 0,2 (o pHmetro) y registro del valor, que '
@@ -895,7 +1126,7 @@ def _f02(wb, cambios):
         cambios.append('«Protocolo Arroz Sushi»: la hora de avinagrado se '
                        'anota en la hoja de pH — DOM-04')
     if _insertar_tras(ws, 'Abanicar arroz',
-                      [(ACIDIFICACION, 'Cocina', 'Ayudante sushi', '10:57')]):
+                      [(ACIDIFICACION, 'Cocina', 'Ayudante sushi', '10:22')]):
         cambios.append('«Protocolo Arroz Sushi»: acidificación MEDIDA (ml de '
                        'sushi-zu por kg de arroz cocido) registrada junto al '
                        'pH — §7-bis.20')
@@ -905,6 +1136,7 @@ def _f02(wb, cambios):
                        '(TURNO CENA)» — el kit sólo cubría un servicio al día '
                        'con un arroz que caduca a las 4 h — DOM-11')
         tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     ws = wb['Protocolo Corte Pescado']
@@ -925,6 +1157,7 @@ def _f02(wb, cambios):
     if _sustituir(ws, 'Tofu piel (inari)', INARI):
         cambios.append('«Protocolo Corte Pescado»: el aburaage se escalda y se '
                        'cuece en dashi, no se «hidrata» — DOM-30')
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     if _instrucciones(wb, 'pH del arroz: cómo se mide y dónde se anota', [
@@ -950,6 +1183,18 @@ ALERGENOS_14 = ['Gluten', 'Crustáceos', 'Huevos', 'Pescado', 'Cacahuetes',
                 'Sésamo', 'Sulfitos', 'Altramuces', 'Moluscos']
 
 HOJA_ALERGENOS = 'Matriz de Alérgenos'
+#: RT-18 — la matriz entregaba 252 casillas sin ninguna validación y con una
+#: convención de marcado («una X a mano») distinta de la que enseñan las 11
+#: hojas de Instrucciones. Sin desplegable no hay forma de distinguir «no
+#: contiene» de «nadie lo ha revisado», que en una matriz de alérgenos es
+#: exactamente la diferencia que importa. Se declara aquí porque
+#: `motor.registro_appcc` VACÍA las listas al entrar y las reconstruye: una DV
+#: escrita desde `post()` se perdería en la 2.ª pasada del motor.
+motor.DV_EXTRA[HOJA_ALERGENOS] = [
+    ('C5:P22', '"X,traza,—"', 'Marca no válida',
+     'Usa el desplegable: X = contiene · traza = puede llegar por '
+     'contaminación cruzada · — = no contiene. En blanco = sin revisar.'),
+]
 HOJA_PH = 'Registro de pH del Arroz'
 HOJA_RECEPCION = 'Control de Recepción'
 HOJA_MERMAS = 'Registro de Mermas'
@@ -978,18 +1223,25 @@ NOTA_B27 = ('IMPORTANTE: el límite crítico de este PCC es −20 °C. Si la '
 #: DOM-23 — dos de las siete filas del registro de temperaturas no servían como
 #: puntos de control: «Arrocera (100 °C)» no se puede desviar y el arroz de
 #: servicio traía una horquilla de 17 grados que además contradecía al 02.
+#: RD-22 — dos de las siete filas piden una lectura que a la hora de apertura
+#: no existe: a esa hora la freidora está fría y el arroz avinagrado todavía no
+#: se ha hecho. Con la CF puesta se pintarían de rojo todos los días haciéndolo
+#: todo bien, así que el rótulo dice cuándo se toma cada una.
 TEMPS_03 = [
     ('Camara pescado crudo', 'Cámara de pescado crudo (0-2 °C)'),
     ('Arrocera (temp coccion)',
-     'Aceite de fritura de la cocina caliente (170-180 °C)'),
+     'Aceite de fritura — lectura EN SERVICIO (170-180 °C)'),
     ('Arroz servicio (ambiente)',
-     'Arroz de servicio al montar el nigiri (35-37 °C)'),
+     'Arroz de servicio — lectura AL MONTAR el nigiri (35-37 °C)'),
 ]
+#: RC-12 — la nota mandaba la lectura de cierre «al checklist de cierre del 01»
+#: y allí no hay rejilla donde anotarla: una sola tarea de tick que además
+#: cubre un equipo de los siete. La hoja pide lo que la hoja permite hacer.
 NOTA_TEMPS = (
-    'Anota aquí la lectura de APERTURA de cada equipo, una por día. La '
-    'lectura de CIERRE se marca y se firma en el checklist de cierre del '
-    'fichero 01. Si una lectura se sale del rango que declara su fila, la '
-    'celda se pone en ROJO sola: apunta debajo la acción correctora.')
+    'Una lectura diaria por equipo, en la APERTURA, salvo las dos filas que '
+    'dicen otra cosa en su propio rótulo (el aceite se lee en servicio y el '
+    'arroz al montar). Si una lectura se sale del rango que declara su fila, '
+    'la celda se pone en ROJO sola: apunta debajo la acción correctora.')
 NOTA_TEMPS_2 = 'Acción correctora / incidencia de la semana: ________________'
 
 
@@ -1139,7 +1391,10 @@ def _f03(wb, cambios):
             ['#', 'Plato o elaboración'] + ALERGENOS_14
             + ['Contaminación cruzada (indicar)', 'Firma del revisor'],
             18,
-            ['Marca con una X la casilla del alérgeno que el plato CONTIENE. '
+            ['Marca cada casilla con el desplegable: X = el plato CONTIENE '
+             'ese alérgeno · traza = puede llegar por contaminación cruzada · '
+             '— = no lo contiene. La casilla EN BLANCO significa que nadie lo '
+             'ha revisado todavía, que no es lo mismo que «no contiene». '
              'En «contaminación cruzada» anota el alérgeno que puede llegar '
              'por freidora, tabla, plancha o utensilio compartido: en un '
              'sushi bar es el caso del gluten (panko y tempura), del sésamo y '
@@ -1227,6 +1482,42 @@ def _f03(wb, cambios):
                        '/ §2.2')
         tocado = True
 
+    # --- El límite crítico, escrito en la cabecera de su columna -----------
+    # RT-08 / RT-09 / RC-18 / RC-19: CB-E3 exige CF de fuera-de-rango en el
+    # molde REGISTRO y sólo la tenía la rejilla semanal. Las tres columnas que
+    # se quedaban sin aviso eran las de los DOS límites críticos del kit (los
+    # −20 °C del tratamiento antiparasitario y el pH ≤ 4,6 del arroz) y la de
+    # recepción: se podía anotar −5 °C, o un pH de 6, sin que la hoja dijera
+    # nada. El motor lee el límite del rótulo, así que basta con escribirlo.
+    _rotular_limite(wb[hoja], 'Temp °C', 'Temp °C (−20 °C o menos)', cambios,
+                    'el PCC del anisakis ya avisa en ROJO si la lectura sube '
+                    'de −20 °C (RT-08)')
+    _rotular_limite(wb['Trazabilidad Pescado'], 'Temp recepción',
+                    'Temp recepción (0-2 °C)', cambios,
+                    'la recepción de pescado fresco avisa fuera de 0-2 °C '
+                    '(RT-20 / RC-19)')
+    _rotular_limite(wb[HOJA_RECEPCION], 'Temp recepción',
+                    'Temp recepción (0-2 °C)', cambios,
+                    'mismo criterio que la cámara de pescado crudo (RC-15)')
+    _rotular_limite(wb[HOJA_PH], 'pH medido', 'pH medido (≤ 4,6)', cambios,
+                    'el único PCC del kit que se registraba sin ninguna ayuda '
+                    'de la hoja (RT-09 / RC-18)')
+
+    # --- Las columnas que la hoja promete calcular, calculadas -------------
+    # RT-06 / RD-25: «Registro de Mermas» es la hoja con la que la propia SPEC
+    # justifica el precio del kit y su columna de coste estaba VACÍA en las 22
+    # filas, con el total sumando una columna que el cliente tenía que
+    # multiplicar a mano. Demostrado con pycel: 135 € de merma escritos daban
+    # un total de 0 €.
+    _columna_calculada(wb[HOJA_MERMAS], 'Coste total €',
+                       '=IF(COUNT(E{r},G{r})<2,"",E{r}*G{r})',
+                       '#,##0.00" €"', cambios, 'RT-06 / RD-25')
+    _formato_columna(wb[HOJA_MERMAS], 'kg descartados', '0.0" kg"')
+    _formato_columna(wb[HOJA_MERMAS], 'Coste €/kg', '#,##0.00" €"')
+    _formato_columna(wb[HOJA_PH], 'kg de arroz cocido', '0.0" kg"')
+    _formato_columna(wb[HOJA_PH], 'Sushi-zu añadido', '0" ml/kg"')
+    _formato_columna(wb[HOJA_RECEPCION], 'kg', '0.0" kg"')
+
     if _instrucciones(wb, 'Las cuatro hojas nuevas de este fichero', [
             f'«{HOJA_ALERGENOS}»: una fila por plato y una columna por cada '
             'uno de los 14 alérgenos del Anexo II del Rgto. (UE) 1169/2011, '
@@ -1298,6 +1589,7 @@ def _f04(wb, cambios):
                        'el motor le colgaba el objetivo genérico de frío '
                        '(0-4 °C) y la vitrina quedaba con dos límites — '
                        'DOM-12 / gate limite_unico')
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
     return False
 
@@ -1355,6 +1647,7 @@ def _f05(wb, cambios):
         cambios.append('«Tareas Diarias Manager»: el arqueo lo hace el '
                        'encargado en 01 y el manager lo REVISA: dueño único '
                        'por tarea, que es lo que la landing promete — COM-22')
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     ws = wb['Tareas Semanales Manager']
@@ -1364,6 +1657,7 @@ def _f05(wb, cambios):
                        'manager y con 0 apariciones en el fichero — DOM-28 / '
                        'COM-24 / TEC-20')
         tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     modelo = 'Tareas Diarias Manager'
@@ -1373,7 +1667,10 @@ def _f05(wb, cambios):
             'Semana del ___/___/______ al ___/___/______',
             ['#', 'Fecha', 'Especie', 'Proveedor A (€/kg)',
              'Proveedor B (€/kg)', 'Proveedor C (€/kg)',
-             'Mejor precio (€/kg) y proveedor',
+             # RT-17 — la columna la calcula la hoja (MIN de los tres
+             # precios), así que ya no puede prometer también el NOMBRE del
+             # proveedor: ése va en «calidad y observaciones».
+             'Mejor precio (€/kg)',
              'Calidad y observaciones (talla, frescura, servicio)', 'Firma'],
             20,
             ['Una línea por especie y semana. El precio más bajo no siempre '
@@ -1419,6 +1716,24 @@ def _f05(wb, cambios):
                        'ticket medio, compras, food cost y mermas con totales '
                        'de la semana — DOM-28 / COM-24 / TEC-20')
         tocado = True
+
+    # --- Las dos hojas nuevas, CALCULANDO ----------------------------------
+    # RT-16 / RD-26: «Reporting Semanal» se vende como «el cierre de la semana
+    # calculado» y el ticket medio sólo salía en el pie: el manager tenía que
+    # dividir a mano siete veces. RT-17 / RC-26: «Comparativa de Proveedores»
+    # se creó para comparar y no tenía NI UNA fórmula, con los tres precios en
+    # la misma fila y las cuatro columnas de €/kg en formato General.
+    _columna_calculada(wb[HOJA_REPORTING], 'Ticket medio',
+                       '=IF(D{r}=0,"",C{r}/D{r})', '#,##0.00" €"', cambios,
+                       'RT-16 / RD-26')
+    for rot in ('Ventas', 'Compras de pescado', 'Mermas'):
+        _formato_columna(wb[HOJA_REPORTING], rot, '#,##0.00" €"')
+    _formato_columna(wb[HOJA_REPORTING], 'Comensales', '0')
+    _columna_calculada(wb[HOJA_COMPARATIVA], 'Mejor precio',
+                       '=IF(COUNT(D{r}:F{r})=0,"",MIN(D{r}:F{r}))',
+                       '#,##0.00" €"', cambios, 'RT-17')
+    for rot in ('Proveedor A', 'Proveedor B', 'Proveedor C'):
+        _formato_columna(wb[HOJA_COMPARATIVA], rot, '#,##0.00" €"')
 
     if _instrucciones(wb, 'Las dos hojas nuevas del manager', [
             f'«{HOJA_COMPARATIVA}»: el €/kg por especie y proveedor, semana a '
@@ -1489,12 +1804,23 @@ DELIVERY = [
          'Antes de salir'),
     ]),
     ('  SALIDA, ENTREGA E INCIDENCIAS', [
+        # RD-27 / RC-15 — el kit unifica el pescado crudo en 0-2 °C en cinco
+        # celdas y esta hoja nueva introducía un SEGUNDO rango (0-4 °C). El
+        # gate `limite_unico` no podía verlo porque agrupa por nombre de
+        # EQUIPO y esto es una frase de proceso. Se escribe el rango único.
         ('Comprobar y anotar la temperatura del pedido al salir: el pescado '
-         'crudo sale entre 0 y 4 °C — anota la lectura: ____ °C',
+         'crudo sale a 0-2 °C, el mismo rango que la cámara de la que sale — '
+         'anota la lectura: ____ °C',
          'Barra sushi', 'Itamae', 'A la salida'),
-        ('Entregar en 30 minutos o menos; si el reparto se alarga por encima '
-         'de 60 minutos, avisar al cliente y no servir pescado crudo',
-         'Sala', 'Encargado sala', 'A la salida'),
+        # RD-28 — tres plazos para el mismo riesgo, y uno inaplicable: mandaba
+        # «no servir pescado crudo» cuando el pedido ya iba camino del
+        # cliente. La decisión se toma ANTES de salir y con el criterio de las
+        # 2 h que usa el resto del kit.
+        ('Decidir ANTES de salir: si el reparto estimado pasa de 60 minutos, '
+         'no se acepta el pedido con pescado crudo y se ofrece alternativa '
+         'cocinada. El objetivo es entregar en 30 minutos o menos, y ninguna '
+         'pieza puede estar más de 2 h fuera de refrigeración',
+         'Sala', 'Encargado sala', 'Antes de salir'),
         ('Anotar la hora de salida y la de entrega para poder medir el tiempo '
          'real de reparto', 'Oficina', 'Encargado sala', 'A la salida'),
         ('Registrar la incidencia (retraso, envase abierto, plato erróneo) y '
@@ -1542,14 +1868,52 @@ OFFICE = [
 ]
 
 
+#: RD-29 / RC-07 — DOM-26 se cerró en el cierre del 01 y en el semanal del 07 y
+#: se quedó vivo en la hoja del AYUDANTE, que es justo quien lava el hangiri a
+#: diario: el kit prohibía y permitía el detergente en el mismo utensilio.
+#: Redacción canónica: la del 01, con la remisión al semanal.
+HANGIRI_AYUDANTE = ('Lavar el hangiri con agua caliente y cepillo, sin '
+                    'abrasivos; si usas detergente apto para uso alimentario, '
+                    'aclarar a fondo. Secar boca abajo al aire. La '
+                    'sanitización semanal va en el fichero 07')
+#: RD-30 / RC-08 — DOM-29 se corrigió en 4 de las 6 celdas y las dos que
+#: quedaron en inglés son las de la hoja que el ayudante lee en papel.
+MAKISU_AYUDANTE = ('Preparar los makisu (esterillas de bambú) con film '
+                   'transparente nuevo')
+FILM_AYUDANTE = 'Renovar el film transparente de los makisu cada 2 horas'
+
+
 def _f06(wb, cambios):
     tocado = False
+    ws = wb['Ayudante Sushi']
+    if _sustituir(ws, 'Lavar hangiri', HANGIRI_AYUDANTE):
+        cambios.append('«Ayudante Sushi»: el hangiri tenía TRES protocolos '
+                       'incompatibles en el mismo kit («sólo con agua, sin '
+                       'jabón» aquí, detergente en el 01 y desinfectante en '
+                       'el 07). Queda la redacción del 01 — RD-29 / RC-07 / '
+                       'DOM-26')
+    if _sustituir(ws, 'Preparar bamboo mats', MAKISU_AYUDANTE):
+        cambios.append('«Ayudante Sushi»: makisu y film transparente en vez '
+                       'de «bamboo mats» y «plastic wrap» — RD-30 / RC-08')
+    if _sustituir(ws, 'Renovar plastic wrap', FILM_AYUDANTE):
+        cambios.append('«Ayudante Sushi»: «Renovar plastic wrap» → «Renovar '
+                       'el film transparente de los makisu» — RD-30 / RC-08')
+    _ordenar_por_hora(ws, cambios)
+    motor.renumerar(ws)
+
     ws = wb['Sala y Servicio']
     if _sustituir(ws, 'Informar a clientes sobre alergenos', ALERGENOS_06):
         cambios.append('«Sala y Servicio»: los 14 alérgenos del Anexo II del '
                        'Rgto. (UE) 1169/2011, con el PESCADO —que faltaba en '
                        'la lista de un sushi bar— y remisión a la matriz de '
                        '03 — DOM-07 / TEC-12')
+    if _insertar_tras(ws, ALERGENOS_06, INFORMAR_06):
+        cambios.append('«Sala y Servicio»: línea de verificación del art. 8.2 '
+                       'del RD 1021/2022 — el kit citaba la obligación de '
+                       'informar al consumidor y no la comprobaba nadie — '
+                       'RD-09')
+        tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     ws = wb['Cocina Caliente']
@@ -1558,6 +1922,7 @@ def _f06(wb, cambios):
                        '≥75 °C, mantenimiento ≥65 °C, enfriamiento rápido, '
                        'aceite y alérgenos en freidora) — DOM-31 / §7-bis.19')
         tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     if _crear_checklist(wb, 'Sala y Servicio', HOJA_DELIVERY,
@@ -1618,6 +1983,30 @@ HANGIRI_07 = [
      'desinfectante apto para uso alimentario, con aclarado abundante y '
      'secado al aire', 'Cocina', 'Ayudante sushi', 'Lunes'),
 ]
+#: RD-09 — el kit CITA el art. 8.2 del RD 1021/2022 («hay que informar al
+#: consumidor de que el pescado ha sido congelado») y no lo convertía en
+#: ninguna tarea comprobable: de las 251 tareas del kit, cero verificaban el
+#: cartel o la mención en carta. Es la mitad del artículo que el propio
+#: producto invoca, y la que se ve en una inspección sin abrir un registro.
+INFORMAR_07 = [
+    ('Comprobar que la carta, el menú o un cartel visible informan de que el '
+     'pescado que se sirve crudo ha sido congelado (RD 1021/2022, art. 8.2)',
+     'Sala', 'Manager', 'Mensual'),
+]
+INFORMAR_06 = [
+    ('Comprobar antes del servicio que la carta o el cartel informan de que '
+     'el pescado servido crudo ha sido congelado, y saber decirlo si el '
+     'cliente pregunta (RD 1021/2022, art. 8.2)', 'Sala', 'Encargado sala',
+     'Apertura'),
+]
+#: RD-18 / RC-34 — dos obligaciones NO mensuales (trimestral y anual) viven en
+#: la hoja «Tareas Mensuales» y entran en el denominador del contador, que se
+#: imprime y se firma cada mes: 12 oportunidades al año para 4 y 1 ejecuciones
+#: reales. La hoja no puede sacarlas del rango sin romper el contador honesto,
+#: así que se advierte en la propia hoja y en las Instrucciones: el mes que no
+#: toque se marcan N/A, que es exactamente lo que el contador descuenta.
+BANDA_NO_MENSUALES = ('  NO MENSUALES — marca «N/A» el mes que no toque (el '
+                      'contador las descuenta)')
 
 
 def _f07(wb, cambios):
@@ -1628,6 +2017,7 @@ def _f07(wb, cambios):
                        'L+D, que es lo que faltaba para poder retirar el '
                        '«NUNCA jabón» del cierre — DOM-26')
         tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     ws = wb['Tareas Mensuales']
@@ -1656,14 +2046,39 @@ def _f07(wb, cambios):
     if _sustituir(ws, 'Auditar registros APPCC', APPCC_07):
         cambios.append('«Tareas Mensuales»: la auditoría mensual interna y la '
                        'anual completa quedan diferenciadas — COM-10')
+    # RD-17 — la tarea dice expresamente que la revisión mensual la hace el
+    # TITULAR y la columna «Responsable» ponía «Técnico»: quien imprime la
+    # hoja repartía a un técnico externo una tarea que hace la casa cada mes.
+    r = _fila(ws, FRIO_07, 2)
+    if r and ws.cell(row=r, column=4).value != 'Encargado':
+        ws.cell(row=r, column=4).value = 'Encargado'
+        cambios.append('«Tareas Mensuales»: la revisión MENSUAL del frío la '
+                       'hace la casa, no un «Técnico» externo — la propia '
+                       'tarea decía «por el titular» — RD-17')
+    if _insertar_tras(ws, EXTINTOR_TRIM, INFORMAR_07):
+        cambios.append('«Tareas Mensuales»: tarea nueva para el art. 8.2 del '
+                       'RD 1021/2022 (informar al consumidor de que el '
+                       'pescado ha sido congelado). El kit citaba el artículo '
+                       'y no lo convertía en ninguna de sus 251 tareas — '
+                       'RD-09')
+        tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     if _instrucciones(wb, 'Frecuencias: una sola tabla para 07 y el BONUS-02', [
+            # RD-18 / RC-34
+            'Dos filas de la hoja MENSUAL no lo son: la revisión trimestral '
+            'de extintores y la anual de la empresa mantenedora. El mes que '
+            'no toquen se marcan «N/A» en el desplegable —el contador las '
+            'descuenta del total— y el porcentaje del mes sigue siendo '
+            'verdad.',
             'Calibración de termómetros: MENSUAL. Revisión del sistema de '
             'frío: mensual por el titular y anual por empresa frigorista.',
-            'Extintores: revisión trimestral del titular y revisión anual por '
-            'empresa mantenedora habilitada, con retimbrado a los 5 años. '
-            + FUENTE_RIPCI,
+            # RC-33 — la celda decía dos veces lo mismo: la frase de la
+            # cadencia y, a continuación, la nota de fuente repitiéndola
+            # entera. 338 caracteres en una columna de 100.
+            'Extintores: son DOS obligaciones distintas, por eso van en dos '
+            'filas. ' + FUENTE_RIPCI,
             'Auditoría de registros: la interna es MENSUAL y va en este '
             'fichero; la anual completa va en el calendario del BONUS-02. '
             'Donde las dos hojas discrepaban, manda la más frecuente.']):
@@ -1705,15 +2120,21 @@ PREVALENCIA = [
      'congelación previa obligatoria antes de cualquier preparación cruda, '
      'marinada, en salazón o ahumada en frío', 'Cámara', 'Itamae', 'Junio'),
 ]
+#: RC-16 / RC-31 — la sección nueva metía MESES ABSOLUTOS en una columna que
+#: hasta entonces eran cuentas atrás, y además usaba una convención distinta de
+#: la del BONUS-02 (aquí el mes de PREPARACIÓN, allí el del EVENTO) sin decirlo
+#: en ninguna parte. Escrito como antelación, la columna vuelve a tener un solo
+#: tipo de valor, la cabecera pasa a «Antelación» sola y la discrepancia con el
+#: calendario desaparece: −1 mes antes de un evento de mayo es abril.
 FESTIVOS_08 = [
     ('Hanami (finales de marzo a mediados de abril): menú de temporada y '
-     'reservas de terraza', 'Oficina', 'Manager/Itamae', 'Marzo'),
+     'reservas de terraza', 'Oficina', 'Manager/Itamae', '-1 mes'),
     ('Tanabata (7 de julio): menú temático y decoración de sala', 'Sala',
-     'Manager', 'Junio'),
+     'Manager', '-1 mes'),
     ('Cenas de empresa y comidas de Navidad: captación en octubre, servicio '
-     'en noviembre y diciembre', 'Oficina', 'Manager', 'Octubre'),
+     'en noviembre y diciembre', 'Oficina', 'Manager', '-2 meses'),
     ('Día de la Madre (primer domingo de mayo): menú cerrado y doble turno',
-     'Oficina', 'Manager', 'Abril'),
+     'Oficina', 'Manager', '-1 mes'),
 ]
 
 
@@ -1744,6 +2165,7 @@ def _f08(wb, cambios):
                        'sardina, boquerón y caballa, que se listaban como '
                        'disponibilidad sin una sola advertencia — DOM-18')
         tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     ws = wb['Eventos Especiales']
@@ -1753,6 +2175,7 @@ def _f08(wb, cambios):
                        'Tanabata, cenas de empresa (el mayor pico del año, '
                        'que no estaba) y Día de la Madre — DOM-19 / COM-08')
         tocado = True
+    _ordenar_por_hora(ws, cambios)
     motor.renumerar(ws)
 
     if _instrucciones(wb, 'De dónde salen estas temporadas', [
@@ -1776,17 +2199,21 @@ MESES = {'Ene': 2, 'Feb': 3, 'Mar': 4, 'Abr': 5, 'May': 6, 'Jun': 7,
 TODOS = list(MESES)
 
 CAL_TEXTOS = [
+    # RC-30 — al descruzar bonito y atún se movieron los PUNTOS y no las
+    # etiquetas: «(invierno)», «(primavera)» y «(verano)» ya no describían los
+    # meses marcados. Se sustituyen por los meses reales, que además es como
+    # está redactado 08!«Temporadas Pescado España».
     ('Besugo, merluza, rape (invierno)',
-     'Besugo, merluza, rape, vieira y lubina salvaje (invierno)',
+     'Besugo, merluza, rape, vieira y lubina salvaje (nov-mar)',
      ['Ene', 'Feb', 'Mar', 'Nov', 'Dic']),
     ('Bonito, sardina, boqueron (primavera)',
-     'Atún rojo de almadraba, sepia y boquerón (primavera)',
+     'Atún rojo de almadraba, sepia y boquerón (abr-jun)',
      ['Abr', 'May', 'Jun']),
     ('Atun rojo, gamba roja (verano)',
-     'Bonito del norte, sardina, pez espada y gamba roja (verano)',
+     'Bonito del norte, sardina, pez espada y gamba roja (jun-oct)',
      ['Jun', 'Jul', 'Ago', 'Sep', 'Oct']),
     ('Lubina, langostino, calamar (otono)',
-     'Gamba, langostino y calamar (otoño)', ['Sep', 'Oct', 'Nov']),
+     'Gamba, langostino y calamar (sep-nov)', ['Sep', 'Oct', 'Nov']),
     ('Halloween / otono tematico',
      'Cenas de empresa y comidas de Navidad (captación en octubre)',
      ['Oct', 'Nov', 'Dic']),
@@ -1799,7 +2226,11 @@ CAL_TEXTOS = [
     ('Renovar registro sanitario',
      'Revisar los datos del RGSEAA y comunicar modificaciones o cese '
      '(no se renueva)', ['Ene']),
-    ('Auditar registros APPCC anual', CAL_APPCC, ['Jun', 'Dic']),
+    # RD-16 / RC-32 — la fila se titulaba «anual» y llevaba DOS marcas (junio
+    # y diciembre): o es semestral y el rótulo miente, o sobra una marca. Se
+    # deja una sola, en el cierre de año, y así deja de contradecir a
+    # 07!«Tareas Mensuales»!B23, que la llama «la auditoría anual completa».
+    ('Auditar registros APPCC anual', CAL_APPCC, ['Dic']),
 ]
 #: DOM-19 / DOM-20 / COM-08 / COM-09 / §2.2 — lo que la landing promete y el
 #: calendario no tenía: festivos asiáticos en plural, cierres por vacaciones y
