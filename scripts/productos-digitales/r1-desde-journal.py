@@ -24,8 +24,18 @@ def main():
         if 'ficheros' in r:
             inv = r
         elif 'lente' in r and 'hallazgos' in r:
-            L = r['lente'].upper()
-            k = 'excel' if ('TÉCNICA EXCEL' in L or 'TECNICA EXCEL' in L) else ('coherencia' if 'COHERENCIA' in L else 'dominio')
+            # Clave por PREFIJO mayoritario de los ids (DOM/TEC/COM), no por el texto de la
+            # lente: el 29-ago la lente de dominio de planes decía «coherencia de inversión…»
+            # y pisó a la de coherencia (se perdieron 30 hallazgos COM-*).
+            from collections import Counter
+            pref = Counter(str(h.get('id', ''))[:3].upper() for h in r['hallazgos'])
+            top = pref.most_common(1)[0][0] if pref else ''
+            k = {'DOM': 'dominio', 'TEC': 'excel', 'COM': 'coherencia'}.get(top)
+            if k is None:
+                L = r['lente'].upper()
+                k = 'excel' if ('TÉCNICA EXCEL' in L or 'TECNICA EXCEL' in L) else ('coherencia' if 'COHERENCIA' in L else 'dominio')
+            if k in R:
+                raise SystemExit(f'dos lentes clasificadas como {k!r}: revisar el journal a mano')
             R[k] = r
     out = {'productId': pid, 'familia': familia, 'inventario': inv, 'rondas': {'R1': R}}
     root = os.path.dirname(os.path.abspath(__file__))
