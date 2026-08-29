@@ -35,7 +35,7 @@ representante entero (motor + grupos + 3 refutadores + corrección + ronda 2 + c
 ### Construido en disco y SIN aplicar (lo que quedó al parar)
 | Producto | Familia | Qué hay | Qué falta |
 |---|---|---|---|
-| guia-restaurante-gastronomico (documentos) | guías | workflow `wf_ad6ce831-8dd` en curso el 29-ago (documentos.py + guion + PDF/docx) | crítico → copiar 4 ficheros a `dl/` → LIVE |
+| guia-restaurante-gastronomico (documentos) | guías | `documentos.py` + `guion_…py` + **PDF 119 págs / 62.904 palabras / 32 tablas + 2 bonus docx** generados en `guias-v2_0/build/guia-restaurante-gastronomico/` (fuera de `dl/`); 2 refutadores «no listo» (`auditorias/guias-v2-doc-ref-{dominio,tecnico}.json`) | corrector (opus, 1 pasada sobre los hallazgos) → crítico → copiar 4 ficheros a `dl/` con los mismos nombres → censo/gate/no-latinos → LIVE → landing con «119 páginas» medidas |
 | plan-negocio-cafeteria | planes A | `contenido_plan_negocio_cafeteria/a.py` + refutación (24 hallazgos / 8 altas) | fixes sonnet → dry-run 13/13 → APPLY |
 | plan-negocio-tapas-bar | planes A | contenido + refutación (25 / 9 altas) | idem |
 | plan-negocio-panaderia | planes A | contenido + refutación (18 / 6 altas) | idem |

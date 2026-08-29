@@ -67,8 +67,23 @@ def main():
     ap.add_argument('--json')
     a = ap.parse_args()
     base = a.only if a.only and os.path.isdir(a.only) else os.path.join(ROOT, a.only) if a.only else ROOT
+    # RC-23 — con `--only sushi-bar` (en vez de `--only kit-tareas-sushi-bar`)
+    # el script apuntaba a una carpeta INEXISTENTE, no avisaba, imprimía
+    # «0 ficheros escaneados · 0 con no-latinos» y devolvía exit 0. Un gate que
+    # da verde sobre una ruta vacía es el mismo punto ciego que costó el
+    # incidente del eBook: se comprueba que la carpeta existe y que ha
+    # escaneado algo, y si no, se aborta con código propio (2).
+    if not os.path.isdir(base):
+        print(f'ABORTADO: no existe la carpeta «{base}»', file=sys.stderr)
+        return 2
     hits = {}
     files = sorted(glob.glob(os.path.join(base, '**', '*.*'), recursive=True))
+    escaneables = [f for f in files
+                   if f.rsplit('.', 1)[-1].lower() in ('docx', 'xlsx', 'pdf')]
+    if not escaneables:
+        print(f'ABORTADO: 0 ficheros escaneables (.docx/.xlsx/.pdf) en '
+              f'«{base}»', file=sys.stderr)
+        return 2
     for f in files:
         ext = f.rsplit('.', 1)[-1].lower()
         fn = {'docx': scan_docx, 'xlsx': scan_xlsx, 'pdf': scan_pdf}.get(ext)
@@ -85,9 +100,12 @@ def main():
         print(f'\n== {f} ({len(v)})')
         for parte, ctx in v[:8]:
             print(f'   {parte} | {ctx}')
-    print(f'\n{len(files)} ficheros escaneados · {len(hits)} con no-latinos · {total} caracteres')
+    print(f'\n{len(escaneables)} ficheros escaneados · {len(hits)} con '
+          f'no-latinos · {total} caracteres')
     if a.json:
-        json.dump({'ficheros': len(files), 'hits': hits}, open(a.json, 'w'), ensure_ascii=False, indent=1)
+        json.dump({'carpeta': base, 'ficheros': len(escaneables),
+                   'hits': hits}, open(a.json, 'w'), ensure_ascii=False,
+                  indent=1)
     return 1 if hits else 0
 
 

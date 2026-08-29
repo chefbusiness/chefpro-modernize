@@ -567,3 +567,7 @@ japonés parcial). Todo lo construido está en disco y commiteado. **Se deja ter
 **Fuente de verdad del ritmo: `scripts/productos-digitales/CALENDARIO-V2-SEMANAL.md`** (estado exacto, 17 semanas, protocolo por sesión, presupuesto por
 semana, micro-proyecto de 5 productos nuevos intercalado: Guía Food Cost + Ingeniería de Menú → Manual del Manager → Manual del Chef Ejecutivo →
 Pastelería → Chocolatería). Memoria: `feedback_presupuesto-tokens-un-producto-por-semana`.
+**17:25 — cierre real.** Workflow de documentos DETENIDO en la fase de corrección (John: agentes 7,5 h). Guardado en `ca65987`: `documentos.py`, guion,
+PDF de 119 páginas (62.904 palabras, 32 tablas, A4, author OK, cifras vs xlsx en verde), 2 bonus docx, capítulos .md, y los 2 informes de refutación
+(«no listo» ×2). Semana 1 = corrector + crítico + copia a `dl/`. Capa de producto de sushi-bar (cambios del corrector CB) REVERTIDA: describía la v2.0
+antes del APPLY. `gate-no-latinos.py` gana el abort por carpeta inexistente (RC-23 del CB). Sesión cerrada con el árbol limpio.
