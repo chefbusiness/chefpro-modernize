@@ -965,6 +965,157 @@ def gate_contadores(carpeta, nombres):
     return {'con_contador': con, 'sin_contador': sin}
 
 
+def gate_limite_unico(carpeta, nombres, equipos):
+    """§1.3 `limite_unico` — un solo rango por equipo en TODO el kit.
+
+    §7-bis.23: **aborta**. «Un PCC con dos límites es exactamente el defecto
+    que se viene a arreglar»; en la R1 del representante había dos equipos con
+    dos rangos (`cámara de pescado crudo`: −2 a 0 frente a 0-2; `congelación
+    anisakis`: −20 frente a −18) y el registro que se enseña a Sanidad los
+    llevaba impresos a la vez.
+
+    La tabla de equipos la trae el módulo de contenido del kit
+    (`EQUIPOS_LIMITE`), no el motor: los diez kits LIVE de la familia no tienen
+    esa tabla y por tanto NO ven este gate. Un gate de familia que adivinase el
+    equipo a partir del texto habría puesto en rojo a cafetería y a hotel sin
+    que nadie hubiera revisado su vocabulario.
+    """
+    if not equipos:
+        return {'aplica': False, 'equipos': {}, 'conflictos': []}
+    rxs = [(nombre, re.compile(rx)) for nombre, rx in equipos]
+    vistos = {nombre: {} for nombre, _ in equipos}
+    for n in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, n))
+        for ws in wb.worksheets:
+            for row in ws.iter_rows():
+                for c in row:
+                    if not isinstance(c.value, str):
+                        continue
+                    rango = motor.rango_de_texto(c.value)
+                    if rango is None:
+                        continue
+                    for nombre, rx in rxs:
+                        if not rx.search(c.value):
+                            continue
+                        vistos[nombre].setdefault(rango, []).append(
+                            f'{n}!{ws.title}!{c.coordinate}')
+                        break        # el equipo MÁS específico gana
+    conflictos = []
+    for nombre, rangos in vistos.items():
+        if len(rangos) > 1:
+            detalle = ' · '.join(
+                f'{r} en {v[0]}' + (f' (+{len(v) - 1})' if len(v) > 1 else '')
+                for r, v in sorted(rangos.items(),
+                                   key=lambda kv: str(kv[0])))
+            conflictos.append(f'límite doble en «{nombre}»: {detalle}')
+    return {'aplica': True,
+            'equipos': {k: {str(r): v for r, v in sorted(
+                d.items(), key=lambda kv: str(kv[0]))}
+                for k, d in vistos.items()},
+            'conflictos': conflictos}
+
+
+def gate_promesas(carpeta, nombres, promesas):
+    """§1.3 `promesas` — cada término de la landing, vivo en el corpus.
+
+    La R1 del representante encontró once promesas del grid, del CTA y de los
+    bonus que ningún fichero cumplía (delivery, reporting, comparativa de
+    proveedores, maki, arqueo, cierres por vacaciones, alérgenos dentro del
+    03…). Cada entrada dice DÓNDE tiene que aparecer el término y de qué línea
+    de la landing sale, para que la capa de producto (T5) no tenga que
+    adivinarlo. Como `limite_unico`, sólo corre si el módulo de contenido del
+    kit trae la tabla.
+    """
+    if not promesas:
+        return {'aplica': False, 'terminos': [], 'ausentes': []}
+    corpus = {}
+    for n in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, n))
+        textos = []
+        for ws in wb.worksheets:
+            for row in ws.iter_rows():
+                for c in row:
+                    if isinstance(c.value, str):
+                        textos.append((ws.title, c.coordinate, c.value))
+        corpus[n] = textos
+    filas, ausentes = [], []
+    for p in promesas:
+        rx = re.compile(p['rx'])
+        alcance = [p['fichero']] if p.get('fichero') else list(corpus)
+        hits = [f'{n}!{h}!{coord}' for n in alcance
+                for h, coord, v in corpus.get(n, []) if rx.search(v)]
+        minimo = p.get('minimo', 1)
+        ok = len(set(hits)) >= minimo
+        filas.append({'termino': p['termino'], 'origen': p['origen'],
+                      'fichero': p.get('fichero'), 'minimo': minimo,
+                      'apariciones': len(hits), 'donde': hits[:4], 'ok': ok})
+        if not ok:
+            ausentes.append(
+                f"promesa sin respaldo: «{p['termino']}» ({p['origen']}) — "
+                f"{len(hits)} apariciones en "
+                f"{p.get('fichero') or 'el corpus'}, se exigen {minimo}")
+    return {'aplica': True, 'terminos': filas, 'ausentes': ausentes}
+
+
+def demo_plantilla_09(carpeta, demos, cfg):
+    """CB-E2 — la plantilla en blanco con 8 tareas escritas dice «3 de 8».
+
+    El contador que CB-E2 CREA sólo vale si cuenta lo que el cliente escriba:
+    la hoja se entrega vacía, así que la demostración la rellena. Se apoya en
+    la misma propiedad que las Instrucciones prometen —«el denominador cuenta
+    las tareas escritas en la columna Tarea, no un número fijo»— y en que las
+    marcadas N/A salen del total.
+    """
+    if not cfg:
+        return []
+    from pycel import ExcelCompiler
+    fname, hoja = cfg['fichero'], cfg['hoja']
+    ruta = os.path.join(carpeta, fname)
+    if not os.path.isfile(ruta):
+        return []
+    dst = _copia(carpeta, fname, demos, 'plantilla-09')
+    wb = openpyxl.load_workbook(dst)
+    if hoja not in wb.sheetnames:
+        return []
+    ws = wb[hoja]
+    g = motor.geometria(ws)
+    if not g or not g['contador']:
+        return [{'caso': 'contador-plantilla-en-blanco',
+                 'ref': f'{fname}:{hoja}', 'entradas': 'hoja entregada',
+                 'esperado': 'fila de totales creada por CB-E2',
+                 'obtenido': 'la hoja NO tiene contador', 'ok': False,
+                 'copia': dst}]
+    libres = [r for r in range(g['hr'] + 1, g['contador'])
+              if isinstance(ws.cell(row=r, column=1).value, int)
+              and not (isinstance(ws.cell(row=r, column=2).value, str)
+                       and ws.cell(row=r, column=2).value.strip())]
+    n, marcadas = cfg['tareas'], cfg['marcadas']
+    if len(libres) < n:
+        return [{'caso': 'contador-plantilla-en-blanco',
+                 'ref': f'{fname}:{hoja}', 'entradas': f'{n} tareas',
+                 'esperado': f'{n} filas numeradas libres o más',
+                 'obtenido': f'{len(libres)} libres', 'ok': False,
+                 'copia': dst}]
+    for i, r in enumerate(libres[:n]):
+        ws.cell(row=r, column=2).value = f'Tarea propia {i + 1}'
+        ws.cell(row=r, column=g['marca']).value = (
+            motor.MARCA_OK if i < marcadas else None)
+    wb.save(dst)
+    xl = ExcelCompiler(filename=dst)
+    col_num = motor.get_column_letter(g['marca'] - 2)
+    col_den = motor.get_column_letter(g['marca'])
+    num = _ev(xl, f"'{hoja}'!{col_num}{g['contador']}")
+    den = _ev(xl, f"'{hoja}'!{col_den}{g['contador']}")
+    return [{'caso': 'contador-plantilla-en-blanco',
+             'ref': f'{fname}:{hoja}:{col_num}{g["contador"]}/'
+                    f'{col_den}{g["contador"]}',
+             'entradas': f'hoja entregada VACÍA + {n} tareas escritas por el '
+                         f'cliente, {marcadas} marcadas ✓',
+             'esperado': f'{marcadas} de {n}',
+             'obtenido': f'{num} de {den}',
+             'ok': (num, den) == (marcadas, n), 'copia': dst}]
+
+
 def gate_moldes(carpeta, nombres):
     """§1.3 `molde` — cada fichero, clasificado; y cada hoja, con su tipo."""
     por_fichero, sin_clasificar = {}, []
@@ -1283,7 +1434,10 @@ def main():
         demostraciones = (demo_arqueo(carpeta, demos_dir)
                           + demo_contador(carpeta, demos_dir)
                           + demo_07(carpeta, demos_dir)
-                          + demo_p4(carpeta, nombres, demos_dir))
+                          + demo_p4(carpeta, nombres, demos_dir)
+                          + demo_plantilla_09(
+                              carpeta, demos_dir,
+                              getattr(contenido, 'PLANTILLA_09', None)))
     for c in demostraciones:
         log(f"  {c['caso']} · {c['ref']}: {c['obtenido']!r} "
             f"{'OK' if c['ok'] else 'FALLA (esperaba ' + repr(c['esperado']) + ')'}")
@@ -1351,6 +1505,20 @@ def main():
         f"fila de totales, {len(cont['sin_contador'])} sin ella")
     for d in cont['sin_contador']:
         log('    ' + d)
+    lim = gate_limite_unico(carpeta, nombres,
+                            getattr(contenido, 'EQUIPOS_LIMITE', None))
+    if lim['aplica']:
+        log(f"  §7-bis.23 limite_unico: {len(lim['conflictos'])} equipos con "
+            f"más de un rango en el kit (de {len(lim['equipos'])} vigilados)")
+        for d in lim['conflictos']:
+            log('    ' + d)
+    prom = gate_promesas(carpeta, nombres,
+                         getattr(contenido, 'PROMESAS', None))
+    if prom['aplica']:
+        log(f"  §1.3 promesas: {len(prom['ausentes'])} términos de la landing "
+            f"sin respaldo en el corpus (de {len(prom['terminos'])})")
+        for d in prom['ausentes']:
+            log('    ' + d)
     moldes = gate_moldes(carpeta, nombres)
     log(f"  molde: {len(moldes['hojas_sin_molde'])} hojas sin clasificar")
     for d in moldes['hojas_sin_molde'][:10]:
@@ -1387,6 +1555,11 @@ def main():
                for d in orto['lemas_vivos'][:20]]
     # CB-E2 §1.3 — rojo si una hoja de checklist se queda sin contador.
     fallos += cont['sin_contador']
+    # §7-bis.23 — `limite_unico` ABORTA: un PCC con dos límites es el defecto
+    # que esta versión viene a arreglar, no algo que se pueda arrastrar.
+    fallos += lim['conflictos']
+    # §1.3 `promesas` — el copy y el fichero no pueden volver a divergir.
+    fallos += prom['ausentes']
     if cen['exit'] != 0:
         fallos.append('censo-entregables --fail devolvió ' + str(cen['exit']))
     if not args.sin_demos and not demostraciones:
@@ -1422,6 +1595,8 @@ def main():
             'censo_entregables': cen,
             'ortografia': orto,
             'contadores': cont,
+            'limite_unico': lim,
+            'promesas': prom,
             'molde': moldes,
         },
         'demostraciones_spec_6': demostraciones,

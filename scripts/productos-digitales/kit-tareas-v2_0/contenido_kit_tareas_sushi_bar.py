@@ -240,12 +240,22 @@ def _bloque_al_final(ws, titulo, tareas):
     g = motor.geometria(ws)
     if not g:
         raise AnclaPerdida(f'«{ws.title}»: no es un checklist de la familia')
-    idx = g['contador'] or (ws.max_row + 1)
-    est_banda = _estilos(ws, _exige(ws, '  ', 1) if False else g['hr'] + 1)
+    tope = g['contador'] or (ws.max_row + 1)
+    # El bloque va detrás de la última fila CON CONTENIDO, no detrás del
+    # contador: las 5 filas libres de la familia están justo encima de él y
+    # colar el bloque después las dejaba en mitad de la tabla (medido: 7 filas
+    # en blanco entre «CONTROL DE CALIDAD ARROZ» y «SEGUNDO LOTE»). La 2.ª
+    # pasada del motor repone las libres detrás del bloque nuevo.
+    idx = g['hr'] + 1
+    for r in range(g['hr'] + 1, tope):
+        if (motor.es_fila_seccion(ws, r)
+                or (isinstance(ws.cell(row=r, column=2).value, str)
+                    and ws.cell(row=r, column=2).value.strip())):
+            idx = r + 1
     # El estilo de banda se toma de la PRIMERA banda de la hoja, que siempre
     # existe en este kit (todas las hojas de checklist arrancan con una).
     primera = None
-    for r in range(g['hr'] + 1, idx):
+    for r in range(g['hr'] + 1, tope):
         if motor.es_fila_seccion(ws, r):
             primera = r
             break
@@ -558,9 +568,14 @@ HORAS_01_ARROZ = {
     'Cocer arroz': '10:10',
     'Preparar sushi-zu': '10:45',
     'Mezclar arroz cocido con sushi-zu': '10:52',
-    'Verificar pH del arroz': '11:00',
+    'Medir el pH del arroz': '11:00',
     'Cubrir arroz con pa': '11:05',
 }
+#: El arroz arranca antes que el resto de la apertura, así que su hora rompe
+#: la secuencia de la columna. Se dice en la propia tarea para que no parezca
+#: una errata al imprimir.
+ARROCERA = ('Encender arrocera / preparar olla para arroz sushi (el arroz '
+            'arranca a las 09:30, antes que el resto de la apertura)')
 PH_01 = ('Medir el pH del arroz avinagrado con tiras de rango 4,0-5,0 '
          '(resolución 0,2) o pHmetro de punción y anotarlo en «Registro de pH '
          'del Arroz» del fichero 03 — límite crítico ≤4,6')
@@ -599,9 +614,11 @@ def _f01(wb, cambios):
             ws.cell(row=r, column=5).value = hora
             n += 1
     r = _fila(ws, 'Encender arrocera', 2)
-    if r and ws.cell(row=r, column=5).value != '09:30':
-        ws.cell(row=r, column=5).value = '09:30'
-        n += 1
+    if r:
+        ws.cell(row=r, column=2).value = _est_tarea(ARROCERA)
+        if ws.cell(row=r, column=5).value != '09:30':
+            ws.cell(row=r, column=5).value = '09:30'
+            n += 1
     if n:
         cambios.append(f'«Apertura Barra Sushi»: {n} horas del bloque del '
                        'arroz recalculadas y alineadas con 02 (reposo de 30 '
@@ -705,11 +722,15 @@ PH_02 = ('Medir el pH del arroz avinagrado con tiras de rango 4,0-5,0 '
          'en «Registro de pH del Arroz» del fichero 03 — límite crítico ≤4,6')
 #: DOM-21 — «Si pH >4.6: descartar lote» convierte un ajuste de dos minutos en
 #: una pérdida diaria. Escalado de acciones correctoras.
+#: Ojo con la redacción: si la tarea dice «temperatura» y además un verbo de
+#: medida y un equipo de frío, `motor.texto_temperatura` le cuelga
+#: «— anota la lectura: ____ °C», que en una acción correctora de pH no
+#: significa nada. Por eso aquí se habla de «en frío (5 °C o menos)».
 PH_CORRECTORA = ('Si el pH sale >4,6: 1) añadir sushi-zu poco a poco, mezclar '
                  'y volver a medir; 2) si sigue alto tras dos correcciones, '
-                 'no dejarlo a temperatura ambiente: refrigerar a ≤5 °C y '
-                 'usarlo en elaboraciones cocinadas; 3) descartar sólo si no '
-                 'sirve para ningún uso. Anotar la acción tomada')
+                 'no lo dejes en ambiente: guárdalo en frío (5 °C o menos) y '
+                 'úsalo en elaboraciones cocinadas; 3) descarta sólo si no '
+                 'sirve para ningún uso. Anota la acción tomada')
 ACIDIFICACION = ('Anotar el sushi-zu realmente añadido (ml por kg de arroz '
                  'cocido) en «Registro de pH del Arroz»: es la acidificación '
                  'MEDIDA que respalda el pH del lote')
@@ -949,15 +970,25 @@ def _f03(wb, cambios):
                        'reinicio se disparaba a −18 °C y validaba lotes a '
                        '−19 °C que incumplen —20 °C — DOM-02 / COM-16 / '
                        'TEC-11')
-    r = _fila(ws, 'Responsable APPCC:', 2)
+    # El ancla es «Responsable» a secas: `motor.texto_appcc` (con la regla
+    # IDENTIDAD que este módulo le añade) ya ha reescrito esa línea de firma
+    # antes de llegar aquí, así que anclar en el literal viejo se saltaba la
+    # nota en silencio. Medido en el dry-run: la excepción de acuicultura no
+    # llegó a escribirse en la primera versión de este módulo.
+    r = _fila(ws, 'Responsable', 2)
     if r:
+        n_notas = 0
         for texto in (EXCEPCION_ACUICULTURA, FUENTE_ANISAKIS):
             if _fila(ws, texto, 2) is None:
                 motor.insertar_filas(ws, r, 1)
                 ws.cell(row=r, column=2).value = _est_texto(texto)
+                n_notas += 1
                 tocado = True
-        cambios.append(f'«{hoja}»: nota al pie con la excepción de acuicultura '
-                       'y la fuente de la norma — DOM-15 / §2.0')
+        if n_notas:
+            cambios.append(f'«{hoja}»: {n_notas} notas al pie con la excepción '
+                           'de acuicultura del Rgto. (UE) 1276/2011 y la '
+                           'fuente de la norma, inmediatamente debajo del '
+                           'bloque — DOM-15 / §2.0')
 
     # --- Temperaturas Diario ----------------------------------------------
     ws = wb['Temperaturas Diario']
@@ -1005,7 +1036,7 @@ def _f03(wb, cambios):
             'Matriz de Alérgenos por Plato — Sushi Bar',
             'Carta vigente desde: ___/___/______    Revisada por: __________',
             ['#', 'Plato o elaboración'] + ALERGENOS_14
-            + ['Contaminación cruzada (indicar)', 'Revisado por (firma)'],
+            + ['Contaminación cruzada (indicar)', 'Firma del revisor'],
             18,
             ['Marca con una X la casilla del alérgeno que el plato CONTIENE. '
              'En «contaminación cruzada» anota el alérgeno que puede llegar '
@@ -1128,6 +1159,12 @@ DOS_HORAS_04 = ('Descartar las piezas que hayan estado más de 2 h FUERA de '
 MAKISU_04 = ('Preparar makisu (esterillas de bambú) nuevos con film '
              'transparente')
 MAKISU_04B = ('Renovar el film transparente de los makisu cada 2 horas')
+#: gate `limite_unico` — «Verificar temperatura vitrina cada hora» no llevaba
+#: cifra, así que `motor.texto_temperatura` le colgaba el objetivo GENÉRICO de
+#: frío «(refrigeración 0-4 °C)» y la vitrina acababa con dos rangos en el kit:
+#: 2-4 °C en 01 y en 04!B7, y 0-4 °C aquí. La tarea declara el suyo.
+VITRINA_HORA = ('Verificar la temperatura de la vitrina cada hora (2-4 °C) — '
+                'anota la lectura: ____ °C')
 
 
 def _f04(wb, cambios):
@@ -1153,6 +1190,12 @@ def _f04(wb, cambios):
     if _sustituir(ws, 'Renovar plastic wrap de bamboo mats', MAKISU_04B):
         cambios.append('«Mise en Place Barra»: makisu y film transparente '
                        '(renovación cada 2 h) — DOM-29')
+    if _sustituir(ws, 'Verificar temperatura vitrina cada hora', VITRINA_HORA):
+        cambios.append('«Mise en Place Barra»: la verificación horaria de la '
+                       'vitrina declara SU rango (2-4 °C); sin cifra propia '
+                       'el motor le colgaba el objetivo genérico de frío '
+                       '(0-4 °C) y la vitrina quedaba con dos límites — '
+                       'DOM-12 / gate limite_unico')
     motor.renumerar(ws)
     return False
 
@@ -1662,11 +1705,11 @@ CAL_NUEVAS = [
      'Ano Nuevo japones'),
     ('Planificar las vacaciones del equipo', ['Mar'], 'Ano Nuevo japones'),
     ('Revisión anual del sistema de frío por empresa frigorista', ['Mar'],
-     'Calibracion termometros'),
+     'Calibración de termómetros'),
     ('Revisión anual de extintores por empresa autorizada y retimbrado a los '
-     '5 años (RD 513/2017)', ['Jun'], 'Calibracion termometros'),
+     '5 años (RD 513/2017)', ['Jun'], 'Calibración de termómetros'),
     ('DDD (desinsectación y desratización) por empresa autorizada, con '
-     'certificado', ['Mar', 'Sep'], 'Calibracion termometros'),
+     'certificado', ['Mar', 'Sep'], 'Calibración de termómetros'),
     ('Formación de manipuladores de alimentos', ['Feb', 'Sep'],
      'Formacion seguridad alimentaria'),
 ]
