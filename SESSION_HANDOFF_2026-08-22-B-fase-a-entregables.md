@@ -477,3 +477,7 @@ Google use el `Product` de cada una (sus estrellas 4,9 y su precio real). Hecho 
 `SoftwareApplication`; Organization y WebSite siguen) + `omitGlobalApp` en los 44 wrappers de `astro-site/src/pages/` (42 de las 4 plantillas + mega-pack +
 pro-prompts-ebook). Verificación por curl tras el deploy: landings con 0 SoftwareApplication y 1 AggregateRating; home/precios/blog con el global intacto.
 `Pricing.astro` (planes del SaaS) no se toca.
+**VERIFICADO LIVE (deploy `e78e917` ready 05:22):** /kit-tareas-hotel, /kit-tareas, /guia-restaurante-gastronomico, /plan-negocio-cafeteria,
+/pro-prompts-ebook, /kit-plan-financiero → 0 SoftwareApplication · 1 AggregateRating (el propio) · sólo el precio del producto (18,50 / 14 / 85 / 29 / 9 / 39 €);
+/mega-pack-tareas → 0 y 0 (su Product no lleva rating, como antes). Home, /precios, /blog, /en/pricing → SoftwareApplication intacto. Google tardará
+en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debería pasar de «4,8 (9.122) · 95 €» a «4,9 (N) · 18,50 €»).
