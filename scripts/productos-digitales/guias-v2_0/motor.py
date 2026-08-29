@@ -690,6 +690,29 @@ RX_RECUENTO = re.compile(
 RX_IMPORTE = re.compile(r'\(\s*€\s*\)|\b€\b|\(eur\)', re.I)
 
 
+def fijar_formato(ws, coord, fmt):
+    """§1.4 — CLAVA el formato de una celda concreta frente a la regla de
+    columna. Mismo canal que `_g_editables`/`_g_negativos`: el grupo marca por
+    ROL y `cerrar()` lo respeta.
+
+    Nace de un caso medido: `plan-financiero-3-anos!'P&L Mensual'!B35`
+    («Margen EBITDA») es un RATIO dentro de una columna cuya cabecera dice
+    `Importe (€)`. La pasada (a) de `formato_por_etiqueta` aplica el tipo de la
+    cabecera a toda la columna, así que sin este pin el motor devolvería B35 a
+    `#,##0.00 €` justo después de que el grupo lo pusiera en `0.0%`, y el
+    cliente seguiría leyendo «0,19 €» donde pone 18,6 % (TEC-09). Igual pasa
+    con la celda de meses del fondo de maniobra en `Inversión`, cuya columna C
+    se rotula `Presupuesto (€)`.
+    """
+    fijados = getattr(ws, '_g_formatos', None)
+    if fijados is None:
+        fijados = {}
+        ws._g_formatos = fijados
+    fijados[coord] = fmt
+    ws[coord].number_format = fmt
+    return coord
+
+
 def tipo_por_etiqueta(texto):
     """Devuelve el formato que la etiqueta IMPONE, o `None` si no lo dice.
 
@@ -731,6 +754,8 @@ def formato_ficha(ws, informe=None, fname='', ultima=5):
         for c in range(2, min(ultima, ws.max_column) + 1):
             cel = ws.cell(row=r, column=c)
             if cel.__class__.__name__ == 'MergedCell':
+                continue
+            if cel.coordinate in getattr(ws, '_g_formatos', {}):
                 continue
             if isinstance(cel.value, str):
                 continue
@@ -779,6 +804,8 @@ def formato_por_etiqueta(ws, fila_cab, informe=None, fname=''):
             cel = ws.cell(row=r, column=c)
             if cel.__class__.__name__ == 'MergedCell':
                 continue
+            if cel.coordinate in getattr(ws, '_g_formatos', {}):
+                continue
             if cel.number_format != fmt:
                 detalle.append(cel.coordinate + ':' + cel.number_format
                                + '→' + fmt + ' [col ' + str(cab.get(c)) + ']')
@@ -800,6 +827,8 @@ def formato_por_etiqueta(ws, fila_cab, informe=None, fname=''):
             for c in columnas_libres:
                 cel = ws.cell(row=r, column=c)
                 if cel.__class__.__name__ == 'MergedCell':
+                    continue
+                if cel.coordinate in getattr(ws, '_g_formatos', {}):
                     continue
                 if cel.number_format != fmt:
                     detalle.append(cel.coordinate + ':' + cel.number_format
