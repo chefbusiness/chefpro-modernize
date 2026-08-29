@@ -725,9 +725,17 @@ def dec1(refcelda):
 #: Paréntesis que sólo contienen un parámetro numérico: se van del rótulo
 #: porque mienten en cuanto se toca la celda (§7-bis.11). El dato vuelve en la
 #: columna de notas, generado con `TEXT()`.
+#: ⚠️ REF-06 (`auditorias/planes-v2-hermano-plan-negocio-tapas-bar-ref.json`,
+#: 2026-08-29): la unidad `%` es un carácter NO-word y el paréntesis de cierre
+#: `)` también, así que `\b` entre los dos NUNCA casa (no-word → no-word no es
+#: frontera de palabra) — «Imprevistos (8%)» sobrevivía intacto y la regla
+#: `INVERSION['imprevistos'] = ('suprimir', …)` no encontraba su clave porque
+#: `motor.norm(rot)` seguía trayendo el paréntesis. El `\b` sólo hace falta
+#: DETRÁS de las alternativas que son letras (`años`/`meses`/`mes`); en `%` se
+#: quita.
 RX_PARENTESIS_NUM = re.compile(
     r'\s*\((?:incl\.?\s*)?[^()]*?\d+(?:[.,]\d+)?\s*'
-    r'(?:%|a[ñn]os?|meses|mes)\b[^()]*\)', re.I)
+    r'(?:%|a[ñn]os?\b|meses\b|mes\b)[^()]*\)', re.I)
 
 
 def _limpiar_rotulo(rotulo):
@@ -3478,11 +3486,21 @@ class Plan(object):
         altas = [a for a in altas if motor.norm(a[2]) not in existentes]
         if not altas:
             return 0
-        # última fila con contenido en la columna de tarea
+        # última fila con contenido en la columna de tarea, SIN contar el pie
+        # «Tareas completadas: X de Y» (REF-04/REF-05,
+        # `auditorias/planes-v2-hermano-plan-negocio-tapas-bar-ref.json`,
+        # 2026-08-29): si el pie queda dentro de `ultima`, las altas se
+        # insertan DEBAJO de él —sin su propia casilla— y el rango
+        # `letra_ok+r0:letra_ok+r1` de `motor.checklist_ok_y_contador` (que sí
+        # excluye el pie de `filas`, pero no del RANGO r0:r1) pasa a contar la
+        # etiqueta del pie como si fuera una tarea más. Misma exclusión
+        # ('completad' en el rótulo normalizado) que usa el motor, para que
+        # los dos lean el mismo pie.
         ultima = cab
         for r in range(cab + 1, ws.max_row + 1):
-            if isinstance(ws.cell(row=r, column=col_tarea).value, str) \
-                    and ws.cell(row=r, column=col_tarea).value.strip():
+            v = ws.cell(row=r, column=col_tarea).value
+            if isinstance(v, str) and v.strip() \
+                    and 'completad' not in motor.norm(v):
                 ultima = r
         # RD-28 / RC-12 — la fase que hay que dejar la ÚLTIMA (los primeros
         # 90 días de operación) se captura, se vacía y se reescribe DESPUÉS

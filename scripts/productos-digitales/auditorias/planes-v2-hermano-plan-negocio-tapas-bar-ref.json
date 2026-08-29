@@ -1,0 +1,190 @@
+{
+  "pid": "plan-negocio-tapas-bar",
+  "rol": "REFUTADOR (analista de riesgos + tecnica excel)",
+  "fecha": "2026-08-29",
+  "listo": false,
+  "copia_auditada": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/r-plan-negocio-tapas-bar/dryrun/plan-negocio-tapas-bar",
+  "dryrun_propio": {
+    "exit": 0,
+    "gates_medibles": "13/13 a 0 (los mismos que declara el constructor)",
+    "nota": "el dry-run sale VERDE y aun asi el entregable tiene 3 celdas ROJAS de semaforo en el caso base, una referencia de formato condicional a una hoja inexistente y 22 erratas de tilde/enye. Los gates de la tanda no miden nada de eso."
+  },
+  "motivo": "Refutado. El caso base NO cumple su propio semaforo: la hoja Personal entrega 3 sueldos en ROJO por debajo del SMI (dos de ellos a jornada COMPLETA, que es ilegal) y la cobertura de horas en AMBAR (93,4 %); la Tesoreria entrega la estacionalidad en ROJO (102 % cuando su propia etiqueta y su CF exigen 100 %). Ademas hay un defecto tecnico que Excel puede senalar al abrir (formato condicional de Escenarios apuntando a 'PyG 3 Anos', hoja que el motor renombro a 'PyG 3 Anos' con enye), la supresion de imprevistos declarada por el modulo NO se ejecuto (doble colchon de 18.850 EUR) por un bug de regex en grupo_a.py, las 10 altas del checklist se escriben DEBAJO de la fila de totales y SIN casilla, y sobreviven 22 palabras sin tilde/enye con el gate de ortografia en 0. Los cinco ratios verdes que exhibe el constructor son ciertos pero son 5 de los 9 semaforos del libro.",
+  "hallazgos": [
+    {
+      "id": "REF-01",
+      "severidad": "alta",
+      "celda": "plan-financiero-tapas-bar.xlsx!Personal!D5, D7, D11 (CF D5:D11)",
+      "hallazgo": "Tres de los siete puestos quedan en ROJO en el semaforo salarial del propio libro, y dos de ellos son de JORNADA COMPLETA (C=1), lo que ademas es ilegal. Regla CF leida del fichero: AND(ISNUMBER(D5), IFERROR(D5/B5,0)*'0. Supuestos'!$B$21 < MAX('0. Supuestos'!$B$22,'0. Supuestos'!$B$68)*C5). Con B21=14 pagas y B22=17.094 EUR (SMI): D5=1.150 -> 16.100 EUR/ano < 17.094 (94,2 % del SMI, jornada 1,0); D7=1.050 -> 14.700 EUR < 17.094 (86,0 %, jornada 1,0); D11=90 -> 1.260 EUR < 17.094*0,08=1.367,52 (92,1 %). El caso base publica una nomina por debajo del suelo legal: un banco o una gestoria lo tumba en la primera lectura, y el propio libro lo pinta en rojo.",
+      "fix": "Subir en contenido_plan_negocio_tapas_bar/a.py PLANTILLA: 'Propietario/a y encargado/a de sala' de 1150 a >=1225 EUR/mes, 'Camarero/a de barra (turno fuerte)' de 1050 a >=1225 y 'Suplencias de vacaciones y descansos' de 90 a >=100 (o bajar su jornada a 0,07). Con 1225+1350+1225+550+400+200+100 = 5.050 EUR/mes el coste ano 1 sube a ~94.031 EUR = 34,8 % de las ventas, todavia por debajo del techo 36 % de r_personal, y los tres rojos desaparecen. Verificar despues Personal!D5:D11 sin ninguna celda roja y PyG!B53 <= 0,36."
+    },
+    {
+      "id": "REF-02",
+      "severidad": "alta",
+      "celda": "plan-financiero-tapas-bar.xlsx!Escenarios (formato condicional de B23:D23)",
+      "hallazgo": "Las dos reglas de formato condicional de Escenarios!B23:D23 apuntan a una hoja que NO EXISTE en el libro entregado: \"AND(ISNUMBER(B23),B23>'PyG 3 Anos'!$E$53)\" y \"AND(ISNUMBER(B23),B23<='PyG 3 Anos'!$E$53)\". Las hojas del fichero son ['0. Supuestos','Inversion Inicial','PyG 3 Anos' CON ENYE,'Punto Equilibrio','Escenarios','Personal','Instrucciones','Tesoreria 12 meses','Financiacion']. Es la CF heredada de la v1.1: openpyxl no reescribe las formulas de CF cuando el motor renombra la hoja. Resultado: el semaforo de 'Coste de personal / Ventas' de los tres escenarios esta MUERTO (y en el escenario pesimista vale 53,1 %, que es justo el numero que ese semaforo tenia que pintar en rojo). Los gates 'referencias: 0' y 'cf_desanclado: 0' del dry-run dieron verde: solo miran las formulas de celda, no las de CF ni las de DV.",
+      "fix": "En el motor, al renombrar hojas, reescribir tambien las formulas de ws.conditional_formatting y de ws.data_validations (mapa nombre_viejo -> nombre_nuevo con comillas simples). Y ampliar el gate 'cf_desanclado'/'referencias' para que barra r.formula de cada regla de CF y dv.formula1 de cada DV, no solo cell.value. Barrido de comprobacion: el script de scan que ya deja este informe (busca \"'([^']+)'!\" en formulas, CF y DV y lo cruza contra wb.sheetnames)."
+    },
+    {
+      "id": "REF-03",
+      "severidad": "alta",
+      "celda": "plan-financiero-tapas-bar.xlsx!'Tesoreria 12 meses'!N5 = 1,0199999999999998",
+      "hallazgo": "La estacionalidad NO suma 100 %: suma 102 %. La fila se rotula 'Estacionalidad del mes (suma 100 %)', su nota O5 dice 'Tiene que sumar 100 %' y su formato condicional es AND(ISNUMBER(N5),N5<>1) -> ROJO. El caso base se entrega, por tanto, con esa celda en ROJO. Viene de ESTACIONALIDAD en contenido_plan_negocio_tapas_bar/a.py, cuyo propio comentario dice '(suma 1)': (0.065,0.070,0.080,0.082,0.088,0.095,0.100,0.095,0.085,0.082,0.078,0.100) = 1,020. El P&L no se descuadra porque la fila 7 normaliza (B5*B6/SUMPRODUCT(...)), pero el comprador ve un rojo y una contradiccion en la primera hoja que mira un banco.",
+      "fix": "Reajustar ESTACIONALIDAD a suma exacta 1,000 conservando el perfil (verano/diciembre fuertes, enero flojo): p. ej. (0.064,0.068,0.078,0.080,0.086,0.093,0.098,0.093,0.083,0.080,0.077,0.100) = 1,000. Anadir al motor un gate que exija SUM(estacionalidad)==1 antes de escribir la fila (hoy no existe: el dry-run dio 13/13 verde con 102 %)."
+    },
+    {
+      "id": "REF-04",
+      "severidad": "alta",
+      "celda": "checklist-apertura-tapas-bar.xlsx!'F1 - Constitucion'!A16:A17, 'F2 - Local'!A16:A19, 'F4 - Personal'!A17:A18, 'F5 - Marketing'!A19:A20",
+      "hallazgo": "Las 10 altas de CHECKLIST['altas'] se escriben DEBAJO de la fila 'Tareas completadas:' y SIN la casilla en la columna A. En F1 la fila 15 es el total y las altas van en 16-17 con A16 y A17 VACIAS (la DV \"si,no,N/A\" si las cubre, pero no hay ningun caracter de casilla que marcar). Idem F2 (total en 15, altas en 16-19), F4 (total en 16, altas en 17-18) y F5 (total en 18, altas en 19-20). Solo F3 y F6 quedan bien porque no reciben altas. El comprador ve un bloque de tramites legales (RGPD, Veri*factu, residuos, DDD, registro horario, SGAE) colgando por debajo del pie de la tabla y sin casilla.",
+      "fix": "En grupo_a.checklist(): localizar la fila de totales por su rotulo ('Tareas completadas') ANTES de insertar, hacer ws.insert_rows() por encima de ella (o mover el bloque de totales hacia abajo tras insertar) y escribir el caracter de casilla en la columna A de cada alta, igual que hacen las filas heredadas. Verificacion: en las 6 hojas, la fila de totales tiene que ser la ultima fila con contenido y toda fila con texto en B tiene que tener casilla en A."
+    },
+    {
+      "id": "REF-05",
+      "severidad": "alta",
+      "celda": "checklist-apertura-tapas-bar.xlsx!'F1 - Constitucion'!E15 = 12 (idem F2!E15=14, F4!E16=13, F5!E18=15)",
+      "hallazgo": "El denominador del contador cuenta la propia fila de totales como si fuese una tarea, porque el rango la incluye: E15 = COUNTIF(B5:B17,\"?*\")-COUNTIF(A5:A17,\"N/A\") y B15 = 'Tareas completadas:'. F1 tiene 11 tareas reales (9 heredadas + 2 altas) y publica 12; F2 tiene 13 y publica 14; F4 tiene 12 y publica 13; F5 tiene 14 y publica 15. Suma visible del libro = 12+14+13+13+15+10 = 77 frente a los 73 items con desplegable que mide el constructor. Efecto colateral: el comprador nunca podra llegar a 'completadas = de', porque hay 4 filas que no son marcables. Es consecuencia directa de REF-04 (el total quedo en medio del rango).",
+      "fix": "Recolocar la fila de totales al final (REF-04) y recalcular los rangos de C y E para que empiecen en 5 y terminen en la ultima fila de items, sin incluir la fila de totales. Comprobar despues que E de cada hoja coincide con el numero de celdas de columna A que tienen la DV de casilla."
+    },
+    {
+      "id": "REF-06",
+      "severidad": "alta",
+      "celda": "plan-financiero-tapas-bar.xlsx!'Inversion Inicial'!A24 = 'Imprevistos (8%)' B24 = 8.500 EUR  +  A28 = 'Imprevistos de obra y acondicionamiento' B28 = 10.350 EUR",
+      "hallazgo": "COLCHON DUPLICADO. contenido_plan_negocio_tapas_bar/a.py declara INVERSION['imprevistos'] = ('suprimir', 'RD-02 ... el 8 % tecleado a mano se SUSTITUYE por la fila Imprevistos de obra ...') y la supresion NUNCA SE EJECUTA: las dos filas conviven, 18.850 EUR de imprevistos sobre 103.500 EUR de partidas = 18,2 %. Causa raiz localizada y reproducida: grupo_a.py:728-730, RX_PARENTESIS_NUM termina en (?:%|a[nn]os?|meses|mes)\\b y el \\b detras de '%' NO casa cuando el siguiente caracter es ')', porque ni '%' ni ')' son caracteres de palabra. Verificado: _limpiar_rotulo('Imprevistos (8%)') -> ('Imprevistos (8%)', False), mientras _limpiar_rotulo('Amortizacion (10 anos)') -> ('Amortizacion', True). Al no limpiarse el rotulo, motor.norm() devuelve 'imprevistos (8%)' y la clave 'imprevistos' de las reglas no encuentra a nadie. Peor: B28 = ROUND(SUM(B7:B25)*Supuestos!B55,0) suma B24, es decir, calcula imprevistos SOBRE los imprevistos. Esto infla la inversion, la necesidad de caja (184.937,45 EUR) y el prestamo (140.000 EUR) que el plan pide al banco.",
+      "fix": "1) Corregir RX_PARENTESIS_NUM: sustituir '\\b' por '(?=[^\\w]|$)' o simplemente quitar el \\b tras el grupo de unidades y anclar con [^()]*\\). 2) Reejecutar y comprobar que 'Inversion Inicial' ya no tiene la fila 'Imprevistos (8%)'. 3) Acotar la base de B28 a las partidas de obra reales (proyecto tecnico, obra civil, electrica, fontaneria, grifos, decoracion, rotulacion) en vez de SUM(B7:B25), que es lo que dice su propia nota. 4) Anadir gate: ningun rotulo del entregable puede contener un digito seguido de '%' o de 'anos' entre parentesis (hoy 'Imprevistos (8%)' pasa el §7-bis.11 sin ruido)."
+    },
+    {
+      "id": "REF-07",
+      "severidad": "alta",
+      "celda": "plan-financiero-tapas-bar.xlsx!Personal!B25 = 0,9341538461538461 (93,4 %)",
+      "hallazgo": "La cobertura de horas del caso base sale en AMBAR, no en verde: la CF de B25 es verde solo con B25>=1 y ambar entre 0,9 y 1. B23 (horas a cubrir) = B21*B22*Supuestos!B6 = 13*2*300 = 7.800 h; B24 (horas contratadas) = Personal!I12 = 7.286,4 h. Faltan 513,6 h/ano. La nota J25 del propio libro dice: 'Por debajo del 100 % la plantilla no llega a cubrir el horario que declara el plan: o se contrata mas o se recorta el horario'. Es el precio de haber redimensionado la plantilla de 209.174 EUR a 89.189,80 EUR: el coste laboral baja al 33,0 % pero el equipo ya no cubre las 13 h de servicio x 2 personas x 300 dias que el mismo plan declara. El constructor no lo menciona: su lista de 'verdes' son los 5 ratios del P&L, y este semaforo y el de REF-01 viven en la hoja Personal.",
+      "fix": "Cuadrar las dos cosas a la vez con REF-01: al subir los brutos, subir tambien jornada donde falte hora (p. ej. 'Camarero/a de sala y terraza' de 0,45 a 0,60 y 'Ayudante de cocina' de 0,28 a 0,40 -> I12 = 7.286,4 + 0,15*40*46 + 0,12*40*46 = 7.783,2 h, cobertura 99,8 %), o bajar 'Horas de servicio al dia que hay que cubrir' (B21) de 13 a 12 si el horario real del concepto lo permite. Exigir en el gate de la tanda que Personal!B25 >= 1 y que Personal!D5:D11 no tenga ninguna celda roja, no solo los 5 ratios del P&L."
+    },
+    {
+      "id": "REF-08",
+      "severidad": "alta",
+      "celda": "22 celdas; ver detalle. checklist: 'F1'!E11, 'F2'!B7, 'F2'!E7, 'F2'!E8, 'F3'!E12 (x2), 'F3'!B13, 'F4'!E7, 'F5'!E5, 'F5'!E7, 'F5'!C9, 'F5'!E10, 'F5'!E11, 'F5'!E12, 'F6'!E6, 'F6'!B7, 'F6'!E7 (x2). financiero: 'Inversion Inicial'!D10, A14, D15, D20",
+      "hallazgo": "El gate 'ortografia' del dry-run devuelve 0 y en los dos xlsx entregados quedan 22 palabras sin tilde o sin enye, cuatro de ellas en ROTULOS de columna A (visibles siempre): 'Verificar uso urbanistico' (F2!B7), 'Compra equipamiento frio' (F3!B13), 'Analisis tapas mas vendidas...' (F6!B7) y 'Equipamiento frio (camaras, neveras barra)' ('Inversion Inicial'!A14). Las demas: telematicos (F1!E11), urbanistico (F2!E7), mas (F2!E8), 'bano maria' (F3!E12), practica (F4!E7), tipografia (F5!E5), videos (F5!E7), Fotografo (F5!C9), fisica (F5!E10), Rotulo (F5!E11), atras (F5!E12), genero (F6!E6), 'ingenieria de menu' (F6!E7), bano (Inv!D10), frias (Inv!D15), calida (Inv!D20). El modulo de contenido parchea a mano exactamente 4 palabras (musica, Genero, barrileria x2) y deja estas 22, lo que confirma que la via 'una regla por errata' no escala. Refuta ademas los ids TEC-15 y COM-23, que el constructor declara 'no aplica: el lado xlsx (gate ortografia) da 0/0'.",
+      "fix": "Ampliar motor.TILDES con las palabras sueltas (no solo -cion/-sion) y anadir un gate lexico real: comparar cada palabra del entregable contra una lista de pares sin_tilde->con_tilde de terminos frecuentes de hosteleria/administracion (bano, frio/frias/calida, urbanistico, telematico, practica, tipografia, fotografo, fisica, rotulo, atras, video, genero, ingenieria, menu, mas, maria). Es el mismo patron del gate 'valida()' de fase8c-libreria-assemble.py: sin gate automatico, la probabilidad no baja a cero."
+    },
+    {
+      "id": "REF-09",
+      "severidad": "alta",
+      "celda": "checklist-apertura-tapas-bar.xlsx!'F4 - Personal'!E11 = 'Servicio Prevencion Ajeno obligatorio'",
+      "hallazgo": "La correccion legal DOM-26 queda a MEDIAS y la mitad que sobrevive dice lo CONTRARIO de la que se aplico. El reemplazo de C11 si funciono ('SPA' -> 'Titular o servicio ajeno'), pero el de la nota no: el patron declarado es r'Servicio de Prevenci[oo]n Ajeno obligatorio' (con 'de') y el texto real del fichero es 'Servicio Prevencion Ajeno obligatorio' (sin 'de'), asi que no casa. La fila entregada dice literalmente responsable 'Titular o servicio ajeno' y nota 'Servicio Prevencion Ajeno obligatorio' — es decir, sigue afirmando que el SPA es obligatorio, que es justo lo que DOM-26 corrige (art. 30.5 Ley 31/1995 y art. 11 RD 39/1997) y lo que la nota del coste fijo nuevo 'Prevencion de riesgos laborales' del P&L (F34) niega. El mismo modulo ya documenta que los patrones deben anclar contra el texto POSTERIOR al §1 transversal; aqui el fallo no es el §1, es que el patron no coincide con el texto original.",
+      "fix": "Cambiar el patron a r'Servicio (?:de )?Prevenci[oo]n Ajeno obligatorio' en CHECKLIST['reemplazos']. Y anadir al gate de la tanda un contador de reemplazos APLICADOS por regla: hoy una regla que no casa no genera ningun aviso (fallo silencioso), que es exactamente como se perdio esta."
+    },
+    {
+      "id": "REF-10",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!Instrucciones!A7",
+      "hallazgo": "El texto de uso cita cuatro hojas por un nombre que no existe en este libro: 'Solo <<3. Punto de Equilibrio>> se deriva entera ... el escenario pesimista y el optimista en <<4. Escenarios>>, la estacionalidad y la rampa de arranque en <<6. Tesoreria 12 meses>>, y las cuatro fuentes alternativas de financiacion en <<7. Financiacion>>'. Este es un molde A-beta con las hojas SIN numerar: se llaman 'Punto Equilibrio', 'Escenarios', 'Tesoreria 12 meses' y 'Financiacion' (solo '0. Supuestos' lleva numero). El parrafo viene copiado del representante A-alfa, que si las numera. El comprador busca una pestana '3.' que no esta.",
+      "fix": "Componer ese parrafo con los nombres REALES de las hojas (leerlos de wb.sheetnames en grupo_a en vez de escribirlos en el texto), o al menos parametrizarlo en INSTRUCCIONES['uso'] de cada modulo de contenido segun el molde. Comprobar de paso los otros tres hermanos A-beta."
+    },
+    {
+      "id": "REF-11",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!Instrucciones!A9 ('5. ...') seguida de A10 ('7. ...')",
+      "hallazgo": "La lista numerada de 'COMO SE USA ESTE LIBRO' salta del 5 al 7: no hay punto 6. Los puntos 1-5 los emite grupo_a y los 7 y 8 vienen de INSTRUCCIONES['uso'] en contenido_plan_negocio_tapas_bar/a.py, que arranca en '7.'. El punto 6 (probablemente el de la hoja Personal o el de Escenarios del molde A-alfa) se perdio al portar el texto al molde A-beta.",
+      "fix": "Numerar la lista por posicion en grupo_a (enumerate sobre los textos base + los del modulo) en vez de escribir el ordinal dentro de la cadena. Revisar los otros hermanos: cualquiera que herede el mismo INSTRUCCIONES['uso'] arrastra el hueco."
+    },
+    {
+      "id": "REF-12",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!Instrucciones!C35 = '7 puestos (tres a jornada parcial y suplencias) / ~93.000 EUR'  vs  Personal!G12 = 89.189,80 EUR",
+      "hallazgo": "La tabla 'QUE HA CAMBIADO RESPECTO DE LA VERSION 1.1' publica una cifra de plantilla que el modelo no calcula: ~93.000 EUR frente a los 89.189,80 EUR reales de Personal!G12 (y de PyG!B23). Son 3.810 EUR de diferencia, un 4,3 %. Es un numero escrito a mano en RECALIBRADO de contenido_plan_negocio_tapas_bar/a.py que no se recalculo tras el ultimo ajuste de la plantilla. Ademas dice 'tres a jornada parcial' cuando las jornadas < 1 son CUATRO (C8=0,45, C9=0,28, C10=0,15, C11=0,08).",
+      "fix": "Sustituir el literal por una formula que lea Personal!$G$12 (la fila ya admite formula: el resto de la tabla es texto, pero grupo_a puede escribir ='...'&TEXT(Personal!$G$12,\"#.##0\")&' EUR'), o regenerar el literal desde la propia PLANTILLA en el momento de escribir. Corregir 'tres' -> 'cuatro'."
+    },
+    {
+      "id": "REF-13",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!Instrucciones!B60 = '18-30 meses'  vs  Instrucciones!B30 = 'Mas de 3 anos'",
+      "hallazgo": "La MISMA hoja se contradice a dos bloques de distancia: 'CIFRAS DE ESTE PLAN' -> 'Payback del proyecto (anos)' = 'Mas de 3 anos' (lee 'Tesoreria 12 meses'!B31), y 'DATOS DE REFERENCIA DEL SECTOR' -> 'Retorno de la inversion' = '18-30 meses', fuente 'Fichero v1.1'. 18-30 meses es <= 2,5 anos; el modelo dice > 3 anos. La referencia del sector se conservo tal cual de la v1.1 sin contrastarla con el resultado del propio modelo v2.0 (que ahora incluye 39.247 EUR de fondo de maniobra y 21.840 EUR de IVA en la inversion a recuperar: B30 = 184.937,45 EUR).",
+      "fix": "O anotar la referencia con la razon de la diferencia ('la v1.1 medida sobre una inversion de 115.500 EUR sin fondo de maniobra ni IVA; este plan recupera 184.937 EUR'), o retirarla. Anadir al gate de coherencia una comprobacion cruzada entre el bloque de referencias del sector y las cifras calculadas homologas (payback, margen bruto, coste de personal, alquiler)."
+    },
+    {
+      "id": "REF-14",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!'Inversion Inicial'!B33 = 21.840,00 EUR (formula SUMIF($E$7:$E$27,\"Si\",$B$7:$B$27)) y E28 vacia",
+      "hallazgo": "El rango del SUMIF del IVA soportado llega a la fila 27, pero el bloque INVERSION suma hasta la 28 (B6 = SUM(B7:B28)) y la validacion de datos de la columna cubre E7:E30. La fila 28 ('Imprevistos de obra y acondicionamiento', 10.350 EUR) queda FUERA del calculo del IVA y ademas se entrega con la celda E28 en blanco, la unica del bloque sin Si/No. Consecuencia: el IVA soportado de la inversion se infravalora en 10.350 * 21 % = 2.173,50 EUR y, como B34 = B31 + B33, la 'necesidad total de caja al arranque' se publica 2.173,50 EUR por debajo de lo que hace falta poner. Incoherencia adicional: la fila de imprevistos heredada (E24) SI esta marcada 'Si'.",
+      "fix": "Extender el SUMIF y su rango de importes a la ultima fila real del bloque (ws.max_row del bloque, no un 27 fijo) y escribir E28='Si' cuando se crea la fila de imprevistos de obra. Verificar despues que B33 = 24.013,50 EUR y B34 = 187.110,95 EUR, y volver a cuadrar Financiacion!B15 (hoy +62,55 EUR; con el IVA correcto pasaria a -2.110,95 EUR, es decir, el plan quedaria SIN financiar: hay que subir el prestamo)."
+    },
+    {
+      "id": "REF-15",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!Instrucciones!C40 = 'Por formula sobre las partidas de obra del bloque, con el porcentaje en Supuestos'",
+      "hallazgo": "El changelog que lee el comprador afirma un cambio que NO ocurrio. La fila 'Imprevistos de obra' declara v1.1 = '8.500 EUR (8 % tecleado a mano sobre el total)' y v2.0 = 'Por formula...', pero el entregable conserva la fila tecleada de 8.500 EUR ('Inversion Inicial'!A24, ver REF-06) ademas de la nueva. Y la formula nueva tampoco es 'sobre las partidas de obra': es ROUND(SUM(B7:B25)*Supuestos!B55,0), o sea sobre TODO el bloque, incluidos constitucion, licencia, marketing, stock inicial, TPV y los propios 8.500 EUR de imprevistos viejos.",
+      "fix": "Se resuelve con REF-06 (corregir el regex, que la supresion funcione y acotar la base a las partidas de obra). Anadir al gate un contraste entre lo que declara la tabla 'QUE HA CAMBIADO' y lo que se puede verificar en el fichero (para las filas verificables: existencia/ausencia de una partida, formula vs literal)."
+    },
+    {
+      "id": "REF-16",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!Personal!A2 = 'Convenio Hosteleria - 14 pagas + SS 33.4%'  vs  '0. Supuestos'!B20 = 0,33",
+      "hallazgo": "El subtitulo de la hoja Personal, que es lo primero que se lee, publica un tipo de Seguridad Social (33,4 %) distinto del que usa el modelo (33,0 %, Supuestos!B20, del que cuelgan todas las E5:E11). Es un rotulo heredado de la v1.1 que nadie recalculo, y es exactamente el patron §7-bis.11 que el proyecto prohibe: un numero viviendo dentro de un rotulo, que miente en cuanto se toca la celda verde. Sobre 4.790 EUR/mes de bruto la diferencia son 229 EUR/ano, pero el problema es de credibilidad: dos tipos distintos en la misma hoja.",
+      "fix": "Reescribir A2 por formula: ='Convenio Hosteleria - '&TEXT('0. Supuestos'!$B$21,\"0\")&' pagas + SS '&TEXT('0. Supuestos'!$B$20,\"0,0%\"). Anadir al gate de formatos la regla de §7-bis.11 tambien para los subtitulos (A1:A3 de cada hoja), no solo para los rotulos de partida."
+    },
+    {
+      "id": "REF-17",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!'0. Supuestos'!B30 = 45.000 EUR sobre Financiacion!B14 = 184.937,45 EUR (24,33 %)",
+      "hallazgo": "Los recursos propios del caso base incumplen la exigencia que escribe su propia nota. Supuestos!C30 dice: 'Aportacion de los socios. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja de este plan'. 45.000 / 184.937,45 = 24,33 %, por debajo del 25 %. Y con REF-14 corregido (necesidad 187.110,95 EUR) baja a 24,05 %. No hay semaforo que lo mire: la hoja Financiacion solo vigila la diferencia origen-usos (B15/B16), no la proporcion de fondos propios.",
+      "fix": "Subir 'recursos_propios' de 45.000 a 47.000 EUR (25,4 %) y bajar el prestamo a 138.000 para no descuadrar el origen, o anadir una fila calculada 'Fondos propios / necesidad de caja' en Financiacion con su semaforo contra un umbral en Supuestos (25 %), que es lo que el propio texto promete."
+    },
+    {
+      "id": "REF-18",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!'0. Supuestos'!B51 = 45 y B50 = 1,1111111111111112",
+      "hallazgo": "Dos problemas encadenados en el bloque de aforo. (1) El valor 45 contradice su propia nota C51: 'Plazas interiores (40-50, docx parrafo 89) + terraza (10-12 mesas, Inversion Inicial!C17)'. Si la terraza suma, el aforo no puede ser 45 (40-50 interiores YA agotan el rango); con 10-12 mesas de terraza el aforo real esta en 80-95 plazas. (2) Por eso la rotacion implicita B50 sale en 1,1 y su propia nota calculada dice: 'El documento de este plan pide un MINIMO de 1,8 rotaciones por mesa y servicio en temporada alta'. El libro publica un dato que su nota declara insuficiente, y lo hace sobre un aforo que su nota describe mal. Esto refuta ademas el descargo de DOM-16 ('45 plazas / 60-80 m2 da 1,3-1,8 m2/plaza'), que se apoya en un aforo que no incluye la terraza que la propia celda dice incluir.",
+      "fix": "Decidir el criterio y hacerlo coherente: o B51 = 45 y la nota dice 'solo plazas interiores; suma la terraza si la tienes', o B51 = 85 y entonces B50 = 0,59 rotaciones, que hay que explicar (un tapas bar factura por consumicion de barra, no por rotacion de mesa) o sustituir la metrica por 'consumiciones/plaza-dia'. Contrastar con el docx (parrafo 89) antes de decidir, y arrastrar la decision al Word en T9."
+    },
+    {
+      "id": "REF-19",
+      "severidad": "media",
+      "celda": "plan-financiero-tapas-bar.xlsx!'Inversion Inicial'!D38 (nota) y B36/B37",
+      "hallazgo": "La nota que enumera lo NO amortizable esta incompleta y omite justo lo que mas dinero mueve. Dice: 'No se amortizan el fondo de maniobra, la fianza, el alquiler previo, el marketing de lanzamiento, los gastos de constitucion ni las existencias iniciales: no son inmovilizado. Suman 76.597 EUR'. En esos 76.597 EUR estan tambien, sin mencionarse, la licencia de actividad (1.200 EUR) y los 18.850 EUR de las dos filas de imprevistos (8.500 + 10.350). Las bases son B36 = B9+B10+B11+B12+B16+B20+B21 = 44.500 EUR y B37 = B13+B14+B15+B17+B18+B19+B25 = 42.000 EUR: los imprevistos de OBRA, que por definicion son mayor coste de la obra, no amortizan nada. Amortizacion anual publicada: 9.700 EUR.",
+      "fix": "Incluir la fila de imprevistos de obra en la base B36 (es sobrecoste de obra y si es inmovilizado) y completar la enumeracion de D38 generandola desde las filas que realmente quedan fuera, en vez de con una lista escrita a mano. Con la fila 28 dentro de B36, la amortizacion pasaria a 10.735 EUR/ano y el resultado neto del ano 1 bajaria a ~16.757 EUR (6,21 % s/ventas, todavia por encima del suelo 5 %)."
+    },
+    {
+      "id": "REF-20",
+      "severidad": "media",
+      "celda": "auditorias/planes-v2-hermano-plan-negocio-tapas-bar.json -> ids_no_aplican: NUEVO-07",
+      "hallazgo": "Cruce de ids: el constructor declara NUEVO-07 'no aplica' porque 'el checklist de tapas-bar es molde C2 y ya tenia casilla, COUNTIF y CF antes de esta tanda'. Era cierto ANTES de la tanda y ha dejado de serlo DESPUES: las 10 altas que este mismo modulo introduce se entregan sin casilla y fuera del bloque que cuenta el COUNTIF (REF-04 y REF-05), es decir, la tanda CREA en tapas-bar el defecto que NUEVO-07 describe. Un 'no aplica' se justifica contra el fichero de SALIDA, no contra el de entrada.",
+      "fix": "Reabrir NUEVO-07 para este hermano hasta que REF-04/REF-05 esten corregidos, y anadir a la plantilla de descargo la regla: todo 'no aplica' por estado previo se re-verifica sobre el entregable producido."
+    },
+    {
+      "id": "REF-21",
+      "severidad": "media",
+      "celda": "auditorias/planes-v2-hermano-plan-negocio-tapas-bar.json -> ids_no_aplican: COM-17, TEC-15, COM-23",
+      "hallazgo": "Cruce de ids, tres descargos refutados con medida. (a) COM-17 se aparca en T10 como 'recuento del checklist vs cifra de la landing (capa de producto)' y se apoya en '73 items'; el propio xlsx publica 77 en sus contadores (12+14+13+13+15+10), asi que la discrepancia no nace en la landing sino en este entregable (REF-05) y T10 propagaria un numero que el fichero desmiente. (b) TEC-15 y (c) COM-23 se declaran 'ambito docx: el lado xlsx (gate no_latinos / ortografia) da 0/0'; el barrido lexico de esta refutacion encuentra 22 palabras sin tilde o sin enye en los dos xlsx (REF-08), cuatro de ellas en rotulos. El gate da 0 porque no busca esto, no porque no exista.",
+      "fix": "COM-17: corregir los contadores (REF-05), volver a medir y entregar a T10 la cifra ya verificada. TEC-15/COM-23: mantener abiertos tambien para xlsx hasta que el gate lexico de REF-08 exista y devuelva 0 de verdad."
+    },
+    {
+      "id": "REF-22",
+      "severidad": "baja",
+      "celda": "plan-financiero-tapas-bar.xlsx!'PyG 3 Anos'!B56 (y C56, D56)",
+      "hallazgo": "Guarda duplicada en la formula: =IFERROR(IF(B9=\"\",\"\",IF(B9=\"\",\"\",IF(B9>='Punto Equilibrio'!$B$16,\"Si\",\"No\"))),\"\"). El IF(B9=\"\",\"\") aparece dos veces anidado. No cambia el resultado (devuelve 'Si'), pero es codigo muerto que se replicara a los 10 hermanos y complica cualquier depuracion futura del libro en blanco.",
+      "fix": "Quitar la guarda interior en el generador de esa fila en grupo_a.py; el gate de idempotencia no lo detecta porque el resultado es identico en las dos pasadas."
+    },
+    {
+      "id": "REF-23",
+      "severidad": "baja",
+      "celda": "plan-financiero-tapas-bar.xlsx!'Inversion Inicial'!D27 = 'Renta de los 1 meses de obra y licencias. ...'",
+      "hallazgo": "Concordancia rota en una nota generada con TEXT(): con Supuestos!B54 = 1 el texto sale 'Renta de los 1 meses', que es el caso base tal cual se entrega. La formula es ='Renta de los '&TEXT('0. Supuestos'!$B$54,\"0\")&' meses de obra y licencias...'.",
+      "fix": "Pluralizar por formula: ='Renta '&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&' de obra y licencias...'. Barrer el resto de notas construidas con TEXT() por si hay mas singulares/plurales (Supuestos!C50 y C9 usan el mismo patron)."
+    },
+    {
+      "id": "REF-24",
+      "severidad": "baja",
+      "celda": "checklist-apertura-tapas-bar.xlsx!'F1 - Constitucion' CF A5:E19 (max_row real 17); idem F2 (A5:E21 sobre 19), F4 (A5:E20 sobre 18), F5 (A5:E22 sobre 20)",
+      "hallazgo": "El formato condicional de tachado por fila desborda el bloque real en 2 filas en cuatro de las seis hojas (rango heredado de la v1.1 con desplazamiento fijo). No rompe nada hoy porque las filas estan vacias, pero si alguien anade un item bajo el bloque queda con formato de 'completado' sin serlo, y en F3/F6 (que no recibieron altas) el rango si coincide, lo que confirma que el desfase lo introduce la insercion de altas.",
+      "fix": "Recalcular los sqref de las dos reglas de CF de cada hoja del checklist a partir de la ultima fila de items real despues de insertar las altas (se resuelve junto con REF-04)."
+    },
+    {
+      "id": "REF-25",
+      "severidad": "baja",
+      "celda": "plan-financiero-tapas-bar.xlsx!'0. Supuestos'!B22 = 17094 / C22 = 'SMI 2026 - RD 126/2026 - suelo legal por jornada completa'",
+      "hallazgo": "Cita normativa sin verificar en una celda que decide un semaforo legal (el de REF-01). El importe y la referencia 'RD 126/2026' se entregan como dato duro: no he podido confirmarlos contra fuente en esta refutacion, y el criterio de la casa es que ninguna cifra normativa se publica sin fuente comprobable. Si el SMI real de 2026 fuese superior, mas filas de la plantilla entrarian en rojo; si fuese inferior, el semaforo pasaria por alto sueldos ilegales. Ademas la celda hermana B68 (suelo de convenio) se entrega en 0, asi que TODO el peso del semaforo recae en B22.",
+      "fix": "Confirmar el importe y el numero de Real Decreto del SMI del ejercicio contra el BOE antes de publicar (dato transversal a los 10 hermanos: vive en el motor, no en este contenido) y dejar constancia de la comprobacion en el informe de la tanda. Si no se puede confirmar, redactar la nota como 'SMI del ejercicio en curso: comprueba el importe vigente en el BOE' y dejar el valor como parametro editable declarado."
+    }
+  ]
+}
