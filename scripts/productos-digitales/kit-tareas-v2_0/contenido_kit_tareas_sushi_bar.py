@@ -78,6 +78,20 @@ class AnclaPerdida(RuntimeError):
 TITULO_03 = 'Seguridad Alimentaria, Anisakis y APPCC — Sushi Bar'
 FIRMA_03 = 'Responsable del plan APPCC: _________________    Firma: _________'
 
+def _appcc_identidad(texto):
+    """Regla IDENTIDAD en `motor.SUST_APPCC` para un texto literal.
+
+    `texto_appcc` cuelga «(si tienes el Pack APPCC, …)» de toda celda que diga
+    APPCC. En una tarea eso tiene sentido; en el TÍTULO del fichero, en la
+    línea de firma, en una nota de fuente o en la fila de un calendario, no.
+    El `(?:▸ )?` es obligatorio: las líneas de «Instrucciones» se guardan con
+    la viñeta delante y el motor las reevalúa enteras.
+    """
+    rx = re.compile(r'^(?:▸ )?' + re.escape(texto) + r'$')
+    if not any(r.pattern == rx.pattern for r, _ in motor.SUST_APPCC):
+        motor.SUST_APPCC.append((rx, texto))
+
+
 for _rx, _bueno in (
         (re.compile(r'^Seguridad Alimentaria, Anisakis y APPCC — Sushi Bar$'),
          TITULO_03),
@@ -304,6 +318,56 @@ def _instrucciones(wb, encabezado, lineas):
 
 
 # ==========================================================================
+# Ortografía POR CONTEXTO (§1.2 CB-E1: «lo que el diccionario no toca»)
+# ==========================================================================
+#: `motor.LEX_TILDES` deja fuera a propósito los homógrafos («mas/más»,
+#: «critico/crítico») y no cubre todos los lemas del corpus. Éstos son los que
+#: sobreviven al barrido del motor en ESTE kit, medidos sobre el dry-run del
+#: 2026-08-29 con un censo de tokens sin tilde cuya variante acentuada existe
+#: en el mismo corpus. Cada uno va con su forma acotada, no con el lema suelto:
+#: «critico» sí es palabra («yo critico»), «stock critico» no.
+LEX_CONTEXTO = [
+    (r'\bparasitos\b', 'parásitos'),
+    (r'\bcuchilleria\b', 'cuchillería'),
+    (r'\bCUCHILLERIA\b', 'CUCHILLERÍA'),
+    (r'\bjapones\b', 'japonés'),
+    (r'\bbasico\b', 'básico'),
+    (r'\bstock critico\b', 'stock crítico'),
+    (r'\bson criticas\b', 'son críticas'),
+    (r'\bSTOCK CRITICO\b', 'STOCK CRÍTICO'),
+    (r'\bel rol mas importante\b', 'el rol más importante'),
+]
+_LEX_CONTEXTO = [(re.compile(rx), nuevo) for rx, nuevo in LEX_CONTEXTO]
+
+
+def _orto_contexto(wb, cambios):
+    """Aplica `LEX_CONTEXTO` a todas las celdas de texto del libro.
+
+    Corre al final de cada `post()`, o sea DESPUÉS del motor y ANTES de
+    `motor.ortografia`, que es donde §7-bis.11 pone el barrido. No toca
+    fórmulas ni celdas no textuales.
+    """
+    n = []
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                if not isinstance(c.value, str) or c.data_type == 'f':
+                    continue
+                v = c.value
+                for rx, nuevo in _LEX_CONTEXTO:
+                    v = rx.sub(nuevo, v)
+                if v != c.value:
+                    c.value = v
+                    n.append(f'{ws.title}!{c.coordinate}')
+    if n:
+        cambios.append(f'ortografía por contexto: {len(n)} celdas '
+                       f'({", ".join(n[:4])}{"…" if len(n) > 4 else ""}) — '
+                       'lemas que LEX_TILDES deja fuera por homógrafos o por '
+                       'no estar en el diccionario (CB-E1, §1.2)')
+    return False
+
+
+# ==========================================================================
 # Constructor genérico de HOJA DE REGISTRO (§7-bis.1 y §7-bis.14)
 # ==========================================================================
 def _crear_registro(wb, modelo, titulo, encabezado, subtitulo, cabeceras,
@@ -355,12 +419,17 @@ def _crear_registro(wb, modelo, titulo, encabezado, subtitulo, cabeceras,
             ws.cell(row=r, column=c)._style = copy.copy(est_dato)
     fila = 5 + filas
     if totales:
-        for rotulo, formulas in totales:
+        for entrada in totales:
+            rotulo, formulas = entrada[0], entrada[1]
+            formatos = entrada[2] if len(entrada) > 2 else {}
             fila += 1
             ws.cell(row=fila, column=1).value = rotulo
             motor._merge(ws, f'A{fila}:{L(min(2, ncol))}{fila}')
             for col, formula in formulas.items():
-                ws.cell(row=fila, column=col).value = formula
+                cel = ws.cell(row=fila, column=col)
+                cel.value = formula
+                if col in formatos:
+                    cel.number_format = formatos[col]
                 motor.reg(ws, f'{L(col)}{fila}', formula)
     for nota in notas:
         fila += 2 if nota is notas[0] else 1
@@ -497,6 +566,12 @@ FUENTE_MERMAS = ('Cómo se usa: una línea por descarte, el mismo día. El coste
                  'total de la línea es kg × €/kg y los totales del pie los '
                  'calcula la hoja. Es el número que justifica el kit: sin '
                  'medir la merma no se puede bajar.')
+
+CAL_APPCC = ('Auditoría anual completa del plan APPCC (la mensual va en el '
+             '07)')
+#: Las dos notas de este módulo que nombran APPCC sin ser tareas.
+for _t in (FUENTE_PH, CAL_APPCC):
+    _appcc_identidad(_t)
 
 TEXTO_ANISAKIS = (
     'Congelación previa obligatoria para el pescado que se sirva crudo, '
@@ -904,17 +979,25 @@ def _f03(wb, cambios):
     tocado = False
     ws = wb['Instrucciones']
     for nuevo, viejo in INSTR_03:
+        # Dos comprobaciones, y las dos hacen falta:
+        #  · se busca primero el texto NUEVO, porque la 2.ª pasada del gate de
+        #    idempotencia corre sobre el fichero ya reescrito y el ancla vieja
+        #    ya no existe (`AnclaPerdida` en la 2.ª pasada, medido);
+        #  · y se compara el valor CRUDO, no la clave: `_clave` normaliza las
+        #    tildes, así que un cambio que SÓLO pone una («verificara» →
+        #    «verificará») se daría por hecho y no se escribiría nunca.
         r = _fila(ws, '▸ ' + nuevo, 2)
-        if r is not None:
-            continue
-        r = _exige(ws, '▸ ' + viejo, 2)
-        ws.cell(row=r, column=2).value = '▸ ' + _est_texto(nuevo)
+        if r is None:
+            r = _exige(ws, '▸ ' + viejo, 2)
+        destino = '▸ ' + _est_texto(nuevo)
+        if ws.cell(row=r, column=2).value != destino:
+            ws.cell(row=r, column=2).value = destino
     cambios.append('«Instrucciones» de 03: la congelación antiparasitaria se '
                    'cita bien (−20 °C ≥ 24 h o −35 °C ≥ 15 h) y ya no se '
                    'atribuye a la norma un plazo de 7 días — DOM-01 / COM-01 '
                    '/ TEC-11')
     if _instrucciones(wb, 'La norma, con su fuente', [
-            TEXTO_ANISAKIS + '. ' + FUENTE_ANISAKIS,
+            FUENTE_ANISAKIS,
             EXCEPCION_ACUICULTURA,
             'Si tu local quiere un margen propio por encima del mínimo legal, '
             'escríbelo como criterio TUYO («mínimo legal 24 h; en esta casa '
@@ -937,13 +1020,13 @@ def _f03(wb, cambios):
                            if _clave(k).startswith('especie'))
         motor.insertar_columna(ws, col_especie + 1)
         ws.cell(row=hr, column=col_especie + 1).value = 'Nº de lote'
-        ws.column_dimensions[L(col_especie + 1)].width = 14
+        ws.column_dimensions[L(col_especie + 1)].width = 11
         hr, cols = motor.fila_registro_appcc(ws)
         col_prov = next(c for k, c in cols.items()
                         if _clave(k).startswith('proveedor'))
         motor.insertar_columna(ws, col_prov + 1)
         ws.cell(row=hr, column=col_prov + 1).value = 'Origen y acreditación'
-        ws.column_dimensions[L(col_prov + 1)].width = 22
+        ws.column_dimensions[L(col_prov + 1)].width = 16
         cambios.append(f'«{hoja}»: columnas nuevas «Nº de lote» y «Origen y '
                        'acreditación» (salvaje / acuicultura + nº de '
                        'certificado), que el registro no tenía — DOM-14 / '
@@ -1071,7 +1154,7 @@ def _f03(wb, cambios):
              'inspector pregunta por qué el arroz se mantiene a temperatura '
              'ambiente.',
              FUENTE_PH],
-            {'A': 5, 'B': 12, 'C': 22, 'D': 16, 'E': 18, 'F': 11, 'G': 34,
+            {'A': 5, 'B': 12, 'C': 22, 'D': 16, 'E': 18, 'F': 11, 'G': 30,
              'H': 9, 'I': 16}):
         cambios.append(f'hoja nueva «{HOJA_PH}»: el PCC estrella del kit no '
                        'tenía NINGUNA celda donde anotarse pese a que las '
@@ -1096,8 +1179,8 @@ def _f03(wb, cambios):
              'documentado es lo que demuestra el control, no la ausencia de '
              'incidencias.',
              FUENTE_FRESCO],
-            {'A': 5, 'B': 12, 'C': 8, 'D': 20, 'E': 16, 'F': 8, 'G': 16,
-             'H': 30, 'I': 18, 'J': 9, 'K': 18, 'L': 24, 'M': 14}):
+            {'A': 5, 'B': 11, 'C': 7, 'D': 16, 'E': 14, 'F': 8, 'G': 14,
+             'H': 18, 'I': 14, 'J': 9, 'K': 13, 'L': 14, 'M': 12}):
         cambios.append(f'hoja nueva «{HOJA_RECEPCION}»: la recepción es el '
                        'primer punto de control de cualquier APPCC de pescado '
                        'y el kit sólo tenía una línea de checklist sin '
@@ -1115,10 +1198,11 @@ def _f03(wb, cambios):
              'una forma: caducado, más de 2 h fuera de refrigeración, corte '
              'defectuoso, sobreproducción, devolución de sala y rechazo en '
              'recepción.'],
-            {'A': 5, 'B': 12, 'C': 12, 'D': 26, 'E': 15, 'F': 30, 'G': 12,
+            {'A': 5, 'B': 12, 'C': 12, 'D': 26, 'E': 15, 'F': 28, 'G': 12,
              'H': 14, 'I': 16},
             totales=[('TOTAL del periodo',
-                      {5: '=SUM(E5:E26)', 8: '=SUM(H5:H26)'})]):
+                      {5: '=SUM(E5:E26)', 8: '=SUM(H5:H26)'},
+                 {5: '0.0" kg"', 8: '#,##0.00" €"'})]):
         cambios.append(f'hoja nueva «{HOJA_MERMAS}»: tres tareas de tres '
                        'ficheros (01, 05 y 06) remitían a una «hoja de '
                        'control» de mermas que no existía en el kit — DOM-08 '
@@ -1280,8 +1364,8 @@ def _f05(wb, cambios):
              'una compra barata.',
              'Lleva esta hoja a la negociación: un histórico de €/kg por '
              'especie es el único argumento que mueve a un mayorista.'],
-            {'A': 5, 'B': 12, 'C': 20, 'D': 16, 'E': 16, 'F': 16, 'G': 26,
-             'H': 40, 'I': 14}):
+            {'A': 5, 'B': 12, 'C': 16, 'D': 14, 'E': 14, 'F': 14, 'G': 22,
+             'H': 30, 'I': 12}):
         cambios.append(f'hoja nueva «{HOJA_COMPARATIVA}»: la landing la vende '
                        'en la tarjeta del manager y el fichero no tenía ni '
                        'una celda numérica — DOM-28 / COM-24')
@@ -1302,14 +1386,17 @@ def _f05(wb, cambios):
              'inventario, sustitúyelo por consumo = existencias iniciales + '
              'compras − existencias finales.'],
             {'A': 5, 'B': 12, 'C': 14, 'D': 13, 'E': 14, 'F': 20, 'G': 13,
-             'H': 40, 'I': 14},
+             'H': 34, 'I': 13},
             totales=[
                 ('TOTAL de la semana',
                  {3: '=SUM(C5:C11)', 4: '=SUM(D5:D11)',
                   5: '=IF(SUM(D5:D11)=0,"",SUM(C5:C11)/SUM(D5:D11))',
-                  6: '=SUM(F5:F11)', 7: '=SUM(G5:G11)'}),
+                  6: '=SUM(F5:F11)', 7: '=SUM(G5:G11)'},
+                 {3: '#,##0.00" €"', 5: '#,##0.00" €"',
+                  6: '#,##0.00" €"', 7: '#,##0.00" €"'}),
                 ('Food cost de pescado (% sobre ventas)',
-                 {3: '=IF(SUM(C5:C11)=0,"",SUM(F5:F11)/SUM(C5:C11))'})]):
+                 {3: '=IF(SUM(C5:C11)=0,"",SUM(F5:F11)/SUM(C5:C11))'},
+                 {3: '0.0%'})]):
         cambios.append(f'hoja nueva «{HOJA_REPORTING}»: ventas, comensales, '
                        'ticket medio, compras, food cost y mermas con totales '
                        'de la semana — DOM-28 / COM-24 / TEC-20')
@@ -1534,9 +1621,15 @@ def _f07(wb, cambios):
         cambios.append('«Tareas Mensuales»: revisión de frío mensual del '
                        'titular + anual de la empresa, que son cosas '
                        'distintas — COM-10 / §7-bis.21')
-    if _sustituir(ws, 'Verificar extintores', EXTINTOR_TRIM):
+    r = _sustituir(ws, 'Verificar extintores', EXTINTOR_TRIM)
+    if r:
+        # La fila vive en la hoja MENSUAL pero su cadencia es trimestral: si la
+        # columna «Cuándo» sigue diciendo «2a semana» el kit vuelve a mandar
+        # dos frecuencias para la misma tarea, que es el defecto de COM-10.
+        ws.cell(row=r, column=5).value = 'Trimestral'
         cambios.append('«Tareas Mensuales»: la revisión del titular es '
-                       'TRIMESTRAL, con su norma — COM-10 / §7-bis.21')
+                       'TRIMESTRAL, con su norma y con la columna «Cuándo» '
+                       'acorde — COM-10 / §7-bis.21')
     if _insertar_tras(ws, EXTINTOR_TRIM, EXTINTOR_ANUAL):
         cambios.append('«Tareas Mensuales»: fila nueva para la revisión ANUAL '
                        'por empresa autorizada y el retimbrado a 5 años: son '
@@ -1553,9 +1646,9 @@ def _f07(wb, cambios):
             'Extintores: revisión trimestral del titular y revisión anual por '
             'empresa mantenedora habilitada, con retimbrado a los 5 años. '
             + FUENTE_RIPCI,
-            'Registros APPCC: auditoría interna mensual aquí y auditoría '
-            'anual completa en el calendario del BONUS-02. Donde las dos '
-            'hojas discrepaban, manda la más frecuente.']):
+            'Auditoría de registros: la interna es MENSUAL y va en este '
+            'fichero; la anual completa va en el calendario del BONUS-02. '
+            'Donde las dos hojas discrepaban, manda la más frecuente.']):
         cambios.append('«Instrucciones» de 07: tabla única de frecuencias con '
                        'la fuente del RIPCI — COM-10 / §7-bis.21')
     return tocado
@@ -1688,22 +1781,25 @@ CAL_TEXTOS = [
     ('Renovar registro sanitario',
      'Revisar los datos del RGSEAA y comunicar modificaciones o cese '
      '(no se renueva)', ['Ene']),
-    ('Auditar registros APPCC anual',
-     'Auditoría anual completa del plan APPCC (la mensual va en el 07)',
-     ['Jun', 'Dic']),
+    ('Auditar registros APPCC anual', CAL_APPCC, ['Jun', 'Dic']),
 ]
 #: DOM-19 / DOM-20 / COM-08 / COM-09 / §2.2 — lo que la landing promete y el
 #: calendario no tenía: festivos asiáticos en plural, cierres por vacaciones y
 #: las obligaciones anuales reales.
+#: ⚠️ Las filas que comparten ancla salen en ORDEN INVERSO al de esta lista
+#: (cada una se inserta justo debajo del ancla y empuja a la anterior), así que
+#: se escriben al revés de como se quieren leer: primero los dos festivos
+#: japoneses debajo del Año Nuevo, después el Día de la Madre y al final las
+#: vacaciones.
 CAL_NUEVAS = [
-    ('Hanami (menú de temporada y terraza)', ['Mar', 'Abr'],
-     'Ano Nuevo japones'),
-    ('Tanabata (7 de julio, menú temático)', ['Jul'], 'Ano Nuevo japones'),
-    ('Día de la Madre (menú cerrado, doble turno)', ['May'],
-     'Ano Nuevo japones'),
+    ('Planificar las vacaciones del equipo', ['Mar'], 'Ano Nuevo japones'),
     ('Cierre por vacaciones / plantilla reducida', ['Ago', 'Dic'],
      'Ano Nuevo japones'),
-    ('Planificar las vacaciones del equipo', ['Mar'], 'Ano Nuevo japones'),
+    ('Día de la Madre (menú cerrado, doble turno)', ['May'],
+     'Ano Nuevo japones'),
+    ('Tanabata (7 de julio, menú temático)', ['Jul'], 'Ano Nuevo japones'),
+    ('Hanami (menú de temporada y terraza)', ['Mar', 'Abr'],
+     'Ano Nuevo japones'),
     ('Revisión anual del sistema de frío por empresa frigorista', ['Mar'],
      'Calibración de termómetros'),
     ('Revisión anual de extintores por empresa autorizada y retimbrado a los '
@@ -1777,6 +1873,7 @@ def _f_bonus02(wb, cambios):
             FUENTE_TEMPORADAS]):
         cambios.append('«Instrucciones» del BONUS-02: cadencias y fuentes — '
                        'COM-10 / COM-21 / §7-bis.21')
+    _pie_del_kit(wb, cambios)
     return tocado
 
 
@@ -1792,6 +1889,32 @@ BRIEF_NUEVAS = [
     ('Pedido de pescado de mañana confirmado antes de la hora de corte: '
      '☐ Sí ☐ No', 'Nota equipo: __________'),
 ]
+
+
+def _pie_del_kit(wb, cambios):
+    """Unifica el pie en los ficheros que `motor.cerrar` NO toca.
+
+    Los dos BONUS quedan fuera del molde ▸ (su hoja no la reconoce ninguna
+    geometría), así que `cerrar` no corre y el pie se quedaba en el literal
+    viejo «— Kit de Tareas: Sushi Bar · …» mientras los otros nueve ficheros
+    firman «— Kit de Tareas Recurrentes · Sushi Bar · …». Dos pies distintos
+    dentro de la misma compra.
+    """
+    pie = motor.CTX.get('pie')
+    if not pie:
+        return
+    n = 0
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                if (isinstance(c.value, str) and motor.RX_PIE.match(c.value)
+                        and c.value != pie):
+                    c.value = pie
+                    n += 1
+    if n:
+        cambios.append(f'pie unificado en {n} celda(s): este fichero queda '
+                       'fuera del molde ▸ y `cerrar` no lo tocaba, así que '
+                       'firmaba distinto que los otros nueve')
 
 
 def _f_bonus01(wb, cambios):
@@ -1811,6 +1934,7 @@ def _f_bonus01(wb, cambios):
         cambios.append('«Briefing Servicio»: líneas nuevas de lote apto para '
                        'crudo, alérgeno crítico del día y confirmación del '
                        'pedido — DOM-14 / DOM-24 / TEC-12')
+    _pie_del_kit(wb, cambios)
     return tocado
 
 
@@ -1895,6 +2019,8 @@ _FICHEROS = {
 def post(wb, fname, cambios):
     """True si ha cambiado la ESTRUCTURA del libro (filas u hojas nuevas)."""
     fn = _FICHEROS.get(fname)
-    if fn is None:
-        return False
-    return bool(fn(wb, cambios))
+    tocado = bool(fn(wb, cambios)) if fn is not None else False
+    # El barrido por contexto corre SIEMPRE, también en el 09, que no tiene
+    # función propia: es la mitad de CB-E1 que el diccionario no puede hacer.
+    _orto_contexto(wb, cambios)
+    return tocado

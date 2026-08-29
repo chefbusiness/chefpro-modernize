@@ -1,0 +1,315 @@
+{
+ "tanda": "T2.2 — contenido del representante kit-tareas-sushi-bar",
+ "spec": "scripts/productos-digitales/kit-tareas-cb-v2-SPEC.md §2.1 (39 correcciones de contenido + 8 hojas nuevas), §2.0 (lista blanca normativa), §7-bis.18/19/20/21",
+ "fecha": "2026-08-29T10:56:27",
+ "producto": "kit-tareas-sushi-bar",
+ "modelo": "opus",
+ "ficheros_escritos": [
+  {
+   "ruta": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py",
+   "que": "módulo de CONTENIDO del representante: contrato post(wb, fname, cambios) -> bool, idéntico al de los hermanos ▸ ya en producción (cafetería, hotel). Incluye el barrido de ortografía POR CONTEXTO (LEX_CONTEXTO), los constructores genéricos de hoja de REGISTRO y de hoja de CHECKLIST, y las tres tablas que lee main.py (PROMESAS, EQUIPOS_LIMITE, PLANTILLA_09)."
+  },
+  {
+   "ruta": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/main.py",
+   "que": "gates §1.3 que faltaban y que el encargo exige demostrar: gate_limite_unico (§7-bis.23, ABORTA), gate_promesas (§1.3) y demo_plantilla_09 (demostración de CB-E2). Los tres se activan SÓLO si el módulo de contenido del kit trae su tabla, así que los otros diez kits LIVE de la familia no ven ningún gate nuevo. No tocan ninguna celda."
+  }
+ ],
+ "reglas_duras": {
+  "dl_intacto": {
+   "comprobado": "git status --porcelain astro-site/public/dl → 0 líneas",
+   "ok": true
+  },
+  "kit_tareas_apply": {
+   "usado": false,
+   "nota": "todo con --dry-run sobre CLAUDE_SCRATCHPAD=/private/tmp/.../scratchpad/cb/propio-t22"
+  },
+  "regresion_familia_7bis24": {
+   "kit-tareas-cafeteria": {
+    "ficheros": 11,
+    "diferencias": 0,
+    "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-t22/regresion-cafeteria-T22.json"
+   },
+   "kit-tareas-hotel": {
+    "ficheros": 19,
+    "diferencias": 0,
+    "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-t22/regresion-hotel-T22.json"
+   },
+   "razon": "el módulo de contenido sólo se importa con --producto kit-tareas-sushi-bar (main.py compone el nombre del módulo con el pid), y los tres gates nuevos de main.py leen su tabla con getattr y salen con aplica=False si no está. Ninguna celda cambia en los otros kits."
+  },
+  "termica": {
+   "istats_antes_de_cada_python": true,
+   "max_registrado_C": 52.1,
+   "un_python_cada_vez": true,
+   "builds_o_navegador": false
+  },
+  "git": {
+   "commit_push_checkout_reset_stash": false,
+   "nota": "un proceso de auto-commit periódico ajeno a este agente (c636974) ha commiteado el WIP; no lo he lanzado yo"
+  }
+ },
+ "prueba_exigida": {
+  "comando": "CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-t22 python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-sushi-bar --dry-run --json .../cb/t22-sushi.json",
+  "exit": 0,
+  "fallos": [],
+  "idempotencia_diferencias": 0,
+  "gates.ortografia.lemas_vivos": 0,
+  "gates.ortografia.ambiguas_para_contenido": 590,
+  "gates.limite_unico.conflictos": 0,
+  "gates.promesas.ausentes": 0,
+  "gates.contadores": {
+   "con_contador": 18,
+   "sin_contador": []
+  },
+  "dv_checklists": {
+   "hojas": 18,
+   "incorrectas": 0,
+   "lista": [
+    "\"✓,—,N/A\""
+   ]
+  },
+  "bio_en_instrucciones": "11/11",
+  "demostraciones": [
+   {
+    "caso": "contador-honesto",
+    "ref": "01-apertura-cierre-sushi.xlsx:Apertura Barra Sushi:D43/F43",
+    "entradas": "25 tareas · 3 N/A · 22 ✓",
+    "esperado": "22 de 22",
+    "obtenido": "22 de 22",
+    "ok": true
+   },
+   {
+    "caso": "contador-plantilla-en-blanco",
+    "ref": "09-plantilla-personalizable.xlsx:Plantilla en Blanco:D31/F31",
+    "entradas": "hoja entregada VACÍA + 8 tareas escritas por el cliente, 3 marcadas ✓",
+    "esperado": "3 de 8",
+    "obtenido": "3 de 8",
+    "ok": true
+   }
+  ],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-t22/dryrun-kt/kit-tareas-sushi-bar)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  },
+  "recuento_tareas_total": 251,
+  "recuento_tareas_por_fichero": {
+   "01-apertura-cierre-sushi.xlsx": 44,
+   "02-preparacion-arroz-pescado.xlsx": 38,
+   "03-seguridad-anisakis-appcc.xlsx": 0,
+   "04-barra-sushi-neta-case.xlsx": 21,
+   "05-tareas-manager.xlsx": 24,
+   "06-tareas-perfiles.xlsx": 63,
+   "07-semanales-mensuales.xlsx": 30,
+   "08-eventos-estacionales.xlsx": 31,
+   "09-plantilla-personalizable.xlsx": 0,
+   "BONUS-01-briefing-servicio.xlsx": 0,
+   "BONUS-02-calendario-anual.xlsx": 0
+  },
+  "informe_completo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/t22-sushi.json",
+  "log": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-t22/run12.log"
+ },
+ "gate_promesas_detalle": [
+  {
+   "termino": "arqueo",
+   "origen": "kit-tareas-sushi-bar.ts:116 grid.templates[0] «cierre completo y arqueo»",
+   "fichero": "01-apertura-cierre-sushi.xlsx",
+   "minimo": 1,
+   "apariciones": 3,
+   "donde": [
+    "01-apertura-cierre-sushi.xlsx!Instrucciones!B18",
+    "01-apertura-cierre-sushi.xlsx!Instrucciones!B22",
+    "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B27"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "maki",
+   "origen": "kit-tareas-sushi-bar.ts:121 grid.templates[1] «nigiri y maki»",
+   "fichero": "02-preparacion-arroz-pescado.xlsx",
+   "minimo": 1,
+   "apariciones": 1,
+   "donde": [
+    "02-preparacion-arroz-pescado.xlsx!Protocolo Corte Pescado!B14"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "alérgenos",
+   "origen": "kit-tareas-sushi-bar.ts:126 grid.templates[2] «alérgenos»",
+   "fichero": "03-seguridad-anisakis-appcc.xlsx",
+   "minimo": 1,
+   "apariciones": 5,
+   "donde": [
+    "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B22",
+    "03-seguridad-anisakis-appcc.xlsx!Matriz de Alérgenos!A1",
+    "03-seguridad-anisakis-appcc.xlsx!Matriz de Alérgenos!A25",
+    "03-seguridad-anisakis-appcc.xlsx!Matriz de Alérgenos!A26"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "lote (FIFO por lotes)",
+   "origen": "kit-tareas-sushi-bar.ts:131 grid.templates[3] «rotación FIFO por lotes»",
+   "fichero": "04-barra-sushi-neta-case.xlsx",
+   "minimo": 1,
+   "apariciones": 3,
+   "donde": [
+    "04-barra-sushi-neta-case.xlsx!Instrucciones!B8",
+    "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B13",
+    "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B27"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "comparativa de proveedores",
+   "origen": "kit-tareas-sushi-bar.ts:136 grid.templates[4]",
+   "fichero": "05-tareas-manager.xlsx",
+   "minimo": 1,
+   "apariciones": 4,
+   "donde": [
+    "05-tareas-manager.xlsx!Instrucciones!B6",
+    "05-tareas-manager.xlsx!Instrucciones!B13",
+    "05-tareas-manager.xlsx!Tareas Semanales Manager!B14",
+    "05-tareas-manager.xlsx!Comparativa de Proveedores!A1"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "reporting",
+   "origen": "kit-tareas-sushi-bar.ts:136 grid.templates[4]",
+   "fichero": "05-tareas-manager.xlsx",
+   "minimo": 1,
+   "apariciones": 4,
+   "donde": [
+    "05-tareas-manager.xlsx!Instrucciones!B6",
+    "05-tareas-manager.xlsx!Instrucciones!B14",
+    "05-tareas-manager.xlsx!Tareas Semanales Manager!B15",
+    "05-tareas-manager.xlsx!Reporting Semanal!A1"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "delivery / take away",
+   "origen": "kit-tareas-sushi-bar.ts:141 grid.templates[5] y :286 cta.items[4]",
+   "fichero": "06-tareas-perfiles.xlsx",
+   "minimo": 1,
+   "apariciones": 3,
+   "donde": [
+    "06-tareas-perfiles.xlsx!Instrucciones!B11",
+    "06-tareas-perfiles.xlsx!Instrucciones!B13",
+    "06-tareas-perfiles.xlsx!Delivery y Take Away!A1"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "festivos asiáticos (≥2)",
+   "origen": "kit-tareas-sushi-bar.ts:151 y :287 «festivos asiáticos» (plural)",
+   "fichero": null,
+   "minimo": 2,
+   "apariciones": 6,
+   "donde": [
+    "08-eventos-estacionales.xlsx!Eventos Especiales!B16",
+    "08-eventos-estacionales.xlsx!Eventos Especiales!B25",
+    "08-eventos-estacionales.xlsx!Eventos Especiales!B26",
+    "BONUS-02-calendario-anual.xlsx!Calendario Anual!A12"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "cierres por vacaciones",
+   "origen": "kit-tareas-sushi-bar.ts:166 y :231 bonus.items[1]",
+   "fichero": "BONUS-02-calendario-anual.xlsx",
+   "minimo": 1,
+   "apariciones": 2,
+   "donde": [
+    "BONUS-02-calendario-anual.xlsx!Calendario Anual!A16",
+    "BONUS-02-calendario-anual.xlsx!Calendario Anual!A17"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "omakase",
+   "origen": "kit-tareas-sushi-bar.ts:136 y :287",
+   "fichero": null,
+   "minimo": 1,
+   "apariciones": 7,
+   "donde": [
+    "05-tareas-manager.xlsx!Tareas Diarias Manager!B15",
+    "06-tareas-perfiles.xlsx!Itamae (Chef Sushi)!B12",
+    "08-eventos-estacionales.xlsx!Instrucciones!B7",
+    "08-eventos-estacionales.xlsx!Eventos Especiales!A5"
+   ],
+   "ok": true
+  },
+  {
+   "termino": "mermas",
+   "origen": "§2.2 — sostiene el argumento «€14 frente a €40/mes»",
+   "fichero": null,
+   "minimo": 1,
+   "apariciones": 9,
+   "donde": [
+    "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B7",
+    "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B25",
+    "03-seguridad-anisakis-appcc.xlsx!Registro de Mermas!A1",
+    "03-seguridad-anisakis-appcc.xlsx!Registro de Mermas!A30"
+   ],
+   "ok": true
+  }
+ ],
+ "gate_limite_unico_detalle": {
+  "cámara de pescado crudo": {
+   "(0.0, 2.0)": [
+    "01-apertura-cierre-sushi.xlsx!Instrucciones!B20",
+    "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B8",
+    "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B18",
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B5",
+    "03-seguridad-anisakis-appcc.xlsx!Control de Recepción!A29"
+   ]
+  },
+  "cámara de congelación de anisakis": {
+   "(None, -20.0)": [
+    "01-apertura-cierre-sushi.xlsx!Instrucciones!B21",
+    "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B9",
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B6"
+   ]
+  },
+  "vitrina neta case": {
+   "(2.0, 4.0)": [
+    "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B6",
+    "01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B7",
+    "01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B10",
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B7",
+    "04-barra-sushi-neta-case.xlsx!Instrucciones!B7",
+    "04-barra-sushi-neta-case.xlsx!Instrucciones!B8",
+    "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B7",
+    "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B13",
+    "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B26",
+    "04-barra-sushi-neta-case.xlsx!Mise en Place Barra!B29"
+   ]
+  },
+  "congelador general": {
+   "(None, -18.0)": [
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B9"
+   ]
+  },
+  "cámara de refrigeración general": {
+   "(0.0, 4.0)": [
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B8"
+   ]
+  },
+  "aceite de fritura": {
+   "(170.0, 180.0)": [
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B10",
+    "06-tareas-perfiles.xlsx!Cocina Caliente!B9"
+   ]
+  },
+  "arroz de servicio": {
+   "(35.0, 37.0)": [
+    "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B11"
+   ]
+  }
+ }
+}
