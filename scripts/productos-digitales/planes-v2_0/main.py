@@ -122,6 +122,17 @@ PRODUCTOS = (
 )
 
 
+def _json_seguro(o):
+    """Escalares de numpy → tipos nativos; lo demás, a texto."""
+    for metodo in ('item', 'tolist'):
+        if hasattr(o, metodo):
+            try:
+                return getattr(o, metodo)()
+            except Exception:                                 # noqa: BLE001
+                pass
+    return str(o)
+
+
 def log(msg):
     print(msg, flush=True)
 
@@ -1005,7 +1016,12 @@ def main():
     if args.json:
         os.makedirs(os.path.dirname(os.path.abspath(args.json)), exist_ok=True)
         with open(args.json, 'w', encoding='utf-8') as fh:
-            json.dump(informe, fh, ensure_ascii=False, indent=1)
+            # pycel devuelve escalares de numpy (`bool_`, `float64`) en
+            # cuanto una fórmula pasa por SUMPRODUCT o MATCH, y el informe
+            # los arrastra: sin este conversor, el volcado del JSON revienta
+            # DESPUÉS de haber hecho todo el trabajo.
+            json.dump(informe, fh, ensure_ascii=False, indent=1,
+                      default=_json_seguro)
         log('\ninforme → ' + args.json)
 
     log('\n' + ('FALLOS:\n  ' + '\n  '.join(str(x) for x in fallos) if fallos
