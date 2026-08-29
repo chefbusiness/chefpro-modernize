@@ -2177,7 +2177,11 @@ def _demo_ticket(carpeta, destino):
         # ejemplo: cubiertos/día y días son celdas verdes vacías y la
         # facturación vale 0 con razón. Exigir ahí que «suba» sería exigir que
         # el módulo de contenido exista, que es otro gate y de otra tanda.
-        if not _num(antes[1]) or antes[1] == 0:
+        # ⚠️ La guarda mira la FACTURACIÓN, no el ticket: los 5 hermanos traen
+        # el ticket precargado de fábrica pero NO los cubiertos/día, que son
+        # filas que añade el grupo. Mirando el ticket, la guarda no saltaba y
+        # los cinco daban un fallo que no era suyo.
+        if not _num(antes[0]) or antes[0] == 0:
             r['sin_ejemplo_precargado'] = True
         elif not (_num(antes[0]) and _num(despues[0])
                   and despues[0] > antes[0]):
