@@ -446,3 +446,13 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
 - **Construcción del representante A LANZADA**: `planes-v2-workflow.js` (`f4577f1`), runId `wf_bfa5c64b-148`, paquete `planes-v2_0/` (motor + grupo_a +
   contenido_plan_negocio_bar_restaurante/a.py + main.py con `PLANES_APPLY=1`), informes `auditorias/planes-v2-*.json`; auto-commit nohup
   `scratchpad/autocommit-planes.sh`. Después: T6 (grupo_b + refutación de coctelería) → hermanos → documentos → capa de producto.
+- **SPEC v2.0 de los 7 kits CB ESCRITA y firmada** (`62e1cca`, `kit-tareas-cb-v2-SPEC.md`, 76/76 ids): **tres moldes** (▸ sushi-bar/asador · PLANO
+  marisquería/panadería/food-truck/tapas-bar sin Instrucciones ni fórmulas · P4 chef-privado con contadores falsos «5 de 41» con 36 tareas); el motor de
+  familia 2.6 **no reconoce el molde PLANO** (tapas-bar sale «sin novedad» y el censo en verde) → 9 extensiones CB-E1..E9; **anisakis falso también en
+  marisquería** (`03-trazabilidad-appcc-marisco.xlsx!'Trazabilidad APPCC'!B22`); 845 palabras sin tilde en 653 celdas; 09 vacío en 4 kits; arqueo/reporting/
+  vacaciones prometidos y ausentes. Decisiones 16-24 (PLANO completo con Instrucciones; marca CB acentuada y chef-privado con AI Chef Pro → John; arqueo
+  portado; temperaturas y anisakis con norma en celda; pH tiras + acidificación; frecuencias unificadas; mega-pack → John; limite_unico aborta;
+  **regresión ▸ = 0 diferencias en cafetería y hotel como gate bloqueante**, porque el motor sostiene 11 kits LIVE).
+  Workflow `kit-tareas-cb-v2-workflow.js` (`3a2600d`) escrito y **pendiente de lanzar** cuando termine una de las dos construcciones (tres dry-runs
+  simultáneos rozan la regla térmica): `Workflow({scriptPath:'scripts/productos-digitales/kit-tareas-cb-v2-workflow.js', args:{productId:'kit-tareas-sushi-bar'}})`.
+  Canario real de esta sub-familia: **chef-privado** (el motor ya lo arregla y de paso corrige el mega-pack).
