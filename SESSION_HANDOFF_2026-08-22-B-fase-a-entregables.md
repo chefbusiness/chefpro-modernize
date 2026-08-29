@@ -428,3 +428,10 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
   de relanzar (lección del 24-ago); relanzar `Workflow({scriptPath:'scripts/productos-digitales/guias-v2-workflow.js', args:{productId:'guia-restaurante-gastronomico', par:2}})`.
   Después del crítico: canario `pl-mensual-escenarios.xlsx` → APPLY del representante → T6 hermanos (sonnet ×7) → T7 documentos (research con fuente +
   guion + bridge.py + reportlab) → T8 capa de producto → T9 cierre.
+- **R1 `kit-tareas-sushi-bar`** (`e317bdc`): **76 hallazgos / 14 altas, «no listo» ×3**, pero los contadores y la Fase A están bien (excel 1 alta). Lo grave es
+  de CONTENIDO: cita legal falsa del anisakis («−20 °C 7 días» atribuido al RD 1420/2006; la norma exige −20 °C ≥ 24 h o −35 °C ≥ 15 h), límites críticos
+  contradictorios, cadena horaria del arroz imposible, pH ≤ 4,6 no verificable con tiras, **todo el contenido sin tildes ni ñ («Ano: ____»)**, perfil de
+  delivery prometido e inexistente, hoja de mermas citada y no entregada, alérgenos sin pescado, temporadas de bonito/atún cruzadas.
+  **SPEC v2.0 de la sub-familia (7 kits CB + mega-pack) en redacción (opus)** → `kit-tareas-cb-v2-SPEC.md`, reutilizando el motor de familia
+  `kit-tareas-v2_0` (la SPEC debe demostrar en dry-run si el motor 2.4 reconoce este molde o qué extender) + `contenido_<pid>.py`; 8 decisiones firmadas
+  (marca CB se queda —decisión de John— pero acentuada; normativa citada con fuente; 14 alérgenos; tildes en todas las celdas; rating/ancla → John).
