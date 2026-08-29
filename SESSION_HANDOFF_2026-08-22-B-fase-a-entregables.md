@@ -515,3 +515,10 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   T7 (documentos: `documentos.py` + guiones + bridge.py) y T8 (capa de producto) siguen sin existir: van después del APPLY del representante.
 - **Kits CB: workflow `kit-tareas-cb-v2-workflow.js` LANZADO** (runId `wf_1b4fe05c-716`) al liberarse el hueco térmico; auto-commit nohup `autocommit-cb.sh`
   sobre `kit-tareas-v2_0/`.
+- **Planes A representante LIVE (`c0ba0a6`, deploy ready 09:05):** fixer cerró CRIT-01..06 + TEC-21 (`TEXT` con «0», helper `dec1()`) + **gate nuevo
+  `blancos_contaminados`** en `main.py` (caché None + cuerpo sin `""` propio + guarda falsa; prueba negativa: detecta 13 al revertir CRIT-01; destapa
+  66-68 blancos en cada hermano A-β → T7 los deja a 0). Mi verificación: dry-run 13/13, 13 celdas clave OK (tesorería 12+12 numéricos, N21 105.415,02,
+  M22 166.219,82, payback 2,58, B54 40.460, B55 8.396, B48 179.164,80, P&L B50 48.931,44, Escenarios C19 = P&L B43 y C26 = M22, «Diseñador», «Crítico»),
+  0 errores Excel. APPLY con respaldo → censo 0 → gate offline 3/0 → no-latinos 0 → idempotencia desde lo aplicado 0 → gate LIVE 3/0 → md5 2/2.
+  El docx del plan sigue v1.1 (T9). **T7 hermanos de línea A LANZADO** (`planes-v2-hermanos-workflow.js`, runId `wf_5eed55a4-546`: cafetería, tapas-bar,
+  panadería, food-truck en serie; sonnet construye `contenido_<pid>/a.py`, opus refuta). Después: APPLY de cada hermano en serie con `PLANES_APPLY=1`.
