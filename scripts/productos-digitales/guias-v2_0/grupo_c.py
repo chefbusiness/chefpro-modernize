@@ -261,6 +261,28 @@ def _fin_por_columna(ws, fila_cab, letra, numerica=False, tope=None):
     return fin
 
 
+def _primera_por_columna(ws, fila_cab, letra, numerica=False, tope=None):
+    """Primera fila de DATOS, medida igual que la última.
+
+    No es `fila_cab + 1` y darlo por hecho costó un defecto real: en el modelo
+    E2 la fila que sigue a la cabecera es `B5='NOMBRE DEL PLATO:'` con el nombre
+    del plato en `C5`, no un ingrediente. Escribir ahí la fórmula de coste
+    metía un cálculo en la fila del título del plato y lo incluía en el SUM del
+    coste total. Se detectó al correr el módulo contra un HERMANO, no contra el
+    representante, donde la primera fila sí es la 7.
+    """
+    col = _col(letra)
+    ultima = min(tope, ws.max_row) if tope else ws.max_row
+    for r in range(fila_cab + 1, ultima + 1):
+        v = ws.cell(row=r, column=col).value
+        if v is None or (isinstance(v, str) and not v.strip()):
+            continue
+        if numerica and not _es_num(v):
+            continue
+        return r
+    return fila_cab + 1
+
+
 def _fila_marca(ws):
     """Fila donde empieza el bloque que este módulo posee, si ya está escrito."""
     for r in range(1, ws.max_row + 1):
@@ -302,6 +324,32 @@ def _limpiar(ws, desde, hasta):
         return
     ultima = get_column_letter(max(ws.max_column, 12))
     motor.limpiar_rango(ws, 'A' + str(desde) + ':' + ultima + str(hasta))
+
+
+def _snapshot_parametros(ws, desde, hasta):
+    """Guarda `etiqueta -> valor` del bloque ANTES de borrarlo.
+
+    El bloque de parámetros se reescribe entero en cada pasada, y algunos
+    valores no se pueden recalcular: el food cost de los hermanos se lee del
+    literal de la fórmula ORIGINAL («=G18/0.33»), que en la 2.ª pasada ya no
+    existe. Sin esta foto, la 2.ª pasada dejaba `E20` vacío y la idempotencia
+    saltaba — y, peor, en producción se habría llevado por delante el valor que
+    el cliente hubiera escrito ahí.
+    """
+    prev = {}
+    if hasta >= desde:
+        for r in range(desde, min(hasta, ws.max_row) + 1):
+            for c in range(1, ws.max_column):
+                et = _norm(ws.cell(row=r, column=c).value)
+                if not et:
+                    continue
+                for cc in range(c + 1, min(c + 2, ws.max_column) + 1):
+                    v = ws.cell(row=r, column=cc).value
+                    if v is not None and not isinstance(v, str):
+                        prev.setdefault(et, v)
+                        break
+    ws._g_prev = prev
+    return prev
 
 
 def _a4(ws):
@@ -365,6 +413,17 @@ def _param(ws, fila, clave, valor=None, etiqueta=None, fmt=None, nota=None,
         nota = nota or p['nota']
     col_val = col_val or get_column_letter(_col(col_et) + 1)
     col_nota = col_nota or get_column_letter(_col(col_val) + 1)
+    # Un parámetro sin valor NUNCA pisa el que ya está en la celda. Sin esta
+    # línea, la 2.ª pasada borraba el food cost del escandallo de los hermanos:
+    # el 0,33 se lee de la fórmula ORIGINAL («=G18/0.33»), que en la 2.ª pasada
+    # ya no existe, así que `valor` llegaba None y el parámetro se vaciaba. Lo
+    # cazó la idempotencia corriendo el módulo contra japonés.
+    if valor is None:
+        actual = ws[col_val + str(fila)].value
+        if actual is not None and not isinstance(actual, str):
+            valor = actual
+        else:
+            valor = getattr(ws, '_g_prev', {}).get(_norm(etiqueta))
     _et(ws, col_et + str(fila), etiqueta)
     celda = motor.val(ws, col_val + str(fila), valor, fmt=fmt, verde_=verde)
     motor.fijar_formato(ws, col_val + str(fila), fmt or 'General')
@@ -449,8 +508,9 @@ def _literal_de(ws, coord, patron):
 # ==========================================================================
 def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
     marca = _fila_marca(ws)
-    fin = _fin_por_columna(ws, fila_cab, 'A', numerica=True,
-                           tope=(marca - 1) if marca else None)
+    _t = (marca - 1) if marca else None
+    fin = _fin_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
+    primera = _primera_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
     if fin <= fila_cab:
         raise EstructuraDesconocida(fname + ':' + ws.title
                                     + ': 0 líneas de ingrediente')
@@ -496,7 +556,7 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
     # ---- la merma entra en el coste (DOM-04) ------------------------------
     ws['D' + str(fila_cab)].value = 'Cantidad NETA (ración)'
     ws['G' + str(fila_cab)].value = 'Cantidad BRUTA a comprar'
-    for r in range(fila_cab + 1, fin + 1):
+    for r in range(primera, fin + 1):
         motor.f(ws, 'G' + str(r),
                 motor.iferror('IF(OR($D{r}="",$F{r}>=1),"",$D{r}/(1-$F{r}))'
                               .format(r=r)), fmt=FMT_G)
@@ -508,9 +568,9 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
         motor.fijar_formato(ws, 'D' + str(r), FMT_G)
         motor.fijar_formato(ws, 'E' + str(r), motor.FMT_EUR)
         motor.fijar_formato(ws, 'F' + str(r), motor.FMT_PCT)
-    motor.dv_porcentaje(ws, ['F' + str(r) for r in range(fila_cab + 1, fin + 1)])
+    motor.dv_porcentaje(ws, ['F' + str(r) for r in range(primera, fin + 1)])
     cambios.append(
-        fname + ':' + ws.title + '!G' + str(fila_cab + 1) + ':H' + str(fin)
+        fname + ':' + ws.title + '!G' + str(primera) + ':H' + str(fin)
         + ': la merma ENTRA en el coste — D pasa a «Cantidad NETA (ración)», '
           'G a «Cantidad BRUTA a comprar» = neta/(1-merma) y H = bruta x '
           'precio. Antes H=D*E no leía ni F ni G: con merluza a 22 EUR/kg, '
@@ -518,13 +578,14 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
           '[DOM-04 · TEC-06 · COM-33 · §4.1]')
 
     # ---- bloque de resultado (lo posee este módulo) -----------------------
+    _snapshot_parametros(ws, fin + 1, ws.max_row)
     _limpiar(ws, fin + 1, max(ws.max_row, (marca or 0) + 14))
     r = fin + 1
     _et(ws, 'G' + str(r), MARCA_C, bold=True)
     r += 1
     _et(ws, 'G' + str(r), 'COSTE TOTAL DE LA FICHA (€)', bold=True)
     motor.f(ws, 'H' + str(r),
-            _suma_guardada('H' + str(fila_cab + 1) + ':H' + str(fin)),
+            _suma_guardada('H' + str(primera) + ':H' + str(fin)),
             fmt=motor.FMT_EUR, bold=True)
     ref_total = '$H$' + str(r)
     r += 1
@@ -568,7 +629,8 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
           'una ficha de 10 raciones y 60 EUR de coste proponía 214,29 EUR por '
           'plato en vez de 21,43 EUR [TEC-05 · TEC-21 · DOM-05 · DOM-30 · '
           'DOM-03 · COM-14 · §4.1]')
-    return {'modelo': 'E1', 'fila_cab': fila_cab, 'fin': fin,
+    return {'modelo': 'E1', 'fila_cab': fila_cab, 'primera': primera,
+            'fin': fin,
             'coste_total': ref_total.replace('$', ''),
             'coste_racion': ref_racion.replace('$', ''),
             'pvp_sin_iva': ref_pvp.replace('$', ''),
@@ -581,8 +643,10 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
 # ==========================================================================
 def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
     marca = _fila_marca(ws)
-    fin = _fin_por_columna(ws, fila_cab, 'A', numerica=True,
-                           tope=(marca - 1) if marca else None)
+    _t = (marca - 1) if marca else None
+    fin = _fin_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
+    # La primera fila de datos NO es fila_cab+1: la 5 es `NOMBRE DEL PLATO:`.
+    primera = _primera_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
     if fin <= fila_cab:
         raise EstructuraDesconocida(fname + ':' + ws.title
                                     + ': 0 líneas de ingrediente')
@@ -605,10 +669,11 @@ def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
     if iva is not None and iva > 1:
         iva = round(iva - 1, 4)          # `=G19*1.10` -> 0,10
     pie_fila, pie_texto = _pie_existente(ws, fila_cab + 1)
+    _snapshot_parametros(ws, fila_total, ws.max_row)
     _limpiar(ws, fila_total, max(ws.max_row, (marca or 0) + 14))
 
     # ---- la merma entra como rendimiento, no como recargo (DOM-04) --------
-    for r in range(fila_cab + 1, fin + 1):
+    for r in range(primera, fin + 1):
         motor.f(ws, 'E' + str(r),
                 motor.iferror('IF(OR($C{r}="",$D{r}=""),"",$C{r}/$K$3*$D{r})'
                               .format(r=r)), fmt=motor.FMT_EUR)
@@ -619,7 +684,7 @@ def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
         motor.verde(ws, 'F' + str(r))
         motor.fijar_formato(ws, 'D' + str(r), motor.FMT_EUR)
         motor.fijar_formato(ws, 'F' + str(r), motor.FMT_PCT)
-    motor.dv_porcentaje(ws, ['F' + str(r) for r in range(fila_cab + 1, fin + 1)])
+    motor.dv_porcentaje(ws, ['F' + str(r) for r in range(primera, fin + 1)])
     # La conversión g -> kg va en celda para que la fórmula no lleve el 1000
     # escrito dentro (§1.3). No es verde: no es un dato del cliente, es la
     # equivalencia de unidades de la propia tabla.
@@ -627,7 +692,7 @@ def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
     motor.val(ws, 'K3', 1000, fmt=motor.FMT_ENT)
     ws['K3'].protection = Protection(locked=True)
     cambios.append(
-        fname + ':' + ws.title + '!G' + str(fila_cab + 1) + ':G' + str(fin)
+        fname + ':' + ws.title + '!G' + str(primera) + ':G' + str(fin)
         + ': la merma pasa de RECARGO a rendimiento — antes G=E*(1+F) daba '
           'x1,20 para una merma del 20 % cuando lo correcto es /(1-0,20) = '
           'x1,25 (-4 % de coste por línea, -20 % con las mermas del 40 % del '
@@ -638,7 +703,7 @@ def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
     _et(ws, 'A' + str(r), MARCA_C, bold=True)
     _et(ws, 'B' + str(r), 'COSTE TOTAL PLATO (€)', bold=True)
     motor.f(ws, 'G' + str(r),
-            _suma_guardada('G' + str(fila_cab + 1) + ':G' + str(fin)),
+            _suma_guardada('G' + str(primera) + ':G' + str(fin)),
             fmt=motor.FMT_EUR, bold=True)
     ref_total = '$G$' + str(r)
     r += 1
@@ -692,12 +757,13 @@ def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
         + ': food cost e IVA salen de la fórmula a celda verde (antes '
           '«=G/0.33» y «=G*1.10» incrustados) + coste por ración + food cost '
           'real [TEC-21 · DOM-03 · DOM-30 · COM-14 · §4.1]')
-    return {'modelo': 'E2', 'fila_cab': fila_cab, 'fin': fin,
+    return {'modelo': 'E2', 'fila_cab': fila_cab, 'primera': primera,
+            'fin': fin,
             'coste_total': ref_total.replace('$', ''),
             'coste_racion': ref_racion.replace('$', ''),
             'pvp_sin_iva': ref_pvp.replace('$', ''),
             'pvp_con_iva': 'G' + str(fila_pvp_iva),
-            'nombre_plato': 'C' + str(fila_cab + 1)}
+            'nombre_plato': 'C' + str(primera - 1)}
 
 
 # ==========================================================================
@@ -715,6 +781,7 @@ def _escandallo_e3(wb, ws, fila_cab, fname, cambios, contenido):
     fin = _fin_por_columna(ws, fila_cab, 'B',
                            tope=(marca - 1) if marca else None)
     cfg = getattr(contenido, 'ESCANDALLO', None) or {}
+    _snapshot_parametros(ws, fin + 1, ws.max_row)
     _limpiar(ws, fin + 1, max(ws.max_row, (marca or 0) + 12))
 
     col_pvp_obj = _cabecera_nueva(ws, fila_cab, 'I',
@@ -746,8 +813,8 @@ def _escandallo_e3(wb, ws, fila_cab, fname, cambios, contenido):
                               + '=0),"",$C{r}/' + ref_fc + ')'.format())
                 .format(r=f_), fmt=motor.FMT_EUR)
         motor.f(ws, col_pvp_iva + str(f_),
-                motor.iferror('IF($D{r}="","",$D{r}*(1+' + ref_iva + '))'
-                              .format(r=f_)), fmt=motor.FMT_EUR)
+                motor.iferror('IF($D{r}="","",$D{r}*(1+' + ref_iva
+                              + '))').format(r=f_), fmt=motor.FMT_EUR)
         motor.verde(ws, 'A' + str(f_) + ':D' + str(f_))
         motor.verde(ws, 'H' + str(f_))
         motor.fijar_formato(ws, 'C' + str(f_), motor.FMT_EUR)
@@ -763,7 +830,9 @@ def _escandallo_e3(wb, ws, fila_cab, fname, cambios, contenido):
         'renombra a «' + HOJA_FICHA + '» ni se le añade hoja «' + HOJA_RESUMEN
         + '» (TEC-23) — no hay ficha que duplicar, y tampoco columna de merma '
           'donde aplicar DOM-04. Queda como hallazgo para la capa de producto.')
-    return {'modelo': 'E3', 'fila_cab': fila_cab, 'fin': fin}
+    return {'modelo': 'E3', 'fila_cab': fila_cab, 'fin': fin,
+            'primera': fila_cab + 1, 'ref_fc': ref_fc, 'ref_iva': ref_iva,
+            'col_pvp_obj': col_pvp_obj, 'col_pvp_iva': col_pvp_iva}
 
 
 # ==========================================================================
@@ -907,16 +976,19 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
         col_uds, col_coste, col_pvp, col_margen = 'D', 'E', 'F', 'G'
         col_mix, col_clase, col_accion = 'H', 'I', 'J'
         col_cat = 'C'
-        primera = fila_cab + 1
+        primera = _primera_por_columna(ws, fila_cab, 'A', numerica=True,
+                                       tope=_t)
         ultima = _fin_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
     else:
         col_uds, col_coste, col_pvp, col_margen = 'F', 'D', 'C', 'G'
         col_mix, col_clase, col_accion = 'I', 'J', 'K'
         col_cat = None
-        primera = fila_cab + 1
+        primera = _primera_por_columna(ws, fila_cab, 'A', numerica=True,
+                                       tope=_t)
         ultima = _fin_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
 
     pie_fila, pie_texto = _pie_existente(ws, fila_cab + 1)
+    _snapshot_parametros(ws, ultima + 1, ws.max_row)
     _limpiar(ws, ultima + 1, max(ws.max_row, (marca or 0) + 12))
 
     # ---- platos de ejemplo (§4.2: el representante no tiene ninguno) ------
@@ -1094,9 +1166,9 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
                                   if v is not None)))
     cfg = getattr(contenido, 'BODEGA', None) or {}
     marca = _fila_marca(ws)
-    primera = fila_cab + 1
-    ultima = _fin_por_columna(ws, fila_cab, 'A', numerica=True,
-                              tope=(marca - 1) if marca else None)
+    _t = (marca - 1) if marca else None
+    primera = _primera_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
+    ultima = _fin_por_columna(ws, fila_cab, 'A', numerica=True, tope=_t)
     _limpiar(ws, ultima + 1, max(ws.max_row, (marca or 0) + 12))
 
     # ---- H deja de llamar margen a un markup (TEC-20/DOM-28/COM-22) -------
@@ -1287,6 +1359,7 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
         inicio = ws.max_row + 2
     else:
         inicio = fin + 2 if modelo == 'T1' else fin + 1
+    _snapshot_parametros(ws, inicio, ws.max_row)
     _limpiar(ws, inicio, max(ws.max_row, inicio + 26))
 
     col_horas = 'K' if modelo != 'T3' else 'J'
@@ -1512,6 +1585,7 @@ def _registro_jornada(wb, fname, cambios, ws_turnos, puestos, modelo):
     """
     nueva = HOJA_REGISTRO not in wb.sheetnames
     ws = wb[HOJA_REGISTRO] if not nueva else wb.create_sheet(HOJA_REGISTRO)
+    _snapshot_parametros(ws, 1, ws.max_row)
     for row in ws.iter_rows():
         for c in row:
             if c.__class__.__name__ != 'MergedCell':
@@ -1655,6 +1729,7 @@ def _fermentacion(wb, fname, cambios, contenido, registro_modelo):
                                            'descuadres': descuadres}
         return registro_modelo['fermentacion']
 
+    _snapshot_parametros(ws, fin + 1, ws.max_row)
     _limpiar(ws, fin + 1, max(ws.max_row, (marca or 0) + 10))
     col_inicio = _cabecera_nueva(ws, fila_cab, 'J',
                                  'Inicio del amasado (hora)', 20)
@@ -1667,6 +1742,15 @@ def _fermentacion(wb, fname, cambios, contenido, registro_modelo):
         nota=('Escríbela como hora («07:00») y la columna «Inicio del amasado» '
               'te dice a qué hora empezar cada masa, restando su tiempo total. '
               + NOTA_SIN_DATO), col_et='A', col_val='C', col_nota='D')
+    r += 1
+    # La conversión horas -> fracción de día va en celda, no dentro de la
+    # fórmula: `MOD(hora-H4/24,1)` metería un literal 24 en 15 fórmulas y el
+    # gate del §1.3 lo cuenta como parámetro sin celda. No es verde: es una
+    # equivalencia de unidades, no un dato del cliente.
+    _et(ws, 'A' + str(r), 'Horas que tiene un día (conversión de unidades)')
+    motor.val(ws, 'C' + str(r), 24, fmt=motor.FMT_ENT)
+    ws['C' + str(r)].protection = Protection(locked=True)
+    ref_dia = '$C$' + str(r)
     convertidas = 0
     for f_ in range(fila_cab + 1, fin + 1):
         anterior = motor.a_formula(
@@ -1678,9 +1762,9 @@ def _fermentacion(wb, fname, cambios, contenido, registro_modelo):
             convertidas += 1
         motor.fijar_formato(ws, 'H' + str(f_), '#,##0.0')
         motor.f(ws, col_inicio + str(f_),
-                motor.iferror('IF(OR($H{r}="",' + ref_horno + '=""),"",'
-                              'MOD(' + ref_horno + '-$H{r}/24,1))'
-                              .format(r=f_)), fmt=FMT_HORA)
+                motor.iferror('IF(OR($H{r}="",' + ref_horno + '=""),"",MOD('
+                              + ref_horno + '-$H{r}/' + ref_dia
+                              + ',1))').format(r=f_), fmt=FMT_HORA)
         motor.fijar_formato(ws, col_inicio + str(f_), FMT_HORA)
         motor.verde(ws, 'A' + str(f_) + ':G' + str(f_))
         motor.verde(ws, 'I' + str(f_))
@@ -1700,6 +1784,7 @@ def _fermentacion(wb, fname, cambios, contenido, registro_modelo):
         'El «Tiempo total h» ya no se teclea: es la suma del bulk, el bloque '
         'frío y la fermentación final.'])
     registro_modelo['fermentacion'] = {'convertidas': convertidas,
+                                       'primera': fila_cab + 1,
                                        'descuadres': []}
     return registro_modelo['fermentacion']
 
@@ -1828,6 +1913,19 @@ def _copia(carpeta, fname, destino, sufijo=''):
     return fuera
 
 
+def _precalentar(xl, refs):
+    """Evalúa las celdas de SALIDA antes de cambiar ningún input.
+
+    pycel devuelve el valor CACHEADO de una celda que no está todavía en su
+    mapa, así que un `set_value` sobre una entrada no mueve una salida que
+    nunca se evaluó: medido en `escandallo-maestro-panaderia!G4`, que seguía
+    dando 1,82 (el valor del fichero) después de cambiar C4 y D4. Con la
+    celda ya en el mapa, el mismo cambio da el resultado correcto. Sin esto
+    una demo puede dar «ok» leyendo el número viejo.
+    """
+    return [_ev(xl, r) for r in refs]
+
+
 def _cerca(a, b, tol=0.01):
     return isinstance(a, (int, float)) and isinstance(b, (int, float)) \
         and abs(a - b) <= tol
@@ -1859,6 +1957,36 @@ def demos(carpeta, destino, contenido):
     det = resultado['grupo_c']
     import openpyxl
 
+    # ---- 0. gate de plantilla sin sustituir -----------------------------
+    # Nace de un defecto REAL de este módulo, cazado por las demos y no por la
+    # lectura del diff: `motor.iferror('IF($D{r}=…' + ref + '))'.format(r=f_)`
+    # aplica el `.format` al ÚLTIMO literal (`'))'`), no a la concatenación, y
+    # deja `{r}` DENTRO de la fórmula. El fichero se guarda, el censo pasa, y
+    # `verificar_cache` lo manda a «vacías no verificadas» —que no es fallo—
+    # porque la fórmula contiene `""`. En Excel el cliente vería #¿NOMBRE?.
+    # Dos caracteres, 25 celdas y ninguna alarma: por eso el barrido es
+    # explícito y bloqueante.
+    plantillas = []
+    for fname in sorted(os.listdir(carpeta)):
+        if not fname.endswith('.xlsx') or \
+                not any(fname.startswith(x) for x in PREFIJOS):
+            continue
+        wbp = openpyxl.load_workbook(os.path.join(carpeta, fname))
+        for ws in wbp.worksheets:
+            for row in ws.iter_rows():
+                for c in row:
+                    if c.data_type == 'f' and isinstance(c.value, str) \
+                            and ('{' in c.value or '}' in c.value):
+                        plantillas.append(fname + ':' + ws.title + '!'
+                                          + c.coordinate + '=' + c.value[:70])
+    det['formulas_con_marcador_sin_sustituir'] = plantillas[:20]
+    det['formulas_con_marcador_sin_sustituir_total'] = len(plantillas)
+    if plantillas:
+        fallos.append(
+            str(len(plantillas)) + ' fórmulas con un marcador de plantilla sin '
+            'sustituir ({r}) — el `.format` se aplicó al último literal en vez '
+            'de a la concatenación: ' + '; '.join(plantillas[:5]))
+
     for fname in sorted(os.listdir(carpeta)):
         if not fname.endswith('.xlsx'):
             continue
@@ -1875,9 +2003,49 @@ def demos(carpeta, destino, contenido):
                 [w for w in wb.worksheets if w.title != 'Instrucciones'][0]
             pref = "'" + ws.title + "'!"
             if e['modelo'] == 'E3':
+                xl = _pycel(_copia(carpeta, fname, destino))
+                r0 = e['primera']
+                _precalentar(xl, [pref + L + str(r0) for L in
+                                  ('E', 'F', 'G', e['col_pvp_obj'],
+                                   e['col_pvp_iva'])])
+                _set(xl, pref + 'C' + str(r0), 1.0)
+                _set(xl, pref + 'D' + str(r0), 4.0)
+                _set(xl, pref + e['ref_fc'].replace('$', ''), 0.25)
+                fc = _ev(xl, pref + 'E' + str(r0))
+                margen = _ev(xl, pref + 'G' + str(r0))
+                sug = _ev(xl, pref + e['col_pvp_obj'] + str(r0))
+                con_iva = _ev(xl, pref + e['col_pvp_iva'] + str(r0))
+                # El «libro en blanco» se prueba VACIANDO la celda de verdad
+                # con openpyxl y recompilando: `set_value(..., None)` de pycel
+                # no deja la celda vacía y la demo daba por bueno el valor
+                # viejo. Es la misma clase de falso verde que el
+                # `_precalentar`.
+                copia_v = _copia(carpeta, fname, destino, '-vacio')
+                wbv = openpyxl.load_workbook(copia_v)
+                wsv = wbv[ws.title]
+                wsv['C' + str(r0)].value = None
+                wsv['D' + str(r0)].value = None
+                wbv.save(copia_v)
+                xl2 = _pycel(copia_v)
+                vacio = _ev(xl2, pref + 'E' + str(r0))
+                ok = (_cerca(fc, 0.25) and _cerca(margen, 3.0)
+                      and _cerca(sug, 4.0) and _cerca(con_iva, 4.4)
+                      and vacio == '')
                 det.setdefault('escandallo', []).append(
-                    {'fichero': fname, 'modelo': 'E3',
-                     'nota': 'tabla de productos: sin ficha ni merma'})
+                    {'fichero': fname, 'modelo': 'E3', 'hoja': ws.title,
+                     'coste_1_pvp_4_food_cost_esperado_0_25': fc,
+                     'margen_esperado_3': margen,
+                     'pvp_sugerido_al_25_esperado_4': sug,
+                     'pvp_con_iva_esperado_4_40': con_iva,
+                     'food_cost_sin_pvp_esperado_vacio': vacio,
+                     'ok': bool(ok)})
+                if not ok:
+                    fallos.append(
+                        fname + ':' + ws.title + ': con coste 1 EUR, PVP 4 EUR '
+                        'y food cost objetivo 25 % se esperaba 25 %, margen '
+                        '3 EUR, PVP sugerido 4 EUR y con IVA 4,40 EUR; salió '
+                        + repr((fc, margen, sug, con_iva))
+                        + ' y sin PVP ' + repr(vacio) + ' [DOM-03 · DOM-30]')
             else:
                 xl = _pycel(_copia(carpeta, fname, destino))
                 blanco = {}
@@ -1893,7 +2061,7 @@ def demos(carpeta, destino, contenido):
                             + str({k: blanco[k] for k in malos})
                             + ' en vez de "" — un 0,00 EUR en una fila de '
                               'COSTE TOTAL se lee como un resultado (§7-bis.13)')
-                    fila = e['fila_cab'] + 1
+                    fila = e['primera']
                     _set(xl, pref + 'D' + str(fila), 0.18)
                     _set(xl, pref + 'E' + str(fila), 22)
                     _set(xl, pref + 'F' + str(fila), 0.0)
@@ -1952,7 +2120,10 @@ def demos(carpeta, destino, contenido):
                             + ': el PVP con IVA (' + repr(iva) + ') no es el '
                               'PVP sin IVA por 1,10 [DOM-03 · COM-14]')
                 else:
-                    fila = e['fila_cab'] + 1
+                    fila = e['primera']
+                    _precalentar(xl, [pref + e[k] for k in
+                                      ('coste_total', 'coste_racion',
+                                       'pvp_sin_iva', 'pvp_con_iva')])
                     total0 = _ev(xl, pref + e['coste_total'])
                     _set(xl, pref + 'F' + str(fila), 0.0)
                     sin_m = _ev(xl, pref + e['coste_total'])
@@ -1981,27 +2152,33 @@ def demos(carpeta, destino, contenido):
                     xl2 = _pycel(_copia(carpeta, fname, destino, '-res'))
                     pr = "'" + HOJA_RESUMEN + "'!"
                     vacio = _ev(xl2, pr + 'C5')
-                    fila2 = e['fila_cab'] + 1
+                    fila2 = e['primera']
                     col_c, col_p = ('D', 'E') if e['modelo'] == 'E1' \
                         else ('C', 'D')
                     _set(xl2, pref + col_c + str(fila2), 2)
                     _set(xl2, pref + col_p + str(fila2), 10)
                     lleno = _ev(xl2, pr + 'C5')
+                    # El criterio NO puede ser «antes estaba vacío»: E1 se
+                    # entrega en blanco pero E2 viene con 11 ingredientes
+                    # precargados. Lo que demuestra que la referencia entre
+                    # hojas funciona es que el número CAMBIE al tocar la ficha.
                     det.setdefault('resumen', []).append(
-                        {'fichero': fname, 'C5_libro_en_blanco': vacio,
-                         'C5_con_una_linea_de_20_EUR': lleno,
-                         'ok': vacio == '' and isinstance(lleno,
-                                                          (int, float))})
+                        {'fichero': fname, 'C5_antes': vacio,
+                         'C5_tras_tocar_la_ficha': lleno,
+                         'ok': isinstance(lleno, (int, float))
+                         and lleno != vacio})
                     if isinstance(vacio, str) and vacio.startswith('ERR:'):
                         fallos.append(fname + ':' + HOJA_RESUMEN + '!C5: la '
                                       'referencia a la hoja «' + HOJA_FICHA
                                       + '» no evalúa (' + vacio + ') [TEC-23]')
-                    elif not isinstance(lleno, (int, float)):
+                    elif not isinstance(lleno, (int, float)) \
+                            or lleno == vacio:
                         fallos.append(
-                            fname + ':' + HOJA_RESUMEN + '!C5: con la ficha '
-                            'rellena el Resumen sigue devolviendo '
-                            + repr(lleno) + ': la referencia entre hojas no '
-                            'trae el coste [TEC-23]')
+                            fname + ':' + HOJA_RESUMEN + '!C5: al cambiar una '
+                            'línea de la ficha el Resumen pasa de '
+                            + repr(vacio) + ' a ' + repr(lleno)
+                            + ': la referencia entre hojas no trae el coste '
+                              '[TEC-23]')
 
         # ---- 2. menu engineering -----------------------------------------
         if fname.startswith('menu-engineering') and est.get('menu'):
@@ -2073,6 +2250,8 @@ def demos(carpeta, destino, contenido):
                     fname + ':' + ws.title + '!fila ' + str(b['fila_total'])
                     + ': con la bodega EN BLANCO el TOTAL devuelve ' + str(malos)
                     + ' en vez de "" (§7-bis.13)')
+            _precalentar(xl, [pref + L + str(r0)
+                              for L in ('G', 'H', 'J', 'L', 'M', 'N', 'O')])
             _set(xl, pref + 'E' + str(r0), 10)
             _set(xl, pref + 'F' + str(r0), 30)
             _set(xl, pref + 'I' + str(r0), 24)
@@ -2118,6 +2297,7 @@ def demos(carpeta, destino, contenido):
                        'hoja': ws.title, 'puestos': t['puestos'],
                        'horas_fila_' + str(r0) + '_al_abrir': horas0,
                        'total_horas_al_abrir': total0}
+            _precalentar(xl, [pref + L + str(r0) for L in ('N', 'O', 'P')])
             if t['modelo'] != 'T3':
                 for L in 'DEFGHIJ':
                     _set(xl, pref + L + str(r0), 'L')
@@ -2195,6 +2375,7 @@ def demos(carpeta, destino, contenido):
                 xl4 = _pycel(copia3)
                 pr = "'" + HOJA_REGISTRO + "'!"
                 vacio_h = _ev(xl4, pr + 'F5')
+                _precalentar(xl4, [pr + c for c in ('F6', 'G6', 'H6', 'F7')])
                 _set(xl4, pr + 'B5', 'Ana')
                 _set(xl4, pr + 'D5', 0.5)          # 12:00
                 _set(xl4, pr + 'E5', 0.9583333333333334)   # 23:00
@@ -2228,24 +2409,35 @@ def demos(carpeta, destino, contenido):
                         + ' (esperado 8 h) [DOM-16]')
 
         # ---- 5. fermentación ----------------------------------------------
+        # ⚠️ NO se condiciona a `convertidas`: `ESTRUCTURA` la reescribe la 2.ª
+        # pasada de la idempotencia, donde ya no queda ninguna constante que
+        # convertir y el contador vuelve a 0. La demo se saltaba entera en
+        # silencio. Se condiciona a que no haya descuadres, que sí es estable.
         if fname.startswith('plan-fermentacion') and est.get('fermentacion') \
-                and est['fermentacion'].get('convertidas'):
+                and not est['fermentacion'].get('descuadres'):
             ws = [w for w in wb.worksheets if w.title != 'Instrucciones'][0]
             pref = "'" + ws.title + "'!"
             xl = _pycel(_copia(carpeta, fname, destino))
-            antes = _ev(xl, pref + 'H4')
-            _set(xl, pref + 'F4', 24)
-            despues = _ev(xl, pref + 'H4')
-            ok = isinstance(antes, (int, float)) and \
-                isinstance(despues, (int, float)) and \
-                _cerca(despues - antes, 24 - 0, 0.01) is False and \
-                despues > antes
+            fila = est['fermentacion'].get('primera', 4)
+            ref = pref + 'H' + str(fila)
+            _precalentar(xl, [ref, pref + 'J' + str(fila)])
+            antes = _ev(xl, ref)
+            bloque = _ev(xl, pref + 'F' + str(fila))
+            _set(xl, pref + 'F' + str(fila),
+                 (bloque or 0) + 12)
+            despues = _ev(xl, ref)
+            ok = (isinstance(antes, (int, float))
+                  and isinstance(despues, (int, float))
+                  and _cerca(despues - antes, 12, 0.01))
             det.setdefault('fermentacion', []).append({
-                'fichero': fname, 'H4_original': antes,
-                'H4_con_bloque_frio_24h': despues, 'ok': bool(ok)})
+                'fichero': fname, 'fila': fila,
+                'tiempo_total_original': antes,
+                'tiempo_total_con_12h_mas_de_bloque_frio': despues,
+                'diferencia_esperada_12': (despues - antes)
+                if ok else None, 'ok': bool(ok)})
             if not ok:
                 fallos.append(
-                    fname + ':' + ws.title + '!H4: el tiempo total no sigue a '
-                    'sus tramos (' + repr(antes) + ' -> ' + repr(despues)
-                    + ') [§4.5]')
+                    fname + ':' + ws.title + '!H' + str(fila) + ': el tiempo '
+                    'total no sigue a sus tramos: al sumar 12 h de bloque frío '
+                    'pasa de ' + repr(antes) + ' a ' + repr(despues) + ' [§4.5]')
     return resultado
