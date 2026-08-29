@@ -1,0 +1,322 @@
+{
+  "lente": "Refutador de dominio — analista de riesgos de banca y consultor financiero de hostelería: ¿firmaría este plan?",
+  "hallazgos": [
+    {
+      "id": "RD-01",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B41 y B40 contra '2. P&L 3 Años'!B25 y B26",
+      "hallazgo": "Doble conteo de 3.800 € entre inversión y P&L del año 1: el seguro y la gestoría del primer año se capitalizan en la inversión Y se vuelven a cargar como coste fijo anual. Es el mismo defecto que la SPEC §3.4.1 obliga a quitar en línea B (TEC-12, «1.550 € contados dos veces») y aquí está sin corregir, inflando además el IVA soportado (798 €) y la necesidad de financiación.",
+      "evidencia": "'1. Inversión Inicial'!A41='Seguros (RC + multirriesgo + empleados)' B41=2000 con D41='Primer año'; '2. P&L 3 Años'!A25='Seguros (RC + multirriesgo)' B25==IFERROR('0. Supuestos'!$B$27,\"\")=2000. '1. Inversión Inicial'!A40='Alta gestoría + contabilidad primer año' B40=1800 con D40='150 EUR/mes'; '2. P&L 3 Años'!A26='Gestoría + contabilidad' B26=1800.",
+      "fix": "Sacar del sumatorio de inversión las dos partidas recurrentes (dejar sólo el alta/constitución, no la anualidad) o convertirlas en '=0' con nota; recalcular B38, B45, B46, B47 y el fondo de maniobra."
+    },
+    {
+      "id": "RD-02",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!A6:A44 (bloques) y D51",
+      "hallazgo": "Faltan las TRES partidas que la SPEC §2.2 exige incorporar al Excel —terraza, stock inicial e imprevistos— y la propia nota del libro las cita como si existieran. Un bar-restaurante que abre sin presupuesto de primera compra de bodega y despensa ni colchón de contingencia sobre la obra no es financiable: el banco lo devuelve.",
+      "evidencia": "Las 6 cabeceras de bloque son LOCAL Y ACONDICIONAMIENTO (A6), EQUIPAMIENTO COCINA (A13), EQUIPAMIENTO SALA Y BARRA (A24), MARKETING Y LANZAMIENTO (A34), GASTOS LEGALES Y CONSTITUCIÓN (A38) y FONDO DE MANIOBRA (A43); ninguna fila dice terraza, stock ni imprevistos (grep sobre el volcado: 0 coincidencias). Y D51 imprime «El fondo de maniobra, el stock y los imprevistos NO se amortizan: no son inmovilizado». El checklist sí tiene 'Licencia de terraza (si aplica)' (Checklist Apertura!B23) y el docx par. 52 y 55 vende 15-30 plazas de terraza.",
+      "fix": "Añadir 'Existencias iniciales (bodega y despensa)', 'Mobiliario y toldo de terraza' e 'Imprevistos de obra (% sobre el bloque LOCAL)' como filas verdes con su % en '0. Supuestos'; el imprevisto por fórmula =REDONDEAR(B6*Supuestos!<pct>;0), nunca literal."
+    },
+    {
+      "id": "RD-03",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B45=165.137,93 y B47=184.680,53",
+      "hallazgo": "La recalibración deja la inversión FUERA del rango que el propio producto declara en tres sitios (80.000-150.000 €) y la necesidad de caja un 23 % por encima del techo. El plan pide financiar 185.000 € para un proyecto que su landing describe como de ~133.000 €.",
+      "evidencia": "'1. Inversión Inicial'!B45=165137,925 y B47=184680,525. Contra: fichero v1.1 'Instrucciones'!A21='- Inversion media apertura: 80.000-150.000 EUR'; /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx par. 130 «La inversión de 80.000-150.000 euros»; /Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:123 'Inversión inicial detallada por partidas (~80K-150K EUR)' y :136 '~133K EUR de referencia'. El salto lo produce el fondo de maniobra, que pasa de 9.000 € (v1.1 B7 fianza aparte) a 63.377,93 €.",
+      "fix": "Decidir el caso base ANTES de escribir la capa de producto (§5.2): o se reduce la necesidad de caja (RD-01, RD-16) o se publica la cifra medida en landing, docx y schema. No dejar las dos versiones vivas."
+    },
+    {
+      "id": "RD-04",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!A32:A39 (bloque DATOS DE REFERENCIA DEL SECTOR)",
+      "hallazgo": "El bloque de referencia conserva las cinco filas que el nuevo caso base CUMPLE y ha perdido exactamente las tres que lo contradicen o que aportan el riesgo: la inversión media y las dos tasas de cierre. Para un analista de riesgos, la tasa de supervivencia es el dato que más pesa y ha desaparecido del entregable mientras la landing la sigue vendiendo.",
+      "evidencia": "v2.0 'Instrucciones'!A33:A39 = ticket 15-22 €, alquiler 2.000-4.500 €/mes, food cost 28-32 %, coste personal máx. 35 %, margen neto 5-10 %, punto de equilibrio <12 meses, convenio provincial. v1.1 'Instrucciones' tenía además A21='- Inversion media apertura: 80.000-150.000 EUR', A23='- Tasa cierre restaurantes primer ano: 25%' y A24='- Tasa cierre restaurantes 5 anos: 50%'. /Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:141 y :203 siguen prometiendo «tasa de cierre en los 3 primeros años».",
+      "fix": "Devolver las tres filas con su fuente y año, y que el gate de §5.2 cruce cada promesa de la landing contra una celda existente."
+    },
+    {
+      "id": "RD-05",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio'!B8 y B15",
+      "hallazgo": "El break-even NO incluye la cuota, contra la decisión §7-bis.2 («break-even ÚNICO que incluye amortización y cuota»). Los costes fijos que usa llevan amortización (8.882,50 €) e intereses (6.600 €) pero no el principal (15.769,89 € desde el año 2), así que el umbral publicado está un 6,2 % por debajo del real.",
+      "evidencia": "'3. Punto Equilibrio'!B8==IFERROR('2. P&L 3 Años'!$B$40,\"\")=253.511,70; '2. P&L 3 Años'!B40=SUM(B22:B39) incluye B37 amortización 8.882,50 y B38 intereses 6.600 pero ninguna fila de principal. '7. Financiación'!B38 (devolución de principal del año 2)=15.769,89. Con la cuota: 269.281,59/12,126=22.207 cubiertos/año = 71,6/día frente a los 67,44 que publica B15, y la holgura B18 cae del 18,6 % al 11,7 %.",
+      "fix": "Añadir a la hoja una fila 'Servicio de la deuda (principal del año)' leída de '7. Financiación' y un break-even de caja que la incluya; o entregar los dos umbrales rotulados (contable y de caja) como en §3.5."
+    },
+    {
+      "id": "RD-06",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'6. Tesorería 12 meses'!B26 y B27, reexpuesto en 'Instrucciones'!B30",
+      "hallazgo": "El payback de 1,86 años que el libro publica se calcula sobre una «inversión a recuperar» de 101.760 € que excluye el fondo de maniobra y el IVA, es decir el 45 % de los 185.000 € que el proyecto realmente desembolsa; y el flujo que lo amortiza no descuenta el principal del préstamo. Sale mejor que el escenario OPTIMISTA del propio producto.",
+      "evidencia": "'6. Tesorería 12 meses'!B26==IFERROR('1. Inversión Inicial'!$B$45-'1. Inversión Inicial'!$B$44,\"\")=101.760; B23=B48+B37=49.013,64 (resultado neto + amortización, sin restar los 22.369,89 € de cuota anual de '7. Financiación'!B21); B27=1,8598 años. 'Instrucciones'!A30='Payback del proyecto (años)' B30=1,86. /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx par. 113 y 115: «rentabilidad entre 30 y 40 meses» en el realista y «24-28 meses» en el optimista.",
+      "fix": "Calcular el payback sobre la aportación total (o rotularlo 'payback del inmovilizado') y sobre un flujo después del servicio de la deuda; y no publicarlo en Instrucciones sin la definición."
+    },
+    {
+      "id": "RD-07",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!B4, B5 y '5. Personal'!D6:D11 contra el fichero v1.1",
+      "hallazgo": "El caso base pasa de −22.170 € a +40.131 € accionando a la vez las dos palancas que lo hacen viable, y ninguna queda documentada en el libro: +45 % de cubiertos y −29,7 % de nómina, con recorte del bruto del gerente y del jefe de cocina y eliminación de dos puestos. La §7-bis.17 permite recalibrar «por los dos lados y dentro de rangos con fuente», pero el fichero no deja rastro de qué se movió ni por qué.",
+      "evidencia": "v2.0: '0. Supuestos'!B4=80 cubiertos/día y B5=17,20 € → '2. P&L 3 Años'!B10=426.560 € y B48=+40.131,14. v1.1: '2. P&L 3 Anos'!B7=55, B8=18,5, B10=315.425, B34=−22.169,98. Plantilla v1.1 '5. Personal': 7 personas, F13=209.171,20, con Gerente C6=2.200, Jefe de cocina C7=2.000, Cocinero C8=1.600 y Camarero jefe C10=1.500. v2.0 '5. Personal': 6 personas, G12=147.098,00, D6=1.900, D7=1.800, sin Cocinero ni Camarero jefe.",
+      "fix": "Añadir a '0. Supuestos' un bloque 'QUÉ HA CAMBIADO RESPECTO DE LA v1.1' con las cinco cifras y su justificación, y dejar el caso base v1.1 como escenario en '4. Escenarios' para que el comprador vea la diferencia."
+    },
+    {
+      "id": "RD-08",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Años'!B54=34,48 % y E54=35 %",
+      "hallazgo": "El caso base cumple el techo de labour cost del Excel por 0,52 puntos, pero INCUMPLE el que publica el mismo producto en su documento (34 %). El plan se declara viable contra el más laxo de los tres techos que él mismo enuncia.",
+      "evidencia": "'2. P&L 3 Años'!B54==IFERROR(B23/B10,\"\")=0,34484714928732185, E54=0,35, F54='Techo del propio libro: «Coste personal: no superar 35 % de los ingresos»' → 'Instrucciones'!D18='CUMPLE'. Contra /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx par. 132: «el labor cost no debe superar el 34%», y par. 105: «equivalente al 35-45 por ciento de la facturación», y par. 129: «entre el 30-35%».",
+      "fix": "Elegir UN techo (el más estricto que publique el producto, 34 %) y llevarlo a E54; si el caso base no lo cumple, redimensionar la plantilla o declararlo, como manda §2.3.1."
+    },
+    {
+      "id": "RD-09",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'5. Personal'!B5:C12 (no hay columna de horas)",
+      "hallazgo": "La plantilla no está dimensionada por horas de servicio, que es exactamente lo que exige la decisión §7-bis.17 («plantilla dimensionada por horas de servicio del formato, turnos del cuadrante»). No hay columna de horas, ni cuadrante, ni comprobación de cobertura contra los días de apertura: la hoja sólo trae 'Jornada' como porcentaje. Con 5,25 FTE hay 2,34 personas de media en cada hora de apertura para cocina, barra y sala, antes de descontar vacaciones y descanso semanal.",
+      "evidencia": "'5. Personal'!C6:C11 = 1; 1; 1; 1; 0,75; 0,5 → 5,25 FTE; B12=6 personas; G12=147.098,00. '0. Supuestos'!B6=310 días de apertura. /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx par. 53: barra continua de 12:00 a 01:00 y servicios de 13:00-16:00 y 20:00-24:00 → 13 h/día × 310 = 4.030 h de apertura frente a 5,25 × 1.800 h ≈ 9.450 h de plantilla (40 h/semana del art. 34.1 ET menos las 30 días de vacaciones del art. 38 ET).",
+      "fix": "Añadir a '5. Personal' columnas 'Horas/semana' y 'Horas/año' y un bloque de cobertura: horas necesarias = días de apertura × horas de servicio × personas por franja, con semáforo si las horas contratadas no llegan."
+    },
+    {
+      "id": "RD-10",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Años'!B51:D51, B53:D53 y B54:D54",
+      "hallazgo": "Tres de los cinco ratios clave son idénticos en los tres años POR CONSTRUCCIÓN —el personal y el coste de mercancía escalan con el volumen—, así que el semáforo de los años 2 y 3 no puede fallar nunca y no informa de nada. Un banco lee tres años de ratios donde sólo hay uno.",
+      "evidencia": "'2. P&L 3 Años'!C23==IFERROR(B23*(1+'0. Supuestos'!$B$7)*(1+'0. Supuestos'!$B$48),\"\") y C10==IFERROR(IF(C7*C8*C9=0,\"\",C7*C8*C9),\"\") con C7=B7*(1+B7 Supuestos) → C54=B54 exactamente: 0,34484714928732185 en B54, C54 y D54. Igual B53=C53=D53=0,272 y B51=C51=D51=0,705.",
+      "fix": "Modelizar el personal como coste escalonado (celda de personas añadidas por año en '5. Personal', no un factor de volumen) y dejar que los ratios se muevan; si no, retirar las columnas de años 2 y 3 del bloque de ratios."
+    },
+    {
+      "id": "RD-11",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B46=19.542,60 contra '6. Tesorería 12 meses'!B17:M18",
+      "hallazgo": "El IVA soportado de la inversión se financia con deuda a 7 años y NO se recupera en ninguna parte del modelo: la liquidación trimestral sólo mira el IVA de explotación. El libro afirma dos veces que es recuperable por el modelo 303 y su propia hoja de tesorería nunca lo devuelve.",
+      "evidencia": "'1. Inversión Inicial'!B46==IFERROR((B45-B11-B44)*'0. Supuestos'!$B$41,\"\")=19.542,60 con D46='…Se recupera con el modelo 303, pero hay que adelantarlo'. '6. Tesorería 12 meses'!B17 sólo suma el IVA de compras y de costes fijos del mes; N18 (liquidación)=−15.734,61, siempre negativa; ninguna celda de B18:M18 devuelve el IVA de la inversión.",
+      "fix": "Añadir a la tesorería una fila 'IVA de la inversión a compensar/devolver' con su saldo inicial de 19.542,60 € y su compensación trimestral, y que el saldo acumulado la recoja."
+    },
+    {
+      "id": "RD-12",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!B40 aplicado en '6. Tesorería 12 meses'!B16 y en '0. Supuestos'!B9",
+      "hallazgo": "Se repercute el 21 % a TODA la línea de bebida, que el propio rótulo del P&L define como «cañas, vinos, cafés y copas». Los cafés, refrescos, aguas y zumos servidos en hostelería van al 10 %, así que el IVA repercutido está sobrevalorado y con él las liquidaciones y el «PVP equivalente» con el que el plan se compara con el rango del sector.",
+      "evidencia": "'2. P&L 3 Años'!A12='Ventas de bebida (cañas, vinos, cafés y copas)' B12=149.296. '0. Supuestos'!B40=21 % con C40='Bebidas alcohólicas, suministros, equipamiento y servicios'. '6. Tesorería 12 meses'!B16 usa ($B$11*$B$39+$B$12*$B$40) → N16=59.078,56. '0. Supuestos'!B9==IFERROR($B$5*(B11*(1+$B$39)+B12*(1+$B$40)),\"\")=19,58 €, que C9 manda comparar con el rango 15-22 € de 'Instrucciones'!B33.",
+      "fix": "Partir la línea de bebida en 'bebida al 10 %' y 'bebida alcohólica al 21 %' con su peso en celda verde de '0. Supuestos', y recalcular B9, B16 y la liquidación."
+    },
+    {
+      "id": "RD-13",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'6. Tesorería 12 meses'!B12 y B11",
+      "hallazgo": "Se aplica un 21 % de IVA soportado a dos partidas EXENTAS: los seguros (art. 20.Uno.16 LIVA) y las comisiones de los medios de pago (art. 20.Uno.18 LIVA). El modelo se deduce ~1.136,62 €/año de IVA que no existe, lo que reduce la liquidación y sobrestima el pago de proveedores.",
+      "evidencia": "'6. Tesorería 12 meses'!B12=-('2. P&L 3 Años'!$B$40-$B$23-$B$37-$B$38)*(1+'0. Supuestos'!$B$41)/12, y ese bloque contiene '2. P&L 3 Años'!B25 'Seguros (RC + multirriesgo)'=2.000. B11 aplica (1+$B$41) al resto de variables, que incluye '2. P&L 3 Años'!B18 'Comisiones de los medios de pago'=3.412,48. (2.000+3.412,48)×0,21=1.136,62 €.",
+      "fix": "Marcar por fila del P&L qué partidas llevan IVA y a qué tipo (columna nueva 'IVA') y que la tesorería lea esa columna en vez de aplicar un 21 % plano."
+    },
+    {
+      "id": "RD-14",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B46",
+      "hallazgo": "El IVA de la inversión se calcula al 21 % sobre el 100 % de las partidas menos fianza y fondo de maniobra, incluyendo tasas municipales y de licencia, que no están sujetas a IVA. Sobrestima el IVA a adelantar y, por tanto, la necesidad de caja y el préstamo.",
+      "evidencia": "'1. Inversión Inicial'!B46==IFERROR((B45-B11-B44)*'0. Supuestos'!$B$41,\"\")=19.542,60 sobre una base de 93.060 € que incluye B9='Proyecto técnico + licencia actividad'=3.500 (con D9='Ingeniero + tasas ayuntamiento'), B42='Licencias y permisos varios'=500 y B39='Constitución SL (notaria + registro)'=600.",
+      "fix": "Añadir una columna 'Sujeto a IVA (S/N)' en la hoja de inversión y calcular B46 como SUMAPRODUCTO de esa columna por el tipo."
+    },
+    {
+      "id": "RD-15",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!B45=8 (y B44=10)",
+      "hallazgo": "La vida útil de maquinaria y mobiliario se fija en 8 años = 12,5 % anual, por encima del coeficiente lineal máximo de la tabla del art. 12.1 LIS que la propia nota invoca (12 % maquinaria, 10 % mobiliario). El exceso no sería fiscalmente deducible en el ejercicio y la base imponible del modelo está infravalorada.",
+      "evidencia": "'0. Supuestos'!B45=8 con C45='Maquinaria de cocina, mobiliario y equipos. Coeficientes de la tabla del art. 12.1 LIS: confírmalo con tu asesor'. '1. Inversión Inicial'!B50=36.260 → B51 aporta 36.260/8=4.532,50 €/año frente a los 4.351,20 € del 12 % máximo (exceso 181,30 €/año). Además la DV del rango es 'decimal greaterThanOrEqual 0', así que admite 0 años y deja la amortización en \"\".",
+      "fix": "Subir B45 a 9-10 años (o separar maquinaria de mobiliario en dos celdas) y cambiar la DV a entero entre 1 y 50."
+    },
+    {
+      "id": "RD-16",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B44",
+      "hallazgo": "El fondo de maniobra se dota sobre una magnitud CONTABLE: los tres meses se calculan sobre unos costes fijos que incluyen 8.882,50 € de amortización, que no es salida de caja, y los 3.800 € duplicados de RD-01. Se financian 2.221 € de amortización con deuda a 7 años y la cifra que la landing tendrá que publicar sale inflada.",
+      "evidencia": "'1. Inversión Inicial'!B44==IFERROR(IF('0. Supuestos'!$B$35*'2. P&L 3 Años'!$B$40=0,\"\",'0. Supuestos'!$B$35*'2. P&L 3 Años'!$B$40/12),\"\")=63.377,93, y '2. P&L 3 Años'!B40=253.511,70 incluye B37=8.882,50 de amortización. 8.882,50×3/12=2.220,62 €.",
+      "fix": "Calcular el fondo de maniobra sobre los pagos fijos de caja (B40 menos amortización) y, mejor aún, sobre el déficit acumulado que arroje la propia hoja de tesorería con la curva de arranque de RD-17."
+    },
+    {
+      "id": "RD-17",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'6. Tesorería 12 meses'!B5:M5 y B20:M21",
+      "hallazgo": "La tesorería no tiene curva de arranque: el mes 1 ya factura el 7,0 % del año (la media es 8,33 %), así que el saldo mínimo es el del primer mes y NUNCA baja del fondo de maniobra. La hoja que el propio libro presenta como «la primera que mira un banco» y que dice responder «en qué mes se agota la caja» está construida de forma que la caja no puede agotarse.",
+      "evidencia": "'6. Tesorería 12 meses'!B5:M5 = 0,070; 0,072; 0,082; 0,085; 0,090; 0,088; 0,085; 0,062; 0,085; 0,088; 0,087; 0,106 (N5=1,000); B19 (flujo del mes 1)=+1.999,87; B20 (saldo)=65.377,80; B21 (saldo mínimo del año)=65.377,80, es decir el máximo del año está en el mes 1 y el mínimo también. A2 dice «Es la primera que mira un banco» e 'Instrucciones'!A10 dice «responde… en qué mes se agota la caja».",
+      "fix": "Separar el reparto ESTACIONAL (el actual) de una curva de MADURACIÓN en celdas verdes (p. ej. % de la venta de crucero por mes durante los 6 primeros) y multiplicarlos; el fondo de maniobra debe salir del déficit acumulado que arroje esa curva."
+    },
+    {
+      "id": "RD-18",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'6. Tesorería 12 meses'!B13:M13",
+      "hallazgo": "Las nóminas se reparten en doce partes iguales pese a que el modelo trabaja con 14 pagas: las dos extras no aparecen en su mes, que es precisamente cuando revienta la tesorería de un negocio estacional. Mismo tratamiento plano en los costes fijos.",
+      "evidencia": "'6. Tesorería 12 meses'!B13==IFERROR(-'2. P&L 3 Años'!$B$23/12,\"\")=−12.258,17 idéntico en los doce meses (N13=−147.098,00), mientras '0. Supuestos'!B21=14 pagas y '5. Personal'!G6==IFERROR(F6*'0. Supuestos'!$B$21,\"\").",
+      "fix": "Repartir la nómina en 12 mensualidades + 2 celdas de mes de paga extra tomadas de '0. Supuestos', y hacer lo mismo con los seguros (prima anual) y con la gestoría."
+    },
+    {
+      "id": "RD-19",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'4. Escenarios'!B6:D21",
+      "hallazgo": "Los escenarios no tienen consecuencia ni de personal ni de caja. El pesimista deja el coste laboral en el 53,2 % de las ventas y pierde 58.466 €, que se comen el 78 % del fondo de maniobra, y el optimista sirve 95 cubiertos/día con la misma plantilla de 5,25 FTE. Ninguna fila lo dice y nada enlaza con la hoja de tesorería.",
+      "evidencia": "'4. Escenarios'!B9=276.660 y D9=562.400 con B17=C17=D17='2. P&L 3 Años'!$B$40=253.511,70 y E17='Los costes fijos no cambian con el escenario: por eso son fijos'; B18=−58.466,40 y B20=−58.466,40. '2. P&L 3 Años'!B23=147.098 → 147.098/276.660=53,2 % en el pesimista. No hay fila de coste de personal / ventas ni de saldo de caja en toda la hoja.",
+      "fix": "Añadir a los tres escenarios las filas 'Coste de personal / Ventas', 'Cubiertos por FTE' y 'Saldo de caja al cierre del año 1' (fondo de maniobra + resultado + amortización), con semáforo."
+    },
+    {
+      "id": "RD-20",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Años'!C57 y D57",
+      "hallazgo": "La fila «Punto de equilibrio alcanzado» compara los años 2 y 3 contra el umbral del AÑO 1, que se calcula con los costes fijos del año 1. Como el personal crece un 10 % y un 6 %, el umbral real de los años 2 y 3 es mayor y la respuesta 'Sí' está dada contra una referencia caducada.",
+      "evidencia": "'2. P&L 3 Años'!C57==IFERROR(IF(C10=\"\",\"\",IF(C10>='3. Punto Equilibrio'!$B$16,\"Sí\",\"No\")),\"\") y D57 igual, contra '3. Punto Equilibrio'!B16=359.591,06, que sale de B8='2. P&L 3 Años'!$B$40=253.511,70 (año 1). Los fijos de los años 2 y 3 son C40=269.074,62 y D40=278.399,95.",
+      "fix": "Calcular el umbral por año (tres columnas en '3. Punto Equilibrio') y que C57/D57 comparen contra el suyo."
+    },
+    {
+      "id": "RD-21",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'7. Financiación'!B42:B44 y '2. P&L 3 Años'!B5:D5",
+      "hallazgo": "El préstamo es a 7 años y el modelo se detiene en el 3: los años 4 a 7, con cuota de 22.369,89 €, no están cubiertos por ninguna proyección. Y el DSCR del año 1 (9,50) es un artefacto de la carencia —sólo hay intereses en el denominador—, no una medida del negocio; la cifra que un banco mira es la del primer año de amortización (3,45).",
+      "evidencia": "'7. Financiación'!B19=7 años, B20=1 de carencia, B21 (cuota anual)=22.369,89; B42=9,4993, B43=3,4513, B44=3,8794. El P&L sólo tiene columnas B, C y D (Año 1, Año 2, Año 3) y '6. Tesorería 12 meses' sólo cubre el año 1.",
+      "fix": "Rotular B42 como 'DSCR del año 1 (en carencia: sólo intereses)', añadir 'DSCR mínimo del cuadro' sobre los 7 años y una fila de flujo de caja disponible por año hasta el vencimiento."
+    },
+    {
+      "id": "RD-22",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "formato condicional de '7. Financiación'!B42:B44, '3. Punto Equilibrio'!B18 y '7. Financiación'!B34",
+      "hallazgo": "Los umbrales del DSCR (1 y 1,25), el de holgura del punto de equilibrio (0,15) y el de capital pendiente (0,5) están escritos DENTRO de la fórmula del formato condicional, contra la decisión §7-bis.11 («ningún número vive dentro de una fórmula»). El comprador no puede ajustar el DSCR al covenant que le exija su banco sin editar reglas de formato.",
+      "evidencia": "CF '7. Financiación'!B42 = AND(ISNUMBER(B42),B42<1) / AND(ISNUMBER(B42),B42>=1) / AND(ISNUMBER(B42),B42>=1.25); CF '3. Punto Equilibrio'!B18 = AND(ISNUMBER(B18),B18>=0.15); CF '7. Financiación'!B34 = AND(ISNUMBER(B34),B34>0.5). En cambio los ratios del P&L sí tienen su umbral en celda ('2. P&L 3 Años'!E51:E56).",
+      "fix": "Sacar los cuatro umbrales a celdas verdes (en '0. Supuestos' o junto a su ratio) y referenciarlas desde el formato condicional, como ya se hace en el P&L."
+    },
+    {
+      "id": "RD-23",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!B11 contra 'Instrucciones'!A5",
+      "hallazgo": "La hoja de mando manda al usuario a un sitio donde el dato no se puede tocar: el mix comida/bebida figura en '0. Supuestos' pero es un espejo del P&L, no es verde y no está desbloqueado. La SPEC §2.1 lo define como input de Supuestos (B11 % de ventas de comida, B12 calculada).",
+      "evidencia": "'0. Supuestos'!B11==IFERROR('2. P&L 3 Años'!$E$11,\"\")=0,65 y B12==IFERROR(1-B11,\"\")=0,35, sin relleno E8F5E9 y con protection.locked=True: la lista de celdas verdes de la hoja es B4,B5,B6,B7,B8,B13,B14,B15,B16,B17,B18,B20,B21,B22,B24,B25,B26,B27,B28,B30,B31,B32,B33,B34,B35,B37,B38,B39,B40,B41,B42,B44,B45,B48 — sin B11 ni B12. El input real está en '2. P&L 3 Años'!E11=0,65 (verde). Contra 'Instrucciones'!A5: «\"0. Supuestos\" es la hoja de mando: cubiertos, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.»",
+      "fix": "Mover el input a '0. Supuestos'!B11 (verde, DV 0-1) y que '2. P&L 3 Años'!E11 lo lea, no al revés."
+    },
+    {
+      "id": "RD-24",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!C4",
+      "hallazgo": "La nota que justifica el driver más sensible del plan cita mal su fuente: presenta el 1,8 como un TECHO de rotación cuando en el documento del propio producto es un MÍNIMO exigible y, dos apartados después, una media de temporada alta. Y las 56 plazas que usa contradicen las 40-50 del documento y las «50 pax» de la propia hoja de inversión.",
+      "evidencia": "'0. Supuestos'!C4='Sobre 56 plazas (12 mesas × 4 sillas + 8 taburetes de barra, hoja de Inversión) son 1,43 rotaciones al día, por debajo del techo de 1,8 que usa el propio plan'. /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx par. 71: «la capacidad de generar rotación de servicios (mínimo 1,8 covers por servicio por mesa)»; par. 110: «una rotación media de 1,8 servicios diarios en temporada alta»; par. 43: «capacidad para 40 a 50 comensales en interior». '1. Inversión Inicial'!D32='Servicio completo 50 pax'.",
+      "fix": "Reescribir la nota con la cita literal y su párrafo, y fijar el aforo en una celda de '0. Supuestos' de la que salgan las mesas, los taburetes y la rotación implícita."
+    },
+    {
+      "id": "RD-25",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'5. Personal'!D6:D11 (formato condicional) y A15",
+      "hallazgo": "El único suelo salarial que valida el libro es el SMI, cuando el propio libro declara aplicable el convenio PROVINCIAL de hostelería, que en la práctica es el suelo real y está por encima. El ayudante de cocina, que es la pieza con la que cuadra el 34,48 %, queda a un 2,4 % del SMI: cualquier tabla de convenio lo tumba y con él el ratio.",
+      "evidencia": "CF '5. Personal'!D6:D11 = AND(ISNUMBER(D6),IFERROR(D6/B6,0)*'0. Supuestos'!$B$21<'0. Supuestos'!$B$22*C6) — sólo compara contra B22=17.094 €. '5. Personal'!D8=1.250 → 1.250×14=17.500 € frente a 17.094 € (+2,4 %). A15: «El convenio aplicable es el PROVINCIAL de hostelería: no existe una tabla salarial estatal única».",
+      "fix": "Añadir una celda verde 'Salario mínimo de convenio por categoría' (o una columna por puesto) y que el semáforo compare contra el mayor de SMI y convenio."
+    },
+    {
+      "id": "RD-26",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B5:B70 (59 ítems)",
+      "hallazgo": "En 59 trámites no hay NI UNO de protección de datos. Un bar-restaurante con reservas online, fichaje de jornada, videovigilancia y proveedores trata datos personales desde el día uno; la AEPD sanciona la falta de registro de actividades y de cartel de videovigilancia. El checklist se vende como «verificado con la legislación vigente».",
+      "evidencia": "Volcado completo de 'Checklist Apertura'!B5:B70: ningún ítem contiene RGPD, LOPDGDD, protección de datos, videovigilancia ni AEPD (grep sin coincidencias). Contador G73==COUNTIF(B5:B70,\"?*\")-COUNTIF(E5:E70,\"N/A\")=59. /Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:243: «un checklist de trámites verificado con la legislación vigente».",
+      "fix": "Añadir en la FASE de obligaciones previas: registro de actividades de tratamiento, informar a los trabajadores del fichaje, cartel y contrato de videovigilancia, y cláusula informativa en el sistema de reservas."
+    },
+    {
+      "id": "RD-27",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B5:B70 (bloque Fiscal, filas 10-12)",
+      "hallazgo": "No hay ningún ítem sobre la adaptación del sistema de facturación (Veri*factu / factura electrónica), que es una obligación viva en el ejercicio que el propio fichero rotula «España 2026» y que obliga a cambiar o actualizar el TPV que la hoja de inversión presupuesta. La SPEC §2.10 la cita expresamente como el dato que sí está bien puesto en la plantilla de proveedores del kit.",
+      "evidencia": "'Checklist Apertura' filas 10-12 sólo traen CIF provisional (mod. 036), alta en el IAE y alta censal; ningún ítem menciona Veri*factu, factura electrónica ni RD 1007/2023. '1. Inversión Inicial'!A33='TPV + software hostelería' B33=1.500 con D33='Terminal + licencia anual'. SPEC planes-v2 §2.10: «como ya dice bien la propia plantilla de proveedores del kit (\"Veri*factu obligatorio 2026-2027\")».",
+      "fix": "Añadir el ítem con la nota de calendario escalonado y sin fecha inventada, y enlazarlo a la partida de TPV de la inversión."
+    },
+    {
+      "id": "RD-28",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!A60 respecto de A51",
+      "hallazgo": "Las obligaciones que hay que tener cerradas ANTES de abrir van colocadas DESPUÉS del bloque de los primeros 90 días de operación, y con meses solapados. Quien trabaje el checklist de arriba abajo —que es como se usa— contrata el seguro de RC, los boletines de gas y la gestión de residuos después de haber abierto.",
+      "evidencia": "'Checklist Apertura'!A51='FASE 6: PRIMEROS 90 DÍAS (meses 8-11)' y A60='FASE 7: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES DE ABRIR (meses 6-8)', con B61 (seguro de RC), B68 (boletines eléctrico y de gas) y B64 (gestor de residuos) dentro de la fase 7.",
+      "fix": "Reordenar: los ítems de la actual fase 7 se integran en las fases 2 a 5 por su mes, y la fase de los primeros 90 días queda la última."
+    },
+    {
+      "id": "RD-29",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!C41 contra F41",
+      "hallazgo": "La nota corrige bien el mito del servicio de prevención obligatorio, pero la columna Responsable sigue diciendo «Servicio PRL», así que la tarea sigue asignada al proveedor que la nota dice que no hace falta.",
+      "evidencia": "'Checklist Apertura'!B41='Prevención riesgos laborales', C41='Servicio PRL', F41='Obligatorio es el PLAN de prevención, no contratar un servicio ajeno: con menos de 25 trabajadores y un solo centro el empresario puede asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)'.",
+      "fix": "Poner C41='Titular o servicio externo' y desdoblar en dos ítems: elaborar el plan de prevención y decidir la modalidad organizativa."
+    },
+    {
+      "id": "RD-30",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!A22:F22",
+      "hallazgo": "Queda una fila vacía en mitad de la FASE 2 donde estaban las dos filas duplicadas del RGSEAA que se fundieron. No rompe el contador pero deja un hueco visible en el entregable.",
+      "evidencia": "'Checklist Apertura' pasa de la fila 21 ('Inscripción en el Registro Sanitario de tu Comunidad Autónoma…') a la 23 ('Licencia de terraza (si aplica)') sin nada en la 22; el volcado no devuelve ninguna celda de la fila 22.",
+      "fix": "Eliminar la fila y desplazar el rango del contador (E73/G73 pasan a E5:E69 y B5:B69)."
+    },
+    {
+      "id": "RD-31",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!B24=2.900 contra v1.1 '1. Inversion Inicial'!B8=3.000",
+      "hallazgo": "El alquiler baja de 3.000 a 2.900 €/mes sin ninguna justificación y sin necesidad: con 3.000 € el ratio alquiler/ventas sería del 8,44 %, dentro del techo del 8-10 %. Es un ajuste a la baja de un coste real que arrastra la fianza y el fondo de maniobra.",
+      "evidencia": "v1.1 '1. Inversion Inicial'!A7='Fianza alquiler (3 meses)' B7=9.000 y A8='Primer mes alquiler' B8=3.000. v2.0 '0. Supuestos'!B24=2.900 → '1. Inversión Inicial'!B11=8.700 y '2. P&L 3 Años'!B22=34.800, B55=8,16 %.",
+      "fix": "Devolver 2.900→3.000 (o documentar el cambio en la nota C24) y comprobar que B55 sigue bajo el techo."
+    },
+    {
+      "id": "RD-32",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!A18, A23, A29, A39 y D36",
+      "hallazgo": "Sobreviven acentos y erratas en los rótulos de la hoja que el cliente imprime para el banco, y el gate de ortografía del propio main.py devuelve 0. La §1.7 pide corregir los textos, no sólo los nombres de hoja.",
+      "evidencia": "'1. Inversión Inicial'!A18='Camara frigorifica', A23='Estanterias inox almacen', A29='Molinillo cafe profesional', A39='Constitución SL (notaria + registro)', D36='Pagina básica + ficha GMB'. Salida del motor: «== 5/8 · gates de §9 sobre los xlsx == ortografia: 0».",
+      "fix": "Ampliar la lista cerrada del gate de §1.7 con Camara, Estanterias, almacen, cafe, notaria y Pagina, con las excepciones legítimas ya previstas."
+    },
+    {
+      "id": "RD-33",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!C33 frente a C34:C38",
+      "hallazgo": "Cuatro de las cinco filas del bloque de referencia llevan su procedencia («Fichero v1.1») y la del ticket medio no, pese a venir del mismo sitio. En el dato que más se discute con un banco, el que no dice de dónde sale es precisamente el ticket.",
+      "evidencia": "'Instrucciones'!B33='15-22 €' con C33='El PVP equivalente de este plan lo calcula la hoja 0. Supuestos', frente a C34='Fichero v1.1', C35='Fichero v1.1', C36='Fichero v1.1', C37='Fichero v1.1', C38='Fichero v1.1'. El origen real es v1.1 'Instrucciones'!A19='- Ticket medio restaurante casual: 15-22 EUR'.",
+      "fix": "Poner C33='Fichero v1.1' y mover la explicación del PVP a la columna siguiente o a la nota de la fila."
+    },
+    {
+      "id": "RD-34",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'7. Financiación'!B12=185.000 contra B14=184.680,53",
+      "hallazgo": "Los orígenes no cuadran con los usos: sobran 319,47 €, porque los recursos propios y el préstamo son cifras redondas tecleadas en '0. Supuestos' que nadie ata a la necesidad de caja. El semáforo sólo comprueba que la diferencia no sea negativa, así que un exceso de 20.000 € pasaría igual de verde.",
+      "evidencia": "'7. Financiación'!B12==IFERROR(SUM(B6:B11),\"\")=185.000 (B6=75.000 y B7=110.000, ambos leídos de '0. Supuestos'!B30 y B31, tecleados); B14==IFERROR('1. Inversión Inicial'!$B$47,\"\")=184.680,525; B15=319,475. CF de B15: AND(ISNUMBER(B15),B15<0) en rojo y AND(ISNUMBER(B15),B15>=0) en verde.",
+      "fix": "Rotular B15 con el signo y el porcentaje sobre los usos, poner el semáforo en ámbar cuando el exceso supere un umbral en celda, y ofrecer una celda 'Ajustar el préstamo a la necesidad' que calcule B31 = B47 − B30."
+    },
+    {
+      "id": "RD-35",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-dominio/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!C6:C44 y '6. Tesorería 12 meses'!B7:M7",
+      "hallazgo": "El modelo cobra el 100 % de las ventas del mes en el mes, sin ninguna celda de desfase, cuando la §2.7 lo pide expresamente («cobros con el desfase de cobro que corresponda»). En un bar-restaurante casi todo es contado, pero el cobro con tarjeta y las plataformas de reserva y de delivery liquidan a D+1/D+30, y el modelo no ofrece ni el parámetro para probarlo.",
+      "evidencia": "'6. Tesorería 12 meses'!B7=('2. P&L 3 Años'!$B$10+…)*B5, sin ningún término de desfase; no existe celda 'Días de cobro' en '0. Supuestos' (bloques ACTIVIDAD, MIX, PERSONAL, LOCAL Y FIJOS, FINANCIACIÓN, FISCAL, AMORTIZACIÓN, CRECIMIENTO). '0. Supuestos'!B16 permite subir el delivery al peso real, cuyo cobro sí es diferido.",
+      "fix": "Añadir 'Días medios de cobro' y 'Días medios de pago a proveedor' en '0. Supuestos' y aplicarlos en la tesorería; con 0 días el resultado no cambia y el modelo queda demostrable."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "No lo firmaría. El caso base pasa de −22.170 € a +40.131 € accionando a la vez +45 % de cubiertos y −29,7 % de nómina (RD-07), y el resultado sólo cumple el techo de labour cost más laxo de los tres que el propio producto publica, incumpliendo el 34 % de su documento (RD-08); la plantilla que sostiene ese ratio no está dimensionada por horas —2,34 personas de media en cada hora de apertura para cocina, barra y sala— y su suelo salarial se valida contra el SMI, no contra el convenio provincial que el propio libro declara aplicable (RD-09, RD-25). Las tres cifras que decide un comité de riesgos están mal construidas: el break-even excluye la cuota y publica 67,4 cubiertos/día donde salen 71,6 (RD-05); el payback de 1,86 años se calcula sobre el 55 % de lo que realmente se desembolsa y sale mejor que el escenario optimista del propio producto (RD-06); y la tesorería, presentada como «la primera que mira un banco», no tiene curva de arranque, así que su saldo mínimo es el del mes 1 y la caja no puede agotarse nunca (RD-17). Encima el expediente no cuadra por arriba: 3.800 € contados dos veces entre inversión y P&L (RD-01), 19.542,60 € de IVA financiados a siete años que ninguna hoja recupera (RD-11), y faltan del Excel el stock inicial, la terraza y los imprevistos que la §2.2 exige y que la propia nota D51 cita como si existieran (RD-02). La inversión resultante (165.138 €) y la necesidad de caja (184.681 €) se salen del rango 80.000-150.000 € que declaran la landing, el docx y el fichero v1.1 —y la fila de referencia que lo decía, junto con las dos tasas de cierre del sector, ha desaparecido del bloque de datos (RD-03, RD-04). Con eso, y con los 59 trámites del checklist sin un solo ítem de RGPD ni de facturación Veri*factu (RD-26, RD-27), el paquete no está listo para ponerse delante de un banco."
+}
