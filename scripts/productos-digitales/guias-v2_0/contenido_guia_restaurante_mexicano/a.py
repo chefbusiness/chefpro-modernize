@@ -67,6 +67,32 @@ fórmula del TOTAL cuando una línea de detalle se recalibra en la variante
 `grupo_a.py`, no de contenido — fuera del alcance de T6). Se deja como
 hallazgo (informe, id RD-MEX-02) y **NO se recalibra**: los valores de v1.1
 son aritméticamente correctos y se convierten en fórmula tal cual (§1.2).
+
+⚠️ **RD-MEX-04 (alta, no sólo el Pesimista) — verificado en el dry-run tras
+escribir el motor.** El escenario REALISTA (52.000 EUR/mes de facturación,
+39.100 EUR/mes de costes fijos, food cost 31 %) YA daba EBITDA negativo en
+v1.1: `Realista!B31 = -3.620` (-43.440 EUR/año), y es aritméticamente
+correcto (verificado por pycel: `recalculado=-3620.0, coincide=true`). Al
+encadenar la `Proyección 3 Años` desde ese mismo P&L, los TRES años dan
+EBITDA negativo: Año 1 -86.016 EUR (con la rampa de apertura), Año 2 -29.878
+EUR y Año 3 -28.653 EUR — incluso con crecimiento del 8 %/5 % y a pesar de
+que el Año 2 ya factura a crucero completo (673.920 EUR). Y
+`cash-flow-break-even!Break-Even!B13` («Break-Even (meses)») devuelve
+`"No alcanzado"`, no por un error de fórmula sino porque a los parámetros
+propios de esta guía (85 comensales/día, ticket 24 EUR, food cost 31 %,
+costes fijos 39.100 EUR/mes) el margen de contribución mensual (36.597,6 EUR)
+NUNCA llega a cubrir los costes fijos (39.100 EUR): es el resultado
+CORRECTO del calculador, no un fallo del motor — el break-even devuelve
+exactamente `"No alcanzado"` para una serie que nunca cruza a positivo, que
+es la demostración que exige §2.4. Igual que RD-MEX-02/RD-CASUAL-04: no se
+recalibra en esta tanda (el cableado para propagar una recalibración al
+TOTAL de la variante «tres hojas» no existe en `grupo_a.py`, y tocar
+Break-Even!B5:B9 sin fuente sería inventar cifras del negocio, prohibido por
+§7-bis). Se documenta con severidad ALTA en el informe de T6 para que el
+orquestador decida en T7/T8/§7.3 si el concepto necesita un ticket medio más
+alto, más cubiertos/día o menos coste fijo antes de publicarse como
+«viable» en la landing — el defecto es del NEGOCIO descrito por v1.1, no de
+este post-proceso, que se limita a calcularlo con exactitud.
 """
 
 # ==========================================================================
@@ -221,8 +247,11 @@ CASH = {
     # Repetidas con nota, no enlazadas (§1.13): son las cuotas del préstamo
     # de ejemplo de PLAN.financiacion (420.000 EUR, 8 años, 6,0 %, 1 año de
     # carencia). Verificado tras ejecutar `hoja_financiacion` (§ informe).
-    'cuota_mensual': 5843.44,  # verificado: Financiación!B12 (post-carencia)
+    'cuota_mensual': 6135.59,  # verificado: Financiación!B12 (post-carencia)
     'cuota_carencia': 2100.0,  # verificado: Financiación!B13 (solo intereses)
+    # 'anio': 1 → durante el AÑO 1 (dentro de la carencia) sólo se usa
+    # `cuota_carencia`; `cuota_mensual` queda documentado para cuando el
+    # cliente copie el cash flow al año 2+ (nota A44 de la propia hoja).
     'anio': 1,
     'necesidad_total': 578820.0,   # verificado: Inversión!C50
     'iva_bebida': 0.21,

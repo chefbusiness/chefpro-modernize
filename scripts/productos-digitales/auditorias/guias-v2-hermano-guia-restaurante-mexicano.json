@@ -1,0 +1,97 @@
+{
+  "producto": "guia-restaurante-mexicano",
+  "tanda": "T6",
+  "rol": "sonnet, verificación id a id contra el representante + censo propio + módulos de contenido",
+  "fecha": "2026-08-29",
+  "paquete": {
+    "contenido": [
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_mexicano/a.py",
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_mexicano/b.py",
+      "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_mexicano/c.py"
+    ],
+    "motor_compartido_tocado": [],
+    "nota_alcance": "A diferencia de casual (T6 previo), este hermano NO requirió ningun cambio en grupo_a.py/grupo_b.py/grupo_c.py: los 3 fixes que casual aplico al motor compartido (_columna_concepto, COL_MES_FIN, forzar_cuadrante) ya estan en el paquete y se reutilizan tal cual -- verificado que grupo_a.fondo_de_maniobra(), grupo_a.correspondencia_capex() y grupo_c._turnos(forzar_cuadrante) funcionan sin tocar una linea de codigo compartido. Confirma la tesis de la SPEC (§9): el motor de familia ya esta maduro tras representante+casual, y los hermanos que quedan son solo contenido."
+  },
+  "gates": {
+    "dryrun_exit": 0,
+    "idempotencia": 0,
+    "censo_entregables_fail": "OK: 0 defectos (19 ficheros: 15 xlsx, 3 docx, 1 pdf)",
+    "xlsx_sin_formulas": 0,
+    "xlsx_totales": 15,
+    "formulas_en_los_15_xlsx": 1189,
+    "data_only_fallos": 0,
+    "data_only_con_valor": 726,
+    "data_only_vacias_por_diseno": 402,
+    "data_only_vacias_no_verificadas_pycel": "10 (plantilla-turnos-brigada.xlsx!'Registro de jornada'!C109:C118 -- SUMPRODUCT+IFERROR que pycel 1.0b30 no evalua; misma excepcion PRE-EXISTENTE ya documentada en la SPEC (§9) para el representante y para casual, mismo patron, mismo recuento",
+    "checklists_con_bloque_resumen": 6,
+    "checklists_cuadran_subtotales": "6/6 True",
+    "hojas_protegidas": "39/39",
+    "brigada_horas_max": "40.0 (los 14 puestos, ninguno por encima)",
+    "brigada_bruto_min": "17094.0 (SMI vigente, RD 126/2026; los 14 puestos en o por encima)",
+    "proyeccion_ano1_vs_cashflow": {
+      "proyeccion_3_anos_B13": 561600.0,
+      "cash_flow_total_12_meses_entradas": 561600.0,
+      "coincide": true
+    },
+    "necesidad_total_financiacion": 578820.0,
+    "fondo_de_maniobra_calculado": 333720.0,
+    "fondo_de_maniobra_meses": 6,
+    "cuota_prestamo_verificada": {
+      "importe": 420000, "plazo_anos": 8, "tipo": 0.06, "carencia_anos": 1,
+      "cuota_mensual_post_carencia_B12": 6135.592883188038,
+      "cuota_mensual_durante_carencia_B13": 2100.0,
+      "cuota_carencia_en_contenido": 2100.0,
+      "coincide": true,
+      "nota": "cuota_mensual de CASH se corrigio en el modulo (de una estimacion manual 5843.44 al valor real 6135.59 verificado en el dry-run); cuota_carencia ya estaba exacta desde el primer intento. Con CASH['anio']=1 solo se usa cuota_carencia (todo el Año 1 cae dentro de la carencia de 1 año), asi que el error no afecto a ningun numero escrito en el xlsx -- solo a la documentacion del modulo, ya corregida."
+    },
+    "libro_en_blanco_sin_verdes_falsos": {
+      "checklists_6_ok": true,
+      "gantt_ok": true,
+      "sin_dato_es_vacio_ok": true
+    },
+    "normativa_derogada_viva": "0 en mexicano (verificado: la cita de RD 1420/2006 en la sustitucion DOM-14 de checklist-appcc lleva la formula 'RD 1021/2022, art. 8.1 (que derogo el RD 1420/2006)', que cumple la excepcion del gate)"
+  },
+  "recuentos_checklist": {
+    "checklist-legal.xlsx": {"antes": 38, "despues": 48, "anuncia_dashboard": 32},
+    "checklist-contratacion.xlsx": {"antes": 28, "despues": 28, "anuncia_dashboard": 24},
+    "checklist-appcc.xlsx": {"antes": 37, "despues": 40, "anuncia_dashboard": 33},
+    "checklist-diseno-sala-mexicana.xlsx": {"antes": 32, "despues": 36, "anuncia_dashboard": 30},
+    "checklist-equipamiento-cocina-mexicana.xlsx": {"antes": 35, "despues": 36, "anuncia_dashboard": 35},
+    "checklist-marketing-preapertura.xlsx": {"antes": 27, "despues": 29, "anuncia_dashboard": 25},
+    "nota": "A diferencia de casual (que cuadraba exacto con su dashboard) y a diferencia del representante (que PROMETIA de mas, COM-17/18), aqui el dashboard de mexicano (GuiaRestauranteMexicanoDashboard.tsx:41-46) ANUNCIA MENOS de lo que ya media el censo antes de tocar nada: los 6 checklists ya superaban su cifra de venta en v1.1 (32→38, 24→28, 33→37, 30→32, 25→27; solo equipamiento cuadraba exacto 35=35). Tras completar el contenido legal/sanitario obligatorio de familia (§3.1/§3.2) los recuentos SUBEN mas todavia. El gate 'recuento >= anunciado' pasa en los 6 tanto antes como despues. Queda para T8 actualizar el dashboard con las cifras reales."
+  },
+  "hallazgos_propios_de_mexicano": [
+    {
+      "id": "RD-MEX-01",
+      "severidad": "media",
+      "que": "checklist-legal no tenia el sistema de facturacion verificable (RD 1007/2023, Verifactu) y, a diferencia del representante, no habia ningun duplicado de 'alta censal' que liberar para insertarlo sin subir el recuento (patron RD-32 del representante).",
+      "corregido": true,
+      "evidencia": "checklist-legal.xlsx post-proceso: fila nueva categoria Fiscal, 'Sistema informatico de facturacion verificable en el TPV (RD 1007/2023 y su Orden de desarrollo)'"
+    },
+    {
+      "id": "RD-MEX-02",
+      "severidad": "alta",
+      "que": "El escenario Pesimista de pl-mensual-escenarios dio EBITDA -12.590 EUR/mes (-151.080 EUR/año, -32,3% de margen sobre 468.000 EUR/año) -- peor que el de casual (-4.425 EUR/mes) y del mismo orden que el de japones que motivo la decision §7-bis.14 de la SPEC. Se intento recalibrar (subir Ventas sala, bajar Reposicion tequila/mezcal) y el gate §1.2 del motor lo rechazo por el mismo motivo que documento casual (RD-CASUAL-04): grupo_a.pl_tres_hojas() no tiene cableado para propagar una nota_dif a la formula del TOTAL cuando una linea de detalle se recalibra en la variante 'tres hojas'.",
+      "corregido": "NO en esta tanda (revertido a los valores de v1.1, que SI son aritmeticamente correctos: solo se convirtieron a formula)",
+      "recomendacion": "Misma recomendacion que RD-CASUAL-04: extender grupo_a.pl_tres_hojas() para propagar conf['notas'] a la a_formula() del TOTAL -- cambio de motor compartido, util para las 4 guias hermanas que quedan.",
+      "evidencia": "grupo_a demo (constantes_a_formulas): Pesimista!B31 anterior=-12590, recalculado=-12590.0, coincide=true (las 27 sustituciones de la hoja Pesimista dan 'coincide':true)"
+    },
+    {
+      "id": "RD-MEX-03",
+      "severidad": "alta",
+      "que": "plantilla-turnos-brigada.xlsx de v1.1 tenia los 14 puestos con UN SOLO turno repetido los 7 dias de la semana (11 en 'P'=70h, 1 en 'M'=56h, 2 en 'T'=56h) y CERO dias de libranza en cualquiera de los 14. Incumple el art. 34.1 ET (jornada maxima) y el 37.1 ET (descanso semanal) en los 14 puestos a la vez -- mismo patron que RD-CASUAL-02, aqui con 14 puestos en vez de 13.",
+      "corregido": true,
+      "mecanismo": "TURNOS['forzar_cuadrante']=True + patrones de 40h con libranza real en contenido_guia_restaurante_mexicano/c.py (mismo criterio que representante y casual: partido -> 4P+3L, turno unico -> 5M/T+2L)",
+      "evidencia": "dry-run: 14/14 puestos a horas=40.0 (verificado abriendo plantilla-turnos-brigada.xlsx!'Turnos Semana'!K5:K18 con data_only=True), todos con >=2 dias de libranza"
+    },
+    {
+      "id": "RD-MEX-04",
+      "severidad": "alta",
+      "que": "A diferencia de RD-MEX-02 (solo el Pesimista), el escenario REALISTA de mexicano YA es deficitario en v1.1: Realista!B31=-3.620 EUR/mes (-43.440 EUR/año), aritmeticamente correcto. Encadenado a la Proyeccion 3 Años, los TRES años dan EBITDA negativo (Año1 -86.016 EUR con rampa, Año2 -29.878 EUR, Año3 -28.653 EUR, este ultimo ya a crucero completo con crecimiento 8%/5%). Y cash-flow-break-even!Break-Even!B13 devuelve 'No alcanzado': a los propios parametros de esta guia (85 comensales/dia, ticket 24 EUR, food cost 31%, costes fijos 39.100 EUR/mes) el margen de contribucion mensual (36.597,6 EUR) nunca cubre los costes fijos (39.100 EUR).",
+      "corregido": "NO -- es el resultado CORRECTO del calculador (el break-even devuelve exactamente 'No alcanzado' para una serie que nunca cruza a positivo, que es la demostracion que exige §2.4 del gate; no es un fallo de formula). Los valores base (Break-Even!B5:B9, Realista!B6:B28) son fichero original de v1.1 y tocarlos sin fuente violaria §7-bis (no inventar cifras de negocio).",
+      "recomendacion": "Decision de producto para el orquestador/John (T7/T8/§7.3): el concepto tal como esta costado por v1.1 necesita mas ticket medio, mas cubiertos/dia o menos coste fijo antes de venderse como 'viable' en la landing. No bloquea los gates de T6 (formulas correctas, idempotencia, censo), pero es el hallazgo mas grave de este hermano y debe llegar a John antes del cutover de producto.",
+      "evidencia": "plan-financiero-3-anos.xlsx!'Proyección 3 Años'!B17:D17 (data_only) = -86016.0/-29878.18/-28653.01; cash-flow-break-even.xlsx!'Break-Even'!B11=53040.0, B12=36597.6, B13='No alcanzado' (costes fijos B9=39100 > B12)"
+    }
+  ],
+  "gates_medibles": "dry-run TODO VERDE (exit 0, idempotencia 0, censo 0 defectos, 0 xlsx sin formulas, data_only sin fallos salvo las 10 preexistentes documentadas, 6/6 checklists cuadran, 39/39 hojas protegidas, brigada <=40h y >=SMI en las 14, Proyeccion Año1 = Cash Flow total de entradas al centimo)"
+}
