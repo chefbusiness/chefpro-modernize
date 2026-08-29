@@ -1180,7 +1180,17 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
     ref_mc = '$' + col_margen + '$' + str(r)
     r += 1
     fila_umbral = r
-    _et(ws, 'B' + str(r), 'Umbral de popularidad (Kasavana & Smith)', bold=True)
+    # B-03 · esta celda NO clasifica ni un solo plato: es el umbral sobre la
+    # carta entera (0,7 / 12 platos = 5,8 %), mientras que la columna I compara
+    # cada plato contra el de SU familia (columna L: 17,5 % los entrantes, 14 %
+    # los principales, 23,3 % los postres). El cliente leía «Mix 26,9 %» y
+    # «Umbral 5,8 %», concluía que todo era popular y luego se encontraba un
+    # «Dog» en un postre. Dos varas de medir en la misma hoja, y la que se
+    # enseñaba era la que no se usa: la etiqueta lo dice ahora.
+    _et(ws, 'B' + str(r),
+        'Umbral de popularidad si midieras el mix sobre la carta ENTERA '
+        '(informativo — la clasificación usa el de cada familia, columna L)',
+        bold=True)
     ref_factor = _param(
         ws, r, None, valor=0.7,
         etiqueta='Factor del umbral', fmt='0%',
@@ -1326,7 +1336,10 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
         'pero poco pedido) y Dog (ni una cosa ni la otra). La columna «Acción '
         'recomendada» dice qué hacer con cada uno.',
         'El umbral de popularidad es 70 % / nº de platos con ventas, y el '
-        'factor del 70 % es una celda verde por si tu carta es muy corta.',
+        'factor del 70 % es una celda verde por si tu carta es muy corta. El '
+        'que aparece en el bloque de resumen está calculado sobre la carta '
+        'ENTERA y es informativo: el que clasifica cada plato es el de su '
+        'familia, en la columna «Umbral de popularidad de SU familia (%)».',
         'La matriz se aplica DENTRO de cada familia de carta, no sobre toda '
         'la tabla: cada plato se compara con el margen medio y con el umbral '
         'de popularidad de SU familia (las dos columnas nuevas de la derecha). '
@@ -1877,6 +1890,21 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
                           + str(fila_total) + '*(1+' + ref_ss + '))'),
             fmt=motor.FMT_EUR, bold=True)
     motor.fijar_formato(ws, 'O' + str(fila_total), motor.FMT_EUR)
+    # B-02 · la fila TOTAL publica DOS costes anuales que no tienen por qué
+    # coincidir, y no había una sola línea que lo dijera: O33 sale del bruto
+    # de convenio y P33 × 52, de las horas que programes. La diferencia que
+    # queda tras cuadrar el cuadrante a 40 h es la jornada de referencia
+    # (1.797 h, con vacaciones y festivos descontados) frente a las 2.080 h de
+    # 52 semanas.
+    _et(ws, 'A' + str(fila_total + 1),
+        'El coste de la SEMANA (P' + str(fila_total) + ') multiplicado por 52 '
+        'no tiene por qué coincidir con el coste ANUAL (O' + str(fila_total)
+        + '): el anual sale del bruto de convenio y el semanal, de las horas '
+        'que programes. 52 semanas de 40 h son 2.080 h y la «Jornada anual '
+        'de REFERENCIA» de abajo son 1.797 h, porque descuenta vacaciones y '
+        'festivos; por eso el semanal por 52 queda alrededor de un 16 % por '
+        'encima del anual. Si se separan mucho más, estás programando más '
+        'horas de las que pagas.', wrap=True)
 
     # ---- semáforos ---------------------------------------------------------
     motor.regla_expresion(

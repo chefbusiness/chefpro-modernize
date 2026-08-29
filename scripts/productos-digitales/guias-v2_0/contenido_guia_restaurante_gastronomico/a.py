@@ -438,9 +438,37 @@ CASH = {
 #: desmentía. Se sube el rango a lo que el pack tasa, y el fondo de maniobra
 #: deja de ser un rango tecleado que no cubre ni 2,4 meses de los costes fijos
 #: que el P&L calcula (RD-03).
+#: AVISO DEL CRÍTICO (coherencia CAPEX) — la necesidad total de financiación
+#: que publica plan-financiero-3-anos.xlsx es 1.889.944,24 € (CAPEX 734.020,40
+#: + preapertura 221.603,36 + fondo de maniobra 934.320,48) y el «Rango Alto»
+#: de esta calculadora se quedaba en 1.305.000 €: un 45 % por debajo de lo que
+#: el propio pack dice que hace falta, sin que ninguno de los dos libros
+#: mencionara al otro. Dos arreglos, ninguno inventado: la calculadora incorpora
+#: la PREAPERTURA (que no tenía fila ninguna) y sube el rango del fondo de
+#: maniobra hasta cubrir seis meses de una estructura de este tamaño; y las dos
+#: filas llegan con el importe del plan como EJEMPLO en la columna verde.
 CAPEX = {
     'rangos': {
         r'^equipamiento cocina profesional': (55000, 110000, 180000),
+        # 6 meses de estructura: en el extremo bajo, una casa de menú de
+        # mercado; en el alto, la de este pack (934.320,48 €).
+        r'^fondo de maniobra': (180000, 450000, 950000),
+        # Rentas del local antes de abrir (la licencia tarda 4-8 meses) más
+        # las nóminas de la brigada durante la formación y las pruebas.
+        r'^preapertura': (40000, 110000, 250000),
+    },
+    #: Filas que esta calculadora NO tenía. Se añaden ANTES de la fila TOTAL,
+    #: sin tocar ninguna de las que ya estaban.
+    'filas_nuevas': (
+        {'patron': r'^preapertura',
+         'etiqueta': 'Preapertura (rentas y nóminas antes de abrir)'},
+    ),
+    #: Valor de EJEMPLO en la columna verde «Tu Presupuesto (€)», tomado del
+    #: plan financiero de este mismo kit. No es una estimación nueva: es la
+    #: misma cifra, para que los dos libros digan lo mismo.
+    'ejemplos': {
+        r'^fondo de maniobra': 934320.48,
+        r'^preapertura': 221603.36,
     },
     'notas': {
         r'^equipamiento cocina profesional': (
@@ -449,10 +477,17 @@ CAPEX = {
             '161.430,40 € para una cocina completa con Josper, horno mixto de '
             '10 GN, abatidor y dos cámaras.'),
         r'^fondo de maniobra': (
-            'Estos tres números son un rango de mercado, NO tu fondo de '
-            'maniobra. El tuyo lo calcula plan-financiero-3-anos.xlsx, hoja '
-            '«Inversión», con TUS costes fijos: seis meses del escenario '
-            'realista de este pack son 6 × 155.720,08 € = 934.320,48 €, muy por '
-            'encima de cualquiera de las tres columnas.'),
+            'Estos tres números son un rango de mercado; el TUYO lo calcula '
+            'plan-financiero-3-anos.xlsx, hoja «Inversión», con TUS costes '
+            'fijos. Seis meses del escenario realista de este pack son '
+            '6 × 155.720,08 € = 934.320,48 €, que es la cifra de ejemplo de la '
+            'columna verde y la que marca el rango alto. Ajústala a tu caso.'),
+        r'^preapertura': (
+            'Rentas y suministros del local antes de abrir (la licencia tarda '
+            '4-8 meses) más las nóminas de la brigada durante la formación. '
+            'La cifra verde, 221.603,36 €, es la de ejemplo del plan '
+            'financiero de este kit (6 meses de renta + 2 de nómina); '
+            'ajústala a tu caso. Sin esta fila, la calculadora pedía menos '
+            'dinero del que el propio plan dice que hace falta.'),
     },
 }

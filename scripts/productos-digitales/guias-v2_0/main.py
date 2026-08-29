@@ -3,7 +3,30 @@
 main.py — Orquestador del post-proceso v2.0 de la familia «Guías Cómo Montar».
 
     python3 main.py --producto <pid> --dry-run [--solo motor|a|b|c] \
-                    [--json informe.json]
+                    [--fichero <nombre.xlsx>] [--json informe.json]
+
+CANARIO (§9). `--solo` elige GRUPOS (a, b, c), no ficheros; el canario que la
+SPEC declara obligatorio —«la primera ejecución real es UN SOLO fichero del
+representante»— se hace con **`--fichero <nombre.xlsx>`**: filtra el catálogo
+del producto a ese fichero, y la idempotencia, el censo y las demostraciones
+corren sólo sobre él. En `--dry-run` la copia de trabajo lleva ese fichero y
+nada más; en producción el **respaldo previo sigue siendo de la carpeta
+entera**, que es lo que permite restaurar si falla.
+
+    GUIAS_APPLY=1 python3 main.py --producto <pid> \
+        --fichero pl-mensual-escenarios.xlsx --json <informe>
+
+Y DESPUÉS, sin excepción: (1) exit 0 con idempotencia 0, censo 0 y
+`data_only.fallos = []`; (2) abrir el fichero escrito con `data_only=True` y
+contrastar las celdas clave **contra el JSON del crítico**, no contra la
+memoria; (3) diff de fórmulas contra el respaldo (que no haya desaparecido
+ninguna preexistente); (4) `censo-entregables.py --only <carpeta> --fail` sobre
+la carpeta REAL; (5) si algo no cuadra, restaurar desde el respaldo y PARAR.
+
+`procesar()` recorre el catálogo que declaran los grupos, no lo que hay en
+disco: si el catálogo pide un fichero ausente, el script **aborta con exit 2 y
+la lista de ausentes** (antes moría con un `FileNotFoundError` sin capturar a
+mitad de la escritura).
 
 REGLA DURA: `astro-site/public/dl/guia-*/` NO se toca. `--dry-run` regenera una
 copia en el scratchpad y trabaja allí. Sin `--dry-run` el script **ABORTA**
@@ -120,12 +143,23 @@ def ficheros_de(carpeta):
                   for p in glob.glob(os.path.join(carpeta, '*.xlsx')))
 
 
-def preparar_copia(origen, destino):
+def preparar_copia(origen, destino, solo=None):
+    """Copia de trabajo. Con `solo` (canario de §9) copia ESE fichero y nada
+    más, para que el censo y las demos no midan los 17 que no se han tocado."""
     if not os.path.isdir(origen):
         raise SystemExit('No existe el origen: ' + origen)
     if os.path.isdir(destino):
         shutil.rmtree(destino)
     os.makedirs(os.path.dirname(destino), exist_ok=True)
+    if solo:
+        if not os.path.isfile(os.path.join(origen, solo)):
+            raise SystemExit('ABORTADO: --fichero «' + solo + '» no existe en '
+                             + origen)
+        os.makedirs(destino, exist_ok=True)
+        shutil.copy2(os.path.join(origen, solo), os.path.join(destino, solo))
+        log('  copia de trabajo regenerada con UN SOLO fichero: '
+            + os.path.join(destino, solo))
+        return
     shutil.copytree(origen, destino)
     log('  copia de trabajo regenerada: ' + destino)
 
@@ -291,11 +325,20 @@ def procesar(carpeta, fname, grupos, contenidos, informe_global, pid):
     registro = list(motor.REGISTRO)
     registro += [(h, c, fm) for h, c, fm in registro_grupo
                  if isinstance(fm, str) and fm.startswith('=')]
+    # AVISO DEL CRÍTICO · «fórmulas nuevas» era el contador de ESCRITURAS del
+    # motor, no lo que queda en el fichero: `menu-engineering-matrix` declaraba
+    # 203 nuevas y el libro tiene 178 en total (una celda reescrita dos veces
+    # cuenta dos), y la cifra de cierre del informe salía inflada. La que vale
+    # —y la que la capa de producto puede publicar— es la MEDIDA sobre el
+    # fichero ya guardado, que es la misma que cuenta `inject_cache.py`.
+    formulas_en_fichero = contar_formulas(path)
     if informe_global is not None:
         informe_global.append({
             'fichero': fname,
             'cambios': cambios,
             'formulas_nuevas': len(registro),
+            'escrituras_de_formula': len(registro),
+            'formulas_en_el_fichero': formulas_en_fichero,
             'checklists': (info or {}).get('checklists_cerrados', []),
             'variante_pl': (info or {}).get('variante_pl'),
             # Los literales van ENTEROS al total y con muestra amplia: un
@@ -304,7 +347,20 @@ def procesar(carpeta, fname, grupos, contenidos, informe_global, pid):
             'literales_sospechosos_total': len(literales),
             'literales_sospechosos': literales[:60],
             'contadores': cuenta})
-    return registro
+    return registro, formulas_en_fichero
+
+
+def contar_formulas(path):
+    """Fórmulas REALMENTE presentes en el .xlsx ya guardado (lo mismo que
+    cuenta `inject_cache.py`). Ver el aviso del crítico sobre el contador
+    inflado del paso 2/7."""
+    try:
+        wbx = openpyxl.load_workbook(path)
+    except Exception:                                        # noqa: BLE001
+        return None
+    return sum(1 for ws in wbx.worksheets for row in ws.iter_rows()
+               for c in row
+               if isinstance(c.value, str) and c.value.startswith('='))
 
 
 def ficheros_a_tocar(nombres, grupos, pid):
@@ -420,7 +476,44 @@ def _copia_demo(carpeta, fname, demos_dir):
     return destino
 
 
-def demo_checklists(carpeta, nombres, demos_dir):
+def _total_nativo(ws, tope, col_pref=None):
+    """El TOTAL que el libro YA traía (moldes C y D), por encima de la marca
+    del bloque de resumen.
+
+    Sin esto, `demo_checklists` no encontraba ningún TOTAL en dark-kitchen
+    —el motor no lo duplica, y hace bien (§3.3)— y devolvía `total=None`,
+    `cuadra=None` y **cero fallos**: un gate apagado.
+
+    Dos detalles medidos, los dos con trampa:
+    · La etiqueta «TOTAL» **no está en la columna A ni en la B**: está en la D
+      de `checklist-equipamiento-obra` y en la E de `checklist-apertura-legal`,
+      pegada a su columna de importes. Se busca en TODAS las columnas.
+    · Esa fila tiene **más de una** fórmula (`SUM` del presupuesto y `SUM` del
+      real). La que hay que comparar con los subtotales es la de SU MISMA
+      COLUMNA: comparar el TOTAL de «Real (€)» —que es 0 hasta que el cliente
+      apunte la primera factura— contra los subtotales del presupuesto daría
+      un falso rojo permanente.
+    """
+    for r in range(1, max(1, tope)):
+        fila_total = False
+        for c in range(1, ws.max_column + 1):
+            v = ws.cell(row=r, column=c).value
+            if isinstance(v, str) and v.strip().upper().startswith('TOTAL'):
+                fila_total = True
+                break
+        if not fila_total:
+            continue
+        if col_pref:
+            cel = ws[col_pref + str(r)]
+            if cel.data_type == 'f':
+                return cel.coordinate
+        for c in range(2, ws.max_column + 1):
+            if ws.cell(row=r, column=c).data_type == 'f':
+                return ws.cell(row=r, column=c).coordinate
+    return None
+
+
+def demo_checklists(carpeta, nombres, demos_dir, moldes=None):
     """§1.9 — el bloque de resumen de cada checklist tiene que CALCULAR:
 
     · el TOTAL suma la columna de coste (o el que ya traía el molde C/D);
@@ -428,7 +521,13 @@ def demo_checklists(carpeta, nombres, demos_dir):
       («Instalado» en `checklist-equipamiento-obra`, no «Completado»), y
       CAMBIA al marcar un ítem;
     · los subtotales por categoría suman lo mismo que el TOTAL.
+
+    **Un gate que devuelve `None` no es verde.** Sólo el molde B —que no tiene
+    columna de coste y así lo declara la SPEC §3.3/§7-bis.17— puede quedarse
+    sin TOTAL; en A, C y D, un TOTAL que no evalúa es un FALLO, y un
+    `cuadra_subtotales` a `None` teniendo subtotales, también.
     """
+    moldes = moldes or {}
     fuera, fallos = [], []
     for fname in nombres:
         if 'checklist' not in fname.lower():
@@ -482,6 +581,16 @@ def demo_checklists(carpeta, nombres, demos_dir):
                     fallos.append(fname + ':' + ws.title + ': ni bloque de '
                                   'resumen (§1.9) ni contador propio')
                 continue
+            molde = moldes.get((fname, ws.title))
+            nativo = None
+            if not coord_total:
+                # Moldes C y D: el TOTAL es el del propio libro, que el motor
+                # respeta y NO duplica (§3.3). Hay que evaluar ÉSE, y en la
+                # columna en la que suman los subtotales.
+                col_sub = (''.join(ch for ch in subtot[0] if ch.isalpha())
+                           if subtot else None)
+                nativo = _total_nativo(ws, fila_marca, col_sub)
+                coord_total = nativo
             copia = _copia_demo(carpeta, fname, demos_dir)
             try:
                 xl = _pycel(copia)
@@ -516,6 +625,8 @@ def demo_checklists(carpeta, nombres, demos_dir):
                         xl.set_value(pref + primera, terminal[-1])
                         avance2 = _ev(xl, pref + coord_avance)
             fila = {'fichero': fname, 'hoja': ws.title,
+                    'molde': molde, 'coord_total': coord_total,
+                    'total_nativo_del_libro': nativo,
                     'total': total, 'avance': avance,
                     'avance_tras_marcar_1': avance2,
                     'subtotales': len(subtot),
@@ -525,9 +636,23 @@ def demo_checklists(carpeta, nombres, demos_dir):
                                  or not isinstance(total, (int, float)))
                         else abs(suma_sub - total) < 0.01)}
             fuera.append(fila)
+            if not coord_total and molde != 'B':
+                fallos.append(fname + ':' + ws.title + ': molde '
+                              + str(molde) + ' SIN fila TOTAL: ni la del '
+                              'bloque de resumen (§1.9) ni una propia del '
+                              'libro. Sólo el molde B puede quedarse sin '
+                              'TOTAL (§3.3: no tiene columna de coste)')
             if coord_total and not isinstance(total, (int, float)):
                 fallos.append(fname + ':' + ws.title + '!' + coord_total
                               + ': el TOTAL no evalúa (' + repr(total) + ')')
+            if (molde != 'B' and subtot
+                    and fila['cuadra_subtotales'] is None):
+                fallos.append(fname + ':' + ws.title + ': hay '
+                              + str(len(subtot)) + ' subtotales por categoría '
+                              'y NO se ha podido comprobar que cuadren con el '
+                              'TOTAL (subtotales=' + repr(suma_sub)
+                              + ', TOTAL=' + repr(total) + '): un gate que '
+                              'devuelve None no es un gate verde')
             if coord_avance and not isinstance(avance, (int, float)):
                 fallos.append(fname + ':' + ws.title + '!' + coord_avance
                               + ': el % completado no evalúa ('
@@ -700,6 +825,13 @@ def main():
     ap.add_argument('--json', default=None, help='ruta del informe JSON')
     ap.add_argument('--origen', default=None,
                     help='carpeta de origen alternativa (exige --dry-run)')
+    ap.add_argument('--fichero', default=None,
+                    help='CANARIO (§9): procesa UN SOLO xlsx del producto. '
+                         'Filtra el catálogo a ese fichero y la idempotencia, '
+                         'el censo y las demos corren sólo sobre él. En '
+                         'dry-run la copia de trabajo lleva ese fichero y '
+                         'nada más; en producción el respaldo previo sigue '
+                         'siendo de la CARPETA ENTERA.')
     ap.add_argument('--sin-idempotencia', action='store_true')
     ap.add_argument('--sin-demos', action='store_true')
     args = ap.parse_args()
@@ -724,10 +856,22 @@ def main():
               '--dry-run (o GUIAS_APPLY=1 si eres el orquestador y ya tienes '
               'el visto bueno).')
 
+    if args.fichero and not args.fichero.endswith('.xlsx'):
+        raise SystemExit('ABORTADO: --fichero espera el NOMBRE de un .xlsx '
+                         'del producto (p. ej. pl-mensual-escenarios.xlsx), '
+                         'no ' + repr(args.fichero) + '.')
+    if args.fichero and os.path.sep in args.fichero:
+        raise SystemExit('ABORTADO: --fichero es un nombre, no una ruta: '
+                         + repr(args.fichero))
+    if args.fichero and not os.path.isfile(os.path.join(origen,
+                                                        args.fichero)):
+        raise SystemExit('ABORTADO: --fichero «' + args.fichero + '» no está '
+                         'en ' + origen)
+
     motor.CTX['producto'] = pid
     respaldo = None
     if args.dry_run:
-        preparar_copia(origen, destino)
+        preparar_copia(origen, destino, solo=args.fichero)
         carpeta = destino
     else:
         carpeta = origen
@@ -792,16 +936,50 @@ def main():
                 json.dump(informe, fh, ensure_ascii=False, indent=1)
         return 2
 
+    moldes_por_hoja = dict(((d['fichero'], ch['hoja']), ch['molde'])
+                           for d in detectado for ch in d['checklists'])
+
     nombres = ficheros_a_tocar(nombres, grupos, pid)
+    # RT-08-bis / B-05 · `ficheros_a_tocar` añade el CATÁLOGO que declara cada
+    # grupo, que puede no estar en disco (carpeta reducida, canario, un
+    # entregable que se renombró). Antes eso reventaba con un
+    # FileNotFoundError sin capturar dentro de `procesar()`: ahora se dice qué
+    # falta y se aborta limpio, con el informe escrito.
+    ausentes_disco = [n for n in nombres
+                      if not os.path.isfile(os.path.join(carpeta, n))]
+    if args.fichero:
+        nombres = [args.fichero]
+        ausentes_disco = []
+        log('  CANARIO (§9): sólo se procesa ' + args.fichero)
+    if ausentes_disco:
+        log('\nABORTADO — el catálogo pide ficheros que no están en disco:')
+        for x in ausentes_disco:
+            log('  falta ' + x)
+        informe = {'producto': pid, 'version': '2.0', 'rol': 'motor',
+                   'spec': SPEC, 'abortado_por': 'ficheros_ausentes',
+                   'modo': 'dry-run' if args.dry_run else 'produccion',
+                   'carpeta_trabajo': carpeta,
+                   'fallos': ['el catálogo de ' + pid + ' pide ' + n
+                              + ', que no está en ' + carpeta
+                              for n in ausentes_disco],
+                   'exit': 2}
+        if args.json:
+            os.makedirs(os.path.dirname(os.path.abspath(args.json)),
+                        exist_ok=True)
+            with open(args.json, 'w', encoding='utf-8') as fh:
+                json.dump(informe, fh, ensure_ascii=False, indent=1)
+        return 2
     informe_ficheros, registros = [], {}
 
     # ---- 2/7 post-proceso ------------------------------------------------
     log('\n== 2/7 · post-proceso de ' + str(len(nombres)) + ' ficheros ==')
+    formulas_medidas = {}
     for fname in nombres:
-        registros[fname] = procesar(carpeta, fname, grupos, contenidos,
-                                    informe_ficheros, pid)
-        log('  ' + fname + ': ' + str(len(registros[fname]))
-            + ' fórmulas nuevas')
+        registros[fname], formulas_medidas[fname] = procesar(
+            carpeta, fname, grupos, contenidos, informe_ficheros, pid)
+        log('  ' + fname + ': ' + str(formulas_medidas[fname])
+            + ' fórmulas EN EL FICHERO (' + str(len(registros[fname]))
+            + ' escrituras de fórmula del motor y los grupos)')
 
     # ---- RT-08 · gate de §9 «0 xlsx con 0 fórmulas» ----------------------
     # No estaba implementado, y el motor imprimía «TODO VERDE» con exit 0 sobre
@@ -809,19 +987,10 @@ def main():
     # fórmulas — §3.5 entero sin aplicar (sin Mes inicio, sin Duración, sin
     # Depende de, sin Días y sin la barra). El verde del motor no puede seguir
     # significando «corre limpio» en vez de «la SPEC se ha cumplido».
-    sin_formulas = []
-    for fname in nombres:
-        if not fname.endswith('.xlsx'):
-            continue
-        try:
-            wbx = openpyxl.load_workbook(os.path.join(carpeta, fname))
-        except Exception:
-            continue
-        n = sum(1 for ws in wbx.worksheets for row in ws.iter_rows()
-                for c in row
-                if isinstance(c.value, str) and c.value.startswith('='))
-        if n == 0:
-            sin_formulas.append(fname)
+    sin_formulas = [n for n in nombres
+                    if n.endswith('.xlsx') and formulas_medidas.get(n) == 0]
+    log('  fórmulas medidas en los ' + str(len(nombres)) + ' ficheros: '
+        + str(sum(v or 0 for v in formulas_medidas.values())))
     if sin_formulas:
         log('  ⚠️  xlsx SIN una sola fórmula: ' + ', '.join(sin_formulas))
 
@@ -835,6 +1004,7 @@ def main():
         antes = dict((n, digest(os.path.join(carpeta, n))) for n in nombres)
         for fname in nombres:
             procesar(idem_dir, fname, grupos, contenidos, None, pid)
+        _ = None
         difs = []
         for n in nombres:
             difs += diff_digest(antes[n], digest(os.path.join(idem_dir, n)), n)
@@ -866,7 +1036,8 @@ def main():
     if not args.sin_demos:
         log('\n== 7/7 · demostraciones (pycel) ==')
         demos = {
-            'checklists': demo_checklists(carpeta, nombres, demos_dir),
+            'checklists': demo_checklists(carpeta, nombres, demos_dir,
+                                          moldes_por_hoja),
             'semaforo_isnumber': demo_isnumber(demos_dir),
             'sin_dato_es_vacio': demo_sin_dato(demos_dir),
             'proteccion': demo_proteccion(carpeta, nombres),
@@ -966,6 +1137,10 @@ def main():
         'solo_motor': solo_motor,
         'moldes_detectados': detectado,
         'literales_sospechosos_total': literales_total,
+        'fichero_unico': args.fichero,
+        'formulas_en_los_ficheros': sum(v or 0
+                                        for v in formulas_medidas.values()),
+        'escrituras_de_formula': sum(len(v) for v in registros.values()),
         'ficheros': informe_ficheros,
         'gates': {
             'idempotencia': idem,

@@ -64,6 +64,7 @@ escape desde `motor.NARROW` / `motor.NOBRK`, nunca escribiendo el carácter.
 """
 import re
 import unicodedata
+from copy import copy
 
 from openpyxl.styles import Alignment, Font
 from openpyxl.worksheet.page import PageMargins
@@ -1515,9 +1516,10 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
          'Qué parte del mes de crucero facturas el PRIMER mes. De ahí sube en '
          'línea recta hasta el 100 % en el mes de crucero.')
     nota(ws, 'E' + str(r_ing),
-         'Año 1 = ' + ('columna TOTAL del P&L Mensual' if col_total
-                       else 'P&L Mensual') + ' ÷ 12 × la suma de los doce '
-         'factores de la rampa de arriba (con 0 meses de rampa, × 12). El '
+         'Año 1 = ' + ('la columna TOTAL del P&L Mensual dividida entre 12'
+                       if col_total else 'el mes tipo del P&L Mensual')
+         + ' (el mes de CRUCERO) × la suma de los doce factores de la rampa '
+           'de arriba; con 0 meses de rampa, × 12. El '
          'cash flow de este mismo pack reparte la rampa mes a mes; el TOTAL '
          'del año coincide al céntimo. Los años 2 y 3 parten del ritmo de '
          'CRUCERO anualizado, no del año 1, porque en ellos ya no hay rampa. '
@@ -1937,7 +1939,11 @@ def plan_representante(wb, fname, cambios, contenido, subtitulo):
                     '(el que va al banco). calculadora-capex.xlsx es la hoja '
                     'de RANGOS DE MERCADO, con el desglose por categorías; la '
                     'última columna de «Inversión» dice a qué categoría suya '
-                    'corresponde cada concepto.', RX_INSTR_FUENTE)
+                    'corresponde cada concepto. La NECESIDAD TOTAL de esta '
+                    'hoja (CAPEX + preapertura + fondo de maniobra) tiene que '
+                    'caber en el rango de aquella: sus filas de preapertura y '
+                    'fondo de maniobra llegan con esta misma cifra de '
+                    'ejemplo.', RX_INSTR_FUENTE)
     return 'inversion-conceptos'
 
 
@@ -2676,6 +2682,7 @@ def _break_even_hoja_propia(ws, capa, meses, hoja_caja, cambios, fname,
 # §2.3.6 · calculadora-capex.xlsx — hoja de RANGOS de mercado
 # ==========================================================================
 RX_INSTR_RANGOS = re.compile(r'^Esta calculadora es la hoja de RANGOS')
+RX_INSTR_NECESIDAD = re.compile(r'^Los rangos cubren la NECESIDAD')
 
 
 def variante_capex(wb, fname=''):
@@ -2718,8 +2725,57 @@ def _fila_total(ws, fila_cab):
     return f_total, ultima
 
 
+def _capex_filas_extra(ws, fila_cab, contenido, fname, cambios):
+    """Filas de categoría que la calculadora NO tenía (aviso de coherencia
+    CAPEX del crítico: no había ninguna de PREAPERTURA, y sin ella el «Rango
+    Alto» del libro pedía 1.305.000 € para una necesidad de 1.889.944,24 €
+    que publica el plan financiero del mismo kit).
+
+    Se escriben JUSTO ENCIMA de la fila TOTAL, desplazándola una fila hacia
+    abajo **copiando la celda**, nunca con `insert_rows`: en este punto del
+    pipeline `motor.aplicar` ya ha registrado coordenadas (`_g_formatos`,
+    `_g_editables`) y un desplazamiento estructural las dejaría apuntando a la
+    celda de al lado. Idempotente: si la etiqueta ya está, no se toca nada.
+    """
+    conf = ((getattr(contenido, 'CAPEX', None) or {}) if contenido else {})
+    extras = conf.get('filas_nuevas') or ()
+    if not extras:
+        return 0
+    col_etq = _columna_concepto(ws, fila_cab)
+    from openpyxl.utils import get_column_letter as gcl
+    letra_etq = gcl(col_etq)
+    puestas = []
+    for extra in extras:
+        f_total, ultima = _fila_total(ws, fila_cab)
+        if f_total is None:
+            return 0
+        if _fila(ws, extra['patron'], col=col_etq, desde=fila_cab + 1,
+                 hasta=ultima, obligatoria=False) is not None:
+            continue                        # ya está: 2.ª pasada
+        destino = f_total
+        for c in range(1, ws.max_column + 1):
+            origen = ws.cell(row=destino, column=c)
+            abajo = ws.cell(row=destino + 1, column=c)
+            abajo.value = origen.value
+            abajo._style = copy(origen._style)
+            origen.value = None
+        motor.val(ws, letra_etq + str(destino), extra['etiqueta'])
+        if _norm(ws.cell(row=fila_cab, column=1).value) in ('#', 'n', 'no'):
+            for i, r in enumerate(range(fila_cab + 1, destino + 1), start=1):
+                motor.val(ws, 'A' + str(r), i, fmt=FMT_ENT)
+        puestas.append(letra_etq + str(destino) + '=' + extra['etiqueta'])
+    if puestas:
+        apunta(cambios, fname, ws, 'fila(s) de categoría añadidas encima del '
+               'TOTAL, que baja una fila: ' + ' · '.join(puestas)
+               + ' — la calculadora no tenía dónde poner la preapertura y su '
+                 'rango alto pedía menos dinero del que el plan financiero de '
+                 'este mismo kit dice que hace falta')
+    return len(puestas)
+
+
 def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
     variante, ws, fila_cab = variante_capex(wb, fname)
+    _capex_filas_extra(ws, fila_cab, contenido, fname, cambios)
     f_total, ultima = _fila_total(ws, fila_cab)
     if f_total is None:
         raise VarianteDesconocida(fname + ':' + ws.title
@@ -2755,18 +2811,35 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
 
     # semáforo «tu presupuesto frente al rango», sólo donde hay rango
     if variante in ('rangos', 'min-max'):
+        from openpyxl.utils import get_column_letter as gcl
         cols = _columnas_rango(ws, fila_cab)
         if cols:
             bajo, alto, propio = cols
             fila = f_total + 2
             motor.val(ws, 'A' + str(fila),
                       'Tu presupuesto frente al rango de mercado')
+            # La columna llega con dos partidas de EJEMPLO rellenas (fondo de
+            # maniobra y preapertura) y el resto vacías: sin esta guarda, el
+            # aviso diría «Dentro del rango» sobre un presupuesto que sólo
+            # tiene dos de las trece filas, que es justo la lectura que no
+            # queremos regalar.
+            # El nº de partidas NO va como literal dentro de la fórmula
+            # (§1 «parámetro en celda, nunca literal»): se cuenta la propia
+            # columna de categorías, que además sigue siendo correcta si
+            # mañana se añade una fila más.
+            etq = gcl(_columna_concepto(ws, fila_cab))
+            n_relleno = ('COUNT(' + propio + str(fila_cab + 1) + ':' + propio
+                         + str(ultima) + ')')
+            n_partidas = ('COUNTIF($' + etq + '$' + str(fila_cab + 1) + ':$'
+                          + etq + '$' + str(ultima) + ',"<>")')
             motor.f(ws, propio + str(fila),
-                    '=IF(' + propio + str(f_total) + '="","",IF(' + propio
+                    '=IF(' + n_relleno + '=0,"",IF(' + n_relleno + '<'
+                    + n_partidas + ',"Columna incompleta: el TOTAL sólo suma '
+                    'las filas que has rellenado",IF(' + propio
                     + str(f_total) + '<' + bajo + str(f_total)
                     + ',"Por debajo del rango bajo",IF(' + propio
                     + str(f_total) + '>' + alto + str(f_total)
-                    + ',"Por encima del rango alto","Dentro del rango")))')
+                    + ',"Por encima del rango alto","Dentro del rango"))))')
             motor.fijar_formato(ws, propio + str(fila), 'General')
             apunta(cambios, fname, ws, 'aviso de encaje del presupuesto propio '
                    'en ' + propio + str(fila) + ' (§2.3.6)')
@@ -2777,6 +2850,13 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
                     'la correspondencia concepto → categoría de esta hoja. Los '
                     'dos libros se comparan; ninguno lee del otro (un .xlsx '
                     'movido de carpeta daría #REF!).', RX_INSTR_RANGOS)
+    instruccion(wb, 'Los rangos cubren la NECESIDAD TOTAL, no sólo la obra y '
+                    'el equipo: incluyen la preapertura (rentas y nóminas '
+                    'antes de abrir) y el fondo de maniobra de seis meses, '
+                    'que son las dos partidas que hunden a quien abre. Las '
+                    'dos llegan con la cifra del plan financiero de este kit '
+                    'como EJEMPLO en la columna verde; ajústalas a tu caso.',
+                RX_INSTR_NECESIDAD)
     return variante
 
 
@@ -2817,6 +2897,22 @@ def _capex_rangos_y_notas(ws, fila_cab, ultima, fname, cambios, contenido):
         for off, valor in enumerate((bajo, medio, alto)):
             motor.val(ws, gcl(c_bajo + off) + str(r), valor, fmt=FMT_EUR)
         tocadas += 1
+    # Valores de EJEMPLO en la columna verde «Tu Presupuesto (€)», tomados del
+    # plan financiero de este mismo kit (aviso de coherencia CAPEX). Sólo si la
+    # celda está vacía: nunca se pisa lo que el cliente haya escrito (§1.13).
+    ejemplos = conf.get('ejemplos') or {}
+    if ejemplos and cols and cols[2]:
+        for patron, valor in ejemplos.items():
+            r = _fila(ws, patron, col=2, desde=fila_cab + 1, hasta=ultima,
+                      obligatoria=False)
+            if r is None:
+                continue
+            if ws[cols[2] + str(r)].value is None:
+                motor.val(ws, cols[2] + str(r), valor, fmt=FMT_EUR,
+                          verde_=True)
+            motor.verde(ws, cols[2] + str(r))
+            motor.fijar_formato(ws, cols[2] + str(r), FMT_EUR)
+            tocadas += 1
     notas = conf.get('notas') or {}
     if notas:
         cel = ws[col_nota + str(fila_cab)]

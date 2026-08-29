@@ -307,12 +307,22 @@ TURNOS = {
     #: días de libranza por persona y el domingo y el lunes cerrados para los
     #: puestos que no hacen mise en place. Es una hipótesis de organización, en
     #: celda verde: se cambia escribiendo encima.
+    #: B-02 · los ocho puestos de turno PARTIDO llevan SEIS días de libranza
+    #: repartidos (3 «L» en la semana), no cinco: con cinco «P» de 10 h el
+    #: cuadrante de EJEMPLO programaba 50 h/semana a Chef Ejecutivo, Sous Chef,
+    #: los tres jefes de partida, Maître y dos camareros de rango — por encima
+    #: de las 40 h del art. 34.1 ET y de la propia C44 del libro, hasta el
+    #: punto de que su formato condicional los pintaba a los ocho EN ROJO nada
+    #: más abrir el fichero: el producto entregaba su ejemplo marcado como
+    #: incumplimiento. Con 4 «P» quedan en 40 h, K33 baja de 1.040 a 960 h
+    #: (40 h/persona) y **L6:L30 no se toca**, así que O33 (717.620,12 €/año),
+    #: el P&L y la cadena de 59.801,68 €/mes siguen exactamente igual.
     'cuadrante': {
-        'chef ejecutivo':        'PPPPPLL',
-        'sous chef':             'PPPPLLP',
-        'jefe partida carnes':   'PPPLLPP',
-        'jefe partida pescados': 'PPLLPPP',
-        'jefe partida frios':    'PLLPPPP',
+        'chef ejecutivo':        'PPPPLLL',
+        'sous chef':             'PPPLLLP',
+        'jefe partida carnes':   'PPLLLPP',
+        'jefe partida pescados': 'PLLLPPP',
+        'jefe partida frios':    'LLLPPPP',
         'jefe partida pasteleria': 'MMMMMLL',
         'commis 1':              'MMMMMLL',
         'commis 2':              'MMMMLLM',
@@ -323,12 +333,12 @@ TURNOS = {
         'ayudante 2':            'TTTTTLL',
         'plonge 1':              'TTTTTLL',
         'plonge 2':              'TTTTLLT',
-        'maitre':                'PPPPPLL',
+        'maitre':                'PPLPPLL',
         'sommelier':             'TTTTTLL',
         'camarero rango 1':      'TTTTTLL',
         'camarero rango 2':      'TTTTLLT',
-        'camarero rango 3':      'PPPPLLP',
-        'camarero rango 4':      'PPPLLPP',
+        'camarero rango 3':      'PPPLLLP',
+        'camarero rango 4':      'PLLLPPP',
         'runner 1':              'TTTTTLL',
         'runner 2':              'TTTTLLT',
         'hostess':               'TTTTTLL',
