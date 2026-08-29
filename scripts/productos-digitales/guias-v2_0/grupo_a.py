@@ -902,6 +902,54 @@ HOJA_FIN = 'Financiación'
 AVISO_CARENCIA = 'La carencia no puede igualar ni superar el plazo'
 ANOS_CUADRO = 10          # filas del cuadro francés; la nota explica ampliarlo
 
+#: B-01 · las dos celdas verdes que reconcilian la proyección con el cash flow.
+#: Las dos etiquetas DECLARAN su tipo (`meses` → recuento, `%` inicial →
+#: porcentaje) porque `motor.tipo_por_etiqueta` decide el formato por el texto:
+#: una etiqueta muda acaba en `#,##0.00 €` en la 2.ª pasada, que es exactamente
+#: lo que rompió B-04 en panadería.
+ET_RAMPA_MESES = 'Meses de rampa hasta el mes de crucero'
+ET_RAMPA_PRIMERO = '% del crucero que se factura el primer mes'
+
+
+def _rampa_ano_1(contenido, conf):
+    """Los dos parámetros de la rampa del año 1, MEDIDOS, no inventados.
+
+    B-01: `plan-financiero-3-anos` publicaba el año 1 como «mes tipo × 12»
+    (2.276.736,00 €) y `cash-flow-break-even` como una rampa de arranque
+    (2.049.062,40 €), 227.673,60 € aparte y sin una sola nota que reconciliara
+    las dos cifras — el número de portada de los dos ficheros que el cliente
+    lleva al banco.
+
+    La rampa del cash flow ya está medida en `contenido_<pid>/a.py:CASH`, así
+    que aquí no se elige ningún número: se DERIVA de ella.
+
+    · `meses` = cuántos de los doce factores están por debajo del crucero.
+    · `primero` = el porcentaje del primer mes que hace que la suma de una
+      rampa LINEAL de `meses` tramos valga exactamente lo mismo que la del
+      cash flow. Para la rampa del representante (0,60 · 0,70 · 0,80 · 0,85 ·
+      0,90 · 0,95 y crucero) sale 0,60 clavado, porque su media es (p+1)/2.
+
+    Si la guía no trae rampa medida, se devuelven 0 meses: la proyección se
+    comporta EXACTAMENTE como antes (`P&L × 12`) y no se inventa un arranque.
+    """
+    conf_r = conf.get('rampa') if isinstance(conf, dict) else None
+    if isinstance(conf_r, (list, tuple)) and len(conf_r) == 2:
+        return int(conf_r[0]), float(conf_r[1]), None
+    rampa = ((getattr(contenido, 'CASH', None) or {}).get('rampa')
+             if contenido else None)
+    if not rampa or len(rampa) != 12:
+        return 0, 0.6, None
+    meses = sum(1 for x in rampa if x < 1)
+    suma = round(sum(rampa), 10)
+    if meses <= 1:
+        return 0, 0.6, suma
+    primero = round(2 * (suma - (12 - meses)) / meses - 1, 6)
+    if not 0 <= primero <= 1:
+        # Una rampa que no se puede describir con dos parámetros no se fuerza:
+        # se deja la proyección en «× 12» y la nota lo dice.
+        return 0, 0.6, suma
+    return meses, primero, suma
+
 
 def variante_plan(wb, fname=''):
     """`'inversion-conceptos'` | `'inversion-categorias'` | `'pl-3-anos'`."""
@@ -1298,16 +1346,28 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
             return "'P&L Mensual'!" + col_total + str(fila)
         return "'P&L Mensual'!B" + str(fila) + '*12'
 
+    def _mensual(fila):
+        """El mes de CRUCERO. Es lo que la rampa del año 1 multiplica, y no es
+        siempre «la celda de enero»: en la rejilla de 12 meses de los hermanos
+        el crucero es la columna TOTAL dividida entre 12."""
+        if not fila:
+            return None
+        if col_total:
+            return "('P&L Mensual'!" + col_total + str(fila) + '/12)'
+        return "'P&L Mensual'!B" + str(fila)
+
     pl_ing_celda = ("'P&L Mensual'!" + (col_total or 'B') + str(pl['tot_ing']))
-    pl_ing = _anual(pl['tot_ing'])
-    pl_var = _anual(pl['tot_var'])
     pl_fij = _anual(pl['tot_fij'])
     pl_amo = _anual(pl.get('amort'))
+    mens_ing = _mensual(pl['tot_ing'])
+    mens_var = _mensual(pl['tot_var'])
 
     motor.val(ws, 'A5', 'PARÁMETROS', bold=True)
     motor.val(ws, 'A6', 'Crecimiento de ventas (%)')
     motor.val(ws, 'A7', 'Inflación de costes (%)')
     motor.val(ws, 'A8', 'Tipo del Impuesto de Sociedades (%)')
+    motor.val(ws, 'A9', ET_RAMPA_MESES)
+    motor.val(ws, 'A10', ET_RAMPA_PRIMERO)
     nota(ws, 'E6', 'Sobre el año anterior. El Año 1 es la base: sale del P&L '
                    'mensual de este mismo libro.')
     nota(ws, 'E8', 'Tipo general 25 %. Una entidad de NUEVA CREACIÓN tributa '
@@ -1337,69 +1397,139 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
     for col in ('B', 'C', 'D'):
         motor.val(ws, col + '8', tipo_is, fmt=FMT_PCT, verde_=True)
 
-    filas = ((11, 'Ingresos (€)'), (12, 'Costes variables (€)'),
-             (13, 'Margen bruto (€)'), (14, 'Costes fijos sin amortización (€)'),
-             (15, 'EBITDA (€)'), (16, 'Amortización (€)'),
-             (17, 'EBIT — resultado de explotación (€)'),
-             (18, 'Gastos financieros (€)'), (19, 'BAI — beneficio antes de '
-                                                  'impuestos (€)'),
-             (20, 'Impuesto de Sociedades (€)'), (21, 'Resultado neto (€)'),
-             (22, 'Margen EBITDA (%)'))
-    motor.val(ws, 'A10', 'CUENTA DE RESULTADOS PREVISIONAL', bold=True)
+    # ---- B-01 · los dos parámetros de la RAMPA del año 1 ------------------
+    meses_rampa, pct_primero, suma_rampa = _rampa_ano_1(contenido, conf)
+    motor.val(ws, 'B9', meses_rampa, fmt=FMT_ENT, verde_=True)
+    motor.fijar_formato(ws, 'B9', FMT_ENT)
+    motor.dv_propia(ws, 'B9', 0, 12, 'Meses de rampa',
+                    'Un número entero entre 0 y 12. 0 = abres ya al ritmo de '
+                    'crucero (el año 1 sería el mes tipo × 12).',
+                    'Meses que tardas en llegar al mes de crucero. Con 0 el '
+                    'año 1 es el P&L mensual × 12.')
+    motor.val(ws, 'B10', pct_primero, fmt=FMT_PCT, verde_=True)
+    motor.fijar_formato(ws, 'B10', FMT_PCT)
+    motor.dv_propia(ws, 'B10', 0, 1, 'Porcentaje del crucero',
+                    'Se escribe en tanto por uno: 0,60 = 60 % del mes de '
+                    'crucero.',
+                    'Qué parte del mes de crucero facturas el PRIMER mes. '
+                    'Entre 0 y 1 (0,60 = 60 %).')
+
+    F_ING = 13
+    filas = ((F_ING, 'Ingresos (€)'),
+             (F_ING + 1, 'Costes variables (€)'),
+             (F_ING + 2, 'Margen bruto (€)'),
+             (F_ING + 3, 'Costes fijos sin amortización (€)'),
+             (F_ING + 4, 'EBITDA (€)'), (F_ING + 5, 'Amortización (€)'),
+             (F_ING + 6, 'EBIT — resultado de explotación (€)'),
+             (F_ING + 7, 'Gastos financieros (€)'),
+             (F_ING + 8, 'BAI — beneficio antes de impuestos (€)'),
+             (F_ING + 9, 'Impuesto de Sociedades (€)'),
+             (F_ING + 10, 'Resultado neto (€)'),
+             (F_ING + 11, 'Margen EBITDA (%)'))
+    motor.val(ws, 'A' + str(F_ING - 1), 'CUENTA DE RESULTADOS PREVISIONAL',
+              bold=True)
     for r, etiqueta in filas:
         motor.val(ws, 'A' + str(r), etiqueta)
-    guarda = '=IF($B$11="","",'
+    guarda = '=IF($B$' + str(F_ING) + '="","",'
 
     # RC-09 · el P&L devuelve ahora `""` cuando no hay dato, así que la guarda
     # de esta hoja no puede seguir siendo `=0`: `""=0` es FALSO en Excel y la
     # proyección intentaría multiplicar una cadena por 12.
-    motor.f(ws, 'B11',
+    # El AÑO 1 no es el mes de crucero × 12: la casa abre y factura menos hasta
+    # llegar a él. `S_RAMPA` es la suma de los 12 factores mensuales de una
+    # rampa LINEAL que arranca en `$B$10` y llega a 1 en el mes `$B$9`
+    # (después, crucero). Con `$B$9 = 0` (o 1, o sin `$B$10`) vale 12 y la
+    # proyección vuelve exactamente al `P&L × 12` de antes [B-01].
+    S_RAMPA = ('IF(OR($B$9="",$B$9<=1,$B$10=""),12,'
+               '$B$9*(1+$B$10)/2+(12-$B$9))')
+    r_ing, r_var = F_ING, F_ING + 1
+    r_mb, r_fij = F_ING + 2, F_ING + 3
+    r_eb, r_amo = F_ING + 4, F_ING + 5
+    r_ebit, r_gf = F_ING + 6, F_ING + 7
+    r_bai, r_is = F_ING + 8, F_ING + 9
+    r_neto, r_meb = F_ING + 10, F_ING + 11
+    motor.f(ws, 'B' + str(r_ing),
             '=IF(OR(' + pl_ing_celda + '="",' + pl_ing_celda + '=0),"",'
-            + pl_ing + ')', fmt=FMT_EUR)
-    motor.f(ws, 'B12', motor.iferror(guarda[1:] + pl_var + ')'), fmt=FMT_EUR)
-    motor.f(ws, 'B14', motor.iferror(guarda[1:] + pl_fij + ')'), fmt=FMT_EUR)
-    motor.f(ws, 'B16',
+            + mens_ing + '*' + S_RAMPA + ')', fmt=FMT_EUR)
+    # Los costes VARIABLES siguen a las ventas, así que llevan la MISMA rampa
+    # (es lo que hace el cash flow de este mismo pack); los fijos y la
+    # amortización, no: son fijos.
+    motor.f(ws, 'B' + str(r_var),
+            motor.iferror(guarda[1:] + mens_var + '*' + S_RAMPA + ')'),
+            fmt=FMT_EUR)
+    motor.f(ws, 'B' + str(r_fij), motor.iferror(guarda[1:] + pl_fij + ')'),
+            fmt=FMT_EUR)
+    motor.f(ws, 'B' + str(r_amo),
             motor.iferror(guarda[1:] + (pl_amo + ')' if pl_amo else '0)')),
             fmt=FMT_EUR)
     for i, col in enumerate(('C', 'D')):
         ant = 'BC'[i]
-        motor.f(ws, col + '11', guarda + ant + '11*(1+' + col + '6))',
+        # Año 2 crece sobre el RITMO DE CRUCERO anualizado, no sobre el año 1:
+        # en el año 2 ya no hay rampa, y encadenarlo al año 1 dejaría la
+        # proyección facturando MENOS que su propio ritmo de crucero — el
+        # primer disparate que caza un analista de riesgos. Con esto, los años
+        # 2 y 3 valen exactamente lo mismo que antes de B-01.
+        base_ing = ('(' + mens_ing + '*12)') if i == 0 else (ant + str(r_ing))
+        base_var = ('(' + mens_var + '*12)') if i == 0 else (ant + str(r_var))
+        motor.f(ws, col + str(r_ing),
+                guarda + base_ing + '*(1+' + col + '6))', fmt=FMT_EUR)
+        motor.f(ws, col + str(r_var),
+                guarda + base_var + '*(1+' + col + '6)*(1+' + col + '7))',
                 fmt=FMT_EUR)
-        motor.f(ws, col + '12',
-                guarda + ant + '12*(1+' + col + '6)*(1+' + col + '7))',
+        motor.f(ws, col + str(r_fij),
+                guarda + ant + str(r_fij) + '*(1+' + col + '7))', fmt=FMT_EUR)
+        motor.f(ws, col + str(r_amo), guarda + ant + str(r_amo) + ')',
                 fmt=FMT_EUR)
-        motor.f(ws, col + '14', guarda + ant + '14*(1+' + col + '7))',
-                fmt=FMT_EUR)
-        motor.f(ws, col + '16', guarda + ant + '16)', fmt=FMT_EUR)
     for i, col in enumerate(('B', 'C', 'D')):
         f_fin = fin['primer_ano'] + i
-        motor.f(ws, col + '13', guarda + col + '11-' + col + '12)',
+        motor.f(ws, col + str(r_mb),
+                guarda + col + str(r_ing) + '-' + col + str(r_var) + ')',
                 fmt=FMT_EUR)
-        motor.f(ws, col + '15', guarda + col + '13-' + col + '14)',
+        motor.f(ws, col + str(r_eb),
+                guarda + col + str(r_mb) + '-' + col + str(r_fij) + ')',
                 fmt=FMT_EUR, bold=True)
-        motor.f(ws, col + '17', guarda + col + '15-' + col + '16)',
+        motor.f(ws, col + str(r_ebit),
+                guarda + col + str(r_eb) + '-' + col + str(r_amo) + ')',
                 fmt=FMT_EUR)
-        motor.f(ws, col + '18',
+        motor.f(ws, col + str(r_gf),
                 guarda + "IF(ISNUMBER('" + HOJA_FIN + "'!D" + str(f_fin)
                 + "),'" + HOJA_FIN + "'!D" + str(f_fin) + ',0))', fmt=FMT_EUR)
-        motor.f(ws, col + '19', guarda + col + '17-' + col + '18)',
+        motor.f(ws, col + str(r_bai),
+                guarda + col + str(r_ebit) + '-' + col + str(r_gf) + ')',
                 fmt=FMT_EUR)
-        motor.f(ws, col + '20',
-                guarda + 'IF(' + col + '19<=0,0,' + col + '19*' + col + '8))',
-                fmt=FMT_EUR)
-        motor.f(ws, col + '21', guarda + col + '19-' + col + '20)',
+        motor.f(ws, col + str(r_is),
+                guarda + 'IF(' + col + str(r_bai) + '<=0,0,' + col
+                + str(r_bai) + '*' + col + '8))', fmt=FMT_EUR)
+        motor.f(ws, col + str(r_neto),
+                guarda + col + str(r_bai) + '-' + col + str(r_is) + ')',
                 fmt=FMT_EUR, bold=True)
-        motor.f(ws, col + '22',
-                guarda + 'IFERROR(' + col + '15/' + col + '11,""))',
-                fmt=FMT_PCT)
-    nota(ws, 'E11',
-         ('Año 1 = columna TOTAL del P&L Mensual.' if col_total
-          else 'Año 1 = P&L Mensual × 12.')
-         + ' Si cambias el P&L, cambia la proyección entera: no hay ni una '
-           'constante aquí.')
-    nota(ws, 'E18', 'Intereses del año, tomados del cuadro francés de la hoja '
-                    '«' + HOJA_FIN + '».')
-    _semaforo_negativo(ws, ['B', 'C', 'D'], (15, 21, 22))
+        motor.f(ws, col + str(r_meb),
+                guarda + 'IFERROR(' + col + str(r_eb) + '/' + col + str(r_ing)
+                + ',""))', fmt=FMT_PCT)
+    nota(ws, 'E9',
+         'Cuántos meses tardas en llegar al ritmo de crucero. Escribe 0 y el '
+         'Año 1 vuelve a ser el mes tipo × 12. Con ' + str(meses_rampa)
+         + ' y ' + str(round(pct_primero * 100)) + ' %, el Año 1 factura lo '
+         'mismo que cash-flow-break-even.xlsx de este mismo pack.')
+    nota(ws, 'E10',
+         'Qué parte del mes de crucero facturas el PRIMER mes. De ahí sube en '
+         'línea recta hasta el 100 % en el mes de crucero.')
+    nota(ws, 'E' + str(r_ing),
+         'Año 1 = ' + ('columna TOTAL del P&L Mensual' if col_total
+                       else 'P&L Mensual') + ' ÷ 12 × la suma de los doce '
+         'factores de la rampa de arriba (con 0 meses de rampa, × 12). El '
+         'cash flow de este mismo pack reparte la rampa mes a mes; el TOTAL '
+         'del año coincide al céntimo. Los años 2 y 3 parten del ritmo de '
+         'CRUCERO anualizado, no del año 1, porque en ellos ya no hay rampa. '
+         'Si cambias el P&L, cambia la proyección entera: no hay ni una '
+         'constante aquí.')
+    nota(ws, 'E' + str(r_var),
+         'Los costes variables llevan la misma rampa que las ventas; los '
+         'fijos y la amortización, no.')
+    nota(ws, 'E' + str(r_gf),
+         'Intereses del año, tomados del cuadro francés de la hoja '
+         '«' + HOJA_FIN + '».')
+    _semaforo_negativo(ws, ['B', 'C', 'D'], (r_eb, r_neto, r_meb))
     apunta(cambios, fname, ws, ('hoja CREADA' if nueva else 'hoja rehecha')
            + ': Año 1 por referencia al P&L, EBITDA→EBIT→BAI→IS→resultado '
              'neto, todo guardado con "" (TEC-07, DOM-06, COM-07)')
@@ -1781,8 +1911,19 @@ def plan_representante(wb, fname, cambios, contenido, subtitulo):
     _desviacion_sin_dato(ws_inv, fname, cambios, 'C', 'D', 'E')
     plan_de_financiacion(wb, fname, cambios, contenido, inv)
     instruccion(wb, 'La pestaña «' + HOJA_PROY + '» ya existe: el Año 1 sale '
-                    'del P&L Mensual por referencia y los años 2 y 3 de los '
-                    'dos porcentajes verdes.', RX_INSTR_PROY)
+                    'del P&L Mensual por referencia, corregido por la rampa '
+                    'de arranque de sus dos celdas verdes (los mismos meses '
+                    'que modela cash-flow-break-even.xlsx, así que las dos '
+                    'facturaciones del año 1 coinciden); los años 2 y 3 salen '
+                    'de los dos porcentajes verdes sobre el ritmo de crucero.',
+                RX_INSTR_PROY)
+    instruccion(wb, 'La columna «Real (€)» de esta hoja «Inversión» se '
+                    'entrega VACÍA a propósito: es donde vas anotando lo que '
+                    'pagas de verdad, y por eso su fila TOTAL aparece en '
+                    'blanco hasta que escribas la primera cifra (el libro '
+                    'nunca escribe un 0 donde no hay dato). La «Desviación '
+                    '(%)» se enciende sola en cuanto haya un Real.',
+                RX_INSTR_REAL)
     instruccion(wb, 'La pestaña «' + HOJA_FIN + '» calcula la cuota del '
                     'préstamo y su cuadro de amortización; sus intereses '
                     'alimentan la proyección y su cuota mensual se repite en '
@@ -3242,32 +3383,66 @@ def _demo_plan(carpeta, destino):
         # hermanos vienen con los doce meses precargados y ahí la proyección
         # DEBE dar un número. Comprobarlo sin mirar antes es pedirle a la hoja
         # que mienta.
+        # B-01 · las filas de la cuenta de resultados bajaron 2 al entrar los
+        # dos parámetros de la rampa (A9/A10). Se leen del propio libro para
+        # que la demo no viva de un número copiado.
+        wsp = wb[HOJA_PROY]
+        f_ing_proy = _fila(wsp, r'^ingresos', desde=10, obligatoria=False) or 13
+        f_neto = _fila(wsp, r'^resultado neto', obligatoria=False)
+        f_meb = _fila(wsp, r'^margen ebitda', obligatoria=False)
+        b_ing, d_ing = Q + 'B' + str(f_ing_proy), Q + 'D' + str(f_ing_proy)
+        m_rampa, p_rampa = wsp['B9'].value, wsp['B10'].value
+        r['rampa_ano_1'] = {'meses': m_rampa, 'primer_mes': p_rampa,
+                            'fila_ingresos': f_ing_proy}
         r['pl_precargado'] = _ev(xl4, "'P&L Mensual'!" + col_ing)
         if not _num(r['pl_precargado']) or r['pl_precargado'] == 0:
             r['proyeccion_con_el_pl_en_blanco'] = {
-                'B11_ingresos_ano_1': _ev(xl4, Q + 'B11'),
-                'D21_resultado_neto_ano_3': _ev(xl4, Q + 'D21'),
-                'D22_margen_ebitda_ano_3': _ev(xl4, Q + 'D22')}
+                'ingresos_ano_1': _ev(xl4, b_ing),
+                'resultado_neto_ano_3': _ev(xl4, Q + 'D' + str(f_neto))
+                if f_neto else None,
+                'margen_ebitda_ano_3': _ev(xl4, Q + 'D' + str(f_meb))
+                if f_meb else None}
             for clave, valor in r['proyeccion_con_el_pl_en_blanco'].items():
                 if valor not in ('', None):
                     fallos.append(fname + ': con el P&L en blanco la proyección '
                                   'devuelve ' + repr(valor) + ' en ' + clave
                                   + ' (§7-bis.13: debe ser "")')
-        _antes, d = _mover(xl4, [Q + 'B11', Q + 'D11',
+        _antes, d = _mover(xl4, [b_ing, d_ing,
                                  "'P&L Mensual'!" + col_ing],
                            [("'P&L Mensual'!B" + str(f_ing_bloque + 1),
                              140000)])
         r['proyeccion_ano_1'] = d[0]
         r['proyeccion_ano_3_base'] = d[1]
         r['ingresos_anuales_del_pl'] = d[2]
-        esperado = (d[2] if total_pl else (d[2] * 12 if _num(d[2]) else None))
+        crucero = (d[2] if total_pl else (d[2] * 12 if _num(d[2]) else None))
+        factor = 12.0
+        if _num(m_rampa) and m_rampa > 1 and _num(p_rampa):
+            factor = m_rampa * (1 + p_rampa) / 2 + (12 - m_rampa)
+        esperado = crucero * factor / 12 if _num(crucero) else None
+        r['suma_factores_rampa'] = factor
+        r['ano_1_esperado'] = esperado
         if not (_num(d[0]) and _num(esperado) and abs(d[0] - esperado) < 1):
-            fallos.append(fname + ': el Año 1 de la proyección debe ser el P&L '
-                          'anualizado (' + repr(esperado) + ') y es '
-                          + repr(d[0]))
+            fallos.append(fname + ': el Año 1 de la proyección debe ser el mes '
+                          'de crucero por la suma de los factores de la rampa '
+                          '(' + repr(esperado) + ') y es ' + repr(d[0]))
+        # B-01 · la rampa MANDA sobre el año 1, y con 0 meses la proyección
+        # vuelve exactamente al «P&L × 12» de la v1.
+        _antes, d0 = _mover(xl4, [b_ing], [(Q + 'B9', 0)])
+        r['ano_1_con_rampa_0_meses'] = d0[0]
+        if not (_num(d0[0]) and _num(crucero) and abs(d0[0] - crucero) < 1):
+            fallos.append(fname + ': con 0 meses de rampa el Año 1 debe volver '
+                          'al P&L anualizado (' + repr(crucero) + ') y da '
+                          + repr(d0[0]))
+        _antes, d12 = _mover(xl4, [b_ing], [(Q + 'B9', 12)])
+        r['ano_1_con_rampa_12_meses'] = d12[0]
+        if not (_num(d12[0]) and _num(d0[0]) and d12[0] < d0[0]):
+            fallos.append(fname + ': alargar la rampa a 12 meses no baja el '
+                          'Año 1 (' + repr(d0[0]) + ' → ' + repr(d12[0])
+                          + '): las dos celdas verdes no gobiernan nada')
+        _mover(xl4, [b_ing], [(Q + 'B9', m_rampa)])
         c0 = _ev(xl4, Q + 'C6')
-        _antes, d2 = _mover(xl4, [Q + 'D11', Q + 'D21'],
-                            [(Q + 'C6', (c0 or 0) + 0.1)])
+        salidas3 = [d_ing] + ([Q + 'D' + str(f_neto)] if f_neto else [])
+        _antes, d2 = _mover(xl4, salidas3, [(Q + 'C6', (c0 or 0) + 0.1)])
         r['crecimiento_ano_2'] = {'de': c0, 'a': (c0 or 0) + 0.1}
         r['proyeccion_ano_3_con_mas_crecimiento'] = d2[0]
         if _num(d[1]) and _num(d2[0]) and d2[0] <= d[1]:
