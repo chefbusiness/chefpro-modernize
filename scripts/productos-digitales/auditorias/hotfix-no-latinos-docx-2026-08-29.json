@@ -1,0 +1,388 @@
+{
+  "hotfix": "Inyecciones de idioma no latino en 7 documentos Word de planes de negocio (produccion, astro-site/public/dl/)",
+  "fecha": "2026-08-29",
+  "ficheros": [
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "fragmentos": [
+        {
+          "antes": "euros),押入れ器具 menores",
+          "despues": "euros), utensilios menores",
+          "parrafo_idx": 41
+        },
+        {
+          "antes": "en una尺寸 óptima",
+          "despues": "en una superficie óptima",
+          "parrafo_idx": 47
+        },
+        {
+          "antes": "euros en午餐 y entre",
+          "despues": "euros en comida y entre",
+          "parrafo_idx": 57
+        },
+        {
+          "antes": "críticos, подготовка mise en place",
+          "despues": "críticos, preparación de la mise en place",
+          "parrafo_idx": 89
+        },
+        {
+          "antes": "de primera饮料 de 15",
+          "despues": "de primera bebida de 15",
+          "parrafo_idx": 90
+        },
+        {
+          "antes": "de barra, контрол de caja",
+          "despues": "de barra, control de caja",
+          "parrafo_idx": 90
+        },
+        {
+          "antes": "carta de бар-restaurante",
+          "despues": "carta de bar-restaurante",
+          "parrafo_idx": 100
+        },
+        {
+          "antes": "restauración con伏 que superen",
+          "despues": "restauración con locales que superen",
+          "parrafo_idx": 117
+        }
+      ],
+      "parrafos_antes": 148,
+      "parrafos_despues": 148,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    },
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+      "fragmentos": [
+        {
+          "antes": "que las传统ales restaurantes completos",
+          "despues": "que los restaurantes tradicionales completos",
+          "parrafo_idx": 39
+        },
+        {
+          "antes": "calidad продукти con",
+          "despues": "calidad de producto con",
+          "parrafo_idx": 53
+        },
+        {
+          "antes": "español:星期一 a viernes",
+          "despues": "español: de lunes a viernes",
+          "parrafo_idx": 54
+        },
+        {
+          "antes": "necesidad de оборудование profesional",
+          "despues": "necesidad de equipamiento profesional",
+          "parrafo_idx": 55
+        },
+        {
+          "antes": "con предложения completas",
+          "despues": "con propuestas completas",
+          "parrafo_idx": 77
+        },
+        {
+          "antes": "euros mensuales假设 una facturación",
+          "despues": "euros mensuales suponiendo una facturación",
+          "parrafo_idx": 93
+        },
+        {
+          "antes": "decoración、环境 de marca",
+          "despues": "decoración, ambientación de marca",
+          "parrafo_idx": 99
+        },
+        {
+          "antes": "gestión de mesas,外卖pedidos a domicilio",
+          "despues": "gestión de mesas, pedidos a domicilio",
+          "parrafo_idx": 105
+        },
+        {
+          "antes": "cinco personas включаendo al",
+          "despues": "cinco personas incluyendo al",
+          "parrafo_idx": 109
+        },
+        {
+          "antes": "hora del brunch周末, que genera",
+          "despues": "hora del brunch de fin de semana, que genera",
+          "parrafo_idx": 127
+        }
+      ],
+      "parrafos_antes": 167,
+      "parrafos_despues": 167,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    },
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "fragmentos": [
+        {
+          "antes": "a los隐蔽的小酒馆 de la Nueva York",
+          "despues": "a los speakeasies de la Nueva York",
+          "parrafo_idx": 22
+        },
+        {
+          "antes": "apenas por灯泡 de tono",
+          "despues": "apenas por bombillas de tono",
+          "parrafo_idx": 22
+        },
+        {
+          "antes": "de tonos янтенos y琥珀 crea",
+          "despues": "de tonos ambarinos y dorados crea",
+          "parrafo_idx": 35
+        },
+        {
+          "antes": "resulta идеаль para eventos",
+          "despues": "resulta ideal para eventos",
+          "parrafo_idx": 36
+        },
+        {
+          "antes": "hablen de su статус.",
+          "despues": "hablen de su estatus.",
+          "parrafo_idx": 36
+        },
+        {
+          "antes": "de roble. La视觉 se llena",
+          "despues": "de roble. La vista se llena",
+          "parrafo_idx": 100
+        },
+        {
+          "antes": "creando记忆 memorables",
+          "despues": "creando recuerdos memorables",
+          "parrafo_idx": 114
+        }
+      ],
+      "parrafos_antes": 156,
+      "parrafos_despues": 156,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    },
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "fragmentos": [
+        {
+          "antes": "de bebida ضمن paquete integral",
+          "despues": "de bebida dentro del paquete integral",
+          "parrafo_idx": 67
+        }
+      ],
+      "parrafos_antes": 150,
+      "parrafos_despues": 150,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    },
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx",
+      "fragmentos": [
+        {
+          "antes": "rutas稳定的 de ubicación",
+          "despues": "rutas estables de ubicación",
+          "parrafo_idx": 42
+        },
+        {
+          "antes": "puede压缩ar márgenes",
+          "despues": "puede comprimir márgenes",
+          "parrafo_idx": 62
+        },
+        {
+          "antes": "generar记忆ing, evitando",
+          "despues": "generar recuerdo, evitando",
+          "parrafo_idx": 65
+        },
+        {
+          "antes": "de gas, которая debe realizarse",
+          "despues": "de gas, que debe realizarse",
+          "parrafo_idx": 105
+        }
+      ],
+      "parrafos_antes": 131,
+      "parrafos_despues": 131,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    },
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-panaderia/plan-de-negocio-panaderia.docx",
+      "fragmentos": [
+        {
+          "antes": "cinco años,逆袭而上 en contraste",
+          "despues": "cinco años, creciendo en contraste",
+          "parrafo_idx": 56
+        },
+        {
+          "antes": "venta directa de邻居 como los contratos",
+          "despues": "venta directa a vecinos como los contratos",
+          "parrafo_idx": 67
+        },
+        {
+          "antes": "inversión en оборудование se completa",
+          "despues": "inversión en equipamiento se completa",
+          "parrafo_idx": 97
+        },
+        {
+          "antes": "urbanística y消防安全, así como",
+          "despues": "urbanística y seguridad contra incendios, así como",
+          "parrafo_idx": 106
+        }
+      ],
+      "parrafos_antes": 131,
+      "parrafos_despues": 131,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    },
+    {
+      "ruta": "astro-site/public/dl/plan-negocio-tapas-bar/plan-de-negocio-tapas-bar.docx",
+      "fragmentos": [
+        {
+          "antes": "de tapas经典的 que operan",
+          "despues": "de tapas clásicos que operan",
+          "parrafo_idx": 63
+        },
+        {
+          "antes": "lo que意味着 en fase de lanzamiento我们可以 esperar",
+          "despues": "lo que significa que en fase de lanzamiento podemos esperar",
+          "parrafo_idx": 71
+        },
+        {
+          "antes": "orientarse a радиус de cinco kilómetros",
+          "despues": "orientarse a un radio de cinco kilómetros",
+          "parrafo_idx": 73
+        },
+        {
+          "antes": "para填充 horas valle",
+          "despues": "para llenar horas valle",
+          "parrafo_idx": 74
+        },
+        {
+          "antes": "gracias a la熟悉 y la confianza",
+          "despues": "gracias a la familiaridad y la confianza",
+          "parrafo_idx": 76
+        },
+        {
+          "antes": "plancha de燃气 de al menos",
+          "despues": "plancha de gas de al menos",
+          "parrafo_idx": 82
+        },
+        {
+          "antes": "requiere控制系统 diario",
+          "despues": "requiere un control diario",
+          "parrafo_idx": 85
+        },
+        {
+          "antes": "frías y поддержание de la calidad",
+          "despues": "frías y mantenimiento de la calidad",
+          "parrafo_idx": 90
+        },
+        {
+          "antes": "tecnología de前台.",
+          "despues": "tecnología de sala.",
+          "parrafo_idx": 98
+        }
+      ],
+      "parrafos_antes": 133,
+      "parrafos_despues": 133,
+      "tablas": 0,
+      "no_latinos_restantes": 0,
+      "zip_ok": true
+    }
+  ],
+  "erratas_vistas_no_tocadas": [
+    {
+      "fichero": "TODOS (7)",
+      "parrafo": "9-10 (subtítulo de portada)",
+      "errata": "\"analisis\" sin tilde y coma sin espacio: \"analisis de mercado,estrategia operativa\"; además \"checklist de aperturapara\" (falta espacio entre palabras)"
+    },
+    {
+      "fichero": "plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "parrafo": "99,100,101,102,103",
+      "errata": "comas sin espacio de forma sistemática en toda la sección de RRHH (\"hostelera,capacidad\", \"inversión,es habitual\", \"meses,lo que\", \"mercado,experiencia\", \"pagas,al que\", \"producción,y un jefe\", \"pre-apertura,dos meses\", \"comidas,y el turno\", \"alimentos,normas de higiene,servicio de sala\")"
+    },
+    {
+      "fichero": "plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "parrafo": 100,
+      "errata": "concordancia: \"establece para este categoría\" → \"esta categoría\""
+    },
+    {
+      "fichero": "plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "parrafo": "89, 90",
+      "errata": "anglicismos crudos en prosa ES: \"checks de funcionalidad\", \"horario lunch\""
+    },
+    {
+      "fichero": "plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+      "parrafo": "42, 55, 148",
+      "errata": "\"horno de convención\" (×3) → debe ser \"horno de convección\". Error técnico, no ortográfico"
+    },
+    {
+      "fichero": "plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+      "parrafo": 93,
+      "errata": "\"debe recuperase\" → \"debe recuperarse\"; y \"ticket medio realimentado por upselling\" (uso raro de \"realimentado\")"
+    },
+    {
+      "fichero": "plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+      "parrafo": 53,
+      "errata": "\"socialización y compartición en redes\" — \"compartición\" es calco de \"sharing\""
+    },
+    {
+      "fichero": "plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+      "parrafo": 148,
+      "errata": "\"mobiliarioselected para 30-40 plazas\" — palabra inglesa pegada, resto de la misma familia de inyección"
+    },
+    {
+      "fichero": "plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+      "parrafo": "77, 80",
+      "errata": "\"tendencia weekend\", \"experiencia weekend\", \"brunch spots\" — anglicismos sin adaptar"
+    },
+    {
+      "fichero": "plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "parrafo": 22,
+      "errata": "\"bombillas de tono amber\" → \"ámbar\" (queda en inglés tras limpiar la inyección contigua)"
+    },
+    {
+      "fichero": "plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "parrafo": 35,
+      "errata": "\"jazz instrumental de fondo punctuated por el tintineo\" → verbo en inglés sin traducir"
+    },
+    {
+      "fichero": "plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "parrafo": 36,
+      "errata": "\"La propuesta también captive a grupos\" → \"cautiva\"; y \"que celebrán ocasiones\" → \"celebran\" (tilde indebida)"
+    },
+    {
+      "fichero": "plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx",
+      "parrafo": 100,
+      "errata": "\"colores tierra y cobalt\" → \"cobalto\"; \"vasos condensationados\" → palabra inexistente (\"empañados\"/\"con condensación\")"
+    },
+    {
+      "fichero": "plan-negocio-food-truck/plan-de-negocio-food-truck.docx",
+      "parrafo": 73,
+      "errata": "\"El segmento de lunch corporativo\" — anglicismo sin adaptar"
+    },
+    {
+      "fichero": "plan-negocio-panaderia/plan-de-negocio-panaderia.docx",
+      "parrafo": 56,
+      "errata": "\"responde a una mudança en las preferencias\" → portugués; debe ser \"un cambio\""
+    },
+    {
+      "fichero": "plan-negocio-panaderia/plan-de-negocio-panaderia.docx",
+      "parrafo": 107,
+      "errata": "coma sin espacio: \"que manipule,fabrique\""
+    },
+    {
+      "fichero": "plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx",
+      "parrafo": 10,
+      "errata": "comas sin espacio en el subtítulo: \"mercado,catalogo\", \"pricing,10 experiencias\"; \"catalogo\" sin tilde"
+    }
+  ],
+  "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/hotfix-docx/bak/",
+  "resumen": {
+    "ficheros_tocados": 7,
+    "fragmentos_sustituidos": 43,
+    "caracteres_no_latinos_antes": 192,
+    "caracteres_no_latinos_despues": 0,
+    "gates": "VERDE 7/7 (a: 0 no-latinos releidos de disco en TODAS las partes XML · b: mismo n de parrafos y tablas · c: solo cambian los parrafos con inyeccion y solo en el fragmento · d: python-docx abre y zipfile.testzip() is None)",
+    "formato": "preservado: mismo numero de runs por parrafo, rPr identico en los runs tocados y pPr identico en todo el documento"
+  },
+  "nota_inventario": "El inventario previo contaba 191 caracteres; el barrido propio encontro 192. El extra es una COMA IDEOGRAFICA U+3001 (、) en cafeteria p99 (\"decoración、环境 de marca\"), fuera de los rangos del regex original (U+3000-303F no estaba cubierto). Corregida."
+}
