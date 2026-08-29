@@ -252,14 +252,33 @@ def _celdas(ws, rango):
     return ws[rango] if ':' in rango else [[ws[rango]]]
 
 
+def _rango_combinado(ws, coord):
+    """Coordenadas del rango COMBINADO al que pertenece `coord`, o `()`."""
+    for mr in ws.merged_cells.ranges:
+        if coord in mr:
+            return tuple(c.coordinate
+                         for fila in ws[str(mr)] for c in fila)
+    return ()
+
+
 def verde(ws, rango):
-    """Marca en verde (y DESBLOQUEA) un rango 'A1:C3' o una celda 'A1'."""
+    """Marca en verde (y DESBLOQUEA) un rango 'A1:C3' o una celda 'A1'.
+
+    RT-26: si la celda encabeza un rango COMBINADO, el relleno se aplica a
+    todas sus celdas. `escandallo-maestro!'Ficha (plantilla)'!C4:D4` se veía
+    medio verde y medio blanco, y D4 quedaba desbloqueada sin verde — la única
+    excepción del producto a la regla §1.3 «verde ⇔ desbloqueada».
+    """
     for fila in _celdas(ws, rango):
         for cel in fila:
             if cel.__class__.__name__ == 'MergedCell':
                 continue
             cel.fill = PatternFill('solid', fgColor=VERDE)
             cel.protection = Protection(locked=False)
+            for coord in _rango_combinado(ws, cel.coordinate):
+                otra = ws[coord]
+                otra.fill = PatternFill('solid', fgColor=VERDE)
+                otra.protection = Protection(locked=False)
 
 
 def quitar_verde(ws, rango):
@@ -468,15 +487,20 @@ def _dxf(bg, fg):
 
 
 def semaforo_texto(ws, rango, vocabulario):
-    """Colorea por TEXTO exacto. `vocabulario` = ((texto, bg, fg), …) de MÁS
-    grave a menos, con `stopIfTrue`: «Completado» contiene «Complet…» y si
-    ganara otra regla la primera no se pintaría."""
+    """Colorea por TEXTO EXACTO (§3.3). `vocabulario` = ((texto, bg, fg), …).
+
+    RT-27/RC-33: la primera versión usaba `containsText` + `SEARCH`, que es
+    subcadena e insensible a mayúsculas, mientras el contador de avance de la
+    misma columna usa `COUNTIF(rango,"Completado")`, que exige la celda
+    completa. Un «Completado parcialmente» se pintaba de verde y no contaba
+    como completado. `cellIs equal` es la comparación que casa con la DV de
+    lista cerrada que ya gobierna esas columnas.
+    """
     _limpiar_cf(ws, rango)
-    ancla = rango.split(':')[0]
     for texto, bg, fg in vocabulario:
-        regla = Rule(type='containsText', operator='containsText', text=texto,
+        regla = Rule(type='cellIs', operator='equal',
+                     formula=['"' + texto + '"'],
                      dxf=_dxf(bg, fg), stopIfTrue=True)
-        regla.formula = ['NOT(ISERROR(SEARCH("' + texto + '",' + ancla + ')))']
         ws.conditional_formatting.add(rango, regla)
     return True
 
@@ -604,18 +628,45 @@ def dv_numerica(ws, coords, minimo=0, maximo=None, titulo=None, mensaje=None,
     return dv
 
 
-def dv_porcentaje(ws, coords):
-    """§1.7 — merma y porcentajes: decimal 0-0,95 con mensaje de entrada.
+#: RT-15/RC-11 · texto por DEFECTO de la DV de porcentaje. El de la merma
+#: dejó de ser el genérico: explicaba una división por `1-merma` al hacer clic
+#: en el tipo de IVA, en la SS de la empresa o en el interés del préstamo.
+PCT_DEFECTO = ('Porcentaje', 'Se escribe en tanto por uno: 0,20 = 20 %.', 1.0)
+#: RT-16 · el tope 0,95 SÓLO tiene sentido donde el porcentaje entra en una
+#: división `1-x`. En un «% de comensales» impedía teclear el 100 % que el
+#: propio semáforo de la hoja exige.
+PCT_MERMA = ('Merma (%)',
+             'Se escribe en tanto por uno: 0,20 = 20 %. Tope 0,95 porque la '
+             'merma entra en el coste como neta/(1-merma).', 0.95)
 
-    El tope de 0,95 no es cosmético: la merma entra en el coste como
-    `neta/(1-merma)`, y un 1 (100 %) haría estallar la división. El mensaje
-    explica que en Excel un 20 % se teclea 0,20.
+
+def prompt_porcentaje(ws, rango, titulo, prompt, maximo=1.0):
+    """Registra el texto (y el tope) de la DV de porcentaje de un rango.
+
+    Se marca por ROL, igual que `_g_editables` o `_g_formatos`: `validaciones()`
+    agrupa las celdas verdes de porcentaje por el texto registrado y crea una DV
+    por grupo, en vez de pegar la misma frase en las 10 hojas del producto.
     """
+    reg = getattr(ws, '_g_pct', None)
+    if reg is None:
+        reg = {}
+        ws._g_pct = reg
+    for fila in _celdas(ws, rango):
+        for cel in fila:
+            reg[cel.coordinate] = (titulo, prompt, maximo)
+    return rango
+
+
+def dv_porcentaje(ws, coords, titulo=None, prompt=None, maximo=None):
+    """§1.7 — porcentajes: decimal 0-`maximo` con mensaje de entrada propio."""
+    t = titulo or PCT_DEFECTO[0]
+    p = prompt or PCT_DEFECTO[1]
+    m = PCT_DEFECTO[2] if maximo is None else maximo
     return dv_numerica(
-        ws, coords, minimo=0, maximo=0.95, titulo='Porcentaje',
-        mensaje='Escribe un porcentaje entre 0 y 0,95 (0,20 = 20 %).',
-        prompt=('Se escribe en tanto por uno: 0,20 = 20 %. Tope 0,95 porque '
-                'la merma entra en el coste como neta/(1-merma).'))
+        ws, coords, minimo=0, maximo=m, titulo=t,
+        mensaje='Escribe un porcentaje entre 0 y ' + ('%g' % m).replace('.', ',')
+                + ' (0,20 = 20 %).',
+        prompt=p)
 
 
 def dv_fecha(ws, coords):
@@ -666,7 +717,15 @@ def validaciones(ws, informe=None, fname=''):
     if importes:
         dv_numerica(ws, importes, minimo=0)
     if porcentajes:
-        dv_porcentaje(ws, porcentajes)
+        # RT-15/RC-11 + RT-16: una DV por TEXTO registrado, no una sola para
+        # todo el producto. Sin registro, el genérico (0-1).
+        reg = getattr(ws, '_g_pct', {})
+        grupos = {}
+        for c in porcentajes:
+            grupos.setdefault(reg.get(c, PCT_DEFECTO), []).append(c)
+        for (titulo, prompt, maximo), coords in grupos.items():
+            dv_porcentaje(ws, coords, titulo=titulo, prompt=prompt,
+                          maximo=maximo)
     if negativos:
         dv_numerica(ws, negativos, minimo=-1000000000000,
                     titulo='Importe',
@@ -688,6 +747,15 @@ RX_RECUENTO = re.compile(
     r'\b(uds|unidades|uds\.?\s*vendidas|cubiertos|comensales|d[íi]as|'
     r'pedidos|tickets|plazas|personas|piezas|raciones|meses|n[ºo]\b)', re.I)
 RX_IMPORTE = re.compile(r'\(\s*€\s*\)|\b€\b|\(eur\)', re.I)
+#: RT-19/RC-24 · etiquetas que son DINERO aunque no traigan «(€)». La regla de
+#: §1.4 decide por el texto, y dos filas de IVA con el rótulo largo quedaban en
+#: `#,##0` (sin símbolo y sin decimales) junto a trece vecinas en `#,##0.00 €`.
+RX_DINERO = re.compile(
+    r'\b(iva|cuota|cuotas|liquidaci[oó]n|importe|importes|coste|costes|'
+    r'gasto|gastos|ingreso|ingresos|cobro|cobros|pago|pagos|amortizaci[oó]n|'
+    r'n[oó]mina|n[oó]minas|salario|bruto|presupuesto|inversi[oó]n|fianza|'
+    r'renta|alquiler|facturaci[oó]n|ebitda|ebit|tesorer[ií]a|desembolso)\b',
+    re.I)
 
 
 def fijar_formato(ws, coord, fmt):
@@ -732,6 +800,8 @@ def tipo_por_etiqueta(texto):
     if RX_RECUENTO.search(t) and not RX_IMPORTE.search(t):
         return FMT_ENT
     if RX_IMPORTE.search(t):
+        return FMT_EUR
+    if RX_DINERO.search(t):
         return FMT_EUR
     return None
 
@@ -1279,7 +1349,11 @@ def cerrar_checklist(ws, molde, fila_cab, fname='', informe=None,
         val(ws, get_column_letter(min(ncol, _col(col_estado) + 1)) + str(r),
             'Estado terminal de este checklist: «' + terminal + '»')
         r += 1
-    if molde == 'A' and col_cat and col_coste:
+    # RT-28: la condición era `molde == 'A'`, una lista blanca. El molde D
+    # (checklist-apertura-legal de dark-kitchen) tiene columna de categoría y
+    # columna de coste y se quedaba sin desglose por una etiqueta, no por una
+    # ausencia. Se condiciona a lo que la operación necesita de verdad.
+    if col_cat and col_coste:
         r += 1
         val(ws, 'A' + str(r), ETIQUETA_SUBTOT, bold=True)
         r += 1
@@ -1318,6 +1392,10 @@ def cerrar_checklist(ws, molde, fila_cab, fname='', informe=None,
 # ==========================================================================
 RX_ILEGAL_HOJA = re.compile(r'[\\/\?\*\[\]:]')
 
+#: Partículas con las que un nombre de pestaña NO puede terminar (RT-18).
+PARTICULAS = {'y', 'e', 'o', 'u', 'de', 'del', 'la', 'el', 'los', 'las', 'en',
+              'con', 'para', 'a', 'al', 'por', 'sin', 'the', 'and', 'of'}
+
 
 def nombre_pestana(ws, fname):
     """Nombre de pestaña para un checklist del molde A, cuya hoja se llama hoy
@@ -1333,8 +1411,14 @@ def nombre_pestana(ws, fname):
         t = re.sub(r'^checklist[-_]', '', fname.rsplit('.', 1)[0])
         t = t.replace('-', ' ').title()
     if len(t) > 31:
-        corte = t[:31].rsplit(' ', 1)[0]
-        t = corte if len(corte) >= 12 else t[:31]
+        # RT-18/RC-32: `t[:31].rsplit(' ',1)[0]` dejaba «Vajilla, Cristalería y»
+        # —cortado EN la conjunción—, que se lee como un fichero roto. Se
+        # retrocede palabra a palabra mientras la última sea una partícula.
+        palabras = t[:31].split(' ')[:-1]
+        while palabras and _norm(palabras[-1]) in PARTICULAS:
+            palabras.pop()
+        corte = ' '.join(palabras).strip(' ,;.')
+        t = corte if len(corte) >= 12 else (t[:30].rstrip(' ,;.') + '…')
     return t.strip() or 'Checklist'
 
 

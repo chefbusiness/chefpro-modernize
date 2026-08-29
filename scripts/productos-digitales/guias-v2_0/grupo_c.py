@@ -449,7 +449,14 @@ def _suma_guardada(rango):
     cuadrante COMPLETAMENTE vacíos: sin esta guarda, la v2.0 los entregaría
     llenos de ceros que parecen calculados.
     """
-    return ('=IF(COUNTIF(' + rango + ',"<>")=0,"",SUM(' + rango + '))')
+    # RT-01 — la guarda NO puede ser `COUNTIF(rango,"<>")=0`: en Excel una
+    # fórmula que devuelve "" NO es una celda vacía para COUNTIF/COUNTA (sólo
+    # COUNTBLANK la cuenta como vacía), así que el guardián valía 0 en pycel
+    # —donde se verificaba— y el número de fórmulas en Excel, que es lo que ve
+    # el cliente: «COSTE TOTAL DE LA FICHA 0,00 €». `COUNT` cuenta NÚMEROS e
+    # ignora el texto "" en los dos motores, que es exactamente lo que hace
+    # falta en una columna numérica.
+    return ('=IF(COUNT(' + rango + ')=0,"",SUM(' + rango + '))')
 
 
 def _pct(numerador, denominador):
@@ -1755,7 +1762,7 @@ def _fermentacion(wb, fname, cambios, contenido, registro_modelo):
     for f_ in range(fila_cab + 1, fin + 1):
         anterior = motor.a_formula(
             ws, 'H' + str(f_),
-            motor.iferror('IF(COUNTIF($E{r}:$G{r},"<>")=0,"",'
+            motor.iferror('IF(COUNT($E{r}:$G{r})=0,"",'
                           'SUM($E{r}:$G{r}))'.format(r=f_)),
             fmt='#,##0.0', informe=None)
         if anterior is not None:
