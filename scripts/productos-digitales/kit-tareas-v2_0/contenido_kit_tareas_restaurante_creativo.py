@@ -595,9 +595,10 @@ def _f02(wb, cambios):
                       'de 2h)', ANISAKIS_DIA):
         cambios.append('«Pre-elab Día»: congelación preventiva frente al '
                        'ANISAKIS del pescado que se sirve crudo o semicrudo '
-                       '(RD 1420/2006 · Rgto. CE 853/2004), que no estaba en '
-                       'ninguno de los 13 ficheros — DOM-02 (equivalente, '
-                       'ALTA)')
+                       '(RD 1021/2022, art. 8.1, que derogó el RD 1420/2006 · '
+                       'Rgto. CE 853/2004, Anexo III, Secc. VIII, Cap. III.D), '
+                       'que no estaba en ninguno de los 13 ficheros — DOM-02 '
+                       '(equivalente, ALTA)')
     if _insertar_tras(ws, 'Verificar flores comestibles (frescura, color)',
                       DESINFECCION):
         cambios.append('«Pre-elab Día»: desinfección con dosis y aclarado de '

@@ -338,6 +338,12 @@ def procesar(carpeta, fname, etapas, contenido, informe):
         # de `set_metadata`, que compone el `title` desde esa misma hoja, y
         # ANTES de `inject_cache`, que es lo último de todo el pipeline.
         orto = motor.ortografia(wb, fname, cambios)
+    # Gate de normativa DEROGADA (ANIS-01/ANIS-03). Se mira el libro tal como
+    # va a quedar escrito, no el .py que lo genera: la frase se compone a
+    # trozos y un `grep` sobre el fuente no ve la cadena entera. SÓLO FALLA:
+    # este motor sostiene 11 kits LIVE y una reescritura automática los
+    # repintaría todos sin que nadie leyese la frase resultante.
+    restos = motor.restos_prohibidos(wb, fname)
     registro = list(motor.REGISTRO)
     guardado = bool(estado or cambios)
     if guardado:
@@ -355,6 +361,7 @@ def procesar(carpeta, fname, etapas, contenido, informe):
                     'hojas_por_tipo': (estado or {}).get('hojas', {}),
                     'cambios': cambios,
                     'ortografia': orto,
+                    'restos_normativa_derogada': restos,
                     'formulas_nuevas': len(registro)})
     return registro
 
@@ -1360,6 +1367,9 @@ def main():
         fallos.append(f"cache: {len(ver['fallos'])} fórmulas sin valor")
     fallos += [f"§6 {c['caso']}: esperaba {c['esperado']!r}, dio "
                f"{c['obtenido']!r}" for c in demostraciones if not c['ok']]
+    fallos += ['normativa derogada viva: ' + r
+               for fi in informe_ficheros
+               for r in fi.get('restos_normativa_derogada', [])]
     fallos += gates['dv_incorrectas']
     fallos += prec.get('huecos_firma', [])
     fallos += prec['huecos'][:10]

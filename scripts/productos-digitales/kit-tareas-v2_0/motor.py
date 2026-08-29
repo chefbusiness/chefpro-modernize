@@ -71,6 +71,51 @@ ANCHO_A4 = 140
 ANCHO_TAREA_CB = 60
 
 
+# ==========================================================================
+# Gate de normativa DEROGADA (mismo estilo que `pack-appcc-v2_0/motor.py`)
+# ==========================================================================
+#: ⚠️ ESTE MOTOR SOSTIENE 11 KITS LIVE: el gate **sólo FALLA**, nunca reescribe.
+#: Una sustitución automática aquí repintaría los once de golpe sin que nadie
+#: mirase la frase resultante, y cambiar la sigla sin tocar el resto deja
+#: colgado el apartado equivocado de la norma nueva. Cada módulo de contenido
+#: reescribe su frase; esto sólo impide que la cita derogada vuelva.
+#:
+#: ANIS-01/ANIS-03 (research `auditorias/guias-v2-research-sector.json`,
+#: verificado en la ficha de estado del BOE): el RD 1420/2006 quedó DEROGADO el
+#: 22-dic-2022 por la disposición derogatoria única.h) del RD 1021/2022. La
+#: norma vigente es el art. 8.1 del RD 1021/2022 —congelación a −20 °C o
+#: inferior durante ≥ 24 h en la totalidad del producto, o −35 °C durante
+#: ≥ 15 h, y la puede haber hecho una etapa anterior si está justificado
+#: documentalmente— junto al Rgto. (CE) 853/2004, Anexo III, Secc. VIII,
+#: Cap. III.D (redacción del Rgto. (UE) 1276/2011). Informar al consumidor con
+#: carteles o carta-menú sigue siendo obligatorio: art. 8.2 del RD 1021/2022.
+#:
+#: El lookbehind deja pasar la única mención legítima: «que derogó el
+#: RD 1420/2006».
+PROHIBIDAS = [
+    ('RD 1420/2006 (derogado por el RD 1021/2022)',
+     re.compile(r'(?<!derogó al )(?<!derogó el )RD\s*1420/2006', re.I)),
+]
+
+
+def restos_prohibidos(wb, fname=''):
+    """Celdas de texto con una cita derogada viva. NO corrige nada: devuelve
+    `fichero:hoja!celda: etiqueta → texto` para que `main.py` lo meta en
+    `fallos` (§ gate bloqueante)."""
+    fuera = []
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                if not isinstance(c.value, str):
+                    continue
+                for etiqueta, rx in PROHIBIDAS:
+                    if rx.search(c.value):
+                        fuera.append((fname + ':' if fname else '')
+                                     + ws.title + '!' + c.coordinate + ': '
+                                     + etiqueta + ' → ' + repr(c.value[:90]))
+    return fuera
+
+
 def verde_ok():
     """CB-E9 (d) — color de la fila completada del kit en curso."""
     return VERDE_OK_CB if sub_cb() else VERDE_OK

@@ -399,7 +399,8 @@ def _f02(wb, cambios):
     # comprobación no sirve de nada después de haber porcionado.
     if _insertar_tras(ws, 'Preparar bases de ensalada', ANISAKIS_FRIOS):
         cambios.append('«Fríos»: tarea de congelación preventiva frente al '
-                       'anisakis (RD 1420/2006) — DOM-02')
+                       'anisakis (RD 1021/2022, art. 8.1, que derogó el '
+                       'RD 1420/2006) — DOM-02')
         tocado = True
     motor.renumerar(ws)
 
