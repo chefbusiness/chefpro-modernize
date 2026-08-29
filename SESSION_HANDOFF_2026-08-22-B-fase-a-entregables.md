@@ -406,3 +406,14 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
   convección), «mudança» en panadería, restos en inglés en el catálogo de coctelería («tono amber», «colores cobalt», «condensationados»,
   «punctuated», «captive»), comas sin espacio en los 7 subtítulos de portada y en RRHH de bar-restaurante, «este categoría», «debe recuperase»,
   «mobiliarioselected». Lista completa en `auditorias/hotfix-no-latinos-docx-2026-08-29.json`.
+- **R1 `plan-negocio-cocteleria-eventos`** (`8c7d020`): **98 hallazgos / 28 altas, «no listo» ×3**. Plan financiero con 0 fórmulas (como la línea A);
+  la carta de 15 cócteles escala ingredientes al 50 % (multiplica por invitados, no por cócteles); la calculadora de pricing multiplica un coste por
+  invitado también por horas (precios ×3); inversión 40.030 € frente a «18-35K» vendidos; break-even con tres valores; contrato con cláusulas nulas
+  frente a consumidor; legal inventado (Crea y Crece, cuota de autónomo).
+- **SPEC v2.0 de la familia PLANES en redacción (opus)** → `scripts/productos-digitales/planes-v2-SPEC.md`, 8 decisiones firmadas (modelo con hoja de
+  supuestos y todo derivado; línea B calculadora/escalados/contrato; UNA fuente de cifras = xlsx y docx regenerado con bridge.py citándolas; legal
+  vigente; rating/testimonios/ancla → John; 2 representantes + hermanos sonnet + canario por línea). Ojo: dos carpetas de la línea B no siguen el
+  patrón: `plan-catering-tematico-eventos` y `plan-chef-privado-showcooking-eventos`.
+- **«Hotel completo» del orden del plan = `kit-tareas-hotel`, YA en v2.0** (23-ago, familia «▸»). «Resto de kits» = los 7 portados de CB
+  (chef-privado, sushi-bar, asador, marisquería, panadería, food-truck, tapas-bar) + mega-pack. **R1 de `kit-tareas-sushi-bar` lanzada** como
+  representante (familia `kit-tareas`); persistir con `r1-desde-journal.py … kit-tareas-sushi-bar kit-tareas`.
