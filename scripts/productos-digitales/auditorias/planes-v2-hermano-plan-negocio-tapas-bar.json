@@ -1,0 +1,892 @@
+{
+ "pid": "plan-negocio-tapas-bar",
+ "tanda": "T7 (hermano de línea A, molde A-β)",
+ "representante": "plan-negocio-bar-restaurante",
+ "hermano_de_referencia_mismo_molde": "plan-negocio-cafeteria",
+ "fecha": "2026-08-29T10:29:14",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md §2, §7-bis.17, §9 (T7)",
+ "ficheros_codigo": [
+  "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_tapas_bar/__init__.py",
+  "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_tapas_bar/a.py"
+ ],
+ "comando_verificado": "CLAUDE_SCRATCHPAD=<scratchpad>/planes python3 scripts/productos-digitales/planes-v2_0/main.py --producto plan-negocio-tapas-bar --dry-run --json <informe>.json",
+ "gates_dry_run": {
+  "exit": 0,
+  "fallos": [],
+  "idempotencia_diferencias": 0,
+  "censo_entregables_exit": 0,
+  "blancos_contaminados": 0,
+  "gates_spec9_medibles_a_0": "13/13",
+  "checklist_items_con_desplegable": 73,
+  "pendientes_fuera_de_alcance_T7": [
+   "grupo_b aún no existe",
+   "grupo_c aún no existe",
+   "RC-29: 3 nombres de hoja de más de 31 caracteres, que Excel corta y puede obligar a reparar el fichero (plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F3 - Equipamiento y proveedores carne (37), plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F4 - Marca, web y materiales venta (34), plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F6 - Operativa primer evento y postventa (40)); el renombrado va en el módulo de contenido de su producto",
+   "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+  ]
+ },
+ "caso_base": {
+  "r_mb": {
+   "valor": 0.69422,
+   "umbral": 0.68,
+   "resultado": "verde"
+  },
+  "r_cogs": {
+   "valor": 0.27778,
+   "umbral": 0.3,
+   "resultado": "verde"
+  },
+  "r_personal": {
+   "valor": 0.33033,
+   "umbral": 0.36,
+   "resultado": "verde"
+  },
+  "r_alquiler": {
+   "valor": 0.11111,
+   "umbral": 0.12,
+   "resultado": "verde"
+  },
+  "r_neto": {
+   "valor": 0.06532,
+   "umbral": 0.05,
+   "resultado": "verde"
+  },
+  "personal_pyg_vs_hoja_personal": "'PyG 3 Años'!B23 = 'Personal'!G12 = 89.189,80 €",
+  "punto_equilibrio_alcanzado": "'PyG 3 Años'!B56 = 'Sí'",
+  "financiacion_origenes_vs_usos": "185.000,00 € vs 184.937,45 € (+62,55 €, 0,034%, tope 5%)",
+  "tesoreria_saldo_minimo": "36.512,09 € (mes 2), 12 valores numéricos, ninguno negativo ni en blanco",
+  "resultado_neto_ano1": 17637.16,
+  "declarado_en_perdidas": false
+ },
+ "ids_verificados": [
+  {
+   "id": "COM-03",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "COM-04",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "COM-06",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "COM-08",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "COM-09",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "COM-11",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F4 - Personal'!B10/C10/E10 = «Formación en higiene alimentaria de todo el equipo» / «Titular» / nota de derogación RD 109/2010 [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "COM-12",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "COM-13",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B44 = 15% (año 1, base positiva, 'Ejercicios con base positiva'!B43=1), IS B45=3.112,44 € [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "COM-14",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "COM-21",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "COM-25",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-01",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-04",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "DOM-05",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-07",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-08",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F4 - Personal'!B10/C10/E10 = «Formación en higiene alimentaria de todo el equipo» / «Titular» / nota de derogación RD 109/2010 [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-09",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F1 - Constitución'!B12 = «Inscripción en el Registro Sanitario de tu Comunidad Autónoma…» [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-10",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-11",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-12",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-13",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-14",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Tesorería 12 meses'!fila 22 (SALDO ACUMULADO DE CAJA) 12 valores numéricos, todos positivos (mínimo 36.512,09 € en el mes 2); 0 celdas en blanco [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-15",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B44 = 15% (año 1, base positiva, 'Ejercicios con base positiva'!B43=1), IS B45=3.112,44 € [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-17",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Tesorería 12 meses'!fila 22 (SALDO ACUMULADO DE CAJA) 12 valores numéricos, todos positivos (mínimo 36.512,09 € en el mes 2); 0 celdas en blanco [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-19",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-23",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-24",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B20 = 33% (no escrito en el rótulo de Personal) [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-25",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F1 - Constitución'!E9 = «Cuota según la base mínima del tramo…, consulta el importe del ejercicio en curso» [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-26",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F4 - Personal'!C11/E11 = «Titular o servicio ajeno» / plan obligatorio, proveedor no [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "DOM-30",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "DOM-33",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F1 - Constitución'!E8 = «Epígrafe IAE: 671.5 (restaurantes de un tenedor) o 673.2 (otros cafés y bares), según el peso de la barra frente al servicio de mesa — la elección la valida tu gestor» [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "DOM-34",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "NUEVO-01",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: motor-ids / FAMILIA (4 de línea A)]"
+  },
+  {
+   "id": "NUEVO-02",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B44=10 (vida_obra) / B45=8 (vida_maquinaria), separadas — 'PyG 3 Años'!B35 = 9.700,00 €/año calculado, no los 11.550 € planos de la v1.1 [origen: motor-ids / FAMILIA (2: cafetería, panadería)]"
+  },
+  {
+   "id": "NUEVO-03",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: motor-ids / FAMILIA (4 de A-β)]"
+  },
+  {
+   "id": "NUEVO-06",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / FAMILIA (5 de línea A)]"
+  },
+  {
+   "id": "RC-01",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-02",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-03",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-04",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py altos_y_wra]"
+  },
+  {
+   "id": "RC-05",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inst]"
+  },
+  {
+   "id": "RC-06",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RC-08",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.fina]"
+  },
+  {
+   "id": "RC-09",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-12",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-15",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py formatos_te]"
+  },
+  {
+   "id": "RC-16",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py inversion]"
+  },
+  {
+   "id": "RC-17",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py RX_DIAS / R]"
+  },
+  {
+   "id": "RC-18",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RC-19",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-20",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py (TILDES, RX]"
+  },
+  {
+   "id": "RC-21",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py LINEA_CONTA]"
+  },
+  {
+   "id": "RC-22",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py _borrar_f]"
+  },
+  {
+   "id": "RC-23",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py altos_y_wra]"
+  },
+  {
+   "id": "RC-24",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F4 - Personal'!B10/C10/E10 = «Formación en higiene alimentaria de todo el equipo» / «Titular» / nota de derogación RD 109/2010 [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-25",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F1 - Constitución'!E9 = «Cuota según la base mínima del tramo…, consulta el importe del ejercicio en curso» [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RC-30",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equi]"
+  },
+  {
+   "id": "RC-31",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py (MENOS_MAT,]"
+  },
+  {
+   "id": "RC-32",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py demos() (]"
+  },
+  {
+   "id": "RC-33",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RD-01",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-02",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-04",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-05",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equi]"
+  },
+  {
+   "id": "RD-06",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Tesorería 12 meses'!fila 22 (SALDO ACUMULADO DE CAJA) 12 valores numéricos, todos positivos (mínimo 36.512,09 € en el mes 2); 0 celdas en blanco [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.teso]"
+  },
+  {
+   "id": "RD-07",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inst]"
+  },
+  {
+   "id": "RD-08",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-09",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pers]"
+  },
+  {
+   "id": "RD-10",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pers]"
+  },
+  {
+   "id": "RD-11",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.teso]"
+  },
+  {
+   "id": "RD-12",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-13",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RD-14",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RD-15",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-16",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RD-17",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-18",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-19",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.esce]"
+  },
+  {
+   "id": "RD-20",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equi]"
+  },
+  {
+   "id": "RD-21",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.fina]"
+  },
+  {
+   "id": "RD-22",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B51:B54 DSCR años 1-3 = 4,62 / 2,14 / 2,69, todos > 1 (antes de deuda) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-23",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RD-24",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-25",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B20 = 33% (no escrito en el rótulo de Personal) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-26",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F4 - Personal'!C11/E11 = «Titular o servicio ajeno» / plan obligatorio, proveedor no [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-27",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F4 - Personal'!B10/C10/E10 = «Formación en higiene alimentaria de todo el equipo» / «Titular» / nota de derogación RD 109/2010 [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-28",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-29",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-30",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py _borrar_f]"
+  },
+  {
+   "id": "RD-31",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-32",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py (TILDES + R]"
+  },
+  {
+   "id": "RD-33",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RD-34",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.fina]"
+  },
+  {
+   "id": "RD-35",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RT-01",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py _altas_ch]"
+  },
+  {
+   "id": "RT-02",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py _leer_pla]"
+  },
+  {
+   "id": "RT-04",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RT-05",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RT-06",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.fina]"
+  },
+  {
+   "id": "RT-07",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.fina]"
+  },
+  {
+   "id": "RT-08",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py validacione]"
+  },
+  {
+   "id": "RT-09",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py RX_DIAS + R]"
+  },
+  {
+   "id": "RT-10",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py validacione]"
+  },
+  {
+   "id": "RT-11",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py gate_format]"
+  },
+  {
+   "id": "RT-12",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py escribir(]"
+  },
+  {
+   "id": "RT-13",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RT-14",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/contenido_plan_negoc]"
+  },
+  {
+   "id": "RT-15",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B44=10 (vida_obra) / B45=8 (vida_maquinaria), separadas — 'PyG 3 Años'!B35 = 9.700,00 €/año calculado, no los 11.550 € planos de la v1.1 [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RT-16",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Tesorería 12 meses'!fila 22 (SALDO ACUMULADO DE CAJA) 12 valores numéricos, todos positivos (mínimo 36.512,09 € en el mes 2); 0 celdas en blanco [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.teso]"
+  },
+  {
+   "id": "RT-17",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Tesorería 12 meses'!fila 22 (SALDO ACUMULADO DE CAJA) 12 valores numéricos, todos positivos (mínimo 36.512,09 € en el mes 2); 0 celdas en blanco [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py escribir(]"
+  },
+  {
+   "id": "RT-18",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py fx() (reg]"
+  },
+  {
+   "id": "RT-19",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/motor.py altos_y_wra]"
+  },
+  {
+   "id": "RT-20",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py demos() (]"
+  },
+  {
+   "id": "RT-21",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B44=10 (vida_obra) / B45=8 (vida_maquinaria), separadas — 'PyG 3 Años'!B35 = 9.700,00 €/año calculado, no los 11.550 € planos de la v1.1 [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg(]"
+  },
+  {
+   "id": "RT-22",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Tesorería 12 meses'!fila 22 (SALDO ACUMULADO DE CAJA) 12 valores numéricos, todos positivos (mínimo 36.512,09 € en el mes 2); 0 celdas en blanco [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.teso]"
+  },
+  {
+   "id": "RT-23",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Punto Equilibrio'!A30:F33 tabla de sensibilidad al ticket y al coste variable/cubierto (16 €) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py _sensibil]"
+  },
+  {
+   "id": "RT-24",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py escribir(]"
+  },
+  {
+   "id": "RT-25",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RT-26",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inve]"
+  },
+  {
+   "id": "RT-27",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.teso]"
+  },
+  {
+   "id": "RT-28",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: correccion / scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equi]"
+  },
+  {
+   "id": "TEC-01",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-02",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-03",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (5 + coctelería)**]"
+  },
+  {
+   "id": "TEC-04",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!A10:A11 dos líneas (comida 55,56% / bebida 44,44%), mix_en_supuestos=True → '0. Supuestos'!B11/B12 alimentadas por fórmula desde esas dos líneas, nunca 0% con el libro en blanco (a diferencia de 4 líneas) [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "TEC-05",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B56 = 'Sí' (Punto de equilibrio alcanzado, comparado contra 'Punto Equilibrio'!B16 del mismo año) — un único break-even contable (fila 13-16) y uno de caja (fila 17-21), cada uno con su fórmula propia, sin cifras sueltas [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-06",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B44 = 15% (año 1, base positiva, 'Ejercicios con base positiva'!B43=1), IS B45=3.112,44 € [origen: motor-ids / **FAMILIA (5 + coctelería)**]"
+  },
+  {
+   "id": "TEC-07",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B35 = 3 (meses_fondo) → '1. Inversión Inicial' fondo de maniobra por fórmula, ya no los 12.000 € fijos (0,93 meses) de la v1.1 [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-08",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Financiación'!B12 (TOTAL ORIGEN) = 185.000,00 € vs B14 (Necesidad total de caja) = 184.937,45 € — diferencia +62,55 €, 0,034% sobre los usos (tope 5%) [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "TEC-09",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (3)**]"
+  },
+  {
+   "id": "TEC-10",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "TEC-11",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: motor-ids / **FAMILIA (10)**]"
+  },
+  {
+   "id": "TEC-12",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-13",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (30 xlsx)**]"
+  },
+  {
+   "id": "TEC-14",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-16",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B23 = 89.189,80 € = ='Personal'!$G$12 (TOTAL PLANTILLA, columna Coste año) — comprobado con data_only, coinciden al céntimo [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-17",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'PyG 3 Años'!B50:B55 — r_mb 69,42% (umbral 68%), r_cogs 27,78% (techo 30%), r_personal 33,03% (techo 36%), r_alquiler 11,11% (techo 12%), r_neto 6,53% (suelo 5%): los 5 ratios en verde con datos reales [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-18",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "checklist-apertura-tapas-bar.xlsx: 73 ítems con desplegable (63 originales + 10 trámites nuevos de CHECKLIST['altas'], repartidos F1×2 F2×4 F4×2 F5×2) [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-19",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'Punto Equilibrio'!A30:F33 tabla de sensibilidad al ticket y al coste variable/cubierto (16 €) [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-20",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B44=10 (vida_obra) / B45=8 (vida_maquinaria), separadas — 'PyG 3 Años'!B35 = 9.700,00 €/año calculado, no los 11.550 € planos de la v1.1 [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-21",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-22",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / **FAMILIA (5)**]"
+  },
+  {
+   "id": "TEC-23",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'0. Supuestos'!B39/B40 (IVA reducido 10% / general 21%) + 'PyG 3 Años' columna G por partida (seguros y comisiones TPV a 0%) + 'Tesorería 12 meses' liquidación trimestral [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "TEC-25",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "'F1 - Constitución'!E8 = «Epígrafe IAE: 671.5 (restaurantes de un tenedor) o 673.2 (otros cafés y bares), según el peso de la barra frente al servicio de mesa — la elección la valida tu gestor» [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "TEC-26",
+   "estado": "RESUELTO en el hermano (mecanismo compartido de grupo_a.py/motor.py, aplicado y verificado sobre plan-financiero-tapas-bar.xlsx y checklist-apertura-tapas-bar.xlsx)",
+   "evidencia": "gates §9 + blancos_contaminados: 13/13 a 0 (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, sin_instrucciones, hojas_sin_a4, creator_mal, nombres_hoja, cf_desanclado, blancos_contaminados) [origen: motor-ids / REPRESENTANTE]"
+  },
+  {
+   "id": "RT-03",
+   "estado": "RESUELTO — es el id que abre esta propia tanda T7 (\"Cerrarlos es escribir contenido_plan_negocio_tapas_bar.py, que es el entregable de T7\")",
+   "evidencia": "dry-run final: exit 0, idempotencia 0 diferencias (antes: 10, luego 0 tras RT-02), gates §9+blancos 13/13 a 0 (antes: 9 fallos), censo-entregables 0 defectos, 5 ratios verdes, financiación cuadrada (+62,55 €, 0,034%), 0 fórmulas nuevas sin caché en 'PyG 3 Años'!B32:D32 (antes: 3 sin caché)"
+  }
+ ],
+ "ids_no_aplican": [
+  {
+   "id": "COM-17",
+   "motivo": "ABIERTO, destino T10 en el propio motor-ids.json — el gate cuenta filas del checklist y las compara con la cifra de la landing (capa de producto), no algo que produzca este módulo de contenido xlsx."
+  },
+  {
+   "id": "COM-22",
+   "motivo": "HECHO a nivel de FAMILIA pero por el docx/checklist responsable citado en el Word (§4.2 §7); en el xlsx, el convenio ya es PROVINCIAL (DOM-24, ver ese id) — el docx en sí es T9."
+  },
+  {
+   "id": "COM-23",
+   "motivo": "CERRADO POR T5-bis a nivel de FAMILIA de docx (hotfix no-latinos 29-ago) — ámbito docx, va en T9 (guion_<pid>.py + documentos.py) sobre plan-de-negocio-tapas-bar.docx, no sobre el xlsx que construye este módulo. El lado xlsx equivalente (gate no_latinos) da 0/0 en este hermano."
+  },
+  {
+   "id": "COM-27",
+   "motivo": "PARCIAL en el propio motor-ids.json: la parte de erratas tipográficas y concordancia es de ensamblado de docx (§4.3.4), destino T9. La parte §1.7 que sí toca xlsx está resuelta (ver TEC-15/COM-23)."
+  },
+  {
+   "id": "COM-30",
+   "motivo": "ABIERTO, destino T9/T10 — cross-sell sin precios congelados: vive en el docx (plan-de-negocio-tapas-bar.docx, párrafos finales con Kit de Tareas/Escandallos/APPCC y precios en euros), no en el xlsx."
+  },
+  {
+   "id": "DOM-02",
+   "motivo": "ABIERTO, destino T9 — el Resumen Ejecutivo del docx no puede afirmar beneficio si el P&L da pérdidas; en este hermano el P&L da BENEFICIO real (17.637,16 €), así que la afirmación sería coherente, pero la corrección del TEXTO del docx es tarea de T9, no de este módulo."
+  },
+  {
+   "id": "DOM-16",
+   "motivo": "REPRESENTANTE, ABIERTO, destino T10 — el defecto es específico de bar-restaurante (1 m²/comensal deniega licencia). En tapas-bar el aforo (45 plazas, SUPUESTOS) frente a los 60-80 m² que cita el docx da 1,3-1,8 m²/plaza, dentro de rango razonable: no hay el mismo defecto que corregir."
+  },
+  {
+   "id": "DOM-28",
+   "motivo": "FAMILIA (46 docx), ABIERTO, destino T9 — A4 + metadata + versión + bio de los 46 docx; el docx de tapas-bar lo mide main.py como \"pendiente\" (gate_docx, solo lectura) y lo cierra documentos.py en T9, no este módulo."
+  },
+  {
+   "id": "DOM-32",
+   "motivo": "REPRESENTANTE, ABIERTO, destino T10 — recuento de trámites de la landing del representante (\"50+ trámites\"); en tapas-bar el recuento real es 73 ítems con desplegable (63 + 10 altas), cifra que T10 debe usar cuando toque la landing de este producto, no algo que resuelva el xlsx."
+  },
+  {
+   "id": "DOM-35",
+   "motivo": "ABIERTO, destino T9/T10 — cross-sell sin precios en el docx, igual que COM-30."
+  },
+  {
+   "id": "NUEVO-04",
+   "motivo": "FAMILIA (3 de B-δ) — molde de plan financiero de línea B con tasas dentro de fórmula; tapas-bar es A-β, no tiene ese molde. Destino T8."
+  },
+  {
+   "id": "NUEVO-05",
+   "motivo": "FAMILIA (3 calculadoras B-δ + parrillero) — celdas de euros con formato de porcentaje en calculadoras de línea B; tapas-bar no tiene calculadora (molde A-β). Destino T8."
+  },
+  {
+   "id": "NUEVO-07",
+   "motivo": "FAMILIA (4: C3 y C4) — checklists sin casilla/contador/CF de los moldes C3 (parrillero) y C4 (paellero/catering/chef-privado); el checklist de tapas-bar es molde C2 y YA traía casilla ☐, COUNTIF y CF antes de esta tanda (73 ítems con desplegable tras las 10 altas). Destino T8."
+  },
+  {
+   "id": "RC-07",
+   "motivo": "CAPA DE PRODUCTO — T10 (landing/dashboard del producto), fuera del alcance de contenido_<pid>/a.py."
+  },
+  {
+   "id": "RC-10",
+   "motivo": "CAPA DE PRODUCTO — T10. La cifra medida y defendible de este hermano para cuando T10 la propague es: inversión total del caso base recalculada (Financiación!B12 = 185.000 € de orígenes; ver Inversión Inicial!B26 del dry-run para el total de usos de la hoja 1)."
+  },
+  {
+   "id": "RC-11",
+   "motivo": "CAPA DE PRODUCTO — T10. Recuento medido sobre el fichero de este hermano para cuando T10 lo propague: 73 ítems con desplegable en el checklist (no \"68\" del censo previo a esta tanda)."
+  },
+  {
+   "id": "RC-13",
+   "motivo": "CAPA DE PRODUCTO — T10. Los 7 puestos reales de Personal!A5:A11 de este hermano, para cuando T10 reescriba la landing: Propietario/a y encargado/a de sala, Jefe de cocina, Camarero/a de barra, Camarero/a de sala y terraza, Ayudante de cocina, Extra de fin de semana, Suplencias."
+  },
+  {
+   "id": "RC-14",
+   "motivo": "CAPA DE PRODUCTO — T10. El tipo de SS es el 33% heredado (0. Supuestos!B20), igual que en el representante."
+  },
+  {
+   "id": "RC-26",
+   "motivo": "CAPA DE PRODUCTO — T10 (changelog / updateNote), fuera del alcance de este rol."
+  },
+  {
+   "id": "RC-27",
+   "motivo": "DOCUMENTOS Y CAPA DE PRODUCTO — T9/T10, el docx se regenera desde un guion que cita el xlsx ya corregido: ese guion (guion_plan_negocio_tapas_bar.py) no existe todavía, va en T9."
+  },
+  {
+   "id": "RC-28",
+   "motivo": "CONTENIDO NUEVO — T9/T10, referencias del sector para el docx nuevo; las referencias del XLSX (Instrucciones) ya están en INSTRUCCIONES['referencias'] de este módulo, con fuente."
+  },
+  {
+   "id": "RC-29",
+   "motivo": "HERMANO DE LÍNEA B — T8. El renombrado de pestañas de más de 31 caracteres es del checklist de parrillero-asador-eventos, no de tapas-bar (0 nombres de hoja largos en este hermano, gate nombres_hoja=0)."
+  },
+  {
+   "id": "RD-03",
+   "motivo": "CAPA DE PRODUCTO — T10, ya marcado \"no aplica\" en el propio correccion.json para el rol de este módulo (grupo A / xlsx)."
+  },
+  {
+   "id": "TEC-15",
+   "motivo": "Igual que COM-23: tildes/eñes en los 46 docx (hotfix 29-ago), ámbito docx/T9. El lado xlsx (§1.7, gate ortografia) da 0/0 en este hermano tras los 3 ajustes de §1.7 aplicados (musica, barrileria, Genero/Stock inicial)."
+  }
+ ],
+ "total_ids_procesados": 170
+}
