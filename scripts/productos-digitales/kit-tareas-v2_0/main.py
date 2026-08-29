@@ -908,8 +908,24 @@ def gate_precargado(carpeta):
     """
     fname = motor.CTX.get('f_negocio')
     if not fname:
+        # CB-E7 — hay kits que no tienen fichero de negocio NI de caja: no es
+        # que la detección falle, es que el producto no trae 08/09 (sushi-bar,
+        # asador y chef-privado; medido sobre `dl/` el 2026-08-29). Con la
+        # bandera puesta el gate pasa de FALLO a INFORMATIVO: seguir sacando
+        # `exit 1` por «DOM-06 no se ha aplicado a nada» convertía el informe
+        # de esos kits en un rojo permanente que tapa los fallos de verdad.
+        # La bandera exige además que ningún fichero traiga firma del dinero,
+        # así que un fallo REAL de detección sigue saliendo en rojo por aquí.
+        if motor.CTX.get('sin_caja'):
+            return {'fichero': None, 'tareas': 0, 'huecos': [],
+                    'firma_ok': True, 'huecos_firma': [], 'sin_caja': True,
+                    'informativo': [
+                        'CB-E7 — el kit no tiene fichero de NEGOCIO ni de '
+                        'CAJA (ni firma de recuento, registro mensual, '
+                        'liquidación o registro de eventos en ninguno de sus '
+                        'ficheros): DOM-06 no aplica a este producto.']}
         return {'fichero': None, 'tareas': 0, 'huecos': [],
-                'firma_ok': False,
+                'firma_ok': False, 'sin_caja': False,
                 'huecos_firma': ['no se ha identificado el fichero de NEGOCIO '
                                  'del kit: DOM-06 no se ha aplicado a nada']}
     wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
@@ -1051,9 +1067,12 @@ def main():
         ctx = motor.contexto(
             carpeta, nombres,
             lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)))
-    except motor.KitAmbiguo as e:
+    except (motor.KitAmbiguo, motor.MoldeDesconocido) as e:
         # R3-a — el motor NO adivina el papel de un fichero. Se aborta con el
         # informe escrito, para que el orquestador vea por qué.
+        # CB-E6 — y tampoco guarda un producto cuyo molde no reconoce. El
+        # aborto ocurre ANTES del bucle de proceso, así que no se ha escrito ni
+        # un fichero: en dry-run la copia de trabajo queda idéntica al origen.
         log('\nABORTADO — ' + str(e))
         if args.json:
             os.makedirs(os.path.dirname(os.path.abspath(args.json)),
@@ -1061,6 +1080,7 @@ def main():
             with open(args.json, 'w', encoding='utf-8') as fh:
                 json.dump({'producto': pid, 'version': '2.0', 'spec': SPEC,
                            'modo': 'dry-run' if args.dry_run else 'produccion',
+                           'motivo': type(e).__name__,
                            'abortado': str(e), 'fallos': [str(e)], 'exit': 2},
                           fh, ensure_ascii=False, indent=1)
         return 2
@@ -1197,10 +1217,17 @@ def main():
         log('    AVISO TEC-R2-08 · el producto tiene MÁS de una lista de '
             'desplegable: ' + m)
     prec = gate_precargado(carpeta)
-    log(f"  08 precargado: fichero {prec['fichero']} "
-        f"(firma de negocio {'OK' if prec.get('firma_ok') else 'NO VÁLIDA'}) · "
-        f"{prec['tareas']} tareas, {len(prec['huecos'])} sin "
-        'Responsable u Hora')
+    if prec.get('sin_caja'):
+        # CB-E7 — informativo, no fallo: sin fichero de negocio no hay nada que
+        # precargar. Se imprime la razón, no un «fichero None … OK» que leería
+        # como un gate aprobado sobre un sujeto que no existe.
+        for d in prec.get('informativo', []):
+            log('  08 precargado: INFORMATIVO · ' + d)
+    else:
+        log(f"  08 precargado: fichero {prec['fichero']} "
+            f"(firma de negocio {'OK' if prec.get('firma_ok') else 'NO VÁLIDA'})"
+            f" · {prec['tareas']} tareas, {len(prec['huecos'])} sin "
+            'Responsable u Hora')
     for h in prec.get('huecos_firma', []):
         log('    ' + h)
     for h in prec['huecos'][:6]:

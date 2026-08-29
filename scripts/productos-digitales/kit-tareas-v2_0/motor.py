@@ -964,8 +964,18 @@ def contexto(carpeta, ficheros, abrir):
            # m6 — 'mostrador' (arqueo de cajón: 10 kits) o 'eventos'
            # (liquidación por evento: catering). Lo decide la CABECERA del
            # fichero del dinero, no el nombre del producto.
-           'modelo_caja': 'mostrador'}
+           'modelo_caja': 'mostrador',
+           # CB-E7 — kit SIN fichero de negocio y SIN fichero de caja (y sin
+           # ninguna firma del dinero en ningún fichero, esté o no en alcance).
+           # Lo rellena esta misma función, al final.
+           'sin_caja': False}
     horas, cierres, sufijos, kits = {}, {}, [], []
+    #: CB-E6/CB-E7 — ficheros del molde P4 y ficheros con firma del DINERO.
+    #: Los dos se miden sobre TODOS los ficheros del kit, en alcance o no: el
+    #: molde P4 vive entero fuera del alcance del molde ▸ (chef-privado: 0 de 9
+    #: en ▸ y 11 hojas P4) y una tabla de recuento puede estar en un fichero
+    #: que el motor no reconozca.
+    p4_reconocidas, firmas_dinero = [], []
     zonas, bandas_neg = {}, {}
     candidatos = {'caja': [], 'cobros': [], 'negocio': [], 'areas': [],
                   'areas2': []}
@@ -1022,6 +1032,19 @@ def contexto(carpeta, ficheros, abrir):
             if ' — ' in cabeza:
                 kits.append(cabeza.rsplit(' — ', 1)[1].strip())
         if not recon:
+            # CB-E6 — un fichero fuera del molde ▸ todavía puede ser del molde
+            # P4, que `aplicar` normaliza por su cuenta (DV, contador honesto,
+            # CF y bio). Cuenta como molde RECONOCIDO: si no, chef-privado —11
+            # hojas P4 y ni una ▸— abortaría por «molde desconocido» siendo el
+            # kit que el motor mejor arregla de la sub-familia.
+            if any(geometria_p4(ws) for ws in wb.worksheets
+                   if ws.title != 'Instrucciones'):
+                p4_reconocidas.append(fname)
+            # CB-E7 — firma del dinero en un fichero que no está en alcance.
+            if any(_tiene(wb, d) for d in
+                   (fila_recuento, fila_registro_mensual, fila_liquidacion,
+                    fila_registro_eventos)):
+                firmas_dinero.append(fname)
             continue
         ctx['ficheros'].append(fname)
         if any(t == 'checklist' for t in recon.values()):
@@ -1033,6 +1056,14 @@ def contexto(carpeta, ficheros, abrir):
         if papel:
             candidatos[papel].append(fname)
             papeles[fname] = detalle
+        # CB-E7 — firma del dinero de los ficheros EN alcance. Se lee de
+        # `detalle` y no de `papel` porque un fichero puede traer la firma y
+        # quedarse sin papel (`papel_del_fichero` mira las cuatro firmas del
+        # dinero ANTES que nada, así que si devuelve 'negocio' o 'areas' es que
+        # las cuatro son False).
+        if any(detalle.get(k) for k in ('recuento', 'registro', 'liquidacion',
+                                        'registro_eventos')):
+            firmas_dinero.append(fname)
         # T-02 — el marco se lee con la MISMA normalización que se le va a
         # aplicar (`texto_tpv_caja` sólo en el fichero de caja): si no, la 1.ª
         # pasada compararía «Encender TPV / POS» y la 2.ª «Comprobar que el
@@ -1067,6 +1098,26 @@ def contexto(carpeta, ficheros, abrir):
         elif len(ritmos) >= 2 and all(x in ('Día', 'Cadencia') for x in ritmos):
             ctx['f_periodico'] = ctx['f_periodico'] or fname
 
+
+    # --- CB-E6: ¿ha entendido el motor ALGO de este producto? -------------
+    # Va antes que la resolución de papeles porque sin un solo molde
+    # reconocido no hay papeles que resolver, y sobre todo antes de que
+    # `main.py` empiece a guardar ficheros: la salida que esto impide es
+    # «11 ficheros guardados, 0 fórmulas, censo en verde» sobre un kit que el
+    # motor no ha leído. Los moldes que cuentan son los que el motor SABE
+    # tratar hoy: ▸ (`geometria`), registro mensual, registro de eventos,
+    # liquidación, calendario y briefing (los seis de `hojas_reconocidas`) y
+    # P4 (`geometria_p4`). Cuando CB-E5 añada `geometria_plano`, el molde
+    # PLANO se suma aquí y estos cuatro kits dejarán de abortar.
+    if not ctx['ficheros'] and not p4_reconocidas:
+        raise MoldeDesconocido(
+            f'MOLDE DESCONOCIDO en {carpeta}: ninguno de los {len(ficheros)} '
+            'ficheros del producto tiene una sola hoja que el motor sepa '
+            'tratar (ni molde ▸, ni P4, ni registro mensual, ni registro de '
+            'eventos, ni liquidación, ni calendario, ni briefing). El motor NO '
+            'guarda un producto que no ha entendido: se abortaría dejándolo '
+            'con la metadata de la v2.0 y el contenido de la v1.1. Ficheros: '
+            f'{sorted(ficheros)}.')
 
     # --- resolución de papeles: uno y sólo uno por papel -----------------
     for papel in ('caja', 'cobros', 'negocio'):
@@ -1103,6 +1154,16 @@ def contexto(carpeta, ficheros, abrir):
     ctx['papeles'] = papeles
     ctx['areas_nombres'] = zonas.get(ctx['f_areas'], [])
     ctx['negocio_bandas'] = bandas_neg.get(ctx['f_negocio'], [])
+    # CB-E7 — kit sin negocio y sin caja. No basta con que las dos ranuras
+    # estén vacías: se exige además que NINGÚN fichero del kit traiga firma de
+    # recuento, registro mensual, liquidación o registro de eventos. Si alguno
+    # la trajera, el kit SÍ tiene fichero del dinero y lo que hay es un fallo
+    # de detección —que es justo lo que el gate `negocio_precargado` debe
+    # seguir cantando en rojo—, no una topología distinta.
+    ctx['sin_caja'] = (ctx['f_negocio'] is None and ctx['f_caja'] is None
+                       and not firmas_dinero)
+    ctx['firmas_dinero'] = sorted(set(firmas_dinero))
+    ctx['ficheros_p4'] = sorted(p4_reconocidas)
 
     # La hora ancla y el literal de cierre NO pueden salir de los ficheros de
     # caja y de negocio: son justo los que el motor PRECARGA con esos valores.
@@ -2813,8 +2874,15 @@ F_CAB = Font(bold=True, size=12, color='00333333')
 F_TXT = Font(size=11, color='00555555')
 ANCHO_B = 100
 
+#: CB-E8 — «Dónde encaja este fichero» es el encabezado que sustituye a «Se
+#: conecta con» en el ÚNICO caso en que el bloque no conecta con nadie (el
+#: fichero de áreas de un kit sin negocio ni caja). Tiene que estar en esta
+#: lista o la 2.ª pasada no lo reconocería como bloque del motor, lo conservaría
+#: como texto heredado y volvería a emitir el suyo debajo: el gate de
+#: idempotencia de `main.py` lo vería como una diferencia.
 MIS_BLOQUES = ('Cómo cuenta el contador', 'Filas libres', 'Protección de la '
-               'hoja', 'Se conecta con', 'Qué resuelve', 'Cómo usar',
+               'hoja', 'Se conecta con', 'Dónde encaja este fichero',
+               'Qué resuelve', 'Cómo usar',
                'Celdas editables', 'Registro Mensual')
 
 #: DOM-R2-30/COM-R2-09 — líneas heredadas de la v1.1 que dicen lo CONTRARIO que
@@ -2878,9 +2946,32 @@ def _bloque_proteccion():
 
 
 def _bloque_conecta(fname):
-    lineas = [('h', 'Se conecta con')]
     neg, caja, areas = (CTX.get('f_negocio'), CTX.get('f_caja'),
                         CTX.get('f_areas'))
+    # CB-E8 — ESPEJO: el fichero de áreas de un kit que no tiene ni fichero de
+    # negocio ni fichero de caja. Es el mismo defecto que T-01 (una rama que no
+    # comprueba el caso que la contradice) en la única ranura que quedaba sin
+    # comprobar. Medido el 2026-08-29 en el dry-run de sushi-bar:
+    # `01-apertura-cierre-sushi.xlsx:Instrucciones!B35` imprimía
+    # «▸ 01-apertura-cierre-sushi.xlsx — el mismo día con el DETALLE por área
+    # (barra sushi).» DENTRO del propio 01, y B36 remataba con «▸ Estás en
+    # 01-apertura-cierre-sushi.xlsx.» (la cola genérica se queda sin marco que
+    # citar y degenera). Un bloque titulado «Se conecta con» cuya única entrada
+    # es el fichero que el cliente tiene abierto no es un mapa del kit: es un
+    # espejo.
+    #
+    # El caso se acota a `fname == areas and not neg and not caja` a propósito,
+    # y no es una restricción cosmética: en los kits con 08/09 la enumeración
+    # SÍ es un mapa de los tres niveles y el fichero de áreas aparece en ella
+    # por derecho propio —igual que el de negocio aparece en la suya desde
+    # T-01—, así que tocar ese caso cambiaría los 11 kits publicados. Medido
+    # sobre `dl/` el 2026-08-29: los únicos productos con `f_areas` y sin
+    # `f_negocio`/`f_caja` son sushi-bar y asador, ninguno de ellos publicado
+    # en v2.0. Gate de regresión: `regresion.py` sobre cafetería y hotel, 0
+    # diferencias.
+    espejo = bool(areas) and fname == areas and not neg and not caja
+    lineas = [('h', 'Dónde encaja este fichero' if espejo
+               else 'Se conecta con')]
     orden = []
     # T-04 — los paréntesis salen de la ESTRUCTURA del kit (bandas reales del
     # negocio, nombres reales de hoja del fichero de áreas). Antes iban
@@ -2892,7 +2983,7 @@ def _bloque_conecta(fname):
                             'MARCO del día'
                             + parentesis(CTX.get('negocio_bandas')) + '.'))
         orden.append('local')
-    if areas:
+    if areas and not espejo:
         lineas.append(('b', f'{areas} — el mismo día con el DETALLE por área'
                             + parentesis(CTX.get('areas_nombres')) + '.'))
         orden.append('áreas')
@@ -2958,6 +3049,22 @@ def _bloque_conecta(fname):
             cola = ('Estás en ' + fname + ': esta es la CAJA — el DINERO del '
                     'día (fondo, recuento, Z del TPV y descuadre)'
                     + ('; ' + ' y '.join(otros) if otros else '') + '.')
+    elif espejo:
+        # CB-E8 — la cola que le faltaba a la ranura de ÁREAS, simétrica a la
+        # del negocio y a la de la caja. Antes caía en la genérica, que compone
+        # el marco con `(neg, areas)` excluyendo `fname`: sin negocio y siendo
+        # uno mismo las áreas, el marco salía vacío y la frase degeneraba en
+        # «Estás en 01-….», que no dice absolutamente nada.
+        cola = ('Estás en ' + fname + ': este ES el DETALLE por área del día'
+                + parentesis(CTX.get('areas_nombres'))
+                + ' — cómo se abre y se cierra cada zona.')
+        if CTX.get('sin_caja'):
+            # Sólo con CB-E7 puesto se puede AFIRMAR que no hay fichero del
+            # dinero en ningún sitio: `espejo` mira las dos ranuras, y
+            # `sin_caja` mira además las cuatro firmas del dinero en los 11
+            # ficheros, estén o no en alcance.
+            cola += (' Este kit no trae un fichero aparte de negocio ni de '
+                     'caja: el marco del día es este mismo.')
     elif fname == cal and evt:
         cola = (f'Estás en {fname}: cada fecha de este calendario se ejecuta '
                 f'con los checklists de {evt}.')
@@ -2985,7 +3092,11 @@ def _bloque_conecta(fname):
                 f'marco del día está en {marco}.') if marco else \
                ('Estás en ' + fname + '.')
     lineas.append(('b', cola))
-    return lineas if len(lineas) > 2 else []
+    # El bloque de dos líneas (encabezado + cola) se descarta por inútil: es el
+    # caso de un kit sin ninguna ranura de papel, donde la cola genérica se
+    # queda en «Estás en X.». CB-E8 es la excepción: ahí las dos líneas son un
+    # encabezado honesto y una cola que dice qué es el fichero.
+    return lineas if (len(lineas) > 2 or espejo) else []
 
 
 def instrucciones_caja(fname):

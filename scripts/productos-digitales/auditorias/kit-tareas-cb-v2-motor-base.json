@@ -1,0 +1,170 @@
+{
+ "tarea": "T0.2 + T0.3 de kit-tareas-cb-v2-SPEC.md §9 — extensiones baratas del motor de familia (CB-E6, CB-E7, CB-E8) + comparador de regresión reutilizable",
+ "rol": "opus · motor",
+ "fecha": "2026-08-29",
+ "spec": "scripts/productos-digitales/kit-tareas-cb-v2-SPEC.md §1.2 (CB-E6, CB-E7, CB-E8) y §9 T0.2/T0.3",
+ "modo": "dry-run sobre scratchpad; astro-site/public/dl/** NO se ha tocado (ni una escritura, ni KIT_TAREAS_APPLY)",
+ "ficheros_tocados": [
+  "scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+  "scripts/productos-digitales/kit-tareas-v2_0/main.py",
+  "scripts/productos-digitales/kit-tareas-v2_0/regresion.py (NUEVO)"
+ ],
+
+ "extensiones": [
+  {
+   "id": "CB-E6",
+   "titulo": "MoldeDesconocido — abortar si el motor no reconoce NADA del producto",
+   "implementacion": [
+    "motor.py:869 — class MoldeDesconocido(RuntimeError), hermana de KitAmbiguo (motor.py:865).",
+    "motor.py:1035-1042 — dentro del bucle de contexto(), un fichero fuera del molde ▸ se anota en `p4_reconocidas` si tiene al menos una hoja con geometria_p4(). Sin esto chef-privado (0 hojas ▸ / 11 P4) abortaría siendo el kit que el motor mejor arregla.",
+    "motor.py:1102-1120 — tras el bucle y ANTES de resolver papeles: si `not ctx['ficheros'] and not p4_reconocidas` se lanza MoldeDesconocido con el listado de ficheros.",
+    "main.py:1070 — el `except motor.KitAmbiguo` pasa a `except (motor.KitAmbiguo, motor.MoldeDesconocido)`; el informe JSON gana el campo `motivo` con el nombre de la excepción y sale con exit 2."
+   ],
+   "por_que_ahi": "contexto() corre en el paso 1/7, antes del bucle de proceso: al abortar ahí no se ha escrito ni un fichero. Verificado: la copia de trabajo de tapas-bar tras el aborto es IDÉNTICA a dl/ (regresion.py, 11 ficheros, 0 diferencias).",
+   "moldes_que_cuentan_hoy": "los seis de hojas_reconocidas (▸/geometria, registro mensual, registro de eventos, liquidación, calendario, briefing) + P4 (geometria_p4). geometria_plano todavía NO existe: la crea CB-E5 en T4 y entonces los 4 kits PLANO dejarán de abortar."
+  },
+  {
+   "id": "CB-E7",
+   "titulo": "CTX['sin_caja'] — kit sin negocio ni caja: el gate NEGOCIO pasa a informativo",
+   "implementacion": [
+    "motor.py:968-971 — `sin_caja` en el dict inicial de contexto().",
+    "motor.py:1043-1047 — firma del dinero en ficheros FUERA de alcance: _tiene(wb, fila_recuento | fila_registro_mensual | fila_liquidacion | fila_registro_eventos).",
+    "motor.py:1059-1066 — firma del dinero en ficheros EN alcance: se lee de `detalle` (no de `papel`), porque papel_del_fichero mira las cuatro firmas ANTES que nada.",
+    "motor.py:1157-1166 — `ctx['sin_caja'] = f_negocio is None and f_caja is None and not firmas_dinero`; se publican además `ctx['firmas_dinero']` y `ctx['ficheros_p4']` en el informe.",
+    "motor.py:181-193 — FRASE_NIVELES_SOLO_AREAS (tercera variante, junto a FRASE_NIVELES, _SIN_AREAS, _EVENTOS y _EVENTOS_AREAS).",
+    "motor.py:234-235 — frase_niveles() la devuelve cuando CTX['sin_caja'].",
+    "main.py:911-931 — gate_precargado devuelve `firma_ok: True`, `huecos_firma: []` y un campo `informativo` cuando sin_caja; el fallo «no se ha identificado el fichero de NEGOCIO del kit» sigue saliendo en rojo si NO hay bandera (fallo real de detección).",
+    "main.py:1220-1230 — el log imprime «08 precargado: INFORMATIVO · …» en vez de «fichero None (firma de negocio OK)», que leería como un gate aprobado sobre un sujeto inexistente."
+   ],
+   "por_que_la_condicion_es_doble": "con exigir sólo las dos ranuras vacías, un fallo de detección del fichero del dinero (que es lo que el gate existe para cazar) se disfrazaría de topología distinta y saldría en verde. Con la firma exigida en los 11 ficheros, un kit que SÍ tenga recuento/registro/liquidación/eventos sigue en rojo."
+  },
+  {
+   "id": "CB-E8",
+   "titulo": "El fichero de áreas no se remite a sí mismo",
+   "implementacion": [
+    "motor.py:2972 — `espejo = bool(areas) and fname == areas and not neg and not caja`.",
+    "motor.py:2986 — la viñeta de áreas ya no se emite cuando `espejo` (era la que se autocitaba en B35).",
+    "motor.py:2973-2974 — con `espejo` el encabezado del bloque es «Dónde encaja este fichero» en vez de «Se conecta con»: un bloque que no conecta con nadie no puede titularse así.",
+    "motor.py:2877-2885 — «Dónde encaja este fichero» añadido a MIS_BLOQUES, o la 2.ª pasada lo tomaría por texto heredado y emitiría el suyo debajo (lo cazaría el gate de idempotencia).",
+    "motor.py:3052-3066 — rama de cola nueva, simétrica a la del negocio (T-01) y a la de la caja; la segunda frase («este kit no trae un fichero aparte de negocio ni de caja») sólo se añade con CTX['sin_caja'], que es lo único que permite AFIRMARLO.",
+    "motor.py:3095-3099 — el guardián `len(lineas) > 2` admite ahora el bloque de dos líneas cuando es el de CB-E8 (encabezado + cola informativa)."
+   ],
+   "alcance_deliberado": "la rama se acota a `fname == f_areas AND sin negocio AND sin caja`. En los kits con 08/09 la enumeración es un MAPA de los tres niveles y el fichero de áreas aparece en ella por derecho propio, igual que el de negocio desde T-01: tocar ese caso cambiaría los 11 kits publicados y el gate de regresión (§7-bis.24) lo rechazaría. Ver duda 1."
+  }
+ ],
+
+ "verificacion_T0_3": {
+  "sushi-bar": {
+   "comando": "CLAUDE_SCRATCHPAD=<scratch>/cb/propio-motor python3 main.py --producto kit-tareas-sushi-bar --dry-run --solo motor --json <scratch>/cb/motor-kit-tareas-sushi-bar.json",
+   "exit": 0,
+   "fallos": [],
+   "B35_antes": "01-apertura-cierre-sushi.xlsx:Instrucciones!B35 = «▸ 01-apertura-cierre-sushi.xlsx — el mismo día con el DETALLE por área (barra sushi).» (autocita) y B36 = «▸ Estás en 01-apertura-cierre-sushi.xlsx.»",
+   "B35_despues": "01-apertura-cierre-sushi.xlsx:Instrucciones!B33 = «Dónde encaja este fichero» · B35 = «▸ Estás en 01-apertura-cierre-sushi.xlsx: este ES el DETALLE por área del día (barra sushi) — cómo se abre y se cierra cada zona. Este kit no trae un fichero aparte de negocio ni de caja: el marco del día es este mismo.» — la autocita desaparece y el bloque baja de 2 viñetas a 1",
+   "gate_negocio": "INFORMATIVO — «CB-E7 — el kit no tiene fichero de NEGOCIO ni de CAJA (ni firma de recuento, registro mensual, liquidación o registro de eventos en ninguno de sus ficheros): DOM-06 no aplica a este producto.»",
+   "contexto": "sin_caja=true · f_negocio=null · f_caja=null · f_areas=01-apertura-cierre-sushi.xlsx · firmas_dinero=[] · ficheros_p4=[]",
+   "otros_gates": "idempotencia 0 diferencias · cache 30/30 con valor · contador-honesto 01!'Apertura Barra Sushi'!D42/F42 = «21 de 21» · DV «✓,—,N/A» en 16/16 hojas de checklist · bio 11/11 · versión 2.0 11/11 · censo --fail 0 defectos · en alcance 8/11",
+   "resto_del_kit_intacto": "05-tareas-manager.xlsx:Instrucciones!B34 y 09-plantilla-personalizable.xlsx:Instrucciones!B34 siguen citando «▸ 01-apertura-cierre-sushi.xlsx — el mismo día con el DETALLE por área (barra sushi).», que es correcto: no son el fichero de áreas"
+  },
+  "asador (hermano ▸, mismo caso espejo)": {
+   "exit": 0,
+   "resultado": "en alcance 9/11 · idempotencia 0 · gate NEGOCIO informativo · censo --fail 0 defectos · TODO VERDE"
+  },
+  "tapas-bar": {
+   "comando": "… --producto kit-tareas-tapas-bar --dry-run --solo motor …",
+   "exit": 2,
+   "salida": "ABORTADO — MOLDE DESCONOCIDO en <scratch>/…/kit-tareas-tapas-bar: ninguno de los 11 ficheros del producto tiene una sola hoja que el motor sepa tratar (ni molde ▸, ni P4, ni registro mensual, ni registro de eventos, ni liquidación, ni calendario, ni briefing).",
+   "prueba_de_que_no_guarda_nada": "regresion.py entre dl/kit-tareas-tapas-bar y la copia de trabajo tras el aborto: 11 ficheros comparados, 0 diferencias (antes de CB-E6 se guardaban los 11 con metadata v2.0)",
+   "informe_json": "lleva `motivo: MoldeDesconocido`, `abortado`, `fallos` y `exit: 2`"
+  }
+ },
+
+ "regresion_gate_bloqueante": {
+  "comparador": "scripts/productos-digitales/kit-tareas-v2_0/regresion.py (NUEVO, reutilizable): --a <carpeta> --b <carpeta> [--json] [--max] [--solo]. Compara por celda valor+data_type+number_format, `locked` de TODAS las celdas del rango usado (también las vacías), DV con errorTitle/error/prompt, alto de fila, y el inventario de ficheros y hojas. Carga con data_only=False para comparar la FÓRMULA y no el número que dejó inject_cache. exit 0/1/2.",
+  "por_que_hacia_falta": "el gate de idempotencia de main.py compara la 1.ª pasada con la 2.ª — el motor NUEVO contra sí mismo — y por construcción no puede ver una regresión respecto de lo publicado.",
+  "resultados": [
+   {"kit": "kit-tareas-cafeteria", "ficheros": 11, "diferencias_baseline_motor_sin_extender": 0, "diferencias_con_CB-E6_E7_E8": 0},
+   {"kit": "kit-tareas-hotel", "ficheros": 19, "diferencias_baseline_motor_sin_extender": 0, "diferencias_con_CB-E6_E7_E8": 0},
+   {"kit": "kit-tareas (representante, extra: misma topología neg+caja+areas que cafetería)", "ficheros": 11, "diferencias_con_CB-E6_E7_E8": 0}
+  ],
+  "informes": [
+   "<scratch>/cb/regresion-cafeteria-BASELINE.json",
+   "<scratch>/cb/regresion-hotel-BASELINE.json",
+   "<scratch>/cb/regresion-cafeteria.json",
+   "<scratch>/cb/regresion-hotel.json",
+   "<scratch>/cb/regresion-kit-tareas-base.json",
+   "<scratch>/cb/regresion-tapas-tras-abortar.json"
+  ],
+  "censo_transversal_de_seguridad": {
+   "que_es": "contexto() con el motor extendido sobre los 19 productos kit-tareas* de dl/ (sólo lectura), para demostrar que las tres extensiones son INERTES en todo lo publicado",
+   "CB-E6_aborta": ["kit-tareas-food-truck", "kit-tareas-marisqueria", "kit-tareas-panaderia", "kit-tareas-tapas-bar"],
+   "CB-E6_no_aborta": "los 12 productos ya procesados por este motor (kit-tareas, bar, cafetería, catering, chocolatería, dark-kitchen, hamburguesería, heladería, hotel, pastelería, pizzería, restaurante-creativo) más sushi-bar, asador y chef-privado",
+   "sin_caja_true": ["kit-tareas-sushi-bar", "kit-tareas-asador", "kit-tareas-chef-privado"],
+   "espejo_true": ["kit-tareas-sushi-bar", "kit-tareas-asador"],
+   "conclusion": "ningún producto publicado en v2.0 cae en las ramas nuevas: CB-E7 y CB-E8 sólo pueden cambiar sushi-bar, asador y chef-privado, y CB-E6 sólo puede abortar los 4 kits del molde PLANO, que todavía no se han tocado"
+  }
+ },
+
+ "hallazgos": [
+  {
+   "id": "H-01",
+   "gravedad": "media",
+   "donde": "motor.py:207-236 (frase_niveles) y motor.py:3007 (_bloque_conecta, «Orden de uso», que sólo se emite con len(orden) > 1)",
+   "hallazgo": "la rama CB-E7 de frase_niveles() es HOY INALCANZABLE desde _bloque_conecta: la frase sólo se imprime con `len(orden) > 1`, y `orden` se llena con «local» (f_negocio), «áreas» (f_areas) y «caja»/«eventos» (f_caja) — con sin_caja=True el orden tiene como mucho un paso. Se implementa igual porque es la respuesta correcta para cualquier otro consumidor y para que la función no pueda devolver una frase falsa si mañana se la llama desde otro sitio, pero NO está ejercitada por ninguna salida de esta tanda: no se apunte como verificada."
+  },
+  {
+   "id": "H-02",
+   "gravedad": "media",
+   "donde": "motor.py:207-236 (frase_niveles)",
+   "hallazgo": "defecto LATENTE no corregido (fuera del alcance de CB-E7, y sin ningún kit que lo padezca hoy): un kit con fichero de negocio y de áreas pero SIN fichero de caja imprimiría FRASE_NIVELES, que promete «…y el de caja lleva el DINERO» — un fichero que no existe. Es exactamente el defecto que m1 corrigió en el eje de las ÁREAS y que queda abierto en el eje de la CAJA. La condición de CB-E7 (`sin_caja`) exige además f_negocio None, así que no lo cubre. Arreglarlo sería devolver FRASE_NIVELES_SIN_CAJA cuando `not CTX['f_caja']`; no se ha hecho porque no hay kit donde probarlo y tocaría la rama que sí usan los 12 kits publicados."
+  },
+  {
+   "id": "H-03",
+   "gravedad": "media",
+   "donde": "kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx (hojas: 'Instrucciones', 'Plantilla en Blanco') vs motor.py:2593-2677 (_PLANTILLA_07 / PLANTILLA_07) y motor.py:1084-1085 (f_plantilla exige ≥2 hojas de PLANTILLA_07)",
+   "hallazgo": "en sushi-bar `CTX['f_plantilla']` es None: su 09 tiene UNA sola hoja y no se llama ni «Por Franja Horaria» ni «Por Área» ni «Por Perfil», así que no dispara el papel de plantilla. Consecuencia medida en el dry-run: 09-plantilla-personalizable.xlsx:Instrucciones!B35 recibe la cola GENÉRICA («es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-sushi.xlsx») en vez de la de plantilla («aquí construyes TUS listas…»). Es contexto para CB-E2 (T2), que además tiene que crearle el contador: hoy sus Instrucciones prometen contador y filas libres que la hoja no tiene."
+  },
+  {
+   "id": "H-04",
+   "gravedad": "informativa",
+   "donde": "main.py:1067 y main.py:1162/1176",
+   "hallazgo": "contexto() se llama TRES veces (contexto, idempotencia, restauración) y sólo la primera está dentro del try/except. No es un defecto real —si la primera no lanza, las otras dos tampoco pueden hacerlo con la misma carpeta— pero conviene saberlo si algún día CB-E5 hace que el molde dependa del estado del fichero: entonces sí podría lanzarse en la 2.ª y saldría como traza pelada en vez de como aborto con informe."
+  },
+  {
+   "id": "H-05",
+   "gravedad": "informativa",
+   "donde": "astro-site/public/dl/kit-tareas-{food-truck,marisqueria,panaderia,tapas-bar}",
+   "hallazgo": "con CB-E6 puesto, los cuatro kits del molde PLANO devuelven exit 2 y NO se pueden procesar hasta que CB-E5 (T4) añada `geometria_plano` a hojas_reconocidas. Es el comportamiento pedido por la SPEC, pero bloquea T4 hasta entonces: quien corra `main.py --producto kit-tareas-tapas-bar` antes de CB-E5 verá un aborto, no un fallo del motor."
+  }
+ ],
+
+ "dudas": [
+  {
+   "id": "D-01",
+   "para": "orquestador",
+   "duda": "CB-E8 se ha acotado al caso ESPEJO (fichero de áreas sin negocio ni caja) porque la alternativa cambia los 11 kits publicados. En los kits con 08/09, el fichero de áreas SIGUE apareciendo en su propia lista «Se conecta con» (verificado en producción: dl/kit-tareas-cafeteria/01-apertura-cierre.xlsx:Instrucciones!B23 dice «▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra café).» dentro del propio 01), igual que el de negocio desde T-01 (dl/kit-tareas-cafeteria/08-apertura-cierre-negocio.xlsx:Instrucciones!B36). Si la lectura correcta de la SPEC es que la enumeración NUNCA debe incluir al fichero que se está leyendo, es un cambio de contenido en los 12 kits publicados que hay que firmar y volver a aplicar con KIT_TAREAS_APPLY, y el gate de regresión de esos kits dejaría de ser «0 diferencias» por diseño. Yo he leído que la enumeración es un MAPA de los tres niveles y que el defecto es el espejo, no el mapa."
+  },
+  {
+   "id": "D-02",
+   "para": "orquestador",
+   "duda": "el encabezado del bloque pasa a «Dónde encaja este fichero» en el caso espejo (hoy: sólo sushi-bar!01 y asador!01). La alternativa era dejar «Se conecta con» encabezando una sección que no conecta con nada. Si se prefiere el literal único para toda la familia, se revierte en motor.py:2973-2974 y basta con quitar la entrada de MIS_BLOQUES (motor.py:2884)."
+  },
+  {
+   "id": "D-03",
+   "para": "orquestador",
+   "duda": "H-02 (kit con negocio y sin caja imprimiría una frase que promete caja) queda SIN corregir por disciplina de alcance. ¿Se cierra en T2 junto con CB-E1/CB-E2, o se deja anotado? No afecta a ningún producto de hoy."
+  }
+ ],
+
+ "pendiente": [
+  "T0.1 — censo transversal de las 5 correcciones de FAMILIA (§2.2) sobre los 7 kits: NO es de este rol (sonnet).",
+  "CB-E1 (ortografía), CB-E2 (crear contador), CB-E3 (registros), CB-E4 (instrucciones por tipo), CB-E9 (legibilidad): T2.",
+  "CB-E5 (molde PLANO): T4. Hasta que llegue, los 4 kits PLANO abortan por CB-E6 (H-05).",
+  "Nada se ha aplicado a producción: dl/** intacto. La aplicación real la firma el orquestador."
+ ],
+
+ "regla_dura_cumplida": {
+  "dl_intacto": "ninguna escritura en astro-site/public/dl/**; todos los dry-run con CLAUDE_SCRATCHPAD propio y sin KIT_TAREAS_APPLY",
+  "git": "sin commit, push, checkout, reset ni stash",
+  "termica": "istats cpu temp antes de cada python3; máximo observado 48,4 °C; un python cada vez; sin builds ni navegador"
+ }
+}
