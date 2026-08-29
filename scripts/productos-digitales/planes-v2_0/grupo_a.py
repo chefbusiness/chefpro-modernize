@@ -236,7 +236,7 @@ BLOQUE_EXTRA = ('A47', 'CRECIMIENTO Y ACTUALIZACIÓN DE COSTES')
 RX_CANON_INV = re.compile(
     r'fianza|primer mes.*alquiler|fondo de maniobra|colch[oó]n operativo|'
     r'iva soportado|base amortizable|amortizaci[oó]n anual|'
-    r'necesidad total de caja|imprevistos?\s*\(', re.I)
+    r'necesidad total de caja', re.I)
 RX_CANON_PYG = re.compile(
     r'^(alquiler|n[oó]minas|salarios|personal|suministros|seguros?|'
     r'amortizaci[oó]n|cuota pr[eé]stamo|gastos financieros|'
@@ -252,7 +252,7 @@ RX_INGRESO = re.compile(r'^(ventas|ingresos|otros\b)', re.I)
 AMORT_DEFECTO = {
     'obra': (r'obra civil|adecuaci|reforma|instalaci|fontaner|el[eé]ctric|'
              r'climatizaci|extracci|proyecto t[eé]cnico|decoraci|interiorismo|'
-             r'rotulaci|campana|licencia de obras',),
+             r'rotulaci|campana extractora|licencia de obras',),
     'maquinaria': (r'equipamiento|maquina|m[aá]quina|horno|nevera|c[aá]mara|'
                    r'vitrina|mobiliario|barra|mostrador|tpv|vajilla|'
                    r'cristaler|cuberter|menaje|plancha|molinillo|lavavajillas|'
@@ -260,10 +260,15 @@ AMORT_DEFECTO = {
                    r'taburete|estanter|fregadero|vinoteca|terraza|'
                    r'sandwichera|expositor|comandero|software|utensilios',),
     'no': (r'fianza|primer mes|inmobiliaria|stock|fondo de maniobra|'
-           r'colch[oó]n|imprevisto|marketing|lanzamiento|campa[ñn]a|web|'
+           r'colch[oó]n|imprevisto|marketing|lanzamiento|campa[ñn]a '
+           r'lanzamiento|web|'
            r'constituci|notar[ií]a|registro|gestor[ií]a|seguro|licencia de '
            r'actividad|permiso|tasa|iva|marca|dise[ñn]o',),
 }
+# ⚠️ «campana extractora» convive con «Campaña lanzamiento RRSS» en el mismo
+# libro y la primera va SIN tilde: por eso la lista de «no amortizable» exige
+# la palabra «lanzamiento» detrás y la extractora se declara obra a mano. Es
+# la trampa que `CLAUDE.md` documenta para el gate de ortografía.
 
 # ==========================================================================
 # Utilidades de escritura
@@ -289,12 +294,17 @@ def _sin_comillas(formula):
 def fx(ws, coord, formula, fmt=None, align=None):
     """`motor.f()` con la guarda de §1.5 puesta de oficio.
 
-    Toda división lleva `IFERROR(...,"")`. Se hace aquí y no confiando en
-    `motor.guardas()` porque el motor pasa por el libro ANTES que el grupo:
-    lo que escribe el grupo ya no lo ve.
+    TODA fórmula del grupo va envuelta en `IFERROR(...,"")`, no sólo las
+    divisiones. Motivo medido: con el libro en blanco el ticket es un número y
+    el coste variable unitario es `""`, así que una simple RESTA devuelve
+    `#¡VALOR!` y el error se propaga a la cifra estrella. Envolviéndolo todo,
+    «sin dato» se escribe `""` (convención de familia) y el semáforo, que
+    lleva la guarda `ISNUMBER` del §1.6, no pinta verde una celda vacía.
+
+    Se hace aquí y no confiando en `motor.guardas()` porque el motor pasa por
+    el libro ANTES que el grupo: lo que escribe el grupo ya no lo ve.
     """
-    if '/' in _sin_comillas(formula) \
-            and not motor.RX_YA_GUARDADA.match(formula):
+    if not motor.RX_YA_GUARDADA.match(formula):
         formula = motor.iferror(formula)
     return motor.f(ws, coord, formula, fmt, align)
 
@@ -385,6 +395,14 @@ def _es_mayusculas(texto):
     return str(texto).upper() == str(texto)
 
 
+def _ancho_combinado(ws, fila):
+    for m in ws.merged_cells.ranges:
+        cr = CellRange(str(m))
+        if cr.min_row <= fila <= cr.max_row:
+            return cr.max_col
+    return 1
+
+
 def _pie(ws, r0):
     """Filas de pie («ChefBusiness.co — …», «NOTA: …») para reponerlas."""
     fuera = []
@@ -444,9 +462,12 @@ def escribir(rej, cols_texto=('A',)):
             motor.val(ws, 'A' + str(fila), rot,
                       bold=spec.get('bold', False),
                       wrap=spec.get('wrap'))
+        verdes = spec.get('verdes')
         for col, valor in sorted((spec.get('valores') or {}).items()):
+            editable = (col in verdes) if verdes is not None \
+                else spec.get('verde', False)
             motor.val(ws, col + str(fila), valor, spec.get('fmt_' + col)
-                      or spec.get('fmt'), verde_=spec.get('verde', False),
+                      or spec.get('fmt'), verde_=editable,
                       bold=spec.get('bold', False))
         for col, fabrica in sorted((spec.get('formulas') or {}).items()):
             formula = fabrica(rej) if callable(fabrica) else fabrica
@@ -481,7 +502,48 @@ def texto_num(refcelda, prefijo, sufijo='', fmt='0'):
 # ==========================================================================
 
 
-def _partidas(ws, cab, col_importe=2, canon=None):
+#: Paréntesis que sólo contienen un parámetro numérico: se van del rótulo
+#: porque mienten en cuanto se toca la celda (§7-bis.11). El dato vuelve en la
+#: columna de notas, generado con `TEXT()`.
+RX_PARENTESIS_NUM = re.compile(
+    r'\s*\((?:incl\.?\s*)?[^()]*?\d+(?:[.,]\d+)?\s*'
+    r'(?:%|a[ñn]os?|meses|mes)\b[^()]*\)', re.I)
+
+
+def _limpiar_rotulo(rotulo):
+    """«Imprevistos (8%)» → «Imprevistos». Devuelve (rótulo, cambió)."""
+    nuevo = RX_PARENTESIS_NUM.sub('', rotulo).strip(' -—:')
+    if nuevo and nuevo != rotulo:
+        return nuevo, True
+    return rotulo, False
+
+
+def _seccion(ws, cab, rx_inicio, rx_fin):
+    """Rango de filas de una SECCIÓN, acotado por sus rótulos.
+
+    Buscar dentro de la hoja entera no falla: acierta en el sitio equivocado.
+    Sin acotar, el barrido de «costes fijos» del P&L de A-β se llevaba por
+    delante el EBITDA, el impuesto y el resultado neto, que están debajo y
+    también tienen número. (Misma lección que los regex de sección del blog.)
+    """
+    ini = fin = None
+    for r in range(cab, ws.max_row + 1):
+        rot = motor._rotulo_de_fila(ws, r, max_col=1)
+        if not rot:
+            continue
+        if ini is None:
+            if re.search(rx_inicio, rot, re.I):
+                ini = r + 1
+            continue
+        if re.search(rx_fin, rot, re.I):
+            fin = r - 1
+            break
+    if ini is None:
+        return None, None
+    return ini, (fin if fin is not None else ws.max_row)
+
+
+def _partidas(ws, cab, col_importe=2, canon=None, desde=None, hasta=None):
     """Partidas de una tabla: (fila, rótulo, importe, nota, bloque).
 
     Distingue encabezado de bloque (texto en mayúsculas sin importe **o con
@@ -491,7 +553,7 @@ def _partidas(ws, cab, col_importe=2, canon=None):
     """
     bloque = None
     fuera = []
-    for r in range(cab + 1, ws.max_row + 1):
+    for r in range(desde or (cab + 1), (hasta or ws.max_row) + 1):
         rot = motor._rotulo_de_fila(ws, r, max_col=1)
         if not rot:
             continue
@@ -579,8 +641,11 @@ class Plan(object):
         self.cambios.append(texto)
 
     # -- §2.1 -------------------------------------------------------------
-    def supuestos(self):
-        """`0. Supuestos`: la superficie de entrada del libro (§2.1)."""
+    def supuestos_altas(self):
+        """`0. Supuestos`: da de alta los parámetros y sus refs (§2.1).
+
+        Va ANTES que ninguna otra hoja: todas cablean contra `p.ref(clave)`.
+        """
         ws = self.ws_sup
         motor.val(ws, 'A1', 'SUPUESTOS — aquí se teclean las TASAS y los '
                   'DRIVERS del modelo', bold=True)
@@ -608,27 +673,44 @@ class Plan(object):
             self.p.alta(clave, etiqueta, valor, fmt, nota, coord=coord)
             self.cambios.append('Supuestos!' + coord + ' ' + clave + ' = '
                                 + str(valor) + ' (' + fuente + ')')
-        # los dos únicos supuestos CALCULADOS de la hoja
-        pesos = [l for l in self.lineas_ingreso() if l[2] == 'comida']
-        if pesos and self.rej.get('pyg'):
-            rej = self.rej['pyg']
-            suma = '+'.join(rej.r('lin_%d' % i, 'E') for i, l in
-                            enumerate(self.lineas_ingreso())
-                            if l[2] == 'comida')
-            fx(ws, self.p.ref('pct_comida').split('!')[-1].replace('$', ''),
-               '=' + suma, motor.FMT_PCT)
+        motor.anchos(ws, {'A': 48, 'B': 16, 'C': 74})
+
+    def supuestos_calculadas(self):
+        """Las DOS celdas de `0. Supuestos` que no se teclean (§2.1).
+
+        `pct_comida` sale de sumar el peso de las líneas de comida del P&L y
+        `pct_bebida` es el resto: así el mix nunca puede sumar distinto de
+        100 % y la mezcla vive en un solo sitio. Se escriben al final porque
+        necesitan las coordenadas del P&L, que se declara después.
+        """
+        ws = self.ws_sup
+        rej = self.rej['pyg']
+        comida = [i for i, l in enumerate(self.lineas_ingreso())
+                  if l[2] == 'comida']
+        suma = ('+'.join(rej.r('lin_%d' % i, 'E') for i in comida)
+                if comida else '0')
+        fx(ws, 'B11', '=' + suma, motor.FMT_PCT)
+        motor.val(ws, 'C11', 'Suma del peso de las líneas de COMIDA del P&L: '
+                  'el mix vive en un solo sitio')
         fx(ws, 'B12', '=1-B11', motor.FMT_PCT)
         motor.val(ws, 'C12', 'Se calcula como el resto: comida + bebida = '
                   '100 %')
         # nota generada: el PVP con IVA equivalente al ticket sin IVA (TEC-11)
-        fx(ws, 'C5', '="PVP equivalente con IVA (' + '"&TEXT(B39,"0%")&"'
-           ' comida / "&TEXT(B40,"0%")&" bebida): "&TEXT(B5*(B11*(1+B39)'
-           '+B12*(1+B40)),"#,##0.00")&" €"')
+        red, gen = self._loc('iva_reducido'), self._loc('iva_general')
+        tic = self._loc('ticket_medio')
+        fx(ws, 'C5', '="PVP equivalente con IVA ("&TEXT(' + red + ',"0%")&'
+           '" en comida y "&TEXT(' + gen + ',"0%")&" en bebida): "&TEXT('
+           + tic + '*(B11*(1+' + red + ')+B12*(1+' + gen + ')),"#,##0.00")'
+           '&" €"')
         for coord in ('B11', 'B12'):
             ws[coord].fill = PatternFill()
             ws[coord].protection = Protection(locked=True)
         motor.anchos(ws, {'A': 48, 'B': 16, 'C': 74})
         motor.print_setup(ws)
+
+    def _loc(self, clave):
+        """Coordenada de un parámetro DENTRO de `0. Supuestos` (sin hoja)."""
+        return self.p.ref(clave).split('!')[-1]
 
     def _leer_drivers(self):
         """Drivers que el fichero ya trae, para no inventarlos (§1.3).
@@ -681,9 +763,14 @@ class Plan(object):
             return self._lineas
         ws = self.ws_pyg
         cab = _cabecera(ws)
+        # ACOTAR la sección antes de buscar dentro: fuera del bloque de
+        # ingresos hay más filas que empiezan por «Ventas» o «Otros».
+        r0, r1 = _seccion(ws, cab, r'^ingresos$|^ingresos\b',
+                          r'^(total ingresos|ingresos brutos|ingresos '
+                          r'totales|costes variables)')
         total = None
         lineas = []
-        for r in range(cab + 1, ws.max_row + 1):
+        for r in range(r0 or cab + 1, (r1 or ws.max_row) + 1):
             rot = motor._rotulo_de_fila(ws, r, max_col=1)
             if not rot:
                 continue
@@ -723,9 +810,14 @@ class Plan(object):
         plantilla = self.dato('PLANTILLA') or self._leer_plantilla(ws, cab)
         pie = _pie(ws, cab)
         _limpiar_area(ws, cab, ws.max_row, 8)
-        cabeceras = ('Puesto', 'Personas', 'Bruto mes (total del puesto)',
-                     'Seg. Social a cargo de la empresa',
-                     'Coste mes (total del puesto)', 'Coste año', 'Notas')
+        # ⚠️ Las cabeceras llevan «(€)» a propósito: `motor.formatos_por_tipo`
+        # decide por la CABECERA de la columna, y «Bruto mes» contiene la
+        # palabra «mes», que el motor lee como recuento y le quitaría el
+        # formato de euro a toda la columna.
+        cabeceras = ('Puesto', 'Personas', 'Bruto mes (€, total del puesto)',
+                     'Seg. Social a cargo de la empresa (€)',
+                     'Coste mes (€, total del puesto)', 'Coste año (€)',
+                     'Notas')
         for i, texto in enumerate(cabeceras):
             motor.val(ws, get_column_letter(i + 1) + str(cab), texto,
                       bold=True, wrap=True)
@@ -832,6 +924,13 @@ class Plan(object):
         # agrupar por bloque conservando el orden
         bloques, orden = {}, []
         for _r, rot, importe, nota, bloque in partidas:
+            # el rótulo se limpia ANTES de consultar las reglas: en la 2.ª
+            # pasada ya viene limpio y la clave tiene que ser la misma o el
+            # fichero dejaría de ser idempotente
+            rot, cambiado = _limpiar_rotulo(rot)
+            if cambiado:
+                self.anota('Inversión: rótulo con parámetro escrito a mano → '
+                           '«' + rot + '» (§7-bis.11)')
             accion = reglas.get(motor.norm(rot))
             if accion and accion[0] == 'suprimir':
                 self.anota('Inversión: fuera «' + rot + '» — '
@@ -858,6 +957,11 @@ class Plan(object):
         alq = self.p.ref('alquiler_mes')
         fianza_m = self.p.ref('fianza_meses')
         claves_bloque, amortiza = [], {'obra': [], 'maquinaria': []}
+        # un bloque sin partidas (el «FONDO DE MANIOBRA» original, cuya única
+        # línea es canónica y la regenera este grupo) no se escribe: dejarlo
+        # produciría un `SUM` sobre sí mismo, que Excel marca como referencia
+        # circular
+        orden = [b for b in orden if bloques.get(b)]
         for bloque in orden:
             clave_b = 'b_' + str(len(claves_bloque))
             claves_bloque.append(clave_b)
@@ -895,9 +999,11 @@ class Plan(object):
                                   + R.c('total', absoluta=True)),
                             'D': '="Se paga por adelantado junto con la '
                                  'fianza"'})
+            ultimo_b = rej.filas[-1]['clave']
             rej.filas[rej.fila(clave_b) - rej.fila0]['formulas'] = {
-                'B': (lambda R, a=(primero or clave_b), b=rej.filas[-1]['clave']:
-                      '=SUM(' + R.c(a) + ':' + R.c(b) + ')'),
+                'B': ((lambda R, a=primero, b=ultimo_b:
+                       '=SUM(' + R.c(a) + ':' + R.c(b) + ')')
+                      if primero and ultimo_b != clave_b else '=0'),
                 'C': (lambda R, k=clave_b: '=' + R.c(k) + '/'
                       + R.c('total', absoluta=True))}
         # fondo de maniobra (TEC-07, DOM-12, NUEVO-01)
@@ -1115,7 +1221,7 @@ class Plan(object):
                     'formulas': {'E': pct(clave)}}
             if valor is not None:
                 spec['valores'] = {'B': valor}
-                spec['verde'] = True
+                spec['verdes'] = ('B',)     # la nota no se pinta de verde
             else:
                 spec['formulas']['B'] = formula_b
             factor2 = '*(1+' + ipc + ')'
@@ -1128,9 +1234,9 @@ class Plan(object):
             spec['formulas']['D'] = (lambda R, k=clave, f=factor3:
                                      '=' + R.c(k, 'C') + f)
             if nota:
-                spec['formulas' if str(nota).startswith('=') else 'valores'] \
-                    = dict(spec.get('formulas' if str(nota).startswith('=')
-                                    else 'valores', {}), F=nota)
+                destino = ('formulas' if str(nota).startswith('=')
+                           else 'valores')
+                spec.setdefault(destino, {})['F'] = nota
             rej.add(clave, **spec)
 
         fijo('cf_alquiler', 'Alquiler del local',
@@ -1309,8 +1415,21 @@ class Plan(object):
         """Costes fijos que se CONSERVAN como input (§1.3)."""
         reglas = self.dato('FIJOS', {}) or {}
         fuera = []
-        for _r, rot, importe, nota, _bloque in _partidas(ws, cab,
-                                                         canon=RX_CANON_PYG):
+        # SOLO el bloque de costes fijos: debajo están el EBITDA, el impuesto
+        # y el resultado neto, que también son números en la columna B.
+        r0, r1 = _seccion(ws, cab, r'^costes fijos',
+                          r'^total costes fijos')
+        if r0 is None:
+            self.anota('P&L: no se encuentra el bloque «COSTES FIJOS» en '
+                       + ws.title + ': sólo se escriben las partidas del '
+                       'módulo de contenido (no se adivina)')
+            r0 = r1 = cab
+        for _r, rot, importe, nota, _bloque in _partidas(
+                ws, cab, canon=RX_CANON_PYG, desde=r0, hasta=r1):
+            rot, cambiado = _limpiar_rotulo(rot)
+            if cambiado:
+                self.anota('P&L: rótulo con parámetro escrito a mano → «'
+                           + rot + '» (§7-bis.11)')
             accion = reglas.get(motor.norm(rot))
             if accion and accion[0] == 'suprimir':
                 self.anota('P&L: fuera «' + rot + '» — '
@@ -1595,12 +1714,13 @@ class Plan(object):
                   'primera que mira un banco.', wrap=True)
         cab = 4
         motor.val(ws, 'A' + str(cab), 'Concepto', bold=True)
-        meses = ('Mes 1', 'Mes 2', 'Mes 3', 'Mes 4', 'Mes 5', 'Mes 6',
-                 'Mes 7', 'Mes 8', 'Mes 9', 'Mes 10', 'Mes 11', 'Mes 12')
+        # el «(€)» de la cabecera no es adorno: sin él, `motor` lee «Mes» como
+        # recuento y borra el formato de euro de las doce columnas
+        meses = tuple('Mes ' + str(i) + ' (€)' for i in range(1, 13))
         cols = [get_column_letter(2 + i) for i in range(12)]
         for i, nombre in enumerate(meses):
             motor.val(ws, cols[i] + str(cab), nombre, bold=True)
-        motor.val(ws, 'N' + str(cab), 'Año', bold=True)
+        motor.val(ws, 'N' + str(cab), 'Año (€)', bold=True)
         rej = Rejilla(ws, cab + 1)
         self.rej['tesoreria'] = rej
         pyg = self.rej['pyg']
@@ -1726,26 +1846,31 @@ class Plan(object):
             col = ('B', 'C', 'D')[i]
             rej.add(clave, rot='Flujo de caja libre del año ' + str(i + 1),
                     fmt=motor.FMT_EUR0,
-                    formulas={'B': '=' + pyg.r('neto').replace('$B$', '$'
-                                                               + col + '$')
-                              + '+' + pyg.r('cf_amort').replace(
-                                  '$B$', '$' + col + '$')})
+                    formulas={'B': '=' + pyg.r('neto', col) + '+'
+                              + pyg.r('cf_amort', col)})
+        rej.add('inv_recup', rot='Inversión a recuperar', fmt=motor.FMT_EUR0,
+                formulas={
+                    'B': '=' + inv.r('total') + '-' + inv.r('fondo'),
+                    'D': '="La inversión SIN el fondo de maniobra (que se '
+                         'recupera al cerrar) ni el IVA soportado (que '
+                         'devuelve Hacienda): es lo que de verdad hay que '
+                         'amortizar con el negocio"'})
         rej.add('payback', rot='Payback del proyecto (años)',
                 fmt=motor.FMT_DEC, bold=True,
                 formulas={
-                    'B': (lambda R: '=IF(' + R.c('fcf_1') + '>=' + inv.r('caja')
-                          + ',' + inv.r('caja') + '/' + R.c('fcf_1')
-                          + ',IF(' + R.c('fcf_1') + '+' + R.c('fcf_2') + '>='
-                          + inv.r('caja') + ',1+(' + inv.r('caja') + '-'
-                          + R.c('fcf_1') + ')/' + R.c('fcf_2') + ',IF('
-                          + R.c('fcf_1') + '+' + R.c('fcf_2') + '+'
-                          + R.c('fcf_3') + '>=' + inv.r('caja') + ',2+('
-                          + inv.r('caja') + '-' + R.c('fcf_1') + '-'
-                          + R.c('fcf_2') + ')/' + R.c('fcf_3')
-                          + ',"Más de 3 años")))'),
-                    'D': '="Único payback del pack: sale de la caja que hace '
-                         'falta al arrancar y del flujo de caja libre de los '
-                         'tres años"'})
+                    'B': (lambda R: '=IF(' + R.c('fcf_1') + '>='
+                          + R.c('inv_recup') + ',' + R.c('inv_recup') + '/'
+                          + R.c('fcf_1') + ',IF(' + R.c('fcf_1') + '+'
+                          + R.c('fcf_2') + '>=' + R.c('inv_recup') + ',1+('
+                          + R.c('inv_recup') + '-' + R.c('fcf_1') + ')/'
+                          + R.c('fcf_2') + ',IF(' + R.c('fcf_1') + '+'
+                          + R.c('fcf_2') + '+' + R.c('fcf_3') + '>='
+                          + R.c('inv_recup') + ',2+(' + R.c('inv_recup') + '-'
+                          + R.c('fcf_1') + '-' + R.c('fcf_2') + ')/'
+                          + R.c('fcf_3') + ',"Más de 3 años")))'),
+                    'D': '="ÚNICO payback del pack: inversión a recuperar '
+                         'entre el flujo de caja libre de los tres años. El '
+                         'Word cita esta celda, no recalcula"'})
         escribir(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
@@ -1890,10 +2015,8 @@ class Plan(object):
             rej.add('dscr_%d' % i, rot='DSCR del año ' + str(i),
                     fmt=motor.FMT_DEC2,
                     formulas={'B': (lambda R, n=i, c=col:
-                                    '=(' + pyg.r('rai').replace('$B$', '$' + c
-                                                                + '$') + '+'
-                                    + pyg.r('cf_amort').replace(
-                                        '$B$', '$' + c + '$') + '+'
+                                    '=(' + pyg.r('rai', c) + '+'
+                                    + pyg.r('cf_amort', c) + '+'
                                     + R.c('int_%d' % n) + ')/('
                                     + R.c('int_%d' % n) + '+'
                                     + R.c('cap_%d' % n) + ')')})
@@ -1924,7 +2047,7 @@ class Plan(object):
         letra = get_column_letter(col)
         # se limpia sólo el cuerpo: `motor.cierre_instrucciones()` reescribe
         # después su bloque (desproteger + cross-sell + bio + versión)
-        _limpiar_area(ws, 1, ws.max_row, col + 2)
+        _limpiar_area(ws, 1, ws.max_row, col + 4)
         motor.val(ws, letra + '1', 'INSTRUCCIONES DE USO — Plan financiero '
                   + str(self.concepto), bold=True)
         fila = 3
@@ -2092,12 +2215,14 @@ class Plan(object):
             destino = altas if len(ws_libro.worksheets) <= 2 else [
                 a for a in altas if re.search(a[0], ws.title, re.I)]
             if destino:
-                anadidos += self._altas_checklist(ws, cab, col_tarea, destino)
+                anadidos += self._altas_checklist(
+                    ws, cab, col_tarea, destino,
+                    cabecera=reglas.get('cabecera_altas'))
         self.anota('Checklist: ' + str(tocados) + ' celdas corregidas y '
                    + str(anadidos) + ' trámites nuevos (§2.10)')
         return tocados, anadidos
 
-    def _altas_checklist(self, ws, cab, col_tarea, altas):
+    def _altas_checklist(self, ws, cab, col_tarea, altas, cabecera=None):
         """Añade trámites conservando la estructura de fases del fichero."""
         # última fila con contenido en la columna de tarea
         ultima = cab
@@ -2111,20 +2236,28 @@ class Plan(object):
                     for c in range(1, ws.max_column + 1)
                     if ws.cell(row=r, column=c).value is not None]
             if fila:
-                pie.append((r, fila))
-        for r, fila in pie:
+                pie.append((r, fila, _ancho_combinado(ws, r)))
+        # el pie va COMBINADO a lo ancho de la tabla: si se mueve sin
+        # deshacer la combinación, `MergedCell.value` es de sólo lectura y la
+        # escritura revienta con AttributeError
+        for r, fila, _ancho in pie:
+            for m in list(ws.merged_cells.ranges):
+                cr = CellRange(str(m))
+                if cr.min_row <= r <= cr.max_row:
+                    ws.unmerge_cells(str(m))
             for c, _v in fila:
                 ws.cell(row=r, column=c).value = None
         cols = dict((motor.norm(c.value), c.column) for c in ws[cab]
                     if isinstance(c.value, str))
         fila = ultima + 1
         n = 0
-        # el encabezado de fase de las altas, sólo si el molde los usa
         usa_fase = 'fase' in cols
-        cabecera_alta = None
+        if cabecera and altas:
+            motor.val(ws, 'A' + str(fila), cabecera, bold=True)
+            ws.merge_cells(start_row=fila, start_column=1, end_row=fila,
+                           end_column=ws.max_column)
+            fila += 1
         for _hoja, fase, tarea, responsable, plazo, nota in altas:
-            if usa_fase and fase and fase != cabecera_alta:
-                cabecera_alta = fase
             valores = {col_tarea: tarea}
             if usa_fase:
                 valores[cols['fase']] = fase
@@ -2139,9 +2272,12 @@ class Plan(object):
             fila += 1
             n += 1
         fila += 1
-        for _r, contenido in pie:
+        for _r, contenido, ancho in pie:
             for c, v in contenido:
                 motor.val(ws, get_column_letter(c) + str(fila), v)
+            if ancho > 1:
+                ws.merge_cells(start_row=fila, start_column=1, end_row=fila,
+                               end_column=ancho)
             fila += 1
         # el resaltado de fila del molde C1 se reancla al cuerpo nuevo
         for cf in list(ws.conditional_formatting):
@@ -2184,7 +2320,7 @@ def post(wb, fname, det, pid, params, cambios, contenido, carpeta=None):
     # fondo de maniobra sale de los costes fijos del P&L. Las rejillas se
     # construyen en dos fases (declarar y escribir), así que una hoja puede
     # citar coordenadas de otra que todavía no se ha volcado.
-    plan.supuestos()
+    plan.supuestos_altas()
     plan.personal()
     plan.rej['financiacion'] = Rejilla(plan.ws_financiacion, 5)
     plan.rej['inversion'] = Rejilla(plan.ws_inversion, 5)
@@ -2197,7 +2333,7 @@ def post(wb, fname, det, pid, params, cambios, contenido, carpeta=None):
     plan.escenarios()
     plan.tesoreria()
     plan.instrucciones()
-    plan.supuestos()          # 2.ª vuelta: ya existen las rejillas del P&L
+    plan.supuestos_calculadas()   # necesita las coordenadas del P&L
     recalibrado = plan.dato('RECALIBRADO', []) or []
     for entrada in recalibrado:
         cambios.append('RECALIBRADO · ' + ' · '.join(str(x) for x in entrada))
