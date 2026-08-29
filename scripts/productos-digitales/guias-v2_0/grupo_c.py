@@ -999,6 +999,30 @@ def _menu(wb, fname, cambios, contenido, registro_modelo):
 
     # ---- mix, clasificación y acción --------------------------------------
     for f_ in range(primera, ultima + 1):
+        # Las columnas que ya venían calculadas se REESCRIBEN con guarda: el
+        # `=F5-E5` original imprime «0,00 €» en las 13 filas vacías del
+        # representante, y un margen de cero en una fila sin plato se lee como
+        # un plato que no deja nada (§7-bis.13).
+        if modelo == 'M1':
+            motor.f(ws, col_margen + str(f_),
+                    motor.iferror('IF(OR($E{r}="",$F{r}=""),"",$F{r}-$E{r})'
+                                  .format(r=f_)), fmt=motor.FMT_EUR)
+            motor.verde(ws, 'B' + str(f_) + ':F' + str(f_))
+            motor.fijar_formato(ws, 'E' + str(f_), motor.FMT_EUR)
+            motor.fijar_formato(ws, 'F' + str(f_), motor.FMT_EUR)
+        else:
+            motor.f(ws, 'E' + str(f_), _pct('$D' + str(f_), '$C' + str(f_)),
+                    fmt=motor.FMT_PCT)
+            motor.fijar_formato(ws, 'E' + str(f_), motor.FMT_PCT)
+            motor.f(ws, col_margen + str(f_),
+                    motor.iferror('IF(OR($C{r}="",$D{r}=""),"",$C{r}-$D{r})'
+                                  .format(r=f_)), fmt=motor.FMT_EUR)
+            motor.f(ws, 'H' + str(f_),
+                    motor.iferror('IF(OR($G{r}="",$F{r}=""),"",$G{r}*$F{r})'
+                                  .format(r=f_)), fmt=motor.FMT_EUR)
+            motor.verde(ws, 'B' + str(f_) + ':D' + str(f_))
+            motor.verde(ws, 'F' + str(f_))
+            motor.fijar_formato(ws, 'F' + str(f_), motor.FMT_ENT)
         motor.f(ws, col_mix + str(f_),
                 motor.iferror('IF(OR($' + col_uds + str(f_) + '="",'
                               + ref_uds + '="",' + ref_uds + '=0),"",$'
