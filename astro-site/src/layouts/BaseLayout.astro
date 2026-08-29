@@ -38,6 +38,13 @@ interface Props {
    *  contradictorias en páginas privadas). El default false deja el resto del
    *  site EXACTAMENTE igual que antes. */
   noindex?: boolean;
+  /** Landings de PRODUCTO digital (2026-08-29, decisión de John): omiten el
+   *  SoftwareApplication global del SaaS para que Google monte el rich result
+   *  con el `Product` de la propia landing (sus estrellas y su precio real).
+   *  Con el global presente, la SERP de /kit-tareas-hotel mostraba «4,8 (9.122)
+   *  · 95,00 €» — valoraciones de la plataforma y un plan de suscripción — en un
+   *  kit de 18,50 €. Organization y WebSite se siguen emitiendo. */
+  omitGlobalApp?: boolean;
 }
 
 const {
@@ -50,6 +57,7 @@ const {
   ogImage,
   locales,
   noindex = false,
+  omitGlobalApp = false,
 } = Astro.props;
 
 // Idiomas para los que se emiten hreflang/og:locale:alternate (default: todos).
@@ -180,6 +188,10 @@ const globalSchemas = noindex
         inLanguage: [...LOCALES],
       },
     ];
+// Landings de producto: fuera el SoftwareApplication global (ver prop omitGlobalApp).
+const emittedSchemas = omitGlobalApp
+  ? globalSchemas.filter((g) => g['@type'] !== 'SoftwareApplication')
+  : globalSchemas;
 ---
 
 <!doctype html>
@@ -236,8 +248,8 @@ const globalSchemas = noindex
         SoftwareApplication), en UN script con array — mismo formato que la SPA.
         Solo en páginas indexables (la zona app noindex no los lleva, igual que
         en la SPA, donde los gates/dashboards no montan SEOHead). */}
-    {globalSchemas.length > 0 && (
-      <script type="application/ld+json" set:html={JSON.stringify(globalSchemas)} />
+    {emittedSchemas.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify(emittedSchemas)} />
     )}
     <slot name="head" />
   </head>
