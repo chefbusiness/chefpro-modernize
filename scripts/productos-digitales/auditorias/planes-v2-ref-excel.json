@@ -1,0 +1,273 @@
+{
+  "lente": "TÉCNICA EXCEL (openpyxl + pycel) — refutador del representante A «plan-negocio-bar-restaurante», familia Planes v2.0",
+  "fecha": "2026-08-29",
+  "spec": "scripts/productos-digitales/planes-v2-SPEC.md",
+  "r1_original": "scripts/productos-digitales/auditorias/plan-negocio-bar-restaurante-R1.json",
+  "metodo": {
+    "copia_propia": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/propio-ref-excel python3 planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run --json <scratchpad>/planes/ref-excel.json  → TODO VERDE (633 fórmulas nuevas, idempotencia 0 diferencias, fallos_pycel 0, gates §9 a 0, censo 0 defectos)",
+    "moldes_probados_en_dry_run": [
+      "plan-negocio-bar-restaurante (A-α + C1) → exit 0, TODO VERDE",
+      "plan-negocio-tapas-bar (A-β + C2) → exit 1, 9 fallos (informe <scratchpad>/planes/tapas.json)",
+      "plan-negocio-cocteleria-eventos (B-γ) → exit 1, fallo grupo_a",
+      "plan-negocio-paellero-eventos (B-δ) → exit 1, fallo grupo_a"
+    ],
+    "entorno": "Python 3.7.2 · openpyxl 3.1.3 · pycel 1.0b30 · Mac, un python cada vez, istats entre ejecuciones (39-47 °C)",
+    "no_tocado": "astro-site/public/dl/** sólo se leyó; nunca PLANES_APPLY"
+  },
+  "hallazgos": [
+    {
+      "id": "RT-01",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/planes-v2_0/grupo_a.py",
+      "ubicacion": "grupo_a.py:2363-2371 → checklist-apertura-bar-restaurante.xlsx:'Checklist Apertura':A3:F73",
+      "hallazgo": "REGRESIÓN: el motor rompe un formato condicional que en producción estaba BIEN. El resaltado de fila del molde C1 se re-ancla sólo en el sqref, no en la fórmula, y además arranca en la fila de cabecera: el resaltado queda desplazado una fila y la cabecera se pinta según un ítem.",
+      "evidencia": "Fichero de producción (v1.1, leído en solo lectura): sqref=A4:F59 con fórmula $E4=\"✓\" → ancla A4, fórmula E4, CORRECTO. Fichero generado en dry-run, XML crudo de xl/worksheets/sheet1.xml: <conditionalFormatting sqref=\"A3:F73\"><cfRule type=\"expression\" ...><formula>$E4=\"&#10003;\"</formula></cfRule>. Ancla A3 con fórmula $E4 ⇒ la fila 5 (primer ítem, 'Elegir forma jurídica') se pinta según E6, y la fila 3 (cabecera 'Fase | Trámite / Tarea | Responsable | Plazo | OK | Notas') se pinta según E4. En la misma hoja el otro CF sí está bien anclado: sqref=E5:E70 con SEARCH(\"✓\",E5). El código responsable: `nuevo = ('A' + str(cab) + ':' + get_column_letter(ws.max_column) + str(fila)); ws.conditional_formatting.add(nuevo, reglas[0])` — reutiliza `reglas[0]` sin reescribir su fórmula pese a que el comentario dice «se reancla al cuerpo nuevo».",
+      "fix": "En grupo_a.py:2364-2371, reconstruir la regla con la fórmula re-anclada a la primera fila de DATOS: rango `A{cab+1}:{ultima_col}{fila}` y fórmula `$E{cab+1}=\"✓\"` (FormulaRule nueva con el mismo dxf), nunca reutilizar el objeto regla original. Añadir al gate §9 una comprobación de que, para todo CF de tipo expression, la primera referencia de fila de la fórmula coincide con la fila superior del sqref."
+    },
+    {
+      "id": "RT-02",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/planes-v2_0/grupo_a.py + motor.py (aplicado a plan-financiero-tapas-bar.xlsx)",
+      "ubicacion": "<scratchpad>/planes/tapas.json → gates.idempotencia.detalle · hoja 'Personal'!D5:D11 y 'Escenarios'!B5,D5,D7",
+      "hallazgo": "El paquete NO es idempotente sobre el molde A-β: la segunda pasada destruye los sueldos de la hoja Personal y los pone a 1 €. La red de seguridad que la propia SPEC exige («segunda pasada = 0 cambios») está rota justo en el molde que cubre 4 de los 10 productos.",
+      "evidencia": "`--dry-run` de plan-negocio-tapas-bar, gates.idempotencia.diferencias = 10. Detalle literal: \"Personal!D5: ('2400','#,##0.00 €',...) → ('1',...)\", D6 2000→1, D7 1600→1, D8 1550→1, D9 1450→1, D10 1400→1, D11 800→1; \"Escenarios!B5: 30→36\", \"Escenarios!D5: 70→62.5\", \"Escenarios!D7: 320→310\". En el representante A-α la idempotencia sí da 0 diferencias, así que el fallo sólo aparece al salir del molde del representante.",
+      "fix": "Aislar el paso que reescribe la columna de bruto en A-β (el mapeo de columnas de `5. Personal` a la hoja `Personal` sin numerar coge otra columna en la 2.ª pasada, cuando la 1.ª ya ha insertado la de Seguridad Social). Detectar la columna de bruto por rótulo NORMALIZADO y no por índice, y hacer el paso no-reentrante marcando el libro (p. ej. una propiedad `_pl_personal_cableado`). Bloquear la tanda hasta que `idempotencia.diferencias == 0` en los 5 productos de línea A."
+    },
+    {
+      "id": "RT-03",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/planes-v2_0/ (motor.py + grupo_a.py) sobre plan-negocio-tapas-bar",
+      "ubicacion": "<scratchpad>/planes/tapas.json → fallos[] (9 entradas), exit 1",
+      "hallazgo": "El mismo motor que da TODO VERDE en el representante suspende 9 de sus propios gates en el primer hermano de la misma línea. El libro resultante es publicable según §9 (no latinos 0, formatos 0, A4 0…) y a la vez insostenible: el caso base no pasa su semáforo, la caja se queda en negativo y la hoja de Financiación no calcula la cuota.",
+      "evidencia": "Salida literal del dry-run de tapas-bar: «§2.11.3 / DOM-13: el caso base NO pasa su propio semáforo de personal (0.7474695340501792 > 0.35)»; «§2.11.6: el saldo mínimo de tesorería es -433.3622000000614»; «§2.11.7: con plazo 3 y carencia 3 el cuadro no cierra en cero o los años 4-5 siguen vivos»; «§2.11.9: cambiar prestamo_sup ('0. Supuestos'!B31) NO hace que cuota ('Financiación'!B21) sube: None → 30504.3942712343» (la cuota vale None en el caso base); «§2.11.5: no se demuestran las tres ramas del impuesto (RAI1 -26394.5, IS1 0, RAI2 -22403.95, BIN2 26394.5, IS2 0, tipo3 '', IS3 0)»; «caché: 1 fórmulas nuevas sin valor» (gates.data_only_formulas_nuevas.fallos = [\"plan-financiero-tapas-bar.xlsx:Personal!C12: sin caché (=SUM(C5:C11))\"]).",
+      "fix": "No cerrar T2/T5 con el representante: la SPEC §1.1 avisa de que «un motor que dé por hecho el molde del representante destroza los otros tres» y ya lo hace con el segundo molde. Antes de firmar el paquete, correr `--dry-run` de los 5 de línea A y exigir exit 0. En concreto: (a) mapear el bloque de Financiación en A-β (hoja 'Financiación' sin numerar) para que B21 devuelva número; (b) redimensionar la plantilla de tapas-bar hasta cumplir el techo de Instrucciones (§2.3.1) o subir volumen; (c) subir el fondo de maniobra hasta saldo mínimo ≥ 0."
+    },
+    {
+      "id": "RT-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (versión generada en dry-run)",
+      "ubicacion": "'4. Escenarios'!B17:D17 ← '2. P&L 3 Años'!B40, que incluye B39",
+      "hallazgo": "Los escenarios Pesimista y Optimista se mueven cuando cambia el caso REALISTA sin que ninguno de sus propios inputs se toque. La fila 'Varios e imprevistos' del P&L es un 2 % de las ventas del realista y viaja dentro de «COSTES FIJOS», que los tres escenarios importan tal cual. La demostración §2.11.2 sólo compara la columna Realista, así que el defecto pasa el gate en verde.",
+      "evidencia": "pycel sobre el fichero generado. Caso base: '4. Escenarios'!B18 (Pesimista) = -58.466,40 €. Cambiando SÓLO '0. Supuestos'!B4 de 80 a 110 cubiertos (input del realista): B18 = -61.665,60 €, Δ = -3.199,20 € = 2 % × (586.520 − 426.560) de ingresos del realista. Ingresos propios del pesimista sin cambio: '4. Escenarios'!B9 = 276.660 € en los dos casos. Imprevistos que le corresponden: 276.660 × 2 % = 5.533,20 €; los que se le cargan: '2. P&L 3 Años'!B39 = 8.531,20 €. En el optimista (D9 = 562.400 €) le tocarían 11.248,00 € y se le cargan los mismos 8.531,20 €. Además '4. Escenarios'!E17 afirma «Los costes fijos no cambian con el escenario», que con esa fila es falso.",
+      "fix": "Sacar 'Varios e imprevistos' del bloque de COSTES FIJOS y llevarlo a COSTES VARIABLES del P&L (fila calculada sobre B10), y añadir en '4. Escenarios' su propia fila `=B9*'0. Supuestos'!$B$28` junto a las demás variables. Ampliar la demostración §2.11.2 para que compruebe también que Pesimista y Optimista NO cambian al mover un input que sólo pertenece al realista."
+    },
+    {
+      "id": "RT-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'3. Punto Equilibrio'!B8 ← '2. P&L 3 Años'!B40 (que incluye B39, un % de ventas)",
+      "hallazgo": "El punto de equilibrio se mueve con el volumen previsto, cosa que un break-even lineal no puede hacer. Misma raíz que RT-04: un coste proporcional a las ventas metido en el numerador de costes fijos. La cifra estrella del producto (la que cita el docx, la landing y el dashboard) depende de un supuesto que no debería tocarla.",
+      "evidencia": "pycel: con '0. Supuestos'!B4 = 80 → '3. Punto Equilibrio'!B15 = 67,44 cubiertos/día. Con B4 = 110 (nada más cambiado) → B15 = 68,29. Con B4 = 30 → B15 = 66,02. El break-even correcto con los mismos datos, sacando los imprevistos del numerador y metiéndolos en el coste variable unitario: (253.511,70 − 8.531,20) / (17,20 − 5,074 − 0,344) / 310 = 67,07 cubiertos/día, constante frente al volumen. Diferencia publicada frente a la correcta en el caso base: +0,37 cubiertos/día.",
+      "fix": "El mismo de RT-04. Y añadir una demostración bloqueante a §2.11: «cambiar Supuestos!B4 NO puede mover '3. Punto Equilibrio'!B15 más de 0,01 cubiertos/día»."
+    },
+    {
+      "id": "RT-06",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'7. Financiación'!B21 (cuota) y B34 (capital pendiente al vencimiento); DV de '0. Supuestos'!B32",
+      "hallazgo": "Con un tipo de interés del 0 % —valor que la validación de datos acepta y que corresponde a un préstamo familiar, un ENISA o un ICO bonificado— la anualidad algebraica divide entre cero, el cuadro de amortización entero se vacía y el libro certifica en VERDE que el préstamo queda saldado sin haber devuelto un euro.",
+      "evidencia": "pycel con '0. Supuestos'!B32 = 0: 'Financiación'!B21 = '' ; C24 = 0; D24 = 0; D25 = ''; F33 = ''; B34 (Capital pendiente al vencimiento) = 0 → su formato condicional lo pinta de verde y su nota C34 dice «Tiene que ser cero: si no, el cuadro no cierra»; B35 y B36 = 0 → '2. P&L 3 Años'!B38 = 0 y '6. Tesorería 12 meses'!B15 = 0 los doce meses. El principal de 110.000 € ('0. Supuestos'!B31) nunca se devuelve y nada avisa. Fórmula: B21 = IFERROR(IF(B19-B20<=0,\"\",B17*B18/(1-(1+B18)^-(B19-B20))),\"\") — con B18=0 el denominador es 1-1=0.",
+      "fix": "B21 = IF(B19-B20<=0,\"\", IF(B18=0, B17/(B19-B20), B17*B18/(1-(1+B18)^-(B19-B20)))). Y B34 debe comparar contra el principal, no contra el vacío: `IF(B17=\"\",\"\",IF(F33=\"\",IF(SUM(D24:D33)=0,B17,0),F33))`, de modo que un cuadro apagado se marque en rojo en vez de darse por cerrado."
+    },
+    {
+      "id": "RT-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'7. Financiación'!A24:F33 (sólo 10 años) y '0. Supuestos'!B33 (plazo, DV decimal ≥ 0 sin techo)",
+      "hallazgo": "El cuadro de amortización tiene 10 filas fijas y el plazo no tiene tope de validación. Con un plazo de 12 años —el estándar de una línea ICO para inversión en hostelería— el cuadro no llega al vencimiento, quedan 25.570,74 € sin amortizar y la hoja acusa al usuario de haberse equivocado.",
+      "evidencia": "pycel con '0. Supuestos'!B33 = 12 (resto igual): 'Financiación'!F33 = 58.750,78 → 25.570,74 €; B34 = 25.570,74 € con la nota C34 «Tiene que ser cero: si no, el cuadro no cierra» y su formato condicional en rojo. Los intereses de los años 11 y 12 no existen, así que '2. P&L 3 Años'!B38 y la tesorería sólo cubren la parte del cuadro que cabe. La DV de B33 es `decimal greaterThanOrEqual 0` (sin formula2), es decir sin límite superior.",
+      "fix": "O bien generar el cuadro con tantas filas como diga el plazo (el motor ya escribe filas por bucle), o bien acotar la DV de '0. Supuestos'!B33 a `whole between 1 and 10` con mensaje explícito («el cuadro de este libro llega a 10 años»). Lo primero es lo correcto: un plan de negocio con préstamo ICO a 12-15 años es el caso normal."
+    },
+    {
+      "id": "RT-08",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "DV de '0. Supuestos' (sqref B5 B21 B22 B24 B25 B26 B27 B30 B31 B33 B34 B35 B42 B44 B45, tipo decimal ≥ 0)",
+      "hallazgo": "La validación admite 0 en celdas que son DIVISORES o multiplicadores estructurales. Un 0 no da error: la guarda IFERROR lo convierte en \"\", SUM() ignora el texto y el libro imprime un resultado MEJOR sin un solo aviso. Es el escenario contrario al que §1.5 quería cubrir: la guarda no protege, esconde.",
+      "evidencia": "pycel. (a) '0. Supuestos'!B44 (vida útil de obra) = 0 → '1. Inversión Inicial'!B51 = '' → '2. P&L 3 Años'!B37 = '' → SUM(B22:B39) la ignora → B40 baja de 253.511,70 a 244.629,20 € y B41 SUBE de 47.213,10 a 56.095,60 €; además '6. Tesorería'!B23 y B27 (payback) y '7. Financiación'!B42 (DSCR) quedan en blanco, y con ellos Instrucciones!B30. (b) '0. Supuestos'!B21 (nº de pagas) = 0 → '5. Personal'!G12 = 0,00 € → '2. P&L 3 Años'!B23 = 0, B41 = 194.311,10 €, B54 (coste de personal/ventas) = 0,0 % y Instrucciones!D18 pasa a «CUMPLE» en verde.",
+      "fix": "Separar las DV por naturaleza: divisores y contadores (B21 pagas, B33 plazo, B44 y B45 vidas útiles) → `whole greaterThanOrEqual 1` (pagas, mejor `between 12 and 16`); precios y volúmenes (B5 ticket) → `decimal greaterThan 0`. Y añadir a §2.11 una demostración de robustez: poner a 0, uno a uno, cada input de la hoja de supuestos y exigir que ninguna combinación mejore el resultado antes de impuestos sin dejar rastro visible."
+    },
+    {
+      "id": "RT-09",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'0. Supuestos' DV whole between 1 and 365 sobre sqref «B4 B6» · '4. Escenarios' DV whole between 1 and 365 sobre sqref «B6 B8 D6 D8»",
+      "hallazgo": "La validación pensada para los DÍAS DE APERTURA se aplica también a CUBIERTOS/DÍA. El libro impide modelar más de 365 cubiertos al día —un bar-restaurante con dos servicios y terraza los pasa— y, cuando rechaza el valor, muestra el mensaje equivocado: «Los días van de 1 a 365».",
+      "evidencia": "Volcado de dataValidations del fichero generado: `0. Supuestos | whole | between | f1=1 f2=365 | err='Los días van de 1 a 365.' | sqref=B4 B6`, donde A4 = 'Cubiertos/día (media del año 1)' y A6 = 'Días de apertura al año'. Idéntico en `4. Escenarios | whole | between | f1=1 f2=365 | sqref=B6 B8 D6 D8`, donde A6 = 'Cubiertos/día' y A8 = 'Días de apertura al año'. La regla de §1.4 («si el rótulo contiene «Días»…») se está usando al revés: agrupa por tipo de dato entero, no por rótulo.",
+      "fix": "Partir la regla en dos por rótulo: días → `whole between 1 and 365` con su mensaje; cubiertos/eventos/personas → `whole greaterThanOrEqual 1` con mensaje propio («Escribe un número entero de cubiertos al día»). Verificar de paso los otros nueve productos, que comparten el mismo generador de DV."
+    },
+    {
+      "id": "RT-10",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'1. Inversión Inicial' DV decimal ≥ 0, sqref … D22 D29 D42",
+      "hallazgo": "Se ha aplicado una validación NUMÉRICA a tres celdas de la columna de NOTAS. Son las tres notas que estaban vacías (D22 'Fregadero industrial doble seno', D29 'Molinillo café profesional', D42 'Licencias y permisos varios'): el comprador que escriba ahí una nota recibe «Escribe un número mayor o igual que 0» y el texto se rechaza.",
+      "evidencia": "Volcado completo de la DV del fichero generado: `1. Inversión Inicial | decimal | greaterThanOrEqual | f1=0 | err='Escribe un número mayor o igual que 0.' | sqref=B7 B8 B9 B10 B14 … B42 D22 D29 D42`. En las filas 22, 29 y 42 la columna D no tiene valor; en las demás filas D lleva texto ('4 fuegos + plancha 80cm', 'Positiva + negativa'…) y por eso quedaron fuera. El criterio que las incluye es «celda verde desbloqueada sin valor numérico previo», no el tipo de la columna.",
+      "fix": "Excluir de la DV numérica toda celda cuya CABECERA de columna sea 'Notas' (o cuya columna contenga mayoría de texto), no sólo las que ya traen texto. En motor.py, decidir la DV por columna una vez y aplicarla al rango de esa columna."
+    },
+    {
+      "id": "RT-11",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/planes-v2_0/motor.py",
+      "ubicacion": "motor.py:2159-2194 `gate_formatos()`, línea 2166 · efecto en plan-financiero-bar-restaurante.xlsx:'1. Inversión Inicial'!D7:D42 y '2. P&L 3 Años'!F11:F39",
+      "hallazgo": "El gate de formatos —el que la SPEC vende como «0 celdas de euros con formato de porcentaje y 0 recuentos con formato de euro»— salta TODAS las celdas de texto, así que no ve las 51 celdas de nota que el propio motor ha dejado con formato de euro. El run informa «formatos: 0» y es un verde falso.",
+      "evidencia": "Código: `if not (_es_numero(v) or _es_formula(v)) or c.column == 1: continue` (motor.py:2166). Medición propia con openpyxl sobre el fichero generado: 51 celdas de TEXTO con formato numérico, entre ellas '1. Inversión Inicial'!D7 = 'Medio mes de alquiler' con number_format '#,##0 €', D14 = '4 fuegos + plancha 80cm' con '#,##0 €', D18 = 'Positiva + negativa' con '#,##0 €', y '2. P&L 3 Años'!F11 = 'Menú del mediodía, carta y raciones' con '#,##0 €'. La salida del dry-run del representante dice «formatos: 0».",
+      "fix": "Quitar el `continue` para las celdas de texto y añadir una comprobación específica: «celda con valor de texto y number_format que contiene € o % » → hallazgo de tipo 'texto con formato numérico'. Y poner a 'General' el formato de las columnas de notas al escribirlas."
+    },
+    {
+      "id": "RT-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'1. Inversión Inicial'!D7:D42 y '2. P&L 3 Años'!F11, F51:F56 (37 celdas)",
+      "hallazgo": "37 celdas VERDES desbloqueadas contienen TEXTO. El verde E8F5E9 es, por convención de la familia, «aquí se teclea un dato»; pintado sobre la columna de notas convierte el comentario del autor en un campo de entrada, y contradice a Instrucciones!A4 («Las celdas VERDES son las editables: cambia esas y el resto del libro se recalcula solo»), porque cambiar una nota no recalcula nada.",
+      "evidencia": "Medición con openpyxl sobre el fichero generado: 37 celdas con `protection.locked=False`, `fill.start_color.rgb='00E8F5E9'` y valor de tipo str. Ejemplos: '1. Inversión Inicial'!D7 'Medio mes de alquiler', D9 'Ingeniero + tasas ayuntamiento', D21 'Sartenes, ollas, GN, cuchillos, tablas'; '2. P&L 3 Años'!F51 'Por debajo, revisa precios de carta y escandallos', F53, F54, F55, F56. Total de celdas verdes del libro: 121 numéricas + 37 de texto = 158, repartidas en 7 hojas.",
+      "fix": "Pintar de verde sólo las celdas que alimentan una fórmula. Dejar las notas desbloqueadas si se quiere que el comprador las edite, pero sin relleno verde, o con un relleno propio y su leyenda en Instrucciones."
+    },
+    {
+      "id": "RT-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'0. Supuestos'!B11 y C11 · '2. P&L 3 Años'!E11 · Instrucciones!A5",
+      "hallazgo": "La «hoja de mando» miente en el parámetro que más se toca. El mix comida/bebida NO se teclea en Supuestos: B11 está BLOQUEADA y es un espejo de '2. P&L 3 Años'!E11. Además su nota afirma que es una suma de líneas del P&L, y E11 es una constante suelta de 0,65 escrita a mano.",
+      "evidencia": "'0. Supuestos'!B11 = `=IFERROR('2. P&L 3 Años'!$E$11,\"\")`, protection.locked = True, sin relleno. '0. Supuestos'!C11 = 'Suma del peso de las líneas de COMIDA del P&L: el mix vive en un solo sitio'. '2. P&L 3 Años'!E11 = 0.65 (constante, verde, desbloqueada). Instrucciones!A5 = '1. «0. Supuestos» es la hoja de mando: cubiertos, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.' — el usuario va a Supuestos a cambiar la mezcla, encuentra la celda protegida en gris y no hay ninguna indicación de dónde está el input real.",
+      "fix": "Invertir la dependencia: '0. Supuestos'!B11 pasa a ser el input verde desbloqueado (0,65, con su DV de porcentaje) y '2. P&L 3 Años'!E11 pasa a `=IFERROR('0. Supuestos'!$B$11,\"\")` bloqueada, como el resto del libro. Reescribir C11 con lo que la celda hace de verdad."
+    },
+    {
+      "id": "RT-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'1. Inversión Inicial'!B12, B40, B41 frente a '2. P&L 3 Años'!B22, B26, B25",
+      "hallazgo": "6.700 € de gasto RECURRENTE del año 1 están contados dos veces: una en la inversión inicial y otra en el P&L. Es exactamente el defecto TEC-12 que la SPEC persigue en la línea B, reintroducido por el motor nuevo en la línea A. Infla la cifra de portada del producto (inversión total) un 4,06 % y el denominador del payback.",
+      "evidencia": "pycel sobre el fichero generado. Alquiler: '1. Inversión Inicial'!B12 'Primera mensualidad de alquiler' = 2.900,00 € y '2. P&L 3 Años'!B22 = `'0. Supuestos'!$B$24*12` = 34.800,00 € (los 12 meses, el primero incluido). Gestoría: '1. Inversión Inicial'!B40 'Alta gestoría + contabilidad primer año' = 1.800 € (nota '150 EUR/mes') y '2. P&L 3 Años'!B26 'Gestoría + contabilidad' = 1.800 €. Seguros: '1. Inversión Inicial'!B41 'Seguros (RC + multirriesgo + empleados)' = 2.000 € (nota 'Primer año') y '2. P&L 3 Años'!B25 = `'0. Supuestos'!$B$27` = 2.000 €. Los tres entran en B45 = 165.137,93 €: 6.700 / 165.137,93 = 4,06 %.",
+      "fix": "Elegir un solo sitio por partida: la fianza y la primera mensualidad se quedan en la inversión y el P&L pasa a 11 meses (`B24*11`), o al revés. Gestoría y seguros del año 1 salen de la inversión (ya están en el P&L). Añadir al gate de coherencia una comprobación de intersección entre rótulos de la inversión y rótulos de costes fijos del P&L."
+    },
+    {
+      "id": "RT-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'1. Inversión Inicial'!B49, B50, B51 y su nota D51",
+      "hallazgo": "Los rangos de las bases de amortización están incompletos y la nota que los explica describe un libro que no es éste. 22.000 € de la inversión no entran en ninguna base ni aparecen como gasto en ningún ejercicio, y D51 justifica la exclusión nombrando tres partidas de las que dos (stock e imprevistos) NO existen como filas en la hoja.",
+      "evidencia": "'1. Inversión Inicial'!B49 = `=IFERROR(B8+B9+B10+B19+B25,\"\")` = 43.500 € y B50 = `=IFERROR(B14+B15+B16+B17+B18+B20+B21+B22+B23+B26+B27+B28+B29+B30+B31+B32+B33,\"\")` = 36.260 €; suma 79.760 €. Inversión sin fondo de maniobra: B6+B13+B24+B34+B38 = 49.600+25.700+17.560+4.000+4.900 = 101.760 €. Diferencia 22.000 € = B7 honorarios inmobiliaria 1.500 + B11 fianza 8.700 + B12 primera mensualidad 2.900 + bloque marketing 4.000 + bloque legales 4.900. D51 = 'El fondo de maniobra, el stock y los imprevistos NO se amortizan: no son inmovilizado' — en esta hoja no hay fila de stock inicial ni de imprevistos (la SPEC §2.2 pedía añadirlas y no se añadieron).",
+      "fix": "Generar D51 con TEXTO() a partir de las filas realmente excluidas, no con una frase fija. Y decidir explícitamente dónde va cada una de las cinco: fianza → activo recuperable (correcto fuera); honorarios, marketing de lanzamiento y gastos de constitución → gasto del ejercicio 1 en el P&L, con su propia fila, o base amortizable si se activan."
+    },
+    {
+      "id": "RT-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'6. Tesorería 12 meses'!E18, H18, K18 · '1. Inversión Inicial'!B46 · Instrucciones!B25",
+      "hallazgo": "La liquidación trimestral de IVA está truncada con `-MAX(0,…)`: cuando el soportado supera al repercutido —lo normal en el arranque— la hoja escribe 0 en vez de una devolución o una compensación al trimestre siguiente. Y el IVA soportado de la inversión, 19.542,60 €, que la propia hoja de inversión calcula y que Instrucciones!B25 suma a la «necesidad total de caja», no entra en la tesorería ni como pago ni como recuperación.",
+      "evidencia": "'6. Tesorería 12 meses'!E18 = `=IFERROR(-MAX(0,SUM(B16:D16)-SUM(B17:D17)),\"\")` (idem H18 y K18). '1. Inversión Inicial'!B46 = `=IFERROR((B45-B11-B44)*'0. Supuestos'!$B$41,\"\")` = 19.542,60 €; B47 = 184.680,53 € y Instrucciones!B25 lo muestra como 'Necesidad total de caja al arranque'. En la hoja de tesorería, el saldo arranca en `'1. Inversión Inicial'!$B$44` = 63.377,93 € (sólo el fondo de maniobra) y ninguna fila recupera esos 19.542,60 €. El cuarto trimestre tampoco se liquida (nota A29), así que N18 = -15.734,61 € recoge sólo tres trimestres.",
+      "fix": "Sustituir `-MAX(0,x)` por `-x` y añadir una fila «IVA a compensar arrastrado» que acumule el saldo negativo hasta el trimestre siguiente. Añadir al mes 1 la fila «Devolución/compensación del IVA de la inversión» alimentada por '1. Inversión Inicial'!B46, o dejar constancia en la propia hoja de por qué no está."
+    },
+    {
+      "id": "RT-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'6. Tesorería 12 meses'!B18, C18, D18, F18, G18, I18, J18, L18, M18 · '2. P&L 3 Años'!E10",
+      "hallazgo": "10 «fórmulas» son una constante envuelta en una guarda que no puede fallar: `=IFERROR(0,\"\")` y `=IFERROR(1,\"\")`. Además de inflar el recuento de fórmulas nuevas (633) que se usa para dar por cumplida la promesa de «libro con fórmulas», imprimen un 0 € duro en los nueve meses sin liquidación, contra la convención de la familia («sin dato» se escribe \"\", nunca 0).",
+      "evidencia": "Barrido con openpyxl del fichero generado: 10 fórmulas que casan `^=IFERROR\\(<constante numérica>,\"\"\\)$`. Literales: '6. Tesorería 12 meses'!B18 = '=IFERROR(0,\"\")' (y C18, D18, F18, G18, I18, J18, L18, M18) con number_format '#,##0 €'; '2. P&L 3 Años'!E10 = '=IFERROR(1,\"\")' con '0.0%'.",
+      "fix": "Dejar vacías las celdas de los meses sin liquidación (o escribir \"\" literal) y poner E10 como valor 1 con formato de porcentaje, sin fórmula. Descontarlas del recuento de fórmulas que se publica."
+    },
+    {
+      "id": "RT-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "39 celdas, entre ellas '2. P&L 3 Años'!B17:E17, B42:D42, B47:D47 · '4. Escenarios'!B13:D13, B19 · '6. Tesorería'!B15:N15 y B18:M18 · '7. Financiación'!D24, B34, B36",
+      "hallazgo": "Prueba del «libro en blanco»: vaciando las 121 celdas verdes numéricas no aparece ningún error (#¡DIV/0!, #¡VALOR!, #¿NOMBRE?) —eso está bien— pero 39 celdas siguen imprimiendo 0 € o 0,0 %, que la convención de la familia prohíbe expresamente («sin dato» se escribe \"\", nunca 0). Un libro vacío entregado así parece un plan con cifras.",
+      "evidencia": "Script propio: se ponen a None las 121 celdas verdes numéricas y se evalúan con pycel las 627 fórmulas. Resultado: errores '#…' = 0; celdas con valor 0 y formato € o % = 39. Muestra literal: '2. P&L 3 Años'!B17 = 0.0 ('#,##0 €'), E17 = 0.0 ('0.0%'), B42 = 0.0, B47 = 0.0; '4. Escenarios'!B13 = 0.0, B19 = 0.0; '6. Tesorería 12 meses'!B15:N15 = 0.0 (13 celdas); '7. Financiación'!B34 = 0.0 y B36 = 0.0.",
+      "fix": "Envolver las fórmulas que hoy devuelven 0 estructural en `IF(<driver>=\"\",\"\", …)` como ya se hace en '2. P&L 3 Años'!B10 (`IF(B7*B8*B9=0,\"\",…)`). Añadir la prueba del libro en blanco a §2.11 como demostración bloqueante: 0 errores Y 0 ceros con formato de euro o porcentaje."
+    },
+    {
+      "id": "RT-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/ (plan-financiero y checklist, dry-run)",
+      "ubicacion": "'6. Tesorería 12 meses'!A29 · '7. Financiación'!A46 · '4. Escenarios'!A23 · '3. Punto Equilibrio'!A23 · 'Checklist Apertura'!F5, F11, F14, F21, F40, F41",
+      "hallazgo": "El §1.8 se escribió para arreglar celdas con `wrapText` que sólo enseñan una línea de cuatro, y el motor las vuelve a producir en las hojas que él mismo crea: 10 celdas con ajuste de texto y alto de fila fijo insuficiente para el texto que contienen.",
+      "evidencia": "Medición con openpyxl (longitud del texto, ancho de la columna en caracteres, alto fijado en puntos, alto necesario a 15 pt/línea): '6. Tesorería 12 meses'!A29 → 275 caracteres, ancho 44,0, alto 44 pt, necesita ≈105 pt (se ven 3 de 7 líneas); '7. Financiación'!A46 → 249 car., ancho 44,0, alto 44, necesita ≈90; '4. Escenarios'!A23 → 231 car., ancho 40,0, alto 44, necesita ≈90; '3. Punto Equilibrio'!A23 → 189 car., ancho 44,0, alto 34, necesita ≈75; 'Checklist Apertura'!F41 → 221 car., ancho 28,0, alto 34, necesita ≈120; F5 → 219 car., ídem; F14 → 180 car., necesita ≈105; F21 → 150; F11 → 146; F40 → 123.",
+      "fix": "Aplicar la norma que ya está escrita en §1.8 a TODA celda con wrap (no sólo a las combinadas): `height = ceil(len/ancho_en_caracteres) * 15`. Y añadirlo al gate §9, que hoy no mide alturas."
+    },
+    {
+      "id": "RT-20",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/planes-v2_0/grupo_a.py",
+      "ubicacion": "grupo_a.py:2546-2548 (`res['fallos'].append('grupo_a: faltan hojas en ' + path)`), frente al filtro correcto de grupo_a.py:2397 (`if det['molde'] not in MOLDES: return`)",
+      "hallazgo": "`grupo_a.demos()` no filtra por molde, mientras que `post()` sí. Al correr cualquier producto de línea B, grupo_a intenta demostrar sus fórmulas sobre un libro B-γ/B-δ, no encuentra las hojas de línea A y mete un FALLO en el informe. Los dos productos de línea B que probé salen con exit 1 por un fallo que no es del producto sino del alcance del módulo, y eso enmascara los fallos reales cuando llegue grupo_b.",
+      "evidencia": "Dry-run de plan-negocio-cocteleria-eventos: «FALLOS: grupo_a: faltan hojas en …/plan-financiero-cocteleria-eventos.xlsx», exit 1. Dry-run de plan-negocio-paellero-eventos: mismo fallo con su fichero, exit 1. En los dos casos el resto del informe es correcto y los pendientes están bien declarados («grupo_b aún no existe»). grupo_a.MOLDES = ('A-alfa','A-beta') (grupo_a.py:146) y `ficheros()` sí lo respeta; `demos()` no.",
+      "fix": "En `grupo_a.demos()`, saltar los ficheros cuyo molde detectado no esté en MOLDES y devolver `{'fallos': []}` en ese caso, igual que hace `post()`. Sin esto, el exit code deja de ser señal útil durante T6-T8."
+    },
+    {
+      "id": "RT-21",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'2. P&L 3 Años'!C37 y D37",
+      "hallazgo": "La amortización contable se actualiza con la inflación de costes. La amortización es una cuota sobre el COSTE HISTÓRICO del inmovilizado: no sube con el IPC. Hoy el defecto está latente porque '0. Supuestos'!B48 vale 0, pero la celda es verde y editable y su nota invita a subirla.",
+      "evidencia": "'2. P&L 3 Años'!C37 = `=IFERROR(B37*(1+'0. Supuestos'!$B$48),\"\")` y D37 = `=IFERROR(C37*(1+'0. Supuestos'!$B$48),\"\")`, donde A48 de Supuestos es 'Subida anual de los costes fijos' y C48 dice «Súbela si quieres proyectar en euros corrientes». Con B48 = 2 %, la amortización del año 3 sale un 4,04 % por encima de la base histórica y arrastra a B41, B48, al DSCR de '7. Financiación'!B43-B44 y al flujo de caja libre de '6. Tesorería'!B24-B25.",
+      "fix": "C37 = D37 = `=IFERROR($B$37,\"\")` (o recalcular cada año desde '1. Inversión Inicial'!B51). Revisar también si los intereses (B38, que sí leen el cuadro) quedan doblemente indexados en otros moldes."
+    },
+    {
+      "id": "RT-22",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'6. Tesorería 12 meses'!B23 y N19, y el payback B27 que replica Instrucciones!B30",
+      "hallazgo": "La hoja que se vende como fuente ÚNICA del payback contiene DOS flujos de caja del año 1 que no coinciden, y el payback se calcula con el que la propia hoja no ha construido. La nota D27 dice literalmente «ÚNICO payback del pack: inversión a recuperar entre el flujo de caja libre», pero el flujo de caja que la hoja calcula mes a mes es otro.",
+      "evidencia": "pycel: '6. Tesorería 12 meses'!N19 (suma de los doce FLUJO DEL MES) = 63.068,32 €. '6. Tesorería 12 meses'!B23 ('Flujo de caja libre del año 1') = `=IFERROR('2. P&L 3 Años'!$B$48+'2. P&L 3 Años'!$B$37,\"\")` = 49.013,63 €. Diferencia 14.054,69 €. B27 (payback) = 1,86 años usando B23; con N19 y los flujos equivalentes de los años 2-3 el payback saldría distinto. Instrucciones!B30 = `='6. Tesorería 12 meses'!$B$27`, así que la cifra que el docx citará es la de B23.",
+      "fix": "Elegir una definición y escribirla: o el payback se calcula sobre el flujo de caja de la propia hoja (N19 y sus equivalentes de los años 2-3) o B23:B25 se etiquetan como «resultado neto + amortización (aproximación del FCF)» y se explica la diferencia con N19 en la nota. Un gate de coherencia debería comparar las dos y fallar si difieren más de un 5 % sin nota."
+    },
+    {
+      "id": "RT-23",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'3. Punto Equilibrio'!B25",
+      "hallazgo": "Fórmula generada por concatenación de signo: `$B$9+-2`. Excel la acepta, pycel la evalúa, pero es una fórmula que el comprador ve al pinchar la celda y que delata el generador; y basta un cambio de separador para que rompa.",
+      "evidencia": "'3. Punto Equilibrio'!B25 = `=IFERROR($B$9+-2,\"\")` (las hermanas son D25 = `$B$9+2` y E25 = `$B$9+4`, y C25 = `$B$9`). Valor evaluado 15,20 €, correcto.",
+      "fix": "Formatear el desplazamiento con signo: `'$B$9' + ('%+g' % delta)` produce `$B$9-2`, o usar `$B$9-2` explícito cuando delta < 0."
+    },
+    {
+      "id": "RT-24",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'0. Supuestos'!C9, '1. Inversión Inicial'!D11, D12, D44, D46, D47, D49, D50, D51, '2. P&L 3 Años'!F7, F8, F14, F15, F17, F22, F23, F37, F38, F39, F42, F45, F57 y 15 más",
+      "hallazgo": "38 notas se han escrito como `=IFERROR(\"texto literal\",\"\")`. Una constante de texto no puede provocar un error, así que la guarda no protege de nada: sólo convierte un comentario en fórmula, engorda el recuento de «fórmulas nuevas» (633) que sostiene la promesa comercial de «libro con fórmulas» y obliga a inject_cache a cachear texto.",
+      "evidencia": "Barrido con openpyxl: 38 fórmulas que casan `^=IFERROR\\(\"…\",\"\"\\)$`. Ejemplos: '1. Inversión Inicial'!D12 = `=IFERROR(\"Se paga por adelantado junto con la fianza\",\"\")`; '2. P&L 3 Años'!F23 = `=IFERROR(\"Sale de la hoja de Personal: es el MISMO número, no una estimación aparte\",\"\")`; '6. Tesorería 12 meses'!D27 = `=IFERROR(\"ÚNICO payback del pack: …\",\"\")`. Las notas que SÍ interpolan celdas con TEXT() (D11, D44, D46, F14, F45…) son legítimas y no entran en esta cuenta.",
+      "fix": "Escribir como VALOR toda nota que no interpole ninguna celda. Reservar la fórmula (y el IFERROR) para las que llevan TEXT() de un dato variable."
+    },
+    {
+      "id": "RT-25",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'1. Inversión Inicial'!B46",
+      "hallazgo": "El IVA soportado de la inversión se calcula al 21 % sobre TODA la inversión menos fianza y fondo de maniobra, incluyendo partidas exentas o no sujetas: los seguros (exentos, art. 20.Uno.16 LIVA) y las tasas de licencias y permisos (no sujetas). Sobrestima la caja necesaria en 525 €.",
+      "evidencia": "'1. Inversión Inicial'!B46 = `=IFERROR((B45-B11-B44)*'0. Supuestos'!$B$41,\"\")` = 19.542,60 €. Dentro de la base van B41 'Seguros (RC + multirriesgo + empleados)' = 2.000 € y B42 'Licencias y permisos varios' = 500 €. (2.000 + 500) × 21 % = 525 €, que se suman a B47 'NECESIDAD TOTAL DE CAJA AL ARRANQUE' = 184.680,53 € y de ahí a '7. Financiación'!B14.",
+      "fix": "Añadir una columna oculta o un marcador por fila («¿lleva IVA?») y calcular B46 como SUMAPRODUCTO de las partidas marcadas por el tipo de Supuestos!B41, en vez de restar excepciones a mano."
+    },
+    {
+      "id": "RT-26",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'1. Inversión Inicial'!B44 ← '2. P&L 3 Años'!B40",
+      "hallazgo": "El fondo de maniobra son «3 meses de costes fijos» tomados de B40, que incluye la amortización (8.882,50 €) y los intereses del préstamo. La amortización no es salida de caja, así que el colchón dota 2.220,63 € para cubrir un gasto que nunca se paga, y a la vez el criterio deja de ser comparable con el «mínimo de 3 meses» que exige Instrucciones.",
+      "evidencia": "'1. Inversión Inicial'!B44 = `=IFERROR(IF('0. Supuestos'!$B$35*'2. P&L 3 Años'!$B$4…` sobre B40 = 253.511,70 €, que incluye B37 (amortización) = 8.882,50 € y B38 (intereses) = 6.600,00 €. 3/12 × 8.882,50 = 2.220,63 € de colchón sobre un gasto no monetario. Valor resultante B44 = 63.377,93 €.",
+      "fix": "Calcular el fondo sobre los costes fijos DE CAJA: `('2. P&L 3 Años'!$B$40 - '2. P&L 3 Años'!$B$37) * '0. Supuestos'!$B$35 / 12`, y decirlo en la nota D44, que hoy sólo repite los meses."
+    },
+    {
+      "id": "RT-27",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'6. Tesorería 12 meses'!B13:M13",
+      "hallazgo": "Las nóminas se reparten en doce doceavos iguales mientras Supuestos declara 14 pagas. La hoja que existe para responder «en qué mes se agota la caja» alisa justo los dos meses (paga de verano y de Navidad) en los que la salida de caja de personal es un 100 % mayor.",
+      "evidencia": "'6. Tesorería 12 meses'!B13 = `=IFERROR(-'2. P&L 3 Años'!$B$23/12,\"\")` (idéntica en C13…M13), con B23 = 147.098,00 € anual que ya incorpora '0. Supuestos'!B21 = 14 pagas. Reparto real: 12 meses a 10.507,00 € (= '5. Personal'!F12) más dos pagas extra de 10.507,00 €; la hoja carga 12.258,17 € todos los meses. Desviación en los dos meses de paga extra: -8.755,83 € frente a lo previsto.",
+      "fix": "Repartir por pagas: mes normal = `-'5. Personal'!$F$12`, y en los dos meses de paga extra `-'5. Personal'!$F$12*2` (o `*(1+('0. Supuestos'!$B$21-12)/2)` para que siga los parámetros). El saldo mínimo del año, que hoy es 65.377,80 €, es la cifra que decide si el fondo de maniobra basta."
+    },
+    {
+      "id": "RT-28",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx (dry-run)",
+      "ubicacion": "'3. Punto Equilibrio'!B14 y B10",
+      "hallazgo": "La rama de aviso «Margen de contribución negativo» es código muerto: en este modelo TODOS los costes variables son un porcentaje de las ventas, así que el coste variable por cubierto es una fracción fija del ticket y el margen de contribución no puede ser negativo mientras el ticket sea positivo. La guarda tranquiliza sin proteger.",
+      "evidencia": "'3. Punto Equilibrio'!B10 = `=IFERROR('2. P&L 3 Años'!$B$19/('2. P&L 3 Años'!$B$7*'2. P&L 3 Años'!$B$9),\"\")`, y B19 es la suma de cinco filas todas definidas como `B10 * <tasa>`; por tanto B10(PE) = ticket × Σtasas y B11 = ticket × (1 − Σtasas). Comprobado con pycel bajando el ticket a 4 €: B11 = 2,82 € (sigue positivo), B14 = 87.576 cubiertos, B15 = 282,5 cubiertos/día — el aviso nunca se dispara y lo que sale es un break-even absurdo sin ninguna marca.",
+      "fix": "O bien introducir un coste variable unitario en euros (materia prima por cubierto desde el escandallo, que es lo que un banco espera ver), o bien sustituir la guarda por una que sí pueda saltar: `IF(B15>'2. P&L 3 Años'!$B$7*3,\"Punto de equilibrio fuera del alcance del local\",…)` contra la capacidad de las 56 plazas que declara '0. Supuestos'!C4."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "Mi copia del representante sale TODO VERDE, y eso es precisamente lo que hay que refutar: el verde mide lo que el motor sabe medir. Con openpyxl y pycel salen 28 defectos, 9 de ellos altos. Tres son de los que hacen perder dinero al comprador y ninguno lo ve el gate: (1) el motor ROMPE un formato condicional que en producción estaba bien (grupo_a.py:2364-2371 re-ancla el sqref a A3:F73 y deja la fórmula $E4: todo el resaltado del checklist queda desplazado una fila); (2) con el tipo de interés al 0 % —valor que la propia validación acepta— el cuadro de amortización se apaga entero y la celda «Capital pendiente al vencimiento» certifica en VERDE que se han devuelto 110.000 € que nadie ha devuelto, y con un plazo de 12 años (una línea ICO normal) quedan 25.570,74 € sin amortizar y la hoja acusa al usuario; (3) las validaciones admiten 0 en divisores y en el número de pagas, y como toda división va envuelta en IFERROR, un 0 en «vida útil» sube el resultado antes de impuestos 8.882,50 € y un 0 en «pagas» pone el coste de personal a cero y hace que TODOS los semáforos de Instrucciones digan CUMPLE. A esto se suma que «Varios e imprevistos» (2 % de ventas) vive dentro de COSTES FIJOS: los escenarios pesimista y optimista se mueven al cambiar el caso realista (B18 pasa de -58.466,40 a -61.665,60 € sin tocar sus inputs) y el punto de equilibrio sube con el volumen (67,44 → 68,29 cubiertos/día), defectos que la demostración §2.11.2 no puede ver porque sólo compara la columna Realista. Y el argumento definitivo está fuera del representante: el mismo paquete, sobre el primer hermano de su propia línea (tapas-bar, molde A-β), suspende 9 de sus propios gates y NO ES IDEMPOTENTE — la segunda pasada pone los siete sueldos de la hoja Personal a 1 €. Con la ejecución real prevista en serie y con reintentos, eso es un fichero de producción destruido. Los gates que respaldan el verde tienen agujeros demostrados: gate_formatos salta las celdas de texto (motor.py:2166) y por eso no ve las 51 notas con formato de euro; no hay gate de alturas de fila (10 celdas con wrap recortadas); no hay prueba de libro en blanco (39 celdas imprimen 0 € o 0,0 %); y grupo_a.demos() no filtra por molde, así que los productos de línea B salen con exit 1 por un fallo que no es suyo. No se firma hasta que la idempotencia dé 0 diferencias en los cinco productos de línea A, las demostraciones §2.11 cubran las columnas no realistas y los inputs a 0, y RT-01, RT-06 y RT-07 estén corregidos y re-verificados."
+}

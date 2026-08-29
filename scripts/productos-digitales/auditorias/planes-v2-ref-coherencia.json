@@ -1,0 +1,304 @@
+{
+  "lente": "REFUTADOR de COHERENCIA + CLIENTE ESCÉPTICO — familia Planes v2.0, representante «plan-negocio-bar-restaurante» (línea A, molde A-α). Copia propia generada con `CLAUDE_SCRATCHPAD=…/propio-ref-coherencia python3 planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run` (2026-08-29, 45,8 °C, un proceso cada vez, sin tocar astro-site/public/dl/). Se ha cruzado la copia contra los 93 ids de §8.1 del R1 mapeados a §1-§2, contra las dos hojas «Instrucciones» de los ficheros regenerados, contra el docx vivo y contra la landing (astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts), el dashboard (src/pages/PlanNegocioBarRestauranteDashboard.tsx), productos-changelog.ts y productos-digitales-config.ts. Barrido de no latinos: 0 en los dos xlsx.",
+  "hallazgos": [
+    {
+      "id": "RC-01",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B40 y B41 vs '2. P&L 3 Años'!B26 y B25",
+      "hallazgo": "Doble conteo del primer año de gestoría y de seguros entre la hoja de inversión y el P&L del año 1. La inversión los presupuesta con la etiqueta «primer año» y el P&L los vuelve a cargar como coste fijo del año 1, así que el mismo euro se pide dos veces al banco. Es exactamente el defecto que la SPEC §2.2 pretende cerrar al declarar el Excel «fuente única», y ninguna de las cuatro celdas se cruza con la otra.",
+      "evidencia": "'1. Inversión Inicial'!B40 = 1800 con D40 = '150 EUR/mes' y A40 = 'Alta gestoría + contabilidad primer año'; '2. P&L 3 Años'!B26 = 1800 (rótulo A26 'Gestoría + contabilidad'). '1. Inversión Inicial'!B41 = 2000 con D41 = 'Primer año' y A41 = 'Seguros (RC + multirriesgo + empleados)'; '2. P&L 3 Años'!B25 = '=IFERROR(''0. Supuestos''!$B$27,\"\")' = 2000. Total duplicado 3.800 €, que además se multiplica en el colchón: '1. Inversión Inicial'!B44 = 3 × 253.511,70/12 arrastra 950 € más de esos mismos 3.800 €.",
+      "fix": "O bien reetiquetar B40/B41 como gasto de constitución previo a la apertura y descontarlos del año 1 del P&L, o bien retirarlos de la hoja de inversión y dejar que el fondo de maniobra los cubra. Añadir al gate una comprobación de partidas homónimas entre '1. Inversión Inicial'!A6:A42 y '2. P&L 3 Años'!A22:A39."
+    },
+    {
+      "id": "RC-02",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!A6:A50 (hoja completa)",
+      "hallazgo": "DOM-19 sigue abierto pese a estar mapeado a §2.2. La SPEC ordena literalmente: «Tres partidas que sólo existen en el Word (terraza, stock inicial, imprevistos) se incorporan al Excel, que pasa a ser la fuente única (DOM-19)». Ninguna de las tres está en la hoja. Sin ellas el Excel NO es la fuente única y el docx de T9 no podrá citar la inversión sin volver a inventar partidas: el R1 documentó que ese desglose del Word es uno de los tres que se contradicen.",
+      "evidencia": "Barrido de la hoja regenerada: 0 coincidencias de «terraza» y de «stock» en '1. Inversión Inicial'; «imprevistos» sólo aparece en '0. Supuestos'!A28 ('Varios e imprevistos sobre ventas', gasto recurrente), en '2. P&L 3 Años'!A39 y dentro del texto de '1. Inversión Inicial'!D51 («El fondo de maniobra, el stock y los imprevistos NO se amortizan»), que menciona un stock que la hoja no presupuesta. La hoja pasa de 6 bloques (A6, A13, A24, A34, A38, A43) sin ninguna partida nueva de las tres.",
+      "fix": "Añadir en el bloque LOCAL Y ACONDICIONAMIENTO la partida de terraza (con el mismo interruptor que la licencia de terraza del checklist B23), y crear un bloque STOCK INICIAL E IMPREVISTOS con «Stock inicial de materias primas y bodega» e «Imprevistos (% sobre la inversión, en celda)». Recalcular B45/B47 y volver a comprobar que ninguna de las tres entra en las bases de amortización B49/B50."
+    },
+    {
+      "id": "RC-03",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'6. Tesorería 12 meses'!B5:M5 y '2. P&L 3 Años'!B7 vs /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "hallazgo": "El caso base recalibrado no tiene rampa de apertura: el año 1 se proyecta a velocidad de crucero desde el mes 1. La fila de reparto mensual es una ESTACIONALIDAD (mínimo 6,2 % en agosto, máximo 10,6 % en diciembre, media 8,33 %), no una curva de arranque, así que el mes 1 factura el 7,0 % del año con los 80 cubiertos/día de media. Con eso el negocio nace ya por encima del punto de equilibrio (67,4 cubiertos/día), y es lo único que sostiene el beneficio de 47.213 € del año 1 con el que se declaran CUMPLE los cinco ratios. Es la objeción que un analista de riesgos plantea primero y la que el propio pack contradice.",
+      "evidencia": "'6. Tesorería 12 meses'!B5 = 0,07 · I5 = 0,062 · M5 = 0,106 · N5 = 1,00. '2. P&L 3 Años'!B7 = 80 con rótulo 'Cubiertos/día (media)'. '3. Punto Equilibrio'!B15 = 67,44 y B18 (holgura) = 18,6 %. '6. Tesorería 12 meses'!B20 (saldo mes 1) = 65.377,80, por encima del fondo de maniobra ya en el primer mes. El docx vivo dice «El punto de equilibrio se estima entre los meses 8 y 10 de actividad» y «mejora progresiva hasta alcanzar el 80% de ocupación en horario de cena al cierre del ejercicio»: con este modelo el equilibrio se alcanza el mes 1.",
+      "fix": "Separar la estacionalidad de la rampa: añadir en '0. Supuestos' una celda «Ocupación del mes 1 sobre la de crucero» y una «Meses hasta alcanzar el régimen de crucero», y componer B5:M5 = estacionalidad × rampa normalizada a 1. Después volver a comprobar el semáforo de '2. P&L 3 Años'!B54 y el saldo mínimo B21; si el año 1 entra en pérdidas, aplicar la decisión 17 (entregarlo en pérdidas y decirlo) en vez de suprimir la rampa."
+    },
+    {
+      "id": "RC-04",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!F5, F11, F14, F21, F40, F41",
+      "hallazgo": "Las seis notas legales que JUSTIFICAN la v2.0 (Crea y Crece, IAE, cuota de autónomo, RGSEAA, manipulador derogado, PRL) están escritas con wrapText en una columna de 28 de ancho y un alto de fila de 34 pt, que da para DOS líneas de las 5-8 que necesitan. El cliente ve «El «carnet de manipulador» está derogado (RD 109/2010): la form…» y tiene que ensanchar la fila a mano en un libro protegido. La SPEC §1.8 fija la norma contraria: «height = ceil(len/ancho) × 15 pt».",
+      "evidencia": "Medido sobre el fichero regenerado (openpyxl, celdas NO combinadas, alignment.wrap_text=True): F5 219 caracteres, ancho 28, alto 34 pt, necesita 120 pt · F41 221 → 120 · F14 180 → 105 · F21 150 → 90 · F11 146 → 90 · F40 123 → 75. En las seis, alto real 34 pt.",
+      "fix": "Quitar el tope de 34 pt del post-proceso de alturas y aplicar la fórmula de §1.8 sin recorte (o repartir la nota en dos celdas). Añadir al gate de §9 una comprobación de «wrapText con alto insuficiente» que falle, porque hoy `formatos: 0` no lo mira."
+    },
+    {
+      "id": "RC-05",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!A7 vs '4. Escenarios'!B6:B8/D6:D8, '6. Tesorería 12 meses'!B5:M5 y '7. Financiación'!B8:B11",
+      "hallazgo": "La hoja de instrucciones del libro se contradice con el propio libro en el punto que más importa para usarlo: dice que cuatro hojas son derivadas y «no hay que tocarlas», mientras esas mismas hojas contienen 26 celdas verdes desbloqueadas con validación de datos, que según la convención del fichero («Cambia las celdas VERDES») son precisamente lo que hay que teclear. El escenario pesimista y el optimista, el reparto mensual de la actividad y las cuatro fuentes de financiación alternativas quedan así marcados como intocables.",
+      "evidencia": "'Instrucciones'!A7 = '3. El punto de equilibrio, los escenarios, la tesorería y el cuadro del préstamo se derivan de lo anterior: no hay que tocarlos.' Celdas verdes E8F5E9 y locked=False medidas: '4. Escenarios' B6, B7, B8, D6, D7, D8 (6) · '6. Tesorería 12 meses' B5:M5 (12) · '7. Financiación' B8, B9, B10, B11 con sus notas C8:C11 (8). Total 26.",
+      "fix": "Reescribir A7 nombrando lo que sí es editable en cada una de las tres hojas («el pesimista y el optimista, el reparto mensual y las fuentes alternativas de financiación») y dejando «no hay que tocar» sólo para '3. Punto Equilibrio', que es la única con 0 celdas verdes."
+    },
+    {
+      "id": "RC-06",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!A5 y '0. Supuestos'!B11 vs '2. P&L 3 Años'!E11",
+      "hallazgo": "El mix de comida y bebida —que la hoja de instrucciones anuncia como uno de los datos de mando de «0. Supuestos»— NO es editable en Supuestos: B11 es una fórmula bloqueada que lee el P&L. El input real vive en '2. P&L 3 Años'!E11, en una hoja protegida y a 40 filas de distancia, sin ninguna indicación. Un cliente que siga las instrucciones al pie de la letra no puede cambiar el mix, que es el segundo driver del libro después del ticket.",
+      "evidencia": "'Instrucciones'!A5 = '1. «0. Supuestos» es la hoja de mando: cubiertos, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.' '0. Supuestos'!B11 = '=IFERROR(''2. P&L 3 Años''!$E$11,\"\")' (val 0,65), sin relleno verde y con locked=True (las 34 verdes de la hoja son B4-B8, B13-B18, B20-B22, B24-B28, B30-B35, B37-B42, B44, B45, B48: B11 no está). '2. P&L 3 Años'!E11 = 0,65, verde y con DV decimal entre 0 y 1.",
+      "fix": "Invertir la dependencia: B11 pasa a input verde en '0. Supuestos' con su DV, y '2. P&L 3 Años'!E11 pasa a '=IFERROR(''0. Supuestos''!$B$11,\"\")' sin relleno. Es lo que exige §2.1 («la única entrada de datos del libro») y lo que ya hace el resto de tasas."
+    },
+    {
+      "id": "RC-07",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": "líneas 76, 135 y 235 del .ts + /Users/johnguerrero/chefpro-modernize/src/pages/PlanNegocioBarRestauranteDashboard.tsx línea 18",
+      "hallazgo": "Contradicción NUEVA creada por T1: las 11 hojas del pack salen protegidas (sin contraseña) y sólo 220 celdas quedan desbloqueadas, mientras la landing y el dashboard afirman en tres sitios que «todas las celdas son editables». El comprador que intente cambiar una partida no verde se encuentra un aviso de hoja protegida en el fichero por el que pagó por ser editable. La misma línea 135 vende «Plan Financiero Excel (6 hojas)» cuando el libro pasa a tener 9.",
+      "evidencia": "Fichero regenerado: sheetProtection=True en las 9 hojas del plan financiero y en las 2 del checklist (gate propio: «hojas protegidas: 11/11»). Celdas desbloqueadas: 34 + 60 + 23 + 0 + 6 + 18 + 0 + 12 + 8 = 161 en el financiero y 59 en el checklist. .ts:76 y .ts:235 = 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente'; .ts:135 = 'Plan Financiero Excel (6 hojas)' con desc 'Todas las celdas editables con fórmulas'; Dashboard línea 18 = '…cuadro de personal y hoja de instrucciones. Todas las celdas editables.' Hojas reales: '0. Supuestos', '1. Inversión Inicial', '2. P&L 3 Años', '3. Punto Equilibrio', '4. Escenarios', '5. Personal', 'Instrucciones', '6. Tesorería 12 meses', '7. Financiación'.",
+      "fix": "T10: cambiar las tres frases a «las celdas de entrada están marcadas en verde y el resto se recalcula solo; la hoja va protegida sin contraseña y se desbloquea desde Revisar → Desproteger hoja» y actualizar «(6 hojas)» a «(9 hojas)» con los nombres reales, incluidas Supuestos, Tesorería y Financiación, que son las tres que más venden."
+    },
+    {
+      "id": "RC-08",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'7. Financiación'!B34 (y F24:F33)",
+      "hallazgo": "El control de cierre del cuadro de amortización es inerte. B34 («Capital pendiente al vencimiento — tiene que ser cero: si no, el cuadro no cierra») lee siempre F33, la fila del año 10; para cualquier plazo menor de 10 años esa celda vale «» y B34 devuelve 0 por construcción, no porque el cuadro cierre. La regresión que la decisión 14 heredada exige demostrar (plazo 3 y carencia 3 → capital pendiente final 0) pasa sola aunque el cuadro estuviese roto.",
+      "evidencia": "'7. Financiación'!B34 = '=IFERROR(IF(B17=\"\",\"\",IF(F33=\"\",0,F33)),\"\")' con val=0. Con el caso base (B19=7) el último año activo es la fila 30: F30 = 9,822542779147625e-11, y F31, F32 y F33 valen «» (val None). El formato condicional que semaforiza B34 evalúa por tanto siempre un 0 fabricado.",
+      "fix": "Cambiar B34 por el saldo del último año realmente activo —p. ej. '=IFERROR(IF(B17=\"\",\"\",B17-SUM(D24:D33)),\"\")'— y redondear (ROUND(...,2)) para que el residuo de 9,8e-11 no dispare un semáforo rojo. Volver a correr la demostración 7 de §2.11 con plazo 3 / carencia 3 y con plazo 3 / carencia 2."
+    },
+    {
+      "id": "RC-09",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!A32:A39 (bloque DATOS DE REFERENCIA DEL SECTOR)",
+      "hallazgo": "El post-proceso ha BORRADO del bloque de referencia los tres datos de mercado que sostenían promesas vivas de la landing, en vez de actualizarlos: la inversión media de apertura y las dos tasas de cierre. La landing vende «tasa de cierre del sector en los primeros 3 años» en cuatro sitios y el único soporte que ese claim tenía dentro de un entregable eran esas dos filas. Es una regresión de contenido, no una corrección.",
+      "evidencia": "Fichero v1.1 (producción), 'Instrucciones': A21 = '- Inversion media apertura: 80.000-150.000 EUR', A23 = '- Tasa cierre restaurantes primer ano: 25%', A24 = '- Tasa cierre restaurantes 5 anos: 50%'. Fichero regenerado, bloque A32:A39: sólo quedan ticket medio (B33 '15-22 €'), alquiler (B34), food cost (B35), coste de personal (B36), margen neto (B37), punto de equilibrio (B38) y convenio (B39). Las tres filas no aparecen en ninguna otra celda del libro. Landing .ts:141, :167, :203, :243 siguen prometiendo la tasa de cierre.",
+      "fix": "Devolver las tres filas al bloque con entidad emisora y año (o, si no se pueden fuentear, retirar el claim de la landing en T10, que es lo que exige DOM-21/§5.2). La inversión media hay que reescribirla de todos modos: el propio libro sale ahora en 165.138 €, fuera del rango 80.000-150.000 que la fila declaraba."
+    },
+    {
+      "id": "RC-10",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": ".ts:136, :258 y :151 + /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx vs '1. Inversión Inicial'!B45 y B47",
+      "hallazgo": "Después de T1 hay CUATRO cifras distintas de inversión total conviviendo en el mismo producto, y la del fichero es la más alta de todas. La landing dice ~133K en dos sitios, el testimonio 135K, el Word 80.000-150.000 y también 133.000, y el Excel 165.138 € (184.681 € de caja con el IVA). Es el mismo defecto que DOM-19/§5.2 declaraba cerrado con «una sola cifra, la del xlsx», y T1 lo ha agravado en 32.978 € sin que nada avise.",
+      "evidencia": "'1. Inversión Inicial'!B45 = '=IFERROR(B6+B13+B24+B34+B38+B43,\"\")' = 165.137,93 €; B47 (necesidad de caja) = 184.680,53 €. Fichero v1.1: B46 = 132.160. .ts:136 = '(~133K EUR de referencia para bar-restaurante medio en España)'; .ts:258 = 'Inversión inicial detallada (~133K EUR de referencia)'; .ts:151 (testimonio Alejandro Ruiz) = 'Inversión total: 135K EUR'. Docx vivo: «La inversión total requerida se estima entre 80.000 y 150.000 euros» y, más adelante, «133.000 euros». El salto viene sobre todo del fondo de maniobra, que pasa de 30.000 € a 63.377,93 €.",
+      "fix": "T10: escribir 165.138 € (o 185.000 € de caja) en .ts:136 y .ts:258 y en el JSON-LD, y T9: que el guion cite '1. Inversión Inicial'!B45 y B47 por celda. El testimonio de .ts:151 no se toca (§7-bis.6), pero queda contradiciendo al fichero: subirlo a John como riesgo, porque hasta ahora sólo estaba 2K por encima y ahora está 30K por debajo."
+    },
+    {
+      "id": "RC-11",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B5:B70 y A4/A15/A25/A34/A42/A51/A60 vs .ts:56, :80, :125, :140, :168, :239, :260 y Dashboard:32",
+      "hallazgo": "El checklist pasa a 59 ítems en SIETE fases y la capa de producto sigue diciendo «50+ trámites en 6 fases» en siete sitios de la landing más el dashboard y el email de acceso. El «6 fases» ya no es un redondeo optimista: es falso, y es comprobable abriendo la primera pestaña. Además DOM-32 sigue sin resolverse: la promesa dice «trámites y licencias» y el listado incluye «Pedir reseñas Google a clientes satisfechos» o «Evaluar ROI campaña marketing».",
+      "evidencia": "Recuento sobre el fichero regenerado (COUNTIF(B5:B70,\"?*\") de la propia celda G73): 59 ítems. Cabeceras de fase: A4 'FASE 1…', A15 'FASE 2…', A25 'FASE 3…', A34 'FASE 4…', A42 'FASE 5…', A51 'FASE 6…', A60 'FASE 7: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES DE ABRIR (meses 6-8)'. .ts:140 = 'Checklist Apertura (6 fases)'; .ts:260 = 'Checklist apertura con 50+ trámites en 6 fases'; Dashboard:32 = 'Más de 50 trámites en 6 fases'. B58 = 'Evaluar ROI campaña marketing', B59 = 'Pedir reseñas Google a clientes satisfechos'.",
+      "fix": "T10: escribir «59 tareas y trámites en 7 fases» en los ocho sitios (o fundir la FASE 7 en la FASE 2, ver RC-12, y entonces decir 6 fases). El número se escribe después de contar, como manda §5.2/decisión 13."
+    },
+    {
+      "id": "RC-12",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!A60 frente a A51",
+      "hallazgo": "El cronograma del checklist quedó desordenado al añadir la fase nueva: la FASE 7 se titula «OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES DE ABRIR (meses 6-8)» y va colocada DETRÁS de la FASE 6 «PRIMEROS 90 DÍAS (meses 8-11)». Un checklist se trabaja de arriba abajo: tal como está, el seguro de RC, las hojas de reclamaciones, el registro horario y los boletines de gas se ejecutan después de haber abierto y de haber pasado los primeros 90 días. Y §2.10 pedía además «un cronograma único, el conservador, propagado a las cabeceras de fase y al docx»: el pack sigue con tres (meses 1-11 aquí, «6 meses» y «5-8 meses» en el docx).",
+      "evidencia": "'Checklist Apertura'!A51 = 'FASE 6: PRIMEROS 90 DÍAS (meses 8-11)' (filas 52-59); A60 = 'FASE 7: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES DE ABRIR (meses 6-8)' (filas 61-70). Las diez tareas de la fase 7 llevan plazos 'Antes de abrir', 'Desde el primer contrato', 'Con la obra'. Docx vivo: «El punto de equilibrio se estima entre los meses 8 y 10».",
+      "fix": "Mover el bloque 61-70 delante de la FASE 5 (o repartirlo entre las fases 2, 3 y 4 según su plazo real) y renumerar; si se prefiere no tocar el orden de las filas existentes, al menos renombrar A60 a «FASE 5 bis» y colocarlo antes de marketing. Después fijar el cronograma conservador (meses 1-11) y propagarlo al docx en T9."
+    },
+    {
+      "id": "RC-13",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": ".ts:139 y .ts:195 vs '5. Personal'!A6:A11",
+      "hallazgo": "TEC-27 no sólo sigue abierto: la recalibración de plantilla lo ha empeorado. La landing promete «coste real por jefe de cocina, jefe de sala, cocineros, camareros y ayudantes» y la hoja nueva ha ELIMINADO los dos puestos que la landing nombra y que sí existían en la v1.1: «Cocinero» y «Camarero jefe». El comprador que busque el jefe de sala y los cocineros en la hoja no los encuentra.",
+      "evidencia": "'5. Personal' v1.1: A6 'Gerente / Propietario', A7 'Jefe de cocina', A8 'Cocinero', A9 'Ayudante cocina', A10 'Camarero jefe', A11 'Camarero' (B11=2), TOTAL B13=7 personas / F13=209.171,20 €. Fichero regenerado: A6 'Gerente / Propietario', A7 'Jefe de cocina', A8 'Ayudante de cocina', A9 'Camarero/a de barra y sala', A10 'Camarero/a a tiempo parcial', A11 'Extra de fin de semana'; B12 = 6 personas, G12 = 147.098,00 €. .ts:139 y .ts:195 siguen enumerando «jefe de cocina, jefe de sala, cocineros, camareros y ayudantes».",
+      "fix": "T10: reescribir las dos descripciones con los seis puestos reales de A6:A11. Si se quiere conservar el gancho comercial del «jefe de sala», renombrar A9 en el Excel, pero entonces hay que revisar el salario frente al convenio provincial que el propio libro invoca en A15."
+    },
+    {
+      "id": "RC-14",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": ".ts:139, .ts:195 y .ts:154 vs '0. Supuestos'!B20",
+      "hallazgo": "El tipo de Seguridad Social a cargo de la empresa baja de 33,4 % a 33 % (decisión heredada de kit-gestion-personal, §2.1) y la capa de producto sigue vendiendo el 33,4 % en tres sitios, uno de ellos un testimonio firmado que lo cita como el dato que «le abrió los ojos». Es una cifra que el comprador puede contrastar en dos segundos abriendo la hoja.",
+      "evidencia": "'0. Supuestos'!B20 = 0,33 con rótulo A20 'Seguridad Social a cargo de la empresa'; '5. Personal'!E6 = '=IFERROR(D6*''0. Supuestos''!$B$20,\"\")' = 627,00 sobre D6 = 1900 (33,0 %). .ts:139 y .ts:195 = 'Seguridad Social al 33,4 %'; .ts:154 (testimonio Laura Fernández) = 'El cuadro de personal con Seg. Social al 33,4 % y 14 pagas'.",
+      "fix": "T10: cambiar «33,4 %» por «33 %» en .ts:139 y .ts:195, o mejor por «el tipo de SS en celda editable». El testimonio no se toca (§7-bis.6): registrarlo en §7.2 para John junto con los otros riesgos de testimonios."
+    },
+    {
+      "id": "RC-15",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!D7:D51, '2. P&L 3 Años'!F7:F57 y otras (86 celdas)",
+      "hallazgo": "Después del post-proceso hay 86 celdas cuyo contenido es TEXTO y cuyo number_format es de euro o de porcentaje: toda la columna «Notas» de la hoja de inversión, la columna F de comentarios del P&L y la E de escenarios. Es el mismo defecto de clase que §1.4 persigue (formato por tipo de dato), con el agravante de que muchas de esas notas las genera el propio motor con TEXT(). El gate de §9 lo declara limpio.",
+      "evidencia": "Medido con openpyxl sobre el fichero regenerado: 86 celdas con valor de tipo str y number_format distinto de 'General'/'@'. Ejemplos: '1. Inversión Inicial'!D7 = 'Medio mes de alquiler' con nf '#,##0 €'; D11 = '=IFERROR(\"\"&TEXT(''0. Supuestos''!$B$25,\"0\")&\" meses de renta…\")' con nf '#,##0 €'; D51 = 'El fondo de maniobra, el stock y los imprevistos NO se amortizan…' con nf '#,##0 €'; '2. P&L 3 Años'!F45 con nf '0.0%'. Salida del gate propio: «formatos: 0».",
+      "fix": "En el motor, forzar number_format='General' (o '@') en toda celda cuyo valor evaluado sea texto, después de aplicar la tabla de formatos por fila, y añadir esa comprobación al gate de §9 para que `formatos` deje de dar 0."
+    },
+    {
+      "id": "RC-16",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!D7:D42 (verdes) y D22/D29/D42 (con DV numérica)",
+      "hallazgo": "La convención de familia dice «editables verdes E8F5E9 y desbloqueadas, calculadas sin relleno». El post-proceso ha pintado de verde y desbloqueado la columna de NOTAS de la hoja de inversión: 30 celdas de prosa que el cliente lee como campos de entrada. Y en las tres notas que estaban vacías el motor llegó a colgarles una validación numérica, así que escribir la nota que el color invita a escribir devuelve «Escribe un número mayor o igual que 0».",
+      "evidencia": "Fichero regenerado, hoja '1. Inversión Inicial': 60 celdas con relleno E8F5E9 y locked=False, de las que 30 son de la columna D (D7, D8, D9, D10, D14…D42). DataValidation type='decimal', operator='greaterThanOrEqual', formula1='0', error='Escribe un número mayor o igual que 0.' con sqref que incluye 'D22 D29 D42' — las tres celdas de nota vacías. Mismo patrón en '2. P&L 3 Años' (F11, F51, F53, F54, F55, F56 verdes) y en '7. Financiación' (C8:C11 verdes).",
+      "fix": "Restringir el relleno verde y el desbloqueo a las columnas de importe (B en la hoja 1, B/E en el P&L, B en Financiación) y quitar D22/D29/D42 del sqref de la DV. Si se quiere que las notas sean editables, usar un relleno distinto y documentarlo en 'Instrucciones', porque hoy verde = «esto es un dato»."
+    },
+    {
+      "id": "RC-17",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'0. Supuestos'!B4 y '4. Escenarios'!B6, D6",
+      "hallazgo": "La regla de §1.5 («entero 1-365 en días») se ha aplicado también a los CUBIERTOS. Los tres inputs de cubiertos/día comparten la validación de los días, así que quedan topados en 365 y, sobre todo, el mensaje de error que ve el cliente al escribir un número fuera de rango en el driver principal del modelo es «Los días van de 1 a 365», que no dice nada de cubiertos.",
+      "evidencia": "Fichero regenerado, '0. Supuestos': DataValidation type='whole', operator='between', formula1='1', formula2='365', error='Los días van de 1 a 365.' con sqref = 'B4 B6'. A4 = 'Cubiertos/día (media del año 1)' y A6 = 'Días de apertura al año'. Igual en '4. Escenarios': sqref 'B6 B8 D6 D8' con A6 = 'Cubiertos/día' y A8 = 'Días de apertura al año'.",
+      "fix": "Separar las dos validaciones: días → whole 1-365 con su mensaje; cubiertos → whole >= 0 (o entre 0 y el aforo × rotaciones máximas que ya cita '0. Supuestos'!C4) con el mensaje «Cubiertos servidos al día, de media». Aplica igual a '4. Escenarios'."
+    },
+    {
+      "id": "RC-18",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!B44 y D44",
+      "hallazgo": "El fondo de maniobra —que ahora es el 38,4 % de la inversión total y la partida que más ha crecido— se calcula sobre el TOTAL de costes fijos del P&L, que incluye la amortización contable y los intereses. Una amortización no sale de la caja, así que el colchón operativo pide 2.220,63 € que nadie va a pagar, y su propia nota lo llama «colchón operativo». El efecto se propaga: infla B45, B47, el origen de fondos que hay que pedir al banco y la cifra de inversión que T10 publicará.",
+      "evidencia": "'1. Inversión Inicial'!B44 = '=IFERROR(IF(''0. Supuestos''!$B$35*''2. P&L 3 Años''!$B$40=0,\"\",''0. Supuestos''!$B$35*''2. P&L 3 Años''!$B$40/12),\"\")' = 63.377,93 €. '2. P&L 3 Años'!B40 = 253.511,70 e incluye B37 (amortización) = 8.882,50 y B38 (intereses) = 6.600,00. 3/12 × 8.882,50 = 2.220,63 €. A44 = 'Colchón operativo hasta alcanzar el equilibrio'; D44 = 'Cubre 3 meses de costes fijos del año 1…'. C44 (% sobre inversión) = 38,4 %.",
+      "fix": "Cambiar el numerador a los costes fijos DE CAJA: '=(''2. P&L 3 Años''!$B$40 - ''2. P&L 3 Años''!$B$37) * ''0. Supuestos''!$B$35/12', y ajustar el texto de D44 a «meses de costes fijos de caja (sin amortización)». Los intereses sí son salida de caja y se quedan."
+    },
+    {
+      "id": "RC-19",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'5. Personal'!A6:C12 y '2. P&L 3 Años'!B54",
+      "hallazgo": "El caso base cumple su propio semáforo de labour cost por 0,52 puntos, y lo hace con una plantilla de 5,25 jornadas equivalentes para 310 días de apertura y dos servicios diarios, sin ninguna fila de suplencias, vacaciones ni descansos —que el convenio provincial que el propio libro invoca sí impone—. La cocina queda en dos personas (jefe de cocina y ayudante) para 80 cubiertos/día. Es el punto por el que un analista de riesgos rompe el plan, y basta con que el comprador ajuste los salarios a su convenio para que el semáforo pase a REVISAR.",
+      "evidencia": "'2. P&L 3 Años'!B54 = '=IFERROR(B23/B10,\"\")' = 0,3448 frente al umbral E54 = 0,35 (margen 0,0052). '5. Personal': B6:B11 = 1,1,1,1,1,1 con C6:C11 (jornada) = 1; 1; 1; 1; 0,75; 0,5 → 5,25 jornadas; B12 = 6 y C12 vacía (no hay total de jornadas). '0. Supuestos'!B6 = 310 días. El docx vivo describe «operación en dos turnos… un encargado-jefe de sala…, dos cocineros».",
+      "fix": "Rellenar C12 con la suma de jornadas (5,25) para que la cifra que el banco mira sea visible, añadir una fila de suplencias/vacaciones y volver a evaluar B54; si el ratio se sale del 35 %, aplicar la decisión 17 en el orden que fija (redimensionar por horas de servicio o entregar en pérdidas y decirlo), no dejar el caso base a medio punto del umbral."
+    },
+    {
+      "id": "RC-20",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!A18, A23, A29, D36, A39 y /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx 'Checklist Apertura'!B16, C21, F13, F17",
+      "hallazgo": "El gate de ortografía de §1.7 devuelve 0 pero quedan nueve palabras sin tilde en celdas que el cliente ve, algunas conviviendo con la palabra acentuada en la MISMA celda. TEC-15/COM-23 están mapeados a §1.7 con ámbito FAMILIA(10): el gate sólo mira una lista cerrada (Ano, Espana, Diseno, resenas, desempeno, alergenos, danos, Cataluna, Cumpleanos) y estas no están en ella.",
+      "evidencia": "Fichero regenerado: '1. Inversión Inicial'!A18 = 'Camara frigorifica' (Cámara frigorífica) · A23 = 'Estanterias inox almacen' (Estanterías, almacén) · A29 = 'Molinillo cafe profesional' (café) · D36 = 'Pagina básica + ficha GMB' (Página — con «básica» ya acentuada en la misma celda) · A39 = 'Constitución SL (notaria + registro)' (notaría, con «Constitución» acentuada en la misma celda). Checklist: B16 = 'Busqueda y negociación del local' · C21 = 'Consejeria' · F13 = 'Codigo cuenta cotización' · F17 = 'Revisar clausulas: duración, renta, obras'. (TEC-26 sí está resuelto: F36 = 'Priorizar experiencia hostelería'.)",
+      "fix": "Ampliar la lista del corrector con estas familias (camara, frigorifica, estanterias, almacen, cafe, pagina, notaria, busqueda, consejeria, codigo, clausulas) y, mejor, añadir al gate una heurística de «palabra sin tilde que convive con su forma acentuada en el mismo libro», que es la que caza estas cinco. También «min 1 EUR» → «mín.» en A39 y en el checklist B5."
+    },
+    {
+      "id": "RC-21",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!A6 vs 'Checklist Apertura'!E73",
+      "hallazgo": "La hoja de instrucciones del checklist está escrita para el molde C2 (seis pestañas F1..F6 con un contador por hoja) y este producto es el molde C1, monolítico y con un único contador al pie. El texto promete «el contador de cada bloque», que no existe: si el cliente busca el recuento de la FASE 3 no lo encuentra.",
+      "evidencia": "Fichero regenerado, 'Instrucciones'!A6 = 'El contador de cada bloque cuenta sólo las ✓; las N/A salen del total.' Hoja 'Checklist Apertura': una sola pestaña de tareas, con B73 = 'Ítems completados:', E73 = '=COUNTIF(E5:E70,\"✓\")', F73 = 'de', G73 = '=COUNTIF(B5:B70,\"?*\")-COUNTIF(E5:E70,\"N/A\")'. No hay ninguna otra fórmula COUNTIF en el libro.",
+      "fix": "Reescribir A6 para el molde C1 («El contador del pie cuenta sólo las ✓; las N/A salen del total») o añadir un contador por fase en la columna E de cada cabecera (E4, E15, E25, E34, E42, E51, E60) con COUNTIFS sobre su rango, que es lo que el texto promete y encaja mejor con un checklist de 59 ítems."
+    },
+    {
+      "id": "RC-22",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!A22:F22",
+      "hallazgo": "Al fundir las dos filas duplicadas de RGSEAA (DOM-09) el post-proceso vació la fila pero no la eliminó: queda una fila en blanco con bordes y alto de 22 pt en mitad de la FASE 2, entre el Registro Sanitario y la licencia de terraza. Se ve como una tarea que se ha olvidado de rellenar en el fichero que se vende como «no te dejas nada pendiente».",
+      "evidencia": "Fichero regenerado: A22:F22 todas con valor None, border.bottom.style = 'thin' en las seis y row_dimensions[22].height = 22.0. Las filas 21 y 23 sí tienen tarea (B21 Registro Sanitario autonómico, B23 Licencia de terraza). La celda E22 no está en el sqref de la DV ni en la lista de 59 verdes, así que tampoco es un ítem marcable.",
+      "fix": "Borrar la fila con ws.delete_rows(22) y reescribir las referencias de la fórmula del contador y del formato condicional (hoy E5:E70 y A3:F73), o al menos quitarle los bordes y el alto. Comprobar después que G73 sigue devolviendo 59."
+    },
+    {
+      "id": "RC-23",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio'!A23, '4. Escenarios'!A23, '6. Tesorería 12 meses'!A29 y '7. Financiación'!A46",
+      "hallazgo": "Las cuatro notas explicativas que el post-proceso añade al plan financiero —la que explica cómo leer la tabla de sensibilidad, la que justifica que el realista reproduce el P&L, la del calendario de IVA e IS y la que define el DSCR— están recortadas por el mismo tope de alto que RC-04. La del DSCR es la que un banco lee.",
+      "evidencia": "Medido sobre el fichero regenerado (celdas no combinadas, wrap_text=True): '3. Punto Equilibrio'!A23 189 caracteres, ancho de columna 44, alto 34 pt, necesita 75 · '4. Escenarios'!A23 231 car., ancho 40, alto 44 pt, necesita 90 · '6. Tesorería 12 meses'!A29 275 car., ancho 44, alto 44 pt, necesita 105 · '7. Financiación'!A46 249 car., ancho 44, alto 44 pt, necesita 90.",
+      "fix": "Mismo fix que RC-04: quitar el tope de 34/44 pt, o combinar esas cuatro celdas con sus vecinas vacías de la derecha (A23:F23, A23:E23, A29:N29, A46:F46) y aplicar entonces la fórmula de §1.8 sobre el ancho combinado."
+    },
+    {
+      "id": "RC-24",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!C41 vs F41",
+      "hallazgo": "DOM-26 se ha corregido en la nota pero no en la columna que decide la acción: la fila de PRL sigue asignando el trámite a un «Servicio PRL» externo mientras su propia nota explica que contratar un servicio ajeno no es obligatorio y que el empresario puede asumir la actividad preventiva. La celda que el usuario lee para saber a quién llamar contradice a la que explica la ley.",
+      "evidencia": "'Checklist Apertura'!C41 = 'Servicio PRL' (columna C = 'Responsable'); F41 = 'Obligatorio es el PLAN de prevención, no contratar un servicio ajeno: con menos de 25 trabajadores y un solo centro el empresario puede asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)'. Compárese con C40, donde el mismo post-proceso sí cambió el responsable a 'Titular' al corregir el carnet de manipulador.",
+      "fix": "Cambiar C41 a 'Titular' (o 'Titular / servicio ajeno') y, si se quiere conservar la opción externa, decirlo en B41: 'Plan de prevención de riesgos laborales (asumido por el titular o con servicio ajeno)'."
+    },
+    {
+      "id": "RC-25",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!F11",
+      "hallazgo": "DOM-33 pedía dos cosas y sólo se ha hecho una: la nota del IAE explica la exención por cifra de negocio pero omite la exención adicional de los dos primeros ejercicios para entidades de nueva creación, que es justo la que aplica al comprador de un plan de apertura y la que la SPEC §2.10 mapea a este id. Además el epígrafe cuestionado por TEC-25 (671.4, «restaurantes de dos tenedores») sigue siendo la primera opción para un casual con ticket de 17,20 € sin IVA.",
+      "evidencia": "'Checklist Apertura'!F11 = 'Exento mientras la cifra de negocio no llegue al millón de euros. La elección del epígrafe la valida tu gestor: condiciona inspecciones y licencia'. B11 = 'Alta en el IAE: epígrafe 671.4 (restaurantes de dos tenedores) o 673.1 (servicios de bar especiales), según el peso de la barra'. R1/DOM-33 (fix): «ampliar F11 con la exención adicional de los dos primeros ejercicios para entidades de nueva creación»; R1/TEC-25 (fix): «671.5 restaurantes un tenedor o 673 cafés y bares».",
+      "fix": "Añadir a F11 la exención de los dos primeros períodos impositivos del art. 82.1.b) TRLRHL y ampliar B11 con 671.5 como tercera opción. (Al alargar F11 se agrava RC-04: arreglar antes el alto de fila.)"
+    },
+    {
+      "id": "RC-26",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/src/data/productos-changelog.ts",
+      "ubicacion": "src/data/productos-changelog.ts:962-974 y /Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:288",
+      "hallazgo": "DOM-27/COM-18 siguen exactamente igual y ahora además contradicen al fichero: el changelog anuncia «Revisión completa de los 2 ficheros» cuando el producto entrega 3, se queda en la versión 1.1 y la landing repite «Versión 1.1 · agosto 2026», mientras el propio Excel ya se firma como 2.0 en las dos hojas de instrucciones.",
+      "evidencia": "productos-changelog.ts:963 version: '1.1'; :969 title: 'Revisión completa de los 2 ficheros'. get-download-urls / productos-digitales-config.ts:668-672 declaran 3 ficheros: plan-financiero-bar-restaurante.xlsx, plan-de-negocio-bar-restaurante.docx y checklist-apertura-bar-restaurante.xlsx. .ts:288 updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026'. Fichero regenerado: 'Instrucciones'!A44 = 'Versión 2.0 · agosto 2026 · aichef.pro/plan-negocio-bar-restaurante · info@aichef.pro' (ídem en el checklist, 'Instrucciones'!A11).",
+      "fix": "T10: entrada v2.0 con «los 3 ficheros» y el detalle real (hoja de Supuestos, tesorería a 12 meses, plan de financiación con cuadro francés, 10 trámites nuevos, IS con compensación de BIN), y updateNote a 2.0. Añadir al gate de cierre una comparación entre el recuento del changelog y las claves de `files` de productos-digitales-config.ts."
+    },
+    {
+      "id": "RC-27",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "documento completo, y /Users/johnguerrero/chefpro-modernize/src/pages/PlanNegocioBarRestauranteDashboard.tsx:24-27",
+      "hallazgo": "El docx sigue siendo el de la v1.1 (T9 pendiente) y después de T1 lo que dice ya no es sólo impreciso: es incompatible con el Excel del mismo pack en las seis cifras que el guion de §4.2 obliga a citar. Y la tarjeta del dashboard sigue describiéndolo con un índice que no es el suyo (COM-24). Mientras T9 no corra, el producto entrega un Word que contradice a su propio modelo y que mantiene viva la norma de manipulador inventada.",
+      "evidencia": "Docx vivo: «La inversión total requerida se estima entre 80.000 y 150.000 euros» y «133.000 euros» (Excel: 165.138 €) · «El ticket medio objetivo de 18 a 25 euros» (Excel: 17,20 € sin IVA = 19,58 € con IVA, y 'Instrucciones'!B33 declara el rango del sector en 15-22 €) · «El punto de equilibrio se estima entre los meses 8 y 10 de actividad» (Excel: 67,4 cubiertos/día alcanzados el mes 1) · «La normativa de 2024 refuerza los requisitos de formación del personal manipulador, exigiendo certificado oficial de al menos veinte horas» (checklist F40: derogado por el RD 109/2010) · cifras de facturación sueltas 350.000 / 420.000 / 480.000 / 550.000 / 620.000 euros (Excel B10:D10 = 426.560 / 469.216 / 497.369). Dashboard:25 inventa «descripción del negocio» y «plan de financiación» y omite «Análisis Competitivo» y «Aspectos Legales».",
+      "fix": "T9 tal como está especificado, pero corrigiendo antes el mapa de celdas (ver RC-32) y unificando el rango de ticket del sector entre 'Instrucciones'!B33 y el docx. T10: reescribir Dashboard:25 con los diez Heading 1 reales del docx regenerado y dejar que el gate los compare."
+    },
+    {
+      "id": "RC-28",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": ".ts:141, :167, :203, :243 y :193-207 (BonusSection)",
+      "hallazgo": "Las promesas de «Análisis de Mercado España 2026» siguen sin ningún soporte en los entregables después de T1, y ahora tienen menos que antes (ver RC-09). Se venden cuatro datos concretos —81K+ restaurantes activos, ticket medio por comunidad autónoma, inversión media por tipo de local y tasa de cierre a 3 años— y ninguno existe en los dos xlsx; el «BONUS 2» valorado en 19 € es esa misma promesa. Es el hueco que T9/T10 tienen que cerrar y conviene decir ahora que ningún fichero lo cubre.",
+      "evidencia": "Barrido de los dos xlsx regenerados: 0 celdas con «restaurantes activos», «por comunidad», «CCAA» o «tasa de cierre». Lo único parecido eran 'Instrucciones'!A23-A24 de la v1.1 («Tasa cierre restaurantes primer ano: 25%» / «5 anos: 50%»), que el post-proceso ha eliminado. .ts:141, :167, :203 y :243 mantienen los cuatro datos; .ts:193-207 los vende como BONUS de 19 €. El docx cita 81.000, 210.000 y 355.000 restaurantes en el mismo documento (COM-07).",
+      "fix": "O se produce el contenido (una hoja o una sección del docx con ticket medio por CCAA, inversión media por formato y supervivencia a 1/3/5 años, cada dato con entidad emisora y año, como exige §4.2 §3) o se retira el claim y el BONUS en T10. Lo que no puede quedar es la promesa sin fichero, que es COM-15/DOM-21."
+    },
+    {
+      "id": "RC-29",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+      "ubicacion": "hojas 'F3 - Equipamiento y proveedores carne' y 'F6 - Operativa primer evento y postventa'",
+      "hallazgo": "Defecto de familia que el motor ve y no reporta: dos hojas del checklist de parrillero superan el límite de 31 caracteres de Excel para nombres de pestaña. openpyxl avisa por stderr cada vez que el motor clasifica los 30 xlsx, pero la detección de moldes captura sólo MoldeDesconocido y el aviso se pierde entre la salida. Al reescribir el fichero en T8, Excel puede pedir reparación. El renombrado de §1.7 ya contempla el límite para las hojas que él crea (motor.py:1576 `if len(nuevo) > 31: continue`), pero no revisa las que vienen de origen.",
+      "evidencia": "Ejecución del dry-run: 'UserWarning: Title is more than 31 characters' desde main.py:598 (demo_moldes → openpyxl.load_workbook). Nombres medidos: 'F3 - Equipamiento y proveedores carne' = 37 caracteres y 'F6 - Operativa primer evento y postventa' = 40; el resto de la familia está por debajo (los 30 xlsx clasificados, 12 moldes).",
+      "fix": "Acortar los dos nombres en el módulo de contenido de parrillero (p. ej. 'F3 - Equipo y proveedores' y 'F6 - Primer evento y postventa') reescribiendo las referencias y el índice, y añadir al gate de §9 una comprobación de longitud de nombre de hoja sobre los 30 xlsx."
+    },
+    {
+      "id": "RC-30",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio'!A20 vs B15",
+      "hallazgo": "El párrafo de interpretación, que ahora se genera con TEXT() para que no se desfase (TEC-21), redondea a entero mientras la celda de la que habla muestra un decimal. El cliente lee «67 cubiertos al día» dos líneas debajo de una celda que pone 67,4. El R1 pedía explícitamente TEXTO(B15;\"0,0\").",
+      "evidencia": "'3. Punto Equilibrio'!B15 = '=IFERROR(B14/B12,\"\")' = 67,44018451421367 con number_format '#,##0.0' (muestra 67,4). A20 = '…necesitas servir \"&TEXT(B15,\"0\")&\" cubiertos al día…' → texto evaluado: 'necesitas servir 67 cubiertos al día durante los 310 días que abres'.",
+      "fix": "Cambiar TEXT(B15,\"0\") por TEXT(B15,\"0,0\") (o por REDONDEAR.MAS, que es lo defendible: 67,4 cubiertos no cubren costes, 68 sí)."
+    },
+    {
+      "id": "RC-31",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'7. Financiación'!A15 y varias notas con 'EUR'",
+      "hallazgo": "Restos de dos convenciones tipográficas conviviendo en el mismo libro: el signo menos matemático U+2212 en un rótulo y la abreviatura 'EUR' en cinco notas mientras el resto del libro usa '€'. El U+2212 no está en WinAnsi, así que se pierde en cualquier exportación a PDF con esa codificación, que es el saneado que la propia familia aplica a los docx.",
+      "evidencia": "'7. Financiación'!A15 = 'Diferencia (origen − usos)' con U+2212 (único del libro; el resto de guiones son U+002D o U+2014). Notas con 'EUR' en vez de '€': '1. Inversión Inicial'!D26 'Set 120 EUR/mesa', D27 '120 EUR/ud', D39 'Capital social min 1 EUR (Ley Crea y Crece)', D40 '150 EUR/mes'; checklist F8 '~300-500 EUR' y F9 '~150-200 EUR'.",
+      "fix": "Sustituir U+2212 por un guion normal y homogeneizar 'EUR' → '€' en las seis notas (referenciando los caracteres por escape, como exige la nota de U+202F/U+2011 de la familia)."
+    },
+    {
+      "id": "RC-32",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2-SPEC.md",
+      "ubicacion": "§4.2, tabla «Guion por sección del plan de negocio» (líneas 561-572)",
+      "hallazgo": "El mapa de celdas con el que T9 tiene que escribir el guion quedó OBSOLETO al reestructurar el libro en T1, y no hay nada que lo reconcilie. Seis de las nueve referencias que la SPEC manda citar apuntan hoy a celdas que contienen otra cosa. Si `guion_plan_negocio_bar_restaurante.py` se escribe siguiendo la tabla, el docx publicará el IVA soportado como inversión total, 600 € como resultado neto y los costes fijos como margen — y el gate de cifras de §4.5.3 los dará por buenos porque coincidirán con la celda citada.",
+      "evidencia": "SPEC §4.2 → fichero regenerado: inversión '1!B46' es ahora 'IVA soportado sobre la inversión (recuperable)' = 19.542,60 € (el total es B45 = 165.137,93 y la caja B47 = 184.680,53) · resultado '2!B34:D34' es ahora 'Prevención de riesgos laborales y vigilancia de la salud' = 600 € (el resultado neto es B48:D48) · margen '2!B40' es ahora 'TOTAL COSTES FIJOS' = 253.511,70 (el margen neto es B56) · ratio de personal '2!B39' es ahora 'Varios e imprevistos' = 8.531,20 (el ratio es B54) · plantilla '5!B13' y coste '5!F13' están vacías (son B12 = 6 y G12 = 147.098,00) · payback '6!<fila>' es B27. Sólo coinciden facturación '2!B10:D10', break-even '3!B15' y las dos de marketing/equipamiento de la hoja 1.",
+      "fix": "Antes de T9, publicar el mapa de celdas REAL leyéndolo del fichero (no de la SPEC) y hacer que `guion_<pid>.py` resuelva cada magnitud por el RÓTULO de la fila, no por coordenada, abortando si el rótulo no aparece. Actualizar de paso la tabla de §4.2 y avisar de que en A-β las coordenadas volverán a ser otras."
+    },
+    {
+      "id": "RC-33",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/planes/propio-ref-coherencia/dryrun/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversión Inicial'!C6:C44",
+      "hallazgo": "La columna «% s/inversión» que pide TEC-22 divide entre B45, que incluye el fondo de maniobra (38,4 % del total). El resultado es que los bloques de activo se leen mucho más pequeños de lo que son: el equipamiento de cocina figura como el 15,6 % de la inversión cuando es el 25,3 % del capex real. Un analista que compare el desglose con otro plan lo leerá mal.",
+      "evidencia": "'1. Inversión Inicial'!C13 = '=IFERROR(B13/$B$45,\"\")' = 15,56 % sobre B13 = 25.700 y B45 = 165.137,93. Descontando el fondo de maniobra (B43 = 63.377,93), 25.700/101.760 = 25,3 %. C43 (el propio fondo) = 38,4 %.",
+      "fix": "Añadir una segunda columna de porcentaje sobre el capex (B45−B43) o, más simple, poner la nota en D45 explicando que el fondo de maniobra es el 38,4 % del total y que los porcentajes de bloque se leen sobre la inversión con colchón incluido."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "El motor cierra de verdad la mayor parte de §1-§2 —633 fórmulas nuevas, personal enlazado (B23 = 5. Personal!G12, ratio 34,48 % bajo el techo de 35 %), sin doble conteo de bebida, IS al 15 % con compensación de BIN, break-even derivado (67,4 cubiertos/día) que el escenario Realista reproduce al céntimo (47.213,10 € = P&L B41), tesorería a 12 meses, hoja de financiación con cuadro francés y DSCR, y TEC-26 corregido— pero NO está listo por cinco motivos que se comprueban abriendo el fichero. (1) Coherencia interna rota: el pack cuenta dos veces 3.800 € de gestoría y seguros entre la hoja de inversión y el año 1 del P&L (RC-01), la hoja de instrucciones dice que cuatro hojas «no hay que tocarlas» cuando tienen 26 celdas verdes (RC-05) y que el mix se teclea en Supuestos cuando su input real está en el P&L, en hoja protegida (RC-06). (2) Un id del R1 mapeado a §2.2 sigue sin ejecutar: terraza, stock inicial e imprevistos no se han incorporado al Excel, así que DOM-19 sigue abierto y el Excel todavía no es la fuente única (RC-02). (3) Defensa ante el cliente escéptico: el caso base sólo cumple su semáforo porque no tiene rampa de apertura —el mes 1 factura el 7,0 % del año con los 80 cubiertos/día de crucero, contra los «meses 8-10» que promete el propio Word— y el labour cost queda a 0,52 puntos del techo con 5,25 jornadas para 310 días y dos servicios (RC-03, RC-19). (4) Las seis notas legales que justifican la v2.0 (manipulador, RGSEAA, PRL, Crea y Crece, IAE, cuota de autónomo) se ven recortadas a dos líneas de las 5-8 que necesitan, y el gate de §9 lo declara limpio (RC-04, RC-23); el gate de ortografía también da 0 con nueve palabras sin tilde a la vista (RC-20). (5) T9 arranca con el mapa de celdas de §4.2 obsoleto: seis de las nueve referencias que la SPEC manda citar apuntan hoy a otra magnitud (1!B46 es el IVA, 2!B34 son 600 € de PRL, 2!B40 son los costes fijos), y el gate de cifras las daría por buenas (RC-32). A esto se suma que la capa de producto queda más lejos de la verdad que antes de empezar: 165.138 € de inversión contra los ~133K de la landing y los 135K del testimonio, 59 ítems en 7 fases contra «50+ en 6 fases» en ocho sitios, «todas las celdas editables» sobre 11 hojas protegidas, SS al 33 % contra el 33,4 % anunciado, y dos puestos que la landing vende («jefe de sala», «cocineros») eliminados de la hoja de personal. RC-01, RC-02, RC-03, RC-04, RC-05, RC-06, RC-07, RC-08 y RC-32 son bloqueantes antes de cualquier PLANES_APPLY."
+}
