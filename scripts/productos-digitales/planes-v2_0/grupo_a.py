@@ -834,12 +834,13 @@ class Plan(object):
             if re.search(r'\d+[.,]?\d*\s*%', t):
                 self.anota('Personal: fuera la nota con el porcentaje escrito '
                            'a mano «' + t[:60] + '» (§7-bis.11)')
-        _limpiar_area(ws, cab, ws.max_row, 8)
+        _limpiar_area(ws, cab, ws.max_row, 9)
         # ⚠️ Las cabeceras llevan «(€)» a propósito: `motor.formatos_por_tipo`
         # decide por la CABECERA de la columna, y «Bruto mes» contiene la
         # palabra «mes», que el motor lee como recuento y le quitaría el
         # formato de euro a toda la columna.
-        cabeceras = ('Puesto', 'Personas', 'Bruto mes (€, total del puesto)',
+        cabeceras = ('Puesto', 'Personas', 'Jornada',
+                     'Bruto mes (€, total del puesto)',
                      'Seg. Social a cargo de la empresa (€)',
                      'Coste mes (€, total del puesto)', 'Coste año (€)',
                      'Notas')
@@ -851,17 +852,20 @@ class Plan(object):
         ss = self.p.ref('ss_empresa')
         pagas = self.p.ref('pagas')
         for i, fila in enumerate(plantilla):
-            puesto, personas, bruto, nota, fuente = (list(fila) + [None] * 5)[:5]
+            (puesto, personas, bruto, nota, fuente,
+             jornada) = (list(fila) + [None] * 6)[:6]
             clave = 'p_%d' % i
             rej.add(clave, rot=puesto,
-                    valores={'B': personas, 'C': bruto, 'G': nota or ''},
-                    fmt_B=motor.FMT_ENT, fmt_C=motor.FMT_EUR,
-                    verde=True,
+                    valores={'B': personas, 'C': jornada or 1.0, 'D': bruto,
+                             'H': nota or ''},
+                    verdes=('B', 'C', 'D'),
+                    fmt_B=motor.FMT_ENT, fmt_C=motor.FMT_PCT0,
+                    fmt_D=motor.FMT_EUR,
                     formulas={
-                        'D': (lambda R, k=clave: '=' + R.c(k, 'C') + '*' + ss),
-                        'E': (lambda R, k=clave: '=' + R.c(k, 'C') + '+'
-                              + R.c(k, 'D')),
-                        'F': (lambda R, k=clave: '=' + R.c(k, 'E') + '*'
+                        'E': (lambda R, k=clave: '=' + R.c(k, 'D') + '*' + ss),
+                        'F': (lambda R, k=clave: '=' + R.c(k, 'D') + '+'
+                              + R.c(k, 'E')),
+                        'G': (lambda R, k=clave: '=' + R.c(k, 'F') + '*'
                               + pagas)},
                     fmt=motor.FMT_EUR)
         primero, ultimo = 'p_0', 'p_%d' % (len(plantilla) - 1)
@@ -869,24 +873,29 @@ class Plan(object):
                 formulas=dict(
                     (col, (lambda R, c=col: '=SUM(' + R.c(primero, c) + ':'
                            + R.c(ultimo, c) + ')'))
-                    for col in ('B', 'C', 'D', 'E', 'F')),
+                    for col in ('B', 'D', 'E', 'F', 'G')),
                 fmt=motor.FMT_EUR, fmt_B=motor.FMT_ENT)
         self.pendientes.append(rej)
-        # el bruto/persona NUNCA por debajo del SMI (§2.6)
-        rango = rej.c(primero, 'C') + ':' + rej.c(ultimo, 'C')
+        # El bruto por PERSONA nunca por debajo del SMI (§2.6) — y en las
+        # jornadas parciales, del SMI en PROPORCIÓN a la jornada: sin la
+        # columna «Jornada» el semáforo pintaba de rojo un contrato de 20 h
+        # perfectamente legal.
+        rango = rej.c(primero, 'D') + ':' + rej.c(ultimo, 'D')
         smi = self.p.ref('smi_anual')
-        base = ('IFERROR(' + rej.c(primero, 'C') + '/' + rej.c(primero, 'B')
+        base = ('IFERROR(' + rej.c(primero, 'D') + '/' + rej.c(primero, 'B')
                 + ',0)*' + pagas)
-        motor.semaforo_num(ws, rango, rojo_si=base + '<' + smi + '*IFERROR('
-                           + rej.c(primero, 'B') + '/' + rej.c(primero, 'B')
-                           + ',1)')
+        motor.semaforo_num(ws, rango,
+                           rojo_si=base + '<' + smi + '*'
+                           + rej.c(primero, 'C'))
         fila_nota = rej.ultima + 2
         motor.val(ws, 'A' + str(fila_nota),
                   'Las columnas «Bruto mes», «Seg. Social», «Coste mes» y '
                   '«Coste año» son TOTALES de la fila: en un puesto con dos '
-                  'personas incluyen a las dos. El tipo de Seguridad Social y '
-                  'el número de pagas están en la hoja «0. Supuestos».',
-                  wrap=True)
+                  'personas incluyen a las dos. «Jornada» es el porcentaje '
+                  'sobre la jornada completa del convenio y sirve para '
+                  'comparar el salario con el SMI en proporción. El tipo de '
+                  'Seguridad Social y el número de pagas están en la hoja '
+                  '«0. Supuestos».', wrap=True)
         motor.val(ws, 'A' + str(fila_nota + 1),
                   'El SMI de referencia está en la hoja «0. Supuestos» y es '
                   'el suelo por jornada completa; las jornadas parciales lo '
@@ -895,8 +904,8 @@ class Plan(object):
                   'estatal única.', wrap=True)
         for i, texto in enumerate(pie):
             motor.val(ws, 'A' + str(fila_nota + 2 + i), texto)
-        motor.anchos(ws, {'A': 34, 'B': 10, 'C': 16, 'D': 18, 'E': 16,
-                          'F': 16, 'G': 40})
+        motor.anchos(ws, {'A': 34, 'B': 10, 'C': 10, 'D': 16, 'E': 18,
+                          'F': 16, 'G': 16, 'H': 40})
         motor.print_setup(ws, header_row=cab)
         return rej
 
@@ -927,7 +936,7 @@ class Plan(object):
             nota = ws.cell(row=r, column=col_nota).value if col_nota else None
             fuera.append((rot, int(personas), bruto * personas,
                           nota if isinstance(nota, str) else None,
-                          'leído del fichero (bruto × personas)'))
+                          'leído del fichero (bruto × personas)', 1.0))
         return fuera
 
     # -- §2.2 -------------------------------------------------------------
@@ -1273,7 +1282,7 @@ class Plan(object):
              nota='="El importe mensual está en la hoja de Supuestos; aquí '
                   'se multiplica por doce"')
         fijo('cf_personal', 'Personal (nóminas + Seguridad Social)',
-             (lambda R: '=' + self.rej['personal'].r('total', 'F')),
+             (lambda R: '=' + self.rej['personal'].r('total', 'G')),
              nota='="Sale de la hoja de Personal: es el MISMO número, no una '
                   'estimación aparte"', crece_con_volumen=True)
         fijo('cf_suministros', 'Suministros (luz, agua, gas)',
@@ -1762,10 +1771,20 @@ class Plan(object):
         P = self.p.ref
         estacion = list(self.dato('ESTACIONALIDAD') or ([1.0 / 12] * 12))
 
-        def por_meses(clave, rot, ref_anual, nota=None, signo='', fmt=None):
+        def por_meses(clave, rot, ref_anual, nota=None, signo='', fmt=None,
+                      reparto='peso'):
+            """Reparte un importe anual entre los doce meses.
+
+            `reparto='peso'` sigue la estacionalidad (ventas y compras) y
+            `'lineal'` divide entre doce: las nóminas, el alquiler y la cuota
+            del préstamo NO bajan en agosto, y repartirlos por actividad
+            escondía justo el mes en el que la caja se tensa.
+            """
+            factor = ('*' + '{peso}') if reparto == 'peso' else '/12'
             formulas = dict(
                 (cols[i], (lambda R, c=cols[i], k=clave:
-                           '=' + signo + ref_anual + '*' + R.c('peso', c)))
+                           '=' + signo + ref_anual
+                           + factor.replace('{peso}', R.c('peso', c))))
                 for i in range(12))
             formulas['N'] = (lambda R, k=clave: '=SUM(' + R.c(k, cols[0])
                              + ':' + R.c(k, cols[11]) + ')')
@@ -1793,18 +1812,22 @@ class Plan(object):
         por_meses('p_bebida', 'Compras de bebida (IVA incluido)',
                   pyg.r('cv_bebida') + '*(1+' + P('iva_general') + ')',
                   signo='-')
-        por_meses('p_otros', 'Otros pagos de explotación (IVA incluido)',
-                  '(' + pyg.r('tcv') + '-' + pyg.r('cv_comida') + '-'
-                  + pyg.r('cv_bebida') + '+' + pyg.r('tcf') + '-'
-                  + pyg.r('cf_personal') + '-' + pyg.r('cf_amort') + '-'
-                  + pyg.r('cf_int') + ')*(1+' + P('iva_soportado') + ')',
+        variables_otros = ('(' + pyg.r('tcv') + '-' + pyg.r('cv_comida')
+                           + '-' + pyg.r('cv_bebida') + ')')
+        fijos_caja = ('(' + pyg.r('tcf') + '-' + pyg.r('cf_personal') + '-'
+                      + pyg.r('cf_amort') + '-' + pyg.r('cf_int') + ')')
+        por_meses('p_otros', 'Otros pagos variables (IVA incluido)',
+                  variables_otros + '*(1+' + P('iva_soportado') + ')',
                   signo='-')
+        por_meses('p_fijos', 'Costes fijos de explotación (IVA incluido)',
+                  fijos_caja + '*(1+' + P('iva_soportado') + ')',
+                  signo='-', reparto='lineal')
         por_meses('p_personal', 'Nóminas y Seguridad Social',
-                  pyg.r('cf_personal'), signo='-')
+                  pyg.r('cf_personal'), signo='-', reparto='lineal')
         por_meses('p_int', 'Intereses del préstamo', fin.r('int_1'),
-                  signo='-')
+                  signo='-', reparto='lineal')
         por_meses('p_principal', 'Devolución de principal del préstamo',
-                  fin.r('cap_1'), signo='-')
+                  fin.r('cap_1'), signo='-', reparto='lineal')
         # liquidación trimestral de IVA
         formulas = {}
         for i in range(12):
@@ -1835,13 +1858,11 @@ class Plan(object):
                     [(cols[i], (lambda R, c=cols[i]:
                                 '=(' + pyg.r('cv_comida') + '*'
                                 + P('iva_reducido') + '+' + pyg.r('cv_bebida')
-                                + '*' + P('iva_general') + '+(' + pyg.r('tcv')
-                                + '-' + pyg.r('cv_comida') + '-'
-                                + pyg.r('cv_bebida') + '+' + pyg.r('tcf')
-                                + '-' + pyg.r('cf_personal') + '-'
-                                + pyg.r('cf_amort') + '-' + pyg.r('cf_int')
-                                + ')*' + P('iva_soportado') + ')*'
-                                + R.c('peso', c))) for i in range(12)]
+                                + '*' + P('iva_general') + '+'
+                                + variables_otros + '*' + P('iva_soportado')
+                                + ')*' + R.c('peso', c) + '+' + fijos_caja
+                                + '*' + P('iva_soportado') + '/12'))
+                      for i in range(12)]
                     + [('N', (lambda R: '=SUM(' + R.c('iva_sop', cols[0]) + ':'
                               + R.c('iva_sop', cols[11]) + ')'))]))
         rej.add('iva_liq', rot='Liquidación trimestral de IVA (modelo 303)',
@@ -2457,6 +2478,38 @@ def _mapa(path):
 #: reducido: las tres ramas del impuesto quedan demostradas de una vez.
 DEMO5_CUBIERTOS = 65
 
+#: (input de `0. Supuestos`, valor del ensayo, [(celda observada, sentido)]).
+#: El valor del ensayo se calcula desde el del caso base cuando hace falta.
+DIRECCIONES = (
+    ('cubiertos', lambda v: (v or 55) * 1.2,
+     (('ingresos', 'sube'), ('rai', 'sube'), ('r_personal', 'baja'))),
+    ('ticket_sup', lambda v: (v or 17.0) * 1.2,
+     (('ingresos', 'sube'), ('be_dia', 'baja'), ('r_alquiler', 'baja'))),
+    ('dias_sup', lambda v: (v or 310) - 30,
+     (('ingresos', 'baja'), ('be_dia', 'sube'))),
+    ('coste_comida_sup', lambda v: (v or 0.30) + 0.05,
+     (('cv_comida', 'sube'), ('r_cogs', 'sube'), ('rai', 'baja'))),
+    ('delivery_sup', lambda v: 0.25,
+     (('deliv_pyg', 'sube'), ('rai', 'baja'))),
+    ('alquiler_sup', lambda v: (v or 2900) + 500,
+     (('r_alquiler', 'sube'), ('rai', 'baja'), ('fondo_inv', 'sube'))),
+    ('ss_sup', lambda v: (v or 0.33) + 0.05,
+     (('personal_pyg', 'sube'), ('personal_hoja', 'sube'), ('rai', 'baja'))),
+    ('prestamo_sup', lambda v: (v or 110000) + 40000,
+     (('int1', 'sube'), ('cuota', 'sube'), ('dif', 'sube'), ('rai', 'baja'))),
+    ('plazo_sup', lambda v: (v or 7) + 3,
+     (('cuota', 'baja'), ('cap2', 'baja'))),
+    ('meses_fondo_sup', lambda v: (v or 3) + 3,
+     (('fondo_inv', 'sube'), ('caja', 'sube'), ('saldo_min', 'sube'),
+      ('rai', 'igual'))),
+    ('vida_obra_sup', lambda v: (v or 10) + 10,
+     (('amort', 'baja'), ('rai', 'sube'))),
+    ('crec2_sup', lambda v: (v or 0.10) + 0.10,
+     (('ingresos2', 'sube'), ('ingresos', 'igual'))),
+    ('ipc_sup', lambda v: 0.05,
+     (('tcf2', 'sube'), ('rai', 'igual'))),
+)
+
 
 def demos(carpeta, demos_dir, pid, origen=None):
     """Las 8 demostraciones de §2.11, evaluadas con pycel."""
@@ -2504,7 +2557,7 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'rai': R(pyg, 'RESULTADO ANTES DE IMPUESTOS'),
         'neto': R(pyg, 'RESULTADO NETO'),
         'personal_pyg': R(pyg, 'Personal (nóminas + Seguridad Social)'),
-        'personal_hoja': R(per, 'TOTAL PLANTILLA', 'F'),
+        'personal_hoja': R(per, 'TOTAL PLANTILLA', 'G'),
         'r_personal': R(pyg, 'Coste de personal / Ventas'),
         'u_personal': R(pyg, 'Coste de personal / Ventas', 'E'),
         'deliv_pyg': R(pyg, 'Comisiones de delivery'),
@@ -2520,6 +2573,32 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'saldo_min': R(tes, 'Saldo mínimo del año'),
         'fondo': R(inv, 'Colchón operativo hasta alcanzar el equilibrio'),
         'cierre': R(fin, 'Capital pendiente al vencimiento'),
+        'cv_comida': R(pyg, 'Coste de mercancía — comida'),
+        'r_cogs': R(pyg, 'Coste de mercancía / Ventas'),
+        'r_alquiler': R(pyg, 'Alquiler / Ventas'),
+        'amort': R(pyg, 'Amortización del inmovilizado'),
+        'ingresos2': R(pyg, 'INGRESOS TOTALES (sin IVA)', 'C'),
+        'tcf2': R(pyg, 'TOTAL COSTES FIJOS', 'C'),
+        'cuota': R(fin, 'Cuota anual durante la amortización'),
+        'int1': R(fin, 'Intereses del año 1'),
+        'cap2': R(fin, 'Devolución de principal del año 2'),
+        'dif': R(fin, 'Diferencia (origen − usos)'),
+        'fondo_inv': R(inv, 'Colchón operativo hasta alcanzar el equilibrio'),
+        'caja': R(inv, 'NECESIDAD TOTAL DE CAJA AL ARRANQUE'),
+        'iva_inv': R(inv, 'IVA soportado sobre la inversión (recuperable)'),
+        'ticket_sup': R(sup, 'Ticket medio SIN IVA (€)'),
+        'dias_sup': R(sup, 'Días de apertura al año'),
+        'coste_comida_sup': R(
+            sup, 'Coste de mercancía sobre las ventas de COMIDA'),
+        'alquiler_sup': R(sup, 'Alquiler mensual del local (€)'),
+        'ss_sup': R(sup, 'Seguridad Social a cargo de la empresa'),
+        'prestamo_sup': R(sup, 'Préstamo bancario solicitado (€)'),
+        'plazo_sup': R(sup, 'Plazo del préstamo (años)'),
+        'meses_fondo_sup': R(sup, 'Fondo de maniobra (meses de costes fijos)'),
+        'vida_obra_sup': R(sup, 'Vida útil de obra e instalaciones (años)'),
+        'crec2_sup': R(sup, 'Crecimiento de volumen del año 2'),
+        'ipc_sup': R(sup, 'Subida anual de los costes fijos'),
+        'delivery_sup': R(sup, 'Ventas por delivery sobre el total'),
         'y4': R(fin, None) if False else None,
     }
     faltan = [k for k, v in celdas.items() if v is None and k != 'y4']
@@ -2697,4 +2776,45 @@ def demos(carpeta, demos_dir, pid, origen=None):
         res['fallos'].append('§2.11.8: con el libro en blanco siguen dando '
                              'número (y por tanto semáforo) ' + ', '.join(
                                  falsos))
+    # 9 — CADA input nuevo mueve lo que debe, y en la dirección que debe.
+    # No basta con que «se mueva»: una amortización que sube al alargar la
+    # vida útil o un break-even que sube al subir el ticket son fórmulas mal
+    # puestas que ningún gate de formato detecta.
+    direcciones = []
+    for clave, nuevo_valor, esperado in DIRECCIONES:
+        celda = celdas.get(clave)
+        if celda is None:
+            res['fallos'].append('§2.11.9: no se localiza el input ' + clave)
+            continue
+        valor = nuevo_valor(num(base.get(clave)) if clave in base else None)
+        ruta = os.path.join(demos_dir, 'd9-' + clave + '.xlsx')
+        xln = _pycel(_clon(path, ruta,
+                           [(sup, celda.split('!')[-1], valor)]))
+        for objetivo, sentido in esperado:
+            antes = num(base.get(objetivo))
+            if antes is None:
+                antes = num(_ev(xl, celdas[objetivo]))
+            ahora = num(_ev(xln, celdas[objetivo]))
+            if antes is None or ahora is None:
+                ok = False
+                delta = None
+            else:
+                delta = round(ahora - antes, 4)
+                ok = (delta > 0.005 if sentido == 'sube'
+                      else delta < -0.005 if sentido == 'baja'
+                      else abs(delta) <= 0.005)
+            direcciones.append({'input': clave, 'celda_input': celda,
+                                'valor_nuevo': valor, 'objetivo': objetivo,
+                                'celda_objetivo': celdas[objetivo],
+                                'sentido_esperado': sentido,
+                                'antes': antes, 'despues': ahora,
+                                'delta': delta, 'ok': ok})
+            if not ok:
+                res['fallos'].append(
+                    '§2.11.9: cambiar ' + clave + ' (' + celda + ') NO hace '
+                    'que ' + objetivo + ' (' + celdas[objetivo] + ') '
+                    + sentido + ': ' + str(antes) + ' → ' + str(ahora))
+    res['demostraciones_2_11']['9_direccion_de_cada_calculo'] = {
+        'comprobaciones': direcciones,
+        'ok': all(d['ok'] for d in direcciones)}
     return res

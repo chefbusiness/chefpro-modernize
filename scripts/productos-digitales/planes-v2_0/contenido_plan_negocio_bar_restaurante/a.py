@@ -193,27 +193,31 @@ LINEAS_INGRESO = (
 )
 
 # ==========================================================================
-# §2.6 — plantilla redimensionada (puesto, personas, bruto mes TOTAL, nota)
+# §2.6 — plantilla redimensionada
+# (puesto, personas, bruto mes TOTAL de la fila, nota, fuente, jornada)
+# La JORNADA es el porcentaje sobre la completa del convenio: el semáforo del
+# SMI compara contra el SMI en proporción, así que un contrato de 20 h no
+# aparece en rojo por cobrar menos que una jornada entera.
 # ==========================================================================
 PLANTILLA = (
     ('Gerente / Propietario', 1, 1900,
      'Trabaja en sala: compras, cierre de caja, proveedores y RRSS',
-     'recalibrado (v1.1: 2.200 €)'),
+     'recalibrado (v1.1: 2.200 €)', 1.0),
     ('Jefe de cocina', 1, 1800,
      'Escandallos, pedidos y línea caliente',
-     'recalibrado (v1.1: 2.000 €)'),
+     'recalibrado (v1.1: 2.000 €)', 1.0),
     ('Ayudante de cocina', 1, 1250,
      'Mise en place, fríos y limpieza de cocina. Por encima del SMI de '
-     'jornada completa', 'recalibrado (v1.1: 1.300 €)'),
+     'jornada completa', 'recalibrado (v1.1: 1.300 €)', 1.0),
     ('Camarero/a de barra y sala', 1, 1300,
      'Jornada completa, con el servicio de mediodía y el de noche',
-     'fichero v1.1'),
-    ('Camarero/a a tiempo parcial (30 h)', 1, 1000,
-     'Refuerzo de los dos servicios fuertes. El SMI proporcional de 30 h son '
-     '915 €/mes', 'recalibrado (v1.1: dos camareros a jornada completa)'),
-    ('Extra de fin de semana (20 h)', 1, 650,
-     'Viernes, sábado y domingo. El SMI proporcional de 20 h son 610 €/mes',
-     'parametrizado'),
+     'fichero v1.1', 1.0),
+    ('Camarero/a a tiempo parcial', 1, 1000,
+     'Refuerzo de los dos servicios fuertes, 30 horas semanales',
+     'recalibrado (v1.1: dos camareros a jornada completa)', 0.75),
+    ('Extra de fin de semana', 1, 650,
+     'Viernes, sábado y domingo, 20 horas semanales',
+     'parametrizado', 0.50),
 )
 
 # ==========================================================================
@@ -293,8 +297,11 @@ INSTRUCCIONES = {
         'diferencia sale en rojo, el plan no está financiado.',
     ],
     'referencias': [
+        # ⚠️ sin importe en la frase: `motor.cross_sell_sin_precios` borra los
+        # euros de cualquier línea que hable de un «plan», y se llevaba por
+        # delante el PVP. La cifra vive calculada en «0. Supuestos».
         ('Ticket medio de restaurante casual (PVP)', '15-22 €',
-         'Fichero v1.1. El de este plan son 19,58 € con IVA'),
+         'El PVP equivalente de este plan lo calcula la hoja 0. Supuestos'),
         ('Alquiler de local de 80-120 m² en zona urbana', '2.000-4.500 €/mes',
          'Fichero v1.1'),
         ('Food cost objetivo', '28-32 %', 'Fichero v1.1'),
@@ -316,6 +323,8 @@ CHECKLIST = {
         # DOM-08 / COM-11 — el carnet de manipulador está DEROGADO
         (r'^Carnet de manipulador',
          'Formación en higiene alimentaria de todo el equipo'),
+        # la responsabilidad de la formación es de la EMPRESA, no del empleado
+        (r'^Empleados$', 'Titular'),
         (r'^Obligatorio, online',
          'El «carnet de manipulador» está derogado (RD 109/2010): la '
          'formación la acredita la EMPRESA y se documenta en el plan APPCC'),
