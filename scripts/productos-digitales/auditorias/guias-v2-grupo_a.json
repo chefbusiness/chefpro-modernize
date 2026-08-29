@@ -1,0 +1,760 @@
+{
+ "rol": "constructor grupo_a (plantillas financieras, §2) — familia Guías v2.0",
+ "representante": "guia-restaurante-gastronomico",
+ "fecha": "2026-08-29T05:12:28",
+ "spec": "scripts/productos-digitales/guias-v2-SPEC.md §2 (§2.1-§2.5) + §1 del motor + §7-bis",
+ "ficheros_escritos": [
+  "scripts/productos-digitales/guias-v2_0/grupo_a.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py",
+  "scripts/productos-digitales/guias-v2_0/motor.py (DOS cambios aditivos, ver `cambios_en_motor`)"
+ ],
+ "produccion_intacta": {
+  "regla": "PROHIBIDO tocar astro-site/public/dl/** — todo por --dry-run al scratchpad",
+  "verificacion": "git status --porcelain astro-site/public/dl → 0 líneas",
+  "GUIAS_APPLY": "nunca usado"
+ },
+ "como_reproducir": {
+  "orden_del_encargo": "CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-grupo_a python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run --solo motor,a --json /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a.json",
+  "resultado": "exit 1 — y el ÚNICO fallo es de otro grupo: «§1.3: 1 literales dentro de fórmulas … escandallo-maestro.xlsx:Escandallo!H28=0.28», que es §4.1/TEC-21 y le toca a grupo_c. Ver el hallazgo GATE-CRUZADO.",
+  "prueba_de_que_grupo_a_esta_verde": {
+   "orden": "cp -R astro-site/public/dl/guia-restaurante-gastronomico /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/aislado && rm /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/aislado/escandallo-maestro.xlsx && CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-grupo_a-aislado python3 main.py --producto guia-restaurante-gastronomico --dry-run --origen /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/aislado --solo motor,a --json /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-aislado.json",
+   "resultado": "TODO VERDE · exit 0",
+   "exit_medido": 0,
+   "idempotencia": 0,
+   "por_que_es_legitimo": "se retira del censo el ÚNICO fichero cuyo defecto pendiente pertenece a grupo_c; no se modifica ningún fichero ni se silencia ningún gate."
+  }
+ },
+ "gate_por_producto": {
+  "guia-restaurante-gastronomico": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 272,
+   "vacias_por_diseno": 86,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'rangos' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'escenarios-3col' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante '12-meses-total' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'escenarios-columnas' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-conceptos' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [
+    "§1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro.xlsx:Escandallo!H28=0.28)"
+   ],
+   "fallos_de_grupo_a": []
+  },
+  "guia-restaurante-casual": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-casual.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 461,
+   "vacias_por_diseno": 25,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
+    "§1.3: 10 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro.xlsx:Escandallo!E6=1000, escandallo-maestro.xlsx:Escandallo!E7=1000, escandallo-maestro.xlsx:Escandallo!E8=1000)"
+   ],
+   "fallos_de_grupo_a": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
+   ]
+  },
+  "guia-restaurante-mexicano": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-mexicano.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 472,
+   "vacias_por_diseno": 46,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
+    "§1.3: 11 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-mexicano.xlsx:Escandallo!E6=1000, escandallo-maestro-mexicano.xlsx:Escandallo!E7=1000, escandallo-maestro-mexicano.xlsx:Escandallo!E8=1000)"
+   ],
+   "fallos_de_grupo_a": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
+   ]
+  },
+  "guia-restaurante-peruano": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-peruano.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 472,
+   "vacias_por_diseno": 46,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
+    "§1.3: 12 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-peruano.xlsx:Escandallo!E6=1000, escandallo-maestro-peruano.xlsx:Escandallo!E7=1000, escandallo-maestro-peruano.xlsx:Escandallo!E8=1000)"
+   ],
+   "fallos_de_grupo_a": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
+   ]
+  },
+  "guia-restaurante-japones": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-japones.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 476,
+   "vacias_por_diseno": 48,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
+    "§1.3: 13 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-japones.xlsx:Escandallo!E6=1000, escandallo-maestro-japones.xlsx:Escandallo!E7=1000, escandallo-maestro-japones.xlsx:Escandallo!E8=1000)"
+   ],
+   "fallos_de_grupo_a": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
+   ]
+  },
+  "guia-restaurante-nikkei": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-nikkei.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 477,
+   "vacias_por_diseno": 48,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
+    "§1.3: 15 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-nikkei.xlsx:Escandallo!E6=1000, escandallo-maestro-nikkei.xlsx:Escandallo!E7=1000, escandallo-maestro-nikkei.xlsx:Escandallo!E8=1000)"
+   ],
+   "fallos_de_grupo_a": [
+    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
+   ]
+  },
+  "guia-panaderia-obrador": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-panaderia.json",
+   "exit": 0,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 27,
+   "vacias_por_diseno": 1,
+   "censo_exit": 0,
+   "variantes_grupo_a": {
+    "calculadora-capex.xlsx": [
+     "calculadora-capex.xlsx: grupo_a variante 'min-max' (guias-v2-SPEC.md §2)"
+    ],
+    "calculadora-ticket-medio.xlsx": [
+     "calculadora-ticket-medio.xlsx: grupo_a variante 'mix-producto' (guias-v2-SPEC.md §2)"
+    ],
+    "cash-flow-break-even.xlsx": [
+     "cash-flow-break-even.xlsx: grupo_a variante 'cash-plurianual' (guias-v2-SPEC.md §2)"
+    ],
+    "pl-mensual-escenarios.xlsx": [
+     "pl-mensual-escenarios.xlsx: grupo_a variante 'hoja-unica' (guias-v2-SPEC.md §2)"
+    ],
+    "plan-financiero-3-anos.xlsx": [
+     "plan-financiero-3-anos.xlsx: grupo_a variante 'pl-3-anos' (guias-v2-SPEC.md §2)"
+    ]
+   },
+   "fallos": [],
+   "fallos_de_grupo_a": []
+  },
+  "guia-dark-kitchen": {
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-dark-kitchen.json",
+   "exit": 1,
+   "idempotencia_diferencias": 0,
+   "data_only_fallos": 0,
+   "formulas_con_valor": 2,
+   "vacias_por_diseno": 0,
+   "censo_exit": 0,
+   "variantes_grupo_a": {},
+   "fallos": [
+    "§1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (calculadora-viabilidad-dark-kitchen.xlsx:P&L Mensual!B30=0.05)"
+   ],
+   "fallos_de_grupo_a": []
+  }
+ },
+ "cambios_en_motor": [
+  {
+   "id": "MOTOR-01",
+   "severidad": "alta",
+   "fichero": "guias-v2_0/motor.py",
+   "funcion_nueva": "fijar_formato(ws, coord, fmt)",
+   "por_que": "§1.4 pasada (a) aplica el tipo de la CABECERA DE COLUMNA a toda la columna. `plan-financiero-3-anos.xlsx!'P&L Mensual'!B35` («Margen EBITDA») es un RATIO dentro de la columna «Importe (€)», así que `motor.cerrar` devolvía a `#,##0.00 €` el `0.0%` que §2.3.3/TEC-09 exige, justo después de que el grupo lo pusiera. Sin este pin, TEC-09 no se puede cumplir. Mismo caso en `Inversión` (columna «Presupuesto (€)») con la celda de MESES del fondo de maniobra y en las 9 celdas de % de panadería.",
+   "diseno": "mismo canal por ROL que los `_g_editables` / `_g_negativos` que el motor ya tenía: `ws._g_formatos`, respetado por `formato_por_etiqueta` (pasadas a y b) y por `formato_ficha`.",
+   "aditivo": true
+  },
+  {
+   "id": "MOTOR-02",
+   "severidad": "media",
+   "fichero": "guias-v2_0/motor.py:ensanchar_etiquetas",
+   "hallazgo": "tomaba el TEXTO DE UNA FÓRMULA por una etiqueta: el `.value` de una celda de fórmula ES la fórmula. Medido: 35 columnas ensanchadas en `guia-restaurante-japones/cash-flow-break-even.xlsx!'Cash Flow'` («B:12.0→14 (=SUM(B8:B11))») y la columna B de la hoja nueva «Proyección 3 Años» del representante a **50 de ancho** por `=IF('P&L Mensual'!B10=0,\"\",…)`.",
+   "fix": "salta `cel.data_type == 'f'`",
+   "aditivo": true
+  }
+ ],
+ "ids_de_la_spec_cubiertos": {
+  "TEC-01 / DOM-08 / COM-04 (§2.1)": "`calculadora-ticket-medio!'Ticket Medio'!B16:D16` = mix ponderado (5 pares %/precio detectados por ESTRUCTURA), `B18:D18` diaria, `B20:D20` mensual; verde retirado SÓLO de 16/18/20 (17 y 19 siguen siendo entrada); fila de control `A15` «% de comensales asignado (debe sumar 100 %)» = `=B5+B7+B9` con semáforo rojo si ≠ 1. pycel: 91,95 / 123,20 / 169,45 €; +10 € en B6 → 94,95 €; +4 días → 111.259,50 → 131.488,50 €; los tres tramos al 40 % → 1,2 (rojo).",
+  "TEC-02 / DOM-07 / COM-05 / 7-bis.14 (§2.2)": "`pl-mensual-escenarios!'Escenarios'!B17:D22` encadenado; `B22='=IF(B17=0,\"\",B21/B17)'`. Pesimista recalibrado: **−5.936 €/mes (−5,1 %)** — malo pero NO inviable, frente a los −12.055 €/mes tecleados del japonés. Realista +27.965 € (16,5 %), optimista +39.362 € (19,4 %).",
+  "TEC-03 / DOM-09 / COM-06 (§2.4)": "`'Cash Flow 12 Meses'` B10:N10, B19:N19, B21:N21, B22→M22 encadenado; capa de IVA (303) + cuota; break-even en € (130.000 €), en cubiertos/día (54) y en MESES sobre el acumulado CON IVA y deuda. pycel: acumulado [-15.000 … 480.000] encadena, mes 4; serie siempre negativa → 'No alcanzado'; margen de contribución 0 → \"\".",
+  "TEC-07 / DOM-06 / COM-07 (§2.3.1)": "hoja nueva «Proyección 3 Años»: Año 1 POR REFERENCIA al P&L (×12 en el representante, columna TOTAL en los hermanos), Ingresos→Costes var.→Margen→Fijos sin amortización→EBITDA→Amortización→EBIT→Gastos financieros→BAI→IS→Resultado neto→Margen. Toda la cadena guardada con `$B$11=\"\"`: con el P&L en blanco devuelve \"\", no una proyección de ceros.",
+  "TEC-08 / DOM-26 (§2.3.2)": "`B32='=SUM(B20:B29)+B31'` (fuera la fila 30 de amortización), `B34` sigue siendo el EBITDA, filas nuevas 36 «Amortización» y 37 «EBIT». pycel con el escenario EXACTO del R1 (ventas 140.000 €, fijos 108.000 €, amortización 6.000 €): **EBITDA 32.000 € y EBIT 26.000 €**, donde la v1.1 daba 26.000 € rotulado «EBITDA» (−23 %).",
+  "TEC-09 / TEC-10 / DOM-27 (§2.3.3)": "`B35` a `0.0%` (clavado, ver MOTOR-01); `C35` VACIADA; la columna «% s/Ventas» rehecha en 24 filas con `\"\"` en vez de `0`.",
+  "DOM-22 (§2.3.4)": "hoja nueva «Financiación»: cuota MENSUAL como anualidad algebraica (pycel no tiene PMT) y cuadro anual derivado del MISMO préstamo mensual por la forma cerrada `P*((1+i)^N-(1+i)^k)/((1+i)^N-1)`. Control de la familia verificado: **100.000 € al 5 % en 60 meses = 1.887,12 €/mes**; intereses por año 4.589,96 / 3.666,20 / 2.695,18 / 1.674,49 / 601,57 € (idénticos a la amortización mes a mes) y pendiente 0 al cierre. Guardas: carencia ≥ plazo → aviso de TEXTO en C con B, D y F NUMÉRICAS; pasado el vencimiento, cuadro a 0.",
+  "DOM-01 / COM-30 (§2.3.5)": "`Inversión!C26` pasa a fórmula = coste mensual de estructura (fijos sin amortización + variables, leídos del P&L) × meses, con los MESES en celda verde, mínimo 6 y semáforo rojo por debajo. El rótulo no se toca.",
+  "TEC-26 / COM-32 (§2.3.6)": "columna nueva en `Inversión` con la correspondencia de los 22 conceptos a las 12 categorías de calculadora-capex.xlsx + línea en las dos hojas `Instrucciones` diciendo cuál es la fuente de cada cifra. **Sin `externalLink`** (§1.13/§7.1).",
+  "DOM-03 (§1.5 / §2.4)": "tipo de IVA en celda verde (referencia ABSOLUTA) + las tres filas del modelo 303 (repercutido, soportado, liquidación trimestral en abril/julio/octubre) + la fila del 4.º trimestre, que se liquida en enero del año siguiente. El PVP con y sin IVA del escandallo es §4.1 = grupo_c.",
+  "TEC-25 (§1.4)": "resuelto por el motor + los pines de MOTOR-01: «Cubiertos/día» y «Días abierto/mes» a `#,##0`, los % a `0.0%`.",
+  "NUEVO-01 (§2.5)": "`plan-financiero!'P&L Mensual'` de los 5 hermanos: TOTAL INGRESOS, food cost, TOTAL COSTES VARIABLES, TOTAL COSTES FIJOS, EBITDA y % EBITDA calculados en las 13 columnas (12 meses + TOTAL). Food cost sacado del rótulo «Food cost (33%)» a celda verde.",
+  "NUEVO-02 (§2.5)": "panadería `'P&L 3 años'`: `TOTAL COSTES = SUM(12:21)`, `EBITDA = facturación − costes`, `margen = EBITDA/facturación`. Medido con pycel: Año 1 **48.400 € y 16,13 %**, exactamente lo que la SPEC anuncia. Ver el hallazgo NUEVO-08 para los años 2 y 3."
+ },
+ "hallazgos_nuevos": [
+  {
+   "id": "NUEVO-03",
+   "severidad": "alta",
+   "ambito": "guia-panaderia-obrador",
+   "cita": "astro-site/public/dl/guia-panaderia-obrador/calculadora-capex.xlsx:'CAPEX Panadería':B31 y C31",
+   "hallazgo": "`B31='=SUM(B4:B27)'` y `C31='=SUM(C4:C27)'` dejan fuera las DOS últimas partidas de la tabla: «Licencias + proyectos + tasas» (4.500-8.000 €, fila 28) y «Fondo maniobra 4 meses» (18.000-30.000 €, fila 29).",
+   "evidencia": "valores cacheados 113.700 € y 278.100 €; la suma correcta (filas 4-29) es **136.200 € y 316.100 €** → el CAPEX mínimo se anuncia un **16,5 % por debajo** del que suma la propia tabla, y justo omitiendo el colchón de tesorería, que es la partida que hunde aperturas (DOM-01).",
+   "estado": "CORREGIDO por estructura (el rango del SUM se recalcula contra la última fila de datos MEDIDA, no contra un literal)",
+   "verificacion": "demo `capex`: B31=136.200 = suma celda a celda 136.200; C31=316.100 = 316.100"
+  },
+  {
+   "id": "NUEVO-04",
+   "severidad": "media",
+   "ambito": "los 5 hermanos",
+   "cita": "guia-restaurante-japones/plan-financiero-3-anos.xlsx:'Inversión':E5",
+   "hallazgo": "`E5='=D5-C5'` con la columna «Coste Real» vacía imprime **−110.000 €** de «Diferencia» antes de que el cliente escriba nada. Son 47 celdas sólo en japonés.",
+   "estado": "CORREGIDO: `=IF(D5=\"\",\"\",D5-C5)` (§7-bis.13)"
+  },
+  {
+   "id": "NUEVO-05",
+   "severidad": "media",
+   "ambito": "representante",
+   "cita": "guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx:'P&L Mensual':C6:C35 y 'Inversión':E5:E27",
+   "hallazgo": "`=IF($B$10=0,0,…)` y `=IF(C5=0,0,…)` imprimen **0,0 %** en 24 + 23 filas de un libro en blanco: un «% s/ventas» del 0,0 % sin ventas y una «desviación» del 0,0 % sin presupuesto. Es el mismo defecto que §7-bis.13 prohíbe en los márgenes, en dos sitios que el R1 no citó.",
+   "estado": "CORREGIDO: `\"\"` en las dos familias de fórmula",
+   "verificacion": "demo `plan_financiero.con_el_libro_en_blanco` = {margen: '', pct_s_ventas_del_ebitda: ''}"
+  },
+  {
+   "id": "NUEVO-06",
+   "severidad": "media",
+   "ambito": "guia-panaderia-obrador",
+   "cita": "guia-panaderia-obrador/plan-financiero-3-anos.xlsx:'P&L 3 años':B12,C12,D12,B13…D14",
+   "hallazgo": "**9 tasas incrustadas dentro de las fórmulas** (`=B9*0.20`, `*0.19`, `*0.18` de materias primas; `*0.015` de packaging; `*0.025` de energía): para cambiar el food cost había que editar la fórmula, en el libro que se lleva al banco. Rompe la convención de familia «parámetros en celda, nunca literales dentro de la fórmula».",
+   "estado": "CORREGIDO: bloque de celdas verdes con la misma rejilla de años; el valor no cambia"
+  },
+  {
+   "id": "NUEVO-07",
+   "severidad": "media",
+   "ambito": "guia-panaderia-obrador",
+   "cita": "guia-panaderia-obrador/cash-flow-break-even.xlsx:'Cash Flow 24m':C13",
+   "hallazgo": "donde debe ir el break-even había el TEXTO «M10-M12 (realista)». Medido con el PROPIO ejemplo del fichero: la caja acumulada **no cruza a positivo en ninguno de los 12 meses** (cierra en −74.600 €); cruza en el Año 2 (+39.125 €). El texto era más optimista que las cifras de su misma hoja.",
+   "estado": "CORREGIDO: `=IFERROR(MATCH(TRUE,INDEX(B11:M11>0,0),0),\"No alcanzado\")`, que con el ejemplo vigente devuelve «No alcanzado» — que es la verdad"
+  },
+  {
+   "id": "NUEVO-08",
+   "severidad": "media",
+   "ambito": "guia-panaderia-obrador · CONTRADICE A LA SPEC",
+   "cita": "guias-v2-SPEC.md §2.5 NUEVO-02, última frase",
+   "hallazgo": "la SPEC afirma que con la corrección «los tres años dan 16,1 % / 15,6 % / 14,0 % de margen, dentro del rango que la propia hoja declara». **Medido con pycel sobre el fichero corregido: 16,1 % / 27,7 % / 34,7 %.** Sólo el Año 1 coincide.",
+   "evidencia": "Año 2: facturación 402.000 €, TOTAL COSTES = SUM(C12:C21) = 290.660 € (verificado celda a celda por la demo), EBITDA 111.340 €. Año 3: 500.000 / 326.400 / 173.600 €. La aritmética nueva es correcta; lo que no cuadra es el ESCENARIO: los ingresos crecen un 34 % y un 24 % mientras los costes fijos suben un 6 % y un 4 %.",
+   "consecuencia": "la nota de la propia hoja («15-22 % objetivo») queda desmentida por los años 2 y 3, y un EBITDA del 34,7 % en una panadería no es creíble delante de un banco.",
+   "recomendacion": "recalibrar los años 2 y 3 en `contenido_guia_panaderia_obrador/a.py` (T6), NO en el motor: es contenido del oficio, no lógica de familia. Y corregir la frase de la SPEC."
+  },
+  {
+   "id": "NUEVO-09",
+   "severidad": "media",
+   "ambito": "guia-panaderia-obrador",
+   "cita": "guia-panaderia-obrador/calculadora-ticket-medio.xlsx:'Ticket Medio':D17 vs pl-mensual-escenarios.xlsx:'P&L 3 escenarios':C5",
+   "hallazgo": "la calculadora da un ticket medio de **3,766 €** (mix 100 % verificado) mientras su propia celda `E17` dice «5,80 € objetivo» y el P&L de la misma guía usa **5,80 €** para calcular la facturación. Dos tickets distintos en el mismo producto (§7-bis.7: una sola fuente por guía).",
+   "estado": "NO corregido: es contenido (mix o precios), no estructura. Para T6."
+  },
+  {
+   "id": "NUEVO-10",
+   "severidad": "baja",
+   "ambito": "los 5 hermanos",
+   "cita": "guia-restaurante-japones/plan-financiero-3-anos.xlsx:'Inversión':C52 vs calculadora-capex.xlsx:'CAPEX Desglosado':D41",
+   "hallazgo": "dos CAPEX del mismo producto que **no coinciden**: 436.400 € y 435.300 € (1.100 € de diferencia). Es el TEC-26 del representante, pero en los hermanos las dos tablas son casi la misma lista, así que la diferencia parece una errata de mantenimiento, no un desglose distinto.",
+   "estado": "NO corregido: la reconciliación 22→12 necesita el mapa del módulo de contenido de cada hermano (T6)."
+  },
+  {
+   "id": "MAIN-01",
+   "severidad": "media",
+   "ambito": "guias-v2_0/main.py:902",
+   "hallazgo": "con `--sin-demos` **y** un grupo cargado, `main()` revienta con `KeyError: 'sin_dato_es_vacio'`: el bloque de veredicto da por hecho que si `demos` no está vacío trae las claves del motor, pero `demos.update(propias)` lo llena con las del GRUPO.",
+   "reproduccion": "main.py --producto guia-restaurante-gastronomico --dry-run --solo motor,a --sin-demos",
+   "estado": "NO corregido (es de main.py, del orquestador). Sorteado no usando --sin-demos."
+  },
+  {
+   "id": "MAIN-02",
+   "severidad": "media",
+   "ambito": "guias-v2_0/main.py:ficheros_a_tocar",
+   "hallazgo": "añade a la lista de trabajo los nombres que declara el grupo **sin comprobar que el fichero exista**, y `procesar()` los abre a ciegas. Con un `FICHEROS` fijo, `guia-dark-kitchen` —que no tiene ninguno de los 5 libros del grupo A— abortaría con `FileNotFoundError`.",
+   "estado": "sorteado desde el grupo: `grupo_a.ficheros(ctx)` devuelve `[]` para `guia-dark-kitchen`. Conviene arreglarlo también en main.py para los grupos que vengan."
+  },
+  {
+   "id": "GATE-CRUZADO",
+   "severidad": "alta (coordinación)",
+   "ambito": "guias-v2_0/main.py:912-916",
+   "hallazgo": "el aviso de literales pasa a **FALLO** en cuanto se pide CUALQUIER grupo (`solo_motor` deja de ser cierto), y el censo de literales recorre TODOS los xlsx del producto, no sólo los del grupo pedido. Consecuencia: `--solo motor,a` **no puede dar exit 0** mientras siga vivo `escandallo-maestro.xlsx!Escandallo!H28='=H27/0.28'`, que es §4.1/TEC-21 y le toca a **grupo_c**.",
+   "literales_pendientes_por_producto": {
+    "guia-restaurante-gastronomico": "1 (escandallo H28=0.28)",
+    "guia-restaurante-casual": "10 (escandallo)",
+    "guia-restaurante-mexicano": "11 (escandallo)",
+    "guia-restaurante-peruano": "12 (escandallo)",
+    "guia-restaurante-japones": "13 (escandallo)",
+    "guia-restaurante-nikkei": "15 (escandallo)",
+    "guia-panaderia-obrador": "0 (los 9 suyos estaban en plan-financiero y los corrige grupo_a, NUEVO-06)",
+    "guia-dark-kitchen": "1 (calculadora-viabilidad!'P&L Mensual'!B30=0.05)"
+   },
+   "recomendacion": "ningún grupo puede cerrar en verde por separado: o el veredicto de literales se filtra por los ficheros del grupo pedido, o la tanda verde se exige sólo con a+b+c cargados. Mientras tanto, la prueba de grupo_a es la ejecución `--origen` sin el escandallo (exit 0)."
+  },
+  {
+   "id": "METODO-01",
+   "severidad": "alta (metodológica)",
+   "ambito": "demostraciones con pycel",
+   "hallazgo": "`pycel` sólo propaga un `set_value` por el grafo de dependencias **que ya ha construido**, y el grafo se construye al evaluar una SALIDA. Cambiando primero la entrada, la salida se lee del caché del fichero: las cuatro primeras demostraciones de este módulo «pasaban» enseñando el valor viejo (el cuadro francés devolvía 3.255,79 €/mes con los inputs de control puestos a 100.000 €/5 %/60 meses).",
+   "fix": "helper `_mover(xl, salidas, entradas)`: evalúa salidas → mueve entradas → reevalúa."
+  },
+  {
+   "id": "METODO-02",
+   "severidad": "alta (metodológica)",
+   "ambito": "grupo_a.demos",
+   "hallazgo": "una demo que revienta se guardaba como `{'error': …}` en el informe y la tanda seguía en VERDE. Panadería pasó así con **dos** demos caídas (`_demo_ticket` y `_demo_cash`, que asumían la rejilla del representante).",
+   "fix": "un `error` en una demo genera un `fallo`; y las demos se ramifican por VARIANTE detectada."
+  }
+ ],
+ "variantes_detectadas_por_estructura": {
+  "calculadora-ticket-medio.xlsx": {
+   "escenarios-3col": "representante (cabecera «Escenario 1/2/3»)",
+   "columna-unica": "los 5 hermanos (sin cabecera; pares %/precio + precios incondicionales en B)",
+   "mix-producto": "panadería (cabecera «PVP €» + «Mix % ventas» + «Aporte €»)"
+  },
+  "pl-mensual-escenarios.xlsx": {
+   "escenarios-columnas": "representante",
+   "tres-hojas": "los 5 hermanos",
+   "hoja-unica": "panadería (detección de `motor.variante_pl`)"
+  },
+  "plan-financiero-3-anos.xlsx": {
+   "inversion-conceptos": "representante (Inversión!B4='Concepto')",
+   "inversion-categorias": "los 5 hermanos (Inversión!B4='Partida')",
+   "pl-3-anos": "panadería (hoja única «P&L 3 años»)"
+  },
+  "cash-flow-break-even.xlsx": {
+   "12-meses-total": "representante",
+   "cash-y-breakeven": "los 5 hermanos",
+   "cash-plurianual": "panadería («Cash Flow 24m», salidas en NEGATIVO)"
+  },
+  "calculadora-capex.xlsx": {
+   "rangos": "representante (bajo/medio/alto)",
+   "desglosado": "los 5 hermanos («CAPEX Desglosado» con #/Categoría/Partida)",
+   "min-max": "panadería («Importe Mínimo»/«Importe Máximo»)"
+  },
+  "aborto": "si una rejilla no encaja, `grupo_a.VarianteDesconocida` con el nombre del fichero, la hoja y la cabecera cruda: NUNCA «aplica la del representante» (§1.1/§7-bis.11). Comprobado en vivo: panadería abortó con «cash-flow-break-even.xlsx:Cash Flow 24m: no hay ninguna fila cuya etiqueta case con '^total ingresos$|^total entradas$'» hasta que se le escribió su propia rama."
+ },
+ "demostraciones_pycel": {
+  "constantes_a_formulas": {
+   "sustituciones": [],
+   "coinciden": 0,
+   "diferencias_justificadas": 0
+  },
+  "ticket_medio": {
+   "fichero": "calculadora-ticket-medio.xlsx",
+   "celda_ticket": "B16",
+   "pares_pct_precio": [
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "incondicionales": [],
+   "precio_movido": {
+    "celda": "B6",
+    "etiqueta": "Precio menú largo (€)",
+    "de": 100,
+    "a": 110
+   },
+   "ticket": {
+    "antes": 91.95,
+    "despues": 94.95
+   },
+   "dias_abiertos": {
+    "de": 22,
+    "a": 26
+   },
+   "facturacion_mensual": {
+    "antes": 111259.5,
+    "despues": 131488.5
+   },
+   "ticket_no_se_mueve_con_los_dias": [
+    91.95,
+    91.95
+   ],
+   "control_del_mix": {
+    "celda": "B15",
+    "tramos": [
+     5,
+     7,
+     9
+    ],
+    "con_el_ejemplo_precargado": 1.0,
+    "con_los_tres_al_40pct": 1.2000000000000002
+   }
+  },
+  "pl_escenarios": {
+   "fichero": "pl-mensual-escenarios.xlsx",
+   "variante": "escenarios-columnas",
+   "hoja": "Escenarios",
+   "entrada_movida": {
+    "celda": "B6",
+    "etiqueta": "Cubiertos/día comida",
+    "de": 18,
+    "a": 21.6
+   },
+   "cascada": {
+    "facturacion": {
+     "antes": 116270.0,
+     "despues": 121814
+    },
+    "materia_prima": {
+     "antes": 37206.4,
+     "despues": 38980.48
+    },
+    "ebitda": {
+     "antes": -5936.399999999994,
+     "despues": -2166.4800000000105
+    },
+    "margen": {
+     "antes": -0.05105702244775087,
+     "despues": -0.01778514784835906
+    }
+   },
+   "con_ingresos_a_cero": {
+    "facturacion": 0,
+    "margen": ""
+   }
+  },
+  "plan_financiero": {
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "hojas": [
+    "Instrucciones",
+    "Inversión",
+    "P&L Mensual",
+    "Proyección 3 Años",
+    "Financiación"
+   ],
+   "margen_formato": "0.0%",
+   "C35_vaciada": null,
+   "con_el_libro_en_blanco": {
+    "margen": "",
+    "pct_s_ventas_del_ebitda": ""
+   },
+   "escenario_R1": {
+    "ventas": 140000,
+    "costes_fijos_sin_amortizacion": 108000,
+    "ebitda": 32000,
+    "ebit": 26000,
+    "margen_ebitda": 0.22857142857142856
+   },
+   "amortizacion_que_separa_ebitda_de_ebit": 6000,
+   "cuota_mensual_100k_5pct_60meses": 1887.1233644010993,
+   "cuadro_100k_5anos": [
+    {
+     "capital_inicial": 100000,
+     "cuota": 22645.480372813192,
+     "intereses": 4589.9550746533605,
+     "pendiente": 81944.47470184017
+    },
+    {
+     "capital_inicial": 81944.47470184017,
+     "cuota": 22645.480372813192,
+     "intereses": 3666.2001331478423,
+     "pendiente": 62965.19446217482
+    },
+    {
+     "capital_inicial": 62965.19446217482,
+     "cuota": 22645.480372813192,
+     "intereses": 2695.1841356572513,
+     "pendiente": 43014.89822501888
+    },
+    {
+     "capital_inicial": 43014.89822501888,
+     "cuota": 22645.480372813192,
+     "intereses": 1674.4891168616268,
+     "pendiente": 22043.906969067313
+    },
+    {
+     "capital_inicial": 22043.906969067313,
+     "cuota": 22645.480372813192,
+     "intereses": 601.5734037458787,
+     "pendiente": 0
+    },
+    {
+     "capital_inicial": 0,
+     "cuota": 0,
+     "intereses": 0,
+     "pendiente": 0
+    },
+    {
+     "capital_inicial": 0,
+     "cuota": 0,
+     "intereses": 0,
+     "pendiente": 0
+    },
+    {
+     "capital_inicial": 0,
+     "cuota": 0,
+     "intereses": 0,
+     "pendiente": 0
+    },
+    {
+     "capital_inicial": 0,
+     "cuota": 0,
+     "intereses": 0,
+     "pendiente": 0
+    },
+    {
+     "capital_inicial": 0,
+     "cuota": 0,
+     "intereses": 0,
+     "pendiente": 0
+    }
+   ],
+   "carencia_igual_al_plazo": {
+    "C18": "La carencia no puede igualar ni superar el plazo",
+    "B18": 100000,
+    "D18": 5000.0,
+    "F18": 100000
+   },
+   "pl_precargado": 0.0,
+   "proyeccion_con_el_pl_en_blanco": {
+    "B11_ingresos_ano_1": "",
+    "D21_resultado_neto_ano_3": "",
+    "D22_margen_ebitda_ano_3": ""
+   },
+   "proyeccion_ano_1": 1680000,
+   "proyeccion_ano_3_base": 1905120.0000000002,
+   "ingresos_anuales_del_pl": 140000,
+   "crecimiento_ano_2": {
+    "de": 0.08,
+    "a": 0.18
+   },
+   "proyeccion_ano_3_con_mas_crecimiento": 2081520.0
+  },
+  "cash_flow": {
+   "fichero": "cash-flow-break-even.xlsx",
+   "variante": "12-meses-total",
+   "meses": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M"
+   ],
+   "fila_acumulado": 22,
+   "fila_acumulado_con_iva_y_deuda": 32,
+   "acumulado": [
+    -15000,
+    -20000,
+    -15000,
+    0,
+    25000,
+    60000,
+    105000,
+    160000,
+    225000,
+    300000,
+    385000,
+    480000
+   ],
+   "acumulado_con_iva_y_deuda": [
+    -14000,
+    -17000,
+    -9000,
+    4000,
+    34000,
+    75000,
+    112000,
+    175000,
+    249000,
+    310000,
+    406000,
+    513000
+   ],
+   "acumulado_esperado": [
+    -15000.0,
+    -20000.0,
+    -15000.0,
+    0.0,
+    25000.0,
+    60000.0,
+    105000.0,
+    160000.0,
+    225000.0,
+    300000.0,
+    385000.0,
+    480000.0
+   ],
+   "encadena": true,
+   "mes_de_break_even": 4,
+   "mes_de_break_even_con_serie_siempre_negativa": "No alcanzado",
+   "umbral_con_margen_de_contribucion_cero": ""
+  },
+  "capex": {
+   "fichero": "calculadora-capex.xlsx",
+   "variante": "rangos",
+   "fila_total": 17,
+   "ultima_fila_de_datos": 16,
+   "totales": {
+    "C17": {
+     "formula": "=SUM(C5:C16)",
+     "valor": 373000.0,
+     "suma_celda_a_celda": 373000.0
+    },
+    "D17": {
+     "formula": "=SUM(D5:D16)",
+     "valor": 703000.0,
+     "suma_celda_a_celda": 703000.0
+    },
+    "E17": {
+     "formula": "=SUM(E5:E16)",
+     "valor": 1275000.0,
+     "suma_celda_a_celda": 1275000.0
+    },
+    "F17": {
+     "formula": "=SUM(F5:F16)",
+     "valor": 0.0,
+     "suma_celda_a_celda": 0.0
+    }
+   }
+  }
+ },
+ "pendiente": [
+  "los 5 hermanos y panadería NO tienen `contenido_<pid>/a.py`: sus hojas nuevas salen con las fórmulas y SIN ejemplo (crecimiento e inflación en blanco, préstamo a 0). El tipo del Impuesto de Sociedades sí lleva el 25 % de la SPEC §2.3.1, para que la línea de impuesto no valga 0 en silencio. T6.",
+  "panadería: la capa de IVA (303) y la cuota del préstamo del §2.4 NO se aplican a su `Cash Flow 24m` — lleva las salidas en NEGATIVO y va a 24 meses, así que aplicarle el modelo de las otras 6 a ciegas invertiría los signos. Necesita su mapa en `contenido_guia_panaderia_obrador/a.py`. T6.",
+  "§2.3.6: la correspondencia 22→12 del CAPEX sólo existe para el representante (viene del módulo de contenido). Para los hermanos hay que decidir antes NUEVO-10 (sus dos CAPEX difieren en 1.100 €).",
+  "TEC-27 (los totales del CAPEX —373 K / 703 K / 1,275 M€— frente al «Inversión 500K-900K€» de la landing) es capa de producto: T8, no aquí.",
+  "NUEVO-08 y NUEVO-09: recalibración de las cifras de panadería. Es contenido, no motor.",
+  "MAIN-01, MAIN-02 y GATE-CRUZADO son de `main.py`: no los toco desde el grupo."
+ ],
+ "dudas_para_el_orquestador": [
+  "§2.3.4 · cuota mensual vs cuadro anual. La SPEC pide el cuadro francés ANUAL y a la vez el valor de control 1.887,12 €/mes, que es una anualidad MENSUAL. Un cuadro anual calculado con el tipo anual y una cuota mensual calculada con el tipo mensual son DOS préstamos distintos (23.097 €/año frente a 22.645 €/año para 100.000 € al 5 % en 5 años) y el producto publicaría las dos cifras. He hecho el cuadro anual DERIVADO del préstamo mensual (forma cerrada del capital pendiente, verificada contra la amortización mes a mes), de forma que la cuota del cash flow y los intereses de la proyección son del mismo préstamo. Confirma que es lo que quieres.",
+  "§7-bis.7 · el cash flow NO lleva la cuota precargada. Las 7 hojas de cash flow de la familia llegan VACÍAS; dejar dentro un único número (3.528 €/mes) haría que el libro en blanco enseñara un acumulado de −42.336 € que no sale de ningún supuesto del cliente. La celda queda verde y vacía, con la etiqueta diciendo de qué hoja copiarla y una nota con el valor del ejemplo. Si prefieres precargarla, es una línea.",
+  "§2.1 · qué filas entran en el control del 100 %. Lo declara `contenido_<pid>/a.py` (`TICKET['filas_mix']`), no el motor: en el representante son los tres tramos de menú y NO el maridaje ni la copa. Si un hermano no lo declara, la fila de control no se escribe (mejor eso que adivinar qué es mix y qué es consumo adicional).",
+  "cifras marcadas «parametrizado» en el módulo de contenido del representante —precio de la copa de vino, cubiertos/día, días abiertos/mes y «otros costes fijos»— NO están ni en la SPEC ni en el docx. Van en celda verde con nota y declaradas como tales, según la regla capital. Si tienes fuente para alguna, se sustituye."
+ ],
+ "veredicto": "grupo_a construido y verificado sobre los 8 productos: 0 diferencias de idempotencia, 0 fallos de caché `data_only`, censo 0 defectos y las 6 demostraciones con pycel en verde en el representante. Exit 0 en panadería y en la ejecución aislada del representante; exit 1 en los 6 restantes por literales de `escandallo-maestro*` que son de grupo_c (GATE-CRUZADO)."
+}

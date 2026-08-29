@@ -1429,11 +1429,83 @@ def plan_panaderia(wb, fname, cambios, contenido, subtitulo):
                   + col + str(f_fact) + ')', fname, cambios, fmt=FMT_PCT,
                   nota_dif='NUEVO-02: dividía el TOTAL DE COSTES entre la '
                            'facturación y publicaba 122,97 %')
+    # §1.4, falso positivo MEDIDO: la etiqueta «Personal (5-7 personas)» casa
+    # con el patrón de RECUENTO del motor (`personas`) y su columna se
+    # reformatea a `#,##0`, así que 118.000 € de nómina se imprimen sin el
+    # euro. Las filas de dinero de esta hoja se CLAVAN en euros.
+    clavadas = 0
+    for r in range(f_fact, f_eb + 1):
+        if r in (f_pct,):
+            continue
+        for col in cols:
+            cel = ws[col + str(r)]
+            if cel.value is None or isinstance(cel.value, str) \
+                    and cel.data_type != 'f':
+                continue
+            motor.fijar_formato(ws, col + str(r), FMT_EUR)
+            clavadas += 1
+    for col in cols:
+        motor.fijar_formato(ws, col + str(f_pct), FMT_PCT)
+    apunta(cambios, fname, ws, str(clavadas) + ' celdas de importe clavadas en '
+           'euros frente a la regla de columna del §1.4 (la etiqueta «Personal '
+           '(5-7 personas)» las llevaba a #,##0)')
+    _parametrizar_porcentajes(ws, cols, fname, cambios)
     _semaforo_negativo(ws, cols, (f_eb, f_pct))
     apunta(cambios, fname, ws, 'NUEVO-02 corregido: TOTAL COSTES = SUM('
            + str(f_var + 1) + ':' + str(ultima) + '), EBITDA = facturación − '
            'costes, margen = EBITDA / facturación')
     return 'pl-3-anos'
+
+
+RX_PCT_INCRUSTADO = re.compile(r'^=\s*([A-Z]{1,2}\d{1,4})\s*\*\s*'
+                               r'(0?\.\d+)\s*$')
+
+
+def _parametrizar_porcentajes(ws, cols, fname, cambios):
+    """Convención de familia: **parámetro en celda, nunca literal dentro de la
+    fórmula** (§1 «Convenciones», §1.5).
+
+    Caso medido en panadería: `'P&L 3 años'!B12='=B9*0.20'`, `C12='=C9*0.19'`,
+    `D12='=D9*0.18'` (materias primas), y lo mismo con el 0,015 del packaging y
+    el 0,025 de la energía: **9 tasas** que el cliente no puede tocar sin
+    reescribir la fórmula, en el libro que se lleva al banco. Se bajan a un
+    bloque de celdas verdes con la misma rejilla de años y la fórmula pasa a
+    referenciarlas. El valor no cambia: se conserva el que había.
+    """
+    filas = {}
+    for r in range(1, ws.max_row + 1):
+        for col in cols:
+            cel = ws[col + str(r)]
+            if cel.data_type != 'f':
+                continue
+            m = RX_PCT_INCRUSTADO.match(str(cel.value).replace(' ', ''))
+            if m:
+                filas.setdefault(r, {})[col] = (m.group(1), float(m.group(2)))
+    if not filas:
+        return 0
+    base = base_bloque(ws, r'^parametros en % sobre la facturacion')
+    motor.val(ws, 'A' + str(base),
+              'PARÁMETROS EN % SOBRE LA FACTURACIÓN', bold=True)
+    nota(ws, 'E' + str(base),
+         'Estaban escritos DENTRO de las fórmulas de arriba: para cambiar un '
+         'food cost había que editar la fórmula. Ahora se cambian aquí.')
+    tocadas = []
+    for i, r in enumerate(sorted(filas)):
+        destino = base + 1 + i
+        motor.val(ws, 'A' + str(destino),
+                  str(ws['A' + str(r)].value or ('Fila ' + str(r))))
+        for col, (ref, pct) in filas[r].items():
+            motor.val(ws, col + str(destino), pct, fmt=FMT_PCT, verde_=True)
+            motor.fijar_formato(ws, col + str(destino), FMT_PCT)
+            motor.f(ws, col + str(r),
+                    '=' + ref + '*' + col + str(destino), fmt=FMT_EUR)
+            tocadas.append(col + str(r) + '→' + col + str(destino) + '='
+                           + str(pct))
+    apunta(cambios, fname, ws, str(len(tocadas)) + ' porcentajes sacados de '
+           'dentro de las fórmulas a celdas verdes en las filas '
+           + str(base + 1) + '-' + str(base + len(filas)) + ': '
+           + str(tocadas))
+    return len(tocadas)
 
 
 def plan_financiero(wb, fname, cambios, contenido, subtitulo):
@@ -1485,6 +1557,9 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
     celda_iva = motor.escribir_parametro(ws, base + 1, 'A', 'B',
                                          'iva_restauracion')
     motor.fijar_formato(ws, celda_iva, FMT_PCT)
+    # ABSOLUTA: la misma celda de tipo alimenta las doce columnas de mes, y una
+    # referencia relativa se rompería en cuanto el cliente arrastrase la fila.
+    celda_iva = '$' + celda_iva[0] + '$' + celda_iva[1:]
     nota(ws, 'A' + str(base + 2),
          motor.PARAMETROS['iva_restauracion']['nota'] + ' Las filas de arriba '
          'se escriben SIN IVA, igual que el P&L; esta capa lo añade porque el '
@@ -1509,7 +1584,13 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
         motor.val(ws, 'A' + str(r), etiqueta,
                   bold=clave in ('neto', 'acum'))
     conf = ((getattr(contenido, 'CASH', None) or {}) if contenido else {})
-    cuota = (conf.get('cuota_mensual'))
+    # La cuota NO se precarga aunque el módulo de contenido la traiga: las 7
+    # hojas de cash flow de la familia llegan VACÍAS, y dejar dentro un único
+    # número —la cuota— haría que el libro en blanco enseñara un flujo
+    # acumulado de −42.336 € que no sale de ningún supuesto del cliente. La
+    # etiqueta de la fila dice de dónde copiarla.
+    cuota = None
+    r_cuota_ejemplo = conf.get('cuota_mensual')
     f_rep, f_sop = filas['repercutido'][0], filas['soportado'][0]
     f_liq, f_cuo = filas['liquidacion'][0], filas['cuota'][0]
     f_net, f_acu = filas['neto'][0], filas['acum'][0]
@@ -1520,7 +1601,8 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
                 fmt=FMT_EUR)
         motor.val(ws, col + str(f_sop), None, fmt=FMT_EUR)
         motor.verde(ws, col + str(f_sop))
-        motor.val(ws, col + str(f_cuo), cuota, fmt=FMT_EUR, verde_=True)
+        motor.val(ws, col + str(f_cuo), cuota, fmt=FMT_EUR)
+        motor.verde(ws, col + str(f_cuo))
         # liquidación trimestral: abril, julio y octubre liquidan el trimestre
         # natural anterior (el 4.º cae fuera de los 12 meses y va en su fila)
         if i in (3, 6, 9):
@@ -1558,6 +1640,11 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
            'filas ' + str(f_rep) + '-' + str(filas['q4'][0])
            + '; flujo neto y acumulado CON IVA y deuda en ' + str(f_net) + '/'
            + str(f_acu) + ' (DOM-03, DOM-22, §2.4)')
+    if r_cuota_ejemplo:
+        nota(ws, 'A' + str(filas['q4'][0] + 1),
+             'Con el préstamo de ejemplo de plan-financiero-3-anos.xlsx la '
+             'cuota mensual es ' + ('%.2f' % r_cuota_ejemplo).replace('.', ',')
+             + motor.NARROW + '€; cópiala aquí cuando cierres tu financiación.')
     return {'neto': f_net, 'acum': f_acu, 'liquidacion': f_liq,
             'cuota': f_cuo, 'iva': celda_iva}
 
@@ -1611,8 +1698,52 @@ def _bloque_break_even(ws, capa, meses, cambios, fname, contenido):
     return base
 
 
+def cash_plurianual(wb, fname, cambios, contenido, nombre_caja):
+    """Panadería: `Cash Flow 24m`, un molde propio que YA calcula los flujos.
+
+    Rejilla medida: `Ingresos` · `Coste materias primas` · `Personal` ·
+    `Alquiler…` (las salidas van en NEGATIVO, no en un bloque de gastos) ·
+    `Flujo operativo` = `SUM` · `CAPEX inicial` · `Flujo neto` · `Caja
+    acumulada`, con columnas `M1…M12` + `Año 1` + `Año 2`. No tiene filas de
+    «Total ingresos» ni «Total gastos», así que el camino del §2.4 no le vale:
+    lo que le falta es **el break-even**, que hoy es el TEXTO
+    «M10-M12 (realista)» tecleado en una celda — una estimación disfrazada de
+    resultado, en el fichero que se llama `cash-flow-break-even`.
+    """
+    ws = wb[nombre_caja]
+    fila_cab = motor.fila_cabecera_tabla(ws) or 3
+    meses, _total = columnas_mes(ws, fila_cab)
+    meses = meses[:12]
+    f_acum = _fila(ws, r'^caja acumulada|^saldo acumulado|^flujo acumulado',
+                   fname=fname)
+    f_be = _fila(ws, r'^break-?even', obligatoria=False)
+    if f_be is None:
+        f_be = base_bloque(ws, r'^mes de break-?even')
+        motor.val(ws, 'A' + str(f_be), 'Mes de break-even de caja')
+    motor.f(ws, 'B' + str(f_be),
+            '=IFERROR(MATCH(TRUE,INDEX(' + meses[0] + str(f_acum) + ':'
+            + meses[-1] + str(f_acum) + '>0,0),0),"No alcanzado")', bold=True)
+    motor.limpiar_rango(ws, 'C' + str(f_be))
+    nota(ws, 'C' + str(f_be),
+         'Calculado sobre la fila «' + str(ws['A' + str(f_acum)].value)
+         + '»: el primer mes en que la caja cruza a positivo, buscando SÓLO en '
+           'las doce columnas mensuales (las de Año 1 y Año 2 son acumulados '
+           'anuales, no meses). Si no cruza en esos doce meses dice «No '
+           'alcanzado» — antes había aquí una estimación escrita a mano.')
+    apunta(cambios, fname, ws, 'break-even calculado en B' + str(f_be)
+           + ' sobre la fila ' + str(f_acum) + ', en lugar del texto fijo '
+             '«M10-M12 (realista)» (TEC-03, DOM-09)')
+    apunta(cambios, fname, ws, 'PENDIENTE T6/panadería: esta rejilla lleva las '
+           'salidas en NEGATIVO y va a 24 meses, así que la capa de IVA (303) '
+           'y la cuota del préstamo del §2.4 necesitan su propio mapa en '
+           'contenido_guia_panaderia_obrador/a.py; no se aplica a ciegas.')
+    return 'cash-plurianual'
+
+
 def cash_flow(wb, fname, cambios, contenido, subtitulo):
     variante, nombre_caja, nombre_be = variante_cash(wb, fname)
+    if variante == 'cash-plurianual':
+        return cash_plurianual(wb, fname, cambios, contenido, nombre_caja)
     ws = wb[nombre_caja]
     fila_cab = motor.fila_cabecera_tabla(ws) or 4
     meses, total = columnas_mes(ws, fila_cab)
@@ -1801,6 +1932,7 @@ def calculadora_capex(wb, fname, cambios, contenido, subtitulo):
                     + ',"Por debajo del rango bajo",IF(' + propio
                     + str(f_total) + '>' + alto + str(f_total)
                     + ',"Por encima del rango alto","Dentro del rango")))')
+            motor.fijar_formato(ws, propio + str(fila), 'General')
             apunta(cambios, fname, ws, 'aviso de encaje del presupuesto propio '
                    'en ' + propio + str(fila) + ' (§2.3.6)')
     instruccion(wb, 'Esta calculadora es la hoja de RANGOS DE MERCADO. TU '
@@ -1972,7 +2104,13 @@ def demos(carpeta, destino, contenido):
         try:
             r = fn(carpeta, destino)
         except Exception as e:                               # noqa: BLE001
-            r = {'error': type(e).__name__ + ': ' + str(e)[:200]}
+            # Una demo que revienta NO es una nota al pie: es una demostración
+            # que no se ha hecho. La primera versión guardaba el error en el
+            # informe y dejaba la tanda en verde — panadería pasó así con dos
+            # demos caídas.
+            r = {'error': type(e).__name__ + ': ' + str(e)[:300],
+                 'fallos': ['demo ' + nombre + ' no se pudo ejecutar: '
+                            + type(e).__name__ + ': ' + str(e)[:200]]}
         if r is None:
             continue
         fallos += r.pop('fallos', [])
@@ -1990,8 +2128,13 @@ def _demo_ticket(carpeta, destino):
     fname = 'calculadora-ticket-medio.xlsx'
     if not os.path.isfile(os.path.join(carpeta, fname)):
         return None
-    f_ticket, wb = _busca(carpeta, fname, 'Ticket Medio',
-                          RX_TICKET_RES.pattern)
+    import openpyxl
+    wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
+    variante, fila_cab = variante_ticket(wb, fname)
+    if variante == 'mix-producto':
+        return _demo_ticket_mix(carpeta, destino, wb, fname, fila_cab)
+    f_ticket = _fila(wb['Ticket Medio'], RX_TICKET_RES.pattern,
+                     obligatoria=False)
     if f_ticket is None:
         return {'fallos': [fname + ': no hay fila de TICKET MEDIO tras el '
                            'grupo A']}
@@ -2059,6 +2202,43 @@ def _demo_ticket(carpeta, destino):
         if not (_num(despues[0]) and abs(despues[0] - 1.2) < 0.001):
             fallos.append(fname + ': con los tres tramos al 40 % el control '
                           'debería dar 1,2 y da ' + repr(despues[0]))
+    return dict(r, fallos=fallos)
+
+
+def _demo_ticket_mix(carpeta, destino, wb, fname, fila_cab):
+    """Panadería: el ticket es la suma de `PVP × mix`, y el control es que el
+    mix sume 100. Subir el PVP de un producto tiene que subir el ticket."""
+    from openpyxl.utils import get_column_letter as gcl
+    ws = wb['Ticket Medio']
+    f_tot = _fila(ws, r'^ticket medio', fname=fname)
+    col_mix = col_ap = col_pvp = None
+    for c in range(2, ws.max_column + 1):
+        cab = _norm(ws.cell(row=fila_cab, column=c).value)
+        if 'mix' in cab:
+            col_mix = gcl(c)
+        elif 'aporte' in cab:
+            col_ap = gcl(c)
+        elif cab.startswith('pvp'):
+            col_pvp = gcl(c)
+    P = "'Ticket Medio'!"
+    fallos, r = [], {'fichero': fname, 'variante': 'mix-producto',
+                     'fila_total': f_tot}
+    xl = _compilar(carpeta, destino, fname)
+    r['mix_total'] = _ev(xl, P + col_mix + str(f_tot))
+    if not (_num(r['mix_total']) and abs(r['mix_total'] - 100) < 0.001):
+        fallos.append(fname + ': el mix de ventas suma ' + repr(r['mix_total'])
+                      + ' y debe sumar 100')
+    primera = fila_cab + 1
+    v0 = _ev(xl, P + col_pvp + str(primera))
+    antes, despues = _mover(xl, [P + col_ap + str(f_tot)],
+                            [(P + col_pvp + str(primera), (v0 or 0) + 1)])
+    r['ticket'] = {'antes': antes[0], 'despues': despues[0],
+                   'pvp_movido': col_pvp + str(primera), 'de': v0}
+    if not (_num(antes[0]) and _num(despues[0]) and despues[0] > antes[0]):
+        fallos.append(fname + ': subir 1 € el PVP de '
+                      + repr(ws['A' + str(primera)].value)
+                      + ' no sube el ticket medio (' + repr(antes[0]) + ' → '
+                      + repr(despues[0]) + ')')
     return dict(r, fallos=fallos)
 
 
@@ -2216,6 +2396,52 @@ def _demo_plan(carpeta, destino):
             r['amortizacion_que_separa_ebitda_de_ebit'] = (
                 round(eb - ebit, 2) if _num(eb) and _num(ebit) else None)
 
+    # (1-bis) NUEVO-02 (§2.5): el «EBITDA» que valía exactamente la
+    #         facturación (300.000 €) y el margen del 122,97 %.
+    if 'P&L 3 años' in wb.sheetnames:
+        ws = wb['P&L 3 años']
+        P = "'P&L 3 años'!"
+        f_fact = _fila(ws, r'^facturacion total', obligatoria=False)
+        f_var = _fila(ws, RX_BLOQUE_VAR, obligatoria=False)
+        f_tot = _fila(ws, r'^total costes', obligatoria=False)
+        f_eb = _fila(ws, RX_EBITDA, desde=f_tot or 1, obligatoria=False)
+        f_pct = _fila(ws, RX_PCT_EBITDA, desde=f_eb or 1, obligatoria=False)
+        ultima = _ultimo_detalle(ws, f_var + 1, f_tot - 1, (RX_BLOQUE_FIJ,))
+        xl = _compilar(carpeta, destino, fname)
+        r['NUEVO_02'] = {}
+        for col in ('B', 'C', 'D'):
+            fact = _ev(xl, P + col + str(f_fact))
+            tot = _ev(xl, P + col + str(f_tot))
+            eb = _ev(xl, P + col + str(f_eb))
+            pct = _ev(xl, P + col + str(f_pct))
+            suma = sum(v for v in (_ev(xl, P + col + str(x))
+                                   for x in range(f_var + 1, ultima + 1))
+                       if _num(v))
+            r['NUEVO_02'][col] = {'facturacion': fact, 'total_costes': tot,
+                                  'suma_celda_a_celda': round(suma, 2),
+                                  'ebitda': eb, 'margen': pct}
+            if not (_num(tot) and abs(tot - suma) < 0.01):
+                fallos.append(fname + ": 'P&L 3 años'!" + col + str(f_tot)
+                              + ': el TOTAL COSTES vale ' + repr(tot)
+                              + ' y la suma de sus filas ' + str(round(suma, 2))
+                              + ' (NUEVO-02)')
+            if not (_num(eb) and _num(fact) and _num(tot)
+                    and abs(eb - (fact - tot)) < 0.01):
+                fallos.append(fname + ": 'P&L 3 años'!" + col + str(f_eb)
+                              + ': el EBITDA vale ' + repr(eb)
+                              + ' y facturación − costes son '
+                              + repr((fact - tot) if _num(fact) and _num(tot)
+                                     else None) + ' (NUEVO-02)')
+            if _num(eb) and _num(fact) and abs(eb - fact) < 0.01:
+                fallos.append(fname + ": 'P&L 3 años'!" + col + str(f_eb)
+                              + ': el EBITDA sigue valiendo EXACTAMENTE la '
+                                'facturación (NUEVO-02)')
+            if not (_num(pct) and 0 < pct < 0.5):
+                fallos.append(fname + ": 'P&L 3 años'!" + col + str(f_pct)
+                              + ': el margen EBITDA es ' + repr(pct)
+                              + ', fuera de un rango creíble (la nota de la '
+                                'hoja anuncia 15-22 %) (NUEVO-02)')
+
     # (2) cuadro francés: el valor de control ya verificado en la familia
     if HOJA_FIN in wb.sheetnames:
         F = "'" + HOJA_FIN + "'!"
@@ -2318,6 +2544,8 @@ def _demo_cash(carpeta, destino):
     import openpyxl
     wb = openpyxl.load_workbook(ruta)
     variante, nombre_caja, nombre_be = variante_cash(wb, fname)
+    if variante == 'cash-plurianual':
+        return _demo_cash_plurianual(carpeta, destino, wb, fname, nombre_caja)
     ws = wb[nombre_caja]
     fila_cab = motor.fila_cabecera_tabla(ws) or 4
     meses, _total = columnas_mes(ws, fila_cab)
@@ -2408,6 +2636,54 @@ def _demo_cash(carpeta, destino):
             fallos.append(fname + ': con margen de contribución 0 el umbral '
                           'devuelve ' + repr(d3[0]) + ' en vez de "" '
                           '(debería atraparlo IFERROR)')
+    return dict(r, fallos=fallos)
+
+
+def _demo_cash_plurianual(carpeta, destino, wb, fname, nombre_caja):
+    """Panadería: el break-even deja de ser el texto «M10-M12 (realista)».
+
+    Se comprueba que la celda devuelve el mes en que la caja acumulada cruza a
+    positivo y que, con una serie que nunca cruza, dice «No alcanzado» y no
+    `#N/A`.
+    """
+    ws = wb[nombre_caja]
+    fila_cab = motor.fila_cabecera_tabla(ws) or 3
+    meses, _total = columnas_mes(ws, fila_cab)
+    meses = meses[:12]
+    f_acum = _fila(ws, r'^caja acumulada|^saldo acumulado|^flujo acumulado',
+                   fname=fname)
+    f_be = _fila(ws, r'^break-?even|^mes de break-?even', fname=fname)
+    f_ing = _fila(ws, r'^ingresos$', fname=fname)
+    f_capex = _fila(ws, r'^capex inicial', obligatoria=False)
+    P = "'" + nombre_caja + "'!"
+    fallos, r = [], {'fichero': fname, 'variante': 'cash-plurianual',
+                     'fila_caja_acumulada': f_acum, 'fila_break_even': f_be}
+    xl = _compilar(carpeta, destino, fname)
+    r['caja_acumulada_con_el_ejemplo'] = [_ev(xl, P + c + str(f_acum))
+                                          for c in meses]
+    r['mes_de_break_even'] = _ev(xl, P + 'B' + str(f_be))
+    serie = r['caja_acumulada_con_el_ejemplo']
+    if all(_num(x) for x in serie) and any(x > 0 for x in serie):
+        esperado = next(i + 1 for i, x in enumerate(serie) if x > 0)
+        if r['mes_de_break_even'] != esperado:
+            fallos.append(fname + ': la caja cruza a positivo en el mes '
+                          + str(esperado) + ' y la celda dice '
+                          + repr(r['mes_de_break_even']))
+    elif r['mes_de_break_even'] != 'No alcanzado':
+        fallos.append(fname + ': la caja no cruza a positivo en 12 meses y la '
+                      'celda dice ' + repr(r['mes_de_break_even'])
+                      + ' en vez de "No alcanzado"')
+    # serie que SÍ cruza: ingresos crecientes contra un CAPEX pequeño
+    xl2 = _compilar(carpeta, destino, fname)
+    entradas = [(P + c + str(f_ing), 30000 + 3000 * i)
+                for i, c in enumerate(meses)]
+    if f_capex:
+        entradas.append((P + 'B' + str(f_capex), -10000))
+    _a, d = _mover(xl2, [P + 'B' + str(f_be)], entradas)
+    r['mes_de_break_even_con_serie_que_cruza'] = d[0]
+    if not _num(d[0]):
+        fallos.append(fname + ': con una serie que cruza a positivo el mes de '
+                      'break-even devuelve ' + repr(d[0]))
     return dict(r, fallos=fallos)
 
 
