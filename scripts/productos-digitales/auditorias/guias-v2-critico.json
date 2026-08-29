@@ -1,0 +1,261 @@
+{
+ "rol": "T5 — crítico de completitud de la familia Guías v2.0 (representante guia-restaurante-gastronomico)",
+ "fecha": "2026-08-29",
+ "modelo": "opus",
+ "spec": "scripts/productos-digitales/guias-v2-SPEC.md (§8 mapa id→sección, §9 plan de ejecución)",
+ "produccion_intacta": "NADA escrito en astro-site/public/dl/**. Todo con CLAUDE_SCRATCHPAD propio (propio-critico, propio-critico-canario) y --dry-run; GUIAS_APPLY nunca usado. Verificado: `git status --porcelain astro-site/public/dl/` vacío y mtime de los ficheros = 22-ago 11:12.",
+ "termica": "istats cpu temp antes de cada python; máximo observado 47,13 °C; un solo proceso cada vez; sin builds, sin Playwright, sin navegador.",
+
+ "cruce_ids_R1_seccion_1_a_4": {
+  "ids_del_mapa_seccion_8": 108,
+  "ids_con_seccion_1_a_4": 84,
+  "ids_solo_5_o_6_no_cuentan_aqui": 21,
+  "ids_7_3_para_John": ["DOM-24", "COM-12", "COM-13"],
+  "perdidos_de_verdad": 0,
+  "sin_cita_por_id_en_ningun_punto_de_la_cadena_verificados_a_mano": [
+   {"id": "TEC-30", "sec": "§1.8", "estado": "IMPLEMENTADO", "prueba": "motor.py:1795-1801 `ws.protection.sheet = True` sin contraseña + `Protection(locked=False)` en las verdes; dry-run paso 7/7 «hojas protegidas: 41/41»; medido en checklist-legal.xlsx:Legal:G5 locked=False frente a las calculadas locked=True."},
+   {"id": "COM-24", "sec": "§1.11 §5.3", "estado": "IMPLEMENTADO en su parte xlsx; la de docx/PDF es T7", "prueba": "motor.py:1753-1771 `base_subject()`/`metadatos()`; medido 18/18 xlsx con subject «Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0» y creator «AI Chef Pro»."}
+  ],
+  "sin_cita_en_el_codigo_pero_citados_en_los_informes_T1_verificados_a_mano": [
+   {"id": "TEC-17", "sec": "§1.4 §3.3", "estado": "IMPLEMENTADO", "prueba": "checklist-legal.xlsx:Legal — DV type=date DATE(2020,1,1) sobre E5:E53 con showErrorMessage=True, E5 number_format 'dd/mm/yyyy', y CF cellIs sobre F5:F53 con «Completado»/«En Curso»/«Pendiente»."},
+   {"id": "TEC-29", "sec": "§1.6 §3.3", "estado": "IMPLEMENTADO", "prueba": "reglas de formato condicional vivas en los libros medidos: checklist-legal F5:F53 y G57 con guarda `=AND(ISNUMBER(G57),G57>0)`; gantt F6:W39, X6:Y39 y Z6:Z39; turnos K6:K30 y L6:L30."},
+   {"id": "DOM-27", "sec": "§2.3.3", "estado": "IMPLEMENTADO", "prueba": "plan-financiero-3-anos.xlsx:'P&L Mensual':C35 vaciada — la fila 35 sólo conserva B35 `=IF(OR(B10=\"\",B10=0,B34=\"\"),\"\",B34/B10)` con number_format '0.0%' → 0,17924566."},
+   {"id": "TEC-27", "sec": "§2.3.6 §6.6", "estado": "PARTE §2.3.6 IMPLEMENTADA; la de §6.6 (landing) es T8", "prueba": "calculadora-capex.xlsx:CAPEX:F17 (columna «Tu presupuesto») y F19 (veredicto «Por debajo del rango bajo»/«Dentro del rango»/«Por encima del rango alto»), más la nota de correspondencia en plan-financiero:Inversión:A44."}
+  ],
+  "veredicto": "NINGÚN id del R1 asignado a §1-§4 se ha perdido por el camino: los 84 están implementados y verificables en la copia dry-run. Seis no se pueden rastrear por id (dos no se citan en ningún punto de la cadena y cuatro sólo en los informes T1), lo que no es una pérdida pero sí un punto ciego: un cruce automático id→resuelto no los habría distinguido de un olvido real."
+ },
+
+ "cadena_R2_verificada": {
+  "universo": {"RT_ref_excel": 30, "RD_ref_dominio": 35, "RC_ref_coherencia": 35, "total": 100},
+  "correccion": {"resueltos": 92, "no_aplicados": 8, "suma": 100, "ids_R2_sin_tratar": 0},
+  "ronda2": {"verificados_ok": 92, "mal_resueltos": 0, "no_aplicados_injustificados": 0},
+  "cruce_propio": "0 ids resueltos que la ronda 2 no verifique · 0 no_aplicados colados en verificados_ok · 0 ids del universo R2 sin tratar. La cadena R1 → SPEC → T1 → T2 → T3 → T4 no pierde ids."
+ },
+
+ "celdas_clave_verificadas_en_la_ultima_copia_dry_run": [
+  {
+   "fichero": "plan-financiero-3-anos.xlsx", "hoja": "Proyección 3 Años", "celda": "B11",
+   "formula": "=IF(OR('P&L Mensual'!B10=\"\",'P&L Mensual'!B10=0),\"\",'P&L Mensual'!B10*12)",
+   "valor_leido": "2.276.736,00 €",
+   "lectura": "TEC-07 / DOM-06 / COM-07 vivos: la hoja «Proyección 3 Años» existe, encadena Año 2 (2.458.874,88 €) y Año 3 (2.581.818,62 €) y baja hasta el resultado neto (223.196,28 €), con EBIT separado del EBITDA (B17 = B15 − B16). Es también la cifra del bloqueo B-01."
+  },
+  {
+   "fichero": "cash-flow-break-even.xlsx", "hoja": "Cash Flow 12 Meses", "celda": "B50",
+   "formula": "=IFERROR((B46+IF(ISNUMBER(B49),B49,0))/B47,\"\")",
+   "valor_leido": "145.728,585714286 €",
+   "lectura": "TEC-03 / DOM-09 / COM-06 vivos: umbral de ventas mensual CON servicio de la deuda (B46 = 98.801,68 € de fijos + B49 = 3.208,33 € de cuota, sobre B47 = 0,70 de margen de contribución). Encadena con B53 = 53,76644987 cubiertos/día y B54 = 5 (mes de break-even leído sobre la fila 35, el acumulado CON IVA y deuda). El 303 se liquida sólo en E32/H32/K32 (meses 4, 7 y 10), como debe ser."
+  },
+  {
+   "fichero": "escandallo-maestro.xlsx", "hoja": "Ficha (plantilla)", "celda": "G30",
+   "formula": "=\"PVP sugerido (\"&TEXT($H$4,\"0%\")&\"), sin IVA:\"",
+   "valor_leido": "«PVP sugerido (28%), sin IVA:»",
+   "lectura": "TEC-21 / DOM-30 vivos: el food cost objetivo dejó de estar hardcodeado, vive en H4 = 0,28 y la propia etiqueta lo lee. Cadena verificada: G7 `=IFERROR(IF(OR($D7=\"\",$F7>=1),\"\",$D7/(1-$F7)),\"\")` (bruta = neta/(1−merma), DOM-04), H29 = H28/F4 (coste por ración, DOM-05), H30 = H29/H4, H32 = H30*(1+H31) con H31 = 0,10 en celda (DOM-03 / COM-14). Los importes leen None porque la ficha se entrega VACÍA a propósito: hoja «Resumen» con 12 fichas por INDIRECT + instrucción de duplicar pestaña (TEC-23)."
+  },
+  {
+   "fichero": "menu-engineering-matrix.xlsx", "hoja": "Menu Engineering", "celda": "I5",
+   "formula": "=IF(OR($H5=\"\",$G5=\"\",$K5=\"\",$L5=\"\"),\"\",IF(AND($H5>=$L5,$G5>=$K5),\"Star\",IF(AND($H5>=$L5,$G5<$K5),\"Plowhorse\",IF(AND($H5<$L5,$G5>=$K5),\"Puzzle\",\"Dog\"))))",
+   "valor_leido": "«Star»",
+   "lectura": "TEC-04 / DOM-10 / COM-08 vivos: Kasavana & Smith completo y POR FAMILIA. H5 = 0,26865672 (90 de 335 uds de entrantes), K5 = 15,71641791 € (margen medio ponderado de los entrantes), L5 = 0,175 (0,7/4 entrantes), J5 = «Mantener y destacar en carta». Las cuatro clases aparecen en el ejemplo: Star (I5), Plowhorse (I7), Puzzle (I12) y Dog (I16). Ver el bloqueo B-03 sobre D32."
+  },
+  {
+   "fichero": "plantilla-turnos-brigada.xlsx", "hoja": "Turnos Semana", "celda": "O33",
+   "formula": "=IFERROR(IF($L$33=\"\",\"\",$L$33*(1+$C$41)),\"\")",
+   "valor_leido": "717.620,12 €",
+   "lectura": "DOM-02 / COM-10 vivos y CUADRADOS entre libros: L33 = 539.564,00 € de bruto anual × (1 + C41 = 0,33 de SS empresarial) = 717.620,12 €/año → 59.801,68 €/mes, que es exactamente pl-mensual-escenarios:Escenarios:C12 y plan-financiero:Inversión:C34. Es la mejor prueba de coherencia del paquete. Ver el bloqueo B-02 sobre P33."
+  },
+  {
+   "fichero": "pl-mensual-escenarios.xlsx", "hoja": "Escenarios", "celda": "C21",
+   "formula": "=C19-C20",
+   "valor_leido": "34.007,92 €",
+   "lectura": "TEC-02 / DOM-07 / COM-05 vivos: el libro dejó de ser inerte. C17 `=(C6*C8+C7*C9)*C10` → 189.728,00 €, C18 = C17*C11 → 56.918,40 €, C20 `=SUM(C12:C14)` → 98.801,68 €, C22 → 0,17924566 con formato 0.0%, y C24 (EBIT) resta la amortización de C23 (TEC-08 / DOM-26). Los 189.728,00 € son el mismo número que 'P&L Mensual'!B10 del plan financiero y que el mes 12 del cash flow."
+  }
+ ],
+
+ "moldes_B_y_C_en_dry_run": {
+  "guia-panaderia-obrador_molde_B": {
+   "comando": "CLAUDE_SCRATCHPAD=<scratch>/guias/propio-critico python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-panaderia-obrador --dry-run --json <scratch>/guias/critico-pan.json",
+   "aborto": false,
+   "exit": 1,
+   "moldes_detectados": "6 checklists → molde B (cabecera fila 3): APPCC Obrador, Contratación, Equipamiento, Checklist Legal, Marketing, Salida humos. Contador propio COUNTIF intacto en los 6 y sin bloque de resumen duplicado.",
+   "hojas_protegidas": "31/31",
+   "censo_entregables_fail": "0 defectos",
+   "fallos": [
+    "§9 [RT-08]: cronograma-apertura-gantt.xlsx termina con CERO fórmulas — ESPERADO: no existe contenido_guia_panaderia_obrador/*.py (es T6). Coincide con lo que la ronda 2 verificó para RT-24.",
+    "idempotencia: 4 diferencias entre la 1.ª y la 2.ª pasada — NO ESPERADO, hallazgo nuevo (bloqueo B-04)."
+   ]
+  },
+  "guia-dark-kitchen_molde_C": {
+   "comando": "CLAUDE_SCRATCHPAD=<scratch>/guias/propio-critico python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-dark-kitchen --dry-run --json <scratch>/guias/critico-dk.json",
+   "aborto": false,
+   "exit": 1,
+   "moldes_detectados": "checklist-equipamiento-obra.xlsx → molde C; checklist-apertura-legal.xlsx → molde D (un CUARTO molde que la SPEC no describe).",
+   "idempotencia": "0 diferencias",
+   "hojas_protegidas": "8/8",
+   "inject_cache": "48 + 9 + 51 fórmulas, 108 cacheadas, 0 fallos_pycel",
+   "data_only": "16 con valor · 0 «» por diseño · 0 fallos",
+   "censo_entregables_fail": "0 defectos",
+   "fallos": [
+    "§1.3 [RT-23]: 1 literal dentro de fórmula (calculadora-viabilidad-dark-kitchen.xlsx:'P&L Mensual'!B30 = 0.05) — ESPERADO, es exactamente lo que la ronda 2 verificó como no_aplicado justificado (falta contenido_guia_dark_kitchen)."
+   ],
+   "aviso": "Las demostraciones de checklist devuelven total=None y cuadra=None en los dos ficheros: el molde C/D no expone su TOTAL donde la demo lo busca, así que ese gate no verifica nada en dark-kitchen y no falla — devuelve None y se da por bueno."
+  },
+  "conclusion": "El motor NO aborta en ninguno de los dos moldes: procesa, detecta molde correctamente y cierra el censo con 0 defectos en ambos. Los dos exit 1 son gates haciendo su trabajo sobre lo que corresponde a T6, salvo la idempotencia de panadería, que es un defecto real del motor."
+ },
+
+ "bloqueos": [
+  {
+   "id": "B-01",
+   "severidad": "alta",
+   "celda": "plan-financiero-3-anos.xlsx:'Proyección 3 Años':B11 = 2.276.736,00 €  vs  cash-flow-break-even.xlsx:'Cash Flow 12 Meses':B10:M10 (suma de los 12 meses) = 2.049.062,40 €",
+   "medido": "Los dos libros del mismo kit publican dos facturaciones del AÑO 1 distintas, 227.673,60 € (11,1 %) aparte, y ninguno menciona al otro. B11 es `=IF(OR('P&L Mensual'!B10=\"\",'P&L Mensual'!B10=0),\"\",'P&L Mensual'!B10*12)` → 189.728,00 × 12, y su nota E11 dice literalmente «Año 1 = P&L Mensual × 12». El cash flow, en cambio, modela una rampa de arranque de seis meses: B10 = 113.836,80 · C10 = 132.809,60 · D10 = 151.782,40 · E10 = 161.268,80 · F10 = 170.755,20 · G10 = 180.241,60 y de H10 a M10 ya 189.728,00 (crucero). Barrido de los 18 xlsx buscando «rampa|crucero|maduraci»: 0 coincidencias en ninguna nota — no hay una sola línea que reconcilie las dos cifras. Es el número de portada de los dos ficheros que el cliente lleva al banco, y arrastra al EBITDA de la proyección (408.095,04 €) y a la necesidad de financiación.",
+   "fix": "Sin inventar nada, porque el dato ya está medido en el propio kit: añadir en «Proyección 3 Años», bajo PARÁMETROS, dos celdas VERDES —«Meses de rampa hasta el mes de crucero» y «% del crucero que se factura el primer mes»— y hacer que B11 sume los 12 meses resultantes. Mínimo aceptable si no se quiere tocar la fórmula: escribir en E11 la nota que falta — «El cash flow de este mismo pack modela una rampa de arranque y factura 2.049.062,40 € el año 1; esta proyección trabaja con el mes de crucero × 12. Si tu banco compara las dos, iguala la rampa aquí»."
+  },
+  {
+   "id": "B-02",
+   "severidad": "media",
+   "celda": "plantilla-turnos-brigada.xlsx:'Turnos Semana':P33 = 17.668,61702838063 € (× C45 = 52 → 918.768,09 €/año)  vs  O33 = 717.620,12 €/año",
+   "medido": "La misma fila «TOTAL BRIGADA» publica dos costes anuales que se llevan 201.147,97 € (28 %). O33 `=IFERROR(IF($L$33=\"\",\"\",$L$33*(1+$C$41)),\"\")` parte del bruto anual (539.564,00 €) y es la que alimenta el P&L; P33 `=IF(COUNT(P6:P30)=0,\"\",SUM(P6:P30))` suma el coste de la SEMANA REAL del cuadrante, y esa semana programa K33 = 1.040,00 h para 24 puestos = 43,33 h/persona, contra C44 = 40 h y contra la jornada anual de referencia C50 = 1.797 h. Causa raíz medida: 8 de los 24 puestos van a 50 h/semana — K6, K7, K8, K9, K10, K22, K26 y K27 (Chef Ejecutivo, Sous Chef, los tres jefes de partida, Maître y dos camareros de rango), todos con turno «P» (C38 = 10 h) cinco días. La regla de formato condicional del propio libro sobre K6:K30, `=AND(ISNUMBER($K6),$K6>$C$44)`, los pinta a los 8 EN ROJO nada más abrir el fichero: el producto entrega su propio ejemplo marcado como incumplimiento del art. 34.1 ET. No hay ninguna nota junto a P33 (la fila 33 sólo lleva la etiqueta N33 «Coste anual con SS (€)»).",
+   "fix": "Dos cosas, ninguna inventada: (1) dar a los 8 puestos de turno partido un sexto día «L» en el cuadrante de EJEMPLO, que los baja de 50 a 40 h sin tocar L6:L30 —los brutos—, así que O33, el P&L, el fondo de maniobra y la cadena de 59.801,68 €/mes NO se mueven; y (2) añadir bajo la fila 33 la nota que falta, en la línea de la que ya existe en A52: «El coste de la SEMANA (P33) multiplicado por 52 no tiene por qué coincidir con el coste ANUAL (O33): el anual sale del bruto de convenio y el semanal, de las horas que programes. Si se separan mucho, estás programando más horas de las que pagas»."
+  },
+  {
+   "id": "B-03",
+   "severidad": "media",
+   "celda": "menu-engineering-matrix.xlsx:'Menu Engineering':D32 = 0,05833333333333333 (5,8 %), con etiqueta B32 «Umbral de popularidad (Kasavana & Smith)»",
+   "medido": "El umbral que el bloque RESUMEN publica NO es el que clasifica ni un solo plato. D32 `=IFERROR(IF(COUNTIF($D$5:$D$29,\">0\")=0,\"\",$I$32/COUNTIF($D$5:$D$29,\">0\")),\"\")` es global (0,7 / 12 platos = 5,83 %), mientras que I5 compara H5 contra $L5, y la columna L es POR FAMILIA: L5 = 0,175 (0,7/4 entrantes), L9 = L12 = L13 = 0,14 (0,7/5 principales), L14 = L15 = L16 = 0,23333333 (0,7/3 postres). El cliente lee un «Mix % (popularidad)» de 26,9 %, lee «Umbral 5,8 %» justo debajo, concluye que todo es popular, y luego se encuentra un «Dog» en I16 (postre con H16 = 0,17857143 < L16 = 0,23333333). Dos varas de medir en la misma hoja, y la que se muestra es la que no se usa.",
+   "fix": "O borrar D32 con su etiqueta —el umbral real ya está en la columna L, cuya cabecera L4 dice «Umbral de popularidad de SU familia (%)»—, o reetiquetar B32 como «Umbral de popularidad si midieras el mix sobre la carta ENTERA (informativo — la clasificación usa el de cada familia, columna L)». Es una etiqueta, no un número: no hay nada que inventar."
+  },
+  {
+   "id": "B-04",
+   "severidad": "media",
+   "celda": "guia-panaderia-obrador/plan-financiero-3-anos.xlsx:'P&L 3 años':B28, C28, D28 — 1.ª pasada ('0.2', '0.0%') → 2.ª pasada ('0.2', '#,##0.00 €')",
+   "medido": "El gate de idempotencia de la SPEC §9 (segunda pasada = 0 cambios) FALLA en panadería con 4 diferencias, todas en el bloque de parámetros que el propio motor añade para NUEVO-02 (A27 «PARÁMETROS EN % SOBRE LA FACTURACIÓN»). En la 2.ª pasada, `formato_por_etiqueta` reclasifica B28/C28/D28 de porcentaje a euros porque la etiqueta A28 es «Coste materias primas (harinas + ingredientes)»: contiene «Coste» y no contiene «(%)», así que la regla de §1.4 la lee como importe. La 4.ª diferencia es la validación de datos, que se parte en dos grupos ('decimal:0:B28 B29 B30 C28 C29 C30 D28 D29 D30' → 'decimal:0:B28 C28 D28' + 'decimal:0:B29 B30 C29 C30 D29 D30'). Las filas 29 y 30 («Packaging (bolsas, cajas, papel kraft)» y «Energía variable hornos») aguantan porque no llevan palabra de importe. Consecuencia real: si el motor vuelve a pasar sobre una panadería ya procesada —y el orden de ejecución contempla re-pasadas tras un fix— el 0,20 deja de leerse «20,0 %» y pasa a leerse «0,20 €» en el fichero que se lleva al banco. No es hipotético: es lo que mide el clon de la 2.ª pasada.",
+   "fix": "Renombrar las tres etiquetas del bloque para que digan lo que son y la regla §1.4 acierte a la primera: A28 «Coste materias primas (harinas + ingredientes) (%)», A29 «Packaging (bolsas, cajas, papel kraft) (%)», A30 «Energía variable hornos (%)». Con el «(%)» al final, `formato_por_etiqueta` devuelve 0.0% en las dos pasadas y la DV no se parte. Alternativa equivalente: marcar las celdas del bloque de parámetros como inmunes a la reclasificación por etiqueta. Bloquea T6-panadería, no el representante."
+  },
+  {
+   "id": "B-05",
+   "severidad": "media",
+   "celda": "scripts/productos-digitales/guias-v2_0/main.py:262 (procesar) y main.py:694-704 (argparse)",
+   "medido": "El canario que la SPEC §9 declara obligatorio —«la primera ejecución real es UN SOLO fichero del representante (pl-mensual-escenarios.xlsx)»— NO SE PUEDE EJECUTAR con el main.py actual: no existe ningún flag de fichero (`--solo` selecciona GRUPOS a,b,c, no ficheros). Probado el único rodeo posible, `--dry-run --origen <carpeta con sólo pl-mensual-escenarios.xlsx>`: procesa el fichero (21 fórmulas nuevas) y acto seguido revienta con traceback no capturado — FileNotFoundError en openpyxl.load_workbook sobre «…/dryrun/guia-restaurante-gastronomico/calculadora-ticket-medio.xlsx» (main.py:802 → main.py:262). Es decir, procesar() recorre un catálogo FIJO de 18 ficheros por pid en vez del contenido real de la carpeta, y cuando falta uno no aborta limpio: se cae.",
+   "fix": "Antes del APPLY, una de estas dos: (a) añadir `--fichero <nombre.xlsx>` a main.py, que filtre el catálogo y salte idempotencia/demos de los demás; o (b) redefinir el canario como acto de VERIFICACIÓN en vez de acto de escritura — el APPLY se hace sobre el representante entero (main.py ya deja respaldo automático en $CLAUDE_SCRATCHPAD/respaldos/<pid>.bak-<ts>), e inmediatamente después se abre SÓLO pl-mensual-escenarios.xlsx, se leen sus celdas contra los valores de este informe y se diffea contra el respaldo; si no cuadra, se restaura la carpeta desde el respaldo y se para. En cualquier caso, añadir en procesar() un pre-vuelo que compare el catálogo del pid con lo que hay en disco y aborte con la lista de ausentes en vez de con un traceback."
+  }
+ ],
+
+ "avisos": [
+  "TRAZABILIDAD: TEC-30 y COM-24 no se citan por id en NINGÚN punto de la cadena (ni en motor.py/grupo_*.py, ni en los informes T1, ni en los ref-*/corrección/ronda2). Los he verificado a mano y están implementados, pero un cruce automático id→resuelto los habría dado por perdidos sin distinguirlos de un olvido real. TEC-12, TEC-22 y TEC-24 se citan en el código pero no en los informes T1; TEC-17, TEC-27, TEC-29 y DOM-27, al revés. Para T6-T9: que cada grupo emita `ids_cubiertos` con TODOS los ids de su sección, no sólo los que le parecen destacables.",
+  "CONTADOR DE FÓRMULAS INFLADO: el paso 2/7 declara «fórmulas nuevas» que no coinciden con las que quedan en el fichero. menu-engineering-matrix.xlsx declara 203 nuevas y el inject_cache cuenta 178 totales en el libro; cash-flow declara 124 nuevas y tiene 134 totales (10 preexistentes, coherente). Contadas por mí celda a celda en los 18 xlsx: 1.883 fórmulas, contra las «1.898 fórmulas nuevas totales» que el informe de corrección da como cifra de cierre. La capa de producto (T8) debe usar la cifra MEDIDA sobre el fichero, no el contador de escrituras del motor.",
+  "cache_fallos = 10 sigue ahí: plantilla-turnos-brigada.xlsx:'Registro de jornada'!C179:C188, SUMPRODUCT+IFERROR sobre 168 filas que pycel no evalúa. Confirmo lo que dice la ronda 2 (preexistente, el pipeline lo separa en «vacias_no_verificadas» y cierra exit 0), pero conviene decirlo con todas las letras: el gate de §9 pide literalmente «inject_cache.py con fallos_pycel = 0» y el número que se va a reportar es 10. O se ajusta la redacción del gate en la SPEC, o el gate queda incumplido por escrito aunque el fichero esté bien.",
+  "cronograma-apertura-gantt.xlsx del representante tiene 29 fórmulas y cache_inyectado = 0: las únicas fórmulas del libro son la columna AA («Días» = E−D) y D/E (Inicio/Fin) se entregan vacías a propósito, así que las 29 evalúan a «». Las barras del Gantt SÍ se pintan (X «Mes inicio» e Y «Duración» rellenas en las 29 tareas, con CF sobre F6:W39), o sea que COM-19 está cumplido; pero es un libro cuyo único cálculo no se puede verificar automáticamente: si un cambio futuro rompiera esas 29, ningún gate lo notaría.",
+  "MOLDE D no documentado: el pre-vuelo de dark-kitchen imprime «checklist-apertura-legal.xlsx:Checklist Apertura Legal → molde D (cabecera fila 4)». La SPEC sólo describe tres moldes (A, B y C) y §1.1 dice que lo que no encaje debe ABORTAR. El motor tiene un cuarto molde vivo que la SPEC no recoge: hay que documentarlo antes de cerrar, o el próximo que lea la SPEC creerá que un molde D es un fallo.",
+  "Las demostraciones de checklist en dark-kitchen devuelven total=None y cuadra=None en los dos ficheros, y el pipeline no lo cuenta como fallo. Un gate que devuelve None y se da por bueno es un gate apagado: en el molde C/D nadie está comprobando que el TOTAL cuadre con la suma de partidas.",
+  "plan-financiero-3-anos.xlsx:'Inversión':D27 (columna «Real (€)») es un TOTAL que evalúa a «» porque D5:D26 están vacías. Es correcto por diseño (§1: «sin dato» se escribe «», nunca 0), pero conviene que la hoja «Instrucciones» lo diga: una fila TOTAL en blanco al lado de otra con 1.668.340,88 € se lee como un error.",
+  "La necesidad total de financiación que el libro publica ahora es 1.889.944,24 € (CAPEX 734.020,40 € + preapertura 221.603,36 € + fondo de maniobra 934.320,48 €), un 45 % POR ENCIMA del «Rango Alto» de la propia calculadora-capex.xlsx del kit (E17 = 1.305.000 €). La nota A44 de la hoja «Inversión» ya explica por qué el fondo de maniobra del rango (60/120/200 mil €) se queda corto, así que NO lo cuento como bloqueo — pero es la cifra que T8 va a escribir en la landing y John debería verla antes (la corrección ya se la señalaba como «decisión nueva»).",
+  "T7 sigue sin existir: scripts/productos-digitales/guias-v2_0/documentos.py no está, y el dry-run del representante arrastra los 3 .docx y 1 .pdf originales. Toda la parte §5 (la promesa de 80+ páginas, los dos bonus, los metadatos de docx/PDF de COM-24) sigue pendiente, y §9 es explícito: los documentos van DESPUÉS de los xlsx y la capa de producto va la ÚLTIMA."
+ ],
+
+ "cifras_medidas_para_la_capa_de_producto_T8": {
+  "nota": "Todas leídas con openpyxl sobre la copia dry-run del representante generada por mí hoy (exit 0, idempotencia 0, censo 0 defectos). Ni una cifra de sector inventada: todo sale del fichero.",
+  "entregables_del_representante": "22 — 18 .xlsx + 3 .docx + 1 .pdf (censo-entregables --fail: 0 defectos)",
+  "hojas_xlsx": 41,
+  "formulas_xlsx_contadas_celda_a_celda": 1883,
+  "formulas_por_fichero": {
+   "budget-bodega.xlsx": 405,
+   "calculadora-capex.xlsx": 5,
+   "calculadora-ticket-medio.xlsx": 18,
+   "cash-flow-break-even.xlsx": 134,
+   "checklist-appcc.xlsx": 15,
+   "checklist-contratacion.xlsx": 9,
+   "checklist-diseno-sala.xlsx": 11,
+   "checklist-equipamiento-cocina.xlsx": 14,
+   "checklist-inspeccion-michelin-repsol.xlsx": 13,
+   "checklist-legal.xlsx": 12,
+   "checklist-marketing-preapertura.xlsx": 11,
+   "checklist-vajilla-cristaleria.xlsx": 112,
+   "cronograma-apertura-gantt.xlsx": 29,
+   "escandallo-maestro.xlsx": 119,
+   "menu-engineering-matrix.xlsx": 178,
+   "pl-mensual-escenarios.xlsx": 21,
+   "plan-financiero-3-anos.xlsx": 162,
+   "plantilla-turnos-brigada.xlsx": 615
+  },
+  "xlsx_con_cero_formulas": 0,
+  "items_de_checklist": {
+   "total": 390,
+   "checklist-appcc.xlsx (pestaña APPCC)": 55,
+   "checklist-contratacion.xlsx (Contratación Equipo)": 30,
+   "checklist-diseno-sala.xlsx (Diseño de Sala (FOH))": 35,
+   "checklist-equipamiento-cocina.xlsx (Equipamiento Cocina)": 91,
+   "checklist-inspeccion-michelin-repsol.xlsx (Preparación Inspección)": 45,
+   "checklist-legal.xlsx (Legal)": 49,
+   "checklist-marketing-preapertura.xlsx (Marketing Pre-Apertura)": 35,
+   "checklist-vajilla-cristaleria.xlsx (Vajilla, Cristalería)": 50
+  },
+  "presupuesto_sumado_por_los_8_checklists": "397.630,40 € — appcc G62 = 3.400,00 · contratación G37 = 1.610,00 · diseño sala G42 = 108.200,00 · equipamiento cocina G98 = 161.430,40 · michelin/repsol G52 = 11.000,00 · legal G56 = 57.960,00 · marketing G42 = 23.800,00 · vajilla G57 = 30.230,00. La SPEC citaba 313.290 € como cifra de la v1.1: la v2.0 la sube porque añade partidas.",
+  "matiz_del_total_de_equipamiento": "checklist-equipamiento-cocina.xlsx:G99 = 32 partidas SIN importe; G98 es un SUELO y el propio fichero lo dice en H99. La landing no puede presentar 161.430,40 € como «el coste», sino como «lo presupuestado de 91 partidas, 32 aún por presupuestar».",
+  "plan_financiero": {
+   "CAPEX_21_conceptos_Inversion_C5_C25": "734.020,40 €",
+   "preapertura_C39": "221.603,36 € (rentas 102.000,00 € + nóminas 119.603,36 €)",
+   "fondo_de_maniobra_C43": "934.320,48 € (155.720,08 €/mes × 6 meses)",
+   "total_tabla_Inversion_C27": "1.668.340,88 €",
+   "necesidad_total_de_financiacion_C46": "1.889.944,24 €",
+   "proyeccion_3_anos_B11_C11_D11": "2.276.736,00 € · 2.458.874,88 € · 2.581.818,62 €",
+   "EBITDA_ano_1_B15": "408.095,04 €",
+   "EBIT_ano_1_B17": "336.095,04 €",
+   "resultado_neto_ano_1_B21": "223.196,28 €",
+   "margen_EBITDA_ano_1_B22": "17,92 %",
+   "gastos_financieros_ano_1_B18": "38.500,00 € (del cuadro francés de la hoja «Financiación»)"
+  },
+  "cash_flow": {
+   "ingresos_12_meses": "2.049.062,40 € (rampa de 113.836,80 € el mes 1 a 189.728,00 € de crucero desde el mes 7)",
+   "mes_de_break_even_de_caja_B54": 5,
+   "umbral_mensual_solo_explotacion_B48": "141.145,26 €",
+   "umbral_mensual_con_servicio_de_la_deuda_B50": "145.728,59 €",
+   "cubiertos_dia_necesarios_B53": "53,77",
+   "flujo_acumulado_con_IVA_y_deuda_a_12_meses_M35": "236.778,48 €",
+   "saldo_de_tesoreria_a_12_meses_M42": "1.171.098,96 €",
+   "liquidaciones_del_303": "meses 4, 7 y 10 — E32 = 11.217,44 € · H32 = 21.442,43 € · K32 = 26.554,92 €; la del 4.º trimestre queda fuera del ejercicio, documentado en A36"
+  },
+  "pl_mensual_3_escenarios": {
+   "facturacion": "131.736,00 € (pesimista) · 189.728,00 € (realista) · 233.376,00 € (optimista)",
+   "EBITDA": "3.580,48 € · 34.007,92 € · 47.030,72 €",
+   "margen_EBITDA": "2,72 % · 17,92 % · 20,15 %",
+   "EBIT": "−2.419,52 € · 28.007,92 € · 41.030,72 €"
+  },
+  "calculadora_capex_rangos_C17_D17_E17": "373.000,00 € · 723.000,00 € · 1.305.000,00 €",
+  "ticket_medio": "123,20 € (cash-flow:B51), coherente con el P&L: (25 × 88,91 + 45 × 142,25) / 70 cubiertos",
+  "brigada": {
+   "puestos": 24,
+   "horas_semana_K33": "1.040,00 h (43,33 h/puesto)",
+   "bruto_anual_L33": "539.564,00 €",
+   "coste_anual_con_SS_O33": "717.620,12 € (SS empresarial C41 = 33 %)",
+   "coste_mensual_de_personal": "59.801,68 € — el mismo número en pl-mensual:C12 y en plan-financiero:Inversión:C34",
+   "SMI_en_celda_C42": "17.094,00 €/año (1.221,00 €/mes × 14 pagas)",
+   "jornada_anual_de_referencia_C50": "1.797,00 h"
+  },
+  "menu_engineering": {
+   "platos_de_ejemplo": 12,
+   "unidades_D31": 930,
+   "margen_medio_ponderado_G31": "18,58 €/unidad",
+   "familias": "Entrante (4) · Principal (5) · Postre (3), con umbral y margen medio propios de cada familia"
+  },
+  "escandallo": "hoja «Ficha (plantilla)» de 20 líneas + hoja «Resumen» de 12 fichas por INDIRECT + instrucción de duplicar pestaña; food cost objetivo en H4 = 28 %; IVA en H31 = 10 %",
+  "convenciones_medidas": "41/41 hojas protegidas sin contraseña · 18/18 xlsx con subject «… · v2.0» y creator «AI Chef Pro» · 0 celdas verdes bloqueadas · literales_sospechosos_total = 0 · data_only: 741 fórmulas con valor, 1.157 «» por diseño, 0 fallos",
+  "hermanos_medidos_hoy": "guia-panaderia-obrador: 15 xlsx, 31/31 hojas protegidas, censo 0 defectos, exit 1 (gantt sin fórmulas + 4 diferencias de idempotencia). guia-dark-kitchen: 3 xlsx, 8/8 hojas protegidas, idempotencia 0, censo 0 defectos, exit 1 (literal 0.05)."
+ },
+
+ "orden_ejecucion_real": [
+  "0. TÉRMICA — `istats cpu temp` antes de CADA python; ≥ 60 °C → `sleep 90`. Un proceso cada vez, sin builds ni navegador.",
+  "1. ARREGLAR B-01, B-02 y B-03 en contenido_guia_restaurante_gastronomico/*.py (son notas, etiquetas y un sexto día «L» en 8 filas del cuadrante) y B-04 en el bloque de parámetros de panadería; re-verificar en dry-run: `CLAUDE_SCRATCHPAD=<scratch>/guias/apply-check python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run --json <scratch>/guias/apply-check.json` → exit 0, idempotencia 0, censo 0 defectos.",
+  "2. RESOLVER B-05 antes de escribir un solo byte en producción: o `--fichero` en main.py, o canario redefinido como verificación posterior con restauración desde respaldo.",
+  "3. CANARIO (variante con --fichero): `GUIAS_APPLY=1 python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-gastronomico --fichero pl-mensual-escenarios.xlsx --json <scratch>/guias/canario-real.json` — deja respaldo en $CLAUDE_SCRATCHPAD/respaldos/guia-restaurante-gastronomico.bak-<ts>.",
+  "4. CANARIO (variante sin --fichero): `GUIAS_APPLY=1 python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-gastronomico --json <scratch>/guias/apply-rep.json` y ACTO SEGUIDO abrir SÓLO astro-site/public/dl/guia-restaurante-gastronomico/pl-mensual-escenarios.xlsx y comprobar con openpyxl data_only: Escenarios!C17 = 189.728,00 · C18 = 56.918,40 · C20 = 98.801,68 · C21 = 34.007,92 · C22 = 0,17924566 · C24 = 28.007,92, y B35 con number_format '0.0%'. Si algo no cuadra: `cp -R $CLAUDE_SCRATCHPAD/respaldos/guia-restaurante-gastronomico.bak-<ts>/. astro-site/public/dl/guia-restaurante-gastronomico/` y PARAR.",
+  "5. APPLY del representante completo (si el canario fue la variante con --fichero): `GUIAS_APPLY=1 python3 scripts/productos-digitales/guias-v2_0/main.py --producto guia-restaurante-gastronomico --json <scratch>/guias/apply-rep.json`.",
+  "6. CENSO: `python3 scripts/productos-digitales/censo-entregables.py --only guia-restaurante-gastronomico --fail --quiet` → exit 0, 0 defectos.",
+  "7. GATE OFFLINE: `python3 scripts/productos-digitales/gate-flujo-postpago.py --offline --only guia-restaurante-gastronomico --json <scratch>/guias/gate-offline-rep.json` → 22/22 ficheros, 0 fallos.",
+  "8. COMMIT con rutas explícitas (nunca `git add -A`): `git add astro-site/public/dl/guia-restaurante-gastronomico/ scripts/productos-digitales/guias-v2_0/ scripts/productos-digitales/guias-v2-SPEC.md scripts/productos-digitales/auditorias/guias-v2-critico.json && git commit`.",
+  "9. HERMANOS, uno a uno y EN SERIE, cada uno con su T6 (contenido_<pid>) hecho antes: `GUIAS_APPLY=1 python3 scripts/productos-digitales/guias-v2_0/main.py --producto <pid> --json <scratch>/guias/apply-<pid>.json`, seguido de su censo y su gate offline; `istats cpu temp` entre productos; commit por producto. Panadería NO se toca hasta que B-04 esté arreglado y su dry-run dé idempotencia 0.",
+  "10. T7 (documentos.py + guion_<pid>.py + bridge.py) y sólo DESPUÉS T8 (landing, dashboard, changelog, emails, FAQ, JSON-LD, products-catalog.ts) con las cifras de este informe, más las páginas del PDF CONTADAS después de generarlo, nunca antes.",
+  "11. LIVE: `python3 scripts/productos-digitales/gate-flujo-postpago.py --only <pid>` (sin --offline) contra producción tras el deploy de Netlify, y gate LIVE de familia 44/N/0 como en los cierres anteriores. Sin builds locales: la verificación es por curl/gate."
+ ],
+
+ "veredicto": "NO firmo todavía. La cadena de ids está completa —los 84 del R1 asignados a §1-§4 están implementados y verificados uno a uno sobre la copia dry-run, y los 100 ids del R2 están cerrados sin fugas— y el motor no aborta en ninguno de los tres moldes, con los gates del representante limpios (exit 0, idempotencia 0, censo 0 defectos, 41/41 hojas protegidas). Pero devuelvo cinco bloqueos que la ronda 2 no vio porque miró id a id y no cruzó libro contra libro: dos facturaciones del año 1 que se llevan 227.673,60 € en el mismo kit (B-01), dos costes anuales de brigada que se llevan 201.148 € en la misma fila (B-02), un umbral de Kasavana & Smith publicado que no clasifica ningún plato (B-03), un fallo de idempotencia en panadería que convierte un 20 % en 0,20 € a la segunda pasada (B-04) y un canario que la SPEC exige y el main.py no puede ejecutar (B-05). Los cuatro primeros son notas, etiquetas y un día libre: horas de trabajo, no días. El quinto hay que resolverlo antes de escribir el primer byte en producción."
+}
