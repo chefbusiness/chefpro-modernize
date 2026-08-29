@@ -1,0 +1,192 @@
+{
+  "pid": "guia-restaurante-mexicano",
+  "rol": "REFUTADOR del hermano (lente CONSULTOR DE APERTURAS + lente TÉCNICA EXCEL)",
+  "fecha": "2026-08-29",
+  "listo": false,
+  "copia_auditada": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/r-guia-restaurante-mexicano/dryrun/guia-restaurante-mexicano",
+  "dry_run_propio": {
+    "comando": "CLAUDE_SCRATCHPAD=<scratch r-> python3 main.py --producto guia-restaurante-mexicano --dry-run --json <scratch>/r-guia-restaurante-mexicano.json",
+    "resultado": "TODO VERDE reproducido (15 xlsx, 1189 formulas, idempotencia 0, censo 0 defectos, data_only 0 fallos, 6/6 checklists cuadran, 39/39 hojas protegidas)",
+    "lectura": "Los gates MEDIBLES del constructor son ciertos y reproducibles. Lo que no cubren -coherencia entre ficheros, veracidad de los rotulos y de las notas, y los ids que se declaran resueltos SIN mirar el xlsx- es donde estan los 25 hallazgos."
+  },
+  "ids_del_constructor_refutados": ["TEC-26", "COM-32", "COM-30", "DOM-22", "DOM-03", "DOM-37", "DOM-16", "TEC-27", "TEC-25"],
+  "fuente_de_las_cifras": "Todas las cifras citadas salen de los propios entregables de este hermano (15 xlsx del dry-run + guia-restaurante-mexicano.docx + manual-operaciones-mexicano.docx v1.1). Ninguna cifra de sector inventada. Los recalculos marcados 'pycel' se han hecho sobre la copia del scratchpad.",
+  "hallazgos": [
+    {
+      "id": "REF-MEX-01",
+      "severidad": "alta",
+      "celda": "plan-financiero-3-anos.xlsx!'Inversión'!G4:H48 (vacías) · calculadora-capex.xlsx!Instrucciones!A13",
+      "hallazgo": "TEC-26 se declara «resuelto» con la evidencia «columna nueva 'Categoría equivalente en calculadora-capex.xlsx' con 44/44 conceptos correspondidos», pero esa columna NO EXISTE en el entregable: la cabecera de 'Inversión' llega hasta F4='Notas' y las filas 5-48 no tienen nada en G ni en H (barrido de los 15 xlsx buscando 'equivalente'/'correspondencia': único match = calculadora-capex!Instrucciones!A13). La causa está en el motor: grupo_a.plan_hermanos() (grupo_a.py:2035-2053) NO llama a correspondencia_capex(), que sólo se invoca desde plan_representante() (grupo_a.py:1939). El capex_map de contenido_.../a.py:180 tiene los 44 patrones y no los usa nadie: el constructor verificó el MAPA, no el libro. Encima calculadora-capex!Instrucciones!A13 afirma al cliente que 'Inversión' «trae la correspondencia concepto → categoría de esta hoja»: una instrucción falsa en un fichero que se vende.",
+      "fix": "Llamar a correspondencia_capex() también desde plan_hermanos() con col_etq=_columna_concepto() (la columna B, 'Partida'), o retirar la frase de Instrucciones!A13. Y re-verificar TEC-26 LEYENDO el xlsx, no el módulo de contenido."
+    },
+    {
+      "id": "REF-MEX-02",
+      "severidad": "alta",
+      "celda": "plantilla-turnos-brigada.xlsx!'Turnos Semana'!O20=429042,04 € vs plan-financiero-3-anos.xlsx!'P&L Mensual'!B19+B20=28.000 €/mes (336.000 €/año)",
+      "hallazgo": "La única fuente de coste de personal del kit se contradice con el P&L. La brigada de 14 puestos, con los brutos del propio capítulo y la SS del propio libro (C28=33 %), cuesta O20=429.042,04 €/año = 35.753,50 €/mes; el bruto solo (L20) ya son 322.588 €/año = 26.882 €/mes. El P&L, el cash flow (B16+B17=28.000) y el escenario Realista cargan 28.000 €/mes, y el docx (cap. 11) dice que sus rangos «incluyen SS empresa». Faltan 7.753,50 €/mes = 93.042 €/año. Medido con pycel sobre la copia: metiendo la nómina real de la brigada en 'P&L Mensual'!B19:M20, la Proyección pasa de EBITDA −86.016/−29.878/−28.653 € a −179.052/−125.705/−127.355 € y el Resultado neto del Año 1 de −111.216 € a −204.252 €. Y la nota 'Inversión'!A59 afirma literalmente «El coste de personal sale de plantilla-turnos-brigada.xlsx (§7-bis.7)»: hoy es falso.",
+      "fix": "O propagar O20/12 a 'P&L Mensual'!B19:M20 y a cash-flow B16:M17 (repartido cocina/sala por la suma de P5:P18 de cada bloque), o borrar la afirmación de A59. Sea cual sea la decisión, hay que rehacer la Proyección y avisar a John de que el modelo empeora en 93.042 €/año."
+    },
+    {
+      "id": "REF-MEX-03",
+      "severidad": "alta",
+      "celda": "calculadora-capex.xlsx!'CAPEX Desglosado'!A1 y D42=290.100 € · plan-financiero-3-anos.xlsx!'Inversión'!C50=578.820 € · guia-restaurante-mexicano.docx cap. 6",
+      "hallazgo": "Tres cifras de inversión para el mismo restaurante de 80 plazas, y ninguna coincide: el título del libro sigue diciendo «Calculadora CAPEX — Inversión 120K-280K€», su propio TOTAL da 290.100 € (fuera de su rango), el plan financiero da 578.820 € y el docx dice «entre 120.000€ y 280.000€». Además el docx se desmiente solo: la suma de sus nueve partidas (40-100k obra + 25-50k equipo + 8-20k barra + 15-35k mobiliario + 5-12k licencias + 3-8k marketing + 5-10k stock + 25-60k fondo + 3-8k tech) da 129.000-303.000 €, no 120.000-280.000 €. TEC-27 («los totales del CAPEX y el rango de la landing dicen lo mismo») se declara resuelto y el desmentido está dentro del propio xlsx, no sólo en la landing.",
+      "fix": "Una sola necesidad total (578.820 € con el fondo de 6 meses) y el título/rango del CAPEX recalculados desde ella; corregir el rango del cap. 6 del docx para que sea la suma de sus propias partidas."
+    },
+    {
+      "id": "REF-MEX-04",
+      "severidad": "alta",
+      "celda": "plan-financiero-3-anos.xlsx!'Inversión'!B48='Fondo de maniobra (3 meses)' con C48=333.720 € y C57=6 · calculadora-capex.xlsx!'CAPEX Desglosado'!C40='Fondo 3 meses', D40=45.000 €",
+      "hallazgo": "COM-30 pide «un solo rótulo y una cifra calculada» para el fondo de maniobra y el hermano sale con CUATRO versiones simultáneas: el rótulo B48 sigue diciendo «(3 meses)» mientras la fórmula multiplica por C57=6 (333.720 €); calculadora-capex mantiene «Fondo 3 meses» = 45.000 €; sus Instrucciones!A15 hablan de «el fondo de maniobra de seis meses»; y el docx (cap. 6) publica «Fondo de maniobra (3 meses): 25.000-60.000€». Entre la cifra del plan (333.720 €) y la del docx (25-60k) hay un factor de 5,5 a 13. DOM-01 se dio por resuelto midiendo sólo el VALOR de C48, sin mirar su etiqueta ni los otros tres sitios donde vive el mismo concepto.",
+      "fix": "Rehacer el rótulo B48 con TEXT($C$57,\"0\")&\" meses\" (el patrón que ya usa escandallo!B18), sustituir D40 de calculadora-capex por la cifra calculada o marcarla explícitamente como rango de mercado, y actualizar el cap. 6 del docx."
+    },
+    {
+      "id": "REF-MEX-05",
+      "severidad": "alta",
+      "celda": "menu-engineering-matrix.xlsx!Matrix!C5=4,50 € y D5=1,20 € · escandallo-maestro-mexicano.xlsx!'Ficha (plantilla)'!G16=2,4603 €, G18=8,20 € y G19=9,02 € · guia docx cap. 14",
+      "hallazgo": "El plato estrella de la guía tiene tres precios y dos costes distintos dentro del mismo kit. Los «Tacos al Pastor (3 uds)» valen 4,50 € en la matriz de menu engineering (y en la ficha del cap. 15 del docx), 8,20 € sin IVA / 9,02 € con IVA según el escandallo, y «12-15 €» según el consejo del cap. 14 del docx («Con 3 tacos por persona a 12-15€»). El coste es 1,20 € en la matriz y 2,4603 € en el escandallo (que es el que cuadra con el propio docx: «el coste de un taco es 0,80-1,20 €», o sea 2,40-3,60 € los tres). Con el coste real del escandallo y el PVP de la matriz, el food cost del plato bandera es 54,7 %, no el 26,7 % que imprime Matrix!E5, y la clasificación Kasavana-Smith de esa fila (J5='Plowhorse') sale de datos que el propio kit desmiente.",
+      "fix": "Elegir la fuente (el escandallo, que es el único que calcula) y propagar coste y PVP a menu-engineering y a la ficha del docx; o declarar en la matriz que el PVP es el de carta CON IVA y recalcular. Sin eso, el ejemplo enseña a fijar precios con un coste que es la mitad del real."
+    },
+    {
+      "id": "REF-MEX-06",
+      "severidad": "alta",
+      "celda": "cash-flow-break-even.xlsx!'Break-Even'!B13='No alcanzado' · plan-financiero-3-anos.xlsx!'Proyección 3 Años'!B17:D17=−86.016/−29.878/−28.653 € · guia docx cap. 5",
+      "hallazgo": "El docx vende «Break-even: mes 8-14 (depende de ubicación y estacionalidad)» y el libro del mismo pack responde «No alcanzado», con los TRES años en EBITDA negativo y el Realista a −3.620 €/mes (D32=−7,0 % s/ventas). El constructor lo detecta (RD-MEX-04) pero lo cierra como «resultado correcto del calculador» y lo deja para T7/T8. Con la lente de consultor no es un detalle de producto: el pack se vende como guía para abrir y su propio modelo dice que el negocio no llega nunca a break-even; y esto es ANTES de aplicar REF-MEX-02 (con la nómina real, el Año 1 se va a −179.052 € de EBITDA). El origen es dimensional y está en los propios datos: 14 puestos × 40 h = 560 h/semana (K20) para 85 comensales/día × 26 días (Break-Even!B6/B7), es decir ~1,1 h de plantilla por cubierto, y un coste de personal de 53,8 % sobre ventas con el P&L actual (68,8 % con la nómina real de la brigada).",
+      "fix": "Decisión de producto de John ANTES del cutover: o se redimensiona el caso de ejemplo (más cubiertos/día, más ticket o menos brigada) o la landing y el cap. 5 dejan de prometer break-even en el mes 8-14. No se puede publicar un pack cuyo texto y cuyo cálculo se contradicen en el número que decide la compra."
+    },
+    {
+      "id": "REF-MEX-07",
+      "severidad": "alta",
+      "celda": "plan-financiero-3-anos.xlsx!'Inversión'!A62 y C61=578.820 € vs hoja 'Financiación' (A4:F27, sin bloque de cuadre) y B5=420.000 €",
+      "hallazgo": "'Inversión'!A62 dice: «Esta es la cifra que tiene que cuadrar la hoja «Financiación»: fondos propios + préstamo + otras fuentes». Esa hoja NO tiene ni fondos propios, ni otras fuentes, ni TOTAL FINANCIACIÓN, ni la fila «Diferencia (necesidad − financiación)» con semáforo: sólo los 4 parámetros del préstamo y el cuadro francés. El bloque existe en el motor (grupo_a.plan_de_financiacion, línea 1852) pero plan_hermanos() no lo llama. Resultado: necesidad 578.820 € frente a un préstamo de 420.000 €, 158.820 € sin financiar, y ni un aviso. DOM-22/RD-20 están declarados de ámbito FAMILIA (8).",
+      "fix": "Llamar a plan_de_financiacion() desde plan_hermanos() (ya recibe `inv` de fondo_de_maniobra) o quitar la promesa de A62."
+    },
+    {
+      "id": "REF-MEX-08",
+      "severidad": "alta",
+      "celda": "cash-flow-break-even.xlsx!'Cash Flow'!B37 ('=(B12-IF(ISNUMBER(B11),B11,0))*$B$32+IF(ISNUMBER(B11),B11,0)*$B$33') sobre A9='Barra tequilas/coctelería' y A11='Bebidas'",
+      "hallazgo": "La capa de IVA aplica el 21 % (B33) a la fila 11 «Bebidas (cerveza, refrescos, vinos)» y el 10 % a todo lo demás, incluida la fila 9 «Barra tequilas/coctelería», que es EXACTAMENTE la línea de bebida alcohólica del concepto (12.000 €/mes a crucero, el 23 % de la facturación; el propio A36 cita el art. 91 de la Ley del IVA para el 21 % del alcohol). Al ritmo de crucero se dejan de repercutir 12.000 × 11 % = 1.320 €/mes (15.840 €/año) y se repercuten de más 6.000 × 11 % = 660 €/mes sobre refrescos que en su mayor parte van al 10 %. La liquidación del 303 (E39/H39/K39) arrastra el error íntegro. DOM-03 se declaró resuelto por «las tres filas del 303 añadidas», sin comprobar a QUÉ fila se aplica cada tipo.",
+      "fix": "Que la fila de tipo 21 % se elija por rótulo (patrón tequila|mezcal|coctel|barra|alcohol|vino|cerveza) y admita varias filas, no una sola por posición; o dejar el tipo por fila en una columna de parámetros."
+    },
+    {
+      "id": "REF-MEX-09",
+      "severidad": "media",
+      "celda": "calculadora-capex.xlsx!'CAPEX Desglosado'!F5='=E5-D5' → −70.000,00 € (F42=−290.100,00 €) con E5:E40 vacías",
+      "hallazgo": "El libro en blanco grita 36 diferencias negativas y un −290.100,00 € en el TOTAL antes de que el cliente escriba un solo importe real. El libro hermano del mismo pack ya lo tiene resuelto: plan-financiero!'Inversión'!E5='=IF(D5=\"\",\"\",D5-C5)' (lo aplica _diferencia_hermanos, grupo_a.py:2055). El docstring de _desviacion_sin_dato (grupo_a.py:1999-2006) describe este mismo defecto como algo que «miente con el libro vacío» y la función nunca se ejecuta sobre calculadora-capex.",
+      "fix": "Extender la guarda IF(<real>=\"\",\"\",...) a la columna Diferencia de calculadora_capex() y al TOTAL F42, igual que en 'Inversión'."
+    },
+    {
+      "id": "REF-MEX-10",
+      "severidad": "media",
+      "celda": "calculadora-capex.xlsx!Instrucciones!A15 vs 'CAPEX Desglosado'!E5:E40 (todas vacías) y D40=45.000 €",
+      "hallazgo": "A15 promete: «Las dos [preapertura y fondo de maniobra] llegan con la cifra del plan financiero de este kit como EJEMPLO en la columna verde; ajústalas a tu caso». La columna verde de este libro es E («Real (€)») y está VACÍA en las 36 filas; y el libro tampoco tiene columnas de rango bajo/alto (variante Estimado/Real), así que la frase describe otro libro. Las dos instrucciones de calculadora_capex() (grupo_a.py:2871-2886) se escriben incondicionalmente aunque la variante no las soporte.",
+      "fix": "Condicionar esas dos líneas a la variante 'rangos'/'min-max', o precargar de verdad E40 (y la fila de preapertura) con la cifra del plan financiero."
+    },
+    {
+      "id": "REF-MEX-11",
+      "severidad": "media",
+      "celda": "menu-engineering-matrix.xlsx!Matrix!B22 y J5:J19 (usan $F$22=4,67 %); columna L vacía",
+      "hallazgo": "El rótulo B22 dice «Umbral de popularidad si midieras el mix sobre la carta ENTERA (informativo — la clasificación usa el de cada familia, columna L)». En este hermano no hay columna «Categoría», así que grupo_c no crea las columnas de familia (grupo_c.py:1148-1156, condicionadas a modelo=='M1' and col_cat): la columna L está vacía y J5:J19 clasifican contra $F$22, que es justo el umbral que el rótulo llama «informativo». El cliente lee que el número que ve no se usa y que se usa uno que no existe.",
+      "fix": "Escribir el rótulo según la variante: en los hermanos sin columna de familia debe decir que el umbral de F22 ES el que clasifica."
+    },
+    {
+      "id": "REF-MEX-12",
+      "severidad": "media",
+      "celda": "cash-flow-break-even.xlsx!'Break-Even'!B13 ('=IFERROR(MATCH(TRUE,INDEX('Cash Flow'!B42:M42>0,0),0),\"No alcanzado\")') frente a B5:B9",
+      "hallazgo": "Probado con pycel sobre la copia: subiendo el ticket B5 de 24 a 30 €, B11 pasa de 53.040 a 66.300 € y B12 de 36.597,6 a 45.747 €, pero B13 no se mueve porque no depende de B5:B9 — lee la hoja 'Cash Flow', que se rellena a mano. La hoja mezcla dos calculadoras bajo una sola cabecera: el usuario que ajusta sus parámetros para «alcanzar» el break-even nunca verá cambiar el mes. La nota A18 dice de dónde se lee, pero no advierte que las celdas verdes de arriba no influyen.",
+      "fix": "Separar visualmente los dos bloques y añadir a A18 «los parámetros de B5:B9 no cambian esta fila: el mes se lee del cash flow», o calcular el mes también con los parámetros (serie sintética)."
+    },
+    {
+      "id": "REF-MEX-13",
+      "severidad": "media",
+      "celda": "cash-flow-break-even.xlsx!'Cash Flow'!B5 (vacía, locked=True, sin verde) usada por B27='=B5+B26'",
+      "hallazgo": "La fila «Saldo inicial» tiene fórmula en C5:M5 pero la celda de enero está vacía, BLOQUEADA y sin relleno verde, con la hoja protegida (prot=True): el cliente no puede escribir el saldo con el que arranca el mes 1 sin desproteger la hoja, aunque B27 lo sume. Las celdas de la fila 46-48 del mismo bloque sí son verdes y desbloqueadas, así que no es criterio: es un olvido.",
+      "fix": "motor.verde() + locked=False sobre B5, o eliminar la fila de enero y dejar el saldo inicial sólo en B46."
+    },
+    {
+      "id": "REF-MEX-14",
+      "severidad": "media",
+      "celda": "plan-financiero-3-anos.xlsx!'Proyección 3 Años'!B18='=IFERROR(IF($B$13=\"\",\"\",0),\"\")' → 0,00 € (locked, sin verde)",
+      "hallazgo": "La amortización de los tres años es un CERO cableado dentro de una fórmula, bloqueado y no editable, en un plan cuyo CAPEX (sin fondo de maniobra) es de 245.100 € en obra, cocina, barra, mobiliario y tecnología. Consecuencias: EBIT (B19) = EBITDA siempre, el BAI y el Impuesto de Sociedades (B22, con B8=25 %) se calculan sobre una base sin amortizar, y el banco recibe un plan sin dotación. Además viola la regla §1 «sin dato se escribe \"\", nunca 0»: aquí el 0 no es un dato ausente, es una imposibilidad.",
+      "fix": "Celda verde de amortización (o cálculo desde 'Inversión'!C50 menos el fondo de maniobra, con la vida útil en celda) y B18 leyéndola."
+    },
+    {
+      "id": "REF-MEX-15",
+      "severidad": "media",
+      "celda": "plan-financiero-3-anos.xlsx!'P&L Mensual'!A27='Reposición stock tequila/mezcal' B27=1.500 € (dentro de B29=39.100 € «TOTAL COSTES FIJOS») y B13='=B10*$O$13' con O13=31 % aplicado también a B7=12.000 € de barra",
+      "hallazgo": "El coste de la bebida se cuenta dos veces y en el sitio equivocado: el food cost del 31 % se aplica a los INGRESOS TOTALES, barra de tequilas incluida (12.000 × 31 % = 3.720 €/mes), y encima la reposición de tequila/mezcal se carga aparte, 1.500 €/mes, clasificada como coste FIJO. Al ser fijo entra en Break-Even!B9=39.100 € y por tanto infla el umbral de ventas B17 (56.666,67 €). Y contradice al propio docx (cap. 9), que atribuye a la barra un margen del 75-85 %, incompatible con aplicarle el 31 % de food cost.",
+      "fix": "O mover «Reposición tequila/mezcal» a costes variables y excluir la barra del food cost, o dejar el food cost blended y borrar la fila de reposición. Cualquiera de las dos, pero no las dos a la vez."
+    },
+    {
+      "id": "REF-MEX-16",
+      "severidad": "media",
+      "celda": "escandallo-maestro-mexicano.xlsx!'Ficha (plantilla)'!E18=0,30 vs plan-financiero!'P&L Mensual'!O13=0,31, pl-mensual-escenarios!Realista!E13=0,31 y cash-flow!'Break-Even'!B8=0,31",
+      "hallazgo": "Dos food cost objetivo distintos en el mismo kit: el escandallo fija los PVP con el 30 % y todo el modelo financiero calcula con el 31 %. Sobre el ejemplo del propio libro son 27 céntimos de PVP por ficha (8,20 € frente a 7,94 €), pero el problema es de método: TEC-21/DOM-30 sacaron el food cost de dentro de las fórmulas precisamente para que hubiera UNA celda, y han quedado dos.",
+      "fix": "Igualar los cuatro sitios (o el 30 % o el 31 %) y dejar dicho en el escandallo de dónde sale el objetivo."
+    },
+    {
+      "id": "REF-MEX-17",
+      "severidad": "media",
+      "celda": "plan-financiero-3-anos.xlsx!'P&L Mensual'!A13='Food cost (31%)' y pl-mensual-escenarios.xlsx!Realista!A13='Food cost (31%)'",
+      "hallazgo": "El porcentaje sigue escrito como literal dentro del rótulo mientras el valor vive en O13/E13: en cuanto el cliente cambie la celda verde a su food cost real, el rótulo seguirá diciendo 31 % y el número dirá otra cosa. El mismo motor ya resolvió esto bien en el escandallo, cuyo B18 es '=\"PVP sugerido (food cost \"&TEXT($E$18,\"0%\")&\"), sin IVA\"'.",
+      "fix": "Aplicar el patrón TEXT() del escandallo a los rótulos A13 de las cuatro hojas de P&L."
+    },
+    {
+      "id": "REF-MEX-18",
+      "severidad": "media",
+      "celda": "calculadora-ticket-medio.xlsx!'Ticket Medio'!B15=22,75 € y B20=50.277,50 € · cash-flow!'Break-Even'!B5=24 € y B11=53.040 € · 'P&L Mensual'!B10=52.000 €",
+      "hallazgo": "Tres facturaciones mensuales para el mismo restaurante, calculadas con los mismos 85 cubiertos y 26 días: 50.277,50 € (la calculadora de ticket, que es la que el cliente usa para decidir), 53.040 € (el break-even, con un ticket tecleado de 24 € que ninguna hoja calcula) y 52.000 € (el P&L y el cash flow a crucero). §7-bis.7 pide UNA sola fuente por guía y el ticket es justo el parámetro que la guía enseña a estimar.",
+      "fix": "Dejar el ticket como dato calculado en un sitio y que Break-Even!B5 traiga ese valor como ejemplo con una nota («sale de calculadora-ticket-medio.xlsx; no hay enlace entre libros»), como ya se hace con la cuota del préstamo en cash-flow!A44."
+    },
+    {
+      "id": "REF-MEX-19",
+      "severidad": "media",
+      "celda": "plan-financiero-3-anos.xlsx!'P&L Mensual'!B6:M6 (28.000 € los 12 meses) y cash-flow!'Cash Flow'!H12:M12 (52.000 € de julio a diciembre)",
+      "hallazgo": "El modelo no tiene estacionalidad: doce meses idénticos en el P&L y una rampa que se aplana en julio y ya no vuelve a moverse, en una guía cuyo cap. 18 dedica una sección entera al calendario mexicano («Un solo fin de semana de Día de Muertos puede facturar el equivalente a 2 semanas normales», chiles en nogada sólo sep-oct, Cinco de Mayo, Navidades) y cuyo cap. 5 condiciona el break-even a «ubicación y estacionalidad». Agosto tampoco baja. El cliente que copie el ejemplo planifica tesorería con una curva que su propia guía le dice que no existe.",
+      "fix": "Aplicar un coeficiente mensual por temporada (celda verde por mes) en el cash flow, aunque el P&L siga siendo mes tipo, y decirlo en la nota del cash flow."
+    },
+    {
+      "id": "REF-MEX-20",
+      "severidad": "media",
+      "celda": "cronograma-apertura-gantt.xlsx!Gantt!R5:R32 (vacías) con cabecera R4='Depende de' y su regla de formato condicional ya escrita",
+      "hallazgo": "La columna de dependencias se entrega con cabecera, con ancho y con una regla de formato condicional que valida que la tarea no empiece antes de que acabe su predecesora, y sin UN SOLO dato en las 28 filas. DOM-37 («barras y dependencias del Gantt») queda a medias y ni las Instrucciones ni una nota explican qué escribir ahí (el nombre exacto de otra tarea de la columna C).",
+      "fix": "Precargar las dependencias evidentes del propio cronograma (obra depende de licencia, equipos dependen de obra, formación depende de contratación) o al menos una nota que diga que se escribe el nombre literal de la tarea predecesora."
+    },
+    {
+      "id": "REF-MEX-21",
+      "severidad": "media",
+      "celda": "plantilla-turnos-brigada.xlsx!'Registro de jornada'!C109:C118 (suman horas por trabajador y semana, sin aviso) y C105=12:00 (único umbral)",
+      "hallazgo": "DOM-16 pide «alertas de 12 h y 40 h». La de 12 h está (columna H contra C105). La de 40 h NO existe en el registro: el bloque que suma «Horas registradas por trabajador y semana» no compara con nada y no tiene ni una regla de formato condicional (el barrido de CF de la hoja sólo devuelve G5:G102). El aviso de 40 h vive únicamente en el cuadrante (K5:K18 contra C31), es decir en lo PLANIFICADO, no en lo REGISTRADO, que es lo que mira una inspección.",
+      "fix": "Regla ISNUMBER + semáforo sobre C109:C118 contra 'Turnos Semana'!$C$31 (o un parámetro propio de la hoja) y columna de aviso con el texto del art. 34.1 ET."
+    },
+    {
+      "id": "REF-MEX-22",
+      "severidad": "media",
+      "celda": "escandallo-maestro-mexicano.xlsx!Resumen!A21",
+      "hallazgo": "«Un menú degustación de 8-12 pases necesita una ficha por pase: por eso hay doce filas» — texto del representante (restaurante gastronómico) copiado tal cual a una guía de restaurante mexicano de tacos, antojitos y barra de tequilas, cuyo propio docx describe cuatro conceptos (taquería, cantina, familiar, dark kitchen) y ninguno con menú degustación. Rompe la coherencia de concepto que la guía mantiene en los otros 14 libros.",
+      "fix": "Texto por producto: «una carta de 12 platos necesita una ficha por plato» o similar, tomado del cap. 15 del docx de cada hermano."
+    },
+    {
+      "id": "REF-MEX-23",
+      "severidad": "baja",
+      "celda": "checklist-legal.xlsx!Legal!G68=0,00 € (Fiscal) y G69=0,00 € (Local), con G56=10 partidas sin importe",
+      "hallazgo": "Los subtotales por categoría imprimen «0,00 €» en las dos categorías cuyas partidas van todas a presupuestar, justo al lado de una fila (G56, «Partidas SIN importe (a presupuestar)» = 10) que dice que ese dinero existe y no está contado. Es el mismo «0 donde no hay dato» que §7-bis.13 persigue, sólo que producido por un SUMIF en vez de por una resta; el gate «sin_dato_es_vacio_ok: true» del constructor no lo ve porque sólo mira las celdas nuevas de detalle.",
+      "fix": "'=IF(COUNTIFS($B$5:$B$52,$A68,$G$5:$G$52,\"<>\")=0,\"\",SUMIF(...))' en las 10 filas de subtotal."
+    },
+    {
+      "id": "REF-MEX-24",
+      "severidad": "baja",
+      "celda": "plantilla-turnos-brigada.xlsx!'Turnos Semana'!C25=10 (horas del turno P) con 9 de los 14 puestos en «P», y D31/D33/D34 documentando arts. 34.1, 38.1 y 37.2 ET",
+      "hallazgo": "El cuadrante reparte 40 h en 4 jornadas partidas de 10 h (D5:J5 = P,P,P,P,L,L,L). El libro documenta con detalle el art. 34.1 (40 h de promedio), el 37.1 (descanso semanal), el 38.1 (vacaciones) y el 37.2 (festivos), y no menciona el art. 34.3 ET, que limita a 9 las horas ordinarias diarias salvo que el convenio pacte otra distribución. Quien copie el cuadrante tal cual está asumiendo un pacto de convenio que la guía no le ha dicho que necesita.",
+      "fix": "Nota junto a C25: «10 h/día sólo si el convenio provincial pacta otra distribución de la jornada diaria (art. 34.3 ET); si no, el máximo ordinario son 9 h»."
+    },
+    {
+      "id": "REF-MEX-25",
+      "severidad": "baja",
+      "celda": "70 celdas en los 15 xlsx; p. ej. calculadora-capex!Instrucciones!A13/A15/A17/A18/A19 y calculadora-ticket-medio!Instrucciones!A11:A14",
+      "hallazgo": "70 celdas con relleno VERDE y desbloqueadas contienen PROSA (notas de IVA, «Revisar → Desproteger», la bio de John y la línea de versión), en libros cuya leyenda A9 dice «Celdas verdes = campos editables». El verde deja de significar «escribe aquí» justo en la hoja que enseña a leer el código de color, y la bio y la versión quedan desprotegidas mientras el resto del libro está protegido.",
+      "fix": "Que motor.cierre() pinte las notas con un relleno neutro (o sin relleno) y mantenga locked=True, reservando el verde para las celdas de entrada."
+    }
+  ],
+  "motivo": "NO listo. El dry-run vuelve a salir verde y los gates medibles del constructor son ciertos, pero son gates de FORMA: no miran si el rótulo dice lo mismo que la fórmula, si las notas describen algo que existe, ni si los quince libros cuentan la misma historia. Con las dos lentes aparecen 25 defectos, 8 de severidad alta, y tres de ellos son ids que el informe da por RESUELTOS sin haber abierto el xlsx: TEC-26 (la columna de correspondencia CAPEX no existe: plan_hermanos() no llama a correspondencia_capex(), y las Instrucciones de calculadora-capex se la prometen al cliente), COM-30/DOM-01 (el rótulo sigue diciendo «(3 meses)» sobre una cifra de 6, y conviven cuatro fondos de maniobra: 333.720 €, 45.000 €, «seis meses» y los 25.000-60.000 € del docx) y DOM-22 (Inversión!A62 remite a un bloque de cuadre de financiación que en los hermanos no se escribe, con 158.820 € sin financiar). A eso se suman dos roturas de fuente única que mueven dinero de verdad: la nómina —la brigada del propio kit cuesta 429.042 €/año con SS y el P&L carga 336.000 €, 93.042 €/año menos, verificado con pycel sobre la copia— y el plato estrella, con tres precios (4,50 / 8,20 / 12-15 €) y dos costes (1,20 / 2,46 €) según el libro que se abra. Y el IVA repercutido aplica el 21 % a la fila de refrescos en vez de a la barra de tequilas, 15.840 €/año mal declarados al ritmo de crucero. Por encima de todo queda el hallazgo que el constructor ya escaló y que sigue sin resolver: el docx promete break-even en el mes 8-14 y el libro responde «No alcanzado», con los tres años en pérdidas —y en pérdidas MAYORES en cuanto se corrige la nómina—. Publicar así no es entregar un producto con detalles pendientes: es entregar un plan financiero que se contradice a sí mismo en la cifra por la que se compra la guía."
+}
