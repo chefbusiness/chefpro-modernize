@@ -534,3 +534,7 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   y APPLY completo con respaldo → 18 xlsx → censo 0 → gate offline 22/0 → no-latinos 0 → idempotencia desde lo aplicado 0 → gate LIVE 22 · 0 fallos →
   md5 18/18. Los 3 docx y el PDF siguen v1.1 hasta T7. **T6 hermanos de guías LANZADO** (`guias-v2-hermanos-workflow.js`, runId `wf_0275b1de-bea`,
   7 en serie). Pendiente T7: `documentos.py` + `guion_<pid>.py` + bridge.py (guía ≥ páginas prometidas, 2 bonus) cuando llegue el research con fuentes.
+- **T7 documentos del representante LANZADO** (`guias-v2-documentos-workflow.js` `1fbaf08`, runId `wf_ad6ce831-8dd`): opus construye `guias-v2_0/documentos.py`
+  (md → DOCX + PDF A4, gates §5.6) y `guion_guia_restaurante_gastronomico.py` (22 capítulos con cifras de los xlsx aplicados + research con fuentes),
+  genera con bridge.py (`--model ~deepseek/deepseek-v4-flash-latest --max-tokens 8192`) a `scratchpad/guias/docs/build/`, luego 2 refutadores (dominio
+  y técnico), corrección y crítico. El APPLY (copiar los 4 ficheros a `dl/` con los mismos nombres) lo hace el orquestador tras el crítico.
