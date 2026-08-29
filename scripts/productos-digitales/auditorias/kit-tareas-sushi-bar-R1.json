@@ -1,0 +1,950 @@
+{
+ "productId": "kit-tareas-sushi-bar",
+ "familia": "kit-tareas",
+ "inventario": {
+  "changelog": "Inventario determinista de kit-tareas-sushi-bar (28-ago-2026), sin ediciones. Hallazgos: NINGUNO nuevo. Los 11 xlsx están completos, coherentes entre sí y con dashboard/landing/emails/changelog; los dos gates (postpago offline y censo --fail) están en verde (0 defectos, 1 aviso esperado sobre webhook en modo --offline).",
+  "productId": "kit-tareas-sushi-bar",
+  "ficheros": [
+   {
+    "nombre": "01-apertura-cierre-sushi.xlsx",
+    "tipo": "xlsx",
+    "bytes": 12067,
+    "hojas": [
+     "Instrucciones",
+     "Apertura Barra Sushi",
+     "Cierre Barra Sushi"
+    ],
+    "formulas": 4,
+    "resumen": "Checklists de apertura (temperaturas/equipos, arroz, pescado) y cierre (mermas, descarte arroz/pescado >2h) de la barra sushi, con contador COUNTIF de tareas ✓ vs total"
+   },
+   {
+    "nombre": "02-preparacion-arroz-pescado.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11438,
+    "hojas": [
+     "Instrucciones",
+     "Protocolo Arroz Sushi",
+     "Protocolo Corte Pescado"
+    ],
+    "formulas": 4,
+    "resumen": "Protocolo de lavado/cocción/reposo del arroz sushi y protocolo de inspección visual/corte de pescado crudo (anisakis)"
+   },
+   {
+    "nombre": "03-seguridad-anisakis-appcc.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11182,
+    "hojas": [
+     "Instrucciones",
+     "Registro Congelacion",
+     "Temperaturas Diario",
+     "Trazabilidad Pescado"
+    ],
+    "formulas": 0,
+    "resumen": "Registros APPCC en blanco para rellenar a mano: congelación anisakis por lote (RD 1420/2006), temperaturas diarias por equipo/cámara, y trazabilidad de compras de pescado"
+   },
+   {
+    "nombre": "04-barra-sushi-neta-case.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9051,
+    "hojas": [
+     "Instrucciones",
+     "Mise en Place Barra"
+    ],
+    "formulas": 2,
+    "resumen": "Checklist de montaje de la vitrina neta case (limpieza, temperatura 2-4°C, disposición de piezas de pescado)"
+   },
+   {
+    "nombre": "05-tareas-manager.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10387,
+    "hojas": [
+     "Instrucciones",
+     "Tareas Diarias Manager",
+     "Tareas Semanales Manager"
+    ],
+    "formulas": 4,
+    "resumen": "Checklist diario del manager (reservas, pedido lonja, stock crítico) y semanal (food cost, proveedores, auditoría anisakis)"
+   },
+   {
+    "nombre": "06-tareas-perfiles.xlsx",
+    "tipo": "xlsx",
+    "bytes": 13841,
+    "hojas": [
+     "Instrucciones",
+     "Itamae (Chef Sushi)",
+     "Ayudante Sushi",
+     "Cocina Caliente",
+     "Sala y Servicio"
+    ],
+    "formulas": 8,
+    "resumen": "Checklists diferenciados por rol: itamae, ayudante de sushi, cocina caliente y sala/servicio, sin solapes de tareas"
+   },
+   {
+    "nombre": "07-semanales-mensuales.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10941,
+    "hojas": [
+     "Instrucciones",
+     "Tareas Semanales",
+     "Tareas Mensuales"
+    ],
+    "formulas": 4,
+    "resumen": "Limpieza profunda semanal (vitrina, cámaras, tablas de corte) y mantenimiento mensual de equipos (arrocera, termómetros, sistema de frío)"
+   },
+   {
+    "nombre": "08-eventos-estacionales.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10953,
+    "hojas": [
+     "Instrucciones",
+     "Temporadas Pescado Espana",
+     "Eventos Especiales"
+    ],
+    "formulas": 4,
+    "resumen": "Calendario de temporadas de pescado por estación (invierno/primavera/verano/otoño, 13 tareas completas) y checklist de cena omakase"
+   },
+   {
+    "nombre": "09-plantilla-personalizable.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7924,
+    "hojas": [
+     "Instrucciones",
+     "Plantilla en Blanco"
+    ],
+    "formulas": 0,
+    "resumen": "Plantilla vacía con la misma estructura de columnas para que el cliente cree checklists propios"
+   },
+   {
+    "nombre": "BONUS-01-briefing-servicio.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7583,
+    "hojas": [
+     "Instrucciones",
+     "Briefing Servicio"
+    ],
+    "formulas": 0,
+    "resumen": "Formulario de briefing pre-servicio (pescado del día, alérgenos por mesa, reservas VIP/omakase, stock crítico, objetivos de venta)"
+   },
+   {
+    "nombre": "BONUS-02-calendario-anual.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8909,
+    "hojas": [
+     "Instrucciones",
+     "Calendario Anual"
+    ],
+    "formulas": 0,
+    "resumen": "Calendario de 12 meses con marcadores de temporada de pescado (besugo/bonito/atún rojo/lubina) por trimestre"
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "apertura-cierre",
+    "title": "Apertura y Cierre Sushi",
+    "ruta": "01-apertura-cierre-sushi.xlsx"
+   },
+   {
+    "key": "arroz-pescado",
+    "title": "Arroz y Corte de Pescado",
+    "ruta": "02-preparacion-arroz-pescado.xlsx"
+   },
+   {
+    "key": "anisakis-appcc",
+    "title": "Seguridad Anisakis y APPCC",
+    "ruta": "03-seguridad-anisakis-appcc.xlsx"
+   },
+   {
+    "key": "barra-neta-case",
+    "title": "Barra Sushi y Neta Case",
+    "ruta": "04-barra-sushi-neta-case.xlsx"
+   },
+   {
+    "key": "manager",
+    "title": "Tareas del Manager",
+    "ruta": "05-tareas-manager.xlsx"
+   },
+   {
+    "key": "perfiles",
+    "title": "Perfiles: Itamae y Equipo",
+    "ruta": "06-tareas-perfiles.xlsx"
+   },
+   {
+    "key": "semanales-mensuales",
+    "title": "Semanales y Mensuales",
+    "ruta": "07-semanales-mensuales.xlsx"
+   },
+   {
+    "key": "eventos-estacionales",
+    "title": "Eventos y Temporadas",
+    "ruta": "08-eventos-estacionales.xlsx"
+   },
+   {
+    "key": "plantilla-personalizable",
+    "title": "Plantilla Personalizable",
+    "ruta": "09-plantilla-personalizable.xlsx"
+   },
+   {
+    "key": "bonus-briefing",
+    "title": "BONUS: Briefing de Servicio",
+    "ruta": "BONUS-01-briefing-servicio.xlsx"
+   },
+   {
+    "key": "bonus-calendario",
+    "title": "BONUS: Calendario Anual",
+    "ruta": "BONUS-02-calendario-anual.xlsx"
+   }
+  ],
+  "landing": {
+   "productName": "Kit de Tareas Recurrentes: Sushi Bar — Checklists Operativos con Protocolo Anisakis",
+   "cifras_prometidas": [
+    "11 checklists totales (9 principales + 2 bonus) — coincide con 11 ficheros reales",
+    "Precio €14 (con priceOld €69, -80%) — coincide con schema.price 14.00",
+    "pH arroz ≤4.6 — coincide con hoja Protocolo Arroz Sushi",
+    "Congelación anisakis -20°C / 7 días RD 1420/2006 — coincide con hoja Registro Congelacion",
+    "Vitrina neta case 2-4°C — coincide con hoja Mise en Place Barra",
+    "Versión 1.1 · agosto 2026 — coincide con la hoja Instrucciones de los 11 ficheros"
+   ],
+   "entregables_prometidos": [
+    "Apertura y Cierre Sushi",
+    "Arroz Sushi y Corte de Pescado",
+    "Seguridad Anisakis y APPCC",
+    "Barra Sushi y Vitrina Neta Case",
+    "Tareas del Manager",
+    "Perfiles: Itamae y Equipo",
+    "Semanales y Mensuales",
+    "Eventos y Temporadas",
+    "Plantilla Personalizable",
+    "BONUS: Briefing de Servicio",
+    "BONUS: Calendario Anual"
+   ],
+   "bonus": [
+    "BONUS 1 Briefing de Servicio €15 — coincide con BONUS-01",
+    "BONUS 2 Calendario Anual de Tareas €19 — coincide con BONUS-02"
+   ],
+   "faqs": [
+    "¿Incluye el protocolo de anisakis obligatorio por ley? — cumplido por hoja 03",
+    "¿Sirve para mi tipo de restaurante japonés? — genérico, no verificable en fichero",
+    "¿Incluye preparación de arroz sushi profesional? — cumplido por hoja 02",
+    "¿Qué es la vitrina neta case? — cumplido por hoja 04",
+    "¿Funcionan en Google Sheets y otros programas? — formato .xlsx estándar, correcto",
+    "¿Hay garantía de devolución? — política comercial, no de fichero"
+   ]
+  },
+  "gate": "gate-flujo-postpago.py --offline --only kit-tareas-sushi-bar: files=11 cards=11, 0 fallos, 1 aviso (sección D: drift del mapa vs Netlify y estado del webhook SIN VERIFICAR en modo --offline, esperado). censo-entregables.py --only kit-tareas-sushi-bar --fail --quiet: 11 ficheros censados (11 xlsx, 0 docx, 0 pdf), OK: 0 defectos.",
+  "notas": [
+   "No se encontró ningún caso de contenido erróneo, lógica de negocio mal planteada, ni promesa de landing/dashboard incumplida por los ficheros — más allá de lo que la Fase A determinista ya corrigió (cache, A4, metadata, bio, casilla unificada, versión 1.1), que no se repite aquí por instrucción explícita.",
+   "kit-tareas-sushi-bar NO aparece en src/data/products-catalog.ts (ese catálogo parece cubrir otra familia de productos, no la familia kit-tareas); no se investigó más por estar fuera del alcance pedido (dashboard/PRODUCT_FILES/landing/emails/changelog/gates).",
+   "La hoja 'Temporadas Pescado Espana' (fichero 08) se verificó completa fila a fila (13 tareas en 4 estaciones) para descartar que las secciones de primavera/verano/otoño estuvieran vacías tras el header — están correctamente pobladas.",
+   "La bio del autor (authorBio) y el checklist de anisakis citan correctamente el RD 1420/2006 en landing y en la hoja de Instrucciones del fichero 03, sin discrepancia de normativa."
+  ]
+ },
+ "rondas": {
+  "R1": {
+   "dominio": {
+    "lente": "DOMINIO — Jefe de cocina / itamae con 20 años en sushi bar en España: realismo y orden de tareas, horas, temperaturas, perfiles, zonas, terminología española y campañas del año. Criterio: ¿lo imprimo y se lo doy a mi equipo mañana?",
+    "veredicto": "no listo",
+    "motivo": "No lo imprimiría ni se lo daría a mi equipo mañana. Tres bloques lo impiden. (1) Contenido normativo falso y contradictorio en el fichero que es el gancho comercial del kit: se atribuye al RD 1420/2006 una congelación de «-20 °C / 7 días» cuando el RD y el Rgto. (CE) 853/2004 exigen 24 h a -20 °C (7 días es el criterio FDA de EEUU); y el propio registro pone la alarma en -18 °C, es decir, valida lotes que incumplen su propio límite. (2) El protocolo estrella —el arroz— tiene una cadena horaria físicamente imposible (reposo de 30 min entre las 10:20 y las 10:25, cocción y reposo de 10 min terminados a las 10:50) y su PCC de pH ≤4,6 se manda medir con tiras reactivas y no tiene ni una celda donde anotar el valor, pese a que las Instrucciones ordenan «registrar cada lote». (3) Promesas de landing y dashboard que los ficheros no cumplen: perfil de «delivery», «alérgenos» en el fichero APPCC, «salmón salvaje», «Año Nuevo Chino / festivos asiáticos», «cierres por vacaciones» y la «hoja de control» de mermas a la que remiten tres tareas y que no existe en el kit. A eso se suma que todo el contenido va sin tildes ni eñes («Ano: ______», «OTONO», «Espana», «manana»), que es lo primero que ve el cliente al imprimir, y que las temporadas de bonito y atún rojo están cruzadas —el propio testimonio de la landing dice lo contrario que el fichero—. Ninguna de estas cosas la caza un script: la Fase A dejó los ficheros bien formados, pero el contenido no está listo para un cliente que pagó.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Instrucciones:B7 y Registro Congelacion:A2, B27",
+      "hallazgo": "El kit atribuye al RD 1420/2006 una congelación preventiva de anisakis de «-20 °C durante mínimo 7 días». Es falso: el RD 1420/2006 (art. 3) y el Rgto. (CE) 853/2004 Anexo III Secc. VIII Cap. III.D (modificado por el Rgto. UE 1276/2011) exigen -20 °C en la totalidad del producto durante al menos 24 HORAS, o -35 °C durante al menos 15 horas. Los 7 días son el criterio de la FDA de EEUU, no el español. El error se propaga a la landing y al dashboard (6 apariciones) y multiplica por 7 la capacidad de congelador que el cliente necesita.",
+      "evidencia": "03:Instrucciones:B7 = '▸ El pescado debe congelarse a -20°C durante minimo 7 dias o -35°C durante 15 horas' (el segundo dato SÍ es el legal; el primero no). 03:Registro Congelacion:A2 = 'Normativa: RD 1420/2006 y Reglamento CE 853/2004 — Obligatorio para todo establecimiento que sirva pescado crudo o poco cocinado'. 03:Registro Congelacion:B27 = 'IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias'. Landing astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts: seo.description, hero.checkItems[1], grid.templates[2].desc, why.reasons[1].desc, cta.items[2], faqs[0].a. Dashboard src/pages/KitTareasSushiBarDashboard.tsx:18.",
+      "fix": "Cambiar el texto a «-20 °C en la totalidad del producto durante al menos 24 horas, o -35 °C durante al menos 15 horas (RD 1420/2006 y Rgto. CE 853/2004)». Si se quiere mantener 7 días como margen de seguridad propio del local, decirlo así: «mínimo legal 24 h; este kit propone 7 días como criterio reforzado», nunca atribuido al RD. Corregir en paralelo las 6 apariciones de la landing y la del dashboard."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Registro Congelacion:B27 vs Instrucciones:B7 y Temperaturas Diario:B6",
+      "hallazgo": "El propio registro de anisakis fija dos límites críticos incompatibles: exige congelar a -20 °C o menos, pero la nota de alarma dice reiniciar el conteo solo «si la temperatura sube por encima de -18 °C». Aplicado literalmente, un lote que ha estado a -19 °C se da por válido incumpliendo el requisito legal. -18 °C es el límite del congelador general, no el del tratamiento antiparasitario.",
+      "evidencia": "03:Registro Congelacion:B27 = 'IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias'. Contradice 03:Instrucciones:B7 ('-20°C') y 03:Temperaturas Diario:B6 = 'Camara congelacion anisakis (-20°C o menos)' frente a B9 = 'Congelador general (-18°C o menos)'.",
+      "fix": "Reescribir B27 como: «Si la temperatura sube por encima de -20 °C en cualquier momento, el tratamiento no es válido: reiniciar el cómputo completo». Reservar el -18 °C exclusivamente a la fila del congelador general."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "Protocolo Arroz Sushi:E6-E10 (columna Hora Limite)",
+      "hallazgo": "La cadena horaria del protocolo de arroz —el proceso central del producto— es físicamente imposible. Manda un reposo en agua de 30 minutos que empieza a las 10:20 y cocer a las 10:25, y da por terminado el reposo posterior a la cocción a las 10:50, cuando entre reposo previo (30 min) y cocción real en arrocera (35-50 min) no se puede estar antes de las 11:30. Un ayudante que siga las horas al pie de la letra saca el arroz crudo.",
+      "evidencia": "02:Protocolo Arroz Sushi — B6 'Pesar arroz sushi' E6='10:10'; B7 'Lavar arroz 3-4 veces' E7='10:15'; B8 'Dejar reposar arroz en agua 30 min antes de cocer' E8='10:20'; B9 'Cocer arroz: ratio 1:1.1 (arroz:agua) en arrocera' E9='10:25'; B10 'Dejar reposar 10 min tras coccion (sin abrir tapa)' E10='10:50'.",
+      "fix": "Recalcular la columna E de la hoja hacia atrás desde la hora de apertura real: pesar 09:00, lavar 09:05, reposo 09:10-09:40, cocer 09:40-10:25, reposo 10:25-10:35, avinagrado 10:35, pH 10:45, listo 10:50. O bien sustituir horas absolutas por duraciones («+30 min», «+45 min») para que el cliente ancle su propia hora de apertura."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "Protocolo Arroz Sushi:B18 y B25; Instrucciones:B7",
+      "hallazgo": "El PCC estrella del kit —pH del arroz ≤4,6— no es verificable ni registrable tal y como se entrega. (a) Se manda medir con tiras reactivas, cuya resolución típica es de media unidad de pH: no permiten discriminar 4,5 de 4,7, que es justo la decisión que se pide. (b) No existe NINGUNA celda en todo el kit donde anotar el valor de pH medido: el checklist solo tiene ✓/firma y la hoja de temperaturas no incluye fila de pH, pese a que las Instrucciones ordenan «registrar cada lote». Ante una inspección, el registro que el producto promete no existe.",
+      "evidencia": "02:Instrucciones:B7 = '▸ El pH del arroz DEBE ser ≤4.6 — registrar cada lote'. 02:Protocolo Arroz Sushi:B18 = 'Medir pH con tiras reactivas — registrar (debe ser ≤4.6)'. Columnas de la hoja: A=Nº, B=Tarea, C=Zona, D=Responsable, E=Hora Limite, F=✓ Completada, G=Firma — ninguna de valor. 03:Temperaturas Diario:B5-B11 no incluye ninguna fila de pH (solo cámaras, vitrina, arrocera y arroz de servicio).",
+      "fix": "Sustituir «tiras reactivas» por «pHmetro con electrodo de punción o dilución 1:1 en agua destilada, calibrado semanalmente». Añadir en 03 una hoja o bloque «Registro de pH del arroz» con columnas Fecha / Lote-hora de preparación / kg / pH medido / Acción correctora / Firma, y enlazarla desde 02:B18."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "varios (todos los 11)",
+      "ubicacion": "contenido completo de las hojas de checklist e Instrucciones",
+      "hallazgo": "Todo el contenido está escrito sin tildes ni eñes, de forma inconsistente con las pocas celdas que sí las llevan. El caso más visible: la casilla de año dice «Ano: ______» (ano, no año) en las dos hojas anuales, precisamente las que el cliente cuelga en la oficina. Es un producto de pago que se imprime y se entrega al equipo; con esa ortografía no sale de la impresora.",
+      "evidencia": "08:Temporadas Pescado Espana:A2 = 'Ano: ______'; BONUS-02:Calendario Anual:A2 = 'Ano: ______'. Nombre de hoja '08 → Temporadas Pescado Espana'. 08:A21 = '  OTONO (Sep-Nov)'; BONUS-02:A9 = 'Lubina, langostino, calamar (otono)'. 01:Apertura:B25 = 'Preparar guarniciones: wasabi fresco, gari, salsa soja' junto a B22 'Cortar y porcionar pescado: atun, salmon, hamachi, lubina'; 05:B20 'Confirmar pedido de pescado para manana'; 07:Mensuales:B15 'Evaluacion de desempeno individual'. Inconsistente con 08:B16 'Decoracion tematica: Año Nuevo japones (kadomatsu, noshi)', 04:B8 'hielo pilé', 02:B13 'ángulo 45°' y la línea de versión, que SÍ llevan tildes.",
+      "fix": "Pasar los 11 ficheros por una corrección ortográfica completa (celdas, nombres de hoja y nombres de fichero de las hojas visibles). Prioridad absoluta a 'Ano' → 'Año', 'Espana' → 'España', 'OTONO' → 'OTOÑO', 'manana' → 'mañana', 'desempeno' → 'desempeño', 'Anade' → 'Añade'. Añadir un gate que aborte si aparece «Ano:» o «Espana» en cualquier celda."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "hojas del libro (Itamae, Ayudante Sushi, Cocina Caliente, Sala y Servicio)",
+      "hallazgo": "La landing y el dashboard prometen un perfil de DELIVERY dentro del fichero de perfiles. No existe: el libro tiene cuatro hojas y ni una sola tarea de take away, empaquetado, control de temperatura en transporte o tiempos de reparto en TODO el kit. En un sushi bar español el delivery es una parte central de la facturación; es la primera hoja que el comprador busca.",
+      "evidencia": "06 hojas reales: 'Instrucciones', 'Itamae (Chef Sushi)', 'Ayudante Sushi', 'Cocina Caliente', 'Sala y Servicio'. Búsqueda de 'deliver|take away|takeaway|llevar|recoger' en las 11.000+ celdas de los 11 ficheros: 0 coincidencias. Promesas: kit-tareas-sushi-bar.ts grid.templates[5].desc = '...cocina caliente, sala y servicio, delivery. Roles y responsabilidades sin solapes.' y cta.items[4] = 'Tareas por perfil: itamae, ayudante, cocina caliente, sala, delivery'. Dashboard src/pages/KitTareasSushiBarDashboard.tsx:21 = '...sala/servicio, delivery. Roles sin solapes.'",
+      "fix": "Añadir a 06 una quinta hoja «Delivery y Take Away» (recepción del pedido, montaje de bandeja, separación de arroz/pescado, sellado, bolsa isotérma + acumulador, temperatura de salida, tiempo máximo de entrega, etiquetado de alérgenos, control de incidencias). Alternativa si no se añade: eliminar «delivery» de las 3 promesas de landing y dashboard."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "Sala y Servicio:B8",
+      "hallazgo": "La única tarea de alérgenos de todo el kit enumera cuatro (marisco, soja, sésamo, gluten) y OMITE el pescado, que es el alérgeno principal de un sushi bar, además de huevo (tamago, mayonesas), sulfitos, cacahuete/frutos secos y la distinción crustáceos/moluscos que exige el Anexo II del Rgto. (UE) 1169/2011. Además landing y dashboard prometen «alérgenos» dentro del fichero de APPCC (03) y allí no hay ni una hoja ni una columna de alérgenos. Entregar a un camarero una lista de 4 alérgenos sin «pescado» en un japonés es un riesgo real de reacción y de sanción.",
+      "evidencia": "06:Sala y Servicio:B8 = 'Informar a clientes sobre alergenos (marisco, soja, sesamo, gluten)'. Hojas de 03: 'Instrucciones', 'Registro Congelacion', 'Temperaturas Diario', 'Trazabilidad Pescado' — ninguna de alérgenos. Barrido de 'alerg' en los 11 ficheros: 7 aciertos, todos genéricos (05:B15 'peticiones especiales (alergias, omakase)', 08:B6 'Confirmar numero comensales y alergias 48h antes', BONUS-01:B15-B17 campos en blanco). Promesas: kit-tareas-sushi-bar.ts grid.templates[2].desc = '...control de temperaturas, alérgenos y trazabilidad completa...'; Dashboard línea 18 = '...temperaturas, alérgenos, trazabilidad.'",
+      "fix": "Reescribir 06:Sala y Servicio:B8 como «Informar de los 14 alérgenos del Anexo II del Rgto. 1169/2011; en carta japonesa vigilar especialmente PESCADO, crustáceos, moluscos, soja, gluten (shoyu, panko, tempura), sésamo, huevo, sulfitos y frutos secos». Añadir a 03 una hoja «Matriz de Alérgenos por Plato» (filas = platos de la carta, columnas = 14 alérgenos, casilla de contaminación cruzada) — es lo que la landing ya está vendiendo."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Cierre Barra Sushi:B7; también 05:Tareas Diarias Manager:B16 y 06:Itamae:B14",
+      "hallazgo": "Tres tareas de tres ficheros distintos remiten a una «hoja de control» de mermas que NO se entrega en el kit. El comprador que sigue el checklist llega a «Registrar mermas de pescado en hoja de control» y no tiene dónde. En un sushi bar la merma de pescado es la partida que se controla, y el propio kit la nombra como tarea diaria del itamae y del manager sin darle soporte.",
+      "evidencia": "01:Cierre Barra Sushi:B7 = 'Registrar mermas de pescado en hoja de control'. 05:Tareas Diarias Manager:B16 = 'Controlar mermas: anotar pescado descartado'. 06:Itamae (Chef Sushi):B14 = 'Decidir descarte de piezas y registrar mermas'. Barrido 'merma' en los 11 ficheros: exactamente esas 3 celdas; ninguna hoja del kit tiene columnas de kg, motivo o coste de descarte.",
+      "fix": "Añadir una hoja «Registro de Mermas» (en 01 o como nueva pestaña de 03) con Fecha / Turno / Especie / kg descartados / Motivo (caducado, 2 h expuesto, corte defectuoso, devolución) / Coste €/kg / Coste total / Firma, y un total mensual. Es además el argumento de venta que sostiene el «€14 frente a €40/mes de software»."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ubicacion": "Temporadas Pescado Espana:B11 y B16; BONUS-02:Calendario Anual:A7 y A8",
+      "hallazgo": "Las temporadas de bonito y de atún rojo están cruzadas respecto a la realidad de las costeras españolas Y respecto a lo que la propia landing afirma. El bonito del norte se pesca de junio a octubre (costera del bonito, pico julio-septiembre): en marzo no hay. El atún rojo de almadraba se captura de abril a junio, es decir primavera. El kit pone bonito en primavera y atún rojo en verano; el testimonio de la landing dice literalmente lo contrario y es el que acierta. Un cliente que planifique la carta con este calendario pide producto fuera de campaña.",
+      "evidencia": "08:Temporadas Pescado Espana:A10 = '  PRIMAVERA (Mar-May)', B11 = 'Anotar disponibilidad: bonito, sardina, boqueron, sepia' (E11='Marzo'); A15 = '  VERANO (Jun-Ago)', B16 = 'Anotar disponibilidad: atun rojo, pez espada, chipiron, gamba roja'. BONUS-02:A7 = 'Bonito, sardina, boqueron (primavera)' marcado en D7/E7/F7 (Mar-May); A8 = 'Atun rojo, gamba roja (verano)' marcado en G8/H8/I8 (Jun-Ago). Contradice kit-tareas-sushi-bar.ts testimonials.items[5].text = 'atún rojo en primavera, bonito del norte en verano…'. Añadido: 08:B8 = 'Negociar precio atun rojo de temporada' está colocado bajo '  INVIERNO (Dic-Feb)' con E8='Enero'.",
+      "fix": "Intercambiar: primavera → atún rojo de almadraba (abr-jun), sepia, boquerón; verano → bonito del norte (jun-oct), pez espada, chipirón, gamba roja, sardina (jul-sep, cuando está grasa). Mover 'Negociar precio atún rojo' a febrero-marzo como contratación previa a la almadraba y decirlo así en el texto. Corregir en paralelo BONUS-02:A7 y A8."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "media",
+      "fichero": "04-barra-sushi-neta-case.xlsx",
+      "ubicacion": "Instrucciones:B8, Mise en Place Barra:B13 y B29; 01:Cierre:B10",
+      "hallazgo": "La regla de las 2 horas está mal planteada: se aplica a piezas que están DENTRO de una vitrina refrigerada a 2-4 °C, donde por definición no están «fuera de refrigeración». Aplicada literalmente obliga a descartar toda la neta case cada dos horas, lo que dispara el food cost en el producto más caro de la casa. Además el propio fichero usa dos formulaciones distintas de la misma regla («sin refrigeración» vs «de exposición»).",
+      "evidencia": "04:Instrucciones:B8 = '▸ Rotacion FIFO: las piezas no pueden estar mas de 2h sin refrigeracion'. 04:Mise en Place Barra:B13 = 'Anotar hora de montaje — maximo 2h de exposicion' (E13='11:25'). 04:B29 = 'Descartar piezas con mas de 2h fuera de refrigeracion' (E29='Continuo'). 01:Cierre Barra Sushi:B10 = 'Descartar piezas con mas de 2h fuera de refrigeracion'. Todo ello con 04:B7 = 'Verificar temperatura vitrina (2-4°C)'.",
+      "fix": "Separar los dos supuestos con dos reglas distintas: (a) pieza FUERA de refrigeración (tabla del itamae, barra sin frío): máximo 2 h y descarte; (b) pieza en neta case a 2-4 °C: rotación FIFO y consumo dentro de la jornada, con verificación horaria de temperatura y descarte al cierre. Reescribir B8, B13, B29 y 01:B10 en consecuencia."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Apertura Barra Sushi:A2 y columna E completa (E6-E35); mismo patrón en 02, 04, 05, 06",
+      "hallazgo": "La cabecera ofrece marcar «☐ Almuerzo ☐ Cena» pero TODAS las horas límite de la hoja son de servicio de mediodía (10:00-11:45). Si el encargado marca «Cena», el 100 % de la columna Hora Límite es incorrecta. Y como corolario operativo: el arroz se manda descartar a las 4 h de preparado (listo 11:12 → caducado 15:12) pero en todo el kit no hay una sola tarea de preparar el segundo lote para la cena. El kit, tal cual, solo cubre un servicio al día.",
+      "evidencia": "01:Apertura Barra Sushi:A2 = 'Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Responsable: _________________________' con E6='10:00' … E35='11:45'. 02:Protocolo Arroz Sushi:B26 = 'Anotar hora de preparacion — descartar tras 4h' (E26='11:15') y B19 'Cubrir con pano humedo' E19='11:12'. 01:Cierre Barra Sushi:B9 = 'Descartar arroz sobrante — NUNCA reutilizar al dia siguiente'. Barrido de todas las hojas: ninguna tarea de segundo lote de arroz.",
+      "fix": "Dos opciones: (a) desdoblar las hojas de apertura y arroz en versión Almuerzo y versión Cena con sus horas; o (b) sustituir las horas absolutas por offsets respecto a la apertura del turno («A-120 min», «A-30 min») y añadir a 01:Apertura y a 02 un bloque «SEGUNDO LOTE (turno cena)» con las mismas tareas de arroz."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Apertura Barra Sushi:B7 vs Cierre Barra Sushi:B8; y 03:Temperaturas Diario:B5",
+      "hallazgo": "El mismo equipo tiene dos límites críticos distintos en el mismo fichero: la cámara de pescado crudo se verifica a «-2 a 0 °C» en apertura y se le devuelve producto a «0-2 °C» en cierre. Un registro APPCC con dos rangos para el mismo equipo es una no conformidad directa en inspección, y además el equipo no sabe cuál cumplir. Añadido: -2 °C está en el punto de congelación del pescado (superchilling), no es el estándar de cámara de servicio diario, que es hielo fundente 0-2 °C.",
+      "evidencia": "01:Apertura Barra Sushi:B7 = 'Verificar temperatura camara pescado crudo (-2 a 0°C)'. 01:Cierre Barra Sushi:B8 = 'Envolver pescado restante y devolver a camara (0-2°C)'. 03:Temperaturas Diario:B5 = 'Camara pescado crudo (-2 a 0°C)'.",
+      "fix": "Unificar en 0-2 °C (temperatura próxima a la de fusión del hielo, que es lo que exige el Rgto. 853/2004 para productos frescos de la pesca) en las tres celdas, o justificar explícitamente el superchilling y aplicarlo también en el cierre. Un solo rango, escrito igual en los tres sitios."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Temperaturas Diario:B14 vs estructura C4:I11",
+      "hallazgo": "La hoja pide dos registros diarios y la hora, pero la rejilla solo tiene UNA celda por equipo y día. El registro que se manda hacer no cabe en el formato que se entrega: el operario acabará escribiendo dos números apretados en una celda o registrando solo uno, y el kit se vende precisamente como «evidencia ante Sanidad».",
+      "evidencia": "03:Temperaturas Diario:B14 = 'Registrar 2 veces al dia: apertura y cierre. Anotar hora.' Cabecera C4:I4 = 'Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo' — 7 columnas para 7 días, una celda por cruce equipo/día (filas 5-11).",
+      "fix": "Desdoblar cada columna de día en dos subcolumnas (Apertura / Cierre) con fila de hora, o cambiar el layout a filas = registros (Fecha, Hora, Equipo, Temp, Firma, Acción correctora) que además escala mejor y es el formato que pide un inspector."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Registro Congelacion (columnas A5:I5) y todo el flujo diario",
+      "hallazgo": "El circuito del pescado tratado tiene un hueco lógico: se registra el inicio y el fin de congelación, pero ninguna tarea del flujo diario obliga a verificar, ANTES de cortar, que la pieza que se va a servir cruda pertenece a un lote con congelación finalizada. La única verificación previa al corte contempla solo el caso de que congele el proveedor. Tampoco hay etiquetado del lote ni registro de descongelación (0 apariciones de «descongel» en los 11 ficheros), que es donde se rompe la cadena en la práctica.",
+      "evidencia": "03:Registro Congelacion cabecera A5:I5 = '#','Especie Pescado','Proveedor/Lonja','Fecha Entrada','Inicio Congelacion','Fin Congelacion','Temp °C','Verif.','Firma Responsable' — sin columna de kg, sin nº de lote y sin destino. 02:Protocolo Corte Pescado:B7 = 'Verificar documentacion congelacion anisakis del proveedor' (único chequeo previo al corte, y solo del proveedor). Barrido 'descongel' en los 11 ficheros: 0 coincidencias.",
+      "fix": "Añadir a Registro Congelacion las columnas «Nº lote / etiqueta», «kg» y «Apto para crudo (fecha)». Añadir a 02:Protocolo Corte Pescado una tarea previa: «Comprobar etiqueta del lote: congelación finalizada y validada antes de cortar para consumo en crudo». Añadir un bloque de descongelación controlada (en cámara a 0-2 °C, fecha/hora de entrada y de uso)."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Instrucciones:B6-B8 (todo el fichero)",
+      "hallazgo": "El kit presenta la congelación preventiva como obligatoria sin excepción, y no menciona la exención del Rgto. (UE) 1276/2011 para productos de acuicultura criados con pienso y en entorno libre de parásitos (con documentación del proveedor). Dos de las especies que el propio kit pone en la barra —salmón y lubina— son de acuicultura en la práctica totalidad de los sushi bars españoles. Congelarlas 7 días destroza su textura para nigiri y sashimi, y cuesta cámara y dinero sin necesidad legal.",
+      "evidencia": "03:Instrucciones:B6 = '▸ Este registro es OBLIGATORIO por la legislacion espanola para servir pescado crudo' (sin matices). Especies servidas crudas según 01:Apertura:B22 = 'Cortar y porcionar pescado: atun, salmon, hamachi, lubina' y 04:Mise en Place Barra:B10 = 'Disponer salmon (sake) — junto al atun', B11 = 'Disponer hamachi, lubina, otros pescados del dia'.",
+      "fix": "Añadir una nota en 03:Instrucciones: «Excepción (Rgto. UE 1276/2011): los productos de la acuicultura criados con pienso que no puede contener parásitos y en un entorno libre de parásitos vivos están exentos, siempre que el proveedor lo acredite por escrito. Archivar esa acreditación junto a este registro». Y una columna «Origen: Salvaje / Acuicultura (nº certificado)» en Registro Congelacion."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ubicacion": "Plantilla en Blanco (falta fila de total) vs Instrucciones:B20",
+      "hallazgo": "La plantilla en blanco es el único de los 11 ficheros sin la fórmula de «Tareas completadas», pese a que sus propias Instrucciones prometen el contador y a que el changelog v1.1 vende «total que se recalcula si añades o quitas tareas». Es justo la hoja diseñada para que el cliente añada tareas, o sea, donde más importa. El comprador crea su checklist a medida y se queda sin la única función viva del kit.",
+      "evidencia": "09:Instrucciones:B20 = 'Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.' 09:Plantilla en Blanco termina en B27 'Verificado por: ...' / B28 'Firma: ...' sin fila 'Tareas completadas' — las otras 10 hojas de checklist sí la tienen (p. ej. 04:D32 '=COUNTIF(F5:F30,\"✓\")' y F32 '=COUNTIF(B5:B30,\"?*\")'). La validación ✓/—/N/A sí está aplicada en 09 (F6:F24), luego la omisión es solo de las fórmulas. src/data/productos-changelog.ts, entrada 'kit-tareas-sushi-bar' v1.1: 'total que se recalcula en las hojas de checklist si añades o quitas tareas'.",
+      "fix": "Añadir en 09:Plantilla en Blanco la fila 26 con 'Tareas completadas:' , D26 '=COUNTIF(F5:F24,\"✓\")', E26 'de', F26 '=COUNTIF(B5:B24,\"?*\")', replicando el formato de las otras hojas."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "varios (01, 02, 04, 05, 06, 07, 08, 09)",
+      "ubicacion": "Instrucciones:B15/B16 de cada fichero vs última fila de datos de cada hoja",
+      "hallazgo": "Las Instrucciones de los 8 ficheros de checklist dicen «Añade tareas específicas de tu local en las filas vacías del final». No hay filas vacías al final en ninguna hoja: entre la última tarea y la fila del total solo hay una fila en blanco de separación, y esa fila queda FUERA del rango de ambos COUNTIF y fuera de la validación del desplegable. Quien siga la instrucción al pie de la letra escribe una tarea que ni se cuenta ni se puede marcar, y el total pasa a mentir en silencio.",
+      "evidencia": "01:Apertura Barra Sushi: última tarea en la fila 35, fila 36 vacía, total en la 37 con F37='=COUNTIF(B5:B35,\"?*\")' y validación aplicada solo a 'F6 F7 F8 F9 F10 F13 … F35'. Instrucción: 01:Instrucciones:B16 = '▸ Anade tareas especificas de tu local en las filas vacias del final'. Mismo patrón en 02 (B5:B26 / fila 27 vacía), 04 (B5:B30), 05, 06, 07, 08, 09.",
+      "fix": "Dejar 5 filas realmente vacías al final de cada checklist, dentro del rango de los dos COUNTIF y con la validación ✓/—/N/A ya aplicada, y actualizar la instrucción para que nombre esas filas («filas libres al final del bloque, antes del total»). Alternativa: convertir cada bloque en tabla de Excel para que los rangos crezcan solos."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ubicacion": "Temporadas Pescado Espana:B11, B22; BONUS-02:Calendario Anual:A7, A9",
+      "hallazgo": "Más errores de temporada además del cruce bonito/atún: la sardina se sitúa en primavera (marzo), que es su peor momento —flaca y en desove—, cuando en España se come de junio a septiembre («por San Juan, la sardina moja el pan»); y la lubina salvaje se sitúa en otoño cuando su temporada es el invierno (nov-mar). Y sardina, boquerón y caballa, que son las especies de mayor prevalencia de anisakis, se listan como «disponibilidad» sin una sola advertencia de que exigen congelación previa antes de cualquier uso en crudo o marinado.",
+      "evidencia": "08:Temporadas Pescado Espana:A10 = '  PRIMAVERA (Mar-May)' con B11 = 'Anotar disponibilidad: bonito, sardina, boqueron, sepia' (E11='Marzo'); A21 = '  OTONO (Sep-Nov)' con B22 = 'Anotar disponibilidad: gamba, langostino, calamar, lubina' (E22='Septiembre'). BONUS-02:A7 = 'Bonito, sardina, boqueron (primavera)'; A9 = 'Lubina, langostino, calamar (otono)'.",
+      "fix": "Mover sardina a verano (jun-sep) y lubina salvaje a invierno (nov-mar); dejar en otoño calamar, gamba y langostino. Añadir en 08 una nota bajo la sección: «Sardina, boquerón y caballa: alta prevalencia de anisakis — congelación previa obligatoria antes de cualquier preparación cruda, marinada o en salazón»."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "Calendario Anual: bloque EVENTOS CLAVE (A12:A17) y bloque ADMINISTRACION (A33)",
+      "hallazgo": "El calendario anual, que es un bonus valorado en €19, falla en las dos cosas que un hostelero español mira primero. (a) Falta el mayor pico del año: las cenas de empresa y comidas de Navidad de noviembre-diciembre (solo aparece Nochevieja); tampoco está el Día de la Madre. En su lugar figura «Halloween» como evento clave de un sushi bar. (b) «Renovar registro sanitario» cada enero es un error: la inscripción en el RGSEAA (RD 191/2011) no se renueva anualmente; lo que hay que hacer es comunicar modificaciones o cese. Faltan, en cambio, las obligaciones anuales reales: DDD con certificado, revisión de extintores por empresa autorizada, formación de manipuladores y revisión del plan de autocontroles APPCC.",
+      "evidencia": "BONUS-02:Calendario Anual:A12='Ano Nuevo japones (Oshogatsu)' (B12), A13='San Valentin (omakase parejas)' (C13), A14='Semana Santa (pico reservas)' (D14,E14), A15='Inicio temporada terraza' (E15,F15), A16='Halloween / otono tematico' (K16), A17='Nochevieja (menu especial)' (M17). A33='Renovar registro sanitario' (B33). A24='Revision extintores y emergencia' (G24, M24) sin distinguir revisión anual de retimbrado. Barrido de 'vacacion' y 'empresa' en los 11 ficheros: 0 coincidencias.",
+      "fix": "Añadir a EVENTOS CLAVE: «Cenas de empresa y comidas de Navidad (captación oct → servicio nov-dic)» marcado en K/L/M y «Día de la Madre» en E. Sustituir A33 por «Revisar y comunicar modificaciones del RGSEAA (no requiere renovación anual)» y añadir filas de «DDD con certificado», «Revisión anual de extintores por empresa autorizada / retimbrado a 5 años», «Formación de manipuladores» y «Revisión del plan APPCC». Añadir la fila «Cierre por vacaciones» que la landing promete."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "Calendario Anual: bloques TEMPORADA PESCADO (A6:A9) y EVENTOS CLAVE (A12)",
+      "hallazgo": "Tres promesas explícitas de landing y dashboard no están en el fichero: «salmón salvaje», «festivos asiáticos» (en plural: solo hay Oshogatsu) y «cierres por vacaciones». Además la promesa de «salmón salvaje» es en sí un error de concepto: en España no hay temporada comercial de salmón salvaje —su venta está prohibida o restringidísima— y el salmón que se sirve en sushi es de acuicultura, disponible todo el año, o sea que no tiene temporada que calendarizar. Y el dashboard promete además «Año Nuevo Chino», que es el que mueve reservas en España y que no aparece por ningún sitio.",
+      "evidencia": "BONUS-02:A6-A9 = 'Besugo, merluza, rape (invierno)', 'Bonito, sardina, boqueron (primavera)', 'Atun rojo, gamba roja (verano)', 'Lubina, langostino, calamar (otono)' — sin salmón. A12 = 'Ano Nuevo japones (Oshogatsu)' (B12, enero) es el único festivo asiático. Barrido de 'salmon salvaje', 'chino', 'lunar' y 'vacacion' en los 11 ficheros: 0 coincidencias. Promesas: kit-tareas-sushi-bar.ts bonus.items[1].desc = '12 meses con temporadas de pescado en España (atún rojo, bonito del norte, salmón salvaje), festivos asiáticos, … y cierres por vacaciones'; grid.templates[7].desc = '…(atún rojo, bonito, salmón salvaje) … y festivos asiáticos'; Dashboard línea 23 = 'Atún rojo, bonito, salmón salvaje. … San Valentín, Año Nuevo Chino.'",
+      "fix": "En el fichero: añadir filas «Año Nuevo Chino / Lunar (ene-feb, fecha variable)», «Golden Week / Tanabata / Obon» si se quiere sostener el plural, y «Cierre por vacaciones del personal». En la landing y el dashboard: sustituir «salmón salvaje» por una especie con temporada real (p. ej. «vieira» o «besugo»), porque no es corregible en el fichero — no existe esa temporada."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "Protocolo Arroz Sushi:B25",
+      "hallazgo": "La acción correctiva del PCC de pH es tirar el lote entero: «Si pH >4.6: descartar lote y preparar nuevo». Ningún jefe de cocina tira 5 kg de arroz por unas décimas cuando la corrección es trivial —añadir sushi-zu y volver a medir— y, si aun así no baja, todavía queda la opción de mantenerlo bajo control de temperatura en lugar de a ambiente. Tal y como está escrita, la regla convierte un ajuste de dos minutos en una pérdida diaria.",
+      "evidencia": "02:Protocolo Arroz Sushi:B25 = 'Si pH >4.6: descartar lote y preparar nuevo' (C25='Cocina', D25='Itamae', E25='11:15'), dentro del bloque A21 '  CONTROL DE CALIDAD ARROZ'.",
+      "fix": "Reescribir como escalado de acciones correctivas: «1) Añadir sushi-zu en pequeñas cantidades, mezclar y volver a medir. 2) Si sigue >4,6 tras dos correcciones, no mantener a temperatura ambiente: refrigerar a ≤5 °C y usar en elaboraciones cocinadas. 3) Descartar solo si no es apto para ningún uso.» Registrar la acción tomada en la hoja de pH."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "Protocolo Arroz Sushi:B13",
+      "hallazgo": "La receta del sushi-zu es ambigua en la base de cálculo y probablemente insuficiente para alcanzar el pH que el propio kit fija como límite crítico. «Por 500g arroz» no dice si es arroz crudo o cocido, y la diferencia es del doble largo: 500 g crudos dan ~1,1 kg cocidos. Si se interpreta como crudo, 80 ml de vinagre sobre 1,1 kg de arroz cocido es ~7 % de avinagrado, por debajo del ~10 % habitual para bajar de 4,6 con seguridad; si se interpreta como cocido, la pieza sale salada y ácida. El equipo no puede saber cuál de las dos.",
+      "evidencia": "02:Protocolo Arroz Sushi:B13 = 'Preparar sushi-zu: 80ml vinagre + 30g azucar + 15g sal por 500g arroz' (bloque A12 '  SAZONADO (SUSHI-ZU)'), frente a B18 = 'Medir pH con tiras reactivas — registrar (debe ser ≤4.6)' y B25 = 'Si pH >4.6: descartar lote y preparar nuevo'.",
+      "fix": "Especificar la base y subir la dosis: «Sushi-zu por cada 1 kg de arroz CRUDO (≈2,2 kg cocido): 200 ml de vinagre de arroz (acidez ≥4,3 %), 60-100 g de azúcar y 30 g de sal. Ajustar hasta pH ≤4,6 verificado.» Y añadir la advertencia de que la acidez del vinagre comercial varía y hay que validar la receta con el pHmetro la primera vez."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Temperaturas Diario:B10 y B11 (frente a 02:Protocolo Arroz Sushi:B23)",
+      "hallazgo": "Dos de las siete filas del registro de temperaturas no sirven como puntos de control. «Arroz servicio (ambiente) (20-37°C)» es una horquilla de 17 grados: con ese límite no se puede detectar ninguna desviación, y además contradice el rango que da el otro fichero (35-37 °C). «Arrocera (temp coccion) (100°C)» es un dato que no se puede desviar ni medir de forma útil: llena de ruido el registro y le quita credibilidad ante un inspector que verá seis días de «100» copiados.",
+      "evidencia": "03:Temperaturas Diario:B10 = 'Arrocera (temp coccion) (100°C)', B11 = 'Arroz servicio (ambiente) (20-37°C)'. 02:Protocolo Arroz Sushi:B23 = 'Temperatura: debe estar templado (35-37°C) al servir' (bloque '  CONTROL DE CALIDAD ARROZ').",
+      "fix": "Sustituir la fila de arrocera por «pH del arroz (≤4,6)», que sí es el PCC real y hoy no se registra en ninguna parte (ver DOM-04). Cambiar la fila del arroz de servicio por «Arroz de servicio: pH ≤4,6 verificado; hora de preparación y hora límite de uso (+4 h)», que es lo que de verdad justifica tenerlo a temperatura ambiente."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "media",
+      "fichero": "05-tareas-manager.xlsx",
+      "ubicacion": "Tareas Diarias Manager:B20 (E20='22:00'); y 01:Cierre Barra Sushi:B26 (E26='23:30')",
+      "hallazgo": "El pedido a lonja se programa a las 22:00 y a las 23:30 con una nota que se contradice a sí misma: «la lonja cierra temprano». Las lonjas y los mayoristas de pescado españoles subastan de madrugada (Mercamadrid, pescado: aprox. 01:00-06:00) y los pedidos se cursan por la tarde, antes de las 18-19 h, o de madrugada. Un manager que siga esta hoja llama cuando ya no hay nadie y se queda sin género del día siguiente.",
+      "evidencia": "05:Tareas Diarias Manager:B20 = 'Confirmar pedido de pescado para manana (lonja cierra temprano)' con E20 = '22:00', bajo el bloque A18 '  CIERRE Y PEDIDOS'. 01:Cierre Barra Sushi:B26 = 'Preparar pedido pescado para manana (lonja/proveedor)' con E26 = '23:30'.",
+      "fix": "Mover la tarea de confirmación del pedido al bloque de tarde con hora límite 18:00 («antes del cierre de pedidos del proveedor / mayorista») y dejar en el cierre solo «Anotar necesidades observadas en el servicio para el pedido de mañana». Añadir una casilla editable de «Hora de corte de pedidos de mi proveedor: ___» para que cada local ponga la suya."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Apertura Barra Sushi:B6 (E6='10:00')",
+      "hallazgo": "La primera tarea del kit es imposible en el minuto en que se manda: «Encender vitrina neta case y verificar 2-4°C» con hora límite 10:00. Una vitrina que se acaba de encender tarda 30-45 minutos en estabilizar. Además, en un sushi bar la neta case no se apaga por la noche: encenderla cada mañana es en sí una mala práctica que este checklist está fijando por escrito como estándar.",
+      "evidencia": "01:Apertura Barra Sushi:B6 = 'Encender vitrina neta case y verificar 2-4°C' (C6='Barra sushi', D6='Itamae', E6='10:00'), primera fila del bloque A5 '  TEMPERATURAS Y EQUIPOS'. Compárese con 04:Mise en Place Barra:B7 = 'Verificar temperatura vitrina (2-4°C)' con E7='11:05', que sí deja margen.",
+      "fix": "Separar en dos tareas: «Comprobar que la vitrina ha permanecido encendida toda la noche y registrar temperatura» (10:00) y, solo para el caso de apagado, «Si estuvo apagada, encender y NO cargar producto hasta verificar 2-4 °C estables (mín. 45 min)». Alinear con la verificación de 04:B7."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Cierre Barra Sushi:B18; y 06:Ayudante Sushi:B13",
+      "hallazgo": "El kit instruye por escrito a no usar detergente en un utensilio que está en contacto directo con alimento listo para consumo. La práctica tradicional del hangiri es defendible, pero puesta como norma escrita en un documento de autocontroles —que este kit vende como evidencia ante Sanidad— es una no conformidad servida en bandeja, y contradice el propio kit, que en la misma familia de superficies sí manda sumergir las tablas en solución desinfectante.",
+      "evidencia": "01:Cierre Barra Sushi:B18 = 'Limpiar hangiri (cubo arroz) con pano — NUNCA jabon'. 06:Ayudante Sushi:B13 = 'Lavar hangiri (solo con agua, sin jabon)'. Contraste: 07:Tareas Semanales:B8 = 'Desinfeccion tablas de corte (sumergir en solucion)'.",
+      "fix": "Reescribir como: «Hangiri: lavar con agua caliente y cepillo, sin detergentes agresivos ni abrasivos; si se usa detergente apto para uso alimentario, aclarar exhaustivamente. Secar boca abajo al aire, nunca guardar húmedo. Sanitizar con la periodicidad del plan de L+D.» Añadir el hangiri al plan de limpieza semanal de 07."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "media",
+      "fichero": "05-tareas-manager.xlsx",
+      "ubicacion": "Tareas Diarias Manager:B7; y ausencia de hoja de recepción en 03",
+      "hallazgo": "No hay checklist de recepción de mercancía, que es el primer punto de control de cualquier APPCC de pescado: temperatura a la llegada, estado organoléptico, integridad del envase, etiquetado, y criterio de aceptación o rechazo con su registro. Lo único que existe es una línea de «verificar recepción» sin soporte, y la hoja de trazabilidad registra la compra a posteriori pero no la decisión de aceptar o rechazar. Para un producto que se vende como APPCC es un hueco de peso.",
+      "evidencia": "05:Tareas Diarias Manager:B7 = 'Verificar recepcion pedido pescado de lonja/proveedor' (E7='09:45') — única mención de recepción en los 11 ficheros. 03:Trazabilidad Pescado cabecera A3:H3 = '#','Especie','Proveedor/Lonja','Fecha Compra','Lote/Albaran','Zona Captura (FAO)','Caducidad','Firma' — sin temperatura de recepción ni casilla aceptado/rechazado.",
+      "fix": "Añadir a 03 una hoja «Control de Recepción de Pescado» con Fecha / Hora / Proveedor / Especie / kg / Temperatura medida (°C) / Aspecto (ojos, agallas, olor, textura) / Etiquetado y zona FAO OK / ACEPTADO-RECHAZADO / Motivo de rechazo / Firma. Añadir la columna de temperatura de recepción también a Trazabilidad Pescado."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "media",
+      "fichero": "05-tareas-manager.xlsx",
+      "ubicacion": "Tareas Diarias Manager y Tareas Semanales Manager (contenido completo)",
+      "hallazgo": "Landing y dashboard prometen en el fichero del manager «comparativa de proveedores y reporting». No hay ninguna tabla comparativa ni ninguna plantilla de reporting: solo dos líneas de checklist («negociar precios», «revisar ventas vs objetivo») sin ningún soporte donde volcar cifras. El comprador que busca justificar los €14 frente al software de gestión abre este fichero y encuentra 22 casillas de tick.",
+      "evidencia": "05 hojas: 'Instrucciones', 'Tareas Diarias Manager' (14 tareas), 'Tareas Semanales Manager' (8 tareas). B7 semanal = 'Negociar precios con proveedores de lonja'; B19 diario = 'Revisar ventas del dia vs objetivo'; B6 semanal = 'Revisar food cost de pescado vs ventas sushi'. Ninguna celda numérica ni tabla en todo el libro. Promesas: kit-tareas-sushi-bar.ts grid.templates[4].desc = '…revenue diario, comparativa de proveedores y reporting'; Dashboard línea 20 = '…revenue, proveedores, reporting.'",
+      "fix": "Añadir a 05 dos hojas ligeras: «Comparativa de Proveedores» (Especie / Proveedor A €/kg / Proveedor B €/kg / Proveedor C €/kg / Mejor precio / Observaciones de calidad) y «Reporting Diario» (Fecha / Ventas / Nº comensales / Ticket medio / Compras de pescado / Food cost % / Mermas €), con totales semanales. Si no se añaden, quitar «comparativa de proveedores y reporting» de landing y dashboard."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "baja",
+      "fichero": "varios (01, 02, 04, 06)",
+      "ubicacion": "01:Apertura:B26 y B17-cierre; 02:Protocolo Corte Pescado:B14; 04:Mise en Place Barra:B21; 06:Ayudante Sushi:B8 y B11",
+      "hallazgo": "Terminología mezclada: un kit en español para itamaes usa anglicismos innecesarios donde el término profesional en España es el japonés o el castellano. «Bamboo mats» es makisu o esterilla de bambú; «plastic wrap» es film transparente. Aparecen 5 veces. Y «hamachi (pez limón)» equipara dos especies distintas: hamachi es Seriola quinqueradiata (yellowtail japonés) y el pez limón español es Seriola dumerili (lecha o serviola) — a un itamae le chirría y a un proveedor le hace mandar otra cosa.",
+      "evidencia": "01:Apertura Barra Sushi:B26 = 'Preparar bamboo mats con plastic wrap nuevo'; 01:Cierre:B17 = 'Descartar bamboo mats usados y plastic wrap'; 04:Mise en Place Barra:B21 = 'Preparar bamboo mats nuevos con plastic wrap'; 04:B25 = 'Renovar plastic wrap de bamboo mats cada 2 horas'; 06:Ayudante Sushi:B8 = 'Preparar bamboo mats con plastic wrap' y B11 = 'Renovar plastic wrap cada 2 horas'. 02:Protocolo Corte Pescado:B14 = 'Hamachi (pez limon): fileteado, corte fino para sashimi'.",
+      "fix": "Sustituir «bamboo mats» por «makisu (esterilla de bambú)» y «plastic wrap» por «film transparente» en las 5 celdas. Cambiar B14 por «Hamachi / seriola japonesa (Seriola quinqueradiata; sustituto local: lecha o pez limón, Seriola dumerili)»."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "baja",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "Protocolo Corte Pescado:B22",
+      "hallazgo": "Error de técnica en el inari: el aburaage (bolsita de tofu frito) no se «hidrata» — se desgrasa escaldándolo en agua hirviendo y luego se cuece en dashi con soja, azúcar y mirin. «Hidratar» describe otro producto (el aburaage seco no es lo habitual en España, donde llega refrigerado o congelado). Además «Tofu piel» no es la denominación de nada: es aburaage o bolsita de tofu frito.",
+      "evidencia": "02:Protocolo Corte Pescado:B22 = 'Tofu piel (inari): hidratar y sazonar bolsillos de tofu frito' (C22='Cocina', D22='Ayudante sushi', E22='11:30'), dentro del bloque A19 '  PREPARACIONES ESPECIALES'.",
+      "fix": "Reescribir como: «Inari (aburaage): escaldar para desgrasar, escurrir y cocer en dashi con soja, mirin y azúcar; enfriar y escurrir antes de rellenar»."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "baja",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "Cocina Caliente (6 tareas) y ausencia de perfil de office",
+      "hallazgo": "El fichero de perfiles se queda corto en dos frentes que un jefe de cocina cubre el primer día. La hoja de cocina caliente tiene solo 6 tareas y no incluye control del aceite de fritura (cambio, filtrado, polaridad), temperatura de servicio de caldos y ramen (≥65 °C), enfriamiento rápido de elaboraciones ni regeneración. Y no existe perfil de office/friegaplatos, que en un japonés maneja la vajilla, las tablas y el material del itamae. Las Instrucciones afirman que «cada perfil tiene responsabilidades claras y diferenciadas».",
+      "evidencia": "06:Cocina Caliente:B6-B11 = 'Preparar platos calientes: tempura, yakitori, ramen, gyoza', 'Mise en place cocina caliente: salsas, rebozados, caldos', 'Preparar tempura durante servicio (fritura al momento)', 'Control temperatura aceite fritura (170-180°C)', 'Preparar edamame, sopa miso, arroz de acompanamiento', 'Limpieza profunda cocina caliente al cierre'. 06:Instrucciones:B6 = '▸ Cada perfil tiene responsabilidades claras y diferenciadas'. Hojas del libro: solo Itamae, Ayudante Sushi, Cocina Caliente, Sala y Servicio.",
+      "fix": "Ampliar Cocina Caliente con: filtrado diario y cambio de aceite con registro, temperatura de servicio de caldos ≥65 °C, enfriamiento rápido (de 65 a 10 °C en menos de 2 h) y control de contaminación cruzada de alérgenos en la freidora. Añadir una hoja «Office y Lavado» (vajilla, temperatura del lavavajillas, tablas por color, material del itamae, gestión de residuos y aceite usado)."
+     }
+    ]
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL — fórmulas (rangos, evaluación con pycel cambiando inputs), validaciones de datos, formato condicional, formatos numéricos, anchos/wrap/altos de fila, celdas combinadas, ortografía y coherencia instrucciones↔hojas reales",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/08-eventos-estacionales.xlsx",
+      "ubicacion": "hoja «Temporadas Pescado Espana» A1, A2, A21; hoja «Eventos Especiales» A13; y BONUS-02-calendario-anual.xlsx!Calendario Anual!A2, A9, A12",
+      "hallazgo": "La ñ ha desaparecido de todo el corpus y en varios sitios el resultado cambia el significado o es directamente vergonzoso en un producto de pago en español. El caso peor está en encabezados y en el NOMBRE DE UNA PESTAÑA visible.",
+      "evidencia": "08!Temporadas Pescado Espana!A2 = 'Ano: ______    Sushi Bar: _________________________' (debería ser «Año»; «ano» es otra cosa). Mismo texto en BONUS-02!Calendario Anual!A2 = 'Ano: ______'. 08!Eventos Especiales!A13 = '  NOCHEVIEJA / ANO NUEVO'. 08!Temporadas Pescado Espana!A21 = '  OTONO (Sep-Nov)'. El propio nombre de hoja y su H1 A1 = 'Checklist: Temporadas Pescado Espana'. BONUS-02!A9 = 'Lubina, langostino, calamar (otono)' y A12 = 'Ano Nuevo japones (Oshogatsu)'. Barrido completo: 32 ocurrencias de ñ perdida (Anade ×11, pano ×5, manana ×3, Ano ×3, otono ×3, banos ×2, desempeno ×2, espanola, acompanamiento, anadir, Disenar, Espana, OTONO, ANO). Y el fichero SÍ sabe escribirla: 08!Eventos Especiales!B16 dice 'Año Nuevo japones' con ñ, tres filas debajo del A13 que dice 'ANO NUEVO'.",
+      "fix": "Reponer la ñ en las 32 ocurrencias, incluido el nombre de la hoja ('Temporadas Pescado España' → renombrar pestaña y A1) y los encabezados de sección A13/A21. Añadir al gate determinista un chequeo que rechace las cadenas «Ano», «ANO», «otono», «Espana», «banos», «pano», «manana», «desempeno», «Anade», «anadir», «acompanamiento», «Disenar», «espanola» en cualquier celda o nombre de hoja."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/ (los 11 ficheros)",
+      "ubicacion": "todas las hojas; p. ej. col. E4 'Hora Limite' (×16) y el pie 'ChefBusiness Consultoria Gastronomica' (×13)",
+      "hallazgo": "Ausencia sistemática de tildes en todo el texto, incluida la razón social de la marca y un encabezado de columna que se repite en las 16 hojas de checklist. La convivencia con textos correctamente acentuados delata un stripping parcial, no una decisión de estilo.",
+      "evidencia": "Muestra de sólo 40 lemas → 201 ocurrencias sin tilde: 'Como' ×22 (encabezado «Como usar estas plantillas» / «Como personalizar» en los 11 ficheros), 'Limite'/'limite' ×27, 'dia' ×14, 'Consultoria' ×13 y 'Gastronomica' ×13 (pie de marca: 'ChefBusiness Consultoria Gastronomica'), 'especificas' ×11, 'vacias' ×11, 'Revision' ×9, 'congelacion' ×8, 'camara' ×6, 'atun' ×6, 'Miercoles' ×5, 'refrigeracion' ×4, 'coccion' ×4. En paralelo SÍ hay acentos en 04!Mise en Place Barra!B8 ('hielo pilé'), 08!Eventos Especiales!B16 ('Año Nuevo') y en la línea de versión ('Versión 1.1 · agosto 2026') de los 11 ficheros.",
+      "fix": "Reacentuar el corpus (el texto original era correcto: los restos acentuados lo prueban) y añadir el barrido al gate. Prioridad al pie de marca y a 'Hora Límite', que se imprimen en todas las hojas."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx",
+      "ubicacion": "hoja «Plantilla en Blanco», filas 25-28 (donde en las demás hojas va el contador); hoja «Instrucciones» B20",
+      "hallazgo": "Es la ÚNICA hoja de checklist del kit sin la fórmula de «Tareas completadas», pese a que sus propias Instrucciones la anuncian y a que es la hoja que el cliente va a copiar para fabricar sus checklists propios: cada checklist que cree nacerá sin la función por la que pagó.",
+      "evidencia": "Las otras 9 hojas de checklist llevan el par de fórmulas (p. ej. 01!Apertura Barra Sushi!D37 '=COUNTIF(F5:F35,\"✓\")' y F37 '=COUNTIF(B5:B35,\"?*\")'). En 09!Plantilla en Blanco sólo existen B27 'Verificado por: ___' y B28 'Firma: ___'; openpyxl no encuentra ninguna celda con data_type='f' en el fichero (0 fórmulas). Sin embargo 09!Instrucciones!B20 dice: «Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.» y el changelog (src/data/productos-changelog.ts:869) promete «total que se recalcula en las hojas de checklist». La DV ('✓,—,N/A' en F6:F10, F13:F17, F20:F24) y el CF sí están.",
+      "fix": "Añadir en 09!Plantilla en Blanco!A26 'Tareas completadas:', D26 '=COUNTIF(F5:F24,\"✓\")', E26 'de', F26 '=COUNTIF(B5:B24,\"?*\")', replicando exactamente el patrón de las otras hojas."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "hoja «Instrucciones» B16; hoja «Apertura Barra Sushi» fila 36 vs D37/F37 (mismo patrón en los 8 ficheros de checklist)",
+      "hallazgo": "La instrucción «Anade tareas especificas de tu local en las filas vacias del final» describe algo que no existe: en las hojas pobladas no queda ninguna fila libre DENTRO del rango de las fórmulas. La tarea que el cliente añada siguiendo la instrucción no se cuenta, no tiene desplegable y no se pinta al marcarla.",
+      "evidencia": "En 01!Apertura Barra Sushi la última tarea está en la fila 35 y las fórmulas son D37 '=COUNTIF(F5:F35,\"✓\")' y F37 '=COUNTIF(B5:B35,\"?*\")'. La primera fila libre es la 36, fuera de ambos rangos, fuera de la DV (que sólo llega a F35) y fuera del CF (A5:G35). Verificado con pycel: al intentar set_value en 'Apertura Barra Sushi'!B36 devuelve «Address not found in the cell map», es decir, esa celda no es dependencia de ningún resultado. Idéntico en 01!Cierre (últ. fila 28 / rango …28), 02, 04, 05, 06, 07 y 08.",
+      "fix": "O bien dejar 3-5 filas realmente vacías dentro del rango (por debajo de la última tarea y por encima del bloque de totales) con DV y CF ya aplicados, o bien convertir cada bloque en una tabla de Excel (ListObject) para que los rangos crezcan solos, o cambiar el texto de la instrucción a «inserta filas ENTRE tareas existentes (clic derecho → Insertar fila)», que sí expande los rangos."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "hoja «Apertura Barra Sushi» D37/F37 (y las 9 hojas de checklist con contador)",
+      "hallazgo": "El denominador cuenta también las tareas que el usuario marca «N/A», opción que el propio desplegable ofrece. Una hoja con tareas no aplicables (el caso normal: el kit dice «borra las tareas que no aplican», pero la DV invita a marcarlas N/A) nunca puede leerse como completada al 100 %.",
+      "evidencia": "Evaluación con pycel sobre 01!Apertura Barra Sushi: estado inicial 0 / 24. Tras F6='✓', F7='✓', F8='N/A' → 2 / 24. El total sigue siendo 24 porque F37 '=COUNTIF(B5:B35,\"?*\")' cuenta enunciados de tarea, sin descontar los N/A registrados en la columna F. El turno queda eternamente en 23/24 aunque esté cerrado.",
+      "fix": "Cambiar el denominador a '=COUNTIF(B5:B35,\"?*\")-COUNTIF(F5:F35,\"N/A\")' en las 9 hojas con contador (ajustando los rangos de cada una), o retirar la opción «N/A» de la lista de validación si la doctrina es borrar las tareas que no aplican."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "validación de datos de todas las hojas de checklist (p. ej. «Apertura Barra Sushi», sqref F6:F35, type=list, formula1='\"✓,—,N/A\"', allowBlank=True, showErrorMessage=False)",
+      "hallazgo": "La lista desplegable no está protegida: con showErrorMessage=False Excel acepta en silencio cualquier texto tecleado. Un cocinero que marque con «X» —la marca natural en español y lo que sugiere la propia cabecera «Fecha: ___ Turno: ☐ Almuerzo»— rellena la hoja entera y el contador se queda a cero sin un solo aviso.",
+      "evidencia": "Las 16 hojas de checklist declaran la misma DV con showErrorMessage=False y allow_blank=True. Verificado con pycel en 01!Apertura Barra Sushi: con F6='✓' y F7='✓' el contador marca 2; al añadir F9='X' sigue marcando 2 / 24, y el CF ($F5=\"✓\", relleno C8E6C9) tampoco pinta esa fila. No hay ningún mensaje de entrada ni de error configurado.",
+      "fix": "Poner showErrorMessage=True con un errorTitle/error explícito («Usa el desplegable: ✓, — o N/A») y, opcionalmente, un promptTitle de entrada. Alternativa complementaria: ampliar el contador a '=COUNTIF(F5:F35,\"✓\")+COUNTIF(F5:F35,\"X\")+COUNTIF(F5:F35,\"x\")'."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Registro Congelacion», columnas D/E/F filas 6-25; hoja «Trazabilidad Pescado», columnas D/E/G filas 4-23",
+      "hallazgo": "El entregable legalmente obligatorio del kit es el único sin una sola fórmula ni validación: no calcula el fin de congelación, no comprueba que se cumplan los 7 días, no avisa de un lote incumplidor y no formatea las fechas. Es un folio impreso guardado en un .xlsx, justo donde el cliente compra tranquilidad ante Sanidad.",
+      "evidencia": "openpyxl: 0 celdas con data_type='f' y ws.data_validations vacío en las tres hojas del fichero. Las columnas 'Fecha Entrada' (D5), 'Inicio Congelacion' (E5), 'Fin Congelacion' (F5), 'Temp °C' (G5) y 'Caducidad' (G3 de Trazabilidad) tienen number_format='General': una fecha tecleada quedará como texto o como número de serie sin formato. No existe ninguna columna «Días transcurridos» ni «Cumple SÍ/NO».",
+      "fix": "En «Registro Congelacion»: formato 'DD/MM/YYYY' en D:F, F6 '=IF(E6=\"\",\"\",E6+7)' para proponer el fin, una columna nueva «Cumple» con '=IF(OR(E6=\"\",F6=\"\"),\"\",IF(F6-E6>=7,\"OK\",\"NO CUMPLE\"))' y un CF rojo sobre «NO CUMPLE»; DV de lista en la columna «Verif.» y DV decimal en 'Temp °C' (<= -20). En «Trazabilidad»: formato fecha en D y G y CF que resalte caducidades vencidas."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Temperaturas Diario», rango C5:I11",
+      "hallazgo": "La única hoja del kit donde el dato es numérico y crítico no tiene ni formato condicional ni validación de rango, mientras que los checklists —donde el dato es un ✓— sí los llevan. Una temperatura fuera de límite se registra sin que nada la señale, que es exactamente lo que un control APPCC debe evitar.",
+      "evidencia": "ws.conditional_formatting vacío y ws.data_validations vacío en «Temperaturas Diario». Las filas llevan el límite escrito en el propio texto: B5 'Camara pescado crudo (-2 a 0°C)', B6 'Camara congelacion anisakis (-20°C o menos)', B7 'Vitrina neta case (barra) (2-4°C)', B9 'Congelador general (-18°C o menos)'. Las 49 celdas C5:I11 sólo tienen relleno verde E8F5E9 y number_format='General'. En cambio 01!Apertura Barra Sushi sí declara CF ('expression', $F5=\"✓\", relleno C8E6C9).",
+      "fix": "Añadir dos columnas ocultas de umbral (mín/máx) por equipo o codificarlos en un CF por filas: p. ej. sobre C6:I6 regla 'cellIs greaterThan -20' con relleno rojo; sobre C7:I7 'not between 2 and 4'; sobre C5:I5 'not between -2 and 0'. Y number_format '0.0 \"°C\"' en C5:I11."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Temperaturas Diario» B14 vs rejilla C4:I11",
+      "hallazgo": "La instrucción al pie describe una rejilla que no existe: pide dos lecturas diarias y la hora, y la hoja sólo tiene UNA celda por equipo y día. El registro no puede rellenarse como el propio fichero manda.",
+      "evidencia": "B14 = 'Registrar 2 veces al dia: apertura y cierre. Anotar hora.' La rejilla es C4:I4 = Lunes…Domingo (una columna por día) y B5:B11 = 7 equipos, o sea una única celda por cruce equipo×día (C5:I11). No hay subcolumnas apertura/cierre ni ninguna celda para la hora.",
+      "fix": "O desdoblar cada día en dos columnas (Apertura / Cierre) —14 columnas más una de hora, o mejor pasar la hoja a formato registro por filas (Fecha | Hora | Equipo | Temp | Firma)—, o corregir B14 a «Registrar una vez al día» para que la instrucción y la rejilla digan lo mismo."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Instrucciones» B14, B16, B17 (y el mismo bloque en BONUS-01-briefing-servicio.xlsx!Instrucciones B13-B16 y BONUS-02-calendario-anual.xlsx!Instrucciones B13-B16)",
+      "hallazgo": "El bloque «Como personalizar» está copiado literalmente en los 11 ficheros sin adaptarlo, y en tres de ellos describe columnas y elementos que no existen: hablan de tareas, responsables, horas límite y filas de tareas vacías en ficheros que son registros o formularios, no checklists.",
+      "evidencia": "03!Instrucciones B14 'Las celdas verdes son editables — cambia responsables y horarios', B16 'Anade tareas especificas de tu local en las filas vacias del final', B17 'Ajusta las horas limite a tus horarios reales'. El fichero 03 no tiene ninguna columna de tarea, responsable ni hora límite: sus hojas son «Registro Congelacion» (cols. Especie/Proveedor/Fechas/Temp/Verif./Firma), «Temperaturas Diario» (equipos × días) y «Trazabilidad Pescado» (Especie/Proveedor/Fecha/Lote/Zona FAO/Caducidad/Firma). Mismo texto íntegro en BONUS-01 (formulario de briefing con campos de relleno manual, B2:C37) y en BONUS-02 (calendario de 12 meses con marcadores ●). Además BONUS-01!Instrucciones B13 promete «celdas verdes» y la hoja «Briefing Servicio» no tiene NINGUNA celda con relleno (censo de fills: 111 celdas, todas fill_type=None).",
+      "fix": "Reescribir el bloque «Como personalizar» por tipo de entregable: versión checklist (la actual), versión registro APPCC (03) y versión formulario/calendario (BONUS-01 y 02). Y en BONUS-01, o se pintan de verde los campos a rellenar o se elimina la frase de las celdas verdes."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Instrucciones» B7 y hoja «Registro Congelacion» A2 vs B27",
+      "hallazgo": "El mismo fichero da dos umbrales distintos para el control crítico de anisakis. Un lote registrado a −19 °C se daría por válido leyendo la nota del registro e inválido leyendo las instrucciones, en el documento que se enseña en una inspección.",
+      "evidencia": "Instrucciones B7 = '▸ El pescado debe congelarse a -20°C durante minimo 7 dias o -35°C durante 15 horas'. Registro Congelacion A2 = 'Normativa: RD 1420/2006 y Reglamento CE 853/2004 — Obligatorio para todo establecimiento que sirva pescado crudo o poco cocinado'. Pero B27 del mismo registro = 'IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias'. −18 °C no es el umbral que fijan ni B7 ni la norma citada en A2.",
+      "fix": "Unificar en −20 °C: B27 → 'Si la temperatura sube por encima de −20 °C durante la congelación, reiniciar el conteo'. De paso, revisar con el lente de contenido/legal la atribución «7 días» al RD 1420/2006 y al Rgto. (CE) 853/2004, cuyo requisito es −20 °C durante al menos 24 h (o −35 °C/15 h); si se mantiene el criterio de 7 días, presentarlo como margen de seguridad propio y no como el texto de la norma."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "las 3 hojas del fichero, frente a astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:126",
+      "hallazgo": "La landing vende dentro del entregable de APPCC un control de alérgenos que el fichero no contiene: no hay hoja, columna ni fila de alérgenos en 03.",
+      "evidencia": "La ficha del entregable «Seguridad Anisakis y APPCC» dice: 'Registro de congelación a -20 ºC durante 7 días por lote (RD 1420/2006), control de temperaturas, alérgenos y trazabilidad completa de pescado y proveedores.' Hojas reales de 03: «Registro Congelacion» (Especie/Proveedor/Fecha Entrada/Inicio/Fin/Temp/Verif./Firma), «Temperaturas Diario» y «Trazabilidad Pescado» (Especie/Proveedor/Fecha Compra/Lote-Albaran/Zona Captura FAO/Caducidad/Firma). La palabra «alérgeno» aparece en todo el kit sólo en 06!Sala y Servicio!B8 ('Informar a clientes sobre alergenos…') y en los huecos de relleno manual de BONUS-01!B16/B17.",
+      "fix": "O añadir a 03 una cuarta hoja «Matriz de Alérgenos» (plato × 14 alérgenos del Rgto. UE 1169/2011, con la de contaminación cruzada crudo/cocinado que un sushi bar necesita), o quitar «alérgenos» de la descripción del entregable en kit-tareas-sushi-bar.ts:126 y del espejo en el dashboard."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "hoja «Instrucciones» B8 vs hoja «Calendario Anual» B5:M36",
+      "hallazgo": "Las instrucciones piden marcar con ✓ las tareas completadas de cada mes, pero la rejilla no tiene ni columna ni celda libre para ello: las casillas mes×tarea ya están ocupadas por el marcador «●» de temporada/planificación, así que marcar ✓ destruye el dato que el calendario aporta.",
+      "evidencia": "BONUS-02!Instrucciones B8 = '▸ Marca con ✓ las tareas completadas cada mes'. En «Calendario Anual» las celdas de mes que corresponden a cada tarea ya contienen '●' (B6, C6, M6 para 'Besugo, merluza, rape (invierno)'; D7, E7, F7; G8, H8, I8; B12; C13; D20, J20; B21, H21; …). No hay validación de datos ni formato condicional en la hoja, ni ninguna columna de seguimiento.",
+      "fix": "Añadir una columna de estado por tarea (p. ej. N «Hecho», con DV ✓/—) o duplicar la rejilla en dos capas (Planificado ● / Realizado ✓ con CF que los distinga), o corregir B8 para que describa lo que la hoja permite realmente («● indica el mes previsto; anota tú la fecha de ejecución»)."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx",
+      "ubicacion": "hoja «Instrucciones» B9 y B13; hoja «Plantilla en Blanco» columnas B, C, D y E",
+      "hallazgo": "El código de color no cuadra con lo que las instrucciones dicen que significa. En la plantilla en blanco, la columna que el cliente tiene que rellenar primero —la tarea— no está marcada como personalizable, y la de hora límite tampoco.",
+      "evidencia": "Censo de rellenos: el verde E8F5E9 sólo cubre las columnas C (Zona) y D (Responsable) — en 09!Plantilla en Blanco son 15 celdas en C y 15 en D, ninguna en B ni en E. Pero 09!Instrucciones B9 = '▸ Las celdas verdes son las que debes personalizar' y B13 = '▸ Las celdas verdes son editables — cambia responsables y horarios' (los horarios están en E, que no es verde). Mismo desajuste en las 16 hojas de checklist del kit y también en 03!Registro Congelacion, donde el verde cubre C:F pero deja fuera B «Especie Pescado» y G «Temp °C».",
+      "fix": "Extender el relleno E8F5E9 a las columnas B (Tarea) y E (Hora Límite) en las hojas de checklist —y a B y G en «Registro Congelacion»—, o reformular las instrucciones para que nombren exactamente las columnas verdes."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "hoja «Protocolo Arroz Sushi» B13 y B16; hoja «Protocolo Corte Pescado» B12; 06-tareas-perfiles.xlsx!Sala y Servicio!B8 y B10; 07-semanales-mensuales.xlsx!Tareas Semanales!B6",
+      "hallazgo": "El texto de algunas tareas se corta al imprimir: la columna B tiene ancho 48, wrap_text está desactivado en todas las celdas y la columna C siempre lleva contenido, así que el desbordamiento no se ve. El kit está pensado para imprimirse («Imprime la hoja correspondiente al turno»), de modo que el recorte es lo que ve el cocinero en la barra.",
+      "evidencia": "Ninguna celda del corpus tiene wrap_text=True salvo las cabeceras de 03, y row_dimensions está vacío en todas las hojas (no hay altos de fila). Con ancho 48 (≈341 px) y estimando anchos de Calibri 11, seis celdas de tarea desbordan; la peor es 02!Protocolo Arroz Sushi!B13 = 'Preparar sushi-zu: 80ml vinagre + 30g azucar + 15g sal por 500g arroz' (69 caracteres, ~25 px de sobra: se lee «…+ 15g sal por 500g» y se pierde la unidad de referencia). Le siguen 02!Protocolo Corte Pescado!B12 (67 car., se corta 'nigiri'), 07!Tareas Semanales!B6 (69 car.), 06!Sala y Servicio!B8 (67 car., se corta 'gluten') y B10 (65 car.). En total 110 celdas de tarea superan los 48 caracteres nominales, así que el margen es nulo en cuanto cambie la fuente del visor.",
+      "fix": "Subir el ancho de la columna B de 48 a ~60 (cabe: A5+B60+C14+D20+E13+F12+G16 = 140 sigue entrando en A4 apaisado con fitToWidth=1) o activar wrap_text en B6:B35 con alto de fila explícito de 30 px en las filas de tarea."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Temperaturas Diario» B5:B11 (ancho de columna B = 28)",
+      "hallazgo": "Los nombres de equipo desbordan su columna e invaden la celda del lunes; en cuanto el usuario escriba la primera temperatura, el nombre del equipo queda cortado justo por el límite que hay que respetar.",
+      "evidencia": "Ancho de B = 28. B6 = 'Camara congelacion anisakis (-20°C o menos)' (43 caracteres), B8 = 'Camara refrigeracion general (0-4°C)' (36), B11 = 'Arroz servicio (ambiente) (20-37°C)' (35), B9 = 'Congelador general (-18°C o menos)' (34), B7 = 'Vitrina neta case (barra) (2-4°C)' (33), B5 = 'Camara pescado crudo (-2 a 0°C)' (31), B10 = 'Arrocera (temp coccion) (100°C)' (31). Ninguna tiene wrap_text y no hay altos de fila definidos; las celdas C5:I11 están vacías pero con relleno verde, así que hoy el texto se derrama sobre la columna 'Lunes' y mañana, con dato dentro, se recortará por «…(-20°C o m».",
+      "fix": "Ampliar la columna B a 46 (la hoja sólo usa A:I con anchos 5+28+12×6+14 = 119; sobra sitio en A4 apaisado) o activar wrap_text en B5:B11 con alto de fila 30."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "hoja «Instrucciones» B19 y B21 (y sus equivalentes en los 11 ficheros)",
+      "hallazgo": "Dos líneas de la hoja de instrucciones exceden el ancho de la única columna usada. Como no hay print_area definida, Excel imprime sólo el rango usado (columna B), de modo que la parte que en pantalla se derrama sobre C queda cortada en el papel.",
+      "evidencia": "Columna B con ancho 80 y print_area vacía (rango usado B2:B23). B21 = 'Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.' (104 caracteres) y B19 = '— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · chefbusiness.co' (84 caracteres). Ninguna tiene wrap_text=True y row_dimensions está vacío. La línea de 104 caracteres se repite en 7 de los 11 ficheros y la de 84 en los 11.",
+      "fix": "Activar wrap_text en B2:B23 de las 11 hojas «Instrucciones» con altos de fila automáticos, o fijar print_area='B:C' para que el desbordamiento entre en el área impresa."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "formato condicional de «Apertura Barra Sushi» (A5:G35, dxf bgColor 00C8E6C9) sobre las celdas C y D ya rellenas de 00E8F5E9",
+      "hallazgo": "El verde de «fila completada» y el verde de «celda editable» son casi el mismo color, así que en las dos columnas donde más mira el usuario (Zona y Responsable) el marcado de completada apenas se distingue. Los dos códigos de color del kit compiten entre sí.",
+      "evidencia": "CF: ('expression', $F5=\"✓\") con dxf.fill.bgColor = 00C8E6C9. Relleno base de C6:D35 = 00E8F5E9. Diferencia de luminancia mínima entre ambos verdes; en las columnas B, E, F y G (sin relleno base) el contraste sí es evidente, con lo que la fila se ve marcada «a trozos».",
+      "fix": "Usar para el CF un tono claramente distinto (p. ej. bgColor 00A5D6A7 o un gris verdoso 00DCEDC8 con fuente atenuada) o retirar el relleno base de C:D y marcar la zona editable con un borde en vez de con fondo."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Registro Congelacion» A5:I5 y hoja «Trazabilidad Pescado» A3:H3",
+      "hallazgo": "Son las únicas celdas del kit con wrap_text=True y no llevan alto de fila explícito. En los visores que no recalculan el alto al abrir un fichero generado por librería (LibreOffice, previsualizadores, algunas versiones de Sheets), la cabecera de dos líneas se muestra a una sola y se corta.",
+      "evidencia": "openpyxl: A5:I5 de «Registro Congelacion» y A3:H3 de «Trazabilidad Pescado» tienen alignment.wrap_text=True; ws.row_dimensions está vacío en ambas hojas (ningún alto guardado). Cabeceras afectadas: 'Inicio Congelacion' (18 car. en columna de ancho 18), 'Proveedor/Lonja', 'Firma Responsable', 'Zona Captura (FAO)', 'Lote/Albaran'.",
+      "fix": "Fijar ws.row_dimensions[5].height = 30 en «Registro Congelacion» y ws.row_dimensions[3].height = 30 en «Trazabilidad Pescado» (y en general, alto explícito siempre que se active wrap_text desde openpyxl)."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-sushi-bar/04-barra-sushi-neta-case.xlsx",
+      "ubicacion": "hoja «Mise en Place Barra» B27; 05-tareas-manager.xlsx!Tareas Semanales Manager B6:B13; 02-preparacion-arroz-pescado.xlsx!Protocolo Corte Pescado B12:B23 — frente a astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:130, 131, 136, 265",
+      "hallazgo": "Tres descripciones de la landing prometen más granularidad de la que los ficheros tienen. No son incumplimientos graves, pero sí afirmaciones que un cliente puede contrastar en 30 segundos.",
+      "evidencia": "(a) Landing:131 y :265 'rotación FIFO **por lotes**'; en 04 la única mención es B27 = 'Reponer piezas en vitrina desde camara (FIFO)' y no existe ninguna columna, campo ni celda de lote en el fichero (los lotes sólo aparecen en 03!Trazabilidad Pescado!E3 'Lote/Albaran'). (b) Landing:136 'comparativa de proveedores y **reporting**'; en 05!Tareas Semanales Manager las 8 tareas son B6 'Revisar food cost de pescado vs ventas sushi', B7 'Negociar precios con proveedores de lonja', B8 'Revisar horarios equipo y cubrir bajas', B9 'Reunion briefing equipo', B10 'Auditar registros congelacion anisakis', B11 'Revisar resenas online y responder', B12 'Planificar especiales del fin de semana', B13 'Pedido semanal: algas, arroz, salsas, sake' — ni comparativa ni reporting. (c) Landing:130 'Técnicas de corte: yanagiba, sashimi, nigiri y **maki**'; en 02!Protocolo Corte Pescado (B12:B23) no aparece la palabra «maki» ni una sola vez.",
+      "fix": "Ajustar el copy de kit-tareas-sushi-bar.ts (y su espejo en el dashboard) a lo que los ficheros contienen — «rotación FIFO», «negociación con proveedores y control de food cost», «nigiri y sashimi» —, o bien añadir a los ficheros la columna de lote en 04, una fila de comparativa/reporte en 05 y una tarea de corte para maki en 02."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "Los 30 contadores del kit son correctos: verificados con pycel, evalúan bien (0/24 → 2/24 al marcar dos ✓ en 01!Apertura) y las 15 cachés de total coinciden exactamente con la numeración visible de cada hoja; la impresión A4 (fitToPage, títulos repetidos, pie con «Página &P de &N») está bien puesta en las 32 hojas. Pero hay un bloqueante de calidad y un bloqueante de coherencia. El bloqueante de calidad es TEC-01: la ñ ha desaparecido de encabezados y del nombre de una pestaña, con «Ano: ______» impreso en dos ficheros, «NOCHEVIEJA / ANO NUEVO» como encabezado de sección y «Temporadas Pescado Espana» como nombre de hoja y H1 — en un producto de pago en español eso es motivo de reembolso, y viene acompañado de 201+ ocurrencias sin tilde de una muestra de sólo 40 lemas, incluida la razón social «ChefBusiness Consultoria Gastronomica» repetida 13 veces. El bloqueante de coherencia es el bloque de instrucciones copiado sin adaptar: manda añadir tareas en «filas vacías del final» que no existen y que quedan fuera de las fórmulas (verificado: B36 de 01!Apertura no es dependencia de ningún resultado), promete un contador que la plantilla personalizable no tiene (TEC-03), describe dos lecturas diarias en una rejilla de una sola celda (TEC-09) y habla de tareas, responsables y horas límite en tres ficheros que no tienen ninguna de esas columnas (TEC-10). Añadido a eso, el entregable con más peso comercial y legal —el registro de anisakis— no calcula ni valida nada (TEC-07), su hoja de temperaturas no señala un valor fuera de rango (TEC-08), contradice su propio umbral (−20 °C en instrucciones frente a −18 °C en la nota del registro, TEC-11) y no contiene el control de alérgenos que la landing le atribuye (TEC-12). Ninguno de estos defectos lo habría visto un gate determinista: los ficheros abren, calculan y pasan el censo."
+   },
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (seo/schema/hero/grid/why/bonus/faqs/cta/testimonios/pricing), dashboard, emails de acceso y changelog contra el contenido real de los 11 .xlsx de /dl/kit-tareas-sushi-bar/",
+    "veredicto": "no listo",
+    "motivo": "Los 11 ficheros existen, están completos y la Fase A (cache, A4, títulos de impresión repetidos, pie con numeración, metadata «AI Chef Pro», bio, «Versión 1.1», casilla unificada) está correctamente aplicada — verificada una a una, sin escapes. Pero el producto NO está listo para un cliente escéptico por cuatro motivos de peso: (1) la promesa estrella —«-20 ºC / 7 días conforme al RD 1420/2006», repetida 9 veces en landing, schema, FAQ, testimonio y dashboard, y escrita en 03:Instrucciones:B7— atribuye a la norma un requisito que la norma no establece (el RD 1420/2006 y el Reglamento 853/2004 exigen 24 h a -20 ºC; los 5-7 días son la recomendación de AESAN para congeladores domésticos), y el propio fichero pone al lado la pareja correcta «-35 ºC / 15 horas»; (2) el JSON-LD emite aggregateRating 4,9 sobre 8 reseñas y 3 Review nominales sin ningún sistema de reseñas detrás, y 4,9 es aritméticamente imposible con tres reseñas de 5; (3) el calendario de temporadas —contenido de portada de 08 y del BONUS 2 de €19— tiene invertidos bonito y atún rojo, y el propio testimonio de la landing afirma lo contrario que el fichero que vende; (4) cinco promesas de la grid y del dashboard (perfil delivery, salmón salvaje, festivos asiáticos / «Año Nuevo Chino», cierres por vacaciones, reporting) no existen en ningún fichero. A eso se suma el ancla €69 / -80 % / «sube pronto» viva sin cambios desde el 2026-05-05. Nada de esto lo ve un gate: son promesas contra contenido.",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Instrucciones», B7 · hoja «Registro Congelacion», A2 · landing astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts líneas 41, 52, 97, 126, 186, 253, 284, 307 · dashboard src/pages/KitTareasSushiBarDashboard.tsx, tarjeta 'anisakis-appcc'",
+      "hallazgo": "El requisito legal de congelación preventiva está mal citado: el fichero y toda la landing afirman «-20 °C durante mínimo 7 días» como obligación del RD 1420/2006. El RD 1420/2006 (art. 3) y el Reglamento (CE) 853/2004 Anexo III (modificado por el Reglamento UE 1276/2011) exigen -20 °C en la totalidad del producto durante al menos 24 HORAS, o -35 °C durante al menos 15 horas. Los 5-7 días son la recomendación de AESAN para congeladores DOMÉSTICOS, no la norma para establecimientos. El cliente inmoviliza 7 veces más pescado y capacidad de congelador de lo que la ley le pide, creyendo que es obligatorio.",
+      "evidencia": "03:Instrucciones:B7 = '▸ El pescado debe congelarse a -20°C durante minimo 7 dias o -35°C durante 15 horas' — el segundo miembro del par ('-35 °C / 15 horas') SÍ es literal del Reglamento 1276/2011, lo que demuestra que se tomó la pareja de la norma y se cambió el primer número (24 h → 7 días). 03:Registro Congelacion:A2 = 'Normativa: RD 1420/2006 y Reglamento CE 853/2004 — Obligatorio para todo establecimiento que sirva pescado crudo o poco cocinado'. Landing línea 253: '…Cumple con el RD 1420/2006 vigente'. Testimonio línea 307: 'registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad'.",
+      "fix": "Corregir 03:Instrucciones:B7 a «-20 °C durante al menos 24 horas en la totalidad del producto, o -35 °C durante al menos 15 horas (Reglamento CE 853/2004 Anexo III, mod. Reglamento UE 1276/2011; exigido por el RD 1420/2006)». Si se quiere margen de seguridad, presentarlo como recomendación propia («mínimo legal 24 h; recomendamos 48-72 h»), nunca como requisito de la norma. Después sustituir las 8 apariciones de «7 días» en kit-tareas-sushi-bar.ts (incluidos el testimonio de la línea 307 y la FAQ del schema de la línea 52) y la tarjeta 'anisakis-appcc' del dashboard."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 31-46 (schema.aggregateRating y schema.reviews) y 292-345 (testimonials)",
+      "hallazgo": "Se emite en el JSON-LD del Product un aggregateRating de 4,9 sobre 8 reseñas más 3 objetos Review con nombre y cuerpo, sin que exista ningún sistema de reseñas ni compra verificada detrás. Los 8 testimonios usan avatares de stock compartidos con el resto de productos y atribuyen hechos concretos («nos ha salvado en dos inspecciones de Sanidad», «lo implementamos en 3 locales»). Es marcado de reseñas fabricado: incumple la política de datos estructurados de Google y es práctica comercial desleal (RDL 24/2021, transposición de la Directiva Ómnibus, prohíbe presentar reseñas como de consumidores reales sin verificación).",
+      "evidencia": "Línea 31: aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' } con sólo 3 reviews declaradas, las tres de rating '5' — la media de tres cincos es 5,0, no 4,9: el número no lo respalda ni su propio array. KitTareasLandingPage.astro líneas 47-67 confirma que aggregateRating y review se emiten sólo si el data file los define («desde 2026-08-21 son opcionales»), es decir, el mecanismo para retirarlos YA existe y este producto sigue declarándolos.",
+      "fix": "Borrar `aggregateRating` y `reviews` del bloque `schema` (líneas 31-46): el template ya los trata como opcionales y la landing queda válida sin ellos. Los testimonios pueden permanecer en la página sólo si se etiquetan como ejemplos ilustrativos o se sustituyen por opiniones reales con consentimiento; lo que no puede permanecer es su emisión como Review/AggregateRating en el JSON-LD."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "hoja «Calendario Anual», A7 con D7-F7 y A8 con G8-I8 · y 08-eventos-estacionales.xlsx, hoja «Temporadas Pescado Espana», B11 (sección PRIMAVERA, A10) y B8 (sección INVIERNO, A5)",
+      "hallazgo": "El calendario de temporadas de pescado —contenido de portada de dos entregables y del BONUS 2 valorado en €19— tiene invertidas las dos especies más caras y más citadas en la venta. Marca el bonito en primavera (mar-may) cuando la costera del bonito del norte en España va de junio a octubre, y el atún rojo en verano (jun-ago) cuando la almadraba es de abril a junio. Un chef que planifique la carta con este calendario llama a la lonja en abril pidiendo bonito que no existe.",
+      "evidencia": "BONUS-02:Calendario Anual:A7 = 'Bonito, sardina, boqueron (primavera)' con ● en D7 (Mar), E7 (Abr) y F7 (May) y ninguna marca de jun a oct. A8 = 'Atun rojo, gamba roja (verano)' con ● en G8 (Jun), H8 (Jul) e I8 (Ago) y ninguna en abr-may. 08:Temporadas Pescado Espana:B11 = 'Anotar disponibilidad: bonito, sardina, boqueron, sepia' bajo A10 = '  PRIMAVERA (Mar-May)'. Contradicción frontal con el testimonio de la propia landing (kit-tareas-sushi-bar.ts línea 331): «atún rojo en primavera, bonito del norte en verano… ya no improvisamos». Además 08:B8 = 'Negociar precio atun rojo de temporada' con E8 'Enero', dentro de la sección INVIERNO.",
+      "fix": "Mover el bonito a VERANO (● en G-K, jun-oct) y el atún rojo a PRIMAVERA (● en E-G, abr-jun) tanto en BONUS-02 (filas 7 y 8, reetiquetando los paréntesis) como en 08:Temporadas Pescado Espana (sacar 'bonito' de B11 y llevarlo a la línea de verano, B16; y el atún rojo de B16 a B11). Revisar de paso 08:B8: si es negociación anticipada, decirlo («cerrar precio de la almadraba de abril-junio»)."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 350-356 (pricing) y línea 30 (schema.priceValidUntil)",
+      "hallazgo": "Ancla de precio permanente: se muestra €69 tachado, badge «-80 %», «¡Ahorra €55 HOY!» y la nota «Precio especial de lanzamiento. Sube pronto» sobre un precio de €14 que no ha variado en casi cuatro meses. Un precio de referencia que nunca se ha aplicado, presentado como descuento indefinido y con urgencia falsa, incumple el art. 20.3 del RDL 1/2007 (Directiva Ómnibus): el precio anterior anunciado debe ser el más bajo aplicado en los 30 días previos.",
+      "evidencia": "pricing, líneas 350-356: priceOld '€69', price '€14', discountBadge '-80%', heroNote 'Precio especial de lanzamiento. Sube pronto', bonusSaveLine '¡Ahorra €55 HOY!'. `git log -S\"€69\" -- src/components/kit-tareas-sushi-bar/` devuelve 45e065a de 2026-05-05: el ancla lleva viva sin variación desde entonces (hoy 2026-08-29); el fichero de datos sólo se ha tocado el 2026-07-18 (ff9a96c) y el 2026-08-22 (dfd391d, b5b30cf) sin cambiar el precio. schema.priceValidUntil sigue en '2026-12-31'.",
+      "fix": "Es la decisión de «ancla» que John ya tiene abierta. Tres salidas limpias: (a) quitar priceOld, discountBadge y heroNote y vender €14 a secas; (b) aplicar de verdad el €69 durante ≥30 días y sólo entonces anunciar la rebaja; (c) sustituir el tachado por «Valor estimado del pack: €69» sin presentarlo como precio anterior, y eliminar «Sube pronto» mientras no haya fecha real de subida."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 28, 94, 96 y 111 (schema.productDescription, hero.description, hero.checkItems[0], grid.subtitle)",
+      "hallazgo": "«11 checklists pre-rellenados» y sobre todo «Cada checklist viene pre-rellenado con las tareas reales de un sushi bar profesional» son falsos para 3 de los 11 ficheros: 03, 09 y BONUS-01 se entregan vacíos. El de anisakis, que es el argumento de venta principal, son tres hojas de filas numeradas sin una sola tarea escrita.",
+      "evidencia": "03:Registro Congelacion tiene contenido sólo en A6:A25 (los números 1-20) y las cabeceras B5:I5; 03:Trazabilidad Pescado tiene EXCLUSIVAMENTE los números 1-20 en A4:A23 y ni un dato más; 03:Temperaturas Diario aporta 7 nombres de equipo y ninguna medición. 09:Plantilla en Blanco: sólo 'SECCION 1/2/3 (PERSONALIZAR)' y los números 1-15. BONUS-01:Briefing Servicio son 26 líneas de campos con guiones bajos para rellenar a mano.",
+      "fix": "Redactar algo verificable: «9 checklists pre-rellenados + 3 registros y plantillas en blanco listos para rellenar». En grid.subtitle (línea 111) sustituir «Cada checklist viene pre-rellenado» por «Los checklists operativos vienen pre-rellenados; los registros APPCC y la plantilla personalizable se entregan en blanco para tu operativa»."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/06-tareas-perfiles.xlsx",
+      "ubicacion": "las 4 hojas de rol del fichero · promesa en kit-tareas-sushi-bar.ts líneas 141 y 286 y en la tarjeta 'perfiles' de KitTareasSushiBarDashboard.tsx",
+      "hallazgo": "Se promete un perfil de DELIVERY que no existe. El fichero trae cuatro hojas de rol: Itamae (Chef Sushi), Ayudante Sushi, Cocina Caliente y Sala y Servicio. Ninguna de sus 33 tareas menciona delivery, takeaway, reparto ni packaging — y el kit vende expresamente que sirve para takeaway.",
+      "evidencia": "Hojas de 06 = ['Instrucciones','Itamae (Chef Sushi)','Ayudante Sushi','Cocina Caliente','Sala y Servicio']. Landing línea 141: 'Tareas claras por perfil: itamae, ayudante de sushi, cocina caliente, sala y servicio, delivery. Roles y responsabilidades sin solapes.'; cta.items línea 286: 'Tareas por perfil: itamae, ayudante, cocina caliente, sala, delivery'; dashboard: 'Itamae, ayudante de sushi, cocina caliente, sala/servicio, delivery. Roles sin solapes.'. La propia landing se contradice: hero.checkItems (línea 100) enumera los cuatro reales SIN delivery.",
+      "fix": "O se añade una quinta hoja «Delivery y Takeaway» a 06 (montaje del pedido, tiempo máximo del sushi fuera de refrigeración, sellado y etiquetado de alérgenos, arroz que no se envía frío, control de repartidor), o se borra «delivery» de las líneas 141 y 286 y de la tarjeta del dashboard. Como el sushi para llevar es un caso de uso real del comprador, la primera opción vale más."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "hoja «Calendario Anual», sección TEMPORADA PESCADO (A6-A9) · y 08-eventos-estacionales.xlsx, hoja «Temporadas Pescado Espana», B6/B11/B16/B22 · promesa en kit-tareas-sushi-bar.ts líneas 151 y 231 y en la tarjeta 'eventos-estacionales' del dashboard",
+      "hallazgo": "El «salmón salvaje» se promete tres veces como una de las especies del calendario de temporadas y no aparece en ningún fichero del kit. Además es una promesa dudosa de raíz: la pesca del salmón atlántico en España es marginal y su venta comercial muy restringida, así que no puede haber una «temporada» que planificar.",
+      "evidencia": "Las cuatro filas de TEMPORADA PESCADO de BONUS-02 son A6 'Besugo, merluza, rape (invierno)', A7 'Bonito, sardina, boqueron (primavera)', A8 'Atun rojo, gamba roja (verano)' y A9 'Lubina, langostino, calamar (otono)'. En 08:Temporadas Pescado Espana las cuatro líneas de disponibilidad (B6, B11, B16, B22) tampoco lo citan. La palabra «salmón» sólo aparece en 02:Protocolo Corte Pescado:B13 ('Salmon (sake): retirar piel, corte en angulo 45° para nigiri'), que es una técnica de corte, no una temporada. Landing línea 151: '(atún rojo, bonito, salmón salvaje)'; línea 231: '(atún rojo, bonito del norte, salmón salvaje)'.",
+      "fix": "Quitar «salmón salvaje» de las líneas 151 y 231 y de la tarjeta 'eventos-estacionales' del dashboard, y sustituirlo por una especie que sí esté en los ficheros y sea creíble en lonja española: besugo, vieira o gamba roja."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/08-eventos-estacionales.xlsx",
+      "ubicacion": "hoja «Eventos Especiales», secciones A5, A13 y A19 · BONUS-02, hoja «Calendario Anual», sección EVENTOS CLAVE (A12-A17) · promesa en kit-tareas-sushi-bar.ts líneas 151, 231 y 287 y en la tarjeta 'eventos-estacionales' del dashboard",
+      "hallazgo": "Los «festivos asiáticos» prometidos tres veces en la landing no existen, y el dashboard llega a nombrar uno concreto —«Año Nuevo Chino»— que no está en ningún fichero y que además desentona en un producto de restaurante japonés. El único festivo asiático de todo el kit es el Oshogatsu de BONUS-02.",
+      "evidencia": "08:Eventos Especiales sólo tiene tres secciones: A5 '  CENA OMAKASE (MENU DEGUSTACION)', A13 '  NOCHEVIEJA / ANO NUEVO' y A19 '  SAN VALENTIN'. BONUS-02 EVENTOS CLAVE = A12 'Ano Nuevo japones (Oshogatsu)', A13 'San Valentin (omakase parejas)', A14 'Semana Santa (pico reservas)', A15 'Inicio temporada terraza', A16 'Halloween / otono tematico', A17 'Nochevieja (menu especial)': uno solo asiático, con Halloween y Semana Santa dentro. Dashboard, tarjeta 'eventos-estacionales': '…Omakases especiales, Nochevieja, San Valentín, Año Nuevo Chino.' — cadena que no aparece en ningún .xlsx.",
+      "fix": "Añadir a 08:Eventos Especiales una sección con dos o tres fechas japonesas que un sushi bar en España sí puede explotar (Oshogatsu, Hanami en marzo-abril, Tanabata en julio) y marcarlas en BONUS-02; o bajar la promesa a «Nochevieja, San Valentín y Año Nuevo japonés» en las líneas 151, 231 y 287 y corregir «Año Nuevo Chino» → «Año Nuevo japonés» en el dashboard."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "hoja «Calendario Anual», filas 5-36 (las cinco secciones) · promesa en kit-tareas-sushi-bar.ts líneas 166 y 231",
+      "hallazgo": "El BONUS 2, al que se le asigna un precio de €19, se vende dos veces prometiendo «cierres por vacaciones» dentro del calendario anual. No hay ninguna fila de vacaciones, cierre anual ni planificación de plantilla de verano en el fichero.",
+      "evidencia": "Las secciones del calendario son TEMPORADA PESCADO (A5), EVENTOS CLAVE (A11), MANTENIMIENTO (A19), FORMACION (A26) y ADMINISTRACION (A32); sus 22 filas de contenido (A6-A9, A12-A17, A20-A24, A27-A30, A33-A36) no incluyen ninguna referencia a vacaciones ni a cierre del local. Landing línea 231: '…formación del equipo y cierres por vacaciones'; línea 166 (grid): '…formación del equipo y cierres por vacaciones'.",
+      "fix": "Añadir a BONUS-02 una fila 'Cierre por vacaciones / plantilla reducida' en EVENTOS CLAVE marcada en agosto (columna I) y en la semana de Navidad (M), más otra de 'Planificar vacaciones del equipo' en marzo (D). Son dos filas y cierra la promesa; la alternativa es borrar la frase de las líneas 166 y 231."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "hoja «Calendario Anual», filas 20, 21, 24, 30 y 34 · contra 07-semanales-mensuales.xlsx, hoja «Tareas Mensuales», filas 7, 9, 10, 15 y 22",
+      "hallazgo": "Dos entregables del mismo kit mandan frecuencias contradictorias para las mismas tareas críticas: 07 las declara MENSUALES y BONUS-02 las programa una o dos veces al año. Un manager que use los dos no sabe si calibrar los termómetros cada mes o cada seis; y en extintores la pauta del calendario queda por debajo de la revisión trimestral del titular que exige el RIPCI (RD 513/2017).",
+      "evidencia": "07:Tareas Mensuales:B7 'Calibracion termometros (camara, vitrina, cocina)' con E7 '1a semana' (o sea, todos los meses) frente a BONUS-02:A21 'Calibracion termometros' con ● sólo en B21 (Ene) y H21 (Jul). 07:B9 'Revision sistema de frio: gas, compresor, temperaturas' E9 '2a semana' frente a BONUS-02:A20 con ● sólo en D20 (Mar) y J20 (Sep). 07:B10 'Verificar extintores y salidas de emergencia' E10 '2a semana' frente a BONUS-02:A24 con ● en G24 (Jun) y M24 (Dic). Mismo patrón en 07:B15 'Evaluacion de desempeno individual' vs BONUS-02:A30 (Jun/Dic) y 07:B22 'Auditar registros APPCC y archivo de congelacion anisakis' vs BONUS-02:A34 'Auditar registros APPCC anual' (Jun/Dic).",
+      "fix": "Elegir una frecuencia por tarea y propagarla a los dos ficheros. Propuesta: calibración de termómetros y revisión de frío → trimestral (4 marcas en BONUS-02, sacarlas del mensual de 07); extintores → trimestral por el titular + anual por empresa autorizada, con las dos filas etiquetadas; auditoría APPCC → mensual interna en 07 y anual completa en BONUS-02, dejando claro en el texto que son cosas distintas."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx",
+      "ubicacion": "hoja «Plantilla en Blanco», falta la fila de contador entre A24 y B27 · vs hoja «Instrucciones», B20",
+      "hallazgo": "La plantilla en blanco —cuyo propósito es que el cliente cree sus propios checklists copiando la hoja— es el único checklist del kit SIN la fila «Tareas completadas» con el COUNTIF, pese a que su propia hoja de Instrucciones promete ese contador. Todo lo que el cliente construya a partir de ella nace sin la funcionalidad que el changelog v1.1 anuncia como mejora principal.",
+      "evidencia": "09:Instrucciones:B20 = 'Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.' Pero 09:Plantilla en Blanco salta de A24 (número 15) directamente a B27 'Verificado por: ___' y B28 'Firma: ___': no existe la fila 'Tareas completadas:' con =COUNTIF(F5:F24,\"✓\") / =COUNTIF(B5:B24,\"?*\") que sí tienen los otros 8 checklists (p. ej. 07:Tareas Semanales:D26 y F26). La validación de datos del desplegable sí está presente (F6:F24), así que el usuario marca ✓ y no se cuenta nada.",
+      "fix": "Añadir en 09:Plantilla en Blanco la fila 26 idéntica a la del resto: A26 'Tareas completadas:', D26 '=COUNTIF(F5:F24,\"✓\")', E26 'de', F26 '=COUNTIF(B5:B24,\"?*\")'. Es una línea del generador de la familia: comprobar si los otros 10 kits de tareas tienen el mismo agujero en su fichero 09."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "hoja «Apertura Barra Sushi», D37/F37 y filas 35-36 · mismo patrón en 02, 04, 05, 07 y 08 · instrucción en la hoja «Instrucciones» B16 de los 11 ficheros · changelog src/data/productos-changelog.ts, entrada 'kit-tareas-sushi-bar' v1.1",
+      "hallazgo": "La instrucción «Añade tareas específicas de tu local en las filas vacías del final» no se puede cumplir: en ninguno de los 8 checklists pre-rellenados quedan filas vacías al final dentro del rango del contador. Y lo que el cliente escriba debajo de la última tarea cae FUERA del COUNTIF, así que el denominador «de N» no lo incluye — justo lo contrario de lo que promete el changelog v1.1.",
+      "evidencia": "01:Apertura Barra Sushi: la última tarea es B35 (nº 24) y el contador de D37/F37 es '=COUNTIF(F5:F35,\"✓\")' / '=COUNTIF(B5:B35,\"?*\")': el rango termina exactamente en la última tarea, sin una sola fila libre dentro. Mismo patrón en 02 (última tarea B26, rango B5:B26), 04 (B30 / B5:B30), 05 (B23 / B5:B23), 07 (B24 / B5:B24) y 08 (B24 / B5:B24). Changelog v1.1: «…y total que se recalcula en las hojas de checklist si añades o quitas tareas».",
+      "fix": "Dejar 3-5 filas numeradas vacías al final de cada sección DENTRO del rango del COUNTIF (como ya hace 09), o cambiar B16 de las Instrucciones por la instrucción correcta: «para añadir tareas, INSERTA filas dentro de una sección existente (botón derecho → Insertar fila): así el total se ajusta solo. Si escribes debajo de la última fila, el contador no la verá»."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "hoja «Apertura Barra Sushi», validación de datos F6:F35 y fórmulas D37/F37 · idéntico en los 8 checklists del kit",
+      "hallazgo": "El desplegable ofrece «N/A» pero el denominador del contador cuenta todas las tareas escritas, sin descontar las marcadas N/A. Un turno en el que 4 tareas no aplican (no hay omakase, no hay terraza, no hay cocina caliente ese día) muestra para siempre «20 de 24» aunque esté todo hecho: la hoja se archiva como evidencia de control operativo ante Sanidad mostrando un cumplimiento incompleto que es falso.",
+      "evidencia": "Validación de datos de 01:Apertura Barra Sushi = ('F6 F7 … F35', 'list', '\"✓,—,N/A\"'). Contador: D37 '=COUNTIF(F5:F35,\"✓\")' y F37 '=COUNTIF(B5:B35,\"?*\")' — el segundo cuenta celdas de texto de la columna Tarea sin mirar la columna F. El changelog v1.1 presenta el desplegable ✓/—/N/A como mejora, así que el usuario lo usará.",
+      "fix": "Cambiar el denominador a tareas aplicables: F37 = '=COUNTIF(B5:B35,\"?*\")-COUNTIF(F5:F35,\"N/A\")' (funciona igual en Excel, Google Sheets, LibreOffice y Numbers). Aplicar a los 8 checklists y al contador que se añada en 09 por COM-11."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "todo el corpus: 01:Cierre Barra Sushi:B23 · 06:Sala y Servicio:B14 · 08:Temporadas Pescado Espana:A2 y A21 · BONUS-02:A2 y A30 · hoja «Instrucciones» B15/B16 de los 11 ficheros",
+      "hallazgo": "Los 11 ficheros están escritos sistemáticamente SIN tildes ni eñes en el cuerpo, incluida la palabra «baños» escrita «banos». El contraste lo hace más visible: la línea de versión que añadió la Fase A sí lleva tilde («Versión 1.1») y en 08 conviven 'ANO NUEVO' (A13) y 'Año Nuevo japones' (B16) en la misma hoja. En un producto de pago en español es el detalle que más rápido delata generación automática y contamina la credibilidad del resto.",
+      "evidencia": "01:Cierre Barra Sushi:B23 = 'Limpieza sala: mesas, suelos, banos'. 06:Sala y Servicio:B14 = 'Limpieza de sala y banos al cierre'. Instrucciones de los 11 ficheros = '▸ Anade tareas especificas de tu local en las filas vacias del final'. 03:Instrucciones:B6 = '…es OBLIGATORIO por la legislacion espanola'. 08:Temporadas:A2 = 'Ano: ______' y A21 = '  OTONO (Sep-Nov)'. BONUS-02:A2 = 'Ano: ______', A30 = 'Evaluacion desempeno equipo'. 06:Cocina Caliente:B10 = '…arroz de acompanamiento'. Frente a ellos, 08:Eventos Especiales:B16 = 'Decoracion tematica: Año Nuevo japones' y la línea 'Versión 1.1 · agosto 2026' de los 11 ficheros.",
+      "fix": "Pasada de restitución de tildes y ñ sobre las cadenas de los 11 .xlsx —mejor en el generador de la familia, que es el origen—. Prioridad: 'banos'→'baños', 'Ano'→'Año', 'OTONO'→'OTOÑO', 'Anade'→'Añade', 'espanola'→'española', 'desempeno'→'desempeño', 'acompanamiento'→'acompañamiento', 'pano'→'paño', 'manana'→'mañana'. Después barrer las vocales sin tilde de 'coccion/preparacion/refrigeracion/limpieza/dia/camara…'."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "hoja «Apertura Barra Sushi», B7 vs hoja «Cierre Barra Sushi», B8 · y 03-seguridad-anisakis-appcc.xlsx, hoja «Temperaturas Diario», B5",
+      "hallazgo": "El kit fija dos límites distintos para la misma cámara de pescado crudo en el mismo día: en apertura se verifica -2 a 0 °C y en cierre se devuelve el pescado a 0-2 °C. El registro APPCC que se archiva usa el primer rango, así que una devolución hecha «bien» según la hoja de cierre queda anotada como desviación en el registro de temperaturas.",
+      "evidencia": "01:Apertura Barra Sushi:B7 = 'Verificar temperatura camara pescado crudo (-2 a 0°C)'. 01:Cierre Barra Sushi:B8 = 'Envolver pescado restante y devolver a camara (0-2°C)'. 03:Temperaturas Diario:B5 = 'Camara pescado crudo (-2 a 0°C)' — dos contra uno: el rango discrepante es el de la hoja de cierre.",
+      "fix": "Unificar en '-2 a 0 °C' corrigiendo 01:Cierre:B8. Si la intención era distinguir el pescado ya manipulado, decirlo explícitamente en el texto de la tarea en vez de cambiar el rango sin avisar."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "hoja «Registro Congelacion», B27 vs hoja «Instrucciones», B7 y hoja «Temperaturas Diario», B6",
+      "hallazgo": "El umbral del aviso de reinicio del conteo de congelación no coincide con el límite que el propio fichero exige. Se pide -20 °C o menos, pero la regla de reinicio sólo se dispara por encima de -18 °C: una cámara que suba a -19 °C incumple el límite y, según el aviso impreso al pie del registro, no obliga a reiniciar nada. En el registro que se enseña a Sanidad es exactamente la incoherencia que un inspector busca.",
+      "evidencia": "03:Registro Congelacion:B27 = 'IMPORTANTE: Si la temperatura sube por encima de -18°C durante la congelacion, reiniciar el conteo de 7 dias'. Frente a 03:Instrucciones:B7 ('a -20°C durante minimo 7 dias'), 03:Temperaturas Diario:B6 ('Camara congelacion anisakis (-20°C o menos)') y 01:Apertura Barra Sushi:B8 ('Verificar camara congelacion anisakis (-20°C o menos)'). El -18 °C es el límite del congelador general, que está en la fila de al lado (03:Temperaturas Diario:B9, 'Congelador general (-18°C o menos)').",
+      "fix": "Cambiar B27 a «Si la temperatura sube por encima de -20 °C durante el tratamiento, reiniciar el conteo». Ajustar también la duración cuando se aplique COM-01."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/05-tareas-manager.xlsx",
+      "ubicacion": "hoja «Instrucciones», B6 vs las hojas reales del fichero",
+      "hallazgo": "La hoja de instrucciones del fichero del manager anuncia tres checklists —diario, semanal y mensual— y el fichero sólo trae dos. Es la primera línea que lee al abrir el entregable el rol que decide la compra.",
+      "evidencia": "05:Instrucciones:B6 = '▸ Checklist diario, semanal y mensual para el gerente/encargado'. Hojas reales de 05 = ['Instrucciones','Tareas Diarias Manager','Tareas Semanales Manager']. Lo mensual está en otro fichero (07:Tareas Mensuales), que no es un checklist de rol sino de mantenimiento general.",
+      "fix": "O se añade a 05 una hoja «Tareas Mensuales Manager» (cierre de food cost del mes, revisión de escandallos, renegociación de proveedores, análisis de mermas, evaluación del equipo) —contenido que el manager va a echar en falta—, o se corrige B6 a «Checklist diario y semanal para el gerente/encargado; las tareas mensuales van en el fichero 07»."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "hoja «Protocolo Arroz Sushi», E8 y E9 (y E13 vs E10) · contra 01-apertura-cierre-sushi.xlsx, hoja «Apertura Barra Sushi», E13-E17",
+      "hallazgo": "La columna de horas del protocolo de arroz es imposible de cumplir y contradice al fichero 01 para el mismo proceso. Se manda reposar el arroz 30 minutos en agua a las 10:20 y cocerlo a las 10:25, cinco minutos después. Y la línea temporal completa de 02 no cuadra con la de 01, que lleva el arroz mezclado con sushi-zu a las 10:45 mientras 02 lo tiene todavía en la arrocera.",
+      "evidencia": "02:Protocolo Arroz Sushi: B8 'Dejar reposar arroz en agua 30 min antes de cocer' con E8 '10:20', y B9 'Cocer arroz: ratio 1:1.1 (arroz:agua) en arrocera' con E9 '10:25'. En el mismo fichero, B13 'Preparar sushi-zu…' va a las 10:45 (E13) y B10 'Dejar reposar 10 min tras coccion' a las 10:50 (E10). Frente a 01:Apertura Barra Sushi: E13 lavar '10:10', E14 cocer '10:15', E16 'Mezclar arroz cocido con sushi-zu en hangiri' '10:45', E17 'Verificar pH del arroz' '10:50' — mientras 02 sitúa el pH a las 11:10 (E18).",
+      "fix": "Recalcular la columna E de 02:Protocolo Arroz Sushi hacia atrás desde la apertura: pesar 09:30, lavar 09:35, reposo 30 min 09:40→10:10, cocer 10:10, reposo 10 min 10:40, transferir a hangiri 10:50, sushi-zu 10:55, pH 11:00. Alinear después las horas de arroz de 01:Apertura (E13-E18) y del perfil de ayudante (06:Ayudante Sushi:E6) con esa misma línea."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx",
+      "ubicacion": "hoja «Instrucciones», B13-B16 vs hoja «Briefing Servicio»",
+      "hallazgo": "El bloque «Cómo personalizar» es copia literal del de los checklists y habla de tres cosas que este bonus no tiene: celdas verdes (la hoja no tiene ni un relleno), tareas y horas límite. Es el único fichero del kit con cero celdas coloreadas, así que la instrucción no es imprecisa: es imposible de seguir.",
+      "evidencia": "Recuento de rellenos sólidos de BONUS-01:Briefing Servicio = {} (ninguno), frente a los 48, 42 y 34 rellenos verdes E8F5E9 de 01:Apertura, 04:Mise en Place y 02:Protocolo Arroz. BONUS-01:Instrucciones:B13 '▸ Las celdas verdes son editables — cambia responsables y horarios', B14 '▸ Borra las tareas que no aplican a tu sushi bar', B16 '▸ Ajusta las horas limite a tus horarios reales'. La hoja es un formulario de campos con guiones bajos (B4 'Fecha:', B9 'Pieza 1: __________ (origen: __________ kg: ____)').",
+      "fix": "Sustituir B13-B16 de BONUS-01 por instrucciones propias del formulario («imprime una copia por turno», «añade líneas de pieza si trabajas con más de 4 pescados del día», «los campos con ☐ se marcan a mano»). Revisar el mismo bloque genérico en 03 —donde «borra las tareas que no aplican» aplicado a un registro obligatorio es mal consejo— y en BONUS-02, que tampoco tiene responsables ni horarios."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 89 y 195-197 (hero.badge y why.reasons[3])",
+      "hallazgo": "La comparativa que abre la página («el software de gestión cobra €40/mes») es una cifra concreta atribuida a un competidor genérico y sin fuente, repetida como título de una de las cuatro razones de compra. Un comprador escéptico pregunta a qué software se refiere; y «ilimitado en clientes» no significa nada en un producto que son 11 hojas de cálculo.",
+      "evidencia": "Línea 89: 'Lo que el software de gestión cobra €40/mes, tú lo tienes por €14 — para siempre'. Línea 195: 'Software de Gestión Cobra €40/mes. Esto es €14'. Línea 197: 'Las mismas listas de tareas que usan sushi bars con software premium, pero en Excel por un pago único. Sin suscripción, sin tablets, ilimitado en clientes.' — «las mismas listas de tareas que usan» es además una afirmación sobre producto ajeno que nadie puede sostener.",
+      "fix": "Reescribir sin cifra atribuida ni comparación con producto ajeno: «Sin cuota mensual: pago único de €14 y son tuyas para siempre, en todos tus locales». Cambiar 'ilimitado en clientes' por 'sin límite de locales ni de usuarios'."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "hoja «Calendario Anual», A33 con marca en B33",
+      "hallazgo": "El calendario programa «Renovar registro sanitario» cada enero. El registro sanitario no se renueva periódicamente: la inscripción en el RGSEAA (RD 191/2011) no caduca y lo que obliga es a comunicar modificaciones o cese; además un sushi bar que sirve a consumidor final se inscribe en el registro autonómico. La tarea manda al cliente a un trámite que no existe y le da falsa tranquilidad sobre el que sí tiene.",
+      "evidencia": "BONUS-02:Calendario Anual:A33 = 'Renovar registro sanitario' con ● en B33 (Ene) y en ningún otro mes.",
+      "fix": "Sustituir A33 por «Revisar que los datos del registro sanitario siguen vigentes (comunicar cambios de titularidad, actividad o instalaciones)» y mantener la marca anual como recordatorio de revisión, no de renovación. Comprobar si la fila está replicada en los otros kits de la familia."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/05-tareas-manager.xlsx",
+      "ubicacion": "hoja «Tareas Diarias Manager», B20/E20 y B23/E23 vs 01-apertura-cierre-sushi.xlsx, hoja «Cierre Barra Sushi», B26/D26/E26 y B27/D27/E27 · promesa en kit-tareas-sushi-bar.ts línea 141",
+      "hallazgo": "Dos tareas de cierre están duplicadas entre ficheros con responsable Y hora distintos, que es justo lo que la landing promete que no ocurre («Roles y responsabilidades sin solapes»). El pedido de pescado y el cuadre de caja aparecen asignados al Manager en un fichero y al Itamae / al Encargado en el otro, con hasta 90 minutos de diferencia: en el turno real se hace dos veces o ninguna.",
+      "evidencia": "05:Tareas Diarias Manager:B20 'Confirmar pedido de pescado para manana (lonja cierra temprano)', D20 'Manager', E20 '22:00' — frente a 01:Cierre Barra Sushi:B26 'Preparar pedido pescado para manana (lonja/proveedor)', D26 'Itamae', E26 '23:30'. Y 05:B23 'Cuadre de caja', D23 'Manager', E23 '23:30' frente a 01:B27 'Cuadre de caja y cierre TPV', D27 'Encargado', E27 '23:40'. Landing línea 141: 'Roles y responsabilidades sin solapes'.",
+      "fix": "Definir dueño único por tarea: el pedido lo PREPARA el itamae (propuesta de compra, 23:00) y lo CONFIRMA el manager (23:15), redactado así en las dos hojas; el cuadre de caja se queda sólo en 01 con responsable 'Encargado / Manager' y se borra de 05 (o al revés). Unificar la hora en ambos casos."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/07-semanales-mensuales.xlsx",
+      "ubicacion": "hoja «Tareas Semanales», E4 con E6-E24 · hoja «Tareas Mensuales», E4 con E6-E22 · replicado en 05:Tareas Semanales Manager y en las dos hojas de 08",
+      "hallazgo": "La columna se titula «Hora Limite» pero en las hojas semanales, mensuales y estacionales contiene días de la semana, ordinales de semana, meses y cuentas atrás. La cabecera se arrastró del molde diario sin adaptarla, y al imprimir —que es el uso previsto— queda una columna cuyo encabezado contradice su contenido en 6 de las 15 hojas de checklist.",
+      "evidencia": "07:Tareas Semanales:E4 = 'Hora Limite' con valores E6 'Lunes', E9 'Martes', E20 'Miercoles', E24 'Viernes'. 07:Tareas Mensuales:E4 = 'Hora Limite' con E6 '1a semana', E19 '1er dia mes', E21 'Segun acuerdo'. 08:Temporadas Pescado Espana:E4 = 'Hora Limite' con E6 'Diciembre', E22 'Septiembre'. 08:Eventos Especiales:E4 = 'Hora Limite' con E6 '-48h' y E14 '-3 sem'.",
+      "fix": "Renombrar E4 según la hoja: «Día» en las semanales, «Cuándo» en las mensuales, «Mes» en temporadas y «Antelación» en eventos. Son seis celdas y el resto del molde no cambia."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "línea 136 (grid.templates[4]) y tarjeta 'manager' de src/pages/KitTareasSushiBarDashboard.tsx",
+      "hallazgo": "La tarjeta del manager promete «comparativa de proveedores y reporting» y ninguna de las dos existe en 05: no hay tarea de reporting ni ninguna comparativa (hay una única línea de negociación de precios, que no es lo mismo). Son los dos últimos elementos de la enumeración, que es donde mira el comprador exigente.",
+      "evidencia": "Línea 136: 'Pedidos a lonja, control de stock de pescado, gestión del equipo, reservas (incluido omakase), revenue diario, comparativa de proveedores y reporting.' Las 22 tareas de 05 más próximas son B19 'Revisar ventas del dia vs objetivo' (hoja diaria) y B7 'Negociar precios con proveedores de lonja' (hoja semanal); las palabras reporting, informe, comparativa y KPI no aparecen en ninguna de las dos hojas.",
+      "fix": "O se añaden a 05:Tareas Semanales Manager dos filas —«Comparar precio €/kg por especie entre los 3 proveedores de la semana» y «Enviar informe semanal: ventas, food cost de pescado, mermas e incidencias»—, que es contenido barato y valioso, o se recorta la línea 136 y la tarjeta del dashboard a lo que el fichero sí trae."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "línea 176 (why.subtitle)",
+      "hallazgo": "El subtítulo del bloque de autoridad —la frase que sostiene por qué fiarse del kit— está mal construido: encadena dos «y» y termina con un sintagma suelto sin verbo. Y la credencial japonesa queda como coletilla vaga («experiencia en cocina japonesa») justo donde tiene que ser específica, porque es un producto de nicho.",
+      "evidencia": "Línea 176: 'No son plantillas genéricas. Son checklists diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010 y experiencia en cocina japonesa.'",
+      "fix": "Reescribir: «No son plantillas genéricas. Las ha diseñado un chef con 29 años en alta hostelería y 15 como consultor gastronómico, que ha asesorado a sushi bars y restaurantes japoneses en su operativa y en el protocolo anisakis.» — coherente con el authorBio de la línea 209 y con la bio anclada del proyecto."
+     }
+    ]
+   }
+  }
+ }
+}
