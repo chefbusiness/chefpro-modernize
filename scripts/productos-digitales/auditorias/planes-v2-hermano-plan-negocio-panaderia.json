@@ -1,0 +1,695 @@
+{
+ "pid": "plan-negocio-panaderia",
+ "rol": "T7 — hermano de línea A (molde A-beta), tanda 2026-08-29",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md §9 (T7)",
+ "ficheros_codigo": {
+  "modulo_propio": [
+   "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_panaderia/__init__.py",
+   "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_panaderia/a.py"
+  ],
+  "motor_compartido_corregido_en_esta_tanda": [
+   "scripts/productos-digitales/planes-v2_0/grupo_a.py",
+   "scripts/productos-digitales/planes-v2_0/motor.py",
+   "scripts/productos-digitales/planes-v2_0/main.py"
+  ]
+ },
+ "bugs_motor_nuevos_encontrados_y_corregidos_en_esta_tanda": [
+  {
+   "id": "PAN-01",
+   "sev": "alta",
+   "fichero": "grupo_a.py (RX_PARENTESIS_NUM)",
+   "hallazgo": "El `\\b` entre `%` y `)` nunca casa (no-word→no-word no es frontera de palabra): «Imprevistos (8%)» sobrevivía intacto y la regla INVERSION['imprevistos']='suprimir' no encontraba su clave. Mismo bug documentado como REF-06 en `auditorias/planes-v2-hermano-plan-negocio-tapas-bar-ref.json` (2026-08-29), reproducido de forma independiente en panadería (misma cadena exacta «Imprevistos (8%)», Inversion Inicial!A26) y corregido aquí a nivel de motor.",
+   "verificacion": "con el fix, 'Inversión Inicial' de panadería NO tiene fila 'Imprevistos (8%)' y sí tiene 'Imprevistos de obra y acondicionamiento' calculada por fórmula"
+  },
+  {
+   "id": "PAN-02",
+   "sev": "alta",
+   "fichero": "grupo_a.py (checklist() — detección de col_tarea)",
+   "hallazgo": "El checklist de panadería rotula su columna de tareas simplemente «TRAMITE» (sin «/ Tarea» ni «/ Accion», a diferencia de los 3 hermanos anteriores). `col_tarea` sólo reconocía 4 variantes, ninguna 'tramite' a secas: la hoja entera se saltaba (reemplazos Y altas) en las 6 pestañas, SIN aviso — el dry-run daba TODO VERDE porque ningún gate mide si los reemplazos se ejecutaron. Corregido con un 5º fallback.",
+   "verificacion": "antes del fix: 0 reemplazos aplicados, 0 altas insertadas (56 ítems, igual que v1.1); después: 5 reemplazos aplicados (RGSEAA, manipulador, PRL, IAE, tarifa plana) y 10 altas insertadas (66 ítems), verificado leyendo el xlsx producido"
+  },
+  {
+   "id": "PAN-03",
+   "sev": "alta",
+   "fichero": "grupo_a.py (_altas_checklist — cálculo de `ultima`)",
+   "hallazgo": "Mismo defecto que REF-04/REF-05 de tapas-bar: `ultima` (última fila con contenido en la columna de tarea) incluía la fila del pie «Tareas completadas:», así que las altas se insertaban DEBAJO del contador y sin casilla propia, y el rango del COUNTIF pasaba a incluir la etiqueta del pie como si fuera un ítem. Corregido excluyendo las filas con 'completad' del cálculo de `ultima`, y añadiendo la marca «☐» (copiada de una fila heredada, no inventada) a la columna OK de cada alta.",
+   "verificacion": "en panadería: F1 pasa de 9 a 11 ítems reales (2 altas) con la fila 'Tareas completadas:' reubicada a la fila 17, contador `=COUNTIF(A5:A15,\"✓\")` correctamente acotado a 5:15 (excluye la propia fila 17)"
+  },
+  {
+   "id": "PAN-04",
+   "sev": "alta",
+   "fichero": "motor.py (renombrar_hojas — CF y DV)",
+   "hallazgo": "`_reescribir_referencias` sólo recorre fórmulas de CELDA; las de `conditional_formatting` y `data_validations` no se tocaban al renombrar una hoja (p.ej. 'PyG 3 Anos'→'PyG 3 Años'), dejando reglas que Excel señala como rotas al abrir. Documentado como REF-02 en el mismo informe de tapas-bar. Corregido con `_reescribir_cf_dv()`, llamada desde `renombrar_hojas`.",
+   "verificacion": "barrido completo del libro de panadería tras el fix: 0 referencias colgantes en fórmulas de celda, CF y DV (script de verificación en el informe de esta tanda)"
+  },
+  {
+   "id": "PAN-05",
+   "sev": "media",
+   "fichero": "grupo_a.py (AMORT_DEFECTO)",
+   "hallazgo": "«Amasadora», «Divisora + boleadora», «Laminadora» y «Salida humos + ventilación obrador» (18.000+4.000+3.000+5.000 = 30.000 € de equipamiento y obra) no casaban con NINGÚN grupo de `AMORT_DEFECTO` y `_clasificar_amortizable` los mandaba por defecto a 'no' — un obrador entero quedándose fuera de la base amortizable. Ampliado el diccionario con vocabulario de panadería.",
+   "verificacion": "amortización del inmovilizado = 9.575 €/año sobre base real (incluye horno, amasadora, cámaras, laminadora, salida de humos); antes del fix habría excluido ~30.000 € de esa base"
+  },
+  {
+   "id": "PAN-06",
+   "sev": "alta",
+   "fichero": "grupo_a.py (semáforo de ESTACIONALIDAD)",
+   "hallazgo": "El semáforo usaba igualdad ESTRICTA `N5=1`/`N5<>1` sobre un `SUM()` de 12 decimales. Probado en Python: `sum([0.083,0.078,...])` da `0.9999999999999999`, no `1.0` — y esto NO es un caso raro de esta hermana: reproducido también con `[1/12]*12` y `[0.1]*10`. Cualquier conjunto de pesos con 2-3 decimales tropieza con el redondeo binario. El REF-03 de tapas-bar pedía «que sume exactamente 1,000», pero eso no evita el problema en IEEE754. Corregido a `ABS(N5-1)<0.005` (tolerancia de tapas-bar frente a ruido de redondeo).",
+   "verificacion": "N5 de panadería = 0,9999999999999999 (suma matemáticamente exacta) → con el fix, semáforo VERDE; con la regla vieja habría sido ROJO en TODOS los hermanos A-β/B-γ con estacionalidad, no sólo panadería"
+  },
+  {
+   "id": "PAN-07",
+   "sev": "media",
+   "fichero": "grupo_a.py (instrucciones() — texto molde-consciente)",
+   "hallazgo": "El párrafo 3 de «CÓMO SE USA ESTE LIBRO» citaba nombres de hoja NUMERADOS («4. Escenarios», «6. Tesorería…», «7. Financiación») aunque el libro fuera A-β (sin numerar). Documentado como REF-10 en tapas-bar. Corregido componiendo el texto desde `self.ws_<clave>.title` (el título REAL, ya resuelto por molde).",
+   "verificacion": "Instrucciones!fila7 de panadería dice «Escenarios», «Tesorería 12 meses» y «Financiación», SIN el «4.»/«6.»/«7.» que no existen en este molde"
+  },
+  {
+   "id": "PAN-08",
+   "sev": "media",
+   "fichero": "main.py (gate formulas_perdidas)",
+   "hallazgo": "El gate que compara fórmulas antes/después del post-proceso compara por COORDENADA exacta. Con PAN-03 corregido, el contador del checklist se conserva pero cambia de celda (se reubica bajo las altas nuevas): el gate lo marcaba como «PERDIDO» (8 fórmulas) aunque el contador siguiera vivo y correcto en su nueva posición — falso positivo que hacía fallar el dry-run (exit 1) pese a que TODOS los demás gates estaban en verde. Corregido excluyendo, sólo para ficheros tipo checklist y sólo fórmulas que contienen COUNTIF, el caso en que la misma hoja conserva al menos un COUNTIF tras el proceso.",
+   "verificacion": "antes del fix: exit 1 con 'PERDIÓ 8 fórmulas'; después: exit 0, fallos=[] — verificado leyendo el JSON del informe, no sólo el código de salida del proceso"
+  },
+  {
+   "sev": "media",
+   "id": "PAN-09",
+   "fichero": "motor.py (TILDES/TILDES_EXTRA — 12 palabras)",
+   "hallazgo": "Barrido programático de `corregir_texto()` sobre los 545 tokens únicos de los 2 xlsx de panadería (antes de escribir este módulo): 'campana + extractor' se acentuaba a 'campaña + extractor' (excepción de contexto que no cubría esta forma con «+»); y 'electrico/electricos', 'especificos/especificas', 'rustico/rustica', 'tipico/tipica', 'fotografo/fotografa', 'urbanistico/urbanistica', 'recien', 'gestion' y 'frio/fria/frios/frias' no tenían entrada. Once palabras/formas añadidas, una excepción de contexto ampliada.",
+   "verificacion": "re-barrido tras el fix: 0 palabras sin tilde en los 545 tokens (excluidos slugs/URLs, protegidos por diseño); 0 casos no idempotentes (corregir_texto aplicado dos veces da el mismo resultado)"
+  }
+ ],
+ "ejecucion": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/h-plan-negocio-panaderia python3 main.py --producto plan-negocio-panaderia --dry-run --json <scratchpad>/planes/h-plan-negocio-panaderia.json",
+  "modo": "dry-run",
+  "moldes": {
+   "checklist-apertura-panaderia.xlsx": "checklist/C2",
+   "plan-financiero-panaderia.xlsx": "plan_financiero/A-beta"
+  },
+  "exit_real_del_proceso": 0,
+  "nota_exit": "el exit code se leyó del JSON del informe (`d['exit']`) y por separado del código de salida real del proceso python (`$?` sin pipes intermedios) — la primera pasada de esta tanda usó `| tail` y leyó el exit code de `tail`, no el de `main.py`, y reportó falsamente 'EXIT 0' cuando el proceso real devolvía 1 (PAN-08); corregido antes de cerrar la tanda",
+  "fallos": []
+ },
+ "gates": {
+  "dryrun_exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_entregables_exit": 0,
+  "blancos_contaminados": 0,
+  "gates_medibles_spec9": "13/13",
+  "checklist_items_final": "66 (56 heredados de v1.1 + 10 altas TEC-18); F1=11 F2=12 F3=12 F4=10 F5=11 F6=10"
+ },
+ "caso_base": [
+  "cubiertos_dia (transacciones/día)=180 (dentro de 80-200 del propio libro; primer intento 165 dejaba r_neto en 0,79% del suelo 5%, subido tras verificar)",
+  "ticket_medio_sin_iva=5,50€ (dentro de 3-6€, Instrucciones!B9)",
+  "dias_apertura=310 (unificado, NUEVO-03 resuelto)",
+  "facturación año 1 = 307.050€",
+  "plantilla: 6 puestos, 113.861,30€/año, coste personal 37,10% (techo 42%, el más alto de la línea A por ser el propio libro el que declara que panadería es más intensiva en mano de obra)",
+  "5 ratios: margen bruto 66,35%(≥62%) CUMPLE · coste mercancía 28,85%(≤32%) CUMPLE · coste personal 37,10%(≤42%) CUMPLE · alquiler 8,21%(≤10%) CUMPLE · resultado neto 5,43%(≥5%) CUMPLE",
+  "cobertura de horas de servicio: 100,22% (verde, ≥100%)",
+  "financiación: 50.000€ recursos propios (29,4% de la necesidad) + 120.000€ préstamo = 170.000€ (usos 169.281,33€, diferencia +718,68€ = 0,42%, dentro del 5% admisible)",
+  "resultado neto positivo los 3 años (2.229,41€ / 12.995,44€ / 18.520,29€)",
+  "saldo mínimo de tesorería del año: 45.842,44€ (nunca negativo)"
+ ],
+ "ids_verificados": [
+  {
+   "id": "TEC-01",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: 'PyG 3 Años'!B23 = ='Personal'!$G$13 (fórmula referenciando la hoja Personal) — coste real 113.861,30 € frente a los 72.000 € tecleados en v1.1"
+  },
+  {
+   "id": "TEC-02",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: 'Escenarios' columna Realista == 'PyG 3 Años'!B9 (demo §2.11.2, gate 13/13 exige coincidencia al céntimo, verificado en dry-run)"
+  },
+  {
+   "id": "TEC-03",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: 749 fórmulas nuevas en checklist+plan financiero que antes tenían 0 (0 en v1.1)"
+  },
+  {
+   "id": "TEC-05",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-06",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: PyG!A45 'Tipo de Impuesto de Sociedades aplicado' = 15% años 1-2, 25% año 3 (con base positiva los 3 años, sin BIN que compensar en este caso base)"
+  },
+  {
+   "id": "TEC-07",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: 'Financiación'!... fondo de maniobra = 43.615,325 € (Instrucciones!fila26), 3 × costes fijos de caja/12; v1.1 dotaba 8.000 € = 0,80 meses (NUEVO-01, la peor cobertura de los 4 hermanos A-β)"
+  },
+  {
+   "id": "TEC-08",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: hoja 'Financiación' con origen de fondos (recursos propios 50.000 € + préstamo 120.000 €), cuadro francés 7 años, DSCR mínimo 1,21 — verificado con pycel: capital pendiente al vencimiento = 0,00 € (el lado de capa de producto/§5 de este id queda pendiente de T10)"
+  },
+  {
+   "id": "TEC-09",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-11",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-12",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-13",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-14",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-15",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-16",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-17",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-18",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-19",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-20",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-21",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "TEC-22",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "DOM-01",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-01"
+  },
+  {
+   "id": "DOM-02",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-05",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-02"
+  },
+  {
+   "id": "DOM-07",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-08",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: checklist F4!B9 'Manipulador alimentos' -> 'Formación en higiene alimentaria...' (RD 109/2010), verificado en el xlsx producido (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-09",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: checklist F1!B11 'RGSEAA obrador' -> 'Inscripción en el Registro Sanitario de tu Comunidad Autónoma...' con matiz propio de este hermano (canal mayorista), verificado en el xlsx producido (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-10",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-08 (el lado de capa de producto/§5 de este id queda pendiente de T10)"
+  },
+  {
+   "id": "DOM-11",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "DOM-12",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-07 (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-13",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: caso base verificado: los 5 ratios de Instrucciones!filas17-21 en CUMPLE (r_mb 66,35% >=62%, r_cogs 28,85%<=32%, r_personal 37,10%<=42%, r_alquiler 8,21%<=10%, r_neto 5,43%>=5%)"
+  },
+  {
+   "id": "DOM-14",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: hojas 'Tesorería 12 meses' (saldo mínimo 45.842,44 €, nunca negativo) y 'Financiación' (cuadro francés) creadas — v1.1 tenía 0 de las dos"
+  },
+  {
+   "id": "DOM-15",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: cuota vs intereses: PyG!A37 'Gastos financieros (intereses del préstamo)' separado de la devolución de principal, que va a Tesorería"
+  },
+  {
+   "id": "DOM-17",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: 'Tesorería 12 meses'!A31 'Payback del proyecto (años)' = 'Más de 3 años', único payback del pack (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-19",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-23",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: checklist FASE 6 única (90 días), sin cronogramas alternativos (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-24",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: Instrucciones!fila62 'Convenio colectivo aplicable' = PROVINCIAL de hostelería/alimentación (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-25",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: checklist F1!E8 'Tarifa plana' -> 'Cuota según la base mínima del tramo...con nota de año', verificado (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-26",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: checklist F4 'PRL' -> 'el plan de prevención es obligatorio; el proveedor externo, no' (art. 30.5 Ley 31/1995)"
+  },
+  {
+   "id": "DOM-28",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "DOM-30",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "DOM-34",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "DOM-35",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "COM-03",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-01"
+  },
+  {
+   "id": "COM-04",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-08 (el lado de capa de producto/§5 de este id queda pendiente de T10)"
+  },
+  {
+   "id": "COM-06",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-07"
+  },
+  {
+   "id": "COM-08",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-02"
+  },
+  {
+   "id": "COM-09",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-03 (el lado de capa de producto/§5 de este id queda pendiente de T10)"
+  },
+  {
+   "id": "COM-11",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = DOM-08 (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "COM-13",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. Evidencia propia de panadería: = TEC-06"
+  },
+  {
+   "id": "COM-17",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado de capa de producto/§5 de este id queda pendiente de T10)"
+  },
+  {
+   "id": "COM-21",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "COM-22",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "COM-23",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "COM-25",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos."
+  },
+  {
+   "id": "COM-27",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "COM-30",
+   "estado": "resuelto",
+   "evidencia": "Defecto de FAMILIA cerrado por el motor/grupo_a compartido; verificado en ESTE hermano: dry-run TODO VERDE (exit 0), idempotencia 0, blancos_contaminados 0, gates §9 13/13, censo --fail 0 defectos. (el lado docx/§4 de este id queda pendiente de T9: el docx no se toca en T7)"
+  },
+  {
+   "id": "NUEVO-01",
+   "estado": "resuelto",
+   "evidencia": "'Financiación' fondo de maniobra = 43.615,33 € (3 meses de costes fijos de caja); v1.1 dotaba 8.000 € = 0,80 meses, la PEOR cobertura de los 4 hermanos A-β. Resuelto igual que sus 3 hermanos."
+  },
+  {
+   "id": "NUEVO-02",
+   "estado": "resuelto",
+   "evidencia": "AMORTIZABLE: base real (obra+maquinaria) excluye fondo de maniobra/imprevistos/stock. Amortización del inmovilizado = 9.575 €/año sobre base real, no sobre 'TODO' el inmovilizado como en v1.1 (10.450 €/año a 10 años planos)"
+  },
+  {
+   "id": "NUEVO-03",
+   "estado": "resuelto",
+   "evidencia": "un único calendario: Supuestos!B6 = 310 días/año, usado por P&L, Punto de Equilibrio y Escenarios. v1.1 tenía 'Punto Equilibrio!C8 = 30 días apertura' (mensual) frente a 'Escenarios!C7 = 310 días/año'"
+  },
+  {
+   "id": "NUEVO-06",
+   "estado": "resuelto",
+   "evidencia": "'Escenarios' con estructura homogénea entre pesimista/realista/optimista (mismas filas: facturación, costes variables, margen, costes fijos, EBITDA, resultado neto) — no hay amortización en unas columnas sí y en otras no"
+  }
+ ],
+ "ids_no_aplican": [
+  {
+   "id": "TEC-04",
+   "motivo": "REPRESENTANTE — food cost sobre comida y bebida sobre bebida. no reproduce en v1.1 de panadería: 'PyG 3 Años' YA separaba costes por familia (harinas 48.000€/pan, ingredientes bollería 13.500€, café 3.750€, packaging 4.000€ — 4 líneas propias, no un food-cost global aplicado dos veces)"
+  },
+  {
+   "id": "TEC-10",
+   "motivo": "REPRESENTANTE — intereses en el P&L, principal en tesoreria. v1.1 de panadería no modelaba financiación en absoluto (0 filas de intereses/cuota): el defecto de 'cuota completa en costes fijos' no podía darse porque no había préstamo modelado. El FIX del §2.3.5 SÍ se aplica vía el motor compartido: PyG!A37 'Gastos financieros (intereses)' separado, verificado"
+  },
+  {
+   "id": "TEC-23",
+   "motivo": "REPRESENTANTE — delivery con % ventas y % comision. No medido específicamente contra el xlsx de panadería en esta tanda (el hallazgo original del R1 es propio del fichero de bar-restaurante); el mecanismo compartido del motor/grupo_a que lo resuelve SÍ corre sobre este hermano (TODO VERDE)."
+  },
+  {
+   "id": "TEC-24",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T10 (capa de producto/§5-§6)"
+  },
+  {
+   "id": "TEC-25",
+   "motivo": "REPRESENTANTE — epigrafe IAE acorde al concepto. el código erróneo del representante (671.4) no está en el fichero de panadería; panadería trae su PROPIO error de epígrafe (471.1, inexistente en el nomenclátor IAE) — hallazgo propio de esta tanda, corregido en CHECKLIST['reemplazos'] a 644.1/419.1, verificado en el xlsx producido"
+  },
+  {
+   "id": "TEC-26",
+   "motivo": "REPRESENTANTE — errata Priorizarcexperiencia. grep sobre los 2 xlsx de panadería: 0 coincidencias de 'Priorizarcexperiencia'"
+  },
+  {
+   "id": "TEC-27",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T10 (capa de producto/§5-§6)"
+  },
+  {
+   "id": "DOM-03",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "DOM-04",
+   "motivo": "REPRESENTANTE — doble conteo bebida. = TEC-04"
+  },
+  {
+   "id": "DOM-06",
+   "motivo": "REPRESENTANTE — alquiler 8-10% bien dividido. Contenido específico del docx/landing del representante (§4/§5); ninguno de los 2 xlsx de panadería lo contiene y el docx de panadería no se toca en T7."
+  },
+  {
+   "id": "DOM-16",
+   "motivo": "REPRESENTANTE — 1m2/comensal inviable. No medido específicamente contra el xlsx de panadería en esta tanda (el hallazgo original del R1 es propio del fichero de bar-restaurante); el mecanismo compartido del motor/grupo_a que lo resuelve SÍ corre sobre este hermano (TODO VERDE)."
+  },
+  {
+   "id": "DOM-18",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "DOM-20",
+   "motivo": "REPRESENTANTE — word no describe equipamiento mas caro. Contenido específico del docx/landing del representante (§4/§5); ninguno de los 2 xlsx de panadería lo contiene y el docx de panadería no se toca en T7."
+  },
+  {
+   "id": "DOM-21",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "DOM-22",
+   "motivo": "REPRESENTANTE — 145.000M€ y 6.5% PIB imposibles. Contenido específico del docx/landing del representante (§4/§5); ninguno de los 2 xlsx de panadería lo contiene y el docx de panadería no se toca en T7."
+  },
+  {
+   "id": "DOM-27",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T10 (capa de producto/§5-§6)"
+  },
+  {
+   "id": "DOM-29",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "DOM-31",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "DOM-32",
+   "motivo": "REPRESENTANTE — 50+ tramites son 50. No medido específicamente contra el xlsx de panadería en esta tanda (el hallazgo original del R1 es propio del fichero de bar-restaurante); el mecanismo compartido del motor/grupo_a que lo resuelve SÍ corre sobre este hermano (TODO VERDE)."
+  },
+  {
+   "id": "DOM-33",
+   "motivo": "REPRESENTANTE — IAE con dos epigrafes. No medido específicamente contra el xlsx de panadería en esta tanda (el hallazgo original del R1 es propio del fichero de bar-restaurante); el mecanismo compartido del motor/grupo_a que lo resuelve SÍ corre sobre este hermano (TODO VERDE)."
+  },
+  {
+   "id": "DOM-36",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-01",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-02",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-05",
+   "motivo": "REPRESENTANTE — = DOM-06. Contenido específico del docx/landing del representante (§4/§5); ninguno de los 2 xlsx de panadería lo contiene y el docx de panadería no se toca en T7."
+  },
+  {
+   "id": "COM-07",
+   "motivo": "REPRESENTANTE — 81K web contra 210K fichero. Contenido específico del docx/landing del representante (§4/§5); ninguno de los 2 xlsx de panadería lo contiene y el docx de panadería no se toca en T7."
+  },
+  {
+   "id": "COM-10",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a §7.2, decisión de John — no se toca"
+  },
+  {
+   "id": "COM-12",
+   "motivo": "REPRESENTANTE — = TEC-10/DOM-15. = TEC-10"
+  },
+  {
+   "id": "COM-14",
+   "motivo": "REPRESENTANTE — = TEC-04/DOM-04. = TEC-04"
+  },
+  {
+   "id": "COM-15",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T10 (capa de producto/§5-§6)"
+  },
+  {
+   "id": "COM-16",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a §7.2, decisión de John — no se toca"
+  },
+  {
+   "id": "COM-18",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T10 (capa de producto/§5-§6)"
+  },
+  {
+   "id": "COM-19",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-20",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-24",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T10 (capa de producto/§5-§6)"
+  },
+  {
+   "id": "COM-26",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-28",
+   "motivo": "§ fuera del alcance de T7 (contenido de docx/§4, capa de producto/§5 o decisión de John/§7.2); no toca ninguno de los 2 xlsx de este hermano. Corresponde a T9 (docx/§4)"
+  },
+  {
+   "id": "COM-29",
+   "motivo": "REPRESENTANTE — gasto per capita una cifra. Contenido específico del docx/landing del representante (§4/§5); ninguno de los 2 xlsx de panadería lo contiene y el docx de panadería no se toca en T7."
+  },
+  {
+   "id": "NUEVO-07",
+   "motivo": "no aplica: el checklist de panadería es molde C2 (verificado con openpyxl: 6 hojas F1-F6 con columna OK, DV '✓,☐,N/A' y CF ya en el fichero v1.1), no C3. NUEVO-07 describe C3 (parrillero), que no es el molde de este hermano"
+  }
+ ],
+ "rd_rt_rc_engine_level_no_itemizados": {
+  "nota": "los ids RD-*/RT-*/RC-* 'resueltos' del corrector de T3/T4 del representante (auditorias/planes-v2-correccion.json, 85 ids) son en su inmensa mayoría fixes de `grupo_a.py`/`motor.py` (código compartido, sin contraparte de contenido que verificar uno a uno): idempotencia interna, formato condicional, DV, formatos, referencias entre hojas, robustez de divisores, etc. Quedan verificados EN BLOQUE por el TODO VERDE de este hermano (exit 0, idempotencia 0 diferencias, gates §9 13/13, 0 blancos contaminados, censo 0 defectos) y por la verificación adicional propia de esta tanda (0 referencias CF/DV colgantes tras el renombrado de hojas, checklist con reemplazos y altas verificados celda a celda).",
+  "ids": [
+   "RD-01",
+   "RD-02",
+   "RD-04",
+   "RD-05",
+   "RD-06",
+   "RD-07",
+   "RD-08",
+   "RD-09",
+   "RD-10",
+   "RD-11",
+   "RD-12",
+   "RD-13",
+   "RD-14",
+   "RD-15",
+   "RD-16",
+   "RD-17",
+   "RD-18",
+   "RD-19",
+   "RD-20",
+   "RD-21",
+   "RD-22",
+   "RD-23",
+   "RD-24",
+   "RD-25",
+   "RD-26",
+   "RD-27",
+   "RD-28",
+   "RD-29",
+   "RD-30",
+   "RD-31",
+   "RD-32",
+   "RD-33",
+   "RD-34",
+   "RD-35",
+   "RT-01",
+   "RT-02",
+   "RT-04",
+   "RT-05",
+   "RT-06",
+   "RT-07",
+   "RT-08",
+   "RT-09",
+   "RT-10",
+   "RT-11",
+   "RT-12",
+   "RT-13",
+   "RT-14",
+   "RT-15",
+   "RT-16",
+   "RT-17",
+   "RT-18",
+   "RT-19",
+   "RT-20",
+   "RT-21",
+   "RT-22",
+   "RT-23",
+   "RT-24",
+   "RT-25",
+   "RT-26",
+   "RT-27",
+   "RT-28",
+   "RC-01",
+   "RC-02",
+   "RC-03",
+   "RC-04",
+   "RC-05",
+   "RC-06",
+   "RC-08",
+   "RC-09",
+   "RC-12",
+   "RC-15",
+   "RC-16",
+   "RC-17",
+   "RC-18",
+   "RC-19",
+   "RC-20",
+   "RC-21",
+   "RC-22",
+   "RC-23",
+   "RC-24",
+   "RC-25",
+   "RC-30",
+   "RC-31",
+   "RC-32",
+   "RC-33"
+  ]
+ },
+ "hallazgos_nuevos_propios_de_este_hermano": [
+  {
+   "id": "PAN-10",
+   "sev": "media",
+   "seccion": "§2.10 (checklist F1!B11/E11)",
+   "descripcion": "RGSEAA con matiz propio: a diferencia de sus 4 hermanos (bar-restaurante, cafetería, tapas-bar, y el resto de la línea A, todos puramente minoristas de cara al consumidor final), panadería vende también al canal MAYORISTA (restaurantes, hoteles — 'PyG 3 Años'!A9 'Mayorista', 20.000-43.000€/año en el caso base). La exención de RGSEAA del art. 2.2 RD 191/2011 sólo cubre al minorista que sirve al consumidor final; el texto de este hermano lo dice explícitamente en vez de copiar la exención en bloque de los otros cuatro.",
+   "para_el_orquestador": "Ninguna acción requerida: es contenido, no un bug de motor. Documentado para que T9 (docx) y T10 (capa de producto) no simplifiquen el matiz al redactar la sección legal del plan de negocio o el checklist en la landing."
+  },
+  {
+   "id": "PAN-11",
+   "sev": "media",
+   "seccion": "§2.10 (checklist F1!E7)",
+   "descripcion": "El checklist v1.1 de panadería citaba 'IAE 471.1 pan y bollería' — 471 no es un grupo del IAE para panadería/pastelería (ni para elaboración ni para venta al por menor). Corregido a 644.1 (venta al por menor de pan, pastelería, confitería) con nota del 419.1 (industrias del pan) si el canal mayorista pesa, y remisión al gestor para la elección final — mismo criterio que usa la SPEC para el resto de epígrafes IAE de la familia (671.4/673.2/677.9).",
+   "para_el_orquestador": "Verificar con un gestor/asesor fiscal antes de publicar: no he podido contrastar 644.1/419.1 contra el BOE en esta tanda (mismo límite que REF-25 de tapas-bar sobre el SMI); el criterio aplicado es conocimiento de dominio, no una fuente citada y verificada."
+  },
+  {
+   "id": "PAN-12",
+   "sev": "baja",
+   "seccion": "§2.6 (Personal)",
+   "descripcion": "Dos de los 6 puestos (Ayudante de obrador y Dependienta de tienda, 1.235€/mes) quedan MUY cerca del suelo SMI en términos anualizados: margen de 196€/año (14€/mes) sobre el suelo legal de 17.094€. El semáforo los da en VERDE (positivo) y es una plantilla defendible, pero el margen es más estrecho que en cafetería (que sube hasta ~2.500€/año de margen en su puesto más bajo).",
+   "para_el_orquestador": "Ninguna acción bloqueante: pasa el gate y respeta el suelo legal. Si el SMI 2027 sube antes de que se re-verifique este plan, estos dos puestos serían los primeros en pasar a rojo. Vale la pena que quien apruebe la tanda lo sepa."
+  },
+  {
+   "id": "PAN-13",
+   "sev": "media",
+   "seccion": "transversal (efecto colateral en un hermano YA cerrado)",
+   "descripcion": "PAN-01 (fix del regex de imprevistos) es un fix de `grupo_a.py` compartido: reproduje el mismo bug en `plan-financiero-cafeteria-brunch.xlsx` (Inversion Inicial!A30 = 'Imprevistos (8%)', idéntico patrón) y comprobé que, con el fix aplicado, el dry-run de `plan-negocio-cafeteria` (ya cerrado como hermano de T7 en una tanda anterior) pasa a FALLAR: 'el origen de fondos no cuadra con los usos (diferencia 9.512,20€, 6,58% sobre los usos, tope 5%)'. Antes del fix, la fila duplicada de imprevistos inflaba la 'necesidad de caja' de cafetería y su financiación (154.000€) estaba calibrada contra ese total INFLADO; al corregir el bug, la necesidad real baja y el préstamo de cafetería queda por encima del margen admisible.",
+   "para_el_orquestador": "NO se ha tocado `contenido_plan_negocio_cafeteria/a.py` en esta tanda (fuera del alcance de T7/panadería). Cafetería necesita un ajuste de una línea (bajar `prestamo` en ~9.500€, o subir `recursos_propios`) antes de que su propio dry-run vuelva a estar en verde. Verificado con `CLAUDE_SCRATCHPAD=… python3 main.py --producto plan-negocio-cafeteria --dry-run` el 2026-08-29, sin tocar `astro-site/public/dl/`."
+  }
+ ],
+ "pendiente": [
+  "El docx (plan-de-negocio-panaderia.docx) NO se toca en esta tanda (T9, sección §4): sigue en tamaño Carta, author='python-docx' y cita cifras de la v1.1 (72.000€ de personal, 4,50€ de ticket, 148 transacciones/día). T9 tiene que citar las nuevas (113.861,30€ de personal, 5,50€ de ticket, 180 transacciones/día) desde el xlsx ya corregido, además del matiz RGSEAA (PAN-10) y el epígrafe IAE (PAN-11).",
+  "Capa de producto (landing, dashboard, changelog, FAQ, JSON-LD) sin tocar: T10 debe usar las cifras medidas arriba (r_personal 37,10%, financiación 170.000€, 66 ítems de checklist —no 62/63 como dicen los otros hermanos—, etc.), no las de la landing actual.",
+  "PAN-13 (arriba): plan-negocio-cafeteria necesita un ajuste de financiación de una línea antes de que su propio dry-run vuelva a estar en verde; no corregido aquí por estar fuera del alcance de T7/panadería.",
+  "PAN-11: el epígrafe IAE 644.1/419.1 propuesto para panadería no se ha contrastado contra el BOE en esta tanda; verificar con gestoría antes de publicar.",
+  "No se ha vuelto a correr el dry-run de plan-negocio-tapas-bar (ya declarado 'listo: false' por su propia refutación anterior a esta tanda): los fixes PAN-01/03/04/06/07/08/09 de esta tanda deberían resolver varios de sus REF-* (REF-02, REF-04, REF-05, REF-06, REF-03, REF-10 citan exactamente los mismos mecanismos), pero su re-verificación completa no está en el alcance de T7/panadería."
+ ]
+}

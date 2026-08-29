@@ -312,18 +312,46 @@ def procesar(carpeta, fname, pid, grupos, contenidos, dets, informe_ficheros):
     cuenta = motor.contadores(wb, fname, det)
 
     despues = set()
+    countif_despues_por_hoja = {}
     for ws in wb.worksheets:
         for row in ws.iter_rows():
             for c in row:
                 if isinstance(c.value, str) and c.value.startswith('='):
                     despues.add((motor.norm(ws.title), c.coordinate))
+                    if 'COUNTIF' in c.value.upper():
+                        countif_despues_por_hoja.setdefault(
+                            motor.norm(ws.title), 0)
+                        countif_despues_por_hoja[motor.norm(ws.title)] += 1
     neutralizadas = set((motor.norm(h), coord)
                         for h, coord, _v, _n in detalle.get(
                             'pseudo_formulas', []))
+
+    def _es_contador_reubicado(h, coord):
+        """T7/panadería (2026-08-29): en el molde de checklist, REF-04/05 ya
+        exigen que `_altas_checklist` mueva el pie «Tareas completadas:» por
+        DEBAJO de las altas nuevas cuando éstas se insertan (grupo_a.py) — el
+        COUNTIF del contador se conserva, pero cambia de CELDA. El diff de
+        `formulas_perdidas` compara por COORDENADA exacta y por eso marca esa
+        celda vieja como «perdida» aunque el contador siga vivo, correcto y
+        con el rango recalculado, sólo que en la fila nueva. Se excluye
+        SÓLO cuando: (a) el fichero es un checklist, (b) la fórmula perdida
+        contenía COUNTIF, y (c) esa misma hoja sigue teniendo AL MENOS un
+        COUNTIF después del proceso (el contador está vivo en algún sitio).
+        No aplica a otros tipos de fichero ni a fórmulas sin COUNTIF: sigue
+        siendo un fallo real perder, por ejemplo, una fórmula del P&L.
+        """
+        if det['tipo'] != 'checklist':
+            return False
+        formula_vieja = antes_formulas.get((h, coord), '')
+        if 'COUNTIF' not in formula_vieja.upper():
+            return False
+        return countif_despues_por_hoja.get(h, 0) > 0
+
     perdidas = [{'hoja': h, 'celda': coord, 'formula': antes_formulas[(h,
                                                                       coord)]}
                 for (h, coord) in sorted(set(antes_formulas) - despues)
-                if (h, coord) not in neutralizadas]
+                if (h, coord) not in neutralizadas
+                and not _es_contador_reubicado(h, coord)]
     cuenta['formulas_antes'] = len(antes_formulas)
     cuenta['formulas_perdidas'] = perdidas
 
