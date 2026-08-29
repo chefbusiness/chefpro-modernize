@@ -456,3 +456,11 @@ gestión-personal/plan-financiero v2.0; a AICP los 6 planes v2.0, la guía casua
   Workflow `kit-tareas-cb-v2-workflow.js` (`3a2600d`) escrito y **pendiente de lanzar** cuando termine una de las dos construcciones (tres dry-runs
   simultáneos rozan la regla térmica): `Workflow({scriptPath:'scripts/productos-digitales/kit-tareas-cb-v2-workflow.js', args:{productId:'kit-tareas-sushi-bar'}})`.
   Canario real de esta sub-familia: **chef-privado** (el motor ya lo arregla y de paso corrige el mega-pack).
+
+## 15. 29-ago 05:10 — John delega y se duerme («decide tú como líder de proyecto»; vuelve ~9-10h)
+
+Orden: seguir; **cuando cada crítico dé verde, aplicar en real y push**; continuar hasta tener TODOS los productos actualizados. Y decidir sobre lo
+aparcado «para John». **Decisión tomada (memoria `project_capa-comercial-honesta-decision-2026-08-29`):** (1) fuera `aggregateRating`/`Review` del
+JSON-LD de las 44 landings; (2) testimonios neutralizados (sin credenciales identificables ni funciones inexistentes; rol genérico); (3) fuera anclas de
+precio permanentes (tachado, -N %, «HOY», «lanzamiento»); precio real + pago único/acceso vitalicio; «valorado en» sólo si el bonus se vende aparte.
+Ejecución: pasada transversal propia (inventario → plantillas → datos → refutador → deploy en la nube → gate curl), en paralelo a las construcciones.
