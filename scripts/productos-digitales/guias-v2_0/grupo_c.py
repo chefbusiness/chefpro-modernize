@@ -561,6 +561,9 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
     ref_rac = '$F$' + str(banda)
 
     # ---- la merma entra en el coste (DOM-04) ------------------------------
+    # RC-31 · §1.12 fija G en 22; el ensanchado automático la llevaba a 41
+    # sobre un A4 con `fitToWidth=1`.
+    ws.column_dimensions['G'].width = 22.0
     ws['D' + str(fila_cab)].value = 'Cantidad NETA (ración)'
     ws['G' + str(fila_cab)].value = 'Cantidad BRUTA a comprar'
     for r in range(primera, fin + 1):
@@ -575,7 +578,12 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
         motor.fijar_formato(ws, 'D' + str(r), FMT_G)
         motor.fijar_formato(ws, 'E' + str(r), motor.FMT_EUR)
         motor.fijar_formato(ws, 'F' + str(r), motor.FMT_PCT)
-    motor.dv_porcentaje(ws, ['F' + str(r) for r in range(primera, fin + 1)])
+    # RT-15/RC-11 · el mensaje de entrada de la merma se pegaba en TODAS las
+    # celdas de porcentaje del producto (tipo de IVA, SS de la empresa, tipo
+    # del préstamo…). El tope de 0,95 tampoco vale fuera de aquí: sólo la
+    # merma entra en una división por `1-x` (RT-16).
+    motor.prompt_porcentaje(
+        ws, 'F' + str(primera) + ':F' + str(fin), *motor.PCT_MERMA)
     cambios.append(
         fname + ':' + ws.title + '!G' + str(primera) + ':H' + str(fin)
         + ': la merma ENTRA en el coste — D pasa a «Cantidad NETA (ración)», '
@@ -620,15 +628,48 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
             motor.iferror('IF(' + ref_pvp + '="","",' + ref_pvp + '*(1+'
                           + ref_iva + '))'), fmt=motor.FMT_EUR, bold=True)
     r += 1
-    _et(ws, 'G' + str(r), 'Food cost real sobre el PVP sin IVA (%)')
-    motor.f(ws, 'H' + str(r), _pct(ref_racion, ref_pvp), fmt=motor.FMT_PCT)
+    # RT-10/RD-22/RC-18 · «Food cost real sobre el PVP sin IVA» era una
+    # TAUTOLOGÍA: el PVP se calcula dividiendo el coste entre el objetivo, así
+    # que coste/PVP devuelve SIEMPRE el objetivo, con cualquier escandallo.
+    # Parecía una comprobación y no podía discrepar nunca. Lo que hace falta es
+    # el food cost contra el precio que de VERDAD va en la carta —que se
+    # redondea (76,79 € → 79 €) y que en España se anuncia con IVA—, y el 30,8 %
+    # que la nota de abajo promete y que ninguna celda calculaba.
+    fila_pvp_real = r
+    _et(ws, 'G' + str(r), 'PVP REAL de carta, con IVA (€) — el que imprimes')
+    motor.val(ws, 'H' + str(r), None, fmt=motor.FMT_EUR, verde_=True)
+    motor.fijar_formato(ws, 'H' + str(r), motor.FMT_EUR)
+    _et(ws, 'I' + str(r),
+        'Escribe aquí el precio redondeado que va en la carta. Mientras esté '
+        'vacío, las dos filas de abajo usan el PVP sugerido.', wrap=True)
+    ref_pvp_real = '$H$' + str(r)
+    r += 1
+    _et(ws, 'G' + str(r), 'Food cost real sobre el precio de carta (%)',
+        bold=True)
+    motor.f(ws, 'H' + str(r),
+            motor.iferror(
+                'IF(' + ref_racion + '="","",IF(' + ref_pvp_real + '<>"",'
+                + ref_racion + '/(' + ref_pvp_real + '/(1+' + ref_iva + ')),IF('
+                + ref_pvp + '="","",' + ref_racion + '/' + ref_pvp + ')))'),
+            fmt=motor.FMT_PCT, bold=True)
+    motor.fijar_formato(ws, 'H' + str(r), motor.FMT_PCT)
+    r += 1
+    _et(ws, 'G' + str(r),
+        'Food cost si pusieras el PVP SIN IVA en la carta (%)')
+    motor.f(ws, 'H' + str(r),
+            motor.iferror('IF(OR(' + ref_racion + '="",' + ref_pvp + '="",'
+                          + ref_pvp + '=0),"",' + ref_racion + '/(' + ref_pvp
+                          + '/(1+' + ref_iva + ')))'), fmt=motor.FMT_PCT)
     motor.fijar_formato(ws, 'H' + str(r), motor.FMT_PCT)
     r += 1
     _et(ws, 'A' + str(r + 1),
         'En España el precio de carta se muestra CON IVA incluido: aplicar el '
-        'PVP sin IVA tal cual deja el food cost real 2,8 puntos por encima del '
-        'objetivo (28 % -> 30,8 %). Usa la fila «PVP con IVA» '
-        '[DOM-03 · COM-14].', wrap=True)
+        'PVP sin IVA tal cual deja el food cost real por encima del objetivo '
+        '(con un objetivo del 28 % y el IVA al 10 %, sube al 30,8 %) — y esa '
+        'es exactamente la fila de arriba, que ahora sí lo calcula. Usa la '
+        'fila «PVP con IVA», o escribe tu precio redondeado en «PVP REAL de '
+        'carta» y mira el food cost que te queda de verdad '
+        '[DOM-03 · COM-14 · RT-10 · RD-22 · RC-18].', wrap=True)
     cambios.append(
         fname + ':' + ws.title + '!' + ref_total + '..H' + str(r)
         + ': el PVP divide por raciones y usa el food cost objetivo de la celda'
@@ -641,7 +682,9 @@ def _escandallo_e1(wb, ws, fila_cab, fname, cambios, contenido):
             'coste_total': ref_total.replace('$', ''),
             'coste_racion': ref_racion.replace('$', ''),
             'pvp_sin_iva': ref_pvp.replace('$', ''),
-            'pvp_con_iva': 'H' + str(r - 2),
+            'pvp_con_iva': 'H' + str(r - 4),
+            'pvp_real': 'H' + str(fila_pvp_real),
+            'food_cost_real': 'H' + str(fila_pvp_real + 1),
             'nombre_plato': 'C4'}
 
 
@@ -691,7 +734,12 @@ def _escandallo_e2(wb, ws, fila_cab, fname, cambios, contenido):
         motor.verde(ws, 'F' + str(r))
         motor.fijar_formato(ws, 'D' + str(r), motor.FMT_EUR)
         motor.fijar_formato(ws, 'F' + str(r), motor.FMT_PCT)
-    motor.dv_porcentaje(ws, ['F' + str(r) for r in range(primera, fin + 1)])
+    # RT-15/RC-11 · el mensaje de entrada de la merma se pegaba en TODAS las
+    # celdas de porcentaje del producto (tipo de IVA, SS de la empresa, tipo
+    # del préstamo…). El tope de 0,95 tampoco vale fuera de aquí: sólo la
+    # merma entra en una división por `1-x` (RT-16).
+    motor.prompt_porcentaje(
+        ws, 'F' + str(primera) + ':F' + str(fin), *motor.PCT_MERMA)
     # La conversión g -> kg va en celda para que la fórmula no lleve el 1000
     # escrito dentro (§1.3). No es verde: no es un dato del cliente, es la
     # equivalencia de unidades de la propia tabla.
@@ -846,11 +894,17 @@ def _escandallo_e3(wb, ws, fila_cab, fname, cambios, contenido):
 # §4.1 — hoja Resumen (TEC-23), sólo para E1/E2
 # ==========================================================================
 def _hoja_resumen(wb, ficha, fname, cambios):
-    """Consolida coste por ración y PVP de cada ficha (TEC-23).
+    """Consolida coste por ración y PVP de cada ficha (TEC-23, RC-19).
 
-    Una sola fila cableada a la plantilla y la instrucción de cómo extenderla:
-    escribir 20 filas apuntando a hojas que no existen daría 20 `#REF!` al
-    abrir, que es peor que no tener el resumen.
+    RC-19: la primera versión cableaba UNA sola fila a `Ficha (plantilla)` y
+    pedía al cliente que copiara la fila y **editara el nombre de la hoja
+    dentro de seis fórmulas** por cada pase — en un producto que promete un
+    menú degustación de 8-12 pases. Ahora hay 12 filas y lo único que se
+    escribe es el NOMBRE de la hoja, en verde: las fórmulas lo resuelven con
+    `INDIRECT`. Con la celda del nombre vacía, la fila entera devuelve `""`;
+    con un nombre que no existe, `IFERROR` la deja vacía en vez de sembrar
+    `#REF!` (que es lo que la versión anterior quería evitar y por lo que se
+    quedó en una fila).
     """
     nueva = HOJA_RESUMEN not in wb.sheetnames
     ws = wb[HOJA_RESUMEN] if not nueva else wb.create_sheet(HOJA_RESUMEN)
@@ -866,45 +920,90 @@ def _hoja_resumen(wb, ficha, fname, cambios):
     _et(ws, 'A1', 'Resumen de fichas técnicas', bold=True)
     ws['A1'].font = Font(bold=True, size=14)
     _et(ws, 'A2', 'AI Chef Pro · aichef.pro')
-    q = "'" + HOJA_FICHA + "'!"
     cabs = (('A', 'Hoja de la ficha'), ('B', 'Plato'),
             ('C', 'Coste total (€)'), ('D', 'Coste por ración (€)'),
             ('E', 'PVP sin IVA (€)'), ('F', 'PVP con IVA (€)'),
             ('G', 'Food cost real (%)'))
     for L, texto in cabs:
         _et(ws, L + '4', texto, bold=True)
-    _et(ws, 'A5', HOJA_FICHA)
-    motor.f(ws, 'B5', motor.iferror('IF(' + q + ficha['nombre_plato']
-                                    + '="","",' + q + ficha['nombre_plato']
-                                    + ')'))
-    for L, clave, fmt in (('C', 'coste_total', motor.FMT_EUR),
-                          ('D', 'coste_racion', motor.FMT_EUR),
-                          ('E', 'pvp_sin_iva', motor.FMT_EUR),
-                          ('F', 'pvp_con_iva', motor.FMT_EUR)):
-        motor.f(ws, L + '5',
-                motor.iferror('IF(' + q + ficha[clave] + '="","",' + q
-                              + ficha[clave] + ')'), fmt=fmt)
-        motor.fijar_formato(ws, L + '5', fmt)
-    motor.f(ws, 'G5', _pct('$D$5', '$E$5'), fmt=motor.FMT_PCT)
-    motor.fijar_formato(ws, 'G5', motor.FMT_PCT)
-    _et(ws, 'A7', 'Cómo añadir una ficha más', bold=True)
-    _et(ws, 'A8', '1. Clic derecho sobre la pestaña «' + HOJA_FICHA + '» -> '
-                  'Mover o copiar -> marca «Crear una copia» y renómbrala con '
-                  'el nombre del plato.', wrap=True)
-    _et(ws, 'A9', '2. Copia la fila 5 de esta hoja a la fila siguiente y '
-                  'cambia en las fórmulas «' + HOJA_FICHA + '» por el nombre '
-                  'de la hoja nueva (entre comillas simples si lleva espacios).',
-        wrap=True)
-    _et(ws, 'A10', '3. Un menú degustación de 8-12 pases necesita una ficha por '
-                   'pase: el libro se entregaba con UNA sola y sin decir cómo '
-                   'duplicarla [TEC-23].', wrap=True)
+    primera, ultima = 5, 16
+
+    def _tira(fila, celda):
+        """`INDIRECT` guardado por el nombre de la hoja de la columna A."""
+        ref = ('INDIRECT("\'"&$A' + str(fila) + '&"\'!' + celda + '")')
+        return ('=IF($A' + str(fila) + '="","",IFERROR(IF(' + ref + '="","",'
+                + ref + '),""))')
+
+    q = "'" + HOJA_FICHA + "'!"
+
+    def _directa(celda):
+        """Fila 5: referencia DIRECTA a la plantilla.
+
+        No es una excepción cosmética. `INDIRECT` es dinámico y ningún motor de
+        cálculo —ni pycel, que es con lo que se verifica este paquete— puede
+        seguir la dependencia: el gate de §4.1 comprueba que al tocar una línea
+        de la ficha el Resumen se mueve, y con `INDIRECT` no lo vería. La
+        plantilla, que es la ficha que SIEMPRE existe, va cableada; las once
+        filas de abajo van por nombre.
+        """
+        return motor.iferror('IF(' + q + celda + '="","",' + q + celda + ')')
+
+    columnas = (('C', 'coste_total', motor.FMT_EUR),
+                ('D', 'coste_racion', motor.FMT_EUR),
+                ('E', 'pvp_sin_iva', motor.FMT_EUR),
+                ('F', 'pvp_con_iva', motor.FMT_EUR),
+                ('G', 'food_cost_real', motor.FMT_PCT))
+    for f_ in range(primera, ultima + 1):
+        if f_ == primera:
+            _et(ws, 'A' + str(f_), HOJA_FICHA)
+            _et(ws, 'H' + str(f_),
+                'Esta fila va cableada a la plantilla: no cambies su nombre '
+                'aquí. Las de abajo se alimentan del nombre que escribas en '
+                'la columna A.', wrap=True)
+            motor.f(ws, 'B' + str(f_), _directa(ficha['nombre_plato']))
+            for L, clave, fmt in columnas:
+                if not ficha.get(clave):
+                    continue
+                motor.f(ws, L + str(f_), _directa(ficha[clave]), fmt=fmt)
+                motor.fijar_formato(ws, L + str(f_), fmt)
+            continue
+        motor.verde(ws, 'A' + str(f_))
+        motor.f(ws, 'B' + str(f_), _tira(f_, ficha['nombre_plato']))
+        for L, clave, fmt in columnas:
+            celda = ficha.get(clave)
+            if not celda:
+                continue
+            motor.f(ws, L + str(f_), _tira(f_, celda), fmt=fmt)
+            motor.fijar_formato(ws, L + str(f_), fmt)
+    r = ultima + 2
+    _et(ws, 'A' + str(r), 'Cómo añadir una ficha más', bold=True)
+    _et(ws, 'A' + str(r + 1),
+        '1. Clic derecho sobre la pestaña «' + HOJA_FICHA + '» → Mover o '
+        'copiar → marca «Crear una copia» y renómbrala con el nombre del '
+        'plato.', wrap=True)
+    _et(ws, 'A' + str(r + 2),
+        '2. Escribe ese mismo nombre en la columna «Hoja de la ficha» de esta '
+        'hoja, en cualquier fila de la 6 a la ' + str(ultima) + '. NO hay que '
+        'tocar ninguna fórmula: esas filas leen la hoja que nombres en la '
+        'columna A.', wrap=True)
+    _et(ws, 'A' + str(r + 3),
+        '3. Un menú degustación de 8-12 pases necesita una ficha por pase: por '
+        'eso hay doce filas. Si te faltan, copia la última hacia abajo '
+        '[TEC-23 · RC-19].', wrap=True)
     for L in ('A', 'B'):
-        for r in (8, 9, 10):
-            ws[L + str(r)].alignment = Alignment(vertical='top', wrap_text=True)
+        for f_ in range(r + 1, r + 4):
+            ws[L + str(f_)].alignment = Alignment(vertical='top',
+                                                  wrap_text=True)
     if nueva:
         cambios.append(fname + ': hoja «' + HOJA_RESUMEN + '» CREADA — '
                        'consolida coste por ración y PVP de cada ficha '
                        '[TEC-23 · §4.1]')
+    else:
+        cambios.append(fname + ':' + HOJA_RESUMEN + ': 12 filas que se '
+                       'alimentan del NOMBRE de la hoja (columna A, verde) con '
+                       'INDIRECT: consolidar un menú de 8-12 pases ya no exige '
+                       'editar el nombre de la hoja dentro de seis fórmulas '
+                       '[RC-19]')
     return ws
 
 
@@ -1198,19 +1297,36 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
             ws.merge_cells(start_row=cr.min_row, start_column=1,
                            end_row=cr.min_row, end_column=_col('S'))
 
+    # RD-13 · «F» es el PVP de CARTA, que en España se anuncia CON IVA, y en
+    # vino alcohólico el tipo es el 21 %. Cruzarlo con un coste sin IVA
+    # subestima el food cost de bebida en unos 7 puntos, justo en la magnitud
+    # que decide si la bodega gana dinero. El escandallo de este mismo pack ya
+    # lo resuelve con su celda de tipo (§1.5a): aquí igual, con una columna
+    # «PVP sin IVA» de la que cuelgan todos los indicadores.
+    # el parámetro se escribe al final, en el bloque de la hoja (esta zona la
+    # limpia `_limpiar` antes de reescribirla); aquí sólo se reserva su celda.
+    fila_iva_beb = ultima + 5
+    ref_iva_beb = '$C$' + str(fila_iva_beb)
+    _cabecera_nueva(ws, fila_cab, 'T', 'PVP sin IVA (€)', 15)
+    for r in range(primera, ultima + 1):
+        motor.f(ws, 'T' + str(r),
+                motor.iferror('IF(OR($F{r}="",' + ref_iva_beb + '=""),"",'
+                              '$F{r}/(1+' + ref_iva_beb + '))'.format(r=r)
+                              .format(r=r)), fmt=motor.FMT_EUR)
+        motor.fijar_formato(ws, 'T' + str(r), motor.FMT_EUR)
     for r in range(primera, ultima + 1):
         motor.f(ws, 'G' + str(r),
-                motor.iferror('IF(OR($E{r}="",$F{r}=""),"",$F{r}-$E{r})'
+                motor.iferror('IF(OR($E{r}="",$T{r}=""),"",$T{r}-$E{r})'
                               .format(r=r)), fmt=motor.FMT_EUR)
         motor.f(ws, 'H' + str(r),
-                motor.iferror('IF(OR($E{r}="",$F{r}="",$E{r}=0),"",$F{r}/$E{r})'
+                motor.iferror('IF(OR($E{r}="",$T{r}="",$E{r}=0),"",$T{r}/$E{r})'
                               .format(r=r)), fmt='#,##0.00"×"')
         motor.fijar_formato(ws, 'H' + str(r), '#,##0.00"×"')
         motor.f(ws, 'L' + str(r),
-                motor.iferror('IF(OR($E{r}="",$F{r}="",$F{r}=0),"",'
-                              '($F{r}-$E{r})/$F{r})'.format(r=r)),
+                motor.iferror('IF(OR($E{r}="",$T{r}="",$T{r}=0),"",'
+                              '($T{r}-$E{r})/$T{r})'.format(r=r)),
                 fmt=motor.FMT_PCT)
-        motor.f(ws, 'M' + str(r), _pct('$E' + str(r), '$F' + str(r)),
+        motor.f(ws, 'M' + str(r), _pct('$E' + str(r), '$T' + str(r)),
                 fmt=motor.FMT_PCT)
         motor.f(ws, 'J' + str(r),
                 motor.iferror('IF(OR($I{r}="",$K{r}="",$I{r}=0),"",'
@@ -1219,7 +1335,7 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
                 motor.iferror('IF(OR($E{r}="",$I{r}=""),"",$E{r}*$I{r})'
                               .format(r=r)), fmt=motor.FMT_EUR)
         motor.f(ws, 'O' + str(r),
-                motor.iferror('IF(OR($F{r}="",$I{r}=""),"",$F{r}*$I{r})'
+                motor.iferror('IF(OR($T{r}="",$I{r}=""),"",$T{r}*$I{r})'
                               .format(r=r)), fmt=motor.FMT_EUR)
         motor.verde(ws, 'B' + str(r) + ':F' + str(r))
         motor.verde(ws, 'I' + str(r))
@@ -1283,7 +1399,26 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
           'medio ponderado y food cost medio. Un fichero llamado «Budget de '
           'Bodega» no sumaba nada: 100 fórmulas y ninguna cruzaba coste con '
           'stock [TEC-19 · COM-22 · §4.3]')
+    _param(ws, fila_iva_beb, None, valor=0.21,
+           etiqueta='IVA de la bebida alcohólica (%)', fmt=motor.FMT_PCT,
+           nota=('21 % en bebidas alcohólicas (art. 91 de la Ley del IVA). El '
+                 'PVP de la columna F es el de CARTA, que en España se anuncia '
+                 'CON IVA: el multiplicador, el margen, el food cost y el '
+                 'valor a PVP se calculan sobre la columna «PVP sin IVA», no '
+                 'sobre el precio de carta.'),
+           col_et='A', col_val='C', col_nota='D')
+    cambios.append(
+        fname + ':' + ws.title + '!T' + str(primera) + ':T' + str(ultima)
+        + ': columna «PVP sin IVA (€)» = PVP de carta / (1 + IVA de bebida '
+          'alcohólica, en celda). El food cost de bebida cruzaba un coste sin '
+          'IVA con un PVP de carta CON IVA y salía unos 7 puntos bajo, que es '
+          'lo que decide si la bodega gana dinero [RD-13 · §1.5a]')
     _instr(wb, fname, cambios, [
+        'Los precios de la columna «PVP Carta (€)» van CON IVA, que es como se '
+        'anuncian en España. El libro calcula el «PVP sin IVA» con el tipo de '
+        'la bebida alcohólica (21 %, en celda) y TODOS los indicadores salen '
+        'de ahí: cruzar un coste sin IVA con un precio con IVA deja el food '
+        'cost de bebida unos 7 puntos por debajo del real.',
         'La columna «Multiplicador (×)» es PVP ÷ coste (el x2,5-x3,5 del '
         'capítulo de bodega). El margen de verdad es «Margen s/PVP (%)», y el '
         '«Food cost bebida (%)» es el que se compara con el 28-40 % de la guía.',
@@ -1404,12 +1539,21 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
     r += 1
     ref_smi = _param(ws, r, 'smi_anual', col_et='A', col_val='C', col_nota='D')
     r += 1
-    ref_jornada = _param(
+    # RD-04/RT-05/RC-12 · esta celda es el DIVISOR de todos los costes del
+    # libro y se entregaba vacía: coste/hora, coste semana y los tres totales
+    # devolvían "" en las 24 filas, mientras la tarjeta vende un cuadrante
+    # «con coste». Dejarla vacía era correcto (no se inventa el convenio) pero
+    # deja la promesa sin cumplir. La salida: NO se teclea ninguna cifra de
+    # convenio; se CALCULA una jornada de referencia con los cuatro parámetros
+    # que sí tienen fuente legal, y la celda del convenio se queda verde y
+    # vacía como OVERRIDE. Si el cliente la rellena, manda ella.
+    ref_jornada_conv = _param(
         ws, r, None, valor=None,
         etiqueta='Jornada anual de convenio (h/año)', fmt=motor.FMT_ENT,
-        nota=('La fija el convenio provincial de hostelería (está en su tabla '
-              'salarial anual). No se rellena con una cifra inventada: '
-              + NOTA_SIN_DATO),
+        nota=('La fija el convenio provincial de hostelería, en su tabla '
+              'salarial anual. No se precarga con una cifra inventada: '
+              'escríbela tú y prevalece sobre la jornada de referencia de '
+              'abajo. Mientras esté vacía, el libro usa la de referencia.'),
         col_et='A', col_val='C', col_nota='D', maximo=2500)
     r += 1
     ref_max = _param(
@@ -1419,11 +1563,72 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
               'puede fijar menos.'), col_et='A', col_val='C', col_nota='D',
         maximo=60)
     r += 1
+    ref_sem = _param(
+        ws, r, None, valor=52, etiqueta='Semanas del año',
+        fmt=motor.FMT_ENT, nota='52 semanas.', col_et='A', col_val='C',
+        col_nota='D', maximo=53)
+    r += 1
+    ref_vac = _param(
+        ws, r, None, valor=30, etiqueta='Días de vacaciones al año (naturales)',
+        fmt=motor.FMT_ENT,
+        nota=('30 días naturales, el mínimo del art. 38.1 ET. El convenio '
+              'puede dar más.'), col_et='A', col_val='C', col_nota='D',
+        maximo=90)
+    r += 1
+    ref_fes = _param(
+        ws, r, None, valor=14, etiqueta='Festivos anuales retribuidos',
+        fmt=motor.FMT_ENT,
+        nota=('14 al año como máximo (art. 37.2 ET): 12 nacionales o '
+              'autonómicos más 2 locales.'), col_et='A', col_val='C',
+        col_nota='D', maximo=20)
+    r += 1
+    ref_dsem = _param(
+        ws, r, None, valor=7, etiqueta='Días naturales de la semana',
+        fmt=motor.FMT_ENT,
+        nota=('7. Convierte los días naturales de vacaciones en semanas.'),
+        col_et='A', col_val='C', col_nota='D', maximo=7)
+    r += 1
+    ref_dlab = _param(
+        ws, r, None, valor=5, etiqueta='Días de trabajo por semana',
+        fmt=motor.FMT_ENT,
+        nota=('5 con el descanso semanal de día y medio del art. 37.1 ET. '
+              'Convierte cada festivo en horas.'),
+        col_et='A', col_val='C', col_nota='D', maximo=7)
+    r += 1
+    fila_jref = r
+    _et(ws, 'A' + str(r), 'Jornada anual de REFERENCIA (h/año)')
+    motor.f(ws, 'C' + str(r),
+            '=IFERROR(ROUND(' + ref_max + '*' + ref_sem + '-' + ref_max + '*'
+            + ref_vac + '/' + ref_dsem + '-' + ref_fes + '*' + ref_max + '/'
+            + ref_dlab + ',0),"")', fmt=motor.FMT_ENT)
+    motor.fijar_formato(ws, 'C' + str(r), motor.FMT_ENT)
+    _et(ws, 'D' + str(r),
+        'NO es un dato del convenio: se calcula con los cuatro parámetros de '
+        'arriba, y los cuatro salen de la ley (art. 34.1, 38.1 y 37.2 ET). '
+        'Sirve para que el libro enseñe el coste/hora desde el primer momento; '
+        'en cuanto escribas la jornada de TU convenio, manda la de arriba.',
+        wrap=True)
+    r += 1
+    fila_jef = r
+    _et(ws, 'A' + str(r), 'Jornada anual aplicada (h/año)', bold=True)
+    ref_jornada = '$C$' + str(r)
+    motor.f(ws, 'C' + str(r),
+            '=IF(' + ref_jornada_conv + '="",IF($C$' + str(fila_jref)
+            + '="","",$C$' + str(fila_jref) + '),' + ref_jornada_conv + ')',
+            fmt=motor.FMT_ENT, bold=True)
+    motor.fijar_formato(ws, 'C' + str(r), motor.FMT_ENT)
+    _et(ws, 'D' + str(r),
+        'La que divide en «Coste/hora»: la de tu convenio si la has escrito, y '
+        'si no, la de referencia.', wrap=True)
+    r += 1
     _et(ws, 'A' + str(r),
-        'El «Bruto anual» se deja vacío a propósito: los rangos del capítulo de '
-        'brigada incluyen dos puestos por debajo del SMI vigente, así que aquí '
-        'no se precargan. Escribe los tuyos y el semáforo se enciende en rojo '
-        'si alguno queda por debajo del SMI [DOM-13 · §7-bis.16].', wrap=True)
+        'Los brutos anuales que trae el libro son los del capítulo de brigada '
+        'de esta misma guía, ELEVADOS al SMI vigente donde el capítulo se '
+        'quedaba por debajo (el capítulo publicaba dos puestos bajo el SMI: '
+        'ésos se han subido, no se han copiado). Son valores de EJEMPLO: '
+        'escribe los tuyos y el semáforo se enciende en rojo si alguno queda '
+        'por debajo del SMI prorrateado a su jornada '
+        '[DOM-13 · §7-bis.16 · RD-04 · RD-25].', wrap=True)
     r += 2
     if pie_texto:
         _et(ws, 'A' + str(r), pie_texto)
@@ -1468,6 +1673,64 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
         if ws['M' + str(f_)].value is None:
             motor.val(ws, 'M' + str(f_), 14, fmt=motor.FMT_ENT, verde_=True)
 
+    # ---- RD-25 · el SMI se prorratea a la jornada -------------------------
+    # En hostelería el contrato a tiempo parcial es habitual y su bruto legítimo
+    # está por debajo del SMI anual a jornada completa: la regla anterior
+    # pintaba en rojo contratos correctos y no distinguía el incumplimiento
+    # real, que es lo que el gate pretende cazar.
+    col_pct = 'Q'
+    _cabecera_nueva(ws, fila_cab, col_pct, '% de jornada', 13)
+    for f_ in puestos:
+        if ws[col_pct + str(f_)].value is None:
+            motor.val(ws, col_pct + str(f_), 1.0, fmt=motor.FMT_PCT,
+                      verde_=True)
+        motor.verde(ws, col_pct + str(f_))
+        motor.fijar_formato(ws, col_pct + str(f_), motor.FMT_PCT)
+    motor.prompt_porcentaje(
+        ws, col_pct + str(puestos[0]) + ':' + col_pct + str(puestos[-1]),
+        'Jornada', 'Se escribe en tanto por uno: 1 = jornada completa, '
+        '0,5 = media jornada. El SMI se compara prorrateado a este porcentaje.')
+
+    # ---- RD-04/RT-05 · brutos anuales de EJEMPLO, del propio capítulo -----
+    conf_t = ((getattr(contenido, 'TURNOS', None) or {}) if contenido else {})
+    brutos = conf_t.get('brutos') or {}
+    turnos_ej = conf_t.get('cuadrante') or {}
+    puestos_txt = dict((f_, _norm(ws.cell(row=f_, column=3).value))
+                       for f_ in puestos)
+    precargados = 0
+    for f_, etiqueta in puestos_txt.items():
+        valor = brutos.get(etiqueta)
+        if valor is not None and ws['L' + str(f_)].value is None:
+            motor.val(ws, 'L' + str(f_), valor, fmt=motor.FMT_EUR, verde_=True)
+            motor.fijar_formato(ws, 'L' + str(f_), motor.FMT_EUR)
+            precargados += 1
+        patron = turnos_ej.get(etiqueta)
+        if patron and modelo != 'T3':
+            for i, letra in enumerate(patron[:7]):
+                col = chr(ord('D') + i)
+                if ws[col + str(f_)].value is None:
+                    motor.val(ws, col + str(f_), letra)
+                    motor.verde(ws, col + str(f_))
+    if precargados:
+        cambios.append(
+            fname + ':' + ws.title + '!L' + str(puestos[0]) + ':L'
+            + str(puestos[-1]) + ': ' + str(precargados) + ' brutos anuales de '
+            'ejemplo precargados desde el capítulo de brigada de esta misma '
+            'guía, con los dos puestos que el capítulo publicaba por debajo '
+            'del SMI ELEVADOS al SMI vigente; y el cuadrante con una rotación '
+            'de ejemplo, para que el coste/hora y el coste de la semana se '
+            'vean al abrir el fichero [RD-04 · RT-05 · RC-12]')
+
+    # ---- RD-27/RC-14 · la ÚNICA DV del producto sin mensaje de error ------
+    if modelo != 'T3':
+        motor.dv_lista(
+            ws, [chr(ord('D') + i) + str(f_) for f_ in puestos
+                 for i in range(7)],
+            [l for l, _n, _h in TURNOS], titulo='Turno',
+            mensaje='Escribe M (mañana), T (tarde), P (partido), L (libre) o '
+                    'V (vacaciones). Cualquier otra letra la cuenta como 0 h y '
+                    'te resta horas y coste de brigada sin avisar.')
+
     # ---- numeración de la columna A (TEC-13) ------------------------------
     if modelo == 'T1':
         for i, f_ in enumerate(puestos, start=1):
@@ -1490,6 +1753,9 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
             _suma_guardada('P' + str(prim) + ':P' + str(ult)),
             fmt=motor.FMT_EUR, bold=True)
     _et(ws, 'N' + str(fila_total), 'Coste anual con SS (€)', bold=True)
+    # RC-35 · es una ETIQUETA, no un importe: el formato de moneda sobre un
+    # texto es un residuo de la regla de columna del §1.4.
+    motor.fijar_formato(ws, 'N' + str(fila_total), 'General')
     motor.f(ws, 'O' + str(fila_total),
             motor.iferror('IF($L$' + str(fila_total) + '="","",$L$'
                           + str(fila_total) + '*(1+' + ref_ss + '))'),
@@ -1497,8 +1763,10 @@ def _turnos(wb, fname, cambios, contenido, registro_modelo):
     motor.fijar_formato(ws, 'O' + str(fila_total), motor.FMT_EUR)
 
     # ---- semáforos ---------------------------------------------------------
-    motor.semaforo_isnumber(ws, 'L' + str(prim) + ':L' + str(ult),
-                            '$L' + str(prim), operador='<', umbral=ref_smi)
+    motor.regla_expresion(
+        ws, 'L' + str(prim) + ':L' + str(ult),
+        '=AND(ISNUMBER($L' + str(prim) + '),ISNUMBER($Q' + str(prim) + '),$L'
+        + str(prim) + '<' + ref_smi + '*$Q' + str(prim) + ')')
     motor.semaforo_isnumber(ws, col_horas + str(prim) + ':' + col_horas
                             + str(ult), '$' + col_horas + str(prim),
                             operador='>', umbral=ref_max,
@@ -1617,7 +1885,12 @@ def _registro_jornada(wb, fname, cambios, ws_turnos, puestos, modelo):
         if modelo_estilo.has_style:
             ws[L + str(fila_cab)]._style = copy.copy(modelo_estilo._style)
         ws[L + str(fila_cab)].value = texto
-    primera, ultima = fila_cab + 1, fila_cab + 40
+    # RD-26 · 40 filas de registro para una brigada de 24 personas son menos
+    # de dos días, cuando el art. 34.9 ET obliga a registrar TODOS los días de
+    # TODOS los trabajadores. Una semana completa de esta brigada son
+    # `puestos × 7` filas; se dimensiona a eso, con un mínimo de 40.
+    filas_semana = max(40, (len(puestos) or 6) * 7)
+    primera, ultima = fila_cab + 1, fila_cab + filas_semana
     r = ultima + 2
     _et(ws, 'A' + str(r), CAB_PARAMETROS, bold=True)
     r += 1
@@ -1636,9 +1909,15 @@ def _registro_jornada(wb, fname, cambios, ws_turnos, puestos, modelo):
     res_prim, res_ult = r + 1, r + 10
     for f_ in range(res_prim, res_ult + 1):
         motor.verde(ws, 'A' + str(f_) + ':B' + str(f_))
+        # RC-13 · la forma con `*` propaga #¡VALOR! en cuanto una fila del
+        # parte está sin rellenar —es decir, siempre—, porque `F` devuelve ""
+        # y TRUE*"" es un error. La forma con COMAS trata el texto como cero,
+        # que es justo lo que hace falta. Es la misma forma que ya usa bien
+        # menu-engineering-matrix en su media ponderada.
         motor.f(ws, 'C' + str(f_),
-                '=IF(OR($A{r}="",$B{r}=""),"",ROUND(SUMPRODUCT(($B${p}:$B${u}='
-                '$A{r})*($C${p}:$C${u}=$B{r})*$F${p}:$F${u}),5))'
+                '=IF(OR($A{r}="",$B{r}=""),"",ROUND(SUMPRODUCT('
+                '--($B${p}:$B${u}=$A{r}),--($C${p}:$C${u}=$B{r}),'
+                'IFERROR($F${p}:$F${u}*1,0)),5))'
                 .format(r=f_, p=primera, u=ultima), fmt=FMT_DUR)
         motor.fijar_formato(ws, 'C' + str(f_), FMT_DUR)
     r = res_ult + 2
@@ -1664,11 +1943,24 @@ def _registro_jornada(wb, fname, cambios, ws_turnos, puestos, modelo):
                 .format(r=f_), fmt=FMT_DUR)
         motor.fijar_formato(ws, 'F' + str(f_), FMT_DUR)
         if f_ == primera:
-            motor.f(ws, 'G' + str(f_), '=""')
+            # RC-35 · `'=""'` es una fórmula que sólo devuelve la cadena vacía:
+            # un residuo de construcción que además cuenta como una de las 230
+            # fórmulas del fichero. La primera fila del parte no tiene jornada
+            # anterior con la que comparar, así que va VACÍA.
+            ws['G' + str(f_)].value = None
         else:
+            # RT-22 · `MOD(entrada − salida_anterior, 1)` devuelve sólo la
+            # parte fraccionaria del día: un descanso de EXACTAMENTE 24 h da
+            # 0:00 y dispara el aviso legal, y uno de 36 h da 12:00 y también.
+            # Con la fecha de la columna A la resta es real y soporta cualquier
+            # separación; si falta la fecha se cae al comportamiento anterior,
+            # pero sumando un día cuando la resta sale negativa o nula.
             motor.f(ws, 'G' + str(f_),
                     '=IF(OR($B{r}="",$B{r}<>$B{a},$D{r}="",$E{a}=""),"",'
-                    'MOD($D{r}-$E{a},1))'.format(r=f_, a=f_ - 1), fmt=FMT_DUR)
+                    'IF(OR($A{r}="",$A{a}=""),'
+                    'IF(MOD($D{r}-$E{a},1)=0,1,MOD($D{r}-$E{a},1)),'
+                    '($A{r}+$D{r})-($A{a}+$E{a})))'.format(r=f_, a=f_ - 1),
+                    fmt=FMT_DUR)
         motor.fijar_formato(ws, 'G' + str(f_), FMT_DUR)
         motor.f(ws, 'H' + str(f_),
                 '=IF($G{r}="","",IF($G{r}<{d},"Descanso inferior al mínimo '
@@ -1678,10 +1970,27 @@ def _registro_jornada(wb, fname, cambios, ws_turnos, puestos, modelo):
     motor.semaforo_isnumber(ws, 'G' + str(primera) + ':G' + str(ultima),
                             '$G' + str(primera), operador='<', umbral=ref_desc)
     if puestos and modelo != 'T3':
-        nombres = [_txt(ws_turnos.cell(row=f_, column=3).value)
+        # RD-26 · el registro tiene que acreditar la jornada de PERSONAS
+        # identificadas, no de puestos. Si el cuadrante ya trae nombres en su
+        # columna «Nombre», el desplegable apunta ahí; si está vacía (que es
+        # como se entrega), se cae a los puestos y la nota lo dice.
+        nombres = [_txt(ws_turnos.cell(row=f_, column=2).value)
                    for f_ in puestos]
-        motor.dv_lista(ws, ['B' + str(f_) for f_ in range(primera, ultima + 1)],
-                       [n for n in nombres if n][:40])
+        nombres = [n for n in nombres if n]
+        origen = 'los nombres del cuadrante'
+        if not nombres:
+            nombres = [_txt(ws_turnos.cell(row=f_, column=3).value)
+                       for f_ in puestos]
+            nombres = [n for n in nombres if n]
+            origen = ('los PUESTOS del cuadrante: escribe los nombres en su '
+                      'columna «Nombre» y vuelve a abrir esta hoja para que el '
+                      'desplegable ofrezca personas')
+        if nombres:
+            motor.dv_lista(
+                ws, ['B' + str(f_) for f_ in range(primera, ultima + 1)],
+                nombres[:40], titulo='Trabajador',
+                mensaje='Elige un trabajador de la lista (sale de ' + origen
+                        + ').')
     del fila_res_cab
     if nueva:
         cambios.append(

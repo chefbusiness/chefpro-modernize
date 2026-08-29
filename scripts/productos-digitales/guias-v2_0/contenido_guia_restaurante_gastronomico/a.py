@@ -40,7 +40,7 @@ Comprobación aritmética (hecha al escribir este módulo, 2026-08-29):
 
   Escenario     T (€)    N     días   F (€/mes)     F (€/año)   EBITDA
   Pesimista     99,80    60     22    131.736,00    1,58 M€     +3.580,48 (2,7 %)
-  Realista     123,20    70     22    189.728,00    2,28 M€    +33.809,60 (17,8 %)
+  Realista     123,20    70     22    189.728,00    2,28 M€    +34.007,92 (17,9 %)
   Optimista    136,00    78     22    233.376,00    2,80 M€    +47.030,72 (20,2 %)
 
   · Los tres caben en la «facturación anual típica 1,5-3 M€ para un
@@ -48,7 +48,7 @@ Comprobación aritmética (hecha al escribir este módulo, 2026-08-29):
   · El PESIMISTA es malo pero NO inviable (§7-bis.14, RT-13): +2,7 % de EBITDA
     con el alquiler pesando el 12,9 % de la facturación (docx §8 da 8-12 % en
     zona premium: pasarse es exactamente lo que significa un escenario malo).
-  · Coste de personal: 564 / 720 / 936 k€ al año, dentro del rango CORREGIDO de
+  · Coste de personal: 564 / 718 / 936 k€ al año, dentro del rango CORREGIDO de
     §5.4 (556 k€ - 1,0 M€ con la SS de la empresa), no del rango viejo que
     DOM-02/COM-10 declaran falso.
   · Préstamo de ejemplo: 300.000 € a 10 años al 5,5 % con 1 año de carencia →
@@ -162,7 +162,7 @@ PL = {
             r'^ticket medio cena': 142.25,     # docx §15 (medio de 90-180 €)
             r'^dias abierto': 22,
             r'^food cost': 0.30,               # docx §3: modelo 2, 28-32 %
-            r'^coste personal': 60000,         # docx §13+§14 → 720 k€/año
+            r'^coste personal': 59801.68,      # = plantilla-turnos-brigada
             r'^alquiler': 17000,               # = 9,0 % de 189.728 €/mes
             r'^otros costes fijos': 22000,
             r'^amortizacion': 6000,
@@ -196,7 +196,9 @@ PL = {
                              'son BRUTOS, sin SS: con el 33 % son cocina '
                              '322.400-601.900 € y sala 234.000-403.000 €, o '
                              '556 k€-1,0 M€ en total. Los tres escenarios '
-                             '(564 / 720 / 936 k€ al año) caben ahí.'),
+                             '(564 / 718 / 936 k€ al año) caben ahí. El '
+                             'realista NO se teclea: es el coste de la brigada '
+                             'de plantilla-turnos-brigada.xlsx.'),
         r'^otros costes fijos': ('Suministros, seguros, marketing, tecnología, '
                                  'mantenimiento, limpieza y gestoría. La '
                                  'amortización va en su PROPIA fila, debajo: '
@@ -231,7 +233,7 @@ PLAN = {
         # 3.208,33 €/mes el primer año (sólo intereses) y 8.232,00 €/mes los
         # nueve siguientes. El importe se ha subido de los 300.000 € de la v1.1
         # a 700.000 € porque con la NECESIDAD que este mismo libro calcula
-        # ahora (1.894.818,80 €) los 300.000 € dejaban el plan sin cuadrar.
+        # ahora (1.889.944,24 €) los 300.000 € dejaban el plan sin cuadrar.
         'importe': 700000,
         'plazo': 10,
         'tipo': 0.055,
@@ -239,8 +241,8 @@ PLAN = {
         # RD-20 · un analista de riesgos cuadra necesidad = fondos propios +
         # préstamo + otras fuentes antes de mirar nada más. Con el préstamo de
         # ejemplo, los fondos propios que hacen cuadrar el plan son
-        # 1.894.818,80 − 700.000 = 1.194.818,80 €.
-        'fondos_propios': 1194818.80,
+        # 1.889.944,24 − 700.000 = 1.189.944,24 €.
+        'fondos_propios': 1189944.24,
         'otras_fuentes': 0,
     },
     # SPEC §2.3.5 y §7-bis.3: mínimo 6 meses de costes fijos + personal.
@@ -281,7 +283,7 @@ PLAN = {
     # entregaba con las 22 partidas vacías: «TOTAL inversión 0,00 €». Estos
     # importes van en VERDE y son de EJEMPLO (§1.2), y CUADRAN con lo que los
     # checklists de este mismo pack ya tasan, que es lo que exige RC-05:
-    #   equipamiento (8 conceptos)  = 164.718,40 € = checklist-equipamiento!G98
+    #   equipamiento (8 conceptos)  = 161.430,40 € = checklist-equipamiento!G98
     #   sala (2 conceptos)          = 108.200,00 € = checklist-diseno-sala
     #   vajilla + textil            =  30.230,00 € = checklist-vajilla
     #   web + marketing lanzamiento =  23.800,00 € = checklist-marketing
@@ -293,7 +295,7 @@ PLAN = {
         r'^equipamiento cocina fria': 42000,        # checklist-equipamiento
         r'^pasteleria y obrador': 14000,            # checklist-equipamiento
         r'^zona de pase': 8000,                     # checklist-equipamiento
-        r'^plonge y lavado': 9718.40,               # checklist-equipamiento
+        r'^plonge y lavado': 6430.40,               # checklist-equipamiento
         r'^almacenamiento y camaras': 13000,        # checklist-equipamiento
         r'^mobiliario sala': 62000,                 # checklist-diseno-sala
         r'^iluminacion y decoracion': 46200,        # checklist-diseno-sala
@@ -314,8 +316,8 @@ PLAN = {
     # REALISTA, línea a línea. Cuadra al céntimo con pl-mensual-escenarios:
     #   ingresos   40.106,00 + 115.434,00 + 34.188,00 = 189.728,00
     #   variables  45.636,36 + 11.282,04 =  56.918,40 = 30 % de la facturación
-    #   fijos      SUM(B20:B29) + B31     =  99.000,00 (sin la amortización)
-    #   EBITDA     132.809,60 - 99.000,00 =  33.809,60 = pl-mensual!C21
+    #   fijos      SUM(B20:B29) + B31     =  98.801,68 (sin la amortización)
+    #   EBITDA     132.809,60 - 98.801,68 =  34.007,92 = pl-mensual!C21
     'pl_mensual': {
         r'^comidas \(cubiertos': 40106.00,
         r'^cenas \(cubiertos': 115434.00,
@@ -323,8 +325,8 @@ PLAN = {
         r'^eventos privados': 0,
         r'^materia prima': 45636.36,
         r'^bebidas \(coste bodega\)': 11282.04,
-        r'^personal cocina': 34000,
-        r'^personal sala': 26000,
+        r'^personal cocina': 38390.01,
+        r'^personal sala': 21411.67,
         r'^alquiler': 17000,
         r'^suministros': 6000,
         r'^seguros': 900,
@@ -349,7 +351,8 @@ PLAN = {
         r'^personal cocina': ('Coste CON la Seguridad Social de la empresa. '
                               'La fuente del coste de personal es '
                               'plantilla-turnos-brigada.xlsx (§7-bis.7): '
-                              '60.000 €/mes = 720.000 €/año para 24 personas.'),
+                              '59.801,68 €/mes = 717.620,12 €/año para las 24 '
+                              'personas del cuadrante, con el 33 % de SS.'),
         r'^amortizacion equipamiento': ('Queda FUERA del EBITDA (fila 32) y '
                                         'resta en el EBIT (fila 37): un EBITDA '
                                         'con la amortización dentro es un '
@@ -371,7 +374,7 @@ CASH = {
     'anio': 1,
     # RD-20/RD-08 · lo que el bloque de «Inversión» calcula como necesidad
     # total, repetido aquí con su nota (§1.13: se repite el dato, no se enlaza).
-    'necesidad_total': 1894818.80,
+    'necesidad_total': 1889944.24,
     # RD-14 · el 10 % único sobre TODA la facturación deja corta la
     # liquidación del 303: la bodega va al 21 %.
     'iva_bebida': 0.21,
@@ -391,7 +394,7 @@ CASH = {
         'variables': {r'^materia prima': 56918.40},
         # gastos FIJOS de caja (NO llevan rampa: son fijos). La amortización no
         # entra: no es caja.
-        'fijos': {r'^personal': 60000,
+        'fijos': {r'^personal': 59801.68,
                   r'^alquiler': 17000,
                   r'^suministros': 6000,
                   r'^marketing': 3500,
@@ -406,14 +409,14 @@ CASH = {
     # en que se recupera lo invertido. Parametrizado y en verde.
     # El saldo inicial de tesorería del mes 1 de EXPLOTACIÓN es, por
     # construcción, el fondo de maniobra que plan-financiero-3-anos.xlsx
-    # dimensiona en su hoja «Inversión»: 155.918,40 €/mes de estructura × 6.
-    'apertura': {'saldo_inicial': 935510.40, 'desembolso_capex': None,
+    # dimensiona en su hoja «Inversión»: 155.720,08 €/mes de estructura × 6.
+    'apertura': {'saldo_inicial': 934320.48, 'desembolso_capex': None,
                  'iva_capex': None},
     'break_even': {
-        # = personal 60.000 + alquiler 17.000 + otros 22.000 del escenario
+        # = personal 59.801,68 + alquiler 17.000 + otros 22.000 del escenario
         # realista del P&L de esta misma guía (§7-bis.7: una sola fuente).
         # La amortización NO entra: el break-even es de caja.
-        'costes_fijos': 99000,
+        'costes_fijos': 98801.68,
         # 1 − food cost 0,30 del escenario realista (docx §3).
         'margen_contribucion': 0.70,
         # Ticket ponderado del escenario realista de
@@ -439,13 +442,13 @@ CAPEX = {
         r'^equipamiento cocina profesional': (
             'El rango alto llega a 180.000 € porque el '
             'checklist-equipamiento-cocina.xlsx de este mismo pack tasa '
-            '164.718,40 € para una cocina completa con Josper, horno mixto de '
+            '161.430,40 € para una cocina completa con Josper, horno mixto de '
             '10 GN, abatidor y dos cámaras.'),
         r'^fondo de maniobra': (
             'Estos tres números son un rango de mercado, NO tu fondo de '
             'maniobra. El tuyo lo calcula plan-financiero-3-anos.xlsx, hoja '
             '«Inversión», con TUS costes fijos: seis meses del escenario '
-            'realista de este pack son 6 × 155.918,40 € = 935.510,40 €, muy por '
+            'realista de este pack son 6 × 155.720,08 € = 934.320,48 €, muy por '
             'encima de cualquiera de las tres columnas.'),
     },
 }

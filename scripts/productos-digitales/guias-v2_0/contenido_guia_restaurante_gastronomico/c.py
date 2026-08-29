@@ -202,6 +202,87 @@ BODEGA = {
 #: cap. 14, el 21-29 que suman las tablas 2 y 3 del docx y el «25 personas» de
 #: la tarjeta del dashboard) son de T7 y T8 [TEC-13 · COM-21 · §7-bis.7].
 TURNOS = {
-    'salarios': None,       # deliberado: ver DOM-13 en la cabecera
     'headcount': 'medido en tiempo de ejecución (§9)',
+    #: RD-04/RT-05/RC-12 — DECISIÓN REVISADA. Dejar los 24 brutos vacíos era
+    #: correcto en su motivo (dos puestos del capítulo quedaban por debajo del
+    #: SMI y no se copian cifras ilegales) y equivocado en su efecto: sin
+    #: bruto y sin jornada, el coste/hora, el coste de la semana y los TRES
+    #: totales devolvían "" en las 24 filas, y la tarjeta vende un cuadrante
+    #: «con coste». La salida no es teclear otra cifra: es tomar la del propio
+    #: capítulo de brigada y ELEVARLA al SMI donde el capítulo se queda corto.
+    #:
+    #: Fuente de cada importe: tablas 2 y 3 del docx de esta guía
+    #: («13. Estructura de Personal de Cocina» y «14. Equipo de Sala»), en el
+    #: tercio bajo de cada rango.
+    #:
+    #: §7-bis.7 — ESTA TABLA ES LA FUENTE DEL COSTE DE PERSONAL DE TODO EL
+    #: PRODUCTO. Suma 539.564 € de bruto (346.376 € cocina + 193.188 € sala) y,
+    #: con el 33 % de Seguridad Social empresarial de C41, 717.620,12 €/año =
+    #: **59.801,68 €/mes**, que es exactamente lo que lleva precargado el
+    #: escenario realista de `pl-mensual-escenarios.xlsx` y el desglose
+    #: cocina/sala de `plan-financiero-3-anos.xlsx`. Si cambias un bruto aquí,
+    #: los otros dos libros dejan de cuadrar: cámbialos también.
+    #: Los dos que el capítulo publica por debajo del SMI vigente (17.094 €/año,
+    #: RD 126/2026) — Ayudante 16.000-19.000 € y Plonge 15.000-17.000 € — se
+    #: suben a 17.094 €, que es el suelo legal, y así lo dice la nota de la hoja.
+    'brutos': {
+        # --- cocina (docx §13) -------------------------------------------
+        'chef ejecutivo': 55000,        # rango 35.000-80.000, punto prudente
+        'sous chef': 32000,             # rango 28.000-40.000
+        'jefe partida carnes': 24000,   # rango 22.000-30.000
+        'jefe partida pescados': 24000,
+        'jefe partida frios': 24000,
+        'jefe partida pasteleria': 24000,
+        'commis 1': 19000,              # rango 18.000-22.000
+        'commis 2': 19000,
+        'commis 3': 19000,
+        'commis 4': 19000,
+        'commis 5': 19000,
+        'ayudante 1': 17094,            # capítulo 16.000-19.000 → SUELO SMI
+        'ayudante 2': 17094,
+        'plonge 1': 17094,              # capítulo 15.000-17.000 → SUELO SMI
+        'plonge 2': 17094,
+        # --- sala (docx §14) ---------------------------------------------
+        'maitre': 32000,                # rango 28.000-42.000
+        'sommelier': 32000,             # rango 30.000-45.000
+        'camarero rango 1': 19000,      # rango 18.000-24.000
+        'camarero rango 2': 19000,
+        'camarero rango 3': 19000,
+        'camarero rango 4': 19000,
+        'runner 1': 17094,              # capítulo 16.000-19.000 → SUELO SMI
+        'runner 2': 17094,
+        'hostess': 19000,               # rango 18.000-22.000
+    },
+    #: RD-04 · el cuadrante también llegaba VACÍO, así que «Horas/Semana» y
+    #: «Coste semana» devolvían "" aunque hubiera bruto. Rotación de EJEMPLO
+    #: de lunes a domingo (M mañana, T tarde, P partido, L libre), con dos
+    #: días de libranza por persona y el domingo y el lunes cerrados para los
+    #: puestos que no hacen mise en place. Es una hipótesis de organización, en
+    #: celda verde: se cambia escribiendo encima.
+    'cuadrante': {
+        'chef ejecutivo':        'PPPPPLL',
+        'sous chef':             'PPPPLLP',
+        'jefe partida carnes':   'PPPLLPP',
+        'jefe partida pescados': 'PPLLPPP',
+        'jefe partida frios':    'PLLPPPP',
+        'jefe partida pasteleria': 'MMMMMLL',
+        'commis 1':              'MMMMMLL',
+        'commis 2':              'MMMMLLM',
+        'commis 3':              'TTTTTLL',
+        'commis 4':              'TTTTLLT',
+        'commis 5':              'TTTLLTT',
+        'ayudante 1':            'MMMMMLL',
+        'ayudante 2':            'TTTTTLL',
+        'plonge 1':              'TTTTTLL',
+        'plonge 2':              'TTTTLLT',
+        'maitre':                'PPPPPLL',
+        'sommelier':             'TTTTTLL',
+        'camarero rango 1':      'TTTTTLL',
+        'camarero rango 2':      'TTTTLLT',
+        'camarero rango 3':      'PPPPLLP',
+        'camarero rango 4':      'PPPLLPP',
+        'runner 1':              'TTTTTLL',
+        'runner 2':              'TTTTLLT',
+        'hostess':               'TTTTTLL',
+    },
 }

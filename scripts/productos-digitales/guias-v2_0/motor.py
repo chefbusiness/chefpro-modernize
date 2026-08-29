@@ -1397,9 +1397,16 @@ def cerrar_checklist(ws, molde, fila_cab, fname='', informe=None,
         # que con el alquiler del propio pack son 34.000 €) van sin importe.
         # No se inventa el precio: se DICE cuántas partidas faltan por tasar.
         val(ws, 'A' + str(r), ETIQUETA_SIN_TASAR, bold=True)
+        # `COUNTBLANK` no está implementado en pycel (igual que `COUNTA`), así
+        # que el gate de caché lo dejaba sin valor y el censo lo marcaba como
+        # `nocache_real`. Se cuenta al revés: ítems del checklist menos ítems
+        # con importe numérico. El rango de referencia es una columna de TEXTO
+        # (categoría, o el «#»), nunca una de fórmulas — ver RT-01.
+        base_cuenta = col_cat or 'A'
         f(ws, col_coste + str(r),
-          '=COUNTBLANK(' + col_coste + ini_d + ':' + col_coste + fin_d + ')',
-          fmt='#,##0', bold=True)
+          '=COUNTIF(' + base_cuenta + ini_d + ':' + base_cuenta + fin_d
+          + ',"<>")-COUNT(' + col_coste + ini_d + ':' + col_coste + fin_d
+          + ')', fmt='#,##0', bold=True)
         fijar_formato(ws, col_coste + str(r), '#,##0')
         regla_expresion(ws, col_coste + str(r),
                         '=AND(ISNUMBER(' + col_coste + str(r) + '),'

@@ -143,7 +143,8 @@ LEGAL = {
     #: entero del checklist. No se teclea: se calcula desde la renta.
     'costes_formula': [
         {'id': 'RC-15/DOM-23',
-         'buscar': 'Fianza legal de 2 mensualidades y garantía adicional',
+         'buscar': ('Fianza legal de 2 mensualidades y garantía adicional '
+                    '(aval o depósito)'),
          'etiqueta': 'Renta mensual del local (€)',
          'valor': 17000,
          'nota': ('Alquiler mensual del escenario realista de '
@@ -407,9 +408,15 @@ DISENO_SALA = {
          'tarea': ('Aseos y vestuarios de personal separados de los de '
                    'clientes (RD 486/1997)'),
          'responsable': 'Arquitecto', 'estado': 'Pendiente', 'coste': None,
+         # RD-34/TEC-13 · §7-bis.7 exige UNA sola cifra de plantilla en todo
+         # el producto, y el cuadrante de plantilla-turnos-brigada tiene 24
+         # puestos numerados. El «22-30» del capítulo era la tercera cifra
+         # viva del mismo pack.
          'notas': ('El checklist cubría los baños de clientes y el adaptado, '
-                   'pero no los del equipo: son ' + _rango('22', '30')
-                   + N + 'personas según el cap.' + N + '13. ' + PRESUPUESTAR)},
+                   'pero no los del equipo: son las 24' + N + 'personas del '
+                   'cuadrante de plantilla-turnos-brigada.xlsx (15 de cocina '
+                   'y 9 de sala), que es la fuente única de plantilla de este '
+                   'producto. ' + PRESUPUESTAR)},
         {'id': 'DOM-39', 'fuente': 'SPEC §3.4', 'categoria': 'Accesibilidad',
          'tarea': ('Certificación de aforo y anchura de los recorridos de '
                    'evacuación'),
