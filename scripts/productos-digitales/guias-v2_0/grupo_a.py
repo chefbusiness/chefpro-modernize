@@ -410,10 +410,78 @@ def ticket_escenarios_3col(wb, fname, cambios, contenido):
     # (TEC-01 pinta de verde las cinco, incluidas las tres de resultado).
     for r in (f_ticket, f_fdia, f_fmes):
         motor.quitar_verde(ws, cols[0] + str(r) + ':' + cols[-1] + str(r))
+    # RC-02 · las columnas se llamaban «Escenario 1/2/3» y el P&L de escenarios
+    # «Pesimista/Realista/Optimista»: el comprador no podía cruzarlos, y el
+    # «escenario 3» tenía MENOS cubiertos que el 2.
+    for col, titulo in (conf.get('cabeceras') or {}).items():
+        if col in cols:
+            motor.val(ws, col + '4', titulo, bold=True)
     apunta(cambios, fname, ws, str(len(pares)) + ' pares %/precio + '
            + str(len(sueltos)) + ' incondicionales → ticket ponderado en la '
            'fila ' + str(f_ticket) + ', facturación día/mes (TEC-01, DOM-08)')
     _precargar_ticket(ws, cols, conf, cambios, fname)
+    _ticket_iva_y_cuadre(ws, cols, conf, cambios, fname, f_ticket, f_fmes)
+
+
+def _ticket_iva_y_cuadre(ws, cols, conf, cambios, fname, f_ticket, f_fmes):
+    """RD-23 + RC-02 — la hoja FIJA precios y no decía si llevan IVA, y su
+    facturación no se podía cruzar con la del P&L de escenarios.
+
+    §1.5(a) obliga a que toda hoja que fije un PVP lleve el precio sin IVA y
+    con IVA, con el tipo en celda: en España la carta se anuncia CON IVA y un
+    menú de 150 € son 136,36 € netos. Y §7-bis.7 exige una sola cifra por
+    magnitud: aquí se repite la del P&L con su nota (§1.13, no `externalLink`)
+    y se marca en rojo cualquier desvío mayor del 2 %.
+    """
+    base = base_bloque(ws, r'^iva y cuadre con el p&l')
+    iva = conf.get('iva') or {}
+    r = base
+    motor.val(ws, 'A' + str(r), 'IVA Y CUADRE CON EL P&L DE ESCENARIOS',
+              bold=True)
+    r += 1
+    motor.val(ws, 'A' + str(r),
+              iva.get('etiqueta', 'Tipo de IVA de los precios (%)'))
+    motor.val(ws, 'B' + str(r), iva.get('valor', 0.10), fmt=FMT_PCT,
+              verde_=True)
+    motor.fijar_formato(ws, 'B' + str(r), FMT_PCT)
+    celda_iva = '$B$' + str(r)
+    nota(ws, 'C' + str(r), iva.get('nota', ''))
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Ticket medio CON IVA — el precio que ve el '
+              'comensal (€)')
+    for col in cols:
+        motor.f(ws, col + str(r),
+                '=IF(' + col + str(f_ticket) + '="","",' + col + str(f_ticket)
+                + '*(1+' + celda_iva + '))', fmt=FMT_EUR)
+    r += 1
+    ref = conf.get('reconciliacion') or {}
+    if ref:
+        motor.val(ws, 'A' + str(r), 'Facturación mensual del P&L de escenarios '
+                  '(€) — la que va al banco')
+        for col in cols:
+            motor.val(ws, col + str(r), ref.get(col), fmt=FMT_EUR)
+        f_ref = r
+        r += 1
+        motor.val(ws, 'A' + str(r), 'Diferencia con este simulador (%)')
+        for col in cols:
+            motor.f(ws, col + str(r),
+                    '=IF(OR(' + col + str(f_ref) + '="",' + col + str(f_ref)
+                    + '=0,' + col + str(f_fmes) + '=""),"",(' + col
+                    + str(f_fmes) + '-' + col + str(f_ref) + ')/' + col
+                    + str(f_ref) + ')', fmt=FMT_PCT)
+        motor.semaforo_isnumber(ws, cols[0] + str(r) + ':' + cols[-1] + str(r),
+                                cols[0] + str(r), operador='>', umbral='0.02')
+        r += 1
+        nota(ws, 'A' + str(r),
+             'Las dos hojas describen el MISMO restaurante: mismos cubiertos/'
+             'día y mismos días abiertos. Los tickets de comida y cena del P&L '
+             'están calibrados contra el ticket ponderado de esta hoja, así '
+             'que esta fila tiene que dar 0,0 %. Si no lo da, has cambiado un '
+             'precio aquí y no allí — y la cifra que vale es la del P&L '
+             '(§7-bis.7).')
+    apunta(cambios, fname, ws, 'bloque de IVA (§1.5a) y cuadre con el P&L en '
+           'las filas ' + str(base) + '-' + str(r) + ' (RD-23, RC-02)')
+    return base
 
 
 def _precargar_ticket(ws, cols, conf, cambios, fname):
@@ -606,10 +674,28 @@ def pl_escenarios_columnas(wb, fname, cambios, contenido):
                 '=IF(' + col + str(f_fact) + '=0,"",' + col + str(f_eb) + '/'
                 + col + str(f_fact) + ')', fmt=FMT_PCT)
         motor.quitar_verde(ws, col + str(f_fact) + ':' + col + str(f_me))
-    _semaforo_negativo(ws, cols, (f_eb, f_me))
+    # RD-11 · había DOS EBITDA distintos en el mismo producto: plan-financiero
+    # excluye la amortización (TEC-08) y esta hoja la metía dentro de «Otros
+    # costes fijos» por decisión declarada en su propia nota, con la fila
+    # rotulada «EBITDA mensual». Eso es un EBIT con otro nombre.
+    f_amo, f_ebit = f_me + 1, f_me + 2
+    motor.val(ws, 'A' + str(f_amo), 'Amortización mensual (€)')
+    motor.val(ws, 'A' + str(f_ebit), 'EBIT — resultado de explotación (€)')
+    for col in cols:
+        motor.verde(ws, col + str(f_amo))
+        motor.fijar_formato(ws, col + str(f_amo), FMT_EUR)
+        motor.f(ws, col + str(f_ebit),
+                '=IF(' + col + str(f_eb) + '="","",' + col + str(f_eb) + '-IF('
+                'ISNUMBER(' + col + str(f_amo) + '),' + col + str(f_amo)
+                + ',0))', fmt=FMT_EUR, bold=True)
+    motor.permitir_negativo(ws, cols[0] + str(f_ebit) + ':' + cols[-1]
+                            + str(f_ebit))
+    _semaforo_negativo(ws, cols, (f_eb, f_me, f_ebit))
     apunta(cambios, fname, ws, 'P&L encadenado en las filas ' + str(f_fact)
            + '-' + str(f_me) + ' para ' + str(len(cols))
-           + ' escenarios; verde retirado de los resultados (TEC-02, DOM-07)')
+           + ' escenarios; verde retirado de los resultados (TEC-02, DOM-07); '
+           'amortización FUERA del EBITDA en la fila ' + str(f_amo)
+           + ' y EBIT en la ' + str(f_ebit) + ' (RD-11)')
     _precargar_pl(ws, cols, contenido, cambios, fname)
 
 
@@ -836,17 +922,25 @@ def _pl_mensual_representante(wb, fname, cambios, contenido):
     # TOTAL COSTES FIJOS sin la amortización: lo que la hoja llamaba EBITDA era
     # un EBIT. Con ventas 140.000 € y amortización 6.000 €, el R1 midió 26.000 €
     # donde el EBITDA es 32.000 € (−23 %).
+    # RT-29/RC-34: un `SUM(B31:B31)` sobre UNA celda invita a creer que el
+    # rango se extiende si alguien inserta una fila, y no dice por qué la 30
+    # está fuera. §2.3.2 lo escribe como `+B31`.
+    def _tramo(desde, hasta):
+        return ('SUM(B' + str(desde) + ':B' + str(hasta) + ')'
+                if hasta > desde else 'B' + str(desde))
     trozos = []
     if f_amort > f_fij + 1:
-        trozos.append('SUM(B' + str(f_fij + 1) + ':B' + str(f_amort - 1) + ')')
+        trozos.append(_tramo(f_fij + 1, f_amort - 1))
     if f_amort < f_tot_fij - 1:
-        trozos.append('SUM(B' + str(f_amort + 1) + ':B' + str(f_tot_fij - 1)
-                      + ')')
+        trozos.append(_tramo(f_amort + 1, f_tot_fij - 1))
     motor.f(ws, 'B' + str(f_tot_fij), '=' + '+'.join(trozos), fmt=FMT_EUR)
     motor.f(ws, 'B' + str(f_eb), '=B' + str(f_mb) + '-B' + str(f_tot_fij),
             fmt=FMT_EUR, bold=True)
     motor.val(ws, 'A' + str(f_tot_fij),
               'TOTAL COSTES FIJOS (sin amortización)')
+    nota(ws, 'D' + str(f_tot_fij),
+         'No incluye la amortización de la fila ' + str(f_amort) + ': por eso '
+         'la fila de abajo es EBITDA y no EBIT.')
     # 2.3.3 · el margen es un ratio, no un importe (TEC-09) — se CLAVA porque
     # la cabecera de la columna B dice «Importe (€)» y la regla de columna del
     # §1.4 lo devolvería a euros.
@@ -885,14 +979,54 @@ def _pl_mensual_representante(wb, fname, cambios, contenido):
         rehechas += 1
     _semaforo_negativo(ws, ['B'], (f_eb, f_ebit))
     motor.permitir_negativo(ws, 'B' + str(f_eb) + ':B' + str(f_ebit))
+    _precargar_pl_mensual(ws, fname, cambios, contenido, f_ebit)
     apunta(cambios, fname, ws,
            'EBITDA sin amortización (B' + str(f_tot_fij) + '=' + '+'.join(trozos)
            + '), EBIT en la fila ' + str(f_ebit) + ', margen en % (TEC-08/09), '
            + str(rehechas) + ' celdas de «% s/Ventas» con "" en vez de 0 y '
            + str(len(limpiadas)) + ' vaciadas ' + str(limpiadas) + ' (TEC-10)')
+    f_alq = _fila(ws, r'^alquiler', desde=f_fij, hasta=f_tot_fij, fname=fname)
+    f_pcoc = _fila(ws, r'^personal cocina', desde=f_fij, hasta=f_tot_fij,
+                   obligatoria=False) or f_alq
+    f_psal = _fila(ws, r'^personal sala', desde=f_fij, hasta=f_tot_fij,
+                   obligatoria=False) or f_pcoc
     return {'tot_ing': f_tot_ing, 'tot_var': f_tot_var, 'margen': f_mb,
             'tot_fij': f_tot_fij, 'amort': f_amort, 'ebitda': f_eb,
-            'ebit': f_ebit}
+            'ebit': f_ebit, 'alquiler': f_alq, 'personal': (f_pcoc, f_psal)}
+
+
+def _precargar_pl_mensual(ws, fname, cambios, contenido, ultima):
+    """RD-01/RT-02/RC-01 — el libro que §7-bis.7 declara FUENTE ÚNICA se
+    entregaba con la columna de entrada VACÍA: «TOTAL INGRESOS 0,00 €»,
+    «EBITDA 0,00 €» y «Proyección 3 Años» entera en blanco.
+
+    Los importes salen de `contenido_<pid>/a.py` y son el escenario REALISTA
+    de `pl-mensual-escenarios.xlsx`, línea a línea, con su nota de origen: van
+    en VERDE y son valores de EJEMPLO (§1.2). Si el módulo de contenido no los
+    trae, la hoja se queda como está: aquí no se inventa ninguna cifra.
+    """
+    conf = ((getattr(contenido, 'PLAN', None) or {}) if contenido else {})
+    valores = conf.get('pl_mensual') or {}
+    if not valores:
+        return 0
+    puestas = 0
+    for patron, valor in valores.items():
+        r = _fila(ws, patron, desde=5, hasta=ultima, obligatoria=False)
+        if r is None or ws['B' + str(r)].data_type == 'f':
+            continue
+        motor.val(ws, 'B' + str(r), valor, fmt=FMT_EUR, verde_=True)
+        motor.fijar_formato(ws, 'B' + str(r), FMT_EUR)
+        puestas += 1
+    for patron, texto in (conf.get('pl_notas') or {}).items():
+        r = _fila(ws, patron, desde=5, hasta=ultima, obligatoria=False)
+        if r is not None:
+            nota(ws, 'D' + str(r), texto)
+    if puestas:
+        apunta(cambios, fname, ws, str(puestas) + ' líneas del P&L precargadas '
+               'en verde con el escenario REALISTA de pl-mensual-escenarios '
+               '(RD-01/RT-02/RC-01: el libro ya no abre con 0,00 € en TOTAL '
+               'INGRESOS, EBITDA y EBIT)')
+    return puestas
 
 
 # --------------------------------------------------------------------------
@@ -1135,6 +1269,16 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
         motor.val(ws, col + '7', (conf.get('inflacion') or {}).get(col),
                   fmt=FMT_PCT, verde_=True)
         motor.permitir_negativo(ws, col + '6:' + col + '7')
+        # RT-14 · una DV `decimal >= -1.000.000.000.000` no valida nada, y
+        # estas dos celdas gobiernan la proyección entera.
+        motor.dv_propia(ws, col + '6:' + col + '7', -0.5, 1.0, 'Porcentaje',
+                        'Escribe un porcentaje entre -0,5 y 1 (0,08 = 8 %). '
+                        'Admite negativo: una caída de ventas es -0,10.',
+                        'Se escribe en tanto por uno: 0,08 = 8 %. Admite '
+                        'negativo para una caída de ventas.')
+        motor.semaforo_isnumber(ws, col + '6', col + '6', operador='>',
+                                umbral='0.3', bg=motor.CF_AMBAR_BG,
+                                fg=motor.CF_AMBAR_FG)
     # El tipo del IS NO se deja vacío aunque falte el módulo de contenido: una
     # celda de impuesto en blanco hace que la línea «Impuesto de Sociedades»
     # valga 0 sin decirlo, y el resultado neto sale inflado. El 25 % viene de
@@ -1209,64 +1353,216 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
 # --------------------------------------------------------------------------
 # 2.3.5 · fondo de maniobra dimensionado  ·  2.3.6 · fuente única de CAPEX
 # --------------------------------------------------------------------------
-def fondo_de_maniobra(wb, fname, cambios, contenido, pl, hoja_inv, col_pres):
-    """DOM-01/COM-30: el fondo de maniobra deja de ser un importe tecleado.
+def _precargar_inversion(ws, fname, cambios, contenido, col_pres, col_etq,
+                         fila_cab):
+    """RD-01/RT-02/RC-01/RC-05 — las 22 partidas de CAPEX se entregaban VACÍAS.
+
+    Los importes vienen de `contenido_<pid>/a.py` y CUADRAN con lo que los
+    checklists de este mismo pack ya tasan (equipamiento 164.718,40 €, sala
+    108.200 €, vajilla 30.230 €, marketing 23.800 €, legal 23.960 €), que es lo
+    que RC-05 pedía reconciliar. Van en VERDE y son ejemplo (§1.2).
+    """
+    valores = (((getattr(contenido, 'PLAN', None) or {}).get('inversion')
+                if contenido else None) or {})
+    if not valores:
+        return 0
+    puestas = 0
+    for patron, valor in valores.items():
+        r = _fila(ws, patron, col=col_etq, desde=fila_cab + 1,
+                  obligatoria=False)
+        if r is None or ws[col_pres + str(r)].data_type == 'f':
+            continue
+        motor.val(ws, col_pres + str(r), valor, fmt=FMT_EUR, verde_=True)
+        motor.fijar_formato(ws, col_pres + str(r), FMT_EUR)
+        puestas += 1
+    if puestas:
+        apunta(cambios, fname, ws, str(puestas) + ' partidas de CAPEX '
+               'precargadas en verde, cuadradas con los totales que ya tasan '
+               'los checklists del propio pack (RD-01, RC-05)')
+    return puestas
+
+
+def fondo_de_maniobra(wb, fname, cambios, contenido, pl, hoja_inv, col_pres,
+                      col_etq=1, fila_cab=None):
+    """DOM-01/COM-30 + RD-08/RD-20: el fondo de maniobra deja de ser un importe
+    tecleado, aparece la PREAPERTURA y el libro dice cuánto dinero hace falta.
 
     `= (coste fijo mensual sin amortización + coste variable del mes) × meses`,
     con los meses en celda verde y **mínimo 6**, que es lo que pide el propio
     consejo del capítulo 4 («un gastronómico tarda 6-12 meses en alcanzar
-    velocidad de crucero»). El rótulo NO se toca (§2.3.5).
+    velocidad de crucero»). El rótulo de la partida NO se toca (§2.3.5).
+
+    RD-08: el Gantt de este mismo pack firma el arrendamiento en el mes 3 y
+    contrata la brigada en el 12 para abrir en el 18, y no había ni una partida
+    de renta ni de nóminas de preapertura en los 18 xlsx. Es la partida que más
+    aperturas mata. Se calcula aquí, con los meses en verde y el importe leído
+    del P&L, y entra en la NECESIDAD TOTAL DE FINANCIACIÓN, que es la cifra que
+    la hoja «Financiación» tiene que cuadrar (RD-20).
+
+    ⚠️ El fallo que esto corrige NO era de diseño sino de LOCALIZACIÓN: la
+    función existía y `_fila()` la buscaba en la columna A, donde «Inversión»
+    sólo tiene el número de orden. Los conceptos están en la B. Devolvía `None`
+    y se salía sin escribir nada, en silencio (RT-03, RC-03).
     """
     ws = wb[hoja_inv]
-    f_fondo = _fila(ws, r'^fondo de maniobra', obligatoria=False)
+    f_fondo = _fila(ws, r'^fondo de maniobra', col=col_etq, obligatoria=False)
     if f_fondo is None:
         return None
-    conf = ((getattr(contenido, 'PLAN', None) or {}).get('fondo_maniobra')
-            if contenido else None) or {}
-    meses = conf.get('meses', 6)
+    conf = ((getattr(contenido, 'PLAN', None) or {}) if contenido else {})
+    meses = (conf.get('fondo_maniobra') or {}).get('meses', 6)
+    prea = conf.get('preapertura') or {}
+    # La preapertura necesita las filas de alquiler y personal del P&L. Los
+    # 5 hermanos tienen otra rejilla y `_pl_mensual_hermanos` no las devuelve:
+    # allí el bloque se queda en el fondo de maniobra, sin inventar filas.
+    con_prea = bool(pl.get('alquiler') and pl.get('personal'))
     # marca propia y DISTINTA del rótulo de la partida: `^fondo de maniobra`
-    # encontraría antes la fila 26 de la tabla y el bloque se escribiría encima.
-    base = base_bloque(ws, r'^como se calcula el fondo de maniobra')
-    motor.val(ws, 'A' + str(base), 'CÓMO SE CALCULA EL FONDO DE MANIOBRA (la '
-              'fila ' + str(f_fondo) + ' de esta tabla)', bold=True)
-    motor.val(ws, 'A' + str(base + 1), 'Meses de colchón (mínimo 6)')
-    motor.val(ws, col_pres + str(base + 1), meses, fmt=FMT_ENT, verde_=True)
-    motor.fijar_formato(ws, col_pres + str(base + 1), FMT_ENT)
-    motor.val(ws, 'A' + str(base + 2),
-              'Coste mensual de estructura (fijos sin amortización + '
-              'variables) (€)')
-    motor.f(ws, col_pres + str(base + 2),
+    # encontraría antes la fila de la tabla y el bloque se escribiría encima.
+    base = base_bloque(ws, r'^preapertura y fondo de maniobra')
+    r = base
+    motor.val(ws, 'A' + str(r), 'PREAPERTURA Y FONDO DE MANIOBRA — lo calcula '
+              'el libro (la fila ' + str(f_fondo) + ' de la tabla sale de '
+              'aquí)', bold=True)
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Coste mensual de estructura (fijos sin '
+              'amortización + variables) (€)')
+    motor.f(ws, col_pres + str(r),
             "='P&L Mensual'!B" + str(pl['tot_fij']) + "+'P&L Mensual'!B"
             + str(pl['tot_var']), fmt=FMT_EUR)
-    motor.val(ws, 'A' + str(base + 3), 'Fondo de maniobra necesario (€)')
-    motor.f(ws, col_pres + str(base + 3),
-            '=IF(' + col_pres + str(base + 2) + '=0,"",' + col_pres
-            + str(base + 2) + '*' + col_pres + str(base + 1) + ')',
-            fmt=FMT_EUR, bold=True)
-    nota(ws, 'A' + str(base + 4),
-         'Los 60.000 / 120.000 / 200.000 € que traía la tabla no cubren ni '
-         'cuatro meses de la nómina más barata que describe el propio libro. '
+    f_estr = r
+
+    f_prea = None
+    if con_prea:
+        r += 1
+        motor.val(ws, 'A' + str(r), 'Alquiler mensual (€)')
+        motor.f(ws, col_pres + str(r), "='P&L Mensual'!B" + str(pl['alquiler']),
+                fmt=FMT_EUR)
+        f_alq = r
+        r += 1
+        motor.val(ws, 'A' + str(r), 'Coste mensual de la brigada (€)')
+        motor.f(ws, col_pres + str(r),
+                "='P&L Mensual'!B" + str(pl['personal'][0])
+                + "+'P&L Mensual'!B" + str(pl['personal'][1]), fmt=FMT_EUR)
+        f_bri = r
+        r += 1
+        motor.val(ws, 'A' + str(r), 'Meses de renta ANTES de abrir (fuera de '
+                  'la carencia que negocies)')
+        motor.val(ws, col_pres + str(r), prea.get('meses_renta', 6),
+                  fmt=FMT_ENT, verde_=True)
+        motor.fijar_formato(ws, col_pres + str(r), FMT_ENT)
+        f_mren = r
+        r += 1
+        motor.val(ws, 'A' + str(r),
+                  'Meses de nómina de la brigada ANTES de abrir')
+        motor.val(ws, col_pres + str(r), prea.get('meses_nomina', 2),
+                  fmt=FMT_ENT, verde_=True)
+        motor.fijar_formato(ws, col_pres + str(r), FMT_ENT)
+        f_mnom = r
+        r += 1
+        motor.val(ws, 'A' + str(r), 'Rentas y suministros de preapertura (€)')
+        motor.f(ws, col_pres + str(r),
+                '=IF(OR(' + col_pres + str(f_alq) + '="",' + col_pres
+                + str(f_mren) + '=""),"",' + col_pres + str(f_alq) + '*'
+                + col_pres + str(f_mren) + ')', fmt=FMT_EUR)
+        f_pren = r
+        r += 1
+        motor.val(ws, 'A' + str(r), 'Nóminas de preapertura (€)')
+        motor.f(ws, col_pres + str(r),
+                '=IF(OR(' + col_pres + str(f_bri) + '="",' + col_pres
+                + str(f_mnom) + '=""),"",' + col_pres + str(f_bri) + '*'
+                + col_pres + str(f_mnom) + ')', fmt=FMT_EUR)
+        f_pnom = r
+        r += 1
+        motor.val(ws, 'A' + str(r), 'TOTAL COSTES DE PREAPERTURA (€)',
+                  bold=True)
+        motor.f(ws, col_pres + str(r),
+                '=IF(COUNT(' + col_pres + str(f_pren) + ':' + col_pres
+                + str(f_pnom) + ')=0,"",SUM(' + col_pres + str(f_pren) + ':'
+                + col_pres + str(f_pnom) + '))', fmt=FMT_EUR, bold=True)
+        f_prea = r
+        r += 1
+        nota(ws, 'A' + str(r),
+             'El cronograma de este mismo pack firma el arrendamiento en el '
+             'mes 3 y contrata la brigada en el 12 para abrir en el 18: hay '
+             'renta y hay nóminas antes de facturar un euro, y el checklist '
+             'legal lo dice («son 6-10 meses de renta antes de facturar»). '
+             'Esta partida no está entre los conceptos de la tabla de arriba: '
+             'se suma aparte, en la necesidad total.')
+    r += 2
+
+    # ---- fondo de maniobra (§2.3.5) --------------------------------------
+    motor.val(ws, 'A' + str(r), 'Meses de colchón (mínimo 6)')
+    motor.val(ws, col_pres + str(r), meses, fmt=FMT_ENT, verde_=True)
+    motor.fijar_formato(ws, col_pres + str(r), FMT_ENT)
+    f_meses = r
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Fondo de maniobra necesario (€)')
+    motor.f(ws, col_pres + str(r),
+            '=IF(OR(' + col_pres + str(f_estr) + '="",' + col_pres
+            + str(f_meses) + '=""),"",' + col_pres + str(f_estr) + '*'
+            + col_pres + str(f_meses) + ')', fmt=FMT_EUR, bold=True)
+    f_fmn = r
+    r += 1
+    nota(ws, 'A' + str(r),
+         'Los 60.000 / 120.000 / 200.000 € que trae calculadora-capex.xlsx no '
+         'cubren ni dos meses de la estructura que describe el propio libro. '
          'Aquí se dimensiona con TUS costes: rellena el P&L Mensual y esta '
-         'fila se calcula sola.')
+         'fila se calcula sola. El coste de personal sale de '
+         'plantilla-turnos-brigada.xlsx (§7-bis.7).')
+    r += 2
+
+    # ---- necesidad total (RD-20) -----------------------------------------
+    f_total_tabla = _fila(ws, r'^total', col=col_etq,
+                          desde=(fila_cab or 4) + 1, hasta=base - 1,
+                          obligatoria=False)
+    f_neces = None
+    if f_total_tabla:
+        motor.val(ws, 'A' + str(r), 'NECESIDAD TOTAL DE FINANCIACIÓN (€) — '
+                  'CAPEX de la tabla + preapertura', bold=True)
+        suma = col_pres + str(f_total_tabla)
+        if f_prea:
+            suma += ('+IF(ISNUMBER(' + col_pres + str(f_prea) + '),'
+                     + col_pres + str(f_prea) + ',0)')
+        motor.f(ws, col_pres + str(r),
+                '=IF(' + col_pres + str(f_total_tabla) + '=0,"",' + suma + ')',
+                fmt=FMT_EUR, bold=True)
+        f_neces = r
+        r += 1
+        nota(ws, 'A' + str(r),
+             'Esta es la cifra que tiene que cuadrar la hoja «' + HOJA_FIN
+             + '»: fondos propios + préstamo + otras fuentes. El fondo de '
+             'maniobra ya está dentro, en la fila ' + str(f_fondo) + ' de la '
+             'tabla.')
+
+    # la partida de la tabla toma el valor calculado
     motor.f(ws, col_pres + str(f_fondo),
-            '=IF(' + col_pres + str(base + 3) + '="","",' + col_pres
-            + str(base + 3) + ')', fmt=FMT_EUR)
-    motor.regla_expresion(ws, col_pres + str(base + 1),
-                          '=AND(ISNUMBER(' + col_pres + str(base + 1) + '),'
-                          + col_pres + str(base + 1) + '<6)')
+            '=IF(' + col_pres + str(f_fmn) + '="","",' + col_pres + str(f_fmn)
+            + ')', fmt=FMT_EUR)
+    motor.regla_expresion(ws, col_pres + str(f_meses),
+                          '=AND(ISNUMBER(' + col_pres + str(f_meses) + '),'
+                          + col_pres + str(f_meses) + '<6)')
     apunta(cambios, fname, ws, 'fondo de maniobra CALCULADO en ' + col_pres
            + str(f_fondo) + ' = estructura mensual × meses (verde en '
-           + col_pres + str(base + 1) + ', mínimo 6) — DOM-01, COM-30')
-    return base
+           + col_pres + str(f_meses) + ', mínimo 6)'
+           + (', preapertura en ' + col_pres + str(f_prea) if f_prea else '')
+           + (', necesidad total en ' + col_pres + str(f_neces)
+              if f_neces else '')
+           + ' — DOM-01, COM-30, RD-08, RD-20')
+    return {'base': base, 'necesidad': f_neces, 'preapertura': f_prea,
+            'fondo': f_fmn}
 
 
-def correspondencia_capex(wb, fname, cambios, contenido, hoja_inv, fila_cab):
+def correspondencia_capex(wb, fname, cambios, contenido, hoja_inv, fila_cab,
+                          col_etq=1):
     """§2.3.6 (TEC-26, COM-32) — los dos CAPEX se reconcilian SIN fusionar.
 
     `calculadora-capex.xlsx` queda como **hoja de rangos de mercado** y
     `plan-financiero!'Inversión'` como **«Mi CAPEX»**. La correspondencia se
     escribe en una columna nueva de la propia hoja, no con `externalLink`: un
     `.xlsx` movido de carpeta daría `#REF!` al cliente (§1.13, §7.1).
+
+    RT-04/RC-04: la columna y la frase de «Instrucciones» que la anuncia ya
+    estaban; las 22 celdas seguían VACÍAS porque `_fila()` buscaba el concepto
+    en la columna A (la del número de orden) en vez de en la B.
     """
     from openpyxl.utils import get_column_letter as gcl
     mapa = ((getattr(contenido, 'PLAN', None) or {}).get('capex_map')
@@ -1292,7 +1588,8 @@ def correspondencia_capex(wb, fname, cambios, contenido, hoja_inv, fila_cab):
     ws.column_dimensions[col].width = 34.0
     puestas = 0
     for patron, categoria in mapa.items():
-        r = _fila(ws, patron, desde=fila_cab + 1, obligatoria=False)
+        r = _fila(ws, patron, col=col_etq, desde=fila_cab + 1,
+                  obligatoria=False)
         if r is None:
             continue
         motor.val(ws, col + str(r), categoria)
@@ -1315,13 +1612,108 @@ RX_INSTR_PROY = re.compile(r'^La pesta.a «Proyecci')
 RX_INSTR_FIN = re.compile(r'^La pesta.a «Financiaci')
 
 
+def _columna_concepto(ws, fila_cab):
+    """Índice (1-based) de la columna cuya cabecera es el CONCEPTO de la fila.
+
+    En «Inversión» la columna A es el `#` y el concepto está en la B: leerlo de
+    la cabecera evita el `col=1` por defecto de `_fila()`, que es lo que dejó
+    §2.3.5 y §2.3.6 sin escribir (RT-03, RT-04, RC-03, RC-04).
+    """
+    rx = re.compile(r'^(concepto|categoria|partida|descripcion)')
+    for c in range(1, ws.max_column + 1):
+        if rx.match(_norm(ws.cell(row=fila_cab, column=c).value)):
+            return c
+    return 1
+
+
+def plan_de_financiacion(wb, fname, cambios, contenido, inv):
+    """RD-20 — «préstamo + fondos propios = necesidad» es lo PRIMERO que cuadra
+    un analista de riesgos, y la hoja no lo planteaba: traía 300.000 € de
+    préstamo precargados contra un CAPEX de 0 € y ni una fila de aportación.
+    """
+    if not inv or HOJA_FIN not in wb.sheetnames:
+        return None
+    ws = wb[HOJA_FIN]
+    conf = (((getattr(contenido, 'PLAN', None) or {}).get('financiacion')
+             if contenido else None) or {})
+    f_imp = _fila(ws, r'^importe del prestamo', obligatoria=False)
+    if f_imp is None:
+        return None
+    base = base_bloque(ws, r'^plan de financiacion')
+    r = base
+    motor.val(ws, 'A' + str(r), 'PLAN DE FINANCIACIÓN — tiene que cuadrar con '
+              'la hoja «Inversión»', bold=True)
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Necesidad total de financiación (€)')
+    motor.f(ws, 'B' + str(r),
+            "=IF('Inversión'!C" + str(inv['necesidad']) + '="","",'
+            + "'Inversión'!C" + str(inv['necesidad']) + ')', fmt=FMT_EUR)
+    f_nec = r
+    nota(ws, 'C' + str(r), 'Sale de la hoja «Inversión» de este mismo libro: '
+                           'los 22 conceptos de CAPEX (con el fondo de '
+                           'maniobra ya calculado) más los costes de '
+                           'preapertura.')
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Fondos propios / aportación de socios (€)')
+    motor.val(ws, 'B' + str(r), conf.get('fondos_propios'), fmt=FMT_EUR,
+              verde_=True)
+    motor.fijar_formato(ws, 'B' + str(r), FMT_EUR)
+    f_fp = r
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Préstamo bancario (€)')
+    motor.f(ws, 'B' + str(r), '=B' + str(f_imp), fmt=FMT_EUR)
+    f_pr = r
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Otras fuentes (subvención, ENISA, socio '
+              'industrial) (€)')
+    motor.val(ws, 'B' + str(r), conf.get('otras_fuentes', 0), fmt=FMT_EUR,
+              verde_=True)
+    motor.fijar_formato(ws, 'B' + str(r), FMT_EUR)
+    f_ot = r
+    r += 1
+    motor.val(ws, 'A' + str(r), 'TOTAL FINANCIACIÓN (€)', bold=True)
+    motor.f(ws, 'B' + str(r),
+            '=IF(COUNT(B' + str(f_fp) + ':B' + str(f_ot) + ')=0,"",SUM(B'
+            + str(f_fp) + ':B' + str(f_ot) + '))', fmt=FMT_EUR, bold=True)
+    f_tot = r
+    r += 1
+    motor.val(ws, 'A' + str(r), 'Diferencia (necesidad − financiación) (€)',
+              bold=True)
+    motor.f(ws, 'B' + str(r),
+            '=IF(OR(B' + str(f_nec) + '="",B' + str(f_tot) + '=""),"",B'
+            + str(f_nec) + '-B' + str(f_tot) + ')', fmt=FMT_EUR, bold=True)
+    motor.permitir_negativo(ws, 'B' + str(r))
+    motor.regla_expresion(ws, 'B' + str(r),
+                          '=AND(ISNUMBER(B' + str(r) + '),B' + str(r) + '<>0)')
+    nota(ws, 'A' + str(r + 1),
+         'Si esta fila no es cero, el plan NO está financiado: sube el '
+         'préstamo o los fondos propios, baja los meses de colchón o recorta '
+         'el CAPEX. Es la primera comprobación que hace un analista de riesgos '
+         'y la que decide si el expediente sigue adelante.')
+    apunta(cambios, fname, ws, 'bloque «Plan de financiación» en las filas '
+           + str(base) + '-' + str(r) + ': necesidad, fondos propios, préstamo, '
+           'otras fuentes y cuadre con semáforo (RD-20)')
+    return base
+
+
 def plan_representante(wb, fname, cambios, contenido, subtitulo):
     pl = _pl_mensual_representante(wb, fname, cambios, contenido)
+    ws_inv = wb['Inversión']
+    fila_cab = motor.fila_cabecera_tabla(ws_inv) or 4
+    # ⚠️ Los conceptos de «Inversión» viven en la columna del rótulo, NO en la
+    # A (que sólo lleva el «#»). Pasarlo mal dejaba mudos el fondo de maniobra
+    # y la tabla de correspondencia, sin un solo aviso (RT-03/RT-04).
+    col_etq = _columna_concepto(ws_inv, fila_cab)
+    _precargar_inversion(ws_inv, fname, cambios, contenido, 'C', col_etq,
+                         fila_cab)
     fin = hoja_financiacion(wb, fname, cambios, contenido, subtitulo)
     hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin)
-    fondo_de_maniobra(wb, fname, cambios, contenido, pl, 'Inversión', 'C')
-    correspondencia_capex(wb, fname, cambios, contenido, 'Inversión', 4)
-    _desviacion_sin_dato(wb['Inversión'], fname, cambios, 'C', 'D', 'E')
+    inv = fondo_de_maniobra(wb, fname, cambios, contenido, pl, 'Inversión',
+                            'C', col_etq=col_etq, fila_cab=fila_cab)
+    correspondencia_capex(wb, fname, cambios, contenido, 'Inversión', fila_cab,
+                          col_etq=col_etq)
+    _desviacion_sin_dato(ws_inv, fname, cambios, 'C', 'D', 'E')
+    plan_de_financiacion(wb, fname, cambios, contenido, inv)
     instruccion(wb, 'La pestaña «' + HOJA_PROY + '» ya existe: el Año 1 sale '
                     'del P&L Mensual por referencia y los años 2 y 3 de los '
                     'dos porcentajes verdes.', RX_INSTR_PROY)
@@ -1357,9 +1749,19 @@ def _desviacion_sin_dato(ws, fname, cambios, col_prev, col_real, col_desv):
                 + ',""))', fmt=FMT_PCT)
         tocadas += 1
     if tocadas:
+        # RT-20 · §1.6 nombra «la desviación de CAPEX» entre los sitios donde
+        # va el semáforo, y era la ÚNICA columna de desviación del pack sin
+        # una sola regla de formato condicional.
+        primera = fila_cab + 1
+        ultima = max(r for r in range(primera, ws.max_row + 1)
+                     if ws[col_desv + str(r)].data_type == 'f')
+        rango = col_desv + str(primera) + ':' + col_desv + str(ultima)
+        motor.semaforo_isnumber(ws, rango, '$' + col_desv + str(primera),
+                                operador='>', umbral='0.1')
         apunta(cambios, fname, ws, str(tocadas) + ' celdas de desviación que '
                'ya no dicen «0,0 %» ni una diferencia falsa con el libro en '
-               'blanco (§7-bis.13)')
+               'blanco (§7-bis.13) + semáforo ISNUMBER sobre ' + rango
+               + ' al 10 % (§1.6, RT-20)')
     return tocadas
 
 
@@ -1369,7 +1771,10 @@ def plan_hermanos(wb, fname, cambios, contenido, subtitulo):
     hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin)
     ws_inv = wb['Inversión']
     f_tot = _fila(ws_inv, r'^total inversion', col=2, obligatoria=False)
-    fondo_de_maniobra(wb, fname, cambios, contenido, pl, 'Inversión', 'C')
+    fila_cab_h = motor.fila_cabecera_tabla(ws_inv) or 4
+    fondo_de_maniobra(wb, fname, cambios, contenido, pl, 'Inversión', 'C',
+                      col_etq=_columna_concepto(ws_inv, fila_cab_h),
+                      fila_cab=fila_cab_h)
     _diferencia_hermanos(ws_inv, fname, cambios)
     instruccion(wb, 'La pestaña «' + HOJA_PROY + '» ya existe: el Año 1 sale '
                     'del P&L Mensual por referencia.', RX_INSTR_PROY)
@@ -1543,15 +1948,16 @@ def variante_cash(wb, fname=''):
 
 def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
                         contenido):
-    """Las tres filas de IVA del modelo 303 + la cuota del préstamo (§2.4).
+    """Las tres filas de IVA del modelo 303 + la cuota del préstamo (§2.4), la
+    tesorería de la apertura (RD-07) y el IVA de la bebida alcohólica (RD-14).
 
-    El cash flow va **con IVA porque es caja**, y el IVA soportado del CAPEX
-    (105-189 k€ sobre una inversión de 500-900 k€) es tesorería adelantada que
-    hoy no aparece por ningún lado. Se monta como una CAPA sobre el flujo de
-    la fila del flujo neto, sin insertar filas: `openpyxl.insert_rows` no
+    El cash flow va **con IVA porque es caja**, y el IVA soportado del CAPEX es
+    tesorería adelantada que no aparecía por ningún lado. Se monta como una
+    CAPA sobre la fila del flujo neto, sin insertar filas: `insert_rows` no
     reescribe las fórmulas y partiría los `SUM` horizontales que ya existen.
     """
     base = base_bloque(ws, r'^iva \(modelo 303\) y servicio de la deuda$')
+    conf = ((getattr(contenido, 'CASH', None) or {}) if contenido else {})
     motor.val(ws, 'A' + str(base),
               'IVA (MODELO 303) Y SERVICIO DE LA DEUDA', bold=True)
     celda_iva = motor.escribir_parametro(ws, base + 1, 'A', 'B',
@@ -1560,47 +1966,75 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
     # ABSOLUTA: la misma celda de tipo alimenta las doce columnas de mes, y una
     # referencia relativa se rompería en cuanto el cliente arrastrase la fila.
     celda_iva = '$' + celda_iva[0] + '$' + celda_iva[1:]
-    nota(ws, 'A' + str(base + 2),
-         motor.PARAMETROS['iva_restauracion']['nota'] + ' Las filas de arriba '
-         'se escriben SIN IVA, igual que el P&L; esta capa lo añade porque el '
-         'cash flow es caja.')
+    # RD-14 · el 10 % único sobre TODA la facturación deja corta la liquidación
+    # del 303: la bodega de un gastronómico con maridaje es una parte grande de
+    # la venta y va al 21 %. El propio libro lo decía en la nota de al lado y
+    # la fórmula no lo hacía.
+    motor.val(ws, 'A' + str(base + 2),
+              'Tipo de IVA de la bebida alcohólica (%)')
+    motor.val(ws, 'B' + str(base + 2), conf.get('iva_bebida', 0.21),
+              fmt=FMT_PCT, verde_=True)
+    motor.fijar_formato(ws, 'B' + str(base + 2), FMT_PCT)
+    celda_iva_beb = '$B$' + str(base + 2)
+    nota(ws, 'A' + str(base + 3),
+         '10 % general de restauración y 21 % en bebidas alcohólicas (art. 91 '
+         'de la Ley del IVA). Las filas de arriba se escriben SIN IVA, igual '
+         'que el P&L; esta capa lo añade porque el cash flow es caja.')
     filas = {
-        'repercutido': (base + 3, '(+) IVA repercutido (cobrado con las '
+        'repercutido': (base + 4, '(+) IVA repercutido (cobrado con las '
                                   'ventas)'),
-        'soportado': (base + 4, '(-) IVA soportado (compras y gastos con IVA; '
+        'soportado': (base + 5, '(-) IVA soportado (compras y gastos con IVA; '
                                 'las nóminas y la Seguridad Social no llevan)'),
-        'liquidacion': (base + 5, '(-) Liquidación de IVA (modelo 303) — '
+        'liquidacion': (base + 6, '(-) Liquidación de IVA (modelo 303) — '
                                   'trimestre natural, se ingresa del 1 al 20 '
                                   'del mes siguiente'),
-        'cuota': (base + 6, '(-) Cuota del préstamo (capital + intereses) — la '
+        'cuota': (base + 7, '(-) Cuota del préstamo (capital + intereses) — la '
                             'calcula plan-financiero-3-anos.xlsx, hoja «'
                             + HOJA_FIN + '»'),
-        'neto': (base + 7, ET_NETO_IVA),
-        'acum': (base + 8, ET_ACUM_IVA),
-        'q4': (base + 9, 'IVA del 4.º trimestre — se liquida en enero del año '
-                         'siguiente (no es caja de este ejercicio)'),
+        'neto': (base + 8, ET_NETO_IVA),
+        'acum': (base + 9, ET_ACUM_IVA),
+        'q4': (base + 10, 'IVA del 4.º trimestre — se liquida en enero del año '
+                          'siguiente (no es caja de este ejercicio)'),
     }
     for clave, (r, etiqueta) in filas.items():
         motor.val(ws, 'A' + str(r), etiqueta,
                   bold=clave in ('neto', 'acum'))
-    conf = ((getattr(contenido, 'CASH', None) or {}) if contenido else {})
-    # La cuota NO se precarga aunque el módulo de contenido la traiga: las 7
-    # hojas de cash flow de la familia llegan VACÍAS, y dejar dentro un único
-    # número —la cuota— haría que el libro en blanco enseñara un flujo
-    # acumulado de −42.336 € que no sale de ningún supuesto del cliente. La
-    # etiqueta de la fila dice de dónde copiarla.
-    cuota = None
-    r_cuota_ejemplo = conf.get('cuota_mensual')
+    # RC-07/RD-21 · la nota afirmaba que el break-even se lee CON la cuota del
+    # préstamo y la fila de la cuota estaba vacía en los 12 meses. Y estos 12
+    # meses son el AÑO 1, que con el préstamo de ejemplo es el año de CARENCIA:
+    # se pagan sólo intereses, no la cuota completa.
+    cuota = conf.get('cuota_carencia') if conf.get('anio') == 1 \
+        else conf.get('cuota_mensual')
     f_rep, f_sop = filas['repercutido'][0], filas['soportado'][0]
     f_liq, f_cuo = filas['liquidacion'][0], filas['cuota'][0]
     f_net, f_acu = filas['neto'][0], filas['acum'][0]
+    f_beb = _fila(ws, r'^bebidas y vinos|^bebidas$|^vinos y bebidas',
+                  hasta=fila_neto['ingresos'], obligatoria=False)
+    mes_tipo = conf.get('mes_tipo') or {}
+    iva_conf = mes_tipo.get('iva_soportado') or {}
+    f_mp = _fila(ws, r'^materia prima', obligatoria=False)
 
     for i, col in enumerate(meses):
-        motor.f(ws, col + str(f_rep),
-                '=' + col + str(fila_neto['ingresos']) + '*' + celda_iva,
-                fmt=FMT_EUR)
-        motor.val(ws, col + str(f_sop), None, fmt=FMT_EUR)
-        motor.verde(ws, col + str(f_sop))
+        if f_beb:
+            rep = ('=(' + col + str(fila_neto['ingresos']) + '-IF(ISNUMBER('
+                   + col + str(f_beb) + '),' + col + str(f_beb) + ',0))*'
+                   + celda_iva + '+IF(ISNUMBER(' + col + str(f_beb) + '),'
+                   + col + str(f_beb) + ',0)*' + celda_iva_beb)
+        else:
+            rep = '=' + col + str(fila_neto['ingresos']) + '*' + celda_iva
+        motor.f(ws, col + str(f_rep), rep, fmt=FMT_EUR)
+        # IVA soportado: el 10 % de la materia prima y el 21 % de los gastos
+        # con IVA. Si el módulo de contenido no dice cuáles son, queda en
+        # verde para que lo escriba el cliente (no se inventa una base).
+        if f_mp and iva_conf.get('fijos_con_iva') is not None:
+            motor.f(ws, col + str(f_sop),
+                    '=IF(ISNUMBER(' + col + str(f_mp) + '),' + col + str(f_mp)
+                    + '*' + str(iva_conf.get('variables', 0.10)) + ',0)+'
+                    + str(iva_conf['fijos_con_iva']) + '*'
+                    + str(iva_conf.get('tipo_fijos', 0.21)), fmt=FMT_EUR)
+        else:
+            motor.val(ws, col + str(f_sop), None, fmt=FMT_EUR)
+            motor.verde(ws, col + str(f_sop))
         motor.val(ws, col + str(f_cuo), cuota, fmt=FMT_EUR)
         motor.verde(ws, col + str(f_cuo))
         # liquidación trimestral: abril, julio y octubre liquidan el trimestre
@@ -1634,67 +2068,139 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
             motor.f(ws, total + str(r),
                     '=SUM(' + primero + str(r) + ':' + ultimo + str(r) + ')',
                     fmt=FMT_EUR)
+    motor.permitir_negativo(ws, primero + str(f_acu) + ':' + ultimo
+                            + str(f_acu))
     motor.semaforo_isnumber(ws, primero + str(f_acu) + ':' + ultimo
                             + str(f_acu), primero + str(f_acu))
-    apunta(cambios, fname, ws, 'capa de IVA (303) y cuota del préstamo en las '
-           'filas ' + str(f_rep) + '-' + str(filas['q4'][0])
-           + '; flujo neto y acumulado CON IVA y deuda en ' + str(f_net) + '/'
-           + str(f_acu) + ' (DOM-03, DOM-22, §2.4)')
-    if r_cuota_ejemplo:
-        nota(ws, 'A' + str(filas['q4'][0] + 1),
-             'Con el préstamo de ejemplo de plan-financiero-3-anos.xlsx la '
-             'cuota mensual es ' + ('%.2f' % r_cuota_ejemplo).replace('.', ',')
-             + motor.NARROW + '€; cópiala aquí cuando cierres tu financiación.')
+    # RT-21/RC-30 · la cuota NO se escribe como cifra dentro de una nota: en
+    # cuanto el cliente cambie importe, plazo, tipo o carencia —que es lo que
+    # la hoja le pide hacer— la nota seguiría diciendo la vieja.
+    nota(ws, 'A' + str(filas['q4'][0] + 1),
+         'La cuota la calcula plan-financiero-3-anos.xlsx, hoja «' + HOJA_FIN
+         + '»: durante la carencia se pagan SÓLO intereses (su celda «Cuota '
+         'mensual DURANTE la carencia») y después la cuota completa (su celda '
+         '«Cuota MENSUAL tras la carencia»). Estos 12 meses son el AÑO 1: con '
+         'el préstamo de ejemplo caen dentro de la carencia. Copia ahí el '
+         'valor que te corresponda.')
+
+    # ---- RD-07 · tesorería de la apertura --------------------------------
+    ap = conf.get('apertura') or {}
+    r = filas['q4'][0] + 2
+    motor.val(ws, 'A' + str(r), 'TESORERÍA DE LA APERTURA', bold=True)
+    f_saldo = r + 1
+    motor.val(ws, 'A' + str(f_saldo), 'Saldo inicial de tesorería (€) — sólo '
+              'el mes 1')
+    motor.val(ws, primero + str(f_saldo), ap.get('saldo_inicial'), fmt=FMT_EUR,
+              verde_=True)
+    motor.fijar_formato(ws, primero + str(f_saldo), FMT_EUR)
+    f_capex = r + 2
+    motor.val(ws, 'A' + str(f_capex), '(-) Desembolso de la inversión (CAPEX) '
+              'pagado dentro de estos 12 meses (€)')
+    f_ivacap = r + 3
+    motor.val(ws, 'A' + str(f_ivacap), '(-) IVA soportado de la inversión '
+              '(recuperable en el 303, con su plazo) (€)')
+    f_tes = r + 4
+    motor.val(ws, 'A' + str(f_tes), 'SALDO DE TESORERÍA (fin de mes)',
+              bold=True)
+    for i, col in enumerate(meses):
+        for f_ in (f_capex, f_ivacap):
+            motor.val(ws, col + str(f_), ap.get('desembolso_capex')
+                      if f_ == f_capex else ap.get('iva_capex'), fmt=FMT_EUR)
+            motor.verde(ws, col + str(f_))
+            motor.fijar_formato(ws, col + str(f_), FMT_EUR)
+        arranque = (primero + str(f_saldo)) if i == 0 \
+            else (meses[i - 1] + str(f_tes))
+        motor.f(ws, col + str(f_tes),
+                '=IF(ISNUMBER(' + arranque + '),' + arranque + ',0)+' + col
+                + str(f_net) + '-IF(ISNUMBER(' + col + str(f_capex) + '),'
+                + col + str(f_capex) + ',0)-IF(ISNUMBER(' + col + str(f_ivacap)
+                + '),' + col + str(f_ivacap) + ',0)', fmt=FMT_EUR, bold=True)
+    motor.permitir_negativo(ws, primero + str(f_tes) + ':' + ultimo
+                            + str(f_tes))
+    motor.semaforo_isnumber(ws, primero + str(f_tes) + ':' + ultimo
+                            + str(f_tes), primero + str(f_tes))
+    nota(ws, 'A' + str(f_tes + 1),
+         'El «flujo acumulado» de arriba arranca en cero: mide la EXPLOTACIÓN. '
+         'Esta fila mide la CAJA, y por eso parte del saldo con el que abres '
+         '—el fondo de maniobra que dimensiona plan-financiero-3-anos.xlsx, '
+         'hoja «Inversión»— y resta la parte de la inversión y de su IVA que '
+         'pagues dentro de estos doce meses. Un cash flow de apertura sin '
+         'saldo inicial dice que el negocio va bien el primer mes en que gana '
+         'dinero, no cuando ha recuperado lo invertido.')
+    apunta(cambios, fname, ws, 'capa de IVA (303, con el 21 % de la bebida '
+           'alcohólica), cuota del préstamo y tesorería de la apertura en las '
+           'filas ' + str(f_rep) + '-' + str(f_tes) + ' (DOM-03, DOM-22, §2.4, '
+           'RD-07, RD-14, RD-21)')
     return {'neto': f_net, 'acum': f_acu, 'liquidacion': f_liq,
-            'cuota': f_cuo, 'iva': celda_iva}
+            'cuota': f_cuo, 'iva': celda_iva, 'tesoreria': f_tes,
+            'saldo': f_saldo}
 
 
 def _bloque_break_even(ws, capa, meses, cambios, fname, contenido):
-    """Break-even en MESES y en € (TEC-03, DOM-09, COM-06).
+    """Break-even en MESES y en € (TEC-03, DOM-09, COM-06) — ahora con la cuota.
 
-    El mes se lee sobre el acumulado **con IVA y deuda**: un break-even sin
-    cuota de préstamo es un break-even falso (DOM-22). `MATCH(TRUE,INDEX(...))`
-    está verificado con pycel en esta versión (SPEC, cabecera).
+    RD-05: el umbral y los cubiertos/día se calculaban SÓLO con los costes
+    fijos de explotación, justo debajo de una nota que promete lo contrario
+    («un punto de equilibrio sin la cuota del préstamo es un punto de
+    equilibrio falso»). Se publican las DOS líneas, que es lo que un consultor
+    lleva al banco: el umbral de explotación y el umbral con servicio de deuda.
     """
-    conf = ((getattr(contenido, 'CASH', None) or {}).get('break_even')
-            if contenido else None) or {}
+    conf = ((getattr(contenido, 'CASH', None) or {}) if contenido else {})
+    be = conf.get('break_even') or {}
+    cuota = (conf.get('cuota_carencia') if conf.get('anio') == 1
+             else conf.get('cuota_mensual'))
     base = base_bloque(ws, r'^break-even$')
     motor.val(ws, 'A' + str(base), 'BREAK-EVEN', bold=True)
-    campos = ((base + 1, 'Costes fijos mensuales (€)', conf.get('costes_fijos'),
-               FMT_EUR, True),
-              (base + 2, 'Margen de contribución (%)',
-               conf.get('margen_contribucion'), FMT_PCT, True),
-              (base + 3, 'Umbral de ventas mensual (€)', None, FMT_EUR, False),
-              (base + 4, 'Ticket medio (€)', conf.get('ticket_medio'),
-               FMT_EUR, True),
-              (base + 5, 'Días abierto/mes', conf.get('dias_mes'), FMT_ENT,
-               True),
-              (base + 6, 'Cubiertos/día necesarios', None, FMT_ENT, False),
-              (base + 7, ET_BE_MES, None, 'General', False))
-    for fila, etiqueta, valor, fmt, editable in campos:
+    f_fij, f_mc = base + 1, base + 2
+    f_umb, f_cuo, f_umbd = base + 3, base + 4, base + 5
+    f_tk, f_dias, f_cub, f_mes = base + 6, base + 7, base + 8, base + 9
+    entradas = ((f_fij, 'Costes fijos mensuales, sin amortización (€)',
+                 be.get('costes_fijos'), FMT_EUR),
+                (f_mc, 'Margen de contribución (%)',
+                 be.get('margen_contribucion'), FMT_PCT),
+                (f_cuo, 'Cuota mensual del préstamo (€)', cuota, FMT_EUR),
+                (f_tk, 'Ticket medio (€)', be.get('ticket_medio'), FMT_EUR),
+                (f_dias, 'Días abierto/mes', be.get('dias_mes'), FMT_ENT))
+    for fila, etiqueta, valor, fmt in entradas:
         motor.val(ws, 'A' + str(fila), etiqueta)
-        if editable:
-            motor.val(ws, 'B' + str(fila), valor, fmt=fmt, verde_=True)
-            motor.fijar_formato(ws, 'B' + str(fila), fmt)
-    motor.f(ws, 'B' + str(base + 3),
-            '=IFERROR(B' + str(base + 1) + '/B' + str(base + 2) + ',"")',
-            fmt=FMT_EUR, bold=True)
-    motor.f(ws, 'B' + str(base + 6),
-            '=IFERROR(B' + str(base + 3) + '/(B' + str(base + 4) + '*B'
-            + str(base + 5) + '),"")', fmt=FMT_ENT, bold=True)
-    motor.fijar_formato(ws, 'B' + str(base + 3), FMT_EUR)
-    motor.fijar_formato(ws, 'B' + str(base + 6), FMT_ENT)
-    motor.f(ws, 'B' + str(base + 7),
+        motor.val(ws, 'B' + str(fila), valor, fmt=fmt, verde_=True)
+        motor.fijar_formato(ws, 'B' + str(fila), fmt)
+    motor.val(ws, 'A' + str(f_umb),
+              'Umbral de ventas mensual — sólo explotación (€)')
+    motor.f(ws, 'B' + str(f_umb),
+            '=IFERROR(B' + str(f_fij) + '/B' + str(f_mc) + ',"")', fmt=FMT_EUR,
+            bold=True)
+    motor.fijar_formato(ws, 'B' + str(f_umb), FMT_EUR)
+    motor.val(ws, 'A' + str(f_umbd),
+              'Umbral de ventas mensual CON el servicio de la deuda (€)')
+    motor.f(ws, 'B' + str(f_umbd),
+            '=IFERROR((B' + str(f_fij) + '+IF(ISNUMBER(B' + str(f_cuo) + '),B'
+            + str(f_cuo) + ',0))/B' + str(f_mc) + ',"")', fmt=FMT_EUR,
+            bold=True)
+    motor.fijar_formato(ws, 'B' + str(f_umbd), FMT_EUR)
+    motor.val(ws, 'A' + str(f_cub),
+              'Cubiertos/día necesarios (con el servicio de la deuda)')
+    motor.f(ws, 'B' + str(f_cub),
+            '=IFERROR(B' + str(f_umbd) + '/(B' + str(f_tk) + '*B'
+            + str(f_dias) + '),"")', fmt=FMT_ENT, bold=True)
+    motor.fijar_formato(ws, 'B' + str(f_cub), FMT_ENT)
+    motor.val(ws, 'A' + str(f_mes), ET_BE_MES)
+    motor.f(ws, 'B' + str(f_mes),
             '=IFERROR(MATCH(TRUE,INDEX(' + meses[0] + str(capa['acum']) + ':'
             + meses[-1] + str(capa['acum']) + '>0,0),0),"No alcanzado")',
             bold=True)
-    nota(ws, 'A' + str(base + 8),
+    motor.fijar_formato(ws, 'B' + str(f_mes), 'General')
+    nota(ws, 'A' + str(f_mes + 1),
          'El mes de break-even se lee sobre el FLUJO ACUMULADO CON IVA Y '
          'DEUDA: un punto de equilibrio sin la cuota del préstamo es un punto '
          'de equilibrio falso. Si el acumulado nunca cruza a positivo, la '
-         'celda dice «No alcanzado» — no un número.')
+         'celda dice «No alcanzado» — no un número. Los dos umbrales de arriba '
+         'son la misma idea en euros: el de explotación paga la estructura; el '
+         'de la deuda paga además al banco, y es el que hay que superar para '
+         'no comerse el fondo de maniobra.')
     apunta(cambios, fname, ws, 'break-even en meses y en € en las filas '
-           + str(base + 1) + '-' + str(base + 7) + ' (TEC-03, DOM-09, COM-06)')
+           + str(f_fij) + '-' + str(f_mes) + ', con umbral de explotación Y '
+           'umbral con servicio de deuda (TEC-03, DOM-09, COM-06, RD-05)')
     return base
 
 

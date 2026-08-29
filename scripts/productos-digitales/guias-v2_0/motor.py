@@ -112,13 +112,21 @@ RX_DESPROTEGER = re.compile(r'^Para editar (la estructura|una celda)')
 NOTA_VERDES = 'Celdas verdes = campos editables'
 
 # §1.5(b) — la base de las cifras, dicha en voz alta en cada libro.
-NOTA_IVA = ('Todas las cifras van SIN IVA, salvo el cash flow, que va CON IVA '
-            'porque es caja.')
+NOTA_IVA = ('Todas las cifras van SIN IVA. En el cash flow también se '
+            'escriben sin IVA: su capa de IVA (modelo 303) lo añade aparte, '
+            'porque la tesorería es caja.')
 #: En la propia hoja de tesorería la frase general se lee al revés («todas van
 #: sin IVA, salvo el cash flow» escrito DENTRO del cash flow), así que ahí va la
 #: variante que dice lo que aplica a esa hoja.
-NOTA_IVA_CAJA = ('Las cifras de esta hoja van CON IVA: es caja. En el resto del '
-                 'producto van SIN IVA.')
+#: RT-06/RD-15 · la primera redacción ordenaba teclear los importes CON IVA
+#: («Las cifras de esta hoja van CON IVA: es caja») mientras la nota del bloque
+#: 303, tres filas más abajo, decía lo contrario. Quien hiciera caso de la
+#: cabecera tecleaba importes con IVA y la capa se lo volvía a sumar: el IVA
+#: repercutido contado dos veces y el break-even adelantado. Una sola frase, y
+#: la que describe lo que el libro hace de verdad.
+NOTA_IVA_CAJA = ('Escribe los ingresos y los gastos SIN IVA, igual que en el '
+                 'P&L: la capa de IVA (modelo 303) de más abajo lo añade, '
+                 'porque el cash flow es caja.')
 RX_NOTA_IVA = re.compile(r'^(Todas las cifras|Las cifras de esta hoja)')
 RX_HOJA_CAJA = re.compile(r'cash\s*flow|flujo de caja|tesorer', re.I)
 
@@ -687,6 +695,25 @@ def dv_fecha(ws, coords):
     return dv
 
 
+def dv_propia(ws, rango, minimo, maximo, titulo, mensaje, prompt=None):
+    """Registra una DV numérica PROPIA para un rango (RT-14).
+
+    `validaciones()` clasifica las celdas verdes por formato y sólo distingue
+    «importe», «porcentaje» y «admite negativo». Las dos entradas que gobiernan
+    la proyección a 3 años caían en el último cajón y acababan con un
+    `decimal >= -1.000.000.000.000`, que no valida nada: teclear «8» pensando
+    en 8 % multiplicaba los ingresos del año 2 por nueve sin un solo aviso.
+    """
+    reg = getattr(ws, '_g_dv_prop', None)
+    if reg is None:
+        reg = {}
+        ws._g_dv_prop = reg
+    for fila in _celdas(ws, rango):
+        for cel in fila:
+            reg[cel.coordinate] = (minimo, maximo, titulo, mensaje, prompt)
+    return rango
+
+
 def validaciones(ws, informe=None, fname=''):
     """DV numérica sobre las celdas verdes, clasificadas por FORMATO de número.
 
@@ -698,6 +725,8 @@ def validaciones(ws, informe=None, fname=''):
         if dv.type in ('list', 'date'):
             con_lista |= _coords_de_dv(ws, dv)
     libres = set(getattr(ws, '_g_negativos', set()))
+    propias = getattr(ws, '_g_dv_prop', {})
+    grupos_prop = {}
     importes, porcentajes, negativos = [], [], []
     for row in ws.iter_rows():
         for c in row:
@@ -708,12 +737,18 @@ def validaciones(ws, informe=None, fname=''):
             fmt = c.number_format or ''
             if 'yy' in fmt or 'YY' in fmt:
                 continue
-            if c.coordinate in libres:
+            if c.coordinate in propias:
+                grupos_prop.setdefault(propias[c.coordinate], []).append(
+                    c.coordinate)
+            elif c.coordinate in libres:
                 negativos.append(c.coordinate)
             elif '%' in fmt:
                 porcentajes.append(c.coordinate)
             elif '€' in fmt or fmt.startswith('#,##0'):
                 importes.append(c.coordinate)
+    for (mini, maxi, titulo, mensaje, prompt), coords in grupos_prop.items():
+        dv_numerica(ws, coords, minimo=mini, maximo=maxi, titulo=titulo,
+                    mensaje=mensaje, prompt=prompt)
     if importes:
         dv_numerica(ws, importes, minimo=0)
     if porcentajes:
@@ -730,11 +765,14 @@ def validaciones(ws, informe=None, fname=''):
         dv_numerica(ws, negativos, minimo=-1000000000000,
                     titulo='Importe',
                     mensaje='Escribe un número (puede ser negativo).')
-    if informe is not None and (importes or porcentajes or negativos):
+    if informe is not None and (importes or porcentajes or negativos
+                                or grupos_prop):
         informe.append(fname + ':' + ws.title + ': DV en '
                        + str(len(importes)) + ' importes, '
-                       + str(len(porcentajes)) + ' porcentajes y '
-                       + str(len(negativos)) + ' que admiten negativo')
+                       + str(len(porcentajes)) + ' porcentajes, '
+                       + str(len(negativos)) + ' que admiten negativo y '
+                       + str(sum(len(v) for v in grupos_prop.values()))
+                       + ' con rango propio')
     return len(importes), len(porcentajes)
 
 
