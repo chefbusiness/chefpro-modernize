@@ -241,13 +241,14 @@ SUPUESTOS = {
         'cobra en tarjeta/contactless la mayoría de los tickets',
         'parametrizado (el fichero v1.1 no lo contemplaba)'),
     'alquiler_mes': (
-        None, None, 300, None,
+        None, None, 400, None,
         'ESTE NEGOCIO NO TIENE LOCAL: esta celda se reutiliza para el coste '
         'mensual de aparcamiento/nave donde el vehículo pernocta y se '
         'prepara cada día (distinto del «Generador» del fichero v1.1, que '
-        'va a Suministros, ver esa celda). 300 €/mes es el precio de una '
-        'plaza cubierta para vehículo comercial grande en una ciudad media '
-        'española: pide presupuesto de tu zona antes de firmar',
+        'va a Suministros, ver esa celda). 400 €/mes es el precio de una '
+        'plaza cubierta con toma de agua y desagüe para vehículo comercial '
+        'grande en una ciudad media española: pide presupuesto de tu zona '
+        'antes de firmar',
         'parametrizado (concepto nuevo: el fichero v1.1 no tenía ninguna '
         'fila de aparcamiento/base)'),
     'fianza_meses': (
@@ -297,7 +298,10 @@ SUPUESTOS = {
         'es mayor que el que dotaba el fichero original — NUEVO-01 — y '
         'porque se añaden el IVA soportado sobre la inversión y los '
         'imprevistos de obra por fórmula, que el fichero original no '
-        'sumaba a la necesidad de caja)'),
+        'sumaba a la necesidad de caja)',
+        'parametrizado (ajustado desde un primer intento más bajo tras '
+        'comprobar la necesidad de caja real del caso base — mismo gotcha '
+        'que tapas-bar y cafetería)'),
     'tipo_prestamo': (
         None, None, 0.065, None,
         'Tipo nominal anual; un préstamo de menor importe y sin garantía '
@@ -489,6 +493,27 @@ INVERSION = {
 INVERSION_EXTRA = ()
 
 # ==========================================================================
+# §2.3 (COSTES FIJOS del P&L) — la MISMA lógica de `INVERSION`, pero sobre
+# las filas fijas que ya trae `'PyG 3 Anos'`. Hallazgo propio de este
+# hermano: «Generador (combustible/alquiler)» (2.400 €/año) es el MISMO
+# concepto que ahora vive en `Supuestos!suministros_mes` (ver esa celda) —
+# a diferencia de «Seguro vehiculo + RC», que el motor ya excluye solo por
+# canon, «generador» no coincide con ningún patrón reservado y quedaría
+# como fila preservada ADEMÁS del `cf_suministros` hardcodeado, contando el
+# mismo gasto dos veces. Se suprime aquí explícitamente.
+# ==========================================================================
+FIJOS = {
+    'generador (combustible/alquiler)': (
+        'suprimir',
+        'Doble conteo propio de este hermano: es el MISMO gasto que ahora '
+        "vive en Supuestos!suministros_mes (200 €/mes = 2.400 €/año, "
+        "redirigido desde esta misma fila de 'PyG 3 Anos'!A25 — §1.2, "
+        'ningún literal sobrevive dentro de una fórmula ni de un rótulo '
+        'aparte). Dejarla también aquí sumaría el generador dos veces al '
+        'total de costes fijos'),
+}
+
+# ==========================================================================
 # §2.3 — costes fijos que el plan v1.1 no tenía y el checklist sí obliga
 # (TEC-18, FAMILIA(5): el mismo defecto que en los otros cuatro hermanos)
 # (rótulo, importe, nota, fuente)
@@ -502,7 +527,7 @@ FIJOS_EXTRA = (
      'parametrizado (TEC-18)'),
     ('Desinsectación, desratización y desinfección (DDD)', 400,
      'Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que '
-     "el checklist ya exige ('F4 - Personal'!B8: «Formacion APPCC movil»)",
+     "el checklist ya exige ('F4 - Personal'!B8: «Formación APPCC movil»)",
      'parametrizado (TEC-18)'),
     ('Prevención de riesgos laborales y vigilancia de la salud', 350,
      'El plan de prevención es obligatorio (checklist '
@@ -662,7 +687,7 @@ CHECKLIST = {
          'El Registro General Sanitario estatal NO aplica al minorista que '
          'sirve al consumidor final (art. 2.2 del RD 191/2011): el que te '
          'toca es el autonómico, el mismo que ya pide '
-         "'F2 - Vehiculo'!B10 «Autorizacion sanitaria vehiculo»"),
+         "'F2 - Vehiculo'!B10 «Autorización sanitaria vehiculo»"),
         # DOM-25 (FAMILIA) — cuota de autónomo parametrizada, con nota de
         # año. Medido tras el §1 transversal: «autónomos» y «€» ya puestos
         # por el motor.
@@ -716,7 +741,7 @@ CHECKLIST = {
          'El RD 1007/2023 y su calendario escalonado obligan a que el '
          'software de facturación sea verificable. Consulta la fecha que '
          "te aplica antes de comprar el «TPV movil + datafono» que ya "
-         "presupuesta 'Inversion Inicial'!B16"),
+         "presupuesta 'Inversión Inicial'!B16"),
         ('F2', 'Legal',
          'Hojas de reclamaciones oficiales y su cartel anunciador',
          'Titular', '1 día',
@@ -753,7 +778,7 @@ CHECKLIST = {
         ('F5', 'RGPD',
          'Cláusula informativa y consentimiento en el programa de '
          'fidelización con QR', 'Titular', 'Antes de abrir',
-         "El propio checklist promete un «Programa fidelizacion movil "
+         "El propio checklist promete un «Programa fidelización movil "
          "(QR)» ('F5 - Marketing'!B14) que recoge datos de contacto: "
          'necesita su información previa'),
     ],
@@ -832,7 +857,10 @@ RECALIBRADO = (
      'responden al mismo tipo de gasto (desplazamiento y colchón '
      'operativo)'),
     ('Generador (combustible/alquiler)', '2.400 €/año como fila fija '
-     'suelta', '2.400 €/año en Supuestos!suministros_mes (200 €/mes)',
+     'suelta EN PARALELO a lo que iba a ser Suministros (doble conteo si '
+     'no se suprime; hallazgo propio de este hermano)',
+     '2.400 €/año en Supuestos!suministros_mes (200 €/mes), fila original '
+     'suprimida vía FIJOS',
      '§1.2: ningún literal vive dentro de un rótulo aparte cuando puede '
      'vivir en una celda de Supuestos'),
     ('Catering/eventos privados', '10.000 € de ingresos sin food cost '

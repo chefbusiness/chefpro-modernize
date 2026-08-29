@@ -556,3 +556,14 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   (el default `a` da diff 0); `BONUS-01!D5:H7` del pack cambian cada día (`date.today()` en `grupo_c.py:1119`, preexistente); todo re-APPLY reescribe los
   bytes de los 18/21 xlsx aunque sólo cambien 2-5 celdas (openpyxl), así que el md5 de producción cambia en cada pasada. Quedan con la cita vieja
   `kit-tareas-sushi-bar/03!A2` y `kit-tareas-marisqueria/03!F22`: los resuelve la sub-familia CB (SPEC anotada).
+
+## 17. 29-ago 12:30 — PARADA por presupuesto (orden de John) y calendario semanal
+
+John: la sesión consumió ~40 % de la cuota semanal en un día; a partir de ahora **1 producto por semana (máx. 2)**, y hay que intercalar productos
+nuevos. **Detenidos** los workflows de kits CB (`wf_1b4fe05c-716`, hasta la corrección), hermanos de planes A (`wf_5eed55a4-546`: cafetería, tapas-bar,
+panadería construidos y refutados; food-truck parcial) y hermanos de guías (`wf_0275b1de-bea`: casual, mexicano, peruano construidos y refutados;
+japonés parcial). Todo lo construido está en disco y commiteado. **Se deja terminar sólo el workflow de documentos de la guía gastronómica**
+(`wf_ad6ce831-8dd`); su crítico y la copia a `dl/` son el primer paso de la semana 1 si no llegan hoy. Auto-commits nohup parados.
+**Fuente de verdad del ritmo: `scripts/productos-digitales/CALENDARIO-V2-SEMANAL.md`** (estado exacto, 17 semanas, protocolo por sesión, presupuesto por
+semana, micro-proyecto de 5 productos nuevos intercalado: Guía Food Cost + Ingeniería de Menú → Manual del Manager → Manual del Chef Ejecutivo →
+Pastelería → Chocolatería). Memoria: `feedback_presupuesto-tokens-un-producto-por-semana`.
