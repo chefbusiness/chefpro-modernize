@@ -1,0 +1,330 @@
+{
+ "tanda": "T2.1 — extensiones del motor para la sub-familia ChefBusiness",
+ "spec": "scripts/productos-digitales/kit-tareas-cb-v2-SPEC.md §1, §7-bis, §9 (T2.1)",
+ "fecha": "2026-08-29T10:08:34",
+ "modo": "dry-run · NADA escrito en astro-site/public/dl/**",
+ "ficheros_modificados": [
+  "scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+  "scripts/productos-digitales/kit-tareas-v2_0/main.py",
+  "scripts/productos-digitales/censo-entregables.py",
+  "scripts/productos-digitales/postprocess-transversal.py"
+ ],
+ "extensiones": {
+  "CB-E1": {
+   "estado": "HECHA",
+   "donde": "motor.py: SUBFAMILIA_CB, sub_cb(), LEX_TILDES (256 lemas), LEX_FRASES, RX_TOKEN_URL, RX_SIGLA, _caso, _orto_token, orto_texto, _contrato, ortografia(), palabras_sin_tilde(), AMBIGUAS, ambiguas_del_libro(); main.py: llamada en procesar() tras set_metadata y gate_ortografia()",
+   "orden": "paso PROPIO, el ULTIMO del pipeline por fichero (tras motor.cerrar y set_metadata, antes de inject_cache) — §7-bis.11",
+   "baseline_medido_sobre_dl": {
+    "palabras": 1486,
+    "celdas": 1175,
+    "pestanas": 7
+   },
+   "resultado": {
+    "gate_ortografia": "0 lemas vivos en sushi-bar, asador y chef-privado",
+    "ambiguas_emitidas": {
+     "sushi-bar": 318,
+     "asador": 345,
+     "chef-privado": 74
+    }
+   },
+   "pestanas_renombradas": [
+    "kit-tareas-asador/03-maduracion-despiece-carne.xlsx!Control Maduracion Carne -> Control Maduración Carne",
+    "kit-tareas-asador/03-maduracion-despiece-carne.xlsx!Temperaturas Coccion -> Temperaturas Cocción",
+    "kit-tareas-food-truck/03-appcc-seguridad-alimentaria-movil.xlsx!APPCC Movil -> APPCC Móvil",
+    "kit-tareas-panaderia/03-hornos-coccion.xlsx!Hornos y Coccion -> Hornos y Cocción",
+    "kit-tareas-panaderia/BONUS-01-briefing-produccion.xlsx!Briefing Produccion -> Briefing Producción",
+    "kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx!Registro Congelacion -> Registro Congelación",
+    "kit-tareas-sushi-bar/08-eventos-estacionales.xlsx!Temporadas Pescado Espana -> Temporadas Pescado España"
+   ],
+   "nota_pestanas": "la SPEC §0.3 listaba 6; son 7. La que faltaba es sushi-bar/03!'Registro Congelacion'. Y 'Operaciones Moviles' (food-truck 02) sale del kit por CB-E1 en la celda A2/título pero su PESTAÑA se llama igual y también se renombra al aplicar el kit completo en T4."
+  },
+  "CB-E2": {
+   "estado": "HECHA",
+   "donde": "motor.py: crear_contador(); llamada en aplicar() paso 2bis; main.py: gate_contadores()",
+   "alcance_real": "kit-tareas-sushi-bar y kit-tareas-asador, 09-plantilla-personalizable.xlsx!'Plantilla en Blanco' (los dos únicos casos de geometría válida sin contador que NO son el fichero de caja)",
+   "resultado": "sushi-bar D31=COUNTIFS(B5:B29,\"?*\",F5:F29,\"✓\") · F31=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\") · 5 filas libres 25-29 dentro del rango · +2 fórmulas (30 → 32 en sushi, 32 → 34 en asador)",
+   "decision": "se ha tomado la vía A de §1.2 (crear el contador), no la B (callar las Instrucciones): la hoja pasa a hacer lo que sus Instrucciones ya prometían"
+  },
+  "CB-E3": {
+   "estado": "HECHA",
+   "donde": "motor.py: RX_REG_CAMPO/RX_REG_FECHA/RX_REG_TEMP/RX_REG_VERIF, DIAS_SEMANA, fila_registro_appcc(), rango_de_texto(), registro_appcc(); tipo 'registro_appcc' en hojas_reconocidas (el ÚLTIMO de la cadena), aplicar() y cerrar()",
+   "resultado_sushi": {
+    "alcance": "8/11 → 9/11 (entra 03-seguridad-anisakis-appcc.xlsx)",
+    "Registro Congelación": "3 columnas de fecha DD/MM/YYYY, 1 de temperatura 0,0 °C, DV «✓,—,N/A» en H6:H25 (columna «Verif.»), cabecera con wrap y alto 30, print_area A1:I29, hoja protegida",
+    "Temperaturas Diario": "7 columnas de temperatura 0,0 °C, 6 reglas de CF de fuera-de-rango leídas del rótulo de cada fila (C5:I5 notBetween(-2,0) · C6:I6 >-20 · C7:I7 notBetween(2,4) · C8:I8 notBetween(0,4) · C9:I9 >-18 · C11:I11 notBetween(20,37)), columna B de 28 a 45 (CB-E9 b)",
+    "Trazabilidad Pescado": "2 columnas de fecha, print_area A1:H23, protegida"
+   },
+   "cierra": "TEC-07, TEC-08, TEC-19"
+  },
+  "CB-E4": {
+   "estado": "HECHA",
+   "donde": "motor.py: RX_PERSONALIZAR, _bloque_personalizar(papel), papel_instrucciones(recon), CTX['personalizar'] y CTX['papel_instrucciones'] en contexto(), uso en reescribir_instrucciones()",
+   "variantes": "checklist · registro · formulario · calendario",
+   "verificado": "03-seguridad-anisakis-appcc.xlsx recibe la variante REGISTRO («no hay responsables ni horas límite que ajustar»), que es justo lo que TEC-10/COM-19 denunciaban; los 8 checklists reciben la variante checklist",
+   "no_ejercitadas": "las variantes 'formulario' y 'calendario' no se ejercitan en esta tanda: los BONUS-01/BONUS-02 de la sub-familia siguen sin molde reconocido (ver hallazgo 14)"
+  },
+  "CB-E9": {
+   "estado": "HECHA",
+   "donde": "motor.py: ANCHO_A4, ANCHO_TAREA_CB, VERDE_OK_CB, verde_ok(), legibilidad_tareas(); (b) dentro de registro_appcc()",
+   "a": "columna «Tarea» de 48 a 60 en las 16 hojas ▸ de sushi-bar y las 17 de asador (fila = 140 unidades = ANCHO_A4 exacto) + wrap_text en 271 celdas de tarea de sushi-bar y 296 de asador; la altura se deja en None para que Excel autoajuste",
+   "b": "03!'Temperaturas Diario' columna B de 28 a 45 (rótulo más largo: 43 caracteres)",
+   "c": "ya lo resolvía el motor (escribe() de reescribir_instrucciones pone wrap y alto por longitud); los 3 ficheros que se lo perdían eran los que estaban FUERA de alcance, y 03 entra ahora por CB-E3",
+   "d": "VERDE_OK_CB = A5D6A7 SOLO en la sub-familia (VERDE_OK sigue en C8E6C9 para los 13 kits LIVE) — ver duda 1",
+   "cierra": "TEC-15, TEC-16, TEC-17, TEC-18"
+  },
+  "CB-E5": {
+   "estado": "NO ENTRA EN ESTA TANDA",
+   "motivo": "§9 la sitúa en T4. Verificado que los 4 kits del molde PLANO abortan limpiamente con MoldeDesconocido (CB-E6) sin escribir un solo fichero."
+  }
+ },
+ "gates_nuevos_en_main": [
+  "gates.ortografia (bloqueante: 0 lemas de LEX_TILDES; emite además las AMBIGUAS con su celda)",
+  "gates.contadores (bloqueante: toda hoja con geometría de checklist tiene fila de totales)",
+  "gates.molde (informativo: hojas que ningún molde reconoce)"
+ ],
+ "regresion_bloqueante_7bis_24": {
+  "kit-tareas-cafeteria": {
+   "ficheros": 11,
+   "diferencias": 0,
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/regresion-cafeteria.json"
+  },
+  "kit-tareas-hotel": {
+   "ficheros": 19,
+   "diferencias": 0,
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/regresion-hotel.json"
+  },
+  "kit-tareas (representante, AÑADIDO por mí)": {
+   "ficheros": 11,
+   "diferencias": 0,
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/regresion-kit-tareas.json",
+   "motivo": "no estaba en el encargo y es el kit donde CB-E4 rompía 46 celdas (hallazgo 4). Los dos kits del gate no lo habrían visto."
+  },
+  "barrido estático sobre los 12 kits LIVE restantes": {
+   "avisos": 0,
+   "que_comprueba": "que ninguna extensión se dispara fuera de la sub-familia: CB-E2 (contador creado), CB-E3 (molde registro activo), CB-E4 (bloque sustituido), pie/marca, _col_tiempo y EDITABLES nuevos por tilde"
+  }
+ },
+ "dry_runs": {
+  "kit-tareas-sushi-bar": {
+   "exit": 0,
+   "en_alcance": "9/11",
+   "formulas": 32,
+   "idempotencia": 0,
+   "gate_ortografia": 0,
+   "contadores": "16/16",
+   "hojas_sin_molde": 2,
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/kit-tareas-sushi-bar.json"
+  },
+  "kit-tareas-asador": {
+   "exit": 0,
+   "en_alcance": "9/11",
+   "formulas": 34,
+   "idempotencia": 0,
+   "gate_ortografia": 0,
+   "contadores": "17/17",
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/kit-tareas-asador.json"
+  },
+  "kit-tareas-chef-privado": {
+   "exit": 0,
+   "molde": "P4",
+   "formulas": 22,
+   "idempotencia": 0,
+   "gate_ortografia": 0,
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/kit-tareas-chef-privado.json"
+  },
+  "kit-tareas-tapas-bar": {
+   "exit": 2,
+   "resultado": "ABORTA con MoldeDesconocido (CB-E5 no entra en esta tanda)",
+   "copia_de_trabajo_vs_produccion": "0 diferencias — no se escribió ni un fichero",
+   "informe": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/tapas-bar.json"
+  },
+  "los otros 3 kits PLANO": "marisqueria, panaderia y food-truck también abortan con MoldeDesconocido (probado con contexto(), sin escribir)"
+ },
+ "hallazgos": [
+  {
+   "id": "H1",
+   "gravedad": "ALTA",
+   "titulo": "El motor REBRANDEABA seis kits: de ChefBusiness a AI Chef Pro",
+   "ref": "motor.py:contexto() (ctx['pie']) · verificado en kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx!Instrucciones!B38",
+   "detalle": "ctx['pie'] era el literal fijo '— Kit de Tareas Recurrentes · <kit> · AI Chef Pro · aichef.pro' y reescribir_instrucciones lo escribe en los 11 ficheros. El dry-run convertía «— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · chefbusiness.co» en el pie de AI Chef Pro, en los SEIS kits que llevan la razón social (13 celdas en sushi-bar y asador, 22 en marisquería, panadería, food-truck y tapas-bar). Contradice la regla de marca y §7-bis.17, y ningún gate lo miraba.",
+   "arreglado": "ctx['marca']/ctx['dominio'] se deciden por DATO (¿alguna celda del kit dice «ChefBusiness»?). Medido: 0 celdas en los 13 kits de la familia, 0 en chef-privado (que se queda con AI Chef Pro, como está firmado). RX_PIE reconoce además '— Kit de Tareas:' (0 apariciones en la familia).",
+   "estado_verificado": "B38 = '— Kit de Tareas Recurrentes · Sushi Bar · ChefBusiness Consultoría Gastronómica · chefbusiness.co' (acentuada por CB-E1)"
+  },
+  {
+   "id": "H2",
+   "gravedad": "ALTA",
+   "titulo": "CTX['producto'] se asignaba DESPUÉS de contexto(): 34 diferencias de idempotencia",
+   "ref": "main.py:1144 y motor.py:contexto()",
+   "detalle": "hojas_reconocidas() consulta sub_cb() para activar el molde REGISTRO, y sub_cb() lee CTX['producto'], que main.py ponía después de contexto(). En la 1.ª pasada 03-seguridad-anisakis-appcc.xlsx se clasificaba como «checklist» (CTX vacío) y en la 2.ª como «registro» (CTX heredado del proceso anterior): sus Instrucciones salían con el bloque «Cómo personalizar» EQUIVOCADO la primera vez. Lo cazó el gate de idempotencia con 34 diferencias.",
+   "arreglado": "contexto(..., producto=pid) fija CTX['producto'] antes de abrir un solo fichero; las tres llamadas de main.py lo pasan."
+  },
+  {
+   "id": "H3",
+   "gravedad": "ALTA",
+   "titulo": "CB-E4 habría reescrito las Instrucciones del representante kit-tareas (kit LIVE)",
+   "ref": "kit-tareas/01-apertura-cierre.xlsx!Instrucciones!B12 · regresión: 46 diferencias (27 de valor, 19 de altura)",
+   "detalle": "La condición «tiene encabezado 'Cómo personalizar'» NO acota a la sub-familia: el representante publicado trae ese mismo encabezado con dos viñetas. Con 'Cómo personalizar' metido en MIS_BLOQUES, el dry-run se lo BORRABA sin poner nada en su lugar (el bloque nuevo sólo se emite en la sub-familia). El gate bloqueante de §7-bis.24 NO lo habría visto: corre sobre cafetería y hotel.",
+   "arreglado": "sustituye_personalizar = sub_cb() and CTX['personalizar'][fname]; el encabezado se descarta SÓLO cuando el motor va a reemitirlo. 'Cómo personalizar' fuera de MIS_BLOQUES. Regresión de kit-tareas: 0."
+  },
+  {
+   "id": "H4",
+   "gravedad": "ALTA",
+   "titulo": "Los detectores del motor eran sensibles a la tilde, y CB-E1 corre al final",
+   "ref": "motor.py:_col_tiempo() y EDITABLES · kit-tareas-sushi-bar/01!'Apertura Barra Sushi'!E4",
+   "detalle": "_col_tiempo sólo conocía 'Hora Límite' y sushi-bar/asador escriben 'Hora Limite'. Consecuencias: (a) la columna de tiempo NO se pintaba de verde en los 33 checklists de esos dos kits, mientras sus Instrucciones prometen «las celdas verdes son editables»; (b) con CB-E1 corriendo al final, la 2.ª pasada SÍ la habría encontrado y el gate de idempotencia se habría puesto rojo sin nada roto.",
+   "arreglado": "_rotulo() compara sin tildes; _col_tiempo y EDITABLES lo usan. Verificado: E7 = E8F5E9 (verde) y 0 cambios en los 13 kits de la familia, que ya escriben la tilde."
+  },
+  {
+   "id": "H5",
+   "gravedad": "MEDIA",
+   "titulo": "Renombrar una pestaña dejaba huérfano el registro de fórmulas",
+   "ref": "main.py:verificar_cache · 08-eventos-estacionales.xlsx:'Temporadas Pescado Espana'!D31 y !F31",
+   "detalle": "motor.REGISTRO guarda el TÍTULO de la hoja; CB-E1 renombra la pestaña después. El gate de data_only daba «hoja ausente» en 2 fórmulas que tenían la caché perfectamente inyectada. Un falso rojo que en otra tanda se habría 'resuelto' desactivando el gate.",
+   "arreglado": "ortografia() reescribe las entradas de REGISTRO cuya hoja renombra. Ahora: 32 con valor, 0 fallos."
+  },
+  {
+   "id": "H6",
+   "gravedad": "MEDIA",
+   "titulo": "Una lista blanca por LITERAL EXACTO invalidada por la propia ortografía",
+   "ref": "censo-entregables.py:FALSOS_POSITIVOS_BIO y postprocess-transversal.py:FALSOS_POSITIVOS_BIO · kit-tareas-asador/07-semanales-mensuales.xlsx!Instrucciones!B6",
+   "detalle": "La frase «…un horno bien cuidado dura 15+ anos» está en lista blanca porque casa RX_BIO_VIEJA sin ser una bio. CB-E1 la convierte en «15+ años», deja de casar el literal de la lista y el censo --fail marcaba bio_vieja: asador salía en rojo (exit 1) por una corrección ortográfica correcta.",
+   "arreglado": "añadida la variante acentuada a los DOS frozensets, que el propio código exige mantener sincronizados. asador vuelve a exit 0."
+  },
+  {
+   "id": "H7",
+   "gravedad": "MEDIA",
+   "titulo": "CB-E1 habría 'corregido' un nombre de fichero en catering (kit LIVE)",
+   "ref": "kit-tareas-catering/08-apertura-cierre-negocio.xlsx!Instrucciones!B37 y B7 · 09-cobros-facturacion-eventos.xlsx!Instrucciones!B51",
+   "detalle": "La primera versión de RX_TOKEN_URL excluía por lista de dominios (.pro/.com/.co/.es), así que el token '09-cobros-facturacion-eventos.xlsx' NO estaba protegido y 'facturacion' pasaba a 'facturación': el bloque «Se conecta con» habría citado un fichero que no existe, en 5 celdas de un kit publicado.",
+   "arreglado": "la regla es «un punto entre dos alfanuméricos» (más :// y @). La barra NO entra: 'Lote/Albaran' y 'Proveedor/Lonja' sí se corrigen."
+  },
+  {
+   "id": "H8",
+   "gravedad": "MEDIA",
+   "titulo": "Dos faltas de ortografía REALES en un kit LIVE que NO se han tocado",
+   "ref": "kit-tareas-hamburgueseria/02-partidas-cocina.xlsx!'Línea Montaje'!B9 y 05-tareas-semanales-mensuales.xlsx!'Inventario Diario'!A13",
+   "detalle": "Las dos dicen «sesamo» por «sésamo». El barrido las encuentra, pero hamburguesería es un kit publicado que no está en esta tanda: corregirlas de paso lo habría modificado sin diff firmado, sin regresión propia y sin APPLY. ortografia() está condicionada a sub_cb() también por esto.",
+   "accion": "queda declarado para el orquestador; es una corrección de 2 celdas con su propio APPLY."
+  },
+  {
+   "id": "H9",
+   "gravedad": "MEDIA",
+   "titulo": "El gate bloqueante NO compara ni formato condicional, ni rellenos, ni anchos de columna",
+   "ref": "regresion.py (docstring: «Lo que NO compara … rellenos, fuentes, anchos de columna, formato condicional, merges y metadata»)",
+   "detalle": "CB-E9 toca exactamente esas tres dimensiones. Un cambio global de VERDE_OK (a→A5D6A7) o del ancho de la columna «Tarea» habría repintado los 11 kits publicados con la regresión en VERDE. Por eso CB-E9 está condicionada a sub_cb() y no a la firma del defecto: esa firma es IDÉNTICA en cafetería (446 celdas de tarea sin wrap), pizzería (319), hamburguesería (292) y dark-kitchen (275).",
+   "accion": "decidido por scoping + comprobación manual; se propone al orquestador ampliar regresion.py (ver pendiente 5)."
+  },
+  {
+   "id": "H10",
+   "gravedad": "MEDIA",
+   "titulo": "Colisiones de CB-E3 fuera de la sub-familia, medidas",
+   "ref": "kit-tareas-pasteleria/11-control-encargos.xlsx!'Registro de Encargos' · kit-tareas-hotel y kit-tareas-catering BONUS-02!'Calendario'",
+   "detalle": "La firma «# o Nº en A + ≥5 rótulos + un campo de registro» casa también con la tabla de encargos de pastelería (kit LIVE con su propio postproceso) y con los calendarios «# | Fecha / Período | … | Antelación | Notas» de hotel y catering. Los calendarios se excluyen por el rótulo 'Antelación' (dentro del detector); pastelería se excluye por el gate sub_cb().",
+   "estado": "sin el gate, hotel habría dado regresión roja en la primera pasada."
+  },
+  {
+   "id": "H11",
+   "gravedad": "BAJA",
+   "titulo": "CB-E2 habría creado contadores en el fichero de caja de pastelería",
+   "ref": "kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx!'Apertura de Caja' y !'Cierre de Caja'",
+   "detalle": "Son las dos únicas hojas de los 20 kits, aparte de las de sushi-bar y asador, con geometría de checklist y contador=None. Ahí el total no es un recuento de tareas sino el Resumen de Cierre del arqueo.",
+   "arreglado": "crear_contador() excluye CTX['f_caja'] y CTX['f_negocio'] — condición estructural, no lista de productos."
+  },
+  {
+   "id": "H12",
+   "gravedad": "BAJA",
+   "titulo": "El diccionario derivado del corpus no ve las palabras que el corpus nunca escribe bien",
+   "ref": "barrido por familia de sufijo sobre los 7 kits",
+   "detalle": "El método base (misma palabra con y sin tilde dentro del corpus) dejaba fuera 23 lemas sin gemelo: anticipacion, hidratacion, regulacion, division, inversion, sustitucion, acumulacion, extension, organizacion, estimacion, oxigenacion, importacion, clasificacion, recomendacion, flotacion, porcion, recuperacion, lubricacion, legislacion, solucion, precoccion, pirometro y MOVILES — esta última es la pestaña 'Operaciones Moviles' que la SPEC §0.3 ya listaba a mano.",
+   "trampa_evitada": "el mismo barrido señalaba los PLURALES en -ciones/-siones (instrucciones ×38, guarniciones ×14, observaciones ×14, operaciones, condiciones, restricciones…), que NO llevan tilde. Añadirlos habría escrito «instruccíones» en las 38 pestañas del kit."
+  },
+  {
+   "id": "H13",
+   "gravedad": "BAJA",
+   "titulo": "«campana» NO es «campaña» en hostelería",
+   "ref": "kit-tareas-hotel/13-mantenimiento.xlsx!'Mensual'!B6 · kit-tareas-sushi-bar/01!'Cierre Barra Sushi'!B22",
+   "detalle": "El corpus escribe «campaña» en otros contextos, así que el método del gemelo proponía campana→campaña. Es la CAMPANA extractora: está bien escrita. Traducirla habría dejado «campaña extractora» en un kit LIVE. Igual con «carnes» (que no es «carnés»), «periodo», «celiaco», «min» y «max»."
+  },
+  {
+   "id": "H14",
+   "gravedad": "BAJA",
+   "titulo": "Siguen sin molde los dos BONUS de sushi-bar y asador",
+   "ref": "BONUS-01-briefing-servicio.xlsx!'Briefing Servicio' · BONUS-02-calendario-anual.xlsx!'Calendario Anual'",
+   "detalle": "es_briefing() exige 'Briefing' en B1 y 'Fecha:' en B2; el briefing de CB los tiene en B2 y B4 y en VERSALITA. El BONUS-02 de CB es una MATRIZ de 12 columnas de mes ('TAREA / ACCION | Ene … Dic' con ●), un molde que la familia no tiene. Los dos reciben CB-E1 y metadata, pero no A4, ni print_area, ni protección, ni Instrucciones reescritas.",
+   "accion": "fuera del encargo de T2.1 (CB-E3 nombra 03-anisakis y 03-trazabilidad). Son 2 hojas × 6 kits."
+  },
+  {
+   "id": "H15",
+   "gravedad": "BAJA",
+   "titulo": "Una fila del registro de temperaturas se queda sin CF porque su rótulo no declara límite",
+   "ref": "kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx!'Temperaturas Diario', fila 10",
+   "detalle": "rango_de_texto() lee el límite del rótulo de la propia fila; 6 de las 7 filas lo declaran y una no. El motor lo cuenta y lo dice en el cambio («1 filas sin límite legible en su rótulo») en vez de inventarse un rango.",
+   "accion": "lo resuelve el módulo de contenido del kit (T2.2) al unificar límites (§7-bis.23)."
+  },
+  {
+   "id": "H16",
+   "gravedad": "BAJA",
+   "titulo": "'Trazabilidad Pescado' no recibe desplegable porque no tiene columna de verificación",
+   "ref": "kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx!'Trazabilidad Pescado' A3:H3",
+   "detalle": "Sus rótulos son # · Especie · Proveedor/Lonja · Fecha Compra · Lote/Albarán · Zona Captura (FAO) · Caducidad · Firma. Recibe fechas, verdes, protección y print_area, pero no DV: no hay nada que marcar. Decisión de contenido si se le quiere añadir una columna «Verif.»."
+  },
+  {
+   "id": "H17",
+   "gravedad": "MEDIA",
+   "titulo": "TRAMPA PARA T4: CB-E1 renombra el rótulo 'Area' del molde PLANO",
+   "ref": "kit-tareas-marisqueria/01-apertura-cierre-marisqueria.xlsx!'Apertura y Cierre'!A3 (y sus hermanos de panadería, food-truck y tapas-bar)",
+   "detalle": "La cabecera del molde PLANO es 'Area · Tarea · Responsable · Hora · OK · Observaciones' y CB-E1 la corrige a 'Área'. Como la ortografía corre AL FINAL, la 1.ª pasada de geometria_plano() vería 'Area' y la 2.ª 'Área': si el detector compara por literal, la 2.ª pasada no reconocería la hoja y el gate de idempotencia se pondría rojo (o, peor, el kit se guardaría a medio hacer).",
+   "accion": "geometria_plano() DEBE comparar sin tildes, con el helper _rotulo() que ya existe. Es el mismo defecto que H4, un molde por delante."
+  },
+  {
+   "id": "H18",
+   "gravedad": "INFORMATIVO",
+   "titulo": "chef-privado sigue en v1.1 en producción: T1 no se ha aplicado",
+   "ref": "astro-site/public/dl/kit-tareas-chef-privado/01-ficha-cliente-consulta.xlsx (subject «… · v1.1»)",
+   "detalle": "Relevante para CB-E9(d): si T1 se aplicase ANTES que T2, chef-privado se publicaría con el CF en C8E6C9 y esta tanda se lo cambiaría a A5D6A7 en un segundo APPLY. Aplicando el motor ya extendido, va en una sola pasada."
+  },
+  {
+   "id": "H19",
+   "gravedad": "INFORMATIVO",
+   "titulo": "El pie IMPRESO de los seis kits de CB sigue diciendo «AI Chef Pro · aichef.pro»",
+   "ref": "motor.py:print_setup() → ws.oddFooter.center.text",
+   "detalle": "Es el pie de página del papel, no la celda. He arreglado la celda (H1) porque la regla de marca lo pide explícitamente; el oddFooter es un literal de familia y cambiarlo sería una decisión de marca NUEVA, no una preservación. §9 dice parar y preguntar ante cualquier cambio que toque la marca ChefBusiness.",
+   "accion": "duda 2."
+  },
+  {
+   "id": "H20",
+   "gravedad": "INFORMATIVO",
+   "titulo": "ctx['literal_cierre'] de asador sale como «Manana» en el informe",
+   "ref": "scratchpad/cb/kit-tareas-asador.json → contexto.literal_cierre",
+   "detalle": "contexto() lee los ficheros ANTES de la ortografía, así que el literal votado es el sin ñ. No afecta al resultado (la idempotencia es 0: la 2.ª pasada lee «Mañana» y escribe lo mismo tras CB-E1), pero el informe lo enseña mal escrito."
+  },
+  {
+   "id": "H21",
+   "gravedad": "MEDIA",
+   "titulo": "El registro de anisakis cita una norma DEROGADA (cruce con otra tanda)",
+   "ref": "kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx!'Registro Congelación'!A2 · kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx!'Trazabilidad APPCC'!F22",
+   "detalle": "A2 dice «Normativa: RD 1420/2006 y Reglamento CE 853/2004». El research de guías del 2026-08-29 (commit 837ef05) documenta que el RD 1420/2006 está DEROGADO por el RD 1021/2022 art. 8.1. La SPEC §7-bis.4 y §7-bis.19 siguen citándolo, y §7-bis.10 manda corregir la cita falsa del anisakis en DOS kits.",
+   "accion": "lo he sacado del alcance del motor: la variante REGISTRO de CB-E4 ya NO remite a «la norma citada arriba» (habría reforzado una cita caduca). La cita en sí es de contenido: §2.0 (lista blanca normativa) y T2.2.",
+   "aviso": "conviene revisar §7-bis.4/.19 de la SPEC antes de que el módulo de contenido escriba la cita: hoy la SPEC manda escribir la norma derogada."
+  }
+ ],
+ "dudas_para_el_orquestador": [
+  "1. CB-E9(d): he limitado el verde del CF (A5D6A7) a la sub-familia. El defecto —C8E6C9 y el E8F5E9 de las editables se confunden impresos en las columnas «Zona» y «Responsable»— es IDÉNTICO en los 13 kits LIVE, y regresion.py no compara formato condicional, así que un cambio global habría pasado el gate en verde. ¿Se unifica la paleta en toda la familia (con su propio diff firmado y APPLY de 13 kits) o se queda como está?",
+  "2. Marca: he preservado la razón social de ChefBusiness en la CELDA del pie (H1). El pie IMPRESO (oddFooter) sigue diciendo «AI Chef Pro · aichef.pro» en los seis kits de CB. ¿Se cambia también (decisión de marca nueva) o se deja?",
+  "3. hamburguesería tiene 2 faltas reales («sesamo») y es un kit LIVE fuera de esta tanda (H8). ¿Se corrigen en un APPLY propio o se dejan para una revisión de la familia?",
+  "4. BONUS-01 (briefing) y BONUS-02 (calendario en matriz de 12 meses) de la sub-familia siguen sin molde (H14): 2 hojas × 6 kits sin A4, sin protección y sin Instrucciones reescritas. ¿Entran en T4 junto a CB-E5, o se declaran fuera de la v2.0?",
+  "5. ¿Se amplía regresion.py con rellenos, anchos de columna y formato condicional? Sin ellos, el gate que §7-bis.24 declara BLOQUEANTE es ciego a las tres dimensiones que toca CB-E9 (H9).",
+  "6. SUBFAMILIA_CB es una lista explícita de 7 identificadores de producto, no una detección estructural. Lo razono en el código: tras CB-E1 no queda firma que separe la sub-familia de la familia ▸ (la única, «Hora Limite» sin tilde, es lo que este paso corrige). ¿Se acepta como declaración firmada?",
+  "7. CB-E2 crea el contador (vía A de §1.2) en vez de callar los bloques de las Instrucciones (vía B). Confirmar.",
+  "8. La SPEC (§7-bis.4 y §7-bis.19) manda citar el RD 1420/2006 para el anisakis, y otra tanda de esta misma sesión (commit 837ef05) lo ha documentado DEROGADO por el RD 1021/2022 art. 8.1. ¿Se corrige la SPEC antes de que T2.2 escriba las citas? (H21)"
+ ],
+ "pendiente": [
+  "CB-E5 (molde PLANO completo con hoja Instrucciones nueva, §7-bis.16) — T4. Con la trampa de H17 apuntada: geometria_plano() tiene que comparar rótulos SIN tildes.",
+  "Moldes CB de briefing y de calendario-matriz (H14): hoy 2 hojas por kit se quedan fuera de A4/protección/Instrucciones.",
+  "contenido_kit_tareas_sushi_bar.py (T2.2): las 318 ocurrencias AMBIGUAS que el gate emite («esta/está», «solo/sólo», «mas/más», «como/cómo», «min/mín»…) se resuelven ahí, celda a celda, no por diccionario.",
+  "Gates de §1.3 que NO he implementado por ser de contenido, no de motor: limite_unico, citas_legales, promesas y autorreferencia.",
+  "La fila 10 de 'Temperaturas Diario' necesita que su rótulo declare un límite para recibir CF (H15).",
+  "APPLY real: nada de lo anterior se ha escrito en astro-site/public/dl/**. Todo está en dry-run bajo el scratchpad."
+ ],
+ "nota_de_repositorio": "Un auto-commit periódico del repo ('cef8d74 wip(productos): auto-commit periódico de la construcción de kits CB v2.0') ha ido guardando estos cambios sobre la marcha; yo no he hecho ningún git commit/push. Al cerrar quedan sin commitear las últimas ediciones de motor.py, censo-entregables.py y postprocess-transversal.py."
+}

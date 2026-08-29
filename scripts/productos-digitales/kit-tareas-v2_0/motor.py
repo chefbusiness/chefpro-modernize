@@ -3354,9 +3354,16 @@ def _bloque_personalizar(papel):
                   'las de temperatura en «0,0 °C»: escribe sólo el número. Si '
                   'una lectura se sale del rango que declara su propia fila, '
                   'la celda se pone en ROJO sola.'),
+            # El motor NO afirma nada sobre la norma: el encabezado de estas
+            # hojas cita «RD 1420/2006», que el research de guías del
+            # 2026-08-29 (commit 837ef05) documenta DEROGADO por el
+            # RD 1021/2022 art. 8.1. Quién cita qué es trabajo del módulo de
+            # contenido (§2.0, lista blanca normativa); aquí el texto se
+            # limita a explicar cómo se rellena la hoja.
             ('b', 'Añade equipos o especies escribiendo en las filas verdes '
-                  'libres. Lo que cambies aquí no cambia la ley: los límites '
-                  'que trae cada fila son los de la norma citada arriba.'),
+                  'libres. Cambiar una fila no cambia el límite legal que le '
+                  'aplique: si tu proceso es distinto, revísalo con tu plan '
+                  'APPCC antes de tocar el valor.'),
             ('b', comun),
         ]
     if papel == 'formulario':
@@ -4156,6 +4163,29 @@ LEX_TILDES = {
         'ultimos': 'últimos', 'util': 'útil', 'vacias': 'vacías',
         'vacio': 'vacío', 'vacios': 'vacíos', 'valentin': 'valentín',
         'vehiculo': 'vehículo', 'ventilacion': 'ventilación',
+    # --- Segunda vuelta (2026-08-29). El método de arriba —«la misma palabra
+    # escrita con y sin tilde dentro del corpus»— no ve las que el corpus NUNCA
+    # escribe bien: no tienen gemelo del que aprender. Estas 23 salieron de un
+    # barrido por FAMILIA DE SUFIJO (-ción, -sión, -metro, -il/-iles) sobre los
+    # siete kits, y una de ellas, «Operaciones Moviles», es una pestaña que la
+    # SPEC ya había listado a mano en §0.3 y que el diccionario derivado del
+    # corpus se dejaba fuera.
+    # ⚠️ Los PLURALES en -ciones y -siones NO llevan tilde («instrucciones»,
+    # «guarniciones», «observaciones», «operaciones», «condiciones»,
+    # «restricciones»…): el mismo barrido los señaló y son correctos tal cual.
+    # Meterlos habría escrito «instruccíones» en las 38 pestañas del kit.
+    'acumulacion': 'acumulación', 'anticipacion': 'anticipación',
+    'clasificacion': 'clasificación', 'division': 'división',
+    'estimacion': 'estimación', 'extension': 'extensión',
+    'flotacion': 'flotación', 'hidratacion': 'hidratación',
+    'importacion': 'importación', 'inversion': 'inversión',
+    'legislacion': 'legislación', 'lubricacion': 'lubricación',
+    'moviles': 'móviles', 'organizacion': 'organización',
+    'oxigenacion': 'oxigenación', 'pirometro': 'pirómetro',
+    'pirometros': 'pirómetros', 'porcion': 'porción',
+    'precoccion': 'precocción', 'recomendacion': 'recomendación',
+    'recuperacion': 'recuperación', 'regulacion': 'regulación',
+    'solucion': 'solución', 'sustitucion': 'sustitución',
 }
 
 #: Frases fijas donde «como» sí lleva tilde: son encabezados del molde, no
