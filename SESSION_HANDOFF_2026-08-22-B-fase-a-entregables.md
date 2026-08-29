@@ -538,3 +538,13 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   (md → DOCX + PDF A4, gates §5.6) y `guion_guia_restaurante_gastronomico.py` (22 capítulos con cifras de los xlsx aplicados + research con fuentes),
   genera con bridge.py (`--model ~deepseek/deepseek-v4-flash-latest --max-tokens 8192`) a `scratchpad/guias/docs/build/`, luego 2 refutadores (dominio
   y técnico), corrección y crítico. El APPLY (copiar los 4 ficheros a `dl/` con los mismos nombres) lo hace el orquestador tras el crítico.
+- **Research con fuentes terminado (`837ef05`, `auditorias/guias-v2-research-sector.json`, 67 datos: 31 alta · 31 media · 5 baja; 7 sin fuente que NO entran):**
+  Michelin 2026 España 16/37/254 = 307 (+59 Estrellas Verdes, 204 Bib Gourmand; España es 5.ª, no 3.ª) · Repsol 2026 808 Soles · Turespaña 2026 37.261 M€
+  y 24,8 M turistas con actividad gastronómica pero sólo 445.000 vinieron POR la gastronomía · sector: 166.211 M€ hostelería / ~31.000 M€ restaurantes /
+  43.500 M€ foodservice, rentabilidad −0,9 % · SMI 2026 RD 126/2026 · convenios: cocinero Madrid 1.160-1.284 €/mes vs Barcelona 1.607-1.803 € · RGSEAA
+  fuera para restaurantes (RD 191/2011 art. 2.2) · Ley 12/2012 NO ampara restaurantes (IAE 67 fuera del anexo) · jornada sigue en 40 h · **el 60 % de
+  cierres no tiene fuente**. ⚠️ **RD 1420/2006 DEROGADO (22-dic-2022) por el RD 1021/2022, art. 8.1** — lo citaban como vigente 9 entregables LIVE
+  (checklist-appcc de la guía gastronómica recién aplicada, pack-appcc 12 y 18, kit-tareas-marisqueria/sushi-bar, docx de japonés y nikkei), 3 SPEC y
+  4 módulos de contenido (guías gastronómico/casual, kit-tareas, restaurante-creativo). **Fixer transversal opus en curso** → texto canónico «RD 1021/2022,
+  art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D» + gate en los 3 motores; después re-APPLY (idempotente)
+  de guía gastronómica, kit-tareas, restaurante-creativo y pack-appcc con sus gates y LIVE. Informe: `auditorias/anisakis-rd1021-correccion-2026-08-29.json`.
