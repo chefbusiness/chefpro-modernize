@@ -1,0 +1,322 @@
+{
+  "lente": "COHERENCIA + CLIENTE ESCÉPTICO — refutación del representante «guia-restaurante-gastronomico» (T2c). Cruce de mi propia copia dry-run contra (a) los ids de §8 de la SPEC marcados para §1-§4, (b) las hojas «Instrucciones» de los 18 xlsx —todo lo que prometen tiene que calcularse—, (c) la landing astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts y el dashboard src/pages/GuiaRestauranteGastronomicoDashboard.tsx, (d) el PDF y los 3 DOCX que viajan en la misma descarga, y (e) ortografía, tildes y caracteres no latinos. Copia propia generada con CLAUDE_SCRATCHPAD=…/propio-ref-coherencia y --dry-run; informe en …/ref-coherencia.json; nada escrito en astro-site/public/dl/. Lo que SÍ he verificado como resuelto y no repito como hallazgo: TEC-05, TEC-08, TEC-09, TEC-10, TEC-12, TEC-13 (en el xlsx), TEC-17, TEC-20, TEC-21, TEC-22, TEC-23, TEC-24, TEC-29, TEC-30, DOM-04, DOM-05, DOM-10, DOM-11, DOM-12, DOM-14, DOM-15, DOM-16, DOM-21, DOM-22 (cuadro francés: cuota 100k/5%/60m = 1.887,12 € y guarda de carencia OK), DOM-23, DOM-28, DOM-30, DOM-35 (en el xlsx), DOM-36, DOM-38, DOM-39, DOM-40 (recuentos medidos: legal 48, equipamiento 91, vajilla 50, appcc 55, michelin 45, sala 35, marketing 35, contratación 30), COM-31, COM-34; §1.3 impecable (0 celdas verdes con fórmula, 0 fórmulas desbloqueadas); 0 caracteres CJK/cirílico/hangul/árabe/hebreo/tailandés en los 18 xlsx; idempotencia 0 diferencias.",
+  "hallazgos": [
+    {
+      "id": "RC-01",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'P&L Mensual'!B6:B9, B13:B14, B20:B31 · 'Inversión'!C5:C26 · 'Proyección 3 Años'!B11:D22",
+      "hallazgo": "El libro que la SPEC declara FUENTE ÚNICA de la guía (§7-bis.7: inversión, personal, fondo de maniobra y headcount salen de sus celdas) se entrega SIN UN SOLO DATO de entrada, así que no produce ningún resultado. Es incoherente con el trato dado a sus hermanos del mismo grupo A: pl-mensual-escenarios, calculadora-ticket-medio y menu-engineering-matrix SÍ van precargados y sí calculan al abrir.",
+      "evidencia": "Leído con openpyxl data_only=True sobre mi copia dry-run: 'P&L Mensual'!B10=0.0, B15=0.0, B17=0.0, B32=0.0, B34=0.0 (EBITDA), B36=0.0, B37=0.0, B35=None; 'Inversión'!C27=0.0 y D27=0.0; 'Proyección 3 Años'!B11=None, C11=None, B15=None, B17=None, B18=None, B21=None, B22=None. El propio informe del paquete lo registra y lo da por bueno: demostraciones.grupo_a.plan_financiero.pl_precargado=0.0 y proyeccion_con_el_pl_en_blanco.B11_ingresos_ano_1=\"\". Contraste en el mismo producto: pl-mensual-escenarios!'Escenarios'!C17=169950.0 y C21=27965.0; calculadora-ticket-medio!'Ticket Medio'!C16=123.2.",
+      "fix": "Precargar 'P&L Mensual'!B6:B9, B13:B14 y B20:B31 y 'Inversión'!C5:C26 con el mismo caso de ejemplo que ya defiende pl-mensual-escenarios (escenario Realista: facturación 169.950 €/mes, food cost 30 %, personal 52.000 €, alquiler 17.000 €, otros fijos 22.000 €), etiquetados como valores de ejemplo según §1.2, y volver a correr las demostraciones de §2.3 sobre el fichero entregado, no sobre inputs inyectados."
+    },
+    {
+      "id": "RC-02",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/calculadora-ticket-medio.xlsx",
+      "ubicacion": "'Ticket Medio'!B16:D20 vs pl-mensual-escenarios!'Escenarios'!B6:D10,B17 vs cash-flow-break-even!'Cash Flow 12 Meses'!B40",
+      "hallazgo": "Tres cifras distintas de ticket medio y dos facturaciones distintas para el MISMO restaurante y el MISMO número de cubiertos, en tres libros del mismo pack. §7-bis.7 exige una sola fuente por guía y dice literalmente que tres cifras distintas de la misma magnitud son un defecto, no un matiz. Además los cubiertos/día no coinciden entre los dos libros ni siquiera en el orden de los escenarios.",
+      "evidencia": "calculadora-ticket-medio (cache): B16=91.95, C16=123.2, D16=169.45 con B17=55, C17=70, D17=62 cubiertos/día y 22 días → B20=111259.5, C20=189728.0, D20=231129.8. pl-mensual-escenarios: cubiertos = B6+B7=18+35=53, C6+C7=25+45=70, D6+D7=28+50=78; C17=169950.0 → ticket medio implícito 169950/(70*22)=110,36 €. cash-flow-break-even!B40 («Ticket medio (€)») = 110 tecleado. Con los mismos 70 cubiertos y 22 días un libro dice 189.728 €/mes y el otro 169.950 €/mes: 19.778 € de diferencia (+11,6 %). El escenario 3 va además al revés: el ticket sube a 169,45 € y los cubiertos BAJAN a 62 mientras el optimista del P&L sube a 78.",
+      "fix": "Derivar una de las dos hojas de la otra: o pl-mensual!B17 toma el ticket ponderado de calculadora-ticket-medio, o los escenarios del simulador se recalibran a los mismos cubiertos, precios y días del P&L. Renombrar B4:D4 del simulador a Pesimista/Realista/Optimista para que el comprador pueda cruzarlos, y dejar en una sola celda verde el ticket que también consume cash-flow!B40."
+    },
+    {
+      "id": "RC-03",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'Inversión'!B26/C26 y calculadora-capex.xlsx!'CAPEX'!B15,C15:E15",
+      "hallazgo": "DOM-01 / COM-30 / §2.3.5 (severidad alta en el mapa de §8) NO está implementado en ninguna de sus tres partes: no hay fórmula en C26, no existe la celda verde «meses», el rótulo «Fondo de maniobra (6 meses)» sigue igual en los dos libros y los rangos de calculadora-capex no se han tocado. Y la v2.0 ha añadido, en el mismo producto, la prueba de que la cifra es falsa.",
+      "evidencia": "'Inversión'!B26='Fondo de maniobra (6 meses)' con C26 vacía y sin fórmula (grep de «maniobra» en el volcado de los 18 xlsx devuelve exactamente 2 líneas, las dos rótulos). calculadora-capex!'CAPEX'!B15='Fondo de maniobra (6 meses)' con C15=60000, D15=120000, E15=200000, sin cambios respecto a v1.1. Contraste con lo que el mismo pack calcula ahora: pl-mensual-escenarios!'Escenarios'!B20=SUM(B12:B14)=46000+17000+22000=85.000 €/mes de costes fijos en el escenario pesimista → 6 meses = 510.000 €. El «rango alto» de 200.000 € cubre 2,35 meses bajo una etiqueta que dice 6.",
+      "fix": "C26 = (costes fijos mensuales + coste variable estimado del mes) × meses, con «meses» en celda verde y mínimo 6, leyendo el personal de plantilla-turnos-brigada y el resto del 'P&L Mensual', tal y como pide §2.3.5; y actualizar C15:E15 de calculadora-capex al orden de magnitud resultante o renombrar la partida a lo que de verdad cubre."
+    },
+    {
+      "id": "RC-04",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'Inversión'!F4 (cabecera) y F5:F26 (vacías) · 'Instrucciones'!A19 · calculadora-capex.xlsx!'Instrucciones'!A13",
+      "hallazgo": "La tabla de correspondencia 22→12 categorías que TEC-26/§2.3.6 exige para reconciliar los dos CAPEX sin fusionar libros es una cabecera sin ni una fila. Dos hojas de Instrucciones afirman al comprador que la columna existe y funciona.",
+      "evidencia": "'Inversión'!F4 = «Categoría equivalente en calculadora-capex.xlsx»; el volcado de todas las celdas no vacías del libro no devuelve NINGUNA F5..F26. 'Instrucciones'!A19: «...la última columna de «Inversión» dice a qué categoría suya corresponde cada concepto». calculadora-capex!'Instrucciones'!A13: «...hoja «Inversión», que trae la correspondencia concepto → categoría de esta hoja».",
+      "fix": "Rellenar F5:F26 con el mapa de los 22 conceptos a las 12 categorías de calculadora-capex, y añadir en la hoja CAPEX una fila que compare su total con el de 'Inversión'!C27 para que los dos libros sean comparables sin externalLink, que es lo que §2.3.6 pide."
+    },
+    {
+      "id": "RC-05",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "'Equipamiento Cocina'!G98 vs calculadora-capex.xlsx!'CAPEX'!E6 y C17",
+      "hallazgo": "TEC-27 / COM-09 («los totales del CAPEX y el rango de la landing dicen lo mismo») sigue sin resolverse y la v2.0 lo ha EMPEORADO: al completar el checklist hasta los 91 ítems, su total supera el rango ALTO de mercado que declara el propio producto para esa misma partida.",
+      "evidencia": "checklist-equipamiento-cocina!'Equipamiento Cocina'!G98 = SUM(G5:G95) = 164.718,40 € (verificado con data_only; G95 = 12 % de instalación sobre 147.070 €). calculadora-capex!'CAPEX'!E6 «Equipamiento cocina profesional — Rango Alto» = 150.000 €. Suma medida de los 8 checklists: 3.400 + 1.610 + 108.200 + 164.718,40 + 11.000 + 23.960 + 23.800 + 30.230 = 366.918,40 €, frente a calculadora-capex!C17 (TOTAL rango BAJO, 12 categorías, incluida obra civil) = 373.000 €. Y 32 de los 91 ítems del checklist siguen sin importe.",
+      "fix": "Antes de que T8 escriba ninguna cifra: recalibrar C6:E6 de calculadora-capex al coste real que ahora tasa el checklist, o justificar en Instrucciones por qué el checklist es un techo y el rango un supuesto distinto. Un comprador que sume las dos hojas ve la contradicción en dos minutos."
+    },
+    {
+      "id": "RC-06",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/pl-mensual-escenarios.xlsx",
+      "ubicacion": "'Escenarios'!E12",
+      "hallazgo": "La nota que justifica las tres cifras de personal precargadas cita, como si fuera buena, exactamente el dato que DOM-02/COM-10 (alta, FAMILIA 8) declara FALSO: afirma que los rangos del capítulo 13 van «con la SS de la empresa». La SPEC §5.4 demuestra que son el bruto SIN SS y da las cifras correctas.",
+      "evidencia": "'Escenarios'!E12 (literal): «Capítulo 13: cocina 250.000-450.000 €/año y sala 200.000-350.000 €/año con la SS de la empresa, para una plantilla de 22-30 personas. Los tres escenarios caben en ese rango (552 / 624 / 768 k€ al año).» SPEC §5.4: «Hoy: 'coste total anual personal cocina 250.000-450.000 € (incluyendo SS empresa ~30 %)' cuando la suma de su propia tabla ES EL BRUTO SIN SS. Cifras correctas: cocina 322.400-601.900 €, sala 234.000-403.000 €, total 556 k€-1,0 M€». El mismo texto erróneo sigue vivo en el PDF y el DOCX del pack (ver RC-10).",
+      "fix": "Reescribir E12 con 322.400-601.900 € (cocina) y 234.000-403.000 € (sala) y remitir a plantilla-turnos-brigada!'Turnos Semana'!C41 (SS 33 % en celda) en lugar del «~30 %» del capítulo. Si no, el corrector arrastra a la v2.0 el defecto que la v2.0 existe para eliminar."
+    },
+    {
+      "id": "RC-07",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!A44 y A30/B30:M30 · A28/B28:M28 · B31",
+      "hallazgo": "El libro se contradice a sí mismo: la nota afirma que el break-even se lee CON la cuota del préstamo, y la fila de la cuota no tiene ni valor ni fórmula en ninguno de los 12 meses, igual que la del IVA soportado. De las tres filas de IVA que exige DOM-03/§2.4 sólo dos calculan.",
+      "evidencia": "'Cash Flow 12 Meses'!A44: «El mes de break-even se lee sobre el FLUJO ACUMULADO CON IVA Y DEUDA: un punto de equilibrio sin la cuota del préstamo es un punto de equilibrio falso». A30 = «(-) Cuota del préstamo (capital + intereses) — la calcula plan-financiero-3-anos.xlsx, hoja «Financiación»» y B30:M30 están vacías (sólo existe N30=SUM(B30:M30)). A28 «(-) IVA soportado» igual: sólo N28. B31 = B21+B27-B28-IF(ISNUMBER(B29),B29,0)-B30 resta celdas vacías. Sí calculan B27 (IVA repercutido) y E29/H29/K29 (liquidación trimestral). Cache: B31=0.0, B32=0.0, M32=0.0.",
+      "fix": "Precargar B30:M30 con la cuota que ya calcula plan-financiero!'Financiación'!B12 (3.527,999… → 3.528,00 €/mes con los parámetros de ejemplo) y B28:M28 con el IVA soportado de la parte de gasto que lo lleva; o, si se deja en blanco, reescribir A44 para que no afirme lo que el fichero no hace."
+    },
+    {
+      "id": "RC-08",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!B6:M9, B13:M18 y B43",
+      "hallazgo": "La tarjeta que más directamente responde al escéptico —«punto de equilibrio automático»— entrega literalmente «No alcanzado» al abrir el fichero recién descargado, porque las 10 filas de ingresos y gastos de los 12 meses están vacías. Seis de las diez plantillas Excel abren sin un solo número.",
+      "evidencia": "cash-flow-break-even (cache): B10=0.0, B19=0.0, B21=0.0, B22=0.0, M22=0.0, B32=0.0 y B43='No alcanzado'. Sí calculan las celdas del bloque break-even que sí tienen entradas: B39=130000.0 y B42=53.72. Ficheros que abren sin ningún valor: plan-financiero-3-anos (RC-01), cash-flow-break-even, escandallo-maestro (H28/H29/H30/H32/H33=None), plantilla-turnos-brigada (K6/O6/P6/K33/L33/O33/P33=None), budget-bodega (N56/O56/L56/I56=None) y cronograma-apertura-gantt (AA6=None). Corroborado por el propio informe: inject_cache registra cache_inyectado=0 sobre 355 fórmulas en budget-bodega, 0 sobre 230 en plantilla-turnos y 0 sobre 26 en el gantt.",
+      "fix": "Precargar una serie de 12 meses coherente con el escenario Realista de pl-mensual (169.950 €/mes de ingresos con rampa de apertura y los gastos del P&L), de forma que B43 devuelva un mes y no un aviso. Es el mismo criterio que ya se aplicó a pl-mensual y a menu-engineering; aplicarlo a la mitad de las plantillas y a la otra mitad no es defendible ante el comprador."
+    },
+    {
+      "id": "RC-09",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'P&L Mensual'!B10,B15,B17,B32,B34,B36,B37 · 'Inversión'!C27,D27 · cash-flow-break-even!B10,B19,B21,B22,B31,B32",
+      "hallazgo": "La decisión 13 de §7-bis («Sin dato se escribe \"\", nunca 0») se aplicó a pl-mensual y a los checklists pero NO a los dos libros más visibles: presentan ceros con formato de euro donde no hay dato, que es exactamente lo que la decisión prohíbe. El comprador lee «EBITDA 0,00 €» y «TOTAL inversión 0,00 €» como si fueran resultados.",
+      "evidencia": "Cache del dry-run: 'P&L Mensual'!B10=0.0, B15=0.0, B17=0.0, B32=0.0, B34=0.0, B36=0.0, B37=0.0 (todas con formato #,##0.00 €), mientras B35=None (\"\") porque sí lleva la guarda IF(B10=0,\"\",...). 'Inversión'!C27=0.0 y D27=0.0. cash-flow: B10=0.0, B19=0.0, B21=0.0, B22=0.0, B31=0.0, B32=0.0. El patrón correcto ya existe en el mismo paquete: checklist-legal!G55 usa IF(COUNTIF(...)=0,\"\",SUM(...)) y menu-engineering!D31 y plantilla-turnos!K33 también.",
+      "fix": "Envolver los SUM/restas de resultado con el mismo patrón que ya usan los checklists: IF(COUNTIF(rango,\"<>\")=0,\"\",SUM(rango)) y IF(OR(dep=\"\"),\"\",...). Es un cambio mecánico y deja el gate data_only midiendo lo que dice medir."
+    },
+    {
+      "id": "RC-10",
+      "severidad": "alta",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/guia-restaurante-gastronomico.pdf",
+      "ubicacion": "PDF y DOCX (sin tocar) frente a checklist-legal!C15/H15, checklist-marketing!H28, plantilla-turnos!C42 y cronograma!A15",
+      "hallazgo": "Tras T1-T5 el pack se contradice a sí mismo en materia legal y laboral: los xlsx corregidos y la guía en PDF/DOCX viajan en la MISMA descarga y dicen cosas opuestas. El caso más grave: el cuadrante pinta en ROJO el salario que la propia guía recomienda.",
+      "evidencia": "Texto extraído del PDF y del DOCX de mi copia (idénticos a producción, mtime 18-ago): «Un restaurante gastronómico necesita licencia C3 (restaurante con cocina profesional completa separada físicamente del comedor)» ×3 · «Resy: segmento premium. Propiedad de American Express. 300-500 USD/mes» · «22. Tendencias 2025-2026» · «Ayudante de cocina 2-3 16.000-19.000€/ud … Plonge 1-2 15.000-17.000€/ud» · «Coste total anual personal cocina: 250.000-450.000€ (incluyendo SS empresa ~30%)» · «Andalucía: plataformas telemáticas CIRCE» · «Con 306 restaurantes con Estrella Michelin (2026), es el tercer país del mundo tras Francia y Japón» · «necesita un local de aproximadamente 250 m²» · «La inversión inicial oscila entre 500.000€ y 900.000€». Frente a: checklist-legal!C15 «Licencia de actividad clasificada de restaurante — la clasificación y el nombre dependen de la ordenanza municipal…», checklist-marketing!H28 «Resy fuera: no opera en España», plantilla-turnos!C42 SMI=17.094 € con CF roja sobre L6:L30 =AND(ISNUMBER($L6),$L6<$C$42). Metadatos aún sin tocar: PDF title/author='(anonymous)', 10 páginas, 2.488 palabras; los 3 DOCX author='python-docx', created=2013-12-23.",
+      "fix": "T7 es BLOQUEANTE para publicar: no se puede aplicar la capa xlsx a producción sin regenerar la guía y los dos bonus, o el comprador recibe un pack que se desmiente solo. Si hubiera que entregar por fases, entregar antes los documentos que los checklists."
+    },
+    {
+      "id": "RC-11",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/escandallo-maestro.xlsx",
+      "ubicacion": "Mensaje de entrada de la DV, replicado en 10 hojas de 8 ficheros",
+      "hallazgo": "El mensaje de entrada de la validación de la merma se ha pegado en TODAS las celdas de porcentaje del producto, incluidas las que no tienen nada que ver con mermas. Al hacer clic en el tipo de interés del préstamo o en la Seguridad Social de la empresa, el cliente lee una explicación sobre pescado.",
+      "evidencia": "Texto único repetido: «Se escribe en tanto por uno: 0,20 = 20 %. Tope 0,95 porque la merma entra en el coste como neta/(1-merma).» Aplicado en: escandallo-maestro!'Ficha (plantilla)'!F7:F26 (correcto), H4 (food cost objetivo) y H31 (tipo de IVA); calculadora-ticket-medio!'Ticket Medio'!B5,B7,B9,B11,B13 y C/D (% de comensales); cash-flow-break-even!B25 (tipo de IVA) y B38 (margen de contribución); pl-mensual-escenarios!B11,C11,D11 (food cost); plan-financiero!'Proyección 3 Años'!B8,C8,D8 (Impuesto de Sociedades) y 'Financiación'!B7 (tipo de interés); menu-engineering!I32 (factor del umbral); checklist-equipamiento-cocina!'Instrucciones'!B11 (% de instalación); plantilla-turnos-brigada!'Turnos Semana'!C41 (SS de la empresa).",
+      "fix": "Un prompt por concepto en el helper de DV de porcentajes: parametrizar el texto en lugar de constante única. El de la merma se queda sólo en la columna F del escandallo."
+    },
+    {
+      "id": "RC-12",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "'Turnos Semana'!L6:L30, C43, K33, L33, O33, P33 · src/pages/GuiaRestauranteGastronomicoDashboard.tsx:36",
+      "hallazgo": "La tarjeta vende «cuadrante semanal para 25 personas CON COSTE» y el libro no puede dar ni un coste al abrirse: exige del cliente dos datos que la propia guía no le da (el bruto de cada puesto y la jornada anual de convenio). La decisión de vaciar los brutos por estar bajo el SMI (correcta para DOM-13) deja la promesa de coste sin cubrir.",
+      "evidencia": "'Turnos Semana'!L6:L30 («Bruto anual (€)») vacías; C43 («Jornada anual de convenio (h/año)») vacía; nota A45: «El «Bruto anual» se deja vacío a propósito…». Consecuencia medida (cache): K6=None, O6=None, P6=None y la fila TOTAL BRIGADA K33=None, L33=None, O33=None, P33=None. Todas las fórmulas de O dependen de $C$43: =IFERROR(IF(OR($L6=\"\",$C$43=\"\",$C$43=0),\"\",$L6*(1+$C$41)/$C$43),\"\"). Dashboard `…Dashboard.tsx:36`: 'Cuadrante semanal para 25 personas con coste'.",
+      "fix": "Precargar al menos C43 (la jornada anual del convenio de hostelería, que es un dato público y no una invención) y los brutos de los puestos que SÍ están por encima del SMI, dejando en rojo sólo los dos que el capítulo 13 publica por debajo; y que T7 corrija esos dos rangos en el texto para poder precargar los 24."
+    },
+    {
+      "id": "RC-13",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "'Registro de jornada'!C51:C60",
+      "hallazgo": "El bloque «Horas registradas por trabajador y semana» devolverá #¡VALOR! en Excel y LibreOffice en cuanto quede una fila del parte sin rellenar, que es siempre. La forma con operador * propaga el error cuando el rango lleva texto; el mismo paquete usa bien la forma con comas en otro sitio, así que es una incoherencia interna.",
+      "evidencia": "'Registro de jornada'!C51 = IF(OR($A51=\"\",$B51=\"\"),\"\",ROUND(SUMPRODUCT(($B$5:$B$44=$A51)*($C$5:$C$44=$B51)*$F$5:$F$44),5)) — y F5:F44 son fórmulas que devuelven \"\" (F5 = IF(OR($D5=\"\",$E5=\"\"),\"\",MOD($E5-$D5,1)) con D5/E5 vacías). Multiplicar TRUE/FALSE por \"\" da #¡VALOR!. Contraste correcto en el mismo paquete: menu-engineering!'Menu Engineering'!G31 = IFERROR(IF($D$31=\"\",\"\",ROUND(SUMPRODUCT($D$5:$D$29,$G$5:$G$29),2)/$D$31),\"\") usa la forma con comas, que sí trata el texto como cero.",
+      "fix": "Sustituir por SUMPRODUCT(--($B$5:$B$44=$A51),--($C$5:$C$44=$B51),IFERROR($F$5:$F$44*1,0)) o por un SUMIFS sobre una columna auxiliar numérica. Y añadirlo a las demostraciones: la demo actual sólo prueba F y G, no C51."
+    },
+    {
+      "id": "RC-14",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "DV de 'Turnos Semana'!D6:J30 (lista \"M,T,P,L,V\")",
+      "hallazgo": "Es la ÚNICA validación de datos del producto sin mensaje de error, contra §1.7 («Toda DV con showErrorMessage=True»). Justo la del cuadrante, que es donde el cliente teclea 168 celdas a mano: una letra distinta se acepta en silencio y la columna de horas la cuenta como 0.",
+      "evidencia": "Volcado de validaciones: «DV|plantilla-turnos-brigada.xlsx|Turnos Semana|D6 … J30|list|\"M,T,P,L,V\"|…|err=False». Todas las demás DV del producto llevan err=True (comprobadas las 28 del volcado: M6:M30 pagas err=True, C36:C44 err=True, C41 err=True, las tres de cada checklist err=True, las del gantt err=True). K6 = IF(COUNTIF(D6:J6,\"<>\")=0,\"\",ROUND(SUMPRODUCT((D6:J6=\"M\")*$C$36+…))) suma 0 por cualquier letra no prevista.",
+      "fix": "showErrorMessage=True en esa DV, con el mensaje que ya está documentado en 'Instrucciones'!A13 («M, T, P, L y V. La V es VACACIONES»)."
+    },
+    {
+      "id": "RC-15",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-legal.xlsx",
+      "ubicacion": "'Legal'!G48:G52 y G66 (subtotal «Local») frente a G55 (TOTAL)",
+      "hallazgo": "El bloque «Local» que DOM-23 añade —el más caro de toda la apertura— aporta 0,00 € al presupuesto. Después de añadir 8 ítems el TOTAL BAJA 20 € respecto de la v1.1, y la propia nota del fichero dice que la carencia «es la cláusula que más dinero ahorra de toda la lista» mientras el subtotal de su categoría imprime cero.",
+      "evidencia": "'Legal'!G48, G49, G50, G51, G52 vacías (filas 44-48: arrendamiento, fianza legal de 2 mensualidades, carencia de renta, cesión y traspaso, condición suspensiva); G66 = SUMIF($B$5:$B$52,$A66,$G$5:$G$52) con A66='Local' → 0,00 €. G55 = SUM(G5:G52) = 23.960,00 € medido con data_only, frente a los 23.980 € que el R1 midió en v1.1 (COM-18). Con el alquiler que el propio pack precarga (pl-mensual!C13 = 17.000 €/mes) la fianza legal del art. 36 LAU son 34.000 €, más que el total entero del checklist. Otros 3 ítems laborales nuevos (G37:G40) también van sin importe.",
+      "fix": "Calcular la fianza desde una celda verde de renta mensual (× 2), igual que checklist-equipamiento calcula el 12 % de instalación desde 'Instrucciones'!B11; y para los ítems de asesoría, dar un rango orientativo o excluirlos explícitamente del TOTAL con una nota, para que el subtotal «Local» no imprima 0,00 € junto a cinco líneas."
+    },
+    {
+      "id": "RC-16",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/cronograma-apertura-gantt.xlsx",
+      "ubicacion": "'Gantt'!X6:Y36 y Z6:Z36 frente a 'Instrucciones'!A6",
+      "hallazgo": "El cronograma precargado incumple la regla de dependencias que sus propias Instrucciones enuncian, en 7 de las 20 dependencias, y nada en el fichero lo detecta. Tres tareas encadenadas caen en el mismo mes.",
+      "evidencia": "'Instrucciones'!A6: «\"Depende de\" dice qué tarea tiene que estar terminada antes de empezar ésta». Casos medidos: A10 «Dossier bancario…» X10=2 depende de A6 «Estudio de viabilidad» (X6=1, Y6=2 → meses 1-2); A8 «Negociación y firma del arrendamiento» X8=3 y A11 «Contratación arquitecto» X11=3 dependen de A7 «Búsqueda y selección de local» (X7=1, Y7=3 → meses 1-3); A16 «Registro sanitario CCAA» X16=12 depende de A18 «Obra civil» (X18=9, Y18=4 → meses 9-12); A25 «Compra vajilla» X25=14 depende de A20 «Mobiliario y decoración» (X20=13, Y20=2 → 13-14); A30 «Fotografía profesional» X30=17 depende de A29 «Pruebas de carta» (X29=16, Y29=2 → 16-17); y la cadena A34 «Apertura oficial» X34=18 → A35 «Primeros 30 días» X35=18 → A36 «Ajustes de carta» X36=18. La columna Z es texto libre sin lista de validación, así que renombrar una tarea rompe la dependencia sin aviso.",
+      "fix": "Desplazar los inicios al mes siguiente al fin del predecesor (o reformular A6 como «puede solaparse»), poner en Z una DV de lista con los nombres de tarea, y añadir una regla de formato condicional que marque X < fin del predecesor, igual que ya existe la que marca X+Y-1 > 18."
+    },
+    {
+      "id": "RC-17",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/menu-engineering-matrix.xlsx",
+      "ubicacion": "'Instrucciones'!A16 frente a 'Menu Engineering'!C5:C29, D31, D32 y G31",
+      "hallazgo": "Las Instrucciones piden analizar familia por familia y el fichero se entrega haciendo justo lo contrario, con un único umbral y un único margen medio para toda la carta. La columna «Categoría» no la lee ninguna fórmula, así que seguir la instrucción obliga al cliente a borrar filas.",
+      "evidencia": "'Instrucciones'!A16: «Aplica la matriz DENTRO de una familia de carta (entrantes con entrantes, principales con principales). Un menú degustación de 145 € y un postre de 15 € en la misma tabla arrastran el margen medio y clasifican mal casi todo: analiza los menús aparte.» Precarga real: 12 platos con C5:C8='Entrante', C9='Principal'… y las fórmulas globales D31 = SUM(D5:D29) = 930 uds, G31 = 18,58 € (media ponderada de TODA la tabla), D32 = I32/COUNTIF(D5:D29,\">0\") = 0,7/12 = 5,83 %. I5 clasifica contra $G$31 y $D$32, sin ninguna referencia a C.",
+      "fix": "O segmentar por categoría (SUMPRODUCT/COUNTIFS filtrando C) y calcular umbral y margen medio por familia, o retirar la instrucción y precargar una sola familia. Tal y como está, la hoja desautoriza su propio ejemplo."
+    },
+    {
+      "id": "RC-18",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/escandallo-maestro.xlsx",
+      "ubicacion": "'Ficha (plantilla)'!H33 (y G33)",
+      "hallazgo": "«Food cost real sobre el PVP sin IVA (%)» es tautológica: siempre devuelve exactamente el food cost objetivo, porque el PVP del que se divide se ha calculado con ese mismo objetivo. Parece una comprobación y no puede discrepar nunca. Falta la celda que sí importa: el food cost contra el precio que de verdad va en la carta.",
+      "evidencia": "'Ficha (plantilla)'!H30 = IFERROR(IF(OR($H$29=\"\",$H$4=\"\",$H$4=0),\"\",$H$29/$H$4),\"\") y H33 = IFERROR(IF(OR($H$29=\"\",$H$30=\"\",$H$30=0),\"\",$H$29/$H$30),\"\"), es decir H29/(H29/H4) = H4 = 0,28 siempre, con formato 0.0% → imprimirá 28,0 % con cualquier escandallo. La nota A35 del mismo fichero explica que el food cost REAL sube a 30,8 % si se pone el PVP sin IVA en la carta, y no hay ninguna celda que lo calcule.",
+      "fix": "Añadir una celda verde «PVP real de carta (con IVA)» y redefinir H33 = coste por ración / (PVP real / (1+IVA)), que es el número que el cap. 3 pide vigilar entre el 28 y el 32 %."
+    },
+    {
+      "id": "RC-19",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/escandallo-maestro.xlsx",
+      "ubicacion": "'Resumen'!A5:G5 y A7:A9",
+      "hallazgo": "La hoja «Resumen» que §4.1/TEC-23 pide para consolidar «el coste por ración y el PVP de cada ficha» consolida exactamente UNA ficha, y ampliarla obliga al cliente a editar el nombre de la hoja dentro de seis fórmulas a mano. La promesa del pack es un menú degustación de 8-12 pases.",
+      "evidencia": "'Resumen' sólo tiene la fila 5, con B5..F5 apuntando a 'Ficha (plantilla)' (p. ej. C5 = IFERROR(IF('Ficha (plantilla)'!H28=\"\",\"\",'Ficha (plantilla)'!H28),\"\")). A9: «Copia la fila 5 de esta hoja a la fila siguiente y cambia en las fórmulas «Ficha (plantilla)» por el nombre de la hoja nueva (entre comillas simples si lleva espacios)». El propio fichero dice en 'Instrucciones'!A7-bis: «Un menú degustación de 8-12 pases necesita una ficha por pase».",
+      "fix": "Precargar 10-12 filas en 'Resumen' apuntando a hojas «Ficha 01»…«Ficha 12» ya duplicadas (o con INDIRECT sobre una columna verde con el nombre de la hoja), para que consolidar no exija editar fórmulas."
+    },
+    {
+      "id": "RC-20",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts",
+      "ubicacion": ":26, :142, :152, :187 (y src/pages/GuiaRestauranteGastronomicoDashboard.tsx:29)",
+      "hallazgo": "COM-03 («la FAQ y el JSON-LD dicen la verdad sobre las fórmulas») sigue sin poder darse por resuelto: las fórmulas ya existen, pero abriendo los dos ficheros que la FAQ nombra por su nombre el comprador ve ceros y un aviso. La afirmación que T8 tiene que escribir depende de que antes se arreglen RC-01 y RC-08.",
+      "evidencia": ":142 «Sí. Las 10 plantillas Excel incluyen fórmulas automáticas: plan financiero con P&L y break-even, escandallos por plato…»; :187 (JSON-LD) «Sí. Plan financiero a 3 años, escandallos, menu engineering, cash flow, break-even y más. Todo con fórmulas encadenadas.» Medido hoy: plan-financiero 'P&L Mensual'!B34 = 0,00 €, 'Proyección 3 Años'!B11 = \"\"; cash-flow B43 = 'No alcanzado'; escandallo H28..H33 = None. Dashboard :29 «12 meses de cash flow + punto de equilibrio automático».",
+      "fix": "Resolver RC-01 y RC-08 antes de T8, y sólo entonces escribir la redacción pactada en §6.2. Escribir la frase con los ficheros en este estado repetiría el defecto que COM-03 denuncia."
+    },
+    {
+      "id": "RC-21",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/src/pages/GuiaRestauranteGastronomicoDashboard.tsx",
+      "ubicacion": ":36 y :39 · astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts:67,:74,:84,:85,:94,:107,:139",
+      "hallazgo": "Inventario de cifras y promesas de la capa de producto que la ejecución de T1-T5 deja descuadradas o desmentidas, medidas contra mi copia dry-run. Van juntas para que T8 las cruce de una vez.",
+      "evidencia": "(a) Dashboard :39 «40 trámites» — checklist-legal tiene ahora 48 ítems (filas 5-52, TOTAL=SUM(G5:G52)). (b) Dashboard :36 «25 personas» — plantilla-turnos!'Instrucciones'!A1 dice «(24 personas)», el cuadrante tiene 24 filas numeradas (A6:A30 con hueco en 21) y el DOCX dice «Brigada (12-17)» + «Sala (9-12)» = 21-29: cuatro cifras vivas para TEC-13/COM-21. (c) `.ts:74` «Zwiesel» no aparece en ninguno de los 18 xlsx ni en el PDF/DOCX (grep = 0). (d) `.ts:85` «Tendencias 2025-2026» (COM-29). (e) `.ts:84` «Resy», que checklist-marketing!H28 declara fuera. (f) `.ts:67`, `:94`, `:107`, `:139` «500K-900K€» frente a 'Inversión'!C27 = 0,00 € y a los 366.918,40 € que suman los 8 checklists. (g) `.ts:107` «salarios España 2026» frente a la columna de brutos vaciada a propósito (RC-12).",
+      "fix": "Cruzar las siete en el gate de coherencia de cifras de §6.11 y decidir cada una en T8 con el número MEDIDO, no con el heredado."
+    },
+    {
+      "id": "RC-22",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "'Turnos Semana'!D43",
+      "hallazgo": "Frase rota por concatenación de plantilla, con dos dos-puntos seguidos y una mayúscula en mitad de la oración, en la nota que explica el único dato que bloquea todos los costes del libro.",
+      "evidencia": "'Turnos Semana'!D43 (literal): «La fija el convenio provincial de hostelería (está en su tabla salarial anual). No se rellena con una cifra inventada: Sin dato en la guía: escríbelo tú. Mientras esté vacío, las celdas que dependen de él muestran \"\" y no un cero que parezca un resultado.»",
+      "fix": "Redactar: «La fija el convenio provincial de hostelería, en su tabla salarial anual. No se precarga con una cifra inventada: escríbela tú. Mientras esté vacía, las celdas que dependen de ella muestran \"\" en vez de un cero que parezca un resultado.» Y revisar el resto de notas generadas por el mismo helper."
+    },
+    {
+      "id": "RC-23",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-equipamiento-cocina.xlsx",
+      "ubicacion": "'Equipamiento Cocina'!G98 y filas 35/43 y 75/79",
+      "hallazgo": "El TOTAL que §1.9/COM-31 añade para que los 8 checklists dejen de sumarse a mano no es el total de ninguna configuración real: el libro trae dos parejas de líneas mutuamente excluyentes y 32 de sus 91 ítems sin importe. Y es el número que choca con calculadora-capex (RC-05).",
+      "evidencia": "Fila 75 «Lavavajillas de capota 50×50» G=3500 con la nota «Elige UNA de las dos: capota o túnel de lavado… Si eliges el túnel, pon esta línea a 0»; fila 79 «Túnel de lavado…» G vacía con «Rango medido 12.000‑25.000 €. Va SIN importe a propósito». Fila 35 «Cocina industrial 6 fuegos + horno» G=5200; fila 43 «Bloque modular de cocción de alta gama (alternativa al bloque estándar)» G vacía con «elige uno y pon el otro a 0». 32 filas con G vacío sobre 91 (Thermomix, Pacojet, cuchillería, sondas, segundo roner…). G98 = SUM(G5:G95) = 164.718,40 € medido con data_only.",
+      "fix": "Marcar las alternativas con una celda verde de selección (o un subtotal aparte «opciones excluyentes») para que el TOTAL sea el de la configuración elegida, y decir en 'Instrucciones' cuántas líneas van sin tasar, para que 164.718,40 € se lea como suelo y no como presupuesto."
+    },
+    {
+      "id": "RC-24",
+      "severidad": "media",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!N28 y N33",
+      "hallazgo": "Dos totales anuales de la fila de IVA pierden el formato de euro que llevan sus vecinas, porque la regla de §1.4 decide por el texto de la etiqueta y estas dos etiquetas son prosa larga sin «(€)».",
+      "evidencia": "N28 = SUM(B28:M28) con number_format «#,##0» y N33 = SUM(K27:M27)-SUM(K28:M28) con «#,##0», junto a N27, N29, N30, N31, que llevan «#,##0.00 €». Etiquetas: A28 «(-) IVA soportado (compras y gastos con IVA; las nóminas y la Seguridad Social no llevan)» y A33 «IVA del 4.º trimestre — se liquida en enero del año siguiente (no es caja de este ejercicio)».",
+      "fix": "Forzar el formato € en las filas del bloque de IVA y deuda por posición, no por etiqueta; o añadir «(€)» a esas dos etiquetas, que es lo que la heurística busca."
+    },
+    {
+      "id": "RC-25",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-diseno-sala.xlsx",
+      "ubicacion": "'Diseño de Sala (FOH)'!H33 frente a C5, C6, C7, C8, C13 (y 34 celdas más del producto)",
+      "hallazgo": "El guion no separable U+2011 se aplica en 16 celdas de rango y NO en otras 20, a veces en el mismo libro, así que la convención tipográfica de la familia queda a medias.",
+      "evidencia": "Con U+2011: checklist-diseno-sala!H33 «22‑30», checklist-equipamiento!H64 «8‑10», H75 «300‑600», H79 «12.000‑25.000», H92 «12.000‑30.000» (16 en total). Con guion normal: budget-bodega!'Instrucciones'!A12 «28-40», checklist-diseno-sala!C5 «(1,8-2,5», C6 «(45-50», C7 «(8-10», C8 «(6-8», C13 «2700-3000K», checklist-contratacion!C16 «(1-3» (20 en total). U+202F aparece 55 veces, con el mismo criterio parcial.",
+      "fix": "Pasar todos los rangos por el mismo normalizador, referenciando los caracteres por escape (G='\\u2011', N='\\u202f') como manda CLAUDE.md, y ejecutarlo también sobre el contenido heredado, no sólo sobre las notas nuevas."
+    },
+    {
+      "id": "RC-26",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/escandallo-maestro.xlsx",
+      "ubicacion": "'Instrucciones'!A13, 'Ficha (plantilla)'!A35, 'Resumen'!A8 y plantilla-turnos-brigada!'Turnos Semana'!D36",
+      "hallazgo": "Cuatro instrucciones nuevas de la v2.0 usan la flecha ASCII «->» mientras las otras 20 del producto usan «→», y en la misma hoja conviven las dos.",
+      "evidencia": "escandallo!'Instrucciones'!A13: «clic derecho sobre la pestaña -> Mover o copiar -> «Crear una copia»» junto a A19 en la misma hoja: «Revisar → Desproteger hoja». También 'Ficha (plantilla)'!A35 «(28 % -> 30,8 %)», 'Resumen'!A8 y plantilla-turnos!D36 «Tabla de equivalencia turno -> horas». Recuento sobre las 18 hojas: 20 celdas con «→», 4 con «->».",
+      "fix": "Sustituir «->» por «→» en esas cuatro celdas (U+2192 sí es codificable en WinAnsi, así que no rompe el pipeline de documentos)."
+    },
+    {
+      "id": "RC-27",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-inspeccion-michelin-repsol.xlsx",
+      "ubicacion": "Uso mezclado de «sólo»/«solo» en 11 celdas del producto",
+      "hallazgo": "Ortografía inconsistente entre celdas del mismo producto: 7 usos de «sólo» con tilde diacrítica y 4 de «solo» sin ella.",
+      "evidencia": "Con tilde, entre otras: checklist-inspeccion-michelin-repsol «El apartado de sostenibilidad de las guías incluye a las personas, no sólo al producto»; plan-financiero!'Financiación'!A13 «Cuota mensual DURANTE la carencia (€) — sólo intereses» y A15 «Durante la carencia sólo se pagan intereses»; pl-mensual!E11 «25-28 % en el modelo de sólo menú degustación»; checklist-equipamiento «Esto es SÓLO la campana»; checklist-marketing!C16 «no sólo platos». Sin tilde: 4 celdas.",
+      "fix": "Unificar a «solo» sin tilde (recomendación RAE vigente) en un barrido único sobre el módulo de contenido."
+    },
+    {
+      "id": "RC-28",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-appcc.xlsx",
+      "ubicacion": "'APPCC'!C57, checklist-equipamiento-cocina!'Equipamiento Cocina'!C15, plan-financiero!'Financiación'!A15",
+      "hallazgo": "Tres caracteres fuera de WinAnsi viven en celdas cuyo texto reutilizará el pipeline de documentos de §5, cuyo gate `restos_no_winansi()` aborta ante ellos y cuya maqueta Helvetica los pintaría como ■. En el xlsx no molestan; en T7 sí.",
+      "evidencia": "U+2264 «≤» en checklist-appcc!'APPCC'!C57: «Enfriamiento a ≤10 °C en menos de 2 h tras cocción prolongada». U+2082 «₂» en checklist-equipamiento!C15: «Sifones de 1 L y cargas de N₂O (set)». U+2212 «−» (signo menos, distinto del guion) en plan-financiero!'Financiación'!A15: «importe × i / (1 − (1+i)^−n)». Barrido de no latinos (CJK, cirílico, hangul, árabe, hebreo, tailandés) sobre los 18 xlsx: 0 ocurrencias.",
+      "fix": "Sustituir por «<=» o «10 °C o menos», «N2O» y el guion-menos normal antes de que el guion de T7 tome texto de estos ficheros; o añadir esos tres puntos de código al saneador WinAnsi."
+    },
+    {
+      "id": "RC-29",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/guia-restaurante-gastronomico.pdf",
+      "ubicacion": "Capa de texto del PDF, «Consejo del Chef» (×2)",
+      "hallazgo": "El PDF que hoy se entrega ya imprime un glifo equivocado donde el DOCX pone un emoji: la fuente no lo tiene y sale una «I» suelta. Es un aviso para el maquetado de T7, que hereda el mismo problema si no sanea.",
+      "evidencia": "Texto extraído con PyMuPDF de guia-restaurante-gastronomico.pdf: «Desglose de inversión (CAPEX) I Consejo del Chef: El fondo de maniobra es la partida que más se subestima…». El DOCX equivalente dice «💡 Consejo del Chef». Aparece 2 veces en el PDF.",
+      "fix": "En `documentos.py`, mapear los emojis a un carácter tipográfico disponible (p. ej. «▸» o negrita) antes de `construir_pdf()`, y añadir el caso al gate de §5.6.6."
+    },
+    {
+      "id": "RC-30",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/cash-flow-break-even.xlsx",
+      "ubicacion": "'Cash Flow 12 Meses'!A34",
+      "hallazgo": "Una cifra escrita a mano en una nota rompe la convención de separador de miles del resto del producto. El valor en sí es correcto (verificado), es sólo el formato.",
+      "evidencia": "A34: «Con el préstamo de ejemplo de plan-financiero-3-anos.xlsx la cuota mensual es 3528,00 €; cópiala aquí cuando cierres tu financiación.» El resto del producto escribe «17.094 €/año», «5.200 €», «12.000‑30.000 €». Valor comprobado: plan-financiero!'Financiación'!B12 = 3527.9991188221434 → 3.528,00 € ✓.",
+      "fix": "Escribir «3.528,00 €» con el mismo formateador que usa el resto de las notas."
+    },
+    {
+      "id": "RC-31",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/budget-bodega.xlsx",
+      "ubicacion": "'Bodega' (A:S) y escandallo-maestro!'Ficha (plantilla)' columna G",
+      "hallazgo": "Dos hojas crecen mucho a lo ancho sobre un A4 con `fitToWidth=1` heredado de la Fase A, y en un caso el ancho excede lo que la propia SPEC fijó. No se ha verificado nada de impresión.",
+      "evidencia": "budget-bodega!'Bodega' pasa de 10 a 19 columnas (A..S: se añaden K «Uds vendidas/mes», L, M, N, O, P «Formato», Q «Añada», R «Proveedor», S «Ubicación / bin»). escandallo-maestro!'Ficha (plantilla)' column_dimensions['G'].width = 41.0 frente a 14.0 en el fichero vivo; §1.12 dice literalmente «y G sube a 22». El informe del dry-run declara a4_intacto = {hojas: 41, fallos: []}, que sólo comprueba paperSize/fitToWidth, no el resultado.",
+      "fix": "Bajar G a 22 en el escandallo (las etiquetas largas del bloque RESUMEN pueden ir combinadas F:G) y comprobar el ancho impreso de 'Bodega', o declararla apaisada."
+    },
+    {
+      "id": "RC-32",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-vajilla-cristaleria.xlsx",
+      "ubicacion": "Nombre de la pestaña",
+      "hallazgo": "La pestaña renombrada por §1.10 queda cortada en la conjunción y se lee «Vajilla, Cristalería y». Es lo primero que ve el cliente al abrir el libro y las otras 13 pestañas renombradas están bien.",
+      "evidencia": "Pestañas del producto: [Legal], [APPCC], [Equipamiento Cocina], [Contratación Equipo], [Diseño de Sala (FOH)], [Preparación Inspección], [Marketing Pre-Apertura], [Gantt], [Ficha (plantilla)], [Resumen], [Escenarios], [Proyección 3 Años], [Financiación], [Registro de jornada]… y [Vajilla, Cristalería y].",
+      "fix": "Renombrar a «Vajilla y Cristalería» (19 caracteres, por debajo del límite de 31 de Excel)."
+    },
+    {
+      "id": "RC-33",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/checklist-legal.xlsx",
+      "ubicacion": "Reglas de formato condicional de 'Legal'!F5:F52 (y equivalentes en los 8 checklists, el gantt y menu-engineering)",
+      "hallazgo": "El semáforo de Estado usa coincidencia por SUBCADENA y el contador de avance usa coincidencia exacta, así que el color y el porcentaje pueden discrepar sobre la misma celda. §3.3 pide «formato condicional por texto EXACTO».",
+      "evidencia": "CF: F5:F52 containsText con fórmula NOT(ISERROR(SEARCH(\"Completado\",F5))) — SEARCH es de subcadena y no distingue mayúsculas. Contador: F56 = IFERROR(COUNTIF(F5:F52,\"Completado\")/COUNTIF(F5:F52,\"<>\"),\"\") — COUNTIF sin comodines exige celda completa. Una celda que diga «Completado parcialmente» se pinta verde y no cuenta como completada. Mismo patrón en cronograma!'Gantt'!C6:C36 y en menu-engineering!'Menu Engineering'!I5:I29.",
+      "fix": "Cambiar las reglas a `cellIs equal` sobre el texto exacto, que además es lo que la DV ya garantiza en esas columnas."
+    },
+    {
+      "id": "RC-34",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+      "ubicacion": "'P&L Mensual'!B32",
+      "hallazgo": "Fórmula escrita de forma que parece un error de arrastre: un SUM de una sola celda donde §2.3.2 escribió una suma simple. No cambia el resultado, pero cualquiera que audite el libro (o el banco) se detiene ahí.",
+      "evidencia": "'P&L Mensual'!B32 = SUM(B20:B29)+SUM(B31:B31). §2.3.2 (SPEC, línea 247): «B32='=SUM(B20:B29)+B31'».",
+      "fix": "B32 = SUM(B20:B29)+B31."
+    },
+    {
+      "id": "RC-35",
+      "severidad": "baja",
+      "fichero": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/propio-ref-coherencia/dryrun/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+      "ubicacion": "'Registro de jornada'!G5 y 'Turnos Semana'!N33",
+      "hallazgo": "Dos residuos de construcción: una fórmula que es literalmente la cadena vacía y una etiqueta de texto a la que se le ha aplicado formato de moneda.",
+      "evidencia": "'Registro de jornada'!G5 = ={comillas dobles vacías} con number_format [h]:mm (es la primera fila del parte, sin jornada anterior con la que comparar); cuenta como una de las 230 fórmulas que el informe declara para este fichero. 'Turnos Semana'!N33 contiene el TEXTO «Coste anual con SS (€)» con number_format «#,##0.00 €», en la fila TOTAL BRIGADA, justo al lado de O33, que sí es la fórmula del valor.",
+      "fix": "Dejar G5 vacía (sin fórmula) y quitar el formato de moneda de la etiqueta N33."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "Diez defectos de severidad alta, y los cuatro primeros son del mismo tipo: la v2.0 ha construido las fórmulas y no ha construido el dato con el que enseñarlas. plan-financiero-3-anos.xlsx —el libro que la propia SPEC nombra FUENTE ÚNICA de inversión, personal, fondo de maniobra y headcount (§7-bis.7)— se entrega con la columna de entrada del P&L vacía, de modo que 'P&L Mensual'!B34 (EBITDA) imprime 0,00 €, 'Inversión'!C27 imprime 0,00 € y la hoja «Proyección 3 Años» entera devuelve cadena vacía; cash-flow-break-even.xlsx contesta «No alcanzado» a la tarjeta que vende «punto de equilibrio automático»; y seis de las diez plantillas Excel abren sin un solo número mientras las otras cuatro sí van precargadas. El informe del propio paquete registra ese vacío (pl_precargado=0.0) y lo da por bueno, que es justo lo que esta lente tenía que refutar. Encima de eso hay tres incoherencias de cifra que un comprador cruza en cinco minutos: tres tickets medios distintos (91,95/123,20/169,45 € en el simulador, 110,36 € implícito en el P&L de escenarios y 110 € tecleado en el cash flow) y dos facturaciones distintas para los mismos 70 cubiertos; el checklist de equipamiento (164.718,40 €) supera el rango ALTO de la calculadora CAPEX del mismo pack (150.000 €); y el fondo de maniobra sigue rotulado «(6 meses)» con 60.000-200.000 € mientras el propio pl-mensual demuestra ahora que seis meses de costes fijos son 510.000 €. DOM-01/COM-30 y TEC-26 no están implementados en absoluto, y dos hojas de «Instrucciones» afirman al cliente que sí. Se arrastra además a la v2.0 el error que la v2.0 existe para corregir: la nota E12 de pl-mensual justifica sus escenarios de personal con el rango «250.000-450.000 € con la SS de la empresa» que DOM-02/COM-10 declara falso. Y mientras T7 no corra, el pack se desmiente a sí mismo dentro de la misma descarga: el cuadrante pinta en rojo, contra el SMI de 17.094 €, los sueldos de 15.000-19.000 € que la guía en PDF recomienda, y el checklist dice que Resy no opera en España mientras el capítulo 21 lo presupuesta en dólares. Nada de esto es irreparable —la mayoría son datos de ejemplo que faltan y dos fórmulas que no se escribieron—, pero firmar hoy significaría publicar plantillas que demuestran que calculan sólo si el comprador se las rellena antes."
+}
