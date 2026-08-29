@@ -1,0 +1,1713 @@
+{
+ "rol": "corrector final (T5-fix) — trazabilidad id → estado/celda",
+ "fecha": "2026-08-29T09:30:07",
+ "motivo": "Aviso de TRAZABILIDAD del crítico: TEC-30 y COM-24 no se citaban por id en NINGÚN punto de la cadena y otros cuatro sólo en un lado, así que un cruce automático id→resuelto los habría dado por perdidos sin distinguirlos de un olvido real. Este fichero es ese cruce, hecho a mano una vez y reproducible: para T6-T9 lo que toca es que cada grupo emita `ids_cubiertos` con TODOS los ids de su sección, no sólo los que le parecen destacables.",
+ "alcance": "los 84 ids del mapa §8 de la SPEC cuya sección toca §1-§4 (82 del R1 + NUEVO-01 y NUEVO-02). Los 24 restantes del mapa viven sólo en §5 (documentos, T7), §6 (capa de producto, T8) o §7.3 (decisiones de John) y no se cruzan aquí.",
+ "medido_sobre": "dry-run del representante con el paquete ya corregido: exit 0, idempotencia 0 diferencias, censo 0 defectos, data_only 0 fallos, 1.883 fórmulas medidas en los 18 xlsx",
+ "como_se_lee": {
+  "implementado": "citado por id en el código generador y verificado por el dry-run verde",
+  "implementado_sin_cita": "sin cita por id en el código; el dry-run lo cubre por su sección",
+  "implementado_verificado_por_medicion": "sin cita por id en ningún punto de la cadena; verificado abriendo el fichero y midiendo la celda",
+  "parcial_1_4_hecho_resto_T7_T8": "la parte de §1-§4 está hecha; su otra mitad vive en §5 (documentos, T7) o §6 (capa de producto, T8)",
+  "parcial_1_11_hecho_5_3_es_T7": "ver COM-24",
+  "parcial_2_3_6_hecho_6_6_es_T8": "ver TEC-27"
+ },
+ "recuento": {
+  "ids": 84,
+  "con_cita_por_id_en_el_codigo": 78,
+  "sin_cita_por_id_en_el_codigo": [
+   "TEC-17",
+   "TEC-27",
+   "TEC-29",
+   "TEC-30",
+   "DOM-27",
+   "COM-24"
+  ],
+  "con_celda_medida": 21,
+  "tocados_en_esta_correccion": [
+   "COM-07",
+   "COM-08",
+   "COM-09",
+   "COM-10",
+   "COM-20",
+   "COM-30",
+   "COM-31",
+   "COM-32",
+   "DOM-01",
+   "DOM-02",
+   "DOM-06",
+   "DOM-10",
+   "DOM-13",
+   "DOM-17",
+   "NUEVO-02",
+   "TEC-04",
+   "TEC-07",
+   "TEC-08",
+   "TEC-11",
+   "TEC-16",
+   "TEC-25",
+   "TEC-26",
+   "TEC-27"
+  ]
+ },
+ "ids": [
+  {
+   "id": "TEC-01",
+   "sev": "alta",
+   "seccion": "§2.1",
+   "que": "el simulador de ticket medio calcula; fuera el verde de las filas de resultado",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "calculadora-ticket-medio.xlsx:Ticket Medio!B16",
+   "formula": "=B5*B6+B7*B8+B9*B10+B11*B12+B13*B14",
+   "valor_medido": 99.8,
+   "citas_codigo": [
+    "motor.py:302",
+    "grupo_a.py:38",
+    "grupo_a.py:373",
+    "grupo_a.py:431",
+    "grupo_a.py:442"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "TEC-02",
+   "sev": "alta",
+   "seccion": "§2.2",
+   "que": "P&L de 3 escenarios encadenado",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "pl-mensual-escenarios.xlsx:Escenarios!C21",
+   "formula": "=C19-C20",
+   "valor_medido": 34007.92000000001,
+   "citas_codigo": [
+    "motor.py:302",
+    "grupo_a.py:40",
+    "grupo_a.py:628",
+    "grupo_a.py:657",
+    "grupo_a.py:717"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "TEC-03",
+   "sev": "alta",
+   "seccion": "§2.4",
+   "que": "totales, flujo neto, acumulado y break-even del cash flow",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "cash-flow-break-even.xlsx:Cash Flow 12 Meses!B50",
+   "formula": "=IFERROR((B46+IF(ISNUMBER(B49),B49,0))/B47,\"\")",
+   "valor_medido": 145728.58571428573,
+   "citas_codigo": [
+    "grupo_a.py:47",
+    "grupo_a.py:2193",
+    "grupo_a.py:2422",
+    "grupo_a.py:2485",
+    "grupo_a.py:2523",
+    "grupo_a.py:2586",
+    "grupo_a.py:2678"
+   ],
+   "n_citas_codigo": 7,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "TEC-04",
+   "sev": "alta",
+   "seccion": "§4.2",
+   "que": "columna Clasificación + mix + umbral + margen medio",
+   "ambito": "FAMILIA (6)",
+   "estado": "implementado",
+   "celda": "menu-engineering-matrix.xlsx:Menu Engineering!I5",
+   "formula": "=IF(OR($H5=\"\",$G5=\"\",$K5=\"\",$L5=\"\"),\"\",IF(AND($H5>=$L5,$G5>=$K5),\"Star\",IF(AND($H5>=$L5,$G5<$K5),\"Plowhorse\",IF(AND($H5<$L5,$G5>=$K5),\"Puzzle\",\"Dog\"))))",
+   "valor_medido": "Star",
+   "citas_codigo": [
+    "grupo_c.py:1321",
+    "grupo_c.py:2683"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json"
+   ],
+   "tocado_en_esta_correccion": "B-03"
+  },
+  {
+   "id": "TEC-05",
+   "sev": "alta",
+   "seccion": "§4.1",
+   "que": "el PVP divide por raciones (F4)",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:683",
+    "grupo_c.py:2571"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-06",
+   "sev": "alta",
+   "seccion": "§1.7 §4.1",
+   "que": "merma en 0,0% con DV 0-0,95 y fórmula blindada",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:598"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "TEC-07",
+   "sev": "alta",
+   "seccion": "§2.3.1",
+   "que": "hoja «Proyección 3 Años» que las Instrucciones ya anuncian",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "plan-financiero-3-anos.xlsx:Proyección 3 Años!B13",
+   "formula": "=IF(OR('P&L Mensual'!B10=\"\",'P&L Mensual'!B10=0),\"\",'P&L Mensual'!B10*IF(OR($B$9=\"\",$B$9<=1,$B$10=\"\"),12,$B$9*(1+$B$10)/2+(12-$B$9)))",
+   "valor_medido": 2049062.4000000001,
+   "citas_codigo": [
+    "grupo_a.py:42",
+    "grupo_a.py:1319",
+    "grupo_a.py:1537"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ],
+   "tocado_en_esta_correccion": "B-01"
+  },
+  {
+   "id": "TEC-08",
+   "sev": "alta",
+   "seccion": "§2.3.2",
+   "que": "el EBITDA deja de restar la amortización; se añade EBIT",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "celda": "plan-financiero-3-anos.xlsx:Proyección 3 Años!B19",
+   "formula": "=IF($B$13=\"\",\"\",B17-B18)",
+   "valor_medido": 176723.52000000025,
+   "citas_codigo": [
+    "grupo_a.py:699",
+    "grupo_a.py:977",
+    "grupo_a.py:1084",
+    "grupo_a.py:3334"
+   ],
+   "n_citas_codigo": 4,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json",
+    "guias-v2-ref-excel.json"
+   ],
+   "tocado_en_esta_correccion": "B-01"
+  },
+  {
+   "id": "TEC-09",
+   "sev": "media",
+   "seccion": "§2.3.3",
+   "que": "B35 «Margen EBITDA» pasa de € a 0.0%",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "celda": "plan-financiero-3-anos.xlsx:P&L Mensual!B35",
+   "formula": "=IF(OR(B10=\"\",B10=0,B34=\"\"),\"\",B34/B10)",
+   "valor_medido": 0.1792456569404622,
+   "citas_codigo": [
+    "motor.py:818",
+    "grupo_a.py:1037",
+    "grupo_a.py:3355"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-motor.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-10",
+   "sev": "media",
+   "seccion": "§2.3.3",
+   "que": "C35 y el arrastre de la columna % s/Ventas",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:1061",
+    "grupo_a.py:1086",
+    "grupo_a.py:3360"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-11",
+   "sev": "media",
+   "seccion": "§4.4",
+   "que": "horas por SUMPRODUCT y columnas de coste",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "plantilla-turnos-brigada.xlsx:Turnos Semana!K33",
+   "formula": "=IF(COUNT(K6:K30)=0,\"\",SUM(K6:K30))",
+   "valor_medido": 960.0,
+   "citas_codigo": [
+    "grupo_c.py:1925",
+    "grupo_c.py:2801"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ],
+   "tocado_en_esta_correccion": "B-02"
+  },
+  {
+   "id": "TEC-12",
+   "sev": "media",
+   "seccion": "§1.7 §4.4",
+   "que": "la «V» de la DV se documenta como Vacaciones",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1591",
+    "grupo_c.py:1666"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-13",
+   "sev": "media",
+   "seccion": "§4.4 §6.6",
+   "que": "headcount único: 24 puestos vs «25 personas»",
+   "ambito": "REPRESENTANTE",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_c.py:1863",
+    "grupo_c.py:1870",
+    "grupo_c.py:1963",
+    "grupo_c.py:1995",
+    "b.py:411",
+    "c.py:251"
+   ],
+   "n_citas_codigo": 6,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json"
+   ]
+  },
+  {
+   "id": "TEC-14",
+   "sev": "media",
+   "seccion": "§3.5",
+   "que": "barras del Gantt por formato condicional sobre Mes inicio/Duración",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:1201",
+    "grupo_b.py:1215",
+    "b.py:1018"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "TEC-15",
+   "sev": "media",
+   "seccion": "§1.4 §3.5",
+   "que": "Inicio/Fin en dd/mm/yyyy con DV de fecha + columna Días",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:1185",
+    "grupo_b.py:1199",
+    "b.py:1018"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "TEC-16",
+   "sev": "media",
+   "seccion": "§1.9",
+   "que": "fila TOTAL y subtotales por categoría en los checklists",
+   "ambito": "FAMILIA (molde A y B; C ya lo tiene)",
+   "estado": "implementado",
+   "celda": "checklist-legal.xlsx:Legal!G56",
+   "formula": "=SUM(G5:G53)",
+   "valor_medido": 57960.0,
+   "citas_codigo": [
+    "motor.py:1412"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ],
+   "tocado_en_esta_correccion": "aviso demos de checklist en None"
+  },
+  {
+   "id": "TEC-17",
+   "sev": "media",
+   "seccion": "§1.4 §3.3",
+   "que": "Fecha Límite con formato/DV y semáforo de Estado",
+   "ambito": "FAMILIA (molde A)",
+   "estado": "implementado_verificado_por_medicion",
+   "evidencia_medida": "checklist-legal.xlsx:Legal — E4 «Fecha Límite», E5 number_format dd/mm/yyyy, DV type=date DATE(2020,1,1) sobre E5:E53 con showErrorMessage, y 3 reglas de formato condicional por texto exacto sobre F5:F53 (Estado).",
+   "citas_codigo": [],
+   "n_citas_codigo": 0,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-18",
+   "sev": "media",
+   "seccion": "§4.3",
+   "que": "la rotación se calcula o se corrige la instrucción",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1492",
+    "grupo_c.py:2765"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "TEC-19",
+   "sev": "media",
+   "seccion": "§4.3",
+   "que": "valoración del stock a coste y a PVP + fila TOTAL",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1523",
+    "grupo_c.py:1530",
+    "grupo_c.py:2765"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "TEC-20",
+   "sev": "media",
+   "seccion": "§4.3",
+   "que": "«Margen (%)» es markup: se separan multiplicador, margen s/PVP y food cost",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1381",
+    "grupo_c.py:1487",
+    "grupo_c.py:2765"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-21",
+   "sev": "media",
+   "seccion": "§4.1",
+   "que": "food cost objetivo como número en celda y usado por la fórmula",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "celda": "escandallo-maestro.xlsx:Ficha (plantilla)!G30",
+   "formula": "=\"PVP sugerido (\"&TEXT($H$4,\"0%\")&\"), sin IVA:\"",
+   "valor_medido": "PVP sugerido (28%), sin IVA:",
+   "citas_codigo": [
+    "motor.py:1821",
+    "grupo_c.py:547",
+    "grupo_c.py:558",
+    "grupo_c.py:683",
+    "grupo_c.py:819",
+    "grupo_c.py:2576"
+   ],
+   "n_citas_codigo": 6,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json",
+    "guias-v2-grupo_b.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-22",
+   "sev": "media",
+   "seccion": "§1.12",
+   "que": "etiquetas A4 y G4 cortadas por ancho de columna",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "motor.py:991",
+    "motor.py:1036"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-23",
+   "sev": "media",
+   "seccion": "§4.1",
+   "que": "hoja «Ficha (plantilla)» + hoja «Resumen» + instrucción de duplicar",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:48",
+    "grupo_c.py:179",
+    "grupo_c.py:891",
+    "grupo_c.py:899",
+    "grupo_c.py:902",
+    "grupo_c.py:997",
+    "grupo_c.py:1005",
+    "grupo_c.py:2633"
+   ],
+   "n_citas_codigo": 9,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-24",
+   "sev": "media",
+   "seccion": "§1.4",
+   "que": "«Uds Vendidas» deja de ir en €",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "motor.py:836"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-25",
+   "sev": "media",
+   "seccion": "§1.4",
+   "que": "formato por tipo de dato, no por bloque (% y recuentos en €)",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "motor.py:836",
+    "motor.py:861"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_a.json"
+   ],
+   "tocado_en_esta_correccion": "B-04"
+  },
+  {
+   "id": "TEC-26",
+   "sev": "media",
+   "seccion": "§2.3.6",
+   "que": "fuente única de CAPEX: rangos vs «Mi CAPEX» + tabla de correspondencia",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "calculadora-capex.xlsx:CAPEX!E18",
+   "formula": "=SUM(E5:E17)",
+   "valor_medido": 2305000.0,
+   "citas_codigo": [
+    "grupo_a.py:1750",
+    "grupo_a.py:1793"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json",
+    "guias-v2-ref-excel.json"
+   ],
+   "tocado_en_esta_correccion": "aviso coherencia CAPEX"
+  },
+  {
+   "id": "TEC-27",
+   "sev": "media",
+   "seccion": "§2.3.6 §6.6",
+   "que": "los totales del CAPEX y el rango de la landing dicen lo mismo",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_2_3_6_hecho_6_6_es_T8",
+   "evidencia_medida": "calculadora-capex.xlsx:CAPEX!E18 = 2.305.000,00 € (rango alto) ≥ plan-financiero:Inversión!C46 = 1.889.944,24 € (necesidad total). F20 avisa «Columna incompleta…» mientras «Tu Presupuesto» no esté entera. La mitad de §6.6 (que la LANDING diga lo mismo) es T8.",
+   "citas_codigo": [],
+   "n_citas_codigo": 0,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-coherencia.json"
+   ],
+   "tocado_en_esta_correccion": "aviso coherencia CAPEX"
+  },
+  {
+   "id": "TEC-28",
+   "sev": "media",
+   "seccion": "§1.10",
+   "que": "Instrucciones, pestaña, versión y bio en los checklists",
+   "ambito": "FAMILIA (molde A y B)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "motor.py:1522",
+    "motor.py:1567",
+    "motor.py:1609"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "TEC-29",
+   "sev": "baja",
+   "seccion": "§1.6 §3.3",
+   "que": "formato condicional: hoy 0 reglas en los 141 libros",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado_verificado_por_medicion",
+   "evidencia_medida": "66 reglas de formato condicional vivas en los 18 xlsx del representante (el R1 midió 0 en los 141 libros).",
+   "citas_codigo": [],
+   "n_citas_codigo": 0,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_b.json",
+    "guias-v2-motor.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "TEC-30",
+   "sev": "baja",
+   "seccion": "§1.8",
+   "que": "protección de hoja sin contraseña y verdes desbloqueadas",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado_verificado_por_medicion",
+   "evidencia_medida": "41/41 hojas con protection.sheet=True y 0 con contraseña; las verdes desbloqueadas (demo `proteccion` de main.py, 0 fallos).",
+   "citas_codigo": [],
+   "n_citas_codigo": 0,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-01",
+   "sev": "alta",
+   "seccion": "§2.3.5 §5.4",
+   "que": "fondo de maniobra dimensionado por fórmula, ≥ 6 meses",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "celda": "plan-financiero-3-anos.xlsx:Inversión!C43",
+   "formula": "=IF(OR(C32=\"\",C42=\"\"),\"\",C32*C42)",
+   "valor_medido": 934320.48,
+   "citas_codigo": [
+    "grupo_a.py:1574",
+    "grupo_a.py:1743"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json",
+    "guias-v2-ref-excel.json"
+   ],
+   "tocado_en_esta_correccion": "aviso coherencia CAPEX"
+  },
+  {
+   "id": "DOM-02",
+   "sev": "alta",
+   "seccion": "§4.4 §5.4",
+   "que": "SS empresarial en celda (33 %) y totales del capítulo rehechos",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "celda": "plantilla-turnos-brigada.xlsx:Turnos Semana!O33",
+   "formula": "=IFERROR(IF($L$33=\"\",\"\",$L$33*(1+$C$41)),\"\")",
+   "valor_medido": 717620.12,
+   "citas_codigo": [
+    "grupo_c.py:1925",
+    "grupo_c.py:2823",
+    "a.py:53",
+    "a.py:189"
+   ],
+   "n_citas_codigo": 4,
+   "informes": [
+    "guias-v2-correccion.json",
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json",
+    "guias-v2-ref-excel.json"
+   ],
+   "tocado_en_esta_correccion": "B-02"
+  },
+  {
+   "id": "DOM-03",
+   "sev": "alta",
+   "seccion": "§1.5 §2.4 §4.1",
+   "que": "IVA declarado: PVP con y sin, y las tres filas del 303 en el cash flow",
+   "ambito": "FAMILIA (rep. sin IVA; hermanos con 1.10 incrustado)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "motor.py:1822",
+    "grupo_a.py:2193",
+    "grupo_a.py:2414",
+    "grupo_c.py:677",
+    "grupo_c.py:684",
+    "grupo_c.py:819",
+    "grupo_c.py:887",
+    "grupo_c.py:2508"
+   ],
+   "n_citas_codigo": 10,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-04",
+   "sev": "alta",
+   "seccion": "§4.1",
+   "que": "la merma entra en el coste (bruta = neta/(1-merma))",
+   "ambito": "FAMILIA (8, dos modelos)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:568",
+    "grupo_c.py:598",
+    "grupo_c.py:730",
+    "grupo_c.py:759",
+    "grupo_c.py:892",
+    "grupo_c.py:2539",
+    "grupo_c.py:2610"
+   ],
+   "n_citas_codigo": 7,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-05",
+   "sev": "alta",
+   "seccion": "§4.1",
+   "que": "coste por ración y PVP por ración",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:683",
+    "grupo_c.py:2571"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-06",
+   "sev": "alta",
+   "seccion": "§2.3.1",
+   "que": "la proyección a 3 años existe",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "plan-financiero-3-anos.xlsx:Proyección 3 Años!D13",
+   "formula": "=IF($B$13=\"\",\"\",C13*(1+D6))",
+   "valor_medido": 2581818.6240000003,
+   "citas_codigo": [
+    "grupo_a.py:42",
+    "grupo_a.py:1319",
+    "grupo_a.py:1537"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ],
+   "tocado_en_esta_correccion": "B-01"
+  },
+  {
+   "id": "DOM-07",
+   "sev": "alta",
+   "seccion": "§2.2",
+   "que": "pl-mensual deja de ser inerte",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:40",
+    "grupo_a.py:628",
+    "grupo_a.py:717"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "DOM-08",
+   "sev": "alta",
+   "seccion": "§2.1",
+   "que": "la calculadora de ticket medio calcula",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:38",
+    "grupo_a.py:373",
+    "grupo_a.py:442"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "DOM-09",
+   "sev": "alta",
+   "seccion": "§2.4",
+   "que": "break-even en meses y en €",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "cash-flow-break-even.xlsx:Cash Flow 12 Meses!B53",
+   "formula": "=IFERROR(B50/(B51*B52),\"\")",
+   "valor_medido": 53.76644986507,
+   "citas_codigo": [
+    "grupo_a.py:47",
+    "grupo_a.py:2193",
+    "grupo_a.py:2422",
+    "grupo_a.py:2485",
+    "grupo_a.py:2523",
+    "grupo_a.py:2586",
+    "grupo_a.py:2678"
+   ],
+   "n_citas_codigo": 7,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "DOM-10",
+   "sev": "alta",
+   "seccion": "§4.2",
+   "que": "Kasavana & Smith completo + acción recomendada",
+   "ambito": "FAMILIA (6)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1321",
+    "grupo_c.py:2683"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ],
+   "tocado_en_esta_correccion": "B-03"
+  },
+  {
+   "id": "DOM-11",
+   "sev": "alta",
+   "seccion": "§3.1",
+   "que": "licencia por tipo genérico; fuera «cocina separada del comedor»",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:126",
+    "b.py:1023",
+    "b.py:1033"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-12",
+   "sev": "alta",
+   "seccion": "§3.1",
+   "que": "fuera el libro de visitas; entra el registro de jornada",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:45",
+    "b.py:88",
+    "b.py:173",
+    "b.py:250"
+   ],
+   "n_citas_codigo": 4,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-13",
+   "sev": "alta",
+   "seccion": "§3.1 §4.4 §5.4",
+   "que": "ningún puesto por debajo del SMI; celda de SMI vigente",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_c.py:1760",
+    "grupo_c.py:1931",
+    "grupo_c.py:2849",
+    "c.py:35",
+    "c.py:244"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ],
+   "tocado_en_esta_correccion": "B-02"
+  },
+  {
+   "id": "DOM-14",
+   "sev": "alta",
+   "seccion": "§3.2",
+   "que": "congelación preventiva de anisakis en el APPCC",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:296",
+    "b.py:301",
+    "b.py:302",
+    "b.py:322",
+    "b.py:328",
+    "b.py:333",
+    "b.py:376",
+    "b.py:807"
+   ],
+   "n_citas_codigo": 8,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-15",
+   "sev": "alta",
+   "seccion": "§3.2",
+   "que": "bloque de baja temperatura y envasado al vacío",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:340",
+    "b.py:341",
+    "b.py:350",
+    "b.py:356",
+    "b.py:363",
+    "b.py:370",
+    "b.py:842",
+    "b.py:848"
+   ],
+   "n_citas_codigo": 8,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-16",
+   "sev": "alta",
+   "seccion": "§4.4",
+   "que": "hoja «Registro de jornada» + alertas de 12 h y 40 h",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1925",
+    "grupo_c.py:1999",
+    "grupo_c.py:2072",
+    "grupo_c.py:2145",
+    "grupo_c.py:2890"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-excel.json"
+   ]
+  },
+  {
+   "id": "DOM-20",
+   "sev": "alta",
+   "seccion": "§3.4",
+   "que": "horno mixto, extracción hasta cubierta, extinción, instalación",
+   "ambito": "REPRESENTANTE (patrón a revisar en los 7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:633",
+    "grupo_b.py:677",
+    "grupo_b.py:1573",
+    "b.py:696",
+    "b.py:701",
+    "b.py:735",
+    "b.py:818",
+    "b.py:960"
+   ],
+   "n_citas_codigo": 11,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "DOM-21",
+   "sev": "alta",
+   "seccion": "§3.4",
+   "que": "segunda columna «Menú degustación» con la regla de dotación",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:682",
+    "grupo_b.py:775",
+    "grupo_b.py:810",
+    "grupo_b.py:1650",
+    "b.py:431",
+    "b.py:433",
+    "b.py:438",
+    "b.py:478"
+   ],
+   "n_citas_codigo": 15,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json"
+   ]
+  },
+  {
+   "id": "DOM-22",
+   "sev": "alta",
+   "seccion": "§2.3.4",
+   "que": "hoja Financiación con cuadro francés; cuota en el cash flow",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "celda": "plan-financiero-3-anos.xlsx:Financiación!B12",
+   "formula": "=IF(B5=0,\"\",IF(B11<=0,\"\",IFERROR(B5*B10/(1-(1+B10)^-B11),\"\")))",
+   "valor_medido": 8231.997943918335,
+   "citas_codigo": [
+    "grupo_a.py:1219",
+    "grupo_a.py:1314",
+    "grupo_a.py:2193",
+    "grupo_a.py:2414",
+    "b.py:1046"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-23",
+   "sev": "alta",
+   "seccion": "§3.1 §3.5",
+   "que": "bloque «Local»: arrendamiento, fianza, carencia, condición suspensiva",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:45",
+    "b.py:82",
+    "b.py:145",
+    "b.py:163",
+    "b.py:190",
+    "b.py:191",
+    "b.py:199",
+    "b.py:207"
+   ],
+   "n_citas_codigo": 13,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-26",
+   "sev": "media",
+   "seccion": "§2.3.2",
+   "que": "EBITDA ≠ EBIT, replicado al pl-mensual",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:977"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "DOM-27",
+   "sev": "media",
+   "seccion": "§2.3.3",
+   "que": "C35 sin significado",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado_verificado_por_medicion",
+   "evidencia_medida": "plan-financiero-3-anos.xlsx:P&L Mensual!C35 VACÍA (la fila 35 sólo conserva B35 «Margen EBITDA» en 0.0% = 0,17924566): la columna «% s/Ventas» ya no publica un ratio sin significado.",
+   "celda": "plan-financiero-3-anos.xlsx:P&L Mensual!C35",
+   "formula": null,
+   "valor_medido": null,
+   "citas_codigo": [],
+   "n_citas_codigo": 0,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "DOM-28",
+   "sev": "media",
+   "seccion": "§4.3",
+   "que": "markup vs margen y rotación calculada",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1381",
+    "grupo_c.py:1487",
+    "grupo_c.py:1492"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-30",
+   "sev": "media",
+   "seccion": "§4.1",
+   "que": "food cost objetivo decorativo",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:547",
+    "grupo_c.py:559",
+    "grupo_c.py:683",
+    "grupo_c.py:819",
+    "grupo_c.py:887",
+    "grupo_c.py:2508",
+    "grupo_c.py:2576"
+   ],
+   "n_citas_codigo": 7,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-33",
+   "sev": "media",
+   "seccion": "§3.4 §5.4",
+   "que": "túnel de lavado vs capota: un solo criterio",
+   "ambito": "REPRESENTANTE",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "b.py:696",
+    "b.py:742",
+    "b.py:924"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "DOM-34",
+   "sev": "media",
+   "seccion": "§3.4 §5.4",
+   "que": "bloque de cocción con dos escalones de gama",
+   "ambito": "REPRESENTANTE",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "b.py:696",
+    "b.py:748",
+    "b.py:828"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "DOM-35",
+   "sev": "media",
+   "seccion": "§3.4 §5.4",
+   "que": "fuera Resy; alternativas disponibles en España en euros",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "b.py:629",
+    "b.py:649"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-37",
+   "sev": "media",
+   "seccion": "§3.5",
+   "que": "barras y dependencias del Gantt; tareas de local y financiación",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:1201",
+    "grupo_b.py:1215",
+    "b.py:1018"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "DOM-38",
+   "sev": "media",
+   "seccion": "§3.1",
+   "que": "plan de igualdad «50 o más», registro retributivo, acoso, no competencia",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:45",
+    "b.py:52",
+    "b.py:58",
+    "b.py:179",
+    "b.py:184",
+    "b.py:244",
+    "b.py:266",
+    "b.py:276"
+   ],
+   "n_citas_codigo": 8,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-39",
+   "sev": "media",
+   "seccion": "§3.4",
+   "que": "limitador acústico, alumbrado de emergencia, vestuarios",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:387",
+    "b.py:392",
+    "b.py:402",
+    "b.py:407",
+    "b.py:420"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "DOM-40",
+   "sev": "baja",
+   "seccion": "§3.4 §6.5",
+   "que": "recuentos de ítems y «Zwiesel»; sesión de fotos a precio real",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "b.py:629",
+    "b.py:635",
+    "b.py:662",
+    "b.py:669",
+    "b.py:675",
+    "b.py:680",
+    "b.py:686"
+   ],
+   "n_citas_codigo": 7,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "COM-04",
+   "sev": "alta",
+   "seccion": "§2.1",
+   "que": "ticket medio",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:38",
+    "grupo_a.py:373"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "COM-05",
+   "sev": "alta",
+   "seccion": "§2.2",
+   "que": "pl-mensual",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:40",
+    "grupo_a.py:628"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "COM-06",
+   "sev": "alta",
+   "seccion": "§2.4",
+   "que": "cash flow y break-even",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "cash-flow-break-even.xlsx:Cash Flow 12 Meses!B54",
+   "formula": "=IFERROR(MATCH(TRUE,INDEX(B35:M35>0,0),0),\"No alcanzado\")",
+   "valor_medido": 5.0,
+   "citas_codigo": [
+    "grupo_a.py:47",
+    "grupo_a.py:2193",
+    "grupo_a.py:2422",
+    "grupo_a.py:2485"
+   ],
+   "n_citas_codigo": 4,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "COM-07",
+   "sev": "alta",
+   "seccion": "§2.3.1",
+   "que": "plan financiero a 3 años",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "plan-financiero-3-anos.xlsx:Proyección 3 Años!B23",
+   "formula": "=IF($B$13=\"\",\"\",B21-B22)",
+   "valor_medido": 103667.64000000019,
+   "citas_codigo": [
+    "grupo_a.py:42",
+    "grupo_a.py:1319",
+    "grupo_a.py:1537"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json"
+   ],
+   "tocado_en_esta_correccion": "B-01"
+  },
+  {
+   "id": "COM-08",
+   "sev": "alta",
+   "seccion": "§4.2",
+   "que": "menu engineering",
+   "ambito": "FAMILIA (6)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1321",
+    "grupo_c.py:2683"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json"
+   ],
+   "tocado_en_esta_correccion": "B-03"
+  },
+  {
+   "id": "COM-10",
+   "sev": "alta",
+   "seccion": "§4.4 §5.4",
+   "que": "coste de personal recalculado con SS",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_c.py:1925",
+    "grupo_c.py:2823",
+    "a.py:53",
+    "a.py:189"
+   ],
+   "n_citas_codigo": 4,
+   "informes": [
+    "guias-v2-correccion.json",
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json"
+   ],
+   "tocado_en_esta_correccion": "B-02"
+  },
+  {
+   "id": "COM-14",
+   "sev": "alta",
+   "seccion": "§4.1",
+   "que": "food cost en celda + PVP con y sin IVA",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:677",
+    "grupo_c.py:684",
+    "grupo_c.py:819",
+    "grupo_c.py:887",
+    "grupo_c.py:2581"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "COM-15",
+   "sev": "alta",
+   "seccion": "§3.1",
+   "que": "checklist legal vigente: registro de jornada y retributivo",
+   "ambito": "FAMILIA (8)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "b.py:45",
+    "b.py:53",
+    "b.py:88",
+    "b.py:179",
+    "b.py:250"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "COM-17",
+   "sev": "media",
+   "seccion": "§3.4 §6.5",
+   "que": "equipamiento 54 → 90 ítems",
+   "ambito": "REPRESENTANTE",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_b.py:1365",
+    "b.py:697",
+    "b.py:763",
+    "b.py:767",
+    "b.py:771",
+    "b.py:775",
+    "b.py:780",
+    "b.py:785"
+   ],
+   "n_citas_codigo": 27,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "COM-18",
+   "sev": "media",
+   "seccion": "§3.4 §6.5",
+   "que": "APPCC, Michelin, vajilla, sala y marketing hasta su cifra",
+   "ambito": "REPRESENTANTE",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_b.py:1365"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "COM-19",
+   "sev": "media",
+   "seccion": "§3.5",
+   "que": "el Gantt deja de estar en blanco",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:1201",
+    "grupo_b.py:1215",
+    "b.py:1018"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "COM-20",
+   "sev": "media",
+   "seccion": "§4.4",
+   "que": "horas y coste del cuadrante + headcount",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "celda": "plantilla-turnos-brigada.xlsx:Turnos Semana!P33",
+   "formula": "=IF(COUNT(P6:P30)=0,\"\",SUM(P6:P30))",
+   "valor_medido": 15973.736672231496,
+   "citas_codigo": [
+    "grupo_c.py:1925",
+    "grupo_c.py:2801"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ],
+   "tocado_en_esta_correccion": "B-02"
+  },
+  {
+   "id": "COM-21",
+   "sev": "media",
+   "seccion": "§4.4 §6.6",
+   "que": "una sola cifra de plantilla en las cuatro superficies",
+   "ambito": "REPRESENTANTE",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_c.py:1963",
+    "grupo_c.py:1995",
+    "c.py:251"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_c.json",
+    "guias-v2-ref-coherencia.json"
+   ]
+  },
+  {
+   "id": "COM-22",
+   "sev": "media",
+   "seccion": "§4.3",
+   "que": "budget de bodega: margen, rotación y valor de inventario",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:1381",
+    "grupo_c.py:1487",
+    "grupo_c.py:1530"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "COM-24",
+   "sev": "media",
+   "seccion": "§1.11 §5.3",
+   "que": "metadatos del PDF y de los 22 DOCX (Fase A no los tocó)",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_11_hecho_5_3_es_T7",
+   "evidencia_medida": "18/18 xlsx con subject «Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0». MEDIDO AHORA y PENDIENTE: los 3 .docx del representante siguen con author=«python-docx», title y subject vacíos y created=2013-12-23, y el PDF con /Title=/Author=«(anonymous)». Esa mitad la escribe documentos.py (T7), que todavía no existe.",
+   "citas_codigo": [],
+   "n_citas_codigo": 0,
+   "informes": [
+    "guias-v2-critico.json"
+   ]
+  },
+  {
+   "id": "COM-28",
+   "sev": "media",
+   "seccion": "§3.1 §5.4",
+   "que": "licencia C3 y CIRCE: redacción correcta en los tres sitios",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "b.py:126",
+    "b.py:1033"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_b.json"
+   ]
+  },
+  {
+   "id": "COM-30",
+   "sev": "media",
+   "seccion": "§2.3.5 §5.4",
+   "que": "fondo de maniobra: un solo rótulo y una cifra calculada",
+   "ambito": "FAMILIA (8)",
+   "estado": "parcial_1_4_hecho_resto_T7_T8",
+   "citas_codigo": [
+    "grupo_a.py:1574",
+    "grupo_a.py:1743"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json",
+    "guias-v2-ref-excel.json"
+   ],
+   "tocado_en_esta_correccion": "aviso coherencia CAPEX"
+  },
+  {
+   "id": "COM-31",
+   "sev": "media",
+   "seccion": "§1.9",
+   "que": "los 8 checklists suman su presupuesto",
+   "ambito": "FAMILIA (molde A y B)",
+   "estado": "implementado",
+   "celda": "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!G98",
+   "formula": "=SUMIF($I$5:$I$95,\"Sí\",$G$5:$G$95)",
+   "valor_medido": 161430.4,
+   "citas_codigo": [
+    "motor.py:1412"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json"
+   ],
+   "tocado_en_esta_correccion": "aviso demos de checklist en None"
+  },
+  {
+   "id": "COM-32",
+   "sev": "baja",
+   "seccion": "§2.3.6",
+   "que": "los dos CAPEX se reconcilian sin fusionar libros",
+   "ambito": "FAMILIA (7)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:1750",
+    "grupo_a.py:1793"
+   ],
+   "n_citas_codigo": 2,
+   "informes": [
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-dominio.json"
+   ],
+   "tocado_en_esta_correccion": "aviso coherencia CAPEX"
+  },
+  {
+   "id": "COM-33",
+   "sev": "baja",
+   "seccion": "§4.1",
+   "que": "la cantidad neta deja de estar huérfana",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_c.py:598"
+   ],
+   "n_citas_codigo": 1,
+   "informes": [
+    "guias-v2-grupo_c.json"
+   ]
+  },
+  {
+   "id": "COM-34",
+   "sev": "baja",
+   "seccion": "§3.4",
+   "que": "«Prensa y notoriedad (no influye en la inspección)»",
+   "ambito": "REPRESENTANTE",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_b.py:347",
+    "grupo_b.py:360",
+    "b.py:561",
+    "b.py:565",
+    "b.py:590"
+   ],
+   "n_citas_codigo": 5,
+   "informes": [
+    "guias-v2-grupo_b.json",
+    "guias-v2-ref-coherencia.json",
+    "guias-v2-ref-dominio.json"
+   ]
+  },
+  {
+   "id": "NUEVO-01",
+   "sev": "alta",
+   "seccion": "§2.5 §2.3",
+   "que": "el `P&L Mensual` de los 5 hermanos no tiene ni un total calculado",
+   "ambito": "FAMILIA (5)",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:50",
+    "grupo_a.py:1132",
+    "grupo_a.py:1184"
+   ],
+   "n_citas_codigo": 3,
+   "informes": [
+    "guias-v2-grupo_a.json"
+   ]
+  },
+  {
+   "id": "NUEVO-02",
+   "sev": "alta",
+   "seccion": "§2.5",
+   "que": "panadería: EBITDA = facturación (300.000 €) y margen 122,97 %",
+   "ambito": "panadería",
+   "estado": "implementado",
+   "citas_codigo": [
+    "grupo_a.py:51",
+    "grupo_a.py:102",
+    "grupo_a.py:2049",
+    "grupo_a.py:2070",
+    "grupo_a.py:2075",
+    "grupo_a.py:2080",
+    "grupo_a.py:2104",
+    "grupo_a.py:3056"
+   ],
+   "n_citas_codigo": 13,
+   "informes": [
+    "guias-v2-critico.json",
+    "guias-v2-grupo_a.json",
+    "guias-v2-ref-excel.json"
+   ],
+   "tocado_en_esta_correccion": "B-04"
+  }
+ ]
+}

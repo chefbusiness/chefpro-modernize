@@ -1509,9 +1509,16 @@ def hoja_proyeccion(wb, fname, cambios, contenido, subtitulo, pl, fin):
                 + ',""))', fmt=FMT_PCT)
     nota(ws, 'E9',
          'Cuántos meses tardas en llegar al ritmo de crucero. Escribe 0 y el '
-         'Año 1 vuelve a ser el mes tipo × 12. Con ' + str(meses_rampa)
-         + ' y ' + str(round(pct_primero * 100)) + ' %, el Año 1 factura lo '
-         'mismo que cash-flow-break-even.xlsx de este mismo pack.')
+         'Año 1 vuelve a ser el mes tipo × 12.'
+         + ((' Con ' + str(meses_rampa) + ' y '
+             + str(round(pct_primero * 100)) + ' %, el Año 1 factura '
+             'exactamente lo mismo que cash-flow-break-even.xlsx de este '
+             'mismo pack, que modela la misma rampa mes a mes.')
+            if meses_rampa else
+            (' Esta guía no trae todavía una rampa de arranque medida, así '
+             'que sale con 0: el Año 1 va como mes tipo × 12. En cuanto '
+             'escribas aquí los meses que vas a tardar en llenar la casa, la '
+             'proyección los aplica.')))
     nota(ws, 'E10',
          'Qué parte del mes de crucero facturas el PRIMER mes. De ahí sube en '
          'línea recta hasta el 100 % en el mes de crucero.')

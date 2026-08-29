@@ -1,0 +1,202 @@
+{
+ "rol": "corrector final del representante — bloqueos B-01..B-05 y avisos del crítico",
+ "fecha": "2026-08-29T09:38:54",
+ "spec": "scripts/productos-digitales/guias-v2-SPEC.md",
+ "entrada": [
+  "auditorias/guias-v2-critico.json (B-01..B-05 + 9 avisos)",
+  "auditorias/guias-v2-ronda2.json (2 hallazgos nuevos)"
+ ],
+ "regla": "todo corregido en el CÓDIGO GENERADOR; ni un solo xlsx tocado a mano. astro-site/public/dl/ intacto: todo en --dry-run sobre el scratchpad, sin GUIAS_APPLY y sin git.",
+ "resueltos": [
+  {
+   "id": "B-01",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:hoja_proyeccion() + _rampa_ano_1() + ET_RAMPA_MESES/ET_RAMPA_PRIMERO + _mensual(); demo _demo_plan()",
+   "prueba": "OPCIÓN COMPLETA. Bajo PARÁMETROS, dos celdas VERDES nuevas: A9/B9 «Meses de rampa hasta el mes de crucero» = 6 (formato #,##0, DV 0-12) y A10/B10 «% del crucero que se factura el primer mes» = 0,60 (formato 0.0%, DV 0-1). La cuenta de resultados baja 2 filas (cabecera A12, Ingresos B13). B13 = =IF(OR('P&L Mensual'!B10=\"\",'P&L Mensual'!B10=0),\"\",'P&L Mensual'!B10*IF(OR($B$9=\"\",$B$9<=1,$B$10=\"\"),12,$B$9*(1+$B$10)/2+(12-$B$9))) → 2.049.062,40 €, que es EXACTAMENTE la suma de los 12 meses de cash-flow-break-even!'Cash Flow 12 Meses'!B10:M10 (2.049.062,40 €): diferencia medida 0,000000 €. La suma de los doce factores de una rampa lineal de 6 tramos desde 0,60 es 6×(1+0,60)/2+6 = 10,8, la misma que la rampa mes a mes del cash flow (0,60·0,70·0,80·0,85·0,90·0,95 y crucero), y los dos parámetros se DERIVAN de esa rampa medida en contenido_<pid>/a.py:CASH, no se eligen. Los costes VARIABLES llevan la misma rampa (como en el cash flow); los fijos y la amortización, no. VERIFICADO CON PYCEL (demo plan_financiero del informe): moviendo el P&L a 289.622 €/mes de crucero, año 1 = 3.127.917,60 € (= crucero × 10,8); con B9 = 0 vuelve a 3.475.464,00 € (= P&L × 12, el comportamiento de la v1); con B9 = 12 baja a 2.780.371,20 €. Nota E13 reescrita y notas nuevas en E9, E10 y E14. Los AÑOS 2 y 3 se han anclado al ritmo de CRUCERO anualizado en vez de al año 1 —C13 = ('P&L Mensual'!B10*12)*(1+C6)— para que la proyección no facture menos en el año 2 que su propio ritmo de crucero: con ello sus valores quedan IDÉNTICOS a los de antes de B-01 (2.458.874,88 € y 2.581.818,62 €) y el único año que cambia es el 1."
+  },
+  {
+   "id": "B-02",
+   "donde": "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py:TURNOS['cuadrante'] (8 patrones) + scripts/productos-digitales/guias-v2_0/grupo_c.py:_turnos() (nota bajo la fila 33)",
+   "prueba": "Sexto día «L» a los 8 puestos de turno partido del cuadrante de EJEMPLO: chef ejecutivo PPPPPLL→PPPPLLL, sous chef PPPPLLP→PPPLLLP, jefe partida carnes PPPLLPP→PPLLLPP, pescados PPLLPPP→PLLLPPP, fríos PLLPPPP→LLLPPPP, maître PPPPPLL→PPLPPLL, camarero rango 3 PPPPLLP→PPPLLLP y camarero rango 4 PPPLLPP→PLLLPPP. Los 24 puestos quedan a 40 h exactas (medido puesto a puesto) y K33 baja de 1.040 a 960,0 h = 40 h/persona. L6:L30 NO se toca: L33 sigue en 539.564,00 € y O33 en 717.620,12 €/año → 59.801,68 €/mes, así que la cadena con pl-mensual!Escenarios!C12 y plan-financiero!Inversión!C34 queda intacta. Ningún puesto supera ya C44 = 40 h, así que la regla de formato condicional del propio libro deja de pintar 8 celdas en ROJO al abrir. P33 pasa a 15.973,74 €; P33×52 = 830.634,31 € frente a O33 = 717.620,12 € (ratio 1,1575 = 2.080 h / 1.797 h). La nota nueva en A34 explica EXACTAMENTE esa diferencia que queda: «52 semanas de 40 h son 2.080 h y la Jornada anual de REFERENCIA son 1.797 h porque descuenta vacaciones y festivos»."
+  },
+  {
+   "id": "B-03",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_c.py:_menu() (etiqueta B32) + línea de Instrucciones",
+   "prueba": "B32 = «Umbral de popularidad si midieras el mix sobre la carta ENTERA (informativo — la clasificación usa el de cada familia, columna L)». D32 sigue valiendo 0,05833333 y la clasificación sigue usando L (L4 = «Umbral de popularidad de SU familia (%)», L5 = 0,175 entrantes, L14 = 0,23333333 postres). Es una etiqueta: no se ha tocado ningún número. Además, la línea de Instrucciones del libro lo dice también."
+  },
+  {
+   "id": "B-04",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_etiqueta_pct() usado por _parametrizar_porcentajes()",
+   "prueba": "Las tres etiquetas del bloque de parámetros salen ahora con «(%)» al final: A28 «Coste materias primas (harinas + ingredientes) (%)», A29 «Packaging (bolsas, cajas, papel kraft) (%)», A30 «Energía variable hornos (%)». IDEMPOTENCIA DE PANADERÍA EN 2 PASADAS: 0 diferencias (antes 4). B28:D30 se quedan en 0.0% en las dos pasadas y la DV vuelve a ser UN solo grupo «B28 B29 B30 C28 C29 C30 D28 D29 D30» (antes se partía en dos). Causa raíz documentada en el docstring: en la 2.ª pasada ya no hay literal que extraer, la función sale por su `return 0` y el `fijar_formato` no se vuelve a poner, así que la etiqueta tiene que defenderse sola."
+  },
+  {
+   "id": "B-05",
+   "donde": "scripts/productos-digitales/guias-v2_0/main.py (argparse --fichero, preparar_copia(solo=), pre-vuelo de ficheros ausentes, cabecera del módulo) + SPEC §9",
+   "prueba": "`--fichero <nombre.xlsx>` filtra el catálogo del producto a ese fichero y la idempotencia, el censo y las demos corren sólo sobre él; en dry-run la copia de trabajo lleva ESE fichero y ninguno más; el respaldo previo de producción sigue siendo el de la carpeta entera. PROBADO en dry-run: `--fichero pl-mensual-escenarios.xlsx` → EXIT 0, «CANARIO (§9): sólo se procesa pl-mensual-escenarios.xlsx», 1 xlsx en la copia, idempotencia 0, censo 0 defectos, inject_cache 21/21, data_only 21 con valor y 0 fallos. Se validan el nombre (tiene que acabar en .xlsx, sin separadores de ruta) y su existencia en el origen. Además, el pre-vuelo que pedía el crítico: si el catálogo de los grupos pide un fichero que no está en disco, main.py ABORTA con exit 2 y la lista de ausentes y deja el informe escrito, en vez de reventar con un FileNotFoundError a mitad de la escritura. La verificación posterior al canario queda documentada en los 5 pasos de la cabecera de main.py y en la SPEC §9."
+  },
+  {
+   "id": "aviso-a · molde D no documentado",
+   "donde": "guias-v2-SPEC.md §1.1 y §3.3",
+   "prueba": "§1.1 recoge ya la cuarta firma («molde D si F='Coste Estimado (€)' y G='Estado'») y §3.3 tiene su párrafo propio: qué fichero es (guia-dark-kitchen/checklist-apertura-legal.xlsx, cabecera en la fila 4), por qué NO es un molde A (coste y estado están cruzados respecto de él, y aplicarle el A sumaría la columna de estados), que trae su propia fila TOTAL y que sí recibe el desglose por categorías (RT-28). El molde estaba vivo en motor.molde_checklist() desde T1 y sólo faltaba en la SPEC."
+  },
+  {
+   "id": "aviso-b · demos de checklist con total=None",
+   "donde": "scripts/productos-digitales/guias-v2_0/main.py:_total_nativo() y demo_checklists(moldes)",
+   "prueba": "Un gate que devuelve None ya NO es verde. demo_checklists recibe el mapa de moldes del pre-vuelo; si no encuentra el TOTAL del bloque de resumen (moldes C y D no lo llevan, y hacen bien: §3.3) busca el TOTAL NATIVO del libro y lo evalúa. Un TOTAL que no evalúa a número, o unos subtotales que no se pueden cuadrar, son FALLO salvo en el molde B, que es el único que la SPEC declara sin columna de coste (§7-bis.17). MEDIDO en dark-kitchen: checklist-apertura-legal total = 7.330,00 € y checklist-equipamiento-obra total = 49.550,00 €, los dos con cuadra_subtotales = TRUE (antes: total=None, cuadra=None y CERO fallos). En panadería los 6 checklists de molde B siguen saliendo como «molde_sin_bloque» con su contador propio intacto (2 COUNTIF cada uno), que es lo declarado. Dos trampas medidas y documentadas: la etiqueta «TOTAL» no está en A ni en B (está en D y en E, pegada a su columna de importes) y esa fila tiene más de una fórmula, así que se coge la de la MISMA columna en la que suman los subtotales — comparar el TOTAL de «Real (€)», que es 0 hasta la primera factura, daría un rojo permanente."
+  },
+  {
+   "id": "aviso-c · Inversión!D27 en blanco por diseño",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:plan_representante() (RX_INSTR_REAL)",
+   "prueba": "Línea nueva en plan-financiero-3-anos!Instrucciones!A17: «La columna «Real (€)» de esta hoja «Inversión» se entrega VACÍA a propósito: es donde vas anotando lo que pagas de verdad, y por eso su fila TOTAL aparece en blanco hasta que escribas la primera cifra (el libro nunca escribe un 0 donde no hay dato). La «Desviación (%)» se enciende sola en cuanto haya un Real.» D27 sigue siendo =IF(COUNT(D5:D26)=0,\"\",SUM(D5:D26)) → \"\" (correcto por §1)."
+  },
+  {
+   "id": "aviso-d · coherencia CAPEX",
+   "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_capex_filas_extra() + _capex_rangos_y_notas() (ejemplos) + guarda de columna incompleta + 2 líneas de Instrucciones; contenido_guia_restaurante_gastronomico/a.py:CAPEX",
+   "prueba": "calculadora-capex incorpora la fila «Preapertura (rentas y nóminas antes de abrir)» (B17), que no existía, y sube el rango del fondo de maniobra. Rangos: fondo 180.000 / 450.000 / 950.000 € y preapertura 40.000 / 110.000 / 250.000 €. Los dos llegan con el importe del plan como EJEMPLO en la columna verde «Tu Presupuesto (€)»: F15 = 934.320,48 € y F17 = 221.603,36 €, con la nota «cifra de ejemplo del plan financiero de este kit; ajústala a tu caso» en la columna «De dónde sale este rango». TOTALES: C18 = 533.000 €, D18 = 1.163.000 € y E18 = 2.305.000 €, así que el RANGO ALTO cubre ya la necesidad total del plan (plan-financiero!Inversión!C46 = 1.889.944,24 €); antes se quedaba en 1.305.000 €. La fila se escribe encima del TOTAL copiando la celda, nunca con insert_rows (a esa altura del pipeline motor.aplicar ya ha registrado coordenadas), y es idempotente: si la etiqueta está, no se toca nada. Cruce en los dos sentidos: Instrucciones de la calculadora («Los rangos cubren la NECESIDAD TOTAL…») y de plan-financiero («La NECESIDAD TOTAL de esta hoja tiene que caber en el rango de aquélla»). EFECTO LATERAL VIGILADO: la columna verde llega con 2 de 13 filas rellenas, así que F20 avisa «Columna incompleta: el TOTAL sólo suma las filas que has rellenado» en vez de decir «Dentro del rango» sobre un presupuesto a medias; el nº de partidas se cuenta con COUNTIF sobre la columna de categorías, sin literales dentro de la fórmula."
+  },
+  {
+   "id": "aviso-e · contador de fórmulas inflado",
+   "donde": "scripts/productos-digitales/guias-v2_0/main.py:contar_formulas() y paso 2/7",
+   "prueba": "El paso 2/7 cuenta ahora las fórmulas REALMENTE presentes en el fichero ya guardado (lo mismo que cuenta inject_cache) y reporta las dos cifras: «178 fórmulas EN EL FICHERO (203 escrituras de fórmula)» en menu-engineering-matrix, que es exactamente la discrepancia que señaló el crítico. El informe trae formulas_en_el_fichero por fichero y los totales del producto: 1.883 fórmulas medidas frente a 1.898 escrituras. La cifra que la capa de producto (T8) debe publicar es 1.883."
+  },
+  {
+   "id": "aviso-f · trazabilidad id→estado/celda",
+   "donde": "auditorias/guias-v2-ids.json (nuevo)",
+   "prueba": "Los 84 ids del mapa §8 cuya sección toca §1-§4 (82 del R1 + NUEVO-01 y NUEVO-02), cada uno con sección, severidad, ámbito, estado, citas por id en el código generador (fichero:línea) e informes donde aparece; 21 llevan además la CELDA medida en el dry-run final con su fórmula y su valor. Los 6 que no se citan por id en el código llevan evidencia medida a mano: TEC-17 (DV de fecha + CF de Estado en checklist-legal), TEC-29 (66 reglas de formato condicional vivas frente a las 0 del R1), TEC-30 (41/41 hojas protegidas, 0 con contraseña, verdes desbloqueadas), DOM-27 (P&L Mensual!C35 vaciada), TEC-27 (parcial: §2.3.6 hecho, §6.6 es T8) y COM-24 (parcial: los 18 xlsx con subject «… · v2.0», pero MEDIDO AHORA que los 3 .docx siguen con author=«python-docx» y created=2013-12-23 y el PDF con «(anonymous)»: esa mitad es T7 y sigue pendiente)."
+  },
+  {
+   "id": "aviso-g / ronda 2 (media) · ejemplos de RD-05 y RD-07 desfasados",
+   "donde": "auditorias/guias-v2-correccion.json (resueltos RD-05 y RD-07)",
+   "prueba": "Confirmado que NO es un defecto del entregable: la cadena de fórmulas es correcta y consistente. Lo desfasado era el texto de la evidencia. Remedido sobre el dry-run final y actualizado: RD-05 → B48 = 141.145,257142857 €, B50 = 145.728,585714286 €, B53 = 53,76644986507 cubiertos/día (con B46 = 98.801,68 €, B47 = 0,70 y B49 = 3.208,33 €); RD-07 → B39 = 934.320,48 € y B42 = 914.031,214 €. El texto anterior queda archivado en `prueba_anterior_desactualizada` y el fichero lleva una `nota_ronda2_hallazgo_media` con la lección: una evidencia con cifras es perecedera, se remide al cerrar."
+  }
+ ],
+ "no_aplicados": [
+  {
+   "id": "aviso · cronograma-apertura-gantt con 29 fórmulas y cache_inyectado = 0",
+   "motivo": "Es una constatación, no un defecto: las 29 fórmulas son la columna «Días» (=E−D) y D/E se entregan vacías a propósito, así que evalúan a \"\". COM-19 está cumplido (X e Y rellenas en las 29 tareas y CF sobre F6:W39). Cambiarlo obligaría a inventar fechas de apertura. Queda como deuda de verificación conocida, no como corrección."
+  },
+  {
+   "id": "aviso · T7 no existe (documentos.py) y COM-24 en su mitad docx/PDF",
+   "motivo": "Fuera del encargo (§5 entera es T7). Medido y dejado por escrito en guias-v2-ids.json: los 3 .docx del representante siguen con author=«python-docx», title/subject vacíos y created=2013-12-23, y el PDF con /Title y /Author «(anonymous)»."
+  },
+  {
+   "id": "aviso · necesidad de financiación 1.889.944,24 € que verá John",
+   "motivo": "Decisión de negocio, no técnica. Lo que sí se ha hecho es que la calculadora deje de contradecir al plan (aviso-d). La cifra que T8 escriba en la landing sigue necesitando el visto bueno de John."
+  },
+  {
+   "id": "fallo residual en panadería, japonés y dark-kitchen: RT-08 y §1.3",
+   "motivo": "PREEXISTENTE y de T6, no una regresión: esas guías no tienen todavía su módulo contenido_<pid>/{a,b,c}.py, así que grupo_b no puede construir el Gantt (0 fórmulas) ni grupo_a bajar el 0,05 de dark-kitchen a celda. Comprobado contra los informes previos: critico-pan.json traía el mismo fallo del Gantt (más las 4 diferencias de idempotencia que ahora están en 0) y critico-dk.json el mismo literal 0.05."
+  }
+ ],
+ "celdas_clave": {
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!A9": "Meses de rampa hasta el mes de crucero",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!B9": "6 (VERDE, #,##0, DV 0-12)",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!A10": "% del crucero que se factura el primer mes",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!B10": "0,60 (VERDE, 0.0%, DV 0-1)",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!B13 (era B11)": "=IF(OR('P&L Mensual'!B10=\"\",'P&L Mensual'!B10=0),\"\",'P&L Mensual'!B10*IF(OR($B$9=\"\",$B$9<=1,$B$10=\"\"),12,$B$9*(1+$B$10)/2+(12-$B$9))) → 2.049.062,40 €",
+  "cash-flow-break-even.xlsx:Cash Flow 12 Meses!B10:M10 (suma)": "2.049.062,40 € — diferencia con la proyección: 0,00 €",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!C13 / D13": "2.458.874,88 € / 2.581.818,62 € (idénticos a antes de B-01)",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!B17 (EBITDA año 1)": "248.723,52 € (antes 408.095,04 €, con el año 1 sin rampa)",
+  "plan-financiero-3-anos.xlsx:Proyección 3 Años!B23 (resultado neto año 1)": "103.667,64 €",
+  "plantilla-turnos-brigada.xlsx:Turnos Semana!K33": "960,0 h (antes 1.040) = 40 h/persona",
+  "plantilla-turnos-brigada.xlsx:Turnos Semana!L33": "539.564,00 € — SIN TOCAR",
+  "plantilla-turnos-brigada.xlsx:Turnos Semana!O33": "717.620,12 €/año → 59.801,68 €/mes — SIN TOCAR",
+  "plantilla-turnos-brigada.xlsx:Turnos Semana!P33": "15.973,74 € (×52 = 830.634,31 €; ratio con O33 = 1,1575 = 2.080 h/1.797 h)",
+  "plantilla-turnos-brigada.xlsx:Turnos Semana!A34": "nota nueva que explica por qué P33×52 ≠ O33",
+  "plantilla-turnos-brigada.xlsx:Turnos Semana!K6:K30": "25 filas, 24 puestos, TODOS a 40,0 h — 0 por encima de C44",
+  "menu-engineering-matrix.xlsx:Menu Engineering!B32": "Umbral de popularidad si midieras el mix sobre la carta ENTERA (informativo — la clasificación usa el de cada familia, columna L)",
+  "menu-engineering-matrix.xlsx:Menu Engineering!D32": "0,05833333 (sin tocar) · L5 = 0,175 · L14 = 0,23333333",
+  "calculadora-capex.xlsx:CAPEX!B17": "Preapertura (rentas y nóminas antes de abrir) — FILA NUEVA",
+  "calculadora-capex.xlsx:CAPEX!C15:E15": "180.000 / 450.000 / 950.000 € (fondo de maniobra)",
+  "calculadora-capex.xlsx:CAPEX!C17:E17": "40.000 / 110.000 / 250.000 € (preapertura)",
+  "calculadora-capex.xlsx:CAPEX!F15 / F17": "934.320,48 € / 221.603,36 € (VERDES, ejemplo del plan)",
+  "calculadora-capex.xlsx:CAPEX!C18/D18/E18": "533.000 / 1.163.000 / 2.305.000 € — el alto cubre ya la necesidad",
+  "calculadora-capex.xlsx:CAPEX!F20": "«Columna incompleta: el TOTAL sólo suma las filas que has rellenado»",
+  "plan-financiero-3-anos.xlsx:Inversión!C46": "1.889.944,24 € (necesidad total) ≤ 2.305.000 € del rango alto",
+  "plan-financiero-3-anos.xlsx:Inversión!D27": "=IF(COUNT(D5:D26)=0,\"\",SUM(D5:D26)) → \"\" · explicado en Instrucciones!A17",
+  "guia-panaderia-obrador/plan-financiero-3-anos.xlsx:P&L 3 años!A28/A29/A30": "«… (%)» en las tres · B28:D30 en 0.0% en las DOS pasadas · DV en un solo grupo",
+  "guia-dark-kitchen/checklist-apertura-legal.xlsx (molde D)": "TOTAL nativo = 7.330,00 €, cuadra_subtotales = True",
+  "guia-dark-kitchen/checklist-equipamiento-obra.xlsx (molde C)": "TOTAL nativo = 49.550,00 €, cuadra_subtotales = True"
+ },
+ "dryrun": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/guias/fix python3 guias-v2_0/main.py --producto guia-restaurante-gastronomico --dry-run --json <scratchpad>/guias/fix/dryrun.json",
+  "exit": 0,
+  "idempotencia": 0,
+  "censo": 0,
+  "cache_fallos": "10, y sólo los preexistentes: plantilla-turnos-brigada.xlsx:'Registro de jornada'!C179:C188, SUMPRODUCT+IFERROR que pycel no evalúa (van a vacias_no_verificadas, no a fallos). Los otros 17 xlsx cierran con fallos_pycel = 0. La redacción del gate en la SPEC §9 se ha ajustado para decirlo con todas las letras, como pedía el crítico",
+  "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/fix/dryrun/guia-restaurante-gastronomico",
+  "otros_gates": {
+   "data_only_fallos": 0,
+   "xlsx_con_0_formulas": 0,
+   "demos_checklists_fallos": 0,
+   "demos_proteccion_fallos": 0,
+   "demos_bio_y_version_fallos": 0,
+   "demos_a4_fallos": 0,
+   "literales_sospechosos": 0,
+   "avisos": 0,
+   "formulas_medidas_en_los_18_xlsx": 1883,
+   "escrituras_de_formula": 1898
+  }
+ },
+ "hermanos": [
+  {
+   "pid": "guia-panaderia-obrador",
+   "modo": "--solo motor",
+   "exit": 1,
+   "idempotencia": 0,
+   "demos": "6 checklists de molde B: «molde_sin_bloque» con su contador propio intacto (2 COUNTIF cada uno) — ninguno devuelve None; protección 30/30 hojas, 0 fallos; bio y versión 0 fallos",
+   "fallo_residual": "RT-08: 3 xlsx con 0 fórmulas (gantt, plan-fermentación y turnos) porque con --solo motor no se cargan los grupos que los construyen. Esperado."
+  },
+  {
+   "pid": "guia-panaderia-obrador",
+   "modo": "completo (a,b,c)",
+   "exit": 1,
+   "idempotencia": 0,
+   "demos": "6 checklists de molde B con contador propio intacto; A28/A29/A30 con «(%)» y B28:D30 en 0.0% en las dos pasadas; DV en un solo grupo Protección 31/31, bio y versión 0 fallos.",
+   "fallo_residual": "RT-08: cronograma-apertura-gantt.xlsx con 0 fórmulas — PREEXISTENTE (falta contenido_guia_panaderia_obrador/b.py, que es T6). Antes, además, 4 diferencias de idempotencia: ahora 0."
+  },
+  {
+   "pid": "guia-dark-kitchen",
+   "modo": "--solo motor",
+   "exit": 0,
+   "idempotencia": 0,
+   "demos": "checklist-apertura-legal (molde D) total = 7.330,00 € y checklist-equipamiento-obra (molde C) total = 49.550,00 €, los dos con cuadra_subtotales = True. TODO VERDE. Protección 8/8, bio y versión 0 fallos."
+  },
+  {
+   "pid": "guia-dark-kitchen",
+   "modo": "completo (a,b,c)",
+   "exit": 1,
+   "idempotencia": 0,
+   "demos": "los dos checklists con total numérico y cuadra_subtotales = True",
+   "fallo_residual": "§1.3: el literal 0.05 de calculadora-viabilidad-dark-kitchen!P&L Mensual!B30 — PREEXISTENTE e idéntico al de critico-dk.json (falta contenido_guia_dark_kitchen/a.py, que es T6)."
+  },
+  {
+   "pid": "guia-restaurante-japones",
+   "modo": "completo (control de regresión del camino col_total de B-01)",
+   "exit": 1,
+   "idempotencia": 0,
+   "demos": "proyección con B9 = 0 y B10 = 0,60 → año 1 = 936.000,00 € = la columna TOTAL del P&L, exactamente el valor de antes de B-01. El camino de los 5 hermanos (rejilla de 12 meses con TOTAL) no cambia de valor: sin rampa medida en su contenido, la fórmula degenera en × 12.",
+   "fallo_residual": "RT-08 del gantt, preexistente y de T6"
+  }
+ ],
+ "notas": [
+  "B-01 obligaba a mover la cuenta de resultados 2 filas (cabecera A12, Ingresos B13, EBITDA B17, resultado neto B23, margen EBITDA B24): bajo PARÁMETROS sólo había UNA fila libre, la 9, y hacían falta DOS celdas verdes. Las referencias de la hoja son todas internas y se han recalculado desde una sola constante (F_ING); la demo de grupo_a localiza ahora sus filas por etiqueta en vez de por número. Ningún otro libro referencia esta hoja (§1.13 prohíbe los externalLink), así que el desplazamiento no sale del fichero.",
+  "B-01 tenía un efecto colateral que había que resolver o el arreglo introducía un defecto nuevo: si el año 2 se encadenaba al año 1 ramificado, la proyección facturaría en el año 2 MENOS que su propio ritmo de crucero. Por eso el año 2 parte del crucero anualizado. Consecuencia buena: los años 2 y 3 valen exactamente lo que valían antes y el único año que se mueve es el 1.",
+  "Los dos parámetros de la rampa no se eligen a ojo: se DERIVAN de la rampa que ya estaba medida en contenido_<pid>/a.py:CASH (meses = factores por debajo del crucero; primer mes = el que hace que la suma de una rampa lineal valga lo mismo que la del cash flow). Para el representante sale 0,60 clavado. Si una guía no trae rampa medida, salen 0 meses y la proyección se comporta EXACTAMENTE como antes, con la nota diciéndolo.",
+  "El diff contra la última copia auditada (propio-critico) toca 4 de los 18 xlsx y 115 celdas en total: calculadora-capex 26, menu-engineering 2, plan-financiero 76 y plantilla-turnos-brigada 11. Ningún otro fichero cambia: no hay daño colateral.",
+  "COM-24: el crítico decía que estaba implementado; medido ahora, lo está sólo su mitad xlsx. Los 3 .docx y el PDF del representante siguen con los metadatos de fábrica (author=«python-docx», created=2013-12-23, «(anonymous)»). No es contradicción con el crítico —él ya lo acotaba a «la de docx/PDF es T7»— pero conviene que quede escrito con la medición delante, porque es de las cosas que se dan por hechas al leer §1.11.",
+  "El gate de fórmulas del §9 («inject_cache con fallos_pycel = 0») estaba incumplido POR ESCRITO aunque el fichero estuviera bien. Se ha reescrito la redacción del gate en la SPEC para nombrar la excepción y su motivo, en vez de dejar un gate que nadie puede pasar.",
+  "Nada tocado en astro-site/public/dl/: todo el trabajo se ha hecho en --dry-run sobre el scratchpad, sin GUIAS_APPLY, sin builds, sin navegador y sin git. Temperatura de CPU entre 42,7 y 47,1 °C durante toda la sesión, un python cada vez."
+ ],
+ "produccion_intacta": "astro-site/public/dl/guia-*/ SIN TOCAR: mtimes del 18 y 22 de agosto en los 22 ficheros del representante. No hay carpeta `respaldos/` en el scratchpad, que es la prueba de que ninguna ejecución fue real. Los únicos ficheros de dl/ con fecha de hoy son los de plan-negocio-bar-restaurante, que son de otra familia y de otro hilo de trabajo.",
+ "ficheros_tocados": [
+  "scripts/productos-digitales/guias-v2_0/main.py",
+  "scripts/productos-digitales/guias-v2_0/grupo_a.py",
+  "scripts/productos-digitales/guias-v2_0/grupo_c.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/a.py",
+  "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py",
+  "scripts/productos-digitales/guias-v2-SPEC.md",
+  "scripts/productos-digitales/auditorias/guias-v2-ids.json (nuevo)",
+  "scripts/productos-digitales/auditorias/guias-v2-correccion.json (evidencia de RD-05/RD-07 remedida)",
+  "scripts/productos-digitales/auditorias/guias-v2-crit-correccion.json (este informe)"
+ ]
+}

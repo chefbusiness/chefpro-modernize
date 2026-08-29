@@ -47,7 +47,8 @@
   {
    "id": "RD-05",
    "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_break_even()",
-   "prueba": "'Cash Flow 12 Meses'!B46:B54: «Umbral de ventas — sólo explotación» 141.428,57 € y «Umbral CON el servicio de la deuda» 146.011,90 €, con la cuota en celda verde (3.208,33 €). Los cubiertos/día pasan a 53,87 y la nota ya dice lo mismo que la fórmula."
+   "prueba": "'Cash Flow 12 Meses'!B46:B54: «Umbral de ventas mensual — solo explotación» B48 = 141.145,257142857 € (B46 = 98.801,68 € de fijos sin amortización / B47 = 0,70 de margen de contribución) y «Umbral CON el servicio de la deuda» B50 = 145.728,585714286 €, con la cuota en celda verde B49 = 3.208,33 €. Los cubiertos/día pasan a B53 = 53,76644986507 (B50 / (B51 = 123,20 € × B52 = 22 días)) y la nota dice lo mismo que la fórmula.",
+   "prueba_anterior_desactualizada": "'Cash Flow 12 Meses'!B46:B54: «Umbral de ventas — sólo explotación» 141.428,57 € y «Umbral CON el servicio de la deuda» 146.011,90 €, con la cuota en celda verde (3.208,33 €). Los cubiertos/día pasan a 53,87 y la nota ya dice lo mismo que la fórmula."
   },
   {
    "id": "RD-06",
@@ -57,7 +58,8 @@
   {
    "id": "RD-07",
    "donde": "scripts/productos-digitales/guias-v2_0/grupo_a.py:_bloque_iva_y_deuda() (bloque «TESORERÍA DE LA APERTURA»)",
-   "prueba": "Filas 38-43: «Saldo inicial de tesorería» (934.320,48 €, el fondo de maniobra), «(-) Desembolso de la inversión pagado en estos 12 meses», «(-) IVA soportado de la inversión» y «SALDO DE TESORERÍA (fin de mes)» con semáforo. B42 = 915.022,81 €. El flujo acumulado sigue midiendo la explotación; la caja se mide aparte."
+   "prueba": "Filas 38-43: «Saldo inicial de tesorería» B39 = 934.320,48 € (el fondo de maniobra), «(-) Desembolso de la inversión pagado en estos 12 meses», «(-) IVA soportado de la inversión» y «SALDO DE TESORERÍA (fin de mes)» con semáforo. B42 = 914.031,214 €. El flujo acumulado sigue midiendo la explotación; la caja se mide aparte.",
+   "prueba_anterior_desactualizada": "Filas 38-43: «Saldo inicial de tesorería» (934.320,48 €, el fondo de maniobra), «(-) Desembolso de la inversión pagado en estos 12 meses», «(-) IVA soportado de la inversión» y «SALDO DE TESORERÍA (fin de mes)» con semáforo. B42 = 915.022,81 €. El flujo acumulado sigue midiendo la explotación; la caja se mide aparte."
   },
   {
    "id": "RD-08",
@@ -535,5 +537,6 @@
   "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/b.py",
   "scripts/productos-digitales/guias-v2_0/contenido_guia_restaurante_gastronomico/c.py"
  ],
- "nota_produccion": "NADA escrito en astro-site/public/dl/**: todo el trabajo se ha hecho con --dry-run sobre CLAUDE_SCRATCHPAD y GUIAS_APPLY nunca se ha usado."
+ "nota_produccion": "NADA escrito en astro-site/public/dl/**: todo el trabajo se ha hecho con --dry-run sobre CLAUDE_SCRATCHPAD y GUIAS_APPLY nunca se ha usado.",
+ "nota_ronda2_hallazgo_media": "Hallazgo «media» de guias-v2-ronda2.json: el arreglo de RD-05 y RD-07 es real y funciona, pero los NÚMEROS DE EJEMPLO que este JSON citaba como evidencia se quedaron desactualizados por fixes posteriores de la misma sesión (RD-14/RC-24 tocaron la fila de IVA y desplazaron los importes en cascada). No era un defecto del entregable: era el texto de la evidencia. Los dos `prueba` se han REMEDIDO sobre el dry-run del 2026-08-29 con el paquete ya corregido (exit 0, idempotencia 0, censo 0) y el texto anterior queda archivado en `prueba_anterior_desactualizada`. Lección: una evidencia con cifras es perecedera — se remide al cerrar, no se copia de la ronda anterior."
 }
