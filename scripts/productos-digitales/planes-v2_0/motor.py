@@ -1500,6 +1500,13 @@ ERRATAS = (
     ('Capital social min 1', 'Capital social mín. 1'),
     ('capital social min 1', 'capital social mín. 1'),
 )
+#: CRIT-05 — la pareja literal de arriba no cubría «(SL recomendada, capital
+#: min 1 €)», que es como lo escribe el checklist del representante, ni una
+#: cifra distinta de 1. `min` es demasiado común para tocarlo a secas (queda
+#: dentro de «mínimo», de «min.» y de cualquier unidad de tiempo), así que la
+#: regla exige el CONTEXTO completo: «capital [social] min <cifra>».
+RX_CAPITAL_MIN = re.compile(
+    r'(?i)\b(capital(?:\s+social)?\s+)min\b(?=\s*\d)')
 
 #: RC-31 — dos convenciones tipográficas conviviendo en el mismo libro.
 #: `EUR` detrás de una cifra pasa a `€` (el resto del libro ya usa `€`) y el
@@ -1604,6 +1611,8 @@ def corregir_texto(texto):
     for malo, bueno in ERRATAS:
         if malo in texto:
             texto = texto.replace(malo, bueno)
+    if 'min' in texto.lower():
+        texto = RX_CAPITAL_MIN.sub(lambda m: m.group(1) + 'mín.', texto)
     # RC-31 — homogeneización tipográfica (ver MENOS_MAT / RX_EUR_TEXTO)
     if MENOS_MAT in texto:
         texto = texto.replace(MENOS_MAT, '-')
@@ -2473,11 +2482,6 @@ def gate_ortografia(wb, fname):
                     if len(clave) < 5 or clave in HOMOGRAFAS:
                         continue
                     if _excusada(clave, mp.start()):
-                        continue
-                    # «campana extractora» convive a propósito con «Campaña
-                    # lanzamiento RRSS» en el mismo libro: es la excepción
-                    # que documenta §1.7 y que un barrido genérico rompe.
-                    if clave.startswith('campana'):
                         continue
                     if RX_YA_ACENTUADA.search(palabra) or 'ñ' in palabra.lower():
                         continue
