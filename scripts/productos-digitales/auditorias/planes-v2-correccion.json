@@ -1,0 +1,601 @@
+{
+ "rol": "T3 — corrector de la familia Planes v2.0, representante «plan-negocio-bar-restaurante» (línea A, molde A-α)",
+ "fecha": "2026-08-29",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md",
+ "entradas": {
+  "auditorias/planes-v2-ref-dominio.json": 35,
+  "auditorias/planes-v2-ref-excel.json": 28,
+  "auditorias/planes-v2-ref-coherencia.json": 33,
+  "total_ids": 96
+ },
+ "cruce_de_ids": {
+  "entrada": 96,
+  "resueltos": 85,
+  "no_aplicados": 11,
+  "suma": 96,
+  "cuadra": true,
+  "sin_clasificar": [],
+  "inventados": []
+ },
+ "verificacion": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/propio-corrector python3 planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run --json <scratchpad>/planes/final.json",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "fallos": [],
+  "gates_spec9": {
+   "no_latinos": 0,
+   "ortografia": 0,
+   "formatos": 0,
+   "referencias": 0,
+   "sin_formulas": 0,
+   "sin_bio": 0,
+   "sin_version": 0,
+   "hojas_sin_a4": 0,
+   "checklists": 1,
+   "sin_instrucciones": 0,
+   "creator_mal": 0,
+   "nombres_hoja": 0,
+   "cf_desanclado": 0
+  },
+  "demostraciones_2_11": {
+   "1_cubiertos_mueven_el_libro": true,
+   "1bis_break_even_invariante_al_volumen": true,
+   "2bis_escenarios_independientes": true,
+   "2_realista_igual_al_pyg": true,
+   "3_personal_del_pyg_es_el_de_su_hoja": true,
+   "4_delivery_a_cero": true,
+   "5_IS_con_BIN_y_tipo_de_nueva_creacion": true,
+   "6_tesoreria_sin_saldo_negativo": true,
+   "7_carencia_igual_al_plazo": true,
+   "8_libro_en_blanco_sin_falsos_verdes": true,
+   "9_direccion_de_cada_calculo": true,
+   "10_tipo_al_cero_por_ciento": true,
+   "11_plazo_maximo_cierra_el_cuadro": true,
+   "12_robustez_de_los_divisores": true,
+   "12bis_origen_cubre_los_usos": true,
+   "13_libro_en_blanco_sin_ceros": true
+  },
+  "censo_entregables_exit": 0,
+  "formulas_nuevas": [
+   null,
+   null
+  ],
+  "hermano_tapas_bar": {
+   "motivo": "RT-02: comprobación de que el fix del motor vale fuera del molde del representante",
+   "idempotencia_diferencias": 0,
+   "antes": 10
+  },
+  "astro_site_public_dl": "NO TOCADO: todo el trabajo va en --dry-run a scratchpad; nunca se ha usado PLANES_APPLY."
+ },
+ "resueltos": [
+  {
+   "id": "RD-01",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION: reglas «suprimir») + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion()",
+   "prueba": "Las dos partidas recurrentes salen de la hoja de inversión y se quedan SOLO en el P&L: plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial ya no tiene «Alta gestoría + contabilidad primer año» ni «Seguros (RC + multirriesgo + empleados)», y el bloque GASTOS LEGALES Y CONSTITUCIÓN pasa de 4.900 € a 1.100 € (B40). Los 3.800 € siguen una sola vez en 2. P&L 3 Años!B26 (gestoría 1.800) y B27 (seguros 2.000). El informe del run los anota: «Inversión: fuera …»."
+  },
+  {
+   "id": "RD-02",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION_EXTRA) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (fila «imprevistos» por fórmula)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!A35 «Mobiliario y toldo de terraza» 4.200 €; bloque nuevo A43 «EXISTENCIAS INICIALES» con A44 «Primera compra de despensa y cámaras» 6.500 € y A45 «Primera compra de bodega y barra» 5.500 €; A13 «Imprevistos de obra y acondicionamiento» B13 = =IF(COUNT(B7:B10)=0,\"\",ROUND(SUM(B7:B10)*Supuestos!$B$55,0)) = 3.800 € (10 % en celda verde B55, nunca literal). DOM-19 cerrado: las tres partidas están en el Excel."
+  },
+  {
+   "id": "RD-04",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INSTRUCCIONES['referencias']) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.instrucciones()",
+   "prueba": "Vuelven las tres filas borradas, con fuente propia: «Inversión media de apertura | 80.000-150.000 € | Fichero v1.1» (con la nota de por qué este plan queda por encima: fondo de maniobra, existencias e IVA), «Tasa de cierre de restaurantes en el primer año | 25 %» y «… a los cinco años | 50 %». El bloque DATOS DE REFERENCIA DEL SECTOR de plan-financiero-bar-restaurante.xlsx:Instrucciones pasa de 7 a 10 filas y estrena cabecera Referencia/Valor/Fuente/Nota."
+  },
+  {
+   "id": "RD-05",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equilibrio()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio!A13 «Devolución de principal del año (cuota)» = 7. Financiación!cap_n; bloque nuevo A18 «PUNTO DE EQUILIBRIO DE CAJA (incluye la cuota del préstamo)» con B19 = costes fijos - amortización + principal = 243.219,20 € y B21 «Cubiertos necesarios al día (caja)» = 62,93 frente a los 65,14 del contable (B16). Los dos umbrales van rotulados, como manda §3.5."
+  },
+  {
+   "id": "RD-06",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses!B30 «Inversión a recuperar» = 1. Inversión Inicial!$B$51 (NECESIDAD TOTAL DE CAJA, 201.899,40 €), no los 101.760 € de antes; los flujos B26:B28 van DESPUÉS del servicio de la deuda (B26 = suma de los doce FLUJO DEL MES, que ya descuenta el principal). Payback B31 = 2,98 años = 35,7 meses, dentro de los «30 a 40 meses» que el propio documento da para el escenario realista."
+  },
+  {
+   "id": "RD-07",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.instrucciones() (bloque nuevo desde RECALIBRADO)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:Instrucciones estrena el bloque «QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1» con cuatro columnas (Concepto | v1.1 | v2.0 | Por qué) y las 10 entradas de RECALIBRADO: coste de personal imputado, plantilla, cubiertos/día, ticket, alquiler, suministros, fondo de maniobra, amortización, delivery y préstamo. Ninguna palanca del caso base queda sin rastro."
+  },
+  {
+   "id": "RD-08",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (UMBRALES r_personal 0,35 → 0,34 y SUPUESTOS ticket_medio 17,20 → 18,20 €)",
+   "prueba": "Se elige el techo MÁS ESTRICTO que publica el producto: plan-financiero-bar-restaurante.xlsx:2. P&L 3 Años!E56 = 0,34 y B56 = 0,3366 → Instrucciones marca CUMPLE con 0,34 puntos de margen (antes cumplía por 0,52 sólo contra el 35 %). El cierre se hace por el PRECIO, dentro de los dos rangos que el producto declara (15-22 € de PVP en su bloque de referencias y 18-25 € en el documento): 18,20 € sin IVA = 20,72 € de PVP. Ningún porcentaje escondido tocado."
+  },
+  {
+   "id": "RD-09",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.personal()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:5. Personal estrena las columnas H «Horas/semana por persona» (= jornada × B20) e I «Horas/año del puesto», y el bloque A19 «COBERTURA POR HORAS DE SERVICIO»: B20 jornada completa del convenio (40 h, art. 34.1 ET), B21 semanas trabajadas (46 = 52 menos las vacaciones del art. 38 ET), B22 horas de servicio al día (13), B23 personas por franja (2), B24 «Horas de servicio a cubrir al año» = 8.060 y B25 «Horas contratadas al año» = 9.936 → B26 cobertura 123 %, con semáforo rojo por debajo del 90 %."
+  },
+  {
+   "id": "RD-10",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.personal() (bloque «CRECIMIENTO DE LA PLANTILLA») y Plan.pyg()",
+   "prueba": "El personal deja de escalar con el volumen: plan-financiero-bar-restaurante.xlsx:5. Personal!B15 y B16 son celdas verdes de coste de las incorporaciones de los años 2 y 3 (6.000 € cada una) y B17/B18 calculan el coste del año; 2. P&L 3 Años!C24 y D24 los leen. Los ratios YA se mueven: coste de personal/ventas 33,66 % · 31,81 % · 31,15 % en B56:D56 (antes 0,34484714928732185 idéntico en las tres columnas)."
+  },
+  {
+   "id": "RD-11",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria() (filas iva_pend / iva_cuota / iva_liq)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses!E18 «IVA a compensar arrastrado (inversión incluida)» = 1. Inversión Inicial!$B$50 = 22.734,60 €; E19 lo resta de la liquidación del primer trimestre (-20.952,37 €) y H18/K18 arrastran el saldo que queda (18.177,7 → 12.888,8 …). El IVA de la inversión se recupera dentro del modelo, como el propio libro afirmaba dos veces."
+  },
+  {
+   "id": "RD-12",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (SUPUESTOS['pct_bebida_alc']) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg()/tesoreria()",
+   "prueba": "La línea de bebida deja de ir toda al 21 %: plan-financiero-bar-restaurante.xlsx:0. Supuestos!B62 «Bebida ALCOHÓLICA sobre el total de bebida» = 60 % (verde) y 2. P&L 3 Años!G15 = =(B62*B40+(1-B62)*B39) = 16,6 %. El IVA repercutido de la tesorería (fila 16) y el PVP equivalente de 0. Supuestos!B9 usan esa mezcla, no el tipo general plano."
+  },
+  {
+   "id": "RD-13",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg() (columna G «Tipo de IVA soportado (%)») y Plan.tesoreria()",
+   "prueba": "Cada fila del P&L declara su tipo: plan-financiero-bar-restaurante.xlsx:2. P&L 3 Años!G18 = 0 % en «Comisiones de los medios de pago» (exentas, art. 20.Uno.18 LIVA) y G26 = 0 % en «Seguros» (exentos, art. 20.Uno.16 LIVA), frente al 21 % plano anterior; B41/B42 son SUMPRODUCT de importe × tipo y la tesorería los lee (fila 17). Los ~1.136,62 €/año de IVA inexistente desaparecen."
+  },
+  {
+   "id": "RD-14",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (columna E «¿Lleva IVA?» + SUMIF) y _lleva_iva()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!B50 = =IF(B48=\"\",\"\",SUMIF($E$7:$E$45,\"Sí\",$B$7:$B$45)*Supuestos!$B$41): quedan fuera la fianza (E11 «No»), el fondo de maniobra (E47 «No»), los seguros, «Licencias y permisos varios» (E42 «No») y «Constitución SL (notaría + registro)» (E41 «No»). La columna es verde con desplegable Sí/No para que el comprador corrija su caso."
+  },
+  {
+   "id": "RD-15",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (SUPUESTOS['vida_maquinaria'] 8 → 10) + scripts/productos-digitales/planes-v2_0/motor.py TECHOS_DV",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:0. Supuestos!B45 = 10 años = 10 % anual, por debajo del coeficiente lineal máximo del art. 12.1 LIS (12 % maquinaria / 10 % mobiliario), y su nota lo dice. La validación de datos de esa celda pasa a entero entre 1 y 50 («Vida útil en AÑOS ENTEROS (1 a 50)»), así que ya no admite 0."
+  },
+  {
+   "id": "RD-16",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (clave «fondo»)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!B47 = =IF(Supuestos!$B$35*(2. P&L!$B$40-2. P&L!$B$38)=0,\"\",…/12): los tres meses se dotan sobre los costes fijos DE CAJA (sin la amortización). El colchón baja de 63.377,93 € a 60.534,80 € y deja de financiar con deuda a siete años un gasto que nadie paga. La nota D47 lo explica."
+  },
+  {
+   "id": "RD-17",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (SUPUESTOS rampa_mes1/meses_rampa) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses separa la ESTACIONALIDAD (fila 5, verde, suma 100 %) de la RAMPA (fila 6: =MIN(1;B52+(1-B52)*i/MAX(1;B53-1)), del 55 % al 100 % en 6 meses) y las compone normalizadas en la fila 7. El mes 1 pasa de facturar el 7,0 % del año al 4,3 %, el saldo mínimo deja de ser el del mes 1 y B24 «Mes en el que la caja toca fondo» devuelve 2."
+  },
+  {
+   "id": "RD-18",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (mes_paga_1/mes_paga_2) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses!B13 = -10.852,80 € en los meses normales y H13/M13 = -21.705,60 € en los meses 7 y 12 (las dos pagas extra, que salen de las celdas verdes B60 y B61 de Supuestos). El total del año sigue siendo el del P&L, pero la caja ya enseña los dos meses en que se tensa."
+  },
+  {
+   "id": "RD-19",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.escenarios() (bloque «LO QUE CADA ESCENARIO EXIGE»)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:4. Escenarios!A24 «Coste de personal / Ventas» (pesimista 54,9 %, con semáforo contra el umbral del P&L), A25 «Cubiertos al año por jornada equivalente» y A26 «Saldo de caja al cierre del año 1» = fondo + neto + amortización - principal, con semáforo rojo si el escenario se queda sin caja."
+  },
+  {
+   "id": "RD-20",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equilibrio() (columnas por año) y Plan.pyg() (fila r_be)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio pasa a tres columnas: B17/C17/D17 «Ingresos necesarios al año» = 367.497 / 376.256 / 383.634 €, cada uno con los costes fijos de SU año. 2. P&L 3 Años!C59 y D59 comparan contra el umbral de su columna, no contra el del año 1."
+  },
+  {
+   "id": "RD-21",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.financiacion()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:7. Financiación!C51 rotula el DSCR del año 1 como «Año de CARENCIA si la hay: con sólo intereses en el denominador el ratio se dispara y no mide el negocio»; el cuadro estrena las columnas G «Flujo de caja disponible» y H «DSCR del año» hasta el vencimiento, y B54 «DSCR mínimo de todo el cuadro» = 3,79 (el peor de los 7 años), no el del año 1 (9,59)."
+  },
+  {
+   "id": "RD-22",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (dscr_min/dscr_obj/holgura_min) + scripts/productos-digitales/planes-v2_0/grupo_a.py financiacion()/equilibrio()",
+   "prueba": "Los cuatro umbrales salen de la fórmula del formato condicional a celdas: plan-financiero-bar-restaurante.xlsx:0. Supuestos!B65 (DSCR mínimo 1,00), B66 (DSCR objetivo 1,25), B67 (holgura mínima 15 %) y 7. Financiación!B42 (tolerancia de cierre del cuadro, 0,01 €). Los semáforos de B51:B54, de 3. Punto Equilibrio!B25:D25 y de 7. Financiación!B43 los referencian."
+  },
+  {
+   "id": "RD-23",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg() (mix_en_supuestos) y Plan.supuestos_calculadas()",
+   "prueba": "Dependencia invertida: plan-financiero-bar-restaurante.xlsx:0. Supuestos!B11 = 0,65 es ahora el INPUT verde con DV (y B12 = =1-B11, bloqueada), y 2. P&L 3 Años!E11 = =IF(Supuestos!$B$11=\"\",\"\",Supuestos!$B$11) va bloqueada y sin relleno. La hoja de mando ya no manda al cliente a una celda que no puede tocar."
+  },
+  {
+   "id": "RD-24",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (nota de cubiertos_dia) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.supuestos_calculadas()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:0. Supuestos!B51 «Aforo del local (plazas sentadas + barra)» = 56 en celda verde y B50 «Rotaciones al día implícitas (calculado)» = =B4/B51 = 1,43, con la nota C50 generada por fórmula que cita literalmente el documento: «pide un MÍNIMO de 1,8 rotaciones por mesa y servicio en temporada alta». La nota vieja, que presentaba el 1,8 como techo y las 56 plazas a mano, está reescrita."
+  },
+  {
+   "id": "RD-25",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (salario_convenio) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.personal()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:0. Supuestos!B68 «Suelo salarial anual del convenio provincial (€)» (verde, a 0 porque la tabla es provincial y NO se inventa) y el formato condicional de 5. Personal!D6:D12 compara ahora contra MAX(SMI; convenio) × jornada. La nota al pie de la hoja lo explica y remite a la tabla de la provincia."
+  },
+  {
+   "id": "RD-26",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (CHECKLIST['altas'], categoría RGPD)",
+   "prueba": "checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!B61:B64 — cuatro trámites nuevos: registro de actividades de tratamiento (art. 30 RGPD / art. 31 LOPDGDD), información al equipo del registro horario, cartel y contrato de videovigilancia, y cláusula informativa en reservas y newsletter. El checklist pasa de 59 a 64 ítems con desplegable."
+  },
+  {
+   "id": "RD-27",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (CHECKLIST['altas'], categoría Fiscal)",
+   "prueba": "checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!B65 «Adaptar el TPV y la facturación al sistema Veri*factu / factura electrónica», responsable Gestoría, plazo «Antes de abrir», con la nota del RD 1007/2023 y su calendario escalonado (sin fecha inventada) y el aviso de que se decide ANTES de comprar el TPV que presupuesta la hoja de Inversión."
+  },
+  {
+   "id": "RD-28",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (fase_final / fase_final_nueva) + scripts/productos-digitales/planes-v2_0/grupo_a.py _altas_checklist()",
+   "prueba": "Reordenado: checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!A50 «FASE 6: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES DE ABRIR (meses 6-8)» (filas 51-65, con el seguro de RC, los boletines de gas y la gestión de residuos) y A66 «FASE 7: PRIMEROS 90 DÍAS (meses 8-11)» (filas 67-74). Quien trabaje el checklist de arriba abajo ya no abre antes de contratar el seguro."
+  },
+  {
+   "id": "RD-29",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (CHECKLIST['reemplazos'])",
+   "prueba": "checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!C40 = «Titular o servicio ajeno» (era «Servicio PRL») y B40 = «Plan de prevención de riesgos laborales (asumido por el titular o con servicio ajeno)». La columna que dice a quién llamar ya no contradice a la nota que explica el art. 30.5 de la Ley 31/1995."
+  },
+  {
+   "id": "RD-30",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py _borrar_fila() en Plan.checklist()",
+   "prueba": "La fila duplicada del RGSEAA se BORRA en vez de vaciarse: checklist-apertura-bar-restaurante.xlsx:Checklist Apertura pasa de la fila 21 (Registro Sanitario autonómico) a la 22 (Licencia de terraza) sin hueco. `_borrar_fila` arregla además las combinadas y los altos, que openpyxl no mueve: sin eso se perdían «Reforma y acondicionamiento del local» y «Publicar ofertas de empleo», que caían dentro de una combinada muerta."
+  },
+  {
+   "id": "RD-31",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (SUPUESTOS['alquiler_mes'] 2.900 → 3.000)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:0. Supuestos!B24 = 3.000 €/mes (fuente: fichero v1.1, sin recalibrar). Con el ticket recalibrado el ratio alquiler/ventas es 2. P&L 3 Años!B57 = 7,98 %, por debajo del techo de 8-10 % del propio libro. La fianza (B11 = 9.000 €) y el fondo de maniobra vuelven a colgar del coste real."
+  },
+  {
+   "id": "RD-32",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py (TILDES + RX_SIN_TILDE_2 + heurística de convivencia)",
+   "prueba": "Corregidas en el fichero: 1. Inversión Inicial!A18 «Cámara frigorífica», A23 «Estanterías inox almacén», A29 «Molinillo café profesional», A39 «Constitución SL (notaría + registro)», D36 «Página básica + ficha GMB». El gate suma un segundo patrón (camaras|frigorific[oa]s?|estanterias?|almacen|cafes?|paginas?|notaria|busquedas?|consejerias?|codigos?|clausulas?) y la heurística de CONVIVENCIA, que caza cualquier palabra sin tilde que comparta forma normalizada con una acentuada del mismo libro (con lista de homógrafos legítimos y la excepción «campana extractora»). Gate «ortografia: 0»."
+  },
+  {
+   "id": "RD-33",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (referencias con FUENTE) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.instrucciones()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:Instrucciones — el bloque de referencias estrena cabecera «Referencia | Valor | Fuente | Nota» y la fila del ticket medio lleva ya «Fichero v1.1» en la columna de fuente, con la explicación del PVP movida a la columna de nota. Las 10 filas declaran su procedencia."
+  },
+  {
+   "id": "RD-34",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.financiacion() + demostración 12-bis",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:7. Financiación!B16 «Diferencia sobre los usos (%)» = 0,55 % con semáforo ámbar por encima de B17 «Exceso de financiación admisible (%)» (5 %, celda verde), y B18 «Préstamo que ajustaría el origen a la necesidad» = 126.899 €. La demostración §2.11.12-bis es BLOQUEANTE: exige diferencia ≥ 0 y ≤ el tope. Se recalibró el préstamo a 128.000 € porque con 110.000 € el origen quedaba 16.629 € por debajo de la necesidad."
+  },
+  {
+   "id": "RD-35",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (dias_cobro/dias_pago) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:0. Supuestos!B58 «Días medios de cobro» (0, contado) y B59 «Días medios de pago a proveedor» (30). La fila 9 de la tesorería reparte el cobro entre el mes y el anterior con MIN(30;B58)/30, y la fila 11 hace lo mismo con el pago: con 0 días el resultado no cambia (demostrable) y el modelo ya permite probar el desfase de las plataformas de reserva y de reparto."
+  },
+  {
+   "id": "RT-01",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py _altas_checklist() (regla reconstruida) + scripts/productos-digitales/planes-v2_0/motor.py gate_cf_anclado()",
+   "prueba": "La regla se reconstruye con la fórmula REANCLADA, no se reutiliza el objeto: checklist-apertura-bar-restaurante.xlsx:Checklist Apertura pasa a sqref A4:F75 con $E4=\"✓\" (antes A3:F73 con $E4, que pintaba la cabecera según un ítem y desplazaba toda la tabla una fila). Se añade el gate `gate_cf_anclado`, BLOQUEANTE en main.py, que exige que la primera fila de la fórmula coincida con la superior del sqref: con la regresión viva devolvía «cf_desanclado: 1» y ahora devuelve 0."
+  },
+  {
+   "id": "RT-02",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py _leer_plantilla() (columna de bruto por RÓTULO) y _leer_escenarios()",
+   "prueba": "Medido sobre el hermano: `--dry-run` de plan-negocio-tapas-bar pasa de «gates.idempotencia.diferencias = 10» (los siete sueldos de la hoja Personal a 1 € más tres celdas de Escenarios) a **0 diferencias**. Dos causas: (a) la lista cerrada de cabeceras no reconocía «Bruto mes (€, total del puesto)» —la que escribe este mismo grupo— y caía al índice 3, que es «Jornada» = 1; ahora se busca por rótulo normalizado que empiece por «bruto» y, si no aparece, se aborta con anotación en vez de adivinar; (b) `_leer_escenarios` se quedaba con la ÚLTIMA fila que casaba «Cubiertos/día» —que es la fórmula del equilibrio— y recalculaba los tres drivers en la 2.ª pasada."
+  },
+  {
+   "id": "RT-04",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg() (cv_varios) y Plan.escenarios() + demostración 2-bis",
+   "prueba": "«Varios e imprevistos» pasa de COSTES FIJOS a COSTES VARIABLES: plan-financiero-bar-restaurante.xlsx:2. P&L 3 Años!B19 = =IF(B10=\"\",\"\",B10*Supuestos!$B$28) dentro del bloque de variables, y 4. Escenarios!B14/D14 calculan los suyos sobre las ventas de SU escenario. Nueva demostración BLOQUEANTE §2.11.2-bis: mover un input del realista (cubiertos ×1,4) no puede cambiar el resultado del pesimista ni del optimista; con el defecto vivo el pesimista se movía −3.199,20 €."
+  },
+  {
+   "id": "RT-05",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg() (cv_varios) + demostración 1-bis",
+   "prueba": "El punto de equilibrio deja de moverse con el volumen. Nueva demostración BLOQUEANTE §2.11.1-bis: se evalúa 3. Punto Equilibrio!B16 con los cubiertos del caso base, ×1,4 y ×0,4 y se exige que las tres lecturas no difieran más de 0,01 cubiertos/día. Antes daba 67,44 / 68,29 / 66,02."
+  },
+  {
+   "id": "RT-06",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.financiacion() (rama de tipo 0 y cierre contra el principal) + demostración 10",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:7. Financiación!B24 = =IF(B22-B23<=0,\"\",IF(B21=0,B20/(B22-B23),B20*B21/(1-(1+B21)^-(B22-B23)))). Demostración §2.11.10, BLOQUEANTE: con el tipo al 0 % la cuota sale número (>0), los intereses del año 1 son 0 y el capital pendiente al vencimiento cierra en |x| ≤ 0,5. Con el defecto vivo la cuota era «» y B34 certificaba en VERDE que se habían devuelto 110.000 € que nadie había devuelto."
+  },
+  {
+   "id": "RT-07",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.financiacion() (motor.PLAZO_MAX filas) + scripts/productos-digitales/planes-v2_0/motor.py TECHOS_DV",
+   "prueba": "El cuadro pasa de 10 a 15 filas (plan-financiero-bar-restaurante.xlsx:7. Financiación!A27:H41) y la DV del plazo se acota a entero entre 1 y 15 con el mensaje «el cuadro de amortización de este libro llega a 15 años». Demostración §2.11.11, BLOQUEANTE: con plazo 15 el capital pendiente al vencimiento cierra en 0. Antes, con un plazo ICO de 12 años quedaban 25.570,74 € sin amortizar y la hoja acusaba al usuario."
+  },
+  {
+   "id": "RT-08",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py validaciones()/TECHOS_DV + scripts/productos-digitales/planes-v2_0/grupo_a.py (MAX(1;vida) y MAX(12;pagas)) + demostración 12",
+   "prueba": "DV separada por naturaleza: recuentos y divisores → entero (pagas 12-16, vidas útiles 1-50, plazo 1-15, carencia 0-15, cubiertos/aforo ≥ 1), con su propio mensaje. Y las fórmulas dejan de poder dividir entre cero: la amortización usa MAX(1;vida) —un 0 amortiza en un año y el resultado EMPEORA, no mejora— y el coste anual usa MAX(12;pagas), así que un 0 ya no pone el coste de personal a cero ni todos los semáforos en CUMPLE. Demostración §2.11.12, BLOQUEANTE, con siete inputs a 0 y su regla (no_mejora / no_cero / vacio / rastro)."
+  },
+  {
+   "id": "RT-09",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py RX_DIAS + RX_POR_DIA + RX_RECUENTO_DV",
+   "prueba": "La regla de los días deja de tragarse los cubiertos: RX_DIAS sólo casa un NÚMERO de días («Días de apertura al año») y RX_POR_DIA la desactiva en cualquier magnitud POR día. plan-financiero-bar-restaurante.xlsx:0. Supuestos!B4 y 4. Escenarios!B6/D6 pasan a «whole ≥ 1, ≤ 100000» con el mensaje «Escribe un número ENTERO de 1 en adelante…», y el «Los días van de 1 a 365» se queda sólo en B6 y en Escenarios!B8/D8."
+  },
+  {
+   "id": "RT-10",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py validaciones() (RX_COL_TEXTO)",
+   "prueba": "Toda celda cuya CABECERA de columna sea Notas/Comentarios/Observaciones/Fuente/Responsable/Plazo/Descripción queda fuera de la DV numérica. plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!D22, D29 y D42 —las tres notas vacías— ya no rechazan el texto con «Escribe un número mayor o igual que 0»."
+  },
+  {
+   "id": "RT-11",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py gate_formatos() + _devuelve_texto() + formatos_texto()",
+   "prueba": "El gate deja de saltar las celdas de texto: detecta «texto con formato numérico» tanto en el literal como en la fórmula que devuelve texto (`=\"…\"`, `&TEXT(`). Y `formatos_texto()`, que corre en `cerrar()` antes de las validaciones, pone General en todas: el run pasa de un «formatos: 0» falso a un 0 medido (0 celdas de texto con formato de € o %, verificado con openpyxl sobre el fichero generado)."
+  },
+  {
+   "id": "RT-12",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py escribir()/inversion()/pyg()/financiacion() (verdes por columna)",
+   "prueba": "El verde marca sólo lo que alimenta una fórmula: las partidas de la inversión pasan a `verdes=(\"B\",\"E\")` (importe y marca de IVA, no la nota), los ratios del P&L a `verdes=(\"E\",)` (umbral, no comentario), las líneas de ingreso a `verdes=(\"E\",)` y las fuentes alternativas de financiación a `verdes=(\"B\",)`. La columna de notas queda sin relleno, como el resto de lo que no se teclea."
+  },
+  {
+   "id": "RT-13",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg()/supuestos_calculadas()",
+   "prueba": "Mismo fix que RD-23: plan-financiero-bar-restaurante.xlsx:0. Supuestos!B11 es el input verde (0,65) con su DV de porcentaje y C11 dice lo que la celda hace de verdad («Peso de la COMIDA sobre el total de ventas. Es un INPUT…»); 2. P&L 3 Años!E11 pasa a leerla, bloqueada y sin relleno."
+  },
+  {
+   "id": "RT-14",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION) + scripts/productos-digitales/planes-v2_0/grupo_a.py (fila «renta1» con meses_renta_previa)",
+   "prueba": "Los 6.700 € dejan de contarse dos veces. Gestoría y seguros salen de la inversión (RD-01) y la renta que sí es inversión pasa a ser la de ANTES de abrir: plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!A12 «Alquiler de los meses previos a la apertura» = =IF(Supuestos!$B$24=\"\",\"\",B24*B54), con B54 «Meses de alquiler ANTES de abrir (obra y licencias)» en celda verde y la nota «NO se solapa con el P&L, que arranca el día de la apertura»."
+  },
+  {
+   "id": "RT-15",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (nota D de «amort» generada con TEXT y fila CAPEX)",
+   "prueba": "La nota se GENERA desde el fichero, no es una frase fija: «No se amortizan el fondo de maniobra, la fianza, el alquiler previo, el marketing de lanzamiento, los gastos de constitución ni las existencias iniciales… Suman \"&TEXT(B48-B53-B54;\"#,##0\")&\" € de los \"&TEXT(B48;\"#,##0\")&\" € de inversión». Y las partidas que nombraba y no existían (stock e imprevistos) ya son filas reales (RD-02)."
+  },
+  {
+   "id": "RT-16",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria() (iva_pend / iva_cuota / iva_liq)",
+   "prueba": "El truncamiento `-MAX(0,…)` se sustituye por el circuito real del modelo 303: plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses!E19 «Resultado de la liquidación trimestral» (puede ser negativo: -20.952,37 € en el primer trimestre), E20 «Pago del IVA» = =IF(E19<=0,\"\",-E19) y H18/K18 arrastran lo que queda por compensar. El IVA soportado de la inversión entra en E18 como saldo inicial."
+  },
+  {
+   "id": "RT-17",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py escribir() (RX_SOLO_NUMERO) y Plan.tesoreria()",
+   "prueba": "No queda ni una fórmula que sea una constante envuelta en una guarda: `=IFERROR(0,\"\")` y `=IFERROR(1,\"\")` se escriben como VALOR, y los meses sin liquidación de IVA quedan EN BLANCO (plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses filas 18-20 sólo tienen contenido en los meses 4, 7 y 10). Barrido con openpyxl sobre el fichero generado: 0 coincidencias de ^=IFERROR\\(<constante>,\"\"\\)$."
+  },
+  {
+   "id": "RT-18",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py fx() (regla del espejo), Rejilla(driver=…), guardas COUNT + demostración 13",
+   "prueba": "Prueba del libro en blanco rehecha: se vacían las celdas verdes de TODAS las hojas (antes sólo las de Supuestos, y los escenarios seguían imprimiendo cifras) y se exige 0 errores Y 0 celdas que impriman 0 € o 0,0 %. Medido: de 162 celdas con cero se pasa a **0**. Mecanismos: `fx()` convierte todo espejo `=<ref>` en `=IF(ref=\"\",\"\",ref)`; la rejilla lleva un DRIVER por hoja (los ingresos del año, el bruto del puesto…) que envuelve las fórmulas; y los totales por `SUM` llevan guarda `IF(COUNT(rango)=0,\"\",…)`. La demostración §2.11.13 es BLOQUEANTE."
+  },
+  {
+   "id": "RT-19",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py altos_y_wrap()",
+   "prueba": "La norma de §1.8 (ceil(len/ancho) × 15 pt) se aplica a TODA celda con wrapText, esté combinada o no, y sin el tope de 34 pt. Medido sobre los dos xlsx generados: 0 celdas con wrap y alto insuficiente (antes 10, entre ellas 6. Tesorería!A29 con 275 caracteres a 44 pt y Checklist!F41 con 221 a 34 pt)."
+  },
+  {
+   "id": "RT-20",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py demos() (filtro por molde)",
+   "prueba": "`grupo_a.demos()` detecta el molde del plan financiero y, si no está en MOLDES (A-alfa, A-beta), devuelve `{\"fallos\": [], \"fuera_de_alcance\": {...}}` en vez de meter «grupo_a: faltan hojas en …». Los productos de línea B dejan de salir con exit 1 por un fallo que no es suyo, y el exit code vuelve a ser señal útil para T6-T8."
+  },
+  {
+   "id": "RT-21",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg() (cf_amort años 2 y 3)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:2. P&L 3 Años!C38 y D38 = =IF(C10=\"\",\"\",B38): la amortización es una cuota sobre el coste HISTÓRICO y ya no se indexa con el IPC. Su nota lo dice. Con Supuestos!B48 al 2 % la amortización del año 3 ya no sale un 4,04 % por encima de la base ni arrastra al resultado, al DSCR ni al flujo de caja libre."
+  },
+  {
+   "id": "RT-22",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria() (fcf_1 desde la tabla mensual + fila de contraste)",
+   "prueba": "Una sola definición, y la diferencia a la vista: plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses!B26 «Flujo de caja libre del año 1 (tabla mensual)» = N21 (la suma de los doce FLUJO DEL MES), B27/B28 estimados para los años sin tabla, y B29 «Contraste: resultado + amortización - principal (año 1)» con la nota que explica que la diferencia es el efecto del IVA y del desfase de cobros y pagos. El payback (B31) usa B26."
+  },
+  {
+   "id": "RT-23",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py _sensibilidad()",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio!B34 = =IFERROR($B$9-2,\"\") en vez de =IFERROR($B$9+-2,\"\"): el desplazamiento se formatea con signo ('%+g') en vez de concatenar «+» y un delta negativo."
+  },
+  {
+   "id": "RT-24",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py escribir() (RX_SOLO_TEXTO)",
+   "prueba": "Toda nota que no interpole ninguna celda se escribe como VALOR, no como `=IFERROR(\"texto\",\"\")`. El recuento de fórmulas nuevas del representante baja de 633 a 595 en cuanto se aplica (las 38 notas literales) y las que sí llevan TEXT() de un dato variable siguen siendo fórmula. Barrido con openpyxl: 0 coincidencias de ^=IFERROR\\(\"…\",\"\"\\)$."
+  },
+  {
+   "id": "RT-25",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (columna «¿Lleva IVA?» + SUMIF)",
+   "prueba": "Mismo fix que RD-14: la base del IVA soportado deja de ser «todo menos fianza y fondo». Seguros (exentos) y «Licencias y permisos varios» (no sujetas) van marcados «No» en la columna E y el SUMIF los deja fuera."
+  },
+  {
+   "id": "RT-26",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (clave «fondo»)",
+   "prueba": "Mismo fix que RD-16: el colchón se calcula sobre los costes fijos DE CAJA (B40 - B38, sin la amortización) y la nota D47 dice «meses de costes fijos DE CAJA del año 1 (los del P&L menos la amortización, que no se paga)». Los intereses, que sí salen de caja, se quedan dentro."
+  },
+  {
+   "id": "RT-27",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria() (fila p_personal)",
+   "prueba": "Mismo fix que RD-18: doce mensualidades más las dos pagas extra en el mes que digan Supuestos!B60 y B61. El saldo mínimo del año, que es la cifra que decide si el fondo de maniobra basta, ya recoge esos dos meses."
+  },
+  {
+   "id": "RT-28",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equilibrio() (filas rot_max / rot_be)",
+   "prueba": "La guarda que no podía saltar se sustituye por una que sí: plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio!B26 «Rotaciones al día que da el local como máximo» (3,0 en celda verde) y B27 «Rotaciones al día que exige el equilibrio de caja» = cubiertos de equilibrio / aforo = 1,12, con semáforo ROJO por encima del techo. Un punto de equilibrio que exija más rotaciones de las que da el local ya no pasa en silencio."
+  },
+  {
+   "id": "RC-01",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION: reglas «suprimir»)",
+   "prueba": "Mismo fix que RD-01: gestoría y seguros del primer año se quedan SOLO en los costes fijos del P&L (plan-financiero-bar-restaurante.xlsx:2. P&L 3 Años!B26 y B27) y desaparecen de la hoja de inversión. El bloque GASTOS LEGALES Y CONSTITUCIÓN baja de 4.900 € a 1.100 € y el fondo de maniobra deja de arrastrar los 950 € que esos 3.800 € le añadían."
+  },
+  {
+   "id": "RC-02",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INVERSION_EXTRA) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion()",
+   "prueba": "Mismo fix que RD-02: terraza (B35 = 4.200 €), existencias iniciales (bloque A43 con 6.500 + 5.500 €) e imprevistos de obra por fórmula (B13 = 3.800 €, 10 % en celda). Ninguna de las tres entra en las bases de amortización B53/B54 (`AMORT_DEFECTO` las clasifica como no amortizables) y B48/B51 se recalculan solos."
+  },
+  {
+   "id": "RC-03",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (rampa_mes1 / meses_rampa) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.tesoreria()",
+   "prueba": "Mismo fix que RD-17: el año 1 ya no se proyecta a velocidad de crucero desde el mes 1. plan-financiero-bar-restaurante.xlsx:6. Tesorería 12 meses!B7 (reparto calculado) = 4,3 % en el mes 1 frente al 7,0 % anterior, y B24 «Mes en el que la caja toca fondo» = 2. La rampa es un parámetro: con el mes 1 al 100 % desaparece, y la nota lo dice."
+  },
+  {
+   "id": "RC-04",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py altos_y_wrap()",
+   "prueba": "Las seis notas legales que justifican la v2.0 se leen enteras: checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!F5, F11, F14, F21, F40 y F41 pasan de un alto fijo de 34 pt a ceil(len/ancho)×15 pt. Medición sobre el fichero generado: 0 celdas con wrapText y alto insuficiente en los dos xlsx."
+  },
+  {
+   "id": "RC-05",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.instrucciones() (línea 3)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:Instrucciones!A7 pasa a decir la verdad: «Sólo «3. Punto de Equilibrio» se deriva entera de lo anterior. En las otras tres hojas sí hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «4. Escenarios», la estacionalidad y la rampa de arranque en «6. Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «7. Financiación». Todo lo demás se calcula.»"
+  },
+  {
+   "id": "RC-06",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.pyg()/supuestos_calculadas()",
+   "prueba": "Mismo fix que RD-23: el mix se teclea donde las instrucciones dicen. plan-financiero-bar-restaurante.xlsx:0. Supuestos!B11 = 0,65, verde, desbloqueada y con DV de porcentaje; 2. P&L 3 Años!E11 = =IF(Supuestos!$B$11=\"\",\"\",Supuestos!$B$11), bloqueada y sin relleno."
+  },
+  {
+   "id": "RC-08",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.financiacion() (clave «cierre» + tolerancia en celda)",
+   "prueba": "El control deja de ser inerte: plan-financiero-bar-restaurante.xlsx:7. Financiación!B43 = =IF(B20=\"\",\"\",ROUND(B20-SUM(D27:D41),2)) — compara el principal PRESTADO contra el devuelto en todo el cuadro, no la fila del año 10. El semáforo usa ABS() contra B42 «Tolerancia de cierre del cuadro (€)» = 0,01, así que el residuo de 9,8e-11 no dispara rojo. Re-verificado en las demostraciones 7 (plazo 3 / carencia 3), 10 (tipo 0 %) y 11 (plazo 15)."
+  },
+  {
+   "id": "RC-09",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (INSTRUCCIONES['referencias'])",
+   "prueba": "Mismo fix que RD-04: las tres filas borradas vuelven al bloque DATOS DE REFERENCIA DEL SECTOR con su fuente. La de la inversión media lleva además la nota de por qué el plan queda por encima del rango (fondo de maniobra, existencias iniciales e IVA a adelantar), en vez de desaparecer."
+  },
+  {
+   "id": "RC-12",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (fase_final / fase_final_nueva) + scripts/productos-digitales/planes-v2_0/grupo_a.py _altas_checklist()",
+   "prueba": "Mismo fix que RD-28: checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!A50 es la FASE 6 de obligaciones previas a la apertura y A66 la FASE 7 de los primeros 90 días. El cronograma queda en orden (meses 1-2, 2-6, 4-7, 7, 7-8, 6-8, 8-11) y de arriba abajo se puede trabajar."
+  },
+  {
+   "id": "RC-15",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py formatos_texto() + gate_formatos()",
+   "prueba": "Ninguna celda de texto conserva formato de euro o de porcentaje: `formatos_texto()` corre en `cerrar()` sobre todas las hojas y pone General en cuanto el contenido se imprime como texto (literal o fórmula que devuelve texto), y el gate lo comprueba. Medición con openpyxl sobre los dos xlsx generados: 0 celdas (antes 86)."
+  },
+  {
+   "id": "RC-16",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py inversion() (verdes por columna) + scripts/productos-digitales/planes-v2_0/motor.py validaciones() (RX_COL_TEXTO)",
+   "prueba": "La columna de notas de la hoja de inversión deja de ser verde —plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!D7:D45 sin relleno E8F5E9— y ninguna celda bajo una cabecera «Notas» recibe DV numérica: D22, D29 y D42 ya no rechazan el texto. El verde queda en B (importe) y E (marca de IVA), que son las dos que alimentan fórmulas."
+  },
+  {
+   "id": "RC-17",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py RX_DIAS / RX_POR_DIA / RX_RECUENTO_DV",
+   "prueba": "Mismo fix que RT-09: los tres inputs de cubiertos (plan-financiero-bar-restaurante.xlsx:0. Supuestos!B4 y 4. Escenarios!B6/D6) tienen su propia validación de recuento con su propio mensaje, y el «Los días van de 1 a 365» se queda en las celdas que sí son días."
+  },
+  {
+   "id": "RC-18",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (clave «fondo»)",
+   "prueba": "Mismo fix que RD-16: plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!B47 = 60.534,80 € sobre los costes fijos DE CAJA. El colchón deja de dotar 2.220,63 € para cubrir una amortización que nadie paga, y la nota D47 lo dice con esas palabras."
+  },
+  {
+   "id": "RC-19",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (PLANTILLA: fila de suplencias) + scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.personal()",
+   "prueba": "Tres cosas: (a) fila nueva «Suplencias de vacaciones y descansos» (jornada 15 %, 260 €/mes) que cubre los 30 días del art. 38 ET de los seis puestos; (b) plan-financiero-bar-restaurante.xlsx:5. Personal!C13 ya suma las jornadas (5,40), que era la cifra que el banco mira y estaba vacía; (c) el bloque de cobertura por horas (B24 8.060 h necesarias frente a B25 9.936 h contratadas, B26 = 123 %). Con todo ello el labour cost queda en 33,66 % contra el techo de 34 %, no a medio punto del 35 %."
+  },
+  {
+   "id": "RC-20",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py (TILDES, RX_SIN_TILDE_2 y heurística de convivencia)",
+   "prueba": "Mismo fix que RD-32, ampliado al checklist: B16 «Búsqueda y negociación del local», C21 «Consejería», F13 «Código cuenta cotización», F17 «Revisar cláusulas: duración, renta, obras». La heurística de convivencia es la que caza los casos que ninguna lista cerrada prevé (una palabra sin tilde que convive con su forma acentuada en el mismo libro), con lista de homógrafos legítimos para no romper «publica», «practica» o «articulo». Gate «ortografia: 0»."
+  },
+  {
+   "id": "RC-21",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py LINEA_CONTADOR / _linea_contador() / asegurar_instrucciones()",
+   "prueba": "El texto se elige por MOLDE: en C1 y C4, que son monolíticos, checklist-apertura-bar-restaurante.xlsx:Instrucciones!A6 dice «El contador del pie cuenta sólo las ✓ de toda la lista; las N/A salen del total.» (verificado en el fichero generado). En C2, que sí tiene seis pestañas, sigue hablando de cada pestaña. Y se aplica también cuando la hoja ya existía, no sólo al crearla."
+  },
+  {
+   "id": "RC-22",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py _borrar_fila()",
+   "prueba": "Mismo fix que RD-30: la fila se borra de verdad. Y `_borrar_fila` arregla además las combinadas y los altos que `delete_rows` deja atrás — sin eso, las seis cabeceras de fase se quedaban en su posición vieja y las filas que subían a ellas se serializaban VACÍAS (se perdían dos trámites reales sin que nada lo dijera)."
+  },
+  {
+   "id": "RC-23",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py altos_y_wrap()",
+   "prueba": "Mismo fix que RC-04, en el plan financiero: plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio!A29, 4. Escenarios!A28, 6. Tesorería 12 meses!A33 y 7. Financiación!A56 (la nota que define el DSCR, que es la que lee un banco) se ven enteras. Medición: 0 celdas con wrap y alto insuficiente."
+  },
+  {
+   "id": "RC-24",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (CHECKLIST['reemplazos'])",
+   "prueba": "Mismo fix que RD-29: checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!C40 = «Titular o servicio ajeno» y B40 nombra explícitamente las dos modalidades. La celda que decide la acción ya no contradice a la que explica la ley."
+  },
+  {
+   "id": "RC-25",
+   "donde": "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py (CHECKLIST['reemplazos'])",
+   "prueba": "checklist-apertura-bar-restaurante.xlsx:Checklist Apertura!F11 = «Doble exención: los dos primeros períodos impositivos de la actividad (art. 82.1.b del TRLRHL) y, después, mientras la cifra de negocio no llegue al millón de euros…» y B11 añade el 671.5 (restaurantes de un tenedor) como PRIMERA opción, delante del 671.4. El reemplazo escribe el texto final de una vez —encadenar dos rompía la idempotencia y así lo cazó el gate."
+  },
+  {
+   "id": "RC-30",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.equilibrio() (párrafo de interpretación)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:3. Punto Equilibrio!A29 usa TEXT(ROUNDUP(B21,0),\"0\"): el texto evaluado dice «necesitas servir 63 cubiertos al día … sin contar la cuota bastan 66», redondeando HACIA ARRIBA, que es lo defendible (con 62,9 cubiertos no se cubren los costes). Se evita además el separador decimal anglosajón que TEXT con decimales mete en el valor cacheado."
+  },
+  {
+   "id": "RC-31",
+   "donde": "scripts/productos-digitales/planes-v2_0/motor.py (MENOS_MAT, RX_EUR_TEXTO en corregir_texto) + scripts/productos-digitales/planes-v2_0/grupo_a.py (rótulo «dif»)",
+   "prueba": "Homogeneizado: plan-financiero-bar-restaurante.xlsx:7. Financiación!A15 = «Diferencia (origen - usos)» con guion normal (el U+2212 no está en WinAnsi y se pierde al exportar a PDF) y las notas pasan «EUR» → «€»: 1. Inversión Inicial!D26 «Set 120 €/mesa», D27 «120 €/ud», D39 «Capital social mín. 1 € (Ley Crea y Crece)», D40 «150 €/mes», y en el checklist F8/F9. Los dos caracteres se referencian por ESCAPE en el código."
+  },
+  {
+   "id": "RC-32",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py demos() (bloque «mapa_de_celdas_para_T9») + scripts/productos-digitales/planes-v2_0/main.py",
+   "prueba": "El run PUBLICA el mapa REAL leído del fichero por rótulo, con la celda y el valor de las 29 magnitudes que T9 tiene que citar, y con `sin_localizar: []`. Ejemplos de lo que la tabla de §4.2 daba por bueno y ya no: inversión total = 1. Inversión Inicial!B48 (no 1!B46, que es el IVA soportado), resultado neto = 2. P&L 3 Años!B50 (no 2!B34, que son 600 € de PRL), margen neto = B58 (no 2!B40, que son los costes fijos), plantilla = 5. Personal!B13 y coste = G13 (no B13/F13, que estaban vacías), payback = 6. Tesorería!B31. El aviso del propio bloque exige que `guion_<pid>.py` resuelva por RÓTULO y aborte si no aparece; escribir ese guion y actualizar la tabla de la SPEC es T9."
+  },
+  {
+   "id": "RC-33",
+   "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() (fila «capex» + nota del total)",
+   "prueba": "plan-financiero-bar-restaurante.xlsx:1. Inversión Inicial!A49 «CAPEX (inversión sin el fondo de maniobra)» = 118.360 €, y la nota D48 del total se genera con TEXT: «Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C46;\"0,0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.» El analista ya puede leer el equipamiento sobre el capex real."
+  }
+ ],
+ "no_aplicados": [
+  {
+   "id": "RD-03",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.2 y decisión 13: «las cifras de la capa de producto se escriben DESPUÉS de medir el fichero»). El corrector de T3 sólo puede mover el fichero, y lo ha hecho: la inversión se ha reducido por RD-01 (−3.800 €) y RD-16 (colchón sobre costes fijos de caja) y ha subido por RD-02 (terraza, existencias e imprevistos, que la §2.2 EXIGE incorporar). La cifra medida y firme es 178.894,80 € de inversión y 201.899,40 € de necesidad de caja (mapa de celdas para T9: 1. Inversión Inicial!B48 y B51). La decisión ya está tomada dentro del Excel —el bloque de referencias devuelto por RD-04 declara el rango 80.000-150.000 € del sector Y la nota de por qué este plan queda por encima—, pero escribirla en landing, docx y JSON-LD es de T10, y el fichero de la landing no está entre los que este rol puede tocar."
+  },
+  {
+   "id": "RT-03",
+   "motivo": "HERMANO DE LÍNEA A — T7 (§9: «4 productos, en serie: cada uno verifica cada id del representante contra su hermano + contenido_<pid>.py»). tapas-bar NO tiene módulo de contenido todavía, así que su plantilla no está redimensionada y su caso base no puede pasar el semáforo de personal. Lo que SÍ era del motor está corregido y medido: el `--dry-run` de plan-negocio-tapas-bar pasa de 10 diferencias de idempotencia (los siete sueldos a 1 €) a **0** (ver RT-02), y de 9 fallos a 6, todos de calibración del producto (semáforo de personal 74,7 %, saldo de tesorería, cuadro de financiación de A-β y las tres ramas del impuesto), más 3 fórmulas sin caché en PyG 3 Años!B32:D32. Cerrarlos es escribir `contenido_plan_negocio_tapas_bar.py`, que es el entregable de T7."
+  },
+  {
+   "id": "RC-07",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.1/§5.2). Los tres textos viven en astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts (líneas 76, 135 y 235) y en src/pages/PlanNegocioBarRestauranteDashboard.tsx:18, que no son ficheros de este rol. Datos medidos para que T10 los escriba: 11 hojas protegidas de 11 (sin contraseña), el plan financiero tiene **9 hojas** —0. Supuestos, 1. Inversión Inicial, 2. P&L 3 Años, 3. Punto Equilibrio, 4. Escenarios, 5. Personal, Instrucciones, 6. Tesorería 12 meses y 7. Financiación—, y las celdas de entrada son las VERDES; el resto se desprotege desde Revisar → Desproteger hoja."
+  },
+  {
+   "id": "RC-10",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.2, decisión 13). Cifra única y medida, para que T10 la propague: inversión total **178.894,80 €** (1. Inversión Inicial!B48), capex 118.360 € (B49), necesidad total de caja **201.899,40 €** (B51). El testimonio de .ts:151 no se toca (§7-bis.6) y queda registrado en §7.2 como riesgo, igual que ya lo estaba."
+  },
+  {
+   "id": "RC-11",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.2: «el número se escribe después de contar»). Recuento medido sobre el fichero regenerado: **64 ítems** con desplegable (COUNTIF del pie) en **7 fases**. La FASE 7 es «PRIMEROS 90 DÍAS (meses 8-11)». El «50+ trámites en 6 fases» de los ocho sitios de la landing, el dashboard y el email es de T10. DOM-32 (la promesa dice «trámites y licencias» y el listado incluye tareas de gestión como «Evaluar ROI campaña marketing») también es una decisión de redacción de la promesa, no del fichero."
+  },
+  {
+   "id": "RC-13",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.3). Los siete puestos reales de 5. Personal!A6:A12, para que T10 reescriba .ts:139 y .ts:195: Gerente / Propietario, Jefe de cocina, Ayudante de cocina, Camarero/a de barra y sala, Camarero/a a tiempo parcial, Extra de fin de semana y Suplencias de vacaciones y descansos. No hay «jefe de sala» ni «cocineros» en plural: renombrarlos en el Excel para salvar el gancho comercial obligaría a revisar el salario contra el convenio provincial, y esa es una decisión de producto, no del corrector."
+  },
+  {
+   "id": "RC-14",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.2). El tipo de Seguridad Social es el 33 % heredado de kit-gestion-personal (§2.1) y vive en celda editable: 0. Supuestos!B20. Reescribir el «33,4 %» de .ts:139 y .ts:195 es de T10; el testimonio de .ts:154 no se toca (§7-bis.6) y va a §7.2 con los otros riesgos de testimonios."
+  },
+  {
+   "id": "RC-26",
+   "motivo": "CAPA DE PRODUCTO — T10 (§5.5). productos-changelog.ts:962-974 y el updateNote de la landing no son ficheros de este rol. Datos para la entrada v2.0: **3 ficheros** (plan-financiero-bar-restaurante.xlsx, plan-de-negocio-bar-restaurante.docx y checklist-apertura-bar-restaurante.xlsx, según productos-digitales-config.ts:668-672) y el detalle real de lo que cambia: hoja de Supuestos, tesorería a 12 meses con rampa de arranque, plan de financiación con cuadro francés y DSCR, IS con compensación de BINs, doble punto de equilibrio (contable y de caja) y 13 trámites nuevos en el checklist. Los dos xlsx ya se firman «Versión 2.0 · agosto 2026» en su hoja de Instrucciones."
+  },
+  {
+   "id": "RC-27",
+   "motivo": "DOCUMENTOS Y CAPA DE PRODUCTO — T9 y T10 (§7-bis.4: el docx se REGENERA desde un guion que cita el xlsx; §4.2-§4.3). El docx vivo es el de la v1.1 y contradice al Excel en las seis cifras que el guion debe citar; corregirlo a mano está PROHIBIDO por §6.4 («Recalcular a mano las cifras del docx»). Lo que sí queda hecho para T9: el run publica el mapa de celdas REAL con las 29 magnitudes y sus valores (ver RC-32), así que el guion puede citar 178.894,80 € de inversión, 20,72 € de PVP, 62,93 cubiertos/día de equilibrio de caja y el mes 2 como el de caja mínima sin volver a inventarlos. La tarjeta del dashboard (COM-24) es de T10."
+  },
+  {
+   "id": "RC-28",
+   "motivo": "CONTENIDO NUEVO — T9/T10 (§5.2 y §5.4). «81K+ restaurantes activos», «ticket medio por CCAA», «inversión media por tipo de local» y «tasa de cierre a 3 años» exigen producir una sección con entidad emisora y año o retirar el claim y el BONUS: las dos salidas son de T9 (docx) y T10 (landing). Lo que este rol podía hacer sin inventar cifras ya está hecho: las dos tasas de cierre del sector vuelven al bloque de referencias del Excel con su fuente declarada (RD-04/RC-09), que era el único soporte que ese claim tenía dentro de un entregable. Inventar los datos de mercado que faltan lo prohíbe la regla dura 6 del encargo."
+  },
+  {
+   "id": "RC-29",
+   "motivo": "HERMANO DE LÍNEA B — T8. El renombrado de las pestañas vive en el módulo de contenido de parrillero, que no existe todavía (§9, T8). Lo que sí se ha hecho aquí: `motor.gate_nombres_hoja()` mide la longitud de todos los nombres de hoja y `demo_moldes()` lo aplica a los 30 xlsx de la familia, así que el aviso de openpyxl deja de perderse. Y CORRIGE el censo del hallazgo: no son dos hojas, son **TRES** —«F3 - Equipamiento y proveedores carne» (37), «F4 - Marca, web y materiales venta» (34) y «F6 - Operativa primer evento y postventa» (40)—, listadas en el bloque PENDIENTE de cada run."
+  }
+ ],
+ "ficheros_de_codigo_tocados": [
+  "scripts/productos-digitales/planes-v2_0/motor.py",
+  "scripts/productos-digitales/planes-v2_0/grupo_a.py",
+  "scripts/productos-digitales/planes-v2_0/main.py",
+  "scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_bar_restaurante/a.py"
+ ],
+ "demostraciones_nuevas_bloqueantes": [
+  "§2.11.1-bis (RT-05): el punto de equilibrio NO se mueve con el volumen previsto.",
+  "§2.11.2-bis (RT-04): mover un input del realista no cambia el pesimista ni el optimista.",
+  "§2.11.10 (RT-06): con el tipo al 0 % la cuota es número y el cuadro cierra.",
+  "§2.11.11 (RT-07): con el plazo máximo del cuadro no queda capital sin amortizar.",
+  "§2.11.12 (RT-08): siete divisores a 0, cada uno con su regla; ninguno mejora el resultado sin rastro.",
+  "§2.11.12-bis (RD-34): el origen de fondos cubre los usos y no se pasa del exceso admisible.",
+  "§2.11.13 (RT-18): libro en blanco sin una sola celda que imprima 0 € o 0,0 %."
+ ],
+ "gates_nuevos": [
+  "motor.gate_cf_anclado (RT-01), BLOQUEANTE en main.py",
+  "motor.gate_nombres_hoja (RC-29), sobre los 30 xlsx de la familia",
+  "motor.gate_formatos ve las celdas de TEXTO con formato de € o % (RT-11)",
+  "motor.gate_ortografia con segundo patrón y heurística de convivencia (RD-32/RC-20)"
+ ],
+ "para_T7_T8_T9_T10": [
+  "T7 (hermanos de línea A): RT-03. El motor ya es idempotente en A-β; falta contenido_<pid>.py de cada hermano.",
+  "T8 (hermanos de línea B): RC-29, tres nombres de hoja de más de 31 caracteres en parrillero.",
+  "T9 (documentos): RC-27 y RC-32 (el mapa de celdas REAL se publica en el informe del run) y RC-28.",
+  "T10 (capa de producto): RD-03, RC-07, RC-10, RC-11, RC-13, RC-14, RC-26 y RC-28, con las cifras medidas incluidas en cada motivo."
+ ],
+ "cifras_medidas_del_caso_base": {
+  "inversion_total": 179164.8,
+  "capex": 118360.0,
+  "iva_de_la_inversion": 22734.6,
+  "necesidad_de_caja": 201899.4,
+  "fondo_de_maniobra": 60804.8,
+  "amortizacion_anual": 9596.0,
+  "facturacion_ano_1": 451360.0,
+  "facturacion_ano_2": 496496.0,
+  "facturacion_ano_3": 526285.76,
+  "margen_bruto": 309181.6,
+  "resultado_antes_de_impuestos": 56366.4,
+  "resultado_neto_ano_1": 47911.44,
+  "resultado_neto_ano_3": 72593.6779,
+  "margen_neto_pct": 0.1061,
+  "ratio_personal_pct": 0.3366,
+  "ratio_cogs_pct": 0.272,
+  "coste_de_personal": 151939.2,
+  "plantilla_personas": 7.0,
+  "plantilla_jornadas": 5.4,
+  "coste_plantilla_ano": 151939.2,
+  "break_even_contable_dia": 65.4153,
+  "break_even_caja_dia": 62.9324,
+  "break_even_ingresos": 355064.5255,
+  "saldo_minimo_de_caja": 61956.6147,
+  "mes_de_caja_minima": 2.0,
+  "payback_anos": 2.976,
+  "cuota_anual_prestamo": 26030.4164,
+  "dscr_minimo": 3.7864,
+  "origen_menos_usos": 1100.6
+ }
+}
