@@ -1,0 +1,2442 @@
+{
+ "producto": "guia-restaurante-gastronomico",
+ "version": "2.0",
+ "rol": "motor",
+ "spec": "scripts/productos-digitales/guias-v2-SPEC.md §1",
+ "fecha": "2026-08-29T09:45:48",
+ "modo": "produccion",
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico",
+ "grupos_pedidos": [
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_cargados": [
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_ausentes": [],
+ "contenido_cargado": {
+  "a": true,
+  "b": true,
+  "c": true
+ },
+ "solo_motor": false,
+ "moldes_detectados": [
+  {
+   "fichero": "budget-bodega.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "calculadora-capex.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "calculadora-ticket-medio.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "cash-flow-break-even.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "checklist-appcc.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-contratacion.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-diseno-sala.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-equipamiento-cocina.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-legal.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-marketing-preapertura.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "checklist-vajilla-cristaleria.xlsx",
+   "variante_pl": null,
+   "checklists": [
+    {
+     "hoja": "Sheet",
+     "molde": "A",
+     "fila_cabecera": 4
+    }
+   ]
+  },
+  {
+   "fichero": "cronograma-apertura-gantt.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "escandallo-maestro.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "menu-engineering-matrix.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "pl-mensual-escenarios.xlsx",
+   "variante_pl": "escenarios-columnas",
+   "checklists": []
+  },
+  {
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  },
+  {
+   "fichero": "plantilla-turnos-brigada.xlsx",
+   "variante_pl": null,
+   "checklists": []
+  }
+ ],
+ "literales_sospechosos_total": 0,
+ "fichero_unico": null,
+ "formulas_en_los_ficheros": 1883,
+ "escrituras_de_formula": 1898,
+ "ficheros": [
+  {
+   "fichero": "budget-bodega.xlsx",
+   "cambios": [
+    "budget-bodega.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "budget-bodega.xlsx:Bodega!B5:K14: 70 celdas de ejemplo precargadas en verde (10 referencias con multiplicador entre ×2,5 y ×3,5 y food cost de bebida dentro del 28-40 % del capítulo de bodega): el libro deja de abrir con 355 fórmulas y ningún resultado [RT-30 · §1.2]",
+    "budget-bodega.xlsx:Bodega!H5:M54: «Margen (%)» era un MARKUP sobre coste — con coste 10 EUR y PVP 30 EUR imprimía «200,0 %», imposible como margen. Ahora H es «Multiplicador (x)» (=PVP/coste, el x2,5-x3,5 del cap. 12), L es el margen sobre PVP (66,7 % en ese ejemplo) y M el food cost de bebida, que es el que se contrasta con el 28-40 % del capítulo [TEC-20 · DOM-28 · COM-22 · §4.3]",
+    "budget-bodega.xlsx:Bodega!J5:J54: la rotación se CALCULA (uds vendidas/mes ÷ stock) con la columna K nueva. Instrucciones!A6 prometía que se calculaba y era una celda verde vacía [TEC-18 · DOM-28 · §4.3]",
+    "budget-bodega.xlsx:Bodega!fila 56: fila TOTAL con uds en stock, valor a coste, valor a PVP, margen medio ponderado y food cost medio. Un fichero llamado «Budget de Bodega» no sumaba nada: 100 fórmulas y ninguna cruzaba coste con stock [TEC-19 · COM-22 · §4.3]",
+    "budget-bodega.xlsx:Bodega!T5:T54: columna «PVP sin IVA (€)» = PVP de carta / (1 + IVA de bebida alcohólica, en celda). El food cost de bebida cruzaba un coste sin IVA con un PVP de carta CON IVA y salía unos 7 puntos bajo, que es lo que decide si la bodega gana dinero [RD-13 · §1.5a]",
+    "budget-bodega.xlsx:Bodega: 62 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E55:General→#,##0.00 € [col Coste (€)]', 'E56:General→#,##0.00 € [col Coste (€)]', 'E57:General→#,##0.00 € [col Coste (€)]', 'E58:General→#,##0.00 € [col Coste (€)]', 'E59:General→#,##0.00 € [col Coste (€)]', 'F55:General→#,##0.00 € [col PVP Carta (€)]', 'F56:General→#,##0.00 € [col PVP Carta (€)]', 'F57:General→#,##0.00 € [col PVP Carta (€)]']",
+    "budget-bodega.xlsx:Bodega: 13 columnas ensanchadas (§1.12) ['F:14.0→15 (PVP Carta (€))', 'H:12.0→19 (Multiplicador (×))', 'I:10.0→13 (Stock (uds))', 'J:12.0→14 (Rotación/Mes)', 'K:14.0→18 (Uds vendidas/mes)', 'L:14.0→18 (Margen s/PVP (%))']",
+    "budget-bodega.xlsx:Bodega: 50 celdas calculadas dejan de estar en verde (§1.3)",
+    "budget-bodega.xlsx: 3 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Instrucciones!A12', 'Instrucciones!A14', 'Bodega!D59'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "budget-bodega.xlsx:Instrucciones: bio + versión 2.0 en A20",
+    "budget-bodega.xlsx:Instrucciones: protegida sin contraseña (9 celdas editables)",
+    "budget-bodega.xlsx:Bodega: DV en 200 importes, 1 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "budget-bodega.xlsx:Bodega: protegida sin contraseña (551 celdas editables)"
+   ],
+   "formulas_nuevas": 405,
+   "escrituras_de_formula": 405,
+   "formulas_en_el_fichero": 405,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "budget-bodega.xlsx",
+    "hojas": 2,
+    "formulas": 405,
+    "verdes": 560,
+    "cf": 0,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "calculadora-capex.xlsx",
+   "cambios": [
+    "calculadora-capex.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "calculadora-capex.xlsx:CAPEX: fila(s) de categoría añadidas encima del TOTAL, que baja una fila: B17=Preapertura (rentas y nóminas antes de abrir) — la calculadora no tenía dónde poner la preapertura y su rango alto pedía menos dinero del que el plan financiero de este mismo kit dice que hace falta",
+    "calculadora-capex.xlsx:CAPEX: rango del TOTAL rehecho contra las filas MEDIDAS 5-17: ['C18: =SUM(C5:C16) → =SUM(C5:C17)', 'D18: =SUM(D5:D16) → =SUM(D5:D17)', 'E18: =SUM(E5:E16) → =SUM(E5:E17)', 'F18: =SUM(F5:F16) → =IF(COUNT(F5:F17)=0,\"\",SUM(F5:F17))']",
+    "calculadora-capex.xlsx:CAPEX: aviso de encaje del presupuesto propio en F20 (§2.3.6)",
+    "calculadora-capex.xlsx:CAPEX: 8 rangos/notas de CAPEX cuadrados con lo que este mismo pack tasa: el equipamiento sube a 180.000 € en el rango alto y el fondo de maniobra dice de dónde sale el número que vale (RC-05, RD-03)",
+    "calculadora-capex.xlsx: grupo_a variante 'rangos' (guias-v2-SPEC.md §2)",
+    "calculadora-capex.xlsx:CAPEX: 9 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['C19:General→#,##0.00 € [col Rango Bajo (€)]', 'C20:General→#,##0.00 € [col Rango Bajo (€)]', 'D19:General→#,##0.00 € [col Rango Medio (€)]', 'D20:General→#,##0.00 € [col Rango Medio (€)]', 'E19:General→#,##0.00 € [col Rango Alto (€)]', 'E20:General→#,##0.00 € [col Rango Alto (€)]', 'F19:General→#,##0.00 € [col Tu Presupuesto (€)]', 'B20:General→#,##0.00 € [fila Tu presupuesto frente al ran]']",
+    "calculadora-capex.xlsx:CAPEX: 1 columnas ensanchadas (§1.12) ['B:42.0→47 (Preapertura (rentas y nóminas )']",
+    "calculadora-capex.xlsx: 6 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Instrucciones!A15', 'CAPEX!G6', 'CAPEX!B7', 'CAPEX!B15', 'CAPEX!G15', 'CAPEX!G17'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "calculadora-capex.xlsx:Instrucciones: bio + versión 2.0 en A17",
+    "calculadora-capex.xlsx:Instrucciones: protegida sin contraseña (7 celdas editables)",
+    "calculadora-capex.xlsx:CAPEX: DV en 13 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "calculadora-capex.xlsx:CAPEX: protegida sin contraseña (13 celdas editables)"
+   ],
+   "formulas_nuevas": 5,
+   "escrituras_de_formula": 5,
+   "formulas_en_el_fichero": 5,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "calculadora-capex.xlsx",
+    "hojas": 2,
+    "formulas": 5,
+    "verdes": 20,
+    "cf": 0,
+    "dv": 1,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "calculadora-ticket-medio.xlsx",
+   "cambios": [
+    "calculadora-ticket-medio.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "calculadora-ticket-medio.xlsx:Ticket Medio!A3: base de IVA declarada (§1.5b)",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: fila de control del mix en A15 (§2.1) sobre 3 tramos",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: 5 pares %/precio + 0 incondicionales → ticket ponderado en la fila 16, facturación día/mes (TEC-01, DOM-08)",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: 36 celdas de ejemplo precargadas en verde (§7-bis.7)",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: bloque de IVA (§1.5a) y cuadre con el P&L en las filas 22-27 (RD-23, RC-02)",
+    "calculadora-ticket-medio.xlsx: grupo_a variante 'escenarios-3col' (guias-v2-SPEC.md §2)",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: 29 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['B5:#,##0.00 €→0.0% [fila % comensales menú degustació]', 'C5:#,##0.00 €→0.0% [fila % comensales menú degustació]', 'D5:#,##0.00 €→0.0% [fila % comensales menú degustació]', 'B7:#,##0.00 €→0.0% [fila % comensales menú degustació]', 'C7:#,##0.00 €→0.0% [fila % comensales menú degustació]', 'D7:#,##0.00 €→0.0% [fila % comensales menú degustació]', 'B9:#,##0.00 €→0.0% [fila % comensales carta]', 'C9:#,##0.00 €→0.0% [fila % comensales carta]']",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: 3 columnas ensanchadas (§1.12) ['A:42.0→45 (% de comensales asignado (debe)', 'A:45.0→57 (Ticket medio CON IVA — el prec)', 'A:57.0→60 (Facturación mensual del P&L de)']",
+    "calculadora-ticket-medio.xlsx: 4 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Ticket Medio!A15', 'Ticket Medio!E15', 'Ticket Medio!C23', 'Ticket Medio!A27'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "calculadora-ticket-medio.xlsx:Instrucciones: bio + versión 2.0 + nota de IVA en A10",
+    "calculadora-ticket-medio.xlsx:Instrucciones: protegida sin contraseña (5 celdas editables)",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: DV en 21 importes, 16 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "calculadora-ticket-medio.xlsx:Ticket Medio: protegida sin contraseña (37 celdas editables)"
+   ],
+   "formulas_nuevas": 18,
+   "escrituras_de_formula": 18,
+   "formulas_en_el_fichero": 18,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "calculadora-ticket-medio.xlsx",
+    "hojas": 2,
+    "formulas": 18,
+    "verdes": 42,
+    "cf": 2,
+    "dv": 2,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "cash-flow-break-even.xlsx",
+   "cambios": [
+    "cash-flow-break-even.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses!A3: base de IVA declarada (§1.5b)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: totales, flujo neto y flujo acumulado en las filas 10/19/21/22 sobre 12 meses (TEC-03, DOM-09)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: 120 celdas de los 12 meses precargadas en verde con el escenario REALISTA y una rampa de apertura (60 % · 70 % · 80 % · 85 % · 90 % · 95 % · 100 % · 100 % · 100 % · 100 % · 100 % · 100 %): el punto de equilibrio deja de decir «No alcanzado» al abrir el fichero (RD-06, RC-08)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: capa de IVA (303, con el 21 % de la bebida alcohólica), cuota del préstamo y tesorería de la apertura en las filas 30-42 (DOM-03, DOM-22, §2.4, RD-07, RD-14, RD-21)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: break-even en meses y en € en las filas 46-54, con umbral de explotación Y umbral con servicio de deuda (TEC-03, DOM-09, COM-06, RD-05)",
+    "cash-flow-break-even.xlsx: grupo_a variante '12-meses-total' (guias-v2-SPEC.md §2)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: 285 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['B5:General→#,##0.00 € [fila INGRESOS]', 'C5:General→#,##0.00 € [fila INGRESOS]', 'D5:General→#,##0.00 € [fila INGRESOS]', 'E5:General→#,##0.00 € [fila INGRESOS]', 'F5:General→#,##0.00 € [fila INGRESOS]', 'G5:General→#,##0.00 € [fila INGRESOS]', 'H5:General→#,##0.00 € [fila INGRESOS]', 'I5:General→#,##0.00 € [fila INGRESOS]']",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: 3 columnas ensanchadas (§1.12) ['A:28.0→33 (Tipo de IVA de restauración (%)', 'A:33.0→41 (Tipo de IVA de la bebida alcoh)', 'A:41.0→60 (Base mensual de gastos con IVA)']",
+    "cash-flow-break-even.xlsx: 5 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Cash Flow 12 Meses!A29', 'Cash Flow 12 Meses!A37', 'Cash Flow 12 Meses!A39', 'Cash Flow 12 Meses!A40', 'Cash Flow 12 Meses!A48'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "cash-flow-break-even.xlsx:Instrucciones: bio + versión 2.0 + nota de IVA en A14",
+    "cash-flow-break-even.xlsx:Instrucciones: protegida sin contraseña (7 celdas editables)",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: DV en 162 importes, 4 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "cash-flow-break-even.xlsx:Cash Flow 12 Meses: protegida sin contraseña (166 celdas editables)"
+   ],
+   "formulas_nuevas": 124,
+   "escrituras_de_formula": 124,
+   "formulas_en_el_fichero": 134,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "cash-flow-break-even.xlsx",
+    "hojas": 2,
+    "formulas": 134,
+    "verdes": 173,
+    "cf": 3,
+    "dv": 2,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-appcc.xlsx",
+   "cambios": [
+    "checklist-appcc.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-appcc.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-appcc.xlsx: pestaña 'Sheet' → 'APPCC' (§1.10/TEC-28)",
+    "checklist-appcc.xlsx:APPCC!26: + «Congelación preventiva (‑20 °C durante al menos 24 h en todo el pr» [DOM-14 · SPEC §3.2 · RD 1420/2006]",
+    "checklist-appcc.xlsx:APPCC!27: + «Registro de lotes congelados preventivamente» [DOM-14 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!28: + «Información al consumidor de que el pescado ha sido congelado» [DOM-14 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!29: + «Verificación anual de la calibración de termómetros y sondas, con » [DOM-14 · parametrizado (buena práctica de APPCC)]",
+    "checklist-appcc.xlsx:APPCC!54: + «Tabla de binomios tiempo‑temperatura validados por producto» [DOM-15 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!55: + «Registro de sonda por lote en cada cocción a baja temperatura» [DOM-15 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!56: + «Enfriamiento a ≤10 °C en menos de 2 h tras cocción prolongada» [DOM-15 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!57: + «Etiquetado del envasado al vacío con vida útil justificada» [DOM-15 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!58: + «Validación documental del proceso de cocción a baja temperatura y » [DOM-15 · SPEC §3.2]",
+    "checklist-appcc.xlsx:APPCC!20: + «Registro de descongelación controlada (producto, lote, fecha y res» [DOM-14 · parametrizado (buena práctica de APPCC)]",
+    "checklist-appcc.xlsx:APPCC: molde A · 45 → 55 ítems MEDIDOS (la tarjeta anuncia 55)",
+    "checklist-appcc.xlsx:APPCC: 59 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-appcc.xlsx:APPCC: molde A, cabecera fila 4, 55 ítems medidos, bloque de resumen en A61",
+    "checklist-appcc.xlsx:APPCC: 5 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'C:45.0→47 (Programa de limpieza y desinfe)', 'C:47.0→52 (Verificación analítica de supe)', 'C:52.0→60 (Registro de descongelación con)', 'B:22.0→26 (Baja temperatura y vacío)']",
+    "checklist-appcc.xlsx: 1 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['APPCC!C57'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-appcc.xlsx:Instrucciones: bio + versión 2.0 en A10",
+    "checklist-appcc.xlsx:Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "checklist-appcc.xlsx:APPCC: DV en 55 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-appcc.xlsx:APPCC: protegida sin contraseña (275 celdas editables)"
+   ],
+   "formulas_nuevas": 15,
+   "escrituras_de_formula": 15,
+   "formulas_en_el_fichero": 15,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 59,
+     "items": 55,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 61,
+     "hoja": "APPCC"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-appcc.xlsx",
+    "hojas": 2,
+    "formulas": 15,
+    "verdes": 275,
+    "cf": 4,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-contratacion.xlsx",
+   "cambios": [
+    "checklist-contratacion.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-contratacion.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-contratacion.xlsx: pestaña 'Sheet' → 'Contratación Equipo' (§1.10/TEC-28)",
+    "checklist-contratacion.xlsx:Contratación Equipo!C34: «Plan de igualdad (si >50 empleados)» → «Plan de igualdad (50 o más personas trabajadoras)» [DOM-38 · SPEC §3.1]",
+    "checklist-contratacion.xlsx:Contratación Equipo!C20: «Cláusula de confidencialidad y no competenci» → «Pacto de no competencia postcontractual CON compensación eco» [DOM-38 · SPEC §3.1]",
+    "checklist-contratacion.xlsx:Contratación Equipo!H33: nota [DOM-12/COM-15]",
+    "checklist-contratacion.xlsx:Contratación Equipo: molde A · 30 → 30 ítems MEDIDOS (la tarjeta anuncia 30)",
+    "checklist-contratacion.xlsx:Contratación Equipo: 32 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-contratacion.xlsx:Contratación Equipo: molde A, cabecera fila 4, 30 ítems medidos, bloque de resumen en A36",
+    "checklist-contratacion.xlsx:Contratación Equipo: 5 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'C:45.0→46 (Definir organigrama completo ()', 'C:46.0→50 (Fichas de puesto: funciones, r)', 'C:50.0→58 (Chef Ejecutivo: experiencia mí)', 'C:58.0→60 (Pacto de no competencia postco)']",
+    "checklist-contratacion.xlsx: 2 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Contratación Equipo!C16', 'Contratación Equipo!C27'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-contratacion.xlsx:Instrucciones: bio + versión 2.0 en A10",
+    "checklist-contratacion.xlsx:Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "checklist-contratacion.xlsx:Contratación Equipo: DV en 30 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-contratacion.xlsx:Contratación Equipo: protegida sin contraseña (150 celdas editables)"
+   ],
+   "formulas_nuevas": 9,
+   "escrituras_de_formula": 9,
+   "formulas_en_el_fichero": 9,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 34,
+     "items": 30,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 36,
+     "hoja": "Contratación Equipo"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-contratacion.xlsx",
+    "hojas": 2,
+    "formulas": 9,
+    "verdes": 150,
+    "cf": 4,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-diseno-sala.xlsx",
+   "cambios": [
+    "checklist-diseno-sala.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-diseno-sala.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-diseno-sala.xlsx: pestaña 'Sheet' → 'Diseño de Sala (FOH)' (§1.10/TEC-28)",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH)!21: + «Limitador‑registrador acústico homologado y estudio de impacto acú» [DOM-39 · SPEC §3.4]",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH)!35: + «Alumbrado de emergencia y señalización de evacuación (CTE DB‑SUA /» [DOM-39 · SPEC §3.4]",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH)!33: + «Aseos y vestuarios de personal separados de los de clientes (RD 48» [DOM-39 · SPEC §3.4]",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH)!37: + «Certificación de aforo y anchura de los recorridos de evacuación» [DOM-39 · SPEC §3.4]",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH): molde A · 31 → 35 ítems MEDIDOS (la tarjeta anuncia 35)",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH): 39 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH): molde A, cabecera fila 4, 35 ítems medidos, bloque de resumen en A41",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH): 3 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'C:45.0→55 (Plano de sala con 65 plazas (1)', 'C:55.0→60 (Limitador‑registrador acústico)']",
+    "checklist-diseno-sala.xlsx: 7 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Diseño de Sala (FOH)!C5', 'Diseño de Sala (FOH)!C6', 'Diseño de Sala (FOH)!C7', 'Diseño de Sala (FOH)!C8', 'Diseño de Sala (FOH)!C19', 'Diseño de Sala (FOH)!C23'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-diseno-sala.xlsx:Instrucciones: bio + versión 2.0 en A10",
+    "checklist-diseno-sala.xlsx:Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH): DV en 35 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-diseno-sala.xlsx:Diseño de Sala (FOH): protegida sin contraseña (175 celdas editables)"
+   ],
+   "formulas_nuevas": 11,
+   "escrituras_de_formula": 11,
+   "formulas_en_el_fichero": 11,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 39,
+     "items": 35,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 41,
+     "hoja": "Diseño de Sala (FOH)"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-diseno-sala.xlsx",
+    "hojas": 2,
+    "formulas": 11,
+    "verdes": 175,
+    "cf": 4,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-equipamiento-cocina.xlsx",
+   "cambios": [
+    "checklist-equipamiento-cocina.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-equipamiento-cocina.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-equipamiento-cocina.xlsx: pestaña 'Sheet' → 'Equipamiento Cocina' (§1.10/TEC-28)",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!H39: nota [DOM-20]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!H48: nota [DOM-33]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!H24: nota [DOM-34]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!13: + «Robot térmico tipo Thermomix» [COM-23 · parametrizado (cap. 9 lo nombra)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!14: + «Deshidratadora profesional de bandejas» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!15: + «Sifones de 1 L y cargas de N₂O (set)» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!16: + «Termoselladora de barquetas para mise en place» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!17: + «Armario de maduración y curado controlado» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!24: + «Ahumador en frío / pistola de humo con virutas» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!25: + «Cuchillería profesional y estación de afilado (piedras y chaira)» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!26: + «Rebanadora de producto congelado para tataki y carpaccios» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!32: + «Máquina de hielo en escamas y cuba de conservación» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!33: + «Expositor de pescado sobre hielo para mise en place» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!34: + «Verificar que el abatidor alcanza ‑20 °C / ‑35 °C para la congelac» [DOM-14 · SPEC §3.2 · RD 1420/2006]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!42: + «Horno mixto 10 GN (Rational o equivalente)» [DOM-20 · SPEC §3.4 · R1 DOM-20 (docx tabla 1: «Horno racional combi 10 GN | Rational iCombi Pro | 17.500€»)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!43: + «Bloque modular de cocción de alta gama (alternativa al bloque está» [DOM-34 · parametrizado (segundo escalón de gama)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!44: + «Placa de inducción de alto rendimiento para el pase (2 zonas)» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!45: + «Segundo roner y cuba termostática para servicio en paralelo» [DOM-15 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!46: + «Sonda multipunto con registro para cocción a baja temperatura» [DOM-15 · SPEC §3.2]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!47: + «Juego completo de cubetas gastronorm y contenedores herméticos» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!55: + «Pacojet (helados, purés y polvos en frío)» [COM-23 · parametrizado (cap. 9 lo nombra)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!56: + «Armario de fermentación controlada (panadería propia)» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!57: + «Pistola de pintura para chocolate con compresor» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!58: + «Pasteurizador / madurador de mezcla de helado» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!64: + «Carro caliente de mantenimiento para eventos y comedor privado» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!65: + «Temporizadores de pase y reloj de cocina (set)» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!66: + «Mesa de apoyo refrigerada para el pase de fríos» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!72: + «Estanterías desmontables de polipropileno para cámaras» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!73: + «Impresora de etiquetas de trazabilidad y consumibles» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!74: + «Báscula de recepción de mercancía (hasta 60 kg)» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!79: + «Túnel de lavado con mesas de entrada y salida (ALTERNATIVA a la ca» [DOM-33 · R1 DOM-33 (12.000‑25.000 €)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!80: + «Lavavasos independiente para la cristalería de maridaje» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!81: + «Descalcificador y tratamiento de agua para el lavado» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!89: + «KDS: pantallas de comandas en cocina» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!90: + «SAI/UPS para TPV, cámaras y comunicaciones» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!91: + «Software de escandallos y APPCC digital» [COM-17 · parametrizado]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!92: + «Conducto de extracción hasta cubierta + ventilador + silenciador» [DOM-20 · SPEC §3.4 (12.000‑30.000 €)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!93: + «Sistema de aportación de aire (compensación)» [DOM-20 · SPEC §3.4 (3.000‑6.000 €)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!94: + «Sistema automático de extinción en campana (CTE DB‑SI y asegurador» [DOM-20 · SPEC §3.4 (2.500‑4.000 €)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!95: + «Instalación, transporte y puesta en marcha (% sobre el equipamient» [DOM-20 · SPEC §3.4 (12 %, calculado)]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: columna «Incluir en el total» en I con 2 alternativas excluyentes marcadas «No»; el TOTAL y los subtotales pasan a SUMIF/SUMIFS sobre ella (RD-18, RC-23)",
+    "checklist-equipamiento-cocina.xlsx:Instrucciones!A11: parámetro «Instalación, transporte y puesta en marcha (%)» en celda (§1.5)",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina!G95: instalación y puesta en marcha = =IFERROR(ROUND((SUMIFS($G$5:$G$94,$B$5:$B$94,\"<>Extracción e instalaciones\",$B$5 [DOM-20 · §3.4]",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: molde A · 54 → 91 ítems MEDIDOS (la tarjeta anuncia 90)",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: 95 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: molde A, cabecera fila 4, 91 ítems medidos, bloque de resumen en A97",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: 5 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'H:30.0→60 (La tarjeta del cap.\\u202f9 lo nombr)', 'C:45.0→48 (Termoselladora de barquetas pa)', 'C:48.0→60 (Cuchillería profesional y esta)', 'B:22.0→28 (Extracción e instalaciones)']",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: 1 celdas calculadas dejan de estar en verde (§1.3)",
+    "checklist-equipamiento-cocina.xlsx: 5 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Equipamiento Cocina!C7', 'Equipamiento Cocina!C15', 'Equipamiento Cocina!C42', 'Equipamiento Cocina!C48', 'Equipamiento Cocina!H60'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-equipamiento-cocina.xlsx:Instrucciones: bio + versión 2.0 en A13",
+    "checklist-equipamiento-cocina.xlsx:Instrucciones: protegida sin contraseña (1 celdas editables)",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: DV en 90 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-equipamiento-cocina.xlsx:Equipamiento Cocina: protegida sin contraseña (545 celdas editables)"
+   ],
+   "formulas_nuevas": 14,
+   "escrituras_de_formula": 14,
+   "formulas_en_el_fichero": 14,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 95,
+     "items": 91,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 97,
+     "hoja": "Equipamiento Cocina"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-equipamiento-cocina.xlsx",
+    "hojas": 2,
+    "formulas": 14,
+    "verdes": 546,
+    "cf": 6,
+    "dv": 5,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+   "cambios": [
+    "checklist-inspeccion-michelin-repsol.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-inspeccion-michelin-repsol.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-inspeccion-michelin-repsol.xlsx: pestaña 'Sheet' → 'Preparación Inspección' (§1.10/TEC-28)",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: categoría «Reputación» → «Prensa y notoriedad (NO influye en la inspección)» en 5 filas [COM-34]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!C39: «Mínimo 18-24 meses de operación consistente » → «Mínimo 18‑24 meses de operación consistente antes de aspirar» [RD-31 · SPEC §3.4 (clasificación correcta)]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!H38: nota [COM-34]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!45: + «Política de sostenibilidad escrita y comunicada al comensal» [DOM-36 · SPEC §3.4]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!46: + «Medición del desperdicio alimentario y de la gestión de residuos (» [DOM-36 · SPEC §3.4]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!47: + «Proveedores de proximidad y de temporada documentados (km y trazab» [DOM-36 · SPEC §3.4]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!48: + «Consumo de energía y agua medido, con medidas de eficiencia aplica» [DOM-36 · SPEC §3.4]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección!49: + «Equipo formado en las prácticas sostenibles y condiciones laborale» [DOM-36 · SPEC §3.4]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: molde A · 40 → 45 ítems MEDIDOS (la tarjeta anuncia 45)",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: 49 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: molde A, cabecera fila 4, 45 ítems medidos, bloque de resumen en A51",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: 5 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'C:45.0→54 (Relación directa con productor)', 'C:54.0→59 (Almacenamiento impecable (etiq)', 'C:59.0→60 (Cocciones precisas y consisten)', 'B:22.0→51 (Prensa y notoriedad (NO influy)']",
+    "checklist-inspeccion-michelin-repsol.xlsx: 1 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Preparación Inspección!H49'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-inspeccion-michelin-repsol.xlsx:Instrucciones: bio + versión 2.0 en A10",
+    "checklist-inspeccion-michelin-repsol.xlsx:Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: DV en 45 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-inspeccion-michelin-repsol.xlsx:Preparación Inspección: protegida sin contraseña (225 celdas editables)"
+   ],
+   "formulas_nuevas": 13,
+   "escrituras_de_formula": 13,
+   "formulas_en_el_fichero": 13,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 49,
+     "items": 45,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 51,
+     "hoja": "Preparación Inspección"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+    "hojas": 2,
+    "formulas": 13,
+    "verdes": 225,
+    "cf": 4,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-legal.xlsx",
+   "cambios": [
+    "checklist-legal.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-legal.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-legal.xlsx: pestaña 'Sheet' → 'Legal' (§1.10/TEC-28)",
+    "checklist-legal.xlsx:Legal!C37: «Libro de visitas de la Inspección de Trabajo» → «Registro diario de jornada (RD‑ley 8/2019, art. 34.9 ET): si» [DOM-12/COM-15 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!C41: «Alta en el censo de empresarios (Modelo 036)» → «Sistema informático de facturación verificable en el TPV (RD» [RD-32 · SPEC §3.4 (sin duplicados) · RD 1007/2023]",
+    "checklist-legal.xlsx:Legal!C15: «Licencia de actividad C3 (restaurante)» → «Licencia de actividad clasificada de restaurante — la clasif» [DOM-11/COM-28 · SPEC §3.1 (redacción única en los cuatro sitios)]",
+    "checklist-legal.xlsx:Legal!H12: nota [DOM-23]",
+    "checklist-legal.xlsx:Legal!38: + «Comunicación de apertura del centro de trabajo a la autoridad labo» [DOM-12 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!39: + «Registro retributivo (RD 902/2020)» [DOM-38/COM-15 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!40: + «Protocolo de prevención del acoso sexual (LO 3/2007 art. 48)» [DOM-38 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!48: + «Contrato de arrendamiento para uso distinto de vivienda (duración,» [DOM-23 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!49: + «Fianza legal de 2 mensualidades y garantía adicional (aval o depós» [DOM-23 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!50: + «Carencia de renta durante la obra y la tramitación de la licencia,» [DOM-23 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!51: + «Cláusula de cesión y traspaso pactada expresamente» [DOM-23 · SPEC §3.1]",
+    "checklist-legal.xlsx:Legal!22: + «Arqueta separadora de grasas y autorización o declaración de verti» [RD-28 · parametrizado (ordenanza municipal)]",
+    "checklist-legal.xlsx:Legal!53: + «Condición suspensiva por denegación de la licencia de actividad» [DOM-23 · SPEC §3.1]",
+    "checklist-legal.xlsx:Instrucciones!A11: parámetro «Renta mensual del local (€)» en celda (§1.5)",
+    "checklist-legal.xlsx:Legal!G50: Renta mensual del local (€) → =IF(Instrucciones!$B$11=\"\",\"\",2*Instrucciones!$B$11) [RC-15/DOM-23]",
+    "checklist-legal.xlsx:Legal: molde A · 40 → 49 ítems MEDIDOS (la tarjeta anuncia 48)",
+    "checklist-legal.xlsx:Legal: 53 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-legal.xlsx:Legal: molde A, cabecera fila 4, 49 ítems medidos, bloque de resumen en A55",
+    "checklist-legal.xlsx:Legal: 4 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'C:45.0→47 (Certificación negativa de deno)', 'C:47.0→54 (Proyecto técnico de actividad )', 'C:54.0→60 (Licencia de actividad clasific)']",
+    "checklist-legal.xlsx:Legal: 1 celdas calculadas dejan de estar en verde (§1.3)",
+    "checklist-legal.xlsx:Instrucciones: bio + versión 2.0 en A13",
+    "checklist-legal.xlsx:Instrucciones: protegida sin contraseña (1 celdas editables)",
+    "checklist-legal.xlsx:Legal: DV en 48 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-legal.xlsx:Legal: protegida sin contraseña (244 celdas editables)"
+   ],
+   "formulas_nuevas": 12,
+   "escrituras_de_formula": 12,
+   "formulas_en_el_fichero": 12,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 53,
+     "items": 49,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 55,
+     "hoja": "Legal"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-legal.xlsx",
+    "hojas": 2,
+    "formulas": 12,
+    "verdes": 245,
+    "cf": 4,
+    "dv": 4,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-marketing-preapertura.xlsx",
+   "cambios": [
+    "checklist-marketing-preapertura.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-marketing-preapertura.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-marketing-preapertura.xlsx: pestaña 'Sheet' → 'Marketing Pre-Apertura' (§1.10/TEC-28)",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!C12: «Sesión de fotos profesional de platos (15-25» → «Sesión de fotos profesional de platos (15‑25 platos)» [DOM-40 · SPEC §3.4 (1.500‑3.000 €)]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!C25: «Sistema de reservas configurado (Tock/Resy/T» → «Sistema de reservas configurado (Tock, TheFork, Cover Manage» [DOM-35 · SPEC §3.4]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!16: + «Sesión de fotos del equipo, la sala y la cocina (no sólo platos)» [DOM-40 · parametrizado]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!17: + «Página de reservas propia con seguimiento de origen (UTM) y confir» [DOM-40 · parametrizado]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!23: + «Dossier de prensa y kit de imágenes en alta resolución descargable» [DOM-40 · parametrizado]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!38: + «Presupuesto de lanzamiento repartido por canal y por mes» [DOM-40 · parametrizado]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura!39: + «Cuadro de mando: reservas por origen y coste de captación por clie» [DOM-40 · parametrizado]",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura: molde A · 30 → 35 ítems MEDIDOS (la tarjeta anuncia 35)",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura: 39 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura: molde A, cabecera fila 4, 35 ítems medidos, bloque de resumen en A41",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura: 3 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'C:45.0→55 (Línea gráfica: carta, tarjetas)', 'C:55.0→60 (Sesión de fotos del equipo, la)']",
+    "checklist-marketing-preapertura.xlsx: 4 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Marketing Pre-Apertura!C13', 'Marketing Pre-Apertura!C16', 'Marketing Pre-Apertura!C21', 'Marketing Pre-Apertura!C25'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-marketing-preapertura.xlsx:Instrucciones: bio + versión 2.0 en A10",
+    "checklist-marketing-preapertura.xlsx:Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura: DV en 35 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-marketing-preapertura.xlsx:Marketing Pre-Apertura: protegida sin contraseña (175 celdas editables)"
+   ],
+   "formulas_nuevas": 11,
+   "escrituras_de_formula": 11,
+   "formulas_en_el_fichero": 11,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 39,
+     "items": 35,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 41,
+     "hoja": "Marketing Pre-Apertura"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "hojas": 2,
+    "formulas": 11,
+    "verdes": 175,
+    "cf": 4,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "checklist-vajilla-cristaleria.xlsx",
+   "cambios": [
+    "checklist-vajilla-cristaleria.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "checklist-vajilla-cristaleria.xlsx: hoja «Instrucciones» CREADA (§1.10; no la tenía, y es donde van versión y bio)",
+    "checklist-vajilla-cristaleria.xlsx: pestaña 'Sheet' → 'Vajilla, Cristalería' (§1.10/TEC-28)",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!22: + «Copa de cata ISO para sommelier y formación (×12)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!23: + «Copa de vino generoso / jerez (×40)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!24: + «Cubiteras y soportes de pie para espumosos (×6)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!34: + «Cuchara de degustación / amuse-bouche (×100)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!35: + «Cubertería de crudos y tartar (tenedor y cucharilla pequeños, ×80)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!39: + «Paños de lino para abrillantado de copas (×40)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería!54: + «Cajas y fundas de almacenaje y transporte de cristalería (×10)» [DOM-21 · parametrizado (dotación de degustación)]",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: columnas «Factor por comensal (menú degustación) — vacío = no es pieza por comensal» y «Menú degustación (uds)» en I/J [DOM-21 · §3.4]",
+    "checklist-vajilla-cristaleria.xlsx:Instrucciones!A11: parámetro «Plazas de sala» en celda (§1.5)",
+    "checklist-vajilla-cristaleria.xlsx:Instrucciones!A12: parámetro «Rotación de lavado (veces por servicio)» en celda (§1.5)",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: 28 factores uds/comensal precargados (el resto los pone el cliente; la columna calculada da \"\" sin factor)",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: columnas «Dotación de carta (uds)» (K, 44 leídas del propio ítem) y «Coste ajustado a menú degustación (€)» (L), con su TOTAL en el bloque de cierre: la dotación de degustación deja de ser sólo un recuento y tiene precio (RD-17)",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: molde A · 43 → 50 ítems MEDIDOS (la tarjeta anuncia 50)",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: 60 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['E5:General→dd/mm/yyyy [col Fecha Límite]', 'E6:General→dd/mm/yyyy [col Fecha Límite]', 'E7:General→dd/mm/yyyy [col Fecha Límite]', 'E8:General→dd/mm/yyyy [col Fecha Límite]', 'E9:General→dd/mm/yyyy [col Fecha Límite]', 'E10:General→dd/mm/yyyy [col Fecha Límite]', 'E11:General→dd/mm/yyyy [col Fecha Límite]', 'E12:General→dd/mm/yyyy [col Fecha Límite]']",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: molde A, cabecera fila 4, 50 ítems medidos, bloque de resumen en A56",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: 7 columnas ensanchadas (§1.12) ['G:14.0→16 (Coste Est. (€))', 'I:16.0→60 (Factor por comensal (menú degu)', 'J:16.0→24 (Menú degustación (uds))', 'K:18.0→25 (Dotación de carta (uds))', 'C:45.0→51 (Copa de cata ISO para sommelie)', 'H:30.0→60 (Un maridaje largo abre y cierr)']",
+    "checklist-vajilla-cristaleria.xlsx: 1 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Instrucciones!C11'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "checklist-vajilla-cristaleria.xlsx:Instrucciones: bio + versión 2.0 en A14",
+    "checklist-vajilla-cristaleria.xlsx:Instrucciones: protegida sin contraseña (2 celdas editables)",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: DV en 100 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "checklist-vajilla-cristaleria.xlsx:Vajilla, Cristalería: protegida sin contraseña (300 celdas editables)"
+   ],
+   "formulas_nuevas": 112,
+   "escrituras_de_formula": 112,
+   "formulas_en_el_fichero": 112,
+   "checklists": [
+    {
+     "molde": "A",
+     "fila_cabecera": 4,
+     "fin_datos": 54,
+     "items": 50,
+     "fila_total": null,
+     "estado_terminal": "Completado",
+     "inicio_bloque": 56,
+     "hoja": "Vajilla, Cristalería"
+    }
+   ],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "checklist-vajilla-cristaleria.xlsx",
+    "hojas": 2,
+    "formulas": 112,
+    "verdes": 302,
+    "cf": 4,
+    "dv": 5,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "cronograma-apertura-gantt.xlsx",
+   "cambios": [
+    "cronograma-apertura-gantt.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "cronograma-apertura-gantt.xlsx:Gantt: 18 cabeceras de mes de texto a número con formato \"M\"0 (§3.5: sin esto la comparación de la barra es texto vs número y pinta la fila entera)",
+    "cronograma-apertura-gantt.xlsx:Gantt!8: + «Negociación y firma del arrendamiento (con carencia)» [DOM-23 · SPEC §3.5]",
+    "cronograma-apertura-gantt.xlsx:Gantt!10: + «Dossier bancario, negociación de financiación, firma y disposición» [DOM-22/DOM-23 · SPEC §3.5]",
+    "cronograma-apertura-gantt.xlsx:Gantt!14: + «Solicitud de acometidas y aumento de potencia (luz, gas y agua)» [RD-29 · parametrizado (trámite de suministros)]",
+    "cronograma-apertura-gantt.xlsx:Gantt!20: + «Certificado final de obra y certificados de las instalaciones (BT,» [RD-30 · parametrizado (secuencia de licencias)]",
+    "cronograma-apertura-gantt.xlsx:Gantt!21: + «Resolución de la licencia de actividad y acta de comprobación muni» [RD-30 · parametrizado (secuencia de licencias)]",
+    "cronograma-apertura-gantt.xlsx:Gantt!A16: «Solicitud licencia de actividad C3» → «Solicitud de licencia de actividad clasificada (el nombre de» [DOM-11/COM-28 · SPEC §3.1 (misma redacción que checklist-legal)]",
+    "cronograma-apertura-gantt.xlsx:Gantt!X4: columna «Mes inicio» (§3.5)",
+    "cronograma-apertura-gantt.xlsx:Gantt!Y4: columna «Duración (meses)» (§3.5)",
+    "cronograma-apertura-gantt.xlsx:Gantt!Z4: columna «Depende de» (§3.5)",
+    "cronograma-apertura-gantt.xlsx:Gantt!AA4: columna «Días» (§3.5)",
+    "cronograma-apertura-gantt.xlsx:Gantt: Inicio/Fin en dd/mm/yyyy con DV de fecha y columna «Días» (TEC-15)",
+    "cronograma-apertura-gantt.xlsx:Gantt: barra del Gantt por formato condicional sobre F6:W39 → =AND(ISNUMBER($X6),ISNUMBER($Y6),F$4>=$X6,F$4<$X6+$Y6) (TEC-14/DOM-37/COM-19)",
+    "cronograma-apertura-gantt.xlsx:Gantt: aviso en rojo cuando Mes inicio + Duración se sale del horizonte del propio Gantt (=AND(ISNUMBER($X6),ISNUMBER($Y6),$X6+$Y6-1>MAX($F$4:$W$4))…)",
+    "cronograma-apertura-gantt.xlsx:Gantt: DV de duración (1-18) y aviso en rojo sobre «Depende de» cuando la tarea no existe o empieza antes de que termine su predecesora (RT-17, RC-16)",
+    "cronograma-apertura-gantt.xlsx:Instrucciones: la promesa «cada fase tiene una barra de duración estimada» pasa a describir cómo se pinta + la columna Días (§3.5)",
+    "cronograma-apertura-gantt.xlsx:Gantt: 43 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['D5:General→dd/mm/yyyy [col Inicio]', 'D12:General→dd/mm/yyyy [col Inicio]', 'D18:General→dd/mm/yyyy [col Inicio]', 'D25:General→dd/mm/yyyy [col Inicio]', 'D30:General→dd/mm/yyyy [col Inicio]', 'D36:General→dd/mm/yyyy [col Inicio]', 'E5:General→dd/mm/yyyy [col Fin]', 'E12:General→dd/mm/yyyy [col Fin]']",
+    "cronograma-apertura-gantt.xlsx:Gantt: 10 columnas ensanchadas (§1.12) ['Y:13.0→18 (Duración (meses))', 'A:42.0→54 (Negociación y firma del arrend)', 'B:18.0→23 (Propietario + abogado)', 'Z:30.0→31 (Búsqueda y selección de local)', 'A:54.0→60 (Dossier bancario, negociación )', 'Z:31.0→34 (Estudio de viabilidad financie)']",
+    "cronograma-apertura-gantt.xlsx: 2 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Gantt!A31', 'Gantt!A38'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "cronograma-apertura-gantt.xlsx:Instrucciones: bio + versión 2.0 en A15",
+    "cronograma-apertura-gantt.xlsx:Instrucciones: protegida sin contraseña (6 celdas editables)",
+    "cronograma-apertura-gantt.xlsx:Gantt: DV en 29 importes, 0 porcentajes, 0 que admiten negativo y 29 con rango propio",
+    "cronograma-apertura-gantt.xlsx:Gantt: protegida sin contraseña (203 celdas editables)"
+   ],
+   "formulas_nuevas": 29,
+   "escrituras_de_formula": 29,
+   "formulas_en_el_fichero": 29,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "cronograma-apertura-gantt.xlsx",
+    "hojas": 2,
+    "formulas": 29,
+    "verdes": 209,
+    "cf": 6,
+    "dv": 4,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "escandallo-maestro.xlsx",
+   "cambios": [
+    "escandallo-maestro.xlsx: pestaña 'Escandallo' → 'Ficha (plantilla)' (§1.10/TEC-28)",
+    "escandallo-maestro.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "escandallo-maestro.xlsx:Ficha (plantilla)!H4: food cost objetivo '28%' (CADENA de texto, que ninguna fórmula podía leer) -> número 0.28 con formato 0% [TEC-21 · DOM-30 · §4.1]",
+    "escandallo-maestro.xlsx:Ficha (plantilla)!G7:H26: la merma ENTRA en el coste — D pasa a «Cantidad NETA (ración)», G a «Cantidad BRUTA a comprar» = neta/(1-merma) y H = bruta x precio. Antes H=D*E no leía ni F ni G: con merluza a 22 EUR/kg, 0,180 kg y 40 % de merma daba 3,96 EUR en vez de 6,60 EUR [DOM-04 · TEC-06 · COM-33 · §4.1]",
+    "escandallo-maestro.xlsx:Ficha (plantilla)!$H$28..H36: el PVP divide por raciones y usa el food cost objetivo de la celda + PVP con y sin IVA. Antes H28=H27/0.28 sobre el coste del LOTE: una ficha de 10 raciones y 60 EUR de coste proponía 214,29 EUR por plato en vez de 21,43 EUR [TEC-05 · TEC-21 · DOM-05 · DOM-30 · DOM-03 · COM-14 · §4.1]",
+    "escandallo-maestro.xlsx: hoja «Resumen» CREADA — consolida coste por ración y PVP de cada ficha [TEC-23 · §4.1]",
+    "escandallo-maestro.xlsx:Ficha (plantilla): 32 celdas reformateadas por tipo de dato desde la cabecera de la fila 6 (§1.4) ['E27:General→#,##0.00 € [col Precio/Ud (€)]', 'E28:General→#,##0.00 € [col Precio/Ud (€)]', 'E29:General→#,##0.00 € [col Precio/Ud (€)]', 'E30:General→#,##0.00 € [col Precio/Ud (€)]', 'E31:General→#,##0.00 € [col Precio/Ud (€)]', 'E32:General→#,##0.00 € [col Precio/Ud (€)]', 'E33:General→#,##0.00 € [col Precio/Ud (€)]', 'E34:General→#,##0.00 € [col Precio/Ud (€)]']",
+    "escandallo-maestro.xlsx:Ficha (plantilla): A4:B4 etiqueta + C4:D4 campo; G a 22 (§1.12)",
+    "escandallo-maestro.xlsx:Ficha (plantilla): 3 columnas ensanchadas (§1.12) ['D:14.0→24 (Cantidad NETA (ración))', 'E:14.0→15 (Precio/Ud (€))', 'F:10.0→11 (Merma (%))']",
+    "escandallo-maestro.xlsx:Resumen: 1 columnas ensanchadas (§1.12) ['D:18.0→22 (Coste por ración (€))']",
+    "escandallo-maestro.xlsx: 5 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Instrucciones!A13', 'Instrucciones!A15', 'Ficha (plantilla)!I31', 'Ficha (plantilla)!A37', 'Resumen!A21'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "escandallo-maestro.xlsx:Instrucciones: bio + versión 2.0 en A19",
+    "escandallo-maestro.xlsx:Instrucciones: protegida sin contraseña (8 celdas editables)",
+    "escandallo-maestro.xlsx:Ficha (plantilla): DV en 42 importes, 22 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "escandallo-maestro.xlsx:Ficha (plantilla): protegida sin contraseña (125 celdas editables)",
+    "escandallo-maestro.xlsx:Resumen: protegida sin contraseña (11 celdas editables)"
+   ],
+   "formulas_nuevas": 119,
+   "escrituras_de_formula": 119,
+   "formulas_en_el_fichero": 119,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "escandallo-maestro.xlsx",
+    "hojas": 3,
+    "formulas": 119,
+    "verdes": 145,
+    "cf": 0,
+    "dv": 3,
+    "protegidas": 3,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 3,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "menu-engineering-matrix.xlsx",
+   "cambios": [
+    "menu-engineering-matrix.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "menu-engineering-matrix.xlsx:Menu Engineering!B5:F16: 12 platos de EJEMPLO precargados (la hoja se entregaba con 25 filas vacías y ni una fórmula que clasificar). PVP dentro de las bandas del cap. 15 de la guía (entrantes 18-28 EUR, principales 32-48 EUR, postres 14-22 EUR, degustación 90-180 EUR). Todas las celdas son verdes: se sustituyen por la carta real [§4.2]",
+    "menu-engineering-matrix.xlsx:Menu Engineering!H5:J29 + fila 31: Kasavana & Smith COMPLETO — mix %, margen de contribución medio ponderado (SUMPRODUCT envuelto en ROUND: pycel devuelve numpy.int64 y el SUM de arriba daría 0), umbral 70 %/N con el factor en celda, clasificación por fórmula y acción recomendada por cuadrante. Antes las 25 fórmulas del libro eran restas «=PVP-coste» y la columna Clasificación estaba vacía [TEC-04 · DOM-10 · COM-08 · §4.2]",
+    "menu-engineering-matrix.xlsx:Menu Engineering: 24 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['D30:General→#,##0 [col Uds Vendidas]', 'E30:General→#,##0.00 € [col Coste (€)]', 'E31:General→#,##0.00 € [col Coste (€)]', 'E32:General→#,##0.00 € [col Coste (€)]', 'E33:General→#,##0.00 € [col Coste (€)]', 'F30:General→#,##0.00 € [col PVP (€)]', 'F31:General→#,##0.00 € [col PVP (€)]', 'F32:General→#,##0.00 € [col PVP (€)]']",
+    "menu-engineering-matrix.xlsx:Menu Engineering: 4 columnas ensanchadas (§1.12) ['H:16.0→21 (Mix % (popularidad))', 'K:20.0→32 (Margen medio de SU familia (€))', 'L:22.0→41 (Umbral de popularidad de SU fa)', 'B:30.0→56 (Tartar de vaca madurada, yema )']",
+    "menu-engineering-matrix.xlsx: 4 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Instrucciones!A16', 'Instrucciones!A18', 'Menu Engineering!J32', 'Menu Engineering!G33'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "menu-engineering-matrix.xlsx:Instrucciones: bio + versión 2.0 en A22",
+    "menu-engineering-matrix.xlsx:Instrucciones: protegida sin contraseña (10 celdas editables)",
+    "menu-engineering-matrix.xlsx:Menu Engineering: DV en 75 importes, 2 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "menu-engineering-matrix.xlsx:Menu Engineering: protegida sin contraseña (127 celdas editables)"
+   ],
+   "formulas_nuevas": 203,
+   "escrituras_de_formula": 203,
+   "formulas_en_el_fichero": 178,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "menu-engineering-matrix.xlsx",
+    "hojas": 2,
+    "formulas": 178,
+    "verdes": 137,
+    "cf": 4,
+    "dv": 3,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "pl-mensual-escenarios.xlsx",
+   "cambios": [
+    "pl-mensual-escenarios.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "pl-mensual-escenarios.xlsx:Escenarios!A3: base de IVA declarada (§1.5b)",
+    "pl-mensual-escenarios.xlsx:Escenarios: P&L encadenado en las filas 17-22 para 3 escenarios; verde retirado de los resultados (TEC-02, DOM-07); amortización FUERA del EBITDA en la fila 23 y EBIT en la 24 (RD-11)",
+    "pl-mensual-escenarios.xlsx:Escenarios: 30 celdas de ejemplo en verde (§7-bis.7/§7-bis.14: el Pesimista es un escenario malo, no inviable)",
+    "pl-mensual-escenarios.xlsx: grupo_a variante 'escenarios-columnas' (guias-v2-SPEC.md §2)",
+    "pl-mensual-escenarios.xlsx:Escenarios: 12 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['B6:#,##0.00 €→#,##0 [fila Cubiertos/día comida]', 'C6:#,##0.00 €→#,##0 [fila Cubiertos/día comida]', 'D6:#,##0.00 €→#,##0 [fila Cubiertos/día comida]', 'B7:#,##0.00 €→#,##0 [fila Cubiertos/día cena]', 'C7:#,##0.00 €→#,##0 [fila Cubiertos/día cena]', 'D7:#,##0.00 €→#,##0 [fila Cubiertos/día cena]', 'B10:#,##0.00 €→#,##0 [fila Días abierto/mes]', 'C10:#,##0.00 €→#,##0 [fila Días abierto/mes]']",
+    "pl-mensual-escenarios.xlsx: 3 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Escenarios!E11', 'Escenarios!E12', 'Escenarios!E13'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "pl-mensual-escenarios.xlsx:Instrucciones: bio + versión 2.0 + nota de IVA en A11",
+    "pl-mensual-escenarios.xlsx:Instrucciones: protegida sin contraseña (5 celdas editables)",
+    "pl-mensual-escenarios.xlsx:Escenarios: DV en 27 importes, 3 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "pl-mensual-escenarios.xlsx:Escenarios: protegida sin contraseña (30 celdas editables)"
+   ],
+   "formulas_nuevas": 21,
+   "escrituras_de_formula": 21,
+   "formulas_en_el_fichero": 21,
+   "checklists": [],
+   "variante_pl": "escenarios-columnas",
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "pl-mensual-escenarios.xlsx",
+    "hojas": 2,
+    "formulas": 21,
+    "verdes": 35,
+    "cf": 3,
+    "dv": 2,
+    "protegidas": 2,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 2,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "plan-financiero-3-anos.xlsx",
+   "cambios": [
+    "plan-financiero-3-anos.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "plan-financiero-3-anos.xlsx:P&L Mensual!A3: base de IVA declarada (§1.5b)",
+    "plan-financiero-3-anos.xlsx:P&L Mensual: 18 líneas del P&L precargadas en verde con el escenario REALISTA de pl-mensual-escenarios (RD-01/RT-02/RC-01: el libro ya no abre con 0,00 € en TOTAL INGRESOS, EBITDA y EBIT)",
+    "plan-financiero-3-anos.xlsx:P&L Mensual: EBITDA sin amortización (B32=SUM(B20:B29)+B31), EBIT en la fila 37, margen en % (TEC-08/09), 25 celdas de «% s/Ventas» con \"\" en vez de 0 y 1 vaciadas ['C35'] (TEC-10)",
+    "plan-financiero-3-anos.xlsx:Inversión: 21 partidas de CAPEX precargadas en verde, cuadradas con los totales que ya tasan los checklists del propio pack (RD-01, RC-05)",
+    "plan-financiero-3-anos.xlsx:Financiación: hoja CREADA: parámetros, cuota mensual (la del cash flow) y cuadro de 10 años derivado del MISMO préstamo mensual, con las dos guardas (DOM-22, §2.3.4)",
+    "plan-financiero-3-anos.xlsx:Proyección 3 Años: hoja CREADA: Año 1 por referencia al P&L, EBITDA→EBIT→BAI→IS→resultado neto, todo guardado con \"\" (TEC-07, DOM-06, COM-07)",
+    "plan-financiero-3-anos.xlsx:Inversión: fondo de maniobra CALCULADO en C26 = estructura mensual × meses (verde en C42, mínimo 6), preapertura en C39, necesidad total en C46 — DOM-01, COM-30, RD-08, RD-20",
+    "plan-financiero-3-anos.xlsx:Inversión: columna F con la correspondencia de 22 conceptos hacia las categorías de calculadora-capex.xlsx (§2.3.6, TEC-26/COM-32)",
+    "plan-financiero-3-anos.xlsx:Inversión: 2 totales de la tabla con la guarda «sin dato = \"\"» en vez de «0,00 €» (§7-bis.13, RC-09)",
+    "plan-financiero-3-anos.xlsx:Inversión: 23 celdas de desviación que ya no dicen «0,0 %» ni una diferencia falsa con el libro en blanco (§7-bis.13) + semáforo ISNUMBER sobre E5:E27 al 10 % (§1.6, RT-20)",
+    "plan-financiero-3-anos.xlsx:Financiación: bloque «Plan de financiación» en las filas 29-35: necesidad, fondos propios, préstamo, otras fuentes y cuadre con semáforo (RD-20)",
+    "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-conceptos' (guias-v2-SPEC.md §2)",
+    "plan-financiero-3-anos.xlsx:Inversión: 72 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['C28:General→#,##0.00 € [col Presupuesto (€)]', 'C30:General→#,##0.00 € [col Presupuesto (€)]', 'C31:General→#,##0.00 € [col Presupuesto (€)]', 'C40:General→#,##0.00 € [col Presupuesto (€)]', 'C41:General→#,##0.00 € [col Presupuesto (€)]', 'C44:General→#,##0.00 € [col Presupuesto (€)]', 'C45:General→#,##0.00 € [col Presupuesto (€)]', 'C47:General→#,##0.00 € [col Presupuesto (€)]']",
+    "plan-financiero-3-anos.xlsx:Inversión: 1 columnas ensanchadas (§1.12) ['B:45.0→60 (Instalaciones (electricidad, f)']",
+    "plan-financiero-3-anos.xlsx:Inversión: 1 celdas calculadas dejan de estar en verde (§1.3)",
+    "plan-financiero-3-anos.xlsx:P&L Mensual: 15 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['B5:General→#,##0.00 € [col Importe (€)]', 'B11:General→#,##0.00 € [col Importe (€)]', 'B12:General→#,##0.00 € [col Importe (€)]', 'B16:General→#,##0.00 € [col Importe (€)]', 'B18:General→#,##0.00 € [col Importe (€)]', 'B19:General→#,##0.00 € [col Importe (€)]', 'B33:General→#,##0.00 € [col Importe (€)]', 'C5:General→0.0% [col % s/Ventas]']",
+    "plan-financiero-3-anos.xlsx:P&L Mensual: 1 columnas ensanchadas (§1.12) ['A:40.0→46 (Amortización (fuera del EBITDA)']",
+    "plan-financiero-3-anos.xlsx:Proyección 3 Años: 6 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['B6:General→0.0% [fila Crecimiento de ventas (%)]', 'B7:General→0.0% [fila Inflación de costes (%)]', 'C9:General→#,##0 [fila Meses de rampa hasta el mes ]', 'D9:General→#,##0 [fila Meses de rampa hasta el mes ]', 'C10:General→0.0% [fila % del crucero que se factura]', 'D10:General→0.0% [fila % del crucero que se factura]']",
+    "plan-financiero-3-anos.xlsx:Financiación: 54 celdas reformateadas en modo ficha (§1.4) ['C5:General→#,##0.00 €', 'D5:General→#,##0.00 €', 'E5:General→#,##0.00 €', 'C7:General→0.0%', 'D7:General→0.0%', 'E7:General→0.0%', 'C10:General→0.0%', 'D10:General→0.0%']",
+    "plan-financiero-3-anos.xlsx:Financiación: 5 columnas ensanchadas (§1.12) ['A:48.0→60 (Cuota MENSUAL tras la carencia)', 'B:13.0→21 (Capital inicial (€))', 'C:13.0→19 (Cuota del año (€))', 'D:13.0→15 (Intereses (€))', 'E:13.0→32 (Amortización del principal (€))']",
+    "plan-financiero-3-anos.xlsx: 17 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Inversión!F13', 'Inversión!B26', 'Inversión!F26', 'Inversión!A40', 'Inversión!A44', 'P&L Mensual!D6'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "plan-financiero-3-anos.xlsx:Instrucciones: bio + versión 2.0 + nota de IVA en A23",
+    "plan-financiero-3-anos.xlsx:Instrucciones: protegida sin contraseña (10 celdas editables)",
+    "plan-financiero-3-anos.xlsx:Inversión: DV en 46 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "plan-financiero-3-anos.xlsx:Inversión: protegida sin contraseña (46 celdas editables)",
+    "plan-financiero-3-anos.xlsx:P&L Mensual: DV en 18 importes, 0 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "plan-financiero-3-anos.xlsx:P&L Mensual: protegida sin contraseña (49 celdas editables)",
+    "plan-financiero-3-anos.xlsx:Proyección 3 Años: DV en 0 importes, 3 porcentajes, 0 que admiten negativo y 6 con rango propio",
+    "plan-financiero-3-anos.xlsx:Proyección 3 Años: protegida sin contraseña (9 celdas editables)",
+    "plan-financiero-3-anos.xlsx:Financiación: DV en 5 importes, 1 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "plan-financiero-3-anos.xlsx:Financiación: protegida sin contraseña (6 celdas editables)"
+   ],
+   "formulas_nuevas": 162,
+   "escrituras_de_formula": 162,
+   "formulas_en_el_fichero": 162,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "plan-financiero-3-anos.xlsx",
+    "hojas": 5,
+    "formulas": 162,
+    "verdes": 120,
+    "cf": 11,
+    "dv": 8,
+    "protegidas": 5,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 1,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 5,
+    "a4_mal": []
+   }
+  },
+  {
+   "fichero": "plantilla-turnos-brigada.xlsx",
+   "cambios": [
+    "plantilla-turnos-brigada.xlsx: metadata → 'Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0' (§1.11)",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana!L6:L30: 24 brutos anuales de ejemplo precargados desde el capítulo de brigada de esta misma guía, con los dos puestos que el capítulo publicaba por debajo del SMI ELEVADOS al SMI vigente; y el cuadrante con una rotación de ejemplo, para que el coste/hora y el coste de la semana se vean al abrir el fichero [RD-04 · RT-05 · RC-12]",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana!A6:A30: columna # numerada 1-24 (estaba vacía mientras el resto de plantillas del producto sí numera) [TEC-13]",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana!K6:P30: horas por SUMPRODUCT sobre la tabla de turnos, bruto anual, nº de pagas, bruto por paga, coste/hora con la SS al 33 % EN CELDA y coste semana, con TOTAL y coste anual con SS. El libro tenía 0 fórmulas y ninguna columna de coste, y sus Instrucciones prometían que «las horas y costes se calculan automáticamente» [TEC-11 · DOM-02 · DOM-16 · COM-10 · COM-20 · §4.4]",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana!L6:L30: semáforo rojo por formato condicional sobre todo bruto anual por debajo del SMI (17094.0 EUR/año, RD 126/2026), con la guarda ISNUMBER para que no se encienda con una celda vacía [DOM-13 · §1.6 · §7-bis.16]",
+    "plantilla-turnos-brigada.xlsx: hoja «Registro de jornada» CREADA — fecha, trabajador, semana, entrada, salida, horas del día con cruce de medianoche, descanso desde la jornada anterior con aviso del art. 34.3 ET, firma, y resumen de horas por trabajador y semana [DOM-16 · §4.4]",
+    "plantilla-turnos-brigada.xlsx: headcount UNIFICADO a 24 puestos, que es lo que hay en el cuadrante (Instrucciones!A1, propiedades.title). El texto del cap. 14 («22-30»), la suma de las tablas del docx (21-29) y la tarjeta del dashboard («25 personas») siguen diciendo otra cosa: son de T7/T8 [TEC-13 · COM-21 · §7-bis.7]",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana: 222 celdas reformateadas por tipo de dato desde la cabecera de la fila 4 (§1.4) ['L5:General→#,##0.00 € [col Bruto anual (€)]', 'L21:General→#,##0.00 € [col Bruto anual (€)]', 'L31:General→#,##0.00 € [col Bruto anual (€)]', 'L32:General→#,##0.00 € [col Bruto anual (€)]', 'L34:General→#,##0.00 € [col Bruto anual (€)]', 'L35:General→#,##0.00 € [col Bruto anual (€)]', 'L36:General→#,##0.00 € [col Bruto anual (€)]', 'L37:General→#,##0.00 € [col Bruto anual (€)]']",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana: 8 columnas ensanchadas (§1.12) ['L:16.0→17 (Bruto anual (€))', 'M:12.0→13 (Nº de pagas)', 'N:16.0→20 (Bruto por paga (€))', 'O:14.0→16 (Coste/hora (€))', 'P:16.0→18 (Coste semana (€))', 'C:22.0→23 (Jefe Partida Pescados)']",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana: 24 celdas calculadas dejan de estar en verde (§1.3)",
+    "plantilla-turnos-brigada.xlsx:Registro de jornada: 1 columnas ensanchadas (§1.12) ['F:13.0→15 (Horas del día)']",
+    "plantilla-turnos-brigada.xlsx: 7 celdas de texto normalizadas (flecha →, «solo» sin tilde, caracteres fuera de WinAnsi, guion no separable en los rangos y espacio fino antes de la unidad) ['Instrucciones!A1', 'Turnos Semana!A34', 'Turnos Semana!D36', 'Turnos Semana!D42', 'Turnos Semana!D44', 'Turnos Semana!D45'] [RC-25 · RC-26 · RC-27 · RC-28]",
+    "plantilla-turnos-brigada.xlsx:Instrucciones: bio + versión 2.0 en A21",
+    "plantilla-turnos-brigada.xlsx:Instrucciones: protegida sin contraseña (9 celdas editables)",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana: DV en 37 importes, 25 porcentajes, 0 que admiten negativo y 0 con rango propio",
+    "plantilla-turnos-brigada.xlsx:Turnos Semana: protegida sin contraseña (278 celdas editables)",
+    "plantilla-turnos-brigada.xlsx:Registro de jornada: protegida sin contraseña (1029 celdas editables)"
+   ],
+   "formulas_nuevas": 615,
+   "escrituras_de_formula": 615,
+   "formulas_en_el_fichero": 615,
+   "checklists": [],
+   "variante_pl": null,
+   "literales_sospechosos_total": 0,
+   "literales_sospechosos": [],
+   "contadores": {
+    "fichero": "plantilla-turnos-brigada.xlsx",
+    "hojas": 3,
+    "formulas": 615,
+    "verdes": 1316,
+    "cf": 3,
+    "dv": 7,
+    "protegidas": 3,
+    "sin_proteger": 0,
+    "divisiones_sin_iferror": 0,
+    "vacias": 0,
+    "bio": 1,
+    "version": 1,
+    "a4_ok": 3,
+    "a4_mal": []
+   }
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "budget-bodega.xlsx",
+    "salida": "budget-bodega.xlsx: formulas=405 cache_inyectado=85 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "calculadora-capex.xlsx",
+    "salida": "calculadora-capex.xlsx: formulas=5 cache_inyectado=5 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "calculadora-ticket-medio.xlsx",
+    "salida": "calculadora-ticket-medio.xlsx: formulas=18 cache_inyectado=18 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "cash-flow-break-even.xlsx",
+    "salida": "cash-flow-break-even.xlsx: formulas=134 cache_inyectado=134 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-appcc.xlsx",
+    "salida": "checklist-appcc.xlsx: formulas=15 cache_inyectado=15 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-contratacion.xlsx",
+    "salida": "checklist-contratacion.xlsx: formulas=9 cache_inyectado=9 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-diseno-sala.xlsx",
+    "salida": "checklist-diseno-sala.xlsx: formulas=11 cache_inyectado=11 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-equipamiento-cocina.xlsx",
+    "salida": "checklist-equipamiento-cocina.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+    "salida": "checklist-inspeccion-michelin-repsol.xlsx: formulas=13 cache_inyectado=13 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-legal.xlsx",
+    "salida": "checklist-legal.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-marketing-preapertura.xlsx",
+    "salida": "checklist-marketing-preapertura.xlsx: formulas=11 cache_inyectado=11 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "checklist-vajilla-cristaleria.xlsx",
+    "salida": "checklist-vajilla-cristaleria.xlsx: formulas=112 cache_inyectado=65 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "cronograma-apertura-gantt.xlsx",
+    "salida": "cronograma-apertura-gantt.xlsx: formulas=29 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "escandallo-maestro.xlsx",
+    "salida": "escandallo-maestro.xlsx: formulas=119 cache_inyectado=1 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "menu-engineering-matrix.xlsx",
+    "salida": "menu-engineering-matrix.xlsx: formulas=178 cache_inyectado=87 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "pl-mensual-escenarios.xlsx",
+    "salida": "pl-mensual-escenarios.xlsx: formulas=21 cache_inyectado=21 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "plan-financiero-3-anos.xlsx",
+    "salida": "plan-financiero-3-anos.xlsx: formulas=162 cache_inyectado=138 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "plantilla-turnos-brigada.xlsx",
+    "salida": "plantilla-turnos-brigada.xlsx: formulas=615 cache_inyectado=102 fallos_pycel=10",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 743,
+   "vacias_por_diseno": 1155,
+   "vacias_comprobadas_con_pycel": 1155,
+   "vacias_no_verificadas": [
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C179: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C180: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C181: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C182: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C183: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C184: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C185: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C186: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C187: ERR:AssertionError",
+    "plantilla-turnos-brigada.xlsx:'Registro de jornada'!C188: ERR:AssertionError"
+   ],
+   "fallos": []
+  },
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "22 ficheros censados (18 xlsx, 3 docx, 1 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones": {
+  "checklists": {
+   "checklists": [
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "hoja": "APPCC",
+     "molde": null,
+     "coord_total": "G62",
+     "total_nativo_del_libro": null,
+     "total": 3400.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.01818181818181818,
+     "subtotales": 12,
+     "suma_subtotales": 3400.0,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "hoja": "Contratación Equipo",
+     "molde": null,
+     "coord_total": "G37",
+     "total_nativo_del_libro": null,
+     "total": 1610.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.03333333333333333,
+     "subtotales": 6,
+     "suma_subtotales": 1610.0,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "hoja": "Diseño de Sala (FOH)",
+     "molde": null,
+     "coord_total": "G42",
+     "total_nativo_del_libro": null,
+     "total": 108200.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.02857142857142857,
+     "subtotales": 8,
+     "suma_subtotales": 108200.0,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "hoja": "Equipamiento Cocina",
+     "molde": null,
+     "coord_total": "G98",
+     "total_nativo_del_libro": null,
+     "total": 161430.4,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.01098901098901099,
+     "subtotales": 10,
+     "suma_subtotales": 161430.4,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "hoja": "Preparación Inspección",
+     "molde": null,
+     "coord_total": "G52",
+     "total_nativo_del_libro": null,
+     "total": 11000.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.022222222222222223,
+     "subtotales": 10,
+     "suma_subtotales": 11000.0,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-legal.xlsx",
+     "hoja": "Legal",
+     "molde": null,
+     "coord_total": "G56",
+     "total_nativo_del_libro": null,
+     "total": 57960.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.02040816326530612,
+     "subtotales": 8,
+     "suma_subtotales": 57960.0,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "hoja": "Marketing Pre-Apertura",
+     "molde": null,
+     "coord_total": "G42",
+     "total_nativo_del_libro": null,
+     "total": 23800.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.02857142857142857,
+     "subtotales": 8,
+     "suma_subtotales": 23800.0,
+     "cuadra_subtotales": true
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "hoja": "Vajilla, Cristalería",
+     "molde": null,
+     "coord_total": "G57",
+     "total_nativo_del_libro": null,
+     "total": 30230.0,
+     "avance": 0.0,
+     "avance_tras_marcar_1": 0.02,
+     "subtotales": 8,
+     "suma_subtotales": 30230.0,
+     "cuadra_subtotales": true
+    }
+   ],
+   "fallos": []
+  },
+  "semaforo_isnumber": {
+   "numero_negativo_con_guarda": true,
+   "texto_con_guarda": false,
+   "texto_SIN_guarda": false,
+   "vacia_con_guarda": false,
+   "ok": true
+  },
+  "sin_dato_es_vacio": {
+   "iferror_devuelve": "''",
+   "el_patron_viejo_devuelve": "0",
+   "ok": true
+  },
+  "proteccion": {
+   "hojas": [
+    {
+     "fichero": "budget-bodega.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 9,
+     "verdes_desbloqueadas": 9
+    },
+    {
+     "fichero": "budget-bodega.xlsx",
+     "hoja": "Bodega",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 551,
+     "verdes_desbloqueadas": 551
+    },
+    {
+     "fichero": "calculadora-capex.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 7,
+     "verdes_desbloqueadas": 7
+    },
+    {
+     "fichero": "calculadora-capex.xlsx",
+     "hoja": "CAPEX",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 13,
+     "verdes_desbloqueadas": 13
+    },
+    {
+     "fichero": "calculadora-ticket-medio.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 5,
+     "verdes_desbloqueadas": 5
+    },
+    {
+     "fichero": "calculadora-ticket-medio.xlsx",
+     "hoja": "Ticket Medio",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 37,
+     "verdes_desbloqueadas": 37
+    },
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 7,
+     "verdes_desbloqueadas": 7
+    },
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Cash Flow 12 Meses",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 166,
+     "verdes_desbloqueadas": 166
+    },
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "hoja": "APPCC",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 275,
+     "verdes_desbloqueadas": 275
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "hoja": "Contratación Equipo",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 150,
+     "verdes_desbloqueadas": 150
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "hoja": "Diseño de Sala (FOH)",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 175,
+     "verdes_desbloqueadas": 175
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 1,
+     "verdes_desbloqueadas": 1
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "hoja": "Equipamiento Cocina",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 545,
+     "verdes_desbloqueadas": 545
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "hoja": "Preparación Inspección",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 225,
+     "verdes_desbloqueadas": 225
+    },
+    {
+     "fichero": "checklist-legal.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 1,
+     "verdes_desbloqueadas": 1
+    },
+    {
+     "fichero": "checklist-legal.xlsx",
+     "hoja": "Legal",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 244,
+     "verdes_desbloqueadas": 244
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "hoja": "Marketing Pre-Apertura",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 175,
+     "verdes_desbloqueadas": 175
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 2,
+     "verdes_desbloqueadas": 2
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "hoja": "Vajilla, Cristalería",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 300,
+     "verdes_desbloqueadas": 300
+    },
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 6,
+     "verdes_desbloqueadas": 6
+    },
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "hoja": "Gantt",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 203,
+     "verdes_desbloqueadas": 203
+    },
+    {
+     "fichero": "escandallo-maestro.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 8,
+     "verdes_desbloqueadas": 8
+    },
+    {
+     "fichero": "escandallo-maestro.xlsx",
+     "hoja": "Ficha (plantilla)",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 125,
+     "verdes_desbloqueadas": 125
+    },
+    {
+     "fichero": "escandallo-maestro.xlsx",
+     "hoja": "Resumen",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 11,
+     "verdes_desbloqueadas": 11
+    },
+    {
+     "fichero": "menu-engineering-matrix.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 10,
+     "verdes_desbloqueadas": 10
+    },
+    {
+     "fichero": "menu-engineering-matrix.xlsx",
+     "hoja": "Menu Engineering",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 127,
+     "verdes_desbloqueadas": 127
+    },
+    {
+     "fichero": "pl-mensual-escenarios.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 5,
+     "verdes_desbloqueadas": 5
+    },
+    {
+     "fichero": "pl-mensual-escenarios.xlsx",
+     "hoja": "Escenarios",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 30,
+     "verdes_desbloqueadas": 30
+    },
+    {
+     "fichero": "plan-financiero-3-anos.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 10,
+     "verdes_desbloqueadas": 10
+    },
+    {
+     "fichero": "plan-financiero-3-anos.xlsx",
+     "hoja": "Inversión",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 46,
+     "verdes_desbloqueadas": 46
+    },
+    {
+     "fichero": "plan-financiero-3-anos.xlsx",
+     "hoja": "P&L Mensual",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 49,
+     "verdes_desbloqueadas": 49
+    },
+    {
+     "fichero": "plan-financiero-3-anos.xlsx",
+     "hoja": "Proyección 3 Años",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 9,
+     "verdes_desbloqueadas": 9
+    },
+    {
+     "fichero": "plan-financiero-3-anos.xlsx",
+     "hoja": "Financiación",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 6,
+     "verdes_desbloqueadas": 6
+    },
+    {
+     "fichero": "plantilla-turnos-brigada.xlsx",
+     "hoja": "Instrucciones",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 9,
+     "verdes_desbloqueadas": 9
+    },
+    {
+     "fichero": "plantilla-turnos-brigada.xlsx",
+     "hoja": "Turnos Semana",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 278,
+     "verdes_desbloqueadas": 278
+    },
+    {
+     "fichero": "plantilla-turnos-brigada.xlsx",
+     "hoja": "Registro de jornada",
+     "protegida": true,
+     "con_contrasena": false,
+     "verdes": 1029,
+     "verdes_desbloqueadas": 1029
+    }
+   ],
+   "fallos": [],
+   "total_hojas": 41,
+   "protegidas": 41
+  },
+  "bio_y_version": {
+   "ficheros": [
+    {
+     "fichero": "budget-bodega.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "calculadora-capex.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "calculadora-ticket-medio.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-legal.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "escandallo-maestro.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "menu-engineering-matrix.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "pl-mensual-escenarios.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "plan-financiero-3-anos.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    },
+    {
+     "fichero": "plantilla-turnos-brigada.xlsx",
+     "bio": 1,
+     "version": 1,
+     "version_no_2_0": 0,
+     "subject": "Cómo Montar un Restaurante Gastronómico 65 Plazas · v2.0"
+    }
+   ],
+   "fallos": []
+  },
+  "a4_intacto": {
+   "hojas": 41,
+   "fallos": []
+  },
+  "grupo_a": {
+   "constantes_a_formulas": {
+    "sustituciones": [],
+    "coinciden": 0,
+    "diferencias_justificadas": 0
+   },
+   "ticket_medio": {
+    "fichero": "calculadora-ticket-medio.xlsx",
+    "celda_ticket": "B16",
+    "pares_pct_precio": [
+     [
+      5,
+      6
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      11,
+      12
+     ],
+     [
+      13,
+      14
+     ]
+    ],
+    "incondicionales": [],
+    "precio_movido": {
+     "celda": "B6",
+     "etiqueta": "Precio menú largo (€)",
+     "de": 110,
+     "a": 120
+    },
+    "ticket": {
+     "antes": 99.8,
+     "despues": 102.8
+    },
+    "dias_abiertos": {
+     "de": 22,
+     "a": 26
+    },
+    "facturacion_mensual": {
+     "antes": 131736.0,
+     "despues": 155688
+    },
+    "ticket_no_se_mueve_con_los_dias": [
+     99.8,
+     99.8
+    ],
+    "control_del_mix": {
+     "celda": "B15",
+     "tramos": [
+      5,
+      7,
+      9
+     ],
+     "con_el_ejemplo_precargado": 1.0,
+     "con_los_tres_al_40pct": 1.2000000000000002
+    }
+   },
+   "pl_escenarios": {
+    "fichero": "pl-mensual-escenarios.xlsx",
+    "variante": "escenarios-columnas",
+    "hoja": "Escenarios",
+    "entrada_movida": {
+     "celda": "B6",
+     "etiqueta": "Cubiertos/día comida",
+     "de": 22,
+     "a": 26.4
+    },
+    "cascada": {
+     "facturacion": {
+      "antes": 131736.0,
+      "despues": 138729.8
+     },
+     "materia_prima": {
+      "antes": 42155.520000000004,
+      "despues": 44393.536
+     },
+     "ebitda": {
+      "antes": 3580.479999999996,
+      "despues": 8336.263999999996
+     },
+     "margen": {
+      "antes": 0.027179206898645746,
+      "despues": 0.060089930209659324
+     }
+    },
+    "con_ingresos_a_cero": {
+     "facturacion": 0,
+     "margen": ""
+    }
+   },
+   "plan_financiero": {
+    "fichero": "plan-financiero-3-anos.xlsx",
+    "hojas": [
+     "Instrucciones",
+     "Inversión",
+     "P&L Mensual",
+     "Proyección 3 Años",
+     "Financiación"
+    ],
+    "margen_formato": "0.0%",
+    "C35_vaciada": null,
+    "con_el_libro_en_blanco": {
+     "margen": "",
+     "pct_s_ventas_del_ebitda": ""
+    },
+    "escenario_R1": {
+     "ventas": 140000,
+     "costes_fijos_sin_amortizacion": 108000,
+     "ebitda": 32000,
+     "ebit": 26000,
+     "margen_ebitda": 0.22857142857142856
+    },
+    "amortizacion_que_separa_ebitda_de_ebit": 6000,
+    "cuota_mensual_100k_5pct_60meses": 1887.1233644010993,
+    "cuadro_100k_5anos": [
+     {
+      "capital_inicial": 100000,
+      "cuota": 22645.480372813192,
+      "intereses": 4589.9550746533605,
+      "pendiente": 81944.47470184017
+     },
+     {
+      "capital_inicial": 81944.47470184017,
+      "cuota": 22645.480372813192,
+      "intereses": 3666.2001331478423,
+      "pendiente": 62965.19446217482
+     },
+     {
+      "capital_inicial": 62965.19446217482,
+      "cuota": 22645.480372813192,
+      "intereses": 2695.1841356572513,
+      "pendiente": 43014.89822501888
+     },
+     {
+      "capital_inicial": 43014.89822501888,
+      "cuota": 22645.480372813192,
+      "intereses": 1674.4891168616268,
+      "pendiente": 22043.906969067313
+     },
+     {
+      "capital_inicial": 22043.906969067313,
+      "cuota": 22645.480372813192,
+      "intereses": 601.5734037458787,
+      "pendiente": 0
+     },
+     {
+      "capital_inicial": 0,
+      "cuota": 0,
+      "intereses": 0,
+      "pendiente": 0
+     },
+     {
+      "capital_inicial": 0,
+      "cuota": 0,
+      "intereses": 0,
+      "pendiente": 0
+     },
+     {
+      "capital_inicial": 0,
+      "cuota": 0,
+      "intereses": 0,
+      "pendiente": 0
+     },
+     {
+      "capital_inicial": 0,
+      "cuota": 0,
+      "intereses": 0,
+      "pendiente": 0
+     },
+     {
+      "capital_inicial": 0,
+      "cuota": 0,
+      "intereses": 0,
+      "pendiente": 0
+     }
+    ],
+    "carencia_igual_al_plazo": {
+     "C18": "La carencia no puede igualar ni superar el plazo",
+     "B18": 100000,
+     "D18": 5000.0,
+     "F18": 100000
+    },
+    "rampa_ano_1": {
+     "meses": 6,
+     "primer_mes": 0.6,
+     "fila_ingresos": 13
+    },
+    "pl_precargado": 189728.0,
+    "proyeccion_ano_1": 3127917.6,
+    "proyeccion_ano_3_base": 3941176.1760000004,
+    "ingresos_anuales_del_pl": 289622,
+    "suma_factores_rampa": 10.8,
+    "ano_1_esperado": 3127917.6,
+    "ano_1_con_rampa_0_meses": 3475464,
+    "ano_1_con_rampa_12_meses": 2780371.2,
+    "crecimiento_ano_2": {
+     "de": 0.08,
+     "a": 0.18
+    },
+    "proyeccion_ano_3_con_mas_crecimiento": 4306099.896
+   },
+   "cash_flow": {
+    "fichero": "cash-flow-break-even.xlsx",
+    "variante": "12-meses-total",
+    "meses": [
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "G",
+     "H",
+     "I",
+     "J",
+     "K",
+     "L",
+     "M"
+    ],
+    "fila_acumulado": 22,
+    "fila_acumulado_con_iva_y_deuda": 35,
+    "acumulado": [
+     -15000,
+     -20000,
+     -15000,
+     0,
+     25000,
+     60000,
+     105000,
+     160000,
+     225000,
+     300000,
+     385000,
+     480000
+    ],
+    "acumulado_con_iva_y_deuda": [
+     -14000,
+     -17000,
+     -9000,
+     4000,
+     34000,
+     75000,
+     112000,
+     175000,
+     249000,
+     310000,
+     406000,
+     513000
+    ],
+    "acumulado_esperado": [
+     -15000.0,
+     -20000.0,
+     -15000.0,
+     0.0,
+     25000.0,
+     60000.0,
+     105000.0,
+     160000.0,
+     225000.0,
+     300000.0,
+     385000.0,
+     480000.0
+    ],
+    "encadena": true,
+    "mes_de_break_even": 4,
+    "mes_de_break_even_con_serie_siempre_negativa": "No alcanzado",
+    "umbral_con_margen_de_contribucion_cero": ""
+   },
+   "capex": {
+    "fichero": "calculadora-capex.xlsx",
+    "variante": "rangos",
+    "fila_total": 18,
+    "ultima_fila_de_datos": 17,
+    "totales": {
+     "C18": {
+      "formula": "=SUM(C5:C17)",
+      "valor": 533000.0,
+      "suma_celda_a_celda": 533000.0
+     },
+     "D18": {
+      "formula": "=SUM(D5:D17)",
+      "valor": 1163000.0,
+      "suma_celda_a_celda": 1163000.0
+     },
+     "E18": {
+      "formula": "=SUM(E5:E17)",
+      "valor": 2305000.0,
+      "suma_celda_a_celda": 2305000.0
+     },
+     "F18": {
+      "formula": "=IF(COUNT(F5:F17)=0,\"\",SUM(F5:F17))",
+      "valor": 1155923.8399999999,
+      "suma_celda_a_celda": 1155923.84
+     }
+    }
+   }
+  },
+  "grupo_b": {
+   "gantt_barra": [
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "hoja": "Gantt",
+     "fila": 6,
+     "tarea": "Estudio de viabilidad financiera",
+     "celda_mes_inicio": "X6",
+     "meses_pintados": [
+      1,
+      2
+     ],
+     "mes_inicio_+2": [
+      3,
+      4
+     ],
+     "ok": true
+    }
+   ],
+   "gantt_dias": [
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "celda": "AA6",
+     "libro_en_blanco": "",
+     "con_fechas_46000_46030": 30,
+     "ok": true
+    }
+   ],
+   "instalacion_pct": {
+    "fichero": "checklist-equipamiento-cocina.xlsx",
+    "celda": "G95",
+    "valor": 14360.4,
+    "celda_movida": "G5",
+    "valor_tras_+1000": 14480.4,
+    "delta_esperado": 120.0,
+    "total": "G98",
+    "total_antes": 161430.4,
+    "total_despues": 162550.4,
+    "ok": true
+   },
+   "menu_degustacion": {
+    "fichero": "checklist-vajilla-cristaleria.xlsx",
+    "celda": "J5",
+    "valor": 195.0,
+    "plazas": "B11",
+    "plazas_x2": 390.0,
+    "sin_factor_por_comensal": "''",
+    "ok": true
+   },
+   "libro_en_blanco": [
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-legal.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "estado_terminal": "Completado",
+     "items_en_terminal": 0,
+     "ok": true
+    },
+    {
+     "fichero": "cronograma-apertura-gantt.xlsx",
+     "horizonte_meses": 18,
+     "tareas_fuera_del_horizonte": 0,
+     "detalle": [],
+     "ok": true
+    }
+   ],
+   "recuento_items": [
+    {
+     "fichero": "checklist-legal.xlsx",
+     "items_medidos": 49,
+     "anuncia": 48,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-contratacion.xlsx",
+     "items_medidos": 30,
+     "anuncia": 30,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-appcc.xlsx",
+     "items_medidos": 55,
+     "anuncia": 55,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-diseno-sala.xlsx",
+     "items_medidos": 35,
+     "anuncia": 35,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-vajilla-cristaleria.xlsx",
+     "items_medidos": 50,
+     "anuncia": 50,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+     "items_medidos": 45,
+     "anuncia": 45,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-marketing-preapertura.xlsx",
+     "items_medidos": 35,
+     "anuncia": 35,
+     "ok": true
+    },
+    {
+     "fichero": "checklist-equipamiento-cocina.xlsx",
+     "items_medidos": 91,
+     "anuncia": 90,
+     "ok": true
+    }
+   ],
+   "spec": "guias-v2-SPEC.md §3"
+  },
+  "grupo_c": {
+   "formulas_con_marcador_sin_sustituir": [],
+   "formulas_con_marcador_sin_sustituir_total": 0,
+   "bodega": [
+    {
+     "fichero": "budget-bodega.xlsx",
+     "hoja": "Bodega",
+     "total_en_blanco": {
+      "N": "",
+      "O": "",
+      "L": "",
+      "M": ""
+     },
+     "coste_10_pvp_carta_30_con_iva_21": {
+      "pvp_sin_iva_esperado_24_79": 24.793388429752067,
+      "multiplicador_esperado_2_48": 2.479338842975207,
+      "margen_s_pvp_esperado_0_597": 0.5966666666666667,
+      "food_cost_esperado_0_403": 0.4033333333333333
+     },
+     "rotacion_12_vendidas_24_stock_esperado_0_5": 0.5,
+     "valor_stock_coste_esperado_240": 240,
+     "TOTAL_valor_a_coste_esperado_240": 240,
+     "ok": true
+    }
+   ],
+   "escandallo": [
+    {
+     "fichero": "escandallo-maestro.xlsx",
+     "modelo": "E1",
+     "hoja": "Ficha (plantilla)",
+     "libro_en_blanco": {
+      "coste_total": "",
+      "coste_racion": "",
+      "pvp_sin_iva": "",
+      "pvp_con_iva": ""
+     },
+     "coste_sin_merma_esperado_3_96": 3.96,
+     "coste_con_merma_40_esperado_6_60": 6.6,
+     "pvp_1_racion_esperado_214_29": 214.28571428571428,
+     "pvp_10_raciones_esperado_21_43": 21.428571428571427,
+     "pvp_food_cost_32_esperado_18_75": 18.75,
+     "pvp_con_iva": 20.625,
+     "ok": true
+    }
+   ],
+   "resumen": [
+    {
+     "fichero": "escandallo-maestro.xlsx",
+     "C5_antes": "",
+     "C5_tras_tocar_la_ficha": 20,
+     "ok": true
+    }
+   ],
+   "menu": [
+    {
+     "fichero": "menu-engineering-matrix.xlsx",
+     "modelo": "M1",
+     "hoja": "Menu Engineering",
+     "total_uds": 930.0,
+     "mc_medio_ponderado": 18.580645161290324,
+     "umbral_70_pct_N": 0.05833333333333333,
+     "mix_primer_plato": 0.26865671641791045,
+     "clasificaciones": [
+      "Star",
+      "Star",
+      "Plowhorse",
+      "Plowhorse",
+      "Plowhorse",
+      "Star",
+      "Star",
+      "Puzzle",
+      "Plowhorse",
+      "Plowhorse",
+      "Star",
+      "Dog",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+     ],
+     "al_triplicar_ventas_del_menos_vendido": {
+      "fila": 12,
+      "antes": "Puzzle",
+      "despues": "Star"
+     },
+     "ok": true
+    }
+   ],
+   "turnos": [
+    {
+     "fichero": "plantilla-turnos-brigada.xlsx",
+     "modelo": "T1",
+     "hoja": "Turnos Semana",
+     "puestos": 24,
+     "horas_fila_6_al_abrir": 40.0,
+     "total_horas_al_abrir": 960.0,
+     "siete_libres_esperado_0": 0.0,
+     "un_partido_esperado_10": 10.0,
+     "partido_mas_manana_esperado_18": 18.0,
+     "coste_hora_30000_bruto_1800h_ss33_esperado_22_17": 22.166666666666668,
+     "coste_semana": 399.0,
+     "coste_hora_con_ss_0_esperado_16_67": 16.666666666666668,
+     "semaforo_smi_celda_vacia": false,
+     "semaforo_smi_15000": true,
+     "semaforo_smi_22000": false,
+     "ok": true
+    }
+   ],
+   "registro_jornada": [
+    {
+     "fichero": "plantilla-turnos-brigada.xlsx",
+     "F5_libro_en_blanco": "",
+     "horas_12_a_23_esperado_11h": 0.45833333333333337,
+     "descanso_23_a_08_esperado_9h": 0.375,
+     "aviso_menos_de_12h": "Descanso inferior al mínimo legal entre jornadas (art. 34.3 ET)",
+     "cruce_medianoche_22_a_06_esperado_8h": 0.33333333333333337,
+     "ok": true
+    }
+   ]
+  }
+ },
+ "avisos": [],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/apply2/respaldos/guia-restaurante-gastronomico.bak-20260829-094502"
+}

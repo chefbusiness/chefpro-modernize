@@ -132,8 +132,9 @@ Kasavana & Smith (`SUMPRODUCT(D,G)/SUM(D)` → margen medio; `0.7/COUNTIF(D,">0"
 El motor **no sabe de negocio**: detecta el molde, aplica convenciones y ofrece las primitivas que usan los grupos. Todo lo que dependa del concepto de la guía
 (nombres de hoja, filas, cifras) vive en `contenido_<pid>.py`.
 
-- **1.1 Detección de molde antes de tocar nada** (censo §6 de la cabecera). `molde_checklist(ws)` devuelve `A` | `B` | `C` mirando la cabecera de la fila 3/4:
-  molde A si `B='Categoría'` y `G='Coste Est. (€)'`; molde B si `A='✓'` y `D='Plazo orientativo'`; molde C si `E='Presupuesto (€)'` y `G='Desviación (%)'`.
+- **1.1 Detección de molde antes de tocar nada** (censo §6 de la cabecera). `molde_checklist(ws)` devuelve `A` | `B` | `C` | **`D`** mirando la cabecera de la
+  fila 3/4: molde A si `B='Categoría'` y `G='Coste Est. (€)'`; molde B si `A='✓'` y `D='Plazo orientativo'`; molde C si `E='Presupuesto (€)'` y
+  `G='Desviación (%)'`; **molde D si `F='Coste Estimado (€)'` y `G='Estado'`**.
   Si no encaja en ninguno **aborta con el nombre del fichero**: nunca «aplica el molde A por defecto». Igual para los libros financieros:
   `variante_pl(wb)` distingue **una hoja `Escenarios` con columnas B/C/D** (gastronómico) de **tres hojas `Pesimista`/`Realista`/`Optimista`** (los 5 hermanos)
   de **una hoja `P&L 3 escenarios`** (panadería).
@@ -369,8 +370,18 @@ cosmético, es una instrucción errónea que el cliente ejecuta.
 - **Molde B** (6 ficheros de panadería): el contador `C36='=COUNTIF(A4:A34,"✓")'` / `E36='=COUNTIF(B4:B34,"?*")'` **ya existe y se respeta**; se añade la línea
   de versión y la bio (no las lleva), la hoja `Instrucciones` (no la lleva) y la protección. **No se le añade columna de coste** salvo que John lo pida (§7.1):
   el molde no la tiene y añadirla obligaría a inventar 200 importes.
-- **Molde C** (2 ficheros de dark-kitchen): **ya trae `G5='=IF(E5=0,"",((F5-E5)/E5))'` y la fila TOTAL `F40='=SUM(F5:F39)'`**. No se duplica el total; se le
-  añade `% completado`, el semáforo de desviación (`ISNUMBER`, rojo por encima del umbral en celda) y §1.
+- **Molde C** (**1** fichero de dark-kitchen, `checklist-equipamiento-obra.xlsx`): **ya trae `G5='=IF(E5=0,"",((F5-E5)/E5))'` y la fila TOTAL
+  `F40='=SUM(F5:F39)'`**. No se duplica el total; se le añade `% completado`, el semáforo de desviación (`ISNUMBER`, rojo por encima del umbral en celda) y §1.
+- **Molde D** (**1** fichero de dark-kitchen, `checklist-apertura-legal.xlsx`): **cabecera en la fila 4** con `F='Coste Estimado (€)'` y `G='Estado'` —el molde
+  A pone el coste en `G` y el estado en `F`, así que las dos columnas están **cruzadas** respecto de él, y aplicarle el molde A sumaría la columna de estados—.
+  Como el C, **trae su propia fila TOTAL** y no se duplica; sí lleva categoría y coste, así que **sí recibe el desglose por categorías** (RT-28: la condición
+  del subtotal es «hay columna de categoría y de coste», no «el molde es A»). Existía en `motor.molde_checklist()` desde T1 y la SPEC no lo recogía: quedaba
+  como un molde vivo que, leyendo sólo la SPEC, parecía un fallo de detección.
+
+  **Un TOTAL a `None` NO es un gate verde.** Como los moldes C y D no escriben `TOTAL PRESUPUESTADO (€)` —el libro ya tiene el suyo—, la demostración de
+  `main.py` no encontraba ninguna fila TOTAL, devolvía `total=None` y `cuadra=None` y **no lo contaba como fallo**: nadie comprobaba que el total del libro
+  cuadrase con la suma de los subtotales por categoría. `demo_checklists()` busca ahora también el **TOTAL nativo** del libro y exige que evalúe a número y que
+  cuadre; **el único molde que puede quedarse sin TOTAL es el B**, y porque la SPEC declara explícitamente que no tiene columna de coste (§7-bis.17).
 
 ### 3.4 Contenido que falta en los checklists, por fichero (DOM-20, DOM-21, DOM-39, DOM-40, COM-17, COM-18, COM-34)
 
@@ -986,12 +997,33 @@ commiteado se pierde.
 1. **Todo en `--dry-run` sobre copias en scratchpad** hasta que T5 firme. `astro-site/public/dl/` no se toca en T1-T5.
 2. **Canario**: la primera ejecución real es **un solo fichero** del representante (`pl-mensual-escenarios.xlsx`), se abre, se verifica con `data_only` y se
    compara con su respaldo. Si el canario pasa, el resto del representante; si no, se para.
+
+   Se ejecuta con **`--fichero <nombre.xlsx>`** (`main.py`), que existe justamente para esto: filtra el catálogo del producto a ese fichero, corre la
+   idempotencia, el censo y las demostraciones **sólo sobre él** y, en `--dry-run`, deja en la copia de trabajo **ese fichero y ninguno más**. El respaldo
+   previo sigue siendo el de la **carpeta entera** (`$CLAUDE_SCRATCHPAD/respaldos/<pid>.bak-<ts>`), que es lo que permite restaurar si el canario falla.
+   Antes no existía: `--solo` selecciona GRUPOS (a, b, c), no ficheros, y el único rodeo posible —apuntar `--origen` a una carpeta con un solo xlsx— **moría
+   con un `FileNotFoundError` sin capturar**, porque `procesar()` recorre el catálogo que declaran los grupos y no lo que hay en disco. Ese pre-vuelo también
+   está: si el catálogo pide un fichero que no está en la carpeta, `main.py` **aborta con exit 2 y la lista de ausentes**, con el informe escrito, en vez de
+   reventar a mitad de la escritura.
+
+   **Verificación posterior del canario, en este orden** (ninguno es opcional):
+
+   1. `GUIAS_APPLY=1 python3 main.py --producto <pid> --fichero pl-mensual-escenarios.xlsx --json <informe>` → **exit 0**, `idempotencia.diferencias = 0`,
+      `censo_entregables.exit = 0`, `data_only_formulas_nuevas.fallos = []`.
+   2. Abrir el fichero **ya escrito** con `data_only=True` y comprobar las celdas clave contra el informe del crítico (no contra la memoria: contra el JSON).
+   3. `diff` de las fórmulas contra el respaldo: `python3 - <<'PY'` que cargue las dos versiones y compare hoja/celda/fórmula, para ver **qué cambió** y que
+      no haya desaparecido ninguna fórmula preexistente.
+   4. `python3 censo-entregables.py --only <carpeta> --fail --quiet` sobre la carpeta REAL (no la copia).
+   5. Si algo no cuadra: `shutil.copytree` de vuelta desde el respaldo y **parar**. El respaldo no se borra hasta que el producto entero esté verificado.
 3. **Los 7 hermanos, uno a uno y en serie**, con `GUIAS_APPLY=1` y respaldo previo por producto. Entre productos, `istats cpu temp`.
 4. **Los documentos van después de los xlsx**, no antes: el texto cita las cifras de los xlsx (§7-bis.7), así que primero tienen que ser correctas.
 5. **La capa de producto va la última**, con las cifras ya medidas: el número de páginas se escribe **después** de contarlas, no antes.
 
 **Gates que cierran la meta** (ninguno es opcional): `censo-entregables.py --only <pid> --fail --quiet` = 0 defectos en los 8 · `gate-flujo-postpago.py
---offline --only <pid>` = 141/141 ficheros, 0 fallos · `inject_cache.py` con `fallos_pycel` = 0 · verificación `data_only` sin resultados en `None` ·
+--offline --only <pid>` = 141/141 ficheros, 0 fallos · `inject_cache.py` con `fallos_pycel` = 0 **salvo las 10 fórmulas
+`SUMPRODUCT`+`IFERROR` de `plantilla-turnos-brigada.xlsx:'Registro de jornada'!C179:C188`**, que son preexistentes (mismo recuento y mismas celdas antes de la
+v2.0), evalúan a `""` por diseño y **pycel no sabe evaluar** — el pipeline las separa en `vacias_no_verificadas` y cierra `exit 0`. No es una excepción nueva:
+es la redacción exacta de un gate que ya se cumplía así · verificación `data_only` sin resultados en `None` ·
 idempotencia (segunda pasada = 0 cambios) · **0 xlsx con 0 fórmulas** salvo los que se declaren explícitamente como formularios en §7 · **páginas del PDF ≥ las
 prometidas** en los 8 · **0 caracteres no latinos** en `.md`, `.docx` y PDF · **recuento de ítems de checklist ≥ el anunciado** en cada tarjeta · y el **gate de
 coherencia de cifras** cruzando landing, dashboard, email, changelog, xlsx y PDF.
