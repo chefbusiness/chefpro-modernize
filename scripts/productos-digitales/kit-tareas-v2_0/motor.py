@@ -95,7 +95,38 @@ ANCHO_TAREA_CB = 60
 PROHIBIDAS = [
     ('RD 1420/2006 (derogado por el RD 1021/2022)',
      re.compile(r'(?<!derogó al )(?<!derogó el )RD\s*1420/2006', re.I)),
+    # RD-01 — el RD 3484/2000 de comidas preparadas está DEROGADO por el mismo
+    # RD 1021/2022 que se llevó al 1420/2006, y el que lo deroga ya NO fija
+    # temperaturas: las fija y justifica el operador en su plan APPCC
+    # (§7-bis.19). Citarlo como fuente viva de los 65 °C / 4 °C es el mismo
+    # defecto que motiva toda la v2.0, en una celda nueva. Mismo lookbehind:
+    # la única mención legítima es la que dice que fue derogado.
+    # La «excusa» va por CELDA y no por lookbehind: la única redacción honesta
+    # («el RD 3484/2000 …, que los fijaba, fue derogado por el RD 1021/2022»)
+    # pone el verbo DESPUÉS del número, donde ningún lookbehind alcanza.
+    ('RD 3484/2000 (derogado por el RD 1021/2022)',
+     re.compile(r'RD\s*3484/2000', re.I), re.compile(r'(?i)derogad')),
 ]
+#: RD-02 — marcas internas del documento de trabajo que NUNCA pueden viajar a
+#: una celda que lee el cliente: no tiene la SPEC delante y «(§7-bis.19)» es
+#: una referencia a un párrafo que para él no existe. Se vigilan también los
+#: prefijos de id de las auditorías (CB-E3, DOM-14, TEC-19, COM-05, RD-07…).
+RX_MARCA_INTERNA = re.compile(
+    r'§\s*\d|\b(?:CB-E\d|DOM-\d|TEC-\d|COM-\d|RD-\d|RT-\d|RC-\d)')
+
+
+def marcas_internas(wb, fname=''):
+    """Celdas visibles del cliente con una referencia interna viva (RD-02)."""
+    fuera = []
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                if isinstance(c.value, str) and RX_MARCA_INTERNA.search(
+                        c.value):
+                    fuera.append((fname + ':' if fname else '') + ws.title
+                                 + '!' + c.coordinate + ': '
+                                 + repr(c.value[:90]))
+    return fuera
 
 
 def restos_prohibidos(wb, fname=''):
@@ -108,7 +139,11 @@ def restos_prohibidos(wb, fname=''):
             for c in row:
                 if not isinstance(c.value, str):
                     continue
-                for etiqueta, rx in PROHIBIDAS:
+                for entrada in PROHIBIDAS:
+                    etiqueta, rx = entrada[0], entrada[1]
+                    excusa = entrada[2] if len(entrada) > 2 else None
+                    if excusa is not None and excusa.search(c.value):
+                        continue
                     if rx.search(c.value):
                         fuera.append((fname + ':' if fname else '')
                                      + ws.title + '!' + c.coordinate + ': '
@@ -868,8 +903,12 @@ def fila_calendario(ws):
 RX_REG_CAMPO = re.compile(
     r'(?i)^(fecha|temp|caducidad|firma|verif|lote|especie|proveedor|equipo|'
     r'inicio|fin)')
+#: RC-06 — el `\b` no es cosmético: sin él, `^compra` casaba con «Compras de
+#: pescado (€)» y la columna de EUROS del reporting salía con formato
+#: DD/MM/YYYY (el cliente escribía 480 y veía «23/06/1901»). Con la frontera de
+#: palabra, «Compras» ya no es «Compra» y «Fecha Entrada» sigue casando.
 RX_REG_FECHA = re.compile(
-    r'(?i)^(fecha|caducidad|inicio|fin|entrada|salida|compra)')
+    r'(?i)^(fecha|caducidad|inicio|fin|entrada|salida|compra)\b')
 RX_REG_TEMP = re.compile(r'(?i)(temp|°\s*c)')
 RX_REG_VERIF = re.compile(r'(?i)^verif')
 DIAS_SEMANA = ('lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado',
@@ -955,6 +994,72 @@ def rango_de_texto(v):
     return None
 
 
+#: RT-08/RT-09 — límites escritos en el RÓTULO de una columna de medida, sin
+#: unidad obligatoria: «pH medido (≤ 4,6)», «Temp recepción (0-2 °C)». Se
+#: prueban DESPUÉS de `rango_de_texto`, que ya cubre las formas con °C.
+RX_LIM_MAX = re.compile(
+    r'(?:≤|<=|m[áa]x\.?|m[áa]ximo)\s*([−\-]?\d+(?:[.,]\d+)?)')
+RX_LIM_MIN = re.compile(
+    r'(?:≥|>=|m[íi]n\.?|m[íi]nimo)\s*([−\-]?\d+(?:[.,]\d+)?)')
+RX_LIM_ENTRE = re.compile(
+    r'\(\s*(?:[^()]*?\s)?([−\-]?\d+(?:[.,]\d+)?)\s*(?:a|-|–|y)\s*'
+    r'([−\-]?\d+(?:[.,]\d+)?)\s*\)')
+#: RT-07 — horquilla de la DV decimal de una columna de medida. Deliberadamente
+#: ancha: no es un límite de proceso (ése lo pinta el formato condicional), es
+#: la barrera que impide que la lectura entre como TEXTO. −40/200 cubre desde
+#: un abatidor hasta el aceite de fritura y deja fuera un pH sólo por arriba.
+DV_MEDIDA_MIN, DV_MEDIDA_MAX = -40, 200
+DV_NUM_TIT = 'Escribe sólo el número'
+DV_NUM_ERROR = ('Escribe sólo el número, sin la unidad y sin el signo «−» '
+                'tipográfico: la celda ya lleva su formato. Para bajo cero usa '
+                'el guion del teclado (-20).')
+#: RT-14 — el mensaje de los checklists habla de un «total» que un REGISTRO no
+#: tiene: sus hojas no llevan fila de recuento.
+DV_ERROR_REGISTRO = ('Usa el desplegable: ✓ verificado, — pendiente, '
+                     'N/A no aplica.')
+
+
+def rango_de_rotulo(v):
+    """(min, max) declarado en el rótulo de una columna de medida, o None."""
+    r = rango_de_texto(v)
+    if r:
+        return r
+    if not isinstance(v, str):
+        return None
+    m = RX_LIM_ENTRE.search(v)
+    if m:
+        a, b = _num(m.group(1)), _num(m.group(2))
+        return (min(a, b), max(a, b))
+    m = RX_LIM_MAX.search(v)
+    if m:
+        return (None, _num(m.group(1)))
+    m = RX_LIM_MIN.search(v)
+    if m:
+        return (_num(m.group(1)), None)
+    return None
+
+
+def _cf_fuera_de_rango(ancla, rango, fill):
+    """RD-04 — regla de fuera-de-rango CON guarda de celda vacía.
+
+    Las reglas `cellIs` no distinguen el blanco del cero y Excel evalúa la
+    celda vacía como 0: una hoja recién impresa salía con 5 de sus 7 filas
+    ENTERAS en rojo antes de que nadie escribiera nada, incluida la de la
+    cámara de anisakis. El equipo aprende en dos días a ignorar el rojo, que es
+    lo contrario de lo que se busca con un PCC. Con `AND(celda<>""; …)` la
+    celda vacía nunca dispara.
+    """
+    lo, hi = rango
+    if lo is not None and hi is not None:
+        cond = f'OR({ancla}<{lo},{ancla}>{hi})'
+    elif hi is not None:
+        cond = f'{ancla}>{hi}'
+    else:
+        cond = f'{ancla}<{lo}'
+    return FormulaRule(formula=[f'AND({ancla}<>"",{cond})'], fill=fill,
+                       stopIfTrue=False)
+
+
 def registro_appcc(ws, cambios):
     """CB-E3 — formatos, desplegable, CF de rango y alturas de un REGISTRO.
 
@@ -981,42 +1086,87 @@ def registro_appcc(ws, cambios):
     # «Temp» en ninguna cabecera: lo que lleva la temperatura son los días.
     temp_por_dias = dias >= 5 and col_etiqueta is not None
 
-    fechas = tempes = verif = 0
+    fechas = tempes = verif = medidas = 0
     ws.data_validations.dataValidation = [
-        dv for dv in ws.data_validations.dataValidation if dv.type != 'list']
+        dv for dv in ws.data_validations.dataValidation
+        if dv.type not in ('list', 'decimal')]
+    ws.conditional_formatting = ConditionalFormattingList()
+    rojo = PatternFill('solid', start_color=ROJO, end_color=ROJO)
+    reglas = sin_rango = 0
     dv_marca = None
+    dv_temp = None
     for c in range(1, ncol + 1):
         etq = rot.get(c, '')
+        es_fecha = bool(RX_REG_FECHA.match(etq))
         es_temp = bool(RX_REG_TEMP.search(etq)) or (
             temp_por_dias and _sin_tildes(etq) in DIAS_SEMANA)
+        # RT-08/RT-09/RC-18/RC-19 — el límite de una columna de medida se lee de
+        # su PROPIO rótulo, igual que el de una fila de la rejilla semanal se
+        # lee del suyo: «Temp °C (−20 °C o menos)», «pH medido (≤ 4,6)».
+        # Escrito ahí, además, el cliente ve el límite crítico en la cabecera
+        # que rellena, no en una nota al pie.
+        lim = None if es_fecha else rango_de_rotulo(etq)
+        es_medida = (lim is not None) and not es_temp
         for r in range(hr + 1, ultima + 1):
             cel = ws.cell(row=r, column=c)
             if c == 1:
                 continue
             _verde(cel)
-            if RX_REG_FECHA.match(etq):
+            if es_fecha:
                 cel.number_format = 'DD/MM/YYYY'
             elif es_temp:
                 cel.number_format = '0.0 "°C"'
-        if RX_REG_FECHA.match(etq):
+            elif es_medida:
+                cel.number_format = '0.0'
+            elif cel.number_format == 'DD/MM/YYYY':
+                # RC-06 — `insertar_columna` clona el estilo de la vecina, así
+                # que «Origen y acreditación» heredaba el DD/MM/YYYY de «Fecha
+                # Entrada». Se limpia SÓLO ese formato: los que el módulo de
+                # contenido pone a propósito (kg, €, ml/kg) no se tocan.
+                cel.number_format = 'General'
+        if es_fecha:
             fechas += 1
         elif es_temp:
             tempes += 1
+        elif es_medida:
+            medidas += 1
+        letra = get_column_letter(c)
+        # RT-07 — DV decimal en toda columna de medida. Sin ella nada impide
+        # teclear «−20» con el signo tipográfico U+2212, que Excel guarda como
+        # TEXTO y que en una regla `cellIs` compara siempre MAYOR que cualquier
+        # número: la lectura correcta se pintaría de rojo.
+        if (es_temp or es_medida) and c > 1 and not temp_por_dias:
+            if dv_temp is None:
+                dv_temp = DataValidation(
+                    type='decimal', operator='between',
+                    formula1=DV_MEDIDA_MIN, formula2=DV_MEDIDA_MAX,
+                    allow_blank=True, showErrorMessage=True, errorStyle='stop',
+                    errorTitle=DV_NUM_TIT, error=DV_NUM_ERROR)
+                ws.add_data_validation(dv_temp)
+            dv_temp.add(f'{letra}{hr + 1}:{letra}{ultima}')
+        if (es_temp or es_medida) and c > 1 and lim is not None \
+                and not temp_por_dias:
+            ref = f'{letra}{hr + 1}:{letra}{ultima}'
+            ws.conditional_formatting.add(
+                ref, _cf_fuera_de_rango(f'{letra}{hr + 1}', lim, rojo))
+            reglas += 1
+        elif es_temp and c > 1 and lim is None and not temp_por_dias:
+            sin_rango += 1
         if RX_REG_VERIF.match(etq):
             if dv_marca is None:
                 dv_marca = DataValidation(
                     type='list', formula1=DV_LISTA, allow_blank=True,
                     showErrorMessage=True, errorStyle='stop',
-                    errorTitle=DV_ERROR_TIT, error=DV_ERROR)
+                    errorTitle=DV_ERROR_TIT,
+                    # RT-14 — el mensaje de los checklists prometía un «total»
+                    # del que la marca entra o sale, y un REGISTRO no tiene
+                    # fila de totales.
+                    error=DV_ERROR_REGISTRO)
                 ws.add_data_validation(dv_marca)
-            letra = get_column_letter(c)
             dv_marca.add(f'{letra}{hr + 1}:{letra}{ultima}')
             verif += 1
 
     # --- CF de fuera de rango, fila a fila y con el límite que la fila dice --
-    ws.conditional_formatting = ConditionalFormattingList()
-    rojo = PatternFill('solid', start_color=ROJO, end_color=ROJO)
-    reglas = sin_rango = 0
     if temp_por_dias:
         cdias = sorted(c for c, k in rot.items()
                        if _sin_tildes(k) in DIAS_SEMANA)
@@ -1028,20 +1178,9 @@ def registro_appcc(ws, cambios):
                 if not rango:
                     sin_rango += 1
                     continue
-                lo, hi = rango
-                ref = f'{ini}{r}:{fin}{r}'
-                if lo is not None and hi is not None:
-                    ws.conditional_formatting.add(
-                        ref, CellIsRule(operator='notBetween',
-                                        formula=[str(lo), str(hi)], fill=rojo))
-                elif hi is not None:
-                    ws.conditional_formatting.add(
-                        ref, CellIsRule(operator='greaterThan',
-                                        formula=[str(hi)], fill=rojo))
-                else:
-                    ws.conditional_formatting.add(
-                        ref, CellIsRule(operator='lessThan',
-                                        formula=[str(lo)], fill=rojo))
+                ws.conditional_formatting.add(
+                    f'{ini}{r}:{fin}{r}',
+                    _cf_fuera_de_rango(f'{ini}{r}', rango, rojo))
                 reglas += 1
 
     # --- TEC-19: la cabecera con wrap y alto explícito ---------------------
@@ -1074,8 +1213,9 @@ def registro_appcc(ws, cambios):
 
     cambios.append(
         f'CB-E3 «{ws.title}»: registro APPCC normalizado ({fechas} columnas de '
-        f'fecha DD/MM/YYYY, {tempes} de temperatura 0,0 °C, {verif} con '
-        f'desplegable, {reglas} reglas de fuera-de-rango'
+        f'fecha DD/MM/YYYY, {tempes} de temperatura 0,0 °C, {medidas} de otra '
+        f'medida, {verif} con desplegable, {reglas} reglas de fuera-de-rango '
+        'con guarda de celda vacía'
         + (f', {sin_rango} filas sin límite legible en su rótulo' if sin_rango
            else '') + ')')
     return (hr + 1, ultima)
@@ -1093,8 +1233,94 @@ def ncol_cabecera(ws, hr):
 
 def es_briefing(ws):
     b1, b2 = ws.cell(row=1, column=2).value, ws.cell(row=2, column=2).value
-    return (isinstance(b1, str) and 'Briefing' in b1
-            and isinstance(b2, str) and b2.startswith('Fecha:'))
+    if (isinstance(b1, str) and 'Briefing' in b1
+            and isinstance(b2, str) and b2.startswith('Fecha:')):
+        return True
+    # RD-12/RT-11/RC-01 — el briefing de la sub-familia CB reparte el mismo
+    # formulario en DOS filas más abajo (título en B2, «Fecha:» en B4), y por
+    # esa diferencia de maquetación quedaba fuera de TODO el post-proceso: sin
+    # print_area, sin protección y con las Instrucciones de checklist encima,
+    # prometiendo celdas verdes en una hoja con cero rellenos (COM-19).
+    # La firma se mantiene ESTRUCTURAL: «Briefing» en el título de la columna B
+    # y una etiqueta «Fecha:» en esa misma columna, dentro de las 6 primeras
+    # filas. Sólo dentro de la sub-familia, para no cambiar de tipo ninguna
+    # hoja de los 11 kits que §7-bis.24 congela.
+    if not sub_cb():
+        return False
+    titulo = next((ws.cell(row=r, column=2).value for r in (1, 2, 3)
+                   if isinstance(ws.cell(row=r, column=2).value, str)
+                   and 'briefing' in ws.cell(row=r, column=2).value.lower()),
+                  None)
+    if titulo is None:
+        return False
+    return any(isinstance(ws.cell(row=r, column=2).value, str)
+               and ws.cell(row=r, column=2).value.strip().startswith('Fecha:')
+               for r in range(2, 7))
+
+
+#: RD-12/RD-15/RC-01 — el BONUS-02 de la sub-familia CB no es el calendario ▸
+#: («Mes | Fecha / Evento | Tareas Clave | Antelación») sino una MATRIZ ANUAL:
+#: una columna de tarea y doce de mes con un «●» en el mes previsto. No casaba
+#: con ningún molde, así que el fichero que la landing vende como bonus salía
+#: sin print_area, sin protección y con las Instrucciones de checklist.
+MESES_ABREV = ('Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep',
+               'Oct', 'Nov', 'Dic')
+
+
+def fila_matriz_anual(ws):
+    """(fila de cabecera, primera columna de mes) de una matriz anual, o None.
+
+    Firma estructural: una fila de las 8 primeras con **diez o más** de las
+    doce abreviaturas de mes en columnas contiguas y un rótulo de texto en A.
+    El umbral de 10 (no 12) tolera un calendario que empiece en temporada; el
+    de columnas contiguas evita casar con una hoja que sólo nombre meses
+    sueltos dentro de un texto.
+    """
+    for r in range(1, 9):
+        cols = [c for c in range(2, min(ws.max_column, 20) + 1)
+                if ws.cell(row=r, column=c).value in MESES_ABREV]
+        if len(cols) < 10 or cols != list(range(cols[0], cols[-1] + 1)):
+            continue
+        a = ws.cell(row=r, column=1).value
+        if not (isinstance(a, str) and a.strip()):
+            continue
+        return r, cols[0]
+    return None, None
+
+
+def matriz_anual(ws, cambios):
+    """RD-15 — la matriz anual, legible impresa. Devuelve (primera, última).
+
+    El defecto medido: columna A de 35 unidades, rótulos de hasta 91
+    caracteres, `wrap_text` en ninguna celda y las columnas de mes ocupadas por
+    el «●», así que el texto NO puede desbordar. Se cortaban justamente las dos
+    filas que arreglaban hallazgos de la R1 (el desdoble de extintores y el
+    RGSEAA que no se renueva). La altura se deja en `None` —Excel autoajusta la
+    fila NO combinada— que es la misma decisión que documenta `autoalto`.
+    """
+    hr, _ = fila_matriz_anual(ws)
+    if hr is None:
+        return None
+    filas = [r for r in range(hr + 1, ws.max_row + 1)
+             if isinstance(ws.cell(row=r, column=1).value, str)
+             and ws.cell(row=r, column=1).value.strip()]
+    if not filas:
+        return None
+    n = 0
+    for r in filas:
+        cel = ws.cell(row=r, column=1)
+        if cel.alignment and cel.alignment.wrap_text:
+            continue
+        a = cel.alignment
+        cel.alignment = Alignment(wrap_text=True, vertical='center',
+                                  horizontal=a.horizontal if a else None,
+                                  indent=a.indent if a else 0)
+        n += 1
+    if n:
+        cambios.append(f'«{ws.title}»: {n} rótulos con ajuste de texto (la '
+                       'columna mide 35 y hay rótulos de 91 caracteres, con '
+                       'los meses ocupados por el «●»: se cortaban)')
+    return (hr + 1, filas[-1])
 
 
 def hojas_reconocidas(wb):
@@ -1125,6 +1351,8 @@ def hojas_reconocidas(wb):
         # por su culpa, y la extensión sólo puede AÑADIR alcance.
         elif sub_cb() and fila_registro_appcc(ws)[0]:
             fuera[ws.title] = 'registro_appcc'
+        elif sub_cb() and fila_matriz_anual(ws)[0]:
+            fuera[ws.title] = 'matriz_anual'
     return fuera
 
 
@@ -1782,6 +2010,27 @@ def normalizar_checklist(ws, cambios):
             # Instrucciones prometían «las celdas verdes son editables».
             if _sin_tildes(nombre) in {_sin_tildes(e) for e in EDITABLES}:
                 _verde(ws.cell(row=r, column=c))
+
+    # RT-15 — la PLANTILLA EN BLANCO habla dos lenguajes visuales: sus 15 filas
+    # numeradas dejan «Nº» y «Tarea» sin verde (la convención de las hojas con
+    # tareas escritas, donde el texto va impreso) mientras las 5 filas libres
+    # del final las llevan verdes las siete columnas. En la hoja que se vende
+    # como «personalizable» eso hace que 15 filas parezcan bloqueadas y 5 no.
+    # Se detecta por la HOJA, no por el nombre del fichero: sólo se repinta si
+    # NINGUNA fila numerada tiene tarea escrita.
+    if sub_cb():
+        col_tarea = g['cols'].get('Tarea')
+        numeradas = [r for r in range(hr + 1, ultima + 1)
+                     if isinstance(ws.cell(row=r, column=1).value, int)]
+        if col_tarea and numeradas and not any(
+                ws.cell(row=r, column=col_tarea).value for r in numeradas):
+            for r in numeradas:
+                _verde(ws.cell(row=r, column=1))
+                _verde(ws.cell(row=r, column=col_tarea))
+            cambios.append(
+                f'RT-15 «{ws.title}»: las {len(numeradas)} filas numeradas de '
+                'la plantilla en blanco, verdes también en «Nº» y «Tarea» '
+                '(eran las únicas del kit que parecían no editables)')
 
     # --- validación de datos ---------------------------------------------
     ws.data_validations.dataValidation = [
@@ -3454,7 +3703,7 @@ def papel_instrucciones(recon):
         return 'registro'
     if 'briefing' in tipos:
         return 'formulario'
-    if 'calendario' in tipos:
+    if 'calendario' in tipos or 'matriz_anual' in tipos:
         return 'calendario'
     return 'checklist'
 
@@ -3913,7 +4162,14 @@ def reescribir_instrucciones(wb, fname, cambios):
         cel.font = fuente
         cel.alignment = Alignment(wrap_text=True, vertical='top')
         size = fuente.size or 11
-        cap = max(20, int(ANCHO_B * 11 / size))
+        # RT-21 — dividir por el ancho EXACTO no deja margen para el corte por
+        # palabras: el único caso del kit que cae en la frontera (198
+        # caracteres en una columna de 100) recibía 2 líneas cuando el texto
+        # ocupa 3, y se imprimía cortado. Sólo en la sub-familia CB: cambiar el
+        # cálculo para todos movería la altura de las Instrucciones de los 11
+        # kits que §7-bis.24 congela.
+        margen = 4 if sub_cb() else 0
+        cap = max(20, int((ANCHO_B - margen) * 11 / size))
         alto = 15 * size / 11.0
         ws.row_dimensions[fila].height = max(
             15, math.ceil(math.ceil(len(texto) / cap) * alto * 1.05))
@@ -3954,6 +4210,109 @@ def version_line():
 # ==========================================================================
 # §2.7 — protección
 # ==========================================================================
+def _col_de_ref(ref, cual):
+    """Columna (índice) de un extremo de una referencia «A1:K1»."""
+    p = ref.replace('$', '').split(':')
+    t = p[-1] if cual else p[0]
+    return column_index_from_string(re.match(r'^([A-Z]+)', t).group(1))
+
+
+def _merge_de(ws, cel):
+    for m in ws.merged_cells.ranges:
+        if (m.min_row <= cel.row <= m.max_row
+                and m.min_col <= cel.column <= m.max_col):
+            return m
+    return None
+
+
+def _ancho(ws, c1, c2):
+    return sum(ws.column_dimensions[get_column_letter(c)].width or 8.43
+               for c in range(c1, c2 + 1))
+
+
+def notas_legibles(ws, cambios):
+    """RT-01…RT-05 / RD-10 / RD-11 — ninguna nota se imprime a medias.
+
+    El defecto es SISTÉMICO, no de tres celdas: 28 celdas de texto del
+    representante no caben en su ancho disponible y ninguna lleva `wrap_text`,
+    y entre ellas están TODAS las citas de norma que §7-bis.4 obliga a poner en
+    celda de nota — la del anisakis (279 caracteres en un merge de 170), el
+    aviso que separa el −20 °C del tratamiento del −18 °C del congelador (289
+    sobre 165) y la nota del pH con el método de tiras (412 sobre 139).
+
+    Dos casos, y la diferencia importa:
+
+      · celda FUSIONADA → Excel **no** autoajusta el alto de una fila con
+        celdas combinadas, así que aquí la altura tiene que ser explícita;
+      · celda suelta con las vecinas VACÍAS → se fusiona hasta el borde de la
+        print_area y se le da altura explícita, por lo mismo.
+
+    Si la celda tiene una vecina ocupada a la derecha no se toca la geometría:
+    sólo se envuelve el texto y se deja que Excel autoajuste (la fila no está
+    combinada), que es la decisión que documenta `autoalto`.
+
+    Sólo en la sub-familia CB (§7-bis.24): los 11 kits ▸ publicados tienen la
+    misma firma en sus notas y repintarlos aquí sería reescribir productos que
+    nadie ha pedido tocar.
+    """
+    if not sub_cb():
+        return 0
+    if not ws.print_area:
+        return 0
+    ref = ws.print_area[0] if isinstance(ws.print_area, (list, tuple)) \
+        else ws.print_area
+    try:
+        tope = _col_de_ref(ref, True)
+    except AttributeError:
+        return 0
+    n = 0
+    for row in ws.iter_rows():
+        for cel in row:
+            if not isinstance(cel.value, str) or len(cel.value) < 40:
+                continue
+            # Una FÓRMULA no es una nota: `=COUNTIF(B5:B29,"?*")-COUNTIF(…)`
+            # mide 43 caracteres y la primera versión de este paso fusionaba
+            # F:G en la fila del contador de las 18 hojas de checklist —18
+            # diferencias en el gate de idempotencia y una celda de resultado
+            # convertida en un párrafo.
+            if cel.data_type == 'f' or cel.value.startswith('='):
+                continue
+            if cel.alignment and cel.alignment.wrap_text:
+                continue
+            if cel.column > tope:
+                continue
+            m = _merge_de(ws, cel)
+            if m is not None:
+                if m.min_col != cel.column or m.min_row != cel.row:
+                    continue
+                ancho, fusionada = _ancho(ws, m.min_col, m.max_col), True
+            else:
+                libre = cel.column
+                while libre < tope and ws.cell(row=cel.row,
+                                               column=libre + 1).value in (
+                        None, ''):
+                    libre += 1
+                ancho = _ancho(ws, cel.column, libre)
+                fusionada = libre > cel.column
+                if len(cel.value) > ancho and fusionada:
+                    _merge(ws, f'{cel.coordinate}:'
+                               f'{get_column_letter(libre)}{cel.row}')
+            if len(cel.value) <= ancho:
+                continue
+            a = cel.alignment
+            cel.alignment = Alignment(wrap_text=True, vertical='top',
+                                      horizontal=a.horizontal if a else None,
+                                      indent=a.indent if a else 0)
+            if fusionada:
+                # RT-21 — se descuenta margen del ancho y se suma una línea:
+                # una línea de más no se ve; una de menos se lee cortada.
+                cap = max(int(ancho) - 6, 12)
+                lineas = math.ceil(len(cel.value) / cap) + 1
+                ws.row_dimensions[cel.row].height = 15 * lineas
+            n += 1
+    return n
+
+
 def proteger(ws, cuerpo, cambios):
     """Protección SIN contraseña: se desbloquea el CUERPO ENTERO de la tabla
     (numeración, rótulos de sección y filas libres incluidos: en el 07 el
@@ -4151,6 +4510,9 @@ LEX_TILDES = {
         'elaboracion': 'elaboración', 'electrica': 'eléctrica',
         'espana': 'españa', 'espanol': 'español', 'espanola': 'española',
         'esparragos': 'espárragos', 'espatula': 'espátula',
+        # RD-31/RC-09 — no es ambigua («espectaculo» no existe sin tilde) y
+        # estaba viva en `04:Instrucciones!B6` con el gate declarando 0.
+        'espectaculo': 'espectáculo', 'espectaculos': 'espectáculos',
         'espatulas': 'espátulas', 'especifica': 'específica',
         'especificas': 'específicas', 'especifico': 'específico',
         'especificos': 'específicos', 'estacion': 'estación', 'estan': 'están',
@@ -4565,6 +4927,10 @@ def aplicar(wb, fname, cambios):
             cuerpo = registro_appcc(ws, cambios)
             if cuerpo:
                 cuerpos[titulo] = cuerpo
+        elif tipo == 'matriz_anual':
+            cuerpo = matriz_anual(ws, cambios)
+            if cuerpo:
+                cuerpos[titulo] = cuerpo
         textos_de_tarea(ws, cambios, 2 if tipo == 'checklist' else None,
                         facturado=not es_cobros)
     if 'Instrucciones' in wb.sheetnames:
@@ -4624,7 +4990,7 @@ def cerrar(wb, fname, estado, cambios):
         return
     recon, cuerpos = estado['hojas'], estado['cuerpos']
     reescribir_instrucciones(wb, fname, cambios)
-    protegidas = 0
+    protegidas = recortadas = 0
     for titulo, tipo in recon.items():
         ws = wb[titulo]
         for row in ws.iter_rows():
@@ -4651,6 +5017,8 @@ def cerrar(wb, fname, estado, cambios):
             hr = fila_calendario(ws)
         elif fila_registro_appcc(ws)[0]:
             hr = fila_registro_appcc(ws)[0]            # CB-E3
+        elif fila_matriz_anual(ws)[0]:
+            hr = fila_matriz_anual(ws)[0]              # RD-12
         # TEC-19: apaisado en las hojas anchas (las de 8 columnas de 08
         # escalaban al ~60 %). Nunca al revés: «Calendario Anual» y «Registro
         # Mensual» ya venían en apaisado y forzarles vertical las estropearía.
@@ -4674,12 +5042,21 @@ def cerrar(wb, fname, estado, cambios):
         # por `proteger`, y las fórmulas del IVA, el total, el saldo, el
         # pendiente y el ESTADO, bloqueadas.
         if tipo in ('checklist', 'registro', 'registro_eventos', 'liquidacion',
-                    'briefing', 'calendario', 'registro_appcc'):
+                    'briefing', 'calendario', 'registro_appcc',
+                    'matriz_anual'):
             protegidas += 1
             proteger(ws, cuerpos.get(titulo), cambios)
+        # RT-01…RT-05 — las citas de norma que §7-bis.4 obliga a poner «en
+        # celda de nota» se imprimían RECORTADAS. Va AQUÍ, después de
+        # `area_impresion`: el ancho disponible se mide contra la print_area.
+        recortadas += notas_legibles(ws, cambios)
     if protegidas:
         cambios.append(f'{protegidas} hojas protegidas sin contraseña (de '
                        f'{len(recon)} con print_area y A4)')
+    if recortadas:
+        cambios.append(f'{recortadas} celdas de nota que se imprimían '
+                       'recortadas, ahora con ajuste de texto y alto de fila '
+                       '(las citas de norma van enteras)')
     # m5 — `set_metadata` YA NO se llama aquí: `cerrar` sólo corre para los
     # ficheros del molde ▸ y por eso los P4 y los BONUS se quedaban con el
     # subject de la v1.1. Lo llama `main.procesar` para TODOS los ficheros,

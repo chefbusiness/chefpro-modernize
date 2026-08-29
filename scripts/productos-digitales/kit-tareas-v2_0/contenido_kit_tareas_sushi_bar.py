@@ -336,6 +336,14 @@ LEX_CONTEXTO = [
     (r'\bson criticas\b', 'son críticas'),
     (r'\bSTOCK CRITICO\b', 'STOCK CRÍTICO'),
     (r'\bel rol mas importante\b', 'el rol más importante'),
+    # RD-31/RC-09/RC-10 — las cuatro ambiguas que el gate emitía y nadie
+    # resolvía, más la casilla del briefing. Todas acotadas por contexto:
+    # «mas» sólo delante de «alto», «te» sólo cuando es la bebida (verde, o en
+    # una lista de bebidas), «Si» sólo dentro de la casilla «☐ Si ☐ No».
+    (r'\bticket medio mas alto\b', 'ticket medio más alto'),
+    (r'\bServir te verde\b', 'Servir té verde'),
+    (r'\bcerveza japonesa, te\b', 'cerveza japonesa, té'),
+    (r'☐ Si ☐ No', '☐ Sí ☐ No'),
 ]
 _LEX_CONTEXTO = [(re.compile(rx), nuevo) for rx, nuevo in LEX_CONTEXTO]
 
@@ -545,12 +553,22 @@ FUENTE_PH = ('Fuente: 4,6 es el umbral internacional que separa los alimentos '
              'al arroz de sushi. Tiras de rango 4,0-5,0 con resolución 0,2; '
              'el pHmetro de punción calibrado es más preciso y es la opción '
              'recomendada si trabajas mucho volumen.')
-FUENTE_TEMPERATURAS = ('Fuente: criterio único de la familia (§7-bis.19) — '
-                       'cocción ≥70 °C en el centro del alimento (≥75 °C en '
-                       'aves, picados y recalentados) según las '
-                       'recomendaciones de AESAN, y mantenimiento en caliente '
-                       '≥65 °C y en frío ≤4 °C según el RD 3484/2000 de '
-                       'comidas preparadas.')
+#: RD-01/RD-02 — la versión anterior de esta celda hacía las dos cosas que la
+#: v2.0 viene a corregir: apoyaba las temperaturas en el **RD 3484/2000, que
+#: está DEROGADO** por el mismo RD 1021/2022 que se llevó al RD 1420/2006 (y
+#: que ya NO fija temperaturas: las fija y las justifica el operador en su plan
+#: APPCC), y filtraba al cliente una referencia interna del documento de
+#: trabajo —«(§7-bis.19)»— en la única celda del kit que le fija sus
+#: temperaturas de cocción. Se reescribe: AESAN para la cocción, criterio
+#: propio del plan APPCC del local para el mantenimiento, y el RD 3484/2000
+#: nombrado sólo para decir que ya no está vigente.
+FUENTE_TEMPERATURAS = ('Fuente: cocción ≥70 °C en el centro del alimento '
+                       '(≥75 °C en aves, picados y recalentados) según las '
+                       'recomendaciones de AESAN. El mantenimiento en caliente '
+                       '≥65 °C y en frío ≤4 °C es el criterio que fija y '
+                       'justifica el plan APPCC de este local: el RD 3484/2000 '
+                       'de comidas preparadas, que los fijaba, fue derogado '
+                       'por el RD 1021/2022, que ya no da temperaturas.')
 FUENTE_RIPCI = ('Fuente: RD 513/2017 (RIPCI) — revisión TRIMESTRAL a cargo del '
                 'titular y revisión ANUAL por empresa mantenedora habilitada; '
                 'retimbrado del extintor a los 5 años. Son dos obligaciones '
