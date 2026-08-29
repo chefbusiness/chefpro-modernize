@@ -113,6 +113,7 @@ import os
 import re
 import shutil
 
+from openpyxl.formatting.rule import Rule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Protection
 from openpyxl.utils import column_index_from_string, get_column_letter
 from openpyxl.worksheet.cell_range import CellRange
@@ -224,10 +225,72 @@ SUPUESTOS_BASE = (
     ('ipc', 'B48', 'Subida anual de los costes fijos', 0.0, motor.FMT_PCT,
      'A CERO: las tres columnas están en euros del año 1 (términos reales). '
      'Súbela si quieres proyectar en euros corrientes'),
+    # ---- ARRANQUE Y AFORO (RD-17/RC-03, RD-24, RT-14, RD-02) -----------
+    ('aforo', 'B51', 'Aforo del local (plazas sentadas + barra)', 56,
+     motor.FMT_ENT,
+     'De aquí sale la rotación implícita: cubiertos/día ÷ aforo. Cuéntalo '
+     'sobre el plano de tu local, no lo copies'),
+    ('rampa_mes1', 'B52', 'Actividad del mes 1 sobre la de crucero', 0.55,
+     motor.FMT_PCT,
+     'Un local que abre no factura desde el primer día lo mismo que a los '
+     'seis meses. Con 100 % se elimina la rampa y el año 1 se proyecta a '
+     'velocidad de crucero'),
+    ('meses_rampa', 'B53', 'Meses hasta alcanzar el régimen de crucero', 6,
+     motor.FMT_ENT,
+     'La rampa sube en línea recta desde el porcentaje de arriba hasta el '
+     '100 % en este número de meses'),
+    ('meses_renta_previa', 'B54',
+     'Meses de alquiler ANTES de abrir (obra y licencias)', 1,
+     motor.FMT_ENT,
+     'El local se paga desde que se firma. Estos meses son inversión: NO se '
+     'solapan con el P&L, que arranca el día de la apertura'),
+    ('pct_imprevistos', 'B55', 'Imprevistos de obra sobre el bloque de local',
+     0.10, motor.FMT_PCT,
+     'Colchón sobre la partida de obra y acondicionamiento. Un banco no '
+     'financia una reforma sin él'),
+    # ---- COBROS, PAGOS Y DESGLOSE DE IVA (RD-35, RD-12, RD-18) ---------
+    ('dias_cobro', 'B58', 'Días medios de cobro', 0, motor.FMT_ENT,
+     'En barra y sala se cobra al contado (0 días). Súbelo si trabajas con '
+     'plataformas de reserva o de reparto, que liquidan a D+1/D+30'),
+    ('dias_pago', 'B59', 'Días medios de pago a proveedor', 30,
+     motor.FMT_ENT,
+     'Lo que te financian tus proveedores. Es lo primero que se pierde si '
+     'te retrasas en un pago'),
+    ('mes_paga_1', 'B60', 'Mes de la paga extra de verano', 7, motor.FMT_ENT,
+     'Mes del año (1-12) en el que sale de caja la primera paga extra'),
+    ('mes_paga_2', 'B61', 'Mes de la paga extra de Navidad', 12,
+     motor.FMT_ENT,
+     'Mes del año (1-12) en el que sale de caja la segunda paga extra'),
+    ('pct_bebida_alc', 'B62',
+     'Bebida ALCOHÓLICA sobre el total de bebida', 0.60, motor.FMT_PCT,
+     'Los cafés, refrescos, aguas y zumos servidos en hostelería van al '
+     'IVA reducido; sólo la bebida alcohólica va al general. El resto de la '
+     'línea de bebida se repercute al tipo de restauración'),
+    # ---- UMBRALES Y SUELOS DE CONTROL (RD-22, RD-25) -------------------
+    ('dscr_min', 'B65', 'DSCR mínimo aceptable', 1.0, motor.FMT_DEC2,
+     'Por debajo de 1 el negocio no genera para pagar el préstamo. Ponlo en '
+     'el covenant que te exija tu banco'),
+    ('dscr_obj', 'B66', 'DSCR objetivo (verde)', 1.25, motor.FMT_DEC2,
+     'Lo que suele pedir una entidad para dar el préstamo sin garantías '
+     'adicionales'),
+    ('holgura_min', 'B67',
+     'Holgura mínima sobre el punto de equilibrio', 0.15, motor.FMT_PCT,
+     'Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas'),
+    ('salario_convenio', 'B68',
+     'Suelo salarial anual del convenio provincial (€)', 0, motor.FMT_EUR0,
+     'El convenio PROVINCIAL de hostelería, no el SMI, es el suelo real. '
+     'Cópialo de la tabla salarial de tu provincia; con 0 el semáforo '
+     'compara sólo contra el SMI'),
 )
 
-#: Bloque extra que este grupo cuelga debajo de la rejilla del motor.
-BLOQUE_EXTRA = ('A47', 'CRECIMIENTO Y ACTUALIZACIÓN DE COSTES')
+#: Bloques extra que este grupo cuelga debajo de la rejilla del motor.
+BLOQUES_EXTRA = (
+    ('A47', 'CRECIMIENTO Y ACTUALIZACIÓN DE COSTES'),
+    ('A50', 'ARRANQUE Y AFORO'),
+    ('A57', 'COBROS, PAGOS Y DESGLOSE DEL IVA'),
+    ('A64', 'UMBRALES Y SUELOS DE CONTROL'),
+)
+BLOQUE_EXTRA = BLOQUES_EXTRA[0]     # compatibilidad
 
 # ==========================================================================
 # Clasificación de partidas (por RÓTULO: sirve para A-α con bloques y para
@@ -457,6 +520,18 @@ class Rejilla(object):
         return self.fila0 + len(self.filas) - 1
 
 
+#: RT-24 — 38 notas escritas como `=IFERROR("texto literal","")`. Una
+#: constante de texto no puede provocar un error: la guarda no protege de
+#: nada, convierte un comentario en fórmula, engorda el recuento de «fórmulas
+#: nuevas» que sostiene la promesa comercial y obliga a `inject_cache` a
+#: cachear texto. RT-17: lo mismo con `=IFERROR(0,"")` y `=IFERROR(1,"")`.
+#: Se detectan aquí, en el volcado, y se escriben como VALOR. Las notas que
+#: SÍ interpolan una celda con `TEXT()` no casan con estos patrones y siguen
+#: siendo fórmula, que es lo que las mantiene al día.
+RX_SOLO_TEXTO = re.compile(r'^="((?:[^"]|"")*)"$')
+RX_SOLO_NUMERO = re.compile(r'^=(-?\d+(?:\.\d+)?)$')
+
+
 def escribir(rej, cols_texto=('A',)):
     """Vuelca las filas declaradas. `formulas`/`valores` por columna."""
     ws = rej.ws
@@ -478,11 +553,24 @@ def escribir(rej, cols_texto=('A',)):
             formula = fabrica(rej) if callable(fabrica) else fabrica
             if formula is None:
                 continue
-            fx(ws, col + str(fila), formula,
-               spec.get('fmt_' + col) or spec.get('fmt'))
-            if spec.get('bold'):
-                cel = ws[col + str(fila)]
-                cel.font = Font(bold=True, size=cel.font.size)
+            m_txt = RX_SOLO_TEXTO.match(formula)
+            m_num = RX_SOLO_NUMERO.match(formula)
+            if m_txt is not None:
+                motor.val(ws, col + str(fila), m_txt.group(1).replace('""',
+                                                                      '"'),
+                          bold=spec.get('bold', False))
+            elif m_num is not None:
+                valor = float(m_num.group(1))
+                motor.val(ws, col + str(fila),
+                          int(valor) if valor == int(valor) else valor,
+                          spec.get('fmt_' + col) or spec.get('fmt'),
+                          bold=spec.get('bold', False))
+            else:
+                fx(ws, col + str(fila), formula,
+                   spec.get('fmt_' + col) or spec.get('fmt'))
+                if spec.get('bold'):
+                    cel = ws[col + str(fila)]
+                    cel.font = Font(bold=True, size=cel.font.size)
         if spec.get('alto'):
             ws.row_dimensions[fila].height = spec['alto']
 
@@ -577,6 +665,12 @@ def _partidas(ws, cab, col_importe=2, canon=None, desde=None, hasta=None):
         nota = None
         for c in range(col_importe + 1, min(ws.max_column, 6) + 1):
             vv = ws.cell(row=r, column=c).value
+            # la columna de marca de IVA no es una nota: leerla como tal la
+            # copiaba a la columna de notas en la 2.ª pasada y rompía la
+            # idempotencia (RD-14)
+            if re.search(r'iva', motor.cabecera_de_columna(ws, c) or '',
+                         re.I):
+                continue
             if isinstance(vv, str) and vv.strip() \
                     and not vv.startswith('=') and '%' not in (
                         ws.cell(row=r, column=c).number_format or ''):
@@ -584,6 +678,21 @@ def _partidas(ws, cab, col_importe=2, canon=None, desde=None, hasta=None):
                 break
         fuera.append((r, rot, float(v), nota, bloque))
     return fuera
+
+
+#: RD-14 / RT-25 — clasificación por defecto del IVA de cada partida. Se
+#: marca «No» sólo lo que la ley deja fuera: la fianza (garantía, no entrega
+#: de bienes), el colchón de caja, los seguros (exentos, art. 20.Uno.16 LIVA)
+#: y las tasas, licencias y aranceles registrales (no sujetos). Todo lo demás
+#: nace en «Sí» y el comprador lo corrige en su desplegable.
+RX_SIN_IVA = re.compile(
+    r'^(fianza|fondo de maniobra|colch[oó]n|seguros?\b|licencias?\b|'
+    r'permisos?\b|tasas?\b|impuesto|registro mercantil|'
+    r'constituci[oó]n)', re.I)
+
+
+def _lleva_iva(rotulo):
+    return 'No' if RX_SIN_IVA.search(rotulo or '') else 'Sí'
 
 
 def _clasificar_amortizable(rotulo, tablas):
@@ -667,7 +776,8 @@ class Plan(object):
         motor.val(ws, 'A2', 'Cambia las celdas VERDES: el resto del libro se '
                   'recalcula solo. Las partidas de gasto se teclean en su '
                   'hoja (también en verde) y no se repiten aquí.', wrap=True)
-        motor.val(ws, BLOQUE_EXTRA[0], BLOQUE_EXTRA[1], bold=True)
+        for coord, texto in BLOQUES_EXTRA:
+            motor.val(ws, coord, texto, bold=True)
         propios = self.dato('SUPUESTOS', {}) or {}
         leidos = self._leer_drivers()
         for clave, coord, etiqueta, defecto, fmt, nota in SUPUESTOS_BASE:
@@ -951,8 +1061,14 @@ class Plan(object):
         tablas = self.dato('AMORTIZABLE') or AMORT_DEFECTO
         pie = _pie(ws, cab)
         _limpiar_area(ws, cab, ws.max_row, 5)
+        # RD-14 / RT-25 — el IVA soportado se calculaba al 21 % sobre TODA la
+        # inversión menos fianza y fondo, incluyendo tasas municipales (no
+        # sujetas) y seguros (exentos, art. 20.Uno.16 LIVA). Ahora cada
+        # partida declara si lleva IVA en una columna con desplegable y B46
+        # es un SUMIF: el comprador puede corregir la clasificación de su
+        # caso sin tocar una fórmula.
         for i, texto in enumerate(('Concepto', 'Importe', '% s/inversión',
-                                   'Notas')):
+                                   'Notas', '¿Lleva IVA?')):
             motor.val(ws, get_column_letter(i + 1) + str(cab), texto,
                       bold=True)
         # agrupar por bloque conservando el orden
@@ -991,7 +1107,10 @@ class Plan(object):
         self.rej['inversion'] = rej
         alq = self.p.ref('alquiler_mes')
         fianza_m = self.p.ref('fianza_meses')
+        meses_previos = self.p.ref('meses_renta_previa')
+        pct_imp = self.p.ref('pct_imprevistos')
         claves_bloque, amortiza = [], {'obra': [], 'maquinaria': []}
+        con_iva = []
         # un bloque sin partidas (el «FONDO DE MANIOBRA» original, cuya única
         # línea es canónica y la regenera este grupo) no se escribe: dejarlo
         # produciría un `SUM` sobre sí mismo, que Excel marca como referencia
@@ -1003,37 +1122,83 @@ class Plan(object):
             rej.add(clave_b, rot=bloque, bold=True, fmt=motor.FMT_EUR0,
                     fmt_C=motor.FMT_PCT)
             primero = None
+            ultimo_item = None
             for rot, importe, nota in bloques[bloque]:
                 clave = 'i_%d' % len(rej.filas)
                 primero = primero or clave
+                ultimo_item = clave
                 grupo = _clasificar_amortizable(rot, tablas)
                 if grupo in amortiza:
                     amortiza[grupo].append(clave)
+                con_iva.append(clave)
                 rej.add(clave, rot=rot,
-                        valores={'B': importe, 'D': nota or ''},
-                        fmt=motor.FMT_EUR0, verde=True,
+                        valores={'B': importe, 'D': nota or '',
+                                 'E': _lleva_iva(rot)},
+                        # RT-12/RC-16: verde SÓLO lo que alimenta una fórmula
+                        # (el importe y el marcador de IVA). Pintar de verde
+                        # la columna de notas convierte el comentario del
+                        # autor en un campo de entrada y contradice a
+                        # Instrucciones: cambiar una nota no recalcula nada.
+                        fmt=motor.FMT_EUR0, verdes=('B', 'E'),
                         formulas={'C': (lambda R, k=clave:
                                         '=' + R.c(k) + '/'
                                         + R.c('total', absoluta=True))},
                         fmt_C=motor.FMT_PCT)
-            # las derivadas del alquiler, dentro de su bloque
+            # las derivadas del alquiler y el colchón de obra, en su bloque
             if bloque == orden[0]:
                 rej.add('fianza', rot='Fianza del alquiler',
                         fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
+                        valores={'E': 'No'},
                         formulas={
                             'B': '=' + alq + '*' + fianza_m,
                             'C': (lambda R: '=' + R.c('fianza') + '/'
                                   + R.c('total', absoluta=True)),
                             'D': texto_num(fianza_m, '', ' meses de renta, al '
-                                           'tipo de la hoja de Supuestos')})
-                rej.add('renta1', rot='Primera mensualidad de alquiler',
+                                           'tipo de la hoja de Supuestos. Es '
+                                           'un activo recuperable al cerrar: '
+                                           'ni se amortiza ni lleva IVA')})
+                # RT-14 / RD-01 — «Primera mensualidad de alquiler» y el mes 1
+                # del P&L eran EL MISMO euro contado dos veces. La renta que
+                # es inversión es la de los meses ANTERIORES a la apertura
+                # (obra y licencias), que el P&L no cubre porque arranca el
+                # día que se abre.
+                rej.add('renta1',
+                        rot='Alquiler de los meses previos a la apertura',
                         fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
+                        valores={'E': 'Sí'},
                         formulas={
-                            'B': '=' + alq,
+                            'B': '=' + alq + '*' + meses_previos,
                             'C': (lambda R: '=' + R.c('renta1') + '/'
                                   + R.c('total', absoluta=True)),
-                            'D': '="Se paga por adelantado junto con la '
-                                 'fianza"'})
+                            'D': texto_num(
+                                meses_previos, 'Renta de los ',
+                                ' meses de obra y licencias. NO se solapa con '
+                                'el P&L, que arranca el día de la apertura: '
+                                'los doce meses del P&L son los doce de '
+                                'explotación')})
+                # RD-02 / RC-02 — imprevistos de obra. Por FÓRMULA sobre las
+                # partidas del bloque, nunca literal (§7-bis.11), y sin
+                # incluirse a sí mismo ni a las derivadas: un `SUM` sobre el
+                # subtotal del bloque sería referencia circular.
+                if primero and ultimo_item:
+                    rej.add('imprevistos',
+                            rot='Imprevistos de obra y acondicionamiento',
+                            fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
+                            valores={'E': 'Sí'},
+                            formulas={
+                                'B': (lambda R, a=primero, b=ultimo_item:
+                                      '=ROUND(SUM(' + R.c(a) + ':' + R.c(b)
+                                      + ')*' + pct_imp + ',0)'),
+                                'C': (lambda R: '=' + R.c('imprevistos') + '/'
+                                      + R.c('total', absoluta=True)),
+                                'D': texto_pct(
+                                    pct_imp, 'Al ', ' de las partidas de obra '
+                                    'y acondicionamiento de este bloque. Un '
+                                    'banco no financia una reforma sin '
+                                    'colchón: el porcentaje está en la hoja '
+                                    'de Supuestos')})
+                    con_iva.append('imprevistos')
+                con_iva.append('renta1')
             ultimo_b = rej.filas[-1]['clave']
             rej.filas[rej.fila(clave_b) - rej.fila0]['formulas'] = {
                 'B': ((lambda R, a=primero, b=ultimo_b:
@@ -1050,36 +1215,68 @@ class Plan(object):
                           'C': (lambda R: '=' + R.c(clave_b) + '/'
                                 + R.c('total', absoluta=True))})
         meses = self.p.ref('meses_fondo')
+        # RD-16 / RC-18 / RT-26 — el colchón se dotaba sobre una magnitud
+        # CONTABLE: los tres meses salían de unos costes fijos que incluyen la
+        # amortización, que NO es salida de caja. Se financiaban con deuda a
+        # siete años 2.220 € de un gasto que nadie paga. Los intereses sí son
+        # salida de caja y se quedan dentro.
+        caja_fija = ('(' + self.rej['pyg'].r('tcf') + '-'
+                     + self.rej['pyg'].r('cf_amort') + ')')
         rej.add('fondo', rot='Colchón operativo hasta alcanzar el equilibrio',
                 fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
+                valores={'E': 'No'},
                 formulas={
                     # ⚠️ una referencia a una celda VACÍA devuelve 0, no
                     # `""`: sin este guarda, un libro en blanco dota un fondo
                     # de «0 €» y el semáforo de la tesorería se pone verde
-                    'B': (lambda R: '=IF(' + meses + '*'
-                          + self.rej['pyg'].r('tcf') + '=0,"",' + meses + '*'
-                          + self.rej['pyg'].r('tcf') + '/12)'),
+                    'B': (lambda R: '=IF(' + meses + '*' + caja_fija
+                          + '=0,"",' + meses + '*' + caja_fija + '/12)'),
                     'C': (lambda R: '=' + R.c('fondo') + '/'
                           + R.c('total', absoluta=True)),
                     'D': texto_num(meses, 'Cubre ', ' meses de costes fijos '
-                                   'del año 1, que es el mínimo que exigen '
-                                   'las Instrucciones de este libro')})
+                                   'DE CAJA del año 1 (los del P&L menos la '
+                                   'amortización, que no se paga), que es el '
+                                   'mínimo que exigen las Instrucciones de '
+                                   'este libro')})
         rej.add('total', rot='INVERSIÓN TOTAL (suma de los bloques)',
                 bold=True, fmt=motor.FMT_EUR0,
                 formulas={'B': (lambda R: '=' + '+'.join(
-                    R.c(k) for k in claves_bloque))})
-        # IVA soportado (TEC-11): suma a la caja aunque sea recuperable
-        sin_iva = ['fianza', 'fondo']
+                    R.c(k) for k in claves_bloque)),
+                    # RC-33 — la columna de % divide entre el total CON
+                    # colchón, así que los bloques de activo se leen más
+                    # pequeños de lo que son. Se dice en la propia hoja y se
+                    # publica el capex aparte.
+                    'D': (lambda R: '="Los porcentajes de la columna C se '
+                          'leen sobre esta cifra, que incluye el fondo de '
+                          'maniobra ("&TEXT(' + R.c('b_fondo', 'C')
+                          + ',"0,0%")&" del total). Para comparar el '
+                          'desglose con otro plan, usa la fila de CAPEX de '
+                          'abajo."')})
+        rej.add('capex', rot='CAPEX (inversión sin el fondo de maniobra)',
+                bold=True, fmt=motor.FMT_EUR0,
+                formulas={'B': (lambda R: '=' + R.c('total') + '-'
+                                + R.c('b_fondo')),
+                          'D': '="Es lo que se compra: obra, equipamiento, '
+                               'lanzamiento y gastos de constitución. El '
+                               'colchón de caja no es inversión, es '
+                               'circulante"'})
+        # IVA soportado (TEC-11, RD-14, RT-25): sólo sobre lo que lo lleva
         rej.add('iva', rot='IVA soportado sobre la inversión (recuperable)',
                 fmt=motor.FMT_EUR0,
                 formulas={
-                    'B': (lambda R: '=(' + R.c('total') + '-'
-                          + '-'.join(R.c(k) for k in sin_iva) + ')*'
-                          + self.p.ref('iva_soportado')),
+                    'B': (lambda R, ks=tuple(con_iva):
+                          ('=SUMIF(' + R.c(ks[0], 'E', absoluta=True) + ':'
+                           + R.c(ks[-1], 'E', absoluta=True) + ',"Sí",'
+                           + R.c(ks[0], absoluta=True) + ':'
+                           + R.c(ks[-1], absoluta=True) + ')*'
+                           + self.p.ref('iva_soportado')) if ks else '=0'),
                     'D': texto_pct(self.p.ref('iva_soportado'),
-                                   'Al ', ' sobre todo menos la fianza y el '
-                                   'fondo de maniobra. Se recupera con el '
-                                   'modelo 303, pero hay que adelantarlo')})
+                                   'Al ', ' sobre las partidas marcadas con '
+                                   '«Sí» en la columna de IVA. Las tasas y '
+                                   'licencias no están sujetas y los seguros '
+                                   'están exentos (art. 20.Uno.16 LIVA). Se '
+                                   'recupera con el modelo 303, pero hay que '
+                                   'adelantarlo')})
         rej.add('caja', rot='NECESIDAD TOTAL DE CAJA AL ARRANQUE', bold=True,
                 fmt=motor.FMT_EUR0,
                 formulas={'B': (lambda R: '=' + R.c('total') + '+'
@@ -1108,15 +1305,33 @@ class Plan(object):
                           + self.p.ref('vida_obra') + '+'
                           + R.c('base_maquinaria') + '/'
                           + self.p.ref('vida_maquinaria')),
-                    'D': '="El fondo de maniobra, el stock y los imprevistos '
-                         "NO se amortizan: no son inmovilizado\""})
+                    # RT-15 — la nota describía un libro que no era éste:
+                    # nombraba stock e imprevistos, que entonces no existían
+                    # como fila. Ahora se GENERA con la cifra realmente
+                    # excluida, así que no puede volver a desfasarse.
+                    'D': (lambda R: '="No se amortizan el fondo de maniobra, '
+                          'la fianza, el alquiler previo, el marketing de '
+                          'lanzamiento, los gastos de constitución ni las '
+                          'existencias iniciales: no son inmovilizado. Suman '
+                          '"&TEXT(' + R.c('total') + '-' + R.c('base_obra')
+                          + '-' + R.c('base_maquinaria')
+                          + ',"#,##0")&" € de los "&TEXT(' + R.c('total')
+                          + ',"#,##0")&" € de inversión."')})
         self.pendientes.append(rej)
         motor.semaforo_num(ws, rej.c('caja') + ':' + rej.c('caja'),
                            verde_si=rej.c('caja') + '>0')
+        # el marcador de IVA es una lista cerrada: si el usuario teclea «si»
+        # sin tilde, el SUMIF deja de verlo y el IVA baja sin avisar (§1.5)
+        if con_iva:
+            motor.dv_lista(ws, rej.c(con_iva[0], 'E') + ':'
+                           + rej.c('fondo', 'E'), ['Sí', 'No'],
+                           titulo='Marca no válida',
+                           mensaje='Escribe «Sí» o «No»: de esta columna sale '
+                                   'el IVA soportado de la inversión.')
         fila = rej.ultima + 2
         for i, texto in enumerate(pie):
             motor.val(ws, 'A' + str(fila + i), texto, wrap=True)
-        motor.anchos(ws, {'A': 46, 'B': 15, 'C': 13, 'D': 58})
+        motor.anchos(ws, {'A': 46, 'B': 15, 'C': 13, 'D': 58, 'E': 12})
         motor.print_setup(ws, header_row=cab)
         return rej
 
@@ -1190,7 +1405,7 @@ class Plan(object):
                                                           for k in ks))
             else:
                 spec['valores']['E'] = peso
-                spec['verde'] = True
+                spec['verdes'] = ('E',)
             rej.add(clave, **spec)
         rej.add(rot='COSTES VARIABLES', bold=True)
         rej.add('cv_comida', rot='Coste de mercancía — comida',
@@ -1386,7 +1601,7 @@ class Plan(object):
             valor = u[2] if u else umbral
             texto = u[3] if u else comentario
             rej.add(clave, rot=rot, fmt=motor.FMT_PCT, fmt_E=fmt_um,
-                    valores={'E': valor, 'F': texto}, verde=True,
+                    valores={'E': valor, 'F': texto}, verdes=('E',),
                     formulas=dict(
                         (col, (lambda R, c=col, n=numerador:
                                '=' + R.c(n, c) + '/' + R.c('ingresos', c)))
@@ -1976,7 +2191,7 @@ class Plan(object):
                  'Entra en el capital: diluye, no se devuelve'),
                 ('subvencion', 'Subvenciones autonómicas o locales',
                  'Suelen cobrarse DESPUÉS de justificar el gasto')):
-            rej.add(clave, rot=rot, fmt=motor.FMT_EUR0, verde=True,
+            rej.add(clave, rot=rot, fmt=motor.FMT_EUR0, verdes=('B',),
                     valores={'B': 0, 'C': nota})
         rej.add('origen', rot='TOTAL ORIGEN DE FONDOS', bold=True,
                 fmt=motor.FMT_EUR0,
@@ -1987,7 +2202,7 @@ class Plan(object):
                 fmt=motor.FMT_EUR0,
                 formulas={'B': '=' + self.rej['inversion'].r('caja'),
                           'C': '="Inversión más el IVA que hay que adelantar"'})
-        rej.add('dif', rot='Diferencia (origen − usos)', bold=True,
+        rej.add('dif', rot='Diferencia (origen - usos)', bold=True,
                 fmt=motor.FMT_EUR0,
                 formulas={'B': (lambda R: '=' + R.c('origen') + '-'
                                 + R.c('usos')),
@@ -2360,15 +2575,31 @@ class Plan(object):
                 ws.merge_cells(start_row=fila, start_column=1, end_row=fila,
                                end_column=ancho)
             fila += 1
-        # el resaltado de fila del molde C1 se reancla al cuerpo nuevo
+        # RT-01 — el resaltado de fila del molde C1 se reancla al cuerpo
+        # nuevo. Ojo: hay que reescribir la FÓRMULA, no sólo el `sqref`.
+        # Reutilizar el objeto regla dejaba `sqref=A3:F73` con `$E4`, así que
+        # la fila 5 (primer ítem) se pintaba según E6 y la CABECERA según E4:
+        # el resaltado entero quedaba desplazado una fila, y en el fichero de
+        # producción (`sqref=A4:F59` con `$E4`) estaba BIEN. Es una regresión
+        # del motor, y por eso `motor.gate_cf_anclado` la vigila.
         for cf in list(ws.conditional_formatting):
             reglas = list(cf.rules)
             if not reglas or reglas[0].type != 'expression':
                 continue
+            regla = reglas[0]
+            formula = str((regla.formula or [''])[0])
+            primera = cab + 1
+            reanclada = re.sub(r'(\$?[A-Z]{1,3}\$?)(\d+)',
+                               lambda m: m.group(1) + str(primera), formula)
+            nueva = Rule(type='expression', formula=[reanclada],
+                         dxf=copy.copy(regla.dxf), stopIfTrue=regla.stopIfTrue)
             _purgar_cf_area(ws, cab, ws.max_row)
-            nuevo = ('A' + str(cab) + ':'
-                     + get_column_letter(ws.max_column) + str(fila))
-            ws.conditional_formatting.add(nuevo, reglas[0])
+            ws.conditional_formatting.add(
+                'A' + str(primera) + ':'
+                + get_column_letter(ws.max_column) + str(fila), nueva)
+            self.anota(ws.title + ': resaltado de fila reanclado a A'
+                       + str(primera) + ' con la fórmula «' + reanclada
+                       + '» (RT-01)')
             break
         return n
 
@@ -2517,6 +2748,22 @@ def demos(carpeta, demos_dir, pid, origen=None):
     path = _pf(carpeta)
     if path is None:
         return res
+    # RT-20 — `post()` filtra por molde y `demos()` no: al correr un producto
+    # de línea B, grupo_a intentaba demostrar sus fórmulas sobre un libro
+    # B-γ/B-δ, no encontraba las hojas de línea A y metía un FALLO en el
+    # informe. Los dos productos de línea B salían con exit 1 por un fallo
+    # que no era del producto, sino del alcance del módulo, y eso enmascara
+    # los fallos reales cuando llegue grupo_b.
+    import openpyxl as _px0
+    try:
+        _det = motor.detectar(_px0.load_workbook(path), os.path.basename(path))
+    except motor.MoldeDesconocido:
+        _det = {'molde': None}
+    if _det.get('molde') not in MOLDES:
+        res['fuera_de_alcance'] = {
+            'fichero': os.path.basename(path), 'molde': _det.get('molde'),
+            'motivo': 'grupo_a sólo demuestra los moldes ' + str(MOLDES)}
+        return res
     os.makedirs(demos_dir, exist_ok=True)
     wb, mapa = _mapa(path)
     nombres = dict((motor.norm(ws.title), ws.title) for ws in wb.worksheets)
@@ -2582,7 +2829,7 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'cuota': R(fin, 'Cuota anual durante la amortización'),
         'int1': R(fin, 'Intereses del año 1'),
         'cap2': R(fin, 'Devolución de principal del año 2'),
-        'dif': R(fin, 'Diferencia (origen − usos)'),
+        'dif': R(fin, 'Diferencia (origen - usos)'),
         'fondo_inv': R(inv, 'Colchón operativo hasta alcanzar el equilibrio'),
         'caja': R(inv, 'NECESIDAD TOTAL DE CAJA AL ARRANQUE'),
         'iva_inv': R(inv, 'IVA soportado sobre la inversión (recuperable)'),

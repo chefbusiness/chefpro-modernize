@@ -426,7 +426,8 @@ def gates_spec9(carpeta, nombres, dets):
     res = {'no_latinos': [], 'ortografia': [], 'formatos': [],
            'referencias': [], 'sin_formulas': [], 'sin_bio': [],
            'sin_version': [], 'hojas_sin_a4': [], 'checklists': [],
-           'sin_instrucciones': [], 'creator_mal': []}
+           'sin_instrucciones': [], 'creator_mal': [], 'nombres_hoja': [],
+           'cf_desanclado': []}
     for fname in nombres:
         path = os.path.join(carpeta, fname)
         wb = openpyxl.load_workbook(path)
@@ -435,6 +436,8 @@ def gates_spec9(carpeta, nombres, dets):
         res['ortografia'] += motor.gate_ortografia(wb, fname)
         res['formatos'] += motor.gate_formatos(wb, fname)
         res['referencias'] += motor.gate_referencias(wb, fname)
+        res['nombres_hoja'] += motor.gate_nombres_hoja(wb, fname)
+        res['cf_desanclado'] += motor.gate_cf_anclado(wb, fname)
         formulas = 0
         bio = version = False
         for ws in wb.worksheets:
@@ -824,7 +827,8 @@ def main():
     g9 = gates_spec9(carpeta, nombres, dets)
     for clave in ('no_latinos', 'ortografia', 'formatos', 'referencias',
                   'sin_formulas', 'sin_bio', 'sin_version',
-                  'sin_instrucciones', 'hojas_sin_a4', 'creator_mal'):
+                  'sin_instrucciones', 'hojas_sin_a4', 'creator_mal',
+                  'nombres_hoja', 'cf_desanclado'):
         log('  ' + clave + ': ' + str(len(g9[clave])))
     for c in g9['checklists']:
         log('  checklist ' + c['fichero'] + ' [' + c['molde'] + ']: '
@@ -904,6 +908,15 @@ def main():
     if g9['creator_mal']:
         fallos.append('§1.9: creator distinto de «AI Chef Pro» en '
                       + str(len(g9['creator_mal'])) + ' ficheros')
+    # RT-01 — un formato condicional de tipo `expression` cuya fórmula no
+    # arranca en la primera fila de su `sqref` pinta la tabla desplazada. Es
+    # BLOQUEANTE: en la v1.1 estaba bien y el motor lo rompió.
+    if g9['cf_desanclado']:
+        fallos.append('RT-01: ' + str(len(g9['cf_desanclado'])) + ' formatos '
+                      'condicionales con la fórmula desanclada del sqref ('
+                      + ', '.join(x['hoja'] + ' ' + x['celda'] + ' → '
+                                  + x['formula']
+                                  for x in g9['cf_desanclado'][:4]) + ')')
     if cen['exit'] != 0:
         fallos.append('censo-entregables --fail devolvió ' + str(cen['exit']))
     if demos:
@@ -934,7 +947,18 @@ def main():
                           + ' celdas con formato incoherente con su rótulo')
     if g9['ortografia']:
         pendientes.append('§1.7: quedan ' + str(len(g9['ortografia']))
-                          + ' textos sin tilde')
+                          + ' textos sin tilde ('
+                          + ', '.join(sorted(set(
+                              x.get('palabra', '') for x in g9['ortografia']
+                          ))[:12]) + ')')
+    # RC-29 — los nombres de pestaña de más de 31 caracteres los corrige el
+    # módulo de contenido de su producto (parrillero, T8): aquí se MIDEN para
+    # que el aviso de openpyxl deje de perderse entre la salida.
+    if g9['nombres_hoja']:
+        pendientes.append('RC-29: ' + str(len(g9['nombres_hoja']))
+                          + ' nombres de hoja de más de 31 caracteres ('
+                          + ', '.join(x['fichero'] + '!' + x['hoja']
+                                      for x in g9['nombres_hoja']) + ')')
     sin_prot = (demos.get('proteccion') or {}).get(
         'sin_proteger_por_falta_de_inputs') or []
     if sin_prot:

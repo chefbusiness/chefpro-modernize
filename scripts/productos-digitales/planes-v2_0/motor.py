@@ -622,14 +622,60 @@ def dv_numerica(ws, coordenadas, minimo=0, maximo=None, entero=False,
     return dv
 
 
-RX_DIAS = re.compile(r'd[ií]as?\b', re.I)
+#: ⚠️ RT-09 / RC-17 — «Cubiertos/día» CONTIENE «día», así que el patrón de
+#: los DÍAS DE APERTURA se tragaba el driver principal del modelo: quedaba
+#: topado en 365 y, al rechazar el valor, enseñaba «Los días van de 1 a 365».
+#: La regla se parte en dos: `RX_DIAS` sólo casa cuando el rótulo habla de un
+#: NÚMERO de días (los que abres, los de cobro, los de pago), y `RX_POR_DIA`
+#: desactiva la regla en cualquier rótulo que sea una magnitud POR día.
+RX_DIAS = re.compile(r'^d[ií]as\b|d[ií]as\s+(de|al|por|h[aá]biles|naturales)'
+                     r'|n[uú]mero de d[ií]as', re.I)
+RX_POR_DIA = re.compile(r'[/ ]\s*d[ií]a\b|al d[ií]a\b|por d[ií]a\b', re.I)
+#: RT-08 — recuentos y divisores: no admiten 0 ni decimales. Un 0 en «pagas»
+#: pone el coste de personal a cero y TODOS los semáforos en CUMPLE; un 0 en
+#: «vida útil» sube el resultado antes de impuestos, porque `IFERROR` convierte
+#: la división en `""` y `SUM()` ignora el texto. La guarda no protegía:
+#: escondía.
+RX_RECUENTO_DV = re.compile(
+    r'cubiertos|clientes|comensales|eventos|personas|unidades|pagas?\b|'
+    r'n[uú]mero de|vida [uú]til|plazo|carencia|meses|a[ñn]os|aforo|plazas',
+    re.I)
+#: Techo por magnitud, para que el mensaje de error diga la verdad. El del
+#: PLAZO es el número de filas del cuadro de amortización (RT-07): el cuadro
+#: tiene tantas como `PLAZO_MAX`, y por encima quedaría capital sin amortizar
+#: acusando al usuario de un error que es del generador.
+PLAZO_MAX = 15
+TECHOS_DV = (
+    (re.compile(r'mes de la paga', re.I), 1, 12,
+     'Mes del año, de 1 a 12.'),
+    (re.compile(r'meses (hasta|de alquiler)', re.I), 0, 24,
+     'Número entero de meses (0 a 24).'),
+    (re.compile(r'vida [uú]til', re.I), 1, 50,
+     'Vida útil en AÑOS ENTEROS (1 a 50). Los coeficientes máximos son los '
+     'de la tabla del art. 12.1 LIS.'),
+    (re.compile(r'plazo', re.I), 1, PLAZO_MAX,
+     'Plazo en años enteros: el cuadro de amortización de este libro llega '
+     'a ' + str(PLAZO_MAX) + ' años.'),
+    (re.compile(r'carencia', re.I), 0, PLAZO_MAX,
+     'Años enteros de carencia, de 0 a ' + str(PLAZO_MAX) + '. Si iguala o '
+     'supera al plazo, la hoja la anula.'),
+    (re.compile(r'pagas', re.I), 12, 16,
+     'Número de pagas al año: 12, 14 o las que fije tu convenio (12 a 16).'),
+)
+#: Cabeceras de columna que NO son de dato: pintarles una DV numérica hace que
+#: el comprador reciba «Escribe un número mayor o igual que 0» al escribir una
+#: nota (RT-10 / RC-16: D22, D29 y D42 de la hoja de Inversión).
+RX_COL_TEXTO = re.compile(r'^(notas?|comentarios?|observaciones|fuente|'
+                          r'responsable|plazo|descripci)', re.I)
 
 
 def validaciones(ws, informe=None):
     """§1.5 — DV sobre TODAS las celdas verdes, clasificadas por formato.
 
-    `€`/`#,##0` → importe >= 0; `%` → 0-1; rótulo con «días» → entero 1-365.
-    Las verdes de texto o con desplegable no se tocan.
+    `€`/`#,##0` → importe >= 0; `%` → 0-1; rótulo de «Días de apertura» →
+    entero 1-365; recuentos y divisores → entero >= 1 (RT-08). Las verdes de
+    texto, las de una columna de notas y las que ya llevan desplegable no se
+    tocan.
     """
     con_lista = set()
     for dv in ws.data_validations.dataValidation:
@@ -640,21 +686,35 @@ def validaciones(ws, informe=None):
                     for c in fila:
                         con_lista.add(c.coordinate)
     libres = set(getattr(ws, '_pl_negativos', set()))
-    importes, porcentajes, dias, negativos = [], [], [], []
+    importes, porcentajes, dias, negativos, cuentas = [], [], [], [], []
     for row in ws.iter_rows():
         for c in row:
             if not es_verde(c) or c.coordinate in con_lista:
                 continue
             if isinstance(c.value, str) and not c.value.startswith('='):
                 continue
+            if RX_COL_TEXTO.match(cabecera_de_columna(ws, c.column) or ''):
+                continue
             fmt = c.number_format or ''
-            rotulo = _rotulo_de_fila(ws, c.row)
+            rotulo = _rotulo_de_fila(ws, c.row) or ''
+            es_dia = bool(RX_DIAS.search(rotulo)) \
+                and not RX_POR_DIA.search(rotulo)
             if c.coordinate in libres:
                 negativos.append(c.coordinate)
             elif '%' in fmt:
                 porcentajes.append(c.coordinate)
-            elif RX_DIAS.search(rotulo or ''):
+            elif es_dia:
                 dias.append(c.coordinate)
+            elif RX_RECUENTO_DV.search(rotulo) and '€' not in fmt:
+                for rx, mn, mx, msg in TECHOS_DV:
+                    if rx.search(rotulo):
+                        cuentas.append((c.coordinate, mn, mx, msg))
+                        break
+                else:
+                    cuentas.append((c.coordinate, 1, 100000,
+                                    'Escribe un número ENTERO de 1 en '
+                                    'adelante: esta celda es un recuento y '
+                                    'varias fórmulas dividen entre ella.'))
             elif '€' in fmt or fmt.startswith('#,##0') or fmt == '0':
                 importes.append(c.coordinate)
     if importes:
@@ -667,15 +727,24 @@ def validaciones(ws, informe=None):
         dv_numerica(ws, dias, minimo=1, maximo=365, entero=True,
                     titulo='Días fuera de rango',
                     mensaje='Los días van de 1 a 365.')
+    grupos = {}
+    for coord, mn, mx, msg in cuentas:
+        grupos.setdefault((mn, mx, msg), []).append(coord)
+    for (mn, mx, msg), coords in sorted(grupos.items(),
+                                        key=lambda kv: kv[0][:2]):
+        dv_numerica(ws, coords, minimo=mn, maximo=mx, entero=True,
+                    titulo='Recuento no válido', mensaje=msg)
     if negativos:
         dv_numerica(ws, negativos, minimo=-1000000000000,
                     titulo='Importe no válido',
                     mensaje='Escribe un número (puede ser negativo).')
-    if informe is not None and (importes or porcentajes or dias):
+    if informe is not None and (importes or porcentajes or dias or cuentas):
         informe.append(ws.title + ': DV en ' + str(len(importes))
                        + ' importes, ' + str(len(porcentajes))
-                       + ' porcentajes y ' + str(len(dias)) + ' días')
-    return len(importes) + len(porcentajes) + len(dias) + len(negativos)
+                       + ' porcentajes, ' + str(len(dias)) + ' días y '
+                       + str(len(cuentas)) + ' recuentos')
+    return (len(importes) + len(porcentajes) + len(dias) + len(negativos)
+            + len(cuentas))
 
 
 # ==========================================================================
@@ -1382,7 +1451,18 @@ ERRATAS = (
     ('6. Frutas, herbas y garnish', '6. Frutas y garnish'),
     ('horno de convención', 'horno de convección'),
     ('mudança', 'mudanza'),
+    # RC-20 — abreviatura sin punto ni tilde en la nota del capital social
+    ('Capital social min 1', 'Capital social mín. 1'),
+    ('capital social min 1', 'capital social mín. 1'),
 )
+
+#: RC-31 — dos convenciones tipográficas conviviendo en el mismo libro.
+#: `EUR` detrás de una cifra pasa a `€` (el resto del libro ya usa `€`) y el
+#: signo menos matemático U+2212 —que NO está en WinAnsi y se pierde al
+#: exportar a PDF— pasa a guion normal. Los dos caracteres se referencian por
+#: ESCAPE, como exige la nota de U+202F/U+2011 de la familia.
+MENOS_MAT = u'\u2212'
+RX_EUR_TEXTO = re.compile(r'(?<=[\d\s])EUR\b')
 
 RX_PALABRA = re.compile(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+")
 #: Lo que la ortografía NO toca: URLs, correos y **slugs** (`plan-negocio-
@@ -1428,6 +1508,23 @@ TILDES_EXTRA = {
     'logistica': 'logística', 'domestico': 'doméstico',
     'domestica': 'doméstica', 'higienico': 'higiénico',
     'higienica': 'higiénica',
+    # RD-32 / RC-20 — nueve palabras que el gate daba por buenas y que el
+    # cliente ve en la hoja que imprime para el banco. Cinco de ellas
+    # convivían con su forma acentuada en la MISMA celda («Pagina básica»,
+    # «Constitución SL (notaria)»): por eso `gate_ortografia` incorpora
+    # además la heurística de convivencia (`_convive_acentuada`).
+    'camara': 'cámara', 'camaras': 'cámaras',
+    'frigorifico': 'frigorífico', 'frigorifica': 'frigorífica',
+    'frigorificos': 'frigoríficos', 'frigorificas': 'frigoríficas',
+    'estanteria': 'estantería', 'estanterias': 'estanterías',
+    'almacen': 'almacén',
+    'cafe': 'café', 'cafes': 'cafés',
+    'pagina': 'página', 'paginas': 'páginas',
+    'notaria': 'notaría',
+    'busqueda': 'búsqueda', 'busquedas': 'búsquedas',
+    'consejeria': 'consejería', 'consejerias': 'consejerías',
+    'codigo': 'código', 'codigos': 'códigos',
+    'clausula': 'cláusula', 'clausulas': 'cláusulas',
 }
 
 
@@ -1446,6 +1543,11 @@ def corregir_texto(texto):
     for malo, bueno in ERRATAS:
         if malo in texto:
             texto = texto.replace(malo, bueno)
+    # RC-31 — homogeneización tipográfica (ver MENOS_MAT / RX_EUR_TEXTO)
+    if MENOS_MAT in texto:
+        texto = texto.replace(MENOS_MAT, '-')
+    if 'EUR' in texto:
+        texto = RX_EUR_TEXTO.sub(u'\u20ac', texto)
     trozos = RX_URL_MAIL.split(texto)
     fuera = []
     for i, trozo in enumerate(trozos):
@@ -1598,6 +1700,42 @@ ANCHO_POR_DEFECTO = 8.43
 ALTO_LINEA = 15.0
 
 
+#: RC-15 / RT-11 — 86 celdas de TEXTO con formato de euro o de porcentaje: la
+#: columna «Notas» de la inversión, la de comentarios del P&L y la de los
+#: escenarios. `gate_formatos` no las veía porque saltaba las celdas de texto
+#: (`motor.py`, «if not (_es_numero(v) or _es_formula(v))»), así que el run
+#: informaba «formatos: 0» y era un verde falso.
+RX_FORMULA_TEXTO = re.compile(r'^=\s*(IFERROR\s*\(\s*)?"'      # ="…"
+                              r'|&\s*TEXT\s*\(', re.I)
+
+
+def _devuelve_texto(v):
+    """¿La celda imprime TEXTO? Vale para el literal y para la fórmula."""
+    if isinstance(v, str) and not v.startswith('='):
+        return True
+    if isinstance(v, str) and RX_FORMULA_TEXTO.search(v):
+        return True
+    return False
+
+
+def formatos_texto(ws, informe=None):
+    """Pone `General` en toda celda cuyo contenido se imprime como texto."""
+    n = 0
+    for row in ws.iter_rows():
+        for c in row:
+            fmt = c.number_format or ''
+            if fmt in ('General', '@') or not _devuelve_texto(c.value):
+                continue
+            if '\u20ac' not in fmt and '%' not in fmt:
+                continue
+            c.number_format = 'General'
+            n += 1
+    if n and informe is not None:
+        informe.append(ws.title + ': ' + str(n) + ' celdas de texto con '
+                       'formato numérico → General (§1.4)')
+    return n
+
+
 def _ancho_de(ws, col):
     d = ws.column_dimensions.get(get_column_letter(col))
     if d is not None and d.width:
@@ -1630,19 +1768,29 @@ def altos_y_wrap(ws, informe):
             if actual is None or actual < alto - 0.01:
                 ws.row_dimensions[r].height = round(alto, 1)
                 n += 1
-    # Filas de datos con wrap y alto fijo insuficiente: se sueltan.
+    # RT-19 / RC-04 / RC-23 — §1.8 se aplicaba SÓLO a las combinadas y a las
+    # filas de datos les ponía un tope de 34 pt. Las seis notas legales que
+    # justifican la v2.0 tienen 123-221 caracteres en una columna de 28: con
+    # 34 pt se leen DOS líneas de las ocho que necesitan, y el cliente tiene
+    # que ensanchar la fila a mano en un libro protegido. Ahora la norma
+    # (ceil(len/ancho) × 15 pt) vale para toda celda con `wrapText`, esté
+    # combinada o no, sin tope.
     for r in range(1, ws.max_row + 1):
-        dim = ws.row_dimensions.get(r)
-        if dim is None or not dim.height or dim.height > 30:
-            continue
-        con_wrap = False
-        largo = 0
+        alto = 0.0
         for c in ws[r]:
-            if isinstance(c.value, str) and c.alignment.wrap_text:
-                con_wrap = True
-                largo = max(largo, len(c.value))
-        if con_wrap and largo > 60:
-            ws.row_dimensions[r].height = 34
+            if not isinstance(c.value, str) or not c.alignment.wrap_text:
+                continue
+            if len(c.value) < 40:
+                continue
+            ancho = _ancho_de(ws, c.column)
+            lineas = max(1, int(math.ceil(len(c.value)
+                                          / max(8.0, ancho * 1.05))))
+            alto = max(alto, ALTO_LINEA * lineas)
+        if not alto:
+            continue
+        actual = ws.row_dimensions[r].height
+        if actual is None or actual < alto - 0.01:
+            ws.row_dimensions[r].height = round(alto, 1)
             n += 1
     if n and informe is not None:
         informe.append(ws.title + ': ' + str(n) + ' altos ajustados (§1.8)')
@@ -2118,6 +2266,27 @@ RX_SIN_TILDE = re.compile(
     r'\b(Ano|anos|Anos|Espana|Diseno|resenas|desempeno|alergenos|danos|'
     r'Cataluna|Cumpleanos|Analisis|Constitucion|Tramite|Nominas|'
     r'Amortizacion|Comision|Gestoria|Bolleria)\b')
+#: RD-32 / RC-20 — la lista cerrada del gate se quedaba corta: nueve palabras
+#: sin tilde seguían vivas en el fichero que el cliente imprime para el banco
+#: («Camara frigorifica», «Estanterias inox almacen», «Molinillo cafe»,
+#: «Pagina básica», «notaria»). Van en su propio patrón, sin distinguir
+#: mayúsculas, porque aparecen tanto en rótulo como en nota.
+RX_SIN_TILDE_2 = re.compile(
+    r'(?i)\b(camaras?|frigorific[oa]s?|estanterias?|almacen|cafes?|paginas?|'
+    r'notaria|busquedas?|consejerias?|codigos?|clausulas?)\b')
+#: RC-20 — heurística de CONVIVENCIA: la palabra sin tilde que comparte forma
+#: normalizada con otra ACENTUADA del mismo libro. Es la que caza los casos
+#: que ninguna lista cerrada prevé («Pagina básica» tiene la tilde dos
+#: palabras más allá). Se excluyen los homógrafos legítimos del español, que
+#: son pares reales y no erratas.
+HOMOGRAFAS = frozenset((
+    'publica', 'publico', 'publicas', 'publicos', 'practica', 'practicas',
+    'critica', 'criticas', 'termino', 'terminos', 'continuo', 'continua',
+    'medico', 'valido', 'calculo', 'calculos', 'trabajo', 'numero',
+    'deposito', 'depositos', 'limite', 'limites', 'titulo', 'titulos',
+    'transito', 'estimulo', 'domicilio', 'ejercito', 'liquido', 'liquidos',
+    'capitulo', 'capitulos', 'articulo', 'articulos', 'intimo', 'animo',
+))
 
 
 def gate_no_latinos(wb, fname):
@@ -2134,10 +2303,32 @@ def gate_no_latinos(wb, fname):
     return fuera
 
 
+def _acentuadas_del_libro(wb):
+    """Formas ACENTUADAS presentes en el libro, indexadas por forma sin tilde.
+
+    Sirve a la heurística de convivencia de `gate_ortografia` (RC-20): si el
+    libro escribe «Página» en una celda y «Pagina» en otra, la segunda es una
+    errata aunque no esté en ninguna lista cerrada.
+    """
+    mapa = {}
+    for ws in wb.worksheets:
+        for row in ws.iter_rows():
+            for c in row:
+                v = c.value
+                if not isinstance(v, str):
+                    continue
+                for palabra in RX_PALABRA.findall(v):
+                    if RX_YA_ACENTUADA.search(palabra) or 'ñ' in palabra.lower():
+                        mapa.setdefault(norm(palabra), palabra)
+    return mapa
+
+
 def gate_ortografia(wb, fname):
     fuera = []
+    acentuadas = _acentuadas_del_libro(wb)
     for ws in wb.worksheets:
-        if RX_SIN_TILDE.search(ws.title or ''):
+        if RX_SIN_TILDE.search(ws.title or '') \
+                or RX_SIN_TILDE_2.search(ws.title or ''):
             fuera.append({'fichero': fname, 'hoja': ws.title, 'celda': '(hoja)',
                           'texto': ws.title})
         for row in ws.iter_rows():
@@ -2146,13 +2337,34 @@ def gate_ortografia(wb, fname):
                 if not isinstance(v, str) or v.startswith('='):
                     continue
                 limpio = RX_URL_MAIL.sub(' ', v)
-                m = RX_SIN_TILDE.search(limpio)
+                m = RX_SIN_TILDE.search(limpio) or RX_SIN_TILDE_2.search(limpio)
                 if m:
                     if norm(m.group(0)) == 'campana':
                         continue
                     fuera.append({'fichero': fname, 'hoja': ws.title,
                                   'celda': c.coordinate,
                                   'palabra': m.group(0), 'texto': v[:80]})
+                    continue
+                # heurística de convivencia (RC-20)
+                for palabra in RX_PALABRA.findall(limpio):
+                    clave = norm(palabra)
+                    if len(clave) < 5 or clave in HOMOGRAFAS:
+                        continue
+                    # «campana extractora» convive a propósito con «Campaña
+                    # lanzamiento RRSS» en el mismo libro: es la excepción
+                    # que documenta §1.7 y que un barrido genérico rompe.
+                    if clave.startswith('campana'):
+                        continue
+                    if RX_YA_ACENTUADA.search(palabra) or 'ñ' in palabra.lower():
+                        continue
+                    gemela = acentuadas.get(clave)
+                    if gemela and norm(gemela) == clave:
+                        fuera.append({'fichero': fname, 'hoja': ws.title,
+                                      'celda': c.coordinate,
+                                      'palabra': palabra,
+                                      'convive_con': gemela,
+                                      'texto': v[:80]})
+                        break
     return fuera
 
 
@@ -2163,6 +2375,17 @@ def gate_formatos(wb, fname):
         for row in ws.iter_rows():
             for c in row:
                 v, fmt = c.value, (c.number_format or '')
+                # RT-11 — el `continue` para las celdas de TEXTO dejaba fuera
+                # del gate las 51 notas con formato de euro que el propio
+                # motor escribía. Ahora se miran ANTES de saltarlas.
+                if _devuelve_texto(v) and ('\u20ac' in fmt or '%' in fmt):
+                    fuera.append({'fichero': fname, 'hoja': ws.title,
+                                  'celda': c.coordinate,
+                                  'tipo': 'texto con formato numérico',
+                                  'rotulo': (_rotulo_de_fila(ws, c.row)
+                                             or '')[:50],
+                                  'formato': fmt})
+                    continue
                 if not (_es_numero(v) or _es_formula(v)) or c.column == 1:
                     continue
                 rot = _rotulo_de_fila(ws, c.row)
@@ -2192,6 +2415,54 @@ def gate_formatos(wb, fname):
                                   'celda': c.coordinate,
                                   'tipo': 'recuento con €',
                                   'rotulo': rot[:50], 'formato': fmt})
+    return fuera
+
+
+#: RC-29 — Excel corta los nombres de pestaña en 31 caracteres y openpyxl
+#: sólo avisa por `UserWarning`, que se pierde entre la salida del run. Dos
+#: hojas del checklist de parrillero se pasan (37 y 40 caracteres): al
+#: reescribir el fichero, Excel puede pedir reparación.
+LIMITE_TITULO = 31
+
+
+def gate_nombres_hoja(wb, fname):
+    fuera = []
+    for ws in wb.worksheets:
+        if len(ws.title or '') > LIMITE_TITULO:
+            fuera.append({'fichero': fname, 'hoja': ws.title,
+                          'celda': '(hoja)', 'longitud': len(ws.title),
+                          'limite': LIMITE_TITULO})
+    return fuera
+
+
+#: RT-01 — un formato condicional de tipo `expression` cuya fórmula NO empieza
+#: en la primera fila del `sqref` pinta la tabla DESPLAZADA. Es la regresión
+#: que el motor introdujo al reanclar el resaltado del checklist: el fichero
+#: de producción tenía `sqref=A4:F59` con `$E4`, y el generado `sqref=A3:F73`
+#: con `$E4`, así que la cabecera se pintaba según un ítem.
+RX_FILA_FORMULA = re.compile(r'\$?[A-Z]{1,3}\$?(\d+)')
+
+
+def gate_cf_anclado(wb, fname):
+    fuera = []
+    for ws in wb.worksheets:
+        for cf in ws.conditional_formatting:
+            filas = [CellRange(str(r)).min_row for r in cf.sqref.ranges]
+            if not filas:
+                continue
+            primera = min(filas)
+            for regla in cf.rules:
+                if regla.type != 'expression' or not regla.formula:
+                    continue
+                m = RX_FILA_FORMULA.search(str(regla.formula[0]))
+                if not m:
+                    continue
+                if int(m.group(1)) != primera:
+                    fuera.append({'fichero': fname, 'hoja': ws.title,
+                                  'celda': str(cf.sqref),
+                                  'formula': str(regla.formula[0])[:60],
+                                  'fila_sqref': primera,
+                                  'fila_formula': int(m.group(1))})
     return fuera
 
 
@@ -2467,6 +2738,7 @@ def cerrar(wb, fname, det, pid, informe, detalle=None, proteger_hojas=True):
                     c.value = None
     ws_ins, _ = asegurar_instrucciones(wb, det, pid, informe)
     for ws in wb.worksheets:
+        formatos_texto(ws, informe)
         validaciones(ws, informe)
         altos_y_wrap(ws, informe)
         print_setup(ws)
