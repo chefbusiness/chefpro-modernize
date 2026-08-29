@@ -464,3 +464,8 @@ aparcado «para John». **Decisión tomada (memoria `project_capa-comercial-hone
 JSON-LD de las 44 landings; (2) testimonios neutralizados (sin credenciales identificables ni funciones inexistentes; rol genérico); (3) fuera anclas de
 precio permanentes (tachado, -N %, «HOY», «lanzamiento»); precio real + pago único/acceso vitalicio; «valorado en» sólo si el bonus se vende aparte.
 Ejecución: pasada transversal propia (inventario → plantillas → datos → refutador → deploy en la nube → gate curl), en paralelo a las construcciones.
+**Revisión 05:15 (John, captura de la SERP de /kit-tareas: «4,8 ★ (8.847) · Gratis · Negocios/Productividad»):** esas estrellas son del
+`SoftwareApplication` GLOBAL de `BaseLayout.astro:117-176` (`ratingCount` = usuarios, hoy 9.372; oferta «Gratis»), no del `Product` del kit (4,9/10).
+**John: no quitar reseñas ni estrellas** → decisión 1 revocada (nada de ratings se toca), decisión 2 en pausa (se le listan los testimonios con
+credenciales identificables), **decisión 3 sigue** (anclas de precio; reversible). Riesgo residual anotado: ratings no acreditables + «Gratis» en
+la ficha de un producto de 14 €.
