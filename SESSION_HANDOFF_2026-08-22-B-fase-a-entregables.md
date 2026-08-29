@@ -504,3 +504,14 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   crítico → canario/APPLY con `PLANES_APPLY=1` → censo → gate offline → gate-no-latinos → commit rutas explícitas → push → gate LIVE → T7 hermanos.
   Caso base medido (tras fixes puede variar): inversión 179.164,80 €, facturación año 1 451.360 €, resultado neto 47.911 €, personal 33,66 % (techo 35 %),
   64 ítems de checklist en 7 fases, equilibrio de caja 62,93 cubiertos/día.
+- **Guías (`guia-restaurante-gastronomico`), workflow `wf_1b6009dd-272` terminado (11 agentes, 5,5 h):** motor sobre 8/8 productos (111 xlsx, 250
+  hojas protegidas, idempotencia 0, censo 0), 1.883 fórmulas en el representante (0 xlsx sin fórmulas; antes 4), 390 ítems en 8 checklists, cadena de ids
+  completa (84 del R1 + 100 de refutación, 0 fugas). **Crítico `auditorias/guias-v2-critico.json`: NO** — B-01 dos facturaciones del año 1 (Proyección
+  2.276.736 vs cash flow 2.049.062 con rampa) → decisión: rampa parametrizada en Proyección; B-02 dos costes anuales de brigada (43,33 h/puesto) → sexto
+  día «L» + nota; B-03 umbral de popularidad global vs por familia → reetiquetar; B-04 idempotencia rota en panadería por etiquetas sin «(%)»; B-05 no
+  existe `--fichero` para el canario → se añade. Avisos: molde D (dark-kitchen) sin documentar; demos de checklist que devuelven None y pasan; necesidad
+  de financiación 1.889.944 € (fondo de maniobra 6 meses = 934.320 €) por encima del «Rango Alto» de la calculadora CAPEX (1.305.000) → decisión: la
+  calculadora incorpora preapertura y fondo de maniobra como inputs con los valores del plan. **Fixer opus en curso** → `auditorias/guias-v2-crit-correccion.json`.
+  T7 (documentos: `documentos.py` + guiones + bridge.py) y T8 (capa de producto) siguen sin existir: van después del APPLY del representante.
+- **Kits CB: workflow `kit-tareas-cb-v2-workflow.js` LANZADO** (runId `wf_1b4fe05c-716`) al liberarse el hueco térmico; auto-commit nohup `autocommit-cb.sh`
+  sobre `kit-tareas-v2_0/`.
