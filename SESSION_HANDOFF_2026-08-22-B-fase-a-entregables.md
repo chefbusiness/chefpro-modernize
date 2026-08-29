@@ -491,3 +491,16 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   `pro-prompts-ebook` y `mega-pack-tareas` van a mano en el `.astro`. 4 badges con aritmética falsa: plan-financiero −79 % vs «72 %», dark-kitchen −73 %
   vs «71 %», **eBook «−90 %» cuando 50→9 € es −82 %**, guía gastronómica (bonus + precio ≠ priceOld).
 - Ratings: se mantienen (decisión de John); con `omitGlobalApp` la SERP pasará a usar el `Product` de cada landing.
+
+## 16. Mañana del 29-ago — planes A: crítico NO LISTO (6 bloqueos), fixer en curso · guías construyendo · CB en espera
+
+- **Planes A (`plan-negocio-bar-restaurante`), workflow `wf_bfa5c64b-148` terminado (9 agentes, 4,3 h):** motor clasifica los 30 xlsx en 12 moldes con
+  abort; 219 fórmulas nuevas; 1.165 textos acentuados; hoja «0. Supuestos» + «6. Tesorería» + «7. Financiación»; refutación 96 ids → 85 resueltos / 11
+  a otras tandas; ronda 2 listo=false (2 mal resueltos, 3 nuevos); **crítico `auditorias/planes-v2-critico.json`: NO** — CRIT-01 tesorería en blanco
+  meses 4-12 (`""` sumado a número; payback 2,98 en vez de 2,58), CRIT-02 existencias (12.000 €) amortizadas, CRIT-03 prosa 178.894,80 vs medido
+  179.164,80 €, CRIT-04 informe del motor sin cruce de ids (17 de 74 sin cerrar), CRIT-05 gate de ortografía con huecos («Disenador», «Critico»),
+  CRIT-06 dos saldos de caja del año 1 (Escenarios!C26 118.312 vs Tesorería!M22 166.220 → decisión: realista lee Tesorería; pesimista/optimista
+  rotulados «estimación»). **Fixer opus en curso** → informe `auditorias/planes-v2-crit-correccion.json`. Después: mi dry-run + celdas del paso 3 del
+  crítico → canario/APPLY con `PLANES_APPLY=1` → censo → gate offline → gate-no-latinos → commit rutas explícitas → push → gate LIVE → T7 hermanos.
+  Caso base medido (tras fixes puede variar): inversión 179.164,80 €, facturación año 1 451.360 €, resultado neto 47.911 €, personal 33,66 % (techo 35 %),
+  64 ítems de checklist en 7 fases, equilibrio de caja 62,93 cubiertos/día.
