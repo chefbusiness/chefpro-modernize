@@ -1,0 +1,671 @@
+{
+ "productId": "plan-negocio-bar-restaurante",
+ "familia": "plan",
+ "inventario": {
+  "productId": "plan-negocio-bar-restaurante",
+  "ficheros": [
+   {
+    "nombre": "plan-de-negocio-bar-restaurante.docx",
+    "tipo": "docx",
+    "bytes": 53855,
+    "resumen": "10 secciones (Resumen Ejecutivo … Plan de Accion), 148 párrafos. Sección 8 (Plan Financiero) narra un modelo de negocio DISTINTO al del Excel adjunto: ticket 22€ (Excel: 18,50€), 50 plazas/65% ocupación/1,8 rotaciones (Excel: 55 cubiertos/día fijos), facturación Año1 350.000€ (Excel: 315.425€), break-even 40 cubiertos/día = 321.200€/año (Excel: 57,9 cubiertos/día = 332.075€/año), inversión desglosada en partidas que no existen en el Excel (terraza 6.000€, stock inicial 5.000€) y préstamo de 80.000€/7-10 años que no aparece en ningún otro fichero."
+   },
+   {
+    "nombre": "plan-financiero-bar-restaurante.xlsx",
+    "tipo": "xlsx",
+    "bytes": 16889,
+    "hojas": [
+     "1. Inversion Inicial",
+     "2. P&L 3 Anos",
+     "3. Punto Equilibrio",
+     "4. Escenarios",
+     "5. Personal",
+     "Instrucciones"
+    ],
+    "formulas": 0,
+    "resumen": "CERO celdas de tipo fórmula (data_type='f') en las 6 hojas: los 132.160€ de inversión, los 315.425€/392.925€/476.625€ de ingresos, los totales de P&L y los ratios están todos tecleados como número literal, no calculados. Las dos etiquetas que en v1.0 abrían con #¿NOMBRE? (celdas C14/C15 de '3. Punto Equilibrio') ya están correctamente guardadas como texto (data_type='s') tal como dice el changelog v1.1 — verificado, no es un hallazgo nuevo."
+   },
+   {
+    "nombre": "checklist-apertura-bar-restaurante.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9771,
+    "hojas": [
+     "Checklist Apertura"
+    ],
+    "formulas": 0,
+    "resumen": "61 filas, 6 fases de trámites (Constitución, Local/Licencias, RRHH, Marketing, Operación); contenido plausible, sin problemas de lógica detectados."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "plan-financiero",
+    "title": "Plan Financiero Excel",
+    "ruta": "src/pages/PlanNegocioBarRestauranteDashboard.tsx:17"
+   },
+   {
+    "key": "plan-negocio",
+    "title": "Plan de Negocio (Word)",
+    "ruta": "src/pages/PlanNegocioBarRestauranteDashboard.tsx:24"
+   },
+   {
+    "key": "checklist-apertura",
+    "title": "Checklist de Apertura",
+    "ruta": "src/pages/PlanNegocioBarRestauranteDashboard.tsx:31"
+   }
+  ],
+  "landing": {
+   "productName": "Plan de Negocio: Bar-Restaurante — Plan Financiero Excel, Inversión Inicial y Checklist Apertura",
+   "cifras_prometidas": [
+    "price 35.00€ (priceOld 120€)",
+    "~80K-150K EUR inversión (hero); ~133K EUR de referencia (grid:141)",
+    "P&L previsional a 3 años con fórmulas (hero checkItems)",
+    "6 hojas en el Plan Financiero Excel (grid:135) — coincide con el fichero",
+    "50+ trámites y licencias España 2026 (hero, email)",
+    "81K+ restaurantes activos en España (grid:167)"
+   ],
+   "entregables_prometidos": [
+    "Plan financiero Excel (6 hojas, P&L 3 años, inversión inicial, punto equilibrio, escenarios, personal, instrucciones)",
+    "Plan de Negocio Word",
+    "Checklist de Apertura (50+ trámites)"
+   ],
+   "bonus": [],
+   "faqs": [
+    "¿Puedo modificar las cifras del Excel? → 'las fórmulas se recalculan automáticamente' (línea 76 y 235, casi idéntico duplicado)",
+    "Diferencia con planes gratuitos → cifras de mercado España 2026, ratios, checklist"
+   ]
+  },
+  "gate": "Ambos gates automáticos en verde: gate-flujo-postpago.py --offline --only plan-negocio-bar-restaurante → 3 ficheros/3 cards, dl_ok/landing/access/library sin verificar en modo offline, 0 issues, 1 aviso (sección D webhook sin verificar offline, esperado). censo-entregables.py --only plan-negocio-bar-restaurante --fail --quiet → 3 ficheros censados (2 xlsx, 1 docx), OK: 0 defectos. Ninguno de los dos detecta los hallazgos de este informe porque son de lógica de negocio/coherencia narrativa, no de estructura de fichero.",
+  "notas": [
+   "HALLAZGO 1 (crítico, contenido): astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx §8 'Plan Financiero' describe un negocio distinto al de plan-financiero-bar-restaurante.xlsx en TODAS sus cifras clave: ticket medio (22€ vs 18,50€ hoja '2. P&L 3 Anos'!C8), metodología de ingresos (plazas×ocupación×rotación vs cubiertos/día×310 días), facturación Año1 (350.000€ vs 315.425€ hoja '2. P&L 3 Anos'!B10), punto de equilibrio (40 cubiertos/321.200€ vs 57,9 cubiertos/332.075€ hoja '3. Punto Equilibrio'!B14-B16), y desglose de inversión inicial (docx incluye 'terraza 6.000€' y 'stock inicial 5.000€' que no existen en ninguna fila de hoja '1. Inversion Inicial'; en cambio el xlsx tiene 'fianza alquiler 3 meses 9.000€' y 'fondo de maniobra 30.000€' que el docx no menciona con esa cifra — dice 25.000€). Un cliente que compra el pack por 35€ para presentar a un banco recibe dos documentos que se contradicen entre sí en la cifra más importante (facturación y break-even). Esto es anterior a la Fase A (no es un problema de caché/formato) y no lo detecta ningún gate automático porque cada fichero es internamente válido.",
+   "HALLAZGO 2 (alto, promesa vs producto): plan-financiero-bar-restaurante.xlsx tiene 0 celdas con fórmula real en las 6 hojas (verificado por cell.data_type=='f', no por texto que empiece con '='). Todos los totales, ratios y el P&L están tecleados como números fijos. Sin embargo la landing (astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:76 y :235 FAQ '¿Puedo modificar las cifras del Excel?' → 'las fórmulas se recalculan automáticamente'; también :122 'con fórmulas' y :135 'Todas las celdas editables con fórmulas' y :166 'fórmulas activas... Cambias el alquiler o el ticket medio y todo se recalcula automáticamente') promete explícitamente lo contrario: que cambiar un input recalcula el resto. En la práctica, si el cliente cambia el alquiler en '1. Inversion Inicial' o el ticket medio en '2. P&L 3 Anos'!B8, ningún otro número del libro se mueve — tiene que recalcular todo a mano pese a la promesa. Esto sí es responsabilidad de contenido/lógica, no de la Fase A determinista (que solo tocó caché, A4, metadata, bio y la etiqueta rota).",
+   "Verificado y descartado como hallazgo: las celdas '3. Punto Equilibrio'!C14 y C15 (antes '#¿NOMBRE?') están guardadas correctamente como texto (data_type='s'), tal como certifica productos-changelog.ts:970 v1.1 — la reparación de Fase A es correcta, no hay regresión.",
+   "Menor: la inversión inicial total real del xlsx es 132.160€ ('1. Inversion Inicial'!B46) pero el docx §8 y algún punto de la landing redondean a '~133K EUR' (grid:141) — diferencia de 840€, tolerable, no se reporta como hallazgo aparte del contraste mayor del Hallazgo 1.",
+   "No se tocó/edito ningún fichero; inventario puramente de lectura. istats antes de cada barrido: 50,0°C → 44,75°C → 45,13°C, todo el tiempo muy por debajo del límite de 65°C; scripts Python ejecutados en serie, sin Playwright ni build."
+  ]
+ },
+ "rondas": {
+  "R1": {
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + verificación XML de <f>, recálculo aritmético manual de las 6 hojas, formatos numéricos, validaciones/CF, anchos vs wrap, ortografía)",
+    "veredicto": "no listo",
+    "motivo": "El libro no es un modelo financiero: es una hoja de resultados tecleados a mano (0 celdas de tipo fórmula en las 6 hojas, verificado a nivel XML: 0 etiquetas <f> en sheet1..sheet6.xml), y sus tres hojas de cálculo no se hablan entre sí. La misma variable toma tres valores distintos según la hoja: el coste variable es el 44,2 % de los ingresos en el P&L, el 42 % en Punto Equilibrio y el 55 % en Escenarios; los costes fijos anuales son 198.108,5 € en el P&L y 192.600 € en las otras dos; y el coste de personal es 115.200 € en el P&L y 209.171,2 € en la hoja a la que el propio P&L remite («ver hoja Personal»), 93.971 € de diferencia que convierten un resultado de -22.170 € en uno de -116.141 €. El mismo año 1, con los mismos inputs, arroja -22.169,98 € en el P&L y -50.658,75 € en Escenarios. A eso se suman dos errores de cálculo propios (el food cost del 30 % se aplica sobre los ingresos TOTALES y encima se cobra aparte el coste de bebidas, doble contando 33.120 €; el Impuesto de Sociedades usa el 25 % en años 2-3 e ignora la BIN del año 1) y una promesa de landing repetida cinco veces —«las fórmulas se recalculan automáticamente»— que el fichero no puede cumplir en ninguna celda. Además el «Plan de Financiación (ICO, ENISA, business angels, subvenciones)» que la landing y el dashboard venden como entregable no existe en ninguno de los dos ficheros: ENISA, «business angel» y «subvenci» aparecen 0 veces en el .docx y no hay hoja de financiación en el .xlsx. Un cliente que pague 35 € para llevar esto a un banco entrega un documento cuyas cifras no cuadran entre sí y no puede recalcularse.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A20:B20 vs '5. Personal'!F13",
+      "hallazgo": "El P&L remite explícitamente a la hoja de Personal y usa un número que no es el de esa hoja: 93.971,20 € menos. Con la cifra correcta el año 1 pasa de -22.170 € a -116.141 € y el negocio es inviable.",
+      "evidencia": "'2. P&L 3 Anos'!A20 = 'Nominas + Seg. Social (ver hoja Personal)' con B20 = 115200. La hoja referida suma en '5. Personal'!F13 = 209171.2 (comprobado: F6 41087,2 + F7 37352 + F8 29881,6 + F9 24278,8 + F10 28014 + F11 48557,6 = 209171,2, y E13 14940,8 × 14 pagas = 209171,2). Diferencia 93.971,20 €. Ratio '2. P&L 3 Anos'!B39 'Coste personal / Ingresos' = 0,3652 usando 115.200; con los 209.171,2 reales sería 0,6631 (66,3 %), casi el doble del umbral que el propio fichero fija en 'Instrucciones'!A13 ('Coste personal: no superar 35% de los ingresos'). El .docx agrega una TERCERA plantilla: «El equipo necesario para la operación contempla entre 8 y 10 personas» frente a las 7 de '5. Personal'!B13 y a las ~4,5 que implican los 115.200 € del P&L.",
+      "fix": "Decidir la plantilla real y propagarla: poner '2. P&L 3 Anos'!B20 = ='5. Personal'!$F$13 (y C20/D20 con el incremento anual que se quiera aplicar). Si 209.171 € no es asumible con 55 cubiertos/día, reducir la plantilla de '5. Personal' (p. ej. 5 personas) hasta que B39 quede por debajo del 35 % que ordena 'Instrucciones'!A13, y alinear el .docx a esa misma plantilla."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'4. Escenarios'!C12 vs '2. P&L 3 Anos'!B32",
+      "hallazgo": "El escenario 'Realista' usa exactamente los mismos inputs que el año 1 del P&L y da un resultado 28.489 € distinto. La hoja aplica un coste variable oculto del 55 %/55 %/50 % que no coincide con ningún dato mostrado, y la fila 'Food cost %' es decorativa: cambiarla no explica ni afecta a ningún resultado.",
+      "evidencia": "'4. Escenarios' C6=55, C7=18,5, C8=310, C9=315425 — idénticos a '2. P&L 3 Anos' B7/B8/B9/B10. Pero C12 = -50658,75 mientras '2. P&L 3 Anos'!B32 = -22169,975. Despejando el coste variable implícito de cada columna: B (198000+103500-192600)/198000 = 0,55; C (315425+50658,75-192600)/315425 = 0,55; D (470400-42600-192600)/470400 = 0,50. Es decir, pesimista y realista comparten el 55 % pese a que la fila 10 declara food cost 32 % y 30 % respectivamente, y el P&L trabaja con un 44,2 % ((139486,475/315425)). El único comentario, '4. Escenarios'!A14, sólo advierte que «Los costes fijos son constantes en los 3 escenarios» y no menciona ningún cambio de tasa variable.",
+      "fix": "Reconstruir la hoja 4 con fórmulas que partan de las mismas tasas del P&L: fila 9 = B6*B7*B8; añadir filas explícitas de food cost, bebidas, consumibles y delivery calculadas sobre la fila 9 con las mismas tasas que '2. P&L 3 Anos'; fila 11 = ='2. P&L 3 Anos'!$B$30; fila 12 = fila9 - total variables - fila11. Verificar que la columna 'Realista' reproduce exactamente '2. P&L 3 Anos'!B32."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "las 6 hojas (xl/worksheets/sheet1..sheet6.xml) vs astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:76,122,135,166,235",
+      "hallazgo": "Cero celdas de fórmula en todo el libro, confirmado a nivel XML. La landing promete cinco veces que las fórmulas se recalculan solas. El cliente que cambie un input no verá moverse ni un número.",
+      "evidencia": "`grep -o '<f[ >]' xl/worksheets/sheetN.xml | wc -l` devuelve 0 para las seis hojas; no existe xl/calcChain.xml. Todas las celdas de resultado son data_type='n' literal: B10=315425, B16=139486.475, B30=198108.5, B32=-22169.975, B37=0.5577824363953396, '3. Punto Equilibrio'!B14=17950. Frente a eso: .ts:76 y .ts:235 '¿Puedo modificar las cifras del Excel?' → «todas las celdas son editables y las fórmulas se recalculan automáticamente»; .ts:122 «P&L previsional a 3 años con fórmulas»; .ts:135 «Todas las celdas editables con fórmulas»; .ts:166 «fórmulas activas y celdas editables. Cambias el alquiler o el ticket medio y todo se recalcula automáticamente». Prueba directa: cambiar '2. P&L 3 Anos'!B8 de 18,5 a 25 deja B10 en 315425 y B32 en -22169,975. Y 'Instrucciones'!A7 lo repite dentro del propio fichero: «PUNTO DE EQUILIBRIO: Se calcula automaticamente».",
+      "fix": "Cablear el libro entero con fórmulas reales: B10=B7*B8*B9; B12=B10*$tasa_food; B16=SUMA(B12:B15); B17=B10-B16; B30=SUMA(B19:B29); B32=B17-B30; B37=SI(B10=0;\"\";B17/B10) con IFERROR/guarda de vacío en todos los ratios; '3. Punto Equilibrio'!B8='2. P&L 3 Anos'!B30, B11=B9-B10, B14=SI(B11<=0;\"\";B8/B11), B15=B14/'2. P&L 3 Anos'!B9, B16=B14*B9. Añadir un bloque de INPUTS con las tasas (food %, bebida %, delivery %, días) para que sólo se toquen ahí. Hasta que exista, retirar de la landing las cinco menciones a fórmulas automáticas."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A12:D13",
+      "hallazgo": "Doble contabilización del coste de la bebida: el food cost del 30 % se aplica sobre los ingresos TOTALES (incluida la bebida) y luego se vuelve a cobrar el coste de bebida sobre ese mismo 35 %. Infla el coste 33.120 € en el año 1 y es lo que convierte un beneficio de +10.950 € en una pérdida de -22.170 €.",
+      "evidencia": "A12 = 'Food cost (30% sobre ingresos)' con B12 = 94627,5 = 315425 × 0,30, es decir sobre el 100 % de los ingresos. A13 = 'Bebidas cost (22% sobre ingresos bebida ~35%)' con B13 = 24287,725 = 315425 × 0,35 × 0,22. El 35 % de bebida ya pagó food cost: 315425 × 0,35 × 0,30 = 33.119,63 € cobrados dos veces. Consecuencia: el COGS efectivo es (94627,5+24287,725)/315425 = 37,7 %, y con delivery y consumibles el coste variable total es 139486,475/315425 = 44,2 %, contra el objetivo que el propio fichero fija en 'Instrucciones'!A12 («Food cost objetivo: 28-32%»). Sin el doble conteo, B32 pasaría de -22169,975 a +10.949,65.",
+      "fix": "Separar las bases: B12 = B10*0,65*0,30 (food cost sólo sobre ingresos de comida) y B13 = B10*0,35*0,22, o bien fundir ambas en una única línea 'Coste de mercancía (food + bebida)' = B10*0,272. Replicar en C y D, y recalcular en cascada B16/B17/B29/B30/B32/B33/B34 y los ratios B37:D40 y B38 ('Food cost %', hoy hardcodeado a 0,30 cuando el COGS real es 37,7 %)."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio'!B7,B8,B10,B11,B14:B16",
+      "hallazgo": "El punto de equilibrio —la cifra estrella del producto y la que mira un banco— no se deriva del P&L: usa unos costes fijos 5.508,5 € menores y un coste variable por cubierto 0,41 € menor. Subestima el break-even en 4 cubiertos/día (57,9 publicados frente a 61,9 reales).",
+      "evidencia": "B7 = 16050 €/mes → B8 = 192600 €/año, mientras '2. P&L 3 Anos'!B30 = 198108,5 (y 192.600 no coincide con ningún subtotal del P&L: sin 'Varios e imprevistos' sale 191.800, ni con ni sin amortización da 192.600). B10 = 7,77 €/cubierto etiquetado «~42% del ticket» (7,77/18,5 = 42,0 %) mientras el P&L da 139486,475/(55×310) = 8,18 €/cubierto (44,2 %). Con los datos del propio P&L: MC = 18,5 − 8,18 = 10,32 € (no 10,73 de B11), cubiertos/año = 198108,5/10,32 = 19.198 (no 17.950 de B14) y cubiertos/día = 61,9 (no 57,9 de B15). El texto de interpretación B19/A19 propaga el error: «necesitas servir al menos 57.9 cubiertos al dia».",
+      "fix": "B8 = ='2. P&L 3 Anos'!$B$30; B7 = B8/12; B9 = ='2. P&L 3 Anos'!$B$8; B10 = ='2. P&L 3 Anos'!$B$16/('2. P&L 3 Anos'!$B$7*'2. P&L 3 Anos'!$B$9); B11 = B9-B10; B14 = SI(B11<=0;\"MC negativo\";B8/B11); B15 = B14/'2. P&L 3 Anos'!$B$9; B16 = B14*B9. Y sustituir el párrafo A19 por texto con referencias (o generarlo con CONCAT/TEXTO) para que no se quede desfasado al recalcular."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A33:D34",
+      "hallazgo": "La línea de Impuesto de Sociedades está mal en los dos sentidos: aplica el 25 % a los años 2 y 3 cuando a una entidad de nueva creación le corresponde el 15 %, e ignora por completo la compensación de la base imponible negativa del año 1. Sobrestima el impuesto en 6.763 € en tres años y presenta un resultado neto falso a un banco.",
+      "evidencia": "A33 = 'Impuesto Sociedades (15% ano 1, 25% ano 2-3)'. B33 = 0 (correcto, base negativa). C33 = 3736,88 = 14947,525 × 0,25 y D33 = 13171,66 = 52686,625 × 0,25. Dos errores: (a) el tipo reducido del 15 % de entidades de nueva creación se aplica al primer periodo con base positiva y al siguiente — aquí los años 2 y 3, no el año 1 que da pérdidas —, luego C33 debería ser 2.242,13 y D33 7.903,00; (b) la BIN de -22.169,975 del año 1 es compensable: 14947,525 − 22169,975 = -7.222,45, así que el año 2 debe tributar 0 y el año 3 arrastra los 7.222,45 restantes. Con ambas correcciones el resultado neto C34/D34 cambia de 11.210,64/39.514,97 a 14.947,53/45.867,00.",
+      "fix": "Añadir una fila 'BIN acumulada pendiente' y calcular C33 = MAX(0; (C32 - BIN_pendiente)) * 0,15 y D33 análogo; corregir la etiqueta A33 a 'Impuesto Sociedades (15% entidad nueva creación, primeros 2 ejercicios con base positiva; compensación de BIN)'. Si se prefiere no modelar la BIN, al menos bajar el tipo al 15 % y anotarlo en 'Instrucciones'."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversion Inicial'!A43:C44 vs 'Instrucciones'!A15",
+      "hallazgo": "El fondo de maniobra está etiquetado como «3 meses de costes fijos» pero es 1,9 meses. El fichero incumple su propia regla y manda al cliente a abrir con ~18.000-19.500 € menos de colchón de los que él mismo prescribe, justo en un plan cuyo año 1 da pérdidas.",
+      "evidencia": "A43 = 'FONDO DE MANIOBRA (3 meses operaciones)', A44 = 'Colchon operativo (3 meses costes fijos)', B44 = 30000. Pero 3 meses de costes fijos son 198108,5/4 = 49.527,13 € según '2. P&L 3 Anos'!B30, o 16050×3 = 48.150 € según '3. Punto Equilibrio'!B7. 30.000 € equivalen a 1,82-1,87 meses. 'Instrucciones'!A15 lo exige expresamente: «Fondo de maniobra: minimo 3 meses de costes fijos antes de abrir». Agrava el problema que el año 1 proyecta -22.170 € de pérdida (y -116.141 € si se usa la hoja Personal, ver TEC-01), que se consumen de ese mismo colchón.",
+      "fix": "B44 = ='2. P&L 3 Anos'!$B$30/4 (49.527 €) y recalcular B46 = SUMA(B7:B44), que pasaría de 132.160 € a ~151.687 €. Eso rompe el rango «80.000-150.000 EUR» de 'Instrucciones'!A21 y el «~133K EUR» de la landing (.ts:141), así que hay que actualizar ambos o justificar un colchón menor cambiando la etiqueta de A43/A44 a los meses reales."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "libro completo (6 hojas) y plan-de-negocio-bar-restaurante.docx, vs .ts:143,262 y src/pages/PlanNegocioBarRestauranteDashboard.tsx:24",
+      "hallazgo": "El «Plan de Financiación» se vende como entregable en la landing, en el bloque de items del checkout y en la descripción del dashboard, y no existe en ninguno de los tres ficheros. Ni hoja de financiación en el Excel, ni sección en el Word.",
+      "evidencia": "El Excel tiene 6 hojas ('1. Inversion Inicial', '2. P&L 3 Anos', '3. Punto Equilibrio', '4. Escenarios', '5. Personal', 'Instrucciones') y ninguna partida de fuentes de financiación: '1. Inversion Inicial' lista usos (B7:B44) pero no orígenes (recursos propios / deuda / subvención). Barrido del .docx (word/document.xml, 47.064 caracteres de texto): 'ENISA' 0 apariciones, 'angel' 0, 'subvenci' 0, 'aval' 0, 'Plan de Financiaci' 0. Frente a eso, .ts:143 «Plan de Financiación — Opciones reales: ICO, ENISA, préstamo bancario, inversores privados, business angels y subvenciones autonómicas con orden recomendado de gestión», .ts:262 «Plan de financiación: ICO, ENISA, banca, business angels», .ts:169 «...ratios financieros y plan de financiación», y PlanNegocioBarRestauranteDashboard.tsx:24 describe el Word como «...plan de marketing, plan financiero y plan de financiación».",
+      "fix": "Dos vías: (a) crear una hoja '6. Plan de Financiacion' con estructura usos/orígenes (recursos propios, préstamo ICO, ENISA, banca, business angels, subvenciones), importe, plazo, tipo, cuota calculada y cuadro de amortización del préstamo, cuadrando el total con '1. Inversion Inicial'!B46; o (b) retirar la promesa de .ts:143, .ts:262, .ts:169 y de Dashboard.tsx:24. La opción (a) además da soporte al 'Cuota prestamo' de '2. P&L 3 Anos'!B28, hoy huérfano (ver TEC-10)."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B8:D8 (formato '#,##0 €')",
+      "hallazgo": "El ticket medio se guarda con 18,5/19,5/20,5 pero se muestra con formato sin decimales, así que en pantalla y en el PDF impreso pone 19 €, 20 € y 21 €. El lector no puede reproducir los ingresos con los inputs que ve: 55 × 19 × 310 = 323.950 €, no los 315.425 € de la fila 10.",
+      "evidencia": "B8 val=18.5 fmt='#,##0 €'; C8 val=19.5 fmt='#,##0 €'; D8 val=20.5 fmt='#,##0 €'. La hoja 3 sí lo hace bien: '3. Punto Equilibrio'!B9 val=18.5 fmt='#,##0.00 €' (muestra 18,50 €). Es decir, el mismo dato se presenta como «19 €» en la hoja que un banco leerá primero y como «18,50 €» dos hojas después. Mismo defecto en '4. Escenarios'!B7:D7, que sí usa '#,##0.00 €' — la única hoja incoherente es la 2.",
+      "fix": "Cambiar el number_format de B8:D8 a '#,##0.00 €'. Revisar de paso que ninguna otra celda con decimales significativos use '#,##0 €'."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A28,B28:D28 y '1. Inversion Inicial' (sin sección de financiación)",
+      "hallazgo": "La «Cuota prestamo» es un gasto huérfano y contablemente mal colocado: no hay préstamo declarado en ninguna parte del Excel, el importe no cuadra con el del Word, y meter la cuota completa (principal + intereses) antes del resultado antes de impuestos no es un P&L, es un flujo de caja.",
+      "evidencia": "'2. P&L 3 Anos'!A28 = 'Cuota prestamo (si aplica)', B28=C28=D28=7200 (600 €/mes), incluido dentro de 'COSTES FIJOS' y por tanto restado en B32 'RESULTADO ANTES DE IMPUESTOS'. En un P&L sólo son gasto los intereses; la devolución de principal es una salida de balance. Además '1. Inversion Inicial' no contiene ninguna fila de préstamo ni de recursos propios, y el .docx §8 habla de «préstamo de 80.000 € a 7-10 años», que a tipos de mercado daría entre 10.180 y 13.572 €/año, no 7.200 € (600 €/mes sirven aproximadamente a un préstamo de ~50.000 € a 10 años). Tampoco existe ninguna hoja de tesorería en el libro.",
+      "fix": "Sustituir A28 por 'Intereses del préstamo' calculado sobre el cuadro de amortización de la hoja de financiación de TEC-08, y llevar la devolución de principal a un bloque de tesorería aparte. Cuadrar el importe del préstamo con el que declare el .docx."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "libro completo + plan-de-negocio-bar-restaurante.docx",
+      "hallazgo": "Ningún fichero declara si las cifras son con o sin IVA, ni en ingresos ni en inversión. Como el «ticket medio» en hostelería española se entiende IVA incluido, el P&L puede estar sobrestimando los ingresos un 10 % (~28.675 € en el año 1), y la inversión omite los ~21.000 € de IVA soportado que hay que adelantar en caja.",
+      "evidencia": "Barrido de las 6 hojas: 'IVA' no aparece en ninguna celda. Barrido del .docx: 'IVA' 0 apariciones en los 47.064 caracteres de texto. '2. P&L 3 Anos'!A10 dice sólo 'INGRESOS BRUTOS' = 315425 = 55 × 18,5 × 310. Si esos 18,50 € son lo que paga el cliente, el ingreso neto es 16,82 €/cubierto y la facturación real 286.750 €, lo que empeora B32 en ~28.675 €. En paralelo, '1. Inversion Inicial'!B46 = 132160 sobre partidas (obra 25.000, equipamiento 25.700+17.560) que llevan 21 % de IVA soportado no reflejado como necesidad de tesorería. El único aviso, A48, dice «Todos los importes son estimaciones basadas en precios de mercado» sin mencionar impuestos.",
+      "fix": "Declararlo explícitamente: añadir en 'Instrucciones' y en el encabezado de la hoja 2 «Todas las cifras de ingresos y gastos son SIN IVA» (y en tal caso etiquetar A8 como 'Ticket medio sin IVA (EUR)'), y en '1. Inversion Inicial' una fila 'IVA soportado sobre la inversión (21 %, recuperable)' que sume al total de caja necesaria aunque se marque como recuperable."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B38:D38 y B39:D39, vs 'Instrucciones'!A12:A14",
+      "hallazgo": "El bloque «RATIOS CLAVE» no audita nada: el 'Food cost %' está fijado al 30 % de entrada en vez de calcularse (el COGS real es 37,7 %, y 44,2 % con todos los variables), y los dos ratios que SÍ delatan un problema —personal 36,5 % y alquiler 11,4 %— violan los umbrales que el propio fichero prescribe, sin un solo aviso.",
+      "evidencia": "B38=C38=D38 = 0.3 exactamente, es decir el input de A12, no un cociente (el COGS real año 1 es (94627,5+24287,725)/315425 = 0,377). B39 = 0,3652 frente a 'Instrucciones'!A13 «Coste personal: no superar 35% de los ingresos». Alquiler: '2. P&L 3 Anos'!B19 36000/315425 = 0,1141 frente a 'Instrucciones'!A14 «Alquiler: no superar 8-10% de los ingresos previstos» — y no hay siquiera una fila de ratio para el alquiler. Y 'Instrucciones'!A16 dice «Punto de equilibrio: alcanzable en menos de 12 meses = negocio viable» cuando los ingresos del año 1 (315.425 €) quedan por debajo del propio break-even de la hoja 3 (332.075 €).",
+      "fix": "B38 = ('2. P&L 3 Anos'!B12+B13)/B10; añadir filas 'Coste materia prima total %', 'Alquiler / Ingresos' y 'Punto de equilibrio alcanzado (S/N)'; y poner formato condicional en B37:D40 que pinte en rojo cuando se salga de los rangos de 'Instrucciones' (food cost >32 %, personal >35 %, alquiler >10 %). Hoy el libro no tiene ni un solo formato condicional (ver TEC-13)."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "las 6 hojas (ws.data_validations y ws.conditional_formatting vacíos)",
+      "hallazgo": "Cero validaciones de datos y cero formatos condicionales en todo el libro financiero, precisamente el fichero que se vende como editable. El checklist hermano sí los tiene, así que el generador sabe ponerlos: aquí se omitieron.",
+      "evidencia": "Volcado openpyxl: en las 6 hojas del financiero `ws.data_validations.dataValidation` = [] y `ws.conditional_formatting._cf_rules` = {}. En cambio checklist-apertura-bar-restaurante.xlsx sí trae validación de lista `\"✓,—,N/A\"` sobre E5:E59 y una regla de tipo expression `$E4=\"✓\"` sobre A4:F59. Consecuencia en el financiero: nada impide teclear texto en '2. P&L 3 Anos'!B7 (cubiertos), un ticket de 0 que dejaría el margen de contribución negativo en '3. Punto Equilibrio'!B11, o unos días abiertos >365 en B9.",
+      "fix": "Añadir validaciones en las celdas de input: B7:D7 decimal entre 1 y 300, B8:D8 decimal entre 1 y 200, B9:D9 entero entre 1 y 365, '5. Personal'!B6:B11 entero 0-50. Y formato condicional de alerta en los ratios (TEC-12) y en '2. P&L 3 Anos'!B32:D34 (rojo si negativo). Con fórmulas ya puestas (TEC-03), envolver todo cociente en SI.ERROR/guarda de divisor cero."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A13,A14,A15,A20,A33; '1. Inversion Inicial'!C10,C39; '3. Punto Equilibrio'!A10,C7; '4. Escenarios'!A14; '5. Personal'!D5",
+      "hallazgo": "32 celdas del pack (11 en el financiero, 21 en el checklist) tienen wrap_text activado sobre un alto de fila fijo de 22 pt, que sólo da para una línea: el texto se corta en pantalla y en el PDF A4 que configuró la Fase A. Las cortadas son justo las etiquetas que explican los supuestos.",
+      "evidencia": "Todas las filas de datos llevan alto explícito 22.0 (ws.row_dimensions) y wrap_text=True. Casos donde longitud > ancho de columna: '2. P&L 3 Anos'!A20 'Nominas + Seg. Social (ver hoja Personal)' (41 car., col A ancho 40), A33 'Impuesto Sociedades (15% ano 1, 25% ano 2-3)' (44), A13 'Bebidas cost (22% sobre ingresos bebida ~35%)' (45), A15 'Comisiones delivery (si aplica, 5% ingresos)' (44); '3. Punto Equilibrio'!A10 'Coste variable por cubierto (food+bev+delivery)' (47); '5. Personal'!D5 'Seg. Social (33.4%)' (19 car., col D ancho 18); '4. Escenarios'!A14 (187 car. sobre 90 de ancho combinado A14:D14 y sólo 40 pt de alto → necesita 3 líneas, caben 2). En el checklist, 21 casos más, entre ellos B5, B6, B8, B19, B40 y F17.",
+      "fix": "O quitar el alto fijo de esas filas para que Excel autoajuste con el wrap, o subirlas a 34 pt (2 líneas) y a 58 pt en '4. Escenarios'!A14, o ensanchar la columna A a 48 en las hojas 2 y 3 y la F del checklist a 34. Comprobar después en la vista de salto de página que sigue cabiendo en A4."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "todo el libro (92 ocurrencias en 71 celdas) y checklist-apertura-bar-restaurante.xlsx (78 en 69 celdas)",
+      "hallazgo": "El contenido está escrito sin tildes ni eñes, incluidos los encabezados que un banco lee primero: «Ano 1 / Ano 2 / Ano 3», «Espana 2026», «Inversion Inicial». Conviven en el mismo fichero con las dos únicas celdas que sí llevan acentos, que son precisamente las que inyectó la Fase A.",
+      "evidencia": "Barrido con patrón de palabras que exigen tilde/ñ: 92 ocurrencias en 71 celdas del financiero y 78 en 69 del checklist. Ejemplos: '2. P&L 3 Anos'!B5:D5 = 'Ano 1'/'Ano 2'/'Ano 3' (y el propio nombre de la hoja, '2. P&L 3 Anos'); '1. Inversion Inicial'!A3 'Espana 2026'; A1 'Consultoria Gastronomica'; A12 'Decoracion'; A18 'Camara frigorifica'; A35 'Diseno marca'; A37 'Campana lanzamiento RRSS' (que en español significa «campana», no «campaña» — y en A19 'Campana extractora' sí es correcto, de modo que el mismo libro usa la misma grafía con dos significados); checklist B43 'Diseno logo' / C43 'Disenador', B50 'Activar campana RRSS', B55 'Evaluar desempeno equipo', B59 'Pedir resenas Google', B33 'Registro de alergenos'. Las ÚNICAS celdas acentuadas del financiero son 'Instrucciones'!A27 («En cocina desde los 17 años · consultor gastronómico desde 2010.») y A30 («Versión 1.1 · agosto 2026…»), es decir la bio y la línea de versión de la Fase A; en el checklist la única es B57 («se desvía»).",
+      "fix": "Pasar los textos de ambos libros por corrección ortográfica y reescribir las cadenas en el generador con los acentos correctos, incluido el nombre de hoja '2. P&L 3 Años'. Añadir al gate del generador una comprobación de que no aparecen 'Ano '/'Espana'/'Diseno'/'campana'/'resenas'/'desempeno'/'alergenos' fuera de la acepción legítima ('campana extractora')."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'5. Personal'!B6:B13 y D11",
+      "hallazgo": "La columna «Personas» lleva formato de moneda, así que el número de empleados se muestra como «1 €» y el total como «7 €». Y en la fila de 2 camareros la Seg. Social se muestra por persona mientras el coste total es por los dos, de modo que la fila no cuadra a la vista del cliente.",
+      "evidencia": "'5. Personal'!B6 val=1 number_format='#,##0 €'; igual B7..B11 y B13 (val=7 → «7 €»). Ninguna de esas celdas es un importe: A5/B5 titula la columna 'Personas'. Además fila 11 ('Camarero', B11=2): C11=1300, D11=434.2, E11=3468.4, F11=48557.6 — E y F son el total de las 2 personas pero C y D son por persona, así que en pantalla se lee «1.300 € + 434 € = 3.468 €», que no cuadra. Y C13/D13 están vacías mientras B13/E13/F13 sí traen total, dejando la fila TOTAL a medias.",
+      "fix": "Poner number_format='#,##0' en B6:B13. Homogeneizar la fila 11: o C y D pasan a ser totales de la fila (C11=2600, D11=868,4) o E y F pasan a ser por persona con una columna aparte de total. Rellenar C13 y D13 con los sumatorios correspondientes o dejarlas explícitamente en blanco con una nota."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'Instrucciones'!A6, A7",
+      "hallazgo": "La hoja de instrucciones describe un comportamiento automático que el fichero no tiene. No es sólo una promesa de la landing: el propio entregable le dice al cliente que espere recálculos que nunca ocurrirán, lo que lo lleva a confiar en cifras obsoletas tras editar.",
+      "evidencia": "'Instrucciones'!A6: «2. P&L 3 ANOS: Modifica los cubiertos/dia, ticket medio y dias abiertos segun tu prevision. Los costes variables se calculan como porcentaje de ingresos». A7: «3. PUNTO DE EQUILIBRIO: Se calcula automaticamente a partir de tus costes fijos y tu margen de contribucion». Contrastado con 0 etiquetas <f> en sheet2.xml y sheet3.xml (TEC-03): editando B7 de 55 a 80, B10 sigue en 315425 y '3. Punto Equilibrio'!B15 sigue en 57,9. El riesgo práctico es que el cliente edite los inputs, imprima y lleve al banco un P&L cuyos totales corresponden a otros supuestos.",
+      "fix": "Si se implementan las fórmulas de TEC-03, A6 y A7 quedan correctas tal cual. Si no, reescribirlas: «Los importes son valores de referencia; tras modificar cualquier input debes recalcular manualmente las filas de totales» y añadir una nota destacada al principio de la hoja."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura' filas 5-59 (50 trámites)",
+      "hallazgo": "Al checklist «verificado con la legislación vigente» le faltan obligaciones de apertura que cuestan dinero o multa si se olvidan: seguro de RC, hoja de reclamaciones, registro horario, contrato con gestor de residuos y aceite usado, DDD, derechos de autor por música ambiental y el plan de prevención de desperdicio alimentario.",
+      "evidencia": "Barrido de las 50 filas de trámite (B5:B59): no aparece 'seguro' ni 'responsabilidad civil' pese a que '1. Inversion Inicial'!A41 del Excel financiero sí presupuesta 2.000 € de «Seguros (RC + multirriesgo + empleados)» — la partida está presupuestada pero no hay tarea que la ejecute; tampoco 'hoja de reclamaciones', 'registro horario', 'residuos', 'aceite', 'DDD'/'desratizacion', 'SGAE'/'derechos de autor', ni la Ley 1/2025 de prevención de pérdidas y desperdicio alimentario. Frente a eso, .ts:243 vende «un checklist de trámites verificado con la legislación vigente» y .ts:28 «Checklist apertura con 50+ trámites». Nota adicional: son exactamente 50 filas de trámite (10+9+8+7+8+8), no «50+».",
+      "fix": "Añadir en FASE 2 'Contratar seguro de responsabilidad civil y multirriesgo' y 'Solicitar hojas de reclamaciones oficiales + cartel'; en FASE 3 'Contrato con gestor autorizado de residuos y aceite usado' y 'Contrato de DDD (desinsectación/desratización)'; en FASE 4 'Implantar registro horario diario (art. 34.9 ET)'; en FASE 5 'Licencia de derechos de autor por música ambiental'; y en FASE 6 'Plan de prevención de desperdicio alimentario (Ley 1/2025)'. Con eso el recuento supera de verdad los 50 que anuncia la landing."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio' (hoja completa, A1:C20) vs .ts:137",
+      "hallazgo": "La landing promete análisis de sensibilidad al ticket medio en el punto de equilibrio y la hoja sólo da un único escenario puntual: no hay ninguna tabla que muestre cómo se mueve el break-even al variar el ticket.",
+      "evidencia": ".ts:137 «Punto de Equilibrio (Break-Even) — Cuántos cubiertos al día necesitas para cubrir costes fijos, margen de contribución e interpretación de resultados con sensibilidad a ticket medio». La hoja 3 ocupa A1:C20 y contiene un solo valor por variable: B9=18,5 (ticket), B11=10,73 (MC), B14=17950, B15=57,9, B16=332075. No hay tabla de doble entrada, ni fila de ticket variable, ni tabla de datos de Excel (no existe ninguna definedName ni tabla en el libro).",
+      "fix": "Añadir en A22:F30 una tabla de sensibilidad con el ticket medio en columnas (16,50 / 18,50 / 20,50 / 22,50 €) y el coste variable unitario en filas, calculando cubiertos/día necesarios en cada cruce. Con las fórmulas de TEC-03 son cuatro columnas de =$B$8/(ticket-$B$10)/310."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A26,B26:D26",
+      "hallazgo": "La amortización está fijada en 5.000 €/año, que implica una base amortizable de 50.000 €, cuando el inmovilizado del propio Excel suma ~76.260 €. Subestima el gasto ~2.600 €/año y por tanto sobreestima el resultado de los tres ejercicios.",
+      "evidencia": "A26 = 'Amortizacion equipos (10 anos)', B26=C26=D26=5000 → base implícita 50.000 €. Sumando las partidas amortizables de '1. Inversion Inicial': obra civil B10=25.000 + decoración B12=8.000 + equipamiento cocina (B14:B23) 25.700 + equipamiento sala y barra (B25:B33) 17.560 = 76.260 €, que a 10 años son 7.626 €/año. Además la obra civil sobre local arrendado suele amortizarse a la duración del contrato, no a 10 años, lo que elevaría más la cifra.",
+      "fix": "B26 = SUMA('1. Inversion Inicial'!B10;B12;B14:B23;B25:B33)/10 y añadir una nota en C26 sobre el tratamiento de la obra civil en local arrendado. Recalcular en cascada B30/B32/B33/B34 y el ratio B40."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio'!B14, B15 y A19",
+      "hallazgo": "Las dos cifras clave de la hoja son las únicas del libro con formato 'General': 17.950 sale sin separador de miles y 57,9 sin control de decimales; y el párrafo de interpretación mezcla separador decimal inglés y español en la misma frase.",
+      "evidencia": "B14 val=17950 number_format='General' (todas las demás cifras de importe del libro usan '#,##0 €' o '#,##0'); B15 val=57.9 number_format='General'. A19: «necesitas servir al menos 57.9 cubiertos al dia (310 dias/ano) … cada cubierto adicional genera 10,73 EUR de margen» — «57.9» con punto y «10,73» con coma en el mismo párrafo de un documento en español.",
+      "fix": "B14 → '#,##0'; B15 → '#,##0.0'. Reescribir A19 con «57,9» y, mejor, generar la frase concatenando las celdas (TEXTO(B15;\"0,0\")) para que no se desfase al recalcular."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversion Inicial'!A6, A13, A24, A34, A38, A43",
+      "hallazgo": "La hoja de inversión tiene seis bloques con encabezado pero ningún subtotal por bloque: sólo el total general. Un analista de riesgos de banco pide precisamente el desglose por bloque, y la landing la vende como «inversión inicial detallada».",
+      "evidencia": "Encabezados de bloque en A6 (LOCAL Y ACONDICIONAMIENTO), A13 (EQUIPAMIENTO COCINA), A24 (EQUIPAMIENTO SALA Y BARRA), A34 (MARKETING Y LANZAMIENTO), A38 (GASTOS LEGALES Y CONSTITUCION), A43 (FONDO DE MANIOBRA), todos con la columna B vacía. El único total es B46=132160 (comprobado: 50.000 + 25.700 + 17.560 + 4.000 + 4.900 + 30.000 = 132.160 ✓). .ts:258 «Inversión inicial detallada (~133K EUR de referencia)».",
+      "fix": "Poner en la celda B de cada encabezado el subtotal del bloque (=SUMA(B7:B12), =SUMA(B14:B23), =SUMA(B25:B33), =SUMA(B35:B37), =SUMA(B39:B42), =B44) y B46=suma de los seis subtotales, con un porcentaje sobre el total en la columna C."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!A15,B15:D15",
+      "hallazgo": "La comisión de delivery se etiqueta «si aplica» pero se aplica al 100 % de los ingresos y sin interruptor. Un local sin delivery arrastra 15.771 € de coste inventado y, al no haber fórmulas, tiene que rehacer a mano todos los totales para quitarlo.",
+      "evidencia": "A15 = 'Comisiones delivery (si aplica, 5% ingresos)', B15 = 15771.25 = 315425 × 0,05, sobre la facturación total (implicaría que todos los cubiertos pasan por plataforma). Al no existir fórmulas (TEC-03), borrar B15 no actualiza B16 (139486,475), ni B17, ni B30, ni B32.",
+      "fix": "Añadir en el bloque de inputs una celda '% de ventas por delivery' y otra '% comisión de la plataforma', y calcular B15 = B10 * %ventas_delivery * %comision. Poner el % de ventas por delivery a 0 por defecto y explicarlo en 'Instrucciones'."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": ".ts:263 vs '5. Personal' del xlsx",
+      "hallazgo": "El «BONUS: Cuadro Personal con Seg. Social (€19)» no es un entregable adicional: es la hoja 5 del Excel que la misma lista ya ha contado dos líneas antes. Infla el valor percibido con algo ya incluido.",
+      "evidencia": ".ts:257 «Plan financiero Excel con P&L previsional a 3 años» y .ts:135 «Plan Financiero Excel (6 hojas) — P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, personal e instrucciones», y luego .ts:263 «BONUS: Cuadro Personal con Seg. Social (€19)». El «cuadro de personal» es '5. Personal' del mismo .xlsx, no un fichero aparte: el directorio dl/ sólo contiene 3 ficheros. Mismo patrón en .ts:264 con «BONUS: Análisis de Mercado España 2026 (€19)», que es una sección del .docx ya listado.",
+      "fix": "O bien retirar la etiqueta BONUS de esas dos líneas, o bien reformularlas como «Incluido: hoja de Cuadro de Personal…» para no presentar como extra lo que ya se ha contado en el entregable principal."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B11, F11",
+      "hallazgo": "El epígrafe de IAE propuesto (671.4, restaurantes de dos tenedores) no corresponde al modelo de negocio que describe el resto del pack, un bar-restaurante casual con barra y ticket de 18,50 €.",
+      "evidencia": "B11 = 'Alta en el IAE (epigrafe 671.4 restaurantes)'. El 671.4 son restaurantes de dos tenedores; para un bar-restaurante casual con barra corresponde más bien el 671.5 (un tenedor) o el 673 (cafés y bares). El propio Excel financiero describe el local con '1. Inversion Inicial'!A25 'Barra de bar (5 metros lineales)', A27 'Taburetes barra (8 unidades)' y A30 'Grifo cerveza', y el ticket medio es 18,50 €.",
+      "fix": "Cambiar la celda a 'Alta en el IAE (epígrafe 671.5 restaurantes un tenedor o 673 cafés y bares, según categoría)' y anotar en F11 que la elección depende de la categorización del establecimiento."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!F36",
+      "hallazgo": "Errata visible en una celda del entregable: dos palabras fundidas por una 'c' donde debía ir un espacio.",
+      "evidencia": "F36 = 'Priorizarcexperiencia hosteleria' (debería ser «Priorizar experiencia hostelería»). La celda además está entre las cortadas por ancho (32 caracteres en una columna F de ancho 28 con alto fijo 22 pt, ver TEC-14), así que en pantalla se lee todavía peor.",
+      "fix": "F36 = 'Priorizar experiencia en hostelería'. Añadir al gate del generador un diccionario o un chequeo de tokens no existentes en español para cazar este tipo de fusión."
+     },
+     {
+      "id": "TEC-27",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": ".ts:139 y .ts:195 vs '5. Personal'!A6:A11",
+      "hallazgo": "La landing enumera puestos que no están en la hoja de personal y usa plurales donde sólo hay una persona, así que el comprador espera un cuadro más completo del que recibe.",
+      "evidencia": ".ts:139 y .ts:195: «coste real por jefe de cocina, jefe de sala, cocineros, camareros y ayudantes». En '5. Personal' los puestos son A6 'Gerente / Propietario', A7 'Jefe de cocina', A8 'Cocinero' (B8=1), A9 'Ayudante cocina' (B9=1), A10 'Camarero jefe' (B10=1), A11 'Camarero' (B11=2). No existe 'jefe de sala' (el equivalente se llama 'Camarero jefe'), y 'cocineros'/'ayudantes' en plural corresponden a una sola persona cada uno. En sentido contrario, el puesto de 'Gerente / Propietario' —la partida más cara, 41.087 €/año— no se menciona en la landing.",
+      "fix": "Alinear el texto con la hoja: «Gerente/propietario, jefe de cocina, cocinero, ayudante de cocina, camarero jefe y camareros», o renombrar A10 a 'Jefe de sala' en el Excel si ese es el puesto que se quiere vender."
+     }
+    ]
+   },
+   "coherencia": {
+    "lente": "Consultor/a financiero de hostelería — coherencia de inversión, P&L, punto de equilibrio, escenarios, enlaces entre hojas, supuestos España 2026 y alineación docx↔Excel↔landing",
+    "veredicto": "no listo",
+    "motivo": "El pack NO está listo para un cliente que pagó 35 € para llevarlo a un banco. Tres defectos por separado bastan para el reembolso: (1) el P&L imputa 115.200 € de nóminas cuando su propia hoja 5 —a la que remite la etiqueta literal «ver hoja Personal»— calcula 209.171,20 €, un agujero de 93.971 € que convierte los tres años del plan en pérdidas; (2) el Resumen Ejecutivo del Word promete un resultado neto del 8-12 % en el Año 1 mientras el Excel adjunto proyecta −7,03 %, es decir, los dos documentos que se entregan juntos dicen lo contrario sobre si el negocio gana o pierde dinero; (3) el Word arrastra 32 caracteres japoneses, chinos y cirílicos incrustados en mitad de frases («押入れ器具 menores», «подготовка mise en place», «con伏 que superen los 75 metros»), el mismo fallo de inyección ya documentado en CLAUDE.md, en un fichero que se enseña a un director de oficina. A eso se suman errores de concepto que un analista de riesgos detecta en la primera lectura (doble imputación del coste de bebida, punto de equilibrio calculado a 365 días, alquiler «máximo 800-1.000 €/mes» cuando el 8-10 % de 350.000 € son 2.333-2.917 €, impuesto sin compensar la base negativa) y dos promesas de la landing que no se entregan en ningún fichero: el «Plan de Financiación (ICO, ENISA, business angels, subvenciones autonómicas)» y el «Análisis de Mercado con ticket medio por comunidad autónoma». La Fase A hizo bien su trabajo en los dos xlsx (validación ✓/—/N/A, formato condicional, A4, pies y metadatos verificados presentes), pero el .docx quedó fuera de ella y el changelog lo confiesa sin querer al hablar de «los 2 ficheros» en un producto de 3.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B20:D20 vs '5. Personal'!F13",
+      "hallazgo": "El P&L imputa unas nóminas que no son las de su propia hoja de personal, y la diferencia (93.971 €/año) es mayor que el beneficio de los tres años juntos. Corregido, el plan no alcanza beneficio en ningún ejercicio: el negocio que se vende como viable no lo es con sus propios datos.",
+      "evidencia": "'2. P&L 3 Anos'!A20 dice literalmente 'Nominas + Seg. Social (ver hoja Personal)' y B20=115.200. La hoja referida da '5. Personal'!F13=209.171,20 (suma verificada de F6:F11 = 41.087,2+37.352+29.881,6+24.278,8+28.014+48.557,6). 115.200 no es ni E13x12 (179.289,6) ni E13x14 (209.171,2): es 9.600x12, un redondeo tecleado a mano. Rehaciendo B32 con el dato real: 175.938,525 - (198.108,5 + 93.971,2) = -116.141,18 € en el Año 1; el Año 2 pasa de +14.947,52 a -79.023,68 y el Año 3 de +52.686,63 a -41.284,58.",
+      "fix": "Sustituir B20:D20 por el enlace real ='5. Personal'!$F$13 (y sus incrementos anuales), recalcular B30:D30, B32:D34 y B39:D39, y revisar si la plantilla de 7 personas es sostenible con 55 cubiertos/día: con 209.171 € de coste laboral sobre 315.425 € de ingresos el proyecto necesita otra dimensión de equipo o de facturación antes de publicarse."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§1 Resumen Ejecutivo, párrafo [42]",
+      "hallazgo": "El Resumen Ejecutivo —la única página que un analista de riesgos lee entera— afirma un resultado neto POSITIVO del 8-12 % en el Año 1, mientras el Excel del mismo pack proyecta pérdidas del 7,03 %. Los dos documentos discrepan en el signo del resultado, no en la magnitud.",
+      "evidencia": "docx [42]: «el resultado neto del primer año debería alcanzar el 8-12% de la facturación» y «El margen bruto de explotación se sitúa en el 62-65%». El xlsx da '2. P&L 3 Anos'!B34 = -22.169,98 €, B40 = -0,0703 (-7,03 %) y B37 = 0,5578 (55,78 %, no 62-65 %). Sobre los 350.000 € que el propio docx proyecta, un 8-12 % serían +28.000 a +42.000 €: una horquilla de 50.000-64.000 € de distancia respecto al Excel adjunto.",
+      "fix": "Reescribir [42] a partir de las filas 34 y 40 del P&L una vez corregido DOM-01, diciendo con todas las letras que el Año 1 cierra en pérdidas y que por eso se dota fondo de maniobra. Un plan honesto con pérdidas en el Año 1 financia mejor que uno con un beneficio que el anexo desmiente."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "párrafos [41], [47], [57], [89], [90], [100], [117] — 32 caracteres en 8 párrafos",
+      "hallazgo": "El documento que el cliente imprime para el banco tiene 32 caracteres japoneses, chinos y cirílicos incrustados dentro de frases en español, sustituyendo palabras. Es el fallo de inyección de idioma ya documentado en CLAUDE.md, vivo en producción en este entregable.",
+      "evidencia": "Barrido con regex de rangos no latinos: [41] '…decoración de sala (20.000-30.000 euros),押入れ器具 menores y mise en place…' (押入れ器具 = «utensilios de armario empotrado» en japonés, donde debía decir «utillaje»); [47] '…convierte un local de 60-80 metros cuadrados en una尺寸 óptima…' (尺寸 = «dimensión»); [57] '…entre 18 y 25 euros en午餐 y entre 22 y 30 euros en cena…' (午餐 = «almuerzo»); [89] '…revisión de stock de productos críticos, подготовка mise en place…' (ruso «preparación»); [90] '…tiempo de primera饮料 de 15 minutos…' (饮料 = «bebida») y '…cierre de barra, контрол de caja…' (ruso «control»); [100] '…experiencia en carta de бар-restaurante…'; [117] '…establecimientos de restauración con伏 que superen los 75 metros cuadrados…'.",
+      "fix": "Regenerar el .docx con `bridge.py --strict-lang` (guard_idioma ya aborta con código 2 ante CJK/cirílico) y añadir un gate de barrido de caracteres no latinos sobre `astro-site/public/dl/**/*.docx` antes de publicar, equivalente al `valida()` de fase8c-libreria-assemble.py. No parchear a mano: hay 8 párrafos y la frase original se perdió en cada uno."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B12:B13 y B38",
+      "hallazgo": "El 35 % de la facturación que es bebida paga coste DOS veces: una vez al 30 % como food cost sobre el total de ingresos y otra al 22 % como coste de bebida. El resultado es que el ratio 'Food cost %' que el libro presenta como 30 % es en realidad un 37,7 % de coste de mercancía, y el ratio está tecleado como constante para que no se note.",
+      "evidencia": "B12 = 94.627,5 = 30 % x 315.425 (el 100 % de los ingresos, bebida incluida), etiquetado 'Food cost (30% sobre ingresos)'. B13 = 24.287,725 = 22 % x 35 % x 315.425, etiquetado 'Bebidas cost (22% sobre ingresos bebida ~35%)'. Coste de mercancía total = 118.915,23 sobre 315.425 = 37,70 %. El cálculo correcto sin solape sería 30 %x65 % + 22 %x35 % = 27,20 % = 85.795,60 €, es decir 33.119,63 € menos. Y B38 está tecleado como 0,30, no calculado, así que el libro se autocertifica un food cost que no tiene.",
+      "fix": "Separar la fila de ingresos en comida (65 %) y bebida (35 %) y aplicar cada ratio a su base: B12 = 0,30*0,65*B10 y B13 = 0,22*0,35*B10. B38 debe ser una fórmula =(B12+B13)/B10, no una constante, para que el propio libro delate la desviación cuando el usuario cambie los porcentajes."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'4. Escenarios'!B12:D12 y fila 10",
+      "hallazgo": "La hoja de escenarios da un resultado distinto al del P&L para EL MISMO escenario con los MISMOS inputs, y el único escenario que sale en beneficio lo consigue porque se le aplica en silencio un ratio de coste variable 5 puntos mejor que a los otros dos. La fila 'Food cost %' es decorativa: ninguno de los tres resultados se calcula con ella.",
+      "evidencia": "Escenario 'Realista' (C6=55 cubiertos, C7=18,5 €, C8=310 días, C10=30 %, C11=192.600) da C12 = -50.658,75, mientras el P&L con esos mismos cinco inputs da '2. P&L 3 Anos'!B32 = -22.169,98: 28.488,77 € de diferencia. Despejando el coste variable implícito de cada columna: pesimista (198.000-192.600+103.500)/198.000 = 55,0 %; realista (315.425-192.600+50.658,75)/315.425 = 55,0 %; optimista (470.400-192.600-42.600)/470.400 = 50,0 %. El único escenario con beneficio se lleva un descuento no declarado de 5 puntos = 23.520 €, más de la mitad de los 42.600 € que presenta.",
+      "fix": "Recalcular B12:D12 con la misma cadena de costes que el P&L (misma estructura de CV desglosados y mismos costes fijos), aplicando de verdad el 'Food cost %' de la fila 10 y añadiendo filas de CV total y resultado neto. Si el escenario optimista sólo funciona con un CV del 50 %, la fila 10 debe decir 50 % y justificarlo."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§8 Plan Financiero, párrafo [108]",
+      "hallazgo": "Error aritmético que induce una decisión de negocio ruinosa: el documento traduce «alquiler 8-10 % de la facturación» a «no superar 800-1.000 €/mes», cuando son 2.333-2.917 €/mes. Un emprendedor que siga esta regla descarta todos los locales viables de su ciudad y no encuentra nunca uno que cumpla el criterio.",
+      "evidencia": "docx [108]: «El alquiler se sitúa entre 8% y 10%, lo que implica un contrato de arrendamiento que no supere los 800-1.000 euros mensuales en zona urbana de nivel medio-alto». Con la facturación de 350.000 €/año que el propio [107] proyecta, el 8-10 % son 28.000-35.000 €/año = 2.333-2.917 €/mes. El Excel presupuesta 3.000 €/mes ('1. Inversion Inicial'!C7 «3 x 3.000 EUR/mes» y '2. P&L 3 Anos'!B19 = 36.000 €/año), es decir tres veces el techo que recomienda el Word. Y la propia hoja Instrucciones!A20 dice «Alquiler local 80-120m2 zona urbana: 2.000-4.500 EUR/mes».",
+      "fix": "Corregir [108] a «2.300-2.900 €/mes para una facturación de 350.000 €» y añadir la regla operativa (renta anual <= 10 % de la facturación prevista). De paso, los 36.000 € del Excel son el 11,4 % de 315.425 €, así que el caso base incumple su propio ratio: ver DOM-13."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§8 párrafo [109]; contrastar con '3. Punto Equilibrio'!B15:B16 y docx [127]",
+      "hallazgo": "El punto de equilibrio del Word está calculado a 365 días de apertura (un restaurante que no cierra ni un día del año) y además afirma que 40 cubiertos son «el 80 % de la capacidad instalada» cuando con sus propias 50 plazas y 1,8 rotaciones son el 44 %. El pack entrega tres break-even distintos e incompatibles.",
+      "evidencia": "docx [109]: «40 cubiertos diarios a un ticket medio de 22 euros, generando ingresos diarios de 880 euros y anuales de 321.200 euros» → 880 x 365 = 321.200, pero el Excel opera a 310 días ('2. P&L 3 Anos'!B9) y el propio docx §2 [52] a 340 días; a 310 días serían 272.800 €. Sigue [109]: «Este umbral representa el 80% de la capacidad instalada», pero [107] fija 50 plazas y «rotación media de 1,8 servicios diarios» = 90 cubiertos/día de capacidad, luego 40 es el 44,4 %. Y el pack da tres cifras: 40 cubiertos ([109]), «45-50 cubiertos diarios» ([127]) y 57,9 cubiertos / 332.075 € ('3. Punto Equilibrio'!B15:B16).",
+      "fix": "Recalcular el break-even una sola vez en el Excel (con fórmula, ver DOM-11) y hacer que el Word lo cite en lugar de recalcularlo por su cuenta. Eliminar la afirmación del «80 % de la capacidad instalada» o sustituirla por el porcentaje real sobre plazas x rotaciones."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B40:F40; contrastar con plan-de-negocio-bar-restaurante.docx §9 [119]",
+      "hallazgo": "Información legal falsa sobre una obligación con inspección detrás, y además contradictoria entre los dos ficheros del pack: el checklist vende un «carnet de manipulador obligatorio» que está derogado desde 2010, y el Word inventa un «certificado oficial de al menos veinte horas» que no existe en ninguna norma.",
+      "evidencia": "Checklist B40 = 'Carnet de manipulador de alimentos (todo el equipo)', F40 = 'Obligatorio, online ~15 EUR'. El RD 109/2010 derogó el RD 202/2000 y con él el carnet: lo exigible es que la empresa garantice la formación de sus manipuladores (Rgto. CE 852/2004, anexo II cap. XII), sin carnet ni horas mínimas oficiales, y quien responde es el titular, no el empleado (aquí C40 = 'Empleados'). En paralelo, el docx [119] afirma «La normativa de 2024 refuerza los requisitos de formación del personal manipulador, exigiendo certificado oficial de al menos veinte horas»: no existe tal norma ni tal umbral.",
+      "fix": "Reescribir B40 como «Formación en higiene alimentaria de todo el equipo (responsabilidad de la empresa; acreditar en el plan APPCC)», responsable = Socios/Consultor, y borrar de [119] la frase de la «normativa de 2024» y las veinte horas. Estas dos afirmaciones son las que un inspector desmonta en la primera visita y las que exponen a ChefBusiness a una reclamación por información legal errónea."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B21:F22; contrastar con plan-de-negocio-bar-restaurante.docx §9 [119]",
+      "hallazgo": "El checklist manda al cliente a inscribirse en el RGSEAA —un registro estatal que NO le corresponde a un bar-restaurante— y lo hace además en dos filas duplicadas, mientras omite el registro que sí le toca, el sanitario autonómico. Es un trámite fantasma que infla la cuenta de «50+ trámites» y deja fuera el real.",
+      "evidencia": "B21 = 'Autorizacion sanitaria de funcionamiento' con F21 = 'Registro RGSEAA' (responsable 'Consejeria') y B22 = 'Inscripcion Registro General Sanitario' con F22 = 'Obligatorio para servir alimentos' (responsable 'Comunidad'): la misma gestión listada dos veces. El RD 191/2011, art. 2.2, excluye del RGSEAA a los establecimientos minoristas que suministran al consumidor final, que es exactamente este negocio; su inscripción es en el registro sanitario de la comunidad autónoma. El docx [119] repite el error: «El Registro General Sanitario de Empresas Alimentarias y Alimentos (RGSEAA) es obligatorio desde el primer día de actividad».",
+      "fix": "Fundir B21 y B22 en una sola fila: «Inscripción en el Registro Sanitario de la Comunidad Autónoma (declaración responsable de inicio de actividad alimentaria)», nota «El RGSEAA estatal no aplica al minorista que sirve al consumidor final — RD 191/2011 art. 2.2». Corregir la frase equivalente del docx [119]."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": "líneas 143 (grid, tarjeta 'Plan de Financiación') y ~272 (cta.items); dashboard src/pages/PlanNegocioBarRestauranteDashboard.tsx:26",
+      "hallazgo": "Una de las 9 tarjetas del grid, un ítem del CTA final y la descripción del dashboard prometen un «Plan de Financiación» con ICO, ENISA, business angels y subvenciones autonómicas en orden recomendado de gestión. No existe: ningún fichero del pack contiene esa sección, esa hoja, ni la palabra ENISA.",
+      "evidencia": "Landing línea 143: «Plan de Financiación — Opciones reales: ICO, ENISA, préstamo bancario, inversores privados, business angels y subvenciones autonómicas con orden recomendado de gestión». cta.items: «Plan de financiación: ICO, ENISA, banca, business angels». Dashboard línea 26 describe el Word con «…plan financiero y plan de financiación». Lo entregado: el .docx tiene 10 secciones (índice, párrafos [24]-[33]) y ninguna se llama Plan de Financiación; el asunto se despacha en dos frases en §8 [111] que nombran «programas ICO o líneas de CaixaBank y BBVA» y nada más — ni ENISA, ni business angels, ni subvenciones autonómicas, ni orden de gestión. El .xlsx tiene 6 hojas y ninguna es de financiación.",
+      "fix": "O se escribe la sección/hoja (cuadro de amortización del préstamo + tabla comparativa ICO/ENISA/banca/BA/subvenciones con orden y plazos), o se retiran las tres menciones. Dado que la landing lo vende como uno de los 9 bloques y el comprador lo verá al abrir los ficheros, escribirla es lo que evita el reembolso."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'3. Punto Equilibrio'!B7:B8 vs '2. P&L 3 Anos'!B30 y '4. Escenarios'!B11:D11",
+      "hallazgo": "Complemento al hallazgo ya conocido de las cero fórmulas, desde la lente financiera: la ausencia de vínculos ENTRE hojas es la causa raíz de DOM-01, DOM-05 y de este desajuste. El libro maneja DOS totales de costes fijos distintos a la vez y ninguna hoja se entera de la otra.",
+      "evidencia": "'2. P&L 3 Anos'!B30 = 198.108,5 (suma verificada de B19:B29). Pero '3. Punto Equilibrio'!B7 = 16.050 €/mes → B8 = 192.600 €/año, y '4. Escenarios'!B11:D11 = 192.600 en las tres columnas. Diferencia de 5.508,50 € sin explicación posible: no es la amortización (198.108,5-5.000 = 193.108,5), ni los imprevistos (191.800), ni la cuota de préstamo (190.908,5). El break-even publicado (17.950 cubiertos, 57,9/día, 332.075 €) sale del total equivocado; con el B30 real y el CV del 44,22 % del propio P&L serían 19.196 cubiertos, 61,9/día y 355.126 € — 23.051 € más de facturación exigida.",
+      "fix": "'3. Punto Equilibrio'!B8 = '2. P&L 3 Anos'!B30, B7 = B8/12, B10 = '2. P&L 3 Anos'!B16/('2. P&L 3 Anos'!B7*'2. P&L 3 Anos'!B9), B11 = B9-B10, B14 = B8/B11, B15 = B14/310, B16 = B14*B9. Y '4. Escenarios'!B11:D11 apuntando también a B30. Con eso los tres break-even del pack convergen solos."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'1. Inversion Inicial'!A44:C44 y B46; Instrucciones!A15; docx [106] y [126]",
+      "hallazgo": "El fondo de maniobra está infradotado y las tres cifras del pack se contradicen. La partida se etiqueta como «3 meses de costes fijos» pero cubre 1,8; el Word la baja a 25.000 € y afirma que dan para SEIS meses, cuando dan para mes y medio. Es exactamente la partida cuya infradotación cierra restaurantes en el primer año, y el propio producto se vende diciendo que ese es el error a evitar.",
+      "evidencia": "'1. Inversion Inicial'!A43 = 'FONDO DE MANIOBRA (3 meses operaciones)', A44 = 'Colchon operativo (3 meses costes fijos)', B44 = 30.000, C44 = 'Cubrir primeros meses sin beneficios'. Pero los costes fijos mensuales son 16.050 ('3. Punto Equilibrio'!B7) o 16.509 ('2. P&L 3 Anos'!B30/12): 3 meses son 48.150-49.527 €, no 30.000 (=1,8 meses). Instrucciones!A15 exige «Fondo de maniobra: mínimo 3 meses de costes fijos antes de abrir», que su propia hoja 1 incumple. El docx [106] lo fija en 25.000 € y [126] afirma que es «suficiente para cubrir seis meses de operación sin rentabilidad»: 25.000/16.509 = 1,51 meses, un error de factor 4. Además [106] mete los 25.000 DENTRO de los 133.000 y [126] los llama «25.000 euros adicionales a la inversión inicial».",
+      "fix": "Subir B44 a 3x(costes fijos mensuales) por fórmula (=3*'2. P&L 3 Anos'!B30/12 ≈ 49.527) y recalcular B46; corregir [126] a «mes y medio» o elevar la cifra, y decidir si el fondo va dentro o fuera de la inversión, diciéndolo igual en [106] y [126]. Con las pérdidas reales del Año 1 (DOM-01) el colchón necesario es aún mayor y conviene decirlo."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "Instrucciones!A12:A16 contra '2. P&L 3 Anos'!B12:B20 y B19",
+      "hallazgo": "El producto vende «Instrucciones y Ratios de Referencia» como uno de sus 9 bloques, y su propio caso base suspende los TRES ratios que la hoja declara. Un cliente que aplique el semáforo del producto a los números del producto concluye que el proyecto no es viable, que es justo lo contrario de lo que la landing promete.",
+      "evidencia": "Instrucciones!A12 «Food cost objetivo: 28-32%» → real 37,70 % ((94.627,5+24.287,725)/315.425, ver DOM-04). A13 «Coste personal: no superar 35% de los ingresos» → 66,31 % con el dato correcto de la hoja 5 (209.171,2/315.425), y ya 36,52 % con el dato erróneo del P&L ('2. P&L 3 Anos'!B39 = 0,36522), es decir suspende incluso antes de corregir DOM-01. A14 «Alquiler: no superar 8-10% de los ingresos previstos» → 11,41 % (36.000/315.425). A16 «Punto de equilibrio: alcanzable en menos de 12 meses = negocio viable» → el break-even es 57,9 cubiertos/día y el Año 1 opera a 55: el caso base no lo alcanza nunca.",
+      "fix": "Antes de tocar la redacción, rehacer el caso base para que pase su propio semáforo: bajar plantilla o subir cubiertos/ticket hasta que personal <=35 % y alquiler <=10 %, y corregir la doble imputación de bebida. Un plan de negocio cuyo escenario realista suspende sus propios ratios no se puede presentar a un banco ni vender por 35 €."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "las 6 hojas — carencia estructural; contrastar con la promesa en astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts:171",
+      "hallazgo": "Falta la previsión de TESORERÍA mensual y el cuadro de amortización del préstamo, que son las dos primeras cosas que pide un banco. Sin ellas el libro no es «exactamente el formato que piden bancos e inversores», que es literalmente lo que se promete tres veces en la landing.",
+      "evidencia": "Hojas presentes: '1. Inversion Inicial', '2. P&L 3 Anos', '3. Punto Equilibrio', '4. Escenarios', '5. Personal', 'Instrucciones'. No hay cash-flow mensual del Año 1, ni cuadro de amortización del préstamo de 80.000 € que el docx [111] recomienda solicitar, ni cálculo de payback/ROI, ni tratamiento del IVA. La landing why.reasons línea 171: «Es exactamente el formato que pide un banco para evaluar la financiación: P&L 3 años, punto de equilibrio, 3 escenarios, ratios financieros y plan de financiación». Con un Año 1 en pérdidas y un fondo de maniobra de 30.000 €, la pregunta que decide la operación es en qué mes se agota la caja, y el libro no la responde.",
+      "fix": "Añadir dos hojas: 'Tesoreria Mensual Ano 1' (12 columnas: cobros, pagos por partida, IVA repercutido/soportado y liquidación trimestral, saldo acumulado arrancando en el fondo de maniobra) y 'Prestamo' (cuadro francés con principal, tipo, plazo, separando intereses —gasto del P&L— de amortización de principal —salida de caja—). Son las dos hojas que convierten este libro en presentable."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B28:D28 y B33:D33",
+      "hallazgo": "Dos errores de concepto contable-fiscal en el mismo bloque: la cuota del préstamo se imputa íntegra como gasto (sólo los intereses lo son) y con un importe que no financia los 80.000 € que el Word recomienda; y el Impuesto de Sociedades ignora la compensación de la base imponible negativa del Año 1 y aplica el tipo general donde procedería el reducido de entidad de nueva creación.",
+      "evidencia": "B28 = 7.200 €/año = 600 €/mes: los 80.000 € a 7-10 años del docx [111] dan cuota de ~1.169 €/mes (14.030 €/año) a 7 años o ~888 €/mes (10.658 €/año) a 10 años al 6 %; 600 €/mes no devuelve 80.000 € en 10 años ni sin intereses (600x120 = 72.000). Además la amortización del principal no es gasto: sólo los intereses deben estar en la fila 28. B33: A33 dice «Impuesto Sociedades (15% ano 1, 25% ano 2-3)» y aplica C33 = 3.736,88 (25 % de 14.947,52) y D33 = 13.171,66 (25 % de 52.686,63), sin restar antes la base negativa de B32 (-22.169,98) y sin ver que, al ser el Año 1 negativo, el tipo del 15 % de nueva creación se traslada al primer periodo con base positiva y al siguiente. Con compensación y tipo correcto: Año 2 base 0 → 0 €, Año 3 base 52.686,63 al 15 % → 7.902,99 €. Sobre-impuesto acumulado: 8.905,55 €.",
+      "fix": "Partir la fila 28 en 'Intereses del préstamo' (gasto) y llevar la amortización del principal a la hoja de tesorería (DOM-14). Reescribir la fila 33 con compensación de bases negativas y el tipo del 15 % para los dos primeros periodos con base positiva (art. 29.1 LIS)."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§6 párrafo [82] y §1 párrafo [40]",
+      "hallazgo": "El dimensionado del local es físicamente imposible y, si el cliente lo lleva al proyecto técnico, la licencia de actividad se la deniegan: se le asigna 1 m² por comensal cuando el estándar de sala y el cálculo de ocupación de evacuación exigen alrededor de 1,5 m².",
+      "evidencia": "docx [82]: «La distribución funcional recomendada para 60-80m2 totales distribuye 15-20m2 para cocina, 40-50m2 para sala interior con capacidad para 40-50 covers». 45 m² / 45 comensales = 1,0 m²/pax. El CTE DB-SI computa la ocupación de zonas de público sentado en restauración a 1,5 m²/persona, y la práctica de sala en casual dining está en 1,2-1,5 m² incluidos pasos: en 45 m² caben ~30 plazas, no 50. Coherente con esto, el propio Excel sólo compra mobiliario para 56 plazas ('1. Inversion Inicial'!A26 «Mesas y sillas (12 mesas x 4 sillas)» + A27 «Taburetes barra (8 unidades)»), y §1 [40] repite «60 a 80 metros cuadrados de sala más cocina, con capacidad para 40 a 50 comensales en interior».",
+      "fix": "Corregir [82] y [40] a 30-35 plazas interiores para 40-50 m² de sala, o subir la superficie a 60-75 m² de sala si se quieren mantener las 50 plazas — y decir explícitamente que el aforo final lo fija el proyecto técnico según el CTE DB-SI, porque de ese número dependen las salidas de evacuación y los aseos."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "párrafos [42], [44], [110], [112], [127]",
+      "hallazgo": "El documento da CINCO horizontes de retorno distintos, y el más optimista de ellos (18-24 meses) es cuatro veces mejor que el que se deduce del Excel adjunto. Es la cifra que un inversor comprueba primero.",
+      "evidencia": "[42] «El punto de equilibrio se estima entre los meses 8 y 10 de actividad»; [44] «horizonte de retorno de 18 a 24 meses»; [110] «El realista proyecta los flujos descritos y alcanza rentabilidad entre 30 y 40 meses»; [112] «El retorno de inversión se estima entre 30 y 40 meses»; [127] «La inversión de 80.000-150.000 euros se amortiza en un horizonte de 36-48 meses». Con el Excel tal cual está, el resultado acumulado a tres años es -22.169,98 + 11.210,64 + 39.514,97 = +28.555,63 € sobre una inversión de 132.160 € ('1. Inversion Inicial'!B46): el payback supera los 8 años, y con DOM-01 corregido nunca llega.",
+      "fix": "Calcular el payback una sola vez en la hoja de tesorería (DOM-14) sobre el flujo de caja libre acumulado y hacer que las cinco menciones del Word citen ese número. Si el payback real es de 8+ años, decirlo: un banco lo recalcula en dos minutos y descubrir la discrepancia hunde la operación entera."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§7 párrafo [102]",
+      "hallazgo": "Segundo error aritmético del mismo tipo que DOM-06, esta vez en el coste de personal: el documento calcula un coste mensual y lo compara con una facturación anual, concluyendo un 35-45 % donde son 49-60 %. Justo el ratio que el producto declara como límite de viabilidad.",
+      "evidencia": "docx [102]: «El coste laboral total incluyendo Seguridad Social a cargo de la empresa del 33,4 por ciento se sitúa entre 2.400 y 2.900 euros mensuales por empleado de categoría media, cifra que multiplicada por seis trabajadores arroja un coste mensual de personal de 14.400 a 17.400 euros, equivalente al 35-45 por ciento de la facturación prevista». 14.400-17.400 €/mes x 12 = 172.800-208.800 €/año sobre los 350.000 € que proyecta [107] = 49,4-59,7 %. Con 14 pagas (que es como calcula '5. Personal'!F13) sería aún más. Instrucciones!A13 fija el techo en 35 %.",
+      "fix": "Corregir el porcentaje en [102] y, si el resultado real es 49-60 %, replantear la plantilla en el mismo párrafo: es la conclusión operativa más valiosa que puede dar este documento y ahora mismo la esconde tras una división mal hecha."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§1 [41], §8 [106] y '1. Inversion Inicial'!A6:B46",
+      "hallazgo": "El pack contiene TRES desgloses de inversión inicial mutuamente excluyentes, con partidas que existen en uno y no en los otros. El cliente no puede saber cuál llevar al banco, y ninguno de los dos del Word incluye la fianza ni la primera renta, que son los primeros 13.500 € que va a pagar.",
+      "evidencia": "§1 [41]: 80.000-150.000 € = obra+cocina 35.000-55.000, mobiliario y decoración 20.000-30.000, utillaje y mise en place 8.000-12.000, fondo de maniobra 15.000-25.000, apertura y marketing 8.000-15.000 (suma 86.000-137.000, no llega a los 150.000 del titular). §8 [106]: 133.000 € = local 25.000 + cocina 30.000 + sala 15.000 + barra 8.000 + terraza 6.000 + marketing 5.000 + legales 3.000 + stock inicial 5.000 + fondo maniobra 25.000 + imprevistos 11.000. Excel: 132.160 € (B46, suma verificada de B6:B45) con local y acondicionamiento 50.000, cocina 25.700, sala y barra 17.560, marketing 4.000, legales 4.900, fondo 30.000. Partidas que sólo están en el Word: terraza 6.000, stock inicial 5.000, imprevistos 11.000. Partidas que sólo están en el Excel: fianza 9.000 ('1. Inversion Inicial'!B7), primer mes de alquiler 3.000 (B8), honorarios inmobiliaria 1.500 (B9).",
+      "fix": "Dejar el Excel como única fuente y hacer que §1 y §8 citen sus subtotales por bloque. Incorporar al Excel las tres partidas que sólo tiene el Word (terraza, stock inicial de materias primas, imprevistos) —son reales y su ausencia deja el presupuesto corto— y mantener fianza y primera renta, que el Word olvida."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§6 [84]-[85] contra '1. Inversion Inicial'!B14:B33",
+      "hallazgo": "El Word describe un equipamiento que cuesta entre el doble y el triple de lo presupuestado en el Excel. Un cliente que compre lo que dice el Word se sale del presupuesto en unos 25.000-30.000 € sin haber abierto.",
+      "evidencia": "docx [84]: «El equipamiento de cocina representa aproximadamente el 35-40% de la inversión inicial, con un desembolso estimado de 28.000-60.000 EUR» → el Excel destina 25.700 € (suma B14:B23) = 19,4 % de 132.160. «El frío requiere armario refrigerado de dos puertas, mesa fría de preparación, y cámara de conservación […] con inversión estimada de 12.000-18.000 EUR» → Excel: cámara 3.500 (B18) + mesa refrigerada 2.200 (B17) = 5.700 €. «El lavavajillas industrial de capota representa 4.000-7.000 EUR» → Excel B20 = 2.800 € ('Cesta 50x50'). «La inversión en mobiliario oscila entre 8.000-15.000 EUR» → Excel: mesas y sillas 3.600 (B26) + taburetes 960 (B27) = 4.560 €.",
+      "fix": "Alinear las horquillas del Word con las partidas del Excel (o subir el Excel si las horquillas del Word son las correctas para el nivel de equipamiento que se describe). Mientras discrepen, la lista de la compra que el cliente use decidirá si el presupuesto le cuadra o le falla en 30.000 €."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/planes/plan-negocio-bar-restaurante.ts",
+      "ubicacion": "líneas 141 (grid 'Análisis de Mercado España 2026'), 167 (why) y bonus item 2 (BONUS 2, valorado en €19)",
+      "hallazgo": "El «Análisis de Mercado España 2026» se vende dos veces —como tarjeta del grid y como BONUS valorado en 19 €— prometiendo tres datos concretos que no aparecen en ningún fichero. Además su cifra estrella contradice al propio Word por un factor de 2,6.",
+      "evidencia": "Landing: «81K+ restaurantes activos, ticket medio por comunidad autónoma, inversión media por tipo de local y tasa de cierre en los 3 primeros años» (repetido en grid:141, why:167 y bonus). Lo entregado: el .docx no contiene NI UNA tabla (verificado: 0 tablas en todo el documento), no desglosa ticket medio por comunidad autónoma (sólo enumera Madrid, Barcelona, Valencia, Sevilla y Bilbao sin cifras, [60]), no da inversión media por tipo de local y no da tasa de cierre a 3 años (dice «tasa de supervivencia […] en torno al 65% durante los primeros tres años», [58]). El Excel Instrucciones!A23:A24 da cierre a 1 y 5 años, no a 3. Y sobre los 81K: el docx [55] afirma «aproximadamente 355.000 establecimientos de restauración, de los cuales cerca de 210.000 corresponden a bares y restaurantes».",
+      "fix": "O se añade al docx una sección de mercado con tabla real (ticket medio por CCAA, inversión por formato, supervivencia a 1/3/5 años, con fuente y fecha), o se retiran las tres promesas y el BONUS 2. Y unificar la cifra de establecimientos entre landing y documento: ahora mismo el cliente lee 81K en la web y 210K en el fichero."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§3 párrafo [55]; contrastar con [56] y [125]",
+      "hallazgo": "Los datos macro del análisis de mercado no cuadran entre sí: la facturación y el porcentaje de PIB que se citan en la misma frase son incompatibles con cualquier PIB español real, y la fuente está mal nombrada. Es el párrafo que un analista contrasta antes que ningún otro.",
+      "evidencia": "docx [55]: «El sector genera una facturación anual superior a los 145.000 millones de euros, lo que representa aproximadamente el 6,5% del PIB nacional». 145.000/0,065 implica un PIB de 2,23 billones de €; el PIB español ronda 1,6-1,7 billones, con lo que 145.000 M€ serían ~8,8 %. Las dos cifras no pueden ser ciertas a la vez. La fuente se cita como «Federación Española de Hostelería y Restauración», denominación que la patronal abandonó: hoy es Hostelería de España. En el mismo bloque, [56] fija el gasto per cápita en «1.650 euros anuales» y [125] lo eleva a «supera los 1.800 euros por persona», sin que medie ningún matiz.",
+      "fix": "Recalcular o corregir una de las dos cifras de [55] para que sean coherentes, citar la fuente por su nombre actual y con año de referencia, y unificar el gasto per cápita entre [56] y [125]. Regla general para este documento: toda cifra de mercado con fuente y fecha, o fuera."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§9 [117] y [122] contra §10 [128] y checklist 'Checklist Apertura'!A15/D18",
+      "hallazgo": "El cronograma de apertura del propio documento es imposible según los plazos que el propio documento declara dos páginas antes: la hoja de ruta abre el mes 6 cuando las licencias, iniciadas el mes 1-2, tardan 5-8 meses. Y el pack da tres cronogramas distintos.",
+      "evidencia": "docx [117]: «la licencia de apertura puede extenderse entre cuatro y seis meses desde la solicitud completa». [122]: «El plazo total para obtener la totalidad de licencias y poder abrir legalmente se estima entre cinco y ocho meses». Pero [128]: «La hoja de ruta de implementación se estructura en seis meses. Durante los meses 1 y 2 […] se inicia el trámite de licencia de apertura ante el ayuntamiento, proceso que en España puede extenderse 45-60 días […] El mes 6 contempla el soft opening […] y apertura oficial al público». 45-60 días en [128] frente a 4-6 meses en [117]. El checklist propone un tercer calendario: fases hasta el 'Mes 6-8' (A51) con 'Declaracion responsable o licencia actividad' a '1-3 meses' (D18).",
+      "fix": "Fijar un solo cronograma —el conservador de [122], 8-10 meses hasta apertura— y reescribir [128] y las cabeceras de fase del checklist sobre él. Un plan que promete abrir en 6 meses hace firmar al cliente un alquiler que pagará vacío durante los 2-4 meses de diferencia: al precio del Excel, 6.000-12.000 € de renta muerta."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§7 párrafo [100]; contrastar con 'Checklist Apertura'!F37 y '5. Personal'!C7",
+      "hallazgo": "Se atribuye a «el convenio colectivo de hostelería» una cifra salarial concreta como si existiera una tabla estatal única. No existe: las tablas de hostelería son provinciales. Y la cifra citada no coincide con el salario que el Excel del mismo pack asigna a ese puesto.",
+      "evidencia": "docx [100]: «El convenio colectivo de hostelería establece para este categoría un salario base de 2.134 euros mensuales en catorce pagas» (para el jefe de cocina). El ALEH es un acuerdo marco estatal sin tablas salariales; el salario base sale del convenio provincial, y de ahí que el propio checklist F37 diga bien «Convenio hosteleria de tu provincia». El Excel '5. Personal'!C7 asigna al jefe de cocina 2.000 €/mes, 134 € menos. Llamativo además que 2.134 coincida con '5. Personal'!E8 = 2.134,4, que es el coste total mes del cocinero, no el salario base del jefe de cocina.",
+      "fix": "Reescribir [100] como «el convenio provincial de hostelería aplicable fija el salario base de esta categoría; consúltalo en tu provincia antes de cerrar la estructura salarial» y remitir a '5. Personal' para el caso base. Citar una cifra estatal inexistente es lo que hace que un asesor laboral desacredite el documento entero delante del cliente."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!F14 contra plan-de-negocio-bar-restaurante.docx §9 [116]",
+      "hallazgo": "Los dos ficheros dan cifras de cuota de autónomo societario que difieren en casi 4x, y ninguna de las dos es la vigente. Es el primer gasto fijo que el emprendedor apunta en su hoja de caja.",
+      "evidencia": "Checklist F14 = 'Tarifa plana 80 EUR/mes' junto a B14 'Alta autonomos socios trabajadores (si aplica)'. docx [116]: «La Tesorería General de la Seguridad Social exige el alta […] con cuotas mensuales que rondan los 300 euros para un autónomo societario». Con el sistema de cotización por ingresos reales vigente desde 2023, el autónomo societario cotiza por la base mínima de su grupo, con cuota en el entorno de 380-400 €/mes; y la aplicación de la tarifa plana al societario ha sido litigiosa y no puede darse por sentada en una casilla de checklist.",
+      "fix": "Unificar en ambos ficheros: «cuota de autónomo societario según base mínima del tramo; consultar el importe del ejercicio en curso y verificar con la gestoría si procede tarifa plana». Sin importe fijo, que caduca cada enero."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B41:F41",
+      "hallazgo": "Se presenta como obligatorio contratar un servicio de prevención ajeno, cuando la ley permite expresamente al empresario asumir personalmente la actividad preventiva en una empresa de este tamaño. Es un gasto recurrente que se impone sin necesidad.",
+      "evidencia": "B41 = 'Prevencion riesgos laborales', F41 = 'Obligatorio contratar servicio externo'. El art. 30.5 de la Ley 31/1995 y el art. 11 del RD 39/1997 permiten al empresario asumir personalmente la actividad preventiva en empresas de hasta 25 trabajadores con un único centro de trabajo, si tiene la formación y desarrolla su actividad en el centro (con la vigilancia de la salud concertada aparte). El docx [121] lo plantea mejor: «obligaciones que pueden cumplirse mediante servicio de prevención ajeno con coste aproximado de 600 euros anuales».",
+      "fix": "Cambiar F41 a «Obligatorio tener plan de prevención: puede asumirlo el empresario (<=25 trabajadores, un centro) o concertarse con un SPA; la vigilancia de la salud se concierta en todo caso». Lo que es obligatorio es la prevención, no el proveedor."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "líneas 962-980 (entrada 'plan-negocio-bar-restaurante' v1.1)",
+      "hallazgo": "El changelog que el cliente ve en su dashboard titula «Revisión completa de los 2 ficheros» en un producto que entrega 3. El .docx —el que lleva las 32 inyecciones CJK y las contradicciones financieras— quedó fuera de la revisión, y el changelog lo delata sin decirlo.",
+      "evidencia": "productos-changelog.ts:969 title: 'Revisión completa de los 2 ficheros' y :976 'Metadatos, instrucciones y autoría actualizados en los 2 ficheros'. El dashboard (src/pages/PlanNegocioBarRestauranteDashboard.tsx:12-33) sirve 3 descargas: plan-financiero (.xlsx), plan-negocio (.docx) y checklist-apertura (.xlsx). Las marcas de tiempo lo confirman: los dos .xlsx son del 22-ago 11:13 y el .docx del 18-ago 12:39, anterior a la Fase A.",
+      "fix": "Corregir el título a «los 2 ficheros Excel» (honesto) o, mejor, meter el .docx en la revisión y entonces sí decir «los 3 ficheros». Tal como está, un cliente atento ve que uno de los tres entregables no se ha tocado."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "propiedades del documento y configuración de página (sección única)",
+      "hallazgo": "Caso que se le escapó a la Fase A: el .docx conserva los metadatos del generador y está maquetado en tamaño CARTA (US Letter), no A4. La Fase A aplicó metadatos «AI Chef Pro» y A4 a los dos .xlsx, pero este fichero quedó fuera.",
+      "evidencia": "core_properties del .docx: author = 'python-docx', comments = 'generated by python-docx', title = '' (vacío), last_modified_by = ''. Los dos .xlsx sí traen creator = 'AI Chef Pro', lastModifiedBy = 'AI Chef Pro' y title poblado. Tamaño de página del .docx: 7772400 x 10058400 EMU = 215,9 x 279,4 mm = US Letter; el A4 son 7560000 x 10692000 EMU (210 x 297 mm). Los dos .xlsx tienen paperSize = 9 (A4), fitToWidth = 1 y pie 'AI Chef Pro · aichef.pro · Página &P de &N'. El .docx tampoco lleva la línea «Versión 1.1» que sí tiene el xlsx en Instrucciones!A30, ni la bio anclada («En cocina desde los 17 años · consultor gastronómico desde 2010»): su cierre dice «Mas de 29 anos» e «info@chefbusiness.co».",
+      "fix": "Regenerar el .docx con section.page_width/page_height en A4, márgenes coherentes, core_properties.author = 'AI Chef Pro', title = 'Plan de Negocio: Bar-Restaurante', pie con paginación y las mismas líneas de versión y bio que los .xlsx. Un cliente que abra Archivo → Propiedades antes de mandarlo al banco lee «generated by python-docx»."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "§7, párrafos [99] a [103] — 29 ocurrencias",
+      "hallazgo": "La sección 7 entera está sin espacios detrás de las comas, lo que la hace visiblemente distinta del resto del documento y delata generación automática. En un documento de 35 € que se presenta a un tercero, es el defecto que más rápido se ve sin leer nada.",
+      "evidencia": "Recuento por párrafo de coma seguida de letra sin espacio: [99] 5, [100] 5, [101] 7, [102] 4, [103] 8 — total 29. Ejemplo de [99]: «El organigrama se configura con el gerente-propietario al frente de la dirección estratégica y financiera,un jefe de cocina responsable de la producción,y un jefe de sala que gestiona el servicio en sala y barra». Ninguna otra sección del documento presenta el defecto. En los mismos párrafos hay además palabras pegadas («ubicacionesprime» en [44], «captandoclientela» en [65], «productosno» en [92], «Priorizarcexperiencia» en checklist F36).",
+      "fix": "Normalizar con una pasada de regex sobre el texto generado antes de ensamblar (',(?=[A-Za-zÁÉÍÓÚÑáéíóúñ])' → ', ') y añadirla al gate del generador de .docx, junto al barrido de caracteres no latinos de DOM-03."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B8 y B10; '3. Punto Equilibrio'!B9; hoja Instrucciones",
+      "hallazgo": "En ninguna parte del libro se dice si el ticket medio y los ingresos son con IVA o sin IVA. Es la ambigüedad que más planes financieros de hostelería arruina, porque decide un 10 % de la cifra de negocio, y aquí decide además si el proyecto pierde 22.000 € o 51.000 €.",
+      "evidencia": "B8 = 18,5 etiquetado sólo 'Ticket medio (EUR)'; B10 = 315.425 etiquetado 'INGRESOS BRUTOS' —«bruto» no aclara nada, se usa tanto para «antes de costes» como para «con impuestos»—. Ni Instrucciones!A5:A24 ni el docx §8 lo precisan. Si el 18,50 € es el PVP que ve el cliente (lo normal cuando un hostelero dice «ticket medio»), la base imponible es 16,82 € a IVA 10 % y los ingresos del Año 1 caen a 286.750 €, con lo que el resultado pasa de -22.169,98 a -50.844,98 € sin cambiar ni un supuesto. Tampoco hay tratamiento del IVA soportado ni de la liquidación trimestral, que en hostelería es una salida de caja relevante (repercutido 10 % en comida frente a 21 % en bebidas alcohólicas).",
+      "fix": "Etiquetar explícitamente «Ticket medio (sin IVA)» e «INGRESOS NETOS (sin IVA)» en las tres hojas donde aparecen, añadir en Instrucciones una nota de conversión (PVP/1,10 para comida, PVP/1,21 para bebida alcohólica) y llevar la liquidación de IVA a la hoja de tesorería de DOM-14."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "párrafos [43], [99], [102], [126] y '5. Personal'!B13; ticket en [51], [57], [71], [77], [107], [129]",
+      "hallazgo": "El pack da cinco dimensiones distintas de plantilla y seis ticket medio distintos. Ninguna coincide con el Excel, que es el único fichero donde el número tiene consecuencias.",
+      "evidencia": "Plantilla: [43] «entre 8 y 10 personas»; [99] «un equipo mínimo de cinco a seis personas […] ampliándose a ocho o nueve»; [102] «multiplicada por seis trabajadores»; [126] «una plantilla ajustada de 6-8 empleados»; '5. Personal'!B13 = 7. Ticket medio: [51] «22-25 euros en comida y 25-30 euros en cena»; [57] «entre 18 y 25 euros en [almuerzo] y entre 22 y 30 euros en cena»; [71] «un ticket medio de 20-24 euros»; [77] «ticket medio de 20 euros»; [107] «el ticket medio de 22 euros propuesto»; [129] «El ticket medio debe mantenerse entre 19-24 euros»; '2. P&L 3 Anos'!B8 = 18,5.",
+      "fix": "Elegir el caso base del Excel (7 personas, 18,50 €) y hacer que todas las menciones del Word lo citen, reservando las horquillas para las secciones de mercado donde describen el sector, no el proyecto. Ahora mismo cada sección del documento describe un restaurante diferente."
+     },
+     {
+      "id": "DOM-32",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!A4:B59 (50 filas de tarea)",
+      "hallazgo": "«50+ trámites y licencias» —repetido nueve veces entre landing, schema, FAQ, testimonios y dashboard— se cumple sólo si se cuentan como trámites cosas como «pedir reseñas de Google» o «evaluar el desempeño del equipo». Trámites y licencias reales hay unos 23.",
+      "evidencia": "Recuento de filas de tarea: fase 1 (B5:B14) 10, fase 2 (B16:B24) 9, fase 3 (B26:B33) 8, fase 4 (B35:B41) 7, fase 5 (B43:B50) 8, fase 6 (B52:B59) 8 = 50 exactas, no «50+». De ellas, la fase 6 completa ('Revision diaria de ventas y food cost', 'Ajustar carta segun demanda real', 'Implementar encuesta satisfaccion cliente', 'Evaluar desempeno equipo', 'Revisar P&L vs previsiones', 'Ajustar precios si food cost se desvía', 'Evaluar ROI campanas marketing', 'Pedir resenas Google a clientes satisfechos') son rutinas de gestión post-apertura, y la fase 5 entera es marketing. Trámites/licencias en sentido estricto: las 10 de constitución + 9 de local y licencias + APPCC/alérgenos + manipulador + PRL ≈ 23.",
+      "fix": "O reformular la promesa a «50+ tareas y trámites en 6 fases» (lo que realmente es, y sigue siendo un buen argumento), o ampliar el checklist con los trámites que faltan de verdad y que un profesional espera: hojas de reclamaciones y su cartel, cartel de horario y aforo, seguro de RC obligatorio por la normativa autonómica de espectáculos, boletines de instalación eléctrica y de gas, contrato de recogida de aceite usado, contrato de DDD (desinsectación-desratización), gestión de residuos y, si hay música, la licencia y el alta en la entidad de gestión."
+     },
+     {
+      "id": "DOM-33",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx",
+      "ubicacion": "'Checklist Apertura'!B11:F11",
+      "hallazgo": "Al bar-restaurante se le asigna el epígrafe de IAE de restaurante puro, ignorando el servicio de barra que es la mitad del concepto y da nombre al producto.",
+      "evidencia": "B11 = 'Alta en el IAE (epigrafe 671.4 restaurantes)'. El 671.4 es «Restaurantes de un tenedor»; el servicio en barra corresponde al grupo 673 («Servicios en cafés y bares»). Un local que factura barra y sala, como el que describen '1. Inversion Inicial'!A25 (barra de 5 metros lineales), A28 (cafetera de 2 grupos) y A30 (grifo de cerveza de 2 tomas), suele darse de alta en ambos. La nota F11 «Exento si facturacion <1M EUR» es correcta pero omite que las entidades de nueva creación están además exentas los dos primeros periodos impositivos.",
+      "fix": "Cambiar B11 a «Alta en el IAE (epígrafes 671.x restaurantes y 673.1 cafés y bares, según actividad real)» y ampliar F11 con la exención adicional de los dos primeros ejercicios para entidades de nueva creación."
+     },
+     {
+      "id": "DOM-34",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx",
+      "ubicacion": "'2. P&L 3 Anos'!B15:D15 y B26:D26",
+      "hallazgo": "Dos partidas del P&L están mal planteadas conceptualmente: la comisión de delivery se calcula como un 5 % de TODA la facturación (cuando las plataformas cobran un 25-30 % del pedido servido por ese canal) y la amortización está infradotada y congelada tres años.",
+      "evidencia": "B15 = 15.771,25, etiquetado 'Comisiones delivery (si aplica, 5% ingresos)': Glovo, Uber Eats y Deliveroo cobran del 25 al 30 % sobre el pedido, no un 5 % sobre el total; el 5 % agregado sólo es correcto si el delivery pesa un 17-20 % de las ventas, supuesto que no se declara y que el libro no permite variar. B26 = 5.000 €/año constante los tres años, etiquetado 'Amortizacion equipos (10 anos)': el activo amortizable del Excel (obra 25.000 + decoración 8.000 + equipamiento cocina 25.700 + sala y barra 17.560 + TPV 1.500 ≈ 77.760 €) a 10 años daría 7.776 €/año, y los coeficientes de tablas separan instalaciones de maquinaria con vidas distintas.",
+      "fix": "Sustituir B15 por dos celdas de input («% ventas por delivery» y «comisión de la plataforma») y multiplicarlas; recalcular B26 sobre el activo amortizable real del libro, separando obra e instalaciones de maquinaria y mobiliario. Ninguna de las dos correcciones cambia el veredicto del plan, pero las dos son de las que un analista señala con el bolígrafo."
+     },
+     {
+      "id": "DOM-35",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "página final, párrafos [142]-[147]",
+      "hallazgo": "El entregable de un producto vendido en aichef.pro cierra con un cross-sell que manda al cliente a la tienda de la marca hermana, con cuatro precios escritos a mano en el documento — justo lo que la doctrina del repo prohíbe porque los precios cambian y el .docx no.",
+      "evidencia": "[142] «Complementa este plan con nuestros productos digitales:» seguido de [143]-[146] «Kit de Tareas: Restaurante Casual — 14 EUR», «Kit de Escandallos Pro — 12 EUR», «Pack Plantillas APPCC — 14 EUR», «Gastro Pro Prompts eBook (300+ prompts IA) — 9 EUR» y [147] «chefbusiness.co/productos-digitales/». Los cuatro importes coinciden hoy con src/data/products-catalog.ts (kit-tareas €14:89, kit-escandallos €12:33, pack-appcc €14:43, pro-prompts-ebook €9:23), pero quedan congelados en un fichero ya descargado. El resto del pack apunta a aichef.pro: hoja Instrucciones!A30 «aichef.pro/plan-negocio-bar-restaurante · info@aichef.pro» y footerLinks de la landing.",
+      "fix": "Sustituir los cuatro precios por el nombre del producto y una única URL a aichef.pro/productos-digitales. Si el cross-sell a ChefBusiness es deliberado (son marcas del mismo grupo, ver feedback_marca-chefbusiness-en-productos-aicp-es-deliberada), dejar la marca pero quitar igualmente los importes."
+     },
+     {
+      "id": "DOM-36",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+      "ubicacion": "párrafos [56], [58], [59], [64], [65], [67], [72], [75], [81]",
+      "hallazgo": "Restos de otros idiomas y de traducción automática salpican el documento fuera de las inyecciones CJK de DOM-03, y las cifras del análisis competitivo no tienen fuente identificable.",
+      "evidencia": "[56] «servicio attentive»; [58] «los establecimientos que survive y prosperan»; [59] «La digitalización affecting tanto la gestión interna»; [67] «barreras estructurales superiores al average del sector»; [72] «Este investimento se amortiza» (italiano/portugués); [75] «una soften opening» (por «soft opening»); [81] «practise habitual en el mercado español»; [77] «cubreos diarios»; [40] «genera una facturación bruto». Y [64]: «la densidad media de competidores directos oscila entre 12 y 18 establecimientos por kilómetro cuadrado, según datos del directorio de hostelería de Hosteleria» —fuente sin identificar—, seguido de «El análisis de mercado revela que el 67% de estos competidores opera con modelos de negocio heredados», dato sin origen; [65] «las plataformas Glovo, Deliveroo y Uber Eats concentran el 31% del gasto en alimentación fuera del hogar en zonas urbanas», muy por encima de cualquier estimación publicada.",
+      "fix": "Pasada de corrección de estilo sobre el documento completo tras regenerarlo (DOM-03), y política de fuentes: toda cifra de mercado con entidad emisora y año, o se elimina. Los porcentajes sin fuente (67 % de competidores heredados, 31 % del gasto en delivery, 23 % de crecimiento del fast-casual) son los que un banco pide justificar y no se pueden justificar."
+     }
+    ]
+   }
+  }
+ }
+}
