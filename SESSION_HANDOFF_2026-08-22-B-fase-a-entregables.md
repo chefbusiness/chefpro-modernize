@@ -522,3 +522,11 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   0 errores Excel. APPLY con respaldo → censo 0 → gate offline 3/0 → no-latinos 0 → idempotencia desde lo aplicado 0 → gate LIVE 3/0 → md5 2/2.
   El docx del plan sigue v1.1 (T9). **T7 hermanos de línea A LANZADO** (`planes-v2-hermanos-workflow.js`, runId `wf_5eed55a4-546`: cafetería, tapas-bar,
   panadería, food-truck en serie; sonnet construye `contenido_<pid>/a.py`, opus refuta). Después: APPLY de cada hermano en serie con `PLANES_APPLY=1`.
+- **Guías: fixer cerró B-01..B-05 + 7 avisos** (`auditorias/guias-v2-crit-correccion.json`, `guias-v2-ids.json`): rampa parametrizada (B9=6, B10=60 %;
+  Proyección año 1 = cash flow 2.049.062,40 € al céntimo; EBITDA año 1 honesto 248.723,52 €), brigada a 40 h (K33 960), umbral reetiquetado, «(%)» en
+  panadería (idempotencia 0), `--fichero` en main.py, molde D documentado, demos None → fallo, CAPEX con preapertura y fondo de maniobra (rangos
+  533k/1.163k/2.305k cubren la necesidad 1.889.944 €), contador real de fórmulas (1.883). Mi verificación: 9/10 OK + 1 falso FAIL mío (miré la hoja
+  equivocada). **Gotcha del canario `--fichero`:** el gate de recuento de ítems (§3.4) evalúa TODOS los checklists del producto, así que en modo canario
+  los no procesados (v1.1) fallan → exit 1 tras escribir el fichero. Se restauró `pl-mensual-escenarios.xlsx` desde el respaldo y se lanzó el APPLY
+  completo (cadena en `scratchpad/guias/real3.log`). Pendiente menor: acotar ese gate a los ficheros procesados cuando se use `--fichero`.
+- **Research con fuentes para la guía PDF** (decisión 21) lanzado (opus + WebSearch) → `auditorias/guias-v2-research-sector.json`.
