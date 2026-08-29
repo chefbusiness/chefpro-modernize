@@ -1,0 +1,67 @@
+{
+  "rol": "Verificador RONDA 2 — familia Planes v2.0, representante «plan-negocio-bar-restaurante»",
+  "fecha": "2026-08-29",
+  "entrada": "scripts/productos-digitales/auditorias/planes-v2-correccion.json (T3, 85 resueltos + 11 no_aplicados = 96)",
+  "metodo": {
+    "regeneracion_propia": "CLAUDE_SCRATCHPAD=<scratchpad>/planes/propio-verificador python3 planes-v2_0/main.py --producto plan-negocio-bar-restaurante --dry-run --json <scratchpad>/planes/verif1.json",
+    "regeneracion_hermano": "mismo comando --producto plan-negocio-tapas-bar (para re-verificar RT-02/RT-03)",
+    "censo_independiente": "python3 censo-entregables.py --only plan-negocio-bar-restaurante --fail (sobre astro-site/public/dl/, solo lectura)",
+    "istats": "42-52 °C durante toda la verificación, un python cada vez, sin PLANES_APPLY, sin tocar astro-site/public/dl/**"
+  },
+  "listo": false,
+  "verificados_ok": [
+    "RT-01 (cf_desanclado: sqref A4:F77, fórmula $E4 — reancla correcto, verificado en el XML crudo)",
+    "RT-02 (idempotencia tapas-bar: 0 diferencias, confirmado en dry-run propio)",
+    "RD-01 / RC-01 (gestoría y seguros: fuera de Inversión, sólo en P&L!B26/B27)",
+    "RD-02 / RC-02 parcial (terraza B35, existencias B44:B45 y imprevistos B13 SÍ están en el Excel — pero ver mal_resueltos)",
+    "RD-05 / RT-04 / RT-05 (varios e imprevistos movido a costes variables; demo 1bis y 2bis = true; break-even invariante al volumen confirmado)",
+    "RD-06 (payback y saldo mínimo confirmados vía demo 6_tesoreria_sin_saldo_negativo)",
+    "RD-08 (techo labour cost E56 = 0.34, confirmado en la celda)",
+    "RD-09 / RC-19 (columnas de horas y cobertura en 5. Personal)",
+    "RD-16 / RC-18 / RT-26 (fondo de maniobra B47 resta B38 amortización)",
+    "RD-20 / RC-30 / RT-28 (punto de equilibrio por año, C59/D59 comparan contra C17/D17; nota A29 con ROUNDUP y rotaciones B26/B27)",
+    "RD-21 / RC-08 / RT-06 / RT-07 (cuadro a 15 filas, B43 usa ROUND contra el principal, tipo 0% no rompe B24, DSCR con columnas G/H y nota sobre años 4+)",
+    "RD-23 / RC-06 / RT-13 (mix comida/bebida: input verde en Supuestos!B11, P&L!E11 lo lee bloqueada)",
+    "RD-26 / RD-27 (checklist: 4 ítems RGPD nuevos filas 61-64, Veri*factu fila 65)",
+    "RD-28 / RC-12 (fases del checklist reordenadas: FASE 6 obligaciones previas, FASE 7 primeros 90 días)",
+    "RD-30 / RC-22 (fila 22 del checklist borrada de verdad, sin hueco entre RGSEAA y Licencia de terraza)",
+    "gates §9 completos a 0 en mi propia regeneración (no_latinos, ortografia, formatos, referencias, sin_formulas, sin_bio, sin_version, hojas_sin_a4, sin_instrucciones, creator_mal, nombres_hoja, cf_desanclado)",
+    "demostraciones_2_11: 17/17 'ok': true en mi regeneración, valores idénticos a los que reporta T3 (incluidas las 7 bloqueantes nuevas: 1bis, 2bis, 10, 11, 12, 12bis, 13)",
+    "mapa_de_celdas_para_T9 de mi regeneración es byte a byte igual al bloque cifras_medidas_del_caso_base de correccion.json (salvo la discrepancia de prosa en RD-03/RC-10, ver hallazgos)"
+  ],
+  "mal_resueltos": [
+    {
+      "id": "RD-02",
+      "evidencia": "El fix incorpora bien las 3 partidas al Excel (terraza B35=4.200€, existencias B44=6.500€+B45=5.500€, imprevistos B13 por fórmula), PERO la prueba propia de RD-02 dice 'con su % en «0. Supuestos»' sin mencionar que las existencias quedan mal clasificadas como inmovilizado amortizable — ver detalle en RC-02, es el mismo defecto medido dos veces."
+    },
+    {
+      "id": "RC-02",
+      "evidencia": "RC-02 afirma literalmente: 'Ninguna de las tres entra en las bases de amortización B53/B54 (`AMORT_DEFECTO` las clasifica como no amortizables)'. FALSO, verificado con openpyxl sobre mi propia regeneración: plan-financiero-bar-restaurante.xlsx:'1. Inversión Inicial'!B54 = '=IFERROR(IF(B15=\"\",\"\",B15+B16+B17+B18+B19+B21+B22+B23+B24+B27+B28+B29+B30+B31+B32+B33+B34+B35+B44+B45),\"\")' — incluye B44 y B45 (Existencias iniciales: despensa 6.500€ + bodega 5.500€ = 12.000€) dentro de la base 'Maquinaria, mobiliario y equipos'. El stock consumible se amortiza como si fuera inmovilizado a 10 años (Supuestos!B45), sobreestimando la amortización anual en 12.000/10 = 1.200 €/año (~12,5% de los 9.596 €/año que reporta el propio informe), lo que se propaga a RAI (B43), IS, DSCR ('7. Financiación'!B51:B54) y al flujo de caja libre. La terraza (B35) sí está correctamente incluida en B54 (es inmovilizado de verdad); las existencias no deberían estarlo."
+    }
+  ],
+  "no_aplicados_injustificados": [],
+  "gates": {
+    "dryrun_exit": 0,
+    "idempotencia": 0,
+    "censo_exit": 0,
+    "cache_fallos": 0
+  },
+  "hallazgos_nuevos": [
+    {
+      "severidad": "alta",
+      "donde": "scripts/productos-digitales/planes-v2_0/grupo_a.py Plan.inversion() — plan-financiero-bar-restaurante.xlsx:'1. Inversión Inicial'!B54",
+      "hallazgo": "Las existencias iniciales (stock de despensa y bodega, 12.000 €) entran en la base de amortización de maquinaria/mobiliario y se deprecian a 10 años, sobreestimando la amortización anual en 1.200 €/año. Ver detalle en mal_resueltos RD-02/RC-02. Fix sugerido: excluir B44 y B45 de la fórmula de B54 (igual que ya se excluyen correctamente de B53)."
+    },
+    {
+      "severidad": "media",
+      "donde": "scripts/productos-digitales/auditorias/planes-v2-correccion.json — motivo de RD-03 y de RC-10 (no_aplicados)",
+      "hallazgo": "El propio informe del corrector T3 se contradice en la cifra que le entrega a T10: el motivo de RD-03 dice 'La cifra medida y firme es 178.894,80 € de inversión' y RC-10 repite 'inversión total 178.894,80 € (1. Inversión Inicial!B48)', pero el bloque 'cifras_medidas_del_caso_base' del mismo fichero (y mi regeneración independiente, mapa_de_celdas_para_T9) da 'inversion_total': 179164.8 — 270 € de diferencia. Si T10 copia la cifra de la prosa en vez de la del JSON, publicará un número que no coincide con el propio Excel, que es exactamente el defecto (DOM-19/RC-10) que esta tanda de correcciones existe para cerrar. Fix: T3 corrige su propio texto a 179.164,80 € antes de que T10 lo use, o T10 se le indica explícitamente que use sólo el bloque cifras_medidas_del_caso_base."
+    },
+    {
+      "severidad": "media",
+      "donde": "scripts/productos-digitales/auditorias/planes-v2-correccion.json — motivo de RT-03 (no_aplicado) contra <scratchpad>/planes/verif-tapas2.json (dry-run propio de plan-negocio-tapas-bar)",
+      "hallazgo": "RT-03 dice 'el `--dry-run` de plan-negocio-tapas-bar pasa... de 9 fallos a 6... más 3 fórmulas sin caché en PyG 3 Años!B32:D32'. Mi dry-run independiente de tapas-bar (mismo motor, exit=1) tiene 12 líneas de fallo (11 distintas + 1 línea agregada de caché con las mismas 3 celdas B32/C32/D32), incluyendo fallos en las demostraciones bloqueantes NUEVAS de esta misma tanda que el texto de RT-03 no menciona: §2.11.9 (4 líneas: préstamo/plazo no mueven intereses/cuota), §2.11.10/RT-06 (tipo 0%), §2.11.11/RT-07 (plazo 15), §2.11.12/RT-08 (divisor a 0), §2.11.12-bis/RD-34 (origen no cuadra con usos, -211.976 €). La conclusión de RT-03 (falta contenido_plan_negocio_tapas_bar.py, es tarea de T7) sigue siendo válida y la idempotencia=0 se confirma exactamente, pero la cifra '9 fallos a 6' que cita como evidencia está desactualizada y puede llevar a T7 a subestimar cuánto queda por calibrar en el hermano."
+    }
+  ],
+  "motivo": "No se certifica listo=true. Los gates automáticos están todos limpios: dry-run propio exit=0, idempotencia 0 diferencias (representante y hermano tapas-bar), censo-entregables --fail 0 defectos (tanto en el propio dry-run como con censo-entregables.py --only sobre producción), data_only sin fallos, los dos xlsx tienen fórmulas (0 con cero fórmulas), libro en blanco sin verdes falsos (demostraciones 8 y 13 = true), y las 17 demostraciones bloqueantes de §2.11 (incluidas las 7 nuevas: 1bis, 2bis, 10, 11, 12, 12bis, 13) dan 'ok': true en mi regeneración independiente, con los mismos valores que reporta T3. El cruce de ids cuadra (85 resueltos + 11 no_aplicados = 96) y los 11 no_aplicados tienen justificación de alcance válida (capa de producto para T10, hermanos de línea A/B para T7/T8, docx para T9). Pero abriendo el fichero como un cliente que acaba de pagar encontré un defecto real que sobrevive al 'TODO VERDE': RD-02/RC-02 afirman que las existencias iniciales (stock) quedan fuera de las bases de amortización, y no es así — 'Existencias iniciales' (12.000 €) se está amortizando como si fuera maquinaria, a 10 años, inflando la amortización anual en 1.200 €/año y arrastrando ese error a RAI, IS y DSCR. Es un defecto contable real (el stock no es inmovilizado) que ningún gate automático de la familia detecta porque no comprueba QUÉ hay dentro de cada suma, sólo que la suma no rompa. Además encontré dos inconsistencias de documentación dentro del propio informe de T3 (no en el Excel): RD-03/RC-10 le pasan a T10 una cifra de inversión (178.894,80 €) que no coincide con la que el mismo informe mide en su bloque de cifras (179.164,80 €), y RT-03 le pasa a T7 un recuento de fallos del hermano tapas-bar (6+3) que ya no es el actual (12, tras sumar las demostraciones bloqueantes nuevas). Ninguna de las dos toca el fichero de producción ni bloquea el cierre de T3 sobre el representante, pero sí pueden propagar un dato equivocado a la siguiente capa si nadie las corrige antes."
+}
