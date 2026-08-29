@@ -328,7 +328,7 @@ def indexar_research(res):
     return {d['id']: d for d in res.get('datos', [])}
 
 
-def bloque_research(idx, ids):
+def bloque_research(idx, ids, breve=False):
     """Texto para el prompt: cada cifra con su fuente. Los ids sin cifra o de
     fiabilidad baja se declaran como HUECO y el modelo debe reformular."""
     lineas, usados, huecos = [], [], []
@@ -346,8 +346,9 @@ def bloque_research(idx, ids):
         unidad = d.get('unidad') or ''
         lineas.append(
             f'- [{i}] {d["dato"]}: **{cifra} {unidad}**. Fuente obligatoria a citar '
-            f'en el texto: «{d["fuente_titulo"]}» ({d.get("fecha_publicacion") or d.get("anio_del_dato")}). '
-            f'Nota: {d.get("nota") or "-"}')
+            f'en el texto: «{d["fuente_titulo"][:110]}» '
+            f'({d.get("fecha_publicacion") or d.get("anio_del_dato")}). '
+            + ('' if breve else f'Nota: {(d.get("nota") or "-")[:240]}'))
         usados.append(i)
     return '\n'.join(lineas), usados, huecos
 
@@ -375,15 +376,27 @@ SYSTEM = (
     'haya dado yo con su fuente.')
 
 
+_MT_QUE_FUNCIONA = []
+
+
 def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
-           temperatura=0.45, verbose=True):
+           temperatura=0.45, verbose=True, prompt_corto=None):
     """Llama a bridge.py. Medido el 2026-08-29: con --max-tokens 8192 el modelo
     puede agotar el presupuesto razonando y devolver un fichero VACÍO, y la API
     devuelve contenido vacío con rc=0 de forma intermitente (tres veces
     seguidas en el capítulo 1, y el MISMO prompt funcionó a la cuarta). Por eso
     se reintenta con presupuestos distintos, con espera entre intentos y
     variando la temperatura: un vacío no es un fallo del prompt."""
+    # MEDIDO el 2026-08-29 en este Mac: con `--max-tokens 8192` este modelo
+    # devuelve contenido VACÍO de forma sistemática (0 palabras en TODOS los
+    # primeros intentos de los 4 primeros capítulos) y con 6000 responde. Se
+    # intenta primero el presupuesto que ya funcionó en esta ejecución para no
+    # quemar una llamada por bloque; si aún no hay ninguno, se prueba 8192
+    # (que es lo que manda la regla) y se cae a 6000.
     presupuestos = [max_tokens, 6000, 8192, 5000, 7000, 4500][:intentos]
+    if _MT_QUE_FUNCIONA:
+        pref = _MT_QUE_FUNCIONA[-1]
+        presupuestos = [pref] + [x for x in presupuestos if x != pref]
     texto = ''
     for k, mt in enumerate(presupuestos):
         if k:
@@ -393,7 +406,11 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
                '--lang', 'es', '--model', MODELO, '--max-tokens', str(mt),
                '--temperature', str(round(temperatura + 0.05 * (k % 3), 2)),
                '--system', SYSTEM,
-               '--prompt', prompt, '--output', salida_txt]
+               # a partir del 3.er intento se manda la versión CORTA del guion:
+               # los prompts que más fallan son los que llevan 18 fichas de
+               # research con sus notas, y acortar el prompt los desatasca.
+               '--prompt', (prompt_corto or prompt) if k >= 2 else prompt,
+               '--output', salida_txt]
         r = subprocess.run(cmd, capture_output=True, text=True)
         texto = ''
         if os.path.exists(salida_txt):
@@ -404,6 +421,8 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=8192, intentos=6,
             print(f'    bridge intento {k + 1}/{len(presupuestos)} '
                   f'(max_tokens={mt}) → {n} palabras', flush=True)
         if n >= palabras_min:
+            if mt not in _MT_QUE_FUNCIONA:
+                _MT_QUE_FUNCIONA.append(mt)
             return texto
         if r.returncode != 0 and verbose:
             print(f'    bridge rc={r.returncode} :: {r.stderr.strip()[:300]}',
@@ -500,6 +519,8 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False):
     cifras = resolver_cifras(xlsx_dir, cap.get('cifras', []))
     ctx_cifras = '\n'.join(f'  - {e}: {v}   [fuente: {r}]' for e, v, r, _ in cifras)
     ctx_sector, usados, huecos = bloque_research(idx_research, cap.get('sector', []))
+    ctx_sector_breve, _, _ = bloque_research(idx_research, cap.get('sector', []),
+                                             breve=True)
 
     tablas = []
     for t in cap.get('tablas', []):
@@ -524,7 +545,11 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False):
                           es_ultimo=(i == len(bloques) - 1))
         print(f'  cap {cap["n"]:02d} bloque {i + 1}/{len(bloques)} '
               f'({por_bloque} palabras objetivo)', flush=True)
-        t = bridge(p, ruta, palabras_min=int(por_bloque * 0.72))
+        p_corto = prompt_bloque(cap, epis, por_bloque, ctx_cifras,
+                                ctx_sector_breve, guia,
+                                es_ultimo=(i == len(bloques) - 1))
+        t = bridge(p, ruta, palabras_min=int(por_bloque * 0.72),
+                   prompt_corto=p_corto)
         piezas.append(limpiar_bloque(t))
 
     cuerpo = '\n\n'.join(piezas)
