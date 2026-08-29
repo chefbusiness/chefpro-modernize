@@ -1,0 +1,518 @@
+{
+ "lente": "CORRECTOR de la sub-familia CB v2.0 — representante kit-tareas-sushi-bar. Entrada: los 91 hallazgos de kit-tareas-cb-v2-ref-{dominio,excel,coherencia}.json (35 + 21 + 35).",
+ "fecha": "2026-08-29T12:14:17",
+ "entrada": 91,
+ "resueltos": 86,
+ "no_aplicados": 5,
+ "cruce": {
+  "entrada": 91,
+  "resueltos_mas_no_aplicados": 91,
+  "cuadra": true
+ },
+ "gates": {
+  "dryrun_exit": 0,
+  "idempotencia_diferencias": 0,
+  "regresion_cafeteria": {
+   "ficheros": 11,
+   "diferencias": 0,
+   "estricto": true
+  },
+  "regresion_hotel": {
+   "ficheros": 19,
+   "diferencias": 0,
+   "estricto": true
+  },
+  "censo_fail": 0,
+  "cache": {
+   "con_valor": 42,
+   "vacias_por_diseno": 51,
+   "fallos": 0
+  },
+  "molde_hojas_sin_clasificar": 0,
+  "promesas_ausentes": 0,
+  "promesas_vigiladas": 14,
+  "limite_unico_conflictos": 0,
+  "limite_unico_vigilados": 8,
+  "ortografia_lemas_vivos": 0,
+  "normativa_derogada_viva": 0,
+  "marcas_internas_vivas": 0,
+  "recuento_tareas": 254
+ },
+ "ficheros_codigo": [
+  "scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+  "scripts/productos-digitales/kit-tareas-v2_0/main.py",
+  "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py",
+  "scripts/productos-digitales/kit-tareas-v2_0/regresion.py",
+  "scripts/productos-digitales/gate-no-latinos.py",
+  "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+  "src/pages/KitTareasSushiBarDashboard.tsx"
+ ],
+ "artefactos": {
+  "informe_dryrun_sushi": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/corrector-final-kit-tareas-sushi-bar.json",
+  "log_dryrun_sushi": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/final-sushi.log",
+  "regresion_cafeteria": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/reg-cafeteria-final.json",
+  "regresion_hotel": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/reg-hotel-final.json",
+  "diff_firmable_sushi": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/reg-sushi-diff.json",
+  "copia_de_trabajo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-corrector/dryrun-kt/kit-tareas-sushi-bar"
+ },
+ "lista_resueltos": [
+  {
+   "id": "RD-01",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py (PROHIBIDAS: entrada nueva «RD 3484/2000» con «excusa» por celda) + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py (FUENTE_TEMPERATURAS reescrita)",
+   "prueba": "06-tareas-perfiles.xlsx!Instrucciones!B16 = «▸ Fuente: cocción ≥70 °C … según las recomendaciones de AESAN. El mantenimiento en caliente ≥65 °C y en frío ≤4 °C es el criterio que fija y justifica el plan APPCC de este local: el RD 3484/2000 …, que los fijaba, fue derogado por el RD 1021/2022, que ya no da temperaturas.» · el gate de normativa derogada pasa (exit 0) porque la única mención dice que está derogado"
+  },
+  {
+   "id": "RD-02",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py (RX_MARCA_INTERNA + marcas_internas()) + scripts/productos-digitales/kit-tareas-v2_0/main.py (los engancha a `fallos`) + FUENTE_TEMPERATURAS sin «§»",
+   "prueba": "grep «§|CB-E\\d|DOM-\\d|TEC-\\d|COM-\\d» sobre los 11 libros de la copia: 0 aciertos; con la marca viva el run habría salido exit 1"
+  },
+  {
+   "id": "RD-03",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py registro_appcc(): el CF ya no es exclusivo de la rejilla semanal — toda columna de medida cuyo rótulo declara su rango recibe regla",
+   "prueba": "03!'Registro Congelación'!I6:I25 = AND(I6<>\"\",I6>-20.0) · 'Registro de pH del Arroz'!F5:F24 = AND(F5<>\"\",F5>4.6) · 'Control de Recepción'!G5:G24 = AND(G5<>\"\",OR(G5<0.0,G5>2.0)) · 'Trazabilidad Pescado'!H4:H23 igual"
+  },
+  {
+   "id": "RD-04",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py _cf_fuera_de_rango(): las 7 reglas `cellIs` pasan a `expression` con guarda AND(celda<>\"\";…)",
+   "prueba": "03!'Temperaturas Diario'!C6:I6 = AND(C6<>\"\",C6>-20.0) (antes cellIs greaterThan −20, que con la celda vacía = 0 pintaba la fila en rojo). Las 7 filas salen en blanco con la hoja recién impresa"
+  },
+  {
+   "id": "RD-05",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py HORAS_02 y HORAS_01_ARROZ rehechas hacia atrás desde el servicio de las 12:00",
+   "prueba": "02!'Protocolo Arroz Sushi'!E6-E10 = 08:30 · 08:35 · 08:45 (remojo 30 min) · 09:15 (cocción) · 10:05 (reposo tapado): 50 min de arrocera, no cero"
+  },
+  {
+   "id": "RD-06",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py SUSHI_ZU + SUSHI_ZU_FRIO",
+   "prueba": "02!'Protocolo Arroz Sushi'!B13 = «Sacar el sushi-zu preparado la víspera y comprobar que está a temperatura ambiente…» · B14 = «Si lo preparas en el día: calienta … y DÉJALA ENFRIAR … El sushi-zu no se vierte nunca caliente»"
+  },
+  {
+   "id": "RD-07",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py ACIDIFICACION, SUSHI_ZU y las cabeceras del registro: UNA sola base, kg de arroz CRUDO",
+   "prueba": "03!'Registro de pH del Arroz'!E4 = «Sushi-zu añadido (ml/kg crudo)» y D4 = «kg de arroz crudo» · 02!B18 = «(ml por kg de arroz CRUDO, la misma base con la que se pesa en la receta)»"
+  },
+  {
+   "id": "RD-08",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py SEGUNDO_LOTE reescrito y reordenado",
+   "prueba": "02!'Protocolo Arroz Sushi'!E30-E33 = 14:20 (descarte del lote de almuerzo, 4 h tras el avinagrado de las 10:17) · 17:30 · 18:30 (avinagrado ~19:45) · 20:00: el lote de cena cubre hasta las 23:45, con la barra abierta hasta las 23:00"
+  },
+  {
+   "id": "RD-09",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py INFORMAR_07 e INFORMAR_06",
+   "prueba": "07!'Tareas Mensuales'!B11 = «Comprobar que la carta, el menú o un cartel visible informan de que el pescado que se sirve crudo ha sido congelado (RD 1021/2022, art. 8.2)» · 06!'Sala y Servicio' lleva la línea de verificación de sala"
+  },
+  {
+   "id": "RD-10",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles(), paso de cierre nuevo",
+   "prueba": "03!'Registro Congelación'!B27: wrap_text=True y row_dimensions[27].height=45 sobre el merge B27:K27 (una combinada NO autoajusta: por eso la altura es explícita)"
+  },
+  {
+   "id": "RD-11",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles() — es un barrido, no un parche celda a celda",
+   "prueba": "A2 (279 car.), B27 (289), B30 (271) del 'Registro Congelación' y las notas de 'Matriz de Alérgenos', 'Registro de pH', 'Temperaturas Diario', 'Control de Recepción', 'Registro de Mermas' y 05!'Reporting Semanal' salen con wrap y alto explícito"
+  },
+  {
+   "id": "RD-12",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py es_briefing() ampliado + fila_matriz_anual()/matriz_anual() + los dos moldes en hojas_reconocidas, aplicar y cerrar",
+   "prueba": "BONUS-01!'Briefing Servicio' print_area='A1:C40' protection.sheet=True · BONUS-02!'Calendario Anual' print_area='A1:M48' protection.sheet=True (antes None/False) · el gate «molde» declara 0 hojas sin clasificar"
+  },
+  {
+   "id": "RD-13",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py papel_instrucciones() ya resuelve «formulario» y «calendario» en cuanto las hojas se reconocen (CB-E4 no había que escribirlo, había que llegar a él)",
+   "prueba": "BONUS-01!Instrucciones!B13 = «▸ Esto es un FORMULARIO para imprimir y rellenar a mano … no tiene celdas verdes ni desplegable porque se escribe sobre el papel.» (antes «Las celdas verdes son editables»)"
+  },
+  {
+   "id": "RD-14",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles() fusiona hasta el borde de la print_area y envuelve",
+   "prueba": "BONUS-01!'Briefing Servicio'!B19 (125 car., ancho B+C=75): merge B19:C19 con wrap_text=True. B20 mide 63 y sí cabe en 75, así que no se toca"
+  },
+  {
+   "id": "RD-15",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py matriz_anual(): wrap_text en la columna de rótulo",
+   "prueba": "BONUS-02!'Calendario Anual'!A28 (91 car.) y A42 (78) con wrap_text=True sobre una columna de 35; la fila no está combinada, así que Excel autoajusta el alto (misma decisión que documenta autoalto)"
+  },
+  {
+   "id": "RD-16",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py CAL_TEXTOS: la fila anual pasa a UNA marca",
+   "prueba": "BONUS-02!'Calendario Anual'!A43 con ● sólo en M43 (diciembre); ya no contradice a 07!'Tareas Mensuales', que la llama «la auditoría anual completa»"
+  },
+  {
+   "id": "RD-17",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _f07: el responsable sale del texto de la propia tarea",
+   "prueba": "07!'Tareas Mensuales'!D9 = «Encargado» (la tarea dice «Revisión MENSUAL del sistema de frío por el titular»). B10/D10 y B11/D11 se verificaron correctos y no se tocan"
+  },
+  {
+   "id": "RD-18",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py _bloque_personalizar + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py bloque de frecuencias de 07",
+   "prueba": "07!Instrucciones: «Dos filas de la hoja MENSUAL no lo son… El mes que no toquen se marcan «N/A» en el desplegable —el contador las descuenta del total— y el porcentaje del mes sigue siendo verdad.» El contador honesto ya descuenta N/A (F30 = COUNTIF(B…)−COUNTIF(F…,\"N/A\"))"
+  },
+  {
+   "id": "RD-19",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _f01: la regla de turnos se separa por HOJA",
+   "prueba": "01!Instrucciones: «Las horas de la hoja de APERTURA son las del turno de almuerzo… Las horas de la hoja de CIERRE son las del cierre del DÍA y no se desplazan.»"
+  },
+  {
+   "id": "RD-20",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py ARQUEO",
+   "prueba": "01!'Cierre Barra Sushi' = «Arqueo de caja y cierre de TPV (sólo en el ÚLTIMO turno del día; en el cierre de almuerzo, marca N/A)…» y las Instrucciones lo repiten"
+  },
+  {
+   "id": "RD-21",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py _bloque_personalizar('registro')",
+   "prueba": "El bloque ya no promete «filas verdes libres» que estas rejillas no tienen: explica insertar DENTRO de la tabla y escribir el rango entre paréntesis en el rótulo, que es de donde el motor saca el rojo (RT-08)"
+  },
+  {
+   "id": "RD-22",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py TEMPS_03",
+   "prueba": "03!'Temperaturas Diario'!B10 = «Aceite de fritura — lectura EN SERVICIO (170-180 °C)» y B11 = «Arroz de servicio — lectura AL MONTAR el nigiri (35-37 °C)»; la nota B14 lo recoge"
+  },
+  {
+   "id": "RD-23",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py LOTE_ANTES (se corrige la tarea; las columnas nuevas de descongelación/uso NO se añaden: cambiar la geometría del registro obligatorio es una decisión de v2.1, y el defecto —mandar anotar en una columna inexistente— desaparece igual)",
+   "prueba": "02!'Protocolo Corte Pescado'!B7 remite al nº de lote de «Registro Congelación», que sí existe (columna C), y no a una casilla de descongelación que no existe"
+  },
+  {
+   "id": "RD-24",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py LOTE_ANTES + DESCONGELAR_VISPERA",
+   "prueba": "01!'Cierre Barra Sushi' gana «Bajar a cámara a 0-2 °C los lotes que se cortarán mañana (12-24 h de antelación)…» y 02!'Protocolo Corte Pescado'!B7 sólo COMPRUEBA que están descongeladas y a 0-2 °C"
+  },
+  {
+   "id": "RD-25",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _columna_calculada + _formato_columna",
+   "prueba": "03!'Registro de Mermas'!H5 = =IF(COUNT(E5,G5)<2,\"\",E5*G5) con formato '#,##0.00\" €\"'; E con '0.0\" kg\"' y G con euros en las 22 filas de dato"
+  },
+  {
+   "id": "RD-26",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _columna_calculada + _formato_columna",
+   "prueba": "05!'Reporting Semanal'!E5 = =IF(D5=0,\"\",C5/D5) con '#,##0.00\" €\"'; C, F y G con euros y D con '0' en las 7 filas"
+  },
+  {
+   "id": "RD-27",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py DELIVERY + EQUIPOS_LIMITE (vigila «pescado crudo» como PRODUCTO, no sólo como cámara)",
+   "prueba": "06!'Delivery y Take Away'!B18 = «… el pescado crudo sale a 0-2 °C, el mismo rango que la cámara de la que sale …» · gate limite_unico: 0 conflictos sobre 8 patrones vigilados (antes 7)"
+  },
+  {
+   "id": "RD-28",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py DELIVERY",
+   "prueba": "06!'Delivery y Take Away'!B19 = «Decidir ANTES de salir: si el reparto estimado pasa de 60 minutos, no se acepta el pedido con pescado crudo… ninguna pieza puede estar más de 2 h fuera de refrigeración»"
+  },
+  {
+   "id": "RD-29",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py HANGIRI_AYUDANTE (redacción canónica del 01, con remisión al semanal del 07)",
+   "prueba": "06!'Ayudante Sushi'!B13 = «Lavar el hangiri con agua caliente y cepillo, sin abrasivos; si usas detergente apto para uso alimentario, aclarar a fondo…»"
+  },
+  {
+   "id": "RD-30",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py MAKISU_AYUDANTE, FILM_AYUDANTE y LEX_CONTEXTO («equipo y revenue» → «equipo y facturación»)",
+   "prueba": "06!'Ayudante Sushi'!B8 = «Preparar los makisu (esterillas de bambú) con film transparente nuevo» · B11 = «Renovar el film transparente de los makisu cada 2 horas» · 05!Instrucciones!B7 = «… equipo y facturación»"
+  },
+  {
+   "id": "RD-31",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py LEX_TILDES («espectaculo»/«espectaculos») + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py LEX_CONTEXTO (las ambiguas, por contexto)",
+   "prueba": "04!Instrucciones!B6 «espectáculo» · 08!Instrucciones!B7 «ticket medio más alto» · 01!'Apertura Barra Sushi'!B35 y 06!'Sala y Servicio'!B9 «té» · BONUS-01!B28/B29 «☐ Sí ☐ No»"
+  },
+  {
+   "id": "RD-32",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:41 y :307",
+   "prueba": "Los dos testimonios dicen ahora «el registro de congelación por lote y proveedor» sin cifra; grep «7 días» sobre el .ts y el dashboard = 0. No se ha tocado aggregateRating ni el número de reseñas (§7-bis.6)"
+  },
+  {
+   "id": "RD-33",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:151 y :231 + src/pages/KitTareasSushiBarDashboard.tsx:23",
+   "prueba": "«salmón salvaje» → «atún rojo de almadraba, bonito del norte, besugo, gamba roja» (especies que SÍ están en BONUS-02!A6-A9); grep «salmón salvaje» = 0 en los tres ficheros"
+  },
+  {
+   "id": "RD-34",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:151, :166, :231, :287 y src/pages/KitTareasSushiBarDashboard.tsx:23, :26 + PROMESAS en scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py",
+   "prueba": "«festivos asiáticos» → «festivos japoneses» y «Año Nuevo Chino» → «Año Nuevo japonés (Oshogatsu)»; el gate vigila ahora también que «Año Nuevo Chino» NO aparezca (entrada `prohibido`)"
+  },
+  {
+   "id": "RD-35",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _ordenar_por_hora(): permuta valores y estilos dentro de cada banda, sin insertar ni borrar filas",
+   "prueba": "01!'Apertura Barra Sushi', 02!'Protocolo Arroz Sushi' y 'Protocolo Corte Pescado' (ahora 10:45 · 10:50 · 11:00 · 11:00 · 11:00 · 11:05), 05!'Tareas Diarias Manager' y 07/08: cada banda en orden de reloj. El orden es estable, así que la 2.ª pasada no mueve nada (idempotencia 0)"
+  },
+  {
+   "id": "RT-01",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles()",
+   "prueba": "03!'Registro Congelación'!A2 (279 car. en el merge A2:K2 de 170): wrap_text=True, alto 45 pt"
+  },
+  {
+   "id": "RT-02",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles()",
+   "prueba": "03!'Registro Congelación'!B27 (289 sobre 165): wrap_text=True, alto 45 pt"
+  },
+  {
+   "id": "RT-03",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles()",
+   "prueba": "03!'Registro Congelación'!B30 (271 car.): se fusiona B30:K30 y se envuelve, con alto explícito"
+  },
+  {
+   "id": "RT-04",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles()",
+   "prueba": "03!'Registro de pH del Arroz'!A29 (412 sobre 139): merge A29:I29 + wrap + alto; el método (tiras 4,0-5,0, resolución 0,2) ya no se pierde"
+  },
+  {
+   "id": "RT-05",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py notas_legibles() — un paso de cierre para TODA hoja reconocida de la sub-familia, no 28 parches",
+   "prueba": "Barrido propio sobre la copia: 0 celdas de texto sin wrap cuyo contenido no quepa en su ancho disponible. Las hojas de checklist no estaban afectadas (su columna «Tarea» ya llevaba wrap por CB-E9)"
+  },
+  {
+   "id": "RT-06",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _columna_calculada()",
+   "prueba": "03!'Registro de Mermas'!H5:H26 con fórmula; el pie H28 = SUM(H5:H26) deja de sumar una columna vacía"
+  },
+  {
+   "id": "RT-07",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py registro_appcc(): DataValidation decimal −40..200 en toda columna de medida, con mensaje que pide el número sin unidad y sin el «−» tipográfico",
+   "prueba": "DV decimal en 03!'Registro Congelación'!I6:I25, 'Trazabilidad Pescado'!H4:H23, 'Control de Recepción'!G5:G24 y 'Registro de pH'!F5:F24 (antes 0 en las cuatro)"
+  },
+  {
+   "id": "RT-08",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py registro_appcc() + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _rotular_limite(): el límite se escribe en la CABECERA y de ahí sale el CF",
+   "prueba": "03!'Registro Congelación'!I5 = «Temp °C (−20 °C o menos)» → CF AND(I6<>\"\",I6>-20.0). 'Control de Recepción'!G4 y 'Trazabilidad Pescado'!H3 = «Temp recepción (0-2 °C)» → CF notBetween con guarda"
+  },
+  {
+   "id": "RT-09",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py registro_appcc() (rama «medida») + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _rotular_limite",
+   "prueba": "03!'Registro de pH del Arroz'!F4 = «pH medido (≤ 4,6)» → number_format '0.0', DV decimal y CF AND(F5<>\"\",F5>4.6)"
+  },
+  {
+   "id": "RT-10",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/regresion.py _emparejar() + _Vacia(): las hojas se emparejan por nombre y, las sueltas, por posición",
+   "prueba": "regresion.py dl/kit-tareas-sushi-bar vs la copia: 9.104 diferencias repartidas por las 28 hojas, con entradas propias para 'Registro Congelacion → Registro Congelación', 'Temporadas Pescado Espana → Temporadas Pescado España', 'Matriz de Alérgenos' (532), 'Registro de Mermas' (342), 'Registro de pH' (300), 'Control de Recepción' (420), 'Comparativa de Proveedores' (307), 'Reporting Semanal' (191), 'Delivery y Take Away' (301) y 'Office y Lavado' (289). Antes: 4 líneas de tipo «hojas» y nada más"
+  },
+  {
+   "id": "RT-11",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py es_briefing() ampliado a la maqueta CB (título en B1-B3, «Fecha:» en B2-B6), sólo dentro de sub_cb()",
+   "prueba": "BONUS-01!Instrucciones!B13/B15/B16 ya son el bloque «formulario»; 'Briefing Servicio' entra en `recon` como tipo «briefing» y recibe print_area y protección"
+  },
+  {
+   "id": "RT-12",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py cerrar() aplica print_area y protección a los dos moldes nuevos + scripts/productos-digitales/kit-tareas-v2_0/main.py corrige el texto del aviso",
+   "prueba": "Los 11 ficheros salen con print_area y las 22 hojas de trabajo protegidas; el aviso ya no dice «no recibe … A4» (el A4 sí estaba: paperSize 9, fitToWidth 1)"
+  },
+  {
+   "id": "RT-13",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py papel_instrucciones(): el BONUS-02 recibe el bloque «calendario»",
+   "prueba": "BONUS-02!Instrucciones ya no dice «Las celdas verdes son editables»; el cuerpo del calendario queda desbloqueado entero por `proteger`, así que el verde de categoría no puede leerse como «esto y sólo esto es editable». Los 16 rellenos E8F5E9 de la banda NO se repintan: son contenido del calendario y cambiarlos sin ver la hoja impresa es peor negocio que quitar la frase falsa"
+  },
+  {
+   "id": "RT-14",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py DV_ERROR_REGISTRO",
+   "prueba": "Las DV de 03!'Registro Congelación'!J, 'Registro de pH'!H, 'Control de Recepción'!J y 'Trazabilidad Pescado'!I dicen «✓ verificado, — pendiente, N/A no aplica» y ya no mencionan un total que estas hojas no tienen"
+  },
+  {
+   "id": "RT-15",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py normalizar_checklist(): se pintan «Nº» y «Tarea» de las filas numeradas cuando NINGUNA tiene tarea escrita. Ojo: la mitad del hallazgo es falsa —C6:G6 SÍ llevaban E8F5E9—; lo que había eran dos lenguajes en la misma hoja (15 filas sin verde en A y B, 5 filas libres con las siete columnas verdes)",
+   "prueba": "09!'Plantilla en Blanco': las 15 filas numeradas con A y B en 00E8F5E9, igual que las 5 libres. El contador sigue en '3 de 8' (demostración §6 verde)"
+  },
+  {
+   "id": "RT-16",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _formato_columna() propaga el formato del total a su columna de dato + _columna_calculada",
+   "prueba": "05!'Reporting Semanal'!C5/E5/F5/G5 con '#,##0.00\" €\"' y E5 con fórmula · 03!'Registro de Mermas'!E5 '0.0\" kg\"', G5 y H5 en euros"
+  },
+  {
+   "id": "RT-17",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _columna_calculada + _formato_columna y cabecera honesta",
+   "prueba": "05!'Comparativa de Proveedores'!G4 = «Mejor precio (€/kg)» (ya no promete también el nombre del proveedor) con G5 = =IF(COUNT(D5:F5)=0,\"\",MIN(D5:F5)); D:F en euros"
+  },
+  {
+   "id": "RT-18",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py DV_EXTRA (el módulo de contenido declara la DV y `registro_appcc` la repone tras vaciar las listas) + nota reescrita",
+   "prueba": "03!'Matriz de Alérgenos'!C5:P22 con lista \"X,traza,—\" y mensaje de error; la nota A25 explica que la casilla EN BLANCO significa «sin revisar», que no es «no contiene»"
+  },
+  {
+   "id": "RT-19",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/main.py procesar(): se guarda el delta de motor.REGISTRO que añade el módulo de contenido y se repone tras el `clear()`",
+   "prueba": "Paso 5 del dry-run: «con valor: 42 · vacías por diseño: 51 · fallos: 0» (antes 36 y 0). Las 22 fórmulas de mermas, las 7 del ticket medio y las 20 de la comparativa entran ya en el gate"
+  },
+  {
+   "id": "RT-20",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _f03: columna «Verif.» nueva + _rotular_limite en la de temperatura",
+   "prueba": "03!'Trazabilidad Pescado' cabecera = ['#','Especie','Proveedor/Lonja','Fecha Compra','Lote/Albarán','Zona Captura (FAO)','Caducidad','Temp recepción (0-2 °C)','Verif.','Firma'] con DV \"✓,—,N/A\" en I4:I23 y CF en H4:H23. La cabecera se queda en la fila 3: moverla cambiaría print_title_rows y el print_area de una hoja heredada, y no aporta nada al cliente"
+  },
+  {
+   "id": "RT-21",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py reescribir_instrucciones.escribe(): se descuenta un margen de 4 unidades del ancho, sólo en sub_cb()",
+   "prueba": "01!Instrucciones!B22 (198 car. en columna de 100) pasa de 32 pt (2 líneas) a 48 pt (3): una línea de más no se ve, una de menos se lee cortada"
+  },
+  {
+   "id": "RC-01",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/main.py: el gate «molde» pasa de AVISO a FALLO dentro de la sub-familia CB, y los dos moldes nuevos hacen que ya no dispare",
+   "prueba": "«molde: 0 hojas sin clasificar» y exit 0. Con los BONUS fuera de molde el run habría salido exit 1"
+  },
+  {
+   "id": "RC-02",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py papel_instrucciones()",
+   "prueba": "BONUS-01 → bloque «formulario», BONUS-02 → bloque «calendario»; ninguno dice ya «Las celdas verdes son editables»"
+  },
+  {
+   "id": "RC-03",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:151, :231 + src/pages/KitTareasSushiBarDashboard.tsx:23",
+   "prueba": "«salmón salvaje» fuera de la landing y del dashboard; el 08!Instrucciones!B15 (el salmón de sushi es de acuicultura) ya no refuta a su propia página"
+  },
+  {
+   "id": "RC-04",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py PROMESAS (14 términos, tres nuevos) + scripts/productos-digitales/kit-tareas-v2_0/main.py gate_promesas con entradas `prohibido`",
+   "prueba": "El gate vigila ahora «salmón salvaje» y «Año Nuevo Chino» AL REVÉS (tienen que seguir con 0 apariciones) y añade el término del recuento honesto de checklists; «festivos asiáticos» pasa a «festivos japoneses». 0 términos sin respaldo de 14"
+  },
+  {
+   "id": "RC-05",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:41 y :307",
+   "prueba": "Los dos testimonios sin la cifra falsa; la FAQ y el schema ya citaban el RD 1021/2022 y las 24 h"
+  },
+  {
+   "id": "RC-06",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py RX_REG_FECHA con \\b + reseteo a General de la columna que heredó DD/MM/YYYY de su vecina",
+   "prueba": "05!'Reporting Semanal'!F5 «Compras de pescado (€)» = '#,##0.00\" €\"' (antes DD/MM/YYYY: el cliente escribía 480 y veía «23/06/1901») · 03!'Registro Congelación'!E6 «Origen y acreditación» = General"
+  },
+  {
+   "id": "RC-07",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py HANGIRI_AYUDANTE",
+   "prueba": "06!'Ayudante Sushi'!B13 con la misma redacción que 01!'Cierre Barra Sushi'!B18 y remisión al 07"
+  },
+  {
+   "id": "RC-08",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py MAKISU_AYUDANTE y FILM_AYUDANTE",
+   "prueba": "grep «bamboo mat|plastic wrap» sobre los 11 libros de la copia = 0"
+  },
+  {
+   "id": "RC-09",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py LEX_TILDES + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py LEX_CONTEXTO",
+   "prueba": "«espectáculo», «ticket medio más alto» y los dos «té»; el gate sigue en «0 celdas con lema de LEX_TILDES» y ahora es cierto para el lector"
+  },
+  {
+   "id": "RC-10",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py LEX_CONTEXTO (☐ Si ☐ No → ☐ Sí ☐ No)",
+   "prueba": "BONUS-01!'Briefing Servicio'!B28 y B29 = «(suficiente: ☐ Sí ☐ No)», igual que B37"
+  },
+  {
+   "id": "RC-12",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py NOTA_TEMPS",
+   "prueba": "03!'Temperaturas Diario'!B14 = «Una lectura diaria por equipo, en la APERTURA, salvo las dos filas que dicen otra cosa en su propio rótulo…»: la hoja ya no remite a una rejilla de cierre que no existe en el 01"
+  },
+  {
+   "id": "RC-13",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py SEGUNDO_LOTE",
+   "prueba": "02!E30 = 14:20 para el descarte (avinagrado 10:17 + 4 h) y E32 = 18:30 para el segundo lote; ya no manda guardar arroz caducado dos horas"
+  },
+  {
+   "id": "RC-14",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py LOTE_ANTES + _ordenar_por_hora",
+   "prueba": "02!'Protocolo Corte Pescado': las dos filas prerrequisito son la 1 y la 2 del bloque (10:45 y 10:50) y la descongelación se programa la víspera desde el 01"
+  },
+  {
+   "id": "RC-15",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py DELIVERY + EQUIPOS_LIMITE",
+   "prueba": "06!'Delivery y Take Away'!B18 dice 0-2 °C y el gate limite_unico vigila «pescado crudo» como producto: 0 conflictos de 8 patrones"
+  },
+  {
+   "id": "RC-16",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py cadencia(): categorías «Mes» y cuenta atrás («-48h», «-3 sem», «-1 mes»), sólo en sub_cb() + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py FESTIVOS_08 en antelación",
+   "prueba": "08!'Temporadas Pescado España'!E4 = «Mes» y 08!'Eventos Especiales'!E4 = «Antelación» (antes «Cuándo» en las dos, con meses absolutos mezclados con cuentas atrás)"
+  },
+  {
+   "id": "RC-18",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py registro_appcc + _rotular_limite",
+   "prueba": "03!'Registro de pH del Arroz'!F4 = «pH medido (≤ 4,6)» con formato '0.0', DV decimal y CF en rojo"
+  },
+  {
+   "id": "RC-19",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py registro_appcc: CF en toda columna de medida con rango en el rótulo",
+   "prueba": "4 hojas del 03 con CF (antes 1): Registro Congelación, Trazabilidad Pescado, Control de Recepción y Registro de pH, además de Temperaturas Diario"
+  },
+  {
+   "id": "RC-22",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py ARQUEO — se entrega lo prometido donde vive el cierre; NO se porta una hoja de caja (el kit no tiene fichero de caja, CB-E7 lo declara, y §7-bis.18 resuelve la duda 4 para los 4 kits del molde PLANO, no para éste)",
+   "prueba": "01!'Cierre Barra Sushi' = «Arqueo de caja y cierre de TPV (sólo en el ÚLTIMO turno…): efectivo contado ______ € · Z del TPV ______ € · descuadre ______ €»: tres huecos donde escribir, que es lo que faltaba"
+  },
+  {
+   "id": "RC-23",
+   "donde": "scripts/productos-digitales/gate-no-latinos.py: aborta con código 2 si la carpeta no existe o si no hay ningún .docx/.xlsx/.pdf que escanear",
+   "prueba": "`gate-no-latinos.py --only sushi-bar` → «ABORTADO: no existe la carpeta …/dl/sushi-bar», exit 2 · `--only kit-tareas-sushi-bar` → 11 ficheros escaneados, 0 no-latinos, exit 0"
+  },
+  {
+   "id": "RC-24",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/regresion.py: flag --estricto (anchos de columna, CF con sqref/tipo/fórmula/color del dxf, rellenos sólidos y merges)",
+   "prueba": "regresion.py --estricto sobre kit-tareas-cafeteria (11 ficheros) y kit-tareas-hotel (19): 0 diferencias en los dos, ahora también en las tres dimensiones que toca CB-E9"
+  },
+  {
+   "id": "RC-25",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/main.py verificar_cache(): «vacías por diseño» sale en el log del paso 5",
+   "prueba": "«con valor: 42 · vacías por diseño: 51 · fallos: 0»: el «cache_inyectado=8 de 10» del paso 4 deja de parecer una pérdida"
+  },
+  {
+   "id": "RC-26",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _formato_columna en la comparativa",
+   "prueba": "05!'Comparativa de Proveedores'!D5:F5 y G5 con '#,##0.00\" €\"'"
+  },
+  {
+   "id": "RC-27",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _f01: la nota de turnos se redacta SIN hora absoluta",
+   "prueba": "01!Instrucciones ya no fija «la barra abierta a las 12:00»; habla de «la diferencia entre tus dos aperturas»"
+  },
+  {
+   "id": "RC-28",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _ordenar_por_hora",
+   "prueba": "01!'Apertura Barra Sushi': el bloque arranca por la tarea de las 08:30 (arrocera) y sigue 10:00 · 10:00 · 10:00 · 10:00 · 10:05"
+  },
+  {
+   "id": "RC-29",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py _ordenar_por_hora",
+   "prueba": "05!'Tareas Diarias Manager': el bloque de cierre va 18:00 → 23:00 → 23:00"
+  },
+  {
+   "id": "RC-30",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py CAL_TEXTOS",
+   "prueba": "BONUS-02!A6-A9 = «(nov-mar)», «(abr-jun)», «(jun-oct)», «(sep-nov)», los meses realmente marcados y la misma redacción que 08!'Temporadas Pescado España'"
+  },
+  {
+   "id": "RC-31",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py FESTIVOS_08 en antelación + cabecera «Antelación»",
+   "prueba": "08!'Eventos Especiales'!E25-E28 = «-1 mes», «-1 mes», «-2 meses», «-1 mes»: la convención queda explícita en la propia cabecera y ya no discrepa del ● del BONUS-02"
+  },
+  {
+   "id": "RC-32",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py CAL_TEXTOS",
+   "prueba": "BONUS-02!A43 con una sola marca (M43)"
+  },
+  {
+   "id": "RC-33",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py bloque de frecuencias de 07",
+   "prueba": "07!Instrucciones: «Extintores: son DOS obligaciones distintas, por eso van en dos filas. » + FUENTE_RIPCI (antes la frase y la fuente decían lo mismo dos veces, 338 caracteres)"
+  },
+  {
+   "id": "RC-34",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py _bloque_personalizar + scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_sushi_bar.py bloque de frecuencias de 07",
+   "prueba": "Mismo cierre que RD-18: la hoja advierte que dos de sus filas no son mensuales y que se marcan N/A el mes que no toque"
+  }
+ ],
+ "lista_no_aplicados": [
+  {
+   "id": "RC-11",
+   "motivo": "PARCIAL, y la parte que falta es una decisión de familia ya firmada. Lo que sí se ha hecho: las 20 celdas de NOTA sin `wrap_text` (03!Registro Congelación!B27/B30, 03!Temperaturas Diario!B14…) las cierra `motor.notas_legibles`, y ahí la altura SÍ es explícita porque son celdas COMBINADAS y Excel no autoajusta una fila combinada. Lo que NO se hace es escribir alturas fijas en las 126 celdas de tarea: `legibilidad_tareas` y `autoalto` dejan `height = None` A PROPÓSITO (TEC-R2-13, documentado en motor.py), porque esas celdas no están combinadas y tanto Excel como LibreOffice recalculan el alto de una fila con `wrap_text` y sin `customHeight`; una altura fija de 24-30 pt es justamente lo que RECORTABA el texto por el final antes de esa decisión. Cambiarlo movería además la altura de las 446 celdas equivalentes de kit-tareas-cafeteria y de otros tres kits LIVE que §7-bis.24 congela."
+  },
+  {
+   "id": "RC-17",
+   "motivo": "Capa de producto, y hoy sería mentir al revés. `verify-purchase.ts:207`, `resend-access.ts:207` y `productos-digitales-config.ts:681/:684` describen lo que el cliente DESCARGA, y dl/ sirve todavía la v1.1: el 03 tiene 3 hojas, no 7, y no hay ni matriz de alérgenos ni registro de mermas. La redacción honesta que pide el hallazgo («8 checklists operativos, un libro de registros APPCC de 7 hojas, la plantilla en blanco y 2 bonus») sólo es cierta DESPUÉS del APPLY, así que va en el mismo commit que él (§3.7 + T5). Queda escrito el texto exacto que hay que poner."
+  },
+  {
+   "id": "RC-20",
+   "motivo": "La corrección es de la SPEC y del paso T5, no del kit, y fijar hoy un número sería repetir el error. `kit-tareas-cb-v2-SPEC.md` §3.1 dice 204; el informe del dry-run de esta tanda da 254 (01=45 · 02=38 · 04=21 · 05=24 · 06=64 · 07=31 · 08=31), y todavía puede moverse si el orquestador acepta o rechaza alguna de las tareas nuevas. Lo correcto es lo que el propio hallazgo propone: que T5 lea `gates.recuento_tareas.total` del informe del día del APPLY, no un literal de la SPEC. Dejo el valor medido para que se escriba entonces."
+  },
+  {
+   "id": "RC-21",
+   "motivo": "Depende del APPLY, no de esta tanda. `src/data/productos-changelog.ts:861` dice 1.1 y los once ficheros dicen 2.0, pero los ficheros que sirve `astro-site/public/dl/kit-tareas-sushi-bar/` siguen siendo los de la v1.1: publicar hoy la entrada v2.0 pondría un badge 2.0 sobre una descarga 1.1, que es exactamente la incoherencia inversa. La entrada va en el MISMO commit que el APPLY (§3.6), y con ella hay que corregir la línea del v1.1 que promete «Impresión en A4 configurada en todas las hojas» — cierto sólo desde esta tanda, porque hasta ahora los dos BONUS salían sin print_area."
+  },
+  {
+   "id": "RC-35",
+   "motivo": "PARA JOHN, y el propio hallazgo lo dice: NO es una regresión (las propiedades del documento —creator, lastModifiedBy, keywords, category— dicen «AI Chef Pro» en dl/kit-tareas-sushi-bar v1.1 y también en dl/kit-tareas-cafeteria v2.0) y es la convención de los 44 productos. Cambiarla sólo en los seis kits CB rompería la homogeneidad que vigila el gate de metadata (m5) y contradiría la decisión de John del 2026-08-22 sobre la marca. Se anota en §6 junto a la excepción de chef-privado."
+  }
+ ],
+ "pendientes_de_john": [
+  "RC-35 — las propiedades del documento (creator/lastModifiedBy/keywords/category) dicen «AI Chef Pro» mientras el pie impreso dice «ChefBusiness Consultoría Gastronómica». No es regresión (idéntico en dl/ v1.1 y en kit-tareas-cafeteria v2.0) y es la convención de los 44 productos: cambiarla sólo en los seis kits CB rompe el gate m5 de homogeneidad.",
+  "§6.1 aggregateRating 4,9 sobre 8 reseñas idéntico en los siete kits, sin sistema de reseñas detrás. Los dos testimonios de sushi-bar se han corregido SÓLO en el texto (la cifra falsa del anisakis); ni el rating ni el número de reseñas se tocan (§7-bis.6).",
+  "§6.2 ancla de precio permanente (14 € tachado 69 €, heroNote «Precio especial de lanzamiento», priceValidUntil 2026-12-31) sin variar desde el 45e065a del 2026-05-05.",
+  "Duda 4 de §5 para ESTE kit: sushi-bar no tiene fichero de caja (CB-E7). El arqueo se entrega ahora con sus tres huecos de importe dentro de la tarea de cierre (RC-22); si se quiere la hoja de caja de la familia, es una decisión de producto."
+ ]
+}
