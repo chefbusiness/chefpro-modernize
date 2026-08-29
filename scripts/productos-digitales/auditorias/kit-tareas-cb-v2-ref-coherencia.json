@@ -1,0 +1,322 @@
+{
+ "lente": "coherencia",
+ "hallazgos": [
+  {
+   "id": "RC-01",
+   "severidad": "alta",
+   "fichero": "scripts/productos-digitales/kit-tareas-v2_0/main.py",
+   "ubicacion": "gates.molde.hojas_sin_molde (informe ref-coherencia-kit-tareas-sushi-bar.json) · BONUS-01-briefing-servicio.xlsx!Briefing Servicio · BONUS-02-calendario-anual.xlsx!Calendario Anual",
+   "hallazgo": "El gate «molde» de §1.3 («rojo si alguno sin clasificar») se emite como AVISO y el run sale exit 0 / «TODO VERDE». Los dos ficheros BONUS quedan fuera de todo el post-proceso v2.0: sin DV, sin contador, sin print_area y sin protección de hoja. Son los dos entregables que la landing vende como bonus (kit-tareas-sushi-bar.ts:166 y :231).",
+   "evidencia": "Informe: gates.molde.hojas_sin_molde = [\"BONUS-01-briefing-servicio.xlsx!Briefing Servicio\",\"BONUS-02-calendario-anual.xlsx!Calendario Anual\"]; fallos=[]; exit=0. Log: «molde: 2 hojas sin clasificar · AVISO molde · … ningún molde la reconoce (no recibe DV, ni contador, ni A4, ni protección)». Verificado en la copia: BONUS-01!Briefing Servicio → protection.sheet=False, print_area=None, data_validations=0, rellenos verdes E8F5E9 = {}; BONUS-02!Calendario Anual → protection.sheet=False, print_area=None, DV=0.",
+   "fix": "O el gate «molde» pasa a FALLO (y entonces hay que reconocer el molde formulario y el molde calendario antes de cerrar la tanda), o se declara explícitamente en el informe y en el changelog que los dos BONUS no reciben el tratamiento v2.0. Lo que no puede quedarse es «TODO VERDE» con dos de los once entregables intactos."
+  },
+  {
+   "id": "RC-02",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx",
+   "ubicacion": "BONUS-01!Instrucciones!B13-B16 y BONUS-02!Instrucciones!B13-B16 (contexto.papel_instrucciones = \"checklist\" para los dos)",
+   "hallazgo": "CB-E4 («Instrucciones por TIPO de entregable», cuatro variantes) sólo produjo la variante «registro» (03). BONUS-01 (formulario) y BONUS-02 (calendario) conservan el bloque literal de checklist. TEC-10 y COM-19 NO están resueltos, y COM-19 sigue siendo literalmente imposible de cumplir.",
+   "evidencia": "BONUS-01!Instrucciones!B13 = \"▸ Las celdas verdes son editables — cambia responsables y horarios\" · B14 = \"▸ Borra las tareas que no aplican a tu sushi bar\" · B15 = \"▸ Añade tareas específicas de tu local en las filas vacías del final\" · B16 = \"▸ Ajusta las horas límite a tus horarios reales\". La hoja «Briefing Servicio» tiene 0 celdas con relleno sólido, 0 tareas, 0 responsables y 0 horas (censo de fills en la copia = {}). Texto idéntico en BONUS-02!Instrucciones!B13-B16 sobre un calendario de 12 columnas de mes sin responsables ni horas. Informe: contexto.papel_instrucciones[\"BONUS-01-briefing-servicio.xlsx\"]=\"checklist\" y [\"BONUS-02-calendario-anual.xlsx\"]=\"checklist\".",
+   "fix": "Añadir los papeles «formulario» y «calendario» a _bloque_personalizar() y asignarlos en contexto(): BONUS-01 → «imprime una copia por turno, los campos con ☐ se marcan a mano, añade líneas de pieza si trabajas con más de 4 pescados»; BONUS-02 → «el ● marca el mes previsto; escribe encima la fecha real». Y quitar la frase de las celdas verdes de BONUS-01 o pintarlas."
+  },
+  {
+   "id": "RC-03",
+   "severidad": "alta",
+   "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+   "ubicacion": "líneas 151 y 231 · src/pages/KitTareasSushiBarDashboard.tsx:23 · frente a 08-eventos-estacionales.xlsx!Instrucciones!B15",
+   "hallazgo": "El entregable corregido REFUTA por escrito a su propia landing. El módulo de contenido añadió la nota honesta sobre el salmón y nadie tocó las tres promesas de «salmón salvaje», que siguen vivas. Un comprador que abra el 08 lee que la especie que se le vendió en el calendario no tiene temporada.",
+   "evidencia": "08-eventos-estacionales.xlsx!Instrucciones!B15 = \"▸ El salmón que se sirve en sushi es de acuicultura y está disponible todo el año: no tiene temporada que calendarizar.\" Frente a kit-tareas-sushi-bar.ts:151 = \"…(atún rojo, bonito, salmón salvaje)…\" y :231 = \"…(atún rojo, bonito del norte, salmón salvaje)…\" y KitTareasSushiBarDashboard.tsx:23 = \"Atún rojo, bonito, salmón salvaje. … San Valentín, Año Nuevo Chino.\" «salmón salvaje» sigue con 0 apariciones en los 11 xlsx de la copia.",
+   "fix": "Sustituir «salmón salvaje» por una especie que sí esté en BONUS-02!A6-A9 (besugo, vieira o gamba roja) en las líneas 151 y 231 y en la tarjeta del dashboard, y «Año Nuevo Chino» por «Año Nuevo japonés» (BONUS-02!A12). Si T5 no entra en la misma tanda que el APPLY, no aplicar el 08 todavía."
+  },
+  {
+   "id": "RC-04",
+   "severidad": "alta",
+   "fichero": "scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+   "ubicacion": "gates.promesas.terminos (11 entradas) del informe ref-coherencia-kit-tareas-sushi-bar.json",
+   "hallazgo": "El gate «promesas» de §1.3 se define como «cada término distintivo del grid/CTA/bonus de la landing» y está implementado como una lista de 11 términos elegidos a mano que EXCLUYE precisamente los que no pueden pasar. Sale «0 términos de la landing sin respaldo (de 11)» sin haber mirado ninguno de los cuatro que la R1 dio por rotos.",
+   "evidencia": "gates.promesas.terminos = arqueo, maki, alérgenos, lote (FIFO por lotes), comparativa de proveedores, reporting, delivery / take away, festivos asiáticos (≥2), cierres por vacaciones, omakase, mermas. NO figuran: «salmón salvaje» (ts:151, :231, dashboard:23 — COM-07/DOM-20), «Año Nuevo Chino» (dashboard:23 — COM-08), «11 checklists pre-rellenados» (ts:28, :94, :96, :111 — COM-05) ni «wet-age»/«densidad» de §3.3.",
+   "fix": "Construir la lista de términos LEYENDO el fichero de datos de la landing (grid.templates[].desc, cta.items, bonus.items, hero.checkItems) en vez de escribirla a mano, o como mínimo cerrar la lista contra los ids COM-05/06/07/08/09/20/24/25 del §8 y dejar constancia en el informe de qué términos se han decidido NO vigilar y por qué."
+  },
+  {
+   "id": "RC-05",
+   "severidad": "alta",
+   "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+   "ubicacion": "líneas 41 y 307 (schema.reviews[0].body y testimonials.items[].text) frente a las líneas 52 y 253",
+   "hallazgo": "La landing se contradice a sí misma sobre el requisito legal del anisakis: la FAQ y el schema ya citan el RD 1021/2022 y las 24 h, pero los dos testimonios siguen vendiendo «-20 ºC durante 7 días». Y describen un registro que el fichero corregido ya no contiene.",
+   "evidencia": "kit-tareas-sushi-bar.ts:41 = \"El protocolo de anisakis con registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad.\" y :307 (mismo texto ampliado). Frente a :52 y :253 = \"…RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006): -20 ºC durante al menos 24 h…\" y a 03-seguridad-anisakis-appcc.xlsx!Instrucciones!B7 (copia) = \"▸ Congelación previa obligatoria… −20 °C en la totalidad del producto durante al menos 24 h, o −35 °C durante al menos 15 h\".",
+   "fix": "Reescribir los dos testimonios sin la cifra («el registro de congelación por lote y proveedor nos ha salvado en dos inspecciones») o retirarlos. Es la misma corrección de COM-01 que ya se aplicó a las otras 6 apariciones; quedaron dos."
+  },
+  {
+   "id": "RC-06",
+   "severidad": "alta",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+   "ubicacion": "03!Registro Congelación!E6:E25 y 05-tareas-manager.xlsx!Reporting Semanal!F5:F11",
+   "hallazgo": "El bloque de formato de fecha del molde REGISTRO (CB-E3) se aplica desplazado: pinta DD/MM/YYYY sobre una columna de texto y sobre una columna de euros. En «Reporting Semanal» el cliente escribe 480 en «Compras de pescado (€)» y ve «23/06/1901», justo en la hoja que sostiene la promesa de «reporting» de la landing.",
+   "evidencia": "03!Registro Congelación: E5 = \"Origen y acreditación\" (columna de texto: «Salvaje / Acuicultura nº cert.») con number_format = DD/MM/YYYY en E6:E25; hay CUATRO columnas con formato de fecha (E, F, G, H) para TRES fechas (F5 «Fecha Entrada», G5 «Inicio Congelación», H5 «Fin Congelación»); D6 («Proveedor/Lonja») = General. 05!Reporting Semanal: B4 = \"Fecha\" y F4 = \"Compras de pescado (€)\", y B5:B11 y F5:F11 tienen los dos number_format = DD/MM/YYYY (F13 sí lleva #,##0.00\" €\").",
+   "fix": "Determinar las columnas de fecha por el TEXTO de la cabecera (contiene «Fecha»/«Caducidad»/«Inicio»/«Fin»), no por posición ni por un rango contiguo. Verificar después con un barrido: ninguna columna cuyo rótulo lleve «€», «kg», «°C» o «Origen» puede quedar con formato de fecha."
+  },
+  {
+   "id": "RC-07",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/06-tareas-perfiles.xlsx",
+   "ubicacion": "06!Ayudante Sushi!B13 frente a 01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B18 y 07-semanales-mensuales.xlsx!Tareas Semanales!B9",
+   "hallazgo": "DOM-26 se corrigió en dos sitios y se dejó vivo en el tercero, que además es el del operario que lo hace a diario. El kit prohíbe y permite el detergente en el mismo utensilio.",
+   "evidencia": "06!Ayudante Sushi!B13 = \"Lavar hangiri (solo con agua, sin jabón)\". 01!Cierre Barra Sushi!B18 = \"Hangiri: lavar con agua caliente y cepillo, sin abrasivos; si usas detergente apto para uso alimentario, aclarar a fondo…\". 07!Tareas Semanales!B9 = \"Sanitizar el hangiri según el plan de L+D: agua caliente, cepillo y desinfectante apto para uso alimentario…\".",
+   "fix": "Reescribir 06!Ayudante Sushi!B13 con la misma redacción de 01!Cierre!B18 (una sola frase canónica en una constante del módulo de contenido, referenciada desde las tres celdas)."
+  },
+  {
+   "id": "RC-08",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/06-tareas-perfiles.xlsx",
+   "ubicacion": "06!Ayudante Sushi!B8 y B11",
+   "hallazgo": "DOM-29 se corrigió en 4 de las 6 celdas que la propia R1 enumera. El kit usa dos vocabularios distintos para el mismo utensilio, y el que se queda en inglés es el de la hoja del ayudante.",
+   "evidencia": "06!Ayudante Sushi!B8 = \"Preparar bamboo mats con plastic wrap\" y B11 = \"Renovar plastic wrap cada 2 horas\". Ya corregidas: 01!Apertura Barra Sushi!B27 = \"Preparar los makisu (esterillas de bambú) con film transparente nuevo\", 01!Cierre!B17 = \"Retirar el film transparente usado de los makisu…\", 04!Mise en Place Barra!B25 = \"Renovar el film transparente de los makisu cada 2 horas\".",
+   "fix": "Aplicar la misma sustitución a 06!Ayudante Sushi!B8 y B11 y añadir al gate un barrido de «bamboo mat» y «plastic wrap» = 0 en todo el corpus."
+  },
+  {
+   "id": "RC-09",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+   "ubicacion": "gates.ortografia.lemas_vivos = [] · 04!Instrucciones!B6 · 08!Instrucciones!B7 · 01!Apertura Barra Sushi!B35 · 06!Sala y Servicio!B9",
+   "hallazgo": "El gate CB-E1 declara «0 celdas con lema de LEX_TILDES» y quedan errores ortográficos inequívocos en el texto que el cliente lee. Uno de ellos («espectaculo») es un lema no ambiguo que debería estar en LEX_TILDES; los otros tres son de la lista de «ambiguas» (590 ocurrencias listadas en el informe) que la SPEC encarga al módulo de contenido y que nadie resolvió.",
+   "evidencia": "04-barra-sushi-neta-case.xlsx!Instrucciones!B6 = \"▸ La barra de sushi es el centro del espectaculo — debe estar impecable\" (espectáculo). 08-eventos-estacionales.xlsx!Instrucciones!B7 = \"▸ Los eventos omakase generan el ticket medio mas alto\" (más). 01-apertura-cierre-sushi.xlsx!Apertura Barra Sushi!B35 = \"Verificar stock bebidas: sake, cerveza japonesa, te\" (té). 06-tareas-perfiles.xlsx!Sala y Servicio!B9 = \"Servir te verde y agua al sentar al cliente\" (té). Informe: gates.ortografia = {\"aplica\": true, \"lemas_vivos\": [], \"ambiguas\": [590 entradas]}.",
+   "fix": "Añadir «espectaculo» a LEX_TILDES; resolver a mano las cuatro celdas; y hacer que el gate FALLE mientras queden ambiguas sin marcar como revisadas, en vez de listarlas y seguir en verde."
+  },
+  {
+   "id": "RC-10",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx",
+   "ubicacion": "BONUS-01!Briefing Servicio!B28 y B29 frente a B37",
+   "hallazgo": "La misma hoja escribe «Si» y «Sí» en casillas equivalentes: las dos heredadas siguen sin tilde y la que ha añadido esta v2.0 sí la lleva. Es el defecto ortográfico más visible que queda, en el fichero que se imprime una vez por servicio.",
+   "evidencia": "BONUS-01!Briefing Servicio!B28 = \"☐ Arroz sushi: ___kg preparados (suficiente: ☐ Si ☐ No)\" · B29 = \"☐ Nori: ___hojas (suficiente: ☐ Si ☐ No)\" · B37 (nueva) = \"Pedido de pescado de mañana confirmado antes de la hora de corte: ☐ Sí ☐ No\".",
+   "fix": "Corregir B28 y B29 a «☐ Sí ☐ No». Es exactamente lo que RC-01 impide detectar: el fichero está fuera de todo tratamiento porque su hoja no se clasifica."
+  },
+  {
+   "id": "RC-11",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx",
+   "ubicacion": "126 celdas de tarea en 18 hojas · peor caso 02!Protocolo Arroz Sushi!B26 y 06!Sala y Servicio!B8 · row_dimensions vacío en las 18 hojas de checklist",
+   "hallazgo": "CB-E9 activó wrap_text en la columna «Tarea» y ensanchó B a 60, pero NO escribió alturas de fila; y el módulo de contenido metió tareas de hasta 279 caracteres. El resultado es el defecto que TEC-19 describe, multiplicado de 2 cabeceras a 126 filas: en cualquier visor que no recalcule el alto (LibreOffice, previsualizadores, Sheets) la tarea se ve a una sola línea y se corta. El kit se vende para imprimirse.",
+   "evidencia": "En la copia: las 18 hojas ▸ tienen len(ws.row_dimensions)=0. 02!Protocolo Arroz Sushi!B26 = 279 caracteres, ancho B=60, wrap_text=True, alto=None → 5 líneas en una fila de 15 pt. 06!Sala y Servicio!B8 = 269 car. (5 líneas). 07!Tareas Mensuales!B23 = 215 car. (4). 02!Protocolo Arroz Sushi!B19 = 193 car. (4). Y 20 celdas más SIN wrap: 03!Registro Congelación!B27 = 289 car. con ancho B=22 (14 líneas), B30 = 271 car., 03!Temperaturas Diario!B14 = 266 car. con ancho 49. La SPEC lo pedía explícitamente: CB-E9(a) «wrap_text con alto 30 pt» y CB-E3 «altura explícita en las cabeceras con wrap_text (TEC-19: hoy row_dimensions está vacío)». Las Instrucciones sí llevan altos (27-35 filas por fichero), luego el paso «autoalto» existe y no cubre los checklists.",
+   "fix": "Extender «autoalto» a las hojas de checklist y de registro: alto = ceil(len(texto)/ancho)*15 pt con mínimo 30, sobre toda celda con wrap_text. Y activar wrap_text también en las 20 celdas de nota (03!Registro Congelación!B27/B29/B30, 03!Temperaturas Diario!B14) que hoy se apoyan en el desbordamiento."
+  },
+  {
+   "id": "RC-12",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+   "ubicacion": "03!Temperaturas Diario!B14 frente a 01-apertura-cierre-sushi.xlsx!Cierre Barra Sushi!B24",
+   "hallazgo": "DOM-13 y TEC-09 se cierran sobre el papel: la hoja deja de pedir dos lecturas y remite la de cierre al fichero 01, pero en 01 no hay ninguna rejilla donde anotarla — sólo una tarea de tick que además cubre un único equipo de los siete. El registro APPCC sigue teniendo una sola celda por equipo y día y ahora, además, promete que la segunda lectura vive en otro sitio donde no vive.",
+   "evidencia": "03!Temperaturas Diario!B14 = \"Anota aquí la lectura de APERTURA de cada equipo, una por día. La lectura de CIERRE se marca y se firma en el checklist de cierre del fichero 01…\". 01!Cierre Barra Sushi!B24 = \"Verificar temperaturas cámaras y registrar (refrigeración 0-4 °C) — anota la lectura: ____ °C\" — una sola celda de texto libre dentro de la tarea, para uno solo de los 7 equipos de 03!Temperaturas Diario!B5:B11 (pescado crudo, congelación anisakis, vitrina, refrigeración general, congelador general, aceite de fritura, arroz de servicio).",
+   "fix": "O se desdobla cada columna de día en Apertura/Cierre en 03!Temperaturas Diario (14 columnas), o se añade a 01!Cierre una fila por equipo con su celda de lectura, o se corrige B14 para que diga sólo lo que el kit permite hacer («una lectura diaria, en apertura»)."
+  },
+  {
+   "id": "RC-13",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx",
+   "ubicacion": "02!Protocolo Arroz Sushi!B30/E30 y B33/E33 frente a B27 y B16/E16",
+   "hallazgo": "El bloque nuevo «SEGUNDO LOTE (TURNO CENA)» que cierra DOM-11 contradice la regla de 4 h que la propia hoja acaba de fijar tres filas más arriba: manda descartar el arroz del almuerzo a las 17:00 cuando caducó a las 14:52. Es el mismo tipo de cadena horaria imposible que DOM-03 vino a arreglar.",
+   "evidencia": "02!Protocolo Arroz Sushi: B16 \"Verter sushi-zu sobre arroz…\" E16=\"10:52\"; B27 = \"Anotar la hora de avinagrado en la hoja de pH: el lote se descarta 4 h después y nunca se guarda para el día siguiente\" (E27=\"11:10\"); B30 = \"Programar el segundo lote de arroz para la cena: el del almuerzo caduca 4 h después de avinagrarse\" E30=\"16:00\"; B33 = \"Descartar el arroz del turno de almuerzo: no se mezcla nunca con el lote nuevo\" E33=\"17:00\". 10:52 + 4 h = 14:52.",
+   "fix": "Poner E33 = \"14:55\" (o «+4 h desde el avinagrado») y E30 = \"14:00\", y redactar el bloque en offsets («A+4 h») como ya se hizo con el resto del protocolo, para que no dependa de una hora de apertura concreta."
+  },
+  {
+   "id": "RC-14",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx",
+   "ubicacion": "02!Protocolo Corte Pescado!B10/E10 y B11/E11 frente a B6-B9 y B14-B19",
+   "hallazgo": "La tarea nueva de descongelación controlada (que cierra DOM-14) es físicamente imposible en la hora que se le asigna y además rompe el orden de la columna: descongelar en cámara a 0-2 °C a las 10:55 para cortar a las 11:10 son 15 minutos, y las dos filas prerrequisito quedan impresas DEBAJO de las que las suceden en el tiempo.",
+   "evidencia": "02!Protocolo Corte Pescado: B6 (frescura) E6=\"11:00\", B7 E7=\"11:00\", B8 E8=\"11:00\", B9 E9=\"11:05\", B10 = \"Comprobar la etiqueta del lote ANTES de cortar…\" E10=\"10:55\", B11 = \"Descongelar en cámara a 0-2 °C, nunca a temperatura ambiente ni bajo el grifo…\" E11=\"10:55\"; primer corte B14 E14=\"11:10\".",
+   "fix": "Mover B10 y B11 al principio del bloque (o a una banda «ANTES DEL CORTE») y darle a la descongelación una antelación real: «la víspera / 12-24 h antes en cámara a 0-2 °C», que es además lo que un inspector espera leer."
+  },
+  {
+   "id": "RC-15",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/06-tareas-perfiles.xlsx",
+   "ubicacion": "06!Delivery y Take Away!B18 frente a gates.limite_unico[\"cámara de pescado crudo\"] = (0.0, 2.0)",
+   "hallazgo": "La hoja nueva de delivery introduce un segundo rango para el pescado crudo (0-4 °C) justo después de que el kit haya unificado el suyo en 0-2 °C en cinco celdas. Es el defecto DOM-12/COM-15 reapareciendo en contenido nuevo, y el gate §7-bis.23 no puede verlo porque agrupa por nombre de equipo y esto es una frase de proceso.",
+   "evidencia": "06!Delivery y Take Away!B18 = \"Comprobar y anotar la temperatura del pedido al salir: el pescado crudo sale entre 0 y 4 °C — anota la lectura\". gates.limite_unico.equipos[\"cámara de pescado crudo\"][\"(0.0, 2.0)\"] = [01!Instrucciones!B20, 01!Apertura Barra Sushi!B8, 03!Instrucciones!B18, 03!Temperaturas Diario!B5, 03!Control de Recepción!A29]; conflictos = [].",
+   "fix": "Escribir 0-2 °C también en B18, o decir explícitamente que el transporte se admite hasta 4 °C citando la fuente. Y ampliar limite_unico para que vigile también las menciones de «pescado crudo» fuera de un nombre de equipo, o el gate seguirá dando 0 conflictos con dos rangos vivos."
+  },
+  {
+   "id": "RC-16",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/08-eventos-estacionales.xlsx",
+   "ubicacion": "08!Eventos Especiales!E4 y E6-E28 · 08!Temporadas Pescado España!E4 y E6-E25",
+   "hallazgo": "COM-23 se resolvió a medias: la cabecera dejó de mentir con «Hora Límite» pero se puso «Cuándo» donde la propia R1 pedía «Antelación» y «Mes», y la sección nueva mete meses absolutos en una columna que hasta ahora eran cuentas atrás. La columna mezcla ahora dos tipos de valor incompatibles en la misma hoja.",
+   "evidencia": "08!Eventos Especiales!E4 = \"Cuándo\" con E6=\"-48h\", E7=\"-24h\", E8=\"-12h\", E10=\"-2h\", E11=\"-1h\", E14=\"-3 sem\", E16=\"-2 días\" y, en la sección A24 «FESTIVOS JAPONESES Y CENAS DE EMPRESA», E25=\"Marzo\", E26=\"Junio\", E27=\"Octubre\", E28=\"Abril\". 08!Temporadas Pescado España!E4 = \"Cuándo\" con E6=\"Diciembre\", E11=\"Marzo\", E16=\"Junio\", E20=\"Continuo\", E23=\"Septiembre\". COM-23 fix: «Mes» en temporadas y «Antelación» en eventos.",
+   "fix": "Poner E4 = \"Antelación\" en Eventos Especiales y convertir los cuatro meses de la sección nueva a antelación («-1 mes», «-2 meses»), o partir la sección en una hoja propia con cabecera «Mes». En Temporadas Pescado España, E4 = \"Mes\"."
+  },
+  {
+   "id": "RC-17",
+   "severidad": "media",
+   "fichero": "netlify/functions/verify-purchase.ts",
+   "ubicacion": "verify-purchase.ts:207 · netlify/functions/resend-access.ts:207 · src/data/productos-digitales-config.ts:681 y :684",
+   "hallazgo": "La afirmación de COM-05 vive también en los correos de compra y de recuperación de acceso, y el mapa §8 sólo la manda a §3.3 (las cuatro líneas de la landing). §3.7 dice que los emails «sólo se revisan si se toca la descripción de algún entregable» — y esta v2.0 la toca: el 03 pasa de 3 a 7 hojas y el 06 de 4 a 6.",
+   "evidencia": "verify-purchase.ts:207 = \"…descargar los 11 checklists operativos con protocolo anisakis APPCC:\". resend-access.ts:207 = \"…descargar los 11 checklists operativos con protocolo anisakis APPCC:\". productos-digitales-config.ts:681 (emailBodyPostPurchase) y :684 (emailBodyResend), mismo texto. Realidad de la copia: 03 son 7 hojas de REGISTRO (contexto.papel_instrucciones=\"registro\", 0 tareas en gates.recuento_tareas), BONUS-01 un formulario y BONUS-02 un calendario. Checklists reales: 18 hojas en 8 ficheros.",
+   "fix": "Redacción honesta en las cuatro cadenas: «8 checklists operativos, un libro de registros APPCC (7 hojas), la plantilla en blanco y 2 bonus». Añadir los cuatro ficheros al §8 bajo COM-05."
+  },
+  {
+   "id": "RC-18",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+   "ubicacion": "03!Registro de pH del Arroz!F4 «pH medido» y F5:F24",
+   "hallazgo": "La hoja nueva que cierra DOM-04/DOM-21 registra el límite crítico estrella del kit sin ninguna comprobación: la columna del pH no tiene number_format, ni validación decimal, ni formato condicional que marque >4,6. La hoja hermana de temperaturas sí lleva CF por fila, así que el criterio no es uniforme dentro del mismo libro.",
+   "evidencia": "03!Registro de pH del Arroz: cabecera A4=\"#\", B4=\"Fecha\" (DD/MM/YYYY), C4=\"Lote / hora de avinagrado\", D4=\"kg de arroz cocido\", E4=\"Sushi-zu añadido (ml/kg)\", F4=\"pH medido\", G4=\"Acción correctora\", H4=\"Verif.\" (DV \"✓,—,N/A\"), I4=\"Firma\". number_format de F5 = General; ws.conditional_formatting = [] en toda la hoja. Frente a 03!Temperaturas Diario, con CF en C5:I5 … C11:I11 y number_format 0.0 \"°C\" en C:I.",
+   "fix": "number_format \"0.0\" y DV decimal 3,5-6,0 en F5:F24, más CF «greaterThan 4,6» en rojo. Igual en D (kg, 0.0\" kg\") y E (ml/kg, 0\"ml/kg\")."
+  },
+  {
+   "id": "RC-19",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx",
+   "ubicacion": "03!Registro Congelación (I «Temp °C») · 03!Trazabilidad Pescado (H «Temp recepción (°C)») · 03!Control de Recepción (G) · 03!Registro de pH (F)",
+   "hallazgo": "CB-E3 exige «CF de fuera-de-rango» en el molde REGISTRO y sólo se ha aplicado a una de las cinco hojas que tienen columna crítica. En «Registro Congelación», que es el entregable legalmente obligatorio, una temperatura de −15 °C se anota sin que nada la señale.",
+   "evidencia": "ws.conditional_formatting = [] en Registro Congelación, Trazabilidad Pescado, Matriz de Alérgenos, Registro de pH del Arroz, Control de Recepción y Registro de Mermas. Sólo Temperaturas Diario tiene reglas: [\"C5:I5\",\"C6:I6\",\"C7:I7\",\"C8:I8\",\"C9:I9\",\"C10:I10\",\"C11:I11\"]. Los number_format sí están: Registro Congelación!I = 0.0 \"°C\", Trazabilidad!H = 0.0 \"°C\", Control de Recepción!G = 0.0 \"°C\".",
+   "fix": "Aplicar la misma regla que en Temperaturas Diario: CF «greaterThan -20» sobre Registro Congelación!I6:I25, «greaterThan 4» sobre Control de Recepción!G y Trazabilidad!H, con relleno rojo. Y dejar el gate «citas_legales»/«contadores» acompañado de un gate «CF en toda columna con unidad en la cabecera»."
+  },
+  {
+   "id": "RC-20",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-tareas-cb-v2-SPEC.md",
+   "ubicacion": "SPEC §3.1 («sushi-bar 204») frente a gates.recuento_tareas.total = 251 del informe",
+   "hallazgo": "La SPEC declara que la cifra de tareas de la landing sale de gates.recuento_tareas.total y a la vez fija 204 para sushi-bar. Tras las 4 hojas nuevas de checklist el motor cuenta 251. Si T5 publica el número escrito en la SPEC, publicará un dato que el kit ya no tiene.",
+   "evidencia": "SPEC §3.1: «sushi-bar 204 · asador 223 · chef-privado 224…». Informe: gates.recuento_tareas.total = 251, recuento_por_molde = {\"checklist_▸\": 251, \"p4\": 0}, por_fichero 01=44, 02=38, 04=21, 05=24, 06=63, 07=30, 08=31, y 03=0 / 09=0 / BONUS-01=0 / BONUS-02=0.",
+   "fix": "Actualizar §3.1 al valor del informe del día del APPLY, o mejor: que T5 lea el número del JSON y no de la SPEC. Y decidir si la cifra publicada incluye o no los registros (03 aporta 0 tareas pero 7 hojas de trabajo)."
+  },
+  {
+   "id": "RC-21",
+   "severidad": "media",
+   "fichero": "src/data/productos-changelog.ts",
+   "ubicacion": "productos-changelog.ts:861 (version: \"1.1\") frente a la línea de versión de los 11 ficheros y a src/pages/KitTareasSushiBarDashboard.tsx:62",
+   "hallazgo": "Los once ficheros escriben «Versión 2.0 · agosto 2026» y el changelog/badge del dashboard sigue en 1.1. Si el APPLY se hace antes que T5, el cliente descarga v2.0 desde una página que le dice que va por la 1.1, y el changelog v1.1 seguirá prometiendo cosas que la v2.0 cambia («Impresión en A4 configurada en todas las hojas» cuando BONUS-01 y BONUS-02 se quedan sin print_area, RC-01).",
+   "evidencia": "Copia: 01!Instrucciones!B55 = \"Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-sushi-bar · info@aichef.pro\" (y las 10 equivalentes; gates.dv_y_bio.version_desfasada = []). src/data/productos-changelog.ts:860-872: \"kit-tareas-sushi-bar\": { version: \"1.1\", updated: \"2026-08-22\", … }. KitTareasSushiBarDashboard.tsx:62 = <ProductVersionBadge productId=\"kit-tareas-sushi-bar\" />.",
+   "fix": "Entrada v2.0 del changelog en el mismo commit que el APPLY, no en T5, y redactada por molde como pide §3.6. Si no se puede, no aplicar."
+  },
+  {
+   "id": "RC-22",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+   "ubicacion": "gates.promesas.terminos[0] («arqueo») frente a contexto.sin_caja = true",
+   "hallazgo": "El gate da por cumplida la promesa de «arqueo» de la landing porque la palabra aparece en tres celdas de texto, no porque exista el entregable. El kit no tiene hoja de caja ni de arqueo —el propio motor lo declara con sin_caja=true— y §7-bis.18 firmó que lo prometido se entrega portando el bloque de caja de la familia.",
+   "evidencia": "gates.promesas: {\"termino\": \"arqueo\", \"origen\": \"kit-tareas-sushi-bar.ts:116 grid.templates[0] «cierre completo y arqueo»\", \"apariciones\": 3, \"donde\": [\"01!Instrucciones!B18\",\"01!Instrucciones!B22\",\"01!Cierre Barra Sushi!B27\"], \"ok\": true}. 01!Cierre Barra Sushi!B27 = \"Arqueo de caja y cierre de TPV: contar el efectivo, cotejarlo con la Z del TPV y anotar el descuadre\" — una casilla de tick, sin ninguna celda donde escribir el efectivo contado ni el descuadre. contexto.sin_caja = true, contexto.f_caja = null, gates.negocio_precargado.informativo = [\"CB-E7 — el kit no tiene fichero de NEGOCIO ni de CAJA…\"].",
+   "fix": "O se porta el bloque _fondo_de_caja/ajustar_09 como hoja del 01 (decisión §7-bis.18), o se recorta «y arqueo» de kit-tareas-sushi-bar.ts:116. Y el gate «promesas» debe exigir, para los términos que nombran un entregable, que exista una HOJA, no una palabra."
+  },
+  {
+   "id": "RC-23",
+   "severidad": "baja",
+   "fichero": "scripts/productos-digitales/gate-no-latinos.py",
+   "ubicacion": "gate-no-latinos.py:68 (resolución de --only) y :90 (return 1 if hits else 0)",
+   "hallazgo": "La invocación del encargo, `--only sushi-bar`, apunta a una carpeta que no existe: el script no avisa, imprime «0 ficheros escaneados · 0 con no-latinos» y devuelve exit 0. Un gate que da verde sobre una ruta vacía es el mismo punto ciego que ya costó el incidente del eBook.",
+   "evidencia": "`python3 gate-no-latinos.py --only sushi-bar` → «0 ficheros escaneados · 0 con no-latinos · 0 caracteres», exit 0. `--only kit-tareas-sushi-bar` → «11 ficheros escaneados · 0 con no-latinos · 0 caracteres». Línea 68: `base = a.only if os.path.isdir(a.only) else os.path.join(ROOT, a.only) …` sin comprobar que el resultado existe; línea 90: `return 1 if hits else 0`.",
+   "fix": "`if not os.path.isdir(base): sys.exit(\"no existe: \"+base)` y `if not files: sys.exit(2)`. Resultado real del barrido correcto: 0 no-latinos en los 11 ficheros de la copia y en los 11 de dl/ — el gate de contenido está limpio; lo que falla es su modo de fallo."
+  },
+  {
+   "id": "RC-24",
+   "severidad": "baja",
+   "fichero": "scripts/productos-digitales/kit-tareas-v2_0/regresion.py",
+   "ubicacion": "regresion.py, docstring «Lo que NO compara»",
+   "hallazgo": "El gate BLOQUEANTE de §7-bis.24 no compara anchos de columna, formato condicional ni rellenos, que son exactamente las tres dimensiones que toca CB-E9. Hoy no hay deriva —lo he verificado a mano— pero el gate no podría verla: un CB-E9 sin condicionar por sub-familia repintaría 11 kits LIVE y el gate seguiría diciendo «0 diferencias».",
+   "evidencia": "regresion.py docstring: «Lo que NO compara (y por qué): rellenos, fuentes, anchos de columna, formato condicional, merges y metadata». CB-E9 cambia ancho de B 48→60 y el dxf del CF de C8E6C9 a A5D6A7 (verificado en la copia: 01!Apertura Barra Sushi, ancho B=60, CF A5:G41 bgColor 00A5D6A7). Comprobación propia: `regresion.py` cafetería 11/0 diferencias y hotel 19/0; comparación manual añadida de anchos, CF y wrap_text en cafetería → 0 diferencias también.",
+   "fix": "Añadir ancho de columna, CF (sqref + dxf) y relleno sólido como dimensiones de _celdas(), aunque sea tras un flag `--estricto`, y correrlo así en el T0 de cualquier extensión que toque presentación."
+  },
+  {
+   "id": "RC-25",
+   "severidad": "baja",
+   "fichero": "scripts/productos-digitales/kit-tareas-v2_0/main.py",
+   "ubicacion": "gates.data_only_formulas_nuevas del informe frente al log de inject_cache · 05!Reporting Semanal!E13 y C14",
+   "hallazgo": "Los contadores del informe no cuadran con los de inject_cache y el lector no puede distinguir «fórmula sin cachear por diseño» de «fórmula que falló». Las dos afectadas son justamente el ticket medio y el food cost, los dos números que la hoja promete calcular.",
+   "evidencia": "Log: «05-tareas-manager.xlsx: formulas=10 cache_inyectado=8 fallos_pycel=0». Informe: gates.data_only_formulas_nuevas = {\"con_valor\": 36, \"vacias_por_diseno\": 0, \"fallos\": []}. En la copia, con data_only=True: 05!Reporting Semanal!E13 = \"=IF(SUM(D5:D11)=0,\\\"\\\",SUM(C5:C11)/SUM(D5:D11))\" → None, y C14 = \"=IF(SUM(C5:C11)=0,\\\"\\\",SUM(F5:F11)/SUM(C5:C11))\" → None (las dos devuelven cadena vacía con la hoja en blanco).",
+   "fix": "Contar como «vacías por diseño» las fórmulas cuyo resultado cacheado es cadena vacía y reflejarlo en el informe (con_valor 36 + vacias_por_diseno 2 = 38 = 36+2), para que «cache_inyectado=8 de 10» deje de parecer una pérdida."
+  },
+  {
+   "id": "RC-26",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/05-tareas-manager.xlsx",
+   "ubicacion": "05!Comparativa de Proveedores!D5:G24 frente a 05!Reporting Semanal!C13/E13/F13/G13 y 03!Registro de Mermas!H",
+   "hallazgo": "Las dos hojas nuevas del mismo fichero usan criterios distintos para el dinero: la de reporting formatea en euros y la de comparativa deja las cuatro columnas de €/kg en General. El cliente que teclee 24,5 en «Proveedor A (€/kg)» no ve moneda.",
+   "evidencia": "05!Comparativa de Proveedores: D4=\"Proveedor A (€/kg)\", E4=\"Proveedor B (€/kg)\", F4=\"Proveedor C (€/kg)\", G4=\"Mejor precio (€/kg) y proveedor\" — number_format = General en todas las filas 5-24. 05!Reporting Semanal!C13/E13/F13/G13 = #,##0.00\" €\"; 03!Registro de Mermas!H = #,##0.00\" €\"; 03!Registro de Mermas!E = 0.0\" kg\".",
+   "fix": "number_format #,##0.00\" €\" en D:F de Comparativa de Proveedores (G queda en texto porque mezcla precio y nombre de proveedor: mejor partirla en dos columnas)."
+  },
+  {
+   "id": "RC-27",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+   "ubicacion": "01!Instrucciones!B14 frente a contexto.hora_apertura = \"10:00\" y a SPEC §4",
+   "hallazgo": "El bloque nuevo que cierra DOM-11 fija por escrito una hora de apertura de la barra (12:00) que no coincide con la que deduce el motor ni con la que la SPEC documenta (10:00). Nada la consume hoy porque precargar_caja no corre, pero es un dato de negocio que queda impreso y que los hermanos ▸ van a copiar.",
+   "evidencia": "01!Instrucciones!B14 = \"▸ Las horas de estas hojas son las del turno de ALMUERZO, con la barra abierta a las 12:00…\". Informe: contexto.hora_apertura = \"10:00\". SPEC §4: «`hora_apertura` = 07:00 que deduce `contexto()` es incorrecta para un sushi bar (abre a las 10:00)».",
+   "fix": "Elegir una hora y escribirla en los dos sitios (el módulo de contenido y la nota de §4), o redactar B14 sin hora absoluta: «las horas son las del turno de ALMUERZO; para la cena súmale la diferencia entre tus dos aperturas»."
+  },
+  {
+   "id": "RC-28",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+   "ubicacion": "01!Apertura Barra Sushi!E6-E11 (bloque A5 «TEMPERATURAS Y EQUIPOS»)",
+   "hallazgo": "El primer bloque del primer checklist del kit sale desordenado en el tiempo: cinco filas a 10:00-10:05 y a continuación la Nº 6 a 09:30. El paréntesis lo explica, pero el impreso que se cuelga en la barra arranca con una hora que ya pasó.",
+   "evidencia": "01!Apertura Barra Sushi: E6=\"10:00\", E7=\"10:00\", E8=\"10:00\", E9=\"10:00\", E10=\"10:05\", y B11 = \"Encender arrocera / preparar olla para arroz sushi (el arroz arranca a las 09:30, antes que el resto de la apertura)\" con E11=\"09:30\"; después B14 (Nº 7) con E14=\"09:35\".",
+   "fix": "Sacar las tareas de arroz a una banda propia «ANTES DE LA APERTURA (09:30)» colocada por encima de «TEMPERATURAS Y EQUIPOS», que es como se leen en 02."
+  },
+  {
+   "id": "RC-29",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/05-tareas-manager.xlsx",
+   "ubicacion": "05!Tareas Diarias Manager!E19, E20 y E21 (bloque A18 «CIERRE Y PEDIDOS»)",
+   "hallazgo": "La corrección de DOM-24 cambió la hora del pedido a lonja pero no movió la fila: dentro del bloque de cierre la columna va 23:00 → 18:00 → 23:00.",
+   "evidencia": "05!Tareas Diarias Manager: B19 \"Revisar ventas del día vs objetivo\" E19=\"23:00\"; B20 \"Confirmar el pedido de pescado de mañana ANTES de la hora de corte de tu proveedor (por defecto 18:00; anota aquí la tuya: ____)\" E20=\"18:00\"; B21 \"Revisar reservas de mañana y planificar\" E21=\"23:00\".",
+   "fix": "Mover B20 a un bloque «TARDE (antes del corte de pedidos)» delante de «CIERRE Y PEDIDOS», o renombrar el bloque a «TARDE Y CIERRE» y ordenar las filas por hora."
+  },
+  {
+   "id": "RC-30",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+   "ubicacion": "BONUS-02!Calendario Anual!A6, A7 y A8",
+   "hallazgo": "Al corregir el cruce bonito/atún (DOM-09/COM-03) se movieron los puntos pero no se reetiquetaron los paréntesis, que es lo que el fix pedía. Las etiquetas de estación ya no describen los meses marcados.",
+   "evidencia": "A6 = \"Besugo, merluza, rape, vieira y lubina salvaje (invierno)\" con ● en B6 (Ene), C6 (Feb), D6 (Mar), L6 (Nov), M6 (Dic). A7 = \"Atún rojo de almadraba, sepia y boquerón (primavera)\" con ● en E7 (Abr), F7 (May), G7 (Jun). A8 = \"Bonito del norte, sardina, pez espada y gamba roja (verano)\" con ● en G8 (Jun), H8 (Jul), I8 (Ago), J8 (Sep), K8 (Oct).",
+   "fix": "Sustituir las estaciones por los meses reales: «(nov-mar)», «(abr-jun)», «(jun-oct)», «(sep-nov)», que es como ya está redactado 08!Temporadas Pescado España!B6/B11/B16/B23."
+  },
+  {
+   "id": "RC-31",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/08-eventos-estacionales.xlsx",
+   "ubicacion": "08!Eventos Especiales!B26/E26 y B28/E28 frente a BONUS-02!Calendario Anual!A14 y A15",
+   "hallazgo": "Los dos ficheros que comparten calendario usan convenciones distintas sin decirlo: el 08 apunta el mes de PREPARACIÓN y el BONUS-02 marca el mes del EVENTO. Es la misma clase de discrepancia 07↔BONUS-02 que COM-10 vino a cerrar, ahora en el contenido nuevo.",
+   "evidencia": "08!Eventos Especiales!B26 = \"Tanabata (7 de julio): menú temático y decoración de sala\" con E26 = \"Junio\"; BONUS-02!Calendario Anual!A14 = \"Tanabata (7 de julio, menú temático)\" con ● sólo en H14 (Jul). 08!B28 = \"Día de la Madre (primer domingo de mayo): menú cerrado y doble turno\" con E28 = \"Abril\"; BONUS-02!A15 = \"Día de la Madre (menú cerrado, doble turno)\" con ● sólo en F15 (May).",
+   "fix": "Decir la convención en 08!Instrucciones («la columna Cuándo es el mes en que se PREPARA») o alinear los dos ficheros. Con la cabecera de RC-16 puesta en «Antelación» el problema desaparece solo."
+  },
+  {
+   "id": "RC-32",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx",
+   "ubicacion": "BONUS-02!Calendario Anual!A43 con G43 y M43",
+   "hallazgo": "La fila se titula «anual» y lleva dos marcas. Es literalmente el defecto que COM-10 describe (frecuencia declarada distinta de la programada), reintroducido por la corrección.",
+   "evidencia": "BONUS-02!Calendario Anual!A43 = \"Auditoría anual completa del plan APPCC (la mensual va en el 07)\" con ● en G43 (Jun) y M43 (Dic). Coherente con 07!Tareas Mensuales!B23 («Auditoría interna MENSUAL…»), pero no consigo mismo.",
+   "fix": "Dejar una sola marca (M43, cierre de año) o retitular «Auditoría completa del plan APPCC (semestral)»."
+  },
+  {
+   "id": "RC-33",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/07-semanales-mensuales.xlsx",
+   "ubicacion": "07!Instrucciones!B14",
+   "hallazgo": "La celda dice dos veces lo mismo: la frase de la cadencia y, a continuación, la nota de fuente que repite la frase entera. Son 338 caracteres en una columna de 100, y con RC-11 encima queda a una línea.",
+   "evidencia": "07!Instrucciones!B14 = \"▸ Extintores: revisión trimestral del titular y revisión anual por empresa mantenedora habilitada, con retimbrado a los 5 años. Fuente: RD 513/2017 (RIPCI) — revisión TRIMESTRAL a cargo del titular y revisión ANUAL por empresa mantenedora habilitada; retimbrado del extintor a los 5 años. Son dos obligaciones distintas, por eso van en dos filas.\"",
+   "fix": "Dejar «▸ Extintores: dos obligaciones distintas, por eso van en dos filas. Fuente: RD 513/2017 (RIPCI) — revisión TRIMESTRAL a cargo del titular y revisión ANUAL por empresa mantenedora habilitada; retimbrado a los 5 años.» Revisar el resto de celdas que concatenan texto + FUENTE por si el patrón se repite."
+  },
+  {
+   "id": "RC-34",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/07-semanales-mensuales.xlsx",
+   "ubicacion": "07!Tareas Mensuales!B10/E10 y B11/E11, dentro de la hoja «Checklist: Tareas Mensuales» (A2 «Mes: _______________»)",
+   "hallazgo": "La resolución de §7-bis.21 mete una tarea trimestral y una anual dentro del checklist MENSUAL. Las dos entran en el denominador honesto, así que el impreso de un mes cualquiera obliga a marcarlas «N/A» 8 y 11 veces al año para que el contador no mienta.",
+   "evidencia": "07!Tareas Mensuales: A1 = \"Checklist: Tareas Mensuales\", A2 = \"Mes: _______________ Responsable: …\"; B10 = \"Revisión TRIMESTRAL de extintores y BIE por el titular…\" E10 = \"Trimestral\"; B11 = \"Revisión ANUAL de extintores por empresa mantenedora habilitada y retimbrado a los 5 años…\" E11 = \"Anual\". Contador F30 = \"=COUNTIF(B5:B28,\\\"?*\\\")-COUNTIF(F5:F28,\\\"N/A\\\")\" con 14 tareas.",
+   "fix": "O una banda «NO MENSUALES (marca N/A el mes que no toque)» que lo advierta en la propia hoja, o llevarlas al BONUS-02, donde ya están (A28 y A32), y dejar en 07 sólo lo mensual."
+  },
+  {
+   "id": "RC-35",
+   "severidad": "baja",
+   "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx",
+   "ubicacion": "propiedades de documento de los 11 ficheros frente al pie de las 20 hojas",
+   "hallazgo": "La marca impresa cumple §7-bis.17 («ChefBusiness Consultoría Gastronómica», acentuada) pero las propiedades del documento siguen diciendo AI Chef Pro. Un cliente que abra Archivo → Propiedades ve otra empresa que la del pie. NO es una regresión —es idéntico a lo que hay LIVE y a kit-tareas-cafeteria—, así que es decisión de familia, no algo que deba tocar esta tanda.",
+   "evidencia": "Copia: 01!Instrucciones!B50 = \"— Kit de Tareas Recurrentes · Sushi Bar · ChefBusiness Consultoría Gastronómica · chefbusiness.co\"; contexto.marca = \"ChefBusiness Consultoría Gastronómica\", contexto.dominio = \"chefbusiness.co\". Propiedades del mismo fichero: creator = \"AI Chef Pro\", lastModifiedBy = \"AI Chef Pro\", keywords = \"kit tareas sushi bar, AI Chef Pro\", category = \"AI Chef Pro · Productos digitales\", description = \"aichef.pro/kit-tareas-sushi-bar\". En dl/kit-tareas-sushi-bar (LIVE, v1.1) y en dl/kit-tareas-cafeteria (v2.0) son exactamente los mismos valores.",
+   "fix": "No tocar sin decisión de John: es la convención de los 44 productos y cambiarla sólo en los seis kits CB rompería la homogeneidad de la metadata (gate m5). Anotarlo en el §6 «para John» junto a la excepción de chef-privado."
+  }
+ ],
+ "veredicto": "no listo",
+ "motivo": "Copia propia generada en dry-run (11/11 ficheros, exit 0, «TODO VERDE») y auditada celda a celda. El motor y el módulo de contenido cierran la mayor parte del §8 —anisakis con la cita del RD 1021/2022, límite único, contador honesto y creado en el 09, filas libres, DV con mensaje de error, 8 hojas nuevas, mermas, delivery, office, alérgenos, pH, recepción, reporting y comparativa, calendario reescrito— y la regresión sobre los kits LIVE está limpia (regresion.py: cafetería 11 ficheros / 0 diferencias, hotel 19 / 0; comprobados además a mano anchos, CF y wrap, que ese gate no mira). Pero NO está listo por tres motivos que un cliente escéptico ve en cinco minutos: (1) dos de los once entregables —los dos BONUS, que la landing vende a 19 € cada uno— quedan enteros fuera del post-proceso y el gate «molde» lo degrada a aviso mientras el run sale exit 0, así que TEC-10 y COM-19 siguen vivos con el bloque «las celdas verdes son editables» sobre una hoja con cero rellenos; (2) tres gates dan verde sin haber mirado: «promesas» vigila 11 términos elegidos a mano que excluyen «salmón salvaje», «Año Nuevo Chino» y «11 checklists pre-rellenados», «ortografía» declara 0 con cuatro errores vivos («espectaculo», «mas alto», «te» ×2) y gate-no-latinos.py con la invocación del encargo escanea 0 ficheros y devuelve 0; (3) quedan defectos que el comprador toca: dos columnas con formato de fecha equivocado (una de texto y otra de euros, en la hoja del reporting), 126 celdas de tarea multilínea sin alto de fila cuando la SPEC lo exigía por escrito, el hangiri con tres criterios contradictorios, los anglicismos vivos en 06 y la cadena horaria del segundo lote que manda guardar arroz caducado dos horas. Además la landing sigue contradiciendo al entregable en el anisakis (testimonios :41 y :307 con «7 días»), y el changelog en 1.1 frente a once ficheros que dicen 2.0."
+}

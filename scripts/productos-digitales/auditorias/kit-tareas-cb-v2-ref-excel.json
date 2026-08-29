@@ -1,0 +1,196 @@
+{
+  "lente": "TÉCNICA EXCEL (openpyxl + pycel) — refutador de la sub-familia CB v2.0, representante kit-tareas-sushi-bar. Copia propia generada con CLAUDE_SCRATCHPAD=.../scratchpad/cb/propio-ref-excel y main.py --producto kit-tareas-sushi-bar --dry-run (exit 0, informe .../cb/ref-excel-kit-tareas-sushi-bar.json). REGRESIÓN §7-bis.24 VERDE: regresion.py sobre kit-tareas-cafeteria (11 ficheros) y kit-tareas-hotel (19 ficheros) contra astro-site/public/dl/ → 0 diferencias en ambos (.../cb/ref-excel-regresion-cafeteria.json y -hotel.json); además un comparador propio de lo que regresion.py NO mira (CF, rellenos, fuentes, anchos, merges, print_area/orientación/fitToPage y propiedades del documento) da también 0 diferencias en los dos kits. Idempotencia real verificada aparte: 2.ª pasada COMPLETA sobre la salida v2.0 ya cacheada (--origen) → 0 diferencias con regresion.py y 0 con el comparador propio. Ámbito de esta lente: contadores, DV, CF, registros APPCC (fechas, rangos), protección, A4/print_area, formatos, caché e idempotencia.",
+  "hallazgos": [
+    {
+      "id": "RT-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Registro Congelación'!A2",
+      "hallazgo": "La cita normativa del anisakis —la corrección con más dinero detrás de la SPEC (§2.0, §7-bis.4, decisión ANISAKIS-2026-08-29)— se imprime RECORTADA: son 279 caracteres en una celda FUSIONADA A2:K2 sin wrap_text y sin altura de fila. Una celda fusionada NO desborda sobre las vecinas: Excel corta en el borde del merge.",
+      "evidencia": "A2 = 'Normativa: RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D, en la redacción del Rgto. (UE) 1276/2011 — obligatorio en todo establecimiento que sirva pescado crudo, marinado, en salazón, ahumado en frío o poco cocinado.' → len=279. Leído con openpyxl: alignment.wrap_text=None, row_dimensions[2].height=None, merged_cells incluye 'A2:K2'. Suma de anchos A..K = 5+22+11+18+16+16+18+18+14+14+18 = 170 caracteres. Se pierden ~109 caracteres: todo el alcance de la obligación ('obligatorio en todo establecimiento que sirva pescado crudo…').",
+      "fix": "En el molde REGISTRO de CB-E3, toda celda de nota (fusionada o no) va con wrap_text=True y altura explícita = 15 pt × ceil(len/ancho_efectivo), y el ancho efectivo se mide sobre el merge, no sobre la columna. Verificable con un gate: 0 celdas de texto sin wrap cuyo len supere el ancho disponible."
+    },
+    {
+      "id": "RT-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Registro Congelación'!B27",
+      "hallazgo": "El aviso del LÍMITE CRÍTICO del PCC —el que separa el −20 °C del tratamiento antiparasitario del −18 °C del congelador general, que es exactamente el defecto DOM-02/TEC-11 que la v2.0 viene a arreglar— también se recorta: 289 caracteres en celda fusionada B27:K27 sin wrap ni altura.",
+      "evidencia": "B27 = 'IMPORTANTE: el límite crítico de este PCC es −20 °C. Si la temperatura sube por encima de −20 °C en cualquier momento del tratamiento, éste NO es válido: reinicia el cómputo completo de las 24 h. El −18 °C es el límite del congelador general y no sirve para el tratamiento antiparasitario.' → len=289; wrap_text=None; row_dimensions[27].height=None; merge 'B27:K27' = 165 caracteres de ancho. Se pierden 124 caracteres, entre ellos la frase completa que distingue −20 de −18.",
+      "fix": "Igual que RT-01. Además, este aviso debería ir arriba (junto a A2), no al pie: hoy queda detrás de las 20 filas de registro."
+    },
+    {
+      "id": "RT-03",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Registro Congelación'!B30",
+      "hallazgo": "La excepción de acuicultura del Rgto. (UE) 1276/2011 (DOM-15, firmada en §2.0) tampoco cabe: 271 caracteres sin wrap, sin merge y sin altura; el desborde se corta en el borde derecho de la print_area.",
+      "evidencia": "B30 = 'Excepción (Rgto. (UE) 1276/2011): quedan exentos los productos de la acuicultura criados con pienso que no puede contener parásitos y en un entorno libre de parásitos vivos, siempre que el proveedor lo acredite por escrito. Archiva esa acreditación junto a este registro.' → len=271; wrap_text=None; print_area = \"'Registro Congelación'!$A$1:$K$31\" → ancho disponible desde B hasta K = 165 caracteres. Se pierden 106, incluida la instrucción operativa final ('Archiva esa acreditación junto a este registro').",
+      "fix": "Fusionar B30:K30 con wrap y altura calculada, igual que RT-01/RT-02."
+    },
+    {
+      "id": "RT-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Registro de pH del Arroz'!A29",
+      "hallazgo": "La nota de fuente más larga del kit (412 caracteres, la que justifica el pH 4,6 y describe el método de tiras 4,0-5,0 firmado en §7-bis.20) pierde 273 caracteres al imprimir: no tiene wrap, no está fusionada y su print_area sólo da 139 caracteres de ancho.",
+      "evidencia": "A29 = 'Fuente: 4,6 es el umbral internacional que separa los alimentos ácidos de los poco ácidos (Codex Alimentarius, CXC 23-1979) y es el límite crítico que el plan APPCC del local fija para el arroz avinagrado: en España no hay ninguna norma que dé un pH al arroz de sushi. Tiras de rango 4,0-5,0 con resolución 0,2; el pHmetro de punción calibrado es más preciso y es la opción recomendada si trabajas mucho volumen.' → len=412; wrap_text=None; print_area \"'Registro de pH del Arroz'!$A$1:$I$29\", anchos A..I = 5+12+22+16+18+11+30+9+16 = 139. Se corta a la altura de '…umbral internacional que separa los alimentos ácidos…'.",
+      "fix": "Igual que RT-01. El método (tiras 4,0-5,0 · resolución 0,2) es la parte que el cliente necesita y es justo la que se pierde."
+    },
+    {
+      "id": "RT-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/ (7 hojas de 4 ficheros)",
+      "ubicacion": "03!'Control de Recepción'!A27 y !A29 · 03!'Matriz de Alérgenos'!A25, A26, A27 · 03!'Temperaturas Diario'!B14 · 03!'Registro de Mermas'!A30 y A31 · 05!'Reporting Semanal'!A16 y A17 · 05!'Comparativa de Proveedores'!A27 · BONUS-02!Instrucciones!B8, B24, B25, B26, B27 · BONUS-01!Instrucciones!B18, B20 · BONUS-02!Instrucciones!B18, B20 · BONUS-01!'Briefing Servicio'!B19, B40 · BONUS-02!'Calendario Anual'!A28",
+      "hallazgo": "El problema de RT-01…RT-04 es SISTÉMICO, no de tres celdas: barriendo el kit entero salen 28 celdas de texto sin wrap_text cuyo contenido no cabe en el ancho disponible (merge o desborde hasta la primera celda ocupada, acotado por print_area). Entre ellas están TODAS las citas de norma que §7-bis.4 obliga a poner «en celda de nota»: RD 513/2017, RD 191/2011, Rgto. 853/2004, Anexo II del Rgto. 1169/2011 y las campañas del MAPA.",
+      "evidencia": "Barrido con openpyxl (ancho = suma de column_dimensions del merge, o hasta la primera celda con valor a la derecha, tope print_area). Los mayores: 'Registro de pH'!A29 412/139 (−273) · BONUS-02!Instrucciones!B25 220/80 (−140, RD 513/2017) · BONUS-02!Instrucciones!B27 219/80 (−139, campañas MAPA) · 'Temperaturas Diario'!B14 266/135 (−131) · 'Matriz de Alérgenos'!A25 266/136 (−130) · BONUS-02!Instrucciones!B24 205/80 (−125) · 'Registro Congelación'!B27 289/165 (−124) · 'Control de Recepción'!A27 278/155 (−123) · 'Registro Congelación'!A2 279/170 (−109) · 'Registro Congelación'!B30 271/165 (−106) · 'Reporting Semanal'!A17 213/138 (−75) · 'Control de Recepción'!A29 229/155 (−74, Rgto. 853/2004) · BONUS-02!Instrucciones!B26 154/80 (−74, RD 191/2011) · 'Matriz de Alérgenos'!A27 170/136 (−34, Anexo II del Rgto. 1169/2011). Total 28 celdas.",
+      "fix": "Un paso de cierre en el motor: para toda celda de texto de una hoja con print_area, si len(valor) > ancho_disponible → wrap_text=True + altura = 15 pt × ceil(len/ancho). Y un gate `notas_legibles` que falle si queda alguna. Las hojas de checklist ▸ no están afectadas (su columna Tarea sí lleva wrap_text=True)."
+    },
+    {
+      "id": "RT-06",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Registro de Mermas'!H5:H26 y !H28",
+      "hallazgo": "La hoja de mermas —la que la SPEC señala como «el argumento que sostiene el €14 frente a €40/mes» (§2.2)— NO calcula el coste. La columna H «Coste total €» está vacía en las 22 filas de datos y sin fórmula, mientras E lleva los kg y G el €/kg justo al lado; el pie H28 = SUM(H5:H26) suma una columna que el cliente tiene que rellenar multiplicando a mano.",
+      "evidencia": "Demostrado con pycel sobre una copia: escribiendo E5=E6=E7=2,5 kg y G5=G6=G7=18,0 €/kg (135 € de merma reales), 'Registro de Mermas'!E28 = 7.5 y 'Registro de Mermas'!H28 = 0. Con openpyxl: H5.value=None, H5.data_type='n', ninguna celda de H5:H26 tiene data_type='f'; H28.value='=SUM(H5:H26)', number_format='#,##0.00\" €\"'.",
+      "fix": "H5:H26 = '=IF(N(E{r})*N(G{r})=0,\"\",E{r}*G{r})' con formato '#,##0.00 €' (el patrón «\"\" si falta dato» ya lo usa 'Reporting Semanal'!E13, y inject_cache lo tolera). Alternativa mínima: renombrar la columna a «Coste total € (kg × €/kg)» y decirlo en la nota — pero entonces el total sigue dando 0 hasta que alguien multiplique."
+    },
+    {
+      "id": "RT-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03!'Registro Congelación'!I6:I25 · 03!'Temperaturas Diario'!C5:I11 · 03!'Trazabilidad Pescado'!H4:H23 · 03!'Control de Recepción'!G5:G24",
+      "hallazgo": "CB-E3 exige «DV decimal Y formato 0.0 \"°C\" en las de temperatura». El formato SÍ está en las cuatro columnas; la validación de datos NO está en ninguna. Consecuencia medible y no teórica: nada impide teclear la temperatura como TEXTO, y el propio kit enseña a escribirla con el signo menos tipográfico U+2212 («−20 °C o menos» en 'Temperaturas Diario'!B6, salida de texto_grados). Excel guarda «−20» con U+2212 como texto, y en una regla `cellIs` el texto compara siempre MAYOR que cualquier número: la fila 6 de 'Temperaturas Diario' (CF `greaterThan -20.0`) pintaría de ROJO una lectura correcta.",
+      "evidencia": "openpyxl: len(ws.data_validations.dataValidation) = 0 en 'Temperaturas Diario' y 'Trazabilidad Pescado'; en 'Registro Congelación' la única DV es la lista '\"✓,—,N/A\"' sobre J6:J25 (columna 'Verif.'), y en 'Control de Recepción' sobre J5:J24 — ninguna sobre la columna de temperatura. number_format de I6, C5:I11, H4, G5 = '0.0 \"°C\"'. Rótulo con U+2212 verificado en B6 = 'Cámara congelación anisakis (−20 °C o menos)'.",
+      "fix": "DataValidation(type='decimal', operator='between', formula1=-40, formula2=200) sobre las cuatro columnas, con showErrorMessage y un texto que diga «escribe el número, sin la unidad ni el signo −: la celda ya pone °C». Cierra de paso el falso positivo del CF."
+    },
+    {
+      "id": "RT-08",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03!'Registro Congelación' (CF=0) · 03!'Trazabilidad Pescado' (CF=0) · 03!'Control de Recepción' (CF=0)",
+      "hallazgo": "CB-E3 exige «CF de fuera-de-rango» en el molde REGISTRO y sólo se ha aplicado a UNA de las cuatro hojas con columna de temperatura. La que se queda sin aviso visual es precisamente el PCC del anisakis: en 'Registro Congelación' se puede anotar −5 °C en la columna «Temp °C» y el fichero no dice nada, aunque su propio B27 declara −20 °C como límite crítico.",
+      "evidencia": "openpyxl: len(ws.conditional_formatting._cf_rules) = 0 en 'Registro Congelación', 'Trazabilidad Pescado' y 'Control de Recepción'; = 7 en 'Temperaturas Diario' (C5:I5 notBetween 0/2 · C6:I6 greaterThan −20 · C7:I7 notBetween 2/4 · C8:I8 notBetween 0/4 · C9:I9 greaterThan −18 · C10:I10 notBetween 170/180 · C11:I11 notBetween 35/37, todas con dxf bgColor F8D7DA). Las columnas huérfanas: I6:I25 ('Temp °C', límite −20), H4:H23 ('Temp recepción (°C)', criterio 0-2 declarado en 'Control de Recepción'!A27) y G5:G24 ('Temp recepción (°C)').",
+      "fix": "Reutilizar el mismo generador de CF de 'Temperaturas Diario' en las tres columnas: I6:I25 `greaterThan −20`, H4:H23 y G5:G24 `notBetween 0/2` (el rango único que el kit declara para pescado crudo). Y sumar el gate: toda columna con number_format '0.0 \"°C\"' tiene CF."
+    },
+    {
+      "id": "RT-09",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Registro de pH del Arroz'!F5:F24",
+      "hallazgo": "La hoja nueva que resuelve DOM-04/DOM-21/DOM-22 declara su límite crítico en la nota («El límite crítico es pH ≤ 4,6») y luego no lo vigila: la columna «pH medido» va con number_format 'General', sin DV decimal y sin CF de fuera de rango. Es el único PCC del kit que se registra sin ninguna ayuda de la hoja.",
+      "evidencia": "openpyxl: F5.number_format='General' (D5 y E5 también 'General'); las DV de la hoja son una sola, lista '\"✓,—,N/A\"' sobre H5:H24; len(conditional_formatting._cf_rules)=0. Texto de A27: 'Una línea por LOTE de arroz, no por día: si haces arroz para el almuerzo y para la cena, son dos líneas. El límite crítico es pH ≤ 4,6.'",
+      "fix": "F5:F24 con number_format '0.0', DV decimal between 3,0 y 7,0 y CF `cellIs greaterThan 4.6` en rojo F8D7DA. Y D5:D24 ('kg de arroz cocido') con '0.0\" kg\"', E5:E24 ('Sushi-zu añadido (ml/kg)') con '0\" ml/kg\"', que es lo que hace la ratio auditable."
+    },
+    {
+      "id": "RT-10",
+      "severidad": "alta",
+      "fichero": "scripts/productos-digitales/kit-tareas-v2_0/regresion.py",
+      "ubicacion": "regresion.py:comparar_libro() — `for titulo in wa.sheetnames: if titulo not in wb.sheetnames: continue` (bloque de comparación por hoja, tras el `if wa.sheetnames != wb.sheetnames`)",
+      "hallazgo": "El diff que §9 T2.5 manda FIRMAR al orquestador no contiene el contenido de 10 de las 28 hojas del kit. `comparar_libro` sólo recorre las hojas de A y salta las que no existen en B, de modo que una hoja NUEVA o RENOMBRADA aporta UNA línea de tipo 'hojas' y su contenido no se compara jamás. En sushi-bar eso deja fuera del diff las 8 hojas nuevas y las 2 renombradas — es decir, la cita del anisakis (RT-01), el registro de mermas (RT-06), la matriz de alérgenos, el control de recepción, el registro de pH, la comparativa, el reporting, delivery, office y las temporadas de pescado corregidas (DOM-09/DOM-18/COM-03).",
+      "evidencia": "regresion.py --a astro-site/public/dl/kit-tareas-sushi-bar --b <mi copia> → 'diferencias: 5256 · por tipo: altura=278 · dv=30 · hojas=4 · locked=3829 · valor=1115'. Agrupando el detalle por (fichero, hoja) no hay NI UNA entrada para 'Registro Congelación', 'Matriz de Alérgenos', 'Registro de pH del Arroz', 'Control de Recepción', 'Registro de Mermas', 'Comparativa de Proveedores', 'Reporting Semanal', 'Delivery y Take Away', 'Office y Lavado' ni 'Temporadas Pescado España'. Las 4 líneas de tipo 'hojas' son el 100 % de lo que el informe dice de ellas; una de las 4 es sólo el renombrado A=['…','Temporadas Pescado Espana',…] → B=['…','Temporadas Pescado España',…] en 08. Informe: .../scratchpad/cb/ref-excel-diff-sushi.json.",
+      "fix": "En `comparar_libro`, emparejar por posición cuando el nombre cambie (o aceptar un mapa de renombrados de CB-E1) y volcar las hojas nuevas celda a celda con A=None, como ya hace con las celdas nuevas dentro de una hoja existente. Hasta entonces, el diff de esta sub-familia NO es firmable: el gate §7-bis.24 sobre cafetería/hotel sigue siendo válido (allí no hay hojas nuevas ni renombradas — 'hojas'=0 en los dos informes), pero el diff del representante no lo es."
+    },
+    {
+      "id": "RT-11",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx (salida del dry-run)",
+      "ubicacion": "BONUS-01-briefing-servicio.xlsx!Instrucciones!B13, B15, B16 · !'Briefing Servicio'",
+      "hallazgo": "COM-19 y TEC-10 se dan por cerrados con CB-E4 en el mapa §8, y NO están cerrados: CB-E4 sólo reescribe las Instrucciones de los ficheros que caen en un molde, y BONUS-01 no cae en ninguno. Su hoja de instrucciones sigue con el bloque genérico de la v1.1 —acentuado por CB-E1, pero igual de falso— describiendo una hoja que no existe.",
+      "evidencia": "B13 = '▸ Las celdas verdes son editables — cambia responsables y horarios' mientras 'Briefing Servicio' tiene 120 celdas y CERO rellenos (Counter de fill.patternType = {None: 120}, 0 celdas E8F5E9). B16 = '▸ Ajusta las horas límite a tus horarios reales' en una hoja cuya estructura es B=rótulo / C=valor, sin columna de hora. B15 = '▸ Añade tareas específicas de tu local en las filas vacías del final' sin filas libres. El aviso del dry-run lo confirma: «AVISO molde · BONUS-01-briefing-servicio.xlsx!Briefing Servicio: ningún molde la reconoce».",
+      "fix": "Extender CB-E4 con la variante `formulario` (ya prevista en la SPEC §1.2 CB-E4) y engancharla a `es_briefing`, o —si el briefing se queda fuera del molde— reescribir esos tres renglones a mano en el módulo de contenido. Lo que no puede quedarse es la frase de las celdas verdes sobre una hoja sin un solo relleno: es literalmente el hallazgo COM-19 de la R1."
+    },
+    {
+      "id": "RT-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx y BONUS-02-calendario-anual.xlsx (salida del dry-run)",
+      "ubicacion": "BONUS-01!Instrucciones y !'Briefing Servicio' · BONUS-02!Instrucciones y !'Calendario Anual'",
+      "hallazgo": "2 de los 11 ficheros salen sin `print_area` y sin protección de hoja, mientras los otros 9 llevan las dos cosas en las 4 hojas de instrucciones y 18 de trabajo. Y el aviso que lee el orquestador es además INEXACTO: dice que esas hojas «no reciben A4», y el A4 sí está aplicado.",
+      "evidencia": "openpyxl sobre los 11 ficheros: BONUS-01!Instrucciones print_area=None protection.sheet=False · BONUS-01!'Briefing Servicio' print_area=None protection.sheet=False · BONUS-02!Instrucciones print_area=None protection.sheet=False · BONUS-02!'Calendario Anual' print_area=None protection.sheet=False. Los 9 restantes: print_area presente en las 22 hojas y protection.sheet=True en las 18 de trabajo. En cambio los cuatro sí tienen page_setup.paperSize=9, pageSetUpPr.fitToPage=True, fitToWidth=1 y márgenes 0.59 — o sea, A4 aplicado. El aviso de main.py dice: «ningún molde la reconoce (no recibe DV, ni contador, ni A4, ni protección)».",
+      "fix": "Aplicar print_area y protección a todo fichero, con molde o sin él (son pasos que no dependen de la geometría del checklist), y corregir el texto del aviso para que no informe de un A4 ausente que sí está: el orquestador firma sobre ese texto."
+    },
+    {
+      "id": "RT-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx (salida del dry-run)",
+      "ubicacion": "BONUS-02-calendario-anual.xlsx!Instrucciones!B13 · !'Calendario Anual' (16 celdas E8F5E9)",
+      "hallazgo": "En el calendario la frase «Las celdas verdes son editables» es peor que en el briefing, porque aquí SÍ hay verdes: 16 celdas con el mismo E8F5E9 que el resto del kit usa para «editable», pero son colores de CATEGORÍA de un calendario que tiene las 634 celdas con locked=True. El verde deja de significar lo que significa en las otras 20 hojas.",
+      "evidencia": "openpyxl: rellenos de 'Calendario Anual' = {None:489, 2E2E2E:13, F5F5F5:65, E3F2FD:12, FFF8E1:13, E8F5E9:16, FFEBEE:10, F3E5F5:6}; las 16 verdes son D25, J25, B26, H26, B27, H27, B28, H28, B29, H29… (marcas ● de una banda de categoría). {c.protection.locked} de toda la hoja = {True}. Instrucciones!B13 = '▸ Las celdas verdes son editables — cambia responsables y horarios'.",
+      "fix": "O se cambia el E8F5E9 de esa banda por otro tono de la paleta del calendario (E3F2FD/FFF8E1/FFEBEE/F3E5F5 ya están en uso y no colisionan), o se reescribe B13 para este fichero. Con CB-E4 variante `calendario` —que la SPEC ya contempla— se resuelven B13 y B16 a la vez."
+    },
+    {
+      "id": "RT-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03!'Registro Congelación'!J6:J25 · 03!'Registro de pH del Arroz'!H5:H24 · 03!'Control de Recepción'!J5:J24",
+      "hallazgo": "El mensaje de error de la DV (DV_ERROR, escrito para los checklists) se reutiliza tal cual en las hojas de REGISTRO y ahí dice una falsedad: promete un «total» del que la marca entra o sale, y esas tres hojas no tienen fila de totales ninguna.",
+      "evidencia": "Las tres DV son type='list', formula1='\"✓,—,N/A\"', showErrorMessage=True, errorTitle='Marca no válida', error='Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.' Y en las tres hojas no hay ninguna celda con COUNTIF/COUNTIFS (data_type='f' sólo en 'Registro de Mermas', E28 y H28, que son SUM).",
+      "fix": "Un segundo literal DV_ERROR_REGISTRO para el molde de CB-E3: «Usa el desplegable: ✓ verificado, — pendiente, N/A no aplica». Sin mencionar totales."
+    },
+    {
+      "id": "RT-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx (salida del dry-run)",
+      "ubicacion": "09-plantilla-personalizable.xlsx!'Plantilla en Blanco'!C6:G24 (filas 6-10, 13-17 y 20-24)",
+      "hallazgo": "CB-E2 le ha creado el contador y las 5 filas libres —eso funciona— pero la hoja queda con dos lenguajes visuales: las 15 filas numeradas que el cliente tiene que rellenar salen SIN el verde de editable y las 5 filas libres del final SÍ lo llevan. En la hoja que se vende como «personalizable», 15 filas parecen bloqueadas y 5 no.",
+      "evidencia": "openpyxl: 09!'Plantilla en Blanco' fila 6 → C6..G6 fill.patternType=None; fila 20 → C20..G20 fill.patternType=None; filas 25-29 → A..G con fgColor '00E8F5E9'. En cualquier hermana, p. ej. 01!'Apertura Barra Sushi', la fila escrita 6 lleva C6..G6 = '00E8F5E9'. El contador sí está correcto: D31='=COUNTIFS(B5:B29,\"?*\",F5:F29,\"✓\")', F31='=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\")', caché 0 y 0 («0 de 0», honesto con una hoja vacía).",
+      "fix": "En CB-E2, pintar C:G de las filas numeradas con E8F5E9 igual que hace `verde_editables` en las hojas con tareas escritas. Son 15 filas × 5 columnas por kit ▸."
+    },
+    {
+      "id": "RT-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/05-tareas-manager.xlsx y 03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "05!'Reporting Semanal'!C5:C11, E5:E11, F5:F11, G5:G11 · 03!'Registro de Mermas'!E5:E26, G5:G26, H5:H26",
+      "hallazgo": "Las hojas nuevas ponen el number_format SÓLO en la fila de totales y dejan las celdas donde el cliente teclea en 'General'. El resultado es una columna en la que 1234.5 se ve «1234.5» en las siete filas de datos y «1.234,50 €» en el total. Y en 'Reporting Semanal' la columna E «Ticket medio (€)» sólo se calcula en el total: los siete días hay que dividirlos a mano.",
+      "evidencia": "openpyxl: 'Reporting Semanal' C5.number_format='General' frente a C13='#,##0.00\" €\"'; E5='General' y sin fórmula, frente a E13='=IF(SUM(D5:D11)=0,\"\",SUM(C5:C11)/SUM(D5:D11))' con '#,##0.00\" €\"'. 'Registro de Mermas' E5/G5/H5='General' frente a E28='0.0\" kg\"' y H28='#,##0.00\" €\"'. Comprobado con pycel que los totales sí funcionan: con 7 días de 1000-1060 € y 40 comensales, C13=7210, D13=280, E13=25.75 y C14=0.2912… (29,1 % de food cost).",
+      "fix": "Propagar el number_format de la fila de totales a su columna de datos y añadir la fórmula por fila donde la hoja ya tiene los operandos: E5:E11 = '=IF(N(D{r})=0,\"\",C{r}/D{r})'. Es el mismo arreglo que RT-06."
+    },
+    {
+      "id": "RT-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/05-tareas-manager.xlsx (salida del dry-run)",
+      "ubicacion": "05-tareas-manager.xlsx!'Comparativa de Proveedores'!D5:G24",
+      "hallazgo": "La hoja creada para cerrar DOM-28/COM-24/TEC-20 («comparativa de proveedores», prometida en la tarjeta del manager) no compara: 0 fórmulas en toda la hoja. La columna G, titulada «Mejor precio (€/kg) y proveedor», se rellena a mano teniendo los tres precios en D, E y F de la misma fila; y D:F van sin formato de moneda.",
+      "evidencia": "openpyxl: ninguna celda con data_type='f' en 'Comparativa de Proveedores' (la hoja aporta 0 de las 44 fórmulas del kit); cabecera D4='Proveedor A (€/kg)', E4='Proveedor B (€/kg)', F4='Proveedor C (€/kg)', G4='Mejor precio (€/kg) y proveedor'; D5.number_format='General'. len(data_validations)=0, len(conditional_formatting._cf_rules)=0.",
+      "fix": "G5:G24 = '=IF(COUNT(D{r}:F{r})=0,\"\",MIN(D{r}:F{r}))' con '#,##0.00\" €\"' y una columna H o un CF `cellIs equal` que resalte cuál de los tres es el mínimo; D:F con formato €. Con eso la hoja hace lo que su título promete y la promesa del grid queda respaldada por algo más que un rótulo."
+    },
+    {
+      "id": "RT-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Matriz de Alérgenos'!C5:P22",
+      "hallazgo": "La matriz que cierra DOM-07/TEC-12 entrega 252 casillas de marca sin ninguna validación y con una convención de marcado DISTINTA de la que las 11 hojas de Instrucciones enseñan: aquí se pide una «X» a mano; en todo el resto del kit la marca es el desplegable ✓/—/N/A. Sin DV no hay forma de distinguir «no contiene» de «nadie lo ha revisado», que en una matriz de alérgenos es la diferencia que importa.",
+      "evidencia": "openpyxl: len(data_validations.dataValidation)=0 y len(conditional_formatting._cf_rules)=0 en 'Matriz de Alérgenos'; 252 celdas vacías en C5:P22 (18 filas × 14 alérgenos); anchos C..P = 4.5. A25 = 'Marca con una X la casilla del alérgeno que el plato CONTIENE…'. Cabecera correcta con los 14 del Anexo II (C4 Gluten … P4 Moluscos) y fuente en A27.",
+      "fix": "DV de lista '\"X,—,traza\"' (o '\"✓,—,N/A\"' si se prefiere no abrir una tercera convención) sobre C5:P22 con showErrorMessage, y CF que pinte la X. Es lo que convierte la matriz en un documento que un inspector puede leer sin preguntar."
+    },
+    {
+      "id": "RT-19",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-tareas-v2_0/main.py",
+      "ubicacion": "main.py:383 verificar_cache(carpeta, registros) y su llamada en el paso «5/7 · data_only de las fórmulas nuevas» (main.py:1424); log del paso 2 por fichero",
+      "hallazgo": "El gate de caché sólo mira las fórmulas que registra el MOTOR: las que crea el módulo de CONTENIDO no entran en `registros` y no se verifican. Además el recuento por fichero que el orquestador lee en el paso 2 se queda corto por la misma razón, así que el diff que se firma declara menos fórmulas de las que se entregan.",
+      "evidencia": "El dry-run imprime «03-seguridad-anisakis-appcc.xlsx: 33 cambios, 0 fórmulas» y el fichero entregado lleva DOS (E28='=SUM(E5:E26)' y H28='=SUM(H5:H26)' en 'Registro de Mermas'); para 05 imprime «4 fórmulas» y el fichero lleva 10 (inject_cache confirma «05-tareas-manager.xlsx: formulas=10»). El paso 5 declara «con valor: 36 · fallos: 0», que son exactamente las 36 del motor; las 44 reales del kit dejan 8 sin verificar (2 en 03 y 6 en 05).",
+      "fix": "Que `contenido.post` devuelva sus fórmulas al mismo `registros` (o que `verificar_cache` recorra el libro entero en vez de la lista), y que el log del paso 2 cuente las celdas con data_type='f' del fichero guardado. Nota: los dos únicos huecos de caché reales (05!'Reporting Semanal'!E13 y !C14, «cache_inyectado=8» de 10) son legítimos —evalúan a cadena vacía y inject_cache no inyecta ''—, pero hoy eso se sabe por inspección manual, no por el gate."
+    },
+    {
+      "id": "RT-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx (salida del dry-run)",
+      "ubicacion": "03-seguridad-anisakis-appcc.xlsx!'Trazabilidad Pescado' (cabecera A3:I3)",
+      "hallazgo": "CB-E3 nombra esta hoja explícitamente («'Trazabilidad Pescado' A3:H3») y se queda a medio aplicar: recibe los number_format y la protección, pero ni DV, ni CF, ni columna de verificación. Es la única de las siete hojas de registro del 03 sin una sola ayuda de entrada, y su cabecera sigue en la fila 3 mientras las otras seis están en la 4 o la 5.",
+      "evidencia": "openpyxl: 'Trazabilidad Pescado' → len(data_validations)=0, len(conditional_formatting._cf_rules)=0, print_title_rows='$3:$3'; cabecera A3='#', B3='Especie', C3='Proveedor/Lonja', D3='Fecha Compra', E3='Lote/Albarán', F3='Zona Captura (FAO)', G3='Caducidad', H3='Temp recepción (°C)', I3='Firma' — no hay columna 'Verif.'. Formatos sí aplicados: D4/G4='DD/MM/YYYY', H4='0.0 \"°C\"'.",
+      "fix": "Añadir la columna 'Verif.' con la DV de registro (ver RT-14) y el CF de H (ver RT-08). Si se decide no tocar la geometría heredada, al menos el CF, que no añade columnas."
+    },
+    {
+      "id": "RT-21",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx (salida del dry-run)",
+      "ubicacion": "01-apertura-cierre-sushi.xlsx!Instrucciones!B22",
+      "hallazgo": "`autoalto` calcula la altura dividiendo la longitud por el ancho de columna exacto, sin margen para el corte por palabras. En el único caso del kit que cae justo en la frontera (198 caracteres con la columna a 100), asigna 32 pt = 2 líneas cuando el texto real ocupa 3.",
+      "evidencia": "B22 = '▸ El arqueo de caja se hace UNA vez y lo hace el encargado, en la hoja de cierre de este fichero. El manager lo revisa al día siguiente desde 05-tareas-manager.xlsx: no se cuenta el cajón dos veces.' → len=198, wrap_text=True, row_dimensions[22].height=32.0, ancho B=100. Las vecinas encajan porque tienen holgura: B20 len=351 h=63 (4 líneas), B21 len=291 h=48 (3), B34 len=137 h=32 (2), B38 len=123 h=32 (2). Barrido de las 11 hojas Instrucciones: es el único caso.",
+      "fix": "En `autoalto`, dividir por (ancho − 4) en vez de por el ancho, o sumar una línea cuando len/ancho tenga parte decimal ≥ 0,85. Una línea de más no se ve; una de menos se lee cortada."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "El gate BLOQUEANTE de §7-bis.24 lo pasa: regresion.py sobre kit-tareas-cafeteria (11 ficheros) y kit-tareas-hotel (19) contra astro-site/public/dl/ da 0 diferencias, y un comparador propio de lo que regresion.py no mira —formato condicional, rellenos, fuentes, anchos, merges, print_area/orientación/fitToPage y propiedades del documento— da también 0 en los dos. La idempotencia real (2.ª pasada COMPLETA sobre la salida v2.0 ya cacheada, con --origen) da 0 diferencias por las dos vías. Y el núcleo de la v2.0 está sano: los 18 contadores son honestos uno a uno (recuento independiente celda a celda = valor cacheado en 18/18, con 0 bandas de sección coladas en el denominador), las 5 filas libres están dentro del rango contado y con DV, el CF de fila completada usa A5D6A7 frente al verde base E8F5E9 (CB-E9d), CB-E8 ya no se autocita ('Estás en 01-…: este ES el DETALLE por área') y el barrido de ortografía resiste una búsqueda independiente de 39 lemas (0 aciertos reales; 'japonesa' y 'VERANO' son falsos positivos míos). Aun así NO está listo, por dos razones que se demuestran con el fichero delante. La primera es de producto: las citas de norma que §7-bis.4 obliga a poner «en celda de nota» se imprimen RECORTADAS —28 celdas del kit, y entre ellas la del anisakis en 'Registro Congelación'!A2 (279 caracteres en un merge A2:K2 de 170, sin wrap ni altura: se pierde entero el alcance de la obligación) y el aviso del límite crítico en B27 (289 sobre 165: se pierde la frase que separa −20 de −18, que es el defecto que la v2.0 venía a arreglar)—; y las tres hojas nuevas que sostienen el argumento comercial no calculan: 'Registro de Mermas'!H28 devuelve 0 € con 135 € de merma escritos (demostrado con pycel), 'Comparativa de Proveedores' tiene 0 fórmulas con los tres precios en la misma fila, y ninguna de las cuatro columnas de temperatura del kit tiene la DV decimal que CB-E3 exige ni, tres de ellas, el CF de fuera de rango —incluida la del PCC del anisakis, donde se puede anotar −5 °C sin que la hoja diga nada—. La segunda es de método: el diff que §9 T2.5 manda firmar NO contiene el contenido de 10 de las 28 hojas. regresion.py:comparar_libro salta las hojas que no están en A, así que las 8 hojas nuevas y las 2 renombradas por CB-E1 aportan 4 líneas de tipo 'hojas' sobre 5.256 diferencias, y ni la cita del anisakis, ni las mermas, ni la matriz de alérgenos, ni las temporadas corregidas aparecen por ningún lado. Firmar ese diff sería firmar 5.256 diferencias sin haber visto las que más importan. Orden que propongo: RT-10 primero (sin diff completo no se puede firmar nada), después RT-06/RT-07/RT-08/RT-09 (lo que no calcula ni avisa), después RT-01…RT-05 (las notas legales recortadas, que es un solo arreglo en el motor) y por último RT-11/RT-12 (los dos BONUS, que salen sin print_area, sin protección y con las Instrucciones de la v1.1 diciendo que hay celdas verdes en una hoja que tiene cero rellenos: COM-19 y TEC-10 siguen abiertos pese a figurar como cerrados en el mapa §8)."
+}

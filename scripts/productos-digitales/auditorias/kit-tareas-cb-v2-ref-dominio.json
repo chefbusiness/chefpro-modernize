@@ -1,0 +1,322 @@
+{
+  "lente": "REFUTADOR DE DOMINIO — itamae / jefe de cocina de sushi bar en España, 20 años. Copia propia generada con CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/cb/propio-ref-dominio y «python3 main.py --producto kit-tareas-sushi-bar --dry-run --json …/cb/ref-dominio-kit-tareas-sushi-bar.json» (11/11 ficheros, 41 hojas; el informe sale «TODO VERDE»: idempotencia 0 diferencias, caché 36/36, censo --fail 0 defectos, gates ortografia=0, limite_unico=0, promesas=0, contadores 18/18). Pregunta de la lente: ¿imprimo esto mañana y se lo doy a mi equipo? Barridos hechos: volcado celda a celda de las 41 hojas; inspección con openpyxl de DV, formato condicional (reglas y operadores), print_area, protección, number_format, celdas combinadas, wrap_text, alto de fila y anchos de columna; y contraste contra astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts. Nada tocado en astro-site/public/dl/.",
+  "hallazgos": [
+    {
+      "id": "RD-01",
+      "severidad": "alta",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "Instrucciones!B16",
+      "hallazgo": "El criterio de temperaturas de la familia se apoya en el RD 3484/2000, que está DEROGADO por el mismo RD 1021/2022 que derogó el RD 1420/2006. Es el defecto que justifica toda la v2.0, reintroducido en una celda NUEVA: un inspector que lea esa celda ve una norma muerta citada como vigente. La propia SPEC lo avisa en §7-bis.19 («ya NO fija temperaturas: las fija y justifica el operador en su APPCC»).",
+      "evidencia": "06-tareas-perfiles.xlsx!Instrucciones!B16 = «▸ Fuente: criterio único de la familia (§7-bis.19) — cocción ≥70 °C en el centro del alimento (≥75 °C en aves, picados y recalentados) según las recomendaciones de AESAN, y mantenimiento en caliente ≥65 °C y en frío ≤4 °C según el RD 3484/2000 de comidas preparadas.» · grep «3484» sobre los 11 libros: 1 aparición, ésta.",
+      "fix": "Reescribir sin norma derogada: los 65 °C / 4 °C se declaran como criterio propio del plan APPCC del local, citando a AESAN sólo para la cocción y diciendo que el RD 3484/2000 fue derogado por el RD 1021/2022. Añadir «3484/2000» a motor.PROHIBIDAS junto a «1420/2006», que ya está."
+    },
+    {
+      "id": "RD-02",
+      "severidad": "alta",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "Instrucciones!B16",
+      "hallazgo": "La misma celda filtra al cliente una referencia interna del documento de trabajo: «(§7-bis.19)». El comprador no tiene ninguna SPEC delante; lee una cita a un párrafo que para él no existe, en la única celda del kit que fija sus temperaturas de cocción.",
+      "evidencia": "06-tareas-perfiles.xlsx!Instrucciones!B16 empieza por «▸ Fuente: criterio único de la familia (§7-bis.19) — …».",
+      "fix": "Quitar «(§7-bis.19)» y cualquier marca «§». Añadir al gate de contenido un barrido de «§» y de «CB-E»/«DOM-»/«TEC-»/«COM-» en celdas visibles del cliente."
+    },
+    {
+      "id": "RD-03",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Registro Congelación'!I6:I25 · 'Registro de pH del Arroz'!F5:F24 · 'Control de Recepción'!G5:G24",
+      "hallazgo": "Las Instrucciones prometen alarma automática en toda columna de temperatura y las tres hojas NUEVAS de registro no llevan ni una regla de formato condicional. Los dos límites críticos del kit —los −20 °C del tratamiento antiparasitario y el pH ≤ 4,6 del arroz— son justo los que no avisan; la única hoja que sí avisa es la vieja. Es la combinación que la propia SPEC declara peor que el defecto original (§7-bis.13): instrucciones que prometen lo que la hoja no hace.",
+      "evidencia": "openpyxl: ws.conditional_formatting == [] en 'Registro Congelación', 'Registro de pH del Arroz' y 'Control de Recepción'; 'Temperaturas Diario' tiene 7 reglas (C5:I5 … C11:I11). Promesa: 03!Instrucciones!B30 = «▸ Las columnas de fecha ya vienen con formato DD/MM/AAAA y las de temperatura en «0,0 °C»: escribe sólo el número. Si una lectura se sale del rango que declara su propia fila, la celda se pone en ROJO sola.»",
+      "fix": "CF en I6:I25 (>−20), F5:F24 (>4,6) y G5:G24 (fuera de 0-2 °C, el rango que declara la nota A27), con la guarda de vacío de RD-04. Si se decide no ponerlas, recortar B30 para que no prometa lo que no hay."
+    },
+    {
+      "id": "RD-04",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Temperaturas Diario'!C6:I6, C7:I7, C9:I9, C10:I10, C11:I11",
+      "hallazgo": "Las reglas «cellIs» no llevan guarda de celda vacía y Excel evalúa el blanco como 0: la hoja recién impresa sale con 5 de sus 7 filas ENTERAS en rojo antes de que nadie escriba nada, incluida la de la cámara de anisakis. El equipo aprende en dos días a ignorar el rojo, que es exactamente lo contrario de lo que se busca con un PCC.",
+      "evidencia": "Reglas leídas con openpyxl: C6:I6 cellIs greaterThan ['-20.0'] (blanco = 0 > −20 → rojo) · C9:I9 greaterThan ['-18.0'] · C7:I7 notBetween ['2.0','4.0'] · C10:I10 notBetween ['170.0','180.0'] · C11:I11 notBetween ['35.0','37.0']. Sólo C5:I5 (0-2) y C8:I8 (0-4) no se disparan en blanco, y por casualidad.",
+      "fix": "Sustituir cada «cellIs» por type='expression' con =AND(C6<>\"\";C6>-20) o equivalente, en las 7 filas y en toda CF de temperatura que añada CB-E3."
+    },
+    {
+      "id": "RD-05",
+      "severidad": "alta",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "'Protocolo Arroz Sushi'!E7, E8, E9 (tareas B7, B8, B9)",
+      "hallazgo": "La cadena horaria del arroz sigue siendo físicamente imposible, que es el defecto DOM-03 que esta versión viene a cerrar. Con la columna «Hora Límite», el reposo de 30 min arranca a las 09:40 y termina a las 10:10, hora a la que la cocción ya tiene que estar TERMINADA: quedan cero minutos para cocer. Un ciclo de arrocera son 45-50 minutos.",
+      "evidencia": "02!'Protocolo Arroz Sushi'!E7 = 09:35 (B7 «Lavar arroz 3-4 veces hasta que el agua salga clara») · E8 = 09:40 (B8 «Dejar reposar arroz en agua 30 min antes de cocer») · E9 = 10:10 (B9 «Cocer arroz: ratio 1:1.1 (arroz:agua) en arrocera»). Cabecera E4 = «Hora Límite».",
+      "fix": "Recalcular hacia atrás desde el servicio de las 12:00: lavar 08:45, remojo 08:50-09:20, cocción 09:20-10:05, reposo tapado 10:05-10:15, sushi-zu ya hecho y atemperado, mezcla 10:20, pH 10:30. Y copiar esas mismas horas en 01!'Apertura Barra Sushi'!E14-E19, que hoy repite las malas."
+    },
+    {
+      "id": "RD-06",
+      "severidad": "alta",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "'Protocolo Arroz Sushi'!E13, E14, E16 (tareas B13, B14, B16)",
+      "hallazgo": "El sushi-zu se prepara DESPUÉS de tener el arroz cocido y se vierte recién calentado, sin paso de atemperado. En barra el sushi-zu se hace por lotes con antelación y se usa frío o templado; verter vinagre caliente cinco minutos después de calentarlo apelmaza el grano y evapora el ácido, que es justamente lo que sostiene el pH ≤ 4,6 que el kit convierte en límite crítico.",
+      "evidencia": "02!'Protocolo Arroz Sushi'!E13 = 10:45 (B13 «Preparar el sushi-zu por cada 1 kg de arroz CRUDO…»), E14 = 10:47 (B14 «Calentar mezcla solo hasta disolver — no hervir»), E16 = 10:52 (B16 «Verter sushi-zu sobre arroz con movimientos de corte (no aplastar)»). No existe ninguna tarea de enfriado del sushi-zu en las 21 del checklist.",
+      "fix": "Mover B13/B14 a la víspera o a primerísima hora, añadir la tarea «Enfriar el sushi-zu a temperatura ambiente antes de usarlo (se puede preparar el día anterior y guardar en frío)» y dejar B16 inmediatamente después del volcado al hangiri."
+    },
+    {
+      "id": "RD-07",
+      "severidad": "alta",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "'Protocolo Arroz Sushi'!B13 vs B18 · 03!'Registro de pH del Arroz'!E4",
+      "hallazgo": "La receta está en ml por kg de arroz CRUDO y el registro pide ml por kg de arroz COCIDO. El mismo lote se anota como 200 ml/kg o como ~91 ml/kg según quién rellene, así que la «acidificación medida» que la v2.0 pone como respaldo del PCC deja de ser comparable entre lotes y entre turnos: es el dato que se enseña al inspector y no significa lo mismo en dos líneas seguidas.",
+      "evidencia": "02!'Protocolo Arroz Sushi'!B13 = «Preparar el sushi-zu por cada 1 kg de arroz CRUDO (≈2,2 kg cocido): 200 ml de vinagre de arroz de acidez ≥4,3 %, 60-100 g de azúcar y 30 g de sal» · B18 = «Anotar el sushi-zu realmente añadido (ml por kg de arroz cocido) en «Registro de pH del Arroz»…» · 03!'Registro de pH del Arroz'!E4 = «Sushi-zu añadido (ml/kg)».",
+      "fix": "Fijar UNA base —kg de arroz CRUDO, que es como se pesa en la partida— en B13, en B18, en 01!'Apertura Barra Sushi'!B18 y en la cabecera E4, que debe decir «Sushi-zu añadido (ml/kg de arroz crudo)». De paso revisar los 200 ml/kg crudo: están en el extremo alto del rango de barra (100-150 ml/kg)."
+    },
+    {
+      "id": "RD-08",
+      "severidad": "alta",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "'Protocolo Arroz Sushi'!B27, B30, E30, E31 vs 01!'Cierre Barra Sushi'!E6",
+      "hallazgo": "El segundo lote de arroz caduca antes de que acabe la cena, según la regla del propio kit. Se avinagra a las 17:00 y hay que descartarlo 4 h después (21:00), pero el cierre de barra arranca a las 23:00: dos horas largas de servicio de cena con arroz que el kit declara caducado. O falta un tercer lote, o la regla de las 4 h se incumple todas las noches.",
+      "evidencia": "02!'Protocolo Arroz Sushi'!E30 = 16:00 (B30 «Programar el segundo lote de arroz para la cena: el del almuerzo caduca 4 h después de avinagrarse»), E31 = 17:00 (B31 «Repetir el protocolo completo (lavado, reposo, cocción y sushi-zu) para el turno de cena»), B27 = «…el lote se descarta 4 h después y nunca se guarda para el día siguiente» · 01!'Cierre Barra Sushi'!E6 = 23:00.",
+      "fix": "Mover el segundo lote a ~19:00-19:30 (avinagrado 19:30 → válido hasta 23:30) y alinear E32, que hoy pide medir el pH del segundo lote a las 18:30, hora y media DESPUÉS de haberlo elaborado."
+    },
+    {
+      "id": "RD-09",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "Instrucciones!B17 (sin tarea en ninguno de los 11 ficheros)",
+      "hallazgo": "El kit cita el art. 8.2 del RD 1021/2022 —informar a la persona consumidora de que el pescado ha sido congelado— y no lo convierte en ninguna tarea comprobable. De las 251 tareas del kit, cero verifican el cartel o la mención en carta. Es la mitad del artículo que el propio producto invoca, y la que se ve en una inspección sin abrir un solo registro.",
+      "evidencia": "grep -niE «art\\. 8\\.2|consumidor|cartel|carta-men» sobre los 11 libros: 1 única aparición, 03!Instrucciones!B17 = «▸ Fuente: RD 1021/2022, art. 8.2 — hay que informar al consumidor de que el pescado ha sido congelado, por cartel, carta o menú.»",
+      "fix": "Añadir una tarea en 07!'Tareas Mensuales' («Comprobar que la carta y el cartel informan de que el pescado servido crudo ha sido congelado — RD 1021/2022, art. 8.2») y una línea de verificación en 06!'Sala y Servicio'."
+    },
+    {
+      "id": "RD-10",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Registro Congelación'!B27 (celda combinada B27:K27)",
+      "hallazgo": "La nota que cierra el conflicto −20/−18 (DOM-02, TEC-11, COM-16) no se puede leer: son 289 caracteres en una celda COMBINADA sin wrap_text y sin alto de fila. Una combinada sin ajuste de texto no desborda a las vecinas ni parte líneas: corta en el borde de la combinación, ~165 caracteres de ancho. Lo que se pierde es el final, que es lo único que distingue el congelador general del tratamiento antiparasitario.",
+      "evidencia": "openpyxl: merged_cells incluye 'B27:K27'; B27.alignment.wrap_text = None; row_dimensions[27].height = None; len(B27) = 289. Anchos B..K = 22+11+18+16+16+18+18+14+14+18 = 165. Texto: «IMPORTANTE: el límite crítico de este PCC es −20 °C. … El −18 °C es el límite del congelador general y no sirve para el tratamiento antiparasitario.»",
+      "fix": "wrap_text=True y alto de fila explícito (o autoalto) en toda celda de nota combinada. El motor ya lo hace en las hojas «Instrucciones» y no lo aplica a las hojas de registro nuevas."
+    },
+    {
+      "id": "RD-11",
+      "severidad": "alta",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Registro Congelación'!B29/B30 · 'Matriz de Alérgenos'!A25/A26/A27 · 'Registro de pH del Arroz'!A27/A28/A29 · 'Temperaturas Diario'!B14 · 'Control de Recepción'!A27/A28/A29 · 'Registro de Mermas'!A30/A31 · 05!'Reporting Semanal'!A16/A17",
+      "hallazgo": "El mismo defecto en TODAS las notas-fuente de las hojas nuevas: texto largo sin wrap_text y sin alto de fila, en una sola línea que se corta en el borde del print_area. Son precisamente las celdas que llevan las citas normativas que la SPEC exige poner en celda de nota (§7-bis.4): en papel salen a medias.",
+      "evidencia": "wrap_text = None y row height = None en las 14 celdas. Longitudes contra ancho útil: 'Registro de pH del Arroz'!A29 = 412 caracteres contra 139 de ancho A:I (es la nota que cita el Codex y las tiras 4,0-5,0) · 'Matriz de Alérgenos'!A25 = 266 contra ~136 (A:R) · 'Registro Congelación'!B30 = 271 (la excepción de acuicultura del Rgto. (UE) 1276/2011) · 'Temperaturas Diario'!B14 = 266.",
+      "fix": "En CB-E3, tras escribir cada nota: combinar A:<última columna>, wrap_text=True y alto = ceil(len/ancho)*15 pt. Y un gate que compare longitud de nota contra ancho útil de su fila."
+    },
+    {
+      "id": "RD-12",
+      "severidad": "alta",
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ubicacion": "'Briefing Servicio' e 'Instrucciones' · BONUS-02!'Calendario Anual' e 'Instrucciones'",
+      "hallazgo": "Los dos entregables que el propio kit manda imprimir salen del post-proceso SIN print_area y SIN protección; el informe del dry-run lo avisa y el pipeline sigue en verde y da «TODO VERDE». Son las dos hojas que más veces pasan por la impresora del local: una por servicio y una al año en la pared de la oficina.",
+      "evidencia": "openpyxl: BONUS-01!'Briefing Servicio' print_area=None, protection.sheet=False; BONUS-01!Instrucciones ídem; BONUS-02!'Calendario Anual' print_area=None, protection.sheet=False. Salida de mi dry-run: «AVISO molde · BONUS-01-briefing-servicio.xlsx!Briefing Servicio: ningún molde la reconoce (no recibe DV, ni contador, ni A4, ni protección)» (ídem BONUS-02). Promesas: BONUS-01!Instrucciones!B6 «▸ Imprime y rellena antes de cada servicio (almuerzo y cena)»; BONUS-02!Instrucciones!B7 «▸ Imprime y cuelga en la oficina del manager».",
+      "fix": "Reconocer «formulario» y «calendario» como moldes propios en CB-E6 (hoy sólo avisan, y el aviso no bloquea) y darles print_area, fitToWidth y protección sin contraseña con las celdas de relleno desbloqueadas."
+    },
+    {
+      "id": "RD-13",
+      "severidad": "media",
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ubicacion": "Instrucciones!B13, B14, B15, B16 · BONUS-02!Instrucciones!B13-B16",
+      "hallazgo": "CB-E4 («Cómo personalizar» por tipo de entregable) no ha llegado a los dos BONUS: siguen con el bloque literal de checklist. Prometen celdas verdes, responsables y horas límite en un formulario que no tiene ninguna de las tres cosas, y en un calendario que tampoco. Es TEC-10 / COM-19 sin cerrar en la versión que dice cerrarlos.",
+      "evidencia": "BONUS-01!Instrucciones!B13 = «▸ Las celdas verdes son editables — cambia responsables y horarios»; B15 = «▸ Añade tareas específicas de tu local en las filas vacías del final»; B16 = «▸ Ajusta las horas límite a tus horarios reales». En 'Briefing Servicio' hay 0 celdas con relleno E8F5E9, 0 columna de responsable y 0 columna de hora. Texto idéntico en BONUS-02!Instrucciones!B13-B16 sobre 'Calendario Anual'.",
+      "fix": "Escribir _bloque_personalizar('formulario') y _bloque_personalizar('calendario') y engancharlos por MOLDE, no por nombre de fichero."
+    },
+    {
+      "id": "RD-14",
+      "severidad": "media",
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ubicacion": "'Briefing Servicio'!B19 y B20",
+      "hallazgo": "Las dos líneas NUEVAS del briefing —el alérgeno crítico del día y el lote apto para crudo— son las únicas que no se combinaron con C, y la más larga se corta. Justo la información que hay que cantar en el briefing de cinco minutos es la que no cabe en la hoja.",
+      "evidencia": "merged_cells de 'Briefing Servicio' incluye B9:C9, B10:C10, B11:C11, B12:C12, B13:C13, B16:C16, B17:C17, B18:C18, B23:C23, B24:C24, B25:C25, B28:C28 … pero NO B19 ni B20. len(B19) = 125 («Alérgeno crítico de hoy (pescado, crustáceos, moluscos, soja, gluten, sésamo, huevo, sulfitos, frutos de cáscara): __________»); ancho B+C = 25+50 = 75.",
+      "fix": "Combinar B19:C19 y B20:C20 con wrap_text=True y alto de fila, como el resto del formulario."
+    },
+    {
+      "id": "RD-15",
+      "severidad": "media",
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "'Calendario Anual'!A28 y A42 (y A25, A32, A43)",
+      "hallazgo": "El calendario que se cuelga en la pared trunca sus propios rótulos: columna A de 35 de ancho, sin wrap_text, y las columnas de mes ocupadas por el punto, así que el texto no puede desbordar. Se cortan precisamente las dos filas que arreglan hallazgos de la R1: el desdoble de extintores y el RGSEAA que no se renueva.",
+      "evidencia": "BONUS-02!'Calendario Anual'!A28 = «Revisión anual de extintores por empresa autorizada y retimbrado a los 5 años (RD 513/2017)» (91 caracteres, con G28 = «●») · A42 = «Revisar los datos del RGSEAA y comunicar modificaciones o cese (no se renueva)» (78, con B42 = «●») · A25 = 53 (con B25 = «●»). column_dimensions['A'].width = 35.0 y wrap_text = None en las tres.",
+      "fix": "wrap_text=True en A5:A45 con alto de fila calculado, o subir A a 60 manteniendo fitToWidth=1 en apaisado."
+    },
+    {
+      "id": "RD-16",
+      "severidad": "media",
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ubicacion": "'Calendario Anual'!A43, G43, M43",
+      "hallazgo": "Una tarea rotulada ANUAL está marcada dos veces en el año. O es semestral y el rótulo miente, o sobra una marca; en cualquier caso contradice a 07!'Tareas Mensuales'!B23, que la llama «la auditoría anual completa».",
+      "evidencia": "BONUS-02!'Calendario Anual'!A43 = «Auditoría anual completa del plan APPCC (la mensual va en el 07)» con G43 = «●» (julio) y M43 = «●» (diciembre) · 07!'Tareas Mensuales'!B23 = «Auditoría interna MENSUAL de los registros APPCC y del archivo de congelación de anisakis (la auditoría anual completa está en el BONUS-02)…»",
+      "fix": "Dejar una sola marca (diciembre) o renombrar a «Auditoría semestral completa» y alinear 07!B23."
+    },
+    {
+      "id": "RD-17",
+      "severidad": "media",
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ubicacion": "'Tareas Mensuales'!B9 vs D9",
+      "hallazgo": "El texto de la tarea y su responsable se contradicen en la misma fila: la tarea dice expresamente que la revisión mensual la hace el titular y la columna «Responsable» pone «Técnico». Quien imprime la hoja reparte a un técnico externo una tarea que ha de hacer la casa todos los meses.",
+      "evidencia": "07!'Tareas Mensuales'!B9 = «Revisión MENSUAL del sistema de frío por el titular: temperaturas, juntas, escarcha y desagües (la revisión anual la hace la empresa frigorista)» · D9 = «Técnico».",
+      "fix": "D9 = «Manager» o «Encargado». Verificado que B10/D10 («Manager») y B11/D11 («Mantenedor») sí están bien; es sólo esta fila."
+    },
+    {
+      "id": "RD-18",
+      "severidad": "media",
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ubicacion": "'Tareas Mensuales'!B10/E10 y B11/E11, dentro del rango del contador F30",
+      "hallazgo": "Dos obligaciones no mensuales —trimestral y anual— viven dentro de la hoja «Tareas Mensuales» y entran en el denominador del contador, que se imprime y se firma cada mes. El kit vende un porcentaje de cumplimiento honesto y éste sale mal por construcción: 12 oportunidades al año para 4 y 1 ejecuciones reales.",
+      "evidencia": "07!'Tareas Mensuales'!B10 = «Revisión TRIMESTRAL de extintores y BIE por el titular: presión, precinto, accesibilidad y señalización (RD 513/2017, RIPCI)» con E10 = «Trimestral»; B11 = «Revisión ANUAL de extintores por empresa mantenedora habilitada y retimbrado a los 5 años (RD 513/2017, RIPCI)» con E11 = «Anual». Contador F30 = COUNTIF(B5:B28,\"?*\")-COUNTIF(F5:F28,\"N/A\"), que las cuenta las dos.",
+      "fix": "O una banda «NO MENSUALES (marcar N/A el mes que no toque)» con la instrucción explícita en Instrucciones, o dejarlas sólo en el BONUS-02, que ya las tiene en A32 y A28."
+    },
+    {
+      "id": "RD-19",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Instrucciones!B14 vs 'Cierre Barra Sushi'!E6-E28",
+      "hallazgo": "La regla de turnos no encaja con la hoja de cierre. Las Instrucciones dicen que todas las horas son del turno de ALMUERZO y que para la cena hay que sumarles la diferencia entre las dos aperturas, pero el cierre ya va de 23:00 a 23:45, que es el cierre de la noche. Sumarle la diferencia lo llevaría de madrugada.",
+      "evidencia": "01!Instrucciones!B14 = «▸ Las horas de estas hojas son las del turno de ALMUERZO, con la barra abierta a las 12:00. Para el turno de cena, súmale a cada hora la diferencia entre tus dos aperturas y marca la casilla «Cena» de la cabecera.» · 'Cierre Barra Sushi'!E6 = 23:00 … E28 = 23:45.",
+      "fix": "Separar la regla por hoja: «Apertura» lleva horas de almuerzo y admite el desplazamiento; «Cierre» es el cierre del día y sus horas son absolutas. Si se quiere cubrir el doble turno, añadir el bloque de cierre intermedio de almuerzo."
+    },
+    {
+      "id": "RD-20",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "Instrucciones!B16 y B22 vs 'Cierre Barra Sushi'!B27",
+      "hallazgo": "Las instrucciones se contradicen sobre el arqueo: mandan imprimir la misma hoja dos veces (almuerzo y cena) y a la vez prometen que el arqueo se hace UNA vez, cuando el arqueo es la tarea 18 de esa misma hoja de cierre. Con dos copias impresas, se pide dos veces — que es el defecto COM-22 que se venía a cerrar.",
+      "evidencia": "01!Instrucciones!B16 = «▸ Lo que cambia de un turno a otro son las horas, no las tareas: imprime la misma hoja dos veces y anota el turno arriba.» · B22 = «▸ El arqueo de caja se hace UNA vez y lo hace el encargado, en la hoja de cierre de este fichero…» · 'Cierre Barra Sushi'!B27 = «Arqueo de caja y cierre de TPV: contar el efectivo, cotejarlo con la Z del TPV y anotar el descuadre».",
+      "fix": "Marcar B27 como tarea de cierre de DÍA («sólo en el último turno; en el cierre de almuerzo, N/A») y decirlo en B16."
+    },
+    {
+      "id": "RD-21",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Temperaturas Diario'!A12:I13 vs Instrucciones!B31",
+      "hallazgo": "Las Instrucciones invitan a añadir equipos «en las filas verdes libres» y esa hoja no tiene ninguna: las dos filas que quedan bajo el último equipo están bloqueadas y sin relleno verde. Un local con abatidor, con una segunda cámara o con vitrina de postres no tiene dónde escribirlo.",
+      "evidencia": "openpyxl sobre 'Temperaturas Diario': filas 5-11 con fill 00E8F5E9 y locked=False; filas 12 y 13 con fill 00000000 y locked=True en A, B y C. 03!Instrucciones!B31 = «▸ Añade equipos o especies escribiendo en las filas verdes libres. Cambiar una fila no cambia el límite legal que le aplique…»",
+      "fix": "Aplicar el patrón de filas libres del molde de checklist también a las hojas de registro: 3-5 filas verdes desbloqueadas, con el number_format y la CF de su columna, antes de la fila de notas."
+    },
+    {
+      "id": "RD-22",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Temperaturas Diario'!B10 y B11 vs B14",
+      "hallazgo": "Dos de las siete filas piden una lectura que a la hora de apertura no existe. La nota manda anotar «la lectura de APERTURA de cada equipo»: a esa hora la freidora está fría y el arroz avinagrado todavía no se ha hecho. Con la CF puesta, esas dos filas se pintan en rojo todos los días aunque el local lo haga todo bien.",
+      "evidencia": "03!'Temperaturas Diario'!B10 = «Aceite de fritura de la cocina caliente (170-180 °C)» con CF C10:I10 notBetween 170-180 · B11 = «Arroz de servicio al montar el nigiri (35-37 °C)» con CF C11:I11 notBetween 35-37 · B14 = «Anota aquí la lectura de APERTURA de cada equipo, una por día. La lectura de CIERRE se marca y se firma en el checklist de cierre del fichero 01…»",
+      "fix": "Reetiquetar las dos filas como lecturas de SERVICIO («Aceite de fritura — lectura en servicio», «Arroz de servicio — lectura al montar») y decirlo en B14, o sacarlas a la hoja de la partida caliente."
+    },
+    {
+      "id": "RD-23",
+      "severidad": "media",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "'Protocolo Corte Pescado'!B11 vs 03!'Registro Congelación'!A5:K5",
+      "hallazgo": "La tarea manda anotar la descongelación en una columna que no existe. El registro tiene entrada, inicio y fin de congelación, pero ninguna casilla de descongelación ni de uso, que es lo que cierra la trazabilidad del lote y lo que se pide en una inspección.",
+      "evidencia": "02!'Protocolo Corte Pescado'!B11 = «Descongelar en cámara a 0-2 °C, nunca a temperatura ambiente ni bajo el grifo, y anotar en «Registro Congelación» la fecha y la hora de entrada y de uso — anota la lectura: ____ °C» · Cabecera real de 03!'Registro Congelación': A5 «#», B5 «Especie Pescado», C5 «Nº de lote», D5 «Proveedor/Lonja», E5 «Origen y acreditación», F5 «Fecha Entrada», G5 «Inicio Congelación», H5 «Fin Congelación», I5 «Temp °C», J5 «Verif.», K5 «Firma Responsable».",
+      "fix": "Añadir las columnas «Inicio descongelación» y «Fecha/hora de uso» (DD/MM/YYYY y HH:MM) y, ya que se toca, una columna calculada «Horas de tratamiento» = (H−G)*24 con CF si < 24, que es la única forma de que el registro demuestre por sí solo el cumplimiento del art. 8.1."
+    },
+    {
+      "id": "RD-24",
+      "severidad": "media",
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ubicacion": "'Protocolo Corte Pescado'!B11/E11 y B14/E14",
+      "hallazgo": "Descongelar aparece como tarea de la mañana del mismo día, con quince minutos entre la descongelación y el primer corte. Un lomo de atún o de salmón congelado a −20 °C necesita entre 12 y 24 h en cámara: la tarea pertenece a la víspera y ahí es donde hay que programarla.",
+      "evidencia": "02!'Protocolo Corte Pescado'!E11 = 10:55 (B11 «Descongelar en cámara a 0-2 °C…») y E14 = 11:10 (B14 «Atún (maguro): corte en bloque y láminas de 8-10 mm para nigiri, sashimi y relleno de maki»).",
+      "fix": "Mover la descongelación a 01!'Cierre Barra Sushi' como tarea de la víspera («Bajar a cámara los lotes que se cortarán mañana y anotar la hora») y dejar en el 02 sólo la comprobación de que el producto está descongelado y a 0-2 °C."
+    },
+    {
+      "id": "RD-25",
+      "severidad": "media",
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ubicacion": "'Registro de Mermas'!E5:E26, G5:G26, H5:H26 y A30",
+      "hallazgo": "La hoja de mermas —el número con el que la propia SPEC justifica el precio del kit— deja el coste por línea a mano: la nota dice que el coste de la línea es kg × €/kg y H5:H26 está vacía y sin fórmula. Además las columnas de datos van en formato General mientras los totales llevan kg y €: el cliente ve «3» donde debería ver «3,0 kg».",
+      "evidencia": "03!'Registro de Mermas': H5..H26 sin valor ni fórmula; E28 = SUM(E5:E26) con number_format '0.0\" kg\"' y H28 = SUM(H5:H26) con '#,##0.00\" €\"'; E5, G5 y H5 con number_format 'General'. A30 = «Cómo se usa: una línea por descarte, el mismo día. El coste total de la línea es kg × €/kg y los totales del pie los calcula la hoja. Es el número que justifica el kit: sin medir la merma no se puede bajar.»",
+      "fix": "H5:H26 = SI(E5=\"\";\"\";E5*G5) bloqueadas, E con '0.0\" kg\"' y G/H con '#,##0.00\" €\"'."
+    },
+    {
+      "id": "RD-26",
+      "severidad": "media",
+      "fichero": "05-tareas-manager.xlsx",
+      "ubicacion": "'Reporting Semanal'!E5:E11, C5:C11, F5:F11, G5:G11",
+      "hallazgo": "La columna diaria «Ticket medio (€)» no tiene fórmula: sólo la calcula el pie. La hoja se vende como «el cierre de la semana calculado» y el manager tiene que dividir a mano siete veces. Las columnas de dinero van además en formato General frente a los totales en €.",
+      "evidencia": "05!'Reporting Semanal': E13 = IF(SUM(D5:D11)=0,\"\",SUM(C5:C11)/SUM(D5:D11)) con formato '#,##0.00\" €\"'; E5..E11 vacías, sin fórmula y con number_format 'General' (ídem C5, F5, G5). Promesa: 05!Instrucciones!B14 = «▸ «Reporting Semanal»: una línea por día y el cierre de la semana calculado (ticket medio y food cost de pescado sobre ventas).»",
+      "fix": "E5:E11 = SI(D5=0;\"\";C5/D5) bloqueadas, y '#,##0.00\" €\"' en C, E, F y G de las filas de dato."
+    },
+    {
+      "id": "RD-27",
+      "severidad": "media",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "'Delivery y Take Away'!B18 vs 01!'Apertura Barra Sushi'!B8 y 04!'Mise en Place Barra'!B7",
+      "hallazgo": "El mismo pescado crudo lleva tres rangos en el kit: 0-2 °C en cámara, 2-4 °C en vitrina y 0-4 °C en la bolsa de reparto. El gate limite_unico no lo ve porque vigila NOMBRES DE EQUIPO, no el producto, y sale 0 conflictos. Tres números para el mismo alimento es una no conformidad de plan APPCC, y es el defecto que §7-bis.23 declara bloqueante.",
+      "evidencia": "06!'Delivery y Take Away'!B18 = «Comprobar y anotar la temperatura del pedido al salir: el pescado crudo sale entre 0 y 4 °C — anota la lectura: ____ °C» · 01!'Apertura Barra Sushi'!B8 = «Verificar temperatura de la cámara de pescado crudo (0-2 °C, hielo fundente)…» · 04!'Mise en Place Barra'!B7 = «Verificar temperatura vitrina (2-4 °C)…». EQUIPOS_LIMITE en contenido_kit_tareas_sushi_bar.py:1986-1995 no incluye ningún patrón de producto.",
+      "fix": "Fijar el pedido de reparto en 0-2 °C —la temperatura de la cámara de donde sale— o declarar en 03!Instrucciones por qué el reparto admite hasta 4 °C. Y añadir a EQUIPOS_LIMITE un patrón de «pescado crudo» como producto, no sólo como cámara."
+    },
+    {
+      "id": "RD-28",
+      "severidad": "media",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "'Delivery y Take Away'!B19 vs 01!'Cierre Barra Sushi'!B10 y 04!'Mise en Place Barra'!B29",
+      "hallazgo": "Tres plazos distintos para el mismo riesgo, y uno de ellos es inaplicable: la tarea fija 30 min de entrega, 60 min como alarma y manda «no servir pescado crudo» cuando el pedido ya va camino del cliente. En paralelo, el resto del kit usa la regla de las 2 h fuera de refrigeración.",
+      "evidencia": "06!'Delivery y Take Away'!B19 = «Entregar en 30 minutos o menos; si el reparto se alarga por encima de 60 minutos, avisar al cliente y no servir pescado crudo» · 01!'Cierre Barra Sushi'!B10 y 04!'Mise en Place Barra'!B29 = «Descartar las piezas que hayan estado más de 2 h FUERA de refrigeración…»",
+      "fix": "Reescribirlo como decisión ANTES de salir («si el tiempo estimado de reparto supera 60 min, no se acepta el pedido con pescado crudo; se ofrece alternativa cocinada») y dejar un solo criterio de tiempo, coherente con las 2 h."
+    },
+    {
+      "id": "RD-29",
+      "severidad": "media",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "'Ayudante Sushi'!B13 vs 01!'Cierre Barra Sushi'!B18 y 07!'Tareas Semanales'!B9",
+      "hallazgo": "El hangiri tiene dos protocolos incompatibles dentro del mismo kit: el ayudante lee «sólo con agua, sin jabón» y el cierre y el semanal admiten detergente y desinfectante aptos para uso alimentario. Es DOM-26 a medio cerrar, y quien lava el hangiri es justamente el ayudante.",
+      "evidencia": "06!'Ayudante Sushi'!B13 = «Lavar hangiri (solo con agua, sin jabón)» · 01!'Cierre Barra Sushi'!B18 = «Hangiri: lavar con agua caliente y cepillo, sin abrasivos; si usas detergente apto para uso alimentario, aclarar a fondo. Secar boca abajo al aire y no guardarlo húmedo» · 07!'Tareas Semanales'!B9 = «Sanitizar el hangiri según el plan de L+D: agua caliente, cepillo y desinfectante apto para uso alimentario, con aclarado abundante y secado al aire».",
+      "fix": "Copiar en 06!B13 la redacción del 01 (diaria) y remitir al 07 para la sanitización semanal. Añadir «hangiri» al censo de coherencia del kit."
+    },
+    {
+      "id": "RD-30",
+      "severidad": "media",
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ubicacion": "'Ayudante Sushi'!B8 y B11 · 05!Instrucciones!B7",
+      "hallazgo": "Inglés crudo en tareas que el equipo lee en papel, e incoherente con el vocabulario que el propio kit usa en los otros ficheros. La lente pedía terminología en español y aquí queda sin tocar.",
+      "evidencia": "06!'Ayudante Sushi'!B8 = «Preparar bamboo mats con plastic wrap» · B11 = «Renovar plastic wrap cada 2 horas» · frente a 01!'Apertura Barra Sushi'!B27 = «Preparar los makisu (esterillas de bambú) con film transparente nuevo» y 04!'Mise en Place Barra'!B21 = «Preparar makisu (esterillas de bambú) nuevos con film transparente». Además 05!Instrucciones!B7 = «▸ Incluye gestión de proveedores de pescado, equipo y revenue».",
+      "fix": "«Preparar los makisu (esterillas de bambú) con film transparente nuevo» · «Renovar el film transparente cada 2 horas» · «ingresos» o «facturación» en lugar de «revenue»."
+    },
+    {
+      "id": "RD-31",
+      "severidad": "media",
+      "fichero": "04-barra-sushi-neta-case.xlsx",
+      "ubicacion": "Instrucciones!B6 · 08!Instrucciones!B7 · 01!'Apertura Barra Sushi'!B35 · 06!'Sala y Servicio'!B9 · BONUS-01!'Briefing Servicio'!B28 y B29",
+      "hallazgo": "El gate «ortografía» declara 0 celdas con lema de LEX_TILDES y quedan faltas visibles a simple vista en celdas que el cliente lee. Las ambiguas («mas», «te», «Si») la SPEC las deriva al módulo de contenido celda a celda (§1.2 CB-E1) y ahí no se han resuelto: el gate publica un cero que no es cierto para el lector.",
+      "evidencia": "04!Instrucciones!B6 = «▸ La barra de sushi es el centro del espectaculo — debe estar impecable» (falta «espectáculo», y no es ambigua) · 08!Instrucciones!B7 = «▸ Los eventos omakase generan el ticket medio mas alto» · 01!'Apertura Barra Sushi'!B35 = «Verificar stock bebidas: sake, cerveza japonesa, te» · 06!'Sala y Servicio'!B9 = «Servir te verde y agua al sentar al cliente» · BONUS-01!'Briefing Servicio'!B28 y B29 = «(suficiente: ☐ Si ☐ No)» frente a B37 = «☐ Sí ☐ No». Salida del dry-run: «CB-E1 ortografía: 0 celdas con lema de LEX_TILDES · 590 ocurrencias ambiguas para el módulo de contenido».",
+      "fix": "Añadir «espectaculo» a LEX_TILDES (no es ambigua) y resolver por contexto «mas alto», los dos «te»/«té» y las dos casillas «Si» del briefing. Y cerrar el bucle: 590 ambiguas sin revisar no pueden convivir con un gate que se publica como 0."
+    },
+    {
+      "id": "RD-32",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 41 y 307",
+      "hallazgo": "La landing sigue publicando la cifra falsa del anisakis en sus dos testimonios. Las otras seis apariciones ya se corrigieron a RD 1021/2022 (líneas 18, 52, 97, 186, 253, 284), así que la página afirma dos cosas distintas: en la FAQ, 24 h; en boca de un cliente, 7 días. Y es la versión del cliente la que se lee como experiencia real.",
+      "evidencia": "kit-tareas-sushi-bar.ts:41 = «body: 'El protocolo de anisakis con registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad. Imprescindible.'» · :307 = mismo texto ampliado en el bloque de testimonials. La SPEC §3.2 lista las 8 líneas a corregir e incluye expresamente la 41 y la 307.",
+      "fix": "Reescribir el cuerpo de los dos testimonios sin la cifra («el registro de congelación por lote y proveedor nos ha salvado en dos inspecciones de Sanidad»). No toca ni aggregateRating ni el número de reseñas, así que no entra en la decisión de John de §7-bis.6."
+    },
+    {
+      "id": "RD-33",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 151 y 231 vs 08!Instrucciones!B15",
+      "hallazgo": "La landing promete un calendario de temporadas con salmón salvaje y el fichero dice justo lo contrario. El kit se refuta a sí mismo en la primera hoja que abre el comprador que venía buscando eso.",
+      "evidencia": "kit-tareas-sushi-bar.ts:151 = «…temporadas de pescado en España (atún rojo, bonito, salmón salvaje)…» y :231 igual · 08!Instrucciones!B15 = «▸ El salmón que se sirve en sushi es de acuicultura y está disponible todo el año: no tiene temporada que calendarizar.» · contenido_kit_tareas_sushi_bar.py:1947-1949 lo excluye del gate a propósito y lo remite a §3.3.",
+      "fix": "Quitar «salmón salvaje» de las dos líneas de la landing (queda «atún rojo y bonito del norte»): la capa de producto ya se ha tocado para el anisakis, así que este cambio es de la misma tanda y no puede quedarse esperando a T5."
+    },
+    {
+      "id": "RD-34",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts",
+      "ubicacion": "líneas 151, 166, 231, 287 vs 08!'Eventos Especiales'!A24 y BONUS-02!'Calendario Anual'!A11-A22",
+      "hallazgo": "«Festivos asiáticos» en plural se cumple con festivos exclusivamente japoneses. El gate lo da por bueno porque su expresión regular sólo busca los japoneses, así que ese término de la landing nunca podrá fallar aunque no haya un solo festivo no japonés en el kit.",
+      "evidencia": "grep -ni «chino|asiátic|asiatic» sobre los 11 libros = 0 resultados. Corpus: Oshogatsu (BONUS-02!A12), Hanami (08!B25 y BONUS-02!A13), Tanabata (08!B26 y BONUS-02!A14). contenido_kit_tareas_sushi_bar.py:1972 → rx = '(?i)(hanami|tanabata|oshogatsu|a[ñn]o nuevo japon)' con mínimo 2.",
+      "fix": "O añadir Año Nuevo Chino y Mid-Autumn al calendario (dos filas), o cambiar el copy a «festivos japoneses». La segunda es más honesta con un sushi bar."
+    },
+    {
+      "id": "RD-35",
+      "severidad": "baja",
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ubicacion": "'Apertura Barra Sushi'!E6-E11 y E22-E25 · 02!'Protocolo Corte Pescado'!E6-E11 · 05!'Tareas Diarias Manager'!E19-E21",
+      "hallazgo": "Las horas no van en orden dentro de las secciones impresas. Quien sigue la hoja de arriba abajo —que es como se usa un checklist en barra— hace las tareas fuera de hora o tiene que volver atrás. En apertura, la tarea más temprana del día (arrancar el arroz a las 09:30) es la ÚLTIMA de su bloque.",
+      "evidencia": "01!'Apertura Barra Sushi': E6=10:00, E7=10:00, E8=10:00, E9=10:00, E10=10:05, E11=09:30 · E22=11:00, E23=11:00, E24=11:30, E25=11:15 · 02!'Protocolo Corte Pescado': E6=11:00, E7=11:00, E8=11:00, E9=11:05, E10=10:55, E11=10:55 · 05!'Tareas Diarias Manager': E19=23:00, E20=18:00, E21=23:00.",
+      "fix": "Ordenar cada sección por hora al construir el bloque y añadir un gate que compruebe la monotonía de la columna de tiempo dentro de cada banda cuando el valor es una hora."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "35 hallazgos, 13 de severidad alta, todos reproducibles sobre mi propia copia de dry-run — y ninguno lo ve el pipeline, que sale «TODO VERDE». Tres bloques lo impiden. (1) LEGAL: el kit reintroduce una norma DEROGADA como fuente de temperaturas (RD 3484/2000 en 06!Instrucciones!B16, el mismo defecto que el RD 1420/2006 que motiva toda la v2.0), filtra en esa misma celda una referencia interna de la SPEC («§7-bis.19»), y cita el art. 8.2 del RD 1021/2022 sin convertirlo en ninguna de sus 251 tareas. (2) LOS DOS LÍMITES CRÍTICOS NO FUNCIONAN EN PAPEL: las hojas nuevas de anisakis, pH y recepción tienen CERO formato condicional pese a que 03!Instrucciones!B30 promete el rojo automático; la única hoja que sí lo tiene pinta 5 de sus 7 filas en rojo con la celda vacía (cellIs sin guarda de blanco); y la nota que separa los −20 °C del tratamiento de los −18 °C del congelador se corta al imprimir por estar en una combinada sin ajuste de texto. Es exactamente la combinación que la propia SPEC declara peor que el defecto original (§7-bis.13). (3) OPERATIVA IMPOSIBLE: la cadena del arroz sigue sin caber en el reloj (reposo de 30 min que termina a la misma hora en que la cocción debe estar hecha), el sushi-zu se hace después del arroz y se vierte caliente, la unidad de dosificación es «crudo» en la receta y «cocido» en el registro del PCC, y el segundo lote de arroz caduca a las 21:00 con la barra abierta hasta las 23:00. Además los dos BONUS salen sin print_area ni protección con un aviso del propio motor que no bloquea nada, y la landing sigue publicando «−20 ºC durante 7 días» en sus dos testimonios. Un itamae que imprima esto mañana reparte hojas con horas que no se pueden cumplir, registros que no avisan cuando el PCC se sale y notas legales cortadas a media frase."
+}
