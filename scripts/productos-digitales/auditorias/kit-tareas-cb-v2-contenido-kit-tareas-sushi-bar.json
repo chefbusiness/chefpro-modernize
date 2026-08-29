@@ -311,5 +311,418 @@
     "03-seguridad-anisakis-appcc.xlsx!Temperaturas Diario!B11"
    ]
   }
- }
+ },
+ "hojas_nuevas_8_de_2_1": [
+  {
+   "hoja": "Matriz de Alérgenos",
+   "fichero": "03-seguridad-anisakis-appcc.xlsx",
+   "molde": "registro_appcc",
+   "filas": 18,
+   "columnas": 18,
+   "ids": "DOM-07, TEC-12",
+   "que": "plato × los 14 alérgenos del Anexo II del Rgto. (UE) 1169/2011 + casilla de contaminación cruzada + firma. Notas al pie con los alérgenos propios de la carta japonesa y la fuente."
+  },
+  {
+   "hoja": "Registro de pH del Arroz",
+   "fichero": "03-seguridad-anisakis-appcc.xlsx",
+   "molde": "registro_appcc",
+   "filas": 20,
+   "columnas": 9,
+   "ids": "DOM-04, DOM-21, DOM-22, §7-bis.20",
+   "que": "#, Fecha, Lote/hora de avinagrado, kg de arroz cocido, Sushi-zu añadido (ml/kg) = acidificación MEDIDA, pH medido, Acción correctora, Verif. (desplegable), Firma."
+  },
+  {
+   "hoja": "Control de Recepción",
+   "fichero": "03-seguridad-anisakis-appcc.xlsx",
+   "molde": "registro_appcc",
+   "filas": 20,
+   "columnas": 13,
+   "ids": "DOM-27",
+   "que": "Fecha, Hora, Proveedor, Especie, kg, Temp recepción (°C), Aspecto, Etiquetado y zona FAO, Verif., Aceptado/Rechazado, Motivo del rechazo, Firma. Notas con el criterio de aceptación y la fuente."
+  },
+  {
+   "hoja": "Registro de Mermas",
+   "fichero": "03-seguridad-anisakis-appcc.xlsx",
+   "molde": "registro_appcc",
+   "filas": 22,
+   "columnas": 9,
+   "ids": "DOM-08, §2.2",
+   "que": "Fecha, Turno, Especie, kg descartados, Motivo, Coste €/kg, Coste total €, Firma + fila TOTAL con =SUM(E5:E26) y =SUM(H5:H26) FUERA del cuerpo (bloqueada y sin verde)."
+  },
+  {
+   "hoja": "Comparativa de Proveedores",
+   "fichero": "05-tareas-manager.xlsx",
+   "molde": "registro_appcc",
+   "filas": 20,
+   "columnas": 9,
+   "ids": "DOM-28, COM-24, TEC-20",
+   "que": "Fecha, Especie, €/kg de tres proveedores, Mejor precio y proveedor, Calidad y observaciones, Firma."
+  },
+  {
+   "hoja": "Reporting Semanal",
+   "fichero": "05-tareas-manager.xlsx",
+   "molde": "registro_appcc",
+   "filas": 7,
+   "columnas": 9,
+   "ids": "DOM-28, COM-24",
+   "que": "una línea por día (Ventas, Comensales, Ticket medio, Compras de pescado, Mermas, Incidencias) + fila TOTAL con ticket medio =IF(SUM(D)=0,\"\",SUM(C)/SUM(D)) y food cost =IF(SUM(C)=0,\"\",SUM(F)/SUM(C)) con formato 0,0 %."
+  },
+  {
+   "hoja": "Delivery y Take Away",
+   "fichero": "06-tareas-perfiles.xlsx",
+   "molde": "checklist ▸",
+   "tareas": 13,
+   "ids": "DOM-06, COM-06",
+   "que": "3 bloques: recepción y preparación del pedido, montaje/sellado/etiquetado de alérgenos, salida-entrega-incidencias (temperatura de salida 0-4 °C, 30 min de entrega, qué se hace con un devuelto)."
+  },
+  {
+   "hoja": "Office y Lavado",
+   "fichero": "06-tareas-perfiles.xlsx",
+   "molde": "checklist ▸",
+   "tareas": 12,
+   "ids": "DOM-31",
+   "que": "3 bloques: lavavajillas (lavado 55-65 °C, aclarado ≥80 °C), material del itamae y tablas por uso, residuos y aceite usado a gestor autorizado."
+  }
+ ],
+ "correcciones_de_contenido": [
+  {
+   "id": "DOM-01 / COM-01 / TEC-11 / censo T0.1",
+   "ref": "03-seguridad-anisakis-appcc.xlsx!Instrucciones!B7 · !'Registro Congelación'!A2",
+   "que": "la congelación antiparasitaria pasa a «−20 °C en la totalidad del producto durante al menos 24 h, o −35 °C durante al menos 15 h», y la cita al RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) + Rgto. (CE) 853/2004 Anexo III Secc. VIII Cap. III.D (redacción del Rgto. (UE) 1276/2011). Los «7 días» desaparecen del kit."
+  },
+  {
+   "id": "DOM-02 / COM-16",
+   "ref": "03!'Registro Congelación'!B27",
+   "que": "UN solo límite crítico: el aviso de reinicio se disparaba a −18 °C (validando lotes a −19 °C que incumplen) y ahora se dispara a −20 °C, con el cómputo de 24 h. El −18 °C queda reservado al congelador general."
+  },
+  {
+   "id": "DOM-15 / §2.0",
+   "ref": "03!'Registro Congelación'!B27-B29 (dos filas nuevas) y 03!Instrucciones bloque «La norma, con su fuente»",
+   "que": "excepción del Rgto. (UE) 1276/2011 para acuicultura acreditada por escrito + fuente de la norma + RD 1021/2022 art. 8.2 (informar al consumidor)."
+  },
+  {
+   "id": "DOM-14",
+   "ref": "03!'Registro Congelación' columnas C y E (nuevas) · 02!'Protocolo Corte Pescado' 2 tareas nuevas · 01!'Cierre Barra Sushi'!B8",
+   "que": "«Nº de lote» y «Origen y acreditación» en el registro; comprobación de la etiqueta del lote ANTES de cortar en crudo; descongelación controlada en cámara a 0-2 °C con fecha y hora (0 apariciones de «descongel» en el kit); el pescado se etiqueta con su lote al cierre."
+  },
+  {
+   "id": "DOM-03 / COM-18",
+   "ref": "02!'Protocolo Arroz Sushi'!E6-E27 y 01!'Apertura Barra Sushi'!E11-E19",
+   "que": "cadena horaria posible y ALINEADA entre los dos ficheros: pesar 09:30, lavar 09:35, reposo 30 min 09:40, cocer 10:10, reposo 10 min 10:40, sushi-zu 10:45, hangiri 10:50, avinagrar 10:52, abanicar 10:55, acidificación medida 10:57, pH 11:00, cubrir 11:05."
+  },
+  {
+   "id": "DOM-04 / §7-bis.20",
+   "ref": "02!'Protocolo Arroz Sushi'!B19 · 01!'Apertura Barra Sushi'!B18 · hoja «Registro de pH del Arroz»",
+   "que": "tiras de rango 4,0-5,0 con resolución 0,2 (o pHmetro de punción) Y registro del valor y del sushi-zu añadido por kg. Las dos salidas de la §5.6, juntas."
+  },
+  {
+   "id": "DOM-21",
+   "ref": "02!'Protocolo Arroz Sushi'!B26",
+   "que": "acción correctora ESCALADA (añadir sushi-zu y remedir → guardar en frío ≤5 °C para elaboraciones cocinadas → descartar), en vez de tirar el lote entero."
+  },
+  {
+   "id": "DOM-22",
+   "ref": "02!'Protocolo Arroz Sushi'!B13",
+   "que": "sushi-zu por kg de arroz CRUDO (≈2,2 kg cocido): 200 ml de vinagre de acidez ≥4,3 %, 60-100 g de azúcar, 30 g de sal. Antes decía «por 500g arroz» sin decir crudo o cocido."
+  },
+  {
+   "id": "DOM-11",
+   "ref": "02!'Protocolo Arroz Sushi' bloque «SEGUNDO LOTE (TURNO CENA)» (4 tareas) + 01!Instrucciones bloque «Turno de almuerzo y turno de cena»",
+   "que": "el kit cubría un solo servicio con un arroz que caduca a las 4 h."
+  },
+  {
+   "id": "DOM-12 / COM-15 / gate limite_unico",
+   "ref": "01!'Apertura Barra Sushi'!B8 · 01!'Cierre Barra Sushi'!B8 · 03!'Temperaturas Diario'!B5",
+   "que": "cámara de pescado crudo con UN rango, 0-2 °C (hielo fundente, Rgto. 853/2004 Anexo III Secc. VIII Cap. VII), en las tres celdas."
+  },
+  {
+   "id": "DOM-25",
+   "ref": "01!'Apertura Barra Sushi'!B6-B7",
+   "que": "la vitrina se COMPRUEBA desde la noche (no se enciende a las 10:00) y hay tarea aparte para el caso de apagado, con los 45 min hasta 2-4 °C estables."
+  },
+  {
+   "id": "DOM-10",
+   "ref": "04!Instrucciones!B8 · 04!'Mise en Place Barra'!B13/B27/B29 · 01!'Cierre Barra Sushi'!B10",
+   "que": "las dos reglas separadas: fuera de refrigeración, 2 h y descarte; en vitrina a 2-4 °C, FIFO por lotes y consumo dentro de la jornada."
+  },
+  {
+   "id": "TEC-20",
+   "ref": "04!'Mise en Place Barra'!B13/B27 · 02!'Protocolo Corte Pescado'!B14 · 05 hojas nuevas",
+   "que": "«FIFO por lotes» con nº de lote real de «Trazabilidad Pescado», «maki» en el corte del atún, y comparativa y reporting existentes."
+  },
+  {
+   "id": "DOM-07 / TEC-12",
+   "ref": "06!'Sala y Servicio'!B8 + hoja «Matriz de Alérgenos»",
+   "que": "los 14 alérgenos del Anexo II del Rgto. (UE) 1169/2011, con el PESCADO —que faltaba en un sushi bar— y la matriz por plato dentro del 03, que es donde la landing la vende."
+  },
+  {
+   "id": "DOM-08 / §2.2",
+   "ref": "01!'Cierre Barra Sushi'!B7 · 05!'Tareas Diarias Manager'!B16 · hoja «Registro de Mermas»",
+   "que": "las tres tareas que remitían a una «hoja de control» inexistente ahora apuntan a una hoja real."
+  },
+  {
+   "id": "DOM-09 / DOM-18 / COM-03",
+   "ref": "08!'Temporadas Pescado España'!B6/B8/B11/B12/B16/B18/B23 · BONUS-02!'Calendario Anual'!A6-A9",
+   "que": "bonito del norte a verano (jun-oct) y atún rojo de almadraba a primavera (abr-jun); sardina a verano; lubina salvaje a invierno; el precio de la almadraba se cierra en febrero. Con la fuente (campañas del MAPA) en Instrucciones."
+  },
+  {
+   "id": "DOM-18",
+   "ref": "08!'Temporadas Pescado España'!B17 (tarea nueva)",
+   "que": "sardina, boquerón y caballa: alta prevalencia de anisakis, congelación previa antes de cualquier uso crudo, marinado, en salazón o ahumado en frío."
+  },
+  {
+   "id": "DOM-13 / TEC-09",
+   "ref": "03!'Temperaturas Diario'!B14-B15",
+   "que": "la instrucción pedía DOS lecturas diarias en una rejilla con UNA celda por equipo y día. Ahora pide la de apertura, manda la de cierre al checklist de 01 (que sí la tiene) y añade la línea de acción correctora. Ver desviacion D-03."
+  },
+  {
+   "id": "DOM-23",
+   "ref": "03!'Temperaturas Diario'!B5/B10/B11",
+   "que": "fuera la arrocera a 100 °C (no se puede desviar) y la horquilla de 17 grados del arroz; entran «Aceite de fritura de la cocina caliente (170-180 °C)» y «Arroz de servicio al montar el nigiri (35-37 °C)», coherente con 02!B24. Las 7 filas tienen ahora rango legible: `sin_rango` pasa de 1 a 0."
+  },
+  {
+   "id": "DOM-24 / COM-22",
+   "ref": "05!'Tareas Diarias Manager'!B20 (E20 22:00→18:00) · 01!'Cierre Barra Sushi'!B26",
+   "que": "el manager CONFIRMA el pedido antes de la hora de corte del proveedor (18:00 por defecto, con casilla para la propia) y el cierre sólo ANOTA lo observado. Dueño único por tarea."
+  },
+  {
+   "id": "COM-22 / promesa «arqueo»",
+   "ref": "01!'Cierre Barra Sushi'!B27 · 05!'Tareas Diarias Manager'!B23",
+   "que": "el arqueo lo hace el encargado UNA vez, en 01, con efectivo contra Z del TPV y descuadre; el manager lo revisa. «arqueo» tenía 0 apariciones y la landing lo promete."
+  },
+  {
+   "id": "DOM-26",
+   "ref": "01!'Cierre Barra Sushi'!B18 · 07!'Tareas Semanales' (tarea nueva)",
+   "que": "fuera el «NUNCA jabón» escrito en un documento de autocontroles; el hangiri entra en el plan de L+D semanal con desinfectante apto para uso alimentario."
+  },
+  {
+   "id": "DOM-27",
+   "ref": "05!'Tareas Diarias Manager'!B7 + hoja «Control de Recepción» + columna «Temp recepción (°C)» en 03!'Trazabilidad Pescado'",
+   "que": "la recepción, que era una línea sin soporte, pasa a ser el primer punto de control con decisión de aceptar o rechazar."
+  },
+  {
+   "id": "DOM-28 / COM-24",
+   "ref": "05!'Tareas Semanales Manager' (2 tareas nuevas) + hojas «Comparativa de Proveedores» y «Reporting Semanal»",
+   "que": "lo que la tarjeta del manager promete y el fichero no tenía (0 apariciones de «reporting» y «comparativa»)."
+  },
+  {
+   "id": "DOM-29",
+   "ref": "01!'Apertura'!B27 · 01!'Cierre'!B17 · 04!'Mise en Place Barra'!B21/B25 · 02!'Protocolo Corte Pescado'!B16",
+   "que": "makisu (esterilla de bambú) y film transparente en las 5 celdas; hamachi = Seriola quinqueradiata, con la lecha/pez limón (Seriola dumerili) como sustituto local, que es otra especie."
+  },
+  {
+   "id": "DOM-30",
+   "ref": "02!'Protocolo Corte Pescado'!B24",
+   "que": "el aburaage se escalda para desgrasar y se cuece en dashi; no se «hidrata», y «tofu piel» no es denominación de nada."
+  },
+  {
+   "id": "DOM-31 / §7-bis.19",
+   "ref": "06!'Cocina Caliente' (5 tareas nuevas) + hoja «Office y Lavado»",
+   "que": "cocción ≥70 °C en el centro (≥75 °C aves, picados y recalentados), mantenimiento ≥65 °C, enfriamiento 65→10 °C en menos de 2 h, filtrado y cambio de aceite con registro, y alérgenos en la freidora. Fuente (AESAN + RD 3484/2000) en Instrucciones."
+  },
+  {
+   "id": "DOM-19 / COM-08 / COM-09 / §2.2",
+   "ref": "08!'Eventos Especiales' bloque «FESTIVOS JAPONESES Y CENAS DE EMPRESA» (4 tareas) · BONUS-02!'Calendario Anual' filas nuevas",
+   "que": "Hanami, Tanabata, cenas de empresa y comidas de Navidad (el mayor pico del año, que no estaba), Día de la Madre, CIERRE POR VACACIONES y planificación de vacaciones, DDD con certificado y formación de manipuladores."
+  },
+  {
+   "id": "COM-21 / DOM-19",
+   "ref": "BONUS-02!'Calendario Anual'!A42",
+   "que": "«Renovar registro sanitario» → «Revisar los datos del RGSEAA y comunicar modificaciones o cese (no se renueva)», con la fuente (RD 191/2011) en Instrucciones."
+  },
+  {
+   "id": "COM-10 / §7-bis.21",
+   "ref": "07!'Tareas Mensuales'!B7/B9/B10/B11(nueva)/B23 · BONUS-02!'Calendario Anual'!A25/A26/A28/A29/A32/A43",
+   "que": "una sola tabla de frecuencias: calibración de termómetros mensual (12 marcas), revisión de frío mensual del titular + anual de la empresa, extintores en DOS filas (trimestral del titular con «Cuándo»=Trimestral + anual de empresa autorizada y retimbrado a 5 años, RD 513/2017 RIPCI), auditoría APPCC mensual interna aquí y anual completa en el BONUS-02."
+  },
+  {
+   "id": "COM-17",
+   "ref": "05!Instrucciones!B6",
+   "que": "anunciaba tres checklists y traía dos; ahora dice lo que trae y adónde van las tareas mensuales."
+  },
+  {
+   "id": "COM-19 (complemento de CB-E4)",
+   "ref": "BONUS-01!'Briefing Servicio'!B19/B20/B37",
+   "que": "líneas nuevas de alérgeno crítico del día, lote apto para crudo y confirmación del pedido antes de la hora de corte."
+  },
+  {
+   "id": "CB-E1 (mitad de contenido, §1.2)",
+   "ref": "LEX_CONTEXTO — 02!'Protocolo Corte Pescado'!B9, 05!'Tareas Diarias Manager'!B8, 05!Instrucciones!B8, 06!Instrucciones!B7, 06!'Itamae (Chef Sushi)'!B15, 06!'Ayudante Sushi'!B9, 07!Instrucciones!B7, 07!'Tareas Semanales'!A13, 08!'Eventos Especiales'!B16, BONUS-01!'Briefing Servicio'!B27, BONUS-02!'Calendario Anual'!A12, 03!Instrucciones!B9",
+   "que": "los 7 lemas que `LEX_TILDES` deja fuera y que sobrevivían al barrido del motor: parasitos, cuchilleria/CUCHILLERIA, japones, basico, stock critico/STOCK CRITICO, son criticas y verificara. Con ellos vivos `gates.ortografia` daba 0."
+  },
+  {
+   "id": "pie del kit",
+   "ref": "BONUS-01!'Briefing Servicio'!B40 · BONUS-01!Instrucciones!B18 · BONUS-02!'Calendario Anual'!A48 · BONUS-02!Instrucciones!B18",
+   "que": "los dos BONUS quedan fuera de `motor.cerrar` y firmaban «— Kit de Tareas: Sushi Bar · …» mientras los otros nueve firman «— Kit de Tareas Recurrentes · Sushi Bar · …». 13/13 pies iguales y con la marca «ChefBusiness Consultoría Gastronómica» acentuada, NO rebrandeada (§7-bis.17)."
+  }
+ ],
+ "hallazgos_para_el_orquestador": [
+  {
+   "id": "M-01",
+   "severidad": "alta",
+   "destino": "MOTOR (T2.1)",
+   "ref": "motor.py:2133 texto_appcc + motor.py:4560 textos_de_tarea(wb['Instrucciones'])",
+   "hallazgo": "`texto_appcc` cuelga «(si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)» de CUALQUIER celda que diga APPCC, incluidas las que no son tareas. En el dry-run del 2026-08-29 alcanzó al TÍTULO del fichero (03!Instrucciones!B2 = «Seguridad Alimentaria, Anisakis y APPCC — Sushi Bar (si tienes el Pack APPCC…)») y a la línea de firma (03!'Registro Congelación'!B29 = «Responsable APPCC: ___ Firma: ___ (si tienes el Pack APPCC…)»).",
+   "mitigacion_aplicada": "reglas IDENTIDAD en `motor.SUST_APPCC` desde el módulo de contenido (helper `_appcc_identidad`), como cafetería hace con `motor.EDITABLES.add`. Cubre el título, la firma, la nota de fuente del pH y la fila del calendario.",
+   "pendiente": "la causa sigue en el motor: cualquier kit cuyo título o cuyo pie mencione APPCC lo sufrirá. La firma correcta sería no aplicar `texto_appcc` a la fila 1-2 de «Instrucciones» ni a las celdas que casen con RX_PIE o con un rótulo de firma."
+  },
+  {
+   "id": "M-02",
+   "severidad": "media",
+   "destino": "MOTOR (CB-E1 / LEX_TILDES)",
+   "ref": "motor.py LEX_TILDES · celdas en `correcciones_de_contenido` id «CB-E1 (mitad de contenido)»",
+   "hallazgo": "`gates.ortografia` daba 0 lemas vivos con SIETE palabras mal escritas en el corpus final: parasitos, cuchilleria/CUCHILLERIA, japones, basico, stock critico/STOCK CRITICO, son criticas y verificara. El gate mide el DICCIONARIO, no la ortografía; leerlo como «ortografía perfecta» es exactamente lo que el propio docstring de `gate_ortografia` avisa.",
+   "mitigacion_aplicada": "`LEX_CONTEXTO` en el módulo de contenido, aplicado a todas las celdas de texto de los 11 ficheros al final de `post()` (§7-bis.11: después del motor, antes de `motor.ortografia`).",
+   "pendiente": "`basico`→`básico` y `japones`→`japonés` NO son homógrafos y deberían estar en `LEX_TILDES`: los hermanos (asador, marisquería, panadería, food-truck, tapas-bar) los tendrán y su módulo de contenido no está escrito todavía. El censo T0.1 ya listaba `basico` como corrección esperada."
+  },
+  {
+   "id": "M-03",
+   "severidad": "media",
+   "destino": "MOTOR (CB-E6 / hojas_reconocidas)",
+   "ref": "motor.py:1094 es_briefing · motor.py:841 fila_calendario · BONUS-01!'Briefing Servicio' · BONUS-02!'Calendario Anual'",
+   "hallazgo": "las dos hojas de los BONUS no las reconoce ningún molde: `es_briefing` exige «Briefing» en B1 y «Fecha:» en B2, y aquí el título va en B2 y la fecha en B4; `fila_calendario` exige el rótulo «Antelación», que este molde (mes a mes con ●) no tiene. Consecuencia medida: se publican SIN A4, SIN print_area y SIN protección, y `motor.cerrar` ni siquiera corre sobre ellas.",
+   "mitigacion_aplicada": "sólo el pie, unificado desde el contenido (`_pie_del_kit`). A4, print_area y protección siguen sin ponerse.",
+   "pendiente": "afecta igual a `kit-tareas-asador` (mismo molde ▸). Es un ajuste de dos líneas en `es_briefing` y una variante en `fila_calendario`; sin él, 2 de los 11 ficheros de cada kit ▸ no son «v2.0» en el mismo sentido que los otros nueve."
+  },
+  {
+   "id": "M-04",
+   "severidad": "baja",
+   "destino": "MOTOR / diseño",
+   "ref": "03!'Registro Congelación' (ancho_util 170) · 03!'Control de Recepción' (155)",
+   "hallazgo": "`03:'Registro Congelación'` YA venía de producción con ancho_util 143, por encima del presupuesto ANCHO_A4 = 140; con las dos columnas que pide la R1 (Nº de lote y Origen y acreditación) queda en 170. La hoja nueva «Control de Recepción», con las 13 columnas que pide DOM-27, queda en 155.",
+   "mitigacion_aplicada": "anchos de las columnas nuevas recortados al mínimo legible (11 y 16) y de las de «Control de Recepción» rebajados de 198 a 155. `print_setup` usa `fitToWidth=1`, así que se imprimen escaladas (≈1,10-1,21×), no cortadas. Las otras 6 hojas nuevas quedan en 136-140.",
+   "pendiente": "decisión del orquestador si quiere que un registro APPCC quepa a escala 1:1 (habría que quitarle columnas)."
+  },
+  {
+   "id": "S-01",
+   "severidad": "ALTA",
+   "destino": "SPEC §2.0 — BLOQUEANTE para T3/T4",
+   "ref": "kit-tareas-cb-v2-SPEC.md §2.0 · motor.py:96 PROHIBIDAS · astro-site/src/data/productos/tareas/kit-tareas-sushi-bar.ts:126,197,253",
+   "hallazgo": "la lista blanca normativa de §2.0 manda escribir «exigido en España por el RD 1420/2006». Ese RD está DEROGADO desde el 22-dic-2022 (disposición derogatoria única.h del RD 1021/2022) y `motor.PROHIBIDAS` lo bloquea: seguir la SPEC al pie de la letra pone el dry-run en rojo con «normativa derogada viva» (lo dio el dry-run base de este kit antes de tocar nada).",
+   "mitigacion_aplicada": "se cita el RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) + Rgto. (CE) 853/2004 Anexo III Secc. VIII Cap. III.D en la redacción del Rgto. (UE) 1276/2011. Es lo que la landing ya publica.",
+   "pendiente": "ACTUALIZAR §2.0 de la SPEC antes de T3/T4: `marisqueria/03-trazabilidad-appcc-marisco.xlsx:'Trazabilidad APPCC'!B22/F22` repite la cita vieja (firma §7-bis.10) y su módulo de contenido la copiaría."
+  },
+  {
+   "id": "S-02",
+   "severidad": "media",
+   "destino": "SPEC §2.2 / §7-bis.18",
+   "ref": "kit-tareas-sushi-bar.ts:116 grid.templates[0]",
+   "hallazgo": "§2.2 dice que «arqueo» está prometido en el 01 de asador, marisquería, panadería y food-truck. También lo promete SUSHI-BAR («cierre completo y arqueo») y el corpus tenía 0 apariciones: el censo de la §2.2 se quedó corto en el propio representante.",
+   "mitigacion_aplicada": "01!'Cierre Barra Sushi'!B27 pasa a «Arqueo de caja y cierre de TPV: contar el efectivo, cotejarlo con la Z del TPV y anotar el descuadre», con dueño único (encargado) y el manager revisándolo desde 05.",
+   "pendiente": "§7-bis.18 firma PORTAR el bloque de caja de la familia. No se ha hecho: sería una NOVENA hoja y §2.1 enumera ocho. Si el orquestador quiere la hoja de arqueo completa (fondo, recuento por denominaciones, Z, descuadre) hay que decirlo, y entonces se replantea también para los otros cuatro kits."
+  },
+  {
+   "id": "S-03",
+   "severidad": "media",
+   "destino": "SPEC §4 (descarte) — desviación justificada",
+   "ref": "03!'Temperaturas Diario'!C4:I11 y B14",
+   "hallazgo": "§4 propone desdoblar cada día en Apertura/Cierre («un cambio de 7 columnas»). Medido: al partir los días, los rótulos dejan de casar con `motor.DIAS_SEMANA`, `registro_appcc` pierde `temp_por_dias` y con él las 7 reglas de formato condicional de fuera-de-rango que CB-E3 acaba de poner, además del formato «0,0 °C». Se cambiaría un defecto de formato por la pérdida del único aviso automático de la hoja.",
+   "mitigacion_aplicada": "DOM-13/TEC-09 se cierran por el otro lado: la instrucción pide UNA lectura (la de apertura), manda la de cierre al checklist de cierre del 01 —que sí la registra y la firma— y añade una línea de acción correctora de la semana.",
+   "pendiente": "si el orquestador prefiere el desdoble, hay que extender `fila_registro_appcc`/`registro_appcc` para reconocer «Lunes A / Lunes C» como días. Va a v2.1 según §4."
+  },
+  {
+   "id": "S-04",
+   "severidad": "baja",
+   "destino": "SPEC §2.0 (fuentes)",
+   "ref": "03!'Registro de pH del Arroz'!A29 · 02!Instrucciones!B16",
+   "hallazgo": "el umbral pH ≤ 4,6 NO tiene norma española que lo fije para el arroz de sushi. Escribirlo sin más habría sido una cifra sin fuente (regla dura 6 del encargo).",
+   "mitigacion_aplicada": "se cita el Codex Alimentarius CXC 23-1979 como origen del umbral que separa alimentos ácidos de poco ácidos y se presenta explícitamente como límite crítico del plan APPCC del local, no como obligación legal.",
+   "pendiente": "validar la redacción con John si quiere otra fuente."
+  },
+  {
+   "id": "P-01",
+   "severidad": "media",
+   "destino": "PRODUCTO (T5) — COM-07",
+   "ref": "kit-tareas-sushi-bar.ts:151 y :231 · KitTareasSushiBarDashboard.tsx tarjeta 'eventos-estacionales'",
+   "hallazgo": "«salmón salvaje» NO es corregible en el fichero: en España no hay temporada comercial de salmón salvaje y el que se sirve en sushi es de acuicultura, disponible todo el año.",
+   "mitigacion_aplicada": "excluido a propósito del gate `promesas` (documentado en la tabla PROMESAS del módulo) y explicado en 08!Instrucciones («no tiene temporada que calendarizar»).",
+   "pendiente": "quitar «salmón salvaje» de las dos líneas de la landing y del dashboard y sustituirlo por una especie con temporada real (besugo, vieira o gamba roja), que sí están en el fichero."
+  },
+  {
+   "id": "P-02",
+   "severidad": "media",
+   "destino": "PRODUCTO (T5) — §3.1",
+   "ref": "gates.recuento_tareas.total",
+   "hallazgo": "el recuento de tareas del kit pasa de 204 (cifra de §3.1) a 251: 01=44 · 02=38 · 04=21 · 05=24 · 06=63 · 07=30 · 08=31.",
+   "mitigacion_aplicada": "ninguna necesaria; la cifra sale del gate, que es la fuente que §3.1 declara.",
+   "pendiente": "si la landing publica un número de tareas, sale de aquí y son 251, no 204."
+  },
+  {
+   "id": "P-03",
+   "severidad": "media",
+   "destino": "PRODUCTO (T5) — COM-05",
+   "ref": "kit-tareas-sushi-bar.ts:28, 94, 96, 111",
+   "hallazgo": "«11 checklists pre-rellenados» sigue sin ser cierto: 09 y BONUS-01 se entregan en blanco por diseño, y las cuatro hojas nuevas del 03 son REGISTROS con notas y criterios escritos pero con la tabla vacía, que es lo correcto para un registro.",
+   "mitigacion_aplicada": "ninguna en el fichero: es copy.",
+   "pendiente": "redacción honesta del tipo «9 checklists pre-rellenados + registros APPCC y plantilla en blanco listos para rellenar»."
+  },
+  {
+   "id": "P-04",
+   "severidad": "baja",
+   "destino": "PRODUCTO (T5) — COM-08",
+   "ref": "KitTareasSushiBarDashboard.tsx tarjeta 'eventos-estacionales'",
+   "hallazgo": "el dashboard promete «Año Nuevo Chino» y el fichero trae Año Nuevo japonés (Oshogatsu), Hanami y Tanabata — que es lo correcto en un restaurante japonés.",
+   "mitigacion_aplicada": "el kit ya cumple el plural «festivos asiáticos» (6 apariciones, gate `promesas` verde con mínimo 2).",
+   "pendiente": "corregir «Año Nuevo Chino» → «Año Nuevo japonés» en el dashboard."
+  },
+  {
+   "id": "P-05",
+   "severidad": "baja",
+   "destino": "PRODUCTO (T5)",
+   "ref": "kit-tareas-sushi-bar.ts grid.templates[2], [4], [5]",
+   "hallazgo": "tres entregables ganan hojas que el copy no menciona: 03 pasa de 3 a 7 hojas (matriz de alérgenos, pH, recepción, mermas), 05 de 2 a 4 (comparativa y reporting) y 06 de 4 a 6 (delivery y office).",
+   "mitigacion_aplicada": "ninguna: es copy.",
+   "pendiente": "el grid puede subir de nivel; y el changelog v2.0 por molde (§3.6) ya tiene material concreto que el cliente comprueba en 5 segundos."
+  }
+ ],
+ "defectos_propios_cazados_durante_la_construccion": [
+  {
+   "id": "C-01",
+   "ref": "_bloque_al_final",
+   "que": "metía el bloque nuevo DETRÁS de las 5 filas libres, así que las libres quedaban en mitad de la tabla: 7 filas en blanco entre «CONTROL DE CALIDAD ARROZ» y «SEGUNDO LOTE». Ahora se ancla en la última fila CON contenido del cuerpo."
+  },
+  {
+   "id": "C-02",
+   "ref": "_f01 (hora del pH) · CAL_NUEVAS (BONUS-02)",
+   "que": "anclas dependientes del ORDEN: se buscaba el literal viejo después de haberlo reescrito. El BONUS-02 se caía con AnclaPerdida; la hora del pH en 01 simplemente no se aplicaba y se quedaba en 10:50 (antes de la tarea que la precede)."
+  },
+  {
+   "id": "C-03",
+   "ref": "_clave() · INSTR_03",
+   "que": "`_clave` normaliza tildes, así que un cambio que SÓLO pone una («verificara»→«verificará») se daba por hecho y no se escribía nunca. Ahora ese bucle compara el valor CRUDO, y busca primero el texto nuevo para que la 2.ª pasada del gate de idempotencia no se caiga."
+  },
+  {
+   "id": "C-04",
+   "ref": "_f03, nota de la excepción de acuicultura",
+   "que": "se anclaba en «Responsable APPCC:» cuando `texto_appcc` (con la regla identidad que este módulo añade) ya lo había reescrito: la nota no se escribía y NO se avisaba, porque el `cambios.append` estaba dentro del `if`. Cazado leyendo el fichero resultante, no el log."
+  },
+  {
+   "id": "C-05",
+   "ref": "PH_CORRECTORA",
+   "que": "decía «temperatura ambiente» y `motor.texto_temperatura` le colgó «— anota la lectura: ____ °C» a una acción correctora de pH. Reescrita como «no lo dejes en ambiente: guárdalo en frío (5 °C o menos)»."
+  },
+  {
+   "id": "C-06",
+   "ref": "04!'Mise en Place Barra'!B26",
+   "que": "«Verificar temperatura vitrina cada hora» no declaraba cifra, así que el motor le puso el objetivo genérico «(refrigeración 0-4 °C)» y la vitrina acabó con DOS rangos en el kit (2-4 y 0-4). Lo cazó el gate `limite_unico` recién escrito, en su primera ejecución."
+  },
+  {
+   "id": "C-07",
+   "ref": "hoja «Matriz de Alérgenos»",
+   "que": "su última columna se llamaba «Revisado por (firma)» y `RX_REG_CAMPO` ancla al principio del rótulo (`^firma`): la hoja no la reconocía ningún molde y se publicaba sin DV, sin A4, sin protección y con `censo-entregables --fail` en rojo por `noprint`. Renombrada a «Firma del revisor»."
+  },
+  {
+   "id": "C-08",
+   "ref": "anchos de las 8 hojas nuevas",
+   "que": "«Control de Recepción» salía a 198 de ancho útil (1,41× de reducción al imprimir) y «Comparativa de Proveedores» a 165. Recortados a 155 y 139; las demás quedan en 136-143."
+  }
+ ],
+ "dudas_para_el_orquestador": [
+  "§2.0 de la SPEC cita el RD 1420/2006 como norma viva y está derogado: hay que actualizar la SPEC antes de escribir el contenido de marisquería, que repite la cita falsa (S-01).",
+  "§7-bis.18 firma portar el bloque de caja de la familia para el «arqueo». En sushi-bar lo he cerrado como TAREA, no como hoja: ¿se quiere la hoja de arqueo completa (y entonces son 9 hojas nuevas, no 8)?",
+  "§4 descarta el rediseño de 'Temperaturas Diario' pero propone desdoblar los días en Apertura/Cierre: hacerlo hoy cuesta las 7 reglas de CF que CB-E3 acaba de poner (S-03). ¿Se acepta la salida por la instrucción o se extiende el motor?",
+  "M-03: las dos hojas de los BONUS no las reconoce ningún molde y se publican sin A4, sin print_area y sin protección, en sushi-bar y en asador. ¿Entra en T2.1 o se deja escrito?",
+  "P-02: el recuento pasa de 204 a 251 tareas. Si la landing va a publicar la cifra, sale de `gates.recuento_tareas`."
+ ],
+ "veredicto": "Listo para la ronda de refutación (T2.3). El dry-run sale en exit 0 con idempotencia 0, gates.ortografia 0, gates.limite_unico 0, gates.promesas 0 (11/11 términos respaldados), DV «✓,—,N/A» en 18/18 hojas de checklist, bio en 11/11 Instrucciones, censo-entregables --fail 0 defectos, y las dos demostraciones exigidas: contador con 3 N/A → «22 de 22» y plantilla 09 con 8 tareas escritas → «3 de 8». Regresión de familia (§7-bis.24) 0 diferencias en cafetería (11 ficheros) y hotel (19). `astro-site/public/dl/**` intacto. Quedan 13 hallazgos para el orquestador: 4 de MOTOR, 4 de SPEC y 5 de PRODUCTO, con S-01 (cita derogada en la lista blanca de §2.0) como bloqueante de T3/T4."
 }
