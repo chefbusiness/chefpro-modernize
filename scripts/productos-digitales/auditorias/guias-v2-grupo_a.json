@@ -32,28 +32,18 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 272,
    "vacias_por_diseno": 86,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'rangos' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'escenarios-3col' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante '12-meses-total' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'escenarios-columnas' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-conceptos' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'rangos'",
+    "calculadora-ticket-medio.xlsx → 'escenarios-3col'",
+    "cash-flow-break-even.xlsx → '12-meses-total'",
+    "pl-mensual-escenarios.xlsx → 'escenarios-columnas'",
+    "plan-financiero-3-anos.xlsx → 'inversion-conceptos'"
+   ],
    "fallos": [
     "§1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro.xlsx:Escandallo!H28=0.28)"
    ],
-   "fallos_de_grupo_a": []
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-restaurante-casual": {
    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-casual.json",
@@ -62,31 +52,18 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 461,
    "vacias_por_diseno": 25,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'desglosado'",
+    "calculadora-ticket-medio.xlsx → 'columna-unica'",
+    "cash-flow-break-even.xlsx → 'cash-y-breakeven'",
+    "pl-mensual-escenarios.xlsx → 'tres-hojas'",
+    "plan-financiero-3-anos.xlsx → 'inversion-categorias'"
+   ],
    "fallos": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
     "§1.3: 10 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro.xlsx:Escandallo!E6=1000, escandallo-maestro.xlsx:Escandallo!E7=1000, escandallo-maestro.xlsx:Escandallo!E8=1000)"
    ],
-   "fallos_de_grupo_a": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
-   ]
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-restaurante-mexicano": {
    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-mexicano.json",
@@ -95,31 +72,18 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 472,
    "vacias_por_diseno": 46,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'desglosado'",
+    "calculadora-ticket-medio.xlsx → 'columna-unica'",
+    "cash-flow-break-even.xlsx → 'cash-y-breakeven'",
+    "pl-mensual-escenarios.xlsx → 'tres-hojas'",
+    "plan-financiero-3-anos.xlsx → 'inversion-categorias'"
+   ],
    "fallos": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
     "§1.3: 11 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-mexicano.xlsx:Escandallo!E6=1000, escandallo-maestro-mexicano.xlsx:Escandallo!E7=1000, escandallo-maestro-mexicano.xlsx:Escandallo!E8=1000)"
    ],
-   "fallos_de_grupo_a": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
-   ]
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-restaurante-peruano": {
    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-peruano.json",
@@ -128,31 +92,18 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 472,
    "vacias_por_diseno": 46,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'desglosado'",
+    "calculadora-ticket-medio.xlsx → 'columna-unica'",
+    "cash-flow-break-even.xlsx → 'cash-y-breakeven'",
+    "pl-mensual-escenarios.xlsx → 'tres-hojas'",
+    "plan-financiero-3-anos.xlsx → 'inversion-categorias'"
+   ],
    "fallos": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
     "§1.3: 12 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-peruano.xlsx:Escandallo!E6=1000, escandallo-maestro-peruano.xlsx:Escandallo!E7=1000, escandallo-maestro-peruano.xlsx:Escandallo!E8=1000)"
    ],
-   "fallos_de_grupo_a": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
-   ]
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-restaurante-japones": {
    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-japones.json",
@@ -161,64 +112,38 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 476,
    "vacias_por_diseno": 48,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'desglosado'",
+    "calculadora-ticket-medio.xlsx → 'columna-unica'",
+    "cash-flow-break-even.xlsx → 'cash-y-breakeven'",
+    "pl-mensual-escenarios.xlsx → 'tres-hojas'",
+    "plan-financiero-3-anos.xlsx → 'inversion-categorias'"
+   ],
    "fallos": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
     "§1.3: 13 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-japones.xlsx:Escandallo!E6=1000, escandallo-maestro-japones.xlsx:Escandallo!E7=1000, escandallo-maestro-japones.xlsx:Escandallo!E8=1000)"
    ],
-   "fallos_de_grupo_a": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
-   ]
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-restaurante-nikkei": {
-   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-nikkei.json",
+   "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-guia-restaurante-nikkei.json",
    "exit": 1,
    "idempotencia_diferencias": 0,
    "data_only_fallos": 0,
    "formulas_con_valor": 477,
    "vacias_por_diseno": 48,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'desglosado' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'columna-unica' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante 'cash-y-breakeven' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'tres-hojas' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'inversion-categorias' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'desglosado'",
+    "calculadora-ticket-medio.xlsx → 'columna-unica'",
+    "cash-flow-break-even.xlsx → 'cash-y-breakeven'",
+    "pl-mensual-escenarios.xlsx → 'tres-hojas'",
+    "plan-financiero-3-anos.xlsx → 'inversion-categorias'"
+   ],
    "fallos": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)",
     "§1.3: 15 literales dentro de fórmulas que deberían ser parámetro en celda (escandallo-maestro-nikkei.xlsx:Escandallo!E6=1000, escandallo-maestro-nikkei.xlsx:Escandallo!E7=1000, escandallo-maestro-nikkei.xlsx:Escandallo!E8=1000)"
    ],
-   "fallos_de_grupo_a": [
-    "calculadora-ticket-medio.xlsx: +4 días abiertos no suben la facturación mensual (0.0 → 0)"
-   ]
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-panaderia-obrador": {
    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-panaderia.json",
@@ -227,26 +152,16 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 27,
    "vacias_por_diseno": 1,
-   "censo_exit": 0,
-   "variantes_grupo_a": {
-    "calculadora-capex.xlsx": [
-     "calculadora-capex.xlsx: grupo_a variante 'min-max' (guias-v2-SPEC.md §2)"
-    ],
-    "calculadora-ticket-medio.xlsx": [
-     "calculadora-ticket-medio.xlsx: grupo_a variante 'mix-producto' (guias-v2-SPEC.md §2)"
-    ],
-    "cash-flow-break-even.xlsx": [
-     "cash-flow-break-even.xlsx: grupo_a variante 'cash-plurianual' (guias-v2-SPEC.md §2)"
-    ],
-    "pl-mensual-escenarios.xlsx": [
-     "pl-mensual-escenarios.xlsx: grupo_a variante 'hoja-unica' (guias-v2-SPEC.md §2)"
-    ],
-    "plan-financiero-3-anos.xlsx": [
-     "plan-financiero-3-anos.xlsx: grupo_a variante 'pl-3-anos' (guias-v2-SPEC.md §2)"
-    ]
-   },
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [
+    "calculadora-capex.xlsx → 'min-max'",
+    "calculadora-ticket-medio.xlsx → 'mix-producto'",
+    "cash-flow-break-even.xlsx → 'cash-plurianual'",
+    "pl-mensual-escenarios.xlsx → 'hoja-unica'",
+    "plan-financiero-3-anos.xlsx → 'pl-3-anos'"
+   ],
    "fallos": [],
-   "fallos_de_grupo_a": []
+   "fallos_atribuibles_a_grupo_a": []
   },
   "guia-dark-kitchen": {
    "informe_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/9a6ebdb7-5d45-4ab1-9e93-10b86cb95c42/scratchpad/guias/grupo_a-dark-kitchen.json",
@@ -255,12 +170,20 @@
    "data_only_fallos": 0,
    "formulas_con_valor": 2,
    "vacias_por_diseno": 0,
-   "censo_exit": 0,
-   "variantes_grupo_a": {},
+   "censo_entregables_exit": 0,
+   "variantes_grupo_a": [],
    "fallos": [
     "§1.3: 1 literales dentro de fórmulas que deberían ser parámetro en celda (calculadora-viabilidad-dark-kitchen.xlsx:P&L Mensual!B30=0.05)"
    ],
-   "fallos_de_grupo_a": []
+   "fallos_atribuibles_a_grupo_a": []
+  },
+  "RESUMEN": {
+   "idempotencia": "0 diferencias en los 8",
+   "data_only": "0 fallos en los 8",
+   "censo_entregables --fail": "0 defectos en los 8",
+   "fallos atribuibles a grupo_a": "0 en los 8",
+   "exit 0": "guia-panaderia-obrador y la ejecución aislada del representante",
+   "exit 1": "los 6 restantes, exclusivamente por los literales de `escandallo-maestro*` / `calculadora-viabilidad-dark-kitchen` que corrige grupo_c (§4.1/TEC-21). Ver GATE-CRUZADO."
   }
  },
  "cambios_en_motor": [
@@ -412,6 +335,13 @@
    "ambito": "grupo_a.demos",
    "hallazgo": "una demo que revienta se guardaba como `{'error': …}` en el informe y la tanda seguía en VERDE. Panadería pasó así con **dos** demos caídas (`_demo_ticket` y `_demo_cash`, que asumían la rejilla del representante).",
    "fix": "un `error` en una demo genera un `fallo`; y las demos se ramifican por VARIANTE detectada."
+  },
+  {
+   "id": "METODO-03",
+   "severidad": "media (metodológica)",
+   "ambito": "grupo_a._demo_ticket",
+   "hallazgo": "la guarda de «no hay ejemplo precargado» miraba el TICKET, y los 5 hermanos traen el ticket de fábrica pero NO los cubiertos/día (que son filas que AÑADE el grupo). Los cinco daban un fallo que no era suyo: «+4 días abiertos no suben la facturación mensual (0.0 → 0)».",
+   "fix": "la guarda mira la FACTURACIÓN MENSUAL, que es la salida de la cadena"
   }
  ],
  "variantes_detectadas_por_estructura": {
