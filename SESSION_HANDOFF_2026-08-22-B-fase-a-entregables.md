@@ -548,3 +548,11 @@ en re-rastrear: comprobar la SERP de «kit de tareas hotel» en unos días (debe
   4 módulos de contenido (guías gastronómico/casual, kit-tareas, restaurante-creativo). **Fixer transversal opus en curso** → texto canónico «RD 1021/2022,
   art. 8.1 (que derogó el RD 1420/2006) y Rgto. (CE) 853/2004, Anexo III, Secc. VIII, Cap. III.D» + gate en los 3 motores; después re-APPLY (idempotente)
   de guía gastronómica, kit-tareas, restaurante-creativo y pack-appcc con sus gates y LIVE. Informe: `auditorias/anisakis-rd1021-correccion-2026-08-29.json`.
+- **Anisakis RD 1021/2022 LIVE (`3bd60e3`, deploy ready 10:37):** fixer transversal (`auditorias/anisakis-rd1021-correccion-2026-08-29.json`): texto
+  canónico en guía gastronómica (checklist-appcc C27/H27), pack APPCC (12: I13/B32 · 18: A46/A49/B28; el cartel es el **art. 8.2**, no el 8.1), 3 motores
+  con gate anti-cita-derogada (lookbehind «derogó el/al»), 3 SPEC, 26 ficheros de capa de producto (sushi-bar decía «RD 1420/2006 vigente»), y una
+  trampa cazada: en guías cambiar el texto de una tarea DUPLICABA la fila (la inserción deduplica por texto) → regla `sustituciones` que corre antes.
+  Re-APPLY: guía 22/0 · pack 21/0 · censo 0 · no-latinos 0 · gate LIVE ambos 0 fallos · md5 = repo. **Gotchas:** el APPLY del pack necesita `--solo a,b,c`
+  (el default `a` da diff 0); `BONUS-01!D5:H7` del pack cambian cada día (`date.today()` en `grupo_c.py:1119`, preexistente); todo re-APPLY reescribe los
+  bytes de los 18/21 xlsx aunque sólo cambien 2-5 celdas (openpyxl), así que el md5 de producción cambia en cada pasada. Quedan con la cita vieja
+  `kit-tareas-sushi-bar/03!A2` y `kit-tareas-marisqueria/03!F22`: los resuelve la sub-familia CB (SPEC anotada).
