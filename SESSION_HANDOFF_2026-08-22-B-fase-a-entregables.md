@@ -282,6 +282,27 @@ Homologación AICP↔CB sigue pendiente (los 11 kits v2.0 deben llegar a CB).
 
 ## 11. PARADA por consumo de tokens (24-ago ~11:25, orden de John) — cómo retomar plan-financiero
 
+> ⚠️ **CORRECCIÓN verificada el 2026-08-30 (sesión de la pista de blog).** Este
+> apartado dice más abajo que «los GRUPOS A/B/C no existen». **Sí existen y están
+> en `main`**: `grupo_a.py` (27 KB · 01, 01b, 05), `grupo_b.py` (47 KB · 02, 03,
+> 04) y `grupo_c.py` (51 KB · 06, 07, BONUS-08). Los guardaron los auto-commits
+> de protección (`c742343` 10:15 → `39b5477` 11:00 del 24-ago), es decir minutos
+> ANTES de que se escribiera este §11 — se redactó con el estado de la tanda
+> anterior. Los cinco módulos pasan `py_compile` y los tres grupos cumplen el
+> contrato de `main.py` (`FICHEROS` + `post`; `PROPIOS` es opcional).
+>
+> **Lo que falta no es construirlos, es aplicarlos**: `main.py --dry-run` →
+> verificación adversarial → APPLY → gates → mergear
+> `wip/plan-financiero-capa-producto`. Bastante menos que relanzar el workflow.
+>
+> ⚠️ **Desde el VPS no se puede ejecutar tal cual: `openpyxl` y `pycel` no están
+> instalados** en ninguna de sus venvs (esta pista se trabajó siempre desde el
+> Mac). Hay que montar un venv antes; PEP 668 no deja `pip install` a pelo.
+>
+> Comprobar antes de creer cualquiera de las dos versiones: `ls` del directorio
+> y `py_compile` de los cinco módulos.
+
+
 **Contexto del gasto:** el incidente global de Anthropic (529 en Opus, 05:27-09:00 UTC) tumbó 3 veces la fase de
 grupos del workflow de plan-financiero; cada reintento re-ejecutó integración/refutadores contra una copia sin
 grupos (~1M tokens quemados en verificaciones inválidas). Todo parado: workflow, auto-commit y vigilantes.

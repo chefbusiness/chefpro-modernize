@@ -1,5 +1,46 @@
 # Handoff — pista BLOG / IDIOMAS, 2026-08-28 (tanda 4 cerrada · PT 8/13)
 
+## ▶️ CÓMO RETOMAR (leer esto primero)
+
+**No hay nada a medias.** La tanda 4 está publicada, verificada y commiteada; el
+árbol está limpio. Se retoma abriendo trabajo nuevo, no terminando lo anterior.
+
+**Revalidado el 2026-08-30**, después de sincronizar **27 commits de la pista de
+productos** de John: batería live de 50 comprobaciones **TODO VERDE**, sitemap
+en 1.187 URLs, `robots.txt` sin rozar el blog PT. Los dos posts de la tanda 4
+siguen sirviendo bien.
+
+**Lo primero al retomar, en este orden:**
+
+1. `git pull --rebase origin main` — John empuja desde el Mac a docenas de
+   commits por sesión (en esta revalidación había 27 sin traer).
+2. `python3 .work/post9-pt-cortes/bateria-live-tanda4.py` — 30 s, confirma que
+   la tanda sigue en pie antes de construir nada encima.
+3. Decidir frente:
+   - **Tanda 5 del PT** (lo natural): posts **10 `garum`** (1.300/mes, sin AIO,
+     gancho Fermentus Con AI+) y **11 `cozinha molecular`** (410/mes, con AIO,
+     gancho Sosa Ingredients). **Re-medir volúmenes y SERP ANTES** y mirar quién
+     ocupa el #1 (regla 7, con el matiz nuevo: la variante cualificada puede
+     estar más contaminada que la cabecera).
+   - **Cerrar `plan-financiero` v2.0** de la pista de productos — ojo, **es la
+     pista de John**, coordinarlo con él antes de tocarla.
+   - **Deuda pequeña de SEO**: el `llms.txt` está desactualizado (0 URLs del
+     blog, dice «30 productos digitales» cuando hay 44 y «Spanish-language»
+     cuando el blog ya va en 6 idiomas), y el gate `public/` vs
+     `astro-site/public/` sigue sin escribirse.
+
+**El pipeline por post NO se improvisa**: está en 10 pasos en
+`SESSION_HANDOFF_2026-08-22-blog-pt.md`, probado ocho veces. Lo de aquí abajo
+son las lecciones que lo corrigen.
+
+**Fechas con reloj corriendo:** ventana de GSC del **PT el 15-22 de septiembre**
+(posts 1-6 desde el 21-22 de agosto, 8-9 desde el 28) · **IT/FR/DE el 8-15 de
+septiembre** · **librerías EN el 3-sep (¿rastreadas?) y el 17-sep
+(¿indexadas?)**, tras el arreglo del `robots.txt`
+(`SESSION_HANDOFF_2026-08-27-robots-indexacion.md`).
+
+---
+
 > Sustituye a `SESSION_HANDOFF_2026-08-22-blog-pt.md` como handoff vivo de esta
 > pista. Lo de allí sigue siendo válido: el **pipeline en 10 pasos**, los gotchas
 > de bridge y la lista de pendientes de John. Aquí va lo nuevo.
