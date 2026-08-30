@@ -85,7 +85,7 @@ faq:
 
 <h2>Por onde se perde o food cost</h2>
 <p>O food cost não se perde num único lugar — perde-se em cinco buracos diferentes, quase todos silenciosos, quase todos evitáveis. Conhecê-los é o primeiro passo para os tapar.</p>
-<p>O primeiro buraco são as aparas e as quebras que ninguém imputa. O rendimento real do produto raramente é de 100 por cento: uma couve-flor perde folhas e talo, um peixe perde cabeça e espinhas, uma carne perde gordura e nervos. Se a ficha técnica usa o peso bruto, o custo real é sempre maior do que o calculado. E há ainda o que se estraga na câmara, o que cai ao chão, o que queima no lume — tudo isso é food cost que já foi pago e nunca chega ao prato.</p>
+<p>O primeiro buraco são as aparas e as quebras que ninguém imputa — incluindo as que se repetem todos os dias, como o <a href="https://aichef.pro/pt/blog/massa-mae">descarte de uma massa mãe</a> mal dimensionada. O rendimento real do produto raramente é de 100 por cento: uma couve-flor perde folhas e talo, um peixe perde cabeça e espinhas, uma carne perde gordura e nervos. Se a ficha técnica usa o peso bruto, o custo real é sempre maior do que o calculado. E há ainda o que se estraga na câmara, o que cai ao chão, o que queima no lume — tudo isso é food cost que já foi pago e nunca chega ao prato.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/foodcost-pt-aparas.jpg" alt="Bancada de inox com dois lombos de peixe limpos sobre papel vegetal em primeiro plano e, atrás, um tabuleiro gastronorm com a cabeça, a espinha e as aparas do mesmo peixe" width="1376" height="768" loading="lazy" decoding="async" />

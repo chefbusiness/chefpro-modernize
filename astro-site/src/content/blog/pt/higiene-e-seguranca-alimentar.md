@@ -70,7 +70,7 @@ faq:
 
 <h2>Receção, armazenagem e frio: onde se ganha (ou se perde) o dia</h2>
 
-<p>É à receção que o dia se ganha ou se perde: se a mercadoria chega fora da temperatura, nada do que fizer a seguir vai recuperar o que já foi perdido. A câmara, por sua vez, é o espelho da cozinha — uma câmara bem arrumada é quase sempre sinónimo de uma equipa disciplinada.</p>
+<p>É à receção que o dia se ganha ou se perde: se a mercadoria chega fora da temperatura, nada do que fizer a seguir vai recuperar o que já foi perdido — e há casos, como o da <a href="https://aichef.pro/pt/blog/garum">histamina no peixe</a>, em que nem sequer cozinhar resolve. A câmara, por sua vez, é o espelho da cozinha — uma câmara bem arrumada é quase sempre sinónimo de uma equipa disciplinada.</p>
 
 <p>Na prática, as regras de ouro são estas:</p>
 
