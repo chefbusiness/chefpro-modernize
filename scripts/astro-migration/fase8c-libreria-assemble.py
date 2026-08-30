@@ -248,10 +248,22 @@ def catalogo_productos():
     copia desactualizada en el blog es peor que no tener banner."""
     txt = PRODUCTOS_TS.read_text(encoding='utf-8')
     out = {}
+    # ⚠️ El bloque `description: {` puede llevar COMENTARIOS antes de `es:`
+    # (kit-gestion-personal los tiene, documentando por qué se corrigió el texto).
+    # La primera versión de este regex exigía `\s*\n\s*` ahí: al no casar, el
+    # `.*?` saltaba al `description:` de la ENTRADA SIGUIENTE y producía dos
+    # daños a la vez —la entrada con comentarios se quedaba con la descripción
+    # de la siguiente, y la siguiente desaparecía del catálogo—. Así estuvo
+    # `kit-inventario` invisible e invendible. Cazado el 2026-08-30.
+    HUECO = r"(?:\s*//[^\n]*\n)*\s*"
+    # y el salto de `name` a `description` NUNCA puede cruzar al siguiente
+    # producto: es justo lo que hacía el `.*?` original cuando fallaba.
+    CRUCE = r"(?:(?!\n  ')[\s\S])*?"
     for m in re.finditer(
             r"id: '([^']+)',\s*\n\s*url: '([^']+)',\s*\n\s*price: '([^']+)',\s*\n"
-            r"\s*name: \{ es: '([^']+)'(?:, en: '([^']+)')?.*?"
-            r"description: \{\s*\n\s*es:\s*'([^']+)',(?:\s*\n\s*en:\s*'([^']+)')?", txt, re.S):
+            r"\s*name: \{ es: '([^']+)'(?:, en: '([^']+)')?" + CRUCE +
+            r"description: \{" + HUECO + r"es:\s*'([^']+)',"
+            r"(?:" + HUECO + r"en:\s*'([^']+)')?", txt, re.S):
         pid, url, precio = m.group(1), m.group(2), m.group(3)
         out[pid] = {
             'url': url, 'precio': precio,
@@ -260,7 +272,46 @@ def catalogo_productos():
             # en español que ninguno, pero queda visible en el informe.
             'en': (m.group(5) or m.group(4), m.group(7) or m.group(6)),
         }
+    declaradas = set(re.findall(r"^  '([a-z0-9-]+)': \{", txt, re.M))
+    perdidas = declaradas - set(out)
+    if perdidas:
+        sys.exit('el parser del catálogo perdió %d producto(s): %s\n'
+                 '  Suele ser un comentario o un salto de línea inesperado dentro de la '
+                 'entrada. Un producto perdido aquí es un producto que no se puede vender.'
+                 % (len(perdidas), ', '.join(sorted(perdidas))))
     return out
+
+
+def rotar_productos(slug_post, prods, fijados=None, n=3):
+    """Completa hasta `n` productos rotando por TODO el catálogo.
+
+    POLÍTICA (John, 2026-08-30): los banners tienen que vender los 44 productos,
+    no la mitad. Medido ese día: de 198 banners publicados, sólo 19 productos
+    distintos aparecían, `kit-escandallos` se llevaba 60 (el 30 %) y los cuatro
+    primeros el 61 %. La causa era que `productos` se escribía a mano en cada
+    config y siempre se elegían los mismos.
+
+    Se puede seguir FIJANDO productos por relevancia temática —siguen ganando y
+    van primero—; el resto de huecos se rellenan rotando. El orden se siembra
+    con el slug del post, así que es DETERMINISTA: reejecutar el ensamblador
+    sobre el mismo post da los mismos banners y no ensucia el diff.
+    """
+    import hashlib
+    fijados = [x for x in (fijados or []) if x]
+    for x in fijados:
+        if x not in prods:
+            sys.exit('producto inexistente en el catálogo: %s' % x)
+    faltan = n - len(fijados)
+    if faltan <= 0:
+        return fijados[:n]
+    semilla = int(hashlib.sha256(slug_post.encode('utf-8')).hexdigest(), 16)
+    resto = sorted(k for k in prods if k not in fijados)
+    # baraja determinista: rota el catálogo ordenado por la semilla del post
+    corte = semilla % len(resto)
+    resto = resto[corte:] + resto[:corte]
+    paso = max(1, len(resto) // faltan)   # reparte a lo ancho, no en bloque
+    elegidos = [resto[(i * paso) % len(resto)] for i in range(faltan)]
+    return fijados + elegidos
 
 
 COPY_BANNER = {
@@ -315,8 +366,11 @@ def main():
     cfg = json.loads(ruta.read_text(encoding='utf-8'))
     A = cfg['agente']
     prods = catalogo_productos()
-    if len(cfg.get('productos', [])) < 3:
-        sys.exit('faltan productos: la política pide MÍNIMO 3 banners por post')
+    # La política pide MÍNIMO 3 banners por post. Ya no hace falta escribir los
+    # tres a mano: se fijan los que tengan relevancia temática y el resto rota
+    # por todo el catálogo (ver rotar_productos).
+    cfg['productos'] = rotar_productos(cfg['slug'], prods, cfg.get('productos'), n=3)
+    assert len(cfg['productos']) == 3
 
     def pedir(etiqueta, prompt, forzar=False):
         if args.ensamblar:
