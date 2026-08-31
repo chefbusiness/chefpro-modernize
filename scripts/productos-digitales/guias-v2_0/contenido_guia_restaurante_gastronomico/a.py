@@ -126,8 +126,10 @@ TICKET = {
             'nota': ('Los precios de arriba se escriben SIN IVA, igual que el '
                      'P&L. Esta celda sólo sirve para la fila «Ticket medio '
                      'CON IVA», que es el precio que el comensal ve en la '
-                     'carta: 10 % general de restauración y 21 % en la parte '
-                     'de bebida alcohólica.')},
+                     'carta: el 10 % de restauración se aplica a TODO el '
+                     'consumo en sala, comida y bebida alcohólica incluidas '
+                     '(art. 91.Uno.2.2 de la Ley del IVA). El 21 % es el '
+                     'tipo general y sólo aplica a la venta para llevar.')},
     # RC-02 · el simulador se compara con el P&L, que es la fuente (§7-bis.7)
     'reconciliacion': {
         'B': 131736.00, 'C': 189728.00, 'D': 233376.00,

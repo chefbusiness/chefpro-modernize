@@ -1552,7 +1552,8 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
         'la bebida alcohólica (10 % en sala, en celda) y TODOS los '
         'indicadores salen '
         'de ahí: cruzar un coste sin IVA con un precio con IVA deja el food '
-        'cost de bebida unos 7 puntos por debajo del real.',
+        'cost de bebida unos 3 puntos por debajo del real (con el 10 % de '
+        'sala; con el 21 % de la venta para llevar serían 7).',
         'La columna «Multiplicador (×)» es PVP ÷ coste (el x2,5-x3,5 del '
         'capítulo de bodega). El margen de verdad es «Margen s/PVP (%)», y el '
         '«Food cost bebida (%)» es el que se compara con el 28-40 % de la guía.',
@@ -2296,7 +2297,30 @@ def _instr(wb, fname, cambios, lineas):
         return
     ws = wb['Instrucciones']
     for texto in lineas:
-        motor.linea_instrucciones(ws, texto)
+        # 2026-08-31 · `linea_instrucciones` sabe SUSTITUIR si le das un `rx`,
+        # pero aquí nunca se le pasaba: al EDITAR el texto de una instrucción,
+        # la nueva se añadía al final y la vieja se quedaba. Así, tras bajar el
+        # IVA de la bebida al 10 %, la hoja de budget-bodega tenía en A12 la
+        # frase con «21 %» y doce filas más abajo la misma frase con «10 %»:
+        # el cliente abría el fichero y leía las dos versiones seguidas.
+        # El ancla es el ARRANQUE del texto (primeras palabras hasta ~70
+        # caracteres, sin cortar palabra): una instrucción reescrita empieza
+        # igual y cambia por dentro, que es justo el caso que hay que cazar.
+        cabeza = texto[:70].rsplit(' ', 1)[0] if len(texto) > 70 else texto
+        rx = re.compile(re.escape(cabeza))
+        fila = motor.linea_instrucciones(ws, texto, rx=rx)
+        # `linea_instrucciones` sustituye la PRIMERA coincidencia y se detiene.
+        # Si el texto se editó más de una vez, quedan varias filas con el mismo
+        # arranque: la reescrita y las copias que dejaron las pasadas
+        # anteriores. Se vacían todas menos la que acabamos de escribir, o el
+        # cliente lee la misma instrucción dos veces seguidas.
+        col = motor.col_texto(ws)
+        for r in range(1, ws.max_row + 1):
+            if r == fila:
+                continue
+            v = ws.cell(row=r, column=col).value
+            if isinstance(v, str) and rx.match(v):
+                ws.cell(row=r, column=col).value = None
     del cambios, fname
 
 
