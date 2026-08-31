@@ -66,6 +66,36 @@ cerrar el ES.**
 representante entero (motor + grupos + 3 refutadores + corrección + ronda 2 + crítico) ≈ 3-4 M · documentos de una guía
 (pipeline + generación + 2 refutadores + corrección + crítico) ≈ 2-3 M. **Una semana «normal» debe quedarse por debajo de 1,5 M.**
 
+## 0-ter. ESTADO AL CERRAR EL 1-SEP (manda sobre el §1, que es del 29-ago)
+
+### guia-restaurante-gastronomico — a MEDIO CAMINO, no publicada
+
+**LIVE y correcto:** los 18 xlsx con el **IVA de la bebida en sala al 10 %** (decisión de John, RD-17) y sin
+instrucciones duplicadas. Commits `379fe79` y `72668fc`.
+
+**NO publicado:** los tres documentos, sus dos PDF nuevos y el cableado que apunta a ellos (dashboard, landing y los
+**dos** mapas de descarga — están duplicados). Todo revertido a la versión publicada **a propósito**: el crítico final
+devolvió **120 hallazgos, 58 bloqueantes** (`auditorias/guias-v2-critico-final-2026-09-01.json`).
+
+**Lo hecho y que NO hay que repetir:** 59 correcciones de coherencia aplicadas y refutadas · las 3 páginas de basura del
+cap. 15 · los 4 truncamientos · dos focos de la «t» caída (caps. 5 y 21) · las tablas con el «0,06» bajo un encabezado
+«(%)» · los tres documentos llegaron a estar con **todos los gates en VERDE**.
+
+**Lo que falta:** segunda tanda sobre los 58 bloqueantes → gates → crítico → copiar a `dl/` + restaurar el cableado →
+LIVE. Receta y detalle completo en el handoff **§20**.
+
+### ⚠️ Deuda nueva detectada, para meter en la cola
+
+1. **El error del 21 % de IVA está VIVO en la familia de PLANES** (`planes-v2_0/grupo_a.py`), y afecta a los **10 planes
+   publicados**. En un bar o una coctelería la bebida es el negocio, así que pesa más que en la guía. El arreglo ya está
+   diseñado y probado en las guías: subir el tipo a `motor.PARAMETROS`, celda verde con nota, regenerar. **Candidato a
+   ser lo primero de la siguiente sesión impar.**
+2. **`_instr` acumulaba la instrucción vieja al editar el texto** (arreglado en guías). Revisar si el mismo helper se
+   usa igual en las otras familias.
+3. **Pasarela CRYPTO** (`PAGOS_CRYPTO_PENDIENTE.md`): infraestructura, no producto. Decidir si desplaza una sesión.
+
+---
+
 ## 1. Estado al cerrar el 29-ago
 
 ### LIVE en v2.0 (no se tocan salvo hotfix)

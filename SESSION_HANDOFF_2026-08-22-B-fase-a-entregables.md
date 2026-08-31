@@ -702,3 +702,116 @@ reproducible, hay que regenerarlo entero de una sola tanda y volver a auditarlo 
 no técnica.
 
 Via: Claude Code
+
+## 20. Sesión 31-ago → 1-sep (Mac, Claude Code) — guía gastronómica: IVA al 10 %, 59 correcciones, y el crítico la PARA antes de publicar
+
+Sesión larga. Lo que sigue es el estado exacto para retomar sin releer nada.
+
+### 20.1 Lo que quedó LIVE (y es correcto)
+
+- **Webhook de Stripe ACTIVADO** — ver §18. El email de acceso ya no depende de que el cliente aterrice en `-access`.
+- **Los 18 xlsx de la guía gastronómica con el IVA de la bebida en sala al 10 %** (`379fe79`), más el arreglo de
+  las instrucciones duplicadas (`72668fc`). Sin restos del 21 % salvo la mención correcta a la venta para llevar.
+
+### 20.2 Lo que NO se publicó, y por qué
+
+**Los tres documentos (guía, business plan, manual), sus dos PDF nuevos y todo el cableado que apunta a ellos están
+REVERTIDOS a la versión publicada.** El crítico final devolvió **120 hallazgos, 58 de ellos bloqueantes**
+(`auditorias/guias-v2-critico-final-2026-09-01.json`, 4 lentes opus, las cuatro con veredicto NO LISTO).
+
+⚠️ **El cableado está escrito y probado, pero revertido a propósito**: publicar el dashboard con las claves
+`business-plan-pdf` / `manual-sala-pdf` sin los ficheros en `dl/` es **un 404 para un cliente que ya pagó**. Lo que hay
+que restaurar cuando los documentos estén listos (todo está en el diff de esta sesión, se puede rehacer en 5 minutos):
+1. `netlify/functions/get-download-urls.ts` — claves `business-plan-pdf` y `manual-sala-pdf`.
+2. `src/data/productos-digitales-config.ts` — **el mismo mapa está DUPLICADO aquí**; hay que tocar los dos.
+3. `src/pages/GuiaRestauranteGastronomicoDashboard.tsx` — «Documentos Modelo (2)» → «(4)», con PDF + DOCX de cada bonus,
+   y «80+ páginas» → «119 páginas».
+4. `astro-site/src/data/productos/guias/guia-restaurante-gastronomico.ts` — 4 menciones de «80+ páginas» → «119
+   páginas» y los dos bonus como «PDF + DOCX».
+5. Copiar los **6** documentos de `build/` a `dl/` (los 6 están commiteados en `build/`, no hay que regenerarlos).
+
+**John pidió expresamente añadir los PDF de los dos bonus** (antes sólo existían en `.docx`). Eso convierte el producto
+en 24 entregables: 18 xlsx + 3 docx + 3 pdf. El censo ya lo daba en verde con esa cuenta.
+
+### 20.3 RD-17 · el IVA (decisión de John: «corrige a 10 % en sala y rehaz los xlsx»)
+
+El 21 % vivía en **TRES** sitios y el que movía el dinero no estaba controlado: un `0.21` **escrito a pelo** en
+`grupo_c` para el budget de bodega, duplicado con el de la capa del 303 de `grupo_a`. Ahora es un parámetro único en
+`motor.PARAMETROS['iva_bebida']` (celda verde con nota), como `iva_restauracion`, el SMI y la SS.
+
+Efecto medido, verificado celda a celda contra un respaldo del `dl/` anterior: **131 celdas cambiadas, todas
+atribuibles** (72 en bodega, 57 en cash-flow, 1 nota en escandallo, 1 en menu-engineering). **Los otros 14 libros: cero
+cambios de valor.**
+
+| | 21 % | 10 % |
+|---|---|---|
+| Botella de 40 € de carta | 33,06 € netos | 36,36 € |
+| Margen medio de bodega | 63,8 % | 67,1 % |
+| Food cost de bebida | 36,2 % | 32,9 % |
+| IVA repercutido, mes 1 | 13.640,09 € | 11.383,68 € |
+
+⚠️ **La cascada llegó a NUEVE puntos de prosa que actualicé… y el crítico encontró MÁS.** Es el trabajo principal de la
+siguiente sesión (ver 20.5).
+
+### 20.4 Tres defectos de MÉTODO cazados (valen para todas las familias)
+
+1. **El autotest de bodega tenía el `1.21` escrito a mano.** Cambiando sólo el parámetro, el test habría seguido EN
+   VERDE comprobando contra el tipo viejo: verificando algo que ya no se genera. Ahora deriva del parámetro.
+2. **`_instr` llamaba a `motor.linea_instrucciones()` SIN el parámetro `rx`.** Esa función sabe sustituir una línea si
+   le das un patrón; sin él sólo evita duplicados EXACTOS, así que **al editar el texto de una instrucción la nueva se
+   añadía y la vieja se quedaba**. `budget-bodega.xlsx` llegó a producción con «21 %» en la fila 12 y «10 %» en la 24.
+   Arreglado: ancla por el arranque del texto y deduplica. **Afecta a toda la familia de guías y probablemente a las
+   demás que usen ese helper: revisarlo cuando se toquen.**
+3. **El `.md` de la guía NO se reproduce desde su caché `txt/`** (§19). La vía correcta es la quirúrgica: regenerar el
+   bloque y empalmarlo, nunca un rebuild.
+
+### 20.5 CÓMO RETOMAR — segunda tanda de correcciones
+
+Fuente: `auditorias/guias-v2-critico-final-2026-09-01.json` (120 hallazgos; filtrar por `bloquea: true` → 58).
+Están agrupados en cuatro lentes: `guia-1-11`, `guia-12-22`, `bonus` (business plan + manual) y `constantes`.
+
+**Los bloqueantes de más peso, por familia:**
+
+- **Restos de la cascada del IVA** (lo primero): el cap. 12 enseña la fórmula **dividiendo entre 1,21** dos frases
+  después de decir que en sala es el 10 %; «un margen del **67,1 %** … de cada euro **0,638**» se contradice en el mismo
+  renglón; «el food cost sale **siete puntos** por debajo» (con el 10 % son ~3, y ese número sostiene el epígrafe).
+- **Dinero que no cuadra:** el resumen ejecutivo del business plan afirma que el umbral con deuda incluye la cuota
+  PLENA — es falso, incluye la de carencia, y el banco lee un listón 7.176,67 €/mes más bajo del real. «Rotación de 1,6
+  por servicio» implicaría 208 cubiertos/día sobre 65 plazas (el modelo va con 70). Los 1.610 € del checklist de
+  contratación presentados como coste POR PERSONA cuando son el total del proceso. Los 11.000 € del checklist Michelin
+  descritos de cuatro formas incompatibles, ninguna coincidente con el libro.
+- **Normativa falsa:** «consentimiento implícito» del RGPD (el art. 4.11 exige manifestación inequívoca y el
+  considerando 32 excluye el silencio); el **art. 34.9 ET** (registro de jornada de TRABAJADORES) citado como base para
+  datos de salud del COMENSAL.
+- **Contradicciones internas:** el evento inaugural descrito dos veces en el mismo capítulo (80 vs 60 invitados, cóctel
+  de pie vs menú degustación con maridaje); el manual mezcla base imponible con precio final al calcular el impacto del
+  no-show (70 × 135,52 ≠ 8.624; los 8.624 son 70 × 123,20 SIN IVA).
+- **Composición:** «camarones» por «camareros» en el capítulo de la Estrella MICHELIN; el símbolo € detrás del punto
+  final en cuatro sitios («18,58 . €»); un paréntesis degenerado «antes llamados» que repite la misma palabra, dos veces.
+
+**Receta que funcionó** (repetirla): agentes **sonnet** que NO editan ficheros y devuelven ediciones con **ancla
+verificada** (`count == 1`), cada tanda refutada por un **opus** que intenta tumbarlas, y el orquestador aplica sólo lo
+aceptado. De 62 ediciones, 14 fueron tumbadas **con razón** — una de ellas llegaba cortada a media palabra («en voz
+alta y clar»), justo el defecto que se estaba arreglando.
+
+**Después:** gates de los 3 documentos (deben quedar los tres en VERDE, ya lo estuvieron) → crítico → copiar a `dl/` →
+restaurar el cableado de 20.2 → censo `--fail` → `gate-no-latinos.py --only` → commit → push → verificación LIVE con md5.
+
+### 20.6 Presupuesto
+
+Los dos workflows sumaron **~3,5 M tokens de subagentes** frente a los **1,2 M** que el calendario asigna a la semana 1.
+Se avisó en el momento. La corrección del IVA no estaba prevista cuando se hizo ese presupuesto.
+
+### 20.7 Fuera de la guía, en esta sesión
+
+- **Webhook de Stripe activado y verificado** (§18).
+- **Idea de pasarela CRYPTO registrada** — `PAGOS_CRYPTO_PENDIENTE.md` + memoria. Clientes de LATAM piden USDC/BTC/SATS.
+  Coinbase descartada (no opera en España); NOWPayments candidata; **BTCPay NO hace USDC**, que es justo lo que piden.
+  Pendiente verificar en NOWPayments la retirada SEPA en EUR y el precio fijado en EUR.
+- **Decisiones de estrategia de John** (§18): sesiones alternadas, tienda única en aichef.pro, inglés nativo después.
+- ⚠️ **El mismo error del 21 % está VIVO en la familia de PLANES** (`planes-v2_0/grupo_a.py`: `%alcohol × 21 % +
+  (1−%alcohol) × 10 %`), y afecta a los **10 planes publicados**. En un bar o una coctelería la bebida no es una línea
+  secundaria. **No se tocó** (otra familia, otra sesión), pero el arreglo ya está diseñado y probado aquí.
+  El kit de inventario NO tiene el error: allí el 21 % es el IVA **soportado** en la compra al proveedor, que es correcto.
+
+Via: Claude Code

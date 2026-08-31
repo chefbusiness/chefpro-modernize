@@ -1,0 +1,995 @@
+{
+ "_meta": {
+  "generado": "2026-09-01",
+  "origen": "workflow wf_c5c75dcf-b8b · 4 lentes opus + síntesis",
+  "nota": "Crítico final de la guía gastronómica v2.0 ANTES de publicar. Las 4 lentes devolvieron NO LISTO. La síntesis no llegó a cerrar: usar estas 4.",
+  "hallazgos_totales": 120,
+  "bloqueantes": 58
+ },
+ "lentes": [
+  {
+   "hallazgos": [
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 12, «Maridaje, copa y su peso en el ticket»: «La cuenta correcta exige pasar el precio de carta a base imponible dividiendo entre 1,21 antes de calcular el margen»",
+     "hallazgo": "RESTO DE LA CASCADA DEL IVA. La guía enseña la fórmula con el divisor VIEJO (1,21). Dos frases antes, el MISMO párrafo dice «en sala ese IVA es el 10 % también para la bebida alcohólica». El divisor correcto es 1,10.",
+     "evidencia": "budget-bodega.xlsx, hoja «Bodega», celda C59 = 0.1 (con nota: «10 %, igual que la comida… art. 91.Uno.2.2»). Comprobado con la columna T del libro: T5 = 36,3636 = 40 ÷ 1,10, NO 40 ÷ 1,21 = 33,06. Si el lector aplica el 1,21 que le dicta la guía sobre el Rioja de 40 €, obtiene un food cost del 36,3 % en vez del 33,0 % real (celda M5 = 0,33).",
+     "fix": "«dividiendo entre 1,10».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 12, «El margen de verdad…»: «significa que, de cada euro que paga el cliente, 0,638 euros son margen antes de impuestos»",
+     "hallazgo": "RESTO DE LA CASCADA. 0,638 es el margen medio de bodega ANTERIOR al cambio de IVA (63,8 %). La frase se autocontradice: empieza diciendo «Un margen del 67,1 % sobre PVP» y termina con 0,638.",
+     "evidencia": "budget-bodega.xlsx, hoja «Bodega», celda L56 = 0,6710963… (= 67,1 %). El propio párrafo cita el 67,1 % dos líneas antes y en los otros cuatro puntos del capítulo. 0,638 no sale de ninguna celda del libro.",
+     "fix": "«0,671 euros son margen». (Si se quiere hablar del euro que paga el cliente CON IVA, son 0,61 €: conviene decir «de cada euro sin IVA».)",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 12, dos veces: «el food cost de bebida sale unos siete puntos por debajo del real» (§El margen de verdad) y «le saldrá unos siete puntos por debajo del real» (§Maridaje, copa)",
+     "hallazgo": "RESTO DE LA CASCADA. Con el IVA al 10 % la brecha es de 3 puntos, no de 7. Los «siete puntos» son la brecha del 21 % y es el número sobre el que se sostiene todo el epígrafe.",
+     "evidencia": "Calculado celda a celda sobre budget-bodega.xlsx: stock a PVP CON IVA = Σ(F·I) = 12.642,00 €; a coste = N56 = 3.780,00 €. Food cost ingenuo = 3.780/12.642 = 29,90 %; food cost correcto = M56 = 32,89 %. Brecha = 2,99 puntos. Con el IVA al 21 % la brecha habría sido de 6,28 (≈ «unos siete»).",
+     "fix": "«unos tres puntos por debajo del real», en los dos sitios. Mismo error en budget-bodega.xlsx (ver hallazgo del A12).",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 15, «El precio de carta lleva IVA: qué le pasa al food cost si lo olvidas»: «Si por error pones 35,71 en la carta, el food cost real es 10 / 35,71 = 28 por ciento… y el food cost real sobre lo que cobras es 28 por ciento»",
+     "hallazgo": "El capítulo que existe para enseñar este error concreto lo enseña MAL, y contradice a su propio xlsx. Si pones 35,71 € en carta con el IVA dentro, ingresas 32,46 € y el food cost real es 30,8 %, no 28 %. La frase «tú ingresas eso» es falsa: 3,25 € de cada plato son de Hacienda.",
+     "evidencia": "escandallo-maestro.xlsx, hoja «Ficha (plantilla)», celda A37, textual: «con un objetivo del 28 % y el IVA al 10 %, sube al 30,8 %». Comprobado: 10 ÷ (35,71/1,10) = 30,80 %. Además el libro trae una fila expresa para esto (G35, «Food cost si pusieras el PVP SIN IVA en la carta (%)»).",
+     "fix": "«el food cost real sobre lo que ingresas sube al 30,8 %, no al 28 %», alineado con la celda A37 del escandallo.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · caps. 17 y 18, los 11.000,00 € del checklist de inspección: «Ese coste cubre una doble pasada: una revisión técnica de cocina…» (cap. 17) · «incluye la elaboración del dosier de sostenibilidad» (cap. 17, §Estrella Verde) · «Esa cifra cubre tres meses de seguimiento semanal, formación del personal, compra de ingredientes para pruebas de recetas» (cap. 18) · «incluye también la revisión legal de las fichas técnicas de alérgenos» (cap. 18)",
+     "hallazgo": "Cuatro descripciones distintas e incompatibles del mismo importe, y NINGUNA coincide con el libro. Los 11.000 € son 10.000 € de PRENSA —una categoría que el propio libro rotula «(NO influye en la inspección)»— más 1.000 € de uniformes. La afirmación de que incluye el dosier de Estrella Verde es directamente falsa.",
+     "evidencia": "checklist-inspeccion-michelin-repsol.xlsx, hoja «Preparación Inspección»: G52 = 11.000; subtotales G57-G66 → Ingredientes 0, Técnica 0, Armonía 0, Personalidad 0, Consistencia 0, Repsol Extra 0, **Prensa y notoriedad 10.000**, Requisitos previos 0, Operativa 1.000, **Estrella Verde 0**. Las cinco filas de Estrella Verde (A45-A49) van sin importe y G53 = 5 «Partidas SIN importe (a presupuestar)», con nota H48: «Sin importe tasado en la guía: pide presupuesto y escríbelo aquí».",
+     "fix": "Describir el importe como lo que es (5.000 € eventos + 2.000 € prensa + 3.000 € invitaciones + 1.000 € uniformes = un SUELO) y retirar la frase de que incluye el dosier de sostenibilidad, o dotarlo en el libro.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 20, el evento inaugural descrito dos veces: «Se invita a un máximo de ochenta personas… formato de cóctel de pie, con seis o siete platos… El coste del evento se cubre con la partida de marketing de lanzamiento de 15.000,00 €» (§El evento inaugural) frente a «una sola sesión de noche, con 60 invitados… Se sirve el menú de degustación completo, con el maridaje estándar… El coste del evento sale de las partidas de marketing sin importe» (§Los primeros noventa días)",
+     "hallazgo": "Tres contradicciones en el mismo capítulo sobre el mismo acto: 80 vs 60 invitados, cóctel de pie vs menú degustación completo con maridaje, y financiado con los 15.000 € vs «partidas sin importe». La tercera es además falsa.",
+     "evidencia": "checklist-marketing-preapertura.xlsx: la fila A20 «Evento de pre-apertura (prensa + amigos + industria)» lleva G20 = 3.000 €, y la propia tabla impresa en ese capítulo lo reproduce («| 20 | Eventos | Evento de pre-apertura… | 3.000 € |»). Las 5 partidas sin importe son las filas 12, 13, 19, 34 y 35 (fotos de equipo, página de reservas, dossier de prensa, presupuesto por canal, cuadro de mando): el evento no está entre ellas.",
+     "fix": "Unificar formato, aforo y origen del gasto (3.000 € de la fila 20 del checklist) y borrar la versión que sobre.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 21, §«Gestión de alérgenos y de preferencias en la ficha del comensal»: «Los datos de salud, como una alergia, exigen un nivel de protección reforzado… El artículo 34.9 del Estatuto de los Trabajadores (BOE-A-2015-11430…) fija en 4 años el plazo de conservación de los datos»",
+     "hallazgo": "AFIRMACIÓN NORMATIVA FALSA. El art. 34.9 ET regula el registro de jornada de los TRABAJADORES; no dice absolutamente nada sobre los datos del comensal ni sobre datos de salud. En un epígrafe que trata sólo de la ficha del cliente, el lector concluye que debe conservar las alergias de sus comensales 4 años «porque lo dice el Estatuto de los Trabajadores».",
+     "evidencia": "El propio capítulo lo usa BIEN dos párrafos antes, acotado a lo laboral: «El plazo de conservación de los datos laborales relacionados con el servicio —por ejemplo, los partes de incidencia de un empleado— viene marcado por el artículo 34.9…». Y el cap. 13 lo cita correctamente como registro de jornada. El régimen del dato del comensal es el RGPD (limitación del plazo de conservación, art. 5.1.e), no el ET.",
+     "fix": "Retirar la cita del art. 34.9 de ese párrafo y sustituirla por el criterio del RGPD (conservar mientras dure la relación y bloquear después), que ya está escrito en la sección de CRM.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 14, §Coste de sala: «El checklist de contratación… tiene un coste tasado de 1.610,00 €. Es un gasto fijo que se paga una vez por cada contratación» y §Carrera profesional: «El coste de contratación de cada uno de estos perfiles, tasado en 1.610,00 €»",
+     "hallazgo": "DINERO QUE NO CUADRA. Los 1.610,00 € son el TOTAL del proceso de contratación del equipo entero, no un coste por persona. Presentado como coste unitario, el lector presupuestaría 24 × 1.610 = 38.640 €, una cifra que no existe en ningún libro del pack.",
+     "evidencia": "checklist-contratacion.xlsx, hoja «Contratación Equipo»: G37 «TOTAL PRESUPUESTADO» = 1.610,00 €, suma de 34 filas cuyo título es «Checklist Contratación **Equipo**». Varias son inequívocamente de proyecto y no por persona: A5 «Definir organigrama completo (cocina + sala)», A30 «Simulacro de servicio completo (soft opening)» 500 €, A33 «Registro de jornada digital» 100 €, A11 «Publicar ofertas en portales especializados» 200 €. Sólo el manipulador (50 €), el reconocimiento médico (60 €) y el uniforme (200 €) son por persona.",
+     "fix": "«coste tasado del proceso completo de contratación del equipo: 1.610,00 €», y si se quiere el unitario, calcularlo con las tres filas que sí lo son (310 €/persona).",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 13, §Turnos: «El cuadrante completo de la brigada de cocina para este proyecto de 65 plazas se sostiene con 24 personas» y §Del bruto al coste de empresa: «El bruto anual de la brigada es de 539.564,00 €… paga el coste con Seguridad Social, que asciende a 717.620,12 €»",
+     "hallazgo": "CONTRADICCIÓN ENTRE CAPÍTULOS SOBRE DINERO. Las 24 personas y los 539.564 € / 717.620,12 € son COCINA + SALA. En un capítulo titulado «Brigada de Cocina», cuya tabla lista sólo los 15 puestos de cocina, el lector atribuye a cocina un 56 % más de masa salarial de la que le corresponde.",
+     "evidencia": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana»: bloque «COCINA» filas 6-20 (15 personas, Σ bruto = 346.376 €); bloque «SALA» filas 22-30 (9 personas, Σ = 193.188 €); L33 total = 539.564 ✓. Y el cap. 14 lo dice expresamente: «El coste anual de toda la plantilla, **incluyendo cocina y sala**, con Seguridad Social, es de 717.620,12 €». El P&L lo separa: personal cocina 38.390,01 € y personal sala 21.411,67 € (celdas B20 y B21).",
+     "fix": "En el cap. 13: «el cuadrante completo del pack son 24 personas, 15 de cocina y 9 de sala»; el bruto de cocina son 346.376 € y su coste de empresa 38.390,01 €/mes.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 17, §Preparación de una visita: «El checklist se organiza en bloques. Primero, la entrada y la recepción… Segundo, la sala… Tercero, el servicio… Cuarto, la cocina… Quinto, la bodega… Sexto, el postre y el café» y «Cada uno de esos 45 ítems tiene una respuesta esperada (sí/no) y un comentario»",
+     "hallazgo": "La descripción del entregable no se parece al entregable, y se contradice con la tabla impresa TRES párrafos más abajo en el mismo capítulo. El comprador abre el xlsx y no encuentra ninguno de los seis bloques ni ninguna columna sí/no.",
+     "evidencia": "checklist-inspeccion-michelin-repsol.xlsx, columna B: las categorías reales son Ingredientes, Técnica, Armonía, Personalidad, Consistencia, Repsol Extra, «Prensa y notoriedad (NO influye en la inspección)», Requisitos previos, Operativa y Estrella Verde. Columnas: #, Categoría, Tarea/Ítem, Responsable, Fecha Límite, Estado («Pendiente»), Coste Est. (€), Notas — no hay columna de respuesta sí/no. La tabla del propio capítulo 17 reproduce correctamente las 10 categorías.",
+     "fix": "Reescribir el párrafo con las categorías reales del libro, o suprimirlo (la tabla ya cumple la función).",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 21, §CRM de comensales: «Para guardar datos de contacto basta el consentimiento implícito en la reserva»",
+     "hallazgo": "AFIRMACIÓN NORMATIVA FALSA. El «consentimiento implícito» no existe en el RGPD: el art. 4.11 exige una manifestación «libre, específica, informada e inequívoca», y el considerando 32 excluye expresamente el silencio o la inacción. Además la base legal de una reserva no es el consentimiento, sino la ejecución de un contrato (art. 6.1.b).",
+     "evidencia": "Se contradice con el epígrafe siguiente del mismo capítulo: «La base legal del tratamiento se apoya en el consentimiento explícito del interesado». Puedo probar la contradicción interna; la calificación jurídica la sostengo sobre el texto del RGPD, no sobre ningún fichero del pack.",
+     "fix": "«Los datos de contacto se tratan para ejecutar la reserva (art. 6.1.b RGPD); los de salud —la alergia— exigen consentimiento explícito (art. 9.2.a)».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md · cap. 21, §TPV y comandas: «las 930 unidades vendidas del plato estrella salen de contar cada servicio»",
+     "hallazgo": "Las 930 unidades son el TOTAL de los 12 platos de la carta de ejemplo, no las de un plato. El plato estrella con más ventas de esa matriz tiene 120 unidades (la torrija, que además es Plowhorse); el primer Star tiene 90.",
+     "evidencia": "menu-engineering-matrix.xlsx, hoja «Menu Engineering», celda D31 = 930 en la fila «TOTAL / MEDIA PONDERADA». Suma verificada de D5:D16 = 90+75+110+60+95+55+80+40+70+120+85+50 = 930. El propio cap. 15 lo dice bien: «el total de unidades, que en el ejemplo son 930».",
+     "fix": "«las 930 unidades vendidas de la carta de ejemplo».",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "budget-bodega.xlsx · hoja «Instrucciones», celda A12: «…con el tipo de la bebida alcohólica (21 %, en celda) y TODOS los indicadores salen de ahí: … deja el food cost de bebida unos 7 puntos por debajo del real»",
+     "hallazgo": "RESTO DE LA CASCADA DENTRO DEL PROPIO LIBRO. La hoja de instrucciones contiene DOS párrafos que se contradicen: A12 dice 21 % y A24 dice «10 % en sala». El lector abre el fichero y lee las dos versiones seguidas. El «7 puntos» de A24 también quedó sin actualizar (son 3).",
+     "evidencia": "Leídas las dos celdas: A12 = «…(21 %, en celda)… unos 7 puntos por debajo del real»; A24 = «…(10 % en sala, en celda)… unos 7 puntos por debajo del real». La celda operativa es C59 = 0,1. Brecha real medida = 2,99 puntos (ver hallazgo anterior).",
+     "fix": "Borrar A12 (es la versión vieja) y corregir «7 puntos» → «3 puntos» en A24.",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "calculadora-ticket-medio.xlsx · hoja «Ticket Medio», nota C23: «10 % general de restauración y 21 % en la parte de bebida alcohólica»",
+     "hallazgo": "RESTO DE LA CASCADA. La nota describe un cálculo mixto 10/21 que el libro ya no hace: la celda aplica el 10 % a todo. Contradice a budget-bodega C59, a escandallo-maestro I31, a menu-engineering G33 y a los caps. 12 y 17 de la guía.",
+     "evidencia": "calculadora-ticket-medio.xlsx: B23 = 0.1 y la fila 24 «Ticket medio CON IVA» da 135,52 € = 123,20 × 1,10 (un cálculo mixto con 21 % en la bebida daría 137,66 €). El manual de sala publica ese mismo 135,52 € citando «el 10 % para todo el consumo en el local, incluidas las bebidas alcohólicas».",
+     "fix": "«10 % para todo el consumo en el local, incluida la bebida alcohólica (art. 91.Uno.2.2); el 21 % sólo si vendes para llevar».",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 20, §El calendario de preapertura: «De sus partidas, cinco no llevan importe asignado: son acuerdos de trueque, cesiones o colaboraciones que se negocian en especie y que, por tanto, no aparecen en el flujo de caja»",
+     "hallazgo": "Invierte el significado del libro: las cinco partidas sin importe no son gratis, son las que FALTAN por presupuestar, y el total de 23.800 € es un suelo. Presentarlas como trueque hace que el lector deje cinco costes fuera del flujo de caja.",
+     "evidencia": "checklist-marketing-preapertura.xlsx, celda H43, textual: «El TOTAL de arriba es un SUELO: no incluye estas partidas, que van a presupuestar» (G43 = 5). Las cinco son: fotos del equipo/sala/cocina (fila 12), página de reservas con UTM (13), dossier de prensa (19), presupuesto por canal (34) y cuadro de mando (35). Ninguna es negociable en especie.",
+     "fix": "«cinco partidas están sin tasar: el total de 23.800,00 € es un suelo, no el presupuesto cerrado».",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 12, §Rotación: «la partida de bodega inicial recoge 40.000,00 €; esa cifra no es el stock, sino la inversión necesaria para poner la bodega en marcha, incluyendo la dotación física y el primer aprovisionamiento»",
+     "hallazgo": "Contradice al mismo capítulo dos epígrafes después: «esa línea es solo vinos: la vitrina climatizada tiene la suya, 6.500,00 €, y las copas van dentro de la partida de vajilla… No las sumes dos veces». Si los 40.000 € «incluyen la dotación física», la vitrina se contaría dos veces.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C17 «Bodega inicial (vinos)» = 40.000 y C18 «Vitrina climatizada» = 6.500 son DOS filas distintas; C15 «Vajilla, cristalería, cubertería» = 26.000 es una tercera. La versión correcta es la del segundo epígrafe.",
+     "fix": "«los 40.000,00 € son sólo vinos; la vitrina y las copas tienen su propia línea».",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 20, §El calendario de preapertura (los meses -6 a -1) frente a la tabla del cronograma del mismo capítulo: «Marketing pre-apertura y prensa | 15 | 2»",
+     "hallazgo": "El calendario de seis meses que enseña el capítulo no cabe en el cronograma del pack, que reserva 2 meses a marketing de preapertura. Además, la nota del plan financiero que justifica los 6 meses de renta de preapertura cita mal el propio Gantt.",
+     "evidencia": "cronograma-apertura-gantt.xlsx: X34 = 15, Y34 = 2 («Marketing pre-apertura y prensa»), X37 = 17 («Apertura oficial») → el marketing ocupa los meses -2 y -1, no -6 a -1. Y plan-financiero-3-anos.xlsx, «Inversión» A40 dice «firma el arrendamiento en el mes 3 y contrata la brigada en el 12 para abrir en el 18», cuando el Gantt firma el arrendamiento en el mes 4 (X8 = 4) y abre en el 17 (X37 = 17); sólo la brigada (X26 = 12) coincide.",
+     "fix": "Adelantar la fila de marketing del Gantt al mes 12 con 5-6 de duración, o recortar el calendario del capítulo; y corregir «mes 3»→«mes 4» y «mes 18»→«mes 17» en la nota A40.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 21, §Reservas: «Las plataformas de reserva que operan en España —ElTenedor, OpenTable y TheFork, entre las de mayor implantación—» y §Inventario: «son, entre otras, ElTenedor, TheFork, y algunas soluciones…»",
+     "hallazgo": "ElTenedor y TheFork son la MISMA plataforma (ElTenedor es la marca española de TheFork, del grupo Tripadvisor). Listarlas como dos competidoras distintas, dos veces, delata desconocimiento del sector en un producto que se vende como asesoría profesional.",
+     "evidencia": "El propio pack lo trata como uno solo: checklist-marketing-preapertura.xlsx, fila A10, C10 = «Perfil en TheFork/ElTenedor optimizado» — un único perfil con barra. La guía lo desdobla en dos.",
+     "fix": "«TheFork (ElTenedor), OpenTable y Cover Manager», y arreglar la coma antes de «y» en la segunda mención.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 21, §Gestión de alérgenos: el párrafo «El depósito de reserva actúa como herramienta contra el no-show…» y el párrafo «La base legal del tratamiento se apoya en el consentimiento explícito…»",
+     "hallazgo": "Dos bloques repetidos. El del depósito/no-show ya se ha explicado entero en §Reservas y aquí aparece otra vez, además fuera de tema (está en el epígrafe de alérgenos). El de la base legal + art. 34.9 duplica el de §CRM de comensales.",
+     "evidencia": "Comparados los dos pares de párrafos: §Reservas «El depósito de reserva es la herramienta contra el no-show… se devuelve íntegro si se cancela con más de cuarenta y ocho horas» vs §Gestión de alérgenos «El depósito de reserva actúa como herramienta contra el no-show… La política de cancelación debe constar por escrito». Y §CRM «La base legal del tratamiento es el Reglamento General de Protección de Datos» + art. 34.9 vs §Gestión de alérgenos «La base legal del tratamiento se apoya en el consentimiento explícito» + art. 34.9.",
+     "fix": "Borrar los dos párrafos repetidos del epígrafe de alérgenos y dejarlo en lo suyo: alergia / intolerancia / preferencia.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 18, dos veces: «una categoría adicional de \"Recomendados\" (antes llamados \"Recomendados\")» y «la categoría de \"Recomendados\" (antes llamados \"Recomendados\")»",
+     "hallazgo": "Salida degenerada del modelo: un paréntesis de «antes llamados» que repite exactamente la misma palabra. Se lee como un error evidente y aparece dos veces en el mismo capítulo.",
+     "evidencia": "Localizadas las dos ocurrencias literales en el cap. 18, §«Qué es la Guía Repsol…» y §«El universo de Soles…».",
+     "fix": "Quitar el paréntesis (o poner el nombre anterior real, «Recomendados por Guía Repsol» / «Soletes» si es a lo que se refería).",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 17, §Preparación de una visita: «Tercero, el servicio: ¿los camarones conocen la carta y pueden explicar los platos?»",
+     "hallazgo": "«camarones» por «camareros». En un producto de 85 € y en el capítulo de la Estrella MICHELIN, es la clase de errata que el comprador fotografía.",
+     "evidencia": "grep -n \"camarone\" → única ocurrencia en los tres documentos, cap. 17.",
+     "fix": "«¿los camareros conocen la carta…?».",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cuatro sitios: «13.000,00 . €» (cap. 9), «es 18,58 . € Cada plato se compara…» (cap. 15), «con una partida de 9.900,00 . € La tecnología…» y «un punto medio de 10.000,00 . €» (cap. 21)",
+     "hallazgo": "El símbolo € quedó DETRÁS del punto final, de modo que la frase termina en «18,58 .» y la siguiente empieza por «€». En el PDF se lee como un error de composición en mitad de una cifra de dinero.",
+     "evidencia": "Detectado con regex sobre el .md: el patrón es «<cifra><espacio><punto><U+202F><€>». Tres de las cuatro están en el tramo 12-22 (líneas del cap. 15 y dos del cap. 21); la cuarta, en el cap. 9.",
+     "fix": "Mover el € antes del punto en las cuatro.",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 22: «la facturación de la restauración creció un 3,1 %, pero la rentabilidad cayó un -0,9 %» frente a, nueve párrafos después, «(La hostelería finaliza 2025 con un aumento de la facturación hasta el 4 %…)»",
+     "hallazgo": "Dos cifras distintas para el mismo dato del mismo informe dentro del mismo capítulo: 3,1 % y 4 %. Una de las dos está mal y el lector no puede saber cuál.",
+     "evidencia": "Las dos frases están en el cap. 22 (§Cocina vegetal y §Lo que ya no funciona) y el −0,9 % de rentabilidad se atribuye en ambas al mismo informe sectorial del 16-dic-2025, cuyo título citado dice «hasta el 4 %».",
+     "fix": "Dejar la cifra del titular de la fuente (4 %) en los dos sitios, o citar la fuente exacta del 3,1 %.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 13, §Turnos: «es el resultado de cubrir dos servicios diarios, seis días a la semana»",
+     "hallazgo": "Seis días a la semana son ~26 días al mes; todo el modelo económico del pack se construye sobre 22. Si el cuadrante se dimensiona para 26 días y la facturación para 22, el coste de personal por cubierto está mal calibrado.",
+     "evidencia": "pl-mensual-escenarios.xlsx, «Días abierto/mes» B10=C10=D10 = 22; calculadora-ticket-medio.xlsx B19:D19 = 22; cash-flow-break-even.xlsx B52 = 22. 22 días/mes = 5,07 días/semana, no 6.",
+     "fix": "«cinco días y medio a la semana (22 días al mes, los del P&L)».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md · cap. 18, §Qué es la Guía Repsol: «Nacida en 1980 como una guía de carreteras y hoteles»",
+     "hallazgo": "Fecha y origen dudosos: la publicación arranca como Guía Campsa (1979) y no pasa a llamarse Guía Repsol hasta que Repsol absorbe Campsa, en los años noventa. Decir que «nació en 1980» como Guía Repsol es, como poco, impreciso en el capítulo dedicado a explicar qué es esa guía.",
+     "evidencia": "NO PUEDO PROBARLO con los ficheros del pack: ninguna hoja de cálculo ni documento en disco contiene la historia de la guía, y el capítulo no cita fuente para esa frase (a diferencia del resto de cifras del capítulo, que sí citan a Gastroeconomy). Me falta una fuente contrastable para fijar el año.",
+     "fix": "O se cita fuente para la fecha, o se sustituye por «heredera de la Guía Campsa, con el nombre de Guía Repsol desde los años noventa».",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md · cap. 14, §Coste de sala: «los 21.411,67 € mensuales representan algo menos de un tercio del coste total de personal»",
+     "hallazgo": "Es MÁS de un tercio: 35,8 %. La frase invierte el sentido de la comparación.",
+     "evidencia": "plan-financiero-3-anos.xlsx, «P&L Mensual»: B21 = 21.411,67 y B20+B21 = 59.801,68. 21.411,67 ÷ 59.801,68 = 35,80 %. Un tercio serían 19.933,89 €.",
+     "fix": "«algo más de un tercio» (35,8 %).",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md · cap. 14: «Cada comensal de un menú de doce o catorce pases» y «en un servicio de dieciocho pases se pagan caros»",
+     "hallazgo": "El formato del producto es «ocho a doce pases» —está en el título de tres epígrafes y en el escandallo—, y el cap. 14 habla de catorce y de dieciocho. Descuadra el dimensionamiento de sala que ese mismo capítulo justifica.",
+     "evidencia": "El propio pack fija el formato: escandallo-maestro.xlsx, «Resumen» A21: «Un menú degustación de 8-12 pases necesita una ficha por pase: por eso hay doce filas»; y los epígrafes 13.1, 15 y 21.1 de la guía dicen «ocho a doce pases».",
+     "fix": "Alinear a «ocho a doce pases» las dos menciones.",
+     "bloquea": false
+    }
+   ],
+   "resumen": "NO PUBLICAR. En el tramo que me tocó (caps. 12-22) hay 27 defectos comprobados celda a celda, 15 de ellos bloqueantes. La cascada del IVA NO está cerrada: el cap. 12 sigue mandando dividir el precio de carta «entre 1,21», sigue diciendo que la brecha del food cost de bebida son «unos siete puntos» (medido sobre budget-bodega.xlsx: son 2,99) y sigue traduciendo el 67,1 % de margen como «0,638 euros de cada euro», que es literalmente el 63,8 % anterior al cambio. Además quedan dos restos dentro de los propios xlsx: budget-bodega.xlsx tiene en su hoja de instrucciones los dos párrafos a la vez, el del 21 % y el del 10 %, y la nota C23 de calculadora-ticket-medio.xlsx sigue describiendo un cálculo mixto 10/21 que su celda ya no hace. Fuera de la cascada, lo más grave es dinero que no cuadra contra el libro que lo origina: el cap. 15 enseña que poner el PVP sin IVA en la carta deja el food cost en el 28 % cuando el propio escandallo-maestro.xlsx escribe en su celda A37 que sube al 30,8 %; los 11.000 € del checklist MICHELIN se describen de cuatro maneras incompatibles entre los caps. 17 y 18 y ninguna coincide con el desglose real (10.000 € son prensa, categoría que el libro rotula «NO influye en la inspección», y el dosier de Estrella Verde que la guía dice incluido está justamente entre las cinco partidas SIN importe); los 1.610 € del checklist de contratación se venden como coste «por cada contratación» cuando son el total del proceso para las 24 personas; el cap. 13 atribuye a la brigada de COCINA las 24 personas y los 539.564 € que son de cocina + sala (cocina son 15 y 346.376 €), y el cap. 14 dice lo contrario; y el cap. 20 describe el evento inaugural dos veces con 80 y con 60 invitados, cóctel de pie y menú degustación completo, pagado con los 15.000 € y con «partidas sin importe» que en el libro cuestan 3.000 €. En normativa hay dos afirmaciones falsas: el art. 34.9 del Estatuto de los Trabajadores invocado para fijar la conservación de los DATOS DE SALUD DEL COMENSAL, y el «consentimiento implícito» del RGPD, que no existe. Y quedan defectos de texto visibles: «los camarones conocen la carta» (cap. 17), «\"Recomendados\" (antes llamados \"Recomendados\")» dos veces (cap. 18), el € desplazado detrás del punto en cuatro cifras («18,58 . €», «9.900,00 . €») y dos bloques enteros repetidos en el cap. 21. Lo que SÍ verifiqué y está limpio: las 306 botellas / 3.780,00 € / 11.492,73 € del cap. 12 y los diez márgenes de la tabla de bodega; las doce clasificaciones de la matriz de Kasavana y Smith del cap. 15 (recalculé familia por familia los mixes, los márgenes medios y los umbrales del 70 %: los doce cuadrantes son correctos, igual que las 930 unidades y el margen ponderado de 18,58 €); todas las cifras de brigada, P&L, CAPEX y cronograma que cita el texto; los 23.800 € de marketing y su advertencia de no doble contabilización, que está bien resuelta; y los dos bonus, que no arrastran ningún resto de la cascada. No hay un solo párrafo cortado a media frase en el tramo 12-22.",
+   "veredicto": "NO LISTO"
+  },
+  {
+   "veredicto": "NO LISTO",
+   "resumen": "No debe publicarse. Encuentro 8 defectos bloqueantes. (1) El plan de negocio afirma en el cap. 8 que el punto de equilibrio de 145.728,59 € incluye «la cuota plena» del préstamo: es falso —la celda B49 del cash flow es la cuota de CARENCIA (3.208,33 €)—, y la propia guía madre lo explica bien y lo contradice: con la cuota plena son 152.905,26 € y 56,4 cubiertos/día, no 53,8. El resumen ejecutivo repite las dos cifras rebajadas. (2) El resumen ejecutivo contiene cuatro ratios que NO existen en ninguna celda del pack y que el banco leerá primero: ocupación 78 %, rotación 1,6 por servicio (imposible con 70 cubiertos sobre 65 plazas), ROE 12,4 % en el año 3 (el calculable es 25,0 %) y payback 5,8 años. (3) La cascada del IVA ha dejado cuatro restos vivos: la guía manda dividir el PVP de carta «entre 1,21» en el mismo párrafo en que dice que el tipo es el 10 % (el xlsx divide entre 1,1), la guía conserva el margen viejo «0,638» donde la celda dice 0,671, calculadora-ticket-medio.xlsx sigue diciendo «21 % en la parte de bebida alcohólica» con la celda a 0,1, y budget-bodega.xlsx tiene en la MISMA hoja de instrucciones la frase vieja (21 %) y la nueva (10 %). (4) El manual de sala deriva mal la facturación diaria (70 × 135,52 = 9.486,40, no 8.624,00) y con esa mezcla de bases justifica la política de depósitos con un 3,1 % que es 2,9 %. (5) El manual declara que «todos los precios de carta se anuncian con IVA incluido» mientras el guion que el camarero recita cada servicio canta 130/75/60 €, que en el modelo son precios SIN IVA. Además hay 12 defectos de severidad media, entre ellos que el cap. 5 del plan describe una brigada de 16 personas en tres áreas —con un área de «gestión» que no existe— frente a las 24 costeadas, y que su cronograma narrado contradice mes a mes el Gantt impreso dos párrafos más abajo.",
+   "hallazgos": [
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md — cap. 8, «Incluyendo la cuota plena, el punto de equilibrio con deuda se eleva a 145.728,59 €»; y cap. 1, viñetas «Umbral de ventas para cubrir servicio de deuda: 145.728,59 €» y «Cubiertos al día necesarios para el equilibrio: 53,8»",
+     "hallazgo": "La frase es falsa: 145.728,59 € NO incluye la cuota plena, incluye la de carencia. Con la cuota plena de 8.232,00 € el umbral es 152.905,26 €/mes y hacen falta 56,4 cubiertos/día. El plan que lee el banco subestima en 7.176,67 €/mes el listón que hay que superar desde el año 2, justo cuando empieza a amortizar principal. La guía madre del mismo pack dice lo correcto, así que los dos documentos se contradicen y el que va al banco es el equivocado.",
+     "evidencia": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: A49 = 'Cuota mensual del préstamo (€)', B49 = 3208.33 (la de carencia, no la plena); B48 = 141145.25714285715; B50 = 145728.58571428573; B47 (margen contribución) = 0.7; B53 = 53.76644986507. plan-financiero-3-anos.xlsx, hoja «Financiación»: B12 = 8231.997943918335 ('Cuota MENSUAL tras la carencia'), B13 = 3208.3333333333335 ('Cuota mensual DURANTE la carencia'). Recalculado: 141145.257 + 8231.998/0.7 = 152.905,25 € → /22 días /123,20 € = 56,41 cubiertos. Contraste: guia-restaurante-gastronomico.md dice literalmente «con la cuota plena, el umbral con deuda sube a 152.905,26 € y hacen falta 56,4 cubiertos al día, no 53,8».",
+     "fix": "Reescribir el pasaje del cap. 8 con la misma redacción que ya usa la guía madre: el umbral de 145.728,59 € / 53,8 cubiertos es el del AÑO 1 (cuota de carencia) y desde el año 2 sube a 152.905,26 € / 56,4 cubiertos. Añadir ambas parejas de cifras a las viñetas del resumen ejecutivo etiquetadas por periodo.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md — cap. 1, «una ocupación media del 78% en el primer año, un ticket medio de 123,20 € por comensal y una rotación de 1,6 veces por servicio. La rentabilidad sobre fondos propios se sitúa en el 12,4% al tercer año, y el plazo de recuperación de la inversión (payback) es de 5,8 años»",
+     "hallazgo": "Cuatro cifras del resumen ejecutivo no salen de ninguna celda del pack y dos son demostrablemente falsas. La rotación de 1,6 por servicio implicaría 208 cubiertos/día sobre 65 plazas; el modelo entero está construido sobre 70 cubiertos/día (1,08 rotaciones diarias en total), y el propio cap. 5 dice que el máximo son «dos rotaciones completas en noche punta». El ROE del año 3 calculado con las cifras del pack es 25,0 %, el doble del 12,4 % impreso. Es la página que el analista de riesgos lee primero.",
+     "evidencia": "Barrido programático de las 18 hojas .xlsx del pack buscando los valores 0.124 / 12.4 / 0.78 / 78 / 1.6 / 0.72 / 72 / 5.8: los únicos aciertos son calculadora-ticket-medio.xlsx D8=72 ('Precio menú corto') y D17=78 ('Cubiertos/día' del escenario OPTIMISTA) — ninguno es una ocupación ni un ROE. Cálculo del ROE: plan-financiero-3-anos.xlsx, «Proyección 3 Años» D23 = 297607.07513531623 ÷ «Financiación» B31 = 1189944.24 = 25,01 %. Rotación: calculadora-ticket-medio.xlsx C17 = 70 cubiertos/día ÷ 65 plazas = 1,077 rotaciones/día.",
+     "fix": "Borrar las cuatro cifras o sustituirlas por las que sí tienen celda: ocupación = 70 cubiertos/día sobre la capacidad que se declare, rotación real 1,08/día, ROE año 3 = 25,0 % (o el que se decida, con su fórmula), y calcular el payback contra el flujo de caja del pack antes de publicarlo.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md — cap. de bodega, «La cuenta correcta exige pasar el precio de carta a base imponible dividiendo entre 1,21 antes de calcular el margen»",
+     "hallazgo": "RESTO DE LA CASCADA DEL IVA. La instrucción operativa manda dividir entre 1,21 en el mismo párrafo que empieza diciendo «en sala ese IVA es el 10 % también para la bebida alcohólica». El xlsx divide entre 1,1. Quien siga la frase impresa obtiene una base imponible un 9 % más baja y un food cost de bebida ~3 puntos por encima del real en cada referencia: es una instrucción que el lector ejecuta sobre toda su carta de vinos.",
+     "evidencia": "budget-bodega.xlsx, hoja «Bodega»: F5 (PVP carta) = 40, T5 (PVP sin IVA) = 36.36363636363636 = 40/1,1. Con 1,21 daría 33,06. C59 ('IVA de la bebida alcohólica') = 0.1. La nota D59 de la misma hoja dice «10 %, igual que la comida… art. 91.Uno.2.2 de la Ley del IVA».",
+     "fix": "Cambiar «dividiendo entre 1,21» por «dividiendo entre 1,10» en esa frase.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md — cap. de bodega, «Un margen del 67,1 % sobre PVP… significa que, de cada euro que paga el cliente, 0,638 euros son margen antes de impuestos»",
+     "hallazgo": "RESTO DE LA CASCADA DEL IVA: el 0,638 es literalmente el margen VIEJO (63,8 %) que la regeneración sustituyó por 67,1 %, sobrevivido como decimal en mitad de la frase que anuncia el 67,1 %. La frase se contradice a sí misma en el mismo renglón. Además, aunque se quisiera expresar el margen sobre el euro CON IVA, la cifra correcta sería 0,610 (0,671/1,1), tampoco 0,638.",
+     "evidencia": "budget-bodega.xlsx, hoja «Bodega», fila TOTAL: L56 = 0.6710963455149501 (margen s/PVP) y M56 = 0.3289036544850499 (food cost bebida). El brief de esta revisión confirma la transición 63,8 % → 67,1 %.",
+     "fix": "Sustituir «0,638 euros» por «0,671 euros» (o reescribir la frase sobre el euro sin IVA, que es la base del cálculo).",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio», nota de la celda C23: «…el precio que el comensal ve en la carta: 10 % general de restauración y 21 % en la parte de bebida alcohólica»",
+     "hallazgo": "RESTO DE LA CASCADA DEL IVA dentro de un entregable de pago. La nota sigue anunciando un 21 % para la bebida alcohólica cuando la celda que documenta está a 0,1 y el libro aplica un tipo único del 10 % para calcular el ticket con IVA. El comprador que lea la nota y no la celda repercutirá el 21 % sobre el maridaje y la copa.",
+     "evidencia": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: B23 ('Tipo de IVA de los precios de esta hoja (%)') = 0.1; C16 (ticket ponderado) = 123.2; C24 (ticket con IVA) = 135.52 = 123,2 × 1,10 exacto, sin ningún tramo al 21 %.",
+     "fix": "Reescribir la nota C23 con la redacción ya corregida que usan cash-flow-break-even.xlsx A29 y escandallo-maestro.xlsx I31: 10 % en restauración incluida la bebida alcohólica servida en sala (art. 91.Uno.2.2 LIVA); el 21 % solo para la venta para llevar.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "budget-bodega.xlsx, hoja «Instrucciones» — celda A12 «…con el tipo de la bebida alcohólica (21 %, en celda)» conviviendo con A24 «…(10 % en sala, en celda)»",
+     "hallazgo": "RESTO DE LA CASCADA DEL IVA: la misma hoja de instrucciones contiene la frase vieja y la nueva, palabra por palabra idénticas salvo el tipo. La versión caducada (21 %) aparece PRIMERO, en el bloque de instrucciones de uso, y la corregida doce filas más abajo. El comprador que abra el libro lee la equivocada.",
+     "evidencia": "budget-bodega.xlsx, «Instrucciones»: A12 = 'Los precios de la columna «PVP Carta (€)» van CON IVA… con el tipo de la bebida alcohólica (21 %, en celda)…'; A24 = la misma frase con '(10 % en sala, en celda)'. La celda real, «Bodega» C59, vale 0.1.",
+     "fix": "Borrar A12 (la duplicada caducada) y dejar solo A24, o sobrescribir A12 con el texto de A24.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "manual-servicio-sala.md — §7, «Con un ticket medio con IVA de 135,52 € y una ocupación prevista de 70 cubiertos al día, la facturación diaria estimada es de 8.624,00 €. Un solo no-show de una mesa de dos personas reduce esa cifra en aproximadamente un 3,1% (unos 271 €)»",
+     "hallazgo": "Aritmética rota que mezcla base imponible con precio final. 70 × 135,52 = 9.486,40 €, no 8.624,00 €: los 8.624,00 € son 70 × 123,20 € (SIN IVA). Y el porcentaje del no-show divide 271 € (con IVA) entre 8.624 € (sin IVA): el impacto real es 2,9 %, no 3,1 %, con cualquiera de las dos bases usada de forma coherente. Es el cálculo con el que el manual justifica la política de depósitos ante el equipo y ante el cliente.",
+     "evidencia": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: C16 = 123.2 (ticket ponderado sin IVA), C17 = 70 (cubiertos/día), C18 = 8624.0 (facturación diaria) — el libro calcula 8.624,00 € como 123,20 × 70, no con el ticket con IVA. C24 = 135.52 (ticket con IVA). Comprobado: 70 × 135,52 = 9.486,40; 2 × 135,52 / 9.486,40 = 2,86 %; 2 × 123,20 / 8.624 = 2,86 %.",
+     "fix": "Reescribir el pasaje con una sola base: «con un ticket medio de 123,20 € sin IVA y 70 cubiertos, la facturación diaria es de 8.624,00 €; un no-show de dos personas se lleva 246,40 €, el 2,9 %». Si se prefiere hablar con IVA, la facturación diaria es 9.486,40 € y el no-show 271,04 €, también el 2,9 %.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "manual-servicio-sala.md — §7, «todos los precios de carta se anuncian con IVA incluido… El ticket medio sin IVA se sitúa en 123,20 €, mientras que el ticket medio con IVA alcanza los 135,52 €», frente al guion de §3 «Hoy tenemos un menú largo de 130,00 € y un menú corto de 75,00 €… un maridaje opcional por 60,00 €»",
+     "hallazgo": "Contradicción entre dos capítulos del mismo manual y con el plan de negocio, y se ejecuta en sala todos los días. Si la carta va con IVA incluido, el ticket medio con IVA es 123,20 € y los 135,52 € del modelo no existen. Si los 130/75/60 € son sin IVA —que es lo que exige el modelo financiero para llegar a 189.728 €/mes—, el camarero está cantando al cliente un precio un 10 % inferior al que va a pagar (143,00 € el menú largo), lo que además choca con la obligación de anunciar al consumidor el precio final con impuestos.",
+     "evidencia": "calculadora-ticket-medio.xlsx, «Ticket Medio»: nota C23 dice «Los precios de arriba se escriben SIN IVA»; C6 = 130 (menú largo), C8 = 75 (corto), C10 = 85 (carta), C12 = 60 (maridaje), C14 = 14 (copa); ponderado C16 = 123.2 y C24 = 135.52 = 123,2 × 1,1. Es decir, el libro trata 130/75/60 € como base imponible. business-plan-modelo.md cap. 2 lo confirma: «El ticket medio ponderado resultante es de 123,20 €… se convierte en los 135,52 € que percibe el cliente final».",
+     "fix": "Decidir el criterio y propagarlo: lo normal en España es que la carta lleve el precio final. Si se elige eso, los precios de carta pasan a 143,00 / 82,50 / 66,00 € y el guion de §3 se reescribe con esas cifras, o se mantiene 130/75/60 € en carta y entonces el ticket con IVA es 123,20 € y hay que rehacer C24 y toda mención a los 135,52 €.",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 5, «La brigada está formada por 24 personas… En cocina trabajan el jefe de partida, dos cocineros, un ayudante y el responsable de lavandería y limpieza; en sala, el maître, dos jefes de rango, cuatro camareros y un sumiller; y en gestión, el gerente, el encargado de compras y el responsable de administración»",
+     "hallazgo": "El plan de operaciones describe una plantilla que no es la que se costea: enumera 16 personas (5+8+3), inventa un área de «gestión» con tres puestos que no existen en ningún sitio, y omite las 4 jefaturas de partida y los 5 commis reales. El cap. 6 del mismo documento imprime la plantilla verdadera de 24 puestos, sin gerente ni administración. Un analista que compare los dos capítulos ve dos organigramas distintos y ninguno de los tres sueldos de «gestión» presupuestado.",
+     "evidencia": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana»: bloque COCINA (filas 6-20) = Chef Ejecutivo, Sous Chef, 4 Jefes de Partida, 5 Commis, 2 Ayudantes, 2 Plonge = 15 personas; bloque SALA (filas 22-30) = Maître, Sommelier, 4 Camareros Rango, 2 Runners, Hostess = 9. Total L33 = 539564.0 de bruto y O33 = 717620.12 con SS. No hay ninguna fila de gerente, compras ni administración, ni ningún tercer bloque.",
+     "fix": "Reescribir el párrafo del cap. 5 con la brigada real del cap. 6: 15 en cocina y 9 en sala, sin área de gestión, o añadir y costear los tres puestos de gestión en la plantilla y rehacer el coste de personal.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 5, lista «Mes 1-3: Legalización y proyecto… Mes 4-8: Obra y equipamiento… Mes 9-11: Contratación y formación… Mes 12-14: Pruebas y ajustes… Mes 15-18: Apertura», seguida de la tabla «Cronograma de apertura a 18 meses»",
+     "hallazgo": "La narración del cronograma contradice, hito a hito, la tabla que introduce dos párrafos más abajo. Además dice «se divide en cinco fases principales» y la tabla tiene seis (FASE 1 a FASE 6). Para un banco que valora el riesgo de ejecución, el desfase es grave: la licencia de obras no se pide en el mes 1-3 sino en el 7, la obra no es del 4 al 8 sino del 9 al 12, y la apertura no es en el 15-18 sino en el 17.",
+     "evidencia": "cronograma-apertura-gantt.xlsx, hoja «Gantt»: X15 'Solicitud licencia de obras' = 7; X16 'licencia de actividad clasificada' = 7 (duración 5) y X21 'Resolución de la licencia' = 14; X17 'Registro sanitario CCAA' = 14; X19 'Obra civil' = 9 (duración 4); X26 'Selección y contratación brigada cocina' = 12 (duración 3); X32 'Pruebas de carta y menús' = 15; X35 'soft opening' = 16; X37 'Apertura oficial' = 17. Filas de fase: A5, A12, A18, A25, A30, A36 = seis FASE.",
+     "fix": "Sustituir la lista de cinco fases por el resumen real de las seis del Gantt, con sus meses.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 7, «se sube al 70 % en el segundo mes, al 80 % en el tercero, y se alcanza el crucero completo a partir del cuarto o quinto mes»",
+     "hallazgo": "Falso contra la tabla que el propio capítulo imprime a continuación y contra el xlsx: en el mes 4 se factura el 85 % (161.269 €) y el crucero de 189.728 € no se alcanza hasta el mes 7. La misma frase también contradice la apertura del capítulo, que habla de «seis meses para alcanzar el crucero». Un banco que dimensione la tesorería con «crucero en el mes 4 o 5» se queda corto en dos o tres meses de rampa.",
+     "evidencia": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses», fila 10 (Total Ingresos): B10=113836.8 (60 %), C10=132809.6 (70 %), D10=151782.4 (80 %), E10=161268.8 (85 %), F10=170755.2 (90 %), G10=180241.6 (95 %), H10=189728.0 (100 %, mes 7). plan-financiero-3-anos.xlsx, «Proyección 3 Años»: B9 'Meses de rampa hasta el mes de crucero' = 6, B10 '% del crucero que se factura el primer mes' = 0.6.",
+     "fix": "Reescribir: 60 / 70 / 80 / 85 / 90 / 95 % en los meses 1 a 6 y crucero completo en el mes 7.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 8, tabla «Cuenta de resultados del mes tipo», fila «| Margen EBITDA | 0,18 € |» (idéntica en guia-restaurante-gastronomico.md)",
+     "hallazgo": "Un porcentaje impreso como importe en euros, en la columna «Importe (€)» de la cuenta de resultados que va al banco: el margen EBITDA es 17,9 %, no «0,18 €». Es exactamente el defecto que se dio por corregido («porcentajes impresos como fracción decimal con símbolo de euro») y ha sobrevivido en los dos documentos.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: A35 = 'Margen EBITDA', B35 = 0.1792456569404622 (ratio, no euros); la fila EBITDA B34 = 34007.92 con C34 = 0.1792456569404622 ya publicado correctamente como «17,9 %» en la columna de porcentaje de la misma tabla.",
+     "fix": "Imprimir «17,9 %» en esa fila (o eliminarla, porque el porcentaje ya aparece en la columna «% s/ventas» de la fila EBITDA).",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md — §3, narración «El tiempo objetivo para tomar la comanda completa, desde que el cliente cierra la carta hasta que el camarero se retira, es de cinco minutos como máximo», frente a su propia tabla «Tiempos objetivo de los primeros minutos», fila «Toma de comanda cerrada | menos de 8 minutos»",
+     "hallazgo": "El manual con el que se forma y se evalúa al equipo da dos objetivos distintos para el mismo hito en la misma página. El jefe de rango que evalúe con la tabla y el camarero que aprendió el texto discreparán en cada servicio.",
+     "evidencia": "Ambos textos están en §3 de manual-servicio-sala.md, el segundo en la tabla que cierra el capítulo, fila 5. No hay ninguna celda en el pack que fije este tiempo, así que la fuente de verdad es el propio manual y se contradice.",
+     "fix": "Elegir un solo objetivo y repetirlo en la narración y en la tabla.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md — §6, viñeta «Error en la cuenta o cargo duplicado. El camarero retira la cuenta y dice… Puede corregir el error sin consultar», frente a la tabla «Casuística, guion y límite de decisión», fila «Queja por la cuenta | … | Maître | Corregir el error en el momento»; y viñeta «Alergia o intolerancia no comunicada… el jefe de rango autoriza el cambio sin coste» frente a la fila «Alergia comunicada tarde | … | Maître»",
+     "hallazgo": "El capítulo que fija QUIÉN decide se contradice con su propia tabla en dos de los seis casos, y son los dos con más consecuencias: el dinero de la cuenta y una alergia. En sala, dos personas distintas creerán tener la autoridad, o ninguna la asumirá.",
+     "evidencia": "Las viñetas y la tabla están ambas dentro de §6 de manual-servicio-sala.md; el desacuerdo es textual y directo (camarero/jefe de rango en la viñeta, maître en la columna «Quién decide» de la tabla).",
+     "fix": "Unificar la columna «Quién decide» de la tabla con los escalones descritos en las viñetas, o al revés.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md — todo el documento: «lo dirige el jefe de rangos o el maître» (§2), «Montaje de mesas y alineación | Jefe de rango» (tabla §2), «la decisión no la toma el camarero: la toma el jefe de rango» (§4), y la tabla de §8 que lista «Jefe de rango» y «Camarero de rango» como dos puestos distintos",
+     "hallazgo": "Toda la cadena de mando del manual descansa en un puesto, «jefe de rango», que no existe en la brigada que el pack costea y paga. La sala presupuestada son Maître, Sommelier, cuatro «Camarero Rango», dos Runners y Hostess. Como la ficha de formación de §8 evalúa por separado a «Camarero de rango» y a «Jefe de rango», el manual mismo los trata como roles diferentes: uno de los dos no tiene nómina. El plan de negocio arrastra el mismo fantasma («en sala, el maître, dos jefes de rango, cuatro camareros y un sumiller»).",
+     "evidencia": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana», bloque SALA: C22='Maître', C23='Sommelier', C24-C27='Camarero Rango 1..4', C28-C29='Runner 1..2', C30='Hostess'. Ningún puesto se llama 'Jefe de rango'. Los brutos y los costes/hora de esas nueve filas son los que suman en L33/O33.",
+     "fix": "O se renombra el puesto en el manual («camarero de rango» / «maître») o se añaden y costean dos jefes de rango en plantilla-turnos-brigada.xlsx y se rehace el coste de personal del P&L. No puede quedarse a medias.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 3, «— Espacio de Pr, 2025-11-25», «— Fos Consultin, 2026-07-15», «…como nuevos terceros So, 2026-02-16» y, en cap. 9, «sobre el informe de Delectate, 2026-02-11»",
+     "hallazgo": "Cuatro nombres de fuente cortados a media palabra en el capítulo de análisis de mercado, que es precisamente donde el analista de riesgos va a verificar los datos. Dos de ellos aparecen completos en otro punto del mismo documento («Espacio de Prensa MICHELIN España» en la tabla, «Delectatech» en el cap. 3), lo que confirma que están truncados y no abreviados.",
+     "evidencia": "Extraídos por grep sobre business-plan-modelo.md: 'Fos Consultin,' / 'de Pr,' / 'terceros So,' / 'de Delectate,'. La tabla «El mercado, con fuente y fecha» del mismo capítulo escribe correctamente 'Espacio de Prensa MICHELIN España', y el cuerpo del cap. 3 escribe 'Delectatech'.",
+     "fix": "Restaurar los cuatro nombres completos: «Fos Consulting», «Espacio de Prensa MICHELIN España», «…terceros Soles», «Delectatech».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 8, «Ese umbral equivale a 53,8 cubiertos al día…, una cifra alcanzable con una ocupación media del 72% sobre la capacidad diaria»",
+     "hallazgo": "Ni el 72 % ni la «capacidad diaria» existen en ninguna parte del pack. La expresión «capacidad diaria» aparece una sola vez en los tres documentos y nunca se define. Con los dos candidatos posibles el porcentaje no sale: 53,8 sobre los 70 cubiertos objetivo es el 76,8 %, y sobre las dos rotaciones de 65 plazas que menciona el cap. 5 es el 41,4 %.",
+     "evidencia": "Barrido de las 18 hojas .xlsx buscando 0.72 / 72 como porcentaje: sin resultado (el único 72 es D8, «Precio menú corto» del escenario optimista). calculadora-ticket-medio.xlsx C17 = 70 cubiertos/día; cash-flow-break-even.xlsx B53 = 53.76644986507. 53,766/70 = 76,8 %.",
+     "fix": "Definir «capacidad diaria» con un número del pack y recalcular el porcentaje, o suprimir la coletilla.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 10, «El calendario de pagos se ajustará a la estacionalidad de la actividad, concentrando las cuotas en los meses de mayor generación de caja, sin alterar el importe total adeudado ni el tipo de interés aplicable»",
+     "hallazgo": "La promesa contradice el cuadro de amortización impreso una página antes y el cash flow: el préstamo está modelado como anualidad francesa con cuota constante de 8.232,00 € todos los meses. Prometer al banco cuotas estacionales «sin alterar el importe total adeudado ni el tipo» describe un producto distinto del que el propio plan calcula, y es la clase de frase que un analista marca como no acordada.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Financiación»: B12 = 8231.997943918335 y nota A15 «La cuota se calcula como anualidad: importe × i / (1 - (1+i)^-n)»; el cuadro C19:C27 repite 98783.97532702002 € idénticos cada año. cash-flow-break-even.xlsx fila 33 repite 3208.33 € los doce meses del año de carencia, sin estacionalidad.",
+     "fix": "Eliminar la frase o sustituirla por la descripción real: cuota mensual constante de 8.232,00 € tras 12 meses de carencia a 3.208,33 €.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md — cap. 10, «Las garantías ofrecidas quedan [garantías: aval solidario de los socios, prenda sobre el derecho de traspaso y cesión de créditos de las pólizas de seguros], en los términos que se formalizarán en la escritura del préstamo»",
+     "hallazgo": "Jerga de plantilla dentro del corchete: el contenido no es un hueco a rellenar sino una etiqueta de campo («garantías:») que se ha quedado impresa, y la frase resultante es agramatical («las garantías ofrecidas quedan [garantías: …]»). El resto de corchetes del documento sí son huecos limpios ([Ciudad], [Nombre comercial]), así que este desentona justo en la cláusula de garantías.",
+     "evidencia": "Extraído por grep de placeholders sobre business-plan-modelo.md: los únicos corchetes del documento son '[Nombre comercial]', '[Ciudad]', '[fecha prevista de apertura]' y éste, que es el único que incluye una etiqueta de campo y texto ya redactado.",
+     "fix": "Reescribir como «Las garantías ofrecidas son [aval solidario de los socios, prenda sobre el derecho de traspaso y cesión de créditos de las pólizas de seguros]», o sacar la enumeración del corchete.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md — §8, «El coste tasado del checklist de contratación, que incluye la gestión documental, la formación inicial y el material de acogida, asciende a 1.610,00 €. Esa cantidad se amortiza en el primer mes si el incorporado rinde al nivel exigido»",
+     "hallazgo": "La cifra existe pero se le cambia el sujeto: 1.610,00 € es el presupuesto del checklist COMPLETO de la apertura (las 30 tareas para montar la brigada entera), no el coste de un incorporado. Incluye partidas que no se repiten por persona: 500 € de simulacro de servicio, 200 € de publicación de ofertas, 100 € de implantación del registro de jornada. Presentarlo como coste por incorporado infla el coste unitario de rotación varias veces.",
+     "evidencia": "checklist-contratacion.xlsx, hoja «Contratación Equipo»: G37 ('TOTAL PRESUPUESTADO') = 1610.0, suma de los subtotales G42-G47 (Perfiles 0, Selección 200, Documentación 610, Onboarding 200, Formación 500, Legal 100). Partidas no repetibles por persona: G30 = 500 ('Simulacro de servicio completo (soft opening)'), G11 = 200 ('Publicar ofertas en portales'), G33 = 100 ('Registro de jornada digital'). Nota H38 del mismo libro: «El TOTAL de arriba es un SUELO: no incluye estas partidas, que van a presupuestar».",
+     "fix": "Reformular: «el checklist de contratación de la apertura está presupuestado en 1.610,00 € para toda la brigada, y es un suelo». Si se quiere un coste por incorporado, calcularlo solo con las partidas repetibles (contrato 300 €, manipulador 50 €, reconocimiento médico 60 €, uniforme y taquilla 200 €).",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md — cap. de inversión, «Cuando pagas una factura de obra con IVA al 10 % (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses») o una de bebida alcohólica al 21 % (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)»",
+     "hallazgo": "El 21 % es correcto para la factura de COMPRA de bebida alcohólica al proveedor, pero la cita remite a una hoja cuya celda de bebida alcohólica vale 0,1: el lector que vaya a comprobarlo encuentra un 10 % donde el texto dice 21 %. Es el rastro de la cascada en la capa de citas, y el pack presume de que cada cifra se puede rastrear hasta su celda.",
+     "evidencia": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: A26 = 'Tipo de IVA de la bebida alcohólica (%)', B26 = 0.1; A27 = 'Tipo de IVA general de los gastos (%)', B27 = 0.21.",
+     "fix": "Cambiar la cita del 21 % para que apunte a B27 («Tipo de IVA general de los gastos»), que es la celda que sí lo sostiene, y aclarar que se refiere al IVA soportado en la compra, no al repercutido en sala.",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "business-plan-modelo.md — cap. 1, tabla «Cuadro de mando del proyecto», filas «Impuesto de Sociedades (€) | 34.556 € | 92.234 €»",
+     "hallazgo": "Se aplica el 25 % general en los años 1 y 2 a una sociedad que el propio plan constituye de cero, cuando el pack documenta en su hoja de cálculo que una entidad de nueva creación tributa al 15 % en el primer ejercicio con base positiva y en el siguiente. El resultado neto queda subestimado (es conservador para el banco, por eso no bloquea), pero es una incoherencia entre el plan y la nota de su propia plantilla.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años»: B8=C8=D8=0.25 y nota E8 = 'Tipo general 25 %. Una entidad de NUEVA CREACIÓN tributa al 15 % en el primer ejercicio con base positiva y en el siguiente (art. 29.1 LIS)'. El cronograma del pack incluye la tarea 'Constitución de sociedad (SL)' (cronograma-apertura-gantt.xlsx, A9).",
+     "fix": "O aplicar el 15 % en los años 1 y 2 y recalcular el neto, o añadir una línea en el cap. 8 diciendo que se ha optado por el tipo general por prudencia y que el tipo reducido mejoraría el resultado.",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "business-plan-modelo.md — cap. 9, tabla «Los tres escenarios del plan», fila «Coste materia prima (€) | 42.155,52 € | 56.918,40 € | 65.345,28 €»",
+     "hallazgo": "La etiqueta dice «materia prima» pero el importe es el TOTAL de costes variables: en el escenario realista, 56.918,40 € son 45.636,36 € de materia prima más 11.282,04 € de coste de bodega. Un analista que cruce esta fila con la cuenta de resultados del mes tipo del cap. 8 verá dos cifras distintas bajo el mismo rótulo.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: B13 = 45636.36 ('Materia prima (food cost)'), B14 = 11282.04 ('Bebidas (coste bodega)'), B15 = 56918.4 ('TOTAL COSTES VARIABLES'). pl-mensual-escenarios.xlsx, «Escenarios»: A18 = 'Coste materia prima (€)', C18 = 56918.4.",
+     "fix": "Renombrar la fila como «Costes variables totales (€)» en la tabla del cap. 9 (y, si procede, también en el rótulo A18 del xlsx).",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "business-plan-modelo.md — cap. 10, tabla «Condiciones de la operación solicitada», fila «Tipo mensual (%) | 0,5 %»",
+     "hallazgo": "El tipo mensual real es 0,4583 % y se imprime redondeado a 0,5 %, un 9 % por encima. En una tabla titulada «Condiciones de la operación solicitada», que el banco puede leer como el dato pedido, conviene el decimal exacto.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Financiación»: B10 = 0.004583333333333333 (= 5,5 %/12). B7 = 0.055.",
+     "fix": "Imprimir 0,4583 % (o 0,46 %).",
+     "bloquea": false
+    }
+   ]
+  },
+  {
+   "veredicto": "NO LISTO",
+   "resumen": "La cascada del IVA NO está cerrada: quedan dos frases vivas en el capítulo 4 que siguen gravando la bebida alcohólica al 21 %, y una de ellas cita como fuente la celda de cash-flow-break-even.xlsx que dice 10 %. Además, el mismo párrafo (§4, «El IVA del CAPEX es un punto que muchos proyectos olvidan») mete los 221.603,36 € de preapertura DENTRO del CAPEX de 1.668.340,88 € y a continuación lo financia con 700.000 + 1.189.944,24 = 1.889.944,24 €: la resta no da por 221.603,36 €, y es la cifra que va al banco. Hay un tercer resto de formato de la misma familia que se acaba de corregir («Margen EBITDA | 0,18 €» y tres filas de MESES impresas como «6,00 €»), un error de control operativo que invierte la rampa (dice el 60 % en el mes seis cuando el modelo pone el 60 % en el mes UNO y el 95 % en el sexto), una tabla de superficies cuyo TOTAL no es la suma de sus filas (266–357 frente a 280–340 declarados), 9.900 € de tecnología contados dos veces en el CAPEX, y una cita legal (libro de visitas) que contradice a la nota del propio checklist del pack. Verificado celda a celda: cuadran bien los umbrales de equilibrio, el cuadro francés del préstamo, la proyección a 3 años, los totales de los cinco checklists, el anisakis (RD 1021/2022), los 14 alérgenos y todo el bloque LAU del capítulo 7.",
+   "hallazgos": [
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, epígrafe «El IVA de la inversión es tesorería, no coste»: «Cuando pagas una factura de obra con IVA al 10 % (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses») o una de bebida alcohólica al 21 % (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»)»",
+     "hallazgo": "Resto vivo de la cascada del IVA, y encima con los dos tipos intercambiados. La frase cita como fuente la hoja que dice justo lo contrario: la bebida alcohólica en sala va al 10 %, y la obra de un LOCAL COMERCIAL va al 21 % (el 10 % reducido de ejecuciones de obra es solo para edificios destinados a viviendas, art. 91.Uno.2.10º LIVA; un restaurante no lo es). Es exactamente el riesgo número uno que se pidió cazar.",
+     "evidencia": "Abiertas las celdas de cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: B26 = 0,1 con etiqueta A26 «Tipo de IVA de la bebida alcohólica (%)»; B27 = 0,21 con etiqueta A27 «Tipo de IVA general de los gastos (%)»; y la nota A29 dice literalmente «10 % en restauración, incluida la bebida alcohólica servida en sala (art. 91.Uno.2.2 de la Ley del IVA). El 21 % es el tipo general y solo aplica a la venta para llevar». La tabla del propio capítulo 4 ya imprime bien «Tipo de IVA de la bebida alcohólica (%) | 10,0 %».",
+     "fix": "Reescribir: «Cuando pagas una factura de obra al 21 %, que es el tipo general (el 10 % de obra solo aplica a vivienda), o compras bebida a tu distribuidor al 21 %…». Nunca «bebida alcohólica al 21 %» citando esa hoja.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, epígrafe «La proyección a tres años y la rampa de arranque»: «pagas un IVA que en restauración es del 10 % para la comida y del 21 % para la bebida alcohólica»",
+     "hallazgo": "Segundo resto vivo de la cascada del IVA, que además contradice de plano al párrafo anterior del MISMO capítulo. Y la frase es incoherente en sí misma: empieza hablando del IVA de la obra y el equipamiento y termina dando los tipos de la venta de comida y bebida, que es otra cosa.",
+     "evidencia": "Búsqueda unicode-aware sobre el .md (el fichero usa U+202F antes del %, por eso un grep normal no lo caza): solo hay tres «21 %» en los capítulos 1-11. Uno es correcto —«El 21 % es el tipo general y sólo entra si vendes para llevar», en el epígrafe «La cuenta de resultados mensual, línea a línea», que sí recoge el art. 91.Uno.2.2— y los otros dos son este y el anterior. escandallo-maestro.xlsx, hoja «Ficha (plantilla)», H31 = 0,1 con nota I31: «10 % en restauración, INCLUIDA la bebida alcohólica servida en sala».",
+     "fix": "Borrar la mención al 21 % para bebida alcohólica y dejar el párrafo hablando solo del IVA soportado de la inversión, al 21 % general.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, epígrafe «La proyección a tres años y la rampa de arranque»: «Esa cifra está dentro del CAPEX total de 1.668.340,88 €, que se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos propios»",
+     "hallazgo": "Dos errores de dinero en una sola frase. (a) Los 221.603,36 € de preapertura NO están dentro del CAPEX: la hoja lo dice expresamente y la propia guía los suma aparte tres párrafos antes. (b) 700.000 + 1.189.944,24 = 1.889.944,24 €, no 1.668.340,88 €: la frase presenta 1,89 M€ de financiación cubriendo 1,67 M€ de inversión. Se descuadra por 221.603,36 €, y es la cifra que un analista de riesgos comprueba la primera.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C27 (TOTAL de la tabla) = 1.668.340,88; C39 (TOTAL COSTES DE PREAPERTURA) = 221.603,36; C46 (NECESIDAD TOTAL) = 1.889.944,24. La nota A40 de esa misma hoja: «Esta partida no está entre los conceptos de la tabla de arriba: se suma aparte, en la necesidad total.» Hoja «Financiación»: B31 = 1.189.944,24, B32 = 700.000,0, B34 = 1.889.944,24. Y el propio capítulo 4 lo dice bien antes: «La suma de CAPEX (sin fondo) más preapertura más fondo de maniobra da la necesidad total de financiación» (734.020,40 + 221.603,36 + 934.320,48 = 1.889.944,24, comprobado).",
+     "fix": "«Esa cifra se suma aparte del CAPEX de 1.668.340,88 €; juntas dan la necesidad total de 1.889.944,24 €, que se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos propios.»",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, epígrafe «Fuentes de financiación y servicio de la deuda»: «es la suma de un CAPEX total de 1.668.340,88 €, que ya incluye el fondo de maniobra dimensionado en 934.320,48 €, más los impuestos soportados en la preapertura»",
+     "hallazgo": "Etiqueta mal la partida que cierra la necesidad total. La diferencia 1.889.944,24 − 1.668.340,88 = 221.603,36 € no son «impuestos soportados»: son 102.000,00 € de rentas y suministros más 119.603,36 € de nóminas. Ni las nóminas ni la Seguridad Social llevan IVA —lo dice la propia hoja de cash flow—, así que llamarlos impuestos es doblemente falso.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C37 = 102.000,0 «Rentas y suministros de preapertura», C38 = 119.603,36 «Nóminas de preapertura», C39 = 221.603,36. 102.000 + 119.603,36 = 221.603,36 exacto. La misma guía lo describe correctamente en «Las tres necesidades de dinero»: «se dividen en dos grandes partidas: rentas y suministros de preapertura… y nóminas de preapertura». cash-flow-break-even.xlsx A29: «Las nóminas y la Seguridad Social NO llevan IVA».",
+     "fix": "Sustituir «más los impuestos soportados en la preapertura» por «más los 221.603,36 € de costes de preapertura (rentas y nóminas antes de abrir)».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, epígrafe «La proyección a tres años y la rampa de arranque»: «Si en el mes seis no estás cerca del 60 % del crucero, algo está fallando en la rampa y tienes que corregir»",
+     "hallazgo": "Invierte el hito de control de la rampa. El 60 % es el PRIMER mes; en el mes seis el modelo va por el 95 %. Un lector que en el mes 6 se vea al 60 % y crea que está en objetivo va 35 puntos por debajo del plan y se estará comiendo el fondo de maniobra sin reaccionar. Contradice al párrafo de arriba del mismo epígrafe («el primer mes facturas el 60 % del ritmo de crucero») y al capítulo entero.",
+     "evidencia": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses», fila 10 «Total Ingresos»: B10 = 113.836,80 (mes 1) y H10 = 189.728,00 (mes 7, crucero) → 60,0 %; G10 = 180.241,60 (mes 6) → 95,0 %. plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años»: B10 = 0,6 con etiqueta A10 «% del crucero que se factura el primer mes» y B9 = 6 «Meses de rampa hasta el mes de crucero».",
+     "fix": "«Si en el mes seis no estás cerca del 95 % del crucero —el primer mes es el que arranca al 60 %—, algo está fallando en la rampa.»",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, tabla «Cuenta de resultados del mes tipo», fila «| Margen EBITDA | 0,18 € |»",
+     "hallazgo": "Sobrevive un caso del defecto que se acaba de corregir: un porcentaje impreso como fracción decimal y con símbolo de euro. Está en la tabla estrella del capítulo financiero, justo debajo de la fila «EBITDA | 34.007,92 € | 17,9 %», así que el lector ve el mismo dato dos veces con dos formatos distintos y uno de ellos absurdo.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual», A35 = 'Margen EBITDA', B35 = 0,1792456569404622. El ensamblador lo ha volcado por la columna «Importe (€)» en lugar de por «% s/ventas». En la misma tabla, la fila EBITDA sí trae 17,9 % en la columna correcta.",
+     "fix": "Imprimir 17,9 % en la columna «% s/ventas» y dejar vacía la de importe (o suprimir la fila, que es redundante con el 17,9 % de la fila EBITDA).",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, tabla «Preapertura y fondo de maniobra…», filas «Meses de renta ANTES de abrir (fuera de la carencia que negocies) | 6,00 €», «Meses de nómina de la brigada ANTES de abrir | 2,00 €» y «Meses de colchón (mínimo 6) | 6,00 €»",
+     "hallazgo": "Tres cuentas de MESES impresas con símbolo de euro. Es la misma familia de defecto de formato que el «0,18 €» y que los porcentajes ya corregidos: el volcador pone «€» a toda la columna sin mirar la unidad de la fila. En una tabla de 11 filas, tres dicen que seis meses valen «6,00 €».",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C35 = 6 (A35 «Meses de renta ANTES de abrir…»), C36 = 2 (A36 «Meses de nómina de la brigada ANTES de abrir»), C42 = 6 (A42 «Meses de colchón (mínimo 6)»). Son enteros de meses, no importes; las filas de euros de la misma tabla (C37, C38, C39, C43, C46) sí llevan importe.",
+     "fix": "En esas tres filas imprimir «6», «2» y «6» sin sufijo, o con «meses».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 7, tabla «Reparto de superficie para 65 plazas y una brigada de 24 personas», fila «| TOTAL | 280 a 340 | Superficie de trabajo de esta guía |»",
+     "hallazgo": "El TOTAL de la tabla no es la suma de sus filas, ni por abajo ni por arriba. Las siete zonas suman 266 a 357 m², no 280 a 340. Y el 280 no es decorativo: es el umbral duro que el capítulo repite tres veces («por debajo de 280 no caben los vestuarios y aseos de personal que exige el Real Decreto 486/1997… el proyecto nace con una ilegalidad»). Cualquier lector que sume la columna con una calculadora encuentra que el mínimo del propio desglose se queda 14 m² por debajo del mínimo que la guía declara innegociable.",
+     "evidencia": "Suma de la columna «Superficie orientativa (m²)» de la propia tabla: mínimos 120+70+25+15+18+10+8 = 266; máximos 160+90+35+20+25+15+12 = 357. Declarado: 280 a 340.",
+     "fix": "O se ajustan los rangos de las filas para que sumen 280–340, o el TOTAL pasa a «266 a 357» y el texto explica que el mínimo operativo se fija en 280 con margen sobre la suma teórica. Lo que no puede quedarse es la tabla como está.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 5, epígrafe «Registro sanitario y comunicación previa…»: «recuerda que el libro de visitas ya no existe: fue derogado por la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores»",
+     "hallazgo": "Cita legal equivocada, y contradice a la nota del propio checklist que la guía vende en el mismo pack. La Ley 14/2013 introdujo el libro de visitas electrónico; la supresión de la obligación viene de la Ley 23/2015 (Sistema de Inspección de Trabajo) y la Orden ESS/1452/2016, que es exactamente lo que dice el xlsx.",
+     "evidencia": "checklist-legal.xlsx, hoja «Legal», fila 38 (ítem #34 «Registro diario de jornada»), columna Notas: «Sustituye al libro de visitas, derogado (Ley 23/2015 y Orden ESS/1452/2016).» La guía atribuye la derogación a la Ley 14/2013 en el cuerpo del capítulo 5. Dos documentos del mismo producto dan dos normas distintas para el mismo hecho.",
+     "fix": "Alinear la guía con el checklist: «derogado por la Ley 23/2015 y la Orden ESS/1452/2016».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "plan-financiero-3-anos.xlsx, hoja «Inversión», nota A40: «El cronograma de este mismo pack firma el arrendamiento en el mes 3 y contrata la brigada en el 12 para abrir en el 18»",
+     "hallazgo": "La nota describe mal el Gantt del propio pack, y es la nota que justifica la partida de preapertura. El cronograma firma en el mes 4 y abre en el 17, no en el 3 y el 18. La guía (nota al pie de la tabla de preapertura del cap. 4) sí lo cuenta bien —«firma el arrendamiento en el mes 4 y contrata la brigada en el mes 12 para abrir en el mes 17»—, o sea que el xlsx quedó sin actualizar y contradice al documento que lo cita.",
+     "evidencia": "cronograma-apertura-gantt.xlsx, hoja «Gantt»: X8 = 4 para «Negociación y firma del arrendamiento (con carencia)» (Y8 = 2 de duración); X37 = 17 para «Apertura oficial»; el mes 18 es «Primeros 30 días: monitorización» (X38 = 18). X26 = 12 para la brigada, ese sí coincide.",
+     "fix": "Corregir A40: «firma el arrendamiento en el mes 4 y contrata la brigada en el 12 para abrir en el 17».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio», nota C23: «10 % general de restauración y 21 % en la parte de bebida alcohólica»",
+     "hallazgo": "Resto de la cascada del IVA dentro de un xlsx. La nota sigue diciendo 21 % para la bebida alcohólica, cuando la celda que documenta aplica un 10 % plano y la doctrina corregida del pack es que la bebida alcohólica servida en sala va al 10 %. La nota contradice a su propia celda y a cash-flow-break-even.xlsx.",
+     "evidencia": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: B23 = 0,1 (A23 «Tipo de IVA de los precios de esta hoja (%)»); C24 = 135,52, que es 123,20 × 1,10 exacto — es decir, el libro aplica 10 % a TODO el ticket, bebida incluida, justo lo contrario de lo que dice su nota. Comprobado también B24 = 109,78 = 99,80 × 1,10 y D24 = 149,60 = 136,00 × 1,10.",
+     "fix": "Reescribir C23 con la misma redacción ya corregida en cash-flow-break-even.xlsx A29 y en escandallo-maestro.xlsx I31: 10 % en restauración, incluida la bebida alcohólica servida en sala (art. 91.Uno.2.2 LIVA); el 21 % solo para venta para llevar.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, nota al pie de la tabla de preapertura («son 13 meses de renta antes de facturar… súmale a mano ese desfase, unos 298.405,04 €») frente a cap. 5, «En nuestro plan financiero prevemos 6 meses de renta antes de la apertura… son un colchón realista»",
+     "hallazgo": "Contradicción frontal dentro del mismo documento sobre la partida más grande que puede hundir la apertura. El capítulo 4 demuestra que el cronograma del pack exige 13 meses de renta y 5 de nómina (520.008,40 €) frente a los 221.603,36 € presupuestados, y manda sumar 298.405,04 € a mano. El capítulo 5 dice dos veces que los 6 meses «son un colchón realista» y no menciona el desfase. Además la hoja «Financiación» cierra con Diferencia = 0, así que el plan que va al banco se presenta como financiado al céntimo mientras la guía dice en una nota al pie que faltan casi 300.000 €.",
+     "evidencia": "Aritmética de la nota, comprobada: 13 × 17.000 = 221.000; 5 × 59.801,68 = 299.008,40; suma 520.008,40; 520.008,40 − 221.603,36 = 298.405,04. Todo cuadra. plan-financiero-3-anos.xlsx, hoja «Financiación», B35 «Diferencia (necesidad - financiación)» = -0,0 y B30 = 1.889.944,24. A esto se suman otros dos desfases que la propia guía declara y nunca agrega: los 34.000,00 € de fianza del art. 36 LAU («no aparecen en ninguna partida del CAPEX del plan financiero», cap. 5) y los 15.073,75 € de vajilla (cap. 11).",
+     "fix": "Decidir una sola cifra de necesidad total y sostenerla en los tres sitios: o se sube a ~2,19 M€ (con carencia no negociada, fianza y dotación de degustación) o el capítulo 5 deja de llamar «colchón realista» a los 6 meses y remite explícitamente a la nota del capítulo 4.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 1, epígrafe «Perfil del promotor…»: «¿estás dispuesto a dirigir una operación donde el 70 % de tus costes fijos son personas?»",
+     "hallazgo": "Cifra que no sale de ninguna celda. El personal pesa el 60,5 % de los costes fijos sin amortización, o el 57,1 % si se incluye la amortización. Ninguna lectura da 70 %. Es la frase que abre el perfil de promotor y la que define la tesis del capítulo, así que el error se lee como dato, no como figura retórica.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: B20 (Personal cocina) = 38.390,01 + B21 (Personal sala) = 21.411,67 = 59.801,68. B32 (TOTAL COSTES FIJOS sin amortización) = 98.801,68 → 60,5 %. Con la amortización de B30 = 6.000: 59.801,68 / 104.801,68 = 57,1 %.",
+     "fix": "Cambiar a «el 60 % de tus costes fijos son personas» (o «seis de cada diez euros de tu estructura»).",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 2, «Dentro de ese total, el servicio en mesa aportó 23.310 millones (+3,7 %) y el servicio rápido o autoservicio 6.490 millones (+6,1 %)», repetido en «con un desglose de 23.310 millones en servicio en mesa y 6.490 en servicio rápido»",
+     "hallazgo": "El desglose no suma al total del que se presenta como desglose. 23.310 + 6.490 = 29.800, que es exactamente el cierre de 2024 que la propia frase acaba de citar, no los 31.000 M€ de 2025. Se están dando los componentes de un año como composición del otro, con 1.200 M€ de hueco. Aparece dos veces, en dos epígrafes distintos, y la tabla del capítulo lleva el pie «Ninguna cifra de esta tabla procede de la memoria del autor: todas se verificaron con su fuente el 29 de agosto de 2026», lo que hace más caro el fallo.",
+     "evidencia": "Aritmética directa sobre el propio texto: la frase dice «facturó aproximadamente 31.000 millones de euros en 2025… que sobre el cierre de 2024 (29.800 millones) proyecta un +3,5 % para 2025», y a continuación da 23.310 + 6.490, que suma 29.800 al euro. 29.800 × 1,035 = 30.843 ≈ 31.000, así que el 31.000 sí es la proyección de 2025 y el desglose es el de 2024.",
+     "fix": "Decir «el cierre de 2024 se repartió en 23.310 millones de servicio en mesa y 6.490 de servicio rápido», o dar el desglose proyectado de 2025 si la fuente lo publica. No presentar 29.800 como composición de 31.000.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "plan-financiero-3-anos.xlsx, hoja «Inversión», conceptos 3 a 8 (de «Equipamiento cocina caliente» a «Almacenamiento y cámaras») frente al concepto 15 «TPV, software, tablets»; y guia-restaurante-gastronomico.md, cap. 8: «El importe de equipamiento recogido en el plan financiero coincide exactamente con el total del checklist de equipos de cocina»",
+     "hallazgo": "9.900 € de tecnología contados dos veces en el CAPEX que va al banco. Las seis líneas de cocina del plan suman 161.430,40 €, que es el total ÍNTEGRO del checklist de equipamiento —y ese total incluye una categoría «Tecnología» de 9.900 € (TPV principal, TPV auxiliar, impresora de comandas, tablet de reservas, WiFi, sonido de sala y CCTV)—. El plan vuelve a presupuestar los mismos 9.900 € en la línea 15 «TPV, software, tablets». La guía afirma la identidad de forma explícita en el capítulo 8, así que no es una coincidencia de cifras: es la construcción del plan.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C7=78.000, C8=42.000, C9=14.000, C10=8.000, C11=6.430,4, C12=13.000 → suma 161.430,40. checklist-equipamiento-cocina.xlsx, hoja «Equipamiento Cocina», G98 (TOTAL PRESUPUESTADO) = 161.430,40; suma de las filas con B='Tecnología' = 9.900 (filas 82-88: 3.000+1.500+600+500+800+2.000+1.500). plan-financiero, C19 = 9.900 con F19 = 'Tecnología (TPV, reservas, software)'. Los céntimos lo confirman: el ,40 del plan viene del 14.360,40 de «Instalación, transporte y puesta en marcha» del checklist (verificado: 12 % de B11 sobre la base que excluye Extracción y Tecnología = 12 % × 119.670 = 14.360,40). La guía reproduce esas siete filas de Tecnología dentro de su tabla «Lista de equipamiento de cocina» en el cap. 9.",
+     "fix": "Elegir una: (a) bajar las seis líneas de cocina a 151.530,40 € y dejar los 9.900 € solo en la línea 15; o (b) borrar la línea 15 y decir que la tecnología ya está dentro del bloque de cocina. En cualquier caso, corregir la frase del cap. 8, que hoy sanciona el doble cómputo.",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10, epígrafe «Mobiliario, mesas y confort…»: «se divide entre los 65 comensales que van a sentarse cada servicio, y se multiplica por los 300 días de apertura»",
+     "hallazgo": "Los 300 días contradicen la base de cálculo de todo el pack, que trabaja con 22 días al mes = 264 al año. El argumento del coste por uso del mobiliario sale un 14 % barato de lo que dice el propio modelo, y es la cifra que justifica los 62.000 € de mobiliario.",
+     "evidencia": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio», B19=C19=D19=22 («Días abierto/mes»); pl-mensual-escenarios.xlsx, hoja «Escenarios», B10=C10=D10=22; cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses», B52 = 22 («Días abierto/mes»). 22 × 12 = 264.",
+     "fix": "«…y se multiplica por los 264 días de apertura al año (22 al mes) que asume el plan».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10: «El ruido de fondo, el que se percibe pero no molesta, se sitúa en torno a los 45 decibelios. Por encima de 60, la conversación se convierte en esfuerzo» frente a la fila «| 15 | Acústica | Nivel sonoro objetivo: 60‑65 dB en servicio |» de la tabla del mismo capítulo",
+     "hallazgo": "El objetivo acústico que fija el checklist está por encima del umbral que el texto declara insoportable, y las dos cifras se leen en la misma página. El capítulo 8 refuerza el lado del texto («El nivel sonoro en sala no debe superar los 45 decibelios en servicio normal»). Un lector que implante el checklist estará construyendo una sala que su propia guía califica de fatigante.",
+     "evidencia": "checklist-diseno-sala.xlsx, hoja «Diseño de Sala (FOH)», fila 19 (ítem #15), C = 'Nivel sonoro objetivo: 60‑65 dB en servicio', G = 0. La guía reproduce esa fila literalmente en su tabla «Checklist de diseño de sala, con coste tasado».",
+     "fix": "Unificar. Si el objetivo real de un gastronómico es 55-60 dB, corregir la fila del xlsx y las dos menciones del texto para que digan lo mismo.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10, epígrafe «Acústica…»: «tiene 4 partidas sin importe que conviene revisar una a una antes de cerrar el plan financiero; suelen ser elementos de pequeña cuantía»",
+     "hallazgo": "Caracteriza como menudencias las cuatro partidas sin presupuestar, y dos de ellas son de las más caras y más bloqueantes del proyecto según la propia guía: el limitador-registrador acústico con estudio de impacto (del que el mismo epígrafe dice «si el aislamiento proyectado no cumple, la licencia no se concede») y los aseos y vestuarios de personal (que el cap. 7 dice que «puede costar decenas de miles de euros en obras adicionales o, peor, la imposibilidad de obtener la licencia de actividad»). Es un consejo que invita a no presupuestarlas.",
+     "evidencia": "checklist-diseno-sala.xlsx, hoja «Diseño de Sala (FOH)»: las 4 filas con coste vacío son el ítem #17 «Limitador‑registrador acústico homologado y estudio de impacto acústico», el #29 «Aseos y vestuarios de personal separados de los de clientes (RD 486/1997)», el #32 «Alumbrado de emergencia y señalización de evacuación (CTE DB‑SUA / DB‑SI)» y el #33 «Certificación de aforo y anchura de los recorridos de evacuación». La nota del #29 en el xlsx las liga a las 24 personas del cuadrante.",
+     "fix": "«…suelen ser las partidas que condicionan la licencia: pídelas a presupuesto antes de cerrar el plan, porque dos de ellas pueden mover decenas de miles de euros.»",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10, epígrafe «Accesibilidad, aseos y evacuación»: «la densidad de ocupación se cuenta como una persona por metro cuadrado de superficie de uso público» y «no debe superar los 25 metros en riesgo bajo»",
+     "hallazgo": "Dos afirmaciones normativas mal traídas. En el CTE DB‑SI, tabla 2.1, la densidad de 1 m²/persona corresponde a zonas de público DE PIE en bares y cafeterías; para zonas de público SENTADO en restaurantes la densidad es de 1,5 m²/persona. Y el límite de 25 m de recorrido de evacuación en pública concurrencia no depende del «riesgo bajo» (categoría del reglamento industrial), sino de que la planta tenga salida única; con dos o más salidas el límite general es de 50 m. La conclusión del párrafo (que 65 plazas quedan por debajo del aforo) se sostiene con cualquiera de las dos densidades, pero el dato con el que se calcula el aforo condiciona anchos de evacuación y dotación de aseos.",
+     "evidencia": "Contraste con el CTE DB‑SI 3 (tabla 2.1 de densidades de ocupación y tabla 3.1 de longitudes de recorrido). No he podido abrir el texto del CTE desde este entorno, así que lo doy como media: lo que falta para cerrarlo es cotejar literalmente esas dos tablas del DB‑SI vigente. Dentro del pack, checklist-diseno-sala.xlsx tiene el ítem #33 «Certificación de aforo y anchura de los recorridos de evacuación» sin importe, lo que confirma que el aforo se certifica con un técnico y no con esta regla de bolsillo.",
+     "fix": "«…1,5 m² por persona en zonas de público sentado (1 m² si es público de pie), según la tabla 2.1 del CTE DB‑SI», y sustituir «25 metros en riesgo bajo» por «25 m si la planta tiene salida única; 50 m con dos o más salidas».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 11: «Por eso el libro da dos totales: 30.230,00 € la dotación de carta y 45.303,75 € la ajustada al menú degustación, frente a los 26.000,00 € que el plan financiero reserva»",
+     "hallazgo": "El plan financiero presupuesta la dotación de CARTA para un restaurante que toda la guía modela como menú degustación. Las dos líneas del plan (26.000,00 € de vajilla + 4.230,00 € de mantelería) suman 30.230,00 €, que es exactamente el total de carta del checklist. La dotación que corresponde al modelo de negocio del pack es 45.303,75 €: faltan 15.073,75 € en el CAPEX que va al banco. La guía enseña las dos cifras pero nunca las lleva a la necesidad de financiación.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C15 = 26.000 («Vajilla, cristalería, cubertería») y C16 = 4.230 («Mantelería y textil») → 30.230,00. checklist-vajilla-cristaleria.xlsx, hoja «Vajilla, Cristalería»: G57 (TOTAL PRESUPUESTADO) = 30.230,0 y L59 (TOTAL AJUSTADO A MENÚ DEGUSTACIÓN) = 45.303,75. 45.303,75 − 30.230,00 = 15.073,75. El cap. 3 fija el escenario realista con el 40 % de comensales en menú largo y el 20 % en corto, y el cap. 11 se titula «menú de ocho a doce pases».",
+     "fix": "O el plan sube a 45.303,75 € (repartido entre vajilla y mantelería) y la necesidad total se recalcula, o el capítulo 11 dice sin rodeos que el plan financia una vuelta de carta y que la degustación pide 15.073,75 € más.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses», fila 31 «(-) IVA soportado (compras y gastos con IVA…)», y su nota A29",
+     "hallazgo": "El IVA soportado aplica un 10 % a TODA la materia prima, incluida la línea de bebida. La entrega de bebidas alcohólicas por un distribuidor va al 21 %: no es el servicio de hostelería, es una entrega de bienes. El modelo se deja unos 1.241 €/mes de IVA deducible, ~14.892 € al año, y por tanto sobreestima la liquidación del 303. Es conservador para la caja, pero es una hipótesis fiscal incorrecta en la hoja que el pack presenta como la capa de IVA.",
+     "evidencia": "Reconstruida la celda: H31 = 13.881,84 = 39.000 (B28, base de gastos con IVA) × 0,21 + 56.918,40 (H13, materia prima) × 0,10. Es decir, un único 10 % sobre el total de materia prima. De esa materia prima, plan-financiero-3-anos.xlsx, hoja «P&L Mensual», B14 «Bebidas (coste bodega)» = 11.282,04; al 21 % en lugar del 10 % son 1.241,02 €/mes más de IVA deducible.",
+     "fix": "Separar la línea de bebida en la base del IVA soportado y aplicarle el 21 %, o dejar una nota explícita de que el 10 % es una simplificación conservadora y que el IVA real de la compra de alcohol es del 21 %.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 5: «la licencia de actividad tarda meses en concederse (entre 2 y 6 según el ayuntamiento)»",
+     "hallazgo": "Contradice el plazo que da el propio pack, y en la dirección peligrosa: la guía dice 2-6 meses y la calculadora de CAPEX dice 4-8. Ese plazo es justo el que dimensiona la preapertura, o sea la partida que la guía describe como la que «hunde a quien abre».",
+     "evidencia": "calculadora-capex.xlsx, hoja «CAPEX», nota G17 de la fila «Preapertura (rentas y nóminas antes de abrir)»: «Rentas y suministros del local antes de abrir (la licencia tarda 4‑8 meses)». El Gantt refuerza el lado largo: cronograma-apertura-gantt.xlsx sitúa la solicitud de licencia de actividad en el mes 7 con 5 meses de duración (X16=7, Y16=5) y su resolución en el mes 14 (X21=14).",
+     "fix": "Unificar en 4-8 meses, que es lo que sostienen el Gantt y la calculadora.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 3, epígrafe «Modelo 2: carta premium con menú corto»: «La ocupación de la comida puede ser del 40 % y la de la cena del 90 %, y el número de cubiertos sigue siendo el mismo»",
+     "hallazgo": "La aritmética no da: con 65 plazas, el 40 % y el 90 % son 26 + 58,5 = 84,5 cubiertos, no los 70 del modelo. La frase afirma explícitamente que el total no cambia, y cambia en 14,5 cubiertos (un 21 %). El propio capítulo lo cuenta bien dos epígrafes más abajo: «25 cubiertos en el servicio de comida y 45 en el de cena».",
+     "evidencia": "pl-mensual-escenarios.xlsx, hoja «Escenarios», escenario realista: C6 = 25 («Cubiertos/día comida») y C7 = 45 («Cubiertos/día cena») → 25/65 = 38,5 % y 45/65 = 69,2 %. La guía usa la pareja correcta en el epígrafe del chef's table («una comida que ronda el 40 % de la sala y una cena que completa el resto»).",
+     "fix": "«La ocupación de la comida ronda el 40 % y la de la cena el 70 %», que son los 25 y 45 cubiertos del escenario realista.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "pl-mensual-escenarios.xlsx y calculadora-ticket-medio.xlsx, hoja «Ticket Medio», filas de precios del escenario Optimista (menú largo 120 frente a 130 del realista; menú corto 72 frente a 75; carta 82 frente a 85; maridaje 57 frente a 60)",
+     "hallazgo": "En el escenario OPTIMISTA todos los precios son más bajos que en el realista, sin una sola línea que lo explique. Puede ser deliberado (más volumen a menor precio: el optimista sube el mix de menú largo al 65 % y los cubiertos a 78), pero tal como está, un analista de riesgos que compare las tres columnas ve un escenario «optimista» que baja tarifas y no encuentra la hipótesis. La guía reproduce la tabla entera en el cap. 3 sin comentarla.",
+     "evidencia": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: B6/C6/D6 = 110/130/120; B8/C8/D8 = 70/75/72; B10/C10/D10 = 75/85/82; B12/C12/D12 = 55/60/57. El ticket ponderado sí sube (99,80 / 123,20 / 136,00, verificado a mano) porque lo levanta el mix, no el precio. No hay nota en la columna E que justifique la bajada de tarifas.",
+     "fix": "Añadir una nota en la fila de precios explicando que el optimista modela mayor penetración del menú largo a un precio ligeramente menor; o subir los precios del optimista por encima del realista, que es lo que un lector espera.",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 8, final del epígrafe «Extracción, climatización, ruido y consumo eléctrico»: «almacenamiento y cámaras, 13.000,00 . €»",
+     "hallazgo": "Puntuación rota en el cierre de la enumeración de presupuestos: un punto suelto entre el importe y el símbolo de moneda, con el « €» desplazado detrás. Es la última cifra de una lista de seis y queda a la vista.",
+     "evidencia": "Grep de puntuación anómala sobre las líneas 40-1167 del .md: dos aciertos, ambos en esta misma frase («,00 .» y «€ La»). El resto de la enumeración («cocina caliente, 78.000,00 €; cocina fría, 42.000,00 €…») está bien formada.",
+     "fix": "«almacenamiento y cámaras, 13.000,00 €.»",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10, epígrafe «Acústica: por qué condiciona la licencia…»: «No es un extra que se añade cuando llegan las molestar, sino una condición previa para abrir»",
+     "hallazgo": "Palabra corrompida: «las molestar» por «las molestias». Del mismo tipo que la «t» caída del cap. 21 que ya se corrigió, así que conviene revisar si el barrido de degradación del modelo se quedó corto en los capítulos 1-11.",
+     "evidencia": "Lectura directa del párrafo. Es agramatical: artículo femenino plural seguido de infinitivo.",
+     "fix": "«cuando llegan las molestias».",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 11, epígrafe «Criterios de compra…»: «es el seguro de que un pan rallado no rompa un servicio de doce pases»",
+     "hallazgo": "Frase sin sentido en su contexto. El párrafo habla de reposición garantizada de vajilla y de roturas; «un pan rallado» es una sustitución degenerada de algo como «un plato rayado» o «un plato roto». Rompe la lectura justo en el argumento de compra.",
+     "evidencia": "El párrafo completo trata de colecciones descatalogadas y de cubrir la rotura con un lote extra almacenado: «Si la colección está en fin de serie, la compra se cubre con un lote extra que se almacena y se consume al final. Esa partida de seguridad no es un capricho: es el seguro de que un pan rallado no rompa un servicio de doce pases.» No hay ninguna mención al pan rallado en todo el capítulo.",
+     "fix": "«…es el seguro de que un plato roto no arruine un servicio de doce pases.»",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 5: «(tras la vacatio de 2 meses desde su publicación el 13 de marzo)»",
+     "hallazgo": "Fecha de publicación equivocada y contradictoria con la que da el propio capítulo unos párrafos después. El RDL 8/2019 se publicó en el BOE el 12 de marzo de 2019; además, 13 de marzo más dos meses de vacatio daría el 13 de mayo, no el 12 de mayo que la misma frase declara como fecha de exigibilidad.",
+     "evidencia": "El mismo capítulo 5, en el epígrafe «Terraza, música, horarios y venta de alcohol», cita «(BOE-A-2019-3481 — Real Decreto-ley 8/2019, de 8 de marzo, artículo 10 y disposición final sexta, 2019-03-12)», es decir 12 de marzo. Las dos frases del mismo capítulo dan fechas de publicación distintas para la misma norma, y solo una es compatible con el 12/05/2019 que ambas fijan como entrada en vigor.",
+     "fix": "«desde su publicación el 12 de marzo».",
+     "bloquea": false
+    }
+   ]
+  },
+  {
+   "veredicto": "NO LISTO",
+   "resumen": "NO PUBLICAR. La cascada del IVA NO está cerrada: quedan seis focos vivos con el 21 % (dos de ellos dentro de los propios xlsx, incluida una hoja «Instrucciones» que se contradice a sí misma en dos líneas seguidas) y, lo más grave, la guía sigue enseñando a dividir el PVP de carta «entre 1,21» dos frases después de decir que el tipo es el 10 %, y sigue diciendo que de cada euro «0,638 € son margen» cuando el margen regenerado es 67,1 %. Además: (a) el plan de negocio que lee el banco afirma que la preapertura está DENTRO del CAPEX de 1.668.340,88 € y que esa cifra se financia con 700.000 + 1.189.944,24 € — que suman 1.889.944,24 €, no 1.668.340,88 €, y el propio xlsx dice explícitamente lo contrario; (b) llama «impuestos soportados» a los 221.603,36 € de rentas y nóminas de preapertura; (c) enumera 16 personas y tres áreas donde el cuadrante tiene 24 en dos; (d) su cronograma en prosa contradice la tabla Gantt impresa tres párrafos más abajo en el mismo documento; (e) su resumen ejecutivo trae cuatro ratios (78 % de ocupación, 1,6 rotaciones/servicio, ROE 12,4 %, payback 5,8 años) que no salen de ninguna celda y que la propia guía refuta («inferior a 0,6 mesas por servicio»). Y los defectos de salida que se daban por corregidos siguen en el .md, el .pdf y el .docx: «Margen EBITDA | 0,18 €» en los dos documentos principales, cuatro «N,NN . €» rotos, y una repetición degenerada «(la piel, la piel, la piel)» en el cap. 22. Verificado celda a celda contra los 18 xlsx: los checklists, los totales de CAPEX, la brigada, el cash flow y el cuadro de amortización SÍ cuadran; lo que falla es la prosa que los cita.",
+   "hallazgos": [
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 12 «Maridaje, copa y su peso en el ticket»: «La cuenta correcta exige pasar el precio de carta a base imponible dividiendo entre 1,21 antes de calcular el margen»",
+     "hallazgo": "RESTO DE LA CASCADA DEL IVA. La guía instruye al lector a dividir entre 1,21 para obtener la base imponible, dos frases después de afirmar en el mismo párrafo que «en sala ese IVA es el 10 % también para la bebida alcohólica». Quien siga la instrucción calculará mal todos los márgenes de bodega.",
+     "evidencia": "budget-bodega.xlsx, hoja «Bodega», C59 = 0.1 (etiqueta A59 = «IVA de la bebida alcohólica (%)»). La columna T («PVP sin IVA») divide entre 1,10: T5 = 36,3636 con F5 = 40. Aplicar 1,21 sobre 40 € daría 33,06 € y un food cost de 36,3 % en vez del 33,0 % que calcula la hoja (M5 = 0.33).",
+     "fix": "Sustituir «dividiendo entre 1,21» por «dividiendo entre 1,10» y revisar el resto del párrafo.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 12: «significa que, de cada euro que paga el cliente, 0,638 euros son margen antes de impuestos»",
+     "hallazgo": "CIFRA VIEJA SIN ACTUALIZAR POR LA CASCADA. 0,638 es el margen medio ANTERIOR (63,8 %). La misma frase empieza diciendo «Un margen del 67,1 % sobre PVP…», así que se contradice a sí misma en catorce palabras.",
+     "evidencia": "budget-bodega.xlsx, hoja «Bodega», L56 = 0.6710963455149501 (67,1 %) y M56 = 0.3289036544850499 (32,9 %). El 0,638 no existe en ninguna celda del libro.",
+     "fix": "«0,671 euros son margen».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "budget-bodega.xlsx, hoja «Instrucciones», celda A12: «El libro calcula el «PVP sin IVA» con el tipo de la bebida alcohólica (21 %, en celda)»",
+     "hallazgo": "EL XLSX SE CONTRADICE A SÍ MISMO. La regeneración AÑADIÓ la línea nueva (A24, «10 % en sala, en celda») pero NO borró la vieja (A12, «21 %, en celda»). Las dos frases, casi idénticas, conviven en la misma hoja de instrucciones que abre el cliente.",
+     "evidencia": "Leídas ambas celdas: A12 contiene «…(21 %, en celda)…» y A24 contiene «…(10 % en sala, en celda)…». La celda real es Bodega!C59 = 0.1.",
+     "fix": "Borrar A12 (y su fila) dejando solo A24.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio», nota C23: «10 % general de restauración y 21 % en la parte de bebida alcohólica»",
+     "hallazgo": "RESTO DE LA CASCADA DENTRO DEL XLSX. La nota que explica la celda del IVA sigue diciendo que la bebida alcohólica va al 21 %, cuando la celda vale 10 % y la fila que documenta aplica un 10 % plano a todo el ticket.",
+     "evidencia": "B23 = 0.1; C24 = 135.52 con fórmula =IF(C16=\"\",\"\",C16*(1+$B$23)); C16 = 123.2 → 123,20 × 1,10 = 135,52. No hay ningún tramo al 21 % en la fórmula.",
+     "fix": "Reescribir la nota: «10 % en restauración, incluida la bebida alcohólica servida en sala (art. 91.Uno.2.2 LIVA); el 21 % solo para venta para llevar».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4 «El IVA de la inversión es tesorería, no coste»: «Cuando pagas una factura de obra con IVA al 10 % (cash-flow-break-even.xlsx…) o una de bebida alcohólica al 21 % (cash-flow-break-even.xlsx…)»",
+     "hallazgo": "DOS ERRORES EN UNA FRASE, LOS DOS CON LA FUENTE CITADA EN CONTRA. (1) La obra de un local de restauración va al 21 %: el tipo reducido del 10 % del art. 91.Uno.2.10 LIVA es para obras de renovación en VIVIENDAS, no en un local comercial. (2) Cita la hoja del cash flow para justificar un 21 % en bebida alcohólica cuando esa hoja dice 10 %.",
+     "evidencia": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: B25 = 0.1 (IVA restauración), B26 = 0.1 (IVA bebida alcohólica), B27 = 0.21 (IVA general de gastos). La nota A29 de esa misma hoja dice «10 % en restauración, incluida la bebida alcohólica servida en sala… El 21 % es el tipo general y solo aplica a la venta para llevar».",
+     "fix": "Reescribir: el IVA de la obra y del equipamiento se soporta al 21 % (tipo general); el 10 % es el que se repercute en sala. Y citar B27, no B26.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4 «La proyección a tres años y la rampa de arranque»: «En la obra y el equipamiento, pagas un IVA que en restauración es del 10 % para la comida y del 21 % para la bebida alcohólica»",
+     "hallazgo": "RESTO DE LA CASCADA + INCOHERENCIA INTERNA. El mismo capítulo, unos párrafos antes, dice literalmente lo contrario: «el tipo de restauración es del 10 % y alcanza a todo lo que se consume en el local, también a la bebida alcohólica… El 21 % es el tipo general y sólo entra si vendes para llevar». Además mezcla IVA soportado de obra con IVA repercutido en sala.",
+     "evidencia": "Las dos frases están en el mismo capítulo del mismo fichero. La segunda coincide con cash-flow-break-even.xlsx!B26 = 0.1 y con escandallo-maestro.xlsx, hoja «Ficha (plantilla)», H31 = 0.1.",
+     "fix": "Eliminar la mención al 21 % en bebida alcohólica; el IVA de obra y equipamiento es el 21 % general.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4: «Esa cifra está dentro del CAPEX total de 1.668.340,88 €, que se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos propios»",
+     "hallazgo": "DINERO QUE NO CUADRA, DOS VECES. (1) Los 221.603,36 € de preapertura NO están dentro del CAPEX: el propio xlsx lo dice expresamente. (2) 700.000,00 + 1.189.944,24 = 1.889.944,24 €, que es la NECESIDAD TOTAL, no el CAPEX de 1.668.340,88 €. La aritmética de la frase no da por 221.603,36 €.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C27 (TOTAL CAPEX) = 1668340.88; C39 (TOTAL COSTES DE PREAPERTURA) = 221603.36; C46 (NECESIDAD TOTAL) = 1889944.24 = C27+C39. La nota A40 dice: «Esta partida no está entre los conceptos de la tabla de arriba: se suma aparte, en la necesidad total». Hoja «Financiación»: B31 = 1189944.24, B32 = 700000, B34 = 1889944.24.",
+     "fix": "«Esa cifra se suma APARTE al CAPEX de 1.668.340,88 €, y el total, 1.889.944,24 €, se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos propios.»",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4 «Fuentes de financiación y servicio de la deuda»: «es la suma de un CAPEX total de 1.668.340,88 €… más los impuestos soportados en la preapertura»",
+     "hallazgo": "AFIRMACIÓN FALSA SOBRE UNA PARTIDA DE 221.603,36 €. La diferencia entre el CAPEX y la necesidad total no son impuestos: son rentas y nóminas anteriores a la apertura. Llamarlas «impuestos soportados» ante un banco desvirtúa la naturaleza de la partida más discutible del expediente.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C37 = 102000.0 («Rentas y suministros de preapertura»), C38 = 119603.36 («Nóminas de preapertura»), C39 = 221603.36 («TOTAL COSTES DE PREAPERTURA»). Ninguna celda del libro contiene impuestos de preapertura.",
+     "fix": "«…más los 221.603,36 € de costes de preapertura (102.000,00 € de rentas y suministros y 119.603,36 € de nóminas)».",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md, §5 Plan de Operaciones: «La brigada está formada por 24 personas en plantilla, distribuidas en tres áreas: cocina, sala y gestión. En cocina trabajan el jefe de partida, dos cocineros…»",
+     "hallazgo": "EL DESGLOSE NO SUMA 24 Y LOS PUESTOS NO EXISTEN. La enumeración da 5 + 8 + 3 = 16 personas, inventa un área («gestión») que no está en el cuadrante y nombra puestos inexistentes (gerente, encargado de compras, responsable de administración, responsable de lavandería). Es el documento que lee el analista de riesgos, y el coste de personal de todo el plan depende de esa plantilla.",
+     "evidencia": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana»: 24 personas numeradas en A6:A30 en DOS bloques, «COCINA» (B5, filas 6-20 = 15 personas) y «SALA» (B21, filas 22-30 = 9 personas). La confirma checklist-diseno-sala.xlsx!H33: «son las 24 personas del cuadrante de plantilla-turnos-brigada.xlsx (15 de cocina y 9 de sala), que es la fuente única de plantilla de este producto». No hay ningún puesto de «gestión», ni gerente, ni compras, ni administración.",
+     "fix": "Reescribir el párrafo con los 24 puestos reales del cuadrante (15 cocina / 9 sala) o remitir directamente a la tabla de plantilla que el propio documento imprime en el §6.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md, §5: las cinco fases en prosa («Mes 1-3: Legalización y proyecto… Mes 4-8: Obra y equipamiento… Mes 9-11: Contratación… Mes 15-18: Apertura») frente a la tabla «Cronograma de apertura a 18 meses» impresa inmediatamente debajo",
+     "hallazgo": "EL DOCUMENTO SE CONTRADICE CONSIGO MISMO EN LA MISMA PÁGINA. La prosa sitúa la licencia de obras en los meses 1-3 y la tabla en el 7; la obra en 4-8 y la tabla en 9-12; la contratación de brigada en 9-11 y la tabla en el 12; la apertura en 15-18 y la tabla en el 17. Un analista que compare prosa y Gantt concluye que el calendario no está hecho.",
+     "evidencia": "cronograma-apertura-gantt.xlsx, hoja «Gantt»: X15 = 7 («Solicitud licencia de obras»), X19 = 9 / Y19 = 4 («Obra civil y reforma integral»), X26 = 12 («Selección y contratación brigada cocina»), X37 = 17 («Apertura oficial»). La tabla del business plan reproduce estos mismos valores.",
+     "fix": "Reescribir la prosa de las cinco fases a partir de los meses reales del Gantt.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md, §5: «El equipo completo de 24 personas se contrata con al menos 6 semanas de antelación a la apertura»",
+     "hallazgo": "TERCERA VERSIÓN DEL MISMO DATO. El Gantt contrata la brigada en el mes 12 para abrir en el 17 (cinco meses) y el plan financiero presupuesta DOS meses de nómina antes de abrir. Las nóminas de preapertura, 119.603,36 €, dependen de este número: seis semanas equivalen a la mitad de lo presupuestado.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C36 = 6? No: C36 = 2 («Meses de nómina de la brigada ANTES de abrir») y C38 = 119603.36 = 59801.68 × 2. cronograma-apertura-gantt.xlsx: X26 = 12 (brigada) y X37 = 17 (apertura).",
+     "fix": "Alinear las tres fuentes: decir «dos meses de nómina antes de abrir» y hacer coincidir el Gantt con esa hipótesis.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md y guia-restaurante-gastronomico.md, tabla «Cuenta de resultados del mes tipo»: fila «| Margen EBITDA | 0,18 € |  |»",
+     "hallazgo": "PORCENTAJE IMPRESO COMO FRACCIÓN DECIMAL CON SÍMBOLO DE EURO. Exactamente el defecto que se daba por corregido, vivo en los DOS documentos principales y en sus PDF y DOCX. El margen EBITDA es 17,9 %, no 0,18 €, y la columna en la que aparece se titula «Importe (€)».",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual», B35 = 0.1792456569404622 (etiqueta A35 = «Margen EBITDA»). En la misma tabla del documento, la fila EBITDA ya imprime «17,9 %» en la columna de porcentaje, así que el 0,18 € es puro artefacto de formato. Confirmado en business-plan-modelo.pdftxt (1 ocurrencia) y en guia-restaurante-gastronomico.pdftxt.",
+     "fix": "Imprimir «17,9 %» en la columna «% s/ventas» y dejar vacía la de importe.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "guia-restaurante-gastronomico.md, cap. 15 «El precio de carta lleva IVA»: «Si por error pones 35,71 en la carta, el food cost real es 10 / 35,71 = 28 por ciento… y el food cost real sobre lo que cobras es 28 por ciento»",
+     "hallazgo": "EL EJEMPLO DIDÁCTICO DA EL RESULTADO CONTRARIO AL QUE ENSEÑA. El epígrafe se titula «qué le pasa al food cost si lo olvidas» y dos frases antes afirma «el food cost real sube». Luego calcula 28 %. Si pones 35,71 € en carta (que en España va con IVA), tu base es 35,71/1,10 = 32,46 € y el food cost real es 10/32,46 = 30,8 %. La plantilla del propio pack lo dice con esa cifra exacta.",
+     "evidencia": "escandallo-maestro.xlsx, hoja «Ficha (plantilla)», A37: «con un objetivo del 28 % y el IVA al 10 %, sube al 30,8 %». H4 = 0.28 (food cost objetivo) y H31 = 0.1 (IVA). La fila G35 se llama literalmente «Food cost si pusieras el PVP SIN IVA en la carta (%)».",
+     "fix": "Rehacer el pasaje: el food cost real pasa del 28 % al 30,8 %, como calcula la fila G35 de la ficha.",
+     "bloquea": true
+    },
+    {
+     "severidad": "alta",
+     "donde": "business-plan-modelo.md, §1 Resumen Ejecutivo: «una ocupación media del 78% en el primer año, un ticket medio de 123,20 € por comensal y una rotación de 1,6 veces por servicio»",
+     "hallazgo": "DOS RATIOS INVENTADOS EN EL RESUMEN EJECUTIVO, REFUTADOS POR LA PROPIA GUÍA. Con 65 plazas y 70 cubiertos repartidos en dos servicios, la rotación es 35/65 = 0,54 por servicio; 1,6 rotaciones por servicio serían 208 cubiertos/día, tres veces el modelo. Y §8 del mismo documento afirma «una ocupación media del 72% sobre la capacidad diaria» para 53,8 cubiertos: 78 % para 70 y 72 % para 53,8 no pueden ser ciertos a la vez bajo ninguna definición de capacidad.",
+     "evidencia": "calculadora-ticket-medio.xlsx!C17 = 70 (cubiertos/día); pl-mensual-escenarios.xlsx!C6 = 25 y C7 = 45 (comida/cena). guia-restaurante-gastronomico.md, cap. 3: «Con 70 cubiertos repartidos entre dos servicios, la rotación media es inferior a 0,6 mesas por servicio, un dato que ningún inversor debería ignorar». Ninguna celda de los 18 libros contiene 0,78, 1,6 ni 0,72.",
+     "fix": "Sustituir por los ratios que sí calcula el pack (0,54 rotaciones por servicio; 70 sobre 130 plazas-servicio = 53,8 % de ocupación) o suprimirlos.",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md, §1: «La rentabilidad sobre fondos propios se sitúa en el 12,4% al tercer año, y el plazo de recuperación de la inversión (payback) es de 5,8 años»",
+     "hallazgo": "DOS CIFRAS SIN RESPALDO EN NINGUNA CELDA, Y EL ROE ESTÁ MAL. Con los datos del propio plan el ROE del año 3 es del 25,0 %, el doble de lo que se declara al banco. El payback de 5,8 años no se obtiene ni con EBITDA (~4,3 años) ni con resultado neto (~7 años).",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años», D23 (Resultado neto año 3) = 297607.07513531623; hoja «Financiación», B31 (Fondos propios) = 1189944.24 → 297607,08/1.189.944,24 = 0,2501. Grep sobre el volcado completo de los 18 libros: no existe ningún 0,124 ni 5,8.",
+     "fix": "Recalcular ROE = 25,0 % y payback con el criterio que se declare (EBITDA o flujo libre), o eliminar ambas líneas.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cuatro puntos: cap. 8 «almacenamiento y cámaras, 13.000,00 . €», cap. 15 «el margen medio ponderado de la carta de ejemplo es 18,58 . €», cap. 21 «una partida de 9.900,00 . €» y «un punto medio de 10.000,00 . €»",
+     "hallazgo": "GLIFO ROTO: EL PUNTO FINAL SE HA COLADO DELANTE DEL SÍMBOLO DE EURO. Cuatro veces, y en las tres salidas entregadas (.md, .pdf y .docx). La frase siguiente arranca sin puntuación: «…13.000,00 .€ La suma de estas partidas…». Es visible en la primera lectura del PDF de 119 páginas.",
+     "evidencia": "Regex [\\d,.]+\\s*\\.\\s*€ sobre los tres .md: 4 coincidencias, todas en la guía. Confirmadas en guia-restaurante-gastronomico.pdftxt y .docxtxt («18,58 . €», «9.900,00 . €»). Los importes en sí son correctos (plan-financiero-3-anos.xlsx!Inversión C12 = 13000, C19 = 9900; menu-engineering-matrix.xlsx!G31 = 18.580645161290324; calculadora-capex.xlsx!D12 = 10000).",
+     "fix": "Reemplazar «N,NN . €» por «N,NN €.» en los cuatro puntos y regenerar PDF y DOCX.",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 22 «Experiencia, formato y duración del servicio»: «transforma un coste (la piel, la piel, la piel) en un ingrediente con valor»",
+     "hallazgo": "SALIDA DEGENERADA DEL MODELO NO CORREGIDA. La misma patología que se saneó en el cap. 15 sigue viva en el 22, y llega hasta el PDF y el DOCX que se entregan al cliente.",
+     "evidencia": "grep -c \"la piel, la piel, la piel\": 1 en guia-restaurante-gastronomico.md, 1 en .pdftxt y 1 en .docxtxt. Es la única repetición de este tipo en los tres documentos (barrido con regex de n-gramas repetidos).",
+     "fix": "«transforma un coste (la piel, el tallo, el recorte) en un ingrediente con valor».",
+     "bloquea": true
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10 «Mobiliario, mesas y confort»: «se divide entre los 65 comensales que van a sentarse cada servicio, y se multiplica por los 300 días de apertura»",
+     "hallazgo": "CONSTANTE CONTRADICHA: 300 DÍAS FRENTE A LOS 264 DEL MODELO. El pack entero se calcula con 22 días de apertura al mes, es decir 264 al año. Los 300 días inflan un 14 % la base sobre la que se justifica la partida de mobiliario de 62.000 €.",
+     "evidencia": "calculadora-ticket-medio.xlsx!C19 = 22 y pl-mensual-escenarios.xlsx!C10 = 22 («Días abierto/mes»). 22 × 12 = 264. El propio business plan §5 dice «El modelo trabaja con 22 días de apertura al mes… cada día de apertura de más o de menos mueve la facturación en 8.624,00 €».",
+     "fix": "«…y se multiplica por los 264 días de apertura al año (22 al mes)».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10: «El ruido de fondo, el que se percibe pero no molesta, se sitúa en torno a los 45 decibelios. Por encima de 60, la conversación se convierte en esfuerzo» — frente a la tabla del checklist impresa en el mismo capítulo",
+     "hallazgo": "EL TEXTO CONTRADICE AL ENTREGABLE QUE REPRODUCE UNAS LÍNEAS MÁS ABAJO. La tabla del checklist de diseño de sala, en la misma página, fija «Nivel sonoro objetivo: 60‑65 dB en servicio», es decir justo el rango que el texto describe como fatigante. El cap. 8 refuerza el 45 dB («El nivel sonoro en sala no debe superar los 45 decibelios en servicio normal»).",
+     "evidencia": "checklist-diseno-sala.xlsx, hoja «Diseño de Sala (FOH)», fila 15 (#15, bloque «Acústica»): «Nivel sonoro objetivo: 60‑65 dB en servicio». El texto de la guía es 45 dB en dos capítulos.",
+     "fix": "Elegir un criterio y aplicarlo a los tres sitios (texto cap. 8, texto cap. 10 y celda del checklist).",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 1 «Perfil del promotor»: «¿estás dispuesto a dirigir una operación donde el 70 % de tus costes fijos son personas?»",
+     "hallazgo": "PORCENTAJE FALSO. El personal es el 60,5 % de los costes fijos sin amortización, no el 70 %. Bajo la otra lectura posible (sobre costes totales) sería el 38,4 %. El 70 % que sí existe en el modelo es el margen de contribución.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: B20 (Personal cocina) = 38390.01, B21 (Personal sala) = 21411.67, B32 (TOTAL COSTES FIJOS sin amortización) = 98801.68 → (38390,01+21411,67)/98801,68 = 0,6053.",
+     "fix": "«…donde el 60 % de tus costes fijos son personas».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "plan-financiero-3-anos.xlsx, hoja «Inversión», celda A40: «El cronograma de este mismo pack firma el arrendamiento en el mes 3 y contrata la brigada en el 12 para abrir en el 18»",
+     "hallazgo": "LA NOTA QUE JUSTIFICA LOS 221.603,36 € DE PREAPERTURA CITA MAL EL CRONOGRAMA DEL PROPIO PACK. El arrendamiento se firma en el mes 4, no en el 3, y la apertura oficial es el mes 17, no el 18 (el 18 es la monitorización posterior). Solo el mes 12 de la brigada es correcto.",
+     "evidencia": "cronograma-apertura-gantt.xlsx, hoja «Gantt»: X8 = 4 («Negociación y firma del arrendamiento (con carencia)»), X26 = 12 («Selección y contratación brigada cocina»), X37 = 17 («Apertura oficial»), X38 = 18 («Primeros 30 días: monitorización»).",
+     "fix": "«…firma el arrendamiento en el mes 4 y contrata la brigada en el 12 para abrir en el 17».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md, §7: «Con un ticket medio con IVA de 135,52 € y una ocupación prevista de 70 cubiertos al día, la facturación diaria estimada es de 8.624,00 €»",
+     "hallazgo": "LA OPERACIÓN NO DA. 135,52 × 70 = 9.486,40 €. Los 8.624,00 € son 123,20 × 70, es decir el ticket SIN IVA. La frase cruza la base con IVA con la facturación sin IVA, y luego calcula la pérdida por no-show (2 × 135,52 = 271 €, «un 3,1 %») sobre esa base equivocada: con la base correcta serían 246,40 € y un 2,9 %.",
+     "evidencia": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: C16 = 123.2, C24 = 135.52, C17 = 70, C18 (Facturación diaria) = 8624.0. El propio manual, dos viñetas más abajo, distingue correctamente los dos tickets.",
+     "fix": "«Con un ticket medio sin IVA de 123,20 € y 70 cubiertos al día, la facturación diaria estimada es de 8.624,00 €. Un no-show de una mesa de dos reduce esa cifra en 246,40 € (un 2,9 %).»",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md, §7 («Para grupos de seis o más personas, el depósito equivale al 50%… En reservas individuales o de pareja, se aplica una cantidad simbólica») frente a su propia tabla («Reserva de 1 a 4 comensales | Tarjeta en garantía, sin cargo previo» / «Reserva de 5 o más | Depósito por comensal») y a guia-restaurante-gastronomico.md cap. 20 («si el grupo supera las 6 personas»)",
+     "hallazgo": "POLÍTICA DE RESERVAS CONTRADICTORIA EN TRES SITIOS. Umbral del depósito: 6 o más (prosa del manual), 5 o más (tabla del manual), más de 6 (guía). Y la prosa cobra «cantidad simbólica» a individuales y parejas mientras la tabla dice «sin cargo previo». La devolución también: la prosa reconoce un tramo de 24-48 h con el 50 %, la tabla solo tiene «más de 48 h» y «menos de 24 h», y la guía cap. 20 dice «hasta 48 horas antes; de ahí en adelante, el depósito se retiene».",
+     "evidencia": "Los tres textos están en los ficheros citados; es política que se comunica por escrito al cliente al reservar, así que la divergencia es contractual, no editorial.",
+     "fix": "Fijar un único umbral y un único cuadro de devolución, y propagarlo al manual (prosa y tabla) y al cap. 20 de la guía.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 20: «Se invita a un máximo de ochenta personas… con un formato de cóctel de pie, con seis o siete platos… El coste del evento se cubre con la partida de marketing de lanzamiento de 15.000,00 €» frente a, en el mismo capítulo, «con 60 invitados… Se sirve el menú de degustación completo, con el maridaje estándar… El coste del evento sale de las partidas de marketing sin importe»",
+     "hallazgo": "EL MISMO EVENTO INAUGURAL, DESCRITO DOS VECES Y DE FORMA INCOMPATIBLE, EN EL MISMO CAPÍTULO: 80 vs 60 invitados, cóctel de pie vs menú degustación completo con maridaje, y dos fuentes de financiación distintas y excluyentes.",
+     "evidencia": "Ambos pasajes están en el cap. 20 del mismo fichero. La partida de marketing de lanzamiento es plan-financiero-3-anos.xlsx!Inversión C21 = 15000; las partidas sin importe son checklist-marketing-preapertura.xlsx!G43 = 5.",
+     "fix": "Dejar una sola descripción del evento y una sola fuente de financiación.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 21 «Gestión de alérgenos y de preferencias en la ficha del comensal»: «El artículo 34.9 del Estatuto de los Trabajadores… fija en 4 años el plazo de conservación de los datos»",
+     "hallazgo": "NORMA MAL APLICADA. El art. 34.9 ET regula el registro de jornada de los TRABAJADORES; no fija ningún plazo de conservación de los datos de salud de los COMENSALES, que se rigen por el RGPD. El epígrafe anterior del mismo capítulo lo dice bien («Para los datos de comensales, el criterio es distinto»), así que el capítulo se contradice.",
+     "evidencia": "Los dos epígrafes consecutivos están en el cap. 21 del mismo fichero. La referencia correcta para el dato del comensal es el RGPD (art. 9 y principio de limitación del plazo de conservación), no el ET.",
+     "fix": "Suprimir la referencia al art. 34.9 ET en el epígrafe de alérgenos y remitir al RGPD y a la conservación por trazabilidad APPCC.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 4, párrafo final: «Cuando termina la carencia, la cuota mensual sube a 8.232,00 €, que es la que se usa para calcular el umbral de equilibrio con deuda… Esa cuota es fija durante toda la vida del préstamo»",
+     "hallazgo": "SE CONTRADICE CON EL PROPIO CAPÍTULO Y CON EL XLSX. Dos epígrafes antes la guía insiste en que el umbral de 145.728,59 € usa la cuota DURANTE la carencia (3.208,33 €) y no la plena. Y «fija durante toda la vida del préstamo» es falso: durante los 12 meses de carencia son 3.208,33 €.",
+     "evidencia": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: B49 (Cuota mensual del préstamo) = 3208.33, B50 (Umbral con deuda) = 145728.58571428573. plan-financiero-3-anos.xlsx, hoja «Financiación»: B12 = 8231.997943918335, B13 = 3208.3333333333335, B14 = 12 meses de carencia.",
+     "fix": "«…la cuota mensual sube a 8.232,00 €, y el umbral con deuda pasa entonces a 152.905,26 € (56,4 cubiertos/día). La cuota es fija a partir del mes 13; durante la carencia son 3.208,33 €.»",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana», columna I (Sáb) — y guia-restaurante-gastronomico.md cap. 1: «La brigada de 24 personas… es la dotación mínima para dar dos servicios al día con 70 cubiertos»",
+     "hallazgo": "EL CUADRANTE DEJA EL SÁBADO CON CINCO PERSONAS EN TODO EL RESTAURANTE. Trabajan tres jefes de partida, un commis y un camarero de rango. No hay chef, ni sous chef, ni maître, ni sommelier, ni hostess, ni runner, ni plonge. Es materialmente imposible dar dos servicios de menú degustación a 65 plazas, y el sábado es la noche que sostiene la semana de un gastronómico.",
+     "evidencia": "Recorrida la columna I (Sáb) de las filas 6-20 y 22-30: solo I8, I9, I10 = 'P' (Jefe Partida Carnes / Pescados / Fríos), I16 = 'T' (Commis 5) e I27 = 'P' (Camarero Rango 4). El reparto por día es Lun 23, Mar 21, Mié 19, Jue 18, Vie 14, Sáb 5, Dom 12. (El descanso de 12 h del art. 34.3 ET sí se respeta: no hay ninguna secuencia T/P → M.)",
+     "fix": "Rehacer el reparto semanal de descansos: el sábado necesita, como mínimo, jefatura de cocina, maître y dotación de sala.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 13 «Turnos, jornada anual y descanso entre jornadas»: «es el resultado de cubrir dos servicios diarios, seis días a la semana»",
+     "hallazgo": "CONTRADICE LA CONSTANTE DE 22 DÍAS/MES. 22 días al mes son 264 al año, es decir 5,1 días por semana; seis días a la semana serían 26 al mes y dispararían tanto la facturación como el coste de personal del modelo.",
+     "evidencia": "calculadora-ticket-medio.xlsx!C19 = 22; pl-mensual-escenarios.xlsx!C10 = 22; plantilla-turnos-brigada.xlsx!C49 = 5 («Días de trabajo por semana»).",
+     "fix": "«…dos servicios diarios, cinco días a la semana (22 días de apertura al mes)».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 5: «recuerda que el libro de visitas ya no existe: fue derogado por la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores»",
+     "hallazgo": "CITA NORMATIVA QUE NO COINCIDE CON EL ENTREGABLE DEL PROPIO PACK. El checklist legal del kit atribuye la derogación a la Ley 23/2015 y a la Orden ESS/1452/2016, que es la cadena correcta (la Ley 14/2013 solo anunció el libro de visitas electrónico). Dos normas distintas para el mismo hecho en dos piezas del mismo producto.",
+     "evidencia": "checklist-legal.xlsx, hoja «Legal», H38 (fila 34, «Registro diario de jornada»): «Sustituye al libro de visitas, derogado (Ley 23/2015 y Orden ESS/1452/2016)».",
+     "fix": "Unificar en la guía la referencia del checklist (Ley 23/2015 y Orden ESS/1452/2016).",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 5: «Esa obligación entró en vigor el 12 de mayo de 2019 (tras la vacatio de 2 meses desde su publicación el 13 de marzo)»",
+     "hallazgo": "FECHA DE PUBLICACIÓN INCORRECTA E INCOHERENTE CON EL RESTO DEL PACK. El RDL 8/2019 se publicó en el BOE el 12 de marzo de 2019 (BOE núm. 61), no el 13. La propia guía lo cita bien en el cap. 13 («publicado el 12 de marzo de 2019») y el business plan también («BOE-A-2019-3481… 2019-03-12»). Con el 13 de marzo, además, la vacatio de dos meses no cuadra con el 12 de mayo que el mismo párrafo declara.",
+     "evidencia": "Tres menciones en el pack: cap. 5 «13 de marzo», cap. 13 «publicado el 12 de marzo de 2019», business-plan-modelo.md «(2019-03-12)».",
+     "fix": "«…desde su publicación el 12 de marzo».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "business-plan-modelo.md, §9: «El EBIT, por su parte, es negativo: -2.419,52 €. Es decir, en el peor de los casos previstos, el restaurante generaría pérdidas operativas antes de impuestos y amortizaciones»",
+     "hallazgo": "ERROR CONCEPTUAL CONTRA LA DOCTRINA DEL PROPIO PACK. «Antes de amortizaciones» es el EBITDA, que en el escenario pesimista es POSITIVO (3.580,48 €). El EBIT negativo lo es precisamente DESPUÉS de la amortización. La guía y los xlsx repiten esa distinción una y otra vez («un EBITDA con la amortización dentro es un EBIT con otro nombre»), y es el tipo de frase que un analista de riesgos subraya.",
+     "evidencia": "pl-mensual-escenarios.xlsx, hoja «Escenarios»: B21 (EBITDA mensual) = 3580.479999999996, B23 (Amortización) = 6000, B24 (EBIT) = -2419.520000000004. plan-financiero-3-anos.xlsx!P&L Mensual, nota D30: «Queda FUERA del EBITDA (fila 32) y resta en el EBIT (fila 37)».",
+     "fix": "«…generaría pérdidas operativas DESPUÉS de amortizaciones, aunque el EBITDA siga siendo positivo».",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 11 «Cristalería»: «el checklist de vajilla y cristalería trabaja con una rotación de lavado de 1,5 veces por servicio, que es la misma vuelta y media fijada al principio del capítulo»",
+     "hallazgo": "LA DOTACIÓN DE CRISTALERÍA SE DIMENSIONA PARA UN SERVICIO ÚNICO EN UN RESTAURANTE DE DOS SERVICIOS. El propio capítulo dice, tres párrafos antes, «Si el local prevé dos servicios seguidos, la segunda vuelta necesita otro parque igual. Si el servicio es único… basta una vuelta y media». El modelo tiene dos servicios (25 comidas + 45 cenas), así que 1,5 vueltas se queda corto según el criterio que el propio texto establece.",
+     "evidencia": "pl-mensual-escenarios.xlsx, hoja «Escenarios»: C6 = 25 (cubiertos/día comida), C7 = 45 (cubiertos/día cena). checklist-vajilla-cristaleria.xlsx: columna J con 98,0 (= 65 × 1,5) y 195,0 (= 65 × 1,5 × 2 piezas), y L59 (TOTAL AJUSTADO A MENÚ DEGUSTACIÓN) = 45303.75.",
+     "fix": "Explicitar si la vuelta y media asume lavado entre servicios; si no, dimensionar a dos vueltas y ajustar el total del checklist.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 5: «dentro de esa cifra hay 34.000,00 € de fianza de arrendamiento… que no aparecen en ninguna partida del CAPEX del plan financiero: es una salida de caja real que hay que sumar aparte a la necesidad de financiación»",
+     "hallazgo": "EL PLAN QUE VA AL BANCO NO RECOGE ESA SALIDA DE CAJA. La guía advierte de 34.000 € que faltan, pero business-plan-modelo.md no menciona la fianza en ningún punto y su §10 pide exactamente 1.889.944,24 €; la hoja «Financiación» cierra con diferencia 0,00 €, es decir, declara el proyecto financiado al céntimo cuando la propia guía dice que faltan 34.000 €.",
+     "evidencia": "checklist-legal.xlsx, hoja «Legal», fila 50 (#46, «Fianza legal de 2 mensualidades…»), G50 = 34000.0, H50: «Dos mensualidades de la renta, que es el mínimo legal del art. 36 LAU para uso distinto de vivienda» (2 × 17.000 € = 34.000 €, correcto). plan-financiero-3-anos.xlsx, hoja «Financiación»: B30 = 1889944.24, B34 = 1889944.24, B35 = -0.0. Búsqueda de «fianza» en business-plan-modelo.md: 0 resultados.",
+     "fix": "Incorporar la fianza (y la garantía adicional si la hay) a la necesidad total, o declararla expresamente en el §4 y el §10 del plan de negocio como salida de caja no financiada.",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "manual-servicio-sala.md, §3: la prosa («El tiempo objetivo para tomar la comanda completa… es de cinco minutos como máximo» y «Esta explicación debe durar menos de un minuto») frente a su tabla «Tiempos objetivo de los primeros minutos» («Toma de comanda cerrada | menos de 8 minutos» y «Explicación del menú | menos de 5 minutos»)",
+     "hallazgo": "EL DOCUMENTO CON EL QUE SE FORMA AL EQUIPO DA DOS TIEMPOS DISTINTOS PARA LA MISMA TAREA, EN LA MISMA PÁGINA. Un camarero en formación no puede saber si la comanda se cierra en 5 o en 8 minutos, ni si la explicación del menú dura 1 o 5.",
+     "evidencia": "Ambos textos están en el §3 del mismo fichero, separados por menos de una página.",
+     "fix": "Unificar prosa y tabla (la tabla es la que se cuelga en el office).",
+     "bloquea": false
+    },
+    {
+     "severidad": "media",
+     "donde": "guia-restaurante-gastronomico.md, cap. 14: «El briefing diario, que recomendamos fijar a las 11:45» frente a manual-servicio-sala.md §2: «El briefing comienza a las 13:00 y no supera los quince minutos»",
+     "hallazgo": "HORA DEL BRIEFING CONTRADICTORIA ENTRE LA GUÍA Y EL MANUAL DE SALA. Hora y cuarto de diferencia en un procedimiento operativo que el manual describe al minuto (mise en place 9:00-12:45, pase de sala 12:45, briefing 13:00).",
+     "evidencia": "Los dos pasajes están en los ficheros citados. El manual encadena además «Cualquier incidencia se corrige antes de las 13:00, momento en que el equipo se reúne para el briefing», así que las 11:45 de la guía chocan con toda la secuencia horaria del manual.",
+     "fix": "Alinear la guía con el manual (13:00) o al revés.",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 14: «los 21.411,67 € mensuales representan algo menos de un tercio del coste total de personal»",
+     "hallazgo": "REDONDEO AL REVÉS. Son el 35,8 %, es decir algo MÁS de un tercio.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: B21 = 21411.67, B20 = 38390.01 → 21.411,67 / 59.801,68 = 0,358.",
+     "fix": "«algo más de un tercio».",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "business-plan-modelo.md, §10, tabla «Condiciones de la operación solicitada»: «| Tipo mensual (%) | 0,5 % |»",
+     "hallazgo": "REDONDEO QUE NO CUADRA CON EL NOMINAL DECLARADO. El tipo mensual real es 0,4583 %. Un analista que multiplique el 0,5 % impreso por 12 obtiene un 6 % anual, no el 5,5 % que se pide en la misma tabla.",
+     "evidencia": "plan-financiero-3-anos.xlsx, hoja «Financiación»: B7 = 0.055, B10 = 0.004583333333333333.",
+     "fix": "Imprimir cuatro decimales: «0,4583 %».",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 7, tabla «Reparto de superficie para 65 plazas»: fila «| TOTAL | 280 a 340 |»",
+     "hallazgo": "EL TOTAL NO ES LA SUMA DE SUS FILAS. Los mínimos suman 266 m² y los máximos 357 m², no 280 a 340. El texto justifica aparte el suelo de 280 («por eso esta guía fija el mínimo en 280 m²»), pero el techo de 340 queda 17 m² por debajo de la suma de los máximos.",
+     "evidencia": "Filas de la tabla: 120-160 + 70-90 + 25-35 + 15-20 + 18-25 + 10-15 + 8-12 → 266 a 357.",
+     "fix": "Ajustar los rangos por zona o etiquetar la fila como «Superficie de trabajo recomendada», no como TOTAL.",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 1: «Ese ratio de un empleado por cada 2,7 comensales»",
+     "hallazgo": "EL RATIO MEZCLA DOS BASES. 2,7 sale de 65 plazas / 24 personas; la frase que lo precede habla de «70 cubiertos al día», y 70/24 = 2,9. El propio capítulo, más abajo, usa la base correcta («por cada cubierto servido hay algo más de un tercio de persona», 24/70 = 0,34).",
+     "evidencia": "plantilla-turnos-brigada.xlsx: 24 personas. calculadora-ticket-medio.xlsx!C17 = 70 cubiertos/día. 65/24 = 2,708; 70/24 = 2,917.",
+     "fix": "«un empleado por cada 2,9 comensales servidos» (o decir explícitamente que el ratio es sobre plazas).",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "guia-restaurante-gastronomico.md, cap. 10 «Accesibilidad, aseos y evacuación»: «la densidad de ocupación se cuenta como una persona por metro cuadrado de superficie de uso público»",
+     "hallazgo": "DENSIDAD NORMATIVA PROBABLEMENTE MAL CITADA. El CTE DB‑SI (tabla 2.1) asigna 1,5 m²/persona a las zonas de servicio de mesas de restaurantes; 1 persona/m² es la densidad de zonas de público DE PIE. No puedo probarlo contra ninguna celda del pack porque ningún xlsx recoge la densidad de ocupación: lo que me falta es la tabla 2.1 del DB‑SI, que no está en los entregables. El error va del lado conservador (sobreestima el aforo), pero es una cita normativa que un técnico corregiría.",
+     "evidencia": "Ningún libro del pack contiene una celda de densidad de ocupación (barrido de los 18 xlsx). La afirmación solo existe en el texto de la guía.",
+     "fix": "Verificar contra el CTE DB‑SI tabla 2.1 y, si procede, escribir «1,5 m² por persona en zonas de servicio de mesas».",
+     "bloquea": false
+    },
+    {
+     "severidad": "baja",
+     "donde": "business-plan-modelo.md, §9: «(Revista Hostelería, sobre el informe de Delectate, 2026-02-11)» y «según el informe de cierre de 2025, la hostelería finalizó el año con un aumento de la facturación hasta el 4 %… (2025-12-16)»",
+     "hallazgo": "DOS DEFECTOS DE CITA EN EL DOCUMENTO QUE VA AL BANCO: la fuente se llama Delectatech (así se escribe en el resto del pack) y la segunda cita solo lleva fecha, sin nombre de medio ni de informe — jerga de plantilla que quedó sin rellenar.",
+     "evidencia": "guia-restaurante-gastronomico.md, cap. 2, escribe siempre «Delectatech» («según el informe de Delectatech sobre más de 250.000 establecimientos»). La cita huérfana «(2025-12-16)» corresponde, según el cap. 2, a «Hostelería Digital, sobre el Anuario 2025 de Hostelería de España».",
+     "fix": "Corregir «Delectate» → «Delectatech» y completar la cita con medio y título.",
+     "bloquea": false
+    }
+   ]
+  }
+ ]
+}
