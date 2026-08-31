@@ -770,6 +770,25 @@ siguiente sesión (ver 20.5).
 Fuente: `auditorias/guias-v2-critico-final-2026-09-01.json` (120 hallazgos; filtrar por `bloquea: true` → 58).
 Están agrupados en cuatro lentes: `guia-1-11`, `guia-12-22`, `bonus` (business plan + manual) y `constantes`.
 
+> ✅ **La SÍNTESIS del crítico cerró después del cierre de sesión y está guardada:**
+> `auditorias/guias-v2-critico-SINTESIS-2026-09-01.json`. **Usar ÉSTA, no los 120 en bruto**: trae la lista depurada
+> y verificada celda a celda —**47 bloqueantes** y 15 que pueden esperar—, y cada uno lleva `texto_a_localizar` (para
+> encontrarlo sin números de línea) y `fix`. Reparto: 33 en la guía · 6 en el business plan · 3 en el manual · **4 en
+> los xlsx, que están LIVE**.
+>
+> ⚠️ **Cuatro bloqueantes tocan xlsx PUBLICADOS** (`plan-financiero-3-anos` ×2, `budget-bodega`,
+> `calculadora-ticket-medio`, `plantilla-turnos-brigada`). Los dos de la cascada del IVA en los libros ya se
+> arreglaron en `72668fc`; **verificar los otros antes de dar la lista por buena** — el crítico corrió sobre la
+> versión anterior a ese commit.
+>
+> **Dos que no estaban en mi lectura parcial y son gordos:**
+> · **Descuadre de 221.603,36 € en el cap. 4:** la guía dice que la preapertura está DENTRO del CAPEX de
+>   1.668.340,88 € y que eso se financia con 700.000 + 1.189.944,24 — pero esa suma da **1.889.944,24 €**. La
+>   preapertura va aparte (lo dice la propia hoja). Es lo primero que cuadra un analista de riesgos.
+> · **Los dos tipos de IVA intercambiados en el cap. 4:** «factura de obra al 10 % … bebida alcohólica al 21 %». Es al
+>   revés: la obra de un LOCAL COMERCIAL va al 21 % (el 10 % de ejecuciones de obra es sólo para vivienda, art.
+>   91.Uno.2.10 LIVA) y la bebida servida en sala al 10 %. Yo lo había dejado pasar como «otro asunto»; no lo es.
+
 **Los bloqueantes de más peso, por familia:**
 
 - **Restos de la cascada del IVA** (lo primero): el cap. 12 enseña la fórmula **dividiendo entre 1,21** dos frases

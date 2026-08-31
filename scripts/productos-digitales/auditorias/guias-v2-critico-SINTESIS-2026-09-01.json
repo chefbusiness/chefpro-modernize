@@ -1,0 +1,357 @@
+{
+ "_meta": {
+  "generado": "2026-09-01",
+  "origen": "workflow wf_c5c75dcf-b8b, agente de síntesis (opus)",
+  "nota": "Lista DEPURADA y verificada celda a celda. Cada bloqueante trae `texto_a_localizar` y `fix`. Usar ESTA, no los 120 en bruto."
+ },
+ "veredicto": "NO PUBLICAR",
+ "bloqueantes": [
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 4, epígrafe «El IVA de la inversión es tesorería, no coste»: dice «factura de obra con IVA al 10 %» y «una de bebida alcohólica al 21 %», y cita como fuente la hoja que afirma justo lo contrario. Resto vivo de la cascada del IVA, con los dos tipos intercambiados: la bebida servida en sala va al 10 % y la obra de un LOCAL COMERCIAL al 21 % (el 10 % de ejecuciones de obra es solo para edificios de vivienda, art. 91.Uno.2.10 LIVA).",
+   "fix": "Reescribir: «Cuando pagas una factura de obra al 21 %, que es el tipo general —el 10 % de obra solo aplica a vivienda—, o compras bebida a tu distribuidor al 21 %…». Si se mantiene la cita, apuntar a B27 («Tipo de IVA general de los gastos»), nunca a B26.",
+   "texto_a_localizar": "o una de bebida alcohólica al 21",
+   "verificado_en": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: A26/B26 = 'Tipo de IVA de la bebida alcohólica (%)' = 0.1; A27/B27 = 'Tipo de IVA general de los gastos (%)' = 0.21; nota A29 = «10 % en restauración, incluida la bebida alcohólica servida en sala (art. 91.Uno.2.2…). El 21 % es el tipo general y solo aplica a la venta para llevar»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 4, «La proyección a tres años y la rampa de arranque»: «En la obra y el equipamiento, pagas un IVA que en restauración es del 10 % para la comida y del 21 % para la bebida alcohólica». Segundo resto de la cascada, contradice al propio capítulo (que unos párrafos antes dice «El 21 % es el tipo general y sólo entra si vendes para llevar») y mezcla el IVA soportado de la inversión con los tipos de la venta en sala.",
+   "fix": "Borrar la mención al 21 % para bebida alcohólica y dejar el párrafo hablando solo del IVA soportado de obra y equipamiento, que es el 21 % general.",
+   "texto_a_localizar": "En la obra y el equipamiento, pagas un IVA que en restauración es del 10",
+   "verificado_en": "cash-flow-break-even.xlsx B25=0.1, B26=0.1, B27=0.21; escandallo-maestro.xlsx, hoja «Ficha (plantilla)», H31=0.1 con nota I31 «10 % en restauración, INCLUIDA la bebida alcohólica servida en sala»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 12: «La cuenta correcta exige pasar el precio de carta a base imponible dividiendo entre 1,21 antes de calcular el margen». Es una instrucción que el lector ejecuta sobre toda su carta de vinos, y el divisor es el viejo. El propio párrafo empieza diciendo que en sala el IVA es del 10 % también para la bebida alcohólica.",
+   "fix": "Sustituir «dividiendo entre 1,21» por «dividiendo entre 1,10».",
+   "texto_a_localizar": "dividiendo entre 1,21",
+   "verificado_en": "budget-bodega.xlsx, hoja «Bodega»: C59 ('IVA de la bebida alcohólica (%)') = 0.1; F5 (PVP carta) = 40 y T5 (PVP sin IVA) = 36,3636 = 40/1,10 (con 1,21 daría 33,06); M5 (food cost) = 0.33"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 12: «Un margen del 67,1 % sobre PVP … significa que, de cada euro que paga el cliente, 0,638 euros son margen antes de impuestos». El 0,638 es el margen ANTERIOR al cambio de IVA (63,8 %): la frase se contradice a sí misma en el mismo renglón.",
+   "fix": "«0,671 euros son margen». Si se quiere hablar del euro CON IVA, son 0,610 €, y hay que decir explícitamente «de cada euro sin IVA».",
+   "texto_a_localizar": "0,638 euros son margen antes de impuestos",
+   "verificado_en": "budget-bodega.xlsx, hoja «Bodega», fila TOTAL: L56 = 0,6710963 (67,1 %) y M56 = 0,3289037 (32,9 %). Ninguna celda del libro contiene 0,638"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 12, dos veces: «el food cost de bebida sale unos siete puntos por debajo del real» y «le saldrá unos siete puntos por debajo del real». Con el IVA al 10 % la brecha es de 3 puntos; los 7 puntos son la brecha del 21 %, y sobre ese número se sostiene el epígrafe entero. El mismo «7 puntos» sobrevive en la hoja de instrucciones del xlsx.",
+   "fix": "«unos tres puntos por debajo del real», en las dos frases de la guía y en la celda A24 de budget-bodega.xlsx.",
+   "texto_a_localizar": "siete puntos por debajo del real",
+   "verificado_en": "budget-bodega.xlsx, hoja «Bodega»: stock a PVP con IVA = Σ(F·I) = 12.642,00; a coste N56 = 3.780,00 → food cost ingenuo 29,90 % frente al correcto M56 = 32,89 % ⇒ brecha 2,99 puntos (con IVA al 21 % habría sido 6,28). Hoja «Instrucciones», A24, sigue diciendo «unos 7 puntos»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico/budget-bodega.xlsx",
+   "que_pasa": "Hoja «Instrucciones»: la regeneración añadió la redacción nueva (A24, «10 % en sala, en celda») pero NO borró la vieja (A12, «21 %, en celda»). Las dos frases, idénticas salvo el tipo, conviven en la hoja que el cliente abre primero, y la caducada aparece ANTES.",
+   "fix": "Borrar A12 (o sobrescribirla con el texto de A24) y corregir en A24 «unos 7 puntos» → «unos 3 puntos».",
+   "texto_a_localizar": "con el tipo de la bebida alcohólica (21 %, en celda)",
+   "verificado_en": "budget-bodega.xlsx, hoja «Instrucciones»: A12 leída íntegra («…(21 %, en celda)… unos 7 puntos por debajo del real») y A24 («…(10 % en sala, en celda)… unos 7 puntos por debajo del real»); la celda operativa Bodega!C59 = 0.1"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico/calculadora-ticket-medio.xlsx",
+   "que_pasa": "Hoja «Ticket Medio», nota C23: «10 % general de restauración y 21 % en la parte de bebida alcohólica». La nota contradice a su propia celda y al resto del pack: el libro aplica un 10 % plano a TODO el ticket.",
+   "fix": "Reescribir C23 con la redacción ya corregida de cash-flow-break-even.xlsx A29 / escandallo-maestro.xlsx I31: 10 % en restauración, incluida la bebida alcohólica servida en sala (art. 91.Uno.2.2 LIVA); el 21 % solo para venta para llevar.",
+   "texto_a_localizar": "10 % general de restauración y 21 % en la parte de bebida alcohólica",
+   "verificado_en": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: B23 = 0.1; C16 = 123.2 y C24 = 135.52 = 123,20 × 1,10 exacto (un cálculo mixto 10/21 daría 137,66); B24 = 109.78 = 99,80 × 1,10 y D24 = 149.60 = 136,00 × 1,10"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 4: «Esa cifra está dentro del CAPEX total de 1.668.340,88 €, que se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos propios». Dos errores de dinero en una frase: (a) los 221.603,36 € de preapertura NO están dentro del CAPEX (la hoja lo dice expresamente y el propio capítulo los suma aparte tres párrafos antes); (b) 700.000 + 1.189.944,24 = 1.889.944,24 €, no 1.668.340,88 €. Se descuadra por 221.603,36 €, y es lo primero que comprueba un analista de riesgos.",
+   "fix": "«Esa cifra se suma aparte del CAPEX de 1.668.340,88 €; juntas dan la necesidad total de 1.889.944,24 €, que se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos propios.»",
+   "texto_a_localizar": "Esa cifra está dentro del CAPEX total de 1.668.340,88",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C27 = 1.668.340,88 (suma verificada de las filas 5-26), C39 = 221.603,36, C46 = 1.889.944,24, nota A40 «Esta partida no está entre los conceptos de la tabla de arriba: se suma aparte». Hoja «Financiación»: B31 = 1.189.944,24, B32 = 700.000, B34 = 1.889.944,24"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 4, «Fuentes de financiación y servicio de la deuda»: la diferencia entre el CAPEX y la necesidad total se etiqueta como «los impuestos soportados en la preapertura». No son impuestos: son 102.000,00 € de rentas y suministros y 119.603,36 € de nóminas, y el propio pack recuerda que las nóminas y la Seguridad Social NO llevan IVA.",
+   "fix": "Sustituir «más los impuestos soportados en la preapertura» por «más los 221.603,36 € de costes de preapertura (102.000,00 € de rentas y suministros y 119.603,36 € de nóminas)».",
+   "texto_a_localizar": "más los impuestos soportados en la preapertura",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C37 = 102.000,00 ('Rentas y suministros de preapertura'), C38 = 119.603,36 ('Nóminas de preapertura'), C39 = 221.603,36 (102.000 + 119.603,36 exacto); cash-flow-break-even.xlsx A29: «Las nóminas y la Seguridad Social NO llevan IVA»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+   "que_pasa": "9.900 € de tecnología contados DOS VECES en el CAPEX que va al banco. Las seis líneas de cocina del plan (C7 a C12) suman 161.430,40 €, que es el total ÍNTEGRO del checklist de equipamiento — y ese total ya incluye una categoría «Tecnología» de 9.900 € (TPV principal, TPV auxiliar, impresora de comandas, tablet de reservas, WiFi, sonido y CCTV). El plan vuelve a presupuestar los mismos 9.900 € en la línea 15 «TPV, software, tablets», y la guía sanciona la identidad de forma explícita en el cap. 8.",
+   "fix": "Elegir una: (a) bajar las seis líneas de cocina a 151.530,40 € y dejar los 9.900 € solo en la línea 15; o (b) borrar la línea 15 y decir que la tecnología ya está dentro del bloque de cocina. En los dos casos, corregir la frase del cap. 8 de la guía «El importe de equipamiento recogido en el plan financiero coincide exactamente con el total del checklist de equipos de cocina».",
+   "texto_a_localizar": "TPV, software, tablets",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C7=78.000, C8=42.000, C9=14.000, C10=8.000, C11=6.430,40, C12=13.000 → 161.430,40; C19 = 9.900 ('TPV, software, tablets'). checklist-equipamiento-cocina.xlsx, hoja «Equipamiento Cocina»: G98 (TOTAL PRESUPUESTADO) = 161.430,40 y subtotal de la categoría 'Tecnología' = 9.900 (filas 82-88: 3.000+1.500+600+500+800+2.000+1.500)"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "La necesidad total de financiación no se sostiene en los tres documentos. El cap. 4 demuestra en una nota al pie que el cronograma del pack exige 13 meses de renta y 5 de nómina (520.008,40 €) frente a los 221.603,36 € presupuestados, y manda «súmale a mano ese desfase, unos 298.405,04 €». El cap. 5 dice, sin mencionarlo, que los 6 meses «son un colchón realista». A eso se añaden 34.000,00 € de fianza del art. 36 LAU (que la guía declara fuera del CAPEX) y 15.073,75 € de dotación de vajilla para menú degustación. Mientras tanto la hoja «Financiación» cierra con diferencia 0,00 € y el business plan pide exactamente 1.889.944,24 € sin mencionar la fianza.",
+   "fix": "Fijar UNA sola cifra de necesidad total y sostenerla en la guía, el business plan y el xlsx: o se sube a ~2,19 M€ (carencia no negociada + fianza + dotación de degustación), o el cap. 5 deja de llamar «colchón realista» a los 6 meses y remite explícitamente a la nota del cap. 4, y el business plan declara las tres salidas de caja no financiadas.",
+   "texto_a_localizar": "súmale a mano ese desfase, unos 298.405,04",
+   "verificado_en": "Aritmética de la nota comprobada: 13 × 17.000 = 221.000; 5 × 59.801,68 = 299.008,40; total 520.008,40 − 221.603,36 = 298.405,04. plan-financiero-3-anos.xlsx, «Financiación» B30 = B34 = 1.889.944,24 y B35 (Diferencia) = -0,0. checklist-legal.xlsx, hoja «Legal», fila 50: G50 = 34.000,00 ('Fianza legal de 2 mensualidades…', art. 36 LAU). checklist-vajilla-cristaleria.xlsx: G57 = 30.230,00 y L59 = 45.303,75 (diferencia 15.073,75). Búsqueda de «fianza» en business-plan-modelo.md: 0 resultados"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+   "que_pasa": "Cap. 8: «Incluyendo la cuota plena, el punto de equilibrio con deuda se eleva a 145.728,59 €». Es falso: ese umbral usa la cuota DURANTE la carencia (3.208,33 €). Con la cuota plena de 8.232,00 € el umbral es 152.905,26 €/mes y hacen falta 56,4 cubiertos/día, no 53,8. El documento que lee el banco subestima en 7.176,67 €/mes el listón que hay que superar desde el año 2 — y la guía madre lo dice bien, así que los dos documentos se contradicen.",
+   "fix": "Reescribir con la redacción que ya usa la guía: el umbral de 145.728,59 € / 53,8 cubiertos es el del AÑO 1 (cuota de carencia); desde el año 2 sube a 152.905,26 € / 56,4 cubiertos. Etiquetar por periodo las dos parejas de cifras también en las viñetas del resumen ejecutivo.",
+   "texto_a_localizar": "Incluyendo la cuota plena, el punto de equilibrio con deuda se eleva a 145.728,59",
+   "verificado_en": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»: B47 = 0.7, B48 = 141.145,257, B49 = 3.208,33 ('Cuota mensual del préstamo'), B50 = 145.728,586, B53 = 53,766. plan-financiero-3-anos.xlsx, «Financiación»: B12 = 8.231,998 ('Cuota MENSUAL tras la carencia'), B13 = 3.208,33. Recalculado: 141.145,257 + 8.231,998/0,7 = 152.905,25 → /22 /123,20 = 56,41 cubiertos"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+   "que_pasa": "Resumen ejecutivo (§1): «una ocupación media del 78% en el primer año, un ticket medio de 123,20 € por comensal y una rotación de 1,6 veces por servicio. La rentabilidad sobre fondos propios se sitúa en el 12,4% al tercer año, y el plazo de recuperación de la inversión (payback) es de 5,8 años». De las cinco cifras, solo el ticket sale de una celda. La rotación de 1,6 por servicio implicaría 208 cubiertos/día sobre 65 plazas (el modelo trabaja con 70). El ROE del año 3 calculado con las cifras del pack es 25,0 %, el doble del 12,4 % impreso. Y el §8 del mismo documento dice «72 % sobre la capacidad diaria» para 53,8 cubiertos (que sobre 70 son el 76,8 %), incompatible con el 78 % para 70. Es la página que el analista de riesgos lee primero.",
+   "fix": "Borrar las cuatro cifras sin respaldo o sustituirlas por las que sí tienen celda: 70 cubiertos/día, rotación 1,08/día (0,54 por servicio), ROE año 3 = 25,0 %, y un payback calculado contra el flujo del pack con el criterio declarado. Unificar o suprimir el «72 % sobre la capacidad diaria» del §8.",
+   "texto_a_localizar": "una rotación de 1,6 veces por servicio",
+   "verificado_en": "plan-financiero-3-anos.xlsx, «Proyección 3 Años» D23 (Resultado neto año 3) = 297.607,075 ÷ «Financiación» B31 (fondos propios) = 1.189.944,24 → 25,01 %. calculadora-ticket-medio.xlsx C17 = 70 cubiertos/día (÷ 65 plazas = 1,077 rotaciones/día); C16 = 123,2. cash-flow-break-even.xlsx B53 = 53,766 → 53,766/70 = 76,8 %"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 14 (dos veces) y manual-servicio-sala.md §8: los 1.610,00 € se presentan como coste POR contratación («Es un gasto fijo que se paga una vez por cada contratación»; «Esa cantidad se amortiza en el primer mes si el incorporado rinde»). Son el TOTAL del checklist de contratación de la brigada entera, e incluyen partidas que no se repiten por persona: 500 € de simulacro de servicio (soft opening), 200 € de publicación de ofertas y 100 € de implantación del registro de jornada. Presentado como unitario, el lector presupuestaría 24 × 1.610 = 38.640 €, cifra que no existe en ningún libro.",
+   "fix": "«coste tasado del proceso completo de contratación de la brigada: 1.610,00 €, y es un suelo». Si se quiere un coste por incorporado, calcularlo solo con las filas repetibles: contrato 300 € + manipulador 50 € + reconocimiento médico 60 € + uniforme y taquilla 200 € = 610 €/persona.",
+   "texto_a_localizar": "Es un gasto fijo que se paga una vez por cada contratación",
+   "verificado_en": "checklist-contratacion.xlsx, hoja «Contratación Equipo»: G37 (TOTAL PRESUPUESTADO) = 1.610,00, suma de los subtotales G42-G47 (Perfiles 0, Selección 200, Documentación 610, Onboarding 200, Formación 500, Legal 100). Filas no repetibles: G30 = 500 ('Simulacro de servicio completo (soft opening)'), G11 = 200 ('Publicar ofertas en portales'), G33 = 100 ('Registro de jornada digital'). Fila 5: 'Definir organigrama completo (cocina + sala)'"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Caps. 17 y 18 dan CUATRO descripciones distintas e incompatibles de los mismos 11.000,00 €, y ninguna coincide con el libro: «cubre una doble pasada: una revisión técnica de cocina…», «incluye la elaboración del dosier de sostenibilidad», «cubre tres meses de seguimiento semanal, formación del personal, compra de ingredientes para pruebas», «implica tiempo de formación, redacción de protocolos y pruebas internas». Los 11.000 € son 10.000 € de PRENSA —categoría que el propio libro rotula «(NO influye en la inspección)»— más 1.000 € de uniformes. La frase del dosier de Estrella Verde es directamente falsa: esas cinco filas van sin importe.",
+   "fix": "Describir el importe por lo que es (5.000 € eventos + 2.000 € prensa + 3.000 € invitaciones + 1.000 € uniformes = un SUELO que no cubre la inspección en sí) y retirar la frase de que incluye el dosier de sostenibilidad, o dotar esa partida en el libro.",
+   "texto_a_localizar": "incluye la elaboración del dosier de sostenibilidad",
+   "verificado_en": "checklist-inspeccion-michelin-repsol.xlsx, hoja «Preparación Inspección»: G52 (TOTAL) = 11.000; subtotales G57-G66 → Ingredientes 0, Técnica 0, Armonía 0, Personalidad 0, Consistencia 0, Repsol Extra 0, 'Prensa y notoriedad (NO influye en la inspección)' 10.000, Requisitos previos 0, Operativa 1.000, Estrella Verde 0. Filas 45-49 (Estrella Verde) sin importe; G53 = 5 partidas a presupuestar"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 17, «Preparación de una visita»: describe el checklist en seis bloques («Primero, la entrada y la recepción… Segundo, la sala… Tercero, el servicio… Cuarto, la cocina… Quinto, la bodega… Sexto, el postre y el café») con «una respuesta esperada (sí/no) y un comentario». El entregable no se parece: sus categorías son Ingredientes, Técnica, Armonía, Personalidad, Consistencia, Repsol Extra, Prensa y notoriedad, Requisitos previos, Operativa y Estrella Verde, y no hay ninguna columna sí/no. La tabla que el propio capítulo imprime tres párrafos más abajo lo reproduce bien.",
+   "fix": "Reescribir el párrafo con las diez categorías reales del libro y sus columnas (Responsable, Fecha Límite, Estado, Coste Est., Notas), o suprimirlo: la tabla ya cumple esa función. En la misma frase, corregir «camarones» por «camareros».",
+   "texto_a_localizar": "El checklist se organiza en bloques. Primero, la entrada y la recepción",
+   "verificado_en": "checklist-inspeccion-michelin-repsol.xlsx, hoja «Preparación Inspección»: columna B con las 10 categorías citadas; encabezados fila 4 = '#', 'Categoría', 'Tarea / Ítem', 'Responsable', 'Fecha Límite', 'Estado', 'Coste Est. (€)', 'Notas'; 45 ítems (filas 5-49)"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 21: «las 930 unidades vendidas del plato estrella salen de contar cada servicio». Las 930 son el TOTAL de los 12 platos de la carta de ejemplo, no las de un plato: el más vendido tiene 120 unidades. El propio cap. 15 lo dice bien («el total de unidades, que en el ejemplo son 930»).",
+   "fix": "«las 930 unidades vendidas de la carta de ejemplo».",
+   "texto_a_localizar": "930 unidades vendidas del plato estrella",
+   "verificado_en": "menu-engineering-matrix.xlsx, hoja «Menu Engineering»: D31 = 930 en la fila TOTAL / MEDIA PONDERADA; suma verificada de D5:D16 = 90+75+110+60+95+55+80+40+70+120+85+50 = 930"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Tabla «Cuenta de resultados del mes tipo», fila «| Margen EBITDA | 0,18 € |»: un porcentaje impreso como fracción decimal con símbolo de euro, en la columna «Importe (€)», justo debajo de la fila «EBITDA | 34.007,92 € | 17,9 %». El lector ve el mismo dato dos veces, uno de ellos absurdo. Está IGUAL en business-plan-modelo.md, y ha llegado al PDF y al DOCX. Es el defecto que se dio por corregido.",
+   "fix": "Imprimir «17,9 %» en la columna «% s/ventas» y dejar vacía la de importe, o suprimir la fila (es redundante con el 17,9 % de la fila EBITDA). Corregir en los DOS documentos y regenerar PDF y DOCX.",
+   "texto_a_localizar": "| Margen EBITDA | 0,18",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: A35 = 'Margen EBITDA', B35 = 0,1792456569404622 (ratio); B34 = 34.007,92 con C34 = 0,17924…, ya impreso correctamente como 17,9 % en la fila EBITDA. Confirmado también en guia-restaurante-gastronomico.pdftxt y .docxtxt"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Tabla «Preapertura y fondo de maniobra» del cap. 4: tres cuentas de MESES impresas con símbolo de euro — «Meses de renta ANTES de abrir … | 6,00 €», «Meses de nómina de la brigada ANTES de abrir | 2,00 €», «Meses de colchón (mínimo 6) | 6,00 €». El volcador puso «€» a toda la columna sin mirar la unidad de la fila: en una tabla de 11 filas, tres dicen que seis meses valen 6,00 €.",
+   "fix": "Imprimir «6», «2» y «6» sin sufijo, o con «meses».",
+   "texto_a_localizar": "| Meses de renta ANTES de abrir (fuera de la carencia que negocies) | 6,00",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C35 = 6 (A35 'Meses de renta ANTES de abrir…'), C36 = 2 (A36 'Meses de nómina de la brigada ANTES de abrir'), C42 = 6 (A42 'Meses de colchón (mínimo 6)') — enteros de meses, no importes"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 15, epígrafe «El precio de carta lleva IVA: qué le pasa al food cost si lo olvidas»: «Si por error pones 35,71 en la carta, el food cost real es 10 / 35,71 = 28 por ciento». El capítulo que existe para enseñar este error concreto lo enseña mal y contradice a su propio xlsx: con el IVA dentro ingresas 32,46 € y el food cost real es 30,8 %.",
+   "fix": "«el food cost real sobre lo que ingresas sube al 30,8 %, no al 28 %», alineado con la celda A37 del escandallo y con su fila «Food cost si pusieras el PVP SIN IVA en la carta (%)».",
+   "texto_a_localizar": "el food cost real es 10 / 35,71 = 28 por ciento",
+   "verificado_en": "escandallo-maestro.xlsx, hoja «Ficha (plantilla)»: A37 textual «con un objetivo del 28 % y el IVA al 10 %, sube al 30,8 %»; H4 = 0.28 (food cost objetivo), H31 = 0.1 (IVA), G35 = 'Food cost si pusieras el PVP SIN IVA en la carta (%)'. Comprobado: 10 ÷ (35,71/1,10) = 30,80 %"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 4: «Si en el mes seis no estás cerca del 60 % del crucero, algo está fallando en la rampa». Invierte el hito de control: el 60 % es el PRIMER mes; en el mes seis el modelo va por el 95 %. Un lector que en el mes 6 se vea al 60 % y crea que está en objetivo va 35 puntos por debajo del plan y se está comiendo el fondo de maniobra sin reaccionar. Contradice al párrafo de arriba del mismo capítulo («el primer mes facturas el 60 % del ritmo de crucero»).",
+   "fix": "«Si en el mes seis no estás cerca del 95 % del crucero —el primer mes es el que arranca al 60 %—, algo está fallando en la rampa.»",
+   "texto_a_localizar": "mes seis no estás cerca del 60",
+   "verificado_en": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses», fila 10 'Total Ingresos': B10 = 113.836,80 (mes 1) y H10 = 189.728,00 (mes 7, crucero) → 60,0 %; G10 = 180.241,60 (mes 6) → 95,0 %. plan-financiero-3-anos.xlsx, «Proyección 3 Años»: B9 = 6 (meses de rampa), B10 = 0,6"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+   "que_pasa": "§7: «se sube al 70 % en el segundo mes, al 80 % en el tercero, y se alcanza el crucero completo a partir del cuarto o quinto mes». Falso contra el xlsx y contra la tabla que el propio capítulo imprime: en el mes 4 se factura el 85 % y el crucero no llega hasta el mes 7. La misma frase contradice la apertura del capítulo («seis meses para alcanzar el crucero»). Un banco que dimensione la tesorería con «crucero en el mes 4 o 5» se queda corto dos o tres meses de rampa.",
+   "fix": "Reescribir: 60 / 70 / 80 / 85 / 90 / 95 % en los meses 1 a 6 y crucero completo en el mes 7.",
+   "texto_a_localizar": "se alcanza el crucero completo a partir del cuarto o quinto mes",
+   "verificado_en": "cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses», fila 10: B10=113.836,8 (60 %), C10=132.809,6 (70 %), D10=151.782,4 (80 %), E10=161.268,8 (85 %), F10=170.755,2 (90 %), G10=180.241,6 (95 %), H10=189.728,0 (100 %, mes 7). plan-financiero-3-anos.xlsx, «Proyección 3 Años» B9 = 6"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+   "que_pasa": "§5, Plan de Operaciones: «La brigada está formada por 24 personas en plantilla, distribuidas en tres áreas: cocina, sala y gestión», y la enumeración da 16 (5+8+3), inventa un área de «gestión» (gerente, encargado de compras, responsable de administración) que no existe ni cobra en ningún libro, y omite las 4 jefaturas de partida y los 5 commis reales. El mismo problema arrastra el manual de sala, cuya cadena de mando entera descansa en un «jefe de rango» que no está en la plantilla —y que su propia ficha de formación del §8 trata como puesto distinto del «camarero de rango»—.",
+   "fix": "Reescribir el §5 con la brigada real (15 de cocina y 9 de sala, sin área de gestión) o añadir y costear esos tres puestos y rehacer el coste de personal. Y decidir el nombre del puesto de sala: o el manual dice «camarero de rango»/«maître», o se añaden y costean dos jefes de rango en plantilla-turnos-brigada.xlsx y se rehace el P&L. No puede quedarse a medias.",
+   "texto_a_localizar": "distribuidas en tres áreas: cocina, sala y gestión",
+   "verificado_en": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana»: bloque COCINA (filas 6-20) = Chef Ejecutivo, Sous Chef, 4 Jefes de Partida, 5 Commis, 2 Ayudantes, 2 Plonge = 15; bloque SALA (filas 22-30) = Maître, Sommelier, 4 'Camarero Rango', 2 Runner, Hostess = 9; L33 = 539.564,00 y O33 = 717.620,12. No hay ninguna fila de gerente, compras, administración ni 'Jefe de rango'. checklist-diseno-sala.xlsx H33 lo confirma como «fuente única de plantilla de este producto»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+   "que_pasa": "§5: la narración del cronograma («Mes 1-3: Legalización y proyecto… Mes 4-8: Obra y equipamiento… Mes 9-11: Contratación… Mes 15-18: Apertura», «cinco fases principales») contradice hito a hito la tabla del Gantt que imprime dos párrafos más abajo, que tiene SEIS fases: licencia de obras en el mes 7, obra civil en el 9-12, brigada en el 12 y apertura oficial en el 17. Y el «El equipo completo de 24 personas se contrata con al menos 6 semanas de antelación» es una tercera versión: el plan presupuesta DOS meses de nómina de preapertura (119.603,36 €). Para un banco que valora el riesgo de ejecución, el desfase es grave.",
+   "fix": "Sustituir la lista de cinco fases por el resumen real de las seis del Gantt con sus meses, y alinear la antelación de contratación con los 2 meses de nómina presupuestados.",
+   "texto_a_localizar": "Mes 1-3: Legalización y proyecto",
+   "verificado_en": "cronograma-apertura-gantt.xlsx, hoja «Gantt»: X15 = 7 ('Solicitud licencia de obras'), X16 = 7 con Y16 = 5 ('licencia de actividad clasificada'), X19 = 9 / Y19 = 4 ('Obra civil'), X26 = 12 ('brigada cocina'), X37 = 17 ('Apertura oficial'); filas de fase A5, A12, A18, A25, A30, A36 = seis. plan-financiero-3-anos.xlsx, «Inversión» C36 = 2 y C38 = 119.603,36"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico/plan-financiero-3-anos.xlsx",
+   "que_pasa": "Hoja «Inversión», nota A40 — la que justifica la partida de preapertura de 221.603,36 €: «El cronograma de este mismo pack firma el arrendamiento en el mes 3 y contrata la brigada en el 12 para abrir en el 18». El Gantt firma en el mes 4 y abre en el 17 (el 18 es la monitorización posterior). Solo el mes 12 de la brigada coincide, y la guía sí lo cuenta bien, así que el xlsx contradice al documento que lo cita.",
+   "fix": "Corregir A40: «firma el arrendamiento en el mes 4 y contrata la brigada en el 12 para abrir en el 17».",
+   "texto_a_localizar": "firma el arrendamiento en el mes 3 y contrata la brigada en el 12 para abrir en el 18",
+   "verificado_en": "cronograma-apertura-gantt.xlsx, hoja «Gantt»: X8 = 4 con Y8 = 2 ('Negociación y firma del arrendamiento (con carencia)'), X26 = 12, X37 = 17 ('Apertura oficial'), X38 = 18 ('Primeros 30 días: monitorización')"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/manual-servicio-sala.md",
+   "que_pasa": "§7: «Con un ticket medio con IVA de 135,52 € y una ocupación prevista de 70 cubiertos al día, la facturación diaria estimada es de 8.624,00 €». La operación no da: 70 × 135,52 = 9.486,40 €. Los 8.624,00 € son 70 × 123,20 € (SIN IVA). Y el porcentaje del no-show divide 271 € (con IVA) entre 8.624 € (sin IVA): el impacto real es 2,9 %, no 3,1 %. Es el cálculo con el que el manual justifica la política de depósitos ante el equipo y ante el cliente.",
+   "fix": "Una sola base: «con un ticket medio de 123,20 € sin IVA y 70 cubiertos, la facturación diaria es de 8.624,00 €; un no-show de dos personas se lleva 246,40 €, el 2,9 %». Si se prefiere con IVA: 9.486,40 € y 271,04 €, también el 2,9 %.",
+   "texto_a_localizar": "Con un ticket medio con IVA de 135,52",
+   "verificado_en": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: C16 = 123.2, C17 = 70, C18 (Facturación diaria) = 8624.0, C24 = 135.52. Comprobado: 70 × 135,52 = 9.486,40; 2 × 135,52 / 9.486,40 = 2,857 %"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/manual-servicio-sala.md",
+   "que_pasa": "§7 afirma «todos los precios de carta se anuncian con IVA incluido… El ticket medio sin IVA se sitúa en 123,20 €, mientras que el ticket medio con IVA alcanza los 135,52 €», pero el guion que el camarero recita en §3 canta «un menú largo de 130,00 € y un menú corto de 75,00 €… un maridaje opcional por 60,00 €», que el libro trata como BASE IMPONIBLE. Si la carta lleva el IVA dentro, el ticket con IVA es 123,20 € y los 135,52 € no existen; si los 130/75/60 € son sin IVA, el camarero está cantando al cliente un precio un 10 % inferior al que va a pagar (143,00 € el menú largo), lo que además choca con la obligación de anunciar el precio final al consumidor.",
+   "fix": "Decidir el criterio y propagarlo. Si la carta lleva precio final: 143,00 / 82,50 / 66,00 € en el guion de §3. Si no: mantener 130/75/60 € y rehacer C24 y toda mención a los 135,52 € en el manual y en el business plan.",
+   "texto_a_localizar": "Hoy tenemos un menú largo de 130,00",
+   "verificado_en": "calculadora-ticket-medio.xlsx, hoja «Ticket Medio»: nota C23 «Los precios de arriba se escriben SIN IVA, igual que el P&L»; C6 = 130, C8 = 75, C10 = 85, C12 = 60, C14 = 14; C16 = 123.2 y C24 = 135.52 = 123,2 × 1,1"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/manual-servicio-sala.md",
+   "que_pasa": "El manual con el que se forma y se evalúa al equipo se contradice consigo mismo en tres puntos operativos, y en todos la prosa dice una cosa y su propia tabla otra: (a) §3, comanda cerrada «cinco minutos como máximo» frente a «menos de 8 minutos» de la tabla, y explicación del menú «menos de un minuto» frente a «menos de 5 minutos»; (b) §7, depósito «para grupos de seis o más» y «cantidad simbólica» a individuales y parejas frente a la tabla «Reserva de 1 a 4: tarjeta en garantía, SIN CARGO previo» / «Reserva de 5 o más: depósito por comensal» —y el cap. 20 de la guía usa un tercer umbral, «si el grupo supera las 6 personas»—; (c) §6, «el camarero puede corregir el error sin consultar» y «el jefe de rango autoriza el cambio sin coste» por alergia, frente a la tabla que asigna las dos decisiones al maître.",
+   "fix": "Pasada de unificación prosa↔tabla en el manual: un solo tiempo por hito, un solo umbral de depósito con su cuadro de devolución (propagado al cap. 20 de la guía) y una sola columna «quién decide». La tabla es la que se cuelga en el office, así que es la que debe mandar.",
+   "texto_a_localizar": "es de cinco minutos como máximo",
+   "verificado_en": "manual-servicio-sala.md: tabla de §3 «| Toma de comanda cerrada | menos de 8 minutos | Jefe de rango |» y «| Explicación del menú | menos de 5 minutos |»; tabla de §7 «| Reserva de 1 a 4 comensales | Tarjeta en garantía, sin cargo previo |» y «| Reserva de 5 o más | Depósito por comensal |»; tabla de §6 «| Queja por la cuenta | … | Maître | Corregir el error en el momento |»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 13, «Turnos»: «El cuadrante completo de la brigada de COCINA para este proyecto de 65 plazas se sostiene con 24 personas» y «El bruto anual de la brigada es de 539.564,00 €… el coste con Seguridad Social asciende a 717.620,12 €». Las 24 personas y esas dos cifras son COCINA + SALA. En un capítulo titulado «Brigada de Cocina», cuya tabla lista solo los 15 puestos de cocina, el lector atribuye a cocina un 56 % más de masa salarial de la que le corresponde. En el mismo párrafo, «seis días a la semana» contradice el parámetro del propio libro (5 días) y los 22 días/mes de todo el modelo.",
+   "fix": "«el cuadrante completo del pack son 24 personas, 15 de cocina y 9 de sala»; el bruto de cocina son 346.376 € y su coste de empresa 38.390,01 €/mes. Y «cinco días a la semana (22 días de apertura al mes)».",
+   "texto_a_localizar": "se sostiene con 24 personas",
+   "verificado_en": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana»: bloque COCINA filas 6-20 (15 personas, Σ bruto = 346.376) y SALA filas 22-30 (9 personas, Σ = 193.188); L33 = 539.564,00 y O33 = 717.620,12; C49 ('Días de trabajo por semana') = 5. plan-financiero-3-anos.xlsx, «P&L Mensual» B20 = 38.390,01 y B21 = 21.411,67. pl-mensual-escenarios.xlsx C10 = 22"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-restaurante-gastronomico/plantilla-turnos-brigada.xlsx",
+   "que_pasa": "El cuadrante de ejemplo deja el SÁBADO con cinco personas en todo el restaurante: tres jefes de partida, un commis y un camarero de rango. No hay chef, ni sous chef, ni maître, ni sommelier, ni hostess, ni runner, ni plonge. Es materialmente imposible dar dos servicios de menú degustación a 65 plazas, y contradice de plano la afirmación del cap. 1 de la guía de que esas 24 personas «son la dotación mínima para dar dos servicios al día con 70 cubiertos».",
+   "fix": "Rehacer el reparto semanal de descansos: el sábado necesita, como mínimo, jefatura de cocina, plonge, maître y dotación de sala. El reparto actual por día es Lun 23 / Mar 21 / Mié 19 / Jue 18 / Vie 14 / Sáb 5 / Dom 12.",
+   "texto_a_localizar": "Sáb",
+   "verificado_en": "plantilla-turnos-brigada.xlsx, hoja «Turnos Semana», columna I (Sáb): solo I8, I9, I10 = 'P' (Jefe Partida Carnes / Pescados / Fríos), I16 = 'T' (Commis 5) e I27 = 'P' (Camarero Rango 4); el resto de las filas 6-20 y 22-30 están a 'L'"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 5: «recuerda que el libro de visitas ya no existe: fue derogado por la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores». Cita legal equivocada —la Ley 14/2013 introdujo el libro de visitas ELECTRÓNICO; la supresión de la obligación viene de la Ley 23/2015 y la Orden ESS/1452/2016— y contradice al checklist que se vende en el mismo pack.",
+   "fix": "Alinear la guía con el checklist: «derogado por la Ley 23/2015 y la Orden ESS/1452/2016».",
+   "texto_a_localizar": "fue derogado por la Ley 14/2013",
+   "verificado_en": "checklist-legal.xlsx, hoja «Legal», fila 38 (ítem #34, 'Registro diario de jornada'), columna Notas: «Sustituye al libro de visitas, derogado (Ley 23/2015 y Orden ESS/1452/2016).»"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 21, «Gestión de alérgenos y de preferencias en la ficha del comensal»: «Los datos de salud, como una alergia, exigen un nivel de protección reforzado… El artículo 34.9 del Estatuto de los Trabajadores … fija en 4 años el plazo de conservación de los datos». Afirmación normativa falsa: el art. 34.9 ET regula el registro de jornada de los TRABAJADORES y no dice nada sobre los datos del comensal ni sobre datos de salud. En un epígrafe que trata solo de la ficha del cliente, el lector concluye que debe conservar las alergias de sus comensales 4 años «porque lo dice el Estatuto de los Trabajadores». El propio capítulo lo usa bien dos párrafos antes, acotado a lo laboral.",
+   "fix": "Retirar la cita del art. 34.9 de ese párrafo y sustituirla por el criterio del RGPD (limitación del plazo de conservación, art. 5.1.e: conservar mientras dure la relación y bloquear después), que ya está escrito en la sección de CRM.",
+   "texto_a_localizar": "fija en 4 años el plazo de conservación de los datos",
+   "verificado_en": "guia-restaurante-gastronomico.md, mismo cap. 21, epígrafe anterior: «El plazo de conservación de los datos laborales relacionados con el servicio —por ejemplo, los partes de incidencia de un empleado— viene marcado por el artículo 34.9…»; checklist-legal.xlsx fila 38 lo describe como registro de jornada (RD-ley 8/2019, art. 34.9 ET)"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 21, «CRM de comensales»: «Para guardar datos de contacto basta el consentimiento implícito en la reserva». El «consentimiento implícito» no existe en el RGPD (art. 4.11 exige manifestación libre, específica, informada e inequívoca; el considerando 32 excluye el silencio o la inacción), y además la base legal de una reserva no es el consentimiento sino la ejecución de un contrato (art. 6.1.b). El epígrafe siguiente del mismo capítulo dice lo contrario («La base legal del tratamiento se apoya en el consentimiento explícito del interesado»).",
+   "fix": "«Los datos de contacto se tratan para ejecutar la reserva (art. 6.1.b RGPD); los de salud —la alergia— exigen consentimiento explícito (art. 9.2.a).»",
+   "texto_a_localizar": "basta el consentimiento implícito en la reserva",
+   "verificado_en": "guia-restaurante-gastronomico.md, cap. 21: la frase citada y, en el epígrafe siguiente, «La base legal del tratamiento se apoya en el consentimiento explícito del interesado» — contradicción interna verificada en el fichero"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 20: el mismo evento inaugural se describe dos veces en el mismo capítulo y de forma incompatible: «un máximo de ochenta personas… formato de cóctel de pie, con seis o siete platos… El coste del evento se cubre con la partida de marketing de lanzamiento de 15.000,00 €» frente a «una sola sesión de noche, con 60 invitados… Se sirve el menú de degustación completo, con el maridaje estándar… El coste del evento sale de las partidas de marketing sin importe». Aforo, formato y origen del gasto se contradicen, y la tercera afirmación es falsa: el evento SÍ tiene importe (3.000 €).",
+   "fix": "Dejar una sola descripción del evento —aforo, formato y financiación— y ligar el gasto a la fila 20 del checklist de marketing (3.000 €). Borrar la versión que sobre.",
+   "texto_a_localizar": "Se invita a un máximo de ochenta personas",
+   "verificado_en": "checklist-marketing-preapertura.xlsx, hoja «Marketing Pre-Apertura»: fila 24 (ítem #20, 'Evento de pre-apertura (prensa + amigos + industria)') con coste 3.000; las 5 partidas sin importe son las filas 16, 17, 23, 38 y 39 (fotos de equipo, página de reservas, dossier de prensa, presupuesto por canal, cuadro de mando)"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 20: «De sus partidas, cinco no llevan importe asignado: son acuerdos de trueque, cesiones o colaboraciones que se negocian en especie y que, por tanto, no aparecen en el flujo de caja». Invierte el significado del libro: esas cinco partidas no son gratis, son las que FALTAN por presupuestar, y el total de 23.800 € es un suelo. Tal como está, el lector deja cinco costes fuera del flujo de caja.",
+   "fix": "«cinco partidas están sin tasar: el total de 23.800,00 € es un suelo, no el presupuesto cerrado. Pídelas a presupuesto antes de cerrar el plan.»",
+   "texto_a_localizar": "son acuerdos de trueque, cesiones o colaboraciones",
+   "verificado_en": "checklist-marketing-preapertura.xlsx: G42 (TOTAL PRESUPUESTADO) = 23.800,00; G43 = 5 con la nota «El TOTAL de arriba es un SUELO: no incluye estas partidas, que van a presupuestar»; las cinco son fotos del equipo/sala/cocina, página de reservas con UTM, dossier de prensa, presupuesto por canal y cuadro de mando — ninguna negociable en especie"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 10: «Esa hoja de cálculo, checklist-diseno-sala.xlsx, tiene 4 partidas sin importe que conviene revisar una a una antes de cerrar el plan financiero; suelen ser elementos de pequeña cuantía». Caracteriza como menudencias las cuatro partidas sin presupuestar, y dos de ellas son de las más caras y más bloqueantes del proyecto según la propia guía: el limitador-registrador acústico con estudio de impacto (del que el mismo epígrafe dice «si el aislamiento proyectado no cumple, la licencia no se concede») y los aseos y vestuarios de personal del RD 486/1997 (que el cap. 7 dice que pueden costar «decenas de miles de euros en obras adicionales o, peor, la imposibilidad de obtener la licencia»). Es un consejo que invita a no presupuestarlas. El mismo capítulo, unos párrafos antes, las describe bien («dependen de la medición del instalador»).",
+   "fix": "«…suelen ser las partidas que condicionan la licencia: pídelas a presupuesto antes de cerrar el plan, porque dos de ellas pueden mover decenas de miles de euros.»",
+   "texto_a_localizar": "suelen ser elementos de pequeña cuantía",
+   "verificado_en": "checklist-diseno-sala.xlsx, hoja «Diseño de Sala (FOH)»: G42 (TOTAL) = 108.200,00 y G43 = 4 partidas sin importe, que son la fila 21 ('Limitador-registrador acústico homologado y estudio de impacto acústico'), la 33 ('Aseos y vestuarios de personal separados de los de clientes (RD 486/1997)'), la 36 ('Alumbrado de emergencia y señalización de evacuación') y la 37 ('Certificación de aforo y anchura de los recorridos de evacuación')"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 1: «¿estás dispuesto a dirigir una operación donde el 70 % de tus costes fijos son personas?». La cifra no sale de ninguna celda: el personal pesa el 60,5 % de los costes fijos sin amortización (57,1 % con ella). Es la frase que abre el perfil de promotor y define la tesis del capítulo, así que se lee como dato, no como figura retórica. El 70 % que sí existe en el modelo es el margen de contribución.",
+   "fix": "«…donde el 60 % de tus costes fijos son personas» (o «seis de cada diez euros de tu estructura»).",
+   "texto_a_localizar": "el 70 % de tus costes fijos son personas",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «P&L Mensual»: B20 = 38.390,01 + B21 = 21.411,67 = 59.801,68; B32 (TOTAL COSTES FIJOS sin amortización) = 98.801,68 → 60,53 %. Con B30 = 6.000 de amortización: 57,1 %"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 2, dos veces: «Dentro de ese total, el servicio en mesa aportó 23.310 millones (+3,7 %) y el servicio rápido o autoservicio 6.490 millones (+6,1 %)» y «con un desglose de 23.310 millones en servicio en mesa y 6.490 en servicio rápido». El desglose no suma al total del que se presenta como desglose: 23.310 + 6.490 = 29.800, que es exactamente el cierre de 2024 que la propia frase acaba de citar, no los 31.000 M€ de 2025. Hay 1.200 M€ de hueco, y la tabla del capítulo lleva el pie «Ninguna cifra de esta tabla procede de la memoria del autor: todas se verificaron con su fuente».",
+   "fix": "«el cierre de 2024 se repartió en 23.310 millones de servicio en mesa y 6.490 de servicio rápido», o dar el desglose proyectado de 2025 si la fuente lo publica. No presentar 29.800 como composición de 31.000.",
+   "texto_a_localizar": "Dentro de ese total, el servicio en mesa aportó 23.310",
+   "verificado_en": "Aritmética sobre el propio texto del cap. 2: «facturó aproximadamente 31.000 millones de euros en 2025… que sobre el cierre de 2024 (29.800 millones) proyecta un +3,5 %»; 23.310 + 6.490 = 29.800 al euro; 29.800 × 1,035 = 30.843 ≈ 31.000"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 12, «Rotación»: «la partida de bodega inicial recoge 40.000,00 €; esa cifra no es el stock, sino la inversión necesaria para poner la bodega en marcha, incluyendo la dotación física y el primer aprovisionamiento». Contradice al mismo capítulo dos epígrafes después: «esa línea es solo vinos: la vitrina climatizada tiene la suya, 6.500,00 €, y las copas van dentro de la partida de vajilla… No las sumes dos veces». Si los 40.000 € «incluyen la dotación física», la vitrina se cuenta dos veces.",
+   "fix": "«los 40.000,00 € son sólo vinos; la vitrina climatizada y las copas tienen su propia línea». La versión correcta es la del segundo epígrafe.",
+   "texto_a_localizar": "incluyendo la dotación física y el primer aprovisionamiento",
+   "verificado_en": "plan-financiero-3-anos.xlsx, hoja «Inversión»: C17 = 40.000 ('Bodega inicial (vinos)'), C18 = 6.500 ('Vitrina climatizada') y C15 = 26.000 ('Vajilla, cristalería, cubertería') son tres filas distintas"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 3, «Modelo 2: carta premium con menú corto»: «La ocupación de la comida puede ser del 40 % y la de la cena del 90 %, y el número de cubiertos sigue siendo el mismo». La aritmética no da: con 65 plazas, 40 % + 90 % son 26 + 58,5 = 84,5 cubiertos, no los 70 del modelo, y la frase afirma explícitamente que el total no cambia. El propio capítulo lo cuenta bien dos epígrafes más abajo («25 cubiertos en el servicio de comida y 45 en el de cena»).",
+   "fix": "«La ocupación de la comida ronda el 40 % y la de la cena el 70 %», que son los 25 y 45 cubiertos del escenario realista.",
+   "texto_a_localizar": "del 40 % y la de la cena del 90",
+   "verificado_en": "pl-mensual-escenarios.xlsx, hoja «Escenarios», escenario realista: C6 = 25 ('Cubiertos/día comida') y C7 = 45 ('Cubiertos/día cena') → 25/65 = 38,5 % y 45/65 = 69,2 %; total 70 = calculadora-ticket-medio.xlsx C17"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 7, tabla «Reparto de superficie para 65 plazas y una brigada de 24 personas»: el TOTAL declarado, «280 a 340», no es la suma de sus propias filas ni por abajo ni por arriba (266 a 357). Y el 280 no es decorativo: es el umbral que el capítulo repite como innegociable («por debajo de 280 no caben los vestuarios y aseos de personal que exige el Real Decreto 486/1997… el proyecto nace con una ilegalidad»). Cualquier lector que sume la columna encuentra que el mínimo del propio desglose se queda 14 m² por debajo del mínimo que la guía declara obligatorio.",
+   "fix": "O se ajustan los rangos de las filas para que sumen 280-340, o el TOTAL pasa a «266 a 357» y el texto explica que el mínimo operativo se fija en 280 con margen sobre la suma teórica.",
+   "texto_a_localizar": "| TOTAL | 280 a 340 |",
+   "verificado_en": "Suma de la columna «Superficie orientativa (m²)» de la propia tabla del cap. 7: mínimos 120+70+25+15+18+10+8 = 266; máximos 160+90+35+20+25+15+12 = 357"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 10: «se divide entre los 65 comensales que van a sentarse cada servicio, y se multiplica por los 300 días de apertura». Los 300 días contradicen la base de cálculo de todo el pack, que trabaja con 22 días al mes = 264 al año. El argumento del coste por uso del mobiliario sale un 14 % barato de lo que dice el propio modelo, y es la cifra que justifica los 62.000 € de mobiliario. El business plan lo dice bien («El modelo trabaja con 22 días de apertura al mes»).",
+   "fix": "«…y se multiplica por los 264 días de apertura al año (22 al mes) que asume el plan».",
+   "texto_a_localizar": "por los 300 días de apertura",
+   "verificado_en": "calculadora-ticket-medio.xlsx B19=C19=D19=22 ('Días abierto/mes'); pl-mensual-escenarios.xlsx B10=C10=D10=22; cash-flow-break-even.xlsx B52 = 22. 22 × 12 = 264"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 10: «El ruido de fondo, el que se percibe pero no molesta, se sitúa en torno a los 45 decibelios. Por encima de 60, la conversación se convierte en esfuerzo», y en la misma página la tabla del checklist imprime «Nivel sonoro objetivo: 60-65 dB en servicio». El objetivo que fija el entregable está por encima del umbral que el texto declara insoportable; el cap. 8 refuerza el lado del texto («no debe superar los 45 decibelios en servicio normal»). Un lector que implante el checklist construye una sala que su propia guía califica de fatigante — y el tratamiento acústico de 3.000 € se dimensiona con ese objetivo.",
+   "fix": "Unificar en un solo criterio (55-60 dB es lo razonable en un gastronómico) y aplicarlo a los tres sitios: texto del cap. 8, texto del cap. 10 y celda del checklist.",
+   "texto_a_localizar": "se sitúa en torno a los 45 decibelios",
+   "verificado_en": "checklist-diseno-sala.xlsx, hoja «Diseño de Sala (FOH)», fila 19 (ítem #15, bloque Acústica): 'Nivel sonoro objetivo: 60-65 dB en servicio', coste 0; fila 18 'Tratamiento acústico (paneles absorbentes)' = 3.000"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cap. 5: «la licencia de actividad tarda meses en concederse (entre 2 y 6 según el ayuntamiento)». Contradice al propio pack en la dirección peligrosa: la calculadora de CAPEX dice 4-8 meses y el Gantt sitúa la solicitud en el mes 7 con 5 meses de duración y la resolución en el 14. Ese plazo es justo el que dimensiona la preapertura, la partida que la guía describe como la que «hunde a quien abre».",
+   "fix": "Unificar en 4-8 meses, que es lo que sostienen el Gantt y la calculadora.",
+   "texto_a_localizar": "entre 2 y 6 según el ayuntamiento",
+   "verificado_en": "calculadora-capex.xlsx, hoja «CAPEX», nota G17: «Rentas y suministros del local antes de abrir (la licencia tarda 4-8 meses)». cronograma-apertura-gantt.xlsx: X16 = 7 con Y16 = 5 ('Solicitud de licencia de actividad clasificada') y X21 = 14 ('Resolución de la licencia…')"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Restos de salida degenerada del modelo que llegan al PDF y al DOCX que paga el cliente: (1) cap. 22, «transforma un coste (la piel, la piel, la piel) en un ingrediente con valor»; (2) cap. 17, «¿los camarones conocen la carta y pueden explicar los platos?»; (3) cap. 10, «cuando llegan las molestar»; (4) cap. 11, «es el seguro de que un pan rallado no rompa un servicio de doce pases» (el párrafo habla de roturas de vajilla); (5) cap. 18, dos veces, «Recomendados» (antes llamados «Recomendados»)». El barrido de degradación que se hizo en el cap. 15 y el 21 se quedó corto.",
+   "fix": "«(la piel, el tallo, el recorte)»; «los camareros»; «cuando llegan las molestias»; «el seguro de que un plato roto no arruine un servicio de doce pases»; quitar el paréntesis de «antes llamados» o poner el nombre anterior real. Y volver a pasar el barrido por los 22 capítulos, no solo por los ya corregidos.",
+   "texto_a_localizar": "la piel, la piel, la piel",
+   "verificado_en": "grep sobre los tres .md y sobre guia-restaurante-gastronomico.pdftxt y .docxtxt: «la piel, la piel, la piel» 1 vez en cada uno; «camarones», «las molestar» y «pan rallado» presentes también en el .pdftxt (3 coincidencias); «antes llamados \"Recomendados\"» ×2 en el cap. 18"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/guia-restaurante-gastronomico.md",
+   "que_pasa": "Cuatro cifras de dinero con el símbolo € detrás del punto final, de modo que la frase termina en «18,58 .» y la siguiente empieza por «€»: cap. 9 «almacenamiento y cámaras, 13.000,00 . €», cap. 15 «es 18,58 . € Cada plato se compara…», cap. 21 «con una partida de 9.900,00 . € La tecnología…» y «un punto medio de 10.000,00 . €». En el PDF se lee como un error de composición en mitad de una cifra.",
+   "fix": "Mover el € delante del punto en los cuatro sitios («13.000,00 €.») y regenerar PDF y DOCX.",
+   "texto_a_localizar": "almacenamiento y cámaras, 13.000,00 .",
+   "verificado_en": "Regex [\\d,.]+\\s\\.\\s?€ sobre los tres .md: 4 coincidencias, todas en la guía; confirmadas en guia-restaurante-gastronomico.pdftxt. Los importes en sí son correctos (plan-financiero «Inversión» C12 = 13.000 y C19 = 9.900; menu-engineering-matrix G31 = 18,5806; calculadora-capex D12 = 10.000)"
+  },
+  {
+   "fichero": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/build/guia-restaurante-gastronomico/business-plan-modelo.md",
+   "que_pasa": "Nombres de fuente cortados a media palabra en el capítulo de análisis de mercado, que es donde el analista de riesgos verifica los datos: «Fos Consultin», «— Espacio de Pr, 2025-11-25», «…como nuevos terceros So, 2026-02-16» y «sobre el informe de Delectate, 2026-02-11». Dos de ellos aparecen completos en otro punto del mismo documento, lo que confirma que están truncados. «Fos Consultin» aparece también dos veces en la guía. Además, el §10 imprime una etiqueta de campo de plantilla dentro del corchete de garantías: «Las garantías ofrecidas quedan [garantías: aval solidario de los socios, …]», frase agramatical en la cláusula que más mira un banco.",
+   "fix": "Restaurar los cuatro nombres («Fos Consulting», «Espacio de Prensa MICHELIN España», «…terceros Soles», «Delectatech») en el business plan y en la guía, y reescribir la cláusula: «Las garantías ofrecidas son aval solidario de los socios, prenda sobre el derecho de traspaso y cesión de créditos de las pólizas de seguros».",
+   "texto_a_localizar": "[garantías: aval solidario de los socios",
+   "verificado_en": "grep sobre business-plan-modelo.md: 'Fos Consultin', 'de Pr,', 'terceros So,', 'de Delectate,' y el único corchete con etiqueta de campo del documento (los demás son [Nombre comercial], [Ciudad], [fecha prevista de apertura]). En guia-restaurante-gastronomico.md: 'Fos Consultin' ×2 y 'Espacio de Pr,' ×1, junto a las versiones completas 'Fos Consulting' y 'Delectatech'"
+  }
+ ],
+ "puede_esperar": [
+  "IVA soportado del cash flow: la fila 31 aplica un 10 % a TODA la materia prima, incluida la línea de bebida. La compra de alcohol al distribuidor es una entrega de bienes al 21 %, así que el modelo se deja ~1.241 €/mes de IVA deducible (~14.892 €/año). Verificado: H31 = 13.881,84 = 39.000 (B28) × 0,21 + 56.918,40 (H13) × 0,10, y plan-financiero «P&L Mensual» B14 = 11.282,04 de coste de bodega. NO bloquea porque el error va del lado conservador (infravalora la caja), pero conviene separar la línea de bebida o dejar nota explícita.",
+  "Densidad de ocupación y recorridos de evacuación (guía cap. 10): «una persona por metro cuadrado de superficie de uso público» y «no debe superar los 25 metros en riesgo bajo». En el CTE DB-SI la densidad de 1 m²/persona es para público DE PIE (las zonas de servicio de mesas van a 1,5 m²/persona), y el límite de 25 m depende de que la planta tenga salida única, no de una categoría de «riesgo bajo» (que es del reglamento industrial). NO PUEDO PROBARLO con los ficheros del pack: ninguna hoja recoge densidades y no he podido abrir el texto del CTE desde este entorno. Falta cotejar las tablas 2.1 y 3.1 del DB-SI vigente; la conclusión del párrafo (que 65 plazas quedan por debajo del aforo) se sostiene con cualquiera de las dos densidades.",
+  "«ElTenedor, OpenTable y TheFork» y «ElTenedor, TheFork, y algunas soluciones…» (guía cap. 21, dos veces): ElTenedor es la marca española de TheFork, así que se listan como dos competidoras distintas. El propio pack lo trata como uno solo (checklist-marketing-preapertura, fila 14: «Perfil en TheFork/ElTenedor optimizado»). Fix de un minuto: «TheFork (ElTenedor), OpenTable y Cover Manager».",
+  "«Nacida en 1980 como una guía de carreteras y hoteles» (guía cap. 18, Guía Repsol): dudoso —la publicación arranca como Guía Campsa (1979) y no toma el nombre Repsol hasta los noventa—. NO verificable con los ficheros del pack ni con fuente citada en el capítulo. O se cita fuente para la fecha, o se reformula como «heredera de la Guía Campsa».",
+  "«los 21.411,67 € mensuales representan algo menos de un tercio del coste total de personal» (guía cap. 14): son el 35,8 %, es decir algo MÁS de un tercio. Verificado: P&L Mensual B21 = 21.411,67 y B20+B21 = 59.801,68. Una palabra.",
+  "«| Tipo mensual (%) | 0,5 % |» (business plan §10, tabla «Condiciones de la operación solicitada»): el tipo real es 0,4583 % (Financiación B10 = 0,0045833). Redondeado a 0,5 %, un analista que multiplique por 12 obtiene 6 % anual y no el 5,5 % que se pide en la misma tabla. Imprimir 0,4583 %.",
+  "«el restaurante generaría pérdidas operativas antes de impuestos y amortizaciones» (business plan §9, sobre el EBIT pesimista de -2.419,52 €): «antes de amortizaciones» es el EBITDA, que ahí es POSITIVO (3.580,48 €). La frase se corrige sola dos líneas después («aunque el EBITDA positivo indica que la actividad sigue…»), por eso no bloquea, pero es un error conceptual en el documento que lee un analista. Fix: «después de amortizaciones».",
+  "Escenario OPTIMISTA con precios por debajo del realista sin una sola nota que lo explique (calculadora-ticket-medio: menú largo 120 vs 130, corto 72 vs 75, carta 82 vs 85, maridaje 57 vs 60). El ticket ponderado sí sube (99,80 / 123,20 / 136,00) porque lo levanta el mix, pero el lector no encuentra la hipótesis. Añadir una nota en la fila de precios.",
+  "Impuesto de Sociedades al 25 % en los años 1 y 2 (Proyección 3 Años B8=C8=D8=0,25) cuando la nota E8 de la propia hoja documenta que una entidad de nueva creación tributa al 15 % los dos primeros ejercicios con base positiva (art. 29.1 LIS) y el Gantt incluye la constitución de la SL. Va del lado conservador; añadir una línea diciendo que se ha optado por el tipo general por prudencia.",
+  "Fila «Coste materia prima (€)» de la tabla de escenarios del business plan §9: el importe (56.918,40 € en el realista) es el TOTAL de costes variables (45.636,36 de materia prima + 11.282,04 de bodega). Renombrarla «Costes variables totales (€)» en la tabla y, si procede, en el rótulo A18 de pl-mensual-escenarios.xlsx.",
+  "«creció un 3,1 %» frente al titular citado «aumento de la facturación hasta el 4 %» (guía cap. 22, dos epígrafes): probablemente NO es contradicción —el titular de la fuente redondea al alza y el cuerpo da el dato— pero conviene una sola redacción para que el lector no crea que hay dos cifras del mismo informe.",
+  "Cristalería dimensionada a 1,5 vueltas de lavado (guía cap. 11) en un restaurante de DOS servicios, cuando el propio capítulo dice tres párrafos antes que «si el local prevé dos servicios seguidos, la segunda vuelta necesita otro parque igual». Explicitar si la vuelta y media asume lavado entre servicios; si no, redimensionar el checklist.",
+  "Dos párrafos duplicados y fuera de tema en el cap. 21 de la guía, dentro del epígrafe de alérgenos: el del depósito/no-show (ya explicado entero en §Reservas) y el de la base legal del tratamiento (duplica el de §CRM). Borrarlos y dejar el epígrafe en lo suyo: alergia / intolerancia / preferencia.",
+  "El calendario de marketing de seis meses del cap. 20 de la guía (meses -6 a -1) no cabe en el Gantt del pack, que reserva 2 meses a «Marketing pre-apertura y prensa» (X34 = 15, Y34 = 2, con apertura en el 17). O se adelanta la fila del Gantt, o se recorta el calendario del capítulo.",
+  "RECORDATORIO DE PROCESO, no un hallazgo: los defectos verificados están ya en los .pdf y .docx entregables (comprobado en guia-restaurante-gastronomico.pdftxt y .docxtxt). Cualquier corrección exige regenerar PDF y DOCX de los tres documentos, y volver a pasar los gates antes de publicar."
+ ],
+ "resumen": "NO PUBLICAR. He verificado abriendo celda por celda y el pack no está listo: quedan 48 defectos bloqueantes deduplicados de los 120 reportados, y cinco de ellos son restos VIVOS de la cascada del IVA — exactamente el riesgo número uno que se pidió cazar. Siguen en disco: la guía manda dividir entre 1,21 para sacar la base imponible de la bodega (budget-bodega!C59 = 0,1 y T5 = 40/1,10), dice que «de cada euro, 0,638 son margen» en la misma frase que anuncia el 67,1 % (L56 = 0,671), repite dos veces «siete puntos por debajo del real» cuando la brecha medida es de 3,0 puntos (3.780/12.642 = 29,90 % frente a M56 = 32,89 %), afirma que la bebida alcohólica va al 21 % citando dos veces la hoja que dice 10 % (cash-flow B26 = 0,1), y los dos xlsx conservan la nota caducada: budget-bodega!Instrucciones A12 («21 %, en celda») conviviendo con A24 («10 % en sala»), y calculadora-ticket-medio!C23 («21 % en la parte de bebida alcohólica») cuando B23 = 0,1 y C24 = 123,20 × 1,10. Por debajo de la cascada hay algo peor: el dinero del expediente que va al banco no cuadra. La guía dice que los 221.603,36 € de preapertura están «dentro del CAPEX de 1.668.340,88 €» financiado con 700.000 + 1.189.944,24 — que suman 1.889.944,24 y no 1.668.340,88, un descuadre de 221.603,36 € que el xlsx desmiente en su propia nota A40; llama «impuestos soportados» a lo que son rentas y nóminas; y el CAPEX cuenta 9.900 € de tecnología DOS VECES (las seis líneas de cocina suman 161.430,40, que es el total íntegro del checklist, y ese total ya lleva dentro los 9.900 de Tecnología, que reaparecen en la línea 15). El business plan afirma que el umbral con «cuota plena» es 145.728,59 € cuando esa cifra usa la cuota de carencia (B49 = 3.208,33) y con la plena son 152.905,26 € y 56,4 cubiertos —la guía lo dice bien, así que el documento equivocado es el que lee el banco—, y su resumen ejecutivo abre con cuatro ratios que no existen en ninguna celda: rotación de 1,6 por servicio (serían 208 cubiertos/día sobre un modelo de 70) y un ROE del 12,4 % cuando el cálculo con las cifras del pack da 25,0 %. Hay tres afirmaciones normativas falsas (el libro de visitas derogado por la Ley 14/2013 cuando el checklist del propio pack dice Ley 23/2015 + Orden ESS/1452/2016; el art. 34.9 ET invocado para fijar el plazo de conservación de los datos de salud del COMENSAL; y el «consentimiento implícito» del RGPD, que no existe). Y sigue vivo el defecto que se dio por corregido: «Margen EBITDA | 0,18 €» en la tabla estrella, en los DOS documentos y ya impreso en el PDF y el DOCX, junto a tres filas de MESES con símbolo de euro, cuatro importes con el € detrás del punto final y cinco restos de salida degenerada («la piel, la piel, la piel», «los camarones conocen la carta», «las molestar», «un pan rallado», «Recomendados (antes llamados Recomendados)»), todos confirmados en el .pdftxt. Añado dos hallazgos que ningún crítico jerarquizó y que sostengo con la celda: el cuadrante de turnos deja el SÁBADO con cinco personas en todo el restaurante —tres jefes de partida, un commis y un camarero, sin chef, sin maître, sin sommelier y sin plonge— mientras la guía afirma que esas 24 personas son «la dotación mínima para dar dos servicios al día»; y el manual de sala construye toda su cadena de mando sobre un «jefe de rango» que no tiene nómina en la plantilla que el pack paga. En sentido contrario, he descartado o degradado varias acusaciones: el IVA soportado al 10 % sobre toda la materia prima es una hipótesis discutible pero CONSERVADORA para la caja y no bloquea; el «EBIT negativo antes de amortizaciones» del §9 se autocorrige dos líneas después; el «3,1 % frente al 4 %» del cap. 22 es el redondeo del titular de la fuente, no dos datos distintos; y la densidad del CTE DB-SI no la puedo probar desde aquí, así que la dejo en severidad media a la espera de un técnico. El producto está a una tanda de ediciones de poder salir, pero tal como está hoy un comprador de 85 € que abra el business plan por la primera página encuentra un ROE equivocado, y si sigue la instrucción del capítulo de bodega calcula mal el margen de toda su carta de vinos."
+}
