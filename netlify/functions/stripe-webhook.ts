@@ -6,12 +6,24 @@
 // confirmación, no se enviaba nada y no quedaba rastro (cliente del Kit Pastelería, 16-ago).
 // Con el webhook el email sale SIEMPRE que Stripe registra el pago, aterrice o no.
 //
-// ACTIVACIÓN (dos pasos de John, sin ellos la function es inerte y responde 501):
-//   1. Stripe → Developers → Webhooks → Add endpoint:
-//        URL     https://aichef.pro/.netlify/functions/stripe-webhook
-//        Eventos checkout.session.completed, checkout.session.async_payment_succeeded
-//   2. Netlify site aichefpro → env var STRIPE_WEBHOOK_SECRET = whsec_… (scope functions),
-//      marcada como secreta. Redeploy no necesario (las functions leen env en runtime).
+// ACTIVADO el 2026-08-31. Endpoint live `we_1UAb9x4CcdRGidmEJuh0ENpX` (api_version 2024-12-18.acacia,
+// eventos checkout.session.completed + checkout.session.async_payment_succeeded) y
+// STRIPE_WEBHOOK_SECRET puesto en el site `aichefpro` (id ee5802cf-34bb-4354-90d9-aa9f628b4038),
+// contexto production, scope functions, marcado como secreto.
+//
+// ⚠️ CORRECCIÓN de lo que decía aquí: **el redeploy SÍ es necesario**. Este comentario afirmaba que
+// «las functions leen env en runtime» y es falso — medido: tras `netlify env:set` el endpoint siguió
+// devolviendo 501 en tres intentos, y el propio CLI avisa «Changes will require a redeploy to take
+// effect on any deployed versions». Se resolvió disparando un build EN LA NUBE (`netlify api
+// createSiteBuild`), nunca en local (regla térmica del Mac).
+//
+// Si hay que rehacerlo: crear el endpoint con `stripe webhook_endpoints create --live`. Ojo, la clave
+// del Stripe CLI es RESTRINGIDA (rk_live_…) y necesita el permiso `webhook_write` habilitado en el
+// dashboard, o devuelve `more_permissions_required`. El secreto no debe pasar por ningún chat ni log:
+// del CLI a un fichero 600 y de ahí a `netlify env:set`.
+//
+// Verificación de que está activo: `POST` sin firma al endpoint debe devolver **400 missing_signature**
+// (si devuelve 501 webhook_not_configured, no está leyendo el secreto).
 //
 // El producto se deduce del payment_link de la sesión (mapa netlify/shared/payment-links.ts); si el
 // link no está mapeado se responde 200 con `ignored` (y se loguea) para que Stripe no reintente

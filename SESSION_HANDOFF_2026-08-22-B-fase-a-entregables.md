@@ -637,6 +637,26 @@ que no arrastremos eso». Así que **no hay rescate de compradores que hacer**: 
 - **Verificación de que quedó activo:** el mismo POST debe pasar de **501** a **400 `missing_signature`**. Si sigue en
   501 pasado un minuto, hará falta redeploy (el comentario del código afirma que no, pero eso no se había comprobado).
 
+### ✅ WEBHOOK ACTIVADO (misma sesión, tras el clic de John)
+
+Endpoint live **`we_1UAb9x4CcdRGidmEJuh0ENpX`** creado con el CLI (`enabled`, `livemode`, los dos eventos,
+`api_version 2024-12-18.acacia`) y `STRIPE_WEBHOOK_SECRET` en `aichefpro` / contexto `production` / scope `functions` /
+secreto. El `whsec_` no pasó por el chat: del CLI a un fichero 600 y de ahí a `netlify env:set`.
+
+**Verificado en producción:** sin firma → `400 missing_signature` · **firma inválida → `400 invalid_signature`** (esto
+es lo que prueba que el SDK carga y `constructEvent` corre, no solo que la variable exista) · `GET` → `405`.
+Mapa de Payment Links **44/44 sin drift**.
+
+**Tres gotchas medidos, ya en la memoria `reference_validacion-producto-sesion-y-webhook-stripe`:**
+1. La clave del Stripe CLI es **restringida** y de fábrica no tiene `webhook_write` (el `list` funciona y despista).
+2. **`netlify env:set --secret` exige `--context`** o falla.
+3. ⚠️ **El redeploy SÍ hace falta** — el comentario del código decía lo contrario y era falso (501 tres veces tras
+   poner la variable). Resuelto con `netlify api createSiteBuild`, build **en la nube**, nunca local. Comentario
+   corregido en el propio `stripe-webhook.ts` con lo medido.
+
+**Pendiente asociado:** revalidar `netlify/shared/payment-links.ts` cada vez que se rote o cree un Payment Link — si un
+link no está mapeado, el webhook responde `ignored: unknown_product` y ese comprador se queda sin email igual.
+
 ### Decisiones de estrategia (John, 2026-08-31) — detalle en `CALENDARIO-V2-SEMANAL.md §0-bis`
 
 1. **Sesiones ALTERNADAS**: una sesión actualiza un producto pendiente a v2.0, la siguiente **lanza un producto nuevo**.
