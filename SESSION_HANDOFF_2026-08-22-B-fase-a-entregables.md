@@ -592,3 +592,63 @@ Pastelería → Chocolatería). Memoria: `feedback_presupuesto-tokens-un-product
 PDF de 119 páginas (62.904 palabras, 32 tablas, A4, author OK, cifras vs xlsx en verde), 2 bonus docx, capítulos .md, y los 2 informes de refutación
 («no listo» ×2). Semana 1 = corrector + crítico + copia a `dl/`. Capa de producto de sushi-bar (cambios del corrector CB) REVERTIDA: describía la v2.0
 antes del APPLY. `gate-no-latinos.py` gana el abort por carpeta inexistente (RC-23 del CB). Sesión cerrada con el árbol limpio.
+
+## 18. Sesión 31-ago (Mac, Claude Code) — decisiones de estrategia + webhook de Stripe a un clic
+
+**Estado al arrancar:** el Mac estaba **4 commits por detrás de `origin/main`** (trabajo del VPS del 30-ago: blog PT
+tanda 5 y, lo que toca a esta pista, `29a9714` = catálogo de productos a 44 entradas + fix del parser que se comía
+`kit-inventario`). `git pull --ff-only` hecho.
+
+**`53fd919` — `lexico-es-corpus.txt` commiteado.** Estaba **untracked y sin ignorar** siendo entrada obligatoria de
+`guias-v2_0/documentos.py:258` (en este Mac no hay hunspell ni aspell: ese fichero ES el diccionario del gate de
+erratas). Un clon limpio o el VPS no podían generar los documentos de ninguna de las 10 guías. 43.872 entradas.
+
+### Verificación del estado real (todo comprobado, no leído de un handoff)
+
+- **Guía gastronómica:** los 18 xlsx v2.0 están LIVE (`escandallo-maestro.xlsx` sirve 13.417 bytes = el fichero del
+  repo). Los **documentos NO**: producción sirve el PDF viejo de **23.332 bytes** (18-ago). Los nuevos están en
+  `guias-v2_0/build/`: **119 págs / 64.347 palabras**, más `business-plan-modelo` (25) y `manual-servicio-sala` (23).
+- ⛔ **Los dos refutadores dicen «no listo» y el motivo es duro: las páginas 80-82 del PDF llevan salida cruda de un
+  modelo degenerado** (miles de `(2)` y una frase suelta). 35 hallazgos / 32 altas en el de dominio; 18 / 7 en el
+  técnico. **Eso es lo primero que tiene que arreglar el corrector**, antes del crítico y de la copia a `dl/`.
+- Refutaciones pendientes del resto: cafetería 24/8 altas · tapas-bar 25/9 · panadería 18/6 · casual 25/10 (con
+  incoherencias de dinero: coste de personal con dos cifras, inversión con tres, capex a −296.500 €) · mexicano 25/8 ·
+  peruano 25/12. Food-truck y japonés siguen PARCIALES.
+- **Cabo suelto detectado:** la «corrección» del §11 que llegó del VPS el 30-ago manda mergear
+  `wip/plan-financiero-capa-producto` — **esa rama no existe** (ni local ni en origin) y `ffb12e3` ya dejó el kit LIVE
+  el 29-ago. Se escribió leyendo el §11 sin el §13. **No rehacer ese trabajo.**
+- Cruft: 5 worktrees de agentes vivos + sus ramas, y un stash de mayo del refactor de netlify functions.
+
+### Webhook de Stripe — luz verde de John, bloqueado por UN permiso
+
+John: «vamos a activar el webhook, **no hay ningún pago huérfano, ya lo pasado está resuelto**; es dejarlo activado para
+que no arrastremos eso». Así que **no hay rescate de compradores que hacer**: sólo activar.
+
+- `POST https://aichef.pro/.netlify/functions/stripe-webhook` → **501 `webhook_not_configured`**. El código está
+  desplegado y correcto; falta configuración, no programación.
+- **Netlify listo:** site de producción **`aichefpro` id `ee5802cf-34bb-4354-90d9-aa9f628b4038`** (≠ staging), repo
+  linkado (`.netlify/` está en `.gitignore`), 53 env vars, `STRIPE_WEBHOOK_SECRET` **no existe** aún.
+- **Stripe: 0 endpoints creados** (nada duplicado). ⛔ Pero la clave del CLI es **restringida** (`rk_live_…`, cuenta
+  `acct_1PsZO84CcdRGidmE`) y **no tiene `webhook_write`** → `more_permissions_required`.
+- **Desbloqueo = un clic de John**: dashboard de Stripe → permisos de esa clave restringida → *Webhook Endpoints /
+  Event destinations* = **Write**. Después, un solo comando desde el Mac crea el endpoint
+  (`checkout.session.completed` + `checkout.session.async_payment_succeeded`, `api_version 2024-12-18.acacia`) y planta
+  el `whsec_` en Netlify **sin que el secreto pase por el chat**.
+- **Verificación de que quedó activo:** el mismo POST debe pasar de **501** a **400 `missing_signature`**. Si sigue en
+  501 pasado un minuto, hará falta redeploy (el comentario del código afirma que no, pero eso no se había comprobado).
+
+### Decisiones de estrategia (John, 2026-08-31) — detalle en `CALENDARIO-V2-SEMANAL.md §0-bis`
+
+1. **Sesiones ALTERNADAS**: una sesión actualiza un producto pendiente a v2.0, la siguiente **lanza un producto nuevo**.
+   La tabla de 17 semanas pasa a ser la cola de prioridad de la línea v2.0. Primer producto nuevo:
+   **Guía Food Cost + Ingeniería de Menú**.
+2. **Tienda oficial ÚNICA: `aichef.pro/productos-digitales`.** Se acabó replicar en ChefBusiness: CB y las demás marcas
+   ponen una **tarjeta que enlaza** a la landing de aichef.pro. **Homologación AICP↔CB CANCELADA** — pero antes de
+   archivar el censo, comprobar los 6 planes + guía casual + catering donde **CB iba por delante**, porque ahora esta es
+   la única tienda y ese material se perdería.
+3. **Después del ES, los mismos productos NATIVOS en inglés** (no traducción), en la misma tienda bajo `/en/`. Luego
+   otros idiomas. No se arranca hasta cerrar el español.
+
+Térmica respetada toda la sesión (49-54 °C, sin builds locales ni Playwright). John la re-confirmó por escrito.
+
+Via: Claude Code

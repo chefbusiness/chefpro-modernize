@@ -5,6 +5,48 @@
 > más de una familia en paralelo.** Este fichero es la fuente de verdad del ritmo; la SPEC de cada familia es la
 > fuente de verdad del contenido. Estado y bitácora detallada: `SESSION_HANDOFF_2026-08-22-B-fase-a-entregables.md` §13-§17.
 
+## 0-bis. ⚠️ DECISIONES DE JOHN DEL 2026-08-31 — mandan sobre todo lo de abajo
+
+Tres decisiones que reorientan la línea. **La tabla de 17 semanas del §2 deja de ser un calendario y pasa a ser la COLA
+de prioridad de la línea v2.0**; lo que fija el ritmo es la alternancia.
+
+### 1. Sesiones ALTERNADAS (no semanas)
+
+| Sesión | Qué se hace |
+|---|---|
+| impar | Actualizar a v2.0 un producto pendiente (siguiente de la cola del §2) |
+| **par** | **LANZAR un producto NUEVO** |
+
+Razón de John: «llevamos mucho tiempo sin lanzar un producto nuevo y, además, tenemos muchos productos que lanzar».
+La línea v2.0 mejora lo que ya se vende pero no abre mercado. El techo de presupuesto del §0 **no cambia**.
+
+**Primer producto nuevo, elegido por John: «Guía Food Cost + Ingeniería de Menú»** (§3, nº1). Reutiliza
+`escandallo-maestro` y `menu-engineering-matrix` v2.0 y el bono de food cost del kit de escandallos; keywords ya medidas
+en 8D. Ojo a la alerta de coordinación del catálogo: estaba anunciada en AICP para julio y en CB para septiembre — la
+duplicidad **se disuelve sola** con la decisión 2.
+
+### 2. TIENDA OFICIAL ÚNICA: `aichef.pro/productos-digitales` — se acabó replicar en ChefBusiness
+
+**Revoca la regla del 2026-08-18** («AICP y CB = una sola versión; si AICP actualiza, CB replica»).
+
+- Landing, Payment Link, entregables (`dl/`), dashboard y functions de cada producto viven **solo aquí**.
+- ChefBusiness y el resto de marcas del grupo ponen una **tarjeta que enlaza a la landing de aichef.pro**; la compra se
+  cierra aquí. Palabras de John: «nos ahorramos duplicar infraestructura y vamos más rápido».
+- **La homologación AICP↔CB queda CANCELADA.** `homologacion-aicp-cb-censo-2026-08-18.json` pasa a histórico.
+  ⚠️ **Antes de darla por muerta**: ese censo decía que **CB iba por delante en 6 planes de negocio v2.0 + guía casual +
+  catering**. Si eso sigue siendo cierto, hay que traer ese material a aichef.pro, que ahora es la única tienda — o se
+  pierde. **Comprobarlo antes de archivar nada.**
+- Nota de dictado: «Hspro» = AI Chef Pro. **No** es el site `hosply` (repo `chefbusiness/hosply` → www.hosply.pro), que
+  existe de verdad y es otra cosa.
+
+### 3. Después del español: los mismos productos NATIVOS en inglés
+
+Cerrado el catálogo ES, se rehacen todos en **inglés nativo** (no traducción: normativa, fiscalidad y benchmarks son del
+mercado), en la misma tienda, bajo `/en/`. Después, otros idiomas. Clientes ya los están pidiendo. **No se arranca hasta
+cerrar el ES.**
+
+---
+
 ## 0. Reglas de presupuesto (no negociables)
 
 1. **Techo por semana: ~15 % de la cuota** (≈ 1 producto hermano completo o 1 producto nuevo por fases). Antes de empezar,
