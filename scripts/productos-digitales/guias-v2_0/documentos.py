@@ -361,6 +361,36 @@ def erratas_truncamiento(texto, min_chars=40):
     return fuera
 
 
+RX_ARRANQUE_OK = re.compile(r'^[A-ZÁÉÍÓÚÑÜ0-9«"\u201c¿¡—\-\*#|>`\[(]')
+
+
+def erratas_arranque(texto, min_chars=40):
+    """Párrafo cortado por el PRINCIPIO. Complementa a erratas_truncamiento(),
+    que sólo mira el final.
+
+    Cazado el 2026-08-31: junto a las tres páginas de «(2)» del cap. 15 había
+    una línea suelta —«, no, el problema del cliente es que es una. (4) No hay
+    una.»— que pasaba LOS CUATRO guards: no es larga, no repite n-gramas,
+    termina en punto y no menciona ningún motor. Si el bloque sólo hubiera
+    degenerado por el arranque, se habría publicado.
+
+    En prosa española un párrafo empieza por mayúscula, cifra, comilla o signo
+    de apertura; nunca por coma o minúscula. Validado sobre los 29 ficheros del
+    corpus de esta guía (3 documentos + 26 bloques en caché): 2 hallazgos, que
+    son exactamente las 2 líneas corruptas. Cero falsos positivos.
+    """
+    fuera = []
+    for i, ln in enumerate(texto.split('\n'), 1):
+        s = ln.strip()
+        if len(s) < min_chars:
+            continue
+        if s.startswith(('#', '|', '-', '*', '>', '`', '!', '[')):
+            continue
+        if not RX_ARRANQUE_OK.match(s):
+            fuera.append({'linea': i, 'arranque': s[:70]})
+    return fuera
+
+
 def erratas_parentesis(texto):
     fuera = []
     for i, ln in enumerate(texto.split('\n'), 1):
@@ -807,6 +837,8 @@ def defectos_de_bloque(texto):
         malos.append({'tipo': 'degeneracion', 'muestra': d['muestra']})
     for d in erratas_truncamiento(texto):
         malos.append({'tipo': 'truncamiento', 'muestra': d['cola']})
+    for d in erratas_arranque(texto):
+        malos.append({'tipo': 'arranque_cortado', 'muestra': d['arranque']})
     for e in erratas_entidades(texto):
         malos.append({'tipo': 'entidad_html', 'muestra': e})
     for f in erratas_fuga_modelo(texto):
