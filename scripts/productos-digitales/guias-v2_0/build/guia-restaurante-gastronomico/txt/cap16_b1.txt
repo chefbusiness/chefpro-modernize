@@ -1,0 +1,27 @@
+ ### Cómo se selecciona y se homologa a un proveedor
+
+La homologación de proveedores no es un trámite administrativo más: es la primera barrera del APPCC. Antes de que cualquier producto entre en nuestra cocina, necesitamos garantizar que su origen, manipulación y transporte cumplen los mismos estándares que exigimos internamente. Por eso, cada proveedor debe superar un proceso documentado que incluye visita inicial, análisis de riesgos y una reevaluación periódica, al menos una vez al año o cuando cambie alguna condición relevante.
+
+La documentación mínima que exigimos en la homologación incluye:
+
+- Registro sanitario vigente y certificados de trazabilidad de los lotes.
+- Fichas técnicas de cada producto, con especificaciones microbiológicas y organolépticas.
+- Certificados de buenas prácticas de manipulación y, en su caso, de producción ecológica o integrada.
+- Seguro de responsabilidad civil y contrato de suministro con cláusulas de calidad.
+- Resultados de análisis externos periódicos, sobre todo para pescado crudo, mariscos y vegetales de hoja.
+
+Las condiciones de transporte son críticas. Exigimos vehículos isotermos o frigoríficos según el tipo de mercancía, con registro de temperaturas continuo y sin roturas en la cadena de frío. En recepción, controlamos la temperatura del producto, el estado del embalaje, la ausencia de daños o signos de descongelación, y contrastamos el albarán con el pedido. Cualquier desviación se registra en el parte de incidencias y puede suponer la devolución inmediata del lote. Este control no es burocrático: es la garantía de que lo que servimos al cliente mantiene la seguridad y la calidad que prometemos.
+
+### Lonja, huerta y pequeño productor: logística y mínimos de pedido
+
+Trabajar con producto de temporada no es una elección estética, es una decisión económica. Cuando compramos en lonja o directamente al pequeño productor, el precio fluctúa con la oferta y la demanda, y eso afecta directamente a nuestro escandallo. Una lubina salvaje en febrero no cuesta lo mismo que en julio; un calabacín de invernadero no tiene el mismo coste que uno de temporada. Por eso, la ficha técnica de cada plato debe revisarse con cada cambio de estación, y a veces incluso cada semana.
+
+El coste por ración es la base de nuestro margen. Si el precio de compra sube un 15 % y no ajustamos la receta o el precio de venta, el beneficio desaparece sin que lo veamos en el día a día. Por eso, en la hoja «Inversión» de plan-financiero-3-anos.xlsx tenemos fijado un stock inicial de materias primas de 12.000,00 €, y en la hoja «P&L Mensual» de ese mismo libro, el coste mensual de materia prima en el mes tipo asciende a 45.636,36 €, lo que representa un 24,1 % sobre las ventas. Ese porcentaje es nuestra referencia: si lo superamos de forma sostenida, el problema no es solo de compras, es de escandallos desactualizados.
+
+Para que la operativa funcione, necesitamos definir mínimos de pedido realistas. Un pequeño productor no puede desplazarse para entregarnos dos kilos de tomates; una lonja no nos reserva género si no confirmamos antes una cantidad mínima. La solución es planificar con antelación:
+
+- Establecer un pedido tipo semanal para cada proveedor, con cantidades mínimas y máximas.
+- Agrupar las compras de productos de temporada en función del menú del día o de la semana.
+- Mantener una lista de proveedores alternativos para cada categoría crítica.
+
+Y aquí entra el plan B. Cuando la lonja no trae el pescado que necesitamos para el pase principal, no podemos improvisar sobre la marcha. Nuestro plan B consiste en tener una segunda opción de pescado de temporada ya homologada, con su escandallo calculado y su ficha técnica actualizada. Esa alternativa se activa antes de empezar el servicio, se comunica al equipo de sala y se ajusta la carta si es necesario. También contemplamos la posibilidad de sustituir por una preparación distinta, como un escabeche o un ahumado, que nos permita aprovechar otras piezas sin romper la coherencia del menú. La clave es que el plan B no sea una ocurrencia del momento, sino una decisión prevista, con su coste calculado y su proveedor confirmado. Así, la incertidumbre de la lonja no se convierte en una pérdida de margen ni en una experiencia deficiente para el cliente.

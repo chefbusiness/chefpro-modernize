@@ -672,3 +672,33 @@ link no está mapeado, el webhook responde `ignored: unknown_product` y ese comp
 Térmica respetada toda la sesión (49-54 °C, sin builds locales ni Playwright). John la re-confirmó por escrito.
 
 Via: Claude Code
+
+## 19. ⚠️ HALLAZGO GRAVE (31-ago): el `.md` de la guía gastronómica NO se puede reproducir desde su caché `txt/`
+
+Descubierto arreglando las páginas 80-82. **Las 26 cachés `txt/cap*_b*.txt` commiteadas en `ca65987` y el
+`guia-restaurante-gastronomico.md` commiteado en ese mismo commit son de DOS TANDAS DE GENERACIÓN DISTINTAS.**
+
+Comprobado de dos formas independientes:
+
+1. Automática: para las 26 cachés, su último párrafo —tras pasar por `limpiar_bloque()` y normalizando espacio fino,
+   guion no separable y espacios múltiples— **no aparece en el .md**. 26 de 26.
+2. A mano: `cap01_b1.txt` empieza «El fine dining no es una versión más cara de un restaurante de menú; es otra
+   estructura de costes…». El capítulo 1 del .md, bajo el MISMO encabezado `### Qué hace diferente al fine dining`,
+   empieza «El fine dining no se reconoce por los manteles de lino ni por la vajilla cara…». Mismo guion, prosa
+   completamente distinta.
+
+**Por qué importa, y mucho:**
+
+- **Un rebuild NO devuelve el libro que auditaron los refutadores.** Los 35+18 hallazgos están referidos al `.md`/PDF;
+  si alguien corre `documentos.py` confiando en la caché, obtiene otro libro y esos hallazgos dejan de mapear.
+- **Explica el truncamiento del cap. 8:** la caché `cap08_b2.txt` está COMPLETA y sin defectos (1.058 palabras), y el
+  .md está cortado a media frase (1.033). No es que la caché fuera mala: es que el .md viene de otra tanda.
+- **Confirma que la vía correcta es la quirúrgica** (regenerar el bloque y empalmarlo en el .md auditado), no el
+  rebuild. Es lo que se hizo con cap15_b2 y con los tres truncamientos.
+
+**Regla para la sesión del corrector:** el artefacto de verdad es el `.md` de `build/`. La caché `txt/` sirve para
+alimentar bloques nuevos, **no** como fuente de la que reconstruir el libro. Si en algún momento se quiere un libro
+reproducible, hay que regenerarlo entero de una sola tanda y volver a auditarlo desde cero — decisión de presupuesto,
+no técnica.
+
+Via: Claude Code
