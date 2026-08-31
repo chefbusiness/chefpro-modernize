@@ -1398,8 +1398,8 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
             ws.merge_cells(start_row=cr.min_row, start_column=1,
                            end_row=cr.min_row, end_column=_col('S'))
 
-    # RD-13 · «F» es el PVP de CARTA, que en España se anuncia CON IVA, y en
-    # vino alcohólico el tipo es el 21 %. Cruzarlo con un coste sin IVA
+    # RD-13 · «F» es el PVP de CARTA, que en España se anuncia CON IVA (10 %
+    # en sala desde la decisión de RD-17). Cruzarlo con un coste sin IVA
     # subestima el food cost de bebida en unos 7 puntos, justo en la magnitud
     # que decide si la bodega gana dinero. El escandallo de este mismo pack ya
     # lo resuelve con su celda de tipo (§1.5a): aquí igual, con una columna
@@ -1528,13 +1528,17 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
           'medio ponderado y food cost medio. Un fichero llamado «Budget de '
           'Bodega» no sumaba nada: 100 fórmulas y ninguna cruzaba coste con '
           'stock [TEC-19 · COM-22 · §4.3]')
-    _param(ws, fila_iva_beb, None, valor=0.21,
+    # 2026-08-31 (RD-17) · el tipo sale ahora de motor.PARAMETROS, no de un
+    # literal: estaba duplicado con el de la capa del 303 y los dos en 21 %.
+    _param(ws, fila_iva_beb, 'iva_bebida',
            etiqueta='IVA de la bebida alcohólica (%)', fmt=motor.FMT_PCT,
-           nota=('21 % en bebidas alcohólicas (art. 91 de la Ley del IVA). El '
-                 'PVP de la columna F es el de CARTA, que en España se anuncia '
-                 'CON IVA: el multiplicador, el margen, el food cost y el '
-                 'valor a PVP se calculan sobre la columna «PVP sin IVA», no '
-                 'sobre el precio de carta.'),
+           nota=('10 %, igual que la comida: la bebida servida en sala es '
+                 'suministro «para consumir en el acto» (art. 91.Uno.2.2 de '
+                 'la Ley del IVA). El PVP de la columna F es el de CARTA, que '
+                 'en España se anuncia CON IVA: el multiplicador, el margen, '
+                 'el food cost y el valor a PVP se calculan sobre la columna '
+                 '«PVP sin IVA», no sobre el precio de carta. Si vendes para '
+                 'llevar, esa línea sí va al 21 %: sepárala.'),
            col_et='A', col_val='C', col_nota='D')
     cambios.append(
         fname + ':' + ws.title + '!T' + str(primera) + ':T' + str(ultima)
@@ -1545,7 +1549,8 @@ def _bodega(wb, fname, cambios, contenido, registro_modelo):
     _instr(wb, fname, cambios, [
         'Los precios de la columna «PVP Carta (€)» van CON IVA, que es como se '
         'anuncian en España. El libro calcula el «PVP sin IVA» con el tipo de '
-        'la bebida alcohólica (21 %, en celda) y TODOS los indicadores salen '
+        'la bebida alcohólica (10 % en sala, en celda) y TODOS los '
+        'indicadores salen '
         'de ahí: cruzar un coste sin IVA con un precio con IVA deja el food '
         'cost de bebida unos 7 puntos por debajo del real.',
         'La columna «Multiplicador (×)» es PVP ÷ coste (el x2,5-x3,5 del '
@@ -2753,13 +2758,17 @@ def demos(carpeta, destino, contenido):
             _set(xl, pref + 'F' + str(r0), 30)
             _set(xl, pref + 'I' + str(r0), 24)
             _set(xl, pref + 'K' + str(r0), 12)
-            # RD-13 · el PVP de la columna F es el de CARTA, CON IVA (21 % en
-            # bebida alcohólica): 30 € de carta son 24,79 € netos. Los
-            # indicadores se miden sobre esa base, y por eso el food cost de
-            # bebida real es 40,3 % y no el 33,3 % que salía cruzando un coste
-            # sin IVA con un precio con IVA — 7 puntos de diferencia, justo en
-            # la magnitud que decide si la bodega gana dinero.
-            neto = round(30 / 1.21, 10)
+            # RD-13 · el PVP de la columna F es el de CARTA, CON IVA. Los
+            # indicadores se miden sobre el neto, no sobre el precio de carta:
+            # cruzar un coste sin IVA con un precio con IVA deja el food cost
+            # de bebida por debajo del real, justo en la magnitud que decide si
+            # la bodega gana dinero.
+            # 2026-08-31 (RD-17) · el tipo sale del PARÁMETRO, no de un literal.
+            # Con el 1,21 escrito a mano, cambiar el IVA en motor.PARAMETROS
+            # habría dejado este autotest comprobando contra el tipo viejo: el
+            # test habría seguido en verde midiendo lo que ya no se genera.
+            _iva_beb = motor.PARAMETROS['iva_bebida']['valor']
+            neto = round(30 / (1 + _iva_beb), 10)
             mult = _ev(xl, pref + 'H' + str(r0))
             margen = _ev(xl, pref + 'L' + str(r0))
             fc = _ev(xl, pref + 'M' + str(r0))
@@ -2774,21 +2783,29 @@ def demos(carpeta, destino, contenido):
                   and _cerca(vcoste, 240) and _cerca(tot_coste, 240))
             det.setdefault('bodega', []).append({
                 'fichero': fname, 'hoja': ws.title, 'total_en_blanco': blanco,
-                'coste_10_pvp_carta_30_con_iva_21': {
-                    'pvp_sin_iva_esperado_24_79': _ev(xl, pref + 'T' + str(r0)),
-                    'multiplicador_esperado_2_48': mult,
-                    'margen_s_pvp_esperado_0_597': margen,
-                    'food_cost_esperado_0_403': fc},
+                'coste_10_pvp_carta_30_con_iva': {
+                    'iva_bebida_aplicado': _iva_beb,
+                    'pvp_sin_iva_esperado': round(neto, 2),
+                    'pvp_sin_iva_obtenido': _ev(xl, pref + 'T' + str(r0)),
+                    'multiplicador_esperado': round(neto / 10, 2),
+                    'multiplicador_obtenido': mult,
+                    'margen_s_pvp_esperado': round(1 - 10 / neto, 3),
+                    'margen_s_pvp_obtenido': margen,
+                    'food_cost_esperado': round(10 / neto, 3),
+                    'food_cost_obtenido': fc},
                 'rotacion_12_vendidas_24_stock_esperado_0_5': rot,
                 'valor_stock_coste_esperado_240': vcoste,
                 'TOTAL_valor_a_coste_esperado_240': tot_coste, 'ok': bool(ok)})
             if not ok:
                 fallos.append(
                     fname + ':' + ws.title + ': con coste 10 EUR, PVP de carta '
-                    '30 EUR (IVA de bebida 21 %), stock 24 y 12 uds vendidas se '
-                    'esperaba PVP sin IVA 24,79 EUR, multiplicador 2,48, margen '
-                    's/PVP 59,7 %, food cost 40,3 %, rotación 0,5 y valor a '
-                    'coste 240 EUR; salió ' + repr((mult, margen, fc, rot,
+                    '30 EUR (IVA de bebida ' + format(_iva_beb * 100, '.0f')
+                    + ' %), stock 24 y 12 uds vendidas se esperaba PVP sin IVA '
+                    + format(neto, '.2f') + ' EUR, multiplicador '
+                    + format(neto / 10, '.2f') + ', margen s/PVP '
+                    + format((1 - 10 / neto) * 100, '.1f') + ' %, food cost '
+                    + format(10 / neto * 100, '.1f') + ' %, rotación 0,5 y '
+                    'valor a coste 240 EUR; salió ' + repr((mult, margen, fc, rot,
                                                     vcoste, tot_coste))
                     + ' [TEC-19 · TEC-20 · TEC-18 · RD-13]')
 

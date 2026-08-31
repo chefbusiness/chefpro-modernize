@@ -379,9 +379,11 @@ CASH = {
     # RD-20/RD-08 · lo que el bloque de «Inversión» calcula como necesidad
     # total, repetido aquí con su nota (§1.13: se repite el dato, no se enlaza).
     'necesidad_total': 1889944.24,
-    # RD-14 · el 10 % único sobre TODA la facturación deja corta la
-    # liquidación del 303: la bodega va al 21 %.
-    'iva_bebida': 0.21,
+    # RD-14 · la bebida tiene su propia celda de tipo para quien tenga venta
+    # PARA LLEVAR (ésa sí va al 21 %).
+    # 2026-08-31 (RD-17, decisión del dueño): en SALA es el 10 %, igual que la
+    # comida (art. 91.Uno.2.2 de la Ley del IVA).
+    'iva_bebida': 0.10,
     # RD-06/RC-08 · las 12 columnas se entregaban vacías y el punto de
     # equilibrio decía «No alcanzado» nada más abrir el fichero. Rampa de
     # apertura sobre el escenario REALISTA (189.728 €/mes): parametrizada, en

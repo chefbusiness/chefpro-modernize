@@ -99,8 +99,8 @@ estructura obliga a una gestión de turnos muy afinada, con picos de trabajo con
 de comida y cena, y a una política de contratación que priorice la polivalencia y la experiencia.
 Con un ticket medio ponderado de 123,20 € (calculadora-ticket-medio.xlsx, hoja «Ticket Medio») y 70
 cubiertos al día (calculadora-ticket-medio.xlsx, hoja «Ticket Medio»), la facturación mensual alcanza
-189.728,00 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»). Aplicando el 10 % de IVA en
-restauración y el 21 % en bebidas alcohólicas, el ticket que ve el comensal sube a 135,52 €
+189.728,00 € (pl-mensual-escenarios.xlsx, hoja «Escenarios»). Aplicando el 10 % de IVA de
+restauración a todo el consumo en sala -comida y bebida-, el ticket que ve el comensal sube a 135,52 €
 (calculadora-ticket-medio.xlsx, hoja «Ticket Medio»). El EBITDA mensual resultante es de 34.007,92 €
 (pl-mensual-escenarios.xlsx, hoja «Escenarios»), un margen que solo se sostiene con una gestión
 rigurosa del personal y de los horarios. No hay atajo: en el fine dining, el equipo es el producto.
@@ -228,9 +228,9 @@ EBITDA mensual (€)
 34.007,92 €
 47.030,72 €
 Margen EBITDA (%)
-0,03 €
-0,18 €
-0,20 €
+2,7 %
+17,9 %
+20,2 %
 Amortización mensual (€)
 6.000,00 €
 6.000,00 €
@@ -328,7 +328,7 @@ aunque su ticket medio sube un 1,0 %. Ese diferencial de crecimiento entre caden
 la presión estructural que sufrirá cualquier proyecto propio.
 Cuántos restaurantes distinguidos hay en España y qué significa esa cifra
 El reconocimiento no es un premio a la cocina, es un dato de mercado. La Guía MICHELIN España &
-Andorra 2026 distingue 307 restaurantes con Estrella: 16 con dos, 37 con una y 254 con una, según la
+Andorra 2026 distingue 307 restaurantes con Estrella: 16 con tres, 37 con dos y 254 con una, según la
 nota de prensa oficial de Michelin España («La Guía MICHELIN España & Andorra 2026 celebra el
 excepcional dinamismo de su escena culinaria», 2025-11-25). Esa cifra sitúa a España en la quinta
 posición mundial por número de restaurantes con estrella, por detrás de Francia (659), Italia (390),
@@ -563,9 +563,9 @@ sale, se cambia por otro de la carta, no se rehace un menú entero. La desventaj
 compra es más difícil. El escandallo de cada plato de la carta tiene su 28 %, pero el mix real de ventas
 decide el food cost final. Si el público pide más carne que pescado, el coste baja; si pide más pescado,
 sube. Por eso el escenario realista del P&L trabaja con el 30 %: asume que el mix no es perfecto, que
-hay merma de frescura y que la bebida, con su IVA del 21 %, no compensa todo lo que debería. El
-menú corto, además, se puede comprar por encargo si se ofrece solo en ciertos días, y esa es una
-palanca que la carta larga no tiene.
+hay merma de frescura y que la bebida no compensa todo lo que debería. El menú corto, además, se
+puede comprar por encargo si se ofrece solo en ciertos días, y esa es una palanca que la carta larga no
+tiene.
 Modelo 3: barra de autor y counter
 La barra de autor es el modelo de menor inversión en sala y mayor exigencia en ejecución. No hay
 servicio de mesa clásico: el comensal se sienta frente a la cocina, ve el trabajo y come al ritmo del
@@ -623,14 +623,14 @@ cortes que no se venden. Esa diferencia se ve en el food cost del escenario real
 de la ficha de escandallo al 30 % en el P&L mensual. El escandallo mide el plato perfecto, sin merma y
 sin bebida; el P&L realista incorpora lo que ocurre entre la compra y el servicio.
 La rotación de las 65 plazas no se calcula como un multiplicador de mesas. 70 cubiertos al día sobre 65
-plazas no significa una rotación de 1,08; significa una ocupación de 55 cubiertos en el servicio de
-comida y 15 en el de cena, o cualquier combinación con picos claros. En el chef's table, la rotación es
-aún más lenta: una única sesión por noche, con el comensal sentado entre dos horas y media y tres
-horas. Eso obliga a fijar el precio del menú largo en 130,00 € y el del corto en 75,00 € como referencia
-del escenario realista, con el maridaje en 60,00 €. El ticket medio de carta, en el mismo escenario, es de
-75,00 € si hablamos del menú corto, aunque el de carta propiamente dicho alcanza los 85,00 €. La tabla
-de abajo -mix de oferta y ticket ponderado- resume cómo se combinan esas cifras según el peso que
-demos a cada línea.
+plazas no significa una rotación de 1,08; significa una ocupación de 25 cubiertos en el servicio de
+comida y 45 en el de cena (pl-mensual-escenarios.xlsx, hoja «Escenarios»), o cualquier combinación
+con picos claros. En el chef's table, la rotación es aún más lenta: una única sesión por noche, con el
+comensal sentado entre dos horas y media y tres horas. Eso obliga a fijar el precio del menú largo en
+130,00 € y el del corto en 75,00 € como referencia del escenario realista, con el maridaje en 60,00 €. El
+ticket medio de carta, en el mismo escenario, es de 75,00 € si hablamos del menú corto, aunque el de
+carta propiamente dicho alcanza los 85,00 €. La tabla de abajo -mix de oferta y ticket ponderado-
+resume cómo se combinan esas cifras según el peso que demos a cada línea.
 La implicación operativa es inmediata: el menú único permite comprar por encargo, con una lista de
 compra casi cerrada y una merma previsible. La carta, en cambio, obliga a mantener stock de materias
 primas que no siempre se venden, y eso empuja la merma hacia arriba. En un modelo mixto -carta de
@@ -818,15 +818,31 @@ preapertura,
 se forma al equipo, se hacen las pruebas de cocina y se ensaya el servicio. No genera ingreso, pero sin
 él no hay apertura posible.
 El tercer bloque es el fondo de maniobra. No es un colchón redondeado a ojo: son seis meses de
-estructura completa. El coste mensual de estructura, es decir, todo lo que cuesta tener el restaurante
-abierto sin contar materia prima, es de 155.720,08 € (plan-financiero-3-anos.xlsx, hoja «Inversión»).
-Multiplicado por seis da exactamente 934.320,48 € (plan-financiero-3-anos.xlsx, hoja «Inversión»). Esos
-seis meses cubren el tiempo que va desde la apertura hasta que la operación genera caja positiva de
-forma estable. No es una estimación optimista: es el resultado de modelar la rampa de facturación, que
-alcanza el ritmo de crucero en el mes 6 (plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años»), con un
-primer mes que factura el 60 % de ese crucero (plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años»).
-Si la rampa se alarga, el fondo de maniobra es lo que evita tener que pedir un préstamo puente de
-urgencia.
+estructura completa. El coste mensual de estructura es la etiqueta literal de la celda del plan: «fijos sin
+amortización + variables», es decir, SÍ incluye la materia prima y la bebida, no las excluye; asciende a
+155.720,08 € (plan-financiero-3-anos.xlsx, hoja «Inversión»). Multiplicado por seis da exactamente
+934.320,48 € (plan-financiero-3-anos.xlsx, hoja «Inversión»). La hipótesis es deliberadamente
+conservadora: seis meses de estructura completa, compras incluidas, con la facturación en cero, no
+seis meses de solo costes fijos. Esos seis meses cubren el tiempo que va desde la apertura hasta que
+la operación genera caja positiva de forma estable. No es una estimación optimista: es el resultado de
+modelar 
+la 
+rampa 
+de 
+facturación, 
+que 
+alcanza 
+el 
+ritmo 
+de 
+crucero 
+en 
+el 
+mes 
+6
+(plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años»), con un primer mes que factura el 60 % de ese
+crucero (plan-financiero-3-anos.xlsx, hoja «Proyección 3 Años»). Si la rampa se alarga, el fondo de
+maniobra es lo que evita tener que pedir un préstamo puente de urgencia.
 La suma de CAPEX (sin fondo) más preapertura más fondo de maniobra da la necesidad total de
 financiación. 
 En 
@@ -850,12 +866,12 @@ No es un coste de la inversión, es una partida de tesorería. Cuando pagas una 
 al 10 % (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses») o una de bebida alcohólica al 21 %
 (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»), ese impuesto no se queda en tu cuenta: lo
 recuperas a través del modelo 303, la declaración trimestral de IVA. Pero mientras tanto, ese dinero ha
-salido de tu bolsillo. Por eso el IVA de la inversión forma parte de la necesidad de financiación: hay que
-tenerlo en caja desde el primer día, aunque luego se recupere. No es un gasto, es una posición de
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 18
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+salido de tu bolsillo. Por eso el IVA de la inversión forma parte de la necesidad de financiación: hay que
+tenerlo en caja desde el primer día, aunque luego se recupere. No es un gasto, es una posición de
 liquidez.
 Lo mismo ocurre con el préstamo. El plan contempla un préstamo de 700.000,00 € a 10 años
 (plan-financiero-3-anos.xlsx, hoja «Financiación») con un tipo de interés nominal anual del 5,5 %
@@ -927,12 +943,12 @@ de obra que no cuadra con la realidad de tu local.
 El fondo de maniobra no es un colchón redondeado a ojo. Se dimensiona en 6 meses de estructura
 completa, que es la única manera de no morir en la rampa de lanzamiento. El coste mensual de
 estructura es de 155.720,08 €, que incluye el alquiler mensual de 17.000,00 € y el coste mensual de la
-brigada de 59.801,68 €, entre otras partidas. Multiplicar esa cifra por seis da los 934.320,48 €. Esa es la
-lógica: meses de estructura, no una cifra sacada de la nada.
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 19
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+brigada de 59.801,68 €, entre otras partidas. Multiplicar esa cifra por seis da los 934.320,48 €. Esa es la
+lógica: meses de estructura, no una cifra sacada de la nada.
 En el ejemplo de financiación, el importe del préstamo es de 700.000,00 € a un plazo de 10 años y un
 tipo de interés nominal anual del 5,5 %. La cuota mensual tras la carencia es de 8.232,00 €. Durante la
 carencia, la cuota mensual es de 3.208,33 €, que corresponde solo a intereses. Es fundamental
@@ -950,37 +966,47 @@ del mes asciende a 6.000,00 €, por lo que el EBIT es de 28.007,92 €. Es impo
 términos: el EBITDA no resta la amortización y el EBIT sí. Un EBITDA con la amortización dentro es un
 EBIT con otro nombre, y eso ya ha hecho cerrar más de una negociación con un inversor.
 El punto de equilibrio se sitúa en dos umbrales. El primero, el de explotación, es de 141.145,26 € de
-ventas mensuales. El segundo, que incluye el servicio de la deuda, es de 145.728,59 €. La diferencia
-entre ambos es la cuota del préstamo. No se puede hablar de punto de equilibrio sin incluir la cuota del
-banco, porque la deuda no se negocia con la cuenta de resultados, se paga con la caja. Para alcanzar
-ese segundo umbral, se necesitan 53,8 cubiertos al día, un dato que se obtiene de dividir el umbral
-entre el ticket medio. El mes de break-even de caja es el 5, lo que significa que a partir de ese mes el
-flujo de caja acumulado se vuelve positivo.
+ventas mensuales. El segundo, calculado con la cuota del préstamo durante la carencia, es de
+145.728,59 €. La diferencia entre ambos, 4.583,33 €, no es la cuota del préstamo: es la cuota de la
+carencia, 3.208,33 € (cash-flow-break-even.xlsx, hoja «Cash Flow 12 Meses»), dividida entre el margen
+de contribución del 70 %, porque cada euro de venta adicional solo deja 70 céntimos para pagar esa
+cuota. Y ese segundo umbral usa la cuota DURANTE la carencia, no la cuota plena de 8.232,00 € que
+llega después: con la cuota plena, el umbral con deuda sube a 152.905,26 € y hacen falta 56,4
+cubiertos al día, no 53,8. No se puede hablar de punto de equilibrio sin incluir la cuota del banco, porque
+la deuda no se negocia con la cuenta de resultados, se paga con la caja. Para alcanzar el umbral del
+año 1, con la cuota de carencia, se necesitan 53,8 cubiertos al día, un dato que se obtiene de dividir el
+umbral entre el ticket medio; desde el año 2, con la cuota plena, hacen falta 56,4. El mes de break-even
+de caja es el 5, lo que significa que a partir de ese mes el flujo de caja acumulado se vuelve positivo.
 En la proyección a tres años, los ingresos del año 1 son de 2.049.062,40 € y los del año 3 de
 2.581.818,62 €. El EBITDA pasa de 248.723,52 € en el año 1 a 502.278,78 € en el año 3. El resultado
 neto del año 1 es de 103.667,64 €. La rampa de lanzamiento es de 6 meses, y el primer mes se factura
-el 60 % del crucero. En cuanto al IVA, es imprescindible recordar que el tipo de restauración es del 10
-% y el de la bebida alcohólica del 21 %. No se puede hablar de precios sin especificar el tipo aplicado.
-Los costes de preapertura, que suman 221.603,36 € (102.000,00 € de rentas y suministros más
-119.603,36 € de nóminas), son una realidad que hay que asumir antes de abrir la puerta.
+el 60 % del crucero. En cuanto al IVA, el tipo de restauración es del 10 % y alcanza a todo lo que se
+consume en el local, también a la bebida alcohólica: el art. 91.Uno.2.2 de la Ley del IVA grava a ese tipo
+los servicios de hostelería y el suministro de comidas y bebidas para consumir en el acto. El 21 % es el
+tipo general y sólo entra si vendes para llevar. No se puede hablar de precios sin especificar el tipo
+aplicado. Los costes de preapertura, que suman 221.603,36 € (102.000,00 € de rentas y suministros
+más 119.603,36 € de nóminas), son una realidad que hay que asumir antes de abrir la puerta.
 Punto de equilibrio: en euros, en cubiertos y en meses
 El punto de equilibrio no es una cifra teórica: es la cifra que separa la cuenta corriente que crece de la
 que mengua. En este proyecto, con los costes que se detallan en la tabla de abajo (CAPEX del
 proyecto, concepto a concepto), el umbral de explotación se sitúa en 141.145,26 € de ventas
 mensuales. Esa es la cifra que cubre exactamente los costes fijos y los variables proporcionales del
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 20
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 mes tipo, sin contar todavía la deuda. Pero la deuda existe, y por eso el umbral real, el que de verdad
-condiciona la caja, sube hasta 145.728,59 € mensuales. Esa segunda cifra incluye la cuota del
-préstamo después de la carencia, que es de 8.232,00 € al mes. Si no la incluyes, estás calculando un
-punto de equilibrio que no paga al banco, y eso no es un punto de equilibrio, es una ficción.
+condiciona la caja durante el año 1, sube hasta 145.728,59 € mensuales. Esa segunda cifra incluye la
+cuota del préstamo DURANTE la carencia, que es de 3.208,33 € al mes, no la cuota plena. Desde el
+año 2, cuando la cuota sube a 8.232,00 € tras la carencia, el umbral real sube a 152.905,26 €
+mensuales, y hacen falta 56,4 cubiertos al día en vez de 53,8. Si no incluyes la cuota que te toca en
+cada momento, estás calculando un punto de equilibrio que no paga al banco, y eso no es un punto de
+equilibrio, es una ficción.
 En términos de actividad, ese umbral de 145.728,59 € se traduce en 53,8 cubiertos al día. No es una
 media anual: es la media diaria que necesitas vender cada día del mes para que la caja no se
 descuadre. Si tu ticket medio está por debajo de lo que asumes en la cuenta de resultados del mes tipo,
 ese número de cubiertos sube; si está por encima, baja. La tabla de rangos de mercado por categoría te
 ayuda a validar si tu ticket medio es realista en tu zona y en tu segmento.
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 20
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 El mes de break-even de caja, es decir, el mes en el que la caja acumulada deja de ser negativa, es el
 quinto. Eso significa que, con la rampa de arranque que se explica en la siguiente sección, los cuatro
 primeros meses vas a consumir liquidez. No es un fallo: es el ritmo natural de un restaurante
@@ -1014,6 +1040,10 @@ que se financia con 700.000,00 € de préstamo y 1.189.944,24 € de fondos pro
 El préstamo tiene una carencia de un año: durante ese periodo solo pagas intereses, concretamente
 3.208,33 € al mes. Eso significa que el capital pendiente no baja durante los doce primeros meses.
 Muchos emprendedores confunden la carencia con una tregua, pero no lo es: los intereses siguen
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 21
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 corriendo y la deuda sigue viva. Cuando termina la carencia, la cuota mensual sube a 8.232,00 €, que
 es la que se usa para calcular el umbral de equilibrio con deuda. Esa cuota es fija durante toda la vida
 del préstamo, así que tu estructura financiera es predecible. Lo que no es predecible es la venta, y por
@@ -1026,10 +1056,6 @@ de maniobra se consuma. El punto de equilibrio en el mes cinco es tu primer hito
 cada euro de venta adicional mejora la caja. Antes del mes cinco, cada euro de venta adicional reduce
 las pérdidas, pero no las elimina. Esa diferencia es la que separa un plan financiero bien construido de
 una carta a los Reyes Magos.
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 21
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 CAPEX del proyecto, concepto a concepto (plan-financiero-3-anos.xlsx, hoja «Inversión»)
 #
 Concepto
@@ -1129,6 +1155,14 @@ Stock inicial materias primas
 Uniformes equipo
 3.500 €
 Seguros y otros
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 22
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Concepto
+Presupuesto (€)
+Categoría de referencia
 22
 Fondo de maniobra (6
 meses)
@@ -1149,12 +1183,6 @@ Alquiler mensual (€)
 17.000,00 €
 Coste mensual de la brigada (€)
 59.801,68 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 22
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-Concepto
-Importe
 Meses de renta ANTES de abrir (fuera de la carencia que
 negocies)
 6,00 €
@@ -1173,8 +1201,12 @@ Fondo de maniobra necesario (€)
 NECESIDAD TOTAL DE FINANCIACIÓN (€) - CAPEX de la
 tabla + preapertura
 1.889.944,24 €
-El cronograma de este mismo pack firma el arrendamiento en el mes 3 y contrata la brigada en el 12
-para abrir en el 18: hay renta y hay nóminas antes de facturar un euro.
+El cronograma de este mismo pack (cronograma-apertura-gantt.xlsx, hoja «Gantt») firma el
+arrendamiento en el mes 4 y contrata la brigada en el mes 12 para abrir en el mes 17: son 13 meses de
+renta antes de facturar (13 × 17.000,00 € = 221.000,00 €) y 5 meses de nómina de brigada (5 ×
+59.801,68 € = 299.008,40 €), un total de 520.008,40 € frente a los 221.603,36 € que presupuesta esta
+tabla. Si no negocias una carencia de renta que cubra esos 13 meses, súmale a mano ese desfase,
+unos 298.405,04 €, a tu necesidad de financiación.
 Rangos de mercado por categoría (calculadora-capex.xlsx, hoja «CAPEX»)
 Categoría
 Bajo (€)
@@ -1218,6 +1250,14 @@ Marketing lanzamiento
 5.000 €
 15.000 €
 30.000 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 23
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+Categoría
+Bajo (€)
+Medio (€)
+Alto (€)
 Stock inicial materias primas
 5.000 €
 10.000 €
@@ -1262,13 +1302,6 @@ TOTAL INGRESOS
 Materia prima (food cost)
 45.636,36 €
 24,1 %
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 23
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-Concepto
-Importe (€)
-% s/ventas
 Bebidas (coste bodega)
 11.282,04 €
 5,9 %
@@ -1339,6 +1372,14 @@ Ingresos (€)
 2.049.062 €
 2.458.875 €
 2.581.819 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 24
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+Concepto
+Año 1
+Año 2
+Año 3
 Costes variables (€)
 614.719 €
 759.792 €
@@ -1383,14 +1424,10 @@ Resultado neto (€)
 276.703 €
 297.607 €
 Margen EBITDA (%)
-0 €
-0 €
-0 €
+12,1 %
+19,4 %
+19,5 %
 Cuadro de amortización del préstamo (plan-financiero-3-anos.xlsx, hoja «Financiación»)
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 24
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 Año
 Capital inicial (€)
 Cuota del año (€)
@@ -1538,15 +1575,26 @@ ACUMULADO
 248.724 €
 Tipo de IVA de
 restauración (%)
-0 €
+10,0 %
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 25
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+Concepto
+Mes 1
+Mes 3
+Mes 6
+Mes 9
+Mes 12
+Año (€)
 Tipo de IVA de la
 bebida alcohólica
 (%)
-0 €
+10,0 %
 Tipo de IVA
 general de los
 gastos (%)
-0 €
+21,0 %
 Base mensual de
 gastos con IVA
 (alquiler,
@@ -1558,12 +1606,12 @@ marketing, otros)
 repercutido
 (cobrado con las
 ventas)
-13.640 €
-18.187 €
-21.597 €
-22.733 €
-22.733 €
-245.522 €
+11.384 €
+15.178 €
+18.024 €
+18.973 €
+18.973 €
+204.906 €
 (-) IVA soportado
 (compras y
 gastos con IVA;
@@ -1576,17 +1624,6 @@ no llevan)
 13.882 €
 13.882 €
 159.752 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 25
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-Concepto
-Mes 1
-Mes 3
-Mes 6
-Mes 9
-Mes 12
-Año (€)
 (-) Liquidación de
 IVA (modelo 303)
 - trimestre
@@ -1594,7 +1631,7 @@ natural, se
 ingresa del 1 al
 20 del mes
 siguiente
-59.215 €
+29.881 €
 (-) Cuota del
 préstamo (capital
 + intereses) - la
@@ -1611,28 +1648,28 @@ hoja
 FLUJO DE CAJA
 NETO CON IVA
 Y DEUDA
--20.289 €
-9.681 €
-32.159 €
-39.651 €
-39.651 €
-236.778 €
+-22.546 €
+6.672 €
+28.586 €
+35.891 €
+35.891 €
+225.496 €
 FLUJO
 ACUMULADO
 CON IVA Y
 DEUDA
--20.289 €
--15.912 €
-46.868 €
-144.380 €
-236.778 €
+-22.546 €
+-23.810 €
+36.715 €
+133.098 €
+225.496 €
 IVA del 4.º
 trimestre - se
 liquida en enero
 del año siguiente
 (no es caja de
 este ejercicio)
-26.555 €
+15.273 €
 Saldo inicial de
 tesorería (€) -
 solo el mes 1
@@ -1640,11 +1677,11 @@ solo el mes 1
 SALDO DE
 TESORERÍA (fin
 de mes)
-914.031 €
-918.408 €
-981.189 €
-1.078.700 €
-1.171.099 €
+911.775 €
+910.511 €
+971.035 €
+1.067.418 €
+1.159.817 €
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 26
@@ -1659,15 +1696,26 @@ sus tasas y plazos. Además, hay que darse de alta en la Seguridad Social (régi
 el administrador o socios trabajadores) y en Hacienda (declaración censal modelo 036/037). Todo esto
 debe hacerse antes de realizar cualquier gasto relevante, porque si no, esos gastos no serán
 deducibles y podrían considerarse irregularidades contables.
-En nuestro checklist legal, el coste tasado de estos trámites iniciales asciende a 57.960,00 € (fuente:
-(checklist-legal.xlsx, hoja «Legal»)). Esa cifra incluye honorarios de asesoría, notaría, registro y
-primeras altas, pero no cubre las partidas que aún no hemos presupuestado: quedan 10 partidas sin
-asignar en ese mismo checklist (fuente: (checklist-legal.xlsx, hoja «Legal»)). Es decir, el margen de
-error existe y conviene tenerlo presente antes de comprometer más dinero.
+En nuestro checklist legal, los trámites de constitución -honorarios de asesoría, notaría, registro y
+primeras altas- suman 1.120,00 € (fuente: (checklist-legal.xlsx, hoja «Legal», subtotal «Constitución»)).
+El coste tasado del checklist legal COMPLETO -con licencias, sanidad, seguros, laboral, protección de
+datos, fiscal y el bloque «Local»- asciende a 57.960,00 € (fuente: (checklist-legal.xlsx, hoja «Legal»)), y
+dentro de esa cifra hay 34.000,00 € de fianza de arrendamiento -dos mensualidades, el mínimo legal
+del art. 36 LAU- que no aparecen en ninguna partida del CAPEX del plan financiero (fuente:
+(checklist-legal.xlsx, hoja «Legal», fila 46 «Local»)): es una salida de caja real que hay que sumar
+aparte a la necesidad de financiación. Además, quedan 10 partidas sin asignar en ese mismo checklist
+(fuente: (checklist-legal.xlsx, hoja «Legal»)). Es decir, el margen de error existe y conviene tenerlo
+presente antes de comprometer más dinero.
 Un error típico es empezar a alquilar un local antes de tener clara la forma jurídica. El arrendamiento es
 un contrato que obliga personalmente, y si la sociedad aún no existe, el socio firmante responde con su
-patrimonio. Por eso recomendamos constituir la sociedad primero, aunque sea con el capital mínimo
-(3.000 € en una SL), y luego negociar el contrato de alquiler a nombre de la entidad.
+patrimonio. Por eso recomendamos constituir la sociedad primero -aunque sea con el capital mínimo,
+que desde la Ley 18/2022, de 28 de septiembre («Crea y Crece»), que modificó el art. 4 de la Ley de
+Sociedades de Capital, es de 1 € en una SL, con el régimen del art. 4 bis: mientras el capital no llegue a
+3.000 €, hay que dotar una reserva legal del 20 % del beneficio cada año, y los socios responden
+solidariamente hasta esa cifra si la sociedad se liquida- y luego negociar el contrato de alquiler a
+nombre de la entidad. Dicho esto, para un proyecto con una necesidad de financiación de 1.889.944,24
+€ (plan-financiero-3-anos.xlsx, hoja «Inversión»), constituir con el capital simbólico de 1 € es mala idea
+frente al banco: transmite una capitalización que no se corresponde con el riesgo que se le pide asumir.
 Licencias de obra y de actividad: por tipo genérico, no por nombre
 Aquí conviene ser muy cuidadoso con la terminología. El nombre de cada licencia cambia según la
 comunidad autónoma y según la ordenanza municipal. Por ejemplo, lo que en Madrid se llama "licencia
@@ -1682,6 +1730,10 @@ obras", otros de "declaración responsable" para obras menores. Lo importante es
 técnico debe estar visado por un arquitecto o aparejador, y que el coste de ese proyecto más las tasas
 de licencia suele rondar los 23.960,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «Inversión»)). Esa
 cifra está incluida en nuestro plan financiero y cubre la redacción del proyecto, la dirección de obra y las
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 27
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 tasas municipales, pero no incluye posibles derramas o mejoras voluntarias.
 Un consejo práctico: negociar el arrendamiento con un periodo de carencia. ¿Por qué? Porque la
 licencia de actividad tarda meses en concederse (entre 2 y 6 según el ayuntamiento), y durante ese
@@ -1691,10 +1743,6 @@ alquiler reducido durante las obras. En nuestro plan financiero prevemos 6 meses
 apertura (fuente: (plan-financiero-3-anos.xlsx, hoja «Inversión»)). Esos 6 meses cubren la tramitación
 de licencias, las obras y el equipamiento, y son un colchón realista.
 Registro sanitario y comunicación previa a la autoridad autonómica
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 27
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 Además de las licencias municipales, necesitas el registro sanitario. Este trámite depende de la
 comunidad autónoma, no del ayuntamiento. Se trata de inscribir el establecimiento en el registro de
 empresas alimentarias, y para ello hay que presentar un plan de análisis de peligros y puntos de control
@@ -1729,21 +1777,21 @@ necesitas es tener a disposición de la inspección laboral los registros de jor
 nóminas y los justificantes de pago de la Seguridad Social. Con eso, y con las licencias en regla, podrás
 operar con tranquilidad.
 Seguros obligatorios y recomendables, y protección de datos
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 28
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 Antes de firmar el contrato de arrendamiento, conviene tener claro que el seguro de responsabilidad
-civil no es un trámite opcional. En la práctica, ningún propiertario de local en una zona prime entrega las
-llaver sin exgibir una póliza que cubra los daños a terceeros y, en uchoos casos, la resaponsabilidad
-civil del propio inmueble. La reforma de arrendamientos urbanos no la exige de forma general, pero las
-condiciones del contrato y las exigencias de la comunidad de propiertarios sí suelen hacerla obligatoria:
+civil no es un trámite opcional. En la práctica, ningún propietario de local en una zona prime entrega las
+llaves sin exigir una póliza que cubra los daños a terceros y, en muchos casos, la responsabilidad civil
+del propio inmueble. La reforma de arrendamientos urbanos no la exige de forma general, pero las
+condiciones del contrato y las exigencias de la comunidad de propietarios sí suelen hacerla obligatoria:
 es más barato negociarla que discutirla después de un incidente.
 El resto de coberturas se decide por riesgo real, no por miedo. Una póliza de daños materiales que
 cubra incendio, inundación o robo con fuerza es recomendable desde el día de la obra, porque el riesgo
 de siniestro durante una reforma es mayor que con el local en funcionamiento. La póliza de pérdida de
 beneficios, que compensa la facturación mientras el local no puede operar, se contrata ya con el aforo
 previsto y suele tener un periodo de carencia de unos meses: conviene contratarla antes de la apertura
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 28
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 para que esté vigente cuando empieza el riesgo real. En el plan financiero, la partida de seguros del
 primer año está presupuestada en 4.500,00 € (plan-financiero-3-anos.xlsx, hoja «Inversión»), y esa cifra
 incluye la responsabilidad civil, la de daños y la de pérdida de beneficios, pero no la de ciberriesgo: esa
@@ -1755,73 +1803,73 @@ el interés legítimo del empresario para las terceras, siempre con carteles inf
 zonas privadas de los trabajadores. El registro de actividades de tratamiento se lleva al día y, si se
 contrata un proveedor de reservas online o un software de gestión, ese proveedor es encargado de
 tratamiento y necesita su contrato art. 28 RGPD. La Agencia Española de Protección de Datos impone
-multas desde el primer incumplimiento: no hace falta que se produsca una fuga para que sanione; basta
-con no haber documentado el análisis de riesgo.
-Conviene revisar el quadro de trámites legales que aparece más abajo: el coste tasado del checklist
-legal completa es de 57.960,00 € (checklist-legal.xlsx, hoja «Legal»), y aún quedan 10 partidas sin
+multas desde el primer incumplimiento: no hace falta que se produzca una fuga para que sancione;
+basta con no haber documentado el análisis de riesgo.
+Conviene revisar el cuadro de trámites legales que aparece más abajo: el coste tasado del checklist
+legal completo es de 57.960,00 € (checklist-legal.xlsx, hoja «Legal»), y aún quedan 10 partidas sin
 presupuestar (checklist-legal.xlsx, hoja «Legal»). Esas partidas sin presupuestar son, en su mayoría,
-tasas municipales y tasesorías externas que dependen de la comunidad autónoma y del ayuntamiento,
-y por eso no se puedieron estandarizar en la plantilla. No es un defecto del plan: es la naturaaleza del
+tasas municipales y asesorías externas que dependen de la comunidad autónoma y del ayuntamiento, y
+por eso no se pudieron estandarizar en la plantilla. No es un defecto del plan: es la naturaleza del
 trámite urbanístico.
-Terraza, música, horarios y venta de alcoho
+Terraza, música, horarios y venta de alcohol
 La licencia de terraza es, de lejos, la que más condiciona el calendario en ciudades con ordenanza de
 ocupación de vía pública. No es una licencia estatal: cada ayuntamiento tiene la suya, con un número
-de mesas, un horario y una temporada distintas. En algunas ciudades la terraza se autoriiza por años,
+de mesas, un horario y una temporada distintas. En algunas ciudades la terraza se autoriza por años,
 en otras por temporada y en otras se renueva automáticamente si se paga la tasa. La única forma de
-saberlo es preguntar en el propío ayuntamiento antes de firmar el arrendamiento. El nombre del
+saberlo es preguntar en el propio ayuntamiento antes de firmar el arrendamiento. El nombre del
 documento cambia por comunidad autónoma y por ordenanza municipal, y lo mismo pasa con la
 licencia de apertura, la de obras y la de actividad: no existe un «permiso de restaurante» único en
 España. Preguntar por teléfono no basta; hay que pedir por escrito el nombre exacto del trámite, los
 planos que piden y el plazo de resolución. Ese escrito se queda en el expediente y evita discusiones
 posteriores.
-La música es otro mundo. La licencia de terrazza no incluye música, y la de actividad sí puede incluirla
-o no, según la calificación del local. Si se quiere poner música ambiente o en vivo, hay que saber si la
+La música es otro mundo. La licencia de terraza no incluye música, y la de actividad sí puede incluirla o
+no, según la calificación del local. Si se quiere poner música ambiente o en vivo, hay que saber si la
 ordenanza exige un estudio de impacto acústico o basta con una memoria técnica. En muchos
-municipios, la licencia de actividad ya disitingue entre «restaurante sin música», «con música ambiente»
-y «con música en vivo», y cada una tiene un nivel de exigencias y una tasa distinta. El error más común
-es asumir que la licencia de apertura cubre todo lo que pasa dentro. No es así: la venta de alcohol
-también tiene su propía regulación, que no es la misma para cerveza y vino que para destilados. La
-venta de bebidas alcohólicas para consumir en el local se incluye en la licencia de actividad, pero la
-venta para llevar, si se hace, pide una comunicación previa o una licencia distinta según la comunidad
-autónoma, y en ningún caso se puede vender alcohol a menors de edad ni a personas que ya vayan
-ebrias: la responsabilidad es del titurar de la licencia, no del camarero.
-El horario de apertura y cierre lo fija la ordenanza municipal, no la licencia de actividad. Hay que pedir el
-horario en el trámite de apertura y, si después se quieren ampliar, se pide una modificación. En zonas
-turísticas, algunos ayuntamientos tienen horarios especiales para restaurantes gastronómicos que no
-coinciden con los de bares y copas. Por eso, antes de firmar el alquiler, hay que saber qué horario se
+municipios, la licencia de actividad ya distingue entre «restaurante sin música», «con música ambiente»
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 29
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-puede pedir en ese local concreto: si la ordenanza fija un cierre a las 23:00 y el proyecto preve cenas
-hasta las 24:00, el negocio nace con una limitaión estructural.
-El arrendamiento se negocia con carencia por una razón muy sencil la: la licencia tarda meses y la renta
+y «con música en vivo», y cada una tiene un nivel de exigencias y una tasa distinta. El error más común
+es asumir que la licencia de apertura cubre todo lo que pasa dentro. No es así: la venta de alcohol
+también tiene su propia regulación, que no es la misma para cerveza y vino que para destilados. La
+venta de bebidas alcohólicas para consumir en el local se incluye en la licencia de actividad, pero la
+venta para llevar, si se hace, pide una comunicación previa o una licencia distinta según la comunidad
+autónoma, y en ningún caso se puede vender alcohol a menores de edad ni a personas que ya vayan
+ebrias: la responsabilidad es del titular de la licencia, no del camarero.
+El horario de apertura y cierre lo fija la ordenanza municipal, no la licencia de actividad. Hay que pedir el
+horario en el trámite de apertura y, si después se quieren ampliar, se pide una modificación. En zonas
+turísticas, algunos ayuntamientos tienen horarios especiales para restaurantes gastronómicos que no
+coinciden con los de bares y copas. Por eso, antes de firmar el alquiler, hay que saber qué horario se
+puede pedir en ese local concreto: si la ordenanza fija un cierre a las 23:00 y el proyecto prevé cenas
+hasta las 24:00, el negocio nace con una limitación estructural.
+El arrendamiento se negocia con carencia por una razón muy sencilla: la licencia tarda meses y la renta
 corre desde la firma del contrato. En el plan financiero se prevén 6 meses de renta antes de abrir
-(plan-financiero-3-anos.xlsx, hoja «Inversión»), y eso es lo que hay que pdirle al propiertario: que los
-primeros meses de renta no se pagen, o que se pagen a partir de la concesión de la licencia de
-apertura. Si el propiertario no acepta carencia, hay que revisar si el local ya tiene licencia de actividad
-en vigor y si el cambio de titurariad es una simple comunición o una nueva licencia. Ese dato cambia el
-calendario entero: si es una nueva licencia, la carencia no es un favor, es una nececidad financiera.
+(plan-financiero-3-anos.xlsx, hoja «Inversión»), y eso es lo que hay que pedirle al propietario: que los
+primeros meses de renta no se paguen, o que se paguen a partir de la concesión de la licencia de
+apertura. Si el propietario no acepta carencia, hay que revisar si el local ya tiene licencia de actividad en
+vigor y si el cambio de titularidad es una simple comunicación o una nueva licencia. Ese dato cambia el
+calendario entero: si es una nueva licencia, la carencia no es un favor, es una necesidad financiera.
 El registro de jornada es obligatorio para toda la plantilla, incluidos los socios que trabajan en el local y
 los becarios. El art. 34.9 del Estatuto de los Trabajadores (RDL 2/2015), texto consolidado vigente en
 2026, exige el registro diario de la jornada y su conservación durante 4 años (BOE-A-2015-11430 - Real
-Decreto Legislativo 2/2015, de 23 de octubure, texto refundido de la Ley del Estatuto de los
+Decreto Legislativo 2/2015, de 23 de octubre, texto refundido de la Ley del Estatuto de los
 Trabajadores, 2015-10-24). La norma no exige un sistema digital concreto: admite papel o digital,
-organizado por convenio, acuerto de empresa o, en su defecto, por decisión del empresario. La
+organizado por convenio, acuerdo de empresa o, en su defecto, por decisión del empresario. La
 obligación de registro se creó por el art. 10 del RDL 8/2019, que añadió el apartado 9 al art. 34 del
 Estatuto, con una vacatio de dos meses: fue exigible desde el 12/05/2019 (BOE-A-2019-3481 - Real
-Decreto-ley 8/2019, de 8 de marzo, artícul 10 y disposición final sexta, 2019-03-12). En 2026, a fecha
+Decreto-ley 8/2019, de 8 de marzo, artículo 10 y disposición final sexta, 2019-03-12). En 2026, a fecha
 de esta guía, no existe publicado en el BOE ningún real decreto que imponga un registro horario digital
 obligatorio: el registro en papel, firmado por el trabajador y por el empresario, sigue siendo válido. Lo
-que no admite discusión es el plazo de conservación: 4 años, contados desde la fecha del registro. Un
+que no admite discusión es el plazo de conservación: 4 años, contados desde la fecha del registro. Una
 inspección que no encuentre los registros de los últimos cuatro años considera que no se ha llevado el
-registro, y la sanción no depende de que se haya prodcido o no una hora extra.
-La tabla de trámites legales que sigue a este capítul, con responsable y coste tasado, es la referenecia
+registro, y la sanción no depende de que se haya producido o no una hora extra.
+La tabla de trámites legales que sigue a este capítulo, con responsable y coste tasado, es la referencia
 para el calendario: no hay que empezar la obra hasta que el ayuntamiento haya confirmado por escrito
 qué licencia de obras y de actividad pide ese local concreto. El coste de proyecto técnico y licencias en
-el plan financiero es de 23.960,00 € (plan-financiero-3-anos.xlsx, hoja «Inversión»), y e sa cifra ya
+el plan financiero es de 23.960,00 € (plan-financiero-3-anos.xlsx, hoja «Inversión»), y esa cifra ya
 incluye la tasación del proyecto y las tasas de apertura, pero no incluye las tasas de terraza, que se
-pagen cada año y no forman parte de la inversión inicial. El checklist legal, con sus partidas sin
+pagan cada año y no forman parte de la inversión inicial. El checklist legal, con sus partidas sin
 presupuestar, está pensado para que esa diferencia se vea antes de firmar, no después.
 Trámites legales del checklist, con responsable y coste tasado (checklist-legal.xlsx)
 #
@@ -1835,6 +1883,15 @@ Elegir forma jurídica
 (SL recomendada)
 Abogado/Notario
 600 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 30
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Categoría
+Trámite
+Responsable
+Coste est. (€)
 2
 Constitución
 Escritura pública ante
@@ -1866,15 +1923,6 @@ Alta en el IAE
 (epígrafe hostelería)
 Asesor fiscal
 0 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 30
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Categoría
-Trámite
-Responsable
-Coste est. (€)
 7
 Constitución
 Certificación negativa
@@ -1963,6 +2011,15 @@ declaración de vertido
 a la red de
 saneamiento
 Arquitecto / instalador
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 31
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Categoría
+Trámite
+Responsable
+Coste est. (€)
 19
 Sanidad
 Registro sanitario en la
@@ -1990,15 +2047,6 @@ manipuladores
 alimentos (equipo)
 Centro formación
 300 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 31
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Categoría
-Trámite
-Responsable
-Coste est. (€)
 23
 Sanidad
 Contrato empresa
@@ -2100,6 +2148,15 @@ actividades de
 tratamiento (RGPD)
 Abogado
 300 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 32
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Categoría
+Trámite
+Responsable
+Coste est. (€)
 39
 Protección datos
 Política de privacidad y
@@ -2122,15 +2179,6 @@ en el TPV (RD
 de desarrollo)
 Asesor fiscal +
 proveedor de TPV
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 32
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Categoría
-Trámite
-Responsable
-Coste est. (€)
 42
 Fiscal
 Comunicación del
@@ -2843,17 +2891,31 @@ sector, lo habitual es pedir entre tres y seis meses. Esta guía contempla seis 
 abrir, lo que supone un desembolso de 102.000,00 € en concepto de rentas y suministros de
 preapertura. Esa cifra está incluida en la inversión inicial y debe estar financiada antes de firmar. Si el
 propietario no concede carencia, hay que replantear la negociación o buscar otro local.
-La duración del contrato es otro punto crítico. La ley urbana establece un plazo mínimo de cinco años,
-pero muchos propietarios ofrecen contratos más largos. Para un restaurante, un plazo de diez años con
-opción a prórroga es lo ideal, porque permite amortizar la inversión en obra y equipamiento. Pero
-cuidado con las cláusulas de actualización: si el índice de referencia sube por encima de lo previsto, la
-renta puede desviarse del 9,0 % sobre ventas. Conviene negociar un tope de actualización o una
-revisión ligada a la facturación.
+La duración del contrato es otro punto crítico, y aquí conviene no partir de una premisa equivocada: el
+local de un restaurante es un arrendamiento para uso distinto de vivienda -así lo define el artículo 3 de
+la Ley de Arrendamientos Urbanos-, no un alquiler de vivienda, así que no le aplica el plazo mínimo de
+cinco años del artículo 9. En uso distinto de vivienda la duración se pacta libremente entre las partes
+(artículo 4.3 LAU): puede ser un año, tres, diez o los que arrendador y arrendatario acuerden, y las
+prórrogas se negocian, no se dan por supuestas. Para un restaurante, un plazo de diez años con opción
+a prórroga sigue siendo lo ideal, porque permite amortizar la inversión en obra y equipamiento, pero esa
+duración hay que conseguirla en la negociación, no darla por garantizada. Y hay una segunda cláusula
+que se juega en la misma mesa, antes de firmar: la indemnización del artículo 34 LAU, que compensa al
+arrendatario si, cumplidos al menos cinco años de contrato y comunicada la voluntad de renovar, el
+propietario no renueva y el negocio pierde la clientela del local. Esa indemnización se puede pactar,
+limitar o renunciar por escrito en el propio contrato, así que la postura que se adopte sobre el artículo 34
+se decide con el asesor legal antes de la firma, no se descubre el día del cierre. Cuidado además con
+las cláusulas de actualización de renta: si el índice de referencia sube por encima de lo previsto, la renta
+puede desviarse del 9,0 % sobre ventas. Conviene negociar un tope de actualización o una revisión
+ligada a la facturación.
 Las obras son el siguiente punto. El local puede entregarse en bruto o con un acabado previo. En
 cualquier caso, la obra civil y la reforma integral suponen una partida de 250.000,00 € en el plan
 financiero. A esto hay que sumar las instalaciones -electricidad, fontanería, gas, ventilación- que
 ascienden a 60.000,00 €. Estas dos cantidades son las más altas de la inversión inicial, y no se pueden
 afrontar sin un colchón de tesorería. Por eso, el contrato debe permitir expresamente la realización de
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 43
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 obras, con la obligación de devolver el local en su estado original si no se renueva, o con la posibilidad
 de dejar las mejoras sin indemnización si el propietario no las valora.
 La salida es el aspecto que más se descuida. Hay que pactar qué ocurre si el negocio no funciona y se
@@ -2862,10 +2924,6 @@ consentimiento del propietario, pagar una indemnización equivalente a un númer
 llegar a un acuerdo de rescisión. También hay que definir la subrogación en caso de venta del negocio.
 Si el contrato no contempla estas situaciones, el emprendedor queda atado a una renta de 17.000,00 €
 mensuales sin posibilidad de salida, lo que convertiría un cierre temporal en una ruina financiera.
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 43
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 Por último, no hay que olvidar los suministros: agua, luz, gas, internet y tasas municipales. Durante la
 obra, estos costes ya se devengan, y por eso el plan financiero los incluye en la partida de 102.000,00 €
 de preapertura. Una vez abierto, forman parte de los gastos fijos mensuales y deben estar controlados
@@ -3125,17 +3183,29 @@ antelación. Pero ojo: la baja temperatura no sustituye al fuego directo; lo com
 posterior en plancha o brasa sigue siendo imprescindible. Por tanto, la partida de cocción debe
 entenderse como un ecosistema, no como una suma de máquinas sueltas.
 En el checklist que encontrarás más abajo, la partida de cocción incluye tanto el bloque modular como
-el horno mixto, la brasa y el equipo de baja temperatura. El coste tasado total del equipamiento
-asciende a 161.430,40 €, pero hay 32 líneas sin importe asignado, porque dependen de la elección final
-del modelo y de la negociación con el proveedor. Esas líneas se piden a proveedor con una
-especificación técnica clara, y el total del libro se recalcula solo en cuanto se incorporan los precios
-reales. No intentes rellenarlas con estimaciones a la baja: el presupuesto global debe moverse en el
-rango de 55.000,00 € como mínimo, 110.000,00 € como punto medio razonable y 180.000,00 € como
-techo para una instalación de gama alta. Si tu proyecto supera esa horquilla, revisa las especificaciones
-antes de firmar.
+el horno mixto, la brasa y el equipo de baja temperatura. El coste tasado del checklist asciende a
+161.430,40 €, y esa cifra es un suelo, no un cierre: quedan 32 líneas sin importe asignado -el robot
+térmico, el Pacojet, el armario de maduración y curado, el lavavasos de cristalería, el KDS o la
+impresora de etiquetas de trazabilidad, entre otras-, porque dependen de la elección final del modelo y
+de la negociación con el proveedor. Ojo con dos de esas 32: el bloque modular de alta gama y el túnel
+de lavado no se suman, son alternativas al bloque estándar y al lavavajillas de capota, y el propio libro
+las deja fuera del total para que nadie pague dos veces el mismo equipo. Las demás sí engordan la
+cuenta. Esas líneas se piden a proveedor con una especificación técnica clara, y el total del libro se
+recalcula solo en cuanto se incorporan los precios reales. No intentes rellenarlas con estimaciones a la
+baja: el presupuesto global debe moverse en el rango de 55.000,00 € como mínimo, 110.000,00 € como
+punto medio razonable y 180.000,00 € como techo para una instalación de gama alta, y ese techo lo fija
+la calculadora de CAPEX precisamente porque este checklist tasa 161.430,40 € para una cocina
+completa con brasa, horno mixto, abatidor y dos cámaras. Traducido: el suelo ya está pegado al techo,
+y lo que queda de margen se lo van a comer las líneas pendientes. Si tu presupuesto se sale por arriba
+no es que hayas echado mal la cuenta; revisa las especificaciones, pero cuenta con financiar esa
+diferencia.
 Frío: abatidor, cámaras, maduración y hielo
 El frío es la columna vertebral de cualquier cocina profesional, y en un restaurante de 65 plazas no
 admite improvisación. El abatidor de temperatura es la primera pieza que debe estar en el plano. No es
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 49
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 un accesorio: es una herramienta de seguridad alimentaria y de organización. Abatir un caldo, unas
 verduras o un postre en menos de 90 minutos nos permite trabajar con antelación sin riesgo
 microbiológico. La capacidad del abatidor debe dimensionarse según el número de bandejas que
@@ -3144,10 +3214,6 @@ muchos elaborados, mejor uno de 10.
 Las cámaras de refrigeración y congelación deben separarse por usos: una para productos frescos, otra
 para elaborados, otra para bebidas y, si hay espacio, una cámara de fermentación o de maduración. La
 maduración en seco de carnes exige una cámara con control de humedad y temperatura, y eso tiene un
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 49
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 coste específico que no debe confundirse con una cámara estándar. Si el proyecto contempla
 maduración, hay que reservar partida propia. En cuanto al hielo, la producción debe estar a la altura del
 consumo: una máquina de hielo escamado para la barra y otra de cubitos para cocina. No escatimes en
@@ -3185,6 +3251,10 @@ proyecto pide un túnel de lavado para la batería y la vajilla, el presupuesto 
 no lo cubre. Son dos soluciones distintas: la capota es para una producción media, con ciclos más
 cortos y menor coste; el túnel es para un flujo constante de platos, bandejas y utensilios, con mayor
 inversión inicial pero también mayor eficiencia. No decidas por precio, sino por volumen de servicio. Y
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 50
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 en cuanto al checklist, recuerda que las líneas sin importe tasado se piden a proveedor con una
 descripción técnica precisa; el total del libro se recalcula solo al incorporar las ofertas. El rango de
 inversión global -55.000,00 €, 110.000,00 €, 180.000,00 €- te orienta sobre la ambición del proyecto,
@@ -3192,10 +3262,6 @@ pero el desglose real está en la tabla de abajo, donde cada partida tiene su co
 para el precio de proveedor. No hay atajos: la coherencia entre el nivel de cocina, el equipo elegido y el
 presupuesto final es la única garantía de que el restaurante funcione desde el primer día.
 Pastelería y obrador: fermentación controlada, helados y chocolate
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 50
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 El robot térmico tipo Thermomix y el Pacojet no son un capricho: son dos decisiones de técnica que
 condicionan la partida de pastelería. El primero aporta cocción y triturado en continuo, y el segundo
 textura final en frío. Quien los quiera, que los pida con su línea de inversión y su consumo eléctrico.
@@ -3232,17 +3298,21 @@ La regla es no mezclar escalones en la misma partida: o se apuesta por gama alta
 el alimento o se elige gama media en todo lo que toca el alimento y se invierte en lo que no se ve. Lo
 que no se puede hacer es pedir un horno de brasa de gama alta y un bloque de fuegos de gama baja: el
 primero marcará el nivel del plato y el segundo lo hundirá.
-Las líneas sin importe tasado del checklist se piden a proveedor y el total del libro se recalcula solo. No
-se puede dar un precio orientativo a una partida que depende del proveedor y de la fecha de compra. El
-coste tasado del checklist de equipamiento de cocina es de 161.430,40 €, con 32 líneas aún sin
-importe. El rango bajo de equipamiento de cocina profesional es de 55.000,00 €, el rango medio de
-110.000,00 € y el rango alto de 180.000,00 €. La horquilla es amplia porque el proyecto puede ir desde
-una cocina de barrio con horno de gas hasta una cocina de autor con plancha de inducción y freidora de
-vacío. La decisión de escalón se toma con el plan de negocio en la mano, no con el corazón.
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 51
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+Las líneas sin importe tasado del checklist se piden a proveedor y el total del libro se recalcula solo. No
+se puede dar un precio orientativo a una partida que depende del proveedor y de la fecha de compra. El
+coste tasado del checklist de equipamiento de cocina es de 161.430,40 €, con 32 líneas aún sin
+importe: es un suelo, no el precio final. El rango bajo de equipamiento de cocina profesional es de
+55.000,00 €, el rango medio de 110.000,00 € y el rango alto de 180.000,00 €, y ese techo no es un
+número redondo caído del cielo: la calculadora de CAPEX lo pone ahí porque este mismo checklist tasa
+161.430,40 € para una cocina completa. La horquilla es amplia porque el proyecto puede ir desde una
+cocina de barrio con horno de gas hasta una cocina de autor con plancha de inducción y freidora de
+vacío, pero una cocina como la que describe este capítulo nace ya en el escalón alto: con 161.430,40 €
+tasados y 32 líneas por cotizar, el margen que queda hasta el techo es estrecho. La decisión de escalón
+se toma con el plan de negocio en la mano, no con el corazón.
 Lista de equipamiento de cocina con coste tasado (checklist-equipamiento-cocina.xlsx)
 #
 Zona
@@ -3347,6 +3417,15 @@ Mesa de trabajo inox
 2m
 Sous Chef
 500 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 52
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Zona
+Equipo
+Responsable
+Coste est. (€)
 18
 Partida Carnes
 Sierra de huesos
@@ -3377,15 +3456,6 @@ producto congelado
 para tataki y
 carpaccios
 Jefe Partida
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 52
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Zona
-Equipo
-Responsable
-Coste est. (€)
 23
 Partida Pescados
 Plancha lisa/ranurada
@@ -3484,6 +3554,15 @@ Horno mixto 10 GN
 equivalente)
 Chef
 17.500 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 53
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Zona
+Equipo
+Responsable
+Coste est. (€)
 39
 Cocina Caliente
 Bloque modular de
@@ -3509,15 +3588,6 @@ Sonda multipunto con
 registro para cocción a
 baja temperatura
 Resp. APPCC
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 53
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Zona
-Equipo
-Responsable
-Coste est. (€)
 43
 Cocina Caliente
 Juego completo de
@@ -3615,6 +3685,15 @@ Timbre/campana de
 servicio
 Chef
 50 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 54
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Zona
+Equipo
+Responsable
+Coste est. (€)
 59
 Pase/Expedición
 Iluminación de
@@ -3640,15 +3719,6 @@ Mesa de apoyo
 refrigerada para el
 pase de fríos
 Chef
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 54
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Zona
-Equipo
-Responsable
-Coste est. (€)
 63
 Almacenamiento
 Cámara frigorífica
@@ -3747,6 +3817,15 @@ TPV principal
 (hardware + software)
 Gerente
 3.000 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 55
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Zona
+Equipo
+Responsable
+Coste est. (€)
 79
 Tecnología
 TPV auxiliar sala
@@ -3781,15 +3860,6 @@ Cámaras de seguridad
 (CCTV)
 Instalador
 1.500 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 55
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Zona
-Equipo
-Responsable
-Coste est. (€)
 85
 Tecnología
 KDS: pantallas de
@@ -4305,14 +4375,16 @@ compra cuando ya se ha roto.
 Cristalería: copas por tipo de vino y por servicio
 La cristalería de un restaurante gastronómico no se compra “una vez y para siempre”. Se diseña a partir
 de un concepto operativo: el número de cubiertos por servicio, los turnos de sala y, sobre todo, el ritmo
-de lavado. En una casa de 65 plazas, con dos servicios diarios completos, la dotación de copas se
+de lavado. En una casa de 65 plazas con un menú de ocho a doce pases, la dotación de copas se
 calcula en vueltas. Una vuelta equivale al juego completo de copas necesario para atender una sola
-vez a todos los comensales sentados. Si el menú exige tres copas por persona -vino blanco, tinto y
-agua-, una vuelta son 195 copas. Pero la sala no puede esperar a que el lavado devuelva las piezas: el
-ciclo de recogida, lavado, secado y reposición supera con holgura el tiempo de un pase. Por eso se
-dimensionan tres vueltas completas como mínimo: una en uso, otra en lavado y una tercera de
-reserva para roturas o picos de ocupación. En servicios largos o con copas específicas por vino
-(burdeos, borgoña, cata, flauta, gran reserva), la cifra puede subir a cuatro vueltas.
+vez a todos los comensales sentados. Pero la sala no puede esperar a que el lavado devuelva las
+piezas: el ciclo de recogida, lavado, secado y reposición supera con holgura el tiempo de un pase. Por
+eso el checklist de vajilla y cristalería trabaja con una rotación de lavado de 1,5 veces por servicio, que
+es la misma vuelta y media fijada al principio del capítulo: con 1,0 no queda margen para lavar entre
+pases, y por encima de 1,5 lo que se compra es inmovilizado durmiendo en la estantería del office. Esa
+media vuelta es la que sostiene un maridaje, y la que obliga a dimensionar el lavado en consecuencia:
+el checklist de equipamiento avisa de que con 300 a 600 copas por servicio un lavavajillas de capota no
+da abasto, y por eso añade una línea de lavavasos independiente para la cristalería de maridaje.
 La elección del tipo de copa no es caprichosa: cada vino tiene una geometría que potencia sus aromas.
 Pero la decisión de compra no se basa solo en la enología, sino en la resistencia mecánica, el peso, el
 borde y la facilidad de pulido. Las copas de cristal soplado o de cristalino de alta gama son más frágiles
@@ -4323,22 +4395,26 @@ tasado del conjunto completo: 30.230,00 €. De ese total, siete partidas no tie
 origen, porque dependen de la carta definitiva o de acuerdos con proveedores; son elementos como
 copas de vino dulce, copas de brandy o piezas de reserva que se negocian después del primer
 inventario.
-La regla práctica para el cálculo de copas por servicio es sencilla: multiplicar las plazas por el número
-de copas por comensal y por el número de vueltas. En una operación de 65 cubiertos, con tres copas
-por persona y tres vueltas, se necesitan 585 copas de agua, 585 de tinto y 585 de blanco. Si el
-restaurante ofrece un menú degustación con cinco vinos, la cifra se dispara: 65 × 5 × 3 = 975 copas
-solo para vino. No conviene afinar en exceso: siempre hay que sumar un 10 % de margen por rotura
-inmediata o extravío. La cristalería no es un gasto fijo, sino un activo que se repone de forma continua.
-Por eso, más que el precio unitario, importa el coste de reposición anual, que se aborda en el siguiente
-epígrafe.
-Roturas y reposición anual: cómo se presupuesta
-La rotura de copas y platos no es un imprevisto: es un gasto recurrente, casi mecánico, que depende
-del volumen de servicio, de la pericia del personal y de la calidad del lavado. En un restaurante de alta
-cocina, la merma anual de cristalería suele oscilar entre un 5 % y un 10 % del valor del parque, según el
+La regla práctica para el cálculo de copas por servicio es sencilla: se multiplican las plazas por las
+copas de ese tipo que consume cada comensal y por la rotación de lavado. Con 65 plazas y una
+rotación de 1,5, el checklist de vajilla y cristalería resuelve el menú degustación con 195 copas de
+Burgundy, 195 de Bordeaux, 98 de vino blanco, 98 de champán y 98 vasos de agua; la misma casa
+trabajando solo a carta se queda en 80, 80, 80, 60 y 80. Por eso el libro da dos totales: 30.230,00 € la
+dotación de carta y 45.303,75 € la ajustada al menú degustación, frente a los 26.000,00 € que el plan
+financiero reserva para vajilla, cristalería y cubertería. Si el restaurante ofrece un maridaje largo, lo que
+crece no es la vuelta sino el número de tipos de copa -una por perfil de vino-, y cada tipo se calcula por
+separado con su propio factor por comensal. No conviene afinar en exceso: siempre hay que sumar un
+10 % de margen por rotura inmediata o extravío. La cristalería no es un gasto fijo, sino un activo que se
+repone de forma continua. Por eso, más que el precio unitario, importa el coste de reposición anual, que
+se aborda en el siguiente epígrafe.
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 63
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+Roturas y reposición anual: cómo se presupuesta
+La rotura de copas y platos no es un imprevisto: es un gasto recurrente, casi mecánico, que depende
+del volumen de servicio, de la pericia del personal y de la calidad del lavado. En un restaurante de alta
+cocina, la merma anual de cristalería suele oscilar entre un 5 % y un 10 % del valor del parque, según el
 tipo de pieza y la destreza del equipo. Pero esa cifra no se presupuesta como “pérdidas” al final del
 ejercicio, sino como una partida de reposición planificada desde el inicio. La fórmula correcta es aplicar
 un porcentaje fijo sobre el valor total de la dotación inicial. Ese porcentaje se calcula con datos
@@ -4404,6 +4480,14 @@ Platos
 Pizarras / bandejas
 presentación (×20)
 600 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 64
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Familia
+Elemento
+Coste est. (€)
 8
 Platos
 Vajilla petit fours /
@@ -4414,14 +4498,6 @@ Cristalería
 Copa vino tinto Burgundy
 (×80)
 1.600 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 64
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Familia
-Elemento
-Coste est. (€)
 10
 Cristalería
 Copa vino tinto Bordeaux
@@ -4545,6 +4621,14 @@ Aceiteras / vinajeras (×10)
 Petit menage
 Cestitas de pan (×20)
 300 €
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 65
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+#
+Familia
+Elemento
+Coste est. (€)
 39
 Petit menage
 Portavelas / centros mesa
@@ -4555,14 +4639,6 @@ Servicio vino
 Sacacorchos Pulltap /
 Laguiole (×6)
 300 €
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 65
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-#
-Familia
-Elemento
-Coste est. (€)
 41
 Servicio vino
 Enfriadores de mesa (×10)
@@ -4617,7 +4693,7 @@ Cómo se construye una carta de vinos que se venda
 Una carta de vinos no es un catálogo de gustos personales; es una herramienta de venta con una
 rotación prevista. Antes de elegir etiquetas, decidimos cuántas botellas vamos a tener en stock y qué
 margen necesitamos. En el presupuesto de bodega que acompaña a esta guía, la foto inicial es clara:
-306 botellas en stock, valoradas a coste en 3.780,00 € y a PVP en 10.447,93 €. Esa diferencia entre
+306 botellas en stock, valoradas a coste en 3.780,00 € y a PVP en 11.492,73 €. Esa diferencia entre
 coste y PVP no es casualidad: es el margen que paga la operación.
 La carta se construye desde la rotación, no desde la bodega. Cada referencia tiene que tener un motivo
 para estar: o es un vino de paso rápido, o es un vino de margen alto, o cumple una función de imagen
@@ -4638,28 +4714,29 @@ La tabla de abajo, con las referencias de bodega y su margen y rotación, es la 
 cada línea tiene su coste, su PVP y su comportamiento de salida. Esa tabla es la que manda, no la
 intuición.
 El margen de verdad: por qué se calcula sobre el precio sin IVA
-En España, el precio de carta se anuncia con IVA. La bebida alcohólica tributa al 21 %, y eso cambia el
-cálculo del margen. Si cruzamos un coste sin IVA con un precio de carta con IVA, el food cost de bebida
-sale unos siete puntos por debajo del real. Es un error clásico: parece que ganamos más de lo que
-ganamos, y la desviación solo se descubre cuando los números reales no cuadran.
+En España, el precio de carta se anuncia con IVA, y en sala ese IVA es el 10 % también para la bebida
+alcohólica. Descontarlo bien cambia el cálculo del margen. Si cruzamos un coste sin IVA con un precio
+de carta con IVA, el food cost de bebida sale unos siete puntos por debajo del real. Es un error clásico:
+parece que ganamos más de lo que ganamos, y la desviación solo se descubre cuando los números
+reales no cuadran.
 El procedimiento correcto es pasar el PVP a base sin IVA antes de comparar. Sobre ese precio sin IVA
-se calcula el margen. En el presupuesto de bodega, el margen medio sobre PVP es del 63,8 % y el food
-cost medio de bebida es del 36,2 %. Son dos lecturas del mismo número: si el coste supone el 36,2 %
-del precio de venta sin IVA, lo que queda para el negocio es el 63,8 %. Uno se puede expresar como
+se calcula el margen. En el presupuesto de bodega, el margen medio sobre PVP es del 67,1 % y el food
+cost medio de bebida es del 32,9 %. Son dos lecturas del mismo número: si el coste supone el 32,9 %
+del precio de venta sin IVA, lo que queda para el negocio es el 67,1 %. Uno se puede expresar como
 margen sobre PVP o como multiplicador sobre el coste, pero la base de cálculo tiene que ser siempre la
 misma: el precio sin IVA.
 El multiplicador y el margen sobre PVP son dos formas de decir lo mismo, pero conviene no
-confundirlas. Un margen del 63,8 % sobre PVP no significa que el multiplicador sobre el coste sea ese
+confundirlas. Un margen del 67,1 % sobre PVP no significa que el multiplicador sobre el coste sea ese
 mismo porcentaje; significa que, de cada euro que paga el cliente, 0,638 euros son margen antes de
 impuestos. La diferencia entre multiplicador y margen se nota cuando se trabaja con costes: si se aplica
 un multiplicador sobre el coste sin pasar por el PVP sin IVA, el margen real se aleja del previsto.
-Por eso, en la gestión diaria, el food cost de bebida se vigila siempre sobre la misma base. El 36,2 %
+Por eso, en la gestión diaria, el food cost de bebida se vigila siempre sobre la misma base. El 32,9 %
 del presupuesto de bodega es la referencia; cualquier desviación por encima de esa cifra hay que
-explicarla. Y cualquier cálculo que use el precio con IVA como denominador da un food cost
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 67
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+explicarla. Y cualquier cálculo que use el precio con IVA como denominador da un food cost
 artificialmente bajo, que nos haría tomar decisiones de compra equivocadas.
 Rotación, inmovilizado y reposición
 La bodega es un activo circulante, no un museo. El valor del stock a coste, 3.780,00 €, es dinero
@@ -4678,12 +4755,12 @@ rota, pero protege la rotación del resto. Un vino mal conservado es una pérdid
 de la botella no se recupera. Por eso la inversión en conservación no se negocia a la baja; se
 presupuesta como parte de la bodega.
 En la práctica, la reposición sigue una regla simple: se compra lo que se ha vendido, no lo que se quiere
-tener. El stock a PVP de 10.447,93 € nos dice cuánto dinero hay en la estantería si se vendiera todo a
+tener. El stock a PVP de 11.492,73 € nos dice cuánto dinero hay en la estantería si se vendiera todo a
 precio de carta; el stock a coste de 3.780,00 € nos dice cuánto hemos pagado por ello. La diferencia
 entre ambos es el margen potencial, pero solo se convierte en margen real cuando la botella sale.
 Mientras tanto, es inmovilizado.
 La tabla de referencias de bodega, con su margen y rotación, es la herramienta para decidir qué se
-repone y qué se retira. Cada línea tiene su propia velocidad; la media del 63,8 % de margen y el 36,2 %
+repone y qué se retira. Cada línea tiene su propia velocidad; la media del 67,1 % de margen y el 32,9 %
 de food cost no sirven para justificar una referencia lenta. La media es el resultado de muchas
 decisiones individuales, y cada decisión se toma con los datos de la tabla.
 Maridaje, copa y su peso en el ticket
@@ -4694,32 +4771,36 @@ para acompañar un plato concreto consume más de una copa por comida y descubre
 luego pedirá por botella. El peso de la bodega en el ticket no se mide por el precio de la botella más
 cara, sino por la capacidad de generar un gasto medio por persona que soporte la estructura de costes.
 Aquí aparece el primer error de cálculo que convierte una bodega rentable en un agujero contable: el
-precio de carta en España se anuncia con IVA, y la bebida alcohólica tributa al 21 %. Si el coste de la
-botella se trabaja sin IVA y el precio de venta al público incluye el impuesto, el margen se está
-maquillando. Cruce un coste sin IVA con un precio con IVA y el food cost de bebida le saldrá unos siete
-puntos por debajo del real. La cuenta correcta exige pasar el precio de carta a base imponible
-dividiendo entre 1,21 antes de calcular el margen. Solo así se comparan cifras homogéneas.
+precio de carta en España se anuncia con IVA, y en sala ese IVA es el 10 % también para la bebida
+alcohólica. Si el coste de la botella se trabaja sin IVA y el precio de venta al público incluye el impuesto,
+el margen se está maquillando. Cruce un coste sin IVA con un precio con IVA y el food cost de bebida le
+saldrá unos siete puntos por debajo del real. La cuenta correcta exige pasar el precio de carta a base
+imponible dividiendo entre 1,21 antes de calcular el margen. Solo así se comparan cifras homogéneas.
 En la plantilla de bodega que acompaña a esta guía, el valor del stock a coste asciende a 3.780,00 €,
-mientras que el mismo stock valorado a precio de venta al público alcanza los 10.447,93 €. Esos dos
-números resumen toda la lógica del capítulo: el margen medio sobre PVP es del 63,8 %, lo que deja un
-food cost medio de bebida del 36,2 %. Son dos lecturas del mismo número: el margen sobre PVP es la
+mientras que el mismo stock valorado a precio de venta al público alcanza los 11.492,73 €. Esos dos
+números resumen toda la lógica del capítulo: el margen medio sobre PVP es del 67,1 %, lo que deja un
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 68
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+food cost medio de bebida del 32,9 %. Son dos lecturas del mismo número: el margen sobre PVP es la
 parte del precio que cubre costes de servicio, merma y beneficio; el food cost es la parte que se va en la
 propia mercancía. El multiplicador, que es la inversa del food cost, no aporta ninguna información
 adicional, solo la expresa de otra manera. Lo importante es no mezclar ambos lenguajes en la misma
 cuenta.
-La partida de bodega inicial del plan financiero asciende a 40.000,00 €. Esa cifra no es el valor del
-stock, sino la inversión total en el capítulo de bodega, que incluye la primera compra de vinos, la vitrina
-climatizada, la estantería, las copas específicas y el resto del equipamiento necesario. El valor del stock
-a coste, 3.780,00 €, es la parte de esa inversión que se convierte en existencias y que rotará a lo largo
-de los primeros meses. Si el lector abre la hoja de cálculo, verá que la suma de las partidas de la tabla
-de CAPEX coincide con los 40.000,00 €. No hay margen para improvisar: el stock a coste debe ser
-coherente con el presupuesto de compras del primer trimestre, y este a su vez con las ventas previstas.
-Un stock a coste de 3.780,00 € para una bodega que factura 34.188,00 € mensuales en vinos y bebidas
-implica una rotación de varias veces al mes, lo que obliga a una gestión de compras muy afinada.
+La partida de bodega inicial del plan financiero asciende a 40.000,00 €, y esa línea es solo vinos: la
+vitrina climatizada tiene la suya, 6.500,00 €, y las copas van dentro de la partida de vajilla, cristalería y
+cubertería, 26.000,00 €. No las sumes dos veces al presupuestar la bodega. La plantilla de bodega del
+pack valora su inventario en 3.780,00 € a coste, que son 306 botellas repartidas en diez referencias, y
+su propia hoja indica que esa es la cifra que hay que copiar a mano a la línea de bodega inicial del plan
+financiero, porque los dos libros no están enlazados. Ahí está la decisión que tienes que tomar tú: si tu
+carta va a ser más profunda que esas diez referencias, sube la línea del CAPEX hasta lo que de verdad
+vayas a comprar y déjala cuadrada antes de llevar el plan al banco. Y cuidado con la lectura de la
+rotación: la columna de rotación mensual de esas mismas referencias se mueve entre 0,375 y 0,542, es
+decir, cada botella tarda más de un mes en salir. Con un coste mensual de bodega de 11.282,04 €
+frente a 34.188,00 € de ingresos de vinos y bebidas, el stock que hay que sostener no es el de la tabla
+de ejemplo: el presupuesto de compras del primer trimestre se dimensiona con las ventas previstas, no
+con el inventario de arranque.
 Conservación, servicio y formación del equipo
 La vitrina climatizada, que en el plan financiero figura con su importe en la tabla de CAPEX, no es un
 capricho. Un vino blanco o un espumoso que se sirve a la temperatura incorrecta pierde matices y, con
@@ -4730,7 +4811,7 @@ una copa de vino de un blanco joven no tiene nada que ver con el de un tinto de 
 referencias que acompaña a este capítulo incluye el margen unitario y la rotación de cada referencia, y
 es la herramienta para decidir qué vinos se sirven por copas y cuáles solo por botella.
 El servicio en copa es el que da rotación a la bodega. Una botella de 25 € de coste puede tener un
-margen del 63,8 % sobre PVP, pero si no rota, el dinero está inmovilizado en la estantería. La copa, en
+margen del 67,1 % sobre PVP, pero si no rota, el dinero está inmovilizado en la estantería. La copa, en
 cambio, permite ofrecer una referencia de mayor calidad a un precio más accesible, lo que invita a la
 prueba y a la repetición. La formación del equipo es la palanca que convierte la oferta en venta. El
 camarero debe conocer la carta de vinos, saber maridar con los platos del día y, sobre todo, saber
@@ -4747,6 +4828,10 @@ equilibrio, y ese equilibrio se aprende en la cata, se practica en el servicio y
 rotación que ofrece la propia plantilla. Sin esa disciplina, la bodega deja de ser un activo para
 convertirse en un museo del vino con las puertas abiertas.
 Referencias de bodega con margen y rotación (budget-bodega.xlsx)
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 69
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 Referencia
 Tipo
 D.O.
@@ -4762,20 +4847,8 @@ Tinto
 D.O.Ca. Rioja
 12,00 €
 40,00 €
-63,7 %
+67,0 %
 0,46
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 69
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-Referencia
-Tipo
-D.O.
-Coste (€)
-PVP carta con
-IVA (€)
-Margen s/PVP
-Rotación/mes
 Ribera del Duero
 crianza
 Tinto
@@ -4783,7 +4856,7 @@ D.O. Ribera del
 Duero
 15,00 €
 50,00 €
-63,7 %
+67,0 %
 0,44
 Mencía de
 parcela
@@ -4791,7 +4864,7 @@ Tinto
 D.O. Bierzo
 18,00 €
 58,00 €
-62,4 %
+65,9 %
 0,42
 Albariño sobre
 lías
@@ -4799,7 +4872,7 @@ Blanco
 D.O. Rías Baixas
 10,00 €
 34,00 €
-64,4 %
+67,6 %
 0,54
 Godello de viñas
 viejas
@@ -4807,7 +4880,7 @@ Blanco
 D.O. Valdeorras
 13,00 €
 44,00 €
-64,2 %
+67,5 %
 0,40
 Verdejo
 fermentado en
@@ -4816,7 +4889,7 @@ Blanco
 D.O. Rueda
 9,00 €
 30,00 €
-63,7 %
+67,0 %
 0,50
 Rosado de
 lágrima
@@ -4824,7 +4897,7 @@ Rosado
 D.O. Navarra
 8,00 €
 27,00 €
-64,1 %
+67,4 %
 0,38
 Corpinnat brut
 nature gran
@@ -4833,7 +4906,7 @@ Espumoso
 Penedès
 16,00 €
 54,00 €
-64,1 %
+67,4 %
 0,47
 Manzanilla
 pasada en rama
@@ -4842,7 +4915,7 @@ D.O. Manzanilla-
 Sanlúcar
 11,00 €
 37,00 €
-64,0 %
+67,3 %
 0,44
 Pedro Ximénez
 viejo (media
@@ -4852,7 +4925,7 @@ D.O.
 Montilla-Moriles
 14,00 €
 47,00 €
-64,0 %
+67,2 %
 0,50
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
@@ -5907,22 +5980,23 @@ lonja como el lenguado o la lubina salvaje fluctúa según la captura del día. 
 directamente al escandallo. La ficha técnica de un plato se calcula con un coste por ración. Si el precio
 del ingrediente principal sube un 20 %, el coste por ración sube y el margen se estrecha. Por tanto, hay
 que rehacer la ficha técnica cada vez que cambia el precio de compra.
-En nuestro plan financiero, el stock inicial de materias primas está fijado en 12.000,00 € (ver
-plan-financiero-3-anos.xlsx, Inversión!C24). Ese stock debe rotar rápido. El coste mensual de materia
-prima en el mes tipo es de 45.636,36 € (P&L Mensual!B13), lo que representa un peso sobre ventas del
-24,1 % (P&L Mensual!C13). Si el coste de un producto sube por encima de lo previsto, ese 24,1 % se
-desvía y hay que ajustar la carta o el precio de venta. Por eso, el calendario de temporada es una
-herramienta viva. Se planifica la carta con productos en su mejor momento de precio y calidad. Cuando
-un producto sale de temporada, su precio se dispara o su calidad baja; entonces se retira de la carta y
-se sustituye por otro que esté en su punto óptimo.
+En nuestro plan financiero, el stock inicial de materias primas está fijado en 12.000,00 €
+(plan-financiero-3-anos.xlsx, celda C24 de la hoja «Inversión»). Ese stock debe rotar rápido. El coste
+mensual de materia prima en el mes tipo es de 45.636,36 €, según la celda B13 de la hoja «P&L
+Mensual» del mismo libro, lo que representa un peso sobre ventas del 24,1 % (celda C13 de la misma
+hoja). Si el coste de un producto sube por encima de lo previsto, ese 24,1 % se desvía y hay que ajustar
+la carta o el precio de venta. Por eso, el calendario de temporada es una herramienta viva. Se planifica
+la carta con productos en su mejor momento de precio y calidad. Cuando un producto sale de
+temporada, su precio se dispara o su calidad baja; entonces se retira de la carta y se sustituye por otro
+que esté en su punto óptimo.
 El plan B es obligatorio. La lonja no siempre trae el pescado del pase. Un temporal impide la salida de
 los barcos o la subasta no alcanza el volumen esperado. El plan B tiene tres niveles. Primero, tener un
 proveedor de respaldo homologado: otra lonja cercana o un distribuidor mayorista con trazabilidad
-completa. Segundo, tener en el congelador una alternativa de alta calidad, como pescado congelado en
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 85
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+completa. Segundo, tener en el congelador una alternativa de alta calidad, como pescado congelado en
 alta mar que mantiene propiedades. Tercero, tener una receta alternativa en la carta que no dependa
 de ese producto. El cliente debe percibir que el cambio es una decisión de calidad, no una
 improvisación. Se comunica en el momento de tomar la comanda: "Hoy no hay lenguado de lonja, pero
@@ -6082,7 +6156,7 @@ distinto. En total, la selección suma 1295 reseñas, con 161 restaurantes nuevo
 Si miramos el panorama mundial, España no es el tercer país con más estrellas, como a veces se
 afirma erróneamente. Según el ranking publicado el 17-mar-2026 («¿Cuál es el país con más estrellas
 Michelin? Francia tiene el récord, España queda 5ª y un inesperado gana en...»), Francia lidera con
-659, Italia tiene 390, Japón 350, Alemania 332 y España 304. Es decir, ocupamos la quinta posición
+659, Italia tiene 390, Japón 350, Alemania 332 y España 307. Es decir, ocupamos la quinta posición
 mundial, no la tercera. Ese dato es relevante para calibrar tus expectativas: no estás en un mercado
 satélite, sino en uno de los cinco países con mayor densidad de estrellas del planeta. La competencia
 es feroz, pero también demuestra que hay un ecosistema consolidado de proveedores, formadores y
@@ -6147,9 +6221,9 @@ un inspector puede pensar que un restaurante tiene una cocina excelente pero un 
 eso no le quita la estrella, pero sí puede influir en la nota global de la guía. Por eso, el checklist te ayuda
 a mantener un estándar alto en todo lo que rodea al plato.
 Además, el checklist incluye aspectos específicos de la normativa española: la carta debe indicar los
-alérgenos, el IVA aplicado es del 10% en restauración y del 21% en bebidas alcohólicas, y la licencia de
-actividad debe estar visible. No se trata de burocracia, sino de confianza: un cliente que ve que cumples
-las normas se siente más seguro.
+alérgenos, el IVA aplicado es del 10 % en restauración, bebida alcohólica servida en sala incluida, y la
+licencia de actividad debe estar visible. No se trata de burocracia, sino de confianza: un cliente que ve
+que cumples las normas se siente más seguro.
 En resumen, la preparación para una posible visita de la guía no es un acto de fe, sino un proceso
 continuo. Con este checklist, tienes una guía práctica para no dejar nada al azar. Y recuerda: la guía no
 publica cuántos inspectores hay, ni cuándo visitan, ni cómo se llaman. Lo único que puedes controlar es
@@ -6537,8 +6611,8 @@ inspección se centra solo en la sala o en el plato. Nada más lejos. El inspect
 entre lo que prometemos en la carta, lo que comunicamos en nuestra web y lo que realmente sucede en
 cocina y comedor. Por eso, nuestro checklist de preparación incluye desde la verificación de la cadena
 de frío hasta la redacción exacta de las alérgenos en cada plato. Hemos tasado ese proceso de
-autoevaluación interna en 11.000,00 € (fuente: checklist-inspeccion-michelin-repsol.xlsx, celda
-Preparación Inspección!G52). Esa cifra cubre tres meses de seguimiento semanal, formación del
+autoevaluación interna en 11.000,00 € (fuente: checklist-inspeccion-michelin-repsol.xlsx, celda G52 de
+la hoja «Preparación Inspección»). Esa cifra cubre tres meses de seguimiento semanal, formación del
 personal, compra de ingredientes para pruebas de recetas y la corrección de desviaciones detectadas.
 No es un gasto; es una inversión en consistencia.
 El producto local no es un adorno en la carta, sino un argumento de identidad. Pero ojo: no basta con
@@ -6589,8 +6663,9 @@ periodo; pedimos que el restaurante funcione como un reloj. Segunda, solicitar l
 categoría de "Recomendado" de Guía Repsol, que no requiere una inspección formal pero sí una
 evaluación por parte de los inspectores. Tercera, a partir del segundo año, optar a un primer Sol. Para
 eso, la preparación es la misma que hemos descrito en el epígrafe anterior, con un coste de 11.000,00
-€ (fuente: checklist-inspeccion-michelin-repsol.xlsx, Preparación Inspección!G52). Esa inversión se
-amortiza con creces si logramos el reconocimiento, porque el impacto en la demanda es inmediato.
+€ (fuente: checklist-inspeccion-michelin-repsol.xlsx, celda G52 de la hoja «Preparación Inspección»).
+Esa inversión se amortiza con creces si logramos el reconocimiento, porque el impacto en la demanda
+es inmediato.
 Un error que vemos con frecuencia es obsesionarse con la decoración o la vajilla, descuidando la
 coherencia del conjunto. El posicionamiento no se construye con elementos superficiales, sino con una
 identidad clara. ¿Qué queremos ser? ¿Un restaurante de producto, una cocina de autor, una propuesta
@@ -6610,11 +6685,11 @@ nuestra experiencia, los restaurantes que logran un Sol o una estrella suelen te
 de trayectoria impecable. La constancia es el factor diferencial. Y el equipo, ese equipo que cree en el
 proyecto y que trabaja con pasión, es el que sostiene esa constancia. No hay fórmula mágica: producto,
 equipo y constancia. Eso es lo que valoran las guías, y eso es lo que nosotros transmitimos a cada
-cliente que abre un restaurante. Si seguimos ese camino, el reconocimiento llegará, tarde o temprano.
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 96
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+cliente que abre un restaurante. Si seguimos ese camino, el reconocimiento llegará, tarde o temprano.
 Y cuando llegue, habrá valido la pena cada hora de preparación, cada simulacro y cada euro invertido
 en el checklist. Porque no se trata de ganar un premio, sino de construir un restaurante que merezca
 estar en la guía.
@@ -6831,9 +6906,14 @@ Además, debemos considerar el coste tasado del checklist de marketing de preape
 la apertura: la elaboración del dossier de prensa, la organización de un evento de presentación para
 prescriptores, la impresión de invitaciones, el alquiler de espacios para presentaciones, los honorarios
 de un consultor de comunicación si lo necesitamos. Es una partida que muchos olvidan y que, sin
-embargo, marca la diferencia entre abrir con ruido o abrir en silencio. En nuestro caso, la suma de las
-tres partidas (lanzamiento, web y checklist) asciende a 47.600,00 €, una cantidad que debe estar
-contemplada en el plan de inversión inicial. No la improvisamos; la presupuestamos desde el primer día.
+embargo, marca la diferencia entre abrir con ruido o abrir en silencio. Ojo aquí, porque es el error más
+fácil de cometer al armar el plan de inversión: estos 23.800,00 € no se suman a los 15.000,00 € de
+marketing de lanzamiento ni a los 8.800,00 € de web y branding; son la misma partida, vista con otro
+desglose (identidad, digital, PR/prensa, eventos, reservas), y coincide céntimo a céntimo con la suma
+de esas dos líneas del CAPEX. Lo único que hay que llevar al plan de inversión inicial es una cifra,
+23.800,00 €, que es la que ya recogen las filas «Web, branding, diseño gráfico» y «Marketing de
+lanzamiento» de la hoja «Inversión». Sumarla otra vez, como si fuera una tercera partida, añadiría
+23.800,00 € que no existen. No la improvisamos; la presupuestamos desde el primer día.
 La clave está en entender que la proyección internacional no es un fin en sí mismo, sino un medio para
 atraer a un cliente que valora la experiencia gastronómica como parte de su viaje. Ese cliente no llega
 por casualidad; llega porque ha leído un artículo, ha visto una recomendación en una red social o ha
@@ -6841,14 +6921,14 @@ consultado una guía. Y para que esa recomendación exista, necesitamos una pres
 profesional. Por eso, el presupuesto de marketing no es un gasto discrecional; es una partida tan
 importante como la compra de materia prima o el pago del personal. Si no la contemplamos, estaremos
 compitiendo con una mano atada a la espalda.
-Qué NO hay que hacer: por qué perseguir un ranking desenfoca el negocio
-Es tentador obsesionarse con aparecer en una lista internacional. Lo vemos en colegas que rediseñan
-su carta, cambian su menú degustación o incluso modifican su concepto para adaptarse a lo que creen
-que los evaluadores quieren ver. Ese es el error más grave que podemos cometer. Un ranking de
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 101
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+Qué NO hay que hacer: por qué perseguir un ranking desenfoca el negocio
+Es tentador obsesionarse con aparecer en una lista internacional. Lo vemos en colegas que rediseñan
+su carta, cambian su menú degustación o incluso modifican su concepto para adaptarse a lo que creen
+que los evaluadores quieren ver. Ese es el error más grave que podemos cometer. Un ranking de
 votación, como el que elabora una revista o una plataforma digital, no funciona como una guía de
 inspectores. La diferencia es estructural: un inspector visita el restaurante de forma anónima, evalúa la
 cocina, el servicio, el ambiente y la relación calidad-precio con criterios objetivos y contrastados. Un
@@ -6890,6 +6970,10 @@ nuestros clientes más fieles. Por eso, en nuestro plan financiero, la partida d
 para comunicar quiénes somos, no para perseguir un premio. Y esa diferencia, aunque sutil, marca la
 diferencia entre un negocio sostenible y una carrera de fondo hacia ninguna parte.
 Tres formas distintas de reconocimiento y qué implica cada una
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 102
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 Reconocimiento
 Cómo se decide
 Qué premia
@@ -6902,14 +6986,6 @@ Lo que hay en el plato, con
 constancia
 La cocina, el producto y la
 regularidad
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 102
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-Reconocimiento
-Cómo se decide
-Qué premia
-Qué puedes controlar
 Guía de guías nacionales
 Visitas de un equipo propio y
 criterio editorial
@@ -6986,8 +7062,8 @@ pequeño y una copa de bienvenida. Se invita a un máximo de ochenta personas, t
 confirmación previa y con un horario escalonado para evitar aglomeraciones. El objetivo no es vender:
 es que cada invitado salga con una historia que contar y con la intención de volver. El coste del evento
 se cubre con la partida de marketing de lanzamiento de 15.000,00 €; no se pide a ningún invitado que
-pague, y no se sirve alcohol sin control, porque el tipo de IVA de la bebida alcohólica es el 21 % y eso
-encarece cualquier exceso.
+pague, y no se sirve alcohol sin control, porque el coste de la bodega abierta en un evento se dispara
+con facilidad.
 Los servicios de prueba son la fase anterior al evento. Se celebran durante las dos últimas semanas del
 mes -3 y la primera del mes -2, con el equipo ya contratado y cobrando su nómina completa. No son
 ensayos: son servicios reales con clientes reales, aunque a precio reducido o con invitación. Se abren
@@ -7063,29 +7139,29 @@ la presión real de un servicio con comensales pagando, porque es la única form
 de mando sin esconder los errores bajo la excusa de que aquello era una simulación. Cada servicio de
 prueba se evalúa con el mismo formulario que se usará después en la operación diaria: tiempos de
 sala, temperatura de los platos, rotación de mesas, quejas y devoluciones.
-La previón del plan financiero dice que el primer mes se factura el 60 % del crucero. El marketing de
+La previsión del plan financiero dice que el primer mes se factura el 60 % del crucero. El marketing de
 lanzamiento cuenta con 15.000,00 € en la hoja de Inversión; esos 15.000,00 € se gastan antes de la
 apertura, en el checklist de preapertura tasado en 23.800,00 €, que incluye las partidas sin importe que
 se cubren con criterio operativo. La tabla de abajo, el checklist de marketing de preapertura, detalla
 cada acción, pero la lectura clave es otra: si la previsión exige ese 60 % el primer mes, el plan de
 captación tiene que generar la demanda equivalentes antes de que se encienda la cocina. La campaña
-de lanzamiento no se hace el ía 1; se hace enlos 60 días anteriore, con la web activa, el sistema de
+de lanzamiento no se hace el día 1; se hace en los 60 días anteriores, con la web activa, el sistema de
 reservas probado y la lista de espera entregando datos.
 Cada viernes de esos 90 días se revisan los cuatro indicadores con el equipo de sala y cocina, y se
-decide sobre tres palancas: la oferta de mediodía, el precio del menú degustación y la fuersa de la
-comunicación en redes y prensa. Si la ocupación del martes cae por debajo del 40 % dis durante dos
-semanas seguida, se reasigna parte del presupuesto de marketing mensual a una acci&oacute;n
+decide sobre tres palancas: la oferta de mediodía, el precio del menú degustación y la fuerza de la
+comunicación en redes y prensa. Si la ocupación del martes cae por debajo del 40 % durante dos
+semanas seguidas, se reasigna parte del presupuesto de marketing mensual a una acción específica
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 106
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-específica para ese día, como un menú ejecutivo de mediodía; no se toca el precio del menú
-degustación hasta pasados los 6 meses de rampa, porque ahí está el posicionamiento. Si el no-show
-supera el 8 % en sábado, se endurece la política de depósito, no se hace una campaña para llenar más.
-La rampa no se cumple sumando gente en días malos; se cumple manteniendo el ritmo de caudalde
-lunes a jueves y protegiendo la rentabilidad del viernes y sábado. El mes 12, con 189.728,00 € de
-facturación, es el punto de referencia del ritmo de crucero que la rampa tiene que alcanzar en el mes 6;
-lo que pase entre medias se ajussta con estos cuatro indicadores, no con corazonadas.
+para ese día, como un menú ejecutivo de mediodía; no se toca el precio del menú degustación hasta
+pasados los 6 meses de rampa, porque ahí está el posicionamiento. Si el no-show supera el 8 % en
+sábado, se endurece la política de depósito, no se hace una campaña para llenar más. La rampa no se
+cumple sumando gente en días malos; se cumple manteniendo el ritmo de caudal de lunes a jueves y
+protegiendo la rentabilidad del viernes y sábado. El mes 12, con 189.728,00 € de facturación, es el
+punto de referencia del ritmo de crucero que la rampa tiene que alcanzar en el mes 6; lo que pase entre
+medias se ajusta con estos cuatro indicadores, no con corazonadas.
 Checklist de marketing de preapertura (checklist-marketing-preapertura.xlsx)
 #
 Bloque
@@ -7559,103 +7635,108 @@ Página 110
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 21. Tecnología para Fine Dining
 TPV y comandas: qué debe resolver en un menú de ocho a doce pases
-La primera decisión no es la marca del TPV, sino el flujo de la comanda en un servicio de ocho a doce
-pases. Cada pase genera una salida de cocina y una respuesta de sala; si el sistema no permite lanzar
-la comanda por pase, con control de tiempos y sin depender del jefe de sala, el servicio se convierte en
-un grito en el paso. El TPV tiene que resolver cuadro cosas: la apertura de mesa por comensal -porque
-en un menú degustación el alérgeno no es un atributo del plato, es un atributo de la persona-, la
-secuenciación de pases, la comunicación a cocina con tiempos y la integración con el escandalo.
-Sin ventas por plato no hay ingeniería de menú posible. En la matríz de ese mismo pack, el ejemplo
-calcula 930 unidades vendidas en el período y cruza rentabilidad y popularidad por plato. Ese número
-solo pude salir del registro real de ventas del TPV, no de un papel que se relena al cierre. Por eso
-pedimos al TPV que expore ventas por plato, por día y por servicio; si la herramienta no lo hace, el
-escandalo queda ciego y la revisión de cara se convierte en una opinión personal.
-Conectamos el TPV con el APPCC de la misma manera: la comanda que marca el alérgeno por
-comensal debe impimir o mostrar la señal en la salida, y el cambio de un ingrediente debe regisrarse en
-el hisórico del servicio. No es un exra de lujo; es el registro de razabilidad que, inspección mediante, se
-consulra cuando aparece una reacción. La razabilidad directa se resuelve en la plancha; la razabilidad
-documental, en la panalla.
-En el plan financiero de ese proyecto, la inversión inicial en TPV, software y tables figura en 9.900,00 €
-(plan-financiero-3-anos.xlsx, Inversión, celda C19), y el cose mensual de ecnología y software se cifra
-en 1.200,00 € (P&L Mensual, B26), lo que supone un 0,6 % sobre ventas (P&L Mensual, C26). Esos
-impores encajan dentro del rango que la calculadora de CAPEX maneja para ecnología en un formado
-gastronómico: de 5.000,00 € en el rango bajo a 20.000,00 € en el alo, con un puno medio de 10.000,00
-€ (calculadora-capex.xlsx, CAPEX, celdas C12, E12 y D12). Cuando se mira una licencia que cobra por
-erminal, por mes, hay que sumar su cose a esa columna B26 y ver cómo sube el 0,6 %; esa es la
-prueba de si la herramienta cabe en el modelo.
-La abla de abajo resume qué pieza resuelve qué y con qué se coneca; anes de comprar, revisar que
-cada solución del catálogo enga respuesta para las cuadro preguntas del servicio, no para las res que
-aparecen en la demo.
+En un menú degustación de ocho a doce pases, el TPV deja de ser una caja registradora y se convierte
+en el sistema nervioso de la operación. La primera decisión es si la comanda se envía desde sala o
+desde cocina; en la práctica, el flujo correcto es que el jefe de sala valide cada pase en el momento en
+que sale, y que esa validación active la siguiente elaboración. El TPV tiene que permitir modificar
+alérgenos por comensal y no por mesa, porque en un menú largo el error se multiplica: un pase
+contaminado a los veinte minutos de empezar ya no se puede retirar sin romper la experiencia de toda
+la mesa.
+La pieza debe resolver tres cosas concretas: tiempos de servicio, trazabilidad del pase y cierre de caja
+sin arqueos manuales. El tiempo de servicio se controla con el tique impreso en cocina, que marca la
+hora de entrada de cada pase; si el sistema no permite reimprimir una comanda parcial sin duplicar el
+plato, no sirve para este formato. La trazabilidad exige que cada pase quede asociado a su comensal,
+con su número de mesa y su alergia registrada; cualquier TPV que trate la mesa como un único bloque
+de consumo queda descartado. El cierre de caja debe cuadrar con lo servido, no con lo pedido, porque
+en un menú largo siempre hay un pase que se retira a mitad de servicio.
+La conexión con el escandallo es el punto que más se descuida. Sin ventas por plato no hay ingeniería
+de menú posible: el TPV tiene que exportar unidades vendidas por pase, no por línea de ticket. En el
+ejemplo de la hoja «Menu Engineering» de menu-engineering-matrix.xlsx, las 930 unidades vendidas
+del plato estrella salen de contar cada servicio, no de sumar importes; si el TPV no distingue entre el
+pase degustado y el mismo plato pedido a la carta, el dato se contamina y la matriz pierde sentido. Por
+eso, antes de firmar con un proveedor, hay que pedirle un informe de ventas por plato y por período, y
+comprobar que se puede volcar a una hoja de cálculo sin intervención manual.
+El plan financiero del pack recoge esta partida con criterio de inversión y de coste mensual. La hoja
+«Inversión» de plan-financiero-3-anos.xlsx asigna 9.900,00 € a TPV, software y tablets; la hoja «P&L
+Mensual» del mismo fichero reserva 1.200,00 € mensuales a tecnología y software, lo que representa
+un 0,6 % sobre ventas. La calculadora de CAPEX, en su hoja «CAPEX», ofrece un rango de 5.000,00 €
+como valor bajo, 10.000,00 € como valor medio y 20.000,00 € como valor alto; la diferencia entre el
+rango bajo y el alto no es la marca del terminal, sino si el sistema integra cocina, sala y administración
+en una sola base de datos. Un TPV que no hable con el software de reservas y con el CRM obligará a
+teclear tres veces el mismo dato, y ese coste no aparece en ninguna factura.
 Reservas: motor propio, plataformas y política de depósito
-El sistema de reservas es el primer puno de conaco con el dao del comensal, y conviene decidirlo con
-la misma lógica que el TPV: no por comodidad, sino por lo que se necesita de cada canal. El motor
-propio -un módulo dentro de la web, conecado al gesor de reservas- es el único que da propiedad
-ínegra del dao y del cobro del depósito. Las plataformas aporan visibilidad: en España operan TheFork,
-OpenTable y Google Reservations, y cada una aplica sus propias condiciones de comisión y de
-comunicación con el cliente. La decisión prácia es híbrida: motor propio como canal principal y
-presencia en una plataforma como escapaare, con condición de exporar la reserva al mismo calendario.
-Si la plataforma no permite exporar el comensal al CRM, el dao se queda en una burbuja y el valor de la
-reserva cae.
-El depósito de reserva es la herramienta contra el no-show. En un menú de ocho a doce pases, la mesa
-que no acude deja huecos imposibles de relenar en el mismo servicio; el depósito no es una barrera, es
-una compensación jusra por el producto que se previó y se compró. La mecánica es sencilla: se cobra
-al confirmar la reserva, se impua como pago a cuena del menú y se devuelve ínecro si la cancelación
+El restaurante de 65 plazas con menú de ocho a doce pases no puede gestionar las reservas con una
+agenda de papel ni con el teléfono como única vía. El motor propio en la web es la pieza central:
+permite cobrar el depósito en el momento de la reserva, guardar los datos del comensal en el CRM y
+comunicar los cambios de horario sin depender de terceros. Las plataformas de reserva que operan en
+España -ElTenedor, OpenTable y TheFork, entre las de mayor implantación- aportan visibilidad, pero
+cobran una comisión por cubierto y no siempre permiten aplicar la política de depósito con la misma
+flexibilidad que el motor propio. La decisión operativa es usar el motor propio como canal principal y las
+plataformas como escaparate, con disponibilidad limitada: nunca más del treinta por ciento de las
+mesas en canales externos, para no perder el control del aforo.
+El depósito de reserva es la herramienta contra el no-show, y su diseño define la relación con el
+comensal. En un menú degustación, la pérdida por una mesa vacía no es el margen de un plato, sino el
+coste de la materia prima ya comprada y del personal ya programado. El depósito debe cubrir al menos
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 111
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
-se produ CE dentro del plazo que la política fija. El importe se adapa al precio medio por persona y al
-número de cuberos, y lo recomendable es vincularlo a la areja: la devolución auomáica en el mismo
-método de pago elimina el conflico. Para el caso de no-show sin aviso, el resaurane retiene el depósito;
-esa retención aparece en las condiciones de la reserva y el comensal la acepa al pagar, lo que evia
-reclamaciones.
-El motor propio permite además gestionar la sala: tiempo de mesa, control de llegadas, espera en
-barra, reasignación de mesas. Sobre odo, permite registrar cada dao de la reserva -número de
-comensales, ocasión, peiciones previas- y volcarlo al CRM. Las plataformas, por el contrario, suelen
-enregar un resumen escueo; hay que pedir a la plataforma la exporación del correo y del eléfono, y si
-no la ofrece, considerar que esa reserva no alimenará el perfil del comensal. Ese criero forma pare de la
-negociación con la plataforma, no de la letra pequeña del conrao.
+el precio del menú por comensal, y la política de devolución tiene que estar escrita con claridad en la
+confirmación: se devuelve íntegro si se cancela con más de cuarenta y ocho horas de antelación, y se
+retiene si la cancelación llega después o si el comensal no se presenta. El cobro se hace con tarjeta en
+el momento de reservar, y la devolución vuelve al mismo medio de pago; ningún sistema de vales o de
+crédito para una próxima visita, porque eso convierte el depósito en un descuento encubierto y no
+cumple su función disuasoria.
+La política de depósito tiene una implicación contable que conviene resolver desde el primer día: el
+importe cobrado no es ingreso hasta que se presta el servicio. Si el comensal cancela dentro del plazo,
+la retención se contabiliza como penalización; si no se presenta, como ingreso por no-show. El TPV
+debe permitir registrar esa operación sin mezclarla con la venta de comida, y el software de reservas
+tiene que enviar el aviso de cargo y de devolución automáticamente. En la práctica, el sistema que
+mejor funciona es el que bloquea la tarjeta sin cobrar hasta la fecha límite de cancelación, y solo ejecuta
+el cargo si el comensal no ha avisado; así se evita la devolución y el comensal ve un movimiento claro
+en su extracto.
 CRM de comensales: qué se guarda, para qué y con qué base legal
-El CRM del comensal no es una agenda de cumpleaños; es la memoria operativa del resaurane. Aquí
-se guarda el hisórico de visitas, las mesas preferidas, los pases servidos, los tiempos de espera, las
-incidencias de servicio, el gaso medio por persona con y sin vino, las preferencias de producto y,
-cuando el comensal lo comunica, los alérgenos y las inolerancias. Ese último dao es de salud, y la ley le
-da un ramieno disinro: los daos de salud son categoría especial según el Reglamento (UE) 2016/679 y
-exigen consenimieno explícito o la necesidad de presar el servicio de alimenación. En la prácia, eso
-significa que el cliente marca la casilla de alergias al reservar, que el consenimieno queda regisrado y
-que el dao se usa solo para el servicio de cocina y sala, no para comunicaciones comercias. La
-normativa nacional complemenaria, la Ley Orgánica 3/2018, de Protección de Daos Personales y
-garantía de los derechos digiales, concrea esos deberes.
-La información mínima que hay que dar al comensal al recoger sus daos, en la propia página de reserva
-y en el formulario, es la siguiente:
-•
-Identidad y daos del responsable del ramieno.
-•
-Finalidad: gestión de la reserva, presación del servicio y, en su caso, noificaciones comercias.
-•
-Base legal: interés legíimo para la reserva y consenimieno para comunicaciones; consenimieno
-explícito para daos de salud.
-•
-Plazo de conservación: los daos se conseran durante la vigencia de la relación comercial y, después,
-el iempo que exija cada obligación legal. No confundir con los registros de jornada, que por Artículo
-34.9 del Esauno de los Trabajadores se conseran durante 4 años conforme a «BOE-A-2015-11430 -
-Real Decreto Legislaivo 2/2015, de 23 de octubre, exo refundido de la Ley del Esauno d» (2015),
-vigente en 2026; el RGPD no exige un sistema digital concreto, admite papel o digital.
-•
-Derechos de acceso, recificación, supresión, oposición, porabilidad y limiación del ramieno, y el
-dereco a reclamar ane la Agencia Española de Protección de Daos.
-El dao se usa para res fines operaivos: personalizar el servicio en sala, alimenar la ingeniería de menú
-con cesas de consumo y enviar el riesgo de un incidene sanitario. La gestión del alérgeno, en conreo,
-obliga a que el CRM esé conecado con la comanda: el dao que se registra al reservar debe llegar a la
-cocina en el propio pase, no en una noa impresa que se pierde en el paso. En la edición anterior de esa
-guía el CRM no raaba alérgenos; ese es el salo de madurez que el capítulo incorpora.
-El consenimieno ha de poder revocarse con la misma facilidad con que se dio: un enlace en el correo
-de confirmación, una opción en el perfil del comensal. Y la política de privacidad, enlazada desde el
-formulario de reserva, debe esar redacada para ser leída, no para conenar al abogado.
+El CRM de comensales es la pieza que convierte la reserva en relación, y en un restaurante
+gastronómico su función principal no es el marketing, sino la seguridad del servicio. Por cada comensal
+se guardan los datos de contacto, el historial de visitas, las preferencias de mesa, las alergias y las
+intolerancias declaradas, y las observaciones de sala sobre gustos o aversiones. Ese historial permite
+que un cliente que repite cada dos meses no tenga que explicar de nuevo que no tolera la lactosa, y
+que el equipo de cocina reciba la alerta antes de empezar a elaborar su menú. La gestión de alérgenos
+no es un añadido del CRM: es el motivo por el que el dato existe, y debe estar conectada con el APPCC
+para que la ficha técnica de cada plato indique los alérgenos presentes y el sistema avise al cocinero
+cuando un comensal con alergia cruzada se sienta en una mesa.
+La base legal del tratamiento es el Reglamento General de Protección de Datos, y el restaurante actúa
+como responsable del tratamiento. Para guardar datos de contacto basta el consentimiento implícito en
+la reserva, pero los datos de salud -y una alergia lo es- exigen especial cuidado: el consentimiento tiene
+que ser explícito, específico e informado, y no se puede condicionar la reserva a que el comensal
+declare sus alergias. En la práctica, el formulario de reserva debe separar el campo de alérgenos del
+resto de datos, con una casilla de aceptación propia y un texto que explique que esos datos solo se
+usan para la seguridad alimentaria y se eliminan si el comensal lo pide. La información mínima que hay
+que dar al comensal incluye la identidad del responsable, la finalidad del tratamiento, el plazo de
+conservación y el derecho a acceder, rectificar y suprimir sus datos; esa información debe aparecer en
+la confirmación de la reserva y en la política de privacidad de la web.
+El plazo de conservación de los datos laborales relacionados con el servicio -por ejemplo, los partes de
+incidencia de un empleado- viene marcado por el artículo 34.9 del Estatuto de los Trabajadores, que fija
+cuatro años de conservación (BOE-A-2015-11430 - Real Decreto Legislativo 2/2015, de 23 de octubre,
+texto refundido de la Ley del Estatuto..., 2015-10-24). Esa norma no exige un sistema digital concreto:
+admite papel o digital, organizado por convenio, acuerdo de empresa o, en su defecto, decisión del
+empresario. Para los datos de comensales, el criterio es distinto: se conservan mientras dure la relación
+comercial y se bloquean cuando el cliente deja de acudir, salvo que exista una obligación legal de
+conservación. El CRM debe permitir exportar el historial de un comensal en un formato legible y eliminar
+sus datos con un solo clic, porque el derecho al olvido no puede depender de una consulta SQL que
+solo entiende el proveedor del software.
 
 AI Chef Pro · Cómo Montar un Restaurante Gastronómico
 Página 112
 Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
+El dato guardado sin uso es un coste y un riesgo. Cada campo del CRM tiene que responder a una
+decisión operativa: la alergia se usa en cocina, la preferencia de mesa en sala, el historial de visitas en
+la política de fidelización. Si un campo no se consulta nunca en el servicio, no debe estar en el
+formulario. Y el acceso tiene que estar restringido por perfil: cocina ve los alérgenos y las intolerancias,
+sala ve las preferencias y el historial, administración ve los datos de facturación; nadie más. La tabla de
+abajo resume qué tiene que resolver cada pieza del sistema y con qué se conecta, y conviene leerla
+con el plan financiero delante, porque la inversión en tecnología solo se justifica si cada módulo
+alimenta al siguiente: el TPV vende, el CRM recuerda, el APPCC protege y el escandallo decide.
 Gestión de alérgenos y de preferencias en la ficha del comensal
 La ficha del comensal es la pieza que convierte una intolerancia en un dato operativo. No se trata de
 una libreta de gustos, sino de un registro que debe consultar el equipo de sala y cocina en cada
@@ -7692,6 +7773,10 @@ y el real se revisa al cierre de cada periodo, y las desviaciones superiores a u
 investigan antes de cerrar el ejercicio.
 Las plataformas de reserva que operan en España y que se integran con el TPV son, entre otras,
 ElTenedor, TheFork, y algunas soluciones de reserva directa como las que ofrecen los propios gestores
+
+AI Chef Pro · Cómo Montar un Restaurante Gastronómico
+Página 113
+Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 de reservas de los restaurantes. La elección de una u otra depende del volumen de reservas, de la
 comisión y de la calidad del dato que devuelven al restaurante.
 Digitalización discreta: la tecnología que el comensal no ve
@@ -7699,10 +7784,6 @@ La tecnología que el comensal no ve es la que sostiene la experiencia. No se tr
 en las mesas, sino de que el equipo disponga de la información correcta en el momento correcto. El
 TPV, el software de inventario y la contabilidad deben hablar entre sí sin intervención manual, y el
 comensal solo percibe el resultado: una cuenta exacta, un plato que respeta la alergia declarada y una
-
-AI Chef Pro · Cómo Montar un Restaurante Gastronómico
-Página 113
-Versión 2.0 · aichef.pro/guia-restaurante-gastronomico
 espera razonable.
 El plan financiero de este pack recoge la inversión en TPV, software y tablets en la hoja «Inversión» de
 plan-financiero-3-anos.xlsx, con una partida de 9.900,00 . € La tecnología y el software mensual en la

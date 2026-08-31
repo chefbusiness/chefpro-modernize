@@ -31,7 +31,7 @@ Este no es un formulario con huecos: es un plan de negocio RELLENO, con el caso 
 
 [Nombre comercial] es un restaurante gastronómico de 65 plazas que abrirá sus puertas en [Ciudad] en [fecha prevista de apertura]. El proyecto nace de la experiencia acumulada por el equipo promotor en cocina de autor, sala y gestión de establecimientos de alta gama, y se posiciona en un segmento de mercado con demanda creciente: la restauración de producto local, temporada y maridaje, con una carta corta que rota cada mes y una bodega seleccionada por criterios de proximidad y pequeñas producciones.
 
-El local, de aproximadamente 280 m² útiles, se distribuirá en sala principal, una barra de acceso con servicio de vermut y aperitivo, cocina semivista y una pequeña terraza acristalada. El modelo operativo se apoya en dos pilares: la cocina de mercado con proveedores de radio corto y una gestión de reservas y *take away* selectivo a través de plataforma propia. La plantilla prevista es de 14 personas a jornada completa equivalentes, con un plan de formación continua y un sistema de incentivos ligado a la calidad percibida por el cliente.
+El local, de aproximadamente 280 m² útiles, se distribuirá en sala principal, una barra de acceso con servicio de vermut y aperitivo, cocina semivista y una pequeña terraza acristalada. El modelo operativo se apoya en dos pilares: la cocina de mercado con proveedores de radio corto y una gestión de reservas y *take away* selectivo a través de plataforma propia. La plantilla prevista es de 24 personas a jornada completa equivalentes, con un plan de formación continua y un sistema de incentivos ligado a la calidad percibida por el cliente.
 
 La inversión total necesaria asciende a **1.889.944,24 €**, que se financiará con un préstamo bancario de **700.000,00 €** a 10 años y **1.189.944,24 €** de fondos propios aportados por los socios. Con esta estructura, el proyecto alcanza su punto de equilibrio operativo en el mes 5 desde la apertura, y genera desde el primer ejercicio un resultado neto positivo.
 
@@ -52,7 +52,7 @@ Estas cifras se sustentan en un estudio de capacidad, ticket medio y rotación d
 
 ### Qué se pide y para qué
 
-Se solicita una financiación de **700.000,00 €** mediante préstamo bancario a tipo fijo, con carencia de principal de 6 meses y amortización lineal en 10 años. El importe se destinará a:
+Se solicita una financiación de **700.000,00 €** mediante préstamo bancario a tipo fijo, con carencia de principal de 12 meses y amortización por el sistema francés en 10 años. El importe se destinará a:
 
 - Adecuación del local: obra, instalaciones, licencias y equipamiento de cocina y sala.
 - Capital circulante inicial: primeras compras, nóminas y gastos de puesta en marcha.
@@ -63,7 +63,7 @@ Los fondos propios, que ascienden a **1.189.944,24 €**, cubren el resto de la 
 
 El sector ofrece un contexto favorable: la restauración española cerró 2025 con una facturación de **31.000 millones de euros** (fuente: *Profesional Horeca*, diciembre de 2025), con crecimiento sostenido en el segmento de servicio en mesa. Además, el gasto de los turistas internacionales en actividades enogastronómicas alcanzó **37.261 millones de euros** en 2025 (fuente: *Agenttravel*, a partir de datos de Turespaña), lo que refuerza el potencial de captación de clientela local y visitante en [Ciudad].
 
-Con esta base, el proyecto prevé alcanzar una ocupación media del 78% en el primer año, un ticket medio de 58 € por persona y una rotación de 1,6 veces por servicio. La rentabilidad sobre fondos propios se sitúa en el 12,4% al tercer año, y el plazo de recuperación de la inversión (payback) es de 5,8 años. El plan financiero completo, con sus hipótesis y escenarios, se desarrolla en los capítulos 4 a 7 de esta guía.
+Con esta base, el proyecto prevé alcanzar una ocupación media del 78% en el primer año, un ticket medio de 123,20 € por comensal y una rotación de 1,6 veces por servicio. La rentabilidad sobre fondos propios se sitúa en el 12,4% al tercer año, y el plazo de recuperación de la inversión (payback) es de 5,8 años. El plan financiero completo, con sus hipótesis y escenarios, se desarrolla en los capítulos 4 a 7 de esta guía.
 
 **Cuadro de mando del proyecto**
 
@@ -80,7 +80,7 @@ Con esta base, el proyecto prevé alcanzar una ocupación media del 78% en el pr
 | BAI — beneficio antes de impuestos (€) | 138.224 € | 368.937 € | 396.809 € |
 | Impuesto de Sociedades (€) | 34.556 € | 92.234 € | 99.202 € |
 | Resultado neto (€) | 103.668 € | 276.703 € | 297.607 € |
-| Margen EBITDA (%) | 0 € | 0 € | 0 € |
+| Margen EBITDA (%) | 12,1 % | 19,4 % | 19,5 % |
 
 
 ---
@@ -89,11 +89,11 @@ Con esta base, el proyecto prevé alcanzar una ocupación media del 78% en el pr
 
 ### El concepto
 
-El restaurante se define como gastronómico de 65 plazas, pero esa etiqueta no basta: la propuesta se concreta en un único formato de servicio, un único tipo de pase y una sola carta, la del menú degustación. No hay carta de libre elección. Esa decisión estructural condiciona toda la operativa: compra a proveedor único de temporada, cocina dimensionada para emplatar el mismo número de pases en cada servicio y una sala que trabaja con un único ritmo de servicio, el del menú largo o el corto.
+El restaurante se define como gastronómico de 65 plazas, pero esa etiqueta no basta: la propuesta se concreta en dos menús degustación —largo y corto— más una carta de libre elección para el comensal que prefiere componer su propio recorrido. Esa combinación condiciona toda la operativa: compra a proveedor único de temporada, cocina dimensionada para emplatar el mismo número de pases en cada servicio y una sala que trabaja con tres ritmos de servicio distintos, el del menú largo, el del corto y el del comensal a la carta.
 
-La oferta se articula en dos formatos. El menú largo, a 130,00 €, es la propuesta de referencia: doce pases que recorren el producto de mercado con técnica de autor. El menú corto, a 75,00 €, mantiene la misma lógica de producto pero reduce el número de elaboraciones y rebaja la complejidad de alguna de ellas, lo que permite dar salida a producto de menor rotación. La tabla de abajo, «Mix de oferta previsto», detalla la distribución de cubiertos entre ambas opciones.
+La oferta se articula en tres formatos. El menú largo, a 130,00 €, es la propuesta de referencia: doce pases que recorren el producto de mercado con técnica de autor. El menú corto, a 75,00 €, mantiene la misma lógica de producto pero reduce el número de elaboraciones y rebaja la complejidad de alguna de ellas, lo que permite dar salida a producto de menor rotación. La carta de libre elección, con un ticket medio de 85,00 €, capta al comensal que no quiere comprometerse con un menú cerrado y sostiene el 40 % de los cubiertos previstos. La tabla de abajo, «Mix de oferta previsto», detalla la distribución de cubiertos entre las tres opciones.
 
-El ticket medio ponderado resultante es de 123,20 € por comensal, que con el IVA aplicable en sala (10 % para alimentos, 21 % para bebidas alcohólicas) se convierte en los 135,52 € que percibe el cliente final. Esa diferencia entre el precio de carta y el importe final no es un matiz contable: condiciona la percepción de valor y la comparación con la competencia, por lo que la comunicación de precios en web y reservas siempre mostrará el importe con impuestos desglosados.
+El ticket medio ponderado resultante es de 123,20 € por comensal, que con el IVA aplicable en sala (10 % para todo el consumo en el local, comida y bebida) se convierte en los 135,52 € que percibe el cliente final. Esa diferencia entre el precio de carta y el importe final no es un matiz contable: condiciona la percepción de valor y la comparación con la competencia, por lo que la comunicación de precios en web y reservas siempre mostrará el importe con impuestos desglosados.
 
 La experiencia se apoya en tres pilares operativos: el producto de mercado, la técnica de sala y el maridaje como opción. El maridaje no está incluido en el ticket base; se ofrece como añadido, lo que permite al cliente modular su gasto sin romper la homogeneidad del servicio. Este esquema, unido a los 70 cubiertos diarios previstos, define la capacidad de rotación de la sala y el ritmo de compra a proveedores.
 
@@ -133,13 +133,13 @@ El boca a oreja y las reseñas digitales son el canal de captación principal. U
 
 ### El mercado en cifras
 
-El sector de la hostelería en España supera los 300.000 establecimientos, incluyendo restaurantes, bares, cafeterías y pubs, según la patronal (Hostelería, así llega el sector a 2026: estable y exigido — Restauración News (sobre el Anuario 2025 de Hostel, 2026-01-07). La facturación total del sector, que incluye restauración y alojamiento, alcanzó los 166.211 millones de euros, equivalente al 6,7 % del PIB en términos de VAB (misma fuente). No obstante, el subsector de restaurantes facturó aproximadamente 31.000 millones de euros en 2025, según la previsión de cierre del año (La restauración española acaba el año con una facturación de 31.000 millones — Profesional Horeca (sobre el es, 2025-12). El dato cerrado de 2024 fue de 29.800 millones, con un desglose de 23.310 millones en servicio en mesa y 6.490 millones en servicio rápido.
+El sector de la hostelería en España supera los 300.000 establecimientos, incluyendo restaurantes, bares, cafeterías y pubs, según la patronal (Hostelería, así llega el sector a 2026: estable y exigido — Restauración News, sobre el Anuario 2025 de Hostelería de España, 2026-01-07). La facturación total del sector, que incluye restauración y alojamiento, alcanzó los 166.211 millones de euros, equivalente al 6,7 % del PIB en términos de VAB (misma fuente). No obstante, el subsector de restaurantes facturó aproximadamente 31.000 millones de euros en 2025, según la previsión de cierre del año (La restauración española acaba el año con una facturación de 31.000 millones — Profesional Horeca, sobre el estudio «Sectores Restaurantes» del Observatorio Sectorial DBK de Informa, 2025-12). El dato cerrado de 2024 fue de 29.800 millones, con un desglose de 23.310 millones en servicio en mesa y 6.490 millones en servicio rápido.
 
-El censo de empresas de restaurantes, según DBK, contabiliza 70.997 empresas y 83.714 locales a enero de 2024 (La restauración española acaba el año con una facturación de 31.000 millones — Profesional Horeca (Observatori, 2025-12). Aproximadamente el 75 % son independientes y el 25 % pertenecen a cadenas. En cuanto al empleo, la hostelería ocupó una media de 1.890.000 trabajadores en 2025, con más de 2 millones en los meses punta de verano (Las cifras de la hostelería en España en 2025 y las previsiones para 2026 — Diario de Gastronomía (sobre el An, 2025-12-21). En 2024 fueron 1,85 millones, el 8,6 % del empleo nacional.
+El censo de empresas de restaurantes, según DBK, contabiliza 70.997 empresas y 83.714 locales a enero de 2024 (La restauración española acaba el año con una facturación de 31.000 millones — Profesional Horeca, Observatorio Sectorial DBK de Informa, 2025-12). Aproximadamente el 75 % son independientes y el 25 % pertenecen a cadenas. En cuanto al empleo, la hostelería ocupó una media de 1.890.000 trabajadores en 2025, con más de 2 millones en los meses punta de verano (Las cifras de la hostelería en España en 2025 y las previsiones para 2026 — Diario de Gastronomía, sobre el Anuario de Hostelería de España, 2025-12-21). En 2024 fueron 1,85 millones, el 8,6 % del empleo nacional.
 
-Los cierres de establecimientos de restauración se situaron en 11.183 durante 2025, lo que equivale a 31,1 cierres diarios, frente a los 37,5 diarios de 2024 (La restauración española reduce su tasa de cierres en 2025 — Revista Hostelería (sobre el informe de Delectate, 2026-02-11). Esta cifra proviene de un análisis de Delectatech sobre más de 250.000 establecimientos. En cuanto a la supervivencia empresarial, el INE indica que el 41,9 % de las empresas nacidas en 2018 sobreviven a los cinco años, aunque este dato no se desglosa por hostelería (Nota de prensa: Demografía Armonizada de Empresas. Año 2023 — Instituto Nacional de Estadística (INE), 2025-11-12).
+Los cierres de establecimientos de restauración se situaron en 11.183 durante 2025, lo que equivale a 31,1 cierres diarios, frente a los 37,5 diarios de 2024 (La restauración española reduce su tasa de cierres en 2025 — Revista Hostelería, sobre el informe de Delectatech, 2026-02-11). Esta cifra proviene de un análisis de Delectatech sobre más de 250.000 establecimientos. En cuanto a la supervivencia empresarial, el INE indica que el 41,9 % de las empresas nacidas en 2018 sobreviven a los cinco años, aunque este dato no se desglosa por hostelería (Nota de prensa: Demografía Armonizada de Empresas. Año 2023 — Instituto Nacional de Estadística (INE), 2025-11-12).
 
-El turismo enogastronómico aporta 37.261 millones de euros de gasto total de viajeros internacionales que realizaron actividades enogastronómicas (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 — Agenttravel (sobre el infor, 2026-06-15). Son 24,8 millones de turistas, el 25,6 % de los 96,8 millones que recibió España en 2025 (Más de 20 millones de turistas incorporaron experiencias gastronómicas a sus viajes por España — Fos Consultin, 2026-07-15). Pero solo 445.000 declararon la gastronomía como motivo principal del viaje (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 — Agenttravel, 2026-06-15). Esta distinción es crítica para no inflar el mercado.
+El turismo enogastronómico aporta 37.261 millones de euros de gasto total de viajeros internacionales que realizaron actividades enogastronómicas (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 — Agenttravel, sobre el informe «Análisis de segmentos: turismo enogastronómico» de Turespaña, 2026-06-15). Son 24,8 millones de turistas, el 25,6 % de los 96,8 millones que recibió España en 2025 (Más de 20 millones de turistas incorporaron experiencias gastronómicas a sus viajes por España — Fos Consultin, 2026-07-15). Pero solo 445.000 declararon la gastronomía como motivo principal del viaje (El turismo enogastronómico en España supera los 37.000 millones de gasto en 2025 — Agenttravel, 2026-06-15). Esta distinción es crítica para no inflar el mercado.
 
 En el segmento de alta cocina, la Guía MICHELIN España & Andorra 2026 reconoce 307 restaurantes con estrella (La Guía MICHELIN España & Andorra 2026 celebra el excepcional dinamismo de su escena culinaria — Espacio de Pr, 2025-11-25), mientras que la Guía Repsol otorga 808 Soles en su edición 2026 (Guía Repsol reparte 83 nuevos Soles en 2026, con Ramón Freixa Atelier, A Tafona y Voro como nuevos terceros So, 2026-02-16). La tabla de abajo resume estas magnitudes con sus fuentes y fechas.
 
@@ -222,7 +222,7 @@ La necesidad total de financiación es de 1.889.944,24 €, resultado de sumar e
 
 ### Operación diaria
 
-El restaurante abre de martes a domingo, con un único cierre semanal los lunes para descanso del equipo y mantenimiento integral de las instalaciones. Eso nos deja 22 días de apertura al mes, que es la base sobre la que calculamos todos los turnos, compras y previsiones de venta. La capacidad operativa se ha fijado en 70 cubiertos al día de media, repartidos entre servicio de comida y cena. Esa cifra no es un máximo físico —la sala tiene 65 plazas y podemos hacer dos rotaciones completas en noche punta—, sino el objetivo realista de ocupación media que sostiene el modelo económico sin forzar ni la cocina ni el servicio.
+El modelo trabaja con 22 días de apertura al mes (calculadora-ticket-medio.xlsx, hoja «Ticket Medio»), y esa es la base sobre la que calculamos todos los turnos, compras y previsiones de venta. Los días concretos de cierre semanal se fijan en el cuadrante de la brigada, junto con los descansos del equipo y las paradas de mantenimiento, y conviene no moverlos a la ligera: cada día de apertura de más o de menos mueve la facturación en 8.624,00 €. La capacidad operativa se ha fijado en 70 cubiertos al día de media, repartidos entre servicio de comida y cena. Esa cifra no es un máximo físico —la sala tiene 65 plazas y podemos hacer dos rotaciones completas en noche punta—, sino el objetivo realista de ocupación media que sostiene el modelo económico sin forzar ni la cocina ni el servicio.
 
 La brigada está formada por 24 personas en plantilla, distribuidas en tres áreas: cocina, sala y gestión. En cocina trabajan el jefe de partida, dos cocineros, un ayudante y el responsable de lavandería y limpieza; en sala, el maître, dos jefes de rango, cuatro camareros y un sumiller; y en gestión, el gerente, el encargado de compras y el responsable de administración. Cada turno se organiza con una estructura clara: el equipo de mañana prepara mise en place y atiende la comida, mientras que el de tarde refuerza para la cena. Los solapes de dos horas entre turnos garantizan que nunca falta personal en los momentos de mayor afluencia.
 
@@ -301,7 +301,7 @@ El coste anual de personal, con Seguridad Social incluida, es de 717.620,12 €.
 
 El marco laboral aplicable es el del Estatuto de los Trabajadores. En particular, el artículo 34.9 exige registrar la jornada diaria de cada persona trabajadora y conservar esos registros durante 4 años. La norma no impone un soporte concreto: admite papel o digital, organizado por convenio, acuerdo de empresa o, en su defecto, decisión del empresario. Para este proyecto, el registro se llevará en el mismo software de turnos que genera la plantilla, de modo que la trazabilidad entre horas planificadas y horas reales es directa. La referencia normativa es el «BOE-A-2015-11430 — Real Decreto Legislativo 2/2015, de 23 de octubre, texto refundido de la Ley del Estatuto d» (2015-10-24).
 
-El salario mínimo vigente anual, 17.094 €, está por debajo del bruto anual de cualquier puesto de esta brigada, lo que sitúa a toda la plantilla dentro del marco legal. Aun así, el coste por hora que se muestra en la tabla de abajo incluye las pagas extraordinarias prorrateadas y la parte proporcional de vacaciones, porque el coste laboral no se limita al salario mensual: hay que presupuestar también los días de descanso y las sustituciones. La tabla de abajo permite al banco comprobar que cada hora de trabajo está costeada con su carga real, sin partidas ocultas.
+Ningún puesto de esta brigada queda por debajo del salario mínimo vigente anual, 17.094 € (Real Decreto 126/2026, de 18 de febrero), pero tampoco sobra margen: seis de ellos —los dos ayudantes de cocina, los dos plonge y los dos runners— están exactamente en el mínimo. Antes de cerrar el cuadrante hay que contrastar esos seis con la tabla salarial del convenio provincial de hostelería, que prevalece siempre que fije un mínimo superior. Aun así, el coste por hora que se muestra en la tabla de abajo incluye las pagas extraordinarias prorrateadas y la parte proporcional de vacaciones, porque el coste laboral no se limita al salario mensual: hay que presupuestar también los días de descanso y las sustituciones. La tabla de abajo permite al banco comprobar que cada hora de trabajo está costeada con su carga real, sin partidas ocultas.
 
 **Plantilla completa con bruto anual y coste por hora**
 
@@ -372,7 +372,7 @@ El presupuesto de marketing mensual de 3.500,00 € no es un gasto administrat
 
 ### Hipótesis y cuenta de resultados
 
-El plan financiero se ha construido sobre hipótesis conservadoras de ocupación y ticket medio, validadas con datos de mercado del entorno. Los ingresos mensuales tipo ascienden a 189.728,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)), que se obtienen de un aforo de 65 plazas con una rotación media de 1,8 servicios diarios y un ticket medio de 28,50 €. Sobre esa base, el EBITDA del mes tipo se sitúa en 34.007,92 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Es importante señalar que el EBITDA no resta la amortización: se calcula antes de deducir la dotación anual por depreciación del inmovilizado. La amortización mensual se contabiliza después, con una cuota de 6.000,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)), de modo que el EBIT resultante es de 28.007,92 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Esta separación permite distinguir la rentabilidad operativa pura de la carga contable no monetaria, y facilita la comparación con otros negocios del sector que puedan tener estructuras de activos diferentes.
+El plan financiero se ha construido sobre hipótesis conservadoras de ocupación y ticket medio, validadas con datos de mercado del entorno. Los ingresos mensuales tipo ascienden a 189.728,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)), que se obtienen de 25 cubiertos de comida a 72,92 € y 45 cubiertos de cena a 116,60 €, en los 22 días de apertura al mes, más 34.188,00 € de vinos y bebidas por maridaje y copa. Sobre esa base, el EBITDA del mes tipo se sitúa en 34.007,92 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Es importante señalar que el EBITDA no resta la amortización: se calcula antes de deducir la dotación anual por depreciación del inmovilizado. La amortización mensual se contabiliza después, con una cuota de 6.000,00 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)), de modo que el EBIT resultante es de 28.007,92 € (fuente: (plan-financiero-3-anos.xlsx, hoja «P&L Mensual»)). Esta separación permite distinguir la rentabilidad operativa pura de la carga contable no monetaria, y facilita la comparación con otros negocios del sector que puedan tener estructuras de activos diferentes.
 
 ### Tesorería, break-even y servicio de la deuda
 
@@ -463,7 +463,7 @@ Todas estas medidas están pensadas para que, tanto en el escenario pesimista co
 | Margen bruto (€) | 89.580,48 € | 132.809,60 € | 168.030,72 € |
 | Costes fijos totales (€) | 86.000,00 € | 98.801,68 € | 121.000,00 € |
 | EBITDA mensual (€) | 3.580,48 € | 34.007,92 € | 47.030,72 € |
-| Margen EBITDA (%) | 0,03 € | 0,18 € | 0,20 € |
+| Margen EBITDA (%) | 2,7 % | 17,9 % | 20,2 % |
 | Amortización mensual (€) | 6.000,00 € | 6.000,00 € | 6.000,00 € |
 | EBIT — resultado de explotación (€) | -2.419,52 € | 28.007,92 € | 41.030,72 € |
 
@@ -474,7 +474,7 @@ Todas estas medidas están pensadas para que, tanto en el escenario pesimista co
 
 ### La petición y sus condiciones
 
-La necesidad total de financiación del proyecto asciende a 1.889.944,24 €, según el plan financiero. Esa cifra se cubre con fondos propios por importe de   €1.189.944,24 € y con el préstamo solicitado de   €700.000,00 €. La petición concreta es, por tanto, la concesión de ese préstamo en las condiciones que se detallan a continuación y que se resumen en el cuadro siguiente.
+La necesidad total de financiación del proyecto asciende a 1.889.944,24 €, según el plan financiero. Esa cifra se cubre con fondos propios por importe de 1.189.944,24 € y con el préstamo solicitado de 700.000,00 €. La petición concreta es, por tanto, la concesión de ese préstamo en las condiciones que se detallan a continuación y que se resumen en el cuadro siguiente.
 
 - Importe del préstamo: 700.000,00 €
 - Plazo: 10 años
@@ -482,7 +482,7 @@ La necesidad total de financiación del proyecto asciende a 1.889.944,24 €, se
 - Carencia: 1 año
 - Fondos propios aportados: 1.189.944,24 €
 
-La operación se instrumentará como préstamo a largo plazo con amortización periódica. Durante el primer año, la carencia permitirá diferir la devolución del principal y concentrar los flujos de caja en la puesta en marcha del restaurante. A partir del año siguiente, las cuotas de amortización se calcularán sobre el principal pendiente al tipo de interés nominal señalado, con vencimientos periódicos hasta completar el plazo total de   €10 años.
+La operación se instrumentará como préstamo a largo plazo con amortización periódica. Durante el primer año, la carencia permitirá diferir la devolución del principal y concentrar los flujos de caja en la puesta en marcha del restaurante. A partir del año siguiente, las cuotas de amortización se calcularán sobre el principal pendiente al tipo de interés nominal señalado, con vencimientos periódicos hasta completar el plazo total de 10 años.
 
 Las garantías ofrecidas quedan [garantías: aval solidario de los socios, prenda sobre el derecho de traspaso y cesión de créditos de las pólizas de seguros], en los términos que se formalizarán en la escritura del préstamo. El cuadro siguiente recoge las condiciones de la operación solicitada.
 
@@ -498,9 +498,9 @@ La devolución comenzará tras el año de carencia. Durante ese primer ejercicio
 |---|---|
 | Importe del préstamo (€) | 700.000,00 |
 | Plazo (años) | 10,00 |
-| Tipo de interés nominal anual (%) | 0,06 |
+| Tipo de interés nominal anual (%) | 5,5 % |
 | Carencia (años, solo intereses) | 1,00 |
-| Tipo mensual (%) | 0,00 |
+| Tipo mensual (%) | 0,5 % |
 | Cuotas de amortización (meses) | 108,00 |
 | Cuota MENSUAL tras la carencia (€) — la que va al cash flow | 8.232,00 |
 | Cuota mensual DURANTE la carencia (€) — solo intereses | 3.208,33 |

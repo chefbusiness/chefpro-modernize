@@ -10,7 +10,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro',
-    description: 'Guía premium para montar un restaurante gastronómico en España: 22 capítulos, 80+ páginas, plan financiero, diseño de cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',
+    description: 'Guía premium para montar un restaurante gastronómico en España: 22 capítulos, 119 páginas, plan financiero, diseño de cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',
     keywords: 'como montar restaurante gastronomico, abrir restaurante fine dining, estrella michelin requisitos, sol repsol restaurante, plan financiero restaurante, equipamiento cocina profesional, brigada cocina, restaurante 65 plazas, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-gastro-hero.jpg',
   },
@@ -20,9 +20,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar un ',
     titleGold: 'Restaurante Gastronómico',
     subtitleLine: '65 Plazas · Guía Completa España (Michelin · Sol Repsol)',
-    description: 'Guía completa con 22 capítulos, 80+ páginas, 10 plantillas Excel, 8 checklists, business plan modelo y manual de servicio. Todo para abrir tu restaurante fine dining.',
+    description: 'Guía completa con 22 capítulos, 119 páginas, 10 plantillas Excel, 8 checklists, business plan modelo y manual de servicio. Todo para abrir tu restaurante fine dining.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (22 capítulos, 80+ páginas)',
+      'Guía completa PDF + DOCX editable (22 capítulos, 119 páginas)',
       '10 plantillas Excel con fórmulas: plan financiero, escandallos, menú engineering',
       '8 checklists de apertura incluyendo preparación Michelin y Sol Repsol',
       'Business Plan modelo para presentar a bancos e inversores',
@@ -148,7 +148,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Restaurante a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta una hora de consultoría.',
     items: [
-      'Guía completa PDF + DOCX (22 capítulos, 80+ páginas)',
+      'Guía completa PDF + DOCX (22 capítulos, 119 páginas)',
       '10 plantillas Excel con fórmulas',
       '8 checklists de apertura completos',
       'Business Plan modelo para bancos',

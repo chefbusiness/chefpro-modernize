@@ -2282,13 +2282,17 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
     # ABSOLUTA: la misma celda de tipo alimenta las doce columnas de mes, y una
     # referencia relativa se rompería en cuanto el cliente arrastrase la fila.
     celda_iva = '$' + celda_iva[0] + '$' + celda_iva[1:]
-    # RD-14 · el 10 % único sobre TODA la facturación deja corta la liquidación
-    # del 303: la bodega de un gastronómico con maridaje es una parte grande de
-    # la venta y va al 21 %. El propio libro lo decía en la nota de al lado y
-    # la fórmula no lo hacía.
+    # RD-14 · la línea de bebida se liquida en su propia celda para que quien
+    # tenga venta PARA LLEVAR pueda separarla: ésa sí va al 21 %.
+    # 2026-08-31 (RD-17, decisión del dueño): el tipo por defecto pasa de 21 %
+    # a 10 %. La bebida alcohólica servida EN SALA tributa igual que la comida
+    # (art. 91.Uno.2.2 de la Ley del IVA); el 21 % que había aquí no lo ampara
+    # ese artículo, y el manual de sala instruía al equipo a desglosar mal la
+    # factura del cliente.
     motor.val(ws, 'A' + str(base + 2),
               'Tipo de IVA de la bebida alcohólica (%)')
-    motor.val(ws, 'B' + str(base + 2), conf.get('iva_bebida', 0.21),
+    motor.val(ws, 'B' + str(base + 2),
+              conf.get('iva_bebida', motor.PARAMETROS['iva_bebida']['valor']),
               fmt=FMT_PCT, verde_=True)
     motor.fijar_formato(ws, 'B' + str(base + 2), FMT_PCT)
     celda_iva_beb = '$B$' + str(base + 2)
@@ -2308,8 +2312,10 @@ def _bloque_iva_y_deuda(ws, meses, total, fila_neto, fila_acum, cambios, fname,
     motor.fijar_formato(ws, 'B' + str(base + 4), FMT_EUR)
     celda_base_gas = '$B$' + str(base + 4)
     nota(ws, 'A' + str(base + 5),
-         '10 % general de restauración y 21 % en bebidas alcohólicas (art. 91 '
-         'de la Ley del IVA). Las nóminas y la Seguridad Social NO llevan IVA: '
+         '10 % en restauración, incluida la bebida alcohólica servida en sala '
+         '(art. 91.Uno.2.2 de la Ley del IVA). El 21 % es el tipo general y '
+         'sólo aplica a la venta para llevar: si la tienes, separa esa línea. '
+         'Las nóminas y la Seguridad Social NO llevan IVA: '
          'por eso la base de gastos con IVA no es el total de gastos. Las '
          'filas de arriba se escriben SIN IVA, igual que el P&L; esta capa lo '
          'añade porque el cash flow es caja.')

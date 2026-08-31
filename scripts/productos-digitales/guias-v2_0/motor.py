@@ -154,8 +154,27 @@ PARAMETROS = {
         'etiqueta': 'Tipo de IVA de restauración (%)',
         'valor': 0.10,
         'formato': FMT_PCT,
-        'nota': ('10 % general en restauración; 21 % en bebidas alcohólicas. '
-                 'Cámbialo aquí y se recalcula todo el libro.'),
+        'nota': ('10 % en restauración, INCLUIDA la bebida alcohólica '
+                 'servida en sala: el art. 91.Uno.2.2 de la Ley del IVA grava '
+                 'a ese tipo los servicios de hostelería y «el suministro de '
+                 'comidas y bebidas para consumir en el acto», y no excluye el '
+                 'alcohol. Cámbialo aquí y se recalcula todo el libro.'),
+    },
+    # 2026-08-31 · decisión del dueño tras RD-17. Este parámetro existía
+    # duplicado y en 21 %: en la capa del 303 de grupo_a y, a pelo, en el
+    # budget de bodega de grupo_c. Al 21 % el «PVP sin IVA» de la carta salía
+    # dividido entre 1,21 en vez de entre 1,10, y eso hundía el margen de
+    # bodega y el food cost de bebida. Una sola fuente, y el tipo correcto.
+    'iva_bebida': {
+        'etiqueta': 'Tipo de IVA de la bebida alcohólica (%)',
+        'valor': 0.10,
+        'formato': FMT_PCT,
+        'nota': ('10 %, igual que el resto del consumo en sala (art. '
+                 '91.Uno.2.2 de la Ley del IVA: servicios de hostelería y '
+                 'suministro de comidas y bebidas para consumir en el acto, '
+                 'sin excluir el alcohol). El 21 % es el tipo GENERAL y sólo '
+                 'aplica a la venta para llevar: si la tienes, sepárala en su '
+                 'propia línea en vez de subir el tipo de toda la bodega.'),
     },
     'ss_empresa': {
         'etiqueta': 'Seguridad Social a cargo de la empresa (%)',
@@ -177,6 +196,7 @@ PARAMETROS = {
 }
 SMI_ANUAL = PARAMETROS['smi_anual']['valor']
 IVA_RESTAURACION = PARAMETROS['iva_restauracion']['valor']
+IVA_BEBIDA = PARAMETROS['iva_bebida']['valor']
 SS_EMPRESA = PARAMETROS['ss_empresa']['valor']
 
 

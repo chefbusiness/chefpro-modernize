@@ -120,8 +120,9 @@ NO_COMUN = [
     'No digas que un porcentaje de restaurantes cierra, fracasa o no sobrevive '
     'salvo que te haya dado esa cifra con su fuente.',
     'No cites años anteriores a 2026 junto a precios ni a tendencias.',
-    'No escribas «IVA incluido» sin decir el tipo: en restauración es el 10 % y '
-    'en bebida alcohólica el 21 %.',
+    'No escribas «IVA incluido» sin decir el tipo: en sala es el 10 % para '
+    'todo el consumo, comida y bebida alcohólica incluidas. El 21 % es el tipo '
+    'general y sólo aplica a la venta para llevar.',
     # Cazado por el gate de coherencia el 2026-08-29: el capítulo 9 escribió '
     # «en el checklist tasado, el abatidor aparece con 5.900,00 €» — un importe
     # por línea que NO está en ninguna celda del libro.
@@ -814,9 +815,10 @@ CAPITULOS = [
             'Conservación, servicio y formación del equipo',
         ],
         'puntos': [
-            'El precio de carta en España se anuncia CON IVA y la bebida '
-            'alcohólica va al 21 %: cruzar un coste sin IVA con un precio con IVA '
-            'deja el food cost de bebida unos siete puntos por debajo del real.',
+            'El precio de carta en España se anuncia CON IVA, y en sala el '
+            'tipo es el 10 % también para la bebida alcohólica: cruzar un coste '
+            'sin IVA con un precio con IVA deja el food cost de bebida por '
+            'debajo del real.',
             'Explicar el multiplicador frente al margen sobre PVP: son dos '
             'lecturas distintas del mismo número.',
             'Ligar el valor del stock a coste con la partida de bodega inicial del '
@@ -2547,10 +2549,11 @@ NO_COMUN_V2 = [
     'RD-17|Si hablas de IVA: en hostelería, el suministro de comidas y bebidas '
     'para consumir en el acto tributa al 10 % (artículo 91.Uno.2.2 de la Ley '
     'del IVA), y ese artículo no excluye la bebida alcohólica servida en sala. '
-    'El 21 % es el tipo general y aplica a la venta para llevar. Las plantillas '
-    'de este pack repercuten un 21 % sobre la línea de bebidas como criterio '
-    'de PRUDENCIA de tesorería; si lo mencionas, dilo así y no cites el '
-    'artículo 91 como si amparase el 21 % en mesa.',
+    'Las plantillas de este pack repercuten el 10 % sobre TODO el consumo en '
+    'sala, bebida incluida (decisión del 2026-08-31). El 21 % es el tipo '
+    'general y sólo aplica a la venta PARA LLEVAR: si la mencionas, dilo como '
+    'una línea aparte, y no digas nunca que el alcohol servido en mesa va al '
+    '21 %.',
     'RD-08|El símbolo del euro va SIEMPRE detrás de la cifra y separado de '
     'ella («700.000,00 €»). Nunca delante, nunca dos veces en el mismo importe '
     'y nunca pegado a algo que no sea dinero: los años, los meses, las '
@@ -2605,12 +2608,56 @@ for _b in BONUS:
 # Erratas que el gate ortográfico marca y NO lo son (nombres propios, términos
 # del oficio y extranjerismos que no están en el léxico del blog). Revisadas
 # una a una el 2026-08-29.
+# 2026-08-31 · derivadas verificadas a mano y aprobadas POR SIGNIFICADO (la
+# lección de RD-21: que las celdas existan no basta). Las dos salen del párrafo
+# del punto de equilibrio del cap. 4:
+#  · 4.583,33 = 3.208,33 (cuota de carencia, cash-flow!B49) ÷ 0,70 (margen de
+#    contribución). Es la VENTA extra necesaria para pagar esa cuota, no la
+#    cuota: cada euro vendido deja 70 céntimos.
+#  · 152.905,26 = 141.145,26 (umbral de explotación, cash-flow!B48) + 8.232,00
+#    (cuota plena) ÷ 0,70 = 141.145,26 + 11.760,00. Es el umbral cuando termina
+#    la carencia.
+GUIA['gates']['cifras_extra'] = GUIA['gates']['cifras_extra'] + (
+    '4.583,33', '152.905,26', '11.760,00',
+    # RD-16 · el desfase entre lo que presupuesta la preapertura y lo que pide
+    # el cronograma. Las cuatro llevan su aritmética escrita en el propio
+    # párrafo, que es lo que permite al lector comprobarlas:
+    #   221.000,00 = 13 meses × 17.000,00 de renta
+    #   299.008,40 =  5 meses × 59.801,68 de nómina de brigada
+    #   520.008,40 = 221.000,00 + 299.008,40
+    #   298.405,04 = 520.008,40 - 221.603,36 (lo presupuestado)
+    '221.000,00', '221.000', '299.008,40', '520.008,40', '298.405,04')
+for _b in BONUS:
+    _b['gates']['cifras_extra'] = tuple(_b['gates'].get('cifras_extra', ())) + (
+        '4.583,33', '152.905,26', '11.760,00')
+
+# 2026-08-31 · el gate de mortalidad casaba una frase sobre MÁRGENES («si el
+# coste sube y no ajustamos la receta o el precio, el beneficio desaparece»).
+# No habla de cierres de negocio: es un falso positivo del patrón.
+GUIA['gates']['mortalidad_permitida'] = list(
+    GUIA['gates']['mortalidad_permitida']) + ['no ajustamos la receta']
+for _b in BONUS:
+    _b['gates']['mortalidad_permitida'] = list(
+        _b['gates'].get('mortalidad_permitida', [])) + ['no ajustamos la receta']
+
 _ERRATAS_OK = ('Kasavana', 'Repsol', 'Michelin', 'Zalto', 'Riedel', 'Bernardaud',
                'Noritake', 'Christofle', 'Villeroy', 'Boch', 'plonge', 'runner',
                'runners', 'hostess', 'mise', 'place', 'meunière', 'burrata',
                'sommelier', 'coupage', 'Horeca', 'Hostelería', 'Anuario',
                'Agenttravel', 'Observatori', 'Gastronomía', 'briefing',
-               'Bordeaux', 'Burgundy', 'Pacojet', 'Thermomix', 'roner')
+               'Bordeaux', 'Burgundy', 'Pacojet', 'Thermomix', 'roner',
+               # 2026-08-31 · revisadas UNA A UNA en su contexto. Dos familias:
+               # (a) palabras correctas que el léxico del blog no contiene
+               'Aleia', 'auditado', 'chaira', 'degustado', 'estancas', 'Magos',
+               'negocies', 'proporcionales', 'reglado', 'acusada', 'cavas',
+               'anular', 'canta', 'velas', 'obligara',
+               # (b) palabras BIEN escritas con tilde o con ñ: el gate
+               # normaliza los acentos antes de buscar y el corpus del blog
+               # nunca las usó, así que propone insertarles una letra.
+               # En el texto están como perdió, establecía, sobrevivió,
+               # venció, elegirá, realizará, ejecutará, señalado, estaré.
+               'perdio', 'establecia', 'sobrevivio', 'vencio', 'elegira',
+               'realizara', 'ejecutara', 'senalado', 'estare')
 GUIA['gates']['erratas_permitidas'] = _ERRATAS_OK
 for _b in BONUS:
     _b['gates']['erratas_permitidas'] = _ERRATAS_OK
