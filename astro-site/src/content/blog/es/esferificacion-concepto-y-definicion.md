@@ -2,7 +2,7 @@
 title: "Esferificación: Concepto y Definición"
 description: "Técnica molecular para crear esferas líquidas. Domina esferificación básica y reversa profesional."
 pubDate: 2026-02-14
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/02/esferificacion-concepto-definicion-aichefpro-1.jpeg
 imageAlt: "Esferificación: Concepto y Definición"
@@ -104,6 +104,8 @@ wpId: 2705
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=esferificacion-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h2 class="wp-block-heading">Ingredientes Necesarios</h2>
 
 
@@ -155,6 +157,8 @@ wpId: 2705
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=esferificacion-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
+
 <h3 class="wp-block-heading">Raviolis líquidos</h3>
 
 
@@ -202,6 +206,8 @@ wpId: 2705
 <figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr><tr><td>No forma esfera</td><td>Alginato insuficiente</td><td>Aumentar concentración</td></tr><tr><td>Membrana muy gruesa</td><td>Tiempo excesivo</td><td>Reducir tiempo de baño</td></tr><tr><td>Sabor metálico</td><td>Cloruro cálcico</td><td>Usar gluconato cálcico</td></tr></tbody></table></div></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=esferificacion-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 <h2 class="wp-block-heading">Tabla Resumen</h2>
 

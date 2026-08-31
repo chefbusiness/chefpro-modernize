@@ -2,7 +2,7 @@
 title: "Subida de Precios Alimentos: Protege tu Margen 2026"
 description: "Ante la subida de precios de alimentos en tu restaurante, protege el margen con reingeniería de recetas, sustituciones y repricing. Simula con IA."
 pubDate: 2026-02-22
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/foodcost-ia-featured-1.jpg
 imageAlt: "Cómo proteger tu food cost con IA ante la subida de precios de alimentos en 2026"
@@ -57,6 +57,8 @@ Aquí es donde una [calculadora de food cost](https://aichef.pro/calculadora-foo
 
 Cuando ya tienes el diagnóstico claro —sabes qué platos están sangrando y cuáles no—, es hora de actuar. Y aquí es donde la mayoría de los restaurantes se equivocan porque solo usan una palanca: subir precios. Yo te propongo tres, y en este orden.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-cost-ia-escenarios-inflacionarios-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ### 1. Reingeniería de recetas
 
 Rediseñar el plato para bajar el coste sin bajar el valor percibido es un arte, y se hace en la cocina, no en la oficina. No se trata de empequeñecer la ración ni de sacrificar calidad. Se trata de reequilibrar la composición del plato para que el ingrediente caro —casi siempre la proteína— pese menos en el coste total sin que el comensal perciba que le estás dando menos.
@@ -99,6 +101,8 @@ No todas las subidas de precios son iguales, y no todas se combaten con la misma
 | Subida fuerte (varios insumos clave suben con fuerza sostenida) | La proteína, los lácteos o los aceites se disparan y no parece algo pasajero | Reingeniería de recetas + repricing por rondas en bestsellers | Rediseñar los platos más afectados para reducir dependencia del insumo caro; programar dos rondas de subida en los platos estrella, separadas por 6-8 semanas | Si solo subes precios sin rediseñar, el cliente percibe el sablazo y cae la rotación; si solo rediseñas sin repricing, el margen no se recupera del todo |
 | Shock de un insumo (un ingrediente concreto se dispara o falta) | Un producto puntual —un pescado, un corte, un fresco— multiplica su precio o directamente desaparece del mercado | Sustitución inteligente inmediata + rediseñar o retirar temporalmente el plato afectado | Buscar una alternativa que cumpla la misma función organoléptica; probar en cocina esa misma mañana; si no hay sustituto viable, sacar el plato de carta temporalmente y comunicarlo como «fuera de carta por temporada» | Dejar el plato en carta con el ingrediente original dispara el food cost de ese plato y distorsiona toda la cuenta de resultados; quitarlo sin más enfada al cliente habitual |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-cost-ia-escenarios-inflacionarios-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 ## Cómo la IA te deja simular la subida antes de que ocurra
 
 Voy a ser directo: la IA no cocina por ti, no te inventa recetas mágicas ni te soluciona una partida de género mal comprada. Pero lo que sí hace —y lo hace en segundos, no en horas— es quitarte de encima todo el trabajo pesado de cálculo y simulación para que tú puedas dedicarte a lo que de verdad importa: decidir.
@@ -120,6 +124,8 @@ Esto no es teoría. Es una lista de acciones concretas que puedes ejecutar desde
 | Sustituciones inteligentes | Identificar un ingrediente problemático y probar dos alternativas en cocina esta misma semana | Diferencia de coste por ración; feedback del equipo de cocina y sala (¿notan algo?) | Cada vez que un insumo concreto se dispare o falte |
 | Repricing | Analizar los bestsellers y los platos ancla; decidir qué platos subir, cuánto y en qué fecha | Elasticidad de la demanda: ¿cae la venta del plato subido?; food cost post-subida | Programar 2-4 rondas al año, ligadas a cambios de carta o temporada |
 | Control de merma | Pesar mermas reales de los cinco ingredientes más caros durante una semana completa | Porcentaje de merma real vs. merma teórica del escandallo | Semanal durante un mes para establecer línea base; luego mensual |
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-cost-ia-escenarios-inflacionarios-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
 
 ## Errores que sabotean tu defensa del margen
 

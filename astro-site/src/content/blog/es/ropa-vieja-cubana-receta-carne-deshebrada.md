@@ -2,7 +2,7 @@
 title: "Ropa Vieja Cubana: Receta Pro de la Carne Deshebrada"
 description: "Auténtica Ropa Vieja cubana: carne deshebrada en sofrito de tomate, pimientos y especias. Técnica Pro de La Habana."
 pubDate: 2026-07-08
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/ropa-vieja-cubana.jpg
 imageAlt: "Ropa Vieja Cubana: Receta Pro de la Carne Deshebrada"
@@ -31,6 +31,9 @@ wpId: 3590
 <li>Sal y pimienta</li>
 <li>Agua para cubrir</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ropa-vieja-cubana-receta-carne-deshebrada" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 <h3>Para el Sofrito:</h3>
 <ul>
 <li>1 cebolla grande, picada finamente</li>
@@ -69,6 +72,9 @@ wpId: 3590
 <p><strong>Paso 9:</strong> Vierte vino blanco, raspa el fondo. Cocina 3 minutos.</p>
 <p><strong>Paso 10:</strong> Añade caldo reservado, comino, orégano, laurel. Lleva a ebullición.</p>
 <p><strong>Paso 11:</strong> Reduce fuego y cocina 10 minutos hasta que espese ligeramente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ropa-vieja-cubana-receta-carne-deshebrada" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
+
 <h3>Fase 3: Combinar (15 min)</h3>
 <p><strong>Paso 12:</strong> Añade la carne deshebrada al sofrito. Remueve bien para cubrir.</p>
 <p><strong>Paso 13:</strong> Cocina a fuego bajo 15 minutos, removiendo ocasionalmente.</p>
@@ -84,6 +90,9 @@ wpId: 3590
 <p>No apresurar el sofrito. El tomate debe reducirse para concentrar sabor.</p>
 <h3>3. Salsa Espesa</h3>
 <p>La salsa debe quedar espesa, no líquida. Cocinar hasta reducir.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ropa-vieja-cubana-receta-carne-deshebrada" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

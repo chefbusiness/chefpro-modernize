@@ -2,7 +2,7 @@
 title: "Fotografía Gastronómica para Instagram con IA (Guía 2026)"
 description: "Fotografía gastronómica para Instagram: luz, composición y ángulos para fotos de platos reales, más edición con IA, tabla de errores y checklist de sesión."
 pubDate: 2026-04-04
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b7-1.jpg
 imageAlt: "Chef emplatando mientras un fotógrafo captura con cámara en trípode"
@@ -62,6 +62,8 @@ Muchos de estos errores se repiten incluso en cocinas con estrella. La buena not
 
 Una vez que eliminas estos fallos, la foto ya parte con ventaja. Ahora toca trabajar el elemento que más separa una imagen plana de una que invita a darle un bocado: la luz.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fotografia-gastronomica-ia-instagram" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 ## Luz: el 80 % del resultado
 
 Si tuvieras que recordar una sola regla, que sea esta: **la luz hace la foto, la cámara solo la registra**. En **fotografía gastronómica para Instagram**, una luz bien dirigida es lo que marca la diferencia entre un plato que parece de carta y uno que parece de menú del día.
@@ -83,6 +85,8 @@ Cuando no hay ventana, un panel LED regulable con temperatura de color ajustable
 ### Cómo la IA rescata una foto mal iluminada (exposición, sombras, temperatura de color, balance de blancos)
 
 Incluso cuando la luz no acompaña, la IA puede levantar una foto subexpuesta o con dominantes de color sin que parezca un cartel publicitario. Las herramientas de edición con inteligencia artificial —desde el ajuste automático que ya integra la galería de tu móvil hasta cualquier app de retoque fotográfico— analizan la imagen y te proponen ajustes de exposición, recuperación de sombras, temperatura de color y balance de blancos. El resultado es una foto equilibrada donde el plato recupera su aspecto real, sin necesidad de pasarte minutos retocando cada parámetro a mano.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fotografia-gastronomica-ia-instagram" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
 
 ## Composición y ángulos que funcionan en el feed (fotografía gastronómica para Instagram)
 
@@ -119,6 +123,8 @@ De nada sirve tener una foto impecable si la publicas un día y luego desaparece
 Para no improvisar, puedes usar el [calendario de contenidos para tu restaurante](https://aichef.pro/calendario-contenidos-restaurante) de AI Chef Pro, donde un asistente de IA te sugiere ideas, textos y fechas según tu estilo de cocina y tu público. Si aún no tienes clara la estrategia de redes, échale un vistazo al artículo sobre [marketing en restaurantes con IA en redes sociales](https://aichef.pro/blog/marketing-restaurantes-ia-redes-sociales) para asentar las bases antes de llenar el calendario.
 
 Recuerda publicar en las franjas de mayor interacción: mediodía (13:00–14:30) y tarde-noche (20:00–22:00). Y acompaña cada foto de un pie de foto que cuente una historia breve, con llamada a la acción y un conjunto rotatorio de 5 a 15 hashtags de nicho, que la propia IA puede sugerirte a partir de los ingredientes y el tipo de cocina.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fotografia-gastronomica-ia-instagram" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
 
 ## Checklist de sesión de fotos para tus platos de Instagram
 

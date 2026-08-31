@@ -2,7 +2,7 @@
 title: "Tagine de Pollo Marroquí: Receta Pro con Limón Confitado"
 description: "Auténtico tagine marroquí: pollo, limones confitados, aceitunas, chermoula de especias. Técnica Pro de cocción lenta en tajine."
 pubDate: 2026-04-21
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/tagine.jpg
 imageAlt: "Tagine de Pollo Marroquí: Receta Pro con Limón Confitado"
@@ -33,6 +33,9 @@ wpId: 3479
 <li>Cilantro fresco picado</li>
 <li>Perejil fresco picado</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tagine-pollo-marroqui-limon-confitado-receta" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 <h3>Para la Marinada (Chermoula):</h3>
 <ul>
 <li>2 cucharadas cilantro picado</li>
@@ -54,12 +57,18 @@ wpId: 3479
 <p><strong>Paso 2:</strong> Frotar la mezcla sobre el pollo. Marinar mínimo 30 minutos (ideal 4 horas).</p>
 <h3>Fase 2: Sofrito Base (10 min)</h3>
 <p><strong>Paso 3:</strong> En el tagine o cazuela pesada, calienta aceite y mantequilla.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tagine-pollo-marroqui-limon-confitado-receta" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
+
 <p><strong>Paso 4:</strong> Sofríe las cebollas 8 minutos hasta doradas.</p>
 <h3>Fase 3: Cocción Lenta (1.5h)</h3>
 <p><strong>Paso 5:</strong> Coloca el pollo sobre las cebollas. Dóralo ligeramente 5 minutos por lado.</p>
 <p><strong>Paso 6:</strong> Añade ajo, limones confitados, aceitunas y agua.</p>
 <p><strong>Paso 7:</strong> Tapa y cocina a fuego muy bajo 1.5 horas. No remover.</p>
 <p><strong>Paso 8:</strong> La salsa debe reducirse y espesarse. Si está muy seca, añade un poco de agua.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hotel Completo</h3><p class="mt-2 text-muted-foreground">F&amp;B, housekeeping, multi-punto de venta.</p><a href="/kit-tareas-hotel?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tagine-pollo-marroqui-limon-confitado-receta" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hotel Completo por €18,50</a></aside>
+
 <h3>Fase 4: Servicio</h3>
 <p><strong>Paso 9:</strong> Espolvorea generosamente cilantro y perejil fresco.</p>
 <p><strong>Paso 10:</strong> Sirve con couscous o pan khobz.</p>

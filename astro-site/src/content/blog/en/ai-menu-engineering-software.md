@@ -2,7 +2,7 @@
 title: "AI Menu Engineering Software: How Artificial Intelligence Optimizes Restaurant Menus"
 description: "Your restaurant is bustling. Every table is full, the kitchen is humming, and guests seem happy. Yet at the end of the month, your profit margins are…"
 pubDate: 2026-03-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-chef-pro
 lang: en
 wpId: 3241
@@ -61,6 +61,9 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p>Meanwhile, their fish tacos—a simple preparation using local catch—were a &#8220;Star&#8221; with 22% food costs and high popularity.</p>
 <p><strong>The Changes:</strong> The restaurant eliminated 18 underperforming dishes, expanded the fish taco section with three variations, and introduced dynamic pricing that adjusted based on daily market fish prices.</p>
 <p><strong>The Results:</strong> Menu size reduced by 35%, kitchen efficiency improved, food waste dropped by 30%, and profit margins increased from 6% to 11%.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: Excel financial plan, DOCX and opening checklist.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-menu-engineering-software" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Tapas Bar for €35</a></aside>
+
 <h3>Case Study 3: Urban Vegan Kitchen &#8211; Austin, TX</h3>
 <p>This plant-based restaurant struggled with customer perception that vegan food should be inexpensive, leading to underpriced menu items and poor margins.</p>
 <p><strong>The Analysis:</strong> Menu engineering revealed that their &#8220;Plowhorses&#8221;—highly popular but underpriced items—were dragging down overall profitability. Their jackfruit carnitas tacos, for example, sold 150 units per week but at a price point that generated only 8% gross profit.</p>
@@ -175,6 +178,9 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p>Wonder what would happen if you raised prices by 10% or removed a popular but unprofitable item? AI software can simulate these scenarios and show projected impacts on revenue and profit before you make the change.</p>
 <h3>5. Time Savings</h3>
 <p>Manual menu engineering for a 50-item menu might take 8-12 hours of analysis. AI software reduces this to minutes, allowing you to focus on implementation rather than calculation.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Casual Restaurant</h3><p class="mt-2 text-muted-foreground">Shift checklists, opening, closing, and station tasks in pro format.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-menu-engineering-software" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Casual Restaurant for €14</a></aside>
+
 <h3>6. Continuous Learning</h3>
 <p>The AI learns from your specific restaurant patterns—what works in your market, with your customers, at your price point. Over time, recommendations become increasingly tailored and accurate.</p>
 <p></p>
@@ -266,6 +272,9 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p>Most restaurants see measurable improvements within 30-60 days of implementing menu engineering recommendations. Quick wins often come from repositioning puzzles and adjusting prices on plowhorses. Long-term benefits compound as you continuously optimize.</p>
 <h3>Do I need to be tech-savvy to use menu engineering software?</h3>
 <p>Modern AI menu engineering software is designed for restaurant operators, not data scientists. AI Chef Pro features an intuitive dashboard that translates complex analytics into plain-language recommendations. Most users are comfortable with the platform after a single training session.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Pastry Shop / Bakery</h3><p class="mt-2 text-muted-foreground">Production, storage, display case, and merchandising.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-menu-engineering-software" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Pastry Shop / Bakery for €12</a></aside>
+
 <h3>Can menu engineering work for small restaurants or food trucks?</h3>
 <p>Absolutely! In fact, small operations often see the fastest results because they can implement changes quickly without corporate approval processes. Food trucks particularly benefit from the agility to adjust menus based on real-time data about what&#8217;s selling at different locations.</p>
 <h3>What if my &#8220;Dogs&#8221; are items the chef loves or that have sentimental value?</h3>

@@ -2,7 +2,7 @@
 title: "Recipe Cost Calculator: How to Price Every Dish for Maximum Profit"
 description: "The success of any restaurant hinges on one fundamental truth: you cannot manage what you cannot measure. Yet shockingly, most restaurant operators cannot…"
 pubDate: 2026-03-28
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-in-gastronomy
 lang: en
 wpId: 3313
@@ -68,6 +68,9 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <li>Cost per pound: $85.00 ÷ 40 = $2.125 per pound</li>
 <li>If your recipe uses 8 ounces (0.5 lb): $2.125 × 0.5 = $1.0625</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup and teardown, mobile HACCP, permits and events.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=recipe-cost-calculator-pricing-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Food Truck for €12</a></aside>
+
 <h3>Step 5: Multiply by Recipe Quantity</h3>
 <p>Apply the per-unit cost to your recipe quantities:</p>
 <div class="table-scroll"><table style="width:100%;border-collapse:collapse;margin:24px 0;">
@@ -268,6 +271,9 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 </tbody>
 </table></div>
 <p>With a food cost per portion of $7.32, you can now determine appropriate <a href="https://aichef.pro/en/blog/ai-menu-pricing-strategy">menu pricing</a> based on your target food cost percentage.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Private Chef</h3><p class="mt-2 text-muted-foreground">At-home showcooking and events, with 11 deliverables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=recipe-cost-calculator-pricing-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Private Chef for €45</a></aside>
+
 <h2>Recipe Cost Calculator Formula</h2>
 <p>Understanding the core formulas enables you to make strategic pricing decisions and analyze menu profitability with confidence.</p>
 <h3>Food Cost Percentage Formula</h3>
@@ -399,6 +405,9 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <p><strong>Food Cost Percentage Approach</strong>: Price dishes to achieve a target FC% across the menu. This ensures consistency but may undervalue high-contribution items.<br />
 <strong>Contribution Margin Approach</strong>: Price dishes based on absolute dollar contribution to cover labor, overhead, and profit. This maximizes total profitability but may result in inconsistent FC% across items.<br />
 <strong>Recommended Strategy</strong>: Use a hybrid approach. Target 28-35% FC% as a baseline, but adjust pricing to maximize contribution margin on high-volume items. Your goal is total profit, not percentage compliance.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Guide: Japanese Restaurant</h3><p class="mt-2 text-muted-foreground">60 seats, the full roadmap to open a Japanese restaurant in Spain.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=recipe-cost-calculator-pricing-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Guide: Japanese Restaurant for €65</a></aside>
+
 <h3>When to Price Above Standard Markup</h3>
 <p>Some items warrant premium pricing beyond standard food cost formulas:</p>
 <ul>

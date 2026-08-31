@@ -2,7 +2,7 @@
 title: "Microgreens y Cultivos Indoor con IA: Guía Completa para Restaurantes Profesionales"
 description: "Los microgreens han dejado de ser una simple tendencia gastronómica para convertirse en un pilar fundamental de la cocina profesional contemporánea. Estos…"
 pubDate: 2026-01-16
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/microgreens-restaurante-indoor-ai-1.jpeg
 imageAlt: "Microgreens y Cultivos Indoor con IA: Guía Completa para Restaurantes Profesionales"
@@ -163,6 +163,8 @@ wpId: 2160
 <p class="wp-block-paragraph">La convergencia entre agricultura indoor e inteligencia artificial está creando sistemas de cultivo que antes parecían ciencia ficción. Estos sistemas utilizan sensores IoT, procesamiento de datos en tiempo real, visión por computadora y algoritmos de <a href="https://aichef.pro/blog/aprendizaje-automatico-machine-learning">aprendizaje automático</a> para optimizar cada aspecto del proceso de cultivo.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=microgreens-ia-restaurantes-cultivo-indoor" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 <h3 class="wp-block-heading">Componentes de un Sistema de Cultivo con IA</h3>
 
@@ -526,6 +528,8 @@ wpId: 2160
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=microgreens-ia-restaurantes-cultivo-indoor" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 <h3 class="wp-block-heading">Fase 4: Integración con la Operativa de Cocina</h3>
 
 
@@ -756,6 +760,8 @@ wpId: 2160
 <p class="wp-block-paragraph">Con sistemas básicos, se requiere formación mínima que se adquiere en pocas semanas de práctica. Los sistemas con IA eliminan prácticamente esta curva de aprendizaje: el software gestiona automáticamente todos los parámetros y te guía en cada paso, haciendo el proceso accesible para cualquier profesional de cocina sin experiencia agrícola previa.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=microgreens-ia-restaurantes-cultivo-indoor" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
 
 <h3 class="wp-block-heading">¿Cuánto tiempo requiere el mantenimiento diario?</h3>
 

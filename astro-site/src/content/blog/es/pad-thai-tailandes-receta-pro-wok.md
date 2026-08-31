@@ -2,7 +2,7 @@
 title: "Pad Thai Tailandés: Receta Pro de Wok y Equilibrio de Sabores"
 description: "Auténtico pad thai tailandés: fideos de arroz, salsa tamarindo-azúcar de palma, técnicas de wok a fuego alto. Street food Pro en casa."
 pubDate: 2026-04-04
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/pad-thai.jpg
 imageAlt: "Pad Thai Tailandés: Receta Pro de Wok y Equilibrio de Sabores"
@@ -33,6 +33,9 @@ wpId: 3320
 <li>1 cucharada salsa de soja</li>
 <li>1/4 cucharadita pimentón</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pad-thai-tailandes-receta-pro-wok" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
+
 <h3>Para Saltear:</h3>
 <ul>
 <li>2 cucharadas aceite vegetal</li>
@@ -53,11 +56,17 @@ wpId: 3320
 <p><strong>Paso 3:</strong> Calienta el wok a fuego muy alto. Añade aceite.</p>
 <p><strong>Paso 4:</strong> Saltea ajo 30 segundos hasta fragante.</p>
 <p><strong>Paso 5:</strong> Añade tofu y dora 2 minutos.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pad-thai-tailandes-receta-pro-wok" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+
 <p><strong>Paso 6:</strong> Empuja todo a un lado. Añade gambas y cocina 1 minuto.</p>
 <p><strong>Paso 7:</strong> Empuja todo a un lado. Rompe los huevos en el espacio vacío y revuelve rápidamente.</p>
 <p><strong>Paso 8:</strong> Añade fideos escurridos y salsa. Remueve vigorosamente 2 minutos.</p>
 <p><strong>Paso 9:</strong> Añade brotes de soja y cebolletas. Remueve 1 minuto.</p>
 <p><strong>Paso 10:</strong> Sirve inmediatamente con cacahuetes y gajos de limón.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pad-thai-tailandes-receta-pro-wok" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h2>Técnicas Clave</h2>
 <h3>1. Fuego Muy Alto</h3>
 <p>El wok debe estar humeante. Esto carameliza la salsa y da el «wok hei» (sabor del wok).</p>

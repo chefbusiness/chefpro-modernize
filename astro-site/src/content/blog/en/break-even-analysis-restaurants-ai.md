@@ -2,7 +2,7 @@
 title: "Break-Even Analysis for Restaurants with AI"
 description: "Break-Even Analysis for Restaurants: Calculate Your Path to Profitability with AI Every restaurant owner has asked themselves the same critical question…"
 pubDate: 2026-03-05
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-chef-pro
 lang: en
 wpId: 3254
@@ -52,6 +52,9 @@ imageAlt: "Break Even Analysis"
 <li><strong>Step-fixed:</strong> Management salaries that increase with multiple locations, equipment leases triggered by volume thresholds</li>
 <li><strong>Semi-variable fixed:</strong> Utilities with seasonal variation, maintenance costs that increase with equipment age</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Bakery</h3><p class="mt-2 text-muted-foreground">Night shift, sourdough, ovens and display case.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Bakery for €12</a></aside>
+
 <h3>Variable Costs (The Multipliers)</h3>
 <p>Not all sales dollars contribute equally to covering fixed costs. AI analyzes variable costs at the menu item level:</p>
 <ul>
@@ -117,6 +120,9 @@ imageAlt: "Break Even Analysis"
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    CALCULATE YOUR BREAK-EVEN →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use  </p>
 </div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Paella Catering</h3><p class="mt-2 text-muted-foreground">Paella for events: business plan and kit with 11 deliverables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Paella Catering for €45</a></aside>
+
 <h2>Before and After: The AI Break-Even Advantage</h2>
 <p>Here&#8217;s what restaurants achieve by replacing traditional break-even analysis with AI-powered tools:</p>
 <div class="table-scroll"><table style="width:100%; border-collapse: collapse; margin: 30px 0;">
@@ -182,6 +188,9 @@ imageAlt: "Break Even Analysis"
 <p>Accounting break-even occurs when revenue equals expenses on your income statement. Cash-flow break-even occurs when cash inflows match cash outflows. The difference matters because non-cash expenses (depreciation) and timing differences (accounts payable, inventory builds) can create situations where you&#8217;re accounting-profitable but cash-negative—or vice versa.</p>
 <h3>How accurate are AI break-even projections?</h3>
 <p>AI Chef Pro&#8217;s break-even projections achieve 94% accuracy when compared against actual results over 6-month periods. This compares to 67% accuracy for traditional manual calculations. The AI improves accuracy over time as it learns your operation&#8217;s specific patterns and seasonality.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Staff Scheduling &amp; Management Kit</h3><p class="mt-2 text-muted-foreground">Shift schedules, overtime, labor cost, onboarding, holidays, and team performance reviews.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Staff Scheduling &amp; Management Kit for €14</a></aside>
+
 <h3>Should I use break-even analysis for individual menu items?</h3>
 <p>Absolutely. Item-level break-even analysis reveals which dishes contribute meaningfully to covering fixed costs and which merely generate revenue without profit. This analysis often surprises operators—popular items sometimes have such low contribution margins that they actually delay reaching overall break-even.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">

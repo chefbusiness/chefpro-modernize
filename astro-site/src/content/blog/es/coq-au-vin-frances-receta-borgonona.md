@@ -2,7 +2,7 @@
 title: "Coq au Vin Francés: Receta Borgoñona Paso a Paso Pro"
 description: "La auténtica receta francesa de coq au vin: pollo cocido lentamente en vino tinto de Borgoña. Técnica Pro para salsa espejada y carne tierna."
 pubDate: 2026-03-24
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/coq-au-vin.jpg
 imageAlt: "Coq au Vin Francés: Receta Borgoñona Paso a Paso Pro"
@@ -34,6 +34,9 @@ wpId: 3297
 <li>Sal y pimienta negra</li>
 <li>2 cucharadas coñac (opcional, para flambear)</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coq-au-vin-frances-receta-borgonona" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2>Preparación Paso a Paso</h2>
 <h3>Fase 1: Preparar Ingredientes (15 min)</h3>
 <p><strong>Paso 1:</strong> Sazona el pollo con sal y pimienta. Deja reposar 15 minutos a temperatura ambiente.</p>
@@ -48,6 +51,9 @@ wpId: 3297
 <h3>Fase 4: Cocción Lenta (1.5 horas)</h3>
 <p><strong>Paso 8:</strong> Vuelve a colocar el pollo y bacon. Añade el ramillete garni.</p>
 <p><strong>Paso 9:</strong> Tapa y cocina a fuego bajo 1 hora, o en horno 160°C (320°F).</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coq-au-vin-frances-receta-borgonona" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 <h3>Fase 5: Guarniciones y Final (20 min)</h3>
 <p><strong>Paso 10:</strong> En una sartén aparte, dora las cebollitas perlas en mantequilla 10 minutos.</p>
 <p><strong>Paso 11:</strong> Añade champiñones y saltea 5 minutos. Reserva.</p>
@@ -63,6 +69,9 @@ wpId: 3297
 <p>El pollo necesita tiempo para que los tejidos conectivos se transformen en gelatina. No aceleres el proceso.</p>
 <h2>Maridaje</h2>
 <p>Sirve con el mismo vino usado para cocinar: un Borgoña Pinot Noir de cuerpo medio.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coq-au-vin-frances-receta-borgonona" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

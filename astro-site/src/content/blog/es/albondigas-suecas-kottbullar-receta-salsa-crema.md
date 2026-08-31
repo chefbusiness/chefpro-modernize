@@ -2,7 +2,7 @@
 title: "Albóndigas Suecas (Köttbullar): Receta Pro con Salsa de Crema"
 description: "Auténticas albóndigas suecas: mezcla de ternera y cerdo, cebolla caramelizada, salsa de crema. Técnica Pro tradicional escandinava."
 pubDate: 2026-05-26
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/swedish-meatballs.jpg
 imageAlt: "Albóndigas Suecas (Köttbullar): Receta Pro con Salsa de Crema"
@@ -34,6 +34,9 @@ wpId: 3565
 <li>1/4 cucharadita nuez moscada</li>
 <li>2 cucharadas mantequilla para freír</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=albondigas-suecas-kottbullar-receta-salsa-crema" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h3>Para la Salsa:</h3>
 <ul>
 <li>2 cucharadas mantequilla</li>
@@ -62,6 +65,9 @@ wpId: 3565
 <p><strong>Paso 6:</strong> Calienta mantequilla en sartén grande a fuego medio-alto.</p>
 <p><strong>Paso 7:</strong> Dora albóndigas en tandas, 8-10 minutos, girando para dorar uniformemente. No apretar.</p>
 <p><strong>Paso 8:</strong> Reserva albóndigas calientes. Mantén el fondo de la sartén.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=albondigas-suecas-kottbullar-receta-salsa-crema" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 <h3>Fase 3: Salsa (10 min)</h3>
 <p><strong>Paso 9:</strong> En la misma sartén, derrite 2 cucharadas de mantequilla.</p>
 <p><strong>Paso 10:</strong> Añade harina. Cocina 1 minuto formando roux.</p>
@@ -76,6 +82,9 @@ wpId: 3565
 <p>La cebolla caramelizada aporta dulzor y umami. No usar cruda.</p>
 <h3>3. Fondo de Sartén</h3>
 <p>Los jugos caramelizados de las albóndigas son el secreto de la salsa. No limpiar la sartén.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=albondigas-suecas-kottbullar-receta-salsa-crema" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

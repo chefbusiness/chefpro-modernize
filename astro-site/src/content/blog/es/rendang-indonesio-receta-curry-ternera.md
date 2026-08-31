@@ -2,7 +2,7 @@
 title: "Rendang Indonesio: Receta Pro del Curry Seco de Ternera"
 description: "Auténtico rendang indonesio: ternera, leche de coco, especias rempah. Técnica Pro de 4 horas para el mejor curry del mundo."
 pubDate: 2026-04-28
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/rendang-indonesio.jpg
 imageAlt: "Rendang Indonesio: Receta Pro del Curry Seco de Ternera"
@@ -34,6 +34,9 @@ wpId: 3549
 <li>1/4 cucharadita nuez moscada</li>
 <li>3 cucharadas aceite vegetal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rendang-indonesio-receta-curry-ternera" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
+
 <h3>Para el Curry:</h3>
 <ul>
 <li>1kg falda de ternera, en cubos de 4cm</li>
@@ -53,6 +56,9 @@ wpId: 3549
 <h3>Fase 2: Cocinar la Pasta (15 min)</h3>
 <p><strong>Paso 3:</strong> Calienta 3 cucharadas de aceite en wok o cazuela grande.</p>
 <p><strong>Paso 4:</strong> Sofríe la pasta de especias (rempah) 10-15 minutos hasta que el aceite se separe y esté muy aromática.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hotel Completo</h3><p class="mt-2 text-muted-foreground">F&amp;B, housekeeping, multi-punto de venta.</p><a href="/kit-tareas-hotel?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rendang-indonesio-receta-curry-ternera" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hotel Completo por €18,50</a></aside>
+
 <h3>Fase 3: Cocción Lenta (3-4h)</h3>
 <p><strong>Paso 5:</strong> Añade la leche de coco ligera, laurel, hojas de kaffir lime. Lleva a ebullición.</p>
 <p><strong>Paso 6:</strong> Añade la ternera. Cocina a fuego medio-bajo 1 hora, removiendo ocasionalmente.</p>
@@ -67,6 +73,9 @@ wpId: 3549
 <p>El rendang auténtico es «seco». La salsa debe reducirse hasta cubrir la carne oscura y espesa.</p>
 <h3>2. Fuego Bajo Constante</h3>
 <p>Remover frecuentemente en las últimas horas para evitar que las grasas se quemen.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rendang-indonesio-receta-curry-ternera" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

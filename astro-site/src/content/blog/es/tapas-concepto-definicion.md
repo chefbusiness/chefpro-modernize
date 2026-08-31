@@ -2,7 +2,7 @@
 title: "Tapas: Concepto y Definición"
 description: "Descubre qué son las tapas: origen con Alfonso X el Sabio, historia, tapas clásicas (tortilla, bravas, croquetas), regionalismo español y cultura del tapeo…"
 pubDate: 2026-03-13
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/tapas-featured.jpg
 imageAlt: "Tapas: Concepto y Definición"
@@ -44,6 +44,9 @@ wpId: 3216
 <li><strong>Siglo XX:</strong> La tradición se expande por toda España, adaptándose a ingredientes locales.</li>
 <li><strong>Actualidad:</strong> Fenómeno gastronómico global; ciudades como San Sebastián y Madrid son destinos tapaeros internacionales.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tapas-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h2>Las Tapas Más Clásicas de España</h2>
 <h3>Tortilla de Patatas</h3>
 <p>La reina indiscutible. Tradicionalmente con cebolla (aunque hay debate eterno con o sin). Se sirve fría o a temperatura ambiente, en porciones triangulares.</p>
@@ -134,6 +137,9 @@ wpId: 3216
 </tr>
 </tbody>
 </table></div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tapas-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 <h2>La Cultura del Tapeo</h2>
 <h3>El Ritual Social</h3>
 <p>El tapeo no es solo comer; es un acto social con reglas implícitas:</p>
@@ -165,6 +171,9 @@ wpId: 3216
 <p><strong>¿Las tapas son vegetarianas?</strong><br /> Muchas sí (tortilla, bravas, berenjenas, pimientos), pero la tradición es muy carnívora (jamón, embutidos, callos).</p>
 <p><strong>¿Cuál es la mejor ciudad para tapear?</strong><br /> Subjetivo: San Sebastián (calidad), Madrid (variedad), Granada (tapas gratis), Sevilla (tradición), Bilbao (pintxos).</p>
 <p><strong>¿Es caro tapear?</strong><br /> Depende de la zona y el tipo. En Andalucía puede ser gratis (con la bebida). En Madrid/San Sebastián, 15-30€ por persona.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tapas-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h2>Conclusión</h2>
 <p>Las <strong>tapas</strong> representan la esencia de la cultura española: generosidad, sociabilidad, diversidad y disfrute de la vida. Desde su posible origen en la sabiduría médica de Alfonso X hasta su consagración como fenómeno gastronómico global, las tapas han demostrado que la mejor comida es aquella que se comparte.</p>
 <p>El tapeo es democrático: une a personas de todas las clases sociales alrededor de una barra, genera conversaciones entre desconocidos, y convierte cada salida en una aventura culinaria. No hay dos tapeos iguales, y cada bar aporta su personalidad a la experiencia.</p>

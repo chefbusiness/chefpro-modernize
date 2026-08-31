@@ -2,7 +2,7 @@
 title: "Fondo Blanco: Concepto y Definición"
 description: "Caldo básico sin colorear para sopas y salsas blancas."
 pubDate: 2026-02-19
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/fondo-blanco-destacada.jpg
 imageAlt: "Fondo blanco claro en olla"
@@ -35,6 +35,9 @@ wpId: 2733
 <p>Lo primero es lavar bien los huesos bajo agua fría y, si tienen restos de sangre o grasa visible, darles un escaldado rápido: los sumerges en agua hirviendo un par de minutos, retiras la espuma que sube y los escurres. Este blanqueado inicial evita que el fondo se enturbie durante la cocción.</p>
 <h3>2. Arranque en frío</h3>
 <p>Coloca los huesos ya limpios en una olla grande, cúbrelos con agua fría y enciende el fuego a temperatura media-baja. Aquí empieza la magia: según se va calentando el agua, aparecerá espuma grisácea en la superficie. Esa espuma son impurezas y proteínas coaguladas. Hay que retirarla con una espumadera de forma constante durante los primeros 30-40 minutos de cocción. No te saltes este paso si quieres un fondo blanco cristalino.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fondo-blanco-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 <h3>3. Añadido de verduras y aromáticos</h3>
 <p>Cuando deje de subir espuma y el caldo empiece a hervir suavemente, baja el fuego al mínimo (que apenas burbujee) y añade la mirepoix de verduras y el bouquet garni. A partir de este momento, la cocción será lenta y sin sobresaltos. Nada de hervores violentos: emulsionan la grasa y enturbian el resultado.</p>
 <h3>4. Cocción prolongada</h3>
@@ -99,6 +102,9 @@ wpId: 2733
 <li><strong>Guarniciones de verduras glaseadas:</strong> zanahorias, nabos o cebollitas glaseadas en fondo blanco con un toque de mantequilla se convierten en guarnición de alto nivel.</li>
 <li><strong>Pochados y escalfados:</strong> pescados blancos, pechugas de ave o incluso huevos escalfados en fondo blanco suave ganan en matices sin perder su identidad.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fondo-blanco-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 <h2>Cómo clarificar un fondo blanco</h2>
 <p>Hay ocasiones en que, a pesar de todos los cuidados, el fondo blanco no queda tan nítido como esperábamos. No pasa nada: clarificar es un recurso técnico sencillo que te permite recuperar una transparencia casi absoluta. Se utiliza sobre todo cuando el fondo va a ser protagonista visual del plato (una gelatina, un consomé blanco o una presentación especialmente limpia).</p>
 <p>El método clásico de clarificación consiste en crear una “balsa” de claras de huevo que atrapa las impurezas. Para un litro de fondo blanco frío, necesitas:</p>
@@ -127,6 +133,9 @@ wpId: 2733
 <p>La concentración y el cuerpo. Un fondo blanco profesional utiliza el doble o triple de huesos por litro de agua y se cocina durante más horas, extrayendo más gelatina y colágeno. Un caldo casero es más ligero, usa más carne que huesos y suele cocinarse en menos de dos horas.</p>
 <h3>¿Se puede hacer fondo blanco vegetal?</h3>
 <p>Por supuesto. Aunque técnicamente no es un fondo blanco en sentido estricto (al no llevar huesos no tendrá gelatina), puedes obtener un caldo vegetal claro y neutro usando mirepoix, hinojo, chirivía y setas frescas con cocción de 45-60 minutos. Para veloutés vegetales es una alternativa más que digna.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fondo-blanco-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion">Fondo oscuro: concepto y definición</a></li>

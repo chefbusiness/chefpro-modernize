@@ -2,7 +2,7 @@
 title: "Borscht Ucraniano: Sopa de Remolacha Roja Receta Pro"
 description: "Auténtico borscht ucraniano: remolacha, carne de ternera, repollo y crema agria. Técnica Pro para el color rojo intenso y sabor reconfortante."
 pubDate: 2026-04-09
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/borscht.jpg
 imageAlt: "Borscht Ucraniano: Sopa de Remolacha Roja Receta Pro"
@@ -28,6 +28,9 @@ wpId: 3344
 <li>2 hojas de laurel</li>
 <li>5 granos de pimienta negra</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=borscht-ucraniano-sopa-remolacha-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
+
 <h3>Para la Sopa:</h3>
 <ul>
 <li>400g remolachas, peladas y en cubos</li>
@@ -55,12 +58,18 @@ wpId: 3344
 <p><strong>Paso 3:</strong> Retira la carne. Cuela el caldo. Desmenuza la carne.</p>
 <h3>Fase 2: Sofrito de Verduras (20 min)</h3>
 <p><strong>Paso 4:</strong> Ralla una remolacha y una zanahoria finamente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=borscht-ucraniano-sopa-remolacha-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 <p><strong>Paso 5:</strong> Sofríe en aceite 10 minutos. Añade pasta de tomate. Cocina 5 minutos más.</p>
 <h3>Fase 3: Cocinar la Sopa (30 min)</h3>
 <p><strong>Paso 6:</strong> En el caldo, hierve las remolachas restantes 15 minutos.</p>
 <p><strong>Paso 7:</strong> Añade zanahorias, patatas. Cocina 10 minutos.</p>
 <p><strong>Paso 8:</strong> Incorpora el repollo y el sofrito. Cocina 10 minutos.</p>
 <p><strong>Paso 9:</strong> Añade la carne desmenuzada, vinagre, azúcar, sal y pimienta.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=borscht-ucraniano-sopa-remolacha-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 <h3>Fase 4: Servicio</h3>
 <p><strong>Paso 10:</strong> Sirve caliente con una cucharada de crema agria y eneldo.</p>
 <h2>Técnicas Clave</h2>

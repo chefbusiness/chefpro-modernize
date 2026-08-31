@@ -2,7 +2,7 @@
 title: "Emulsión: Concepto y Definición"
 description: "Descubre qué es una emulsión: mezcla estable de líquidos inmiscibles como aceite y agua. Ciencia de emulsionantes, tipos O/W y W/O, técnicas paso a paso y…"
 pubDate: 2026-03-18
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/emulsion-featured.jpg
 imageAlt: "Emulsión: Concepto y Definición"
@@ -57,6 +57,9 @@ wpId: 3234
 <li>El <strong>aceite es apolar</strong> (carga eléctrica neutra).</li>
 <li>Esta diferencia hace que se repelan mutuamente.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h3>El Papel del Emulsionante</h3>
 <p>Los emulsionantes son moléculas <strong>anfipáticas</strong> (tienen dos extremos diferentes):</p>
 <ul>
@@ -120,6 +123,9 @@ wpId: 3234
 <p><strong>Paso 7: Rectificar</strong><br /> Probar y ajustar de sal, pimienta y acidez.</p>
 <h3>Temperatura Óptima</h3>
 <p>La temperatura ideal para formar emulsiones es entre <strong>20-25°C</strong>. Por debajo de 15°C, los aceites se vuelven viscosos y dificultan la dispersión; por encima de 30°C, las yemas pueden cocinarse prematuramente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h2>Problemas Comunes y Soluciones</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -177,6 +183,9 @@ wpId: 3234
 <p><strong>¿Cuánto dura una emulsión casera?</strong><br /> Las emulsiones con yema de huevo duran 2-3 días refrigeradas. Las emulsiones con mostaza o emulsionantes vegetales pueden durar hasta una semana. La estabilidad depende del pH, temperatura y sanidad.</p>
 <p><strong>¿Por qué usar mostaza en las emulsiones?</strong><br /> La mostaza contiene mucílagos (polisacáridos) que actúan como agentes emulsionantes secundarios. Además de su sabor, ayuda a estabilizar la emulsión y prevenir que se corte fácilmente.</p>
 <p><strong>¿Puedo emulsionar con aceite de oliva virgen extra?</strong><br /> Sí, pero con moderación. El AOVE tiene compuestos polifenólicos que pueden hacer la emulsión amarga si se usa en exceso. Se recomienda usar máximo 30% AOVE y 70% aceite neutro.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>emulsión</strong> es una técnica que ejemplifica perfectamente la intersección entre ciencia y arte culinario. Comprender los principios de tensión superficial, la función de los emulsionantes y las condiciones óptimas de temperatura permite al cocinero crear salsas consistentes, recuperar preparaciones fallidas y explorar nuevas fronteras en la gastronomía moderna.</p>
 <p>Desde la humilde mayonesa casera hasta las complejas espumas de la cocina molecular, las emulsiones siguen siendo una demostración de cómo la comprensión científica puede liberar la creatividad culinaria. Con práctica y atención a los detalles, cualquier cocinero puede dominar esta técnica fundamental.</p>

@@ -2,7 +2,7 @@
 title: "Menú Semanal para Restaurante: Plantilla y Rotación con IA"
 description: "Crea el menú semanal de tu restaurante con IA: menús cíclicos de 4 semanas, plantilla lista para usar y escandallo bajo control. Empieza por 10 € al mes, sin permanencia."
 pubDate: 2026-01-26
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-crear-menus-semanales-aichefpro-1.jpeg
 imageAlt: "IA para Crear Menús Semanales: Guía Definitiva para Profesionales de Hostelería"
@@ -55,6 +55,8 @@ Esta tabla te da una visión rápida para que decidas según tu tipo de servicio
 Con un ciclo de 4 semanas necesitas diseñar unos **20-28 primeros y otros tantos segundos**, además de postres. Parece una barbaridad, pero muchos platos comparten bases, guarniciones y técnicas. Aquí es donde la IA te ayuda a cruzar ingredientes para maximizar el aprovechamiento sin que el menú parezca un refrito. Por ejemplo, una misma salsa de tomate casera puede aparecer en albóndigas (semana 1), en pescado a la marinera (semana 3) y como base de un arroz (semana 4). La clave está en diseñar la parrilla de modo que las categorías roten con lógica: una semana los primeros de cuchara son legumbres, otra cremas y otra arroces; los segundos alternan pescado, carne blanca y carne roja, con una opción vegetariana fija cada semana para cubrir todas las demandas.
 
 En colectividades, la rotación de 4 semanas es casi obligatoria para cumplir con las recomendaciones nutricionales oficiales. Aquí las fichas técnicas de cada plato incluyen alérgenos, gramajes por ración y valoración nutricional. La IA puede generar estas fichas automáticamente y enlazarlas con la parrilla semanal, de modo que un cambio de último minuto (por ejemplo, sustituir merluza por panga) actualice alérgenos y costes en todas las semanas del ciclo. Esto evita errores de etiquetado y facilita la comunicación con padres, tutores o responsables de planta.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-crear-menus-semanales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
 
 ## Equilibrio nutricional en colectividades y menú del día
 
@@ -110,6 +112,8 @@ En un ciclo de 4 semanas, los ingredientes puente son la columna vertebral del a
 
 La IA cruza estos datos y sugiere automáticamente qué ingredientes se repiten y cómo enlazar las partidas para que el desperdicio sea mínimo. También calcula la cantidad exacta a comprar para evitar que un ingrediente puente se acabe a mitad de ciclo.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-crear-menus-semanales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 ### Orden de partidas y producción diaria
 
 Para que el batch cooking no se convierta en un caos, necesitas un orden de producción ligado al ciclo semanal. Un esquema tipo para una cocina de menú del día con ciclo de 4 semanas podría ser:
@@ -161,6 +165,8 @@ En colectividades, el control de merma es aún más fino porque el censo de come
 <figure class="wp-block-image size-full has-custom-border"><a href="https://gastrolocal.pro" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1152" height="1354" data-attachment-id="1779" data-orig-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" data-orig-size="1152,1354" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gastrolocal-aichefpro" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" src="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" alt="GastroLocal.pro gestión y optimización de las fichas de google business profile para restaurantes y negocios de hostelería" class="has-border-color has-vivid-green-cyan-border-color wp-image-1779" /></a></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-crear-menus-semanales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
 
 ## Cómo generar tu menú semanal con IA paso a paso
 

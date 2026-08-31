@@ -2,7 +2,7 @@
 title: "Salsas madre de la cocina: la guía completa"
 description: "Las salsas madre de la cocina son preparaciones base de la cocina clásica francesa a partir de las cuales se elaboran, mediante adiciones y modificaciones…"
 pubDate: 2026-05-29
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/pillar-salsas-destacada.jpg
 imageAlt: "Las cinco salsas madre de la cocina"
@@ -28,6 +28,9 @@ wpId: 3864
 <h2>Las 5 salsas madre una a una</h2>
 <h3>Salsa bechamel</h3>
 <p>La <a href="https://aichef.pro/blog/bechamel-concepto-y-definicion">bechamel</a> es la más doméstica y la más camaleónica. Nace de un roux blanco al que se incorpora leche caliente poco a poco mientras se bate sin pausa. El resultado es una salsa blanca, sedosa y de sabor lácteo suave, pensada para ser el lienzo de infinitas variantes. Con un queso gruyer rallado se convierte en salsa Mornay; con cebolla claveteada y nuez moscada, en la clásica salsa para croquetas cremosas. Es la reina de los gratinados, las lasañas y los platos de verduras al horno.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsas-madre-cocina-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+
 <h3>Salsa velouté</h3>
 <p>La <a href="https://aichef.pro/blog/salsa-veloute-concepto-y-definicion">velouté</a> sustituye la leche por un fondo claro: de ave, de ternera blanca o de pescado, según el destino del plato. El roux sigue siendo blanco o apenas rubio, y la textura final es aterciopelada, de ahí su nombre. Es la base de salsas compuestas como la alemana (velouté de ternera ligada con yemas y crema) o la suprema (velouté de ave con nata y mantequilla). Funciona de maravilla con carnes blancas, pescados escalfados y verduras delicadas.</p>
 <h3>Salsa española o espagnole</h3>
@@ -91,6 +94,9 @@ wpId: 3864
 </tr>
 </tbody>
 </table></div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsas-madre-cocina-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h2>Salsas derivadas: cuando la base se viste de gala</h2>
 <p>El verdadero poder de las salsas madre se revela en sus hijas. Una salsa derivada es cualquier preparación que toma una salsa madre y la modifica añadiendo ingredientes que le dan una personalidad nueva sin alterar su estructura fundamental. Piensa en la <strong>salsa Mornay</strong>: no es más que una bechamel a la que incorporas queso rallado y un toque de mostaza, pero en la carta se convierte en el alma de un gratinado de coliflor que de otro modo sería una simple verdura hervida.</p>
 <p>El catálogo es casi infinito. De la velouté salen la salsa de champiñones, la de alcaparras o la de eneldo para salmón. De la española, el demi-glace, y del demi-glace salen la salsa al vino tinto, la bordelesa con tuétano, la cazadora con setas, la Perigourdine con trufa. De la holandesa, como hemos visto, el bearnés y sus variantes. Y de la de tomate, todo el universo de salsas italianas para pasta y pizza. Cada ramificación es un plato nuevo que apenas lleva unos minutos extra de elaboración si tienes la salsa madre lista.</p>
@@ -113,6 +119,9 @@ wpId: 3864
 <p>La bechamel y la velouté no se comportan bien en congelación porque tienden a separarse al descongelar debido al roux y los lácteos. La española, en cambio, congela perfectamente gracias a su base grasa y su baja proporción de leche. La holandesa no admite congelación; la salsa de tomate sí, sin problemas, y de hecho mejora con el reposo.</p>
 <h3>¿Por qué la salsa holandesa se considera madre si no lleva roux?</h3>
 <p>Porque el criterio de Escoffier no era el espesante, sino la capacidad de la salsa para generar un árbol genealógico de derivadas. La holandesa cumple sobradamente: a partir de ella se elaboran el bearnés, la muselina, la maltaise y otras emulsiones calientes que son pilares del recetario clásico.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsas-madre-cocina-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Roux: concepto y definición</a></li>

@@ -2,7 +2,7 @@
 title: "Responder Reseñas Negativas de Restaurante: Plantillas IA"
 description: "Aprende a responder reseñas negativas y positivas de tu restaurante con plantillas, ejemplos antes/después con IA y su impacto en las reservas."
 pubDate: 2025-02-28
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IA-en-la-Gestion-de-Criticas-y-Reputacion-de-Restaurantes.jpg
 imageAlt: "IA en la Gestión de Críticas y Reputación de Restaurantes"
@@ -50,6 +50,8 @@ Para que te hagas una idea orientativa, aquí tienes una tabla con el impacto pr
 
 ## 2. Anatomía de una respuesta impecable a una reseña negativa
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-criticas-y-reputacion-de-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 ### Cómo responder reseñas negativas restaurante: los 5 pasos que nunca fallan
 
 Responder bien una crítica no es cuestión de suerte; es un proceso que puedes sistematizar. Estos son los cinco pasos que aplico en consultoría y que cualquier hostelero puede ejecutar desde hoy:
@@ -92,6 +94,8 @@ Incluso con buena intención, hay meteduras de pata que empeoran la situación. 
 
 ## 4. Plantillas y ejemplos antes/después con IA para responder reseñas negativas restaurante
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-criticas-y-reputacion-de-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 ### Plantillas para responder reseñas negativas restaurante (ejemplos orientativos mejorados con IA)
 
 Una de las grandes ventajas de la IA es que te ayuda a redactar borradores profesionales en segundos, pero el toque humano lo pones tú. Aquí tienes cuatro casos típicos con una respuesta floja (la que muchos hosteleros darían con prisas) y una respuesta profesional trabajada con ayuda de IA, lista para que la personalices.
@@ -120,6 +124,8 @@ Eso sí, evita el «Gracias por tu visita, vuelva pronto» automático. Menciona
 <figure><img loading="lazy" decoding="async" data-attachment-id="941" data-orig-file="/blog-assets/2025/02/Analisis-de-sentimientos-en-resenas.jpg" data-orig-size="768,1344" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Analisis-de-sentimientos-en-resenas" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/02/Analisis-de-sentimientos-en-resenas.jpg" src="/blog-assets/2025/02/Analisis-de-sentimientos-en-resenas.jpg" alt="Análisis de sentimientos en reseñas" title="Análisis de sentimientos en reseñas" width="585" height="1024" class="aligncenter size-large wp-image-941" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-criticas-y-reputacion-de-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
 
 ## 6. Cómo la IA acelera la gestión de reputación online restaurante sin que parezca un robot
 

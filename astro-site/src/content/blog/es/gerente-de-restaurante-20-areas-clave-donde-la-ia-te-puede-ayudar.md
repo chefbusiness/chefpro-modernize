@@ -2,7 +2,7 @@
 title: "Gerente de Restaurante: Funciones + 20 Áreas Clave con IA"
 description: "Descubre las funciones del gerente de restaurante: 20 áreas de gestión organizadas por bloques, cada una con una acción concreta de IA y KPIs de 2026."
 pubDate: 2026-02-07
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/gerente-de-restaurante-ia-gestion-aichefpro-1.jpeg
 imageAlt: "Gerente de Restaurante: 20 Áreas Clave donde la IA te Puede Ayudar a Mejorar la Gestión de tu Negocio"
@@ -67,6 +67,8 @@ En este artículo te muestro las 20 funciones clásicas del gerente de restauran
 ### 1. Control del food cost y escandallos
 El gerente debe saber exactamente cuánto le cuesta cada plato. Con la inflación de materias primas, actualizar escandallos a mano es lento y propenso a errores. Un agente de IA especializado carga precios actualizados de proveedores y recalcula la ficha de cada plato cada semana. El gerente recibe una alerta si algún coste se dispara y puede actuar antes de que el margen se erosione. Así se mantiene el food cost dentro del rango saludable del 28-32 %.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 ### 2. Gestión de inventario y compras
 Saber lo que tienes en cámara y lo que necesitas pedir suele ocupar horas de recuento y llamadas. Con un agente de inventario, el sistema cruza el stock real con las previsiones de ventas, la estacionalidad y las mermas. El lunes por la mañana, el gerente recibe una propuesta de pedido con cantidades ajustadas, comparativa de precios entre proveedores y un recordatorio de los productos a punto de caducar.
 
@@ -107,6 +109,8 @@ Más allá de la retención, un buen gerente quiere un equipo motivado. La IA pe
 
 ### 11. Cuadro de mando y KPIs
 El gerente no puede gestionar lo que no mide. Un agente financiero recopila cifras de TPV, facturas, nóminas y reseñas, y las presenta en un dashboard claro cada día. Food cost, labor cost, ticket medio, ocupación de mesas, margen neto… todo actualizado. Para entender qué indicadores seguir en 2026, visita [los KPIs y métricas de rentabilidad del restaurante en 2026](https://aichef.pro/blog/rentabilidad-restaurante-kpis-metricas-2026).
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
 
 ### 12. Previsión de demanda
 Adivinar cuántos comensales vendrán el sábado no es magia: es cruzar el histórico de ventas con el calendario, el clima y los eventos de la zona. La IA hace esa predicción y la ajusta con cada día que pasa. Así el gerente programa personal y pedidos con menos incertidumbre y menos excedentes en cámara.
@@ -150,6 +154,8 @@ El sueño de cualquier gerente es que el cliente sienta que le conocen. Con un h
 | Prime cost (food + labor) | Menor del 60-65 % | Si sube del 65 %, el margen neto peligra. |
 
 Por qué importa cada uno: un food cost desbocado se come tu beneficio; un labor cost mal gestionado indica turnos mal dimensionados; el coste de bebida suele ser un termómetro de hurtos o malos hábitos de barra; el ticket medio refleja si tu oferta convence para gastar más; la rotación golpea la calidad del servicio y eleva costes de formación; el margen de contribución ayuda a decidir qué platos merecen el espacio en carta; y el prime cost es la suma de los dos costes más grandes: si no los controlas, los demás indicadores de nada sirven.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
 
 ## Cómo AI Chef Pro acompaña al gerente
 

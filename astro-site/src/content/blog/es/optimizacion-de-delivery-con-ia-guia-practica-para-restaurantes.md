@@ -2,7 +2,7 @@
 title: "Delivery Rentable en tu Restaurante: Comisiones vs Propio"
 description: "Haz rentable el delivery de tu restaurante: comisiones de agregadores frente a canal propio, empaquetado, menú específico e IA para previsión y precios."
 pubDate: 2025-12-29
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/optimizacion-delivery-con-ia-5.jpeg
 imageAlt: "Optimización de Delivery con IA: Guía Práctica para Restaurantes"
@@ -50,6 +50,8 @@ Para visualizarlo, ponle cifras a un ticket medio de 25 €:
 | Margen resultante antes de gastos fijos | 5,00 €–12,05 € | El 20 %–48 % del ticket antes de cubrir personal y alquiler; el margen neto final baja a un dígito, con riesgo de pérdida si el ticket es bajo |
 
 En la práctica, un pedido de 12 € con comisión del 30 % y packaging barato puede dejarte con un margen bruto de apenas 1,50 €, que no cubre ni el coste de la luz. Por eso la rentabilidad del delivery empieza por entender estos números y no por aceptar todas las condiciones de entrada.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=optimizacion-de-delivery-con-ia-guia-practica-para-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
 
 ## Agregadores vs canal propio: comparativa honesta
 
@@ -100,6 +102,8 @@ La solución es un menú paralelo con ingeniería de margen pensada para el deli
 
 Rediseñar la carta de delivery con estos criterios no es un capricho: es la diferencia entre un pedido de 15 € que te deja 2 € y otro de 22 € que te deja 7 €.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=optimizacion-de-delivery-con-ia-guia-practica-para-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 ## IA para previsión de demanda y precios, la palanca silenciosa
 
 Aquí es donde la inteligencia artificial se convierte en tu mejor aliado para llegar a la rentabilidad real. AI Chef Pro reúne más de 70 agentes de IA culinarios, en 7 idiomas y con español nativo, que te ayudan a anticipar la demanda y a fijar precios con criterio, no a ojo.
@@ -116,6 +120,8 @@ La IA no sustituye tu criterio de chef; te da los datos para que decidas con la 
 " data-large-file="/blog-assets/2025/12/optimizacion-delivery-con-ia-2.jpeg" src="/blog-assets/2025/12/optimizacion-delivery-con-ia-2.jpeg" alt="Optimización de Delivery con IA: Guía Práctica para Restaurantes - AI Chef Pro" class="wp-image-1962" /><figcaption class="wp-element-caption">Optimización de Delivery con IA: Guía Práctica para Restaurantes &#8211; AI Chef Pro</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=optimizacion-de-delivery-con-ia-guia-practica-para-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
 
 ## Estrategia mixta: cuándo usar cada canal según el tamaño de tu negocio
 

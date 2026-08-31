@@ -2,7 +2,7 @@
 title: "Oxidación: Concepto y Definición"
 description: "Descubre qué es la oxidación en alimentos: proceso químico de pérdida de electrones. Tipos (enzimática, lipídica), prevención del pardeamiento y aplicaciones…"
 pubDate: 2026-03-22
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/oxidacion-featured.jpg
 imageAlt: "Oxidación: Concepto y Definición"
@@ -63,6 +63,9 @@ wpId: 3264
 <li><strong>Oxígeno:</strong> Del aire ambiente.</li>
 </ol>
 <p>La PPO cataliza la oxidación de los fenoles, formando <strong>quinonas</strong>, que posteriormente se polimerizan creando <strong>melaninas</strong> (pigmentos marrones).</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=oxidacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
+
 <h3>Alimentos Afectados</h3>
 <p><strong>Altamente susceptibles:</strong></p>
 <ul>
@@ -143,6 +146,9 @@ wpId: 3264
 <li>Uso común en industria vinícola.</li>
 <li>Alérgeno (debe declararse).</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=oxidacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+
 <h3>Métodos Físicos</h3>
 <p><strong>1. Envasado al Vacío</strong></p>
 <ul>
@@ -221,6 +227,9 @@ wpId: 3264
 <p><strong>¿Funciona el agua con sal para evitar oxidación?</strong><br /> Parcialmente. El agua reduce contacto con oxígeno, pero la sal no inhibe la PPO. Es menos efectivo que el ácido cítrico.</p>
 <p><strong>¿Por qué las patatas en bolsa de supermercado no se oxidan?</strong><br /> Se tratan con antioxidantes (generalmente ácido ascórbico o sulfitos) y se envasan en atmósfera modificada (baja en oxígeno).</p>
 <p><strong>¿El plástico transparente protege contra oxidación?</strong><br /> No. El film transparente solo retarda ligeramente el contacto con oxígeno. Para protección real se necesita vacío o atmósfera inerte.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=oxidacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>oxidación</strong> es un proceso químico omnipresente en la cocina que puede ser tanto enemigo como aliado. Comprender sus mecanismos permite al profesional gastronómico prevenir el pardeamiento indeseado, proteger la calidad de aceites y grasas, y aprovechar la oxidación controlada para desarrollar sabores complejos en vinos, tés y otras preparaciones.</p>
 <p>En la cocina moderna, el dominio de la oxidación —saber cuándo prevenirla y cuándo promoverla— es una herramienta más en el arsenal del chef creativo, permitiendo mayor control sobre la presentación, sabor y conservación de los alimentos.</p>

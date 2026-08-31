@@ -2,7 +2,7 @@
 title: "Heladería Artesanal: Rentabilidad Real con IA 2026"
 description: "Cómo mejorar la rentabilidad de tu heladería artesanal con IA: escandallo del cucurucho, equilibrado de la mezcla, estacionalidad y marketing local."
 pubDate: 2025-03-08
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Innovacion-en-Heladeria-Aplicaciones-Practicas-de-ChatGPT.jpg
 imageAlt: "Innovación en Heladería: Aplicaciones Prácticas de ChatGPT"
@@ -71,6 +71,8 @@ He preparado un escandallo ilustrativo de una bola en cucurucho con un PVP neto 
 
 Ese 20 % de food cost suena a gloria, y lo es. Pero mira lo que pasa cuando sumas personal y energía de frío: el margen neto se queda en un 30 % en pleno agosto, con la vitrina girando a toda máquina. En diciembre, con la misma estructura de fijos y la mitad de ventas, ese 30 % se vuelve negativo. El problema de fondo no es el sabor: es que los costes fijos no se toman vacaciones. Si quieres profundizar en cómo controlar el gasto de materia prima, te dejo este artículo sobre [los errores que destruyen el food cost](https://aichef.pro/blog/8-errores-que-destruyen-el-food-cost-en-tu-restaurante).
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=innovacion-en-heladeria-aplicaciones-practicas-de-chatgpt" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+
 ## Equilibrar la mezcla con criterio: sólidos, azúcares y PAC/POD
 
 Más allá del coste, hay un segundo agujero silencioso: una mezcla mal equilibrada que genera merma en vitrina, textura deficiente o desperdicio de materia prima cara. Aquí no hablo de recetas, hablo de parámetros que todo heladero debería entender antes de encender la mantecadora.
@@ -97,6 +99,8 @@ Aquí tienes una tabla con los rangos técnicos orientativos para que no te pier
 <figure><img loading="lazy" decoding="async" data-attachment-id="995" data-orig-file="/blog-assets/2025/03/Tecnicas-avanzadas-y-sabores-innovadores.jpg" data-orig-size="768,1344" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Tecnicas-avanzadas-y-sabores-innovadores" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/03/Tecnicas-avanzadas-y-sabores-innovadores.jpg" src="/blog-assets/2025/03/Tecnicas-avanzadas-y-sabores-innovadores.jpg" alt="Técnicas avanzadas y sabores innovadores" title="Técnicas avanzadas y sabores innovadores" width="585" height="1024" class="aligncenter size-large wp-image-995" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=innovacion-en-heladeria-aplicaciones-practicas-de-chatgpt" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
 
 ## Creatividad de sabores con IA: del brainstorming al escandallo
 
@@ -131,6 +135,8 @@ La heladería vive del radio de proximidad. Tus clientes están a 500 metros, no
 El problema es que el heladero no tiene tiempo de ser community manager. Aquí la IA es un asistente de producción de contenido: redacta textos, sugiere calendarios de publicación y adapta el tono a tu público sin sonar a robot. Si quieres ideas prácticas, te recomiendo este artículo sobre [marketing con IA para restaurantes en redes sociales](https://aichef.pro/blog/marketing-restaurantes-ia-redes-sociales).
 
 Además, para los que prefieren trabajar con herramientas ya hechas, en la tienda de AI Chef Pro tienes kits descargables: escandallos, hojas de control de mermas, calendarios de producción y plantillas de fichas de sabor. Son [productos digitales para hostelería](https://aichef.pro/productos-digitales) que te ahorran horas de Excel y noches en vela.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=innovacion-en-heladeria-aplicaciones-practicas-de-chatgpt" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 ## Cómo empezar con AI Chef Pro (y cuánto cuesta de verdad)
 

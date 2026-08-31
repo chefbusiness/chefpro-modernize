@@ -2,7 +2,7 @@
 title: "Risotto de Hongos (Funghi): Receta Italiana Auténtica Paso a Paso"
 description: "Aprende a hacer risotto de setas auténtico italiano. Técnica de tostatura, cocción gradual y mantecatura. Medidas duales, tiempo exacto y trucos…"
 pubDate: 2026-03-12
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/risotto-hongos.jpg
 imageAlt: "Risotto de Hongos (Funghi): Receta Italiana Auténtica Paso a Paso"
@@ -60,6 +60,9 @@ wpId: 3277
 <h3>Fase 2: Preparar las Setas Frescas (10 min)</h3>
 <p><strong>Paso 3:</strong> Limpia las setas frescas con un paño húmedo (no las laves bajo el grifo, absorben agua). Corta las grandes en láminas, deja las pequeñas enteras.</p>
 <p><strong>Paso 4:</strong> En una sartén caliente con un poco de aceite de oliva, saltea las setas frescas a fuego alto durante 5 minutos hasta que estén doradas. Condimenta con sal y pimienta. Reserva.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=risotto-hongos-funghi-receta-italiana-autentica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
+
 <h3>Fase 3: El Sofrito y Tostado del Arroz (5 min)</h3>
 <p><strong>Paso 5:</strong> En la cacerola ancha, calienta el aceite de oliva a fuego medio. Añade la cebolla picada y sofríe durante 3-4 minutos hasta que esté transparente. Añade el ajo y cocina 1 minuto más.</p>
 <p><strong>Paso 6 (Crucial &#8211; Il tostatura):</strong> Añade el arroz arborio. Remueve constantemente durante 2-3 minutos hasta que los granos estén ligeramente translúcidos y «canten» al chocar entre sí. Esto sella el almidón exterior.</p>
@@ -89,6 +92,9 @@ wpId: 3277
 <h3>Versión sin Alcohol</h3>
 <p>Sustituye el vino blanco por zumo de limón diluido (1:1 con agua) o más caldo con un chorrito de vinagre de manzana.</p>
 <h2>Maridaje y Servicio</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=risotto-hongos-funghi-receta-italiana-autentica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h3>Vinos Recomendados:</h3>
 <ul>
 <li><strong>Barolo:</strong> Para versión con porcini, cuerpo potente que aguanta el sabor terroso</li>
@@ -131,6 +137,9 @@ wpId: 3277
 <p><strong>¿Puedo preparar el risotto con antelación?</strong><br /> El risotto tradicional no admite preparación previa. Sin embargo, existe el «risotto al salto» (recalentado en sartén al día siguiente), que tiene sus defensores.</p>
 <p><strong>¿Qué son las setas porcini?</strong><br /> Boletus edulis, el «cerdo» de los bosques italianos. Tienen sabor intenso a nuez y tierra. Secas concentran más sabor que frescas.</p>
 <p><strong>¿Puedo usar solo champiñones?</strong><br /> Sí, pero el sabor será más suave. Complementa con un poco de tomillo o romero para aportar complejidad.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=risotto-hongos-funghi-receta-italiana-autentica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

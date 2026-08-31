@@ -2,7 +2,7 @@
 title: "AI Chef Pro Cómo Funciona: Empieza con AI Chef Miembro Paso a Paso"
 description: "Aprende cómo funciona AI Chef Pro paso a paso: alta con AI Chef Miembro, 10.000 créditos/mes, elige agentes de IA por rol e invierte bien tus créditos.”"
 pubDate: 2024-10-01
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/configurar-tu-cuenta-en-AI-Chef-Pro.jpg
 imageAlt: "Cómo Configurar tu Cuenta en AI Chef Pro Paso a Paso"
@@ -49,6 +49,8 @@ Para empezar, solo tienes que [empezar con AI Chef Miembro en la app](https://ap
 
 Nada más entrar, verás que la plataforma te da la bienvenida en español, pero también puedes cambiar a cualquiera de los siete idiomas disponibles. Si trabajas en un entorno multilingüe o tienes proveedores que prefieren el inglés, el francés o el alemán, el mismo agente te responde en el idioma que elijas, manteniendo la precisión técnica. La base nativa en español garantiza que las recetas, escandallos y protocolos suenen naturales y no como traducciones automáticas llenas de calcos.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ## Paso 2: Familiarízate con el panel y elige tu idioma
 
 Una vez dentro, el panel principal te muestra el catálogo de agentes organizado por categorías o por roles profesionales. No necesitas memorizar nombres raros: puedes filtrar por «cocina», «gestión», «marketing» o «seguridad alimentaria» y ver qué agentes tienes disponibles. También puedes usar el buscador si ya sabes qué tarea quieres resolver.
@@ -71,6 +73,8 @@ El catálogo de AI Chef Pro cubre distintos perfiles del sector, y conviene que 
 | Consultor gastronómico | Todos los anteriores, más agente de análisis de costes | Armar informes integrales para clientes: desde escandallos y cartas hasta planes de viabilidad y protocolos de estandarización. |
 
 Esta tabla no es una foto fija; con el tiempo irás descubriendo otros agentes que encajan con necesidades más específicas. Pero si arrancas con estos, en los primeros días ya tendrás entregables que antes te robaban horas de hoja de cálculo o de peleas con el procesador de textos.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
 
 ## Paso 4: Invierte bien tus primeros 3.000 créditos
 
@@ -104,6 +108,8 @@ En el plan AI Chef Miembro, los 10.000 créditos se renuevan cada mes. Si un mes
 
 
 A modo orientativo, con 3.000 créditos al mes puedes cubrir varias tareas de alto valor: por ejemplo, dos escandallos completos, una carta de temporada y un borrador de plan APPCC. Si tu volumen de trabajo crece y necesitas lanzar decenas de tareas al mes, los planes de pago multiplican los créditos disponibles.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
 
 ## Cuándo dar el salto a un plan de pago
 

@@ -2,7 +2,7 @@
 title: "Ingeniería de Menú Restaurante: Carta Rentable con IA"
 description: "Ingeniería de menú para tu restaurante: la matriz de rentabilidad, un ejemplo numérico con 8 platos, psicología de precios de carta y automatización con IA."
 pubDate: 2026-03-24
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a4-ia-1.jpg
 imageAlt: "Chef y gerente diseñando carta rentable con IA"
@@ -56,6 +56,8 @@ La **matriz de rentabilidad y popularidad** divide tu carta en cuatro cuadrantes
 | **Puzzles** (enigmas) | Alta | Baja | Reposicionar en carta, mejorar descripción y nombre, foto, empuje de sala, poner como recomendación del chef. |
 | **Perros** | Baja | Baja | Eliminar o reinventar; mantener solo si es estratégico (opción vegana, plato icónico). |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-restaurante-rentable-ingenieria-menu-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 ### Estrellas
 
 Son los platos que todo chef quiere: **alta rentabilidad y alta popularidad**. Déjalos tranquilos. Protégelos en la carta, colócalos en zonas calientes y forma al equipo de sala para que los recomiende con naturalidad. No les cambies la receta ni los muevas de sitio porque sí. Si algo funciona, no lo rompas.
@@ -91,6 +93,8 @@ Aquí tienes un ejemplo con ocho platos realistas. Las cifras son mensuales y si
 
 Con la media en 8,50 € de margen y 150 unidades, la lectura sale sola. Las croquetas son un caballo clarísimo: 320 unidades pero solo 6,70 € de margen por plato. Subir 1 € el precio —de 9,50 a 10,50 sin IVA— apenas se nota en sala y engorda el margen de forma inmediata. La pasta boloñesa es el otro caballo: mucha salida y margen justo, candidata a revisar escandallo o ración. Los puzzles —carrillera y bacalao— dejan buen margen por plato (11,10 € y 11,70 €) pero se venden poco; piden empuje de sala y una descripción que los ponga en valor. Y los perros —menú infantil y tarta de queso—, salvo que atraer familias sea estratégico, deberían salir de la carta o reinventarse.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-restaurante-rentable-ingenieria-menu-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 ## Psicología de precios en la carta
 
 La **ingeniería de menú restaurante** no acaba en la matriz. La forma en que presentas los precios influye en la decisión del comensal, y aquí no se trata de manipular, sino de comunicar valor sin trampas. Algunas técnicas contrastadas por estudios del sector:
@@ -103,6 +107,8 @@ La **ingeniería de menú restaurante** no acaba en la matriz. La forma en que p
 - **Menos es más.** Las cartas con 7 ± 2 platos por categoría venden más y generan menos parálisis de elección. Si tienes 14 entrantes, el comensal se agobia y acaba pidiendo lo de siempre.
 
 Estas técnicas potencian el trabajo de la matriz, pero no lo sustituyen. Si el plato no tiene margen, por mucha psicología que apliques, seguirá siendo un caballo o un perro.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-restaurante-rentable-ingenieria-menu-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
 
 ## Cómo la IA automatiza la ingeniería de menú
 

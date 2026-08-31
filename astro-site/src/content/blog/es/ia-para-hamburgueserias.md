@@ -2,7 +2,7 @@
 title: "IA para Hamburgueserías: Más Margen en Cada Burger"
 description: "Guía práctica de IA para hamburgueserías: calcula el food cost de cada burger, diseña cartas y combos rentables y protege tu margen en el delivery."
 pubDate: 2026-01-28
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-hamburgueserias-2.jpeg
 imageAlt: "IA para Hamburgueserías: Guía Completa para Optimizar la Rentabilidad de tu Negocio de Burgers"
@@ -61,6 +61,8 @@ Para que se vea claro, esta tabla compara cómo se hacían estas tareas antes y 
 | Respuesta a reseñas negativas | Reacción emocional, respuestas defensivas o silencio | Borradores profesionales, empáticos y orientados a solución en 30 segundos |
 
 Esto no es teoría: es lo que hago cada día con clientes de hamburgueserías. La IA no cocina por ti, pero te quita de encima todo lo que no es cocinar. Si quieres ver cómo aplica esto mismo a otro vertical, échale un ojo al artículo sobre [IA para pizzerías](https://aichef.pro/blog/ia-para-pizzerias), donde el enfoque es similar pero adaptado a masa, fermentación y horno.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-hamburgueserias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 ## Food cost por hamburguesa: el ejemplo que todo dueño debería tener delante
 
@@ -144,6 +146,8 @@ El cliente percibe un ahorro de 3,60 € respecto a pedirlo todo por separado, t
 
 La IA te propone estas estructuras, calcula el food cost de cada combo, sugiere add-ons (doble de queso +1,50 €, bacon extra +2,00 €, salsa trufada +2,50 €) y te da el margen resultante. Tú decides, pero con números reales delante, no a ojo.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-hamburgueserias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 ## Delivery: el canal donde se ganan (o se pierden) los márgenes
 
 Según datos del sector, el delivery puede representar entre el 30% y el 60% de la facturación en muchas hamburgueserías. Y también es donde más márgenes se evaporan si no haces bien los números. Las comisiones de las plataformas (Glovo, Uber Eats, Just Eat) suelen situarse, según distintas fuentes del sector, en torno al 20-35% según negociación, visibilidad y exclusividad. Si tu food cost en sala es del 30% y le metes un 28% de comisión de plataforma, estás en el 58% de costes antes de alquiler, personal, suministros e impuestos. Eso no hay negocio que lo aguante.
@@ -196,6 +200,8 @@ Una hamburguesería que no enseña sus burgers en redes está perdiendo clientes
 - **Ideas de campaña**: "La Burger del Mes", "Martes de Smash", "Desafío Picante", colaboraciones con cervecerías locales.
 
 Todo esto no sustituye al criterio humano —el dueño conoce a su clientela mejor que nadie—, pero acelera la producción de contenido y evita el bloqueo de la página en blanco. Si quieres explorar más sobre cómo la IA genera [productos digitales para hostelería](https://aichef.pro/productos-digitales), desde fichas de plato hasta parrillas de contenido, tienes herramientas específicas para ello.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-hamburgueserias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
 
 ## AI Chef Pro para hamburgueserías: lo que necesitas saber
 

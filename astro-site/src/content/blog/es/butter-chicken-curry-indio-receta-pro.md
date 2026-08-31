@@ -2,7 +2,7 @@
 title: "Butter Chicken Curry Indio: Receta Pro con Tadka de Especias"
 description: "Auténtico butter chicken indio: marinada de yogur, tadka de especias y salsa cremosa. Técnica Pro para currys perfectos."
 pubDate: 2026-03-31
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/butter-chicken-curry.jpg
 imageAlt: "Butter Chicken Curry Indio: Receta Pro con Tadka de Especias"
@@ -32,6 +32,9 @@ wpId: 3304
 <li>1 cucharada chile en polvo</li>
 <li>Sal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=butter-chicken-curry-indio-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h3>Para el Curry:</h3>
 <ul>
 <li>3 cucharadas mantequilla</li>
@@ -55,6 +58,9 @@ wpId: 3304
 <p><strong>Paso 5:</strong> Añade tomates triturados, pasta de tomate y azúcar. Cocina 10 minutos.</p>
 <p><strong>Paso 6:</strong> Licúa la salsa hasta obtener puré suave. Cuela si es necesario.</p>
 <p><strong>Paso 7:</strong> Vuelve a colocar la salsa en la cacerola. Añade la nata y cocina 5 minutos.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=butter-chicken-curry-indio-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 <h3>Fase 4: Pollo (15 min)</h3>
 <p><strong>Paso 8:</strong> En otra sartén, dora el pollo marinado 5 minutos por lado.</p>
 <p><strong>Paso 9:</strong> Añade el pollo a la salsa. Cocina 10 minutos a fuego lento.</p>
@@ -66,6 +72,9 @@ wpId: 3304
 <p>Sofreír especias en grasa caliente libera sus aceites esenciales. Esta técnica es fundamental en cocina india.</p>
 <h3>2. Cebolla Caramelizada</h3>
 <p>La base de todo curry indio. No tengas prisa: 10 minutos a fuego medio para dorar profundamente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=butter-chicken-curry-indio-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

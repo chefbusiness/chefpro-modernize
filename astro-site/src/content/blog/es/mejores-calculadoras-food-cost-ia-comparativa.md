@@ -2,7 +2,7 @@
 title: "Calculadora de Food Cost: Comparativa 2026 con IA y Excel"
 description: "Comparativa 2026 de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, de pago."
 pubDate: 2026-03-20
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/calculadora-food-cost-ia-img1.jpg
 imageAlt: "Las Mejores Calculadoras de Food Cost con IA 2026: Guía Comparativa"
@@ -64,6 +64,8 @@ Una regla de cocinero: si tu food cost medio supera el 35 % de forma sostenida, 
 
 Aquí va la parte que casi nadie te cuenta, y te la digo sin paños calientes.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejores-calculadoras-food-cost-ia-comparativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 ### Excel o Google Sheets te bastan si…
 
 - Tienes **menos de 20-25 referencias** en carta y no cambian cada temporada.
@@ -118,6 +120,8 @@ Vamos a hablar claro de cada categoría, sin edulcorantes.
 
 **AI Chef Pro.** Aquí la IA sí está integrada en el flujo de trabajo: calcula costes considerando mermas y rendimientos, genera escandallos y fichas técnicas, y guarda todo para que no tengas que rehacer cálculos cada semana. Pertenece a una suite de agentes de IA culinarios pensados para cocina profesional. Más adelante te cuento cómo funciona.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejores-calculadoras-food-cost-ia-comparativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 ## La calculadora de food cost de AI Chef Pro: cómo funciona
 
 No voy a venderte que esto te cambia la vida. Pero sí te digo lo que hace y lo que no, para que decidas con criterio.
@@ -131,6 +135,8 @@ Además, genera automáticamente el **escandallo completo** y la **ficha técnic
 Y sí, hay [plan AI Chef Miembro](https://aichef.pro/calculadora-food-cost-restaurante) con 10.000 créditos al mes, con tarjeta. Suficiente para probar, hacer tus primeros escandallos y decidir si encaja en tu operativa.
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejores-calculadoras-food-cost-ia-comparativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
 
 ## Planes y precios de AI Chef Pro (2026)
 

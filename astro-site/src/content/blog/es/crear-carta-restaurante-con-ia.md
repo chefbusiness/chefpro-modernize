@@ -2,7 +2,7 @@
 title: "Crear la Carta de tu Restaurante con IA: Guía en 6 Pasos"
 description: "Crea la carta de tu restaurante con IA paso a paso: estructura, número de platos, descripciones que venden, precios, diseño y QR. Guía práctica 2026."
 pubDate: 2026-01-09
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/crear-carta-restaurante-con-ia-1.jpg
 imageAlt: "Cómo Crear la Carta de tu Restaurante con IA"
@@ -58,6 +58,8 @@ Cómo lo hago: le digo al asistente de IA el tipo de local, el ticket medio esti
 
 Esa misma lógica sirve para ajustar la carta a temporada sin desmontar la estructura. En 2026, con los sobrecostes que todos conocemos, acertar con el número de referencias es pura rentabilidad operativa.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crear-carta-restaurante-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 ## Paso 2: Redacta descripciones que venden
 
 Aquí es donde la IA marca una diferencia brutal. La regla de oro para una descripción de plato que vende es: **ingrediente + técnica + detalle diferencial**. Nada de “delicioso”, “exquisito” o “sabroso”. El comensal no se cree los adjetivos vacíos, pero sí reacciona a un detalle concreto que le genera confianza y apetito.
@@ -93,6 +95,8 @@ A partir de ahí, aplica psicología de precios de la buena:
 - Evita alinear los precios en columna: cuando el comensal puede barrer la vista verticalmente, compara por precio en lugar de elegir por apetito. Coloca el precio al final de la descripción, en el mismo cuerpo de texto.
 
 Este paso te da un precio de salida sólido, pero si quieres exprimir la rentabilidad plato a plato y saber cuáles son tus estrellas, tus puzzles o tus perros, necesitas la ingeniería de menú. Todo ese análisis detallado está en el artículo sobre [cómo hacer una carta de restaurante rentable con ingeniería de menú e IA](https://aichef.pro/blog/carta-restaurante-rentable-ingenieria-menu-ia). Aquí nos quedamos con la base de fijación de precios para que la carta nazca con margen desde el día uno.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crear-carta-restaurante-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
 
 ## Paso 4: Ordena el layout (dónde mira el comensal)
 
@@ -130,6 +134,8 @@ En la Unión Europea, desde hace años es obligatorio declarar los 14 alérgenos
 Si trabajas en zona turística, la carta multilingüe ya no es un lujo: es una expectativa. La IA traduce a 7 idiomas manteniendo el matiz gastronómico, sin perder el detalle que hace que una descripción venda. No es lo mismo traducir “meloso” que “creamy” o “onctueux”, y la IA entrenada en cocina lo entiende.
 
 Por último, la digitalización con código QR. En 2026, el QR está completamente normalizado: el comensal escanea, ve la carta actualizada en su móvil, consulta alérgenos e incluso puede pedir desde la mesa. La carta física y la digital conviven, y la IA te permite generar ambas versiones desde una misma base, sin duplicar trabajo.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crear-carta-restaurante-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
 
 ## Cómo AI Chef Pro te acompaña en cada paso
 

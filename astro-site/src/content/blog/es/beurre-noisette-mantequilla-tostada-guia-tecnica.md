@@ -2,7 +2,7 @@
 title: "Beurre Noisette: Guía Técnica de la Mantequilla Tostada"
 description: "Beurre noisette paso a paso: qué es, ciencia de la reacción de Maillard, diferencias con ghee y clarificada, tabla de puntos de cocción, usos y conservación."
 pubDate: 2026-02-23
-modDate: 2026-07-28
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/02/beurre-noisette-featured.jpg
 imageAlt: "Beurre Noisette (Mantequilla Tostada): Guía Técnica Profesional para Chefs"
@@ -87,6 +87,8 @@ faq:
 <p><sup>1</sup> Según <em>Food & Wine España</em>, la mantequilla clarificada bien colada aguanta hasta 3 meses en frío.<br>
 <sup>2</sup> El ghee alcanza un punto de humo próximo a los 250 °C, muy por encima del de la mantequilla sin clarificar (unos 150-175 °C según la fuente): en ella son los sólidos lácteos, y no la grasa, los primeros en humear y ennegrecerse (fuente: <em>El Holandés Picante</em>).</p>
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=beurre-noisette-mantequilla-tostada-guia-tecnica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h2>Fundamentos Científicos: Por Qué Funciona</h2>
 
 <p>El beurre noisette no es magia, es química. Y entenderla te da un control absoluto sobre el resultado.</p>
@@ -158,6 +160,8 @@ faq:
 
 <p>El límite siempre está en el color: si ves partículas negras o el aroma se vuelve acre, has sobrepasado el punto y el amargor habrá ganado la partida.</p>
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=beurre-noisette-mantequilla-tostada-guia-tecnica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h2>5 Errores que Arruinan el Beurre Noisette</h2>
 
 <p>Incluso los profesionales caen en alguno de estos fallos cuando trabajan la técnica por primera vez. Evitarlos te ahorra mantequilla, tiempo y disgustos.</p>
@@ -182,6 +186,8 @@ faq:
 
 <h3>Pescados</h3>
 <p>El <strong>lenguado meunière</strong> es el plato histórico que consagró el beurre noisette en la cocina francesa. El pescado se enharina, se cocina en mantequilla y se termina con un chorro de beurre noisette, zumo de limón y perejil. Si además llevara alcaparras y dados de limón ya no sería una meunière, sino una <em>grenobloise</em>: un matiz que en una carta profesional conviene tener claro. Pero la técnica es extensible a cualquier pescado de carne firme, como la lubina o el rodaballo, que se benefician de ese contraste entre la grasa tostada y el frescor del mar.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=beurre-noisette-mantequilla-tostada-guia-tecnica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
 
 <h3>Verduras</h3>
 <p>Coles de Bruselas laminadas y salteadas, calabaza asada, coliflor dorada al horno... El beurre noisette transforma las verduras de estación en guarniciones con personalidad propia. Un golpe de beurre noisette en el último momento, justo antes de servir, realza los azúcares naturales de la verdura y aporta un toque de fruto seco que encaja a la perfección con platos de otoño e invierno.</p>

@@ -2,7 +2,7 @@
 title: "Dark Kitchen Rentabilidad: Los Números Reales de 2026"
 description: "¿Es rentable una dark kitchen en 2026? Estructura de costes real frente a un restaurante tradicional, cuándo sí, cuándo no y el papel de la IA sin humo."
 pubDate: 2026-03-14
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/dark-kitchen-ia-cocina-fantasma-madrid-2026.jpg
 imageAlt: "Dark kitchen moderna en Madrid con equipo preparando pedidos delivery con pantallas de gestión IA"
@@ -71,6 +71,8 @@ Como ves, el margen neto de partida no es más alto por el simple hecho de ser u
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=dark-kitchen-ia-rentabilidad" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
+
 ## A dónde va cada euro: el desglose que nadie te enseña
 
 Para entender la fragilidad del modelo, basta con coger un ticket de 100 € y repartirlo con honestidad. Los porcentajes son rangos reales del sector en España, con los que trabaja cualquier cocina fantasma que no quiera engañarse.
@@ -109,6 +111,8 @@ Hay situaciones en las que montar una dark kitchen es una trampa. He visto demas
 - **No saber tus números al dedillo**: si no conoces el *food cost* de cada plato, no mides la merma ni revisas los KPIs de rentabilidad cada semana, estás conduciendo a ciegas. La dark kitchen no perdona la improvisación.
 - **Falta de capital para aguantar el punto de equilibrio**: el *break-even* realista está entre 12 y 18 meses. Si no tienes colchón para ese periodo, el riesgo de cierre es altísimo.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=dark-kitchen-ia-rentabilidad" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
+
 ## El papel real de la IA en la rentabilidad
 
 La inteligencia artificial no hace magia. No te va a traer clientes ni va a cocinar por ti. Pero ataca directamente las tres fugas de margen que hunden a una dark kitchen: la merma, el food cost descontrolado y las decisiones de carta basadas en intuiciones.
@@ -129,6 +133,8 @@ En AI Chef Pro tienes más de 70 agentes de IA culinarios que trabajan exactamen
 <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/dark-kitchen-delivery-rider-recogida-pedidos.jpg" alt="Rider recogiendo pedidos en la ventana de entrega de una dark kitchen profesional"/><figcaption>La logística de última milla define la experiencia del cliente en dark kitchens</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=dark-kitchen-ia-rentabilidad" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
 
 ## Cómo empezar sin quemar caja
 

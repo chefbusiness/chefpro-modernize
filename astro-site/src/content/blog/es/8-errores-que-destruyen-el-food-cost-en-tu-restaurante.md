@@ -2,7 +2,7 @@
 title: "8 Errores de Food Cost que Arruinan tu Restaurante"
 description: "Los 8 errores de food cost que sangran tu restaurante: síntoma, coste real y cómo corregirlos con IA. Con rangos sanos por tipo de local en 2026."
 pubDate: 2026-02-25
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/8-errores-food-cost-aichefpro-3.jpg
 imageAlt: "8 Errores que Destruyen el Food Cost en tu Restaurante (y Cómo Solucionarlos)"
@@ -54,6 +54,8 @@ El síntoma lo conoces bien. Pasas por la partida de carnes y ves a Luis montand
 
 Aquí la IA no viene a sustituir al cocinero, sino a poner una referencia firme que todo el equipo pueda seguir. AI Chef Pro genera fichas técnicas con gramaje fijo por ración y las deja ancladas a un escandallo que recalcula el coste real cada vez que tocas un precio de proveedor. Si el plato lleva 200 gramos de lomo, eso es lo que va en la ficha, ni 180 ni 230. La herramienta no te da sermones: simplemente te da el número exacto con el que puedes formar a tu equipo y medir si lo están cumpliendo.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=8-errores-que-destruyen-el-food-cost-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 ## 2. Sobrecompra y un Inventario que no Controlas
 
 Abres la cámara y parece que estás provisionando un hospital de campaña. Producto que se amontona, bandejas al fondo que nadie rota, pedidos que se hicieron "por si acaso" y que llevan ahí una semana. El síntoma es ese: abrir la nevera y que te caiga encima la mala conciencia. La merma por caducidad en un local con sobrestock crónico puede llevarse entre un 2 % y un 5 % del valor de compra mensual. A eso súmale el capital inmovilizado en producto que no se está convirtiendo en plato ni en caja. Tu flujo de caja también sangra, aunque no lo veas en la cuenta de pérdidas y ganancias hasta final de mes.
@@ -85,6 +87,8 @@ Incómodo pero necesario hablarlo. Cuando los números de inventario teórico y 
 
 Las herramientas de IA no hacen de policía, pero sí permiten implantar inventarios ciegos periódicos y comparar el teórico contra el real de forma sistematizada, sin que nadie pueda maquillar los números sobre la marcha. Cuando cada partida tiene claro que el inventario se va a cruzar con los datos reales de ventas y escandallos, el "autocontrol" aparece solo. No es desconfianza: es profesionalidad.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=8-errores-que-destruyen-el-food-cost-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 ## 6. No Registrar las Mermas: Vuelas a Ciegas
 
 Todo el mundo tira producto. Un poco de guarnición que sobra, una salsa que se pasa de punto, un postre que no se vendió y se acaba comiendo el personal. El problema es cuando eso ocurre a diario y nadie lo anota. Se convierte en merma "invisible" que ni se contabiliza ni se analiza. El síntoma es un food cost que sube misteriosamente sin que las compras se hayan disparado. La merma sin registro puede duplicar la que crees tener, porque lo que no se mide no existe y, por tanto, no se corrige.
@@ -109,6 +113,8 @@ Aquí la solución no es contratar más supervisores, sino darle a cada persona 
 Tienes la carta que imprimiste en enero y estamos en octubre. El proveedor de carne te ha subido tres veces, el aceite se ha disparado y el pescado fresco está por las nubes. Pero sigues cobrando lo mismo. El síntoma es que el food cost sube mes a mes pero la estructura de precios no se mueve. No repercutir la inflación de materia prima erosiona el margen silenciosamente, plato a plato, sin que te des cuenta hasta que la cuenta de resultados trimestral te da un susto. Un plato que escandallaste con un coste de 4,80 € y ahora te sale a 5,70 € te está comiendo margen plato a plato sin que hayas tocado el precio de venta.
 
 La IA te permite hacer un reprecio guiado por tu food cost objetivo y aplicar ingeniería de menú en serio: identificar qué platos son estrellas (buen margen, alta rotación), cuáles son caballos de batalla (poco margen pero salen mucho), cuáles debes rediseñar y cuáles retirar directamente. Antes de tocar precios a lo loco, te conviene echar un vistazo a la [calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante) para tener claro de qué punto partes. Porque subir precios sin datos es tan peligroso como no subirlos nunca.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=8-errores-que-destruyen-el-food-cost-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
 
 ## Resumen de los 8 Errores
 

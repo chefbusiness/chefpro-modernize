@@ -2,7 +2,7 @@
 title: "Bibimbap Coreano: Receta Pro del Tazón Mixto de Corea"
 description: "Auténtico bibimbap coreano: arroz, vegetales namul, carne sazonada, huevo y gochujang. Técnica Pro para el tazón de colores perfecto."
 pubDate: 2026-04-18
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/bibimbap.jpg
 imageAlt: "Bibimbap Coreano: Receta Pro del Tazón Mixto de Corea"
@@ -31,6 +31,9 @@ wpId: 3478
 <li>Ajo picado</li>
 <li>Sal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bibimbap-coreano-receta-tazon-mezclado" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 <h3>Para la Carne:</h3>
 <ul>
 <li>200g ternera o cerdo, en tiras finas</li>
@@ -59,6 +62,9 @@ wpId: 3478
 <h3>Fase 2: Carne (10 min)</h3>
 <p><strong>Paso 6:</strong> Marina la carne con salsa de soja, azúcar, ajo y aceite de sésamo 15 minutos.</p>
 <p><strong>Paso 7:</strong> Saltea a fuego alto 3-4 minutos hasta dorada.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bibimbap-coreano-receta-tazon-mezclado" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 <h3>Fase 3: Montaje</h3>
 <p><strong>Paso 8:</strong> Coloca arroz en el fondo del tazón.</p>
 <p><strong>Paso 9:</strong> Dispon los vegetales y carne en secciones de colores sobre el arroz.</p>
@@ -71,6 +77,9 @@ wpId: 3478
 <p>Cada vegetal se cocina y sazona individualmente. Esto mantiene sabores y texturas distintas.</p>
 <h3>2. Gochujang al Gusto</h3>
 <p>La pasta de chile puede ser intensa. Empieza con poco y añade según tolerancia.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bibimbap-coreano-receta-tazon-mezclado" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

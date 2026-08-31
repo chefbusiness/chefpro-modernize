@@ -2,7 +2,7 @@
 title: "IA para Pizzerías: Masa, Food Cost y Delivery en 2026"
 description: "IA para pizzerías proceso a proceso: masas y fermentación, food cost por pizza, cartas, delivery y marketing local. Empieza con AI Chef Pro."
 pubDate: 2026-01-27
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-pizzerias-4.jpeg
 imageAlt: "IA para Pizzerías: Masa, Food Cost y Delivery con Inteligencia Artificial"
@@ -52,6 +52,8 @@ Por ejemplo, si tu receta base usa harina al 100 %, hidratación al 62 %, sa
 
 Lo importante: **la IA te propone los números, pero el criterio lo tienes tú**. Tú conoces tu horno, el punto de tu mozzarella, la reacción del cliente. Por eso hablamos de un segundo maestro, no de un sustituto. Si además trabajas con masas madre o fermentaciones muy largas, te puede interesar cómo aplicar este enfoque en el obrador de pan con nuestro artículo sobre [IA para panaderías](https://aichef.pro/blog/ia-para-panaderias), donde profundizamos en cálculos para hogazas y masas en bloque.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-pizzerias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 ## Food cost por pizza: escandallo al céntimo
 
 Saber cuánto te cuesta cada pizza no es un capricho: es la diferencia entre vivir del negocio o malvender platos que crees rentables. Con la IA haces el escandallo de cada receta, incorporando incluso la merma por manipulación, restos de masa no aprovechados o ese golpe de salsa que se va en el borde.
@@ -98,6 +100,8 @@ Pongamos que tu pizza ‘Tartufata’ lleva trufa negra, parmesano y un aceite t
 
 AI Chef Pro trabaja en 7 idiomas con español nativo, así que si tu pizzería está en zona turística puedes generar versiones en inglés, francés o alemán sin perder el tono. Generas los textos, los revisas y decides.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-pizzerias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 ## Delivery y previsión de demanda
 
 Si despachas a domicilio, sabes que el viernes a las 21:00 no hay margen para errores. La IA puede cruzar tu histórico de ventas con eventos, climatología o fechas señaladas y darte una proyección de demanda: cuántas bolas de masa preparar, litros de salsa, queso a rallar. No te dará la cifra exacta —no es adivinación—, pero afina mucho más que las corazonadas. Con esa estimación preparas la *mise en place*, reduces la merma de masa fermentada en exceso y ajustas el *packaging* para no quedarte corto ni acumular stock.
@@ -137,6 +141,8 @@ La IA se apoya en [aprendizaje automático (machine learning)](https://aichef.pr
 <figure class="wp-block-image alignwide size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1290" height="2311" data-attachment-id="2487" data-orig-file="/blog-assets/2026/01/ia-para-pizzerias-scaled.jpg" data-orig-size="1429,2560" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="ia-para-pizzerias" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2026/01/ia-para-pizzerias-scaled.jpg" src="/blog-assets/2026/01/ia-para-pizzerias-scaled.jpg" alt="Infografía de IA para Pizzerías" class="wp-image-2487" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-pizzerias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
 
 ## Precios de AI Chef Pro para pizzerías
 

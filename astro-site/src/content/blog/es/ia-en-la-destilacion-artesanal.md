@@ -2,7 +2,7 @@
 title: "IA en la Destilación Artesanal: Manual Técnico para Optimizar tu Producción de Bebidas Espirituosas"
 description: "La destilación artesanal está experimentando una transformación sin precedentes gracias a la incorporación de la inteligencia artificial. Desde las pequeñas…"
 pubDate: 2026-01-07
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-en-la-destilacion-artesanal-4.jpeg
 imageAlt: "IA en la Destilación Artesanal: Manual Técnico para Optimizar tu Producción de Bebidas Espirituosas"
@@ -208,6 +208,8 @@ wpId: 2059
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-destilacion-artesanal" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
 
 <h3 class="wp-block-heading">Maduración y envejecimiento asistidos por IA</h3>
 
@@ -557,6 +559,8 @@ wpId: 2059
 </ul>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-destilacion-artesanal" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
 
 <h3 class="wp-block-heading">Software de desarrollo de recetas y optimización</h3>
 
@@ -942,6 +946,8 @@ wpId: 2059
 <p class="wp-block-paragraph">La herramienta <strong>Food Pairing AI</strong> de AI Chef Pro puede utilizarse para identificar combinaciones innovadoras de botánicos para gins, licores y aguardientes, basándose en compatibilidades moleculares y perfiles aromáticos.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-destilacion-artesanal" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h3 class="wp-block-heading">Cocina Creativa para recetas de cócteles</h3>
 

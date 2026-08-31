@@ -2,7 +2,7 @@
 title: "Moussaka Griega Auténtica: Capas Perfectas y Bechamel Dorada"
 description: "Auténtica moussaka griega: berenjenas, carne especiada y bechamel esponjosa. Técnica Pro para capas perfectas y dorado crujiente."
 pubDate: 2026-04-02
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/moussaka-griega.jpg
 imageAlt: "Moussaka Griega Auténtica: Capas Perfectas y Bechamel Dorada"
@@ -39,6 +39,9 @@ wpId: 3319
 <li>1/2 cucharadita nuez moscada</li>
 <li>Sal y pimienta</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=moussaka-griega-autentica-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
+
 <h3>Para la Bechamel:</h3>
 <ul>
 <li>100g mantequilla</li>
@@ -63,6 +66,9 @@ wpId: 3319
 <p><strong>Paso 8:</strong> Derrite la mantequilla, añade harina y cocina 2 minutos.</p>
 <p><strong>Paso 9:</strong> Vierte leche poco a poco, removiendo constantemente hasta espesar.</p>
 <p><strong>Paso 10:</strong> Retira del fuego. Añade yemas, queso y nuez moscada.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=moussaka-griega-autentica-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
+
 <h3>Fase 4: Montaje y Horneado (45 min)</h3>
 <p><strong>Paso 11:</strong> Engrasa un molde. Capa de patatas → Capa de berenjenas → Capa de carne → Repite → Cubre con bechamel.</p>
 <p><strong>Paso 12:</strong> Espolvorea queso rallado.</p>
@@ -73,6 +79,9 @@ wpId: 3319
 <p>La sal extrae líquido y amargor. No omitas este paso para evitar moussaka amarga.</p>
 <h3>2. Bechamel Espesa</h3>
 <p>Debe ser lo suficientemente espesa para mantener forma pero suave. Las yemas añaden riqueza.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=moussaka-griega-autentica-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

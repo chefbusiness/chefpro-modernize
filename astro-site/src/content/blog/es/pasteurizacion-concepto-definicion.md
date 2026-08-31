@@ -2,7 +2,7 @@
 title: "Pasteurización: Concepto y Definición"
 description: "Descubre qué es la pasteurización: tratamiento térmico que reduce patógenos en alimentos. Tipos (HTST, UHT), efectos en nutrientes y aplicaciones en…"
 pubDate: 2026-03-24
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/pasteurizacion-featured.jpg
 imageAlt: "Pasteurización: Concepto y Definición"
@@ -69,6 +69,9 @@ wpId: 3267
 <p><strong>1960s:</strong> Introducción de la esterilización UHT (Ultra High Temperature).</p>
 <p><strong>Actualidad:</strong> Tecnologías de microondas, radiofrecuencia y pulsos eléctricos.</p>
 <h2>Ciencia de la Pasteurización</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pasteurizacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 <h3>Mecanismo de Inactivación Microbiana</h3>
 <p>El calor destruye microorganismos mediante varios mecanismos:</p>
 <p><strong>1. Desnaturalización proteica:</strong> Destruye enzimas esenciales y proteínas estructurales.</p>
@@ -166,6 +169,9 @@ wpId: 3267
 </tbody>
 </table></div>
 <p>La pasteurización está diseñada para destruir <em>Coxiella burnetii</em>, el patógeno lácteo más resistente al calor.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pasteurizacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h2>Efectos en la Leche</h2>
 <h3>Cambios Físicos y Químicos</h3>
 <p><strong>Proteínas:</strong></p>
@@ -269,6 +275,9 @@ wpId: 3267
 <p><strong>¿Se pueden pasteurizar alimentos en casa?</strong><br /> Sí, usando baño María a 72°C con termómetro preciso durante 15 segundos, seguido de enfriamiento rápido. Es útil para jugos y conservas.</p>
 <p><strong>¿La pasteurización mata todos los microorganismos?</strong><br /> No, reduce significativamente los patógenos pero algunas bacterias beneficiosas y esporas pueden sobrevivir. Por eso requiere refrigeración.</p>
 <p><strong>¿Por qué algunos quesos usan leche cruda?</strong><br /> Por tradición y perfil de sabor. Sin embargo, requieren maduración mínima de 60 días para seguridad, y están prohibidos en algunos países.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pasteurizacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>pasteurización</strong> es una de las intervenciones de salud pública más exitosas de la historia. Este proceso, basado en principios científicos sólidos, ha permitido la distribución segura de alimentos perecederos a escala masiva, salvando innumerables vidas y mejorando la calidad de vida global.</p>
 <p>Para el profesional gastronómico, comprender la pasteurización es esencial tanto para garantizar la seguridad alimentaria como para optimizar procesos de elaboración. En una era donde la trazabilidad y la seguridad son prioritarias, el dominio de estas técnicas fundamentales distingue al profesional del aficionado.</p>

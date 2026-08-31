@@ -2,7 +2,7 @@
 title: "Ceviche Peruano Auténtico: Técnica Pro de Marinado Perfecto"
 description: "Receta original de ceviche peruano con leche de tigre. Tiempos exactos de marinado, pescado fresco y técnicas profesionales. Patrimonio de Perú."
 pubDate: 2026-03-21
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/ceviche-peruano.jpg
 imageAlt: "Ceviche Peruano Auténtico: Técnica Pro de Marinado Perfecto"
@@ -38,6 +38,9 @@ wpId: 3296
 <li>Cancha (maíz tostado)</li>
 <li>Hojas de lechuga</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ceviche-peruano-autentico-tecnica-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 <h2>Equipamiento Necesario</h2>
 <ul>
 <li><strong>Bowl de vidrio o cerámica:</strong> No metálico (reacciona con el ácido)</li>
@@ -57,6 +60,9 @@ wpId: 3296
 <p><strong>Paso 6:</strong> Añade el pescado al bowl con el leche de tigre. Remueve suavemente para que todo se impregne.</p>
 <p><strong>Paso 7:</strong> Deja marinar 5-10 minutos dependiendo del grosor del corte. El pescado debe estar opaco por fuera y rosa por dentro.</p>
 <p><em>Pro Tip:</em> El tiempo es crucial. 5 minutos = pescado crujiente. 15 minutos = totalmente cocido. El punto ideal está en 8-10 minutos.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ceviche-peruano-autentico-tecnica-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 <h3>Fase 4: Montaje (5 min)</h3>
 <p><strong>Paso 8:</strong> Incorpora la cebolla roja en juliana. Mezcla y deja reposar 2 minutos más.</p>
 <p><strong>Paso 9:</strong> Sirve inmediatamente en platos fríos o bowls individuales.</p>
@@ -73,6 +79,9 @@ wpId: 3296
 <p>Usa camarones cocidos, tomate, salsa de tomate y naranja además de limón. Más dulce.</p>
 <h3>Ceviche Negro (México)</h3>
 <p>Añade tinta de calamar. Típico de la península de Yucatán.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ceviche-peruano-autentico-tecnica-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

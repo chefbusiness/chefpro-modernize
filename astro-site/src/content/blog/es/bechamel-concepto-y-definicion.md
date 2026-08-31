@@ -2,7 +2,7 @@
 title: "Bechamel: Concepto y Definición"
 description: "Salsa madre francesa con roux blanco y leche. Prepara bechamel perfecta."
 pubDate: 2026-02-18
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/bechamel-destacada.jpg
 imageAlt: "Salsa bechamel cremosa en un cazo"
@@ -57,6 +57,9 @@ wpId: 2731
 </tbody>
 </table></div>
 <p>Si necesitas un espesor aún mayor para masas como las croquetas, puedes subir hasta 80 g de harina y mantequilla por litro, pero siempre manteniendo la <strong>relación 1:1 en peso</strong> entre grasa y harina. La leche debe estar caliente – nuca fría – para evitar choques térmicos que generen grumos.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bechamel-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
+
 <h2>Cómo hacer bechamel paso a paso</h2>
 <p>Dominar esta salsa es cuestión de técnica, no de magia. Con estos pasos conseguirás una textura sedosa desde el primer intento.</p>
 <h3>1. Prepara el roux blanco</h3>
@@ -77,6 +80,9 @@ wpId: 2731
 <p>Si quieres ampliar el repertorio de salsas blancas y entender cómo se transforman a partir de la bechamel, dedica un momento a la guía completa sobre <a href="https://aichef.pro/blog/salsa-veloute-concepto-y-definicion">salsa Mornay y otras derivadas</a>; allí desgranamos todos los matices.</p>
 <h2>Usos en cocina: mucho más que lasaña</h2>
 <p>La bechamel se cuela en la partitura de innumerables platos. En la <strong>lasaña boloñesa</strong> suaviza la acidez del tomate y une las capas; en las <strong>croquetas</strong> es el aglutinante perfecto que, al freírse, se funde y crea ese interior jugoso; en los <strong>gratinados</strong> de coliflor, endivias o pasta al horno, aporta cremosidad y una costra dorada irresistible. También es la base de muchas cremas de verduras: bastará aligerarla con caldo y añadir el ingrediente estrella triturado. En cocina profesional, se utiliza incluso como componente de suflés salados y timbales.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bechamel-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h2>Errores comunes y cómo salvarlos</h2>
 <p>Hasta los chefs más veteranos han peleado con una bechamel rebelde. Estos son los tropiezos más frecuentes y su arreglo inmediato:</p>
 <ul>
@@ -97,6 +103,9 @@ wpId: 2731
 <p>Sí, pero con precaución. Al descongelarse, tiende a separarse un poco; basta calentarla a fuego muy suave y batir de nuevo para que recupere la ligazón. Lo ideal es congelarla en porciones planas y usarla en guisos o gratinados, donde una ligera variación de textura pasa inadvertida.</p>
 <h3>¿Por qué mi bechamel tiene sabor a harina?</h3>
 <p>Ese regusto a crudo indica que el roux no se coció lo suficiente. La harina necesita al menos 2-3 minutos con la mantequilla caliente para tostarse ligeramente y perder el sabor a almidón crudo. Si ya está terminada, cuece la salsa a fuego bajo unos minutos más, removiendo, y el sabor se suavizará.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bechamel-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Roux: concepto y definición</a></li>

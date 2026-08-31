@@ -2,7 +2,7 @@
 title: "Bacalhau à Brás: Receta Pro de Lisboa"
 description: "Auténtico bacalhau à Brás portugués: bacalao desmigado, patatas paja, huevo revuelto. Técnica Pro de desalado perfecto."
 pubDate: 2026-05-12
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/bacalhau-a-bras.jpg
 imageAlt: "Bacalhau à Brás: Receta Pro de Lisboa"
@@ -32,6 +32,9 @@ wpId: 3557
 <li>Pimienta negra recién molida</li>
 <li>Aceite para freír patatas</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bacalhau-bras-receta-portuguesa-lisboa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 <h2>Preparación Paso a Paso</h2>
 <h3>Fase 1: Preparar Bacalao (24h antes)</h3>
 <p><strong>Paso 1:</strong> Si usas bacalao salado, ponlo en agua fría 24 horas, cambiando agua 3-4 veces.</p>
@@ -49,6 +52,9 @@ wpId: 3557
 <p><strong>Paso 11:</strong> Bate los huevos ligeramente. Vierte sobre la mezcla.</p>
 <p><strong>Paso 12:</strong> Remueve suavemente hasta que los huevos cuajen pero queden cremosos.</p>
 <p><strong>Paso 13:</strong> Sazona con pimienta (cuidado con la sal, el bacalao ya es salado).</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bacalhau-bras-receta-portuguesa-lisboa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h3>Fase 4: Servicio</h3>
 <p><strong>Paso 14:</strong> Sirve inmediatamente espolvoreado con perejil y aceitunas.</p>
 <h2>Técnicas Clave</h2>
@@ -58,6 +64,9 @@ wpId: 3557
 <p>La humedad hace que las patatas se peguen al freír. Secar bien antes de la fritura.</p>
 <h3>3. Huevos Cremosos</h3>
 <p>No cocinar demasiado los huevos. Deben envolver los ingredientes sin secarse.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bacalhau-bras-receta-portuguesa-lisboa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

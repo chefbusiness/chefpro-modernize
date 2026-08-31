@@ -2,7 +2,7 @@
 title: "Pabellón Criollo Venezolano: Receta Pro del Plato Nacional"
 description: "Auténtico Pabellón Criollo venezolano: carne mechada, frijoles negros, arroz y tajadas. Técnica Pro tradicional."
 pubDate: 2026-07-05
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/pabellon-criollo.jpg
 imageAlt: "Pabellón Criollo Venezolano: Receta Pro del Plato Nacional"
@@ -43,6 +43,9 @@ wpId: 3589
 <li>1 cucharada comino</li>
 <li>Sal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pabellon-criollo-venezolano-receta-plato-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+
 <h3>Para las Tajadas:</h3>
 <ul>
 <li>3 plátanos maduros (pintas negras en la piel)</li>
@@ -70,6 +73,9 @@ wpId: 3589
 <p><strong>Paso 11:</strong> Incorpora la carne deshebrada. Remueve bien.</p>
 <p><strong>Paso 12:</strong> Añade 1/2 taza del caldo de cocción. Cocina 10 minutos hasta que la carne absorba los sabores.</p>
 <p><strong>Paso 13:</strong> Rectifica sal y pimienta.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pabellon-criollo-venezolano-receta-plato-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
+
 <h3>Fase 3: Frijoles Negros (preparar simultáneamente)</h3>
 <p><strong>Paso 14:</strong> Remoja frijoles en agua fría toda la noche (o 1 hora en olla a presión).</p>
 <p><strong>Paso 15:</strong> Cocina frijoles en agua limpia con cebolla, ajo y comino 1.5 horas (olla regular) o 25 minutos (olla a presión) hasta tiernos.</p>
@@ -89,6 +95,9 @@ wpId: 3589
 <p>Tómate el tiempo de deshebrar bien. Hebras finas absorben mejor el sofrito.</p>
 <h3>3. Frijoles con Caldo</h3>
 <p>Los frijoles se sirven con su caldo oscuro, no escurridos. Esa es la tradición venezolana.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pabellon-criollo-venezolano-receta-plato-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

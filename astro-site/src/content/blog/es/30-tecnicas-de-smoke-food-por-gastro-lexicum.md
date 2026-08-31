@@ -2,7 +2,7 @@
 title: "30 Técnicas de Smoke Food por Gastro Lexicum: La Guía Definitiva del Ahumado Optimizada por IA"
 description: "El ahumado, una técnica culinaria antigua que combina tradición e innovación, se transforma con la inteligencia artificial. La guía del Chef John Guerrero…"
 pubDate: 2025-02-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/8112246.jpeg
 imageAlt: "Close-up of grilling kebabs over a smoky barbecue, showcasing hands in action."
@@ -302,6 +302,8 @@ wpId: 1017
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-tecnicas-de-smoke-food-por-gastro-lexicum" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+
 <h3 class="wp-block-heading">Técnicas Modernas con IA</h3>
 
 
@@ -571,6 +573,8 @@ wpId: 1017
 <p class="wp-block-paragraph">Cada una de estas técnicas modernas representa una innovación significativa en el campo del ahumado, combinando la precisión de la IA con tecnologías avanzadas para lograr resultados anteriormente imposibles en la cocina tradicional.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-tecnicas-de-smoke-food-por-gastro-lexicum" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
 
 <h3 class="wp-block-heading">Técnicas Innovadoras y Fusión</h3>
 
@@ -915,6 +919,8 @@ wpId: 1017
 <div class="wp-block-affiliate-plugin-lasso"></div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-tecnicas-de-smoke-food-por-gastro-lexicum" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
 
 <h2 class="wp-block-heading">Innovación y Futuro del Smoke Food</h2>
 

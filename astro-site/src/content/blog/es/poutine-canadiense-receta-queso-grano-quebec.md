@@ -2,7 +2,7 @@
 title: "Poutine Canadiense: Receta Pro de Quebec con Queso en Grano"
 description: "Auténtica poutine canadiense: papas fritas doble cocción, queso en grano derretido y salsa gravy caliente. Técnica Pro de Quebec."
 pubDate: 2026-06-24
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/poutine.jpg
 imageAlt: "Poutine Canadiense: Receta Pro de Quebec con Queso en Grano"
@@ -31,6 +31,9 @@ wpId: 3582
 <li>300g queso en grano (cheese curds) fresco, a temperatura ambiente</li>
 <li>Sustituto: mozzarella fresca en trozos pequeños</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=poutine-canadiense-receta-queso-grano-quebec" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h3>Para la Salsa (Gravy):</h3>
 <ul>
 <li>3 cucharadas mantequilla</li>
@@ -53,6 +56,9 @@ wpId: 3582
 <p><strong>Paso 8:</strong> Vierte caldo poco a poco, removiendo constantemente para evitar grumos.</p>
 <p><strong>Paso 9:</strong> Añade salsa de soja y pimienta.</p>
 <p><strong>Paso 10:</strong> Cocina 5 minutos hasta que espese. Mantén muy caliente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=poutine-canadiense-receta-queso-grano-quebec" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h3>Fase 3: Montaje (inmediato)</h3>
 <p><strong>Paso 11:</strong> En platos hondos, coloca una base generosa de papas fritas calientes.</p>
 <p><strong>Paso 12:</strong> Esparce el queso en grano sobre las papas.</p>
@@ -66,6 +72,9 @@ wpId: 3582
 <p>El queso frío no se derretirá bien. Sacar del refrigerador 30 minutos antes.</p>
 <h3>3. Salsa Caliente</h3>
 <p>La salsa debe estar hirviendo al verter para derretir el queso. Servir inmediatamente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=poutine-canadiense-receta-queso-grano-quebec" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

@@ -2,7 +2,7 @@
 title: "Masala Dosa: Receta Pro del Desayuno del Sur de India"
 description: "Auténtico masala dosa: crêpe crujiente de arroz fermentado, relleno de patatas especiadas. Técnica Pro con fermentación natural."
 pubDate: 2026-05-19
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/masala-dosa.jpg
 imageAlt: "Masala Dosa: Receta Pro del Desayuno del Sur de India"
@@ -43,6 +43,9 @@ wpId: 3559
 <li>Sal</li>
 <li>Cilantro fresco picado</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=masala-dosa-receta-desayuno-india-sur" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 <h3>Para Acompañar:</h3>
 <ul>
 <li>Chutney de coco</li>
@@ -62,6 +65,9 @@ wpId: 3559
 <p><strong>Paso 9:</strong> Añade cebolla. Sofríe 5 minutos hasta dorada.</p>
 <p><strong>Paso 10:</strong> Añade cúrcuma, patatas cocidas, sal. Mezcla suavemente. Cocina 5 minutos.</p>
 <p><strong>Paso 11:</strong> Espolvorea cilantro. Reserva caliente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=masala-dosa-receta-desayuno-india-sur" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 <h3>Fase 3: Hacer Dosa (20 min)</h3>
 <p><strong>Paso 12:</strong> Calienta plancha o tawa a fuego medio-alto. Pincela con aceite.</p>
 <p><strong>Paso 13:</strong> Vierte un cucharón de masa en el centro.</p>
@@ -77,6 +83,9 @@ wpId: 3559
 <p>La técnica requiere práctica. La masa debe estar lo suficientemente líquida para extenderse fácilmente.</p>
 <h3>3. Plancha Caliente</h3>
 <p>Si la plancha está fría, el dosa se pega. Si está muy caliente, se quema antes de cocinarse.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=masala-dosa-receta-desayuno-india-sur" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

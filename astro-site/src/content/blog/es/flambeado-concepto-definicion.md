@@ -2,7 +2,7 @@
 title: "Flambeado: Concepto y Definición"
 description: "Descubre qué es el flambeado: técnica culinaria con fuego para realzar sabores. Historia, bebidas ideales, paso a paso y seguridad. Guía profesional completa."
 pubDate: 2026-03-07
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/flambeado-featured.jpg
 imageAlt: "Flambeado: Concepto y Definición"
@@ -30,6 +30,9 @@ wpId: 3171
 <h2>Bebidas Alcohólicas para Flambeado</h2>
 <p>No todos los alcoholes son igual de adecuados para flambear. La clave está en el <strong>porcentaje de alcohol (graduación)</strong> y en los compuestos aromáticos que aportarán al plato final.</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/flambeado-bebidas.jpg" alt="Botellas de coñac y brandy con ingredientes para preparación de flambeado" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=flambeado-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h3>Bebidas Recomendadas por Tipo de Plato</h3>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -82,6 +85,9 @@ wpId: 3171
 <p>Verter la bebida alcohólica sobre el alimento caliente. La cantidad depende del tamaño del plato, pero generalmente entre 30-60 ml es suficiente para crear un buen efecto sin saturar el sabor.</p>
 <h3>Paso 4: Encender el Fuego</h3>
 <p>Inclinar suavemente la sartén hacia la llama del fogón (si es de gas) o usar un encendedor de cocina/cerilla larga. <strong>Nunca usar papel ni materiales que puedan caer sobre el fuego.</strong></p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=flambeado-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
+
 <h3>Paso 5: Controlar las Llamas</h3>
 <p>Mantener la sartén en movimiento suave para distribuir el calor uniformemente. Las llamas pueden alcanzar entre 30-60 cm de altura. No alarmarse; el fuego se extinguirá solo cuando se consuma el alcohol.</p>
 <h3>Paso 6: Servir</h3>
@@ -107,6 +113,9 @@ wpId: 3171
 <p><strong>¿Es seguro flambear en casa?</strong><br /> Sí, siempre que se sigan las precauciones de seguridad: campana extractora apagada, recipiente con tapa cerca, y extintor disponible.</p>
 <p><strong>¿Por qué se hace el flambeado en sala y no en cocina?</strong><br /> El espectáculo es parte de la experiencia. Muchos restaurantes fine dining preparan platos flambeados en la mesa del comensal para crear un momento memorable.</p>
 <p><strong>¿Qué pasa si el fuego no se apaga solo?</strong><br /> Colocar inmediatamente la tapa sobre el recipiente para privar de oxígeno. Nunca usar agua ni soplar.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=flambeado-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>flambeado</strong> es mucho más que un truco teatral: es una técnica que transforma ingredientes simples en experiencias gastronómicas memorables. Desde el accidente feliz de Henri Carpentier en 1895 hasta las mesas de los mejores restaurantes del mundo, esta técnica ha demostrado que el fuego, controlado con respeto y conocimiento, puede elevar la cocina a nuevas alturas.</p>
 <p>Dominar el flambeado requiere práctica, pero los resultados —tanto en sabor como en presentación— justifican el esfuerzo. La clave está en la preparación, las precauciones de seguridad y el respeto por el fuego.</p>

@@ -2,7 +2,7 @@
 title: "Confit: Concepto y Definición"
 description: "Descubre qué es el confit: técnica francesa de cocción lenta en grasa. Historia de Gascuña, temperaturas, tiempos y paso a paso. Guía profesional completa."
 pubDate: 2026-03-08
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/confit-de-pato.jpg
 imageAlt: "Confit: Concepto y Definición"
@@ -44,6 +44,9 @@ wpId: 3175
 <h2>Tipos de Confit según el Alimento</h2>
 <h3>Confit de Pato (Confit de Canard)</h3>
 <p>El más famoso de todos. Se prepara con muslos de pato salados y cocidos en su propia grasa. El resultado es una carne que se deshace en el paladar, con piel crujiente cuando se dora posteriormente. Especialidad de Gascuña protegida por indicación geográfica.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=confit-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
+
 <h3>Confit de Ganso (Confit d&#8217;Oie)</h3>
 <p>Similar al de pato pero con muslos de ganso. Más tradicional en Navidad y celebraciones. La grasa de ganso tiene un punto de humo más alto y sabor más intenso.</p>
 <h3>Confit de Cerdo</h3>
@@ -110,6 +113,9 @@ wpId: 3175
 <li><strong>Aromatizar:</strong> Añadir tomillo, laurel y ajo.</li>
 <li><strong>Reposar:</strong> Refrigerar 24-48 horas para deshidratar la carne y concentrar sabores.</li>
 </ol>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=confit-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
+
 <h3>Día 2: Cocción</h3>
 <ol>
 <li><strong>Lavar:</strong> Eliminar el exceso de sal con agua fría y secar bien.</li>
@@ -153,6 +159,9 @@ wpId: 3175
 <p><strong>¿Es seguro conservar confit sin refrigeración?</strong><br /> Tradicionalmente sí, siempre que la carne esté completamente cubierta por la grasa (que actúa como barrera contra bacterias). Sin embargo, las normativas sanitarias modernas recomiendan refrigeración para mayor seguridad.</p>
 <p><strong>¿Qué hago si no tengo grasa de pato?</strong><br /> Se puede usar manteca de cerdo o aceite de oliva virgen extra, aunque el sabor será diferente. Para resultados auténticos, comprar grasa de pato renderizada en tiendas especializadas.</p>
 <p><strong>¿Por qué mi confit queda grasoso?</strong><br /> Probablemente la temperatura fue demasiado alta o la carne no se secó bien antes de cocinar. La grasa debe penetrar, no quedar en la superficie. Dorar bien la piel antes de servir ayuda a eliminar exceso.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=confit-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>confit</strong> es una de las técnicas más nobles de la gastronomía francesa, nacida de la necesidad y perfeccionada por siglos de tradición gascuña. Más que un simple método de cocción, es una transformación alquímica que convierte cortes humildes en bocados de textura sedosa y sabor profundo.</p>
 <p>La paciencia es la clave: el confit no se puede apresurar. Las horas de cocción lenta, el respeto por las temperaturas y la calidad de la grasa determinan el éxito del resultado. Pero cuando se domina, el confit se convierte en una herramienta invaluable para cualquier chef profesional.</p>

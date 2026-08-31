@@ -2,7 +2,7 @@
 title: "Goulash Húngaro: Receta Pro de la Cocina de Budapest"
 description: "Auténtico goulash húngaro: carne de ternera, pimentón dulce, cebolla caramelizada. Técnica Pro para la sopa-estofado nacional de Hungría."
 pubDate: 2026-04-16
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/goulash.jpg
 imageAlt: "Goulash Húngaro: Receta Pro de la Cocina de Budapest"
@@ -36,6 +36,9 @@ wpId: 3477
 <li>Sal y pimienta</li>
 <li>Perejil fresco picado</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=goulash-hungaro-receta-cocina-budapest" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h2>Preparación Paso a Paso</h2>
 <h3>Fase 1: Sofrito de Cebolla (15 min)</h3>
 <p><strong>Paso 1:</strong> Calienta la grasa en una cazuela grande. Añade las cebollas picadas.</p>
@@ -50,6 +53,9 @@ wpId: 3477
 <p><strong>Paso 7:</strong> Vierte agua caliente hasta cubrir (1.5 litros). Lleva a ebullición suave.</p>
 <p><strong>Paso 8:</strong> Tapa y cocina 1.5 horas a fuego bajo. La carne debe estar casi tierna.</p>
 <p><strong>Paso 9:</strong> Añade pimientos y patatas. Cocina 30-45 minutos más hasta que las patatas estén tiernas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=goulash-hungaro-receta-cocina-budapest" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h3>Fase 4: Servicio</h3>
 <p><strong>Paso 10:</strong> Sazona con sal y pimienta. Debe ser consistente, ni muy líquido ni muy espeso.</p>
 <p><strong>Paso 11:</strong> Sirve en platos hondos con perejil fresco. Acompaña con pan de centeno.</p>
@@ -58,6 +64,9 @@ wpId: 3477
 <p>La base del sabor. Mínimo 15 minutos de cocción lenta. La cebolla debe reducirse a la mitad.</p>
 <h3>2. Pimentón de Calidad</h3>
 <p>Busca pimentón húngaro (szeged o kalocsa). El pimentón español es diferente. Nunca usar pimentón ahumado.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=goulash-hungaro-receta-cocina-budapest" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

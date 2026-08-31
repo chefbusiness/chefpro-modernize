@@ -2,7 +2,7 @@
 title: "IA para Pastelería Profesional: Usos Reales en el Obrador"
 description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Plan AI Chef Miembro: 10.000 créditos por 10 €/mes."
 pubDate: 2025-02-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/AI-Chef-Pro-un-ChatGPT-para-la-Pasteleria-Profesional-Usos-y-Aplicaciones.jpg
 imageAlt: "AI Chef Pro un ChatGPT para la Pastelería Profesional: Usos y Aplicaciones"
@@ -69,6 +69,8 @@ Como ves, la IA no decide por ti. Pero te quita las operaciones repetitivas y te
 
 Si quieres profundizar en cómo la IA aborda este tema, te dejo un artículo sobre [escandallos de pastelería con IA](https://aichef.pro/blog/escandallos-ia-cocina-profesional) que baja al detalle.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-un-chatgpt-para-la-pasteleria-profesional-usos-y-aplicaciones" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 ## Balanceo y escalado de recetas: hidratación, grasas y azúcares
 
 Uno de los dolores de cabeza más frecuentes es adaptar una receta a un formato distinto o ajustar su equilibrio cuando tocas un ingrediente. Porque en pastelería no se trata solo de una regla de tres: el porcentaje de agua, la materia grasa y los azúcares cumplen funciones estructurales. Si tocas uno, todo se descoloca.
@@ -96,6 +98,8 @@ Un obrador mediano que aplica IA para planificar su campaña de Roscones puede r
 En San Valentín, los bombones y las tartas individuales mandan. Aquí la IA te cruza datos de venta del año anterior, te alerta de cuellos de botella en atemperado y te propone elaboraciones que puedas adelantar sin perder calidad.
 
 Para campañas aún más afinadas, es útil apoyarse en [kits y plantillas de gestión para obrador](https://aichef.pro/productos-digitales) que te estandarizan procesos.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-un-chatgpt-para-la-pasteleria-profesional-usos-y-aplicaciones" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 ## Vitrina, PVP y margen: poner precio sin regalar el trabajo
 
@@ -131,6 +135,8 @@ Te lo pongo en una tabla, porque hablar de sensaciones en esto es perder el tiem
 Un agente especializado no es más inteligente que un LLM generalista: es más enfocado. Eso significa que no te resuelve dudas de historia medieval ni te escribe un poema, pero tampoco te dirá que un brioche lleva 80% de hidratación o que el fondant se hace con aceite de oliva.
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-un-chatgpt-para-la-pasteleria-profesional-usos-y-aplicaciones" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
 
 ## Planes y cómo empezar
 

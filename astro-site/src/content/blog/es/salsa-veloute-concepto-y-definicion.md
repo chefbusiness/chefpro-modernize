@@ -2,7 +2,7 @@
 title: "Salsa Velouté: Concepto y Definición"
 description: "Salsa madre con roux rubio y caldo claro. Domina el velouté profesional."
 pubDate: 2026-02-18
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/veloute-destacada.jpg
 imageAlt: "Salsa velouté clara y aterciopelada"
@@ -33,6 +33,9 @@ wpId: 2732
 <h3>El proceso de elaboración explicado</h3>
 <p>Con el roux recién hecho y todavía caliente, incorpora el fondo poco a poco mientras bates con varilla para evitar grumos. El orden correcto es verter un tercio del líquido, integrar completamente, añadir el resto y llevar a ebullición suave. Una vez que rompe a hervir, baja el fuego al mínimo y deja cocer entre 20 y 30 minutos, espumando la superficie de vez en cuando para retirar impurezas y el exceso de grasa que pueda subir.</p>
 <p>El punto final debe ser una salsa que cubra ligeramente el dorso de una cuchara, sin llegar a ser densa como una bechamel. Si la reduces demasiado, corregirás con más fondo caliente; si te queda ligera, prolonga la cocción unos minutos. Pasa por chino o colador fino y mantenla caliente al baño maría hasta el servicio. Un truco de oficio: pon unos daditos de mantequilla fría sobre la superficie para evitar que se forme costra mientras espera.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-veloute-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h3>Errores frecuentes y cómo evitarlos</h3>
 <ul>
 <li><strong>Grumos:</strong> casi siempre aparecen porque el fondo estaba frío al incorporarlo al roux caliente, o viceversa. Ambos deben estar a temperatura similar, idealmente el fondo caliente y el roux recién hecho.</li>
@@ -95,6 +98,9 @@ wpId: 2732
 </tr>
 </tbody>
 </table></div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-veloute-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2>Preguntas frecuentes</h2>
 <h3>¿Cuál es la diferencia entre velouté y bechamel?</h3>
 <p>La diferencia fundamental está en el líquido de base. La bechamel se elabora con leche infusionada con cebolla, clavo y laurel, mientras que la velouté utiliza un fondo blanco de ave, pescado o ternera. Además, el roux de la bechamel suele ser blanco (apenas cocinado) y el de la velouté es rubio, ligeramente más cocido para aportar un matiz tostado sutil. La bechamel es más láctea y densa; la velouté, más ligera y sabrosa a fondo.</p>
@@ -106,6 +112,9 @@ wpId: 2732
 <p>Puedes, aunque el resultado no se ajusta estrictamente a la definición clásica de velouté, que exige un fondo de origen animal. Un caldo de verduras bien concentrado, con puerro, apio, cebolla asada y un toque de alga kombu para aportar profundidad, te dará una base excelente para una salsa madre vegetal. La técnica de roux y cocción es idéntica; solo cambia la naturaleza del fondo.</p>
 <h3>¿Por qué mi velouté sabe insípida si usé un buen fondo?</h3>
 <p>El problema más habitual es la falta de reducción. La velouté necesita cocerse el tiempo suficiente para que el roux libere todo su poder espesante y el fondo concentre sus sabores. Si la retiras del fuego en cuanto espesa, te quedará una salsa con textura correcta pero sabor diluido. Déjala reducir a fuego suave los minutos que necesita, espumando, y prueba de sal solo al final, cuando el volumen se haya estabilizado.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-veloute-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Roux: concepto y definición</a></li>

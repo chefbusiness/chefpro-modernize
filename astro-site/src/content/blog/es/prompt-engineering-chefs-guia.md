@@ -2,7 +2,7 @@
 title: "Prompt Engineering para Chefs: Guía Práctica de Prompts 2026"
 description: "Domina el prompt engineering para chefs: anatomía de un buen prompt (rol, contexto, tarea, formato), 10 ejemplos antes/después y errores a evitar."
 pubDate: 2026-03-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-chef-pro
 image: /blog-assets/2026/02/prompteng-nanobanana.jpg
 imageAlt: "Prompt Engineering para Chefs: Guía Definitiva 2026"
@@ -59,6 +59,8 @@ Cuando trabajas con estos cinco elementos, el prompt deja de ser una pregunta ab
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=prompt-engineering-chefs-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 ## 10 prompts antes y después: del genérico al resultado de cocina real
 La mejor forma de entender el *prompt engineering* es ver la diferencia entre lo que pide un cocinero sin entrenamiento y lo que pide quien ya domina la estructura. En cada caso, el prompt profesional incluye rol, contexto, tarea y formato de salida concretos. La tabla recoge diez situaciones cotidianas de cualquier cocina profesional.
 
@@ -76,6 +78,8 @@ La mejor forma de entender el *prompt engineering* es ver la diferencia entre lo
 | **Planificación de producción para un evento** | “Organiza un evento para 100 personas.” | “Eres jefe de producción de un catering de alto volumen. Tenemos un cóctel de pie para 120 personas el sábado 14 de junio de 2026, con 8 pases fríos y calientes. Elabora una hoja de ruta de producción de 3 días antes, incluyendo lista de compras agrupada por proveedor, secuencia de elaboración, necesidades de personal por turno y plan de montaje en sala. Formato de tabla con día, hora, tarea y responsable. Asume una cocina central de 80 m² con 6 cocineros.” |
 
 Los diez ejemplos muestran un patrón: el prompt flojo es una pregunta vaga; el prompt profesional es una orden de trabajo. Cuando incorporas rol, contexto, tarea y formato, la IA deja de comportarse como un buscador de recetas y empieza a funcionar como un asistente que entiende de cocina. Si quieres seguir practicando con más situaciones, en nuestra [biblioteca de 151 prompts para restaurantes y hostelería](https://aichef.pro/blog/151-prompts-para-restaurantes-y-hosteleria) tienes ejemplos listos para copiar y adaptar.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=prompt-engineering-chefs-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 ## Errores típicos que arruinan tus prompts (y cómo corregirlos)
 Incluso conociendo la teoría, hay vicios que se cuelan y convierten un prompt en una pérdida de tiempo. La tabla siguiente recoge los más frecuentes en cocina profesional y la forma de atajarlos.
@@ -108,6 +112,8 @@ Rara vez el primer prompt da en el clavo. La clave está en iterar como ajustas 
 5. **Iteras hasta que el output es directamente utilizable** en tu cocina: lo imprimes, lo pasas a tu equipo o lo subes a tu sistema sin retoques.
 
 Este método convierte a la IA en un asistente que aprende de tus correcciones durante la misma sesión. No necesitas empezar de cero cada vez; basta con afinar. En cocina profesional, donde el tiempo es oro, iterar bien es más rentable que escribir un prompt perfecto al primer intento.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=prompt-engineering-chefs-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
 
 ## Ponlo en práctica en AI Chef Pro
 Aplicar el *prompt engineering* en tu día a día no significa que tengas que diseñar cada instrucción desde cero. En [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=prompt-engineering) hemos reunido **+70 agentes de IA culinarios** con prompts ya optimizados por chefs en activo, traducidos a 7 idiomas y con español nativo. Cada agente cubre una tarea concreta —escandallos, fichas técnicas, ingeniería de menú, control de alérgenos, copy para redes, formación de personal— y ya incluye el rol, el contexto base y el formato de salida que necesitas. Tú solo añades los detalles de tu restaurante y el agente responde con criterio de cocina, no con recetas genéricas.

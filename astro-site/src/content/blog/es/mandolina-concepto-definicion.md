@@ -2,7 +2,7 @@
 title: "Mandolina: Concepto y Definición"
 description: "Descubre qué es una mandolina: utensilio de corte profesional para láminas uniformes. Tipos, técnicas de uso seguro, cortes y mantenimiento. Guía completa."
 pubDate: 2026-03-08
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/mandolina-featured.jpg
 imageAlt: "Mandolina: Concepto y Definición"
@@ -54,6 +54,9 @@ wpId: 3182
 <li>Precio: 80-300€.</li>
 <li>Marcas líderes: Bron Coucke, De Buyer, Matfer Bourgeat.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mandolina-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h3>Mandolinas Japonesas (Benriner)</h3>
 <p>Especializadas en cortes ultra-finos:</p>
 <ul>
@@ -134,6 +137,9 @@ wpId: 3182
 <li><strong>Limpieza:</strong> Limpiar inmediatamente después del uso para evitar resbalones.</li>
 </ol>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/mandolina-seguridad.jpg" alt="Mandolina con protector de seguridad y guante anticorte" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mandolina-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h2>Seguridad: Reglas de Oro</h2>
 <p>Las lesiones con mandolina son frecuentes en cocinas profesionales. Sigue estas reglas:</p>
 <ul>
@@ -181,6 +187,9 @@ wpId: 3182
 <p><strong>¿Cuánto duran las cuchillas de una mandolina profesional?</strong><br /> Con uso diario profesional, 6-12 meses. En uso doméstico ocasional, pueden durar años. Señales de desgaste: cortes irregulares, necesidad de más presión, desgarros en lugar de cortes limpios.</p>
 <p><strong>¿Es mejor mandolina o procesador de alimentos?</strong><br /> Son herramientas diferentes. El procesador es más rápido para grandes cantidades pero no ofrece la precisión ni la uniformidad de la mandolina. Para presentación profesional, la mandolina es insustituible.</p>
 <p><strong>¿Puedo llevar una mandolina en equipaje de mano?</strong><br /> NO. Las cuchillas de mandolina están prohibidas en equipaje de mano en aeropuertos. Debe ir en equipaje facturado.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mandolina-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>mandolina</strong> es una herramienta de precisión que separa la cocina amateur de la profesional. Su capacidad para producir cortes uniformes consistentemente no solo mejora la estética de los platos, sino que garantiza una cocción homogénea y optimiza los tiempos de preparación.</p>
 <p>Sin embargo, es una herramienta que exige respeto. Las lesiones con mandolina son frecuentes y generalmente graves debido a la nitidez de sus cuchillas. La seguridad debe ser la prioridad absoluta: protector de dedos, guante anticorte y atención plena son obligatorios.</p>

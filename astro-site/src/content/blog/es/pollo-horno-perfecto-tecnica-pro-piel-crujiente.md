@@ -2,7 +2,7 @@
 title: "Pollo al Horno Perfecto: Técnica Pro para Piel Crujiente y Carne Jugosa"
 description: "Domina el pollo al horno con técnica profesional: salmuera, temperaturas exactas, reposo obligatorio. Receta Pro con medidas duales y tabla de tiempos."
 pubDate: 2026-03-14
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/pollo-horno-pro.jpg
 imageAlt: "Pollo al Horno Perfecto: Técnica Pro para Piel Crujiente y Carne Jugosa"
@@ -63,6 +63,9 @@ wpId: 3278
 <p><strong>Paso 2:</strong> Añade 1.5 litros de agua fría. Sumerge el pollo en la salmuera fría. Refrigera 4-24 horas.</p>
 <p><strong>Paso 3:</strong> Retira el pollo de la salmuera. Seca completamente con papel de cocina (interior y exterior). Deja reposar 30 minutos a temperatura ambiente.</p>
 <p><em>Pro Tip:</em> La salmuera hidrata la carne y rompe proteínas para mayor jugosidad. El secado completo es crucial para piel crujiente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pollo-horno-perfecto-tecnica-pro-piel-crujiente" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
+
 <h3>Fase 2: Preparación (20 min)</h3>
 <p><strong>Paso 4:</strong> Precalienta el horno a 200°C (400°F) calor arriba y abajo.</p>
 <p><strong>Paso 5:</strong> Mezcla la mantequilla ablandada con el aceite de oliva, sal y pimienta.</p>
@@ -98,6 +101,9 @@ wpId: 3278
 <p>La sal penetra la carne, desnaturalizando proteínas para retener más agua. Resultado: pollo un 20-30% más jugoso. Siempre enfría completamente antes de sumergir el pollo.</p>
 <h3>2. Secado Completo</h3>
 <p>La piel crujiente requiere ausencia de humedad. Seca con papel y deja airear en refrigerador (descubierto) 24h para piel extra crujiente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pollo-horno-perfecto-tecnica-pro-piel-crujiente" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h3>3. Temperatura Inversa</h3>
 <p>Alto inicial (200°C) sella. Moderado (180°C) cocina uniformemente. Alto final (220°C) dora. El termómetro digital elimina conjeturas.</p>
 <h3>4. El Reposo Obligatorio</h3>
@@ -150,6 +156,9 @@ wpId: 3278
 <p><strong>¿Puedo rellenar el pollo con stuffing?</strong><br /> Sí, pero aumenta tiempo de cocción. El relleno debe alcanzar 74°C. Mejor cocinar relleno aparte para control.</p>
 <p><strong>¿Qué hago con los restos?</strong><br /> Desmenuza para tacos, sándwiches, ensaladas. Los huesos para caldo. El pollo cocinado dura 3-4 días en nevera.</p>
 <p><strong>¿Funciona en air fryer?</strong><br /> Para pollo pequeño (1kg). Reduce temperaturas 20°C. Gira a mitad. No igual de jugoso que horno tradicional.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pollo-horno-perfecto-tecnica-pro-piel-crujiente" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h2>Conservación</h2>
 <ul>
 <li><strong>Refrigeración:</strong> 3-4 días (desmenuzado o entero)</li>

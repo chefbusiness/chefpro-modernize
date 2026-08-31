@@ -2,7 +2,7 @@
 title: "Rotación de Personal en Hostelería: Cómo Reducirla con IA"
 description: "La rotación de personal en hostelería cuesta 3.000-5.000 € por baja. Por qué se van y cómo retenerlos con onboarding, turnos justos, formación e IA."
 pubDate: 2026-03-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/gestion-personal-hosteleria-ia-1.jpg
 imageAlt: "Equipo de restaurante en reunión con gerente revisando turnos en pantalla digital"
@@ -59,6 +59,8 @@ El mal clima y la falta de reconocimiento cierran el círculo. He conocido jefes
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-personal-hosteleria-ia-reducir-rotacion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
+
 ## Cuánto te cuesta de verdad reemplazar a un empleado
 
 Vamos a ponerle números a esto, porque cuando un gerente ve el coste real de la rotación en una tabla, la perspectiva cambia. Las referencias orientativas del sector en 2026 sitúan el coste de reemplazar a un empleado de hostelería en una horquilla de 3.000 a 5.000 euros, dependiendo del puesto y del restaurante. Pero ¿de dónde sale esa cifra? Aquí tienes el desglose:
@@ -96,6 +98,8 @@ Según estudios del sector, buena parte de las fugas se producen en los primeros
 Un onboarding que funciona tiene tres patas: documentación, acompañamiento y seguimiento. La documentación implica que el nuevo fichaje reciba por escrito lo que se espera de él: tareas concretas, horarios, normas de casa y criterios de calidad. El acompañamiento supone asignarle un compañero de referencia que no sea el gerente, alguien a quien pueda preguntar sin sentirse evaluado. Y el seguimiento significa sentarse con él los días 1, 3, 7 y 14 para preguntarle cómo está, qué necesita y qué ha visto que podría mejorar.
 
 Aquí la inteligencia artificial te ahorra horas de redacción. Con agentes especializados puedes generar en minutos un manual de bienvenida para un ayudante de cocina, una checklist de tareas para un camarero de sala o un plan de acogida de 14 días con hitos diarios. El gerente no delega el acompañamiento en una máquina, delega el papeleo. El calor humano lo pones tú.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-personal-hosteleria-ia-reducir-rotacion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
 
 ### Turnos justos y previsibles
 
@@ -136,6 +140,8 @@ La clave está en cómo lo integras: los agentes producen borradores en segundos
 Si quieres explorar todas las áreas donde la inteligencia artificial puede apoyar a un gerente, desde la gestión de equipos hasta la optimización de costes, en AI Chef Pro hemos desglosado [20 áreas clave donde la IA te puede ayudar en el día a día del restaurante](https://aichef.pro/blog/gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar).
 
 Y si aún estás decidiendo qué herramientas encajan mejor en tu operativa, aquí tienes [un panorama actualizado de las mejores soluciones de IA para restaurantes en 2026](https://aichef.pro/blog/mejores-ia-restaurantes-2026).
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-personal-hosteleria-ia-reducir-rotacion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 ## Por dónde empezar esta semana
 

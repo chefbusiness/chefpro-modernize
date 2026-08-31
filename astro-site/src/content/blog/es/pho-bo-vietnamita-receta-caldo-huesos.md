@@ -2,7 +2,7 @@
 title: "Pho Bo Vietnamita: Receta Pro del Caldo de Huesos Perfecto"
 description: "Auténtico pho bo vietnamita: caldo de huesos 10 horas, fideos de arroz, hierbas frescas. Técnica Pro para el desayuno nacional de Vietnam."
 pubDate: 2026-04-25
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/pho-vietnamita.jpg
 imageAlt: "Pho Bo Vietnamita: Receta Pro del Caldo de Huesos Perfecto"
@@ -35,6 +35,9 @@ wpId: 3548
 <li>1 cucharada azúcar moreno</li>
 <li>Sal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pho-bo-vietnamita-receta-caldo-huesos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 <h3>Para Servir:</h3>
 <ul>
 <li>400g fideos de arroz planos (banh pho)</li>
@@ -60,6 +63,9 @@ wpId: 3548
 <p><strong>Paso 7:</strong> Retira la falda, reserva. Continúa cocinando huesos 5-7 horas más.</p>
 <p><strong>Paso 8:</strong> Añade especias tostadas en bolsa de tela las últimas 2 horas.</p>
 <p><strong>Paso 9:</strong> Cuela, descarta huesos. Añade salsa de pescado, azúcar, sal.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pho-bo-vietnamita-receta-caldo-huesos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 <h3>Fase 4: Preparar Fideos y Carne</h3>
 <p><strong>Paso 10:</strong> Cocina fideos según instrucciones. Escurre.</p>
 <p><strong>Paso 11:</strong> Corta la falda cocida en rodajas finas.</p>
@@ -72,6 +78,9 @@ wpId: 3548
 <p>El carbonizado aporta profundidad y color oscuro al caldo. No omitir este paso.</p>
 <h3>2. Carne Cruda en el Tazón</h3>
 <p>La técnica tradicional: el caldo hirviendo cocina instantáneamente la ternera fina.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pho-bo-vietnamita-receta-caldo-huesos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

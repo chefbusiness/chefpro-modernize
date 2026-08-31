@@ -2,7 +2,7 @@
 title: "Doro Wat Etíope: Receta Pro con Berbere y Cebollas Caramelizadas"
 description: "Auténtico Doro Wat etíope: pollo guisado con berbere y cebollas caramelizadas 45 minutos. Técnica Pro de Addis Abeba."
 pubDate: 2026-06-16
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/doro-wat.jpg
 imageAlt: "Doro Wat Etíope: Receta Pro con Berbere y Cebollas Caramelizadas"
@@ -38,6 +38,9 @@ wpId: 3576
 <li>4 huevos duros, pelados</li>
 <li>Sal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=doro-wat-etiope-receta-berbere-cebolas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+
 <h3>Berbere (si lo haces casero):</h3>
 <ul>
 <li>2 cucharadas chile en polvo</li>
@@ -66,6 +69,9 @@ wpId: 3576
 <p><strong>Paso 7:</strong> Añade ajo y jengibre. Sofríe 2 minutos.</p>
 <p><strong>Paso 8:</strong> Añade berbere y pasta de tomate. Cocina 5 minutos, removiendo constantemente.</p>
 <p><em>La mezcla debe estar oscura y fragante. No dejes que se queme.</em></p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=doro-wat-etiope-receta-berbere-cebolas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h3>Fase 4: Cocinar Pollo (1-1.5h)</h3>
 <p><strong>Paso 9:</strong> Añade el pollo a la cacerola. Remueve para cubrir con la salsa.</p>
 <p><strong>Paso 10:</strong> Añade agua o caldo hasta cubrir la mitad del pollo.</p>
@@ -82,6 +88,9 @@ wpId: 3576
 <p>El sabor depende del berbere. Si puedes, cómpralo en tiendas etíopes o hazlo casero.</p>
 <h3>3. Huesos en el Pollo</h3>
 <p>El pollo con hueso aporta más sabor. No usar pechugas deshuesadas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=doro-wat-etiope-receta-berbere-cebolas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

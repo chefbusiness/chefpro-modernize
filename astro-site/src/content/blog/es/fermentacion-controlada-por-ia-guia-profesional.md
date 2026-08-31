@@ -2,7 +2,7 @@
 title: "Fermentación Controlada por IA: Guía Especializada para Profesionales Culinarios"
 description: "La fermentación ha sido durante milenios uno de los pilares fundamentales de la gastronomía mundial. Desde el pan hasta el vino, desde el miso hasta el…"
 pubDate: 2026-01-03
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/fermentacion-controlada-por-ia-1.jpeg
 imageAlt: "Fermentación Controlada por IA: Guía Especializada para Profesionales Culinarios"
@@ -213,6 +213,8 @@ wpId: 2007
 <p class="wp-block-paragraph">La implementación práctica de la <strong>inteligencia artificial en procesos de fermentación</strong> se basa en varias tecnologías complementarias que trabajan en conjunto para lograr resultados óptimos.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fermentacion-controlada-por-ia-guia-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 <h3 class="wp-block-heading">Sensores IoT y monitorización en tiempo real</h3>
 
@@ -500,6 +502,8 @@ wpId: 2007
 " data-large-file="/blog-assets/2026/01/mugi-miso-receta-aichefpro-scaled.png" src="/blog-assets/2026/01/mugi-miso-receta-aichefpro-scaled.png" alt="Miso de Soja y Cebada (Mugi Miso)" class="has-border-color has-palette-color-1-border-color wp-image-2263" /><figcaption class="wp-element-caption">Miso de Soja y Cebada (Mugi Miso) – Receta Profesional Generada por AI Chef Pro</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fermentacion-controlada-por-ia-guia-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h3 class="wp-block-heading">Protocolo 2: Miso casero con control de temperatura</h3>
 
@@ -827,6 +831,8 @@ wpId: 2007
 <p class="wp-block-paragraph">Para mantenerte actualizado sobre las últimas innovaciones, consulta regularmente nuestra página de <a href="https://aichef.pro/blog" target="_blank" rel="noopener">roadmap de AI Chef Pro</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fermentacion-controlada-por-ia-guia-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
 
 <h2 class="wp-block-heading">Conclusión: la fermentación como arte y ciencia</h2>
 

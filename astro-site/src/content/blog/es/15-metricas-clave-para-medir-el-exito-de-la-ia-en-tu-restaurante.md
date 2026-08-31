@@ -2,7 +2,7 @@
 title: "15 Métricas Clave para Medir el Éxito de la IA en tu Restaurante"
 description: "En el competitivo sector de la restauración actual, implementar inteligencia artificial ya no es una opción, sino una necesidad estratégica. Sin embargo, la…"
 pubDate: 2026-01-23
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/metricas-ia-restaurantes-aichefpro-1.jpg
 imageAlt: "15 Métricas Clave para Medir el Éxito de la IA en tu Restaurante"
@@ -198,6 +198,8 @@ wpId: 2337
 <p class="wp-block-paragraph">La <a href="https://aichef.pro/blog/automatizacion-en-cocinas-profesionales-el-impacto-de-la-ia" target="_blank">automatización en cocinas profesionales</a> con IA genera mejoras operativas medibles que impactan directamente en la experiencia del cliente y la rentabilidad.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
 
 <h3 class="wp-block-heading">4. Tiempo de preparación de platos</h3>
 
@@ -530,6 +532,8 @@ wpId: 2337
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h3 class="wp-block-heading">14. Nuevas recetas y platos desarrollados con IA</h3>
 
 
@@ -805,6 +809,8 @@ wpId: 2337
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h2 class="wp-block-heading">Conclusión: Medir para mejorar</h2>
 

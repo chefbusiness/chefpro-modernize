@@ -2,7 +2,7 @@
 title: "Cómo Salvar un Restaurante en Crisis: Plan de Choque 24-48h"
 description: "Cómo salvar un restaurante en crisis en 24-48h: diagnóstico exprés, triaje de carta, caja y equipo, y qué automatizar con IA para ganar tiempo, sin humo."
 pubDate: 2026-01-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/salva-tu-restaurante-con-ia-aichefpro-1.jpeg
 imageAlt: "Recupera Tu Restaurante o Negocio de Hostelería en 24/48 Horas Usando la IA de AI Chef Pro: Guía Definitiva 2026"
@@ -59,6 +59,8 @@ Esta tabla es tu primera guardia de urgencias. No te salvará el negocio, pero t
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salvar-recuperar-restaurante-hosteleria-24-48-horas-ia-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
+
 ## Triaje de carta: corta lo que no vende ni deja margen
 
 El movimiento más rápido y de mayor impacto que puedes hacer en 48 horas es meterle tijera a la carta. Una carta inflada de 40, 50 o más platos es un agujero negro de mermas, compras innecesarias y complejidad en cocina. En una crisis, la carta se convierte en tu primera herramienta de estabilización de caja.
@@ -98,6 +100,8 @@ En las primeras 48 horas, céntrate en estas acciones:
 - **Cobra más rápido**: si trabajas con eventos o reservas de grupo, pide anticipos. Si tienes facturas pendientes de cobro, persíguelas hoy mismo.
 
 Estas medidas no arreglan la rentabilidad estructural, pero te compran el oxígeno que necesitas para pensar. Para entender mejor cómo medir la salud real del negocio más allá de la caja, te recomiendo que leas el desglose de [KPIs y métricas de rentabilidad que todo restaurante debería monitorizar](https://aichef.pro/blog/rentabilidad-restaurante-kpis-metricas-2026). Ahí explico qué números mirar cuando la hemorragia ya está controlada.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salvar-recuperar-restaurante-hosteleria-24-48-horas-ia-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
 
 ## Recorta el food cost sin cargarte el plato
 
@@ -153,6 +157,8 @@ Esto es lo que puedes hacer desde hoy mismo, sin permanencia y sin compromiso:
 Con el plan AI Chef Miembro de 10.000 créditos al mes puedes empezar el diagnóstico de tu restaurante ahora mismo. Sin letra pequeña. Sin permanencia. [Prueba AI Chef Pro aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rescate).
 
 La IA te da velocidad y claridad en el diagnóstico. Pero el bisturí lo manejas tú.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salvar-recuperar-restaurante-hosteleria-24-48-horas-ia-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
 
 ## De estabilizar a recuperar: el plan de 90 días empieza cuando pare la hemorragia
 

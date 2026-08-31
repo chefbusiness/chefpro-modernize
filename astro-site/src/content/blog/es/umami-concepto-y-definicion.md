@@ -2,7 +2,7 @@
 title: "Umami: Concepto y Definición"
 description: "Descubre el quinto sabor fundamental en gastronomía. Comprende qué es el umami, su ciencia y aplicación culinaria."
 pubDate: 2026-02-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/umami-destacada.jpg
 imageAlt: "Ingredientes ricos en umami"
@@ -31,6 +31,9 @@ wpId: 2687
 <li><strong>Carne curada o madurada:</strong> un buen chuletón madurado durante semanas desarrolla capas de sabor umami difíciles de igualar.</li>
 <li><strong>Algas kombu:</strong> el alga original, la que empezó todo; sigue siendo una fuente fundamental en la cocina japonesa.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=umami-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h3>La tabla de la sinergia umami</h3>
 <p>El verdadero truco de la alta cocina no está solo en acumular ingredientes umami, sino en combinarlos inteligentemente. Al unir alimentos ricos en glutamato con aquellos cargados de nucleótidos (inosinato o guanilato), la percepción del umami se amplifica hasta ocho veces. Aquí tienes un ejemplo práctico para que lo visualices:</p>
 <div class="table-scroll"><table>
@@ -84,6 +87,9 @@ wpId: 2687
 <p>La mala fama del GMS comenzó en los años 60 con el llamado «síndrome del restaurante chino», pero décadas de investigación científica —avaladas por la FDA, la EFSA europea y la OMS— han concluido que el glutamato monosódico es seguro para el consumo humano. No hay evidencia de que cause reacciones adversas en la población general cuando se consume en cantidades normales. Es, simplemente, un potenciador del sabor que ya existe en la naturaleza.</p>
 <p>En cocina profesional, se usa con criterio: un pellizco de GMS en caldos, salsas o marinadas puede rescatar un plato plano sin enmascarar los sabores principales. Sin embargo, el objetivo no es abusar de él, sino entender que es una herramienta más —como la sal o el azúcar— para equilibrar y realzar el perfil gustativo final.</p>
 <h2>Preguntas frecuentes</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=umami-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 <h3>¿Qué diferencia hay entre umami y glutamato monosódico?</h3>
 <p>El umami es la sensación gustativa que percibimos gracias a receptores específicos de la lengua, mientras que el glutamato monosódico es un compuesto químico, la sal sódica del ácido glutámico, que desencadena precisamente esa sensación umami. Dicho de otra forma: el umami es el sabor, y el GMS es una fuente concentrada de ese sabor, igual que el azúcar es fuente del dulce o la sal del salado.</p>
 <h3>¿Es el umami un sabor artificial o inventado por la industria?</h3>
@@ -94,6 +100,9 @@ wpId: 2687
 <p>Los guisos, estofados y salsas desarrollan más umami con el reposo porque los procesos de hidrólisis y las reacciones entre aminoácidos y nucleótidos continúan lentamente incluso después de la cocción. Los sabores se integran, los compuestos umami se liberan y el perfil gustativo gana en profundidad y redondez, haciendo que el plato sepa más sabroso que recién hecho.</p>
 <h3>¿Tiene el umami alguna función fisiológica en el organismo?</h3>
 <p>Sí, se cree que la capacidad de detectar el umami evolucionó para identificar alimentos ricos en proteínas y aminoácidos esenciales. La presencia de glutamato libre en un alimento indica al cuerpo que contiene proteína digerida o fácilmente asimilable, lo que desde el punto de vista evolutivo supuso una ventaja para seleccionar fuentes nutritivas de calidad. Además, el umami estimula la salivación y la producción de jugos gástricos, preparando el sistema digestivo para procesar proteínas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=umami-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/maillard-concepto-y-definicion-2">Reacción de Maillard: concepto y definición</a></li>

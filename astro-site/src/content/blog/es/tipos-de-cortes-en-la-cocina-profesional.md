@@ -2,7 +2,7 @@
 title: "Tipos de Cortes en la Cocina Profesional"
 description: "En la gastronomía profesional, los cortes representan una base esencial de la técnica culinaria, brindando precisión, uniformidad y estética a las…"
 pubDate: 2026-02-11
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/02/brunoise-aichefpro.jpg
 imageAlt: "Tipos de Cortes en la Cocina Profesional - Brunoise - AI Chef Pro"
@@ -297,6 +297,8 @@ wpId: 2748
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tipos-de-cortes-en-la-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h3 class="wp-block-heading">Sobre la autoría</h3>
 
 
@@ -346,6 +348,8 @@ wpId: 2748
 
 
 <p class="wp-block-paragraph"><strong>Mirepoix</strong><br>Cubos medianos e irregulares (1-1,5 cm), generalmente zanahoria, apio y cebolla. Uso: bases aromáticas. Origen: Francia, atribuido al duque de Mirepoix.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tipos-de-cortes-en-la-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
 
 
 
@@ -416,6 +420,8 @@ wpId: 2748
 " data-large-file="/blog-assets/2026/02/Usu-zukuri-aichefpro.jpg" src="/blog-assets/2026/02/Usu-zukuri-aichefpro.jpg" alt="Usu-zukuri (Japón)" class="wp-image-2768" /><figcaption class="wp-element-caption">Corte Usu-zukuri (Japón) &#8211; AI Chef Pro</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tipos-de-cortes-en-la-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
 
 <h3 class="wp-block-heading">Cortes Japoneses</h3>
 

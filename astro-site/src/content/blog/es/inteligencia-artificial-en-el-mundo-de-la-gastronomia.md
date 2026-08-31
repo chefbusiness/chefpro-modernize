@@ -2,7 +2,7 @@
 title: "La Inteligencia Artificial en el Mundo de la Gastronomía: Guía Completa 2026"
 description: "La inteligencia artificial en el mundo de la gastronomía ha dejado de ser una promesa futurista para convertirse en una realidad tangible que está…"
 pubDate: 2026-01-06
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/inteligencia-artificial-en-el-mundo-de-la-gastronomia-4.jpeg
 imageAlt: "La Inteligencia Artificial en el Mundo de la Gastronomía: Guía Completa"
@@ -162,6 +162,8 @@ wpId: 2051
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=inteligencia-artificial-en-el-mundo-de-la-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 <h2 class="wp-block-heading">IA en diferentes sectores de la hostelería</h2>
 
@@ -339,6 +341,8 @@ wpId: 2051
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=inteligencia-artificial-en-el-mundo-de-la-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 <h2 class="wp-block-heading">¿Puede la IA reemplazar a los chefs?</h2>
 
@@ -544,6 +548,8 @@ wpId: 2051
 <p class="wp-block-paragraph">Existe la preocupación de que la IA pueda conducir a una homogeneización de los menús y la eliminación de la creatividad y singularidad que caracterizan a la gastronomía. La clave está en utilizar la IA como herramienta de apoyo, no como sustituto de la visión artística del chef.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=inteligencia-artificial-en-el-mundo-de-la-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
 
 <h3 class="wp-block-heading">Impacto en el empleo</h3>
 

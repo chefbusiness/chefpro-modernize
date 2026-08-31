@@ -2,7 +2,7 @@
 title: "Chivito Uruguayo: Receta Pro del Sándwich Nacional"
 description: "Auténtico Chivito uruguayo: filete de ternera, jamón, queso, huevo frito y papas. Técnica Pro de Montevideo."
 pubDate: 2026-07-12
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/chivito-uruguayo.jpg
 imageAlt: "Chivito Uruguayo: Receta Pro del Sándwich Nacional"
@@ -26,6 +26,9 @@ wpId: 3591
 <li>Sal y pimienta</li>
 <li>2 cucharadas aceite vegetal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=chivito-uruguayo-receta-sandwich-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+
 <h3>Para Montar el Chivito:</h3>
 <ul>
 <li>4 panes grandes tipo francés o de hamburguesa</li>
@@ -56,6 +59,9 @@ wpId: 3591
 <p><strong>Paso 6:</strong> Añade aceite. Cuando esté caliente, cocina los filetes 3-4 minutos por lado para término medio.</p>
 <p><em>No cocinar demasiado: la carne debe quedar jugosa.</em></p>
 <p><strong>Paso 7:</strong> Los últimos 2 minutos, coloca una loncha de jamón y queso sobre cada filete para que el queso se derrita.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=chivito-uruguayo-receta-sandwich-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h3>Fase 3: Montar Chivitos</h3>
 <p><strong>Paso 8:</strong> Unta mayonesa en la base del pan.</p>
 <p><strong>Paso 9:</strong> Coloca lechuga y rodajas de tomate.</p>
@@ -74,6 +80,9 @@ wpId: 3591
 <p>Colocar el queso sobre el filete caliente los últimos minutos asegura que se derrita.</p>
 <h3>3. Yema Líquida</h3>
 <p>El huevo frito con yema líquida es parte esencial del chivito. No cocinar demasiado.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=chivito-uruguayo-receta-sandwich-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

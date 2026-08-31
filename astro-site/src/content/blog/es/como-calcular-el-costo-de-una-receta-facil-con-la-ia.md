@@ -2,7 +2,7 @@
 title: "Cómo Calcular el Costo de una Receta: Fórmula y Ejemplo"
 description: "Aprende a calcular el costo de una receta paso a paso: fórmula, mermas y un ejemplo numérico completo con precio de venta al food cost del 30 %."
 pubDate: 2025-06-13
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/06/Como-calcular-el-costo-de-una-receta-facil-con-la-IA1.jpeg
 imageAlt: "Cómo calcular el costo de una receta fácil con la IA"
@@ -73,6 +73,8 @@ Para profundizar en cómo sistematizar este cálculo, te recomiendo leer [escand
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-calcular-el-costo-de-una-receta-facil-con-la-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 ## Paso 3: ejemplo numérico completo — Lomo Saltado para 4 porciones
 
 Vamos a la práctica con un plato que conoce cualquier cocinero en Perú, y que se ha vuelto un clásico en Colombia y México: el lomo saltado. Supongamos que estandarizaste la receta para 4 porciones generosas, con guarnición de arroz blanco. Aquí tienes el escandallo completo, mermas incluidas, con precios de referencia expresados en la moneda que uses (el símbolo $ sirve igual para pesos mexicanos, pesos colombianos, soles peruanos o dólares; la mecánica es idéntica, solo cambian los precios de tu mercado local).
@@ -120,6 +122,8 @@ El rango más común para un restaurante de barrio o una picantería está entre
 
 La fórmula que ya vimos —precio = costo por porción ÷ food cost objetivo— te da un piso. Sobre ese piso, ajustas según la competencia, el valor percibido y tu propuesta gastronómica. Pero si no conoces ese piso, estás fijando precios a ciegas. Aquí es donde una [comparativa de calculadoras de food cost con IA](https://aichef.pro/blog/mejores-calculadoras-food-cost-ia-comparativa) te puede orientar para elegir la herramienta que mejor se adapte a tu negocio.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-calcular-el-costo-de-una-receta-facil-con-la-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
+
 ## Paso 5: cada cuánto recalcular (los precios de 2026 no esperan)
 
 En 2026, la inflación alimentaria en varios países de América Latina sigue presionando los costos de la canasta básica. Productos como la carne de res, el pollo, los aceites vegetales y los lácteos muestran una volatilidad que hace temblar cualquier escandallo estático. Si calculaste el costo de tu lomo saltado hace seis meses y no lo has vuelto a revisar, es muy probable que ese $3,25 por porción ya sea historia.
@@ -143,6 +147,8 @@ La plataforma reúne más de 70 agentes de IA culinarios que cubren desde el esc
 
 
 [Prueba la app ahora](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calcular-costo-receta) y deja que la IA haga los números mientras tú te concentras en lo que mejor sabes hacer: cocinar.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-calcular-el-costo-de-una-receta-facil-con-la-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
 
 ## Errores frecuentes al calcular el costo de una receta
 

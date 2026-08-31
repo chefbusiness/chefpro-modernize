@@ -2,7 +2,7 @@
 title: "Glazing: Concepto y Definición"
 description: "Descubre qué es el glazing en cocina profesional: técnica de brillo para verduras, carnes y repostería. Tipos, aplicaciones y paso a paso."
 pubDate: 2026-03-07
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/glazing-featured.jpg
 imageAlt: "Glazing: Concepto y Definición"
@@ -43,6 +43,9 @@ wpId: 3164
 <li>Carnes de caza</li>
 </ul>
 <p>El resultado es un brillo dorado intenso con sabores más profundos y ligeramente dulzones.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=glazing-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 <h3>3. Glazing con Mantequilla (Beurre Glacé)</h3>
 <p>Técnica francesa clásica donde se añade mantequilla fría al final de la cocción para crear un acabado brillante y sedoso. Especialmente usada en:</p>
 <ul>
@@ -110,6 +113,9 @@ wpId: 3164
 <li><strong>Textura:</strong> Crea contrastes entre el exterior brillante y el interior tierno.</li>
 <li><strong>Conservación:</strong> En repostería, sella la humedad de los pasteles.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=glazing-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 <h3>Aplicaciones por Tipo de Establecimiento</h3>
 <p><strong>Restaurantes Fine Dining:</strong> Glazing preciso con brocha para acabados perfectos en platos individuales. Uso de almíbar espejo para postres de alta pastelería.</p>
 <p><strong>Bistrós y Brasseries:</strong> Glazing de verduras clásicas (zanahorias Vichy) como guarnición estándar. Beurre glacé para pescados del día.</p>
@@ -129,6 +135,9 @@ wpId: 3164
 <p><strong>¿Por qué mi glazing no brilla?</strong><br /> Los errores más comunes son: exceso de líquido (no se reduce lo suficiente), temperatura incorrecta (demasiado alta quema el azúcar, demasiado baja no carameliza), o dejar pasar demasiado tiempo antes de servir (el brillo desaparece al enfriarse).</p>
 <p><strong>¿Se puede hacer glazing con antelación?</strong><br /> En repostería sí, el glaseado se mantiene. En cocina salada, el glazing se debe hacer justo antes de servir para mantener el brillo y la temperatura óptima.</p>
 <p><strong>¿Qué utensilios necesito para glazing profesional?</strong><br /> Una cacerola gruesa de fondo (para distribución uniforme del calor), una brocha de pastelería (para aplicación precisa), y un termómetro (para controlar temperaturas en repostería).</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=glazing-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>glazing</strong> es mucho más que una técnica decorativa: es una herramienta profesional que transforma la percepción de un plato, concentra sabores y añade sofisticación. Desde las zanahorias glaseadas de un bistró parisino hasta los espejos perfectos de una pastelería de alta gama, dominar esta técnica es esencial para cualquier chef que aspire a la excelencia.</p>
 <p>La clave está en la <strong>paciencia y la observación</strong>: saber exactamente el punto de reducción, el brillo óptimo y el momento preciso de servir. Con práctica, el glazing se convierte en una extensión natural de la creatividad culinaria.</p>

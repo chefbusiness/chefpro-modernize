@@ -2,7 +2,7 @@
 title: "¿Qué es el Aprendizaje Automático o Machine Learning?"
 description: "El aprendizaje automático es un subcampo de la inteligencia artificial que permite a las computadoras aprender y mejorar a partir de datos, sin ser…"
 pubDate: 2024-10-01
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2024/09/que-es-el-machine-learning.jpeg
 imageAlt: "qué es el machine learning"
@@ -137,6 +137,8 @@ wpId: 539
 </ul>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=aprendizaje-automatico-machine-learning" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
 <h3 class="wp-block-heading"><strong>Futuro del Aprendizaje Automático:</strong></h3>
 
@@ -291,6 +293,8 @@ wpId: 539
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=aprendizaje-automatico-machine-learning" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 <h2 class="wp-block-heading"><strong>Preguntas Frecuentes sobre el Aprendizaje Automático</strong></h2>
 
 
@@ -432,6 +436,8 @@ wpId: 539
 <p class="wp-block-paragraph">El rendimiento de un modelo de aprendizaje automático se evalúa mediante métricas como la precisión, el recall, la precisión y la puntuación F1 en el caso de problemas de clasificación, y el error cuadrático medio (MSE) o el coeficiente de determinación (R²) para problemas de regresión. Estas métricas se calculan utilizando un conjunto de datos de prueba que no se utilizó durante el entrenamiento del modelo.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=aprendizaje-automatico-machine-learning" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
 
 <h3 class="wp-block-heading"><strong>10. ¿Qué habilidades necesito para aprender aprendizaje automático?</strong></h3>
 

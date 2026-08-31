@@ -2,7 +2,7 @@
 title: "Menús Personalizados por Nutrición en tu Restaurante con IA"
 description: "Diseña menús personalizados por nutrición en tu restaurante: dietas, alérgenos y colectividades con IA. La IA orienta; el nutricionista colegiado valida."
 pubDate: 2025-02-27
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IA-y-Nutricion-Planificacion-de-Dietas-Personalizadas-en-Restaurantes.jpg
 imageAlt: "IA y Nutrición: Planificación de Dietas Personalizadas en Restaurantes"
@@ -91,6 +91,8 @@ En 2026, la tendencia del sector no se queda solo en declarar alérgenos: cada v
 
 Si quieres profundizar en cómo blindar tu restaurante ante inspecciones sin perder agilidad en cocina, te recomiendo leer [gestión de alérgenos con IA en hostelería](https://aichef.pro/blog/ia-gestion-alergenos-hosteleria).
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-y-nutricion-planificacion-de-dietas-personalizadas-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 ## Tabla de perfiles nutricionales y adaptaciones de carta
 
 Para que la teoría baje al fogón, he preparado una tabla que resume lo que un chef necesita saber antes de tocar una receta. Datos reales, accionables y pensados para cocinar sin miedo pero con conocimiento.
@@ -123,6 +125,8 @@ Además, la suite de más de 70 agentes de AI Chef Pro está entrenada para calc
 Aquí debo hacer un alto y ser muy claro: los valores nutricionales que arroja una inteligencia artificial son orientativos y dependen de la calidad de los datos de entrada. Siempre hay que validarlos, especialmente cuando se trata de dietas clínicas como la diabetes, alergias graves, embarazo o cualquier patología que requiera supervisión. La IA orienta, agiliza y estructura, pero **no sustituye a un dietista-nutricionista colegiado ni a un médico**. La responsabilidad final sobre alérgenos e información nutricional recae sobre el establecimiento y su responsable de cocina, nunca sobre la máquina.
 
 Si quieres ver cómo una herramienta de IA puede ayudarte a concebir cartas desde cero con lógica nutricional y de costes, échale un vistazo a [crear menús con IA](https://aichef.pro/blog/ia-para-crear-menus).
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-y-nutricion-planificacion-de-dietas-personalizadas-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
 
 ## Menús para colectividades (colegios, hospitales, residencias, empresas)
 
@@ -163,6 +167,8 @@ Para que todo esto no se quede en teoría, voy a detallar un flujo de trabajo re
 
 
 Puedes empezar a construir este flujo sin compromiso y comprobar si encaja en tu operativa real: [prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=nutricion).
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-y-nutricion-planificacion-de-dietas-personalizadas-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
 
 ## Cuánto cuesta empezar
 

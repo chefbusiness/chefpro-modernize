@@ -2,7 +2,7 @@
 title: "15 Técnicas de Cocina Tailandesa AI para Principiantes: Domina el Arte Thai con Inteligencia Artificial"
 description: "La cocina tailandesa representa uno de los pilares más fascinantes de la gastronomía asiática, caracterizada por su perfecto equilibrio entre los cinco…"
 pubDate: 2026-02-09
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/cocina-tailandesa-aichefpro-1.jpeg
 imageAlt: "Cocina Tailandesa AI con AI Chef Pro"
@@ -308,6 +308,8 @@ wpId: 2666
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="559" data-attachment-id="2670" data-orig-file="/blog-assets/2026/02/cocina-tailandesa-aichefpro-3.jpeg" data-orig-size="1408,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cocina-tailandesa-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2026/02/cocina-tailandesa-aichefpro-3.jpeg" src="/blog-assets/2026/02/cocina-tailandesa-aichefpro-3.jpeg" alt="Cocina Tailandesa AI con AI Chef Pro - Preparación de Leche de Coco Fresca (Kati) - Extracción Máxima" class="wp-image-2670" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=cocina-tailandesa-ai-para-principiantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
 <h3 class="wp-block-heading">6. Preparación de Leche de Coco Fresca (Kati) &#8211; Extracción Máxima</h3>
 
@@ -692,6 +694,8 @@ wpId: 2666
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=cocina-tailandesa-ai-para-principiantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 <h2 class="wp-block-heading">Cómo usar AI Chef Pro para dominar estas técnicas</h2>
 
 
@@ -958,6 +962,8 @@ wpId: 2666
 <p class="wp-block-paragraph">El sistema proporciona retroalimentación en tiempo real: «Tu plato necesita +15ml de zumo de lima (aumentar acidez en 0.3 pH) y -5g de azúcar de palma (reducir dulzor en 8%)». Tras 15-20 preparaciones siguiendo estas sugerencias, desarrollarás la capacidad de equilibrar sabores intuitivamente.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=cocina-tailandesa-ai-para-principiantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
 
 <h3 class="wp-block-heading">¿Qué pasa si mis platos no quedan como los de los restaurantes?</h3>
 

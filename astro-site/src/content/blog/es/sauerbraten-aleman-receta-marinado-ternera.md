@@ -2,7 +2,7 @@
 title: "Sauerbraten Alemán: Receta Pro de Marinado de 5 Días"
 description: "Auténtico Sauerbraten alemán: ternera marinada en vinagre y especias 3-5 días, guisada hasta la ternura. Técnica Pro de Renania."
 pubDate: 2026-06-06
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/sauerbraten.jpg
 imageAlt: "Sauerbraten Alemán: Receta Pro de Marinado de 5 Días"
@@ -34,6 +34,9 @@ wpId: 3573
 <li>2 cucharaditas semillas de eneldo</li>
 <li>1 cucharadita mostaza en grano</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=sauerbraten-aleman-receta-marinado-ternera" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 <h3>Para la Salsa:</h3>
 <ul>
 <li>3 cucharadas mantequilla</li>
@@ -58,6 +61,9 @@ wpId: 3573
 <p><strong>Paso 6:</strong> Añade la marinada con vegetales. Lleva a ebullición.</p>
 <p><strong>Paso 7:</strong> Tapa y cocina a fuego bajo 3-4 horas hasta que la carne esté muy tierna.</p>
 <p><strong>Paso 8:</strong> Retira la carne, mantén caliente. Cuela el caldo.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=sauerbraten-aleman-receta-marinado-ternera" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
+
 <h3>Fase 3: Salsa (15 min)</h3>
 <p><strong>Paso 9:</strong> En otra cacerola, derrite 3 cucharadas de mantequilla. Añade harina, cocina 2 minutos.</p>
 <p><strong>Paso 10:</strong> Vierte el caldo colado poco a poco, removiendo hasta espesar.</p>
@@ -71,6 +77,9 @@ wpId: 3573
 <p>Mínimo 3 días, ideal 5. El vinagre transforma la textura de la carne.</p>
 <h3>2. Cocción Lenta</h3>
 <p>No apresurar. La carne debe estar tan tierna que se deshaga con el tenedor.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=sauerbraten-aleman-receta-marinado-ternera" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

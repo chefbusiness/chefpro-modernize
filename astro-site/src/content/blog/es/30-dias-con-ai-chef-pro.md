@@ -2,7 +2,7 @@
 title: "AI Chef Pro Opiniones: Plan Real de 30 Días para Chefs"
 description: "Opiniones reales de AI Chef Pro: un plan de adopción de 30 días, semana a semana y con hitos medibles. Honestos con la curva de aprendizaje. Empieza con AI Chef Miembro."
 pubDate: 2025-09-28
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/30-dias-con-aichefpro-1.jpeg
 imageAlt: "30 Días con AI Chef Pro: Diario de Transformación de un Chef Real"
@@ -62,6 +62,8 @@ Aquí va el esqueleto del plan. Cada semana tiene un foco concreto, una lista de
 | **Semana 3** | Carta y marketing | Rediseñar 5 platos con apoyos de IA, generar textos para carta y contenido de redes | 1 carta o menú revisado con textos listos para imprimir |
 | **Semana 4** | Automatización y rutina | Crear plantillas propias, delegar tareas repetitivas, integrar en flujo diario | 3 tareas semanales fijas delegadas al sistema |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-dias-con-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
+
 ### Semana 1: Fundamentos — De «esto no funciona» a «vale, ya lo tengo»
 
 Empieza configurando tu cuenta. No te saltes este paso: un perfil bien ajustado (tipo de cocina, tamaño del restaurante, idioma principal) ahorra créditos y mejora las respuestas desde el primer día. Tenemos una [guía paso a paso para configurar tu cuenta](https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso) que te lleva en 10 minutos.
@@ -91,6 +93,8 @@ La tercera semana es para la parte más visible del negocio: tu carta. Usa los a
 El hito realista es tener **una carta nueva o un menú de temporada revisado, con textos descriptivos listos para maquetar**. Los agentes de marketing pueden generar descripciones de platos, textos para redes sociales y argumentarios de sala. Esto no sustituye a un copywriter profesional, pero para una carta de diario o un menú de mediodía, cumple de sobra.
 
 Si gestionas un restaurante pequeño o un gastrobar, esta semana es especialmente rentable porque probablemente no tienes presupuesto para diseño de cartas ni agencia de contenido. Revisa [casos de uso reales en hostelería](https://aichef.pro/usos) si quieres ver cómo lo están aplicando otros negocios similares al tuyo.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-dias-con-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
 
 ### Semana 4: Automatización y Rutina — Que el sistema trabaje para ti
 
@@ -131,6 +135,8 @@ Hablemos claro. Después de semanas de uso real, esto es lo que valoramos y lo q
 - La curva de aprendizaje inicial es real. El primer día genera cierta frustración si esperas resultados inmediatos sin dar contexto. No es un problema de la herramienta, es un problema de expectativas, pero ahí está.
 - Necesitas revisar siempre. El output es un buen borrador profesional, no un producto terminado. Si buscas algo que funcione sin tu intervención, esto no es para ti (ni deberías dejar decisiones culinarias en manos de una IA sin supervisión).
 - El modelo de créditos requiere entenderlo. No es un «todo incluido» salvo en el plan Max. Los primeros días tenderás a malgastar créditos con prompts vagos que tendrás que repetir. Con el plan de 30 días que proponemos aquí, ese desperdicio inicial se minimiza.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-dias-con-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
 
 ## Cuánto Cuesta AI Chef Pro
 

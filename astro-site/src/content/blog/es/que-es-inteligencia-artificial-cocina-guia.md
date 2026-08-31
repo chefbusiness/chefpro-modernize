@@ -2,7 +2,7 @@
 title: "Qué es la Inteligencia Artificial en Cocina: Guía Completa 2026"
 description: "Descubre qué es la IA en cocina, sus 4 tipos principales y cómo transforma la gastronomía. Guía completa para chefs profesionales con beneficios medibles y…"
 pubDate: 2026-03-03
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/ia-cocina-nanobanana.jpg
 imageAlt: "Qué es la Inteligencia Artificial en Cocina: Guía Completa 2026"
@@ -23,6 +23,9 @@ wpId: 3007
 <li><strong>Formación:</strong> Manuales técnicos, protocolos de cocina, evaluación de equipo</li>
 </ul>
 <p>  <img decoding="async" src="/blog-assets/2026/02/post1-img3.jpg" alt="Tipos IA culinaria" style="width:100%;max-width:800px;display:block;margin:30px auto;border-radius:8px;">  </p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-inteligencia-artificial-cocina-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
+
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Tipos de IA que Usan los Chefs Profesionales</h2>
 <div class="table-scroll"><table style="width:100%;border-collapse:collapse;margin:20px 0;background:#fff;">
 <tr style="background:#000;color:#ffde59;">
@@ -55,6 +58,9 @@ wpId: 3007
 <p style="color: #333; font-size: 18px; line-height: 1.8;">Un restaurante tradicional madrileño con 30 años de historia implementó IA para modernizar su operativa sin perder esencia:</p>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">• <strong>Antes:</strong> El chef pasaba 4 horas semanales creando descripciones para redes y carta<br /> • <strong>Después:</strong> Con IA especializada, genera 20 descripciones en 20 minutos, luego las personaliza<br /> • <strong>Resultado:</strong> Ahorro de 3.5 horas semanales = 14 horas mensuales para enfocarse en creatividad</p>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">El secreto no es reemplazar el toque humano, sino <strong>eliminar tareas mecánicas</strong> para liberar tiempo creativo.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-inteligencia-artificial-cocina-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
+
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Mitos vs Realidad sobre IA en Cocina</h2>
 <div class="table-scroll"><table style="width:100%;border-collapse:collapse;margin:20px 0;background:#fff;">
 <tr style="background:#000;color:#ffde59;">
@@ -78,6 +84,9 @@ wpId: 3007
 <td style="padding:12px;border:1px solid #ddd;">Bien usada, la IA potencia tu estilo. Mal usada, sí es evidente. Depende del chef.</td>
 </tr>
 </table></div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-inteligencia-artificial-cocina-guia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Por Dónde Empezar con IA en tu Cocina</h2>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">Si estás dando tus primeros pasos, te recomendamos este orden de implementación:</p>
 <ol>

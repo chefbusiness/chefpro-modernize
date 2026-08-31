@@ -2,7 +2,7 @@
 title: "Análisis Sensorial Asistido por IA: Guía Técnica para el Desarrollo de Productos Gastronómicos"
 description: "El análisis sensorial ha sido durante décadas una disciplina fundamental en la industria alimentaria, permitiendo evaluar las características organolépticas…"
 pubDate: 2025-12-23
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: tutoriales
 image: /blog-assets/2025/12/analisis-sensorial-asistido-por-ia-4.jpeg
 imageAlt: "Análisis Sensorial Asistido por IA"
@@ -480,6 +480,8 @@ wpId: 1871
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=analisis-sensorial-asistido-por-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
+
 <h3 class="wp-block-heading">Fase 3: Desarrollo y Entrenamiento de Modelos</h3>
 
 
@@ -932,6 +934,8 @@ wpId: 1871
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=analisis-sensorial-asistido-por-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 <h3 class="wp-block-heading">3. Gemelos Digitales Sensoriales</h3>
 
 
@@ -1365,6 +1369,8 @@ wpId: 1871
 <figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=analisis-sensorial-asistido-por-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 <h2 class="wp-block-heading">Preguntas Frecuentes sobre Análisis Sensorial Asistido por IA</h2>
 

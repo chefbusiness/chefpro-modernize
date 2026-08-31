@@ -2,7 +2,7 @@
 title: "Menús para Colectividades: IA, Nutrición y Costes 2026"
 description: "Cómo planificar menús para colectividades con IA: requisitos nutricionales por colectivo, frecuencias del RD 315/2025, alérgenos y food cost ajustado."
 pubDate: 2026-03-22
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/colectividades-ia-1.jpg
 imageAlt: "Cocina industrial de colectividades preparando cientos de raciones con IA"
@@ -60,6 +60,8 @@ Cada colectivo tiene un perfil nutricional distinto y una normativa de referenci
 | Residencia de mayores | Mayor densidad proteica y calórica en textura adaptada | Proteínas de alto valor biológico, calcio, vitamina D, fibra, texturas modificadas (túrmix, purés, disfagia), control de sodio y azúcares | Ley 17/2011, guías de nutrición geriátrica, protocolos de disfagia |
 | Hospital (dietas terapéuticas) | Desde dieta basal hasta hipocalórica, hiposódica, hipoglucídica, sin residuos o disfagia | Precisión absoluta en gramajes, restricciones de nutrientes, texturas, alérgenos, interacciones con medicación | Ley 17/2011, Reglamento 1169/2011, protocolos clínicos internos |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-colectividades-comedores-menus-nutricion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ## El Real Decreto 315/2025 y las frecuencias obligatorias: qué cambia en 2026
 
 El RD 315/2025, en vigor desde abril de 2025, ha marcado un antes y un después en la restauración colectiva escolar. Por primera vez una norma estatal fija frecuencias mínimas y máximas de consumo por grupos de alimentos, obliga a que los menús estén supervisados por profesionales titulados en nutrición humana y dietética y exige publicar mensualmente el menú completo con ingredientes, alérgenos y técnicas culinarias, además de recomendaciones para las cenas.
@@ -91,6 +93,8 @@ La gran ventaja de trabajar con un sistema inteligente es que puedes parametriza
 - **Estacionalidad**: puedes priorizar productos de temporada para mejorar el precio y la calidad.
 - **Aceptación por comensal**: si introduces datos de satisfacción de ciclos anteriores, los agentes de IA pueden ajustar las recetas para mejorar la aceptación sin perder el perfil nutricional.
 - **Documentación automática**: cada menú cíclico genera sus fichas técnicas, sus informes de frecuencias y sus cartas de alérgenos listas para publicar o presentar en una auditoría.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-colectividades-comedores-menus-nutricion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
 
 ## Alérgenos a escala: gestión de los 14 alérgenos con cientos de comensales
 
@@ -129,6 +133,8 @@ Con AI Chef Pro, el flujo es este:
 La plataforma cuenta con más de 70 agentes de IA culinarios, disponibles en español nativo y en 6 idiomas más, que cubren desde la generación de menús cíclicos hasta el cálculo de escandallos, la gestión de alérgenos y la documentación para colectividades. Puedes empezar con el plan AI Chef Miembro —10.000 créditos al mes, con tarjeta— y escalar a Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) o Max (95 €/mes, créditos ilimitados, o 950 €/año).
 
 Si quieres probar cómo funciona en tu cocina, puedes acceder directamente a la [app de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=colectividades).
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-colectividades-comedores-menus-nutricion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
 
 ## Cierre práctico: lo que importa de verdad
 

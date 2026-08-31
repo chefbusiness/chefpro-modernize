@@ -2,7 +2,7 @@
 title: "Cuándo Pasar de AI Chef Miembro a Premium en IA: 5 Señales"
 description: "El plan AI Chef Miembro de AI Chef Pro da 10.000 créditos al mes por 10 € con tarjeta.” Estas son las 5 señales medibles de cuándo compensa pasar a un plan premium."
 pubDate: 2025-09-30
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/gratis-a-pro-aichefpro-1.jpeg
 imageAlt: "De AI Chef Miembro a Pro: 5 Señales de que Necesitas Upgrade en AI Chef Pro"
@@ -57,6 +57,8 @@ La más obvia y la más fácil de medir. Abres la aplicación el día 20, vas a 
 
 Te pongo un ejemplo orientativo, muy típico de lo que veo cada verano. Un restaurante de costa, 40 cubiertos, menú degustación que cambiaba cada semana según la lonja. El chef usaba AI Chef Pro a diario para recalcular escandallos con los precios reales que le pasaba su pescadero cada mañana. El día 14 del mes se quedaba sin créditos. Las dos semanas restantes volvía al Excel manual, con el riesgo de arrastrar precios desactualizados. Hicimos números: estaba perdiendo entre un 3% y un 5% de margen en los platos de pescado esas dos semanas porque los escandallos no reflejaban la subida real del kilo de lubina o de salmonete. El plan Premium Pro le costaba 25 euros al mes. Las pérdidas por no tener escandallos actualizados rondaban los 180 euros mensuales. La decisión era evidente, pero él seguía dudando porque «total, son solo dos semanas». No, no son solo dos semanas: son dos semanas de fugas en tu cuenta de resultados.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=de-gratis-a-pro-5-senales-de-que-necesitas-upgrade" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+
 ### Señal 2: Repites las mismas tareas cada día (volumen operativo)
 
 Hay una diferencia entre usar la IA para una consulta puntual y tenerla integrada en tu rutina diaria. Si cada mañana generas escandallos para el menú del día, cada tarde actualizas fichas técnicas con los precios de lonja y cada semana produces la carta de alérgenos para los comensales, estás en volumen operativo. El plan AI Chef Miembro está pensado para un uso intermitente, no para producción diaria. Cuando la herramienta se convierte en un miembro más del equipo de cocina, necesita el combustible adecuado.
@@ -80,6 +82,8 @@ Hagamos un cálculo realista de lo que consume una producción masiva. Restauran
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="683" data-attachment-id="1660" data-orig-file="/blog-assets/2025/09/gratis-a-pro-aichefpro-3.jpeg" data-orig-size="1248,832" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1759094731&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gratis-a-pro-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/09/gratis-a-pro-aichefpro-3.jpeg" src="/blog-assets/2025/09/gratis-a-pro-aichefpro-3.jpeg" alt="De AI Chef Miembro a Pro: 5 Señales de que Necesitas Upgrade en AI Chef Pro" class="wp-image-1660" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=de-gratis-a-pro-5-senales-de-que-necesitas-upgrade" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
 
 ### Señal 5: El tiempo que te ahorra ya vale más que la cuota (ROI)
 
@@ -124,6 +128,8 @@ Permíteme matizar algunos casos para que no te quedes con dudas. El autónomo d
 El restaurante de menú del día con 25 cubiertos y cuatro platos diarios encaja sin problemas en Premium Pro. Sus 85.000 créditos mensuales le permiten hacer escandallos diarios, fichas semanales y carta de alérgenos con margen para imprevistos. Difícilmente va a necesitar el plan Plus. Sin embargo, si ese mismo restaurante abre también cenas con carta diferente, la cosa cambia. Dos servicios con cartas distintas y rotación semanal duplican el consumo. Ahí el plan Plus empieza a tener sentido.
 
 El grupo con varios locales es un caso claro de Max. Centralizar la documentación de tres, cinco o diez restaurantes genera un volumen de producción que convierte el contador de créditos en un quebradero de cabeza. Con el plan Max, el responsable de I+D del grupo genera las fichas técnicas una sola vez, las traduce a los idiomas que necesite y las distribuye a todos los locales. Que la herramienta no te ponga límites es, en este perfil, una cuestión de fluidez operativa, no solo de ahorro.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=de-gratis-a-pro-5-senales-de-que-necesitas-upgrade" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
 
 ## Cómo decidir sin arrepentirte (regla práctica)
 

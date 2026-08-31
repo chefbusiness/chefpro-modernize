@@ -2,7 +2,7 @@
 title: "APPCC Restaurante: Guía 2026 para Pasar la Inspección"
 description: "Guía práctica de APPCC para restaurantes en 2026: prerrequisitos, PCC, registros e inspecciones, y cómo la IA genera tu plan y automatiza los registros."
 pubDate: 2026-04-03
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b6-1.jpg
 imageAlt: "Chef comprobando la temperatura de los alimentos con termómetro digital"
@@ -66,6 +66,8 @@ Estos siete principios son la columna vertebral del sistema. Apréndetelos porqu
 
 Cada uno de estos principios se traduce en papeles, procedimientos y disciplina diaria en cocina.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=appcc-seguridad-alimentaria-ia-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 ## Los prerrequisitos: la base antes de tocar los PCC
 
 Un error común es lanzarse a definir PCC sin tener los cimientos puestos. Los **prerrequisitos APPCC** son los planes generales de higiene que crean el entorno de trabajo seguro sobre el que luego aplicas los puntos críticos.
@@ -113,6 +115,8 @@ Aquí va una tabla de ejemplo con los PCC que aparecen en la mayoría de cocinas
 
 Repito: esta tabla es un punto de partida. Si en tu cocina haces envasados al vacío o fermentaciones controladas, tus PCC serán otros y necesitarás validarlos con un consultor especializado. El árbol de decisiones no admite atajos.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=appcc-seguridad-alimentaria-ia-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
+
 ## Los registros: tu única defensa ante una inspección
 
 Un plan APPCC sin registros veraces y al día es papel mojado. He visto cocinas con un plan documental impecable que se vinieron abajo porque los registros de temperatura llevaban tres semanas sin rellenar. El inspector de Sanidad no te pregunta por la teoría: te pide los registros de las últimas semanas y los revisa hoja por hoja, buscando huecos, tachones y firmas.
@@ -151,6 +155,8 @@ Un asistente de IA entrenado en hostelería no hace milagros, pero sí te ahorra
 Ahora, déjame ser muy claro: **la IA elabora borradores y plantillas que siempre debe revisar y validar el responsable de seguridad alimentaria**. La responsabilidad legal del plan APPCC es tuya, no de un algoritmo. La IA no sustituye ni el criterio humano ni el conocimiento técnico de un consultor cuando hace falta. Pero te quita horas de papeleo y te permite centrarte en lo que de verdad importa: que la cocina funcione.
 
 Esa es la filosofía con la que está construido [AI Chef Pro](https://aichef.pro/pack-appcc): una plataforma con más de 70 agentes de IA culinarios, disponible en 7 idiomas con español nativo, que entiende cómo funciona una cocina de verdad. Tienes un [pack específico para montar el APPCC](https://aichef.pro/pack-appcc) que te guía paso a paso desde los prerrequisitos hasta los registros, y puedes [empezar a generar tu plan directamente desde la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=appcc).
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=appcc-seguridad-alimentaria-ia-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
 
 ### Qué cuesta empezar
 

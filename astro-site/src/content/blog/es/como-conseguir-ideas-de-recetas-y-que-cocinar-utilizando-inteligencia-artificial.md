@@ -2,7 +2,7 @@
 title: "Cómo Conseguir Ideas de Recetas y Qué Cocinar Utilizando Inteligencia Artificial: Guía Definitiva para Profesionales"
 description: "La inspiración culinaria es un recurso que, incluso para los chefs más experimentados, puede agotarse. La presión diaria por innovar, sorprender a los…"
 pubDate: 2025-11-13
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-chef-pro
 image: /blog-assets/2025/11/ideas-recetas-con-ia-que-cocinar-1.jpeg
 imageAlt: "Cómo Conseguir Ideas de Recetas y Qué Cocinar Utilizando Inteligencia Artificial"
@@ -224,6 +224,8 @@ wpId: 1770
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
 
 <h3 class="wp-block-heading">Método 4: Planificación estratégica de menús</h3>
 
@@ -581,6 +583,8 @@ wpId: 1770
 <p class="wp-block-paragraph">Para explorar más sobre cómo optimizar operaciones de catering, lee nuestro artículo <a href="https://aichef.pro/blog/libreria-de-prompts-para-catering-ai" target="_blank" rel="noopener">biblioteca de prompts para Catering AI</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
 
 <h3 class="wp-block-heading">Caso 3: Chef personal con múltiples clientes VIP</h3>
 
@@ -979,6 +983,8 @@ wpId: 1770
 <p class="wp-block-paragraph">No. AI Chef Pro está diseñado con interfaces intuitivas específicas para chefs, no para programadores. Si puedes usar WhatsApp o Google, puedes usar AI Chef Pro. La curva de aprendizaje es mínima y los resultados se ven desde el primer uso.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
 
 <h3 class="wp-block-heading">¿Qué tan precisos son los cálculos de costes y mermas?</h3>
 

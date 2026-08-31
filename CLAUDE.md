@@ -138,6 +138,41 @@ editan pierde datos en silencio.** No falla, no avisa, y lo que desaparece es
 dinero que no se factura. Cualquier parser así necesita un **gate de recuento
 contra la fuente**.
 
+### La política de 3 banners sólo la cumplía el 12 % del blog (2026-08-31)
+
+Arreglar el catálogo el 30-ago dejó la rotación **en el generador**, no en el
+blog. Medido sobre el `dist`: **39 de 325 posts ES** tenían banners; **286 no
+tenían ninguno**, y el reparto publicado seguía siendo el viejo — 19 productos
+de 44 con `kit-escandallos` en el 29,9 %. Un arreglo en el generador **no
+retroactúa sobre lo ya publicado**: hay que pasar algo por el corpus.
+
+**Y ese algo NO puede ser el ensamblador**: `fase8c-libreria-assemble.py`
+reconstruye el cuerpo desde el `.txt` de bridge y pisa lo publicado. El
+insertador quirúrgico es **`scripts/astro-migration/fase8e-banners-corpus.py`**
+(dry-run por defecto, `--lang es|en`, `--informe`): sólo inserta, y lo demuestra
+con un gate que **quita del resultado exactamente lo insertado y compara con el
+original byte a byte**. Reutiliza `catalogo_productos()`, `rotar_productos()` y
+`banner()` importando el ensamblador, para no duplicar su gate de recuento.
+
+Resultado: ES **325/325 posts con 3 banners**, 44/44 productos, el más usado del
+29,9 % al 7,1 %. EN 64/66. Enlaces internos a las landings huérfanas: de 3 a 24.
+
+**Dos trampas que costaron una iteración cada una:**
+
+- **Repartir por la longitud BRUTA coloca mal los banners.** Los bloques
+  congelados de WordPress son hasta el 21 % del HTML, así que el «85 %» bruto
+  puede caer detrás de todo el texto real. Se reparte por longitud **útil**
+  (descontando esos tramos).
+- **Una línea en blanco dentro de un `<div>` corta el bloque HTML de Markdown**
+  y el resto se escaparía como texto. Por eso se exige balance 0 de
+  contenedores en el punto de inserción. Esa guarda es también la red contra
+  los bloques congelados que no conocemos.
+
+**Hay un CUARTO molde, y está en el blog inglés.** `ai-restaurant-management-software`
+y `ai-food-cost-calculator-reduce-costs` traen el cuerpo entero envuelto en
+`<div class="hero">` / `<header class="post-header">`: no hay ni un punto a
+nivel superior. Quedan **sin banners a propósito**, marcados por el script.
+
 ### ⚠️ `scripts/dataforseo.py` mide ESPAÑA por defecto y no lo dice
 
 `LOC_ES, LANG_ES = 2724, 'es'`. Investigando el blog PT, la primera pasada dio

@@ -2,7 +2,7 @@
 title: "25 Prompts de IA que Todo Chef Necesita Conocer [Guía 2026]"
 description: "La diferencia entre un chef que usa inteligencia artificial de forma amateur y uno que obtiene resultados profesionales está en una sola palabra: prompts…"
 pubDate: 2025-12-28
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: libreria-de-prompts
 image: /blog-assets/2025/12/25-prompts-chefs-2026-4.jpeg
 imageAlt: "25 Prompts de IA que Todo Chef Necesita Conocer"
@@ -178,6 +178,8 @@ Objetivos: identificar «platos estrella» (alta popularidad, alta rentabilidad)
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h3 class="wp-block-heading">Prompt 8: Plan de aprovechamiento de excedentes</h3>
 
 
@@ -351,6 +353,8 @@ Identifica: cuellos de botella que ralentizan la salida de platos, duplicidades 
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 <h3 class="wp-block-heading">Prompt 17: Descripciones de carta irresistibles</h3>
 
 
@@ -514,6 +518,8 @@ Antes de responder, confirma si necesitas información adicional para proporcion
 <figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Nº</th><th class="has-text-align-left" data-align="left">Prompt</th><th class="has-text-align-left" data-align="left">Categoría</th><th class="has-text-align-left" data-align="left">Uso Principal</th></tr></thead><tbody><tr><td>1</td><td>Plato signature con identidad</td><td>Creatividad</td><td>Desarrollo de carta</td></tr><tr><td>2</td><td>Adaptación de clásicos</td><td>Creatividad</td><td>Renovación de menú</td></tr><tr><td>3</td><td>Menú degustación temático</td><td>Creatividad</td><td>Experiencias premium</td></tr><tr><td>4</td><td>Aprovechamiento integral</td><td>Creatividad</td><td>Sostenibilidad</td></tr><tr><td>5</td><td>Fusión culinaria controlada</td><td>Creatividad</td><td>Innovación</td></tr><tr><td>6</td><td>Escandallo con rentabilidad</td><td>Costes</td><td>Control económico</td></tr><tr><td>7</td><td>Rediseño de carta</td><td>Costes</td><td>Ingeniería de menús</td></tr><tr><td>8</td><td>Aprovechamiento excedentes</td><td>Costes</td><td>Reducción desperdicio</td></tr><tr><td>9</td><td>Análisis alérgenos carta</td><td>Alérgenos</td><td>Seguridad alimentaria</td></tr><tr><td>10</td><td>Adaptación múltiples restricciones</td><td>Alérgenos</td><td>Personalización</td></tr><tr><td>11</td><td>Menú inclusivo</td><td>Alérgenos</td><td>Accesibilidad</td></tr><tr><td>12</td><td>Planificación mise en place</td><td>Operativa</td><td>Preparación servicio</td></tr><tr><td>13</td><td>Optimización flujo servicio</td><td>Operativa</td><td>Eficiencia</td></tr><tr><td>14</td><td>Plan semanal compras</td><td>Operativa</td><td>Aprovisionamiento</td></tr><tr><td>15</td><td>Propuesta menú evento</td><td>Catering</td><td>Presupuestos</td></tr><tr><td>16</td><td>Logística evento masivo</td><td>Catering</td><td>Operaciones</td></tr><tr><td>17</td><td>Descripciones carta</td><td>Marketing</td><td>Copywriting menú</td></tr><tr><td>18</td><td>Calendario contenidos</td><td>Marketing</td><td>Redes sociales</td></tr><tr><td>19</td><td>Respuesta reseñas</td><td>Marketing</td><td>Reputación online</td></tr><tr><td>20</td><td>Masterclass técnica</td><td>Conocimiento</td><td>Formación</td></tr><tr><td>21</td><td>Guía producto temporada</td><td>Conocimiento</td><td>Ingredientes</td></tr><tr><td>22</td><td>Troubleshooting</td><td>Conocimiento</td><td>Resolución problemas</td></tr><tr><td>23</td><td>Gestión conflictos</td><td>Liderazgo</td><td>Equipo</td></tr><tr><td>24</td><td>Plan formación</td><td>Liderazgo</td><td>Desarrollo profesional</td></tr><tr><td>25</td><td>Plantilla universal</td><td>Avanzado</td><td>Multiuso</td></tr></tbody></table></div></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
 
 <h2 class="wp-block-heading">Cómo sacar el máximo partido a estos prompts</h2>
 

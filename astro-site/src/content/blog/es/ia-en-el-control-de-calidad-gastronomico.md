@@ -2,7 +2,7 @@
 title: "Control de Calidad en Restaurantes: Guía Práctica con IA"
 description: "Calidad constante plato a plato: fichas técnicas vivas, estandarización entre turnos, auditorías con checklist y el rol de la IA en cada punto."
 pubDate: 2025-12-27
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-control-calidad-gastronomico-1.jpeg
 imageAlt: "IA en el Control de Calidad Gastronómico: Manual Técnico para Establecimientos Profesionales"
@@ -59,6 +59,8 @@ Una ficha técnica viva es un documento digital, actualizado, accesible en cocin
 | Coste y escandallo | Coste por ración actualizado, márgenes, precio de venta | La calidad también es rentabilidad; un plato inconsistente suele ser un plato con coste disparado |
 | Alérgenos | Declaración actualizada por cada ingrediente y contaminación cruzada | Obligatorio por normativa y crítico para evitar incidentes graves |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-el-control-de-calidad-gastronomico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 ### El papel de la IA
 
 Un asistente de inteligencia artificial te genera una ficha técnica completa a partir de tu receta en lenguaje natural. Le dices "lomo de corvina a la brasa con puré de coliflor y salsa de cítricos" y te devuelve la ficha estructurada con gramajes, pasos, puntos de cocción y alérgenos. Pero lo potente no es eso: es que cuando el proveedor te sube el precio del pescado, la IA recalcula el [escandallo automáticamente](https://aichef.pro/blog/escandallos-ia-cocina-profesional) y actualiza el coste por ración. Y si tienes equipo multicultural, traduce la ficha al idioma de cada cocinero manteniendo la precisión técnica. La ficha deja de ser un PDF muerto y se convierte en el estándar operativo vivo.
@@ -98,6 +100,8 @@ Recomiendo una frecuencia semanal para los puntos críticos (temperaturas, ficha
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-el-control-de-calidad-gastronomico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 ### El papel de la IA
 
 La inteligencia artificial analiza los resultados de las auditorías y detecta patrones que a un humano se le escapan. Si durante tres semanas seguidas el punto "emplatado vs foto de referencia" falla en el turno de noche, la IA te lo señala y te sugiere acciones correctivas antes de que el problema se cronifique. No sustituye al chef: le da información priorizada para actuar donde duele.
@@ -128,6 +132,8 @@ La inteligencia artificial no es una herramienta para una sola tarea: es una cap
 <figure class="wp-block-image size-full has-custom-border"><a href="https://gastrolocal.pro" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1152" height="1354" data-attachment-id="1779" data-orig-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" data-orig-size="1152,1354" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gastrolocal-aichefpro" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" src="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" alt="GastroLocal.pro gestión y optimización de las fichas de google business profile para restaurantes y negocios de hostelería" class="has-border-color has-vivid-green-cyan-border-color wp-image-1779" /></a></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Gestión de Personal y Turnos</h3><p class="mt-2 text-muted-foreground">Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.</p><a href="/kit-gestion-personal?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-el-control-de-calidad-gastronomico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Gestión de Personal y Turnos por €14</a></aside>
 
 ## Cómo empezar esta semana
 

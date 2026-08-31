@@ -2,7 +2,7 @@
 title: "Demi-glace: Concepto y Definición"
 description: "Salsa madre oscura concentrada base de muchas salsas francesas."
 pubDate: 2026-02-20
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/demi-glace-destacada.jpg
 imageAlt: "Demi-glace brillante napando"
@@ -25,6 +25,9 @@ wpId: 2736
 <p>El punto de partida son dos preparaciones indispensables. El <strong>fondo oscuro</strong> (de ternera, normalmente) se consigue tostando huesos y verduras en el horno, desglasando con agua o vino y cociendo a fuego muy lento entre 8 y 12 horas. La <strong>salsa española</strong> añade la estructura ligada: un roux tostado oscuro que se humedece con ese mismo fondo y se enriquece con tomate concentrado, hierbas y a veces un toque de cerdo o panceta. Ambas son el esqueleto de la receta; si alguna flojea, la demi-glace lo acusará sin remedio.</p>
 <h3>2. Reducción larga y paciente</h3>
 <p>Se mezclan partes iguales de salsa española y fondo oscuro fresco –todavía sin salar en exceso– en una marmita amplia. La clave está en mantener un hervor suave pero constante, retirando impurezas y espumas superficiales cada media hora con un cucharón o una espumadera. Esta reducción suele durar entre 6 y 10 horas, durante las cuales el líquido pasa de tener un aspecto más bien opaco a volverse translúcido, brillante y con una consistencia que <strong>nape ligeramente el dorso de una cuchara</strong> sin escurrir. En muchas cocinas se acelera ligeramente el hervor al final para forzar la emulsión de las gelatinas con el roux, consiguiendo esa textura sedosa que caracteriza a una demi-glace bien ejecutada.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=demi-glace-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h3>3. Colado, reposo y conservación</h3>
 <p>Terminada la reducción, el líquido se pasa por un colador fino o una estameña y se deja atemperar. Al enfriar, debe tener el comportamiento de una gelatina firme pero temblorosa, señal de que la concentración de colágeno es la correcta. Se envasa en caliente o se solidifica en moldes para porcionar. En hostelería, es habitual tenerla envasada al vacío y refrigerada durante semanas, o congelada en cubos bien protegidos durante meses, para ir dosificando según las necesidades de cada servicio.</p>
 <h2>Usos profesionales de la demi-glace en cocina</h2>
@@ -83,6 +86,9 @@ wpId: 2736
 <h2>¿Merece la pena hacer demi-glace hoy en día?</h2>
 <p>Con las prisas del servicio moderno, algunos cocineros jóvenes se preguntan si vale la pena dedicar dos días a una elaboración que no se sirve directamente al comensal. La respuesta de cualquier chef con oficio es un sí rotundo. La demi-glace casera aporta un brillo, una textura envolvente y una profundidad de sabor que ningún concentrado comercial puede replicar por completo. Además, es una inversión de tiempo que rinde mucho: de un lote bien hecho puedes sacar decenas de servicios y salsas distintas, multiplicando la eficiencia en cocina sin sacrificar la identidad de cada plato.</p>
 <p>Si estás empezando, preparar tu primera demi-glace es también una masterclass práctica sobre el comportamiento de las gelatinas, el manejo de las temperaturas y la construcción de sabor por capas. Entenderla te da el control total sobre cualquier reducción que hagas el resto de tu vida profesional.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=demi-glace-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 <h2>Preguntas frecuentes</h2>
 <h3>¿Se puede espesar una demi-glace con maicena o harina si queda demasiado líquida?</h3>
 <p>En la receta clásica no hace falta, porque la ligazón la proporciona el roux de la salsa española y el colágeno del fondo. Si por algún motivo la reducción no ha llegado a la textura deseada, es preferible continuar reduciendo suavemente antes que añadir un espesante externo que enturbie el brillo y altere el sabor final. Solo en casos de emergencia se podría recurrir a un poco de maicena diluida en agua fría, pero el resultado nunca será el mismo que con una reducción paciente.</p>
@@ -94,6 +100,9 @@ wpId: 2736
 <p>La ternera es, con diferencia, la opción más versátil y la que proporciona un sabor limpio y profundo a la vez. Los huesos de cañón y las rodajas de codillo aportan una cantidad ideal de colágeno, mientras que un poco de rabo o morcillo enriquecen el gusto. Para caza (liebre, venado) se puede optar por fondos más específicos, pero en el día a día de un restaurante, una buena demi-glace de ternera es la navaja suiza que sirve para casi todo.</p>
 <h3>¿Qué textura debe tener una demi-glace bien hecha al enfriarse?</h3>
 <p>En frío (nevera) debe cuajar como una gelatina firme, temblorosa pero que no se deshace con facilidad. Al tacto, ha de notarse sedosa y elástica, sin grumos ni cristales de hielo. Esta consistencia es la garantía de que la concentración de colágeno y la reducción han sido las adecuadas. Una demi-glace que en frío queda líquida o granulada indica un fallo en la proporción de huesos, un exceso de agua inicial o una reducción insuficiente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=demi-glace-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/maillard-concepto-y-definicion-2">Reacción de Maillard: concepto y definición</a></li>

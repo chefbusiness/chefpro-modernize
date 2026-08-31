@@ -2,7 +2,7 @@
 title: "Tacos al Pastor Auténticos: Receta Mexicana con Marinada Pro"
 description: "Auténticos tacos al pastor mexicanos: marinada de chiles guajillo y ancho, piña asada y técnica casera. Sabor de taquería en tu cocina."
 pubDate: 2026-03-26
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/tacos-al-pastor.jpg
 imageAlt: "Tacos al Pastor Auténticos: Receta Mexicana con Marinada Pro"
@@ -37,6 +37,9 @@ wpId: 3298
 <li>800g (1.75 lb) carne de cerdo (espaldilla o pierna), en láminas finas</li>
 <li>200g (7 oz) piña fresca, en rodajas</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tacos-al-pastor-autenticos-receta-mexicana" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
+
 <h3>Para Servir:</h3>
 <ul>
 <li>16 tortillas de <a href="https://aichef.pro/blog/que-es-el-maiz">maíz</a> calientes</li>
@@ -61,6 +64,9 @@ wpId: 3298
 <p><strong>Paso 9:</strong> Corta la carne en trozos pequeños. Corta la piña en cubos.</p>
 <p><strong>Paso 10:</strong> En cada tortilla caliente, coloca carne, piña asada, cebolla y cilantro.</p>
 <p><strong>Paso 11:</strong> Acompaña con salsa roja y limones.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tacos-al-pastor-autenticos-receta-mexicana" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 <h2>Técnicas Clave</h2>
 <h3>1. La Marinada (Adobo)</h3>
 <p>Los chiles guajillo aportan dulzor, los ancho profundidad. El jugo de piña contiene bromelina que ablanda la carne. Mínimo 4 horas, ideal 24h.</p>
@@ -73,6 +79,9 @@ wpId: 3298
 <p>Usa carne de pierna apilada en brocheta vertical. Asa girando (simula el trompo casero).</p>
 <h3>Tacos Árabes</h3>
 <p>Versión originaria: usa pan pita en lugar de tortilla y carne de cordero.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tacos-al-pastor-autenticos-receta-mexicana" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

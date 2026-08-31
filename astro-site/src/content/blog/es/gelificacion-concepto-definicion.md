@@ -2,7 +2,7 @@
 title: "Gelificación: Concepto y Definición"
 description: "Descubre qué es la gelificación: transformación de líquidos en geles. Agentes (agar, gelatina, alginato), técnicas de esferificación, y aplicaciones en…"
 pubDate: 2026-03-19
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/gelificacion-featured.jpg
 imageAlt: "Gelificación: Concepto y Definición"
@@ -63,6 +63,9 @@ wpId: 3240
 <h2>Historia de la Gelificación</h2>
 <h3>Orígenes Antiguos</h3>
 <p>La gelificación es tan antigua como la civilización. Los <strong>egipcios</strong> ya utilizaban colágeno animal para crear preparaciones gelificadas hace más de 3,000 años. En la <strong>Edad Media europea</strong>, los aspics de carne eran símbolo de opulencia en mesas nobles, donde el arte de crear gelatina clara a partir de huesos y cartílagos era una habilidad culinaria apreciada.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gelificacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h3>La Revolución del Agar-Agar</h3>
 <p>En <strong>1658, Minoya Tarozaemon</strong> en Japón descubrió el agar-agar (kanten) accidentalmente cuando observó que el alga <em>Gelidium</em> secada formaba un gel firme. Este descubrimiento revolucionó la cocina asiática y eventualmente la gastronomía mundial, proporcionando un agente gelificante vegetal, térmicamente estable y transparente.</p>
 <h3>Era de la Gastronomía Molecular</h3>
@@ -151,6 +154,9 @@ wpId: 3240
 <li>Enfriar a 4°C durante 30-60 minutos.</li>
 </ol>
 <p><strong>Ventaja:</strong> El gel permanece firme hasta 85°C (ideal para platos calientes).</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gelificacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+
 <h3>Gelificación con Gelatina</h3>
 <p><strong>Bloom (fuerza de gel):</strong> Indica la fuerza del gel. Gelatina de 200-250 bloom es estándar.</p>
 <p><strong>Proporciones:</strong></p>
@@ -226,6 +232,9 @@ wpId: 3240
 <p><strong>¿Por qué mi agar no cuaja?</strong><br /> Probablemente no alcanzó los 85°C necesarios para activar el agar. También pueden interferir ácidos fuertes; en ese caso, aumentar la concentración de agar.</p>
 <p><strong>¿Cuánto dura un gel en refrigeración?</strong><br /> Los geles de agar duran 3-5 días. Los de gelatina 2-3 días. Los geles con fruta fresca se deterioran más rápido.</p>
 <p><strong>¿Qué es la esferificación inversa?</strong><br /> Es la técnica opuesta: el calcio está en el líquido y el alginato en el baño. Permite crear esferas más grandes que mantienen su forma más tiempo.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gelificacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>gelificación</strong> representa la intersección perfecta entre ciencia y arte culinario. Desde las técnicas ancestrales de aspic hasta las vanguardistas esferificaciones de la gastronomía molecular, esta disciplina ha demostrado su capacidad para evolucionar y sorprender.</p>
 <p>Dominar la gelificación permite al cocinero no solo crear texturas y presentaciones innovadoras, sino también comprender los principios fundamentales de la física y química de los alimentos. En un mundo culinario cada vez más técnico y creativo, la gelificación se consolida como una herramienta indispensable para quienes buscan expandir los límites de lo posible en la cocina.</p>

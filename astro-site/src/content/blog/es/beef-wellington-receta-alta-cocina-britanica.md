@@ -2,7 +2,7 @@
 title: "Beef Wellington: Receta Pro de la Alta Cocina Británica"
 description: "Clásico Beef Wellington británico: filete de ternera, duxelles de hongos, hojaldre dorado. Técnica Pro para cocción rosa perfecta."
 pubDate: 2026-04-14
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/beef-wellington.jpg
 imageAlt: "Beef Wellington: Receta Pro de la Alta Cocina Británica"
@@ -28,6 +28,9 @@ wpId: 3346
 <li>2 cucharadas aceite de oliva</li>
 <li>2 cucharadas mostaza de Dijon</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=beef-wellington-receta-alta-cocina-britanica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 <h3>Para la Duxelles:</h3>
 <ul>
 <li>500g hongos mixtos (champiñones, shiitake), picados fino</li>
@@ -59,6 +62,9 @@ wpId: 3346
 <p><strong>Paso 9:</strong> Extiende duxelles sobre el jamón.</p>
 <p><strong>Paso 10:</strong> Coloca el filete en el centro. Enrolla apretado con el film. Refrigera 30 min.</p>
 <p><strong>Paso 11:</strong> Extiende hojaldre enharinado. Envuelve el filete. Sella bordes. Refrigera 15 min.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=beef-wellington-receta-alta-cocina-britanica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
+
 <h3>Fase 4: Horneado (40 min)</h3>
 <p><strong>Paso 12:</strong> Precalienta horno a 200°C (390°F).</p>
 <p><strong>Paso 13:</strong> Pincela hojaldre con yema. Espolvorea sal gruesa.</p>
@@ -69,6 +75,9 @@ wpId: 3346
 <p>Es crítico: humedad = hojaldre empapado. Cocina hasta que los hongos estén secos.</p>
 <h3>2. Envoltorio Apretado</h3>
 <p>El film ayuda a mantener forma compacta. Refrigerar entre pasos facilita el manejo.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=beef-wellington-receta-alta-cocina-britanica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

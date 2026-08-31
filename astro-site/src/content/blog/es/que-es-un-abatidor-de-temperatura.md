@@ -2,7 +2,7 @@
 title: "Abatidor de Temperatura, Un Indispensable de Hoy en las Cocinas Profesionales"
 description: "Un abatidor de temperatura es un dispositivo fundamental en la cocina profesional, diseñado para enfriar los alimentos de manera rápida y eficiente. Su…"
 pubDate: 2024-12-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2024/12/IMG_1453.jpeg
 imageAlt: "Qué es un abatidor de temperatura"
@@ -92,6 +92,8 @@ wpId: 712
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-abatidor-de-temperatura" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+
 <h2 class="wp-block-heading">Tipos de abatidores de temperatura: ¿Cuál elegir?</h2>
 
 
@@ -180,6 +182,8 @@ wpId: 712
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-abatidor-de-temperatura" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h3 class="wp-block-heading">¿Qué es y para qué sirve un abatidor?</h3>
 
 
@@ -207,6 +211,8 @@ wpId: 712
 <p class="wp-block-paragraph">El tiempo que tarda un <strong>abatidor de temperatura</strong> en enfriar los alimentos varía, pero generalmente puede bajar la temperatura de los alimentos de 80-90 °C a 0-5 °C en aproximadamente 90 minutos. Este tiempo puede extenderse dependiendo del tipo y cantidad de alimento.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-abatidor-de-temperatura" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
 
 <h3 class="wp-block-heading">¿Cómo se llama la máquina que congela los alimentos?</h3>
 

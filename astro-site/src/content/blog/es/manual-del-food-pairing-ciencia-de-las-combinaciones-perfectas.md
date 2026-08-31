@@ -2,7 +2,7 @@
 title: "Manual del Food Pairing: Ciencia de las Combinaciones Perfectas"
 description: "Descubre la ciencia detrás de las combinaciones perfectas de alimentos. Manual completo de food pairing científico con más de 500 maridajes validados…"
 pubDate: 2025-10-04
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/manual-del-food-pairing-4.jpeg
 imageAlt: "Manual del Food Pairing: Ciencia de las Combinaciones Perfectas"
@@ -239,6 +239,8 @@ wpId: 1689
 <figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Principal</th><th>Maridaje Sorprendente</th><th>Compatibilidad</th><th>Moléculas Compartidas</th><th>Aplicación Culinaria</th></tr></thead><tbody><tr><td><strong>Chocolate Negro</strong></td><td>Caviar</td><td>95%</td><td>Aldeídos, ésteres</td><td>Postres salados, canapés</td></tr><tr><td><strong>Fresas</strong></td><td>Parmesano</td><td>92%</td><td>Ácidos carboxílicos</td><td>Ensaladas, carpaccios</td></tr><tr><td><strong>Aceite de Oliva</strong></td><td>Chocolate Blanco</td><td>94%</td><td>Compuestos fenólicos</td><td>Mousses, bombones</td></tr><tr><td><strong>Jamón Ibérico</strong></td><td>Chocolate con Leche</td><td>91%</td><td>Pirazinas, lactónas</td><td>Tapas gourmet</td></tr><tr><td><strong>Tomate</strong></td><td>Canela</td><td>89%</td><td>Eugenol, aldehídos</td><td>Salsas especiadas</td></tr></tbody></table></div></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
 
 <h3 class="wp-block-heading">Combinaciones de Compatibilidad Media-Alta (70-89%)</h3>
 
@@ -549,6 +551,8 @@ wpId: 1689
 <p class="wp-block-paragraph">Para conocer más sobre aplicaciones de food pairing en catering profesional, consulta nuestros recursos especializados en <a href="https://aichef.pro/blog/libreria-de-prompts-para-catering-ai">planificación de eventos con Catering AI</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 <h3 class="wp-block-heading">Caso 3: Pastelería Innovadora &#8211; Postres Salados</h3>
 
@@ -977,6 +981,8 @@ wpId: 1689
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="683" data-attachment-id="1692" data-orig-file="/blog-assets/2025/09/manual-del-food-pairing-2.jpeg" data-orig-size="1248,832" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1759240620&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="manual-del-food-pairing-2" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/09/manual-del-food-pairing-2.jpeg" src="/blog-assets/2025/09/manual-del-food-pairing-2.jpeg" alt="Manual del Food Pairing: Ciencia de las Combinaciones Perfectas" class="wp-image-1692" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 <h2 class="wp-block-heading" id="conclusion">Conclusión: El Food Pairing como Ventaja Competitiva</h2>
 

@@ -2,7 +2,7 @@
 title: "IA para Hacer Imágenes de Comida: Guía y Prompts 2026"
 description: "Genera imágenes de comida con IA: herramientas 2026, prompts listos para copiar y el límite legal: son referencia, no la foto del plato que sirves."
 pubDate: 2025-09-03
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/ia-para-imagenes-de-comida-2.jpeg
 imageAlt: "IA para Hacer Imágenes de Comida"
@@ -63,6 +63,8 @@ El abanico de herramientas de **ia para hacer imagenes de comida** ha crecido, y
 
 Ninguna herramienta te da un resultado perfecto a la primera. La **ia para hacer imagenes de comida** funciona por iteración. Tú pides, revisas, ajustas la descripción y vuelves a pedir. Es como afinar un plato: pruebas la salsa, corriges el punto de sal, añades un toque de acidez. El criterio de cocinero es el que marca la diferencia entre una imagen que parece un plato de verdad y una que parece un render de videojuego.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-hacer-imagenes-de-comida" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 ## Prompts de Ejemplo que Funcionan (Copia y Adapta)
 
 Un buen prompt para generar imágenes de comida es como una receta: ha de ser precisa, ordenada y con los detalles justos. Si pones solo “hamburguesa”, te saldrá cualquier cosa. Si describes el plato, la luz, el ángulo, el fondo, la superficie de apoyo y el estado de ánimo, la IA te devolverá algo mucho más cercano a lo que tienes en la cabeza. Añade detalles realistas como vapor, miga de pan, gotas de rocío sobre una hoja de albahaca. Eso marca la diferencia.
@@ -92,6 +94,8 @@ La identidad de un restaurante no se construye solo con fotos de los platos de l
 ### Contenido para redes sociales y delivery
 Aquí hay que afinar el tiro. Si tu restaurante publica en Instagram o en apps de reparto, la regla de oro es: si el plato que muestras es exactamente el que vendes, mejor usa una foto real retocada con IA, no una imagen generada desde cero. La imagen generada de un plato ficticio puede servir para crear expectación, para un post de storytelling o para hablar de una idea de temporada, pero no para ilustrar el plato que el cliente va a añadir al carrito. Para entender cómo integrar todo esto en tu estrategia de contenidos, te recomiendo que explores el [marketing en redes sociales para restaurantes](https://aichef.pro/blog/marketing-restaurantes-ia-redes-sociales) con herramientas de IA. En ese artículo profundizamos en cómo combinar fotos reales y contenido generado sin perder autenticidad.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-hacer-imagenes-de-comida" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
+
 ### Mockups y bocetos de carta
 Uno de los usos más prácticos de la **ia para hacer imagenes de comida** es diseñar la carta visual antes de la sesión de fotos definitiva. Puedes generar imágenes de los platos que tienes en mente, maquetar la carta, ver cómo queda la composición, probar diferentes estilos de fotografía y ángulos, y luego, cuando tengas claro lo que quieres, encargar las fotos reales. Así ahorras tiempo con el fotógrafo y llegas al shooting con una idea muy concreta.
 
@@ -114,6 +118,8 @@ Como chef, mi recomendación es simple: utiliza la IA para hacer imágenes de co
 | Moodboard interno para diseñar un emplatado | Sí |
 | Foto de la carta o del delivery generada por IA de un plato que servirás distinto | No: publicidad engañosa |
 | Retocar con IA la luz de una foto real de tu plato | Sí, sin desvirtuar el producto |
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-hacer-imagenes-de-comida" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 ## Cómo Encaja AI Chef Pro en tu Flujo Visual
 

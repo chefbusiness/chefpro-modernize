@@ -2,7 +2,7 @@
 title: "Marketing para Restaurantes en Redes Sociales: Plan IA 2026"
 description: "Plan de marketing para restaurantes en redes sociales con IA: calendario mensual por canal (Instagram, TikTok, Google Business, email) y prompts de copys."
 pubDate: 2026-03-16
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/marketing-restaurantes-ia-analytics-redes-sociales.jpg
 imageAlt: "Gerente de restaurante analizando métricas de marketing digital y redes sociales con inteligencia artificial en tablet"
@@ -55,6 +55,8 @@ La queja más repetida es “no tengo tiempo para las redes”. Con el método d
 
 La IA no cocina por ti ni hace las fotos, pero te ahorra el bloqueo del folio en blanco y te estructura las ideas. Más adelante verás exactamente qué pedirle.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=marketing-restaurantes-ia-redes-sociales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 ## Instagram: Feed que Vende, Reels que te Descubren
 
 Instagram sigue siendo el canal de referencia para hostelería. Según estudios del sector, los Reels promedian en torno a un 2 % de interacción, bastante por encima de otros formatos, y desde mediados de 2025 las publicaciones de Instagram se indexan en Google. O sea: la foto de tu croqueta no solo la ven tus seguidores, también aparece cuando alguien busca un aperitivo en tu zona.
@@ -93,6 +95,8 @@ Las redes sociales van y vienen; el email es tuyo. No depende de algoritmos ni d
 
 Este canal es el que mayor retorno da por hora invertida y apenas se le presta atención. Inclúyelo en el calendario desde el día uno.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=marketing-restaurantes-ia-redes-sociales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
+
 ## Calendario de Contenidos Mensual (Plantilla)
 
 Tener una tabla visible en la cocina o en tu móvil elimina la improvisación. Esta es la estructura que puedes copiar y adaptar. Para generarla automáticamente y ajustarla a tu tipo de cocina, puedes usar el [agente de calendario de contenidos](https://aichef.pro/calendario-contenidos-restaurante).
@@ -124,6 +128,8 @@ Cada prompt está redactado en español y diseñado para que solo tengas que cop
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/equipo-restaurante-reputacion-online-ia.jpg" alt="Equipo de restaurante revisando estrategia de marketing digital y reputación online con IA"/><figcaption class="wp-element-caption">Un dashboard centralizado permite al equipo monitorizar todas las métricas de marketing en tiempo real</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=marketing-restaurantes-ia-redes-sociales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
 
 ## Qué Medir por Canal (KPIs)
 

@@ -2,7 +2,7 @@
 title: "Tres Leches Creativo: Esponja al Microondas, Leches Aromatizadas y Aire de Ron"
 description: "El Tres Leches es un postre venezolano que combina recetas europeas con ingredientes locales. La versión presentada utiliza técnicas modernas como esponja…"
 pubDate: 2025-06-12
-modDate: 2026-08-01
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2025/06/dulce-tres-leches-venezolano-moderno-aichefpro.webp
 imageAlt: "Tres Leches Creativo: Esponja al Microondas, Leches Aromatizadas y Aire de Ron"
@@ -130,6 +130,8 @@ wpId: 1347
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tres-leches-creativo-esponja-al-microondas-leches-aromatizadas-y-aire-de-ron" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h3 class="wp-block-heading">Para las Perlas de Maracuyá (esferificación básica)</h3>
 
 
@@ -248,6 +250,8 @@ wpId: 1347
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tres-leches-creativo-esponja-al-microondas-leches-aromatizadas-y-aire-de-ron" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h3 class="wp-block-heading">2. Tres Leches Aromatizadas</h3>
 
 
@@ -305,6 +309,8 @@ wpId: 1347
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=tres-leches-creativo-esponja-al-microondas-leches-aromatizadas-y-aire-de-ron" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
 
 <h2 class="wp-block-heading">Recomendaciones y Reflexión Creativa</h2>
 

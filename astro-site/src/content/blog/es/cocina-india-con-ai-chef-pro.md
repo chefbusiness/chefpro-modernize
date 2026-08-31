@@ -2,7 +2,7 @@
 title: "Cocina India Profesional: Recetas y Técnicas para tu Carta"
 description: "Cocina india para carta profesional: despensa de especias, tandoor vs horno, curris madre y 3 platos con sus puntos críticos. Guía de chef a chef."
 pubDate: 2024-10-04
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-chef-pro
 image: /blog-assets/2024/10/joven-chef-preparando-cocina-india.jpeg
 imageAlt: "joven chef preparando cocina india"
@@ -60,6 +60,8 @@ El tadka —o temperado— consiste en calentar grasa (ghee, aceite de coco, mos
 
 En servicio, el tadka es un gesto de tres minutos que marca la diferencia entre un dal correcto y un dal memorable. No pide equipo especial: pide atención al reloj y orden riguroso en la incorporación de especias (primero las más duras —mostaza, comino— y al final las que se queman rápido —guindilla seca, hing—).
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=cocina-india-con-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 ## Técnicas madre: tandoor vs horno occidental
 
 La cocina india profesional se apoya en un puñado de técnicas que construyen textura y sabor por capas. No hacen falta veinte; con estas tres o cuatro cubres el 80% de tu carta:
@@ -102,6 +104,8 @@ El flujo de trabajo en partida es claro: bases madre en ollas grandes, enfriado 
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=cocina-india-con-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
+
 ## Errores de autenticidad que delatan una carta floja
 
 He probado suficientes cartas indias mediocres como para tener una lista mental de fallos recurrentes. Ninguno es de presupuesto; todos son de técnica o de falta de atención al detalle. Aquí van, con el arreglo al lado:
@@ -142,6 +146,8 @@ El biryani merece mención aparte por rentabilidad. El arroz basmati de calidad 
 " data-large-file="/blog-assets/2024/10/joven-Cocina-India-con-AI-Chef-Pro2.png" src="/blog-assets/2024/10/joven-Cocina-India-con-AI-Chef-Pro2.png" alt="Cocina India con AI Chef Pro" class="wp-image-591" /><figcaption class="wp-element-caption">Cocina India con AI Chef Pro</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=cocina-india-con-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
 
 ## Adaptar y escalar con un agente de IA culinaria
 

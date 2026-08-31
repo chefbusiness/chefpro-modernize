@@ -2,7 +2,7 @@
 title: "¿Qué es el Maíz?"
 description: "El maíz es un cereal gramíneo perteneciente a la familia de las Poaceae, fundamental en la nutrición humana y animal. Se caracteriza por sus granos, que…"
 pubDate: 2025-02-17
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2025/02/q_mjjen14uk.jpg
 imageAlt: "green corn plant - Qué es el maíz"
@@ -37,6 +37,8 @@ wpId: 794
 <figure class="wp-block-image aligncenter size-full"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro-ad&#038;utm_content=bloque-ad" target="_blank" rel="noopener" data-lasso-id="121"><img data-recalc-dims="1" loading="lazy" decoding="async" width="568" height="626" data-attachment-id="116" data-orig-file="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" data-orig-size="568,626" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AI Chef Pro &amp;#8211; Inteligencia Artificial en tu Gestion" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" src="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" alt="Ai Chef Pro – Suite de Herramientas con Inteligencia Artificial para Chefs y Cocineros" class="wp-image-116" /></a><figcaption class="wp-element-caption"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro-ad&#038;utm_content=bloque-ad" target="_blank" data-type="link" data-id="https://app.aichef.pro" rel="noopener" data-lasso-id="122"><strong>Ai Chef Pro</strong> – Suite de Herramientas con Inteligencia Artificial para Chefs y Cocineros</a></figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-el-maiz" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
 
 <h2 class="wp-block-heading">Tipo de presentación</h2>
 
@@ -92,6 +94,8 @@ wpId: 794
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-el-maiz" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h2 class="wp-block-heading">Dosificación y modo de empleo</h2>
 
 
@@ -130,6 +134,8 @@ wpId: 794
 
 
 <p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-el-maiz" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
 
 
 

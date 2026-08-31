@@ -2,7 +2,7 @@
 title: "IA para Cafeterías: Costes, Carta y Redes con Menos Esfuerzo"
 description: "Aplica la IA en tu cafetería y brunch: controla escandallos y food cost, crea carta estacional, mejora tus fotos y redes y fideliza clientes. Guía 2026."
 pubDate: 2026-01-19
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-cafeterias-1.jpeg
 imageAlt: "IA para Cafeterías: Guía Completa para Transformar tu Negocio con Inteligencia Artificial"
@@ -59,6 +59,8 @@ Imagina que subes el ticket de compra de tu último pedido de café de especiali
 
 En mi trabajo de consultoría he visto cómo este simple automatismo reduce el tiempo de escandallo entre un 60% y un 80% y permite ajustar precios con criterio, no a ojo. Si además enlazas la IA con tu calculadora de food cost, puedes simular escenarios: ¿qué pasaría si cambio de proveedor de leche de avena? ¿Cuánto margen gano si subo 20 céntimos el flat white?
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-cafeterias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ### Ejemplo orientativo de escandallos
 
 Para que te hagas una idea realista, aquí tienes una tabla con costes y márgenes de productos típicos de cafetería y brunch en España (precios medios de mercado a principios de 2025):
@@ -107,6 +109,8 @@ Para el brunch, la IA también te ayuda a montar composiciones: un bowl de aça�
 
 La misma IA que te genera la imagen puede redactar el pie de foto, los hashtags y hasta un calendario de publicaciones para el mes. Con un briefing claro («público joven, tono cercano, destacar ingredientes de temporada y que invite a visitar la cafetería») tendrás textos listos en segundos. Esto te ahorra horas de bloqueo creativo y mantiene tu presencia en redes sin que te robe tiempo de la operativa.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-cafeterias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 ## Fidelización y recurrencia
 
 El cliente que repite es el que te da estabilidad. Pero fidelizar no es solo poner una tarjeta de sellos: es entender quién viene, cuándo y por qué, y enviarle el mensaje adecuado en el momento justo. La IA te permite hacer segmentación simple con los datos que ya tienes en tu TPV.
@@ -138,6 +142,8 @@ Si nunca has usado IA en tu cafetería, no te agobies. Empieza con un solo probl
 4. **Escala poco a poco.** Cuando veas resultados en un área, añade otra. La curva de aprendizaje es mínima.
 
 Si estás en fase de montar o reflotar tu cafetería, te conviene empezar por un [plan de negocio para montar una cafetería](https://aichef.pro/plan-negocio-cafeteria) sólido, que contemple márgenes, inversión y estrategia. Y si también tienes un bar, las aplicaciones de la [IA para bares](https://aichef.pro/blog/ia-para-bares) son muy parecidas y puedes aprovechar sinergias.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-cafeterias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
 
 ## AI Chef Pro para cafeterías
 

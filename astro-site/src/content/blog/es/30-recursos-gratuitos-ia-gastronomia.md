@@ -2,7 +2,7 @@
 title: "Recursos Gratis de IA para Gastronomía: 30 Herramientas 2026"
 description: "Las 30 mejores herramientas y recursos gratis de IA para gastronomía en 2026: food cost, alérgenos, cartas y menús. Prueba gratis, sin tarjeta y en español."
 pubDate: 2026-02-12
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/recursos-gratuitos-ia-gastronomia-2.jpeg
 imageAlt: "30 Recursos Gratuitos de IA para Profesionales de la Gastronomía: Guía Completa"
@@ -80,6 +80,8 @@ Accede a más de 70 agentes de IA culinarios en 7 idiomas, español nativo inclu
 
 El conocimiento también es un recurso. Estas seis guías están escritas desde la cocina, no desde un despacho, y te enseñan a exprimir la IA con criterio.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-recursos-gratuitos-ia-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
+
 ### 7. Biblioteca de prompts para hostelería
 151 prompts listos para copiar y pegar. Abarca desde creación de recetas hasta gestión de equipo y marketing. Una chuleta imprescindible. Por ejemplo, con el prompt «Crea una receta de aprovechamiento con los fondos y recortes de la semana» puedes obtener un plato de croquetas de puchero perfecto para la carta del día.  
 [151 prompts para restaurantes y hostelería](https://aichef.pro/blog/151-prompts-para-restaurantes-y-hosteleria)
@@ -132,6 +134,8 @@ Caso de pastelería: visualiza cómo quedaría un postre con esfera de chocolate
 Traduce tu carta a varios idiomas con contexto culinario. Muchos ofrecen planes gratuitos con un límite de caracteres por mes.  
 Traduce tu carta a inglés y alemán conservando términos culinarios: «carrilleras» como «braised beef cheeks», no «cheeks». En la versión gratuita, verifica que puedas procesar 5.000 palabras sin que corte frases a mitad y que respete las mayúsculas de nombres de platos.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-recursos-gratuitos-ia-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 ### 19. Transcripción de voz a texto para dictar fichas técnicas y escandallos
 Habla mientras cocinas y convierte tus notas en texto editable. La versión gratuita suele tener un límite de minutos al mes.  
 Graba desde el pase: «El tartar lleva huevo ecológico, alcaparras encurtidas y mostaza de Dijon, aliño aparte». El texto se pasa a la ficha técnica. Busca que el reconocimiento de voz distinga «escabeche» sin convertirlo en «escaparate» y que el límite mensual no te deje a medias el escandallo del pescado.
@@ -175,6 +179,8 @@ Cruza el histórico de ventas, el calendario de eventos locales y la previsión 
 ### 29. Cursos, newsletters y podcasts gratuitos sobre IA culinaria
 Mantente al día sin pagar. Muchos expertos comparten conocimiento en plataformas de audio, newsletters semanales y cursos introductorios gratuitos.  
 Suscríbete a un podcast semanal donde un chef ejecutivo explica cómo usa un asistente de IA para reducir mermas en un 20% con datos reales de su cocina. Busca contenidos creados por profesionales de la hostelería, no por tecnólogos puros, y que incluyan casos medibles, no solo teoría.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-recursos-gratuitos-ia-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 ### 30. Comunidades, foros y grupos de chefs sobre IA
 Únete a grupos donde otros chefs comparten trucos y experiencias reales. La versión gratuita es la propia comunidad: foros públicos, grupos de Telegram o Discord. El límite es tu tiempo.  

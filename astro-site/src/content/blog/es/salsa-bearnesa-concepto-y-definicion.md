@@ -2,7 +2,7 @@
 title: "Salsa Bearnesa: Concepto y Definición"
 description: "Derivada de holandesa con estragón y chalota. Salsa francesa refinada."
 pubDate: 2026-02-22
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/bearnesa-destacada.jpg
 imageAlt: "Salsa bearnesa con estragón"
@@ -33,6 +33,9 @@ wpId: 2739
 <li><strong>Emulsionar con la mantequilla.</strong> Fuera del fuego o con calor muy indirecto, se añade mantequilla clarificada (o entera fundida, separada del suero) en un hilo constante mientras se bate sin pausa. Aquí ocurre la magia: las gotas de grasa se dispersan microscópicamente en el agua de las yemas, y la lecitina actúa como pegamento molecular.</li>
 <li><strong>Ajustar y perfilar.</strong> Sal, un golpe ácido extra (zumo de limón o vinagre), pimienta recién molida y estragón fresco picado al momento. No antes: el calor prolongado amarga el estragón y apaga su fragancia anisada.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-bearnesa-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
+
 <h3>Errores comunes (y cómo esquivarlos)</h3>
 <p>La bearnesa se corta. Punto. Le pasa al aprendiz y al chef con treinta años de fogones. La emulsión se rompe cuando la proporción grasa/agua se desequilibra o la temperatura sube demasiado rápido. Si ves que empieza a separarse como aceite y vinagre, retira inmediatamente del fuego, añade una cucharada de agua fría o un cubito de hielo y bate con furia. En la mayoría de los casos, la salsa vuelve a ligar. Si no, emulsiona desde cero con una sola yema nueva usando la mezcla cortada como si fuera mantequilla.</p>
 <h2>Diferencia con la holandesa: no es solo el sabor</h2>
@@ -83,6 +86,9 @@ wpId: 2739
 <li><strong>Verduras asadas.</strong> Espárragos verdes, puerros o una coliflor asada entera ganan enteros cuando se gratinan brevemente con bearnesa bajo el horno hasta que burbujean.</li>
 <li><strong>Huevos.</strong> La versión con huevos escalfados sustituye la salsa holandesa del benedictino clásico por bearnesa. Se sirve con pan brioche y jamón o panceta, un plato contundente ideal para desayunos de cuchillo y tenedor.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-bearnesa-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h2>Conservación y servicio: lo que ningún recetario te cuenta</h2>
 <p>La bearnesa es caprichosa con el tiempo. No se puede refrigerar y recalentar directamente; al hacerlo, la emulsión se rompe irremediablemente y la mantequilla se separa. Lo que sí funciona es mantenerla tibia en un termo o al baño maría con el fuego ya apagado durante un servicio de hora y media como máximo. Si necesitas guardarla refrigerada, la textura será sólida como una mantequilla compuesta: puedes cortarla en porciones y fundirla sobre carnes calientes, pero habrá perdido la ligereza de la emulsión original.</p>
 <p>En cocinas profesionales, cada vez más se trabaja con bearnesa montada al momento por ración. Con herramientas como sifones o minipimer de vaso estrecho se logra en segundos y se elimina el problema de la espera. Es más práctico y el resultado, impecable.</p>
@@ -97,6 +103,9 @@ wpId: 2739
 <p>No se recomienda. El estragón fresco tiene un aroma anisado y herbáceo muy volátil que se pierde casi por completo en el proceso de secado. La bearnesa depende de ese perfume inmediato y punzante. Si no hay acceso a estragón fresco, es preferible usar otra salsa antes que hacer una bearnesa descafeinada con hierba seca.</p>
 <h3>¿Con qué platos combina mejor la salsa bearnesa además del entrecot?</h3>
 <p>Además del clásico entrecot a la parrilla, la bearnesa realza sabores intensos como los de carnes de caza, cordero asado, pescados grasos al horno, verduras asadas (espárragos, coliflor) y preparaciones con huevo. Funciona especialmente bien cuando el plato tiene un componente graso notable, ya que la acidez y el estragón limpian el paladar entre bocados.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-bearnesa-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Roux: concepto y definición</a></li>

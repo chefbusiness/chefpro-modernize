@@ -2,7 +2,7 @@
 title: "Calculadora de Mermas para Restaurantes: Cuánto Dinero Pierdes al Mes (y Cómo Recuperarlo)"
 description: "Calcula en euros lo que pierde tu restaurante por mermas: tabla de impacto por facturación, simulación paso a paso y plan de acción con datos del sector."
 pubDate: 2026-02-23
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/mermas-featured.jpg
 imageAlt: "Calculadora de Mermas: Cuánto Dinero Pierde Tu Restaurante Cada Mes (y Cómo Recuperarlo)"
@@ -46,6 +46,8 @@ faq:
 <p><strong>€ perdidos al mes = Facturación × % Food Cost × % de merma sobre compras</strong></p>
 
 <p>Por ejemplo, con una facturación de 50.000 €, un <em>food cost</em> medio del 30 % (compras de 15.000 €) y una merma estimada del 10 % sobre compras, perderías 1.500 € cada mes.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=calculadora-mermas-cuanto-dinero-pierde-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
 
 <h2>Calculadora de impacto — cuánto pierdes según tu facturación</h2>
 
@@ -121,6 +123,8 @@ faq:
 
 <p>Con ese ahorro podrías cubrir un sueldo, renovar equipamiento o, simplemente, respirar un poco más tranquilo cada final de mes. Y es un cálculo conservador: muchos negocios parten de porcentajes superiores al 12 %.</p>
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=calculadora-mermas-cuanto-dinero-pierde-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+
 <h2>5 palancas para recuperar ese dinero (a nivel de negocio, no de receta)</h2>
 
 <p>No se trata de hacer magia con el cuchillo. Estas cinco acciones atacan la merma desde la gestión, no desde la técnica culinaria —si buscas el detalle partida por partida, lo tienes en la <a href="https://aichef.pro/blog/reducir-mermas-restaurante-ia">guía operativa para reducir mermas con IA</a>—, y cualquiera de ellas puede empezar mañana mismo.</p>
@@ -132,6 +136,8 @@ faq:
   <li><strong>Estandariza porciones con báscula.</strong> Que cada plato lleve exactamente lo que dice la receta. La báscula de cocina es más rentable que cualquier máquina de última generación.</li>
   <li><strong>Automatiza el registro.</strong> Sustituye hojas sueltas y Excel por un sistema que recoja las mermas en tiempo real y te lance alertas cuando algo se desvía. Ahorras tiempo y ganas precisión.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=calculadora-mermas-cuanto-dinero-pierde-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
 
 <h2>De la hoja de cálculo al control de mermas con IA</h2>
 

@@ -2,7 +2,7 @@
 title: "Ramen Tonkotsu Japonés: Receta Pro de Caldo Cremoso Paso a Paso"
 description: "Auténtico ramen tonkotsu japonés: caldo cremoso de hueso de cerdo 8-12 horas, chashu, huevo ajitsuke tamago y técnicas profesionales."
 pubDate: 2026-03-28
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/ramen-tonkotsu.jpg
 imageAlt: "Ramen Tonkotsu Japonés: Receta Pro de Caldo Cremoso Paso a Paso"
@@ -28,6 +28,9 @@ wpId: 3303
 <li>5cm jengibre fresco, en rodajas</li>
 <li>3 litros agua</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ramen-tonkotsu-japones-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
+
 <h3>Para el Chashu (Cerdo):</h3>
 <ul>
 <li>500g panceta de cerdo, en rollo</li>
@@ -61,6 +64,9 @@ wpId: 3303
 <h3>Fase 3: Huevos (Ajitsuke Tamago)</h3>
 <p><strong>Paso 9:</strong> Hierve huevos 6.5 minutos para yema cremosa.</p>
 <p><strong>Paso 10:</strong> Pela y marina en la salsa del chashu 2 horas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ramen-tonkotsu-japones-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h3>Fase 4: Montaje</h3>
 <p><strong>Paso 11:</strong> Cocina los noodles 2 minutos en agua hirviendo.</p>
 <p><strong>Paso 12:</strong> En un tazón, coloca noodles, vierte caldo caliente.</p>
@@ -71,6 +77,9 @@ wpId: 3303
 <p>El hervor vigoroso emulsiona la grasa en el caldo, creando la textura cremosa característica. No dejes que hierva a fuego lento.</p>
 <h3>2. Fuerza del Caldo</h3>
 <p>Puedes diluir el caldo concentrado según tu preferencia. Lo tradicional es muy fuerte y cremoso.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ramen-tonkotsu-japones-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

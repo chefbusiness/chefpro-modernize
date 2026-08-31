@@ -2,7 +2,7 @@
 title: "Trucos de IA para Cocina Profesional: 30 Hacks por Área"
 description: "30 hacks de IA para cocina profesional organizados por área: escandallos, cartas, marketing y operativa. Cada truco con su instrucción lista para usar."
 pubDate: 2026-02-14
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: libreria-de-prompts
 image: /blog-assets/2026/02/hacks-ai-chef-pro-1.jpg
 imageAlt: "30 Hacks de AI Chef Pro para Mejorar la Eficiencia en tu Cocina"
@@ -77,6 +77,8 @@ Genera una lluvia de ideas coherente para la nueva carta.
 
 ## 2. Escandallos, costes y rentabilidad
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
+
 ### Hack 7: Calcula el escandallo real de un plato en 2 minutos
 Introduce la receta y los precios de tus proveedores; el agente hace el resto.  
 **Cómo aplicarlo:** “Calcula el escandallo detallado de este plato: [nombre del plato, ingredientes con cantidades y precios unitarios de proveedor]. Incluye coste por ración, merma estimada y coste total.”  
@@ -146,6 +148,8 @@ Crea versiones de tus platos respetando restricciones.
 Cumple la normativa sin errores ni estrés.  
 **Cómo aplicarlo:** “Genera la ficha de alérgenos completa para este plato: [ingredientes y proceso]. Indica la presencia de los 14 alérgenos de declaración obligatoria.”  
 **Resultado:** Ficha de alérgenos lista, que puedes archivar o mostrar al cliente, con total precisión.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
 
 ### Hack 18: Nombres atractivos de platos que enganchan
 Bautiza tus creaciones con gancho comercial.  
@@ -217,6 +221,8 @@ Normaliza la rutina diaria.
 Convierte el inventario en una lista de pedido.  
 **Cómo aplicarlo:** “Con este inventario actual y necesidades de producción para los próximos 3 días: [lista de ingredientes y cantidad en stock], genera la lista de pedido agrupada por proveedor habitual, con cantidades óptimas.”  
 **Resultado:** Pedido generado automáticamente, evitando roturas de stock y excesos de inventario.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
 
 ### Hack 30: Análisis de encuestas y feedback de clientes
 Detecta patrones y áreas de mejora sin leer todas las opiniones.  

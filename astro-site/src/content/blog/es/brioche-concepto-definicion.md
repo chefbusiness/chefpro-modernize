@@ -2,7 +2,7 @@
 title: "Brioche: Concepto y Definición"
 description: "Descubre qué es el brioche: historia desde el siglo XVII, tipos franceses (Nanterre, Saint-Genix, trenzado), ingredientes, técnica paso a paso y secretos…"
 pubDate: 2026-03-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/brioche-featured.jpg
 imageAlt: "Brioche: Concepto y Definición"
@@ -39,6 +39,9 @@ wpId: 3191
 <p>Forma trenzada elaborada con tiras de masa. Puede ser trenza simple (3 cabos) o doble (6 cabos). Especialmente popular en Alsacia y la región de Lyon.</p>
 <h3>Brioche de Saint-Genix</h3>
 <p>Originario de Saint-Genix-sur-Guiers (Savoie), creado en <strong>1880</strong> por el pastelero Pierre Labully. Se caracteriza por llevar <strong>praliné rosa de Lyon</strong> (almendras con caramelo rosa) incrustado en la masa antes del horneado.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=brioche-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 <h3>Brioche Vendéenne</h3>
 <p>De la región de Vendée, en la costa atlántica francesa. Se distingue por su <strong>trenzado intrincado</strong> y forma alargada. Tradicionalmente se aromatiza con agua de azahar o brandy.</p>
 <h3>Brioche Parisienne</h3>
@@ -111,6 +114,9 @@ wpId: 3191
 <li>Subir a velocidad media y amasar 10-15 minutos hasta que la masa esté lisa y elástica.</li>
 <li>La masa debe despegarse de las paredes del bowl (puntos de gluten desarrollado).</li>
 </ol>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=brioche-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 <h3>Fase 3: Incorporación de la Mantequilla (El paso crítico)</h3>
 <ol>
 <li>La mantequilla debe estar a <strong>14-16°C</strong> (fría pero maleable, no derretida).</li>
@@ -170,6 +176,9 @@ wpId: 3191
 <p><strong>¿Por qué la masa se deshace al añadir la mantequilla?</strong><n>Esto es normal temporalmente. La grasa interfiere temporalmente con el gluten. Continúa amasando; la masa volverá a estar lisa y elástica en 5-10 minutos.</p>
 <p><strong>¿Puedo sustituir la mantequilla por margarina?</strong><br /> Técnicamente sí, pero el sabor y la textura serán inferiores. La mantequilla es esencial para el auténtico brioche.</p>
 <p><strong>¿Cuánto dura el brioche?</strong><br /> El brioche es mejor consumido en las primeras 24-48 horas. Después pierde su esponjosidad. Se puede congelar (envuelto en film) hasta 1 mes.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=brioche-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>brioche</strong> representa la cumbre de la panadería enriquecida francesa. Su historia de más de 300 años, su asociación con la nobleza y el lujo, y su incomparable textura y sabor lo convierten en un producto único en el mundo de la panadería.</p>
 <p>La elaboración del brioche perfecto requiere paciencia, técnica y respeto por los ingredientes. No es un pan para apresurar; la fermentación lenta, el amasado cuidadoso y la atención a las temperaturas son los secretos del éxito.</p>

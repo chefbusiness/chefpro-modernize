@@ -2,7 +2,7 @@
 title: "6 Ideas de Hamburguesas Veganas y Vegetarianas Súper Saludables"
 description: "¿Buscas darle un toque especial a tu plan de comidas con algo delicioso y de origen vegetal? Aquí tienes seis deliciosas y saludables ideas de hamburguesas…"
 pubDate: 2025-01-29
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2025/01/hamburguesa_de_lentejas_y_champiC3B1ones_1.jpg
 imageAlt: "Hamburguesa de lentejas y champiñones"
@@ -42,6 +42,8 @@ wpId: 777
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=6-ideas-de-hamburguesas-veganas-y-vegetarianas-super-saludables" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+
 <h2 class="wp-block-heading">Hamburguesa de Lentejas y Champiñones</h2>
 
 
@@ -66,6 +68,8 @@ wpId: 777
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=6-ideas-de-hamburguesas-veganas-y-vegetarianas-super-saludables" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h2 class="wp-block-heading">Hamburguesa de Tofu Marinado</h2>
 
 
@@ -77,6 +81,8 @@ wpId: 777
 <p class="wp-block-paragraph">La hamburguesa de tofu marinado es una opción deliciosa y saludable. El tofu absorbe todos los sabores de la marinada, haciendo que cada bocado sea jugoso y sabroso. Acompáñala con tus vegetales favoritos y disfruta de una comida ligera y satisfactoria.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=6-ideas-de-hamburguesas-veganas-y-vegetarianas-super-saludables" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 <h2 class="wp-block-heading">Hamburguesa de Quinoa y Espinacas</h2>
 

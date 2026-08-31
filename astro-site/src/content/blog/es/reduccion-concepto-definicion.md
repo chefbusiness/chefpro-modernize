@@ -2,7 +2,7 @@
 title: "Reducción: Concepto y Definición"
 description: "Descubre qué es la reducción: técnica de cocción que concentra sabores mediante evaporación. Aplicaciones en salsas, glaseados y cocina profesional. Guía…"
 pubDate: 2026-03-24
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/reduccion-featured.jpg
 imageAlt: "Reducción: Concepto y Definición"
@@ -61,6 +61,9 @@ wpId: 3270
 </table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/reduccion-interna.jpg" alt="Reducción de caldo en sartén ancha" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;"></p>
 <h2>Ciencia de la Reducción</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=reduccion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h3>Mecanismo Físico-Químico</h3>
 <p><strong>1. Evaporación del Agua:</strong></p>
 <ul>
@@ -177,6 +180,9 @@ wpId: 3270
 <li>Leche + azúcar reducida lentamente.</li>
 <li>Caramelo y Maillard desarrollan color y sabor.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=reduccion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 <h2>Errores Comunes y Soluciones</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -234,6 +240,9 @@ wpId: 3270
 <p><strong>¿Por qué mi reducción de vino está amarga?</strong><br /> Probablemente se redujo demasiado, concentrando taninos. Agregar un poco de agua o mantequilla puede suavizarla.</p>
 <p><strong>¿Puedo usar maicena para espesar en lugar de reducir?</strong><br /> Son técnicas diferentes. La maicena añade espesor pero no concentra sabores. La reducción desarrolla sabores complejos que no se logran con espesantes.</p>
 <p><strong>¿Cómo evito que se forme «nata» en la superficie?</strong><n> La «nata» (proteínas coaguladas) se puede retirar con una espumadera o filtrar la salsa al final. No afecta el sabor, solo la estética.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=reduccion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>reducción</strong> es una técnica que encapsula la esencia de la cocina: transformación mediante la aplicación controlada del calor. Este proceso, que aprovecha principios físicos y químicos fundamentales, permite al chef concentrar y potenciar sabores, crear texturas sedosas y desarrollar complejidad en preparaciones que de otro modo serían simples.</p>
 <p>Desde las salsas clásicas francesas hasta los glaseados modernos, la reducción sigue siendo una herramienta indispensable en la cocina profesional. Dominarla requiere paciencia, atención y comprensión, pero las recompensas son salsas y preparaciones de profundidad y carácter inigualables.</p>

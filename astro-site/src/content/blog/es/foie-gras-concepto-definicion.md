@@ -2,7 +2,7 @@
 title: "Foie Gras: Concepto y Definición"
 description: "Descubre qué es el foie gras: historia desde Egipto 2500 a.C., tipos (entier, bloc, mi-cuit), producción, pato vs ganso, uso en alta cocina y debate ético…"
 pubDate: 2026-03-11
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/foiegras-featured.jpg
 imageAlt: "Foie Gras: Concepto y Definición"
@@ -48,6 +48,9 @@ wpId: 3200
 <li><strong>Siglo XIX-XX:</strong> El foie gras se consolida como símbolo de la alta gastronomía francesa, con producción concentrada en el suroeste (Gascuña, Perigord) y Alsacia.</li>
 </ul>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/foiegras-historia.jpg" alt="Representación del arte egipcio antiguo sobre la crianza de gansos" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=foie-gras-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h2>Producción: Del Animal al Producto</h2>
 <h3>La Técnica del Gavage</h3>
 <p>El <strong>gavage</strong> es el proceso de alimentación forzada mediante sonda esofágica. En la producción moderna:</p>
@@ -147,6 +150,9 @@ wpId: 3200
 <li>El más comercial y económico.</li>
 </ul>
 <h2>Foie Gras en la Alta Cocina</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=foie-gras-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h3>Técnicas de Preparación Profesional</h3>
 <p><strong>Escalope de Foie Gras:</strong></p>
 <p>Láminas de 1-2 cm de grosor, doradas rápidamente en sartén caliente (sin grasa, el foie suelta su propia grasa). Servido con reducción de vino dulce, frutos secos o frutas.</p>
@@ -194,6 +200,9 @@ wpId: 3200
 <p><strong>¿Se puede congelar el foie gras?</strong><br /> Sí, fresco o mi-cuit hasta 3 meses. Envolver herméticamente. Descongelar 24 horas en nevera. No recongelar.</p>
 <p><strong>¿Por qué es tan caro el foie gras?</strong><br /> La producción es laboriosa (alimentación manual 2-3 veces/día durante semanas), los animales requieren más tiempo y alimento, y el rendimiento es bajo (un pato produce ~300-500g de foie gras).</p>
 <p><strong>¿Cómo saber si un foie gras es de calidad?</strong><br /> Color uniforme beige-rosa, aroma dulce sin olores fuertes, textura firme pero flexible. En mi-cuit, al cortar no debe deshacerse ni estar seco.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=foie-gras-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>foie gras</strong> es mucho más que un producto culinario: es un testimonio de 4.500 años de historia gastronómica, un símbolo de la cultura francesa, y un campo de batalla ético que refleja las tensiones entre tradición y bienestar animal en el mundo moderno.</p>
 <p>Su sabor único, textura mantecosa y capacidad de elevar cualquier preparación lo han convertido en un manjar codiciado por chefs y gourmets. Al mismo tiempo, el debate sobre su producción continúa generando controversia, prohibiciones y defensas apasionadas.</p>

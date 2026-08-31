@@ -2,7 +2,7 @@
 title: "23 Moles Regionales Mexicanos: Guía Completa con IA"
 description: "Guía completa de los 23 moles regionales mexicanos: los 7 de Oaxaca, el poblano, Xico, Michoacán y más. Recetas, tablas comparativas, FAQ e IA aplicada."
 pubDate: 2026-01-17
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2025/12/moles-mexicanos-regionales-con-ia-1.jpeg
 imageAlt: "Moles regionales mexicanos: guía definitiva con IA"
@@ -146,6 +146,8 @@ En esta guía te llevo por 23 moles regionales mexicanos que representan la dive
 
 <p>Si Oaxaca es la tierra de los siete moles, Puebla es el lugar donde nació el mole más famoso del mundo. El mole poblano no es solo una receta: es un estándar contra el que se miden — para bien o para mal — todos los demás moles mexicanos cuando se habla fuera del país. Pero Puebla tiene más cartas bajo la manga, y en esta sección las revisamos todas.</p>
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=23-moles-regionales-mexicanos-con-ia-guia-definitiva-con-cocina-mexicana-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
+
 <h3>8. Mole poblano</h3>
 
 <p>El clásico absoluto. Cuatro chiles secos forman su columna vertebral: <strong>ancho, mulato, pasilla y chipotle</strong>. El chocolate es obligatorio — no como golosina, sino como capa de amargor y profundidad que redondea la grasa de las almendras, las pasas, el ajonjolí y el pan frito que forman el cuerpo de la salsa. Una receta tradicional de mole poblano maneja de <strong>20 a 25 ingredientes</strong> y se prepara en <strong>2 o 3 días</strong> si se hace desde cero: un día para limpiar y tostar los chiles, otro para moler y freír la pasta, y un tercero para la cocción final y el reposo (que mejora espectacularmente el sabor). El sabor es terroso, ligeramente picante, con notas de cacao, canela y un fondo dulce muy elegante. La proteína tradicional es el guajolote, aunque la versión con pollo es la más extendida hoy.</p>
@@ -215,6 +217,8 @@ En esta guía te llevo por 23 moles regionales mexicanos que representan la dive
 <h3>18. Mole de queso de Chilapa, Guerrero</h3>
 
 <p>Este es un mole que detiene a cualquiera en seco: ¿queso en el mole? Sí, y funciona de manera espectacular. El <strong>mole de queso de Chilapa</strong> es una especialidad de la región Centro de Guerrero. Se fríen en manteca rebanadas de <strong>queso añejo o seco de la región</strong> y se guisan en una salsa de jitomate y chile verde, de modo que el queso se ablanda sin llegar a deshacerse. El resultado tiene la untuosidad de un mole y un punto lácteo y ácido inconfundible: uno de los platos más reconfortantes de la cocina guerrerense.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=23-moles-regionales-mexicanos-con-ia-guia-definitiva-con-cocina-mexicana-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
 
 <h3>19. Encacahuatado</h3>
 
@@ -340,6 +344,8 @@ En esta guía te llevo por 23 moles regionales mexicanos que representan la dive
 <p>AI Chef Pro tiene un plan de entrada «AI Chef Miembro» de 10 € al mes con 10.000 créditos, ideal para <a href="https://app.aichef.pro" target="_blank" rel="noopener">probar la plataforma</a> y ver si encaja en tu operación antes de comprometerte.</p>
 
 ---
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=23-moles-regionales-mexicanos-con-ia-guia-definitiva-con-cocina-mexicana-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
 
 <h2>Técnicas profesionales para preparar cualquier mole</h2>
 

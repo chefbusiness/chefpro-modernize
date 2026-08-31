@@ -2,7 +2,7 @@
 title: "Aire de Zanahoria en Bowl de Cristal: El Clásico de Ferran Adrià"
 description: "El Aire de Zanahoria es una de las creaciones icónicas de Ferran Adrià, símbolo de la revolución molecular de elBulli y ejemplo perfecto de cómo la técnica y…"
 pubDate: 2026-01-05
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/01/aire-de-zanahoria-2.jpg
 imageAlt: "Aire de Zanahoria en Bowl de Cristal: El Clásico de Ferran Adrià"
@@ -33,6 +33,8 @@ wpId: 2252
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=aire-de-zanahoria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
 
 <h2 class="wp-block-heading">Ingredientes Precisos para 4 porciones</h2>
 
@@ -97,6 +99,8 @@ wpId: 2252
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=aire-de-zanahoria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h3 class="wp-block-heading">Elaboración del Aire</h3>
 
 
@@ -159,6 +163,8 @@ wpId: 2252
 " data-large-file="/blog-assets/2026/01/aire-de-zanahoria-1.jpg" src="/blog-assets/2026/01/aire-de-zanahoria-1.jpg" alt="Aire de Zanahoria en Bowl de Cristal: El Clásico de Ferran Adrià" class="wp-image-2254" /><figcaption class="wp-element-caption">Receta de Aire de Zanahoria en Bowl de Cristal: El Clásico de Ferran Adrià &#8211; AI Chef Pro</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=aire-de-zanahoria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
 
 <h2 class="wp-block-heading">FAQ: Preguntas Frecuentes</h2>
 

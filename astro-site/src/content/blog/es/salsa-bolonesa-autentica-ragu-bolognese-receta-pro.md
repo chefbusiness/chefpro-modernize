@@ -2,7 +2,7 @@
 title: "Salsa Boloñesa Auténtica (Ragù alla Bolognese): Receta Pro Paso a Paso"
 description: "Aprende la auténtica receta italiana de ragù alla bolognese registrada en la Cámara de Comercio de Bolonia. Técnica Pro, tiempos exactos, medidas duales…"
 pubDate: 2026-03-09
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/salsa-bolonesa-autentica.jpg
 imageAlt: "Salsa Boloñesa Auténtica (Ragù alla Bolognese): Receta Pro Paso a Paso"
@@ -73,6 +73,9 @@ wpId: 3273
 <p><strong>Paso 6:</strong> Vierte el vino blanco primero. Deja que se evapore completamente, raspando el fondo para desglasear (5 minutos). El alcohol debe evaporarse casi por completo.</p>
 <p><strong>Paso 7:</strong> Añade el vino tinto. Repite el proceso: deja reducir hasta que casi haya desaparecido (5 minutos más).</p>
 <p><em>Pro Tip:</em> Usa vinos que beberías, no «vino de cocina». La calidad del vino impacta directamente en el sabor final.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-bolonesa-autentica-ragu-bolognese-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 <h3>Fase 4: La Cocción Lenta (La Magia) &#8211; 3+ horas</h3>
 <p><strong>Paso 8:</strong> Añade el tomate triturado y el caldo. Mezcla bien. La salsa debe cubrir apenas la carne; si está muy seca, añade más caldo.</p>
 <p><strong>Paso 9:</strong> Incorpora la hoja de laurel y la nuez moscada (si usas). Lleva a ebullición suave.</p>
@@ -119,6 +122,9 @@ wpId: 3273
 <li>Pan casero tostado para mojar</li>
 <li>No se sirve con queso extra en la mesa (ya lleva parmesano)</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-bolonesa-autentica-ragu-bolognese-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 <h2>Conservación</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -189,6 +195,9 @@ wpId: 3273
 </tr>
 </tbody>
 </table></div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=salsa-bolonesa-autentica-ragu-bolognese-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 <h2>Glosario Relacionado</h2>
 <ul>
 <li>Sofrito &#8211; Técnica de cocción lenta de verduras picadas</li>

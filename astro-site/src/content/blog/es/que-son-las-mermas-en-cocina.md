@@ -2,7 +2,7 @@
 title: "Qué Son las Mermas en Cocina: Tipos, Cálculo y Fórmulas"
 description: "Qué son las mermas en cocina, sus tipos con tabla, las fórmulas para calcularlas paso a paso y el rendimiento real de cada producto. Guía de chef."
 pubDate: 2024-10-19
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/que-es-la-merma-blog-ai-chef-pro.png
 imageAlt: "que es la merma en cocina"
@@ -51,6 +51,8 @@ No todas las mermas son iguales ni se producen en el mismo momento. Conocerlas e
 | Merma por servicio/emplatado | En el pase o en sala, por raciones mal ajustadas, guarniciones que caen, salsas mal dosificadas. | Devoluciones por exceso o defecto, restos en el plato del comensal, guarnición que no se aprovecha. | Análisis de devoluciones, pesadas aleatorias de platos terminados y formación del equipo de sala. |
 | Merma por robo o error humano | En cualquier punto del proceso: recepción, almacén, cocina o caja. | Mercancía que no se registra, consumo interno no anotado, errores en el pedido, hurtos. | Cuadre de inventarios, control de accesos, registro de consumos internos y auditorías sorpresa. |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 ## Cómo calcular la merma: las fórmulas que necesitas
 
 Aunque parezca un galimatías, el cálculo de la merma se reduce a cuatro operaciones básicas. Tenerlas claras te permite hablar con números y no con intuiciones. Aquí van:
@@ -97,6 +99,8 @@ Hablar de merma es hablar también de rendimiento. Son las dos caras de la misma
 
 Estos porcentajes son orientativos y varían según el proveedor, la técnica de limpieza o la época del año. Lo importante es que tú establezcas los tuyos propios pesando y midiendo en tu cocina. Solo así tendrás un escandallo fiable.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+
 ## Del cálculo al plato: cómo la merma afecta al escandallo y al precio de carta
 
 Cada plato que vendes tiene un coste teórico que nace de tu ficha técnica. Si en esa ficha usas el precio de compra bruto en lugar del precio limpio, estás falseando el coste real. Siguiendo el ejemplo de la merluza: si para una ración necesitas 200 g de lomo limpio, tu coste de materia prima no es 12 € × 0,2 = 2,40 €, sino 24 € × 0,2 = 4,80 €. El doble.
@@ -122,6 +126,8 @@ Si quieres dar el paso y dejar de adivinar, [prueba AI Chef Miembro](https://app
 Medir la merma no es un fin en sí mismo: es el punto de partida. Sin ese dato, cualquier intento de reducir costes es dar palos de ciego. La buena noticia es que, con las fórmulas, las tablas de rendimiento y un poco de disciplina, cualquier cocina profesional puede tener sus números bajo control en pocas semanas.
 
 Ahora que tienes claro qué es la merma, cómo se calcula y por qué duele tanto al bolsillo, el siguiente paso lógico es pasar a la acción. Te invito a leer la guía operativa que complementa este artículo: [cómo reducir las mermas en tu restaurante con IA](https://aichef.pro/blog/reducir-mermas-restaurante-ia). Ahí encontrarás procesos concretos, checklist y el uso de tecnología para atajar cada tipo de merma desde mañana mismo.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
 
 ## Preguntas frecuentes
 

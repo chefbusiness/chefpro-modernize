@@ -2,7 +2,7 @@
 title: "Food Delivery Robots: Technology, Companies, and What Restaurants Need to Know"
 description: "Autonomous food delivery robots are rolling out across US cities and campuses, fundamentally changing how restaurants reach their customers. The market is…"
 pubDate: 2026-04-03
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-in-gastronomy
 lang: en
 wpId: 3337
@@ -92,6 +92,9 @@ imageAlt: "Autonomous food delivery robot on sidewalk in modern city neighborhoo
 </ul>
 <p><strong>Pricing Model:</strong> Nuro operates on business-to-business contracts with partners rather than a per-order fee model for restaurants.</p>
 <p><strong>Restaurant Partnerships:</strong> Nuro has established partnerships with Kroger for grocery delivery and Domino&#8217;s for pizza delivery. The company&#8217;s focus on larger vehicles makes it suitable for bulk orders and grocery delivery rather than typical restaurant takeout.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Multi-brand, multi-platform operations.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-delivery-robots-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Dark Kitchen for €12</a></aside>
+
 <h3>Coco</h3>
 <p>Coco operates a fleet of teleoperated robots in Los Angeles and Austin, combining autonomous technology with human oversight for enhanced reliability.</p>
 <p><strong>Key Statistics:</strong></p>
@@ -201,6 +204,9 @@ imageAlt: "Autonomous food delivery robot on sidewalk in modern city neighborhoo
 <p># Food Delivery Robots: Technology, Companies, and What Restaurants Need to Know</p>
 <h2>Part 2: Implementation, Future Trends, and FAQ</h2>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/campus-food-delivery-robot.png" alt="Delivery robot on university campus pathway" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">University campuses are among the most successful environments for food delivery robots, with high density and short distances.</figcaption></figure>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Guide: Nikkei Restaurant</h3><p class="mt-2 text-muted-foreground">60 seats, Peruvian-Japanese fusion with its full roadmap.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-delivery-robots-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Guide: Nikkei Restaurant for €65</a></aside>
+
 <h2>How to Get Started with Delivery Robots</h2>
 <p>Implementing delivery robots in your restaurant operation requires careful planning and execution. Follow this step-by-step guide to ensure a successful launch.</p>
 <h3>Step 1: Evaluate Your Market</h3>
@@ -270,6 +276,9 @@ imageAlt: "Autonomous food delivery robot on sidewalk in modern city neighborhoo
 <p>Most current operations run during daytime hours. However, robots equipped with improved lighting and sensing technology could enable late-night and overnight delivery—perfect for 24-hour restaurants, late-night fast food, and convenience store deliveries.</p>
 <p><strong>Multi-Restaurant Hub Models</strong></p>
 <p>Future models may feature centralized hubs where robots pick up orders from multiple restaurants in a concentrated area, then deliver to a neighborhood. This could reduce per-restaurant infrastructure requirements and enable smaller operations to access robot delivery.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Creative Restaurant</h3><p class="mt-2 text-muted-foreground">Operations playbook for chef-driven and creative restaurants.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-delivery-robots-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Creative Restaurant for €12</a></aside>
+
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Ready to Automate Your Delivery Operations?</p>

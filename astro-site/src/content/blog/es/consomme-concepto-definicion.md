@@ -2,7 +2,7 @@
 title: "Consommé: Concepto y Definición"
 description: "Descubre qué es el consommé: caldo clarificado cristalino de la alta cocina francesa. Técnica de clarificación con raft, historia con Escoffier, tipos y…"
 pubDate: 2026-03-14
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/consomme-featured.jpg
 imageAlt: "Consommé: Concepto y Definición"
@@ -63,6 +63,9 @@ wpId: 3220
 <h2>Historia del Consommé</h2>
 <h3>Orígenes en la Cocina Francesa Clásica</h3>
 <p>La técnica de clarificación de caldos tiene raíces en la cocina medieval europea, donde los cocineros de la nobleza buscaban crear caldos refinados para la alta sociedad. Sin embargo, fue en la <strong>Francia del siglo XIX</strong> donde el consommé alcanzó su máxima expresión.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=consomme-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+
 <h3>Auguste Escoffier y la Codificación</h3>
 <p>El chef francés <strong>Auguste Escoffier (1846-1935)</strong>, conocido como «el rey de los chefs y el chef de los reyes», sistematizó la técnica del consommé en su obra maestra <em>Le Guide Culinaire</em> (1903). Escoffier estableció:</p>
 <ul>
@@ -120,6 +123,9 @@ wpId: 3220
 <li>Aromáticos: tomillo, laurel, pimienta.</li>
 <li>Opcional: tomate picado (para color y acidez).</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=consomme-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
+
 <h3>Fase 3: El Proceso de Clarificación</h3>
 <p><strong>Paso 1: Mezclar</strong><br /> Combinar el caldo frío con la mezcla clarificadora en una cacerola alta.</p>
 <p><strong>Paso 2: Calentar lentamente</strong><br /> Llevar a fuego medio-bajo, sin dejar de remover hasta que hierva suavemente.</p>
@@ -171,6 +177,9 @@ wpId: 3220
 <p><strong>¿Cuánto dura el consommé?</strong><br /> Refrigerado: 3-4 días. Congelado: hasta 3 meses. La claridad puede perderse ligeramente al descongelar.</p>
 <p><strong>¿Es lo mismo consommé y caldo desgrasado?</strong><br /> No. El desgrasado solo elimina grasa superficial. El consommé elimina también partículas suspendidas y sedimentos, resultando en claridad cristalina.</p>
 <p><strong>¿Se puede hacer consommé sin claras de huevo?</strong><br /> Técnicamente sí (con gelatina o centrifugado), pero la clarificación con claras es el método tradicional y más efectivo para sabor y claridad.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=consomme-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>consommé</strong> representa la perfección técnica en la cocina de caldos: un líquido dorado y cristalino que encierra intensidad de sabor y aromas complejos. Su elaboración, aunque requiere tiempo y precisión, es uno de los logros más satisfactorios para cualquier cocinero serio.</p>
 <p>Más allá de su belleza visual, el consommé es un testimonio de cómo la técnica culinaria puede transformar ingredientes básicos en algo extraordinario. Desde las cocinas de Escoffier hasta los restaurantes de vanguardia modernos, el consommé sigue siendo símbolo de excelencia y refinamiento.</p>

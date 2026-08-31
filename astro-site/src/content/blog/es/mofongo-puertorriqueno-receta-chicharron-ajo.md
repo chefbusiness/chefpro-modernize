@@ -2,7 +2,7 @@
 title: "Mofongo Puertorriqueño: Receta Pro con Chicharrón y Ajo"
 description: "Auténtico Mofongo puertorriqueño: plátanos verdes fritos machacados con ajo y chicharrón. Técnica Pro de San Juan."
 pubDate: 2026-07-15
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/mofongo-puertorriqueno.jpg
 imageAlt: "Mofongo Puertorriqueño: Receta Pro con Chicharrón y Ajo"
@@ -37,6 +37,9 @@ wpId: 3592
 <li>1 hoja de laurel</li>
 <li>Sal y pimienta</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mofongo-puertorriqueno-receta-chicharron-ajo" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
+
 <h3>Rellenos Variados (elige uno):</h3>
 <ul>
 <li><strong>Camarones al ajillo:</strong> 400g camarones, 4 dientes ajo, mantequilla</li>
@@ -60,6 +63,9 @@ wpId: 3592
 <p><strong>Paso 9:</strong> Repite con el resto de plátanos, ajo y chicharrón.</p>
 <p><strong>Paso 10:</strong> Añade aceite de oliva y mezcla bien. Prueba y ajusta sal.</p>
 <p><strong>Paso 11:</strong> La mezcla debe ser maleable, ni muy seca ni muy húmeda.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mofongo-puertorriqueno-receta-chicharron-ajo" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
+
 <h3>Fase 4: Formar y Freír (opcional)</h3>
 <p><strong>Paso 12:</strong> Forma bolas con las manos mojadas, o usa un molde.</p>
 <p><strong>Paso 13:</strong> Opcional: fríe las bolas 2 minutos por lado para dorar exterior.</p>
@@ -78,6 +84,9 @@ wpId: 3592
 <p>Freír hasta dorar pero manteniendo humedad. Secos = mofongo seco.</p>
 <h3>3. Chicharrón Auténtico</h3>
 <p>El chicharrón aporta sabor y textura. Tocino crujiente es buena alternativa.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mofongo-puertorriqueno-receta-chicharron-ajo" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

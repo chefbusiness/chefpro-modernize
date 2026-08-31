@@ -2,7 +2,7 @@
 title: "IA para Crear Menús: Genera tu Carta en Minutos (Gratis)"
 description: "Crea menús y cartas con IA en minutos: menú del día, degustación, semanal y eventos, con ejemplos y costes por menú. Empieza con AI Chef Miembro: 10 €/mes y 10.000 créditos."
 pubDate: 2026-01-04
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-crear-menus-4.jpeg
 imageAlt: "IA para Crear Menús: La Guía Definitiva para Transformar tu Restaurante con Inteligencia Artificial"
@@ -62,6 +62,8 @@ El caballo de batalla de la mayoría de negocios. Con la IA, puedes generar un m
 - **Tarta de queso al horno con coulis de frutos rojos** (lácteos, huevos, gluten) – 6,50 €
 - **Peras al vino especiado con helado de vainilla** (sulfitos, lácteos) – 6,00 €
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-crear-menus" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+
 ### Menú degustación
 
 El menú degustación es la carta de presentación de la casa. Aquí la IA brilla en la construcción de la secuencia de pases, respetando intensidades y técnicas, y en la sugerencia de maridaje. Puedes usarla para idear un menú de siete a diez pases con un hilo conductor, y ajustar cada descripción a un estilo más narrativo. [El generador de menús degustación](https://aichef.pro/generador-menu-degustacion) de AI Chef Pro te permite afinar el número de pases, el concepto, las restricciones alimentarias y el precio objetivo.
@@ -112,6 +114,8 @@ Bodas, comuniones, cenas de empresa, menús para grupos de 30 a 150 comensales. 
 | Planificación semanal | Parrilla de lunes a viernes/domingo con rotación de producto y variantes | 10-15 minutos | Comedores de empresa, colegios, restaurantes con menú ejecutivo |
 | Menús para eventos y grupos | Propuesta cerrada con opciones adaptadas a restricciones y coste por persona | 15-20 minutos | Caterings, bodas, comuniones, cenas de empresa |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-crear-menus" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 ## Cuánto cuesta crear un menú con IA (créditos y euros)
 
 AI Chef Pro funciona con un sistema de créditos. Cada agente de IA que usas —desde el generador de menús hasta el calculador de escandallo o el food pairing— consume una cantidad de créditos proporcional a la complejidad de la tarea. No hay una tarifa plana por menú, pero sí órdenes de magnitud que te ayudan a entender el consumo real.
@@ -139,6 +143,8 @@ Esto significa que, incluso con el plan AI Chef Miembro de 10.000 créditos al m
 En el mercado hay decenas de herramientas que prometen generar cartas o menús. Pero no todas hablan el idioma de la cocina. Los generadores de diseño genéricos —esos que usas para maquetar la carta en PDF con imágenes bonitas— son útiles para el acabado visual, pero flaquean en lo que realmente importa: el escandallo, la gestión de alérgenos, la coherencia gastronómica y la adaptación a producto real de mercado. Te dan un diseño bonito, pero el contenido tienes que escribirlo y validarlo tú desde cero.
 
 Una plataforma culinaria especializada como AI Chef Pro está pensada para el flujo real de cocina. Con más de 70 agentes de IA culinarios, en 7 idiomas y con español nativo, no se limita a maquetar: genera recetas, calcula escandallos, sugiere maridajes, gestiona alérgenos y redacta descripciones de plato con criterio gastronómico. La diferencia es que no te da una plantilla vacía; te da un punto de partida sólido que tú, como chef, ajustas. Es la diferencia entre un cuchillo de oficio bien afilado y un pelador de supermercado. Ambos cortan, pero el resultado no es el mismo.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-crear-menus" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
 
 ## Flujo práctico: de la idea a la carta impresa (paso a paso)
 

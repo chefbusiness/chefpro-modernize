@@ -2,7 +2,7 @@
 title: "Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina"
 description: "La inteligencia artificial aplicada a la gastronomía está revolucionando las cocinas profesionales de todo el mundo. Sin embargo, la diferencia entre obtener…"
 pubDate: 2025-09-02
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: libreria-de-prompts
 image: /blog-assets/2025/09/generador-de-prompts-gastronomicos-1.jpeg
 imageAlt: "Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina"
@@ -510,6 +510,8 @@ Parámetros económicos:
 <figure class="wp-block-image size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1270" data-orig-file="/blog-assets/2025/03/IMG_3079.webp" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="IMG_3079" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/03/IMG_3079.webp" src="/blog-assets/2025/03/IMG_3079.webp" alt="Desbloquea las funciones de AI Chef Pro para una planificación de comidas sin esfuerzo" class="wp-image-1270" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
 
 <h2 class="wp-block-heading">Casos Prácticos: Construcción de Prompts Paso a Paso</h2>
 
@@ -1095,6 +1097,8 @@ Parámetros económicos:
 <h2 class="wp-block-heading">Errores Comunes y Cómo Evitarlos</h2>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
 
 <h3 class="wp-block-heading">Los 12 Errores Más Frecuentes en Prompts Gastronómicos</h3>
 
@@ -1795,6 +1799,8 @@ Parámetros económicos:
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="683" data-attachment-id="1431" data-orig-file="/blog-assets/2025/09/generador-de-prompts-gastronomicos-2.jpeg" data-orig-size="1248,832" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1756847935&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="generador-de-prompts-gastronomicos-2" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/09/generador-de-prompts-gastronomicos-2.jpeg" src="/blog-assets/2025/09/generador-de-prompts-gastronomicos-2.jpeg" alt="Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina" class="wp-image-1431" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
 <h2 class="wp-block-heading">Conclusión: Domina el Arte del Prompting Gastronómico</h2>
 

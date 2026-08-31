@@ -2,7 +2,7 @@
 title: "Escandallo de Cocina: Guía Paso a Paso con Ejemplo"
 description: "Qué es un escandallo de cocina y cómo se hace paso a paso: ejemplo numérico completo, tabla de mermas, errores típicos y cómo automatizarlo con IA."
 pubDate: 2026-03-13
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/escandallo-cocina-profesional-ia-chef-calculando-costes.jpg
 imageAlt: "Chef profesional calculando escandallos con IA en cocina de restaurante Madrid"
@@ -67,6 +67,8 @@ El proceso es metódico y no admite atajos. Sigue estos siete pasos y tendrás u
 
 Insisto en el punto 2 porque es donde más dinero se escapa. Tú pagas el kilo entero de pescado, no solo los lomos. Así que escandalla siempre sobre el bruto.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escandallos-ia-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ### Tabla de Mermas por Tipo de Producto
 
 Las mermas no son fijas: dependen de la calidad del género, la habilidad del cocinero y el tipo de corte. Esta tabla te da rangos realistas para productos comunes:
@@ -113,6 +115,8 @@ Ahora bien, ese 30% no es una verdad absoluta. Según el tipo de restaurante y e
 
 Bajar el food cost al 25% dispara el precio a 17,16 € y deja 12,87 € de margen, pero puede sacarte del mercado si tu clientela no percibe ese valor. Subirlo al 35% baja el precio a 12,26 €, pero recortas notablemente el margen. La decisión no es solo matemática: tienes que equilibrar margen, percepción de precio y lo que tu competencia directa ofrece. Para profundizar en el cálculo y ver cómo la IA puede simplificarlo, tienes [una guía práctica sobre cómo calcular el costo de una receta](https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia). Y si necesitas hacer números rápido sin depender de hojas de cálculo propensas a errores, prueba [la calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante).
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escandallos-ia-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+
 ## Errores Típicos que se Comen tu Beneficio
 
 He visto estos fallos en cocinas de todos los tamaños. Evítalos desde el día uno.
@@ -138,6 +142,8 @@ En AI Chef Pro hemos desarrollado un ecosistema de más de 70 agentes de IA culi
 <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/escandallo-ia-dashboard-food-cost-restaurante.jpg" alt="Dashboard de IA mostrando food cost y márgenes de rentabilidad del restaurante"/><figcaption>Dashboard de IA con food cost, márgenes y alertas de desviación en tiempo real</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escandallos-ia-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
 
 ### Planes y Precios de AI Chef Pro
 

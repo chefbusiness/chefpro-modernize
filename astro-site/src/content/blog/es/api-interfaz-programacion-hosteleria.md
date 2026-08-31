@@ -2,7 +2,7 @@
 title: "API (Interfaz de Programación): Qué es y Cómo Transforma la Hostelería"
 description: "Descubre qué es una API y cómo transforma la operativa de restaurantes mediante la integración de sistemas. Guía práctica para profesionales de hostelería."
 pubDate: 2026-02-17
-modDate: 2026-08-01
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/02/api-nanobanana.jpg
 imageAlt: "API (Interfaz de Programación): Qué es y Cómo Transforma la Hostelería"
@@ -33,6 +33,8 @@ wpId: 2901
 <p class="wp-block-paragraph">Imagina una API como el <strong>camarero de un restaurante</strong>: tú (el cliente) haces un pedido, el camarero lo lleva a la cocina (el sistema), y vuelve con tu plato (la respuesta). La API actúa como intermediario, traduciendo solicitudes y respuestas entre sistemas que «hablan» idiomas diferentes.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=api-interfaz-programacion-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
 
 <h2 class="wp-block-heading">¿Por qué las APIs son Cruciales en Hostelería?</h2>
 
@@ -91,6 +93,8 @@ wpId: 2901
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=api-interfaz-programacion-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
+
 <h2 class="wp-block-heading">Cómo AI Chef Pro Utiliza APIs</h2>
 
 
@@ -137,6 +141,8 @@ wpId: 2901
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=api-interfaz-programacion-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
 
 <h2 class="wp-block-heading">Conclusión</h2>
 

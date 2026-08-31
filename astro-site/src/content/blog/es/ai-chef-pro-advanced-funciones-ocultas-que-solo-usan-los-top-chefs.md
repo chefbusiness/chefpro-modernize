@@ -2,7 +2,7 @@
 title: "AI Chef Pro Funciones Avanzadas: Técnicas de Power User"
 description: "Funciones avanzadas de AI Chef Pro para power users: encadenar agentes, briefs reutilizables y flujos semanales. Técnicas reales, sin humo, con precios 2026."
 pubDate: 2025-10-01
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/AI-Chef-Pro-Advanced-1.jpeg
 imageAlt: "AI Chef Pro Advanced: Funciones Ocultas que Solo Usan los Top Chefs"
@@ -62,6 +62,8 @@ Encadenar agentes es la técnica que más créditos consume —cada agente llama
 | Contenido para redes o marketing | Escribe un post suelto pidiendo «un texto para Instagram». | Prepara un brief con tono, público, formato y objetivos; luego usa el entregable de un agente de recetas como base para que el agente de marketing genere varios formatos (post, historia, newsletter). |
 | Comida de personal | Improvisa con lo que sobra o pide una idea rápida. | Usa **Comida de Personal** con brief fijo (número de comensales, presupuesto por ración, restricciones) y encadena con **Calcula Pax** para lista de compra ajustada. |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-advanced-funciones-ocultas-que-solo-usan-los-top-chefs" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
+
 ## Briefs reutilizables: trabaja una vez, aprovecha siempre
 
 La mayor parte del resultado de un agente de IA depende de cómo le explicas lo que necesitas. Los usuarios avanzados no escriben prompts desde cero cada vez: **redactan un brief maestro una sola vez** y lo reutilizan cambiando solo los datos variables.
@@ -106,6 +108,8 @@ Esto consigue tres cosas:
 | Sala / Marketing | Gerente de Restaurante Pro o agente de marketing | Plato o menú a comunicar, tono del local, canal (carta, pizarra, Instagram, newsletter), extensión deseada, argumento de venta principal. | Texto para carta, post para redes o guion para explicar el plato en sala. |
 
 Estas plantillas no son estáticas: se afinan con el uso. El pastelero descubre que añadiendo «tipo de gelificante disponible» el agente afina mejor las texturas, y lo incorpora al brief. En poco tiempo tienes un sistema de trabajo que parece hecho a medida.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-advanced-funciones-ocultas-que-solo-usan-los-top-chefs" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
 
 ## Flujos semanales: de la ocurrencia a la rutina profesional
 
@@ -161,6 +165,8 @@ Si aún no tienes cuenta o quieres probar estas técnicas desde cero, [abre AI C
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="683" data-attachment-id="1666" data-orig-file="/blog-assets/2025/09/AI-Chef-Pro-Advanced-4.jpeg" data-orig-size="1248,832" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1759097239&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AI Chef Pro Advanced-4" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/09/AI-Chef-Pro-Advanced-4.jpeg" src="/blog-assets/2025/09/AI-Chef-Pro-Advanced-4.jpeg" alt="AI Chef Pro Advanced: Funciones Ocultas que Solo Usan los Top Chefs" class="wp-image-1666" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-advanced-funciones-ocultas-que-solo-usan-los-top-chefs" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
 
 ## Conclusión: de usuario ocasional a power user
 

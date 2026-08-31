@@ -2,7 +2,7 @@
 title: "Coulant de Guanaja 70% y Praliné «Homenaje a Laguiole»"
 description: "Es un placer abordar una de las piezas más icónicas de la historia de la gastronomía contemporánea. El Biscuit de Chocolat Coulant, creado por el maestro…"
 pubDate: 2026-03-03
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/coulant-choco-aichefpro-recipe.jpg
 imageAlt: "COULANT DE GUANAJA 70% Y PRALINÉ \"HOMENAJE A LAGUIOLE\""
@@ -21,6 +21,8 @@ wpId: 3152
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="559" data-attachment-id="3159" data-orig-file="/blog-assets/2026/03/coulant-choco-aichefpro-recipe-3.jpg" data-orig-size="1408,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="coulant-choco-aichefpro-recipe-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2026/03/coulant-choco-aichefpro-recipe-3.jpg" src="/blog-assets/2026/03/coulant-choco-aichefpro-recipe-3.jpg" alt="COULANT DE GUANAJA 70% Y PRALINÉ &quot;HOMENAJE A LAGUIOLE&quot;" class="wp-image-3159" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
 <h3 class="wp-block-heading">CONTEXTO HISTÓRICO Y FILOSOFÍA</h3>
 
@@ -126,6 +128,8 @@ wpId: 3152
 
 <p class="wp-block-paragraph"><strong>Herramientas recomendadas:</strong>&nbsp;Thermomix, moldes de acero inoxidable (6 cm ø), manga pastelera, Bamix (para el aire), balanza de precisión.</p>
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
+
 
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
@@ -136,6 +140,8 @@ wpId: 3152
 " data-large-file="/blog-assets/2026/03/coulant-choco-aichefpro-recipe-2-scaled.png" src="/blog-assets/2026/03/coulant-choco-aichefpro-recipe-2-scaled.png" alt="COULANT DE GUANAJA 70% Y PRALINÉ &quot;HOMENAJE A LAGUIOLE&quot;" class="wp-image-3156" /><figcaption class="wp-element-caption">COULANT DE GUANAJA 70% Y PRALINÉ «HOMENAJE A LAGUIOLE» &#8211; Receta generada con <strong><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" target="_blank" data-type="link" data-id="https://aichef.pro" rel="noreferrer noopener">AI Chef Pro</a></strong></figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
 
 <h3 class="wp-block-heading">INSTRUCCIONES PASO A PASO</h3>
 

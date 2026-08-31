@@ -2,7 +2,7 @@
 title: "Food Truck Rentable: Costes, Márgenes y Previsión con IA"
 description: "Rentabiliza tu food truck en 2026: costes frente a un local fijo, ubicaciones y eventos, carta corta de alta rotación y previsión de demanda con IA."
 pubDate: 2026-03-23
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/food-truck-ia-1.jpg
 imageAlt: "Food truck gourmet en calle de Madrid con cola de clientes y chef visible"
@@ -66,6 +66,8 @@ Un local fijo, en comparación, parte de un mínimo de unos 80.000 € cuando me
 Los costes fijos de un food truck —cuota de autónomo, seguro de responsabilidad civil, licencias municipales, cánones de plaza en mercados o eventos y mantenimiento del vehículo— suelen moverse en la franja de **1.000 a 3.000 euros al mes**. Son cifras realistas para un operador que trabaja cuatro o cinco días por semana.
 
 En un local fijo, solo el alquiler iguala o supera esa cantidad en la mayoría de las zonas con paso de clientes. Si sumas suministros (luz, gas, agua), comunidad, basuras, seguros y la cuota de autónomo, los costes fijos mensuales se disparan. Para que nos entendamos: **todo lo que paga un food truck en costes fijos mensuales lo puede consumir solo el alquiler de un local pequeño en una capital de provincia.**
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-food-trucks-guia-rentabilizar-negocio-movil" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
 
 ### Coste operativo total: la foto completa
 
@@ -133,6 +135,8 @@ En un food truck, el tiempo de servicio es oro. Cada minuto extra por cliente re
 - Compartir bases (salsas, guarniciones, panes) entre varias referencias.
 - Formar a personal eventual en una mañana, porque el recetario es compacto y repetible.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-food-trucks-guia-rentabilizar-negocio-movil" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+
 ### Ingredientes compartidos: el truco de los números
 
 Un ejemplo real: si tu carta incluye una hamburguesa de pulled pork, un sándwich vietnamita y unos tacos, el cerdo desmenuzado aparece en los tres. Compras una pieza grande, la cocinas de una vez y la rentabilizas en varios platos. El food cost del cerdo se diluye y la merma se minimiza. A esto se le llama **ingeniería de carta**, y es una de las funciones que los agentes de IA de AI Chef Pro resuelven en minutos: cruzar ingredientes, detectar duplicidades y optimizar el escandallo.
@@ -193,6 +197,8 @@ El cálculo del punto de equilibrio es el ejercicio más sano que puede hacer cu
 - Con un **ticket medio de 12 €** y un **food cost del 30 %**, el coste de materia prima por ticket es de 3,60 €. El **margen de contribución** (lo que queda tras pagar la materia prima) es de 8,40 €. Sé prudente y redondea a **7 €** para absorber pequeñas variaciones.
 
 Con un margen de 7 € por ticket, necesitas vender 2.000 / 7 = aproximadamente **286 tickets al mes** solo para cubrir costes fijos. Eso son unos 13 o 14 tickets al día si trabajas 22 días al mes. A partir de ahí, cada ticket extra empieza a generar beneficio neto.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-food-trucks-guia-rentabilizar-negocio-movil" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
 
 ### Facturación y rentabilidad: la horquilla realista
 

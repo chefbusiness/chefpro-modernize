@@ -2,7 +2,7 @@
 title: "Carbonara Auténtica Romana: Receta Original Sin Nata (Paso a Paso)"
 description: "La verdadera carbonara italiana: yema de huevo, pecorino, guanciale y pimienta. Sin nata, sin champiñones. Técnica Pro para emulsión perfecta sin que el…"
 pubDate: 2026-03-17
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/carbonara-autentica.jpg
 imageAlt: "Carbonara Auténtica Romana: Receta Original Sin Nata (Paso a Paso)"
@@ -44,6 +44,9 @@ wpId: 3288
 <p><strong>Paso 1:</strong> En un bol grande, mezcla las dos yemas, el huevo entero, el pecorino y el parmesano. Bate hasta obtener una pasta espesa y homogénea.</p>
 <p><strong>Paso 2:</strong> Añade generosa cantidad de pimienta negra recién molida. Debe quedar visiblemente speckled (moteada).</p>
 <p><strong>Paso 3:</strong> Reserva a temperatura ambiente. No refrigires.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carbonara-autentica-romana-receta-original" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h3>Fase 2: El Guanciale (10 min)</h3>
 <p><strong>Paso 4:</strong> Corta el guanciale en tiras de 0.5cm x 3cm. Elimina la piel si es muy dura.</p>
 <p><strong>Paso 5:</strong> En sartén fría (sin aceite), coloca el guanciale. Enciende a fuego medio-bajo.</p>
@@ -71,6 +74,9 @@ wpId: 3288
 <p>El guanciale (carrillera curada) tiene más grasa y menos carne que la pancetta. Al renderizar, libera grasa más sabrosa y los trozos quedan más crujientes. Si no encuentras guanciale, usa pancetta o bacon, pero no es carbonara auténtica.</p>
 <h3>4. Los Quesos (Pecorino + Parmesano)</h3>
 <p>El pecorino romano es salado y fuerte. El parmesano es más suave y umami. La mezcla equilibra. 100% pecorino es demasiado agresivo; 100% parmesano pierde carácter.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carbonara-autentica-romana-receta-original" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
+
 <h2>Errores Comunes</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -115,6 +121,9 @@ wpId: 3288
 <p><strong>¿Por qué mi carbonara sabe a huevo crudo?</strong><br /> Probablemente la pasta estaba fría cuando añadiste el huevo, o no removiste suficientemente rápido. Debe integrarse completamente.</p>
 <p><strong>¿Se puede recalentar?</strong><br /> No recomendado. El huevo se cuaja al recalentar. Prepárala justo antes de comer.</p>
 <p><strong>¿Spaghetti o rigatoni?</strong><br /> Los spaghetti son clásicos, pero los rigatoni (tubos grandes) atrapan mejor la salsa en su interior. Ambos válidos.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carbonara-autentica-romana-receta-original" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h2>Conservación</h2>
 <ul>
 <li><strong>Consumo:</strong> Inmediato. No admite espera.</li>

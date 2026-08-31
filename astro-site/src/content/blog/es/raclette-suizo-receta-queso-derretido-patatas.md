@@ -2,7 +2,7 @@
 title: "Raclette Suizo: Receta Pro de la Experiencia Alpina"
 description: "Auténtica raclette suiza: queso derretido sobre patatas, embutidos y pepinillos. Guía Pro para una velada inolvidable."
 pubDate: 2026-06-09
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/raclette.jpg
 imageAlt: "Raclette Suizo: Receta Pro de la Experiencia Alpina"
@@ -35,6 +35,9 @@ wpId: 3574
 <li>200g pimientos asados</li>
 <li>Pimienta negra recién molida</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Tapas Bar</h3><p class="mt-2 text-muted-foreground">Gastrobar: plan financiero Excel, DOCX y checklist de apertura.</p><a href="/plan-negocio-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=raclette-suizo-receta-queso-derretido-patatas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Tapas Bar por €35</a></aside>
+
 <h3>Opcionales:</h3>
 <ul>
 <li>Pollo o ternera en tiras para asar</li>
@@ -56,6 +59,9 @@ wpId: 3574
 <p><strong>Paso 9:</strong> Cuando el queso esté perfectamente derretido y ligeramente dorado, retira.</p>
 <p><strong>Paso 10:</strong> Raspa/rasga el queso derretido directamente sobre las patatas calientes.</p>
 <p><strong>Paso 11:</strong> Acompaña con pepinillos, cebollitas y embutidos. Espolvorea pimienta.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=raclette-suizo-receta-queso-derretido-patatas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
+
 <h3>Fase 4: Continuar&#8230;</h3>
 <p><strong>Paso 12:</strong> Repite el proceso tantas veces como quieras. El raclette es comida social sin prisa.</p>
 <h2>Técnicas Clave</h2>
@@ -65,6 +71,9 @@ wpId: 3574
 <p>El queso debe burbujear pero no quemarse. Dorado en los bordes = perfecto.</p>
 <h3>3. Patatas Calientes</h3>
 <p>El queso se adhiere mejor a las patatas calientes. Mantener en calentador.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=raclette-suizo-receta-queso-derretido-patatas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

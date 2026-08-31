@@ -2,7 +2,7 @@
 title: "Pierogi Polacos: Receta Pro de Dumplings con Patata y Queso"
 description: "Auténticos pierogi polacos: masa casera, relleno de patata y queso cottage, cebolla caramelizada. Técnica Pro para sellado perfecto."
 pubDate: 2026-04-23
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/pierogi.jpg
 imageAlt: "Pierogi Polacos: Receta Pro de Dumplings con Patata y Queso"
@@ -36,6 +36,9 @@ wpId: 3480
 <li>2 cucharadas mantequilla</li>
 <li>Sal y pimienta blanca</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pierogi-polacos-receta-dumplings-patata-queso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h3>Para Servir:</h3>
 <ul>
 <li>2 cebollas, en rodajas finas</li>
@@ -60,6 +63,9 @@ wpId: 3480
 <p><strong>Paso 11:</strong> Coloca 1 cucharadita de relleno en el centro de cada círculo.</p>
 <p><strong>Paso 12:</strong> Dobla por la mitad formando media luna. Sella bordes presionando con un tenedor.</p>
 <p><em>Pro Tip:</em> No sobrecargues de relleno o se romperán al hervir.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pierogi-polacos-receta-dumplings-patata-queso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h3>Fase 4: Cocción (15 min)</h3>
 <p><strong>Paso 13:</strong> Hierve agua con sal. Cocina pierogi en tandas 3-4 minutos hasta que floten.</p>
 <p><strong>Paso 14:</strong> Retira con espumadera. Escurre bien.</p>
@@ -72,6 +78,9 @@ wpId: 3480
 <p>El borde debe estar bien sellado para que no entre agua. Humedece ligeramente el borde antes de cerrar.</p>
 <h3>2. Doble Cocción</h3>
 <p>Hervir + saltear es la forma tradicional. El salteado añade textura crujiente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=pierogi-polacos-receta-dumplings-patata-queso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

@@ -2,7 +2,7 @@
 title: "BBQ Ribs Americanas: Receta Pro Estilo Memphis Low and Slow"
 description: "Auténticas BBQ ribs americanas: costillas de cerdo cocinadas low and slow 6 horas con dry rub y salsa BBQ casera. Técnica Pro de Memphis."
 pubDate: 2026-07-01
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/bbq-ribs.jpg
 imageAlt: "BBQ Ribs Americanas: Receta Pro Estilo Memphis Low and Slow"
@@ -36,6 +36,9 @@ wpId: 3584
 <li>1 cucharadita cayena</li>
 <li>1 cucharadita comino</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bbq-ribs-americanas-receta-memphis-low-slow" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
+
 <h3>Para la Salsa BBQ:</h3>
 <ul>
 <li>1 taza ketchup</li>
@@ -61,6 +64,9 @@ wpId: 3584
 <p><strong>Paso 9:</strong> Cocina 3 horas sin abrir (mantiene temperatura estable).</p>
 <p><strong>Paso 10:</strong> Opcional «Texas Crutch»: envuelve en papel de aluminio con un poco de jugo de manzana para 1.5 horas más (más jugosas).</p>
 <p><strong>Paso 11:</strong> Si usaste foil, desenvuelve y cocina 30 min más para formar bark.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bbq-ribs-americanas-receta-memphis-low-slow" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
+
 <h3>Fase 3: Salsa BBQ (15 min)</h3>
 <p><strong>Paso 12:</strong> Mezcla todos los ingredientes de la salsa en cacerola.</p>
 <p><strong>Paso 13:</strong> Cocina 10 minutos a fuego medio hasta espesar ligeramente.</p>
@@ -75,6 +81,9 @@ wpId: 3584
 <p>225°F (110°C) es la temperatura ideal. Fluctuaciones arruinan la cocción.</p>
 <h3>3. El Test de Doblado</h3>
 <p>Levanta el rack con pinzas. Si se dobla fácilmente formando una U, están listas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bbq-ribs-americanas-receta-memphis-low-slow" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

@@ -2,7 +2,7 @@
 title: "Maceración: Concepto y Definición"
 description: "Descubre qué es la maceración: técnica de extracción de sabores mediante inmersión. Tipos (azúcar, alcohol, vinagre), aplicaciones en licores y gastronomía…"
 pubDate: 2026-03-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/maceracion-featured.jpg
 imageAlt: "Maceración: Concepto y Definición"
@@ -63,6 +63,9 @@ wpId: 3258
 <h2>Historia de la Maceración</h2>
 <h3>Orígenes Ancestrales</h3>
 <p>La maceración es probablemente tan antigua como la agricultura misma. Las <strong>civilizaciones antiguas</strong> descubrieron que sumergir frutas en miel o alcohol no solo preservaba los alimentos sino que creaba nuevos sabores. Los <strong>egipcios</strong> maceraban hierbas en vino para uso medicinal; los <strong>romanos</strong> preparaban licores de frutas y especias.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hotel Completo</h3><p class="mt-2 text-muted-foreground">F&amp;B, housekeeping, multi-punto de venta.</p><a href="/kit-tareas-hotel?utm_source=blog&amp;utm_medium=banner&amp;utm_content=maceracion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hotel Completo por €18,50</a></aside>
+
 <h3>Edad Media y Renacimiento</h3>
 <p>Los <strong>monjes medievales</strong> perfeccionaron la maceración de hierbas en alcohol para crear licores medicinales que evolucionaron hasta convertirse en los digestivos modernos. El Chartreuse, creado por monjes cartujos en 1737, es un ejemplo de esta tradición.</p>
 <h3>Era Moderna</h3>
@@ -125,6 +128,9 @@ wpId: 3258
 <p><strong>Vacío:</strong> Al macerar bajo vacío, los poros del alimento se expanden, permitiendo extracción más rápida y completa.</p>
 <p><strong>Ultrasonidos:</strong> Las ondas sonoras aceleran la difusión celular, reduciendo tiempos de horas a minutos.</p>
 <p><strong>Presión:</strong> La alta presión altera la permeabilidad celular, facilitando la extracción.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=maceracion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+
 <h3>Maceración en Frío vs. Calor</h3>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -210,6 +216,9 @@ wpId: 3258
 <p><strong>¿Por qué mi licor está turbio?</strong><br /> Probablemente contiene partículas en suspensión. Filtrar mediante papel de café, tela fina o dejar decantar y usar solo la parte clara.</p>
 <p><strong>¿La maceración extrae nutrientes?</strong><br /> Sí, especialmente compuestos polifenólicos, vitaminas hidrosolubles y antioxidantes. El jarabe resultante es nutritivo.</p>
 <p><strong>¿Puedo macerar frutas congeladas?</strong><br /> Sí, pero liberan más agua al descongelarse. Reducir ligeramente la cantidad de líquido o azúcar añadido.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=maceracion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>maceración</strong> es una técnica que ejemplifica la elegancia de la cocina tradicional: con tiempo, paciencia y comprensión de procesos naturales, se obtienen resultados que superan a cualquier método acelerado. Desde la extracción de esencias para licores artesanales hasta la preparación de frutas para postres sofisticados, esta técnica sigue siendo fundamental en la gastronomía contemporánea.</p>
 <p>En una era de técnicas moleculares complejas, la maceración nos recuerda que a veces las mejores transformaciones culinarias ocurren simplemente dejando que la naturaleza siga su curso. Dominar esta técnica es dominar el arte de la extracción de sabores en su forma más pura.</p>

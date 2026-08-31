@@ -2,7 +2,7 @@
 title: "Catering para Empresas: Precios y Escandallos por Evento"
 description: "Estructura de precios por tipo de evento, cómo escandallar cada servicio y montar presupuestos con IA para tu negocio de catering. Datos 2026."
 pubDate: 2026-03-25
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/catering-empresas-ia-1.jpg
 imageAlt: "Catering corporativo elegante en centro de conferencias con personal profesional"
@@ -42,6 +42,8 @@ Un catering para empresas resiste la estacionalidad porque factura contra evento
 Dentro del catering corporativo conviene distinguir dos perfiles de cliente que condicionan tu planificación financiera. Por un lado están los eventos puntuales —cóctel de Navidad, inauguración de oficina, lanzamiento de producto— que se presupuestan, se ejecutan y se cobran uno a uno. Por otro, las cuentas recurrentes como el comité de dirección semanal de un despacho de abogados, el desayuno mensual de una tecnológica o el servicio de comedor diario para una farmacéutica. Estas cuentas recurrentes son el verdadero oxígeno del negocio: te dan ingreso fijo, planificación de compras a largo plazo y una relación de confianza con el cliente que desemboca en más eventos puntuales. En ambos casos, exige una señal del 40-50 % a la firma del contrato; el resto se liquida 48-72 horas antes del evento o, en cuentas recurrentes, a 30 días con factura mensual. Ese depósito inicial cubre tu compra de género y blinda el compromiso del cliente.
 
 Pero atención: el margen no te lo da el formato, te lo da el control. Según estudios del sector, una parte muy relevante de los negocios de restauración que echan la persiana en sus primeros años arrastraba un control de costes deficiente. En un catering el mayor peligro no es quedarte sin eventos, es que el escandallo esté mal hecho. Si fallas por 2 € por comensal en un cóctel de 200 personas, te has comido 400 € de margen antes de montar la primera bandeja. Así que la rentabilidad empieza en la hoja de cálculo, no en los fogones. Cada segmento de cliente valora cosas distintas y tu propuesta debe reflejarlo. Las empresas tecnológicas buscan presentación impecable, puntualidad y opciones adaptadas a dietas variadas —tendencia plant-based, sin gluten— porque suelen tener equipos jóvenes e internacionales. Los despachos de abogados y consultorías estratégicas valoran la discreción y la calidad del servicio de sala; un camarero que sirve en silencio suma más que una estación vistosa. Las farmacéuticas son estrictas con el protocolo de alérgenos y la trazabilidad del producto. La administración pública se rige por pliegos de licitación donde el precio y la transparencia del desglose mandan sobre cualquier otro factor. Entender esto te permite afinar el enfoque de cada propuesta sin cambiar tu estructura de costes.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-catering-empresas-eventos-corporativos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
 
 ## Estructura de Precios por Tipo de Evento Corporativo (2026)
 
@@ -93,6 +95,8 @@ Para que veas la letra pequeña de esos 15 € de materia prima, te desgloso un 
 
 Un apunte de gestión que te ahorrará disgustos: establece en contrato un «número de garantía» o PAX mínimo facturable. Si el cliente confirma 200 asistentes y luego asisten 180, tú has comprado y producido para 200. Negocia facturar sobre el 90-100 % del aforo confirmado; casi todos los clientes corporativos lo aceptan si se lo explicas con transparencia: «compro y elaboro con 48 horas de antelación, no puedo devolver el género a mi proveedor». Así tu margen no depende de los que fallan a última hora.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-catering-empresas-eventos-corporativos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 ## Propuestas Comerciales que se Ganan
 
 Una propuesta de catering corporativo se gana cuando el cliente entiende exactamente lo que va a recibir y siente que tiene el control del gasto. Incluye siempre:
@@ -120,6 +124,8 @@ El montaje y desmontaje, así como la presencia de personal de sala, dependen de
 La inteligencia artificial escala las recetas al número de comensales confirmados, genera las fichas de producción y la lista de la compra ajustada, y ordena los timings del día para que la secuencia de carga, cocina y montaje no se solape de forma absurda.
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-catering-empresas-eventos-corporativos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
 
 ## Checklist Operativo del Día del Evento
 

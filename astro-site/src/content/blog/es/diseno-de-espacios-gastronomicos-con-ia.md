@@ -2,7 +2,7 @@
 title: "Diseño de Espacios Gastronómicos con IA: Guía Completa para Transformar tu Restaurante"
 description: "El diseño de restaurantes con IA está revolucionando la forma en que los profesionales de la hostelería conceptualizan, planifican y ejecutan sus proyectos…"
 pubDate: 2025-12-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: tutoriales
 image: /blog-assets/2025/12/diseno-de-espacios-gastronomicos-con-ia-1.jpeg
 imageAlt: "Diseño de Espacios Gastronómicos con IA: Guía Completa para Transformar tu Restaurante"
@@ -209,6 +209,8 @@ wpId: 1845
 <figure class="wp-block-image size-full has-custom-border"><a href="https://gastrolocal.pro" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1152" height="1354" data-attachment-id="1779" data-orig-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" data-orig-size="1152,1354" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gastrolocal-aichefpro" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" src="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" alt="GastroLocal.pro gestión y optimización de las fichas de google business profile para restaurantes y negocios de hostelería" class="has-border-color has-vivid-green-cyan-border-color wp-image-1779" /></a></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=diseno-de-espacios-gastronomicos-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
 
 <h2 class="wp-block-heading">Proceso Paso a Paso para Diseñar tu Restaurante con IA</h2>
 
@@ -470,6 +472,8 @@ wpId: 1845
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=diseno-de-espacios-gastronomicos-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2 class="wp-block-heading">Iluminación, Acústica y Ambientación Inteligente</h2>
 
 
@@ -711,6 +715,8 @@ wpId: 1845
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="559" data-attachment-id="1856" data-orig-file="/blog-assets/2025/12/diseno-de-espacios-gastronomicos-con-ia-5.jpg" data-orig-size="1408,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="diseno-de-espacios-gastronomicos-con-ia-5" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/12/diseno-de-espacios-gastronomicos-con-ia-5.jpg" src="/blog-assets/2025/12/diseno-de-espacios-gastronomicos-con-ia-5.jpg" alt="Diseño de Espacios Gastronómicos con IA: Guía Completa para Transformar tu Restaurante" class="wp-image-1856" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=diseno-de-espacios-gastronomicos-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h2 class="wp-block-heading">Preguntas Frecuentes sobre Diseño de Restaurantes con IA</h2>
 

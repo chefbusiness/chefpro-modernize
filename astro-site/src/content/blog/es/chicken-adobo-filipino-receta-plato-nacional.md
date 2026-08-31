@@ -2,7 +2,7 @@
 title: "Chicken Adobo Filipino: Receta Pro del Plato Nacional"
 description: "Auténtico Chicken Adobo filipino: pollo guisado en vinagre, salsa de soja y ajo. Técnica Pro de Manila con variaciones regionales."
 pubDate: 2026-06-02
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/chicken-adobo.jpg
 imageAlt: "Chicken Adobo Filipino: Receta Pro del Plato Nacional"
@@ -38,6 +38,9 @@ wpId: 3567
 <li>200ml leche de coco (estilo Bicol)</li>
 <li>Pimientos jalapeño o chiles de árbol</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=chicken-adobo-filipino-receta-plato-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h3>Para Servir:</h3>
 <ul>
 <li>Arroz blanco al vapor</li>
@@ -62,6 +65,9 @@ wpId: 3567
 <p><strong>Paso 11:</strong> Destapa y sube a fuego medio-alto.</p>
 <p><strong>Paso 12:</strong> Cocina 10 minutos más, removiendo ocasionalmente, hasta que la salsa se reduzca y espese.</p>
 <p><strong>Paso 13:</strong> La salsa debe glasear el pollo pero no secarse completamente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=chicken-adobo-filipino-receta-plato-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h3>Fase 5: Servicio</h3>
 <p><strong>Paso 14:</strong> Sirve caliente con arroz blanco.</p>
 <p><strong>Paso 15:</strong> Espolvorea cebolletas. Acompaña con chiles si te gusta picante.</p>
@@ -77,6 +83,9 @@ wpId: 3567
 <p>El adobo perfecto tiene salsa espesa que se adhiere al pollo. Paciencia en esta fase.</p>
 <h3>3. Día Siguiente</h3>
 <p>El adobo mejora al día siguiente. Guarda en refrigerador y recalienta.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=chicken-adobo-filipino-receta-plato-nacional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

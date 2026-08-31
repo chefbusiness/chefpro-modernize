@@ -2,7 +2,7 @@
 title: "AI Recipe Scaling: How to Scale Any Recipe Perfectly with Artificial Intelligence"
 description: "AI Recipe Scaling: How to Scale Any Recipe Perfectly with Artificial Intelligence In the high-pressure environment of a commercial kitchen, recipe scaling is…"
 pubDate: 2026-03-12
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-in-gastronomy
 lang: en
 wpId: 3265
@@ -80,6 +80,9 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <p>This creates a seamless workflow from recipe development to menu costing—a process that traditionally required jumping between multiple spreadsheets and systems.</p>
 <figure>
 <img loading="lazy" decoding="async" src="/blog-assets/en/2026/03/post1-scaling-comparison.png" alt="Overhead view of recipe ingredients scaled from 4 to 40 portions on a prep station" width="1024" height="576" /><figcaption>Scaling from 4 to 40 portions requires more than simple multiplication</figcaption></figure>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Private Chef</h3><p class="mt-2 text-muted-foreground">At-home showcooking and events, with 11 deliverables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-recipe-scaling-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Private Chef for €45</a></aside>
+
 <h2>Step-by-Step: Scaling Recipes with AI Tools</h2>
 <p>Let&#8217;s walk through a real-world example of AI recipe scaling in action. We&#8217;ll use a classic French onion soup recipe designed for 4 servings and scale it to 40 servings for a catering event.</p>
 <h3>Starting Point: The Original Recipe</h3>
@@ -216,6 +219,9 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <p><strong>AI Chef Pro</strong> stands out for professional kitchens because it offers a comprehensive suite of 75+ AI tools beyond just scaling—including menu costing, prep scheduling, inventory predictions, and supplier communication templates. The free tier with 10 uses per month is perfect for testing the technology before committing, and the tool integrates seamlessly with existing kitchen workflows.</p>
 <h2>How to Get Started with AI Recipe Scaling</h2>
 <p>Ready to transform your kitchen&#8217;s approach to recipe scaling? Here&#8217;s your implementation roadmap:</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Guide: Japanese Restaurant</h3><p class="mt-2 text-muted-foreground">60 seats, the full roadmap to open a Japanese restaurant in Spain.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-recipe-scaling-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Guide: Japanese Restaurant for €65</a></aside>
+
 <h3>Step 2: Choose Your AI Tool</h3>
 <p>Selecting the right AI scaling platform depends on your operation&#8217;s size and complexity. For single-location restaurants, a focused recipe scaling tool may suffice. Multi-unit operations typically need full-suite solutions that integrate with inventory management and procurement systems.</p>
 <p><strong>AI Chef Pro</strong> offers an ideal starting point with its AI Chef Member plan, giving you 10,000 credits monthly to test the platform without commitment. This allows you to validate the technology before scaling adoption across your operation. The tool handles everything from simple yield adjustments to complex batch calculations across multiple measurement systems.</p>
@@ -313,6 +319,9 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Join thousands of professional chefs already using AI to scale recipes, manage costs, and optimize their menus. Cancel anytime.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started with AI Chef Pro →</a>
 </div>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Chocolate Shop</h3><p class="mt-2 text-muted-foreground">Tempering, molding, assembly, and packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-recipe-scaling-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Chocolate Shop for €12</a></aside>
+
 <h2>The Future of AI in Professional Kitchens</h2>
 <p>Recipe scaling represents just the entry point for artificial intelligence in professional hospitality. The technology trajectory points toward increasingly sophisticated applications that will reshape how we approach menu development, inventory management, and kitchen operations.</p>
 <p><strong>Menu engineering</strong> will become AI-driven, with systems analyzing sales data, food cost trends, and customer preferences to recommend optimal menu composition and pricing. Imagine your POS data automatically suggesting which dishes to promote based on margin optimization.</p>

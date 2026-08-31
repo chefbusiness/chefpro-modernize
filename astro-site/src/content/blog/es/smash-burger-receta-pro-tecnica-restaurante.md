@@ -2,7 +2,7 @@
 title: "Smash Burger: Receta Pro con Técnica de Restaurante"
 description: "Aprende la técnica del smash burger paso a paso. Costra crujiente, interior jugoso, sabor intenso. Receta profesional para resultados de restaurante en casa."
 pubDate: 2026-02-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/02/smashburger-aichefpro-3.jpg
 imageAlt: "Smash Burger: Receta Pro con Técnica de Restaurante"
@@ -184,6 +184,8 @@ wpId: 2771
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="559" data-attachment-id="2780" data-orig-file="/blog-assets/2026/02/smashburger-aichefpro-4.jpg" data-orig-size="1408,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="smashburger-aichefpro-4" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2026/02/smashburger-aichefpro-4.jpg" src="/blog-assets/2026/02/smashburger-aichefpro-4.jpg" alt="Smash Burger: Receta Pro con Técnica de Restaurante" class="wp-image-2780" /><figcaption class="wp-element-caption">Smash Burger: Receta Pro con Técnica de Restaurante &#8211; Imagen creado con <strong>AI Chef Pro</strong></figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=smash-burger-receta-pro-tecnica-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 <h2 class="wp-block-heading">Preparación Paso a Paso</h2>
 
@@ -425,6 +427,8 @@ wpId: 2771
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=smash-burger-receta-pro-tecnica-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h3 class="wp-block-heading">Versión Sin Gluten</h3>
 
 
@@ -577,6 +581,8 @@ wpId: 2771
 <figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Aspecto</th><th>Detalle</th></tr><tr><td><strong>Técnica</strong></td><td>Aplastado sobre plancha caliente</td></tr><tr><td><strong>Grasa carne</strong></td><td>20% ideal</td></tr><tr><td><strong>Temperatura</strong></td><td>220-250°C</td></tr><tr><td><strong>Tiempo cocción</strong></td><td>90 seg primer lado, 60 seg segundo</td></tr><tr><td><strong>Textura</strong></td><td>Costra crujiente, interior jugoso</td></tr></tbody></table></div></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=smash-burger-receta-pro-tecnica-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h2 class="wp-block-heading">Glosario Relacionado</h2>
 

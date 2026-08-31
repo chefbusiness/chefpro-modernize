@@ -2,7 +2,7 @@
 title: "Hidrólisis: Concepto y Definición"
 description: "Descubre qué es la hidrólisis: reacción química que rompe moléculas con agua. Tipos (proteolítica, amilolítica, lipolítica), aplicaciones en cocina y…"
 pubDate: 2026-03-20
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/hidrolisis-featured.jpg
 imageAlt: "Hidrólisis: Concepto y Definición"
@@ -56,6 +56,9 @@ wpId: 3249
 </tbody>
 </table></div>
 <h2>Ciencia de la Hidrólisis</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=hidrolisis-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h3>Mecanismo de Reacción</h3>
 <p>La hidrólisis rompe enlaces químicos mediante la adición de agua:</p>
 <p><strong>R-X + H₂O → R-H + X-OH</strong></p>
@@ -132,6 +135,9 @@ wpId: 3249
 <li>Liberan aminoácidos que proporcionan umami.</li>
 <li>El proceso puede durar 6 meses a 2 años.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=hidrolisis-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h3>Cocción Lenta</h3>
 <p>Aunque no es puramente hidrólisis enzimática, el calor y la humedad combinados:</p>
 <ul>
@@ -171,6 +177,9 @@ wpId: 3249
 <p><strong>¿Por qué la carne madurada sabe mejor?</strong><br /> La hidrólisis proteica libera aminoácidos y péptidos que tienen sabor (umami) y aroma, además de ablandar la textura al romper fibras musculares.</p>
 <p><strong>¿Puedo acelerar la hidrólisis en casa?</strong><br /> Puedes usar enzimas comerciales (como la papaina o bromelina de papaya y piña) para ablandar carnes más rápidamente, aunque el resultado es diferente a la maduración tradicional.</p>
 <p><strong>¿Es segura la carne madurada?</strong><br /> Sí, si se controla temperatura y humedad. La superficie exterior se corta antes de consumir. La desecación inhibe bacterias patógenas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=hidrolisis-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 <h2>Conclusión</h2>
 <p>La <strong>hidrólisis</strong> es un proceso químico fundamental que opera silenciosamente detrás de muchas de las transformaciones más importantes en la cocina. Desde la tierna carne madurada hasta el complejo sabor de un queso añejo, desde el dulce almíbar hasta el profundo umami de la salsa de soja, este proceso demuestra cómo la química y la gastronomía están intrínsecamente unidas.</p>
 <p>Para el cocinero moderno, comprender la hidrólisis no es solo conocimiento teórico: es una herramienta práctica que permite optimizar técnicas tradicionales y explorar innovaciones culinarias. En una era donde la ciencia y el arte culinario convergen cada vez más, dominar conceptos como la hidrólisis se convierte en una ventaja competitiva esencial.</p>

@@ -2,7 +2,7 @@
 title: "25 Platos de Autor Reinventados con Cocina Creativa AI"
 description: "La cocina de autor representa la máxima expresión de creatividad culinaria, donde cada chef imprime su sello personal en creaciones únicas e irrepetibles…"
 pubDate: 2026-01-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/torrija-molecular-aichefpro.jpeg
 imageAlt: "Torrija Molecular con Helado de Canela y Espuma de Leche Merengada"
@@ -375,6 +375,8 @@ wpId: 2313
 <figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plato</th><th class="has-text-align-left" data-align="left">Técnica Principal</th><th class="has-text-align-left" data-align="left">Tiempo</th><th class="has-text-align-left" data-align="left">Dificultad</th></tr></thead><tbody><tr><td>Tortilla Deconstruida 3.0</td><td>Fermentación + Criogenización</td><td>52h</td><td>Avanzado</td></tr><tr><td>Risotto Molecular</td><td>Esferificación + Aires</td><td>3h</td><td>Intermedio</td></tr><tr><td>Gazpacho de Fresas</td><td>Esferificación + Criogenización</td><td>4h</td><td>Intermedio</td></tr><tr><td>Cochinillo Confitado</td><td>Confitado lento + Texturas</td><td>76h</td><td>Avanzado</td></tr><tr><td>Huevo 63°C</td><td>Sous vide + Espumas</td><td>1.5h</td><td>Básico</td></tr><tr><td>Tatin Salada</td><td>Caramelización + Mi-cuit</td><td>5h</td><td>Avanzado</td></tr><tr><td>Ceviche Nikkei Ahumado</td><td>Ahumado frío + Marinado</td><td>2h</td><td>Intermedio</td></tr><tr><td>Remolacha con Cacao</td><td>Asado + Gelificación</td><td>4h</td><td>Básico</td></tr></tbody></table></div></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
 
 <h2 class="wp-block-heading">Platos de autor fusión generados con IA (Platos 9-16)</h2>
 
@@ -824,6 +826,8 @@ wpId: 2313
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h2 class="wp-block-heading">Postres de autor reinventados con IA (Platos 22-25)</h2>
 
 
@@ -1237,6 +1241,8 @@ wpId: 2313
 <p class="wp-block-paragraph">Cada plato generado incluye documentación completa, facilitando la formación del equipo y la consistencia del servicio. Esto es especialmente valioso para <a href="https://aichef.pro/blog/inteligencia-artificial-en-la-formacion-de-profesionales-gastronomicos" target="_blank">la formación de profesionales gastronómicos</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
 
 <h2 class="wp-block-heading">El futuro de la cocina de autor con inteligencia artificial</h2>
 

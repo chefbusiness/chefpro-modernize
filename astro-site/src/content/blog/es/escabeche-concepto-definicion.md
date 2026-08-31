@@ -2,7 +2,7 @@
 title: "Escabeche: Concepto y Definición"
 description: "Descubre qué es el escabeche: técnica de conservación y marinado de origen persa-árabe. Historia, diferencias con ceviche, variaciones españolas y peruanas…"
 pubDate: 2026-03-14
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/escabeche-featured.jpg
 imageAlt: "Escabeche: Concepto y Definición"
@@ -64,6 +64,9 @@ wpId: 3224
 <li><strong>España:</strong> Durante los 800 años de presencia musulmana en la península.</li>
 <li><strong>América Latina:</strong> Traído por los españoles durante la colonización.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escabeche-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h3>Documentación en España (Siglo XVI)</h3>
 <p>La primera referencia escrita al escabeche en español aparece en <strong>1525</strong> en el <em>Libro de los guisados</em> del cocinero Ruperto de Nola (cocinero del rey Fernando II de Aragón). El libro, escrito en catalán, describe técnicas de conservación que incluyen el escabeche como método para preservar pescados y carnes.</p>
 <p>Otra teoría etimológica sugiere que el término proviene de la combinación del latín <em>esca</em> (alimento) y el nombre del pescado <em>alacha</em> o <em>aleche</em>, dando <em>esca-aleche</em> → escabeche.</p>
@@ -107,6 +110,9 @@ wpId: 3224
 <p>Es un plato caliente o tibio, muy diferente del ceviche crudo frío.</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/escabeche-peruano.jpg" alt="Escabeche de pescado peruano tradicional con ají amarillo" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Técnica de Preparación</h2>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escabeche-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h3>Proceso Paso a Paso</h3>
 <p><strong>Paso 1: Preparar el alimento base</strong><br /> &#8211; Pescado: Limpiar, salar ligeramente, enharinar.<br /> &#8211; Carne: Cortar en porciones, salpimentar.<br /> &#8211; Verduras: Cortar en rodajas o láminas uniformes.</p>
 <p><strong>Paso 2: Cocinar parcialmente</strong><br /> &#8211; Pescado: Freír en aceite caliente hasta dorar (no cocinar del todo).<br /> &#8211; Carne: Sellar o cocinar hasta 3/4 de su punto.<br /> &#8211; Verduras: Freír o asar ligeramente.</p>
@@ -157,6 +163,9 @@ wpId: 3224
 <p><strong>¿Qué pescados funcionan mejor?</strong><br /> Azules y grasos: sardinas, caballa, caballa, bonito. También merluza, gallo, pez espada. Evitar pescados muy delicados.</p>
 <p><strong>¿Por qué mi escabeche está grasoso?</strong><br /> Probablemente no se desgrasó el caldo de cocción o se usó demasiado aceite. La proporción ideal es 3:1 (aceite:vinagre).</p>
 <p><strong>¿El escabeche es saludable?</strong><br /> Moderadamente. El vinagre tiene propiedades beneficiosas, pero el método tradicional implica freír. Se pueden hacer versiones más ligeras horneando el pescado en lugar de freírlo.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escabeche-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2>Conclusión</h2>
 <p>El <strong>escabeche</strong> es un testimonio viviente de cómo las técnicas culinarias viajan, se adaptan y evolucionan a través de culturas y siglos. Desde los banquetes persas hasta las tabernas andaluzas, pasando por los cevicherías peruanas, esta técnica de conservación ha demostrado su versatilidad y valor gastronómico.</p>
 <p>Su belleza radica en la simplicidad: unos pocos ingredientes básicos (vinagre, aceite, especias) transforman alimentos cotidianos en preparaciones de sabor complejo y duradero. En una época donde la conservación ya no es necesidad sino elección, el escabeche sigue vigente por su inigualable capacidad de crear sabores profundos y evolucionados.</p>

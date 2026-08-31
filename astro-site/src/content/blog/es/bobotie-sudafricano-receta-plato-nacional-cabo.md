@@ -2,7 +2,7 @@
 title: "Bobotie Sudafricano: Receta Pro del Plato Nacional del Cabo"
 description: "Auténtico bobotie sudafricano: carne especiada al curry con cobertura de huevo horneada. Técnica Pro de Ciudad del Cabo."
 pubDate: 2026-05-15
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/bobotie-sudafrica.jpg
 imageAlt: "Bobotie Sudafricano: Receta Pro del Plato Nacional del Cabo"
@@ -39,6 +39,9 @@ wpId: 3558
 <li>Sal y pimienta</li>
 <li>3 hojas de laurel</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bobotie-sudafricano-receta-plato-nacional-cabo" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
+
 <h3>Para la Cobertura:</h3>
 <ul>
 <li>3 huevos grandes</li>
@@ -63,6 +66,9 @@ wpId: 3558
 <p><strong>Paso 11:</strong> Vierte la mezcla de huevo sobre la carne.</p>
 <p><strong>Paso 12:</strong> Inserta las hojas de laurel verticalmente en la mezcla.</p>
 <p><strong>Paso 13:</strong> Hornea 35-40 minutos hasta que la capa de huevo esté dorada y cuajada.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bobotie-sudafricano-receta-plato-nacional-cabo" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
+
 <h3>Fase 4: Servicio</h3>
 <p><strong>Paso 14:</strong> Deja reposar 10 minutos antes de servir.</p>
 <p><strong>Paso 15:</strong> Espolvorea con almendras restantes. Sirve con arroz amarillo y chutney.</p>
@@ -75,6 +81,9 @@ wpId: 3558
 <p>Actúa como ligante y aporta suavidad. Debe escurrirse pero no estar seco.</p>
 <h3>3. Reposo antes de Servir</h3>
 <p>Permite que las capas se asienten y los sabores se integren.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bobotie-sudafricano-receta-plato-nacional-cabo" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

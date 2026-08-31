@@ -2,7 +2,7 @@
 title: "IA para Panaderías: Guía Completa para tu Obrador 2026"
 description: "IA para panaderías: casos prácticos por proceso —fermentación, escandallo por pieza, mermas y marketing local— para producir mejor y tirar menos pan."
 pubDate: 2026-02-03
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/ia-para-panaderias-1.jpeg
 imageAlt: "IA para Panaderías: Guía Completa de Inteligencia Artificial para Panaderos Profesionales [2026]"
@@ -51,6 +51,8 @@ Muchos obradores fijan el precio de venta «a ojo» o aplicando un multiplicador
 ### Cómo lo calcula un agente de IA
 Le indicas la receta, el precio de cada ingrediente (puedes actualizarlo con un simple mensaje) y el coste de la hora de trabajo del panadero. El agente te devuelve el coste por kilo de masa, la merma estimada en horneado y el coste final por pieza. Si además le dices a qué precio lo vendes, te calcula el margen bruto y el umbral de rentabilidad. Para profundizar en este proceso, puedes consultar la [guía para calcular el costo de una receta con IA](https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia).
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-panaderias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 ### Ejemplo realista de escandallo por pieza
 A continuación tienes un escandallo típico para una hogaza de trigo de 750 g (masa madre, sin aditivos) producida en un obrador medio español, con cifras plausibles a enero de 2026:
 
@@ -90,6 +92,8 @@ No necesitas un software de gestión caro. Puedes introducir manualmente las ven
 
 La merma no es solo el pan que sobra al cierre. Hay merma en cada etapa: masa que se pega en la amasadora, recortes de formado, piezas que se abren de más en el greñado, panes que se queman o quedan bajos, y por supuesto el excedente no vendido. Controlar cada punto del proceso con IA te permite identificar dónde pierdes dinero y cómo darle una segunda vida al pan sin devaluar tu marca.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-panaderias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 ### Tabla de mermas por punto del proceso
 A modo de referencia, estos son porcentajes de merma habituales en un obrador artesano que no lleva un control fino (los valores pueden variar según equipo y oficio):
 
@@ -119,6 +123,8 @@ La IA te redacta tres publicaciones semanales con el tono de tu panadería: una 
 <figure class="wp-block-image size-full has-custom-border"><a href="https://gastrolocal.pro" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1152" height="1354" data-attachment-id="1779" data-orig-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" data-orig-size="1152,1354" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gastrolocal-aichefpro" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" src="/blog-assets/2025/11/gastrolocal-aichefpro.jpg" alt="GastroLocal.pro gestión y optimización de las fichas de google business profile para restaurantes y negocios de hostelería" class="has-border-color has-vivid-green-cyan-border-color wp-image-1779" /></a></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-para-panaderias" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
 
 ## Cómo empezar esta semana: pasos concretos
 

@@ -2,7 +2,7 @@
 title: "Gestión de Proveedores Restaurante: Más Margen con IA"
 description: "Convierte las compras en tu palanca de margen: compara precios, calcula pedidos, negocia con datos y controla albaranes con IA. Tabla de KPIs y checklist."
 pubDate: 2026-03-27
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a7-ia-1.jpg
 imageAlt: "Chef inspeccionando productos frescos en recepción"
@@ -57,6 +57,8 @@ Cada euro de margen que se fuga en las compras lo hace a través de uno de estos
 
 6. **Evaluación continua**: los proveedores no se evalúan una vez al año y se olvidan. Necesitas un sistema vivo que puntúe cada entrega, cada incidencia y cada desviación de precio para saber, en cualquier momento, quién rinde y quién te está lastrando el margen.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-proveedores-restaurante-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ## Comparar precios y calcular el pedido óptimo con IA
 
 Comparar ofertas de proveedores es más complejo de lo que parece. No basta con mirar el precio por kilo de dos albaranes distintos, porque uno te factura el solomillo limpio y el otro te lo manda con cordón y grasa sin desbastar. Uno te vende el tomate en caja de 6 kilos y el otro en caja de 8. Si no normalizas unidades, calidades y rendimientos, cualquier comparativa es papel mojado.
@@ -103,6 +105,8 @@ El control de albaranes no puede depender de la memoria ni de la buena fe. Cada 
 
 Y aquí viene un punto crítico que muchos pasan por alto: si un proveedor te aplica un precio nuevo en el albarán, ese cambio debe reflejarse inmediatamente en el coste del ingrediente dentro de tus [escandallos](https://aichef.pro/blog/escandallos-ia-cocina-profesional). Si no lo haces, tu food cost teórico se desfasa por completo y empiezas a tomar decisiones con números que no reflejan la realidad. Este es uno de los [errores que destruyen el food cost](https://aichef.pro/blog/8-errores-que-destruyen-el-food-cost-en-tu-restaurante) más comunes y más fáciles de corregir con un sistema que automatice la actualización.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-proveedores-restaurante-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 ## Tabla de KPIs de compras que debes vigilar
 
 No puedes gestionar lo que no mides, y en compras esto es especialmente cierto. Estos son los indicadores que todo restaurante debería seguir para tener la **gestión de proveedores restaurante** bajo control. No hacen falta herramientas complejas; basta con disciplina y periodicidad.
@@ -139,6 +143,8 @@ Para construir una puntuación simple de 0 a 100, asigna una nota de 0 a 100 a c
 
 
 Esta evaluación debe repetirse al menos cada 6 meses para los proveedores principales por gasto, y cada 12 meses para el resto. La **gestión de proveedores restaurante** no se hace una vez y se archiva; es un proceso vivo que te protege de la complacencia y te da argumentos sólidos cuando toca renegociar.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-proveedores-restaurante-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
 
 ## Cuánto tiempo y dinero recupera un restaurante
 

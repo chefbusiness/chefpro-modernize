@@ -2,7 +2,7 @@
 title: "151 Prompts para Restaurantes: Guía por Áreas 2026"
 description: "151 prompts para restaurantes por áreas: cocina, costes, carta, marketing, RRHH y eventos. Plantillas, variantes y ejemplos listos para usar en 2026."
 pubDate: 2025-11-10
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: libreria-de-prompts
 image: /blog-assets/2025/11/prompts-restaurantes-hosteleria-aichefpro.jpeg
 imageAlt: "151 Prompts para Restaurantes y Hostelería: Guía Completa 2025-2026"
@@ -76,6 +76,8 @@ Si en algún momento te quedas en blanco, el [generador de prompts gastronómico
 
 Y si prefieres trabajar directamente sobre un entorno especializado, en AI Chef Pro todos estos patrones están integrados en [la biblioteca Pro Prompts para restaurantes](https://aichef.pro/pro-prompts-restaurantes), lista para ejecutar con un clic y adaptada a cocinas reales.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=151-prompts-para-restaurantes-y-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 ## Cocina y desarrollo de recetas (30 prompts)
 
 La creatividad en cocina no siempre aparece cuando la necesitas. Esta familia de prompts te sirve para generar ideas con restricciones reales de temporada, coste o capacidad de producción. Son especialmente útiles para diseñar menús del día, adaptar recetas a dietas especiales o escalar elaboraciones a grandes volúmenes sin perder precisión.
@@ -101,6 +103,8 @@ Aquí es donde la IA te ayuda a poner números sobre la mesa. Estos prompts conv
 | “Compara dos ofertas de proveedor para [producto] con estos precios y condiciones [datos]. Incluye coste final por kg, frecuencia de entrega y ahorro anual si cambio de uno a otro.” | Comparativa económica para negociar. | “Simula un cambio de proveedor de pescado y dime cuánto ahorro en un trimestre.” |
 
 **Consejo para costes:** Aporta siempre datos reales, aunque sean aproximados. Cuanto más preciso seas con los precios y las mermas que manejas, más útil será el escandallo. Pide que te devuelvan los cálculos paso a paso para poder replicarlos en tu Excel de confianza.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=151-prompts-para-restaurantes-y-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
 
 ## Carta e ingeniería de menú (24 prompts)
 
@@ -140,6 +144,8 @@ Estos prompts cubren la parte menos visible pero más desgastante de la hosteler
 | “Genera 5 mensajes motivadores para el grupo de WhatsApp del equipo antes del servicio del sábado. Tono directo, sin postureo.” | Comunicación interna rápida y efectiva. | “Mensaje postservicio de agradecimiento en 30 palabras.” |
 
 **Consejo para RRHH:** Detalla el puesto exacto y la cultura de tu cocina. Añade restricciones como “no más de 8 pasos” o “tiempo de lectura inferior a 2 minutos” para que el documento sea de verdad operativo y se use en el día a día.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=151-prompts-para-restaurantes-y-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
 
 ## Eventos y catering (20 prompts)
 

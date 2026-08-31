@@ -2,7 +2,7 @@
 title: "Gestión de Crisis Restaurante: Manual con IA por Escenario"
 description: "Manual de gestión de crisis en restaurantes: protocolo por escenario (intoxicación, reseña viral, inspección) y cómo la IA ayuda a responder en minutos."
 pubDate: 2026-01-02
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/gestion-de-crisis-en-restaurantes-con-ia-4.jpeg
 imageAlt: "Gestión de Crisis en Restaurantes con IA: Manual Completo para Prevenir y Superar Situaciones Críticas"
@@ -67,6 +67,8 @@ Cada escenario tiene su propio guion. Aquí tienes una tabla de acción inmediat
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-crisis-en-restaurantes-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 ### Intoxicación alimentaria o alérgeno servido por error
 
 Es el escenario más grave. Si un cliente sufre una reacción alérgica o una intoxicación, cada minuto cuenta. El protocolo detallado:
@@ -101,6 +103,8 @@ La visita del inspector no debería ser una crisis si tienes los deberes hechos.
 5. **Comunicación**: interna, inmediata. Externa, solo si hay cierre o sanción grave. Nada de publicar en redes “hoy nos ha visitado sanidad y todo bien” si no es cierto.
 
 La IA te prepara simulacros de inspección, revisa tus registros y te avisa de posibles huecos antes de que llegue el inspector de verdad.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-crisis-en-restaurantes-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 ### Corte de suministro
 
@@ -160,6 +164,8 @@ En AI Chef Pro reunimos más de 70 agentes de IA culinarios que trabajan en 7 id
 
 
 Si necesitas más capacidad, los planes de pago son flexibles: el Premium Pro cuesta 25 €/mes (85 000 créditos), el Plus 50 €/mes (175 000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Todos incluyen las herramientas de gestión de crisis y comunicación.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-crisis-en-restaurantes-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
 
 ## Prevención: la mejor gestión de crisis es la que no ocurre
 

@@ -2,7 +2,7 @@
 title: "Gestión de Inventario Restaurante con IA: Guía 2026"
 description: "Guía práctica de gestión de inventario en restaurantes con IA: conteos, PMP, rotación, pedidos sugeridos y escandallos. Con tabla de KPIs y proceso semanal."
 pubDate: 2026-03-13
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/gestion-inventario-restaurante-ia-chef-tablet.jpg
 imageAlt: "Chef profesional gestionando inventario con tablet en cocina de restaurante moderno"
@@ -60,6 +60,8 @@ La IA agiliza ese proceso de varias formas: reconocimiento de imagen desde el m�
 ### El panorama en 2026: menos papel, más precisión
 
 En 2026, los restaurantes que integran IA en la gestión de inventario suelen reducir de forma notable las tareas administrativas de cocina, y la precisión de los pedidos sugeridos ayuda a recortar las mermas por sobrestock. Según estudios del sector, estas mejoras se mueven en rangos amplios que dependen mucho del tipo de restaurante, del volumen y del punto de partida de cada negocio, así que conviene tomarlas como orientación y no como una promesa. La idea de fondo no cambia: cuando dejas de trabajar con estimaciones y empiezas a trabajar con datos vivos, el margen lo nota. La clave está en que la IA no necesita que le dediques el domingo; trabaja en segundo plano mientras tú te ocupas del pase.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-inventario-restaurantes-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
 
 ## PMP: el precio medio ponderado que casi nadie calcula bien
 
@@ -128,6 +130,8 @@ Este esquema está pensado para un restaurante de tamaño medio con una cocina q
 
 Cada mañana la IA monitoriza las salidas y te manda un aviso si detecta un consumo anómalo o un stock que ha bajado del punto de pedido. El sábado, cuando estás en pleno servicio, no tienes que mirar nada. El lunes lo tienes todo listo para empezar.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-inventario-restaurantes-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 ## Tabla de KPIs de inventario que deberías vigilar
 
 No necesitas un máster en finanzas. Con estos seis indicadores controlas lo que pasa en tu almacén y en tu cuenta de resultados. Apréndetelos y míralos cada semana.
@@ -157,6 +161,8 @@ Un sistema de inventario con IA cruza cada tique de venta con la receta que lo p
 | Merma operativa no registrada             | Comparación del consumo real contra el teórico en cada turno; desviaciones repetidas en el mismo artículo disparan alerta. |
 | Venta fuera de carta sin escandallo       | El sistema detecta platos servidos sin receta vinculada y contrasta el descargo de insumos con el histórico de ventas.     |
 | Error en la ficha de artículo (unidad de compra vs. uso) | La IA monitoriza conversiones automáticas (kilos a gramos, litros a mililitros) y notifica saltos de formato que multiplican el descuadre. |
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-inventario-restaurantes-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
 
 ## Errores frecuentes al implantar el inventario con IA (y cómo evitarlos)
 

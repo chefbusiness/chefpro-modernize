@@ -2,7 +2,7 @@
 title: "Fond: Concepto y Definición"
 description: "Base de salsas y caldos en cocina francesa. Aprende qué es el fond y sus tipos."
 pubDate: 2026-02-17
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/fond-destacada.jpg
 imageAlt: "Fondos de cocina en cazos"
@@ -27,6 +27,9 @@ wpId: 2729
 <h3>Fondo oscuro (fond brun)</h3>
 <p>El <a href="https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion">fondo oscuro</a> es el rey de las salsas oscuras. Aquí los huesos —normalmente de vaca o ternera— se tuestan en el horno hasta que caramelizan, igual que las verduras. Ese tueste desarrolla los aromas tostados, profundos y complejos que definen la salsa española, la demi-glace y los jugos de carne. Se desglasa el recipiente del horneado con vino tinto o agua, y luego se cuece largamente. El color caoba y el sabor intenso lo delatan: es potencia pura.</p>
 <p>Un buen fondo oscuro puede reducirse a la mitad sin perder equilibrio, y es el secreto de un boeuf bourguignon con personalidad o de unas costillas glaseadas que se desprenden del hueso.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fond-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
+
 <h3>Fumet (fondo de pescado)</h3>
 <p>El fumet es el fondo ligero y aromático del mar. Se prepara con espinas y cabezas de pescados blancos (como rape o lenguado), que se sudan suavemente con chalotas, mantequilla y un chorrito de vino blanco. La cocción es corta —no más de 30–40 minutos— para evitar sabores amargos. El fumet es la columna vertebral de salsas marineras, sopas de pescado y arroces caldosos. Su textura es más ligera que la de un fondo de carne, pero concentra el sabor del mar en cada gota.</p>
 <h3>Court-bouillon</h3>
@@ -80,6 +83,9 @@ wpId: 2729
 <p>La respuesta está en la gelatina y el colágeno. Durante la cocción prolongada, los huesos y cartílagos liberan gelatina natural, que no solo espesa ligeramente el líquido, sino que también aporta esa textura aterciopelada que recubre la lengua y hace que los sabores persistan. Cuando reduces un fond para hacer una salsa, esa gelatina se concentra y crea una emulsión estable con las grasas, dando brillo y untuosidad sin necesidad de añadir harina o maicena.</p>
 <p>Además, el fond actúa como amplificador de sabor. Las largas horas de cocción extraen compuestos aromáticos y glutamatos naturales que potencian el umami de los platos. Por eso una salsa de carne hecha con agua sabe a “algo”, pero la misma salsa hecha con fond oscuro sabe a “mucho”. Es la diferencia entre un plato correcto y un plato que emociona.</p>
 <p>En sopas y cremas, el fond claro o el fumet sustituyen al agua con ventaja. Imagina una crema de calabaza: si usas agua, el resultado es dulzón y plano; si usas un fond claro de ave, la calabaza se vuelve más golosa y redonda. El fondo no solo no enmascara el ingrediente principal, sino que lo realza.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fond-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 <h2>Consejos para preparar un buen fond</h2>
 <ul>
 <li><strong>Empieza con agua fría.</strong> Así las proteínas coagulan lentamente y liberan menos espuma, lo que facilita la claridad del fondo.</li>
@@ -99,6 +105,9 @@ wpId: 2729
 <p>Probablemente porque te faltaron huesos con cartílago (rodilla, codillo, alones) o no cociste el tiempo suficiente. La gelatina se extrae del colágeno presente en articulaciones y tendones; si usaste solo carne magra o huesos sin cartílago, el fondo quedará líquido. Aumenta la proporción de huesos gelatinosos y cuece a fuego muy lento al menos 6 horas.</p>
 <h3>¿Es necesario clarificar un fond?</h3>
 <p>No siempre. La clarificación (consumé) solo es necesaria si buscas un líquido perfectamente transparente para presentaciones elegantes. Para salsas, sopas o guisos, un fond bien espumado y colado es suficiente. La clarificación extrae sabor, así que en la mayoría de los casos no vale la pena sacrificar potencia por transparencia.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fond-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/fondo-blanco-concepto-y-definicion">Fondo blanco: concepto y definición</a></li>

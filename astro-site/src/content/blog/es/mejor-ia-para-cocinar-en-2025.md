@@ -2,7 +2,7 @@
 title: "IA para Cocinar: Recetas, Técnicas y Trucos de Chef"
 description: "Aprende a usar la IA para cocinar como un chef: recetas con lo que tienes, sustituciones, maridajes y escalado de raciones, con ejemplos de prompts."
 pubDate: 2025-09-11
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/mejor-ia-para-cocinar-2025-1.jpeg
 imageAlt: "IA para cocinar: recetas, técnicas y trucos de chef con inteligencia artificial"
@@ -49,6 +49,8 @@ Lo que hace bien es generar combinaciones con sentido, calcular proporciones sin
 | Sugerir sustitutos para un ingrediente que falta | Validar que el sustituto funciona con el resto de la receta |
 | Estructurar una mise en place lógica para una elaboración compleja | Ejecutar los cortes y decidir el orden real según tu cocina |
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejor-ia-para-cocinar-en-2025" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+
 ## El secreto está en el prompt: cómo pedirle a la IA que cocine contigo
 
 Si alguna vez has entrenado a un cocinero recién llegado, sabes que no es lo mismo decirle “prepara la partida de pescado” que “saca los lomos de lubina, sécalos bien, salpimiéntalos y resérvalos en frío sobre papel, que en veinte minutos los marcamos”. La IA funciona igual. La diferencia entre una respuesta mediocre y una que te sirve de verdad está en cómo formulas la petición. Esto no es magia: es saber construir un buen prompt, y si quieres entenderlo a fondo, aquí te explico [qué es exactamente un prompt](https://aichef.pro/blog/que-es-un-prompt).
@@ -87,6 +89,8 @@ El maridaje no es solo “vino blanco con pescado”. Con un prompt detallado �
 
 ### 5. Escalar raciones sin descuadres
 Pasar de 4 a 20 raciones no es multiplicar todo por cinco. La IA te recalcula los ingredientes principales y te avisa de los que no escalan en proporción directa. Si le pides que te marque esos puntos críticos, te ahorras un desastre. De esto hablo en la siguiente sección, porque merece capítulo aparte.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejor-ia-para-cocinar-en-2025" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 ## Escalar raciones sin arruinar la receta
 
@@ -133,6 +137,8 @@ En AI Chef Pro llevamos tiempo construyendo justo eso: una suite de más de 70 a
 <figure class="wp-block-image aligncenter size-full"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro-ad&#038;utm_content=bloque-ad" target="_blank" rel="noopener" data-lasso-id="121"><img data-recalc-dims="1" loading="lazy" decoding="async" width="568" height="626" data-attachment-id="116" data-orig-file="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" data-orig-size="568,626" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AI Chef Pro &amp;#8211; Inteligencia Artificial en tu Gestion" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" src="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" alt="Ai Chef Pro – Suite de Herramientas con Inteligencia Artificial para Chefs y Cocineros" class="wp-image-116" /></a><figcaption class="wp-element-caption"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro-ad&#038;utm_content=bloque-ad" target="_blank" data-type="link" data-id="https://app.aichef.pro" rel="noopener" data-lasso-id="122"><strong>Ai Chef Pro</strong> – Suite de Herramientas con Inteligencia Artificial para Chefs y Cocineros</a></figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Bar-Restaurante</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-bar-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejor-ia-para-cocinar-en-2025" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Bar-Restaurante por €35</a></aside>
 
 ## Cocinas en casa o cocinas para vender: no es lo mismo
 

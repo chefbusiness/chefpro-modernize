@@ -2,7 +2,7 @@
 title: "Domina la IA en tu Cocina Profesional: La Guía Definitiva para Revolucionar tu Gestión Culinaria en 2025"
 description: "La revolución de la inteligencia artificial ha llegado a las cocinas profesionales, transformando para siempre la manera en que chefs, cocineros y gerentes…"
 pubDate: 2025-08-17
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: tutoriales
 image: /blog-assets/2025/08/dominalaiaentucocinapro1.jpeg
 imageAlt: "Domina la IA en tu Cocina Profesional: La Guía Definitiva para Revolucionar tu Gestión Culinaria en 2025"
@@ -265,6 +265,8 @@ wpId: 1394
 <p class="wp-block-paragraph">Para dominar esta herramienta específica, recomendamos nuestra <a href="https://aichef.pro/blog/libreria-de-prompts-para-food-pairing-ai" target="_blank" rel="noopener" data-lasso-id="3164">biblioteca completa de prompts para Food Pairing AI</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=domina-la-ia-en-tu-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
 
 <h3 class="wp-block-heading">3. Optimizadores de Mermas y Desperdicios</h3>
 
@@ -631,6 +633,8 @@ wpId: 1394
 </ul>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=domina-la-ia-en-tu-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
 
 <h3 class="wp-block-heading">Fase 2: Implementación Piloto (Semanas 3-6)</h3>
 
@@ -1071,6 +1075,8 @@ wpId: 1394
 <p class="wp-block-paragraph">Pero más allá de las métricas, dominar la IA en tu cocina profesional significa liberar el potencial creativo de tu equipo, optimizar cada aspecto de tu operación y construir un negocio gastronómico verdaderamente sostenible y competitivo.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=domina-la-ia-en-tu-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
 
 <h3 class="wp-block-heading">Tu Camino Hacia la Maestría Comienza Hoy</h3>
 

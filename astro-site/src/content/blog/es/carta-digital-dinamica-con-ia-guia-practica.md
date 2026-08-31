@@ -2,7 +2,7 @@
 title: "Carta Digital Restaurante QR: Guía Práctica 2026"
 description: "Cómo hacer bien una carta digital con QR: qué debe tener, errores típicos, normativa de alérgenos 2026 y actualización del menú con IA. Práctica y sin humo."
 pubDate: 2026-01-08
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/carta-digital-dinamica-con-ia-3.jpeg
 imageAlt: "Carta Digital Dinámica con IA: Guía Práctica para Gestionar tu Restaurante"
@@ -68,6 +68,8 @@ Muchos generadores gratuitos asocian el QR a un contenido estático. Si modifica
 
 Poner “Todos nuestros platos pueden contener trazas de…” sin más es un parche peligroso. Las autoridades sanitarias son claras en este punto: el uso indiscriminado de la advertencia “puede contener trazas” cuando no hay riesgo real de contaminación cruzada no exime de responsabilidad y puede considerarse información engañosa. **Cómo corregirlo:** mantén una ficha de alérgenos por plato actualizada y muéstrala con un icono o filtro en la carta digital. Si cambias un proveedor o una receta, actualizas esa ficha y la carta se refresca sola.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-digital-dinamica-con-ia-guia-practica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
+
 ### Fotos pesadas que eternizan la carga
 
 Una imagen de plato a 5 MB tomada con la cámara réflex y sin comprimir es un lastre. El cliente con poca cobertura se desespera. **Cómo corregirlo:** redimensiona las fotos a un ancho máximo de 800 píxeles y comprime en JPEG o WebP para que pesen menos de 100 KB. La calidad percibida en un móvil apenas cambia y la velocidad se dispara.
@@ -114,6 +116,8 @@ Para que lo tengas a mano, aquí va la tabla con los 14 alérgenos y un ejemplo 
 
 Tener esta tabla actualizada en tu carta digital y poder filtrar por alérgeno no es un lujo: es tu seguro de trabajo diario. Y si usas IA, puedes generar y mantener las fichas de alérgenos de cada plato en minutos, no en horas.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-digital-dinamica-con-ia-guia-practica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 ## Carta en papel, QR estático o carta digital dinámica con IA: comparativa
 
 No voy a venderte que el papel es el demonio ni que la IA lo soluciona todo. Cada formato tiene su momento y su cliente. Pero conviene que sepas lo que ganas y lo que pierdes con cada uno.
@@ -159,6 +163,8 @@ No necesitas ser informático ni tener un community manager. Con un móvil o un 
 ### 1. Haz un inventario real de tus platos
 
 Apunta cada plato con su nombre, ingredientes, alérgenos, precio actual y una foto vertical bien iluminada (con el móvil basta). Si tienes 40 platos, dedica una hora a esto.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-digital-dinamica-con-ia-guia-practica" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 ### 2. Elige dónde alojas la carta
 

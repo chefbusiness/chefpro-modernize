@@ -2,7 +2,7 @@
 title: "Cómo la IA está Revolucionando la Industria Gastronómica"
 description: "La inteligencia artificial (IA) está revolucionando la gastronomía, optimizando procesos de cocina, inspirando creatividad, gestionando inventarios y…"
 pubDate: 2024-09-05
-modDate: 2026-08-01
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2024/09/chef-diego-schattenhofer-3.png
 imageAlt: "Chef Diego Schattenhofer - Estrella Michelin - Usuario y Colaborador en el Desarrollo de AI Chef Pro"
@@ -64,6 +64,8 @@ wpId: 97
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=inteligencia-artificial-en-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 <h3 class="wp-block-heading">2. Gestión de Inventario y Reducción de Desperdicios</h3>
 
 
@@ -95,6 +97,8 @@ wpId: 97
 <figure class="wp-block-image aligncenter size-full"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro-ad&#038;utm_content=bloque-ad" target="_blank" rel="noopener" data-lasso-id="121"><img data-recalc-dims="1" loading="lazy" decoding="async" width="568" height="626" data-attachment-id="116" data-orig-file="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" data-orig-size="568,626" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AI Chef Pro &amp;#8211; Inteligencia Artificial en tu Gestion" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" src="/blog-assets/2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png" alt="Ai Chef Pro – Suite de Herramientas con Inteligencia Artificial para Chefs y Cocineros" class="wp-image-116" /></a><figcaption class="wp-element-caption"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro-ad&#038;utm_content=bloque-ad" target="_blank" data-type="link" data-id="https://app.aichef.pro" rel="noopener" data-lasso-id="122"><strong>Ai Chef Pro</strong> – Suite de Herramientas con Inteligencia Artificial para Chefs y Cocineros</a></figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=inteligencia-artificial-en-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 <h3 class="wp-block-heading">4. Optimización de Procesos en la Cocina</h3>
 
@@ -145,6 +149,8 @@ wpId: 97
 </ul>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=inteligencia-artificial-en-gastronomia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
 
 <h2 class="wp-block-heading">El Futuro de la IA en la Gastronomía</h2>
 

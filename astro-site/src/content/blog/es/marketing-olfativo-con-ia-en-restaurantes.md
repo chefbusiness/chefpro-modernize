@@ -2,7 +2,7 @@
 title: "Marketing Olfativo en Restaurantes: Guía y Costes 2026"
 description: "Qué es el marketing olfativo en restaurantes: aplicaciones por zona del local, coste orientativo real y el papel honesto de la IA para decidir y medir."
 pubDate: 2025-12-24
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/marketing-olfativo-con-ia-en-restaurantes-1.jpeg
 imageAlt: "Marketing olfativo en restaurantes: aroma ambiente en la sala de un local"
@@ -51,6 +51,8 @@ La **aromatización de locales** de hostelería no se parece en nada a enchufar 
 
 Según las tendencias que vamos viendo en el sector de cara a 2026, la aromatización profesional se está extendiendo de las grandes cadenas a establecimientos independientes gracias a equipos más asequibles y proveedores que ofrecen modelos de renta o comodato. Esto significa que ya no es un lujo exclusivo de grupos con presupuestos enormes; cualquier local pequeño puede empezar con un difusor modesto y medir la respuesta de sus clientes.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=marketing-olfativo-con-ia-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ## Aplicaciones prácticas por zona del local
 
 Cada zona del restaurante tiene una función sensorial distinta. Lo que funciona en la barra no encaja necesariamente en los aseos, y lo que huele bien en la sala debe convivir con los aromas que salen de la cocina sin anularlos. Esta tabla recoge la lógica que sigo cuando asesoro a un local en **marketing sensorial** aplicado al aroma. Las familias aromáticas son orientativas, pero la decisión final debe tomarla quien conoce su cocina y a su clientela.
@@ -91,6 +93,8 @@ La pregunta que más me hacen cuando hablo de **aroma restaurante** es: "¿cuál
 
 Para acertar, conviene hacer un ejercicio previo que muchos hosteleros se saltan por las prisas: definir por escrito qué quieres que sienta el cliente al entrar y si eso casa con lo que ya le ofreces en el plato, en la decoración y en el trato. Si hay contradicción, el cliente puede notar una incomodidad difusa que no sabrá explicar pero que le hará no querer volver.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=marketing-olfativo-con-ia-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+
 ### El peligro de saturar y otros errores frecuentes
 
 El error más típico es programar una intensidad demasiado alta, sobre todo al principio. El olfato del equipo se habitúa rápido y tiende a subir el nivel sin darse cuenta. Otro fallo clásico es elegir un aroma que le encanta al dueño pero que no tiene nada que ver con la cocina. Y el tercero es olvidar que el aroma debe desaparecer en cuanto interfiere con el olor del plato. Cuando un comensal levanta la copa de vino y huele a ambientador en lugar de la crianza, has perdido la partida.
@@ -115,6 +119,8 @@ El proceso que recomiendo es simple: antes de llamar al proveedor de aromas, ded
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="559" data-attachment-id="1892" data-orig-file="/blog-assets/2025/12/marketing-olfativo-con-ia-en-restaurantes-3.jpeg" data-orig-size="1408,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="marketing-olfativo-con-ia-en-restaurantes-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/12/marketing-olfativo-con-ia-en-restaurantes-3.jpeg" src="/blog-assets/2025/12/marketing-olfativo-con-ia-en-restaurantes-3.jpeg" alt="Comensal percibiendo el aroma ambiente en la sala de un restaurante" class="wp-image-1892" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=marketing-olfativo-con-ia-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
 
 ### Planes de AI Chef Pro: qué incluye cada uno
 

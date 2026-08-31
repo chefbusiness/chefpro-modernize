@@ -2,7 +2,7 @@
 title: "Falafel Libanés: Receta Pro de Garbanzos Crujientes"
 description: "Auténtico falafel libanés: garbanzos secos, hierbas frescas, especias. Técnica Pro para exterior crujiente e interior tierno."
 pubDate: 2026-04-30
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/falafel-libanes.jpg
 imageAlt: "Falafel Libanés: Receta Pro de Garbanzos Crujientes"
@@ -38,6 +38,9 @@ wpId: 3550
 <li>Sal</li>
 <li>Aceite para freír</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=falafel-libanes-receta-garbanzos-crujientes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+
 <h3>Para Servir:</h3>
 <ul>
 <li>Pan pita caliente</li>
@@ -61,6 +64,9 @@ wpId: 3550
 <h3>Fase 3: Formar y Reposar (30 min)</h3>
 <p><strong>Paso 6:</strong> Forma bolas de 4cm o discos de 5cm. Compacta bien.</p>
 <p><strong>Paso 7:</strong> Refrigera 30 minutos para que se asienten.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=falafel-libanes-receta-garbanzos-crujientes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+
 <h3>Fase 4: Freír (10 min)</h3>
 <p><strong>Paso 8:</strong> Calienta aceite a 180°C (350°F).</p>
 <p><strong>Paso 9:</strong> Fríe falafel en tandas 3-4 minutos hasta dorado crujiente.</p>
@@ -73,6 +79,9 @@ wpId: 3550
 <p>NUNCA usar garbanzos cocidos/enlatados. La textura quedará pastosa en lugar de crujiente.</p>
 <h3>2. Textura Granulada</h3>
 <p>No procesar en puré. Debe quedar granular para que se forme la corteza crujiente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=falafel-libanes-receta-garbanzos-crujientes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

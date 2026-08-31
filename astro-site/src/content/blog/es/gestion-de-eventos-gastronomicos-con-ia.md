@@ -2,7 +2,7 @@
 title: "Gestión de Eventos Gastronómicos con IA: Guía Completa 2026"
 description: "La industria de los eventos gastronómicos atraviesa una transformación sin precedentes. Según datos de 2025, más del 80% de las agencias de eventos en España…"
 pubDate: 2025-12-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: tutoriales
 image: /blog-assets/2025/12/gestion-de-eventos-gastronomicos-con-ia-1.jpeg
 imageAlt: "Gestión de Eventos Gastronómicos con IA: Guía Completa"
@@ -254,6 +254,8 @@ wpId: 1825
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-eventos-gastronomicos-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
 
 <h3 class="wp-block-heading">Fase 3: Coordinación de equipos y recursos</h3>
 
@@ -599,6 +601,8 @@ wpId: 1825
 <p class="wp-block-paragraph">Descubre cómo crear contenido profesional en nuestro artículo sobre <a href="https://aichef.pro/blog/crea-contenido-para-restaurantes-con-inteligencia-artificial" target="_blank">cómo crear contenido para restaurantes con inteligencia artificial</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-eventos-gastronomicos-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 <h3 class="wp-block-heading">Asistentes virtuales y chatbots</h3>
 
@@ -974,6 +978,8 @@ wpId: 1825
 <p class="wp-block-paragraph">Para mantenerte informado sobre estas tendencias, explora nuestra sección sobre <a href="https://aichef.pro/blog/el-futuro-de-la-creatividad-culinaria-ia-y-food-pairing" target="_blank">el futuro de la creatividad culinaria</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-eventos-gastronomicos-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside>
 
 <h2 class="wp-block-heading">Conclusión: El momento de actuar es ahora</h2>
 

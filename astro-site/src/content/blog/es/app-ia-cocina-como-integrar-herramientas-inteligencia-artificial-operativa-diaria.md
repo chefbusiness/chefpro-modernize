@@ -2,7 +2,7 @@
 title: "App IA Cocina: Cómo Integrar Herramientas de Inteligencia Artificial en tu Operativa Diaria"
 description: "Descubre cómo las mejores apps de IA para cocina profesional están revolucionando la gastronomía. Guía completa de implementación, casos de éxito y…"
 pubDate: 2025-09-11
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/App-IA-Cocina-1.jpeg
 imageAlt: "App IA Cocina: Cómo Integrar Herramientas de Inteligencia Artificial en tu Operativa Diaria"
@@ -328,6 +328,8 @@ wpId: 1571
 </ul>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=app-ia-cocina-como-integrar-herramientas-inteligencia-artificial-operativa-diaria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
 
 <h3 class="wp-block-heading">6. Análisis de costes y pricing dinámico</h3>
 
@@ -847,6 +849,8 @@ wpId: 1571
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=app-ia-cocina-como-integrar-herramientas-inteligencia-artificial-operativa-diaria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
+
 <h3 class="wp-block-heading">Análisis competitivo detallado</h3>
 
 
@@ -1248,6 +1252,8 @@ wpId: 1571
 <p class="wp-block-paragraph">La originalidad está garantizada por la naturaleza misma de los algoritmos generativos, que crean combinaciones únicas en cada iteración.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Food Truck</h3><p class="mt-2 text-muted-foreground">Setup y teardown, APPCC móvil, permisos y eventos.</p><a href="/kit-tareas-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=app-ia-cocina-como-integrar-herramientas-inteligencia-artificial-operativa-diaria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Food Truck por €12</a></aside>
 
 <h3 class="wp-block-heading">¿Qué nivel técnico se necesita para usar estas apps?</h3>
 

@@ -2,7 +2,7 @@
 title: "Rentabilidad de un Restaurante: KPIs y Benchmarks 2026"
 description: "KPIs que miden la rentabilidad de un restaurante en 2026: food cost, prime cost y margen neto con fórmulas, benchmarks por tipo de local y plan de 30 días."
 pubDate: 2026-04-05
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b8-1.jpg
 imageAlt: "Propietario revisando panel financiero con graficos de ingresos"
@@ -75,6 +75,8 @@ El dato que de verdad responde a «¿cuánto gana un restaurante?». Es lo que q
 
 **Ejemplo:** Facturas 60.000 € en un mes y tus gastos totales suman 54.000 €. El beneficio neto es de 6.000 €, un 10 % de margen neto. Es un resultado sano en hostelería. Si estás por debajo del 5 %, tienes un problema estructural.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rentabilidad-restaurante-kpis-metricas-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+
 ### Ticket medio
 
 Te dice cuánto gasta cada cliente de media. Subirlo un euro puede cambiar la rentabilidad sin tocar un solo plato.
@@ -142,6 +144,8 @@ La clave está en que el equipo de sala conozca el ticket medio y la rotación a
 
 Este plan está pensado para que en cuatro semanas pases de intuir a controlar. No necesitas software caro, pero sí disciplina. Cada semana suma una capa de información y decisiones.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rentabilidad-restaurante-kpis-metricas-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 ### Semana 1: Medir la base real
 
 - **Haz los escandallos de los 20 platos más vendidos.** Pesa ingredientes, actualiza precios de compra y calcula el coste por ración. Si usas [escandallos automáticos con IA](https://aichef.pro/escandallos-restaurante-ia), tendrás las fichas listas en horas en lugar de días.
@@ -171,6 +175,8 @@ Este plan está pensado para que en cuatro semanas pases de intuir a controlar. 
 El punto muerto o umbral de rentabilidad es la cifra de facturación —o de cubiertos— donde ingresos y costes totales se igualan. Por debajo, pierdes dinero; por encima, empiezas a generar beneficio. Conocerlo te da un objetivo claro: cada día sabes cuántas mesas necesitas llenar solo para no entrar en números rojos. Muchos negocios cierran sin haberlo calculado nunca. La fórmula es sencilla: Costes fijos mensuales ÷ (Ticket medio − Coste variable por cubierto). Costes fijos: alquiler, nóminas base, seguros, suministros. Coste variable por cubierto: materia prima, bebida y comisiones. La diferencia es tu margen de contribución unitario: lo que cada comensal aporta para cubrir fijos y, después, dejar beneficio.
 
 Con 12.000 € de costes fijos al mes, ticket medio 25 € y coste variable 10 € por cubierto, el margen de contribución es 15 €. Necesitas 800 cubiertos al mes (12.000 ÷ 15). Abriendo solo cenas de martes a sábado (unos 20 servicios), son 40 cubiertos por noche solo para empatar. Si un día flojeas, los números rojos se arrastran toda la semana. Sin este cálculo, no puedes decidir con cabeza si abrir entre semana, ampliar terraza o meter un menú ejecutivo. Es la brújula financiera que te dice si cada decisión operativa suma o resta.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rentabilidad-restaurante-kpis-metricas-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
 ### Los cuatro errores que más margen se llevan por delante
 

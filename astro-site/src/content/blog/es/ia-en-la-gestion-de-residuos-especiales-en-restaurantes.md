@@ -2,7 +2,7 @@
 title: "IA en la Gestión de Residuos Especiales en Restaurantes: Guía Completa de Sostenibilidad 2026"
 description: "La gestión de residuos especiales representa uno de los desafíos más críticos que enfrentan los profesionales de la hostelería en 2026. Los restaurantes…"
 pubDate: 2026-02-06
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/ia-residuos-gestion-restaurantes-aichefpro-1.jpeg
 imageAlt: "IA en la Gestión de Residuos Especiales en Restaurantes: Guía Completa de Sostenibilidad 2026"
@@ -489,6 +489,8 @@ wpId: 2621
 " data-large-file="/blog-assets/2026/02/ia-residuos-gestion-restaurantes-aichefpro-4.jpeg" src="/blog-assets/2026/02/ia-residuos-gestion-restaurantes-aichefpro-4.jpeg" alt="IA en la Gestión de Residuos Especiales en Restaurantes: Guía Completa de Sostenibilidad 2026" class="wp-image-2624" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-residuos-especiales-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
 
 <h2 class="wp-block-heading">Tecnologías de IA aplicadas a la gestión de residuos especiales en restaurantes</h2>
 
@@ -1241,6 +1243,8 @@ wpId: 2621
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-residuos-especiales-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h3 class="wp-block-heading">Fase 4: Optimización continua (A partir de semana 9)</h3>
 
 
@@ -1783,6 +1787,8 @@ Ahorro acumulado años 2-5: <strong>20.544€</strong></p>
 <p class="wp-block-paragraph">Muchos restaurantes comienzan solo con AI Chef Pro y logran ahorros del 20-30% sin cambiar infraestructura física.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-residuos-especiales-en-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
 
 <h3 class="wp-block-heading">¿Qué hacer con residuos químicos de productos de limpieza?</h3>
 

@@ -2,7 +2,7 @@
 title: "Context Window: Concepto y Definición"
 description: "Descubre qué es la ventana de contexto en IA y por qué es crucial para generar recetas largas, menús completos y análisis de costes en hostelería."
 pubDate: 2026-03-02
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/context-window-concepto-y-definicion_3139_592fd.jpg
 imageAlt: "Context Window: Concepto y Definición"
@@ -56,6 +56,9 @@ wpId: 3139
 <li>Costes indirectos (energía, agua, depreciación)</li>
 </ul>
 <p><strong>Un análisis de costes detallado puede requerir procesar miles de tokens.</strong> Un modelo con ventana de contexto limitada simplemente no podría realizar este cálculo completo en una sola operación.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Casual</h3><p class="mt-2 text-muted-foreground">Listas de turno, apertura, cierre, partidas en formato pro.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=context-window-ventana-contexto-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Casual por €14</a></aside>
+
 <h3>Gestión de Inventarios y Compras</h3>
 <p>Planificar las compras semanales para un restaurante con 50-100 referencias de producto, considerando:</p>
 <ul>
@@ -116,6 +119,9 @@ wpId: 3139
 <li><strong>Análisis de costes:</strong> Configuración maximizada para procesar fichas técnicas extensas</li>
 <li><strong>Generación de contenido:</strong> Modo extendido para documentación de formación o manuales</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=context-window-ventana-contexto-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
+
 <h3>Memoria de Conversación Inteligente</h3>
 <p>A diferencia de usar modelos genéricos, AI Chef Pro implementa <strong>memoria contextual especializada</strong>:</p>
 <ul>
@@ -151,6 +157,9 @@ wpId: 3139
 <h3>Problema 4: Velocidad de Procesamiento</h3>
 <p><strong>El problema:</strong> Modelos con ventanas de contexto muy grandes pueden ser más lentos en responder.</p>
 <p><strong>La solución:</strong> Para tareas rutinarias (recetas simples, conversiones), usa modelos más pequeños y rápidos. Reserva los modelos de gran contexto para proyectos complejos que realmente lo requieran.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Panadería</h3><p class="mt-2 text-muted-foreground">Obrador incluido: plan financiero Excel e inversión inicial.</p><a href="/plan-negocio-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=context-window-ventana-contexto-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Panadería por €35</a></aside>
+
 <h2>Preguntas Frecuentes sobre Ventana de Contexto</h2>
 <p><strong>¿Cuántos tokens necesito para crear un menú degustación de 8 platos?</strong><br /> Depende del nivel de detalle, pero generalmente necesitarás entre 4,000 y 8,000 tokens. Esto incluye la descripción de cada plato, técnicas, tiempos y la coherencia entre ellos. Por eso recomendamos modelos con al menos 16,000 tokens de ventana para este tipo de trabajo.</p>
 <p><strong>¿Qué pasa si excedo la ventana de contexto?</strong><br /> La IA «olvida» automáticamente la información más antigua de la conversación para hacer espacio al nuevo contenido. En la práctica, esto significa que puede perder instrucciones importantes que diste al principio. Algunas plataformas te advierten cuando estás cerca del límite.</p>

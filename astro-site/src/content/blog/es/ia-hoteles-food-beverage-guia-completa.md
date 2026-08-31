@@ -2,7 +2,7 @@
 title: "F&B Hoteles: Gestión con IA por Outlet y KPIs 2026"
 description: "Gestión F&B en hoteles con IA: predicción de demanda por outlet (buffet, room service, banquetes), escandallos multi-outlet y tabla de KPIs 2026."
 pubDate: 2026-03-18
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/ia-hoteles-fb-img1-hero.jpg
 imageAlt: "Directora de Food and Beverage en hotel revisando dashboard de inteligencia artificial con datos de costes y demanda"
@@ -67,6 +67,8 @@ Los datos históricos de un hotel muestran patrones claros: el pico de room serv
 
 Un menú de room service impreso es una trampa. Si a las 22:00 se ha agotado el solomillo en el restaurante, el huésped que lo pide por room service recibe una llamada incómoda, una espera extra y una experiencia mediocre. Un sistema de menú dinámico conectado al stock en tiempo real oculta automáticamente los platos sin disponibilidad y muestra alternativas rentables. Así de simple.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hotel Completo</h3><p class="mt-2 text-muted-foreground">F&amp;B, housekeeping, multi-punto de venta.</p><a href="/kit-tareas-hotel?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-hoteles-food-beverage-guia-completa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hotel Completo por €18,50</a></aside>
+
 ### Pedido por chatbot: la vía que cada vez más huéspedes prefieren
 
 Según estudios del sector, una mayoría creciente de huéspedes prefiere usar tecnología para agilizar el servicio. Integrar un chatbot de pedido por WhatsApp o la app del hotel no solo mejora la experiencia: reduce errores de toma de pedido, acorta el tiempo de respuesta y libera al personal de recepción para otras tareas. El huésped pide, cocina recibe el ticket directamente y el plato sube sin intermediarios.
@@ -111,6 +113,8 @@ El mayor agujero del F&B hotelero no está en un outlet concreto, sino en la dis
 
 En un hotel con restaurante, room service, barra de snacks y banquetes, es habitual que el solomillo esté en cuatro fichas técnicas diferentes. Si el precio del proveedor sube un 8%, alguien tiene que actualizar manualmente cada ficha. Si se olvida una, ese outlet está vendiendo por debajo de coste sin saberlo. Un maestro de recetas centralizado resuelve esto de raíz: cambia el precio del ingrediente una sola vez y el food cost se recalcula automáticamente en todos los platos de todos los outlets.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-hoteles-food-beverage-guia-completa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 ### Consistencia de alérgenos y fichas técnicas
 
 La misma lógica aplica a alérgenos. Un plato debe declarar los mismos alérgenos en la carta del restaurante, en el menú de room service y en el bufé de banquetes. Con un sistema centralizado, cualquier modificación en la receta —cambio de marca de harina, por ejemplo— actualiza automáticamente la información de alérgenos en todos los puntos de venta. Esto no solo es eficiencia: es seguridad alimentaria y cumplimiento normativo.
@@ -146,6 +150,8 @@ No hace falta desplegar todo a la vez. La experiencia con hoteles que ya trabaja
 | **5. Medir KPIs semanalmente** | Establecer un cuadro de mando con los KPIs clave y revisarlos cada semana con los jefes de cada outlet | Toma de decisiones basada en datos, no en intuiciones; mejora continua del GOP F&B |
 
 Esta hoja de ruta no es teórica. Los hoteles que completan las cinco fases en un plazo de 3 a 6 meses ven resultados medibles en food cost, desperdicio y margen operativo. La clave está en la fase 1: sin un maestro de recetas centralizado, todo lo demás se construye sobre arena.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-hoteles-food-beverage-guia-completa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 ## El F&B hotelero, outlet a outlet, con datos
 

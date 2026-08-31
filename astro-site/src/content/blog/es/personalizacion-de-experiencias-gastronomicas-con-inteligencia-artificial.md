@@ -2,7 +2,7 @@
 title: "Personalización de Experiencia del Cliente en Restaurantes"
 description: "Cómo personalizar la experiencia del cliente en tu restaurante y que salga rentable: preferencias, menús para alérgenos, momentos especiales e IA."
 pubDate: 2025-02-24
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/Personalizacion-de-Experiencias-Gastronomicas-con-Inteligencia-Artificial.jpg
 imageAlt: "Personalización de Experiencias Gastronómicas con Inteligencia Artificial"
@@ -65,6 +65,8 @@ Cumpleaños, aniversarios, primeras citas, cenas de empresa, despedidas… Cada 
 
 La clave está en **preguntar en la reserva** (sin ser invasivo) y en dejar un campo de “motivo de la visita”. Luego, el equipo de sala actúa con discreción. He visto restaurantes que, en aniversarios de empresa, personalizan el menú con el logotipo del cliente impreso en papel comestible. Eso es otro nivel, pero el principio es el mismo: anticipas, emocionas, fidelizas.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=personalizacion-de-experiencias-gastronomicas-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+
 ### 4. Comunicación segmentada
 
 El típico “newsletter mensual con las mismas ofertas para todos” es ruido. La comunicación segmentada consiste en enviar mensajes relevantes a cada grupo de clientes según su historial, preferencias y frecuencia de visita. Por ejemplo:
@@ -100,6 +102,8 @@ Aquí es donde la IA te quita un peso de encima. Tú tienes tu receta matriz: un
 Con herramientas de IA puedes cargar tu receta base y obtener, en segundos, variantes adaptadas a cada restricción, con sus respectivas fichas de alérgenos y el cálculo de raciones ajustado. No estoy hablando de que la IA te invente platos nuevos: hablo de que te ahorre el trabajo mecánico de reformular ingredientes y gramajes. Tú, como chef, validas y ajustas el punto. Esto encaja de lleno con lo que contamos en el artículo sobre [planificación de dietas personalizadas con IA](https://aichef.pro/blog/ia-y-nutricion-planificacion-de-dietas-personalizadas-en-restaurantes).
 
 Además, si trabajas con agentes como **ID Alérgenos**, puedes cruzar cada receta con una base de alérgenos actualizada y generar automáticamente la ficha de 14 alérgenos de obligada declaración. Esto no solo te blinda legalmente, sino que da una seguridad tremenda al comensal alérgico, que es el cliente más agradecido y fiel que existe.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=personalizacion-de-experiencias-gastronomicas-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
 
 ## Dónde entra AI Chef Pro
 
@@ -140,6 +144,8 @@ He preparado una tabla con lo que SÍ merece la pena guardar y lo que mejor evit
 | Preferencias de mesa, vino, plato, punto de carne | Datos bancarios o de tarjeta de crédito (salvo para garantías de reserva, con pasarela segura) | No los almacenes tú. Usa un TPV virtual que cumpla normativa. |
 | Fechas especiales (cumpleaños, aniversarios) | Creencias religiosas o afiliaciones políticas | No son relevantes para servir una cena y pueden generar discriminación. |
 | Historial de visitas y consumo | Imágenes de videovigilancia con fines de personalización | La imagen es dato personal. Usa las cámaras solo para seguridad, no para identificar clientes. |
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=personalizacion-de-experiencias-gastronomicas-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
 ## Cómo empezar esta semana
 

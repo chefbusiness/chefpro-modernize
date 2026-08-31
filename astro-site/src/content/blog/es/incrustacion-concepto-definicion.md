@@ -2,7 +2,7 @@
 title: "Incrustación: Concepto y Definición"
 description: "Descubre qué es la incrustación: técnica de cocción sellada que preserva sabores. Tipos (sal, masa, barro, hojas), proceso paso a paso y presentación…"
 pubDate: 2026-03-20
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/03/incrustacion-featured.jpg
 imageAlt: "Incrustación: Concepto y Definición"
@@ -58,6 +58,9 @@ wpId: 3252
 <h2>Historia de la Incrustación</h2>
 <h3>Orígenes Ancestrales</h3>
 <p>La incrustación es tan antigua como la cocción misma. En la <strong>prehistoria</strong>, los alimentos se envolvían en hojas grandes y se enterraban junto a brasas para cocinarlos lentamente. Esta técnica primitiva evolucionó en diversas culturas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=incrustacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
+
 <h3>Tradiciones Mediterráneas</h3>
 <p>En la <strong>costa mediterránea española</strong>, el pescado a la sal se convirtió en un clásico durante siglos. La abundancia de sal marina de alta calidad y la frescura del pescado local crearon las condiciones perfectas para desarrollar esta técnica hasta la perfección.</p>
 <p>En Italia, la <em>branzino al sale</em> y en Francia, el <em>loup de mer en croûte de sel</em>, son preparaciones similares que destacan la universalidad de esta técnica en la cuenca mediterránea.</p>
@@ -94,6 +97,9 @@ wpId: 3252
 <p><strong>Paso 5: Hornear</strong><br /> Hornear a 200°C durante 20-30 minutos para pescados medianos (1-1.5 kg). El tiempo depende del grosor.</p>
 <p><strong>Paso 6: Reposar</strong><br /> Dejar reposar 5-10 minutos antes de romper la corteza.</p>
 <p><strong>Paso 7: Apertura Teatral</strong><br /> Romper la corteza con ayuda de un cuchillo y martillo de cocina. Retirar los trozos de sal. Pelar la piel fácilmente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=incrustacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
+
 <h3>Tiempos de Cocción Orientativos</h3>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
@@ -183,6 +189,9 @@ wpId: 3252
 <li>Retirar los trozos grandes de sal.</li>
 <li>Deslizar una espátula entre piel y carne para servir.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=incrustacion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
+
 <h3>Acompañamientos</h3>
 <p>El pescado a la sal, por su pureza de sabor, combina bien con:</p>
 <ul>

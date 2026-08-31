@@ -2,7 +2,7 @@
 title: "Fondo Oscuro: Concepto y Definición"
 description: "Caldo concentrado con huesos tostados para salsas oscuras."
 pubDate: 2026-02-19
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/fondo-oscuro-destacada.jpg
 imageAlt: "Fondo oscuro intenso en olla"
@@ -27,6 +27,9 @@ wpId: 2734
 <h3>Verduras y tomate: el trío aromático</h3>
 <p>Una vez tostados los huesos, los pones en la olla con agua fría que apenas los cubra y los llevas a ebullición muy suave. Mientras, salteas mirepoix clásica —<strong>cebolla, zanahoria y apio</strong> en partes iguales— hasta que las verduras se caramelicen ligeramente. Si quieres un sabor más dulzón, puedes añadir un puerro; si buscas un punto más silvestre, un poco de chirivía.</p>
 <p>El tomate, ya sea concentrado, triturado o fresco picado, se incorpora cuando las verduras empiezan a dorarse. Se sofríe uno o dos minutos para que pierda acidez cruda y gane profundidad umami. Todo este conjunto se vierte en la olla junto con un bouquet garni (tomillo, laurel, perejil) y granos de pimienta negra.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fondo-oscuro-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
+
 <h3>Cocción larga y reducción</h3>
 <p>El fuego debe ser tan bajo que apenas veas burbujitas rompiendo la superficie. Una cocción violenta emulsiona las grasas, enturbia el líquido y rompe los coloides, mientras que un hervor suave entre 6 y 10 horas va extrayendo gelatina sin agitar impurezas. Espuma la superficie cada hora aproximadamente con una espumadera para retirar las proteínas coaguladas; si no lo haces, el sabor final será más basto.</p>
 <p>Cuando los huesos empiezan a parecer frágiles y el caldo ha reducido a la mitad o un tercio, cuela todo por un chino fino o una estameña sin presionar el contenido (apretar extrae amargor). Enfría rápido en baño maría invertido y refrigera. Al día siguiente verás una capa de grasa solidificada que retirarás fácilmente, y el fondo quedará como una gelatina temblorosa que al calentarse se funde en un líquido aterciopelado.</p>
@@ -86,6 +89,9 @@ wpId: 2734
 <li><strong>Remover el batiburrillo al colar.</strong> Presionar los sólidos exprime amargor. Solo se deja escurrir.</li>
 <li><strong>Enfriar lentamente.</strong> Un fondo que pasa horas templándose es caldo de cultivo para bacterias. Enfría en baño maría de hielo y refrigera en el momento.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fondo-oscuro-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h2>Consejos de chef para un fondo oscuro impecable</h2>
 <p>Para llevar el fondo al siguiente nivel tuesta los restos de verduras (cáscaras de cebolla, recortes de zanahoria) que tengas de otros servicios junto con los huesos el último cuarto de hora de horno. Aprovechas al máximo cada ingrediente y sumas capas de sabor sin coste extra.</p>
 <p>Si buscas un brillo final de restaurante, después de desgrasar el fondo frío y recalentarlo, pásalo por un colador de malla fina forrado con una gasa húmeda. Queda cristalino y profesional, perfecto para salsas espejo en emplatados de alta cocina.</p>
@@ -100,6 +106,9 @@ wpId: 2734
 <p>No. El fondo oscuro es un caldo concentrado base; la demi-glace es una salsa elaborada a partir de la combinación de fondo oscuro, salsa española y una reducción prolongada con vinos generosos, hasta alcanzar una consistencia densa y un sabor más concentrado. La demi-glace no es un simple caldo reducido, sino una receta compuesta en sí misma.</p>
 <h3>¿Puedo sustituir un fondo oscuro por un caldo comercial?</h3>
 <p>En caso de urgencia puedes, pero el resultado final se notará. Los caldos industriales suelen tener más sal, menos gelatina y un perfil de sabor estandarizado que no aporta la misma profundidad ni el brillo natural de un fondo hecho en casa. Si optas por uno comercial, busca los que indican «concentrado de huesos» y corrige la sazón al final de tu receta.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=fondo-oscuro-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/fondo-blanco-concepto-y-definicion">Fondo blanco: concepto y definición</a></li>

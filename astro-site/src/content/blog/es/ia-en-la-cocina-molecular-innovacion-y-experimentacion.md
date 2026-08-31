@@ -2,7 +2,7 @@
 title: "IA en la Cocina Molecular: Innovación y Experimentación"
 description: "La fusión entre inteligencia artificial y cocina molecular está redefiniendo los límites de la gastronomía contemporánea. Lo que comenzó como una disciplina…"
 pubDate: 2025-12-20
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-en-la-cocina-molecular-1.jpeg
 imageAlt: "IA en la Cocina Molecular: Innovación y Experimentación"
@@ -185,6 +185,8 @@ wpId: 1818
 <p class="wp-block-paragraph">La IA puede analizar los perfiles de sabor de platos clásicos, identificar los compuestos aromáticos esenciales y sugerir técnicas de deconstrucción que preserven la «huella sensorial» del original mientras transforman radicalmente la presentación.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
 
 <h3 class="wp-block-heading">6. Destilación al Vacío con Rotavapor</h3>
 
@@ -390,6 +392,8 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="687" data-attachment-id="1819" data-orig-file="/blog-assets/2025/12/ia-en-la-cocina-molecular-2.jpeg" data-orig-size="1264,848" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ia-en-la-cocina-molecular-2" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/12/ia-en-la-cocina-molecular-2.jpeg" src="/blog-assets/2025/12/ia-en-la-cocina-molecular-2.jpeg" alt="IA en la Cocina Molecular: Innovación y Experimentación" class="wp-image-1819" /></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Japonés</h3><p class="mt-2 text-muted-foreground">60 plazas, todo el roadmap para abrir un japonés en España.</p><a href="/guia-restaurante-japones?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Japonés por €65</a></aside>
 
 <h3 class="wp-block-heading">Optimización de Procesos Experimentales</h3>
 
@@ -615,6 +619,8 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 <p class="wp-block-paragraph">Absolutamente. Todos los aditivos utilizados en gastronomía molecular (alginato, agar-agar, lecitina de soja, etc.) son ingredientes de grado alimentario aprobados por las autoridades sanitarias. Muchos de ellos son de origen natural: el alginato proviene de algas, el agar-agar de algas rojas y la lecitina de la soja. La IA ayuda a calcular dosificaciones seguras y óptimas.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Panadería / Obrador</h3><p class="mt-2 text-muted-foreground">Turno de madrugada, masa madre, hornos y expositor.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Panadería / Obrador por €12</a></aside>
 
 <h3 class="wp-block-heading">¿Necesito equipamiento costoso para empezar con cocina molecular?</h3>
 

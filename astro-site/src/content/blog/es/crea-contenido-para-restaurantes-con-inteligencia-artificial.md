@@ -2,7 +2,7 @@
 title: "Crea Contenido para Restaurantes con Inteligencia Artificial: Guía Completa 2025"
 description: "En la era digital, los restaurantes enfrentan el reto de mantener una presencia online dinámica. La inteligencia artificial, a través de herramientas como Ai…"
 pubDate: 2025-02-22
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IMG_2781.png
 imageAlt: "Crea Contenido para Restaurantes con Inteligencia Artificial"
@@ -195,6 +195,8 @@ wpId: 1056
 " data-large-file="/blog-assets/2025/02/IMG_2778-scaled.jpeg" src="/blog-assets/2025/02/IMG_2778-scaled.jpeg" alt="Captura de MenuDish Local SEO de Ai Chef Pro" class="wp-image-1083" /><figcaption class="wp-element-caption">Captura de <strong>MenuDish Local SEO</strong> de <strong><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" target="_blank" data-type="link" data-id="https://aichef.pro" rel="noopener" data-lasso-id="1244">Ai Chef Pro</a></strong> &#8211; Crea un post súper optimizado en tu blog sobre cada uno de los platos de tu carta o menú, esto atraerá tráfico local que busca lo que ofrece tu restaurante, cafetería, bar o franquicia.</figcaption></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
 
 <h3 class="wp-block-heading">MenuDish Local SEO</h3>
 
@@ -600,6 +602,8 @@ wpId: 1056
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+
 <h3 class="wp-block-heading">Equilibrio entre IA y Toque Personal</h3>
 
 
@@ -858,6 +862,8 @@ wpId: 1056
 </blockquote>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h2 class="wp-block-heading">Conclusiones y Próximos Pasos</h2>
 

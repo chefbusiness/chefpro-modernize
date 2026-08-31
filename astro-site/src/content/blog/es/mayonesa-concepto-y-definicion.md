@@ -2,7 +2,7 @@
 title: "Mayonesa: Concepto y Definición"
 description: "Emulsión básica de huevo y aceite. Domina mayonesa casera perfecta."
 pubDate: 2026-02-21
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/mayonesa-destacada.jpg
 imageAlt: "Mayonesa casera emulsionada"
@@ -33,6 +33,9 @@ wpId: 2738
 <li><strong>Sal fina</strong> al gusto (unos 2 g).</li>
 <li>Opcional: una pizca de mostaza de Dijon (ayuda a emulsionar y aporta sabor).</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mayonesa-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
+
 <h3>Procedimiento</h3>
 <ol>
 <li><strong>Prepara la base:</strong> en un bol de fondo redondo, pon la yema, la sal y el vinagre o limón. Bate con varilla hasta que la yema espume ligeramente y aclare un tono. Esto ya empieza a crear una pre-emulsión.</li>
@@ -67,6 +70,9 @@ wpId: 2738
 <li><strong>Exceso de aceite</strong> respecto a la capacidad emulsionante de la yema (más de 300 ml por yema suele ser forzar la máquina).</li>
 <li><strong>Batido insuficiente</strong> o velocidad excesiva con batidora eléctrica.</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mayonesa-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h3>Cómo arreglar una mayonesa cortada</h3>
 <p>No la tires. Tienes dos caminos clásicos que funcionan:</p>
 <ul>
@@ -85,6 +91,9 @@ wpId: 2738
 <p>No. El alioli tradicional es una emulsión de ajo y aceite de oliva, sin huevo, que se trabaja pacientemente en mortero. La mayonesa lleva huevo como emulsionante principal. En la práctica cotidiana de muchos restaurantes, se llama alioli a una mayonesa con ajo, pero son elaboraciones distintas con orígenes y texturas diferentes.</p>
 <h3>¿Puedo congelar la mayonesa?</h3>
 <p>No se recomienda. Al congelarse, el agua de la emulsión forma cristales de hielo que rompen la estructura y, al descongelar, la mayonesa se separa y adquiere una textura granulosa e irreparable. Si necesitas conservar una salsa, congela los ingredientes por separado y monta la mayonesa fresca en el momento.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mayonesa-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Roux: concepto y definición</a></li>

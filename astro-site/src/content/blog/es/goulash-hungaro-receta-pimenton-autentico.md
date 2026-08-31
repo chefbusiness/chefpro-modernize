@@ -2,7 +2,7 @@
 title: "Goulash Húngaro: Receta Pro con Pimentón Auténtico"
 description: "Auténtico goulash húngaro: ternera guisada con pimentón dulce, cebollas caramelizadas y especias. Técnica Pro tradicional."
 pubDate: 2026-06-27
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/goulash-1.jpg
 imageAlt: "Goulash Húngaro: Receta Pro con Pimentón Auténtico"
@@ -36,6 +36,9 @@ wpId: 3583
 <li>Sal y pimienta</li>
 <li>3-4 patatas medianas, en cubos (opcional)</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=goulash-hungaro-receta-pimenton-autentico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
+
 <h3>Para Servir:</h3>
 <ul>
 <li>Nokedli (galuska) o fideos de huevo</li>
@@ -58,6 +61,9 @@ wpId: 3583
 <p><strong>Paso 8:</strong> Vierte caldo hasta cubrir la carne.</p>
 <p><strong>Paso 9:</strong> Lleva a ebullición. Tapa y cocina a fuego bajo 1.5 horas.</p>
 <p><strong>Paso 10:</strong> Si usas patatas, añádelas después de 1 hora.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=goulash-hungaro-receta-pimenton-autentico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+
 <h3>Fase 4: Reducir (30 min)</h3>
 <p><strong>Paso 11:</strong> Destapa y cocina 30 minutos más hasta que la salsa espese.</p>
 <p><strong>Paso 12:</strong> Sazona con sal y pimienta. Retira laurel.</p>
@@ -71,6 +77,9 @@ wpId: 3583
 <p>Tómate tu tiempo aquí. Las cebollas dulces son la base del sabor.</p>
 <h3>3. Pimentón Húngaro Auténtico</h3>
 <p>Busca «Hungarian paprika» o «Szeged paprika». El pimentón español es diferente.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=goulash-hungaro-receta-pimenton-autentico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

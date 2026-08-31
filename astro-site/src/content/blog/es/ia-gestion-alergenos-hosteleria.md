@@ -2,7 +2,7 @@
 title: "Gestión de Alérgenos en Restaurante: los 14 y la Ley 2026"
 description: "Los 14 alérgenos de declaración obligatoria, qué te exige la ley en España y la UE, y cómo generar cartas y fichas de alérgenos automáticas con IA."
 pubDate: 2026-04-08
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/ia-gestion-alergenos-chef-cocina.jpg
 imageAlt: "Chef revisando etiquetas de alérgenos en cocina profesional con inteligencia artificial"
@@ -60,6 +60,8 @@ El Anexo II del Reglamento UE 1169/2011 establece la lista de 14 alérgenos que 
 
 Conocer la lista es el primer paso, pero el verdadero desafío de la **gestión de alérgenos restaurante** está en la contaminación cruzada y las trazas. Un plato que no lleva frutos secos en su receta puede contaminarse si se fríe en el mismo aceite que unas croquetas con almendra molida. Una tabla de corte mal higienizada o una espátula compartida entre dos elaboraciones bastan para que un alérgeno llegue a un plato donde no debería estar. La ley te obliga a informar de los alérgenos presentes intencionadamente, pero la responsabilidad de evitar la contaminación cruzada es tuya y de tu equipo. Documentarlo bien es la única forma de protegerte legalmente y, sobre todo, de proteger al comensal.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-gestion-alergenos-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 ## Qué te obliga exactamente la ley (UE y España)
 
 El marco normativo de la **gestión de alérgenos restaurante** en España y en toda la Unión Europea se asienta sobre dos pilares legales que llevan más de una década en vigor. No son leyes nuevas ni provisionales: son el estándar que cualquier inspector de sanidad aplica en su visita.
@@ -83,6 +85,8 @@ Cuando hablamos de sanciones en seguridad alimentaria, las cifras no son una exa
 | Muy grave | Reincidencia en infracciones graves, ocultación deliberada de alérgenos o intoxicación de un cliente por falta de información | De 20.001 € a 600.000 €, y posible cierre temporal del establecimiento de hasta 5 años |
 
 Más allá de la multa económica, una **gestión de alérgenos restaurante** deficiente te expone a una responsabilidad civil que puede multiplicar las cifras. Si un comensal sufre una reacción alérgica grave por una información incorrecta o ausente, la vía judicial puede derivar en indemnizaciones que ningún seguro de responsabilidad civil cubre si se demuestra negligencia en la documentación. Y luego está la reputación: un caso de alergia mal gestionado corre más rápido en redes sociales que cualquier campaña de marketing.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-gestion-alergenos-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 ## Por qué la gestión manual de alérgenos falla
 
@@ -120,6 +124,8 @@ Ni la IA cocina por ti ni el papel te convierte en un negligente. Pero cuando co
 | Filtrar el menú para un comensal celíaco | El camarero tiene que conocer de memoria los platos sin gluten o consultar una tabla en papel que puede estar desactualizada | El código QR de la carta muestra automáticamente solo los platos aptos para celíacos, sin margen de error |
 
 La comparación no va de sustituir al cocinero, sino de quitarle de encima la carga administrativa que le roba tiempo de cocina. Un chef que dedica tres horas semanales a mantener fichas de alérgenos es un chef que no está afinando puntos de carne ni formando a su partida. La IA no cocina, pero libera horas de trabajo real.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-gestion-alergenos-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
 
 ## Cómo empezar hoy con AI Chef Pro
 

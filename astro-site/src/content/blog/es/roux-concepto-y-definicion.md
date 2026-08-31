@@ -2,7 +2,7 @@
 title: "Roux: Concepto y Definición"
 description: "Base espesante de harina y grasa en cocina francesa clásica. Aprende roux blanco, rubio y oscuro."
 pubDate: 2026-02-17
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2026/05/roux-destacada.jpg
 imageAlt: "Roux dorado removido en un cazo"
@@ -59,6 +59,9 @@ wpId: 2730
 <p>Se cocina lo justo para que la harina pierda el sabor a crudo, pero sin tomar color. La clave aquí es mantener un fuego bajo y retirar la mezcla en cuanto empieza a burbujear ligeramente. Es el compañero inseparable de la <a href="https://aichef.pro/blog/bechamel-concepto-y-definicion">salsa bechamel</a> y de cualquier preparación donde queramos espesar sin alterar el color blanco ni añadir notas tostadas.</p>
 <h3>Roux rubio: el equilibrio perfecto</h3>
 <p>Se deja cocinar unos minutos más, hasta que adquiere un tono dorado similar al de una cáscara de avellana. El aroma cambia: empieza a recordar a galleta o a pan tostado. Es el roux más versátil en cocina profesional, ideal para la <a href="https://aichef.pro/blog/salsa-veloute-concepto-y-definicion">salsa velouté</a> y para espesar sopas de verduras o cremas de ave sin enmascarar los sabores delicados.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=roux-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
+
 <h3>Roux oscuro: paciencia y nariz</h3>
 <p>Aquí entramos en territorio de cocción lenta y atención constante. El roux oscuro se trabaja a fuego bajo, removiendo sin parar, hasta alcanzar un marrón profundo. Su sabor es complejo, con notas que recuerdan al café tostado o a la corteza de pan muy horneada. Es el alma del gumbo criollo y de muchas salsas para carnes asadas. Eso sí: cuanto más oscuro es el roux, menor es su capacidad espesante, así que necesitarás más cantidad para lograr la misma textura.</p>
 <h2>El ratio grasa-harina: la regla 1:1</h2>
@@ -87,6 +90,9 @@ wpId: 2730
 <p>El grumo es el enemigo número uno. Casi siempre aparece porque <strong>el roux estaba frío y el líquido caliente</strong>, o viceversa. La regla de oro es: roux caliente + líquido frío, o roux frío + líquido caliente. Nunca mezcles ambos a la misma temperatura extrema. Si ya tienes grumos, pasa la salsa por un colador fino o dale con la batidora sin piedad.</p>
 <h3>Sabor a harina cruda</h3>
 <p>Si al probar la salsa notas ese regusto a harina sin cocer, el roux no se trabajó el tiempo suficiente. La harina necesita al menos un par de minutos de cocción en la grasa para eliminar ese sabor. No tengas prisa en añadir el líquido; deja que el roux burbujee y desprenda su aroma antes de seguir.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=roux-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+
 <h3>Roux quemado</h3>
 <p>Un roux oscuro no es un roux quemado. Si aparecen motas negras o el olor es acre en lugar de tostado, has pasado el punto de no retorno. No intentes aprovecharlo: el sabor amargo arruinará toda la preparación. Tira la mezcla, limpia la cacerola y empieza de nuevo con fuego más bajo.</p>
 <h3>Usar fuego demasiado alto</h3>
@@ -102,6 +108,9 @@ wpId: 2730
 <p>Lo más probable es que el roux no se cocinara lo suficiente antes de añadir la leche. Incluso un roux blanco necesita un par de minutos de cocción para que la harina pierda el sabor a crudo. Otro motivo puede ser que hayas añadido la leche demasiado rápido, bajando bruscamente la temperatura de la mezcla y deteniendo la cocción de la harina.</p>
 <h3>¿El roux sin gluten funciona igual?</h3>
 <p>No exactamente igual, pero se puede hacer. Las harinas sin gluten (como la de arroz o la de maíz) tienen menos poder espesante y una textura algo más granulosa. Necesitarás más cantidad para lograr el mismo cuerpo y el sabor cambia ligeramente. Si trabajas en un restaurante con opciones sin gluten, vale la pena hacer pruebas hasta dar con la proporción adecuada para cada salsa.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=roux-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
+
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/bechamel-concepto-y-definicion">Bechamel: concepto y definición</a></li>

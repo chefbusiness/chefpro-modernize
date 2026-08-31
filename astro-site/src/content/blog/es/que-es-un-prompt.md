@@ -2,7 +2,7 @@
 title: "Qué es un Prompt: Guía para Cocineros con Ejemplos"
 description: "Qué es un prompt y cómo escribir uno bueno para tu cocina: definición clara, anatomía, ejemplos de hostelería antes y después y errores a evitar."
 pubDate: 2024-09-20
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2024/09/que-es-un-prompt-ai-chef-pro.jpeg
 imageAlt: "qué es un prompt glosario ai chef pro"
@@ -52,6 +52,8 @@ El mecanismo se parece mucho a cómo trabajas en cocina. Tú no le explicas a un
 Aquí entra en juego un principio fundamental que en cocina conoces de sobra: basura entra, basura sale. Si le das a un cocinero una comanda ambigua, el plato saldrá mal. Si le das a una IA un prompt vago, la respuesta será inservible. La calidad del plato depende directamente de la calidad de la comanda. No hay atajos.
 
 Este principio es tan importante que merece la pena grabárselo a fuego. Cuando un cocinero me dice “es que la IA me da respuestas muy genéricas”, mi primera pregunta siempre es: “¿cómo era tu prompt?”. En la gran mayoría de los casos, el prompt era algo como “escríbeme un post para Instagram”. Sin contexto, sin tono, sin objetivo. Así no hay manera.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ prompts profesionales probados para chefs y propietarios.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-prompt" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pro Prompts eBook por €9</a></aside>
 
 ## La anatomía de un buen prompt: los 5 ingredientes
 
@@ -108,6 +110,8 @@ El prompt profesional sería:
 
 La respuesta que genera la IA suena a persona, no a robot. El cliente siente que le han escuchado, y tú has convertido una crisis de reputación en una oportunidad de fidelización. Este tipo de prompts son puro oro para dueños de restaurante que no tienen tiempo ni ganas de pelearse con las reseñas.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-prompt" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
+
 ## Tipos de prompts que usarás en tu cocina
 
 No todos los prompts son iguales. Según lo que necesites, te conviene enfocarlos de una manera u otra. Aquí tienes los cuatro tipos principales que vas a usar en el día a día de tu restaurante.
@@ -136,6 +140,8 @@ Después de ver cientos de prompts escritos por cocineros y hosteleros, estos so
 | No iterar | Te conformas con la primera respuesta, aunque no sea exactamente lo que buscabas | Afina: “acorta la descripción”, “sube el tono”, “cambia la albahaca por estragón” |
 
 Si te has sentido identificado con alguno de estos errores, tranquilo. Todos hemos pasado por ahí. La buena noticia es que se corrigen rápido. Y si quieres ahorrarte la curva de aprendizaje, tenemos una [biblioteca de 151 prompts para restaurantes y hostelería](https://aichef.pro/blog/151-prompts-para-restaurantes-y-hosteleria) listos para copiar, pegar y adaptar a tu negocio.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Plan Financiero</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, escenarios y dashboard de ratios financieros.</p><a href="/kit-plan-financiero?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-prompt" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Plan Financiero por €39</a></aside>
 
 ## De un prompt suelto a un agente que ya sabe tu cocina
 

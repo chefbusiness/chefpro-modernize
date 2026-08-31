@@ -2,7 +2,7 @@
 title: "12 Innovaciones de IA que Están Revolucionando las Cocinas Profesionales"
 description: "El sector gastronómico está viviendo una transformación sin precedentes. Según datos recientes, el 74% de los establecimientos hosteleros en España ya…"
 pubDate: 2025-12-26
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/12-innovaciones-ia-cocinas-3.jpeg
 imageAlt: "12 Innovaciones de IA que Están Revolucionando las Cocinas Profesionales"
@@ -189,6 +189,8 @@ wpId: 1923
 </div>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=12-innovaciones-ia-cocinas-profesionales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
 
 <h2 class="wp-block-heading">5. Control de Calidad Visual con Visión Artificial</h2>
 
@@ -405,6 +407,8 @@ wpId: 1923
 <p class="wp-block-paragraph">Para explorar estas posibilidades en profundidad, visita nuestro artículo sobre <a href="https://aichef.pro/blog/el-futuro-de-los-restaurantes-inteligentes-ia-y-iot-en-la-gastronomia" target="_blank">el futuro de los restaurantes inteligentes: IA y IoT</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Operativa multi-marca y multi-plataforma.</p><a href="/kit-tareas-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=12-innovaciones-ia-cocinas-profesionales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Dark Kitchen por €12</a></aside>
 
 <h2 class="wp-block-heading">11. IA para Sostenibilidad y Economía Circular</h2>
 
@@ -705,6 +709,8 @@ wpId: 1923
 <p class="wp-block-paragraph">Para mantenerte informado sobre los desarrollos futuros, visita regularmente nuestra página de <a href="https://aichef.pro/blog" target="_blank">roadmap de AI Chef Pro</a>.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=12-innovaciones-ia-cocinas-profesionales" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
 
 <h2 class="wp-block-heading">Conclusión: La IA no Reemplaza al Chef, lo Potencia</h2>
 

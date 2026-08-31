@@ -2,7 +2,7 @@
 title: "Qué Significa Abocar en Cocina: Definición y Usos Reales"
 description: "Qué significa abocar en cocina: definición directa, etimología, usos en la partida y diferencias con trasvasar, decantar y escanciar."
 pubDate: 2024-12-11
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado.jpeg
 imageAlt: "Abocado"
@@ -47,6 +47,8 @@ En el día a día de un restaurante, *abocar* es una acción mucho más habitual
 
 El abocado se distingue de *colar* porque este último siempre emplea un chino, estameña o colador de malla. En la práctica, muchas veces se combinan: primero se aboca para retirar el grueso del poso y después se cuela el resto para un acabado impecable.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-significa-abocar-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+
 ## Abocar vs. trasvasar vs. decantar vs. escanciar: el núcleo diferencial
 
 Aunque en el lenguaje coloquial se mezclan, cada término tiene un objetivo y un gesto distinto. Esta tabla resume lo que todo cocinero y sumiller debe tener claro.
@@ -59,6 +61,8 @@ Aunque en el lenguaje coloquial se mezclan, cada término tiene un objetivo y un
 | **Escanciar** | Servir la bebida (vino, sidra) directamente en la copa o vaso, a menudo desde cierta altura. | Servir y, en el caso de la sidra, romper el carbónico para potenciar aromas. | Servicio en sala; escanciado de sidra natural; nunca es un trasiego entre recipientes de trabajo. |
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-significa-abocar-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 ## Vino «abocado»: la confusión clásica
 
@@ -83,6 +87,8 @@ La confusión ortográfica es tan común como la semántica. Conviene aclarar lo
 - **Avocar** (con *v*) es un término jurídico‑administrativo. Significa que una autoridad superior atrae hacia sí la resolución de un asunto que correspondía a un órgano inferior. No tiene nada que ver con la cocina. Escribir «avocar» queriendo decir «abocar» es un error frecuente.
 - **Estar abocado a algo** es una locución figurada que indica estar destinado o encaminado inevitablemente a una situación. Por ejemplo: «Un servicio sin *mise en place* está abocado al caos». Aquí la palabra conserva la idea de verterse hacia un desenlace.
 - **Regionalismo (Murcia y zonas limítrofes):** en el habla coloquial, «abocar» o «aboca» se usa como sinónimo de «verter» o «volcar» cualquier cosa, e incluso con el sentido de «hablar sin tapujos». Fuera de ese contexto, en cocina profesional se emplea con el significado técnico que hemos descrito.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-significa-abocar-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
 
 ## Cómo abocar bien: checklist de partida
 

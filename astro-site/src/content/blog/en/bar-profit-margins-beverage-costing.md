@@ -2,7 +2,7 @@
 title: "Bar Profit Margins: Complete Guide to Beverage Costing and Pricing"
 description: "Bars rank among the most profitable concepts in the hospitality industry. While traditional restaurants typically struggle to achieve net profit margins of…"
 pubDate: 2026-03-31
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ai-in-gastronomy
 lang: en
 wpId: 3325
@@ -122,6 +122,9 @@ faq:
 <h3>The Basic Pour Cost Formula</h3>
 <p><strong>Pour Cost % = (Cost of Ingredients ÷ Menu Price) × 100</strong></p>
 <p>This calculation gives you the percentage of revenue consumed by product costs for any individual item. A well-optimized bar typically targets an overall pour cost between 18-24%.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Opening, closing, mise, and garnish prep.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Bar / Cocktails for €12</a></aside>
+
 <h3>Worked Example: Classic Margarita Cocktail</h3>
 <p>Let&#8217;s calculate the pour cost for a Classic Margarita served in a 12-ounce glass:</p>
 <p><strong>Ingredients:</strong></p>
@@ -231,6 +234,9 @@ faq:
 <li>&#8220;Heavy&#8221; pours to impress customers</li>
 <li>Heavy pours to increase tips</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Casual Restaurant</h3><p class="mt-2 text-muted-foreground">Shift checklists, opening, closing, and station tasks in pro format.</p><a href="/kit-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Casual Restaurant for €14</a></aside>
+
 <h2>Common Margin Killers: What&#8217;s Dragging Down Your Bar&#8217;s Profitability</h2>
 <p>Beyond over-pouring, bars face multiple threats to their profit margins. Identifying and addressing these silent profit killers is essential for maintaining a healthy bottom line.</p>
 <h3>Theft and Shrinkage</h3>
@@ -280,6 +286,9 @@ faq:
 <p><strong>Pricing:</strong> Start with the AI Chef Member plan offering 10,000 credits per month—perfect for testing the platform&#8217;s capabilities. Pro plans at €25/month unlock unlimited usage and advanced analytics, while Premium at €50/month includes white-label reports and priority support.</p>
 </div>
 <hr>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Private Chef</h3><p class="mt-2 text-muted-foreground">At-home showcooking and events, with 11 deliverables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Private Chef for €45</a></aside>
+
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Turn Your Bar Into a Profit Machine</p>

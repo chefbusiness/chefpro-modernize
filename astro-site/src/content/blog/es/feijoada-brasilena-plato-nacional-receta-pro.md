@@ -2,7 +2,7 @@
 title: "Feijoada Brasileña: Receta Pro del Plato Nacional de Brasil"
 description: "Auténtica feijoada brasileña: frijoles negros, carnes de cerdo, chorizo y morcilla. Técnica Pro con remojo y cocción lenta tradicional."
 pubDate: 2026-04-11
-modDate: 2026-06-28
+modDate: 2026-08-31
 category: recetas
 image: /blog-assets/2026/03/feijoada.jpg
 imageAlt: "Feijoada Brasileña: Receta Pro del Plato Nacional de Brasil"
@@ -27,6 +27,9 @@ wpId: 3345
 <li>2 hojas de laurel</li>
 <li>Sal</li>
 </ul>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=feijoada-brasilena-plato-nacional-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+
 <h3>Para las Carnes:</h3>
 <ul>
 <li>300g carne seca (charque o tasajo), desalada</li>
@@ -59,6 +62,9 @@ wpId: 3345
 <p><strong>Paso 3:</strong> Hierve la carne seca 30 minutos para desalar. Cambia el agua.</p>
 <p><strong>Paso 4:</strong> En otra olla, hierve costillas, oreja y patas 1 hora.</p>
 <p><strong>Paso 5:</strong> Corta chorizo y morcilla en rodajas.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=feijoada-brasilena-plato-nacional-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+
 <h3>Fase 3: Sofrito y Unión (30 min)</h3>
 <p><strong>Paso 6:</strong> Sofríe cebolla y ajo en aceite hasta dorar.</p>
 <p><strong>Paso 7:</strong> Añade las carnes cocidas y sofríe 5 minutos.</p>
@@ -71,6 +77,9 @@ wpId: 3345
 <p>Esencial para reducir tiempo de cocción y mejorar digestibilidad.</p>
 <h3>2. Desalar Carne Seca</h3>
 <p>Cambia el agua de remojo para eliminar exceso de sal.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=feijoada-brasilena-plato-nacional-receta-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+
 <h2>Tabla Resumen</h2>
 <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>

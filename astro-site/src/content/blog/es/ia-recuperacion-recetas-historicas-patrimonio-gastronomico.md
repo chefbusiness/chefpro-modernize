@@ -2,7 +2,7 @@
 title: "IA en la Recuperación de Recetas Históricas: Cómo la Inteligencia Artificial Rescata el Patrimonio Gastronómico"
 description: "En un mundo donde la gastronomía evoluciona a velocidad vertiginosa, existe una paradoja fascinante: mientras buscamos innovar constantemente, corremos el…"
 pubDate: 2025-12-25
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-en-la-recuperacion-de-recetas-historicas-1.jpeg
 imageAlt: "IA en Recuperación de Recetas Históricas"
@@ -253,6 +253,8 @@ wpId: 1901
 <p class="wp-block-paragraph">El <a href="https://aichef.pro/blog/que-es-el-maiz">maíz</a> azul, la hoja santa mexicana, el cacao porcelana venezolano y el tarwi andino son ejemplos de ingredientes que, gracias a la investigación asistida por IA, están regresando a las cocinas de restaurantes de vanguardia y generando nuevas oportunidades para productores locales.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-recuperacion-recetas-historicas-patrimonio-gastronomico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>
 
 <h3 class="wp-block-heading">El Bulli y la Integración de Datos Históricos con IA</h3>
 
@@ -572,6 +574,8 @@ wpId: 1901
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-recuperacion-recetas-historicas-patrimonio-gastronomico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+
 <h3 class="wp-block-heading">Herramientas Relevantes para la Investigación Gastronómica Histórica</h3>
 
 
@@ -850,6 +854,8 @@ wpId: 1901
 <p class="wp-block-paragraph">El <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-recuperacion-recetas-historicas-patrimonio-gastronomico" target="_blank">programa de mentoría online de AI Chef Pro</a> incluye módulos específicos sobre investigación gastronómica histórica, interpretación de recetas antiguas y desarrollo de propuestas basadas en patrimonio culinario.</p>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-recuperacion-recetas-historicas-patrimonio-gastronomico" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
 
 <h2 class="wp-block-heading">Conclusión: Conectando Pasado y Futuro a Través de la Cocina</h2>
 

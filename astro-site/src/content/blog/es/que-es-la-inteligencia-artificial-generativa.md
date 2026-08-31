@@ -2,7 +2,7 @@
 title: "¿Qué es la Inteligencia Artificial Generativa?"
 description: "La Inteligencia Artificial Generativa (IAG) es un subcampo de la IA que crea contenido nuevo y original basado en patrones aprendidos de datos existentes…"
 pubDate: 2024-09-23
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: glosario
 image: /blog-assets/2024/09/que-es-la-inteligencia-artificial-generativa.jpeg
 imageAlt: "Qué es la inteligencia artificial generativa"
@@ -31,6 +31,8 @@ wpId: 397
 </div></figure>
 
 
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Catering / Eventos</h3><p class="mt-2 text-muted-foreground">Listas de evento, montaje, servicio, desmontaje, trazabilidad.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-la-inteligencia-artificial-generativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Catering / Eventos por €12</a></aside>
 
 <h3 class="wp-block-heading"><strong>Características Principales:</strong></h3>
 
@@ -72,6 +74,8 @@ wpId: 397
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Tapas Bar / Gastrobar</h3><p class="mt-2 text-muted-foreground">Barra, vitrina de tapas y rotación en servicio continuo.</p><a href="/kit-tareas-tapas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-la-inteligencia-artificial-generativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Tapas Bar / Gastrobar por €14</a></aside>
+
 <h3 class="wp-block-heading"><strong>Impacto y Consideraciones:</strong></h3>
 
 
@@ -95,6 +99,8 @@ wpId: 397
 
 
 <p class="wp-block-paragraph">En resumen, la Inteligencia Artificial Generativa es una tecnología innovadora que está transformando la manera en que creamos y consumimos contenido, ofreciendo nuevas oportunidades y desafíos en diversos campos.</p>
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Cómo Montar una Dark Kitchen</h3><p class="mt-2 text-muted-foreground">Roadmap completo para abrir una dark kitchen.</p><a href="/guia-dark-kitchen?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-la-inteligencia-artificial-generativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Cómo Montar una Dark Kitchen por €24</a></aside>
 
 
 

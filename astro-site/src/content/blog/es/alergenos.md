@@ -2,7 +2,7 @@
 title: "Alérgenos Alimentarios: Lista de los 14 Obligatorios (UE)"
 description: "Qué son los alérgenos y la lista completa de los 14 de declaración obligatoria en la UE (Reglamento 1169/2011), en tabla. Alergia vs. intolerancia."
 pubDate: 2024-10-16
-modDate: 2026-08-15
+modDate: 2026-08-31
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/que-son-los-alergenos.jpg
 imageAlt: "qué son los alérgenos"
@@ -69,6 +69,8 @@ Esta lista es cerrada: no puedes añadir ni quitar ningún alérgeno según el c
 
 
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=alergenos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
 ## Dónde Se Esconden los Alérgenos: Los Errores Más Comunes
 
 Por mucho que controles tus recetas, los alérgenos tienen la mala costumbre de colarse donde menos los esperas. Estos son los fallos más frecuentes que he visto en cocinas profesionales, y que conviene revisar antes de que salte una incidencia:
@@ -97,6 +99,8 @@ En el día a día de un restaurante, los comensales a menudo dicen “soy alérg
 
 Por eso, cuando un cliente avisa de alergia, no se trata de “echar menos cantidad”: se trata de garantizar la ausencia total del alérgeno en su plato. La formación del equipo y los protocolos de cocina son la única barrera real. Y un apunte importante: aunque la intolerancia no mate, un comensal que sufre una mala experiencia por falta de información no vuelve, y se lo cuenta a diez personas más. La reputación también está en juego.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hotel Completo</h3><p class="mt-2 text-muted-foreground">F&amp;B, housekeeping, multi-punto de venta.</p><a href="/kit-tareas-hotel?utm_source=blog&amp;utm_medium=banner&amp;utm_content=alergenos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hotel Completo por €18,50</a></aside>
+
 ## Obligaciones Básicas del Restaurante
 
 El Reglamento 1169/2011 obliga a que la información sobre alérgenos esté disponible y sea veraz, tanto para alimentos envasados como para los servidos a granel o en hostelería. En España, el Real Decreto 126/2015 desarrolla esta obligación para los alimentos sin envasar, es decir, para todo lo que sirves en sala, en barra o para llevar. La información puede facilitarse por escrito (carta, cartel, ficha técnica), de forma verbal siempre que haya un soporte documental que la respalde y el personal esté formado para darla con precisión.
@@ -123,6 +127,8 @@ Por mucho que controles, el riesgo cero no existe. Un cliente puede no haber com
 6. **Registra el incidente**: una vez resuelta la emergencia, documenta lo ocurrido: plato implicado, alérgeno sospechoso, hora, síntomas y actuaciones realizadas. Este registro te servirá para revisar tus procesos y para cumplir con posibles requerimientos legales.
 
 Insisto: este esquema es una guía de sentido común, no un sustituto de la formación reglada. Todo el personal de sala debería recibir formación específica en alérgenos y primeros auxilios adaptada a hostelería. Lo que no puede faltar es que cada miembro del equipo sepa exactamente qué hacer si un cliente empieza a encontrarse mal en tu casa.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=alergenos" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
 
 ## Cómo Ayuda la Tecnología (y la IA) a No Fallar
 
