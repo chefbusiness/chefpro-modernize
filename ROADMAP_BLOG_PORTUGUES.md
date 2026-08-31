@@ -107,18 +107,37 @@ ptapp con UTM. Ganchos verificados 1 a 1 contra el censo.
 | 8 | `mise en place` | 1.930 | MEDIA | sí | Chef Executivo Pro | **PILAR** | **22.200 (11,7×)** |
 | 9 | `mirepoix` / `brunoise` (cortes, con medidas) | 1.070 | BAJA-MEDIA | **no** | Léxico Gastronómico | **PILAR** | 9.000 |
 | 10 | `garum` | 1.300 | MEDIA | **no** | Fermentus Con AI+ | satélite | 1.300 |
-| 11 | `cozinha molecular` | 410 | BAJA | sí | Sosa Ingredients | PILAR | 2.900 |
-| 12 | `cocktails clássicos` (ángulo carta) | 340 | BAJA-MEDIA | sí | Bar & Lounge AI+ | satélite | — |
-| 13 | `food truck` (abrir en Portugal) | 2.420 bruto | MEDIA-ALTA | no | Food Truck AI+ | satélite | 27.100 |
-| 14 | `pão de fermentação natural` | 5.050 bruto¹ | ALTA (intención) | sí | Padaria Criativa | satélite | — |
+| 11 | `massa mãe` (ángulo obrador) ² | **1.600** re-medido | MEDIA | sí | Padaria Criativa | **PILAR** | — |
+| 12 | `cozinha molecular` ³ | ~~410~~ **210** re-medido | BAJA | sí | Sosa Ingredients | satélite | 2.900 |
+| 13 | `cocktails clássicos` (ángulo carta) ³ | 340 | BAJA-MEDIA | sí | Bar & Lounge AI+ | satélite | — |
+| 14 | `food truck` (abrir en Portugal) ³ | 2.420 bruto | MEDIA-ALTA | no | Food Truck AI+ | satélite | 27.100 |
 
 **Suma direccionable en Portugal: ~15.000/mes** — y un upside brasileño
 anotado post a post que multiplica varios candidatos ×10-26.
 
-¹ Con aviso del cazador: la intención medida es de panadero casero. Se ataca
-`pão de fermentação natural` (320) con enfoque de producción, NUNCA `massa mãe`
-(1.600: dos panaderías homónimas y un AI Overview con la receta resuelta). El
-término tradicional «isco» es vocabulario de autoridad, no keyword (sin datos).
+¹ **ANULADA el 2026-08-30 — decisión de John, con la advertencia sobre la mesa.**
+Decía: «la intención medida es de panadero casero; se ataca `pão de fermentação
+natural` (320) con enfoque de producción, NUNCA `massa mãe` (1.600: dos
+panaderías homónimas y un AI Overview con la receta resuelta)». Los dos hechos
+son CIERTOS y se reconfirmaron al re-medir. Lo que cambió es la lectura:
+- Las panaderías homónimas copan **`massa mãe padaria`**, no la cabecera. En
+  `massa mãe` sólo ocupan #2 y #5 y dejan libres todos los puestos
+  informativos — la regla 7 aplicada a la variante, igual que en `mise en
+  place` (tanda 4). Se titula en la cabecera.
+- El AI Overview no descalifica una SERP: se trabaja abriendo cada sección con
+  respuesta citable, como en todos los posts IT/FR/DE con AIO.
+- **El post escrito ES el «enfoque de producción» que pedía la nota** (obrador,
+  rácios de refresco, DDT, Portaria 254/2003), no la receta doméstica que
+  temía. `pão de fermentação natural` (320) queda absorbido dentro.
+
+² El término tradicional «isco» es vocabulario de autoridad, no keyword (sin
+datos). Y ojo: **el post NO es una receta de pan** — gestiona una masa madre en
+un negocio, que es justo lo que no existe en portugués.
+
+³ **Replanteados el 2026-08-30, ver la re-medición al final.** `cozinha
+molecular` se parte por la mitad (410 → 210); `cocktails` y `food truck` tienen
+las cabeceras contaminadas y necesitan variante profesional propia antes de
+escribirse.
 
 ### Por qué en ese orden
 
@@ -140,12 +159,14 @@ término tradicional «isco» es vocabulario de autoridad, no keyword (sin datos
   el ángulo — el #4 actual es un blog de packaging); los cortes con tabla de
   medidas en mm contra una SERP de Instagram y Brasil; garum con patrimonio
   propio (las salgadeiras romanas de Tróia, el productor Selo de Mar) y un PAA
-  que pregunta tres veces «como se faz»; molecular con Sosa Ingredients
-  mencionado POR LO QUE HACE.
-- **12-14** cierran con los agentes de concepto (Bar & Lounge, Food Truck,
-  Padaria). Food truck va tarde porque el grueso del volumen quiere comprar el
-  vehículo; lo salva que el PAA es 100 % emprendedor y solo responde el blog
-  de una empresa de TPV.
+  que pregunta tres veces «como se faz»; y el 11, `massa mãe`, con el ángulo de
+  obrador que no existe en portugués (ver nota ¹). `cozinha molecular` baja al
+  12 con Sosa Ingredients mencionado POR LO QUE HACE.
+- **12-14** quedan EN REVISIÓN tras la re-medición del 30-ago: los tres tienen
+  la cabecera contaminada o el volumen partido, y ninguno se escribe sin buscarle
+  antes una variante profesional con volumen propio. El aviso original sobre food
+  truck («el grueso del volumen quiere comprar el vehículo») se confirmó y resultó
+  peor de lo previsto: OLX y fabricantes copan el top, con `local_pack` de 9.
 
 ## Reglas de ejecución
 
@@ -281,6 +302,88 @@ Volcado en `.work/ptapp-agentes.json` (mejor fuente que el `.txt` que había,
 que solo tenía nombres). Y **ojo: Pickaxe no devuelve 404** — un slug inventado
 sirve 200 con el mismo shell y casi el mismo tamaño. La única verificación
 válida de un CTA es **buscar el nombre del agente dentro del HTML**.
+
+## ⚠️ Re-medición del 2026-08-30 (tanda 5): el censo falla en LAS DOS direcciones
+
+Se re-midió **toda la cola**, no sólo los dos posts programados. Todo con
+`--pais 2620 --idioma pt`.
+
+| Puesto ANTES | Candidato | Censo | Re-medido | Veredicto |
+|---|---|---|---|---|
+| 10 | `garum` | 1.300 | **1.300** (clúster ~1.510) | ✅ confirma exacto |
+| 11 | `cozinha molecular` | 410 | **210** (clúster ~430) | ⛔ se parte por la mitad |
+| — | `massa mãe` | descartado en la nota ¹ | **1.600** (+ clúster prof. ~1.680) | ✅ sube al puesto 11 |
+| 12 | `cocktails` | 340 (ángulo carta) | **9.900** la cabecera | ⛔ trampa, ver abajo |
+| 13 | `food truck` | 2.420 bruto | **2.400** | ⛔ confirmado transaccional |
+
+**Tres tandas refutando el censo a la baja habían creado la costumbre de
+desconfiar; la 4 lo confirmó al alza. La regla correcta no es «el roadmap
+miente», es RE-MIDE SIEMPRE** — y esta vez falló en las dos direcciones a la vez.
+
+### ⚠️ El helper de research mide ESPAÑA por defecto
+
+`scripts/dataforseo.py` tiene `LOC_ES, LANG_ES = 2724, 'es'` y **no lo dice en
+ninguna parte de su salida**. La primera pasada dio `garum` = 12.100 y
+`fermentação` = 10. Un término portugués con volumen ridículo al lado de uno
+latino enorme es la firma de estar midiendo el mercado equivocado. **Factor 9 de
+diferencia con el dato real.** Para cualquier blog que no sea el ES, `--pais` y
+`--idioma` explícitos, siempre.
+
+### El volumen alto es una trampa cuando el PAA está en otro idioma
+
+`cocktails` da **9.900/mes en Portugal**, el número más alto de toda la cola. Su
+People Also Ask está **íntegramente en inglés** («What are the top 10
+cocktails?», «What are the 50 classic cocktails?») y el top lo forman IBA World,
+Wikipedia, Continente y blogs de recetas para casa. Google ni siquiera la trata
+como consulta portuguesa. **El PAA en otro idioma es la señal más barata de que
+la SERP no es la que crees.** La variante profesional, `carta de cocktails`, son
+20/mes: no sostiene un post.
+
+Y `food truck`: OLX, Food Trucks Factory, Cheery, contentorbar y un `local_pack`
+de 9. El aviso del roadmap se quedó corto — no es que «el grueso quiera comprar
+el vehículo», es que **casi todo el top vende vehículos**. `como abrir um food
+truck` son 10/mes.
+
+### La regla 7 se confirma por segunda vez, y en la misma dirección
+
+`massa mãe padaria` (210) es **SERP de marca pura**: el AI Overview de esa
+consulta no define nada, **describe la panadería** de la Estrada de Benfica, y
+el PAA descarrila hasta «contraindicações do carvão vegetal». En la cabecera
+`massa mãe` (7,6× más volumen) esas marcas sólo ocupan #2 y #5. Con `mise en
+place` pasó exactamente lo mismo en la tanda 4. **Ya no es una excepción: la
+variante cualificada tiende a estar MÁS contaminada que la cabecera. Titular en
+la cabecera.**
+
+### Los dos huecos salieron de FUENTE PRIMARIA, no de la SERP
+
+- **`garum`**: `pt.wikipedia` es el #1 en Portugal y lo define por «sangue,
+  vísceras… do atum» — eso es el **`haimation`**, una variante mediterránea de
+  lujo — mientras el **#9 de la misma página** dice lo contrario (el `flos
+  gari`, «líquido claro e dourado»). Y el dato que no está en ninguna fuente
+  portuguesa: **Espregueira Themudo et al. (2025), *Antiquity*, Cambridge**
+  secuenció ADN de una cuba de salga romana en Adro Vello (O Grove), cal AD
+  162-321: 12 genomas mitocondriales completos, **todos sardinha europeia**, y
+  **pescado entero machacado**. El garum atlántico era otro producto. Más
+  **Tróia** (182 `cetariae`, el mayor centro de salga conocido del Imperio) y la
+  capa que no existe en toda la SERP: botulismo (umbrales FDA) e histamina
+  (Reg. CE 2073/2005 — la sardinha es *Clupeidae*, **está dentro** del criterio,
+  y la histamina es termoestable).
+- **`massa mãe`**: el PAA pregunta literalmente «O que é a farinha 65?» y nadie
+  responde con el dato legal. Extraído del PDF de la **Portaria n.º 254/2003**
+  (DR I Série-B n.º 66): el **glúten seco mínimo es 8 % IDÉNTICO de T45 a
+  T110**. El tipo mide **cinza** (extracción del molino), **no fuerza** — «usa
+  T65 porque es la del pan» no dice nada sobre si aguanta una fermentación
+  larga. Eso lo dice la **W**, que no está en la clasificación legal. Es el
+  mismo patrón del mirepoix: un número servido como dogma que no mide lo que la
+  gente cree.
+
+### Regla 11 (nueva) — la FAQ contradice al cuerpo por sistema
+
+Tercera tanda seguida, y esta vez **en los dos posts a la vez**: la Q4 de
+`massa mãe` recomendaba el frigorífico como forma de gestión contra la tesis del
+cuerpo, y la Q1 de `garum` daba un linaje que contradecía al cuerpo **y a su
+propia Q5**. **Leer la FAQ CONTRA el cuerpo ya no es recomendación: es un paso
+del pipeline**, y los dos ensambladores llevan `assert` que lo vigilan.
 
 ## Suplentes y semillas futuras
 

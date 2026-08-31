@@ -103,6 +103,70 @@ Referencia de longitud medida en el blog (2026-08-01): **mediana del glosario 1.
 - **⚠️ Un `<a>` dentro de una celda de tabla NO funciona: `html_tabla` escapa el HTML de las celdas** y el enlace se imprime literal (`<a href="…">roner</a>`) en mitad de la tabla. Bridge devuelve enlaces ahí de vez en cuando y **el diff no canta**. Los enlaces internos van en párrafos o viñetas; en la celda, texto plano. Cazado el 2026-08-04.
 - **Los `.md` ensamblados llevan ESPACIO FINO (U+202F) antes de las unidades y GUION NO SEPARABLE (U+2011) en los rangos.** Cualquier script que los parchee tiene que referenciarlos **por escape** (`N = '\u202f'`, `G = '\u2011'`), nunca escribiendo el carácter: al pasar por un heredoc del shell degeneran en espacio y guion normales y **ninguna sustitución encuentra su patrón**. Si un parche «no encuentra» un texto que ves en el fichero, es esto.
 
+### El catálogo de productos vendía la MITAD (2026-08-30)
+
+Orden de John: el catálogo es la herramienta para vender los productos en los
+contenidos, y **los banners tienen que cubrirlos todos, no siempre los mismos**.
+Medido sobre los 198 banners publicados: **sólo 19 productos distintos de 44**;
+`kit-escandallos` se llevaba 60 (el 30 %) y los cuatro primeros el 61 %.
+
+Tres causas encadenadas, **ninguna daba error**:
+
+1. **`src/data/products-catalog.ts` tenía 22 entradas y hay 44 landings vivas.**
+   Los otros 22 eran imposibles de poner en un banner (el ensamblador aborta con
+   «producto inexistente en el catálogo»). La fuente autorizada de nombre y
+   precio de cada producto es su ficha en `astro-site/src/data/productos/`.
+2. **⚠️ El parser del catálogo perdía entradas EN SILENCIO.**
+   `fase8c-libreria-assemble.py` lee el `.ts` con un regex a mano.
+   `kit-gestion-personal` lleva **comentarios entre `description: {` y `es:`**;
+   el patrón exigía sólo espacios ahí, no casaba, y el `.*?` saltaba al
+   `description:` de la **entrada siguiente**. Doble daño invisible: esa entrada
+   se quedaba con la descripción de la siguiente, y **la siguiente desaparecía
+   del catálogo**. Así llevaba `kit-inventario` invisible e invendible, y un
+   banner nuevo de Gestión de Personal habría descrito el Kit de Inventario.
+   Arreglado tolerando comentarios y prohibiendo cruzar al siguiente producto,
+   **más un gate que aborta si el parser ve menos productos de los declarados**.
+3. La elección era manual en cada config, y siempre caían los mismos.
+
+**Ahora:** `rotar_productos()` permite **fijar** por relevancia temática (van
+primero) y rellena el resto **rotando por todo el catálogo**, sembrado con el
+slug del post → determinista, reejecutar no ensucia el diff. Simulado sobre los
+325 posts ES: **44/44 cubiertos, el más usado del 30,3 % al 3,7 %**.
+
+**La lección transversal: un parser hecho a mano sobre un fichero que otros
+editan pierde datos en silencio.** No falla, no avisa, y lo que desaparece es
+dinero que no se factura. Cualquier parser así necesita un **gate de recuento
+contra la fuente**.
+
+### ⚠️ `scripts/dataforseo.py` mide ESPAÑA por defecto y no lo dice
+
+`LOC_ES, LANG_ES = 2724, 'es'`. Investigando el blog PT, la primera pasada dio
+`garum` = 12.100 y `fermentação` = 10 — **un término del idioma objetivo con
+volumen ridículo al lado de uno latino enorme es la firma de estar midiendo el
+mercado equivocado**. El dato real en Portugal es 1.300: factor 9. **Para
+cualquier blog que no sea el ES, `--pais` y `--idioma` explícitos, siempre.**
+
+### `bridge.py` puede devolver VACÍO, y subir tokens no siempre lo arregla
+
+La FAQ del post del garum volvió vacía con `--max-tokens 24000` **y otra vez con
+48000** (21 minutos para decirlo); la del otro post de la misma tanda, mismo
+formato, salió a la primera con 24000. **No es un umbral, es el prompt**: el del
+garum llevaba umbrales regulatorios, taxonomía latina y dos reglamentos, y el
+modelo de razonamiento se atasca. Se resolvió con
+`--model anthropic/claude-sonnet-4.6` y **8192 tokens**, en menos de dos minutos.
+**Si bridge devuelve vacío dos veces, no dupliques el presupuesto una tercera:
+cambia de motor.**
+
+### Tres gotchas de conteo que engañan (todos vistos el 30-ago)
+
+- **`grep -o '<loc>' dist/sitemap-*.xml` cuenta también el `sitemap-index.xml`**,
+  que tiene su propio `<loc>`. Daba 1190 donde había 1189.
+- **`grep -c` en el sitemap servido cuenta LÍNEAS**, y el XML va en una sola:
+  devolvía `1`. Ocurrencias = `grep -o … | wc -l`.
+- **Un `grep -o -E "[^<>]{0,60}(A|B|C)[^<>]{0,60}"`** sobre un HTML de 13 KB
+  agota los 120 s por backtracking catastrófico. Para sacar contexto alrededor
+  de una aguja, Python con `re.finditer` y rebanadas.
+
 ### Nombres de agentes: el bloque de hotelería va en inglés SIEMPRE
 
 - Los 12 agentes de hotelería (Hotel Staff Meal Planner, Room Service Menu Designer, Banquet Event Order AI, F&B Reporting Assistant, Buffet Master AI, In-Room Dining Optimizer, Outlet Concept Developer, Hotel F&B Cost Controller, Mini-Bar & Amenities AI, Hotel Pastry & Bakery Pro, Hotel Menu Engineering Pro, Hotel Bar & Lounge Menu AI) **se llaman igual en español que en inglés**. El inglés es la lengua franca del F&B hotelero premium; un director de A&B en España usa ese vocabulario a diario. **No traducirlos.**
@@ -169,7 +233,7 @@ Resultado, medido en GSC: **27 URLs sin poder rastrearse desde el 1 de agosto** 
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.
 - Son **pago único con acceso vitalicio** a un dashboard, no la suscripción recurrente del SaaS. El banner lo dice explícitamente: es lo que los diferencia.
-- Datos **siempre** desde `src/data/products-catalog.ts` (22 productos, 9-85 €). Nunca duplicar nombre o precio en el contenido: los precios cambian.
+- Datos **siempre** desde `src/data/products-catalog.ts` (**44 productos**, 9-89 €). Nunca duplicar nombre o precio en el contenido: los precios cambian.
 - Elegir por **relevancia temática** con el post. Paleta `accent` (el CTA de la app usa `primary`) para que no se confundan, y UTM `utm_source=blog&utm_medium=banner&utm_content=<slug>` para poder medir qué post vende.
 - El generador `fase8c-libreria-assemble.py` aborta si la config trae menos de 3 productos.
 

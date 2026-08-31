@@ -1,4 +1,4 @@
-# Handoff — pista BLOG / IDIOMAS, 2026-08-30 (tanda 5 · BLOQUEADA en imágenes)
+# Handoff — 2026-08-30/31 · tanda 5 del blog PT (BLOQUEADA en imágenes) + catálogo de productos
 
 ## ▶️ CÓMO RETOMAR (leer esto primero)
 
@@ -360,3 +360,51 @@ Los `alt` y los `figcaption` definitivos ya están dentro de los ensambladores.
    (el blog PT manda tráfico a `ptapp.aichef.pro` desde **ocho** posts, diez
    cuando salga esta tanda), cutover de enblog, catálogo italiano, etiqueta de
    conversión en itapp, y la solicitud manual de indexación de las librerías EN.
+
+---
+
+## 🅱️ Segundo frente de la sesión: el catálogo de productos vendía la MITAD
+
+**Ya está en `main` y desplegado** (commit `29a9714`, verificado en producción).
+Nada pendiente aquí.
+
+**Lo que John pidió:** el catálogo es la herramienta para vender los productos
+en los contenidos, y los banners tienen que cubrirlos **todos**, no siempre los
+mismos. Los productos digitales quedan fuera de esta pista en cuanto a
+*desarrollo*; mantener el catálogo para venderlos, no.
+
+**Medido sobre los 198 banners publicados:** sólo **19 productos distintos de
+44**. `kit-escandallos` se llevaba 60 (el 30 %) y los cuatro primeros el 61 %.
+
+**Tres causas encadenadas, ninguna daba error:**
+
+1. `src/data/products-catalog.ts` tenía **22 entradas y hay 44 landings vivas**.
+   Los otros 22 eran imposibles de poner en un banner.
+2. ⚠️ **El parser perdía entradas en silencio.** `kit-gestion-personal` lleva
+   comentarios entre `description: {` y `es:`; el regex exigía sólo espacios,
+   no casaba, y el `.*?` saltaba a la entrada siguiente — que **desaparecía**.
+   Así llevaba `kit-inventario` invendible.
+3. La elección era manual en cada config.
+
+**Hecho:** catálogo a 44 (datos de la ficha real de cada producto), regex
+tolerante a comentarios y con corte en el siguiente producto, **gate de
+recuento**, y `rotar_productos()` (fijar por tema + rotar el resto,
+determinista por slug). Simulado sobre 325 posts ES: **44/44, el más usado del
+30,3 % al 3,7 %**. Y **descripción falsa retirada de 3 posts vivos**.
+
+**Queda anotado, sin tocar (pista de John):** las fichas de producto viven en
+`astro-site/src/data/productos/` y son la fuente autorizada de nombre y precio.
+
+---
+
+## ⚠️ Corrección de lo que dije durante la sesión
+
+Al cerrar el frente del blog afirmé que **no había empujado nada**. Era falso:
+los dos commits de `main` (`4ab6a20` el handoff y `29a9714` el catálogo)
+**estaban ya en `origin/main`** y por tanto desplegados. No he encontrado qué
+los subió —no hay hooks en `.git/hooks/`, ni crontab de usuario, ni cron de
+sistema que toque este repo— así que **no des por hecho que un commit local
+sigue sin publicar: compruébalo con `git rev-list --left-right --count
+origin/main...main` antes de afirmarlo.** La rama `wip/blog-pt-tanda5` sí está
+confirmada como local-only (`git ls-remote --heads origin` no la lista), que es
+lo que importaba para no publicar los posts sin imágenes.
