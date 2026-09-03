@@ -79,7 +79,7 @@ Cada día, cada albarán que entra por la puerta de la cocina se registra. Sin e
 - Precio unitario
 - Importe total (sin IVA para el cálculo de food cost)
 
-**Ojo con el IVA:** en España, la hostelería aplica el 10 % de IVA a las ventas. Para que la fórmula del food cost sea coherente, **todas las cifras deben ir sin IVA**. Tus ventas las contabilizas sin IVA, tus compras también. Si un albarán viene con IVA incluido, divides el total entre 1,10 (o entre 1,21 si es bebida alcohólica de alta graduación, que va aparte) y obtienes la base imponible. Ojo: **restar el 10 % no es lo mismo que dividir entre 1,10** y es un error que se ve mucho — a 110 € con IVA, restarle el 10 % da 99 € y la base real son 100 €.
+**Ojo con el IVA:** en España, la hostelería aplica el 10 % de IVA a las ventas. Para que la fórmula del food cost sea coherente, **todas las cifras deben ir sin IVA**. Tus ventas las contabilizas sin IVA, tus compras también. Si un albarán viene con IVA incluido, divides el total entre 1,10 (la bebida servida en sala, alcohol incluido, también va al 10 %; el 21 % solo aplica a la bebida alcohólica y a los refrescos azucarados que vendes para llevar o por delivery) y obtienes la base imponible. Ojo: **restar el 10 % no es lo mismo que dividir entre 1,10** y es un error que se ve mucho — a 110 € con IVA, restarle el 10 % da 99 € y la base real son 100 €.
 
 **Registro semanal de compras (ejemplo):**
 
@@ -250,6 +250,8 @@ La ingeniería de menú cruza dos variables: **margen de contribución** (precio
 | (Un plato con margen bajo y pocas ventas) | 5,00 € | 9 (baja) | 🐶 Perro | Eliminar o reformular por completo |
 
 Esta clasificación te da un mapa de acción inmediato. No necesitas más teoría: necesitas mover ficha con estos datos.
+
+Usa una sola metodología (la matriz de Kasavana & Smith). Cruzarla con Miller, Pavesic y el Goal Value, ver en qué platos discrepan y decidir precio y carta con ese mapa —con el IVA por canal y el delivery dentro de la cuenta— es lo que trae la **Guía Food Cost + Ingeniería de Menú** de AI Chef Pro (aichef.pro/guia-food-cost-ingenieria-menu).
 
 ---
 
@@ -627,7 +629,7 @@ Si un producto se dispara de precio (como ha pasado con el aceite de oliva o el 
 
 ### 4. ¿El IVA de las bebidas alcohólicas entra en el food cost?
 
-No. El food cost mide materia prima de comida. Las bebidas tienen su propio indicador, el **beverage cost**, que se calcula igual pero con las compras y ventas de bebidas. En hostelería en España, las bebidas alcohólicas de alta graduación llevan IVA del 21 %, así que conviene separarlas para no distorsionar los cálculos.
+No. El food cost mide materia prima de comida. Las bebidas tienen su propio indicador, el **beverage cost**, que se calcula igual pero con las compras y ventas de bebidas. Y ojo con el IVA: en España, todo lo que se consume en sala —comida y bebida, alcohol incluido— va al 10 % (art. 91.Uno.2.2.º de la Ley del IVA); el 21 % solo aplica a la bebida alcohólica y a los refrescos azucarados que vendes para llevar o por delivery. Sepáralas por el indicador, no por el IVA.
 
 ### 5. ¿Merece la pena usar software de gestión de food cost?
 
