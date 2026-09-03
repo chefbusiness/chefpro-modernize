@@ -12,9 +12,9 @@ resend-broadcast.py — Programa (o prueba) un broadcast de AI Chef Pro en Resen
         [--test john@chefbusiness.co]  # envía UNA prueba transaccional y termina (no programa nada)
         [--dry-run]                    # valida y muestra el payload sin llamar a la API
 
-CREDENCIAL: se lee de ~/.config/resend/claude-code-local.key (fichero 0600, fuera del repo,
-creado por John desde su terminal). NUNCA se imprime. Al terminar la sesión, la key se borra del
-panel (decisión de John, 2026-08-02).
+CREDENCIAL: RESEND_API_KEY del entorno, o ~/.config/resend/claude-code-local.key, o la
+RESEND_API_KEY de ~/michelin-leads/.env (cuenta única del grupo; acceso completo verificado el
+2026-09-04). NUNCA se imprime ni se commitea.
 
 GUARDAS antes de programar (todas bloquean):
   · no queda ningún token __PAGINAS__ en el HTML;
@@ -28,8 +28,6 @@ import json
 import os
 import re
 import sys
-import urllib.request
-import urllib.error
 from datetime import datetime, timezone
 
 API = 'https://api.resend.com'
@@ -40,35 +38,50 @@ SEGMENT_AICP_ES = 'b2c581bd-81db-4ded-a174-2b339f7d3cc3'
 
 
 def leer_key():
-    if not os.path.exists(KEY_FILE):
-        sys.exit('falta la credencial: %s (créala desde tu terminal, permisos 600)' % KEY_FILE)
-    k = open(KEY_FILE, encoding='utf-8').read().strip()
+    """Credencial de la cuenta Resend del grupo. Orden: RESEND_API_KEY en el entorno →
+    ~/.config/resend/claude-code-local.key → RESEND_API_KEY de ~/michelin-leads/.env
+    (la key de AI Chef que ya usan las sesiones de prospección; skill local
+    .claude/skills/resend-aichef/SKILL.md). Nunca se imprime."""
+    k = os.environ.get('RESEND_API_KEY', '').strip()
+    if not k and os.path.exists(KEY_FILE):
+        k = open(KEY_FILE, encoding='utf-8').read().strip()
+    if not k:
+        env = os.path.expanduser('~/michelin-leads/.env')
+        if os.path.exists(env):
+            m = re.search(r'^RESEND_API_KEY\s*=\s*"?([^"\n]+)"?', open(env, encoding='utf-8').read(), re.M)
+            k = m.group(1).strip() if m else ''
     if not k.startswith('re_'):
-        sys.exit('la key de %s no parece de Resend' % KEY_FILE)
+        sys.exit('sin credencial de Resend (ver docstring de leer_key)')
     return k
 
 
 def http(method, path, key, body=None):
-    req = urllib.request.Request(API + path, method=method,
-                                 data=json.dumps(body).encode('utf-8') if body is not None else None,
-                                 headers={'Authorization': 'Bearer ' + key,
-                                          'Content-Type': 'application/json'})
+    """curl, no urllib: el python de este Mac falla el handshake TLS (skill generate-images)."""
+    import subprocess, tempfile
+    cmd = ['curl', '-s', '-o', '-', '-w', '\n%{http_code}', '-X', method, API + path,
+           '-H', 'Authorization: Bearer ' + key, '-H', 'Content-Type: application/json']
+    tmp = None
+    if body is not None:
+        tmp = tempfile.NamedTemporaryFile('w', suffix='.json', delete=False, encoding='utf-8')
+        json.dump(body, tmp, ensure_ascii=False); tmp.close()
+        cmd += ['--data-binary', '@' + tmp.name]
+    out = subprocess.run(cmd, capture_output=True, text=True, timeout=120).stdout
+    if tmp:
+        os.unlink(tmp.name)
+    cuerpo, _, status = out.rpartition('\n')
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return r.status, json.loads(r.read().decode('utf-8') or '{}')
-    except urllib.error.HTTPError as e:
-        return e.code, json.loads(e.read().decode('utf-8') or '{}')
+        data = json.loads(cuerpo or '{}')
+    except json.JSONDecodeError:
+        data = {'raw': cuerpo[:300]}
+    return int(status or 0), data
 
 
 def vivo(url):
-    try:
-        req = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'aichef-broadcast-gate'})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, r.headers.get('content-type', '')
-    except urllib.error.HTTPError as e:
-        return e.code, ''
-    except Exception as e:  # noqa
-        return 0, str(e)
+    import subprocess
+    out = subprocess.run(['curl', '-s', '-I', '-o', '/dev/null', '-w', '%{http_code} %{content_type}',
+                          '-A', 'aichef-broadcast-gate', url], capture_output=True, text=True, timeout=60).stdout
+    st, _, ct = out.partition(' ')
+    return int(st or 0), ct
 
 
 def guardas(html, scheduled_at):
