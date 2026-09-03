@@ -128,6 +128,9 @@ X_PLAN90 = 'plan-accion-90-dias.xlsx'
 # siguientes fijan el vocabulario de la D12 y el ámbito del producto.
 # --------------------------------------------------------------------------
 NO_COMUN = [
+    'Las letras y apartados de un artículo de ley se escriben «letra g» o '
+    '«apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee '
+    'como una errata.',
     # ---- Lista negra D10 -------------------------------------------------
     'PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo '
     'de negocio concreto que no esté en los datos del sector que te doy. En '

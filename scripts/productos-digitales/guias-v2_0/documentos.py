@@ -395,13 +395,35 @@ def erratas_arranque(texto, min_chars=40):
     return fuera
 
 
+def _parentesis_desequilibrados(s):
+    """Balance de paréntesis con tolerancia a enumeradores legales: un «)»
+    sin «(» pendiente y precedido por una letra o un número de 1-2 caracteres
+    («letras a) a g)», «apartado 2)») es notación, no una errata."""
+    prof = 0
+    for m, ch in enumerate(s):
+        if ch == '(':
+            prof += 1
+        elif ch == ')':
+            if prof > 0:
+                prof -= 1
+            else:
+                ant = s[max(0, m - 3):m]
+                if not re.search(r'(?:^|[^\w(])[a-zA-Z0-9]{1,2}$', ant):
+                    return True          # cierre sin apertura y sin enumerador
+    return prof != 0
+
+
 def erratas_parentesis(texto):
+    """Paréntesis sin pareja por línea. 2026-09-04: los enumeradores legales
+    «letras a) a g)» o «apartado 2)» son notación española correcta y no un
+    paréntesis abierto (cap. 4 de la guía de food cost abortó seis veces por
+    «letra g)»); ver _parentesis_desequilibrados."""
     fuera = []
     for i, ln in enumerate(texto.split('\n'), 1):
         s = ln.strip()
         if s.startswith('|'):
             continue
-        if s.count('(') != s.count(')'):
+        if _parentesis_desequilibrados(s):
             fuera.append({'linea': i, 'abre': s.count('('),
                           'cierra': s.count(')'), 'muestra': s[:130]})
     return fuera
