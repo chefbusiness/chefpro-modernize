@@ -5,12 +5,12 @@
 // (locales={['es']}, canonical /productos-digitales, build format 'file').
 //
 // Paridad exacta con la SPA:
-//  · Las 44 tarjetas + 5 "próximamente" + los tags salen VERBATIM del array hardcodeado
+//  · Las 45 tarjetas + 4 "próximamente" + los tags salen VERBATIM del array hardcodeado
 //    (orden EXACTO = decisión de negocio). Extraídas byte a byte de la SPA (icon: X → iconName: 'X').
 //  · Filtro por tag + paginación "Cargar más" (12/pág) = <script> vanilla. TODAS las cards
 //    están en el DOM server-side (crawlables); el JS solo muestra/oculta (mismo criterio que
 //    las tabs de UseCasesHub — DESVIACIÓN DELIBERADA y coherente: la SPA solo renderiza 12 al
-//    DOM vía slice; aquí las 44 quedan en el DOM para SEO, el JS reproduce el slice inicial).
+//    DOM vía slice; aquí las 45 quedan en el DOM para SEO, el JS reproduce el slice inicial).
 //  · Iconos lucide vía <Icon> inline (añadidos Filter + Shell a Icon.astro).
 //  · 3 JSON-LD ÍNTEGROS (CollectionPage + FAQPage + BreadcrumbList) — mismos que el Helmet SPA.
 //  · SaasDiscoveryBanner / LogoBadge(isHub=true, sin pill) / WhatsAppProductSupport = markup
@@ -112,6 +112,23 @@ const products = [
     badge: '🔥 Más Vendido',
     badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
     tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Guía Food Cost + Ingeniería de Menú',
+    slug: '/guia-food-cost-ingenieria-menu',
+    price: '€55',
+    description: 'Método completo para escandallar, poner precio y decidir tu carta: IVA por canal, delivery, bebidas y prime cost. 20 capítulos + 8 Excel con fórmulas vivas.',
+    features: [
+      '20 capítulos + 8 herramientas Excel',
+      '4 metodologías de ingeniería de menú cruzadas',
+      'IVA por canal: sala, para llevar y delivery',
+      'Bonus: 12 ejercicios resueltos',
+    ],
+    iconName: 'Calculator',
+    image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'plantillas', 'guias', 'costes', 'gestion', 'restaurante', 'bar', 'pasteleria', 'dark-kitchen', 'hotel', 'catering'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -902,7 +919,6 @@ const comingSoon = [
   { iconName: 'Utensils', name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
   { iconName: 'ChefHat', name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },
   { iconName: 'Coffee', name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Julio 2026' },
-  { iconName: 'GraduationCap', name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes', 'restaurante'], phase: 'Julio 2026' },
 ];
 
 const PRODUCTS_PER_PAGE = 12;
@@ -973,6 +989,7 @@ const collectionSchema = {
       { '@type': 'ListItem', position: 8, url: 'https://aichef.pro/kit-gestion-personal', name: 'Kit Gestión de Personal y Turnos' },
       { '@type': 'ListItem', position: 9, url: 'https://aichef.pro/kit-tareas', name: 'Tareas Recurrentes: Restaurante Casual' },
       { '@type': 'ListItem', position: 10, url: 'https://aichef.pro/kit-tareas-hotel', name: 'Tareas Recurrentes: Hotel Completo' },
+      { '@type': 'ListItem', position: 11, url: 'https://aichef.pro/guia-food-cost-ingenieria-menu', name: 'Guía Food Cost + Ingeniería de Menú' },
     ],
   },
 };
@@ -1142,10 +1159,12 @@ const breadcrumbSchema = {
             <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
               <div class="flex items-center gap-2">
                 <span class="text-2xl font-extrabold text-[#FFD700]">{product.price}</span>
-                <span class="text-sm text-gray-500 line-through">{product.originalPrice}</span>
-                <span class="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-[10px] font-bold">
-                  {product.discount}
-                </span>
+                {product.originalPrice && <span class="text-sm text-gray-500 line-through">{product.originalPrice}</span>}
+                {product.discount && (
+                  <span class="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-[10px] font-bold">
+                    {product.discount}
+                  </span>
+                )}
               </div>
               <div class="flex items-center gap-1 text-[#FFD700] text-xs font-medium group-hover:gap-2 transition-all">
                 Ver

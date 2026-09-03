@@ -295,6 +295,7 @@ const data: KitExcelData = {
   footerLinks: [
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
+    { href: '/guia-food-cost-ingenieria-menu', label: 'Guía Food Cost + Ingeniería de Menú' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',

@@ -1,5 +1,5 @@
 /**
- * Registro de la zona app post-pago (Fase 5) — 44 productos.
+ * Registro de la zona app post-pago (Fase 5) — 45 productos.
  *
  * Extraído VERBATIM de la SPA el 2026-07-19 (censo con verificación cruzada
  * 44/44: storageKey gate == ProtectedRoute, dashboardPath == ruta -library,
@@ -44,7 +44,7 @@ export interface ProductoZonaApp {
   notas?: string;
 }
 
-/** Título compartido por los 44 gates (verbatim de ProductAccessGate.tsx:68,
+/** Título compartido por los 45 gates (verbatim de ProductAccessGate.tsx:68,
  *  AccessGate.tsx y KitEscandallosAccessGate.tsx — idéntico en los 3). */
 export const ACCESS_TITLE = 'Verificando acceso... | AI Chef Pro';
 
@@ -84,6 +84,7 @@ export const PRODUCTOS_ZONA_APP: ProductoZonaApp[] = [
   { productId: 'kit-inventario', accessPath: '/kit-inventario-access', libraryPath: '/kit-inventario-library', landingPath: '/kit-inventario', storageKey: 'kit-inventario-jwt', productLabel: 'Kit de Inventario', gateComponent: 'KitInventarioAccessGate', dashboardComponent: 'KitInventarioDashboard' },
   { productId: 'guia-dark-kitchen', accessPath: '/guia-dark-kitchen-access', libraryPath: '/guia-dark-kitchen-library', landingPath: '/guia-dark-kitchen', storageKey: 'guia-dark-kitchen-jwt', productLabel: 'Guía Dark Kitchen', gateComponent: 'GuiaDarkKitchenAccessGate', dashboardComponent: 'GuiaDarkKitchenDashboard' },
   { productId: 'guia-restaurante-gastronomico', accessPath: '/guia-restaurante-gastronomico-access', libraryPath: '/guia-restaurante-gastronomico-library', landingPath: '/guia-restaurante-gastronomico', storageKey: 'guia-restaurante-gastronomico-jwt', productLabel: 'Guía Restaurante Gastronómico', gateComponent: 'GuiaRestauranteGastronomicoAccessGate', dashboardComponent: 'GuiaRestauranteGastronomicoDashboard' },
+  { productId: 'guia-food-cost-ingenieria-menu', accessPath: '/guia-food-cost-ingenieria-menu-access', libraryPath: '/guia-food-cost-ingenieria-menu-library', landingPath: '/guia-food-cost-ingenieria-menu', storageKey: 'guia-food-cost-ingenieria-menu-jwt', productLabel: 'Guía Food Cost + Ingeniería de Menú', gateComponent: 'GuiaFoodCostAccessGate', dashboardComponent: 'GuiaFoodCostDashboard', notas: 'Producto 45 (2026-09-03). Primero de la línea con landing NATIVA en Astro: en App.tsx sólo existen sus rutas -access y -library, no la landing.' },
   { productId: 'guia-restaurante-casual', accessPath: '/guia-restaurante-casual-access', libraryPath: '/guia-restaurante-casual-library', landingPath: '/guia-restaurante-casual', storageKey: 'guia-restaurante-casual-jwt', productLabel: 'Guía Restaurante Casual', gateComponent: 'GuiaRestauranteCasualAccessGate', dashboardComponent: 'GuiaRestauranteCasualDashboard' },
   { productId: 'guia-panaderia-obrador', accessPath: '/guia-panaderia-obrador-access', libraryPath: '/guia-panaderia-obrador-library', landingPath: '/guia-panaderia-obrador', storageKey: 'guia-panaderia-obrador-jwt', productLabel: 'Guía Panadería con Obrador', gateComponent: 'GuiaPanaderiaObradorAccessGate', dashboardComponent: 'GuiaPanaderiaObradorDashboard' },
   { productId: 'guia-restaurante-mexicano', accessPath: '/guia-restaurante-mexicano-access', libraryPath: '/guia-restaurante-mexicano-library', landingPath: '/guia-restaurante-mexicano', storageKey: 'guia-restaurante-mexicano-jwt', productLabel: 'Guía Restaurante Mexicano', gateComponent: 'GuiaRestauranteMexicanoAccessGate', dashboardComponent: 'GuiaRestauranteMexicanoDashboard' },

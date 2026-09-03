@@ -156,6 +156,8 @@ import GuiaDarkKitchenDashboard from "./pages/GuiaDarkKitchenDashboard";
 import GuiaRestauranteGastronomico from "./pages/GuiaRestauranteGastronomico";
 import GuiaRestauranteGastronomicoAccessGate from "./pages/GuiaRestauranteGastronomicoAccessGate";
 import GuiaRestauranteGastronomicoDashboard from "./pages/GuiaRestauranteGastronomicoDashboard";
+import GuiaFoodCostAccessGate from "./pages/GuiaFoodCostAccessGate";
+import GuiaFoodCostDashboard from "./pages/GuiaFoodCostDashboard";
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
@@ -839,6 +841,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-restaurante-gastronomico-jwt" redirectTo="/guia-restaurante-gastronomico">
                   <GuiaRestauranteGastronomicoDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Guía Food Cost + Ingeniería de Menú — landing NATIVA en Astro
+                (astro-site/src/pages/guia-food-cost-ingenieria-menu.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/guia-food-cost-ingenieria-menu-access" element={<GuiaFoodCostAccessGate />} />
+            <Route
+              path="/guia-food-cost-ingenieria-menu-library"
+              element={
+                <ProtectedRoute storageKey="guia-food-cost-ingenieria-menu-jwt" redirectTo="/guia-food-cost-ingenieria-menu">
+                  <GuiaFoodCostDashboard />
                 </ProtectedRoute>
               }
             />

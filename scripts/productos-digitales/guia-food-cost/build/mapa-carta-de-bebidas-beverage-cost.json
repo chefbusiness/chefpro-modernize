@@ -1,0 +1,829 @@
+{
+ "fichero": "carta-de-bebidas-beverage-cost.xlsx",
+ "hojas": {
+  "Parámetros": {
+   "celdas": {
+    "IVA repercutido en sala, comida": "B6",
+    "IVA repercutido en sala, refresco azucarado": "C6",
+    "IVA repercutido en sala, bebida alcohólica": "D6",
+    "IVA repercutido para llevar, comida": "B7",
+    "IVA repercutido para llevar, refresco azucarado": "C7",
+    "IVA repercutido para llevar, bebida alcohólica": "D7",
+    "IVA repercutido en delivery, comida": "B8",
+    "IVA repercutido en delivery, refresco azucarado": "C8",
+    "IVA repercutido en delivery, bebida alcohólica": "D8",
+    "Objetivo de beverage cost de los vinos": "B17",
+    "Objetivo de beverage cost de cervezas y refrescos": "B18",
+    "Objetivo de beverage cost de destilados y cócteles": "B19"
+   },
+   "tablas": [
+    {
+     "titulo": "Matriz de IVA repercutido por canal y tipo de producto",
+     "cols": [
+      [
+       "Canal",
+       "A",
+       "txt"
+      ],
+      [
+       "Comida",
+       "B",
+       "pct1"
+      ],
+      [
+       "Refresco/azucarada",
+       "C",
+       "pct1"
+      ],
+      [
+       "Bebida alcohólica",
+       "D",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      6,
+      8
+     ]
+    },
+    {
+     "titulo": "Objetivo de beverage cost por categoría",
+     "cols": [
+      [
+       "Categoría",
+       "A",
+       "txt"
+      ],
+      [
+       "Objetivo (%)",
+       "B",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      17,
+      19
+     ]
+    }
+   ]
+  },
+  "Vinos": {
+   "celdas": {
+    "Botellas vendidas al mes, total": "J35",
+    "Copas vendidas al mes, total": "K35",
+    "Ventas de vino del mes, sin IVA": "Q35",
+    "Coste de vino del mes": "R35",
+    "Margen de contribución del vino del mes": "S35",
+    "Beverage cost ponderado de los vinos": "T35",
+    "Objetivo de beverage cost de los vinos (espejo)": "E37",
+    "Coste por copa de Tinto de la casa (Tempranillo joven)": "L5",
+    "Margen por botella de Tinto de la casa (Tempranillo joven)": "M5",
+    "Margen por copa de Tinto de la casa (Tempranillo joven)": "N5",
+    "Beverage cost de la botella de Tinto de la casa (Tempranillo joven)": "O5",
+    "Beverage cost de la copa de Tinto de la casa (Tempranillo joven)": "P5",
+    "Beverage cost del mes de Tinto de la casa (Tempranillo joven)": "T5",
+    "PVP con IVA en sala de la botella de Tinto de la casa (Tempranillo joven)": "V5",
+    "PVP con IVA en sala de la copa de Tinto de la casa (Tempranillo joven)": "W5",
+    "PVP con IVA para llevar de la botella de Tinto de la casa (Tempranillo joven)": "Y5",
+    "Coste por copa de Crianza Rioja": "L6",
+    "Margen por botella de Crianza Rioja": "M6",
+    "Margen por copa de Crianza Rioja": "N6",
+    "Beverage cost de la botella de Crianza Rioja": "O6",
+    "Beverage cost de la copa de Crianza Rioja": "P6",
+    "Beverage cost del mes de Crianza Rioja": "T6",
+    "PVP con IVA en sala de la botella de Crianza Rioja": "V6",
+    "PVP con IVA en sala de la copa de Crianza Rioja": "W6",
+    "PVP con IVA para llevar de la botella de Crianza Rioja": "Y6",
+    "Coste por copa de Ribera del Duero roble": "L7",
+    "Margen por botella de Ribera del Duero roble": "M7",
+    "Margen por copa de Ribera del Duero roble": "N7",
+    "Beverage cost de la botella de Ribera del Duero roble": "O7",
+    "Beverage cost de la copa de Ribera del Duero roble": "P7",
+    "Beverage cost del mes de Ribera del Duero roble": "T7",
+    "PVP con IVA en sala de la botella de Ribera del Duero roble": "V7",
+    "PVP con IVA en sala de la copa de Ribera del Duero roble": "W7",
+    "PVP con IVA para llevar de la botella de Ribera del Duero roble": "Y7",
+    "Coste por copa de Verdejo Rueda": "L8",
+    "Margen por botella de Verdejo Rueda": "M8",
+    "Margen por copa de Verdejo Rueda": "N8",
+    "Beverage cost de la botella de Verdejo Rueda": "O8",
+    "Beverage cost de la copa de Verdejo Rueda": "P8",
+    "Beverage cost del mes de Verdejo Rueda": "T8",
+    "PVP con IVA en sala de la botella de Verdejo Rueda": "V8",
+    "PVP con IVA en sala de la copa de Verdejo Rueda": "W8",
+    "PVP con IVA para llevar de la botella de Verdejo Rueda": "Y8",
+    "Coste por copa de Albariño Rías Baixas": "L9",
+    "Margen por botella de Albariño Rías Baixas": "M9",
+    "Margen por copa de Albariño Rías Baixas": "N9",
+    "Beverage cost de la botella de Albariño Rías Baixas": "O9",
+    "Beverage cost de la copa de Albariño Rías Baixas": "P9",
+    "Beverage cost del mes de Albariño Rías Baixas": "T9",
+    "PVP con IVA en sala de la botella de Albariño Rías Baixas": "V9",
+    "PVP con IVA en sala de la copa de Albariño Rías Baixas": "W9",
+    "PVP con IVA para llevar de la botella de Albariño Rías Baixas": "Y9",
+    "Coste por copa de Cava brut nature": "L10",
+    "Margen por botella de Cava brut nature": "M10",
+    "Margen por copa de Cava brut nature": "N10",
+    "Beverage cost de la botella de Cava brut nature": "O10",
+    "Beverage cost de la copa de Cava brut nature": "P10",
+    "Beverage cost del mes de Cava brut nature": "T10",
+    "PVP con IVA en sala de la botella de Cava brut nature": "V10",
+    "PVP con IVA en sala de la copa de Cava brut nature": "W10",
+    "PVP con IVA para llevar de la botella de Cava brut nature": "Y10",
+    "Coste por copa de Rosado Navarra": "L11",
+    "Margen por botella de Rosado Navarra": "M11",
+    "Margen por copa de Rosado Navarra": "N11",
+    "Beverage cost de la botella de Rosado Navarra": "O11",
+    "Beverage cost de la copa de Rosado Navarra": "P11",
+    "Beverage cost del mes de Rosado Navarra": "T11",
+    "PVP con IVA en sala de la botella de Rosado Navarra": "V11",
+    "PVP con IVA en sala de la copa de Rosado Navarra": "W11",
+    "PVP con IVA para llevar de la botella de Rosado Navarra": "Y11",
+    "Coste por copa de Vino dulce Pedro Ximénez": "L12",
+    "Margen por botella de Vino dulce Pedro Ximénez": "M12",
+    "Margen por copa de Vino dulce Pedro Ximénez": "N12",
+    "Beverage cost de la botella de Vino dulce Pedro Ximénez": "O12",
+    "Beverage cost de la copa de Vino dulce Pedro Ximénez": "P12",
+    "Beverage cost del mes de Vino dulce Pedro Ximénez": "T12",
+    "PVP con IVA en sala de la botella de Vino dulce Pedro Ximénez": "V12",
+    "PVP con IVA en sala de la copa de Vino dulce Pedro Ximénez": "W12",
+    "PVP con IVA para llevar de la botella de Vino dulce Pedro Ximénez": "Y12"
+   },
+   "tablas": [
+    {
+     "titulo": "Vinos: botella y copa",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Vino",
+       "B",
+       "txt"
+      ],
+      [
+       "Tipo a efectos de IVA",
+       "C",
+       "txt"
+      ],
+      [
+       "Precio de compra de la botella, sin IVA (€)",
+       "D",
+       "eur"
+      ],
+      [
+       "Formato de la botella (cl)",
+       "E",
+       "num1"
+      ],
+      [
+       "Servicio de copa (cl)",
+       "F",
+       "num1"
+      ],
+      [
+       "Copas por botella (n.º)",
+       "G",
+       "num1"
+      ],
+      [
+       "PVP de la botella en sala, sin IVA (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "PVP de la copa en sala, sin IVA (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "Botellas vendidas al mes (n.º)",
+       "J",
+       "num"
+      ],
+      [
+       "Copas vendidas al mes (n.º)",
+       "K",
+       "num"
+      ],
+      [
+       "Coste por copa (€)",
+       "L",
+       "eur"
+      ],
+      [
+       "Margen por botella (€)",
+       "M",
+       "eur"
+      ],
+      [
+       "Margen por copa (€)",
+       "N",
+       "eur"
+      ],
+      [
+       "Beverage cost de la botella (%)",
+       "O",
+       "pct1"
+      ],
+      [
+       "Beverage cost de la copa (%)",
+       "P",
+       "pct1"
+      ],
+      [
+       "Ventas del mes, sin IVA (€)",
+       "Q",
+       "eur"
+      ],
+      [
+       "Coste del mes (€)",
+       "R",
+       "eur"
+      ],
+      [
+       "Margen de contribución del mes (€)",
+       "S",
+       "eur"
+      ],
+      [
+       "Beverage cost del mes (%)",
+       "T",
+       "pct1"
+      ],
+      [
+       "IVA repercutido en sala (%)",
+       "U",
+       "pct1"
+      ],
+      [
+       "PVP de la botella con IVA en sala (€)",
+       "V",
+       "eur"
+      ],
+      [
+       "PVP de la copa con IVA en sala (€)",
+       "W",
+       "eur"
+      ],
+      [
+       "IVA repercutido para llevar (%)",
+       "X",
+       "pct1"
+      ],
+      [
+       "PVP de la botella con IVA para llevar (€)",
+       "Y",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      34
+     ]
+    }
+   ]
+  },
+  "Cervezas y Refrescos": {
+   "celdas": {
+    "Ventas de cervezas y refrescos del mes, sin IVA": "O20",
+    "Coste de cervezas y refrescos del mes": "P20",
+    "Margen de contribución de cervezas y refrescos": "Q20",
+    "Beverage cost ponderado de cervezas y refrescos": "N20",
+    "Servicios vendidos al mes, total": "J20",
+    "Objetivo de beverage cost de cervezas y refrescos (espejo)": "E22",
+    "Servicios por unidad de compra de Cerveza de barril (30 L) (25 cl)": "K5",
+    "Coste por servicio de Cerveza de barril (30 L) (25 cl)": "L5",
+    "Margen por servicio de Cerveza de barril (30 L) (25 cl)": "M5",
+    "Beverage cost de Cerveza de barril (30 L) (25 cl)": "N5",
+    "Ventas del mes de Cerveza de barril (30 L) (25 cl)": "O5",
+    "PVP con IVA en sala de Cerveza de barril (30 L) (25 cl)": "S5",
+    "PVP con IVA para llevar de Cerveza de barril (30 L) (25 cl)": "U5",
+    "Servicios por unidad de compra de Cerveza de barril (30 L) (50 cl)": "K6",
+    "Coste por servicio de Cerveza de barril (30 L) (50 cl)": "L6",
+    "Margen por servicio de Cerveza de barril (30 L) (50 cl)": "M6",
+    "Beverage cost de Cerveza de barril (30 L) (50 cl)": "N6",
+    "Ventas del mes de Cerveza de barril (30 L) (50 cl)": "O6",
+    "PVP con IVA en sala de Cerveza de barril (30 L) (50 cl)": "S6",
+    "PVP con IVA para llevar de Cerveza de barril (30 L) (50 cl)": "U6",
+    "Servicios por unidad de compra de Cerveza tercio (33 cl) (33 cl)": "K7",
+    "Coste por servicio de Cerveza tercio (33 cl) (33 cl)": "L7",
+    "Margen por servicio de Cerveza tercio (33 cl) (33 cl)": "M7",
+    "Beverage cost de Cerveza tercio (33 cl) (33 cl)": "N7",
+    "Ventas del mes de Cerveza tercio (33 cl) (33 cl)": "O7",
+    "PVP con IVA en sala de Cerveza tercio (33 cl) (33 cl)": "S7",
+    "PVP con IVA para llevar de Cerveza tercio (33 cl) (33 cl)": "U7",
+    "Servicios por unidad de compra de Cerveza sin alcohol (33 cl) (33 cl)": "K8",
+    "Coste por servicio de Cerveza sin alcohol (33 cl) (33 cl)": "L8",
+    "Margen por servicio de Cerveza sin alcohol (33 cl) (33 cl)": "M8",
+    "Beverage cost de Cerveza sin alcohol (33 cl) (33 cl)": "N8",
+    "Ventas del mes de Cerveza sin alcohol (33 cl) (33 cl)": "O8",
+    "PVP con IVA en sala de Cerveza sin alcohol (33 cl) (33 cl)": "S8",
+    "PVP con IVA para llevar de Cerveza sin alcohol (33 cl) (33 cl)": "U8",
+    "Servicios por unidad de compra de Refresco de cola (lata 33 cl) (33 cl)": "K9",
+    "Coste por servicio de Refresco de cola (lata 33 cl) (33 cl)": "L9",
+    "Margen por servicio de Refresco de cola (lata 33 cl) (33 cl)": "M9",
+    "Beverage cost de Refresco de cola (lata 33 cl) (33 cl)": "N9",
+    "Ventas del mes de Refresco de cola (lata 33 cl) (33 cl)": "O9",
+    "PVP con IVA en sala de Refresco de cola (lata 33 cl) (33 cl)": "S9",
+    "PVP con IVA para llevar de Refresco de cola (lata 33 cl) (33 cl)": "U9",
+    "Servicios por unidad de compra de Agua mineral (50 cl) (50 cl)": "K10",
+    "Coste por servicio de Agua mineral (50 cl) (50 cl)": "L10",
+    "Margen por servicio de Agua mineral (50 cl) (50 cl)": "M10",
+    "Beverage cost de Agua mineral (50 cl) (50 cl)": "N10",
+    "Ventas del mes de Agua mineral (50 cl) (50 cl)": "O10",
+    "PVP con IVA en sala de Agua mineral (50 cl) (50 cl)": "S10",
+    "PVP con IVA para llevar de Agua mineral (50 cl) (50 cl)": "U10",
+    "Servicios por unidad de compra de Zumo de naranja natural (250 cl)": "K11",
+    "Coste por servicio de Zumo de naranja natural (250 cl)": "L11",
+    "Margen por servicio de Zumo de naranja natural (250 cl)": "M11",
+    "Beverage cost de Zumo de naranja natural (250 cl)": "N11",
+    "Ventas del mes de Zumo de naranja natural (250 cl)": "O11",
+    "PVP con IVA en sala de Zumo de naranja natural (250 cl)": "S11",
+    "PVP con IVA para llevar de Zumo de naranja natural (250 cl)": "U11"
+   },
+   "tablas": [
+    {
+     "titulo": "Cervezas y refrescos",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Referencia",
+       "B",
+       "txt"
+      ],
+      [
+       "Formato de compra",
+       "C",
+       "txt"
+      ],
+      [
+       "Tipo a efectos de IVA",
+       "D",
+       "txt"
+      ],
+      [
+       "Unidad de medida",
+       "E",
+       "txt"
+      ],
+      [
+       "Precio de compra de la unidad, sin IVA (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Contenido de la unidad de compra",
+       "G",
+       "num1"
+      ],
+      [
+       "Servicio",
+       "H",
+       "num1"
+      ],
+      [
+       "PVP del servicio en sala, sin IVA (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "Servicios vendidos al mes (n.º)",
+       "J",
+       "num"
+      ],
+      [
+       "Servicios por unidad de compra (n.º)",
+       "K",
+       "num1"
+      ],
+      [
+       "Coste por servicio (€)",
+       "L",
+       "eur"
+      ],
+      [
+       "Margen por servicio (€)",
+       "M",
+       "eur"
+      ],
+      [
+       "Beverage cost (%)",
+       "N",
+       "pct1"
+      ],
+      [
+       "Ventas del mes, sin IVA (€)",
+       "O",
+       "eur"
+      ],
+      [
+       "Coste del mes (€)",
+       "P",
+       "eur"
+      ],
+      [
+       "Margen de contribución del mes (€)",
+       "Q",
+       "eur"
+      ],
+      [
+       "IVA repercutido en sala (%)",
+       "R",
+       "pct1"
+      ],
+      [
+       "PVP del servicio con IVA en sala (€)",
+       "S",
+       "eur"
+      ],
+      [
+       "IVA repercutido para llevar (%)",
+       "T",
+       "pct1"
+      ],
+      [
+       "PVP del servicio con IVA para llevar (€)",
+       "U",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      19
+     ]
+    }
+   ]
+  },
+  "Destilados y Cócteles": {
+   "celdas": {
+    "Ventas de combinados del mes, sin IVA": "O17",
+    "Coste de combinados del mes": "P17",
+    "Margen de contribución de los combinados": "Q17",
+    "Beverage cost ponderado de los combinados": "N17",
+    "Ventas de cócteles que suman a la bodega": "J64",
+    "Coste de cócteles que suman a la bodega": "K64",
+    "Margen de contribución de los cócteles": "L64",
+    "Beverage cost ponderado de los cócteles": "I64",
+    "Objetivo de beverage cost de destilados y cócteles (espejo)": "E66",
+    "Copas por botella de Ginebra premium": "J5",
+    "Coste del destilado por copa de Ginebra premium": "K5",
+    "Coste total por copa de Ginebra premium": "L5",
+    "Margen por copa de Ginebra premium": "M5",
+    "Beverage cost de Ginebra premium": "N5",
+    "PVP con IVA en sala de Ginebra premium": "S5",
+    "Copas por botella de Ron añejo": "J6",
+    "Coste del destilado por copa de Ron añejo": "K6",
+    "Coste total por copa de Ron añejo": "L6",
+    "Margen por copa de Ron añejo": "M6",
+    "Beverage cost de Ron añejo": "N6",
+    "PVP con IVA en sala de Ron añejo": "S6",
+    "Copas por botella de Whisky escocés 12 años": "J7",
+    "Coste del destilado por copa de Whisky escocés 12 años": "K7",
+    "Coste total por copa de Whisky escocés 12 años": "L7",
+    "Margen por copa de Whisky escocés 12 años": "M7",
+    "Beverage cost de Whisky escocés 12 años": "N7",
+    "PVP con IVA en sala de Whisky escocés 12 años": "S7",
+    "Copas por botella de Vodka": "J8",
+    "Coste del destilado por copa de Vodka": "K8",
+    "Coste total por copa de Vodka": "L8",
+    "Margen por copa de Vodka": "M8",
+    "Beverage cost de Vodka": "N8",
+    "PVP con IVA en sala de Vodka": "S8",
+    "Copas por botella de Vermut de grifo (1 L)": "J9",
+    "Coste del destilado por copa de Vermut de grifo (1 L)": "K9",
+    "Coste total por copa de Vermut de grifo (1 L)": "L9",
+    "Margen por copa de Vermut de grifo (1 L)": "M9",
+    "Beverage cost de Vermut de grifo (1 L)": "N9",
+    "PVP con IVA en sala de Vermut de grifo (1 L)": "S9",
+    "Coste por copa de Gin tonic de la casa": "D56",
+    "Margen por copa de Gin tonic de la casa": "H56",
+    "Beverage cost de Gin tonic de la casa": "I56",
+    "PVP con IVA en sala de Gin tonic de la casa": "N56",
+    "Coste por copa de Mojito": "D57",
+    "Margen por copa de Mojito": "H57",
+    "Beverage cost de Mojito": "I57",
+    "PVP con IVA en sala de Mojito": "N57",
+    "Coste por copa de Aperol spritz": "D58",
+    "Margen por copa de Aperol spritz": "H58",
+    "Beverage cost de Aperol spritz": "I58",
+    "PVP con IVA en sala de Aperol spritz": "N58",
+    "Coste por copa de Negroni": "D59",
+    "Margen por copa de Negroni": "H59",
+    "Beverage cost de Negroni": "I59",
+    "PVP con IVA en sala de Negroni": "N59"
+   },
+   "tablas": [
+    {
+     "titulo": "Combinados: destilado + mezcla",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Destilado",
+       "B",
+       "txt"
+      ],
+      [
+       "Tipo a efectos de IVA",
+       "C",
+       "txt"
+      ],
+      [
+       "Precio de compra de la botella, sin IVA (€)",
+       "D",
+       "eur"
+      ],
+      [
+       "Formato de la botella (cl)",
+       "E",
+       "num1"
+      ],
+      [
+       "Servicio de copa (cl)",
+       "F",
+       "num1"
+      ],
+      [
+       "Coste de la mezcla por copa (€)",
+       "G",
+       "eur"
+      ],
+      [
+       "PVP del combinado en sala, sin IVA (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "Copas vendidas al mes (n.º)",
+       "I",
+       "num"
+      ],
+      [
+       "Copas por botella (n.º)",
+       "J",
+       "num1"
+      ],
+      [
+       "Coste del destilado por copa (€)",
+       "K",
+       "eur"
+      ],
+      [
+       "Coste total por copa (€)",
+       "L",
+       "eur"
+      ],
+      [
+       "Margen por copa (€)",
+       "M",
+       "eur"
+      ],
+      [
+       "Beverage cost (%)",
+       "N",
+       "pct1"
+      ],
+      [
+       "Ventas del mes, sin IVA (€)",
+       "O",
+       "eur"
+      ],
+      [
+       "Coste del mes (€)",
+       "P",
+       "eur"
+      ],
+      [
+       "Margen de contribución del mes (€)",
+       "Q",
+       "eur"
+      ],
+      [
+       "IVA repercutido en sala (%)",
+       "R",
+       "pct1"
+      ],
+      [
+       "PVP del combinado con IVA en sala (€)",
+       "S",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      16
+     ]
+    },
+    {
+     "titulo": "Cócteles: coste ingrediente a ingrediente",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Cóctel",
+       "B",
+       "txt"
+      ],
+      [
+       "Ingrediente",
+       "C",
+       "txt"
+      ],
+      [
+       "Cantidad (cl)",
+       "D",
+       "num1"
+      ],
+      [
+       "Precio del ingrediente (€/L)",
+       "E",
+       "eur"
+      ],
+      [
+       "Coste de la línea (€)",
+       "F",
+       "eur"
+      ]
+     ],
+     "filas": [
+      21,
+      52
+     ]
+    },
+    {
+     "titulo": "Cócteles: resumen por cóctel",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Cóctel",
+       "B",
+       "txt"
+      ],
+      [
+       "Tipo a efectos de IVA",
+       "C",
+       "txt"
+      ],
+      [
+       "Coste por copa (€)",
+       "D",
+       "eur"
+      ],
+      [
+       "PVP en sala, sin IVA (€)",
+       "E",
+       "eur"
+      ],
+      [
+       "Copas vendidas al mes (n.º)",
+       "F",
+       "num"
+      ],
+      [
+       "¿Suma al total de la bodega?",
+       "G",
+       "txt"
+      ],
+      [
+       "Margen por copa (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "Beverage cost (%)",
+       "I",
+       "pct1"
+      ],
+      [
+       "Ventas del mes, sin IVA (€)",
+       "J",
+       "eur"
+      ],
+      [
+       "Coste del mes (€)",
+       "K",
+       "eur"
+      ],
+      [
+       "Margen de contribución del mes (€)",
+       "L",
+       "eur"
+      ],
+      [
+       "IVA repercutido en sala (%)",
+       "M",
+       "pct1"
+      ],
+      [
+       "PVP con IVA en sala (€)",
+       "N",
+       "eur"
+      ]
+     ],
+     "filas": [
+      56,
+      63
+     ]
+    }
+   ]
+  },
+  "Resumen Bodega": {
+   "celdas": {
+    "Ventas de vinos del mes": "B5",
+    "Ventas de cervezas y refrescos del mes": "B6",
+    "Ventas de destilados y cócteles del mes": "B7",
+    "Ventas totales de bodega del mes": "B8",
+    "Coste de vinos del mes": "C5",
+    "Coste de cervezas y refrescos del mes": "C6",
+    "Coste de destilados y cócteles del mes": "C7",
+    "Coste total de bodega del mes": "C8",
+    "Beverage cost ponderado de vinos": "D5",
+    "Beverage cost ponderado de cervezas y refrescos": "D6",
+    "Beverage cost ponderado de destilados y cócteles": "D7",
+    "Beverage cost ponderado de toda la bodega": "D8",
+    "Objetivo de beverage cost de vinos": "E5",
+    "Objetivo de beverage cost de cervezas y refrescos": "E6",
+    "Objetivo de beverage cost de destilados y cócteles": "E7",
+    "Margen de contribución de vinos": "F5",
+    "Margen de contribución de cervezas y refrescos": "F6",
+    "Margen de contribución de destilados y cócteles": "F7",
+    "Margen de contribución total de la bodega": "F8",
+    "Peso de los vinos sobre las ventas de bodega": "G5",
+    "Peso de cervezas y refrescos sobre las ventas de bodega": "G6",
+    "Peso de destilados y cócteles sobre las ventas de bodega": "G7",
+    "Margen a recuperar si los vinos llegaran al objetivo": "H5",
+    "Margen a recuperar si cervezas y refrescos llegaran al objetivo": "H6",
+    "Margen a recuperar si destilados y cócteles llegaran al objetivo": "H7",
+    "Margen total a recuperar en la bodega": "H8"
+   },
+   "tablas": [
+    {
+     "titulo": "Resumen de la bodega por categoría",
+     "cols": [
+      [
+       "Categoría",
+       "A",
+       "txt"
+      ],
+      [
+       "Ventas del mes, sin IVA (€)",
+       "B",
+       "eur"
+      ],
+      [
+       "Coste del mes (€)",
+       "C",
+       "eur"
+      ],
+      [
+       "Beverage cost ponderado (%)",
+       "D",
+       "pct1"
+      ],
+      [
+       "Objetivo de beverage cost (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Margen de contribución del mes (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Peso sobre las ventas de bodega (%)",
+       "G",
+       "pct1"
+      ],
+      [
+       "Margen que ganarías si llegaras al objetivo (€/mes)",
+       "H",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      8
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -26,6 +26,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Kit Gestión de Personal y Turnos': '/kit-gestion-personal',
   'Guía Cómo Montar una Dark Kitchen': '/guia-dark-kitchen',
   'Guía Restaurante Gastronómico': '/guia-restaurante-gastronomico',
+  'Guía Food Cost + Ingeniería de Menú': '/guia-food-cost-ingenieria-menu',
   'Guía Restaurante Casual': '/guia-restaurante-casual',
   'Mega Pack Tareas': '/mega-pack-tareas',
 };

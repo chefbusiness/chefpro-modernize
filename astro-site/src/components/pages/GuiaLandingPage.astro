@@ -310,37 +310,42 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
   </section>
 
   {/* ===== 5. TestimonialsMarquee ===== */}
-  <section class="py-16 md:py-24 overflow-hidden">
-    <div class="text-center mb-10 px-4">
-      <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">Lo Que Dicen los <span class="text-[#FFD700]">{data.testimonials.titleGold}</span></h2>
-      <p class="text-gray-400 text-lg max-w-2xl mx-auto">{data.testimonials.subtitle}</p>
-    </div>
-    <div class="space-y-4">
-      {[{ items: topRow, direction: 'left', duration: 45 }, { items: bottomRow, direction: 'right', duration: 50 }].map((row) => (
-        <div class="overflow-hidden relative">
-          <div class="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div class="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div class="flex gap-4 will-change-transform" data-marquee data-direction={row.direction} data-duration={row.duration}>
-            {[...row.items, ...row.items].map((t) => (
-              <div class="flex-shrink-0 w-[300px] md:w-[360px] relative group">
-                <div class="absolute inset-0 rounded-xl bg-[#FFD700]/20 translate-y-1 translate-x-1 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                <div class="relative bg-[#0a0a0a] border border-white/10 rounded-xl p-5 group-hover:border-[#FFD700]/40 group-hover:-translate-y-0.5 group-hover:-translate-x-0.5 transition-all duration-300">
-                  <div class="flex items-center gap-3 mb-3">
-                    <img src={t.avatar} alt={t.name} class="w-10 h-10 rounded-full object-cover border border-white/10" />
-                    <div>
-                      <p class="text-white font-semibold text-sm">{t.name}</p>
-                      <p class="text-gray-500 text-xs">{t.role}</p>
+  {/* D3 (2026-09-03): un producto recién lanzado no tiene testimonios reales.
+     Con testimonials.items vacío la sección entera NO se pinta; las 8 guías con
+     testimonios no cambian una coma. */}
+  {data.testimonials.items.length > 0 && (
+    <section class="py-16 md:py-24 overflow-hidden">
+      <div class="text-center mb-10 px-4">
+        <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">Lo Que Dicen los <span class="text-[#FFD700]">{data.testimonials.titleGold}</span></h2>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">{data.testimonials.subtitle}</p>
+      </div>
+      <div class="space-y-4">
+        {[{ items: topRow, direction: 'left', duration: 45 }, { items: bottomRow, direction: 'right', duration: 50 }].map((row) => (
+          <div class="overflow-hidden relative">
+            <div class="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+            <div class="flex gap-4 will-change-transform" data-marquee data-direction={row.direction} data-duration={row.duration}>
+              {[...row.items, ...row.items].map((t) => (
+                <div class="flex-shrink-0 w-[300px] md:w-[360px] relative group">
+                  <div class="absolute inset-0 rounded-xl bg-[#FFD700]/20 translate-y-1 translate-x-1 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-xl p-5 group-hover:border-[#FFD700]/40 group-hover:-translate-y-0.5 group-hover:-translate-x-0.5 transition-all duration-300">
+                    <div class="flex items-center gap-3 mb-3">
+                      <img src={t.avatar} alt={t.name} class="w-10 h-10 rounded-full object-cover border border-white/10" />
+                      <div>
+                        <p class="text-white font-semibold text-sm">{t.name}</p>
+                        <p class="text-gray-500 text-xs">{t.role}</p>
+                      </div>
                     </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">"{t.text}"</p>
                   </div>
-                  <p class="text-gray-300 text-sm leading-relaxed">"{t.text}"</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </section>
+        ))}
+      </div>
+    </section>
+  )}
 
   {/* ===== 6. WhySection ===== */}
   <section class="py-16 md:py-24 px-4 relative overflow-hidden">
@@ -422,7 +427,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
                       <Icon name={b.icon} class="w-5 h-5 text-[#FFD700]" />
                       <h3 class="text-white font-bold text-sm">{b.title}</h3>
                     </div>
-                    <p class="text-gray-500 text-xs mb-2">Valor: {b.value}</p>
+                    <p class="text-gray-500 text-xs mb-2">{/\d/.test(b.value) ? `Valor: ${b.value}` : b.value}</p>
                     <p class="text-gray-400 text-xs leading-relaxed">{b.desc}</p>
                   </div>
                 </div>
@@ -443,7 +448,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
                       <Icon name={b.icon} class="w-5 h-5 text-[#FFD700]" />
                       <h3 class="text-white font-bold text-sm">{b.title}</h3>
                     </div>
-                    <p class="text-gray-500 text-xs mb-2">Valor: {b.value}</p>
+                    <p class="text-gray-500 text-xs mb-2">{/\d/.test(b.value) ? `Valor: ${b.value}` : b.value}</p>
                     <p class="text-gray-400 text-xs leading-relaxed">{b.desc}</p>
                   </div>
                 </div>
@@ -466,7 +471,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
                     <Icon name={b.icon} class="w-5 h-5 text-[#FFD700]" />
                     <h3 class="text-white font-bold text-sm">{b.title}</h3>
                   </div>
-                  <p class="text-gray-500 text-xs mb-2">Valor: {b.value}</p>
+                  <p class="text-gray-500 text-xs mb-2">{/\d/.test(b.value) ? `Valor: ${b.value}` : b.value}</p>
                   <p class="text-gray-400 text-xs leading-relaxed">{b.desc}</p>
                 </div>
               </div>

@@ -24,6 +24,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
   'kit-plan-financiero': { accessPath: '/kit-plan-financiero-access', label: 'Kit Plan Financiero' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
+  'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },
   'guia-restaurante-casual': { accessPath: '/guia-restaurante-casual-access', label: 'Guía Restaurante Casual' },
   'guia-restaurante-mexicano': { accessPath: '/guia-restaurante-mexicano-access', label: 'Guía Restaurante Mexicano' },
   'guia-restaurante-peruano': { accessPath: '/guia-restaurante-peruano-access', label: 'Guía Restaurante Peruano' },

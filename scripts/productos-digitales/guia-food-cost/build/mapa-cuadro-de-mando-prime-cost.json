@@ -1,0 +1,252 @@
+{
+ "fichero": "cuadro-de-mando-prime-cost.xlsx",
+ "hojas": {
+  "Parámetros": {
+   "celdas": {
+    "Tipo de negocio elegido": "B5",
+    "Objetivo de prime cost con servicio en mesa": "B8",
+    "Objetivo de prime cost en barra o autoservicio": "B9",
+    "Objetivo de prime cost en vigor": "B11",
+    "Seguridad Social a cargo de la empresa": "B20",
+    "Food cost objetivo": "B21"
+   },
+   "tablas": [
+    {
+     "titulo": "Objetivo de prime cost por tipo de negocio",
+     "cols": [
+      [
+       "Tipo de negocio",
+       "A",
+       "txt"
+      ],
+      [
+       "Objetivo de prime cost (%)",
+       "B",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      8,
+      9
+     ]
+    }
+   ]
+  },
+  "Mensual": {
+   "celdas": {
+    "Ventas netas de comida del año": "B17",
+    "Ventas netas de bebida del año": "C17",
+    "Ventas netas totales del año": "D17",
+    "Compras del año": "F17",
+    "Consumo de materia prima del año": "H17",
+    "Coste de materia prima sobre ventas totales del año (ponderado)": "I17",
+    "Salarios brutos del año": "J17",
+    "Otros costes de personal del año": "K17",
+    "Coste de personal con Seguridad Social del año": "L17",
+    "Labor cost del año (ponderado)": "M17",
+    "Prime cost del año (ponderado)": "N17",
+    "Objetivo de prime cost en vigor (espejo)": "O17",
+    "Margen tras prime cost del año": "P17",
+    "Margen tras prime cost del año (%)": "Q17",
+    "Lectura del prime cost del año": "R17",
+    "Ventas netas totales de Enero": "D5",
+    "Consumo de materia prima de Enero": "H5",
+    "Coste de materia prima sobre ventas totales de Enero": "I5",
+    "Coste de personal con SS de Enero": "L5",
+    "Labor cost de Enero": "M5",
+    "Prime cost de Enero": "N5",
+    "Margen tras prime cost de Enero": "P5",
+    "Lectura del prime cost de Enero": "R5",
+    "Ventas netas totales de Febrero": "D6",
+    "Consumo de materia prima de Febrero": "H6",
+    "Coste de materia prima sobre ventas totales de Febrero": "I6",
+    "Coste de personal con SS de Febrero": "L6",
+    "Labor cost de Febrero": "M6",
+    "Prime cost de Febrero": "N6",
+    "Margen tras prime cost de Febrero": "P6",
+    "Lectura del prime cost de Febrero": "R6",
+    "Ventas netas totales de Marzo": "D7",
+    "Consumo de materia prima de Marzo": "H7",
+    "Coste de materia prima sobre ventas totales de Marzo": "I7",
+    "Coste de personal con SS de Marzo": "L7",
+    "Labor cost de Marzo": "M7",
+    "Prime cost de Marzo": "N7",
+    "Margen tras prime cost de Marzo": "P7",
+    "Lectura del prime cost de Marzo": "R7",
+    "Ventas netas totales de Abril": "D8",
+    "Consumo de materia prima de Abril": "H8",
+    "Coste de materia prima sobre ventas totales de Abril": "I8",
+    "Coste de personal con SS de Abril": "L8",
+    "Labor cost de Abril": "M8",
+    "Prime cost de Abril": "N8",
+    "Margen tras prime cost de Abril": "P8",
+    "Lectura del prime cost de Abril": "R8",
+    "Ventas netas totales de Mayo": "D9",
+    "Consumo de materia prima de Mayo": "H9",
+    "Coste de materia prima sobre ventas totales de Mayo": "I9",
+    "Coste de personal con SS de Mayo": "L9",
+    "Labor cost de Mayo": "M9",
+    "Prime cost de Mayo": "N9",
+    "Margen tras prime cost de Mayo": "P9",
+    "Lectura del prime cost de Mayo": "R9",
+    "Ventas netas totales de Junio": "D10",
+    "Consumo de materia prima de Junio": "H10",
+    "Coste de materia prima sobre ventas totales de Junio": "I10",
+    "Coste de personal con SS de Junio": "L10",
+    "Labor cost de Junio": "M10",
+    "Prime cost de Junio": "N10",
+    "Margen tras prime cost de Junio": "P10",
+    "Lectura del prime cost de Junio": "R10",
+    "Ventas netas totales de Julio": "D11",
+    "Consumo de materia prima de Julio": "H11",
+    "Coste de materia prima sobre ventas totales de Julio": "I11",
+    "Coste de personal con SS de Julio": "L11",
+    "Labor cost de Julio": "M11",
+    "Prime cost de Julio": "N11",
+    "Margen tras prime cost de Julio": "P11",
+    "Lectura del prime cost de Julio": "R11",
+    "Ventas netas totales de Agosto": "D12",
+    "Consumo de materia prima de Agosto": "H12",
+    "Coste de materia prima sobre ventas totales de Agosto": "I12",
+    "Coste de personal con SS de Agosto": "L12",
+    "Labor cost de Agosto": "M12",
+    "Prime cost de Agosto": "N12",
+    "Margen tras prime cost de Agosto": "P12",
+    "Lectura del prime cost de Agosto": "R12",
+    "Ventas netas totales de Septiembre": "D13",
+    "Consumo de materia prima de Septiembre": "H13",
+    "Coste de materia prima sobre ventas totales de Septiembre": "I13",
+    "Coste de personal con SS de Septiembre": "L13",
+    "Labor cost de Septiembre": "M13",
+    "Prime cost de Septiembre": "N13",
+    "Margen tras prime cost de Septiembre": "P13",
+    "Lectura del prime cost de Septiembre": "R13",
+    "Ventas netas totales de Octubre": "D14",
+    "Consumo de materia prima de Octubre": "H14",
+    "Coste de materia prima sobre ventas totales de Octubre": "I14",
+    "Coste de personal con SS de Octubre": "L14",
+    "Labor cost de Octubre": "M14",
+    "Prime cost de Octubre": "N14",
+    "Margen tras prime cost de Octubre": "P14",
+    "Lectura del prime cost de Octubre": "R14",
+    "Ventas netas totales de Noviembre": "D15",
+    "Consumo de materia prima de Noviembre": "H15",
+    "Coste de materia prima sobre ventas totales de Noviembre": "I15",
+    "Coste de personal con SS de Noviembre": "L15",
+    "Labor cost de Noviembre": "M15",
+    "Prime cost de Noviembre": "N15",
+    "Margen tras prime cost de Noviembre": "P15",
+    "Lectura del prime cost de Noviembre": "R15",
+    "Ventas netas totales de Diciembre": "D16",
+    "Consumo de materia prima de Diciembre": "H16",
+    "Coste de materia prima sobre ventas totales de Diciembre": "I16",
+    "Coste de personal con SS de Diciembre": "L16",
+    "Labor cost de Diciembre": "M16",
+    "Prime cost de Diciembre": "N16",
+    "Margen tras prime cost de Diciembre": "P16",
+    "Lectura del prime cost de Diciembre": "R16"
+   },
+   "tablas": [
+    {
+     "titulo": "Cuadro de mando mensual del prime cost",
+     "cols": [
+      [
+       "Mes",
+       "A",
+       "txt"
+      ],
+      [
+       "Ventas netas de comida (€)",
+       "B",
+       "eur"
+      ],
+      [
+       "Ventas netas de bebida (€)",
+       "C",
+       "eur"
+      ],
+      [
+       "Ventas netas totales (€)",
+       "D",
+       "eur"
+      ],
+      [
+       "Stock inicial de materia prima (€)",
+       "E",
+       "eur"
+      ],
+      [
+       "Compras del mes (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Stock final de materia prima (€)",
+       "G",
+       "eur"
+      ],
+      [
+       "Consumo de materia prima (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "Coste de materia prima sobre ventas totales (%)",
+       "I",
+       "pct1"
+      ],
+      [
+       "Salarios brutos (€)",
+       "J",
+       "eur"
+      ],
+      [
+       "Otros costes de personal (€)",
+       "K",
+       "eur"
+      ],
+      [
+       "Coste de personal con Seguridad Social (€)",
+       "L",
+       "eur"
+      ],
+      [
+       "Labor cost (%)",
+       "M",
+       "pct1"
+      ],
+      [
+       "Prime cost (%)",
+       "N",
+       "pct1"
+      ],
+      [
+       "Objetivo de prime cost (%)",
+       "O",
+       "pct1"
+      ],
+      [
+       "Margen tras prime cost (€)",
+       "P",
+       "eur"
+      ],
+      [
+       "Margen tras prime cost (%)",
+       "Q",
+       "pct1"
+      ],
+      [
+       "Lectura del prime cost",
+       "R",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      17
+     ]
+    }
+   ]
+  }
+ }
+}

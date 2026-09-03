@@ -1,0 +1,747 @@
+{
+ "fichero": "simulador-repricing-multicanal.xlsx",
+ "hojas": {
+  "Parámetros": {
+   "celdas": {
+    "IVA repercutido en sala, comida": "B6",
+    "IVA repercutido en sala, refresco azucarado": "C6",
+    "IVA repercutido en sala, bebida alcohólica": "D6",
+    "IVA repercutido en take away, comida": "B7",
+    "IVA repercutido en take away, refresco azucarado": "C7",
+    "IVA repercutido en take away, bebida alcohólica": "D7",
+    "IVA repercutido en delivery, comida": "B8",
+    "IVA repercutido en delivery, refresco azucarado": "C8",
+    "IVA repercutido en delivery, bebida alcohólica": "D8",
+    "Comisión de la plataforma en sala": "B16",
+    "Comisión de la plataforma en take away": "B17",
+    "Comisión de la plataforma en delivery": "B18",
+    "Packaging por pedido en take away": "C17",
+    "Packaging por pedido en delivery": "C18",
+    "Platos por pedido en take away": "D17",
+    "Platos por pedido en delivery": "D18",
+    "Food cost objetivo en sala": "E16",
+    "Food cost objetivo en take away": "E17",
+    "Food cost objetivo en delivery": "E18",
+    "Packaging por plato en sala": "F16",
+    "Packaging por plato en take away": "F17",
+    "Packaging por plato en delivery": "F18"
+   },
+   "tablas": [
+    {
+     "titulo": "Matriz de IVA repercutido por canal y tipo de producto",
+     "cols": [
+      [
+       "Canal",
+       "A",
+       "txt"
+      ],
+      [
+       "Comida",
+       "B",
+       "pct1"
+      ],
+      [
+       "Refresco/azucarada",
+       "C",
+       "pct1"
+      ],
+      [
+       "Bebida alcohólica",
+       "D",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      6,
+      8
+     ]
+    },
+    {
+     "titulo": "Parámetros del simulador por canal",
+     "cols": [
+      [
+       "Canal",
+       "A",
+       "txt"
+      ],
+      [
+       "Comisión de la plataforma (%)",
+       "B",
+       "pct1"
+      ],
+      [
+       "Packaging (€/pedido)",
+       "C",
+       "eur"
+      ],
+      [
+       "Platos por pedido (n.º)",
+       "D",
+       "num1"
+      ],
+      [
+       "Food cost objetivo (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Packaging por plato (€)",
+       "F",
+       "eur"
+      ]
+     ],
+     "filas": [
+      16,
+      18
+     ]
+    },
+    {
+     "titulo": "Comisiones de las plataformas — orden de magnitud",
+     "cols": [
+      [
+       "Plataforma",
+       "A",
+       "txt"
+      ],
+      [
+       "Comisión y cuotas de referencia",
+       "B",
+       "txt"
+      ]
+     ],
+     "filas": [
+      24,
+      27
+     ]
+    }
+   ]
+  },
+  "Carta": {
+   "celdas": {
+    "Unidades vendidas al mes, total de la carta": "G30",
+    "Food cost efectivo medio en sala": "H30",
+    "Margen mensual total en sala": "N30",
+    "Food cost efectivo medio en take away": "O30",
+    "Margen mensual total en take away": "U30",
+    "Food cost efectivo medio en delivery": "V30",
+    "Margen mensual total en delivery": "AB30",
+    "Coste por ración de Croquetas de jamón ibérico (6 ud)": "C5",
+    "PVP en sala sin IVA de Croquetas de jamón ibérico (6 ud)": "D5",
+    "Food cost efectivo en sala de Croquetas de jamón ibérico (6 ud)": "H5",
+    "PVP sin IVA necesario en sala de Croquetas de jamón ibérico (6 ud)": "I5",
+    "PVP con IVA en sala de Croquetas de jamón ibérico (6 ud)": "J5",
+    "¿Viable en sala? Croquetas de jamón ibérico (6 ud)": "K5",
+    "Margen mensual en sala de Croquetas de jamón ibérico (6 ud)": "N5",
+    "Food cost efectivo en take away de Croquetas de jamón ibérico (6 ud)": "O5",
+    "PVP sin IVA necesario en take away de Croquetas de jamón ibérico (6 ud)": "P5",
+    "PVP con IVA en take away de Croquetas de jamón ibérico (6 ud)": "Q5",
+    "¿Viable en take away? Croquetas de jamón ibérico (6 ud)": "R5",
+    "Margen mensual en take away de Croquetas de jamón ibérico (6 ud)": "U5",
+    "Food cost efectivo en delivery de Croquetas de jamón ibérico (6 ud)": "V5",
+    "PVP sin IVA necesario en delivery de Croquetas de jamón ibérico (6 ud)": "W5",
+    "PVP con IVA en delivery de Croquetas de jamón ibérico (6 ud)": "X5",
+    "¿Viable en delivery? Croquetas de jamón ibérico (6 ud)": "Y5",
+    "Margen mensual en delivery de Croquetas de jamón ibérico (6 ud)": "AB5",
+    "Coste por ración de Ensalada de tomate rosa, ventresca y cebolleta": "C6",
+    "PVP en sala sin IVA de Ensalada de tomate rosa, ventresca y cebolleta": "D6",
+    "Food cost efectivo en sala de Ensalada de tomate rosa, ventresca y cebolleta": "H6",
+    "PVP sin IVA necesario en sala de Ensalada de tomate rosa, ventresca y cebolleta": "I6",
+    "PVP con IVA en sala de Ensalada de tomate rosa, ventresca y cebolleta": "J6",
+    "¿Viable en sala? Ensalada de tomate rosa, ventresca y cebolleta": "K6",
+    "Margen mensual en sala de Ensalada de tomate rosa, ventresca y cebolleta": "N6",
+    "Food cost efectivo en take away de Ensalada de tomate rosa, ventresca y cebolleta": "O6",
+    "PVP sin IVA necesario en take away de Ensalada de tomate rosa, ventresca y cebolleta": "P6",
+    "PVP con IVA en take away de Ensalada de tomate rosa, ventresca y cebolleta": "Q6",
+    "¿Viable en take away? Ensalada de tomate rosa, ventresca y cebolleta": "R6",
+    "Margen mensual en take away de Ensalada de tomate rosa, ventresca y cebolleta": "U6",
+    "Food cost efectivo en delivery de Ensalada de tomate rosa, ventresca y cebolleta": "V6",
+    "PVP sin IVA necesario en delivery de Ensalada de tomate rosa, ventresca y cebolleta": "W6",
+    "PVP con IVA en delivery de Ensalada de tomate rosa, ventresca y cebolleta": "X6",
+    "¿Viable en delivery? Ensalada de tomate rosa, ventresca y cebolleta": "Y6",
+    "Margen mensual en delivery de Ensalada de tomate rosa, ventresca y cebolleta": "AB6",
+    "Coste por ración de Gambas al ajillo": "C7",
+    "PVP en sala sin IVA de Gambas al ajillo": "D7",
+    "Food cost efectivo en sala de Gambas al ajillo": "H7",
+    "PVP sin IVA necesario en sala de Gambas al ajillo": "I7",
+    "PVP con IVA en sala de Gambas al ajillo": "J7",
+    "¿Viable en sala? Gambas al ajillo": "K7",
+    "Margen mensual en sala de Gambas al ajillo": "N7",
+    "Food cost efectivo en take away de Gambas al ajillo": "O7",
+    "PVP sin IVA necesario en take away de Gambas al ajillo": "P7",
+    "PVP con IVA en take away de Gambas al ajillo": "Q7",
+    "¿Viable en take away? Gambas al ajillo": "R7",
+    "Margen mensual en take away de Gambas al ajillo": "U7",
+    "Food cost efectivo en delivery de Gambas al ajillo": "V7",
+    "PVP sin IVA necesario en delivery de Gambas al ajillo": "W7",
+    "PVP con IVA en delivery de Gambas al ajillo": "X7",
+    "¿Viable en delivery? Gambas al ajillo": "Y7",
+    "Margen mensual en delivery de Gambas al ajillo": "AB7",
+    "Coste por ración de Huevos rotos con patatas y chistorra": "C8",
+    "PVP en sala sin IVA de Huevos rotos con patatas y chistorra": "D8",
+    "Food cost efectivo en sala de Huevos rotos con patatas y chistorra": "H8",
+    "PVP sin IVA necesario en sala de Huevos rotos con patatas y chistorra": "I8",
+    "PVP con IVA en sala de Huevos rotos con patatas y chistorra": "J8",
+    "¿Viable en sala? Huevos rotos con patatas y chistorra": "K8",
+    "Margen mensual en sala de Huevos rotos con patatas y chistorra": "N8",
+    "Food cost efectivo en take away de Huevos rotos con patatas y chistorra": "O8",
+    "PVP sin IVA necesario en take away de Huevos rotos con patatas y chistorra": "P8",
+    "PVP con IVA en take away de Huevos rotos con patatas y chistorra": "Q8",
+    "¿Viable en take away? Huevos rotos con patatas y chistorra": "R8",
+    "Margen mensual en take away de Huevos rotos con patatas y chistorra": "U8",
+    "Food cost efectivo en delivery de Huevos rotos con patatas y chistorra": "V8",
+    "PVP sin IVA necesario en delivery de Huevos rotos con patatas y chistorra": "W8",
+    "PVP con IVA en delivery de Huevos rotos con patatas y chistorra": "X8",
+    "¿Viable en delivery? Huevos rotos con patatas y chistorra": "Y8",
+    "Margen mensual en delivery de Huevos rotos con patatas y chistorra": "AB8",
+    "Coste por ración de Tabla de quesos de la zona": "C9",
+    "PVP en sala sin IVA de Tabla de quesos de la zona": "D9",
+    "Food cost efectivo en sala de Tabla de quesos de la zona": "H9",
+    "PVP sin IVA necesario en sala de Tabla de quesos de la zona": "I9",
+    "PVP con IVA en sala de Tabla de quesos de la zona": "J9",
+    "¿Viable en sala? Tabla de quesos de la zona": "K9",
+    "Margen mensual en sala de Tabla de quesos de la zona": "N9",
+    "Food cost efectivo en take away de Tabla de quesos de la zona": "O9",
+    "PVP sin IVA necesario en take away de Tabla de quesos de la zona": "P9",
+    "PVP con IVA en take away de Tabla de quesos de la zona": "Q9",
+    "¿Viable en take away? Tabla de quesos de la zona": "R9",
+    "Margen mensual en take away de Tabla de quesos de la zona": "U9",
+    "Food cost efectivo en delivery de Tabla de quesos de la zona": "V9",
+    "PVP sin IVA necesario en delivery de Tabla de quesos de la zona": "W9",
+    "PVP con IVA en delivery de Tabla de quesos de la zona": "X9",
+    "¿Viable en delivery? Tabla de quesos de la zona": "Y9",
+    "Margen mensual en delivery de Tabla de quesos de la zona": "AB9",
+    "Coste por ración de Alcachofas confitadas con jamón": "C10",
+    "PVP en sala sin IVA de Alcachofas confitadas con jamón": "D10",
+    "Food cost efectivo en sala de Alcachofas confitadas con jamón": "H10",
+    "PVP sin IVA necesario en sala de Alcachofas confitadas con jamón": "I10",
+    "PVP con IVA en sala de Alcachofas confitadas con jamón": "J10",
+    "¿Viable en sala? Alcachofas confitadas con jamón": "K10",
+    "Margen mensual en sala de Alcachofas confitadas con jamón": "N10",
+    "Food cost efectivo en take away de Alcachofas confitadas con jamón": "O10",
+    "PVP sin IVA necesario en take away de Alcachofas confitadas con jamón": "P10",
+    "PVP con IVA en take away de Alcachofas confitadas con jamón": "Q10",
+    "¿Viable en take away? Alcachofas confitadas con jamón": "R10",
+    "Margen mensual en take away de Alcachofas confitadas con jamón": "U10",
+    "Food cost efectivo en delivery de Alcachofas confitadas con jamón": "V10",
+    "PVP sin IVA necesario en delivery de Alcachofas confitadas con jamón": "W10",
+    "PVP con IVA en delivery de Alcachofas confitadas con jamón": "X10",
+    "¿Viable en delivery? Alcachofas confitadas con jamón": "Y10",
+    "Margen mensual en delivery de Alcachofas confitadas con jamón": "AB10",
+    "Coste por ración de Sopa de tomate asado con albahaca": "C11",
+    "PVP en sala sin IVA de Sopa de tomate asado con albahaca": "D11",
+    "Food cost efectivo en sala de Sopa de tomate asado con albahaca": "H11",
+    "PVP sin IVA necesario en sala de Sopa de tomate asado con albahaca": "I11",
+    "PVP con IVA en sala de Sopa de tomate asado con albahaca": "J11",
+    "¿Viable en sala? Sopa de tomate asado con albahaca": "K11",
+    "Margen mensual en sala de Sopa de tomate asado con albahaca": "N11",
+    "Food cost efectivo en take away de Sopa de tomate asado con albahaca": "O11",
+    "PVP sin IVA necesario en take away de Sopa de tomate asado con albahaca": "P11",
+    "PVP con IVA en take away de Sopa de tomate asado con albahaca": "Q11",
+    "¿Viable en take away? Sopa de tomate asado con albahaca": "R11",
+    "Margen mensual en take away de Sopa de tomate asado con albahaca": "U11",
+    "Food cost efectivo en delivery de Sopa de tomate asado con albahaca": "V11",
+    "PVP sin IVA necesario en delivery de Sopa de tomate asado con albahaca": "W11",
+    "PVP con IVA en delivery de Sopa de tomate asado con albahaca": "X11",
+    "¿Viable en delivery? Sopa de tomate asado con albahaca": "Y11",
+    "Margen mensual en delivery de Sopa de tomate asado con albahaca": "AB11",
+    "Coste por ración de Solomillo de cerdo ibérico con puré de boniato": "C12",
+    "PVP en sala sin IVA de Solomillo de cerdo ibérico con puré de boniato": "D12",
+    "Food cost efectivo en sala de Solomillo de cerdo ibérico con puré de boniato": "H12",
+    "PVP sin IVA necesario en sala de Solomillo de cerdo ibérico con puré de boniato": "I12",
+    "PVP con IVA en sala de Solomillo de cerdo ibérico con puré de boniato": "J12",
+    "¿Viable en sala? Solomillo de cerdo ibérico con puré de boniato": "K12",
+    "Margen mensual en sala de Solomillo de cerdo ibérico con puré de boniato": "N12",
+    "Food cost efectivo en take away de Solomillo de cerdo ibérico con puré de boniato": "O12",
+    "PVP sin IVA necesario en take away de Solomillo de cerdo ibérico con puré de boniato": "P12",
+    "PVP con IVA en take away de Solomillo de cerdo ibérico con puré de boniato": "Q12",
+    "¿Viable en take away? Solomillo de cerdo ibérico con puré de boniato": "R12",
+    "Margen mensual en take away de Solomillo de cerdo ibérico con puré de boniato": "U12",
+    "Food cost efectivo en delivery de Solomillo de cerdo ibérico con puré de boniato": "V12",
+    "PVP sin IVA necesario en delivery de Solomillo de cerdo ibérico con puré de boniato": "W12",
+    "PVP con IVA en delivery de Solomillo de cerdo ibérico con puré de boniato": "X12",
+    "¿Viable en delivery? Solomillo de cerdo ibérico con puré de boniato": "Y12",
+    "Margen mensual en delivery de Solomillo de cerdo ibérico con puré de boniato": "AB12",
+    "Coste por ración de Bacalao confitado al pil-pil": "C13",
+    "PVP en sala sin IVA de Bacalao confitado al pil-pil": "D13",
+    "Food cost efectivo en sala de Bacalao confitado al pil-pil": "H13",
+    "PVP sin IVA necesario en sala de Bacalao confitado al pil-pil": "I13",
+    "PVP con IVA en sala de Bacalao confitado al pil-pil": "J13",
+    "¿Viable en sala? Bacalao confitado al pil-pil": "K13",
+    "Margen mensual en sala de Bacalao confitado al pil-pil": "N13",
+    "Food cost efectivo en take away de Bacalao confitado al pil-pil": "O13",
+    "PVP sin IVA necesario en take away de Bacalao confitado al pil-pil": "P13",
+    "PVP con IVA en take away de Bacalao confitado al pil-pil": "Q13",
+    "¿Viable en take away? Bacalao confitado al pil-pil": "R13",
+    "Margen mensual en take away de Bacalao confitado al pil-pil": "U13",
+    "Food cost efectivo en delivery de Bacalao confitado al pil-pil": "V13",
+    "PVP sin IVA necesario en delivery de Bacalao confitado al pil-pil": "W13",
+    "PVP con IVA en delivery de Bacalao confitado al pil-pil": "X13",
+    "¿Viable en delivery? Bacalao confitado al pil-pil": "Y13",
+    "Margen mensual en delivery de Bacalao confitado al pil-pil": "AB13",
+    "Coste por ración de Hamburguesa de vaca madurada con patatas": "C14",
+    "PVP en sala sin IVA de Hamburguesa de vaca madurada con patatas": "D14",
+    "Food cost efectivo en sala de Hamburguesa de vaca madurada con patatas": "H14",
+    "PVP sin IVA necesario en sala de Hamburguesa de vaca madurada con patatas": "I14",
+    "PVP con IVA en sala de Hamburguesa de vaca madurada con patatas": "J14",
+    "¿Viable en sala? Hamburguesa de vaca madurada con patatas": "K14",
+    "Margen mensual en sala de Hamburguesa de vaca madurada con patatas": "N14",
+    "Food cost efectivo en take away de Hamburguesa de vaca madurada con patatas": "O14",
+    "PVP sin IVA necesario en take away de Hamburguesa de vaca madurada con patatas": "P14",
+    "PVP con IVA en take away de Hamburguesa de vaca madurada con patatas": "Q14",
+    "¿Viable en take away? Hamburguesa de vaca madurada con patatas": "R14",
+    "Margen mensual en take away de Hamburguesa de vaca madurada con patatas": "U14",
+    "Food cost efectivo en delivery de Hamburguesa de vaca madurada con patatas": "V14",
+    "PVP sin IVA necesario en delivery de Hamburguesa de vaca madurada con patatas": "W14",
+    "PVP con IVA en delivery de Hamburguesa de vaca madurada con patatas": "X14",
+    "¿Viable en delivery? Hamburguesa de vaca madurada con patatas": "Y14",
+    "Margen mensual en delivery de Hamburguesa de vaca madurada con patatas": "AB14",
+    "Coste por ración de Arroz meloso de secreto ibérico y setas": "C15",
+    "PVP en sala sin IVA de Arroz meloso de secreto ibérico y setas": "D15",
+    "Food cost efectivo en sala de Arroz meloso de secreto ibérico y setas": "H15",
+    "PVP sin IVA necesario en sala de Arroz meloso de secreto ibérico y setas": "I15",
+    "PVP con IVA en sala de Arroz meloso de secreto ibérico y setas": "J15",
+    "¿Viable en sala? Arroz meloso de secreto ibérico y setas": "K15",
+    "Margen mensual en sala de Arroz meloso de secreto ibérico y setas": "N15",
+    "Food cost efectivo en take away de Arroz meloso de secreto ibérico y setas": "O15",
+    "PVP sin IVA necesario en take away de Arroz meloso de secreto ibérico y setas": "P15",
+    "PVP con IVA en take away de Arroz meloso de secreto ibérico y setas": "Q15",
+    "¿Viable en take away? Arroz meloso de secreto ibérico y setas": "R15",
+    "Margen mensual en take away de Arroz meloso de secreto ibérico y setas": "U15",
+    "Food cost efectivo en delivery de Arroz meloso de secreto ibérico y setas": "V15",
+    "PVP sin IVA necesario en delivery de Arroz meloso de secreto ibérico y setas": "W15",
+    "PVP con IVA en delivery de Arroz meloso de secreto ibérico y setas": "X15",
+    "¿Viable en delivery? Arroz meloso de secreto ibérico y setas": "Y15",
+    "Margen mensual en delivery de Arroz meloso de secreto ibérico y setas": "AB15",
+    "Coste por ración de Chuletón de vaca madurada (500 g)": "C16",
+    "PVP en sala sin IVA de Chuletón de vaca madurada (500 g)": "D16",
+    "Food cost efectivo en sala de Chuletón de vaca madurada (500 g)": "H16",
+    "PVP sin IVA necesario en sala de Chuletón de vaca madurada (500 g)": "I16",
+    "PVP con IVA en sala de Chuletón de vaca madurada (500 g)": "J16",
+    "¿Viable en sala? Chuletón de vaca madurada (500 g)": "K16",
+    "Margen mensual en sala de Chuletón de vaca madurada (500 g)": "N16",
+    "Food cost efectivo en take away de Chuletón de vaca madurada (500 g)": "O16",
+    "PVP sin IVA necesario en take away de Chuletón de vaca madurada (500 g)": "P16",
+    "PVP con IVA en take away de Chuletón de vaca madurada (500 g)": "Q16",
+    "¿Viable en take away? Chuletón de vaca madurada (500 g)": "R16",
+    "Margen mensual en take away de Chuletón de vaca madurada (500 g)": "U16",
+    "Food cost efectivo en delivery de Chuletón de vaca madurada (500 g)": "V16",
+    "PVP sin IVA necesario en delivery de Chuletón de vaca madurada (500 g)": "W16",
+    "PVP con IVA en delivery de Chuletón de vaca madurada (500 g)": "X16",
+    "¿Viable en delivery? Chuletón de vaca madurada (500 g)": "Y16",
+    "Margen mensual en delivery de Chuletón de vaca madurada (500 g)": "AB16",
+    "Coste por ración de Lubina a la sal": "C17",
+    "PVP en sala sin IVA de Lubina a la sal": "D17",
+    "Food cost efectivo en sala de Lubina a la sal": "H17",
+    "PVP sin IVA necesario en sala de Lubina a la sal": "I17",
+    "PVP con IVA en sala de Lubina a la sal": "J17",
+    "¿Viable en sala? Lubina a la sal": "K17",
+    "Margen mensual en sala de Lubina a la sal": "N17",
+    "Food cost efectivo en take away de Lubina a la sal": "O17",
+    "PVP sin IVA necesario en take away de Lubina a la sal": "P17",
+    "PVP con IVA en take away de Lubina a la sal": "Q17",
+    "¿Viable en take away? Lubina a la sal": "R17",
+    "Margen mensual en take away de Lubina a la sal": "U17",
+    "Food cost efectivo en delivery de Lubina a la sal": "V17",
+    "PVP sin IVA necesario en delivery de Lubina a la sal": "W17",
+    "PVP con IVA en delivery de Lubina a la sal": "X17",
+    "¿Viable en delivery? Lubina a la sal": "Y17",
+    "Margen mensual en delivery de Lubina a la sal": "AB17",
+    "Coste por ración de Pollo de corral asado con patatas": "C18",
+    "PVP en sala sin IVA de Pollo de corral asado con patatas": "D18",
+    "Food cost efectivo en sala de Pollo de corral asado con patatas": "H18",
+    "PVP sin IVA necesario en sala de Pollo de corral asado con patatas": "I18",
+    "PVP con IVA en sala de Pollo de corral asado con patatas": "J18",
+    "¿Viable en sala? Pollo de corral asado con patatas": "K18",
+    "Margen mensual en sala de Pollo de corral asado con patatas": "N18",
+    "Food cost efectivo en take away de Pollo de corral asado con patatas": "O18",
+    "PVP sin IVA necesario en take away de Pollo de corral asado con patatas": "P18",
+    "PVP con IVA en take away de Pollo de corral asado con patatas": "Q18",
+    "¿Viable en take away? Pollo de corral asado con patatas": "R18",
+    "Margen mensual en take away de Pollo de corral asado con patatas": "U18",
+    "Food cost efectivo en delivery de Pollo de corral asado con patatas": "V18",
+    "PVP sin IVA necesario en delivery de Pollo de corral asado con patatas": "W18",
+    "PVP con IVA en delivery de Pollo de corral asado con patatas": "X18",
+    "¿Viable en delivery? Pollo de corral asado con patatas": "Y18",
+    "Margen mensual en delivery de Pollo de corral asado con patatas": "AB18",
+    "Coste por ración de Lasaña de verduras de temporada": "C19",
+    "PVP en sala sin IVA de Lasaña de verduras de temporada": "D19",
+    "Food cost efectivo en sala de Lasaña de verduras de temporada": "H19",
+    "PVP sin IVA necesario en sala de Lasaña de verduras de temporada": "I19",
+    "PVP con IVA en sala de Lasaña de verduras de temporada": "J19",
+    "¿Viable en sala? Lasaña de verduras de temporada": "K19",
+    "Margen mensual en sala de Lasaña de verduras de temporada": "N19",
+    "Food cost efectivo en take away de Lasaña de verduras de temporada": "O19",
+    "PVP sin IVA necesario en take away de Lasaña de verduras de temporada": "P19",
+    "PVP con IVA en take away de Lasaña de verduras de temporada": "Q19",
+    "¿Viable en take away? Lasaña de verduras de temporada": "R19",
+    "Margen mensual en take away de Lasaña de verduras de temporada": "U19",
+    "Food cost efectivo en delivery de Lasaña de verduras de temporada": "V19",
+    "PVP sin IVA necesario en delivery de Lasaña de verduras de temporada": "W19",
+    "PVP con IVA en delivery de Lasaña de verduras de temporada": "X19",
+    "¿Viable en delivery? Lasaña de verduras de temporada": "Y19",
+    "Margen mensual en delivery de Lasaña de verduras de temporada": "AB19",
+    "Coste por ración de Tataki de atún rojo con sésamo": "C20",
+    "PVP en sala sin IVA de Tataki de atún rojo con sésamo": "D20",
+    "Food cost efectivo en sala de Tataki de atún rojo con sésamo": "H20",
+    "PVP sin IVA necesario en sala de Tataki de atún rojo con sésamo": "I20",
+    "PVP con IVA en sala de Tataki de atún rojo con sésamo": "J20",
+    "¿Viable en sala? Tataki de atún rojo con sésamo": "K20",
+    "Margen mensual en sala de Tataki de atún rojo con sésamo": "N20",
+    "Food cost efectivo en take away de Tataki de atún rojo con sésamo": "O20",
+    "PVP sin IVA necesario en take away de Tataki de atún rojo con sésamo": "P20",
+    "PVP con IVA en take away de Tataki de atún rojo con sésamo": "Q20",
+    "¿Viable en take away? Tataki de atún rojo con sésamo": "R20",
+    "Margen mensual en take away de Tataki de atún rojo con sésamo": "U20",
+    "Food cost efectivo en delivery de Tataki de atún rojo con sésamo": "V20",
+    "PVP sin IVA necesario en delivery de Tataki de atún rojo con sésamo": "W20",
+    "PVP con IVA en delivery de Tataki de atún rojo con sésamo": "X20",
+    "¿Viable en delivery? Tataki de atún rojo con sésamo": "Y20",
+    "Margen mensual en delivery de Tataki de atún rojo con sésamo": "AB20",
+    "Coste por ración de Tarta de queso cremosa": "C21",
+    "PVP en sala sin IVA de Tarta de queso cremosa": "D21",
+    "Food cost efectivo en sala de Tarta de queso cremosa": "H21",
+    "PVP sin IVA necesario en sala de Tarta de queso cremosa": "I21",
+    "PVP con IVA en sala de Tarta de queso cremosa": "J21",
+    "¿Viable en sala? Tarta de queso cremosa": "K21",
+    "Margen mensual en sala de Tarta de queso cremosa": "N21",
+    "Food cost efectivo en take away de Tarta de queso cremosa": "O21",
+    "PVP sin IVA necesario en take away de Tarta de queso cremosa": "P21",
+    "PVP con IVA en take away de Tarta de queso cremosa": "Q21",
+    "¿Viable en take away? Tarta de queso cremosa": "R21",
+    "Margen mensual en take away de Tarta de queso cremosa": "U21",
+    "Food cost efectivo en delivery de Tarta de queso cremosa": "V21",
+    "PVP sin IVA necesario en delivery de Tarta de queso cremosa": "W21",
+    "PVP con IVA en delivery de Tarta de queso cremosa": "X21",
+    "¿Viable en delivery? Tarta de queso cremosa": "Y21",
+    "Margen mensual en delivery de Tarta de queso cremosa": "AB21",
+    "Coste por ración de Torrija caramelizada con helado": "C22",
+    "PVP en sala sin IVA de Torrija caramelizada con helado": "D22",
+    "Food cost efectivo en sala de Torrija caramelizada con helado": "H22",
+    "PVP sin IVA necesario en sala de Torrija caramelizada con helado": "I22",
+    "PVP con IVA en sala de Torrija caramelizada con helado": "J22",
+    "¿Viable en sala? Torrija caramelizada con helado": "K22",
+    "Margen mensual en sala de Torrija caramelizada con helado": "N22",
+    "Food cost efectivo en take away de Torrija caramelizada con helado": "O22",
+    "PVP sin IVA necesario en take away de Torrija caramelizada con helado": "P22",
+    "PVP con IVA en take away de Torrija caramelizada con helado": "Q22",
+    "¿Viable en take away? Torrija caramelizada con helado": "R22",
+    "Margen mensual en take away de Torrija caramelizada con helado": "U22",
+    "Food cost efectivo en delivery de Torrija caramelizada con helado": "V22",
+    "PVP sin IVA necesario en delivery de Torrija caramelizada con helado": "W22",
+    "PVP con IVA en delivery de Torrija caramelizada con helado": "X22",
+    "¿Viable en delivery? Torrija caramelizada con helado": "Y22",
+    "Margen mensual en delivery de Torrija caramelizada con helado": "AB22",
+    "Coste por ración de Coulant de chocolate": "C23",
+    "PVP en sala sin IVA de Coulant de chocolate": "D23",
+    "Food cost efectivo en sala de Coulant de chocolate": "H23",
+    "PVP sin IVA necesario en sala de Coulant de chocolate": "I23",
+    "PVP con IVA en sala de Coulant de chocolate": "J23",
+    "¿Viable en sala? Coulant de chocolate": "K23",
+    "Margen mensual en sala de Coulant de chocolate": "N23",
+    "Food cost efectivo en take away de Coulant de chocolate": "O23",
+    "PVP sin IVA necesario en take away de Coulant de chocolate": "P23",
+    "PVP con IVA en take away de Coulant de chocolate": "Q23",
+    "¿Viable en take away? Coulant de chocolate": "R23",
+    "Margen mensual en take away de Coulant de chocolate": "U23",
+    "Food cost efectivo en delivery de Coulant de chocolate": "V23",
+    "PVP sin IVA necesario en delivery de Coulant de chocolate": "W23",
+    "PVP con IVA en delivery de Coulant de chocolate": "X23",
+    "¿Viable en delivery? Coulant de chocolate": "Y23",
+    "Margen mensual en delivery de Coulant de chocolate": "AB23",
+    "Coste por ración de Fruta de temporada preparada": "C24",
+    "PVP en sala sin IVA de Fruta de temporada preparada": "D24",
+    "Food cost efectivo en sala de Fruta de temporada preparada": "H24",
+    "PVP sin IVA necesario en sala de Fruta de temporada preparada": "I24",
+    "PVP con IVA en sala de Fruta de temporada preparada": "J24",
+    "¿Viable en sala? Fruta de temporada preparada": "K24",
+    "Margen mensual en sala de Fruta de temporada preparada": "N24",
+    "Food cost efectivo en take away de Fruta de temporada preparada": "O24",
+    "PVP sin IVA necesario en take away de Fruta de temporada preparada": "P24",
+    "PVP con IVA en take away de Fruta de temporada preparada": "Q24",
+    "¿Viable en take away? Fruta de temporada preparada": "R24",
+    "Margen mensual en take away de Fruta de temporada preparada": "U24",
+    "Food cost efectivo en delivery de Fruta de temporada preparada": "V24",
+    "PVP sin IVA necesario en delivery de Fruta de temporada preparada": "W24",
+    "PVP con IVA en delivery de Fruta de temporada preparada": "X24",
+    "¿Viable en delivery? Fruta de temporada preparada": "Y24",
+    "Margen mensual en delivery de Fruta de temporada preparada": "AB24"
+   },
+   "tablas": [
+    {
+     "titulo": "Carta: datos de entrada",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Coste por ración, sin IVA (€)",
+       "C",
+       "eur"
+      ],
+      [
+       "PVP en sala, sin IVA (€)",
+       "D",
+       "eur"
+      ],
+      [
+       "Tipo de producto (IVA)",
+       "E",
+       "txt"
+      ],
+      [
+       "Precio techo del mercado, sin IVA (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Uds vendidas al mes (n.º)",
+       "G",
+       "num"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Simulación en Sala",
+     "cols": [
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Food cost efectivo al PVP de sala (%)",
+       "H",
+       "pct1"
+      ],
+      [
+       "PVP sin IVA necesario para el food cost objetivo (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "PVP con IVA para el cliente (€)",
+       "J",
+       "eur"
+      ],
+      [
+       "¿Viable? (PVP necesario vs precio techo)",
+       "K",
+       "txt"
+      ],
+      [
+       "PVP que puedes cobrar, sin IVA (€)",
+       "L",
+       "eur"
+      ],
+      [
+       "Ingreso neto por plato (€)",
+       "M",
+       "eur"
+      ],
+      [
+       "Margen mensual (€)",
+       "N",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Simulación en Take away",
+     "cols": [
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Food cost efectivo al PVP de sala (%)",
+       "O",
+       "pct1"
+      ],
+      [
+       "PVP sin IVA necesario para el food cost objetivo (€)",
+       "P",
+       "eur"
+      ],
+      [
+       "PVP con IVA para el cliente (€)",
+       "Q",
+       "eur"
+      ],
+      [
+       "¿Viable? (PVP necesario vs precio techo)",
+       "R",
+       "txt"
+      ],
+      [
+       "PVP que puedes cobrar, sin IVA (€)",
+       "S",
+       "eur"
+      ],
+      [
+       "Ingreso neto por plato (€)",
+       "T",
+       "eur"
+      ],
+      [
+       "Margen mensual (€)",
+       "U",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Simulación en Delivery",
+     "cols": [
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Food cost efectivo al PVP de sala (%)",
+       "V",
+       "pct1"
+      ],
+      [
+       "PVP sin IVA necesario para el food cost objetivo (€)",
+       "W",
+       "eur"
+      ],
+      [
+       "PVP con IVA para el cliente (€)",
+       "X",
+       "eur"
+      ],
+      [
+       "¿Viable? (PVP necesario vs precio techo)",
+       "Y",
+       "txt"
+      ],
+      [
+       "PVP que puedes cobrar, sin IVA (€)",
+       "Z",
+       "eur"
+      ],
+      [
+       "Ingreso neto por plato (€)",
+       "AA",
+       "eur"
+      ],
+      [
+       "Margen mensual (€)",
+       "AB",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    }
+   ]
+  },
+  "Resumen": {
+   "celdas": {
+    "Platos viables en sala": "B5",
+    "Platos viables en take away": "B6",
+    "Platos viables en delivery": "B7",
+    "Platos a excluir en sala": "C5",
+    "Platos a excluir en take away": "C6",
+    "Platos a excluir en delivery": "C7",
+    "Food cost efectivo medio en sala": "D5",
+    "Food cost efectivo medio en take away": "D6",
+    "Food cost efectivo medio en delivery": "D7",
+    "Food cost objetivo de sala": "E5",
+    "Food cost objetivo de take away": "E6",
+    "Food cost objetivo de delivery": "E7",
+    "PVP medio necesario en sala": "F5",
+    "PVP medio necesario en take away": "F6",
+    "PVP medio necesario en delivery": "F7",
+    "Margen mensual total en sala": "G5",
+    "Margen mensual total en take away": "G6",
+    "Margen mensual total en delivery": "G7",
+    "Margen mensual medio por plato en sala": "H5",
+    "Margen mensual medio por plato en take away": "H6",
+    "Margen mensual medio por plato en delivery": "H7",
+    "Diferencia de margen del take away frente a la sala": "I6",
+    "Diferencia de margen del delivery frente a la sala": "I7"
+   },
+   "tablas": [
+    {
+     "titulo": "Resumen por canal",
+     "cols": [
+      [
+       "Canal",
+       "A",
+       "txt"
+      ],
+      [
+       "Platos viables (n.º)",
+       "B",
+       "num"
+      ],
+      [
+       "Platos a excluir o reformular (n.º)",
+       "C",
+       "num"
+      ],
+      [
+       "Food cost efectivo medio al PVP de sala (media simple, %)",
+       "D",
+       "pct1"
+      ],
+      [
+       "Food cost objetivo del canal (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "PVP medio necesario, sin IVA (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Margen mensual total (€)",
+       "G",
+       "eur"
+      ],
+      [
+       "Margen mensual medio por plato (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "Diferencia de margen frente a la sala (€/mes)",
+       "I",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      7
+     ]
+    }
+   ]
+  }
+ }
+}

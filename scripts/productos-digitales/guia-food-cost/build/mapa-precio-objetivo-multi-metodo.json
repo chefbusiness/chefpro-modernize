@@ -1,0 +1,170 @@
+{
+  "fichero": "precio-objetivo-multi-metodo.xlsx",
+  "hojas": {
+    "Instrucciones": {
+      "celdas": {
+        "Título del libro": "A1",
+        "Regla de asignación de métodos": "A15",
+        "Línea de versión": "A21"
+      },
+      "tablas": []
+    },
+    "Por Plato": {
+      "celdas": {
+        "Food cost objetivo global": "E5",
+        "Tipo de IVA de restauración (sala)": "E6",
+        "PVP del chuletón por factor": "K20",
+        "PVP del chuletón por margen objetivo": "L20",
+        "PVP elegido del chuletón": "Q20",
+        "Food cost final del chuletón": "T20",
+        "PVP actual del chuletón en carta": "V20",
+        "PVP de las croquetas por factor": "K9",
+        "PVP elegido de las croquetas": "Q9",
+        "PVP actual de las croquetas en carta": "V9",
+        "Diferencia de las croquetas con el PVP actual": "W9",
+        "Platos con precio calculado": "E36",
+        "Platos dentro del objetivo": "E37",
+        "Platos por encima del objetivo": "E38",
+        "Food cost del conjunto de la carta": "E39",
+        "Margen de contribución medio por plato": "E40",
+        "Diferencia total con los PVP actuales": "E41",
+        "Subida media sobre el PVP actual": "E42",
+        "Carta entera por factor": "E45",
+        "Carta entera por margen": "E46",
+        "Carta entera a mercado": "E47",
+        "Carta entera a valor": "E48",
+        "Carta entera con los PVP actuales": "E49",
+        "Platos con el método A": "E52",
+        "Platos con el método B": "E53",
+        "Platos con el método C": "E54",
+        "Platos con el método D": "E55"
+      },
+      "tablas": [
+        {
+          "titulo": "Precio por los cuatro métodos, plato a plato",
+          "cols": [
+            [
+              "#",
+              "A",
+              "num"
+            ],
+            [
+              "Plato",
+              "B",
+              "txt"
+            ],
+            [
+              "Familia",
+              "C",
+              "txt"
+            ],
+            [
+              "Coste por ración (€)",
+              "D",
+              "eur"
+            ],
+            [
+              "FC objetivo del plato (%) — opcional",
+              "E",
+              "pct1"
+            ],
+            [
+              "Método elegido",
+              "F",
+              "txt"
+            ],
+            [
+              "Margen objetivo (€) — método B",
+              "G",
+              "eur"
+            ],
+            [
+              "Precio de mercado de la zona (€) — método C",
+              "H",
+              "eur"
+            ],
+            [
+              "Precio de valor percibido (€) — método D",
+              "I",
+              "eur"
+            ],
+            [
+              "FC objetivo aplicado (%)",
+              "J",
+              "pct1"
+            ],
+            [
+              "A · PVP por factor (€)",
+              "K",
+              "eur"
+            ],
+            [
+              "B · PVP por margen (€)",
+              "L",
+              "eur"
+            ],
+            [
+              "FC resultante con A (%)",
+              "M",
+              "pct1"
+            ],
+            [
+              "FC resultante con B (%)",
+              "N",
+              "pct1"
+            ],
+            [
+              "FC resultante con C (%)",
+              "O",
+              "pct1"
+            ],
+            [
+              "FC resultante con D (%)",
+              "P",
+              "pct1"
+            ],
+            [
+              "PVP ELEGIDO sin IVA (€)",
+              "Q",
+              "eur"
+            ],
+            [
+              "PVP elegido CON IVA (€)",
+              "R",
+              "eur"
+            ],
+            [
+              "Margen de contribución (€)",
+              "S",
+              "eur"
+            ],
+            [
+              "Food cost final (%)",
+              "T",
+              "pct1"
+            ],
+            [
+              "Semáforo vs objetivo",
+              "U",
+              "txt"
+            ],
+            [
+              "PVP actual en carta sin IVA (€)",
+              "V",
+              "eur"
+            ],
+            [
+              "Diferencia con el PVP actual (€)",
+              "W",
+              "eur"
+            ]
+          ],
+          "filas": [
+            9,
+            33
+          ]
+        }
+      ]
+    }
+  }
+}

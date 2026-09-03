@@ -1,0 +1,277 @@
+{
+  "fichero": "rendimiento-mermas-producto.xlsx",
+  "hojas": {
+    "Instrucciones": {
+      "celdas": {
+        "Título del libro": "A1",
+        "Fuente de las mermas de referencia": "A13",
+        "Línea de versión": "A19"
+      },
+      "tablas": []
+    },
+    "Test de Rendimiento": {
+      "celdas": {
+        "Productos medidos": "E23",
+        "Peso bruto total comprado": "E24",
+        "Peso limpio total": "E25",
+        "Rendimiento medio ponderado": "E26",
+        "Merma media ponderada": "E27",
+        "Coste total de compra": "E28",
+        "Valor de uso de los subproductos": "E29",
+        "Ahorro medio por aprovechar los subproductos": "E30",
+        "Rendimiento de la lubina entera": "H6",
+        "Coste neto por kg limpio de la lubina, aprovechando": "N6",
+        "Sobrecoste de la lubina sobre el precio bruto": "P6",
+        "Rendimiento de la alcachofa": "H12",
+        "Rendimiento del mejillón con concha": "H14",
+        "Ahorro por aprovechar las cabezas de la gamba": "O15"
+      },
+      "tablas": [
+        {
+          "titulo": "Tests de rendimiento por producto",
+          "cols": [
+            [
+              "#",
+              "A",
+              "num"
+            ],
+            [
+              "Producto",
+              "B",
+              "txt"
+            ],
+            [
+              "Peso bruto (kg)",
+              "C",
+              "num1"
+            ],
+            [
+              "Precio/kg bruto sin IVA (€)",
+              "D",
+              "eur"
+            ],
+            [
+              "Peso limpio (kg)",
+              "E",
+              "num1"
+            ],
+            [
+              "Subproductos aprovechables (kg)",
+              "F",
+              "num1"
+            ],
+            [
+              "Valor de uso del subproducto (€/kg)",
+              "G",
+              "eur"
+            ],
+            [
+              "Rendimiento (%)",
+              "H",
+              "pct1"
+            ],
+            [
+              "Merma (%)",
+              "I",
+              "pct1"
+            ],
+            [
+              "Factor de corrección (1/rendimiento)",
+              "J",
+              "num1"
+            ],
+            [
+              "Coste de compra (€)",
+              "K",
+              "eur"
+            ],
+            [
+              "Valor de los subproductos (€)",
+              "L",
+              "eur"
+            ],
+            [
+              "Coste neto €/kg limpio SIN aprovechar",
+              "M",
+              "eur"
+            ],
+            [
+              "Coste neto €/kg limpio APROVECHANDO",
+              "N",
+              "eur"
+            ],
+            [
+              "Ahorro por aprovechar (€/kg)",
+              "O",
+              "eur"
+            ],
+            [
+              "Sobrecoste sobre el precio bruto (€/kg)",
+              "P",
+              "eur"
+            ]
+          ],
+          "filas": [
+            6,
+            20
+          ]
+        }
+      ]
+    },
+    "Merma de Cocción": {
+      "celdas": {
+        "Rendimiento medio de cocción ponderado": "E18",
+        "Pérdida media por cocción": "E19",
+        "Pruebas de cocción registradas": "E20",
+        "Pérdida de cocción del pollo de corral al horno": "G7",
+        "Coste por kg del pollo ya cocinado": "J7",
+        "Pérdida de cocción de las verduras asadas": "G10",
+        "Pérdida de cocción del solomillo de cerdo a la plancha": "G6"
+      },
+      "tablas": [
+        {
+          "titulo": "Pruebas de merma de cocción",
+          "cols": [
+            [
+              "#",
+              "A",
+              "num"
+            ],
+            [
+              "Elaboración",
+              "B",
+              "txt"
+            ],
+            [
+              "Técnica",
+              "C",
+              "txt"
+            ],
+            [
+              "Peso crudo (kg)",
+              "D",
+              "num1"
+            ],
+            [
+              "Peso cocinado (kg)",
+              "E",
+              "num1"
+            ],
+            [
+              "Rendimiento de cocción (%)",
+              "F",
+              "pct1"
+            ],
+            [
+              "Pérdida por cocción (%)",
+              "G",
+              "pct1"
+            ],
+            [
+              "Factor de cocción (1/rendimiento)",
+              "H",
+              "num1"
+            ],
+            [
+              "Coste/kg del producto crudo (€)",
+              "I",
+              "eur"
+            ],
+            [
+              "Coste/kg del producto ya cocinado (€)",
+              "J",
+              "eur"
+            ],
+            [
+              "Sobrecoste por la cocción (€/kg)",
+              "K",
+              "eur"
+            ],
+            [
+              "Notas",
+              "L",
+              "txt"
+            ]
+          ],
+          "filas": [
+            6,
+            15
+          ]
+        }
+      ]
+    },
+    "Mi Tabla de Mermas": {
+      "celdas": {
+        "Categorías con medición propia": "E26",
+        "Categorías que aún usan la referencia": "E27",
+        "Desviación media de tus mediciones sobre la referencia": "E28",
+        "Merma que usas en pescado entero": "G8",
+        "Origen del dato en pescado entero": "H8",
+        "Merma que usas en verduras de hoja": "G10",
+        "Origen del dato en verduras de hoja": "H10",
+        "Merma que usas en aves enteras": "G16"
+      },
+      "tablas": [
+        {
+          "titulo": "Tabla de mermas de referencia y propias",
+          "cols": [
+            [
+              "#",
+              "A",
+              "num"
+            ],
+            [
+              "Categoría de producto",
+              "B",
+              "txt"
+            ],
+            [
+              "Merma de referencia mínima (%)",
+              "C",
+              "pct1"
+            ],
+            [
+              "Merma de referencia máxima (%)",
+              "D",
+              "pct1"
+            ],
+            [
+              "Merma de referencia media (%)",
+              "E",
+              "pct1"
+            ],
+            [
+              "Tu merma medida (%)",
+              "F",
+              "pct1"
+            ],
+            [
+              "Merma que usas (%)",
+              "G",
+              "pct1"
+            ],
+            [
+              "De dónde sale el dato",
+              "H",
+              "txt"
+            ],
+            [
+              "Diferencia con la referencia (puntos)",
+              "I",
+              "pct1"
+            ],
+            [
+              "Nota",
+              "J",
+              "txt"
+            ]
+          ],
+          "filas": [
+            6,
+            23
+          ]
+        }
+      ]
+    }
+  }
+}

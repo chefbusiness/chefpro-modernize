@@ -294,6 +294,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: '80 seats: 20 chapters, 8 Excel templates and an operations manual.',
     },
   },
+  'guia-food-cost-ingenieria-menu': {
+    id: 'guia-food-cost-ingenieria-menu',
+    url: '/guia-food-cost-ingenieria-menu',
+    price: '€55',
+    name: { es: 'Guía Food Cost + Ingeniería de Menú', en: 'Guide: Food Cost + Menu Engineering' },
+    description: {
+      es: 'Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.',
+      en: 'Recipe costing, pricing and menu profitability: 20 chapters and 8 Excel tools.',
+    },
+  },
   // ── Planes de negocio (Excel financiero + checklist de apertura) ─────────
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',

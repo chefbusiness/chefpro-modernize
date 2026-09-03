@@ -1,0 +1,346 @@
+{
+ "fichero": "plan-accion-90-dias.xlsx",
+ "hojas": {
+  "Decisiones": {
+   "celdas": {
+    "Decisiones registradas": "D27",
+    "Decisiones cerradas": "D28",
+    "Decisiones descartadas": "D29",
+    "Decisiones cerradas (%)": "D30",
+    "Impacto total estimado (€/mes)": "D31",
+    "Impacto ya conseguido (€/mes)": "D32",
+    "Impacto pendiente (€/mes)": "D33",
+    "Impacto total estimado a 12 meses (€)": "D34",
+    "Objetivo de cierre a 90 días (%)": "D35",
+    "Fecha de inicio del plan": "D36",
+    "Reformular: decisiones": "C39",
+    "Reformular: impacto estimado": "D39",
+    "Resubir: decisiones": "C40",
+    "Resubir: impacto estimado": "D40",
+    "Rediseñar: decisiones": "C41",
+    "Rediseñar: impacto estimado": "D41",
+    "Retirar: decisiones": "C42",
+    "Retirar: impacto estimado": "D42",
+    "Negociar: decisiones": "C43",
+    "Negociar: impacto estimado": "D43",
+    "Mantener: decisiones": "C44",
+    "Matriz multi-método: decisiones": "C51",
+    "Matriz multi-método: impacto estimado": "D51",
+    "Simulador multicanal: decisiones": "C52",
+    "Simulador multicanal: impacto estimado": "D52",
+    "Carta de bebidas: impacto estimado": "D53",
+    "Cuadro de mando prime cost: impacto estimado": "D54",
+    "Test de rendimiento: impacto estimado": "D49"
+   },
+   "tablas": [
+    {
+     "titulo": "Decisiones: 10 de ejemplo y 10 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato o área",
+       "B",
+       "txt"
+      ],
+      [
+       "Herramienta de origen",
+       "C",
+       "txt"
+      ],
+      [
+       "Decisión",
+       "D",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "E",
+       "txt"
+      ],
+      [
+       "Semana del plan",
+       "F",
+       "num"
+      ],
+      [
+       "Fecha objetivo",
+       "G",
+       "txt"
+      ],
+      [
+       "Estado",
+       "H",
+       "txt"
+      ],
+      [
+       "Impacto estimado (€/mes)",
+       "I",
+       "eur"
+      ],
+      [
+       "Impacto ya conseguido (€/mes)",
+       "J",
+       "eur"
+      ],
+      [
+       "Notas",
+       "K",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      24
+     ]
+    },
+    {
+     "titulo": "Resumen por tipo de decisión",
+     "cols": [
+      [
+       "Decisión",
+       "B",
+       "txt"
+      ],
+      [
+       "Decisiones",
+       "C",
+       "num"
+      ],
+      [
+       "Impacto estimado (€/mes)",
+       "D",
+       "eur"
+      ],
+      [
+       "Impacto conseguido (€/mes)",
+       "E",
+       "eur"
+      ]
+     ],
+     "filas": [
+      39,
+      44
+     ]
+    },
+    {
+     "titulo": "Resumen por herramienta de origen",
+     "cols": [
+      [
+       "Herramienta de origen",
+       "B",
+       "txt"
+      ],
+      [
+       "Decisiones",
+       "C",
+       "num"
+      ],
+      [
+       "Impacto estimado (€/mes)",
+       "D",
+       "eur"
+      ],
+      [
+       "Impacto conseguido (€/mes)",
+       "E",
+       "eur"
+      ]
+     ],
+     "filas": [
+      48,
+      54
+     ]
+    }
+   ]
+  },
+  "Calendario 90 Días": {
+   "celdas": {
+    "Hitos registrados": "D33",
+    "Hitos hechos": "D34",
+    "Hitos pendientes": "D35",
+    "Avance del calendario (%)": "D36",
+    "Medir: hitos": "D40",
+    "Medir: avance (%)": "F40",
+    "Escandallar y clasificar: hitos": "D41",
+    "Escandallar y clasificar: avance (%)": "F41",
+    "Aplicar decisiones: hitos": "D42",
+    "Aplicar decisiones: avance (%)": "F42",
+    "Medir el efecto: hitos": "D43",
+    "Medir el efecto: avance (%)": "F43",
+    "Revisión: hitos": "D44",
+    "Revisión: avance (%)": "F44"
+   },
+   "tablas": [
+    {
+     "titulo": "13 semanas con dos hitos cada una",
+     "cols": [
+      [
+       "Semana",
+       "A",
+       "num"
+      ],
+      [
+       "Bloque",
+       "B",
+       "txt"
+      ],
+      [
+       "Hito",
+       "C",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "D",
+       "txt"
+      ],
+      [
+       "Fecha objetivo",
+       "E",
+       "txt"
+      ],
+      [
+       "Hecho",
+       "F",
+       "txt"
+      ],
+      [
+       "Nota",
+       "G",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      30
+     ]
+    },
+    {
+     "titulo": "Avance por bloque",
+     "cols": [
+      [
+       "Bloque",
+       "C",
+       "txt"
+      ],
+      [
+       "Hitos",
+       "D",
+       "num"
+      ],
+      [
+       "Hechos",
+       "E",
+       "num"
+      ],
+      [
+       "Avance (%)",
+       "F",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      40,
+      44
+     ]
+    }
+   ]
+  },
+  "KPI de Seguimiento": {
+   "celdas": {
+    "Food cost: mes 0": "B5",
+    "Food cost: mes 3": "E5",
+    "Food cost: variación mes 3 vs mes 0": "H5",
+    "Food cost: lectura": "J5",
+    "Prime cost: mes 0": "B6",
+    "Prime cost: mes 3": "E6",
+    "Prime cost: variación mes 3 vs mes 0": "H6",
+    "Prime cost: lectura": "J6",
+    "Ticket medio: mes 0": "B7",
+    "Ticket medio: mes 3": "E7",
+    "Ticket medio: variación mes 3 vs mes 0": "H7",
+    "MC por cubierto: mes 0": "B8",
+    "MC por cubierto: mes 3": "E8",
+    "MC por cubierto: variación mes 3 vs mes 0": "H8",
+    "Platos en carta: mes 0": "B9",
+    "Platos en carta: mes 3": "E9",
+    "Platos en carta: variación mes 3 vs mes 0": "H9",
+    "KPI registrados": "C15",
+    "KPI que mejoran": "C16",
+    "KPI que empeoran": "C17",
+    "KPI sin cambio": "C18",
+    "KPI que mejoran (%)": "C19"
+   },
+   "tablas": [
+    {
+     "titulo": "KPI del trimestre: 5 sembrados y 3 libres",
+     "cols": [
+      [
+       "KPI",
+       "A",
+       "txt"
+      ],
+      [
+       "Mes 0",
+       "B",
+       "num"
+      ],
+      [
+       "Mes 1",
+       "C",
+       "num"
+      ],
+      [
+       "Mes 2",
+       "D",
+       "num"
+      ],
+      [
+       "Mes 3",
+       "E",
+       "num"
+      ],
+      [
+       "Variación mes 1 vs mes 0",
+       "F",
+       "num"
+      ],
+      [
+       "Variación mes 2 vs mes 0",
+       "G",
+       "num"
+      ],
+      [
+       "Variación mes 3 vs mes 0",
+       "H",
+       "num"
+      ],
+      [
+       "¿Bajar es bueno?",
+       "I",
+       "txt"
+      ],
+      [
+       "Lectura mes 3 vs mes 0",
+       "J",
+       "txt"
+      ],
+      [
+       "Nota",
+       "K",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      12
+     ]
+    }
+   ]
+  }
+ }
+}

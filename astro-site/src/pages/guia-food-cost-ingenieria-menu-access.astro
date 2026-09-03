@@ -1,0 +1,17 @@
+---
+// Fase 5 — access gate de Guía Food Cost + Ingeniería de Menú (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": el gate de la SPA se monta TAL CUAL (window/
+// localStorage en cliente; sin pase SSR). Config de dinero: hardcodeada en el
+// propio wrapper de la SPA. Title = ACCESS_TITLE verbatim del Helmet
+// compartido (el shim de react-helmet-async anula el Helmet cliente).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import { ACCESS_TITLE } from '../lib/zona-app';
+import GuiaFoodCostAccessGate from '../../../src/pages/GuiaFoodCostAccessGate';
+---
+
+<BaseLayout title={ACCESS_TITLE} noindex>
+  <FunctionsOriginPatch />
+  <GuiaFoodCostAccessGate client:only="react" />
+</BaseLayout>

@@ -164,6 +164,7 @@ const data: GuiaData = {
     { label: 'aichef.pro', href: 'https://aichef.pro' },
     { label: 'Kit Tareas Restaurante Creativo', href: '/kit-tareas-restaurante-creativo' },
     { label: 'Kit Plan Financiero', href: '/kit-plan-financiero' },
+    { label: 'Guía Food Cost + Ingeniería de Menú', href: '/guia-food-cost-ingenieria-menu' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],

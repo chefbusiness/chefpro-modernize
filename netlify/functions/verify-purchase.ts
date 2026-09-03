@@ -151,6 +151,13 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso a la <strong>Guía Cómo Montar un Restaurante Gastronómico</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 20 plantillas y checklists Excel:',
     emailCta: 'Acceder a mi Guía',
   },
+  'guia-food-cost-ingenieria-menu': {
+    accessPath: '/guia-food-cost-ingenieria-menu-access',
+    emailSubject: 'Tu acceso a la Guía Food Cost + Ingeniería de Menú',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso a la <strong>Guía Food Cost + Ingeniería de Menú</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX, 8 herramientas Excel y el bonus de ejercicios:',
+    emailCta: 'Acceder a mi Guía',
+  },
   'guia-restaurante-casual': {
     accessPath: '/guia-restaurante-casual-access',
     emailSubject: 'Tu acceso a la Guía: Restaurante Casual 80 Plazas',

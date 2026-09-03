@@ -97,6 +97,23 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'guia-food-cost-ingenieria-menu': {
+    version: '1.0',
+    updated: '2026-09-03',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-09-03',
+        title: 'Lanzamiento',
+        changes: [
+          'Guía completa en PDF y en DOCX editable: 20 capítulos de método para escandallar, poner precio y decidir qué hacer con cada plato de la carta.',
+          '8 herramientas Excel con fórmulas vivas: ficha de escandallo, rendimiento y mermas, precio objetivo multi-método, matriz de carta, simulador multicanal, carta de bebidas, cuadro de mando de prime cost y plan de acción de 90 días.',
+          'El IVA por canal (sala, para llevar y delivery) va en casillas editables de los libros, con la base legal citada en la guía: cambias el tipo y todo se recalcula.',
+          'Bonus: 12 ejercicios resueltos paso a paso, con los mismos platos de ejemplo que las herramientas.',
+        ],
+      },
+    ],
+  },
   'guia-restaurante-casual': {
     version: '1.1',
     updated: '2026-08-22',

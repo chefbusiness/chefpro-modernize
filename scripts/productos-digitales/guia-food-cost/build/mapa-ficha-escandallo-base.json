@@ -1,0 +1,196 @@
+{
+  "fichero": "ficha-escandallo-base.xlsx",
+  "hojas": {
+    "Instrucciones": {
+      "celdas": {
+        "Título del libro": "A1",
+        "Nota de IVA de sala": "A14",
+        "Línea de versión": "A17"
+      },
+      "tablas": []
+    },
+    "Ficha": {
+      "celdas": {
+        "Nombre del plato": "D4",
+        "Familia de carta": "D5",
+        "Raciones de la ficha": "D6",
+        "Food cost objetivo": "D7",
+        "Coste total de la ficha sin IVA": "E32",
+        "Coste por ración sin IVA": "E33",
+        "PVP objetivo sin IVA": "E34",
+        "Tipo de IVA de restauración (sala)": "E35",
+        "PVP objetivo con IVA": "E36",
+        "PVP actual en carta sin IVA": "E37",
+        "PVP actual con IVA": "E38",
+        "Food cost real con el PVP actual": "E39",
+        "Margen de contribución con el PVP actual": "E40",
+        "Diferencia entre PVP objetivo y actual": "E41",
+        "Subida necesaria para llegar al objetivo": "E42",
+        "IVA soportado total de la ficha": "E45",
+        "Coste con IVA soportado (solo tesorería)": "E46",
+        "Food cost erróneo contando el IVA como coste": "E47",
+        "Cantidad bruta de la línea 1 (solomillo)": "H10",
+        "Coste sin IVA de la línea 1 (solomillo)": "I10",
+        "Coste con IVA de la línea 1 (solomillo)": "K10",
+        "IVA soportado de la línea 7 (vino Pedro Ximénez)": "J16",
+        "Cantidad bruta de la línea 3 (boniato, merma 18 %)": "H12"
+      },
+      "tablas": [
+        {
+          "titulo": "Líneas de la ficha de escandallo",
+          "cols": [
+            [
+              "#",
+              "A",
+              "num"
+            ],
+            [
+              "Ingrediente",
+              "B",
+              "txt"
+            ],
+            [
+              "Unidad",
+              "C",
+              "txt"
+            ],
+            [
+              "Cantidad NETA por ración",
+              "D",
+              "num1"
+            ],
+            [
+              "Precio/Ud sin IVA (€)",
+              "E",
+              "eur"
+            ],
+            [
+              "Merma (%)",
+              "F",
+              "pct1"
+            ],
+            [
+              "IVA de compra (%)",
+              "G",
+              "pct1"
+            ],
+            [
+              "Cantidad BRUTA a comprar",
+              "H",
+              "num1"
+            ],
+            [
+              "Coste sin IVA (€)",
+              "I",
+              "eur"
+            ],
+            [
+              "IVA soportado (€)",
+              "J",
+              "eur"
+            ],
+            [
+              "Coste con IVA (€)",
+              "K",
+              "eur"
+            ],
+            [
+              "Notas",
+              "L",
+              "txt"
+            ]
+          ],
+          "filas": [
+            10,
+            29
+          ]
+        }
+      ]
+    },
+    "Albarán e IVA soportado": {
+      "celdas": {
+        "Tipo de IVA soportado al 4 %": "A5",
+        "Tipo de IVA soportado al 10 %": "A6",
+        "Tipo de IVA soportado al 21 %": "A7",
+        "Base imponible total del albarán de ejemplo": "F18",
+        "Cuota de IVA total del albarán de ejemplo": "H18",
+        "Total con IVA del albarán de ejemplo": "I18"
+      },
+      "tablas": [
+        {
+          "titulo": "Los tres tipos de IVA soportado en compras",
+          "cols": [
+            [
+              "Tipo de IVA soportado",
+              "A",
+              "pct1"
+            ],
+            [
+              "Qué compra lleva este tipo",
+              "B",
+              "txt"
+            ]
+          ],
+          "filas": [
+            5,
+            7
+          ]
+        },
+        {
+          "titulo": "Albarán de ejemplo con los tres tipos de IVA",
+          "cols": [
+            [
+              "#",
+              "A",
+              "num"
+            ],
+            [
+              "Producto",
+              "B",
+              "txt"
+            ],
+            [
+              "Cantidad",
+              "C",
+              "num1"
+            ],
+            [
+              "Unidad",
+              "D",
+              "txt"
+            ],
+            [
+              "Precio/Ud sin IVA (€)",
+              "E",
+              "eur"
+            ],
+            [
+              "Base imponible (€)",
+              "F",
+              "eur"
+            ],
+            [
+              "Tipo de IVA (%)",
+              "G",
+              "pct1"
+            ],
+            [
+              "Cuota de IVA (€)",
+              "H",
+              "eur"
+            ],
+            [
+              "Total con IVA (€)",
+              "I",
+              "eur"
+            ]
+          ],
+          "filas": [
+            11,
+            17
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -222,13 +222,25 @@ SIMULADOR_DEFECTO = {
     'platos_por_pedido': 2.5,
     'fc_objetivo_sala': 0.30,
     'fc_objetivo_take_away': 0.30,
-    'fc_objetivo_delivery': 0.30,
+    # 0,40 y no 0,30: con fc_objetivo_delivery al 30 % y una comisión del
+    # 30 %, el PVP «necesario» = (coste + packaging) / (0,30 × 0,70) — el
+    # packaging por plato (0,70 €, ya prorrateado C16/D16) pesa tanto como el
+    # coste en los platos baratos y dispara el PVP necesario muy por encima
+    # de cualquier PRECIO_TECHO_APP realista: con el 30 % ORIGINAL, 0 de 20
+    # platos eran viables en delivery (medido 2026-09-03). Al 40 %, el
+    # denominador sube a 0,28 y 12 de 20 son viables con una carta de
+    # delivery con sentido: los platos de coste medio-alto (chuletón, lubina,
+    # tataki, bacalao, tabla de quesos) siguen fuera.
+    'fc_objetivo_delivery': 0.40,
 }
-# Precio techo en la app por plato (sin IVA): lo que el mercado local acepta; ejemplo.
+# Precio techo en la app por plato (sin IVA): lo que el mercado local acepta.
+# Factor ≈ ×1,35 sobre el PVP de sala (el diferencial real de las apps de
+# delivery, no el ×1,1-1,2 anterior que dejaba 0 platos viables incluso
+# subiendo el food cost objetivo).
 PRECIO_TECHO_APP = {
-    'E1': 10.50, 'E2': 12.90, 'E3': 17.50, 'E4': 11.50, 'E5': 14.50, 'E6': 12.00, 'E7': 8.20,
-    'P1': 19.90, 'P2': 21.50, 'P3': 15.90, 'P4': 18.50, 'P5': 34.90, 'P6': 23.90, 'P7': 14.50,
-    'P8': 12.90, 'P9': 24.90, 'D1': 6.90, 'D2': 6.20, 'D3': 6.90, 'D4': 4.90,
+    'E1': 11.60, 'E2': 15.90, 'E3': 20.90, 'E4': 13.20, 'E5': 18.40, 'E6': 14.70, 'E7': 9.70,
+    'P1': 23.40, 'P2': 25.80, 'P3': 18.40, 'P4': 22.10, 'P5': 44.10, 'P6': 29.40, 'P7': 17.10,
+    'P8': 15.40, 'P9': 30.20, 'D1': 8.00, 'D2': 7.40, 'D3': 8.40, 'D4': 6.10,
 }
 TIPO_PRODUCTO_PLATO = 'Comida'   # los 20 platos son comida; las bebidas van en su libro
 
@@ -285,6 +297,23 @@ FUENTE_BEVERAGE = ('CaixaBankLab × elBulliFoundation (https://www.caixabanklab.
 # 30-35 % con servicio en mesa (15-25 % en barra/autoservicio) → objetivo de
 # prime cost 65 % / 55 %. Fuente: CaixaBankLab × elBulliFoundation. El 60 % de
 # Toast (EE. UU.) se cita solo como contraste.
+#
+# CUADRO_MENSUAL modela el MISMO restaurante que la carta de PLATOS y la
+# bodega de VINOS/CERVEZAS_REFRESCOS/DESTILADOS/COCTELES (RESTAURANTE, más
+# arriba): «una sola fuente de cifras» (SPEC §7-bis.7). Las ventas netas de
+# comida y de bebida de cada mes están reescaladas para que la MEDIA del año
+# case con lo que ya facturan esos dos libros — comida × 1,15 (59.029 € frente
+# a los 51.333 € originales) y bebida × 1,985 (43.657 € frente a 21.992 €,
+# `Resumen Bodega!B8` de `carta-de-bebidas-beverage-cost.xlsx`) — conservando
+# la estacionalidad de cada mes. Compras, stocks y costes de personal suben en
+# la MISMA proporción que la facturación total de su mes (el factor blend =
+# ventas nuevas ÷ ventas viejas de ese mes, ≈ ×1,40 todo el año, porque el mix
+# comida/bebida original era casi constante mes a mes), para que el prime cost
+# siga en la banda realista 59-70 % en vez de dispararse solo porque sube el
+# numerador. Détail 2026-09-03: antes de este reescalado, el mix implícito de
+# la bodega era 57/43 % comida/bebida y el de este cuadro 70/30 % —el 70/30 es
+# el que cita `Parámetros!A24` como referencia (CaixaBankLab × elBulliFoundation)
+# y es el que se conserva—.
 # --------------------------------------------------------------------------
 PRIME_COST_OBJETIVO = {'Servicio en mesa': 0.65, 'Barra / autoservicio': 0.55}
 SS_EMPRESA = 0.33
@@ -292,31 +321,38 @@ MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto
          'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 # ventas netas comida, ventas netas bebida, stock inicial, compras, stock final, salarios brutos, otros costes de personal
 CUADRO_MENSUAL = [
-    (44800, 19200, 6900, 20100, 6700, 15400, 900),
-    (42100, 18000, 6700, 19300, 6500, 15400, 850),
-    (47600, 20400, 6500, 21900, 6800, 15900, 900),
-    (50200, 21500, 6800, 22400, 6600, 16100, 950),
-    (53900, 23100, 6600, 24800, 6900, 16600, 1000),
-    (55400, 23700, 6900, 26900, 6400, 17300, 1050),
-    (58100, 24900, 6400, 27200, 6700, 17800, 1100),
-    (49800, 21300, 6700, 24600, 6200, 17800, 1000),
-    (52700, 22600, 6200, 23300, 6800, 16400, 950),
-    (51300, 22000, 6800, 22700, 6600, 16100, 950),
-    (48900, 21000, 6600, 21800, 6900, 15900, 900),
-    (61200, 26200, 6900, 27900, 7400, 17600, 1200),
+    (51500, 38100, 9700, 28100, 9400, 21600, 1260),
+    (48400, 35700, 9400, 27000, 9100, 21600, 1190),
+    (54700, 40500, 9100, 30700, 9500, 22300, 1260),
+    (57700, 42700, 9500, 31400, 9200, 22500, 1330),
+    (62000, 45900, 9200, 34700, 9700, 23200, 1400),
+    (63700, 47000, 9700, 37700, 9000, 24200, 1470),
+    (66800, 49400, 9000, 38100, 9400, 24900, 1540),
+    (57300, 42300, 9400, 34400, 8700, 24900, 1400),
+    (60600, 44900, 8700, 32600, 9500, 23000, 1330),
+    (59000, 43700, 9500, 31800, 9200, 22500, 1330),
+    (56200, 41700, 9200, 30500, 9700, 22300, 1260),
+    (70400, 52000, 9700, 39100, 10400, 24600, 1680),
 ]
 
 # --------------------------------------------------------------------------
 # Plan de acción 90 días (capítulo 19 y libro 8): decisiones que SALEN de las
 # otras herramientas sobre la carta de ejemplo.
+#
+# Las 5 filas «Matriz multi-método» reproducen LITERALMENTE la columna J
+# («Decisión sugerida») de `matriz-multimetodo-carta.xlsx!Comparativa` para
+# estos platos (verificado 2026-09-03 contra el xlsx regenerado): Gambas al
+# ajillo → Revisar, Chuletón → Rediseñar, Tabla de quesos → Rediseñar, Lasaña
+# → Revisar, Fruta de temporada → Retirar. El plan no puede sugerir algo
+# distinto de la herramienta que cita como origen.
 # --------------------------------------------------------------------------
 DECISIONES_EJEMPLO = [
     # plato/área, herramienta de origen, decisión, responsable, semana, impacto €/mes estimado
-    ('Gambas al ajillo (E3)',           'Matriz multi-método', 'Resubir',    'Gerente',        2,  310.0),
-    ('Chuletón de vaca madurada (P5)',  'Matriz multi-método', 'Mantener',   'Jefe de cocina', 1,    0.0),
-    ('Tabla de quesos (E5)',            'Matriz multi-método', 'Retirar',    'Gerente',        4,  120.0),
-    ('Lasaña de verduras (P8)',         'Matriz multi-método', 'Reformular', 'Jefe de cocina', 3,  180.0),
-    ('Fruta de temporada (D4)',         'Matriz multi-método', 'Rediseñar',  'Jefe de cocina', 3,   60.0),
+    ('Gambas al ajillo (E3)',           'Matriz multi-método', 'Revisar',    'Gerente',        2,  180.0),
+    ('Chuletón de vaca madurada (P5)',  'Matriz multi-método', 'Rediseñar',  'Jefe de cocina', 1,  260.0),
+    ('Tabla de quesos (E5)',            'Matriz multi-método', 'Rediseñar',  'Gerente',        4,  140.0),
+    ('Lasaña de verduras (P8)',         'Matriz multi-método', 'Revisar',    'Jefe de cocina', 3,  120.0),
+    ('Fruta de temporada (D4)',         'Matriz multi-método', 'Retirar',    'Jefe de cocina', 3,   60.0),
     ('Lubina a la sal (P6) en delivery', 'Simulador multicanal', 'Retirar',  'Gerente',        2,   90.0),
     ('Chuletón (P5) en delivery',       'Simulador multicanal', 'Retirar',   'Gerente',        2,  140.0),
     ('Pescado entero: cambiar a lomos', 'Test de rendimiento', 'Negociar',   'Jefe de compras', 5, 260.0),

@@ -1,0 +1,885 @@
+{
+ "fichero": "matriz-multimetodo-carta.xlsx",
+ "hojas": {
+  "Datos": {
+   "celdas": {
+    "Total de unidades vendidas de la carta": "D32",
+    "Margen de contribución medio ponderado de la carta": "G32",
+    "Food cost medio ponderado de la carta": "H32",
+    "Ventas netas del mes de la carta": "I32",
+    "Factor del umbral de popularidad": "D33",
+    "Tipo de IVA de restauración en sala": "D34",
+    "Platos con ventas en la carta": "D35",
+    "Platos dados de alta en la carta": "D36",
+    "Entrantes: platos en carta": "C40",
+    "Entrantes: uds vendidas": "E40",
+    "Entrantes: mix sobre la carta": "F40",
+    "Entrantes: MC medio ponderado": "G40",
+    "Entrantes: food cost medio ponderado": "H40",
+    "Entrantes: ventas netas del mes": "I40",
+    "Principales: platos en carta": "C41",
+    "Principales: uds vendidas": "E41",
+    "Principales: mix sobre la carta": "F41",
+    "Principales: MC medio ponderado": "G41",
+    "Principales: food cost medio ponderado": "H41",
+    "Principales: ventas netas del mes": "I41",
+    "Postres: platos en carta": "C42",
+    "Postres: uds vendidas": "E42",
+    "Postres: mix sobre la carta": "F42",
+    "Postres: MC medio ponderado": "G42",
+    "Postres: food cost medio ponderado": "H42",
+    "Postres: ventas netas del mes": "I42",
+    "Menú: platos en carta": "C43",
+    "Menú: uds vendidas": "E43"
+   },
+   "tablas": [
+    {
+     "titulo": "Carta: 20 platos de ejemplo y 5 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Familia",
+       "C",
+       "txt"
+      ],
+      [
+       "Uds vendidas (mes)",
+       "D",
+       "num"
+      ],
+      [
+       "Coste por ración (€)",
+       "E",
+       "eur"
+      ],
+      [
+       "PVP sin IVA (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Margen de contribución (€)",
+       "G",
+       "eur"
+      ],
+      [
+       "Food cost (%)",
+       "H",
+       "pct1"
+      ],
+      [
+       "PVP con IVA en sala (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "Uds de su familia",
+       "J",
+       "num"
+      ],
+      [
+       "Platos de su familia con ventas",
+       "K",
+       "num"
+      ],
+      [
+       "Mix dentro de su familia (%)",
+       "L",
+       "pct1"
+      ],
+      [
+       "Umbral de popularidad de su familia (%)",
+       "M",
+       "pct1"
+      ],
+      [
+       "MC medio ponderado de su familia (€)",
+       "N",
+       "eur"
+      ],
+      [
+       "Food cost medio ponderado de su familia (%)",
+       "O",
+       "pct1"
+      ],
+      [
+       "MC ponderado del plato: MC × uds (€)",
+       "P",
+       "eur"
+      ],
+      [
+       "Media del MC ponderado de su familia (€)",
+       "Q",
+       "eur"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Resumen por familia",
+     "cols": [
+      [
+       "Familia",
+       "B",
+       "txt"
+      ],
+      [
+       "Platos en carta",
+       "C",
+       "num"
+      ],
+      [
+       "Platos con ventas",
+       "D",
+       "num"
+      ],
+      [
+       "Uds vendidas",
+       "E",
+       "num"
+      ],
+      [
+       "Mix sobre la carta (%)",
+       "F",
+       "pct1"
+      ],
+      [
+       "MC medio ponderado (€)",
+       "G",
+       "eur"
+      ],
+      [
+       "Food cost medio ponderado (%)",
+       "H",
+       "pct1"
+      ],
+      [
+       "Ventas netas del mes (€)",
+       "I",
+       "eur"
+      ]
+     ],
+     "filas": [
+      40,
+      43
+     ]
+    }
+   ]
+  },
+  "Kasavana-Smith": {
+   "celdas": {
+    "Platos Star": "C33",
+    "Uds de los Star": "D33",
+    "% de uds de los Star": "E33",
+    "MC total aportado por los Star": "F33",
+    "Platos Plowhorse": "C34",
+    "Uds de los Plowhorse": "D34",
+    "MC total aportado por los Plowhorse": "F34",
+    "Platos Puzzle": "C35",
+    "MC total aportado por los Puzzle": "F35",
+    "Platos Dog": "C36",
+    "Uds de los Dog": "D36",
+    "MC total aportado por los Dog": "F36"
+   },
+   "tablas": [
+    {
+     "titulo": "Clasificación Kasavana & Smith plato a plato",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Familia",
+       "C",
+       "txt"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "Mix dentro de su familia (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Umbral de popularidad de su familia (%)",
+       "F",
+       "pct1"
+      ],
+      [
+       "Popularidad",
+       "G",
+       "txt"
+      ],
+      [
+       "MC del plato (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "MC medio ponderado de su familia (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "Nivel de margen",
+       "J",
+       "txt"
+      ],
+      [
+       "Clasificación",
+       "K",
+       "txt"
+      ],
+      [
+       "Qué significa",
+       "L",
+       "txt"
+      ],
+      [
+       "Acción recomendada",
+       "M",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Resumen por clasificación",
+     "cols": [
+      [
+       "Clasificación",
+       "B",
+       "txt"
+      ],
+      [
+       "Platos",
+       "C",
+       "num"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "% de las uds de la carta",
+       "E",
+       "pct1"
+      ],
+      [
+       "MC total aportado (€)",
+       "F",
+       "eur"
+      ]
+     ],
+     "filas": [
+      33,
+      36
+     ]
+    }
+   ]
+  },
+  "Miller": {
+   "celdas": {
+    "Platos Winner": "C33",
+    "Uds de los Winner": "D33",
+    "% de uds de los Winner": "E33",
+    "Food cost medio ponderado de los Winner": "F33",
+    "Platos Marginal": "C34",
+    "Food cost medio ponderado de los Marginal": "F34",
+    "Platos Loser": "C35",
+    "% de uds de los Loser": "E35",
+    "Food cost medio ponderado de los Loser": "F35"
+   },
+   "tablas": [
+    {
+     "titulo": "Clasificación Miller plato a plato",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Familia",
+       "C",
+       "txt"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "Mix dentro de su familia (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Umbral de popularidad de su familia (%)",
+       "F",
+       "pct1"
+      ],
+      [
+       "Popularidad",
+       "G",
+       "txt"
+      ],
+      [
+       "Food cost del plato (%)",
+       "H",
+       "pct1"
+      ],
+      [
+       "Food cost medio ponderado de su familia (%)",
+       "I",
+       "pct1"
+      ],
+      [
+       "Nivel de food cost",
+       "J",
+       "txt"
+      ],
+      [
+       "Clasificación",
+       "K",
+       "txt"
+      ],
+      [
+       "Qué significa",
+       "L",
+       "txt"
+      ],
+      [
+       "Acción recomendada",
+       "M",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Resumen por clasificación",
+     "cols": [
+      [
+       "Clasificación",
+       "B",
+       "txt"
+      ],
+      [
+       "Platos",
+       "C",
+       "num"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "% de las uds de la carta",
+       "E",
+       "pct1"
+      ],
+      [
+       "Food cost medio ponderado del grupo (%)",
+       "F",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      33,
+      35
+     ]
+    }
+   ]
+  },
+  "Pavesic": {
+   "celdas": {
+    "Platos Prime": "C33",
+    "Uds de los Prime": "D33",
+    "% de uds de los Prime": "E33",
+    "MC ponderado total de los Prime": "F33",
+    "Platos Standard": "C34",
+    "MC ponderado total de los Standard": "F34",
+    "Platos Sleeper": "C35",
+    "MC ponderado total de los Sleeper": "F35",
+    "Platos Problem": "C36",
+    "% de uds de los Problem": "E36",
+    "MC ponderado total de los Problem": "F36"
+   },
+   "tablas": [
+    {
+     "titulo": "Clasificación Pavesic plato a plato",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Familia",
+       "C",
+       "txt"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "Food cost del plato (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Food cost medio ponderado de su familia (%)",
+       "F",
+       "pct1"
+      ],
+      [
+       "Nivel de food cost",
+       "G",
+       "txt"
+      ],
+      [
+       "MC ponderado: MC × uds (€)",
+       "H",
+       "eur"
+      ],
+      [
+       "Media del MC ponderado de su familia (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "Nivel de MC ponderado",
+       "J",
+       "txt"
+      ],
+      [
+       "Clasificación",
+       "K",
+       "txt"
+      ],
+      [
+       "Qué significa",
+       "L",
+       "txt"
+      ],
+      [
+       "Acción recomendada",
+       "M",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Resumen por clasificación",
+     "cols": [
+      [
+       "Clasificación",
+       "B",
+       "txt"
+      ],
+      [
+       "Platos",
+       "C",
+       "num"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "% de las uds de la carta",
+       "E",
+       "pct1"
+      ],
+      [
+       "MC ponderado total del grupo (€)",
+       "F",
+       "eur"
+      ]
+     ],
+     "filas": [
+      33,
+      36
+     ]
+    }
+   ]
+  },
+  "Goal Value": {
+   "celdas": {
+    "Coste de personal sobre ventas": "D33",
+    "Otros costes variables sobre ventas": "D34",
+    "Goal Value medio de la carta": "D35",
+    "Platos por encima del objetivo de su familia": "D36",
+    "Platos por debajo del objetivo de su familia": "D37"
+   },
+   "tablas": [
+    {
+     "titulo": "Goal Value plato a plato",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Familia",
+       "C",
+       "txt"
+      ],
+      [
+       "Uds vendidas",
+       "D",
+       "num"
+      ],
+      [
+       "Food cost del plato (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "PVP sin IVA (€)",
+       "F",
+       "eur"
+      ],
+      [
+       "Goal Value del plato",
+       "G",
+       "eur"
+      ],
+      [
+       "Uds medias de su familia",
+       "H",
+       "num"
+      ],
+      [
+       "PVP medio ponderado de su familia (€)",
+       "I",
+       "eur"
+      ],
+      [
+       "Food cost medio ponderado de su familia (%)",
+       "J",
+       "pct1"
+      ],
+      [
+       "Goal Value objetivo de su familia",
+       "K",
+       "eur"
+      ],
+      [
+       "Lectura",
+       "L",
+       "txt"
+      ],
+      [
+       "Distancia al objetivo (€)",
+       "M",
+       "eur"
+      ],
+      [
+       "Qué revisar",
+       "N",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    }
+   ]
+  },
+  "Comparativa": {
+   "celdas": {
+    "Platos con 0 lecturas fuera de la mejor categoría": "C33",
+    "Platos con 1 lectura fuera": "C34",
+    "Platos con 2 lecturas fuera": "C35",
+    "Platos con 3 lecturas fuera": "C36",
+    "Platos con 4 lecturas fuera": "C37",
+    "% de la carta con 0 lecturas fuera": "D33",
+    "% de la carta con 2 lecturas fuera": "D35",
+    "Platos con las cuatro lecturas en la mejor categoría": "C39",
+    "Platos con tres o cuatro lecturas fuera": "C40"
+   },
+   "tablas": [
+    {
+     "titulo": "Las cuatro lecturas del mismo plato",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Familia",
+       "C",
+       "txt"
+      ],
+      [
+       "Kasavana & Smith",
+       "D",
+       "txt"
+      ],
+      [
+       "Miller",
+       "E",
+       "txt"
+      ],
+      [
+       "Pavesic",
+       "F",
+       "txt"
+      ],
+      [
+       "Goal Value",
+       "G",
+       "txt"
+      ],
+      [
+       "Lecturas fuera de la mejor categoría",
+       "H",
+       "num"
+      ],
+      [
+       "Diagnóstico",
+       "I",
+       "txt"
+      ],
+      [
+       "Decisión sugerida",
+       "J",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      29
+     ]
+    },
+    {
+     "titulo": "Cuántos platos discrepan",
+     "cols": [
+      [
+       "Lecturas fuera de la mejor categoría",
+       "B",
+       "num"
+      ],
+      [
+       "Platos",
+       "C",
+       "num"
+      ],
+      [
+       "% de la carta",
+       "D",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      33,
+      37
+     ]
+    }
+   ]
+  },
+  "Menú Precio Fijo": {
+   "celdas": {
+    "PVP del menú con IVA": "C19",
+    "Tipo de IVA de restauración en sala": "C20",
+    "PVP del menú sin IVA": "C21",
+    "Costes fijos por menú": "C22",
+    "Food cost objetivo del menú": "C23",
+    "Menús servidos al mes": "C24",
+    "Coste medio de los primeros (mix base)": "C27",
+    "Coste medio de los segundos (mix base)": "C28",
+    "Coste medio de los postres (mix base)": "C29",
+    "Coste medio de los primeros (escenario A)": "E27",
+    "Coste medio de los primeros (escenario B)": "G27",
+    "Coste medio total del menú (mix base)": "B38",
+    "Coste medio total del menú (escenario A)": "C38",
+    "Coste medio total del menú (escenario B)": "D38",
+    "Food cost del menú (mix base)": "B39",
+    "Food cost del menú (escenario A)": "C39",
+    "Food cost del menú (escenario B)": "D39",
+    "Margen de contribución por menú (mix base)": "B40",
+    "Margen de contribución por menú (escenario A)": "C40",
+    "Margen de contribución por menú (escenario B)": "D40",
+    "Margen sobre los menús servidos al mes (mix base)": "B41",
+    "Margen sobre los menús servidos al mes (escenario A)": "C41",
+    "Margen sobre los menús servidos al mes (escenario B)": "D41"
+   },
+   "tablas": [
+    {
+     "titulo": "Opciones del menú por curso",
+     "cols": [
+      [
+       "Curso",
+       "A",
+       "txt"
+      ],
+      [
+       "Opción",
+       "B",
+       "txt"
+      ],
+      [
+       "Coste por ración (€)",
+       "C",
+       "eur"
+      ],
+      [
+       "Mix base (%)",
+       "D",
+       "pct0"
+      ],
+      [
+       "Mix escenario A (%)",
+       "E",
+       "pct0"
+      ],
+      [
+       "Mix escenario B (%)",
+       "F",
+       "pct0"
+      ]
+     ],
+     "filas": [
+      5,
+      16
+     ]
+    },
+    {
+     "titulo": "Coste medio ponderado por curso",
+     "cols": [
+      [
+       "Curso",
+       "A",
+       "txt"
+      ],
+      [
+       "Suma del mix base (%)",
+       "B",
+       "pct0"
+      ],
+      [
+       "Coste medio base (€)",
+       "C",
+       "eur"
+      ],
+      [
+       "Suma del mix A (%)",
+       "D",
+       "pct0"
+      ],
+      [
+       "Coste medio A (€)",
+       "E",
+       "eur"
+      ],
+      [
+       "Suma del mix B (%)",
+       "F",
+       "pct0"
+      ],
+      [
+       "Coste medio B (€)",
+       "G",
+       "eur"
+      ]
+     ],
+     "filas": [
+      27,
+      29
+     ]
+    },
+    {
+     "titulo": "Resultado del menú por escenario de mix",
+     "cols": [
+      [
+       "Concepto",
+       "A",
+       "txt"
+      ],
+      [
+       "Mix base",
+       "B",
+       "eur"
+      ],
+      [
+       "Escenario A",
+       "C",
+       "eur"
+      ],
+      [
+       "Escenario B",
+       "D",
+       "eur"
+      ]
+     ],
+     "filas": [
+      34,
+      41
+     ]
+    }
+   ]
+  }
+ }
+}

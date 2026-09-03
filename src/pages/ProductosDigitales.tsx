@@ -4,8 +4,8 @@ import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
-  ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
-  ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
+  ArrowRight, BookOpen, Calculator, FileSpreadsheet, Star, Check, Clock,
+  ShieldCheck, BarChart3, Utensils, Users, Truck, Package, TrendingUp,
   ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid,
 } from 'lucide-react';
 
@@ -101,6 +101,23 @@ const products = [
     badge: '🔥 Más Vendido',
     badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
     tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Guía Food Cost + Ingeniería de Menú',
+    slug: '/guia-food-cost-ingenieria-menu',
+    price: '€55',
+    description: 'Método completo para escandallar, poner precio y decidir tu carta: IVA por canal, delivery, bebidas y prime cost. 20 capítulos + 8 Excel con fórmulas vivas.',
+    features: [
+      '20 capítulos + 8 herramientas Excel',
+      '4 metodologías de ingeniería de menú cruzadas',
+      'IVA por canal: sala, para llevar y delivery',
+      'Bonus: 12 ejercicios resueltos',
+    ],
+    icon: Calculator,
+    image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'plantillas', 'guias', 'costes', 'gestion', 'restaurante', 'bar', 'pasteleria', 'dark-kitchen', 'hotel', 'catering'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -892,7 +909,6 @@ const comingSoon = [
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
   { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },
   { icon: Coffee, name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Julio 2026' },
-  { icon: GraduationCap, name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes', 'restaurante'], phase: 'Julio 2026' },
 ];
 
 const PRODUCTS_PER_PAGE = 12;
@@ -966,7 +982,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 7, "url": "https://aichef.pro/kit-plan-financiero", "name": "Kit Plan Financiero para Restaurantes" },
               { "@type": "ListItem", "position": 8, "url": "https://aichef.pro/kit-gestion-personal", "name": "Kit Gestión de Personal y Turnos" },
               { "@type": "ListItem", "position": 9, "url": "https://aichef.pro/kit-tareas", "name": "Tareas Recurrentes: Restaurante Casual" },
-              { "@type": "ListItem", "position": 10, "url": "https://aichef.pro/kit-tareas-hotel", "name": "Tareas Recurrentes: Hotel Completo" }
+              { "@type": "ListItem", "position": 10, "url": "https://aichef.pro/kit-tareas-hotel", "name": "Tareas Recurrentes: Hotel Completo" },
+              { "@type": "ListItem", "position": 11, "url": "https://aichef.pro/guia-food-cost-ingenieria-menu", "name": "Guía Food Cost + Ingeniería de Menú" }
             ]
           }
         })}</script>
@@ -1120,10 +1137,12 @@ export default function ProductosDigitales() {
                       <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
                         <div className="flex items-center gap-2">
                           <span className="text-2xl font-extrabold text-[#FFD700]">{product.price}</span>
-                          <span className="text-sm text-gray-500 line-through">{product.originalPrice}</span>
-                          <span className="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-[10px] font-bold">
-                            {product.discount}
-                          </span>
+                          {product.originalPrice && <span className="text-sm text-gray-500 line-through">{product.originalPrice}</span>}
+                          {product.discount && (
+                            <span className="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-[10px] font-bold">
+                              {product.discount}
+                            </span>
+                          )}
                         </div>
                         <div className="flex items-center gap-1 text-[#FFD700] text-xs font-medium group-hover:gap-2 transition-all">
                           Ver
