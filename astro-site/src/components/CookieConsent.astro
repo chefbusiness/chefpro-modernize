@@ -17,6 +17,13 @@
  * Detalle que evita un salto de maquetación: arranca oculto con `hidden` y sólo
  * se muestra por JS si no hay decisión previa, así que quien ya decidió no ve
  * ni un parpadeo.
+ *
+ * Publica su ALTURA REAL en `--aichef-cookie-h` (2026-09-03). Es `fixed bottom-0`
+ * a lo ancho y con z-index 100, así que en la primera visita tapaba los botones
+ * flotantes de WhatsApp de la esquina; con la variable, `global.css` los aparta
+ * exactamente lo que mide el banner y los devuelve a su sitio al decidir. Se mide
+ * en vez de fijar un número porque el alto cambia con el idioma y el breakpoint
+ * (en móvil es una columna de ~200 px y en escritorio una fila de ~90 px).
  */
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
@@ -79,7 +86,19 @@ const legalHref = (slug: string) => (lang === 'es' ? `/${slug}` : `/${lang}/${sl
     var decidido = typeof window.aichefLeeConsent === 'function' ? window.aichefLeeConsent() : null;
     if (decidido === 'accepted' || decidido === 'rejected') return;
 
+    // Altura del banner → --aichef-cookie-h, para que los botones flotantes de
+    // WhatsApp se aparten justo lo que ocupa (ver global.css). El ResizeObserver
+    // cubre el giro del móvil y el reflow del texto al cambiar el ancho.
+    var raiz = document.documentElement;
+    function publicaAlto() {
+      raiz.style.setProperty(
+        '--aichef-cookie-h', caja.hidden ? '0px' : caja.offsetHeight + 'px'
+      );
+    }
+
     caja.hidden = false;
+    publicaAlto();
+    if (typeof ResizeObserver === 'function') new ResizeObserver(publicaAlto).observe(caja);
 
     caja.addEventListener('click', function (ev) {
       var btn = ev.target.closest('[data-consent]');
@@ -94,6 +113,7 @@ const legalHref = (slug: string) => (lang === 'es' ? `/${slug}` : `/${lang}/${sl
           + '; path=/; domain=.aichef.pro; max-age=15552000; SameSite=Lax; Secure';
       } catch (e) { /* noop */ }
       caja.hidden = true;
+      publicaAlto();
     });
   })();
 </script>

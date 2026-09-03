@@ -7,7 +7,6 @@ import { CheckCircle, ArrowRight, ChefHat, TrendingDown, Clock, Star, Utensils, 
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -305,7 +304,6 @@ export default function HerramientasIARestaurantes() {
       </main>
 
       <ModernFooter />
-      <WhatsAppFloatingButton />
     </div>
   );
 }

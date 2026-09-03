@@ -4,12 +4,15 @@
 // Island client:only="react": ProtectedRoute lee localStorage en render
 // síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
 // Title verbatim del <title> del Helmet de PlanChefPrivadoShowcookingEventosDashboard.tsx (extraído por el generador).
+// whatsapp={false}: el dashboard monta su PROPIO WhatsAppProductSupport (React,
+// mensaje de soporte post-compra prerellenado). Sin esto saldría también el botón
+// global que BaseLayout pinta desde 2026-09-03 y se verían DOS superpuestos.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
 import PlanChefPrivadoShowcookingEventosLibraryIsland from '../islands/library/PlanChefPrivadoShowcookingEventosLibraryIsland';
 ---
 
-<BaseLayout title="Plan de Negocio Chef Privado / Showcooking — Dashboard | AI Chef Pro" noindex>
+<BaseLayout title="Plan de Negocio Chef Privado / Showcooking — Dashboard | AI Chef Pro" noindex whatsapp={false}>
   <FunctionsOriginPatch />
   <PlanChefPrivadoShowcookingEventosLibraryIsland client:only="react" />
 </BaseLayout>

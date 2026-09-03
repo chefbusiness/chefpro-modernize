@@ -10,7 +10,6 @@ import {
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useLiveUserCount } from '@/hooks/useLiveUserCount';
@@ -337,7 +336,6 @@ export default function HerramientasGratuitas() {
       </main>
 
       <ModernFooter />
-      <WhatsAppFloatingButton />
     </div>
   );
 }

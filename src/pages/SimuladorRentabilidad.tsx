@@ -10,7 +10,6 @@ import { TrendingUp, ArrowRight, CheckCircle, ChefHat, Download } from 'lucide-r
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -632,7 +631,6 @@ export default function SimuladorRentabilidad() {
       </main>
 
       <ModernFooter />
-      <WhatsAppFloatingButton />
     </div>
   );
 }

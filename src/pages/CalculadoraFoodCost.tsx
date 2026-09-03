@@ -10,7 +10,6 @@ import { Calculator, Plus, Trash2, ArrowRight, CheckCircle, ChefHat, Download } 
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -655,7 +654,6 @@ export default function CalculadoraFoodCost() {
       </main>
 
       <ModernFooter />
-      <WhatsAppFloatingButton />
     </div>
   );
 }

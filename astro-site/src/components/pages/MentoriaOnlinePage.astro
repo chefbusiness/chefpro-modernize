@@ -15,7 +15,6 @@ import { t, tList } from '../../i18n/translations';
 import type { Locale } from '../../i18n/config';
 import Header from '../Header.astro';
 import Footer from '../Footer.astro';
-import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -517,5 +516,4 @@ const intensiveFeatures = tList(lang, 'mentoriaOnline.sections.pricing.intensive
   </main>
 
   <Footer lang={lang} />
-  <WhatsAppFloatingButton lang={lang} />
 </div>

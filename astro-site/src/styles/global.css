@@ -405,3 +405,23 @@
     box-shadow: 0 0 20px rgba(251, 191, 36, 0.15);
   }
 }
+
+
+/* El banner de cookies es `fixed bottom-0` a lo ancho y con z-index 100, así que
+   en la primera visita tapaba el botón flotante de WhatsApp de la esquina. Se
+   aparta con `transform` en lugar de reescribir `bottom` a propósito: hay TRES
+   variantes del botón con anclajes distintos (el global a `bottom-6`; el de
+   soporte de las landings y el React de los dashboards a `bottom-20` en móvil,
+   para librar su barra sticky de compra) y un desplazamiento relativo respeta el
+   de cada una. La altura la publica CookieConsent.astro; sin banner la variable
+   no existe, el fallback es 0px y nada se mueve. */
+a[href^="https://wa.me/"][class*="fixed"] {
+  transform: translateY(calc(-1 * var(--aichef-cookie-h, 0px)));
+  transition: transform 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a[href^="https://wa.me/"][class*="fixed"] {
+    transition: none;
+  }
+}

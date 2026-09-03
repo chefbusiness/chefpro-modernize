@@ -264,6 +264,45 @@ Resultado, medido en GSC: **27 URLs sin poder rastrearse desde el 1 de agosto** 
 - Gate: **`python3 scripts/astro-migration/robots-gate.py`** — implementa la spec de Google (comodín, `$`, gana el path más largo y en empate Allow; validado contra Protego en 6.445 decisiones) y comprueba, para cada user-agent del fichero, que **toda URL del `dist/` es rastreable** y que **toda ruta de la zona app está bloqueada**. Con el `robots.txt` viejo canta las 27; con el nuevo, cero. **Correrlo siempre que se toque `robots.txt` o nazca una familia de producto.**
 - Regla general: **al publicar contenido nuevo, comprobar que su URL no cae en ningún patrón de `robots.txt`**. Cuesta un comando y aquí ha costado casi un mes de indexación de 26 posts.
 
+### El widget de WhatsApp lo pinta el LAYOUT, no cada página (2026-09-03)
+
+John lo cazó a ojo: estaba en las home y en poco más. Medido sobre el `dist`:
+**655 de 1.312 páginas**. Faltaba en el **blog entero** (ES + EN), `/precios`,
+`/contacto`, el hub de librerías, los legales y los **44 gates de acceso** — o
+sea, justo donde llega el tráfico de SEO. No fallaba nada: cada página lo
+montaba **a mano** y a nadie se le ocurrió que faltase.
+
+Ahora lo pinta `BaseLayout.astro` para todo el sitio. Lo que hay que saber antes
+de tocarlo es que **existen TRES implementaciones del mismo botón** y por eso el
+riesgo al centralizarlo no era la falta, era el **duplicado**:
+
+| Implementación | Dónde | Por qué es distinta |
+|---|---|---|
+| `components/WhatsAppFloatingButton.astro` | **global, en `BaseLayout`** | `aria-label` del i18n (7 idiomas), `bottom-6` |
+| `<a>` inline en las 7 plantillas de landing | 45 landings de producto | mensaje **prerellenado** de soporte + `bottom-20` en móvil para no quedar debajo de su barra sticky |
+| `WhatsAppProductSupport` (React) | 44 dashboards `-library` | va dentro de un island `client:only`, **no está en el HTML** |
+
+Esas 89 páginas pasan **`whatsapp={false}`** a `BaseLayout` o saldrían **dos
+botones superpuestos**, con doble animación y sin un solo aviso en el build.
+La plantilla de `fase5-generate-zona-app.py` ya lo emite (los `-library` son
+generados: editar el generador, no el fichero).
+
+**Y el banner de cookies lo tapaba.** Es `fixed bottom-0` a lo ancho con
+z-index 100, así que en la primera visita se comía el botón de la esquina — en
+todo el sitio, no sólo donde acababa de aparecer. `CookieConsent.astro` publica
+ahora su **altura real** en `--aichef-cookie-h` (medida, no un número fijo: son
+~90 px en escritorio y ~190 px en móvil, y cambia con el idioma) y `global.css`
+aparta con `transform` **todos** los flotantes de WhatsApp. Se desplaza en vez de
+reescribir `bottom` porque las tres variantes tienen anclajes distintos y un
+desplazamiento relativo respeta el de cada una; al decidir vuelven a su sitio.
+
+**Gate: `python3 scripts/astro-migration/whatsapp-gate.py`** — exige exactamente
+1 botón flotante por página del `dist` y que las únicas 44 sin él sean los
+dashboards. Correrlo al tocar el layout, las landings o la zona app. Probado
+contra 4 defectos inyectados a mano: los caza los 4 (uno de ellos sólo tras
+arreglar que `fr.html` se leía como española — con `build.format: 'file'` la
+portada de cada idioma **no** es `fr/index.html`).
+
 ### Banners de productos digitales: política obligatoria
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.

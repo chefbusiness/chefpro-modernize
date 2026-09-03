@@ -106,12 +106,15 @@ LIBRARY_TPL = """---
 // Island client:only="react": ProtectedRoute lee localStorage en render
 // síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
 // Title verbatim del <title> del Helmet de {dash}.tsx (extraído por el generador).
+// whatsapp={{false}}: el dashboard monta su PROPIO WhatsAppProductSupport (React,
+// mensaje de soporte post-compra prerellenado). Sin esto saldría también el botón
+// global que BaseLayout pinta desde 2026-09-03 y se verían DOS superpuestos.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
 import {island} from '../islands/library/{island}';
 ---
 
-<BaseLayout title="{title}" noindex>
+<BaseLayout title="{title}" noindex whatsapp={{false}}>
   <FunctionsOriginPatch />
   <{island} client:only="react" />
 </BaseLayout>
