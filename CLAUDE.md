@@ -16,6 +16,18 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 > Un contenido sin research/SERP previo, o sin tablas/datos/FAQ/≥2 imágenes + destacada única, **no está terminado**.
 
+### 🔴 Matiz del 2026-09-04 (John): `bridge.py` NO se usa para PRODUCTOS DIGITALES
+
+«No usemos el bridge para desarrollo de productos a partir de ahora, y lo dejamos para tema SEO y
+contenidos web… tú con tus subagentes nativos Anthropic: opus, sonnet, haiku». Aplica a guías, bonus,
+planes, manuales y ejercicios: el texto lo escriben **subagentes Anthropic** (sonnet por defecto) a partir
+del guion `guion_<pid>.py`, con el patrón `guias-v2_0/dump_prompts.py` (vuelca los prompts exactos que
+construye `documentos.py`) → un agente por bloque que escribe en la caché `txt/` y verifica con
+`guias-v2_0/check_bloque.py` → `documentos.py` solo ensambla y pasa los gates. Motivo medido en el
+lanzamiento de la Guía Food Cost: bridge en serie a 40 s/bloque, DeepSeek flash devolviendo vacío en los
+bloques con cifras, y un falso positivo que paró el pipeline 40 minutos; con 44 agentes en paralelo los
+bloques salen en minutos. **El blog y las landings de captación siguen con bridge.py.**
+
 ### ⚠️ El punto 2 tiene matiz: el MODELO se elige por tipo de contenido (John, 2026-08-08)
 
 `bridge.py` sigue siendo la vía por defecto —es mucho más barato— pero **DeepSeek no vale para todo**, y la decisión de qué motor usar es de criterio, no automática. `bridge.py` acepta `--model` con cualquier slug de OpenRouter, así que cambiar de motor es un parámetro.
