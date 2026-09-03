@@ -2,7 +2,7 @@
 title: "Calculadora de Food Cost: Comparativa 2026 con IA y Excel"
 description: "Comparativa 2026 de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, de pago."
 pubDate: 2026-03-20
-modDate: 2026-08-31
+modDate: 2026-09-03
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/calculadora-food-cost-ia-img1.jpg
 imageAlt: "Las Mejores Calculadoras de Food Cost con IA 2026: Guía Comparativa"
@@ -32,6 +32,8 @@ Lo reconozco: he pasado más horas delante de una hoja de cálculo que delante d
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/calculadora-food-cost-ia-img2.jpg" alt="Gerente de restaurante calculando food cost en pizarra con formula de costes e ingredientes"/><figcaption>El food cost se calcula dividiendo el coste de ingredientes entre el precio de venta del plato</figcaption></figure>
 
 
+
+<p>Una calculadora te da el número; decidir qué hacer con él es otra disciplina. El método completo, con ocho herramientas Excel de fórmulas vivas, está en la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>.</p>
 
 ## Qué mide realmente una calculadora de food cost (y qué no)
 
@@ -136,7 +138,7 @@ Y sí, hay [plan AI Chef Miembro](https://aichef.pro/calculadora-food-cost-resta
 
 
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejores-calculadoras-food-cost-ia-comparativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Food Cost + Ingeniería de Menú</h3><p class="mt-2 text-muted-foreground">Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.</p><a href="/guia-food-cost-ingenieria-menu?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mejores-calculadoras-food-cost-ia-comparativa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Food Cost + Ingeniería de Menú por €55</a></aside>
 
 ## Planes y precios de AI Chef Pro (2026)
 

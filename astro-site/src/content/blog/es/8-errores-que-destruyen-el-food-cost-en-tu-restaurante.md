@@ -2,7 +2,7 @@
 title: "8 Errores de Food Cost que Arruinan tu Restaurante"
 description: "Los 8 errores de food cost que sangran tu restaurante: síntoma, coste real y cómo corregirlos con IA. Con rangos sanos por tipo de local en 2026."
 pubDate: 2026-02-25
-modDate: 2026-08-31
+modDate: 2026-09-03
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/8-errores-food-cost-aichefpro-3.jpg
 imageAlt: "8 Errores que Destruyen el Food Cost en tu Restaurante (y Cómo Solucionarlos)"
@@ -32,6 +32,8 @@ Abajo tienes los 8 errores desglosados con la misma estructura que uso cuando en
 <figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
+
+<p>Los ocho errores de este artículo se corrigen con método, no con una fórmula suelta: el IVA por canal, el food cost teórico frente al real, el prime cost y la ingeniería de menú con varios modelos están desarrollados, con sus plantillas Excel, en la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>.</p>
 
 ## Rangos de Food Cost Sanos por Tipo de Local en 2026
 
@@ -114,7 +116,7 @@ Tienes la carta que imprimiste en enero y estamos en octubre. El proveedor de ca
 
 La IA te permite hacer un reprecio guiado por tu food cost objetivo y aplicar ingeniería de menú en serio: identificar qué platos son estrellas (buen margen, alta rotación), cuáles son caballos de batalla (poco margen pero salen mucho), cuáles debes rediseñar y cuáles retirar directamente. Antes de tocar precios a lo loco, te conviene echar un vistazo a la [calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante) para tener claro de qué punto partes. Porque subir precios sin datos es tan peligroso como no subirlos nunca.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=8-errores-que-destruyen-el-food-cost-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Food Cost + Ingeniería de Menú</h3><p class="mt-2 text-muted-foreground">Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.</p><a href="/guia-food-cost-ingenieria-menu?utm_source=blog&amp;utm_medium=banner&amp;utm_content=8-errores-que-destruyen-el-food-cost-en-tu-restaurante" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Food Cost + Ingeniería de Menú por €55</a></aside>
 
 ## Resumen de los 8 Errores
 

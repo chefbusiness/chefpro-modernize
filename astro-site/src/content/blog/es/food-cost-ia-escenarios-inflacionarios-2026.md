@@ -2,7 +2,7 @@
 title: "Subida de Precios Alimentos: Protege tu Margen 2026"
 description: "Ante la subida de precios de alimentos en tu restaurante, protege el margen con reingeniería de recetas, sustituciones y repricing. Simula con IA."
 pubDate: 2026-02-22
-modDate: 2026-08-31
+modDate: 2026-09-03
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/foodcost-ia-featured-1.jpg
 imageAlt: "Cómo proteger tu food cost con IA ante la subida de precios de alimentos en 2026"
@@ -32,6 +32,8 @@ El objetivo no es que el cliente pague más y se vaya con la sensación de que l
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/02/foodcost-ia-1.jpg" alt="Gráfico de inflación de precios alimentos restaurantes 2026" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;"></figure>
 
 
+
+<p>Si quieres el protocolo completo de re-escandallado cuando sube el proveedor, con el simulador de precios por canal y la matriz de ingeniería de menú en Excel, está en la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>.</p>
 
 ## Por qué subir la carta a ciegas es el peor error ante una subida de precios
 
@@ -125,7 +127,7 @@ Esto no es teoría. Es una lista de acciones concretas que puedes ejecutar desde
 | Repricing | Analizar los bestsellers y los platos ancla; decidir qué platos subir, cuánto y en qué fecha | Elasticidad de la demanda: ¿cae la venta del plato subido?; food cost post-subida | Programar 2-4 rondas al año, ligadas a cambios de carta o temporada |
 | Control de merma | Pesar mermas reales de los cinco ingredientes más caros durante una semana completa | Porcentaje de merma real vs. merma teórica del escandallo | Semanal durante un mes para establecer línea base; luego mensual |
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-cost-ia-escenarios-inflacionarios-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Food Cost + Ingeniería de Menú</h3><p class="mt-2 text-muted-foreground">Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.</p><a href="/guia-food-cost-ingenieria-menu?utm_source=blog&amp;utm_medium=banner&amp;utm_content=food-cost-ia-escenarios-inflacionarios-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Food Cost + Ingeniería de Menú por €55</a></aside>
 
 ## Errores que sabotean tu defensa del margen
 

@@ -2,7 +2,7 @@
 title: "Escandallo de Cocina: Guía Paso a Paso con Ejemplo"
 description: "Qué es un escandallo de cocina y cómo se hace paso a paso: ejemplo numérico completo, tabla de mermas, errores típicos y cómo automatizarlo con IA."
 pubDate: 2026-03-13
-modDate: 2026-08-31
+modDate: 2026-09-03
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/escandallo-cocina-profesional-ia-chef-calculando-costes.jpg
 imageAlt: "Chef profesional calculando escandallos con IA en cocina de restaurante Madrid"
@@ -24,6 +24,8 @@ faq:
 ---
 
 El escandallo de cocina es el cálculo detallado del coste de materia prima de cada plato. Sirve para saber exactamente cuánto te cuesta producir una ración y, a partir de ahí, fijar un precio de venta que garantice rentabilidad. En hostelería, el food cost objetivo suele moverse entre el 28% y el 35% del PVP (sin impuestos). Si no escandallas, estás cocinando a ciegas.
+
+<p>Este artículo enseña a escandallar un plato. Lo que viene después —fijar el precio por cuatro métodos, clasificar la carta y ajustar el delivery— lo desarrolla la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>.</p>
 
 ## Qué Es un Escandallo de Cocina
 
@@ -115,7 +117,7 @@ Ahora bien, ese 30% no es una verdad absoluta. Según el tipo de restaurante y e
 
 Bajar el food cost al 25% dispara el precio a 17,16 € y deja 12,87 € de margen, pero puede sacarte del mercado si tu clientela no percibe ese valor. Subirlo al 35% baja el precio a 12,26 €, pero recortas notablemente el margen. La decisión no es solo matemática: tienes que equilibrar margen, percepción de precio y lo que tu competencia directa ofrece. Para profundizar en el cálculo y ver cómo la IA puede simplificarlo, tienes [una guía práctica sobre cómo calcular el costo de una receta](https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia). Y si necesitas hacer números rápido sin depender de hojas de cálculo propensas a errores, prueba [la calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante).
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escandallos-ia-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Food Cost + Ingeniería de Menú</h3><p class="mt-2 text-muted-foreground">Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.</p><a href="/guia-food-cost-ingenieria-menu?utm_source=blog&amp;utm_medium=banner&amp;utm_content=escandallos-ia-cocina-profesional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Food Cost + Ingeniería de Menú por €55</a></aside>
 
 ## Errores Típicos que se Comen tu Beneficio
 

@@ -2,7 +2,7 @@
 title: "Qué Son las Mermas en Cocina: Tipos, Cálculo y Fórmulas"
 description: "Qué son las mermas en cocina, sus tipos con tabla, las fórmulas para calcularlas paso a paso y el rendimiento real de cada producto. Guía de chef."
 pubDate: 2024-10-19
-modDate: 2026-08-31
+modDate: 2026-09-03
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/que-es-la-merma-blog-ai-chef-pro.png
 imageAlt: "que es la merma en cocina"
@@ -32,6 +32,8 @@ En 2026, con los precios de la materia prima en máximos y los márgenes más aj
 <figure class="wp-block-image size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="948" height="237" data-attachment-id="658" data-orig-file="/blog-assets/2024/10/podcast-aichef-pro-bb.gif" data-orig-size="948,237" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="podcast aichef pro bb" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2024/10/podcast-aichef-pro-bb.gif" src="/blog-assets/2024/10/podcast-aichef-pro-bb.gif" alt="podcast ai chef pro" class="wp-image-658"></figure>
 
 
+
+<p>La merma medida con tu proveedor y tu cuchillo, y no la de una tabla genérica, es el primer capítulo práctico de la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>, que incluye la plantilla del test de rendimiento.</p>
 
 ## Por qué las mermas golpean tu cuenta de resultados
 
@@ -127,7 +129,7 @@ Medir la merma no es un fin en sí mismo: es el punto de partida. Sin ese dato, 
 
 Ahora que tienes claro qué es la merma, cómo se calcula y por qué duele tanto al bolsillo, el siguiente paso lógico es pasar a la acción. Te invito a leer la guía operativa que complementa este artículo: [cómo reducir las mermas en tu restaurante con IA](https://aichef.pro/blog/reducir-mermas-restaurante-ia). Ahí encontrarás procesos concretos, checklist y el uso de tecnología para atajar cada tipo de merma desde mañana mismo.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Food Cost + Ingeniería de Menú</h3><p class="mt-2 text-muted-foreground">Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.</p><a href="/guia-food-cost-ingenieria-menu?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Food Cost + Ingeniería de Menú por €55</a></aside>
 
 ## Preguntas frecuentes
 

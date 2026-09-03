@@ -2,7 +2,7 @@
 title: "Ingeniería de Menú Restaurante: Carta Rentable con IA"
 description: "Ingeniería de menú para tu restaurante: la matriz de rentabilidad, un ejemplo numérico con 8 platos, psicología de precios de carta y automatización con IA."
 pubDate: 2026-03-24
-modDate: 2026-08-31
+modDate: 2026-09-03
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a4-ia-1.jpg
 imageAlt: "Chef y gerente diseñando carta rentable con IA"
@@ -26,6 +26,8 @@ faq:
 Llevo 29 años entre fogones y 15 asesorando restaurantes de todos los tamaños, y si hay algo que separa una cocina rentable de un agujero negro disfrazado de carta es la **ingeniería de menú restaurante**. No hablo de diseño gráfico ni de cambiar la tipografía. Hablo de cruzar dos números que tu TPV ya tiene: el **margen de contribución** —lo que te queda en caja después de pagar la materia prima de cada plato— y las **unidades vendidas**. Con ese cruce decides qué platos empujar, cuáles subir de precio, cuáles reposicionar y cuáles jubilar sin miramientos. En el sector manejamos referencias orientativas de 2026 que apuntan a que una buena **ingeniería de menú** puede subir el margen del restaurante entre un 15 % y un 25 %, y las ventas entre un 10 % y un 15 %. No es magia: es gestión de carta con método.
 
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/a4-ia-2.jpg" alt="Chef revisando precios y márgenes de la carta con calculadora y libreta de escandallos"/><figcaption>Cruzar margen de contribución y ventas es la base de una carta rentable</figcaption></figure>
+
+<p>La matriz de este artículo es la de Kasavana y Smith. Cruzarla con Miller, Pavesic y el Goal Value, y ver en qué platos discrepan, es el corazón de la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>, que trae la matriz multi-método en Excel.</p>
 
 ## Qué es la ingeniería de menú (y por qué tu carta actual pierde dinero)
 
@@ -56,7 +58,7 @@ La **matriz de rentabilidad y popularidad** divide tu carta en cuatro cuadrantes
 | **Puzzles** (enigmas) | Alta | Baja | Reposicionar en carta, mejorar descripción y nombre, foto, empuje de sala, poner como recomendación del chef. |
 | **Perros** | Baja | Baja | Eliminar o reinventar; mantener solo si es estratégico (opción vegana, plato icónico). |
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-restaurante-rentable-ingenieria-menu-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Food Cost + Ingeniería de Menú</h3><p class="mt-2 text-muted-foreground">Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.</p><a href="/guia-food-cost-ingenieria-menu?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-restaurante-rentable-ingenieria-menu-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Food Cost + Ingeniería de Menú por €55</a></aside>
 
 ### Estrellas
 
