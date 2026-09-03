@@ -290,11 +290,32 @@ generados: editar el generador, no el fichero).
 **Y el banner de cookies lo tapaba.** Es `fixed bottom-0` a lo ancho con
 z-index 100, así que en la primera visita se comía el botón de la esquina — en
 todo el sitio, no sólo donde acababa de aparecer. `CookieConsent.astro` publica
-ahora su **altura real** en `--aichef-cookie-h` (medida, no un número fijo: son
-~90 px en escritorio y ~190 px en móvil, y cambia con el idioma) y `global.css`
-aparta con `transform` **todos** los flotantes de WhatsApp. Se desplaza en vez de
-reescribir `bottom` porque las tres variantes tienen anclajes distintos y un
-desplazamiento relativo respeta el de cada una; al decidir vuelven a su sitio.
+su **altura real** en `--aichef-cookie-h` (medida, no un número fijo: ~90 px en
+escritorio, ~190 px en móvil, y cambia con el idioma), marca `<html>` con
+`aichef-cookies-abierto` mientras se ve, y `global.css` aparta **todos** los
+flotantes de WhatsApp con `margin-bottom`. Se desplaza en vez de reescribir
+`bottom` porque las tres variantes tienen anclajes distintos y un desplazamiento
+relativo respeta el de cada una.
+
+**⚠️ El primer intento usaba `transform` y salió a producción temblando.** John
+lo vio en el móvil: el botón se movía unos píxeles arriba y abajo en cada gesto
+de scroll. Dos causas sumadas, y las dos enseñan algo:
+
+- **Un `transform` sobre un `position: fixed` lo promociona a capa compuesta** y
+  el móvil deja de pintarlo con el scroll asíncrono: va a la zaga del viewport.
+  `margin-bottom` consigue el mismo desplazamiento —en un elemento posicionado
+  `bottom` se mide al borde del MARGEN— sin tocar la capa.
+- **Y estaba aplicado siempre**, con `transition`, aunque no hubiera banner: cada
+  micro-reflow se convertía en una animación de 0,25 s. Ahora la regla vive bajo
+  `html.aichef-cookies-abierto`, sin transición, y el publicador de la altura
+  **ignora los cambios de menos de 4 px** (los que provoca la barra de
+  direcciones del móvil al contraerse). Sin banner, el botón no recibe ni una
+  propiedad: `transform: none`, `transition-duration: 0s`.
+
+Regla que queda: **para apartar un `fixed` de otro elemento, margen antes que
+`transform`**, y no dejar puesta una propiedad de composición cuando la
+condición que la justifica (aquí, un banner que se ve 5 segundos) ya no se da.
+Verificado con 12 reflows de ±1 px simulados: cero movimientos del botón.
 
 **Gate: `python3 scripts/astro-migration/whatsapp-gate.py`** — exige exactamente
 1 botón flotante por página del `dist` y que las únicas 44 sin él sean los

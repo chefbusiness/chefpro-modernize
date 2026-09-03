@@ -18,12 +18,14 @@
  * se muestra por JS si no hay decisión previa, así que quien ya decidió no ve
  * ni un parpadeo.
  *
- * Publica su ALTURA REAL en `--aichef-cookie-h` (2026-09-03). Es `fixed bottom-0`
- * a lo ancho y con z-index 100, así que en la primera visita tapaba los botones
- * flotantes de WhatsApp de la esquina; con la variable, `global.css` los aparta
- * exactamente lo que mide el banner y los devuelve a su sitio al decidir. Se mide
- * en vez de fijar un número porque el alto cambia con el idioma y el breakpoint
- * (en móvil es una columna de ~200 px y en escritorio una fila de ~90 px).
+ * Publica su ALTURA REAL en `--aichef-cookie-h` y marca `<html>` con
+ * `aichef-cookies-abierto` mientras se ve (2026-09-03). Es `fixed bottom-0` a lo
+ * ancho y con z-index 100, así que en la primera visita tapaba los botones
+ * flotantes de WhatsApp de la esquina; con eso, `global.css` los aparta justo lo
+ * que mide el banner y los devuelve a su sitio al decidir. Se MIDE en vez de fijar
+ * un número porque el alto cambia con el idioma y el breakpoint (en móvil es una
+ * columna de ~190 px y en escritorio una fila de ~90 px), y la CLASE existe para
+ * que sin banner el botón no reciba ninguna propiedad extra.
  */
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
@@ -88,12 +90,17 @@ const legalHref = (slug: string) => (lang === 'es' ? `/${slug}` : `/${lang}/${sl
 
     // Altura del banner → --aichef-cookie-h, para que los botones flotantes de
     // WhatsApp se aparten justo lo que ocupa (ver global.css). El ResizeObserver
-    // cubre el giro del móvil y el reflow del texto al cambiar el ancho.
+    // cubre el giro del móvil y el reflow del texto al cambiar el ancho; el umbral
+    // de 4 px evita republicar por los reajustes de un píxel que el navegador móvil
+    // provoca al contraer la barra de direcciones durante el scroll.
     var raiz = document.documentElement;
+    var ultimo = -1;
     function publicaAlto() {
-      raiz.style.setProperty(
-        '--aichef-cookie-h', caja.hidden ? '0px' : caja.offsetHeight + 'px'
-      );
+      var alto = caja.hidden ? 0 : Math.round(caja.offsetHeight);
+      if (ultimo >= 0 && Math.abs(alto - ultimo) < 4 && alto !== 0) return;
+      ultimo = alto;
+      raiz.style.setProperty('--aichef-cookie-h', alto + 'px');
+      raiz.classList.toggle('aichef-cookies-abierto', alto > 0);
     }
 
     caja.hidden = false;

@@ -408,20 +408,24 @@
 
 
 /* El banner de cookies es `fixed bottom-0` a lo ancho y con z-index 100, así que
-   en la primera visita tapaba el botón flotante de WhatsApp de la esquina. Se
-   aparta con `transform` en lugar de reescribir `bottom` a propósito: hay TRES
-   variantes del botón con anclajes distintos (el global a `bottom-6`; el de
-   soporte de las landings y el React de los dashboards a `bottom-20` en móvil,
-   para librar su barra sticky de compra) y un desplazamiento relativo respeta el
-   de cada una. La altura la publica CookieConsent.astro; sin banner la variable
-   no existe, el fallback es 0px y nada se mueve. */
-a[href^="https://wa.me/"][class*="fixed"] {
-  transform: translateY(calc(-1 * var(--aichef-cookie-h, 0px)));
-  transition: transform 0.25s ease;
-}
+   en la primera visita tapaba el botón flotante de WhatsApp de la esquina.
 
-@media (prefers-reduced-motion: reduce) {
-  a[href^="https://wa.me/"][class*="fixed"] {
-    transition: none;
-  }
+   Dos decisiones, las dos por un bug que costó un deploy (John, 2026-09-03):
+
+   1. `margin-bottom`, NO `transform`. En un elemento posicionado, `bottom` se
+      mide al borde del MARGEN, así que un margen inferior lo sube justo eso y
+      respeta el anclaje de cada variante (el botón global va a `bottom-6`; el de
+      soporte de las landings y el React de los dashboards, a `bottom-20` en móvil
+      para librar su barra sticky de compra). El `transform` que había aquí antes
+      lo conseguía igual, pero promociona el `fixed` a capa compuesta y en el
+      móvil el botón se quedaba a la zaga del scroll: temblaba unos píxeles arriba
+      y abajo en cada gesto.
+
+   2. Acotado a `html.aichef-cookies-abierto`, que CookieConsent.astro pone y quita.
+      Mientras no haya banner —que es casi siempre— el botón no recibe ni una
+      propiedad de aquí, así que se comporta EXACTAMENTE como antes de existir esto.
+      Por lo mismo no lleva `transition`: animar durante el scroll es justo lo que
+      hacía visible el temblor, y el banner aparece y desaparece de golpe. */
+html.aichef-cookies-abierto a[href^="https://wa.me/"][class*="fixed"] {
+  margin-bottom: var(--aichef-cookie-h, 0px);
 }
