@@ -81,6 +81,10 @@ DL = os.path.join(REPO, 'astro-site', 'public', 'dl')
 RESEARCH = os.path.join(AQUI, '..', 'auditorias', 'guias-v2-research-sector.json')
 BRIDGE = '/Users/johnguerrero/chefbusiness-ai/bridge.py'
 MODELO = '~deepseek/deepseek-v4-flash-latest'
+# 2026-09-04: regla de la memoria («si bridge devuelve vacío dos veces, no dupliques
+# el presupuesto: cambia de motor»). A partir del 3.er intento el bloque se pide a
+# un modelo que NO razona; `--modelo` permite arrancar directamente con él.
+MODELO_FALLBACK = 'anthropic/claude-sonnet-4.6'
 
 # --------------------------------------------------------------------------
 # 0. Guardas de seguridad
@@ -882,8 +886,9 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=12000, intentos=6,
         if k:
             time.sleep(15)
         respirar()
+        modelo = MODELO if k < 2 else MODELO_FALLBACK
         cmd = [sys.executable, BRIDGE, '--task', 'content', '--domain', 'aichef',
-               '--lang', 'es', '--model', MODELO, '--max-tokens', str(mt),
+               '--lang', 'es', '--model', modelo, '--max-tokens', str(mt),
                '--temperature', str(round(temperatura + 0.05 * (k % 3), 2)),
                '--system', SYSTEM,
                # a partir del 3.er intento se manda la versión CORTA del guion:
@@ -899,7 +904,7 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=12000, intentos=6,
         n = len(texto.split())
         if verbose:
             print(f'    bridge intento {k + 1}/{len(presupuestos)} '
-                  f'(max_tokens={mt}) → {n} palabras', flush=True)
+                  f'(max_tokens={mt}, {modelo}) → {n} palabras', flush=True)
         # 2026-08-29: una salida LARGA puede seguir siendo basura. Cuatro
         # bloques se publicaron cortados a media palabra («La fre») y uno con
         # tres páginas de «(2) (2) (2)» porque aquí sólo se contaban palabras.
@@ -1929,7 +1934,12 @@ def main():
     ap.add_argument('--sin-bonus', action='store_true')
     ap.add_argument('--solo-bonus', default=None)
     ap.add_argument('--min-palabras-cap', type=int, default=900)
+    ap.add_argument('--modelo', default=None,
+                    help='slug de OpenRouter para TODOS los intentos (p. ej. anthropic/claude-sonnet-4.6)')
     args = ap.parse_args()
+    if args.modelo:
+        global MODELO, MODELO_FALLBACK
+        MODELO = MODELO_FALLBACK = args.modelo
 
     pid = args.producto
     guion = cargar_guion(pid)
