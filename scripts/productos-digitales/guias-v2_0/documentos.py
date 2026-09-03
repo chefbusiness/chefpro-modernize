@@ -1161,7 +1161,7 @@ def portada_e_indice(guia, capitulos):
          f'**{guia["subtitulo"]}**', '',
          f'*{guia["autor_linea"]}*', '',
          guia['portada_texto'], '',
-         f'**Versión 2.0 · {hoy} · aichef.pro/{guia["pid"]}**', '',
+         f'**Versión {guia.get("version", "2.0")} · {hoy} · aichef.pro/{guia["pid"]}**', '',
          '---', '', '## Índice', '']
     for c in capitulos:
         p.append(f'{c["n"]}. **{c["titulo"]}** — {c["resumen_indice"]}')
@@ -1173,7 +1173,7 @@ def cierre(guia):
     return '\n'.join([
         '', '---', '', '## Sobre el autor y condiciones de uso', '',
         guia['bio'], '',
-        f'**Versión 2.0 · agosto de 2026 · aichef.pro/{guia["pid"]} · info@aichef.pro**', '',
+        f'**Versión {guia.get("version", "2.0")} · {guia.get("fecha", "agosto de 2026")} · aichef.pro/{guia["pid"]} · info@aichef.pro**', '',
         guia['legal'], ''])
 
 
@@ -1897,9 +1897,9 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
 
     meta = {'author': 'AI Chef Pro',
             'title': guia['titulo'],
-            'subject': guia['subtitulo'] + ' · Versión 2.0 · agosto 2026',
+            'subject': guia['subtitulo'] + f' · Versión {guia.get("version", "2.0")} · {guia.get("fecha", "agosto de 2026").replace(" de ", " ")}',
             'cabecera': guia['cabecera'],
-            'pie': f'Versión 2.0 · aichef.pro/{guia["pid"]}',
+            'pie': f'Versión {guia.get("version", "2.0")} · aichef.pro/{guia["pid"]}',
             'comments': 'AI Chef Pro · aichef.pro'}
     if cfg_extra and cfg_extra.get('meta'):
         meta.update(cfg_extra['meta'])

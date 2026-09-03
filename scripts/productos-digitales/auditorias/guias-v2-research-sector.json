@@ -11,11 +11,11 @@
       "baja": "HUECO DELIBERADO. No hay fuente utilizable. Estos items NO deben rellenarse ni convertirse en texto de la guia."
     },
     "totales": {
-      "datos": 67,
-      "alta": 31,
-      "media": 31,
+      "datos": 103,
+      "alta": 53,
+      "media": 45,
       "baja": 5,
-      "sin_url": 7
+      "sin_url": 10
     },
     "sin_fuente": [
       "MICH-09",
@@ -1364,6 +1364,118 @@
       "cita_literal": null,
       "fiabilidad": "alta",
       "nota": "Fuente a señalar al lector para verificar por sí mismo cualquier norma citada en la guía (SMI, convenio, APPCC, anisakis, registro de jornada) contra el texto vigente, dado que la legislación cambia. ESTA ENTRADA NO INCLUYE CIFRAS DE IVA (las añade otro agente al mismo JSON) ni de IPC/inflación (decisión D10, ver FC-FUENTES-02)."
+    },
+    {
+      "id": "FC-IVA-01",
+      "tema": "IVA restauración — servicio en sala",
+      "dato": "Los servicios de hostelería y el suministro de comidas y bebidas para consumir en el acto tributan al tipo reducido, alcohol incluido (es servicio, no entrega de bienes, así que no aplica la exclusión de bebidas alcohólicas).",
+      "cifra": 10,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, art. 91.Uno.2.2.º (texto consolidado)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+      "fecha_publicacion": "1992-12-29 (última modificación de este apartado: Ley 7/2024, en vigor 22-12-2024)",
+      "cita_literal": "Los servicios de hostelería, acampamento y balneario, los de restaurantes y, en general, el suministro de comidas y bebidas para consumir en el acto, incluso si se confeccionan previo encargo del destinatario.",
+      "fiabilidad": "alta",
+      "nota": "Fuente primaria consultada vía reproducción literal (Iberley) por límite de tamaño del BOE en fetch automático; artículo marcado vigente."
+    },
+    {
+      "id": "FC-IVA-02",
+      "tema": "IVA restauración — take away y delivery de comida",
+      "dato": "La comida elaborada entregada sin servicio de hostelería (para llevar o a domicilio) es una entrega de bienes y tributa como alimento ordinario.",
+      "cifra": 10,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, art. 91.Uno.1.1.º + DGT, consulta vinculante V2254-22",
+      "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2254-22",
+      "fecha_publicacion": "2022-10-26",
+      "cita_literal": "Cuando no se preste ningún otro servicio auxiliar, se considerarán como entrega de comidas preparadas que suponen una entrega de bienes, tributando igualmente al tipo reducido del 10 por ciento en virtud del artículo 91.Uno.1.1.º",
+      "fiabilidad": "alta",
+      "nota": "Consulta vinculante DGT sobre el supuesto exacto (plataforma de reparto a domicilio). Vinculante para la Administración."
+    },
+    {
+      "id": "FC-IVA-03",
+      "tema": "IVA restauración — take away y delivery de alcohol",
+      "dato": "Las bebidas alcohólicas quedan excluidas del tipo reducido de alimentos cuando se entregan sin servicio de hostelería; tributan al tipo general.",
+      "cifra": 21,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, arts. 90 y 91.Uno.1.1.º + DGT V2254-22",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+      "fecha_publicacion": "1992-12-29",
+      "cita_literal": "Se excluyen de lo dispuesto en el párrafo anterior: a) Las bebidas alcohólicas. Se entiende por bebida alcohólica todo líquido apto para el consumo humano por ingestión que contenga alcohol etílico.",
+      "fiabilidad": "alta",
+      "nota": "La misma bebida alcohólica va al 10% en sala (servicio) y al 21% sin servicio (entrega de bienes excluida)."
+    },
+    {
+      "id": "FC-IVA-04",
+      "tema": "IVA restauración — take away y delivery de refrescos/zumos/gaseosas azucarados o edulcorados",
+      "dato": "Los refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos quedan excluidos del tipo reducido de alimentos desde el 1 de enero de 2021; tributan al tipo general.",
+      "cifra": 21,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, art. 91.Uno.1.1.º, redacción dada por la Ley 11/2020 de PGE 2021 (art. 69)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-17339",
+      "fecha_publicacion": "2020-12-31 (efectos desde 2021-01-01)",
+      "cita_literal": "Se excluyen de lo dispuesto en el párrafo anterior: [...] b) Las bebidas refrescantes, zumos y gaseosas con azúcares o edulcorantes añadidos.",
+      "fiabilidad": "alta",
+      "nota": "Antes del 1-ene-2021 tributaban al 10% junto con el resto de alimentos; no afecta a zumos/refrescos SIN azúcares o edulcorantes añadidos."
+    },
+    {
+      "id": "FC-IVA-05",
+      "tema": "IVA compras — aceite de oliva",
+      "dato": "El aceite de oliva tributa al tipo superreducido desde el 1 de enero de 2025, tras rampa transitoria en 2024 (5% jul-sep, 2% oct-dic).",
+      "cifra": 4,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, art. 91.Dos.1.1.º.g, incorporado por el RDL 4/2024 (art. 2)",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-12944",
+      "fecha_publicacion": "2024-06-27 (efectos permanentes desde 2025-01-01)",
+      "cita_literal": "g) Los aceites de oliva.",
+      "fiabilidad": "alta",
+      "nota": "Letra correcta: g), no f) (la SPEC D4 decía f; corregido). La f) preexistente es frutas/verduras/hortalizas/legumbres/tubérculos/cereales."
+    },
+    {
+      "id": "FC-IVA-06",
+      "tema": "IVA compras — lista completa al tipo superreducido",
+      "dato": "Pan común, harinas panificables, leche, quesos, huevos, frutas, verduras, hortalizas, legumbres, tubérculos, cereales y aceites de oliva tributan al 4% en la compra.",
+      "cifra": 4,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, art. 91.Dos.1.1.º, letras a) a g)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+      "fecha_publicacion": "1992-12-29 (última incorporación: RDL 4/2024, letra g, 2025-01-01)",
+      "cita_literal": "1.º Los siguientes productos: a) El pan común [...] b) Las harinas panificables. c) Los siguientes tipos de leche [...] d) Los quesos. e) Los huevos. f) Las frutas, verduras, hortalizas, legumbres, tubérculos y cereales [...] g) Los aceites de oliva.",
+      "fiabilidad": "alta",
+      "nota": "Lista cerrada: cualquier alimento no listado y no excluido por el art. 91.Uno.1.1.º va al 10% ordinario."
+    },
+    {
+      "id": "FC-IVA-07",
+      "tema": "IVA — tipo general",
+      "dato": "El tipo general del IVA, residual respecto al art. 91, es del 21%.",
+      "cifra": 21,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Ley 37/1992, art. 90",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+      "fecha_publicacion": "1992-12-29",
+      "cita_literal": "El impuesto se exigirá al tipo del 21 por ciento, salvo lo dispuesto en el artículo siguiente.",
+      "fiabilidad": "alta",
+      "nota": "Tipo residual: bebidas alcohólicas y refrescos azucarados fuera de sala, packaging/menaje no alimentario, y todo lo no comprendido en el art. 91."
+    },
+    {
+      "id": "FC-IVA-08",
+      "tema": "IVA restauración — criterio DGT sobre take away/delivery",
+      "dato": "La DGT, en consulta vinculante sobre una plataforma de reparto a domicilio, confirma entrega de bienes al 10% para la comida y 21% para alcohol/refrescos azucarados o edulcorados.",
+      "cifra": 10,
+      "unidad": "%",
+      "anio_del_dato": "2026",
+      "fuente_titulo": "Dirección General de Tributos, consulta vinculante V2254-22",
+      "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2254-22",
+      "fecha_publicacion": "2022-10-26",
+      "cita_literal": "También tributarán al tipo reducido del 10 por ciento las entregas de bebidas, con excepción de las bebidas alcohólicas y las bebidas refrescantes, zumos y gaseosas con azúcares o edulcorantes añadidos, que quedan sujetas al tipo general del 21 por ciento.",
+      "fiabilidad": "alta",
+      "nota": "Hechos del caso: empresa que fabrica y envía comida a domicilio por app con repartidores subcontratados — el supuesto exacto de delivery de restauración."
     }
   ]
 }

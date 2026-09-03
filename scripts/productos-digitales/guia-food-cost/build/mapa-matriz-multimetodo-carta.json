@@ -597,7 +597,7 @@
       [
        "Goal Value del plato",
        "G",
-       "eur"
+       "num2"
       ],
       [
        "Uds medias de su familia",
@@ -617,7 +617,7 @@
       [
        "Goal Value objetivo de su familia",
        "K",
-       "eur"
+       "num2"
       ],
       [
        "Lectura",
@@ -625,9 +625,9 @@
        "txt"
       ],
       [
-       "Distancia al objetivo (€)",
+       "Distancia al objetivo (índice)",
        "M",
-       "eur"
+       "num2"
       ],
       [
        "Qué revisar",

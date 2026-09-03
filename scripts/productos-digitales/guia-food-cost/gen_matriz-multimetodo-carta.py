@@ -76,6 +76,7 @@ GOLD, GRIS = 'FFD700', '888888'
 CAB_BG, CAB_FG = '2D2D2D', 'FFFFFF'
 CREMA, AZUL = 'FFF8E1', '1565C0'
 EUR, PCT, PCT0, ENT = motor.FMT_EUR, motor.FMT_PCT, '0%', motor.FMT_ENT
+IDX = '#,##0.00'   # el Goal Value es un ÍNDICE sin unidades, no euros
 
 FAMILIAS = ['Entrantes', 'Principales', 'Postres', 'Menú']
 
@@ -737,7 +738,7 @@ def hoja_goal_value(wb):
         ('I', 'PVP medio ponderado de su familia (€)', 15),
         ('J', 'Food cost medio ponderado de su familia (%)', 15),
         ('K', 'Goal Value objetivo de su familia', 15),
-        ('L', 'Lectura', 22), ('M', 'Distancia al objetivo (€)', 14),
+        ('L', 'Lectura', 22), ('M', 'Distancia al objetivo (índice)', 14),
         ('N', 'Qué revisar', 62),
     ])
     ws.freeze_panes = 'B5'
@@ -753,7 +754,7 @@ def hoja_goal_value(wb):
                 f'=IFERROR(IF(OR($D{r}="",$E{r}="",$F{r}="",'
                 f'{P_LABOR}+{P_VAR}+$E{r}>=1),"",'
                 f'(1-$E{r})*$D{r}*$F{r}*(1-({P_LABOR}+{P_VAR}+$E{r}))),"")',
-                fmt=EUR)
+                fmt=IDX)
         ws[f'G{r}'].font = Font(bold=True, color=AZUL)
         motor.f(ws, f'H{r}',
                 f'=IFERROR(IF(OR({DAT}$K{r}="",{DAT}$K{r}=0),"",'
@@ -768,14 +769,14 @@ def hoja_goal_value(wb):
                 f'=IFERROR(IF(OR($H{r}="",$I{r}="",$J{r}="",'
                 f'{P_LABOR}+{P_VAR}+$J{r}>=1),"",'
                 f'(1-$J{r})*$H{r}*$I{r}*(1-({P_LABOR}+{P_VAR}+$J{r}))),"")',
-                fmt=EUR)
+                fmt=IDX)
         motor.f(ws, f'L{r}',
                 f'=IFERROR(IF(OR($G{r}="",$K{r}=""),"",'
                 f'IF($G{r}>=$K{r},"Por encima del objetivo",'
                 f'"Por debajo del objetivo")),"")', bold=True)
         motor.f(ws, f'M{r}',
                 f'=IFERROR(IF(OR($G{r}="",$K{r}=""),"",$G{r}-$K{r}),"")',
-                fmt=EUR)
+                fmt=IDX)
         motor.f(ws, f'N{r}',
                 f'=IFERROR(IF($L{r}="","",'
                 f'IF($L{r}="Por encima del objetivo",'
@@ -807,8 +808,8 @@ def hoja_goal_value(wb):
     motor.dv_porcentaje(ws, ['D33', 'D34'], titulo='Porcentaje sobre ventas',
                         prompt='Se escribe en tanto por uno: 0,32 = 32' + N +
                                '%.')
-    motor.val(ws, 'B35', 'Goal Value medio de la carta (€)')
-    motor.f(ws, 'D35', f'=IFERROR(AVERAGE($G${FIL0}:$G${FIL1}),"")', fmt=EUR)
+    motor.val(ws, 'B35', 'Goal Value medio de la carta (índice)')
+    motor.f(ws, 'D35', f'=IFERROR(AVERAGE($G${FIL0}:$G${FIL1}),"")', fmt=IDX)
     motor.val(ws, 'B36', 'Platos por encima del objetivo de su familia')
     motor.f(ws, 'D36',
             f'=COUNTIF($L${FIL0}:$L${FIL1},"Por encima del objetivo")', fmt=ENT)
@@ -1289,15 +1290,15 @@ def mapa():
                               ['Uds vendidas', 'D', 'num'],
                               ['Food cost del plato (%)', 'E', 'pct1'],
                               ['PVP sin IVA (€)', 'F', 'eur'],
-                              ['Goal Value del plato', 'G', 'eur'],
+                              ['Goal Value del plato', 'G', 'num2'],
                               ['Uds medias de su familia', 'H', 'num'],
                               ['PVP medio ponderado de su familia (€)', 'I',
                                'eur'],
                               ['Food cost medio ponderado de su familia (%)',
                                'J', 'pct1'],
-                              ['Goal Value objetivo de su familia', 'K', 'eur'],
+                              ['Goal Value objetivo de su familia', 'K', 'num2'],
                               ['Lectura', 'L', 'txt'],
-                              ['Distancia al objetivo (€)', 'M', 'eur'],
+                              ['Distancia al objetivo (índice)', 'M', 'num2'],
                               ['Qué revisar', 'N', 'txt']],
                      'filas': [5, 29]},
                 ],
