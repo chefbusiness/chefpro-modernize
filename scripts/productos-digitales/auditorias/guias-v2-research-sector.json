@@ -33,7 +33,8 @@
    "MICHELIN: Espana es QUINTA del mundo por numero de estrellados, no tercera tras Francia y Japon (DOM-29 confirmado).",
    "JORNADA: la ley de 37,5 horas fue RECHAZADA el 10/09/2025 y no hay reglamento de registro horario digital en el BOE. La jornada legal sigue en 40 horas."
   ],
-  "manual_manager_2026_09_04": "52 entradas MM-* añadidas desde el research L3 del Manual del Manager (2026-09-04)"
+  "manual_manager_2026_09_04": "52 entradas MM-* añadidas desde el research L3 del Manual del Manager (2026-09-04)",
+  "manual_manager_correccion_2026_09_04": "Corrección del bloque legal tras la refutación (A1-A13, A15). Reescritos MM-13, MM-14, MM-16, MM-17, MM-21, MM-24, MM-25, MM-26, MM-36, MM-39, MM-41, MM-42, MM-45, MM-46, MM-47 y MM-48. Añadidos MM-53 (cotización empresarial total 32,15 / 33,35 %), MM-54 (nacimiento 19 semanas), MM-55 (supervivencia de hostelería), MM-56 (absentismo de hostelería, ETCL 6043) y MM-57 (salarios de hostelería, EACL). Eliminadas las consultas DGT V3095-17 y V2236-13 como fuente. Detalle en auditorias/manual-manager-json-correcciones-2026-09-04.md"
  },
  "datos": [
   {
@@ -1649,30 +1650,30 @@
   {
    "id": "MM-13",
    "tema": "Audiencia previa en despido disciplinario",
-   "dato": "NOVEDAD publicada el 4 de septiembre de 2026: antes de entregar la carta de despido disciplinario hay que informar al trabajador de los hechos imputados y su calificación jurídica y darle 2 días para contestar. Si se le aparta del servicio, esos 2 días son permiso retribuido. Incorpora la STS 1250/2024 sobre el Convenio 158 de la OIT",
+   "dato": "NOVEDAD en vigor desde el 4 de septiembre de 2026 y hasta el 31 de diciembre de 2030: antes de entregar la carta de despido disciplinario la empresa está obligada a informar a la persona trabajadora de los hechos que se le imputan y de su posible calificación jurídica, y a darle 2 días para contestar. La propia norma trae una EXCEPCIÓN, «a menos que no pueda pedirse razonablemente a la empresa que le conceda esta posibilidad», y una REMISIÓN: la audiencia previa NO sustituye al resto de obligaciones del art. 55.1 del Estatuto de los Trabajadores para los colectivos concretos regulados (representantes y afiliados), se SUMA a ellas. Si se aparta del servicio a la persona trabajadora durante esos días, son permiso retribuido. Incorpora la STS 1250/2024, de 18 de noviembre, sobre el art. 7 del Convenio 158 de la OIT",
    "cifra": "2 días",
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Art. 41.3 ALEH VI, Resolución DGT de 25-08-2026",
+   "fuente_titulo": "Art. 41.3 del ALEH VI, modificación publicada por Resolución de la DGT de 25-08-2026 (BOE-A-2026-18630)",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18630",
-   "fecha_publicacion": null,
-   "cita_literal": null,
+   "fecha_publicacion": "2026-09-04",
+   "cita_literal": "…para darle la oportunidad de contestar a las imputaciones; a menos que no pueda pedirse razonablemente a la empresa que le conceda esta posibilidad.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A13 (refutación 2026-09-04): faltaban la excepción, la remisión al art. 55.1 ET y la vigencia. Las partes acordaron «un nuevo periodo de vigencia, desde el momento de la publicación del presente texto en el BOE hasta el 31 de diciembre del año 2030» (BOE núm. 219, de 04-09-2026). Verificado en el PDF del BOE."
   },
   {
    "id": "MM-14",
-   "tema": "Convenio aplicable",
-   "dato": "El acuerdo estatal vigente es el ALEH VI, publicado el 10 de marzo de 2023 y prorrogado desde el 1 de enero de 2024, no el ALEH V de 2015. Reserva en exclusiva la clasificación profesional, el periodo de prueba, los contratos formativos y el régimen disciplinario, y remite las tablas salariales al convenio provincial, que se localiza en el buscador REGCON del Ministerio de Trabajo",
+   "tema": "Convenio aplicable y clasificación profesional",
+   "dato": "El acuerdo estatal vigente es el ALEH VI (BOE de 10-03-2023), prorrogado desde el 1 de enero de 2024 y con vigencia acordada hasta el 31 de diciembre de 2030. Lo que el ALEH VI SÍ hace es tipificar SEIS áreas funcionales y asignar sus ocupaciones a TRES grupos profesionales: el art. 15 relaciona los puestos de cada área «de forma meramente enunciativa y no excluyente» y el art. 16 los encuadra en los grupos. En el área funcional tercera (restaurante, sala, bar y similares) el grupo profesional primero lo forman jefe/a de restaurante o sala, 2.º jefe/a de restaurante o sala, jefe/a de operaciones de catering y gerente de centro, este último dentro del bloque de RESTAURACIÓN MODERNA (comida rápida y cadenas), no del de restaurante y bar. Lo que el ALEH VI NO hace: no tipifica «encargado de restaurante», ni «director», ni «administrador»; son denominaciones de uso, no categorías del convenio, y sus únicos encargados son los de economato, los de pisos y limpieza y los de mantenimiento. Lo que manda es el grupo profesional que, junto con la ocupación, debe constar en el contrato escrito y en el recibo de salario (art. 11.2). Las tablas salariales las fija el convenio provincial, localizable en el buscador REGCON del Ministerio de Trabajo",
    "cifra": "6 áreas funcionales y 3 grupos profesionales",
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Arts. 10, 15 y 16 ALEH VI; REGCON (RD 713/2010)",
-   "url": "https://expinterweb.mites.gob.es/regcon/",
+   "fuente_titulo": "Arts. 11.2, 15 y 16 del ALEH VI (BOE-A-2023-6344), con la modificación de BOE-A-2026-18630",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-6344",
    "fecha_publicacion": null,
    "cita_literal": null,
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A3/D7 (refutación 2026-09-04): el ALEH VI no resuelve «gerente vs encargado vs director vs jefe de sala vs administrador», resuelve dos de los cinco. Verificado literalmente en los arts. 15 y 16 del texto del BOE. Un convenio no tiene texto consolidado: el organigrama completo se compone con BOE-A-2023-6344 más BOE-A-2026-18630. REGCON: https://expinterweb.mites.gob.es/regcon/"
   },
   {
    "id": "MM-15",
@@ -1691,7 +1692,7 @@
   {
    "id": "MM-16",
    "tema": "SMI 2026",
-   "dato": "Salario mínimo interprofesional para 2026, un 3,1 % más que en 2025 y con efectos retroactivos desde el 1 de enero",
+   "dato": "Salario mínimo interprofesional para 2026, un 3,1 % más que en 2025 y con efectos retroactivos desde el 1 de enero. ACOTACIÓN OBLIGATORIA: en el Real Decreto constan 40,70 €/día y 1.221 €/mes; los 17.094 €/año NO figuran en la norma, son cálculo propio (1.221 × 14 pagas) y así hay que presentarlos",
    "cifra": "1.221 €/mes en 14 pagas; 40,70 €/día; 17.094 €/año",
    "unidad": "",
    "anio_del_dato": "2026",
@@ -1700,21 +1701,21 @@
    "fecha_publicacion": null,
    "cita_literal": null,
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A11/D10 (refutación 2026-09-04): los 17.094 € se citaban como si estuvieran en el RD 126/2026, y no están. Los 40,70 €/día y los 1.221 €/mes sí están, en el art. 1."
   },
   {
    "id": "MM-17",
-   "tema": "Coste de la Seguridad Social",
-   "dato": "Tipo de cotización por contingencias comunes del 28,30 %, del que la empresa paga el 23,60 % y el trabajador el 4,70 %. El tope máximo de la base de cotización es de 5.101,20 euros mensuales desde el 1 de enero de 2026",
-   "cifra": "23,60 % a cargo de la empresa; tope 5.101,20 €/mes",
+   "tema": "Cotización a la Seguridad Social: contingencias comunes",
+   "dato": "Tipo de cotización POR CONTINGENCIAS COMUNES del 28,30 %, del que la empresa paga el 23,60 % y la persona trabajadora el 4,70 %. El tope máximo de la base de cotización es de 5.101,20 euros mensuales desde el 1 de enero de 2026. ATENCIÓN, ES EL ERROR CARO: el 23,60 % es SOLO contingencias comunes y nunca debe rotularse «coste de la Seguridad Social a cargo de la empresa» ni «coste-empresa»; el total empresarial suma además desempleo, FOGASA, formación profesional, MEI y AT/EP, y está en MM-53",
+   "cifra": "23,60 % de contingencias comunes a cargo de la empresa; tope 5.101,20 €/mes",
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Orden PJC/297/2026, de 30 de marzo",
+   "fuente_titulo": "Art. 4.a) de la Orden PJC/297/2026, de 30 de marzo (cotización 2026)",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7296",
-   "fecha_publicacion": null,
-   "cita_literal": null,
+   "fecha_publicacion": "2026-03-31",
+   "cita_literal": "Para las contingencias comunes, el 28,30 por ciento, del que el 23,60 por ciento será a cargo de la empresa y el 4,70 por ciento, a cargo de la persona trabajadora.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A1/D5 (refutación 2026-09-04): usar el 23,60 % como coste-empresa infravalora el coste laboral en unos 8,5 puntos y convierte el semáforo de prime cost en un falso negativo. El total va en MM-53, y los xlsx de la familia usan el 33 %. Verificado en el BOE núm. 79, de 31-03-2026."
   },
   {
    "id": "MM-18",
@@ -1761,16 +1762,16 @@
   {
    "id": "MM-21",
    "tema": "Vigilancia de la salud",
-   "dato": "ERROR FRECUENTE: los reconocimientos médicos son VOLUNTARIOS y requieren el consentimiento del trabajador. La empresa debe ofrecerlos, no imponerlos. Solo son obligatorios, previo informe de la representación legal, en tres supuestos tasados. Y la empresa nunca recibe la información médica, solo las conclusiones de aptitud",
+   "dato": "ERROR FRECUENTE: los reconocimientos médicos son VOLUNTARIOS y solo pueden llevarse a cabo con el consentimiento de la persona trabajadora; la empresa los OFRECE, no los impone. De ese carácter voluntario solo se exceptúan TRES supuestos tasados, y en los tres hace falta INFORME PREVIO de los representantes de los trabajadores: (1) que el reconocimiento sea imprescindible para evaluar los efectos de las condiciones de trabajo sobre la salud; (2) que sirva para verificar si el estado de salud puede constituir un peligro para la propia persona, para el resto de la plantilla o para otras personas relacionadas con la empresa, que es el supuesto que se invoca en hostelería con los manipuladores de alimentos; y (3) que así lo establezca una disposición legal en relación con riesgos específicos o actividades de especial peligrosidad. Además hay que optar por las pruebas que causen menos molestias y sean proporcionales al riesgo. Y aun en el caso excepcional la empresa nunca recibe la información médica: solo las conclusiones de aptitud para el puesto (art. 22.4)",
    "cifra": null,
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Art. 22.1 y 22.4 Ley 31/1995 de PRL",
+   "fuente_titulo": "Arts. 22.1 y 22.4 de la Ley 31/1995 de Prevención de Riesgos Laborales",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
    "fecha_publicacion": null,
-   "cita_literal": null,
+   "cita_literal": "De este carácter voluntario sólo se exceptuarán, previo informe de los representantes de los trabajadores, los supuestos en los que la realización de los reconocimientos sea imprescindible para evaluar los efectos de las condiciones de trabajo sobre la salud de los trabajadores o para verificar si el estado de salud del trabajador puede constituir un peligro para el mismo, para los demás trabajadores o para otras personas relacionadas con la empresa o cuando así esté establecido en una disposición legal en relación con la protección de riesgos específicos y actividades de especial peligrosidad.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A9/D8 (refutación 2026-09-04): faltaban las tres excepciones del art. 22.1 y el informe previo de la representación legal de la plantilla. Presentarlo como puramente voluntario es la simplificación que produce un conflicto laboral en un local con delegados. Verificado literal en el consolidado del BOE."
   },
   {
    "id": "MM-22",
@@ -1803,44 +1804,44 @@
   {
    "id": "MM-24",
    "tema": "Propinas: IRPF",
-   "dato": "Las propinas son rendimientos del trabajo sujetos al IRPF y a su sistema de retenciones, y el trabajador debe declararlas. Aviso: la consulta V3095-17 que citan casi todos los blogs es de casinos y juegos de azar, no de hostelería; la de hostelería es la V2236-13",
+   "dato": "Las propinas son rendimientos íntegros del trabajo y tributan en el IRPF: la ley considera rendimiento del trabajo «todas las contraprestaciones o utilidades, cualquiera que sea su denominación o naturaleza» que deriven directa o indirectamente del trabajo personal o de la relación laboral, así que la persona trabajadora debe declararlas aunque el cliente se las deje en mano. PROHIBIDO citar consultas de la Dirección General de Tributos: las dos que circulan por los blogs (V3095-17 y V2236-13) no se han podido verificar en el buscador oficial y quedan fuera del texto; el argumento se apoya solo en la ley y el reglamento del IRPF",
    "cifra": null,
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Consulta vinculante DGT V2236-13, de 08-07-2013",
-   "url": "https://petete.tributos.hacienda.gob.es/consultas/",
+   "fuente_titulo": "Art. 17.1 de la Ley 35/2006, del Impuesto sobre la Renta de las Personas Físicas",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
    "fecha_publicacion": null,
-   "cita_literal": null,
+   "cita_literal": "Se considerarán rendimientos íntegros del trabajo todas las contraprestaciones o utilidades, cualquiera que sea su denominación o naturaleza, dinerarias o en especie, que deriven, directa o indirectamente, del trabajo personal o de la relación laboral o estatutaria y no tengan el carácter de rendimientos de actividades económicas.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A7/D8 (refutación 2026-09-04): se eliminan las consultas V3095-17 y V2236-13. El buscador oficial de la DGT (petete.tributos.hacienda.gob.es) no devuelve resultados ni para consultas de control, así que no confirma ni refuta ninguna de las dos, y el research construía sobre ellas un argumento de autoridad. La retención, en MM-25. Verificado literal en el texto consolidado del BOE."
   },
   {
    "id": "MM-25",
    "tema": "Propinas: retención y cotización",
-   "dato": "Si la empresa reparte el bote está OBLIGADA A RETENER, porque el Reglamento del IRPF nombra expresamente el supuesto de satisfacer al personal cantidades desembolsadas por terceros en concepto de propina y aclara que no es simple mediación de pago. Si el cliente la deja en mano, la empresa no retiene aunque el trabajador siga debiendo declararla. Sobre COTIZACIÓN no hay norma expresa: ni la LGSS ni el RD 2064/1995 mencionan la palabra propina",
+   "dato": "Si la empresa reparte el bote está OBLIGADA A RETENER, porque el Reglamento del IRPF nombra expresamente el supuesto de satisfacer al personal cantidades desembolsadas por terceros en concepto de propina y aclara que eso no es simple mediación de pago. Si el cliente la deja en mano, la empresa no retiene, aunque la persona trabajadora siga debiendo declararla. Sobre COTIZACIÓN no hay norma expresa: la palabra «propina» no aparece ni en el texto refundido de la Ley General de la Seguridad Social ni en el RD 2064/1995, de modo que rige la regla general del art. 147.1 LGSS, que define la base de cotización como «la remuneración total, cualquiera que sea su forma o denominación», y lo que diga el convenio aplicable",
    "cifra": null,
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Art. 76.1.3.º del Reglamento del IRPF (RD 439/2007)",
+   "fuente_titulo": "Art. 76.1.3.º del Reglamento del IRPF (RD 439/2007) y art. 147.1 del TRLGSS",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
    "fecha_publicacion": null,
-   "cita_literal": null,
+   "cita_literal": "Cuando satisfagan a su personal cantidades desembolsadas por terceros en concepto de propina, retribución por el servicio u otros similares.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A7/D8 (refutación 2026-09-04): sin consultas de la DGT, solo RIRPF y norma de cotización. Comprobado con barrido de texto sobre el consolidado: «propina» aparece 0 veces en el TRLGSS (https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724). Verificado el 2026-09-04."
   },
   {
    "id": "MM-26",
-   "tema": "Permiso parental",
-   "dato": "ERROR FRECUENTE: el permiso parental de 8 semanas NO es retribuido. El art. 45.1.o) lo tipifica como causa de SUSPENSIÓN del contrato y el art. 45.2 establece que la suspensión exonera de las obligaciones recíprocas de trabajar y remunerar el trabajo. Tampoco existe prestación de la Seguridad Social que lo cubra",
-   "cifra": "8 semanas, no retribuidas",
+   "tema": "Permiso parental: dos figuras distintas",
+   "dato": "CUIDADO, son DOS figuras que se solapan casi punto por punto y solo una se paga. (1) PERMISO PARENTAL del art. 48 bis ET: hasta 8 semanas, continuas o discontinuas, hasta que el menor cumpla ocho años, derecho individual e intransferible y NO RETRIBUIDO, porque el art. 45.1.o) lo tipifica como causa de SUSPENSIÓN del contrato y el art. 45.2 establece que la suspensión exonera de las obligaciones recíprocas de trabajar y remunerar el trabajo; tampoco existe prestación de la Seguridad Social que lo cubra. (2) Las DOS SEMANAS del art. 48.4.c) ET, cuatro en monoparentalidad, que desde el RDL 9/2025 forman parte del permiso por nacimiento: también son «para el cuidado del menor», también llegan hasta que el hijo o la hija cumple los ocho años y también son un derecho individual intransferible, pero SÍ ESTÁN RETRIBUIDAS, porque el art. 177 LGSS declara situación protegida los descansos previstos en los apartados 4, 5 y 6 del art. 48 ET y los cubre la prestación por nacimiento y cuidado de menor. Denegar o descontar esas dos semanas confundiéndolas con el permiso parental es el error caro: se niega un derecho retribuido",
+   "cifra": "8 semanas no retribuidas (art. 48 bis) más 2 semanas retribuidas (art. 48.4.c)",
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "Arts. 48 bis, 45.1.o) y 45.2 ET",
+   "fuente_titulo": "Arts. 48 bis, 48.4.c), 45.1.o) y 45.2 ET (redacción del RDL 9/2025) y art. 177 LGSS",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
    "fecha_publicacion": null,
-   "cita_literal": null,
+   "cita_literal": "c) Dos semanas, cuatro en el caso de monoparentalidad, para el cuidado del menor que podrán distribuirse a voluntad de la persona trabajadora, en períodos semanales de forma acumulada o interrumpida hasta que el hijo o la hija cumpla los ocho años. Este derecho es individual de la persona trabajadora sin que pueda transferirse su ejercicio al otro progenitor.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A2/D6 (refutación 2026-09-04): el research se quedaba en «el permiso parental no es retribuido» y con eso un manager denegaría mal una solicitud de las 2 semanas del art. 48.4.c). Lo prohibido es afirmar que LAS OCHO semanas son retribuidas, no que existan semanas retribuidas. RDL 9/2025: BOE-A-2025-15741, publicado el 30-07-2025 y en vigor el 31-07-2025. Verificado en el consolidado del ET y en el art. 177 LGSS."
   },
   {
    "id": "MM-27",
@@ -1971,16 +1972,16 @@
   {
    "id": "MM-36",
    "tema": "Desperdicio alimentario",
-   "dato": "Todo restaurante debe permitir al cliente llevarse lo que no ha consumido sin coste añadido, salvo bufé libre, e informarlo de forma clara y visible. Esta obligación NO nació con la Ley 1/2025: ya regía desde el 15 de diciembre de 2022 por el art. 18.5 del RD 1021/2022; la Ley 1/2025 la reitera y añade que se informe preferentemente en la carta. El plan de prevención, en cambio, NO obliga a la mayoría: quedan exentos los establecimientos de hasta 1.300 m2 y las microempresas",
-   "cifra": "1.300 m2; sanciones hasta 500.000 €",
+   "dato": "Todo restaurante debe permitir a la clientela llevarse sin coste adicional lo que no ha consumido, SALVO en los formatos de servicio de bufé libre o similares donde la disponibilidad de comida no está limitada, e INFORMAR de esa posibilidad de forma clara y visible en el propio establecimiento (la Ley 1/2025 añade que preferentemente en la carta o el menú). Esta obligación NO nació con la Ley 1/2025: rige desde el 22 de diciembre de 2022, fecha de entrada en vigor del RD 1021/2022, por su art. 18.5. Y CUIDADO con la exención de los 1.300 m2: el art. 6.4.c) de la Ley 1/2025 solo exime de las obligaciones del APARTADO CUATRO, es decir, del plan de prevención y de los convenios de donación. Siguen obligando a cualquier restaurante que no sea microempresa el art. 6.1 (aplicar la jerarquía de prioridades del art. 5), el 6.2 (medidas del art. 19 de la Ley 7/2022), el 6.3 (nulidad de pleno derecho de las cláusulas que impidan donar) y el 6.5 (no dejar alimentos en condiciones no aptas). Solo las microempresas quedan fuera del artículo entero (art. 6.6)",
+   "cifra": "1.300 m2 solo para el apartado 4; sanciones hasta 500.000 €",
    "unidad": "",
    "anio_del_dato": "2026",
    "fuente_titulo": "RD 1021/2022 art. 18.5 y Ley 1/2025 arts. 6, 8 y 21",
    "url": "https://www.boe.es/eli/es/rd/2022/12/13/1021/con",
    "fecha_publicacion": null,
-   "cita_literal": null,
+   "cita_literal": "Quedan exceptuadas de las obligaciones del presente apartado cuatro las actividades de transformación, comercio minorista, distribución alimentaria, hostelería o restauración desarrolladas en establecimientos iguales o inferiores a 1.300 m2 en el caso de empresas que no dispongan de venta al público…",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Correcciones A4 y A6/D8 (refutación 2026-09-04): la fecha decía 15-12-2022 y no existe; la ficha del BOE del RD 1021/2022 da disposición 13-12-2022, publicación 21-12-2022 y entrada en vigor 22-12-2022. Y la exención de superficie se leía como si eximiera del artículo entero. Ley 1/2025: https://www.boe.es/buscar/act.php?id=BOE-A-2025-6597. Verificado literal en los dos textos del BOE."
   },
   {
    "id": "MM-37",
@@ -2013,16 +2014,16 @@
   {
    "id": "MM-39",
    "tema": "Tique y factura",
-   "dato": "El límite general de la factura simplificada es de 400 euros, pero en hostelería y restauración sube a 3.000 euros con IVA incluido. El cliente puede exigir factura completa con sus datos fiscales cuando la necesite para deducirse el gasto",
+   "dato": "El límite general de la factura simplificada es de 400 euros, pero en hostelería y restauración sube a 3.000 euros con IVA incluido. El cliente puede exigir factura completa con sus datos fiscales cuando la necesite para deducirse el gasto. Y hay un tercer caso, el que cambia con la factura electrónica obligatoria entre empresas: la FACTURA SIMPLIFICADA CUALIFICADA del art. 7.2 del RD 1619/2012, es decir, el tique en el que, a petición de un cliente empresario o profesional, se hacen constar su NIF y su domicilio y la cuota de IVA repercutida por separado. El art. 4.1 del RD 238/2026 exceptúa de la factura electrónica las facturas simplificadas «a menos que se trate de facturas simplificadas cualificadas». Regla de TRES casillas, no de dos: tique normal, FUERA; tique con los datos fiscales del cliente, DENTRO; factura completa B2B, dentro",
    "cifra": "3.000 € (400 € el límite general)",
    "unidad": "",
    "anio_del_dato": "2026",
-   "fuente_titulo": "RD 1619/2012, art. 4.1.a) y 4.2.e)",
+   "fuente_titulo": "RD 1619/2012, arts. 4.1.a), 4.2.e) y 7.2, y art. 4.1 del RD 238/2026",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696",
    "fecha_publicacion": null,
-   "cita_literal": null,
+   "cita_literal": "Se exceptúan de la obligación de expedir, transmitir y entregar factura en formato electrónico las operaciones que se documenten a través de facturas simplificadas… a menos que se trate de facturas simplificadas cualificadas a las que se refiere el artículo 7.2 de ese mismo Reglamento.",
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A5/D8 (refutación 2026-09-04): decir que el RD 238/2026 «excluye las facturas simplificadas» sin el matiz hace creer que a un restaurante no le afecta, y le afecta justo en las comidas de trabajo. RD 238/2026: BOE-A-2026-7295, publicado el 31-03-2026 y en vigor el 20-04-2026 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7295); la obligación aún NO es exigible (12/24 meses desde la orden ministerial). Verificado literal en el BOE."
   },
   {
    "id": "MM-40",
@@ -2041,30 +2042,30 @@
   {
    "id": "MM-41",
    "tema": "Estructura de costes",
-   "dato": "Referencia española de estructura de costes de un restaurante: coste de producto 30 % de la venta (28 % en comida y 34,5 % en bebida), coste de personal 30-35 % en servicio integrado y 15-25 % en servicio parcial, alquiler hasta el 5 %, gastos generales 17 % y EBITDA sano del 10 al 13 %. Ojo: la fuente no lleva fecha visible",
+   "dato": "Referencia española de estructura de costes de un restaurante: coste de producto 30 % de la venta (28 % en comida y 34,5 % en bebida), coste de personal 30-35 % en servicio INTEGRADO y 15-25 % en servicio PARCIAL, alquiler hasta el 5 %, gastos generales 17 % y un EBITDA que la fuente califica de sano en el 10-13 %. DOS CAUTELAS DE USO obligatorias: la fuente habla de servicio integrado y servicio parcial y NUNCA de «barra» ni de «autoservicio» —esa traducción es glosa propia, no de la fuente, que tampoco emplea la palabra «Sapiens»—, y su propia aritmética no cierra, porque 30 + 32,5 + 5 + 17 deja un 15,5 %, no un 10-13 %, así que el EBITDA se cita como afirmación de la fuente y nunca como resultado derivado",
    "cifra": "producto 30 % · personal 30-35 % · EBITDA 10-13 %",
    "unidad": "",
-   "anio_del_dato": "2026",
-   "fuente_titulo": "CaixaBankLab x elBullifoundation, metodología Sapiens",
+   "anio_del_dato": "2017",
+   "fuente_titulo": "CaixaBankLab x elBullifoundation, «Consumos y beneficios de un restaurante»",
    "url": "https://www.caixabanklab.com/elbullifoundation/es/consumos-beneficios-restaurante/",
-   "fecha_publicacion": null,
+   "fecha_publicacion": "2017, revisado en 2022",
    "cita_literal": null,
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A11/D10 (refutación 2026-09-04): la palabra «Sapiens» no aparece en el artículo y la fuente sí lleva fecha en sus metadatos (publicado en 2017, revisado en 2022), así que decae la instrucción de «citar sin fecha». El umbral de prime cost del 65 % / 55 % que usan los productos de la casa es criterio propio derivado de aquí, no cifra de la fuente."
   },
   {
    "id": "MM-42",
    "tema": "Coste laboral del sector",
-   "dato": "El coste laboral bruto por trabajador y año en hostelería es el MÁS BAJO de las 19 secciones de actividad, un 61 % de la media nacional, y los sueldos también son los más bajos de todas las secciones (dato de 2025)",
+   "dato": "El coste laboral bruto por trabajador y año en hostelería es el MÁS BAJO de las 18 secciones de actividad que publica la encuesta, un 61 % de la media nacional, y los sueldos también son los más bajos de todas las secciones (ver MM-57)",
    "cifra": "23.690,02 € frente a 38.748,94 € de media",
    "unidad": "",
-   "anio_del_dato": "2026",
-   "fuente_titulo": "INE, Encuesta Anual de Coste Laboral 2025",
+   "anio_del_dato": "2025",
+   "fuente_titulo": "INE, Encuesta Anual de Coste Laboral 2025, resultados por secciones de la CNAE-09",
    "url": "https://www.ine.es/dyngs/Prensa/EACL2025.pdf",
    "fecha_publicacion": null,
    "cita_literal": null,
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A15 (refutación 2026-09-04): la EACL publica 18 secciones de actividad, no 19; el hecho de que la hostelería sea el mínimo es correcto. Series EACL523 (hostelería) y EACL619 (total), leídas de la API del INE el 2026-09-04. Tabla: https://www.ine.es/jaxiT3/Tabla.htm?t=9125"
   },
   {
    "id": "MM-43",
@@ -2097,7 +2098,7 @@
   {
    "id": "MM-45",
    "tema": "Reseñas online",
-   "dato": "Una estrella más en Yelp aumenta los ingresos del restaurante entre un 5 y un 9 %, y el efecto lo mueven los independientes: las cadenas no se ven afectadas por su rating. Media estrella más hace que el local agote mesas en horas punta 19 puntos porcentuales más a menudo, un 49 % más",
+   "dato": "Una estrella más en Yelp aumenta los ingresos del restaurante entre un 5 y un 9 %, y el efecto lo mueven los independientes: las cadenas no se ven afectadas por su rating (Luca, 2011). Y media estrella más hace que el local agote las mesas en horas punta 19 puntos porcentuales más a menudo, un 49 % más (Anderson y Magruder, 2012). ACOTACIÓN OBLIGATORIA del segundo dato: esos 19 puntos son SOLO la franja de las 19:00 h —a las 18:00 son 11 puntos y a las 20:00, 15— y los propios autores advierten de que únicamente el resultado de las 19:00 es estadísticamente significativo. Mide la disponibilidad de mesa para cuatro personas consultada 36 horas antes, en San Francisco y con datos de 2010",
    "cifra": "+5 a 9 % de ingresos; +19 puntos (+49 %)",
    "unidad": "",
    "anio_del_dato": "2026",
@@ -2106,12 +2107,12 @@
    "fecha_publicacion": null,
    "cita_literal": null,
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A11/D10 (refutación 2026-09-04): el +19 pp se presentaba como efecto general y es el de una sola franja horaria. Las dos citas académicas están confirmadas literalmente en los PDF originales; lo que se acota es el alcance, no el dato. Anderson y Magruder, The Economic Journal 122(563):957-989."
   },
   {
    "id": "MM-46",
    "tema": "No-shows",
-   "dato": "Tasa media de no-show en la restauración española en 2025, en descenso desde el 3,6 % de 2024. Con reconfirmación por SMS baja del 1,92 % al 1,52 % y con reserva garantizada con tarjeta cae al 0,66 %",
+   "dato": "Tasa media de no-show en la restauración española en 2025, en descenso desde el 3,6 % de 2024, según TheFork sobre el conjunto de sus reservas del año; con reserva garantizada con tarjeta cae al 0,66 %. ACOTACIÓN OBLIGATORIA: el 1,92 % que baja al 1,52 % con reconfirmación por SMS es de CoverManager, corresponde a UN SOLO DÍA (el Día del Padre de 2025) y solo al subgrupo de reservas sin protección, y la propia nota avisa de que no es trasladable al resto del año. NO es comparable con el 3,3 % de TheFork, que es media anual: son dos fuentes y dos universos distintos, y no pueden encadenarse en la misma frase",
    "cifra": "3,3 % (0,66 % con tarjeta)",
    "unidad": "",
    "anio_del_dato": "2026",
@@ -2120,21 +2121,21 @@
    "fecha_publicacion": null,
    "cita_literal": null,
    "fiabilidad": "media",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A11/D10 (refutación 2026-09-04): el 1,92 % / 1,52 % se leía como serie continua junto al 3,3 % anual. Si se usa, hay que decir el día y el subgrupo."
   },
   {
    "id": "MM-47",
    "tema": "Ticket medio",
-   "dato": "Ticket medio de la restauración española medido sobre pagos con tarjeta en el primer semestre de 2025, con Baleares en el máximo (35 €) y Álava en el mínimo (16,5 €). Es el ticket de TODA la restauración: no extrapolarlo a alta cocina, segmento del que no existe cifra pública fiable",
+   "dato": "Ticket medio de la restauración española medido sobre PAGOS CON TARJETA, con Baleares en el máximo (35 €) y Álava en el mínimo (16,5 €). ACOTACIÓN OBLIGATORIA: son datos de 2024, media de enero a septiembre, publicados en un artículo del 16 de enero de 2025; NO son del primer semestre de 2025. Excluyen el efectivo y reflejan la cuota de mercado de una sola entidad financiera. Es el ticket de TODA la restauración: no extrapolarlo a alta cocina, segmento del que no existe cifra pública fiable",
    "cifra": "21 €",
    "unidad": "",
-   "anio_del_dato": "2026",
+   "anio_del_dato": "2024",
    "fuente_titulo": "CaixaBank Research, Informe Sectorial Turismo",
    "url": "https://caixabanklab-campus.com/cual-es-el-ticket-medio-restauracion-espana/",
-   "fecha_publicacion": null,
+   "fecha_publicacion": "2025-01-16",
    "cita_literal": null,
    "fiabilidad": "media",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A11/D10 (refutación 2026-09-04): estaba fechado como «primer semestre de 2025» y son datos de 2024. Las cuatro cifras son exactas y la fuente sí blinda el «por transacción»."
   },
   {
    "id": "MM-49",
@@ -2194,17 +2195,87 @@
   },
   {
    "id": "MM-48",
-   "tema": "Supervivencia empresarial",
-   "dato": "No existe fuente oficial de mortalidad de restaurantes en España, así que el 60 % que circula no es citable. Lo que sí se puede afirmar: solo el 41,9 % de las empresas españolas de cualquier sector sobrevive cinco años, y Delectatech contabiliza 31,1 cierres diarios de establecimientos de restauración en 2025",
-   "cifra": "41,9 % a 5 años; 31,1 cierres diarios",
+   "tema": "Supervivencia empresarial (todas las actividades)",
+   "dato": "Serie oficial de supervivencia de la cohorte de empresas nacidas en 2018, todas las actividades: sigue viva el 76,9 % al cabo de un año, el 63,5 % a los dos, el 55,3 % a los tres, el 47,5 % a los cuatro y el 41,9 % a los cinco. CUIDADO CON LA ETIQUETA: el 63,5 % es la tasa a DOS años, no a tres. El «60 % de los restaurantes cierra en los primeros años» que circula por el sector NO es citable, porque no existe estadística oficial de mortalidad de RESTAURANTES como subclase; pero sí existe, y es mejor dato, la serie de la sección de hostelería (MM-55). Delectatech, una empresa privada de datos, contabiliza además 31,1 cierres diarios de establecimientos de restauración en 2025: si se cita, hay que atribuírselo por su nombre, porque no es fuente oficial",
+   "cifra": "76,9 % a 1 año, 63,5 % a 2, 55,3 % a 3, 47,5 % a 4 y 41,9 % a 5",
    "unidad": "",
-   "anio_del_dato": "2026",
-   "fuente_titulo": "INE, Demografía Armonizada de Empresas; Delectatech",
+   "anio_del_dato": "2023",
+   "fuente_titulo": "INE, Demografía Armonizada de Empresas. Año 2023 (nota de prensa y anexo de tablas)",
    "url": "https://www.ine.es/dyngs/Prensa/DAE2023.htm",
    "fecha_publicacion": null,
    "cita_literal": null,
    "fiabilidad": "alta",
-   "nota": "Research L3 del Manual del Manager (manual-manager-research-L3-datos.md), consultado el 2026-09-04. Estado verificado a esa fecha; si la norma cambia, actualizar aquí y regenerar."
+   "nota": "Corrección A8 (refutación 2026-09-04): el 63,5 % estaba etiquetado «a 3 años» y es a 2, y la premisa de que no hay fuente de supervivencia era falsa para la hostelería como sección. Verificado en la nota de prensa del INE (cohorte nacidas en 2018: 100,0 / 76,9 / 63,5 / 55,3 / 47,5 / 41,9 entre 2018 y 2023). Los 31,1 cierres diarios de Delectatech son fuente privada vía prensa: fiabilidad media."
+  },
+  {
+   "id": "MM-53",
+   "tema": "Cotización empresarial total (del bruto al coste-empresa)",
+   "dato": "Cotización total a cargo de la empresa en hostelería para 2026, aplicada sobre la base de cotización: 32,15 % con contrato indefinido a tiempo completo y 33,35 % con contrato de duración determinada. Es la cifra que hay que usar para pasar del salario bruto al coste-empresa; el 23,60 % de MM-17 es solo contingencias comunes y se queda casi nueve puntos corto. Las plantillas de Excel de la familia (kit-gestion-personal/03 y cuadro-de-mando-prime-cost) redondean al 33 %, que es la convención de la casa y queda dentro de la horquilla",
+   "cifra": "32,15 % con contrato indefinido y 33,35 % con contrato temporal",
+   "unidad": "",
+   "anio_del_dato": "2026",
+   "fuente_titulo": "Arts. 4.a), 4.b), 16 y 33.2 de la Orden PJC/297/2026, de 30 de marzo, y DA 61.ª del TRLGSS (tarifa de primas de AT y EP)",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7296",
+   "fecha_publicacion": "2026-03-31",
+   "cita_literal": "Desde el 1 de enero de 2026, la cotización adicional correspondiente al mecanismo de equidad intergeneracional en el Régimen General de la Seguridad Social se determinará aplicando el tipo del 0,90 por ciento sobre la base de cotización por contingencias comunes, del que el 0,75 por ciento será a cargo del empleador y el 0,15 por ciento, a cargo de la persona trabajadora.",
+   "fiabilidad": "alta",
+   "nota": "Desglose empresarial 2026, verificado artículo por artículo: contingencias comunes 23,60 (art. 4.a) + desempleo 5,50 con contrato indefinido o 6,70 con temporal (art. 33.2.a) + FOGASA 0,20 (art. 33.2.b) + formación profesional 0,60 (art. 33.2.c) + MEI 0,75 (art. 16, de un tipo total del 0,90) + AT/EP 1,50 por la tarifa de primas para el CNAE 56 «Servicios de comidas y bebidas» (0,80 de IT + 0,70 de IMS). Suma 32,15 % y 33,35 %. La tarifa nació como DA 4.ª de la Ley 42/2006 y hoy vive en la DA 61.ª del TRLGSS, que es a la que remite la Orden (https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724). Corrección A1/D5."
+  },
+  {
+   "id": "MM-54",
+   "tema": "Permiso por nacimiento y cuidado de menor",
+   "dato": "Desde el RDL 9/2025 el permiso por nacimiento y cuidado de menor es de 19 SEMANAS para cada progenitor, 32 en monoparentalidad, no de 16. Se reparte en tres tramos: 6 semanas obligatorias, ininterrumpidas y a jornada completa inmediatamente después del parto; 11 semanas —22 en monoparentalidad— distribuibles a voluntad hasta que el menor cumpla doce meses, y la madre biológica puede anticipar hasta cuatro antes del parto; y 2 semanas —4 en monoparentalidad— para el cuidado del menor hasta que cumpla ocho años, que son las que se confunden con el permiso parental (MM-26). En adopción, guarda con fines de adopción y acogimiento la duración es también de 19 semanas por persona adoptante. El preaviso a la empresa es de quince días",
+   "cifra": "19 semanas, 32 en monoparentalidad",
+   "unidad": "",
+   "anio_del_dato": "2025",
+   "fuente_titulo": "Arts. 48.4 y 48.5 ET, redacción del art. 1 del RDL 9/2025, de 29 de julio",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+   "fecha_publicacion": "2025-07-30",
+   "cita_literal": "El nacimiento, que comprende el parto y el cuidado de menor, suspenderá el contrato de trabajo de la madre biológica y el del progenitor distinto de la madre biológica durante diecinueve semanas.",
+   "fiabilidad": "alta",
+   "nota": "Corrección A2/D6. El RDL 9/2025 (BOE-A-2025-15741, publicado el 30-07-2025 y en vigor el 31-07-2025) modificó los apartados 4 y 5 del art. 48 ET; su disposición transitoria única regula la aplicación a hechos causantes anteriores. Verificado en el texto consolidado del ET. Añadido por el corrector del JSON del Manual del Manager (2026-09-04) al aplicar la refutación; verificado contra fuente primaria ese día."
+  },
+  {
+   "id": "MM-55",
+   "tema": "Supervivencia empresarial en hostelería",
+   "dato": "La sección de hostelería (CNAE 55 «Servicios de alojamiento» + 56 «Servicios de comidas y bebidas») sí tiene serie oficial de supervivencia, y es peor que la media nacional: de las 34.933 empresas de hostelería nacidas en 2018 sobrevive el 75,6 % al cabo de un año, el 61,6 % a los dos, el 53,5 % a los tres, el 45,2 % a los cuatro y el 38,8 % a los cinco. Dicho al revés: casi la mitad ha cerrado a los tres años y seis de cada diez a los cinco. AVISO DE HONESTIDAD que hay que dar al lector: esa cohorte atraviesa la pandemia, así que la caída no es solo estructural. Sustituye a cualquier cifra de mortalidad de restaurantes sin fuente",
+   "cifra": "75,6 % a 1 año, 61,6 % a 2, 53,5 % a 3, 45,2 % a 4 y 38,8 % a 5",
+   "unidad": "",
+   "anio_del_dato": "2023",
+   "fuente_titulo": "INE, Demografía Armonizada de Empresas. Año 2023, anexo de tablas por CNAE",
+   "url": "https://www.ine.es/dyngs/Prensa/DAE2023.htm",
+   "fecha_publicacion": null,
+   "cita_literal": null,
+   "fiabilidad": "alta",
+   "nota": "Calculado sobre el anexo oficial del INE (https://www.ine.es/prensa/anexo_tablas/es/DAE2023.xlsx) sumando las divisiones 55 y 56 de la cohorte «Nacidas en 2018»: base 34.933 y supervivientes 26.421 / 21.534 / 18.695 / 15.792 / 13.549. OJO, DISCREPANCIA CON LA SPEC: la decisión D9 etiquetó estos porcentajes como 1, 2 y 3 años; las etiquetas correctas, verificadas contra la serie, son 1, 3 y 5 años, y el dato a 2 años es 61,6 %. Solo la división 56 da 74,7 / 60,5 / 52,2 / 43,8 / 37,1. Corrección A8/D9. Añadido por el corrector del JSON del Manual del Manager (2026-09-04) al aplicar la refutación; verificado contra fuente primaria ese día."
+  },
+  {
+   "id": "MM-56",
+   "tema": "Absentismo en hostelería",
+   "dato": "El INE sí publica el dato de hostelería, aunque Randstad solo desglose hasta «sector servicios»: en el primer trimestre de 2026, por trabajador y mes, la hostelería tuvo 132,9 horas pactadas y 15,5 horas no trabajadas, de las que 6,2 fueron por vacaciones y fiestas y 7,9 por incapacidad temporal. Eso equivale a un 5,9 % de horas perdidas por baja médica y a un 7,0 % de absentismo si se descuentan vacaciones y fiestas; con las mismas cuentas, el conjunto de la economía da 5,6 % y 7,3 %. Conclusión útil para un manager: la hostelería NO tiene más absentismo total que la media española, pero sí algo más de baja médica",
+   "cifra": "7,9 h/mes por incapacidad temporal sobre 132,9 h pactadas, un 5,9 %",
+   "unidad": "",
+   "anio_del_dato": "2026",
+   "fuente_titulo": "INE, Encuesta Trimestral de Coste Laboral, tabla 6043 (tiempo de trabajo por trabajador y mes por secciones de la CNAE-09), primer trimestre de 2026",
+   "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=6043",
+   "fecha_publicacion": "1T 2026",
+   "cita_literal": null,
+   "fiabilidad": "alta",
+   "nota": "Las HORAS son dato primario del INE (series ETCL2486, ETCL2483, ETCL2482 y ETCL2481, 1T 2026); los PORCENTAJES son cálculo propio sobre esas horas, porque el INE no publica una tasa de absentismo, y hay que decirlo al citarlos. Nacional 1T 2026: 151,2 pactadas, 20,2 no trabajadas, 9,2 de vacaciones y fiestas y 8,4 por IT. Deja sin efecto la entrada de la lista negra que decía que el dato de hostelería no existe: lo que no existe es el desglose de Randstad. Corrección A8/D9. Añadido por el corrector del JSON del Manual del Manager (2026-09-04) al aplicar la refutación; verificado contra fuente primaria ese día."
+  },
+  {
+   "id": "MM-57",
+   "tema": "Salarios en hostelería frente a la media nacional",
+   "dato": "Sueldos y salarios brutos por trabajador y año: 17.190,75 € en hostelería frente a 28.410,78 € en el conjunto de la industria, la construcción y los servicios. Es el importe más bajo de las 18 secciones de actividad que publica la encuesta: la hostelería paga el 60,5 % de lo que paga la media española. Este es el dato PRIMARIO que sustituye a la comparación de 1.512 € contra 2.345 € mensuales que circula por el sector, cuya cadena de fuentes (Synergie, FOS, Linkers) no acaba en ningún informe publicado y por eso no se cita",
+   "cifra": "17.190,75 € frente a 28.410,78 € por trabajador y año",
+   "unidad": "",
+   "anio_del_dato": "2025",
+   "fuente_titulo": "INE, Encuesta Anual de Coste Laboral 2025, resultados por secciones de la CNAE-09 (tabla 9125)",
+   "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=9125",
+   "fecha_publicacion": "2025",
+   "cita_literal": null,
+   "fiabilidad": "alta",
+   "nota": "Series EACL522 (hostelería) y EACL618 (total nacional), leídas de la API del INE el 2026-09-04. En la misma encuesta el coste total bruto es 23.690,02 € frente a 38.748,94 € (MM-42). AVISO: «beneficios sociales» NO es una variable de la EACL; los 211,42 € que circulan son la suma de cotizaciones voluntarias (22,22), prestaciones sociales directas (187,83) y gastos de carácter social (1,37), o sea, un derivado propio. Corrección A10/D9. Añadido por el corrector del JSON del Manual del Manager (2026-09-04) al aplicar la refutación; verificado contra fuente primaria ese día."
   }
  ]
 }
