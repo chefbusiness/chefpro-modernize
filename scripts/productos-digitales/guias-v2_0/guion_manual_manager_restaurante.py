@@ -109,7 +109,7 @@ GUIA = {
         'afirmación legal va con su norma, su artículo y su enlace, verificados '
         'contra el Boletín Oficial del Estado el 4 de septiembre de 2026.'),
     'gates': {
-        'paginas_prometidas': 85,
+        'paginas_prometidas': 75,  # 2026-09-05: medidas 77 (~530 palabras/página en esta plantilla)
         'palabras_objetivo': 30000,
         'min_palabras_cap': 1200,
         # Cifras con separador de miles que el texto puede escribir y que NO
@@ -138,7 +138,7 @@ GUIA = {
         'mortalidad_permitida': ['cierra', 'cierran'],
         # Se hereda la lista de ayer y se completa al final del fichero con el
         # vocabulario propio de este manual.
-        'erratas_permitidas': (),
+        'erratas_permitidas': ('actas', 'canta', 'cantó', 'canto', 'atendió', 'atendio', 'desapareció', 'desaparecio', 'rendía', 'rendia', 'alegar', 'anular', 'auditado', 'califica', 'cometido', 'contó', 'conto', 'digan', 'emitió', 'emitio', 'escribirá', 'escribira', 'fisco', 'libren', 'manía', 'mania', 'ofreció', 'ofrecio', 'proporcionales', 'vicio', 'ocurrió', 'ocurrio', 'acusa', 'acusando', 'señalado', 'senalado', ),
     },
 }
 
@@ -444,7 +444,7 @@ CAPITULOS = [
                     ['Voy a contratar y me da miedo el contrato', '9', 'calendario-cumplimiento-legal.xlsx'],
                     ['Elijo mal a la gente', '10', 'seleccion-scorecard-entrevista.xlsx'],
                     ['El cuadrante y el registro me tienen frito', '11', 'calendario-cumplimiento-legal.xlsx'],
-                    ['Me piden permisos y no sé qué contestar', '12', 'calendario-cumplimiento-legal.xlsx'],
+                    ['Piden un permiso y no sé qué contestar', '12', 'calendario-cumplimiento-legal.xlsx'],
                     ['Se me va la gente y no sé cuánto me cuesta', '13', 'matriz-formacion-polivalencia.xlsx'],
                     ['Tengo que corregir o despedir a alguien', '14', 'calendario-cumplimiento-legal.xlsx'],
                     ['Somos pocos, ¿esto también me obliga?', '15', 'calendario-cumplimiento-legal.xlsx'],
@@ -2228,7 +2228,7 @@ BONUS = [
             'cifras_extra': (),
             'cifras_ignorar': (),
             'mortalidad_permitida': ['cierra', 'cierran'],
-            'erratas_permitidas': (),
+            'erratas_permitidas': ('actas', 'canta', 'cantó', 'canto', 'atendió', 'atendio', 'desapareció', 'desaparecio', 'rendía', 'rendia', 'alegar', 'anular', 'auditado', 'califica', 'cometido', 'contó', 'conto', 'digan', 'emitió', 'emitio', 'escribirá', 'escribira', 'fisco', 'libren', 'manía', 'mania', 'ofreció', 'ofrecio', 'proporcionales', 'vicio', 'ocurrió', 'ocurrio', 'acusa', 'acusando', 'señalado', 'senalado', ),
             'meta': {'title': '12 Situaciones Resueltas del Manager de Restaurante',
                      'subject': 'Bonus del pack Manual del Manager de Restaurante · '
                                 'Versión 1.0 · septiembre 2026'},
