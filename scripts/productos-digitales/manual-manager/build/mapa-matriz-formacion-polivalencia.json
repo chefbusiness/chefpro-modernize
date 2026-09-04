@@ -1,0 +1,395 @@
+{
+ "fichero": "matriz-formacion-polivalencia.xlsx",
+ "producto": "manual-manager-restaurante",
+ "punto_unico_de_fallo": "Fríos y entrantes",
+ "hojas": {
+  "Matriz": {
+   "celdas": {
+    "Nivel mínimo para dar una estación por cubierta": "B12",
+    "Nivel a partir del cual se puede enseñar": "B13",
+    "Umbral de punto único de fallo": "B14",
+    "Cabecera de la estación «Pase y caliente»": "E17",
+    "Cabecera de la estación «Fríos y entrantes»": "F17",
+    "Cabecera de la estación «Postres y panadería»": "G17",
+    "Cabecera de la estación «Barra y bebidas»": "H17",
+    "Cabecera de la estación «Sala y servicio»": "I17",
+    "Cabecera de la estación «Caja y cierre»": "J17",
+    "Estaciones que puede sostener Marta L. (P01)": "Q18",
+    "Estaciones que puede enseñar Marta L. (P01)": "R18",
+    "Estaciones que puede sostener Iván R. (P02)": "Q19",
+    "Estaciones que puede enseñar Iván R. (P02)": "R19",
+    "Estaciones que puede sostener Nuria C. (P03)": "Q20",
+    "Estaciones que puede enseñar Nuria C. (P03)": "R20",
+    "Estaciones que puede sostener Diego M. (P04)": "Q21",
+    "Estaciones que puede enseñar Diego M. (P04)": "R21",
+    "Estaciones que puede sostener Laura S. (P05)": "Q22",
+    "Estaciones que puede enseñar Laura S. (P05)": "R22",
+    "Estaciones que puede sostener Omar B. (P06)": "Q23",
+    "Estaciones que puede enseñar Omar B. (P06)": "R23",
+    "Estaciones que puede sostener Rocío F. (P07)": "Q24",
+    "Estaciones que puede enseñar Rocío F. (P07)": "R24",
+    "Estaciones que puede sostener Carlos V. (P08)": "Q25",
+    "Estaciones que puede enseñar Carlos V. (P08)": "R25",
+    "Estaciones que puede sostener Elena T. (P09)": "Q26",
+    "Estaciones que puede enseñar Elena T. (P09)": "R26",
+    "Estaciones que puede sostener Youssef A. (P10)": "Q27",
+    "Estaciones que puede enseñar Youssef A. (P10)": "R27",
+    "Estaciones que puede sostener Paula G. (P11)": "Q28",
+    "Estaciones que puede enseñar Paula G. (P11)": "R28",
+    "Estaciones que puede sostener Andrés P. (P12)": "Q29",
+    "Estaciones que puede enseñar Andrés P. (P12)": "R29"
+   },
+   "tablas": [
+    {
+     "titulo": "Leyenda de niveles",
+     "cols": [
+      [
+       "Nivel",
+       "A",
+       "num"
+      ],
+      [
+       "Qué significa",
+       "B",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      9
+     ]
+    },
+    {
+     "titulo": "Matriz de polivalencia (12 personas x 6 estaciones sembradas)",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Nombre",
+       "B",
+       "txt"
+      ],
+      [
+       "Puesto",
+       "C",
+       "txt"
+      ],
+      [
+       "Estación principal",
+       "D",
+       "txt"
+      ],
+      [
+       "Pase y caliente",
+       "E",
+       "num"
+      ],
+      [
+       "Fríos y entrantes",
+       "F",
+       "num"
+      ],
+      [
+       "Postres y panadería",
+       "G",
+       "num"
+      ],
+      [
+       "Barra y bebidas",
+       "H",
+       "num"
+      ],
+      [
+       "Sala y servicio",
+       "I",
+       "num"
+      ],
+      [
+       "Caja y cierre",
+       "J",
+       "num"
+      ],
+      [
+       "Estaciones que puede sostener",
+       "Q",
+       "num"
+      ],
+      [
+       "Estaciones que puede enseñar",
+       "R",
+       "num"
+      ]
+     ],
+     "filas": [
+      18,
+      29
+     ]
+    }
+   ]
+  },
+  "Plan de Cross-Training": {
+   "celdas": {
+    "Fecha de corte del plan": "C5",
+    "Días de aviso": "C6",
+    "Acciones registradas": "C32",
+    "Acciones completadas": "C33",
+    "Acciones en curso": "C34",
+    "Acciones planificadas": "C35",
+    "Acciones vencidas": "C36",
+    "Acciones que vencen pronto": "C37",
+    "Acciones completadas (%)": "C38",
+    "Niveles que faltan: P06 hacia «Fríos y entrantes»": "J10",
+    "Días hasta la fecha: P06 hacia «Fríos y entrantes»": "K10",
+    "Situación del plazo: P06 hacia «Fríos y entrantes»": "L10",
+    "Niveles que faltan: P04 hacia «Fríos y entrantes»": "J11",
+    "Días hasta la fecha: P04 hacia «Fríos y entrantes»": "K11",
+    "Situación del plazo: P04 hacia «Fríos y entrantes»": "L11",
+    "Niveles que faltan: P02 hacia «Fríos y entrantes»": "J12",
+    "Días hasta la fecha: P02 hacia «Fríos y entrantes»": "K12",
+    "Situación del plazo: P02 hacia «Fríos y entrantes»": "L12",
+    "Niveles que faltan: P10 hacia «Barra y bebidas»": "J13",
+    "Días hasta la fecha: P10 hacia «Barra y bebidas»": "K13",
+    "Situación del plazo: P10 hacia «Barra y bebidas»": "L13",
+    "Niveles que faltan: P11 hacia «Sala y servicio»": "J14",
+    "Días hasta la fecha: P11 hacia «Sala y servicio»": "K14",
+    "Situación del plazo: P11 hacia «Sala y servicio»": "L14",
+    "Niveles que faltan: P08 hacia «Caja y cierre»": "J15",
+    "Días hasta la fecha: P08 hacia «Caja y cierre»": "K15",
+    "Situación del plazo: P08 hacia «Caja y cierre»": "L15",
+    "Niveles que faltan: P12 hacia «Pase y caliente»": "J16",
+    "Días hasta la fecha: P12 hacia «Pase y caliente»": "K16",
+    "Situación del plazo: P12 hacia «Pase y caliente»": "L16",
+    "Niveles que faltan: P07 hacia «Pase y caliente»": "J17",
+    "Días hasta la fecha: P07 hacia «Pase y caliente»": "K17",
+    "Situación del plazo: P07 hacia «Pase y caliente»": "L17"
+   },
+   "tablas": [
+    {
+     "titulo": "Plan de cross-training",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Id del empleado",
+       "B",
+       "txt"
+      ],
+      [
+       "Nombre",
+       "C",
+       "txt"
+      ],
+      [
+       "Estación objetivo",
+       "D",
+       "txt"
+      ],
+      [
+       "Nivel actual",
+       "E",
+       "num"
+      ],
+      [
+       "Nivel objetivo",
+       "F",
+       "num"
+      ],
+      [
+       "Quién le enseña",
+       "G",
+       "txt"
+      ],
+      [
+       "Fecha objetivo",
+       "H",
+       "txt"
+      ],
+      [
+       "Estado",
+       "I",
+       "txt"
+      ],
+      [
+       "Niveles que faltan",
+       "J",
+       "num"
+      ],
+      [
+       "Días hasta la fecha",
+       "K",
+       "num"
+      ],
+      [
+       "Situación del plazo",
+       "L",
+       "txt"
+      ]
+     ],
+     "filas": [
+      10,
+      17
+     ]
+    }
+   ]
+  },
+  "Cobertura por Estación": {
+   "celdas": {
+    "Nivel mínimo para dar por cubierta (espejo)": "C6",
+    "Nivel para enseñar (espejo)": "C7",
+    "Umbral de punto único de fallo (espejo)": "C8",
+    "Estaciones registradas": "C26",
+    "Personas registradas en la matriz": "C27",
+    "Estaciones en riesgo": "C28",
+    "Personas de la estación mejor cubierta": "C29",
+    "Personas de la estación peor cubierta": "C30",
+    "Estaciones en riesgo (%)": "C31",
+    "Nombre de la estación 1": "A12",
+    "Personas que sostienen «Pase y caliente»": "B12",
+    "Personas que pueden enseñar «Pase y caliente»": "C12",
+    "Cobertura de «Pase y caliente» (%)": "E12",
+    "Alerta de «Pase y caliente»": "F12",
+    "Nombre de la estación 2": "A13",
+    "Personas que sostienen «Fríos y entrantes»": "B13",
+    "Personas que pueden enseñar «Fríos y entrantes»": "C13",
+    "Cobertura de «Fríos y entrantes» (%)": "E13",
+    "Alerta de «Fríos y entrantes»": "F13",
+    "Nombre de la estación 3": "A14",
+    "Personas que sostienen «Postres y panadería»": "B14",
+    "Personas que pueden enseñar «Postres y panadería»": "C14",
+    "Cobertura de «Postres y panadería» (%)": "E14",
+    "Alerta de «Postres y panadería»": "F14",
+    "Nombre de la estación 4": "A15",
+    "Personas que sostienen «Barra y bebidas»": "B15",
+    "Personas que pueden enseñar «Barra y bebidas»": "C15",
+    "Cobertura de «Barra y bebidas» (%)": "E15",
+    "Alerta de «Barra y bebidas»": "F15",
+    "Nombre de la estación 5": "A16",
+    "Personas que sostienen «Sala y servicio»": "B16",
+    "Personas que pueden enseñar «Sala y servicio»": "C16",
+    "Cobertura de «Sala y servicio» (%)": "E16",
+    "Alerta de «Sala y servicio»": "F16",
+    "Nombre de la estación 6": "A17",
+    "Personas que sostienen «Caja y cierre»": "B17",
+    "Personas que pueden enseñar «Caja y cierre»": "C17",
+    "Cobertura de «Caja y cierre» (%)": "E17",
+    "Alerta de «Caja y cierre»": "F17"
+   },
+   "tablas": [
+    {
+     "titulo": "Cobertura por estación",
+     "cols": [
+      [
+       "Estación",
+       "A",
+       "txt"
+      ],
+      [
+       "Personas que la sostienen",
+       "B",
+       "num"
+      ],
+      [
+       "Personas que pueden enseñarla",
+       "C",
+       "num"
+      ],
+      [
+       "Personas en la matriz",
+       "D",
+       "num"
+      ],
+      [
+       "Cobertura (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Alerta",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      12,
+      17
+     ]
+    }
+   ]
+  },
+  "Coste de una Baja": {
+   "celdas": {
+    "Horas de selección": "B6",
+    "Coste por hora de quien selecciona": "B7",
+    "Coste de la selección": "B8",
+    "Horas de quien enseña": "B9",
+    "Coste por hora de quien enseña": "B10",
+    "Coste de las horas de quien enseña": "B11",
+    "Horas de formación de la persona nueva": "B12",
+    "Coste por hora de la persona nueva": "B13",
+    "Coste de las horas de la persona nueva": "B14",
+    "Total del coste directo (A)": "B15",
+    "Días de menor rendimiento": "B19",
+    "Caída estimada del rendimiento": "B20",
+    "Venta media de un día": "B21",
+    "Venta estimada que no se hace (B)": "B22",
+    "Impacto estimado total de la baja": "B28"
+   },
+   "tablas": [
+    {
+     "titulo": "Coste directo de cubrir la baja",
+     "cols": [
+      [
+       "Concepto",
+       "A",
+       "txt"
+      ],
+      [
+       "Valor",
+       "B",
+       "eur"
+      ],
+      [
+       "Nota",
+       "C",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      15
+     ]
+    },
+    {
+     "titulo": "Venta que se deja de hacer",
+     "cols": [
+      [
+       "Concepto",
+       "A",
+       "txt"
+      ],
+      [
+       "Valor",
+       "B",
+       "eur"
+      ],
+      [
+       "Nota",
+       "C",
+       "txt"
+      ]
+     ],
+     "filas": [
+      19,
+      22
+     ]
+    }
+   ]
+  }
+ }
+}
