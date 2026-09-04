@@ -93,6 +93,14 @@ handoff B). **Regla nueva de John: los productos NO se escriben con bridge.py** 
 `guias-v2_0/dump_prompts.py` + `check_bloque.py`): el presupuesto por producto sube (≈ 5,5 M tokens la redacción de una guía de
 95 páginas) y hay que contarlo así en las semanas de guías.
 
+### ✅ 2026-09-05 — «Manual del Manager de Restaurante» PUBLICADO (producto nuevo nº 2, por orden expresa de John el 4-sep)
+
+En `main` (`4a649d0`) a 55 € (`/manual-manager-restaurante`): manual de 77 páginas + bonus de 28 + 7 xlsx; gates en verde. **Falta el
+Payment Link de Stripe → env → `sync-payment-links.py` → redeploy → gate LIVE → email** (handoff
+`SESSION_HANDOFF_2026-09-04-manual-manager.md` §2). Primer producto de la línea «Manuales operativos»; siguen Chef Ejecutivo,
+Pastelería y Chocolatería. Coste ≈ 10,5 M tokens de subagentes (dos productos nuevos en dos días: la alternancia se retoma con una
+sesión impar). Hotfix colateral: la landing de la Guía Food Cost servía dos botones de WhatsApp.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 1. **El error del 21 % de IVA está VIVO en la familia de PLANES** (`planes-v2_0/grupo_a.py`), y afecta a los **10 planes
