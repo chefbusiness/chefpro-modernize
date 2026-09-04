@@ -2276,6 +2276,34 @@
    "cita_literal": null,
    "fiabilidad": "alta",
    "nota": "Series EACL522 (hostelería) y EACL618 (total nacional), leídas de la API del INE el 2026-09-04. En la misma encuesta el coste total bruto es 23.690,02 € frente a 38.748,94 € (MM-42). AVISO: «beneficios sociales» NO es una variable de la EACL; los 211,42 € que circulan son la suma de cotizaciones voluntarias (22,22), prestaciones sociales directas (187,83) y gastos de carácter social (1,37), o sea, un derivado propio. Corrección A10/D9. Añadido por el corrector del JSON del Manual del Manager (2026-09-04) al aplicar la refutación; verificado contra fuente primaria ese día."
+  },
+  {
+   "id": "MM-58",
+   "tema": "Verifactu",
+   "dato": "El Real Decreto-ley 15/2025, de 2 de diciembre, aplaza Verifactu por su DISPOSICIÓN FINAL PRIMERA, que da nueva redacción a la disposición final cuarta del RD 1007/2023: los obligados tributarios del artículo 3.1.a) del Reglamento (contribuyentes del Impuesto sobre Sociedades) deben tener adaptados sus sistemas antes del 1 de enero de 2027, y el resto de obligados del artículo 3.1 antes del 1 de julio de 2027. OJO al citarlo: el precepto que aplaza es la disposición final primera del RDL, NO un «artículo 3» del RDL; el artículo 3 que aparece en el texto es el del Reglamento del RD 1007/2023 y define QUIÉN está obligado, no CUÁNDO. Lo que hace el manager hoy es pedir por escrito a su proveedor de TPV la fecha de su versión adaptada",
+   "cifra": "1 de enero de 2027 (sociedades) y 1 de julio de 2027 (resto)",
+   "unidad": "",
+   "anio_del_dato": "2026",
+   "fuente_titulo": "Real Decreto-ley 15/2025, de 2 de diciembre, disposición final primera (modifica la disposición final cuarta del RD 1007/2023, de 5 de diciembre)",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-24446",
+   "fecha_publicacion": "2025-12-03",
+   "cita_literal": "Disposición final primera. Modificación del Real Decreto 1007/2023, de 5 de diciembre. La disposición final cuarta queda redactada en los siguientes términos: «Disposición final cuarta. Entrada en vigor y efectos. […] No obstante, los obligados tributarios a que se refiere el artículo 3.1.a) deberán tener adaptados los sistemas informáticos a las características y requisitos establecidos en este reglamento y en su normativa de desarrollo antes del 1 de enero de 2027. El resto de obligados tributarios mencionados en el artículo 3.1 deberán tener operativos los citados sistemas informáticos antes del 1 de julio de 2027.»",
+   "fiabilidad": "alta",
+   "nota": "Verificado el 2026-09-04 leyendo el texto consolidado del RD 1007/2023 (BOE-A-2023-24840), cuya ficha de vigencia remite a «la disposición final 1 del Real Decreto-ley 15/2025, de 2 de diciembre. Ref. BOE-A-2025-24446», y el propio RDL. Corrige la cita «RDL 15/2025, art. 3» que arrastraban manual-manager-SPEC.md §3 y calendario-cumplimiento-legal.xlsx!Estado Normativo!F9."
+  },
+  {
+   "id": "MM-59",
+   "tema": "Fumar en terrazas",
+   "dato": "La prohibición de fumar en terrazas de hostelería NO está vigente: el 21 de julio de 2026 el Consejo de Ministros aprobó un proyecto de ley, que es un proyecto. Lo que define hoy una terraza a efectos de la ley antitabaco es el artículo 2.2 de la Ley 28/2005: es espacio al aire libre —y por tanto se puede fumar— todo espacio no cubierto, o todo espacio que, estando cubierto, esté rodeado lateralmente por un máximo de DOS paredes, muros o paramentos. Con tres o más, deja de ser espacio al aire libre y rige la prohibición general",
+   "cifra": "máximo 2 paredes, muros o paramentos",
+   "unidad": "",
+   "anio_del_dato": "2026",
+   "fuente_titulo": "Ley 28/2005, de 26 de diciembre, de medidas sanitarias frente al tabaquismo, art. 2.2 (apartado añadido por el RDL 17/2017)",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-21261",
+   "fecha_publicacion": null,
+   "cita_literal": "2. A efectos de esta Ley, en el ámbito de la hostelería, se entiende por espacio al aire libre todo espacio no cubierto o todo espacio que estando cubierto esté rodeado lateralmente por un máximo de dos paredes, muros o paramentos.",
+   "fiabilidad": "alta",
+   "nota": "Verificado el 2026-09-04 sobre el texto consolidado del BOE. Da URL a la fila «Prohibición de fumar en terrazas» de calendario-cumplimiento-legal.xlsx!Estado Normativo, que hoy es una de las dos filas sin enlace, y respalda la nota de Régimen Disciplinario ALEH!L9 sobre la falta grave de fumar en zonas no permitidas."
   }
  ]
 }

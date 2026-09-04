@@ -19,9 +19,11 @@ dentro del plazo de tu comunidad.
 
 DECISIONES TÉCNICAS
 -------------------
-* Cero constantes dentro de una fórmula: el SLA por gravedad, el plazo legal
-  por comunidad, la conversión de días a horas y los objetivos de la casa
-  viven en celdas. El SLA y el plazo se recuperan con INDEX/MATCH.
+* Cero constantes dentro de una fórmula: el SLA por gravedad y el plazo legal
+  por comunidad viven en celdas, y los objetivos de la casa también. El SLA y
+  el plazo se recuperan con INDEX/MATCH. El SLA se mide en DÍAS (M5, auditoría
+  2026-09-04): «Fecha de la queja» y «Fecha de cierre» son columnas de fecha
+  sin hora, así que medirlo en horas sólo podía devolver múltiplos de 24.
 * Funciones prohibidas (INDIRECT, COUNTA, PMT, OFFSET, XLOOKUP, LET, LAMBDA,
   matrices dinámicas y RANK — que pycel no implementa): cero.
 * «Sin dato» = `""`, nunca `0`; `IFERROR(...,"")` en todo cociente.
@@ -126,10 +128,21 @@ COMUNIDADES = [c[0] for c in DE.PARAMETROS_QUEJAS['plazos_autonomicos']]
 # Plazo en días y tipo de día de cada comunidad VERIFICADA. Sólo dos: el resto
 # queda vacío y editable (SPEC §2.2, fila 3).
 PLAZOS = [
-    ('Cataluña', '1 mes', 30, 'Naturales',
-     VERIF + ' · Decret 121/2013 y Codi de consum de Cataluña (Llei 22/2010), '
-     'art. 126-9: hay que contestar en el plazo máximo de 1 mes desde la '
-     'presentación de la hoja · '
+    # A2 (auditoría 2026-09-04): el plazo de 1 mes NO está en el art. 126-9
+    # (que sólo regula el derecho a la hoja oficial); está en el art.
+    # 211-4.c) de la Ley 22/2010. M4 (misma auditoría): «1 mes» modelado
+    # como 30 días naturales fijos marcaría «Dentro de plazo» hasta dos días
+    # después de vencido en febrero. Fix mínimo sin tocar la estructura de la
+    # hoja: 28 días (el mes natural más corto) en vez de 30, para que el
+    # aviso salga siempre ANTES de vencer y nunca después.
+    ('Cataluña', '1 mes', 28, 'Naturales',
+     VERIF + ' · Código de consumo de Cataluña (Ley 22/2010), art. 211-4.c): '
+     'hay que dar respuesta a las quejas y reclamaciones recibidas en el '
+     'plazo de UN MES desde que son presentadas; el derecho a la entrega de '
+     'la hoja oficial está en el art. 126-9, y el modelo de hoja lo regula '
+     'el Decret 121/2013. La columna «Días para el aviso» usa 28, no 30: un '
+     'mes natural puede tener sólo 28 días (febrero), y el libro tiene que '
+     'avisar ANTES de que venza, nunca después · '
      'https://www.boe.es/buscar/act.php?id=BOE-A-2010-13115'),
     ('Andalucía', '10 días hábiles', 10, 'Hábiles',
      VERIF + ' · Decreto 82/2022, arts. 4, 7 y 12: respuesta por escrito en '
@@ -227,7 +240,7 @@ def etiqueta_valor(ws, fila, etiqueta, coord_valor, fmt=None, formula=None,
 # Hoja «Instrucciones»
 # --------------------------------------------------------------------------
 PASOS = [
-    '1. Abre «Parámetros» y pon TU SLA: cuántas horas te das para cerrar una '
+    '1. Abre «Parámetros» y pon TU SLA: cuántos días te das para cerrar una '
     'queja leve, una media y una grave. Es un compromiso de la casa, no una '
     'norma: por eso está en celda verde.',
     '2. En la misma hoja, busca tu comunidad en la tabla de plazos legales. '
@@ -236,7 +249,7 @@ PASOS = [
     'fila «Otras comunidades»: el libro la usará igual.',
     '3. Registra cada queja en «Registro de Quejas» según ocurre. Fecha, '
     'canal, motivo de la lista, gravedad de 1 a 3, quién la atiende, qué se '
-    'hizo y la fecha en que quedó cerrada. El libro calcula solo las horas '
+    'hizo y la fecha en que quedó cerrada. El libro calcula solo los días '
     'que tardaste, el SLA que le tocaba y si lo cumpliste.',
     '4. Una hoja OFICIAL de reclamaciones no es una queja: va a '
     '«Reclamaciones Formales», con su número, la comunidad y la fecha en que '
@@ -254,11 +267,15 @@ PASOS = [
 ]
 
 NOTAS = [
+    # M8 (auditoría 2026-09-04): «sala» (salón, en el uso de otros países)
+    # es vocabulario de España que la SPEC §0 pide glosar en su primera
+    # aparición.
     'QUEJA, RECLAMACIÓN Y RESEÑA NO SON LO MISMO, y por eso son tres hojas. '
-    'La queja se resuelve en sala y se mide contra el SLA que se pone la casa. '
-    'La hoja oficial de reclamaciones es un procedimiento administrativo con '
-    'un plazo de respuesta que fija tu comunidad autónoma. La reseña es '
-    'pública, la lee quien todavía no ha venido, y se responde.',
+    'La queja se resuelve en sala (salón, en el uso de otros países) y se '
+    'mide contra el SLA que se pone la casa. La hoja oficial de '
+    'reclamaciones es un procedimiento administrativo con un plazo de '
+    'respuesta que fija tu comunidad autónoma. La reseña es pública, la lee '
+    'quien todavía no ha venido, y se responde.',
     'La hoja oficial de reclamaciones es competencia AUTONÓMICA: el modelo, '
     'el cartel obligatorio y el plazo de respuesta cambian de una comunidad a '
     'otra. Este libro sólo siembra las dos comunidades cuyo plazo se ha '
@@ -318,7 +335,7 @@ def hoja_parametros(wb):
     seccion(ws, 'A4', 'SLA DE LA CASA POR GRAVEDAD DE LA QUEJA')
     encabezados(ws, P_SLA_CAB, [
         ('A', 'Gravedad (1-3)', 13), ('B', 'Qué significa', 56),
-        ('C', 'SLA de cierre (horas)', 14), ('D', '', 4),
+        ('C', 'SLA de cierre (días)', 14), ('D', '', 4),
         ('E', '', 4), ('F', 'Notas y fuente', 90),
     ])
     for i, (g, texto) in enumerate(DE.PARAMETROS_QUEJAS['escala_gravedad']):
@@ -326,26 +343,35 @@ def hoja_parametros(wb):
         motor.val(ws, 'A%d' % r, g, fmt=ENT)
         motor.val(ws, 'B%d' % r, texto, wrap=True)
         motor.val(ws, 'C%d' % r,
-                  DE.PARAMETROS_QUEJAS['sla_horas_por_gravedad'][g], fmt=ENT,
+                  DE.PARAMETROS_QUEJAS['sla_dias_por_gravedad'][g], fmt=ENT,
                   verde_=True)
     motor.dv_numerica(ws, ['C%d' % r for r in range(P_SLA_INI, P_SLA_FIN + 1)],
-                      minimo=1, maximo=720, titulo='SLA en horas',
-                      mensaje='Escribe las horas de las que te quieres dar '
+                      minimo=1, maximo=30, titulo='SLA en días',
+                      mensaje='Escribe los días de los que te quieres dar '
                               'para cerrar una queja de esa gravedad '
-                              '(entre 1 y 720).')
+                              '(entre 1 y 30).')
     motor.val(ws, 'F%d' % P_SLA_INI,
               'El SLA es un compromiso de la casa, no una obligación legal. '
               'La escala de gravedad es la del capítulo 17 del manual.',
               wrap=True)
 
-    seccion(ws, 'A10', 'CONSTANTE DE CÁLCULO')
+    # M5 (auditoría 2026-09-04): esta celda convertía días en horas
+    # (×24) para poder comparar contra un SLA en horas. Desde que el SLA se
+    # mide en DÍAS, ninguna fórmula del libro la usa: Excel ya resta fechas
+    # en días de forma nativa. Se conserva —no se borra ninguna fila— como
+    # referencia por si algún día quieres convertir un SLA en días a horas
+    # a mano.
+    seccion(ws, 'A10', 'CONSTANTE DE REFERENCIA (sin uso en las fórmulas)')
     motor.val(ws, 'A%d' % P_HORAS, 'Horas que tiene un día')
     cel = motor.val(ws, 'C%d' % P_HORAS, 24, fmt=ENT)
     cel.fill = PatternFill('solid', fgColor=GRIS_BG)
     motor.val(ws, 'F%d' % P_HORAS,
-              'Excel resta fechas en DÍAS. Esta celda convierte esa resta en '
-              'horas para poder compararla con el SLA. No es un parámetro de '
-              'tu negocio: por eso no está en verde.', wrap=True)
+              'Ninguna fórmula de este libro usa ya esta celda: el SLA se '
+              'mide en DÍAS (M5, auditoría 2026-09-04), que es lo que las '
+              'columnas de fecha «Fecha de la queja» y «Fecha de cierre» '
+              'pueden medir sin pedirte la hora. Se conserva por si alguna '
+              'vez quieres convertir un SLA en días a horas a mano.',
+              wrap=True)
 
     seccion(ws, 'A13', 'PLAZO LEGAL DE RESPUESTA A LA HOJA OFICIAL DE '
                        'RECLAMACIONES, POR COMUNIDAD')
@@ -404,15 +430,15 @@ def hoja_parametros(wb):
 def hoja_quejas(wb):
     ws = wb.create_sheet('Registro de Quejas')
     cabecera(ws, 'Registro de quejas — lo que se resuelve en sala')
-    apunte(ws, 'G3', 'Las horas hasta el cierre, el SLA de esa gravedad y el '
+    apunte(ws, 'G3', 'Los días hasta el cierre, el SLA de esa gravedad y el '
                      'cumplimiento los calcula el libro.')
     encabezados(ws, Q_CAB, [
         ('A', '#', 5), ('B', 'Fecha de la queja', 13),
         ('C', 'Canal', 18), ('D', 'Motivo', 24),
         ('E', 'Gravedad (1-3)', 10), ('F', 'Responsable', 18),
         ('G', 'Acción tomada', 54), ('H', 'Fecha de cierre', 13),
-        ('I', 'Horas hasta el cierre', 12),
-        ('J', 'SLA de esa gravedad (horas)', 12),
+        ('I', 'Días hasta el cierre', 12),
+        ('J', 'SLA de esa gravedad (días)', 12),
         ('K', 'SLA cumplido', 12), ('L', 'Notas', 34),
     ])
     ws.freeze_panes = 'C5'
@@ -442,10 +468,12 @@ def hoja_quejas(wb):
         v_motivo.append('D%d' % r)
         v_grav.append('E%d' % r)
         v_resp.append('F%d' % r)
+        # M5 (auditoría 2026-09-04): sin el ×24 — «Fecha de la queja» y
+        # «Fecha de cierre» no llevan hora, así que Excel ya resta fechas en
+        # DÍAS de forma nativa. El SLA (columna J) también se mide en días.
         motor.f(ws, 'I%d' % r,
-                '=IFERROR(IF(OR($B{r}="",$H{r}=""),"",'
-                '($H{r}-$B{r})*Parámetros!$C${h}),"")'.format(r=r, h=P_HORAS),
-                fmt=ENT)
+                '=IFERROR(IF(OR($B{r}="",$H{r}=""),"",$H{r}-$B{r}),"")'
+                .format(r=r), fmt=ENT)
         motor.f(ws, 'J%d' % r,
                 '=IFERROR(IF($E{r}="","",INDEX(Parámetros!$C${a}:$C${b},'
                 'MATCH($E{r},Parámetros!$A${a}:$A${b},0))),"")'
@@ -681,7 +709,7 @@ def hoja_resumen(wb):
         formula='=IFERROR(MAX($C${a}:$C${b}),"")'.format(a=X_GRA_INI,
                                                         b=X_GRA_FIN))
     etiqueta_valor(
-        ws, r + 5, 'Tiempo medio hasta el cierre (horas)', 'D%d' % (r + 5),
+        ws, r + 5, 'Tiempo medio hasta el cierre (días)', 'D%d' % (r + 5),
         fmt=DEC1,
         formula='=IFERROR(AVERAGEIFS({q}!$I${a}:$I${b},{q}!$I${a}:$I${b},'
                 '">=0"),"")'.format(q=Q, a=Q_INI, b=Q_FIN))
@@ -706,7 +734,7 @@ def hoja_resumen(wb):
     encabezados(ws, X_MOT_CAB, [
         ('A', 'Motivo', None), ('B', '', None), ('C', 'Quejas', None),
         ('D', 'Porcentaje del total', None),
-        ('E', 'Horas medias hasta el cierre', None),
+        ('E', 'Días medios hasta el cierre', None),
         ('F', 'Fuera del SLA', None), ('G', '', None), ('H', '', None),
     ], alto=34)
     for i, m in enumerate(DE.MOTIVOS_QUEJA):
@@ -736,8 +764,8 @@ def hoja_resumen(wb):
     seccion(ws, 'A%d' % (X_GRA_CAB - 1), 'QUEJAS POR GRAVEDAD')
     encabezados(ws, X_GRA_CAB, [
         ('A', 'Gravedad', None), ('B', 'Qué significa', None),
-        ('C', 'Quejas', None), ('D', 'SLA (horas)', None),
-        ('E', 'Horas medias hasta el cierre', None),
+        ('C', 'Quejas', None), ('D', 'SLA (días)', None),
+        ('E', 'Días medios hasta el cierre', None),
         ('F', 'Dentro del SLA', None), ('G', 'Cumplimiento (%)', None),
         ('H', '', None),
     ], alto=34)
@@ -898,7 +926,7 @@ def mapa():
         'Quejas del motivo más repetido': 'D%d' % (r + 2),
         'Gravedad más repetida': 'D%d' % (r + 3),
         'Quejas de la gravedad más repetida': 'D%d' % (r + 4),
-        'Tiempo medio hasta el cierre (horas)': 'D%d' % (r + 5),
+        'Tiempo medio hasta el cierre (días)': 'D%d' % (r + 5),
         'Quejas cerradas dentro del SLA': 'D%d' % (r + 6),
         'Quejas cerradas fuera del SLA': 'D%d' % (r + 7),
         'SLA cumplido (%)': 'D%d' % (r + 8),
@@ -914,11 +942,11 @@ def mapa():
     for i, m in enumerate(DE.MOTIVOS_QUEJA):
         celdas_resumen['Motivo «%s»: quejas' % m] = 'C%d' % (X_MOT_INI + i)
         celdas_resumen['Motivo «%s»: porcentaje' % m] = 'D%d' % (X_MOT_INI + i)
-        celdas_resumen['Motivo «%s»: horas medias' % m] = \
+        celdas_resumen['Motivo «%s»: días medios' % m] = \
             'E%d' % (X_MOT_INI + i)
     for i, (g, _t) in enumerate(DE.PARAMETROS_QUEJAS['escala_gravedad']):
         celdas_resumen['Gravedad %d: quejas' % g] = 'C%d' % (X_GRA_INI + i)
-        celdas_resumen['Gravedad %d: SLA (horas)' % g] = 'D%d' % (X_GRA_INI + i)
+        celdas_resumen['Gravedad %d: SLA (días)' % g] = 'D%d' % (X_GRA_INI + i)
         celdas_resumen['Gravedad %d: cumplimiento (%%)' % g] = \
             'G%d' % (X_GRA_INI + i)
     etiquetas_mes = ['marzo 2026', 'abril 2026', 'mayo 2026', 'junio 2026',
@@ -930,9 +958,9 @@ def mapa():
         celdas_resumen['Reseñas de %s: lectura' % et] = 'G%d' % (X_MES_INI + i)
 
     celdas_param = {
-        'SLA de la gravedad 1 (horas)': 'C%d' % P_SLA_INI,
-        'SLA de la gravedad 2 (horas)': 'C%d' % (P_SLA_INI + 1),
-        'SLA de la gravedad 3 (horas)': 'C%d' % P_SLA_FIN,
+        'SLA de la gravedad 1 (días)': 'C%d' % P_SLA_INI,
+        'SLA de la gravedad 2 (días)': 'C%d' % (P_SLA_INI + 1),
+        'SLA de la gravedad 3 (días)': 'C%d' % P_SLA_FIN,
         'Horas que tiene un día': 'C%d' % P_HORAS,
         'Plazo legal de Cataluña (días)': 'C%d' % P_PLZ_INI,
         'Plazo legal de Andalucía (días)': 'C%d' % (P_PLZ_INI + 1),
@@ -951,7 +979,7 @@ def mapa():
                     {'titulo': 'SLA de la casa por gravedad',
                      'cols': [['Gravedad (1-3)', 'A', 'num'],
                               ['Qué significa', 'B', 'txt'],
-                              ['SLA de cierre (horas)', 'C', 'num']],
+                              ['SLA de cierre (días)', 'C', 'num']],
                      'filas': [P_SLA_INI, P_SLA_FIN]},
                     {'titulo': 'Plazo legal de respuesta por comunidad',
                      'cols': [['Comunidad', 'A', 'txt'],
@@ -980,8 +1008,8 @@ def mapa():
                               ['Responsable', 'F', 'txt'],
                               ['Acción tomada', 'G', 'txt'],
                               ['Fecha de cierre', 'H', 'txt'],
-                              ['Horas hasta el cierre', 'I', 'num'],
-                              ['SLA de esa gravedad (horas)', 'J', 'num'],
+                              ['Días hasta el cierre', 'I', 'num'],
+                              ['SLA de esa gravedad (días)', 'J', 'num'],
                               ['SLA cumplido', 'K', 'txt'],
                               ['Notas', 'L', 'txt']],
                      'filas': [Q_INI, Q_FIN]},
@@ -1035,7 +1063,7 @@ def mapa():
                      'cols': [['Gravedad', 'A', 'num'],
                               ['Qué significa', 'B', 'txt'],
                               ['Quejas', 'C', 'num'],
-                              ['SLA (horas)', 'D', 'num'],
+                              ['SLA (días)', 'D', 'num'],
                               ['Horas medias hasta el cierre', 'E', 'num'],
                               ['Dentro del SLA', 'F', 'num'],
                               ['Cumplimiento (%)', 'G', 'pct1']],

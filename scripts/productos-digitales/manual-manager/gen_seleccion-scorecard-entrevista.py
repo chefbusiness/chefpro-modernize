@@ -221,8 +221,11 @@ NOTAS = [
     'servicio en mesa pesa el aguante de un servicio de 75 cubiertos; en un '
     'local de barra pesará otra cosa. Cambia los pesos antes de puntuar, '
     'nunca después.',
+    # M8 (auditoría 2026-09-04): «sala» (salón, en el uso de otros países)
+    # es vocabulario de España; primera aparición del término en este libro.
     'Los cuatro candidatos sembrados son un EJEMPLO del proceso modelado del '
-    'pack (camarero o camarera de sala). Bórralos y pon los tuyos.',
+    'pack (camarero o camarera de sala, salón en el uso de otros países). '
+    'Bórralos y pon los tuyos.',
     'Dos candidatos pueden empatar. El libro lo dice sin maquillarlo: el '
     'ranking les da el mismo puesto, igual que haría una clasificación '
     'deportiva. Si tienes que elegir, mira la columna de observaciones y las '
@@ -279,13 +282,21 @@ def hoja_scorecard(wb):
               '%s · %s' % (DE.SELECCION['area_aleh'],
                            DE.SELECCION['grupo_aleh']), verde_=True)
     motor.val(ws, 'I%d' % SC_ALEH,
+              # M8 (auditoría 2026-09-04): «gerente»/«encargado» son
+              # vocabulario de España; en buena parte de LATAM se dice
+              # «administrador». Primera aparición del término en este
+              # libro.
               'El ALEH VI ordena la hostelería en SEIS áreas funcionales y '
-              'TRES grupos profesionales. «Encargado», «director» o «gerente» '
-              'son denominaciones de uso, no categorías del convenio: quien '
-              'lleva el local se clasifica por las funciones que hace. '
+              'TRES grupos profesionales. «Encargado», «director», «gerente» '
+              'o «administrador» (según el país) son denominaciones de uso, '
+              'no categorías del convenio: quien lleva el local se clasifica '
+              'por las funciones que hace. '
+              # B5 (auditoría 2026-09-04): unificada a la forma
+              # buscar/act.php (texto consolidado), la misma que enseña a
+              # consultar el propio manual.
               + VERIF + ' · ALEH VI (BOE-A-2023-6344, con la modificación '
               'BOE-A-2026-18630) · '
-              'https://www.boe.es/buscar/doc.php?id=BOE-A-2023-6344',
+              'https://www.boe.es/buscar/act.php?id=BOE-A-2023-6344',
               wrap=True)
     motor.val(ws, 'B%d' % SC_JORNADA, 'Jornada')
     motor.val(ws, 'D%d' % SC_JORNADA, DE.SELECCION['jornada'], verde_=True)

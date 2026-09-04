@@ -32,8 +32,12 @@ DECISIONES TÉCNICAS
   fichero pasa por un visor con las fuentes base. El texto lo dice con
   palabras.
 * «Coste de una Baja» NO lleva ni una cifra de mercado: los nueve valores son
-  del juego de ejemplo y todos editables. Y separa el COSTE DIRECTO de la VENTA
-  que se deja de hacer, que no es un coste y no debe apuntarse como gasto.
+  del juego de ejemplo y todos editables. Separa el COSTE DIRECTO (A) del
+  MARGEN que se deja de ganar (B) mientras el equipo no está a pleno
+  rendimiento — no la venta bruta: A5 (auditoría 2026-09-04) corrigió que el
+  bloque B aplicaba el % de caída de UN TURNO a la venta de TODO el
+  restaurante, y que sumaba venta bruta con gasto real. B ya es margen tras
+  prime cost, así que A + B sí es comparar euros con euros.
 * `IFERROR(...,"")` en todo cociente, «sin dato» = `""` nunca 0, semáforos con
   `ISNUMBER`, cero constantes dentro de una fórmula. Prohibidas `INDIRECT`,
   `COUNTA`, `PMT`, `OFFSET`, `XLOOKUP`, `LET`, `LAMBDA` y las matrices
@@ -259,12 +263,16 @@ NOTAS_LIBRO = [
     'Los nombres de las estaciones son celdas verdes de la fila de cabecera de '
     'la matriz. Cámbialos por los tuyos: la hoja de cobertura los lee de ahí, '
     'no hay que tocar ninguna fórmula.',
-    'La hoja «Coste de una Baja» separa a propósito dos cosas que no se suman '
-    'igual: el COSTE DIRECTO (horas de selección y de formación, que sí son '
-    'gasto) y la VENTA que se deja de hacer mientras el equipo no está a pleno '
-    'rendimiento, que no es un gasto contable. El total junta las dos porque es '
-    'lo que le duele al negocio, pero no se apunta como coste en la cuenta de '
-    'resultados.',
+    # A5 (auditoría 2026-09-04): esta nota describía el bloque B como VENTA
+    # bruta sumada a un GASTO —justo el error que corrigió A5—. Ahora que B
+    # es MARGEN tras prime cost, las dos partidas SÍ son la misma clase de
+    # euro y sumarlas es correcto; la nota lo dice.
+    'La hoja «Coste de una Baja» tiene dos partidas que juntas responden a '
+    '«cuánto le cuesta al negocio perder a una persona»: el COSTE DIRECTO '
+    '(horas de selección y de formación) y el MARGEN que se deja de ganar '
+    'mientras el equipo no está a pleno rendimiento. Las dos son euros reales '
+    '—uno sale de la cuenta, el otro deja de entrar—, así que sumarlas en el '
+    'total sí es comparar euros con euros.',
     'Esta matriz no evalúa a nadie ni sirve para decidir un despido: mide qué '
     'sabe hacer el equipo y dónde hay que formar. La evaluación del desempeño '
     'es otra herramienta y otra conversación.',
@@ -425,8 +433,13 @@ def hoja_matriz(wb):
                         for j in range(N_ESTACIONES) for r in filas],
                    NIVELES, titulo='Nivel de 0 a 3',
                    mensaje='El nivel va de 0 a 3. Mira la leyenda de arriba.')
-    motor.dv_lista(ws, ['B%d' % r for r, _, _ in params], NIVELES,
-                   titulo='Nivel de 0 a 3')
+    # A4 (auditoría 2026-09-04): `B14` (M_RIESGO) es un RECUENTO de personas
+    # (su propia DV decimal va 0-30 líneas más abajo), no un nivel 0-3. Antes
+    # se colaba también en el `sqref` de esta lista, y dos `dataValidation`
+    # solapadas sobre la misma celda viola ECMA-376 §18.3.1.32. Sólo
+    # M_CUBRE y M_ENSENA (los dos primeros de `params`) son niveles.
+    motor.dv_lista(ws, ['B%d' % r for r, _, _ in params if r != M_RIESGO],
+                   NIVELES, titulo='Nivel de 0 a 3')
     motor.dv_numerica(ws, ['B%d' % M_RIESGO], minimo=0, maximo=N_EMPLEADOS,
                       titulo='Personas')
     ws.freeze_panes = 'E%d' % M_INI
@@ -729,9 +742,13 @@ def hoja_coste_baja(wb):
             .format(a=B_T_SEL, b=B_T_FOR, c=B_T_NUE), fmt=FMT_EUR, bold=True)
     fila_total(ws, B_TOT_A, 'A', 'B')
 
+    # A5 (auditoría 2026-09-04): bloque B reescrito para que B22 sea MARGEN
+    # (comparable con el gasto real de A), no venta bruta del restaurante
+    # entero escalada por la caída de UN turno. Ver el comentario de
+    # `COSTE_BAJA` en `datos_ejemplo.py` para la cuenta completa.
     seccion(ws, 'A%d' % (B_B_CAB - 1),
-            'B. VENTA QUE SE DEJA DE HACER MIENTRAS EL EQUIPO NO ESTÁ A PLENO '
-            'RENDIMIENTO')
+            'B. MARGEN QUE SE DEJA DE GANAR MIENTRAS EL EQUIPO NO ESTÁ A '
+            'PLENO RENDIMIENTO')
     cabecera(ws, B_B_CAB, [('A', 'Concepto'), ('B', 'Valor'), ('C', 'Nota')],
              altura=20)
     for r, etiqueta, valor, fmt, comentario in (
@@ -739,18 +756,23 @@ def hoja_coste_baja(wb):
              float(cb['dias_menor_rendimiento']), FMT_ENT,
              'Desde que se va la persona hasta que la nueva rinde como el '
              'puesto pide.'),
-            (B_PCT, 'Caída estimada del rendimiento (%)',
-             cb['pct_menor_rendimiento'], FMT_PCT,
-             'Cuánto rinde de menos el conjunto del turno durante esos días.'),
-            (B_VENTA, 'Venta media de un día', cb['venta_dia_media'], FMT_EUR,
-             'Sin IVA. En el ejemplo es la venta anual dividida entre los 364 '
-             'días de las 52 semanas.')):
+            (B_PCT, 'Peso de esa persona en la venta diaria del restaurante (%)',
+             cb['pct_peso_persona_venta'], FMT_PCT,
+             'NO es la caída del turno entero: es cuánto pesa ESA PERSONA en '
+             'la venta de TODO el restaurante. Con una plantilla de 12 y '
+             'puestos de peso desigual, 5 % es conservador para un puesto no '
+             'crítico; súbelo para un puesto que sí lo sea.'),
+            (B_VENTA, 'Margen medio de un día (tras prime cost)',
+             cb['margen_dia_medio'], FMT_EUR,
+             'Sin IVA. NO es la venta bruta: ya lleva descontado el prime '
+             'cost (materia prima + personal), con el mismo % que calcula el '
+             'libro 1 de este pack, «Cuadro de mando semanal»!Semana, fila '
+             'TOTAL/MEDIA (37,2 % de margen sobre 3.370 €/día de venta).')):
         motor.val(ws, 'A%d' % r, etiqueta)
         motor.val(ws, 'B%d' % r, valor, fmt=fmt, verde_=True)
         motor.val(ws, 'C%d' % r, comentario, wrap=True)
         ws.row_dimensions[r].height = 30
-    motor.val(ws, 'A%d' % B_TOT_B, 'VENTA ESTIMADA QUE NO SE HACE (B)',
-              bold=True)
+    motor.val(ws, 'A%d' % B_TOT_B, 'MARGEN QUE NO SE GANA (B)', bold=True)
     motor.f(ws, 'B%d' % B_TOT_B,
             '=IFERROR(IF(OR($B${d}="",$B${p}="",$B${v}=""),"",'
             '$B${d}*$B${p}*$B${v}),"")'
@@ -763,7 +785,7 @@ def hoja_coste_baja(wb):
     motor.val(ws, 'A%d' % B_REF_A, 'Coste directo (A)')
     motor.f(ws, 'B%d' % B_REF_A, '=IF($B${a}="","",$B${a})'.format(a=B_TOT_A),
             fmt=FMT_EUR)
-    motor.val(ws, 'A%d' % B_REF_B, 'Venta que no se hace (B)')
+    motor.val(ws, 'A%d' % B_REF_B, 'Margen que no se gana (B)')
     motor.f(ws, 'B%d' % B_REF_B, '=IF($B${b}="","",$B${b})'.format(b=B_TOT_B),
             fmt=FMT_EUR)
     motor.val(ws, 'A%d' % B_TOTAL, 'IMPACTO ESTIMADO TOTAL (A + B)', bold=True)
@@ -773,17 +795,21 @@ def hoja_coste_baja(wb):
     fila_total(ws, B_TOTAL, 'A', 'B')
 
     nota(ws, B_TOTAL + 2,
-         'A y B no son la misma clase de número. A es gasto: sale de tu '
-         'cuenta. B es venta que no entra, y por eso no se apunta como coste '
-         'en la cuenta de resultados. Se suman aquí porque juntas son lo que '
-         'le cuesta al negocio perder a una persona, que es la cifra que '
-         'justifica dedicar horas a formar antes de necesitarlo.',
+         'A y B SÍ son la misma clase de número: los dos son euros que '
+         'salen o dejan de entrar en la cuenta de resultados. A es gasto '
+         'directo (selección y formación). B ya no es venta bruta: es el '
+         'MARGEN tras prime cost que esa venta habría dejado, así que '
+         'sumarlos aquí sí es comparar euros con euros.',
          alto=44, wrap=True, col='A')
     ws.merge_cells('A%d:C%d' % (B_TOTAL + 2, B_TOTAL + 2))
+    # M8 (auditoría 2026-09-04): «nómina» (planilla, en el uso de otros
+    # países) es vocabulario de España; primera y única aparición del
+    # término en este libro.
     nota(ws, B_TOTAL + 4,
          'Ninguna de estas nueve cifras es una referencia del sector: son un '
-         'ejemplo. El dato bueno es el tuyo, y sale de tus nóminas, de tu '
-         'registro de jornada y de tu TPV.', alto=30, wrap=True)
+         'ejemplo. El dato bueno es el tuyo, y sale de tus nóminas (planilla, '
+         'en el uso de otros países), de tu registro de jornada y de tu '
+         'TPV.', alto=30, wrap=True)
     ws.merge_cells('A%d:C%d' % (B_TOTAL + 4, B_TOTAL + 4))
 
     motor.dv_numerica(ws, ['B%d' % r for r in (B_H_SEL, B_H_FOR, B_H_NUE,
@@ -864,9 +890,10 @@ def mapa():
         'Coste de las horas de la persona nueva': 'B%d' % B_T_NUE,
         'Total del coste directo (A)': 'B%d' % B_TOT_A,
         'Días de menor rendimiento': 'B%d' % B_DIAS,
-        'Caída estimada del rendimiento': 'B%d' % B_PCT,
-        'Venta media de un día': 'B%d' % B_VENTA,
-        'Venta estimada que no se hace (B)': 'B%d' % B_TOT_B,
+        'Peso de esa persona en la venta diaria del restaurante':
+            'B%d' % B_PCT,
+        'Margen medio de un día (tras prime cost)': 'B%d' % B_VENTA,
+        'Margen que no se gana (B)': 'B%d' % B_TOT_B,
         'Impacto estimado total de la baja': 'B%d' % B_TOTAL,
     }
     return {

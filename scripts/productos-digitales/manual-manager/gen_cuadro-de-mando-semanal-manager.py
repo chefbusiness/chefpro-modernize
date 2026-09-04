@@ -222,17 +222,22 @@ def nota(ws, fila, texto, alto=None, col='A', wrap=False):
 
 # --------------------------------------------------------------------------
 PASOS = [
-    '1. Hoja «Parámetros»: elige tu tipo de negocio (sala o barra y '
-    'autoservicio). Los tres objetivos en vigor (food cost, labor cost y prime '
-    'cost) cambian solos, y los seis de la tabla son celdas verdes que puedes '
-    'ajustar a tu casa.',
+    # M8 (auditoría 2026-09-04): «sala» (salón, en el uso de otros países de
+    # habla hispana) y «nómina» (planilla) son vocabulario de España que la
+    # SPEC §0 pide glosar en la primera aparición, porque el 60-70 % del
+    # volumen medido está en LATAM.
+    '1. Hoja «Parámetros»: elige tu tipo de negocio (sala o salón, según el '
+    'país, o barra y autoservicio). Los tres objetivos en vigor (food cost, '
+    'labor cost y prime cost) cambian solos, y los seis de la tabla son '
+    'celdas verdes que puedes ajustar a tu casa.',
     '2. Revisa la cotización a la Seguridad Social a cargo de la empresa. Viene '
     'al 33 %, que es la convención de la casa; debajo tienes el desglose '
     'partida por partida para ajustarlo a tus contratos.',
     '3. Hoja «Semana»: una fila por semana ISO. Rellena las celdas verdes con '
-    'lo que te dé el TPV y la nómina: ventas de comida y de bebida, stock '
-    'inicial, compras, stock final, salarios brutos, otros costes de personal, '
-    'cubiertos, tickets, horas de apertura y horas trabajadas. Todo sin IVA.',
+    'lo que te dé el TPV y la nómina (planilla, en el uso de otros países): '
+    'ventas de comida y de bebida, stock inicial, compras, stock final, '
+    'salarios brutos, otros costes de personal, cubiertos, tickets, horas de '
+    'apertura y horas trabajadas. Todo sin IVA.',
     '4. El consumo de materia prima se calcula solo: stock inicial + compras '
     'menos stock final. No son las compras de la semana; una semana con un '
     'pedido grande no es una semana cara.',
@@ -254,10 +259,18 @@ NOTAS_LIBRO = [
     'Cost + Ingeniería de Menú» (cuadro-de-mando-prime-cost.xlsx) mide el MES y '
     'sirve para cerrar el ejercicio y decidir carta. No se sustituyen: se usan '
     'en paralelo, y los dos leen el mismo prime cost.',
-    'Por qué hacen falta los dos: en el restaurante de ejemplo, septiembre '
-    'cierra el mes en objetivo y sin embargo la semana 36 cerró en el 66,8 % de '
-    'prime cost. El promedio del mes se come la semana mala, y cuando el cierre '
-    'mensual la enseña ya han pasado cuatro semanas.',
+    # M2 (auditoría 2026-09-04): «el mes se come la semana mala» sólo se
+    # cumple en 1 de las 4 semanas malas del propio ejemplo (7, 33 y 35 ya
+    # salían en rojo en el cuadro mensual). El argumento que sí sostienen
+    # los datos —y que además es mejor— es que la semana avisa ANTES:
+    # agosto se ve mal en el cierre mensual, pero las semanas 33 y 35 ya lo
+    # avisaban cuatro semanas antes, con el food cost disparado al 38,6 %.
+    'Por qué hacen falta los dos: en el restaurante de ejemplo, el cuadro '
+    'mensual de agosto cierra fuera de objetivo, pero las semanas 33 (del 10 '
+    'de agosto) y 35 (del 24 de agosto) ya lo avisaban con el food cost al '
+    '38,6 %, cuatro semanas antes de que el cierre mensual lo enseñe. El mes '
+    'te dice QUE algo pasó; la semana te dice CUÁL y te lo dice a tiempo de '
+    'actuar.',
     'Todas las cifras van SIN IVA. El food cost y el prime cost se miden sobre '
     'la venta NETA: el IVA repercutido no es tuyo y el soportado se deduce en '
     'el modelo 303.',
@@ -348,18 +361,25 @@ def hoja_parametros(wb):
          'El objetivo en vigor se busca en la tabla con INDEX y MATCH: si '
          'mañana añades un tercer tipo de negocio a la lista, basta con '
          'ampliar la tabla y la lista desplegable de arriba.')
+    # M1 (auditoría 2026-09-04): la D10 de la SPEC prohíbe atribuir a
+    # CaixaBankLab el tramo «barra o autoservicio» — la fuente sólo sostiene
+    # el 30 % de materia prima y el 30-35 % de personal con servicio en
+    # mesa. El paréntesis con el 15-25 % sale de la frase atribuida y pasa a
+    # la nota siguiente, junto al resto de lo que ya es criterio de la casa.
     nota(ws, 16,
          'De dónde salen estos objetivos: la estructura de costes de '
          'referencia para la restauración española sitúa la materia prima en '
-         'torno al 30 % y el personal en el 30-35 % con servicio en mesa '
-         '(15-25 % en barra o autoservicio). De ahí el criterio de la casa: '
-         'prime cost por debajo del 65 % con servicio en mesa y del 55 % en '
-         'barra o autoservicio.')
+         'torno al 30 % y el personal en el 30-35 % con servicio en mesa. De '
+         'ahí el criterio de la casa: prime cost por debajo del 65 % con '
+         'servicio en mesa y del 55 % en barra o autoservicio.')
     nota(ws, 17,
          'Ese 65 % / 55 % es CRITERIO DE LA CASA derivado de esa estructura, '
-         'no una cifra publicada por nadie. Son celdas verdes: si tu convenio, '
-         'tu horario o tu modelo de servicio son otros, cámbialas y el '
-         'semáforo de la hoja «Semana» se recalcula.')
+         'no una cifra publicada por nadie: la horquilla de 15-25 % de coste '
+         'de personal en barra o autoservicio que sostiene el 55 % es '
+         'también criterio de la casa, no un dato de CaixaBankLab. Son '
+         'celdas verdes: si tu convenio, tu horario o tu modelo de servicio '
+         'son otros, cámbialas y el semáforo de la hoja «Semana» se '
+         'recalcula.')
     nota(ws, 18,
          'Fuente de la estructura de referencia: CaixaBankLab con '
          'elBullifoundation, «Consumos y beneficios de un restaurante» (sin '
@@ -382,7 +402,14 @@ def hoja_parametros(wb):
         r = P_DESG_INI + i
         es_total = concepto.startswith('TOTAL')
         motor.val(ws, 'A%d' % r, concepto, bold=es_total, wrap=True)
-        if tipo is None:
+        if es_total:
+            # M3 (auditoría 2026-09-04): el TOTAL se calcula, nunca se
+            # teclea — SUM de las partidas de arriba (23,60+5,50+0,20+0,60+
+            # 1,50+0,75 = 32,15 %), consistente con el desglose visible.
+            motor.f(ws, 'B%d' % r,
+                    '=IFERROR(SUM($B$%d:$B$%d),"")' % (P_DESG_INI, r - 1),
+                    fmt=FMT_PCT, bold=True)
+        elif tipo is None:
             motor.val(ws, 'B%d' % r, '')
         else:
             motor.val(ws, 'B%d' % r, tipo, fmt=FMT_PCT, bold=es_total)

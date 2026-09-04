@@ -416,8 +416,12 @@ POR_QUE = {
        'PROCESO, no de la persona que estaba ese día.',
     4: 'El punto que hace que la reunión sirva de algo: se leen los acuerdos '
        'abiertos de la semana pasada, uno por uno, con su responsable delante.',
-    5: 'Reservas grandes, eventos, cambios de cuadrante y quién falta. Es la '
-       'única parte de la reunión que mira hacia delante.',
+    # M8 (auditoría 2026-09-04): «cuadrante» es vocabulario de España; en
+    # buena parte de LATAM se dice «rol» u «horario». Primera aparición del
+    # término en este libro.
+    5: 'Reservas grandes, eventos, cambios de cuadrante (rol u horario, en '
+       'el uso de otros países) y quién falta. Es la única parte de la '
+       'reunión que mira hacia delante.',
     6: 'Un punto que trae el equipo, por turno rotatorio. Se anuncia en la '
        'reunión anterior para que venga preparado.',
     7: 'Qué, quién y para cuándo. Se escriben en la hoja «Actas y Acuerdos» '
@@ -689,7 +693,7 @@ def hoja_acuerdos(wb):
     for i in range(AA1 - AA0 + 1):
         r = AA0 + i
         if i < len(DE.ACUERDOS):
-            aid, freu, acuerdo, resp, seg, est = DE.ACUERDOS[i]
+            aid, freu, acuerdo, resp, seg, est, cierre = DE.ACUERDOS[i]
             motor.val(ws, 'A%d' % r, aid)
             motor.val(ws, 'B%d' % r, date(*map(int, freu.split('-'))),
                       fmt=FECHA)
@@ -699,6 +703,11 @@ def hoja_acuerdos(wb):
             motor.val(ws, 'F%d' % r, date(*map(int, seg.split('-'))),
                       fmt=FECHA)
             motor.val(ws, 'G%d' % r, est)
+            if cierre:
+                motor.val(ws, 'H%d' % r, date(*map(int, cierre.split('-'))),
+                          fmt=FECHA)
+            else:
+                ws['H%d' % r].number_format = FECHA
         else:
             motor.val(ws, 'A%d' % r, 'A%02d' % (i + 1))
             ws['B%d' % r].number_format = FECHA

@@ -1375,7 +1375,7 @@ CAPITULOS += [
             C('Personas que sostienen «Fríos y entrantes»', f'{X_POLI}!Cobertura por Estación!B13', 'num'),
             C('Cobertura de «Fríos y entrantes»', f'{X_POLI}!Cobertura por Estación!E13', 'pct1'),
             C('Coste directo de cubrir una baja', f'{X_POLI}!Coste de una Baja!B15', 'eur2'),
-            C('Venta estimada que no se hace', f'{X_POLI}!Coste de una Baja!B22', 'eur2'),
+            C('Margen que no se gana mientras el equipo recupera el ritmo', f'{X_POLI}!Coste de una Baja!B22', 'eur2'),
             C('Impacto estimado total de la baja', f'{X_POLI}!Coste de una Baja!B28', 'eur2'),
             C('Acciones registradas en el plan de cross-training', f'{X_POLI}!Plan de Cross-Training!C32', 'num'),
         ],
@@ -1685,14 +1685,14 @@ CAPITULOS += [
             'recuento del caso, cuál es el motivo que más se repite y qué '
             'decisión sale de ahí.',
             'El acuerdo de nivel de servicio de la casa: cada gravedad tiene su '
-            'plazo de cierre en horas, y lo que se mide no es la queja, es si '
+            'plazo de cierre en días, y lo que se mide no es la queja, es si '
             'se cerró dentro del plazo que uno mismo se puso.',
         ],
         'cifras': [
             C('Quejas registradas en el trimestre', f'{X_QUEJ}!Resumen!D11', 'num'),
             C('Motivo de queja más repetido', f'{X_QUEJ}!Resumen!D12', 'txt'),
             C('Quejas de ese motivo', f'{X_QUEJ}!Resumen!D13', 'num'),
-            C('Tiempo medio hasta el cierre de una queja, en horas', f'{X_QUEJ}!Resumen!D16', 'num1'),
+            C('Tiempo medio hasta el cierre de una queja, en días', f'{X_QUEJ}!Resumen!D16', 'num1'),
             C('Quejas cerradas dentro del plazo de la casa', f'{X_QUEJ}!Resumen!D17', 'num'),
             C('Cumplimiento del plazo de cierre', f'{X_QUEJ}!Resumen!D19', 'pct1'),
             C('Reclamaciones formales registradas', f'{X_QUEJ}!Resumen!D40', 'num'),
@@ -1719,7 +1719,7 @@ CAPITULOS += [
                 'src': (X_QUEJ, 'Resumen'),
                 'cols': [('Motivo', 'A', 'txt'), ('Quejas', 'C', 'num'),
                          ('Porcentaje del total', 'D', 'pct1'),
-                         ('Horas medias hasta el cierre', 'E', 'num1'),
+                         ('Días medios hasta el cierre', 'E', 'num1'),
                          ('Fuera del plazo de la casa', 'F', 'num')],
                 'filas': (22, 31),
             },
@@ -1780,7 +1780,7 @@ CAPITULOS += [
             C('Quejas por reserva no encontrada', f'{X_QUEJ}!Resumen!C28', 'num'),
             C('Peso de esas quejas sobre el total', f'{X_QUEJ}!Resumen!D28', 'pct1'),
             C('Quejas por espera excesiva', f'{X_QUEJ}!Resumen!C22', 'num'),
-            C('Horas medias hasta cerrar una queja por espera', f'{X_QUEJ}!Resumen!E22', 'num1'),
+            C('Días medios hasta cerrar una queja por espera', f'{X_QUEJ}!Resumen!E22', 'num1'),
         ],
         'sector': ['MM-46'],
         'tablas': [{
@@ -2469,7 +2469,7 @@ BONUS = [
                     'cols': [('Gravedad', 'A', 'num'), ('Qué significa', 'B', 'txt'),
                              ('Quejas', 'C', 'num'),
                              ('Plazo de cierre (horas)', 'D', 'num'),
-                             ('Horas medias hasta el cierre', 'E', 'num1'),
+                             ('Días medios hasta el cierre', 'E', 'num1'),
                              ('Cumplimiento (%)', 'G', 'pct0')],
                     'filas': (35, 37),
                     'nota': 'Una acusación pública de riesgo sanitario entra por la gravedad más '
@@ -2812,7 +2812,7 @@ BONUS = [
                     C('Cobertura de «Fríos y entrantes»', f'{X_POLI}!Cobertura por Estación!E13', 'pct1'),
                     C('Alerta que devuelve la hoja para esa estación', f'{X_POLI}!Cobertura por Estación!F13', 'txt'),
                     C('Coste directo de cubrir la baja', f'{X_POLI}!Coste de una Baja!B15', 'eur2'),
-                    C('Venta estimada que no se hace', f'{X_POLI}!Coste de una Baja!B22', 'eur2'),
+                    C('Margen que no se gana mientras el equipo recupera el ritmo', f'{X_POLI}!Coste de una Baja!B22', 'eur2'),
                     C('Impacto estimado total de la baja', f'{X_POLI}!Coste de una Baja!B28', 'eur2'),
                     C('Acciones registradas en el plan de cross-training', f'{X_POLI}!Plan de Cross-Training!C32', 'num'),
                 ],

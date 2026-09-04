@@ -291,9 +291,9 @@ NOTAS = [
     'consultan en el buscador REGCON del Ministerio de Trabajo.',
     'ESTE LIBRO NO CUBRE APPCC NI SEGURIDAD ALIMENTARIA. Los registros de '
     'temperaturas, la trazabilidad y los planes de prerrequisitos son otro '
-    'producto (Pack APPCC): mezclarlos aquí daría un checklist que no sirve ni '
-    'para una cosa ni para la otra. Lo que sí está aquí es CUÁNDO toca '
-    'revisarlos y qué documentación tiene que estar en el local.',
+    'producto (Pack APPCC): mezclarlos aquí daría una lista de comprobación '
+    'que no sirve ni para una cosa ni para la otra. Lo que sí está aquí es '
+    'CUÁNDO toca revisarlos y qué documentación tiene que estar en el local.',
     'LOS DATOS SEMBRADOS SON UN EJEMPLO MODELADO (el restaurante «La Encina», '
     'el mismo del resto del pack). Bórralos y pon los tuyos: las fechas de tu '
     'última actuación son lo único que este libro no puede saber.',
@@ -329,14 +329,10 @@ def hoja_instrucciones(wb):
 EN0 = 8                                   # primera fila de datos
 EN1 = EN0 + len(DE.ESTADO_NORMATIVO) + 3  # 7 filas + 4 libres
 
-# Las dos normas que `datos_ejemplo.py` no cuelga de ningún id `MM-*` (no hay
-# entrada en el JSON): se cita la norma que su propio texto nombra y la URL
-# queda vacía = «sin dato». NUNCA se inventa un enlace del BOE.
-NORMA_SIN_ID = {
-    'Verifactu': 'RDL 15/2025, art. 3 (aplazamiento del Reglamento Verifactu)',
-    'Prohibición de fumar en terrazas':
-        'Ley 28/2005, art. 2.2 (definición de espacio al aire libre)',
-}
+# Verifactu y la prohibición de fumar en terrazas ya cuelgan de MM-58/MM-59
+# (auditoría 2026-09-04, hallazgo A1): `fuente_de()` las resuelve por su
+# `mm_id` como cualquier otra fila. No queda ninguna norma «sin id» en esta
+# hoja.
 
 
 def hoja_estado_normativo(wb):
@@ -369,8 +365,6 @@ def hoja_estado_normativo(wb):
         if i < len(DE.ESTADO_NORMATIVO):
             norma, estado, hace, _corte, mm_id = DE.ESTADO_NORMATIVO[i]
             fuente, url = fuente_de(mm_id)
-            if not fuente:
-                fuente = NORMA_SIN_ID.get(norma, '')
             motor.val(ws, 'B%d' % r, norma)
             motor.val(ws, 'C%d' % r, estado)
             motor.val(ws, 'D%d' % r, hace)
@@ -379,7 +373,11 @@ def hoja_estado_normativo(wb):
             motor.val(ws, 'H%d' % r, mm_id)
             motor.val(ws, 'I%d' % r, verificacion(fuente, url))
         motor.verde(ws, 'B%d:D%d' % (r, r))
-        motor.f(ws, 'E%d' % r, '=IFERROR(IF($C$5="","",$C$5),"")', fmt=FECHA)
+        # M7 (auditoría 2026-09-04): mirar también si la fila tiene contenido
+        # en B — si no, las filas libres no deben enseñar la fecha de corte
+        # con el resto de columnas vacías.
+        motor.f(ws, 'E%d' % r,
+                '=IFERROR(IF(OR($B%d="",$C$5=""),"",$C$5),"")' % r, fmt=FECHA)
         wrap(ws, 'B%d:I%d' % (r, r))
     texto_filas(ws, EN0, EN1, alto=58)
 
@@ -401,6 +399,42 @@ def hoja_estado_normativo(wb):
 CV0 = 10
 CV1 = CV0 + len(DE.CUMPLIMIENTO) + 7      # 18 puntos + 8 filas libres
 SIM, HOY, U_ROJO, U_AMBAR = '$C$4', '$C$5', '$C$6', '$C$7'
+
+# Los seis puntos de `DE.CUMPLIMIENTO` marcados «¿Lo fija una norma estatal? =
+# Sí» que NO cuelgan de ningún id `MM-*` del JSON (auditoría 2026-09-04,
+# hallazgo A3: eran justamente los únicos sin norma, sin URL y sin
+# «Verificado el»). Verificadas el 04-09-2026 leyendo el texto consolidado del
+# BOE de cada Real Decreto: RD 88/2013 (ascensores), RD 513/2017 (extintores)
+# y RD 919/2006 (gas). Se resuelven por el texto exacto del «Punto de
+# control», igual que `NORMA_SIN_ID` resolvía las dos filas sin id de la hoja
+# «Estado Normativo».
+FUENTE_CUMPLIMIENTO_SIN_ID = {
+    'Inspección periódica del ascensor': (
+        'RD 88/2013, Instrucción Técnica Complementaria AEM 1 «Ascensores», '
+        'apartado 11.2.1 (inspección periódica cada 2 años en edificios de '
+        'uso industrial y lugares de pública concurrencia)',
+        'https://www.boe.es/buscar/act.php?id=BOE-A-2013-1969'),
+    'Extintores: revisión trimestral por el titular': (
+        'RD 513/2017, Reglamento de instalaciones de protección contra '
+        'incendios, Anexo II (revisión trimestral a cargo del titular de la '
+        'instalación)',
+        'https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606'),
+    'Extintores: mantenimiento anual por empresa mantenedora': (
+        'RD 513/2017, Anexo II (mantenimiento anual a cargo de una empresa '
+        'mantenedora autorizada)',
+        'https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606'),
+    'Extintores: retimbrado (prueba de presión)': (
+        'RD 513/2017, Anexo II (prueba de presión / retimbrado cada 5 años)',
+        'https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606'),
+    'Extintores: retirada del servicio a los 20 años': (
+        'RD 513/2017, Anexo I, art. 21 (vida útil máxima de 20 años desde la '
+        'fecha de fabricación grabada en el aparato)',
+        'https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606'),
+    'Revisión periódica de la instalación de gas': (
+        'RD 919/2006, Instrucción Técnica Complementaria ICG-07 (revisión '
+        'periódica de instalaciones receptoras de gas)',
+        'https://www.boe.es/buscar/act.php?id=BOE-A-2006-15345'),
+}
 
 
 def hoja_calendario(wb):
@@ -450,6 +484,8 @@ def hoja_calendario(wb):
         if i < len(DE.CUMPLIMIENTO):
             punto, _fam, ultima, per, estatal, mm_id, nota = DE.CUMPLIMIENTO[i]
             fuente, url = fuente_de(mm_id)
+            if not fuente:
+                fuente, url = FUENTE_CUMPLIMIENTO_SIN_ID.get(punto, ('', ''))
             motor.val(ws, 'B%d' % r, punto)
             motor.val(ws, 'C%d' % r,
                       date(*map(int, ultima.split('-'))), fmt=FECHA)
@@ -1285,7 +1321,12 @@ def mapa():
                               ['Falta o figura', 'B', 'txt'],
                               ['Tipo', 'C', 'txt'], ['Gravedad', 'D', 'txt'],
                               ['Umbral o detalle', 'E', 'txt'],
-                              ['Sanción posible', 'F', 'txt'],
+                              # B6 (auditoría 2026-09-04): el mapa citaba
+                              # «Sanción posible» y la cabecera real del
+                              # libro es «Sanción posible (escala del ALEH
+                              # VI)» — el guion cita por rótulo.
+                              ['Sanción posible (escala del ALEH VI)', 'F',
+                               'txt'],
                               ['Artículo', 'G', 'txt'],
                               ['Fuente (norma)', 'H', 'txt'],
                               ['URL', 'I', 'txt'], ['Ref.', 'J', 'txt'],

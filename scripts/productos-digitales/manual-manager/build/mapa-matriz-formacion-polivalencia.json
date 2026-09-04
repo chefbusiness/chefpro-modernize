@@ -335,9 +335,9 @@
     "Coste de las horas de la persona nueva": "B14",
     "Total del coste directo (A)": "B15",
     "Días de menor rendimiento": "B19",
-    "Caída estimada del rendimiento": "B20",
-    "Venta media de un día": "B21",
-    "Venta estimada que no se hace (B)": "B22",
+    "Peso de esa persona en la venta diaria del restaurante": "B20",
+    "Margen medio de un día (tras prime cost)": "B21",
+    "Margen que no se gana (B)": "B22",
     "Impacto estimado total de la baja": "B28"
    },
    "tablas": [

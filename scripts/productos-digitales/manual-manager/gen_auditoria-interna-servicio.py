@@ -222,15 +222,22 @@ NOTAS = [
     'Aquí no hay temperaturas de cámara, ni registros de recepción, ni '
     'trazabilidad, ni limpieza de superficies de manipulación. Eso es el PACK '
     'APPCC de AI Chef Pro, que trae sus registros, sus frecuencias y sus '
-    'firmas. Mezclar las dos cosas produce un checklist que no vale ni para '
-    'auditar el servicio ni para pasar una inspección de Sanidad.',
+    'firmas. Mezclar las dos cosas produce una lista de comprobación que no '
+    'vale ni para auditar el servicio ni para pasar una inspección de '
+    'Sanidad.',
     'Lo que sí mide esta hoja es la EXPERIENCIA y el estándar de marca: '
     'llegada y reserva, sala y ambiente, servicio y tiempos, producto y '
     'presentación, aseos y limpieza de cara al cliente, y marca y digital. '
     'Seis áreas, 60 puntos.',
+    # M8 (auditoría 2026-09-04): «sala» (salón, en el uso de otros países)
+    # es vocabulario de España. Se glosa aquí y no en «Sala y ambiente» (la
+    # nota anterior), porque ESE es el nombre exacto de una de las seis
+    # áreas de la auditoría y lo referencian las fórmulas y las listas de
+    # validación: tocarlo ahí rompería la coincidencia de texto.
     'La limpieza que aparece aquí es la que ve el cliente (aseos, mantelería, '
-    'cristalería, suelo de sala). La limpieza de las superficies donde se '
-    'manipula alimento es APPCC y no está en este libro.',
+    'cristalería, suelo de sala —salón, en el uso de otros países—). La '
+    'limpieza de las superficies donde se manipula alimento es APPCC y no '
+    'está en este libro.',
     'Las tres visitas sembradas son un EJEMPLO del restaurante modelado del '
     'pack. Fíjate en lo que enseñan: el total mejora visita tras visita y, al '
     'mismo tiempo, «Aseos y limpieza» empeora. Esa es exactamente la razón de '
@@ -296,14 +303,18 @@ def hoja_auditoria(wb):
             motor.verde(ws, '%s%d' % (col, AU_AUDITOR))
     motor.dv_fecha(ws, ['%s%d' % (c, AU_FECHA) for c in COLS_VISITA])
 
+    # B4 (auditoría 2026-09-04): 26 caracteres con wrap_text en una columna
+    # de ancho 12 y fila de 40 pt caben justo 3 líneas, sin margen — el único
+    # caso del pack así de ajustado (Semana!M4 del libro 1, 42 ch en ancho
+    # 17, tiene 70 pt de sobra). Ancho 14 le da aire sin tocar la fila.
     encabezados(ws, AU_CAB, [
         ('A', '#', 5), ('B', 'Área', 24), ('C', 'Punto de control', 66),
         ('D', 'Peso (1-3)', 9),
-        ('E', 'Visita 1: puntuación (0-5)', 12),
+        ('E', 'Visita 1: puntuación (0-5)', 14),
         ('F', 'Visita 1: observación', 30),
-        ('G', 'Visita 2: puntuación (0-5)', 12),
+        ('G', 'Visita 2: puntuación (0-5)', 14),
         ('H', 'Visita 2: observación', 30),
-        ('I', 'Visita 3: puntuación (0-5)', 12),
+        ('I', 'Visita 3: puntuación (0-5)', 14),
         ('J', 'Visita 3: observación', 30),
     ])
     ws.freeze_panes = 'D7'

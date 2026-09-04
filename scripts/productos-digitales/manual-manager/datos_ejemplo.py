@@ -104,16 +104,26 @@ RESTAURANTE = {
 # (`kit-gestion-personal/03` y `guia-food-cost/cuadro-de-mando-prime-cost`) y
 # cae dentro de esa horquilla; es celda editable.
 SS_EMPRESA = 0.33
+# M3 (auditoría 2026-09-04): el desglose visible sumaba 30,65 % contra el
+# 33 % que usa B22, porque AT/EP se dejaba sin tipo (columna en blanco) y el
+# TOTAL no llevaba fórmula. Reconstruido: 23,60+5,50+0,20+0,60+1,50+0,75 =
+# 32,15 % exacto (el 1,50 % es la tarifa de primas de la DA 61.ª TRLGSS para
+# el CNAE 56 «Servicios de comidas y bebidas»), y 32,15-5,50+6,70 = 33,35 %
+# con contrato de duración determinada. El generador ahora escribe el TOTAL
+# como SUM($B$25:$B$30) — nunca una constante — para que quien cambie
+# cualquier partida vea el total recalcularse solo.
 SS_EMPRESA_DESGLOSE = [
     # concepto, tipo, nota
     ('Contingencias comunes', 0.2360, 'A cargo de la empresa (el trabajador aporta el 4,70 %). MM-17'),
     ('Desempleo (contrato indefinido)', 0.0550, 'Los contratos temporales cotizan más'),
     ('FOGASA', 0.0020, ''),
     ('Formación profesional', 0.0060, ''),
-    ('Accidentes de trabajo y enfermedades profesionales', None, 'Según la tarifa de primas de la DA 61.ª TRLGSS'),
+    ('Accidentes de trabajo y enfermedades profesionales', 0.0150,
+     'Tarifa de primas de la DA 61.ª TRLGSS, epígrafe del CNAE 56 «Servicios de comidas y bebidas»; comprueba el epígrafe de tu actividad'),
     ('MEI 2026 (parte empresarial)', 0.0075, 'Mecanismo de Equidad Intergeneracional. Orden PJC/297/2026, art. 16'),
     ('TOTAL a cargo de la empresa en hostelería 2026', None,
-     '32,15 % con contrato indefinido a tiempo completo y 33,35 % con contrato de duración determinada. MM-53'),
+     '32,15 % con contrato indefinido a tiempo completo y 33,35 % con contrato de duración determinada (MM-53). '
+     'El 33 % de más arriba (celda editable) redondea esta cifra como convención de la casa (SPEC D5).'),
 ]
 
 # ==========================================================================
@@ -141,12 +151,19 @@ SS_EMPRESA_DESGLOSE = [
 #
 # columnas: id, nombre, puesto, area_aleh, grupo_aleh, contrato,
 #           jornada_h_semana, salario_bruto_anual, fecha_alta, estacion_principal
+    # M8 (auditoría 2026-09-04): «gerente/encargado» (administrador) y
+    # «sala» (salón) son vocabulario de España que la SPEC §0 pide glosar en
+    # su primera aparición. Se glosa en el «puesto» de P01 y P03, que es
+    # texto de EJEMPLO en celda verde (el lector lo sobrescribe con su
+    # propia plantilla); la ESTACIÓN «Sala y servicio» no se toca, porque es
+    # un valor de lista que la Cobertura por Estación referencia por texto
+    # exacto.
 PLANTILLA = [
-    ('P01', 'Marta L.', 'Gerente / encargada general (manager)', 'Área 1ª', 'Grupo I',
+    ('P01', 'Marta L.', 'Gerente / encargada general (manager; administrador, en el uso de otros países)', 'Área 1ª', 'Grupo I',
      'Indefinido', 40, 34500, '2021-03-01', 'Caja y cierre'),
     ('P02', 'Iván R.', 'Jefe de cocina', 'Área 2ª', 'Grupo I',
      'Indefinido', 40, 32000, '2019-09-16', 'Pase y caliente'),
-    ('P03', 'Nuria C.', 'Jefa de sala', 'Área 3ª', 'Grupo I',
+    ('P03', 'Nuria C.', 'Jefa de sala (salón, en el uso de otros países)', 'Área 3ª', 'Grupo I',
      'Indefinido', 40, 27500, '2020-06-01', 'Sala y servicio'),
     ('P04', 'Diego M.', 'Cocinero (partida caliente)', 'Área 2ª', 'Grupo II',
      'Indefinido', 40, 25500, '2022-02-14', 'Pase y caliente'),
@@ -235,6 +252,26 @@ PLAN_CROSS_TRAINING = [
 # pretenden ser una referencia de mercado y el libro los presenta como «pon los
 # tuyos». El libro 2 calcula el coste con estas celdas, nunca con cifras
 # nuestras metidas en la fórmula.
+#
+# A5 (auditoría 2026-09-04): el bloque B tenía dos fallos encadenados.
+# 1) El % de caída se leía como «cuánto rinde de menos el CONJUNTO DEL
+#    TURNO» (0,35) y se multiplicaba por la venta de TODO EL RESTAURANTE:
+#    perder a 1 de 12 personas se llevaba por delante el 35 % de la
+#    facturación de un mes entero. Ahora `pct_peso_persona_venta` es UN
+#    solo coeficiente que ya neta el peso de esa persona en la venta DIARIA
+#    del restaurante (no del turno): con 12 personas y puestos de peso
+#    desigual, 0,05 (5 %) es una estimación conservadora para un puesto no
+#    crítico — bájala o súbela según el puesto real.
+# 2) B sumaba VENTA perdida (bruta) con A, que es GASTO real: no son la
+#    misma clase de euro (A30 ya lo advertía y aun así se sumaban). Ahora
+#    `margen_dia_medio` no es la venta bruta de un día: es el MARGEN tras
+#    prime cost de un día medio, que sí es comparable con A. Sale de la
+#    misma estructura que calcula el libro 1 de este pack
+#    (cuadro-de-mando-semanal-manager.xlsx!Semana!O57, prime cost total
+#    62,77 % → margen 37,23 % ≈ 37,2 %) aplicado a la venta diaria media
+#    (3.370 €): 3.370 × 0,3723 ≈ 1.254,58 €/día. Es un valor de EJEMPLO
+#    igual que los otros ocho: si tu prime cost real es otro, cambia esta
+#    celda.
 COSTE_BAJA = {
     'horas_seleccion': 12.0,
     'coste_hora_seleccion': 22.00,      # coste-empresa de quien selecciona
@@ -243,8 +280,8 @@ COSTE_BAJA = {
     'horas_formacion_formado': 40.0,
     'coste_hora_formado': 12.00,
     'dias_menor_rendimiento': 30,
-    'pct_menor_rendimiento': 0.35,
-    'venta_dia_media': 3370.00,         # = ventas anuales del año semanal / 364
+    'pct_peso_persona_venta': 0.05,     # peso de UNA persona en la venta DIARIA del restaurante
+    'margen_dia_medio': 1254.58,        # margen tras prime cost de un día medio (37,2 % de 3.370 €)
 }
 
 # ==========================================================================
@@ -523,8 +560,13 @@ RECLAMACIONES = [
 # autonómicos sólo se siembran con los DOS verificados; el resto queda en
 # blanco a propósito con la nota «consulta tu comunidad», porque inventarlos
 # sería peor que dejarlos vacíos.
+# M5 (auditoría 2026-09-04): el SLA se medía en HORAS pero «Fecha de la
+# queja» y «Fecha de cierre» son columnas de fecha SIN hora, así que el
+# resultado sólo podía ser 0, 24, 48, 72… (múltiplos de 24) y cualquier SLA
+# por debajo de 24 h era inmedible. Se mide en DÍAS (3, 2, 1), que es lo que
+# esas dos columnas pueden medir de verdad sin pedirle la hora al usuario.
 PARAMETROS_QUEJAS = {
-    'sla_horas_por_gravedad': {1: 72, 2: 48, 3: 24},
+    'sla_dias_por_gravedad': {1: 3, 2: 2, 3: 1},
     'escala_gravedad': [(1, 'Leve: molestia sin impacto en la experiencia'),
                         (2, 'Media: afecta a la experiencia de la mesa'),
                         (3, 'Grave: riesgo sanitario, legal o reputacional')],
@@ -648,9 +690,15 @@ PREGUNTAS_COMPETENCIA = [
     ('Idiomas de sala (inglés y francés)', 'Explícame en inglés dos platos de nuestra carta.'),
     ('Idiomas de sala (inglés y francés)', '¿Cómo te desenvuelves si la mesa habla francés y tú no?'),
     ('Idiomas de sala (inglés y francés)', '¿Qué vocabulario de sala manejas en otros idiomas?'),
+    # B2 (auditoría 2026-09-04): las dos preguntas que había aquí («¿Qué te
+    # hizo dejar el último puesto?» y «¿Qué esperas de este trabajo dentro
+    # de un año?») no miden disponibilidad. Sustituidas por festivos/
+    # temporada alta y por el cierre de noche seguido de apertura, que son
+    # los dos puntos donde de verdad se rompe la disponibilidad en un
+    # restaurante.
     ('Disponibilidad para turno partido y fines de semana', 'Nuestro horario es de martes a domingo, turno partido. ¿Encaja con lo que buscas?'),
-    ('Disponibilidad para turno partido y fines de semana', '¿Qué te hizo dejar el último puesto?'),
-    ('Disponibilidad para turno partido y fines de semana', '¿Qué esperas de este trabajo dentro de un año?'),
+    ('Disponibilidad para turno partido y fines de semana', 'Cuéntame una temporada en la que tuvieras que trabajar festivos seguidos (Navidad, Semana Santa, puentes): ¿cómo la llevaste?'),
+    ('Disponibilidad para turno partido y fines de semana', 'Cerramos de noche y a veces hay que abrir temprano al día siguiente. ¿Te ha tocado antes un cierre seguido de una apertura? ¿Tienes algún compromiso que choque con eso?'),
 ]
 
 # ==========================================================================
@@ -730,7 +778,7 @@ ESTADO_NORMATIVO = [
     ('Verifactu',
      'Aplazado por el RDL 15/2025: 1 de enero de 2027 para sociedades y 1 de julio de 2027 para el resto',
      'Pedir por escrito al proveedor del TPV la fecha de su versión adaptada',
-     '2026-09-04', ''),
+     '2026-09-04', 'MM-58'),
     ('Factura electrónica B2B',
      'Reglamento aprobado (RD 238/2026) pero aún no exigible: cuenta 12 o 24 meses desde la orden ministerial',
      'Las facturas simplificadas quedan fuera SALVO las cualificadas, las que llevan NIF del cliente',
@@ -738,7 +786,7 @@ ESTADO_NORMATIVO = [
     ('Prohibición de fumar en terrazas',
      'Proyecto de ley aprobado por el Consejo de Ministros el 21-07-2026: no está vigente',
      'Hoy lo que define una terraza legal es tener como máximo dos paredes (Ley 28/2005, art. 2.2)',
-     '2026-09-04', ''),
+     '2026-09-04', 'MM-59'),
     ('Salario mínimo interprofesional 2026',
      'Vigente (RD 126/2026)',
      'Comprobar que ningún salario de la plantilla queda por debajo, también en las jornadas parciales',
@@ -879,33 +927,42 @@ UNO_A_UNO = [
 # 25 acuerdos de esas reuniones. Cuatro están VENCIDOS a la fecha de corte
 # (2026-09-04): fecha de compromiso pasada y estado distinto de «Cerrado». Es
 # lo que el libro tiene que enseñar a ver de un vistazo.
-# columnas: id, fecha de la reunión, acuerdo, responsable, fecha de compromiso, estado
+# columnas: id, fecha de la reunión, acuerdo, responsable, fecha de compromiso, estado,
+#           fecha de cierre real (vacía si no está «Cerrado»)
+# M6 (auditoría 2026-09-04): los 15 acuerdos «Cerrado» sembraban SIN fecha de
+# cierre real, así que «% cerrados en plazo» salía vacío y la columna
+# «Situación» nunca mostraba «Cerrado en plazo» / «Cerrado fuera de plazo» en
+# el fichero que compra el cliente. A08 y A14 se cierran DESPUÉS de su fecha
+# de seguimiento a propósito, para que se vea también «Cerrado fuera de plazo».
 ACUERDOS = [
-    ('A01', '2026-06-01', 'Publicar el cuadrante de julio con 15 días de antelación', 'P01', '2026-06-15', 'Cerrado'),
-    ('A02', '2026-06-01', 'Revisar el escandallo de los cinco platos más vendidos', 'P02', '2026-06-30', 'Cerrado'),
-    ('A03', '2026-06-01', 'Cambiar el proveedor de pescado por rendimiento', 'P02', '2026-07-15', 'Cerrado'),
-    ('A04', '2026-06-08', 'Anotar la hora de comanda de todas las mesas del viernes', 'P08', '2026-06-19', 'Cerrado'),
-    ('A05', '2026-06-08', 'Repasar con P11 el cobro dividido en el TPV', 'P03', '2026-06-22', 'Cerrado'),
-    ('A06', '2026-06-15', 'Formar a P10 en barra hasta nivel 2', 'P09', '2026-10-31', 'En curso'),
-    ('A07', '2026-06-15', 'Dar a P08 la firma del arqueo dos días por semana', 'P01', '2026-07-01', 'Cerrado'),
-    ('A08', '2026-06-22', 'Pedir presupuesto de limpieza de conductos', 'P01', '2026-07-10', 'Cerrado'),
-    ('A09', '2026-06-22', 'Escribir el soporte de alérgenos de los platos nuevos', 'P02', '2026-08-15', 'En curso'),
-    ('A10', '2026-07-06', 'Analizar los tiempos de pase de los viernes noche', 'P02', '2026-07-31', 'Cerrado'),
-    ('A11', '2026-07-06', 'Abrir una segunda plancha los viernes y sábados', 'P02', '2026-07-24', 'Cerrado'),
-    ('A12', '2026-07-06', 'Avisar del tiempo real de espera al sentar a la mesa', 'P03', '2026-07-17', 'Cerrado'),
-    ('A13', '2026-07-13', 'Contestar todas las reseñas en menos de 48 horas', 'P01', '2026-07-31', 'Cerrado'),
-    ('A14', '2026-07-13', 'Confirmar por SMS las reservas de más de cuatro personas', 'P03', '2026-08-07', 'Cerrado'),
-    ('A15', '2026-07-20', 'Empezar el cross-training de P06 en la partida fría', 'P05', '2026-10-15', 'En curso'),
-    ('A16', '2026-07-20', 'Preparar la ficha de evaluación de P05 para septiembre', 'P01', '2026-09-15', 'Pendiente'),
-    ('A17', '2026-07-27', 'Actualizar el cartel de la hoja de reclamaciones', 'P01', '2026-08-10', 'Cerrado'),
-    ('A18', '2026-07-27', 'Contestar por escrito la reclamación GI-2026-0463', 'P01', '2026-08-25', 'Pendiente'),
-    ('A19', '2026-08-03', 'Renegociar el precio del solomillo con el proveedor', 'P02', '2026-09-30', 'En curso'),
-    ('A20', '2026-08-03', 'Revisar el retimbrado de los extintores', 'P01', '2026-08-31', 'Pendiente'),
-    ('A21', '2026-08-03', 'Cerrar el plan de vacaciones de invierno', 'P01', '2026-10-31', 'En curso'),
-    ('A22', '2026-08-10', 'Repasar el orden de salida de platos por mesa', 'P02', '2026-08-24', 'Cerrado'),
-    ('A23', '2026-08-10', 'Bajar el volumen del hilo musical en el turno de cena', 'P03', '2026-08-21', 'Cerrado'),
-    ('A24', '2026-08-17', 'Definir la ruta de P09 hacia jefa de rango', 'P01', '2026-08-31', 'Pendiente'),
-    ('A25', '2026-08-24', 'Preparar el plan de 90 días con las siete herramientas', 'P01', '2026-09-07', 'En curso'),
+    ('A01', '2026-06-01', 'Publicar el cuadrante de julio con 15 días de antelación', 'P01', '2026-06-15', 'Cerrado', '2026-06-14'),
+    ('A02', '2026-06-01', 'Revisar el escandallo de los cinco platos más vendidos', 'P02', '2026-06-30', 'Cerrado', '2026-06-28'),
+    ('A03', '2026-06-01', 'Cambiar el proveedor de pescado por rendimiento', 'P02', '2026-07-15', 'Cerrado', '2026-07-14'),
+    ('A04', '2026-06-08', 'Anotar la hora de comanda de todas las mesas del viernes', 'P08', '2026-06-19', 'Cerrado', '2026-06-18'),
+    ('A05', '2026-06-08', 'Repasar con P11 el cobro dividido en el TPV', 'P03', '2026-06-22', 'Cerrado', '2026-06-20'),
+    ('A06', '2026-06-15', 'Formar a P10 en barra hasta nivel 2', 'P09', '2026-10-31', 'En curso', ''),
+    # M8 (auditoría 2026-09-04): «arqueo» es vocabulario de España; en buena
+    # parte de LATAM se dice «corte de caja». Primera y única aparición del
+    # término en este libro.
+    ('A07', '2026-06-15', 'Dar a P08 la firma del arqueo (corte de caja, en el uso de otros países) dos días por semana', 'P01', '2026-07-01', 'Cerrado', '2026-06-30'),
+    ('A08', '2026-06-22', 'Pedir presupuesto de limpieza de conductos', 'P01', '2026-07-10', 'Cerrado', '2026-07-14'),
+    ('A09', '2026-06-22', 'Escribir el soporte de alérgenos de los platos nuevos', 'P02', '2026-08-15', 'En curso', ''),
+    ('A10', '2026-07-06', 'Analizar los tiempos de pase de los viernes noche', 'P02', '2026-07-31', 'Cerrado', '2026-07-30'),
+    ('A11', '2026-07-06', 'Abrir una segunda plancha los viernes y sábados', 'P02', '2026-07-24', 'Cerrado', '2026-07-23'),
+    ('A12', '2026-07-06', 'Avisar del tiempo real de espera al sentar a la mesa', 'P03', '2026-07-17', 'Cerrado', '2026-07-16'),
+    ('A13', '2026-07-13', 'Contestar todas las reseñas en menos de 48 horas', 'P01', '2026-07-31', 'Cerrado', '2026-07-29'),
+    ('A14', '2026-07-13', 'Confirmar por SMS las reservas de más de cuatro personas', 'P03', '2026-08-07', 'Cerrado', '2026-08-11'),
+    ('A15', '2026-07-20', 'Empezar el cross-training de P06 en la partida fría', 'P05', '2026-10-15', 'En curso', ''),
+    ('A16', '2026-07-20', 'Preparar la ficha de evaluación de P05 para septiembre', 'P01', '2026-09-15', 'Pendiente', ''),
+    ('A17', '2026-07-27', 'Actualizar el cartel de la hoja de reclamaciones', 'P01', '2026-08-10', 'Cerrado', '2026-08-09'),
+    ('A18', '2026-07-27', 'Contestar por escrito la reclamación GI-2026-0463', 'P01', '2026-08-25', 'Pendiente', ''),
+    ('A19', '2026-08-03', 'Renegociar el precio del solomillo con el proveedor', 'P02', '2026-09-30', 'En curso', ''),
+    ('A20', '2026-08-03', 'Revisar el retimbrado de los extintores', 'P01', '2026-08-31', 'Pendiente', ''),
+    ('A21', '2026-08-03', 'Cerrar el plan de vacaciones de invierno', 'P01', '2026-10-31', 'En curso', ''),
+    ('A22', '2026-08-10', 'Repasar el orden de salida de platos por mesa', 'P02', '2026-08-24', 'Cerrado', '2026-08-23'),
+    ('A23', '2026-08-10', 'Bajar el volumen del hilo musical en el turno de cena', 'P03', '2026-08-21', 'Cerrado', '2026-08-20'),
+    ('A24', '2026-08-17', 'Definir la ruta de P09 hacia jefa de rango', 'P01', '2026-08-31', 'Pendiente', ''),
+    ('A25', '2026-08-24', 'Preparar el plan de 90 días con las siete herramientas', 'P01', '2026-09-07', 'En curso', ''),
 ]
 
 # Plan de 90 días: 20 decisiones que SALEN de las otras seis herramientas.
@@ -924,7 +981,10 @@ PLAN_90 = [
      'Avisar del tiempo real de espera al sentar en todos los servicios de viernes y sábado', 'P03', 1, 220.0, 'En curso'),
     ('Cumplimiento', 'Calendario de cumplimiento legal',
      'Contratar el retimbrado de los extintores, vencido desde mayo', 'P01', 2, 0.0, 'Pendiente'),
-    ('Cumplimiento', 'Calendario de cumplimiento legal',
+    # B1 (auditoría 2026-09-04): la herramienta de origen de ESTA decisión es
+    # el libro de quejas (Reclamaciones Formales!A6, 39 días contra un plazo
+    # de 30/28), no el calendario de cumplimiento legal.
+    ('Cumplimiento', 'Quejas, reclamaciones y reseñas',
      'Contestar por escrito la reclamación GI-2026-0463 y revisar por qué se pasó el mes', 'P01', 2, 0.0, 'Pendiente'),
     ('Servicio', 'Auditoría interna de servicio',
      'Recuperar el área de aseos y limpieza, la única que empeora entre la visita 1 y la 3', 'P03', 2, 0.0, 'Pendiente'),
