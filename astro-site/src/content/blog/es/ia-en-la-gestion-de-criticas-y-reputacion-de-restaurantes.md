@@ -2,7 +2,7 @@
 title: "Responder Reseñas Negativas de Restaurante: Plantillas IA"
 description: "Aprende a responder reseñas negativas y positivas de tu restaurante con plantillas, ejemplos antes/después con IA y su impacto en las reservas."
 pubDate: 2025-02-28
-modDate: 2026-08-31
+modDate: 2026-09-04
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IA-en-la-Gestion-de-Criticas-y-Reputacion-de-Restaurantes.jpg
 imageAlt: "IA en la Gestión de Críticas y Reputación de Restaurantes"
@@ -30,6 +30,8 @@ Cuando un cliente insatisfecho deja una reseña negativa en Google o Tripadvisor
 <figure><img loading="lazy" decoding="async" data-attachment-id="939" data-orig-file="/blog-assets/2025/02/AI-Chef-Pro-en-accion.jpg" data-orig-size="768,1344" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AI-Chef-Pro-en-accion" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/02/AI-Chef-Pro-en-accion.jpg" src="/blog-assets/2025/02/AI-Chef-Pro-en-accion.jpg" alt="AI Chef Pro en acción" title="AI Chef Pro en acción" width="585" height="1024" class="aligncenter size-large wp-image-939" /></figure>
 
 
+
+<p>Responder bien la reseña es el primer paso; registrar la queja, los plazos autonómicos de la hoja de reclamaciones y el seguimiento hasta el cierre es el segundo, y tiene su propia plantilla en el <a href="https://aichef.pro/manual-manager-restaurante">Manual del Manager de Restaurante</a>.</p>
 
 ## 1. Por qué responder reseñas mueve reservas (y el peso de la nota media)
 
@@ -94,7 +96,7 @@ Incluso con buena intención, hay meteduras de pata que empeoran la situación. 
 
 ## 4. Plantillas y ejemplos antes/después con IA para responder reseñas negativas restaurante
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-criticas-y-reputacion-de-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Manual del Manager de Restaurante</h3><p class="mt-2 text-muted-foreground">Operaciones, personas, números, servicio y ley: 20 capítulos y 7 Excel.</p><a href="/manual-manager-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-en-la-gestion-de-criticas-y-reputacion-de-restaurantes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Manual del Manager de Restaurante por €55</a></aside>
 
 ### Plantillas para responder reseñas negativas restaurante (ejemplos orientativos mejorados con IA)
 

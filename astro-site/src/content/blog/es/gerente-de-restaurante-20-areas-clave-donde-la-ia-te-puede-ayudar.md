@@ -2,7 +2,7 @@
 title: "Gerente de Restaurante: Funciones + 20 Áreas Clave con IA"
 description: "Descubre las funciones del gerente de restaurante: 20 áreas de gestión organizadas por bloques, cada una con una acción concreta de IA y KPIs de 2026."
 pubDate: 2026-02-07
-modDate: 2026-08-31
+modDate: 2026-09-04
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/gerente-de-restaurante-ia-gestion-aichefpro-1.jpeg
 imageAlt: "Gerente de Restaurante: 20 Áreas Clave donde la IA te Puede Ayudar a Mejorar la Gestión de tu Negocio"
@@ -36,6 +36,8 @@ En este artículo te muestro las 20 funciones clásicas del gerente de restauran
 <figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
+
+<p>Estas 20 áreas son el mapa; convertirlas en rutina semanal, con la normativa laboral vigente y las plantillas de cuadro de mando, cuadrante y cumplimiento legal, es el trabajo del <a href="https://aichef.pro/manual-manager-restaurante">Manual del Manager de Restaurante</a>.</p>
 
 ## Las 20 funciones del gerente de restaurante, por bloques
 
@@ -155,7 +157,7 @@ El sueño de cualquier gerente es que el cliente sienta que le conocen. Con un h
 
 Por qué importa cada uno: un food cost desbocado se come tu beneficio; un labor cost mal gestionado indica turnos mal dimensionados; el coste de bebida suele ser un termómetro de hurtos o malos hábitos de barra; el ticket medio refleja si tu oferta convence para gastar más; la rotación golpea la calidad del servicio y eleva costes de formación; el margen de contribución ayuda a decidir qué platos merecen el espacio en carta; y el prime cost es la suma de los dos costes más grandes: si no los controlas, los demás indicadores de nada sirven.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Mexicano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y business plan modelo.</p><a href="/guia-restaurante-mexicano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Mexicano por €65</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Manual del Manager de Restaurante</h3><p class="mt-2 text-muted-foreground">Operaciones, personas, números, servicio y ley: 20 capítulos y 7 Excel.</p><a href="/manual-manager-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Manual del Manager de Restaurante por €55</a></aside>
 
 ## Cómo AI Chef Pro acompaña al gerente
 

@@ -2,7 +2,7 @@
 title: "Rentabilidad de un Restaurante: KPIs y Benchmarks 2026"
 description: "KPIs que miden la rentabilidad de un restaurante en 2026: food cost, prime cost y margen neto con fórmulas, benchmarks por tipo de local y plan de 30 días."
 pubDate: 2026-04-05
-modDate: 2026-08-31
+modDate: 2026-09-04
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b8-1.jpg
 imageAlt: "Propietario revisando panel financiero con graficos de ingresos"
@@ -32,6 +32,8 @@ He visto demasiados restaurantes que facturan bien pero pierden dinero porque na
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/b8-2.jpg" alt="TPV mostrando analiticas de ventas y KPIs con restaurante de fondo"/></figure>
 
 
+
+<p>El cuadro de mando semanal —con estos mismos KPIs llevados a las 52 semanas del año, no sólo al cierre de mes— es una de las siete herramientas Excel del <a href="https://aichef.pro/manual-manager-restaurante">Manual del Manager de Restaurante</a>.</p>
 
 ## Qué significa de verdad la rentabilidad de un restaurante
 
@@ -75,7 +77,7 @@ El dato que de verdad responde a «¿cuánto gana un restaurante?». Es lo que q
 
 **Ejemplo:** Facturas 60.000 € en un mes y tus gastos totales suman 54.000 €. El beneficio neto es de 6.000 €, un 10 % de margen neto. Es un resultado sano en hostelería. Si estás por debajo del 5 %, tienes un problema estructural.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rentabilidad-restaurante-kpis-metricas-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Manual del Manager de Restaurante</h3><p class="mt-2 text-muted-foreground">Operaciones, personas, números, servicio y ley: 20 capítulos y 7 Excel.</p><a href="/manual-manager-restaurante?utm_source=blog&amp;utm_medium=banner&amp;utm_content=rentabilidad-restaurante-kpis-metricas-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Manual del Manager de Restaurante por €55</a></aside>
 
 ### Ticket medio
 
