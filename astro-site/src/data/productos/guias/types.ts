@@ -92,6 +92,8 @@ export interface GuiaData {
 
   /** WhySection — H2 fijo "¿Por Qué Esta Guía?"; sólo varían las 4 razones. */
   why: {
+    titlePre?: string;  // «¿Por Qué Esta » (default) · «¿Por Qué Este » para la línea de manuales
+    titleGold?: string; // «Guía» (default) · «Manual»
     reasons: { icon: string; title: string; desc: string }[];
   };
 

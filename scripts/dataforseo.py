@@ -40,6 +40,7 @@ ENV_CANDIDATOS = [
     Path(os.environ['DATAFORSEO_ENV']) if os.environ.get('DATAFORSEO_ENV') else None,
     Path('/root/chefbusiness-ai/.env'),                        # VPS
     Path.home() / 'chefbusiness-ai' / '.env',                  # Mac
+    Path.home() / 'chefbusiness-astro' / '.env',               # Mac (2026-09-04: aquí viven de verdad)
 ]
 
 LOC_ES, LANG_ES = 2724, 'es'   # España / español
@@ -49,7 +50,10 @@ def credenciales():
     if os.environ.get('DATAFORSEO_LOGIN') and os.environ.get('DATAFORSEO_PASSWORD'):
         login, pwd = os.environ['DATAFORSEO_LOGIN'], os.environ['DATAFORSEO_PASSWORD']
     else:
-        ruta = next((p for p in ENV_CANDIDATOS if p and p.is_file()), None)
+        # El primer .env que EXISTA no vale: el de chefbusiness-ai del Mac existe
+        # pero no lleva estas claves. Se elige el primero que las contenga.
+        ruta = next((p for p in ENV_CANDIDATOS if p and p.is_file()
+                     and 'DATAFORSEO_LOGIN=' in p.read_text(encoding='utf-8')), None)
         if not ruta:
             sys.exit('no encuentro el .env con las credenciales; probé: %s'
                      % ', '.join(str(p) for p in ENV_CANDIDATOS if p))

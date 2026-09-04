@@ -988,7 +988,7 @@ def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
     partes = []
     partes.append(
         f'Escribe un tramo del capítulo {cap["n"]} — «{cap["titulo"]}» de la '
-        f'guía profesional «{guia["titulo"]}» ({guia["subtitulo"]}).')
+        f'{guia.get("tipo_doc", "guía")} profesional «{guia["titulo"]}» ({guia["subtitulo"]}).')
     partes.append(f'OBJETIVO DEL CAPÍTULO: {cap["objetivo"]}')
     partes.append(
         'ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado '
@@ -1926,6 +1926,9 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
         f.write(md_text)
 
     meta = {'author': 'AI Chef Pro',
+            # 2026-09-04: la línea de MANUALES reutiliza el pipeline; «Guía profesional»
+            # deja de ir a fuego (el guion puede fijar categoria_doc y tipo_doc).
+            'category': guia.get('categoria_doc', 'Guía profesional'),
             'title': guia['titulo'],
             'subject': guia['subtitulo'] + f' · Versión {guia.get("version", "2.0")} · {guia.get("fecha", "agosto de 2026").replace(" de ", " ")}',
             'cabecera': guia['cabecera'],

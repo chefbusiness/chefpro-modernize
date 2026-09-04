@@ -13,7 +13,8 @@
 # Ahora cada regla va anclada al PREFIJO de la familia de producto, que es lo
 # que impide que puedan volver a tocar el blog: ninguna URL del blog empieza por
 # `/kit-`, `/guia-`… Las 88 páginas de la zona app son de UN SOLO SEGMENTO y
-# empiezan por: guia- kit- mega- pack- plan- pro-.  Si nace una familia con OTRO
+# empiezan por: guia- kit- manual- mega- pack- plan- pro- (manual- desde el
+# 2026-09-04, Manual del Manager).  Si nace una familia con OTRO
 # prefijo, hay que añadir sus dos líneas.
 #
 # Sin ancla final `$` A PROPÓSITO: con ella se escapaban las variantes con barra
@@ -35,6 +36,8 @@ Disallow: /guia-*-access
 Disallow: /guia-*-library
 Disallow: /kit-*-access
 Disallow: /kit-*-library
+Disallow: /manual-*-access
+Disallow: /manual-*-library
 Disallow: /mega-*-access
 Disallow: /mega-*-library
 Disallow: /pack-*-access
@@ -51,6 +54,8 @@ Disallow: /guia-*-access
 Disallow: /guia-*-library
 Disallow: /kit-*-access
 Disallow: /kit-*-library
+Disallow: /manual-*-access
+Disallow: /manual-*-library
 Disallow: /mega-*-access
 Disallow: /mega-*-library
 Disallow: /pack-*-access
@@ -67,6 +72,8 @@ Disallow: /guia-*-access
 Disallow: /guia-*-library
 Disallow: /kit-*-access
 Disallow: /kit-*-library
+Disallow: /manual-*-access
+Disallow: /manual-*-library
 Disallow: /mega-*-access
 Disallow: /mega-*-library
 Disallow: /pack-*-access
@@ -83,6 +90,8 @@ Disallow: /guia-*-access
 Disallow: /guia-*-library
 Disallow: /kit-*-access
 Disallow: /kit-*-library
+Disallow: /manual-*-access
+Disallow: /manual-*-library
 Disallow: /mega-*-access
 Disallow: /mega-*-library
 Disallow: /pack-*-access
@@ -99,6 +108,8 @@ Disallow: /guia-*-access
 Disallow: /guia-*-library
 Disallow: /kit-*-access
 Disallow: /kit-*-library
+Disallow: /manual-*-access
+Disallow: /manual-*-library
 Disallow: /mega-*-access
 Disallow: /mega-*-library
 Disallow: /pack-*-access
