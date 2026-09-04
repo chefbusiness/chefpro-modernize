@@ -679,7 +679,7 @@ CUMPLIMIENTO = [
     ('Extintores: mantenimiento anual por empresa mantenedora', 'extintores',
      '2025-11-12', 12, 'Sí', '', ''),
     ('Extintores: retimbrado (prueba de presión)', 'extintores',
-     '2023-05-09', 60, 'Sí', '', ''),
+     '2021-05-09', 60, 'Sí', '', ''),
     ('Extintores: retirada del servicio a los 20 años', 'extintores',
      '2012-03-01', 240, 'Sí', '', 'Se cuenta desde la fecha de fabricación grabada en el aparato'),
     ('Revisión periódica de la instalación de gas', 'gas',
