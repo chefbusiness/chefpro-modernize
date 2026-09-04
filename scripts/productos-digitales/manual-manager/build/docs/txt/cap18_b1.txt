@@ -1,0 +1,29 @@
+### La reserva es un contrato: qué se puede pedir y qué no
+
+Cuando un cliente reserva una mesa cierra un compromiso recíproco: el restaurante se compromete a tenerla lista a la hora pactada y el cliente a presentarse. Esa reciprocidad legitima pedir garantía —reconfirmación, tarjeta o prepago— cuando el riesgo lo justifica, y obliga igual al restaurante: si la mesa no está lista, el incumplimiento es del local. Pedir garantía sin ofrecer puntualidad no se sostiene frente a un cliente que reclama.
+
+El coste de no tratar la reserva como un compromiso en firme aparece en el registro de quejas: las quejas por reserva no encontrada pesan un 6,7 % sobre el total del año, con 2 casos. Es un volumen bajo, pero cada caso es un cliente que llegó con la certeza de tener mesa y no la encontró: el error simétrico del no-show, y el primero que hay que cerrar antes de exigir nada al cliente.
+
+Lo que se puede pedir, según el riesgo:
+- Confirmar nombre, teléfono y número de comensales siempre: sin esos datos no hay forma de avisar de un cambio ni de reclamar el compromiso.
+- Reconfirmación el mismo día para las franjas de mayor riesgo.
+- Tarjeta en garantía, sin cargar nada mientras la reserva se cumpla, para grupos grandes o para la franja de máxima demanda.
+- Prepago cuando la reserva lleva un menú cerrado, porque el restaurante ya ha comprometido género y personal antes de que el cliente llegue.
+
+Lo que no se puede hacer es aplicar el prepago a cualquier reserva sin distinguir el riesgo, ni comunicar la condición después de reservar: la garantía se acepta al reservar, nunca se impone al llegar.
+
+### No-show: cómo se mide y qué lo baja de verdad
+
+El no-show no se combate sin medirlo: hay que dividir las reservas no presentadas entre las confirmadas, por franja horaria y día de la semana. Un restaurante con 46.737 cubiertos, 22.263 tickets y 21,5 cubiertos por hora de apertura al año no tiene el mismo no-show en la comida de un martes que en la cena de un sábado: sin ese desglose, la política corrige lo que no existe en la mayoría de los servicios y deja intacto lo que importa.
+
+Para juzgar la cifra propia sirve el dato del sector: la tasa media de no-show en la restauración española fue del 3,3 % en 2025, en descenso desde el 3,6 % de 2024, según TheFork sobre el conjunto de sus reservas del año (TheFork y CoverManager, vía Restauración News e Infobae, 2026). Es una media anual sobre un volumen muy grande de reservas: referencia general, no objetivo para un local con otro perfil de clientela.
+
+Lo que baja el no-show de verdad, medido, es la garantía con tarjeta: con la reserva garantizada, la tasa de TheFork cae al 0,66 %. Es la palanca que hay que activar primero en la franja donde el desglose señale el problema, no una medida a repartir por igual en todo el libro de reservas.
+
+### La política de garantía y cómo se comunica sin espantar
+
+La política de garantía tiene tres niveles, de menos a más fricción, cada uno para un supuesto distinto. El primero es la reconfirmación: un aviso el mismo día que pide respuesta, para las franjas de mayor demanda donde una caída de última hora sí duele. Su efecto está documentado, con una acotación que hay que respetar: una nota de CoverManager registró que la reconfirmación por SMS bajó el no-show del 1,92 % al 1,52 % en el colectivo sin protección previa, medido en un único día —el Día del Padre de 2025— y la propia fuente advierte de que no es extrapolable al resto del año. No es cifra encadenable con la media anual de TheFork: dos fuentes, dos universos y dos periodos distintos.
+
+El segundo nivel es la tarjeta en garantía: se retiene el dato sin cargar nada, y solo se ejecuta el cargo si la reserva no se presenta ni se avisa con margen. Encaja en la franja de máxima demanda y en los grupos grandes, donde una mesa vacía no se recupera. El tercero, el prepago, se reserva para el menú cerrado: el restaurante compró género y planificó personal contando con esa mesa, y el compromiso económico se adelanta al momento de la reserva.
+
+Los tres niveles se comunican en el mismo paso en que el cliente reserva, nunca después: en la confirmación por escrito, en la plataforma de reservas o en el mensaje que cierra la llamada. Un cliente al que se le retiene la tarjeta o se le cobra el prepago sin saberlo antes no vive la garantía como parte del contrato, sino como una sorpresa que genera la queja contraria. El cuadro siguiente resume, nivel por nivel, cuándo tiene sentido cada uno.

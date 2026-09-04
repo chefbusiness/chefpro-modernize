@@ -1,0 +1,25 @@
+### La espera: qué cuesta y qué se puede hacer con ella
+
+La espera no es un margen de cortesía que dependa del ánimo de la sala (salón): es una parte del servicio que se gestiona como cualquier otra fase de la comanda. La regla es sencilla: se comunica un tiempo, se cumple ese tiempo o, si algo lo retrasa, se corrige avisando de la nueva estimación en cuanto se sabe, y se anota lo ocurrido. La mesa que espera sin que nadie le diga cuánto —y sin que se actualice el tiempo cuando cambia— es la que acaba en la columna de espera excesiva del registro de quejas.
+
+El coste de no hacerlo así se ve en las propias cifras del local: las quejas por espera excesiva suman 10 en el año, frente a las 2 quejas por reserva no encontrada, y de media se tarda 1,1 días en cerrar cada una. Ese plazo no es gratuito: mientras la queja sigue abierta, el cliente puede seguir agravándola en otro canal, y lo que hay en juego en cada mesa así es el gasto medio del cubierto en el año, 26,25 €.
+
+La responsabilidad de comunicar y actualizar el tiempo tiene que recaer en una persona concreta del turno, no en quien esté libre en ese momento: si dos personas dan estimaciones distintas a la misma mesa, la sensación de descontrol pesa más que la propia espera. Conviene distinguir además el origen del retraso: no es lo mismo la demora achacable a la cocina o a la propia gestión del turno que la de un cliente sin reserva que llega en la hora de mayor ocupación; solo la primera compromete al restaurante con el mismo estándar que se le exige al cliente cuando reserva.
+
+Qué se puede hacer con la espera, en concreto:
+- Dar siempre una cifra, no una vaguedad: un tiempo estimado, nunca «enseguida» ni «un momento».
+- Actualizar esa cifra en cuanto cambie, antes de que el cliente tenga que preguntar.
+- Ofrecer algo mientras se espera —la carta, la zona de barra, una bebida— cuando el retraso supera lo comunicado.
+- Registrar el incidente aunque el cliente no llegue a quejarse en el momento: el patrón se ve en el acumulado, no en un caso suelto.
+
+Es el mismo criterio que sostiene la política de garantía del lado del cliente: un compromiso de tiempo se cumple o se corrige, y las dos partes de la reserva responden ante el mismo estándar.
+
+### RGPD en la reserva: base legal, registro de tratamiento y marketing aparte
+
+Los datos que se piden al reservar —nombre, teléfono, número de comensales, y la tarjeta cuando el nivel de garantía lo exige— se tratan bajo una base legal concreta: la ejecución de un contrato, letra b del artículo 6, apartado 1, del RGPD (Reglamento (UE) 2016/679). Eso significa que gestionar la reserva, enviar la reconfirmación, cobrar el prepago si no se presenta o guardar el historial de un cliente habitual no exige pedir su consentimiento: el propio acto de reservar ya ampara ese tratamiento, porque es necesario para prestar el servicio solicitado.
+
+Eso no exime de otras obligaciones. El tratamiento de los datos de reserva —quién los recibe, para qué se usan, cuánto tiempo se conservan— tiene que constar en el registro de actividades de tratamiento, artículo 30 del RGPD, que todo restaurante debe llevar con independencia de su tamaño. No hace falta un aviso legal distinto ni una capa de burocracia añadida: basta con documentar, para el proceso de reservas, la finalidad, los datos recogidos y quién tiene acceso a ellos.
+
+Lo que sí exige un paso adicional es cualquier uso de esos datos que se salga de gestionar la reserva: enviar una newsletter, avisar de una promoción o incluir al cliente en una campaña de fidelización necesita un consentimiento separado y expreso, con su propia casilla, sin marcarla por defecto y sin condicionarla a que el cliente pueda reservar. Mezclar las dos bases —tratar el consentimiento de marketing como si viniera incluido en la ejecución del contrato de la reserva— es el error más común y el más fácil de evitar: una casilla, claramente separada del formulario de reserva, que el cliente marca porque quiere, no porque reservar se lo exija.
+
+La conservación de esos datos tampoco es indefinida: se mantienen mientras dure la relación con el cliente y el tiempo que exijan las obligaciones fiscales y mercantiles, no más allá de esa finalidad. Y el cliente conserva, en todo momento, los derechos que recoge el capítulo III del RGPD, dedicado a los derechos del interesado: puede pedir qué datos suyos guarda el restaurante, corregirlos si están mal, pedir su supresión cuando ya no hagan falta, y oponerse en cualquier momento al tratamiento de marketing sin que eso afecte a una reserva ya confirmada.

@@ -1,0 +1,26 @@
+### La situación
+
+Son las nueve y cuarto de la mañana, antes del pase en La Encina, cuando la persona que sostiene sola la partida de fríos y entrantes comunica que se va. La matriz de polivalencia ya señalaba el problema: una sola persona sostiene esa estación, una sola persona es capaz de enseñarla, y la cobertura es del 8,3 %. La hoja devuelve la alerta «RIESGO: punto único de fallo, solo 1 persona puede sostener esta estación», y hoy deja de ser una advertencia sobre el papel para convertirse en una baja con fecha. El coste directo de cubrirla está en 1.194,00 €; el margen que se deja de generar mientras el equipo recupera el ritmo, en 1.881,87 €; y el impacto total, en 3.075,87 €. Esa cifra es el argumento para pedir presupuesto de formación después; hoy lo urgente es sacar de una sola cabeza, en el preaviso, todo lo que nunca se ha escrito en ninguna ficha.
+
+### Qué no hacer
+
+- Intentar retener a la persona con una mejora improvisada el mismo día: transmite que sólo llega bajo amenaza de marcha, y si acepta, el resto de la partida aprende esa lección igual de rápido.
+- Ocultar la baja al resto del equipo mientras se negocia el traspaso: cuando se entera por el pasillo, la confianza se rompe justo en el tramo en que más se necesita.
+- Dejar el traspaso para la última semana «por si cambia de opinión»: las fichas, los proveedores, los tiempos y los trucos de la estación no caben en tan poco margen.
+- Tratar el preaviso como un castigo, recortando turnos o apartando a la persona antes de tiempo: es justo al revés, es el activo más valioso que queda sobre la mesa.
+
+### Protocolo paso a paso
+
+- Aceptar la baja y, ese mismo día, pactar por escrito el plan de traspaso: qué se enseña, a quién y en qué fecha se cierra cada bloque. Frase de apertura: «Antes de que te vayas necesito que dejemos esto por escrito: qué le enseñas a quién y para cuándo, no como favor, sino como parte del cierre».
+- Elegir a quién se enseña según la matriz de polivalencia, no según quién esté libre esa tarde: quien tiene mejor progresión absorbe el traspaso mejor que quien sólo tiene hueco en el cuadrante (horario del personal) esa semana.
+- Escribir con quien se va lo que sólo está en su cabeza: fichas de producto, proveedores de la partida, tiempos de mise en place y los trucos de la estación.
+- Programar cada sesión en el cuadrante, con hora y nombre, no «cuando se pueda»: lo que no tiene hueco fijo asignado no llega a ocurrir antes de que termine el preaviso.
+- Al cerrar, actualizar la matriz con quién quedó formado y anotar la acción en el plan de cross-training, que ya lleva 8 acciones registradas: esta baja añade una más.
+
+### La norma que aplica
+
+Aquí no hay obligación legal de traspaso de conocimiento: es criterio de gestión, no una norma, y conviene decirlo así al equipo. Lo que sí está regulado es el preaviso que fije el convenio colectivo aplicable o, en su defecto, el contrato de trabajo, junto con la liquidación que corresponda al cierre de la relación laboral. Ese plazo de preaviso es el único margen de maniobra real: no se negocia, pero sí se aprovecha.
+
+### La herramienta y el guion
+
+La matriz de polivalencia y el plan de cross-training —hoja «Plan de Cross-Training» de matriz-formacion-polivalencia.xlsx— ya tenían identificada esta estación como punto único de fallo; la tabla siguiente recoge, estación por estación, quién enseña a quién y para cuándo. La hoja «Coste de una Baja» del mismo libro es el argumento con el que se pide presupuesto para que la próxima salida no vuelva a costar 3.075,87 €: la formación en hostelería recibe una cuarta parte de lo que recibe la media de la economía española por trabajador y año —20,14 € frente a 76,49 € de media— (INE, Encuesta Anual de Coste Laboral 2025), y cada punto único de fallo sin cubrir es una baja ya anunciada, sólo que todavía sin fecha.

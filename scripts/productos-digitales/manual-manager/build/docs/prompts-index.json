@@ -1,0 +1,706 @@
+[
+ {
+  "id": "guia_cap01_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap01_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap01_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Qué es Exactamente un Manager de Restaurante (y para Quién es Este Manual)",
+  "epigrafes": [
+   "Gerente, encargado, director, jefe de sala: qué dice el convenio y qué es uso de la casa",
+   "El organigrama del ALEH VI: áreas funcionales y grupos profesionales",
+   "Tu problema, su capítulo y su herramienta"
+  ]
+ },
+ {
+  "id": "guia_cap01_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap01_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap01_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Qué es Exactamente un Manager de Restaurante (y para Quién es Este Manual)",
+  "epigrafes": [
+   "Qué trae este pack y qué está en los otros productos del catálogo",
+   "Cómo llamamos aquí a cada cosa"
+  ]
+ },
+ {
+  "id": "guia_cap02_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap02_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap02_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Los Números que Gobiernan tu Turno: las Definiciones que Casi Nadie Distingue",
+  "epigrafes": [
+   "Ventas netas, consumo y food cost: qué entra y qué no entra",
+   "Coste de personal: del bruto a lo que sale de la caja",
+   "Prime cost y margen tras prime cost"
+  ]
+ },
+ {
+  "id": "guia_cap02_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap02_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap02_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Los Números que Gobiernan tu Turno: las Definiciones que Casi Nadie Distingue",
+  "epigrafes": [
+   "Ticket medio, gasto por cubierto y ventas por hora: tres cosas distintas",
+   "Rotación, absentismo y temporalidad no son sinónimos"
+  ]
+ },
+ {
+  "id": "guia_cap03_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap03_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap03_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "El Cuadro de Mando Semanal: por Qué la Semana y no el Mes",
+  "epigrafes": [
+   "Qué mide el cierre del mes y qué no puede medir",
+   "Las columnas que se rellenan cada lunes, y de dónde sale cada dato",
+   "Cómo se lee un semáforo sin discutirlo"
+  ]
+ },
+ {
+  "id": "guia_cap03_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap03_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap03_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "El Cuadro de Mando Semanal: por Qué la Semana y no el Mes",
+  "epigrafes": [
+   "La semana mala que el promedio mensual esconde",
+   "Quince minutos, un día fijo y el cuaderno cerrado"
+  ]
+ },
+ {
+  "id": "guia_cap04_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap04_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap04_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Prime Cost y Coste de Personal: Dónde se Pierde el Margen",
+  "epigrafes": [
+   "Qué suma el prime cost y por qué se miran juntos",
+   "Del salario bruto al coste-empresa: la cotización, partida a partida",
+   "El umbral de la casa: 65 % en sala, 55 % en barra"
+  ]
+ },
+ {
+  "id": "guia_cap04_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap04_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap04_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Prime Cost y Coste de Personal: Dónde se Pierde el Margen",
+  "epigrafes": [
+   "Vasos comunicantes: elaborar en casa o comprar elaborado",
+   "El sector paga poco y forma menos: qué significa eso para tu presupuesto"
+  ]
+ },
+ {
+  "id": "guia_cap05_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap05_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap05_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Día del Manager: Apertura, Servicio, Cierre y Handover",
+  "epigrafes": [
+   "Los cuatro bloques del día y qué decide cada uno",
+   "Apertura: lo que hay que ver antes de abrir la puerta",
+   "Servicio: dónde está el manager y qué mira"
+  ]
+ },
+ {
+  "id": "guia_cap05_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap05_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap05_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Día del Manager: Apertura, Servicio, Cierre y Handover",
+  "epigrafes": [
+   "Cierre y handover: lo que el turno siguiente tiene que encontrar escrito",
+   "Qué se delega, qué se supervisa y qué no se delega nunca"
+  ]
+ },
+ {
+  "id": "guia_cap06_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap06_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap06_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Caja y el Tique: Corte, Arqueo, Cierre — y lo que Viene",
+  "epigrafes": [
+   "Corte, arqueo y cierre: tres pasos, tres momentos y tres firmas",
+   "Un descuadre que se repite: cómo se busca sin acusar a nadie",
+   "El tique: contenido mínimo y hasta dónde llega la factura simplificada"
+  ]
+ },
+ {
+  "id": "guia_cap06_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap06_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap06_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Caja y el Tique: Corte, Arqueo, Cierre — y lo que Viene",
+  "epigrafes": [
+   "Efectivo: por qué un restaurante no puede ser cashless",
+   "Las propinas: IRPF, retención y qué cambia si el bote lo reparte la casa",
+   "Verifactu y factura electrónica: qué fecha te afecta y qué preguntarle a tu proveedor"
+  ]
+ },
+ {
+  "id": "guia_cap07_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap07_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap07_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Mandar sin Quemar al Equipo: Autoridad, Delegación y Cómo Defender un Cambio con Números",
+  "epigrafes": [
+   "Autoridad formal y autoridad real: en qué se nota la diferencia",
+   "Delegar sin perder el control: qué se delega y con qué límite",
+   "Señales tempranas de que alguien se está quemando"
+  ]
+ },
+ {
+  "id": "guia_cap07_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap07_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap07_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Mandar sin Quemar al Equipo: Autoridad, Delegación y Cómo Defender un Cambio con Números",
+  "epigrafes": [
+   "Cómo llevar una propuesta al propietario con la cifra de la semana",
+   "La conversación difícil: preparación, guion y acuerdo escrito"
+  ]
+ },
+ {
+  "id": "guia_cap08_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap08_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap08_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Convenio que te Aplica: ALEH VI, tu Provincia y lo que no se Negocia",
+  "epigrafes": [
+   "ALEH VI, no ALEH V: qué es y qué cubre",
+   "Las materias reservadas: lo que tu convenio provincial no puede tocar",
+   "Cómo se busca tu convenio en REGCON, paso a paso"
+  ]
+ },
+ {
+  "id": "guia_cap08_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap08_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap08_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Convenio que te Aplica: ALEH VI, tu Provincia y lo que no se Negocia",
+  "epigrafes": [
+   "Por qué el mismo puesto cobra distinto según la provincia",
+   "Ultraactividad: qué pasa cuando tu convenio caduca"
+  ]
+ },
+ {
+  "id": "guia_cap09_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap09_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap09_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Contratar sin Fabricar un Indefinido por Accidente",
+  "epigrafes": [
+   "El punto de partida: el contrato se presume indefinido",
+   "Las dos causas que quedan: circunstancias de la producción y sustitución",
+   "Encadenamiento: cómo se fabrica un fijo sin querer"
+  ]
+ },
+ {
+  "id": "guia_cap09_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap09_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap09_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Contratar sin Fabricar un Indefinido por Accidente",
+  "epigrafes": [
+   "Fijo-discontinuo: el contrato de la temporada y su antigüedad",
+   "Periodo de prueba y contratos formativos en hostelería"
+  ]
+ },
+ {
+  "id": "guia_cap10_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap10_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap10_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Selección con Criterio y los Primeros 30 Días",
+  "epigrafes": [
+   "El scorecard: competencias con peso antes de ver a nadie",
+   "La entrevista estructurada: las mismas preguntas para todos",
+   "Lo que no se puede preguntar"
+  ]
+ },
+ {
+  "id": "guia_cap10_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap10_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap10_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Selección con Criterio y los Primeros 30 Días",
+  "epigrafes": [
+   "Los primeros 30 días: acogida, acompañamiento y prueba",
+   "Las cuatro formaciones que no son la misma"
+  ]
+ },
+ {
+  "id": "guia_cap11_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap11_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap11_b1.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Jornada, Cuadrante y Registro de Jornada: Tres Documentos que no Son lo Mismo",
+  "epigrafes": [
+   "Cuadrante, registro y calendario laboral: tres papeles distintos",
+   "Los topes que no se pueden pactar a la baja"
+  ]
+ },
+ {
+  "id": "guia_cap11_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap11_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap11_b2.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Jornada, Cuadrante y Registro de Jornada: Tres Documentos que no Son lo Mismo",
+  "epigrafes": [
+   "Los quince minutos del bocadillo y otras trampas del cómputo",
+   "Horas extraordinarias y horas complementarias: dos cosas distintas"
+  ]
+ },
+ {
+  "id": "guia_cap11_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap11_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap11_b3.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Jornada, Cuadrante y Registro de Jornada: Tres Documentos que no Son lo Mismo",
+  "epigrafes": [
+   "Qué exige hoy el registro de jornada, y qué no exige todavía",
+   "El registro como materia disciplinaria: la novedad del ALEH VI"
+  ]
+ },
+ {
+  "id": "guia_cap12_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap12_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap12_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Permisos, Vacaciones y Conciliación sin Sustos",
+  "epigrafes": [
+   "Vacaciones: días naturales, calendario y preaviso",
+   "Fallecimiento, accidente y enfermedad grave: los días que son y los que no",
+   "El permiso parental son DOS figuras y sólo una se paga"
+  ]
+ },
+ {
+  "id": "guia_cap12_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap12_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap12_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Permisos, Vacaciones y Conciliación sin Sustos",
+  "epigrafes": [
+   "Nacimiento y cuidado de menor: qué cambió y qué hay que planificar",
+   "Guarda legal y adaptación de jornada: quién decide y qué pasa con el silencio"
+  ]
+ },
+ {
+  "id": "guia_cap13_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap13_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap13_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Rotación, Absentismo y Polivalencia: Qué se Puede Medir de Verdad",
+  "epigrafes": [
+   "Tres indicadores distintos y una fórmula para cada uno",
+   "Qué dato existe para hostelería y cuál no",
+   "La matriz de polivalencia y el punto único de fallo"
+  ]
+ },
+ {
+  "id": "guia_cap13_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap13_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap13_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Rotación, Absentismo y Polivalencia: Qué se Puede Medir de Verdad",
+  "epigrafes": [
+   "El plan de cross-training: quién enseña a quién y para cuándo",
+   "Cuánto te cuesta de verdad una baja"
+  ]
+ },
+ {
+  "id": "guia_cap14_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap14_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap14_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Evaluar, Corregir y, si Toca, Despedir",
+  "epigrafes": [
+   "Evaluar es comparar contra un estándar escrito",
+   "Corregir en el momento: la amonestación que sirve de algo",
+   "El régimen disciplinario del ALEH VI, falta por falta"
+  ]
+ },
+ {
+  "id": "guia_cap14_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap14_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap14_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Evaluar, Corregir y, si Toca, Despedir",
+  "epigrafes": [
+   "La audiencia previa: dos días, su excepción y qué pasa si te la saltas",
+   "Objetivo, improcedente y finiquito: los números del despido"
+  ]
+ },
+ {
+  "id": "guia_cap15_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap15_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap15_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Lo que Obliga Aunque Seáis Tres: Igualdad, Acoso, Desconexión y PRL",
+  "epigrafes": [
+   "Registro retributivo: sin umbral de plantilla",
+   "Protocolo frente al acoso: sin umbral, y qué tiene que decir",
+   "Plan de igualdad desde 50: cómo se cuenta la plantilla de verdad"
+  ]
+ },
+ {
+  "id": "guia_cap15_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap15_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap15_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Lo que Obliga Aunque Seáis Tres: Igualdad, Acoso, Desconexión y PRL",
+  "epigrafes": [
+   "Desconexión digital: el grupo de WhatsApp del servicio",
+   "PRL: plan, evaluación, emergencias y formación en el momento de contratar",
+   "Por qué el reconocimiento médico es voluntario"
+  ]
+ },
+ {
+  "id": "guia_cap16_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap16_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap16_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Servicio: Estándares, Briefing y la Conversación Cocina-Sala",
+  "epigrafes": [
+   "Briefing, reunión y handover: tres formatos, tres momentos",
+   "El briefing de siete minutos: qué entra y qué no entra",
+   "Estándares escritos: sin ellos no se puede corregir"
+  ]
+ },
+ {
+  "id": "guia_cap16_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap16_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap16_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Servicio: Estándares, Briefing y la Conversación Cocina-Sala",
+  "epigrafes": [
+   "Cocina y sala: un problema de sistema, no de personas",
+   "Corregir en el momento sin humillar a nadie"
+  ]
+ },
+ {
+  "id": "guia_cap17_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap17_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap17_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Quejas, Hojas de Reclamaciones y Reseñas: Tres Cosas Distintas",
+  "epigrafes": [
+   "La queja en sala: el protocolo de los primeros cinco minutos",
+   "La hoja de reclamaciones: qué es, qué obliga y quién pone los plazos",
+   "Los plazos de tu comunidad y cómo se cuentan"
+  ]
+ },
+ {
+  "id": "guia_cap17_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap17_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap17_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Quejas, Hojas de Reclamaciones y Reseñas: Tres Cosas Distintas",
+  "epigrafes": [
+   "Reseñas: quién responde, en cuántos días y con qué tono",
+   "Qué te dicen tus quejas cuando las cuentas"
+  ]
+ },
+ {
+  "id": "guia_cap18_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap18_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap18_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Reservas, No-shows y Datos del Cliente",
+  "epigrafes": [
+   "La reserva es un contrato: qué se puede pedir y qué no",
+   "No-show: cómo se mide y qué lo baja de verdad",
+   "La política de garantía y cómo se comunica sin espantar"
+  ]
+ },
+ {
+  "id": "guia_cap18_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap18_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap18_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Reservas, No-shows y Datos del Cliente",
+  "epigrafes": [
+   "La espera: qué cuesta y qué se puede hacer con ella",
+   "RGPD en la reserva: base legal, registro de tratamiento y marketing aparte"
+  ]
+ },
+ {
+  "id": "guia_cap19_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap19_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap19_b1.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Seguridad Alimentaria y el Local: de lo que Responde el Manager",
+  "epigrafes": [
+   "La cultura de seguridad alimentaria es obligación de la dirección",
+   "Autocontrol: principios, responsable designado y qué se registra"
+  ]
+ },
+ {
+  "id": "guia_cap19_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap19_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap19_b2.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Seguridad Alimentaria y el Local: de lo que Responde el Manager",
+  "epigrafes": [
+   "Alérgenos: por qué el cartel no basta",
+   "Temperaturas, anisakis y trazabilidad: las cifras vigentes"
+  ]
+ },
+ {
+  "id": "guia_cap19_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap19_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap19_b3.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Seguridad Alimentaria y el Local: de lo que Responde el Manager",
+  "epigrafes": [
+   "El local: ruido, música, horarios y las dos paredes de la terraza",
+   "Agua, envases, comida sobrante y perros de asistencia"
+  ]
+ },
+ {
+  "id": "guia_cap20_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap20_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap20_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Calendario del Manager, la Auditoría Interna y los 90 Días Siguientes",
+  "epigrafes": [
+   "Qué tiene fecha fijada por una norma y qué se vende como si la tuviera",
+   "El calendario de vencimientos: cómo se monta y cómo se lee",
+   "La auditoría interna: puntuar el servicio con la misma vara tres veces"
+  ]
+ },
+ {
+  "id": "guia_cap20_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/cap20_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/guia_cap20_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "El Calendario del Manager, la Auditoría Interna y los 90 Días Siguientes",
+  "epigrafes": [
+   "De la auditoría al plan: veinte decisiones con responsable y semana",
+   "Qué se mide el primer día y qué se mide a los noventa"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap01_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap01_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap01_b1.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Una Baja a Dos Horas del Servicio del Viernes",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap02_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap02_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap02_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "La Caja Descuadra 40 Euros Tres Días Seguidos",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap03_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap03_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap03_b1.txt",
+  "palabras_objetivo": 640,
+  "palabras_min": 460,
+  "capitulo": "Un Cliente Pide la Hoja de Reclamaciones",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap04_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap04_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap04_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Una Reseña de Una Estrella Acusa al Local de una Intoxicación",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap05_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap05_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap05_b1.txt",
+  "palabras_objetivo": 630,
+  "palabras_min": 453,
+  "capitulo": "Un Camarero Lleva 19 Meses Encadenando Contratos Temporales",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap06_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap06_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap06_b1.txt",
+  "palabras_objetivo": 610,
+  "palabras_min": 439,
+  "capitulo": "La Semana Cierra con un Prime Cost del 71 Por Ciento",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap07_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap07_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap07_b1.txt",
+  "palabras_objetivo": 640,
+  "palabras_min": 460,
+  "capitulo": "Una Reducción de Jornada por Guarda Legal Justo en el Viernes Noche",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap08_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap08_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap08_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Se Presenta una Inspección de Sanidad sin Avisar",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap09_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap09_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap09_b1.txt",
+  "palabras_objetivo": 630,
+  "palabras_min": 453,
+  "capitulo": "Una Empleada Comunica una Situación de Acoso",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap10_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap10_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap10_b1.txt",
+  "palabras_objetivo": 610,
+  "palabras_min": 439,
+  "capitulo": "El Cocinero Clave se Va y Sólo Él Sabe Hacer la Partida Fría",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap11_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap11_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap11_b1.txt",
+  "palabras_objetivo": 660,
+  "palabras_min": 475,
+  "capitulo": "El Propietario Quiere Subir la Carta un 10 Por Ciento y Tú Tienes los Números",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas_cap12_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/txt/BONUS-12-situaciones-resueltas/cap12_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas_cap12_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Hay que Despedir por Causas Disciplinarias",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ }
+]

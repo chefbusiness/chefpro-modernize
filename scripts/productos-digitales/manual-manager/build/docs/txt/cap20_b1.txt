@@ -1,0 +1,25 @@
+### Qué tiene fecha fijada por una norma y qué se vende como si la tuviera
+
+De los 18 puntos de control que reúne este calendario, sólo 7 tienen la periodicidad fijada por una norma estatal; los otros 11 son criterio de la casa. Decirlo así no relaja el control: es saber dónde está la obligación y dónde la buena práctica. La limpieza de campana y conductos, la calibración de los termómetros, el control de plagas, la medición del aceite de fritura y la frecuencia de la formación se venden con calendario cerrado —trimestral, semestral, anual—, pero ninguna tiene periodicidad fijada por una norma estatal: lo que exige la ley es el resultado (una campana limpia, un termómetro que marque bien, ausencia de plagas, un aceite dentro de parámetros), no un calendario concreto. Saberlo permite al manager (gerente/encargado) fijar la periodicidad con criterio propio y dejar anotado el motivo, en vez de comprarla ya cerrada porque así se la vendieron.
+
+El ejemplo más citado estos meses es el del registro horario digital: el real decreto que lo obligaría sigue en tramitación, sin publicar en el BOE, con dictamen desfavorable del Consejo de Estado de 23 de marzo de 2026. Lo exigible hoy es el registro diario con hora de inicio y fin, conservado 4 años de conservación, y admite papel o una hoja de cálculo (art. 34.9 del Estatuto de los Trabajadores, redacción del RDL 8/2019; verificado el 4 de septiembre de 2026). Quien presenta el registro digital homologado como obligación ya vigente vende una fecha que todavía no existe.
+
+Donde sí hay una fecha que no se negocia, la sanción marca la diferencia (verificado el 4 de septiembre de 2026): en PRL las infracciones llegan hasta 983.736 €, y en relaciones laborales hasta 225.018 € (art. 40.1 y 40.2 LISOS, RDLeg 5/2000; cuantías de la Ley 10/2021, no del RDL 5/2023 como suele repetirse). En seguridad alimentaria, la ausencia de autocontrol, la falta de trazabilidad o no identificar al proveedor son graves, con infracciones de 5.000 € a 600.000 € y cierre de hasta 5 años (Ley 17/2011 de seguridad alimentaria y nutrición, arts. 51 y 52). En consumo van de 150 € a 1.000.000 € (hasta 8 veces el beneficio ilícito), con comiso, publicidad y cierre como accesorias (TRLGDCU, RDLeg 1/2007, arts. 48 a 50). Ese es el peso de los 7 puntos con fecha de norma estatal.
+
+### El calendario de vencimientos: cómo se monta y cómo se lee
+
+La herramienta resuelve la distinción con una sola columna: «¿lo fija una norma estatal?». Si la respuesta es sí, la fecha no se negocia; si es no, la periodicidad la decide la dirección y queda anotado el motivo. Sobre los 18 puntos registrados, el calendario deja 7 con periodicidad de norma estatal y 11 de criterio de la casa, y en la fecha de corte de este ejemplo hay 1 punto vencido y un 75 % en verde.
+
+Leer el calendario no es mirar el color de una fila: es saber qué columna importa.
+
+- En los de norma estatal, lo único que importa es si está vencido: no hay margen sobre la fecha, y ese vencido pesa más que varios juntos en criterio de la casa.
+- En los de criterio de la casa, lo que importa es si la periodicidad sigue teniendo sentido con el volumen actual, no sólo si se cumplió la última vez.
+- El punto vencido se resuelve antes de abrir la siguiente auditoría: empezarla con un vencimiento abierto la contamina.
+
+La tabla de abajo recoge los 18 puntos con su columna de norma, su periodicidad y su estado en la fecha de corte.
+
+### La auditoría interna: puntuar el servicio con la misma vara tres veces
+
+La auditoría interna no es un examen que se aprueba o se suspende una vez: es un instrumento de dirección que sólo sirve si se repite con los mismos puntos, el mismo peso por área y la misma escala en cada visita. Cambiar el criterio de una visita a otra —un punto nuevo, más peso en la sala (salón) porque esa semana fue mala— convierte la auditoría en una fotografía sin referencia. Lo que interesa no es la nota aislada, sino la variación entre visitas: qué área sube, cuál baja y, sobre todo, cuál empeora dos veces seguidas, porque esa necesita una decisión, no otra visita de comprobación.
+
+En este caso, la puntuación ponderada pasó de 3,33 en la primera visita a 3,96 en la tercera, con un cumplimiento del 79,2 % en esa visita. La cifra aislada importa menos que la trayectoria: una puntuación que sube confirma que las decisiones tras la primera auditoría se sostuvieron; una que baja, aunque sea en una sola área, señala que ese punto entra en la próxima reunión con nombre, responsable y semana.

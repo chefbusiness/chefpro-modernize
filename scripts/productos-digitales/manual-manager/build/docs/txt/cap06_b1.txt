@@ -1,0 +1,25 @@
+### Corte, arqueo y cierre: tres pasos, tres momentos y tres firmas
+
+El corte es el primer paso: cerrar la venta del turno en el TPV y sacar el resumen de lo cobrado, con el desglose por forma de pago y las anulaciones. Lo firma quien ha estado al frente del turno, camarero (mesero, en México) o jefe de sala; es una foto parcial, sólo dice qué ha pasado en esas horas.
+
+El arqueo llega después; en México a este paso intermedio se lo llama corte de caja, y confunde porque suena a cierre sin serlo. Consiste en contar el efectivo del cajón, sumarlo a tarjeta y al resto de medios, y compararlo con lo que registra el sistema. Ahí aparece el descuadre, si lo hay; quien arquea lo firma con la cifra exacta, nunca de memoria.
+
+El cierre es el tercer paso y sella el día: el asiento contable, el traspaso a caja fuerte o a banco, y la firma del manager (gerente o encargado) responsable de esa jornada. Quien sólo hace uno de los tres pasos queda ciego ante las fugas de los otros dos: la anulación mal registrada aparece en el corte, el billete mal contado en el arqueo, y la entrada que no llegó a caja fuerte sólo en el cierre. Las tres firmas son la trazabilidad de quién respondía de cada tramo: en un local que mueve 46.737 cubiertos, 22.263 tickets y 1.226.661 € de facturación al año, es lo único que permite localizar una diferencia sin fiarse de la memoria de nadie.
+
+### Un descuadre que se repite: cómo se busca sin acusar a nadie
+
+Un descuadre suelto, de un euro o dos, casi siempre es error de vuelta o redondeo y se anota sin más. El que hay que investigar es el que se repite, turno tras turno o persona tras persona: el orden importa tanto como lo que se encuentra.
+
+Se empieza descartando el error de sistema, el sospechoso más probable y el más fácil de comprobar sin hablar con nadie: anulaciones de líneas ya cobradas, invitaciones y cortesías salidas de cocina sin pasar por el TPV, y cambios de forma de pago, una mesa registrada como tarjeta que acaba pagándose en efectivo, o al revés. Vistos en el registro del TPV, estos tres motivos explican la mayoría de los descuadres que parecen un misterio.
+
+Si el error de sistema no lo explica, el segundo paso es acotar, no acusar: cruzar las fechas con el cuadrante (el horario del personal) para ver qué turno y qué persona coinciden, y con los datos que ya existen, quién hizo el corte, quién el arqueo, en qué caja, antes de sacar ninguna conclusión. De las 30 quejas del trimestre, 2 fueron por cobro incorrecto, un 6,7 % del total: es el dato a cruzar con el patrón, porque la queja, el turno y la persona pueden señalar al mismo punto o no tener nada que ver, y sólo se sabe cruzándolos.
+
+Sólo cuando el error de sistema está descartado y el patrón queda acotado a un turno o a una persona se habla con alguien, y se habla desde el dato: día, turno, diferencia y quién coincide en todos los casos, nunca dando por hecho que alguien se queda con dinero. Acusar antes de acotar rompe la confianza del equipo y no encuentra el euro: el sospechoso equivocado se pone a la defensiva y el patrón real sigue sin explicación.
+
+### El tique: contenido mínimo y hasta dónde llega la factura simplificada
+
+Todo tique que sale del TPV nace, a efectos fiscales, como una factura simplificada. El límite general para emitirla en vez de una completa es de 400 €, y en hostelería y restauración sube a 3.000 € con el IVA incluido: lo fija el artículo 4 del RD 1619/2012, apartado 1 letra a para el límite general y apartado 2 letra e para hostelería (verificado el 4 de septiembre de 2026). Con un ticket medio de 55,10 € y un gasto medio por cubierto de 26,25 €, la mayoría de los tiques del local queda lejos de esos umbrales, y es fácil dar por hecho que el tique de siempre basta. El cliente puede exigir factura completa con sus datos fiscales para deducirse el gasto, sin más.
+
+No siempre basta con el tique corriente: existe una tercera figura que casi nadie del oficio conoce, la factura simplificada cualificada del artículo 7, apartado 2, del mismo RD 1619/2012. Es el mismo tique con un dato añadido a petición del cliente: cuando quien paga es empresario o profesional y pide que consten su NIF, su domicilio y la cuota de IVA repercutida por separado, deja de ser un tique cualquiera. La frontera no la marca el importe, la marca esa petición.
+
+Esa frontera importa por la factura electrónica obligatoria entre empresas: el artículo 4, apartado 1, del RD 238/2026 deja fuera de esa obligación a las facturas simplificadas, salvo que sean cualificadas (verificado el 4 de septiembre de 2026). La cualificada sí entra en la factura electrónica B2B aunque el resto de tiques queden fuera, y afecta justo a las comidas de trabajo, cuando el cliente pide la factura para deducirse el gasto. Por eso en el TPV hace falta una regla de tres casillas, no de dos: tique normal, fuera; tique con los datos fiscales del cliente, dentro; factura completa a una empresa, dentro. Configurar sólo dos casillas trata la cualificada como un tique más, justo la que la nueva obligación sí alcanza.

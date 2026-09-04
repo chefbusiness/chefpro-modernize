@@ -1,0 +1,19 @@
+### La situación
+
+El cuadro de mando semanal devuelve, para la semana ISO 33, un prime cost del 71,0 %, por encima del 65 % objetivo, con el food cost en el 36,9 % frente a un objetivo del 30 % y el labor cost en el 34,1 % frente a un objetivo del 33 %. Las ventas netas de esa semana fueron 22.041 €, y lo que quedó después del prime cost fue un margen de 6.393 €. El prime cost del año, ponderado, está en el 62,8 %: la semana 33 no es la tendencia, es un pico, y por eso hay que mirarla antes de tocar nada, porque el food cost y el labor cost se movieron los dos a la vez.
+
+### Qué no hacer
+
+Subir precios el lunes siguiente, sin separar qué parte del prime cost es food cost y cuál es labor cost, es resolver a ciegas un problema sin diagnosticar. Recortar horas del fin de semana que viene, sin más criterio que «la semana pasada se gastó de más», puede dejar el servicio con menos manos justo cuando más cubiertos hay. Y dar por bueno el dato del cuadro de mando sin comprobar antes el inventario es aceptar como cierto un consumo que puede estar mal contado, no mal gastado. Las tres reacciones se toman antes de saber qué pasó, y son frecuentes porque parecen rápidas.
+
+### Protocolo paso a paso
+
+La lectura de una semana mala se hace con tres preguntas, en este orden. La primera: ¿el consumo que aparece es real, o el inventario de cierre está mal contado? La segunda: ¿las ventas cayeron esa semana, o subió el coste del producto con la venta estable? La tercera: ¿las horas trabajadas se correspondieron con los cubiertos que hubo, o hubo horas de más sin cubiertos detrás? Contestar exige mirar, en la propia hoja del cuadro de mando, las columnas de ventas, coste de producto, horas y cubiertos de esa semana, y compararlas con las cuatro anteriores. De ahí sale la decisión: si el problema es de conteo, se corrige el inventario; si es de coste o de venta, se actúa sobre esa mitad del prime cost, no sobre las dos a la vez.
+
+### La norma que aplica
+
+Aquí no hay ninguna norma que aplicar, y conviene decirlo con esas palabras: el 65 % de objetivo de prime cost, el 30 % de food cost y el 33 % de labor cost son criterio de la casa, no una obligación legal. Ese criterio se apoya en una referencia de estructura de costes de un restaurante español, con el coste de producto en el 30 % de la venta —28 % en comida y 34,5 % en bebida—, el coste de personal entre el 30 % y el 35 % en servicio integrado, el alquiler hasta el 5 % y los gastos generales en el 17 %, con un EBITDA que la propia fuente califica de sano entre el 10 % y el 13 % (CaixaBankLab con elBullifoundation, «Consumos y beneficios de un restaurante», 2017, revisado en 2022). Superar el objetivo una semana no tiene consecuencia legal: tiene consecuencia contable, y esa es la que hay que gestionar.
+
+### La herramienta y el guion
+
+El cuadro de mando semanal es la fuente de las tres cifras y de la comparación con las cuatro semanas anteriores y las cuatro siguientes, y la reunión del lunes es el momento fijado para leerlas con el equipo. Si la semana mala se repite, la conversación con el propietario no se lleva con una queja: se lleva con tres cosas encima de la mesa. «Esta es la semana que se ha salido del objetivo, y esta es la causa que hemos identificado revisando el inventario y las horas.» «Esto es lo que proponemos hacer sobre esa causa concreta, sin tocar la carta ni el cuadrante (horario del personal) todavía.» «Y esta es la fecha en la que volvemos a revisar el cuadro de mando para comprobar si la medida ha funcionado.» Llevar una propuesta, un dato y una fecha es lo que distingue a un manager (gerente/encargado) que dirige la conversación de uno que sólo la sufre.

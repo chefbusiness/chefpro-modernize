@@ -1,0 +1,28 @@
+### ALEH VI, no ALEH V: qué es y qué cubre
+
+El acuerdo que rige hoy la hostelería en toda España es el ALEH VI, publicado en el BOE de 10 de marzo de 2023 (BOE-A-2023-6344), prorrogado desde el 1 de enero de 2024 y con vigencia pactada hasta el 31 de diciembre de 2030. El ALEH V, el acuerdo anterior, ha quedado sustituido. El manager (gerente/encargado) no negocia estas materias: las recibe hechas.
+
+El ALEH VI se sostiene sobre dos pisos que conviene no confundir. El piso estatal reserva para sí, sin que ningún convenio provincial ni de empresa pueda tocarlo, la clasificación profesional, el periodo de prueba, los contratos formativos y el régimen disciplinario (art. 10.7 ALEH VI). El piso provincial se queda con todo lo demás: tablas salariales, jornada anual, pluses, antigüedad y vacaciones concretas (art. 10.5 ALEH VI). Ningún acuerdo estatal de hostelería fija salarios: por eso este manual no publica ni una sola cifra de nómina (planilla).
+
+El art. 15 del ALEH VI relaciona los puestos de seis áreas funcionales «de forma meramente enunciativa y no excluyente», y el art. 16 los encuadra en tres grupos profesionales. En el área tercera —restaurante, sala, bar y similares— el grupo primero lo forman jefe/a de restaurante o sala, 2.º jefe/a de restaurante o sala, jefe/a de operaciones de catering y, solo dentro de restauración moderna (comida rápida y cadenas), gerente de centro. El convenio no tipifica «encargado de restaurante», «director» ni «administrador»: son denominaciones de uso de la casa, y sus únicos «encargados» son los de economato, pisos y limpieza, y mantenimiento. Lo que manda, y lo que tiene que figurar en el contrato escrito y en el recibo de salario, es el grupo profesional, no el nombre de la tarjeta de visita (arts. 11.2, 15 y 16 del ALEH VI, con la modificación de BOE-A-2026-18630).
+
+El ALEH VI se acaba de modificar: la Resolución de la Dirección General de Trabajo se publicó el 4 de septiembre de 2026 (BOE-A-2026-18630, verificado el 4 de septiembre de 2026), toca el preámbulo y los artículos 6, 9, 10, 15, 16, 17, 38, 39, 40 y 41 y las tablas del anexo I, y añade dos capítulos nuevos: el XIII, con el plan de referencia del sector en materia LGTBI, y el XIV, con el protocolo frente a catástrofes y fenómenos meteorológicos adversos. A esa modificación le quedan 1.578 días de vigencia.
+
+### Las materias reservadas: lo que tu convenio provincial no puede tocar
+
+La lista del art. 10.7 ALEH VI es un cierre de puertas. Ni el convenio de tu provincia ni ningún pacto de empresa pueden entrar en la clasificación profesional, el periodo de prueba, los contratos formativos, la formación profesional estatal, el régimen disciplinario, las normas mínimas de prevención de riesgos, la solución autónoma de conflictos ni la subrogación en colectividades. Si el convenio provincial trae una tabla de faltas distinta, no vale: se aplica la estatal.
+
+Del periodo de prueba, la cifra la fija solo el ALEH: 90, 60 o 45 días naturales según grupo profesional si el contrato es indefinido; 75, 45 o 30 si es temporal de más de tres meses; 60, 30 o 15 si es temporal de hasta tres meses. Y es nulo —no solo revisable, nulo— si la persona ya desempeñó las mismas funciones en la empresa (art. 21 ALEH VI y art. 14 del Estatuto de los Trabajadores).
+
+El régimen disciplinario, otra materia reservada, tiene su propio cuadro en este manual: reúne diez filas que tipifican dos faltas leves, dos graves y una muy grave, más las novedades de la modificación de septiembre sobre el registro de jornada.
+
+### Cómo se busca tu convenio en REGCON, paso a paso
+
+Buscar el convenio provincial es un procedimiento reproducible, no una intuición, y se repite igual cada vez que abres un local o cambias de provincia:
+
+- Entra en REGCON, el Registro y Depósito de Convenios Colectivos del Ministerio de Trabajo.
+- Filtra por ámbito funcional «hostelería», el sector que agrupa tu actividad, aunque el convenio de tu provincia lo titule de otra manera.
+- Filtra por ámbito territorial: la provincia. Aquí está el error que más se repite en grupos con varios locales: se busca por la provincia del CENTRO DE TRABAJO donde está tu restaurante, nunca por la del domicilio social de la empresa.
+- Comprueba la fecha de publicación del convenio y su estado: vigente, prorrogado o en ultraactividad.
+
+Esta búsqueda explica por qué el mismo puesto cobra cifras distintas según la provincia: la tabla salarial no la fija el ALEH VI, la fija el convenio que acabas de localizar. Una plantilla con una nómina única para «cocinero» o «camarero (mesero)» estaría equivocada en media España.

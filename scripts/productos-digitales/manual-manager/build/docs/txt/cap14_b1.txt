@@ -1,0 +1,24 @@
+### Evaluar es comparar contra un estándar escrito
+
+No se puede corregir lo que no estaba escrito antes de que ocurriera. Evaluar es, en esencia, comparar un hecho concreto contra un estándar que la persona ya conocía al entrar a ese turno: un procedimiento de sala, un tiempo de servicio, una norma de trato con el cliente. Cuando ese estándar no existe en ningún sitio salvo en la cabeza del manager (gerente/encargado), cualquier corrección se vive como un juicio personal y cualquier sanción posterior queda abierta a que la persona la discuta, con razón, porque nadie le dijo antes dónde estaba el límite.
+
+En «La Encina», ese estándar no es una idea abstracta: vive en documentos que la plantilla conoce de antemano. La hoja «Cobertura por Estación» de matriz-formacion-polivalencia.xlsx recoge, estación por estación, qué tiene que saber hacer cada una de las 12 personas de la plantilla del caso, y ese reparto de funciones es la referencia contra la que se mide un desempeño concreto, no la memoria de quien evalúa. El plan de 90 días añade el segundo tramo del mismo estándar: la hoja «Actas y Acuerdos» de reuniones-acuerdos-plan-90-dias.xlsx recoge 25 acuerdos registrados en el trimestre, cada uno con su responsable y su plazo, y es ese registro por escrito el que convierte una conversación de pasillo en un compromiso exigible más adelante. Sin ese papel, no hay evaluación posible: sólo hay opinión, y la opinión no sostiene una sanción.
+
+La ficha de evaluación del desempeño de esa misma plantilla está en el Kit de Gestión de Personal, y su función es precisamente registrar el resultado de comparar contra el estándar. Lo que decide este capítulo no es cómo rellenar esa ficha, sino qué hacer con lo que sale de ella: una amonestación, un plan de mejora con fecha de revisión o, si la falta lo exige, el inicio de un expediente disciplinario.
+
+### Corregir en el momento: la amonestación que sirve de algo
+
+Una amonestación que corrige de verdad reúne cuatro elementos, y ninguno es opcional:
+
+- El hecho concreto, con fecha y descripción, nunca una etiqueta genérica como "mala actitud".
+- El efecto que ese hecho ha tenido, sobre el servicio, sobre un compañero o sobre un cliente.
+- La expectativa exacta de lo que se espera a partir de ahora, en términos que se puedan comprobar en el siguiente turno.
+- Una fecha de seguimiento, cercana, en la que se revisa si el comportamiento ha cambiado.
+
+Tiene que decirse en privado y quedar anotada, con esos cuatro elementos, en el expediente de la persona. La amonestación que no sirve de nada es la contraria en todo: se dice en el pase, delante de toda la sala (salón), en términos generales —"tenéis que espabilar", "esto no puede volver a pasar"— y no queda registrada en ningún sitio. Esa versión no corrige nada, porque no señala un hecho verificable, no fija una expectativa comprobable y no deja rastro para el día en que haga falta demostrar que el aviso existió.
+
+### El régimen disciplinario del ALEH VI, falta por falta
+
+Sancionar exige tipificar. No basta con decir que alguien ha tenido "mal comportamiento": hay que decir qué falta concreta se ha cometido, de qué nivel es y por qué encaja ahí, porque una sanción sin tipificación es tan discutible como una corrección sin estándar. El cuadro que resume el régimen disciplinario tras la modificación del ALEH VI, publicada por Resolución de la DGT de 25 de agosto de 2026 (BOE-A-2026-18630), verificado el 4 de septiembre de 2026, reúne diez filas con las faltas ordenadas por nivel: 2 tipificadas como leves, 2 como graves y 1 como muy grave. Entre esas diez filas hay tipificaciones que no existían en el texto anterior del convenio, y el primer paso de cualquier sanción es localizar en ese cuadro la fila que corresponde al hecho concreto, no redactar una descripción a medida ni forzar una falta grave para justificar una sanción que, tipificada con rigor, pediría una leve.
+
+Esa modificación no es indefinida: a fecha de esta edición le quedan 1.578 días de vigencia, y conviene revisar el cuadro cuando ese plazo se acerque a su fin, porque el régimen disciplinario que hoy aplica puede no ser el mismo dentro de unos años. Cuando la falta que se tipifica es de las más graves, la sanción puede llegar hasta el despido disciplinario, y ese camino exige un trámite propio, distinto de la amonestación, que hay que respetar antes de entregar ninguna carta.

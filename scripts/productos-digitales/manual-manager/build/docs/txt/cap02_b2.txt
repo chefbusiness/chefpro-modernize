@@ -1,0 +1,21 @@
+### Ticket medio, gasto por cubierto y ventas por hora: tres cosas distintas
+
+El ticket medio, el gasto por cubierto y las ventas por hora trabajada miden tres cosas distintas, y confundirlos es el error con el que se abre este capítulo: quien llama ticket medio al gasto por cubierto toma decisiones de carta con el número equivocado. El ticket medio es el importe medio de cada mesa o cada comanda cerrada; el gasto por cubierto es ese mismo importe repartido entre los comensales sentados en la mesa, y por eso siempre es igual o menor que el ticket medio. En La Encina, el ticket medio del año fue de 55,10 €, y el gasto medio por cubierto, de 26,25 €. Usar el ticket medio para fijar el precio de un plato piensa en la mesa; usar el gasto por cubierto piensa en la persona, y es el que hay que mirar para comparar la carta de un servicio con la de otro, porque el número de comensales por mesa cambia de un día para otro. Una noche con mesas más numerosas sube el ticket medio sin que haya subido lo que cada comensal deja en el local, y decidir sobre la carta con ese ticket inflado por el tamaño de grupo esconde lo que de verdad paga cada persona.
+
+Las ventas por hora trabajada miden algo distinto todavía: cuánto factura el negocio por cada hora que la plantilla ha estado en el turno, no por cada hora que el local ha estado abierto. En La Encina, las ventas por hora trabajada del año fueron de 52,28 €. Confundir esta cifra con los cubiertos por hora de apertura es el segundo error del capítulo: la primera mide cómo rinde la plantilla que está trabajando, y la segunda mide la demanda de la sala (salón), que depende de la ubicación y de la reserva, no del servicio.
+
+Para situar el ticket medio de La Encina sirve una referencia sectorial, con varias acotaciones. Según el Informe Sectorial Turismo (CaixaBank Research, 16 de enero de 2025), el ticket medio de la restauración española, medido sobre pagos con tarjeta, fue de 21 €, con Baleares en el máximo (35 €) y Álava en el mínimo (16,5 €). Son datos de 2024, media de enero a septiembre, y no del primer semestre de 2025; excluyen el efectivo y reflejan la cuota de mercado de una sola entidad financiera. Es el ticket de toda la restauración española, y no se puede extrapolar a la alta cocina, segmento del que no existe cifra pública fiable. El de La Encina, 55,10 €, queda muy por encima de esa media nacional, que mezcla bajo un mismo dato todos los formatos de restauración.
+
+### Rotación, absentismo y temporalidad no son sinónimos
+
+La rotación, el absentismo y la temporalidad son tres indicadores de personas que se usan como sinónimos sin serlo, y mezclarlos es lo que hace circular cifras que nadie puede sostener con un cálculo detrás:
+
+- la rotación mide las bajas de plantilla sobre la plantilla media del periodo;
+- el absentismo mide las horas no trabajadas sobre las horas pactadas en el cuadrante (horario del personal);
+- la temporalidad mide contratos, no personas.
+
+La rotación dice cuántos puestos se han tenido que cubrir de nuevo, no cuántas personas distintas han pasado por la empresa. El absentismo puede dar el mismo porcentaje con causas completamente distintas detrás: una única baja médica larga o una acumulación de ausencias cortas de varios trabajadores pesan igual en el cálculo. Y la temporalidad, al contar contratos, hace que la misma persona con dos contratos temporales seguidos en el mismo puesto cuente dos veces en la tasa, sin que haya habido una sola baja ni una sola hora de absentismo detrás.
+
+El manager (gerente/encargado) que lleva estos tres números en la misma casilla de una hoja de cálculo, o que responde uno cuando le preguntan por otro, está tomando decisiones de plantilla con un termómetro que no mide lo que cree medir. Ninguno de los tres se calcula con una cifra sectorial única: la rotación y el coste de cubrir una baja se calculan con los datos propios del restaurante, no con una cifra de mercado, y la plantilla del Kit de Gestión de Personal recoge esa cuenta caso a caso.
+
+La carta se decide por el margen; la compra, por el food cost; si el negocio aguanta lo dice el prime cost; y si la sala rinde lo dicen las ventas por hora trabajada, no los cubiertos por hora de apertura, que miden la demanda y no el rendimiento del servicio.

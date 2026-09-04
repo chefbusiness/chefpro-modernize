@@ -1,0 +1,27 @@
+### Los cuatro bloques del día y qué decide cada uno
+
+Un checklist sin criterio se firma sin mirar. La casilla marcada certifica que alguien pasó por delante de la línea, no que la entendiera. Lo que convierte una lista de comprobación en un control real es saber, para cada punto, qué decisión depende de él y quién la toma. El día del manager (gerente/encargado) se organiza en cuatro bloques —apertura, servicio, cierre y handover— y cada uno concentra un tipo de decisión distinto: en la apertura se decide con qué se sale a jugar el servicio; durante el servicio se corrige sobre la marcha lo que no puede esperar; en el cierre se cuenta lo que ha pasado con la caja y el producto; y en el handover se traduce en información que el turno siguiente pueda usar sin reconstruirla.
+
+Confundir estos cuatro bloques es la forma más habitual de perder el control sin que ningún indicador lo anuncie a tiempo: tratar el cierre como una suma de caja, o creer que el servicio deja margen para resolverlo todo, cuando buena parte de lo que pasa en sala sólo se corrige antes de que empiece o después de que termine. En «La Encina», la semana completa de apertura al público suma 42 horas entre sala (salón) y cocina, y cada una pertenece a uno de los cuatro bloques. Lo que sigue desarrolla la apertura y el servicio; el cierre, el handover y la regla de qué se delega van en el tramo siguiente.
+
+### Apertura: lo que hay que ver antes de abrir la puerta
+
+Antes de abrir la puerta hay tres decisiones que sólo se pueden tomar en ese momento: una vez arranca el servicio, ya no queda margen para corregir ninguna sin que el cliente lo note.
+
+- Dotación del turno frente a la reserva del día: el cuadrante (horario del personal) se cerró con antelación, sobre una previsión. La reserva real —cubiertos confirmados, cancelaciones de última hora, el grupo que llama esa mañana— dice si esa dotación sigue teniendo sentido o si hay que mover a alguien de una partida a otra antes de la primera comanda.
+- Producto que hay que sacar o cambiar: la carta impresa no sabe qué ha llegado esa mañana. Revisar género, mermas de cámara y roturas de stock antes de abrir evita ofrecer un plato que cocina ya no puede servir con garantías; decidir si se retira, se sustituye o se limita la ración es del manager.
+- Qué queda sin cubrir: con la plantilla asignada, algo se queda sin la atención de un día completo —una partida sin segundo, una zona de sala sin camarero (mesero) fijo, una tarea de mantenimiento aplazada—. Decidir de antemano qué queda descubierto, y avisar a quien lo va a notar, es preferible a que lo descubra a media hora de servicio.
+
+Las tres decisiones comparten el mismo reloj: se toman con la puerta cerrada o después, con menos información y bajo presión. Un briefing breve antes de abrir, en el que estas tres cosas se digan en voz alta y no se den por hechas, separa una apertura resuelta de una improvisada.
+
+### Servicio: dónde está el manager y qué mira
+
+Durante el servicio, el sitio físico del manager no es fijo: cambia con el momento, porque cambia lo que hay que vigilar. En «La Encina», la media del año es de 21,5 cubiertos por hora de apertura, y esa densidad marca cuándo conviene estar en la puerta, en el pase o recorriendo la sala.
+
+Tres puntos de observación se van turnando a lo largo del servicio:
+
+- La puerta, en las horas punta de llegada: ahí se decide si una reserva se sienta a su hora y si un grupo sin reserva tiene sitio, con qué espera real se le informa.
+- El pase, en el momento de mayor presión de cocina: ahí se ve si los tiempos entre platos de una misma mesa se cumplen y si alguna elaboración se queda atrás.
+- La mesa que lleva más tiempo esperando: no la que más ruido hace, sino la que el reloj dice que lleva más tiempo sin que le llegue el siguiente paso, sea la carta, el plato o la cuenta.
+
+Lo que se corrige en el momento tiene remedio dentro del servicio: una espera que se acorta avisando a cocina, una mesa que se recoloca, una queja que se atiende antes de escalar delante de las mesas vecinas. Lo que se anota para después ya no tiene arreglo esa noche pero sí valor para no repetirse: una partida que se queda corta de forma sistemática, un plato que tarda más de lo que promete la carta, un proveedor cuyo género llega siempre justo de tiempo. Confundir ambas cosas es el error que este capítulo corrige.

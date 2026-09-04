@@ -1,0 +1,25 @@
+### Desconexión digital: el grupo de WhatsApp del servicio
+
+El art. 88.3 de la LO 3/2018 (verificado el 4 de septiembre de 2026) obliga a elaborar, previa audiencia de la representación de la plantilla, una política interna escrita que defina las modalidades de ejercicio del derecho a la desconexión digital y las acciones de formación necesarias para evitar la fatiga informática. Esa política alcanza también a los puestos directivos: el manager no queda fuera de su propio derecho a desconectar, aunque sea quien más presión sienta para estar siempre disponible.
+
+En un restaurante, la fatiga informática que persigue la norma tiene nombre y hora concretos: el grupo de mensajería del servicio en el que alguien pregunta a las doce de la noche si puede cambiar el turno de mañana, la persona a la que se envía la foto del pase de comandas pidiendo opinión en su día libre, el mensaje de última hora sobre un proveedor que llega cuando ya nadie está en el local. Nada de eso es excepcional: es el patrón que la política interna tiene que ordenar por escrito, fijando cuándo un mensaje fuera de horario es aceptable —una urgencia real del servicio— y cuándo no lo es, y formando a quien coordina turnos para que no dé por hecho que todo el mundo tiene que contestar de inmediato.
+
+Que la política sea escrita, y no una norma de sentido común que cada encargado interpreta a su manera, es lo que la convierte en exigible: sin documento y sin la audiencia previa a la representación de la plantilla, la obligación del art. 88.3 no está cumplida por mucho que en la práctica nadie mande mensajes fuera de hora.
+
+### PRL: plan, evaluación, emergencias y formación en el momento de contratar
+
+La Ley 31/1995 de Prevención de Riesgos Laborales sostiene cuatro documentos que en un restaurante existen sí o sí, tenga la plantilla que tenga: el plan de prevención, la evaluación de riesgos, la planificación de la actividad preventiva y las medidas de emergencia. No son cuatro papeles independientes: el plan fija el marco, la evaluación identifica los riesgos concretos del local —quemaduras, cortes, caídas en cocina mojada, manipulación de cargas—, la planificación ordena qué se hace con lo que la evaluación encontró, y las medidas de emergencia cubren lo que ocurre si algo falla de verdad, desde un incendio hasta una evacuación.
+
+A esos cuatro documentos se suma una obligación de formación que tiene un momento fijo: se imparte en el instante de la contratación, no meses después ni cuando haya un hueco en el cuadre de turnos. Va dentro de la jornada laboral, es decir, cuenta como tiempo de trabajo y no como un favor que la persona hace fuera de su horario, y el coste no recae en ningún caso sobre quien se está formando: lo asume la empresa de principio a fin. Cuando entra alguien nuevo en una plantilla como la de doce personas de La Encina, esa formación tiene que estar impartida antes de que esa persona empiece a manejar una freidora o a subir una escalera con una caja, no después.
+
+La Ley 31/1995 es, junto con las que ya hemos citado en este capítulo, una de las siete normas que seguimos en la hoja de estado normativo de calendario-cumplimiento-legal.xlsx: tenerla localizada ahí, con su fecha de última revisión, evita el error más común, que es dar por hecho que con firmar el plan de prevención al abrir el negocio ya está todo resuelto para siempre.
+
+### Por qué el reconocimiento médico es voluntario
+
+Aquí está el error más repetido de todo el bloque, y conviene dejarlo dicho sin matices: los reconocimientos médicos son voluntarios. La empresa los ofrece; no los impone. Lo fijan los arts. 22.1 y 22.4 de la Ley 31/1995 (verificado el 4 de septiembre de 2026), y sólo se puede llevar a cabo un reconocimiento con el consentimiento expreso de la persona trabajadora, salvo tres supuestos tasados, y en los tres hace falta un informe previo de la representación de la plantilla antes de exceptuar la voluntariedad:
+
+- Que el reconocimiento sea imprescindible para evaluar los efectos de las condiciones de trabajo sobre la salud de la persona.
+- Que sirva para verificar si su estado de salud puede constituir un peligro para ella misma, para el resto de la plantilla o para otras personas relacionadas con la empresa: este es el supuesto que se invoca en hostelería con los manipuladores de alimentos, y el único de los tres que aparece en el día a día de un restaurante.
+- Que así lo establezca una disposición legal en relación con riesgos específicos o actividades de especial peligrosidad.
+
+Incluso dentro de estos tres supuestos hay un límite adicional: hay que optar por las pruebas que causen menos molestias a la persona y que sean proporcionales al riesgo que se quiere controlar, nunca por la prueba más exhaustiva disponible. Y aun en el caso excepcional, la empresa nunca recibe la información médica en sí: sólo las conclusiones de aptitud o no aptitud para el puesto, tal como fija el art. 22.4. Un manager que exige un reconocimiento médico fuera de estos tres supuestos, o que pretende ver el informe completo en lugar de la conclusión de aptitud, está fuera de la ley por partida doble.

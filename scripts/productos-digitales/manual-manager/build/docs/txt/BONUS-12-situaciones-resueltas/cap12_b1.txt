@@ -1,0 +1,26 @@
+### La situación
+
+En La Encina hay hechos documentados —fechados, con testigos y sin margen de interpretación— que encajan en una falta del cuadro del régimen disciplinario del ALEH VI: de sus 10 filas, dos tipifican faltas leves, dos graves y una muy grave, y la empresa, con el equipo de 12 personas delante, decide que corresponde el despido. La modificación del procedimiento está en vigor desde el 4 de septiembre de 2026, con 1.578 días de vigencia todavía por delante: no es una norma que se pueda ignorar por «reciente».
+
+### Qué no hacer
+
+- Entregar la carta directamente, sin la comunicación previa: desde el 4 de septiembre de 2026 ese paso ya no es opcional, y saltárselo convierte un despido bien fundado en uno con defecto de forma.
+- Redactar los hechos con adjetivos: «actitud inadecuada» no es un hecho, es una opinión, y una opinión no sostiene una falta tipificada.
+- Apartar a la persona del servicio sin más, como si fuera ya una sanción: si se la aparta durante el plazo de contestación, esos días son permiso retribuido, no un castigo anticipado.
+- Actuar el mismo día de los hechos y en caliente: se documenta primero, y la decisión llega después, con la calificación pensada.
+
+### Protocolo paso a paso
+
+- Comprobar que los hechos están documentados —fechas, testigos, soporte— y encajan en una falta tipificada del cuadro, no en una impresión de mal desempeño.
+- Informar por escrito de los hechos imputados y de su posible calificación jurídica, antes de la carta.
+- Dar el plazo de 2 días para contestar, salvo que no pueda pedirse razonablemente a la empresa que conceda esa posibilidad: es la única excepción de la norma.
+- Leer lo que conteste —o constatar que no ha contestado— y dejar constancia escrita, con fecha.
+- Decidir y entregar la carta, con hechos, fechas y calificación ya fijados desde la comunicación previa.
+
+### La norma que aplica
+
+Antes de entregar la carta de despido disciplinario, la empresa está obligada a informar por escrito de los hechos imputados y de su posible calificación jurídica, y a dar 2 días para contestar: es la audiencia previa del art. 41.3 del ALEH VI, en vigor desde el 4 de septiembre de 2026 y hasta el final de la vigencia pactada del acuerdo estatal —Resolución de la Dirección General de Trabajo de 25-08-2026, BOE-A-2026-18630, verificado el 4 de septiembre de 2026—. Trae una excepción, «a menos que no pueda pedirse razonablemente a la empresa que le conceda esta posibilidad», y una remisión: no sustituye las obligaciones del art. 55.1 del Estatuto de los Trabajadores (ET) para los colectivos con garantías reforzadas —representantes y afiliados—, se suma a ellas. Si se la aparta del servicio esos días, son permiso retribuido. Incorpora la STS 1250/2024, de 18 de noviembre, sobre el art. 7 del Convenio 158 de la OIT. Las indemnizaciones van con su artículo: el objetivo, 20 días por año con tope de 12 mensualidades, puesta a disposición simultánea a la carta y preaviso de 15 días; el improcedente, 33 días por año con tope de 24 mensualidades; y en contratos anteriores al 12 de febrero de 2012, 45 días por el tramo previo más 33 por el posterior, tope conjunto de 720 días (arts. 53.1, 56.1 y DT 11ª ET).
+
+### La herramienta y el guion
+
+La hoja «Régimen Disciplinario ALEH» del calendario de cumplimiento legal trae la tipificación completa de las 10 filas y la cuenta atrás de los 1.578 días de vigencia: es lo primero que hay que abrir antes de calificar cualquier hecho. La redacción final de la carta, con la calificación ya cerrada, es tarea de la asesoría laboral, no del manager (gerente/encargado): un error de forma ahí es el error que puede costar más que el despido en sí. Para la comunicación previa, la frase de apertura es literal: «Antes de tomar una decisión, tengo que comunicarte por escrito los hechos que se te imputan y su posible calificación, y darte dos días para que contestes si lo consideras oportuno». Y al cierre: «He recibido tu respuesta y la incorporo al expediente antes de decidir», o, si no la ha habido, «Dejo constancia de que no se ha recibido contestación en el plazo dado».

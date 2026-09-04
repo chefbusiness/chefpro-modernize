@@ -1,0 +1,24 @@
+### La situación
+
+El propietario de La Encina entra al despacho con una idea sencilla: subir la carta un 10 % de forma lineal, todos los platos igual. Delante está el cuadro de mando semanal cerrado a fin de año: prime cost del año, ponderado, 62,8 %, con food cost en 31,7 % y labor cost en 31,0 %; objetivo de prime cost en vigor, 65 %; ventas netas totales, 1.226.661 €; margen tras prime cost, 456.666 €. El sector explica por qué la conversación llega ahora: en 2025 la restauración española facturó un 3,1 % más y aun así perdió rentabilidad, con una caída del 0,9 % (Hostelería de España, Anuario 2025, vía Hostelería Digital). Facturar más y ganar menos es el problema que resuelve, con datos delante, un manager (gerente/encargado) que controla costes, no una subida a ciegas.
+
+### Qué no hacer
+
+- Decir que no a la subida sin poner encima el cuadro de mando: un «no» sin datos suena a resistencia al cambio, y el propietario tiene motivos para preguntar.
+- Aplicar el 10 % de forma lineal sin mirar plato a plato: una subida lineal trata igual al plato que deja mucho y al que deja poco.
+- Aceptar la subida y no volver a mirarla después: sin fecha de revisión, nadie sabe si ha movido el ticket medio, ha espantado cubiertos o no ha cambiado nada.
+
+### Protocolo paso a paso
+
+- Separar qué mitad del prime cost se ha movido: con food cost en 31,7 % y labor cost en 31,0 %, subir la carta sólo tiene sentido si ha subido el coste de producto. Si ha subido el coste de personal, la subida de precio no arregla ese lado.
+- Contrastar la estructura propia con la referencia española del sector —producto en torno al 30 % de la venta (28 % en comida y 34,5 % en bebida), personal del 30 al 35 % en servicio integrado y del 15 al 25 % en servicio parcial, alquiler hasta el 5 %, gastos generales del 17 % y un EBITDA que la fuente califica de sano entre el 10 y el 13 %— (CaixaBankLab x elBullifoundation, «Consumos y beneficios de un restaurante», 2017, revisado en 2022).
+- Mirar el ticket medio propio, 55,10 €, y el gasto medio por cubierto, 26,25 €, sobre 46.737 cubiertos, para ver si el problema es de precio o de mix. El ticket medio de toda la restauración española sobre pagos con tarjeta —21 €, datos de 2024 medidos de enero a septiembre y publicados el 16 de enero de 2025 (CaixaBank Research, Informe Sectorial Turismo)— no sirve de comparación directa: son datos de todo el sector, sin efectivo, de una sola entidad, y la fuente advierte que no se extrapola a alta cocina. Decide el cuadro de mando propio, no esa cifra externa.
+- Plantear la subida plato a plato, no de forma lineal, con fecha de revisión a cuatro semanas para comprobar el ticket medio y el mix antes de dar la decisión por buena.
+
+### La norma que aplica
+
+No existe ninguna norma que fije cuánto puede subir una carta ni cuándo: el precio de venta es libre. Lo que sí hay que respetar es la información de precios al cliente: el precio que figura en la carta —en sala (salón), en la puerta y en cualquier soporte digital— tiene que ser el precio real que se va a cobrar, y el cambio se traslada a todos los soportes visibles antes de servir el primer plato al nuevo precio. Aquí no hay obligación laboral: es información al consumidor, no negociación con el propietario.
+
+### La herramienta y el guion
+
+El diagnóstico sale del cuadro de mando semanal, donde viven el prime cost, el food cost y el labor cost del año, fila a fila. La decisión plato a plato —qué sube, qué se queda igual y qué se retira— vive en el escandallo y en la matriz de carta de la Guía Food Cost + Ingeniería de Menú. Para la conversación, el guion tiene cuatro movimientos: mostrar el cuadro de mando y nombrar qué mitad del prime cost se ha movido; contrastarlo con la referencia del sector sin mezclar los dos orígenes de datos; proponer la subida selectiva, con la frase «Subamos donde el escandallo dice que hay margen, no en toda la carta por igual»; y cerrar con la fecha: «Nos sentamos otra vez en cuatro semanas con el ticket medio y el mix delante, y decidimos si se mantiene o se ajusta».

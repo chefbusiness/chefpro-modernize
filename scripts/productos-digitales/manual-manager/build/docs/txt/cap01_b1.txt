@@ -1,0 +1,24 @@
+### Gerente, encargado, director, jefe de sala: qué dice el convenio y qué es uso de la casa
+
+En la puerta de cada restaurante cuelga un nombre distinto para el mismo trabajo; antes de entrar en criterio, conviene resolverlo. El acuerdo estatal vigente, el ALEH VI (BOE de 10 de marzo de 2023), no clasifica a las personas por el título que llevan impreso en la tarjeta: clasifica por áreas funcionales y grupos profesionales. Dentro de esa clasificación conviven dos categorías reales, con nombre propio en el texto del convenio: gerente de centro y jefe o jefa de restaurante o sala. Lo que no existe en el convenio son «encargado», «director» ni «administrador»: son denominaciones de uso, el nombre que cada casa —o cada cadena— decide ponerle al mismo puesto, y «administrador» es además el término que domina en Colombia, Chile y Perú para describir a quien lo ocupa. Nada de eso resta autoridad al cargo: la resta creer que ese nombre fija el sueldo, las funciones o el encuadramiento del contrato.
+
+Lo que sí fija esas tres cosas es el grupo profesional, que junto con la ocupación tiene que constar en el contrato escrito y en el recibo de salario, por mandato de los arts. 11.2, 15 y 16 del ALEH VI (BOE-A-2023-6344, con la modificación de BOE-A-2026-18630; verificado el 4 de septiembre de 2026). Y ese grupo profesional se traduce en una cifra muy distinta según la provincia: un cocinero de nivel III cobra entre 1.160 € y 1.284 € al mes en Madrid, cuyo convenio expiró el 31 de diciembre de 2025 y sigue en ultraactividad, frente a entre 1.607 € y 1.803 € en Barcelona, con convenio vigente entre 2025 y 2028 (convenio de hostelería de Madrid, BOCM de 6 de abril de 2024, y convenio interprovincial de Cataluña, DOGC de 23 de marzo de 2026; verificado el 4 de septiembre de 2026). El nombre en la puerta no cambia esa cifra: la cambia el convenio provincial.
+
+### El organigrama del ALEH VI: áreas funcionales y grupos profesionales
+
+El ALEH VI ordena todo el sector en seis áreas funcionales y tres grupos profesionales. El art. 15 relaciona los puestos de cada área «de forma meramente enunciativa y no excluyente», y el art. 16 los encuadra dentro de esos tres grupos. La que interesa a este manual es el área funcional tercera, la de restaurante, sala, bar y similares. Su grupo profesional primero lo forman cuatro puestos:
+
+- Jefe o jefa de restaurante o sala.
+- 2.º jefe o jefa de restaurante o sala.
+- Jefe o jefa de operaciones de catering.
+- Gerente de centro, encuadrado dentro del bloque de restauración moderna —comida rápida y cadenas—, no del de restaurante y bar.
+
+Fuera de esos cuatro puestos, el convenio no tipifica nada parecido a un «encargado de restaurante»: sus únicos encargados con categoría propia son los de economato, los de pisos y limpieza y los de mantenimiento. Tampoco tipifica «director» ni «administrador». Quien dirige una sala con cualquiera de esos dos nombres en la puerta queda encuadrado, a efectos de convenio, en alguno de los cuatro puestos de arriba o en el grupo profesional que le corresponda por su ocupación real, y eso —no el nombre de la tarjeta— es lo que figura en su contrato y en su recibo de salario. Las tablas salariales las fija el convenio provincial, no el estatal, localizable en el buscador REGCON del Ministerio de Trabajo.
+
+### Tu problema, su capítulo y su herramienta
+
+Este manual parte de un punto muy concreto: el local ya está abierto, el equipo ya está contratado y la carta ya está puesta. Aquí no se habla de licencia de actividad, de obra, de plan de negocio ni de inversión inicial: hay un negocio en marcha que exige decidir, hoy, qué hacer con lo que pasa en él. Por eso cada capítulo que sigue arranca de un problema real de gestión, no de la definición de un oficio ya conocido.
+
+El hilo que recorre todo el manual —y también el resto del pack— es un caso modelado, La Encina, un restaurante con servicio en mesa configurado en las herramientas como negocio de tipo Sala, con una plantilla de 12 personas repartida en 6 estaciones de trabajo y 42 horas de apertura al público a la semana. La Encina no es un cliente real: no tiene declaraciones de nadie detrás, y su única función es sostener los mismos números en cada libro del pack, para que las cifras cuadren de un capítulo a otro.
+
+La tabla que viene justo a continuación recoge, problema a problema, en qué capítulo de este manual se trata cada uno y con qué herramienta se resuelve, para que sepas en cinco minutos por dónde entrar según lo que te esté pasando hoy en tu restaurante.

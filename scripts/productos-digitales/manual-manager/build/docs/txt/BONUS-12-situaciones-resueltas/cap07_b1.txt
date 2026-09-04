@@ -1,0 +1,26 @@
+### La situación
+
+Un viernes por la tarde, una persona del equipo entrega una solicitud por escrito de reducción de jornada por guarda legal, con una concreción horaria que retira justo las horas de mayor entrada de la semana. El local abre 42 horas semanales, y la franja que queda sin cubrir sostiene la estación «Sala y servicio», hoy repartida entre 5 personas de las 12 del equipo, con una cobertura del 41,7 %. No es una petición que el manager (gerente/encargado) pueda valorar ni negociar a la baja: la ley no le deja margen de decisión. Lo único que sí depende de él es el cuadrante (horario del personal), a partir de esa misma tarde y antes de que arranque el servicio.
+
+### Qué no hacer
+
+Negar la reducción es la salida más cara: la petición no está sujeta a la discrecionalidad del manager, y negarla convierte una gestión de turnos en un conflicto que la empresa pierde de antemano. Condicionarla a que la persona acepte otro horario tampoco sirve: la concreción la elige quien reduce jornada, no quien dirige el local, y un canje encubierto es la misma negativa con otro nombre. Pedirle que «lo hable con sus compañeros» traslada a un igual una decisión del manager. Y contestar en el pase, con el servicio a punto de arrancar, convierte una respuesta que debía quedar por escrito en un episodio público.
+
+### Protocolo paso a paso
+
+- Acusar recibo por escrito ese mismo día, con fecha, sin valorar aún el cuadrante.
+- Comprobar que la concreción cae dentro de la jornada ordinaria: si es así, no hay negociación sobre el horario, solo sobre la cobertura.
+- Abrir la matriz de polivalencia y ver quién más sostiene «Sala y servicio».
+- Identificar quién puede subir de nivel en esa estación y en qué plazo.
+- Repartir la franja entre quienes ya la dominan y anotarlo en el cuadrante de la semana siguiente.
+- Responder con la fecha de efecto solo cuando la cobertura esté resuelta.
+
+### La norma que aplica
+
+Aquí conviven dos figuras distintas, y no confundirlas es la mitad del caso. En la reducción de jornada por guarda legal, la concreción horaria la elige la persona trabajadora, conforme al artículo 37.6 del Estatuto de los Trabajadores; en la adaptación de jornada por conciliación —otra figura, con otro trámite— el silencio de la empresa dentro del plazo equivale a conceder lo pedido, conforme al artículo 34.8. Ese es justo el tipo de error que evita la hoja de permisos y cómputo, que registra 10 figuras de ausencia con su régimen de pago: 6 retribuidas y 2 no retribuidas.
+
+Tres se prestan a confusión, verificadas el 4 de septiembre de 2026. El permiso parental —artículo 48 bis, letra o del artículo 45.1 y artículo 45.2 del Estatuto de los Trabajadores, más el artículo 177 de la Ley General de la Seguridad Social— dura 8 semanas no retribuidas, por suspensión del contrato; las 2 semanas de la letra c del artículo 48.4 —4 en monoparentalidad, redacción del RDL 9/2025— son parte del permiso por nacimiento y sí están retribuidas: tratarlas igual niega un derecho que hay que pagar. El permiso por fallecimiento dura 2 días, ampliables en 2 más con desplazamiento —nunca 5, cifra del accidente o enfermedad grave con hospitalización—, letras b y b bis del artículo 37.3 y artículo 37.9. Y las vacaciones son mínimo 30 días naturales al año, retribuidas, con calendario conocido con dos meses de antelación, artículo 38, todos del Estatuto de los Trabajadores.
+
+### La herramienta y el guion
+
+La hoja de permisos y cómputo comprueba, figura por figura, cuál aplica antes de contestar: ahí queda registrado qué se paga, qué no y qué plazo corre. La matriz de formación y polivalencia recompone la franja: enseña quién más sostiene cada estación y en qué plazo puede subir otra persona, de modo que el trabajo del manager pasa de «qué le contesto» a «cómo reorganizo el viernes». La respuesta, el mismo día en que ya está resuelta la cobertura, puede ser tan directa como esto: «Recibida tu solicitud con fecha de hoy. La concreción que propones está dentro de tu jornada ordinaria, así que se aplica tal cual la planteas; te confirmo mañana cómo queda cubierta la franja».

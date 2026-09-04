@@ -1,0 +1,27 @@
+### Ventas netas, consumo y food cost: qué entra y qué no entra
+
+Casi todos los errores de gestión de un restaurante empiezan en una definición, no en una decisión. Quien llama ticket medio al gasto por cubierto toma decisiones de carta con el número equivocado: indicadores de nombre parecido que miden cosas distintas, el hilo de este capítulo. El primer trío a separar: ventas netas, consumo de materia prima y food cost.
+
+Las ventas netas son la facturación del periodo sin el IVA repercutido ni las anulaciones de comanda; en La Encina, el año cerró con 1.226.661 € de ventas netas, base de los porcentajes del capítulo. El consumo de materia prima no son las compras del periodo. Al consumo entra:
+
+- el stock inicial de almacén y cámaras al empezar el periodo;
+- más las compras registradas dentro del periodo;
+- menos el stock final al cerrarlo.
+
+Confundir consumo con compras es el error más caro de los tres: si el almacén sube o baja de un mes a otro, la factura de proveedor ya no refleja lo que ha salido de cocina; un pedido grande antes de un puente infla el gasto sin subir el consumo real, y tirar de stock enseña un consumo que no se sostiene después. El consumo del año de La Encina fue de 389.464 €, numerador del food cost, nunca el total de facturas del periodo.
+
+El food cost del año, ponderado, cerró en el 31,7 %, de dividir ese consumo real entre las ventas netas del periodo: no es la media simple de los food cost de cada plato ni de cada semana, porque pesa más la referencia que más se vende. El de un evento flojo no dice nada por sí solo: sobre la compra manda el food cost ponderado ya cerrado.
+
+### Coste de personal: del bruto a lo que sale de la caja
+
+El coste de personal tampoco es la nómina (planilla) bruta de cada trabajador: es el bruto más la cotización a la Seguridad Social a cargo de la empresa, y quedarse en el bruto deja fuera casi un tercio del coste real de cada puesto. Ese desglose se ve más adelante en el manual: comparar puestos nunca es cosa del bruto, sino del coste-empresa completo que sale de caja cada mes. En La Encina, el coste de personal con Seguridad Social del año fue de 380.531 €, numerador del labor cost, igual que el consumo real —no las compras— lo es del food cost.
+
+El labor cost del año, ponderado, cerró en el 31,0 %. Sirve de referencia la Encuesta Anual de Coste Laboral, resultados por secciones de la CNAE-09 (INE, 2025): el coste laboral bruto por trabajador y año en hostelería es el más bajo de las 18 secciones de actividad, un 61 % de la media nacional —23.690,02 € frente a 38.748,94 € de media—, y los sueldos son también los más bajos de todas las secciones. Es un dato de bruto por trabajador, no de labor cost sobre ventas, pero explica el peso del personal en la cuenta pese a ser, en términos absolutos, de las partidas más bajas del país.
+
+### Prime cost y margen tras prime cost
+
+El prime cost suma el food cost y el labor cost del mismo periodo: en La Encina, ya con esa suma hecha en la herramienta, el año cerró con un food cost del 31,7 %, un labor cost del 31,0 % y un prime cost del 62,8 %, el indicador que dice si el negocio aguanta, al juntar en un número sus dos partidas variables más grandes. El margen tras prime cost del año fue de 456.666 €, y no es el beneficio: de ahí no ha salido el alquiler, los suministros, los seguros ni la amortización del equipo; es lo que queda para pagar todo lo demás, no lo que se lleva el propietario.
+
+Para situar el 62,8 % sirve una referencia externa, con dos cautelas. CaixaBankLab, con elBullifoundation, en «Consumos y beneficios de un restaurante» (2017, revisado en 2022), sitúa el producto en el 30 % de la venta —28 % en comida, 34,5 % en bebida—, el personal en el 30-35 % en servicio integrado y en el 15-25 % en parcial, el alquiler hasta el 5 %, los gastos generales en el 17 % y un EBITDA que llama sano en el 10-13 %. Cautela de vocabulario: la fuente habla de integrado y parcial, nunca de barra ni autoservicio; esa equivalencia no es suya. Cautela de aritmética: sus tramos —30, 32,5, 5 y 17— suman 15,5 %, no el 10-13 % que anuncia; el EBITDA se cita como afirmación suya, no como resultado recalculable.
+
+De esa estructura sale el criterio de la casa: un umbral del 65 % en servicio en mesa y del 55 % en barra o autoservicio no es cifra oficial española ni convención de software, sino un límite de esa referencia, presentado como criterio de la casa. Con un prime cost del 62,8 %, La Encina opera bajo el umbral de servicio en mesa: margen para aguantar una subida de precio de proveedor sin tocar la carta.
