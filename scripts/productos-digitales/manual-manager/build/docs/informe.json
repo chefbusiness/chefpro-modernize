@@ -1,0 +1,1849 @@
+{
+  "_meta": {
+    "pid": "manual-manager-restaurante",
+    "generado": "2026-09-05 00:42",
+    "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs",
+    "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/manual-manager-restaurante",
+    "modelo": "anthropic/claude-sonnet-4.6",
+    "research": "2026-08-29",
+    "research_ausente": false,
+    "erratas_reparadas": [],
+    "erratas_reparadas_n": 0
+  },
+  "documentos": {
+    "manual-manager-restaurante": {
+      "gates": {
+        "paginas_pdf": 77,
+        "paginas_prometidas": 75,
+        "palabras_md": 41615,
+        "palabras_pdf": 41235,
+        "palabras_docx": 39912,
+        "palabras_objetivo": 30000,
+        "capitulos": 20,
+        "tablas_md": 30,
+        "tablas_docx": 30,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 38861,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 40080,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Manual del Manager de Restaurante"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Manual del Manager de Restaurante",
+          "created": "2026-09-05 00:43:04"
+        },
+        "paridad_palabras_pct": 0.42,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 91,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/manual-manager-restaurante.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/manual-manager-restaurante.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/manual-manager-restaurante.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Qué es Exactamente un Manager de Restaurante (y para Quién es Este Manual)",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-14",
+            "MM-15"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Tipo de negocio con el que está configurado el pack",
+              "Sala",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B5"
+            ],
+            [
+              "Personas de la plantilla del caso",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Estaciones de trabajo del caso",
+              "6",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C26"
+            ],
+            [
+              "Horas de apertura al público de una semana completa",
+              "42",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B37"
+            ],
+            [
+              "Ventas netas del año del caso",
+              "1.226.661 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E57"
+            ],
+            [
+              "Cubiertos del año del caso",
+              "46.737",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!S57"
+            ],
+            [
+              "Objetivo de prime cost en vigor en el cuadro de mando",
+              "65 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B13"
+            ],
+            [
+              "Puntos de control de la auditoría interna de servicio",
+              "60",
+              "auditoria-interna-servicio.xlsx!Resumen por Área!B16"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Los Números que Gobiernan tu Turno: las Definiciones que Casi Nadie Distingue",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-41",
+            "MM-42",
+            "MM-47"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ventas netas totales del año",
+              "1.226.661 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E57"
+            ],
+            [
+              "Consumo de materia prima del año",
+              "389.464 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!I57"
+            ],
+            [
+              "Food cost del año, ponderado",
+              "31,7 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!J57"
+            ],
+            [
+              "Coste de personal con Seguridad Social del año",
+              "380.531 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!M57"
+            ],
+            [
+              "Labor cost del año, ponderado",
+              "31,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!N57"
+            ],
+            [
+              "Prime cost del año, ponderado",
+              "62,8 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O57"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "456.666 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R57"
+            ],
+            [
+              "Ticket medio del año",
+              "55,10 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!U57"
+            ],
+            [
+              "Gasto medio por cubierto del año",
+              "26,25 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!V57"
+            ],
+            [
+              "Ventas por hora trabajada del año",
+              "52,28 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!Z57"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "El Cuadro de Mando Semanal: por Qué la Semana y no el Mes",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-41",
+            "MM-44"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Prime cost del año, ponderado",
+              "62,8 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O57"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B13"
+            ],
+            [
+              "Semana ISO en la que se dispara el prime cost",
+              "33",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!A37"
+            ],
+            [
+              "Prime cost de esa semana",
+              "71,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O37"
+            ],
+            [
+              "Food cost de esa semana",
+              "36,9 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!J37"
+            ],
+            [
+              "Labor cost de esa semana",
+              "34,1 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!N37"
+            ],
+            [
+              "Ventas netas de esa semana",
+              "22.041 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E37"
+            ],
+            [
+              "Margen tras prime cost de esa semana",
+              "6.393 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R37"
+            ],
+            [
+              "Cubiertos por hora de apertura del año",
+              "21,5",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!X57"
+            ],
+            [
+              "Horas de apertura registradas en el año",
+              "2.177",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!W57"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Prime Cost y Coste de Personal: Dónde se Pierde el Margen",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-16",
+            "MM-17",
+            "MM-53",
+            "MM-41",
+            "MM-42",
+            "MM-57"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost del año, ponderado",
+              "31,7 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!J57"
+            ],
+            [
+              "Labor cost del año, ponderado",
+              "31,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!N57"
+            ],
+            [
+              "Prime cost del año, ponderado",
+              "62,8 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O57"
+            ],
+            [
+              "Coste de personal con Seguridad Social del año",
+              "380.531 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!M57"
+            ],
+            [
+              "Salarios brutos del año",
+              "273.910 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!K57"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "456.666 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R57"
+            ],
+            [
+              "Objetivo de food cost en vigor",
+              "30 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B11"
+            ],
+            [
+              "Objetivo de labor cost en vigor",
+              "33 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B12"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B13"
+            ],
+            [
+              "Seguridad Social a cargo de la empresa configurada en el libro",
+              "33 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B22"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "El Día del Manager: Apertura, Servicio, Cierre y Handover",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos de control de la auditoría interna",
+              "60",
+              "auditoria-interna-servicio.xlsx!Resumen por Área!B16"
+            ],
+            [
+              "Escala máxima de puntuación de la auditoría",
+              "5",
+              "auditoria-interna-servicio.xlsx!Auditoría!D75"
+            ],
+            [
+              "Umbral verde de la auditoría",
+              "4",
+              "auditoria-interna-servicio.xlsx!Auditoría!D76"
+            ],
+            [
+              "Puntuación ponderada de la primera visita",
+              "3,33",
+              "auditoria-interna-servicio.xlsx!Auditoría!E71"
+            ],
+            [
+              "Puntuación ponderada de la tercera visita",
+              "3,96",
+              "auditoria-interna-servicio.xlsx!Auditoría!I71"
+            ],
+            [
+              "Cumplimiento de la tercera visita",
+              "79,2 %",
+              "auditoria-interna-servicio.xlsx!Auditoría!I72"
+            ],
+            [
+              "Horas de apertura al público de una semana completa",
+              "42",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B37"
+            ],
+            [
+              "Cubiertos por hora de apertura del año",
+              "21,5",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!X57"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "La Caja y el Tique: Corte, Arqueo, Cierre — y lo que Viene",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-37",
+            "MM-39",
+            "MM-24",
+            "MM-25"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ventas netas totales del año",
+              "1.226.661 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E57"
+            ],
+            [
+              "Tickets del año",
+              "22.263",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!T57"
+            ],
+            [
+              "Ticket medio del año",
+              "55,10 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!U57"
+            ],
+            [
+              "Cubiertos del año",
+              "46.737",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!S57"
+            ],
+            [
+              "Gasto medio por cubierto del año",
+              "26,25 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!V57"
+            ],
+            [
+              "Quejas registradas en el trimestre",
+              "30",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D11"
+            ],
+            [
+              "Quejas por cobro incorrecto",
+              "2",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!C26"
+            ],
+            [
+              "Peso de las quejas por cobro incorrecto sobre el total",
+              "6,7 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D26"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Mandar sin Quemar al Equipo: Autoridad, Delegación y Cómo Defender un Cambio con Números",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-44"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Prime cost de la semana en la que se dispara",
+              "71,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O37"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B13"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "456.666 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R57"
+            ],
+            [
+              "Acuerdos registrados en el trimestre",
+              "25",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D46"
+            ],
+            [
+              "Acuerdos cerrados",
+              "15",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D47"
+            ],
+            [
+              "Acuerdos abiertos",
+              "10",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D49"
+            ],
+            [
+              "Acuerdos cerrados sobre el total",
+              "60 %",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D52"
+            ],
+            [
+              "Acuerdos cerrados dentro de plazo",
+              "84 %",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D53"
+            ],
+            [
+              "Personas del equipo con seguimiento individual",
+              "12",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Uno-a-uno!D30"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "El Convenio que te Aplica: ALEH VI, tu Provincia y lo que no se Negocia",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-14",
+            "MM-15",
+            "MM-11"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Normas en seguimiento en la hoja de estado normativo",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Estado Normativo!C21"
+            ],
+            [
+              "Normas con su ficha de investigación citada",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Estado Normativo!C22"
+            ],
+            [
+              "Filas del cuadro del régimen disciplinario",
+              "10",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E18"
+            ],
+            [
+              "Faltas leves tipificadas en el cuadro",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E19"
+            ],
+            [
+              "Faltas graves tipificadas en el cuadro",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E20"
+            ],
+            [
+              "Faltas muy graves tipificadas en el cuadro",
+              "1",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E21"
+            ],
+            [
+              "Días de vigencia que le quedan a la modificación del ALEH VI",
+              "1.578",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E25"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Contratar sin Fabricar un Indefinido por Accidente",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-09",
+            "MM-10",
+            "MM-11",
+            "MM-23"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas de la plantilla del caso",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Salarios brutos del año",
+              "273.910 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!K57"
+            ],
+            [
+              "Coste de personal con Seguridad Social del año",
+              "380.531 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!M57"
+            ],
+            [
+              "Puesto que se cubre en el ejemplo de selección del pack",
+              "Camarero/a de sala",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D4"
+            ],
+            [
+              "Encuadre de ese puesto en el ALEH VI",
+              "Área 3ª · Grupo II",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D5"
+            ],
+            [
+              "Jornada del puesto del ejemplo",
+              "40 h/semana, turno partido",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D6"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Selección con Criterio y los Primeros 30 Días",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-30",
+            "MM-43"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puesto del ejemplo de selección",
+              "Camarero/a de sala",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D4"
+            ],
+            [
+              "Umbral de recomendación configurado",
+              "3,5",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D7"
+            ],
+            [
+              "Competencias que pesa el scorecard",
+              "8",
+              "seleccion-scorecard-entrevista.xlsx!Comparativa de Candidatos!D6"
+            ],
+            [
+              "Candidatos evaluados",
+              "4",
+              "seleccion-scorecard-entrevista.xlsx!Comparativa de Candidatos!D14"
+            ],
+            [
+              "Mejor media ponderada",
+              "4,06",
+              "seleccion-scorecard-entrevista.xlsx!Comparativa de Candidatos!D16"
+            ],
+            [
+              "Distancia entre el primero y el segundo",
+              "0,06",
+              "seleccion-scorecard-entrevista.xlsx!Comparativa de Candidatos!D17"
+            ],
+            [
+              "Candidatos que alcanzan el umbral",
+              "2",
+              "seleccion-scorecard-entrevista.xlsx!Comparativa de Candidatos!D18"
+            ],
+            [
+              "Preguntas del guion de entrevista",
+              "24",
+              "seleccion-scorecard-entrevista.xlsx!Preguntas por Competencia!E34"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Jornada, Cuadrante y Registro de Jornada: Tres Documentos que no Son lo Mismo",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-01",
+            "MM-02",
+            "MM-03",
+            "MM-04",
+            "MM-05",
+            "MM-06",
+            "MM-07"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Jornada máxima legal de promedio",
+              "40",
+              "calendario-cumplimiento-legal.xlsx!Topes de Jornada!D19"
+            ],
+            [
+              "Horas semanales pactadas de promedio en el caso",
+              "40",
+              "calendario-cumplimiento-legal.xlsx!Topes de Jornada!D20"
+            ],
+            [
+              "Tope legal de horas extraordinarias al año por persona",
+              "80",
+              "calendario-cumplimiento-legal.xlsx!Topes de Jornada!D23"
+            ],
+            [
+              "Margen de horas extraordinarias que le queda al caso",
+              "80",
+              "calendario-cumplimiento-legal.xlsx!Topes de Jornada!D25"
+            ],
+            [
+              "Aviso cuando se supere este porcentaje del tope",
+              "80 %",
+              "calendario-cumplimiento-legal.xlsx!Topes de Jornada!D27"
+            ],
+            [
+              "Horas de apertura al público de una semana completa",
+              "42",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B37"
+            ],
+            [
+              "Horas de apertura registradas en el año",
+              "2.177",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B39"
+            ],
+            [
+              "Personas de la plantilla del caso",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Filas del cuadro del régimen disciplinario",
+              "10",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E18"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Permisos, Vacaciones y Conciliación sin Sustos",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-08",
+            "MM-26",
+            "MM-27",
+            "MM-54"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Figuras recogidas en la hoja de permisos",
+              "10",
+              "calendario-cumplimiento-legal.xlsx!Permisos y Cómputo!D18"
+            ],
+            [
+              "De ellas, retribuidas",
+              "6",
+              "calendario-cumplimiento-legal.xlsx!Permisos y Cómputo!D19"
+            ],
+            [
+              "De ellas, no retribuidas",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Permisos y Cómputo!D20"
+            ],
+            [
+              "Personas de la plantilla del caso",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Personas del equipo con seguimiento individual",
+              "12",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Uno-a-uno!D30"
+            ],
+            [
+              "Horas de apertura al público de una semana completa",
+              "42",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B37"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "Rotación, Absentismo y Polivalencia: Qué se Puede Medir de Verdad",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-42",
+            "MM-43",
+            "MM-56",
+            "MM-55",
+            "MM-48"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas registradas en la matriz",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Estaciones registradas",
+              "6",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C26"
+            ],
+            [
+              "Estaciones en riesgo de punto único de fallo",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C28"
+            ],
+            [
+              "Peso de las estaciones en riesgo sobre el total",
+              "16,7 %",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C31"
+            ],
+            [
+              "Personas que sostienen «Fríos y entrantes»",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!B13"
+            ],
+            [
+              "Cobertura de «Fríos y entrantes»",
+              "8,3 %",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!E13"
+            ],
+            [
+              "Coste directo de cubrir una baja",
+              "1.194,00 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B15"
+            ],
+            [
+              "Margen que no se gana mientras el equipo recupera el ritmo",
+              "1.881,87 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B22"
+            ],
+            [
+              "Impacto estimado total de la baja",
+              "3.075,87 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B28"
+            ],
+            [
+              "Acciones registradas en el plan de cross-training",
+              "8",
+              "matriz-formacion-polivalencia.xlsx!Plan de Cross-Training!C32"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "Evaluar, Corregir y, si Toca, Despedir",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-12",
+            "MM-13"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Filas del cuadro del régimen disciplinario",
+              "10",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E18"
+            ],
+            [
+              "Faltas leves tipificadas",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E19"
+            ],
+            [
+              "Faltas graves tipificadas",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E20"
+            ],
+            [
+              "Faltas muy graves tipificadas",
+              "1",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E21"
+            ],
+            [
+              "Días de vigencia que le quedan a la modificación del ALEH VI",
+              "1.578",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E25"
+            ],
+            [
+              "Personas de la plantilla del caso",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Acuerdos registrados en el trimestre",
+              "25",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D46"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "Lo que Obliga Aunque Seáis Tres: Igualdad, Acoso, Desconexión y PRL",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-18",
+            "MM-19",
+            "MM-20",
+            "MM-21",
+            "MM-28"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Documentos obligatorios registrados en el libro legal",
+              "12",
+              "calendario-cumplimiento-legal.xlsx!Documentación Obligatoria!D25"
+            ],
+            [
+              "Puntos de control registrados en el calendario",
+              "18",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D38"
+            ],
+            [
+              "Puntos con periodicidad fijada por una norma estatal",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D39"
+            ],
+            [
+              "Puntos cuya periodicidad es criterio de la casa",
+              "11",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D40"
+            ],
+            [
+              "Personas de la plantilla del caso",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Normas en seguimiento en la hoja de estado normativo",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Estado Normativo!C21"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "El Servicio: Estándares, Briefing y la Conversación Cocina-Sala",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos del guion de la reunión semanal",
+              "7",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Guion de Reunión Semanal!D18"
+            ],
+            [
+              "Duración total del guion",
+              "30",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Guion de Reunión Semanal!D19"
+            ],
+            [
+              "Duración objetivo de la reunión",
+              "30",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Guion de Reunión Semanal!D20"
+            ],
+            [
+              "Reuniones registradas en el trimestre",
+              "12",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Calendario de Reuniones!D32"
+            ],
+            [
+              "Minutos de reunión del trimestre",
+              "450",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Calendario de Reuniones!D38"
+            ],
+            [
+              "Horas de reunión del trimestre",
+              "7,5",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Calendario de Reuniones!D40"
+            ],
+            [
+              "Duración media de una reunión",
+              "37,5",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Calendario de Reuniones!D39"
+            ],
+            [
+              "Puntos de control de la auditoría interna",
+              "60",
+              "auditoria-interna-servicio.xlsx!Resumen por Área!B16"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "Quejas, Hojas de Reclamaciones y Reseñas: Tres Cosas Distintas",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-45",
+            "MM-40"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Quejas registradas en el trimestre",
+              "30",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D11"
+            ],
+            [
+              "Motivo de queja más repetido",
+              "Espera excesiva",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D12"
+            ],
+            [
+              "Quejas de ese motivo",
+              "10",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D13"
+            ],
+            [
+              "Tiempo medio hasta el cierre de una queja, en días",
+              "1,1",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D16"
+            ],
+            [
+              "Quejas cerradas dentro del plazo de la casa",
+              "28",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D17"
+            ],
+            [
+              "Cumplimiento del plazo de cierre",
+              "93,3 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D19"
+            ],
+            [
+              "Reclamaciones formales registradas",
+              "3",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D40"
+            ],
+            [
+              "Reclamaciones contestadas dentro de plazo",
+              "66,7 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D43"
+            ],
+            [
+              "Reseñas registradas",
+              "40",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D46"
+            ],
+            [
+              "Media de estrellas de las reseñas",
+              "4,08",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D47"
+            ]
+          ]
+        },
+        {
+          "n": 18,
+          "titulo": "Reservas, No-shows y Datos del Cliente",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-46"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Cubiertos del año",
+              "46.737",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!S57"
+            ],
+            [
+              "Tickets del año",
+              "22.263",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!T57"
+            ],
+            [
+              "Gasto medio por cubierto del año",
+              "26,25 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!V57"
+            ],
+            [
+              "Cubiertos por hora de apertura del año",
+              "21,5",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!X57"
+            ],
+            [
+              "Quejas por reserva no encontrada",
+              "2",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!C28"
+            ],
+            [
+              "Peso de esas quejas sobre el total",
+              "6,7 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D28"
+            ],
+            [
+              "Quejas por espera excesiva",
+              "10",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!C22"
+            ],
+            [
+              "Días medios hasta cerrar una queja por espera",
+              "1,1",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!E22"
+            ]
+          ]
+        },
+        {
+          "n": 19,
+          "titulo": "Seguridad Alimentaria y el Local: de lo que Responde el Manager",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-29",
+            "MM-31",
+            "MM-32",
+            "MM-33",
+            "MM-34",
+            "MM-35",
+            "MM-36",
+            "MM-38",
+            "MM-49",
+            "MM-50",
+            "MM-51",
+            "MM-52"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos de control registrados en el calendario",
+              "18",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D38"
+            ],
+            [
+              "Puntos con periodicidad fijada por una norma estatal",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D39"
+            ],
+            [
+              "Puntos cuya periodicidad es criterio de la casa",
+              "11",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D40"
+            ],
+            [
+              "Puntos vencidos en la fecha de corte",
+              "1",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D43"
+            ],
+            [
+              "Puntos en verde",
+              "75 %",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D47"
+            ],
+            [
+              "Documentos obligatorios registrados",
+              "12",
+              "calendario-cumplimiento-legal.xlsx!Documentación Obligatoria!D25"
+            ]
+          ]
+        },
+        {
+          "n": 20,
+          "titulo": "El Calendario del Manager, la Auditoría Interna y los 90 Días Siguientes",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-02",
+            "MM-22",
+            "MM-35",
+            "MM-40"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos de control registrados en el calendario",
+              "18",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D38"
+            ],
+            [
+              "Puntos con periodicidad fijada por una norma estatal",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D39"
+            ],
+            [
+              "Puntos cuya periodicidad es criterio de la casa",
+              "11",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D40"
+            ],
+            [
+              "Puntos vencidos en la fecha de corte",
+              "1",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D43"
+            ],
+            [
+              "Puntos en verde",
+              "75 %",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D47"
+            ],
+            [
+              "Puntuación ponderada de la primera visita de auditoría",
+              "3,33",
+              "auditoria-interna-servicio.xlsx!Auditoría!E71"
+            ],
+            [
+              "Puntuación ponderada de la tercera visita",
+              "3,96",
+              "auditoria-interna-servicio.xlsx!Auditoría!I71"
+            ],
+            [
+              "Cumplimiento de la tercera visita",
+              "79,2 %",
+              "auditoria-interna-servicio.xlsx!Auditoría!I72"
+            ],
+            [
+              "Decisiones registradas en el plan de 90 días",
+              "20",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Plan 90 Días!D36"
+            ],
+            [
+              "Semanas que dura el plan",
+              "13",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Plan 90 Días!D48"
+            ]
+          ]
+        }
+      ]
+    },
+    "BONUS-12-situaciones-resueltas": {
+      "gates": {
+        "paginas_pdf": 28,
+        "paginas_prometidas": 25,
+        "palabras_md": 11714,
+        "palabras_pdf": 11530,
+        "palabras_docx": 11043,
+        "palabras_objetivo": 7500,
+        "capitulos": 12,
+        "tablas_md": 12,
+        "tablas_docx": 12,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 10615,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 11110,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "12 Situaciones Resueltas del Manager de Restaurante"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "12 Situaciones Resueltas del Manager de Restaurante",
+          "created": "2026-09-05 00:43:09"
+        },
+        "paridad_palabras_pct": 0.6,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 63,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/BONUS-12-situaciones-resueltas.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/BONUS-12-situaciones-resueltas.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/b83df144-e3f0-406e-82e5-6c3b34c1c87a/scratchpad/docs/BONUS-12-situaciones-resueltas.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Una Baja a Dos Horas del Servicio del Viernes",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas del equipo",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Estaciones de trabajo",
+              "6",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C26"
+            ],
+            [
+              "Estaciones en riesgo de punto único de fallo",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C28"
+            ],
+            [
+              "Personas que sostienen «Fríos y entrantes»",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!B13"
+            ],
+            [
+              "Personas que pueden enseñar «Fríos y entrantes»",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C13"
+            ],
+            [
+              "Cobertura de «Fríos y entrantes»",
+              "8,3 %",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!E13"
+            ],
+            [
+              "Cobertura de «Pase y caliente»",
+              "33,3 %",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!E12"
+            ],
+            [
+              "Impacto estimado total de una baja",
+              "3.075,87 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B28"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "La Caja Descuadra 40 Euros Tres Días Seguidos",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ticket medio del año",
+              "55,10 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!U57"
+            ],
+            [
+              "Tickets del año",
+              "22.263",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!T57"
+            ],
+            [
+              "Ventas netas totales del año",
+              "1.226.661 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E57"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "456.666 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R57"
+            ],
+            [
+              "Quejas por cobro incorrecto en el trimestre",
+              "2",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!C26"
+            ],
+            [
+              "Peso de esas quejas sobre el total",
+              "6,7 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D26"
+            ],
+            [
+              "Quejas registradas en el trimestre",
+              "30",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D11"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Un Cliente Pide la Hoja de Reclamaciones",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-40"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Plazo legal de respuesta en Cataluña, en días",
+              "28",
+              "quejas-reclamaciones-resenas.xlsx!Parámetros!C15"
+            ],
+            [
+              "Plazo legal de respuesta en Andalucía, en días",
+              "10",
+              "quejas-reclamaciones-resenas.xlsx!Parámetros!C16"
+            ],
+            [
+              "Reclamaciones formales registradas",
+              "3",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D40"
+            ],
+            [
+              "Contestadas dentro de plazo",
+              "2",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D41"
+            ],
+            [
+              "Contestadas fuera de plazo",
+              "1",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D42"
+            ],
+            [
+              "Días transcurridos de la reclamación que se pasó de plazo",
+              "39",
+              "quejas-reclamaciones-resenas.xlsx!Reclamaciones Formales!F6"
+            ],
+            [
+              "Plazo aplicable a esa reclamación, en días",
+              "28",
+              "quejas-reclamaciones-resenas.xlsx!Reclamaciones Formales!G6"
+            ],
+            [
+              "¿Se contestó dentro de plazo?",
+              "No",
+              "quejas-reclamaciones-resenas.xlsx!Reclamaciones Formales!I6"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Una Reseña de Una Estrella Acusa al Local de una Intoxicación",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-45",
+            "MM-29"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Reseñas registradas",
+              "40",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D46"
+            ],
+            [
+              "Media de estrellas",
+              "4,08",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D47"
+            ],
+            [
+              "Reseñas respondidas",
+              "30",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D48"
+            ],
+            [
+              "Porcentaje de reseñas respondidas",
+              "75,0 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D49"
+            ],
+            [
+              "Objetivo de reseñas respondidas de la casa",
+              "90 %",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D6"
+            ],
+            [
+              "Objetivo de media de estrellas de la casa",
+              "4,3",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!D7"
+            ],
+            [
+              "Quejas por producto en mal estado en el trimestre",
+              "1",
+              "quejas-reclamaciones-resenas.xlsx!Resumen!C31"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Un Camarero Lleva 19 Meses Encadenando Contratos Temporales",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-09",
+            "MM-10",
+            "MM-11",
+            "MM-23"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas del equipo",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Salarios brutos del año",
+              "273.910 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!K57"
+            ],
+            [
+              "Coste de personal con Seguridad Social del año",
+              "380.531 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!M57"
+            ],
+            [
+              "Labor cost del año",
+              "31,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!N57"
+            ],
+            [
+              "Puesto del ejemplo de selección del pack",
+              "Camarero/a de sala",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D4"
+            ],
+            [
+              "Encuadre de ese puesto en el ALEH VI",
+              "Área 3ª · Grupo II",
+              "seleccion-scorecard-entrevista.xlsx!Scorecard!D5"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "La Semana Cierra con un Prime Cost del 71 Por Ciento",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-41"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Semana ISO en la que se dispara el prime cost",
+              "33",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!A37"
+            ],
+            [
+              "Prime cost de esa semana",
+              "71,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O37"
+            ],
+            [
+              "Food cost de esa semana",
+              "36,9 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!J37"
+            ],
+            [
+              "Labor cost de esa semana",
+              "34,1 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!N37"
+            ],
+            [
+              "Ventas netas de esa semana",
+              "22.041 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E37"
+            ],
+            [
+              "Margen tras prime cost de esa semana",
+              "6.393 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R37"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B13"
+            ],
+            [
+              "Objetivo de food cost en vigor",
+              "30 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B11"
+            ],
+            [
+              "Objetivo de labor cost en vigor",
+              "33 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B12"
+            ],
+            [
+              "Prime cost del año, ponderado",
+              "62,8 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O57"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Una Reducción de Jornada por Guarda Legal Justo en el Viernes Noche",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-26",
+            "MM-27",
+            "MM-08"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Figuras recogidas en la hoja de permisos",
+              "10",
+              "calendario-cumplimiento-legal.xlsx!Permisos y Cómputo!D18"
+            ],
+            [
+              "De ellas, retribuidas",
+              "6",
+              "calendario-cumplimiento-legal.xlsx!Permisos y Cómputo!D19"
+            ],
+            [
+              "De ellas, no retribuidas",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Permisos y Cómputo!D20"
+            ],
+            [
+              "Horas de apertura al público de una semana completa",
+              "42",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B37"
+            ],
+            [
+              "Personas que sostienen «Sala y servicio»",
+              "5",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!B16"
+            ],
+            [
+              "Cobertura de «Sala y servicio»",
+              "41,7 %",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!E16"
+            ],
+            [
+              "Personas del equipo",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Se Presenta una Inspección de Sanidad sin Avisar",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-29",
+            "MM-31",
+            "MM-32",
+            "MM-33",
+            "MM-34",
+            "MM-35"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Documentos obligatorios registrados",
+              "12",
+              "calendario-cumplimiento-legal.xlsx!Documentación Obligatoria!D25"
+            ],
+            [
+              "Puntos de control registrados en el calendario",
+              "18",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D38"
+            ],
+            [
+              "Puntos vencidos en la fecha de corte",
+              "1",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D43"
+            ],
+            [
+              "Puntos en verde",
+              "75 %",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D47"
+            ],
+            [
+              "Puntuación ponderada de la última auditoría interna",
+              "3,96",
+              "auditoria-interna-servicio.xlsx!Auditoría!I71"
+            ],
+            [
+              "Cumplimiento de la última auditoría interna",
+              "79,2 %",
+              "auditoria-interna-servicio.xlsx!Auditoría!I72"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Una Empleada Comunica una Situación de Acoso",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-19",
+            "MM-20",
+            "MM-22"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Documentos obligatorios registrados",
+              "12",
+              "calendario-cumplimiento-legal.xlsx!Documentación Obligatoria!D25"
+            ],
+            [
+              "Puntos con periodicidad fijada por una norma estatal",
+              "7",
+              "calendario-cumplimiento-legal.xlsx!Calendario y Vencimientos!D39"
+            ],
+            [
+              "Personas del equipo",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ],
+            [
+              "Personas del equipo con seguimiento individual",
+              "12",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Uno-a-uno!D30"
+            ],
+            [
+              "Acuerdos registrados en el trimestre",
+              "25",
+              "reuniones-acuerdos-plan-90-dias.xlsx!Actas y Acuerdos!D46"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "El Cocinero Clave se Va y Sólo Él Sabe Hacer la Partida Fría",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-43"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas que sostienen «Fríos y entrantes»",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!B13"
+            ],
+            [
+              "Personas que pueden enseñar «Fríos y entrantes»",
+              "1",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C13"
+            ],
+            [
+              "Cobertura de «Fríos y entrantes»",
+              "8,3 %",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!E13"
+            ],
+            [
+              "Alerta que devuelve la hoja para esa estación",
+              "RIESGO: punto único de fallo, solo 1 persona puede sostener esta estación",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!F13"
+            ],
+            [
+              "Coste directo de cubrir la baja",
+              "1.194,00 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B15"
+            ],
+            [
+              "Margen que no se gana mientras el equipo recupera el ritmo",
+              "1.881,87 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B22"
+            ],
+            [
+              "Impacto estimado total de la baja",
+              "3.075,87 €",
+              "matriz-formacion-polivalencia.xlsx!Coste de una Baja!B28"
+            ],
+            [
+              "Acciones registradas en el plan de cross-training",
+              "8",
+              "matriz-formacion-polivalencia.xlsx!Plan de Cross-Training!C32"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "El Propietario Quiere Subir la Carta un 10 Por Ciento y Tú Tienes los Números",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-41",
+            "MM-44",
+            "MM-47"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Prime cost del año, ponderado",
+              "62,8 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!O57"
+            ],
+            [
+              "Food cost del año, ponderado",
+              "31,7 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!J57"
+            ],
+            [
+              "Labor cost del año, ponderado",
+              "31,0 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!N57"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-semanal-manager.xlsx!Parámetros!B13"
+            ],
+            [
+              "Ventas netas totales del año",
+              "1.226.661 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!E57"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "456.666 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!R57"
+            ],
+            [
+              "Ticket medio del año",
+              "55,10 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!U57"
+            ],
+            [
+              "Gasto medio por cubierto del año",
+              "26,25 €",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!V57"
+            ],
+            [
+              "Cubiertos del año",
+              "46.737",
+              "cuadro-de-mando-semanal-manager.xlsx!Semana!S57"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Hay que Despedir por Causas Disciplinarias",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-12",
+            "MM-13"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Filas del cuadro del régimen disciplinario",
+              "10",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E18"
+            ],
+            [
+              "Faltas leves tipificadas",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E19"
+            ],
+            [
+              "Faltas graves tipificadas",
+              "2",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E20"
+            ],
+            [
+              "Faltas muy graves tipificadas",
+              "1",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E21"
+            ],
+            [
+              "Días de vigencia que le quedan a la modificación del ALEH VI",
+              "1.578",
+              "calendario-cumplimiento-legal.xlsx!Régimen Disciplinario ALEH!E25"
+            ],
+            [
+              "Personas del equipo",
+              "12",
+              "matriz-formacion-polivalencia.xlsx!Cobertura por Estación!C27"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

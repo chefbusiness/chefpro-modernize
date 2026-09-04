@@ -2968,6 +2968,12 @@ BONUS = [
 # añade el vocabulario propio de este manual (laboral, sanitario y de sala).
 # --------------------------------------------------------------------------
 _ERRATAS_OK = (
+    # 2026-09-05: falsos positivos del léxico sobre el texto real del manual (todas correctas en
+    # contexto; el reparador convertía «cantó» en «cuánto» y «ocurrió» en «ocurrido»).
+    'actas', 'canta', 'cantó', 'canto', 'atendió', 'atendio', 'desapareció', 'desaparecio', 'rendía', 'rendia',
+    'alegar', 'anular', 'auditado', 'califica', 'cometido', 'contó', 'conto', 'digan', 'emitió', 'emitio',
+    'escribirá', 'escribira', 'fisco', 'libren', 'manía', 'mania', 'ofreció', 'ofrecio', 'proporcionales',
+    'vicio', 'ocurrió', 'ocurrio', 'acusa', 'acusando', 'señalado', 'senalado',
     # Heredadas de la Guía Food Cost (2026-09-04)
     'esima', 'podar', 'tiraje', 'trasladado', 'anado', 'añado', 'arrancado',
     'coincidan', 'cumplio', 'cumplió', 'dependio', 'dependió', 'ensanchado',

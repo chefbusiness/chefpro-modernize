@@ -24,7 +24,7 @@
 //  - D22: la landing dice en la PRIMERA pantalla y en la FAQ que el marco legal
 //    explicado es el español y que los parámetros viven en casillas editables.
 //  - «manager (gerente/encargado)» en la primera mención (hero.description).
-//  - `__PAGINAS__` y `__PAGINAS_BONUS__` son TOKENS: se sustituyen por las páginas
+//  - `77` y `28` son TOKENS: se sustituyen por las páginas
 //    MEDIDAS con PyMuPDF cuando el PDF esté construido (D17). NO publicar con el token.
 import type { GuiaData } from '../guias/types';
 
@@ -48,11 +48,11 @@ const data: GuiaData = {
     subtitleLine: 'Operaciones, personas, números, servicio y ley — el criterio del día a día, verificado contra el BOE',
     description: 'Un manager (gerente/encargado) no se atasca por no tener plantillas: se atasca por no saber qué decidir con lo que sale de ellas. Este manual es la capa que falta: qué mirar cada lunes, qué firmar, qué se puede exigir a alguien y qué no, y qué hacer cuando el viernes se cae una persona a dos horas del servicio.',
     checkItems: [
-      'Manual completo PDF + DOCX editable (20 capítulos, __PAGINAS__ páginas)',
+      'Manual completo PDF + DOCX editable (20 capítulos, 77 páginas)',
       '7 herramientas Excel con fórmulas vivas: cuadro de mando semanal, matriz de polivalencia, quejas y reseñas, scorecard de selección, calendario de cumplimiento legal, reuniones con plan de 90 días y auditoría interna de servicio',
       'Verificado contra el BOE el 4 de septiembre de 2026, incluida la modificación del convenio estatal de hostelería publicada ese día',
       'El marco legal explicado es el español, con norma, artículo y enlace citados; los parámetros viven en casillas editables para adaptarlos a tu país',
-      'Bonus: 12 situaciones resueltas (__PAGINAS_BONUS__ páginas)',
+      'Bonus: 12 situaciones resueltas (28 páginas)',
     ],
     ctaLabel: 'COMPRAR MANUAL — 55 EUR',
     avatarAltPrefix: 'Professional',
@@ -173,12 +173,12 @@ const data: GuiaData = {
     heading: 'Deja de Apagar Fuegos y Empieza a Dirigir',
     subtitle: 'El criterio, las herramientas y los casos resueltos para llevar el restaurante con los números y la ley de tu lado.',
     items: [
-      'Manual completo PDF + DOCX (20 capítulos, __PAGINAS__ páginas)',
+      'Manual completo PDF + DOCX (20 capítulos, 77 páginas)',
       '7 herramientas Excel con fórmulas vivas',
       'Cuadro de mando semanal con prime cost y KPI operativos',
       'Calendario de cumplimiento legal con topes de jornada, permisos y régimen disciplinario',
       'Matriz de polivalencia, scorecard de selección, quejas y reseñas y auditoría de servicio',
-      'Bonus: 12 situaciones resueltas (__PAGINAS_BONUS__ páginas)',
+      'Bonus: 12 situaciones resueltas (28 páginas)',
     ],
     ctaLabel: 'SÍ, QUIERO EL MANUAL — 55 EUR',
   },
