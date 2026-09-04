@@ -1,15 +1,15 @@
 ---
-// /guia-food-cost-ingenieria-menu — LÍNEA GUÍAS, producto 45 (2026-09-03).
+// /manual-manager-restaurante — LÍNEA MANUALES OPERATIVOS, producto 46 (2026-09-04).
 // Thin wrapper: pasa el objeto data al template GuiaLandingPage y el SEO a BaseLayout.
 //
-// SOLO ES: producto de fiscalidad española y sin variantes de idioma → locales={['es']}
+// SOLO ES: producto de normativa española y sin variantes de idioma → locales={['es']}
 // (BaseLayout emite hreflang es + x-default y nada más). Canonical:
-// https://aichef.pro/guia-food-cost-ingenieria-menu. Patrón calcado de
-// guia-restaurante-gastronomico.astro; a diferencia de las 8 guías anteriores, esta
-// landing NACE en Astro (no hay página SPA de la que portarla).
+// https://aichef.pro/manual-manager-restaurante. Patrón calcado de
+// guia-food-cost-ingenieria-menu.astro; el data vive en productos/manuales/ (carpeta
+// nueva de la línea, D20) pero reutiliza el contrato GuiaData y su template.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GuiaLandingPage from '../components/pages/GuiaLandingPage.astro';
-import data from '../data/productos/guias/guia-food-cost-ingenieria-menu';
+import data from '../data/productos/manuales/manual-manager-restaurante';
 
 const lang = 'es';
 
@@ -20,7 +20,7 @@ const lang = 'es';
 // (mensaje de soporte prerellenado, bottom-20 en móvil por la barra sticky). Sin
 // esto saldría también el global de BaseLayout y serían DOS superpuestos
 // (whatsapp-gate.py exige exactamente 1 por página).
-const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GUIA_FOOD_COST || '#comprar';
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_MANUAL_MANAGER || '#comprar';
 ---
 
 <BaseLayout

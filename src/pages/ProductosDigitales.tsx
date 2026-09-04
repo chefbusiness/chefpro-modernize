@@ -4,7 +4,7 @@ import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
-  ArrowRight, BookOpen, Calculator, FileSpreadsheet, Star, Check, Clock,
+  ArrowRight, BookOpen, BriefcaseBusiness, Calculator, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, Users, Truck, Package, TrendingUp,
   ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid,
 } from 'lucide-react';
@@ -118,6 +118,23 @@ const products = [
     badge: '✨ Nuevo',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
     tags: ['pdf', 'excel', 'plantillas', 'guias', 'costes', 'gestion', 'restaurante', 'bar', 'pasteleria', 'dark-kitchen', 'hotel', 'catering'],
+  },
+  {
+    name: 'Manual del Manager de Restaurante',
+    slug: '/manual-manager-restaurante',
+    price: '€55',
+    description: 'Para quien ya dirige el turno: operaciones, personas, números, servicio y cumplimiento legal español verificado contra el BOE. 20 capítulos + 7 Excel con fórmulas vivas.',
+    features: [
+      '20 capítulos + 7 herramientas Excel',
+      'Cuadro de mando semanal con prime cost y KPI operativos',
+      'Jornada, permisos y régimen disciplinario con norma y fecha',
+      'Bonus: 12 situaciones resueltas',
+    ],
+    icon: BriefcaseBusiness,
+    image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'restaurante', 'bar', 'cafeteria', 'hotel', 'catering'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -908,7 +925,6 @@ const comingSoon = [
   { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
   { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },
-  { icon: Coffee, name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Julio 2026' },
 ];
 
 const PRODUCTS_PER_PAGE = 12;
@@ -983,7 +999,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 8, "url": "https://aichef.pro/kit-gestion-personal", "name": "Kit Gestión de Personal y Turnos" },
               { "@type": "ListItem", "position": 9, "url": "https://aichef.pro/kit-tareas", "name": "Tareas Recurrentes: Restaurante Casual" },
               { "@type": "ListItem", "position": 10, "url": "https://aichef.pro/kit-tareas-hotel", "name": "Tareas Recurrentes: Hotel Completo" },
-              { "@type": "ListItem", "position": 11, "url": "https://aichef.pro/guia-food-cost-ingenieria-menu", "name": "Guía Food Cost + Ingeniería de Menú" }
+              { "@type": "ListItem", "position": 11, "url": "https://aichef.pro/guia-food-cost-ingenieria-menu", "name": "Guía Food Cost + Ingeniería de Menú" },
+              { "@type": "ListItem", "position": 12, "url": "https://aichef.pro/manual-manager-restaurante", "name": "Manual del Manager de Restaurante" }
             ]
           }
         })}</script>

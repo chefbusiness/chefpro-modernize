@@ -158,6 +158,13 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso a la <strong>Guía Food Cost + Ingeniería de Menú</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX, 8 herramientas Excel y el bonus de ejercicios:',
     emailCta: 'Acceder a mi Guía',
   },
+  'manual-manager-restaurante': {
+    accessPath: '/manual-manager-restaurante-access',
+    emailSubject: 'Tu acceso al Manual del Manager de Restaurante',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Manual del Manager de Restaurante</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el manual PDF + DOCX, 7 herramientas Excel y el bonus de 12 situaciones resueltas:',
+    emailCta: 'Acceder a mi Manual',
+  },
   'guia-restaurante-casual': {
     accessPath: '/guia-restaurante-casual-access',
     emailSubject: 'Tu acceso a la Guía: Restaurante Casual 80 Plazas',

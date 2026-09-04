@@ -158,6 +158,8 @@ import GuiaRestauranteGastronomicoAccessGate from "./pages/GuiaRestauranteGastro
 import GuiaRestauranteGastronomicoDashboard from "./pages/GuiaRestauranteGastronomicoDashboard";
 import GuiaFoodCostAccessGate from "./pages/GuiaFoodCostAccessGate";
 import GuiaFoodCostDashboard from "./pages/GuiaFoodCostDashboard";
+import ManualManagerAccessGate from "./pages/ManualManagerAccessGate";
+import ManualManagerDashboard from "./pages/ManualManagerDashboard";
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
@@ -854,6 +856,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-food-cost-ingenieria-menu-jwt" redirectTo="/guia-food-cost-ingenieria-menu">
                   <GuiaFoodCostDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Manual del Manager de Restaurante — landing NATIVA en Astro
+                (astro-site/src/pages/manual-manager-restaurante.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/manual-manager-restaurante-access" element={<ManualManagerAccessGate />} />
+            <Route
+              path="/manual-manager-restaurante-library"
+              element={
+                <ProtectedRoute storageKey="manual-manager-restaurante-jwt" redirectTo="/manual-manager-restaurante">
+                  <ManualManagerDashboard />
                 </ProtectedRoute>
               }
             />

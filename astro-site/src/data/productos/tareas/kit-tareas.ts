@@ -394,6 +394,7 @@ const data: KitTareasData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
+    { href: '/manual-manager-restaurante', label: 'Manual del Manager de Restaurante' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 

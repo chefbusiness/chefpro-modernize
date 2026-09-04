@@ -97,6 +97,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'manual-manager-restaurante': {
+    version: '1.0',
+    updated: '2026-09-04',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-09-04',
+        title: 'Lanzamiento',
+        changes: [
+          'Manual completo en PDF y en DOCX editable: 20 capítulos de criterio para dirigir un restaurante o un turno — operación del día, personas, números, servicio y cumplimiento legal.',
+          '7 herramientas Excel con fórmulas vivas: cuadro de mando semanal, matriz de formación y polivalencia, quejas y reseñas, scorecard de selección, calendario de cumplimiento legal, reuniones con plan de 90 días y auditoría interna de servicio.',
+          'Bloque normativo verificado contra el BOE el 4 de septiembre de 2026, incluida la modificación del convenio estatal de hostelería publicada ese mismo día. Cada tabla legal lleva al pie norma, enlace y fecha de verificación.',
+          'Los datos normativos (tipos de cotización, topes, plazos y periodicidades) nunca viven dentro de una fórmula: van en casillas editables con su nota y su fecha, y hay una hoja de estado normativo con fecha de corte.',
+          'Bonus: 12 situaciones resueltas del manager, cada una con qué NO hacer, protocolo, norma aplicable, herramienta del pack y el guion literal de la conversación cuando la hay.',
+        ],
+      },
+    ],
+  },
   'guia-food-cost-ingenieria-menu': {
     version: '1.0',
     updated: '2026-09-03',

@@ -308,6 +308,7 @@ const data: KitExcelData = {
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
+    { href: '/manual-manager-restaurante', label: 'Manual del Manager de Restaurante' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',

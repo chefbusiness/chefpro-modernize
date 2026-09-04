@@ -1,0 +1,18 @@
+---
+// Fase 5 — dashboard post-pago de Manual del Manager de Restaurante (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de ManualManagerDashboard.tsx (extraído por el generador).
+// whatsapp={false}: el dashboard monta su PROPIO WhatsAppProductSupport (React,
+// mensaje de soporte post-compra prerellenado). Sin esto saldría también el botón
+// global que BaseLayout pinta desde 2026-09-03 y se verían DOS superpuestos.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import ManualManagerLibraryIsland from '../islands/library/ManualManagerLibraryIsland';
+---
+
+<BaseLayout title="Manual del Manager de Restaurante — Dashboard | AI Chef Pro" noindex whatsapp={false}>
+  <FunctionsOriginPatch />
+  <ManualManagerLibraryIsland client:only="react" />
+</BaseLayout>
