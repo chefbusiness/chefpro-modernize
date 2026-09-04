@@ -999,8 +999,8 @@ def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
                   guia, es_ultimo):
     partes = []
     partes.append(
-        f'Escribe un tramo del capítulo {cap["n"]} — «{cap["titulo"]}» de la '
-        f'{guia.get("tipo_doc", "guía")} profesional «{guia["titulo"]}» ({guia["subtitulo"]}).')
+        f'Escribe un tramo del capítulo {cap["n"]} — «{cap["titulo"]}» '
+        f'{guia.get("tipo_doc_art", "de la guía")} profesional «{guia["titulo"]}» ({guia["subtitulo"]}).')
     partes.append(f'OBJETIVO DEL CAPÍTULO: {cap["objetivo"]}')
     partes.append(
         'ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado '
@@ -1036,7 +1036,7 @@ def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
             'taller. Tampoco escribas tu propio razonamiento.')
     if cap.get('prohibido'):
         partes.append('LO QUE NO DEBES DECIR (son errores reales de la edición '
-                      f'anterior de esta {guia.get("tipo_doc", "guía")} y no se pueden repetir):\n'
+                      f'anterior de {guia.get("tipo_doc_dem", "esta guía")} y no se pueden repetir):\n'
                       + '\n'.join(f'  - {p}' for p in cap['prohibido']))
     partes.append(
         'FORMATO: empieza directamente por el primer «### ». No pongas título '
