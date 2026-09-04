@@ -1,0 +1,27 @@
+### El enunciado y los datos
+
+Un mes de carta se cierra con cuatro datos que hay que tener sobre la mesa antes de hablar de food cost: el inventario valorado al empezar el periodo (el stock inicial, el que queda tras el recuento físico del cierre anterior), las compras que han entrado por factura a lo largo del mes, el inventario valorado al terminar (el stock final, tras el recuento de ese mismo mes) y las ventas netas facturadas en esas mismas fechas, sin IVA y sin propinas. Ninguno de los cuatro sustituye a otro: comprar no es lo mismo que consumir.
+
+La tabla siguiente recorre esa cuenta mes a mes. En enero, el consumo de materia prima cerró en 28.400 €, sobre unas ventas netas de 89.600 €, con un food cost de 31,7 %. Llevado a los doce meses del año, las compras acumuladas fueron 396.100 €, el consumo real acumulado 395.400 €, las ventas netas del año 1.232.200 € y el food cost del año 32,1 %, frente al food cost objetivo del cuadro de mando, fijado en 30 %. El ejercicio consiste en calcular el consumo real y compararlo con lo que dicen las compras solas.
+
+### La resolución, paso a paso
+
+La fórmula no cambia de un mes a otro: consumo es igual a stock inicial más compras menos stock final. Se aplica en tres movimientos.
+
+- Se parte del inventario valorado con el que se cerró el mes anterior, que hace de stock inicial de este.
+- Se suman las compras registradas en el periodo, tomadas de la factura de cada proveedor, nunca del albarán de reparto.
+- Se resta el inventario valorado tras el recuento físico de cierre de este mes, el stock final.
+
+Lo que queda de esa resta es el consumo real de materia prima del periodo, el que de verdad ha pasado por cocina y por barra. El food cost sale de dividir ese consumo entre las ventas netas del mismo periodo.
+
+Aplicado a enero, la secuencia entrega el consumo de 28.400 € ya citado, y ese consumo entre las ventas netas de 89.600 € da el food cost de 31,7 %. La misma mecánica, sostenida los doce meses, deja el consumo real del año en 395.400 € sobre unas compras acumuladas de 396.100 €: dos cifras muy próximas, pero no la misma, y la diferencia entre ellas es justamente lo que ha cambiado de valor el almacén en ese tramo.
+
+### Cómo se lee el resultado
+
+El error habitual es dar por bueno el gasto en compras como si fuera el consumo, porque es el número que llega antes: la factura del proveedor está en cuanto se paga, y el consumo real solo aparece después del recuento físico. Ese atajo engaña siempre en la dirección en la que se haya movido el almacén.
+
+Cuando el stock final acaba más alto que el inicial, con el almacén más lleno que al empezar, las compras superan al consumo real, porque parte de lo comprado todavía no ha salido del almacén. Tomar las compras como si fueran consumo infla el food cost: parece peor de lo que es, y puede llevar a tocar precios o raciones por un problema que en realidad es de inventario acumulado, no de coste (costo).
+
+Cuando el stock final acaba más bajo que el inicial, con el almacén vaciándose, ocurre lo contrario: el consumo real supera a las compras, porque se ha gastado género ya pagado de meses anteriores. Ahí el atajo esconde el problema, porque el food cost calculado sobre compras sale mejor de lo que es, justo cuando el almacén se vacía por debajo.
+
+El caso del año lo ilustra en pequeño: las compras, 396.100 €, quedan por encima del consumo real, 395.400 €, señal de que el almacén ha terminado el año algo más lleno de lo que empezó. Tanto el 31,7 % de enero como el 32,1 % del año quedan por encima del food cost objetivo del cuadro de mando, 30 %, con la cuenta hecha siempre sobre el consumo real y nunca sobre lo comprado: es la única forma de que la comparación con el objetivo signifique lo que dice que significa.

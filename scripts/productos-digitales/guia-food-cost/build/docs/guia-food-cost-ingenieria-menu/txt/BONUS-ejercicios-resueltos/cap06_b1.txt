@@ -1,0 +1,20 @@
+### El enunciado y los datos
+
+Antes de fiarnos de la etiqueta que la matriz coloca junto a cada plato, conviene hacerla a mano una vez, con una sola familia, para ver de dónde sale cada palabra. Tomamos la familia de entrantes tal y como está recogida en la hoja «Datos» de matriz-multimetodo-carta.xlsx: 7 platos, 1.730 unidades vendidas en el periodo que cubre el análisis y un margen de contribución medio ponderado de 7,46 € por unidad. Son los tres datos de partida y no hace falta ninguno más para reproducir el criterio del modelo.
+
+El modelo detrás del ejercicio es el de Kasavana y Smith (1982): cruza cuánto pesa cada plato dentro de las ventas de su propia familia frente a cuánto margen deja, y de esa doble comparación sale una de cuatro etiquetas. Lo que falta para cerrar el cálculo plato a plato —las unidades vendidas y el margen de cada uno por separado, ya no los de la familia entera— es justo lo que recoge el cuadro que sigue a este texto, con el umbral de la familia al lado de cada fila.
+
+### La resolución, paso a paso
+
+Con los tres datos de la familia se reconstruye el procedimiento completo en cuatro pasos, los mismos que aplica la matriz a cada familia de la carta (menú):
+
+- El mix de cada plato es su peso dentro de la familia: las unidades que vende ese plato en concreto sobre las 1.730 unidades que suman entre todos los entrantes. Es una proporción interna a la familia, no a la carta completa, y por eso el mismo número de ventas pesa distinto según en qué familia caiga el plato.
+- El umbral de popularidad de la familia sale de aplicar el factor del 70 % —el mismo que rige toda la matriz, guardado también en la hoja «Datos»— a la cuota que le tocaría a cada plato si las unidades se repartieran a partes iguales entre los 7 platos de la familia: ese 70 % multiplicado por uno entre el número de platos. Un plato con un mix por encima de ese umbral cuenta como popular dentro de su familia; por debajo, no.
+- El margen de contribución de cada plato se compara con el margen medio ponderado de la familia, esos 7,46 € por unidad. Por encima de la media, el plato deja más margen que el conjunto de los entrantes; por debajo, deja menos.
+- La etiqueta sale de cruzar las dos comparaciones, no de mirarlas por separado: popularidad alta con margen alto es un Star; popularidad alta con margen bajo, un Plowhorse; popularidad baja con margen alto, un Puzzle; y popularidad baja con margen bajo, un Dog.
+
+Aplicado a la carta completa —no ya solo a los entrantes—, el resultado que arroja la hoja «Kasavana-Smith» de matriz-multimetodo-carta.xlsx es de 6 platos Star, 6 Plowhorse, 5 Puzzle y 3 Dog. Es la misma lógica que acabamos de aplicar a mano en la familia de entrantes, repetida familia por familia hasta agotar la carta entera; el cuadro siguiente recoge el detalle plato a plato, con el mix, el margen y el umbral de cada uno junto a su etiqueta.
+
+### Cómo se lee el resultado
+
+La etiqueta de un plato no es una propiedad suya en solitario: depende del conjunto de platos con los que comparte familia en el momento de calcularla. El umbral se construye sobre el número de platos de la familia y el mix de cada uno se mide sobre el total de unidades de esa misma familia, así que retirar un plato de la carta —o añadir uno nuevo— cambia los dos denominadores a la vez. Los platos que quedan no han vendido ni una unidad más ni una menos, pero su mix se recalcula sobre un total distinto y el margen medio ponderado de la familia también se desplaza, de modo que un plato que hoy queda justo por encima del umbral puede caer por debajo la próxima vez que se revise la carta, sin que nada en su propia venta haya cambiado. Por eso conviene repetir este cálculo cada vez que se toca la composición de una familia, y no solo cuando cambia el precio de venta o el coste (costo) de un plato concreto: quitar de una familia el plato con peor etiqueta no siempre mejora a los demás, porque puede desplazar el umbral o la media hacia un punto que perjudique a otro plato que hasta entonces estaba a salvo.

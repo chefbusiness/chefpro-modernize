@@ -1,0 +1,53 @@
+Escribe un tramo del capítulo 8 — «Goal Value de Dos Platos» de la guía profesional «12 Ejercicios Resueltos de Food Cost e Ingeniería de Menú» (Bonus del pack «Guía Food Cost + Ingeniería de Menú» · con los datos de las ocho herramientas Excel).
+
+OBJETIVO DEL CAPÍTULO: Calcular el índice y entender que sólo dice algo comparado con el objetivo de su propia familia.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### El enunciado y los datos
+  ### La resolución, paso a paso
+  ### Cómo se lee el resultado
+
+EXTENSIÓN: unas 620 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - Enunciado: dos platos con su food cost porcentual, su precio sin IVA y sus unidades vendidas, más los porcentajes de coste de personal y de otros costes variables.
+  - Resolución: escribir el cálculo del índice de cada plato y el del objetivo de su familia, que usa las medias ponderadas de esa familia.
+  - Lectura: el índice no tiene unidades y no se compara entre familias; lo único que dice es si el plato está por encima o por debajo del objetivo de los suyos.
+  - Cita el modelo una sola vez y con este nombre exacto: Hayes y Huffman (1985).
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Coste de personal sobre ventas usado en el índice: 32 %   [fuente: matriz-multimetodo-carta.xlsx!Goal Value!D33]
+  - Otros costes variables sobre ventas usados en el índice: 10 %   [fuente: matriz-multimetodo-carta.xlsx!Goal Value!D34]
+  - Platos por encima del objetivo de su familia: 9   [fuente: matriz-multimetodo-carta.xlsx!Goal Value!D36]
+  - Platos por debajo del objetivo de su familia: 11   [fuente: matriz-multimetodo-carta.xlsx!Goal Value!D37]
+  - Food cost medio ponderado de la carta: 32,7 %   [fuente: matriz-multimetodo-carta.xlsx!Datos!H32]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-METODO-04] HUECO SIN FUENTE — «Goal Value Analysis: índice numérico único por plato en lugar de matriz de cuadrantes»: NO escribas ninguna cifra sobre esto; formúlalo en cualitativo.
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: El índice de cada plato frente al objetivo de su familia. NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - Escribe el ejercicio como un ejercicio: enunciado con los datos, resolución con las operaciones escritas una a una y lectura del resultado. No lo conviertas en un capítulo teórico.
+  - Escribe las operaciones con los números que te doy y con el mismo formato con el que te los doy. No inventes datos de partida ni redondees a un número más bonito.
+  - No remitas al lector a «el capítulo correspondiente de la guía» por su número: puedes decir de qué trata, pero este documento se lee suelto.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre.

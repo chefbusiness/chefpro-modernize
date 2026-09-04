@@ -1,0 +1,84 @@
+Escribe un tramo del capítulo 19 — «Caso Integral: una Carta Entera, de Principio a Fin» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Recorrer la carta del pack de punta a punta con las ocho herramientas encadenadas, para que el lector vea el flujo completo antes de hacerlo con la suya.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### Paso 3: poner precio plato a plato
+  ### Paso 4: revisar el delivery y decidir exclusiones
+  ### Paso 5: convertir el diagnóstico en decisiones con fecha
+
+EXTENSIÓN: unas 733 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - Encabezar el capítulo diciendo con todas las letras que es un CASO MODELADO construido sobre las plantillas del pack, no un cliente real ni un negocio identificable.
+  - Paso a paso, y en cada paso: qué se miró, qué dijo la herramienta y qué se decidió. La decisión es lo que hay que enseñar, porque los números ya están en las tablas.
+  - En el paso de la clasificación, señalar los platos donde los cuatro métodos discrepan y explicar la decisión concreta que se tomó con cada uno de esos.
+  - En el paso del delivery, explicar por qué algunos platos salen de la aplicación y otros suben de precio, con el food cost efectivo y el precio techo delante.
+  - En el último paso, mostrar cómo cada decisión queda con responsable, semana e impacto estimado, y advertir de que el impacto es una ESTIMACIÓN a la fecha del plan, no un resultado.
+  - Cerrar con la lectura de los indicadores del trimestre y con la advertencia de que los del mes 3 del libro son un objetivo de ejemplo, no lo que le va a pasar al lector.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Platos dados de alta en la carta: 20   [fuente: matriz-multimetodo-carta.xlsx!Datos!D36]
+  - Unidades vendidas al mes: 4.870   [fuente: matriz-multimetodo-carta.xlsx!Datos!D32]
+  - Ventas netas del mes de la carta: 59.029 €   [fuente: matriz-multimetodo-carta.xlsx!Datos!I32]
+  - Food cost medio ponderado de la carta: 32,7 %   [fuente: matriz-multimetodo-carta.xlsx!Datos!H32]
+  - Margen de contribución medio ponderado de la carta: 8,16 €   [fuente: matriz-multimetodo-carta.xlsx!Datos!G32]
+  - Coste por ración del plato de la ficha: 5,67 €   [fuente: ficha-escandallo-base.xlsx!Ficha!E33]
+  - PVP objetivo del plato de la ficha, sin IVA: 18,90 €   [fuente: ficha-escandallo-base.xlsx!Ficha!E34]
+  - Rendimiento medio ponderado de los tests: 60,5 %   [fuente: rendimiento-mermas-producto.xlsx!Test de Rendimiento!E26]
+  - Platos con las cuatro lecturas en la mejor categoría: 3   [fuente: matriz-multimetodo-carta.xlsx!Comparativa!C39]
+  - Platos con tres o cuatro lecturas fuera: 12   [fuente: matriz-multimetodo-carta.xlsx!Comparativa!C40]
+  - Platos Star: 6   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!C33]
+  - Platos Dog: 3   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!C36]
+  - Platos dentro del objetivo tras poner precio: 11   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E37]
+  - Food cost del conjunto de la carta con los precios elegidos: 36,7 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E39]
+  - Diferencia total con los PVP actuales: -13,54 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E41]
+  - Platos viables en delivery: 12   [fuente: simulador-repricing-multicanal.xlsx!Resumen!B7]
+  - Platos a excluir o reformular en delivery: 8   [fuente: simulador-repricing-multicanal.xlsx!Resumen!C7]
+  - Food cost efectivo medio en delivery: 54,6 %   [fuente: simulador-repricing-multicanal.xlsx!Resumen!D7]
+  - Margen mensual total en sala: 43.635 €   [fuente: simulador-repricing-multicanal.xlsx!Resumen!G5]
+  - Diferencia de margen del delivery frente a la sala: -13.585 €   [fuente: simulador-repricing-multicanal.xlsx!Resumen!I7]
+  - Beverage cost ponderado de toda la bodega: 26,4 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D8]
+  - Margen de contribución total de la bodega: 32.153,04 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!F8]
+  - Prime cost del año: 63,4 %   [fuente: cuadro-de-mando-prime-cost.xlsx!Mensual!N17]
+  - Objetivo de prime cost en vigor: 65 %   [fuente: cuadro-de-mando-prime-cost.xlsx!Parámetros!B11]
+  - Decisiones registradas en el plan: 10   [fuente: plan-accion-90-dias.xlsx!Decisiones!D27]
+  - Impacto total estimado de las decisiones: 2.360 €   [fuente: plan-accion-90-dias.xlsx!Decisiones!D31]
+  - Impacto total estimado a doce meses: 28.320 €   [fuente: plan-accion-90-dias.xlsx!Decisiones!D34]
+  - Food cost del mes 0 en los indicadores: 33,1 %   [fuente: plan-accion-90-dias.xlsx!KPI de Seguimiento!B5]
+  - Food cost del mes 3 en los indicadores: 29,8 %   [fuente: plan-accion-90-dias.xlsx!KPI de Seguimiento!E5]
+  - Prime cost del mes 0 en los indicadores: 66,8 %   [fuente: plan-accion-90-dias.xlsx!KPI de Seguimiento!B6]
+  - Prime cost del mes 3 en los indicadores: 63,8 %   [fuente: plan-accion-90-dias.xlsx!KPI de Seguimiento!E6]
+  - Platos en carta en el mes 0: 20   [fuente: plan-accion-90-dias.xlsx!KPI de Seguimiento!B9]
+  - Platos en carta en el mes 3: 18   [fuente: plan-accion-90-dias.xlsx!KPI de Seguimiento!E9]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-BENCH-01] Food cost medio del sector hostelero español (consumo de producto sobre venta): **30 % sobre venta (rango sano 25-35%)**. Fuente obligatoria a citar en el texto: «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026). Nota: Research L3 §1.1 (guia-food-cost-research-L3-datos.md). Fuente española especializada (CaixaBank + Fundación elBulli). Rango sano de food cost 25-35% sobre venta; media de mercado ~30%. Fecha de publicación del informe no visible en la…
+- [FC-PRIME-04] Estructura de costes de referencia de un restaurante español y EBITDA sano: **30 (producto) + 30-35 (personal, servicio integrado) + 5-10 (alquiler) + 13-20 (gastos generales, ideal 17) % sobre venta; EBITDA sano resultante 10-13% (por debajo de 10% requiere reestructuración)**. Fuente obligatoria a citar en el texto: «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026). Nota: Research L3 §2.4. Fuente española especializada. Referencia de conjunto para contextualizar el prime cost dentro de la cuenta de explotación completa.
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: La carta de ejemplo entera, plato a plato (matriz-multimetodo-carta.xlsx, hoja «Datos»); La misma carta en el canal de reparto (simulador-repricing-multicanal.xlsx, hoja «Carta»); Las decisiones, con responsable y fecha (plan-accion-90-dias.xlsx, hoja «Decisiones»); Los indicadores del trimestre (plan-accion-90-dias.xlsx, hoja «KPI de Seguimiento»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - PROHIBIDO presentar el caso como un cliente real, un restaurante concreto o un proyecto identificable: es un caso modelado y hay que escribirlo así en el primer párrafo.
+  - PROHIBIDO presentar el impacto estimado del plan como un resultado conseguido: es una estimación, y las columnas de «conseguido» del libro están a cero a propósito, porque el trabajo aún no se ha hecho.
+  - NO sumes ni proyectes cifras nuevas: los totales del caso están calculados en los libros y son los que te doy.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre. No cierres el capítulo: sigue otro tramo.

@@ -1,0 +1,67 @@
+Escribe un tramo del capítulo 11 — «Ingeniería de Menú I: Kasavana & Smith Bien Hecho» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Enseñar la matriz clásica sin los dos errores que la inutilizan: aplicarla a la carta entera en vez de por familia, y comparar el margen con una media simple en vez de con la ponderada.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### Qué mide la matriz y qué deja fuera
+  ### El umbral de popularidad: por qué es el 70 % dividido entre los platos de la familia
+
+EXTENSIÓN: unas 566 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - Explicar la construcción: dos ejes, popularidad y margen de contribución en euros, cada plato comparado con el umbral y con la media ponderada de SU familia.
+  - Explicar de dónde sale el umbral: si una familia tiene N platos, un reparto plano daría a cada uno una N-ésima parte de las unidades; el umbral es el 70 % de esa parte, y el factor está en celda para quien quiera ser más exigente.
+  - Insistir en el error de aplicarla a la carta entera: un principal caro y un postre barato nunca competirán en margen, así que el postre saldría siempre mal clasificado por una razón que no tiene que ver con su rentabilidad.
+  - Explicar el orden de intervención por riesgo: primero se sube el precio de un caballo de batalla con cuidado, después se rediseña un puzle, y retirar es lo último porque un plato puede sostener a otros del ticket.
+  - Advertir de la limitación reconocida por la propia literatura: la matriz usa promedios, así que un cambio pequeño en la carta puede mover un plato de cuadrante. No es una etiqueta permanente.
+  - CITA OBLIGATORIA, con este nombre exacto: el modelo se atribuye a Kasavana y Smith (1982), «Menu Engineering: A Practical Guide to Menu Analysis». Se cita una vez, al presentarlo.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Factor del umbral de popularidad: 70 %   [fuente: matriz-multimetodo-carta.xlsx!Datos!D33]
+  - Platos con ventas en la carta: 20   [fuente: matriz-multimetodo-carta.xlsx!Datos!D35]
+  - Unidades vendidas al mes por la carta: 4.870   [fuente: matriz-multimetodo-carta.xlsx!Datos!D32]
+  - Margen de contribución medio ponderado de la carta: 8,16 €   [fuente: matriz-multimetodo-carta.xlsx!Datos!G32]
+  - MC medio ponderado de los entrantes: 7,46 €   [fuente: matriz-multimetodo-carta.xlsx!Datos!G40]
+  - MC medio ponderado de los principales: 10,80 €   [fuente: matriz-multimetodo-carta.xlsx!Datos!G41]
+  - MC medio ponderado de los postres: 4,48 €   [fuente: matriz-multimetodo-carta.xlsx!Datos!G42]
+  - Platos clasificados como Star: 6   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!C33]
+  - Unidades vendidas por los Star: 1.950   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!D33]
+  - Porcentaje de las unidades de la carta que son Star: 40,0 %   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!E33]
+  - MC total aportado por los Star: 14.865 €   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!F33]
+  - Platos clasificados como Plowhorse: 6   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!C34]
+  - MC total aportado por los Plowhorse: 16.198 €   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!F34]
+  - Platos clasificados como Puzzle: 5   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!C35]
+  - MC total aportado por los Puzzle: 6.357 €   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!F35]
+  - Platos clasificados como Dog: 3   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!C36]
+  - Unidades vendidas por los Dog: 350   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!D36]
+  - MC total aportado por los Dog: 2.318 €   [fuente: matriz-multimetodo-carta.xlsx!Kasavana-Smith!F36]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-METODO-01] HUECO SIN FUENTE — «Modelo seminal de matriz de ingeniería de menú (popularidad × margen de contribución)»: NO escribas ninguna cifra sobre esto; formúlalo en cualitativo.
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: La carta clasificada plato a plato, dentro de su familia (matriz-multimetodo-carta.xlsx, hoja «Kasavana-Smith»); Cuánto pesa cada cuadrante (matriz-multimetodo-carta.xlsx, hoja «Kasavana-Smith»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - NO traduzcas los nombres de los cuadrantes a un vocabulario propio: se usan los originales (Star, Plowhorse, Puzzle, Dog) con su explicación en español al lado, porque son los que el lector va a encontrar en la hoja y en cualquier otro material.
+  - NO digas que un Dog se retira sin más: se explica el orden de intervención y las razones para conservar uno.
+  - NO uses la media simple del margen de la carta como referencia: la comparación es siempre contra la media ponderada de la familia.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre. No cierres el capítulo: sigue otro tramo.

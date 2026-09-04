@@ -1,0 +1,59 @@
+Escribe un tramo del capítulo 17 — «Costeo por Lote en Obrador y Pastelería» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Adaptar todo lo anterior a un negocio que no produce raciones sino tandas, en el que la mano de obra y el envase pesan tanto como la harina.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### Packaging y etiquetado: el coste que no está en la receta
+  ### Escalar una fórmula sin escalar el error
+
+EXTENSIÓN: unas 700 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - La tesis: en obrador se cuesta la tanda entera y se divide entre las piezas BUENAS que salen, no entre las teóricas. El rendimiento de tanda es el equivalente al rendimiento de despiece del capítulo 5.
+  - Explicar por qué aquí sí entra la mano de obra en el coste unitario: una pieza de bollería puede llevar más euros de manos que de materia prima, y un escandallo que sólo mira el ingrediente da un precio ruinoso.
+  - Explicar la merma de cocción y de fermentación como parte del rendimiento de tanda, con las pruebas medidas que trae el libro de rendimiento.
+  - Explicar el packaging y el etiquetado como coste por pieza, no por pedido, en cuanto el producto se vende envasado.
+  - Explicar el escalado: doblar la fórmula no dobla el tiempo ni la merma, así que el coste por pieza baja con el tamaño de tanda hasta que el horno o la cámara ponen el límite.
+  - Para el negocio que quiera la plantilla de costeo por lote lista, está en el Kit de Escandallos; aquí se da el método y se usa el método del margen objetivo, que es el que encaja con este formato.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Pruebas de cocción registradas: 5   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!E20]
+  - Rendimiento medio de cocción ponderado: 72,7 %   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!E18]
+  - Pérdida media por cocción: 27,3 %   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!E19]
+  - Pérdida de cocción del solomillo a la plancha: 22,0 %   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!G6]
+  - Pérdida de cocción del pollo de corral al horno: 28,0 %   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!G7]
+  - Coste por kilo del pollo ya cocinado: 7,50 €   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!J7]
+  - Pérdida de cocción de las verduras asadas: 31,0 %   [fuente: rendimiento-mermas-producto.xlsx!Merma de Cocción!G10]
+  - Platos que usan el método del margen objetivo: 6   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E53]
+  - Margen de contribución medio por plato: 8,01 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E40]
+  - Food cost del conjunto de la carta: 36,7 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E39]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-PRIME-03] Coste de personal sobre la venta neta según modelo de servicio, España: **30-35 (servicio integrado en mesa) / 15-25 (servicio parcial: autoservicio/barra) % sobre venta neta**. Fuente obligatoria a citar en el texto: «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026). Nota: Research L3 §2.3. Fuente española especializada. Misma fuente que FC-BENCH-01/02.
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: Lo que pierde el producto en el horno y en la plancha (rendimiento-mermas-producto.xlsx, hoja «Merma de Cocción»); Poner precio por margen objetivo, que es el método del obrador (precio-objetivo-multi-metodo.xlsx, hoja «Por Plato»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - NO des un coste por hora de mano de obra ni un precio de packaging: no están en las cifras. Se explica cómo se calcula y de dónde sale el dato en el propio negocio.
+  - NO desarrolles la plantilla de costeo por lote: se explica el método y se remite al Kit de Escandallos, que ya la trae.
+  - NO extrapoles los datos de cocción de la tabla a la pastelería como si fueran suyos: son pruebas de cocina y sirven de ejemplo del método, no de tabla de referencia de obrador.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre.

@@ -1,0 +1,31 @@
+### Los tres tipos que conviven en la misma caja de la compra
+
+Cuando llega el albarán del proveedor, lo habitual es que no venga con un solo tipo de IVA soportado sino con tres conviviendo en el mismo documento. El aceite de oliva, los huevos y las harinas panificables tributan al 4 %; el resto de alimentos preparados, las bebidas sin alcohol y los productos de limpieza alimentaria van al 10 %; y el packaging, el menaje desechable o las bebidas alcohólicas compradas para llevar fuera de sala tributan al 21 %, según establece la Ley 37/1992, art. 90 (1992-12-29). Que los tres tipos aparezcan en el mismo pedido no es una anomalía: es la norma en cualquier cocina con una compra mínimamente diversificada.
+
+El albarán de ejemplo de la hoja «Albarán e IVA soportado» de ficha-escandallo-base.xlsx lo ilustra con precisión: la base imponible total asciende a 768,40 €, la cuota de IVA total suma 84,41 € y el total con IVA que el proveedor cobra es 852,81 €. La diferencia entre la base y el total es exactamente lo que la Hacienda Pública devuelve o compensa en la liquidación periódica, siempre que el negocio esté en régimen general y pueda deducirse el IVA soportado. El cuadro siguiente desglosa esas líneas partida a partida.
+
+La regla del escandallo (costeo de recetas) es una sola y no admite excepciones en condiciones normales: se trabaja siempre con el precio sin IVA. Si el negocio puede deducirse el IVA soportado, ese importe no es un coste real; meterlo en la ficha técnica equivale a contar el mismo gasto dos veces. La hoja «Ficha» de ficha-escandallo-base.xlsx lo demuestra con números propios: el coste por ración sin IVA es 5,67 €, el IVA soportado total de esa ficha suma 0,56 € y, si se cometiera el error de incluirlo, el coste aparente subiría a 6,23 €. El food cost correcto del plato es 32,8 %; el food cost erróneo contando el IVA como coste sube a 36,0 %. Esa diferencia de puntos porcentuales no es un matiz contable: es la distancia entre una decisión de precio bien calibrada y una mal calibrada.
+
+Hay un caso en que esta regla se invierte y conviene conocerlo antes de configurar las fichas. Si el negocio no puede deducirse el IVA soportado, ese IVA sí se convierte en coste real y debe entrar en el escandallo. Determinar si esa situación aplica requiere revisar el régimen con la asesoría fiscal: no es una decisión que deba tomar el jefe de cocina ni el responsable de sala, y este capítulo no entra en los regímenes porque cada caso tiene condicionantes propios.
+
+El packaging merece un párrafo específico porque genera confusión con frecuencia. Una caja de delivery, un vaso de cartón o una bolsa de papel no son alimentos: son envases o materiales auxiliares, y la Ley 37/1992, art. 90 los sitúa en el tipo general del 21 %. El hecho de que dentro de esa caja viaje un plato que tributa al 10 % no arrastra el envase al tipo reducido. Son dos líneas distintas en el albarán y dos tipos distintos en la ficha. Quien escandalla un plato de delivery y no separa el coste del packaging del coste del alimento está mezclando bases imponibles diferentes y distorsionando el food cost del plato.
+
+---
+
+### La lista cerrada del tipo superreducido
+
+El tipo superreducido del 4 % no se aplica por categoría amplia ni por intuición: la Ley 37/1992, art. 91.Dos.1.1.º, letras a a g (1992-12-29, última incorporación RDL 4/2024, letra g, con efectos desde 2025-01-01), establece una lista cerrada. Lo que no está en ella y no está excluido por el art. 91.Uno.1.1.º va directamente al tipo reducido ordinario del 10 %. No hay zona gris ni interpretación favorable por analogía.
+
+Los productos que integran esa lista cerrada son los siguientes:
+
+- Pan común y masa de pan común congelada.
+- Harinas panificables.
+- Leche producida por cualquier especie animal: natural, certificada, pasterizada, concentrada, desnatada, esterilizada, UHT, evaporada y en polvo.
+- Quesos.
+- Huevos.
+- Frutas, verduras, hortalizas, legumbres, tubérculos y cereales, que tienen su amparo en la letra f del mismo artículo.
+- Aceites de oliva, incorporados por el RDL 4/2024 (art. 2) en la letra g, con efectos permanentes desde el 1 de enero de 2025, tras una rampa transitoria en 2024 que los situó al 5 % entre julio y septiembre y al 2 % entre octubre y diciembre de ese año.
+
+Nada más. El aceite de girasol no está en la lista y tributa al 10 %. La carne, el pescado, el marisco, las conservas, los lácteos distintos de leche y queso, los zumos y los productos elaborados van al tipo reducido ordinario salvo que encajen en alguna de las letras anteriores por su composición principal, lo cual requiere criterio y, en caso de duda, consulta al proveedor sobre cómo lo declara él en su factura.
+
+La incorporación del aceite de oliva es el cambio más relevante en la estructura del IVA soportado de una cocina española en los últimos años, y tiene consecuencia directa en las fichas: cualquier escandallo que incluya aceite de oliva y que se haya construido antes de que la norma entrara en vigor debe revisarse para asegurarse de que la columna de tipo impositivo refleja el 4 % y no el 10 % que se aplicaba con anterioridad. La tabla de abajo recoge la clasificación completa de compras habituales con su tipo correspondiente, extraída de la hoja «Albarán e IVA soportado» de ficha-escandallo-base.xlsx.

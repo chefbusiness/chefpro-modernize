@@ -1,0 +1,543 @@
+[
+ {
+  "id": "guia_cap08_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap08_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap08_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Prime Cost: la Métrica que Mide la Salud del Negocio",
+  "epigrafes": [
+   "Qué suma el prime cost y por qué se miran juntos",
+   "El umbral español: 30 % de producto y 30-35 % de personal",
+   "Servicio en mesa o barra: dos objetivos distintos"
+  ]
+ },
+ {
+  "id": "guia_cap08_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap08_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap08_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Prime Cost: la Métrica que Mide la Salud del Negocio",
+  "epigrafes": [
+   "El coste de personal es el bruto más la Seguridad Social",
+   "Leer el cuadro de mando: el mes bueno, el mes malo y el año"
+  ]
+ },
+ {
+  "id": "guia_cap09_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap09_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap09_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Cuatro Formas de Poner Precio a un Plato",
+  "epigrafes": [
+   "Método A: factor sobre el coste, y dónde se rompe",
+   "Método B: margen objetivo en euros",
+   "Método C: precio de mercado de tu zona"
+  ]
+ },
+ {
+  "id": "guia_cap09_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap09_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap09_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Cuatro Formas de Poner Precio a un Plato",
+  "epigrafes": [
+   "Método D: valor percibido",
+   "Qué método le toca a cada plato"
+  ]
+ },
+ {
+  "id": "guia_cap10_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap10_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap10_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Psicología de Precios: lo Demostrado y lo que es Leyenda",
+  "epigrafes": [
+   "El efecto señuelo: la opción que no quieres vender",
+   "Nombres descriptivos: el estudio y su letra pequeña",
+   "El formato del precio: qué se midió y en qué moneda"
+  ]
+ },
+ {
+  "id": "guia_cap10_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap10_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap10_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Psicología de Precios: lo Demostrado y lo que es Leyenda",
+  "epigrafes": [
+   "Lo que circula sin estudio detrás",
+   "Cómo se aplica esto a una carta de verdad"
+  ]
+ },
+ {
+  "id": "guia_cap11_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap11_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap11_b1.txt",
+  "palabras_objetivo": 566,
+  "palabras_min": 407,
+  "capitulo": "Ingeniería de Menú I: Kasavana & Smith Bien Hecho",
+  "epigrafes": [
+   "Qué mide la matriz y qué deja fuera",
+   "El umbral de popularidad: por qué es el 70 % dividido entre los platos de la familia"
+  ]
+ },
+ {
+  "id": "guia_cap11_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap11_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap11_b2.txt",
+  "palabras_objetivo": 566,
+  "palabras_min": 407,
+  "capitulo": "Ingeniería de Menú I: Kasavana & Smith Bien Hecho",
+  "epigrafes": [
+   "Por familia, siempre: un postre no compite con un principal",
+   "Los cuatro cuadrantes y lo que significan de verdad"
+  ]
+ },
+ {
+  "id": "guia_cap11_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap11_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap11_b3.txt",
+  "palabras_objetivo": 566,
+  "palabras_min": 407,
+  "capitulo": "Ingeniería de Menú I: Kasavana & Smith Bien Hecho",
+  "epigrafes": [
+   "Qué se hace con cada uno, en orden de riesgo"
+  ]
+ },
+ {
+  "id": "guia_cap12_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap12_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap12_b1.txt",
+  "palabras_objetivo": 533,
+  "palabras_min": 383,
+  "capitulo": "Ingeniería de Menú II: lo que la Matriz Clásica no Ve",
+  "epigrafes": [
+   "Miller: popularidad contra food cost porcentual",
+   "Pavesic: food cost porcentual contra margen ponderado por unidades"
+  ]
+ },
+ {
+  "id": "guia_cap12_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap12_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap12_b2.txt",
+  "palabras_objetivo": 533,
+  "palabras_min": 383,
+  "capitulo": "Ingeniería de Menú II: lo que la Matriz Clásica no Ve",
+  "epigrafes": [
+   "Goal Value: un índice por plato en lugar de cuadrantes",
+   "LeBruto: qué pasa cuando entra el coste de mano de obra"
+  ]
+ },
+ {
+  "id": "guia_cap12_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap12_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap12_b3.txt",
+  "palabras_objetivo": 533,
+  "palabras_min": 383,
+  "capitulo": "Ingeniería de Menú II: lo que la Matriz Clásica no Ve",
+  "epigrafes": [
+   "Las tres variables y por qué ningún método las mide todas"
+  ]
+ },
+ {
+  "id": "guia_cap13_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap13_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap13_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Cuando los Métodos Discrepan: el Protocolo de Decisión",
+  "epigrafes": [
+   "Coincidencia no es confianza: qué significa que los cuatro coincidan",
+   "Los patrones de discrepancia más frecuentes"
+  ]
+ },
+ {
+  "id": "guia_cap13_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap13_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap13_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Cuando los Métodos Discrepan: el Protocolo de Decisión",
+  "epigrafes": [
+   "Las cuatro erres: reformular, resubir, rediseñar, retirar",
+   "El orden de intervención y cuántos platos se tocan a la vez"
+  ]
+ },
+ {
+  "id": "guia_cap14_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap14_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap14_b1.txt",
+  "palabras_objetivo": 500,
+  "palabras_min": 360,
+  "capitulo": "Carta Corta, Menú de Precio Fijo, Buffet y Banquete",
+  "epigrafes": [
+   "Tamaño de carta: qué se gana al podar y qué se pierde",
+   "Menú de precio fijo: el margen lo decide el mix"
+  ]
+ },
+ {
+  "id": "guia_cap14_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap14_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap14_b2.txt",
+  "palabras_objetivo": 500,
+  "palabras_min": 360,
+  "capitulo": "Carta Corta, Menú de Precio Fijo, Buffet y Banquete",
+  "epigrafes": [
+   "Los dos escenarios de mix y qué hacer con ellos",
+   "Buffet, banquete y hotel: el mismo problema con otra escala"
+  ]
+ },
+ {
+  "id": "guia_cap14_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap14_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap14_b3.txt",
+  "palabras_objetivo": 500,
+  "palabras_min": 360,
+  "capitulo": "Carta Corta, Menú de Precio Fijo, Buffet y Banquete",
+  "epigrafes": [
+   "Catering y eventos: el mix se pacta antes"
+  ]
+ },
+ {
+  "id": "guia_cap15_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap15_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap15_b1.txt",
+  "palabras_objetivo": 566,
+  "palabras_min": 407,
+  "capitulo": "Multicanal: Sala, Take Away y Delivery",
+  "epigrafes": [
+   "Tres canales, tres cuentas de resultados",
+   "La comisión no es el único coste: packaging y platos por pedido"
+  ]
+ },
+ {
+  "id": "guia_cap15_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap15_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap15_b2.txt",
+  "palabras_objetivo": 566,
+  "palabras_min": 407,
+  "capitulo": "Multicanal: Sala, Take Away y Delivery",
+  "epigrafes": [
+   "El IVA cambia con el canal y con el producto",
+   "El precio techo: hasta dónde te deja subir la aplicación"
+  ]
+ },
+ {
+  "id": "guia_cap15_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap15_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap15_b3.txt",
+  "palabras_objetivo": 566,
+  "palabras_min": 407,
+  "capitulo": "Multicanal: Sala, Take Away y Delivery",
+  "epigrafes": [
+   "Qué platos no deberían estar en delivery",
+   "Vender fuera de España: qué casillas se cambian"
+  ]
+ },
+ {
+  "id": "guia_cap16_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap16_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap16_b1.txt",
+  "palabras_objetivo": 533,
+  "palabras_min": 383,
+  "capitulo": "Beverage Cost: la Bodega Como Cuenta de Resultados Propia",
+  "epigrafes": [
+   "Por qué la bebida no se mide con la vara de la comida",
+   "Vino: la copa cambia la ecuación de la botella"
+  ]
+ },
+ {
+  "id": "guia_cap16_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap16_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap16_b2.txt",
+  "palabras_objetivo": 533,
+  "palabras_min": 383,
+  "capitulo": "Beverage Cost: la Bodega Como Cuenta de Resultados Propia",
+  "epigrafes": [
+   "Cerveza de barril y refrescos: el coste por servicio",
+   "Destilados y cócteles: cuando el coste está en la mezcla"
+  ]
+ },
+ {
+  "id": "guia_cap16_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap16_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap16_b3.txt",
+  "palabras_objetivo": 533,
+  "palabras_min": 383,
+  "capitulo": "Beverage Cost: la Bodega Como Cuenta de Resultados Propia",
+  "epigrafes": [
+   "El resumen de la bodega y el margen que estás dejando en la mesa"
+  ]
+ },
+ {
+  "id": "guia_cap17_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap17_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap17_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Costeo por Lote en Obrador y Pastelería",
+  "epigrafes": [
+   "La unidad de costeo es la tanda, no la pieza",
+   "Mano de obra por hora dentro del coste del lote"
+  ]
+ },
+ {
+  "id": "guia_cap17_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap17_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap17_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Costeo por Lote en Obrador y Pastelería",
+  "epigrafes": [
+   "Packaging y etiquetado: el coste que no está en la receta",
+   "Escalar una fórmula sin escalar el error"
+  ]
+ },
+ {
+  "id": "guia_cap18_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap18_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap18_b1.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Cuando Sube el Proveedor: Protocolo de Re-escandallado",
+  "epigrafes": [
+   "Los cuatro disparadores de un re-escandallado",
+   "El calendario: qué se revisa cada mes y qué cada trimestre"
+  ]
+ },
+ {
+  "id": "guia_cap18_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap18_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap18_b2.txt",
+  "palabras_objetivo": 750,
+  "palabras_min": 540,
+  "capitulo": "Cuando Sube el Proveedor: Protocolo de Re-escandallado",
+  "epigrafes": [
+   "Dónde mirar el precio de la materia prima",
+   "Cómo se sube un precio sin que se note en la caja"
+  ]
+ },
+ {
+  "id": "guia_cap19_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap19_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap19_b1.txt",
+  "palabras_objetivo": 733,
+  "palabras_min": 527,
+  "capitulo": "Caso Integral: una Carta Entera, de Principio a Fin",
+  "epigrafes": [
+   "El punto de partida: qué había sobre la mesa",
+   "Paso 1: escandallar y medir la merma",
+   "Paso 2: clasificar la carta con los cuatro métodos"
+  ]
+ },
+ {
+  "id": "guia_cap19_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap19_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap19_b2.txt",
+  "palabras_objetivo": 733,
+  "palabras_min": 527,
+  "capitulo": "Caso Integral: una Carta Entera, de Principio a Fin",
+  "epigrafes": [
+   "Paso 3: poner precio plato a plato",
+   "Paso 4: revisar el delivery y decidir exclusiones",
+   "Paso 5: convertir el diagnóstico en decisiones con fecha"
+  ]
+ },
+ {
+  "id": "guia_cap19_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap19_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap19_b3.txt",
+  "palabras_objetivo": 733,
+  "palabras_min": 527,
+  "capitulo": "Caso Integral: una Carta Entera, de Principio a Fin",
+  "epigrafes": [
+   "Qué salió de todo esto"
+  ]
+ },
+ {
+  "id": "guia_cap20_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap20_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap20_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Cuándo tu Excel se Queda Corto",
+  "epigrafes": [
+   "Las cuatro señales de que la hoja se te ha quedado pequeña",
+   "Qué te da un software que la hoja no te da",
+   "Qué te da un agente de inteligencia artificial"
+  ]
+ },
+ {
+  "id": "guia_cap20_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/cap20_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/guia_cap20_b2.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Cuándo tu Excel se Queda Corto",
+  "epigrafes": [
+   "La cuenta: cuánto cuesta cada salto",
+   "El orden correcto: criterio primero, automatización después"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap01_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap01_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap01_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Cantidad Bruta y Coste con Merma",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap02_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap02_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap02_b1.txt",
+  "palabras_objetivo": 640,
+  "palabras_min": 460,
+  "capitulo": "Test de Rendimiento con Subproductos",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap03_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap03_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap03_b1.txt",
+  "palabras_objetivo": 610,
+  "palabras_min": 439,
+  "capitulo": "Food Cost Real de un Mes",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap04_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap04_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap04_b1.txt",
+  "palabras_objetivo": 660,
+  "palabras_min": 475,
+  "capitulo": "El Mismo Plato por los Cuatro Métodos",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap05_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap05_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap05_b1.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "El IVA de una Bebida, Canal por Canal",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap06_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap06_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap06_b1.txt",
+  "palabras_objetivo": 650,
+  "palabras_min": 468,
+  "capitulo": "Clasificar una Familia con Kasavana & Smith",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap07_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap07_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap07_b1.txt",
+  "palabras_objetivo": 660,
+  "palabras_min": 475,
+  "capitulo": "El Mismo Grupo en Miller y en Pavesic",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap08_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap08_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap08_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Goal Value de Dos Platos",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap09_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap09_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap09_b1.txt",
+  "palabras_objetivo": 670,
+  "palabras_min": 482,
+  "capitulo": "Repricing en Delivery con Packaging y Techo",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap10_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap10_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap10_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Copa o Botella",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap11_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap11_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap11_b1.txt",
+  "palabras_objetivo": 620,
+  "palabras_min": 446,
+  "capitulo": "Prime Cost de un Mes y su Semáforo",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ },
+ {
+  "id": "BONUS-ejercicios-resueltos_cap12_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/txt/BONUS-ejercicios-resueltos/cap12_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/prompts/BONUS-ejercicios-resueltos_cap12_b1.txt",
+  "palabras_objetivo": 640,
+  "palabras_min": 460,
+  "capitulo": "Menú de Precio Fijo: el Margen lo Decide el Mix",
+  "epigrafes": [
+   "El enunciado y los datos",
+   "La resolución, paso a paso",
+   "Cómo se lee el resultado"
+  ]
+ }
+]

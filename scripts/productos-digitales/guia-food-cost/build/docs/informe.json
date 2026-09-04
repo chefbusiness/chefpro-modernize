@@ -1,0 +1,2739 @@
+{
+  "_meta": {
+    "pid": "guia-food-cost-ingenieria-menu",
+    "generado": "2026-09-04 02:16",
+    "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu",
+    "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-food-cost-ingenieria-menu",
+    "modelo": "anthropic/claude-sonnet-4.6",
+    "research": "2026-08-29",
+    "research_ausente": false,
+    "erratas_reparadas": [
+      {
+        "de": "delate",
+        "a": "delante",
+        "doc": "guia-food-cost-ingenieria-menu"
+      }
+    ],
+    "erratas_reparadas_n": 1
+  },
+  "documentos": {
+    "guia-food-cost-ingenieria-menu": {
+      "gates": {
+        "paginas_pdf": 95,
+        "paginas_prometidas": 60,
+        "palabras_md": 51789,
+        "palabras_pdf": 50265,
+        "palabras_docx": 48314,
+        "palabras_objetivo": 30000,
+        "capitulos": 20,
+        "tablas_md": 42,
+        "tablas_docx": 42,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [
+          "6 % con un ponderado del 25,4 % sobre un objetivo del 22 %; destilados y cócteles cierran"
+        ],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [
+          {
+            "errata": "esima",
+            "probable": "estima",
+            "veces": 3,
+            "apoyo": 0,
+            "freq_lexico": 50
+          },
+          {
+            "errata": "podar",
+            "probable": "podra",
+            "veces": 2,
+            "apoyo": 0,
+            "freq_lexico": 14
+          },
+          {
+            "errata": "tiraje",
+            "probable": "triaje",
+            "veces": 2,
+            "apoyo": 0,
+            "freq_lexico": 10
+          },
+          {
+            "errata": "trasladado",
+            "probable": "trasladando",
+            "veces": 2,
+            "apoyo": 0,
+            "freq_lexico": 2
+          },
+          {
+            "errata": "anado",
+            "probable": "anadio",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 5
+          },
+          {
+            "errata": "arrancado",
+            "probable": "arrancando",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 6
+          },
+          {
+            "errata": "coincidan",
+            "probable": "coincidian",
+            "veces": 1,
+            "apoyo": 1,
+            "freq_lexico": 3
+          },
+          {
+            "errata": "cumplio",
+            "probable": "cumplido",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 2
+          },
+          {
+            "errata": "dependio",
+            "probable": "dependido",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 4
+          },
+          {
+            "errata": "ensanchado",
+            "probable": "ensanchando",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 2
+          },
+          {
+            "errata": "levado",
+            "probable": "llevado",
+            "veces": 1,
+            "apoyo": 1,
+            "freq_lexico": 22
+          },
+          {
+            "errata": "parta",
+            "probable": "partia",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 4
+          },
+          {
+            "errata": "pasterizada",
+            "probable": "pasteurizada",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 16
+          },
+          {
+            "errata": "perdio",
+            "probable": "perdido",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 53
+          }
+        ],
+        "erratas_ocurrencias": 19,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 44205,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 48650,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Guía Food Cost + Ingeniería de Menú"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Guía Food Cost + Ingeniería de Menú",
+          "created": "2026-09-04 02:16:52"
+        },
+        "paridad_palabras_pct": 0.69,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": false,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": false,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": false,
+        "saneados_winansi": 1381,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/guia-food-cost-ingenieria-menu.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/guia-food-cost-ingenieria-menu.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/guia-food-cost-ingenieria-menu.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Para Quién es Esta Guía (y Qué no Vas a Encontrar Aquí)",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-BENCH-01",
+            "FC-PRIME-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Platos dados de alta en la carta de ejemplo",
+              "20",
+              "matriz-multimetodo-carta.xlsx!Datos!D36"
+            ],
+            [
+              "Unidades vendidas al mes por la carta de ejemplo",
+              "4.870",
+              "matriz-multimetodo-carta.xlsx!Datos!D32"
+            ],
+            [
+              "Ventas netas del mes de la carta de ejemplo",
+              "59.029 €",
+              "matriz-multimetodo-carta.xlsx!Datos!I32"
+            ],
+            [
+              "Food cost medio ponderado de la carta de ejemplo",
+              "32,7 %",
+              "matriz-multimetodo-carta.xlsx!Datos!H32"
+            ],
+            [
+              "Food cost objetivo con el que trabaja el pack",
+              "30 %",
+              "ficha-escandallo-base.xlsx!Ficha!D7"
+            ],
+            [
+              "Objetivo de prime cost en vigor en el cuadro de mando",
+              "65 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B11"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Las Cuatro Cifras que Gobiernan tu Carta",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-BENCH-01",
+            "FC-BENCH-03",
+            "FC-PRIME-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost medio ponderado de la carta de ejemplo",
+              "32,7 %",
+              "matriz-multimetodo-carta.xlsx!Datos!H32"
+            ],
+            [
+              "Margen de contribución medio ponderado de la carta",
+              "8,16 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G32"
+            ],
+            [
+              "Unidades vendidas al mes por la carta",
+              "4.870",
+              "matriz-multimetodo-carta.xlsx!Datos!D32"
+            ],
+            [
+              "Ventas netas del mes de la carta",
+              "59.029 €",
+              "matriz-multimetodo-carta.xlsx!Datos!I32"
+            ],
+            [
+              "Ventas netas anuales del cuadro de mando",
+              "1.232.200 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!D17"
+            ],
+            [
+              "Coste de materia prima sobre ventas del año",
+              "32,1 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I17"
+            ],
+            [
+              "Labor cost del año",
+              "31,3 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!M17"
+            ],
+            [
+              "Prime cost del año",
+              "63,4 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N17"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "451.142 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!P17"
+            ],
+            [
+              "Ticket medio sin IVA en el mes 0 del plan de 90 días",
+              "27,4",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!B7"
+            ],
+            [
+              "Margen de contribución por cubierto en el mes 0",
+              "18,1",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!B8"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "IVA, Base Imponible y el Error que Invalida tu Food Cost",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-IVA-01",
+            "FC-IVA-02",
+            "FC-IVA-03",
+            "FC-IVA-04",
+            "FC-IVA-07",
+            "FC-IVA-08"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "IVA repercutido en sala, comida",
+              "10 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!B6"
+            ],
+            [
+              "IVA repercutido en sala, bebida alcohólica",
+              "10 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!D6"
+            ],
+            [
+              "IVA repercutido en delivery, comida",
+              "10 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!B8"
+            ],
+            [
+              "IVA repercutido en delivery, refresco azucarado",
+              "21 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!C8"
+            ],
+            [
+              "IVA repercutido en delivery, bebida alcohólica",
+              "21 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!D8"
+            ],
+            [
+              "Coste por ración del plato de la ficha, sin IVA",
+              "5,67 €",
+              "ficha-escandallo-base.xlsx!Ficha!E33"
+            ],
+            [
+              "PVP actual en carta del plato, sin IVA",
+              "17,30 €",
+              "ficha-escandallo-base.xlsx!Ficha!E37"
+            ],
+            [
+              "PVP actual del plato con IVA",
+              "19,03 €",
+              "ficha-escandallo-base.xlsx!Ficha!E38"
+            ],
+            [
+              "Food cost real del plato con el PVP actual",
+              "32,8 %",
+              "ficha-escandallo-base.xlsx!Ficha!E39"
+            ],
+            [
+              "Food cost si contases el IVA soportado como coste",
+              "36,0 %",
+              "ficha-escandallo-base.xlsx!Ficha!E47"
+            ],
+            [
+              "IVA soportado total de la ficha",
+              "0,56 €",
+              "ficha-escandallo-base.xlsx!Ficha!E45"
+            ],
+            [
+              "Coste de la ficha con el IVA soportado dentro",
+              "6,23 €",
+              "ficha-escandallo-base.xlsx!Ficha!E46"
+            ],
+            [
+              "Margen de contribución del plato con el PVP actual",
+              "11,63 €",
+              "ficha-escandallo-base.xlsx!Ficha!E40"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "El Coste Real de Compra: 4 %, 10 % y 21 % en el Mismo Albarán",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-IVA-05",
+            "FC-IVA-06",
+            "FC-IVA-07"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Tipo de IVA soportado superreducido",
+              "4 %",
+              "ficha-escandallo-base.xlsx!Albarán e IVA soportado!A5"
+            ],
+            [
+              "Tipo de IVA soportado reducido",
+              "10 %",
+              "ficha-escandallo-base.xlsx!Albarán e IVA soportado!A6"
+            ],
+            [
+              "Tipo de IVA soportado general",
+              "21 %",
+              "ficha-escandallo-base.xlsx!Albarán e IVA soportado!A7"
+            ],
+            [
+              "Base imponible total del albarán de ejemplo",
+              "768,40 €",
+              "ficha-escandallo-base.xlsx!Albarán e IVA soportado!F18"
+            ],
+            [
+              "Cuota de IVA total del albarán de ejemplo",
+              "84,41 €",
+              "ficha-escandallo-base.xlsx!Albarán e IVA soportado!H18"
+            ],
+            [
+              "Total con IVA del albarán de ejemplo",
+              "852,81 €",
+              "ficha-escandallo-base.xlsx!Albarán e IVA soportado!I18"
+            ],
+            [
+              "IVA soportado total de la ficha de escandallo",
+              "0,56 €",
+              "ficha-escandallo-base.xlsx!Ficha!E45"
+            ],
+            [
+              "Coste por ración sin IVA",
+              "5,67 €",
+              "ficha-escandallo-base.xlsx!Ficha!E33"
+            ],
+            [
+              "Coste por ración con el IVA soportado dentro",
+              "6,23 €",
+              "ficha-escandallo-base.xlsx!Ficha!E46"
+            ],
+            [
+              "Food cost correcto del plato",
+              "32,8 %",
+              "ficha-escandallo-base.xlsx!Ficha!E39"
+            ],
+            [
+              "Food cost erróneo contando el IVA como coste",
+              "36,0 %",
+              "ficha-escandallo-base.xlsx!Ficha!E47"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Del Bruto al Neto: Merma, Rendimiento y el Test que Sustituye a la Tabla",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [
+            "FC-MERMA-01",
+            "FC-MERMA-02"
+          ],
+          "cifras": [
+            [
+              "Productos medidos en el test de rendimiento",
+              "10",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E23"
+            ],
+            [
+              "Peso bruto total comprado en los tests",
+              "31,50",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E24"
+            ],
+            [
+              "Peso limpio total obtenido",
+              "19,07",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E25"
+            ],
+            [
+              "Rendimiento medio ponderado de los tests",
+              "60,5 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E26"
+            ],
+            [
+              "Merma media ponderada de los tests",
+              "39,5 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E27"
+            ],
+            [
+              "Coste total de compra de los tests",
+              "237,35 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E28"
+            ],
+            [
+              "Valor de uso de los subproductos",
+              "5,15 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E29"
+            ],
+            [
+              "Rendimiento de la lubina entera",
+              "51,7 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!H6"
+            ],
+            [
+              "Coste neto por kilo limpio de la lubina, sin aprovechar",
+              "28,84 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!M6"
+            ],
+            [
+              "Coste neto por kilo limpio de la lubina, aprovechando",
+              "27,63 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!N6"
+            ],
+            [
+              "Sobrecoste de la lubina sobre el precio del kilo bruto",
+              "12,73 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!P6"
+            ],
+            [
+              "Rendimiento de la alcachofa",
+              "38,0 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!H12"
+            ],
+            [
+              "Rendimiento del mejillón con concha",
+              "20,0 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!H14"
+            ],
+            [
+              "Ahorro por aprovechar las cabezas de la gamba",
+              "1,43 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!O15"
+            ],
+            [
+              "Pérdida por cocción del pollo de corral al horno",
+              "28,0 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!G7"
+            ],
+            [
+              "Pérdida media por cocción de las pruebas registradas",
+              "27,3 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!E19"
+            ],
+            [
+              "Categorías con medición propia en tu tabla de mermas",
+              "6",
+              "rendimiento-mermas-producto.xlsx!Mi Tabla de Mermas!E26"
+            ],
+            [
+              "Categorías que aún usan la referencia",
+              "6",
+              "rendimiento-mermas-producto.xlsx!Mi Tabla de Mermas!E27"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "La Ficha de Escandallo que Aguanta una Auditoría",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Plato de la ficha de ejemplo",
+              "Solomillo de cerdo ibérico con puré de boniato",
+              "ficha-escandallo-base.xlsx!Ficha!D4"
+            ],
+            [
+              "Raciones que salen de la ficha",
+              "1",
+              "ficha-escandallo-base.xlsx!Ficha!D6"
+            ],
+            [
+              "Food cost objetivo de la ficha",
+              "30 %",
+              "ficha-escandallo-base.xlsx!Ficha!D7"
+            ],
+            [
+              "Cantidad neta por ración de la primera línea",
+              "0,22",
+              "ficha-escandallo-base.xlsx!Ficha!D10"
+            ],
+            [
+              "Merma de la primera línea",
+              "12,0 %",
+              "ficha-escandallo-base.xlsx!Ficha!F10"
+            ],
+            [
+              "Cantidad bruta a comprar de la primera línea",
+              "0,25",
+              "ficha-escandallo-base.xlsx!Ficha!H10"
+            ],
+            [
+              "Coste sin IVA de la primera línea",
+              "3,95 €",
+              "ficha-escandallo-base.xlsx!Ficha!I10"
+            ],
+            [
+              "Cantidad bruta del boniato",
+              "0,22",
+              "ficha-escandallo-base.xlsx!Ficha!H12"
+            ],
+            [
+              "Coste total de la ficha, sin IVA",
+              "5,67 €",
+              "ficha-escandallo-base.xlsx!Ficha!E32"
+            ],
+            [
+              "Coste por ración, sin IVA",
+              "5,67 €",
+              "ficha-escandallo-base.xlsx!Ficha!E33"
+            ],
+            [
+              "PVP objetivo sin IVA",
+              "18,90 €",
+              "ficha-escandallo-base.xlsx!Ficha!E34"
+            ],
+            [
+              "PVP objetivo con IVA",
+              "20,79 €",
+              "ficha-escandallo-base.xlsx!Ficha!E36"
+            ],
+            [
+              "PVP actual en carta, sin IVA",
+              "17,30 €",
+              "ficha-escandallo-base.xlsx!Ficha!E37"
+            ],
+            [
+              "Food cost real con el PVP actual",
+              "32,8 %",
+              "ficha-escandallo-base.xlsx!Ficha!E39"
+            ],
+            [
+              "Margen de contribución con el PVP actual",
+              "11,63 €",
+              "ficha-escandallo-base.xlsx!Ficha!E40"
+            ],
+            [
+              "Diferencia entre el PVP objetivo y el actual",
+              "1,60 €",
+              "ficha-escandallo-base.xlsx!Ficha!E41"
+            ],
+            [
+              "Subida necesaria sobre el PVP actual",
+              "9,3 %",
+              "ficha-escandallo-base.xlsx!Ficha!E42"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Food Cost Teórico vs Real: Dónde se Escapa el Dinero",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-BENCH-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Compras del año en el cuadro de mando",
+              "396.100 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!F17"
+            ],
+            [
+              "Consumo real de materia prima del año",
+              "395.400 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!H17"
+            ],
+            [
+              "Ventas netas totales del año",
+              "1.232.200 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!D17"
+            ],
+            [
+              "Coste de materia prima sobre ventas del año",
+              "32,1 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I17"
+            ],
+            [
+              "Food cost objetivo del cuadro de mando",
+              "30 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B21"
+            ],
+            [
+              "Food cost real de enero",
+              "31,7 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I5"
+            ],
+            [
+              "Ventas netas totales de enero",
+              "89.600 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!D5"
+            ],
+            [
+              "Food cost teórico de la carta de ejemplo",
+              "32,7 %",
+              "matriz-multimetodo-carta.xlsx!Datos!H32"
+            ],
+            [
+              "Food cost objetivo de la ficha de escandallo",
+              "30 %",
+              "ficha-escandallo-base.xlsx!Ficha!D7"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Prime Cost: la Métrica que Mide la Salud del Negocio",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-PRIME-01",
+            "FC-PRIME-02",
+            "FC-PRIME-03",
+            "FC-PRIME-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Tipo de negocio elegido en el cuadro de mando",
+              "Servicio en mesa",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B5"
+            ],
+            [
+              "Objetivo de prime cost con servicio en mesa",
+              "65 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B8"
+            ],
+            [
+              "Objetivo de prime cost en barra o autoservicio",
+              "55 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B9"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B11"
+            ],
+            [
+              "Seguridad Social a cargo de la empresa",
+              "33 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B20"
+            ],
+            [
+              "Salarios brutos del año",
+              "277.600 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!J17"
+            ],
+            [
+              "Otros costes de personal del año",
+              "16.450 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!K17"
+            ],
+            [
+              "Coste de personal con Seguridad Social del año",
+              "385.658 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!L17"
+            ],
+            [
+              "Coste de materia prima sobre ventas del año",
+              "32,1 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I17"
+            ],
+            [
+              "Labor cost del año",
+              "31,3 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!M17"
+            ],
+            [
+              "Prime cost del año",
+              "63,4 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N17"
+            ],
+            [
+              "Margen tras prime cost del año",
+              "451.142 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!P17"
+            ],
+            [
+              "Margen tras prime cost del año sobre ventas",
+              "36,6 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!Q17"
+            ],
+            [
+              "Prime cost del mejor mes (abril)",
+              "62,7 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N8"
+            ],
+            [
+              "Prime cost del peor mes (agosto)",
+              "69,9 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N12"
+            ],
+            [
+              "Lectura del prime cost de agosto",
+              "Por encima del objetivo",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!R12"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Cuatro Formas de Poner Precio a un Plato",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-BENCH-01",
+            "FC-BENCH-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost objetivo global de la hoja de precios",
+              "30 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E5"
+            ],
+            [
+              "Tipo de IVA de restauración en sala",
+              "10 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E6"
+            ],
+            [
+              "PVP del chuletón por el método del factor",
+              "49,33 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!K20"
+            ],
+            [
+              "PVP del chuletón por margen objetivo",
+              "25,30 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!L20"
+            ],
+            [
+              "PVP elegido para el chuletón",
+              "25,30 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!Q20"
+            ],
+            [
+              "Food cost final del chuletón",
+              "58,5 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!T20"
+            ],
+            [
+              "PVP actual del chuletón en carta",
+              "32,70 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!V20"
+            ],
+            [
+              "PVP de las croquetas por el método del factor",
+              "7,00 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!K9"
+            ],
+            [
+              "PVP actual de las croquetas en carta",
+              "8,60 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!V9"
+            ],
+            [
+              "Diferencia de las croquetas con su PVP actual",
+              "-1,60 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!W9"
+            ],
+            [
+              "Platos con precio calculado",
+              "20",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E36"
+            ],
+            [
+              "Platos dentro del objetivo",
+              "11",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E37"
+            ],
+            [
+              "Platos por encima del objetivo",
+              "9",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E38"
+            ],
+            [
+              "Food cost del conjunto de la carta con los precios elegidos",
+              "36,7 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E39"
+            ],
+            [
+              "Margen de contribución medio por plato",
+              "8,01 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E40"
+            ],
+            [
+              "Platos que usan el método A",
+              "5",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E52"
+            ],
+            [
+              "Platos que usan el método B",
+              "6",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E53"
+            ],
+            [
+              "Platos que usan el método C",
+              "4",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E54"
+            ],
+            [
+              "Platos que usan el método D",
+              "5",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E55"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Psicología de Precios: lo Demostrado y lo que es Leyenda",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-PSICO-01",
+            "FC-PSICO-02"
+          ],
+          "sector_huecos": [
+            "FC-PSICO-03"
+          ],
+          "cifras": [
+            [
+              "Tipo de IVA de restauración en sala",
+              "10 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E6"
+            ],
+            [
+              "Platos que usan el método del precio de mercado",
+              "4",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E54"
+            ],
+            [
+              "Platos que usan el método del valor percibido",
+              "5",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E55"
+            ],
+            [
+              "Precio de la carta entera si todo fuese a valor percibido",
+              "307,04 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E48"
+            ],
+            [
+              "Precio de la carta entera con los PVP actuales",
+              "266,90 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E49"
+            ],
+            [
+              "Food cost del conjunto de la carta con los precios elegidos",
+              "36,7 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E39"
+            ],
+            [
+              "PVP elegido de las croquetas, sin IVA",
+              "7,00 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!Q9"
+            ],
+            [
+              "PVP elegido del chuletón, sin IVA",
+              "25,30 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!Q20"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Ingeniería de Menú I: Kasavana & Smith Bien Hecho",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [
+            "FC-METODO-01"
+          ],
+          "cifras": [
+            [
+              "Factor del umbral de popularidad",
+              "70 %",
+              "matriz-multimetodo-carta.xlsx!Datos!D33"
+            ],
+            [
+              "Platos con ventas en la carta",
+              "20",
+              "matriz-multimetodo-carta.xlsx!Datos!D35"
+            ],
+            [
+              "Unidades vendidas al mes por la carta",
+              "4.870",
+              "matriz-multimetodo-carta.xlsx!Datos!D32"
+            ],
+            [
+              "Margen de contribución medio ponderado de la carta",
+              "8,16 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G32"
+            ],
+            [
+              "MC medio ponderado de los entrantes",
+              "7,46 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G40"
+            ],
+            [
+              "MC medio ponderado de los principales",
+              "10,80 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G41"
+            ],
+            [
+              "MC medio ponderado de los postres",
+              "4,48 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G42"
+            ],
+            [
+              "Platos clasificados como Star",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C33"
+            ],
+            [
+              "Unidades vendidas por los Star",
+              "1.950",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!D33"
+            ],
+            [
+              "Porcentaje de las unidades de la carta que son Star",
+              "40,0 %",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!E33"
+            ],
+            [
+              "MC total aportado por los Star",
+              "14.865 €",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!F33"
+            ],
+            [
+              "Platos clasificados como Plowhorse",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C34"
+            ],
+            [
+              "MC total aportado por los Plowhorse",
+              "16.198 €",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!F34"
+            ],
+            [
+              "Platos clasificados como Puzzle",
+              "5",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C35"
+            ],
+            [
+              "MC total aportado por los Puzzle",
+              "6.357 €",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!F35"
+            ],
+            [
+              "Platos clasificados como Dog",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C36"
+            ],
+            [
+              "Unidades vendidas por los Dog",
+              "350",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!D36"
+            ],
+            [
+              "MC total aportado por los Dog",
+              "2.318 €",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!F36"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Ingeniería de Menú II: lo que la Matriz Clásica no Ve",
+          "tablas": 3,
+          "sector_usado": [
+            "FC-METODO-05"
+          ],
+          "sector_huecos": [
+            "FC-METODO-02",
+            "FC-METODO-03",
+            "FC-METODO-04"
+          ],
+          "cifras": [
+            [
+              "Platos clasificados como Winner por Miller",
+              "8",
+              "matriz-multimetodo-carta.xlsx!Miller!C33"
+            ],
+            [
+              "Unidades vendidas por los Winner",
+              "2.940",
+              "matriz-multimetodo-carta.xlsx!Miller!D33"
+            ],
+            [
+              "Porcentaje de las unidades que son Winner",
+              "60,4 %",
+              "matriz-multimetodo-carta.xlsx!Miller!E33"
+            ],
+            [
+              "Food cost medio ponderado de los Winner",
+              "26,9 %",
+              "matriz-multimetodo-carta.xlsx!Miller!F33"
+            ],
+            [
+              "Platos clasificados como Marginal",
+              "7",
+              "matriz-multimetodo-carta.xlsx!Miller!C34"
+            ],
+            [
+              "Platos clasificados como Loser",
+              "5",
+              "matriz-multimetodo-carta.xlsx!Miller!C35"
+            ],
+            [
+              "Food cost medio ponderado de los Loser",
+              "40,7 %",
+              "matriz-multimetodo-carta.xlsx!Miller!F35"
+            ],
+            [
+              "Platos clasificados como Prime por Pavesic",
+              "7",
+              "matriz-multimetodo-carta.xlsx!Pavesic!C33"
+            ],
+            [
+              "MC ponderado total de los Prime",
+              "21.408 €",
+              "matriz-multimetodo-carta.xlsx!Pavesic!F33"
+            ],
+            [
+              "Platos clasificados como Standard",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Pavesic!C34"
+            ],
+            [
+              "Platos clasificados como Sleeper",
+              "4",
+              "matriz-multimetodo-carta.xlsx!Pavesic!C35"
+            ],
+            [
+              "Platos clasificados como Problem",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Pavesic!C36"
+            ],
+            [
+              "MC ponderado total de los Problem",
+              "7.830 €",
+              "matriz-multimetodo-carta.xlsx!Pavesic!F36"
+            ],
+            [
+              "Coste de personal sobre ventas usado en el Goal Value",
+              "32 %",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D33"
+            ],
+            [
+              "Otros costes variables sobre ventas usados en el Goal Value",
+              "10 %",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D34"
+            ],
+            [
+              "Platos por encima del Goal Value objetivo de su familia",
+              "9",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D36"
+            ],
+            [
+              "Platos por debajo del Goal Value objetivo de su familia",
+              "11",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D37"
+            ],
+            [
+              "Food cost medio ponderado de la carta",
+              "32,7 %",
+              "matriz-multimetodo-carta.xlsx!Datos!H32"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "Cuando los Métodos Discrepan: el Protocolo de Decisión",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-METODO-05"
+          ],
+          "sector_huecos": [
+            "FC-METODO-01",
+            "FC-METODO-04"
+          ],
+          "cifras": [
+            [
+              "Platos con las cuatro lecturas en la mejor categoría",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C39"
+            ],
+            [
+              "Platos con tres o cuatro lecturas fuera",
+              "12",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C40"
+            ],
+            [
+              "Platos con ninguna lectura fuera",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C33"
+            ],
+            [
+              "Porcentaje de la carta sin ninguna lectura fuera",
+              "15,0 %",
+              "matriz-multimetodo-carta.xlsx!Comparativa!D33"
+            ],
+            [
+              "Platos con una lectura fuera",
+              "4",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C34"
+            ],
+            [
+              "Platos con dos lecturas fuera",
+              "1",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C35"
+            ],
+            [
+              "Porcentaje de la carta con dos lecturas fuera",
+              "5,0 %",
+              "matriz-multimetodo-carta.xlsx!Comparativa!D35"
+            ],
+            [
+              "Platos con tres lecturas fuera",
+              "4",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C36"
+            ],
+            [
+              "Platos con las cuatro lecturas fuera",
+              "8",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C37"
+            ],
+            [
+              "Platos con ventas en la carta",
+              "20",
+              "matriz-multimetodo-carta.xlsx!Datos!D35"
+            ],
+            [
+              "Margen de contribución medio ponderado de la carta",
+              "8,16 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G32"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "Carta Corta, Menú de Precio Fijo, Buffet y Banquete",
+          "tablas": 3,
+          "sector_usado": [
+            "FC-BENCH-05",
+            "FC-BENCH-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "PVP del menú de precio fijo, con IVA",
+              "14,50 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C19"
+            ],
+            [
+              "Tipo de IVA de restauración en sala",
+              "10 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C20"
+            ],
+            [
+              "PVP del menú sin IVA",
+              "13,18 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C21"
+            ],
+            [
+              "Costes fijos por menú",
+              "0,55 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C22"
+            ],
+            [
+              "Food cost objetivo del menú",
+              "30 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C23"
+            ],
+            [
+              "Menús servidos al mes",
+              "100",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C24"
+            ],
+            [
+              "Coste medio total del menú con el mix base",
+              "5,63 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B38"
+            ],
+            [
+              "Coste medio total del menú en el escenario A",
+              "5,93 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C38"
+            ],
+            [
+              "Coste medio total del menú en el escenario B",
+              "5,35 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D38"
+            ],
+            [
+              "Food cost del menú con el mix base",
+              "42,7 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B39"
+            ],
+            [
+              "Food cost del menú en el escenario A",
+              "45,0 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C39"
+            ],
+            [
+              "Food cost del menú en el escenario B",
+              "40,6 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D39"
+            ],
+            [
+              "Margen de contribución por menú con el mix base",
+              "7,55 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B40"
+            ],
+            [
+              "Margen de contribución por menú en el escenario A",
+              "7,25 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C40"
+            ],
+            [
+              "Margen de contribución por menú en el escenario B",
+              "7,83 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D40"
+            ],
+            [
+              "Margen del mes con el mix base",
+              "754,93 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B41"
+            ],
+            [
+              "Margen del mes en el escenario A",
+              "725,18 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C41"
+            ],
+            [
+              "Margen del mes en el escenario B",
+              "782,93 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D41"
+            ],
+            [
+              "Platos dados de alta en la carta de ejemplo",
+              "20",
+              "matriz-multimetodo-carta.xlsx!Datos!D36"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "Multicanal: Sala, Take Away y Delivery",
+          "tablas": 3,
+          "sector_usado": [
+            "FC-DELIV-01",
+            "FC-DELIV-02",
+            "FC-DELIV-03",
+            "FC-IVA-02",
+            "FC-IVA-03",
+            "FC-IVA-04",
+            "FC-IVA-08"
+          ],
+          "sector_huecos": [
+            "FC-BENCH-04"
+          ],
+          "cifras": [
+            [
+              "Comisión de la plataforma en delivery",
+              "30 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!B18"
+            ],
+            [
+              "Packaging por pedido en take away",
+              "1,75 €",
+              "simulador-repricing-multicanal.xlsx!Parámetros!C17"
+            ],
+            [
+              "Packaging por pedido en delivery",
+              "1,75 €",
+              "simulador-repricing-multicanal.xlsx!Parámetros!C18"
+            ],
+            [
+              "Platos por pedido en delivery",
+              "2,5",
+              "simulador-repricing-multicanal.xlsx!Parámetros!D18"
+            ],
+            [
+              "Packaging por plato en delivery",
+              "0,70 €",
+              "simulador-repricing-multicanal.xlsx!Parámetros!F18"
+            ],
+            [
+              "Food cost objetivo en sala",
+              "30 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!E16"
+            ],
+            [
+              "Food cost objetivo en take away",
+              "30 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!E17"
+            ],
+            [
+              "Food cost objetivo en delivery",
+              "40 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!E18"
+            ],
+            [
+              "Food cost efectivo medio en sala",
+              "31,4 %",
+              "simulador-repricing-multicanal.xlsx!Resumen!D5"
+            ],
+            [
+              "Food cost efectivo medio en take away",
+              "38,2 %",
+              "simulador-repricing-multicanal.xlsx!Resumen!D6"
+            ],
+            [
+              "Food cost efectivo medio en delivery",
+              "54,6 %",
+              "simulador-repricing-multicanal.xlsx!Resumen!D7"
+            ],
+            [
+              "Platos viables en sala",
+              "16",
+              "simulador-repricing-multicanal.xlsx!Resumen!B5"
+            ],
+            [
+              "Platos viables en delivery",
+              "12",
+              "simulador-repricing-multicanal.xlsx!Resumen!B7"
+            ],
+            [
+              "Platos a excluir o reformular en delivery",
+              "8",
+              "simulador-repricing-multicanal.xlsx!Resumen!C7"
+            ],
+            [
+              "Margen mensual total en sala",
+              "43.635 €",
+              "simulador-repricing-multicanal.xlsx!Resumen!G5"
+            ],
+            [
+              "Margen mensual total en delivery",
+              "30.050 €",
+              "simulador-repricing-multicanal.xlsx!Resumen!G7"
+            ],
+            [
+              "Diferencia de margen del delivery frente a la sala",
+              "-13.585 €",
+              "simulador-repricing-multicanal.xlsx!Resumen!I7"
+            ],
+            [
+              "Food cost en sala de las croquetas",
+              "24,4 %",
+              "simulador-repricing-multicanal.xlsx!Carta!H5"
+            ],
+            [
+              "Food cost en delivery de las croquetas",
+              "46,5 %",
+              "simulador-repricing-multicanal.xlsx!Carta!V5"
+            ],
+            [
+              "PVP sin IVA que necesitan las croquetas en delivery",
+              "10,00 €",
+              "simulador-repricing-multicanal.xlsx!Carta!W5"
+            ],
+            [
+              "Precio techo de las croquetas en la aplicación",
+              "11,60 €",
+              "simulador-repricing-multicanal.xlsx!Carta!F5"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "Beverage Cost: la Bodega Como Cuenta de Resultados Propia",
+          "tablas": 3,
+          "sector_usado": [
+            "FC-BENCH-02",
+            "FC-BEV-01",
+            "FC-BEV-02",
+            "FC-IVA-01",
+            "FC-IVA-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Objetivo de beverage cost de los vinos",
+              "30 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!B17"
+            ],
+            [
+              "Objetivo de beverage cost de cervezas y refrescos",
+              "22 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!B18"
+            ],
+            [
+              "Objetivo de beverage cost de destilados y cócteles",
+              "20 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!B19"
+            ],
+            [
+              "Ventas totales de bodega del mes",
+              "43.657 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!B8"
+            ],
+            [
+              "Coste total de bodega del mes",
+              "11.503,96 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!C8"
+            ],
+            [
+              "Beverage cost ponderado de toda la bodega",
+              "26,4 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D8"
+            ],
+            [
+              "Margen de contribución total de la bodega",
+              "32.153,04 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!F8"
+            ],
+            [
+              "Margen total a recuperar si cada categoría llegase a su objetivo",
+              "646,38 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!H8"
+            ],
+            [
+              "Beverage cost ponderado de los vinos",
+              "30,2 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D5"
+            ],
+            [
+              "Beverage cost ponderado de cervezas y refrescos",
+              "25,4 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D6"
+            ],
+            [
+              "Beverage cost ponderado de destilados y cócteles",
+              "20,9 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D7"
+            ],
+            [
+              "Peso de los vinos sobre las ventas de bodega",
+              "41,6 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!G5"
+            ],
+            [
+              "Peso de cervezas y refrescos sobre las ventas de bodega",
+              "35,6 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!G6"
+            ],
+            [
+              "Botellas de vino vendidas al mes",
+              "530",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!J35"
+            ],
+            [
+              "Copas de vino vendidas al mes",
+              "2.540",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!K35"
+            ],
+            [
+              "Coste por copa del tinto de la casa",
+              "0,78 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!L5"
+            ],
+            [
+              "Margen por copa del tinto de la casa",
+              "2,22 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!N5"
+            ],
+            [
+              "Beverage cost de la botella del tinto de la casa",
+              "28,7 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!O5"
+            ],
+            [
+              "Beverage cost de la copa del tinto de la casa",
+              "26,0 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!P5"
+            ],
+            [
+              "Servicios de cerveza y refrescos vendidos al mes",
+              "6.360",
+              "carta-de-bebidas-beverage-cost.xlsx!Cervezas y Refrescos!J20"
+            ],
+            [
+              "Beverage cost ponderado de los combinados",
+              "21,6 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Destilados y Cócteles!N17"
+            ],
+            [
+              "Beverage cost ponderado de los cócteles",
+              "19,7 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Destilados y Cócteles!I64"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "Costeo por Lote en Obrador y Pastelería",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-PRIME-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Pruebas de cocción registradas",
+              "5",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!E20"
+            ],
+            [
+              "Rendimiento medio de cocción ponderado",
+              "72,7 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!E18"
+            ],
+            [
+              "Pérdida media por cocción",
+              "27,3 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!E19"
+            ],
+            [
+              "Pérdida de cocción del solomillo a la plancha",
+              "22,0 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!G6"
+            ],
+            [
+              "Pérdida de cocción del pollo de corral al horno",
+              "28,0 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!G7"
+            ],
+            [
+              "Coste por kilo del pollo ya cocinado",
+              "7,50 €",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!J7"
+            ],
+            [
+              "Pérdida de cocción de las verduras asadas",
+              "31,0 %",
+              "rendimiento-mermas-producto.xlsx!Merma de Cocción!G10"
+            ],
+            [
+              "Platos que usan el método del margen objetivo",
+              "6",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E53"
+            ],
+            [
+              "Margen de contribución medio por plato",
+              "8,01 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E40"
+            ],
+            [
+              "Food cost del conjunto de la carta",
+              "36,7 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E39"
+            ]
+          ]
+        },
+        {
+          "n": 18,
+          "titulo": "Cuando Sube el Proveedor: Protocolo de Re-escandallado",
+          "tablas": 2,
+          "sector_usado": [
+            "FC-FUENTES-01"
+          ],
+          "sector_huecos": [
+            "FC-FUENTES-02",
+            "FC-FUENTES-03"
+          ],
+          "cifras": [
+            [
+              "Platos con precio calculado",
+              "20",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E36"
+            ],
+            [
+              "Platos dentro del objetivo",
+              "11",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E37"
+            ],
+            [
+              "Platos por encima del objetivo",
+              "9",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E38"
+            ],
+            [
+              "Diferencia total con los PVP actuales",
+              "-13,54 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E41"
+            ],
+            [
+              "Subida media sobre el PVP actual",
+              "-5,1 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E42"
+            ],
+            [
+              "Diferencia de las croquetas con su PVP actual",
+              "-1,60 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!W9"
+            ],
+            [
+              "Subida necesaria del plato de la ficha",
+              "9,3 %",
+              "ficha-escandallo-base.xlsx!Ficha!E42"
+            ],
+            [
+              "Diferencia entre el PVP objetivo y el actual del plato de la ficha",
+              "1,60 €",
+              "ficha-escandallo-base.xlsx!Ficha!E41"
+            ],
+            [
+              "Impacto total estimado de las decisiones del plan",
+              "2.360 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D31"
+            ],
+            [
+              "Decisiones de negociación registradas en el plan",
+              "2",
+              "plan-accion-90-dias.xlsx!Decisiones!C43"
+            ],
+            [
+              "Impacto estimado de las decisiones de negociación",
+              "300 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D43"
+            ]
+          ]
+        },
+        {
+          "n": 19,
+          "titulo": "Caso Integral: una Carta Entera, de Principio a Fin",
+          "tablas": 4,
+          "sector_usado": [
+            "FC-BENCH-01",
+            "FC-PRIME-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Platos dados de alta en la carta",
+              "20",
+              "matriz-multimetodo-carta.xlsx!Datos!D36"
+            ],
+            [
+              "Unidades vendidas al mes",
+              "4.870",
+              "matriz-multimetodo-carta.xlsx!Datos!D32"
+            ],
+            [
+              "Ventas netas del mes de la carta",
+              "59.029 €",
+              "matriz-multimetodo-carta.xlsx!Datos!I32"
+            ],
+            [
+              "Food cost medio ponderado de la carta",
+              "32,7 %",
+              "matriz-multimetodo-carta.xlsx!Datos!H32"
+            ],
+            [
+              "Margen de contribución medio ponderado de la carta",
+              "8,16 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G32"
+            ],
+            [
+              "Coste por ración del plato de la ficha",
+              "5,67 €",
+              "ficha-escandallo-base.xlsx!Ficha!E33"
+            ],
+            [
+              "PVP objetivo del plato de la ficha, sin IVA",
+              "18,90 €",
+              "ficha-escandallo-base.xlsx!Ficha!E34"
+            ],
+            [
+              "Rendimiento medio ponderado de los tests",
+              "60,5 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E26"
+            ],
+            [
+              "Platos con las cuatro lecturas en la mejor categoría",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C39"
+            ],
+            [
+              "Platos con tres o cuatro lecturas fuera",
+              "12",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C40"
+            ],
+            [
+              "Platos Star",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C33"
+            ],
+            [
+              "Platos Dog",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C36"
+            ],
+            [
+              "Platos dentro del objetivo tras poner precio",
+              "11",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E37"
+            ],
+            [
+              "Food cost del conjunto de la carta con los precios elegidos",
+              "36,7 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E39"
+            ],
+            [
+              "Diferencia total con los PVP actuales",
+              "-13,54 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E41"
+            ],
+            [
+              "Platos viables en delivery",
+              "12",
+              "simulador-repricing-multicanal.xlsx!Resumen!B7"
+            ],
+            [
+              "Platos a excluir o reformular en delivery",
+              "8",
+              "simulador-repricing-multicanal.xlsx!Resumen!C7"
+            ],
+            [
+              "Food cost efectivo medio en delivery",
+              "54,6 %",
+              "simulador-repricing-multicanal.xlsx!Resumen!D7"
+            ],
+            [
+              "Margen mensual total en sala",
+              "43.635 €",
+              "simulador-repricing-multicanal.xlsx!Resumen!G5"
+            ],
+            [
+              "Diferencia de margen del delivery frente a la sala",
+              "-13.585 €",
+              "simulador-repricing-multicanal.xlsx!Resumen!I7"
+            ],
+            [
+              "Beverage cost ponderado de toda la bodega",
+              "26,4 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D8"
+            ],
+            [
+              "Margen de contribución total de la bodega",
+              "32.153,04 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!F8"
+            ],
+            [
+              "Prime cost del año",
+              "63,4 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N17"
+            ],
+            [
+              "Objetivo de prime cost en vigor",
+              "65 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B11"
+            ],
+            [
+              "Decisiones registradas en el plan",
+              "10",
+              "plan-accion-90-dias.xlsx!Decisiones!D27"
+            ],
+            [
+              "Impacto total estimado de las decisiones",
+              "2.360 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D31"
+            ],
+            [
+              "Impacto total estimado a doce meses",
+              "28.320 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D34"
+            ],
+            [
+              "Food cost del mes 0 en los indicadores",
+              "33,1 %",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!B5"
+            ],
+            [
+              "Food cost del mes 3 en los indicadores",
+              "29,8 %",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!E5"
+            ],
+            [
+              "Prime cost del mes 0 en los indicadores",
+              "66,8 %",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!B6"
+            ],
+            [
+              "Prime cost del mes 3 en los indicadores",
+              "63,8 %",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!E6"
+            ],
+            [
+              "Platos en carta en el mes 0",
+              "20",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!B9"
+            ],
+            [
+              "Platos en carta en el mes 3",
+              "18",
+              "plan-accion-90-dias.xlsx!KPI de Seguimiento!E9"
+            ]
+          ]
+        },
+        {
+          "n": 20,
+          "titulo": "Cuándo tu Excel se Queda Corto",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [
+            "FC-FUENTES-03"
+          ],
+          "cifras": [
+            [
+              "Hitos registrados en el calendario de 90 días",
+              "26",
+              "plan-accion-90-dias.xlsx!Calendario 90 Días!D33"
+            ],
+            [
+              "Hitos pendientes",
+              "26",
+              "plan-accion-90-dias.xlsx!Calendario 90 Días!D35"
+            ],
+            [
+              "Avance del calendario",
+              "0 %",
+              "plan-accion-90-dias.xlsx!Calendario 90 Días!D36"
+            ],
+            [
+              "Decisiones registradas",
+              "10",
+              "plan-accion-90-dias.xlsx!Decisiones!D27"
+            ],
+            [
+              "Objetivo de cierre a 90 días",
+              "80 %",
+              "plan-accion-90-dias.xlsx!Decisiones!D35"
+            ],
+            [
+              "Impacto total estimado de las decisiones",
+              "2.360 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D31"
+            ],
+            [
+              "Impacto total estimado a doce meses",
+              "28.320 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D34"
+            ],
+            [
+              "Decisiones que salen de la matriz multi-método",
+              "5",
+              "plan-accion-90-dias.xlsx!Decisiones!C51"
+            ],
+            [
+              "Impacto estimado de las decisiones de la matriz",
+              "760 €",
+              "plan-accion-90-dias.xlsx!Decisiones!D51"
+            ],
+            [
+              "Decisiones que salen del simulador multicanal",
+              "2",
+              "plan-accion-90-dias.xlsx!Decisiones!C52"
+            ],
+            [
+              "Platos dados de alta en la carta de ejemplo",
+              "20",
+              "matriz-multimetodo-carta.xlsx!Datos!D36"
+            ]
+          ]
+        }
+      ]
+    },
+    "BONUS-ejercicios-resueltos": {
+      "gates": {
+        "paginas_pdf": 32,
+        "paginas_prometidas": 17,
+        "palabras_md": 13949,
+        "palabras_pdf": 12986,
+        "palabras_docx": 12436,
+        "palabras_objetivo": 7500,
+        "capitulos": 12,
+        "tablas_md": 12,
+        "tablas_docx": 12,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [
+          {
+            "errata": "coincidan",
+            "probable": "coincidian",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 3
+          },
+          {
+            "errata": "costeado",
+            "probable": "costeando",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 2
+          },
+          {
+            "errata": "manejado",
+            "probable": "manejando",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 2
+          },
+          {
+            "errata": "puzles",
+            "probable": "puzzles",
+            "veces": 1,
+            "apoyo": 0,
+            "freq_lexico": 83
+          }
+        ],
+        "erratas_ocurrencias": 4,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 10823,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 12570,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "12 Ejercicios Resueltos de Food Cost e Ingeniería de Menú"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "12 Ejercicios Resueltos de Food Cost e Ingeniería de Menú",
+          "created": "2026-09-04 02:17:01"
+        },
+        "paridad_palabras_pct": 1.07,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": false,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": false,
+        "saneados_winansi": 656,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/BONUS-ejercicios-resueltos.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/BONUS-ejercicios-resueltos.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/BONUS-ejercicios-resueltos.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Cantidad Bruta y Coste con Merma",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Cantidad neta por ración de la línea de solomillo",
+              "0,22",
+              "ficha-escandallo-base.xlsx!Ficha!D10"
+            ],
+            [
+              "Merma de la línea de solomillo",
+              "12,0 %",
+              "ficha-escandallo-base.xlsx!Ficha!F10"
+            ],
+            [
+              "Precio por unidad sin IVA del solomillo",
+              "15,80 €",
+              "ficha-escandallo-base.xlsx!Ficha!E10"
+            ],
+            [
+              "Cantidad bruta a comprar de solomillo",
+              "0,25",
+              "ficha-escandallo-base.xlsx!Ficha!H10"
+            ],
+            [
+              "Coste sin IVA de la línea de solomillo",
+              "3,95 €",
+              "ficha-escandallo-base.xlsx!Ficha!I10"
+            ],
+            [
+              "Cantidad bruta del boniato, con merma del 18 %",
+              "0,22",
+              "ficha-escandallo-base.xlsx!Ficha!H12"
+            ],
+            [
+              "Coste total de la ficha, sin IVA",
+              "5,67 €",
+              "ficha-escandallo-base.xlsx!Ficha!E32"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Test de Rendimiento con Subproductos",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Rendimiento de la lubina entera",
+              "51,7 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!H6"
+            ],
+            [
+              "Coste neto por kilo limpio sin aprovechar el subproducto",
+              "28,84 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!M6"
+            ],
+            [
+              "Coste neto por kilo limpio aprovechando el subproducto",
+              "27,63 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!N6"
+            ],
+            [
+              "Sobrecoste de la lubina sobre el precio del kilo bruto",
+              "12,73 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!P6"
+            ],
+            [
+              "Ahorro por aprovechar las cabezas de la gamba",
+              "1,43 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!O15"
+            ],
+            [
+              "Rendimiento medio ponderado de los tests",
+              "60,5 %",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E26"
+            ],
+            [
+              "Valor de uso total de los subproductos",
+              "5,15 €",
+              "rendimiento-mermas-producto.xlsx!Test de Rendimiento!E29"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Food Cost Real de un Mes",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ventas netas totales de enero",
+              "89.600 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!D5"
+            ],
+            [
+              "Consumo de materia prima de enero",
+              "28.400 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!H5"
+            ],
+            [
+              "Food cost de enero",
+              "31,7 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I5"
+            ],
+            [
+              "Compras del año",
+              "396.100 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!F17"
+            ],
+            [
+              "Consumo real del año",
+              "395.400 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!H17"
+            ],
+            [
+              "Ventas netas totales del año",
+              "1.232.200 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!D17"
+            ],
+            [
+              "Food cost del año",
+              "32,1 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I17"
+            ],
+            [
+              "Food cost objetivo del cuadro de mando",
+              "30 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B21"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "El Mismo Plato por los Cuatro Métodos",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Food cost objetivo global",
+              "30 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!E5"
+            ],
+            [
+              "PVP del chuletón por factor",
+              "49,33 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!K20"
+            ],
+            [
+              "PVP del chuletón por margen objetivo",
+              "25,30 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!L20"
+            ],
+            [
+              "PVP elegido para el chuletón",
+              "25,30 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!Q20"
+            ],
+            [
+              "Food cost final del chuletón",
+              "58,5 %",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!T20"
+            ],
+            [
+              "PVP actual del chuletón en carta",
+              "32,70 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!V20"
+            ],
+            [
+              "PVP de las croquetas por factor",
+              "7,00 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!K9"
+            ],
+            [
+              "PVP actual de las croquetas",
+              "8,60 €",
+              "precio-objetivo-multi-metodo.xlsx!Por Plato!V9"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "El IVA de una Bebida, Canal por Canal",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-IVA-01",
+            "FC-IVA-03",
+            "FC-IVA-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "IVA repercutido en sala, bebida alcohólica",
+              "10 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!D6"
+            ],
+            [
+              "IVA repercutido para llevar, bebida alcohólica",
+              "21 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!D7"
+            ],
+            [
+              "IVA repercutido para llevar, refresco azucarado",
+              "21 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!C7"
+            ],
+            [
+              "IVA repercutido para llevar, comida",
+              "10 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!B7"
+            ],
+            [
+              "PVP de la botella del tinto de la casa en sala, sin IVA",
+              "13,60 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!H5"
+            ],
+            [
+              "PVP de esa botella con IVA en sala",
+              "14,96 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!V5"
+            ],
+            [
+              "PVP de esa botella con IVA para llevar",
+              "16,46 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!Y5"
+            ],
+            [
+              "Coste de compra de esa botella, sin IVA",
+              "3,90 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!D5"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Clasificar una Familia con Kasavana & Smith",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [
+            "FC-METODO-01"
+          ],
+          "cifras": [
+            [
+              "Factor del umbral de popularidad",
+              "70 %",
+              "matriz-multimetodo-carta.xlsx!Datos!D33"
+            ],
+            [
+              "Platos de la familia de entrantes",
+              "7",
+              "matriz-multimetodo-carta.xlsx!Datos!C40"
+            ],
+            [
+              "Unidades vendidas por los entrantes",
+              "1.730",
+              "matriz-multimetodo-carta.xlsx!Datos!E40"
+            ],
+            [
+              "MC medio ponderado de los entrantes",
+              "7,46 €",
+              "matriz-multimetodo-carta.xlsx!Datos!G40"
+            ],
+            [
+              "Platos Star de la carta",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C33"
+            ],
+            [
+              "Platos Plowhorse de la carta",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C34"
+            ],
+            [
+              "Platos Puzzle de la carta",
+              "5",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C35"
+            ],
+            [
+              "Platos Dog de la carta",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Kasavana-Smith!C36"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "El Mismo Grupo en Miller y en Pavesic",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [
+            "FC-METODO-02",
+            "FC-METODO-03"
+          ],
+          "cifras": [
+            [
+              "Platos Winner en Miller",
+              "8",
+              "matriz-multimetodo-carta.xlsx!Miller!C33"
+            ],
+            [
+              "Platos Loser en Miller",
+              "5",
+              "matriz-multimetodo-carta.xlsx!Miller!C35"
+            ],
+            [
+              "Food cost medio ponderado de los Winner",
+              "26,9 %",
+              "matriz-multimetodo-carta.xlsx!Miller!F33"
+            ],
+            [
+              "Platos Prime en Pavesic",
+              "7",
+              "matriz-multimetodo-carta.xlsx!Pavesic!C33"
+            ],
+            [
+              "Platos Problem en Pavesic",
+              "6",
+              "matriz-multimetodo-carta.xlsx!Pavesic!C36"
+            ],
+            [
+              "MC ponderado total de los Prime",
+              "21.408 €",
+              "matriz-multimetodo-carta.xlsx!Pavesic!F33"
+            ],
+            [
+              "Platos con las cuatro lecturas en la mejor categoría",
+              "3",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C39"
+            ],
+            [
+              "Platos con tres o cuatro lecturas fuera",
+              "12",
+              "matriz-multimetodo-carta.xlsx!Comparativa!C40"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Goal Value de Dos Platos",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [
+            "FC-METODO-04"
+          ],
+          "cifras": [
+            [
+              "Coste de personal sobre ventas usado en el índice",
+              "32 %",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D33"
+            ],
+            [
+              "Otros costes variables sobre ventas usados en el índice",
+              "10 %",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D34"
+            ],
+            [
+              "Platos por encima del objetivo de su familia",
+              "9",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D36"
+            ],
+            [
+              "Platos por debajo del objetivo de su familia",
+              "11",
+              "matriz-multimetodo-carta.xlsx!Goal Value!D37"
+            ],
+            [
+              "Food cost medio ponderado de la carta",
+              "32,7 %",
+              "matriz-multimetodo-carta.xlsx!Datos!H32"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Repricing en Delivery con Packaging y Techo",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-DELIV-01",
+            "FC-DELIV-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Comisión de la plataforma en delivery",
+              "30 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!B18"
+            ],
+            [
+              "Packaging por pedido en delivery",
+              "1,75 €",
+              "simulador-repricing-multicanal.xlsx!Parámetros!C18"
+            ],
+            [
+              "Platos por pedido en delivery",
+              "2,5",
+              "simulador-repricing-multicanal.xlsx!Parámetros!D18"
+            ],
+            [
+              "Packaging por plato en delivery",
+              "0,70 €",
+              "simulador-repricing-multicanal.xlsx!Parámetros!F18"
+            ],
+            [
+              "Food cost objetivo en delivery",
+              "40 %",
+              "simulador-repricing-multicanal.xlsx!Parámetros!E18"
+            ],
+            [
+              "Coste por ración de las croquetas",
+              "2,10 €",
+              "simulador-repricing-multicanal.xlsx!Carta!C5"
+            ],
+            [
+              "PVP en sala de las croquetas, sin IVA",
+              "8,60 €",
+              "simulador-repricing-multicanal.xlsx!Carta!D5"
+            ],
+            [
+              "Food cost en delivery de las croquetas",
+              "46,5 %",
+              "simulador-repricing-multicanal.xlsx!Carta!V5"
+            ],
+            [
+              "PVP necesario en delivery de las croquetas",
+              "10,00 €",
+              "simulador-repricing-multicanal.xlsx!Carta!W5"
+            ],
+            [
+              "Precio techo de las croquetas",
+              "11,60 €",
+              "simulador-repricing-multicanal.xlsx!Carta!F5"
+            ],
+            [
+              "Platos viables en delivery",
+              "12",
+              "simulador-repricing-multicanal.xlsx!Resumen!B7"
+            ],
+            [
+              "Platos a excluir o reformular en delivery",
+              "8",
+              "simulador-repricing-multicanal.xlsx!Resumen!C7"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Copa o Botella",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-BEV-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Precio de compra de la botella del tinto de la casa",
+              "3,90 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!D5"
+            ],
+            [
+              "Copas por botella",
+              "5,0",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!G5"
+            ],
+            [
+              "Coste por copa",
+              "0,78 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!L5"
+            ],
+            [
+              "Margen por botella",
+              "9,70 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!M5"
+            ],
+            [
+              "Margen por copa",
+              "2,22 €",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!N5"
+            ],
+            [
+              "Beverage cost de la botella",
+              "28,7 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!O5"
+            ],
+            [
+              "Beverage cost de la copa",
+              "26,0 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!P5"
+            ],
+            [
+              "Beverage cost ponderado de los vinos",
+              "30,2 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Vinos!T35"
+            ],
+            [
+              "Objetivo de beverage cost de los vinos",
+              "30 %",
+              "carta-de-bebidas-beverage-cost.xlsx!Parámetros!B17"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Prime Cost de un Mes y su Semáforo",
+          "tablas": 1,
+          "sector_usado": [
+            "FC-PRIME-02",
+            "FC-PRIME-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Seguridad Social a cargo de la empresa",
+              "33 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B20"
+            ],
+            [
+              "Objetivo de prime cost con servicio en mesa",
+              "65 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B8"
+            ],
+            [
+              "Objetivo de prime cost en barra o autoservicio",
+              "55 %",
+              "cuadro-de-mando-prime-cost.xlsx!Parámetros!B9"
+            ],
+            [
+              "Ventas netas totales de agosto",
+              "99.600 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!D12"
+            ],
+            [
+              "Coste de personal con Seguridad Social de agosto",
+              "34.517 €",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!L12"
+            ],
+            [
+              "Food cost de agosto",
+              "35,2 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!I12"
+            ],
+            [
+              "Labor cost de agosto",
+              "34,7 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!M12"
+            ],
+            [
+              "Prime cost de agosto",
+              "69,9 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N12"
+            ],
+            [
+              "Lectura del prime cost de agosto",
+              "Por encima del objetivo",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!R12"
+            ],
+            [
+              "Prime cost del año",
+              "63,4 %",
+              "cuadro-de-mando-prime-cost.xlsx!Mensual!N17"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Menú de Precio Fijo: el Margen lo Decide el Mix",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "PVP del menú con IVA",
+              "14,50 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C19"
+            ],
+            [
+              "Tipo de IVA de restauración en sala",
+              "10 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C20"
+            ],
+            [
+              "PVP del menú sin IVA",
+              "13,18 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C21"
+            ],
+            [
+              "Costes fijos por menú",
+              "0,55 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C22"
+            ],
+            [
+              "Menús servidos al mes",
+              "100",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C24"
+            ],
+            [
+              "Coste medio total del menú con el mix base",
+              "5,63 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B38"
+            ],
+            [
+              "Coste medio total del menú en el escenario A",
+              "5,93 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C38"
+            ],
+            [
+              "Coste medio total del menú en el escenario B",
+              "5,35 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D38"
+            ],
+            [
+              "Food cost del menú con el mix base",
+              "42,7 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B39"
+            ],
+            [
+              "Food cost del menú en el escenario A",
+              "45,0 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C39"
+            ],
+            [
+              "Food cost del menú en el escenario B",
+              "40,6 %",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D39"
+            ],
+            [
+              "Margen por menú con el mix base",
+              "7,55 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B40"
+            ],
+            [
+              "Margen del mes con el mix base",
+              "754,93 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!B41"
+            ],
+            [
+              "Margen del mes en el escenario A",
+              "725,18 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!C41"
+            ],
+            [
+              "Margen del mes en el escenario B",
+              "782,93 €",
+              "matriz-multimetodo-carta.xlsx!Menú Precio Fijo!D41"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

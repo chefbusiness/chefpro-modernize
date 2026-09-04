@@ -1,0 +1,20 @@
+### Por familia, siempre: un postre no compite con un principal
+
+La matriz de Kasavana y Smith (1982), presentada en «Menu Engineering: A Practical Guide to Menu Analysis», cruza dos ejes: la popularidad de cada plato, medida en unidades vendidas, y su margen de contribución en euros, lo que le queda a cada plato tras descontar lo que cuesta prepararlo. Cada plato se compara con un umbral de unidades y con la media ponderada de margen, y ese cruce solo tiene sentido dentro de su propia familia de la carta: entrantes contra entrantes, principales contra principales, postres contra postres. Mezclarlos en una sola tabla es el error que inutiliza el método, junto con el de comparar el margen de cada plato contra la media simple de toda la carta en vez de contra la media ponderada de su propia familia.
+
+La carta de referencia de este capítulo tiene 20 platos con ventas y suma 4.870 unidades vendidas al mes, con un margen de contribución medio ponderado de 8,16 € para el conjunto. Pero ese 8,16 € esconde tres mundos distintos: los entrantes rondan un margen ponderado de 7,46 €, los principales suben hasta 10,80 € y los postres se quedan en 4,48 €. Un principal caro y un postre barato no van a competir nunca en margen por una razón que nada tiene que ver con lo bien diseñado que esté cada uno: comparado contra la media de toda la carta, el postre sale mal clasificado siempre, solo por pertenecer a una familia con un margen medio más bajo.
+
+El umbral de popularidad se construye igual de sencillo: si una familia tiene N platos, repartir las unidades a partes iguales daría a cada uno una N-ésima parte de las ventas de esa familia. El umbral es el 70 % de esa parte proporcional, y ese 70 % está en una celda propia de la hoja de cálculo, no escrito a fuego en el método: quien quiera exigir más a sus platos cambia ese número y la clasificación se recalcula sola.
+
+### Los cuatro cuadrantes y lo que significan de verdad
+
+Cruzar popularidad y margen por encima o por debajo del umbral deja cuatro cuadrantes, y se mantienen con su nombre original —Star, Plowhorse, Puzzle, Dog— porque son los que el lector va a encontrar en cualquier material sobre el tema:
+
+- Star: vende mucho y deja mucho margen. En esta carta son 6 platos que suman 1.950 unidades, el 40,0 % de todo lo que se vende, y aportan 14.865 € de margen de contribución.
+- Plowhorse, el caballo de batalla: vende mucho pero con poco margen. Son 6 platos que, entre todos, aportan 16.198 €.
+- Puzzle: deja buen margen pero se vende poco. Son 5 platos con 6.357 € de aportación conjunta.
+- Dog: no vende ni deja margen. Son 3 platos, 350 unidades entre todos, 2.318 € de margen total.
+
+El orden de intervención va por riesgo, no por orden alfabético de cuadrante. Sobre un Plowhorse se sube el precio con cuidado, en pasos pequeños: es el plato que más gente pide y un salto brusco se nota. Sobre un Puzzle se rediseña antes de tocar el precio: se cambia el nombre en la carta, se reubica en la página o se prueba junto a un plato que arrastre más pedidos. Retirar es la última palanca, no la primera: un Dog puede estar sosteniendo a otros platos del ticket medio, completando un menú de precio fijo o cerrando una mesa de grupo que sin esa opción se habría ido a otro sitio. Quitarlo sin mirar ese efecto puede llevarse por delante ventas que nunca aparecerán en su propia fila de la matriz.
+
+La propia matriz reconoce su límite: trabaja con promedios, así que un cambio pequeño en la carta —un plato nuevo, una subida de precio en otro, un cambio de temporada— puede mover un plato de cuadrante sin que haya cambiado nada en su receta. El cuadro siguiente, con la carta clasificada plato a plato dentro de su familia, y la tabla de abajo, con el peso de cada cuadrante, son una fotografía de este momento, no una etiqueta permanente.

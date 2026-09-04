@@ -1,0 +1,22 @@
+### En sala va todo al tipo reducido, bebida alcohólica incluida
+
+El error que más distorsiona el food cost no está en el escandallo (costeo de recetas): está antes, en el denominador. Cuando se divide el coste por ración entre el precio con IVA, el resultado es un porcentaje más bajo del real, y esa dirección del error es la peor posible porque hace creer que el margen aguanta cuando no aguanta. El food cost se calcula siempre sobre la base imponible, es decir, sobre el precio de venta sin IVA.
+
+La ficha de la hoja «Ficha» de ficha-escandallo-base.xlsx lo muestra con números propios del pack. El coste por ración es 5,67 € y el precio de venta sin IVA es 17,30 €: el food cost real queda en 32,8 %. Si en lugar del precio sin IVA se usara el precio con IVA, que es 19,03 €, el porcentaje caería y daría una lectura artificialmente cómoda. La tabla de abajo recoge exactamente ese contraste para que no quede ninguna duda sobre qué celda es el denominador correcto.
+
+El fundamento de que en sala todo el consumo tribute al 10 % —comida y bebida alcohólica por igual— está en el artículo 91.Uno.2.2.º de la Ley 37/1992, del Impuesto sobre el Valor Añadido (texto consolidado, última modificación introducida por la Ley 7/2024, en vigor desde el 22 de diciembre de 2024). Lo que se presta en un restaurante, una terraza o una barra es un servicio de hostelería, no una entrega de bienes. Esa calificación jurídica arrastra a todo el consumo al tipo reducido, sin excepción por tipo de producto: la copa de vino, el gin-tonic y la cerveza de barril van al 10 % exactamente igual que el plato principal, porque el objeto del contrato es el servicio, no la botella.
+
+El margen de contribución del plato con el precio de venta actual es 11,63 €, calculado sobre la base imponible de 17,30 €. Ese es el dato que alimenta la ingeniería de menú: un margen calculado sobre el precio con IVA sería menor en términos absolutos y llevaría a decisiones de carta equivocadas.
+
+### Sin servicio hay entrega de bienes: qué se va al tipo general
+
+Cuando no hay servicio de hostelería, la operación cambia de naturaleza jurídica: es una entrega de bienes y las exclusiones del artículo 91.Uno.1.1.º de la Ley 37/1992 entran en juego. La comida elaborada para llevar o a domicilio sigue al 10 %, según confirma la Dirección General de Tributos en la consulta vinculante V2254-22 (DGT, 26 de octubre de 2022), emitida precisamente sobre el supuesto de una plataforma de reparto con repartidores subcontratados, que es el escenario exacto del delivery de restauración.
+
+Lo que cambia de tipo son dos categorías concretas:
+
+- Las bebidas alcohólicas quedan excluidas del tipo reducido en entrega de bienes y pasan al 21 %, tipo general del artículo 90 de la Ley 37/1992, según los artículos 90 y 91.Uno.1.1.º de esa misma norma, ratificados por la consulta V2254-22.
+- Los refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos tributan también al 21 % desde el 1 de enero de 2021, por la redacción dada al artículo 91.Uno.1.1.º por la Ley 11/2020 de Presupuestos Generales del Estado para 2021, en su artículo 69. Los zumos y refrescos sin azúcares ni edulcorantes añadidos no están afectados por esa exclusión.
+
+El mismo botellín de cerveza que en la barra lleva un 10 % lleva un 21 % si el cliente lo recibe en casa: no es una rareza fiscal, es la consecuencia directa de que en un caso se presta un servicio y en el otro se entrega un bien. La hoja «Parámetros» de simulador-repricing-multicanal.xlsx recoge los tres canales y los tres tipos de producto en celdas editables con nota; las fórmulas del libro los leen mediante INDEX y MATCH, de modo que si mañana cambia cualquier tipo, basta con modificar la celda correspondiente y el libro entero se recalcula sin tocar una sola fórmula.
+
+La consecuencia operativa es inmediata: si la carta de delivery es la misma que la de sala, el margen por canal no es el mismo, porque el IVA repercutido sobre alcohol y refrescos azucarados sube del 10 % al 21 % y eso afecta a la base imponible sobre la que se calcula el food cost. Cómo construir precios distintos por canal sin romper la percepción de valor es el problema que se trabaja en el capítulo del multicanal.

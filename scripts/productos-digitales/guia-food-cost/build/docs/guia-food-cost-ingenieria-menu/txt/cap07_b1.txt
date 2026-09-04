@@ -1,0 +1,24 @@
+### Los dos food cost y por qué nunca coinciden del todo
+
+El food cost teórico es lo que debería costar producir lo que se ha vendido, calculado plato a plato desde el escandallo (costeo de recetas). El food cost real es lo que el almacén ha consumido efectivamente durante el periodo, calculado desde el movimiento de stock. Que ambos difieran no es un error de la hoja de cálculo: es la norma, y la diferencia es el diagnóstico.
+
+En la hoja «Datos» de matriz-multimetodo-carta.xlsx, el food cost teórico de la carta de ejemplo se sitúa en 32,7 %. El objetivo que aparece en la hoja «Ficha» de ficha-escandallo-base.xlsx es 30 %. El coste de materia prima sobre ventas del año que recoge la hoja «Mensual» de cuadro-de-mando-prime-cost.xlsx es 32,1 %, con unas ventas netas totales de 1.232.200 € y un consumo real de materia prima de 395.400 €. El objetivo del cuadro de mando, en la hoja «Parámetros» del mismo fichero, es también 30 %. Tres fuentes, tres números distintos, y los tres son correctos: miden cosas distintas. Según el informe «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026), el food cost medio del sector hostelero español ronda el 30 % sobre venta, con un rango sano de 25 a 35 %. Estar en 32,1 % no es una alarma; estar en 32,1 % con tendencia ascendente sí lo es.
+
+Las cuatro causas que explican la brecha entre teórico y real, ordenadas por frecuencia de aparición en cocina, son estas:
+
+- **Porciones que no se ajustan a la ficha.** El escandallo dice 180 g de proteína; la balanza en el pase dice otra cosa. Un gramo de más por ración, multiplicado por el número de cubiertos del mes, mueve el food cost real por encima del teórico sin que nadie lo haya decidido.
+- **Merma y caducidad.** Género que entra en el almacén y no llega al plato: recortes de limpieza superiores a los previstos en la ficha, producto que caduca antes de rotar, o merma de cocción no actualizada en el escandallo.
+- **Invitaciones y consumo de personal.** Todo lo que sale de cocina sin generar venta. Si no se registra con un código de coste propio, el sistema lo contabiliza como consumo de materia prima y el food cost real sube sin explicación aparente.
+- **Precios de compra que se han movido sin que nadie reescandallara.** El coste de un ingrediente sube, la ficha no se actualiza, y el teórico sigue calculándose con el precio antiguo. Para saber cuánto se ha movido el precio de origen, la referencia es la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura: ahí está el dato; aquí, el método para leerlo.
+
+Lo que se vigila no es el valor absoluto de un mes, sino la tendencia. En enero, el food cost real fue 31,7 % sobre unas ventas netas de 89.600 €, con el objetivo fijado en 30 %. Una desviación estable alrededor de ese nivel, mes tras mes, indica que el escandallo o el objetivo necesitan revisión, pero no hay una fuga activa. Una desviación que crece cada mes señala que algo ha cambiado en la operativa o en los precios de compra y aún no se ha identificado.
+
+---
+
+### El consumo real: stock inicial, compras y stock final
+
+El consumo real de materia prima de un periodo se calcula con una sola fórmula: stock inicial más compras menos stock final. El resultado es lo que la cocina ha consumido, independientemente de lo que se haya vendido. Sin ese inventario de cierre, el dato que se obtiene es el food cost de compras, que es una cifra distinta y engaña en cuanto el almacén sube o baja de nivel. Si en diciembre se compra más de lo habitual para cubrir el puente de enero, el food cost de compras de diciembre se dispara aunque la cocina haya funcionado con normalidad; el food cost real, calculado con el stock final, lo corrige.
+
+En el cuadro de mando, las compras del año suman 396.100 € y el consumo real de materia prima es 395.400 €. La diferencia, que la hoja «Mensual» de cuadro-de-mando-prime-cost.xlsx recoge mes a mes, refleja exactamente ese ajuste de almacén: el stock no ha variado de forma significativa en el conjunto del año, pero en meses concretos la distancia entre ambas cifras puede ser relevante. La tabla que aparece a continuación muestra ese desglose mensual.
+
+El protocolo más útil no es el inventario completo semanal, que en operativa real pocas cocinas sostienen. Lo que funciona es un inventario corto de las diez referencias que más peso tienen en el coste total: las proteínas principales, el marisco si lo hay, y cualquier ingrediente cuyo precio haya variado recientemente. Esas diez referencias suelen explicar la mayor parte de la desviación. Para quien quiera llevar el seguimiento diario con mayor granularidad, el dashboard del Kit de Escandallos incluye la plantilla de control con las columnas necesarias para registrar entrada, salida y stock en tiempo real, sin tener que construirla desde cero.

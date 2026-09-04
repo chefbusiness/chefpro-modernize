@@ -1,0 +1,60 @@
+Escribe un tramo del capítulo 10 — «Psicología de Precios: lo Demostrado y lo que es Leyenda» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Separar lo que tiene estudio detrás de lo que circula por blogs, y enseñar a aplicar lo demostrado sin convertir la carta en un truco.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### Lo que circula sin estudio detrás
+  ### Cómo se aplica esto a una carta de verdad
+
+EXTENSIÓN: unas 750 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - Abrir con el efecto señuelo, que es lo mejor sostenido: una tercera opción claramente peor que una de las dos reales, pero no peor que la otra, empuja la elección hacia la opción que quieres vender. Citar el trabajo revisado por pares con su publicación.
+  - Al citar el estudio de los nombres descriptivos, escribir la salvedad DENTRO del mismo párrafo: su autor principal fue objeto de una investigación por mala praxis estadística y no se ha localizado una replicación independiente de este trabajo en concreto. El dato se usa como indicio, no como ley.
+  - Al citar el estudio del formato del precio, decir que se hizo en dólares y con comensales estadounidenses, y que lo que se midió no es el símbolo sino la ausencia de referencia monetaria.
+  - Ser explícito con lo que no tiene respaldo: los precios acabados en nueve, la posición del plato en la esquina superior derecha y las reglas de recorrido de la vista se repiten mucho y no se han sostenido con un estudio citable. Se dicen sin número y sin atribución.
+  - Cerrar con la aplicación práctica: el método D de la hoja de precios es exactamente esto —un precio que se impone desde la percepción— y la hoja te devuelve el food cost que te queda al hacerlo.
+  - CITAS OBLIGATORIAS, con este nombre exacto: el trabajo del efecto señuelo se cita como publicado en International Hospitality Review (editorial Emerald); el de los nombres descriptivos, como Wansink, Painter y van Ittersum (2001) en la Cornell Hotel and Restaurant Administration Quarterly; el del formato del precio, como Yang, Kimes y Sessarego (2009) en el Cornell Hospitality Report.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Tipo de IVA de restauración en sala: 10 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E6]
+  - Platos que usan el método del precio de mercado: 4   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E54]
+  - Platos que usan el método del valor percibido: 5   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E55]
+  - Precio de la carta entera si todo fuese a valor percibido: 307,04 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E48]
+  - Precio de la carta entera con los PVP actuales: 266,90 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E49]
+  - Food cost del conjunto de la carta con los precios elegidos: 36,7 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E39]
+  - PVP elegido de las croquetas, sin IVA: 7,00 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!Q9]
+  - PVP elegido del chuletón, sin IVA: 25,30 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!Q20]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-PSICO-03] HUECO SIN FUENTE — «Confirmación experimental del efecto señuelo (dominancia asimétrica) en la elección de menú»: NO escribas ninguna cifra sobre esto; formúlalo en cualitativo.
+- [FC-PSICO-01] Efecto de los nombres descriptivos de plato sobre las ventas: **27 % de incremento de ventas frente al nombre genérico del plato**. Fuente obligatoria a citar en el texto: «Wansink, Painter & van Ittersum (2001) — Descriptive Menu Labels' Effect on Sales, Cornell Hotel and…» (2001). Nota: Research L3 §7.1. DOI 10.1177/0010880401426008. Experimento de campo de 6 semanas con 140 comensales; también mejoró la actitud hacia el plato/restaurante y la valoración sensorial del sabor (7,31 vs 6,83/10) sin que el cliente pagara más.…
+- [FC-PSICO-02] Efecto de omitir el símbolo de moneda en el precio sobre el gasto del comensal: **8 % de gasto adicional medio (5,55 $ más) cuando el precio se muestra en numérico sin símbolo, frente a mostrarlo con «$» o escrito en palabras**. Fuente obligatoria a citar en el texto: «Yang, Kimes & Sessarego (2009) — $ or Dollars: Effects of Menu-price Formats on Restaurant Checks, Cornell…» (2009-12). Nota: Research L3 §7.2. Estudio de campo en el St. Andrew's Café del Culinary Institute of America (Hyde Park, NY), confirmado en Cornell Chronicle. ⚠️ Estudio en dólares estadounidenses, contexto EEUU: presentar en la guía como hallazgo…
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: Cuando el precio viene de fuera: mercado y valor percibido (precio-objetivo-multi-metodo.xlsx, hoja «Por Plato»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - PROHIBIDO citar el estudio de los nombres descriptivos sin la salvedad sobre su autor y sobre la falta de replicación: la salvedad va en la misma frase o en la siguiente, nunca en una nota al final.
+  - PROHIBIDO trasladar al euro la cifra del estudio del formato del precio: se midió en dólares y con comensales de Estados Unidos.
+  - NO escribas ninguna cifra sobre el efecto señuelo: el trabajo que lo sostiene se cita por su resultado cualitativo, sin porcentaje.
+  - NO recomiendes quitar el símbolo de moneda de la carta como receta: se explica qué se midió y se deja la decisión al lector, que además tiene que cumplir con la información de precios al consumidor.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre.

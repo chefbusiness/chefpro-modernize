@@ -1,0 +1,19 @@
+### El enunciado y los datos
+
+El ejercicio toma dos platos de una misma familia de la carta (menú) y les aplica el índice de Hayes y Huffman (1985), el modelo que en el oficio se conoce como Goal Value. Cada plato aporta tres datos propios: su food cost porcentual, su precio de venta sin IVA y las unidades vendidas en el periodo analizado; esos tres números, plato a plato, son los que recoge la tabla siguiente. A ese dato individual se suman dos porcentajes que no cambian de un plato a otro porque describen la estructura de coste (costo) de todo el negocio, no de la receta concreta: el coste de personal sobre ventas, fijado en el 32 % para este ejercicio, y el resto de costes variables sobre ventas —suministros, mantenimiento, comisiones de cobro y similares—, fijado en el 10 %. Estas dos cifras entran igual en el cálculo de cualquier plato de la carta; lo que distingue a un plato de otro es su propio food cost, su propio precio de venta y su propio volumen. Con esos cinco datos —los tres del plato y los dos de la casa— el índice queda listo para calcularse sin necesitar ningún dato externo de mercado ni de competencia.
+
+### La resolución, paso a paso
+
+El cálculo se repite igual para cada plato de la familia, y antes de tocar un solo plato hace falta fijar el objetivo del grupo:
+
+- Primero se calcula el objetivo de la familia: la media ponderada del food cost de todos los platos de esa categoría, ponderando cada uno por su peso en las unidades vendidas del grupo. La lógica es la misma que da el food cost medio ponderado de toda la carta —32,7 %, según la hoja «Datos» de matriz-multimetodo-carta.xlsx—, sólo que aplicada al grupo y no al conjunto del negocio: un plato que vende mucho pesa más en esa media que uno que apenas sale de cocina, esté su food cost donde esté.
+- Con el objetivo de la familia ya fijado, cada plato suma a su food cost individual el coste de personal y los otros costes variables —el 32 % y el 10 % de la casa— para obtener el peso conjunto de los tres costes variables sobre su precio de venta sin IVA.
+- Ese peso conjunto se contrasta contra el mismo cálculo hecho con el objetivo de la familia en lugar del food cost del plato, y el resultado de ese contraste, ajustado por el volumen vendido del plato dentro de su grupo, es el índice: un número único que sustituye a la vieja matriz de cuadrantes —estrellas, vacas, puzles y perros— por una sola cifra ordenable, plato a plato, familia a familia.
+
+El procedimiento no cambia de una familia a otra: lo único que varía es el objetivo, porque cada familia se pondera con sus propios platos y sus propias ventas.
+
+### Cómo se lee el resultado
+
+El índice no tiene unidades: no es un porcentaje, ni un importe, ni una nota sobre diez. Es un número relativo, y sólo dice algo comparado con el objetivo de su propia familia; no se compara entre familias ni contra el food cost medio de toda la carta. Un plato de entrantes y un plato de postres pueden tener índices parecidos sin que eso signifique nada, porque cada familia se pesa consigo misma: tiene su propio precio de venta, su propio volumen y su propio food cost de referencia.
+
+Lo único que el índice dice, plato a plato, es si ese plato está por encima o por debajo del objetivo que se ha marcado su propia familia. Aplicado a toda la carta de este ejercicio, el resultado deja 9 platos por encima del objetivo de su familia y 11 por debajo, según la hoja «Goal Value» de matriz-multimetodo-carta.xlsx. Ese reparto —9 y 11— no dice todavía qué familia concreta empuja el desequilibrio ni qué plato conviene revisar primero: para eso sirve la tabla siguiente, que cruza cada plato con el objetivo de los suyos y permite localizar, familia por familia, dónde hay margen que recuperar sin tocar el precio de venta y dónde el problema es de volumen y no de coste.

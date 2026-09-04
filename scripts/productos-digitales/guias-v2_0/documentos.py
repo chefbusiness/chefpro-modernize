@@ -297,8 +297,11 @@ RX_ENTIDAD_HTML = re.compile(r'&(?:[a-zA-Z]{2,10}|#\d{2,5});')
 RX_EURO_DOBLE = re.compile('€[\\s  ]*[\\d.,]+[\\s  ]*€')
 RX_EURO_PREFIJO = re.compile('€[\\s  ]*\\d')
 # Correcciones aplicadas al salir del modelo (limpiar_bloque):
-RX_EURO_DOBLE_FIX = re.compile('€[\\s\u00a0\u202f]*([\\d.][\\d.,]*[\\s\u00a0\u202f]*€)')
-RX_EURO_PRE_FIX = re.compile('€[\\s\u00a0\u202f]*([\\d.][\\d.,]*)')
+# 2026-09-04: la clase empezaba por [\\d.] y «€.» (euro + punto final de frase) casaba como
+# «€» + cifra «.», y la corrección lo convertía en «. €»: cuatro «237,35 . €» en la guía
+# de food cost. La cifra tiene que EMPEZAR por dígito.
+RX_EURO_DOBLE_FIX = re.compile('€[\\s\u00a0\u202f]*(\\d[\\d.,]*[\\s\u00a0\u202f]*€)')
+RX_EURO_PRE_FIX = re.compile('€[\\s\u00a0\u202f]*(\\d[\\d.,]*)')
 RX_EURO_UNIDAD = re.compile('([\\d.,]+)\u202f€([\\s\u00a0\u202f]*(?:años|año|meses|mes|'
                             'días|día|semanas|semana|personas|persona|plazas|plaza|'
                             'cubiertos|puntos|%))')

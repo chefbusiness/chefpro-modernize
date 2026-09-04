@@ -1,0 +1,17 @@
+### Goal Value: un índice por plato en lugar de cuadrantes
+
+Popularidad, food cost porcentual y margen en euros son las tres variables que deciden si un plato conviene, y cada modelo elige dos y deja la tercera fuera. Por eso Miller, Pavesic y Goal Value pueden clasificar el mismo plato de tres formas distintas sin equivocarse, y la discrepancia es información que la matriz clásica sola no da.
+
+Miller (1980) planteó el primer modelo matricial que cruza food cost y mix de ventas, antecesor de la matriz de Kasavana y Smith: premia el food cost bajo con volumen, y puede coronar ganador a un plato de mucha rotación aunque deje pocos euros de margen. En tu carta marca 8 Winner —2.940 unidades vendidas, el 60,4 % del total, food cost medio ponderado 26,9 %—, 7 Marginal y 5 Loser, estos con food cost medio ponderado del 40,7 %.
+
+Pavesic (1983) corrige ese punto ciego: sustituye el margen de contribución individual por el ponderado por unidades vendidas, así que un plato de margen alto y poca venta deja de parecer estupendo. En tu carta marca 7 Prime, con 21.408 € de margen ponderado conjunto; 3 Standard, 4 Sleeper y 6 Problem, estos con 7.830 € de margen ponderado conjunto.
+
+El Goal Value no es una tercera matriz: es la alternativa de quienes vieron el problema en el propio formato de cuadrantes. Hayes y Huffman (1985), «Menu Analysis: A Better Way», en la Cornell Hotel and Restaurant Administration Quarterly, criticaron que Miller y Pavesic reparten los platos contra un promedio de carta que se mueve con cada plato que entra o sale. Su alternativa: un índice único por plato que combina food cost, precio de venta, popularidad y costes variables, sin cuadrante ni promedio. En tu carta usa un coste de personal del 32 % sobre ventas y otros costes variables del 10 %, y compara cada plato con el objetivo de su familia: 9 platos por encima y 11 por debajo, sobre un food cost medio ponderado de carta del 32,7 %.
+
+Ese índice no lleva unidades: ni precio en euros ni porcentaje absoluto, así que compararlo entre familias —un guiso contra un pescado— no dice nada; solo vale leído contra el objetivo de su propia familia, que es lo que hace el cuadro siguiente, plato a plato.
+
+### LeBruto: qué pasa cuando entra el coste de mano de obra
+
+LeBruto, Quain y Ashley (1995), «Menu Engineering: A Model Including Labor», en la FIU Hospitality Review, añadieron a la matriz de Kasavana y Smith lo que ni Miller, ni Pavesic ni el Goal Value habían metido: el coste de mano de obra de cada plato. No es una hoja nueva, sino una lectura añadida sobre la misma matriz: cada plato se clasifica también como de coste laboral alto o bajo, y esa capa parte los cuatro cuadrantes clásicos en ocho, hasta los 8 cuadrantes de la matriz ampliada frente a los 4 originales.
+
+Su frase ordena el capítulo: los operadores ingresan dinero, no porcentajes. Un plato de food cost bajo y mucho trabajo de cocina detrás puede costarte en mano de obra lo que ahorras en materia prima, y la matriz clásica no lo muestra porque solo mira dos variables a la vez. No sustituye al Goal Value ni al margen ponderado de Pavesic: exige sumar esa pregunta a cualquiera de los tres, antes de fijar el precio de venta o de empujar un plato desde sala. Es lo que separa el food cost porcentual del margen en euros que entra en caja, y lo que convierte a Miller, Pavesic y Goal Value en tres ángulos del mismo problema, no en respuestas que compiten entre sí.

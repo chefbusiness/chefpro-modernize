@@ -1,0 +1,22 @@
+### El IVA cambia con el canal y con el producto
+
+El IVA no tributa igual en los tres canales, y dentro de cada canal tampoco tributa igual todo lo que hay en el pedido. En sala, todo lo que sirves —también la copa de vino o la cerveza— tributa al tipo reducido de la restauración, sin distinguir plato de bebida. Take away y delivery dejan de ser un servicio y pasan a ser una entrega de bienes: la comida elaborada que sale sin servicio de hostelería tributa como alimento ordinario, al 10 % (Ley 37/1992, art. 91.Uno.1.1.º, y DGT, consulta vinculante V2254-22, 2022-10-26). La bebida alcohólica pasa al 21 % en cuanto sale sin servicio (Ley 37/1992, arts. 90 y 91.Uno.1.1.º, y DGT V2254-22), igual que los refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos desde el 1 de enero de 2021 (Ley 37/1992, art. 91.Uno.1.1.º, redacción dada por la Ley 11/2020 de PGE 2021, art. 69); la DGT lo confirmó en el caso exacto de una plataforma de reparto a domicilio, con los dos tipos a la vez —10 % comida, 21 % alcohol y refrescos azucarados o edulcorados— (V2254-22, 2022-10-26). Un mismo pedido de delivery puede llevar los dos tipos a la vez: hay que aplicarlos plato a plato y bebida a bebida, nunca como un tipo único para todo el pedido.
+
+### El precio techo: hasta dónde te deja subir la aplicación
+
+La comisión no es un coste fijo que se resta del margen: se aplica sobre el precio de venta y escala con él. Un mismo plato, al mismo precio, tiene un food cost efectivo distinto según el canal, y ese es el número que hay que vigilar, no el de la sala: 31,4 % en sala —pegado al objetivo del 30 %—, 38,2 % en take away —mismo objetivo— y 54,6 % en delivery, donde el objetivo se relaja al 40 % para dejarle hueco a una comisión que, en la plantilla, es del 30 % sobre el pedido.
+
+El packaging se mira por plato, no por pedido: el envase se paga por pedido —1,75 € en take away, otros 1,75 € en delivery— y su coste por plato depende de cuántos platos lleve el pedido medio. Con 2,5 platos por pedido en delivery, esos 1,75 € bajan a 0,70 € por plato: un plato suelto carga el envase entero; varios comensales lo diluyen.
+
+Con la comisión escalando sobre el precio y el packaging por plato, llega el límite real: la aplicación tiene su propio mercado, y un precio por encima de la competencia no se vende aunque los números cuadren. La hoja no da un precio: da el precio necesario para el food cost objetivo del canal y lo compara con el precio techo de esa carta en esa aplicación. En las croquetas, el food cost pasa del 24,4 % en sala al 46,5 % en delivery al mismo precio; el objetivo pide un PVP sin IVA de 10,00 €, y el techo está en 11,60 €. De los 16 platos viables en sala sólo 12 lo son en delivery; los otros 8 no llegan al objetivo sin pasarse de techo, y la decisión es sacarlos de esa aplicación o reformularlos para que viajen mejor, no forzar el precio. Resultado: 43.635 € de margen mensual en sala frente a 30.050 € en delivery, 13.585 € menos.
+
+Las comisiones son orden de magnitud, no tarifario oficial —ninguna plataforma publica tarifa cerrada— y dependen de la zona, del plan y de quién reparte:
+
+- Glovo: 15-35 % más IVA según zona y demanda (35 % si reparte la propia Glovo), cuota de unos 39 € al mes y marketing adicional del 2-5 % (qamarero.com — «Cuánto cobra Glovo a los restaurantes», 2026).
+- Uber Eats: 30, 25 o 15-20 % según básico, plus o premium.
+- Just Eat: 13 % de escaparate, o 25-35 % si reparte, más 0,30 € por pedido.
+- Deliveroo: 30 % en estándar o 25 % en el reducido —desde 500 pedidos al mes—, más 50 € al mes de fee tecnológico.
+
+Estas tres últimas, y los costes que siguen, vienen de qamarero.com — «Comisiones delivery: cuánto cobran realmente las plataformas» (2026): fuera del porcentaje nominal quedan 1,35-2,15 € de packaging por pedido, descuentos del 20-30 % para ganar visibilidad, y hasta 2 puntos más de comisión como penalización por rendimiento.
+
+Si trabajas en Hispanoamérica, tanto la matriz fiscal de nueve casillas como las comisiones son editables en la plantilla; ahí cambian los operadores de referencia, con Rappi y DiDi en México y PedidosYa en Argentina, Uruguay y Panamá.

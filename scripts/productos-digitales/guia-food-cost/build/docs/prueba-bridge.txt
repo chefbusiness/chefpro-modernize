@@ -1,0 +1,1 @@
+El food cost de un restaurante es el porcentaje que representa el costo de los ingredientes utilizados en un plato respecto al precio de venta de ese mismo plato. Controlar este indicador es esencial para fijar precios rentables, optimizar el margen de beneficio y tomar decisiones estratégicas sobre el menú.

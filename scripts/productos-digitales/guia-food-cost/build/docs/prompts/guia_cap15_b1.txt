@@ -1,0 +1,78 @@
+Escribe un tramo del capítulo 15 — «Multicanal: Sala, Take Away y Delivery» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Que el lector deje de servir la misma carta al mismo precio en tres canales que tienen estructuras de coste distintas, y que sepa qué platos no deben estar en la aplicación de reparto.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### Tres canales, tres cuentas de resultados
+  ### La comisión no es el único coste: packaging y platos por pedido
+
+EXTENSIÓN: unas 566 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - La tesis: la comisión no se resta del margen, se aplica sobre el precio, así que un mismo plato con el mismo precio tiene un food cost efectivo distinto en cada canal. Ese es el número que hay que mirar, no el de la sala.
+  - Explicar el packaging por PLATO y no por pedido: el envase se paga por pedido, así que su coste por plato depende de cuántos platos lleve el pedido medio, y ese dato es una celda.
+  - Explicar el precio techo: la aplicación tiene su propio mercado y un precio por encima del de la competencia no se vende aunque los números cuadren. Por eso la hoja no da un precio, da un precio necesario y lo compara con el techo.
+  - Explicar la decisión de excluir: un plato que no llega al food cost objetivo del canal sin pasarse del techo no se sube de precio, se saca de la carta de esa aplicación o se reformula en un formato que viaje mejor.
+  - Las comisiones se presentan como orden de magnitud con su fuente y con la advertencia de que dependen de la zona, del plan y de quién reparte; además hay costes que no están en el porcentaje nominal.
+  - Nota para Hispanoamérica: las nueve casillas de la matriz fiscal y las comisiones son editables; los operadores citados como ejemplo en esos mercados son Rappi y DiDi en México y PedidosYa en Argentina, Uruguay y Panamá.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Comisión de la plataforma en delivery: 30 %   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!B18]
+  - Packaging por pedido en take away: 1,75 €   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!C17]
+  - Packaging por pedido en delivery: 1,75 €   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!C18]
+  - Platos por pedido en delivery: 2,5   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!D18]
+  - Packaging por plato en delivery: 0,70 €   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!F18]
+  - Food cost objetivo en sala: 30 %   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!E16]
+  - Food cost objetivo en take away: 30 %   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!E17]
+  - Food cost objetivo en delivery: 40 %   [fuente: simulador-repricing-multicanal.xlsx!Parámetros!E18]
+  - Food cost efectivo medio en sala: 31,4 %   [fuente: simulador-repricing-multicanal.xlsx!Resumen!D5]
+  - Food cost efectivo medio en take away: 38,2 %   [fuente: simulador-repricing-multicanal.xlsx!Resumen!D6]
+  - Food cost efectivo medio en delivery: 54,6 %   [fuente: simulador-repricing-multicanal.xlsx!Resumen!D7]
+  - Platos viables en sala: 16   [fuente: simulador-repricing-multicanal.xlsx!Resumen!B5]
+  - Platos viables en delivery: 12   [fuente: simulador-repricing-multicanal.xlsx!Resumen!B7]
+  - Platos a excluir o reformular en delivery: 8   [fuente: simulador-repricing-multicanal.xlsx!Resumen!C7]
+  - Margen mensual total en sala: 43.635 €   [fuente: simulador-repricing-multicanal.xlsx!Resumen!G5]
+  - Margen mensual total en delivery: 30.050 €   [fuente: simulador-repricing-multicanal.xlsx!Resumen!G7]
+  - Diferencia de margen del delivery frente a la sala: -13.585 €   [fuente: simulador-repricing-multicanal.xlsx!Resumen!I7]
+  - Food cost en sala de las croquetas: 24,4 %   [fuente: simulador-repricing-multicanal.xlsx!Carta!H5]
+  - Food cost en delivery de las croquetas: 46,5 %   [fuente: simulador-repricing-multicanal.xlsx!Carta!V5]
+  - PVP sin IVA que necesitan las croquetas en delivery: 10,00 €   [fuente: simulador-repricing-multicanal.xlsx!Carta!W5]
+  - Precio techo de las croquetas en la aplicación: 11,60 €   [fuente: simulador-repricing-multicanal.xlsx!Carta!F5]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-DELIV-01] Comisión de Glovo a restaurantes en España: **15-35 % + IVA según zona/demanda (hasta 35% si Glovo gestiona el reparto); cuota mensual ~39€; exigencia de marketing adicional 2-5%**. Fuente obligatoria a citar en el texto: «qamarero.com — Cuánto cobra Glovo a los restaurantes» (2026). Nota: Research L3 §5.1. Glovo no publica tarifas oficiales; cifra de fuente sectorial única. Tratar en la guía como orden de magnitud, no tarifario oficial.
+- [FC-DELIV-02] Estructura de comisiones por plataforma de delivery en España: **30/25/15-20 (Uber Eats: básico/plus/premium) — 13 (Just Eat, solo marketing) / 25-35 (Just Eat, reparto propio) — 30/25 (Deliveroo: estándar/reducida >500 pedidos/mes) % + IVA sobre el pedido; Just Eat añade 0,30€/pedido; Deliveroo añade fee tecnológico 50€/mes**. Fuente obligatoria a citar en el texto: «qamarero.com — Comisiones delivery: cuánto cobran realmente las plataformas» (2026). Nota: Research L3 §5.2-5.4. Ninguna de las tres plataformas publica tarifas oficiales; cifra de fuente sectorial única (Qamarero). Orden de magnitud, no tarifario oficial.
+- [FC-DELIV-03] Costes adicionales del canal delivery no incluidos en el porcentaje de comisión: **1,35-2,15 (packaging) / 20-30 (descuentos promocionales) / +2 (penalización por rendimiento) €/pedido (packaging) / % adicional (descuentos «obligatorios» para visibilidad) / puntos de comisión (penalización)**. Fuente obligatoria a citar en el texto: «qamarero.com — Comisiones delivery: cuánto cobran realmente las plataformas» (2026). Nota: Research L3 §5.5. Orden de magnitud, no tarifario oficial — advertir que estos costes se suman a la comisión nominal y no siempre son visibles al firmar el contrato.
+- [FC-BENCH-04] HUECO SIN FUENTE — «Food cost objetivo/típico de una cocina fantasma (dark kitchen) o negocio centrado en delivery»: NO escribas ninguna cifra sobre esto; formúlalo en cualitativo.
+- [FC-IVA-02] La comida elaborada entregada sin servicio de hostelería (para llevar o a domicilio) es una entrega de bienes y tributa como alimento ordinario.: **10 %**. Fuente obligatoria a citar en el texto: «Ley 37/1992, art. 91.Uno.1.1.º + DGT, consulta vinculante V2254-22» (2022-10-26). Nota: Consulta vinculante DGT sobre el supuesto exacto (plataforma de reparto a domicilio). Vinculante para la Administración.
+- [FC-IVA-03] Las bebidas alcohólicas quedan excluidas del tipo reducido de alimentos cuando se entregan sin servicio de hostelería; tributan al tipo general.: **21 %**. Fuente obligatoria a citar en el texto: «Ley 37/1992, arts. 90 y 91.Uno.1.1.º + DGT V2254-22» (1992-12-29). Nota: La misma bebida alcohólica va al 10% en sala (servicio) y al 21% sin servicio (entrega de bienes excluida).
+- [FC-IVA-04] Los refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos quedan excluidos del tipo reducido de alimentos desde el 1 de enero de 2021; tributan al tipo general.: **21 %**. Fuente obligatoria a citar en el texto: «Ley 37/1992, art. 91.Uno.1.1.º, redacción dada por la Ley 11/2020 de PGE 2021 (art. 69)» (2020-12-31 (efectos desde 2021-01-01)). Nota: Antes del 1-ene-2021 tributaban al 10% junto con el resto de alimentos; no afecta a zumos/refrescos SIN azúcares o edulcorantes añadidos.
+- [FC-IVA-08] La DGT, en consulta vinculante sobre una plataforma de reparto a domicilio, confirma entrega de bienes al 10% para la comida y 21% para alcohol/refrescos azucarados o edulcorados.: **10 %**. Fuente obligatoria a citar en el texto: «Dirección General de Tributos, consulta vinculante V2254-22» (2022-10-26). Nota: Hechos del caso: empresa que fabrica y envía comida a domicilio por app con repartidores subcontratados — el supuesto exacto de delivery de restauración.
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: Los parámetros de cada canal (simulador-repricing-multicanal.xlsx, hoja «Parámetros»); Comisiones de las plataformas: orden de magnitud, no tarifario (simulador-repricing-multicanal.xlsx, hoja «Parámetros»); Los tres canales, comparados (simulador-repricing-multicanal.xlsx, hoja «Resumen»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - PROHIBIDO presentar ninguna comisión como tarifa oficial o cerrada: siempre horquilla, siempre con la fuente y siempre diciendo de qué depende.
+  - NO restes la comisión del margen como si fuese un coste fijo por plato: se aplica sobre el precio de venta y por eso escala con él.
+  - NO digas que el delivery «no es rentable»: se explica en qué condiciones deja margen y qué platos no deberían estar ahí.
+  - NO olvides que en delivery la comida sigue en el tipo reducido: lo que cambia de tipo es el alcohol y las bebidas con azúcares o edulcorantes añadidos.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre. No cierres el capítulo: sigue otro tramo.

@@ -1,0 +1,32 @@
+### Las cuatro causas de la desviación
+
+El food cost real del periodo se obtiene con una sola fórmula: stock inicial más compras menos stock final. El resultado es el consumo real de materia prima. Sin ese inventario de cierre no hay food cost real; lo que se tiene es un food cost de compras, que es otra cosa y engaña cada vez que el almacén sube o baja de nivel. En la hoja «Mensual» del cuadro-de-mando-prime-cost.xlsx se ve la diferencia con claridad: las compras del año suman 396.100 € y el consumo real de materia prima es 395.400 €, sobre unas ventas netas de 1.232.200 €. Esos 700 € de diferencia reflejan la variación de stock entre el primer día del año y el último; si alguien hubiera usado las compras como proxy del consumo, el porcentaje habría salido ligeramente distorsionado. El coste de materia prima sobre ventas que arroja el cuadro de mando es 32,1 %, frente a un food cost objetivo del 30 % fijado en la hoja «Parámetros» del mismo libro. Esa brecha de 2,1 puntos no es un error de la hoja: es un diagnóstico que tiene causas concretas.
+
+Según el informe de CaixaBankLab y la Fundación elBulli sobre consumos y beneficios de un restaurante (2026), el food cost medio del sector hostelero español se sitúa en torno al 30 % sobre venta, con un rango sano de entre el 25 % y el 35 %. Estar en 32,1 % no es una emergencia, pero sí exige saber por qué se está ahí y si la tendencia sube o baja.
+
+Las causas de desviación entre el food cost teórico y el real se repiten en casi todos los establecimientos que asesoro, y siempre aparecen en el mismo orden de frecuencia:
+
+- **Porciones que no se ajustan a la ficha.** Es la causa más habitual. El escandallo (costeo de recetas) fija un gramaje; la línea sirve otro. Cinco gramos de más por plato en una referencia de alto volumen mueven el food cost real varios décimas al mes sin que nadie lo note en el pase.
+- **Merma y caducidad.** El género que entra en el almacén y no llega al plato tiene coste pero no genera venta. Una gestión de rotación deficiente o una compra sobredimensionada se traduce directamente en consumo real sin contrapartida en la cuenta de ventas.
+- **Invitaciones y consumo de personal.** Toda salida de género sin ticket de venta es consumo real no cubierto por ingreso. Si no se registra con un sistema de invitaciones o de menú de empleados, el food cost absorbe ese coste sin que la hoja teórica lo contemple.
+- **Precios de compra que se movieron sin que nadie reescandallara.** Cuando un proveedor actualiza tarifas y la ficha de escandallo no se toca, el food cost teórico de la carta queda desfasado. La matriz-multimetodo-carta.xlsx arroja un food cost teórico de la carta de ejemplo del 32,7 %; si los precios de compra han subido desde el último escandallo, ese 32,7 % ya es optimista. Para saber cuánto han variado los precios de origen, la referencia es la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura: ahí está el dato, no en la memoria del jefe de cocina.
+
+Lo que se vigila no es el valor absoluto de un mes, sino la tendencia. Una desviación estable, mes tras mes en el mismo rango, indica que el negocio funciona con un food cost estructuralmente distinto al teórico y que hay que decidir si se corrige la operación o se ajusta el objetivo. Una desviación que crece es otra conversación: algo ha cambiado y hay que encontrarlo antes de que se consolide.
+
+---
+
+### El protocolo semanal que la mantiene bajo control
+
+El inventario completo cada semana es inviable en la mayoría de cocinas con el personal que hay. Lo que funciona es el inventario corto: las diez referencias que más pesan en el coste total. En cualquier operación hay un grupo reducido de productos, normalmente proteínas y elaboraciones de alto valor, que concentran la mayor parte del consumo. Controlar esas diez referencias con rigor semanal da más información que un recuento exhaustivo hecho con prisa y errores.
+
+El procedimiento es directo:
+
+- Identificar las diez referencias de mayor peso en el consumo, usando como base la hoja «Mensual» del cuadro-de-mando-prime-cost.xlsx para ver qué partidas de compra son las más voluminosas.
+- Contar el stock físico de esas referencias cada lunes antes del servicio, o el día de menor actividad de la semana.
+- Registrar las compras recibidas entre ese conteo y el anterior.
+- Calcular el consumo parcial: stock anterior más entradas menos stock actual.
+- Comparar ese consumo parcial con las ventas de esas referencias en el mismo periodo, usando las unidades vendidas del TPV.
+
+Si el consumo parcial de esas diez referencias se desvía de forma consistente respecto a lo que debería haberse consumido según la ficha-escandallo-base.xlsx, el problema está localizado antes de que se acumule un mes entero de pérdida. El food cost objetivo que recoge esa ficha es del 30 %; cualquier señal que aleje el consumo real de ese umbral de forma sostenida merece una revisión del gramaje en línea o de las condiciones de compra, no una explicación improvisada al cierre del mes.
+
+Para quien quiera llevar el seguimiento día a día sin construir la herramienta desde cero, el dashboard del Kit de Escandallos incluye la plantilla de control con las fórmulas ya configuradas; el capítulo no la desarrolla aquí porque el material ya la trae lista para usar. La tabla que aparece a continuación muestra el recorrido completo del stock al consumo mes a mes, con los datos del cuadro-de-mando-prime-cost.xlsx, hoja «Mensual»: enero, con ventas netas de 89.600 € y un food cost real de 31,7 %, es el punto de partida para leer cómo evoluciona la desviación a lo largo del año.

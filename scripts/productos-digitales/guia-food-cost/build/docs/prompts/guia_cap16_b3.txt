@@ -1,0 +1,74 @@
+Escribe un tramo del capítulo 16 — «Beverage Cost: la Bodega Como Cuenta de Resultados Propia» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Sacar la bebida del food cost general y gestionarla con sus propios objetivos por categoría, que no son los de la comida ni son iguales entre sí.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### El resumen de la bodega y el margen que estás dejando en la mesa
+
+EXTENSIÓN: unas 533 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - Abrir con el dato que rompe el tópico: en el informe español de referencia la bebida pesa proporcionalmente MÁS sobre sus propios ingresos que la comida sobre los suyos. Explicarlo como matiz, no como regla universal: depende del mix de bodega.
+  - Explicar la decisión copa contra botella: la copa mejora el porcentaje y el número de copas por botella es el dato que la sostiene; si se sirven de más, el beverage cost real se dispara y nadie lo ve.
+  - Explicar el coste por servicio del barril: se compra en litros y se vende en centilitros, y la merma de espuma y de limpieza de líneas es la que separa el cálculo de la realidad.
+  - Explicar el cóctel como una ficha de escandallo en miniatura: se cuesta ingrediente a ingrediente y la mezcla suele pesar más de lo que se cree.
+  - Cerrar con la lectura del resumen: cada categoría tiene su objetivo editable y el libro calcula el margen que se recuperaría si cada una llegase al suyo. Ese número es el orden de prioridades.
+  - El IVA por canal también afecta a la bodega: la misma botella lleva un tipo en sala y otro si el cliente se la lleva, y las columnas de precio con IVA de la hoja lo resuelven solas.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Objetivo de beverage cost de los vinos: 30 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Parámetros!B17]
+  - Objetivo de beverage cost de cervezas y refrescos: 22 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Parámetros!B18]
+  - Objetivo de beverage cost de destilados y cócteles: 20 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Parámetros!B19]
+  - Ventas totales de bodega del mes: 43.657 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!B8]
+  - Coste total de bodega del mes: 11.503,96 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!C8]
+  - Beverage cost ponderado de toda la bodega: 26,4 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D8]
+  - Margen de contribución total de la bodega: 32.153,04 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!F8]
+  - Margen total a recuperar si cada categoría llegase a su objetivo: 646,38 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!H8]
+  - Beverage cost ponderado de los vinos: 30,2 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D5]
+  - Beverage cost ponderado de cervezas y refrescos: 25,4 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D6]
+  - Beverage cost ponderado de destilados y cócteles: 20,9 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!D7]
+  - Peso de los vinos sobre las ventas de bodega: 41,6 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!G5]
+  - Peso de cervezas y refrescos sobre las ventas de bodega: 35,6 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Resumen Bodega!G6]
+  - Botellas de vino vendidas al mes: 530   [fuente: carta-de-bebidas-beverage-cost.xlsx!Vinos!J35]
+  - Copas de vino vendidas al mes: 2.540   [fuente: carta-de-bebidas-beverage-cost.xlsx!Vinos!K35]
+  - Coste por copa del tinto de la casa: 0,78 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Vinos!L5]
+  - Margen por copa del tinto de la casa: 2,22 €   [fuente: carta-de-bebidas-beverage-cost.xlsx!Vinos!N5]
+  - Beverage cost de la botella del tinto de la casa: 28,7 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Vinos!O5]
+  - Beverage cost de la copa del tinto de la casa: 26,0 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Vinos!P5]
+  - Servicios de cerveza y refrescos vendidos al mes: 6.360   [fuente: carta-de-bebidas-beverage-cost.xlsx!Cervezas y Refrescos!J20]
+  - Beverage cost ponderado de los combinados: 21,6 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Destilados y Cócteles!N17]
+  - Beverage cost ponderado de los cócteles: 19,7 %   [fuente: carta-de-bebidas-beverage-cost.xlsx!Destilados y Cócteles!I64]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-BENCH-02] Desglose del coste de producto sobre ingresos por categoría y mix de ingresos del restaurante medio español: **28 / 34,5 % comida sobre ingresos de comida / % bebida sobre ingresos de bebida (mix de ingresos 70% comida - 30% bebida)**. Fuente obligatoria a citar en el texto: «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026). Nota: Research L3 §1.2. Contradice el supuesto habitual de que la bebida tiene siempre mejor margen que la comida: en este informe la bebida (34,5%) pesa proporcionalmente MÁS que la comida (28%) sobre sus propios ingresos. Explicar como matiz…
+- [FC-BEV-01] Pour cost / beverage cost objetivo por tipo de bebida: **15-22 (espirituosos/cócteles) / 20-26 (cerveza de barril) / 24-28 (cerveza botella/lata) / 18-24 (objetivo general, media 20) % sobre venta de la bebida**. Fuente obligatoria a citar en el texto: «Agregado sectorial (getbackbar.com / purimax.com)» (2026). Nota: Research L3 §1.14. Fuente EEUU, sin desglose español por tipo de bebida. Usar como referencia de mercado, no como cifra española.
+- [FC-BEV-02] Beverage cost de referencia para bebidas estándar en España: **15-25 % (otra fuente cifra 27,5%/mes como referencia de un caso concreto)**. Fuente obligatoria a citar en el texto: «qamarero.com — Food cost restaurante: cómo calcularlo y optimizarlo» (2026). Nota: Research L3 §1.15. Cerveza/refrescos como referencia de 'bebidas estándar'. Fuente de plataforma sectorial, fiabilidad media.
+- [FC-IVA-01] Los servicios de hostelería y el suministro de comidas y bebidas para consumir en el acto tributan al tipo reducido, alcohol incluido (es servicio, no entrega de bienes, así que no aplica la exclusión de bebidas alcohólicas).: **10 %**. Fuente obligatoria a citar en el texto: «Ley 37/1992, art. 91.Uno.2.2.º (texto consolidado)» (1992-12-29 (última modificación de este apartado: Ley 7/2024, en vigor 22-12-2024)). Nota: Fuente primaria consultada vía reproducción literal (Iberley) por límite de tamaño del BOE en fetch automático; artículo marcado vigente.
+- [FC-IVA-03] Las bebidas alcohólicas quedan excluidas del tipo reducido de alimentos cuando se entregan sin servicio de hostelería; tributan al tipo general.: **21 %**. Fuente obligatoria a citar en el texto: «Ley 37/1992, arts. 90 y 91.Uno.1.1.º + DGT V2254-22» (1992-12-29). Nota: La misma bebida alcohólica va al 10% en sala (servicio) y al 21% sin servicio (entrega de bienes excluida).
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: La bodega por categorías, con su objetivo al lado (carta-de-bebidas-beverage-cost.xlsx, hoja «Resumen Bodega»); Vinos: la misma botella por botella y por copa (carta-de-bebidas-beverage-cost.xlsx, hoja «Vinos»); Cervezas y refrescos: del formato de compra al servicio (carta-de-bebidas-beverage-cost.xlsx, hoja «Cervezas y Refrescos»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - NO afirmes como regla general que la bebida deja más margen que la comida: el dato del que dispones dice lo contrario en su fuente y hay que presentarlo como matiz, con el mix de bodega detrás.
+  - NO des objetivos de beverage cost como si fueran estándar del sector: los rangos que tienes llevan fuente de fiabilidad media y las casillas del libro son editables.
+  - NO escribas precios de vinos, cervezas ni destilados que no estén en las tablas o en la lista de cifras.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre.

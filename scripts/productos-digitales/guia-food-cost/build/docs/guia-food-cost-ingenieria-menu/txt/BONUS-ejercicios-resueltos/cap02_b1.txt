@@ -1,0 +1,19 @@
+### El enunciado y los datos
+
+Partimos de una lubina entera comprada con su peso bruto ya pesado y su precio de compra por kilo conocido. Tras el despiece en cocina —quitar cabeza, espina y piel— queda un peso limpio, menor que el bruto, que es el que de verdad se sirve en el plato. De esa misma pieza sale además un recorte aprovechable: cabeza, espina y piel que no van directas al cubo de orgánico, sino que se separan, se pesan y se les asigna un valor de uso, es decir, lo que valen convertidas en fondo o en otra elaboración de aprovechamiento. Estos cuatro datos —peso bruto, precio de compra por kilo, peso limpio y valor de uso del subproducto— son el registro mínimo de cada pieza que se somete a esta prueba, y es lo que recoge, pieza a pieza, la hoja «Test de Rendimiento» de rendimiento-mermas-producto.xlsx. El objetivo no es saber cuánto pesa una lubina: es decidir, con esos cuatro datos, si compensa comprarla entera y trabajarla en casa o si sale mejor cuenta pedirla ya limpia al proveedor.
+
+### La resolución, paso a paso
+
+Primero se calcula el rendimiento: peso limpio dividido entre peso bruto. En esta lubina la operación da un 51,7 %, es decir, algo más de la mitad de lo que se compra se queda como carne aprovechable, y el resto son cabeza, espina, piel y recorte.
+
+Segundo, el coste (costo) de compra: peso bruto multiplicado por el precio por kilo. Es el desembolso real que sale de caja por la pieza entera, antes de tocarla con el cuchillo.
+
+Tercero, el coste neto por kilo limpio sin aprovechar el subproducto: el coste de compra dividido entre el peso limpio, sin restar nada. El resultado es 28,84 € el kilo, y es la cifra que hay que enfrentar al precio de venta del plato de lubina en la carta (menú), no al precio de compra por kilo que figura en la factura del proveedor.
+
+Cuarto, el coste neto por kilo limpio aprovechando el subproducto: al coste de compra se le resta el valor de uso del recorte y el resultado se vuelve a dividir entre el peso limpio. Con esa resta, el coste neto baja a 27,63 € el kilo. La distancia entre los dos costes netos es lo que aporta el subproducto cuando alguien lo separa y le da salida en cocina antes de que caduque; cuando nadie lo hace, esa aportación se pierde en el cubo de basura orgánica.
+
+### Cómo se lee el resultado
+
+El dato que de verdad importa a la hora de fijar el precio de venta no es el precio de compra por kilo que aparece en la factura: es el coste neto por kilo limpio, porque refleja lo que cuesta de verdad cada kilo que llega al comensal. Comparado con el precio por kilo de la pieza entera, sin trabajar, el coste neto sin aprovechar el subproducto arrastra un sobrecoste de 12,73 € por kilo, y esa diferencia es lo que se paga por la parte de la lubina que termina en la basura orgánica en vez de en el plato: cuanto más bajo el rendimiento de una pieza, más carga ese sobrecoste sobre el kilo que sí se vende.
+
+Puesta en el contexto del resto de pruebas de la misma hoja, esta lubina queda algo por debajo del rendimiento medio ponderado del conjunto, que es del 60,5 %: dentro del cuadro que sigue a este ejercicio hay piezas que aprovechan mejor su peso bruto y otras que aprovechan peor, y el criterio para decidir si una pieza compensa comprarla entera es esa comparación, no un número aislado. El mismo cuadro deja ver pruebas donde el subproducto pesa todavía más en la decisión: el ahorro por aprovechar las cabezas de la gamba, por ejemplo, es de 1,43 € por kilo, una cifra que en un producto de compra frecuente y precio alto tiene un recorrido acumulado distinto al de una pieza que sólo se trabaja de forma puntual. En conjunto, el valor de uso total de los subproductos de las diez pruebas del cuadro llega a 5,15 €, la prueba de que separar y dar salida al recorte no es un gesto simbólico: es una partida que se sigue con la misma disciplina que cualquier otro coste de la carta.

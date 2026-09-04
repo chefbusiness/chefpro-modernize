@@ -1,0 +1,61 @@
+Escribe un tramo del capítulo 20 — «Cuándo tu Excel se Queda Corto» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Cerrar con honestidad: decir dónde acaba la hoja de cálculo, qué resuelve un software y qué resuelve un agente de IA, sin vender la guía como sustituto de nada ni al revés.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### La cuenta: cuánto cuesta cada salto
+  ### El orden correcto: criterio primero, automatización después
+
+EXTENSIÓN: unas 700 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - Las cuatro señales: más de un local, precios de proveedor que cambian a diario, inventario que no se puede llevar a mano, y más de una persona tocando la misma hoja.
+  - Lo que da un software: precios que entran solos desde el albarán, escandallos que se recalculan sin abrir nada y trazabilidad de quién cambió qué.
+  - Lo que da un agente de inteligencia artificial: redacción de fichas, propuestas de reformulación y lectura de la carta en lenguaje natural. No sustituye al criterio de este libro: lo aplica más rápido.
+  - La frase que ordena el capítulo: esta guía te da el criterio; el software te da la automatización. Un software de gestión de escandallos y carta cuesta del orden de 1.100 € al año por local, IVA aparte, así que el salto se hace cuando el tiempo que ahorra vale más que eso.
+  - Explicar que el mantenimiento tiene coste aunque se quede en Excel: el plan de 90 días del pack tiene hitos y responsables, y si nadie los cierra la herramienta no vale nada.
+  - Cierre honesto con la plataforma de AI Chef Pro: se dice qué hace y para quién, sin prometer resultados y sin presentarla como obligatoria para aprovechar la guía.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Hitos registrados en el calendario de 90 días: 26   [fuente: plan-accion-90-dias.xlsx!Calendario 90 Días!D33]
+  - Hitos pendientes: 26   [fuente: plan-accion-90-dias.xlsx!Calendario 90 Días!D35]
+  - Avance del calendario: 0 %   [fuente: plan-accion-90-dias.xlsx!Calendario 90 Días!D36]
+  - Decisiones registradas: 10   [fuente: plan-accion-90-dias.xlsx!Decisiones!D27]
+  - Objetivo de cierre a 90 días: 80 %   [fuente: plan-accion-90-dias.xlsx!Decisiones!D35]
+  - Impacto total estimado de las decisiones: 2.360 €   [fuente: plan-accion-90-dias.xlsx!Decisiones!D31]
+  - Impacto total estimado a doce meses: 28.320 €   [fuente: plan-accion-90-dias.xlsx!Decisiones!D34]
+  - Decisiones que salen de la matriz multi-método: 5   [fuente: plan-accion-90-dias.xlsx!Decisiones!C51]
+  - Impacto estimado de las decisiones de la matriz: 760 €   [fuente: plan-accion-90-dias.xlsx!Decisiones!D51]
+  - Decisiones que salen del simulador multicanal: 2   [fuente: plan-accion-90-dias.xlsx!Decisiones!C52]
+  - Platos dados de alta en la carta de ejemplo: 20   [fuente: matriz-multimetodo-carta.xlsx!Datos!D36]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-FUENTES-03] HUECO SIN FUENTE — «El BOE publica el texto consolidado de toda la normativa citable en la guía (fiscal, laboral, sanitaria)»: NO escribas ninguna cifra sobre esto; formúlalo en cualitativo.
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: El avance del plan por bloque de trabajo (plan-accion-90-dias.xlsx, hoja «Calendario 90 Días»); De qué herramienta sale cada decisión (plan-accion-90-dias.xlsx, hoja «Decisiones»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - PROHIBIDO presentar esta guía como sustituto funcional de un software de gestión, y prohibido presentar el software como sustituto del criterio: la frase del capítulo distingue las dos cosas y no se puede difuminar.
+  - NO des precios de ningún producto de AI Chef Pro ni de ninguna plataforma concreta de la competencia: la única cifra de coste que puedes escribir en este capítulo es la del orden de magnitud anual del software por local que te doy en los puntos.
+  - NO prometas ahorro de tiempo ni retorno de la inversión con números: se explica el criterio de decisión y se deja la cuenta al lector.
+  - NO termines con un cierre de venta agresivo: el capítulo acaba con el criterio, no con una llamada a comprar.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre.

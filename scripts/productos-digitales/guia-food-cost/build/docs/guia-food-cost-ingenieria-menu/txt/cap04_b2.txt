@@ -1,0 +1,23 @@
+### Un albarán de ejemplo, línea a línea
+
+Cuando llega un albarán del proveedor con partidas de distinta naturaleza, el primer trabajo es separar las bases imponibles antes de trasladar ningún número a la ficha de escandallo (costeo de recetas). El albarán del ejemplo que acompaña este tramo, reproducido en la tabla de abajo, suma una base imponible total de 768,40 €, una cuota de IVA total de 84,41 € y un total con IVA de 852,81 €. Esas tres cifras proceden de la hoja «Albarán e IVA soportado» de ficha-escandallo-base.xlsx, y el lector puede confrontarlas línea a línea con su propio albarán real.
+
+El albarán mezcla tres tipos porque el proveedor sirve géneros de distinta naturaleza. Cada línea cae en uno de estos tramos:
+
+- **4 %** — tipo superreducido, regulado en el artículo 91, apartado Dos, número 1, número 1, letras a a g de la Ley 37/1992 (última incorporación: RDL 4/2024, letra g, con efectos desde el 1 de enero de 2025). La lista es cerrada: pan común, harinas panificables, leche, quesos, huevos, frutas, verduras, hortalizas, legumbres, tubérculos, cereales y aceites de oliva. Cualquier alimento que no figure en esa enumeración y no esté excluido por el artículo 91, apartado Uno, número 1, número 1, va al tipo reducido ordinario. El aceite de oliva es la incorporación más reciente: tributa al 4 % desde el 1 de enero de 2025, tras una rampa transitoria en 2024, en virtud del RDL 4/2024 (art. 2), publicado el 27 de junio de 2024. La letra que lo recoge es la g; la letra f preexistente es la de frutas, verduras, hortalizas, legumbres, tubérculos y cereales.
+
+- **10 %** — tipo reducido ordinario, también en el artículo 91 de la Ley 37/1992. Aquí caen la carne, el pescado, los mariscos, las conservas, el aceite de girasol y, en general, todos los alimentos que no están en la lista cerrada del 4 % ni excluidos de ella.
+
+- **21 %** — tipo general, residual respecto al artículo 91, regulado en el artículo 90 de la misma Ley 37/1992. Aplica a las bebidas alcohólicas y refrescos azucarados fuera de sala, al menaje no alimentario y a todo lo no comprendido en el artículo 91.
+
+El caso del packaging merece atención específica. La caja de delivery no es un alimento: es un envase de cartón o plástico destinado al transporte, y por eso tributa al 21 %, aunque el plato que va dentro lleve el tipo reducido. Lo mismo ocurre con los cubiertos de un solo uso, las bolsas de papel o los soportes de presentación que no forman parte del producto alimentario. Cuando el proveedor sirve en el mismo albarán género de cocina y material de packaging, el restaurador recibe un documento con los tres tipos en columnas distintas, y separar esas columnas antes de archivar es el único modo de cuadrar la contabilidad del IVA soportado sin errores.
+
+### El IVA soportado es tesorería: dónde entra y dónde no
+
+La regla del escandallo es una sola: se costea con el precio sin IVA. El IVA de compra se deduce en la liquidación periódica, de modo que no es un coste real para el negocio, sino un anticipo que la Hacienda Pública devuelve al compensarlo con el IVA repercutido. Meterlo en la ficha equivale a contarlo dos veces: una en la ficha y otra en el modelo de liquidación.
+
+El efecto numérico es visible en la hoja «Ficha» de ficha-escandallo-base.xlsx. El coste por ración sin IVA es 5,67 €. El IVA soportado total que corresponde a esa ración asciende a 0,56 €, y si se suma al coste se obtiene un coste por ración con el IVA soportado dentro de 6,23 €. El food cost correcto del plato, calculado sobre la base imponible, es 32,8 %. Si en cambio se parte del 6,23 €, el food cost erróneo contando el IVA como coste sube a 36,0 %. Esa diferencia de puntos porcentuales no es un matiz técnico: altera la decisión de precio, el umbral de rentabilidad y cualquier comparativa entre platos de la carta.
+
+Existe, sin embargo, un caso en que esta regla deja de ser válida: cuando el negocio no puede deducirse el IVA soportado, ese IVA sí se convierte en coste real y debe entrar en el escandallo. Las circunstancias que generan esa situación dependen del régimen fiscal aplicable y de la actividad concreta, y determinarlas es trabajo de la asesoría contable, no de la ficha técnica. Si hay cualquier duda sobre si el negocio puede o no deducir, la consulta con el asesor debe hacerse antes de configurar las fórmulas de la hoja «Ficha», porque cambiar el criterio a mitad del ejercicio obliga a recalcular todos los escandallos ya cerrados.
+
+El cuadro siguiente, extraído de la hoja «Albarán e IVA soportado» de ficha-escandallo-base.xlsx, muestra el albarán completo con las tres columnas de IVA desglosadas y la base imponible de cada línea, de modo que el lector puede replicar la lectura con cualquier albarán de su proveedor habitual.

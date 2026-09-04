@@ -1,0 +1,21 @@
+### El enunciado y los datos
+
+El ejercicio parte de un menú de precio fijo con un precio de venta único que agrupa varios cursos, cada uno con dos o tres opciones donde elegir. El precio de venta al público con IVA es 14,50 €, y como todo el consumo en sala tributa al tipo reducido de IVA de restauración —el 10 %, bebida alcohólica incluida—, la base imponible del menú queda en 13,18 €. A ese precio se le suman unos costes (costos) fijos por menú de 0,55 €, la parte de mise en place y de estructura que no cambia se pida lo que se pida. El pack cierra el mes con 100 menús servidos, la cifra sobre la que se proyecta el resultado.
+
+Cada curso lleva su propio escandallo (costeo de recetas), y lo que decide cuánto cuesta el curso no es el coste de un plato suelto, sino el peso de cada opción en lo que de verdad se pide: el mix. El ejercicio compara tres repartos de ese mix con el mismo precio de venta y los mismos costes: uno base, el observado en sala, y dos escenarios que mueven la demanda dentro del propio menú —el A, hacia las opciones de coste más alto; el B, hacia las más económicas—. Ese es el dato de partida: un precio, unos costes fijos y tres mix distintos para las mismas opciones.
+
+### La resolución, paso a paso
+
+El primer paso ya queda resuelto en el propio enunciado: la base imponible sale de descontar el tipo de IVA de restauración al precio de venta con IVA, y son esos 13,18 € los que sirven de referencia para todo lo que viene después, nunca los 14,50 € que paga el comensal en caja.
+
+El segundo paso es el coste medio de cada curso, que se calcula sumando el coste de cada opción multiplicado por su peso en el mix: si una opción se pide más veces, pesa más en la media; si casi nadie la elige, apenas mueve el número aunque sea la más cara. Se repite curso a curso, una vez por cada uno de los tres repartos.
+
+El tercer paso suma los costes medios de todos los cursos y añade los costes fijos por menú, y da el coste total del menú en cada escenario: 5,63 € con el mix base, 5,93 € en el escenario A y 5,35 € en el escenario B. Tres costes de menú distintos para el mismo precio de venta, sólo porque cambia lo que se pide.
+
+Con ese coste total se despejan los dos últimos datos: el food cost, que es el coste total sobre la base imponible, y el margen por menú, que es la base imponible menos el coste total. El mix base deja un food cost del 42,7 % y un margen de 7,55 € por menú; el escenario A sube el food cost hasta el 45,0 %; el escenario B lo baja hasta el 40,6 %. El último paso multiplica ese margen por los 100 menús servidos al mes y da el margen del mes de cada reparto, tal como recoge el cuadro siguiente: 754,93 € con el mix base, 725,18 € en el escenario A y 782,93 € en el escenario B.
+
+### Cómo se lee el resultado
+
+El precio de venta no se mueve en ningún momento de este ejercicio: los 14,50 € con IVA son los mismos en el mix base y en los dos escenarios, y aun así el margen del mes cambia de forma notable entre el reparto más caro de servir y el más barato. Eso es lo que demuestra un menú cerrado: el resultado no lo decide el precio impreso, lo decide lo que el comensal acaba eligiendo dentro de las opciones que se le ofrecen.
+
+Dicho de otro modo, el food cost de este menú no es un número que se calcule una vez y se olvide: es una media que se recalcula cada vez que cambia el mix, y ese mix se mueve con decisiones al alcance de la cocina y de la sala —el orden de las opciones en cada curso, cómo se describen, cuáles se recomiendan en la mesa—, no con subir el precio de venta. Por eso el ejercicio no busca un margen aceptable en abstracto: busca la distancia entre el escenario A y el B con el mismo precio, porque esa distancia es la palanca que hay que trabajar antes de plantearse tocar el menú.

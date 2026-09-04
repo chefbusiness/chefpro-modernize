@@ -1,0 +1,37 @@
+### Las tres mermas que no son la misma: despiece, cocción y desperdicio
+
+La merma no es un porcentaje del sector que se copia de una tabla de internet y se aplica a todos los productos de la misma categoría. Es un dato de tu proveedor, de tu calibre de compra y de la manera en que tu equipo limpia. Dos cocinas que reciben la misma lubina entera del mismo puerto pueden obtener rendimientos distintos según el tamaño de los ejemplares, el cuchillo que usan y el criterio con el que retiran la piel. Eso significa que la tabla orientativa que acompaña este capítulo —la que encontrarás en la hoja «Mi Tabla de Mermas» de rendimiento-mermas-producto.xlsx— sólo sirve como punto de partida provisional mientras no tienes tu propia medición.
+
+Conviene separar con precisión tres fenómenos que el oficio agrupa bajo la misma palabra. La merma de despiece es la que ocurre en frío, sobre la tabla, antes de que el producto entre en calor: espinas, piel, hojas externas, huesos, cáscaras. La merma de cocción es la pérdida de peso que sufre el producto ya limpio cuando se aplica calor: el agua que suelta una pieza de carne al horno, la reducción de un filete a la plancha, la contracción de un músculo al vapor. La merma por desperdicio es la que no debería existir y que sin embargo existe: el género que caduca, el que se corta mal y no se puede emplatat, el que se tira porque la mise en place fue excesiva. Las tres restan margen, pero se gestionan de forma distinta y se registran en momentos distintos.
+
+El error más frecuente en el escandallo (costeo de recetas) es aplicar sólo la merma de despiece y olvidar la de cocción. Si el pollo de corral al horno pierde un 28,0 % de su peso durante la cocción —dato que recoge la hoja «Merma de Cocción» de rendimiento-mermas-producto.xlsx— y además tiene una merma de despiece propia del ave entera, quien sólo aplica uno de los dos números está costeando de menos. La pérdida media por cocción de las pruebas registradas en esa misma hoja es del 27,3 %, lo que indica que la cocción no es un ajuste menor: es una segunda merma de magnitud comparable a la del despiece en muchas categorías, y se aplica encima de la primera, no en lugar de ella.
+
+---
+
+### El protocolo del test de rendimiento, paso a paso
+
+El test de rendimiento se hace con una báscula, el mismo día y con la pieza real que compras a tu proveedor habitual. No sirve pesar un calibre distinto ni usar un ejemplar de muestra: el número tiene que salir del género que entra en tu cocina.
+
+El procedimiento tiene tres pesadas sobre la misma pieza:
+
+- Se pesa el producto tal como llega del proveedor, sin limpiar. Ese es el peso bruto.
+- Se limpia con el criterio habitual de la cocina y se pesa el producto limpio listo para cocinar. Ese es el peso neto.
+- Se recoge por separado todo lo que tiene valor de uso —cabezas, espinas, recortes con carne, hojas externas aprovechables— y se pesa también. Ese es el peso del subproducto aprovechable.
+
+Tres medidas de la misma pieza, el mismo día, anotadas en la hoja «Test de Rendimiento» de rendimiento-mermas-producto.xlsx. En los 10 productos medidos en esa hoja, el peso bruto total comprado fue de 31,50 kilos y el peso limpio total obtenido fue de 19,07 kilos, lo que arroja un rendimiento medio ponderado del 60,5 % y una merma media ponderada del 39,5 %. El coste total de compra de esos tests fue de 237,35 €.
+
+De esos números sale el dato que va a la ficha técnica: el factor de corrección. Es el inverso del rendimiento, y su función es convertir la cantidad neta que necesitas para una ración en la cantidad bruta que debes comprar. Si la lubina entera rinde un 51,7 %, su factor de corrección es 1 dividido entre 0,517. Ese número —que la hoja calcula automáticamente— es el que multiplica el peso neto de la receta para obtener el peso de compra. Sin él, cada ficha técnica subestima la cantidad real que sale del almacén.
+
+El coste neto por kilo limpio de la lubina sin aprovechar el subproducto es de 28,84 €, y el sobrecoste sobre el precio del kilo bruto es de 12,73 €. Esa diferencia es lo que desaparece del margen cuando el escandallo se hace sobre el precio de compra bruto en lugar de sobre el coste del kilo limpio. La alcachofa, con un rendimiento del 38,0 %, y el mejillón con concha, con un rendimiento del 20,0 %, ilustran en la tabla de abajo hasta qué punto el precio de compra y el coste real de uso pueden ser magnitudes muy alejadas entre sí.
+
+---
+
+### Qué pasa con el subproducto: cabezas, espinas y recortes
+
+Aprovechar el subproducto reduce el coste neto del kilo limpio, pero sólo si el valor de uso que se le asigna es real. La condición es concreta: ese subproducto tiene que sustituir a algo que ibas a comprar. Si las cabezas de gamba se convierten en un fondo que reemplaza a un fondo envasado que de otro modo habrías pedido al proveedor, el ahorro es real y se puede cuantificar. Si ese fondo se hace porque «no se tira nada» pero luego no entra en ninguna receta o se acaba tirando igualmente, el valor de uso asignado es ficticio y el escandallo queda inflado.
+
+En los tests recogidos en la hoja «Test de Rendimiento», el valor de uso total de los subproductos asciende a 5,15 €. No es una cifra despreciable dentro de un lote de 237,35 € de compra, pero tampoco cambia el coste de forma radical: lo que cambia es la precisión. La lubina aprovechada cuesta 27,63 € el kilo limpio frente a los 28,84 € sin aprovechar. El ahorro por aprovechar las cabezas de la gamba es de 1,43 €. Esos importes sólo son válidos si la cocina tiene una receta concreta que consume ese subproducto de forma sistemática y si el fondo o la preparación resultante sustituye efectivamente a una compra.
+
+El criterio para registrar el valor de uso es el coste de lo que sustituye, no el precio de venta de un hipotético plato que podría hacerse con esos recortes. Si las espinas de lubina van a un fumet que reemplaza a un fumet comprado, el valor de uso es el precio de ese fumet comprado por la cantidad que se obtiene. Si no hay sustitución directa, el valor de uso es cero y el coste neto del kilo limpio se calcula sin descuento.
+
+La hoja «Mi Tabla de Mermas» de rendimiento-mermas-producto.xlsx refleja el estado actual de la medición: 6 categorías ya tienen medición propia y 6 categorías aún usan la referencia orientativa. El objetivo no es tener todas las categorías medidas de una vez, sino ir sustituyendo la referencia por el dato propio cada vez que se hace un pedido relevante, hasta que la tabla de referencia quede como respaldo residual y no como fuente principal del escandallo.

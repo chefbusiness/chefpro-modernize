@@ -1,0 +1,31 @@
+### Ticket medio y margen por cubierto
+
+El porcentaje ordena; el euro paga. Esa es la tensión que atraviesa cualquier carta que lleve tiempo sin revisarse, y entenderla cambia el criterio con el que se toman las decisiones de precio.
+
+Tomemos el caso de la carta de ejemplo del pack. El food cost medio ponderado es 32,7 % (hoja «Datos» de matriz-multimetodo-carta.xlsx), un número que, comparado con la referencia del sector, se sitúa en el extremo superior del rango sano de 25-35 % que recoge el informe «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026). Alguien podría leer ese 32,7 % y concluir que la carta tiene un problema. La tabla de abajo demostrará que la lectura correcta es más matizada.
+
+El margen de contribución medio ponderado de esa misma carta es 8,16 € por unidad vendida. Sobre 4.870 unidades al mes y 59.029 € de ventas netas, ese margen es el que financia todo lo que viene después: personal, alquiler, suministros y beneficio. Nótese que el margen de contribución no ha pagado todavía ninguna de esas partidas; es el punto de partida, no el resultado.
+
+Ahora el caso límite que justifica la tesis. Un plato con food cost del 20 % sobre un precio de venta bajo puede dejar menos euros por cubierto que un plato con food cost del 34 % sobre un precio de venta alto. El porcentaje del primero es más «limpio» sobre el papel, pero el segundo aporta más margen absoluto a la caja cada vez que sale de la cocina. Si la decisión se toma mirando solo el porcentaje, se puede retirar precisamente el plato que más contribuye a cubrir los costes fijos.
+
+El ticket medio sin IVA en el mes de partida del plan de 90 días es 27,4 (hoja «KPI de Seguimiento» de plan-accion-90-dias.xlsx) y el margen de contribución por cubierto en ese mismo momento es 18,1. Esos dos números se leen juntos: el primero dice cuánto ingresa el local por comensal; el segundo, cuánto queda disponible para cubrir estructura antes de que el cliente pague la cuenta y se marche.
+
+El margen de contribución medio ponderado y el food cost medio ponderado de la carta se calculan siempre sobre las unidades realmente vendidas, no sobre la media simple de los platos que figuran en la carta. La media simple asigna el mismo peso a un plato que se vende tres veces al día que a uno que se vende tres veces al mes, y produce un número que no corresponde a ninguna realidad operativa. La hoja «Datos» de matriz-multimetodo-carta.xlsx aplica la ponderación por unidades: el resultado es el 32,7 % y los 8,16 € citados, y son los únicos que tienen sentido para tomar decisiones.
+
+---
+
+### Cuál manda en cada decisión
+
+El prime cost es la cifra que impide el autoengaño más habitual en cocina: reducir el food cost aumentando la elaboración. Cuando se sustituye un producto semielaborado por materia prima en bruto, el coste de género baja, pero el tiempo de preparación sube y eso aparece en la nómina. El ahorro no desaparece; se desplaza de una línea a otra. El prime cost lo captura porque suma food cost y labor cost en un solo indicador.
+
+En la carta de ejemplo, el coste de materia prima sobre ventas del año es 32,1 % y el labor cost es 31,3 %, lo que arroja un prime cost de 63,4 % (hoja «Mensual» de cuadro-de-mando-prime-cost.xlsx). Sobre unas ventas netas anuales de 1.232.200 €, el margen tras prime cost es 451.142 €. Ese margen tiene que cubrir el alquiler, los suministros, los gastos generales y dejar un EBITDA operativo. La estructura de referencia que publica «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026) sitúa el producto en torno al 30 %, el personal entre 30 y 35 % y los gastos generales en un ideal próximo al 17 %, con un EBITDA sano resultante de entre 10 y 13 %; por debajo de ese umbral, el negocio requiere reestructuración. El cuadro siguiente permite leer mes a mes si el prime cost se mantiene en zona de control o si alguna de sus dos patas está derivando.
+
+El rango de food cost varía según el formato. «qamarero.com — Food cost restaurante: cómo calcularlo y optimizarlo» (2026) recoge que el fine dining trabaja habitualmente entre 20 y 25 %, la restauración tradicional entre 28 y 32 %, el bar de tapas entre 28 y 35 %, la pizzería entre 25 y 30 % y la cafetería entre 20 y 28 %. Esos rangos son orientativos y dependen del ticket, del nivel de elaboración y del mix de ventas real, no de la carta impresa.
+
+La regla de uso queda así:
+
+- Para decidir si un plato se retira o se mantiene en carta, manda el margen de contribución: es el único indicador que mide lo que ese plato aporta en euros reales cada vez que se vende.
+- Para ir a negociar con un proveedor, manda el food cost: es el porcentaje que refleja el peso de esa materia prima sobre la venta y el que justifica o no un volumen de compra mayor a cambio de un precio menor.
+- Para saber si el negocio aguanta su estructura de costes, manda el prime cost: es la suma de las dos partidas controlables más grandes y el primer indicador que se deteriora cuando algo falla en cocina o en sala.
+
+Ninguna de las tres cifras es prescindible, y ninguna sustituye a las otras dos.

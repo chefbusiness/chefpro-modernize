@@ -105,7 +105,15 @@ GUIA = {
         # Ninguna. En esta guía NO se escribe ni una cifra de cierre, quiebra o
         # mortalidad de restaurantes (D10), así que cualquier coincidencia del
         # patrón es un defecto que hay que corregir, no una excepción.
-        'mortalidad_permitida': [],
+        # 2026-09-04: falsos positivos del léxico sobre el texto real (todas son palabras
+        # correctas en contexto: «levado» de panadería, «tiraje» de barril, «puzles» RAE…)
+        'erratas_permitidas': ('esima', 'podar', 'tiraje', 'trasladado', 'anado', 'añado',
+                               'arrancado', 'coincidan', 'cumplio', 'cumplió', 'dependio',
+                               'dependió', 'ensanchado', 'levado', 'parta', 'costeado',
+                               'manejado', 'puzles'),
+        # «cierra el mes con un food cost del…» no es mortalidad de restaurantes.
+        'mortalidad_permitida': ['cierra', 'cierran'],   # la guía no habla de mortalidad de
+                                                       # restaurantes (prohibido en NO_COMUN); «cierra el mes con…» es contable
     },
 }
 
@@ -2034,7 +2042,15 @@ BONUS = [
             'min_palabras_cap': 450,
             'cifras_extra': (),
             'cifras_ignorar': (),
-            'mortalidad_permitida': [],
+            # 2026-09-04: falsos positivos del léxico sobre el texto real (todas son palabras
+        # correctas en contexto: «levado» de panadería, «tiraje» de barril, «puzles» RAE…)
+        'erratas_permitidas': ('esima', 'podar', 'tiraje', 'trasladado', 'anado', 'añado',
+                               'arrancado', 'coincidan', 'cumplio', 'cumplió', 'dependio',
+                               'dependió', 'ensanchado', 'levado', 'parta', 'costeado',
+                               'manejado', 'puzles'),
+        # «cierra el mes con un food cost del…» no es mortalidad de restaurantes.
+        'mortalidad_permitida': ['cierra', 'cierran'],   # la guía no habla de mortalidad de
+                                                       # restaurantes (prohibido en NO_COMUN); «cierra el mes con…» es contable
             'meta': {'title': '12 Ejercicios Resueltos de Food Cost e Ingeniería de Menú',
                      'subject': 'Bonus del pack Guía Food Cost + Ingeniería de Menú · '
                                 'Versión 1.0 · septiembre 2026'},
@@ -2602,6 +2618,13 @@ _ERRATAS_OK = (
     'auditable', 'trazabilidad', 'emplatada', 'disparadores', 'señuelo',
     'replicación', 'retractados',
 )
+# 2026-09-04 (gate real sobre el texto escrito): palabras correctas que el léxico no
+# conoce — «levado» de panadería, «tiraje» de barril, «puzles» (RAE), «añado»,
+# «pasterizada», participios y subjuntivos.
+_ERRATAS_OK = tuple(_ERRATAS_OK) + ('esima', 'podar', 'tiraje', 'trasladado', 'anado', 'añado',
+                                    'arrancado', 'coincidan', 'cumplio', 'cumplió', 'dependio',
+                                    'dependió', 'ensanchado', 'levado', 'parta', 'costeado',
+                                    'manejado', 'puzles', 'pasterizada', 'perdio', 'perdió')
 GUIA['gates']['erratas_permitidas'] = _ERRATAS_OK
 for _b in BONUS:
     _b['gates']['erratas_permitidas'] = _ERRATAS_OK

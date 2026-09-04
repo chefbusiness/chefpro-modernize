@@ -1,0 +1,23 @@
+### Qué hace esta guía y qué hace el Kit de Escandallos
+
+El punto de partida de este documento es una carta que ya se está sirviendo. No hay aquí ni un párrafo sobre licencias, obra, inversión inicial ni plan de negocio: quien necesite eso tiene que buscar otra herramienta. Lo que sí hay es un método para leer lo que esa carta está haciendo con el dinero y para tomar decisiones sobre ella con criterio, no con intuición.
+
+La división del trabajo dentro del pack es precisa y conviene entenderla antes de abrir ningún archivo. El Kit de Escandallos aporta las plantillas por formato de negocio —restaurante de sala, barra, colectividades, delivery— y el sistema de control diario: fichas técnicas, hojas de mermas, registro de compras y cuadro de seguimiento de desviaciones. Esta guía aporta otra cosa: el criterio de decisión y las ocho herramientas de análisis de carta que permiten saber qué platos sostienen el negocio, cuáles lo lastran y qué palancas mover primero. Quien tenga los dos materiales no duplica trabajo: el Kit produce los datos y esta guía los interpreta.
+
+El food cost objetivo con el que trabaja el pack es el 30 %, cifra que coincide con la media del sector hostelero español según el informe «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026), que sitúa el rango sano entre el 25 % y el 35 % sobre venta. Ese mismo informe describe la estructura de costes de referencia de un restaurante español: producto en torno al 30 %, personal y servicio integrado entre el 30 % y el 35 %, alquiler entre el 5 % y el 10 %, y gastos generales entre el 13 % y el 20 % sobre venta, con un EBITDA sano resultante de entre el 10 % y el 13 %; por debajo del 10 % el negocio requiere reestructuración. Dentro de esa arquitectura, el prime cost —producto más personal— es el indicador que concentra la mayor parte de la gestión, y el objetivo con el que trabaja el cuadro de mando incluido en el pack es el 65 %, recogido en la hoja «Parámetros» de cuadro-de-mando-prime-cost.xlsx.
+
+La carta de ejemplo que recorre todo el pack es un caso modelado, no un cliente real. Tiene 20 platos dados de alta, genera 4.870 unidades vendidas al mes y cierra el periodo con 59.029 € de ventas netas, con un food cost medio ponderado del 32,7 %. Esos números están en la hoja «Datos» de matriz-multimetodo-carta.xlsx y son los mismos en los ocho libros del pack: lo que cambia entre herramienta y herramienta es el ángulo desde el que se analiza esa carta, no los datos de partida. Trabajar siempre sobre el mismo caso permite comparar resultados entre métodos sin perder el hilo, y permite también que el lector vea con claridad qué decisión cambia cuando cambia un solo parámetro. La hoja «Inversión» de plan-financiero-3-anos.xlsx no forma parte de este pack: se menciona aquí solo para dejar claro que no está, porque es la herramienta de apertura y este documento empieza donde aquella termina.
+
+La tabla de abajo recoge, para cada problema concreto que puede traer el lector, el capítulo que lo trata y la herramienta del pack que lo resuelve. Conviene leerla antes de seguir, porque marca el camino más corto según el punto de partida de cada uno.
+
+---
+
+### Cómo llamamos aquí a cada cosa
+
+Este documento se escribe en español de España y usa los términos del oficio tal como se usan en sala y en cocina. Cuando un término tiene una forma distinta en Hispanoamérica, se indica la equivalencia la primera vez que aparece y después se usa siempre la forma española.
+
+Escandallo (costeo de recetas) es la ficha que descompone un plato en ingredientes, cantidades brutas, mermas y coste (costo) unitario resultante. A partir de aquí, «escandallo» y «coste» son las formas que se usan en todo el documento. La carta (menú) es el conjunto de platos que el establecimiento ofrece a la venta; «menú» se reserva para el menú de precio fijo, que es un formato de venta distinto con su propia lógica de escandallo. «Plato» designa cualquier referencia de la carta, sea entrante, principal, postre o elaboración de barra.
+
+Los anglicismos que se mantienen son los que el oficio ha adoptado sin sustituto claro: food cost, prime cost, labor cost, beverage cost, delivery, take away y packaging. No se usan «contribution margin», «menu engineering» ni otros términos en inglés que tienen traducción asentada en la hostelería española: se escribe «margen de contribución» e «ingeniería de menú» porque son las formas que aparecen en los convenios, en los informes sectoriales y en la formación profesional del sector.
+
+El cuadro siguiente detalla qué libro del pack resuelve cada problema, con el nombre exacto del archivo y de la hoja donde empieza el trabajo.

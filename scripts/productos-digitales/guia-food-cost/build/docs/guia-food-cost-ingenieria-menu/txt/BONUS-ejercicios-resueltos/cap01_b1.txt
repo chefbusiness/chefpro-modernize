@@ -1,0 +1,19 @@
+### El enunciado y los datos
+
+Tomamos la línea de solomillo de la hoja «Ficha» de ficha-escandallo-base.xlsx: una ración pide 0,22 de producto neto, con una merma del 12,0 % en la limpieza previa a cocina, y el proveedor factura el solomillo a 15,80 € por unidad, sin IVA. El ejercicio plantea dos preguntas que se repiten en cualquier escandallo (costeo de recetas): cuánto hay que comprar en bruto para que, tras descartar la merma, quede la cantidad neta que pide la receta, y cuánto cuesta esa línea dentro de la ficha.
+
+La trampa está en el verbo con el que se habla de la merma: cuando se dice que una pieza «tiene un 12,0 % de merma», la tentación es multiplicar la cantidad neta directamente por ese porcentaje, como si la merma fuera un extra que se suma al final. No es así: es la parte de la pieza bruta que se pierde por el camino, y hay que comprar de más para compensarla, no sumarla a lo que ya se tiene. Esa diferencia separa un escandallo que refleja lo que de verdad ha pagado la cocina de otro que infravalora el coste (costo) del plato.
+
+### La resolución, paso a paso
+
+La fórmula es la misma para cualquier línea: la cantidad bruta es igual a la cantidad neta dividida entre uno menos la merma, expresada en tanto por uno. Aplicada al solomillo —cantidad neta 0,22, merma 12,0 %— esa división da la cantidad bruta a comprar, 0,25, la cifra que recoge la hoja «Ficha» de ficha-escandallo-base.xlsx y la tabla de abajo.
+
+El coste de la línea no se calcula sobre la cantidad neta, que es lo que llega al plato, sino sobre la cantidad bruta, lo que realmente se ha comprado: cantidad bruta por precio por unidad sin IVA. Con 0,25 de cantidad bruta y 15,80 € por unidad, la línea de solomillo cuesta 3,95 € sin IVA, la cifra que cierra esa fila en la tabla siguiente.
+
+Ahora el error que hay que desterrar: si en lugar de dividir se multiplica la cantidad neta por la merma —0,22 por 12,0 %— y ese resultado se toma como si fuera la cantidad bruta, la cifra sale muy por debajo de 0,25, y el coste de línea queda muy por debajo de los 3,95 € reales: la cocina compra de menos y anota un plato más barato de lo que en realidad cuesta producir. La línea del boniato, con merma del 18 %, llega a su cantidad bruta —0,22— por el mismo camino, y el coste total de la ficha, sin IVA, 5,67 €, sólo es correcto si cada línea se ha costeado en bruto y no en neto.
+
+### Cómo se lee el resultado
+
+Lo que separa el escandallo correcto del erróneo no es un matiz teórico: es pedir al proveedor la cantidad que hace falta, o quedarse corto en pleno servicio, y anotar un coste que existe de verdad frente a uno que sólo existe sobre el papel. La cifra que sale de la división —0,25 en el solomillo, 0,22 en el boniato— es la que hay que trasladar tal cual al pedido; comprar menos deja la partida corta, y pedir de más «por si acaso» no resuelve el problema, sólo lo esconde. El procedimiento no cambia de una línea a otra por mucho que cambien la merma o el precio: siempre es dividir la cantidad neta entre uno menos la merma y multiplicar el resultado por el precio, y es lo que sostiene el coste total de la ficha, sin IVA, en 5,67 €.
+
+Ese coste total es también el número que se traslada de la ficha a la carta (menú) al fijar el precio de venta: si la cantidad bruta que lo alimenta está mal calculada en una sola línea, el precio de venta arrastra el mismo error desde el primer paso. Revisar la cantidad bruta de cada línea antes de cerrar la ficha es, de las tareas de este capítulo, la que menos tiempo exige y la que más protege el margen, ración a ración, cada vez que el plato sale de cocina.

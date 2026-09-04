@@ -1,0 +1,26 @@
+### El enunciado y los datos
+
+El ejercicio parte de un plato con el escandallo (costeo de recetas) ya resuelto: las croquetas. El canal de reparto añade al coste (costo) por ración dos variables que la sala no conoce —la comisión de la plataforma y el envase, o packaging, del pedido— y fija además un precio techo: el límite por encima del cual el cliente deja de pedir el plato en la aplicación. Estos son los datos de partida:
+
+- Coste por ración de las croquetas: 2,10 €.
+- Precio de venta en sala, sin IVA: 8,60 €.
+- Comisión del canal: 30 %.
+- Envase por pedido: 1,75 €, con 2,5 platos de media por pedido.
+- Envase por plato: 0,70 €.
+- Precio techo en delivery: 11,60 €.
+
+La comisión del 30 % del ejercicio encaja dentro del rango que manejan las plataformas en España, entre el 15 % y el 35 % más IVA, según la zona, el plan contratado y quién asume el reparto (qamarero.com — Cuánto cobra Glovo a los restaurantes, 2026). Y rara vez es el único coste: el envase puede moverse por su cuenta entre 1,35 € y 2,15 € por pedido, algunas plataformas piden descuentos de visibilidad de entre el 20 % y el 30 %, y las penalizaciones por rendimiento suman hasta 2 puntos más de comisión (qamarero.com — Comisiones delivery: cuánto cobran realmente las plataformas, 2026), extras que casi nunca están a la vista al firmar el contrato.
+
+### La resolución, paso a paso
+
+El primer paso suma el coste por ración de las croquetas y el envase que le corresponde a cada plato: de ahí sale el coste efectivo, la cifra real que hay que cubrir cuando el pedido sale por la puerta con su envase puesto, no sólo con la elaboración terminada.
+
+El segundo paso comprueba qué pasa si en delivery se cobra el mismo precio que en sala. El food cost efectivo es el coste efectivo dividido entre el precio de venta multiplicado por uno menos la comisión, es decir, entre lo que de verdad le queda al restaurante del precio una vez descontado el porcentaje que se lleva la plataforma. Con el precio de sala sin tocar, la hoja «Carta» de simulador-repricing-multicanal.xlsx sitúa ese food cost efectivo de las croquetas en el 46,5 %, muy por encima del food cost objetivo del canal, que es del 40 %: ahí queda a la vista que el precio de sala no sirve para el canal de reparto sin repasarlo antes.
+
+El tercer paso invierte la fórmula anterior: en vez de partir del precio para llegar al food cost, se parte del food cost objetivo para llegar al precio. El precio necesario es el coste efectivo dividido entre el producto del food cost objetivo por uno menos la comisión. Aplicada a las croquetas, esa cuenta fija el precio necesario en 10,00 €: el precio mínimo con el que, descontada la comisión del 30 %, el food cost del plato en delivery vuelve a caer en el 40 % que se persigue.
+
+### Cómo se lee el resultado
+
+El último paso ya no es de cálculo, es de decisión: comparar el precio necesario con el precio techo. En las croquetas, 10,00 € de precio necesario frente a 11,60 € de techo deja margen de sobra, así que el plato entra en el canal de reparto sin forzar el precio hasta el límite que tolera el cliente y se queda en la carta (menú) de delivery con ese precio recalculado.
+
+El mismo criterio se repite plato por plato, y el cuadro siguiente recoge —tal como resume la hoja «Resumen» de simulador-repricing-multicanal.xlsx— el resultado aplicado a toda la carta: 12 platos viables en delivery frente a 8 que hay que excluir o reformular. Cuando el precio necesario supera el precio techo, la respuesta no es subir el precio hasta el límite y esperar que aguante: eso sólo traslada el problema al cliente, que deja de pedir el plato. La salida real pasa por sacar el plato del canal de reparto —dejarlo sólo para la sala, donde el food cost sí funciona— o por reformularlo: bajar el coste por ración, ajustar la ración o cambiar algún ingrediente hasta que el precio necesario vuelva a caber bajo el techo. Y conviene repetir el cálculo cada vez que cambien las condiciones con la plataforma, porque la comisión y los costes que se le suman se mueven con la zona, el plan y la campaña del momento.

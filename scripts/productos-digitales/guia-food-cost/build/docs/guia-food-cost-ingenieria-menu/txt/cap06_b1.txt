@@ -1,0 +1,37 @@
+### Qué tiene que llevar una línea de escandallo para ser auditable
+
+Una ficha de escandallo (costeo de recetas) que aguante una auditoría no es la que tiene más columnas, sino la que permite reconstruir cada decisión sin preguntar a quien la hizo. Para eso, cada línea de ingrediente necesita al menos seis campos: nombre del ingrediente tal como aparece en el albarán, cantidad neta por ración, porcentaje de merma, cantidad bruta a comprar, precio sin IVA y tipo de IVA de compra en su propia columna.
+
+El motivo de separar el precio sin IVA del tipo impositivo no es burocrático. La ficha tiene que servir para dos cosas a la vez: costear la ración y conciliar el albarán cuando llegue la factura del proveedor. Si el precio que guardas ya lleva el IVA incorporado, el coste que calculas no es comparable con el que aparece en la cuenta de resultados, que trabaja siempre con bases imponibles. Y si el tipo de IVA está en su propia columna, cualquier cambio normativo —un ingrediente que pasa de un tipo a otro— se corrige en un solo campo sin tocar el precio ni la fórmula de coste.
+
+El campo «raciones que salen de esta ficha» merece atención especial. La ficha del solomillo de cerdo ibérico con puré de boniato que acompaña esta guía tiene ese campo fijado en 1, lo que significa que todos los ingredientes están expresados por ración individual. Pero en cocina de producción es habitual escandalllar una elaboración entera —un fondo, una salsa base, un puré— y después dividir entre el número de raciones que rinde. Ese campo es el divisor. Costear a ojo la ración desde una elaboración de varios kilos introduce un redondeo que se acumula línea a línea y que al final del mes aparece como desviación inexplicable entre el coste teórico y el coste real. La ficha de la hoja «Ficha» de ficha-escandallo-base.xlsx resuelve esto: se introduce el coste total de la elaboración y el número de raciones, y la división la hace la hoja, no el cocinero de guardia.
+
+Los campos obligatorios de cada línea, resumidos:
+
+- Nombre del ingrediente exactamente como figura en el albarán del proveedor.
+- Cantidad neta por ración, en kilogramos o litros, sin redondear.
+- Porcentaje de merma, como número entre 0 y 1 o como porcentaje, según el criterio que se elija, pero siempre el mismo en toda la ficha.
+- Cantidad bruta a comprar, calculada por fórmula, nunca a mano.
+- Precio sin IVA por unidad de compra.
+- Tipo de IVA de compra, en columna propia.
+- Coste sin IVA de la línea, resultado de multiplicar la cantidad bruta por el precio sin IVA.
+
+### La merma entra dividiendo, no multiplicando
+
+El error más frecuente al construir una ficha es calcular la cantidad bruta sumando la merma a la cantidad neta. La lógica parece correcta: si necesito 0,22 kg limpios y la merma es del 12,0 %, añado el 12,0 % de 0,22 y compro un poco más. El problema es que ese cálculo aplica el porcentaje sobre el peso limpio, cuando la merma se produce sobre el peso bruto. El resultado siempre se queda corto, y la desviación crece con porcentajes de merma altos.
+
+La fórmula correcta es: cantidad bruta = cantidad neta dividida entre uno menos la merma. Con los datos de la primera línea de la ficha, la cantidad neta es 0,22 kg y la merma es 12,0 %, es decir, 0,12 en decimal. La operación es 0,22 dividido entre 0,88, que da 0,25 kg. Ese 0,25 es la cantidad bruta que aparece en la hoja «Ficha» de ficha-escandallo-base.xlsx. Si se hubiera calculado sumando el 12,0 % de 0,22, el resultado habría sido 0,2464 kg, una diferencia que parece pequeña por ingrediente pero que se multiplica por cada línea, por cada servicio y por cada día del año.
+
+La cantidad bruta del boniato en esa misma ficha es 0,22 kg, lo que indica que su merma es nula o despreciable en la elaboración concreta que se ha escandallado: el puré parte de boniato ya pelado y porcionado según el proceso de mise en place del establecimiento. Si el proceso cambia —si se compra con piel y se pela en cocina—, el porcentaje de merma sube y la cantidad bruta sube con él. La ficha no es un documento estático: cada vez que cambia el proveedor, el formato de compra o el proceso de limpieza, hay que revisar la columna de merma antes de revisar el precio.
+
+Un criterio práctico para auditar esta columna: si el porcentaje de merma de una línea es cero y el ingrediente llega entero o sin procesar, hay que preguntar quién está asumiendo esa merma. O la absorbe el proveedor en el precio —lo que significa que el precio por kilogramo ya incorpora el coste del despiece— o la está absorbiendo la cuenta de resultados sin que nadie lo haya decidido.
+
+### Del coste por ración al precio de venta objetivo
+
+El resumen de la ficha es donde la información se convierte en decisión. El coste total de la ficha del solomillo de cerdo ibérico con puré de boniato, sin IVA, es 5,67 €. Como la ficha está construida para 1 ración, el coste por ración es también 5,67 €. A partir de ahí, la hoja aplica el food cost objetivo del 30 % fijado en la celda correspondiente de la hoja «Ficha» de ficha-escandallo-base.xlsx y calcula el precio de venta objetivo sin IVA: 18,90 €. Aplicando el tipo reducido del 10 % que corresponde al consumo en sala, el precio de venta objetivo con IVA queda en 20,79 €.
+
+Hasta aquí, la ficha hace lo que hace cualquier escandallo. Lo que la convierte en una herramienta de decisión es la comparación con el precio actual en carta. El plato está en carta a 17,30 € sin IVA. Con ese precio, el food cost real sube al 32,8 % y el margen de contribución —la diferencia entre el precio de venta y el coste del plato— es de 11,63 €. La diferencia entre el precio objetivo y el precio actual es de 1,60 €, lo que equivale a una subida necesaria del 9,3 % sobre el precio actual.
+
+Esos dos números —1,60 € y 9,3 %— son los que hay que llevar a la conversación sobre carta. La ficha no recomienda subir el precio de forma automática: recomienda que la decisión se tome con esos datos sobre la mesa, no a partir de la sensación de que «este plato no sale rentable». El cuadro siguiente, extraído de la hoja «Ficha» de ficha-escandallo-base.xlsx, muestra el resumen completo con todas las líneas.
+
+Conviene aclarar el alcance de esta ficha respecto al resto del material del pack. La hoja «Ficha» de ficha-escandallo-base.xlsx es la base: sirve para construir el criterio, entender la lógica de la merma y leer el resumen de rentabilidad. El Kit de Escandallos incluye plantillas adaptadas a formatos de negocio con estructuras de carta distintas —degustación, menú de precio fijo, barra de tapas—, pero no son necesarias para trabajar con el criterio que desarrolla esta guía. Con la ficha base y el criterio claro, cualquier establecimiento puede auditar su carta plato a plato.

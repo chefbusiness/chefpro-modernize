@@ -1,0 +1,68 @@
+Escribe un tramo del capítulo 9 — «Cuatro Formas de Poner Precio a un Plato» de la guía profesional «Guía Food Cost + Ingeniería de Menú» (Escandallo, precios y rentabilidad de tu carta · España 2026).
+
+OBJETIVO DEL CAPÍTULO: Quitarle al lector la idea de que hay una fórmula. Enseñar los cuatro métodos, el food cost que resulta de cada uno y el criterio para elegir método plato a plato.
+
+ESCRIBE EXACTAMENTE ESTOS EPÍGRAFES, cada uno como encabezado Markdown de nivel 3 (### ) con ese título literal, en este orden:
+  ### Método D: valor percibido
+  ### Qué método le toca a cada plato
+
+EXTENSIÓN: unas 750 palabras en total para este tramo, repartidas entre esos epígrafes. Prosa + listas con viñetas cuando aporten; nunca tablas.
+
+PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle operativo):
+  - La tesis: el factor sobre el coste arruina los platos de coste alto. Aplicado al chuletón de la carta de ejemplo, el precio que sale es inservible, y ese es el argumento del capítulo, no una anécdota.
+  - Explicar el método del margen en euros como el remedio del anterior: en los platos de producto caro se fija cuánto se quiere ganar por ración y el porcentaje sale de ahí, aunque quede feo.
+  - Explicar que los métodos C y D no calculan el precio, lo IMPONEN desde fuera, y que lo que devuelve la hoja en esos casos es el food cost que te queda al aceptar ese precio: la pregunta cambia de «cuánto cobro» a «puedo permitírmelo».
+  - Enseñar a leer el reparto de métodos de la carta de ejemplo: no hay un método ganador, hay una cartera de métodos.
+  - Señalar el caso de las croquetas —el precio actual está por encima del que sale por factor— para explicar que un plato puede estar bien cobrado y que el método sólo confirma el suelo.
+
+CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que puedes escribir, y van tal cual (mismo separador de miles y misma coma decimal). Salen de las plantillas Excel que el lector tiene en el mismo pack, así que el texto y las hojas de cálculo tienen que decir lo mismo:
+  - Food cost objetivo global de la hoja de precios: 30 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E5]
+  - Tipo de IVA de restauración en sala: 10 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E6]
+  - PVP del chuletón por el método del factor: 49,33 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!K20]
+  - PVP del chuletón por margen objetivo: 25,30 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!L20]
+  - PVP elegido para el chuletón: 25,30 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!Q20]
+  - Food cost final del chuletón: 58,5 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!T20]
+  - PVP actual del chuletón en carta: 32,70 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!V20]
+  - PVP de las croquetas por el método del factor: 7,00 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!K9]
+  - PVP actual de las croquetas en carta: 8,60 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!V9]
+  - Diferencia de las croquetas con su PVP actual: -1,60 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!W9]
+  - Platos con precio calculado: 20   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E36]
+  - Platos dentro del objetivo: 11   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E37]
+  - Platos por encima del objetivo: 9   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E38]
+  - Food cost del conjunto de la carta con los precios elegidos: 36,7 %   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E39]
+  - Margen de contribución medio por plato: 8,01 €   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E40]
+  - Platos que usan el método A: 5   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E52]
+  - Platos que usan el método B: 6   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E53]
+  - Platos que usan el método C: 4   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E54]
+  - Platos que usan el método D: 5   [fuente: precio-objetivo-multi-metodo.xlsx!Por Plato!E55]
+
+DATOS DEL SECTOR — cada uno se cita CON SU FUENTE dentro del texto (entre paréntesis, con el nombre de la fuente y el año). Los marcados como HUECO SIN FUENTE no se escriben con número:
+- [FC-BENCH-01] Food cost medio del sector hostelero español (consumo de producto sobre venta): **30 % sobre venta (rango sano 25-35%)**. Fuente obligatoria a citar en el texto: «CaixaBankLab × Fundación elBulli — Consumos y beneficios de un restaurante» (2026). Nota: Research L3 §1.1 (guia-food-cost-research-L3-datos.md). Fuente española especializada (CaixaBank + Fundación elBulli). Rango sano de food cost 25-35% sobre venta; media de mercado ~30%. Fecha de publicación del informe no visible en la…
+- [FC-BENCH-03] Rango de food cost habitual por formato de restaurante en España: **20-25 / 28-32 / 28-35 / 25-30 / 20-28 % sobre venta, según fine dining / restauración tradicional / bar de tapas / pizzería / cafetería (orden fijo)**. Fuente obligatoria a citar en el texto: «qamarero.com — Food cost restaurante: cómo calcularlo y optimizarlo» (2026). Nota: Research L3 §1.3-1.7. Fuente de plataforma/consultora del sector (fiabilidad media, no primaria). Fine dining 20-25% (puede bajar más con ticket alto); restauración tradicional 28-32% (otra referencia cita 30-35%); bar de tapas 28-35%;…
+
+Justo DESPUÉS de tu texto, en el documento, aparecerán estas tablas ya montadas: Los cuatro métodos aplicados a la misma carta (precio-objetivo-multi-metodo.xlsx, hoja «Por Plato»). NO las escribas tú. Puedes remitir a ellas con naturalidad («la tabla de abajo», «el cuadro siguiente»), pero NUNCA menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones» o «guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+
+LO QUE NO DEBES DECIR (son errores reales de la edición anterior de esta guía y no se pueden repetir):
+  - Las letras y apartados de un artículo de ley se escriben «letra g» o «apartado 2», NUNCA «g)» ni «2)»: un paréntesis de cierre suelto se lee como una errata.
+  - PROHIBIDO escribir cualquier porcentaje de food cost atribuido a un tipo de negocio concreto que no esté en los datos del sector que te doy. En particular, NO escribas que una marisquería trabaja con un 40-42 % ni ninguna variante de esa frase: esa cifra no tiene fuente y no existe.
+  - PROHIBIDO escribir ninguna cifra de inflación, de IPC ni de subida de precios de la materia prima: ni un porcentaje, ni un dato mensual, ni una variación interanual, ni siquiera «aproximadamente». Lo que se enseña es DÓNDE mirarlo (la nota de prensa del IPC del INE y el sistema de precios origen-mayorista del Ministerio de Agricultura), no cuánto vale hoy.
+  - PROHIBIDO escribir que un porcentaje de los restaurantes «no conoce su food cost», «no escandalla», «no aplica escandallos» o similar. No hay fuente para eso. Si quieres decir que es una práctica poco extendida, dilo sin número.
+  - PROHIBIDO usar ningún porcentaje como efecto de un anclaje de precio («subir el precio ancla eleva el ticket un tanto por ciento»): de la psicología de precios sólo puedes escribir las cifras que te llegan en los datos del sector, con su fuente y con su salvedad.
+  - PROHIBIDO citar a Gregg Rapp, «el ingeniero de menús», o cualquier caso de consultor con resultados atribuidos: no está verificado.
+  - PROHIBIDO presentar ningún porcentaje de comisión de plataforma de reparto como «tarifa oficial», «tarifario» o dato cerrado. Las comisiones se escriben como ORDEN DE MAGNITUD, con la horquilla y con la fuente, y diciendo que dependen de la zona, del plan contratado y de quién reparte.
+  - PROHIBIDO escribir ninguna cifra de cierre, quiebra, fracaso o supervivencia de restaurantes, NI SIQUIERA PARA NEGARLA O DESMENTIRLA. Tampoco escribas frases del tipo «con ese margen el X % del beneficio desaparece»: el porcentaje pegado a un verbo de desaparición se lee como un dato de mortalidad. Reformula sin número.
+  - NO expliques qué es un escandallo desde cero, ni definas «food cost» como si el lector no lo hubiera oído nunca. Esta guía es para quien ya opera: la primera frase de cada bloque asume que sabe lo que es una ficha técnica y un porcentaje sobre ventas. Lo que aporta el capítulo es el criterio, el caso límite y la decisión, no la definición.
+  - NO conviertas esta guía en una guía de apertura: aquí no se habla de licencias, de obra, de inversión inicial, de plan de negocio ni de financiación. El lector ya tiene el local abierto y el problema es la carta.
+  - NO repitas las siete tácticas de negociación con proveedores del bono del Kit de Escandallos. Cuando toque negociar, se explica cuándo y con qué dato se va a la mesa, y se remite al material que ya tiene el lector.
+  - NO escribas ningún precio de venta, coste, margen ni porcentaje que no esté en la lista de cifras que te doy o en los datos del sector. Ni «ronda los», ni «suele estar en», ni un ejemplo inventado para ilustrar. Si necesitas un número, es uno de los que tienes; si no lo tienes, la frase se escribe sin número.
+  - NO hagas cuentas nuevas con las cifras que te doy: no sumes, no restes y no proyectes a doce meses para escribir un total que no te he dado. Los totales ya están calculados en los libros.
+  - VOCABULARIO OBLIGATORIO (español de España, con la equivalencia de Hispanoamérica sólo la primera vez que aparezca el término en el capítulo): «escandallo (costeo de recetas)», «coste (costo)», «precio de venta», «plato», «carta (menú)». Después de esa primera mención se usa siempre la forma española, sin repetir el paréntesis. No escribas «costeo» ni «costo» a secas, ni llames «menú» a la carta salvo cuando hables del menú de precio fijo, que sí es un menú.
+  - NO uses anglicismos que tengan término español asentado en el oficio: se escribe «margen de contribución», no «contribution margin». Sí se usan tal cual, porque son los del oficio, «food cost», «prime cost», «labor cost», «beverage cost», «delivery», «take away» y «packaging».
+  - No cites años anteriores a 2026 junto a precios ni a tendencias. Un año pasado sólo aparece si va con su fuente (una norma, un estudio académico o un informe fechado).
+  - No escribas «IVA incluido» sin decir el tipo, y no digas nunca que la restauración «va al 21 %»: en sala todo el consumo va al tipo reducido, bebida alcohólica incluida, y el 21 % aparece fuera de la sala y en productos concretos.
+  - No menciones el proceso de edición ni palabras como «maquetador», «prompt», «instrucciones», «guion» o «capítulo anterior del guion»: el lector compra un libro, no ve el taller. Tampoco escribas tu propio razonamiento.
+  - NO presentes el factor sobre el coste como «el método correcto» ni como el estándar del sector: es uno de cuatro y tiene un punto de rotura conocido.
+  - NO recomiendes un food cost objetivo concreto para el lector: el objetivo es una celda y depende de su estructura de costes.
+  - NO escribas precios de venta de platos que no estén en la tabla o en la lista de cifras.
+
+FORMATO: empieza directamente por el primer «### ». No pongas título de capítulo, ni resumen inicial, ni cierre.

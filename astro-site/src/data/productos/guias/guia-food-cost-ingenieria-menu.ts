@@ -13,7 +13,7 @@
 //  - CERO cifras inventadas. La ÚNICA cifra de mercado admitida es el coste anual del
 //    software de food cost (>1.100 € + IVA), tomada de las tarifas públicas de
 //    haddock.app y tspoonlab.com consultadas el 2026-09-03 (research §3).
-//  - `__PAGINAS__` y `__PAGINAS_BONUS__` son TOKENS: se sustituyen por las páginas MEDIDAS
+//  - `95` y `32` son TOKENS: se sustituyen por las páginas MEDIDAS
 //    con PyMuPDF cuando el PDF esté construido (D17). No publicar con el token puesto.
 import type { GuiaData } from './types';
 
@@ -37,11 +37,11 @@ const data: GuiaData = {
     subtitleLine: 'Escandallo, precios y rentabilidad de tu carta — con el IVA bien puesto y el delivery dentro de la cuenta',
     description: 'El Kit te dice cuánto te cuesta cada plato. La Guía te dice qué hacer con esa información: qué reformular, qué resubir, qué rediseñar y qué retirar, plato a plato y con el cálculo delante.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, __PAGINAS__ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 95 páginas)',
       '8 herramientas Excel con fórmulas vivas: escandallo, mermas, precios, matriz de carta, delivery, bebidas, prime cost y plan de 90 días',
       'Cuatro metodologías de ingeniería de menú sobre la misma carta, y una hoja que enseña dónde discrepan',
       'El IVA por canal (sala, para llevar y delivery) dentro del cálculo, con la base legal citada',
-      'Bonus: 12 ejercicios resueltos paso a paso (__PAGINAS_BONUS__ páginas)',
+      'Bonus: 12 ejercicios resueltos paso a paso (32 páginas)',
     ],
     ctaLabel: 'COMPRAR GUÍA — 55 EUR',
     avatarAltPrefix: 'Professional',
@@ -161,12 +161,12 @@ const data: GuiaData = {
     heading: 'Deja de Poner Precios a Ojo',
     subtitle: 'El método, las herramientas y los ejercicios para decidir tu carta con números delante.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, __PAGINAS__ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 95 páginas)',
       '8 herramientas Excel con fórmulas vivas',
       'Cuatro metodologías de ingeniería de menú y su hoja de discrepancias',
       'Simulador de sala, para llevar y delivery con IVA y comisiones',
       'Cuadro de mando de prime cost y plan de acción de 90 días',
-      'Bonus: 12 ejercicios resueltos (__PAGINAS_BONUS__ páginas)',
+      'Bonus: 12 ejercicios resueltos (32 páginas)',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 55 EUR',
   },

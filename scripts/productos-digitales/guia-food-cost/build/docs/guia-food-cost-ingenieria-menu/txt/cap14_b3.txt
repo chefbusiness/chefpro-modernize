@@ -1,0 +1,16 @@
+### Catering y eventos: el mix se pacta antes
+
+En catering y eventos el ingreso no solo está cerrado como en el menú de precio fijo: está firmado semanas o meses antes de que se sirva un solo plato. El comensal no elige en la mesa; elige, si elige algo, en un formulario de opciones que el cliente reenvía al organizador con los días de antelación que marque el contrato. Eso desplaza todo el trabajo de ingeniería al momento de redactar la propuesta: ahí es donde se decide qué opciones entran en el menú del evento, cuántas alternativas de plato principal se ofrecen y qué acompaña a cada una, porque una vez el cliente firma y confirma el número de comensales ya no queda margen para corregir el mix moviendo un plato de sitio en la carta o mejorando la alternativa que le compite dentro del propio menú, como sí ocurre en el día a día del menú de precio fijo. La corrección, aquí, o se hace antes de firmar, o no se hace.
+
+Eso obliga a costear cada opción del evento con su escandallo propio antes de mandar el presupuesto, no después de aceptarlo, y a modelar de antemano al menos dos o tres repartos plausibles del mix (uno cómodo, uno realista y uno exigente) para comprobar que el precio por comensal aguanta el peor de los tres, no solo el que más conviene. Un presupuesto que solo se ha probado contra el reparto más favorable es un presupuesto que puede perder margen en cuanto los invitados elijan de forma distinta a la prevista.
+
+Conviene además separar, en el cálculo, lo que escala con cada comensal de lo que no escala. El coste por cabeza cubre la comida y la bebida servida; el personal de sala y cocina, el alquiler de menaje, mantelería o carpa y la logística de transporte no crecen en la misma proporción que el número de invitados, y mezclarlo todo en una única cifra por comensal esconde en qué partida se está perdiendo margen cuando el evento es pequeño.
+
+En la práctica, esto se traduce en unas pocas decisiones que conviene tomar siempre en la misma fase, antes de que el evento se acepte:
+
+- Cerrar el catálogo de opciones del evento, con su coste real ya calculado, antes de que el comercial se siente a negociar con el cliente.
+- Fijar en el propio contrato el plazo y la forma en que se confirma el desglose de comensales por opción, porque ese desglose es el mix real del evento.
+- Exigir una garantía mínima de comensales facturados, de forma que un aforo final más bajo no traslade el mismo coste fijo a menos cabezas.
+- Revisar, al cerrar el evento, el margen con el mix que finalmente se confirmó y no solo con el que se presupuestó, para que la siguiente propuesta parta de un dato real.
+
+La lógica es la misma que gobierna cualquier menú de precio fijo: el resultado depende de qué elige la gente, no del precio que se cobra. En catering y eventos, sin embargo, toda esa ingeniería tiene que estar terminada antes de que el cliente firme, porque después de la firma ya no queda ninguna palanca que mover.
