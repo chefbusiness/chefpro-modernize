@@ -5,7 +5,7 @@
 > «próximamente» del hub. Método idéntico al de ayer, con dos mejoras: los textos los escriben 24 redactores
 > Sonnet en paralelo (regla «bridge no para productos») y el bloque legal lleva refutador propio con el BOE.
 
-## 1. Estado al cierre (01:25 del 5-sep) — pusheado a `main` (`4a649d0`), build en Netlify en curso
+## 1. Estado al cierre (02:10 del 5-sep) — **LIVE COMPLETO**: `gate-flujo-postpago.py --only manual-manager-restaurante` = 0 fallos, 0 avisos (landing con `buy.stripe.com` en sus 4 CTA, access/library 200, 11 descargas binarias con tamaño de disco, webhook armado)
 
 | Pieza | Estado |
 |---|---|
@@ -19,17 +19,17 @@
 | Prefijo `manual-` | ✅ `robots.txt` con sus 10 reglas; `robots-gate.py --live` verde (1.188 públicas / 92 privadas) |
 | Imágenes | ✅ 6 galería + OG (`e884a8d`), revisadas a ojo |
 | Blog | ✅ 5 posts con banner fijado + enlace contextual (`fase8g-manual-manager-blog.py`, gate de reversibilidad) + `blog-lastmod.json` |
-| Email | ✅ `emails/broadcast-manual-manager-lanzamiento-es.html` (páginas ya sustituidas) — **NO programado**: falta el Payment Link |
-| Stripe | ⏳ **JOHN**: crear producto + Payment Link (55 €, `tax_behavior exclusive`, automatic_tax, factura, redirect a `https://aichef.pro/manual-manager-restaurante-access?session_id={CHECKOUT_SESSION_ID}`) → `netlify env:set VITE_STRIPE_PAYMENT_LINK_MANUAL_MANAGER "<url>" --scope builds` (todos los contextos) → `python3 scripts/productos-digitales/sync-payment-links.py` → commit + push → redeploy |
+| Email | ✅ `emails/broadcast-manual-manager-lanzamiento-es.html` · prueba enviada a John (`a97f3d1f…`) · **broadcast `3749f084-138d-459b-a027-f377a6d10d0c` programado para el lunes 2026-09-07 08:00 UTC (10:00 Madrid)**, segmento «AI Chef Pro ES», asunto «Nuevo: el Manual del Manager de Restaurante» (lunes por decisión de John; ayer ya salió un mailing a la misma lista) |
+| Stripe | ✅ Payment Link creado por John (`https://buy.stripe.com/3cIcMY1C4csC635ejH6oo1p`) · env `VITE_STRIPE_PAYMENT_LINK_MANUAL_MANAGER` puesta por Claude (scope builds, todos los contextos) · `payment-links.ts` regenerado (46) · redeploy `b2957ab` |
 | Hotfix colateral | ✅ la landing de la Guía Food Cost servía DOS botones de WhatsApp (faltaba `whatsapp={false}` en el wrapper); corregido en el mismo push |
 
-Hasta que exista el link, el CTA de la landing enlaza a `#comprar` (el cajón de compra), como toda la familia sin env.
+Descripción de Stripe (John pidió quitar la verificación contra el BOE del copy corto; se mantiene en landing, email y producto): «Manual del Manager de Restaurante: 20 capítulos (77 páginas) para dirigir el día a día del local —operaciones, equipo, números, servicio y obligaciones legales—, 7 plantillas Excel con fórmulas vivas y un bonus de 12 situaciones reales resueltas paso a paso. Pago único, acceso vitalicio y actualizaciones incluidas.»
 
-## 2. Cómo cerrar (orden exacto)
+## 2. Cierre (hecho en el orden previsto; queda solo el punto 4 para John)
 
 1. John: Payment Link + env var (fila «Stripe» de la tabla). 2. `python3 scripts/productos-digitales/sync-payment-links.py` → `netlify/shared/payment-links.ts` (46) → commit + push → build `ready`.
 3. `python3 scripts/productos-digitales/gate-flujo-postpago.py --only manual-manager-restaurante` → 0 fallos (landing con `buy.stripe.com`, access/library 200, 11 descargas binarias con el tamaño de disco).
-4. Compra de prueba real (o `aichef.pro/admin/generar-acceso`).
+4. Compra de prueba real (o `aichef.pro/admin/generar-acceso`) — **pendiente de John**; el gate LIVE verifica todo lo demás.
 5. Email: `python3 scripts/productos-digitales/emails/resend-broadcast.py --html scripts/productos-digitales/emails/broadcast-manual-manager-lanzamiento-es.html --subject "Verificado contra el BOE (convenio incluido)" --name "Lanzamiento Manual del Manager (ES)" --test john@chefbusiness.co` → revisar → mismo comando con `--scheduled-at <día>T08:00:00Z` (10:00 Madrid).
 6. `sitemap-index.xml` reenviado a GSC; pedir indexación de `/manual-manager-restaurante`.
 
