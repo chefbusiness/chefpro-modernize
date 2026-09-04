@@ -1,0 +1,538 @@
+{
+ "fichero": "reuniones-acuerdos-plan-90-dias.xlsx",
+ "hojas": {
+  "Calendario de Reuniones": {
+   "celdas": {
+    "Reuniones registradas": "D32",
+    "Reuniones de tipo «Semanal de equipo»": "D33",
+    "Reuniones de tipo «Mensual de resultados»": "D34",
+    "Reuniones de tipo «Uno-a-uno»": "D35",
+    "Celebradas": "D36",
+    "Celebradas (%)": "D37",
+    "MINUTOS DE REUNIÓN DEL TRIMESTRE": "D38",
+    "Duración media (min)": "D39",
+    "Horas de reunión del trimestre": "D40",
+    "Objetivo de reuniones celebradas (%)": "D42"
+   },
+   "tablas": [
+    {
+     "titulo": "12 reuniones del trimestre y 12 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Fecha",
+       "B",
+       "txt"
+      ],
+      [
+       "Tipo de reunión",
+       "C",
+       "txt"
+      ],
+      [
+       "Cadencia",
+       "D",
+       "txt"
+      ],
+      [
+       "Asistentes",
+       "E",
+       "txt"
+      ],
+      [
+       "Duración (min)",
+       "F",
+       "num"
+      ],
+      [
+       "Responsable",
+       "G",
+       "txt"
+      ],
+      [
+       "Estado",
+       "H",
+       "txt"
+      ],
+      [
+       "Notas",
+       "I",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      29
+     ]
+    }
+   ]
+  },
+  "Guion de Reunión Semanal": {
+   "celdas": {
+    "Puntos del guion": "D18",
+    "DURACIÓN TOTAL DEL GUION (min)": "D19",
+    "Duración objetivo de la reunión (min)": "D20",
+    "Diferencia con el objetivo (min)": "D21"
+   },
+   "tablas": [
+    {
+     "titulo": "Los 7 puntos del guion, con minutos y responsable",
+     "cols": [
+      [
+       "Orden",
+       "A",
+       "num"
+      ],
+      [
+       "Punto",
+       "B",
+       "txt"
+      ],
+      [
+       "Minutos",
+       "C",
+       "num"
+      ],
+      [
+       "Herramienta de la que salen los datos",
+       "D",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "E",
+       "txt"
+      ],
+      [
+       "Por qué está en el guion",
+       "F",
+       "txt"
+      ],
+      [
+       "Notas",
+       "G",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      15
+     ]
+    }
+   ]
+  },
+  "Uno-a-uno": {
+   "celdas": {
+    "Personas del equipo en el registro": "D30",
+    "Sesiones con fecha anotada": "D31",
+    "Personas sin uno-a-uno todavía": "D32",
+    "EQUIPO CON UNO-A-UNO HECHO (%)": "D33",
+    "Objetivo de cobertura del equipo (%)": "D34"
+   },
+   "tablas": [
+    {
+     "titulo": "Las 6 preguntas del uno-a-uno",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Pregunta",
+       "B",
+       "txt"
+      ],
+      [
+       "Para qué sirve",
+       "C",
+       "txt"
+      ],
+      [
+       "Notas",
+       "D",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      11
+     ]
+    },
+    {
+     "titulo": "Registro de 12 sesiones, una por persona",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Empleado",
+       "B",
+       "txt"
+      ],
+      [
+       "Fecha",
+       "C",
+       "txt"
+      ],
+      [
+       "Tema principal",
+       "D",
+       "txt"
+      ],
+      [
+       "Acuerdo",
+       "E",
+       "txt"
+      ],
+      [
+       "Fecha de seguimiento",
+       "F",
+       "txt"
+      ],
+      [
+       "Estado",
+       "G",
+       "txt"
+      ],
+      [
+       "Notas",
+       "H",
+       "txt"
+      ]
+     ],
+     "filas": [
+      15,
+      27
+     ]
+    }
+   ]
+  },
+  "Actas y Acuerdos": {
+   "celdas": {
+    "Hoy (fecha de referencia del libro)": "C5",
+    "Días que cuentan como «vence esta semana»": "C6",
+    "Acuerdos registrados": "D46",
+    "Cerrados": "D47",
+    "Descartados": "D48",
+    "ACUERDOS ABIERTOS": "D49",
+    "ACUERDOS VENCIDOS": "D50",
+    "Vencen esta semana": "D51",
+    "Acuerdos cerrados (%)": "D52",
+    "Acuerdos en plazo (%)": "D53",
+    "Cerrados con fecha de cierre anotada": "D54",
+    "Objetivo de acuerdos en plazo (%)": "D58",
+    "Acuerdos de P01 · Marta L.": "C62",
+    "Acuerdos abiertos de P01 · Marta L.": "D62",
+    "Acuerdos vencidos de P01 · Marta L.": "E62",
+    "Acuerdos de P02 · Iván R.": "C63",
+    "Acuerdos abiertos de P02 · Iván R.": "D63",
+    "Acuerdos vencidos de P02 · Iván R.": "E63",
+    "Acuerdos de P03 · Nuria C.": "C64",
+    "Acuerdos abiertos de P03 · Nuria C.": "D64",
+    "Acuerdos vencidos de P03 · Nuria C.": "E64",
+    "Acuerdos de P04 · Diego M.": "C65",
+    "Acuerdos abiertos de P04 · Diego M.": "D65",
+    "Acuerdos vencidos de P04 · Diego M.": "E65",
+    "Acuerdos de P05 · Laura S.": "C66",
+    "Acuerdos abiertos de P05 · Laura S.": "D66",
+    "Acuerdos vencidos de P05 · Laura S.": "E66",
+    "Acuerdos de P06 · Omar B.": "C67",
+    "Acuerdos abiertos de P06 · Omar B.": "D67",
+    "Acuerdos vencidos de P06 · Omar B.": "E67",
+    "Acuerdos de P07 · Rocío F.": "C68",
+    "Acuerdos abiertos de P07 · Rocío F.": "D68",
+    "Acuerdos vencidos de P07 · Rocío F.": "E68",
+    "Acuerdos de P08 · Carlos V.": "C69",
+    "Acuerdos abiertos de P08 · Carlos V.": "D69",
+    "Acuerdos vencidos de P08 · Carlos V.": "E69",
+    "Acuerdos de P09 · Elena T.": "C70",
+    "Acuerdos abiertos de P09 · Elena T.": "D70",
+    "Acuerdos vencidos de P09 · Elena T.": "E70",
+    "Acuerdos de P10 · Youssef A.": "C71",
+    "Acuerdos abiertos de P10 · Youssef A.": "D71",
+    "Acuerdos vencidos de P10 · Youssef A.": "E71",
+    "Acuerdos de P11 · Paula G.": "C72",
+    "Acuerdos abiertos de P11 · Paula G.": "D72",
+    "Acuerdos vencidos de P11 · Paula G.": "E72",
+    "Acuerdos de P12 · Andrés P.": "C73",
+    "Acuerdos abiertos de P12 · Andrés P.": "D73",
+    "Acuerdos vencidos de P12 · Andrés P.": "E73"
+   },
+   "tablas": [
+    {
+     "titulo": "25 acuerdos del trimestre y 10 filas libres",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Fecha de la reunión",
+       "B",
+       "txt"
+      ],
+      [
+       "Tipo de reunión",
+       "C",
+       "txt"
+      ],
+      [
+       "Acuerdo o decisión",
+       "D",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "E",
+       "txt"
+      ],
+      [
+       "Fecha de seguimiento",
+       "F",
+       "txt"
+      ],
+      [
+       "Estado",
+       "G",
+       "txt"
+      ],
+      [
+       "Fecha de cierre real",
+       "H",
+       "txt"
+      ],
+      [
+       "Situación",
+       "I",
+       "txt"
+      ],
+      [
+       "Días hasta el seguimiento",
+       "J",
+       "num"
+      ],
+      [
+       "Notas",
+       "K",
+       "txt"
+      ]
+     ],
+     "filas": [
+      9,
+      43
+     ]
+    },
+    {
+     "titulo": "Acuerdos por responsable",
+     "cols": [
+      [
+       "Responsable",
+       "B",
+       "txt"
+      ],
+      [
+       "Acuerdos",
+       "C",
+       "num"
+      ],
+      [
+       "Abiertos",
+       "D",
+       "num"
+      ],
+      [
+       "Vencidos",
+       "E",
+       "num"
+      ]
+     ],
+     "filas": [
+      62,
+      73
+     ]
+    }
+   ]
+  },
+  "Plan 90 Días": {
+   "celdas": {
+    "Decisiones registradas": "D36",
+    "En curso": "D37",
+    "Pendientes": "D38",
+    "Descartadas": "D39",
+    "Cerradas": "D40",
+    "Decisiones cerradas (%)": "D41",
+    "IMPACTO TOTAL ESTIMADO (€/mes)": "D42",
+    "Impacto ya conseguido (€/mes)": "D43",
+    "Impacto pendiente (€/mes)": "D44",
+    "Impacto total estimado a 12 meses (€)": "D45",
+    "Fecha de inicio del plan": "D47",
+    "Semanas del plan": "D48",
+    "Fecha de cierre del plan": "D49",
+    "Avance del calendario (%)": "D51",
+    "Objetivo de decisiones cerradas a 90 días (%)": "D52",
+    "Fecha objetivo de la semana 13": "G25",
+    "Personas: decisiones": "C56",
+    "Personas: impacto estimado": "D56",
+    "Personas: impacto conseguido": "E56",
+    "Servicio: decisiones": "C57",
+    "Servicio: impacto estimado": "D57",
+    "Servicio: impacto conseguido": "E57",
+    "Operaciones: decisiones": "C58",
+    "Operaciones: impacto estimado": "D58",
+    "Operaciones: impacto conseguido": "E58",
+    "Cumplimiento: decisiones": "C59",
+    "Cumplimiento: impacto estimado": "D59",
+    "Cumplimiento: impacto conseguido": "E59",
+    "Finanzas: decisiones": "C60",
+    "Finanzas: impacto estimado": "D60",
+    "Finanzas: impacto conseguido": "E60",
+    "Cuadro de mando semanal: decisiones": "C64",
+    "Cuadro de mando semanal: impacto estimado": "D64",
+    "Matriz de formación y polivalencia: decisiones": "C65",
+    "Matriz de formación y polivalencia: impacto estimado": "D65",
+    "Quejas, reclamaciones y reseñas: decisiones": "C66",
+    "Quejas, reclamaciones y reseñas: impacto estimado": "D66",
+    "Scorecard de selección: decisiones": "C67",
+    "Scorecard de selección: impacto estimado": "D67",
+    "Calendario de cumplimiento legal: decisiones": "C68",
+    "Calendario de cumplimiento legal: impacto estimado": "D68",
+    "Reuniones, acuerdos y plan de 90 días: decisiones": "C69",
+    "Reuniones, acuerdos y plan de 90 días: impacto estimado": "D69",
+    "Auditoría interna de servicio: decisiones": "C70",
+    "Auditoría interna de servicio: impacto estimado": "D70"
+   },
+   "tablas": [
+    {
+     "titulo": "20 decisiones del trimestre y 8 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Área",
+       "B",
+       "txt"
+      ],
+      [
+       "Herramienta de origen",
+       "C",
+       "txt"
+      ],
+      [
+       "Decisión",
+       "D",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "E",
+       "txt"
+      ],
+      [
+       "Semana (1-13)",
+       "F",
+       "num"
+      ],
+      [
+       "Fecha objetivo",
+       "G",
+       "txt"
+      ],
+      [
+       "Impacto estimado (€/mes)",
+       "H",
+       "eur"
+      ],
+      [
+       "Estado",
+       "I",
+       "txt"
+      ],
+      [
+       "Impacto ya conseguido (€/mes)",
+       "J",
+       "eur"
+      ],
+      [
+       "Notas",
+       "K",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      33
+     ]
+    },
+    {
+     "titulo": "Resumen por área",
+     "cols": [
+      [
+       "Área",
+       "B",
+       "txt"
+      ],
+      [
+       "Decisiones",
+       "C",
+       "num"
+      ],
+      [
+       "Impacto estimado (€/mes)",
+       "D",
+       "eur"
+      ],
+      [
+       "Impacto conseguido (€/mes)",
+       "E",
+       "eur"
+      ]
+     ],
+     "filas": [
+      56,
+      60
+     ]
+    },
+    {
+     "titulo": "Resumen por herramienta de origen",
+     "cols": [
+      [
+       "Herramienta de origen",
+       "B",
+       "txt"
+      ],
+      [
+       "Decisiones",
+       "C",
+       "num"
+      ],
+      [
+       "Impacto estimado (€/mes)",
+       "D",
+       "eur"
+      ],
+      [
+       "Impacto conseguido (€/mes)",
+       "E",
+       "eur"
+      ]
+     ],
+     "filas": [
+      64,
+      70
+     ]
+    }
+   ]
+  }
+ }
+}

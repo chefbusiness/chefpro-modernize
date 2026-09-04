@@ -1,0 +1,441 @@
+{
+ "fichero": "calendario-cumplimiento-legal.xlsx",
+ "hojas": {
+  "Estado Normativo": {
+   "celdas": {
+    "Fecha de corte de la revisión normativa": "C5",
+    "Normas en seguimiento": "C21",
+    "Normas con id de investigación citado": "C22"
+   },
+   "tablas": [
+    {
+     "titulo": "Las 7 normas en movimiento a 04-09-2026",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Norma",
+       "B",
+       "txt"
+      ],
+      [
+       "Estado a la fecha de corte",
+       "C",
+       "txt"
+      ],
+      [
+       "Qué obliga hoy y qué hace el manager",
+       "D",
+       "txt"
+      ],
+      [
+       "Fecha de corte",
+       "E",
+       "txt"
+      ],
+      [
+       "Fuente (norma)",
+       "F",
+       "txt"
+      ],
+      [
+       "URL",
+       "G",
+       "txt"
+      ],
+      [
+       "Ref.",
+       "H",
+       "txt"
+      ],
+      [
+       "Verificación",
+       "I",
+       "txt"
+      ]
+     ],
+     "filas": [
+      8,
+      18
+     ]
+    }
+   ]
+  },
+  "Calendario y Vencimientos": {
+   "celdas": {
+    "Hoy (fecha de referencia del calendario)": "C5",
+    "Aviso ROJO — faltan menos de (días)": "C6",
+    "Aviso ÁMBAR — faltan menos de (días)": "C7",
+    "Puntos de control registrados": "D38",
+    "Puntos con periodicidad fijada por una norma estatal": "D39",
+    "Puntos cuya periodicidad es criterio de la casa": "D40",
+    "Puntos sin vencimiento periódico": "D41",
+    "Puntos con vencimiento": "D42",
+    "PUNTOS VENCIDOS": "D43",
+    "En aviso ROJO": "D44",
+    "En aviso ÁMBAR": "D45",
+    "En verde (OK)": "D46",
+    "Puntos en verde (%)": "D47",
+    "Objetivo de puntos en verde (%)": "D49"
+   },
+   "tablas": [
+    {
+     "titulo": "18 puntos de control y 8 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Punto de control",
+       "B",
+       "txt"
+      ],
+      [
+       "Última actuación",
+       "C",
+       "txt"
+      ],
+      [
+       "Periodicidad (meses)",
+       "D",
+       "num"
+      ],
+      [
+       "¿Lo fija una norma estatal?",
+       "E",
+       "txt"
+      ],
+      [
+       "Próxima fecha",
+       "F",
+       "txt"
+      ],
+      [
+       "Días hasta vencer",
+       "G",
+       "num"
+      ],
+      [
+       "Estado",
+       "H",
+       "txt"
+      ],
+      [
+       "Fuente (norma)",
+       "I",
+       "txt"
+      ],
+      [
+       "URL",
+       "J",
+       "txt"
+      ],
+      [
+       "Ref.",
+       "K",
+       "txt"
+      ],
+      [
+       "Verificación",
+       "L",
+       "txt"
+      ],
+      [
+       "Nota",
+       "M",
+       "txt"
+      ]
+     ],
+     "filas": [
+      10,
+      35
+     ]
+    }
+   ]
+  },
+  "Documentación Obligatoria": {
+   "celdas": {
+    "Documentos registrados": "D25",
+    "Disponibles en el local": "D26",
+    "En trámite": "D27",
+    "Que faltan": "D28",
+    "Sin contestar": "D29",
+    "DOCUMENTACIÓN COMPLETADA (%)": "D30"
+   },
+   "tablas": [
+    {
+     "titulo": "12 documentos obligatorios y 4 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Documento",
+       "B",
+       "txt"
+      ],
+      [
+       "Dónde debe estar",
+       "C",
+       "txt"
+      ],
+      [
+       "Quién lo pide",
+       "D",
+       "txt"
+      ],
+      [
+       "¿Disponible en el local?",
+       "E",
+       "txt"
+      ],
+      [
+       "Última comprobación",
+       "F",
+       "txt"
+      ],
+      [
+       "Nota",
+       "G",
+       "txt"
+      ]
+     ],
+     "filas": [
+      7,
+      22
+     ]
+    }
+   ]
+  },
+  "Topes de Jornada": {
+   "celdas": {
+    "Jornada máxima legal de promedio (h/semana)": "D19",
+    "Horas semanales pactadas de promedio": "D20",
+    "Exceso sobre el máximo legal (h/semana)": "D21",
+    "Tope legal de horas extraordinarias al año (h)": "D23",
+    "Horas extraordinarias acumuladas (h)": "D24",
+    "Margen hasta el tope (h)": "D25",
+    "Tope consumido (%)": "D26",
+    "Avisar cuando se supere el (%) del tope": "D27"
+   },
+   "tablas": [
+    {
+     "titulo": "Los 11 topes de jornada, con norma y URL",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Concepto",
+       "B",
+       "txt"
+      ],
+      [
+       "Valor",
+       "C",
+       "txt"
+      ],
+      [
+       "Artículo",
+       "D",
+       "txt"
+      ],
+      [
+       "Fuente (norma)",
+       "E",
+       "txt"
+      ],
+      [
+       "URL",
+       "F",
+       "txt"
+      ],
+      [
+       "Ref.",
+       "G",
+       "txt"
+      ],
+      [
+       "Verificación",
+       "H",
+       "txt"
+      ],
+      [
+       "Nota",
+       "I",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      16
+     ]
+    }
+   ]
+  },
+  "Permisos y Cómputo": {
+   "celdas": {
+    "Figuras recogidas": "D18",
+    "Retribuidas": "D19",
+    "No retribuidas": "D20"
+   },
+   "tablas": [
+    {
+     "titulo": "Permisos y cómputo, con las DOS figuras del permiso parental",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Permiso o figura",
+       "B",
+       "txt"
+      ],
+      [
+       "Duración o cómputo",
+       "C",
+       "txt"
+      ],
+      [
+       "¿Retribuido?",
+       "D",
+       "txt"
+      ],
+      [
+       "Quién lo pide y cómo",
+       "E",
+       "txt"
+      ],
+      [
+       "Artículo",
+       "F",
+       "txt"
+      ],
+      [
+       "Fuente (norma)",
+       "G",
+       "txt"
+      ],
+      [
+       "URL",
+       "H",
+       "txt"
+      ],
+      [
+       "Ref.",
+       "I",
+       "txt"
+      ],
+      [
+       "Verificación",
+       "J",
+       "txt"
+      ],
+      [
+       "Nota",
+       "K",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      15
+     ]
+    }
+   ]
+  },
+  "Régimen Disciplinario ALEH": {
+   "celdas": {
+    "Filas del cuadro": "E18",
+    "Faltas leves tipificadas": "E19",
+    "Faltas graves tipificadas": "E20",
+    "Faltas muy graves tipificadas": "E21",
+    "Vigencia del ALEH VI: desde": "E23",
+    "Vigencia del ALEH VI: hasta": "E24",
+    "Días de vigencia que quedan": "E25"
+   },
+   "tablas": [
+    {
+     "titulo": "Régimen disciplinario del ALEH VI tras la modificación del 04-09-2026",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Falta o figura",
+       "B",
+       "txt"
+      ],
+      [
+       "Tipo",
+       "C",
+       "txt"
+      ],
+      [
+       "Gravedad",
+       "D",
+       "txt"
+      ],
+      [
+       "Umbral o detalle",
+       "E",
+       "txt"
+      ],
+      [
+       "Sanción posible",
+       "F",
+       "txt"
+      ],
+      [
+       "Artículo",
+       "G",
+       "txt"
+      ],
+      [
+       "Fuente (norma)",
+       "H",
+       "txt"
+      ],
+      [
+       "URL",
+       "I",
+       "txt"
+      ],
+      [
+       "Ref.",
+       "J",
+       "txt"
+      ],
+      [
+       "Verificación",
+       "K",
+       "txt"
+      ],
+      [
+       "Nota",
+       "L",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      15
+     ]
+    }
+   ]
+  }
+ }
+}
