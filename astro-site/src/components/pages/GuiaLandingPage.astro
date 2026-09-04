@@ -158,9 +158,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
   <section class="relative px-4 pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 opacity-[0.12]">
       <div class="grid grid-cols-3 md:grid-cols-6 h-full gap-1">
-        {data.images.gallery.map((src) => (
+        {data.images.gallery.map((src, i) => (
           <div class="overflow-hidden">
-            <img src={src} alt="" class="w-full h-full object-cover scale-110" loading="eager" />
+            <img src={src} alt={`${data.hero.titlePre}${data.hero.titleGold} · imagen ${i + 1}`} class="w-full h-full object-cover scale-110" loading="eager" />
           </div>
         ))}
       </div>
@@ -285,9 +285,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       </div>
       <div class="kt-fade">
         <div class="grid grid-cols-3 md:grid-cols-6 gap-2 mb-12 rounded-xl overflow-hidden">
-          {data.images.gallery.map((src) => (
+          {data.images.gallery.map((src, i) => (
             <div class="aspect-square overflow-hidden rounded-lg">
-              <img src={src} alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <img src={src} alt={`${data.hero.titlePre}${data.hero.titleGold} · imagen ${i + 1}`} class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" />
             </div>
           ))}
         </div>
@@ -418,7 +418,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
               <div class="kt-fade" style={`transition-delay:${i * 100}ms`}>
                 <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[#FFD700]/40 transition-all group h-full">
                   <div class="h-28 overflow-hidden relative">
-                    <img src={b.image} alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                    <img src={b.image} alt={b.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]"></div>
                     <span class="absolute bottom-3 left-4 text-[#FFD700] text-xs font-bold tracking-wider uppercase">{b.label}</span>
                   </div>
@@ -439,7 +439,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
               <div class="kt-fade" style={`transition-delay:${(i + 3) * 100}ms`}>
                 <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[#FFD700]/40 transition-all group h-full">
                   <div class="h-28 overflow-hidden relative">
-                    <img src={b.image} alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                    <img src={b.image} alt={b.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]"></div>
                     <span class="absolute bottom-3 left-4 text-[#FFD700] text-xs font-bold tracking-wider uppercase">{b.label}</span>
                   </div>
@@ -462,7 +462,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             <div class="kt-fade" style={`transition-delay:${i * 100}ms`}>
               <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[#FFD700]/40 transition-all group h-full">
                 <div class="h-28 overflow-hidden relative">
-                  <img src={b.image} alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                  <img src={b.image} alt={b.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
                   <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]"></div>
                   <span class="absolute bottom-3 left-4 text-[#FFD700] text-xs font-bold tracking-wider uppercase">{b.label}</span>
                 </div>
