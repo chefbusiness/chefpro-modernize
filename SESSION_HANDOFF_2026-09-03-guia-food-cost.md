@@ -58,8 +58,8 @@ Via: Claude Code
 
 ## 6. Cierre (02:20 → 03:00)
 
-- Push `562b9af` → build de producción en Netlify. LIVE verificado con `gate-flujo-postpago.py --only guia-food-cost-ingenieria-menu` (ver el último mensaje de la sesión / memoria).
-- Mailing: `broadcast-guia-food-cost-lanzamiento-es.html` programado por API al segmento «AI Chef Pro ES» para el 2026-09-04 08:00 UTC (10:00 Madrid) tras prueba a john@chefbusiness.co.
+- ✅ **LIVE 02:30** — https://aichef.pro/guia-food-cost-ingenieria-menu · `gate-flujo-postpago.py --only guia-food-cost-ingenieria-menu`: 12/12 descargas binarias con su tamaño, landing/access/library 200, webhook armado, 0 fallos. Hub: «45 productos disponibles · 4 próximamente». Sitemap con la URL; `sitemap-index.xml` reenviado a GSC (URL aún «desconocida para Google»: pedir indexación a mano en GSC si se quiere acelerar). Auditoría SEO en vivo: canonical, hreflang es/x-default, OG + Twitter, robots index, JSON-LD Organization/WebSite + Product (55 € InStock, sin rating) + FAQPage (6) + BreadcrumbList; alts descriptivos en galería y bonus (fix del template para las 9 guías, `66fb6f5`).
+- ✅ Mailing programado por API: broadcast `c6d68465-b229-4973-b9d2-b5a349775650`, segmento «AI Chef Pro ES», `scheduled` para 2026-09-04 08:00 UTC (10:00 Madrid); prueba enviada a john@chefbusiness.co (email `98076cfc…`). Se cancela desde el panel de Resend si hace falta.
 - Regla nueva de John (01:40): **bridge.py NO para productos digitales** (solo SEO/web). Registrada en `~/.claude/CLAUDE.md` (1bis), `CLAUDE.md` del proyecto y memoria `feedback_bridge-no-para-productos-digitales`. Patrón guardado en el repo: `guias-v2_0/dump_prompts.py` + `check_bloque.py`.
 - Gates de la familia corregidos por el camino: paréntesis con enumeradores legales, `«€.» → «. €»` (RX_EURO_*), versión/fecha desde el guion, léxico (lista blanca por producto en `_ERRATAS_OK`), `mortalidad_permitida` para «cierra el mes con…».
 - Presupuesto real de la sesión (tokens de subagentes): research 1,47 M + construcción 2,76 M + redacción 5,48 M ≈ **9,7 M**. Muy por encima del techo semanal del calendario; hecho con luz verde expresa de John («directamente a producción»).
