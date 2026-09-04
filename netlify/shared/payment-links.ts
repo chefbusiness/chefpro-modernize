@@ -34,6 +34,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'kit-tareas-restaurante-creativo': 'https://buy.stripe.com/28E00c3Kc1NY6357Vj6oo0g',
   'kit-tareas-sushi-bar': 'https://buy.stripe.com/14AfZa94w2S20IL1wV6oo0X',
   'kit-tareas-tapas-bar': 'https://buy.stripe.com/28E14gfsU50a8bd7Vj6oo11',
+  'manual-manager-restaurante': 'https://buy.stripe.com/3cIcMY1C4csC635ejH6oo1p',
   'mega-pack-tareas': 'https://buy.stripe.com/6oU5kwdkM78i3UXb7v6oo0K',
   'pack-appcc': 'https://buy.stripe.com/3cI28kbcE9gqezB0sR6oo02',
   'plan-catering-tematico-eventos': 'https://buy.stripe.com/dRm9AMa8A78i6352AZ6oo1d',
