@@ -763,6 +763,18 @@ def bloque_research(idx, ids, breve=False):
         if d is None:
             huecos.append(i)
             continue
+        # 2026-09-04 (refutación C2 del Manual del Manager): una REGLA legal con
+        # fuente primaria pero sin cifra numérica (MM-10, 21, 24, 25, 28, 38) no es
+        # un hueco: se cita la norma, sin inventar número.
+        if (d.get('cifra') is None and d.get('url')
+                and d.get('fiabilidad') in ('alta', 'media')):
+            titulo = textwrap.shorten(d['fuente_titulo'], width=110, placeholder='…')
+            lineas.append(
+                f'- [{i}] REGLA SIN CIFRA — {d["dato"]}. Fuente obligatoria a citar en el '
+                f'texto: «{titulo}» ({d.get("fecha_publicacion") or d.get("anio_del_dato")}). '
+                'Cita la norma tal cual; NO escribas ningún número sobre esto.')
+            usados.append(i)
+            continue
         if d.get('cifra') is None or d.get('fiabilidad') == 'baja' or not d.get('url'):
             huecos.append(i)
             lineas.append(f'- [{i}] HUECO SIN FUENTE — «{d["dato"]}»: NO escribas '
@@ -1024,7 +1036,7 @@ def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
             'taller. Tampoco escribas tu propio razonamiento.')
     if cap.get('prohibido'):
         partes.append('LO QUE NO DEBES DECIR (son errores reales de la edición '
-                      'anterior de esta guía y no se pueden repetir):\n'
+                      f'anterior de esta {guia.get("tipo_doc", "guía")} y no se pueden repetir):\n'
                       + '\n'.join(f'  - {p}' for p in cap['prohibido']))
     partes.append(
         'FORMATO: empieza directamente por el primer «### ». No pongas título '
