@@ -1,0 +1,310 @@
+{
+ "fichero": "auditoria-interna-servicio.xlsx",
+ "producto": "manual-manager-restaurante",
+ "hojas": {
+  "Auditoría": {
+   "celdas": {
+    "Escala máxima de puntuación": "D75",
+    "Umbral verde": "D76",
+    "Umbral ámbar": "D77",
+    "Tolerancia de la tendencia": "D78",
+    "Visita 1: fecha": "E3",
+    "Visita 1: auditor": "E4",
+    "Visita 1: puntos valorados": "E68",
+    "Visita 1: peso valorado": "E69",
+    "Visita 1: suma de peso por puntuación": "E70",
+    "Visita 1: puntuación ponderada": "E71",
+    "Visita 1: cumplimiento (%)": "E72",
+    "Visita 1: media simple": "E73",
+    "Visita 2: fecha": "G3",
+    "Visita 2: auditor": "G4",
+    "Visita 2: puntos valorados": "G68",
+    "Visita 2: peso valorado": "G69",
+    "Visita 2: suma de peso por puntuación": "G70",
+    "Visita 2: puntuación ponderada": "G71",
+    "Visita 2: cumplimiento (%)": "G72",
+    "Visita 2: media simple": "G73",
+    "Visita 3: fecha": "I3",
+    "Visita 3: auditor": "I4",
+    "Visita 3: puntos valorados": "I68",
+    "Visita 3: peso valorado": "I69",
+    "Visita 3: suma de peso por puntuación": "I70",
+    "Visita 3: puntuación ponderada": "I71",
+    "Visita 3: cumplimiento (%)": "I72",
+    "Visita 3: media simple": "I73"
+   },
+   "tablas": [
+    {
+     "titulo": "60 puntos de control en 6 áreas, con peso y tres visitas",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Área",
+       "B",
+       "txt"
+      ],
+      [
+       "Punto de control",
+       "C",
+       "txt"
+      ],
+      [
+       "Peso (1-3)",
+       "D",
+       "num"
+      ],
+      [
+       "Visita 1: puntuación (0-5)",
+       "E",
+       "num"
+      ],
+      [
+       "Visita 1: observación",
+       "F",
+       "txt"
+      ],
+      [
+       "Visita 2: puntuación (0-5)",
+       "G",
+       "num"
+      ],
+      [
+       "Visita 2: observación",
+       "H",
+       "txt"
+      ],
+      [
+       "Visita 3: puntuación (0-5)",
+       "I",
+       "num"
+      ],
+      [
+       "Visita 3: observación",
+       "J",
+       "txt"
+      ]
+     ],
+     "filas": [
+      7,
+      66
+     ]
+    }
+   ]
+  },
+  "Resumen por Área": {
+   "celdas": {
+    "Escala máxima (espejo)": "D4",
+    "Umbral verde (espejo)": "D5",
+    "Umbral ámbar (espejo)": "D6",
+    "Tolerancia (espejo)": "D7",
+    "TOTAL: puntos de control": "B16",
+    "TOTAL: peso": "C16",
+    "TOTAL: visita 1": "D16",
+    "TOTAL: visita 2": "E16",
+    "TOTAL: visita 3": "F16",
+    "TOTAL: variación de la visita 1 a la 3": "G16",
+    "TOTAL: tendencia": "H16",
+    "TOTAL: cumplimiento visita 3 (%)": "I16",
+    "Llegada y reserva: puntos de control": "B10",
+    "Llegada y reserva: peso": "C10",
+    "Llegada y reserva: visita 1": "D10",
+    "Llegada y reserva: visita 2": "E10",
+    "Llegada y reserva: visita 3": "F10",
+    "Llegada y reserva: variación de la visita 1 a la 3": "G10",
+    "Llegada y reserva: tendencia": "H10",
+    "Llegada y reserva: cumplimiento visita 3 (%)": "I10",
+    "Sala y ambiente: puntos de control": "B11",
+    "Sala y ambiente: peso": "C11",
+    "Sala y ambiente: visita 1": "D11",
+    "Sala y ambiente: visita 2": "E11",
+    "Sala y ambiente: visita 3": "F11",
+    "Sala y ambiente: variación de la visita 1 a la 3": "G11",
+    "Sala y ambiente: tendencia": "H11",
+    "Sala y ambiente: cumplimiento visita 3 (%)": "I11",
+    "Servicio y tiempos: puntos de control": "B12",
+    "Servicio y tiempos: peso": "C12",
+    "Servicio y tiempos: visita 1": "D12",
+    "Servicio y tiempos: visita 2": "E12",
+    "Servicio y tiempos: visita 3": "F12",
+    "Servicio y tiempos: variación de la visita 1 a la 3": "G12",
+    "Servicio y tiempos: tendencia": "H12",
+    "Servicio y tiempos: cumplimiento visita 3 (%)": "I12",
+    "Producto y presentación: puntos de control": "B13",
+    "Producto y presentación: peso": "C13",
+    "Producto y presentación: visita 1": "D13",
+    "Producto y presentación: visita 2": "E13",
+    "Producto y presentación: visita 3": "F13",
+    "Producto y presentación: variación de la visita 1 a la 3": "G13",
+    "Producto y presentación: tendencia": "H13",
+    "Producto y presentación: cumplimiento visita 3 (%)": "I13",
+    "Aseos y limpieza: puntos de control": "B14",
+    "Aseos y limpieza: peso": "C14",
+    "Aseos y limpieza: visita 1": "D14",
+    "Aseos y limpieza: visita 2": "E14",
+    "Aseos y limpieza: visita 3": "F14",
+    "Aseos y limpieza: variación de la visita 1 a la 3": "G14",
+    "Aseos y limpieza: tendencia": "H14",
+    "Aseos y limpieza: cumplimiento visita 3 (%)": "I14",
+    "Marca y digital: puntos de control": "B15",
+    "Marca y digital: peso": "C15",
+    "Marca y digital: visita 1": "D15",
+    "Marca y digital: visita 2": "E15",
+    "Marca y digital: visita 3": "F15",
+    "Marca y digital: variación de la visita 1 a la 3": "G15",
+    "Marca y digital: tendencia": "H15",
+    "Marca y digital: cumplimiento visita 3 (%)": "I15"
+   },
+   "tablas": [
+    {
+     "titulo": "Puntuación ponderada por área y visita",
+     "cols": [
+      [
+       "Área",
+       "A",
+       "txt"
+      ],
+      [
+       "Puntos de control",
+       "B",
+       "num"
+      ],
+      [
+       "Peso del área",
+       "C",
+       "num"
+      ],
+      [
+       "Visita 1 (0-5)",
+       "D",
+       "num"
+      ],
+      [
+       "Visita 2 (0-5)",
+       "E",
+       "num"
+      ],
+      [
+       "Visita 3 (0-5)",
+       "F",
+       "num"
+      ],
+      [
+       "Variación de la visita 1 a la 3",
+       "G",
+       "num"
+      ],
+      [
+       "Tendencia",
+       "H",
+       "txt"
+      ],
+      [
+       "Cumplimiento visita 3 (%)",
+       "I",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      10,
+      16
+     ]
+    }
+   ]
+  },
+  "Histórico": {
+   "celdas": {
+    "Umbral verde (espejo)": "D3",
+    "Umbral ámbar (espejo)": "D4",
+    "Visitas registradas": "E10",
+    "Variación de la primera visita a la última": "E11",
+    "Mejor área en la última visita": "E12",
+    "Área más floja en la última visita": "E13",
+    "Área que más mejora": "E14",
+    "Área que más empeora": "E15",
+    "Áreas que empeoran": "E16",
+    "Visita 1: fecha": "B6",
+    "Visita 1: auditor": "C6",
+    "Visita 1: puntuación ponderada": "D6",
+    "Visita 1: cumplimiento (%)": "E6",
+    "Visita 2: fecha": "B7",
+    "Visita 2: auditor": "C7",
+    "Visita 2: puntuación ponderada": "D7",
+    "Visita 2: cumplimiento (%)": "E7",
+    "Visita 3: fecha": "B8",
+    "Visita 3: auditor": "C8",
+    "Visita 3: puntuación ponderada": "D8",
+    "Visita 3: cumplimiento (%)": "E8"
+   },
+   "tablas": [
+    {
+     "titulo": "Una fila por visita",
+     "cols": [
+      [
+       "Visita",
+       "A",
+       "num"
+      ],
+      [
+       "Fecha",
+       "B",
+       "txt"
+      ],
+      [
+       "Auditor",
+       "C",
+       "txt"
+      ],
+      [
+       "Puntuación ponderada (0-5)",
+       "D",
+       "num"
+      ],
+      [
+       "Cumplimiento (%)",
+       "E",
+       "pct1"
+      ],
+      [
+       "Llegada y reserva",
+       "F",
+       "num"
+      ],
+      [
+       "Sala y ambiente",
+       "G",
+       "num"
+      ],
+      [
+       "Servicio y tiempos",
+       "H",
+       "num"
+      ],
+      [
+       "Producto y presentación",
+       "I",
+       "num"
+      ],
+      [
+       "Aseos y limpieza",
+       "J",
+       "num"
+      ],
+      [
+       "Marca y digital",
+       "K",
+       "num"
+      ]
+     ],
+     "filas": [
+      6,
+      8
+     ]
+    }
+   ]
+  }
+ }
+}

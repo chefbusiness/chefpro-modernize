@@ -1,0 +1,508 @@
+{
+ "fichero": "quejas-reclamaciones-resenas.xlsx",
+ "producto": "manual-manager-restaurante",
+ "hojas": {
+  "Parámetros": {
+   "celdas": {
+    "SLA de la gravedad 1 (horas)": "C6",
+    "SLA de la gravedad 2 (horas)": "C7",
+    "SLA de la gravedad 3 (horas)": "C8",
+    "Horas que tiene un día": "C11",
+    "Plazo legal de Cataluña (días)": "C15",
+    "Plazo legal de Andalucía (días)": "C16",
+    "Nota legal de Cataluña": "F15",
+    "Nota legal de Andalucía": "F16"
+   },
+   "tablas": [
+    {
+     "titulo": "SLA de la casa por gravedad",
+     "cols": [
+      [
+       "Gravedad (1-3)",
+       "A",
+       "num"
+      ],
+      [
+       "Qué significa",
+       "B",
+       "txt"
+      ],
+      [
+       "SLA de cierre (horas)",
+       "C",
+       "num"
+      ]
+     ],
+     "filas": [
+      6,
+      8
+     ]
+    },
+    {
+     "titulo": "Plazo legal de respuesta por comunidad",
+     "cols": [
+      [
+       "Comunidad",
+       "A",
+       "txt"
+      ],
+      [
+       "Plazo legal",
+       "B",
+       "txt"
+      ],
+      [
+       "Días para el aviso",
+       "C",
+       "num"
+      ],
+      [
+       "Se cuentan",
+       "D",
+       "txt"
+      ],
+      [
+       "Norma, verificación y URL",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      15,
+      17
+     ]
+    },
+    {
+     "titulo": "Motivos de queja (lista cerrada)",
+     "cols": [
+      [
+       "Motivo",
+       "A",
+       "txt"
+      ],
+      [
+       "Qué recoge",
+       "B",
+       "txt"
+      ]
+     ],
+     "filas": [
+      21,
+      30
+     ]
+    },
+    {
+     "titulo": "Canales de entrada",
+     "cols": [
+      [
+       "Canal",
+       "A",
+       "txt"
+      ]
+     ],
+     "filas": [
+      34,
+      39
+     ]
+    }
+   ]
+  },
+  "Registro de Quejas": {
+   "celdas": {},
+   "tablas": [
+    {
+     "titulo": "30 quejas de ejemplo y 20 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Fecha de la queja",
+       "B",
+       "txt"
+      ],
+      [
+       "Canal",
+       "C",
+       "txt"
+      ],
+      [
+       "Motivo",
+       "D",
+       "txt"
+      ],
+      [
+       "Gravedad (1-3)",
+       "E",
+       "num"
+      ],
+      [
+       "Responsable",
+       "F",
+       "txt"
+      ],
+      [
+       "Acción tomada",
+       "G",
+       "txt"
+      ],
+      [
+       "Fecha de cierre",
+       "H",
+       "txt"
+      ],
+      [
+       "Horas hasta el cierre",
+       "I",
+       "num"
+      ],
+      [
+       "SLA de esa gravedad (horas)",
+       "J",
+       "num"
+      ],
+      [
+       "SLA cumplido",
+       "K",
+       "txt"
+      ],
+      [
+       "Notas",
+       "L",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      54
+     ]
+    }
+   ]
+  },
+  "Reclamaciones Formales": {
+   "celdas": {
+    "Días transcurridos de la reclamación 2": "F6",
+    "Plazo aplicable a la reclamación 2": "G6",
+    "Dentro de plazo de la reclamación 2": "I6"
+   },
+   "tablas": [
+    {
+     "titulo": "3 reclamaciones de ejemplo y 17 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Fecha de entrega de la hoja",
+       "B",
+       "txt"
+      ],
+      [
+       "Número de hoja",
+       "C",
+       "txt"
+      ],
+      [
+       "Comunidad",
+       "D",
+       "txt"
+      ],
+      [
+       "Fecha de respuesta por escrito",
+       "E",
+       "txt"
+      ],
+      [
+       "Días naturales transcurridos",
+       "F",
+       "num"
+      ],
+      [
+       "Plazo de la comunidad (días)",
+       "G",
+       "num"
+      ],
+      [
+       "Se cuentan",
+       "H",
+       "txt"
+      ],
+      [
+       "Dentro de plazo",
+       "I",
+       "txt"
+      ],
+      [
+       "Objeto de la reclamación y respuesta",
+       "J",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      24
+     ]
+    }
+   ]
+  },
+  "Reseñas": {
+   "celdas": {},
+   "tablas": [
+    {
+     "titulo": "40 reseñas de ejemplo y 20 filas libres",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Plataforma",
+       "B",
+       "txt"
+      ],
+      [
+       "Fecha",
+       "C",
+       "txt"
+      ],
+      [
+       "Estrellas (1-5)",
+       "D",
+       "num"
+      ],
+      [
+       "Tema",
+       "E",
+       "txt"
+      ],
+      [
+       "Respondida",
+       "F",
+       "txt"
+      ],
+      [
+       "Mes",
+       "G",
+       "txt"
+      ],
+      [
+       "Notas",
+       "H",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      64
+     ]
+    }
+   ]
+  },
+  "Resumen": {
+   "celdas": {
+    "Objetivo de SLA cumplido (%)": "D5",
+    "Objetivo de reseñas respondidas (%)": "D6",
+    "Objetivo de media de estrellas": "D7",
+    "Tolerancia de lectura entre meses": "D8",
+    "Quejas registradas": "D11",
+    "Motivo más repetido": "D12",
+    "Quejas del motivo más repetido": "D13",
+    "Gravedad más repetida": "D14",
+    "Quejas de la gravedad más repetida": "D15",
+    "Tiempo medio hasta el cierre (horas)": "D16",
+    "Quejas cerradas dentro del SLA": "D17",
+    "Quejas cerradas fuera del SLA": "D18",
+    "SLA cumplido (%)": "D19",
+    "Reclamaciones registradas": "D40",
+    "Reclamaciones contestadas dentro de plazo": "D41",
+    "Reclamaciones contestadas fuera de plazo": "D42",
+    "Reclamaciones dentro de plazo (%)": "D43",
+    "Reseñas registradas": "D46",
+    "Media de estrellas": "D47",
+    "Reseñas respondidas": "D48",
+    "Reseñas respondidas (%)": "D49",
+    "Motivo «Espera excesiva»: quejas": "C22",
+    "Motivo «Espera excesiva»: porcentaje": "D22",
+    "Motivo «Espera excesiva»: horas medias": "E22",
+    "Motivo «Plato frío o mal temperado»: quejas": "C23",
+    "Motivo «Plato frío o mal temperado»: porcentaje": "D23",
+    "Motivo «Plato frío o mal temperado»: horas medias": "E23",
+    "Motivo «Error en la comanda»: quejas": "C24",
+    "Motivo «Error en la comanda»: porcentaje": "D24",
+    "Motivo «Error en la comanda»: horas medias": "E24",
+    "Motivo «Trato del personal»: quejas": "C25",
+    "Motivo «Trato del personal»: porcentaje": "D25",
+    "Motivo «Trato del personal»: horas medias": "E25",
+    "Motivo «Cobro incorrecto»: quejas": "C26",
+    "Motivo «Cobro incorrecto»: porcentaje": "D26",
+    "Motivo «Cobro incorrecto»: horas medias": "E26",
+    "Motivo «Limpieza»: quejas": "C27",
+    "Motivo «Limpieza»: porcentaje": "D27",
+    "Motivo «Limpieza»: horas medias": "E27",
+    "Motivo «Reserva no encontrada»: quejas": "C28",
+    "Motivo «Reserva no encontrada»: porcentaje": "D28",
+    "Motivo «Reserva no encontrada»: horas medias": "E28",
+    "Motivo «Ruido»: quejas": "C29",
+    "Motivo «Ruido»: porcentaje": "D29",
+    "Motivo «Ruido»: horas medias": "E29",
+    "Motivo «Información de alérgenos»: quejas": "C30",
+    "Motivo «Información de alérgenos»: porcentaje": "D30",
+    "Motivo «Información de alérgenos»: horas medias": "E30",
+    "Motivo «Producto en mal estado»: quejas": "C31",
+    "Motivo «Producto en mal estado»: porcentaje": "D31",
+    "Motivo «Producto en mal estado»: horas medias": "E31",
+    "Gravedad 1: quejas": "C35",
+    "Gravedad 1: SLA (horas)": "D35",
+    "Gravedad 1: cumplimiento (%)": "G35",
+    "Gravedad 2: quejas": "C36",
+    "Gravedad 2: SLA (horas)": "D36",
+    "Gravedad 2: cumplimiento (%)": "G36",
+    "Gravedad 3: quejas": "C37",
+    "Gravedad 3: SLA (horas)": "D37",
+    "Gravedad 3: cumplimiento (%)": "G37",
+    "Reseñas de marzo 2026: media de estrellas": "D53",
+    "Reseñas de marzo 2026: reseñas": "C53",
+    "Reseñas de marzo 2026: lectura": "G53",
+    "Reseñas de abril 2026: media de estrellas": "D54",
+    "Reseñas de abril 2026: reseñas": "C54",
+    "Reseñas de abril 2026: lectura": "G54",
+    "Reseñas de mayo 2026: media de estrellas": "D55",
+    "Reseñas de mayo 2026: reseñas": "C55",
+    "Reseñas de mayo 2026: lectura": "G55",
+    "Reseñas de junio 2026: media de estrellas": "D56",
+    "Reseñas de junio 2026: reseñas": "C56",
+    "Reseñas de junio 2026: lectura": "G56",
+    "Reseñas de julio 2026: media de estrellas": "D57",
+    "Reseñas de julio 2026: reseñas": "C57",
+    "Reseñas de julio 2026: lectura": "G57",
+    "Reseñas de agosto 2026: media de estrellas": "D58",
+    "Reseñas de agosto 2026: reseñas": "C58",
+    "Reseñas de agosto 2026: lectura": "G58"
+   },
+   "tablas": [
+    {
+     "titulo": "Quejas por motivo",
+     "cols": [
+      [
+       "Motivo",
+       "A",
+       "txt"
+      ],
+      [
+       "Quejas",
+       "C",
+       "num"
+      ],
+      [
+       "Porcentaje del total",
+       "D",
+       "pct1"
+      ],
+      [
+       "Horas medias hasta el cierre",
+       "E",
+       "num"
+      ],
+      [
+       "Fuera del SLA",
+       "F",
+       "num"
+      ]
+     ],
+     "filas": [
+      22,
+      31
+     ]
+    },
+    {
+     "titulo": "Quejas por gravedad",
+     "cols": [
+      [
+       "Gravedad",
+       "A",
+       "num"
+      ],
+      [
+       "Qué significa",
+       "B",
+       "txt"
+      ],
+      [
+       "Quejas",
+       "C",
+       "num"
+      ],
+      [
+       "SLA (horas)",
+       "D",
+       "num"
+      ],
+      [
+       "Horas medias hasta el cierre",
+       "E",
+       "num"
+      ],
+      [
+       "Dentro del SLA",
+       "F",
+       "num"
+      ],
+      [
+       "Cumplimiento (%)",
+       "G",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      35,
+      37
+     ]
+    },
+    {
+     "titulo": "Reseñas por mes",
+     "cols": [
+      [
+       "Primer día del mes",
+       "A",
+       "txt"
+      ],
+      [
+       "Reseñas",
+       "C",
+       "num"
+      ],
+      [
+       "Media de estrellas",
+       "D",
+       "num"
+      ],
+      [
+       "Respondidas",
+       "E",
+       "num"
+      ],
+      [
+       "Respondidas (%)",
+       "F",
+       "pct1"
+      ],
+      [
+       "Lectura frente al mes anterior",
+       "G",
+       "txt"
+      ]
+     ],
+     "filas": [
+      53,
+      64
+     ]
+    }
+   ]
+  }
+ }
+}

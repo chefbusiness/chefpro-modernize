@@ -1,0 +1,221 @@
+{
+ "fichero": "seleccion-scorecard-entrevista.xlsx",
+ "producto": "manual-manager-restaurante",
+ "hojas": {
+  "Scorecard": {
+   "celdas": {
+    "Puesto": "D4",
+    "Encuadre en el ALEH VI": "D5",
+    "Jornada": "D6",
+    "Umbral de recomendación": "D7",
+    "Candidata A: nombre": "D12",
+    "Candidata A: competencias valoradas": "D22",
+    "Candidata A: peso valorado": "D23",
+    "Candidata A: suma de peso por puntuación": "D24",
+    "Candidata A: media ponderada": "D25",
+    "Candidata A: media simple": "D26",
+    "Candidata A: recomendación": "D27",
+    "Candidato B: nombre": "E12",
+    "Candidato B: competencias valoradas": "E22",
+    "Candidato B: peso valorado": "E23",
+    "Candidato B: suma de peso por puntuación": "E24",
+    "Candidato B: media ponderada": "E25",
+    "Candidato B: media simple": "E26",
+    "Candidato B: recomendación": "E27",
+    "Candidata C: nombre": "F12",
+    "Candidata C: competencias valoradas": "F22",
+    "Candidata C: peso valorado": "F23",
+    "Candidata C: suma de peso por puntuación": "F24",
+    "Candidata C: media ponderada": "F25",
+    "Candidata C: media simple": "F26",
+    "Candidata C: recomendación": "F27",
+    "Candidato D: nombre": "G12",
+    "Candidato D: competencias valoradas": "G22",
+    "Candidato D: peso valorado": "G23",
+    "Candidato D: suma de peso por puntuación": "G24",
+    "Candidato D: media ponderada": "G25",
+    "Candidato D: media simple": "G26",
+    "Candidato D: recomendación": "G27",
+    "Peso de «Experiencia en sala de carta con servicio en mesa»": "C13",
+    "Peso de «Ritmo y aguante en un servicio de 75 cubiertos»": "C14",
+    "Peso de «Trato con el cliente y gestión de una queja»": "C15",
+    "Peso de «Coordinación con cocina»": "C16",
+    "Peso de «Manejo de TPV, comanda y cobro»": "C17",
+    "Peso de «Conocimiento de alérgenos y de la carta»": "C18",
+    "Peso de «Idiomas de sala (inglés y francés)»": "C19",
+    "Peso de «Disponibilidad para turno partido y fines de semana»": "C20"
+   },
+   "tablas": [
+    {
+     "titulo": "Scorecard: 8 competencias con peso y 4 candidatos",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Competencia",
+       "B",
+       "txt"
+      ],
+      [
+       "Peso (1-3)",
+       "C",
+       "num"
+      ],
+      [
+       "Candidato 1",
+       "D",
+       "num"
+      ],
+      [
+       "Candidato 2",
+       "E",
+       "num"
+      ],
+      [
+       "Candidato 3",
+       "F",
+       "num"
+      ],
+      [
+       "Candidato 4",
+       "G",
+       "num"
+      ],
+      [
+       "Observaciones",
+       "H",
+       "txt"
+      ]
+     ],
+     "filas": [
+      13,
+      20
+     ]
+    }
+   ]
+  },
+  "Comparativa de Candidatos": {
+   "celdas": {
+    "Umbral en vigor (espejo)": "D4",
+    "Puesto (espejo)": "D5",
+    "Competencias del scorecard": "D6",
+    "Candidatos evaluados": "D14",
+    "Mejor candidato": "D15",
+    "Mejor media ponderada": "D16",
+    "Distancia entre el primero y el segundo": "D17",
+    "Candidatos que alcanzan el umbral": "D18",
+    "Candidatos por debajo del umbral": "D19",
+    "Candidata A: media ponderada": "C9",
+    "Candidata A: puesto en el ranking": "G9",
+    "Candidata A: recomendación": "H9",
+    "Candidato B: media ponderada": "C10",
+    "Candidato B: puesto en el ranking": "G10",
+    "Candidato B: recomendación": "H10",
+    "Candidata C: media ponderada": "C11",
+    "Candidata C: puesto en el ranking": "G11",
+    "Candidata C: recomendación": "H11",
+    "Candidato D: media ponderada": "C12",
+    "Candidato D: puesto en el ranking": "G12",
+    "Candidato D: recomendación": "H12"
+   },
+   "tablas": [
+    {
+     "titulo": "Comparativa de los cuatro candidatos",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Candidato",
+       "B",
+       "txt"
+      ],
+      [
+       "Media ponderada",
+       "C",
+       "num"
+      ],
+      [
+       "Media simple",
+       "D",
+       "num"
+      ],
+      [
+       "Competencias valoradas",
+       "E",
+       "num"
+      ],
+      [
+       "Peso valorado",
+       "F",
+       "num"
+      ],
+      [
+       "Puesto en el ranking",
+       "G",
+       "num"
+      ],
+      [
+       "Recomendación",
+       "H",
+       "txt"
+      ]
+     ],
+     "filas": [
+      9,
+      12
+     ]
+    }
+   ]
+  },
+  "Preguntas por Competencia": {
+   "celdas": {
+    "Nota legal del art. 9.5 de la Ley 15/2022": "A5",
+    "Preguntas del guion": "E34",
+    "Preguntas puntuadas": "E35",
+    "Cobertura del guion (%)": "E37"
+   },
+   "tablas": [
+    {
+     "titulo": "24 preguntas de conducta, tres por competencia",
+     "cols": [
+      [
+       "#",
+       "A",
+       "num"
+      ],
+      [
+       "Competencia",
+       "B",
+       "txt"
+      ],
+      [
+       "Pregunta",
+       "C",
+       "txt"
+      ],
+      [
+       "Respuesta y notas",
+       "D",
+       "txt"
+      ],
+      [
+       "Puntuación (1-5)",
+       "E",
+       "num"
+      ]
+     ],
+     "filas": [
+      9,
+      32
+     ]
+    }
+   ]
+  }
+ }
+}
