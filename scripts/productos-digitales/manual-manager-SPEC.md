@@ -89,11 +89,11 @@ Checklists del día (kit-tareas/03, 110 tareas), arqueo (kit-tareas/09), cuadran
 |---|---|---|
 | Jornada 37,5 h | **Rechazada** (Congreso, 10-09-2025) | 40 h de promedio en cómputo anual (art. 34.1 ET) |
 | Registro horario digital | **En tramitación** (dictamen desfavorable del Consejo de Estado 23-03-2026; RD anunciado) | Rige el art. 34.9 ET: registro diario, 4 años, papel o Excel válidos. Si sale el RD → changelog 1.1 |
-| Verifactu | **Aplazado a 2027** (RDL 15/2025, art. 3): 1-01-2027 sociedades, 1-07-2027 resto | Fechas nuevas; sin las de 2026 |
+| Verifactu | **Aplazado a 2027** (RDL 15/2025, **disposición final primera**, que modifica la DF 4.ª del RD 1007/2023 — no «art. 3»; MM-58): 1-01-2027 sociedades, 1-07-2027 resto | Fechas nuevas; sin las de 2026 |
 | Factura-e B2B | Reglamento aprobado (RD 238/2026), **aún no exigible** (12/24 meses desde la orden) | Simplificadas fuera **salvo las cualificadas** (D8) |
 | Ley 1/2025 desperdicio | **Vigente**; art. 6 exigible desde 02-04-2026 | *Doggy bag* desde 22-12-2022 (RD 1021/2022 art. 18.5); exención 1.300 m² solo del apartado 4 |
 | SMI 2026 | **1.221 €/mes** (RD 126/2026) | 14 pagas; 17.094 € es cálculo propio |
-| Fumar en terrazas | **Proyecto de ley** (Consejo de Ministros 21-07-2026) | Terraza legal = máximo dos paredes (Ley 28/2005, art. 2.2) |
+| Fumar en terrazas | **Proyecto de ley** (Consejo de Ministros 21-07-2026) | Terraza legal = máximo dos paredes (Ley 28/2005, art. 2.2; MM-59) |
 | RD 3484/2000 | **Derogado** desde 22-12-2022 (RD 1021/2022); también el RD 1420/2006 | Temperaturas del art. 30 RD 1086/2020; anisakis −20 °C/24 h o −35 °C/15 h |
 | **ALEH VI** | **Modificado y publicado HOY** (BOE-A-2026-18630, BOE 219 de 04-09-2026; vigente desde hoy hasta 31-12-2030) | Audiencia previa (art. 41.3, 2 días, permiso retribuido si se aparta), régimen del registro de jornada (38.10 / 39.21 / 40.14), móvil (38.12), fumar (39.20), caps. XIII LGTBI y XIV catástrofes |
 
