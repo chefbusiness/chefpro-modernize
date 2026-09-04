@@ -5,7 +5,7 @@
 > mismo cuando estés ok con todo» + programar el mailing de lanzamiento en Resend (segmento «AI Chef Pro ES»,
 > 10:00 Madrid). Todo lo de abajo está commiteado en `main` local; el push se hace con los documentos.
 
-## 1. Estado al escribir esto (00:45 del 4-sep)
+## 1. Estado al cierre (02:20 del 4-sep) — pusheado a `main` (`562b9af`), build en Netlify en curso
 
 | Pieza | Estado |
 |---|---|
@@ -14,7 +14,7 @@
 | Juego de datos único | ✅ `scripts/productos-digitales/guia-food-cost/datos_ejemplo.py` (carta de 20 platos, ficha, bodega, año mensual; el fixer reescaló cuadro y techos de delivery, documentado en el propio fichero) |
 | 8 xlsx | ✅ en `astro-site/public/dl/guia-food-cost-ingenieria-menu/` (4.358 fórmulas, cache 100 %, censo 0 defectos, refutación 16 hallazgos → 15 fixes; Goal Value como índice sin €) · generadores `guia-food-cost/gen_*.py` |
 | Guion | ✅ `guias-v2_0/guion_guia_food_cost_ingenieria_menu.py` (20 caps + bonus de 12 ejercicios; 461 referencias a celda verificadas, 0 rotas; 35 ids `FC-*` del research JSON, que pasó de 67 a 103 entradas) |
-| Documentos (guía + bonus, PDF + DOCX) | ⏳ **generándose** con `documentos.py --modelo anthropic/claude-sonnet-4.6` (DeepSeek flash devolvía vacío en los bloques largos: 3 intentos, 0 palabras) |
+| Documentos (guía + bonus, PDF + DOCX) | ✅ guía **95 páginas** (50.265 palabras, 42 tablas) · bonus **32 páginas** (12 ejercicios); todos los gates en verde. Texto: caps 1-7 con bridge (Sonnet 4.6 vía OpenRouter) y **caps 8-20 + 12 ejercicios con 44 subagentes Sonnet en paralelo** (orden de John a la 01:40: «pasa del bridge»; ver §5) |
 | Capa de producto | ✅ landing `astro-site/src/data/productos/guias/guia-food-cost-ingenieria-menu.ts` + wrapper, zona app (registro + generador, 135/135 byte a byte), SPA gate/dashboard/rutas, 4 functions + config, catálogo (45), hub (tarjeta «Nuevo», «próximamente» retirado), changelog 1.0, linkify, footerLinks cruzados |
 | Stripe | ✅ Payment Link creado por John: `https://buy.stripe.com/bJe3codkMgISajl6Rf6oo1o` (55 € exclusive, redirección a `-access`, IVA automático, factura) · env `VITE_STRIPE_PAYMENT_LINK_GUIA_FOOD_COST` en el site de prod (todos los contextos, scope builds) · `netlify/shared/payment-links.ts` regenerado (45) |
 | Imágenes | ✅ 6 galería + OG en `astro-site/public/` (Nano Banana 2, revisadas a ojo) |
@@ -55,3 +55,11 @@
 - **Presupuesto**: research 1,47 M + construcción 2,76 M tokens de subagentes (ultracode, luz verde de John para hacerlo todo en una sesión).
 
 Via: Claude Code
+
+## 6. Cierre (02:20 → 03:00)
+
+- Push `562b9af` → build de producción en Netlify. LIVE verificado con `gate-flujo-postpago.py --only guia-food-cost-ingenieria-menu` (ver el último mensaje de la sesión / memoria).
+- Mailing: `broadcast-guia-food-cost-lanzamiento-es.html` programado por API al segmento «AI Chef Pro ES» para el 2026-09-04 08:00 UTC (10:00 Madrid) tras prueba a john@chefbusiness.co.
+- Regla nueva de John (01:40): **bridge.py NO para productos digitales** (solo SEO/web). Registrada en `~/.claude/CLAUDE.md` (1bis), `CLAUDE.md` del proyecto y memoria `feedback_bridge-no-para-productos-digitales`. Patrón guardado en el repo: `guias-v2_0/dump_prompts.py` + `check_bloque.py`.
+- Gates de la familia corregidos por el camino: paréntesis con enumeradores legales, `«€.» → «. €»` (RX_EURO_*), versión/fecha desde el guion, léxico (lista blanca por producto en `_ERRATAS_OK`), `mortalidad_permitida` para «cierra el mes con…».
+- Presupuesto real de la sesión (tokens de subagentes): research 1,47 M + construcción 2,76 M + redacción 5,48 M ≈ **9,7 M**. Muy por encima del techo semanal del calendario; hecho con luz verde expresa de John («directamente a producción»).

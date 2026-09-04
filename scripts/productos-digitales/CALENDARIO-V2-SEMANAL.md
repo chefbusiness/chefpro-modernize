@@ -84,6 +84,15 @@ cap. 15 · los 4 truncamientos · dos focos de la «t» caída (caps. 5 y 21) ·
 **Lo que falta:** segunda tanda sobre los 58 bloqueantes → gates → crítico → copiar a `dl/` + restaurar el cableado →
 LIVE. Receta y detalle completo en el handoff **§20**.
 
+### ✅ 2026-09-04 — «Guía Food Cost + Ingeniería de Menú» LANZADA (producto nuevo nº 1, sesión par)
+
+En producción a 55 € (`/guia-food-cost-ingenieria-menu`): guía de 95 páginas + bonus de 32 + 8 xlsx. Handoff:
+`SESSION_HANDOFF_2026-09-03-guia-food-cost.md`. **Siguiente sesión = impar (v2.0 pendiente)**: lo primero de la cola sigue
+siendo el IVA del 21 % vivo en la familia de PLANES (§ deuda 1) o rematar los documentos de la guía gastronómica (§20 del
+handoff B). **Regla nueva de John: los productos NO se escriben con bridge.py** (subagentes Anthropic; patrón
+`guias-v2_0/dump_prompts.py` + `check_bloque.py`): el presupuesto por producto sube (≈ 5,5 M tokens la redacción de una guía de
+95 páginas) y hay que contarlo así en las semanas de guías.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 1. **El error del 21 % de IVA está VIVO en la familia de PLANES** (`planes-v2_0/grupo_a.py`), y afecta a los **10 planes
