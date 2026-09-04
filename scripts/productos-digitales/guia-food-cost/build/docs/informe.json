@@ -1,7 +1,7 @@
 {
   "_meta": {
     "pid": "guia-food-cost-ingenieria-menu",
-    "generado": "2026-09-04 02:16",
+    "generado": "2026-09-04 02:17",
     "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu",
     "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-food-cost-ingenieria-menu",
     "modelo": "anthropic/claude-sonnet-4.6",
@@ -33,116 +33,15 @@
         "no_latinos_pdf": 0,
         "no_latinos_docx": 0,
         "fechas_caducas": [],
-        "mortalidad_sin_fuente": [
-          "6 % con un ponderado del 25,4 % sobre un objetivo del 22 %; destilados y cócteles cierran"
-        ],
+        "mortalidad_sin_fuente": [],
         "fugas_de_taller": [],
         "citas_en_sintaxis_de_prompt": 0,
         "citas_hoja_celda": [],
         "degeneracion": [],
         "truncamientos": [],
         "parentesis_desequilibrados": [],
-        "erratas_ortograficas": [
-          {
-            "errata": "esima",
-            "probable": "estima",
-            "veces": 3,
-            "apoyo": 0,
-            "freq_lexico": 50
-          },
-          {
-            "errata": "podar",
-            "probable": "podra",
-            "veces": 2,
-            "apoyo": 0,
-            "freq_lexico": 14
-          },
-          {
-            "errata": "tiraje",
-            "probable": "triaje",
-            "veces": 2,
-            "apoyo": 0,
-            "freq_lexico": 10
-          },
-          {
-            "errata": "trasladado",
-            "probable": "trasladando",
-            "veces": 2,
-            "apoyo": 0,
-            "freq_lexico": 2
-          },
-          {
-            "errata": "anado",
-            "probable": "anadio",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 5
-          },
-          {
-            "errata": "arrancado",
-            "probable": "arrancando",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 6
-          },
-          {
-            "errata": "coincidan",
-            "probable": "coincidian",
-            "veces": 1,
-            "apoyo": 1,
-            "freq_lexico": 3
-          },
-          {
-            "errata": "cumplio",
-            "probable": "cumplido",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 2
-          },
-          {
-            "errata": "dependio",
-            "probable": "dependido",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 4
-          },
-          {
-            "errata": "ensanchado",
-            "probable": "ensanchando",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 2
-          },
-          {
-            "errata": "levado",
-            "probable": "llevado",
-            "veces": 1,
-            "apoyo": 1,
-            "freq_lexico": 22
-          },
-          {
-            "errata": "parta",
-            "probable": "partia",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 4
-          },
-          {
-            "errata": "pasterizada",
-            "probable": "pasteurizada",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 16
-          },
-          {
-            "errata": "perdio",
-            "probable": "perdido",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 53
-          }
-        ],
-        "erratas_ocurrencias": 19,
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
         "entidades_html": [],
         "euro_mal_escrito": [],
         "fugas_de_modelo": [],
@@ -162,7 +61,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Guía Food Cost + Ingeniería de Menú",
-          "created": "2026-09-04 02:16:52"
+          "created": "2026-09-04 02:18:02"
         },
         "paridad_palabras_pct": 0.69,
         "ok": {
@@ -174,7 +73,7 @@
           "tablas_ancladas": true,
           "no_latinos": true,
           "fechas": true,
-          "mortalidad": false,
+          "mortalidad": true,
           "sin_fugas_de_taller": true,
           "citas_legibles": true,
           "a4": true,
@@ -182,7 +81,7 @@
           "coherencia_cifras": true,
           "sin_degeneracion": true,
           "sin_truncamientos": true,
-          "sin_erratas": false,
+          "sin_erratas": true,
           "parentesis_equilibrados": true,
           "epigrafes_completos": true,
           "sin_entidades_html": true,
@@ -190,7 +89,7 @@
           "sin_fugas_de_modelo": true,
           "sin_asteriscos_impresos": true
         },
-        "verde": false,
+        "verde": true,
         "saneados_winansi": 1381,
         "ficheros": {
           "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/guia-food-cost-ingenieria-menu.md",
@@ -1994,37 +1893,8 @@
         "degeneracion": [],
         "truncamientos": [],
         "parentesis_desequilibrados": [],
-        "erratas_ortograficas": [
-          {
-            "errata": "coincidan",
-            "probable": "coincidian",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 3
-          },
-          {
-            "errata": "costeado",
-            "probable": "costeando",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 2
-          },
-          {
-            "errata": "manejado",
-            "probable": "manejando",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 2
-          },
-          {
-            "errata": "puzles",
-            "probable": "puzzles",
-            "veces": 1,
-            "apoyo": 0,
-            "freq_lexico": 83
-          }
-        ],
-        "erratas_ocurrencias": 4,
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
         "entidades_html": [],
         "euro_mal_escrito": [],
         "fugas_de_modelo": [],
@@ -2044,7 +1914,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "12 Ejercicios Resueltos de Food Cost e Ingeniería de Menú",
-          "created": "2026-09-04 02:17:01"
+          "created": "2026-09-04 02:18:11"
         },
         "paridad_palabras_pct": 1.07,
         "ok": {
@@ -2064,7 +1934,7 @@
           "coherencia_cifras": true,
           "sin_degeneracion": true,
           "sin_truncamientos": true,
-          "sin_erratas": false,
+          "sin_erratas": true,
           "parentesis_equilibrados": true,
           "epigrafes_completos": true,
           "sin_entidades_html": true,
@@ -2072,7 +1942,7 @@
           "sin_fugas_de_modelo": true,
           "sin_asteriscos_impresos": true
         },
-        "verde": false,
+        "verde": true,
         "saneados_winansi": 656,
         "ficheros": {
           "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/421cc8ea-46ab-4753-87a1-54c105458e7d/scratchpad/docs/guia-food-cost-ingenieria-menu/BONUS-ejercicios-resueltos.md",
