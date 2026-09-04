@@ -22,9 +22,9 @@ const data: GuiaData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_GUIA_FOOD_COST',
 
   seo: {
-    title: 'Guía Food Cost + Ingeniería de Menú | AI Chef Pro',
-    description: 'Escandallo, precios y rentabilidad de tu carta: 20 capítulos, 8 herramientas Excel con fórmulas y 12 ejercicios resueltos. IVA y delivery incluidos. 55 EUR.',
-    keywords: 'food cost, escandallo, costeo de recetas, ingeniería de menú, precio de venta de un plato, kasavana smith, prime cost, beverage cost, food cost delivery, IVA hostelería, AI Chef Pro',
+    title: 'Guía Food Cost + Ingeniería de Menú: Escandallo, Precios y Carta Rentable | AI Chef Pro',
+    description: 'Escandallo (costeo de recetas), precios y rentabilidad de tu carta: guía de 95 páginas, 8 Excel con fórmulas y 12 ejercicios resueltos. IVA por canal y delivery. 55 EUR.',
+    keywords: 'food cost, escandallo, costeo de recetas, ingeniería de menú, menu engineering, cómo calcular el food cost, precio de venta de un plato, kasavana smith, prime cost, beverage cost, food cost delivery, IVA hostelería, guía food cost, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-guia-food-cost-ingenieria-menu.jpg',
   },
 
@@ -197,6 +197,9 @@ const data: GuiaData = {
       { q: '¿Necesito el Kit de Escandallos si compro esta guía?', a: 'No. El Kit son plantillas para escandallar; la Guía es el método y la decisión, e incluye su propia ficha de escandallo base. Si tienes los dos, no hay contenido repetido.' },
       { q: '¿Sirve fuera de España?', a: 'Sí. El bloque fiscal está escrito con normativa española citada, pero los tipos de IVA, comisiones y objetivos viven en casillas editables de los Excel para adaptarlos a cualquier país.' },
       { q: '¿Con qué programas funcionan las herramientas Excel?', a: 'Con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Están construidas sin funciones que rompan la compatibilidad y traen los valores calculados guardados en el fichero.' },
+      { q: '¿Cómo afecta el IVA al cálculo del food cost?', a: 'El food cost se calcula sobre la venta neta (base imponible) y con el coste neto de IVA soportado. El tipo cambia según vendas en sala, para llevar o por delivery; la guía trae la matriz por canal y producto.' },
+      { q: '¿Cómo calculo el food cost de un plato vendido por delivery?', a: 'Sumando al coste del plato el packaging por pedido y dividiendo entre el precio menos la comisión de la plataforma. El simulador multicanal lo calcula por plato y dice si el precio necesario cabe bajo el techo de la app.' },
+      { q: '¿El método de Kasavana & Smith es el único válido?', a: 'No. Cruza popularidad con margen e ignora el porcentaje de coste. La guía añade Miller, Pavesic y el Goal Value de Hayes y Huffman sobre la misma carta, con una hoja que marca dónde discrepan.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },
