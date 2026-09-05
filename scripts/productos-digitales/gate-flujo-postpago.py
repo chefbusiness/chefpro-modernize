@@ -531,7 +531,7 @@ def main():
     for w in d_warns:
         print(f'    ⚠ {w}')
     if not d_issues and not d_warns:
-        print('    ✓ mapa de 44 Payment Links al día, validación cableada, webhook armado')
+        print(f'    ✓ mapa de {len(vp)} Payment Links al día, validación cableada, webhook armado')
     fails.extend(d_issues)
     warns.extend(d_warns)
     # E. pasarela cripto NOWPayments (transversal, no por producto)
