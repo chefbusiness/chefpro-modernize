@@ -199,3 +199,47 @@ Copia local de la sesión en el scratchpad (`nowpayments-postman.json`, `nowpaym
 
 ## Env vars (site `aichefpro`, `ee5802cf-…`)
 Secretas, scope `functions`: `NOWPAYMENTS_API_KEY`, `NOWPAYMENTS_IPN_SECRET`. No secretas: `NOWPAYMENTS_API_BASE` (default `https://api.nowpayments.io/v1`), `CRYPTO_PRODUCTS` (scope `functions` **y** `builds`; vacío = apagado; `all` = todos; o CSV de productIds), `CRYPTO_MIN_PAID_RATIO` (`0.95`), `CRYPTO_FIXED_RATE` (`0`), `CRYPTO_FEE_PAID_BY_USER` (`0`), `CRYPTO_SITE_URL` (default `https://aichef.pro`; en deploy preview, la URL del preview para `success_url`/`ipn_callback_url`). Ya existen en todos los contextos: `JWT_SECRET`, `RESEND_API_KEY`, `ADMIN_PASSWORD`.
+
+---
+
+# Registro de ejecución — Fase 0/1 medidas en vivo (noche 5→6 sep 2026, sesión Claude Code)
+
+## Estado
+- Rama `feat/pago-cripto-piloto`, **PR #78**, deploy preview `https://deploy-preview-78--aichefpro.netlify.app`. Producción intacta (sin `CRYPTO_PRODUCTS` en `production` el botón no existe en ningún producto).
+- Env del contexto `deploy-preview`: `CRYPTO_PRODUCTS=kit-tareas-cafeteria`, `CRYPTO_LOG_REJECTED_IPN=1`, `CRYPTO_SITE_URL=https://deploy-preview-78--aichefpro.netlify.app` (scope builds+functions) y **`NOWPAYMENTS_API_KEY` (secreta, functions)**. Falta `NOWPAYMENTS_IPN_SECRET` (John debe generar la clave IPN en el panel y guardarla en `~/.config/nowpayments/ipn-secret`).
+- Helpers (la clave jamás por chat): `scripts/productos-digitales/np-api.sh GET|POST <ruta> [json]` (lee `~/.config/nowpayments/api-key`; `NP_KEY_FILE`/`NP_API_BASE` para sandbox) y `np-env-set.sh <VAR> <fichero> <contexto>` (sube la clave a Netlify como secreta). Tras cambiar env vars, redeploy obligatorio (en la rama basta un commit vacío).
+
+## Verificado en el preview 78 (curl, sin nada en local)
+- Landing piloto `/kit-tareas-cafeteria`: 2 botones (`data-crypto-product`), 2 `<dialog>`, CTA de Stripe intacto, nota de garantía y casilla de desistimiento presentes. Landing hermana `/kit-tareas-bar`: **0 restos cripto** y HTML idéntico a producción salvo el script que Netlify inyecta en los previews. `/pago-cripto`: `noindex`, 1 `<h1>`, WhatsApp del layout, fuera del sitemap.
+- Contratos: `crypto-checkout` → 501 sin API key · 503 sin allowlist · 403 `product_not_enabled` / `origin_not_allowed` · 400 `consent_required` · **200 {url, orderId}** (factura real `iid=4301806706`, pedido `5a5a77d0…`, 12 EUR, país GT, email info@aichef.pro) · `nowpayments-ipn` → 501 sin secreto, 405 en GET · `crypto-order-status` → 400 id malformado, 404 inexistente, 200 con el pedido · `crypto-report` → 401 sin contraseña.
+- **Blobs en functions v1 = consistencia EVENTUAL.** La fuerte lanza `BlobsConsistencyError` («not configured with a 'uncachedEdgeURL' property») porque el contexto de `connectLambda(event)` no la trae; `abrirLibro` lo detecta con una lectura de prueba y cae a eventual con un WARN. Mejora futura: migrar las 4 functions cripto a **Functions v2** (`export default (req, context)`), donde el runtime inyecta el contexto completo y la fuerte funciona; de paso desaparece el manejo de `isBase64Encoded`.
+- Logs de una function de un deploy preview: `netlify logs --url https://<deploy_id>--aichefpro.netlify.app --source functions --function <nombre> --since 30m` (la forma `deploy-preview-78--…` NO vale: «No ready deploys found for branch»; `netlify logs:function` está retirado).
+- `ADMIN_PASSWORD` **llega enmascarada por la API de Netlify** (20 caracteres que no son la contraseña): `crypto-report.py` y `buscador-report.py` solo funcionan con `ADMIN_PASSWORD` exportada en el shell de John. El 401 del preview no es un fallo de la function.
+
+## Mínimos de NOWPayments medidos con la cuenta real (`GET /v1/min-amount`, liquidación en `usdttrc20`, `fiat_equivalent=eur`)
+| Moneda | min | ≈ EUR |
+|---|---|---|
+| usdttrc20 | 11,38 | 9,79 |
+| usdtbsc | 12,03 | 10,35 |
+| usdtsol | 12,52 | 10,78 |
+| usdcmatic | 12,22 | 10,52 |
+| usdcsol | 12,52 | 10,78 |
+| usdcbase | 11,94 | 10,28 |
+| usdcarb | 12,30 | 10,59 |
+| btc | 0,000159 | 10,92 |
+| eth | 0,00493 | 10,54 |
+| ltc | 0,217 | 10,30 |
+| trx | 35,9 | 10,31 |
+| sol | 0,117 | 10,37 |
+| ton | 8,32 | 10,24 |
+| bnbbsc | 0,0155 | 10,28 |
+| usdttrc20 con `is_fixed_rate`+`is_fee_paid_by_user` | 19,76 | **17,00** |
+
+Estimación: 12 EUR ≈ 13,91 USDT-TRC20 ≈ 13,92 USDC-Polygon ≈ 0,000174 BTC (5-sep, 23:45 UTC).
+
+**Consecuencias (decisión de John):** `pro-prompts-ebook` (9 €) queda por debajo del mínimo en todas las monedas → excluirlo del allowlist cripto salvo que NOWPayments baje mínimos o el precio suba. Los de 12 € van con ~1–2 € de margen (la página alojada avisa al comprador si el importe no llega). Mantener `CRYPTO_FIXED_RATE=0` y `CRYPTO_FEE_PAID_BY_USER=0` (17 € de mínimo y 1,5 % de comisión). El mínimo depende de la moneda de liquidación (saldo principal): si John elige otra, re-medir con `np-api.sh GET 'min-amount?currency_from=<coin>&currency_to=<saldo>&fiat_equivalent=eur'`.
+
+## Siguiente sesión
+1. John: clave IPN → `np-env-set.sh NOWPAYMENTS_IPN_SECRET ~/.config/nowpayments/ipn-secret deploy-preview` → commit vacío → pago real de prueba de 12 € desde el preview (USDT-TRC20) → IPN capturado en `ipn/` (Blobs) → contrastar variante de firma → email de acceso recibido → dashboard.
+2. Si todo cuadra: merge de la PR, `CRYPTO_PRODUCTS=kit-tareas-cafeteria` + claves en `production`, redeploy, pagos reales del piloto, revisión UX con John, mejoras.
+3. Fase 3: réplica a las otras 4 plantillas + mega-pack, copy hub/términos (ES y EN), `CRYPTO_PRODUCTS=all` (menos el eBook), gate E en verde LIVE, docs y checklist.
