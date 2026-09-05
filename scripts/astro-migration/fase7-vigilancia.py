@@ -82,7 +82,16 @@ _F8_EXTRA = ['/precios', '/en/pricing', '/fr/tarifs', '/de/preise',
              '/it/prezzi', '/pt/precos', '/nl/prijzen',
              '/contacto', '/sobre-nosotros', '/faq',
              # 8C: los dos hubs de librerías de prompts (ES e EN)
-             '/libreria-de-prompts', '/en/prompt-libraries']
+             '/libreria-de-prompts', '/en/prompt-libraries',
+             # Fase 12 (2026-09-05): landing de integraciones, nativa en los 7
+             '/integraciones', '/en/integrations', '/fr/integrations',
+             '/de/integrationen', '/it/integrazioni', '/pt/integracoes',
+             '/nl/integraties',
+             # Estas dos son ANTERIORES y nunca se declararon: el gate llevaba
+             # desviado +2 desde que nacieron (medido el 2026-09-05 sobre el
+             # commit c825e95f, antes de la fase 12). Son públicas, están en el
+             # sitemap y las enlaza el header español.
+             '/productos-digitales', '/seo-restaurantes-por-ciudad']
 EXPECTED = 696 + len(_F8_EXTRA) + _blog_urls
 check(n == EXPECTED, f'sitemap: {n} URLs != {EXPECTED}')
 
