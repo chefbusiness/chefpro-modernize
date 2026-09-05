@@ -59,6 +59,10 @@ export default defineConfig({
           // solo aviso. Cazado el 2026-08-27, junto al mismo fallo de patrón
           // en robots.txt, que además bloqueaba los 26 posts de la categoría.
           /^\/[^/]+-(access|library)$/.test(path) ||
+          // Fase «pagar con cripto» (2026-09-05): página de vuelta del comprador
+          // de NOWPayments (/pago-cripto?o=<pedido>). URL privada de dinero, ya
+          // noindex en el HTML; fuera también del sitemap.
+          path === '/pago-cripto' ||
           // '/admin' o '/admin/...' — NO startsWith('/admin') a secas, que
           // excluiría por error futuras rutas tipo /administracion-... (BAJA
           // del revisor adversarial de Fase 6).
