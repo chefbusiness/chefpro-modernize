@@ -84,7 +84,13 @@ Netlify y el CLI devuelve un relleno). Primer paso de la próxima sesión: `ADMI
 scripts/productos-digitales/buscador-report.py --days 7` debe listar las 3 búsquedas de prueba («prueba buscador
 claude», «prueba blobs uno/dos»); si sale a 0, Blobs no está habilitado en el site → panel de Netlify.
 
-**Fin del «prueba gratis» — EN CURSO, NO en `main`.** Workflow `wf_b211e5b7-323` (script en
+**Fin del «prueba gratis» — TERMINADO y en `main` (03:10, commit del barrido; 183 ficheros, 657 sustituciones netas).** Gate nuevo
+`scripts/astro-migration/plan-gratis-gate.py` en verde sobre 1.677 ficheros. Queda para otra sesión lo que el corrector señaló fuera
+de encargo: la escalera de planes obsoleta en 12 de 17 tablas comparativas del blog (la fila Miembro ya dice 10 €, el resto de
+filas puede estar caduco), la FAQ italiana de precios «Ho bisogno della carta di credito?» (respuesta contradictoria) y 4 claves
+`hero.no_card` sin gancho de precio. Verificar tras el deploy: `fase6-gate.py https://aichef.pro/precios` y una landing de guía.
+
+_(Texto original del estado a las 03:00, por si hay que reconstruir:)_ **Fin del «prueba gratis» — EN CURSO, NO en `main`.** Workflow `wf_b211e5b7-323` (script en
 `~/.claude/projects/-Users-johnguerrero-chefpro-modernize/b83df144-…/workflows/scripts/fin-plan-gratis-restos-wf_b211e5b7-323.js`):
 censo 68 a cambiar / 253 mantener, 84 sustituciones aplicadas por zona, verificadores con 156 restos (el censo del
 blog se quedó corto) + 35 defectos, y el corrector final trabajando sobre ~169 ficheros del árbol (plantillas de
