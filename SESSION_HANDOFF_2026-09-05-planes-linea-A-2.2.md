@@ -97,4 +97,6 @@ Alternancia: toca **PAR (producto nuevo)** con el presupuesto semanal reabierto 
 que diga el informe del buscador, pendiente de John con `ADMIN_PASSWORD`). Siguiente IMPAR: documentos de la guía gastronómica
 (handoff B §20.5) o T9 de los 5 docx de planes (los ve el comprador). Línea B de planes (5 productos v1.1) necesita `grupo_b`.
 
+**Sesión cerrada el 2026-09-05 a las 18:05 (John: «cerramos sesión… luego un clear para un producto nuevo»).** Memoria, handoffs, calendario y repo al día; `main` = `origin/main`.
+
 Via: Claude Code
