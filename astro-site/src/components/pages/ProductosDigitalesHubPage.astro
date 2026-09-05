@@ -1134,7 +1134,7 @@ const breadcrumbSchema = {
       </span>
 
       <div class="relative">
-        <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500">
+        <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-[#FFD700]">
           <Icon name="Search" class="w-5 h-5" />
         </span>
         <input
@@ -1148,13 +1148,13 @@ const breadcrumbSchema = {
           enterkeyhint="search"
           aria-describedby="pd-search-ayuda"
           placeholder="Busca por tema o negocio: escandallos o costeo, APPCC o HACCP, food truck…"
-          class="w-full h-14 pl-12 pr-12 rounded-2xl bg-white/5 border-2 border-[#FFD700]/70 shadow-[0_0_24px_rgba(255,215,0,0.12)] text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/30"
+          class="w-full h-14 pl-5 pr-24 rounded-2xl bg-white/5 border-2 border-[#FFD700]/70 shadow-[0_0_24px_rgba(255,215,0,0.12)] text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/30"
         />
         <button
           id="pd-search-clear"
           type="button"
           aria-label="Limpiar la búsqueda"
-          class="hidden absolute inset-y-0 right-0 items-center pr-4 text-gray-500 hover:text-[#FFD700] transition-colors"
+          class="hidden absolute inset-y-0 right-11 items-center pr-1 text-gray-500 hover:text-[#FFD700] transition-colors"
         >
           <Icon name="X" class="w-5 h-5" />
         </button>
