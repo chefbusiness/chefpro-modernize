@@ -1034,3 +1034,61 @@ COBERTURA = {
 #: 2 m²/persona en comercio y la tienda de este plan son ~30 m² → 15 plazas,
 #: que es justo lo que el libro declara.
 ROTACION = {'activa': False}
+
+# ==========================================================================
+# §M9 — VOCABULARIO DEL OFICIO (R22-PAN-11 / REF-17 · motor 2.2.1)
+# ==========================================================================
+#: El motor rotula el driver del modelo como «cubierto» y el canal de venta
+#: como «sala»: son las palabras de un restaurante con servicio de mesa. Este
+#: producto no tiene ni mesas ni sala — tiene MOSTRADOR—, y sus propias notas
+#: ya lo dicen en cada fila («Clientes servidos al día», «la rotación
+#: implícita no es una métrica útil en este formato», '0. Supuestos'!C51), así
+#: que el rótulo y su nota se contradecían en la misma línea. R22-PAN-11 midió
+#: 20 rótulos con vocabulario prestado en un producto que se vende como
+#: «100 % específico para panadería».
+#:
+#: FUENTE de los términos: el propio módulo. `COBERTURA['nota_horas']` dice
+#: «De la apertura al cierre de la TIENDA… no se solapa con el mostrador» y
+#: `ROTACION` está apagado porque «el driver de una panadería es la
+#: TRANSACCIÓN DE MOSTRADOR, no el cubierto sentado».
+#: ⚠️ «Transacción» es FEMENINO y «cubierto» masculino, así que la sustitución
+#: palabra a palabra dejaba concordancias rotas en los rótulos que el motor
+#: compone con adjetivo («Cubiertos necesarios al día» → «Transacciones
+#: necesarios al día»). Las claves de varias palabras van PRIMERO (el motor
+#: ordena la alternancia de más larga a más corta), así que arreglan la
+#: concordancia sin tocar el resto. Medido sobre el libro generado: 8 rótulos
+#: y notas afectados.
+VOCABULARIO = {
+    'cubiertos/día necesarios': 'transacciones/día necesarias',
+    'cubiertos/día previstos': 'transacciones/día previstas',
+    'cubiertos necesarios': 'transacciones necesarias',
+    'los cubiertos': 'las transacciones',
+    'cubierto': 'transacción',
+    'cubiertos': 'transacciones',
+    'sala': 'mostrador',
+}
+
+# ==========================================================================
+# §M10 — IVA SOPORTADO DE LA COMPRA DE COMIDA (R22-PAN-05 b · motor 2.2.1)
+# ==========================================================================
+#: El libro separa el 4 % en la VENTA (`LINEAS_INGRESO`, «Pan común sobre la
+#: línea») y seguía comprando al 10 %: 82.325,93 € de compras × 10 % =
+#: 8.232,59 € de IVA soportado en un obrador cuya compra dominante son
+#: HARINAS PANIFICABLES, que van al tipo SUPERREDUCIDO del 4 % igual que el
+#: pan común (art. 91.Dos.1.1.º de la Ley 37/1992 del IVA, que incluye
+#: también la leche y los huevos). Sólo la mantequilla, el chocolate, el
+#: azúcar y la levadura van al 10 %.
+#:
+#: FUENTE del peso: NO se teclea otra vez. La fórmula lee la MISMA celda
+#: verde que ya declara la línea de venta (76 % de pan común, del desglose de
+#: la v1.1: pan artesanal 120.000 € + mayorista 20.000 € sobre 185.000 €), así
+#: que quien ajuste su carta mueve los dos lados a la vez. Con el caso base:
+#: 0,76 × 4 % + 0,24 × 10 % = 5,44 %.
+IVA_COMPRAS = {
+    'comida': '={peso_especial}*0.04+(1-{peso_especial})*{iva_reducido}',
+    'nota': 'El IVA que SOPORTAS al comprar es el ponderado de las harinas '
+            'panificables al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y del '
+            'resto de la materia prima al 10 %, con el mismo peso de pan '
+            'común que declara la línea de ventas de arriba',
+}
+

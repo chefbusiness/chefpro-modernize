@@ -1144,3 +1144,14 @@ COBERTURA = {
 #: sorteaba calibrando `aforo`, que es el único parámetro que el contenido
 #: controlaba y que aquí no significa nada.
 ROTACION = {'activa': False}
+
+# ==========================================================================
+# §M9 — VOCABULARIO DEL OFICIO (REF-17 · motor 2.2.1)
+# ==========================================================================
+#: Un food truck despacha por ventanilla: no hay cubiertos ni servicio de
+#: mesa. El driver son CLIENTES atendidos, que es como lo nombran las notas y
+#: la capa de producto de este mismo módulo.
+VOCABULARIO = {
+    'cubierto': 'cliente',
+    'cubiertos': 'clientes',
+}

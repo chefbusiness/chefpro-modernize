@@ -285,7 +285,7 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 2.1 · septiembre 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-bar-restaurante',

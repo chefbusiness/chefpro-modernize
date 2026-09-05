@@ -770,19 +770,25 @@ CHECKLIST = {
          'Imprescindible para trámites telemáticos'),
         (r'^Tapas bar con cocina = actividad clasificada \(mas exigente\)$',
          'Tapas bar con cocina = actividad clasificada (más exigente)'),
-        (r'^Plancha, freidora, horno, salamandra, bano maria$',
+        # M5 / R22-TAP-07 — los cuatro patrones de abajo dejaron de casar
+        # cuando el §1 transversal del motor 2.2 empezó a acentuar la palabra
+        # ANTES de que corriera `grupo_a.checklist()`. El motor los rescata
+        # probando también contra el texto de partida; los patrones se
+        # escriben además con el acento OPCIONAL para que casen contra las
+        # dos grafías sin depender de ese rescate.
+        (r'^Plancha, freidora, horno, salamandra, ba[ñn]o mar[ií]a$',
          'Plancha, freidora, horno, salamandra y baño maría'),
         (r'^Prueba practica: elaborar 3 tapas en 20 min$',
          'Prueba práctica: elaborar 3 tapas en 20 min'),
-        (r'^Logo, colores, tipografia, estilo visual$',
+        (r'^Logo, colores, tipograf[ií]a, estilo visual$',
          'Logo, colores, tipografía y estilo visual'),
         (r'^Instagram para fotos tapas, TikTok para videos cocina$',
          'Instagram para fotos de tapas, TikTok para vídeos de cocina'),
-        (r'^Carta fisica \+ pizarra tapas del d[ií]a \+ QR digital$',
+        (r'^Carta f[ií]sica \+ pizarra tapas del d[ií]a \+ QR digital$',
          'Carta física + pizarra de tapas del día + QR digital'),
         (r'^Rotulo \+ pizarra exterior \+ vinilo$',
          'Rótulo + pizarra exterior + vinilo'),
-        (r'^Behind the scenes, cuenta atras, sorteo inaugural$',
+        (r'^Behind the scenes, cuenta atr[aá]s, sorteo inaugural$',
          'Cocina a la vista, cuenta atrás y sorteo inaugural'),
         (r'^Pesar genero: carnes, pescado, embutidos$',
          'Pesar el género: carnes, pescado y embutidos'),

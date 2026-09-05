@@ -893,3 +893,17 @@ RECALIBRADO = (
      'Cubren los 151.976 € de necesidad de caja con 24 € de diferencia. '
      'Pedir más es pagar intereses por un dinero que no se usa.'),
 )
+
+# ==========================================================================
+# §M9 — VOCABULARIO DEL OFICIO (R22-CAF-20 / REF-17 · motor 2.2.1)
+# ==========================================================================
+#: «Cubierto» es vocabulario de restaurante con servicio de mesa; una
+#: cafetería de barra cuenta CLIENTES o tickets. Lo dice el propio libro en
+#: todas sus notas ('0. Supuestos'!C4 «Clientes servidos al día…», la tabla de
+#: referencias «Clientes/día (cafetería urbana)») y en toda la capa de
+#: producto: el rótulo y su nota se contradecían en la misma fila.
+#: FUENTE de los términos: este mismo módulo (SUPUESTOS e INSTRUCCIONES).
+VOCABULARIO = {
+    'cubierto': 'cliente',
+    'cubiertos': 'clientes',
+}

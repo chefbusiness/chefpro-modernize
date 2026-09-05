@@ -995,9 +995,23 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-bar-restaurante': {
-    version: '2.1',
+    version: '2.2',
     updated: '2026-09-05',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-09-05',
+        title: 'El payback y la cobertura de la deuda, con la vara del banco: el proyecto se mide antes de la deuda y después de impuestos',
+        changes: [
+          'Payback del proyecto: la inversión a recuperar es el CAPEX más el fondo de maniobra (sin el IVA, que se recupera por el modelo 303) y se compara con lo que el negocio genera ANTES de pagar al banco (resultado neto más amortización más intereses), con la misma base los tres años. La 2.1 dividía la necesidad total de caja, financiación incluida, entre un flujo al que ya se le había quitado la cuota: contaba la deuda dos veces y daba 2,75 años. En el ejemplo son 2,3 años; sobre el CAPEX solo, 1,6 (fila informativa nueva).',
+          'Cobertura de la deuda (DSCR) después de impuestos, como la mira una entidad: en el ejemplo el mínimo del cuadro pasa de 3,79 a 3,31. En la hoja de Financiación, los años 4 a 7 del cuadro mantienen el flujo del año 3 y la nota lo declara.',
+          'Escenarios comparables: el saldo de caja al cierre del año 1 se calcula con el mismo método en las tres columnas (118.187 € en el realista) y el saldo real de la tesorería mensual (155.793 €) tiene ahora su propia fila.',
+          'Los imprevistos de obra se calculan sólo sobre las partidas de obra del bloque de local, no sobre todo el bloque, y capitalizan con la obra: 3.650 € en el ejemplo (antes 3.800 €), amortización 8.761 €/año, inversión total sin IVA 179.014,80 €.',
+          'IVA por línea de venta: cada línea de ingreso del P&L lleva su tipo en la columna de al lado (10 % en sala, alcohol incluido; el alcohol repartido, al 21 %) y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. Los valores del ejemplo no cambian.',
+          'El punto de equilibrio explica sus dos lecturas en una frase: 66 cubiertos al día para no perder dinero (con la amortización dentro) y 63 para que la caja aguante (sin amortización y con la cuota del préstamo del año). Notas afinadas: SMI 2026 sin cita de norma no verificada, refrescos azucarados al 21 % también en la compra, notaría con IVA, redacción de la renta previa, leyenda ☐ del checklist, tildes y títulos del fichero.',
+          'Número de versión (2.2) en los dos ficheros.',
+        ],
+      },
       {
         version: '2.1',
         date: '2026-09-05',

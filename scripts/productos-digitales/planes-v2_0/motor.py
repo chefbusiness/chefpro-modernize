@@ -159,8 +159,15 @@ NOTA_VERDES = ('Las celdas VERDES son las editables: cambia esas y el resto '
 RX_VERDES = re.compile(r'^Las celdas VERDES')
 
 #: §3.8 — la leyenda de la casilla que hoy falta en 12 xlsx.
-LEYENDA_OK = ('Columna OK: elige ✓ (hecho), — (pendiente) o N/A (no aplica). '
-              'Las N/A no cuentan en el total.')
+#: ⚠️ M7 / R22-TAP-10 (2026-09-05). La leyenda ofrecía «—» (U+2014) y el
+#: desplegable real de los checklists de esta familia es «✓,☐,N/A»: el
+#: comprador desplegaba buscando una opción que no existe. La marca de
+#: «pendiente» que se nombra es la del vocabulario que traen los ficheros
+#: (`☐`), no `VOCAB_MARCA[1]`, que es el que el motor usaría al CREAR uno.
+MARCA_PENDIENTE_TXT = '☐'
+LEYENDA_OK = ('Columna OK: elige ✓ (hecho), ' + MARCA_PENDIENTE_TXT
+              + ' (pendiente) o N/A (no aplica). '
+                'Las N/A no cuentan en el total.')
 RX_LEYENDA_OK = re.compile(r'^Columna OK:')
 
 #: §1.9 — cross-sell SIN importes: nombre + una sola URL.
@@ -192,8 +199,20 @@ PARAMS_MOTOR = (
      'ajusta a tu convenio y bonificaciones'),
     ('pagas', 'Número de pagas anuales', PAGAS, FMT_ENT,
      'Salario bruto anual = bruto mensual × pagas'),
+    # ⚠️ M6 / R22-TAP-09 (2026-09-05). La nota citaba un número de Real
+    # Decreto («RD 126/2026») que NADIE del paquete ha verificado contra el
+    # BOE, en un documento que va al banco. Se quita la cita y se deja el
+    # importe —del que cuelgan siete semáforos salariales— con su
+    # composición y un aviso de vigencia. Los dos números se COMPONEN desde
+    # `SMI_ANUAL` y `PAGAS`: escritos a mano volverían a desmentir a la celda
+    # en cuanto uno de los dos cambiara (17.094 / 14 = 1.221 exactos).
     ('smi_anual', 'SMI anual de referencia (€)', SMI_ANUAL, FMT_EUR0,
-     'SMI 2026 · RD 126/2026 · suelo legal por jornada completa'),
+     'SMI 2026: ' + ('{:,.0f}'.format(SMI_ANUAL).replace(',', '.'))
+     + ' € al año (' + ('{:,.0f}'.format(SMI_ANUAL / PAGAS)
+                            .replace(',', '.'))
+     + ' €/mes en ' + str(PAGAS) + ' pagas), suelo legal por jornada '
+     'completa. Comprueba el importe vigente si presentas el plan en otro '
+     'ejercicio'),
     ('is_nueva', 'Impuesto de Sociedades, nueva creación', IS_NUEVA_CREACION,
      FMT_PCT, 'Art. 29.1 LIS: el PRIMER ejercicio con base imponible '
      'positiva y el SIGUIENTE. El libro lo aproxima contando los dos '
@@ -216,7 +235,14 @@ PARAMS_MOTOR = (
      'que repercutes por el alcohol que sale por delivery (es una entrega de '
      'bienes). El alcohol servido en sala va al reducido: su tipo está en el '
      'bloque de desglose del IVA. Suministros, equipamiento y servicios '
-     'tienen su tipo en la celda de abajo'),
+     'tienen su tipo en la celda de abajo. '
+     # M17 / R22-CAF-18 / R22-TAP-15 (2026-09-05): el libro manda al general
+     # sólo la parte ALCOHÓLICA de la bebida, y el art. 91.Uno.1.1.º de la
+     # Ley 37/1992 excluye del reducido también los refrescos y zumos con
+     # azúcares o edulcorantes añadidos, que el proveedor factura al 21 %.
+     'El libro manda al general sólo el alcohol: si compras refrescos o '
+     'zumos con azúcares añadidos, su factura también va al 21 % (art. '
+     '91.Uno.1.1.º de la Ley 37/1992)'),
 )
 
 HOJA_SUPUESTOS = '0. Supuestos'
@@ -741,6 +767,7 @@ RX_POR_DIA = re.compile(r'[/ ]\s*d[ií]a\b|al d[ií]a\b|por d[ií]a\b', re.I)
 #: escondía.
 RX_RECUENTO_DV = re.compile(
     r'cubiertos|clientes|comensales|eventos|personas|unidades|pagas?\b|'
+    r'transacci[oó]n|transacciones|'
     r'n[uú]mero de|vida [uú]til|plazo|carencia|meses|a[ñn]os|aforo|plazas',
     re.I)
 #: Techo por magnitud, para que el mensaje de error diga la verdad. El del
@@ -765,6 +792,10 @@ TECHOS_DV = (
     (re.compile(r'pagas', re.I), 12, 16,
      'Número de pagas al año: 12, 14 o las que fije tu convenio (12 a 16).'),
 )
+#: M12 — un código de formato que PINTA decimales (`#,##0.0`, `0.00`): la
+#: celda no puede llevar una validación de entero, porque su propio valor de
+#: fábrica no lo es. `0.0%` no llega aquí (los porcentajes se filtran antes).
+RX_FMT_DECIMAL = re.compile(r'0\.0')
 #: Cabeceras de columna que NO son de dato: pintarles una DV numérica hace que
 #: el comprador reciba «Escribe un número mayor o igual que 0» al escribir una
 #: nota (RT-10 / RC-16: D22, D29 y D42 de la hoja de Inversión).
@@ -790,6 +821,7 @@ def validaciones(ws, informe=None):
                         con_lista.add(c.coordinate)
     libres = set(getattr(ws, '_pl_negativos', set()))
     importes, porcentajes, dias, negativos, cuentas = [], [], [], [], []
+    decimales = []
     for row in ws.iter_rows():
         for c in row:
             if not es_verde(c) or c.coordinate in con_lista:
@@ -808,6 +840,16 @@ def validaciones(ws, informe=None):
                 porcentajes.append(c.coordinate)
             elif es_dia:
                 dias.append(c.coordinate)
+            elif RX_RECUENTO_DV.search(rotulo) and '€' not in fmt \
+                    and RX_FMT_DECIMAL.search(fmt):
+                # ⚠️ M12 / R22-PAN-13 (2026-09-05). «Personas necesarias a la
+                # vez en cada franja» casa con RX_RECUENTO_DV por la palabra
+                # «personas», pero se entrega con 1,7 y formato `#,##0.0`: la
+                # DV de ENTERO rechazaba el propio valor de fábrica en cuanto
+                # el comprador lo reescribía, y de ese decimal cuelga la
+                # cobertura. Un recuento que se PINTA con decimales no es un
+                # recuento: va a decimal ≥ 0.
+                decimales.append(c.coordinate)
             elif RX_RECUENTO_DV.search(rotulo) and '€' not in fmt:
                 for rx, mn, mx, msg in TECHOS_DV:
                     if rx.search(rotulo):
@@ -822,6 +864,12 @@ def validaciones(ws, informe=None):
                 importes.append(c.coordinate)
     if importes:
         dv_numerica(ws, importes, minimo=0)
+    if decimales:
+        dv_numerica(ws, decimales, minimo=0,
+                    titulo='Valor no válido',
+                    mensaje='Escribe un número mayor o igual que 0; esta '
+                            'celda admite decimales (1,7 personas es una '
+                            'presencia media, no una persona y media).')
     if porcentajes:
         dv_numerica(ws, porcentajes, minimo=0, maximo=1,
                     titulo='Porcentaje no válido',
@@ -841,13 +889,15 @@ def validaciones(ws, informe=None):
         dv_numerica(ws, negativos, minimo=-1000000000000,
                     titulo='Importe no válido',
                     mensaje='Escribe un número (puede ser negativo).')
-    if informe is not None and (importes or porcentajes or dias or cuentas):
+    if informe is not None and (importes or porcentajes or dias or cuentas
+                                or decimales):
         informe.append(ws.title + ': DV en ' + str(len(importes))
                        + ' importes, ' + str(len(porcentajes))
-                       + ' porcentajes, ' + str(len(dias)) + ' días y '
-                       + str(len(cuentas)) + ' recuentos')
+                       + ' porcentajes, ' + str(len(dias)) + ' días, '
+                       + str(len(cuentas)) + ' recuentos y '
+                       + str(len(decimales)) + ' magnitudes con decimales')
     return (len(importes) + len(porcentajes) + len(dias) + len(negativos)
-            + len(cuentas))
+            + len(cuentas) + len(decimales))
 
 
 # ==========================================================================
@@ -1322,9 +1372,14 @@ def guardas(ws, informe):
 # §1.4 — Formatos por tipo de dato
 # ==========================================================================
 #: Rótulos que cuentan unidades: nunca llevan formato de euro.
+#: M9 (2026-09-05): «transacción/transacciones» entra en la lista. Es el
+#: driver de la panadería desde que el vocabulario del oficio sustituye
+#: «cubiertos», y sin ella el §1.4 y la DV lo tratarían como un importe.
 RX_RECUENTO = re.compile(
-    r'\b(eventos?|clientes?|cubiertos?|personas?|d[ií]as?|meses|mes\b|'
-    r'unidades?|comensales?|pax|invitados?|plazas?|n[uú]mero de|pagas)\b', re.I)
+    r'\b(eventos?|clientes?|cubiertos?|transacci[oó]n|transacciones|'
+    r'personas?|d[ií]as?|meses|mes\b|'
+    r'unidades?|comensales?|pax|invitados?|plazas?|n[uú]mero de|pagas)\b',
+    re.I)
 #: Rótulos de importe: nunca llevan formato de porcentaje.
 RX_IMPORTE = re.compile(
     r'\b(anticipo|precio|coste|costes|ingresos?|facturaci[oó]n|ticket|'
@@ -1341,9 +1396,13 @@ RX_RATIO = re.compile(r'\(\s*%\s*\)|%\s*$|/\s*(ingresos|ventas|facturaci)',
 #: euros del food truck como «recuento con €» por las palabras «día» y
 #: «eventos» que llevan dentro. La lista es la que ya existía para «Ingresos
 #: por eventos» y «Coste por invitado»; sólo le faltaban estos dos.
+#: ⚠️ M3 (2026-09-05): faltaba «saldo». La fila nueva de Escenarios «Saldo
+#: real del mes 12 de la hoja de Tesorería» lleva «mes» dentro, así que el
+#: gate la marcaba como «recuento con €» y el §1.4 le habría quitado el
+#: formato de euro a un SALDO DE CAJA. Un saldo es dinero siempre.
 RX_EURO_FUERTE = re.compile(
     r'\b(€|eur|ingresos?|ventas?|derechos|coste|costes|precio|importe|'
-    r'facturaci[oó]n|ticket|margen|salario|cuota)\b', re.I)
+    r'facturaci[oó]n|ticket|margen|salario|cuota|saldo)\b', re.I)
 
 RX_TXT_PCT = re.compile(r'^\s*(\d{1,3}(?:[.,]\d+)?)\s*%\s*$')
 RX_TXT_EUR = re.compile(
@@ -1732,6 +1791,13 @@ TILDES_EXTRA = {
     # está en HOMOGRAFAS; su caso concreto se corrige por contenido (A6).
     'conexion': 'conexión', 'conexiones': 'conexiones',
 }
+#: ⚠️ M5 / R22-TAP-07 (2026-09-05). «maria» NO entra en `TILDES_EXTRA`: sola
+#: es un nombre propio y acentuarla de oficio en cualquier frase sería
+#: inventar. La única aparición del corpus es la técnica de cocina «baño
+#: maría», así que se corrige por CONTEXTO, igual que `campana` (extractora)
+#: se protege por el suyo. Tras el §1 transversal «bano» ya es «baño», así
+#: que el patrón admite las dos grafías.
+RX_BANO_MARIA = re.compile(r'(?i)\b(ba[ñn]o)\s+(maria)\b')
 #: Excepción documentada de `critica`/`criticas`: formas del verbo «criticar».
 #: Se reconocen por el clítico o el relativo que las precede («se critica»,
 #: «que critica», «lo critica», «la criticas»). Sin este guardián, acentuar
@@ -1797,6 +1863,12 @@ def corregir_texto(texto):
             return _reponer_caso(palabra, correcto)
 
         nuevo = RX_PALABRA.sub(_sub, trozo)
+        # M5 — «baño maría» (técnica de cocina), por contexto
+        if 'maria' in bajo:
+            nuevo = RX_BANO_MARIA.sub(
+                lambda m: m.group(1) + ' ' + _reponer_caso(m.group(2),
+                                                           'maría'),
+                nuevo)
         # «campana» sólo se corrige a «campaña» cuando NO es la extractora
         if 'campana' in bajo:
             def _campana(m):
@@ -2122,6 +2194,12 @@ def asegurar_instrucciones(wb, det, pid, informe):
     ws = hoja(wb, 'Instrucciones')
     if ws is not None:
         if det['tipo'] == 'checklist':
+            # M7 / R22-TAP-10 — la leyenda de la casilla vive ya en la hoja
+            # de los 5 checklists publicados (la escribió este mismo motor
+            # al crearla), así que cambiar la constante NO bastaba: había
+            # que reescribir la línea, igual que se hace con la del
+            # contador. `linea_texto` no duplica: si ya dice lo mismo, sale.
+            linea_texto(ws, LEYENDA_OK, RX_LEYENDA_OK)
             linea_texto(ws, _linea_contador(det), RX_LINEA_CONTADOR)
         return ws, False
     ws = wb.create_sheet('Instrucciones')
@@ -2342,6 +2420,43 @@ def _col_ok(ws, cab_fila, cab_textos):
     return None
 
 
+def _recortar_cf_al_bloque(ws, ultima_fila):
+    """M18 / R22-TAP-14 / FT22-21 — el resaltado de fila, hasta el último ítem.
+
+    La regla `$A5="✓"` que pinta la fila completada nace en el fichero de
+    partida y `grupo_a._altas_checklist` la reancla al insertar trámites… pero
+    **sólo cuando hay altas que insertar**: en la 2.ª pasada, y en el
+    monolítico C1 del bar (cuyas altas ya están puestas), esa función sale
+    antes de llegar al formato y el rango se queda cubriendo la fila en
+    blanco, el pie de marca y la del contador. Hoy no pinta nada —esas filas
+    no tienen ✓ en la primera columna— pero un ítem escrito ahí nacería con
+    formato de «completado». Aquí, que corre SIEMPRE y ya conoce la última
+    fila de ítems real, se recorta. Sólo se toca el final del rango: el
+    principio lo vigila `gate_cf_anclado`.
+    """
+    cambio = False
+    supervivientes = []
+    for cf in ws.conditional_formatting:
+        ref = str(cf.sqref)
+        reglas = list(cf.rules)
+        if reglas and reglas[0].type == 'expression' \
+                and ' ' not in ref and ':' in ref:
+            ini, fin = ref.split(':')
+            m = re.search(r'(\d+)$', fin)
+            if m and int(m.group(1)) > ultima_fila:
+                ref = ini + ':' + fin[:m.start(1)] + str(ultima_fila)
+                cambio = True
+        supervivientes.append((ref, reglas))
+    if not cambio:
+        return False
+    nueva = ConditionalFormattingList()
+    for ref, reglas in supervivientes:
+        for r in reglas:
+            nueva.add(ref, r)
+    ws.conditional_formatting = nueva
+    return True
+
+
 def checklist_ok_y_contador(wb, det, informe):
     """La columna OK con desplegable y contador, en los CUATRO moldes.
 
@@ -2401,6 +2516,7 @@ def checklist_ok_y_contador(wb, det, informe):
         for coord in celdas_item:
             verde(ws, coord)
         semaforo_texto(ws, rango, SEM_CHECK)
+        _recortar_cf_al_bloque(ws, r1)
         total_items += len(filas)
         # Contador con COUNTIF (pycel NO implementa COUNTA). Si la hoja YA
         # trae uno —los cinco checklists del molde C2 lo llevan en su pie—, se
@@ -2438,9 +2554,9 @@ def checklist_ok_y_contador(wb, det, informe):
             v = ws.cell(row=r, column=1).value
             if isinstance(v, str) and 'marca [x]' in norm(v):
                 ws.cell(row=r, column=1).value = (
-                    'Marca la columna OK con el desplegable (✓ hecho, — '
-                    'pendiente, N/A no aplica). El contador del pie suma sólo '
-                    'las ✓.')
+                    'Marca la columna OK con el desplegable (✓ hecho, '
+                    + MARCA_PENDIENTE_TXT + ' pendiente, N/A no aplica). El '
+                    'contador del pie suma sólo las ✓.')
     if informe is not None and total_items:
         informe.append('checklist ' + det['molde'] + ': ' + str(total_items)
                        + ' ítems con desplegable y contador')

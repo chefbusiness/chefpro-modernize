@@ -244,7 +244,12 @@ SUPUESTOS_BASE = (
      motor.FMT_ENT,
      'El local se paga desde que se firma. Estos meses son inversión: NO se '
      'solapan con el P&L, que arranca el día de la apertura'),
-    ('pct_imprevistos', 'B55', 'Imprevistos de obra sobre el bloque de local',
+    # M20 / REF22-BAR-05 (2026-09-05) — desde A8 el porcentaje se aplica sólo
+    # a las partidas de OBRA del bloque, no al bloque entero, y el rótulo del
+    # input seguía prometiendo lo contrario: quien leyera sólo esta hoja
+    # calcularía 10 % × 53.650 € y no entendería los 3.650 €.
+    ('pct_imprevistos', 'B55',
+     'Imprevistos sobre las partidas de OBRA del bloque de local (%)',
      0.10, motor.FMT_PCT,
      'Colchón sobre la partida de obra y acondicionamiento. Un banco no '
      'financia una reforma sin él'),
@@ -883,6 +888,54 @@ def _clasificar_amortizable(rotulo, tablas):
     return 'no'
 
 
+def compilar_vocabulario(voc):
+    """(regex, mapa) del vocabulario del oficio (M9), o `(None, {})`."""
+    mapa = dict((motor.norm(k), v) for k, v in (voc or {}).items() if k and v)
+    if not mapa:
+        return None, {}
+    rx = re.compile(r'\b(' + '|'.join(
+        re.escape(k) for k in sorted(mapa, key=len, reverse=True))
+        + r')\b', re.I | re.U)
+    return rx, mapa
+
+
+def traducir(texto, rx, mapa):
+    """Palabras completas, respetando MAYÚSCULAS y mayúscula inicial (M9)."""
+    if not rx or not isinstance(texto, str):
+        return texto
+    return rx.sub(lambda m: motor._reponer_caso(m.group(0),
+                                                mapa[motor.norm(m.group(0))]),
+                  texto)
+
+
+def _enumerar_base(rotulos, claves, primero, ultimo, rej):
+    """M4 — los rótulos REALES que entran en la base de los imprevistos.
+
+    `claves` son las partidas clasificadas como 'obra' dentro del bloque; si
+    el molde no tiene ninguna, la fórmula suma el bloque entero y la
+    enumeración tiene que decir eso mismo.
+    """
+    mapa = dict(rotulos)
+    if claves:
+        orden = list(claves)
+    else:
+        f0, f1 = rej.fila(primero), rej.fila(ultimo)
+        orden = [k for k, _r in rotulos
+                 if k in mapa and f0 <= rej.fila(k) <= f1]
+    vistos, limpio = set(), []
+    for k in orden:
+        rot = str(mapa.get(k) or '').replace('"', '').strip()
+        if not rot or motor.norm(rot) in vistos:
+            continue
+        vistos.add(motor.norm(rot))
+        limpio.append(rot)
+    if not limpio:
+        return 'las partidas de obra de este bloque'
+    if len(limpio) == 1:
+        return limpio[0]
+    return ', '.join(limpio[:-1]) + ' y ' + limpio[-1]
+
+
 def _num(valor, defecto=None):
     if motor._es_numero(valor):
         return float(valor)
@@ -943,6 +996,59 @@ class Plan(object):
 
     def anota(self, texto):
         self.cambios.append(texto)
+
+    # -- §M9: vocabulario del oficio --------------------------------------
+    def vocabulario(self):
+        """M9 / R22-PAN-11 / R22-CAF-20 / REF-17 — el driver por su nombre.
+
+        El motor rotula «Cubiertos/día», «Coste variable por cubierto» y «en
+        sala» en los cinco hermanos, y sólo dos tienen mesas: la panadería
+        cuenta TRANSACCIONES DE MOSTRADOR y la cafetería y el food truck
+        cuentan CLIENTES — y así lo dicen todas sus notas, que contradecían a
+        su propio rótulo en la misma fila. El módulo de contenido declara
+        `VOCABULARIO = {'cubierto': 'transacción', …}` y aquí se hace UNA
+        pasada final sobre las hojas que construye este grupo.
+
+        Reglas: sólo palabras completas (`\b`), se respeta la mayúscula
+        inicial y las MAYÚSCULAS completas, no se tocan los nombres de hoja
+        (renombrarlos rompería todas las referencias) y, dentro de una
+        fórmula, sólo se traduce lo que va entre comillas dobles: las
+        referencias a hoja van entre comillas SIMPLES y no se rozan.
+        """
+        rx, mapa = compilar_vocabulario(self.dato('VOCABULARIO', {}))
+        if not rx:
+            return 0
+
+        def _tr(txt):
+            return traducir(txt, rx, mapa)
+
+        def _tr_formula(txt):
+            # sólo los literales de texto: `="… cubiertos …"&TEXT(B9,"0")`
+            trozos = txt.split('"')
+            for i in range(1, len(trozos), 2):
+                trozos[i] = _tr(trozos[i])
+            return '"'.join(trozos)
+
+        hojas = [getattr(self, 'ws_' + c, None) for c in
+                 ('sup', 'pyg', 'inversion', 'personal', 'equilibrio',
+                  'escenarios', 'tesoreria', 'financiacion', 'ins')]
+        n = 0
+        for ws in hojas:
+            if ws is None:
+                continue
+            for row in ws.iter_rows():
+                for cel in row:
+                    v = cel.value
+                    if not isinstance(v, str) or not v.strip():
+                        continue
+                    nuevo = (_tr_formula(v) if v.startswith('=') else _tr(v))
+                    if nuevo != v:
+                        cel.value = nuevo
+                        n += 1
+        self.anota('Vocabulario del oficio aplicado en ' + str(n)
+                   + ' celdas (' + ', '.join(
+                       sorted(k + '→' + mapa[k] for k in mapa)) + ') — M9')
+        return n
 
     # -- §A6: rótulos de filas canónicas y preservadas --------------------
     def _reglas(self, clave):
@@ -1220,8 +1326,25 @@ class Plan(object):
         # ya se hace en 'Inversión Inicial'!D30/D32/D34. Se escribe «0» y no
         # «0,0%» a propósito: la coma de un código de formato es el separador
         # de MILES y el punto depende del locale (misma trampa que `dec1`).
+        # ⚠️ M13 / R22-PAN-17 (2026-09-05). B2 del parche 2.2 sólo REESCRIBÍA
+        # el subtítulo cuando ya había uno con el porcentaje a mano, así que
+        # la panadería —cuya fila 2 viene VACÍA del fichero v1.1— se quedó
+        # sin él y el dry-run salió 13/13 verde igualmente: es la única hoja
+        # del libro sin subtítulo, y en ella el lector no ve de un vistazo
+        # las 14 pagas ni el 33 % de Seguridad Social con los que se calcula
+        # toda la columna. Ahora, si no hay ninguno arriba de la cabecera, se
+        # ESCRIBE en A2.
+        _subtitulo = ('="Convenio Hostelería — "&TEXT(' + self.p.ref('pagas')
+                      + ',"0")&" pagas + SS "&TEXT('
+                      + self.p.ref('ss_empresa') + '*100,"0")&" %"')
+        _hay_subtitulo = False
         for _r in range(1, cab):
             _v = ws.cell(row=_r, column=1).value
+            if isinstance(_v, str) and _v.startswith('=') \
+                    and 'Convenio Hostel' in _v:
+                # 2.ª pasada: el subtítulo ya es la fórmula de la 1.ª
+                _hay_subtitulo = True
+                continue
             if not isinstance(_v, str) or _v.startswith('='):
                 continue
             if not re.search(r'\d+[.,]?\d*\s*%', _v):
@@ -1232,10 +1355,18 @@ class Plan(object):
             self.anota('Personal!A' + str(_r) + ': subtítulo con el tipo de '
                        'Seguridad Social escrito a mano «' + _v[:60]
                        + '» → fórmula desde Supuestos (§7-bis.11)')
-            fx(ws, 'A' + str(_r),
-               '="Convenio Hostelería — "&TEXT(' + self.p.ref('pagas')
-               + ',"0")&" pagas + SS "&TEXT(' + self.p.ref('ss_empresa')
-               + '*100,"0")&" %"')
+            fx(ws, 'A' + str(_r), _subtitulo)
+            _hay_subtitulo = True
+        # sólo si la fila 2 está VACÍA: el bar-restaurante trae ahí su propio
+        # subtítulo («Cuadro de Personal y Coste Laboral») y pisarlo sería
+        # cambiar contenido que nadie ha pedido cambiar.
+        _fila2_vacia = all(ws.cell(row=2, column=_c).value in (None, '')
+                           for _c in range(1, max(2, ws.max_column) + 1))
+        if not _hay_subtitulo and cab > 2 and _fila2_vacia:
+            fx(ws, 'A2', _subtitulo)
+            self.anota('Personal!A2: la hoja no tenía subtítulo y la fila 2 '
+                       'estaba vacía — se escribe por fórmula desde '
+                       'Supuestos (M13 / R22-PAN-17)')
         plantilla = self.dato('PLANTILLA') or self._leer_plantilla(ws, cab)
         # el pie del fichero v1.1 lleva el tipo de Seguridad Social escrito a
         # mano («33.4%»): repetiría un parámetro que ahora vive en celda y
@@ -1357,11 +1488,18 @@ class Plan(object):
                 valores={'B': 40,
                          'J': 'Art. 34.1 del Estatuto de los Trabajadores; tu '
                               'convenio provincial puede fijar menos'})
+        # ⚠️ M16 / R22-PAN-21 (2026-09-05). La nota decía «52 menos las
+        # vacaciones del art. 38 ET (30 días naturales)», que son 4,3
+        # semanas: 47,7, no 46. El número (conservador, y es el denominador
+        # de toda la cobertura de horas) se queda; la nota pasa a decir lo
+        # que de verdad descuenta.
+        _SEMANAS = 46
         rej.add('semanas', rot='Semanas trabajadas al año por persona',
                 fmt=motor.FMT_ENT, verdes=('B',),
-                valores={'B': 46,
-                         'J': '52 semanas menos las vacaciones del art. 38 ET '
-                              '(30 días naturales)'})
+                valores={'B': _SEMANAS,
+                         'J': str(_SEMANAS) + ' semanas: 52 menos las '
+                              'vacaciones (30 días naturales, art. 38 ET), '
+                              'los festivos y las ausencias medias'})
         # ⚠️ A4 / MOT-03 / REF-06 / M-02 (2026-09-05). Estas dos celdas son el
         # NUMERADOR del semáforo de cobertura y, con él, quien dimensiona la
         # plantilla entera y el labour cost. Estaban CABLEADAS al cuadrante de
@@ -1691,6 +1829,17 @@ class Plan(object):
                 # incluirse a sí mismo ni a las derivadas: un `SUM` sobre el
                 # subtotal del bloque sería referencia circular.
                 if primero and ultimo_item:
+                    # ⚠️ M4 / R22-CAF-11 / R22-PAN-20 / REF22-BAR-06
+                    # (2026-09-05). La enumeración de la nota era una LISTA
+                    # FIJA («proyecto técnico, obra civil, instalaciones,
+                    # extracción, decoración y rotulación») heredada del
+                    # molde del bar: en la cafetería nombraba una
+                    # «extracción» que no existe (licencia inocua, sin
+                    # campana) y se dejaba fuera la fontanería, que sí entra;
+                    # en la panadería nombraba una «decoración» inexistente.
+                    # Se compone desde los RÓTULOS de las filas que de
+                    # verdad entran en la fórmula, igual que ya hace
+                    # `_enumerar_fuera()` con las no amortizables.
                     # ⚠️ A8 / REF-06 (2026-09-05). La base era `SUM` del
                     # BLOQUE ENTERO, así que el 10 % de «colchón de obra» se
                     # dotaba también sobre la comisión de la inmobiliaria, la
@@ -1723,12 +1872,12 @@ class Plan(object):
                                       + R.c('total', absoluta=True)),
                                 'D': texto_pct(
                                     pct_imp, 'Al ', ' de las partidas de OBRA '
-                                    'Y ACONDICIONAMIENTO de este bloque '
-                                    '(proyecto técnico, obra civil, '
-                                    'instalaciones, extracción, decoración y '
-                                    'rotulación), no del bloque entero: la '
-                                    'inmobiliaria, las licencias, el '
-                                    'lanzamiento y el stock quedan fuera. Un '
+                                    'Y ACONDICIONAMIENTO de este bloque ('
+                                    + _enumerar_base(
+                                        rotulos_inv, obra_bloque, primero,
+                                        ultimo_item, rej)
+                                    + '), no del bloque entero: el resto de '
+                                    'partidas del bloque quedan fuera. Un '
                                     'banco no financia una reforma sin '
                                     'colchón: el porcentaje está en la hoja '
                                     'de Supuestos')})
@@ -1844,11 +1993,22 @@ class Plan(object):
                            + R.c(fin, absoluta=True) + ')*'
                            + self.p.ref('iva_soportado') + ')') if ks
                           else '=0'),
+                    # M15 / R22-PAN-19 — la nota justificaba con «las
+                    # tasas y licencias no están sujetas» una fila
+                    # («Constitución SL + notaría») que mezcla la tasa
+                    # registral con el ARANCEL NOTARIAL, que es un servicio
+                    # profesional sujeto y no exento. La clasificación de la
+                    # fila no se toca (la decide el comprador en su
+                    # desplegable); lo que se corrige es la afirmación
+                    # fiscal.
                     'D': texto_pct(self.p.ref('iva_soportado'),
                                    'Al ', ' sobre las partidas marcadas con '
                                    '«Sí» en la columna de IVA. Las tasas y '
                                    'licencias no están sujetas y los seguros '
-                                   'están exentos (art. 20.Uno.16 LIVA). Se '
+                                   'están exentos (art. 20.Uno.16 LIVA). Las '
+                                   'tasas y aranceles registrales no llevan '
+                                   'IVA; los honorarios de notaría y '
+                                   'gestoría sí (21 %, deducible). Se '
                                    'recupera con el modelo 303, pero hay que '
                                    'adelantarlo')})
         rej.add('caja', rot='NECESIDAD TOTAL DE CAJA AL ARRANQUE', bold=True,
@@ -2054,7 +2214,13 @@ class Plan(object):
                             + '=0,"",' + R.c('cub', c) + '*'
                             + R.c('ticket', c) + '*' + R.c('dias', c) + ')'))
                      for col in ('B', 'C', 'D')]
-                    + [('E', '=1')]))
+                    # ⚠️ M14 / R22-PAN-18 (2026-09-05). El 1 iba TECLEADO y
+                    # todas sus vecinas de la columna E llevan la guarda de
+                    # libro vacío: con el libro en blanco la columna quedaba
+                    # entera vacía menos esta celda, que seguía enseñando
+                    # «100,0 %». Era el último «100 %» falso del libro.
+                    + [('E', (lambda R: '=IFERROR(IF(' + R.c('ingresos')
+                              + '="","",1),"")'))]))
         lineas = self.lineas_ingreso()
         # RD-23 / RC-06 / RT-13 — el mix de comida y bebida es el segundo
         # driver del libro y la hoja de Instrucciones lo anuncia como dato de
@@ -2066,6 +2232,11 @@ class Plan(object):
         self.mix_en_supuestos = (len(lineas) == 2
                                  and lineas[0][2] == 'comida'
                                  and lineas[1][2] == 'bebida')
+        # M19 / REF22-BAR-03 / FT22-09 — qué tipos de IVA declaran de verdad
+        # las líneas de venta de ESTE libro. La hoja de Instrucciones
+        # explicaba el divisor 1,04 (superreducido) en los cinco hermanos,
+        # y sólo la panadería tiene una línea al 4 %.
+        self.tipos_especiales = set()
         for i, linea in enumerate(lineas):
             (rot, peso, grupo, nota, _fuente,
              tipo_iva) = (list(linea) + [None] * 6)[:6]
@@ -2094,6 +2265,8 @@ class Plan(object):
             # SUMPRODUCT de pesos × tipos. Sin declarar nada, el resultado es
             # exactamente el de antes.
             if isinstance(tipo_iva, dict):
+                self.tipos_especiales.add(
+                    round(float(tipo_iva.get('tipo', 0.04)), 4))
                 # línea PARTIDA entre dos tipos: el porcentaje que va al tipo
                 # especial es un INPUT verde en la propia fila (columna H)
                 cabecera_h = (tipo_iva.get('cabecera')
@@ -2102,6 +2275,13 @@ class Plan(object):
                           wrap=True)
                 spec['valores']['H'] = tipo_iva.get('pct', 0)
                 spec['fmt_H'] = motor.FMT_PCT
+                # M10 — la primera línea partida es la que fija el peso del
+                # producto al tipo especial; `IVA_COMPRAS` puede citarla.
+                if getattr(self, 'ref_peso_especial', None) is None:
+                    # la fila todavía no está en la rejilla (se añade abajo):
+                    # su número es el siguiente al de las ya declaradas
+                    self.ref_peso_especial = '$H$' + str(
+                        rej.fila0 + len(rej.filas))
                 _bajo = repr(float(tipo_iva.get('tipo', 0.04)))
                 spec['formulas']['G'] = (
                     lambda R, k=clave, b=_bajo: '=' + R.c(k, 'H') + '*' + b
@@ -2111,6 +2291,7 @@ class Plan(object):
             elif isinstance(tipo_iva, str) and tipo_iva.startswith('='):
                 spec['formulas']['G'] = tipo_iva
             elif tipo_iva is not None:
+                self.tipos_especiales.add(round(float(tipo_iva), 4))
                 spec['valores']['G'] = float(tipo_iva)
                 nota_linea = (nota_linea + ' · El tipo de IVA que REPERCUTE '
                               'esta línea es un input (celda verde de la '
@@ -2150,7 +2331,8 @@ class Plan(object):
         rej.add(rot='COSTES VARIABLES', bold=True)
         claves_var = []
 
-        def variable(clave, rot, factor, nota=None, iva=None):
+        def variable(clave, rot, factor, nota=None, iva=None,
+                     iva_valor=None):
             """Coste que sube y baja con las ventas.
 
             `iva` es el tipo que se soporta al comprarlo, y lo lee la hoja de
@@ -2166,19 +2348,57 @@ class Plan(object):
                          for col in ('B', 'C', 'D')]
                         + [('E', pct(clave))])}
             if iva is not None:
-                spec['formulas']['G'] = '=' + iva
+                spec['formulas']['G'] = ('=' + iva if not str(iva).startswith(
+                    '=') else str(iva))
+            if iva_valor is not None:
+                # M10 — tipo de compra tecleable: celda VERDE con su valor
+                spec.setdefault('valores', {})['G'] = iva_valor
+                spec['verdes'] = tuple(set(spec.get('verdes') or ()) | {'G'})
             if nota:
                 destino = ('formulas' if str(nota).startswith('=')
                            else 'valores')
                 spec.setdefault(destino, {})['F'] = nota
             rej.add(clave, **spec)
 
+        # ⚠️ M10 / R22-PAN-05 (b) (2026-09-05). El IVA que se SOPORTA al
+        # comprar la comida iba al 10 % en los cinco hermanos. En una
+        # panadería la compra dominante son HARINAS PANIFICABLES, que van al
+        # 4 % igual que el pan común (art. 91.Dos.1.1.º de la Ley 37/1992):
+        # el libro ya separaba el 4 % en la VENTA y no lo separaba en la
+        # COMPRA, así que inflaba el IVA soportado y, como todo queda «a
+        # compensar», arrastraba el saldo de caja y el payback. El molde
+        # puede sobreescribir el tipo con `IVA_COMPRAS`:
+        #   * un NÚMERO → celda verde en la columna del tipo, con su nota;
+        #   * una FÓRMULA con `{peso_especial}` (el input verde que ya
+        #     declara la línea de venta partida) y `{iva_reducido}`.
+        # La parte (a) del hallazgo —tipo de IVA por FILA en la hoja de
+        # Inversión— queda DIFERIDA a propósito.
+        _ivac = self.dato('IVA_COMPRAS', {}) or {}
+        _iva_comida = _ivac.get('comida')
+        _nota_comida = texto_pct(P('coste_comida'), 'Al ',
+                                 ' de las ventas de COMIDA, no del total: la '
+                                 'bebida tiene su propia línea')
+        _verde_comida = None
+        if isinstance(_iva_comida, str) and _iva_comida.strip().startswith(
+                '='):
+            _peso = getattr(self, 'ref_peso_especial', None)
+            _iva_comida = (_iva_comida
+                           .replace('{peso_especial}', _peso or '0')
+                           .replace('{iva_reducido}', P('iva_reducido'))
+                           .replace('{iva_general}', P('iva_general')))
+        elif _iva_comida is not None:
+            _verde_comida = float(_iva_comida)
+            _iva_comida = None
+        if _ivac.get('nota'):
+            _nota_comida = (_nota_comida[:-1] + ' · '
+                            + str(_ivac['nota']).replace('"', '') + '"')
         variable('cv_comida', 'Coste de mercancía — comida',
                  P('pct_comida') + '*' + P('coste_comida'),
-                 nota=texto_pct(P('coste_comida'), 'Al ',
-                                ' de las ventas de COMIDA, no del total: la '
-                                'bebida tiene su propia línea'),
-                 iva=P('iva_reducido'))
+                 nota=_nota_comida,
+                 iva=(_iva_comida if _iva_comida is not None
+                      else (None if _verde_comida is not None
+                            else P('iva_reducido'))),
+                 iva_valor=_verde_comida)
         # RD-17 — el tipo que se SOPORTA al comprar la bebida no cambia con
         # la decisión del 10 % en sala: mezcla con `iva_general` (el alcohol
         # se compra al 21 %), no con `iva_bebida`, que es el repercutido.
@@ -2725,18 +2945,32 @@ class Plan(object):
         # habla muestra un decimal: el cliente leía «67 cubiertos al día» dos
         # líneas debajo de una celda que ponía 67,4. Se redondea HACIA
         # ARRIBA, que es lo defendible: con 67,4 no se cubren los costes.
+        # ⚠️ M1 / R22-CAF-03 / R22-PAN-12 (2026-09-05). La frase decía «con
+        # la cuota 80, sin la cuota 84»: leída literalmente, quitar un coste
+        # SUBÍA el umbral, y es la celda que más se lee de la hoja. La
+        # diferencia real no es «con cuota / sin cuota» sino CAJA frente a
+        # CONTABLE: el umbral de caja quita la amortización (que no se paga)
+        # y suma el principal del año, que en el año 1 vale 0 si el préstamo
+        # está en carencia. Ahora los dos umbrales se nombran por lo que son
+        # y la carencia se explica sólo cuando la hay (IF sobre la fila del
+        # principal, que ya está calculada arriba).
         rej.add('texto', wrap=True, alto=46,
                 formulas={'A': (lambda R:
                                 '="Con el ticket medio sin IVA de la fila de '
-                                'arriba necesitas servir "&TEXT(ROUNDUP('
-                                + R.c('cub_dia_caja') + ',0),"0")&" cubiertos '
-                                'al día durante los "&TEXT(' + R.c('dias')
-                                + ',"0")&" días que abres para cubrir los '
-                                'costes fijos, los variables Y la cuota del '
-                                'préstamo; sin contar la cuota bastan "&TEXT('
-                                'ROUNDUP(' + R.c('cub_dia') + ',0),"0")&". En '
-                                'las filas «Ingresos necesarios al año» '
-                                'tienes esas mismas cifras en euros."')})
+                                'arriba necesitas "&TEXT(ROUNDUP('
+                                + R.c('cub_dia') + ',0),"0")&" cubiertos al '
+                                'día durante los "&TEXT(' + R.c('dias')
+                                + ',"0")&" días que abres para no perder '
+                                'dinero (equilibrio contable, con la '
+                                'amortización dentro), y "&TEXT(ROUNDUP('
+                                + R.c('cub_dia_caja') + ',0),"0")&" para que '
+                                'la caja aguante (equilibrio de caja: sin la '
+                                'amortización, que no se paga, y con la cuota '
+                                'del préstamo del año"&IF(' + R.c('principal')
+                                + '=0,"; este año sólo intereses, porque el '
+                                'préstamo está en carencia","")&"). En las '
+                                'filas «Ingresos necesarios al año» tienes '
+                                'esas mismas cifras en euros."')})
         self.pendientes.append(rej)
         fila = self._sensibilidad(ws, rej) + 2
         for i, texto in enumerate(pie):
@@ -2931,39 +3165,53 @@ class Plan(object):
         # del P&L— pasa a leer la tesorería, que es la cifra buena. Pesimista y
         # optimista conservan el atajo: no tienen tesorería propia. La nota lo
         # dice, porque es la cifra que el guion del docx cita (§4.2).
+        # ⚠️ M3 / R22-CAF-10 (2026-09-05, cierra R-13 y CRIT-06). La fila
+        # seguía mezclando DOS MÉTODOS en la misma línea: la columna realista
+        # leía la tesorería mensual y las otras dos un atajo. Estaba
+        # declarado en el rótulo y en la nota, pero leídas EN FILA las tres
+        # columnas no eran comparables: en la cafetería el optimista parecía
+        # sacar 16.320 € más de caja que el realista cuando, con el mismo
+        # método, la diferencia son 43.101 €. Ahora las TRES columnas usan el
+        # método estimado —lo único que se puede calcular para el pesimista y
+        # el optimista, que no tienen tesorería mensual propia— y el saldo
+        # real de la tesorería baja a su propia fila, rotulada como lo que
+        # es. La cifra buena del caso base no se pierde: está justo debajo.
         def _caja(col):
-            if col == 'C':
-                return (lambda R: '='
-                        + self.rej['tesoreria'].r(
-                            'saldo', get_column_letter(2 + 11)))
             return (lambda R, c=col: '='
                     + self.rej['inversion'].r('fondo') + '+'
                     + R.c('neto', c) + '+' + pyg.r('cf_amort')
                     + '-' + self.rej['financiacion'].r('cap_1'))
 
-        # B3 / R-13 — el MÉTODO no cambia (la columna realista lee la
-        # tesorería real y las otras dos la estiman, que es lo correcto:
-        # pesimista y optimista no tienen tesorería mensual propia). Lo que
-        # cambia es el rótulo, que hasta ahora no lo decía.
         rej.add('caja_cierre',
-                rot='Saldo de caja al cierre del año 1 (realista: tesorería '
-                    'mensual; pesimista y optimista: estimado)',
+                rot='Saldo de caja al cierre del año 1 (estimado, el mismo '
+                    'método en los tres escenarios)',
                 fmt=motor.FMT_EUR0, bold=True,
                 formulas=dict(
                     [(col, _caja(col)) for col in cols]
-                    + [('E', '="En «Realista» es el saldo REAL del mes 12 de '
-                        'la hoja de tesorería, con su desfase de cobros y '
-                        'pagos y su liquidación de IVA. En «Pesimista» y '
-                        '«Optimista» es un saldo estimado (sin efecto de '
-                        'cobros/pagos ni IVA) — ver Tesorería: fondo de '
-                        'maniobra más el resultado del año, devolviendo la '
-                        'amortización (que no se paga) y restando el '
-                        'principal del préstamo. En rojo, el escenario se '
+                    + [('E', '="Saldo ESTIMADO: fondo de maniobra más el '
+                        'resultado del año, devolviendo la amortización (que '
+                        'no se paga) y restando el principal del préstamo. No '
+                        'incluye el desfase de cobros y pagos ni la '
+                        'liquidación del IVA, así que las tres columnas se '
+                        'pueden comparar entre sí. En rojo, el escenario se '
                         'queda sin caja"')]))
         motor.semaforo_num(rej.ws, rej.c('caja_cierre') + ':'
                            + rej.c('caja_cierre', 'D'),
                            verde_si=rej.c('caja_cierre') + '>0',
                            rojo_si=rej.c('caja_cierre') + '<=0')
+        rej.add('caja_real',
+                rot='Saldo real del mes 12 de la hoja de Tesorería (sólo '
+                    'realista)',
+                fmt=motor.FMT_EUR0,
+                formulas={
+                    'C': (lambda R: '=' + self.rej['tesoreria'].r(
+                        'saldo', get_column_letter(2 + 11))),
+                    'E': '="El saldo REAL del caso base, con su desfase de '
+                         'cobros y pagos y su liquidación de IVA. Sólo existe '
+                         'para el escenario realista, que es el único con '
+                         'tesorería mensual propia: por eso no está en la '
+                         'fila de arriba, donde se compararía contra dos '
+                         'estimaciones"'})
         self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
@@ -3195,13 +3443,21 @@ class Plan(object):
         # B13 / R-24 — con días de pago a proveedor, la compra del último mes
         # se paga en enero: la columna «Año» de ESTA fila es caja de doce
         # meses, no el coste del ejercicio, y el lector la compara con el P&L.
+        # ⚠️ M20 / REF22-BAR-02 (2026-09-05): la nota decía «DOCE
+        # mensualidades» y son ONCE — enero no paga nada, porque el mes
+        # anterior no se compró. Es justo el número que hace falta para
+        # cuadrar los −141.152 € de la fila contra los 160.067 € de coste
+        # anual; con «doce» el desfase quedaba inexplicado. Y se generaliza:
+        # con B59 días de pago, las mensualidades recogidas son
+        # 12 − REDONDEO.MÁS(B59/30).
         pagos['O'] = ('="Materia prima, consumibles, comisiones e '
                       'imprevistos, cada uno con SU tipo de IVA (la columna '
                       'del P&L) y con los días de pago a proveedor de '
                       'Supuestos."&IF(' + d_pago + '=0,""," Con "&TEXT('
-                      + d_pago + ',"0")&" días de pago, la compra del último '
-                      'mes se paga en enero: la columna «Año» de esta fila '
-                      'recoge las salidas de caja de doce mensualidades, no '
+                      + d_pago + ',"0")&" días de pago, las primeras compras '
+                      'se pagan ya en el año siguiente: la columna «Año» de '
+                      'esta fila recoge "&TEXT(MAX(0,12-ROUNDUP('
+                      + d_pago + '/30,0)),"0")&" mensualidades de compra, no '
                       'el coste del ejercicio.")')
         rej.add('p_var', rot='Compras y costes variables (IVA incluido)',
                 fmt=motor.FMT_EUR0, formulas=pagos)
@@ -3303,9 +3559,15 @@ class Plan(object):
                        + '<=0,"",-' + R.c('iva_cuota', c) + ')'))
             for i in range(12) if i + 1 in trimestres)
         liq['N'] = suma_ano('iva_liq')
+        # M20 / REF22-BAR-07 — la regla de formato condicional de esta fila
+        # compara el pago del 303 contra el saldo POSTERIOR al pago, así que
+        # es una alerta de liquidez más temprana que «te quedas en números
+        # rojos». No se cambia el criterio (avisar antes es lo útil): se
+        # DICE, que era lo que faltaba.
         liq['O'] = ('Sólo sale caja cuando el resultado del trimestre es '
                     'positivo. Los meses sin liquidación van en blanco, no a '
-                    'cero')
+                    'cero. La celda se pinta en ROJO cuando el pago del 303 '
+                    'se lleva más caja de la que queda ese mes')
         rej.add('iva_liq', rot='Pago del IVA (modelo 303)',
                 fmt=motor.FMT_EUR0, formulas=liq)
         # CRIT-01 — el sumando del IVA va GUARDADO. `iva_liq` vale `""` en los
@@ -3390,15 +3652,30 @@ class Plan(object):
         # payback DEL PROYECTO: inversión sin el IVA (que se recupera por el
         # 303) entre el flujo de caja libre ANTES del servicio de la deuda.
         # Si el negocio puede pagar la cuota lo dice el DSCR, no el payback.
+        # ⚠️ M2 / R22-CAF-09 / REF22-BAR-01 / R22-PAN-04 (2026-09-05). El
+        # payback publicado MEZCLABA DOS BASES: el año 1 iba con la caja REAL
+        # de la tabla mensual —inflada por el float del IVA (el crédito de la
+        # inversión hace que el año 1 no pague un euro por el 303) y por los
+        # 30 días de crédito del proveedor— y los años 2 y 3 con la base
+        # contable. Medio año de payback dependía de esa elección, siempre a
+        # favor: en el bar salía 1,9 cuando NINGUNA lectura coherente lo daba
+        # (2,0 / 2,1 / 2,3 según cómo se cerrase el círculo). Y el numerador
+        # ya venía limpio de IVA («se recupera por el 303»), así que el mismo
+        # IVA se contaba dos veces. Ahora las TRES anualidades van en base
+        # contable —resultado neto + amortización + intereses— y el flujo
+        # real del año 1 se queda como fila INFORMATIVA, que es lo que
+        # siempre debió ser.
         rej.add('fcf_1',
                 rot='Flujo de caja libre antes de la deuda, año 1',
                 fmt=motor.FMT_EUR0,
-                formulas={'B': (lambda R: '=' + R.c('flujo', 'N') + '+'
-                                + fin.r('int_1') + '+' + fin.r('cap_1')),
-                          'D': '="La suma de los doce FLUJO DEL MES de '
-                               'arriba, devolviéndole los intereses y el '
-                               'principal que se pagaron ese año: es lo que '
-                               'el negocio genera ANTES de atender al banco"'})
+                formulas={'B': '=' + pyg.r('neto') + '+' + pyg.r('cf_amort')
+                          + '+' + fin.r('int_1'),
+                          'D': '="Resultado neto más amortización (que no se '
+                               'paga) más los intereses de ese año: el '
+                               'principal no se resta porque este flujo es '
+                               'ANTES de la deuda. La MISMA base que los años '
+                               '2 y 3, para que el payback compare peras con '
+                               'peras"'})
         for i, clave in ((2, 'fcf_2'), (3, 'fcf_3')):
             col = ('B', 'C', 'D')[i - 1]
             rej.add(clave, rot='Flujo de caja libre antes de la deuda, año '
@@ -3412,14 +3689,18 @@ class Plan(object):
                                    'es ANTES de la deuda. Sin tabla mensual, '
                                    'es una estimación"'})
         rej.add('fcf_1_est',
-                rot='Contraste: resultado + amortización + intereses (año 1)',
+                rot='Informativo: flujo REAL de caja del año 1 (tabla '
+                    'mensual, antes de la deuda)',
                 fmt=motor.FMT_EUR0,
-                formulas={'B': '=' + pyg.r('neto') + '+' + pyg.r('cf_amort')
-                          + '+' + fin.r('int_1'),
-                          'D': '="La misma fórmula que los años 2 y 3, '
-                               'aplicada al año 1. La diferencia con la fila '
-                               'de arriba es el efecto del IVA y del desfase '
-                               'de cobros y pagos"'})
+                formulas={'B': (lambda R: '=' + R.c('flujo', 'N') + '+'
+                                + fin.r('int_1') + '+' + fin.r('cap_1')),
+                          'D': '="La suma de los doce FLUJO DEL MES de '
+                               'arriba, devolviéndole los intereses y el '
+                               'principal que se pagaron ese año. NO es la '
+                               'que usa el payback: lleva dentro el IVA que '
+                               'todavía no se ha liquidado y el crédito del '
+                               'proveedor, dos cosas que hay que devolver y '
+                               'que los años 2 y 3 no tienen"'})
         rej.add('inv_recup',
                 rot='Inversión a recuperar (sin el IVA, que se recupera por '
                     'el 303)',
@@ -3432,6 +3713,18 @@ class Plan(object):
                          'misma hoja lo compensa trimestre a trimestre). El '
                          'fondo de maniobra sí se recupera al cerrar, pero '
                          'hasta entonces está inmovilizado"'})
+        def _cascada(num):
+            """Payback a tres años sobre `num` (referencia o clave del num)."""
+            return (lambda R, n=num: '=IF(' + R.c('fcf_1') + '>=' + n
+                    + ',ROUND(' + n + '/' + R.c('fcf_1') + ',1),IF('
+                    + R.c('fcf_1') + '+' + R.c('fcf_2') + '>=' + n
+                    + ',ROUND(1+(' + n + '-' + R.c('fcf_1') + ')/'
+                    + R.c('fcf_2') + ',1),IF(' + R.c('fcf_1') + '+'
+                    + R.c('fcf_2') + '+' + R.c('fcf_3') + '>=' + n
+                    + ',ROUND(2+(' + n + '-' + R.c('fcf_1') + '-'
+                    + R.c('fcf_2') + ')/' + R.c('fcf_3') + ',1),'
+                    + '"Más de 3 años")))')
+
         rej.add('payback',
                 rot='Payback del proyecto (años), antes de la deuda',
                 # A1/B4 — la celda puede devolver el TEXTO «Más de 3 años»:
@@ -3440,22 +3733,28 @@ class Plan(object):
                 # de la fórmula para que se lea igual de bien.
                 fmt='General', bold=True,
                 formulas={
-                    'B': (lambda R: '=IF(' + R.c('fcf_1') + '>='
-                          + R.c('inv_recup') + ',ROUND(' + R.c('inv_recup')
-                          + '/' + R.c('fcf_1') + ',1),IF(' + R.c('fcf_1') + '+'
-                          + R.c('fcf_2') + '>=' + R.c('inv_recup')
-                          + ',ROUND(1+(' + R.c('inv_recup') + '-'
-                          + R.c('fcf_1') + ')/' + R.c('fcf_2') + ',1),IF('
-                          + R.c('fcf_1') + '+' + R.c('fcf_2') + '+'
-                          + R.c('fcf_3') + '>=' + R.c('inv_recup')
-                          + ',ROUND(2+(' + R.c('inv_recup') + '-'
-                          + R.c('fcf_1') + '-' + R.c('fcf_2') + ')/'
-                          + R.c('fcf_3') + ',1),"Más de 3 años")))'),
+                    'B': (lambda R: _cascada(R.c('inv_recup'))(R)),
                     'D': '="Mide cuánto tarda el negocio en devolver la '
                          'inversión con lo que genera ANTES de pagar al '
-                         'banco; si puedes pagar la cuota lo dice el DSCR de '
+                         'banco, con la MISMA base de flujo en los tres '
+                         'años; si puedes pagar la cuota lo dice el DSCR de '
                          'la hoja de Financiación. El Word cita esta celda, '
                          'no recalcula"'})
+        # M2 — el fondo de maniobra NO se consume: se recupera al cerrar, y
+        # mientras tanto alarga el plazo de un proyecto que sobre el activo
+        # que se compra ya está devuelto. Va como fila informativa, no como
+        # la cifra que se publica.
+        rej.add('payback_capex',
+                rot='Payback sobre el CAPEX, sin fondo de maniobra (años)',
+                fmt='General',
+                formulas={
+                    'B': (lambda R: _cascada(inv.r('capex'))(R)),
+                    'D': '="El mismo cálculo sobre lo que se COMPRA (obra, '
+                         'equipamiento, lanzamiento y constitución), sin el '
+                         'fondo de maniobra: ese dinero no se gasta, se '
+                         'inmoviliza y vuelve al cerrar el negocio. '
+                         'Informativo: el payback que se publica es el de '
+                         'arriba"'})
         self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
@@ -3793,30 +4092,61 @@ class Plan(object):
             # fuera A-β (hojas SIN numerar): se compone con el título REAL
             # de cada hoja, ya resuelto en `__init__` (`self.ws_<clave>`),
             # para que valga en los dos moldes.
-            '3. Sólo «' + self.ws_equilibrio.title + '» se deriva entera de '
-            'lo anterior. En las otras tres hojas sí hay celdas verdes que '
+            # ⚠️ M8 / R22-TAP-11 / R22-CAF-06 (2026-09-05). El punto 3
+            # afirmaba que la hoja de Punto de Equilibrio «se deriva ENTERA»
+            # cuando el motor 2.2 le puso una celda VERDE —el techo de
+            # rotaciones del local— de la que cuelga un semáforo: quien
+            # siguiera las instrucciones no la tocaría y compararía su plan
+            # contra un 3 que no es el suyo. La frase se compone según el
+            # molde, porque los moldes de mostrador (panadería, food truck)
+            # apagan el bloque y ahí la afirmación original SÍ es cierta.
+            ('3. En «' + self.ws_equilibrio.title + '» sólo se teclea el '
+             'techo de rotaciones que da tu local; todo lo demás se deriva '
+             'de lo anterior.'
+             if (self.dato('ROTACION', {}) or {}).get('activa', True)
+             else '3. Sólo «' + self.ws_equilibrio.title + '» se deriva '
+                  'entera de lo anterior.')
+            + ' En las otras tres hojas también hay celdas verdes que '
             'puedes tocar: el escenario pesimista y el optimista en «'
             + self.ws_escenarios.title + '», la estacionalidad y la rampa '
             'de arranque en «' + self.ws_tesoreria.title + '», y las '
             'cuatro fuentes alternativas de financiación en «'
             + self.ws_financiacion.title + '». Todo lo demás se calcula.',
-            # A3 — los TRES divisores, no uno: el libro ya sabe que una
-            # línea de venta puede tributar al 4 % (pan común).
+            # ⚠️ M19 / REF22-BAR-03 / FT22-09 (2026-09-05). Dos arreglos:
+            # (a) el divisor 1,04 se nombraba en los CINCO hermanos y sólo la
+            # panadería tiene una línea al tipo superreducido — en el bar es
+            # ruido que describe una línea de venta que no existe; ahora se
+            # menciona sólo si alguna línea del libro lo declara. (b) la
+            # bollería y la pastelería VENDIDAS PARA LLEVAR son una entrega
+            # de bienes y su 10 % sale del art. 91.Uno.1.1.º, no del
+            # 91.Uno.2.2.º, que es el de los SERVICIOS de hostelería: se
+            # citaba el artículo equivocado justo en el único supuesto en el
+            # que la mención aportaba algo.
             '4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin '
-            'IVA, divide por el tipo que le corresponda: entre 1,04 el pan '
-            'común y las harinas panificables (tipo superreducido, art. '
-            '91.Dos.1.1.º de la Ley 37/1992 del IVA); entre 1,10 todo el '
-            'consumo en el acto —comida y bebida, alcohol incluido— y la '
-            'bollería y la pastelería (tipo reducido, art. 91.Uno.2.2.º); y '
-            'entre 1,21 el tipo general, que en hostelería sólo alcanza a lo '
-            'que sale del local como entrega de bienes excluida del reducido: '
-            'el alcohol y los refrescos o zumos con azúcares añadidos para '
-            'llevar o a domicilio (la comida para llevar sigue al 10 %); el '
-            'libro lo aplica al alcohol del canal de delivery. El tipo de '
-            'cada línea de venta está en la columna «Tipo de IVA de la línea» '
-            'del P&L y de ahí salen los cobros, el IVA repercutido y el PVP '
-            'equivalente. El IVA de la inversión se adelanta y se recupera '
-            'con el modelo 303.',
+            'IVA, divide por el tipo que le corresponda: '
+            + ('entre 1,04 el pan común y las harinas panificables (tipo '
+               'superreducido, art. 91.Dos.1.1.º de la Ley 37/1992 del IVA); '
+               'entre 1,10 todo el consumo en el acto —comida y bebida, '
+               'alcohol incluido— (art. 91.Uno.2.2.º) y, cuando se venden '
+               'para llevar, los demás alimentos, bollería y pastelería '
+               'incluidas, que son productos alimenticios al tipo reducido '
+               'por el art. 91.Uno.1.1.º; '
+               if any(abs(t - 0.04) < 1e-9 for t in
+                      (getattr(self, 'tipos_especiales', None) or ()))
+               else 'entre 1,10 en sala (comida y bebida, alcohol incluido: '
+                    'art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando '
+                    'se venden para llevar, los alimentos —bollería y '
+                    'pastelería incluidas—, que son productos alimenticios '
+                    'al tipo reducido por el art. 91.Uno.1.1.º; ')
+            + 'y entre 1,21 el tipo general, que en hostelería sólo alcanza '
+            'a lo que sale del local como entrega de bienes excluida del '
+            'reducido: el alcohol y los refrescos o zumos con azúcares '
+            'añadidos para llevar o a domicilio (la comida para llevar sigue '
+            'al 10 %); el libro lo aplica al alcohol del canal de delivery. '
+            'El tipo de cada línea de venta está en la columna «Tipo de IVA '
+            'de la línea» del P&L y de ahí salen los cobros, el IVA '
+            'repercutido y el PVP equivalente. El IVA de la inversión se '
+            'adelanta y se recupera con el modelo 303.',
             '5. Si cambias la plantilla, el P&L la lee sola: el coste de '
             'personal sale de la hoja «Personal», no de una estimación '
             'aparte.',
@@ -3882,8 +4212,11 @@ class Plan(object):
                  motor.FMT_EUR0),
                 ('Resultado neto del año 1', '=' + pyg.r('neto'),
                  motor.FMT_EUR0),
-                ('Cubiertos/día para el punto de equilibrio',
-                 '=' + eq.r('cub_dia'), motor.FMT_DEC),
+                # M1 — la fila publicaba «el» punto de equilibrio y hay DOS:
+                # el rótulo dice cuál es (el contable, `cub_dia`).
+                ('Cubiertos/día para el punto de equilibrio CONTABLE (con la '
+                 'amortización dentro)', '=' + eq.r('cub_dia'),
+                 motor.FMT_DEC),
                 ('Payback del proyecto (años), antes de la deuda',
                  '=' + self.rej['tesoreria'].r('payback'), 'General')):
             motor.val(ws, letra + str(fila), rot)
@@ -3950,6 +4283,13 @@ class Plan(object):
         """Checklist de apertura: legal vigente y sin inventos (§2.10)."""
         reglas = self.dato('CHECKLIST', {}) or {}
         reemplazos = reglas.get('reemplazos', [])
+        # M5 — los patrones que NO encuentran celda en crudo se reintentan
+        # contra el texto con el saneado del §1 deshecho. El censo se hace
+        # una sola vez, sobre el libro entero, ANTES de tocar nada: así un
+        # reemplazo que ya funciona no puede cambiar de destino.
+        _textos0 = _textos_de(ws_libro)
+        _crudos = _casan_en_crudo(_textos0, reemplazos)
+        _claves = [motor.norm(pat) for pat, _n in reemplazos]
         altas = reglas.get('altas', [])
         suprimir = [motor.norm(s) for s in reglas.get('suprimir', [])]
         fases = reglas.get('fases', {})
@@ -3989,8 +4329,12 @@ class Plan(object):
                     cel = ws.cell(row=r, column=c)
                     if not isinstance(cel.value, str):
                         continue
-                    for patron, nuevo in reemplazos:
-                        if re.search(patron, cel.value, re.I):
+                    # M5 — el texto con el saneado del §1 deshecho
+                    _kv = clave_reemplazo(cel.value)
+                    for _i, (patron, nuevo) in enumerate(reemplazos):
+                        if re.search(patron, cel.value, re.I) \
+                                or (_i not in _crudos
+                                    and re.search(_claves[_i], _kv, re.I)):
                             if cel.value != nuevo:
                                 self.anota(ws.title + '!' + cel.coordinate
                                            + ': «' + cel.value[:48]
@@ -4033,8 +4377,22 @@ class Plan(object):
                     rx_fase_final=reglas.get('fase_final'),
                     fase_final_nueva=reglas.get('fase_final_nueva'),
                     col_ok=col_ok)
-        self.anota('Checklist: ' + str(tocados) + ' celdas corregidas y '
-                   + str(anadidos) + ' trámites nuevos (§2.10)')
+        # M5 / R22-TAP-07 — el gate que faltaba desde REF-09
+        no_entregados, muertos = auditar_reemplazos(ws_libro, reemplazos)
+        for patron, nuevo, celda in no_entregados:
+            self.anota('⚠️ FALLO Checklist: el reemplazo ' + repr(patron)
+                       + ' alcanza «' + str(celda)[:50] + '» y NO se aplicó: '
+                       'el libro se entrega SIN «' + nuevo[:60]
+                       + '» (M5 / R22-TAP-07)')
+        for patron, nuevo, _c in muertos:
+            self.anota('⚠️ Checklist: el reemplazo ' + repr(patron) + ' no '
+                       'llega a ninguna celda de este fichero (fila que no '
+                       'existe o que otro reemplazo anterior ya renombró): '
+                       'no se entrega «' + nuevo[:60] + '» (M5, aviso)')
+        self.anota('Checklist: ' + str(tocados) + ' celdas corregidas, '
+                   + str(anadidos) + ' trámites nuevos, '
+                   + str(len(no_entregados)) + ' reemplazos no entregados y '
+                   + str(len(muertos)) + ' patrones muertos (§2.10)')
         return tocados, anadidos
 
     def _altas_checklist(self, ws, cab, col_tarea, altas, cabecera=None,
@@ -4202,15 +4560,130 @@ class Plan(object):
                                lambda m: m.group(1) + str(primera), formula)
             nueva = Rule(type='expression', formula=[reanclada],
                          dxf=copy.copy(regla.dxf), stopIfTrue=regla.stopIfTrue)
+            # ⚠️ M18 / R22-TAP-14 / FT22-21 (2026-09-05). El rango
+            # terminaba en `fila`, que después de reescribir la cola de
+            # fases y el pie queda DOS o TRES filas por debajo del último
+            # trámite: cubría la fila de totales y una vacía. Hoy no pinta
+            # nada (ninguna tiene ✓ en la columna A), pero un ítem añadido
+            # ahí nacería con formato de «completado». Se recalcula desde la
+            # última fila de ítems REAL, la misma que usa el contador.
+            ultimo_item = primera - 1
+            for r in range(primera, ws.max_row + 1):
+                v = ws.cell(row=r, column=col_tarea).value
+                if isinstance(v, str) and v.strip() \
+                        and 'completad' not in motor.norm(v) \
+                        and not motor.RX_TOTAL.match(str(v)):
+                    ultimo_item = r
+            ultimo_item = max(ultimo_item, primera)
             _purgar_cf_area(ws, cab, ws.max_row)
             ws.conditional_formatting.add(
                 'A' + str(primera) + ':'
-                + get_column_letter(ws.max_column) + str(fila), nueva)
+                + get_column_letter(ws.max_column) + str(ultimo_item), nueva)
             self.anota(ws.title + ': resaltado de fila reanclado a A'
-                       + str(primera) + ' con la fórmula «' + reanclada
-                       + '» (RT-01)')
+                       + str(primera) + ':' + get_column_letter(ws.max_column)
+                       + str(ultimo_item) + ' con la fórmula «' + reanclada
+                       + '» (RT-01 · M18)')
             break
         return n
+
+
+# ==========================================================================
+# M5 / R22-TAP-07 — el §1 transversal mueve la portería del checklist
+# ==========================================================================
+#: ⚠️ (2026-09-05) Los `CHECKLIST['reemplazos']` de cada módulo de contenido
+#: están escritos contra el texto del fichero de PARTIDA, y `motor.aplicar()`
+#: reescribe ese texto ANTES de que corra `grupo_a.checklist()`: tildes
+#: (`bano maria` → `baño maría`), erratas (`Priorizarcexperiencia` →
+#: `Priorizar experiencia`), `EUR` → `€` (RX_EUR_TEXTO) y `capital social
+#: min 1` → `capital social mín. 1` (RX_CAPITAL_MIN). Medido en la refutación
+#: de la 2.2: CUATRO reemplazos muertos en tapas-bar y DOS en el
+#: bar-restaurante, todos SILENCIOSOS y con el dry-run en 13/13 verde.
+#:
+#: Arreglar los patrones uno a uno no basta —la próxima palabra que entre en
+#: `TILDES` mataría otro reemplazo sin avisar—, así que el motor DESHACE las
+#: transformaciones del §1 para comparar. La clave se usa sólo como SEGUNDA
+#: oportunidad y sólo para los patrones que no casan en crudo en ninguna
+#: celda: un reemplazo que ya funciona nunca cambia de destino por esto.
+_ERRATAS_INV = sorted(
+    [(motor.norm(bueno), motor.norm(malo)) for malo, bueno in motor.ERRATAS],
+    key=lambda kv: -len(kv[0]))
+
+
+def clave_reemplazo(texto):
+    """El texto de una celda, deshecho el saneado del §1 transversal (M5)."""
+    t = motor.norm(texto)
+    t = t.replace('\u20ac', 'eur')          # § RX_EUR_TEXTO
+    t = re.sub(r'\bmin\.', 'min', t)        # § RX_CAPITAL_MIN
+    for bueno, malo in _ERRATAS_INV:
+        if bueno in t:
+            t = t.replace(bueno, malo)
+    return t
+
+
+def _casan_en_crudo(textos, reemplazos):
+    """Índices de los patrones que ya encuentran celda sin ayuda."""
+    return set(i for i, (pat, _n) in enumerate(reemplazos)
+               if any(re.search(pat, v, re.I) for v in textos))
+
+
+def _textos_de(wb):
+    fuera = []
+    for ws in wb.worksheets:
+        if motor.norm(ws.title) in motor.HOJAS_MOTOR:
+            continue
+        for row in ws.iter_rows():
+            for c in row:
+                if isinstance(c.value, str) and c.value.strip():
+                    fuera.append(c.value)
+    return fuera
+
+
+def auditar_reemplazos(wb, reemplazos):
+    """El gate que faltaba desde REF-09 (M5 / R22-TAP-07).
+
+    Devuelve `(no_entregados, muertos)` sobre el libro YA procesado:
+
+    * **no_entregados** — el texto nuevo NO está en el libro y, sin embargo,
+      hay una celda a la que el patrón llega (en crudo o deshaciendo el §1) y
+      que ningún reemplazo anterior le había ganado. Es el fallo de verdad:
+      el comprador recibe el entregable SIN la corrección. Cuenta como fallo
+      del dry-run.
+    * **muertos** — el texto nuevo no está y el patrón no llega a ninguna
+      celda ni deshaciendo el §1: el módulo declara una corrección para una
+      fila que este fichero no tiene (o que otro reemplazo ya renombró). No
+      puede estropear nada, así que se AVISA y no se tumba la tanda.
+
+    El reparto por SOMBRA importa: el bar-restaurante declara dos veces
+    `^Alta en el IAE` (la segunda es una redacción posterior de la misma
+    fila) y sin la exención la segunda parecería un fallo.
+    """
+    reemplazos = list(reemplazos or [])
+    textos = _textos_de(wb)
+    presentes = set(textos)
+    crudos = _casan_en_crudo(textos, reemplazos)
+    claves = [motor.norm(pat) for pat, _n in reemplazos]
+    # ganador de cada celda y patrones que también la alcanzaban
+    alcanza, gana = {}, {}
+    for v in textos:
+        kv = clave_reemplazo(v)
+        for i, (pat, _n) in enumerate(reemplazos):
+            if re.search(pat, v, re.I) or (i not in crudos
+                                           and re.search(claves[i], kv,
+                                                         re.I)):
+                alcanza.setdefault(i, []).append(v)
+                if v not in gana:
+                    gana[v] = i
+    no_entregados, muertos = [], []
+    for i, (pat, nue) in enumerate(reemplazos):
+        if nue in presentes:
+            continue
+        celdas = alcanza.get(i) or []
+        propias = [v for v in celdas if gana.get(v) == i]
+        if propias:
+            no_entregados.append((pat, nue, propias[0]))
+        else:
+            muertos.append((pat, nue, celdas[0] if celdas else None))
+    return no_entregados, muertos
 
 
 # ==========================================================================
@@ -4227,15 +4700,38 @@ def ficheros(dets, contenido=None):
     return fuera
 
 
+def _titular(wb, det, plan, cambios):
+    """M11 / R22-TAP-16 / FT22-05 — el `dc:title` de docProps.
+
+    Se heredaba el A1/A3 de la hoja de Instrucciones de la v1.1 («RATIOS
+    REFERENCIA — TAPAS BAR / GASTROBAR ESPANA 2026 · …»): describe una hoja
+    que en la 2.2 ya no se llama así y va SIN eñe, porque el §1.7 acentúa
+    celdas y no metadatos. Se compone desde el CONCEPTO del módulo de
+    contenido y se pasa por el mismo saneado de tildes. `motor.metadatos`,
+    que corre después en `cerrar()`, le añade el «· vX.Y».
+    """
+    familia = ('Checklist de apertura' if det['tipo'] == 'checklist'
+               else 'Plan financiero')
+    base = motor.corregir_texto(familia + ' — ' + str(plan.concepto))
+    viejo = wb.properties.title
+    wb.properties.title = base
+    wb.properties.subject = base
+    cambios.append('docProps title: «' + str(viejo)[:70] + '» → «' + base
+                   + ' · v' + motor.VERSION + '» (M11)')
+    return base
+
+
 def post(wb, fname, det, pid, params, cambios, contenido, carpeta=None):
     """§2 completo, DESPUÉS del §1 transversal y ANTES del cierre del motor."""
     if det['tipo'] == 'checklist':
         plan = Plan(wb, det, pid, params, contenido, cambios)
+        _titular(wb, det, plan, cambios)
         plan.checklist(wb)
         return
     if det['molde'] not in MOLDES:
         return
     plan = Plan(wb, det, pid, params, contenido, cambios)
+    _titular(wb, det, plan, cambios)
     # ORDEN: los supuestos primero (todo cuelga de ellos) y las hojas nuevas
     # ANTES del P&L, porque el P&L lee los intereses de `Financiación` y el
     # fondo de maniobra sale de los costes fijos del P&L. Las rejillas se
@@ -4260,6 +4756,11 @@ def post(wb, fname, det, pid, params, cambios, contenido, carpeta=None):
         escribir(rej)
     plan.instrucciones()          # cita celdas de todas las anteriores
     plan.supuestos_calculadas()   # necesita las coordenadas del P&L
+    # M9 — la ÚLTIMA pasada: traduce el vocabulario del driver en todo lo que
+    # este grupo acaba de escribir. Va después de todo porque los rótulos se
+    # componen en varias hojas y algunas se citan entre sí por coordenada,
+    # nunca por texto.
+    plan.vocabulario()
     recalibrado = plan.dato('RECALIBRADO', []) or []
     for entrada in recalibrado:
         cambios.append('RECALIBRADO · ' + ' · '.join(str(x) for x in entrada))
@@ -4391,9 +4892,12 @@ def demos(carpeta, demos_dir, pid, origen=None):
     wb, mapa = _mapa(path)
     nombres = dict((motor.norm(ws.title), ws.title) for ws in wb.worksheets)
 
+    _voc = {}          # lo rellena el bloque M9, más abajo (ver comentario)
+
     def R(hoja_, rotulo, col='B'):
         clave = motor.norm(hoja_)
-        fila = mapa.get(clave, {}).get(motor.norm(rotulo))
+        rot = traducir(rotulo, _voc.get('rx'), _voc.get('mapa') or {})
+        fila = mapa.get(clave, {}).get(motor.norm(rot))
         if fila is None:
             return None
         return "'" + nombres[clave] + "'!" + col + str(fila)
@@ -4411,9 +4915,42 @@ def demos(carpeta, demos_dir, pid, origen=None):
     _rot_ratio = dict((u[0], u[1])
                       for u in (getattr(_cont, 'UMBRALES', None) or ())
                       if len(u) > 1 and u[1])
+    # ⚠️ M9 — las demostraciones localizan las filas POR RÓTULO, y el
+    # vocabulario del oficio acaba de renombrarlas («Cubiertos/día» →
+    # «Transacciones/día»). Sin traducir el rótulo que se busca, `demos()`
+    # canta «no se localizan las filas be_dia, cubiertos» y tumba el dry-run
+    # de los tres hermanos que lo usan. Medido en la panadería, 2026-09-05.
+    _voc['rx'], _voc['mapa'] = compilar_vocabulario(
+        getattr(_cont, 'VOCABULARIO', None) if _cont is not None else None)
 
     def RATIO(clave, defecto):
         return _rot_ratio.get(clave, defecto)
+
+    # ⚠️ M5 / R22-TAP-07 — se mide sobre el CHECKLIST GUARDADO, no sobre el
+    # workbook en memoria: es la única forma de que el gate vea lo mismo que
+    # el comprador. Un reemplazo que no casa no rompe nada y no cambia ningún
+    # contador; desde aquí, tumba el dry-run.
+    _ck = None
+    for _n in sorted(os.listdir(carpeta)):
+        if _n.startswith('checklist') and _n.endswith('.xlsx'):
+            _ck = os.path.join(carpeta, _n)
+            break
+    _reem = ((getattr(_cont, 'CHECKLIST', None) or {}).get('reemplazos')
+             if _cont is not None else None)
+    if _ck and _reem:
+        _no, _mu = auditar_reemplazos(_px0.load_workbook(_ck), _reem)
+        res['checklist_reemplazos'] = {
+            'fichero': os.path.basename(_ck), 'declarados': len(_reem),
+            'no_entregados': [{'patron': p_, 'texto_que_falta': n_,
+                               'celda_alcanzada': c_} for p_, n_, c_ in _no],
+            'patrones_muertos': [{'patron': p_, 'texto_que_falta': n_}
+                                 for p_, n_, _c in _mu]}
+        for p_, n_, c_ in _no:
+            res['fallos'].append(
+                'checklist: el reemplazo ' + repr(p_) + ' de '
+                + os.path.basename(_ck) + ' alcanza la celda «'
+                + str(c_)[:60] + '» y NO se aplicó: el entregable sale SIN '
+                '«' + n_[:80] + '» (M5 / R22-TAP-07)')
 
     sup = [k for k in nombres if k.startswith('0. supuestos')]
     sup = nombres[sup[0]] if sup else motor.HOJA_SUPUESTOS

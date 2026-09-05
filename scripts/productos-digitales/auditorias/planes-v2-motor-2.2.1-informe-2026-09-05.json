@@ -1,0 +1,213 @@
+{
+ "parche": "2.2.1",
+ "fecha": "2026-09-05",
+ "motor_version": "2.2 (VERSION no se toca: el parche corrige la 2.2, no la sustituye)",
+ "hechos": [
+  {
+   "item": "M13 · Personal!A2 con subtítulo por fórmula",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1329-1372",
+   "como": "Se conserva el reemplazo del subtítulo escrito a mano y, si NO hay ninguno por encima de la cabecera y la fila 2 está vacía, se ESCRIBE en A2 la misma fórmula (pagas + SS desde Supuestos). Acotado a la fila 2 vacía para no pisar el subtítulo propio del bar («Cuadro de Personal y Coste Laboral»), que en el primer intento sí se pisó. Verificado: Personal!A2 = «Convenio Hostelería — 14 pagas + SS 33 %» en los 5."
+  },
+  {
+   "item": "M14 · 'PyG'!E9 (el último «100 %» falso)",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2217-2225",
+   "como": "El literal ('E','=1') pasa a =IFERROR(IF(<B ingresos>=\"\",\"\",1),\"\"). Bar: '2. P&L 3 Años'!E10 = '1' → '=IFERROR(IF(B10=\"\",\"\",1),\"\")'."
+  },
+  {
+   "item": "M7 · «—» → «☐» en la leyenda del checklist",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:162-172, 2197-2204, 2470-2474",
+   "como": "Cambiar la constante no bastaba: la hoja ya existe en los 5 checklists publicados y `asegurar_instrucciones` sólo la reescribía al CREARLA. Se añade `linea_texto(ws, LEYENDA_OK, RX_LEYENDA_OK)` en la rama de hoja existente. Verificado: Instrucciones!A5 con ☐ en los 5."
+  },
+  {
+   "item": "M6 · nota del SMI sin número de Real Decreto",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:202-217",
+   "como": "'0. Supuestos'!C22 = «SMI 2026: 17.094 € al año (1.221 €/mes en 14 pagas), suelo legal por jornada completa. Comprueba el importe vigente si presentas el plan en otro ejercicio». Los dos números se COMPONEN desde SMI_ANUAL y PAGAS (17.094/14 = 1.221 exactos), no se teclean."
+  },
+  {
+   "item": "M16 · nota de las 46 semanas",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1491-1503",
+   "como": "J = «46 semanas: 52 menos las vacaciones (30 días naturales, art. 38 ET), los festivos y las ausencias medias». El valor 46 no cambia (es el denominador de toda la cobertura)."
+  },
+  {
+   "item": "M15 · notaría y gestoría sí llevan IVA",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1996-2015",
+   "como": "Se añade a la nota de la fila del IVA soportado: «Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible)». La clasificación Sí/No de la fila NO se toca. Bar: '1. Inversión Inicial'!D50."
+  },
+  {
+   "item": "M17 · refrescos azucarados en la compra",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:239-247",
+   "como": "'0. Supuestos'!C40 añade «El libro manda al general sólo el alcohol: si compras refrescos o zumos con azúcares añadidos, su factura también va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)»."
+  },
+  {
+   "item": "M12 · validación decimal ≥ 0 para personas_franja / personas_produccion",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:794-798, 823-899",
+   "como": "Una celda cuyo formato PINTA decimales (#,##0.0) no puede llevar DV de entero: se desvía a `decimales` (decimal ≥ 0) antes de la rama de recuentos. Gate ejecutado sobre los 10 xlsx: 0 celdas con DV `whole` y valor no entero."
+  },
+  {
+   "item": "M11 · docProps title",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4703-4726 + post()",
+   "como": "«Plan financiero — <CONCEPTO>» / «Checklist de apertura — <CONCEPTO>», pasado por motor.corregir_texto; motor.metadatos añade «· v2.2» en cerrar(). Verificado en los 10 ficheros (ya no hereda «RATIOS REFERENCIA — … ESPANA 2026»)."
+  },
+  {
+   "item": "M4 · enumeración de imprevistos desde las filas reales",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:911-936, 1832-1866",
+   "como": "La lista fija («…extracción, decoración y rotulación») se compone con los rótulos de las filas que entran en la fórmula. Cafetería: ya no nombra «extracción» (que no existe) y sí «Fontanería + evacuación»; panadería: ya no nombra «decoración». Cierra también REF22-BAR-06."
+  },
+  {
+   "item": "M8 · Instrucciones!A7 con ROTACION activa",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4095-4113",
+   "como": "Con ROTACION['activa'] → «3. En «<hoja>» sólo se teclea el techo de rotaciones que da tu local; todo lo demás se deriva…». Con el bloque apagado (panadería, food truck) se mantiene la frase original, que ahí sí es cierta."
+  },
+  {
+   "item": "M19 · el divisor 1,04 sólo si alguna línea va al 4 %",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2235-2242, 4115-4155",
+   "como": "Se censan los tipos que declaran las líneas de venta. Sin 4 % (bar, tapas, cafetería, food truck): «entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º)…». Además se corrige la cita: la bollería/pastelería PARA LLEVAR es entrega de bienes (art. 91.Uno.1.1.º), no 2.2.º. Cierra REF22-BAR-03 y FT22-09."
+  },
+  {
+   "item": "M5 · el §1 transversal mataba reemplazos del checklist",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4591-4680, 4318-4345, 4380-4392, 4929-4956; motor.py:1794-1801, 1856-1862; contenido_plan_negocio_tapas_bar/a.py:775-796",
+   "como": "Causa medida: `motor.aplicar()` acentúa, corrige ERRATAS, pasa EUR→€ y «capital social min 1»→«mín. 1» ANTES de `grupo_a.checklist()`, así que 4 patrones del tapas-bar y 2 del bar dejaban de casar EN SILENCIO. (a) Los patrones que no casan en crudo en ninguna celda se reintentan contra el texto con ese saneado DESHECHO. (b) «baño maría» entra en la ortografía por CONTEXTO (RX_BANO_MARIA), nunca «maría» suelta. (c) Los 4 patrones del tapas-bar se reescriben con el acento opcional. (d) Gate: `auditar_reemplazos` separa «no entregados» (el patrón alcanza una celda propia y no se aplicó → FALLO del dry-run) de «patrones muertos» (no alcanzan ninguna celda, o los gana otro reemplazo anterior → AVISO). Medido: tapas-bar 15→19 reemplazos aplicados, bar 0→2, 0 no entregados en los 5."
+  },
+  {
+   "item": "M18 · sqref del resaltado del checklist",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:2423-2460, 2493; grupo_a.py:4563-4585",
+   "como": "En `_altas_checklist` el rango se ancla al último ítem real; pero esa función SALE ANTES cuando las altas ya están puestas (2.ª pasada y monolítico C1 del bar), así que el recorte definitivo se hace en `checklist_ok_y_contador`, que corre siempre y ya conoce r0/r1. Verificado en los 5 checklists (25 hojas): 0 desviaciones; bar A4:F77→A4:F74, tapas F1 A5:E18→A5:E15, F2 …E20→E17, F4 …E19→E16, F5 …E21→E18; food truck F1/F2/F4/F5 igual."
+  },
+  {
+   "item": "M1 · interpretación del punto de equilibrio",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2948-2978, 4045-4050",
+   "como": "Nombra los dos umbrales por lo que son y explica el signo: «…necesitas N1 <driver> al día durante los D días que abres para no perder dinero (equilibrio contable, con la amortización dentro), y N2 para que la caja aguante (equilibrio de caja: sin la amortización, que no se paga, y con la cuota del préstamo del año»&IF(principal=0,\"; este año sólo intereses, porque el préstamo está en carencia\",\"\")&\")…». Instrucciones publica «…para el punto de equilibrio CONTABLE (con la amortización dentro)». Bar: 66 contable / 63 caja."
+  },
+  {
+   "item": "M2 · payback con UNA sola base",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3655-3760",
+   "como": "`fcf_1` pasa a la base CONTABLE (neto + amortización + intereses), la misma de los años 2 y 3; el flujo real de la tabla mensual baja a fila informativa («Informativo: flujo REAL de caja del año 1…») con nota de por qué no se usa. Fila nueva «Payback sobre el CAPEX, sin fondo de maniobra (años)» con su nota. Instrucciones sigue leyendo el payback publicado. Bar 1,9 → 2,3 años (el valor que predecía REF22-BAR-01); CAPEX 1,6."
+  },
+  {
+   "item": "M3 · escenarios comparables",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3168-3215; motor.py:1399-1406",
+   "como": "Las TRES columnas usan el método estimado y se añade debajo «Saldo real del mes 12 de la hoja de Tesorería (sólo realista)» con su nota. Ninguna otra fila se mueve (la nueva va la última del bloque) y `_limpiar_area` purga CF/DV del área en cada pasada. Cafetería realista: 100.737,13 € (tesorería) → 73.955,57 € estimado, exactamente lo que calculaba R22-CAF-10."
+  },
+  {
+   "item": "M9 · VOCABULARIO por oficio",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:891-910, 1001-1065, 4759-4763; motor.py:771-780, 1375-1383",
+   "como": "Pasada final sobre las 9 hojas que construye grupo_a: palabras completas, respeta MAYÚSCULAS y mayúscula inicial, no toca nombres de hoja y en las fórmulas sólo traduce lo que va entre comillas DOBLES (las referencias de hoja van entre simples). Panadería: transacción/transacciones + sala→mostrador (con 4 claves de varias palabras para la concordancia de género: «Cubiertos necesarios»→«Transacciones necesarias»); cafetería y food truck: cliente/clientes. Verificado: 0 restos de «cubierto» en panadería y cafetería; el único «cubierta» del food truck es el adjetivo de «plaza cubierta», correcto. `demos()` traduce el rótulo antes de buscar la fila (sin eso cantaba «no se localizan las filas be_dia, cubiertos»)."
+  },
+  {
+   "item": "M10 · IVA soportado de la compra de comida sobreescribible",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2363-2400, 2185-2205",
+   "como": "Clave `IVA_COMPRAS = {'comida': fórmula|número, 'nota': …}`. Con número → celda VERDE con ese tipo; con fórmula, admite {peso_especial} (el input verde de la línea de venta partida) y {iva_reducido}. Panadería: '=H10*0.04+(1-H10)*Supuestos!B39' → 5,44 % (0,76×4 % + 0,24×10 %), sin duplicar el 76 %. Efecto medido: IVA soportado del año 1 de 22.205,03 € a 18.450,96 €. La parte (a) del hallazgo (tipo por fila en Inversión) queda DIFERIDA, como manda el encargo."
+  },
+  {
+   "item": "M20 · REF22-BAR-05 · rótulo del input de imprevistos",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:251-256, 3446-3465, 3562-3572",
+   "como": "'0. Supuestos'!A55 = «Imprevistos sobre las partidas de OBRA del bloque de local (%)» (antes prometía el bloque entero, que es lo que A8 dejó de hacer)."
+  },
+  {
+   "item": "M20 · REF22-BAR-02 · nota O11 de la Tesorería",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:251-256, 3446-3465, 3562-3572",
+   "como": "«…las primeras compras se pagan ya en el año siguiente: la columna «Año» de esta fila recoge N mensualidades de compra…», con N = MAX(0,12-ROUNDUP(días_pago/30,0)) por fórmula. Con 30 días, 11."
+  },
+  {
+   "item": "M20 · REF22-BAR-07 · la regla roja del pago del 303",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:251-256, 3446-3465, 3562-3572",
+   "como": "No se cambia el criterio (avisa antes de quedarse en negativo, que es lo útil): se DOCUMENTA en la nota de la fila — «La celda se pinta en ROJO cuando el pago del 303 se lleva más caja de la que queda ese mes»."
+  },
+  {
+   "item": "FT22-16 · el payback y el IVA de la inversión",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3455-3480",
+   "como": "Queda cerrado de rebote por M2: con el año 1 en base contable, el numerador (inversión sin IVA) y los tres flujos (sin IVA) están en la misma base y el mismo IVA ya no se cuenta dos veces."
+  }
+ ],
+ "no_hechos": [
+  {
+   "item": "R22-PAN-05 (a) · tipo de IVA por FILA en la hoja de Inversión",
+   "motivo": "DIFERIDO por el encargo."
+  },
+  {
+   "item": "R22-PAN-10 · cobertura de tienda y obrador por separado",
+   "motivo": "DIFERIDO por el encargo."
+  },
+  {
+   "item": "REF22-BAR-08 · la tabla «QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1» va dos versiones por detrás",
+   "motivo": "Las filas salen de RECALIBRADO, que es CONTENIDO y vive en contenido_plan_negocio_bar_restaurante/a.py — módulo que la regla dura 1 prohíbe tocar. Añadirlas es una decisión de contenido (qué se le cuenta al cliente que cambia al bajarse la 2.2), no de motor."
+  },
+  {
+   "item": "REF22-BAR-04 · cifras equivocadas del informe del parche 2.2 (bar_diff → A8)",
+   "motivo": "El error está en scripts/productos-digitales/auditorias/planes-v2-motor-2.2-informe-2026-09-05.json, que no está en la lista de ficheros editables. Verificado contra el libro y confirmado el hallazgo: '1. Inversión Inicial'!B53 va de 43.500 € (=B8+B9+B10+B20+B26) a 47.150 € (=B8+B9+B10+B13+B20+B26), NO de 44.500 a 48.150; el delta +3.650 € sí es correcto y cuadra con la amortización 8.396 → 8.761 €."
+  },
+  {
+   "item": "FT22-14 · fila vacía en '0. Supuestos'!A50 cuando ROTACION está apagado",
+   "motivo": "Quitarla obliga a mover celdas de '0. Supuestos', que la regla dura 3 prohíbe expresamente."
+  },
+  {
+   "item": "FT22-17 · desplegable Sí/No en E21:E23 de la hoja de Inversión",
+   "motivo": "Es una decisión DELIBERADA y documentada del motor (B5 / R-18, grupo_a.py:1740-1746): esas filas son CALCULADAS y su celda de marca está BLOQUEADA; colgarles un desplegable enseña una lista que Excel se niega a aplicar."
+  },
+  {
+   "item": "R22-PAN-11 · «Aforo del local (plazas sentadas + barra)» en la panadería",
+   "motivo": "No está en el alcance de M9, que fija los términos a traducir (transacción/transacciones, mostrador). Cambiar «aforo» y «barra» toca rótulos de los que cuelga el bloque de rotaciones, apagado en ese molde. Se reporta para la 2.2.2."
+  }
+ ],
+ "bar_diff": {
+  "vs_publicado": {
+   "F": 118,
+   "V": 147
+  },
+  "vs_22": {
+   "F": 37,
+   "V": 2
+  },
+  "celdas_221": [
+   "0. Supuestos!C22",
+   "0. Supuestos!A55",
+   "0. Supuestos!C40",
+   "1. Inversión Inicial!D50",
+   "1. Inversión Inicial!D13",
+   "2. P&L 3 Años!E10",
+   "3. Punto Equilibrio!A29",
+   "4. Escenarios!A27",
+   "4. Escenarios!C27",
+   "4. Escenarios!A28",
+   "4. Escenarios!A31",
+   "4. Escenarios!E27",
+   "4. Escenarios!A26",
+   "4. Escenarios!A30",
+   "4. Escenarios!C26",
+   "4. Escenarios!A29",
+   "4. Escenarios!E26",
+   "5. Personal!J21",
+   "Instrucciones!A8",
+   "Instrucciones!A7",
+   "Instrucciones!A29",
+   "6. Tesorería 12 meses!B26",
+   "6. Tesorería 12 meses!A32",
+   "6. Tesorería 12 meses!B29",
+   "6. Tesorería 12 meses!A34",
+   "6. Tesorería 12 meses!A33",
+   "6. Tesorería 12 meses!D32",
+   "6. Tesorería 12 meses!O11",
+   "6. Tesorería 12 meses!D26",
+   "6. Tesorería 12 meses!A29",
+   "6. Tesorería 12 meses!O20",
+   "6. Tesorería 12 meses!B32",
+   "6. Tesorería 12 meses!D31",
+   "6. Tesorería 12 meses!D29",
+   "Checklist Apertura!F35",
+   "Checklist Apertura!F14",
+   "Instrucciones!A5",
+   "Instrucciones!B30",
+   "6. Tesorería 12 meses!B31"
+  ],
+  "resto_22": 226
+ },
+ "ficheros_editados": [
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py",
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py",
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_tapas_bar/a.py (sólo CHECKLIST['reemplazos'])",
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_panaderia/a.py (sólo VOCABULARIO e IVA_COMPRAS)",
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_cafeteria/a.py (sólo VOCABULARIO)",
+  "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_food_truck/a.py (sólo VOCABULARIO)"
+ ],
+ "main_py": "NO se ha tocado: los dos gates nuevos (M5 y M12) se enganchan donde ya había sitio — el de reemplazos en grupo_a.demos()['fallos'], que main ya recoge, y el de la DV dentro de motor.validaciones. Así «gates medibles a 0» sigue siendo 13/13 y no 14/14."
+}
