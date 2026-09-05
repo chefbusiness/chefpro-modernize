@@ -82,9 +82,14 @@ Efecto medido en el caso de ejemplo (todas las celdas de valor cambiadas —37�
 
 ## 5. Pendientes de John (no bloquean)
 
-1. **Informe del buscador del hub**: `ADMIN_PASSWORD='…' python3 scripts/productos-digitales/buscador-report.py --days 7`.
-   La contraseña es secreta en Netlify y el CLI no la devuelve; hace falta que la pegue John (deberían aparecer las 3
-   búsquedas de prueba de la madrugada; si sale 0, Blobs no está habilitado en el site).
+1. **Informe del buscador del hub — SE REVISA EL 6-SEP (John, 5-sep 13:15: «déjalo anotado y lo revisamos mañana»).**
+   La contraseña es la de administrador de aichef.pro (la misma de `aichef.pro/admin/generar-acceso`): variable
+   `ADMIN_PASSWORD` del site en Netlify → Site configuration → Environment variables → «Reveal». Está marcada como secreta,
+   así que el CLI devuelve asteriscos y Claude no puede leerla. John la lanza él mismo desde el chat, con el prefijo `!`:
+   `! ADMIN_PASSWORD='la_contraseña' python3 scripts/productos-digitales/buscador-report.py --days 7`
+   Deben aparecer las 3 búsquedas de prueba de la madrugada («prueba buscador claude», «prueba blobs uno/dos»); si sale
+   0, Blobs no está habilitado en el site → panel de Netlify → Blobs. Ya comprobado hoy: sin la contraseña real el
+   endpoint responde 401 (está protegido, como debe).
 2. **Compra de prueba del Manual del Manager** (o `aichef.pro/admin/generar-acceso`); el mailing sigue programado para el
    lunes 7-sep 10:00.
 3. Decisión sobre la numeración de los hermanos (arriba) y sobre el kit de catering.
