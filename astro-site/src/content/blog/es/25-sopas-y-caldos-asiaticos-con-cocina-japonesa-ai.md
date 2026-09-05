@@ -2,7 +2,7 @@
 title: "25 Sopas y Caldos Asiáticos con Cocina Japonesa AI"
 description: "La gastronomía japonesa ha conquistado paladares en todo el mundo gracias a su capacidad para transformar ingredientes simples en experiencias culinarias…"
 pubDate: 2026-01-14
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/sopas-caldos-japoneses-con-ai-4.jpeg
 imageAlt: "25 Sopas y Caldos Japoneses con IA | Técnicas de Caldos Profundos"
@@ -850,7 +850,7 @@ wpId: 2147
 <h3 style="color: #ffd700; margin: 0 0 20px 0; font-size: 26px;">💼 Planes AI Chef Pro para Profesionales</h3>
 <p style="color: #ffffff; margin: 0 0 25px 0; font-size: 16px; line-height: 1.6;">Elige el plan que mejor se adapte a las necesidades de tu cocina profesional</p>
 <div style="margin-bottom: 25px;">
-<p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Miembro (Gratis)</strong> &#8211; Ideal para probar las funcionalidades básicas</p>
+<p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Miembro (10 €/mes)</strong> &#8211; 10.000 créditos al mes para probar la plataforma sin permanencia</p>
 <p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Pro (10€/mes)</strong> &#8211; Para chefs individuales o pequeños establecimientos</p>
 <p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Premium (15€/mes)</strong> &#8211; Para cocinas más activas con uso frecuente</p>
 <p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Premium Pro (25€/mes)</strong> &#8211; Desarrollo, liderazgo y creación de alto volumen</p>
@@ -1183,7 +1183,7 @@ Este ramen rinde homenaje a las tradiciones de Hakata, donde los puestos calleje
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">probar AI Chef Pro gratuitamente</a> y descubrir cómo la inteligencia artificial puede transformar tu aproximación a la cocina japonesa profesional. Y si buscas una guía personalizada para implementar estas herramientas en tu establecimiento, considera nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">mentoría online especializada</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">probar AI Chef Pro desde 10 €</a> y descubrir cómo la inteligencia artificial puede transformar tu aproximación a la cocina japonesa profesional. Y si buscas una guía personalizada para implementar estas herramientas en tu establecimiento, considera nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">mentoría online especializada</a>.</p>
 
 
 

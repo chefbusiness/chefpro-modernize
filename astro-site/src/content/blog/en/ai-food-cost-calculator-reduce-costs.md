@@ -2,7 +2,7 @@
 title: "AI Food Cost Calculator: Reduce Restaurant Food Costs by 20%"
 description: "AI Food Cost Calculator: Reduce Restaurant Food Costs by 20% By Chef John Guerrero March 3, 2026 10 min read Modern chefs are using AI to revolutionize…"
 pubDate: 2026-03-03
-modDate: 2026-08-15
+modDate: 2026-09-05
 category: ai-chef-pro
 lang: en
 wpId: 3239
@@ -149,7 +149,7 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <li>✅ Calculate your full menu with AI</li>
 <li>✅ See your actual food costs in minutes</li>
 </ul>
-<p>                <a href="https://aichef.pro/en" class="cta-button primary" target="_blank" rel="noopener">Try Food Cost Calculator Free →</a>                </p>
+<p>                <a href="https://aichef.pro/en/food-cost-calculator-restaurant" class="cta-button primary" target="_blank" rel="noopener">Try Food Cost Calculator Free →</a>                </p>
 <p class="cta-note">Join 2,500+ restaurants already saving with AI Chef Pro</p>
 </p></div>
 </section>

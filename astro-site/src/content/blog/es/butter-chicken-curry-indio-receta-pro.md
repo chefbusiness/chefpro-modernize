@@ -2,7 +2,7 @@
 title: "Butter Chicken Curry Indio: Receta Pro con Tadka de Especias"
 description: "Auténtico butter chicken indio: marinada de yogur, tadka de especias y salsa cremosa. Técnica Pro para currys perfectos."
 pubDate: 2026-03-31
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/butter-chicken-curry.jpg
 imageAlt: "Butter Chicken Curry Indio: Receta Pro con Tadka de Especias"
@@ -107,4 +107,4 @@ wpId: 3304
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Especias y Currys Pro</h3>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=butter-chicken-curry-indio-receta-pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=butter-chicken-curry-indio-receta-pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR AI CHEF MIEMBRO →</a> </div>

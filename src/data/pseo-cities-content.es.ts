@@ -101,8 +101,8 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryProductLabel: 'Guía Completa Cómo Montar un Restaurante (€85)',
     primaryCtaTitle: 'Ahorra 6 Meses de Planificación con la Guía Profesional',
     primaryCtaBody: 'La guía completa Cómo Montar un Restaurante incluye 20+ entregables: plan de negocio editable, escandallos por categoría, plan de inversión CAPEX, P&L mensual, plantillas APPCC, marco regulatorio España + LATAM. Todo lo que necesitas para abrir tu restaurante en {city} con cifras reales y procesos validados por consultores con 15+ años de experiencia.',
-    saasCtaTitle: 'O Empieza Gratis con AI Chef Pro',
-    saasCtaBody: 'Suscripción mensual con todas las herramientas IA para escandallar, generar cartas, controlar APPCC, calcular brigadas y +30 agentes IA específicos para restauración. Prueba gratis sin tarjeta.',
+    saasCtaTitle: 'O Empieza desde 10 €/mes con AI Chef Pro',
+    saasCtaBody: 'Suscripción mensual con todas las herramientas IA para escandallar, generar cartas, controlar APPCC, calcular brigadas y +30 agentes IA específicos para restauración. Prueba AI Chef Pro desde 10 €: 10.000 créditos al mes.',
     faqs: [
       {
         q: '¿Cuánto cuesta realmente abrir un restaurante en {city}?',
@@ -192,7 +192,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     metaDescription: 'Análisis del mejor software de gestión de restaurantes para {city}: TPV, escandallos, APPCC, inventario, IA. Precios, integraciones y por qué AI Chef Pro lidera en {country}.',
     keywords: 'software restaurante {city}, software gestión restaurante {city}, programa restaurante {city}, software TPV {city}, agente IA gestión restaurante {city}',
     h1Template: 'Software de Gestión para Restaurantes en {city}: Mejor Opción 2026',
-    heroSubtitle: 'Comparativa real de plataformas adaptadas a la regulación de {country}: APPCC digital, escandallos, IA generativa para cartas, control de inventario y gestión de personal. Prueba gratis sin tarjeta.',
+    heroSubtitle: 'Comparativa real de plataformas adaptadas a la regulación de {country}: APPCC digital, escandallos, IA generativa para cartas, control de inventario y gestión de personal. Prueba AI Chef Pro desde 10 €: 10.000 créditos al mes.',
     heroBadge: 'Comparativa Verificada 2026',
     introTitle: 'Por Qué tu Restaurante en {city} Necesita Software Especializado',
     introBody: 'El restaurante medio en {city} pierde entre 8 y 15 horas semanales en tareas administrativas que podrían automatizarse: escandallar platos cuando suben los precios, generar partes APPCC, calcular turnos, hacer pedidos al proveedor, actualizar la carta, responder reseñas. AI Chef Pro es la primera plataforma de IA específica para hostelería en {country} con +30 herramientas integradas. Esta página compara las opciones disponibles para un restaurante en {city} y por qué AI Chef Pro está liderando la adopción.',
@@ -216,9 +216,9 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
       },
     ],
     primaryProductSlug: 'saas-trial',
-    primaryProductLabel: 'Prueba Gratis AI Chef Pro',
-    primaryCtaTitle: 'Empieza Gratis con AI Chef Pro Hoy',
-    primaryCtaBody: 'AI Chef Pro es el SaaS que reúne en una sola plataforma escandallos automáticos, APPCC digital, generación de cartas con IA, control de inventario, gestión de personal, calendario de contenidos y +25 agentes IA específicos para restauración. Sin tarjeta de crédito. Sin permanencia. Adaptado a la regulación de {country}.',
+    primaryProductLabel: 'Prueba AI Chef Pro desde 10 €',
+    primaryCtaTitle: 'Empieza desde 10 €/mes con AI Chef Pro',
+    primaryCtaBody: 'AI Chef Pro es el SaaS que reúne en una sola plataforma escandallos automáticos, APPCC digital, generación de cartas con IA, control de inventario, gestión de personal, calendario de contenidos y +25 agentes IA específicos para restauración. Desde 10 € al mes, sin permanencia y con acceso inmediato. Adaptado a la regulación de {country}.',
     saasCtaTitle: 'Suscripción Profesional AI Chef Pro',
     saasCtaBody: 'Suscripción mensual con acceso ilimitado a todas las herramientas IA, generación de cartas, escandallos masivos, APPCC digital, integración con tu TPV. Soporte en español + atención WhatsApp.',
     faqs: [

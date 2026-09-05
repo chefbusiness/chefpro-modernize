@@ -1,8 +1,8 @@
 ---
 title: "Cómo se Utiliza la IA en la Gastronomía: 6 Usos Reales"
-description: "Descubre cómo se utiliza la IA en la gastronomía en 2026: los 6 usos reales en cocina —escandallos, costes, cartas y APPCC— y por dónde empezar gratis."
+description: "Descubre cómo se utiliza la IA en la gastronomía en 2026: los 6 usos reales en cocina —escandallos, costes, cartas y APPCC— y por dónde empezar desde 10 € al mes."
 pubDate: 2026-03-02
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Como-se-utiliza-la-IA-en-la-Gastronomia-1.jpg
 imageAlt: "Cómo se utiliza la IA en la Gastronomía"

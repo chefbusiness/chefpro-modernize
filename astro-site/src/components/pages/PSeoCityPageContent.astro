@@ -58,6 +58,11 @@ const products = getProductsByIds(
   'es',
 );
 
+// 'saas-trial' no es una landing de producto: no existe /saas-trial (404).
+// El CTA del SaaS va a la pagina de precios.
+const primaryHref =
+  content.primaryProductSlug === 'saas-trial' ? '/precios' : `/${content.primaryProductSlug}`;
+
 const canonicalPath = cityPath(modifier, city.slug); // /{modifier}/{ciudad}
 const canonicalUrl = `${SITE_URL}${canonicalPath}`;
 
@@ -147,7 +152,7 @@ const CARD_ACCENT_TINT = 'rounded-lg border text-card-foreground shadow-sm mt-6 
           {fill(content.heroSubtitle)}
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href={`/${content.primaryProductSlug}`} class={btnAccentLg}>
+          <a href={primaryHref} class={btnAccentLg}>
             {content.primaryProductLabel} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
           </a>
           <a href="/herramientas-ia-para-restaurantes" class={btnOutlineLg}>
@@ -376,7 +381,7 @@ const CARD_ACCENT_TINT = 'rounded-lg border text-card-foreground shadow-sm mt-6 
             <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
               {fill(content.primaryCtaBody)}
             </p>
-            <a href={`/${content.primaryProductSlug}`} class={btnAccentLg}>
+            <a href={primaryHref} class={btnAccentLg}>
               {content.primaryProductLabel} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
             </a>
           </div>

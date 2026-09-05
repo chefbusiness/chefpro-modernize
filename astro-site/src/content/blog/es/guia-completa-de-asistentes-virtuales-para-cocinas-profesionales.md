@@ -2,7 +2,7 @@
 title: "Asistentes Virtuales para Cocinas: Tu Copiloto IA 2026"
 description: "Guía de asistentes virtuales para cocinas: qué son, los 3 tipos, qué delegar y qué no, y cómo empezar con AI Chef Pro y sus +70 agentes IA.”"
 pubDate: 2025-03-02
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Guia-Completa-de-Asistentes-Virtuales-para-Cocinas-Profesionales.jpg
 imageAlt: "Guía Completa de Asistentes Virtuales para Cocinas Profesionales"
@@ -166,7 +166,7 @@ La columna derecha no es magia: es el resultado de eliminar el trabajo mecánico
 Montar un asistente virtual no requiere ser informático ni cambiar tu forma de trabajar de golpe. Con estos cuatro pasos reduces la fricción al mínimo y empiezas a ver resultados en días.
 
 1. **Elige una sola tarea que te robe tiempo cada semana.** La carta nueva, los escandallos de la temporada, las fichas de alérgenos o la comida de personal. Una, no todas.
-2. **Prueba un asistente especializado con el plan AI Chef Miembro.** AI Chef Pro, por ejemplo, te da 3.000 créditos al mes sin pedir tarjeta. Con eso puedes hacer varias rondas de escandallos, traducir la carta o generar fichas de alérgenos y ver si el flujo te encaja.
+2. **Prueba un asistente especializado con el plan AI Chef Miembro.** AI Chef Pro, por ejemplo, te da 10.000 créditos al mes por 10 €, sin permanencia. Con eso puedes hacer varias rondas de escandallos, traducir la carta o generar fichas de alérgenos y ver si el flujo te encaja.
 3. **Mide el tiempo ahorrado.** Compara cuánto tardabas antes y cuánto tardas ahora, incluyendo la revisión. La diferencia suele ser de horas.
 4. **Amplía a más tareas cuando te sientas cómodo.** Una vez que dominas una, añades otra. En pocas semanas el asistente se vuelve parte natural de tu rutina de oficina.
 

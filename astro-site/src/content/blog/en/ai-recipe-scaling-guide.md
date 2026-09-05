@@ -2,7 +2,7 @@
 title: "AI Recipe Scaling: How to Scale Any Recipe Perfectly with Artificial Intelligence"
 description: "AI Recipe Scaling: How to Scale Any Recipe Perfectly with Artificial Intelligence In the high-pressure environment of a commercial kitchen, recipe scaling is…"
 pubDate: 2026-03-12
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ai-in-gastronomy
 lang: en
 wpId: 3265
@@ -216,7 +216,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 </tr>
 </tbody>
 </table></div>
-<p><strong>AI Chef Pro</strong> stands out for professional kitchens because it offers a comprehensive suite of 75+ AI tools beyond just scaling—including menu costing, prep scheduling, inventory predictions, and supplier communication templates. The free tier with 10 uses per month is perfect for testing the technology before committing, and the tool integrates seamlessly with existing kitchen workflows.</p>
+<p><strong>AI Chef Pro</strong> stands out for professional kitchens because it offers a comprehensive suite of 75+ AI tools beyond just scaling—including menu costing, prep scheduling, inventory predictions, and supplier communication templates. The Member plan, €10/month with 10,000 credits and no commitment, is perfect for testing the technology, and the tool integrates seamlessly with existing kitchen workflows.</p>
 <h2>How to Get Started with AI Recipe Scaling</h2>
 <p>Ready to transform your kitchen&#8217;s approach to recipe scaling? Here&#8217;s your implementation roadmap:</p>
 

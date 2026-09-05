@@ -2,7 +2,7 @@
 title: "25 Platos de Autor Reinventados con Cocina Creativa AI"
 description: "La cocina de autor representa la máxima expresión de creatividad culinaria, donde cada chef imprime su sello personal en creaciones únicas e irrepetibles…"
 pubDate: 2026-01-21
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/torrija-molecular-aichefpro.jpeg
 imageAlt: "Torrija Molecular con Helado de Canela y Espuma de Leche Merengada"
@@ -1347,7 +1347,7 @@ wpId: 2313
 
 
 
-<p class="wp-block-paragraph">¿Estás listo para crear tus propios platos de autor con inteligencia artificial? <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank">Prueba AI Chef Pro gratuitamente</a> y descubre cómo la tecnología puede elevar tu cocina a nuevas dimensiones de creatividad y excelencia.</p>
+<p class="wp-block-paragraph">¿Estás listo para crear tus propios platos de autor con inteligencia artificial? <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank">Prueba AI Chef Pro desde 10 €</a> y descubre cómo la tecnología puede elevar tu cocina a nuevas dimensiones de creatividad y excelencia.</p>
 
 
 

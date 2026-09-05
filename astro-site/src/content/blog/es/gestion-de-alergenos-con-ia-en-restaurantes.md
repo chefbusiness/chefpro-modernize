@@ -2,7 +2,7 @@
 title: "Gestión de Alérgenos con IA en Restaurantes: Guía Especializada para Profesionales de la Hostelería"
 description: "La gestión de alérgenos en restaurantes se ha convertido en uno de los mayores desafíos para los profesionales de la hostelería. Con más de 2 millones de…"
 pubDate: 2025-12-30
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/gestion-alergenos-con-ia-en-restaurantes-4.jpeg
 imageAlt: "Gestión de Alérgenos con IA en Restaurantes: Guía Especializada para Profesionales de la Hostelería - AI Chef Pro"
@@ -790,7 +790,7 @@ wpId: 1965
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Funcionalidades de alérgenos</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Prueba inicial, pequeños establecimientos</td><td>Análisis básico, límites de uso</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Restaurantes pequeños (hasta 30 pax)</td><td>ID Alérgenos completo, fichas técnicas</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes medianos, cafeterías</td><td>Funciones avanzadas, más capacidad</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Restaurantes grandes, grupos</td><td>Análisis extensivo, reportes avanzados</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas, caterings, consultorías</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Funcionalidades de alérgenos</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10€/mes</td><td>Prueba inicial, pequeños establecimientos</td><td>Análisis de alérgenos con 10.000 créditos al mes</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Restaurantes pequeños (hasta 30 pax)</td><td>ID Alérgenos completo, fichas técnicas</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes medianos, cafeterías</td><td>Funciones avanzadas, más capacidad</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Restaurantes grandes, grupos</td><td>Análisis extensivo, reportes avanzados</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas, caterings, consultorías</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></div></figure>
 
 
 
@@ -906,7 +906,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank"><strong>probar AI Chef Pro gratuitamente</strong></a> y descubrir cómo puede transformar la gestión de alérgenos en tu establecimiento. Si tienes dudas específicas sobre implementación o necesitas orientación personalizada, nuestro equipo está disponible para ayudarte a través de la <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank">página de contacto</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank"><strong>probar AI Chef Pro desde 10 €</strong></a> y descubrir cómo puede transformar la gestión de alérgenos en tu establecimiento. Si tienes dudas específicas sobre implementación o necesitas orientación personalizada, nuestro equipo está disponible para ayudarte a través de la <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank">página de contacto</a>.</p>
 
 
 

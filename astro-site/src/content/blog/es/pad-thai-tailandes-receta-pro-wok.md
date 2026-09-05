@@ -2,7 +2,7 @@
 title: "Pad Thai Tailandés: Receta Pro de Wok y Equilibrio de Sabores"
 description: "Auténtico pad thai tailandés: fideos de arroz, salsa tamarindo-azúcar de palma, técnicas de wok a fuego alto. Street food Pro en casa."
 pubDate: 2026-04-04
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/pad-thai.jpg
 imageAlt: "Pad Thai Tailandés: Receta Pro de Wok y Equilibrio de Sabores"
@@ -106,4 +106,4 @@ wpId: 3320
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Street Food Asiática Pro</h3>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=pad-thai-tailandes-receta-pro-wok" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=pad-thai-tailandes-receta-pro-wok" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR AI CHEF MIEMBRO →</a> </div>

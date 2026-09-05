@@ -2,7 +2,7 @@
 title: "Marketing Olfativo en Restaurantes: Guía y Costes 2026"
 description: "Qué es el marketing olfativo en restaurantes: aplicaciones por zona del local, coste orientativo real y el papel honesto de la IA para decidir y medir."
 pubDate: 2025-12-24
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/marketing-olfativo-con-ia-en-restaurantes-1.jpeg
 imageAlt: "Marketing olfativo en restaurantes: aroma ambiente en la sala de un local"
@@ -126,7 +126,7 @@ El proceso que recomiendo es simple: antes de llamar al proveedor de aromas, ded
 
 AI Chef Pro funciona como una suite con más de 70 agentes de IA culinarios en siete idiomas, con español nativo y orientada a las tareas reales de un restaurante. Para quienes quieran probar este enfoque antes de comprometerse, el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, sin permanencia. Si ya estás convencido y quieres usarlo como herramienta de trabajo diaria, los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos), Max (95 €/mes, créditos ilimitados) y la opción Max Anual (950 €/año). Los agentes te permiten desde redactar descripciones de platos hasta planificar la aromatización, pasando por el análisis de reseñas o la creación de cartas estacionales, sin necesidad de ser técnico ni diseñador.
 
-Puedes crear una cuenta con el plan AI Chef Miembro y empezar a perfilar el aroma de tu local por 10 € al mes mientras decides si te funciona. [Probar AI Chef Pro por 10 €](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=olfativo) te da acceso inmediato a los 3.000 créditos mensuales y a todos los agentes, sin trampas ni pasarelas de pago ocultas.
+Puedes crear una cuenta con el plan AI Chef Miembro y empezar a perfilar el aroma de tu local por 10 € al mes mientras decides si te funciona. [Probar AI Chef Pro por 10 €](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=olfativo) te da acceso inmediato a los 10.000 créditos mensuales y a todos los agentes, sin trampas ni pasarelas de pago ocultas.
 
 ## Cómo medir si el marketing olfativo está funcionando
 

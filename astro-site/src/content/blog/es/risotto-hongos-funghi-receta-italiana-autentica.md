@@ -2,7 +2,7 @@
 title: "Risotto de Hongos (Funghi): Receta Italiana Auténtica Paso a Paso"
 description: "Aprende a hacer risotto de setas auténtico italiano. Técnica de tostatura, cocción gradual y mantecatura. Medidas duales, tiempo exacto y trucos…"
 pubDate: 2026-03-12
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/risotto-hongos.jpg
 imageAlt: "Risotto de Hongos (Funghi): Receta Italiana Auténtica Paso a Paso"
@@ -183,4 +183,4 @@ wpId: 3277
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 ¿Quieres Más Recetas Pro?</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px;">55+ herramientas de IA para crear recetas profesionales.</p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=risotto-hongos-funghi-receta-italiana-autentica" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=risotto-hongos-funghi-receta-italiana-autentica" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR AI CHEF MIEMBRO →</a> </div>

@@ -2,7 +2,7 @@
 title: "IA en la Cocina Molecular: Innovación y Experimentación"
 description: "La fusión entre inteligencia artificial y cocina molecular está redefiniendo los límites de la gastronomía contemporánea. Lo que comenzó como una disciplina…"
 pubDate: 2025-12-20
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-en-la-cocina-molecular-1.jpeg
 imageAlt: "IA en la Cocina Molecular: Innovación y Experimentación"
@@ -704,7 +704,7 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 
 
 
-<p class="wp-block-paragraph">Si estás listo para transformar tu aproximación a la gastronomía molecular, te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">probar AI Chef Pro gratuitamente</a> y descubrir cómo la inteligencia artificial puede potenciar tu creatividad culinaria. Para un acompañamiento más personalizado en tu viaje hacia la cocina molecular de vanguardia, considera nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">mentoría online</a>.</p>
+<p class="wp-block-paragraph">Si estás listo para transformar tu aproximación a la gastronomía molecular, te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">probar AI Chef Pro desde 10 €</a> y descubrir cómo la inteligencia artificial puede potenciar tu creatividad culinaria. Para un acompañamiento más personalizado en tu viaje hacia la cocina molecular de vanguardia, considera nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">mentoría online</a>.</p>
 
 
 

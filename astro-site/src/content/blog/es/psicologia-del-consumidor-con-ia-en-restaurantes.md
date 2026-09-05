@@ -2,7 +2,7 @@
 title: "Gestión de la Psicología del Consumidor con IA en Restaurantes: Guía Completa 2025"
 description: "El sector de la restauración ha experimentado una transformación sin precedentes en la última década. Mientras que tradicionalmente los restauradores…"
 pubDate: 2026-01-04
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/psicologia-del-consumidor-con-ia-4.jpeg
 imageAlt: "Gestión de la Psicología del Consumidor con IA en Restaurantes: Guía Completa"
@@ -1290,7 +1290,7 @@ wpId: 2014
 <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; margin: 0 0 15px 0; font-size: 24px;">🚀 Comienza tu Transformación Digital Hoy</h3>
 <p style="color: #dfe6e9; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Únete a miles de profesionales de la hostelería que ya están utilizando AI Chef Pro para optimizar su negocio y conectar mejor con sus clientes.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=psicologia-del-consumidor-con-ia-en-restaurantes" target="_blank" rel="noopener" style="display: inline-block; background-color: #ffffff; color: #00b894; padding: 14px 35px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px;">Empieza Gratis Ahora</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=psicologia-del-consumidor-con-ia-en-restaurantes" target="_blank" rel="noopener" style="display: inline-block; background-color: #ffffff; color: #00b894; padding: 14px 35px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px;">Empieza desde 10 €/mes →</a>
 </div>
 
 

@@ -2,7 +2,7 @@
 title: "Diseño de Espacios Gastronómicos con IA: Guía Completa para Transformar tu Restaurante"
 description: "El diseño de restaurantes con IA está revolucionando la forma en que los profesionales de la hostelería conceptualizan, planifican y ejecutan sus proyectos…"
 pubDate: 2025-12-21
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: tutoriales
 image: /blog-assets/2025/12/diseno-de-espacios-gastronomicos-con-ia-1.jpeg
 imageAlt: "Diseño de Espacios Gastronómicos con IA: Guía Completa para Transformar tu Restaurante"
@@ -790,7 +790,7 @@ wpId: 1845
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">probar AI Chef Pro gratuitamente</a> y descubrir por ti mismo cómo la inteligencia artificial puede transformar tu próximo proyecto gastronómico. Y si deseas una guía más personalizada, nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">mentoría online</a> está diseñado para ayudarte a implementar estas herramientas de forma efectiva en tu negocio.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">probar AI Chef Pro desde 10 €</a> y descubrir por ti mismo cómo la inteligencia artificial puede transformar tu próximo proyecto gastronómico. Y si deseas una guía más personalizada, nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">mentoría online</a> está diseñado para ayudarte a implementar estas herramientas de forma efectiva en tu negocio.</p>
 
 
 

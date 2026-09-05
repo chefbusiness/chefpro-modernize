@@ -159,10 +159,10 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Miembro",
-                "description": "Acceso básico gratuito. 3.000 créditos/mes.",
+                "description": "Plan de entrada: 10 €/mes con 10.000 créditos mensuales.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
-                "price": "0",
+                "price": "10",
                 "priceValidUntil": "2026-12-31"
               },
               {

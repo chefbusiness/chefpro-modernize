@@ -2,7 +2,7 @@
 title: "IA en la Cristalería Gastronómica: Diseño y Selección Optimizada para Experiencias Sensoriales"
 description: "La cristalería gastronómica ha trascendido su función utilitaria para convertirse en un elemento estratégico capaz de transformar completamente la…"
 pubDate: 2026-01-13
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-cristaleria-gastronomica-3.jpeg
 imageAlt: "IA en la Cristalería Gastronómica: Diseño y Selección Optimizada para Experiencias Sensoriales"
@@ -984,7 +984,7 @@ wpId: 2129
 <div style="background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%); border-radius: 12px; padding: 35px 25px; margin: 40px 0; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
 <h3 style="color: #ffffff; font-size: 26px; margin: 0 0 15px 0; font-weight: bold;">🎯 Transforma tu Restaurante con AI Chef Pro</h3>
 <p style="color: #ffffff; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Únete a miles de profesionales de la hostelería que ya utilizan inteligencia artificial para optimizar su operación. Comienza con AI Chef Miembro y descubre el potencial de la IA en tu cocina.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cristaleria-gastronomica" target="_blank" style="display: inline-block; background: #ffffff; color: #e74c3c; padding: 16px 45px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">Comenzar Ahora &#8211; Es Gratis</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cristaleria-gastronomica" target="_blank" style="display: inline-block; background: #ffffff; color: #e74c3c; padding: 16px 45px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">Empieza desde 10 €/mes</a>
 </div>
 
 

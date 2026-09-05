@@ -2,7 +2,7 @@
 title: "Mixología Digital: IA en el Diseño de Cócteles y Bebidas, la Herramienta para Bartenders"
 description: "La mixología profesional está viviendo una revolución silenciosa pero profunda. Mientras los bartenders tradicionales perfeccionan sus técnicas clásicas, una…"
 pubDate: 2025-11-11
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ai-chef-pro
 image: /blog-assets/2025/11/mixologia-digital-aichefpro-2.jpeg
 imageAlt: "Mixología Digital: IA en el Diseño de Cócteles y Bebidas"
@@ -1232,7 +1232,7 @@ wpId: 1753
 
 
 <ul class="wp-block-list">
-<li><strong>Plan AI Chef Miembro</strong>: 0€/mes para probar todas las funcionalidades con límites</li>
+<li><strong>Plan AI Chef Miembro</strong>: 10 €/mes con 10.000 créditos para probar toda la plataforma sin permanencia</li>
 
 
 

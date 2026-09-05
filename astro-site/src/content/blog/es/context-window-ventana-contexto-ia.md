@@ -2,7 +2,7 @@
 title: "Context Window: Concepto y Definición"
 description: "Descubre qué es la ventana de contexto en IA y por qué es crucial para generar recetas largas, menús completos y análisis de costes en hostelería."
 pubDate: 2026-03-02
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: glosario
 image: /blog-assets/2026/03/context-window-concepto-y-definicion_3139_592fd.jpg
 imageAlt: "Context Window: Concepto y Definición"
@@ -17,7 +17,7 @@ wpId: 3139
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Prueba AI Chef Pro</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     La IA especializada para chefs con ventanas de contexto optimizadas.<br />     Genera recetas largas, menús completos y análisis de costes sin límites.   </p>
 <p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-ai&#038;utm_content=context-window-ventana-contexto-ia" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">     PROBAR AHORA →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Con tarjeta de crédito • 48.733+ recetas generadas   </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 10 € al mes · Sin permanencia · 48.733+ recetas generadas   </p>
 </p>
 </div>
 <h2>¿Qué es el Context Window o Ventana de Contexto?</h2>

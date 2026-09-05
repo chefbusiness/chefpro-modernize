@@ -2,7 +2,7 @@
 title: "Diseño de Vajilla con IA: Revoluciona la Experiencia Gastronómica en tu Restaurante"
 description: "En la gastronomía contemporánea, cada detalle cuenta. La vajilla ha dejado de ser un simple recipiente para convertirse en un lienzo que complementa y eleva…"
 pubDate: 2026-02-10
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: tutoriales
 image: /blog-assets/2026/02/diseno-de-vajilla-con-ia-aichefpro-2.jpeg
 imageAlt: "Diseño de Vajilla con IA: Revoluciona la Experiencia Gastronómica en tu Restaurante"
@@ -524,7 +524,7 @@ wpId: 2676
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características principales</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Acceso básico a herramientas principales con límites de uso</td><td>Emprendedores, estudiantes, primeras pruebas</td></tr><tr><td>Pro</td><td>25€/mes</td><td>Acceso ampliado con funcionalidades avanzadas</td><td>Chefs individuales, restaurantes pequeños</td></tr><tr><td>Premium</td><td>50€/mes</td><td>Límites expandidos y herramientas especializadas</td><td>Restaurantes medianos, consultores gastronómicos</td></tr><tr><td>Premium Pro</td><td>95€/mes</td><td>Usos extensivos y análisis avanzado</td><td>Grupos de restauración, chefs ejecutivos</td></tr><tr><td>Anual</td><td>500€/año</td><td>Acceso completo con ahorro significativo</td><td>Profesionales comprometidos con la IA</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características principales</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>10.000 créditos al mes y acceso a todos los agentes</td><td>Emprendedores, estudiantes, primeras pruebas</td></tr><tr><td>Pro</td><td>25€/mes</td><td>Acceso ampliado con funcionalidades avanzadas</td><td>Chefs individuales, restaurantes pequeños</td></tr><tr><td>Premium</td><td>50€/mes</td><td>Límites expandidos y herramientas especializadas</td><td>Restaurantes medianos, consultores gastronómicos</td></tr><tr><td>Premium Pro</td><td>95€/mes</td><td>Usos extensivos y análisis avanzado</td><td>Grupos de restauración, chefs ejecutivos</td></tr><tr><td>Anual</td><td>500€/año</td><td>Acceso completo con ahorro significativo</td><td>Profesionales comprometidos con la IA</td></tr></tbody></table></div></figure>
 
 
 

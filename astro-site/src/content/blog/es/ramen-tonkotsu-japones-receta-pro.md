@@ -2,7 +2,7 @@
 title: "Ramen Tonkotsu Japonés: Receta Pro de Caldo Cremoso Paso a Paso"
 description: "Auténtico ramen tonkotsu japonés: caldo cremoso de hueso de cerdo 8-12 horas, chashu, huevo ajitsuke tamago y técnicas profesionales."
 pubDate: 2026-03-28
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/ramen-tonkotsu.jpg
 imageAlt: "Ramen Tonkotsu Japonés: Receta Pro de Caldo Cremoso Paso a Paso"
@@ -112,4 +112,4 @@ wpId: 3303
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Más Cocina Asiática Pro</h3>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ramen-tonkotsu-japones-receta-pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ramen-tonkotsu-japones-receta-pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR AI CHEF MIEMBRO →</a> </div>

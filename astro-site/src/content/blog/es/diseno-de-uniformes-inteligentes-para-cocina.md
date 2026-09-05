@@ -2,7 +2,7 @@
 title: "Diseño de Uniformes Inteligentes para Cocina: La Revolución Tecnológica en la Hostelería"
 description: "La industria gastronómica está viviendo una transformación sin precedentes. Los uniformes inteligentes para cocina representan la convergencia perfecta entre…"
 pubDate: 2026-01-06
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/diseno-uniformes-cocina-ia-1.jpeg
 imageAlt: "Diseño de Uniformes Inteligentes para Cocina: La Revolución Tecnológica en la Hostelería"
@@ -616,7 +616,7 @@ wpId: 2042
 
 
 
-<p class="wp-block-paragraph">Te invitamos a explorar cómo AI Chef Pro puede complementar tu inversión en tecnología culinaria. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=diseno-de-uniformes-inteligentes-para-cocina" target="_blank">Prueba gratuitamente nuestra suite de herramientas</a> y descubre el potencial de la inteligencia artificial aplicada a la gastronomía. Para una transformación más profunda y personalizada, nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=diseno-de-uniformes-inteligentes-para-cocina" target="_blank">mentoría online</a> te guiará en cada paso del proceso.</p>
+<p class="wp-block-paragraph">Te invitamos a explorar cómo AI Chef Pro puede complementar tu inversión en tecnología culinaria. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=diseno-de-uniformes-inteligentes-para-cocina" target="_blank">Prueba nuestra suite de herramientas desde 10 €/mes</a> y descubre el potencial de la inteligencia artificial aplicada a la gastronomía. Para una transformación más profunda y personalizada, nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=diseno-de-uniformes-inteligentes-para-cocina" target="_blank">mentoría online</a> te guiará en cada paso del proceso.</p>
 
 
 

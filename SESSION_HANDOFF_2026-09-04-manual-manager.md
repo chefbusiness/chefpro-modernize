@@ -55,3 +55,20 @@ Research 1,47 M + síntesis 0,39 M + refutación 0,52 M + corrector JSON 0,31 M 
 Los del §9 de la SPEC: «60 % cierra» vivo en 3 sitios del repo · gate de FAQ para las 45 landings · `fase8c-enlaces-vivos.py` a landings · 4 piezas de captación del blog (Verifactu 74.000/mes…) · medir canales con GSC · RD del registro horario → changelog 1.1 · Guía Food Cost v1.1 (`FC-PRIME-01/02` atribuyen a Toast el 60-65 %; `SMI-02` sin acotar) · URL de CaixaBankLab caída (`ECONNREFUSED`) · renombrar la hoja «Plan de Cross-Training» (B3 de la refutación xlsx, no aplicado por la regla de no renombrar hojas).
 
 Via: Claude Code
+
+---
+
+## 6. Segunda mitad de la noche (02:00 → 03:15, John dormido): buscador del hub y fin del «prueba gratis»
+
+### 6.1 Buscador de /productos-digitales — commit `8f8ff75` (workflow de 7 agentes, 38 hallazgos, 37 fixes)
+
+- **Front** (`ProductosDigitalesHubPage.astro`): input entre el subtítulo y los chips; busca por nombre, descripción, features, tags y etiquetas (`data-search` generado en servidor desde `products`/`comingSoon`, normalizado sin acentos); coincidencia por inicio de palabra y AND de términos; sinónimos ES/LATAM en `astro-site/src/lib/sinonimos-buscador.json` (escandallo/costeo, appcc/haccp, manager/gerente/administrador, nómina/planilla, inventario/stock, rentabilidad/margen, food cost/foodcost, food truck…) con **gate de build** que aborta si un grupo no apunta a ningún producto; combina con el chip activo; con búsqueda activa se ven todos los resultados y «Cargar más» se aparca; `/` enfoca, Esc limpia; panel «fuera de categoría» cuando hay resultados pero el chip los tapa; panel «sin resultados» con mini-formulario (detalle + email opcional + honeypot + aviso de privacidad) y WhatsApp con la consulta.
+- **Registro** (`netlify/functions/log-search.ts`, POST, `navigator.sendBeacon`): 1,2 s tras dejar de teclear / Enter / blur, ≥ 3 caracteres, dedup por sesión (con prefijos). Guarda en Netlify Blobs (store `search-queries`, un blob por evento) `{q, q_norm, n (global), n_filtrado, coming, tag, lang, path, sin_resultados, detalle, email, origen, country, ts}`. **Sin IP ni user-agent.** Cupo 120 eventos/min. Dependencia nueva: `@netlify/blobs ^10.7.13` en el `package.json` de la RAÍZ (+ lockfile).
+- **Informe** (`netlify/functions/search-report.ts`, GET con cabecera `x-admin-password` = `ADMIN_PASSWORD`, comparación en tiempo constante, 5 intentos/min): `?days=30` → total, por_dia, top_queries, sin_resultados (con detalles y emails), por_pais; `?raw=1`; `?purge=1&before=YYYY-MM-DD` borra días completos.
+- **Script**: `python3 scripts/productos-digitales/buscador-report.py --days 30` (coge `ADMIN_PASSWORD` de `netlify env:get`, curl) → tabla consulta · veces · resultados medios · ¿existe? · ¿en cola? · países, con ⚠ en lo demandado (≥ 2 veces, 0 resultados) que no está ni en producción ni en la cola del CALENDARIO §3. Doc de operación: `scripts/productos-digitales/BUSCADOR-HUB.md` (incluye los curl de verificación tras el deploy y el gotcha de que Blobs solo existe desplegado).
+- **Verificación en producción**: ver §6.3.
+
+### 6.2 Fin del «prueba AI Chef Pro gratis» (John: el plan gratis murió el 15-ago; el de entrada es Miembro, 10 €/mes, 10.000 créditos)
+
+Workflow de 5 censadores + 5 aplicadores + 2 verificadores + corrector sobre 5 zonas: plantillas Astro (GuiaLandingPage y hermanas: Kit, Tareas, Plan, ProPrompts; Pricing.astro), i18n 7 idiomas (`landing*.hero.no_card` «Sin tarjeta de crédito» → «Desde 10 € al mes · Sin permanencia · Acceso inmediato»), datos pSEO/casos de uso (`pseo-cities-content.es.ts`: «Empieza Gratis con AI Chef Pro»), FAQ de librerías de prompts («plan gratuito»), banners `SaasCrossSellBanners.tsx` («Plan gratis sin tarjeta») y ~80 CTA del blog ES/EN/FR/DE. Copy aprobado por idioma en la memoria `feedback_aichef-pro-sin-plan-gratis-desde-10-euros`. Lo que sigue siendo gratis y NO se tocó: las 8 herramientas, la micro-sesión de mentoría, «2 meses gratis» anual, «ChatGPT gratis», otras marcas. Resultado: ver §6.3.
+

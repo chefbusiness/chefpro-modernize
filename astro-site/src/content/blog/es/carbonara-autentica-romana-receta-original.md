@@ -2,7 +2,7 @@
 title: "Carbonara Auténtica Romana: Receta Original Sin Nata (Paso a Paso)"
 description: "La verdadera carbonara italiana: yema de huevo, pecorino, guanciale y pimienta. Sin nata, sin champiñones. Técnica Pro para emulsión perfecta sin que el…"
 pubDate: 2026-03-17
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/carbonara-autentica.jpg
 imageAlt: "Carbonara Auténtica Romana: Receta Original Sin Nata (Paso a Paso)"
@@ -142,4 +142,4 @@ wpId: 3288
 </div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Más Recetas Auténticas con AI Chef Pro</h3>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=carbonara-autentica-romana-receta-original" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=carbonara-autentica-romana-receta-original" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR AI CHEF MIEMBRO →</a> </div>

@@ -1095,7 +1095,7 @@
       "tagline": "L'outil utilisé par plus de {{userCount}} professionnels de la gastronomie.",
       "cta_primary": "Commencer à économiser",
       "cta_secondary": "Voir les formules et tarifs",
-      "no_card": "Sans carte bancaire. Accès immédiat."
+      "no_card": "Dès 10 €/mois · Sans engagement · Accès immédiat"
     },
     "results": [
       {
@@ -1963,7 +1963,7 @@
       "tagline": "Économisez jusqu'à 3 heures par jour en gestion de cuisine.",
       "cta_primary": "Essayer AI Chef Pro",
       "cta_secondary": "Voir les plans et tarifs",
-      "no_card": "Sans carte bancaire · Accès immédiat"
+      "no_card": "Dès 10 €/mois · Sans engagement · Accès immédiat"
     },
     "results": [
       {
@@ -2116,7 +2116,7 @@
       "role": "Chef Propriétaire, Restaurante Méndez, Madrid"
     },
     "pricing_section": {
-      "title": "Logiciel de gestion de cuisine IA à partir de 0€",
+      "title": "Logiciel de gestion de cuisine IA à partir de 10 €",
       "subtitle": "Commencez avec le plan Membre et évoluez quand votre entreprise en a besoin. Sans engagement.",
       "annual_note": "Plan annuel AI Chef Premium Max disponible à 950€/an · Économisez 2 mois"
     },
@@ -2162,7 +2162,7 @@
       "tagline": "Du concept à l'assiette en minutes, pas en heures.",
       "cta_primary": "Essayer AI Chef Pro",
       "cta_secondary": "Voir les plans et tarifs",
-      "no_card": "Sans carte bancaire · Accès immédiat"
+      "no_card": "Dès 10 €/mois · Sans engagement · Accès immédiat"
     },
     "results": [
       {
@@ -2315,7 +2315,7 @@
       "role": "Chef Exécutive, Restaurante Origen, Bilbao"
     },
     "pricing_section": {
-      "title": "Accédez au générateur de recettes IA à partir de 0€",
+      "title": "Accédez au générateur de recettes IA à partir de 10 €",
       "subtitle": "Commencez avec le plan Membre et évoluez quand votre entreprise en a besoin. Sans engagement.",
       "annual_note": "Plan annuel AI Chef Premium Max disponible à 950€/an · Économisez 2 mois"
     },
@@ -2361,7 +2361,7 @@
       "tagline": "Arrêtez de perdre de l'argent à cause d'un food cost non maîtrisé.",
       "cta_primary": "Calculer mon food cost",
       "cta_secondary": "Voir les plans et tarifs",
-      "no_card": "Sans carte bancaire · Accès immédiat"
+      "no_card": "Dès 10 €/mois · Sans engagement · Accès immédiat"
     },
     "results": [
       {
@@ -2514,7 +2514,7 @@
       "role": "Directeur des Opérations, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
-      "title": "Commencez à contrôler votre food cost à partir de 0€",
+      "title": "Commencez à contrôler votre food cost à partir de 10 €",
       "subtitle": "Établissez votre carte complète avec le plan Membre à 10 € par mois. Sans engagement.",
       "annual_note": "Plan annuel AI Chef Premium Max disponible à 950€/an · Économisez 2 mois"
     },

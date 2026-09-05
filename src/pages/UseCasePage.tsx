@@ -375,7 +375,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'EUR',
-      lowPrice: '0',
+      lowPrice: '10',
       highPrice: '950',
       offerCount: '5',
       availability: 'https://schema.org/InStock',

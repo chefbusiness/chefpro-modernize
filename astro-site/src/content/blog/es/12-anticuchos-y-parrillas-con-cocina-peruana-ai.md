@@ -2,7 +2,7 @@
 title: "12 Anticuchos y Parrillas con Cocina Peruana AI"
 description: "La parrilla peruana representa una de las tradiciones culinarias más arraigadas en la gastronomía latinoamericana, donde los anticuchos destacan como…"
 pubDate: 2026-01-29
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/anticuchos-cocina-peruana-ai-chef-pro-1.jpeg
 imageAlt: "12 Anticuchos y Parrillas con Cocina Peruana AI | AI Chef Pro"
@@ -994,10 +994,10 @@ wpId: 2511
 
 
 <div style="background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 4px 15px rgba(39,174,96,0.4);">
-<p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🌟 Empieza Gratis</p>
-<h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; line-height: 1.3;">Prueba Cocina Peruana AI sin compromiso</h3>
-<p style="color: #D5F5E3; font-size: 16px; margin: 0 0 20px 0;">Regístrate con AI Chef Miembro y accede a funcionalidades básicas. Actualiza cuando estés listo a planes desde 25€/mes.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-anticuchos-y-parrillas-con-cocina-peruana-ai" target="_blank" style="display: inline-block; background-color: #ffffff; color: #27AE60; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Crear Cuenta Gratis</a>
+<p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🌟 Desde 10 €/mes</p>
+<h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; line-height: 1.3;">Prueba AI Chef Pro desde 10 €</h3>
+<p style="color: #D5F5E3; font-size: 16px; margin: 0 0 20px 0;">Regístrate con AI Chef Miembro por 10 € al mes: 10.000 créditos y acceso a todos los agentes, sin permanencia. Sube a Premium Pro (25 €/mes) cuando necesites más volumen.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-anticuchos-y-parrillas-con-cocina-peruana-ai" target="_blank" style="display: inline-block; background-color: #ffffff; color: #27AE60; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Empieza desde 10 €/mes</a>
 </div>
 
 
