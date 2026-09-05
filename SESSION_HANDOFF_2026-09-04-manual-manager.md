@@ -55,3 +55,53 @@ Research 1,47 M + síntesis 0,39 M + refutación 0,52 M + corrector JSON 0,31 M 
 Los del §9 de la SPEC: «60 % cierra» vivo en 3 sitios del repo · gate de FAQ para las 45 landings · `fase8c-enlaces-vivos.py` a landings · 4 piezas de captación del blog (Verifactu 74.000/mes…) · medir canales con GSC · RD del registro horario → changelog 1.1 · Guía Food Cost v1.1 (`FC-PRIME-01/02` atribuyen a Toast el 60-65 %; `SMI-02` sin acotar) · URL de CaixaBankLab caída (`ECONNREFUSED`) · renombrar la hoja «Plan de Cross-Training» (B3 de la refutación xlsx, no aplicado por la regla de no renombrar hojas).
 
 Via: Claude Code
+
+---
+
+## 6. Segunda mitad de la noche (02:00 → 03:15, John dormido): buscador del hub y fin del «prueba gratis»
+
+### 6.1 Buscador de /productos-digitales — commit `8f8ff75` (workflow de 7 agentes, 38 hallazgos, 37 fixes)
+
+- **Front** (`ProductosDigitalesHubPage.astro`): input entre el subtítulo y los chips; busca por nombre, descripción, features, tags y etiquetas (`data-search` generado en servidor desde `products`/`comingSoon`, normalizado sin acentos); coincidencia por inicio de palabra y AND de términos; sinónimos ES/LATAM en `astro-site/src/lib/sinonimos-buscador.json` (escandallo/costeo, appcc/haccp, manager/gerente/administrador, nómina/planilla, inventario/stock, rentabilidad/margen, food cost/foodcost, food truck…) con **gate de build** que aborta si un grupo no apunta a ningún producto; combina con el chip activo; con búsqueda activa se ven todos los resultados y «Cargar más» se aparca; `/` enfoca, Esc limpia; panel «fuera de categoría» cuando hay resultados pero el chip los tapa; panel «sin resultados» con mini-formulario (detalle + email opcional + honeypot + aviso de privacidad) y WhatsApp con la consulta.
+- **Registro** (`netlify/functions/log-search.ts`, POST, `navigator.sendBeacon`): 1,2 s tras dejar de teclear / Enter / blur, ≥ 3 caracteres, dedup por sesión (con prefijos). Guarda en Netlify Blobs (store `search-queries`, un blob por evento) `{q, q_norm, n (global), n_filtrado, coming, tag, lang, path, sin_resultados, detalle, email, origen, country, ts}`. **Sin IP ni user-agent.** Cupo 120 eventos/min. Dependencia nueva: `@netlify/blobs ^10.7.13` en el `package.json` de la RAÍZ (+ lockfile).
+- **Informe** (`netlify/functions/search-report.ts`, GET con cabecera `x-admin-password` = `ADMIN_PASSWORD`, comparación en tiempo constante, 5 intentos/min): `?days=30` → total, por_dia, top_queries, sin_resultados (con detalles y emails), por_pais; `?raw=1`; `?purge=1&before=YYYY-MM-DD` borra días completos.
+- **Script**: `python3 scripts/productos-digitales/buscador-report.py --days 30` (coge `ADMIN_PASSWORD` de `netlify env:get`, curl) → tabla consulta · veces · resultados medios · ¿existe? · ¿en cola? · países, con ⚠ en lo demandado (≥ 2 veces, 0 resultados) que no está ni en producción ni en la cola del CALENDARIO §3. Doc de operación: `scripts/productos-digitales/BUSCADOR-HUB.md` (incluye los curl de verificación tras el deploy y el gotcha de que Blobs solo existe desplegado).
+- **Verificación en producción**: ver §6.3.
+
+### 6.2 Fin del «prueba AI Chef Pro gratis» (John: el plan gratis murió el 15-ago; el de entrada es Miembro, 10 €/mes, 10.000 créditos)
+
+Workflow de 5 censadores + 5 aplicadores + 2 verificadores + corrector sobre 5 zonas: plantillas Astro (GuiaLandingPage y hermanas: Kit, Tareas, Plan, ProPrompts; Pricing.astro), i18n 7 idiomas (`landing*.hero.no_card` «Sin tarjeta de crédito» → «Desde 10 € al mes · Sin permanencia · Acceso inmediato»), datos pSEO/casos de uso (`pseo-cities-content.es.ts`: «Empieza Gratis con AI Chef Pro»), FAQ de librerías de prompts («plan gratuito»), banners `SaasCrossSellBanners.tsx` («Plan gratis sin tarjeta») y ~80 CTA del blog ES/EN/FR/DE. Copy aprobado por idioma en la memoria `feedback_aichef-pro-sin-plan-gratis-desde-10-euros`. Lo que sigue siendo gratis y NO se tocó: las 8 herramientas, la micro-sesión de mentoría, «2 meses gratis» anual, «ChatGPT gratis», otras marcas. Resultado: ver §6.3.
+
+### 6.3 Estado a las 03:00 del 5-sep (John dormido; el Mac se apaga hacia las 03:20)
+
+**Buscador — LIVE y verificado** (commits `8f8ff75` → `9556ac4`): el hub sirve el input con `data-search` en las 49
+cards y el bundle incluye el script; `log-search` responde 204 al POST y 405 al GET, y sus logs muestran invocaciones
+de ~330 ms sin errores de Blobs; `search-report` responde 401 sin auth. Retoques de John ya desplegados: borde dorado
+fijo, placeholder animado en bucle (sin prefijo, ejemplos ≤ 22 caracteres para no cortarse en móvil), lupa a la
+derecha, padding derecho reducido, y el botón de WhatsApp del hub a `bottom-6` en móvil (llevaba desde julio el
+`bottom-20` de las landings). **No verificado**: la lectura del informe con la contraseña real (es SECRETA en
+Netlify y el CLI devuelve un relleno). Primer paso de la próxima sesión: `ADMIN_PASSWORD='…' python3
+scripts/productos-digitales/buscador-report.py --days 7` debe listar las 3 búsquedas de prueba («prueba buscador
+claude», «prueba blobs uno/dos»); si sale a 0, Blobs no está habilitado en el site → panel de Netlify.
+
+**Fin del «prueba gratis» — EN CURSO, NO en `main`.** Workflow `wf_b211e5b7-323` (script en
+`~/.claude/projects/-Users-johnguerrero-chefpro-modernize/b83df144-…/workflows/scripts/fin-plan-gratis-restos-wf_b211e5b7-323.js`):
+censo 68 a cambiar / 253 mantener, 84 sustituciones aplicadas por zona, verificadores con 156 restos (el censo del
+blog se quedó corto) + 35 defectos, y el corrector final trabajando sobre ~169 ficheros del árbol (plantillas de
+landing, Pricing.astro, i18n ×7, pSEO, blog ES/EN/FR/DE, `blog-lastmod.json`). El vigilante térmico lo congeló 11
+minutos (umbral mal calibrado; corregido a 66/63 °C). **El árbol de trabajo con esos cambios a medias está en la rama
+`wip/manual-manager-2026-09-04` (instantáneas `ea43853`, `ac27f99`; la última prevalece).** Cómo retomar: (1) `git
+checkout main && git checkout wip/manual-manager-2026-09-04 -- .` NO (mezclaría el WIP del buscador ya en main):
+mejor `git diff main wip/manual-manager-2026-09-04 --stat` y aplicar solo los ficheros del barrido; (2) o relanzar el
+workflow con `Workflow({scriptPath, resumeFromRunId: 'wf_b211e5b7-323'})`, que reutiliza censo y aplicadores desde caché y
+solo repite verificación + corrector; (3) verificar: 7 JSON de i18n con el mismo conjunto de claves que en `main`,
+`grep -rn -i "prueba.\{0,30\}gratis\|plan gratuito\|sin tarjeta\|free trial\|free plan" astro-site/src src/i18n src/data src/components`
+= solo lo legítimo (herramientas gratuitas, micro-sesión, 2 meses gratis, ChatGPT gratis, otras marcas), `fase8b-regen-lastmod.py`,
+commit, push y `fase6-gate.py` sobre una landing y `/precios`. Copy aprobado por idioma: memoria
+`feedback_aichef-pro-sin-plan-gratis-desde-10-euros`.
+
+**Lección de la noche para el toolkit térmico:** un vigilante que congela procesos a 65 °C y reanuda a 60 se bloquea si
+el suelo ambiental está en 62; congelar a 66 y reanudar a 63 mantuvo el Mac por debajo de 68 con dos workflows en
+paralelo. El script vive en el scratchpad (`watchdog.sh`); merece pasar al repo (`scripts/termica/`).
+
+Via: Claude Code
