@@ -1,0 +1,134 @@
+{
+  "lang": "en",
+  "path": "/en/integrations",
+  "breadcrumb": "Integrations",
+  "seo": {
+    "title": "AI Chef Pro Integrations: Connect Gmail, Sheets, Instagram and 13 More",
+    "description": "Your AI agents already work inside the tools you use: Gmail, Google Sheets, Instagram, Notion, Canva… You ask by talking, authorize once, and done.",
+    "keywords": "ai chef pro integrations, connect gmail restaurant ai, ai agents for hospitality, ai assistant for restaurants, composio, gastronomy automation"
+  },
+  "hero": {
+    "eyebrow": "New in all agents",
+    "h1": "Your AI agents now work inside your own tools",
+    "sub": "Up until now, whatever you generated in AI Chef Pro had to be copied and pasted by hand. That's over: connect your Gmail, Google Sheets, Instagram or Notion accounts and ask the agent by talking, just like you'd ask someone on your team.",
+    "cta": "Try the agents",
+    "cta2": "See how it works"
+  },
+  "pasos": {
+    "title": "Three steps, and the third one isn't yours",
+    "sub": "There's no settings panel to study or integrations to set up beforehand. The connection appears the moment you need it.",
+    "items": [
+      {
+        "n": "1",
+        "t": "Ask for it by talking",
+        "d": "Inside the chat, in your own language: “I want to send this recipe by email via Gmail,” “put this table into Google Sheets,” “post this image to Instagram.”"
+      },
+      {
+        "n": "2",
+        "t": "Authorize the account once",
+        "d": "The first time you use each service, the agent sets up the connection and asks for permission in the platform's own official window. You authorize with your account; you never give us your password."
+      },
+      {
+        "n": "3",
+        "t": "The agent does it",
+        "d": "The email goes out, the spreadsheet gets created, the photo gets posted. And the authorization is saved: it won't ask you again until it expires and needs renewing."
+      }
+    ]
+  },
+  "catalogo": {
+    "title": "16 tools connected, and counting",
+    "sub": "These are the platforms you already use every day in the restaurant. The connection is managed by Composio, the standard that handles authorization for each service.",
+    "categorias": {
+      "comunicacion": "Email",
+      "documentos": "Documents and data",
+      "organizacion": "Organization and reference",
+      "contenido": "Content and design",
+      "redes": "Social media"
+    },
+    "ejemplos": {
+      "gmail": "Send this week's food cost breakdown to your head chef without leaving the chat.",
+      "outlook": "Send the menu proposal to the catering client from your company email.",
+      "sheets": "Turn the cost table the agent just calculated into a live spreadsheet in Google Sheets.",
+      "docs": "Turn your brigade manual into a document ready to print and hand out.",
+      "drive": "Save the technical sheets in the team's shared folder, neatly organized.",
+      "calendar": "Block out the whole week's mise en place tasks in the calendar.",
+      "notion": "Drop the new menu's recipe book into the restaurant's knowledge base.",
+      "googlesuper": "Cross-check market prices or a regulation point before deciding.",
+      "canva": "Turn the menu into a design ready to print or display on the restaurant's screens.",
+      "wordpress": "Publish the seasonal dish article on the restaurant's website.",
+      "instagram": "Post today's service photo with the caption the agent just wrote.",
+      "facebook": "Schedule the Christmas menu announcement on the business page.",
+      "linkedin": "Share how you cut food waste by 12% this quarter.",
+      "x": "Announce in one line that New Year's Eve reservations are now open.",
+      "tiktok": "Upload the plating video with its description already written.",
+      "reddit": "Ask and learn in the hospitality communities."
+    }
+  },
+  "extras": {
+    "title": "And on top of that, all agents just got smarter",
+    "sub": "The connection to your accounts came along with two other improvements you'll notice from the very first conversation.",
+    "items": [
+      {
+        "t": "Advanced reasoning",
+        "d": "Agents now think before answering: they analyze the context, weigh options, and build the response. You notice it especially in anything with numbers involved—food cost breakdowns, menu engineering, business plans—where you used to have to ask follow-ups to fine-tune."
+      },
+      {
+        "t": "Reusable artifacts",
+        "d": "Chat agents create and edit artifacts: documents, tables, data visualizations, interactive components, and HTML or CSS files. Instead of a wall of text, they give you something you can keep tweaking in the same conversation. Recipes and food cost breakdowns are left out: they have their own specialized actions, which are better for that."
+      }
+    ]
+  },
+  "seguridad": {
+    "title": "Your credentials are yours",
+    "parrafos": [
+      "Each connection is authorized in the service's official window: Google, Meta, or Notion themselves ask you whether to allow access. AI Chef Pro never sees or stores your password.",
+      "Authorization is requested only when you need it—nothing to set up in advance—and it stays active until it expires. You can revoke it anytime from your service account, and the agent loses access instantly."
+    ],
+    "bullets": [
+      "Official authorization from each platform, using your own credentials",
+      "We never ask for or store passwords",
+      "Permissions limited to what the agent needs to do",
+      "Revocable at any time from the service itself"
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "How do I tell the agent to use one of my accounts?",
+        "a": "Just talk to it in the chat. Phrases like “I want to send this recipe by email via Gmail,” “put this table into Google Sheets,” or “post this image to Instagram” are enough. There's nothing to activate beforehand and no commands to learn: the agent recognizes the intent and sets up the connection itself."
+      },
+      {
+        "q": "Do I have to connect my accounts before I start?",
+        "a": "No. Authorization kicks in the moment you ask for something that needs it. The first time you use each service, you'll see that platform's permission window; from then on, the agent can work with it."
+      },
+      {
+        "q": "How often do I have to reauthorize?",
+        "a": "Only when the authorization expires. While it's still valid, the agent reuses it and doesn't ask again. When it expires, it'll ask you to renew it with the same couple of clicks as the first time."
+      },
+      {
+        "q": "Is it safe? Who can see my data?",
+        "a": "You grant permission in the service's official window, not in one of our forms, so your password never goes through AI Chef Pro. Access is limited to what the agent needs to do, and you can revoke it anytime from your account settings on Google, Meta, Notion, or whichever platform it is."
+      },
+      {
+        "q": "What is Composio and why does it appear here?",
+        "a": "Composio is the layer that manages connections with external platforms: it handles authorization, renews permissions, and makes sure each tool responds reliably. It's not another tool for your daily work; it's what makes the other sixteen work from the chat."
+      },
+      {
+        "q": "Is it included in my plan?",
+        "a": "Yes. Connections, advanced reasoning, and artifacts are available to all AI Chef Pro users, at no extra cost and with no separate module."
+      }
+    ]
+  },
+  "cierre": {
+    "title": "Open an agent and ask it to send something",
+    "sub": "The fastest way to understand it is to use it: generate a food cost breakdown and say “put this into Google Sheets.” Two authorization clicks and it's in your Drive.",
+    "cta": "Go to AI Chef Pro"
+  },
+  "home": {
+    "eyebrow": "New",
+    "title": "Your agents now work with your tools",
+    "sub": "“Send this recipe via Gmail.” “Put this table into Google Sheets.” “Post this photo to Instagram.” Just ask by talking: authorize the account once and the agent takes care of it.",
+    "cta": "See the 16 connections"
+  }
+}

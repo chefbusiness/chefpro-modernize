@@ -17,6 +17,7 @@
     "marketing": "Marketing & Content",
     "conceptos": "Business Concepten",
     "precios": "Prijzen",
+    "integraciones": "Integraties",
     "reducir_costes": "Kosten verlagen",
     "herramientas_ia": "AI-Tools Restaurant",
     "carta_menu": "Menu met AI",
@@ -1093,6 +1094,7 @@
     "nav_home": "Home",
     "nav_tools": "Tools",
     "nav_pricing": "Prijzen",
+    "nav_integraciones": "Integraties",
     "nav_blog": "Blog",
     "nav_costs": "Kosten verlagen",
     "nav_menu": "Menu met AI",
@@ -4495,5 +4497,11 @@
     "minutes_ago": "{{minutes}} minuten geleden",
     "registered": "Heeft zich aangemeld voor het 💜 Plan",
     "someone_from": "Iemand uit"
+  },
+  "integraciones": {
+    "eyebrow": "Nieuw",
+    "title": "Uw agenten werken nu met uw eigen tools",
+    "sub": "«Stuur dit recept via Gmail». «Zet deze tabel over naar Google Sheets». «Upload deze foto naar Instagram». Vraag het gewoon: autoriseer de account eenmalig en de agent regelt de rest.",
+    "cta": "Bekijk de 16 koppelingen"
   }
 }

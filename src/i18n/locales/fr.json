@@ -17,6 +17,7 @@
     "marketing": "Marketing & Contenu",
     "conceptos": "Concepts Business",
     "precios": "Tarifs",
+    "integraciones": "Intégrations",
     "reducir_costes": "Réduire les Coûts",
     "herramientas_ia": "Outils IA Restaurant",
     "carta_menu": "Carte & Menu avec IA",
@@ -661,6 +662,7 @@
     "nav_home": "Accueil",
     "nav_tools": "Outils",
     "nav_pricing": "Tarifs",
+    "nav_integraciones": "Intégrations",
     "nav_blog": "Blog",
     "nav_costs": "Réduire Coûts",
     "nav_menu": "Carte & Menu avec IA",
@@ -4206,5 +4208,11 @@
     "description": "Nous sommes désolés, la page que vous recherchez n'existe pas. Revenez à l'accueil d'AI Chef Pro.",
     "message": "Oups ! Page non trouvée",
     "title": "404 - Page non trouvée | AI Chef Pro"
+  },
+  "integraciones": {
+    "eyebrow": "Nouveau",
+    "title": "Vos agents travaillent déjà avec vos outils",
+    "sub": "« Envoyez cette recette par Gmail ». « Mettez ce tableau dans Google Sheets ». « Publiez cette photo sur Instagram ». Demandez-le en parlant : vous autorisez le compte une fois et l'agent s'en occupe.",
+    "cta": "Voir les 16 connexions"
   }
 }

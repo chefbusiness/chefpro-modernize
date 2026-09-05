@@ -1,0 +1,98 @@
+---
+// GENERADO por scripts/astro-migration/fase12-integraciones.py — NO editar a mano.
+// El copy está en src/data/integraciones-copy/en.json y el markup en
+// src/components/IntegracionesPage.astro (uno solo para los 7 idiomas).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IntegracionesPage from '../../components/IntegracionesPage.astro';
+import { SITE } from '../../i18n/config';
+import { INTEGRACIONES } from '../../data/integraciones';
+import copy from '../../data/integraciones-copy/en.json';
+
+const lang = 'en';
+// SIN prefijo de idioma: el layout lo antepone. Aun así los `alternates` de
+// abajo cubren los 7 locales, así que el canonical sale siempre de ahí.
+const basePath = '/integrations';
+const alternates = {
+  "es": "/integraciones",
+  "en": "/en/integrations",
+  "fr": "/fr/integrations",
+  "de": "/de/integrationen",
+  "it": "/it/integrazioni",
+  "pt": "/pt/integracoes",
+  "nl": "/nl/integraties"
+};
+
+const url = `${SITE}/en/integrations`;
+
+// Los @id enlazan WebPage y BreadcrumbList para que Google los lea como una
+// sola página y no como bloques sueltos.
+//
+// NO se emite aquí un SoftwareApplication: BaseLayout ya publica el global
+// del SaaS, con sus `offers` y precios reales. Emitir otro dejaba DOS nodos
+// SoftwareApplication llamados «AI Chef Pro» en la misma página, y el mío era
+// el pobre (sin ofertas). Las 16 plataformas las declara el ItemList.
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: copy.seo.title,
+    description: copy.seo.description,
+    inLanguage: 'en',
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE}#website`, name: 'AI Chef Pro', url: SITE },
+    breadcrumb: { '@id': `${url}#breadcrumb` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: `${SITE}/og-integraciones.jpg` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${url}#breadcrumb`,
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE },
+      { '@type': 'ListItem', position: 2, name: copy.breadcrumb, item: url },
+    ],
+  },
+  {
+    // El catálogo de plataformas, explícito. Sin precios ni valoraciones
+    // inventadas: solo lo que la página realmente enseña.
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${url}#integraciones`,
+    name: copy.catalogo.title,
+    numberOfItems: INTEGRACIONES.length,
+    itemListOrder: 'https://schema.org/ItemListUnordered',
+    itemListElement: INTEGRACIONES.map((i, n) => ({
+      '@type': 'ListItem',
+      position: n + 1,
+      name: i.name,
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${url}#faq`,
+    mainEntity: copy.faq.items.map((f: { q: string; a: string }) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title={copy.seo.title}
+  description={copy.seo.description}
+  keywords={copy.seo.keywords}
+  lang={lang}
+  basePath={basePath}
+  alternates={alternates}
+  ogImage={`${SITE}/og-integraciones.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <IntegracionesPage lang={lang} copy={copy} />
+</BaseLayout>

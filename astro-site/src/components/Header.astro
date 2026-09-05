@@ -6,6 +6,7 @@ import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
 import { appUrl } from '../lib/app-url';
+import { integracionesHref } from '../data/integraciones';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -55,6 +56,16 @@ const PRICING_PATHS: Record<string, string> = {
   it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen',
 };
 const pricingHref = PRICING_PATHS[lang] ?? '/precios';
+
+// Landing de integraciones (2026-09-05): los agentes ya se conectan con las
+// cuentas del usuario. Va en el nivel superior del nav, no escondida en un
+// mega-menú, porque es reclamo comercial. La ruta nativa por idioma sale de
+// src/data/integraciones.ts, que es la MISMA fuente que usan el footer y la
+// sección de la home: un único sitio donde cambiar el slug.
+const NUEVO_LABEL: Record<string, string> = {
+  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
+};
+const nuevoLabel = NUEVO_LABEL[lang] ?? NUEVO_LABEL.es;
 
 // Etiquetas multi-idioma inline (verbatim)
 const pick = (m: Record<string, string>, fb: string) => m[lang] || fb;
@@ -171,7 +182,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
                y un hover en cualquier item abriría todos los mega-menús a la vez (bug 2026-07-03). -->
           <ul class="flex flex-1 list-none items-center justify-center space-x-1">
             <li>
-              <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={homeHref}>{t(lang, 'nav.inicio')}</a>
+              <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={homeHref}>{t(lang, 'nav.inicio')}</a>
             </li>
 
             <!-- Servicios -->
@@ -286,12 +297,19 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
             </li>
 
             <li>
-              <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={pricingHref}>{t(lang, 'nav.precios')}</a>
+              <a class="inline-flex whitespace-nowrap items-center gap-1.5 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={integracionesHref(lang)}>
+                {t(lang, 'nav.integraciones')}
+                <span class="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">{nuevoLabel}</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={pricingHref}>{t(lang, 'nav.precios')}</a>
             </li>
 
             {lang === 'es' && (
               <li>
-                <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href="/productos-digitales" target="_blank">Productos Digitales</a>
+                <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href="/productos-digitales" target="_blank">Productos Digitales</a>
               </li>
             )}
           </ul>
@@ -420,6 +438,12 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
           <a href={consultorHref} class="flex flex-col gap-0.5 px-3 py-3 mb-1 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 hover:from-indigo-500/15 hover:to-purple-500/10 transition-colors touch-manipulation">
             <span class="text-sm font-semibold text-indigo-700">{consultorTitle}</span>
             <span class="text-xs text-muted-foreground">{pick({ es: '10 agentes IA para consultores y asesores', en: '10 AI agents for consultants and advisors', fr: '10 agents IA pour consultants et conseillers', de: '10 KI-Agenten für Berater', it: '10 agenti IA per consulenti', pt: '10 agentes de IA para consultores', nl: '10 AI-agenten voor adviseurs' }, '10 agentes IA para consultores y asesores')}</span>
+          </a>
+
+          <a href={integracionesHref(lang)} class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><path d="M6.5 10v4"/><path d="M10 17.5h4"/><path d="M17.5 10V6.5"/><path d="M10 6.5h4"/></svg>
+            {t(lang, 'nav.integraciones')}
+            <span class="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">{nuevoLabel}</span>
           </a>
 
           <a href={pricingHref} class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">

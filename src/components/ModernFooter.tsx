@@ -19,6 +19,23 @@ const FREE_TOOLS_SLUGS: Record<string, string> = {
   nl: 'nl/gratis-tools-restaurant',
 };
 
+// Landing de integraciones (2026-09-05). DUPLICADO a propósito de
+// astro-site/src/data/integraciones.ts (fuente canónica): la SPA está en otra
+// raíz y no puede importar de astro-site/. Si cambia un slug, tocar los dos.
+const INTEGRACIONES_PATHS: Record<string, string> = {
+  es: '/integraciones',
+  en: '/en/integrations',
+  fr: '/fr/integrations',
+  de: '/de/integrationen',
+  it: '/it/integrazioni',
+  pt: '/pt/integracoes',
+  nl: '/nl/integraties',
+};
+
+const NUEVO_LABEL: Record<string, string> = {
+  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
+};
+
 const AI_TOOLS_SLUGS: Record<string, string> = {
   es: 'herramientas-ia-para-restaurantes',
   en: 'en/ai-tools-for-restaurants',
@@ -174,6 +191,17 @@ export default function ModernFooter() {
               {t('footer.section_ia')}
             </h4>
             <ul className="space-y-3 text-sm">
+              <li>
+                <a
+                  href={INTEGRACIONES_PATHS[lang] || INTEGRACIONES_PATHS.es}
+                  className="inline-flex items-center gap-1.5 text-accent hover:text-accent/80 transition-colors font-medium"
+                >
+                  {t('footer.nav_integraciones')}
+                  <span className="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">
+                    {NUEVO_LABEL[lang] || NUEVO_LABEL.es}
+                  </span>
+                </a>
+              </li>
               <li>
                 <a
                   href={`/${AI_TOOLS_SLUGS[lang] || AI_TOOLS_SLUGS.es}`}

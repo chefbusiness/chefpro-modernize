@@ -17,6 +17,7 @@
     "marketing": "Marketing & Conteúdo",
     "conceptos": "Conceitos Business",
     "precios": "Preços",
+    "integraciones": "Integrações",
     "reducir_costes": "Reduzir Custos",
     "herramientas_ia": "Ferramentas IA Restaurante",
     "carta_menu": "Cardápio com IA",
@@ -1098,6 +1099,7 @@
     "nav_home": "Início",
     "nav_tools": "Ferramentas",
     "nav_pricing": "Preços",
+    "nav_integraciones": "Integrações",
     "nav_blog": "Blog",
     "nav_costs": "Reduzir Custos",
     "nav_menu": "Cardápio com IA",
@@ -4496,5 +4498,11 @@
     "description": "Lamentamos, mas a página que procura não existe. Volte ao início do AI Chef Pro.",
     "message": "Ops! Página não encontrada",
     "title": "404 - Página não encontrada | AI Chef Pro"
+  },
+  "integraciones": {
+    "eyebrow": "Novidade",
+    "title": "Os seus agentes já trabalham com as suas ferramentas",
+    "sub": "«Manda esta receita pelo Gmail». «Passa esta tabela para o Google Sheets». «Publica esta foto no Instagram». Peça falando: autoriza a conta uma vez e o agente trata do resto.",
+    "cta": "Ver as 16 ligações"
   }
 }

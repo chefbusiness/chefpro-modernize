@@ -17,6 +17,7 @@
     "marketing": "Marketing & Inhalt",
     "conceptos": "Business Konzepte",
     "precios": "Preise",
+    "integraciones": "Integrationen",
     "reducir_costes": "Kosten senken",
     "herramientas_ia": "KI-Tools für Restaurants",
     "carta_menu": "Speisekarte mit KI",
@@ -1111,6 +1112,7 @@
     "nav_home": "Startseite",
     "nav_tools": "Tools",
     "nav_pricing": "Preise",
+    "nav_integraciones": "Integrationen",
     "nav_blog": "Blog",
     "nav_costs": "Kosten senken",
     "nav_menu": "Speisekarte mit KI",
@@ -4511,5 +4513,11 @@
     "description": "Es tut uns leid, die gesuchte Seite existiert nicht. Kehren Sie zur Startseite von AI Chef Pro zurück.",
     "message": "Hoppla! Seite nicht gefunden",
     "title": "404 - Seite nicht gefunden | AI Chef Pro"
+  },
+  "integraciones": {
+    "eyebrow": "Neu",
+    "title": "Ihre Agenten arbeiten jetzt mit Ihren Tools",
+    "sub": "„Schick dieses Rezept per Gmail.\" „Übertrag diese Tabelle nach Google Sheets.\" „Lad dieses Foto auf Instagram hoch.\" Einfach ansagen: Konto einmal autorisieren – der Agent kümmert sich um den Rest.",
+    "cta": "Alle 16 Verbindungen ansehen"
   }
 }

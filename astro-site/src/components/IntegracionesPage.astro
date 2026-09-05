@@ -1,0 +1,227 @@
+---
+// IntegracionesPage.astro — cuerpo COMPLETO de la landing de integraciones.
+//
+// POR QUÉ UN COMPONENTE Y NO 7 PÁGINAS CON SU MARKUP: la landing existe en los 7
+// idiomas. Si cada una llevase su propio HTML, un arreglo de maquetación habría
+// que repetirlo siete veces y la séptima se olvidaría (le pasó al footer inglés
+// con el hub de librerías). Aquí el markup vive una vez y lo único que cambia por
+// idioma es el JSON de copy de src/data/integraciones-copy/.
+//
+// Las páginas de src/pages/ son envoltorios finos: BaseLayout + alternates +
+// schemas. Este componente pinta de <Header> a <Footer>.
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import BrandIcon from './BrandIcon.astro';
+import { INTEGRACIONES, CATEGORIAS, porCategoria } from '../data/integraciones';
+import type { Locale } from '../i18n/config';
+import { appCtaUrl } from '../lib/app-url';
+
+interface Props { lang: Locale; copy: any }
+const { lang, copy } = Astro.props;
+
+// El registro/login depende del idioma (itapp/enapp/frapp…). Un enlace clavado a
+// app.aichef.pro mandaría a todos los idiomas a la plataforma española.
+const ctaUrl = (slug: string) => appCtaUrl(lang, 'integraciones', slug);
+
+const logos = [...INTEGRACIONES, ...INTEGRACIONES];
+---
+
+<Header lang={lang} />
+
+<main>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden border-b border-border bg-gradient-to-b from-accent/5 to-transparent">
+    <div class="container mx-auto max-w-5xl px-4 py-16 text-center md:py-24">
+      <span class="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-accent"></span>
+        </span>
+        {copy.hero.eyebrow}
+      </span>
+
+      <h1 class="mx-auto mt-5 max-w-3xl text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+        {copy.hero.h1}
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+        {copy.hero.sub}
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href={ctaUrl('hero')} target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          {copy.hero.cta}
+        </a>
+        <a href="#como-funciona"
+           class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
+          {copy.hero.cta2}
+        </a>
+      </div>
+    </div>
+
+    <!-- Cinta de logos animada -->
+    <div class="marquee pb-14">
+      <ul class="marquee-track">
+        {logos.map((item, i) => (
+          <li class="marquee-item" aria-hidden={i >= INTEGRACIONES.length ? 'true' : undefined}>
+            <span class="flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-card shadow-sm md:h-16 md:w-16">
+              <BrandIcon name={item.icon} class="h-7 w-7 md:h-8 md:w-8" />
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section id="como-funciona" class="container mx-auto max-w-6xl px-4 py-16 md:py-20">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-foreground md:text-4xl">{copy.pasos.title}</h2>
+      <p class="mt-4 text-lg text-muted-foreground">{copy.pasos.sub}</p>
+    </div>
+
+    <ol class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+      {copy.pasos.items.map((p: any) => (
+        <li class="relative rounded-xl border border-border bg-card p-6 shadow-sm">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-accent text-lg font-bold text-accent-foreground">
+            {p.n}
+          </span>
+          <h3 class="mt-4 text-lg font-semibold text-foreground">{p.t}</h3>
+          <p class="mt-2 text-muted-foreground">{p.d}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- Catálogo de plataformas -->
+  <section class="border-y border-border bg-muted/30 py-16 md:py-20">
+    <div class="container mx-auto max-w-6xl px-4">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-foreground md:text-4xl">{copy.catalogo.title}</h2>
+        <p class="mt-4 text-lg text-muted-foreground">{copy.catalogo.sub}</p>
+      </div>
+
+      <div class="mt-12 space-y-10">
+        {CATEGORIAS.map((cat) => (
+          <div>
+            <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-accent">
+              {copy.catalogo.categorias[cat]}
+            </h3>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {porCategoria(cat).map((item) => (
+                <article class="flex items-start gap-4 rounded-xl border border-border bg-card p-5 shadow-sm transition-shadow hover:shadow-md">
+                  <span class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-muted/60">
+                    <BrandIcon name={item.icon} class="h-6 w-6" />
+                  </span>
+                  <div>
+                    <h4 class="font-semibold text-foreground">{item.name}</h4>
+                    <p class="mt-1 text-sm text-muted-foreground">{copy.catalogo.ejemplos[item.key]}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Las otras dos mejoras -->
+  <section class="container mx-auto max-w-6xl px-4 py-16 md:py-20">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-foreground md:text-4xl">{copy.extras.title}</h2>
+      <p class="mt-4 text-lg text-muted-foreground">{copy.extras.sub}</p>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+      {copy.extras.items.map((x: any) => (
+        <article class="rounded-xl border border-border bg-card p-7 shadow-sm">
+          <h3 class="text-xl font-bold text-foreground">{x.t}</h3>
+          <p class="mt-3 text-muted-foreground">{x.d}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- Seguridad -->
+  <section class="border-y border-border bg-muted/30 py-16 md:py-20">
+    <div class="container mx-auto max-w-4xl px-4">
+      <h2 class="text-3xl font-bold tracking-tight text-foreground md:text-4xl">{copy.seguridad.title}</h2>
+      {copy.seguridad.parrafos.map((p: string) => (
+        <p class="mt-4 text-muted-foreground">{p}</p>
+      ))}
+      <ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {copy.seguridad.bullets.map((b: string) => (
+          <li class="flex items-start gap-2.5 rounded-lg border border-border bg-card p-4 text-sm text-foreground">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{b}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container mx-auto max-w-3xl px-4 py-16 md:py-20">
+    <h2 class="text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">{copy.faq.title}</h2>
+    <div class="mt-10 space-y-3">
+      {copy.faq.items.map((f: any) => (
+        <details class="group rounded-xl border border-border bg-card p-5 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 font-semibold text-foreground marker:content-['']">
+            {f.q}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-accent transition-transform group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-3 text-muted-foreground">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <!-- Cierre -->
+  <section class="border-t border-border bg-gradient-to-b from-transparent to-accent/5">
+    <div class="container mx-auto max-w-3xl px-4 py-16 text-center md:py-20">
+      <h2 class="text-3xl font-bold tracking-tight text-foreground md:text-4xl">{copy.cierre.title}</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">{copy.cierre.sub}</p>
+      <a href={ctaUrl('cierre')} target="_blank" rel="noopener noreferrer"
+         class="mt-8 inline-flex items-center justify-center rounded-md bg-accent px-7 py-3.5 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+        {copy.cierre.cta}
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<Footer lang={lang} />
+
+<style>
+  .marquee {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    overflow: hidden;
+  }
+  .marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    width: max-content;
+    margin: 0;
+    padding: 0.25rem 0;
+    list-style: none;
+    animation: marquee-scroll 46s linear infinite;
+  }
+  .marquee-item { flex: 0 0 auto; }
+  /* La lista va duplicada: a -50 % el segundo juego cae donde empezaba el
+     primero, así que el reinicio del bucle no se ve. */
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  /* El movimiento continuo marea a parte del público; con la preferencia del
+     sistema activada la cinta se queda quieta y se recorre con scroll. */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee { overflow-x: auto; }
+    .marquee-track { animation: none; }
+  }
+</style>

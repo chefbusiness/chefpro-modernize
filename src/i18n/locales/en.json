@@ -17,6 +17,7 @@
     "marketing": "Marketing & Content",
     "conceptos": "Business Concepts",
     "precios": "Pricing",
+    "integraciones": "Integrations",
     "reducir_costes": "Reduce Restaurant Costs",
     "herramientas_ia": "AI Tools for Restaurants",
     "carta_menu": "Menu Design with AI",
@@ -821,6 +822,7 @@
     "nav_home": "Home",
     "nav_tools": "Tools",
     "nav_pricing": "Pricing",
+    "nav_integraciones": "Integrations",
     "nav_blog": "Blog",
     "nav_costs": "Reduce Costs",
     "nav_menu": "Menu Design with AI",
@@ -4179,5 +4181,11 @@
       "premium_max": "Unlimited monthly credits for demanding professionals.",
       "premium_max_anual": "Ideal for Food Entrepreneurs, Restaurant Owners, and Executives. Save 2 months."
     }
+  },
+  "integraciones": {
+    "eyebrow": "New",
+    "title": "Your agents now work with your tools",
+    "sub": "“Send this recipe via Gmail.” “Put this table into Google Sheets.” “Post this photo to Instagram.” Just ask by talking: authorize the account once and the agent takes care of it.",
+    "cta": "See the 16 connections"
   }
 }

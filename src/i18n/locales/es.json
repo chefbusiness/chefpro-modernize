@@ -18,6 +18,7 @@
     "marketing": "Marketing & Contenido",
     "conceptos": "Conceptos de Negocio",
     "precios": "Precios",
+    "integraciones": "Integraciones",
     "reducir_costes": "Reducir Costes con IA",
     "herramientas_ia": "Herramientas IA para Restaurantes",
     "carta_menu": "Carta y Menú con IA",
@@ -640,6 +641,7 @@
     "nav_home": "Inicio",
     "nav_tools": "Herramientas",
     "nav_pricing": "Precios",
+    "nav_integraciones": "Integraciones",
     "nav_blog": "Blog",
     "nav_costs": "Reducir Costes",
     "nav_menu": "Carta y Menú con IA",
@@ -4206,5 +4208,11 @@
       "premium_max": "Créditos ilimitados mensuales para profesionales exigentes.",
       "premium_max_anual": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses."
     }
+  },
+  "integraciones": {
+    "eyebrow": "Nuevo",
+    "title": "Tus agentes ya trabajan con tus herramientas",
+    "sub": "«Manda esta receta por Gmail». «Pasa esta tabla a Google Sheets». «Sube esta foto a Instagram». Pídeselo hablando: autorizas la cuenta una vez y el agente se encarga.",
+    "cta": "Ver las 16 conexiones"
   }
 }

@@ -1,0 +1,123 @@
+---
+// IntegracionesShowcase.astro — sección de home que anuncia que los agentes ya
+// se conectan con las cuentas del usuario (Gmail, Sheets, Instagram…).
+//
+// Se monta en los 7 index.astro. Los textos salen del i18n (claves
+// `integraciones.*`, generadas por scripts/astro-migration/fase12-integraciones.py
+// desde el mismo copy que la landing, para que home y landing nunca se
+// contradigan).
+//
+// LA ANIMACIÓN: marquesina infinita en CSS puro, sin una línea de JS. La lista de
+// logos se pinta DOS VECES y se desplaza el 50 %; al llegar ahí, el segundo juego
+// está exactamente donde estaba el primero y el reinicio no se ve. Por eso el
+// `aria-hidden` en el duplicado: para un lector de pantalla los logos están una
+// sola vez.
+//
+// ⚠️ Respeta `prefers-reduced-motion`: hay gente a la que el movimiento continuo
+// le provoca mareo, y una marquesina infinita es de los patrones que más lo
+// disparan. Con la preferencia activada la cinta se queda quieta y se puede
+// recorrer con scroll horizontal.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import { INTEGRACIONES, integracionesHref } from '../data/integraciones';
+import BrandIcon from './BrandIcon.astro';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const href = integracionesHref(lang);
+const logos = [...INTEGRACIONES, ...INTEGRACIONES];
+---
+
+<section class="border-y border-border bg-muted/30 py-16 md:py-20" aria-labelledby="integraciones-title">
+  <div class="container mx-auto max-w-6xl px-4">
+
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-accent"></span>
+        </span>
+        {t(lang, 'integraciones.eyebrow')}
+      </span>
+      <h2 id="integraciones-title" class="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+        {t(lang, 'integraciones.title')}
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+        {t(lang, 'integraciones.sub')}
+      </p>
+    </div>
+
+    <!-- Cinta de logos -->
+    <div class="marquee mt-12" role="group" aria-label={t(lang, 'integraciones.title')}>
+      <ul class="marquee-track">
+        {logos.map((item, i) => (
+          <li
+            class="marquee-item"
+            aria-hidden={i >= INTEGRACIONES.length ? 'true' : undefined}
+          >
+            <span class="flex h-16 w-16 items-center justify-center rounded-xl border border-border bg-card shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md md:h-20 md:w-20">
+              <BrandIcon name={item.icon} class="h-8 w-8 md:h-9 md:w-9" />
+            </span>
+            <span class="mt-2 block text-center text-xs text-muted-foreground">{item.name}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href={href}
+        class="inline-flex items-center justify-center gap-2 rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+      >
+        {t(lang, 'integraciones.cta')}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .marquee {
+    /* Desvanece los dos extremos para que los logos no aparezcan de golpe */
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: max-content;
+    margin: 0;
+    padding: 0.25rem 0;
+    list-style: none;
+    animation: marquee-scroll 46s linear infinite;
+  }
+
+  .marquee-item {
+    flex: 0 0 auto;
+    width: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    .marquee-item { width: 6rem; }
+  }
+
+  /* La cinta lleva la lista duplicada, así que -50 % deja el segundo juego
+     justo donde arrancaba el primero: el salto es invisible. */
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* Al pasar el ratón se para, para poder mirar un logo concreto */
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee { overflow-x: auto; }
+    .marquee-track { animation: none; }
+  }
+</style>

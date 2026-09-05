@@ -1,7 +1,26 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import AnnouncementBar from '@/components/AnnouncementBar';
-import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School, Wrench, BookOpen } from 'lucide-react';
+import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School, Wrench, BookOpen, Blocks } from 'lucide-react';
+
+// Landing de integraciones (2026-09-05). OJO: esta tabla está DUPLICADA a
+// propósito respecto a astro-site/src/data/integraciones.ts, que es la fuente
+// canónica. La SPA vive en otra raíz y no puede importar de astro-site/, igual
+// que ya pasa con AI_TOOLS_SLUGS y compañía aquí abajo. Si cambian los slugs,
+// hay que tocar LOS DOS sitios.
+const INTEGRACIONES_PATHS: Record<string, string> = {
+  es: '/integraciones',
+  en: '/en/integrations',
+  fr: '/fr/integrations',
+  de: '/de/integrationen',
+  it: '/it/integrazioni',
+  pt: '/pt/integracoes',
+  nl: '/nl/integraties',
+};
+
+const NUEVO_LABEL: Record<string, string> = {
+  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
+};
 
 const AI_TOOLS_SLUGS: Record<string, string> = {
   es: 'herramientas-ia-para-restaurantes',
@@ -387,6 +406,18 @@ export default function ModernHeader() {
               
               <NavigationMenuItem>
                 <NavigationMenuLink
+                  className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  href={INTEGRACIONES_PATHS[currentLanguage] || INTEGRACIONES_PATHS.es}
+                >
+                  {t('nav.integraciones')}
+                  <span className="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">
+                    {NUEVO_LABEL[currentLanguage] || NUEVO_LABEL.es}
+                  </span>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink
                   className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                 >
@@ -623,6 +654,18 @@ export default function ModernHeader() {
                           {({ es: '10 agentes IA para consultores y asesores', en: '10 AI agents for consultants and advisors', fr: '10 agents IA pour consultants et conseillers', de: '10 KI-Agenten für Berater', it: '10 agenti IA per consulenti', pt: '10 agentes de IA para consultores', nl: '10 AI-agenten voor adviseurs' } as Record<string, string>)[currentLanguage] || '10 agentes IA para consultores y asesores'}
                         </span>
                       </a>
+                      <a
+                        href={INTEGRACIONES_PATHS[currentLanguage] || INTEGRACIONES_PATHS.es}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                      >
+                        <Blocks className="h-5 w-5 text-muted-foreground" />
+                        {t('nav.integraciones')}
+                        <span className="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">
+                          {NUEVO_LABEL[currentLanguage] || NUEVO_LABEL.es}
+                        </span>
+                      </a>
+
                       <a
                         href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                         onClick={() => setMobileMenuOpen(false)}
