@@ -995,9 +995,36 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-bar-restaurante': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.1',
+    updated: '2026-09-05',
     entries: [
+      {
+        version: '2.1',
+        date: '2026-09-05',
+        title: 'El IVA de la bebida servida en sala es el 10 %: el plan financiero repercutía el 21 % a la parte alcohólica',
+        changes: [
+          'Plan financiero: la bebida alcohólica servida en sala tributa al 10 %, igual que la comida (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA: servicios de hostelería y suministro de comidas y bebidas para consumir en el acto, sin excluir el alcohol). El libro repercutía el 21 % a la parte alcohólica de la bebida en el IVA del año, y a TODA la bebida en el PVP equivalente del ticket (de ahí los 20,72 €): el 21 % es el tipo general y en hostelería sólo alcanza al alcohol y a los refrescos con azúcares añadidos que salen para llevar o a domicilio.',
+          'Celda nueva en «0. Supuestos», «IVA de la bebida ALCOHÓLICA servida en sala», con la referencia legal en su nota. El alcohol que sale por delivery sí va al 21 %, y el libro se lo aplica solo según el peso que pongas en «Ventas por delivery sobre el total» (a cero por defecto). El tipo general del libro queda para el alcohol que compras al proveedor y para ese alcohol repartido; suministros, equipamiento y servicios tienen su propia celda de IVA soportado.',
+          'Efecto en el caso de ejemplo: el PVP equivalente del ticket pasa de 20,72 € a 20,02 €; el IVA repercutido del año 1, de 55.562 € a 45.136 €; y los cobros, el flujo de caja del año y el saldo de cierre bajan esos mismos 10.426 € (el saldo mínimo del año baja 983 €, de 61.957 € a 60.974 €). La versión anterior repercutía un IVA que la ley no permite cobrar al cliente, y lo guardaba en caja los doce meses porque el IVA de la inversión absorbe las liquidaciones del año 1. Por la misma razón el payback del proyecto pasa de 2,58 a 2,75 años: ahora es el número defendible ante un banco. El P&L y el punto de equilibrio no cambian porque van sin IVA; en «4. Escenarios» sólo se mueve el saldo de caja al cierre del escenario realista, que lee la tesorería.',
+          'El IVA soportado en compras no cambia: el proveedor sigue facturando el alcohol al 21 % y la tesorería lo sigue deduciendo así. La partida de suministros avisa ahora de que la factura del agua va al 10 %.',
+          'Instrucciones: para pasar un PVP a precio sin IVA se divide entre 1,10 en sala (comida y bebida); el 21 % sólo alcanza a lo que sale del local como entrega de bienes excluida del tipo reducido (alcohol y refrescos con azúcares añadidos para llevar o a domicilio; la comida para llevar sigue al 10 %). La tabla de recalibrado dice ya el ticket real del libro (18,20 € sin IVA, 20,02 € de PVP), la plantilla y el alquiler reales (7 puestos y 3.000 €/mes), y explica cada cambio en lenguaje llano, sin códigos internos. El punto 3 llama a la hoja «3. Punto Equilibrio» por su nombre exacto y el bloque «ARRANQUE Y AFORO» de la hoja de supuestos recupera su título.',
+          'Número de versión (2.1) en los dos ficheros.',
+        ],
+      },
+      {
+        version: '2.0',
+        date: '2026-08-29',
+        title: 'El plan financiero pasa a ser un modelo: una hoja de supuestos manda y el resto del libro se calcula',
+        changes: [
+          'Hoja nueva «0. Supuestos»: cubiertos, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos se teclean una sola vez en celdas verdes y las demás hojas se derivan por fórmula (766 fórmulas). Antes había cifras escritas a mano que no se movían al cambiar un supuesto.',
+          'Hojas nuevas «6. Tesorería 12 meses» (cobros con su desfase, pagos por partida, IVA repercutido y soportado con liquidación trimestral, devolución del préstamo y saldo acumulado con su mínimo) y «7. Financiación» (cuadro de amortización francés con carencia, del que salen los intereses del P&L).',
+          'El coste de personal del P&L sale de la hoja «5. Personal», con la Seguridad Social a cargo de la empresa en una celda, no de una cifra aparte; la bebida ya no se contaba dos veces; el Impuesto de Sociedades aplica el 15 % de entidad de nueva creación en los dos primeros ejercicios con base imponible positiva y compensa las bases negativas.',
+          'Punto de equilibrio derivado del P&L con dos lecturas: la contable, que incluye la amortización (65,10 cubiertos/día en el caso de ejemplo), y la de caja, que la quita y añade la cuota del préstamo (62,93); las existencias iniciales ya no se amortizan.',
+          'Inversión inicial: cada partida declara si lleva IVA (la fianza, las licencias y tasas y el colchón operativo ya no lo soportan), con imprevistos de obra y meses de alquiler previos a la apertura en celda. Aforo, rampa de arranque y rotación implícita calculada en «0. Supuestos».',
+          'Checklist de apertura: 64 ítems con desplegable ✓ / — / N/A y resaltado al marcar.',
+          'Número de versión (2.0) en los dos ficheros.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',

@@ -263,9 +263,33 @@ SUPUESTOS_BASE = (
      'Mes del año (1-12) en el que sale de caja la segunda paga extra'),
     ('pct_bebida_alc', 'B62',
      'Bebida ALCOHÓLICA sobre el total de bebida', 0.60, motor.FMT_PCT,
-     'Los cafés, refrescos, aguas y zumos servidos en hostelería van al '
-     'IVA reducido; sólo la bebida alcohólica va al general. El resto de la '
-     'línea de bebida se repercute al tipo de restauración'),
+     'Peso del alcohol dentro de la línea de bebida. Se usa igual en ventas '
+     'y en compras, y es una aproximación (el alcohol suele pesar algo más '
+     'en el coste que en la venta). En sala todo se repercute al 10 %, '
+     'refrescos incluidos. En la factura del proveedor, el alcohol va al '
+     'tipo general; el agua, el café y los zumos naturales al 10 %; los '
+     'refrescos y zumos con azúcares o edulcorantes añadidos al 21 % desde '
+     '2021, que el libro aproxima al 10 %'),
+    # RD-17 (2026-09-05, decisión del dueño heredada de la familia de guías):
+    # la bebida alcohólica servida EN SALA tributa al 10 %, no al 21 %. El
+    # art. 91.Uno.2.2 de la Ley del IVA grava al tipo reducido los servicios
+    # de hostelería y «el suministro de comidas y bebidas para consumir en el
+    # acto» sin excluir el alcohol; el 21 % es el tipo general y sólo aplica
+    # a la venta para llevar. Antes el blend de bebida leía `iva_general`
+    # (B40) y el libro repercutía de más. Parámetro propio, celda verde con
+    # nota, en el bloque de desglose del IVA junto al peso que lo usa.
+    ('iva_bebida', 'B63',
+     'IVA de la bebida ALCOHÓLICA servida en sala', 0.10, motor.FMT_PCT,
+     '10 %, igual que el resto del consumo en sala: el art. 91.Uno.2.2.º de '
+     'la Ley 37/1992 del IVA grava al tipo reducido los servicios de '
+     'hostelería y «el suministro de comidas y bebidas para consumir en el '
+     'acto», sin excluir el alcohol. El 21 % es el tipo GENERAL y, fuera '
+     'del consumo en el acto, alcanza al alcohol y también a los refrescos y '
+     'zumos con azúcares o edulcorantes añadidos vendidos para llevar o a '
+     'domicilio (art. 91.Uno.1.1.º de la misma ley). El libro lo aplica '
+     'sólo a la parte ALCOHÓLICA de la bebida que sale por el canal de la '
+     'celda «Ventas por delivery sobre el total»; los refrescos azucarados '
+     'repartidos irían también al general y el libro no los separa'),
     # ---- UMBRALES Y SUELOS DE CONTROL (RD-22, RD-25) -------------------
     ('dscr_min', 'B65', 'DSCR mínimo aceptable', 1.0, motor.FMT_DEC2,
      'Por debajo de 1 el negocio no genera para pagar el préstamo. Ponlo en '
@@ -286,7 +310,9 @@ SUPUESTOS_BASE = (
 #: Bloques extra que este grupo cuelga debajo de la rejilla del motor.
 BLOQUES_EXTRA = (
     ('A47', 'CRECIMIENTO Y ACTUALIZACIÓN DE COSTES'),
-    ('A50', 'ARRANQUE Y AFORO'),
+    # REF-CIF-06 (2026-09-05): iba en A50 y lo pisaba «Rotaciones al día
+    # implícitas (calculado)», así que el bloque salía sin título.
+    ('A49', 'ARRANQUE Y AFORO'),
     ('A57', 'COBROS, PAGOS Y DESGLOSE DEL IVA'),
     ('A64', 'UMBRALES Y SUELOS DE CONTROL'),
 )
@@ -993,14 +1019,27 @@ class Plan(object):
                 ws[coord].fill = PatternFill()
                 ws[coord].protection = Protection(locked=True)
         # nota generada: el PVP con IVA equivalente al ticket sin IVA (TEC-11)
-        red, gen = self._loc('iva_reducido'), self._loc('iva_general')
+        # RD-17 — la bebida NO va al tipo general: mezcla del tipo del alcohol
+        # servido en sala (B63, 10 %) y el reducido, con el peso de B62.
+        red, gral = self._loc('iva_reducido'), self._loc('iva_general')
+        alc, beb = self._loc('pct_bebida_alc'), self._loc('iva_bebida')
+        deliv = self._loc('pct_delivery')
+        gen = ('(' + alc + '*((1-' + deliv + ')*' + beb + '+' + deliv + '*'
+               + gral + ')+(1-' + alc + ')*' + red + ')')
         tic = self._loc('ticket_medio')
         motor.val(ws, 'A9', 'PVP equivalente con IVA (calculado)')
         fx(ws, 'B9', '=IF(' + tic + '="","",' + tic + '*(B11*(1+' + red
            + ')+B12*(1+' + gen + ')))', motor.FMT_EUR)
-        fx(ws, 'C9', '="Es el ticket sin IVA con el IVA de cada familia: '
-           '"&TEXT(' + red + ',"0%")&" en comida y "&TEXT(' + gen + ',"0%")&'
-           '" en bebida. Compáralo con el rango del sector, que va con IVA."')
+        # La coletilla se compone: si el usuario cambia el tipo del alcohol
+        # o mete delivery, la bebida lleva un tipo MEDIO y la nota lo dice
+        # en vez de seguir afirmando el 10 % (RD17-COD-03 / FIS-08).
+        fx(ws, 'C9', '="Ticket sin IVA más el IVA: "&TEXT(' + red
+           + '*100,"0")&" % en comida y "&TEXT(' + gen + '*100,"0")&" % en '
+           'bebida"&IF(ABS(' + gen + '-' + red + ')<0.00001,"","; el de '
+           'bebida es un tipo MEDIO ponderado por el peso del alcohol, su '
+           'tipo y el canal de delivery, no un tipo de la ley, y aquí va '
+           'redondeado")&". Compáralo con el rango del sector, que va con '
+           'IVA."')
         # RD-24 — la rotación implícita, calculada desde el aforo en celda,
         # en vez de una nota que citaba mal su fuente (presentaba el 1,8 del
         # documento como un TECHO cuando ahí es un mínimo exigible, y usaba
@@ -1705,12 +1744,28 @@ class Plan(object):
         crec2, crec3, ipc = P('crec_a2'), P('crec_a3'), P('ipc')
         # RD-12 — el 21 % se repercutía a TODA la línea de bebida, que el
         # propio rótulo define como «cañas, vinos, cafés y copas». Los cafés,
-        # refrescos, aguas y zumos van al tipo reducido de hostelería: sólo
-        # la parte alcohólica va al general. El peso está en celda.
-        alc = P('pct_bebida_alc')
-        iva_bebida = ('(' + alc + '*' + P('iva_general') + '+(1-' + alc
+        # refrescos, aguas y zumos van al tipo reducido de hostelería. El
+        # peso del alcohol está en celda.
+        # RD-17 (2026-09-05) — y la parte alcohólica servida en sala TAMPOCO
+        # se REPERCUTE al general (art. 91.Uno.2.2 de la Ley del IVA): las
+        # ventas leen su propio parámetro `iva_bebida` (B63, 10 %), nunca
+        # `iva_general`. Dos mezclas distintas, porque el IVA tiene dos
+        # sentidos: `iva_bebida` es lo que se repercute al cliente en sala;
+        # `iva_bebida_compra` es lo que se SOPORTA al comprar al proveedor,
+        # que factura el alcohol al tipo general (entrega de bienes).
+        # El alcohol que sale por delivery es una entrega de bienes y va al
+        # general: el canal ya está en celda (`pct_delivery`, B16, 0 por
+        # defecto), así que la mezcla lo reparte sola y el caso base no
+        # cambia. Con B16 = 25 % (la sensibilidad `delivery_sup`) el IVA
+        # repercutido sube con él, que es lo que pide la ley.
+        alc, deliv = P('pct_bebida_alc'), P('pct_delivery')
+        iva_bebida = ('(' + alc + '*((1-' + deliv + ')*' + P('iva_bebida')
+                      + '+' + deliv + '*' + P('iva_general') + ')+(1-' + alc
                       + ')*' + P('iva_reducido') + ')')
         self.iva_bebida = iva_bebida
+        iva_bebida_compra = ('(' + alc + '*' + P('iva_general') + '+(1-' + alc
+                             + ')*' + P('iva_reducido') + ')')
+        self.iva_bebida_compra = iva_bebida_compra
 
         def pct(clave):
             return (lambda R, k=clave: '=' + R.c(k) + '/' + R.c(
@@ -1817,11 +1872,14 @@ class Plan(object):
                                 ' de las ventas de COMIDA, no del total: la '
                                 'bebida tiene su propia línea'),
                  iva=P('iva_reducido'))
+        # RD-17 — el tipo que se SOPORTA al comprar la bebida no cambia con
+        # la decisión del 10 % en sala: mezcla con `iva_general` (el alcohol
+        # se compra al 21 %), no con `iva_bebida`, que es el repercutido.
         variable('cv_bebida', 'Coste de mercancía — bebida',
                  P('pct_bebida') + '*' + P('coste_bebida'),
                  nota=texto_pct(P('coste_bebida'), 'Al ',
                                 ' de las ventas de BEBIDA'),
-                 iva=iva_bebida)
+                 iva=iva_bebida_compra)
         variable('cv_cons', 'Consumibles y envases', P('pct_consumibles'),
                  iva=P('iva_soportado'))
         variable('cv_deliv', 'Comisiones de delivery',
@@ -1909,8 +1967,14 @@ class Plan(object):
             lambda R: '=' + self.rej['personal'].r('coste_2'))
         rej.filas[rej.fila('cf_personal') - rej.fila0]['formulas']['D'] = (
             lambda R: '=' + self.rej['personal'].r('coste_3'))
+        # FIS-07: el agua apta para el consumo humano va al 10 % como
+        # entrega de bienes; la partida mezcla luz, agua y gas al general.
         fijo('cf_suministros', 'Suministros (luz, agua, gas)',
-             '=' + P('suministros_mes') + '*12', iva=P('iva_soportado'))
+             '=' + P('suministros_mes') + '*12', iva=P('iva_soportado'),
+             nota='Luz y gas van al 21 %; la factura del agua, al 10 %. El '
+                  'libro aplica a toda esta partida el tipo de la columna de '
+                  'al lado (21 %): si el agua pesa mucho en tu local, '
+                  'sepárala en su línea')
         # RD-13 — los seguros están EXENTOS (art. 20.Uno.16 LIVA): el modelo
         # se deducía un IVA que no existe y con él bajaba la liquidación.
         fijo('cf_seguros', 'Seguros (RC + multirriesgo)',
@@ -2011,9 +2075,11 @@ class Plan(object):
                             + '<=0,"",IF(' + R.c('acum', c) + '<=2,'
                             + P('is_nueva') + ',' + P('is_general') + '))'))
                      for col in ('B', 'C', 'D')]
-                    + [('F', '="Art. 29.1 LIS: el tipo reducido de entidad de '
-                        'nueva creación se aplica a los DOS primeros '
-                        'ejercicios con base positiva, no al primer año"')]))
+                    + [('F', '="Art. 29.1 LIS: el 15 % de entidad de nueva '
+                        'creación se aplica al PRIMER ejercicio con base '
+                        'positiva y al SIGUIENTE, no al primer año de vida. '
+                        'El libro lo aproxima contando los dos primeros '
+                        'ejercicios con base positiva"')]))
         rej.add('is', rot='Impuesto de Sociedades', fmt=motor.FMT_EUR0,
                 formulas=dict(
                     (col, (lambda R, c=col: '=IF(' + R.c('tipo', c)
@@ -2812,8 +2878,10 @@ class Plan(object):
                                 + '+' + P('pct_bebida') + '*'
                                 + self.iva_bebida + ')')) for i in range(12)]
                     + [('N', suma_ano('iva_rep')),
-                       ('O', 'La bebida NO va toda al tipo general: sólo la '
-                        'alcohólica. El peso está en la hoja de Supuestos')]))
+                       ('O', 'La bebida va al tipo que sale de la hoja de '
+                        'Supuestos: en sala, alcohol incluido, el reducido '
+                        '(art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el '
+                        'alcohol que sale por delivery, al general')]))
         rej.add('iva_sop', rot='IVA soportado del mes (memoria)',
                 fmt=motor.FMT_EUR0,
                 formulas=dict(
@@ -3302,9 +3370,15 @@ class Plan(object):
             'cuatro fuentes alternativas de financiación en «'
             + self.ws_financiacion.title + '». Todo lo demás se calcula.',
             '4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin '
-            'IVA, divide entre 1,10 en comida y entre 1,21 en bebida '
-            'alcohólica; el IVA de la inversión se adelanta y se recupera con '
-            'el modelo 303.',
+            'IVA, divide entre 1,10: en sala, la comida y la bebida (alcohol '
+            'incluido) van al tipo reducido (art. 91.Uno.2.2.º de la Ley '
+            '37/1992 del IVA). El 21 % es el tipo general y en hostelería '
+            'sólo alcanza a lo que sale del local como entrega de bienes '
+            'excluida del tipo reducido: el alcohol y los refrescos o zumos '
+            'con azúcares añadidos para llevar o a domicilio (la comida para '
+            'llevar sigue al 10 %); el libro lo aplica al alcohol del canal '
+            'de delivery. El IVA de la inversión se adelanta y se recupera '
+            'con el modelo 303.',
             '5. Si cambias la plantilla, el P&L la lee sola: el coste de '
             'personal sale de la hoja «Personal», no de una estimación '
             'aparte.',
@@ -3384,8 +3458,8 @@ class Plan(object):
                       'QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1',
                       bold=True)
             fila += 1
-            for i, texto in enumerate(('Concepto', 'v1.1', 'v2.0',
-                                       'Por qué')):
+            for i, texto in enumerate(('Concepto', 'v1.1',
+                                       'v' + motor.VERSION, 'Por qué')):
                 motor.val(ws, get_column_letter(col + i) + str(fila), texto,
                           bold=True)
             fila += 1

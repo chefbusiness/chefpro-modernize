@@ -15,21 +15,21 @@ const TEMPLATES = [
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios pesimista/realista/optimista, cuadro de personal y hoja de instrucciones. Todas las celdas editables.',
+    desc: 'Hoja de supuestos que manda sobre todo el libro, P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios pesimista/realista/optimista, cuadro de personal, tesorería mensual, cuadro de amortización del préstamo e instrucciones. Las celdas verdes se editan; el resto se calcula.',
   },
   {
     key: 'plan-negocio',
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'Documento completo con resumen ejecutivo, descripción del negocio, análisis de mercado, plan operativo, organización y RRHH, plan de marketing, plan financiero y plan de financiación.',
+    desc: 'Documento de 10 secciones: resumen ejecutivo, concepto y propuesta de valor, análisis de mercado, análisis competitivo, plan de marketing y captación, plan de operaciones, estructura organizativa y RRHH, plan financiero, aspectos legales y licencias, y conclusiones y plan de acción.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist de Apertura',
-    desc: 'Más de 50 trámites en 6 fases: constitución SL, licencias hostelería, obra y acondicionamiento, RRHH y Seg. Social, marketing pre-apertura y primeros 90 días de operación.',
+    desc: '64 trámites en 7 fases: constitución SL, licencias hostelería, obra y acondicionamiento, RRHH y Seg. Social, marketing pre-apertura y primeros 90 días de operación.',
   },
 ];
 
@@ -68,7 +68,7 @@ export default function PlanNegocioBarRestauranteDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-bar-restaurante" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel con P&L 3 años, plan de negocio Word completo y checklist de apertura con 50+ trámites.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel con P&L 3 años, plan de negocio Word completo y checklist de apertura con 64 trámites.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">

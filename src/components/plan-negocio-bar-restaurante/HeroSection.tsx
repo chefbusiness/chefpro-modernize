@@ -19,7 +19,7 @@ const checkItems = [
   'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
   'Inversión inicial detallada por partidas (~80K-150K EUR)',
   'Punto de equilibrio y análisis de viabilidad financiera',
-  'Checklist apertura: 50+ trámites y licencias España 2026',
+  'Checklist apertura: 64 trámites y licencias España 2026',
   'Acceso inmediato + actualizaciones de por vida',
 ];
 
@@ -79,7 +79,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          El plan de negocio completo para abrir un bar-restaurante en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios pesimista/realista/optimista y checklist de apertura con 50+ trámites y licencias.
+          El plan de negocio completo para abrir un bar-restaurante en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios pesimista/realista/optimista y checklist de apertura con 64 trámites y licencias.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

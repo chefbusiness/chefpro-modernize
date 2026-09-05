@@ -24,12 +24,12 @@ export default function PlanNegocioBarRestaurante() {
     <>
       <Helmet>
         <title>Plan de Negocio: Bar-Restaurante — Plan Financiero Excel, Inversión Inicial y Checklist Apertura | AI Chef Pro</title>
-        <meta name="description" content="Plan de negocio completo para abrir un bar-restaurante en España 2026. Plan financiero Excel con P&L 3 años, punto de equilibrio, escenarios. Checklist apertura con 50+ trámites. Datos reales mercado español. €35." />
+        <meta name="description" content="Plan de negocio completo para abrir un bar-restaurante en España 2026. Plan financiero Excel con P&L 3 años, punto de equilibrio, escenarios. Checklist apertura con 64 trámites. Datos reales mercado español. €35." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plan de negocio bar-restaurante, plan financiero restaurante España, abrir restaurante, checklist apertura restaurante, inversión inicial restaurante, punto de equilibrio hostelería, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/plan-negocio-bar-restaurante" />
         <meta property="og:title" content="Plan de Negocio: Bar-Restaurante — Plan Financiero Excel + Checklist Apertura" />
-        <meta property="og:description" content="Plan financiero Excel con P&L 3 años, inversión inicial, punto de equilibrio, escenarios y checklist apertura con 50+ trámites para abrir un bar-restaurante en España. €35." />
+        <meta property="og:description" content="Plan financiero Excel con P&L 3 años, inversión inicial, punto de equilibrio, escenarios y checklist apertura con 64 trámites para abrir un bar-restaurante en España. €35." />
         <meta property="og:url" content="https://aichef.pro/plan-negocio-bar-restaurante" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -39,14 +39,14 @@ export default function PlanNegocioBarRestaurante() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Plan de Negocio: Bar-Restaurante — Plan Financiero + Checklist Apertura" />
-        <meta name="twitter:description" content="Plan financiero Excel con P&L 3 años + checklist apertura con 50+ trámites. €35." />
+        <meta name="twitter:description" content="Plan financiero Excel con P&L 3 años + checklist apertura con 64 trámites. €35." />
         <meta name="twitter:image" content="https://aichef.pro/og-plan-negocio-bar-restaurante.jpg" />
 
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Plan de Negocio: Bar-Restaurante — Plan Financiero Excel, Inversión Inicial y Checklist Apertura",
-          "description": "Plan de negocio completo para abrir un bar-restaurante en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 50+ trámites y análisis de mercado España 2026.",
+          "description": "Plan de negocio completo para abrir un bar-restaurante en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 64 trámites y análisis de mercado España 2026.",
           "image": "https://aichef.pro/og-plan-negocio-bar-restaurante.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -73,7 +73,7 @@ export default function PlanNegocioBarRestaurante() {
             { "@type": "Question", "name": "¿Es un plan genérico o específico para bar-restaurante?", "acceptedAnswer": { "@type": "Answer", "text": "Es 100% específico para bar-restaurante en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de bar-restaurante con barra y sala, incluyendo licencias de hostelería españolas actualizadas a 2026." }},
             { "@type": "Question", "name": "¿Puedo presentar este plan al banco o a inversores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. El plan financiero Excel incluye cuenta de resultados (P&L) previsional a 3 años, punto de equilibrio, análisis de viabilidad financiera y 3 escenarios. Es exactamente el formato que piden bancos e inversores." }},
             { "@type": "Question", "name": "¿Puedo modificar las cifras del Excel?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, el número de cubiertos, el ticket medio, los salarios y cualquier partida de inversión." }},
-            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist de apertura?", "acceptedAnswer": { "@type": "Answer", "text": "Más de 50 trámites en 6 fases: constitución de la SL, licencias municipales, obra y acondicionamiento, RRHH, marketing pre-apertura y primeros 90 días de operación." }},
+            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist de apertura?", "acceptedAnswer": { "@type": "Answer", "text": "64 trámites en 7 fases: constitución de la SL, licencias municipales, obra y acondicionamiento, RRHH, marketing pre-apertura y primeros 90 días de operación." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

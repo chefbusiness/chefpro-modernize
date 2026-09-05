@@ -1,5 +1,27 @@
 # Familia «Planes de Negocio» — v2.0 (SPEC, 2026-08-29)
 
+> ## ⚠️ Enmienda RD-17 (2026-09-05, sesión Claude Code) — el IVA de la bebida alcohólica en sala es el 10 %, no el 21 %
+>
+> Donde esta SPEC dice «`B40` IVA repercutido bebida alcohólica (21 %)» (§2.1, tabla FISCAL), «10 % comida / 21 % bebida
+> alcohólica» (§2.7) o «conversión PVP/1,10 y PVP/1,21» (§2.9, TEC-11/DOM-30), **manda esta enmienda**: el art. 91.Uno.2.2 de
+> la Ley del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el
+> acto» **sin excluir el alcohol**; el 21 % es el tipo general y sólo aplica a la bebida alcohólica vendida para llevar o a
+> domicilio. Decisión del dueño tomada el 2026-08-31 en la familia de guías («corrige a 10 % en sala y rehaz los xlsx»,
+> handoff B §20.3) y aplicada aquí el 2026-09-05. Implementación: parámetro propio **`iva_bebida` en `'0. Supuestos'!B63`**
+> (celda verde con nota legal, bloque «COBROS, PAGOS Y DESGLOSE DEL IVA», junto al peso `pct_bebida_alc` de B62); el blend de
+> bebida del P&L, los cobros y el IVA repercutido de la tesorería leen B63 para la venta EN SALA; `iva_general` (B40) sólo
+> entra en el término del canal de delivery (`pct_delivery`, B16) y en la compra del alcohol. Fuera del consumo en el acto el
+> 21 % alcanza también a los refrescos y zumos con azúcares añadidos (art. 91.Uno.1.1.º), que el libro no separa. Versión de la familia: **2.1 · septiembre 2026**. El alcohol que sale por
+> el canal de delivery (`pct_delivery`, B16) sí se repercute al general: la mezcla de ventas lo reparte sola y el caso base
+> (B16 = 0) no cambia. **Alcance real del 21 %:** sólo `plan-negocio-bar-restaurante` llevaba el molde v2.0 en producción;
+> los 4 hermanos de línea A con contenido construido (cafetería, tapas-bar, panadería, food-truck) lo heredan al aplicarse
+> con este motor, y los 5 de línea B siguen en v1.1, hechos a mano, sin pasar por `grupo_a.py`. Su único rastro medido del
+> 21 % ligado a la bebida era el rótulo «Modelo 303 (IVA trimestral 21%)» de `checklist-apertura-paellero-eventos.xlsx!'Checklist 6
+> fases'!C23`, corregido a mano el 2026-09-05 (una celda, fuera del motor). Queda por revisar `modelos-contrato-paellero-eventos.docx`
+> («La factura del Paellero se emitirá a la Agencia con IVA al 21 %»): un servicio de catering para consumir en el acto es hostelería
+> al 10 %; decidirlo con la lente fiscal cuando se aplique ese hermano. Pendiente de decidir antes de aplicar los hermanos: nacen
+> directamente como 2.1 (su changelog debe contar el salto 1.1 → 2.1 entero) o se les estampa primero la 2.0.
+
 Origen: rondas 1 adversariales de los **DOS representantes** —`auditorias/plan-negocio-bar-restaurante-R1.json` (línea A, **93 hallazgos**: TEC 27 · DOM 36 · COM 30,
 «no listo» ×3) y `auditorias/plan-negocio-cocteleria-eventos-R1.json` (línea B, **98 hallazgos**: TEC 26 · DOM 37 · COM 35, «no listo» ×3)— más un **censo propio
 de los 10 productos** hecho para esta SPEC (openpyxl + python-docx, 2026-08-29). Lo que sigue es lo que SE HACE; lo demás se descarta en §6 o se pregunta en §7;

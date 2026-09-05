@@ -34,29 +34,33 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
    Inicial'!A26:A27` del fichero v1.1) y el propio docx trabaja con **1,8
    rotaciones**, es decir un techo de ~100 cubiertos/día. Siete personas a
    jornada completa (209.171 €) sólo se pagan con ~600.000 € de ventas, que ese
-   aforo no da. Se redimensiona por horas de servicio a **6 puestos, dos de
-   ellos a tiempo parcial**, con los brutos del propio fichero como referencia
-   y el SMI 2026 como suelo.
+   aforo no da. Se redimensiona por horas de servicio a **7 puestos, tres de
+   ellos a tiempo parcial (uno es la línea de suplencias de vacaciones y
+   descansos, RC-19)**, con los brutos del propio fichero como referencia y
+   el SMI 2026 como suelo: 151.939 €/año.
 2. **El ticket pasa a declararse SIN IVA** (TEC-11, DOM-30). Los 18,50 € del
-   fichero v1.1 son PVP —así se habla en hostelería—; sin IVA, con el mix
-   65/35 de comida y bebida, equivalen a 16,25 €. Se fija **17,20 € sin IVA**,
-   que son 19,58 € de PVP: dentro del rango «15-22 EUR» que declara
-   `Instrucciones!A19` del propio fichero.
+   fichero v1.1 son PVP —así se habla en hostelería—; sin IVA (10 % en sala,
+   comida y bebida, RD-17) equivalen a 16,82 €. Se fijó 17,20 € sin IVA y
+   RD-08 lo subió a **18,20 € sin IVA**, que son 20,02 € de PVP: dentro del
+   rango «15-22 EUR» que declara `Instrucciones!A19` del propio fichero.
 3. **Los cubiertos suben de 55 a 80** (1,43 rotaciones sobre 56 plazas), por
-   debajo del techo de 1,8 que usa el propio documento y del que se deduce de
-   `'3. Punto Equilibrio'`.
-4. **El alquiler baja de 3.000 a 2.900 €/mes**, dentro del rango
-   «2.000-4.500 EUR/mes» de `Instrucciones!A20` y respetando el techo de
-   8-10 % sobre ventas de `Instrucciones!A14`, que con 3.000 € se incumplía.
+   debajo del MÍNIMO de 1,8 que el propio documento pide en temporada alta
+   —el caso base se proyecta prudente a propósito— y del techo que se deduce
+   de `'3. Punto Equilibrio'`.
+4. **El alquiler se queda en 3.000 €/mes** (se probó bajarlo a 2.900 € y
+   RD-31 lo revirtió): con el ticket recalibrado son el 8,0 % de las ventas,
+   dentro del rango «2.000-4.500 EUR/mes» de `Instrucciones!A20` y del techo
+   de 8-10 % de `Instrucciones!A14`.
 5. **Aparecen los costes fijos que el plan no tenía y que el checklist sí
    obliga a contratar** (TEC-18): residuos y aceite usado, DDD, derechos de
    autor por la música, PRL, lavandería y reposición de menaje. Todos en celda
    verde con nota de «pide presupuesto en tu zona».
 
-Resultado del caso base: coste de personal **34,5 %** (techo 35 %), alquiler
-**8,2 %** (techo 10 %), coste de mercancía **27,2 %** (techo 32 %) y resultado
-neto **9,6 %**, dentro del «5-10 %» que el propio libro declara como margen
-medio del sector. **El plan ya no se suspende a sí mismo.** Las tres
+Resultado del caso base (medido en el libro del 2026-09-05): coste de personal
+**33,7 %** (techo 34 %), alquiler **8,0 %** (techo 10 %), coste de mercancía
+**27,2 %** (techo 32 %) y resultado neto **10,8 %**, algo por encima del
+«5-10 %» que el propio libro declara como margen medio del sector. **El plan
+ya no se suspende a sí mismo.** Las tres
 demostraciones que lo comprueban son las 3, 5 y 6 de §2.11 y las corre
 `grupo_a.demos()`.
 """
@@ -85,12 +89,14 @@ SUPUESTOS = {
         'en temporada alta',
         'recalibrado §7-bis.17 (v1.1: 55)'),
     'ticket_medio': (
-        None, None, 17.20, None,
-        'SIN IVA. Con el mix 65/35 equivale a 19,58 € de PVP, dentro del '
-        'rango 15-22 € que declara este mismo libro para el restaurante '
-        'casual',
-        'recalibrado por TEC-11/DOM-30 (v1.1: 18,50 € sin declarar si '
-        'llevaba IVA)'),
+        None, None, 18.20, None,
+        'SIN IVA. El PVP equivalente lo calcula la celda «PVP equivalente '
+        'con IVA» de abajo (al 10 % en sala son 20,02 € con los supuestos de '
+        'partida): dentro del rango 15-22 € que declara este mismo libro y '
+        'del 18-25 € que fija el documento del plan',
+        'recalibrado por TEC-11/DOM-30 y RD-08 (v1.1: 18,50 € sin declarar si '
+        'llevaba IVA; paso intermedio 17,20 €). Única entrada: la de RD-08 '
+        'se fundió aquí el 2026-09-05 (RD17-COD-12)'),
     'dias_apertura': (
         None, None, 310, None,
         'Cierre semanal de un día y vacaciones. El MISMO dato lo usan el P&L, '
@@ -203,9 +209,7 @@ SUPUESTOS = {
         'del 10 % para mobiliario: por debajo de 9-10 años el exceso no es '
         'deducible. Confírmalo con tu asesor',
         'recalibrado por RD-15 (v2.0 previa: 8 años = 12,5 % anual)'),
-    'ticket_medio_nota': (None, None, None, None, None, None),
 }
-del SUPUESTOS['ticket_medio_nota']
 
 # ---------------------------------------------------------------------------
 # §7-bis.17 — recalibración del ticket para cumplir el techo de labour cost
@@ -214,13 +218,9 @@ del SUPUESTOS['ticket_medio_nota']
 # del libro y «ticket medio objetivo de 18 a 25 euros» en el documento. NO se
 # toca ningún porcentaje escondido.
 # ---------------------------------------------------------------------------
-SUPUESTOS['ticket_medio'] = (
-    None, None, 18.20, None,
-    'SIN IVA. Con el mix 65/35 equivale a 20,72 € de PVP: dentro del rango '
-    '15-22 € que declara este mismo libro y del 18-25 € que fija el '
-    'documento del plan',
-    'recalibrado por TEC-11/DOM-30 y RD-08 (v1.1: 18,50 € sin declarar si '
-    'llevaba IVA)')
+# (El valor de RD-08 —18,20 €— vive en la ÚNICA entrada `ticket_medio` de
+# SUPUESTOS: tener dos, una muerta a diez líneas de la viva, dejó publicada
+# una tabla de recalibrado con 17,20 € cuando B5 valía 18,20.)
 
 # ==========================================================================
 # §2.3.2 — líneas de venta y su peso (resuelve el doble conteo de la bebida)
@@ -506,7 +506,9 @@ CHECKLIST = {
         # exención de los dos primeros ejercicios para entidades de nueva
         # creación, que es justo la que aplica al comprador de un plan de
         # apertura. Y TEC-25 dejaba el 671.4 («dos tenedores») como primera
-        # opción para un casual con ticket de 20,72 € de PVP.
+        # opción para un casual con ticket de 20,02 € de PVP.
+        # (Tabla de recalibrado y notas al cliente: lenguaje llano, sin ids
+        # internos; los ids van en los comentarios del código, CON-08.)
         (r'^Alta en el IAE',
          'Alta en el IAE: epígrafe 671.5 (restaurantes de un tenedor), 671.4 '
          '(dos tenedores) o 673.1 (servicios de bar especiales), según el '
@@ -637,45 +639,54 @@ CHECKLIST = {
 # Registro de lo que cambia de valor respecto de la v1.1 (§1.3: «la
 # diferencia entre el valor viejo y el nuevo queda anotada por fichero»)
 # ==========================================================================
+# La columna «Por qué» la LEE EL CLIENTE (Instrucciones): lenguaje llano y sin
+# códigos internos de auditoría. Trazabilidad, por fila: TEC-01/DOM-01 ·
+# §7-bis.17 + RC-19 · RD-24 · TEC-11/DOM-30 + RD-08 · RD-31 · — · TEC-07/
+# DOM-12/NUEVO-01 · TEC-20 · TEC-10/DOM-15 · TEC-06/DOM-15 · TEC-23/DOM-34 ·
+# TEC-04/DOM-04.
 RECALIBRADO = (
     ('Coste de personal imputado al P&L', '115.200 €',
      'Sale de la hoja Personal, por fórmula',
-     'TEC-01/DOM-01: el P&L decía «ver hoja Personal» y usaba otra cifra'),
+     'El P&L decía «ver hoja Personal» y usaba otra cifra; ahora lee la '
+     'hoja'),
     ('Plantilla', '7 personas / 209.171 €',
-     '6 puestos (dos parciales) / ~147.100 €',
-     '§7-bis.17: dimensionada por horas de servicio para 56 plazas; con la '
-     'plantilla anterior el coste laboral era el 66,3 % de las ventas'),
+     '7 puestos, tres a tiempo parcial (uno de ellos, suplencias) / '
+     '151.939 €',
+     'Dimensionada por horas de servicio para 56 plazas; con la plantilla '
+     'anterior el coste laboral era el 66,3 % de las ventas'),
     ('Cubiertos/día del año 1', '55', '80',
-     '1,43 rotaciones sobre 56 plazas, por debajo del techo de 1,8 que usa '
-     'el propio documento'),
-    ('Ticket medio', '18,50 € (sin declarar IVA)', '17,20 € SIN IVA',
-     'TEC-11/DOM-30: equivale a 19,58 € de PVP, dentro del rango 15-22 € del '
-     'propio libro'),
-    ('Alquiler', '3.000 €/mes', '2.900 €/mes',
-     'Con 3.000 € el ratio alquiler/ventas incumplía el techo de 8-10 % que '
-     'fija el propio libro'),
+     '1,43 rotaciones sobre las 56 plazas del propio pack; el documento pide '
+     'un MÍNIMO de 1,8 en temporada alta, así que el caso base se proyecta '
+     'por debajo a propósito'),
+    ('Ticket medio', '18,50 € (sin declarar IVA)', '18,20 € SIN IVA',
+     'El ticket de la versión 1.1 no decía si llevaba IVA; ahora se declara '
+     'sin IVA y equivale a 20,02 € de PVP al 10 % en sala, dentro del rango '
+     '15-22 € del propio libro'),
+    ('Alquiler', '3.000 €/mes', '3.000 €/mes (sin cambio)',
+     'Con el ticket recalibrado son el 8,0 % de las ventas, dentro del techo '
+     'de 8-10 % del propio libro'),
     ('Suministros', '1.200 €/mes', '1.800 €/mes',
-     'Una cocina con horno, cámaras y campana no consume el 3,4 % de las '
+     'Una cocina con horno, cámaras y campana no consume el 3,2 % de las '
      'ventas'),
     ('Fondo de maniobra', '30.000 € etiquetados «3 meses»',
      '3 × costes fijos de caja mensuales, por fórmula',
-     'TEC-07/DOM-12/NUEVO-01: los 30.000 € cubrían 1,8 meses'),
+     'Los 30.000 € cubrían 1,8 meses, no 3'),
     ('Amortización', '5.000 €/año (base implícita 50.000 €)',
      'Base amortizable real / vida útil, por fórmula',
-     'TEC-20: el inmovilizado del propio libro suma bastante más, y el fondo '
-     'de maniobra no se amortiza'),
+     'El inmovilizado del propio libro suma bastante más, y el fondo de '
+     'maniobra no se amortiza'),
     ('Cuota del préstamo en el P&L', '7.200 €/año de cuota completa',
      'sólo los intereses; el principal va a tesorería',
-     'TEC-10/DOM-15: meter la cuota entera antes del resultado convierte el '
-     'P&L en un flujo de caja'),
+     'Meter la cuota entera antes del resultado convierte el P&L en un flujo '
+     'de caja'),
     ('Impuesto de Sociedades', '25 % en los años 2 y 3, sin compensar la BIN',
      '15 % los dos primeros ejercicios con base positiva y compensación de '
      'bases negativas',
-     'TEC-06/DOM-15: arts. 26 y 29.1 LIS'),
+     'Artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades'),
     ('Comisiones de delivery', '5 % de TODA la facturación, sin interruptor',
      '% del canal × comisión de la plataforma, a 0 por defecto',
-     'TEC-23/DOM-34'),
+     'Si no repartes, no arrastras un coste inventado'),
     ('Coste de la bebida', 'food cost del 30 % sobre el total MÁS un 22 % '
      'sobre la bebida', 'cada familia paga su propio coste',
-     'TEC-04/DOM-04: 33.119,63 € cobrados dos veces en el año 1'),
+     '33.119,63 € cobrados dos veces en el año 1'),
 )

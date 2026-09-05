@@ -25,7 +25,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio: Bar-Restaurante — Plan Financiero Excel, Inversión Inicial y Checklist Apertura | AI Chef Pro',
     description:
-      'Plan de negocio completo para abrir un bar-restaurante en España 2026. Plan financiero Excel con P&L 3 años, punto de equilibrio, escenarios. Checklist apertura con 50+ trámites. Datos reales mercado español. €35.',
+      'Plan de negocio completo para abrir un bar-restaurante en España 2026. Plan financiero Excel con P&L 3 años, punto de equilibrio, escenarios. Checklist apertura con 64 trámites. Datos reales mercado español. €35.',
     keywords:
       'plan de negocio bar-restaurante, plan financiero restaurante España, abrir restaurante, checklist apertura restaurante, inversión inicial restaurante, punto de equilibrio hostelería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-negocio-bar-restaurante.jpg',
@@ -35,7 +35,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio: Bar-Restaurante — Plan Financiero Excel, Inversión Inicial y Checklist Apertura',
     productDescription:
-      'Plan de negocio completo para abrir un bar-restaurante en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 50+ trámites y análisis de mercado España 2026.',
+      'Plan de negocio completo para abrir un bar-restaurante en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 64 trámites y análisis de mercado España 2026.',
     price: '35.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -77,7 +77,7 @@ const data: PlanNegocioData = {
       },
       {
         q: '¿Qué trámites legales incluye el checklist de apertura?',
-        a: 'Más de 50 trámites en 6 fases: constitución de la SL, licencias municipales, obra y acondicionamiento, RRHH, marketing pre-apertura y primeros 90 días de operación.',
+        a: '64 trámites en 7 fases: constitución de la SL, licencias municipales, obra y acondicionamiento, RRHH, marketing pre-apertura y primeros 90 días de operación.',
       },
       {
         q: '¿Hay garantía de devolución?',
@@ -117,12 +117,12 @@ const data: PlanNegocioData = {
     titleGold: 'Bar-Restaurante',
     titleSubtitle: 'Plan Financiero Excel, Inversión Inicial y Checklist de Apertura',
     description:
-      'El plan de negocio completo para abrir un bar-restaurante en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios pesimista/realista/optimista y checklist de apertura con 50+ trámites y licencias.',
+      'El plan de negocio completo para abrir un bar-restaurante en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios pesimista/realista/optimista y checklist de apertura con 64 trámites y licencias.',
     checkItems: [
       'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
       'Inversión inicial detallada por partidas (~80K-150K EUR)',
       'Punto de equilibrio y análisis de viabilidad financiera',
-      'Checklist apertura: 50+ trámites y licencias España 2026',
+      'Checklist apertura: 64 trámites y licencias España 2026',
       'Acceso inmediato + actualizaciones de por vida',
     ],
     ctaLabel: 'DESCARGAR PLAN DE NEGOCIO — €35',
@@ -132,12 +132,12 @@ const data: PlanNegocioData = {
     subtitle:
       '9 secciones profesionales con datos reales del mercado español para construir la viabilidad financiera de tu bar-restaurante y presentarla a banco o inversores.',
     templates: [
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, personal e instrucciones. Todas las celdas editables con fórmulas.' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Hoja de supuestos que manda sobre todo el libro, P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, personal, tesorería mensual, cuadro de amortización del préstamo e instrucciones. Las celdas verdes se editan; el resto se calcula.' },
       { icon: 'Coins', title: 'Inversión Inicial Detallada', desc: 'Local, cocina, sala, marketing, legal y fondo de maniobra desglosados (~133K EUR de referencia para bar-restaurante medio en España).' },
       { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: 'Cuántos cubiertos al día necesitas para cubrir costes fijos, margen de contribución e interpretación de resultados con sensibilidad a ticket medio.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes ocupaciones y ticket medio para presentar a banco o inversores.' },
-      { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos por puesto, Seguridad Social al 33,4 %, 14 pagas y coste real por jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, licencias hostelería, obra y acondicionamiento, RRHH, marketing pre-apertura y primeros 90 días de operación.' },
+      { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos por puesto, Seguridad Social al 33 %, 14 pagas y coste real por jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.' },
+      { icon: 'ShieldCheck', title: 'Checklist Apertura (7 fases)', desc: 'Constitución SL, licencias hostelería, obra y acondicionamiento, RRHH, marketing pre-apertura, obligaciones que hay que tener cerradas antes de abrir y primeros 90 días de operación.' },
       { icon: 'Globe', title: 'Análisis de Mercado España 2026', desc: '81K+ restaurantes activos, ticket medio por comunidad, inversión media por tipo de local y tasa de cierre en los 3 primeros años.' },
       { icon: 'FileText', title: 'Instrucciones y Ratios de Referencia', desc: 'Food cost 28-32 %, personal inferior a 35 %, alquiler inferior a 10 % y datos sectoriales para comparar con tu proyecto y detectar desviaciones.' },
       { icon: 'Banknote', title: 'Plan de Financiación', desc: 'Opciones reales: ICO, ENISA, préstamo bancario, inversores privados, business angels y subvenciones autonómicas con orden recomendado de gestión.' },
@@ -165,7 +165,7 @@ const data: PlanNegocioData = {
     reasons: [
       { icon: 'FileSpreadsheet', title: 'Plan Financiero Profesional', desc: 'No es una plantilla genérica. Es un plan financiero Excel con P&L previsional a 3 años, fórmulas activas y celdas editables. Cambias el alquiler o el ticket medio y todo se recalcula automáticamente.' },
       { icon: 'BarChart3', title: 'Datos Reales España 2026', desc: '81K+ restaurantes activos en España, ticket medio por comunidad autónoma, inversión media por tipo de local y tasa de cierre del sector en los primeros 3 años. No supuestos: cifras del mercado real.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura Completo', desc: 'Más de 50 trámites organizados en 6 fases: constitución SL, licencias hostelería, obra, RRHH, marketing pre-apertura y primeros 90 días. No te dejas nada pendiente.' },
+      { icon: 'ShieldCheck', title: 'Checklist Apertura Completo', desc: '64 trámites organizados en 7 fases: constitución SL, licencias hostelería, obra, RRHH, marketing pre-apertura y primeros 90 días. No te dejas nada pendiente.' },
       { icon: 'Banknote', title: 'Listo para Banco e Inversores', desc: 'Es exactamente el formato que pide un banco para evaluar la financiación: P&L 3 años, punto de equilibrio, 3 escenarios, ratios financieros y plan de financiación. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
@@ -192,7 +192,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 1',
         title: 'Cuadro de Personal con Seg. Social',
         value: '€19',
-        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto: jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.',
+        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y coste real por puesto: jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.',
         image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-equipo.jpg',
       },
       {
@@ -236,7 +236,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Qué trámites legales incluye el checklist de apertura?',
-      a: 'Más de 50 trámites organizados en 6 fases: constitución de la SL (notaría, registro mercantil, Hacienda), licencias municipales (actividad, terraza, música), obra y acondicionamiento (proyecto técnico, licencia de obra), RRHH (contratos, Seg. Social, PRL), marketing pre-apertura y primeros 90 días de operación.',
+      a: '64 trámites organizados en 7 fases: constitución de la SL (notaría, registro mercantil, Hacienda), licencias municipales (actividad, terraza, música), obra y acondicionamiento (proyecto técnico, licencia de obra), RRHH (contratos, Seg. Social, PRL), marketing pre-apertura y primeros 90 días de operación.',
     },
     {
       q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
@@ -257,7 +257,7 @@ const data: PlanNegocioData = {
       'Plan financiero Excel con P&L previsional a 3 años',
       'Inversión inicial detallada (~133K EUR de referencia)',
       'Punto de equilibrio + 3 escenarios (pesimista/realista/optimista)',
-      'Checklist apertura con 50+ trámites en 6 fases',
+      'Checklist apertura con 64 trámites en 7 fases',
       'Análisis de mercado España 2026 con ratios sectoriales',
       'Plan de financiación: ICO, ENISA, banca, business angels',
       'BONUS: Cuadro Personal con Seg. Social (€19)',
@@ -285,7 +285,7 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.1 · septiembre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-bar-restaurante',

@@ -7,7 +7,7 @@ const bonuses = [
     label: 'BONUS 1',
     title: 'Cuadro de Personal con Seg. Social',
     value: '€19',
-    desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto: jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.',
+    desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y coste real por puesto: jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.',
     image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-equipo.jpg',
   },
   {

@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',
-    a: 'Más de 50 trámites organizados en 6 fases: constitución de la SL (notaría, registro mercantil, Hacienda), licencias municipales (actividad, terraza, música), obra y acondicionamiento (proyecto técnico, licencia de obra), RRHH (contratos, Seg. Social, PRL), marketing pre-apertura y primeros 90 días de operación.',
+    a: '64 trámites organizados en 7 fases: constitución de la SL (notaría, registro mercantil, Hacienda), licencias municipales (actividad, terraza, música), obra y acondicionamiento (proyecto técnico, licencia de obra), RRHH (contratos, Seg. Social, PRL), marketing pre-apertura y primeros 90 días de operación.',
   },
   {
     q: '¿Cuál es la diferencia con planes de negocio gratuitos?',

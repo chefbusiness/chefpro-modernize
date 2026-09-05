@@ -52,7 +52,7 @@ Cobertura por sección de la SPEC:
 
   Convenciones de familia: verdes `E8F5E9` desbloqueadas, calculadas sin
   relleno, «sin dato» = `""` (nunca `0`), protección de hoja **sin
-  contraseña**, A4, bio anclada, «Versión 2.0 · agosto 2026 · …».
+  contraseña**, A4, bio anclada, «Versión N.N · mes año · …» (`VERSION_FMT`).
 
 IDEMPOTENCIA: todo lo que se escribe es absoluto o va detrás de un centinela
 estructural. DV y formato condicional se PURGAN antes de reescribirse (es donde
@@ -126,10 +126,16 @@ FMT_ENT = '#,##0'
 FMT_DEC = '#,##0.0'
 FMT_DEC2 = '#,##0.00'
 
-VERSION = '2.0'
-VERSION_FMT = ('Versión ' + VERSION + ' · agosto 2026 · aichef.pro/{pid} · '
-               'info@aichef.pro')
-RX_VERSION = re.compile(r'^Versi[óo]n \d+\.\d+ · ')
+VERSION = '2.1'    # 2.1 (2026-09-05): RD-17, IVA de la bebida en sala al 10 %
+#: Mes que se estampa junto a la versión. Es el de la VERSIÓN, no el del run:
+#: un hermano aplicado en octubre con este mismo motor sigue siendo la 2.1 de
+#: septiembre. Se cambia a la vez que VERSION.
+VERSION_MES = 'septiembre 2026'
+VERSION_FMT = ('Versión ' + VERSION + ' · ' + VERSION_MES
+               + ' · aichef.pro/{pid} · info@aichef.pro')
+#: Captura el número: los gates comparan `m.group(1) == VERSION`, no una
+#: subcadena (RD17-COD-08).
+RX_VERSION = re.compile(r'^Versi[óo]n (\d+\.\d+) · ')
 
 #: Bio anclada de la familia (la Fase A la dejó en 2 de los 30 xlsx).
 BIO_LINE = ('Diseñado por John Guerrero — chef y consultor gastronómico desde '
@@ -181,14 +187,28 @@ PARAMS_MOTOR = (
     ('smi_anual', 'SMI anual de referencia (€)', SMI_ANUAL, FMT_EUR0,
      'SMI 2026 · RD 126/2026 · suelo legal por jornada completa'),
     ('is_nueva', 'Impuesto de Sociedades, nueva creación', IS_NUEVA_CREACION,
-     FMT_PCT, 'Art. 29.1 LIS: los DOS primeros ejercicios con base imponible '
-     'positiva'),
+     FMT_PCT, 'Art. 29.1 LIS: el PRIMER ejercicio con base imponible '
+     'positiva y el SIGUIENTE. El libro lo aproxima contando los dos '
+     'primeros ejercicios con base positiva: coincide con la ley salvo que '
+     'entre ellos haya un ejercicio en pérdidas'),
     ('is_general', 'Impuesto de Sociedades, tipo general', IS_GENERAL,
-     FMT_PCT, 'A partir del tercer ejercicio con base positiva'),
+     FMT_PCT, 'A partir del tercer ejercicio con base positiva. Es el tipo '
+     'general del art. 29.1 LIS: si tu cifra de negocios queda por debajo '
+     'de 1 M € (microempresa) o de 10 M € (reducida dimensión), desde 2025 '
+     'hay tipos más bajos que se implantan de forma gradual; confirma el de '
+     'tu ejercicio con tu asesor y cámbialo aquí'),
     ('iva_reducido', 'IVA repercutido de restauración', IVA_RESTAURACION,
      FMT_PCT, 'Tipo reducido de hostelería'),
+    # RD-17 (2026-09-05): la bebida alcohólica servida en sala NO va aquí
+    # (art. 91.Uno.2.2 de la Ley del IVA): tiene su celda en el bloque de
+    # desglose del IVA de grupo_a (`iva_bebida`, 10 %).
     ('iva_general', 'IVA repercutido/soportado general', IVA_GENERAL,
-     FMT_PCT, 'Bebidas alcohólicas, suministros, equipamiento y servicios'),
+     FMT_PCT, 'Tipo general. En este libro lo usan dos cosas: el IVA que '
+     'soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el '
+     'que repercutes por el alcohol que sale por delivery (es una entrega de '
+     'bienes). El alcohol servido en sala va al reducido: su tipo está en el '
+     'bloque de desglose del IVA. Suministros, equipamiento y servicios '
+     'tienen su tipo en la celda de abajo'),
 )
 
 HOJA_SUPUESTOS = '0. Supuestos'
@@ -589,6 +609,44 @@ def _purgar_dv(ws, sqref, tipo):
         if not (dv.type == tipo and str(dv.sqref) == sqref)]
 
 
+def _celdas_de(sqref):
+    """Expande un sqref (`'B4:B8 D5 F1:F3'`) a coordenadas sueltas."""
+    from openpyxl.utils.cell import range_boundaries
+    out = set()
+    for parte in str(sqref).split():
+        c1, r1, c2, r2 = range_boundaries(parte)
+        for col in range(c1, c2 + 1):
+            for fila in range(r1, r2 + 1):
+                out.add(get_column_letter(col) + str(fila))
+    return out
+
+
+def _purgar_dv_celdas(ws, coords):
+    """Quita `coords` de TODA validación existente antes de añadir la nueva.
+
+    RD-17 / RD17-COD-01 (2026-09-05): purgar por igualdad de `sqref` no
+    basta. Al añadir una celda a un grupo (B63 al de porcentajes) el rango
+    nuevo ya no es idéntico al viejo, `_purgar_dv_duplicadas` no lo reconoce
+    y las dos validaciones conviven SOLAPADAS sobre 22 celdas — cosa que
+    Excel no admite (diálogo de reparación al abrir). Se resta celda a celda
+    y la validación que se queda vacía desaparece.
+    """
+    nuevas = set(coords)
+    quedan = []
+    for dv in ws.data_validations.dataValidation:
+        viejas = _celdas_de(dv.sqref)
+        restos = viejas - nuevas
+        if not restos:
+            continue
+        if len(restos) != len(viejas):
+            dv.sqref = ' '.join(sorted(
+                restos, key=lambda c: (int(re.search(r'(\d+)', c).group(1)),
+                                       column_index_from_string(
+                                           re.match(r'([A-Z]+)', c).group(1)))))
+        quedan.append(dv)
+    ws.data_validations.dataValidation = quedan
+
+
 def _purgar_dv_duplicadas(ws):
     vistas, fuera = set(), []
     for dv in ws.data_validations.dataValidation:
@@ -610,6 +668,8 @@ def dv_lista(ws, rango, opciones, titulo='Valor no válido', mensaje=None,
     """
     formula = '"' + ','.join(opciones) + '"'
     _purgar_dv(ws, rango, 'list')
+    _purgar_dv_celdas(ws, set().union(*[_celdas_de(r)
+                                        for r in (celdas or [rango])]))
     dv = DataValidation(type='list', formula1=formula, allow_blank=True,
                         showErrorMessage=True, errorTitle=titulo,
                         error=mensaje or ('Elige un valor de la lista: '
@@ -649,6 +709,7 @@ def dv_numerica(ws, coordenadas, minimo=0, maximo=None, entero=False,
                             error=mensaje or ('Escribe un valor entre '
                                               + str(minimo) + ' y '
                                               + str(maximo) + '.'))
+    _purgar_dv_celdas(ws, coords)
     ws.add_data_validation(dv)
     for c in coords:
         dv.add(c)
@@ -920,7 +981,10 @@ class Parametros(object):
         col_et = get_column_letter(max(1, column_index_from_string(letra) - 1))
         val(ws, col_et + str(fila), etiqueta)
         cel = ws[coord]
-        if cel.value is None:
+        if cel.value is None or (_es_numero(valor)
+                                 and not _es_numero(cel.value)):
+            # RD17-COD-07: un parámetro declarado numérico no se queda con un
+            # texto heredado alimentando fórmulas; se repone el defecto.
             val(ws, coord, valor, fmt, verde_=True)
         else:
             if fmt:

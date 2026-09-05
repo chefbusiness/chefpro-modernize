@@ -5,12 +5,12 @@ import {
 import FadeIn from '../ebook/FadeIn';
 
 const categories = [
-  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, personal e instrucciones. Todas las celdas editables con fórmulas.' },
+  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (9 hojas)', desc: 'Hoja de supuestos que manda sobre todo el libro, P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, personal, tesorería mensual, cuadro de amortización del préstamo e instrucciones. Las celdas verdes se editan; el resto se calcula.' },
   { icon: Coins, title: 'Inversión Inicial Detallada', desc: 'Local, cocina, sala, marketing, legal y fondo de maniobra desglosados (~133K EUR de referencia para bar-restaurante medio en España).' },
   { icon: TrendingUp, title: 'Punto de Equilibrio (Break-Even)', desc: 'Cuántos cubiertos al día necesitas para cubrir costes fijos, margen de contribución e interpretación de resultados con sensibilidad a ticket medio.' },
   { icon: BarChart3, title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes ocupaciones y ticket medio para presentar a banco o inversores.' },
-  { icon: Users, title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos por puesto, Seguridad Social al 33,4 %, 14 pagas y coste real por jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.' },
-  { icon: ShieldCheck, title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, licencias hostelería, obra y acondicionamiento, RRHH, marketing pre-apertura y primeros 90 días de operación.' },
+  { icon: Users, title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos por puesto, Seguridad Social al 33 %, 14 pagas y coste real por jefe de cocina, jefe de sala, cocineros, camareros y ayudantes.' },
+  { icon: ShieldCheck, title: 'Checklist Apertura (7 fases)', desc: 'Constitución SL, licencias hostelería, obra y acondicionamiento, RRHH, marketing pre-apertura, obligaciones que hay que tener cerradas antes de abrir y primeros 90 días de operación.' },
   { icon: Globe, title: 'Análisis de Mercado España 2026', desc: '81K+ restaurantes activos, ticket medio por comunidad, inversión media por tipo de local y tasa de cierre en los 3 primeros años.' },
   { icon: FileText, title: 'Instrucciones y Ratios de Referencia', desc: 'Food cost 28-32 %, personal inferior a 35 %, alquiler inferior a 10 % y datos sectoriales para comparar con tu proyecto y detectar desviaciones.' },
   { icon: Banknote, title: 'Plan de Financiación', desc: 'Opciones reales: ICO, ENISA, préstamo bancario, inversores privados, business angels y subvenciones autonómicas con orden recomendado de gestión.' },

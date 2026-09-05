@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-main.py — Orquestador del post-proceso v2.0 de la familia «Planes de Negocio».
+main.py — Orquestador del post-proceso v2.x (`motor.VERSION`) de la familia
+«Planes de Negocio».
 
     python3 main.py --producto <pid> [--dry-run] [--solo motor|a|b|c] \
                     [--json informe.json]
@@ -580,7 +581,8 @@ def gates_spec9(carpeta, nombres, dets):
                     elif isinstance(v, str):
                         if motor.RX_BIO.search(v):
                             bio = True
-                        if motor.RX_VERSION.match(v) and '2.0' in v:
+                        mv = motor.RX_VERSION.match(v)
+                        if mv and mv.group(1) == motor.VERSION:
                             version = True
         if formulas == 0:
             res['sin_formulas'].append(fname)
@@ -807,15 +809,16 @@ def demo_bio_version(carpeta, nombres, pid):
                         continue
                     if motor.RX_BIO.search(c.value):
                         bio = True
-                    if motor.RX_VERSION.match(c.value) and '2.0' in c.value \
+                    mv = motor.RX_VERSION.match(c.value)
+                    if mv and mv.group(1) == motor.VERSION \
                             and pid in c.value:
                         version = True
         if bio and version:
             ok += 1
         else:
             fallos.append(fname + ': ' + ('sin bio ' if not bio else '')
-                          + ('sin línea de versión 2.0 con el pid'
-                             if not version else ''))
+                          + ('sin línea de versión ' + motor.VERSION
+                             + ' con el pid' if not version else ''))
     return {'con_bio_y_version': ok, 'total': len(nombres), 'fallos': fallos}
 
 
@@ -824,7 +827,8 @@ def demo_bio_version(carpeta, nombres, pid):
 # ==========================================================================
 def main():
     ap = argparse.ArgumentParser(
-        description='Post-proceso v2.0 de la familia Planes de Negocio')
+        description='Post-proceso v' + motor.VERSION
+        + ' de la familia Planes de Negocio')
     ap.add_argument('--producto', default='plan-negocio-bar-restaurante',
                     help='id de carpeta en astro-site/public/dl/')
     ap.add_argument('--dry-run', action='store_true',
@@ -921,7 +925,7 @@ def main():
             os.makedirs(os.path.dirname(os.path.abspath(args.json)),
                         exist_ok=True)
             with open(args.json, 'w', encoding='utf-8') as fh:
-                json.dump({'producto': pid, 'version': '2.0', 'spec': SPEC,
+                json.dump({'producto': pid, 'version': motor.VERSION, 'spec': SPEC,
                            'rol': 'motor',
                            'modo': 'dry-run' if args.dry_run else 'produccion',
                            'abortado': str(e), 'fallos': [str(e)], 'exit': 2},
@@ -1134,7 +1138,7 @@ def main():
 
     informe = {
         'producto': pid,
-        'version': '2.0',
+        'version': motor.VERSION,
         'rol': 'motor',
         'spec': SPEC,
         'fecha': datetime.datetime.now().isoformat(timespec='seconds'),

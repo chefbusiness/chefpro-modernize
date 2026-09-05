@@ -7,7 +7,7 @@ const items = [
   'Plan financiero Excel con P&L previsional a 3 años',
   'Inversión inicial detallada (~133K EUR de referencia)',
   'Punto de equilibrio + 3 escenarios (pesimista/realista/optimista)',
-  'Checklist apertura con 50+ trámites en 6 fases',
+  'Checklist apertura con 64 trámites en 7 fases',
   'Análisis de mercado España 2026 con ratios sectoriales',
   'Plan de financiación: ICO, ENISA, banca, business angels',
   'BONUS: Cuadro Personal con Seg. Social (€19)',

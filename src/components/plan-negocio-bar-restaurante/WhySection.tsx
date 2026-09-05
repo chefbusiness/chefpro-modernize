@@ -15,7 +15,7 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: 'Checklist Apertura Completo',
-    desc: 'Más de 50 trámites organizados en 6 fases: constitución SL, licencias hostelería, obra, RRHH, marketing pre-apertura y primeros 90 días. No te dejas nada pendiente.',
+    desc: '64 trámites organizados en 7 fases: constitución SL, licencias hostelería, obra, RRHH, marketing pre-apertura y primeros 90 días. No te dejas nada pendiente.',
   },
   {
     icon: Banknote,
