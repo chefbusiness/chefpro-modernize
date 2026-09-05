@@ -372,3 +372,15 @@ portada de cada idioma **no** es `fr/index.html`).
 - **Toda mención con nombre de John enlaza a `https://johnguerrero.es`** con `target="_blank" rel="noopener noreferrer author"`. En JSON-LD, el `Person` lleva `url` = su marca personal y `sameAs` con marca + canal. Los `alt` de imagen no se enlazan.
 - Las páginas de agente (8C) incrustarán **vídeos demo de Loom** cuando estén; no bloquean el arranque.
 - Gotcha de `faq.astro`: el campo `a` se pinta como TEXTO PLANO y alimenta el FAQPage; el HTML con enlaces va en `aHtml` (plantilla con backticks). Meter markup en `a` lo escupe literal en la página.
+
+### Correos de producto: uno por cada actualización o lanzamiento, en cola de 5 días (John, 2026-09-05)
+
+Regla de trabajo permanente: **cada vez que un producto digital se actualiza de versión (2.0, 2.1…) o se crea uno
+nuevo, se programa en Resend un broadcast individual** que lo anuncia (a los que ya lo tienen: la nueva versión está en
+su dashboard sin coste; a los demás: se vende). Los correos forman **una sola cola con 5 días de separación**: el hueco
+de cada uno es el `scheduled_at` más tardío que haya en Resend + 5 días, a las 08:00 UTC (10:00 Madrid). Plantillas:
+`scripts/productos-digitales/emails/broadcast-kits-tareas-v2-es.html` (actualización) y
+`broadcast-manual-manager-lanzamiento-es.html` (lanzamiento); se programan con
+`scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`, luego `--scheduled-at`). El slot
+se anota en el handoff y en `CALENDARIO-V2-SEMANAL.md`. Detalle: skill local `resend-aichef` y memoria
+`feedback_correo-por-cada-producto-actualizado-o-nuevo`.

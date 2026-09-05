@@ -105,6 +105,17 @@ checklist del bar y checklist del paellero) son **byte a byte** los del repo (`c
 · septiembre 2026», «(9 hojas)», «(7 fases)» y «64 trámites». El changelog 2.0/2.1 se pinta en el dashboard (island
 `client:only`, no verificable con curl): comprobarlo al hacer la compra de prueba.
 
+## 6-bis. Correos de producto (regla nueva de John, 5-sep 13:40) y cola en Resend
+
+**Regla permanente**: por cada producto actualizado o creado, un broadcast individual en Resend; cola con 5 días de
+separación (persistida en CLAUDE.md, skill `resend-aichef` y memoria `feedback_correo-por-cada-producto-actualizado-o-nuevo`).
+
+| Slot (08:00 UTC) | Correo | Estado |
+|---|---|---|
+| 2026-09-07 | Lanzamiento Manual del Manager (ES) | programado (`3749f084…`) |
+| 2026-09-12 | Actualización Plan de Negocio Bar-Restaurante 2.1 (ES) — `broadcast-plan-negocio-bar-restaurante-v2.1-es.html` | **programado** (`7d49e0a3…`), prueba enviada a John |
+| 2026-09-17 → 2026-10-02 | los 4 hermanos de línea A, uno por slot, según se apliquen | pendiente |
+
 ## 7. Próxima sesión
 
 Por la alternancia toca **PAR (producto nuevo)**, y el presupuesto semanal (1 producto/semana) se reabre el lunes 7-sep:

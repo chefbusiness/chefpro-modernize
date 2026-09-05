@@ -56,3 +56,20 @@ imagen `https://aichef.pro/…` no responde 200, o si la hora está en el pasado
 
 Revisar deliverability en resend.com/emails (bounces < 4 %, spam < 0,08 %) — memoria
 `reference_resend` del proyecto de prospección.
+
+## Cola de correos de producto (regla de John, 2026-09-05)
+
+Por **cada producto actualizado de versión o creado** se programa un broadcast individual; la cola lleva **5 días entre
+correos**. Procedimiento:
+
+1. Hueco: `curl -s -H "Authorization: Bearer $KEY" https://api.resend.com/broadcasts` → el `scheduled_at` más tardío
+   (o el último `sent_at`) **+ 5 días a las 08:00Z**. Nunca dos el mismo día. Ejemplo: Manual del Manager el 7-sep → Plan
+   Bar-Restaurante 2.1 el 12-sep → siguiente el 17-sep…
+2. HTML individual en `scripts/productos-digitales/emails/broadcast-<pid>-v<version>-es.html` (actualización: copiar
+   `broadcast-kits-tareas-v2-es.html`; lanzamiento: `broadcast-manual-manager-lanzamiento-es.html`). Qué trae la versión
+   sale del changelog del producto (`src/data/productos-changelog.ts`), en lenguaje de cliente; CTA a la landing con UTM
+   `utm_source=email&utm_medium=broadcast&utm_content=<pid>-v<version>`; párrafo «¿Ya lo compraste?» con la página
+   `-access`; bloque de baja `{{{RESEND_UNSUBSCRIBE_URL}}}`.
+3. `resend-broadcast.py --html … --subject … --name "Actualización <producto> <versión> (ES)" --test john@chefbusiness.co`
+   y, acto seguido, el mismo comando con `--scheduled-at <slot>`. El script bloquea si un enlace no responde 200.
+4. Anotar el slot en el handoff de la sesión y en `CALENDARIO-V2-SEMANAL.md`.
