@@ -2,7 +2,7 @@
 title: "15 Técnicas de Cocina Tailandesa AI para Principiantes: Domina el Arte Thai con Inteligencia Artificial"
 description: "La cocina tailandesa representa uno de los pilares más fascinantes de la gastronomía asiática, caracterizada por su perfecto equilibrio entre los cinco…"
 pubDate: 2026-02-09
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/cocina-tailandesa-aichefpro-1.jpeg
 imageAlt: "Cocina Tailandesa AI con AI Chef Pro"
@@ -827,7 +827,7 @@ wpId: 2666
 <p style="font-size: 18px; margin: 20px 0; line-height: 1.6;">Únete a más de 5,000 chefs que están dominando técnicas culinarias complejas en tiempo récord gracias a AI Chef Pro. Prueba <strong>AI Chef Miembro por 10 € al mes</strong></strong> sin compromiso.</p>
 <p style="font-size: 16px; margin: 20px 0;"><strong>Incluye acceso inmediato a:</strong><br>✓ Cocina Tailandesa AI con 500+ recetas<br>✓ Food Pairing AI para combinaciones perfectas<br>✓ Mermas GenCal para optimización de costes<br>✓ Todos los recetarios regionales (20+ cocinas)</p>
 <div style="margin-top: 25px;">
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" style="display: inline-block; background-color: white; color: #00f2fe; padding: 18px 40px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 18px; transition: all 0.3s;">Prueba Gratis 7 Días →</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" style="display: inline-block; background-color: white; color: #00f2fe; padding: 18px 40px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 18px; transition: all 0.3s;">Empieza desde 10 €/mes →</a>
 </div>
 </div>
 

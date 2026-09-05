@@ -2,7 +2,7 @@
 title: "Consultor de Restaurantes: Multiplica tu Capacidad con IA"
 description: "Cómo un consultor de restaurantes multiplica su capacidad con IA: diagnósticos más rápidos, mejores entregables y más clientes. Tabla de servicios y precios."
 pubDate: 2025-02-24
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/Guia-del-Asesor-de-Restaurantes-Implementando-IA-en-tu-Consultoria.jpg
 imageAlt: "Guía del Asesor de Restaurantes: Implementando IA en tu Consultoría"
@@ -16,7 +16,7 @@ faq:
   - q: "¿Cómo ayuda la IA a un consultor a atender más clientes?"
     a: "Delegando las tareas que más tiempo consumen: escandallos, redacción de informes, análisis de rentabilidad, fichas técnicas y respuesta a reseñas. Con más de 70 agentes trabajando en paralelo, el consultor libera horas para dedicarse a la estrategia y a la relación con el cliente, multiplicando su capacidad sin perder calidad."
   - q: "¿Cuánto cuesta usar AI Chef Pro en mi consultoría?"
-    a: "Hay un plan de entrada AI Chef Miembro con 10.000 créditos al mes.” El plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Un solo informe ahorrado paga varios meses de uso."
+    a: "Hay un plan de entrada AI Chef Miembro con 10.000 créditos al mes. El plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Un solo informe ahorrado paga varios meses de uso."
   - q: "¿Necesito saber de tecnología para usar estos agentes?"
     a: "No. La interfaz está en español nativo y diseñada para que cualquier profesional de la hostelería la use sin formación técnica. Si manejas WhatsApp y Excel, puedes manejar AI Chef Pro. Los agentes entienden el lenguaje del oficio: food cost, escandallo, ingeniería de menú y todo el vocabulario del sector."
   - q: "¿Qué tareas de consultoría se pueden delegar en la IA?"

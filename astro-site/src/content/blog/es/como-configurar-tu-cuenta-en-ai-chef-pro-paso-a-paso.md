@@ -1,26 +1,26 @@
 ---
 title: "AI Chef Pro Cómo Funciona: Empieza con AI Chef Miembro Paso a Paso"
-description: "Aprende cómo funciona AI Chef Pro paso a paso: alta con AI Chef Miembro, 10.000 créditos/mes, elige agentes de IA por rol e invierte bien tus créditos.”"
+description: "Aprende cómo funciona AI Chef Pro paso a paso: alta con AI Chef Miembro, 10.000 créditos/mes, elige agentes de IA por rol e invierte bien tus créditos."
 pubDate: 2024-10-01
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/configurar-tu-cuenta-en-AI-Chef-Pro.jpg
 imageAlt: "Cómo Configurar tu Cuenta en AI Chef Pro Paso a Paso"
 lang: es
 wpId: 559
 faq:
-  - q: "¿AI Chef Pro tiene un plan de entrada?”"
-    a: "Sí, el plan AI Chef Miembro incluye 10.000 créditos al mes y se paga con tarjeta.” Puedes usarlo todo el tiempo que quieras con acceso completo a todos los agentes y los siete idiomas. No hay cargos ocultos ni periodos de prueba limitados."
+  - q: "¿AI Chef Pro tiene un plan de entrada?"
+    a: "Sí, el plan AI Chef Miembro incluye 10.000 créditos al mes y se paga con tarjeta. Puedes usarlo todo el tiempo que quieras con acceso completo a todos los agentes y los siete idiomas. No hay cargos ocultos ni periodos de prueba limitados."
   - q: "¿Necesito tarjeta para registrarme?"
     a: "No. El registro en el plan AI Chef Miembro requiere tarjeta bancaria. No introducirás ningún dato de pago, así que no hay riesgo de cargos inesperados. Cuando decidas pasar a un plan de pago, entonces sí podrás añadir tu método de pago."
-  - q: "¿Qué son los créditos y cuántos da el plan AI Chef Miembro?”"
+  - q: "¿Qué son los créditos y cuántos da el plan AI Chef Miembro?"
     a: "Los créditos son la unidad que mide el consumo de recursos al lanzar una tarea. El plan AI Chef Miembro te da 10.000 créditos al mes, que se renuevan automáticamente. Cada tarea gasta una cantidad proporcional a su complejidad, y puedes ver el coste estimado antes de confirmar."
   - q: "¿En qué idiomas está disponible AI Chef Pro?"
     a: "La plataforma funciona en siete idiomas, con español nativo como base de desarrollo. Eso significa que los textos no son traducciones automáticas, sino redacciones naturales. También puedes trabajar en inglés, francés, alemán, italiano, portugués y neerlandés."
   - q: "¿Qué agente elijo si soy chef ejecutivo?"
     a: "Empieza por Cocina Creativa para recetas, el agente de escandallos para costes y el agente de protocolos APPCC para seguridad alimentaria. Con esos tres cubres creación, control de costes y documentación legal. Luego puedes explorar Gastro Lexicum o el agente de formación."
   - q: "¿Cuándo me conviene pasar a un plan de pago?"
-    a: "Cuando los 3.000 créditos mensuales se te quedan cortos de forma recurrente. Si cada mes te quedas sin créditos antes de terminar tus tareas habituales, el plan Premium Pro (25 €/mes, 85.000 créditos) o el Plus (50 €/mes, 175.000 créditos) te darán la capacidad que necesitas sin interrupciones."
+    a: "Cuando los 10.000 créditos mensuales se te quedan cortos de forma recurrente. Si cada mes te quedas sin créditos antes de terminar tus tareas habituales, el plan Premium Pro (25 €/mes, 85.000 créditos) o el Plus (50 €/mes, 175.000 créditos) te darán la capacidad que necesitas sin interrupciones."
 ---
 
 AI Chef Pro funciona como una suite de más de 70 agentes de inteligencia artificial culinarios, especializados por rol y por tarea. Tú, profesional de la hostelería, le describes lo que necesitas —un escandallo, una carta de temporada, un protocolo APPCC, un plan de marketing— y el agente te devuelve un documento profesional listo para usar. Está desarrollado en siete idiomas, con español nativo, y puedes empezar con AI Chef Miembro, con 10.000 créditos al mes. Vamos al paso a paso para que le saques todo el partido desde el primer día.
@@ -45,7 +45,7 @@ Cada agente entiende el contexto profesional de la hostelería: no te va a suger
 
 El plan AI Chef Miembro te da 10.000 créditos cada mes y se paga con tarjeta. La unidad son créditos, no «usos». Más adelante verás cómo se consumen, pero la idea es simple: cada tarea que lanzas gasta una cantidad de créditos según su complejidad.
 
-Para empezar, solo tienes que [empezar con AI Chef Miembro en la app](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=configurar-cuenta). El flujo de alta es limpio: entras, te registras con tu correo electrónico, confirmas la cuenta desde el enlace que recibes y ya estás dentro, con los 3.000 créditos del mes disponibles. No hay periodos de prueba trampa ni cargos ocultos. Desde el primer minuto puedes lanzar tareas reales.
+Para empezar, solo tienes que [empezar con AI Chef Miembro en la app](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=configurar-cuenta). El flujo de alta es limpio: entras, te registras con tu correo electrónico, confirmas la cuenta desde el enlace que recibes y ya estás dentro, con los 10.000 créditos del mes disponibles. No hay periodos de prueba trampa ni cargos ocultos. Desde el primer minuto puedes lanzar tareas reales.
 
 Nada más entrar, verás que la plataforma te da la bienvenida en español, pero también puedes cambiar a cualquiera de los siete idiomas disponibles. Si trabajas en un entorno multilingüe o tienes proveedores que prefieren el inglés, el francés o el alemán, el mismo agente te responde en el idioma que elijas, manteniendo la precisión técnica. La base nativa en español garantiza que las recetas, escandallos y protocolos suenen naturales y no como traducciones automáticas llenas de calcos.
 
@@ -76,7 +76,7 @@ Esta tabla no es una foto fija; con el tiempo irás descubriendo otros agentes q
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
 
-## Paso 4: Invierte bien tus primeros 3.000 créditos
+## Paso 4: Invierte bien tus primeros 10.000 créditos
 
 Con 10.000 créditos en el plan AI Chef Miembro puedes hacer varias tareas de prueba reales, no simples demostraciones. La clave está en elegir aquellas que más tiempo te ahorran y que te permiten valorar la calidad del resultado. Aquí tienes un itinerario de diez tareas recomendadas para sacarles el máximo partido:
 
@@ -93,7 +93,7 @@ Con 10.000 créditos en el plan AI Chef Miembro puedes hacer varias tareas de pr
 | 9 | Ideas de food pairing o maridaje | Chef ejecutivo / sumiller | Combinaciones de platos y bebidas con argumentos técnicos y sugerencias de presentación. |
 | 10 | Plantilla de inventario o pedido semanal | Gerente / jefe de compras | Formato estructurado para controlar existencias, mermas y necesidades de pedido por proveedor. |
 
-Empieza por las tareas que más tiempo te roban cada semana. Si pasas horas montando escandallos en Excel, la tarea 1 te devuelve la tarde. Si preparar la documentación del APPCC te quita el sueño, la tarea 4 te da un borrador sobre el que trabajar. Los 3.000 créditos rinden para probar varias de estas tareas sin miedo, porque cada una consume una cantidad proporcional a su complejidad, no un fijo plano que penalice los trabajos más elaborados.
+Empieza por las tareas que más tiempo te roban cada semana. Si pasas horas montando escandallos en Excel, la tarea 1 te devuelve la tarde. Si preparar la documentación del APPCC te quita el sueño, la tarea 4 te da un borrador sobre el que trabajar. Los 10.000 créditos rinden para probar varias de estas tareas sin miedo, porque cada una consume una cantidad proporcional a su complejidad, no un fijo plano que penalice los trabajos más elaborados.
 
 ## Cómo funcionan los créditos (y cuánto rinden)
 
@@ -107,13 +107,13 @@ En el plan AI Chef Miembro, los 10.000 créditos se renuevan cada mes. Si un mes
 
 
 
-A modo orientativo, con 3.000 créditos al mes puedes cubrir varias tareas de alto valor: por ejemplo, dos escandallos completos, una carta de temporada y un borrador de plan APPCC. Si tu volumen de trabajo crece y necesitas lanzar decenas de tareas al mes, los planes de pago multiplican los créditos disponibles.
+A modo orientativo, con 10.000 créditos al mes puedes cubrir varias tareas de alto valor: por ejemplo, dos escandallos completos, una carta de temporada y un borrador de plan APPCC. Si tu volumen de trabajo crece y necesitas lanzar decenas de tareas al mes, los planes superiores multiplican los créditos disponibles.
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
 
 ## Cuándo dar el salto a un plan de pago
 
-El plan AI Chef Miembro está pensado para que pruebes la plataforma a fondo, sin prisas. Pero si los 3.000 créditos se te quedan cortos mes a mes porque la herramienta se ha vuelto parte de tu operativa diaria, es el momento de mirar los planes de pago. Aquí tienes el desglose exacto:
+El plan AI Chef Miembro está pensado para que pruebes la plataforma a fondo, sin prisas. Pero si los 10.000 créditos se te quedan cortos mes a mes porque la herramienta se ha vuelto parte de tu operativa diaria, es el momento de mirar los planes de pago. Aquí tienes el desglose exacto:
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |

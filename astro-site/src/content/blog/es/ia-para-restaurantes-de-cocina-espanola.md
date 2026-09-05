@@ -2,7 +2,7 @@
 title: "IA para Restaurantes de Cocina Española: La Guía Definitiva para Transformar tu Negocio Gastronómico"
 description: "La inteligencia artificial para restaurantes de cocina española está revolucionando la manera en que los profesionales de la hostelería gestionan sus…"
 pubDate: 2026-01-24
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-restaurates-cocina-espanola-4.jpg
 imageAlt: "IA para Restaurantes de Cocina Española: La Guía Definitiva para Transformar tu Negocio Gastronómico"
@@ -495,7 +495,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Probar funcionalidades</td><td>Acceso básico limitado</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Bares de tapas pequeños</td><td>Todas las herramientas con límites</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos</td><td>Límites expandidos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes con alta rotación</td><td>Uso extensivo + análisis</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Grupos de restauración</td><td>Uso ilimitado + prioridad</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>Probar la plataforma sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Bares de tapas pequeños</td><td>Todas las herramientas con límites</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos</td><td>Límites expandidos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes con alta rotación</td><td>Uso extensivo + análisis</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Grupos de restauración</td><td>Uso ilimitado + prioridad</td></tr></tbody></table></div></figure>
 
 
 
@@ -782,7 +782,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">probar AI Chef Pro gratuitamente</a> y descubrir cómo la inteligencia artificial puede transformar tu negocio gastronómico. Para consultas específicas sobre implementación en tu establecimiento, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">contactar con nuestro equipo</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">probar AI Chef Pro desde 10 €</a> y descubrir cómo la inteligencia artificial puede transformar tu negocio gastronómico. Para consultas específicas sobre implementación en tu establecimiento, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">contactar con nuestro equipo</a>.</p>
 
 
 

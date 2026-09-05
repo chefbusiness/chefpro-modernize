@@ -2,7 +2,7 @@
 title: "Gestión de Eventos Gastronómicos con IA: Guía Completa 2026"
 description: "La industria de los eventos gastronómicos atraviesa una transformación sin precedentes. Según datos de 2025, más del 80% de las agencias de eventos en España…"
 pubDate: 2025-12-21
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: tutoriales
 image: /blog-assets/2025/12/gestion-de-eventos-gastronomicos-con-ia-1.jpeg
 imageAlt: "Gestión de Eventos Gastronómicos con IA: Guía Completa"
@@ -877,7 +877,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Explorar funcionalidades</td><td>Acceso básico a herramientas principales</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs freelance, eventos pequeños</td><td>Acceso completo con límites mensuales</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Pequeñas empresas de catering</td><td>Límites expandidos, funciones avanzadas</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Empresas de catering establecidas</td><td>Uso extensivo, análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Grandes operadores, consultoras</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10€/mes</td><td>Explorar la plataforma sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs freelance, eventos pequeños</td><td>Acceso completo con límites mensuales</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Pequeñas empresas de catering</td><td>Límites expandidos, funciones avanzadas</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Empresas de catering establecidas</td><td>Uso extensivo, análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Grandes operadores, consultoras</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></div></figure>
 
 
 
@@ -1019,7 +1019,7 @@ wpId: 1825
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">probar AI Chef Pro gratuitamente</a> y descubrir cómo puede transformar tu aproximación a los eventos gastronómicos. Para una implementación personalizada, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">contactar con nuestro equipo</a> o explorar nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">mentoría online</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">probar AI Chef Pro desde 10 €</a> y descubrir cómo puede transformar tu aproximación a los eventos gastronómicos. Para una implementación personalizada, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">contactar con nuestro equipo</a> o explorar nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">mentoría online</a>.</p>
 
 
 

@@ -2,7 +2,7 @@
 title: "8 Errores de Food Cost que Arruinan tu Restaurante"
 description: "Los 8 errores de food cost que sangran tu restaurante: síntoma, coste real y cómo corregirlos con IA. Con rangos sanos por tipo de local en 2026."
 pubDate: 2026-02-25
-modDate: 2026-09-03
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/8-errores-food-cost-aichefpro-3.jpg
 imageAlt: "8 Errores que Destruyen el Food Cost en tu Restaurante (y Cómo Solucionarlos)"
@@ -17,8 +17,8 @@ faq:
     a: "En mi experiencia, el que más duele es cocinar sin escandallos reales. Cuando nadie ha calculado cuánto cuesta de verdad cada plato, es habitual encontrar recetas con un food cost del 40-45 % que el dueño creía tener en el 30 %. El escandallo es la partida de nacimiento de cada plato. Sin él, todo lo demás —raciones, compras, precios— es andar a ciegas."
   - q: "¿Cómo ayuda la IA a bajar el food cost en un restaurante?"
     a: "La IA actúa en todos los puntos de fuga: genera escandallos automáticos con costes actualizados en tiempo real, estandariza fichas técnicas con gramajes fijos, analiza patrones de merma para que compres justo lo necesario y aplica ingeniería de menú para que sepas qué platos empujar y cuáles rediseñar o retirar. Es como tener un consultor de gestión mirando tus números las 24 horas."
-  - q: "¿AI Chef Pro es de pago?”"
-    a: "Sí, el plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos, con tarjeta y sin permanencia.” Con eso puedes probar escandallos, generar fichas técnicas y hacer algún análisis de inventario antes de decidir si te compensa pasar a un plan de pago. Los planes de pago empiezan en 25 € al mes y el plan Max, con créditos ilimitados, cuesta 95 € al mes o 950 € al año."
+  - q: "¿AI Chef Pro es de pago?"
+    a: "Sí, el plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos, con tarjeta y sin permanencia. Con eso puedes probar escandallos, generar fichas técnicas y hacer algún análisis de inventario antes de decidir si te compensa pasar a un plan de pago. Los planes de pago empiezan en 25 € al mes y el plan Max, con créditos ilimitados, cuesta 95 € al mes o 950 € al año."
   - q: "¿Cada cuánto debería revisar los escandallos de mis platos?"
     a: "Idealmente, cada vez que un proveedor te sube precio o cambias de género. En la práctica, al menos una vez al mes. En épocas de inflación alta, como la que estamos viviendo, conviene hacerlo cada 15 días. Con herramientas de IA como AI Chef Pro esto no es una pesadilla, porque actualizas el precio del ingrediente una sola vez y todos los escandallos se recalculan automáticamente."
 ---

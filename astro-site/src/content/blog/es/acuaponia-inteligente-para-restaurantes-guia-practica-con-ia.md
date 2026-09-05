@@ -2,7 +2,7 @@
 title: "Acuaponía Inteligente para Restaurantes: Guía Práctica con IA"
 description: "La búsqueda de ingredientes frescos, locales y sostenibles se ha convertido en una prioridad estratégica para los restaurantes que desean diferenciarse en un…"
 pubDate: 2026-01-07
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/acuaponia-inteligente-para-restaurantes-3.jpeg
 imageAlt: "Acuaponía Inteligente para Restaurantes: Guía Práctica con IA"
@@ -836,7 +836,7 @@ wpId: 2065
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center;">
 <h3 style="color: #000; margin-top: 0; font-size: 26px;">🌿 Transforma tu Cocina con Inteligencia Artificial</h3>
 <p style="color: #1a1a1a; font-size: 17px; margin-bottom: 25px;">AI Chef Pro te ofrece más de 55 herramientas especializadas para chefs y profesionales de la hostelería. Desde generadores de recetas hasta gestión de mermas, descubre cómo la IA puede potenciar tu creatividad y eficiencia.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=acuaponia-inteligente-para-restaurantes-guia-practica-con-ia" target="_blank" style="display: inline-block; background-color: #000; color: #FFD700; padding: 18px 45px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Empieza Gratis Ahora</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=acuaponia-inteligente-para-restaurantes-guia-practica-con-ia" target="_blank" style="display: inline-block; background-color: #000; color: #FFD700; padding: 18px 45px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Empieza desde 10 €/mes →</a>
 </div>
 
 

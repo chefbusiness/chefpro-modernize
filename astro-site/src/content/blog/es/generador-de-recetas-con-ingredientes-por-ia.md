@@ -2,7 +2,7 @@
 title: "Generador de Recetas con Ingredientes por IA: Transforma lo que Tienes en Casa"
 description: "¿Cuántas veces has abierto la nevera y te has quedado mirando fijamente los ingredientes sin saber qué cocinar? ¿Cuánta comida has tirado porque no sabías…"
 pubDate: 2025-09-03
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/generador-recetas-ia-4.jpeg
 imageAlt: "Generador de Recetas con Ingredientes por IA: Transforma lo que Tienes en Casa"
@@ -2006,7 +2006,7 @@ wpId: 1410
 
 <div class="wp-block-group has-background" style="background-color: #e8f4fd; padding: 25px; border-radius: 8px; text-align: center;">
 <h3>🚀 ¡Comienza Tu Revolución Culinaria Hoy!</h3>
-<p><strong>Paso 1:</strong> <a style="color: #0066cc; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=generador-de-recetas-con-ingredientes-por-ia" target="_blank" rel="noopener" data-lasso-id="3229">Accede gratuitamente a AI Chef Pro</a> y explora sus capacidades básicas</p>
+<p><strong>Paso 1:</strong> <a style="color: #0066cc; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=generador-de-recetas-con-ingredientes-por-ia" target="_blank" rel="noopener" data-lasso-id="3229">Accede a AI Chef Pro desde 10 €</a> y explora sus capacidades básicas</p>
 <p><strong>Paso 2:</strong> Genera tu primera receta personalizada usando los ingredientes que tienes en casa ahora mismo</p>
 <p><strong>Paso 3:</strong> Experimenta con <a style="color: #0066cc;" href="https://aichef.pro/blog/libreria-de-prompts-para-food-pairing-ai" target="_blank" rel="noopener" data-lasso-id="3230">Food Pairing AI</a> para descubrir combinaciones sorprendentes</p>
 <p><strong>Paso 4:</strong> Únete a la comunidad de más de 50,000 usuarios que ya han transformado su experiencia culinaria</p>

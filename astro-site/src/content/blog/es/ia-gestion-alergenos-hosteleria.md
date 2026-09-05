@@ -2,7 +2,7 @@
 title: "Gestión de Alérgenos en Restaurante: los 14 y la Ley 2026"
 description: "Los 14 alérgenos de declaración obligatoria, qué te exige la ley en España y la UE, y cómo generar cartas y fichas de alérgenos automáticas con IA."
 pubDate: 2026-04-08
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/ia-gestion-alergenos-chef-cocina.jpg
 imageAlt: "Chef revisando etiquetas de alérgenos en cocina profesional con inteligencia artificial"
@@ -20,7 +20,7 @@ faq:
   - q: "¿La IA elimina el riesgo de contaminación cruzada en mi cocina?"
     a: "No. La IA documenta y avisa sobre los alérgenos presentes en cada plato, pero la manipulación segura para evitar la contaminación cruzada sigue siendo responsabilidad del equipo de cocina. Lo que sí hace es facilitar la trazabilidad y la formación del personal."
   - q: "¿Cuánto cuesta gestionar los alérgenos con AI Chef Pro?"
-    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta, suficiente para probar el sistema.” El plan Premium Pro cuesta 25 euros al mes con 85.000 créditos. Hay planes superiores según el volumen de recetas que necesites gestionar."
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta, suficiente para probar el sistema. El plan Premium Pro cuesta 25 euros al mes con 85.000 créditos. Hay planes superiores según el volumen de recetas que necesites gestionar."
 ---
 
 Si llevas más de un año en cocina, sabes que la **gestión de alérgenos restaurante** dejó de ser una recomendación para convertirse en el primer punto que revisa cualquier inspector de sanidad en 2026. No es una moda ni un extra para quedar bien: es una obligación legal que arrastramos desde diciembre de 2014 y que, a día de hoy, sigue siendo el talón de Aquiles de la mayoría de los negocios de hostelería.

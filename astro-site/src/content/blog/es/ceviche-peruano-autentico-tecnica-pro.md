@@ -2,7 +2,7 @@
 title: "Ceviche Peruano Auténtico: Técnica Pro de Marinado Perfecto"
 description: "Receta original de ceviche peruano con leche de tigre. Tiempos exactos de marinado, pescado fresco y técnicas profesionales. Patrimonio de Perú."
 pubDate: 2026-03-21
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/ceviche-peruano.jpg
 imageAlt: "Ceviche Peruano Auténtico: Técnica Pro de Marinado Perfecto"
@@ -114,4 +114,4 @@ wpId: 3296
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Descubre Más Recetas Pro</h3>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ceviche-peruano-autentico-tecnica-pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ceviche-peruano-autentico-tecnica-pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR AI CHEF MIEMBRO →</a> </div>

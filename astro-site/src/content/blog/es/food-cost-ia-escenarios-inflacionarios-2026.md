@@ -2,7 +2,7 @@
 title: "Subida de Precios Alimentos: Protege tu Margen 2026"
 description: "Ante la subida de precios de alimentos en tu restaurante, protege el margen con reingeniería de recetas, sustituciones y repricing. Simula con IA."
 pubDate: 2026-02-22
-modDate: 2026-09-03
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/foodcost-ia-featured-1.jpg
 imageAlt: "Cómo proteger tu food cost con IA ante la subida de precios de alimentos en 2026"
@@ -18,7 +18,7 @@ faq:
   - q: "¿Cómo puedo simular una subida de precios con IA antes de aplicarla?"
     a: "Con herramientas como AI Chef Pro introduces el incremento estimado de un insumo —por ejemplo, carne +12%— y la IA recalcula al instante el food cost de toda tu carta. Puedes ver qué platos cruzan el umbral de rentabilidad, probar sustituciones de ingredientes y simular nuevos PVP, todo en segundos y sin arriesgar un solo plato real."
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye?"
-    a: "AI Chef Pro ofrece el plan AI Chef Miembro con 10.000 créditos al mes por 10 €.” El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. Hay plan Plus por 50 €/mes con 175.000 créditos, y plan Max por 95 €/mes con créditos ilimitados. También existe el Max Anual por 950 €/año. Todos incluyen acceso a más de 70 agentes de IA culinarios en español nativo y 7 idiomas."
+    a: "AI Chef Pro ofrece el plan AI Chef Miembro con 10.000 créditos al mes por 10 €. El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. Hay plan Plus por 50 €/mes con 175.000 créditos, y plan Max por 95 €/mes con créditos ilimitados. También existe el Max Anual por 950 €/año. Todos incluyen acceso a más de 70 agentes de IA culinarios en español nativo y 7 idiomas."
   - q: "¿Cada cuánto tiempo debo revisar los precios de la carta?"
     a: "En periodos de inflación activa, revisa los escandallos cada dos semanas y ajusta precios en rondas programadas cada 6-8 semanas si es necesario. En periodo estable, una revisión mensual de escandallos y una actualización de precios ligada a cambios de temporada —primavera-verano y otoño-invierno— suele ser suficiente. No esperes al cierre anual para tomar decisiones."
 ---

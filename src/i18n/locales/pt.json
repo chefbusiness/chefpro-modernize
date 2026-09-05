@@ -1255,14 +1255,14 @@
   },
   "seo": {
     "title": "AI Chef Pro: 50+ Ferramentas IA para Chefs e Restaurantes",
-    "description": "Suite de inteligencia artificial para chefs e restaurantes. 50+ ferramentas: receitas IA, food cost, fichas tecnicas, marketing gastronomico. Teste gratis.",
+    "description": "Suite de inteligência artificial para chefs e restaurantes. 50+ ferramentas: receitas IA, food cost, fichas técnicas, marketing gastronómico. Comece hoje.",
     "keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, inteligencia artificial restauracao, ferramentas ia chef",
     "og_image_alt": "AI Chef Pro - Suite de 50+ Ferramentas IA para Chefs Profissionais"
   },
   "pages": {
     "index": {
       "seo_title": "AI Chef Pro: 50+ Ferramentas IA para Chefs e Restaurantes",
-      "seo_description": "Suite de inteligencia artificial para chefs e restaurantes. 50+ ferramentas: receitas IA, food cost, fichas tecnicas, marketing. Teste gratis.",
+      "seo_description": "Suite de inteligência artificial para chefs e restaurantes. 50+ ferramentas: receitas IA, food cost, fichas técnicas, marketing. Comece hoje.",
       "seo_keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, ferramentas ia chef, ia cozinha"
     },
     "mentoria_online": {
@@ -1366,7 +1366,7 @@
       "tagline": "A ferramenta usada por mais de {{userCount}} profissionais da gastronomia.",
       "cta_primary": "Começar a economizar",
       "cta_secondary": "Ver planos e preços",
-      "no_card": "Sem cartão de crédito. Acesso imediato."
+      "no_card": "A partir de 10 €/mês · Sem fidelização · Acesso imediato"
     },
     "results": [
       {
@@ -2234,7 +2234,7 @@
       "tagline": "Poupe até 3 horas diárias na gestão de cozinha.",
       "cta_primary": "Experimentar agora",
       "cta_secondary": "Ver planos e preços",
-      "no_card": "Sem cartão de crédito · Acesso imediato"
+      "no_card": "A partir de 10 €/mês · Sem fidelização · Acesso imediato"
     },
     "results": [
       {
@@ -2387,7 +2387,7 @@
       "role": "Chef Proprietário, Restaurante Méndez, Madrid"
     },
     "pricing_section": {
-      "title": "Software de gestão de cozinha com IA a partir de 0€",
+      "title": "Software de gestão de cozinha com IA a partir de 10 €",
       "subtitle": "Começa com o plano Membro e cresce quando o teu negócio precisar. Sem fidelização.",
       "annual_note": "Plano anual AI Chef Premium Max disponível a 950€/ano · Poupe 2 meses"
     },
@@ -2433,7 +2433,7 @@
       "tagline": "Do conceito ao prato em minutos, não em horas.",
       "cta_primary": "Experimentar agora",
       "cta_secondary": "Ver planos e preços",
-      "no_card": "Sem cartão de crédito · Acesso imediato"
+      "no_card": "A partir de 10 €/mês · Sem fidelização · Acesso imediato"
     },
     "results": [
       {
@@ -2586,7 +2586,7 @@
       "role": "Chef Executiva, Restaurante Origen, Bilbao"
     },
     "pricing_section": {
-      "title": "Aceda ao gerador de receitas com IA a partir de 0€",
+      "title": "Aceda ao gerador de receitas com IA a partir de 10 €",
       "subtitle": "Começa com o plano Membro e cresce quando o teu negócio precisar. Sem fidelização.",
       "annual_note": "Plano anual AI Chef Premium Max disponível a 950€/ano · Poupe 2 meses"
     },
@@ -2632,7 +2632,7 @@
       "tagline": "Pare de perder dinheiro por não controlar o seu food cost.",
       "cta_primary": "Calcular o meu food cost",
       "cta_secondary": "Ver planos e preços",
-      "no_card": "Sem cartão de crédito · Acesso imediato"
+      "no_card": "A partir de 10 €/mês · Sem fidelização · Acesso imediato"
     },
     "results": [
       {
@@ -2785,7 +2785,7 @@
       "role": "Diretor de Operações, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
-      "title": "Comece a controlar o seu food cost a partir de 0€",
+      "title": "Comece a controlar o seu food cost a partir de 10 €",
       "subtitle": "Calcula o custo do teu menu completo com o plano Membro por 10 €/mês. Sem fidelização.",
       "annual_note": "Plano anual AI Chef Premium Max disponível a 950€/ano · Poupe 2 meses"
     },

@@ -2,7 +2,7 @@
 title: "Marketing para Restaurantes en Redes Sociales: Plan IA 2026"
 description: "Plan de marketing para restaurantes en redes sociales con IA: calendario mensual por canal (Instagram, TikTok, Google Business, email) y prompts de copys."
 pubDate: 2026-03-16
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/marketing-restaurantes-ia-analytics-redes-sociales.jpg
 imageAlt: "Gerente de restaurante analizando métricas de marketing digital y redes sociales con inteligencia artificial en tablet"
@@ -18,7 +18,7 @@ faq:
   - q: "¿Cómo mantengo el mismo tono de voz en todos los canales?"
     a: "Define primero la personalidad de tu restaurante: cercano, elegante, gamberro… Luego pide a la IA que redacte siempre en ese tono concreto, indicándoselo en cada prompt. Crea un pequeño documento de marca con ejemplos de frases que usarías y frases que no, y compártelo con quien escriba."
   - q: "¿Cuánto cuesta hacer el marketing de mi restaurante con IA?"
-    a: "Con el plan AI Chef Miembro de AI Chef Pro (10 € al mes, 10.000 créditos) puedes generar los copys básicos de un calendario mensual.” Si necesitas producir más contenido o llevar varios canales, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un restaurante activo en redes."
+    a: "Con el plan AI Chef Miembro de AI Chef Pro (10 € al mes, 10.000 créditos) puedes generar los copys básicos de un calendario mensual. Si necesitas producir más contenido o llevar varios canales, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un restaurante activo en redes."
   - q: "¿Cómo sé si la estrategia en redes está funcionando?"
     a: "Mide lo que impacta en caja: mensajes pidiendo mesa desde redes, clics en el enlace de reservas de la bio, llamadas desde Google Business y códigos de descuento exclusivos canjeados. Lleva un control sencillo en una hoja de cálculo y pregunta en sala cómo os conocieron los nuevos clientes."
 ---

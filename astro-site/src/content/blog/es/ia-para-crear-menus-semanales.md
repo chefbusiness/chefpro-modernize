@@ -2,7 +2,7 @@
 title: "Menú Semanal para Restaurante: Plantilla y Rotación con IA"
 description: "Crea el menú semanal de tu restaurante con IA: menús cíclicos de 4 semanas, plantilla lista para usar y escandallo bajo control. Empieza por 10 € al mes, sin permanencia."
 pubDate: 2026-01-26
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-crear-menus-semanales-aichefpro-1.jpeg
 imageAlt: "IA para Crear Menús Semanales: Guía Definitiva para Profesionales de Hostelería"
@@ -18,7 +18,7 @@ faq:
   - q: "¿AI Chef Pro sirve para colectividades y comedores escolares?"
     a: "Sí. Sus agentes de IA generan menús semanales aplicando métodos como el sistema figurativo por colores, gestionan alérgenos y adaptan las raciones a diferentes grupos de edad o necesidades dietéticas. Puedes definir ciclos de 4 semanas y exportar escandallos y listas de compra para producción centralizada."
   - q: "¿Cómo puedo empezar con AI Chef Pro?"
-    a: "Solo tienes que acceder a la aplicación: el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, sin permanencia.” Con esos créditos puedes generar varios menús semanales, calcular escandallos y probar el flujo completo antes de decidir si necesitas un plan superior."
+    a: "Solo tienes que acceder a la aplicación: el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, sin permanencia. Con esos créditos puedes generar varios menús semanales, calcular escandallos y probar el flujo completo antes de decidir si necesitas un plan superior."
   - q: "¿En qué idiomas funciona la plataforma?"
     a: "AI Chef Pro está disponible en 7 idiomas, con español nativo de España. Todos los agentes, menús y fichas técnicas se generan en el idioma que elijas, lo que facilita el trabajo en equipos multiculturales o en cadenas con presencia en varios países."
 ---

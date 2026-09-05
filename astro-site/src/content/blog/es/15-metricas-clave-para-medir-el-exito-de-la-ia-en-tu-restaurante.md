@@ -2,7 +2,7 @@
 title: "15 Métricas Clave para Medir el Éxito de la IA en tu Restaurante"
 description: "En el competitivo sector de la restauración actual, implementar inteligencia artificial ya no es una opción, sino una necesidad estratégica. Sin embargo, la…"
 pubDate: 2026-01-23
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/metricas-ia-restaurantes-aichefpro-1.jpg
 imageAlt: "15 Métricas Clave para Medir el Éxito de la IA en tu Restaurante"
@@ -805,7 +805,7 @@ wpId: 2337
 <div style="background: linear-gradient(135deg, #e63946 0%, #c1121f 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px; font-weight: bold;">🍳 Comienza hoy a medir el impacto de la IA en tu cocina</h3>
 <p style="color: #ffffff; font-size: 16px; margin-bottom: 20px; max-width: 650px; margin-left: auto; margin-right: auto;">AI Chef Pro te proporciona las herramientas de IA especializadas que necesitas, con métricas de uso integradas para que siempre sepas el valor que estás obteniendo. Pruébalo por 10€.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ffffff; color: #c1121f; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Comenzar Prueba Gratuita</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ffffff; color: #c1121f; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Empieza desde 10 €/mes</a>
 </div>
 
 

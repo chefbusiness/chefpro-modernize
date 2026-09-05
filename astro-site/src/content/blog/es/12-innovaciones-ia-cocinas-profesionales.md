@@ -2,7 +2,7 @@
 title: "12 Innovaciones de IA que Están Revolucionando las Cocinas Profesionales"
 description: "El sector gastronómico está viviendo una transformación sin precedentes. Según datos recientes, el 74% de los establecimientos hosteleros en España ya…"
 pubDate: 2025-12-26
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/12-innovaciones-ia-cocinas-3.jpeg
 imageAlt: "12 Innovaciones de IA que Están Revolucionando las Cocinas Profesionales"
@@ -49,7 +49,7 @@ wpId: 1923
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <p style="color: #1a1a1a; font-size: 24px; font-weight: bold; margin: 0 0 15px 0;">🚀 Transforma tu Cocina con IA</p>
 <p style="color: #333; font-size: 16px; margin: 0 0 20px 0;">Descubre AI Chef Pro: la suite de más de 55 herramientas de inteligencia artificial diseñadas específicamente para profesionales de la gastronomía.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Prueba Gratis Ahora</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Empieza desde 10 €/mes →</a>
 </div>
 
 

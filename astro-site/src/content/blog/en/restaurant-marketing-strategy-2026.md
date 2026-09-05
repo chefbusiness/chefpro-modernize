@@ -2,7 +2,7 @@
 title: "Restaurant Marketing Strategy 2026: 15 Tactics That Actually Drive Covers"
 description: "The restaurant industry has undergone a massive transformation in how customers discover, choose, and return to dining establishments. 60% of new restaurant…"
 pubDate: 2026-04-09
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ai-in-gastronomy
 lang: en
 wpId: 3364
@@ -14,7 +14,7 @@ faq:
   - q: "What is the best loyalty program for small restaurants?"
     a: "Digital, points-based systems offer the best balance of affordability and functionality for small restaurants. Look for solutions that integrate with your existing POS and require minimal staff training."
   - q: "Is AI marketing tools worth it for independent restaurants?"
-    a: "Yes. AI tools like those available at AI Chef Pro level the playing field, providing insights and automation previously available only to large chains. The free tier makes experimentation risk-free."
+    a: "Yes. AI tools like those available at AI Chef Pro level the playing field, providing insights and automation previously available only to large chains. The Member plan, from €10/month with 10,000 credits and no commitment, makes experimentation low-risk."
   - q: "How important are online reviews in 2026?"
     a: "Online reviews remain critical, influencing both search rankings and customer decisions. Active review management—encouraging positive reviews and professionally responding to all feedback—directly impacts revenue."
   - q: "Should restaurants invest in both digital and offline marketing?"

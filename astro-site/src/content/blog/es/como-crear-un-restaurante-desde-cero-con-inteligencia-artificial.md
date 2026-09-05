@@ -2,7 +2,7 @@
 title: "Cómo Crear un Restaurante desde Cero con Inteligencia Artificial: Guía Completa Paso a Paso"
 description: "La inteligencia artificial está revolucionando la forma de emprender en el sector gastronómico, ofreciendo herramientas que antes estaban reservadas…"
 pubDate: 2026-01-20
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/crear-restaurante-con-ia-1.jpeg
 imageAlt: "Cómo Crear un Restaurante desde Cero con Inteligencia Artificial: Guía Completa Paso a Paso"
@@ -657,7 +657,7 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%); padding: 35px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
 <h3 style="color: #000; margin: 0 0 15px 0; font-size: 26px;">📊 Planes AI Chef Pro para Cada Necesidad</h3>
-<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Miembro (Gratis)</strong> &#8211; Perfecto para probar las funcionalidades básicas</p>
+<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Miembro (10 €/mes)</strong> &#8211; 10.000 créditos al mes para probar la plataforma sin permanencia</p>
 <p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Pro (10€/mes)</strong> &#8211; Ideal para chefs individuales o pequeños establecimientos</p>
 <p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Premium (15€/mes)</strong> &#8211; Para cocinas activas con uso frecuente</p>
 <p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Premium Pro (25€/mes)</strong> &#8211; Desarrollo, liderazgo y creación de alto volumen</p>

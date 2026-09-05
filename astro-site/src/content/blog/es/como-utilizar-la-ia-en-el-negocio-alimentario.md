@@ -2,7 +2,7 @@
 title: "Cómo Utilizar la IA en el Negocio Alimentario: Guía Completa para Profesionales de la Hostelería 2026"
 description: "La inteligencia artificial en el negocio alimentario ha dejado de ser una promesa futurista para convertirse en una realidad transformadora que está…"
 pubDate: 2026-01-12
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/como-utilizar-la-ia-en-el-negocio-alimentario-1.jpeg
 imageAlt: "Cómo Utilizar la IA en el Negocio Alimentario: Guía Completa para Profesionales de la Hostelería"
@@ -883,7 +883,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">explorar AI Chef Pro</a> y descubrir cómo más de 55 herramientas especializadas pueden transformar tu aproximación al negocio alimentario. Con planes desde 0€, no hay excusa para no comenzar hoy mismo tu viaje hacia la cocina del futuro.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">explorar AI Chef Pro</a> y descubrir cómo más de 55 herramientas especializadas pueden transformar tu aproximación al negocio alimentario. Con planes desde 10 €/mes, no hay excusa para no comenzar hoy mismo tu viaje hacia la cocina del futuro.</p>
 
 
 

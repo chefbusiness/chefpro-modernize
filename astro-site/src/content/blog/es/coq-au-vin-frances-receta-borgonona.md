@@ -2,7 +2,7 @@
 title: "Coq au Vin Francés: Receta Borgoñona Paso a Paso Pro"
 description: "La auténtica receta francesa de coq au vin: pollo cocido lentamente en vino tinto de Borgoña. Técnica Pro para salsa espejada y carne tierna."
 pubDate: 2026-03-24
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: recetas
 image: /blog-assets/2026/03/coq-au-vin.jpg
 imageAlt: "Coq au Vin Francés: Receta Borgoñona Paso a Paso Pro"
@@ -104,4 +104,4 @@ wpId: 3297
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Técnicas Francesas Pro</h3>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=coq-au-vin-frances-receta-borgonona" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=coq-au-vin-frances-receta-borgonona" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;">PROBAR AI CHEF MIEMBRO →</a> </div>

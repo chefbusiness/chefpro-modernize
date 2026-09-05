@@ -2,7 +2,7 @@
 title: "Cómo Salvar un Restaurante en Crisis: Plan de Choque 24-48h"
 description: "Cómo salvar un restaurante en crisis en 24-48h: diagnóstico exprés, triaje de carta, caja y equipo, y qué automatizar con IA para ganar tiempo, sin humo."
 pubDate: 2026-01-21
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/salva-tu-restaurante-con-ia-aichefpro-1.jpeg
 imageAlt: "Recupera Tu Restaurante o Negocio de Hostelería en 24/48 Horas Usando la IA de AI Chef Pro: Guía Definitiva 2026"
@@ -20,7 +20,7 @@ faq:
   - q: "¿De verdad ayuda la IA a salvar un restaurante o es humo?"
     a: "La IA no salva restaurantes; los hosteleros sí. Pero te da velocidad y claridad en el diagnóstico: escandallos en minutos, análisis de carta, previsiones de compra y borradores de comunicación. Te quita horas de trabajo manual para que tú puedas decidir con datos. Es un copiloto, no un piloto automático. Si esperas magia, te vas a decepcionar."
   - q: "¿Cuánto cuesta empezar con AI Chef Pro?"
-    a: "Puedes empezar hoy mismo con el plan AI Chef Miembro de 10.000 créditos al mes, sin permanencia.” Te da acceso a los agentes de IA para hacer un primer diagnóstico de tu restaurante. Si necesitas más capacidad, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos. No hay permanencia ni letra pequeña."
+    a: "Puedes empezar hoy mismo con el plan AI Chef Miembro de 10.000 créditos al mes, sin permanencia. Te da acceso a los agentes de IA para hacer un primer diagnóstico de tu restaurante. Si necesitas más capacidad, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos. No hay permanencia ni letra pequeña."
 ---
 
 Si estás leyendo esto con el estómago encogido porque la caja de ayer no cuadró, el ticket medio sigue bajando y el proveedor te ha llamado tres veces esta semana, respira hondo. Cómo salvar un restaurante en crisis empieza por una decisión incómoda: en las próximas cuatro horas no vas a reinventar nada. Vas a hacer un diagnóstico exprés de dónde se escapa el dinero y vas a cortar la hemorragia. Punto. La reinvención del concepto, el plan de marketing y la nueva carta de temporada vienen después, cuando el paciente esté estable.

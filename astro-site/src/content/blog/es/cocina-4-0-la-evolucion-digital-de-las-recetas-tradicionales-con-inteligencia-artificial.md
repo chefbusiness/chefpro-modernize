@@ -2,7 +2,7 @@
 title: "Cocina 4.0: La Evolución Digital de las Recetas Tradicionales con Inteligencia Artificial"
 description: "Descubre cómo la inteligencia artificial está revolucionando las recetas tradicionales en la era de la Cocina 4.0. Guía completa sobre las mejores…"
 pubDate: 2025-09-13
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/cocina-4-0-ai-chef-pro-1.jpeg
 imageAlt: "Cocina 4.0: La Evolución Digital de las Recetas Tradicionales con Inteligencia Artificial"
@@ -28,7 +28,7 @@ wpId: 1606
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 30px 0; text-align: center; color: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
 <h3 style="color: white; font-size: 24px; margin-bottom: 15px;">🚀 Descubre AI Chef Pro Miembro</h3>
 <p style="font-size: 16px; margin-bottom: 20px; color: #f0f0f0;">La suite más completa de herramientas IA para profesionales culinarios. Genera recetas, optimiza costes y potencia tu creatividad.</p>
-<p><a style="background: #fff; color: #667eea; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5770">Probar Gratis Ahora</a></p>
+<p><a style="background: #fff; color: #667eea; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5770">Empieza desde 10 €/mes</a></p>
 </div>
 
 

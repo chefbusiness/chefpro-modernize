@@ -2,7 +2,7 @@
 title: "IA para Bares: Escandallo de Tapas y Carta Rentable 2026"
 description: "IA para bares: escandallo de tapas y raciones, carta rentable, turnos y RRSS local. Guía chef-a-chef con agentes de IA en español, sin tecnicismos."
 pubDate: 2026-01-19
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-bares-1-1.jpeg
 imageAlt: "IA para Bares: Escandallo de Tapas y Carta Rentable con IA en Español"
@@ -11,8 +11,8 @@ wpId: 2212
 faq:
   - q: "¿La IA va a sustituir a mis camareros o al cocinero?"
     a: "No. La IA no sirve mesas ni cocina. Es una herramienta de cálculo y organización que te ayuda a decidir mejor: escandallar tapas, cuadrar turnos o escribir publicaciones para redes. El trato con el cliente, el ojo en la barra y la mano en la cocina siguen siendo humanos. La IA te quita el trabajo administrativo para que tú y tu equipo os centréis en lo que de verdad importa."
-  - q: "¿Cuánto cuesta y cuál es el plan de entrada?”"
-    a: "Sí, el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €.” Con eso puedes escandallar varias tapas, probar la ingeniería de menú y generar contenido para redes. Si necesitas más, el plan Premium Pro son 25 €/mes con 85.000 créditos, y el plan Max ofrece créditos ilimitados por 95 €/mes. Todos funcionan en español nativo."
+  - q: "¿Cuánto cuesta y cuál es el plan de entrada?"
+    a: "Sí, el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €. Con eso puedes escandallar varias tapas, probar la ingeniería de menú y generar contenido para redes. Si necesitas más, el plan Premium Pro son 25 €/mes con 85.000 créditos, y el plan Max ofrece créditos ilimitados por 95 €/mes. Todos funcionan en español nativo."
   - q: "¿Sirve para un bar pequeño de barrio, no solo para restaurantes grandes?"
     a: "Totalmente. AI Chef Pro está diseñado para bares de barra, cafeterías y pequeños negocios hosteleros. Escandallar una carta de 20 tapas, programar turnos de 3 empleados o publicar en Instagram del barrio son tareas que la IA resuelve en minutos. No necesitas ser un gran grupo ni tener un contable en nómina."
   - q: "¿Cuánto se tarda en escandallar toda la carta con IA?"

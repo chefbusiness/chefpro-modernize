@@ -2,7 +2,7 @@
 title: "Crear la Carta de tu Restaurante con IA: Guía en 6 Pasos"
 description: "Crea la carta de tu restaurante con IA paso a paso: estructura, número de platos, descripciones que venden, precios, diseño y QR. Guía práctica 2026."
 pubDate: 2026-01-09
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/crear-carta-restaurante-con-ia-1.jpg
 imageAlt: "Cómo Crear la Carta de tu Restaurante con IA"
@@ -16,7 +16,7 @@ faq:
   - q: "¿Cómo escribir descripciones de platos que realmente vendan?"
     a: "Usa la regla ingrediente + técnica + detalle diferencial. Huye de adjetivos vacíos como ‘delicioso’ o ‘exquisito’ y aporta datos concretos: origen del producto, punto de cocción, elemento crujiente o cremoso. Una descripción bien trabajada puede aumentar la probabilidad de pedido alrededor de un 25%."
   - q: "¿Cuánto cuesta crear la carta de un restaurante con IA?"
-    a: "Con AI Chef Pro puedes hacerlo desde 10 € con el plan AI Chef Miembro (10.000 créditos al mes, con tarjeta).” Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes (85.000 créditos) y el Plus 50 €/mes (175.000 créditos). El plan Max ofrece créditos ilimitados por 95 €/mes."
+    a: "Con AI Chef Pro puedes hacerlo desde 10 € con el plan AI Chef Miembro (10.000 créditos al mes, con tarjeta). Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes (85.000 créditos) y el Plus 50 €/mes (175.000 créditos). El plan Max ofrece créditos ilimitados por 95 €/mes."
   - q: "¿Sirve la IA para hacer cartas de restaurante en varios idiomas?"
     a: "Sí, y con matiz gastronómico. La IA de AI Chef Pro traduce a 7 idiomas manteniendo el sentido culinario de términos como ‘meloso’ o ‘sellado’, algo que un traductor genérico no hace. Es ideal para zonas turísticas donde la carta multilingüe ya es una expectativa del comensal."
   - q: "¿Cuánto se tarda en crear una carta de restaurante con IA?"

@@ -2,7 +2,7 @@
 title: "25 Prompts de IA que Todo Chef Necesita Conocer [Guía 2026]"
 description: "La diferencia entre un chef que usa inteligencia artificial de forma amateur y uno que obtiene resultados profesionales está en una sola palabra: prompts…"
 pubDate: 2025-12-28
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: libreria-de-prompts
 image: /blog-assets/2025/12/25-prompts-chefs-2026-4.jpeg
 imageAlt: "25 Prompts de IA que Todo Chef Necesita Conocer"
@@ -553,7 +553,7 @@ Antes de responder, confirma si necesitas información adicional para proporcion
 <p style="color: #dfe6e9; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">💡 Tu cocina, potenciada por IA</p>
 <h3 style="color: #ffffff; font-size: 28px; margin-bottom: 20px; line-height: 1.3;">Transforma estos prompts en resultados reales con AI Chef Pro</h3>
 <p style="color: #b2bec3; font-size: 16px; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Más de 55 herramientas especializadas, desde Cocina Creativa hasta Food Pairing AI. Planes desde 10€/mes.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" target="_blank" rel="noopener" style="display: inline-block; background-color: #00b894; color: #ffffff; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Comenzar Ahora Gratis</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" target="_blank" rel="noopener" style="display: inline-block; background-color: #00b894; color: #ffffff; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Empieza desde 10 €/mes</a>
 </div>
 
 

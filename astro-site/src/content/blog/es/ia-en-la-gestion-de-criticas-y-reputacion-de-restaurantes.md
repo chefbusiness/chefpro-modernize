@@ -2,7 +2,7 @@
 title: "Responder Reseñas Negativas de Restaurante: Plantillas IA"
 description: "Aprende a responder reseñas negativas y positivas de tu restaurante con plantillas, ejemplos antes/después con IA y su impacto en las reservas."
 pubDate: 2025-02-28
-modDate: 2026-09-04
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IA-en-la-Gestion-de-Criticas-y-Reputacion-de-Restaurantes.jpg
 imageAlt: "IA en la Gestión de Críticas y Reputación de Restaurantes"
@@ -20,7 +20,7 @@ faq:
   - q: "¿Cómo ayuda la IA a responder reseñas sin sonar a robot?"
     a: "La IA analiza el sentimiento, clasifica la queja y genera un borrador de respuesta con el tono de tu marca. Tú revisas, añades el toque personal y publicas. Así ganas velocidad y coherencia, pero la decisión final y la empatía auténtica las pones tú."
   - q: "¿Cuánto cuesta AI Chef Pro?"
-    a: "AI Chef Pro ofrece el plan AI Chef Miembro por 10 €/mes con 10.000 créditos, con tarjeta.” Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
+    a: "AI Chef Pro ofrece el plan AI Chef Miembro por 10 €/mes con 10.000 créditos, con tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
 ---
 
 Cuando un cliente insatisfecho deja una reseña negativa en Google o Tripadvisor, la mayoría de hosteleros se bloquea. Pero hay una fórmula clara para **responder reseñas negativas restaurante** sin empeorar la situación: contesta rápido (idealmente en 24-48 horas), agradece el comentario, asume la parte de responsabilidad que te toca sin excusas, ofrece una solución concreta y, sobre todo, lleva la conversación fuera del hilo público. En este artículo te doy plantillas, ejemplos orientativos de antes y después con IA y una tabla de impacto de la nota en tus reservas.

@@ -95,7 +95,7 @@ const UI: Record<string, {
       { q: '¿Cuánto cuesta empezar a usar la IA para consultoría gastronómica?', a: 'El plan Miembro cuesta 10 € al mes e incluye 10.000 créditos para usar todos los agentes de Consultoría Gastro Pro, sin permanencia. El onboarding tarda unos 2 minutos.' },
     ],
     seoTitle: 'IA para Consultores y Asesores Gastronómicos | AI Chef Pro',
-    seoDescription: 'IA para consultores y asesores gastronómicos: 10 agentes especializados (chef consultor, sommelier, pastelero, pizzero, heladero y más) para acelerar tus proyectos. Empieza gratis.',
+    seoDescription: 'IA para consultores y asesores gastronómicos: 10 agentes especializados (chef consultor, sommelier, pastelero, pizzero, heladero y más) para acelerar tus proyectos. Empieza hoy.',
     seoKeywords: 'ia para consultores gastronómicos, ia para asesores gastronómicos, consultor gastronómico, asesor gastronómico, consultoría gastronómica, asesoría gastronómica, consultoría restaurantera, consultor de restaurantes, chef consultor, sommelier consultor, ia para restaurantes, ia para hostelería',
   },
   en: {
@@ -134,7 +134,7 @@ const UI: Record<string, {
       { q: 'How much does it cost to start?', a: 'The Member plan costs €10/month and includes 10,000 credits to use every Gastro Consultancy Pro agent, with no commitment. Onboarding takes about 2 minutes.' },
     ],
     seoTitle: 'AI for Restaurant & Hospitality Consultants | AI Chef Pro',
-    seoDescription: 'AI for restaurant, F&B and hospitality consultants: 10 specialized agents (chef consultant, sommelier, pastry, bakery, pizza, gelato & more) to speed up your projects. Start free.',
+    seoDescription: 'AI for restaurant, F&B and hospitality consultants: 10 specialized agents (chef consultant, sommelier, pastry, bakery, pizza, gelato & more) to speed up your projects. Start today.',
     seoKeywords: 'ai for restaurant consultants, restaurant consultant ai, f&b consultant software, hospitality consultant ai, ai for chefs, chef consultant, sommelier consultant, bar consultant, food consultant',
   },
   fr: {
@@ -173,7 +173,7 @@ const UI: Record<string, {
       { q: "Combien coûte l’IA pour le conseil en restauration ?", a: "Le plan Membre coûte 10 € par mois et inclut 10 000 crédits pour utiliser tous les agents du module Consultoría Gastro Pro, sans engagement. L’inscription ne prend que 2 minutes. Des forfaits supérieurs sont disponibles pour un usage intensif." },
     ],
     seoTitle: "Conseil en Restauration IA : 10 Agents | AI Chef Pro",
-    seoDescription: "Conseil en restauration : 10 agents IA (chef consultant, sommelier, barista, etc.) pour accélérer vos projets. Lancez-vous gratuitement.",
+    seoDescription: "Conseil en restauration : 10 agents IA (chef consultant, sommelier, barista, etc.) pour accélérer vos projets. Lancez-vous dès aujourd'hui.",
     seoKeywords: "consultant en restauration, conseil en restauration, ia pour la restauration, cabinet conseil restauration, chef consultant, métiers de bouche, MOF, intelligence artificielle restauration, consultant HORECA, conseil en hôtellerie, projets restauration, AI Chef Pro",
   },
   de: {
@@ -212,7 +212,7 @@ const UI: Record<string, {
       { q: "Was kostet der Einstieg in die KI für Gastronomieberatung?", a: "Der Mitglied-Plan kostet 10 € pro Monat und enthält 10.000 Credits für alle Agenten des Consultoría Gastro Pro, ohne Mindestlaufzeit. Das Onboarding dauert etwa 2 Minuten. Höhere Pläne passen zu größerem Projektvolumen." },
     ],
     seoTitle: "KI Gastronomieberatung | AI Chef Pro",
-    seoDescription: "KI Gastronomieberatung mit 10 spezialisierten Agenten für Gastronomieberater. Projekte beschleunigen, BAFA-Förderung nutzen. Jetzt kostenlos testen.",
+    seoDescription: "KI Gastronomieberatung mit 10 spezialisierten Agenten für Gastronomieberater. Projekte beschleunigen, BAFA-Förderung nutzen. Jetzt testen.",
     seoKeywords: "KI Gastronomieberatung, Gastronomieberater, KI für Gastronomie, Restaurantberatung, KI Gastronomie, BAFA-Förderung, IHK, Gastronomieberatung, AI Chef Pro, HORECA, Beratungs-KI, Gastronomie-Consulting",
   },
   it: {
@@ -251,7 +251,7 @@ const UI: Record<string, {
       { q: "Quanto costa iniziare a usare l’IA per la consulenza di ristorazione?", a: "Il piano Membro costa 10 € al mese e include 10.000 crediti per usare tutti gli agenti di Consulenza Gastro Pro, senza vincoli. L’onboarding richiede circa 2 minuti." },
     ],
     seoTitle: "IA per Consulenti Ristorazione | AI Chef Pro",
-    seoDescription: "IA per consulenti ristorazione: 10 agenti specializzati (chef consulente, sommelier, pizzaiolo, pâtissier, gelatiere e altri) per accelerare i tuoi progetti. Inizia gratis.",
+    seoDescription: "IA per consulenti ristorazione: 10 agenti specializzati (chef consulente, sommelier, pizzaiolo, pâtissier, gelatiere e altri) per accelerare i tuoi progetti. Inizia oggi.",
     seoKeywords: "ia per ristoranti, ai ristorazione, consulente ristorazione, consulenza ristorazione, food consultant, HORECA, AVPN, AIS, chef consulente, pizzaiolo consulente, sommelier consulente, AI Chef Pro",
   },
   pt: {
@@ -290,7 +290,7 @@ const UI: Record<string, {
       { q: "Quanto custa começar a usar a IA para consultoria gastronômica?", a: "O plano Membro custa 10 € ao mês e inclui 10.000 créditos para usar todos os agentes do Consultoria Gastro Pro, sem fidelização. O onboarding demora cerca de 2 minutos. Planos superiores ajustam-se ao volume de projetos." },
     ],
     seoTitle: "IA para Consultores e Assessores Gastronômicos | AI Chef Pro",
-    seoDescription: "IA para consultores e assessores gastronômicos: 10 agentes (chef consultor, sommelier, pâtissier e mais) para acelerar seus projetos. Comece grátis.",
+    seoDescription: "IA para consultores e assessores gastronômicos: 10 agentes (chef consultor, sommelier, pâtissier e mais) para acelerar seus projetos. Comece hoje.",
     seoKeywords: "consultor gastronômico, consultoria gastronômica, ia para restaurantes, ia para gastronomia, assessoria gastronômica, consultor a&b, ia para consultores gastronômicos, ia para assessores gastronômicos, consultoria de restaurantes, consultor de restaurantes, chef consultor, sommelier consultor",
   },
   nl: {
@@ -329,7 +329,7 @@ const UI: Record<string, {
       { q: "Wat kost het om te starten met deze AI voor horeca advies?", a: "Het Lid-plan kost €10 per maand en bevat 10.000 credits om alle agenten van Consultancy Gastro Pro te gebruiken, maandelijks opzegbaar. De onboarding duurt ongeveer 2 minuten." },
     ],
     seoTitle: "Horeca Consultant AI: Adviseer Sneller | AI Chef Pro",
-    seoDescription: "Horeca consultant AI met 10 specialisten. Versnel als restaurant consultant of culinair adviseur je projecten. Start nu met 3.000 gratis credits per maand.",
+    seoDescription: "Horeca consultant AI met 10 specialisten. Versnel als restaurant consultant of culinair adviseur je projecten. Start vandaag met het Lid-plan.",
     seoKeywords: "horeca adviseur, horeca consultant, ai voor horeca, restaurant consultant, culinair adviseur, nbov, sca, horeca adviesbureau, chef consultant, kostprijscalculatie, haccp handboek, culinaire audit",
   },
 };

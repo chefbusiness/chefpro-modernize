@@ -2,7 +2,7 @@
 title: "Qué es la Inteligencia Artificial en Cocina: Guía Completa 2026"
 description: "Descubre qué es la IA en cocina, sus 4 tipos principales y cómo transforma la gastronomía. Guía completa para chefs profesionales con beneficios medibles y…"
 pubDate: 2026-03-03
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/ia-cocina-nanobanana.jpg
 imageAlt: "Qué es la Inteligencia Artificial en Cocina: Guía Completa 2026"
@@ -100,4 +100,4 @@ wpId: 3007
 <div style="background: linear-gradient(135deg, #000 0%, #333 100%); padding: 30px; border-radius: 12px; text-align: center; margin: 40px 0;">
 <h2 style="color: #ffde59; margin-bottom: 20px; font-size: 28px;">⭐ Empieza con IA en tu Cocina Hoy</h2>
 <p style="color: #ffffff; margin-bottom: 25px; font-size: 18px;">55+ aplicaciones especializadas • Sin conocimientos técnicos • Resultados desde el primer día</p>
-<p> <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=que-es-inteligencia-artificial-cocina-guia" style="display: inline-block; background: #ffde59; color: #000000; padding: 18px 50px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 18px;">CREAR CUENTA GRATUITA →</a> </div>
+<p> <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=que-es-inteligencia-artificial-cocina-guia" style="display: inline-block; background: #ffde59; color: #000000; padding: 18px 50px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 18px;">EMPIEZA DESDE 10 €/MES →</a> </div>

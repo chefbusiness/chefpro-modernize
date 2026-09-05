@@ -2,7 +2,7 @@
 title: "AI Menu Engineering Software: How Artificial Intelligence Optimizes Restaurant Menus"
 description: "Your restaurant is bustling. Every table is full, the kitchen is humming, and guests seem happy. Yet at the end of the month, your profit margins are…"
 pubDate: 2026-03-10
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ai-chef-pro
 lang: en
 wpId: 3241
@@ -284,7 +284,7 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">⚡ Stop Guessing, Start Profiting</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro to engineer profitable menus.<br />    Menu Engineering • Pricing AI • Cost Control • Profit Optimization  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FREE TRIAL →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €10/MONTH →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    75+ AI tools for restaurant success  </p>
 </div>
 <h2>Conclusion: The Future of Profitable Menu Design</h2>

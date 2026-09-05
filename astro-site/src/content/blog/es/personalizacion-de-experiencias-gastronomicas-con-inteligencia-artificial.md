@@ -2,7 +2,7 @@
 title: "Personalización de Experiencia del Cliente en Restaurantes"
 description: "Cómo personalizar la experiencia del cliente en tu restaurante y que salga rentable: preferencias, menús para alérgenos, momentos especiales e IA."
 pubDate: 2025-02-24
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/Personalizacion-de-Experiencias-Gastronomicas-con-Inteligencia-Artificial.jpg
 imageAlt: "Personalización de Experiencias Gastronómicas con Inteligencia Artificial"
@@ -18,7 +18,7 @@ faq:
   - q: "¿Qué datos del cliente puedo guardar sin problemas de privacidad?"
     a: "Puedes guardar nombre, teléfono o email, alergias e intolerancias (con consentimiento), preferencias de consumo y fechas especiales. Evita datos sensibles como DNI, dirección postal completa o historial médico ajeno a la alimentación. Pide siempre permiso al anotar preferencias y nunca comentes alergias en voz alta ante otros comensales."
   - q: "¿Cuánto cuesta AI Chef Pro para gestionar la personalización?"
-    a: "AI Chef Pro tiene un plan de entrada AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta.” El plan Premium Pro cuesta 25 € al mes (85.000 créditos), el Plus 50 € al mes (175.000 créditos) y el Max 95 € al mes con créditos ilimitados. Para un restaurante que trabaje personalización de forma constante, el plan Premium Pro o Plus suele ser más que suficiente."
+    a: "AI Chef Pro tiene un plan de entrada AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta. El plan Premium Pro cuesta 25 € al mes (85.000 créditos), el Plus 50 € al mes (175.000 créditos) y el Max 95 € al mes con créditos ilimitados. Para un restaurante que trabaje personalización de forma constante, el plan Premium Pro o Plus suele ser más que suficiente."
   - q: "¿La IA no quita el trato humano en la sala?"
     a: "Al contrario: la IA te quita el trabajo pesado de documentar, redactar y calcular, para que tú y tu equipo dediquéis más tiempo a las personas. Ella genera el borrador del correo o la ficha de alérgenos; tú pones la voz, la mirada y el gesto. La calidez la sigues aportando tú; la IA te da horas extra para ejercerla."
 ---

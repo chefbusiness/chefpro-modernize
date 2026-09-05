@@ -2,7 +2,7 @@
 title: "¿Chefs Agotados? Cómo la IA y la Ergonomía Cognitiva Transforman el Bienestar en Cocina"
 description: "La cocina profesional moderna enfrenta un desafío que va mucho más allá de los hornos y las sartenes: la sobrecarga mental que experimentan diariamente…"
 pubDate: 2026-01-14
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ergonomia-cognitiva-en-cocinas-con-ia-4.jpeg
 imageAlt: "Ergonomía Cognitiva en Cocinas con IA: Manual Definitivo para Optimizar Espacios, Flujos y Bienestar Mental"
@@ -897,7 +897,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Acceso básico a herramientas principales</td><td>Prueba inicial, estudiantes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>ID Alérgenos, Mermas GenCal, Recetarios básicos</td><td>Chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium</td><td>15€/mes</td><td>+ Food Pairing AI, Mental Coach, más recetarios</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>+ Herramientas de análisis, uso extensivo</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Uso ilimitado, prioridad soporte, exclusivas</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>Acceso a todas las herramientas con 10.000 créditos al mes</td><td>Prueba inicial, estudiantes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>ID Alérgenos, Mermas GenCal, Recetarios básicos</td><td>Chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium</td><td>15€/mes</td><td>+ Food Pairing AI, Mental Coach, más recetarios</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>+ Herramientas de análisis, uso extensivo</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Uso ilimitado, prioridad soporte, exclusivas</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
 
 
 
@@ -1008,7 +1008,7 @@ wpId: 2135
 <h3 style="color: #f4d03f; font-size: 28px; margin: 0 0 15px 0; font-weight: 700;">🚀 Transforma Tu Cocina con Inteligencia Artificial</h3>
 <p style="color: #ffffff; font-size: 17px; margin: 0 0 10px 0; line-height: 1.6;">Únete a <strong>AI Chef Pro</strong> y accede a más de 55 herramientas diseñadas para reducir tu carga mental y potenciar tu creatividad culinaria.</p>
 <p style="color: #cccccc; font-size: 15px; margin: 0 0 25px 0;">Planes desde 10€/mes • Sin permanencia • Más de 20 recetarios del mundo</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 16px 45px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px;">Comenzar Ahora Gratis</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 16px 45px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px;">Empieza desde 10 €/mes</a>
 </div>
 
 

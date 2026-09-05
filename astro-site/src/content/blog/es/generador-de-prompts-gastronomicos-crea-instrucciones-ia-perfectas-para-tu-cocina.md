@@ -2,7 +2,7 @@
 title: "Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina"
 description: "La inteligencia artificial aplicada a la gastronomía está revolucionando las cocinas profesionales de todo el mundo. Sin embargo, la diferencia entre obtener…"
 pubDate: 2025-09-02
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: libreria-de-prompts
 image: /blog-assets/2025/09/generador-de-prompts-gastronomicos-1.jpeg
 imageAlt: "Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina"
@@ -1850,7 +1850,7 @@ Parámetros económicos:
 
 <div class="wp-block-group has-background" style="background-color: #e8f5e8; padding: 25px;">
 <h3>🚀 Da el Primer Paso Hoy Mismo</h3>
-<p><strong>Inicia tu transformación gastronómica:</strong><br>👉 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3512"><strong>Prueba AI Chef Pro gratuitamente</strong></a> y experimenta la diferencia de los prompts profesionales<br>👉 Accede a templates descargables y casos de estudio reales<br>👉 Únete a más de 2,500 profesionales que ya están revolucionando sus cocinas</p>
+<p><strong>Inicia tu transformación gastronómica:</strong><br>👉 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3512"><strong>Prueba AI Chef Pro desde 10 €</strong></a> y experimenta la diferencia de los prompts profesionales<br>👉 Accede a templates descargables y casos de estudio reales<br>👉 Únete a más de 2,500 profesionales que ya están revolucionando sus cocinas</p>
 <p><strong>¿Tienes preguntas específicas sobre implementación?</strong><br>💬 <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3513"><strong>Contacta con nuestro equipo especializado</strong></a> para una consulta personalizada gratuita</p>
 </div>
 

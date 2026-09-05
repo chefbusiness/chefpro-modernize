@@ -2,7 +2,7 @@
 title: "Liofilización: Concepto y Definición"
 description: "Descubre qué es la liofilización: secado por congelación que preserva nutrientes y sabores. Proceso de sublimación, aplicaciones en gastronomía y alta…"
 pubDate: 2026-03-21
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: glosario
 image: /blog-assets/2026/03/liofilizacion-featured.jpg
 imageAlt: "Liofilización: Concepto y Definición"
@@ -223,6 +223,6 @@ wpId: 3255
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Técnicas Avanzadas con AI Chef Pro</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para conservación, texturas y técnicas modernas.<br />     Recetas paso a paso y asistente inteligente.   </p>
 <p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=liofilizacion-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR PLAN MIEMBRO →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Con tarjeta de crédito • 48.733+ recetas generadas   </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 10 € al mes · Sin permanencia · 48.733+ recetas generadas   </p>
 </p></div>
 <p><strong>¿Listo para explorar la ciencia de la conservación?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=liofilizacion-concepto-definicion">AI Chef Pro</a>.</p>

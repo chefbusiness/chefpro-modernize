@@ -1,8 +1,8 @@
 ---
 title: "Cómo se Utiliza la IA en la Gastronomía: 6 Usos Reales"
-description: "Descubre cómo se utiliza la IA en la gastronomía en 2026: los 6 usos reales en cocina —escandallos, costes, cartas y APPCC— y por dónde empezar gratis."
+description: "Descubre cómo se utiliza la IA en la gastronomía en 2026: los 6 usos reales en cocina —escandallos, costes, cartas y APPCC— y por dónde empezar desde 10 € al mes."
 pubDate: 2026-03-02
-modDate: 2026-08-31
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Como-se-utiliza-la-IA-en-la-Gastronomia-1.jpg
 imageAlt: "Cómo se utiliza la IA en la Gastronomía"
@@ -18,7 +18,7 @@ faq:
   - q: "¿En qué se diferencia AI Chef Pro de un chatbot genérico?"
     a: "Un chatbot genérico no entiende de mermas, APPCC, escandallos ni terminología de partida. AI Chef Pro reúne más de 70 agentes entrenados con criterio gastronómico y responde en español nativo, adaptado a las necesidades reales de una cocina profesional."
   - q: "¿Cuánto cuesta empezar a usar IA en la cocina?"
-    a: "Puedes empezar con el plan AI Chef Miembro: 10 euros al mes, 10.000 créditos y sin permanencia.” Si necesitas más volumen, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un local pequeño."
+    a: "Puedes empezar con el plan AI Chef Miembro: 10 euros al mes, 10.000 créditos y sin permanencia. Si necesitas más volumen, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un local pequeño."
   - q: "¿Sirve la IA para la seguridad alimentaria y el APPCC?"
     a: "Sí, y mucho. La IA genera registros APPCC, fichas de alérgenos, trazabilidad de proveedores y protocolos de limpieza en minutos. Además, agentes como ID Alérgenos cruzan cada plato con los 14 alérgenos de declaración obligatoria y mantienen la documentación lista para una inspección."
 ---
