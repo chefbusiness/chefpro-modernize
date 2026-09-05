@@ -1148,7 +1148,7 @@ const breadcrumbSchema = {
           enterkeyhint="search"
           aria-describedby="pd-search-ayuda"
           placeholder="Busca por tema o negocio: escandallos o costeo, APPCC o HACCP, food truck…"
-          class="w-full h-14 pl-12 pr-12 rounded-2xl bg-white/5 border border-white/10 text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/20"
+          class="w-full h-14 pl-12 pr-12 rounded-2xl bg-white/5 border-2 border-[#FFD700]/70 shadow-[0_0_24px_rgba(255,215,0,0.12)] text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/30"
         />
         <button
           id="pd-search-clear"
@@ -2220,4 +2220,45 @@ const breadcrumbSchema = {
   claveAplicada = claveBusqueda();
   sincronizarBotonLimpiar();
   apply();
+  // ── Placeholder animado (John, 2026-09-05): escribe ejemplos de búsqueda letra a letra
+  //    para que el buscador llame la atención. Se detiene al enfocar o al escribir, y con
+  //    «prefers-reduced-motion» deja el placeholder estático.
+  (function placeholderAnimado() {
+    const input = document.getElementById('pd-search-input');
+    if (!(input instanceof HTMLInputElement)) return;
+    const estatico = input.getAttribute('placeholder') || '';
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const ejemplos = [
+      'escandallos y food cost',
+      'APPCC para mi restaurante',
+      'gerente de restaurante',
+      'plan de negocio de una cafetería',
+      'control de inventario y compras',
+      'prompts de IA para chef',
+      'turnos y cuadrantes de personal',
+      'cómo montar una pastelería',
+      'food truck',
+      'plan financiero',
+    ];
+    let i = 0, pos = 0, borrando = false, parado = false, timer = 0;
+    const parar = () => { parado = true; clearTimeout(timer); input.setAttribute('placeholder', estatico); };
+    const paso = () => {
+      if (parado || document.activeElement === input || input.value) return parar();
+      const texto = ejemplos[i % ejemplos.length];
+      if (!borrando) {
+        pos += 1;
+        input.setAttribute('placeholder', 'Busca: ' + texto.slice(0, pos) + (pos < texto.length ? '|' : ''));
+        if (pos >= texto.length) { borrando = true; timer = window.setTimeout(paso, 1400); return; }
+        timer = window.setTimeout(paso, 55 + Math.round(Math.random() * 45));
+      } else {
+        pos -= 2;
+        if (pos <= 0) { pos = 0; borrando = false; i += 1; input.setAttribute('placeholder', 'Busca: '); timer = window.setTimeout(paso, 350); return; }
+        input.setAttribute('placeholder', 'Busca: ' + texto.slice(0, pos));
+        timer = window.setTimeout(paso, 28);
+      }
+    };
+    input.addEventListener('focus', parar, { once: true });
+    input.addEventListener('input', parar, { once: true });
+    timer = window.setTimeout(paso, 900);
+  })();
 </script>
