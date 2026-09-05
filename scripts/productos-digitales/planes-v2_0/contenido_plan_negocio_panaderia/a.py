@@ -110,33 +110,46 @@ Resultado del caso base (medido con `data_only` tras `inject_cache.py` en
 el libro del 2026-09-05): coste de mercancía 28,85 % (techo 32 %), coste de
 personal 37,10 % (techo 42 %), alquiler 8,21 % (techo 10 % — extremo
 estricto de «Instrucciones!B8», «10-14 %»), margen bruto 66,35 % (suelo
-62 %) y resultado neto 5,61 % (suelo 5 %). **Los cinco ratios del libro
-CUMPLEN y el plan no se suspende a sí mismo.**
+62 %) y resultado neto 5,50 % (suelo 5 %; el neto baja del 5,61 % de la
+2.1 porque la 2.2 amortiza 9.292,22 €/año en vez de 8.922,22 €).
+**Los cinco ratios del libro CUMPLEN y el plan no se suspende a sí
+mismo.**
 
-LO QUE NO SE PUEDE ARREGLAR DESDE AQUÍ (reportado al motor)
+LO QUE YA SE ARREGLÓ Y LO QUE SIGUE REPORTADO (2026-09-05)
 -----------------------------------------------------------
-Tres defectos medidos en este hermano NO son de contenido, porque los
-valores y los textos viven en `grupo_a.py` y este módulo no tiene clave
-para sobrescribirlos. Van al informe del orquestador con su diseño mínimo:
+Los tres defectos que en la primera vuelta este módulo no podía tocar
+están CERRADOS por el motor 2.2/2.2.1 y por las claves nuevas de este
+mismo fichero (verificado en el libro regenerado):
 
-* **La métrica de ROTACIONES no aplica a un mostrador.**
-  `'Punto Equilibrio'!B25` («Rotaciones al día que da el local como
-  máximo») se entrega con 3,0 —un techo de restaurante: tres servicios por
-  plaza y día— y B26:D26 exigen 10,3 / 11,6 / 12,0, así que el caso base
-  sale con tres celdas ROJAS y la nota «el punto de equilibrio está fuera
-  del alcance del local». En una panadería el aforo son 15 plazas de un
-  rincón de café mientras las transacciones son de mostrador: el cliente
-  entra, compra y se va en cuatro minutos, así que el techo físico real
-  ronda las 195 rotaciones/día, no 3. El único parámetro que este módulo
-  controla es `aforo`, y no hay ningún valor honesto de aforo que baje
-  B26 de 3.
-* **La cobertura de horas cuenta sólo el horario de tienda.**
-  `Personal!B20` = 13 h «de la apertura al cierre» × `B21` = 2 personas
-  deja fuera el turno de obrador de 4:00-5:00 AM que el propio libro
-  staffea y publica. Los dos valores y sus notas están fijados en
-  `grupo_a.py`.
-* **El pan común tributa al 4 %**, no al 10 % (art. 91.Dos.1.1.º LIVA), y
-  el libro no tiene ninguna celda donde ponerlo.
+* **Las ROTACIONES están apagadas** (`ROTACION = {'activa': False}`). La
+  métrica del comedor —tres servicios por plaza y día— no aplica a un
+  mostrador: el bloque entero desaparece del libro en vez de entregarse
+  con tres celdas ROJAS y la nota «el punto de equilibrio está fuera del
+  alcance del local». Comprobado: `'0. Supuestos'!A50:C50` vacías y
+  `'Punto Equilibrio'!A25` ya es «INTERPRETACIÓN».
+* **La cobertura de horas ya cuenta el obrador** (`COBERTURA`): 13 h de
+  TIENDA con 1,7 personas de presencia media más 3,5 h de turno de
+  madrugada con 1 persona, que es la jornada que el propio libro
+  describe y publica. 8.077,6 h contratadas frente a 7.936 h necesarias.
+* **El pan común tributa al 4 %** en la VENTA (`LINEAS_INGRESO`, con su
+  celda verde «Pan común sobre la línea») y también en la COMPRA
+  (`IVA_COMPRAS`), porque las harinas panificables van al mismo tipo
+  superreducido (art. 91.Dos.1.1.º de la Ley 37/1992).
+
+Sigue REPORTADO al motor, sin clave para arreglarlo desde aquí:
+
+* El modelo de ingresos tiene UN solo driver (transacciones × ticket ×
+  días), así que el canal MAYORISTA se contabiliza como una transacción
+  de mostrador más. Lo único que este módulo puede corregir es su efecto
+  en la CAJA, con los días medios de cobro (`dias_cobro` = 3).
+* El tipo de IVA por FILA de la hoja de Inversión (hoy todas al 21 %).
+* La cobertura de tienda y de obrador en DOS filas separadas.
+* El rótulo «Aforo del local (plazas sentadas + barra)»: `VOCABULARIO`
+  no lo alcanza porque de «aforo» y «barra» cuelga el bloque de
+  rotaciones, que en este molde está apagado.
+* El documento Word del pack sigue siendo el de la versión 1.1 y
+  contradice al Excel en las cifras de cabecera. Mientras no se
+  regenere, la hoja de Instrucciones lo advierte al comprador.
 """
 
 CONCEPTO = 'Panadería / Obrador'
@@ -154,19 +167,26 @@ SUPUESTOS = {
         'del rango 80-200 que este mismo libro publica en «Escenarios» '
         '(pesimista/optimista): el «objetivo» de la v1.1 (148) era una '
         'cifra DERIVADA de la facturación buscada, no un input real. Con '
-        '165 el resultado neto del año 1 quedaba en el 0,79 % de las '
-        'ventas —por debajo del suelo 5 %, aunque positivo—: sube a 180 '
-        '(90 % del optimista de la propia v1.1) porque los costes fijos '
-        '(personal, alquiler, seguros…) no crecen con el volumen y el '
-        'margen extra va entero a resultado',
+        'menos transacciones el resultado neto se quedaba por debajo del '
+        '5 % que este libro fija como suelo, porque los costes fijos '
+        '(personal, alquiler, seguros…) no crecen con el volumen y cada '
+        'transacción de más va casi entera al resultado. OJO: el caso '
+        'base es exigente por los DOS lados a la vez —el 90 % del volumen '
+        'del escenario optimista que publica «Escenarios» y el ticket de '
+        'ese mismo escenario optimista—; si sólo se cumple uno de los '
+        'dos, el resultado neto cae por debajo de ese suelo. Contrástalo '
+        'con tu zona antes de darlo por bueno',
         'recalibrado §7-bis.17 (v1.1: 148, «Punto Equilibrio!B11» = '
         '200.000 € ÷ 12 ÷ 4,5 €, no una medida; primer intento de esta '
         'tanda: 165, ajustado tras verificar que r_neto no llegaba al '
-        'suelo — ver informe)'),
+        'suelo — ver informe. La cifra del ensayo abandonado NO se '
+        'publica: se midió con el motor 2.1 y su amortización)'),
     'ticket_medio': (
         None, None, 5.50, None,
-        'SIN IVA. Dentro del rango 3-6 € que declara «Instrucciones!B9» '
-        '(«Ticket medio panadería»), en el tercio alto porque incluye '
+        'SIN IVA. Dentro del rango 3-6 € que este mismo kit declara en la '
+        'tabla «Datos de referencia del sector» de la hoja de '
+        'Instrucciones («Ticket medio panadería»), en el tercio alto '
+        'porque incluye '
         'bollería y café además de la barra de pan, no sólo la barra. '
         'Ojo: coincide con el ticket que la versión anterior usaba en su '
         'escenario OPTIMISTA, así que compruébalo con tu carta antes de '
@@ -183,8 +203,9 @@ SUPUESTOS = {
         'fichero v1.1 (Escenarios!C7) — fija NUEVO-03'),
     # Sube del 10 % al 12 % por una razon MEDIBLE dentro del propio libro:
     # con el 10 %, la «Holgura sobre el equilibrio de CAJA» del ano 2
-    # ('Punto Equilibrio'!C24) se quedaba en 13,3 % frente al 15 % que
-    # exige '0. Supuestos'!B67, y la celda salia AMBAR en el caso base. El
+    # ('Punto Equilibrio'!C24) se quedaba POR DEBAJO del 15 % que exige
+    # '0. Supuestos'!B67 y la celda salia AMBAR en el caso base (medido
+    # con el motor 2.1; con el 12 % y el motor 2.2.1 sale 15,38 %). El
     # ano 2 es el que carga de golpe la devolucion del principal (17.203,52
     # EUR) al salir de la carencia mientras los costes fijos no bajan. El
     # 12 % sigue MUY por debajo de lo que proyectaba la propia v1.1.
@@ -204,15 +225,17 @@ SUPUESTOS = {
                 'año 2 al 3; aquí se proyecta un tercio de eso)'),
     'coste_comida': (
         None, None, 0.29, None,
-        'Food cost de pan y bollería, ponderado: pan 25-30 % '
-        '(«Instrucciones!B4») y bollería 32-38 % («Instrucciones!B5») — '
-        'el pan pesa más del mix, así que el blend queda cerca del '
-        'extremo bajo del rango de bollería',
+        'Food cost de pan y bollería, ponderado con los rangos que este '
+        'mismo kit publica en la tabla «Datos de referencia del sector» '
+        'de la hoja de Instrucciones: pan 25-30 % y bollería 32-38 %. El '
+        'pan pesa más del mix, así que el blend queda cerca del extremo '
+        'bajo del rango de bollería',
         'fichero v1.1 (Instrucciones!B4 y B5)'),
     'coste_bebida': (
         None, None, 0.27, None,
         'Coste de café y bebidas sobre sus propias ventas: dentro del '
-        '25-30 % que declara «Instrucciones!B6» de este mismo libro',
+        '25-30 % que declara la tabla «Datos de referencia del sector» de '
+        'la hoja de Instrucciones de este mismo libro',
         'fichero v1.1 (Instrucciones!B6)'),
     'pct_consumibles': (
         None, None, 0.02, None,
@@ -237,9 +260,11 @@ SUPUESTOS = {
     'alquiler_mes': (
         None, None, 2100, None,
         'Local de obrador + tienda (mínimo 80 m² entre obrador, tienda y '
-        'almacén, checklist F2). 9,0 % de las ventas del caso base, '
-        'dentro del techo de 10-14 % que fija «Instrucciones!B8» de este '
-        'mismo libro',
+        'almacén, checklist F2). Lo que pesa sobre las ventas lo calcula '
+        'el propio libro en la fila «Alquiler / Ventas» del bloque de '
+        'ratios del P&L: en el caso base queda por DEBAJO del 10-14 % que '
+        'la tabla de referencias de la hoja de Instrucciones da como '
+        'habitual del sector',
         'fichero v1.1 (24.000 €/año ÷ 12, redondeado al alza por el mayor '
         'espacio de obrador)'),
     'fianza_meses': (None, None, 3, None,
@@ -271,11 +296,12 @@ SUPUESTOS = {
         'Principal solicitado. La hoja de Financiación comprueba que '
         'origen y usos cuadran con la necesidad de caja calculada en la '
         'hoja 1',
-        'parametrizado (recursos propios + préstamo = 170.000 €: primer '
-        'intento a 180.000 € dejaba un EXCESO de financiación de '
-        '10.568,68 € —6,24 % sobre los 169.431,32 € de necesidad real— '
-        'por encima del margen de la propia hoja (5 %); verificado en '
-        'dry-run, ver informe de la tanda)'),
+        'parametrizado (recursos propios + préstamo = 170.000 €: un primer '
+        'intento a 180.000 € dejaba un EXCESO de financiación por encima '
+        'del margen del 5 % que admite la propia hoja. El exceso vigente '
+        'se lee en «Financiación»!B15/B16 después de cada regeneración: '
+        'con el motor 2.2.1 son 5.191,67 €, el 3,15 % de los '
+        '164.808,33 € de necesidad de caja)'),
     'tipo_prestamo': (None, None, 0.06, None,
                       'Tipo nominal anual; pide oferta a dos entidades y a '
                       'una línea ICO antes de fijarlo (el horno y la '
@@ -358,10 +384,9 @@ SUPUESTOS = {
         None, None, 15, None,
         'La mayoría de las transacciones son de mostrador (llevar), no de '
         'mesa: este número cubre sólo el rincón de café con asientos, no '
-        'la cola de la barra de pan. La «rotación implícita» '
-        '(transacciones/día ÷ aforo) no es una métrica útil en este '
-        'formato — se conserva por consistencia de familia, no como '
-        'palanca de gestión',
+        'la cola de la barra de pan. Sirve para dimensionar el espacio de '
+        'consumo del local; el volumen del negocio se proyecta con las '
+        'transacciones de mostrador, no con la rotación de las plazas',
         'parametrizado (fichero v1.1 no declara plazas sentadas: el '
         'obrador vende sobre todo para llevar)'),
     'salario_convenio': (
@@ -432,8 +457,9 @@ LINEAS_INGRESO = (
               'especial NO es pan común'}),
     ('Ventas de café y bebidas (sin alcohol)', 0.075, 'bebida',
      'Café de grano, tés e infusiones de mostrador, para acompañar el '
-     'desayuno o la merienda (coste alto por grano de calidad, '
-     'Instrucciones!B6)',
+     'desayuno o la merienda: el coste es alto por el grano de calidad, y '
+     'la tabla de referencias de la hoja de Instrucciones lo sitúa en el '
+     '25-30 % de sus propias ventas',
      'fichero v1.1: «Ventas café y bebidas» (15.000/200.000 = 7,5 %)'),
 )
 
@@ -558,28 +584,32 @@ FIJOS_EXTRA = (
 # ==========================================================================
 UMBRALES = (
     ('r_mb', 'Margen bruto / Ventas', 0.62,
-     'Suelo del propio libro: «Instrucciones!B12 — Margen bruto '
-     'objetivo: >62%»'),
+     'Suelo que declara este mismo kit en la tabla «Datos de referencia '
+     'del sector» de la hoja de Instrucciones: «Margen bruto objetivo: '
+     '> 62 %»'),
     ('r_cogs', 'Coste de mercancía / Ventas', 0.32,
-     'Techo del blend que publica este producto: pan 25-30% '
-     '(Instrucciones!B4), bollería 32-38% (B5) y café 25-30% (B6)'),
+     'Techo del blend que publica este producto en esa misma tabla de '
+     'referencias: pan 25-30 %, bollería 32-38 % y café 25-30 %'),
     ('r_personal', 'Coste de personal / Ventas', 0.42,
-     'Techo del extremo ALTO del rango que publica este producto: '
-     '«Instrucciones!B7 — Coste personal / ventas: 35-42%», el más alto '
-     'de los cinco hermanos de línea A. La propia «Instrucciones!C7» '
-     'explica por qué: «Panadería es intensiva en mano de obra '
-     '(madrugones)» — usar el extremo bajo (35%, el criterio de '
-     'cafetería) habría exigido una plantilla por debajo del mínimo '
-     'operable de un obrador con horno diario'),
+     'Techo del extremo ALTO del rango que publica este producto en la '
+     'tabla de referencias de la hoja de Instrucciones («Coste de '
+     'personal sobre ventas: 35-42 %»), el más alto de los cinco planes '
+     'de restauración de esta línea. La nota de esa misma fila explica '
+     'por qué: turno de madrugada y doble oficio (producción + venta). '
+     'Usar el extremo bajo (35 %, el criterio de una cafetería) habría '
+     'exigido una plantilla por debajo del mínimo operable de un obrador '
+     'con horno diario'),
     ('r_alquiler', 'Alquiler / Ventas', 0.10,
-     'Techo del extremo estricto del propio libro: «Instrucciones!B8 — '
-     'Alquiler / ventas: 10-14%»'),
+     'Techo del extremo estricto que declara este mismo kit en la tabla '
+     'de referencias de la hoja de Instrucciones: «Alquiler sobre '
+     'ventas: 10-14 %»'),
     ('r_neto', 'Resultado neto / Ventas', 0.05,
      'Derivado del suelo de EBITDA que declara este producto para el '
-     'año 2 («Instrucciones!B14 — EBITDA objetivo: 10-18%, el primer año '
-     'puede ser negativo»): descontando amortización, intereses e '
-     'Impuesto de Sociedades, un EBITDA en la franja baja deja un '
-     'resultado neto en torno al 5 %'),
+     'año 2 en la tabla de referencias de la hoja de Instrucciones '
+     '(«EBITDA objetivo (año 2): 10-18 %, el primer año puede ser '
+     'negativo»): descontando amortización, intereses e Impuesto de '
+     'Sociedades, un EBITDA en la franja baja deja un resultado neto en '
+     'torno al 5 %'),
 )
 
 # ==========================================================================
@@ -622,6 +652,14 @@ INSTRUCCIONES = {
         '7. La hoja «Financiación» cuadra lo que hace falta con lo que se '
         'aporta y monta el cuadro de amortización del préstamo. Si la '
         'diferencia sale en rojo, el plan no está financiado.',
+        # R22-01: el docx del pack sigue siendo el de la v1.1 y contradice
+        # al xlsx en facturación, inversión, plantilla, coste de personal
+        # y punto de equilibrio. Mientras T9 no lo regenere, el comprador
+        # tiene que saber cuál manda. Se retira esta línea el día que el
+        # Word se reconstruya desde este mismo libro.
+        '8. El documento Word de este pack es el de la versión 1.1: las '
+        'cifras válidas son las de este Excel, que es el que se '
+        'recalcula solo cuando cambias un supuesto.',
     ],
     # (rótulo, valor, FUENTE, nota) — se conservan las referencias del
     # sector que ya traía este fichero (mismo criterio que el
@@ -673,14 +711,16 @@ INSTRUCCIONES = {
          'Versión anterior de este kit — contrástalo en tu zona',
          'El primer año puede ser negativo: es normal en un obrador '
          'nuevo'),
-        ('Retorno de la inversión', 'más de 36 meses en este plan',
+        ('Retorno de la inversión',
+         'lo calcula este libro: fila «Payback del proyecto»',
          'Calculado por este libro, no copiado',
-         'La versión anterior publicaba «24-36 meses» y el propio libro '
-         'la desmiente: con la inversión y los flujos de caja de este '
-         'caso base, la fila «Payback del proyecto» de arriba da más de '
-         'tres años. Un obrador tarda más en devolver la inversión que '
-         'una cafetería, porque el horno, la amasadora y las cámaras se '
-         'pagan el primer día'),
+         'La versión anterior publicaba «24-36 meses» como si fuera un '
+         'dato del sector. Aquí no se copia de nadie: el propio libro lo '
+         'calcula con SU inversión y SUS flujos de caja antes de la '
+         'deuda, y lo publica arriba, en la fila «Payback del proyecto» '
+         'del bloque de cifras. Un obrador tarda más en devolver la '
+         'inversión que una cafetería, porque el horno, la amasadora y '
+         'las cámaras se pagan el primer día'),
         ('Convenio colectivo aplicable', 'PROVINCIAL de '
          'hostelería/alimentación', 'Checklist de apertura, fase 4',
          'No existe una tabla salarial estatal única: copia la tabla de '
@@ -774,6 +814,15 @@ CHECKLIST = {
         (r'^10a barra gratis$', 'La 10.ª barra, gratis'),
         (r'^Evaluar 2o turno producci[oó]n$',
          'Evaluar un 2.º turno de producción'),
+        # R22-25 — dos abreviaturas heredadas de la v1.1 que el §1
+        # transversal no toca («Min» no es palabra del diccionario de
+        # tildes y «m2» no es una errata catalogada), en un fichero cuyo
+        # resto de texto ya va acentuado y con superíndice. El patrón
+        # tolera el acento de «almacén» porque el §1 ya lo ha puesto
+        # cuando corre `grupo_a.checklist()`.
+        (r'^Min 80m2: obrador\+tienda\+almac[eé]n$',
+         'Mínimo 80 m²: obrador + tienda + almacén'),
+        (r'^Min 300K ?€$', 'Mínimo 300.000 € de cobertura'),
     ],
     'suprimir': [],
     'fases': {},
@@ -923,17 +972,24 @@ RECALIBRADO = (
      'la plantilla, sube con ellos'),
     ('Amortización', '10.450 €/año a 10 años planos sobre TODA la '
      'inversión, colchón de caja e imprevistos incluidos',
-     'Obra e instalaciones a 10 años y maquinaria a 9 / 8.922 €/año',
+     'Obra e instalaciones a 10 años y maquinaria a 9 / 9.292 €/año',
      'Sólo se amortiza el inmovilizado: ni el colchón de caja, ni las '
      'existencias, ni los imprevistos, que no son bienes. Y la maquinaria '
      'a 9 años porque el coeficiente lineal máximo del art. 12.1 de la '
      'Ley del Impuesto sobre Sociedades es del 12 % anual: a 8 años el '
      'exceso no sería deducible'),
-    ('Imprevistos de obra', '7.500 € (un 8 % tecleado a mano)',
-     '8.950 € (10 % sobre las partidas de obra, por fórmula)',
-     'El porcentaje vive en la hoja de Supuestos: cámbialo y la cifra se '
-     'recalcula sola. Antes había que rehacerla a mano cada vez que se '
-     'tocaba un presupuesto'),
+    ('Imprevistos de obra',
+     '7.500 € redondos bajo el rótulo «Imprevistos (8%)»',
+     '3.700 € (10 % sobre las partidas de obra, por fórmula)',
+     'La cifra anterior era un número redondo escrito a mano que no '
+     'salía de ningún porcentaje del propio libro. Ahora el colchón se '
+     'calcula sólo sobre lo que de verdad se puede desviar en una '
+     'reforma —proyecto técnico, obra civil, instalación eléctrica, '
+     'salida de humos y rotulación—, y no sobre el equipamiento, que se '
+     'compra con precio cerrado: por eso la cifra BAJA aunque el '
+     'porcentaje que la calcula sea mayor. Ese porcentaje vive en la '
+     'hoja de Supuestos: cámbialo y la cifra se recalcula sola, en vez '
+     'de rehacerse a mano cada vez que se toca un presupuesto'),
     ('Impuesto de Sociedades', '25 % en los años 2 y 3, sin compensar las '
      'pérdidas del año 1',
      '15 % en los dos primeros ejercicios con beneficio, compensando las '

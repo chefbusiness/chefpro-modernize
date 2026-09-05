@@ -60,7 +60,7 @@ la plantilla a 70.011 €… y dejó dos semáforos del propio libro EN ROJO:
 1. **Cinco de los seis salarios estaban por debajo del SMI en proporción a
    la jornada** (R-01). El formato condicional de la columna «Bruto mes» los
    pintaba en rojo él solo: 1.120 €/mes a jornada completa son 15.680 €/año
-   frente a los 17.094 € del SMI 2026 (RD 126/2026). Un producto no puede
+   frente a los 17.094 € del SMI 2026. Un producto no puede
    entregar una plantilla de ejemplo por debajo del suelo legal.
 2. **La plantilla no cubría el horario que el propio libro declara** (R-02):
    6.072 horas contratadas frente a las 7.800 que salen de 13 horas de
@@ -92,20 +92,51 @@ escondido:
    por encima del 8-15 % que el propio libro publica como objetivo.
 5. **El origen de fondos cuadra con los usos** (R del gate §2.11.12-bis): el
    préstamo baja de 114.000 a **112.000 €** y, con 40.000 € de recursos
-   propios, los 152.000 € de origen cubren los 151.976 € de necesidad de caja
-   con 24 € de diferencia (0,02 %, tope 5 %). Antes sobraban 9.512 € de deuda
-   que se pagaba sin usarla.
+   propios, los 152.000 € de origen cubren la necesidad de caja del arranque.
+   Antes sobraban 9.512 € de deuda (6,58 %) que se pagaba sin usarla.
+   ⚠️ Con el motor 2.2 la necesidad de caja BAJÓ —los imprevistos pasan a
+   calcularse sólo sobre las partidas de obra, no sobre el bloque entero— y
+   se queda en **147.868,13 €**, así que el exceso de deuda es hoy de
+   **4.131,88 € (2,79 %)**: sigue por debajo del 5 % que el propio libro
+   admite, pero ya no son 24 €. La cifra publicada en la tabla «QUÉ HA
+   CAMBIADO» se ha actualizado a la del libro (R22-CAF-01, bloqueante de la
+   refutación 2.2). Bajar el préstamo a ~108.000 € para dejar la diferencia
+   casi a cero es **decisión de negocio de John** (R22-CAF-08): no se toca el
+   caso base desde aquí, porque mueve todas las cifras estrella del producto
+   (payback, saldo mínimo, DSCR) y la propia refutación lo deja como duda.
 6. **Aparecen los costes fijos que el checklist obliga a contratar y que el
    plan no tenía** (TEC-18, igual que en los otros cuatro hermanos): gestión
    de residuos, DDD, derechos de autor por música ambiental y PRL. Todos en
    celda verde con nota de «pide presupuesto en tu zona».
 
-Resultado del caso base (leído del libro regenerado el 2026-09-05): coste de
-personal **34,0 %** (techo 35 %), alquiler **8,2 %** (techo 12 %), coste de
-mercancía **29,6 %** (techo 32 %), margen bruto **66,1 %** (suelo 65 %) y
-resultado neto **9,1 %** (suelo 5 %). Los dos semáforos que el libro pinta
-por su cuenta —suelo salarial y cobertura de horas— quedan también en verde.
-**El plan ya no se suspende a sí mismo.**
+Resultado del caso base (leído del libro regenerado con el motor 2.2.1 el
+2026-09-05): coste de personal **34,0 %** (techo 35 %), alquiler **8,2 %**
+(techo 12 %), coste de mercancía **29,6 %** (techo 32 %), margen bruto
+**66,1 %** (suelo 65 %) y resultado neto **9,0 %** (suelo 5 %). Los dos
+semáforos que el libro pinta por su cuenta —suelo salarial y cobertura de
+horas— quedan también en verde. **El plan ya no se suspende a sí mismo.**
+
+CIFRAS ESTRELLA QUE MOVIÓ EL MOTOR 2.2/2.2.1 (y que este módulo NO puede
+teclear a mano en ninguna nota)
+------------------------------------------------------------------------
+El motor cambió la base de tres cifras que el cliente lee como titulares, y
+las notas que las citaban con un número fijo envejecieron en silencio:
+
+  * **Payback**: pasa de 2,3 a **2,8 años** porque el año 1 se mide ya con la
+    MISMA base contable que los años 2 y 3 (antes llevaba dentro el float del
+    IVA y el crédito del proveedor, que hay que devolver). El motor compone
+    esa nota por fórmula: aquí sólo se le remite, sin repetir el número.
+  * **Punto de equilibrio**: el libro publica el CONTABLE (84 clientes/día,
+    con la amortización dentro) y, debajo, el de caja (80, con la cuota del
+    préstamo del año, que en el año 1 es sólo de intereses por la carencia).
+    La frase de interpretación la compone el motor.
+  * **Necesidad de caja e imprevistos**: los imprevistos se calculan sobre
+    las partidas de OBRA (no sobre el bloque entero), así que la inversión y
+    la necesidad de caja bajan, y los imprevistos SÍ se amortizan, porque se
+    capitalizan con la obra.
+
+Regla que queda: en este módulo, cualquier texto que hable de esas tres cosas
+remite a la celda del libro; no repite su valor.
 """
 
 CONCEPTO = 'Cafetería / Brunch'
@@ -136,8 +167,9 @@ SUPUESTOS = {
         'declarar si llevaba IVA; v2.0 previa: 9,20 €)'),
     'dias_apertura': (
         None, None, 300, None,
-        'El MISMO dato lo usan el P&L, el punto de equilibrio y los '
-        'escenarios: el fichero v1.1 tenía DOS calendarios distintos '
+        'El MISMO dato lo usan la cuenta de resultados («PyG 3 Años»), el '
+        'punto de equilibrio y los escenarios: el fichero v1.1 tenía DOS '
+        'calendarios distintos '
         '(Punto Equilibrio: 30 días/mes; Escenarios: 300-310 días/año)',
         'fichero v1.1 (Escenarios) — fija NUEVO-03'),
     'crec_a2': (None, None, 0.07, None,
@@ -218,6 +250,17 @@ SUPUESTOS = {
     # origen a la necesidad» de la hoja de Financiación, resuelta la
     # circularidad (el préstamo mueve los intereses, los intereses mueven el
     # fondo de maniobra y el fondo mueve la necesidad de caja).
+    # ⚠️ ESTADO CON EL MOTOR 2.2.1 (R22-CAF-08, media, capa contenido): la
+    # necesidad de caja bajó a 147.868,13 € al recalcularse los imprevistos
+    # sobre las partidas de obra, así que los 152.000 € de origen la superan
+    # hoy en 4.131,88 € (2,79 %) y la celda «Préstamo que ajustaría el origen
+    # a la necesidad» del libro publica 107.868,13 €. Sigue DENTRO de la
+    # tolerancia del 5 % que el propio libro declara sana, así que el valor
+    # NO se toca desde aquí: bajarlo a ~108.000 € mueve intereses, fondo de
+    # maniobra, saldo mínimo, DSCR y payback —todas las cifras que la landing
+    # y el changelog publican— y la propia refutación lo deja como decisión
+    # de negocio de John. Lo que sí se ha corregido es el texto que la tabla
+    # «QUÉ HA CAMBIADO» le enseñaba al cliente (R22-CAF-01).
     'prestamo': (
         None, None, 112000, None,
         'Principal solicitado. La hoja de Financiación comprueba que el '
@@ -539,6 +582,21 @@ INSTRUCCIONES = {
         '7. La hoja «Financiación» cuadra lo que hace falta con lo que se '
         'aporta y monta el cuadro de amortización del préstamo. Si la '
         'diferencia sale en rojo, el plan no está financiado.',
+        # R22-CAF-19 — 28 notas del libro llaman «el P&L» a una hoja que en
+        # las solapas se llama «PyG 3 Años»: es la única que se cita por un
+        # nombre que no está en ninguna pestaña. Las notas las compone el
+        # motor (no se pueden reescribir desde aquí), así que se nombra el
+        # apodo una vez, en la hoja que el comprador abre primero.
+        '8. En este libro llamamos «el P&L» a la hoja «PyG 3 Años»: es la '
+        'misma cuenta de resultados, con una columna por cada uno de los '
+        'tres años.',
+        # Encargo del 2026-09-05: el Word del pack sigue siendo el de la
+        # versión anterior y contradice al Excel en el coste de personal, en
+        # los sueldos y en el horario (se regenera en T9). Mientras tanto, el
+        # comprador tiene que saber cuál manda.
+        '9. El documento de Word que acompaña a este plan financiero es '
+        'todavía el de la versión 1.1: las cifras válidas son las de este '
+        'Excel.',
     ],
     # (rótulo, valor, FUENTE, nota) — se conservan las referencias del
     # sector que ya traía este fichero (RD-04/RC-09 del representante:
@@ -577,24 +635,50 @@ INSTRUCCIONES = {
          'Con 45 plazas es la referencia que sostiene los clientes/día del '
          'caso base'),
         ('Margen bruto objetivo', '> 65 %', 'Fichero v1.1', ''),
+        # R22-CAF-07 — la nota decía «en la parte alta del rango» cuando el
+        # caso base sale POR ENCIMA del techo los tres años (15,9 / 17,3 /
+        # 17,8 %, medidos en el libro del 2026-09-05: margen bruto menos los
+        # costes fijos sin amortización ni intereses). En un producto que se
+        # vende por la honestidad de sus cifras, redondear un incumplimiento
+        # es lo mismo que un semáforo que no se enciende. Se escribe sin
+        # número fijo: el EBITDA se mueve con cualquier coste fijo.
         ('EBITDA objetivo (año 2)', '8-15 %', 'Fichero v1.1',
          'El primer año puede ser negativo: es normal en hostelería. Este '
-         'caso base queda en la parte alta del rango porque el coste de '
-         'personal se ha ajustado justo por debajo de su techo'),
+         'caso base queda POR ENCIMA del techo del rango los tres años, '
+         'porque el coste de personal se ha ajustado justo por debajo de su '
+         'techo y el propietario sólo cobra su nómina. Lo calculas restando '
+         'al margen bruto los costes fijos sin la amortización ni los '
+         'intereses; si añades retribución del socio o más plantilla, vuelve '
+         'al rango'),
+        # R22-CAF-02 — la nota era de la versión anterior y era doblemente
+        # falsa: el libro ya NO mide el payback sobre la necesidad total de
+        # caja (lo mide sobre la inversión sin el IVA recuperable y antes de
+        # la deuda) y el valor que publica cae DENTRO de esta referencia.
+        # Sin número fijo: el motor compone esa celda por fórmula y ya se
+        # movió una vez (2,3 → 2,8 años con el parche 2.2.1).
         ('Retorno de la inversión', '24-36 meses', 'Fichero v1.1',
          'Es una referencia del sector medida sobre lo que pone el '
-         'emprendedor. La hoja de Tesorería calcula el retorno sobre la '
-         'necesidad TOTAL de caja, financiación incluida: por eso sale más '
-         'largo que esta referencia'),
+         'emprendedor. La hoja de Tesorería publica el payback del PROYECTO: '
+         'antes de pagar al banco y sobre la inversión sin el IVA, que se '
+         'recupera con el modelo 303. Compara esa celda con este rango. Si '
+         'quieres el retorno de TU dinero, divide los recursos propios entre '
+         'el flujo de caja libre de esa misma hoja'),
         ('Convenio colectivo aplicable', 'PROVINCIAL de hostelería',
          'Fichero v1.1 y checklist de apertura',
          'No existe una tabla salarial estatal única: copia la tabla de tu '
          'provincia en la celda de Supuestos'),
+        # R22-CAF-16 — la fuente citaba «RD 126/2026», un número de Real
+        # Decreto que no se ha podido contrastar en el BOE desde este entorno
+        # y que coincide con el del RD 126/2015 (información alimentaria) que
+        # el propio documento del producto cita. El IMPORTE sí es coherente
+        # (17.094 / 14 = 1.221 €/mes) y de él cuelga el semáforo salarial de
+        # la hoja de Personal, así que se conserva y se retira la cita.
         ('Salario mínimo interprofesional 2026', '17.094 €/año',
-         'RD 126/2026',
+         'BOE (comprueba el Real Decreto vigente)',
          'Suelo legal a jornada completa en 14 pagas. Las jornadas '
          'parciales lo llevan en proporción; el semáforo de la hoja de '
-         'Personal lo comprueba fila a fila'),
+         'Personal lo comprueba fila a fila. Si presentas el plan en otro '
+         'ejercicio, actualiza el importe con el Real Decreto en vigor'),
     ],
 }
 
@@ -650,10 +734,15 @@ CHECKLIST = {
         # (Restaurantes) ni en el 673 (café-bares sin servicio de mesa).
         # El «671.4» y el paréntesis de después no cambian de ortografía:
         # es la ancla estable del patrón.
+        # R22-CAF-17 — el paréntesis del 673.2 describía ese epígrafe por un
+        # criterio que no es el de la tarifa: en el grupo 673 («Servicios en
+        # cafés y bares», RDLeg 1175/1990) lo que separa el 673.1 del 673.2
+        # es la CATEGORÍA del establecimiento, no la música.
         (r'Epigrafe IAE: 671\.4 \(caf[eé]s y bares sin espect[aá]culos\)',
          'Epígrafe IAE: Grupo 672 (Cafeterías, por categoría 672.1/672.2/'
-         '672.3 según el servicio) o 673.2 (café-bar sin música) si no hay '
-         'servicio de mesa; el 671 es de restaurantes'),
+         '672.3 según el servicio) o 673.2 (Otros cafés y bares; el 673.1 es '
+         'el de categoría especial) si no hay servicio de mesa; el 671 es de '
+         'restaurantes'),
         # DOM-13 / COM-08 (FAMILIA) — Crea y Crece: lo que impone la Ley
         # 18/2022 es dotar el 20 % del beneficio a reserva legal, no ningún
         # depósito. La nota de v1.1 se quedaba en el capital de 1 €.
@@ -801,7 +890,7 @@ CHECKLIST = {
 #
 # ⚠️ Esta tabla la LEE EL CLIENTE en la hoja de Instrucciones: la columna
 # «Por qué» va en lenguaje llano, SIN códigos internos de auditoría, y las
-# cifras de la columna «v2.1» son las que el libro termina teniendo (la v2.0
+# cifras de la columna «v2.2» son las que el libro termina teniendo (la v2.0
 # previa publicaba aquí una plantilla de «~70.000 €», un ticket de 9,20 € y
 # 80 clientes/día que ya no son los del fichero). Trazabilidad interna, por
 # fila: TEC-01/DOM-01 · §7-bis.17 + R-02 · R-01 · R-02 · §7-bis.17 · TEC-11/
@@ -859,12 +948,20 @@ RECALIBRADO = (
      '3 meses de costes fijos de caja, por fórmula (38.526 €)',
      'Los 9.000 € cubrían menos de un mes de costes fijos, no tres. Ahora '
      'se recalcula solo cuando cambias cualquier gasto.'),
+    # R22-CAF (barrido de cifras movidas por el motor 2.2): los imprevistos
+    # de obra pasan a calcularse sobre las partidas de obra Y a capitalizarse
+    # con ellas, así que SÍ se amortizan. La fila decía lo contrario y el
+    # libro la desmentía en su propia hoja de Inversión, donde la base de
+    # amortización de obra ya los incluye.
     ('Amortización',
      '9.490 € al año, a 10 años planos sobre TODA la inversión (fondo de '
-     'maniobra, stock e imprevistos incluidos)',
+     'maniobra y stock incluidos)',
      'Sólo sobre la obra y la maquinaria, cada una con su vida útil',
-     'El colchón de caja, las existencias y los imprevistos no son '
-     'inmovilizado: amortizarlos inflaba el gasto y falseaba el impuesto.'),
+     'El colchón de caja, las existencias, la fianza, la renta de los meses '
+     'de obra y los gastos de constitución, licencias y lanzamiento no son '
+     'inmovilizado: amortizarlos inflaba el gasto y falseaba el impuesto. '
+     'Los imprevistos de obra sí se amortizan, porque forman parte del coste '
+     'de la reforma.'),
     ('Imprevistos de obra', '7.000 € (un 8 % escrito dentro del rótulo)',
      'Por fórmula sobre las partidas de obra, con el porcentaje en '
      'Supuestos',
@@ -887,12 +984,44 @@ RECALIBRADO = (
      'acumulado',
      'Es la hoja que responde a la pregunta que decide una operación '
      'bancaria: en qué mes se agota la caja.'),
+    # R22-CAF-01 (BLOQUEANTE de la refutación 2.2) — esta celda publicaba
+    # «151.976 € de necesidad de caja con 24 € de diferencia», que eran las
+    # cifras del motor 2.1. Con el 2.2 los imprevistos se calculan sólo sobre
+    # las partidas de obra, la inversión baja y la necesidad se queda en
+    # 147.868,13 €, con 4.131,88 € de diferencia (2,79 %). La propia hoja de
+    # Instrucciones y la de Financiación lo desmentían dos veces en el mismo
+    # libro. Cifras leídas del libro regenerado el 2026-09-05.
     ('Financiación solicitada',
      '(no había hoja que la cuadrara)',
      '40.000 € de recursos propios y 112.000 € de préstamo',
-     'Cubren los 151.976 € de necesidad de caja con 24 € de diferencia. '
-     'Pedir más es pagar intereses por un dinero que no se usa.'),
+     'Cubren los 147.868 € de necesidad de caja que calcula este mismo '
+     'libro, con 4.132 € de margen: un 2,8 %, por debajo del 5 % que el '
+     'propio libro admite como exceso sano. Pedir más es pagar intereses por '
+     'un dinero que no se usa, y la hoja de Financiación calcula el importe '
+     'exacto que pondría esa diferencia a cero.'),
 )
+
+# ==========================================================================
+# §MOT-02 — referencia de rotación PROPIA de este molde (R22-CAF-05)
+# ==========================================================================
+#: Sin este bloque, la celda «Rotaciones al día implícitas» de la hoja de
+#: Supuestos hereda la frase por defecto del motor —«El documento de este plan
+#: pide un MÍNIMO de 1,8 rotaciones por mesa y servicio en temporada alta»—,
+#: que es la del documento del plan de BAR-RESTAURANTE: barrido el documento
+#: de este producto, no contiene «1,8» ni «rotaciones» ni «temporada alta» en
+#: ninguno de sus párrafos. El comprador buscaría en su Word un umbral que su
+#: Word no dice.
+#: FUENTE: la propia tabla «DATOS DE REFERENCIA DEL SECTOR» de este libro
+#: («Rotación de mesa en el brunch de fin de semana» / «2-3 turnos»), que se
+#: define más arriba en INSTRUCCIONES['referencias'].
+#: `activa` y `max` se dejan por defecto (bloque encendido, techo de 3
+#: rotaciones): el driver de esta cafetería sí es el cliente sentado y el
+#: caso base exige 1,76, muy por debajo del techo.
+ROTACION = {
+    'referencia': 'Este libro publica una rotación de mesa de 2-3 turnos en '
+                  'el brunch de fin de semana: compara esta media con tu '
+                  'horario real antes de darla por buena.',
+}
 
 # ==========================================================================
 # §M9 — VOCABULARIO DEL OFICIO (R22-CAF-20 / REF-17 · motor 2.2.1)

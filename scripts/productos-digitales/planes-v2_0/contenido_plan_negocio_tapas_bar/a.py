@@ -62,8 +62,9 @@ Medido en `plan-financiero-tapas-bar.xlsx` v1.1: `'PyG 3 Años'!B23`
 **113.174 €**, la segunda peor de los cinco hermanos (censo de familia,
 `planes-v2-SPEC.md` línea del censo: «tapas-bar 96.000 frente a 209.174
 (−113.174)»). Con la cifra real de personal, el coste laboral es el **77,5 %**
-de las ventas (270.000 €), muy por encima del techo 32-38 % que publica
-`Instrucciones!B9` del mismo libro. El plan es inviable con sus propios datos,
+de las ventas (270.000 €), muy por encima del techo 32-38 % que publica la
+tabla de referencias del sector del mismo libro. El plan es inviable con sus
+propios datos,
 igual que sus cuatro hermanos — y RT-03 (`planes-v2-correccion.json`) mide el
 mismo síntoma en el `--dry-run` de partida: «semáforo de personal 74,7 %»
 antes de que este módulo exista.
@@ -77,36 +78,49 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
    servicio**, con el propietario trabajando en sala/barra (no como gerente
    puro) y el resto del equipo escalado por franja horaria: turno fuerte de
    tarde-noche (afterwork + cena), tarde floja, y refuerzo de fin de semana,
-   que es el propio patrón que describe `Instrucciones!B15`
-   («Ocupación media semana: 50-65 %») y `B16` («Ocupación fin de semana:
-   80-95 %», con el propio docx citando el afterwork como «entre el 25 y 30
-   por ciento» de la facturación — párrafo 58).
+   que es el propio patrón que describe la tabla de referencias del sector
+   de la hoja `Instrucciones` («Ocupación media semana: 50-65 %» y
+   «Ocupación fin de semana: 80-95 %»), con el propio documento del plan
+   citando el afterwork como «entre el 25 y 30 por ciento» de la
+   facturación.
 2. **⚠️ El primer redimensionado se pasó de frenada y entregaba sueldos por
    debajo del SMI** (REF-01 de la refutación del 29-ago: `Personal!D5`
    1.150 €/mes y `D7` 1.050 €/mes a jornada COMPLETA, es decir 16.100 € y
    14.700 €/año frente a los 17.094 € del SMI; y `D11` 90 € con jornada del
    8 %). Dos de ellos eran ilegales y el propio libro los pintaba en ROJO.
    Además la cobertura de horas quedaba en ÁMBAR al 93,4 % (REF-07): la
-   plantilla no llegaba a cubrir las 13 h de servicio × 2 personas × 300 días
-   que el mismo libro declara. **Ninguna de las dos cosas se arregla bajando
-   el listón**: los sueldos suben por encima del SMI en proporción a su
-   jornada y las jornadas suben hasta cubrir el horario (Σ jornadas = 4,30
-   sobre las 4,24 necesarias → cobertura 101 %). Eso deja el coste laboral en
-   **108.368 €/año**, y ahí es donde el plan deja de cuadrar con 270.000 € de
-   ventas: 108.368/270.000 = **40,1 %**, por encima del 32-38 % que publica
-   `Instrucciones!B9`.
+   plantilla no llegaba a cubrir el horario que el mismo libro declara.
+   **Ninguna de las dos cosas se arregla bajando el listón**: los sueldos
+   suben por encima del SMI en proporción a su jornada y las jornadas suben
+   hasta cubrir el horario (Σ jornadas = 4,30 sobre las 4,24 necesarias →
+   cobertura ~101 %). Eso deja el coste laboral en **108.368 €/año**, y ahí
+   es donde el plan deja de cuadrar con 270.000 € de ventas:
+   108.368/270.000 = **40,1 %**, por encima del 32-38 % que publica la tabla
+   de referencias del sector.
+
+   ⚠️ EL CUADRANTE SE HA CORREGIDO DOS VECES, y la segunda devuelve la
+   aritmética de arriba. El motor traía cableadas 13 h × 2 personas × 300
+   días = 7.800 h llamándolas «horas de SERVICIO»; el ítem A4 del parche 2.2
+   dejó que cada molde declarase las suyas y aquí se pusieron sólo las 9,5 h
+   con público, con lo que el libro pasó a exigir 5.700 h contra las 7.912
+   contratadas — un 138,8 % de cobertura que el semáforo no ve, porque sólo
+   avisa por debajo del 100 % (R22-03). Las 13 h no eran falsas: estaban MAL
+   ROTULADAS. Son 9,5 h de servicio + 3,5 h de mise en place anterior a la
+   apertura, que es la SEGUNDA franja que el motor admite. Con las dos
+   declaradas (ver `COBERTURA`, al final del módulo) el libro vuelve a pedir
+   7.800 h y ~4,24 jornadas.
 3. **Por eso el caso base sube de 50 a 56 clientes/día** (§7-bis.17, «se
    recalibra por los dos lados y dentro de rangos con fuente»). Son **1,24
    servicios por plaza y día** sobre las 45 plazas del propio plan, muy por
    debajo de la ocupación que describe su documento: «rotación de 1,8
    servicios por cubierto en almuerzo y 1,5 en cena» con ocupaciones del
-   65 % y el 75 % (docx párrafo 27), que sobre 45 plazas darían más de 100
+   65 % y el 75 % (documento del plan), que sobre 45 plazas darían más de 100
    clientes/día. El caso base se proyecta a la mitad de eso, a propósito.
    Facturación del año 1: **56 × 18 × 300 = 302.400 €**.
 4. **El ticket NO se toca: sigue siendo 18 €, y ahora se declara SIN IVA**
    (TEC-11, DOM-30, igual que en el representante y en cafetería). Con el IVA
-   de sala son 19,80 € de PVP, dentro del «15-22 €» que publica
-   `Instrucciones!B11`. La subida de ingresos viene del volumen, no del
+   de sala son 19,80 € de PVP, dentro del «15-22 €» que publica la tabla de
+   referencias del sector. La subida de ingresos viene del volumen, no del
    precio.
 5. **Aparecen los costes fijos que el checklist obliga a contratar y que el
    plan no tenía** (TEC-18, igual que en los otros cuatro hermanos): gestión
@@ -118,18 +132,30 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
 6. **La financiación se cuadra con la necesidad de caja** (RD-34, que tumbaba
    el dry-run con 11.197,55 € de exceso, un 6,44 % sobre los usos): 50.000 €
    de recursos propios + 129.000 € de préstamo = 179.000 € frente a los
-   ~178.400 € de necesidad de caja. Los socios ponen el **28 %**, dentro del
-   25-30 % que exige la nota de esa misma celda (REF-17, que medía 24,33 %).
+   **174.316,60 €** de necesidad de caja que publica el libro de hoy, un
+   2,7 % de holgura sobre un tope del 5 %. Los socios ponen el **29 %**,
+   dentro del 25-30 % que exige la nota de esa misma celda (REF-17, que medía
+   24,33 %). ⚠️ Esa necesidad de caja BAJÓ con el parche 2.2 del motor, que
+   redujo los imprevistos de obra: cualquier porcentaje escrito a mano sobre
+   ella hay que volver a leerlo del libro después de regenerar (R22-12).
 
 Resultado del caso base (verificado con `data_only` tras `inject_cache.py`,
 ver informe de la tanda): coste de personal **35,8 %** (techo 36 %, dentro
-del rango 32-38 % de `Instrucciones!B9`), alquiler **9,9 %** (techo 12 % —
-`Instrucciones!B10`), coste de mercancía **27,8 %** (dentro de 22-32 % según
-la línea — `Instrucciones!B6-B8`, y coincide con el 28,1 % que el propio
-fichero v1.1 ya declaraba en `'PyG 3 Años'!E17`), margen bruto **69,4 %**
-(suelo 68 % — `Instrucciones!B17`) y resultado neto **~7 %** (suelo 5 %).
-Cobertura de horas **101 %** y ningún sueldo por debajo del SMI en
-proporción a su jornada. **El plan no se suspende a sí mismo.**
+del rango 32-38 %), alquiler **9,9 %** (techo 12 %), coste de mercancía
+**27,8 %** (dentro de 22-32 % según la línea, y coincide con el 28,1 % que
+el propio fichero v1.1 ya declaraba), margen bruto **69,4 %** (suelo 68 %) y
+resultado neto **6,8 %** (suelo 5 %). Payback del proyecto **2,8 años** y
+sobre el CAPEX **2,2 años** (base contable desde el parche 2.2.1 del motor:
+la cifra publicada cambió). Cobertura de horas **101 %** y ningún sueldo por
+debajo del SMI en proporción a su jornada. **El plan no se suspende a sí
+mismo.**
+
+⚠️ NINGUNA nota de este módulo cita ya la hoja `Instrucciones` por
+COORDENADA. Los rangos del sector vivían en `B6`-`B18` en el fichero v1.1 y
+en la v2.2 el motor los reconstruye a partir de la fila 52, bajo el rótulo
+«DATOS DE REFERENCIA DEL SECTOR»: cada `Instrucciones!Bxx` escrito a mano
+mandaba al comprador a una celda vacía o, peor, a otra cifra. Se citan por
+NOMBRE.
 """
 
 CONCEPTO = 'Tapas Bar / Gastrobar'
@@ -146,8 +172,9 @@ CONCEPTO = 'Tapas Bar / Gastrobar'
 # ==========================================================================
 SUPUESTOS = {
     # RD-34 / REF-01 / REF-07 — el caso base subió de 50 a 56 clientes/día
-    # porque la plantilla que de verdad cubre el horario (13 h × 2 personas ×
-    # 300 días) y respeta el SMI cuesta 108.368 €/año: con 270.000 € de
+    # porque la plantilla que de verdad cubre el horario (9,5 h de servicio +
+    # 3,5 h de mise en place, × 2 personas × 300 días = 7.800 h; ver
+    # COBERTURA) y respeta el SMI cuesta 108.368 €/año: con 270.000 € de
     # ventas eso era el 40,1 % del labour cost, por encima del 32-38 % que
     # publica el propio libro. Se recalibra por VOLUMEN, no por precio, y muy
     # por debajo de la ocupación que describe el documento del plan.
@@ -165,8 +192,8 @@ SUPUESTOS = {
         'SIN IVA. Es el mismo 18 € del fichero v1.1: declarar que es SIN IVA '
         'no cambia ningún número, sólo aclara qué era. Con el IVA de sala '
         'son 19,80 € de PVP —lo calcula la celda «PVP equivalente con IVA» '
-        'de abajo—, dentro del rango 15-22 € «Ticket medio tapas bar» de '
-        'Instrucciones!B11',
+        'de abajo—, dentro del rango de 15-22 € que la hoja «Instrucciones» '
+        'publica como ticket medio de un tapas bar',
         "fichero v1.1 ('Punto Equilibrio'!B9, TEC-11/DOM-30)"),
     'dias_apertura': (
         None, None, 300, None,
@@ -190,16 +217,16 @@ SUPUESTOS = {
         'fichero v1.1 (redondeado a la baja, conservador)'),
     'coste_comida': (
         None, None, 0.30, None,
-        'Food cost de tapas y raciones: dentro del 28-32 % que declara '
-        'Instrucciones!B6 de este mismo libro. Coincide con el 43.500/'
-        '145.000 = 30 % que ya tenía la v1.1',
+        'Food cost de tapas y raciones: dentro del 28-32 % que la hoja '
+        '«Instrucciones» de este mismo libro declara para tapas y raciones. '
+        'Coincide con el 43.500/145.000 = 30 % que ya tenía la v1.1',
         "fichero v1.1 ('PyG 3 Años'!B13/B6, Instrucciones!B6)"),
     'coste_bebida': (
         None, None, 0.25, None,
         'Coste de cerveza, vino, vermut y cócteles sobre sus propias '
-        'ventas: media ponderada entre el 22-28 % de cerveza/vino '
-        '(Instrucciones!B7) y el 18-25 % de cócteles (Instrucciones!B8). '
-        'Coincide con (23.750+6.250)/(95.000+25.000) = 25 % de la v1.1',
+        'ventas: media ponderada entre el 22-28 % de cerveza y vino y el '
+        '18-25 % de cócteles que publica la hoja «Instrucciones». Coincide '
+        'con (23.750+6.250)/(95.000+25.000) = 25 % de la v1.1',
         'fichero v1.1 (Instrucciones!B7 y B8)'),
     'pct_consumibles': (
         None, None, 0.01, None,
@@ -208,9 +235,9 @@ SUPUESTOS = {
         '0,93 %, redondeado)'),
     'pct_delivery': (
         None, None, 0.0, None,
-        'A CERO por defecto: el checklist de este plan lo marca como tarea '
-        'del mes 2-3 («Evaluar delivery si el margen lo permite»), no del '
-        'día 1. Súbelo al peso real del canal cuando lo actives',
+        'A CERO por defecto: el checklist de este plan lo deja para el mes '
+        '2-3 y sólo si el margen lo permite, no para el día 1. Súbelo al '
+        'peso real del canal cuando lo actives',
         'TEC-23/DOM-34 (mismo criterio que el representante)'),
     'comision_delivery': (
         None, None, 0.30, None,
@@ -225,8 +252,8 @@ SUPUESTOS = {
     'alquiler_mes': (
         None, None, 2500, None,
         'Local de tapas bar/gastrobar de 60-80 m² con barra prominente + '
-        'terraza. 9,9 % de las ventas del caso base, por debajo del techo de '
-        '12 % que fija Instrucciones!B10 de este mismo libro',
+        'terraza. 9,9 % de las ventas del caso base, por debajo del techo '
+        'del 12 % que fija la hoja «Instrucciones» de este mismo libro',
         "fichero v1.1 ('PyG 3 Años'!B22 = 30.000 €/año ÷ 12)"),
     'fianza_meses': (None, None, 3, None,
                      'Tres meses de renta, como en el contrato tipo de local '
@@ -239,8 +266,8 @@ SUPUESTOS = {
         'de firmar',
         "fichero v1.1 ('PyG 3 Años'!B24 = 9.600 €/año ÷ 12)"),
     'seguros_ano': (None, None, 2400, None,
-                    'Responsabilidad civil (mínimo 300.000 € — checklist '
-                    "F2!E11) + multirriesgo del local",
+                    'Responsabilidad civil (mínimo 300.000 €, como pide el '
+                    'checklist en su fase de local) + multirriesgo del local',
                     "fichero v1.1 ('PyG 3 Años'!B25)"),
     'pct_varios': (
         None, None, 0.01, None,
@@ -250,12 +277,17 @@ SUPUESTOS = {
         "fichero v1.1 ('PyG 3 Años'!B31 = 2.500 €/270.000 = 0,93 %, "
         'redondeado)'),
     # REF-17 — 45.000 € eran el 24,33 % de la necesidad de caja y la propia
-    # nota de esta celda exige el 25-30 %. Con 50.000 € son el 28 %.
+    # nota de esta celda exige el 25-30 %.
+    # ⚠️ R22-12 — este porcentaje se escribe A MANO y envejece con el motor:
+    # decía 28 % porque la necesidad de caja de la 2.1 era 178.432,10 €. El
+    # parche 2.2 bajó los imprevistos de obra y hoy son 174.316,60 €, así que
+    # 50.000/174.316,60 = 28,7 % → 29 %. Releer 'Financiación'!B6 y B14 del
+    # libro regenerado antes de volver a tocarlo.
     'recursos_propios': (
         None, None, 50000, None,
         'Aportación de los socios. Con menos, el banco no entra: pide un '
         '25-30 % de fondos propios sobre la necesidad de caja de este plan. '
-        'En el caso base son el 28 %',
+        'En el caso base son el 29 %',
         'recalibrado por REF-17 (v2.0 previa: 45.000 €, el 24,33 %)'),
     # RD-34 — el origen de fondos superaba a los usos en 11.197,55 € (6,44 %,
     # tope 5 %): son intereses que se pagan por un dinero que no se usa. La
@@ -287,9 +319,9 @@ SUPUESTOS = {
         None, None, 3, None,
         'Mínimo que exige este mismo libro (Instrucciones): un colchón por '
         'debajo de 3 meses no cubre un bache de temporada baja',
-        'SPEC §2.2 / TEC-07 (v1.1 dotaba 12.000 €, que eran 0,93 meses de '
-        'sus propios costes fijos de entonces: NUEVO-01, la segunda peor '
-        'proporción de los cinco hermanos)'),
+        'SPEC §2.2 / TEC-07 (v1.1 dotaba 12.000 €, que no llegaban a cubrir '
+        'UN mes de sus propios costes fijos de caja: NUEVO-01, la segunda '
+        'peor proporción de los cinco hermanos)'),
     'vida_obra': (None, None, 10, None,
                   'Obra, instalaciones, extracción y decoración de un tapas '
                   'bar con cocina clasificada. Coincide con los «10 años» '
@@ -309,8 +341,9 @@ SUPUESTOS = {
         None, None, 0.85, None,
         'Bebida ALCOHÓLICA sobre el total de bebida: la línea de bebida de '
         'este plan es cerveza, vino, vermut y cócteles/destilados — un '
-        'tapas bar con «barra prominente» (docx, concepto) vende sobre todo '
-        'alcohol. El resto —refrescos, agua, algún café— va al IVA reducido '
+        'tapas bar con la «barra prominente» que describe el documento de '
+        'este plan vende sobre todo alcohol. El resto —refrescos, agua, '
+        'algún café— va al IVA reducido '
         'de hostelería',
         'parametrizado (composición de la línea de bebida de este plan: '
         "'PyG 3 Años'!A7 «cerveza, vino, vermut» + A8 «cocteles y "
@@ -358,7 +391,8 @@ LINEAS_INGRESO = (
      '((145.000+5.000)/270.000 = 55,6 %)'),
     ('Ventas de bebida (cerveza, vino, vermut y cócteles)', 0.4444, 'bebida',
      'Grifos de cerveza, vino y vermut de barra, más cócteles y destilados '
-     '(coste más alto por elaboración, Instrucciones!B8)',
+     '(coste más alto por elaboración: el 18-25 % que publica la hoja '
+     '«Instrucciones»)',
      'fichero v1.1: suma de «Ventas bebidas» + «Ventas cocteles y '
      'destilados» ((95.000+25.000)/270.000 = 44,4 %)'),
 )
@@ -377,9 +411,14 @@ LINEAS_INGRESO = (
 #     **1.221 € × jornada**: 1.221 a jornada completa, 732,60 al 60 %,
 #     549,45 al 45 %, 183,15 al 15 % y 122,10 al 10 %.
 #   * `Personal!B25` (cobertura) se pinta VERDE sólo con ≥ 100 %:
-#     `Σ jornadas × 40 h × 46 semanas ≥ horas_día × personas_franja × días`.
-#     Con los valores que trae `grupo_a` (13 h × 2 personas × 300 días =
-#     7.800 h) hace falta **Σ jornadas ≥ 4,24**. Aquí suman **4,30**.
+#     `Σ jornadas × 40 h × 46 semanas ≥ horas necesarias al año`. Con el
+#     cuadrante que declara `COBERTURA` al final de este módulo —9,5 h de
+#     servicio + 3,5 h de mise en place, dos personas en cada franja, 300
+#     días = 7.800 h— hace falta **Σ jornadas ≥ 4,24**. Aquí suman **4,30**.
+#     ⚠️ R22-03: el semáforo sólo avisa POR DEBAJO del 100 %, así que una
+#     plantilla sobredimensionada no canta sola. Si se toca esta tabla o el
+#     cuadrante, releer `Personal!B23`, `B24` y `B25` del libro regenerado
+#     ANTES de escribir ninguna cifra de cobertura en `RECALIBRADO`.
 #
 # El coste que sale de las dos condiciones (108.368 €/año) es lo que obligó a
 # subir los clientes/día a 56: por debajo de ~301.000 € de ventas, un equipo
@@ -395,19 +434,22 @@ PLANTILLA = (
      1.0),
     ('Jefe de cocina', 1, 1480,
      'Diseña la carta de tapas, coordina la línea de cocina y controla el '
-     'food cost semanal (checklist F6!B6). Es el puesto cualificado del '
+     'food cost semanal, que el checklist marca como tarea SEMANAL de los '
+     'primeros 90 días. Es el puesto cualificado del '
      'equipo y el único claramente por encima del suelo del convenio',
      'recalibrado (v1.1: «Jefe de cocina / Cocinero principal» 2.000 €; '
      'v2.0 previa: 1.350 €)',
      1.0),
     ('Camarero/a de barra (turno fuerte)', 1, 1280,
      'Tiraje de cerveza, vermut y cócteles: el afterwork representa el '
-     '25-30 % de la facturación de un gastrobar (docx párrafo 58)',
+     '25-30 % de la facturación de un gastrobar, según el documento de '
+     'este plan',
      'recalibrado por REF-01 (v1.1: «Camarero/a principal (barra)» 1.550 €; '
      'v2.0 previa: 1.050 €, por DEBAJO del SMI a jornada completa)', 1.0),
     ('Camarero/a de sala y terraza', 1, 790,
      'Cubre el servicio de mesa y terraza en el turno de tarde-noche, 24 '
-     'horas semanales (Instrucciones!B15: «ocupación media semana 50-65 %»)',
+     'horas semanales; la hoja «Instrucciones» sitúa la ocupación media de '
+     'entre semana en el 50-65 %',
      'recalibrado (v1.1: «Camarero/a sala» 1.450 € a jornada completa; v2.0 '
      'previa: 550 € al 45 %). Sube al 60 % para cerrar la cobertura de '
      'horas (REF-07)',
@@ -421,7 +463,7 @@ PLANTILLA = (
      0.45),
     ('Extra de fin de semana (barra y sala)', 1, 195,
      'Refuerzo de los picos de viernes-sábado, cuando la ocupación sube al '
-     '80-95 % (Instrucciones!B16). Seis horas semanales',
+     '80-95 % que publica la hoja «Instrucciones». Seis horas semanales',
      'recalibrado (v1.1: «Extra fines de semana» 800 € a 20 h/semana; v2.0 '
      'previa: 200 €, un 9 % por encima de su suelo)',
      0.15),
@@ -528,16 +570,17 @@ FIJOS_EXTRA = (
      'parametrizado (TEC-18)'),
     ('Desinsectación, desratización y desinfección (DDD)', 700,
      'Empresa inscrita en el ROESB; forma parte del plan APPCC que el '
-     "checklist ya exige ('F4 - Personal'!B14: «Formación alérgenos + "
+     'checklist ya exige en su fase de personal («Formación alérgenos + '
      'APPCC»)', 'parametrizado (TEC-18)'),
     ('Derechos de autor por música ambiental (SGAE/AGEDI-AIE)', 700,
      'Es una licencia DISTINTA de la municipal de música ambiente que el '
-     "checklist ya tiene ('F2 - Local'!B10): esa es administrativa, ésta es "
-     'de propiedad intelectual. Se pagan las dos si hay hilo musical o DJ',
+     'checklist ya tiene en su fase de local: esa es administrativa, ésta '
+     'es de propiedad intelectual. Se pagan las dos si hay hilo musical o DJ',
      'parametrizado (TEC-18)'),
     ('Prevención de riesgos laborales y vigilancia de la salud', 500,
      'El plan de prevención es obligatorio; el proveedor externo, no (art. '
-     "30.5 de la Ley 31/1995) — el checklist 'F4 - Personal' lo corrige",
+     '30.5 de la Ley 31/1995) — la fase de personal del checklist lo '
+     'corrige',
      'parametrizado (DOM-26)'),
 )
 
@@ -549,26 +592,27 @@ FIJOS_EXTRA = (
 # ==========================================================================
 UMBRALES = (
     ('r_mb', 'Margen bruto / Ventas', 0.68,
-     'Suelo del propio libro: «Instrucciones!B17 — Margen bruto objetivo: '
-     '>68%»'),
+     'Suelo del propio libro: la hoja «Instrucciones» fija un margen bruto '
+     'objetivo por encima del 68 %'),
     ('r_cogs', 'Coste de mercancía / Ventas', 0.30,
-     'Blend de los tres food cost que publica este producto (comida '
-     '28-32 %, cerveza/vino 22-28 %, cócteles 18-25 % — Instrucciones!'
-     'B6-B8): 30 % coincide con el 28,1 % que la propia v1.1 ya declaraba '
-     "en 'PyG 3 Años'!E17, con margen"),
+     'Blend de los tres food cost que este producto publica en la hoja '
+     '«Instrucciones» (comida 28-32 %, cerveza y vino 22-28 %, cócteles '
+     '18-25 %): el 30 % coincide, con margen, con el 28,1 % que la propia '
+     'v1.1 ya declaraba en su cuenta de resultados'),
     ('r_personal', 'Coste de personal / Ventas', 0.36,
-     'Dentro del rango 32-38 % que publica Instrucciones!B9 de este mismo '
-     'libro: cerca del extremo estricto, pero dejando margen realista para '
-     'retribuir un jefe de cocina cualificado a jornada completa'),
+     'Dentro del rango 32-38 % que la hoja «Instrucciones» de este mismo '
+     'libro publica para el coste de personal: cerca del extremo estricto, '
+     'pero dejando margen realista para retribuir un jefe de cocina '
+     'cualificado a jornada completa'),
     ('r_alquiler', 'Alquiler / Ventas', 0.12,
-     'Techo del propio libro: «Instrucciones!B10 — Alquiler / ventas: '
-     '8-12%, no superar 12% para ser viable»'),
+     'Techo del propio libro: la hoja «Instrucciones» sitúa el alquiler '
+     'entre el 8 % y el 12 % de las ventas y pide no pasar del 12 % para '
+     'ser viable'),
     ('r_neto', 'Resultado neto / Ventas', 0.05,
-     'Derivado del suelo de EBITDA que declara este producto para el año 2 '
-     '(«Instrucciones!B18 — EBITDA objetivo: 15-22%»): descontando '
-     'amortización, intereses e Impuesto de Sociedades, un EBITDA en la '
-     'franja baja del rango deja un resultado neto en torno al 5 % ya en el '
-     'año 1'),
+     'Derivado del EBITDA objetivo del 15-22 % que la hoja «Instrucciones» '
+     'declara para el año 2: descontando amortización, intereses e Impuesto '
+     'de Sociedades, un EBITDA en la franja baja del rango deja un '
+     'resultado neto en torno al 5 % ya en el año 1'),
 )
 
 # ==========================================================================
@@ -626,6 +670,15 @@ INSTRUCCIONES = {
         'diferencia sale en rojo, el plan no está financiado; muy por encima '
         'de cero tampoco es gratis, porque se pagan intereses por un dinero '
         'que no se usa.',
+        # R22-06 — el Word del pack NO se regenera en esta versión (se hará
+        # con el guion que lee las celdas de este Excel), así que sus cifras
+        # son las de la v1.1 y contradicen a las de aquí: inversión, ventas
+        # del año 1, ticket y crecimientos. Mientras eso sea cierto, el libro
+        # tiene que decirlo — es la primera pregunta de quien abre los dos
+        # ficheros. Al regenerar el Word, RETIRAR este punto.
+        '8. El documento Word de este pack es el de la versión 1.1: las '
+        'cifras válidas son las de este Excel, que es el que se recalcula '
+        'solo. Donde una y otra no coincidan, manda esta hoja de cálculo.',
     ],
     # (rótulo, valor, FUENTE, nota) — se conservan las referencias del
     # sector que ya traía este fichero (mismo criterio que el representante
@@ -648,6 +701,10 @@ INSTRUCCIONES = {
          'Raciones + maridaje de vino o vermut'),
         ('Consumiciones de barra sobre ventas', '35-45 %', 'Fichero v1.1',
          'La barra es clave en un tapas bar, con alto margen'),
+        ('Rotación de mesa', '2-3 turnos', 'Fichero v1.1',
+         'Servicios completos por plaza y día. Es de donde sale el techo de '
+         'rotaciones que trae por defecto la hoja «Punto Equilibrio»: si tu '
+         'horario y tu aforo dan para más, súbelo en esa celda verde'),
         ('Ocupación media semana', '50-65 %', 'Fichero v1.1',
          'El afterwork de jueves-viernes es muy fuerte'),
         ('Ocupación fin de semana', '80-95 %', 'Fichero v1.1',
@@ -660,12 +717,26 @@ INSTRUCCIONES = {
         # más arriba («Payback del proyecto» = más de 3 años). No se retira:
         # se explica por qué las dos cosas son ciertas, que es lo que un
         # comité de riesgos pregunta.
+        # ⚠️ R22-04 — la redacción anterior explicaba el payback con dos
+        # afirmaciones que el motor 2.2 había dejado FALSAS: que el numerador
+        # incluye el IVA de la inversión (el ítem A1 lo excluye, y la propia
+        # fila lo rotula «Inversión a recuperar (sin el IVA, que se recupera
+        # por el 303)») y, con la 2.2.1, que la comparación correcta es
+        # contra el payback del proyecto. La nueva redacción NO lleva ni una
+        # cifra: el parche 2.2.1 cambió la base del flujo del año 1 a la
+        # contable y la cifra publicada se movió, así que cualquier número
+        # escrito aquí volvería a envejecer en la siguiente versión del
+        # motor. El libro compone las suyas por fórmula.
         ('Retorno de la inversión', '18-30 meses', 'Fichero v1.1',
-         'Es la referencia del sector, medida sobre la inversión en obra y '
-         'equipamiento. El «Payback del proyecto» del bloque de arriba sale '
-         'más largo porque lo que hay que recuperar incluye además el fondo '
-         'de maniobra de tres meses y el IVA de la inversión, que hay que '
-         'adelantar. La cifra de ESTE plan es la de arriba'),
+         'Es la referencia del sector, medida sobre lo que se COMPRA: obra y '
+         'equipamiento. Lo comparable con ella es la fila «Payback sobre el '
+         'CAPEX» de la hoja de Tesorería, que mide exactamente eso. El '
+         '«Payback del proyecto» del bloque de arriba mide algo más amplio, '
+         'porque recupera además el fondo de maniobra de tres meses, que '
+         'queda inmovilizado hasta que se cierra el negocio: por eso sale '
+         'más largo. El IVA de la inversión no entra en ninguno de los dos, '
+         'porque se recupera con el modelo 303. La cifra que publica ESTE '
+         'plan es la de arriba'),
         ('Merma media', '3-5 %', 'Fichero v1.1',
          'Las tapas permiten aprovechar recortes: menor merma que en un '
          'restaurante de carta'),
@@ -880,6 +951,19 @@ CHECKLIST = {
 # `SUPUESTOS` o `ESCENARIOS` hay que volver a leer el xlsx y actualizar esta
 # tabla; ninguna cifra de aquí se calcula sola.
 #
+# ⚠️ Y TAMPOCO se recalculan cuando lo que cambia es el MOTOR, que es de
+# donde salieron los cuatro defectos del 5-sep. R22-01 (BLOQUEANTE): esta
+# tabla seguía publicando «las 13 horas de apertura … con un 1 % de holgura»
+# después de que el parche 2.2 cambiase el cuadrante, y la hoja de Personal
+# decía 9,5 h y 138,8 % — la contradicción se ve en dos clics. R22-12 y
+# R22-13: los porcentajes de fondos propios y de fondo de maniobra estaban
+# calculados sobre una necesidad de caja y unos costes fijos que el mismo
+# parche había movido. Regla: tras CADA versión del motor, releer del libro
+# regenerado la cobertura (`Personal!B21`, `B23`, `B24`, `B25`), la necesidad
+# de caja (`'Inversión Inicial'!B33`), el origen y los usos
+# (`'Financiación'!B6` y `B14`) y el payback (`'Tesorería 12 meses'!B31` y
+# `B32`) ANTES de dar por buena una sola celda de esta tabla.
+#
 # ⚠️ `motor.cross_sell_sin_precios` BORRA los importes en euros de cualquier
 # celda de más de 25 caracteres que contenga «kit », «plan », «guía »,
 # «pack» o «ebook». Ninguna celda de esta tabla puede llevar a la vez una de
@@ -892,18 +976,25 @@ RECALIBRADO = (
      'son el mismo número y se recalcula sola cada vez que cambias un sueldo.'),
     ('Plantilla', '7 puestos / 209.174 € al año',
      '7 puestos, cuatro de ellos a jornada parcial / 108.368 € al año',
-     'Dimensionada por horas de servicio: cubre las 13 horas de apertura con '
-     'dos personas a la vez los 300 días que abre el local, con un 1 % de '
-     'holgura. Ningún sueldo baja del salario mínimo, y las jornadas '
+     'Dimensionada por horas, con el cuadrante a la vista en la hoja de '
+     'Personal: las 9,5 horas de los dos servicios con público más las 3,5 '
+     'de mise en place anterior a la apertura, con dos personas a la vez, '
+     'los 300 días que abre el local. Las horas contratadas cubren esas '
+     'horas necesarias y dejan un margen mínimo para el cierre, la limpieza '
+     'y la gestión. Ningún sueldo baja del salario mínimo, y las jornadas '
      'parciales lo respetan en proporción. Con la estructura anterior el '
      'coste laboral era el 77,5 % de las ventas; ahora es el 35,8 %, dentro '
      'del 32-38 % que este mismo libro publica como referencia.'),
     ('Clientes al día del año 1', '50', '56',
      'Son 1,24 servicios por plaza y día sobre las 45 plazas del aforo, la '
      'mitad de la ocupación que describe el documento (1,8 servicios en el '
-     'almuerzo y 1,5 en la cena). Suben porque un equipo que cubra el '
-     'horario de verdad y cobre al menos el salario mínimo no cabe dentro '
-     'del techo de coste de personal con la facturación anterior.'),
+     'almuerzo y 1,5 en la cena). Suben porque el equipo mínimo de un tapas '
+     'bar con cocina propia que abre dos servicios los 300 días del '
+     'calendario cuesta 108.368 € al año pagando al menos el salario '
+     'mínimo, y eso sobre los 270.000 € de la versión anterior era el '
+     '40,1 % de las ventas: por encima del 32-38 % que este mismo libro '
+     'publica como referencia. Sobre la facturación recalibrada es el '
+     '35,8 %.'),
     ('Ticket medio', '18 € (sin decir si llevaba IVA)',
      '18 € SIN IVA (el mismo número)',
      'Se declara qué era esa cifra, no se cambia: con el IVA de sala son '
@@ -923,8 +1014,9 @@ RECALIBRADO = (
      'resultados ya usaba.'),
     ('Fondo de maniobra', '12.000 € etiquetados «3 meses»',
      '3 × los costes fijos de caja de un mes, por fórmula',
-     'Los 12.000 € cubrían 0,93 meses, no 3. Ahora se recalcula solo cada '
-     'vez que cambias un coste fijo.'),
+     'Los 12.000 € no llegaban a cubrir un solo mes de los costes fijos de '
+     'caja de este plan, no tres. Ahora se recalcula solo cada vez que '
+     'cambias un coste fijo.'),
     ('Amortización', '11.550 € al año, 10 años planos sobre toda la '
      'inversión',
      'Sólo sobre la obra (10 años) y la maquinaria (8 años), por fórmula',
@@ -951,7 +1043,7 @@ RECALIBRADO = (
      'Se ajusta a la necesidad de caja que calcula la hoja de Inversión: ni '
      'por debajo, porque entonces el proyecto no está financiado, ni muy por '
      'encima, porque se pagan intereses por un dinero que no se usa. Los '
-     'socios ponen el 28 %, que es lo que suele pedir una entidad.'),
+     'socios ponen el 29 %, que es lo que suele pedir una entidad.'),
     ('Tesorería mes a mes', 'no existía',
      'Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo '
      'acumulado',
@@ -973,23 +1065,59 @@ RECALIBRADO = (
 # ==========================================================================
 # §2.6 — CUADRANTE DE COBERTURA (A4 / MOT-03 · motor 2.2, 2026-09-05)
 # ==========================================================================
-#: FUENTE: el horario que declara el documento de ESTE plan — 12:00-16:00 y
-#: 19:00-00:30, o sea 9,5 h de servicio al día, no las 13 h que el motor
-#: traía cableadas del molde de restaurante (fixer.json de este hermano,
-#: MOT-03). Con 13 h × 2 personas × 300 días el libro exigía 7.800 h, un
-#: mínimo de 4,24 jornadas equivalentes y ~96.375 €/año de coste de personal
-#: sólo para pintar el semáforo de verde: es lo que empujó los clientes/día
-#: de 50 a 56 para caber en el techo del 36 % de labour cost.
-#: La tarde de cierre (16:00-19:00) NO se cuenta: no hay servicio.
+#: ⚠️ DOS CORRECCIONES ENCADENADAS, y la segunda enmienda a la primera.
+#:
+#: 1) El motor traía cableadas 13 h × 2 personas × 300 días del molde de
+#:    restaurante. El ítem A4 del parche 2.2 dejó que cada molde declarase
+#:    las suyas y aquí se pusieron 9,5 h, atribuidas a un horario
+#:    «12:00-16:00 y 19:00-00:30» que se dio por escrito en el documento del
+#:    plan. **Ese horario NO está en el documento**: barrido de los 111
+#:    párrafos con texto de `plan-de-negocio-tapas-bar.docx` el 2026-09-05
+#:    (R22-02) — cero horas de reloj, y el único tramo horario que aparece
+#:    («de 18 a 21 horas entre semana») es el afterwork, no el servicio. La
+#:    nota citaba como fuente algo que el comprador no puede encontrar, así
+#:    que se reescribe como lo que de verdad es: una ESTIMACIÓN
+#:    parametrizada, con la invitación a contarla sobre el horario propio.
+#:
+#: 2) Con sólo esas 9,5 h el cuadrante quedaba corto (R22-03): el libro pedía
+#:    5.700 h al año contra las 7.912 contratadas, o sea un **138,8 %** de
+#:    cobertura, y el semáforo no lo ve porque sólo avisa POR DEBAJO del
+#:    100 %. La plantilla no está inflada; lo que faltaba era declarar la
+#:    SEGUNDA franja que el motor admite desde ese mismo parche
+#:    (`horas_produccion` / `personas_produccion`): la mise en place anterior
+#:    a la apertura, que en un local con plancha, freidora, horno y
+#:    salamandra hacen el jefe de cocina y el ayudante, y que no se solapa
+#:    con el servicio. 9,5 h + 3,5 h, dos personas en cada franja, 300 días =
+#:    **7.800 h**, ~4,24 jornadas equivalentes: las 4,30 de `PLANTILLA` las
+#:    cubren con un margen mínimo, que es el cierre, la limpieza y la gestión
+#:    de compras y caja. Es el MISMO total que el motor traía cableado, ahora
+#:    rotulado por lo que es en vez de llamarlo todo «horas de servicio».
+#:
+#: La tarde de cierre entre los dos servicios no se cuenta en ninguna de las
+#: dos franjas: no hay ni público ni producción.
 COBERTURA = {
     'horas_dia': 9.5,
     'personas_franja': 2,
-    'nota_horas': 'Los dos servicios que declara el documento de este plan: '
-                  '12:00-16:00 y 19:00-00:30. La tarde de cierre no se '
-                  'cuenta. Cuéntalas sobre tu horario real',
+    'horas_produccion': 3.5,
+    'personas_produccion': 2,
+    'nota_horas': 'Horas con el local abierto al público, sumando el '
+                  'servicio de mediodía y el de la noche; la tarde de cierre '
+                  'entre los dos no se cuenta. Es una estimación para un '
+                  'gastrobar con dos servicios: cuéntalas sobre tu horario '
+                  'real',
     'nota_personas': 'Media de presencia simultánea entre barra y sala en los '
                      'dos servicios. En las puntas hará falta más y al final '
                      'de cada turno, menos',
+    'nota_horas_produccion': 'Mise en place de tapas, raciones y '
+                             'elaboraciones antes de abrir: en un local con '
+                             'plancha, freidora, horno y salamandra el pase '
+                             'no se improvisa. Es tiempo de trabajo que no '
+                             'se solapa con la atención al público',
+    'nota_personas_produccion': 'Jefe de cocina y ayudante. El cierre, la '
+                                'limpieza y la gestión de compras y caja '
+                                'quedan FUERA de este cuadrante: son el '
+                                'margen que separa las horas contratadas de '
+                                'las necesarias',
 }
 
 # ==========================================================================
@@ -997,13 +1125,23 @@ COBERTURA = {
 # ==========================================================================
 #: El texto que publicaba la celda venía del documento del REPRESENTANTE
 #: (bar-restaurante), que sí enuncia un mínimo de 1,8 rotaciones AL DÍA. El
-#: documento de este plan dice otra cosa (párrafo 27): 1,8 servicios por
-#: cubierto en ALMUERZO y 1,5 en CENA — sumados, ~3,3 al día. Comparar ese
-#: 1,8 con la rotación diaria hacía parecer insuficiente un caso base que es
-#: prudente.
+#: documento de este plan dice otra cosa: 1,8 servicios por cubierto en
+#: ALMUERZO y 1,5 en CENA — sumados, ~3,3 al día. Comparar ese 1,8 con la
+#: rotación diaria hacía parecer insuficiente un caso base que es prudente.
+#:
+#: ⚠️ R22-18 — pero esas 3,3 quedan POR ENCIMA del techo que la hoja de
+#: Punto de Equilibrio trae por defecto (3 rotaciones al día, celda verde):
+#: el mismo libro pedía comparar contra una referencia que declaraba
+#: inalcanzable. El techo no se toca —es un parámetro del local, y el
+#: comprador tiene que poner el suyo—: se dice en la nota, que es lo que
+#: convierte el aviso en algo accionable.
+#: Y ya no se cita el NÚMERO DE PÁRRAFO del documento: el Word se regenera y
+#: esa numeración no sobrevive.
 ROTACION = {
     'referencia': 'El documento de este plan pide 1,8 servicios por cubierto '
-                  'en el almuerzo y 1,5 en la cena (párrafo 27), que sumados '
-                  'son unas 3,3 rotaciones al día: compáralo con tu horario '
-                  'real antes de darlo por bueno.',
+                  'en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 '
+                  'rotaciones al día: por encima del techo de 3 que trae por '
+                  'defecto la hoja «Punto Equilibrio». Ajusta ese techo a tu '
+                  'horario y a tu aforo reales antes de dar por buena '
+                  'ninguna de las dos cifras.',
 }

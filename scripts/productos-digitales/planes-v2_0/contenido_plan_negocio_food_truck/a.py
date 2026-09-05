@@ -77,7 +77,8 @@ imprime la portada del documento), sin inventar ningún número nuevo:
                            que repite la portada del docx. 250 días equivale
                            a 5 días de servicio/semana × 50 semanas activas,
                            dentro del rango «4-6 días operativos/semana» que
-                           ya declara Instrucciones!B13 de este mismo libro)
+                           ya declara la tabla de referencias del sector de
+                           este mismo libro)
 
 RECALIBRACIÓN DEL CASO BASE (§7-bis.17, DOM-13, TEC-01, medido en el censo de
 familia del 2026-08-29)
@@ -91,10 +92,10 @@ Medido en `plan-financiero-food-truck.xlsx` v1.1: `'PyG 3 Anos'!B21`
 igual de inviable en proporción (censo de familia, `planes-v2-SPEC.md`:
 «food-truck 42.000 frente a 76.566 (−34.566)»). Con la cifra real de
 personal, el coste laboral es el **56,7 %** de las ventas (135.000 €), muy
-por encima del techo 25-32 % que publica `Instrucciones!B7` del mismo libro
-(«Coste personal / ventas: 25-32%. Menos personal que restaurante: 2-3
-personas»). El plan es inviable con sus propios datos, igual que sus cuatro
-hermanos.
+por encima del techo 25-32 % que publica la fila «Coste personal sobre
+ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de este mismo libro
+(«Menos personal que un restaurante: 2-3 personas»). El plan es inviable con
+sus propios datos, igual que sus cuatro hermanos.
 
 Lo que se ha hecho, y por qué se puede defender ante un banco:
 
@@ -102,7 +103,8 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
    servicio**, no se elimina ningún puesto. El fichero v1.1 tenía al
    propietario y al ayudante a jornada PRÁCTICAMENTE COMPLETA (2.000 € y
    1.500 € brutos/mes) para un negocio que sólo opera **250 días/año en
-   servicios de 4-6 horas** (Instrucciones!B14: «Servicios por día: 1-2»,
+   servicios de 4-6 horas** (fila «Servicios por día», 1-2, de la tabla de
+   referencias del sector del propio libro;
    docx: «10-12 horas de jornada efectiva» INCLUYENDO desplazamiento, montaje
    y desmontaje, no sólo el servicio al cliente). Se escala cada puesto por
    la fracción de jornada que de verdad exige ese calendario, con el
@@ -140,9 +142,12 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
 6. **El vehículo entra en la base amortizable, que es de donde faltaba.** La
    clasificación por defecto del motor reconoce «obra», «instalaciones» y
    «equipamiento», pero no la palabra «vehículo»: los 25.000 € del food truck
-   —la partida más grande del plan, el 38 % de la inversión— caían fuera de
-   toda base y el libro amortizaba 4.510 €/año sobre 27.800 € de inmovilizado
-   cuando el inmovilizado real de este plan son 53.600 €. Este módulo declara
+   —la partida más grande del plan, el 40 % del CAPEX— caían fuera de toda
+   base junto con el depósito de aguas (800 €), y el libro amortizaba una
+   cuota calculada sobre menos de la mitad del inmovilizado real. Con la
+   tabla puesta, las dos bases del libro del 2026-09-05 son 39.744 € a 8 años
+   y 16.800 € a 10 ('Inversión Inicial'!B31 y B32), 6.648 €/año en total
+   (B33). Este módulo declara
    su propia tabla `AMORTIZABLE`. Sin ella el resultado del año 1 salía
    inflado y el semáforo de rentabilidad daba verde por una amortización que
    faltaba: es el defecto de `CRIT-02`/`NUEVO-02` por FALTA de patrón, el
@@ -160,14 +165,34 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
    prorrateado —1.221 €/mes a jornada completa— y el semáforo de la hoja de
    Personal las sacaba en ROJO en el fichero que se entrega.
 
-Resultado del caso base (medido en el libro del 2026-09-05): coste de personal
-**31,2 %** (techo 32 %), coste de mercancía **27,1 %** (techo 33 %), margen
-bruto **64,1 %** (suelo 62 %), aparcamiento y base **3,6 %** (techo 5 %) y
-resultado neto **5,1 %** (suelo 4 %). **Las cinco pasan y el plan ya no se
-suspende a sí mismo.** El margen del primer año es estrecho a propósito: el
-plan carga la amortización completa del vehículo y los intereses del préstamo
-desde el primer ejercicio y opera con 45 clientes al día, el extremo BAJO del
-rango «40-80 clientes por servicio» que declara el propio libro.
+Resultado del caso base — LEÍDO del libro regenerado con el motor 2.2.1 el
+2026-09-05, celda por celda (las cifras de la pasada anterior se quedaron
+atrás al capitalizar los imprevistos dentro de la base amortizable, que es
+justo lo que produjo el hallazgo de la tabla «qué ha cambiado»):
+
+  * ratios del año 1: coste de personal **31,2 %** ('PyG 3 Años'!B54, techo
+    32 %), coste de mercancía **27,1 %** (B53, techo 33 %), margen bruto
+    **64,1 %** (B51, suelo 62 %), aparcamiento y base **3,6 %** (B55, techo
+    5 %) y resultado neto **4,8 %** (B56, suelo 4 %). **Las cinco pasan.**
+  * dinero: inversión total **81.996,80 €** ('Inversión Inicial'!B26), de la
+    que el CAPEX son 63.944,00 € (B27) y el fondo de maniobra 18.052,80 €
+    (B24); necesidad total de caja **94.669,04 €** (B29), con 12.672,24 € de
+    IVA soportado que hay que adelantar (B28); amortización **6.648,00 €** al
+    año (B33).
+  * resultado: **6.511,35 €** de resultado neto en el año 1 ('PyG 3 Años'!
+    B48), 12.442,60 € en el año 2 y 14.557,56 € en el año 3.
+  * umbrales: equilibrio **41,0 clientes/día contable** ('Punto Equilibrio'!
+    B15, 123.047 €/año) y **37,6 de caja** (B20, 112.674 €/año), con una
+    holgura del plan sobre el de caja del 19,8 % (B24).
+  * caja y retorno: saldo mínimo **16.123,35 €** en el mes 2 ('Tesorería 12
+    meses'!B23/B24), saldo al cierre del año 1 40.484,13 € (M22) y payback
+    del proyecto **«Más de 3 años»** (B31), 2,9 años si se mide sólo sobre el
+    CAPEX (B32).
+
+El margen del primer año es estrecho a propósito: el plan carga la
+amortización completa del vehículo y los intereses del préstamo desde el
+primer ejercicio y opera con 45 clientes al día, el extremo BAJO del rango
+«40-80 clientes por servicio» que declara el propio libro.
 """
 
 CONCEPTO = 'Food Truck'
@@ -192,8 +217,9 @@ SUPUESTOS = {
         None, None, 12.00, None,
         'SIN IVA. Es el mismo 12 € que ya usaban Punto Equilibrio y la '
         'columna realista de Escenarios (declarar que es SIN IVA no cambia '
-        'ningún número, sólo aclara qué era). Dentro del rango 10-15 € que '
-        'fija Instrucciones!B8 «Ticket medio food truck»',
+        'ningún número, sólo aclara qué era). Dentro del rango 10-15 € de la '
+        'fila «Ticket medio food truck» de la tabla DATOS DE REFERENCIA DEL '
+        'SECTOR, en la hoja de Instrucciones',
         "fichero v1.1 ('Punto Equilibrio'!B9 y 'Escenarios'!C7, TEC-11/"
         'DOM-30)'),
     'crec_a2': (
@@ -227,29 +253,34 @@ SUPUESTOS = {
         'celdas en T9)'),
     'coste_comida': (
         None, None, 0.28, None,
-        'Coste de mercancía de la comida: dentro del 28-33 % que declara '
-        'este mismo libro («depende del concepto: burger 30 %, tacos 25 %, '
-        'poke 35 %»). Se toma el extremo bajo del rango porque la compra '
-        'diaria que exige un food truck, sin cámara grande, reduce la merma '
-        'frente a una cocina fija. Es la palanca más sensible del plan: con '
-        'el 33 % el resultado del primer año se queda muy justo',
-        "fichero v1.1 (Instrucciones!B4; 'PyG 3 Anos'!B12 usaba 30 % sólo "
+        'Coste de mercancía de la comida: dentro del 28-33 % de la fila '
+        '«Food cost comida» de la tabla DATOS DE REFERENCIA DEL SECTOR de la '
+        'hoja de Instrucciones («depende del concepto: burger 30 %, tacos '
+        '25 %, poke 35 %»). Se toma el extremo bajo del rango porque la '
+        'compra diaria que exige un food truck, sin cámara grande, reduce la '
+        'merma frente a una cocina fija. Es la palanca más sensible del '
+        'plan: con el 33 % el resultado del primer año se queda muy justo',
+        "fichero v1.1 (tabla de referencias, «Food cost comida»; 'PyG 3 "
+        "Anos'!B12 usaba 30 % sólo "
         'sobre la línea de comida de calle, sin costear el catering — ver '
         'LINEAS_INGRESO)'),
     'coste_bebida': (
         None, None, 0.22, None,
-        'Bebidas embotelladas y refrescos: extremo bajo del 22-28 % que '
-        'declara Instrucciones!B5 («refrescos y agua embotellada, margen '
+        'Bebidas embotelladas y refrescos: extremo bajo del 22-28 % de la '
+        'fila «Food cost bebidas» de la tabla DATOS DE REFERENCIA DEL SECTOR '
+        'de la hoja de Instrucciones («refrescos y agua embotellada, margen '
         'alto»)',
-        'fichero v1.1 (Instrucciones!B5)'),
+        'fichero v1.1 (tabla de referencias, «Food cost bebidas»)'),
     'pct_consumibles': (
         None, None, 0.03, None,
-        'Packaging biodegradable: extremo bajo del 3-5 % que declara '
-        'Instrucciones!B6. Es una partida realmente cara en un food truck '
-        '(obligatoria por normativa municipal en muchos casos, '
-        "'F3 - Equipamiento'!E14 del checklist) y por eso se cita al lado "
-        "del food cost, no dentro de «varios»",
-        "fichero v1.1 (Instrucciones!B6; 'PyG 3 Anos'!B14 = 5.400/135.000 "
+        'Packaging biodegradable: extremo bajo del 3-5 % de la fila «Coste '
+        'packaging / ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de '
+        'la hoja de Instrucciones. Es una partida realmente cara en un food '
+        'truck (obligatoria por normativa municipal en muchos casos, como '
+        'recuerda la fase de equipamiento de tu checklist) y por eso se cita '
+        'al lado del food cost, no dentro de «varios»',
+        "fichero v1.1 (tabla de referencias, «Coste packaging / ventas»; "
+        "'PyG 3 Anos'!B14 = 5.400/135.000 "
         '= 4,0 %, dentro del mismo rango)'),
     'pct_delivery': (
         None, None, 0.0, None,
@@ -403,25 +434,37 @@ SUPUESTOS = {
     'pct_bebida_alc': (
         None, None, 0.05, None,
         'Bebida ALCOHÓLICA sobre el total de bebida: casi nula — la línea '
-        'de bebida de este plan es refrescos, agua y zumos (Instrucciones!'
-        'B5 «refrescos y agua embotellada»); sólo alguna cerveza envasada '
-        'ocasional en festivales de música. El resto va al IVA reducido de '
-        'hostelería',
+        'de bebida de este plan es refrescos, agua y zumos, como describe la '
+        'fila «Food cost bebidas» de la tabla de referencias («refrescos y '
+        'agua embotellada»); sólo alguna cerveza envasada ocasional en '
+        'festivales de música. El resto va al IVA reducido de hostelería. '
+        'Este mismo peso reparte el IVA que SOPORTAS al comprar la bebida '
+        '(la parte alcohólica al tipo general y el resto al reducido): si tu '
+        'proveedor te factura al 21 % los refrescos y zumos con azúcares o '
+        'edulcorantes añadidos —que es lo que manda el art. 91.Uno.1.1.º de '
+        'la Ley 37/1992—, soportarás algo más de IVA del que estima el '
+        'libro; lo recuperas igual con el modelo 303',
         'parametrizado (composición de la línea de bebida de este plan: '
         "'PyG 3 Anos'!A7 «Ventas bebidas» sin desglose alcohólico/sin "
         'alcohol en el fichero original)'),
+    # FT22-06 (refutación del 2026-09-05) — con el bloque de rotaciones
+    # apagado (`ROTACION = {'activa': False}`, ver más abajo) NINGUNA celda
+    # del libro lee este aforo: la nota prometía una rotación informativa y
+    # un aviso de capacidad que ya no existen. La celda se queda —moverla
+    # obligaría a recolocar filas de '0. Supuestos', que es de motor— pero la
+    # nota dice ahora exactamente lo que hace: nada.
     'aforo': (
         None, 'Plazas de pie y mesas altas junto al vehículo', 16, None,
-        'ESTE NEGOCIO NO TIENE PLAZAS SENTADAS: son las cuatro mesas altas '
-        'plegables de cuatro posiciones que presupuesta la partida «Toldo, '
-        'mobiliario exterior plegable» de la hoja de inversión. De aquí '
-        'sale sólo una rotación INFORMATIVA y el aviso de capacidad del '
-        'punto de equilibrio; no condiciona ninguna licencia, porque un '
-        'food truck no tiene aforo legal. El techo real de este negocio son '
-        'los clientes por servicio, que este mismo libro sitúa en 40-80',
-        'parametrizado (la v2.0 previa puso 12 y el punto de equilibrio '
-        'salía exigiendo 3,11 rotaciones al día contra un techo declarado '
-        'de 3,0: el semáforo de capacidad quedaba en ROJO en el caso base)'),
+        'DATO INFORMATIVO: no entra en ningún cálculo de este libro. Son las '
+        'cuatro mesas altas plegables de cuatro posiciones que presupuesta '
+        'la partida «Toldo, mobiliario exterior plegable» de la hoja de '
+        'inversión. Un food truck no tiene aforo legal ni plazas sentadas, '
+        'así que aquí no se calcula ninguna rotación por plaza: el techo '
+        'real de este negocio son los clientes por servicio, que la tabla de '
+        'referencias de este mismo libro sitúa en 40-80, y quien manda sobre '
+        'el volumen es la celda «Clientes/día» de arriba',
+        'parametrizado (capacidad de las mesas altas de la partida de toldo '
+        'y mobiliario exterior de la hoja de Inversión)'),
 
     'salario_convenio': (
         None, None, 0, None,
@@ -439,14 +482,57 @@ SUPUESTOS = {
         'pagan antes de facturar el primer euro, así que forman parte de la '
         'inversión y no de la cuenta de resultados',
         "fichero v1.1 (checklist, fase 2: «4-8 semanas» de adaptación)"),
+    # FT22-07 — el rótulo del motor hablaba del «bloque de local» en un
+    # negocio sin local. El porcentaje se aplica a las partidas de compra y
+    # adaptación del vehículo, que son las que enumera la nota de la fila de
+    # imprevistos de la hoja de Inversión: el rótulo dice ahora lo mismo.
     'pct_imprevistos': (
-        None, None, 0.08, None,
+        None, 'Imprevistos sobre las partidas de compra y adaptación del '
+        'vehículo (%)', 0.08, None,
         'Se conserva el mismo 8 % que la versión anterior tenía escrito a '
         'mano en su fila de imprevistos, ahora calculado por fórmula sobre '
         'las partidas de compra y adaptación del vehículo: si cambias el '
-        'precio del vehículo, los imprevistos se recalculan solos',
+        'precio del vehículo, los imprevistos se recalculan solos. La nota '
+        'de esa fila, en la hoja de Inversión, enumera exactamente qué '
+        'partidas entran',
         "fichero v1.1 ('Inversion Inicial'!A22 «Imprevistos (8%)», mismo "
         'porcentaje, RD-02)'),
+    # FT22-07 — la nota de motor decía «En barra y sala se cobra al
+    # contado»: aquí no hay ni barra ni sala, se cobra en la ventanilla.
+    'dias_cobro': (
+        None, None, 0, None,
+        'En la ventanilla se cobra al contado (0 días). Súbelo si trabajas '
+        'con organizadores de eventos o con clientes de catering que pagan '
+        'a 15 o 30 días, o con plataformas que liquidan más tarde',
+        'fichero v1.1 (cobro al contado en el punto de venta móvil)'),
+    # FT22-07 — misma razón: el molde hablaba de «un local que abre».
+    'rampa_mes1': (
+        None, None, 0.55, None,
+        'Un food truck que arranca no factura desde el primer día lo mismo '
+        'que a los seis meses: hay que probar ubicaciones, entrar en los '
+        'mercados y que la gente te conozca. Con 100 % se elimina la rampa '
+        'y el año 1 se proyecta a velocidad de crucero',
+        'valor del molde (arranque progresivo), adaptado en la redacción a '
+        'un negocio sin local'),
+    # FT22-20 + FT22-07 — el rótulo decía «servida en sala», que en un food
+    # truck no existe. Lo que ampara el tipo reducido es el CONSUMO EN EL
+    # ACTO, que es exactamente lo que hace este negocio; la nota añade qué
+    # pasa con la venta para llevar, el único supuesto en el que ese mismo
+    # alcohol se iría al tipo general.
+    'iva_bebida': (
+        None, 'IVA de la bebida ALCOHÓLICA para consumir en el acto', 0.10,
+        None,
+        '10 %, igual que el resto de lo que se sirve para consumir en el '
+        'acto: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo '
+        'reducido los servicios de hostelería y «el suministro de comidas y '
+        'bebidas para consumir en el acto», sin excluir el alcohol, y eso es '
+        'lo que hace un food truck. Si vendes alcohol envasado PARA LLEVAR '
+        'no hay consumo en el acto y esa parte va al tipo general: el libro '
+        'lo aplica sólo a la parte alcohólica que sale por el canal de la '
+        'celda «Ventas por delivery sobre el total», que en este plan está '
+        'a cero; súbela si abres ese canal',
+        'art. 91.Uno.2.2.º de la Ley 37/1992 (decisión de familia RD-17, '
+        'redactada aquí para un negocio sin sala)'),
 }
 
 # ==========================================================================
@@ -496,8 +582,10 @@ PLANTILLA = (
      'de servicio real)',
      1.0),
     # ⚠️ el bruto de cada fila tiene que quedar por encima del SMI EN
-    # PROPORCIÓN a la jornada (17.094 €/14 pagas = 1.220,71 €/mes a jornada
-    # completa, RD 126/2026), o el semáforo de la columna «Bruto mes» sale
+    # PROPORCIÓN a la jornada (el SMI de la hoja de Supuestos, 17.094 €/año
+    # ÷ 14 pagas = 1.220,71 €/mes a jornada completa; el número de Real
+    # Decreto NO se cita en ningún sitio: el motor 2.2.1 lo quitó también de
+    # la nota de esa celda porque no estaba verificado), o el semáforo sale
     # en ROJO en el fichero que se entrega.  Los tres parciales van unos
     # euros por encima de su suelo: 549,32 · 122,07 · 73,24.
     ('Ayudante de cocina y servicio', 1, 560,
@@ -567,8 +655,41 @@ INVERSION = {
     'proyecto tecnico sanitario': (
         1500, 'Obligatorio para la actividad alimentaria móvil: planos de '
         'instalación, flujos y depósitos de agua'),
+    # FT22-15 — la columna «¿Lleva IVA?» es un Sí/No y esta fila va marcada
+    # como NO: las tasas y el arancel del registro no lo llevan, pero los
+    # honorarios del notario y de la gestoría sí. Se dice en la nota, que es
+    # lo que el comprador lee antes de cambiar el desplegable de al lado.
+    'constitucion sl + notaria + registro': (
+        None,
+        'SL unipersonal exprés. Las tasas y el arancel del Registro '
+        'Mercantil no llevan IVA, pero los honorarios del notario y de tu '
+        'gestoría sí (21 %, deducible): el libro deja la fila entera fuera '
+        'del IVA que hay que adelantar para no inflarlo. Si tu presupuesto '
+        'es sobre todo de honorarios, cambia el desplegable de la columna '
+        '«¿Lleva IVA?» a «Sí»'),
+    # FT22-15 — el género se compra al 10 % (o al 4 %), no al 21 % que
+    # aplica la columna. Es una diferencia de pocos euros y se recupera con
+    # el 303, pero el libro lo dice en vez de dejarlo pasar.
     'stock inicial de producto': (
-        1000, 'Género para las primeras dos semanas de servicio'),
+        1000, 'Género para las primeras dos semanas de servicio. El libro '
+        'calcula el IVA que adelantas por esta fila al tipo general, aunque '
+        'los alimentos se compren al 10 % (o al 4 %): son unos euros de más '
+        'en la caja del arranque, que se recuperan igual con el modelo 303'),
+    # FT22-18 — la fila es INMOVILIZADO por el menaje y los utensilios, pero
+    # el packaging es consumible y el P&L ya lo carga cada año como coste
+    # variable: la nota lo separa para que nadie lo cuente dos veces. Y ojo
+    # al escribir aquí: el vocabulario del oficio traduce «cubiertos» por
+    # «clientes» en todo el libro, así que la cubertería desechable se nombra
+    # por su nombre y no como «cubiertos» (la nota heredada de la v1.1 decía
+    # «Envases biodegradables, cubiertos, servilletas» y salía publicada como
+    # «Envases biodegradables, clientes, servilletas»).
+    'menaje, utensilios, packaging eco': (
+        None,
+        'Menaje, utensilios y cubertería desechable: es el equipamiento que '
+        'se amortiza. La primera compra de envases entra aquí sólo como '
+        'arranque; el packaging de cada día NO se amortiza, va como coste '
+        'variable en la línea «Consumibles y envases» de la cuenta de '
+        'resultados, al porcentaje sobre ventas de la hoja de Supuestos'),
     'imprevistos': (
         'suprimir',
         'RD-02 (mismo patrón que el representante y los otros tres A-β): '
@@ -603,11 +724,14 @@ INVERSION_EXTRA = ()
 # local: «obra civil», «instalaci», «equipamiento», «mobiliario»…  Ninguno
 # casa con «Vehiculo food truck (nuevo o segunda mano)» ni con «Deposito
 # agua + aguas residuales», y `_clasificar_amortizable` manda por defecto al
-# grupo «no»: 25.800 € —el 39 % de la inversión y el activo que da nombre al
-# negocio— quedaban FUERA de la base amortizable, con el libro amortizando
-# 4.510 €/año sobre 27.800 € en vez de 6.280 € sobre 53.600 €.  Es el mismo
-# defecto por FALTA de patrón que se midió en panadería (`AMORT_DEFECTO`,
-# comentario de `grupo_a`), aquí sobre la partida más cara del plan.
+# grupo «no»: 25.800 € —el 40 % del CAPEX y el activo que da nombre al
+# negocio— quedaban FUERA de la base amortizable, y el libro amortizaba una
+# cuota calculada sobre menos de la mitad del inmovilizado real.  Con la
+# tabla puesta, el libro del 2026-09-05 amortiza 6.648 €/año sobre 56.544 €
+# (39.744 € a 8 años + 16.800 € a 10; 'Inversión Inicial'!B31, B32 y B33).
+# Es el mismo defecto por FALTA de patrón que se midió en panadería
+# (`AMORT_DEFECTO`, comentario de `grupo_a`), aquí sobre la partida más cara
+# del plan.
 #
 # Los dos grupos NO son «obra» y «maquinaria» en sentido literal: son las
 # dos vidas útiles que necesita un food truck.  El vehículo y todo lo que
@@ -623,8 +747,13 @@ AMORTIZABLE = {
            r'gestor[ií]a|seguro|licencia|permiso|tasa|iva|marca|dise[ñn]o',),
     'obra': (r'veh[ií]culo|food truck|furgoneta|remolque|adaptaci|rotulaci|'
              r'instalaci|dep[oó]sito|deposito|proyecto t[eé]cnico',),
+    # FT22-18 — «packaging» SALE del patrón: los envases son consumible, no
+    # inmovilizado, y el P&L ya los carga todos los años como coste variable.
+    # La fila «Menaje, utensilios, packaging eco» sigue amortizándose, porque
+    # casa por «menaje» y «utensilios», que sí lo son; lo que se evita es que
+    # una partida futura de packaging a secas acabe amortizada a 10 años.
     'maquinaria': (r'equipamiento|generador|tpv|dat[aá]fono|datafono|menaje|'
-                   r'utensilios|packaging|toldo|mobiliario|mesa|plancha|'
+                   r'utensilios|toldo|mobiliario|mesa|plancha|'
                    r'freidora|nevera|c[aá]mara|fregadero|campana|balanza',),
 }
 
@@ -653,6 +782,17 @@ FIJOS = {
         'meses previos a la apertura están en la hoja de Inversión y NO se '
         'cuentan dos veces',
         'Aparcamiento y base del vehículo'),
+    # FT22-07 — la nota canónica acababa en «si el agua pesa mucho en tu
+    # local, sepárala en su línea», y aquí no hay local. Se reescribe entera
+    # conservando la información de IVA, que es la que de verdad usa quien
+    # lee la columna de al lado.
+    'suministros (luz, agua, gas)': (
+        None,
+        'Combustible del generador eléctrico, agua limpia y vaciado de '
+        'residuales en la base del vehículo. Luz y gas van al 21 % y la '
+        'factura del agua al 10 %: el libro aplica a toda la partida el tipo '
+        'de la columna de al lado (21 %), así que si el agua pesa mucho en '
+        'tu caso, sepárala en su propia línea'),
     'generador (combustible/alquiler)': (
         'suprimir',
         'Doble conteo propio de este hermano: es el MISMO gasto que ahora '
@@ -704,16 +844,20 @@ FIJOS_EXTRA = (
 # ==========================================================================
 UMBRALES = (
     ('r_mb', 'Margen bruto / Ventas', 0.62,
-     'Suelo del propio libro: «Instrucciones!B10 — Margen bruto objetivo: '
-     '>62%. Inferior a restaurante por packaging y combustible»'),
+     'Suelo del propio libro: la fila «Margen bruto objetivo» (> 62 %) de la '
+     'tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones. Más '
+     'bajo que el de un restaurante por el peso del packaging y del '
+     'combustible'),
     ('r_cogs', 'Coste de mercancía / Ventas', 0.33,
-     'Blend de los food cost que publica este producto (comida 28-33 %, '
-     'bebida 22-28 %, packaging 3-5 % — Instrucciones!B4-B6): 33 % deja '
-     'margen sobre el 30 % real del caso base (comida 28 %, bebida 22 %, '
-     'packaging 3 %)'),
+     'Techo mezclado de los food cost que publica la tabla de referencias de '
+     'este libro (comida 28-33 %, bebida 22-28 %). La ratio de al lado mide '
+     'sólo la MERCANCÍA: los consumibles y los envases tienen su propia '
+     'línea en la cuenta de resultados y no entran aquí, así que el caso '
+     'base se queda holgadamente por debajo del techo'),
     ('r_personal', 'Coste de personal / Ventas', 0.32,
-     'Techo del propio libro: «Instrucciones!B7 — Coste personal / ventas: '
-     '25-32%. Menos personal que restaurante: 2-3 personas»'),
+     'Techo del propio libro: la fila «Coste personal sobre ventas» '
+     '(25-32 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de '
+     'Instrucciones («menos personal que un restaurante: 2-3 personas»)'),
     # A6 / M-05 — el rótulo de la tupla ERA letra muerta: `ratio()` sólo
     # tomaba el valor y el comentario, y el libro publicaba «Alquiler /
     # Ventas» en un producto sin local. Desde el motor 2.2 se usa.
@@ -724,10 +868,11 @@ UMBRALES = (
      '(mismo orden que el resto de la familia, adaptado a este molde)'),
     ('r_neto', 'Resultado neto / Ventas', 0.04,
      'Derivado del suelo de EBITDA que declara este producto para el año 2 '
-     '(«Instrucciones!B11 — EBITDA objetivo (Año 2): 20-30%»): '
-     'descontando amortización, intereses e Impuesto de Sociedades, un '
-     'EBITDA en la franja baja del rango deja un resultado neto positivo '
-     'ya en el año 1, aunque ajustado por ser el primer ejercicio'),
+     '—la fila «EBITDA objetivo (año 2)», 20-30 %, de la tabla de '
+     'referencias—: descontando amortización, intereses e Impuesto de '
+     'Sociedades, un EBITDA en la franja baja del rango deja un resultado '
+     'neto positivo ya en el año 1, aunque ajustado por ser el primer '
+     'ejercicio'),
 )
 
 # ==========================================================================
@@ -769,6 +914,12 @@ INSTRUCCIONES = {
         '7. La hoja «Financiación» cuadra lo que hace falta con lo que se '
         'aporta y monta el cuadro de amortización del préstamo. Si la '
         'diferencia sale en rojo, el plan no está financiado.',
+        # Pedido por el encargo de la 2.ª vuelta (2026-09-05): el documento
+        # Word del pack todavía es el de la v1.1 y sus cifras son las viejas.
+        # Se avisa aquí, que es donde el comprador empieza a leer.
+        '8. El documento Word de este pack es el de la versión 1.1: las '
+        'cifras válidas son las de este Excel, que es el que se recalcula '
+        'solo cuando cambias una celda verde.',
     ],
     # (rótulo, valor, FUENTE, nota) — se conservan las referencias del
     # sector que ya traía este fichero (mismo criterio que el resto de la
@@ -799,9 +950,13 @@ INSTRUCCIONES = {
          'partida este plan se queda por debajo del rango: es lo que hay '
          'que mejorar subiendo clientes por servicio o ticket'),
         ('Retorno de la inversión', '12-24 meses', 'Fichero v1.1',
-         'Es la referencia del sector. El de ESTE plan lo calcula la hoja '
-         'de Tesorería y sale más largo, porque cuenta también el IVA que '
-         'hay que adelantar y el fondo de maniobra'),
+         'Es la referencia del sector. El de ESTE plan lo calcula la hoja de '
+         'Tesorería y sale más largo: se mide sobre la inversión completa, '
+         'con el fondo de maniobra dentro —el IVA no cuenta, porque se '
+         'recupera con el modelo 303— y con el flujo que genera el negocio '
+         'ANTES de pagar al banco. Esa misma hoja publica debajo el plazo '
+         'medido sólo sobre lo que se compra, sin el fondo de maniobra, que '
+         'sale más corto'),
         ('Días operativos/semana', '4-6', 'Fichero v1.1',
          'Mercados, eventos, zona de oficinas, festivales'),
         ('Servicios por día', '1-2', 'Fichero v1.1',
@@ -1052,10 +1207,18 @@ RECALIBRADO = (
      '18.053 €: tres meses de costes fijos de caja, calculados por fórmula',
      'Los 6.000 € daban para 1,1 meses, no para 3. Es el colchón que evita '
      'cerrar por una racha de mal tiempo o un mes flojo de eventos'),
+    # FT22-02 (refutación del 2026-09-05) — esta columna llevaba «6.280 € al
+    # año», la cuota de la pasada ANTERIOR: al capitalizar los imprevistos de
+    # la puesta en marcha dentro de la base amortizable la cuota subió, y la
+    # única tabla que el comprador lee para saber qué ha cambiado se
+    # contradecía con la hoja de Inversión del mismo libro. Se redacta SIN
+    # cifra: las dos bases y la cuota las publica la hoja de Inversión, que
+    # se recalcula sola.
     ('Amortización', '10.343 € al año, a 7 años planos sobre todo, incluido '
      'lo que no es inmovilizado',
-     '6.280 € al año: el vehículo y su adaptación a 8 años y el '
-     'equipamiento y el mobiliario a 10',
+     'dos vidas útiles: el vehículo, su adaptación y los imprevistos de la '
+     'puesta en marcha a 8 años, y el equipamiento y el mobiliario a 10. La '
+     'cuota del año la calcula la hoja de Inversión',
      'El vehículo se amortiza más rápido que el equipamiento porque son '
      'cosas distintas para Hacienda. Y el fondo de maniobra, el stock y el '
      'marketing no se amortizan: no son inmovilizado'),
