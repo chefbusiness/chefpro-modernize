@@ -1,0 +1,2611 @@
+{
+ "producto": "plan-negocio-tapas-bar",
+ "version": "2.2",
+ "rol": "motor",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md §1",
+ "fecha": "2026-09-05T17:30:15",
+ "modo": "produccion",
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-tapas-bar",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-tapas-bar",
+ "grupos_pedidos": [
+  "motor",
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_cargados": [
+  "a"
+ ],
+ "grupos_ausentes": [
+  {
+   "grupo": "b",
+   "fichero_existe": false,
+   "error": "No module named 'grupo_b'",
+   "nivel": "pendiente"
+  },
+  {
+   "grupo": "c",
+   "fichero_existe": false,
+   "error": "No module named 'grupo_c'",
+   "nivel": "pendiente"
+  }
+ ],
+ "contenido_cargado": {
+  "a": true
+ },
+ "solo_motor": false,
+ "moldes": {
+  "checklist-apertura-tapas-bar.xlsx": "checklist/C2",
+  "plan-financiero-tapas-bar.xlsx": "plan_financiero/A-beta"
+ },
+ "ficheros": [
+  {
+   "fichero": "checklist-apertura-tapas-bar.xlsx",
+   "tipo": "checklist",
+   "molde": "C2",
+   "propio_de_grupo": false,
+   "grupos": [
+    "a"
+   ],
+   "cambios": [
+    "F1 - Constitucion: 18 textos con tildes (§1.7)",
+    "F2 - Local: 12 textos con tildes (§1.7)",
+    "F3 - Equipamiento: 15 textos con tildes (§1.7)",
+    "F4 - Personal: 14 textos con tildes (§1.7)",
+    "F5 - Marketing: 25 textos con tildes (§1.7)",
+    "F6 - 90 Dias: 10 textos con tildes (§1.7)",
+    "Instrucciones: hoja creada (§1.9)",
+    "docProps title: «CHECKLIST APERTURA — TAPAS BAR / GASTROBAR · Plan de Negocio: Tapas Ba» → «Checklist de apertura — Tapas Bar / Gastrobar · v2.2» (M11)",
+    "F1 - Constitucion!E8: «Epigrafe IAE: 673.2 (otros cafés y bares)» → «Epígrafe IAE: 671.5 (restaurantes de un tenedor)»",
+    "F1 - Constitucion!E9: «Tarifa plana autónomos 80 €/mes» → «Cuota según la base mínima del tramo que te corr»",
+    "F1 - Constitucion!B12: «Registro sanitario RGSEAA» → «Inscripción en el Registro Sanitario de tu Comun»",
+    "F1 - Constitucion!E12: «Obligatorio por elaboración de alimentos» → «El Registro General Sanitario estatal NO aplica »",
+    "F1 - Constitucion: resaltado de fila reanclado a A5:E15 con la fórmula «$A5=\"✓\"» (RT-01 · M18)",
+    "F2 - Local!E8: «Tapas bar con cocina = actividad clasificada (ma» → «Tapas bar con cocina = actividad clasificada (má»",
+    "F2 - Local!B10: «Licencia de musica ambiente» → «Licencia de música ambiente»",
+    "F2 - Local: resaltado de fila reanclado a A5:E17 con la fórmula «$A5=\"✓\"» (RT-01 · M18)",
+    "F3 - Equipamiento!E12: «Plancha, freidora, horno, salamandra, baño maría» → «Plancha, freidora, horno, salamandra y baño marí»",
+    "F4 - Personal!E7: «Prueba practica: elaborar 3 tapas en 20 min» → «Prueba práctica: elaborar 3 tapas en 20 min»",
+    "F4 - Personal!B10: «Carnet manipulador alimentos» → «Formación en higiene alimentaria de todo el equi»",
+    "F4 - Personal!C10: «Todos» → «Titular»",
+    "F4 - Personal!E10: «Obligatorio todo personal, curso online valido» → «El «carnet de manipulador» está derogado (RD 109»",
+    "F4 - Personal!C11: «SPA» → «Titular o servicio ajeno»",
+    "F4 - Personal!E11: «Servicio Prevención Ajeno obligatorio» → «El plan de prevención es obligatorio; el proveed»",
+    "F4 - Personal: resaltado de fila reanclado a A5:E16 con la fórmula «$A5=\"✓\"» (RT-01 · M18)",
+    "F5 - Marketing!E5: «Logo, colores, tipografía, estilo visual» → «Logo, colores, tipografía y estilo visual»",
+    "F5 - Marketing!E7: «Instagram para fotos tapas, TikTok para videos c» → «Instagram para fotos de tapas, TikTok para vídeo»",
+    "F5 - Marketing!E10: «Carta física + pizarra tapas del día + QR digita» → «Carta física + pizarra de tapas del día + QR dig»",
+    "F5 - Marketing!E12: «Behind the scenes, cuenta atrás, sorteo inaugura» → «Cocina a la vista, cuenta atrás y sorteo inaugur»",
+    "F5 - Marketing: resaltado de fila reanclado a A5:E18 con la fórmula «$A5=\"✓\"» (RT-01 · M18)",
+    "F6 - 90 Dias!E6: «Pesar genero: carnes, pescado, embutidos» → «Pesar el género: carnes, pescado y embutidos»",
+    "F6 - 90 Dias!B7: «Análisis tapas mas vendidas vs menos vendidas» → «Análisis de las tapas más vendidas frente a las »",
+    "Checklist: 19 celdas corregidas, 10 trámites nuevos, 0 reemplazos no entregados y 0 patrones muertos (§2.10)",
+    "checklist C2: 73 ítems con desplegable y contador",
+    "F1 - Constitucion: 4 altos ajustados (§1.8)",
+    "F2 - Local: 6 altos ajustados (§1.8)",
+    "F3 - Equipamiento: 2 altos ajustados (§1.8)",
+    "F4 - Personal: 4 altos ajustados (§1.8)",
+    "F5 - Marketing: 4 altos ajustados (§1.8)",
+    "F6 - 90 Dias: 2 altos ajustados (§1.8)",
+    "Instrucciones: 4 altos ajustados (§1.8)",
+    "F1 - Constitucion: protegida sin contraseña (11 celdas editables)",
+    "F2 - Local: protegida sin contraseña (13 celdas editables)",
+    "F3 - Equipamiento: protegida sin contraseña (13 celdas editables)",
+    "F4 - Personal: protegida sin contraseña (12 celdas editables)",
+    "F5 - Marketing: protegida sin contraseña (14 celdas editables)",
+    "F6 - 90 Dias: protegida sin contraseña (10 celdas editables)",
+    "Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "hoja renombrada: F1 - Constitucion → F1 - Constitución",
+    "hoja renombrada: F6 - 90 Dias → F6 - 90 Días"
+   ],
+   "formulas_nuevas": 12,
+   "formatos_corregidos": [],
+   "ortografia_corregida": [
+    [
+     "F1 - Constitucion",
+     "A2",
+     "FASE 1: CONSTITUCION Y TRAMITES LEGALES",
+     "FASE 1: CONSTITUCIÓN Y TRÁMITES LEGALES"
+    ],
+    [
+     "F1 - Constitucion",
+     "B4",
+     "TRAMITE / ACCION",
+     "TRÁMITE / ACCIÓN"
+    ],
+    [
+     "F1 - Constitucion",
+     "B5",
+     "Elegir forma juridica (SL recomendada)",
+     "Elegir forma jurídica (SL recomendada)"
+    ],
+    [
+     "F1 - Constitucion",
+     "E5",
+     "SL unipersonal, capital 1 EUR (Ley Crea y Crece)",
+     "SL unipersonal, capital 1 € (Ley Crea y Crece)"
+    ],
+    [
+     "F1 - Constitucion",
+     "B6",
+     "Constitucion SL ante notario",
+     "Constitución SL ante notario"
+    ],
+    [
+     "F1 - Constitucion",
+     "D6",
+     "1-3 dias",
+     "1-3 días"
+    ],
+    [
+     "F1 - Constitucion",
+     "E6",
+     "Llevar certificacion nombre, estatutos, DNI",
+     "Llevar certificación nombre, estatutos, DNI"
+    ],
+    [
+     "F1 - Constitucion",
+     "B7",
+     "Inscripcion en Registro Mercantil",
+     "Inscripción en Registro Mercantil"
+    ],
+    [
+     "F1 - Constitucion",
+     "D7",
+     "3-7 dias",
+     "3-7 días"
+    ],
+    [
+     "F1 - Constitucion",
+     "D8",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F1 - Constitucion",
+     "E8",
+     "Epigrafe IAE: 673.2 (otros cafes y bares)",
+     "Epigrafe IAE: 673.2 (otros cafés y bares)"
+    ],
+    [
+     "F1 - Constitucion",
+     "B9",
+     "Alta Seguridad Social (autonomo + empresa)",
+     "Alta Seguridad Social (autónomo + empresa)"
+    ],
+    [
+     "F1 - Constitucion",
+     "D9",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F1 - Constitucion",
+     "E9",
+     "Tarifa plana autonomos 80 EUR/mes",
+     "Tarifa plana autónomos 80 €/mes"
+    ],
+    [
+     "F1 - Constitucion",
+     "D10",
+     "1-3 dias",
+     "1-3 días"
+    ],
+    [
+     "F1 - Constitucion",
+     "D11",
+     "1-3 dias",
+     "1-3 días"
+    ],
+    [
+     "F1 - Constitucion",
+     "E11",
+     "Imprescindible para tramites telematicos",
+     "Imprescindible para trámites telemáticos"
+    ],
+    [
+     "F1 - Constitucion",
+     "E12",
+     "Obligatorio por elaboracion de alimentos",
+     "Obligatorio por elaboración de alimentos"
+    ],
+    [
+     "F2 - Local",
+     "B4",
+     "TRAMITE / ACCION",
+     "TRÁMITE / ACCIÓN"
+    ],
+    [
+     "F2 - Local",
+     "B5",
+     "Busqueda y seleccion de local",
+     "Búsqueda y selección de local"
+    ],
+    [
+     "F2 - Local",
+     "B6",
+     "Negociacion contrato alquiler",
+     "Negociación contrato alquiler"
+    ],
+    [
+     "F2 - Local",
+     "B7",
+     "Verificar uso urbanistico",
+     "Verificar uso urbanístico"
+    ],
+    [
+     "F2 - Local",
+     "E7",
+     "Informe urbanistico ANTES de firmar",
+     "Informe urbanístico ANTES de firmar"
+    ],
+    [
+     "F2 - Local",
+     "E9",
+     "Terraza = facturacion extra 20-30%, renovacion anual",
+     "Terraza = facturación extra 20-30%, renovación anual"
+    ],
+    [
+     "F2 - Local",
+     "D11",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F2 - Local",
+     "E11",
+     "Minimo 300.000 EUR RC",
+     "Mínimo 300.000 € RC"
+    ],
+    [
+     "F2 - Local",
+     "D12",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F2 - Local",
+     "E12",
+     "Incendio, robo, danos agua",
+     "Incendio, robo, daños agua"
+    ],
+    [
+     "F2 - Local",
+     "B13",
+     "Medicion acustica (si aplica)",
+     "Medición acústica (si aplica)"
+    ],
+    [
+     "F2 - Local",
+     "C13",
+     "Tecnico",
+     "Técnico"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B4",
+     "TRAMITE / ACCION",
+     "TRÁMITE / ACCIÓN"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B5",
+     "Proyecto tecnico actividad clasificada",
+     "Proyecto técnico actividad clasificada"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B7",
+     "Instalacion electrica (potencia 20-25 kW)",
+     "Instalación eléctrica (potencia 20-25 kW)"
+    ],
+    [
+     "F3 - Equipamiento",
+     "E7",
+     "Cocina industrial + climatizacion = alta potencia",
+     "Cocina industrial + climatización = alta potencia"
+    ],
+    [
+     "F3 - Equipamiento",
+     "E8",
+     "Critico en tapas bar: plancha, freidora generan mucho humo",
+     "Crítico en tapas bar: plancha, freidora generan mucho humo"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B9",
+     "Fontaneria, evacuacion y trampa grasas",
+     "Fontanería, evacuación y trampa grasas"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B10",
+     "Climatizacion (AA + calefaccion)",
+     "Climatización (AA + calefacción)"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B11",
+     "Instalacion grifos cerveza (4-6 grifos)",
+     "Instalación grifos cerveza (4-6 grifos)"
+    ],
+    [
+     "F3 - Equipamiento",
+     "E12",
+     "Plancha, freidora, horno, salamandra, bano maria",
+     "Plancha, freidora, horno, salamandra, baño maría"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B13",
+     "Compra equipamiento frio",
+     "Compra equipamiento frío"
+    ],
+    [
+     "F3 - Equipamiento",
+     "E13",
+     "Camara + neveras bajo barra + congelador",
+     "Cámara + neveras bajo barra + congelador"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B14",
+     "Construccion barra + mostrador tapas",
+     "Construcción barra + mostrador tapas"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B16",
+     "Instalacion TPV + comandero",
+     "Instalación TPV + comandero"
+    ],
+    [
+     "F3 - Equipamiento",
+     "B17",
+     "Decoracion, iluminacion, pizarras",
+     "Decoración, iluminación, pizarras"
+    ],
+    [
+     "F3 - Equipamiento",
+     "E17",
+     "Azulejos, madera, pizarras tapas del dia",
+     "Azulejos, madera, pizarras tapas del día"
+    ],
+    [
+     "F4 - Personal",
+     "A2",
+     "FASE 4: PERSONAL Y FORMACION",
+     "FASE 4: PERSONAL Y FORMACIÓN"
+    ],
+    [
+     "F4 - Personal",
+     "B4",
+     "TRAMITE / ACCION",
+     "TRÁMITE / ACCIÓN"
+    ],
+    [
+     "F4 - Personal",
+     "B7",
+     "Seleccion y entrevistas",
+     "Selección y entrevistas"
+    ],
+    [
+     "F4 - Personal",
+     "D8",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F4 - Personal",
+     "E8",
+     "Convenio provincial hosteleria",
+     "Convenio provincial hostelería"
+    ],
+    [
+     "F4 - Personal",
+     "E9",
+     "Minimo 1 dia antes de empezar",
+     "Mínimo 1 día antes de empezar"
+    ],
+    [
+     "F4 - Personal",
+     "D10",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F4 - Personal",
+     "B11",
+     "Plan prevencion riesgos (PRL)",
+     "Plan prevención riesgos (PRL)"
+    ],
+    [
+     "F4 - Personal",
+     "E11",
+     "Servicio Prevencion Ajeno obligatorio",
+     "Servicio Prevención Ajeno obligatorio"
+    ],
+    [
+     "F4 - Personal",
+     "B12",
+     "Formacion cocina tapas",
+     "Formación cocina tapas"
+    ],
+    [
+     "F4 - Personal",
+     "B13",
+     "Formacion servicio y barra",
+     "Formación servicio y barra"
+    ],
+    [
+     "F4 - Personal",
+     "B14",
+     "Formacion alergenos + APPCC",
+     "Formación alérgenos + APPCC"
+    ],
+    [
+     "F4 - Personal",
+     "D14",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F4 - Personal",
+     "E14",
+     "14 alergenos, registro temperaturas, trazabilidad",
+     "14 alérgenos, registro temperaturas, trazabilidad"
+    ],
+    [
+     "F5 - Marketing",
+     "B4",
+     "TRAMITE / ACCION",
+     "TRÁMITE / ACCIÓN"
+    ],
+    [
+     "F5 - Marketing",
+     "B5",
+     "Disenar identidad visual",
+     "Diseñar identidad visual"
+    ],
+    [
+     "F5 - Marketing",
+     "C5",
+     "Disenador",
+     "Diseñador"
+    ],
+    [
+     "F5 - Marketing",
+     "E5",
+     "Logo, colores, tipografia, estilo visual",
+     "Logo, colores, tipografía, estilo visual"
+    ],
+    [
+     "F5 - Marketing",
+     "B6",
+     "Ficha Google My Business (CRITICO)",
+     "Ficha Google My Business (CRÍTICO)"
+    ],
+    [
+     "F5 - Marketing",
+     "D6",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F5 - Marketing",
+     "E6",
+     "Categoria: Bar de tapas. Fotos, horario, carta",
+     "Categoría: Bar de tapas. Fotos, horario, carta"
+    ],
+    [
+     "F5 - Marketing",
+     "D7",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F5 - Marketing",
+     "B8",
+     "Pagina web basica",
+     "Página web básica"
+    ],
+    [
+     "F5 - Marketing",
+     "C8",
+     "Dev/Disenador",
+     "Dev/Diseñador"
+    ],
+    [
+     "F5 - Marketing",
+     "E8",
+     "Con carta, ubicacion, reservas, horario",
+     "Con carta, ubicación, reservas, horario"
+    ],
+    [
+     "F5 - Marketing",
+     "B9",
+     "Sesion fotos profesional",
+     "Sesión fotos profesional"
+    ],
+    [
+     "F5 - Marketing",
+     "C9",
+     "Fotografo",
+     "Fotógrafo"
+    ],
+    [
+     "F5 - Marketing",
+     "D9",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F5 - Marketing",
+     "B10",
+     "Disenar carta / pizarras tapas",
+     "Diseñar carta / pizarras tapas"
+    ],
+    [
+     "F5 - Marketing",
+     "C10",
+     "Disenador",
+     "Diseñador"
+    ],
+    [
+     "F5 - Marketing",
+     "E10",
+     "Carta fisica + pizarra tapas del dia + QR digital",
+     "Carta física + pizarra tapas del día + QR digital"
+    ],
+    [
+     "F5 - Marketing",
+     "B11",
+     "Rotulacion exterior",
+     "Rotulación exterior"
+    ],
+    [
+     "F5 - Marketing",
+     "E11",
+     "Rotulo + pizarra exterior + vinilo",
+     "Rótulo + pizarra exterior + vinilo"
+    ],
+    [
+     "F5 - Marketing",
+     "B12",
+     "Campana pre-apertura RRSS",
+     "Campaña pre-apertura RRSS"
+    ],
+    [
+     "F5 - Marketing",
+     "E12",
+     "Behind the scenes, cuenta atras, sorteo inaugural",
+     "Behind the scenes, cuenta atrás, sorteo inaugural"
+    ],
+    [
+     "F5 - Marketing",
+     "D14",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F5 - Marketing",
+     "B15",
+     "Evento inauguracion",
+     "Evento inauguración"
+    ],
+    [
+     "F5 - Marketing",
+     "D15",
+     "1 dia",
+     "1 día"
+    ],
+    [
+     "F5 - Marketing",
+     "B16",
+     "Programa fidelizacion",
+     "Programa fidelización"
+    ],
+    [
+     "F6 - 90 Dias",
+     "A2",
+     "FASE 6: PRIMEROS 90 DIAS",
+     "FASE 6: PRIMEROS 90 DÍAS"
+    ],
+    [
+     "F6 - 90 Dias",
+     "B4",
+     "TRAMITE / ACCION",
+     "TRÁMITE / ACCIÓN"
+    ],
+    [
+     "F6 - 90 Dias",
+     "B5",
+     "Revision diaria caja y ventas",
+     "Revisión diaria caja y ventas"
+    ],
+    [
+     "F6 - 90 Dias",
+     "B7",
+     "Analisis tapas mas vendidas vs menos vendidas",
+     "Análisis tapas mas vendidas vs menos vendidas"
+    ],
+    [
+     "F6 - 90 Dias",
+     "E7",
+     "Aplicar ingenieria de menu: Stars, Puzzles, Dogs",
+     "Aplicar ingeniería de menú: Stars, Puzzles, Dogs"
+    ],
+    [
+     "F6 - 90 Dias",
+     "B8",
+     "Ajustar carta tapas del dia",
+     "Ajustar carta tapas del día"
+    ],
+    [
+     "F6 - 90 Dias",
+     "E8",
+     "Rotar tapas segun temporada y producto disponible",
+     "Rotar tapas según temporada y producto disponible"
+    ],
+    [
+     "F6 - 90 Dias",
+     "B9",
+     "Encuestas clientes + resenas Google",
+     "Encuestas clientes + reseñas Google"
+    ],
+    [
+     "F6 - 90 Dias",
+     "E9",
+     "Pedir resenas, responder TODAS",
+     "Pedir reseñas, responder TODAS"
+    ],
+    [
+     "F6 - 90 Dias",
+     "E10",
+     "Reforzar viernes-sabado, reducir lunes-martes",
+     "Reforzar viernes-sábado, reducir lunes-martes"
+    ]
+   ],
+   "totales_descuadrados": [],
+   "cross_sell_sin_precio": [],
+   "hojas_sin_inputs_sin_proteger": [],
+   "contadores": {
+    "fichero": "checklist-apertura-tapas-bar.xlsx",
+    "tipo": "checklist",
+    "molde": "C2",
+    "hojas": 7,
+    "formulas": 12,
+    "verdes": 73,
+    "cf": 12,
+    "dv": 6,
+    "protegidas": 7,
+    "divisiones_sin_iferror": 0,
+    "ceros_constantes": 0,
+    "vacias": 0,
+    "a4": 7,
+    "items_checklist": 0,
+    "formulas_antes": 12,
+    "formulas_perdidas": []
+   }
+  },
+  {
+   "fichero": "plan-financiero-tapas-bar.xlsx",
+   "tipo": "plan_financiero",
+   "molde": "A-beta",
+   "propio_de_grupo": false,
+   "grupos": [
+    "a"
+   ],
+   "cambios": [
+    "Inversion Inicial: 25 textos con tildes (§1.7)",
+    "PyG 3 Anos: 6 textos con tildes (§1.7)",
+    "PyG 3 Anos: 6 formatos corregidos (§1.4)",
+    "Punto Equilibrio: 13 textos con tildes (§1.7)",
+    "Punto Equilibrio: 4 formatos corregidos (§1.4)",
+    "Escenarios: 5 textos con tildes (§1.7)",
+    "Escenarios: 6 formatos corregidos (§1.4)",
+    "Personal: 4 textos con tildes (§1.7)",
+    "Personal: 8 formatos corregidos (§1.4)",
+    "Instrucciones: 12 textos con tildes (§1.7)",
+    "Inversion Inicial: 1 totales cableados con SUM (§1.3)",
+    "PyG 3 Anos: 9 totales cableados con SUM (§1.3)",
+    "Personal: 4 totales cableados con SUM (§1.3)",
+    "docProps title: «RATIOS REFERENCIA — TAPAS BAR / GASTROBAR ESPANA 2026 · Plan de Negoci» → «Plan financiero — Tapas Bar / Gastrobar · v2.2» (M11)",
+    "Supuestos!B4 cubiertos_dia = 56 (recalibrado §7-bis.17 (v1.1: 50, 'Punto Equilibrio'!B11))",
+    "Supuestos!B5 ticket_medio = 18.0 (fichero v1.1 ('Punto Equilibrio'!B9, TEC-11/DOM-30))",
+    "Supuestos!B6 dias_apertura = 300 (fichero v1.1 (implícito en 'PyG 3 Años'!B10) — fija NUEVO-03)",
+    "Supuestos!B7 crec_a2 = 0.15 (fichero v1.1 (redondeado a la baja, conservador))",
+    "Supuestos!B8 crec_a3 = 0.1 (fichero v1.1 (redondeado a la baja, conservador))",
+    "Supuestos!B11 pct_comida = 0 (valor por defecto del grupo A)",
+    "Supuestos!B12 pct_bebida = 0 (valor por defecto del grupo A)",
+    "Supuestos!B13 coste_comida = 0.3 (fichero v1.1 ('PyG 3 Años'!B13/B6, Instrucciones!B6))",
+    "Supuestos!B14 coste_bebida = 0.25 (fichero v1.1 (Instrucciones!B7 y B8))",
+    "Supuestos!B15 pct_consumibles = 0.01 (parametrizado (v1.1: 'Packaging y desechables' 2.500 €/270.000 = 0,93 %, redondeado))",
+    "Supuestos!B16 pct_delivery = 0.0 (TEC-23/DOM-34 (mismo criterio que el representante))",
+    "Supuestos!B17 comision_delivery = 0.3 (fichero v1.1 (checklist 'F6 - 90 Dias'!E12))",
+    "Supuestos!B18 comision_tpv = 0.008 (parametrizado (el plan v1.1 no lo contemplaba))",
+    "Supuestos!B24 alquiler_mes = 2500 (fichero v1.1 ('PyG 3 Años'!B22 = 30.000 €/año ÷ 12))",
+    "Supuestos!B25 fianza_meses = 3 (parametrizado (v1.1 no lo declaraba como fila propia))",
+    "Supuestos!B26 suministros_mes = 800 (fichero v1.1 ('PyG 3 Años'!B24 = 9.600 €/año ÷ 12))",
+    "Supuestos!B27 seguros_ano = 2400 (fichero v1.1 ('PyG 3 Años'!B25))",
+    "Supuestos!B28 pct_varios = 0.01 (fichero v1.1 ('PyG 3 Años'!B31 = 2.500 €/270.000 = 0,93 %, redondeado))",
+    "Supuestos!B30 recursos_propios = 50000 (recalibrado por REF-17 (v2.0 previa: 45.000 €, el 24,33 %))",
+    "Supuestos!B31 prestamo = 129000 (recalibrado por RD-34 (v2.0 previa: 140.000 €, que dejaban 11.197,55 € de exceso de financiación). Muy por encima de los 115.500 € que sumaba la v1.1 porque el fondo de maniobra real es mayor que el que dotaba el fichero original (NUEVO-01), y porque el IVA soportado de la inversión y los imprevistos de obra por fórmula suman a la necesidad de caja)",
+    "Supuestos!B32 tipo_prestamo = 0.06 (parametrizado)",
+    "Supuestos!B33 plazo_prestamo = 7 (parametrizado)",
+    "Supuestos!B34 carencia_prestamo = 1 (parametrizado)",
+    "Supuestos!B35 meses_fondo = 3 (SPEC §2.2 / TEC-07 (v1.1 dotaba 12.000 €, que no llegaban a cubrir UN mes de sus propios costes fijos de caja: NUEVO-01, la segunda peor proporción de los cinco hermanos))",
+    "Supuestos!B41 iva_soportado = 0.21 (valor por defecto del grupo A)",
+    "Supuestos!B42 bin_inicial = 0 (valor por defecto del grupo A)",
+    "Supuestos!B44 vida_obra = 10 (fichero v1.1 ('PyG 3 Años'!A35 «Amortización (10 años)»))",
+    "Supuestos!B45 vida_maquinaria = 8 (parametrizado (v1.1: 10 años planos para todo el inmovilizado, sin distinguir obra de maquinaria — NUEVO-02, mismo criterio que cafetería y panadería))",
+    "Supuestos!B48 ipc = 0.0 (valor por defecto del grupo A)",
+    "Supuestos!B51 aforo = 45 (fichero v1.1 (docx párrafo 25: «capacidad total de 40 a 50 plazas»))",
+    "Supuestos!B52 rampa_mes1 = 0.55 (valor por defecto del grupo A)",
+    "Supuestos!B53 meses_rampa = 6 (valor por defecto del grupo A)",
+    "Supuestos!B54 meses_renta_previa = 1 (valor por defecto del grupo A)",
+    "Supuestos!B55 pct_imprevistos = 0.1 (valor por defecto del grupo A)",
+    "Supuestos!B58 dias_cobro = 0 (valor por defecto del grupo A)",
+    "Supuestos!B59 dias_pago = 30 (valor por defecto del grupo A)",
+    "Supuestos!B60 mes_paga_1 = 7 (valor por defecto del grupo A)",
+    "Supuestos!B61 mes_paga_2 = 12 (valor por defecto del grupo A)",
+    "Supuestos!B62 pct_bebida_alc = 0.85 (parametrizado (composición de la línea de bebida de este plan: 'PyG 3 Años'!A7 «cerveza, vino, vermut» + A8 «cocteles y destilados»))",
+    "Supuestos!B63 iva_bebida = 0.1 (valor por defecto del grupo A)",
+    "Supuestos!B65 dscr_min = 1.0 (valor por defecto del grupo A)",
+    "Supuestos!B66 dscr_obj = 1.25 (valor por defecto del grupo A)",
+    "Supuestos!B67 holgura_min = 0.15 (valor por defecto del grupo A)",
+    "Supuestos!B68 salario_convenio = 0 (SPEC §2.6/DOM-24 (mismo criterio que el representante y cafetería))",
+    "Personal!A2: subtítulo con el tipo de Seguridad Social escrito a mano «Convenio Hostelería — 14 pagas + SS 33.4%» → fórmula desde Supuestos (§7-bis.11)",
+    "Inversión: «Obra civil y adecuación local» 22000.0 → 22000 — Suelo, pintura, instalaciones, baño accesible y extracciones",
+    "Inversión: «Grifos cerveza + instalación» 3000.0 → 3000 — 4-6 grifos, enfriador, barrilería, CO2",
+    "Inversión: fuera «TPV + software gestión + comandero» — §1.7: «gestion» sin tilde no lo cubre el diccionario del motor (no es -ción/-sión); se re-da de alta como «TPV + software gestión + comandero» en INVERSION_EXTRA, mismo importe (2.000 €) y nota",
+    "Inversión: «Decoración + iluminación ambiente» 4000.0 → 4000 — Iluminación cálida, azulejos, madera y pizarras",
+    "Inversión: «Rotulación + imagen exterior» 2000.0 → 2000 — Rótulo, pizarra de tapas y vinilo de escaparate",
+    "Inversión: «Stock inicial (producto, vinos, cervezas)» 4000.0 → 4000 — Género perecedero, bodega de vinos y barrilería de cerveza",
+    "Inversión: rótulo con parámetro escrito a mano → «Imprevistos» (§7-bis.11)",
+    "Inversión: fuera «Imprevistos» — RD-02 (mismo patrón que el representante y cafetería): el 8 % tecleado a mano se sustituye por la fila «Imprevistos de obra y acondicionamiento», que `grupo_a` calcula por fórmula sobre las partidas de obra de este mismo bloque (§2.2)",
+    "RECALIBRADO · Coste de personal en la cuenta de resultados · 96.000 € · El que suma la hoja «Personal»: 108.368 € · La cuenta de resultados llevaba una cifra tecleada a mano que no era la que sumaba su propia hoja de Personal (209.174 €). Ahora las dos son el mismo número y se recalcula sola cada vez que cambias un sueldo.",
+    "RECALIBRADO · Plantilla · 7 puestos / 209.174 € al año · 7 puestos, cuatro de ellos a jornada parcial / 108.368 € al año · Dimensionada por horas, con el cuadrante a la vista en la hoja de Personal: las 9,5 horas de los dos servicios con público más las 3,5 de mise en place anterior a la apertura, con dos personas a la vez, los 300 días que abre el local. Las horas contratadas cubren esas horas necesarias y dejan un margen mínimo para el cierre, la limpieza y la gestión. Ningún sueldo baja del salario mínimo, y las jornadas parciales lo respetan en proporción. Con la estructura anterior el coste laboral era el 77,5 % de las ventas; ahora es el 35,8 %, dentro del 32-38 % que este mismo libro publica como referencia.",
+    "RECALIBRADO · Clientes al día del año 1 · 50 · 56 · Son 1,24 servicios por plaza y día sobre las 45 plazas del aforo, la mitad de la ocupación que describe el documento (1,8 servicios en el almuerzo y 1,5 en la cena). Suben porque el equipo mínimo de un tapas bar con cocina propia que abre dos servicios los 300 días del calendario cuesta 108.368 € al año pagando al menos el salario mínimo, y eso sobre los 270.000 € de la versión anterior era el 40,1 % de las ventas: por encima del 32-38 % que este mismo libro publica como referencia. Sobre la facturación recalibrada es el 35,8 %.",
+    "RECALIBRADO · Ticket medio · 18 € (sin decir si llevaba IVA) · 18 € SIN IVA (el mismo número) · Se declara qué era esa cifra, no se cambia: con el IVA de sala son 19,80 € de precio de venta, dentro del rango de 15-22 € que publica este mismo libro.",
+    "RECALIBRADO · Facturación del año 1 · 270.000 € · 302.400 € · 56 clientes × 18 € × 300 días. Sube por el número de clientes, no por el precio: el ticket es exactamente el mismo.",
+    "RECALIBRADO · Alquiler · 2.500 €/mes · 2.500 €/mes (sin cambio) · Con la facturación recalibrada son el 9,9 % de las ventas, por debajo del techo del 12 % que fija este mismo libro.",
+    "RECALIBRADO · Calendario de apertura · Escenarios: 310-320 días/año · cuenta de resultados: 300 implícitos · 300 días al año, un único dato en «0. Supuestos» · El libro traía dos calendarios distintos y las hojas no cuadraban entre sí. Se toma el más prudente, que además es el que la cuenta de resultados ya usaba.",
+    "RECALIBRADO · Fondo de maniobra · 12.000 € etiquetados «3 meses» · 3 × los costes fijos de caja de un mes, por fórmula · Los 12.000 € no llegaban a cubrir un solo mes de los costes fijos de caja de este plan, no tres. Ahora se recalcula solo cada vez que cambias un coste fijo.",
+    "RECALIBRADO · Amortización · 11.550 € al año, 10 años planos sobre toda la inversión · Sólo sobre la obra (10 años) y la maquinaria (8 años), por fórmula · El fondo de maniobra, la fianza, las existencias iniciales y el marketing de lanzamiento no son inmovilizado y no se amortizan.",
+    "RECALIBRADO · Imprevistos de obra · 8.500 € tecleados a mano · Un porcentaje sobre las partidas de obra, editable en «0. Supuestos» · El porcentaje vivía dentro del rótulo de la fila, así que mentía cada vez que se tocaba cualquier partida.",
+    "RECALIBRADO · Impuesto de Sociedades · 25 % los tres años, sin compensar pérdidas · 15 % los dos primeros ejercicios con beneficio, compensando las pérdidas anteriores · Es el tipo de entidad de nueva creación y la compensación de bases negativas que permiten los artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades.",
+    "RECALIBRADO · Plan de financiación · no existía · Hoja «Financiación»: de dónde sale el dinero, si cuadra con lo que hace falta, y el cuadro de amortización del préstamo · La ficha del producto lo prometía y ningún fichero de la familia lo traía.",
+    "RECALIBRADO · Dinero que hay que poner · no se declaraba · 50.000 € de los socios y 129.000 € de préstamo · Se ajusta a la necesidad de caja que calcula la hoja de Inversión: ni por debajo, porque entonces el proyecto no está financiado, ni muy por encima, porque se pagan intereses por un dinero que no se usa. Los socios ponen el 29 %, que es lo que suele pedir una entidad.",
+    "RECALIBRADO · Tesorería mes a mes · no existía · Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo acumulado · Es la hoja que responde en qué mes se agota la caja, que es lo que decide una operación bancaria.",
+    "RECALIBRADO · Varios e imprevistos · 2.500 € al año dentro de los costes fijos · 1 % de las ventas, como coste variable · Un gasto que sube y baja con la facturación no puede vivir en los costes fijos: movía el punto de equilibrio sin motivo.",
+    "RECALIBRADO · Sueldos y horario cubierto · sin ninguna comprobación · Semáforo por sueldo y contador de horas contratadas frente a las necesarias · La hoja de Personal avisa en rojo si un sueldo queda por debajo del mínimo legal en proporción a su jornada, y en ámbar si el equipo no llega a cubrir el horario que el propio proyecto declara.",
+    "§2 aplicado sobre el molde A-beta de plan-financiero-tapas-bar.xlsx",
+    "PyG 3 Anos: 6 reglas de semáforo con ISNUMBER (§1.6)",
+    "Escenarios: 4 reglas de semáforo con ISNUMBER (§1.6)",
+    "Tesorería 12 meses: 6 reglas de semáforo con ISNUMBER (§1.6)",
+    "0. Supuestos: DV en 11 importes, 23 porcentajes, 3 días, 13 recuentos y 0 magnitudes con decimales",
+    "0. Supuestos: 1 altos ajustados (§1.8)",
+    "Inversion Inicial: 49 celdas de texto con formato numérico → General (§1.4)",
+    "Inversion Inicial: DV en 18 importes, 0 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "PyG 3 Anos: 15 celdas de texto con formato numérico → General (§1.4)",
+    "PyG 3 Anos: DV en 9 importes, 5 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "PyG 3 Anos: 2 altos ajustados (§1.8)",
+    "Punto Equilibrio: 1 celdas de texto con formato numérico → General (§1.4)",
+    "Punto Equilibrio: DV en 1 importes, 0 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "Punto Equilibrio: 2 altos ajustados (§1.8)",
+    "Escenarios: DV en 2 importes, 0 porcentajes, 2 días, 2 recuentos y 0 magnitudes con decimales",
+    "Escenarios: 1 altos ajustados (§1.8)",
+    "Personal: 15 celdas de texto con formato numérico → General (§1.4)",
+    "Personal: DV en 20 importes, 7 porcentajes, 0 días, 0 recuentos y 2 magnitudes con decimales",
+    "Personal: 2 altos ajustados (§1.8)",
+    "Instrucciones: 39 altos ajustados (§1.8)",
+    "Tesorería 12 meses: 2 celdas de texto con formato numérico → General (§1.4)",
+    "Tesorería 12 meses: DV en 0 importes, 12 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "Tesorería 12 meses: 2 altos ajustados (§1.8)",
+    "Financiación: 6 celdas de texto con formato numérico → General (§1.4)",
+    "Financiación: DV en 5 importes, 1 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "Financiación: 2 altos ajustados (§1.8)",
+    "0. Supuestos: protegida sin contraseña (50 celdas editables)",
+    "Inversion Inicial: protegida sin contraseña (36 celdas editables)",
+    "PyG 3 Anos: protegida sin contraseña (14 celdas editables)",
+    "Punto Equilibrio: protegida sin contraseña (1 celdas editables)",
+    "Escenarios: protegida sin contraseña (6 celdas editables)",
+    "Personal: protegida sin contraseña (29 celdas editables)",
+    "Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "Tesorería 12 meses: protegida sin contraseña (12 celdas editables)",
+    "Financiación: protegida sin contraseña (6 celdas editables)",
+    "hoja renombrada: Inversion Inicial → Inversión Inicial",
+    "hoja renombrada: PyG 3 Anos → PyG 3 Años"
+   ],
+   "formulas_nuevas": 756,
+   "formatos_corregidos": [
+    [
+     "PyG 3 Anos",
+     "B9",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "PyG 3 Anos",
+     "C9",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "PyG 3 Anos",
+     "D9",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "PyG 3 Anos",
+     "E10",
+     "texto→número",
+     "100%",
+     1.0
+    ],
+    [
+     "PyG 3 Anos",
+     "E17",
+     "texto→número",
+     "28.1%",
+     0.281
+    ],
+    [
+     "PyG 3 Anos",
+     "E19",
+     "texto→número",
+     "71.9%",
+     0.7190000000000001
+    ],
+    [
+     "Punto Equilibrio",
+     "B6",
+     "texto→número",
+     "71.9%",
+     0.7190000000000001
+    ],
+    [
+     "Punto Equilibrio",
+     "B10",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Punto Equilibrio",
+     "B11",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Punto Equilibrio",
+     "B13",
+     "texto→número",
+     "25.1%",
+     0.251
+    ],
+    [
+     "Escenarios",
+     "B5",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Escenarios",
+     "C5",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Escenarios",
+     "D5",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Escenarios",
+     "B7",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Escenarios",
+     "C7",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Escenarios",
+     "D7",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B5",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B6",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B7",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B8",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B9",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B10",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B11",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Personal",
+     "B12",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ]
+   ],
+   "ortografia_corregida": [
+    [
+     "Inversion Inicial",
+     "A2",
+     "Inversion Inicial Estimada — Espana 2026",
+     "Inversión Inicial Estimada — España 2026"
+    ],
+    [
+     "Inversion Inicial",
+     "A3",
+     "Ajusta las cifras a tu proyecto. Rangos mercado espanol actu",
+     "Ajusta las cifras a tu proyecto. Rangos mercado español actu"
+    ],
+    [
+     "Inversion Inicial",
+     "A6",
+     "Constitucion SL + notaria + registro",
+     "Constitución SL + notaría + registro"
+    ],
+    [
+     "Inversion Inicial",
+     "C6",
+     "SL unipersonal express 3-5 dias",
+     "SL unipersonal express 3-5 días"
+    ],
+    [
+     "Inversion Inicial",
+     "A8",
+     "Proyecto tecnico + certificacion",
+     "Proyecto técnico + certificación"
+    ],
+    [
+     "Inversion Inicial",
+     "A9",
+     "Obra civil y adecuacion local",
+     "Obra civil y adecuación local"
+    ],
+    [
+     "Inversion Inicial",
+     "C9",
+     "Suelo, pintura, instalaciones, bano accesible, extracciones",
+     "Suelo, pintura, instalaciones, baño accesible, extracciones"
+    ],
+    [
+     "Inversion Inicial",
+     "A10",
+     "Instalacion electrica + climatizacion",
+     "Instalación eléctrica + climatización"
+    ],
+    [
+     "Inversion Inicial",
+     "C10",
+     "Potencia 20-25 kW para cocina + climatizacion",
+     "Potencia 20-25 kW para cocina + climatización"
+    ],
+    [
+     "Inversion Inicial",
+     "A11",
+     "Fontaneria + evacuacion + extracciones",
+     "Fontanería + evacuación + extracciones"
+    ],
+    [
+     "Inversion Inicial",
+     "A13",
+     "Equipamiento frio (camaras, neveras barra)",
+     "Equipamiento frío (cámaras, neveras barra)"
+    ],
+    [
+     "Inversion Inicial",
+     "C13",
+     "Camara frigorifica + 3-4 neveras bajo barra",
+     "Cámara frigorífica + 3-4 neveras bajo barra"
+    ],
+    [
+     "Inversion Inicial",
+     "C14",
+     "Barra con vitrina de tapas calientes/frias, grifo cerveza",
+     "Barra con vitrina de tapas calientes/frías, grifo cerveza"
+    ],
+    [
+     "Inversion Inicial",
+     "A15",
+     "Grifos cerveza + instalacion",
+     "Grifos cerveza + instalación"
+    ],
+    [
+     "Inversion Inicial",
+     "A18",
+     "Vajilla, cristaleria tapas, cuberteria",
+     "Vajilla, cristalería tapas, cubertería"
+    ],
+    [
+     "Inversion Inicial",
+     "C18",
+     "Platos tapas/raciones, catavinos, canas, copas",
+     "Platos tapas/raciones, catavinos, cañas, copas"
+    ],
+    [
+     "Inversion Inicial",
+     "A19",
+     "TPV + software gestion + comandero",
+     "TPV + software gestión + comandero"
+    ],
+    [
+     "Inversion Inicial",
+     "A20",
+     "Decoracion + iluminacion ambiente",
+     "Decoración + iluminación ambiente"
+    ],
+    [
+     "Inversion Inicial",
+     "C20",
+     "Iluminacion calida, azulejos, madera, pizarras",
+     "Iluminación cálida, azulejos, madera, pizarras"
+    ],
+    [
+     "Inversion Inicial",
+     "A21",
+     "Rotulacion + imagen exterior",
+     "Rotulación + imagen exterior"
+    ],
+    [
+     "Inversion Inicial",
+     "C21",
+     "Rotulo + pizarra tapas + vinilo",
+     "Rótulo + pizarra tapas + vinilo"
+    ],
+    [
+     "Inversion Inicial",
+     "C22",
+     "Web, Google My Business, RRSS, evento inauguracion",
+     "Web, Google My Business, RRSS, evento inauguración"
+    ],
+    [
+     "Inversion Inicial",
+     "C24",
+     "Alquiler + suministros + nominas minimas",
+     "Alquiler + suministros + nóminas mínimas"
+    ],
+    [
+     "Inversion Inicial",
+     "A26",
+     "TOTAL INVERSION INICIAL",
+     "TOTAL INVERSIÓN INICIAL"
+    ],
+    [
+     "Inversion Inicial",
+     "C26",
+     "Rango tipico tapas bar/gastrobar: 90.000 - 140.000 EUR",
+     "Rango típico tapas bar/gastrobar: 90.000 - 140.000 €"
+    ],
+    [
+     "PyG 3 Anos",
+     "A1",
+     "CUENTA DE RESULTADOS PREVISIONAL — 3 ANOS",
+     "CUENTA DE RESULTADOS PREVISIONAL — 3 AÑOS"
+    ],
+    [
+     "PyG 3 Anos",
+     "B4",
+     "ANO 1",
+     "AÑO 1"
+    ],
+    [
+     "PyG 3 Anos",
+     "C4",
+     "ANO 2",
+     "AÑO 2"
+    ],
+    [
+     "PyG 3 Anos",
+     "D4",
+     "ANO 3",
+     "AÑO 3"
+    ],
+    [
+     "PyG 3 Anos",
+     "A26",
+     "Gestoria + contabilidad",
+     "Gestoría + contabilidad"
+    ],
+    [
+     "PyG 3 Anos",
+     "A35",
+     "Amortizacion (10 anos)",
+     "Amortización (10 años)"
+    ],
+    [
+     "Punto Equilibrio",
+     "A1",
+     "ANALISIS DE PUNTO DE EQUILIBRIO",
+     "ANÁLISIS DE PUNTO DE EQUILIBRIO"
+    ],
+    [
+     "Punto Equilibrio",
+     "C4",
+     "INTERPRETACION",
+     "INTERPRETACIÓN"
+    ],
+    [
+     "Punto Equilibrio",
+     "C5",
+     "155.100 EUR / 12 meses",
+     "155.100 € / 12 meses"
+    ],
+    [
+     "Punto Equilibrio",
+     "C6",
+     "Por cada 1 EUR de venta, 0.72 EUR de margen",
+     "Por cada 1 € de venta, 0.72 € de margen"
+    ],
+    [
+     "Punto Equilibrio",
+     "C7",
+     "Ventas minimas para cubrir costes",
+     "Ventas mínimas para cubrir costes"
+    ],
+    [
+     "Punto Equilibrio",
+     "C8",
+     "Asumiendo 30 dias de apertura",
+     "Asumiendo 30 días de apertura"
+    ],
+    [
+     "Punto Equilibrio",
+     "C9",
+     "Tapas + racion + 2 bebidas por persona",
+     "Tapas + ración + 2 bebidas por persona"
+    ],
+    [
+     "Punto Equilibrio",
+     "A10",
+     "Clientes/dia para break-even",
+     "Clientes/día para break-even"
+    ],
+    [
+     "Punto Equilibrio",
+     "C10",
+     "599 EUR / 18 EUR ticket medio",
+     "599 € / 18 € ticket medio"
+    ],
+    [
+     "Punto Equilibrio",
+     "A11",
+     "Clientes/dia objetivo (Ano 1)",
+     "Clientes/día objetivo (Año 1)"
+    ],
+    [
+     "Punto Equilibrio",
+     "C11",
+     "Para alcanzar 270K EUR anuales",
+     "Para alcanzar 270K € anuales"
+    ],
+    [
+     "Punto Equilibrio",
+     "A12",
+     "Facturacion mensual objetivo",
+     "Facturación mensual objetivo"
+    ],
+    [
+     "Punto Equilibrio",
+     "C12",
+     "270.000 EUR / 12 meses",
+     "270.000 € / 12 meses"
+    ],
+    [
+     "Escenarios",
+     "A1",
+     "ANALISIS DE ESCENARIOS",
+     "ANÁLISIS DE ESCENARIOS"
+    ],
+    [
+     "Escenarios",
+     "A2",
+     "Pesimista / Realista / Optimista — Ano 1",
+     "Pesimista / Realista / Optimista — Año 1"
+    ],
+    [
+     "Escenarios",
+     "A5",
+     "Clientes/dia",
+     "Clientes/día"
+    ],
+    [
+     "Escenarios",
+     "A7",
+     "Dias apertura/ano",
+     "Días apertura/año"
+    ],
+    [
+     "Escenarios",
+     "A8",
+     "FACTURACION ANUAL",
+     "FACTURACIÓN ANUAL"
+    ],
+    [
+     "Personal",
+     "A2",
+     "Convenio Hosteleria — 14 pagas + SS 33.4%",
+     "Convenio Hostelería — 14 pagas + SS 33.4%"
+    ],
+    [
+     "Personal",
+     "E4",
+     "COSTE/ANO",
+     "COSTE/AÑO"
+    ],
+    [
+     "Personal",
+     "F6",
+     "Disena carta tapas, coordina cocina",
+     "Diseña carta tapas, coordina cocina"
+    ],
+    [
+     "Personal",
+     "F9",
+     "Servicio mesa, terraza, atencion cliente",
+     "Servicio mesa, terraza, atención cliente"
+    ],
+    [
+     "Instrucciones",
+     "A3",
+     "RATIOS REFERENCIA — TAPAS BAR / GASTROBAR ESPANA 2026",
+     "RATIOS REFERENCIA — TAPAS BAR / GASTROBAR ESPAÑA 2026"
+    ],
+    [
+     "Instrucciones",
+     "B11",
+     "15-22 EUR",
+     "15-22 €"
+    ],
+    [
+     "Instrucciones",
+     "B12",
+     "22-30 EUR",
+     "22-30 €"
+    ],
+    [
+     "Instrucciones",
+     "A14",
+     "Rotacion mesa",
+     "Rotación mesa"
+    ],
+    [
+     "Instrucciones",
+     "C14",
+     "Tapeo es rapido, rotacion alta",
+     "Tapeo es rápido, rotación alta"
+    ],
+    [
+     "Instrucciones",
+     "A15",
+     "Ocupacion media semana",
+     "Ocupación media semana"
+    ],
+    [
+     "Instrucciones",
+     "A16",
+     "Ocupacion fin de semana",
+     "Ocupación fin de semana"
+    ],
+    [
+     "Instrucciones",
+     "C16",
+     "Vermut sabado + cenas fin de semana",
+     "Vermut sábado + cenas fin de semana"
+    ],
+    [
+     "Instrucciones",
+     "A18",
+     "EBITDA objetivo (Ano 2)",
+     "EBITDA objetivo (Año 2)"
+    ],
+    [
+     "Instrucciones",
+     "C18",
+     "Tapas bar mas rentable que restaurante por ticket rapido",
+     "Tapas bar mas rentable que restaurante por ticket rápido"
+    ],
+    [
+     "Instrucciones",
+     "A19",
+     "Retorno inversion",
+     "Retorno inversión"
+    ],
+    [
+     "Instrucciones",
+     "C19",
+     "Mas rapido que restaurante por menor desperdicio",
+     "Mas rápido que restaurante por menor desperdicio"
+    ]
+   ],
+   "totales_descuadrados": [],
+   "cross_sell_sin_precio": [],
+   "hojas_sin_inputs_sin_proteger": [],
+   "contadores": {
+    "fichero": "plan-financiero-tapas-bar.xlsx",
+    "tipo": "plan_financiero",
+    "molde": "A-beta",
+    "hojas": 9,
+    "formulas": 742,
+    "verdes": 154,
+    "cf": 70,
+    "dv": 24,
+    "protegidas": 9,
+    "divisiones_sin_iferror": 0,
+    "ceros_constantes": 5,
+    "vacias": 0,
+    "a4": 9,
+    "items_checklist": 0,
+    "formulas_antes": 0,
+    "formulas_perdidas": []
+   }
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "checklist-apertura-tapas-bar.xlsx",
+    "salida": "checklist-apertura-tapas-bar.xlsx: formulas=12 cache_inyectado=12 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "plan-financiero-tapas-bar.xlsx",
+    "salida": "plan-financiero-tapas-bar.xlsx: formulas=742 cache_inyectado=683 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 709,
+   "vacias_por_diseno": 59,
+   "vacias_comprobadas_con_pycel": 59,
+   "vacias_no_verificadas": [],
+   "fallos": []
+  },
+  "blancos_contaminados": [],
+  "spec9": {
+   "no_latinos": [],
+   "ortografia": [],
+   "formatos": [],
+   "referencias": [],
+   "sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "hojas_sin_a4": [],
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-tapas-bar.xlsx",
+     "molde": "C2",
+     "items_con_desplegable": 73,
+     "rangos_dv": 73
+    }
+   ],
+   "sin_instrucciones": [],
+   "creator_mal": [],
+   "nombres_hoja": [],
+   "cf_desanclado": []
+  },
+  "docx_solo_lectura": [
+   {
+    "fichero": "plan-de-negocio-tapas-bar.docx",
+    "a4": false,
+    "ancho_in": 8.5,
+    "alto_in": 11.0,
+    "author": "python-docx",
+    "title": "",
+    "headings": 10,
+    "tablas": 0,
+    "palabras": 6873
+   }
+  ],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "3 ficheros censados (2 xlsx, 1 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-tapas-bar)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ],
+   "stderr": []
+  }
+ },
+ "demostraciones": {
+  "anualidad_sin_PMT": {
+   "cuota_algebraica": 1887.12,
+   "esperado": 1887.12,
+   "ok": true,
+   "motivo": "pycel 1.0b30 NO implementa PMT (§ cabecera SPEC)"
+  },
+  "tir_van_payback_sin_IRR": {
+   "flujos": [
+    -150000.0,
+    30000.0,
+    45000.0,
+    60000.0,
+    70000.0
+   ],
+   "tir_pct": 11.9592,
+   "esperado_pct": 11.9592,
+   "van_8pct": 15440.05,
+   "payback_anios": 3.21,
+   "ok": true,
+   "motivo": "pycel NO implementa IRR: se cachea por Newton"
+  },
+  "countif_sin_COUNTA": {
+   "countif_no_vacio": 3,
+   "countif_texto": 3,
+   "ok": true,
+   "motivo": "sustituto obligatorio de COUNTA (§ cabecera SPEC)"
+  },
+  "iferror_vivo": {
+   "fichero": "plan-financiero-tapas-bar.xlsx",
+   "hoja": "0. Supuestos",
+   "celda": "C9",
+   "formula": "=IFERROR(\"Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPROD",
+   "valor_con_divisor_vacio": "'Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: 10 %. En sala todo va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992, alcohol incluido); el alcohol que sale por delivery y el pan común, si los tienes, mueven la media. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.'",
+   "ok": true,
+   "motivo": "§1.5: toda división lleva IFERROR(…,\"\")"
+  },
+  "deteccion_de_moldes": {
+   "xlsx_clasificados": 30,
+   "por_molde": {
+    "C1": 1,
+    "A-alfa": 1,
+    "C2": 5,
+    "A-beta": 4,
+    "calc-beta": 2,
+    "B-gamma": 2,
+    "P1": 2,
+    "C3": 1,
+    "calc-gamma": 3,
+    "C4": 3,
+    "B-delta": 3,
+    "P2": 3
+   },
+   "detalle": [
+    {
+     "producto": "plan-negocio-bar-restaurante",
+     "fichero": "checklist-apertura-bar-restaurante.xlsx",
+     "tipo": "checklist",
+     "molde": "C1"
+    },
+    {
+     "producto": "plan-negocio-bar-restaurante",
+     "fichero": "plan-financiero-bar-restaurante.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-alfa"
+    },
+    {
+     "producto": "plan-negocio-tapas-bar",
+     "fichero": "checklist-apertura-tapas-bar.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-tapas-bar",
+     "fichero": "plan-financiero-tapas-bar.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-cafeteria",
+     "fichero": "checklist-apertura-cafeteria-brunch.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-cafeteria",
+     "fichero": "plan-financiero-cafeteria-brunch.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-panaderia",
+     "fichero": "checklist-apertura-panaderia.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-panaderia",
+     "fichero": "plan-financiero-panaderia.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-food-truck",
+     "fichero": "checklist-apertura-food-truck.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-food-truck",
+     "fichero": "plan-financiero-food-truck.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "calculadora-pricing-eventos.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-beta"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-gamma"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P1"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "calculadora-pricing-eventos-parrillero.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-beta"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "checklist-apertura-parrillero-asador-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C3"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "plan-financiero-parrillero-asador-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-gamma"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "plantilla-proveedores-parrillero-asador-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P1"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "calculadora-pricing-eventos-paellero.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-gamma"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "checklist-apertura-paellero-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C4"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "plan-financiero-paellero-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-delta"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "plantilla-proveedores-paellero-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P2"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "calculadora-pricing-catering-tematico-eventos.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-gamma"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C4"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "plan-financiero-catering-tematico-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-delta"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "plantilla-proveedores-catering-tematico-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P2"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "calculadora-pricing-chef-privado-showcooking.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-gamma"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+     "tipo": "checklist",
+     "molde": "C4"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "plan-financiero-chef-privado-showcooking.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-delta"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "plantilla-proveedores-chef-privado-showcooking.xlsx",
+     "tipo": "proveedores",
+     "molde": "P2"
+    }
+   ],
+   "fallos": [],
+   "nombres_de_hoja_demasiado_largos": [
+    {
+     "fichero": "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+     "hoja": "F3 - Equipamiento y proveedores carne",
+     "celda": "(hoja)",
+     "longitud": 37,
+     "limite": 31
+    },
+    {
+     "fichero": "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+     "hoja": "F4 - Marca, web y materiales venta",
+     "celda": "(hoja)",
+     "longitud": 34,
+     "limite": 31
+    },
+    {
+     "fichero": "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+     "hoja": "F6 - Operativa primer evento y postventa",
+     "celda": "(hoja)",
+     "longitud": 40,
+     "limite": 31
+    }
+   ],
+   "ok": true
+  },
+  "proteccion": {
+   "total_hojas": 16,
+   "protegidas": 16,
+   "hojas_sin_celdas_verdes": [
+    "checklist-apertura-tapas-bar.xlsx:Instrucciones",
+    "plan-financiero-tapas-bar.xlsx:Instrucciones"
+   ],
+   "sin_proteger_por_falta_de_inputs": [],
+   "fallos": []
+  },
+  "bio_y_version": {
+   "con_bio_y_version": 2,
+   "total": 2,
+   "fallos": []
+  },
+  "demostraciones_2_11": {
+   "caso_base": {
+    "cubiertos": 56,
+    "delivery": 0,
+    "plazo": 7,
+    "carencia": 1,
+    "ingresos": 302400.0,
+    "rai": 24278.73,
+    "neto": 20636.92,
+    "personal_pyg": 108368.4,
+    "personal_hoja": 108368.4,
+    "r_personal": 0.36,
+    "u_personal": 0.36,
+    "deliv_pyg": 0.0,
+    "is1": 3641.81,
+    "is2": 7465.28,
+    "is3": 17255.09,
+    "tipo3": 0.25,
+    "rai2": 49768.55,
+    "bin_ini2": 0.0,
+    "be_dia": 49.52,
+    "esc_rai": 24278.73,
+    "esc_pesimista": -45698.65,
+    "esc_optimista": 105919.0,
+    "tipo_sup": 0.06,
+    "pagas_sup": 14,
+    "vida_maq_sup": 8,
+    "cuadro_cierre": 0.0,
+    "esc_neto": 20636.92,
+    "saldo_min": 40090.91,
+    "fondo": 43877.1,
+    "cierre": 0.0,
+    "cv_comida": 50404.03,
+    "r_cogs": 0.28,
+    "r_alquiler": 0.1,
+    "amort": 10145.0,
+    "ingresos2": 347760.0,
+    "tcf2": 191653.4,
+    "cuota": 26233.78,
+    "int1": 7740.0,
+    "cap2": 18493.78,
+    "dif": 4683.4,
+    "dif_pct": 0.03,
+    "holgura_max": 0.05,
+    "fondo_inv": 43877.1,
+    "caja": 174316.6,
+    "iva_inv": 20989.5,
+    "ticket_sup": 18,
+    "dias_sup": 300,
+    "coste_comida_sup": 0.3,
+    "alquiler_sup": 2500,
+    "ss_sup": 0.33,
+    "prestamo_sup": 129000,
+    "plazo_sup": 7,
+    "meses_fondo_sup": 3,
+    "vida_obra_sup": 10,
+    "crec2_sup": 0.15,
+    "ipc_sup": 0,
+    "delivery_sup": 0,
+    "cap_amortiza": 18493.78
+   },
+   "1_cubiertos_mueven_el_libro": {
+    "celda": "'0. Supuestos'!B4",
+    "valor_nuevo": 78.4,
+    "movimiento": {
+     "ingresos": [
+      302400.0,
+      423360.0
+     ],
+     "rai": [
+      24278.73,
+      108251.58
+     ],
+     "esc_rai": [
+      24278.73,
+      108251.58
+     ]
+    },
+    "ok": true
+   },
+   "1bis_break_even_invariante_al_volumen": {
+    "celda": "'Punto Equilibrio'!B15",
+    "caso_base": 49.523579354180605,
+    "con_mas_volumen": 49.523579354180605,
+    "con_menos_volumen": 49.523579354180605,
+    "ok": true
+   },
+   "2bis_escenarios_independientes": {
+    "input_movido": "'0. Supuestos'!B4",
+    "pesimista": [
+     -45698.648000000016,
+     -45698.648000000016
+    ],
+    "optimista": [
+     105919.0,
+     105919.0
+    ],
+    "ok": true
+   },
+   "2_realista_igual_al_pyg": {
+    "escenarios_realista": 24278.728000000003,
+    "pyg_ano_1": 24278.728000000003,
+    "diferencia": 0.0,
+    "ok": true
+   },
+   "3_personal_del_pyg_es_el_de_su_hoja": {
+    "pyg": 108368.40000000001,
+    "hoja_personal": 108368.40000000001,
+    "diferencia": 0.0,
+    "ratio": 0.35836111111111113,
+    "umbral": 0.36,
+    "ok": true
+   },
+   "4_delivery_a_cero": {
+    "linea_delivery": 0.0,
+    "ok": true
+   },
+   "5_IS_con_BIN_y_tipo_de_nueva_creacion": {
+    "cubiertos_del_ensayo": 46,
+    "ensayos": [
+     {
+      "cubiertos": 55,
+      "rai_ano_1": 20529.939999999973,
+      "rai_ano_2": 45457.44099999993,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 54,
+      "rai_ano_1": 16781.151999999973,
+      "rai_ano_2": 41146.33479999998,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 53,
+      "rai_ano_1": 13032.363999999972,
+      "rai_ano_2": 36835.22859999997,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 52,
+      "rai_ano_1": 9283.576000000001,
+      "rai_ano_2": 32524.122399999935,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 50,
+      "rai_ano_1": 1785.999999999971,
+      "rai_ano_2": 23901.909999999945,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 49,
+      "rai_ano_1": -1962.7880000000296,
+      "rai_ano_2": 19590.803799999994,
+      "bin_ano_2": 1962.7880000000296,
+      "ok": false
+     },
+     {
+      "cubiertos": 48,
+      "rai_ano_1": -5711.57600000003,
+      "rai_ano_2": 15279.697599999956,
+      "bin_ano_2": 5711.57600000003,
+      "ok": false
+     },
+     {
+      "cubiertos": 47,
+      "rai_ano_1": -9460.364000000001,
+      "rai_ano_2": 10968.591399999976,
+      "bin_ano_2": 9460.364000000001,
+      "ok": false
+     },
+     {
+      "cubiertos": 46,
+      "rai_ano_1": -13209.152000000002,
+      "rai_ano_2": 6657.485199999966,
+      "bin_ano_2": 13209.152000000002,
+      "ok": true
+     }
+    ],
+    "rai_ano_1": -13209.152000000002,
+    "is_ano_1": 0,
+    "rai_ano_2": 6657.485199999966,
+    "bin_pendiente_ano_2": 13209.152000000002,
+    "is_ano_2": 0,
+    "is_ano_3": 2256.980049659348,
+    "tipo_ano_3": 0.15,
+    "ok": true
+   },
+   "6_tesoreria_sin_saldo_negativo": {
+    "saldo_minimo": 40090.91290795113,
+    "fondo": 43877.100000000006,
+    "ok": true
+   },
+   "7_carencia_igual_al_plazo": {
+    "capital_al_vencimiento": 0.0,
+    "cuotas_anos_4_y_5": [
+     [
+      4,
+      "C",
+      ""
+     ],
+     [
+      4,
+      "D",
+      ""
+     ],
+     [
+      4,
+      "E",
+      ""
+     ],
+     [
+      5,
+      "C",
+      ""
+     ],
+     [
+      5,
+      "D",
+      ""
+     ],
+     [
+      5,
+      "E",
+      ""
+     ]
+    ],
+    "ok": true
+   },
+   "8_libro_en_blanco_sin_falsos_verdes": {
+    "valores": {
+     "ingresos": "",
+     "rai": "",
+     "neto": "",
+     "r_personal": "",
+     "be_dia": "",
+     "esc_rai": "",
+     "saldo_min": "",
+     "cierre": ""
+    },
+    "ok": true
+   },
+   "9_direccion_de_cada_calculo": {
+    "comprobaciones": [
+     {
+      "input": "cubiertos",
+      "celda_input": "'0. Supuestos'!B4",
+      "valor_nuevo": 67.2,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'PyG 3 Años'!B9",
+      "sentido_esperado": "sube",
+      "antes": 302400.0,
+      "despues": 362880.00000000006,
+      "delta": 60480.0,
+      "ok": true
+     },
+     {
+      "input": "cubiertos",
+      "celda_input": "'0. Supuestos'!B4",
+      "valor_nuevo": 67.2,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "sube",
+      "antes": 24278.728000000003,
+      "despues": 66265.15360000002,
+      "delta": 41986.4256,
+      "ok": true
+     },
+     {
+      "input": "cubiertos",
+      "celda_input": "'0. Supuestos'!B4",
+      "valor_nuevo": 67.2,
+      "objetivo": "r_personal",
+      "celda_objetivo": "'PyG 3 Años'!B53",
+      "sentido_esperado": "baja",
+      "antes": 0.35836111111111113,
+      "despues": 0.29863425925925924,
+      "delta": -0.0597,
+      "ok": true
+     },
+     {
+      "input": "ticket_sup",
+      "celda_input": "'0. Supuestos'!B5",
+      "valor_nuevo": 21.599999999999998,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'PyG 3 Años'!B9",
+      "sentido_esperado": "sube",
+      "antes": 302400.0,
+      "despues": 362880.00000000006,
+      "delta": 60480.0,
+      "ok": true
+     },
+     {
+      "input": "ticket_sup",
+      "celda_input": "'0. Supuestos'!B5",
+      "valor_nuevo": 21.599999999999998,
+      "objetivo": "be_dia",
+      "celda_objetivo": "'Punto Equilibrio'!B15",
+      "sentido_esperado": "baja",
+      "antes": 49.523579354180605,
+      "despues": 41.269649461817174,
+      "delta": -8.2539,
+      "ok": true
+     },
+     {
+      "input": "ticket_sup",
+      "celda_input": "'0. Supuestos'!B5",
+      "valor_nuevo": 21.599999999999998,
+      "objetivo": "r_alquiler",
+      "celda_objetivo": "'PyG 3 Años'!B54",
+      "sentido_esperado": "baja",
+      "antes": 0.0992063492063492,
+      "despues": 0.08267195767195766,
+      "delta": -0.0165,
+      "ok": true
+     },
+     {
+      "input": "dias_sup",
+      "celda_input": "'0. Supuestos'!B6",
+      "valor_nuevo": 270,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'PyG 3 Años'!B9",
+      "sentido_esperado": "baja",
+      "antes": 302400.0,
+      "despues": 272160,
+      "delta": -30240.0,
+      "ok": true
+     },
+     {
+      "input": "dias_sup",
+      "celda_input": "'0. Supuestos'!B6",
+      "valor_nuevo": 270,
+      "objetivo": "be_dia",
+      "celda_objetivo": "'Punto Equilibrio'!B15",
+      "sentido_esperado": "sube",
+      "antes": 49.523579354180605,
+      "despues": 55.026199282422894,
+      "delta": 5.5026,
+      "ok": true
+     },
+     {
+      "input": "coste_comida_sup",
+      "celda_input": "'0. Supuestos'!B13",
+      "valor_nuevo": 0.35,
+      "objetivo": "cv_comida",
+      "celda_objetivo": "'PyG 3 Años'!B13",
+      "sentido_esperado": "sube",
+      "antes": 50404.032,
+      "despues": 58804.704,
+      "delta": 8400.672,
+      "ok": true
+     },
+     {
+      "input": "coste_comida_sup",
+      "celda_input": "'0. Supuestos'!B13",
+      "valor_nuevo": 0.35,
+      "objetivo": "r_cogs",
+      "celda_objetivo": "'PyG 3 Años'!B52",
+      "sentido_esperado": "sube",
+      "antes": 0.27777999999999997,
+      "despues": 0.30556,
+      "delta": 0.0278,
+      "ok": true
+     },
+     {
+      "input": "coste_comida_sup",
+      "celda_input": "'0. Supuestos'!B13",
+      "valor_nuevo": 0.35,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "baja",
+      "antes": 24278.728000000003,
+      "despues": 15878.055999999982,
+      "delta": -8400.672,
+      "ok": true
+     },
+     {
+      "input": "delivery_sup",
+      "celda_input": "'0. Supuestos'!B16",
+      "valor_nuevo": 0.25,
+      "objetivo": "deliv_pyg",
+      "celda_objetivo": "'PyG 3 Años'!B16",
+      "sentido_esperado": "sube",
+      "antes": 0.0,
+      "despues": 22680.0,
+      "delta": 22680.0,
+      "ok": true
+     },
+     {
+      "input": "delivery_sup",
+      "celda_input": "'0. Supuestos'!B16",
+      "valor_nuevo": 0.25,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "baja",
+      "antes": 24278.728000000003,
+      "despues": 1598.7280000000028,
+      "delta": -22680.0,
+      "ok": true
+     },
+     {
+      "input": "alquiler_sup",
+      "celda_input": "'0. Supuestos'!B24",
+      "valor_nuevo": 3000,
+      "objetivo": "r_alquiler",
+      "celda_objetivo": "'PyG 3 Años'!B54",
+      "sentido_esperado": "sube",
+      "antes": 0.0992063492063492,
+      "despues": 0.11904761904761904,
+      "delta": 0.0198,
+      "ok": true
+     },
+     {
+      "input": "alquiler_sup",
+      "celda_input": "'0. Supuestos'!B24",
+      "valor_nuevo": 3000,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "baja",
+      "antes": 24278.728000000003,
+      "despues": 18278.728000000003,
+      "delta": -6000.0,
+      "ok": true
+     },
+     {
+      "input": "alquiler_sup",
+      "celda_input": "'0. Supuestos'!B24",
+      "valor_nuevo": 3000,
+      "objetivo": "fondo_inv",
+      "celda_objetivo": "'Inversión Inicial'!B29",
+      "sentido_esperado": "sube",
+      "antes": 43877.100000000006,
+      "despues": 45377.100000000006,
+      "delta": 1500.0,
+      "ok": true
+     },
+     {
+      "input": "ss_sup",
+      "celda_input": "'0. Supuestos'!B20",
+      "valor_nuevo": 0.38,
+      "objetivo": "personal_pyg",
+      "celda_objetivo": "'PyG 3 Años'!B23",
+      "sentido_esperado": "sube",
+      "antes": 108368.40000000001,
+      "despues": 112442.40000000001,
+      "delta": 4074.0,
+      "ok": true
+     },
+     {
+      "input": "ss_sup",
+      "celda_input": "'0. Supuestos'!B20",
+      "valor_nuevo": 0.38,
+      "objetivo": "personal_hoja",
+      "celda_objetivo": "'Personal'!G12",
+      "sentido_esperado": "sube",
+      "antes": 108368.40000000001,
+      "despues": 112442.40000000001,
+      "delta": 4074.0,
+      "ok": true
+     },
+     {
+      "input": "ss_sup",
+      "celda_input": "'0. Supuestos'!B20",
+      "valor_nuevo": 0.38,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "baja",
+      "antes": 24278.728000000003,
+      "despues": 20204.728000000003,
+      "delta": -4074.0,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 169000,
+      "objetivo": "int1",
+      "celda_objetivo": "'Financiación'!B44",
+      "sentido_esperado": "sube",
+      "antes": 7740.0,
+      "despues": 10140.0,
+      "delta": 2400.0,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 169000,
+      "objetivo": "cuota",
+      "celda_objetivo": "'Financiación'!B24",
+      "sentido_esperado": "sube",
+      "antes": 26233.7790732615,
+      "despues": 34368.28421225731,
+      "delta": 8134.5051,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 169000,
+      "objetivo": "dif",
+      "celda_objetivo": "'Financiación'!B15",
+      "sentido_esperado": "sube",
+      "antes": 4683.399999999994,
+      "despues": 44083.399999999994,
+      "delta": 39400.0,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 169000,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "baja",
+      "antes": 24278.728000000003,
+      "despues": 21878.728000000003,
+      "delta": -2400.0,
+      "ok": true
+     },
+     {
+      "input": "plazo_sup",
+      "celda_input": "'0. Supuestos'!B33",
+      "valor_nuevo": 10,
+      "objetivo": "cuota",
+      "celda_objetivo": "'Financiación'!B24",
+      "sentido_esperado": "baja",
+      "antes": 26233.7790732615,
+      "despues": 18965.868315395204,
+      "delta": -7267.9108,
+      "ok": true
+     },
+     {
+      "input": "plazo_sup",
+      "celda_input": "'0. Supuestos'!B33",
+      "valor_nuevo": 10,
+      "objetivo": "cap_amortiza",
+      "celda_objetivo": "'Financiación'!B47",
+      "sentido_esperado": "baja",
+      "antes": 18493.7790732615,
+      "despues": 11225.868315395204,
+      "delta": -7267.9108,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "fondo_inv",
+      "celda_objetivo": "'Inversión Inicial'!B29",
+      "sentido_esperado": "sube",
+      "antes": 43877.100000000006,
+      "despues": 87754.20000000001,
+      "delta": 43877.1,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "caja",
+      "celda_objetivo": "'Inversión Inicial'!B33",
+      "sentido_esperado": "sube",
+      "antes": 174316.6,
+      "despues": 218193.7,
+      "delta": 43877.1,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "saldo_min",
+      "celda_objetivo": "'Tesorería 12 meses'!B23",
+      "sentido_esperado": "sube",
+      "antes": 40090.91290795113,
+      "despues": 83968.01290795114,
+      "delta": 43877.1,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "igual",
+      "antes": 24278.728000000003,
+      "despues": 24278.728000000003,
+      "delta": 0.0,
+      "ok": true
+     },
+     {
+      "input": "vida_obra_sup",
+      "celda_input": "'0. Supuestos'!B44",
+      "valor_nuevo": 20,
+      "objetivo": "amort",
+      "celda_objetivo": "'PyG 3 Años'!B35",
+      "sentido_esperado": "baja",
+      "antes": 10145.0,
+      "despues": 7697.5,
+      "delta": -2447.5,
+      "ok": true
+     },
+     {
+      "input": "vida_obra_sup",
+      "celda_input": "'0. Supuestos'!B44",
+      "valor_nuevo": 20,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "sube",
+      "antes": 24278.728000000003,
+      "despues": 26726.228000000003,
+      "delta": 2447.5,
+      "ok": true
+     },
+     {
+      "input": "crec2_sup",
+      "celda_input": "'0. Supuestos'!B7",
+      "valor_nuevo": 0.25,
+      "objetivo": "ingresos2",
+      "celda_objetivo": "'PyG 3 Años'!C9",
+      "sentido_esperado": "sube",
+      "antes": 347759.99999999994,
+      "despues": 378000,
+      "delta": 30240.0,
+      "ok": true
+     },
+     {
+      "input": "crec2_sup",
+      "celda_input": "'0. Supuestos'!B7",
+      "valor_nuevo": 0.25,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'PyG 3 Años'!B9",
+      "sentido_esperado": "igual",
+      "antes": 302400.0,
+      "despues": 302400,
+      "delta": 0.0,
+      "ok": true
+     },
+     {
+      "input": "ipc_sup",
+      "celda_input": "'0. Supuestos'!B48",
+      "valor_nuevo": 0.05,
+      "objetivo": "tcf2",
+      "celda_objetivo": "'PyG 3 Años'!C37",
+      "sentido_esperado": "sube",
+      "antes": 191653.40000000002,
+      "despues": 200041.82,
+      "delta": 8388.42,
+      "ok": true
+     },
+     {
+      "input": "ipc_sup",
+      "celda_input": "'0. Supuestos'!B48",
+      "valor_nuevo": 0.05,
+      "objetivo": "rai",
+      "celda_objetivo": "'PyG 3 Años'!B40",
+      "sentido_esperado": "igual",
+      "antes": 24278.728000000003,
+      "despues": 24278.728000000003,
+      "delta": 0.0,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   "10_tipo_al_cero_por_ciento": {
+    "cuota": 21500.0,
+    "capital_al_vencimiento": 0.0,
+    "intereses_ano_1": 0,
+    "ok": true
+   },
+   "11_plazo_maximo_cierra_el_cuadro": {
+    "plazo": 15,
+    "capital_al_vencimiento": 0.0,
+    "ok": true
+   },
+   "12_robustez_de_los_divisores": {
+    "comprobaciones": [
+     {
+      "input": "vida_obra_sup",
+      "celda": "'0. Supuestos'!B44",
+      "objetivo": "rai",
+      "regla": "no_mejora",
+      "antes": 24278.728000000003,
+      "con_cero": -19776.271999999997,
+      "ok": true
+     },
+     {
+      "input": "vida_maq_sup",
+      "celda": "'0. Supuestos'!B45",
+      "objetivo": "rai",
+      "regla": "no_mejora",
+      "antes": 24278.728000000003,
+      "con_cero": -12471.271999999997,
+      "ok": true
+     },
+     {
+      "input": "pagas_sup",
+      "celda": "'0. Supuestos'!B21",
+      "objetivo": "personal_pyg",
+      "regla": "no_cero",
+      "antes": 108368.40000000001,
+      "con_cero": 92887.20000000001,
+      "ok": true
+     },
+     {
+      "input": "dias_sup",
+      "celda": "'0. Supuestos'!B6",
+      "objetivo": "ingresos",
+      "regla": "vacio",
+      "antes": 302400.0,
+      "con_cero": "",
+      "ok": true
+     },
+     {
+      "input": "cubiertos",
+      "celda": "'0. Supuestos'!B4",
+      "objetivo": "ingresos",
+      "regla": "vacio",
+      "antes": 302400.0,
+      "con_cero": "",
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda": "'0. Supuestos'!B35",
+      "objetivo": "fondo",
+      "regla": "vacio",
+      "antes": 43877.100000000006,
+      "con_cero": "",
+      "ok": true
+     },
+     {
+      "input": "plazo_sup",
+      "celda": "'0. Supuestos'!B33",
+      "objetivo": "cuadro_cierre",
+      "regla": "rastro",
+      "antes": 0.0,
+      "con_cero": 129000.0,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   "12bis_origen_cubre_los_usos": {
+    "diferencia": 4683.399999999994,
+    "diferencia_pct": 0.02686720599185616,
+    "tope": 0.05,
+    "ok": true
+   },
+   "13_libro_en_blanco_sin_ceros": {
+    "celdas_con_cero": [],
+    "total": 0,
+    "ok": true
+   }
+  },
+  "checklist_reemplazos": {
+   "fichero": "checklist-apertura-tapas-bar.xlsx",
+   "declarados": 22,
+   "no_entregados": [],
+   "patrones_muertos": []
+  },
+  "primer_ano_que_amortiza": {
+   "carencia": 1,
+   "ano": 2,
+   "celda": "'Financiación'!B47"
+  },
+  "mapa_de_celdas_para_T9": {
+   "fichero": "plan-financiero-tapas-bar.xlsx",
+   "aviso": "Mapa REAL leído del fichero por rótulo. La tabla de §4.2 de la SPEC está obsoleta desde T1 (RC-32): el guion tiene que resolver por RÓTULO, no por coordenada, y abortar si el rótulo no aparece.",
+   "celdas": {
+    "inversion_total": "'Inversión Inicial'!B30",
+    "capex": "'Inversión Inicial'!B31",
+    "iva_de_la_inversion": "'Inversión Inicial'!B32",
+    "necesidad_de_caja": "'Inversión Inicial'!B33",
+    "fondo_de_maniobra": "'Inversión Inicial'!B29",
+    "amortizacion_anual": "'Inversión Inicial'!B37",
+    "facturacion_ano_1": "'PyG 3 Años'!B9",
+    "facturacion_ano_2": "'PyG 3 Años'!C9",
+    "facturacion_ano_3": "'PyG 3 Años'!D9",
+    "margen_bruto": "'PyG 3 Años'!B20",
+    "resultado_antes_de_impuestos": "'PyG 3 Años'!B40",
+    "resultado_neto_ano_1": "'PyG 3 Años'!B47",
+    "resultado_neto_ano_3": "'PyG 3 Años'!D47",
+    "margen_neto_pct": "'PyG 3 Años'!B55",
+    "ratio_personal_pct": "'PyG 3 Años'!B53",
+    "ratio_cogs_pct": "'PyG 3 Años'!B52",
+    "coste_de_personal": "'PyG 3 Años'!B23",
+    "plantilla_personas": "'Personal'!B12",
+    "plantilla_jornadas": "'Personal'!C12",
+    "coste_plantilla_ano": "'Personal'!G12",
+    "break_even_contable_dia": "'Punto Equilibrio'!B15",
+    "break_even_caja_dia": "'Punto Equilibrio'!B20",
+    "break_even_ingresos": "'Punto Equilibrio'!B21",
+    "saldo_minimo_de_caja": "'Tesorería 12 meses'!B23",
+    "mes_de_caja_minima": "'Tesorería 12 meses'!B24",
+    "payback_anos": null,
+    "cuota_anual_prestamo": "'Financiación'!B24",
+    "dscr_minimo": "'Financiación'!B54",
+    "origen_menos_usos": "'Financiación'!B15"
+   },
+   "sin_localizar": [
+    "payback_anos"
+   ],
+   "valores": {
+    "inversion_total": 153327.1,
+    "capex": 109450.0,
+    "iva_de_la_inversion": 20989.5,
+    "necesidad_de_caja": 174316.6,
+    "fondo_de_maniobra": 43877.1,
+    "amortizacion_anual": 10145.0,
+    "facturacion_ano_1": 302400.0,
+    "facturacion_ano_2": 347760.0,
+    "facturacion_ano_3": 382536.0,
+    "margen_bruto": 209932.128,
+    "resultado_antes_de_impuestos": 24278.728,
+    "resultado_neto_ano_1": 20636.9188,
+    "resultado_neto_ano_3": 51765.2765,
+    "margen_neto_pct": 0.0682,
+    "ratio_personal_pct": 0.3584,
+    "ratio_cogs_pct": 0.2778,
+    "coste_de_personal": 108368.4,
+    "plantilla_personas": 7.0,
+    "plantilla_jornadas": 4.3,
+    "coste_plantilla_ano": 108368.4,
+    "break_even_contable_dia": 49.5236,
+    "break_even_caja_dia": 46.8174,
+    "break_even_ingresos": 252813.8054,
+    "saldo_minimo_de_caja": 40090.9129,
+    "mes_de_caja_minima": 2.0,
+    "cuota_anual_prestamo": 26233.7791,
+    "dscr_minimo": 2.2943,
+    "origen_menos_usos": 4683.4
+   }
+  },
+  "gate_A7_sumif_iva_inversion": {
+   "sumif": "E7:E27",
+   "subtotales_de_bloque": "B7:B27",
+   "ok": true
+  }
+ },
+ "fallos": [],
+ "pendientes": [
+  "grupo_b aún no existe",
+  "grupo_c aún no existe",
+  "RC-29: 3 nombres de hoja de más de 31 caracteres, que Excel corta y puede obligar a reparar el fichero (plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F3 - Equipamiento y proveedores carne (37), plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F4 - Marca, web y materiales venta (34), plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F6 - Operativa primer evento y postventa (40)); el renombrado va en el módulo de contenido de su producto",
+  "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+ ],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/57c14ae5-19b9-45c6-ac3a-4d3098326b56/scratchpad/apply-plan-negocio-tapas-bar/respaldos/plan-negocio-tapas-bar.bak-20260905-172937"
+}

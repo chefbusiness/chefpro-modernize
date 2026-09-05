@@ -5,7 +5,7 @@ import {
 import FadeIn from '../ebook/FadeIn';
 
 const categories = [
-  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio, escenarios, personal con cobertura de horas, tesorería 12 meses con liquidación de IVA, plan de financiación con DSCR e instrucciones. Las celdas verdes son las que se teclean y las 733 fórmulas se recalculan solas.' },
+  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio, escenarios, personal con cobertura de horas, tesorería 12 meses con liquidación de IVA, plan de financiación con DSCR e instrucciones. Las celdas verdes son las que se teclean y las 737 fórmulas se recalculan solas.' },
   { icon: Coins, title: 'Inversión Inicial Detallada', desc: 'Local, horno profesional de pisos o rotativo, amasadora espiral 25-50 kg, divisora y boleadora, cámara de fermentación controlada, vitrina expositor, mobiliario y fondo de maniobra: 101.600 € de CAPEX más 43.615 € de colchón de caja, 145.215 € en total.' },
   { icon: TrendingUp, title: 'Punto de Equilibrio (Break-Even)', desc: 'Cálculo en transacciones diarias con ticket medio de 5,50 € sin IVA: 162 al día para cubrir costes y 155 en términos de caja, con holgura sobre el equilibrio año a año y tabla de sensibilidad al ticket y al coste variable.' },
   { icon: BarChart3, title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes de producción y mix barra/bollería/cafetería para presentar a banco e inversores.' },

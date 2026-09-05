@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye un modelo con 718 fórmulas enlazadas —cambias un supuesto y se recalculan el P&L, la tesorería y la financiación—, ratios auditados contra los del sector (coste de mercancía 27,1 %, margen bruto 64,1 %, personal 31,2 %), cuadro de personal con Seguridad Social y aviso de SMI, punto de equilibrio calculado (41 clientes/día a 12 € sin IVA) y checklist de 68 trámites verificado contra la normativa vigente.',
+    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye un modelo con 722 fórmulas enlazadas —cambias un supuesto y se recalculan el P&L, la tesorería y la financiación—, ratios auditados contra los del sector (coste de mercancía 27,1 %, margen bruto 64,1 %, personal 31,2 %), cuadro de personal con Seguridad Social y aviso de SMI, punto de equilibrio calculado (41 clientes/día a 12 € sin IVA) y checklist de 68 trámites verificado contra la normativa vigente.',
   },
   {
     q: '¿Puedo presentar este plan al banco o a inversores?',

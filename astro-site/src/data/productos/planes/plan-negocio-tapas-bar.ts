@@ -129,7 +129,7 @@ const data: PlanNegocioData = {
       '9 secciones profesionales con datos reales del mercado español para construir la viabilidad financiera de tu tapas bar y presentarla a banco o inversores.',
     templates: [
       { icon: 'FileText', title: 'Plan de Negocio DOCX (10 secciones)', desc: 'Resumen ejecutivo, concepto, análisis de mercado, DAFO, marketing, operaciones, RRHH, financiero, legal y conclusiones. Listo para banco o inversores.' },
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería mes a mes y plan de financiación, más instrucciones. 739 fórmulas: cambias una celda verde y el libro entero se recalcula.' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería mes a mes y plan de financiación, más instrucciones. 742 fórmulas: cambias una celda verde y el libro entero se recalcula.' },
       { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: 'Modelo realista: 50 clientes al día para cubrir costes —47 si sólo cuentas la caja y la cuota del préstamo— con ticket medio de 18 € sin IVA, un 19,6 % de holgura sobre los 56 previstos y tabla de sensibilidad por ticket medio y coste variable.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes y ticket medio. Útil para presentar a banco e inversores.' },
       { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos de los 7 puestos —propietario/encargado de sala, jefe de cocina, camarero de barra, camarero de sala y terraza, ayudante de cocina, extra de fin de semana y suplencias—, con Seguridad Social al 33 %, 14 pagas, semáforo que avisa si un sueldo baja del salario mínimo en proporción a su jornada y contador de horas contratadas frente a las necesarias.' },
@@ -228,7 +228,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Puedo modificar las cifras del Excel?',
-      a: 'Sí. Las celdas verdes son las que se teclean y las 739 fórmulas se recalculan solas; el resto de las hojas va protegido para que no se pise una fórmula sin querer, y la protección no tiene contraseña (Revisar → Desproteger hoja).',
+      a: 'Sí. Las celdas verdes son las que se teclean y las 742 fórmulas se recalculan solas; el resto de las hojas va protegido para que no se pise una fórmula sin querer, y la protección no tiene contraseña (Revisar → Desproteger hoja).',
     },
     {
       q: '¿Qué trámites legales incluye el checklist de apertura?',

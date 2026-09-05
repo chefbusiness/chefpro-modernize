@@ -1,0 +1,1530 @@
+{
+ "producto": "plan-negocio-bar-restaurante",
+ "version": "2.2",
+ "rol": "motor",
+ "spec": "scripts/productos-digitales/planes-v2-SPEC.md §1",
+ "fecha": "2026-09-05T17:28:57",
+ "modo": "produccion",
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante",
+ "grupos_pedidos": [
+  "motor",
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_cargados": [
+  "a"
+ ],
+ "grupos_ausentes": [
+  {
+   "grupo": "b",
+   "fichero_existe": false,
+   "error": "No module named 'grupo_b'",
+   "nivel": "pendiente"
+  },
+  {
+   "grupo": "c",
+   "fichero_existe": false,
+   "error": "No module named 'grupo_c'",
+   "nivel": "pendiente"
+  }
+ ],
+ "contenido_cargado": {
+  "a": true
+ },
+ "solo_motor": false,
+ "moldes": {
+  "checklist-apertura-bar-restaurante.xlsx": "checklist/C1",
+  "plan-financiero-bar-restaurante.xlsx": "plan_financiero/A-alfa"
+ },
+ "ficheros": [
+  {
+   "fichero": "checklist-apertura-bar-restaurante.xlsx",
+   "tipo": "checklist",
+   "molde": "C1",
+   "propio_de_grupo": false,
+   "grupos": [
+    "a"
+   ],
+   "cambios": [
+    "docProps title: «Checklist Apertura — Bar-Restaurante / Espana 2026 · Plan de Negocio: » → «Checklist de apertura — Bar-Restaurante / Restaurante Casual · v2.2» (M11)",
+    "Checklist Apertura!F14: «Tarifa plana 80 €/mes» → «Cuota según la base mínima del tramo que te corr»",
+    "Checklist Apertura!F35: «Priorizar experiencia hostelería» → «Prioriza la experiencia en hostelería»",
+    "⚠️ Checklist: el reemplazo '^Capital social min 1 EUR' no llega a ninguna celda de este fichero (fila que no existe o que otro reemplazo anterior ya renombró): no se entrega «Capital social mínimo 1 € (Ley 18/2022). No existe ningún de» (M5, aviso)",
+    "⚠️ Checklist: el reemplazo '^Alta en el IAE' no llega a ninguna celda de este fichero (fila que no existe o que otro reemplazo anterior ya renombró): no se entrega «Alta en el IAE: epígrafe 671.5 (restaurantes de un tenedor),» (M5, aviso)",
+    "Checklist: 2 celdas corregidas, 0 trámites nuevos, 0 reemplazos no entregados y 2 patrones muertos (§2.10)",
+    "checklist C1: 64 ítems con desplegable y contador",
+    "Checklist Apertura: 1 altos ajustados (§1.8)",
+    "Checklist Apertura: protegida sin contraseña (64 celdas editables)",
+    "Instrucciones: protegida sin contraseña (0 celdas editables)"
+   ],
+   "formulas_nuevas": 2,
+   "formatos_corregidos": [],
+   "ortografia_corregida": [],
+   "totales_descuadrados": [],
+   "cross_sell_sin_precio": [],
+   "hojas_sin_inputs_sin_proteger": [],
+   "contadores": {
+    "fichero": "checklist-apertura-bar-restaurante.xlsx",
+    "tipo": "checklist",
+    "molde": "C1",
+    "hojas": 2,
+    "formulas": 2,
+    "verdes": 64,
+    "cf": 2,
+    "dv": 1,
+    "protegidas": 2,
+    "divisiones_sin_iferror": 0,
+    "ceros_constantes": 0,
+    "vacias": 0,
+    "a4": 2,
+    "items_checklist": 0,
+    "formulas_antes": 2,
+    "formulas_perdidas": []
+   }
+  },
+  {
+   "fichero": "plan-financiero-bar-restaurante.xlsx",
+   "tipo": "plan_financiero",
+   "molde": "A-alfa",
+   "propio_de_grupo": false,
+   "grupos": [
+    "a"
+   ],
+   "cambios": [
+    "0. Supuestos: 1 pseudo-fórmulas convertidas en texto (habrían dado #¿NOMBRE?)",
+    "0. Supuestos: 1 textos con tildes (§1.7)",
+    "2. P&L 3 Años: 1 textos con tildes (§1.7)",
+    "3. Punto Equilibrio: 1 textos con tildes (§1.7)",
+    "5. Personal: 4 formatos corregidos (§1.4)",
+    "Instrucciones: 2 textos con tildes (§1.7)",
+    "Instrucciones: 3 formatos corregidos (§1.4)",
+    "docProps title: «Plan Financiero Bar-Restaurante · Plan de Negocio: Bar-Restaurante · v» → «Plan financiero — Bar-Restaurante / Restaurante Casual · v2.2» (M11)",
+    "Supuestos!B4 cubiertos_dia = 80 (recalibrado §7-bis.17 (v1.1: 55))",
+    "Supuestos!B5 ticket_medio = 18.2 (recalibrado por TEC-11/DOM-30 y RD-08 (v1.1: 18,50 € sin declarar si llevaba IVA; paso intermedio 17,20 €). Única entrada: la de RD-08 se fundió aquí el 2026-09-05 (RD17-COD-12))",
+    "Supuestos!B6 dias_apertura = 310 (fichero v1.1)",
+    "Supuestos!B7 crec_a2 = 0.1 (parametrizado (v1.1 implicaba 55 → 65 cubiertos = +18 %))",
+    "Supuestos!B8 crec_a3 = 0.06 (parametrizado (v1.1 implicaba 65 → 75 = +15 %))",
+    "Supuestos!B11 pct_comida = 0 (valor por defecto del grupo A)",
+    "Supuestos!B12 pct_bebida = 0 (valor por defecto del grupo A)",
+    "Supuestos!B13 coste_comida = 0.3 (fichero v1.1 (Instrucciones: «Food cost objetivo 28-32 %»))",
+    "Supuestos!B14 coste_bebida = 0.22 (fichero v1.1 (rótulo de la fila «Bebidas cost»))",
+    "Supuestos!B15 pct_consumibles = 0.015 (parametrizado (v1.1: 4.800 € fijos = 1,5 % de sus ventas))",
+    "Supuestos!B16 pct_delivery = 0.0 (TEC-23/DOM-34 (v1.1 cobraba el 5 % de TODA la facturación))",
+    "Supuestos!B17 comision_delivery = 0.28 (parametrizado)",
+    "Supuestos!B18 comision_tpv = 0.008 (parametrizado (el plan v1.1 no lo contemplaba))",
+    "Supuestos!B24 alquiler_mes = 3000 (fichero v1.1)",
+    "Supuestos!B25 fianza_meses = 3 (fichero v1.1)",
+    "Supuestos!B26 suministros_mes = 1800 (recalibrado (v1.1: 1.200 €/mes, 3,4 % de ventas, por debajo de lo que consume una cocina caliente))",
+    "Supuestos!B27 seguros_ano = 2000 (fichero v1.1)",
+    "Supuestos!B28 pct_varios = 0.02 (fichero v1.1 (rótulo «Varios e imprevistos (2%)»))",
+    "Supuestos!B30 recursos_propios = 75000 (parametrizado)",
+    "Supuestos!B31 prestamo = 128000 (recalibrado (v1.1: 110.000 €; la hoja de Financiación lo cuadra con la necesidad de caja))",
+    "Supuestos!B32 tipo_prestamo = 0.06 (parametrizado)",
+    "Supuestos!B33 plazo_prestamo = 7 (parametrizado)",
+    "Supuestos!B34 carencia_prestamo = 1 (parametrizado)",
+    "Supuestos!B35 meses_fondo = 3 (SPEC §2.2 / TEC-07 (v1.1 dotaba 30.000 €, que eran 1,8 meses))",
+    "Supuestos!B41 iva_soportado = 0.21 (valor por defecto del grupo A)",
+    "Supuestos!B42 bin_inicial = 0 (valor por defecto del grupo A)",
+    "Supuestos!B44 vida_obra = 10 (fichero v1.1 (rótulo «Amortizacion equipos (10 anos)»))",
+    "Supuestos!B45 vida_maquinaria = 10 (recalibrado por RD-15 (v2.0 previa: 8 años = 12,5 % anual))",
+    "Supuestos!B48 ipc = 0.0 (valor por defecto del grupo A)",
+    "Supuestos!B51 aforo = 56 (valor por defecto del grupo A)",
+    "Supuestos!B52 rampa_mes1 = 0.55 (valor por defecto del grupo A)",
+    "Supuestos!B53 meses_rampa = 6 (valor por defecto del grupo A)",
+    "Supuestos!B54 meses_renta_previa = 1 (valor por defecto del grupo A)",
+    "Supuestos!B55 pct_imprevistos = 0.1 (valor por defecto del grupo A)",
+    "Supuestos!B58 dias_cobro = 0 (valor por defecto del grupo A)",
+    "Supuestos!B59 dias_pago = 30 (valor por defecto del grupo A)",
+    "Supuestos!B60 mes_paga_1 = 7 (valor por defecto del grupo A)",
+    "Supuestos!B61 mes_paga_2 = 12 (valor por defecto del grupo A)",
+    "Supuestos!B62 pct_bebida_alc = 0.6 (valor por defecto del grupo A)",
+    "Supuestos!B63 iva_bebida = 0.1 (valor por defecto del grupo A)",
+    "Supuestos!B65 dscr_min = 1.0 (valor por defecto del grupo A)",
+    "Supuestos!B66 dscr_obj = 1.25 (valor por defecto del grupo A)",
+    "Supuestos!B67 holgura_min = 0.15 (valor por defecto del grupo A)",
+    "Supuestos!B68 salario_convenio = 0 (valor por defecto del grupo A)",
+    "RECALIBRADO · Coste de personal imputado al P&L · 115.200 € · Sale de la hoja Personal, por fórmula · El P&L decía «ver hoja Personal» y usaba otra cifra; ahora lee la hoja",
+    "RECALIBRADO · Plantilla · 7 personas / 209.171 € · 7 puestos, tres a tiempo parcial (uno de ellos, suplencias) / 151.939 € · Dimensionada por horas de servicio para 56 plazas; con la plantilla anterior el coste laboral era el 66,3 % de las ventas",
+    "RECALIBRADO · Cubiertos/día del año 1 · 55 · 80 · 1,43 rotaciones sobre las 56 plazas del propio pack; el documento pide un MÍNIMO de 1,8 en temporada alta, así que el caso base se proyecta por debajo a propósito",
+    "RECALIBRADO · Ticket medio · 18,50 € (sin declarar IVA) · 18,20 € SIN IVA · El ticket de la versión 1.1 no decía si llevaba IVA; ahora se declara sin IVA y equivale a 20,02 € de PVP al 10 % en sala, dentro del rango 15-22 € del propio libro",
+    "RECALIBRADO · Alquiler · 3.000 €/mes · 3.000 €/mes (sin cambio) · Con el ticket recalibrado son el 8,0 % de las ventas, dentro del techo de 8-10 % del propio libro",
+    "RECALIBRADO · Suministros · 1.200 €/mes · 1.800 €/mes · Una cocina con horno, cámaras y campana no consume el 3,2 % de las ventas",
+    "RECALIBRADO · Fondo de maniobra · 30.000 € etiquetados «3 meses» · 3 × costes fijos de caja mensuales, por fórmula · Los 30.000 € cubrían 1,8 meses, no 3",
+    "RECALIBRADO · Amortización · 5.000 €/año (base implícita 50.000 €) · Base amortizable real / vida útil, por fórmula · El inmovilizado del propio libro suma bastante más, y el fondo de maniobra no se amortiza",
+    "RECALIBRADO · Cuota del préstamo en el P&L · 7.200 €/año de cuota completa · sólo los intereses; el principal va a tesorería · Meter la cuota entera antes del resultado convierte el P&L en un flujo de caja",
+    "RECALIBRADO · Impuesto de Sociedades · 25 % en los años 2 y 3, sin compensar la BIN · 15 % los dos primeros ejercicios con base positiva y compensación de bases negativas · Artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades",
+    "RECALIBRADO · Comisiones de delivery · 5 % de TODA la facturación, sin interruptor · % del canal × comisión de la plataforma, a 0 por defecto · Si no repartes, no arrastras un coste inventado",
+    "RECALIBRADO · Coste de la bebida · food cost del 30 % sobre el total MÁS un 22 % sobre la bebida · cada familia paga su propio coste · 33.119,63 € cobrados dos veces en el año 1",
+    "§2 aplicado sobre el molde A-alfa de plan-financiero-bar-restaurante.xlsx",
+    "2. P&L 3 Años: 6 reglas de semáforo con ISNUMBER (§1.6)",
+    "4. Escenarios: 4 reglas de semáforo con ISNUMBER (§1.6)",
+    "6. Tesorería 12 meses: 6 reglas de semáforo con ISNUMBER (§1.6)",
+    "0. Supuestos: DV en 11 importes, 23 porcentajes, 3 días, 13 recuentos y 0 magnitudes con decimales",
+    "1. Inversión Inicial: 72 celdas de texto con formato numérico → General (§1.4)",
+    "1. Inversión Inicial: DV en 31 importes, 0 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "1. Inversión Inicial: 2 altos ajustados (§1.8)",
+    "2. P&L 3 Años: 18 celdas de texto con formato numérico → General (§1.4)",
+    "2. P&L 3 Años: DV en 11 importes, 5 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "2. P&L 3 Años: 1 altos ajustados (§1.8)",
+    "3. Punto Equilibrio: 1 celdas de texto con formato numérico → General (§1.4)",
+    "3. Punto Equilibrio: DV en 1 importes, 0 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "3. Punto Equilibrio: 2 altos ajustados (§1.8)",
+    "4. Escenarios: DV en 2 importes, 0 porcentajes, 2 días, 2 recuentos y 0 magnitudes con decimales",
+    "4. Escenarios: 1 altos ajustados (§1.8)",
+    "5. Personal: 13 celdas de texto con formato numérico → General (§1.4)",
+    "5. Personal: DV en 19 importes, 7 porcentajes, 0 días, 0 recuentos y 1 magnitudes con decimales",
+    "5. Personal: 2 altos ajustados (§1.8)",
+    "Instrucciones: 25 altos ajustados (§1.8)",
+    "6. Tesorería 12 meses: 2 celdas de texto con formato numérico → General (§1.4)",
+    "6. Tesorería 12 meses: DV en 0 importes, 12 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "6. Tesorería 12 meses: 2 altos ajustados (§1.8)",
+    "7. Financiación: 6 celdas de texto con formato numérico → General (§1.4)",
+    "7. Financiación: DV en 5 importes, 1 porcentajes, 0 días, 0 recuentos y 0 magnitudes con decimales",
+    "7. Financiación: 2 altos ajustados (§1.8)",
+    "0. Supuestos: protegida sin contraseña (50 celdas editables)",
+    "1. Inversión Inicial: protegida sin contraseña (62 celdas editables)",
+    "2. P&L 3 Años: protegida sin contraseña (16 celdas editables)",
+    "3. Punto Equilibrio: protegida sin contraseña (1 celdas editables)",
+    "4. Escenarios: protegida sin contraseña (6 celdas editables)",
+    "5. Personal: protegida sin contraseña (27 celdas editables)",
+    "Instrucciones: protegida sin contraseña (0 celdas editables)",
+    "6. Tesorería 12 meses: protegida sin contraseña (12 celdas editables)",
+    "7. Financiación: protegida sin contraseña (6 celdas editables)"
+   ],
+   "formulas_nuevas": 772,
+   "formatos_corregidos": [
+    [
+     "5. Personal",
+     "B15",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "5. Personal",
+     "B16",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "5. Personal",
+     "B17",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "5. Personal",
+     "B18",
+     "recuento sin €",
+     "#,##0 €",
+     "#,##0"
+    ],
+    [
+     "Instrucciones",
+     "B34",
+     "texto→número",
+     "115.200 €",
+     115200.0
+    ],
+    [
+     "Instrucciones",
+     "B56",
+     "texto→número",
+     "25 %",
+     0.25
+    ],
+    [
+     "Instrucciones",
+     "B57",
+     "texto→número",
+     "50 %",
+     0.5
+    ]
+   ],
+   "ortografia_corregida": [
+    [
+     "0. Supuestos",
+     "C26",
+     "Luz, agua y gas de una cocina con horno, cámaras y campana: ",
+     "Luz, agua y gas de una cocina con horno, cámaras y campaña: "
+    ],
+    [
+     "2. P&L 3 Años",
+     "F56",
+     "Techo MÁS ESTRICTO de los que publica este producto: «el lab",
+     "Techo MÁS ESTRICTO de los que pública este producto: «el lab"
+    ],
+    [
+     "3. Punto Equilibrio",
+     "E13",
+     "El principal NO es gasto del P&L, pero sale de la caja. Sin ",
+     "El principal NO es gasto del P&L, pero sale de la caja. Sin "
+    ],
+    [
+     "Instrucciones",
+     "D39",
+     "Una cocina con horno, cámaras y campana no consume el 3,2 % ",
+     "Una cocina con horno, cámaras y campaña no consume el 3,2 % "
+    ],
+    [
+     "Instrucciones",
+     "D52",
+     "Se aplica el más estricto de los techos que publica este pro",
+     "Se aplica el más estricto de los techos que pública este pro"
+    ]
+   ],
+   "totales_descuadrados": [],
+   "cross_sell_sin_precio": [],
+   "hojas_sin_inputs_sin_proteger": [],
+   "contadores": {
+    "fichero": "plan-financiero-bar-restaurante.xlsx",
+    "tipo": "plan_financiero",
+    "molde": "A-alfa",
+    "hojas": 9,
+    "formulas": 772,
+    "verdes": 180,
+    "cf": 70,
+    "dv": 24,
+    "protegidas": 9,
+    "divisiones_sin_iferror": 0,
+    "ceros_constantes": 5,
+    "vacias": 0,
+    "a4": 9,
+    "items_checklist": 0,
+    "formulas_antes": 766,
+    "formulas_perdidas": []
+   }
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "checklist-apertura-bar-restaurante.xlsx",
+    "salida": "checklist-apertura-bar-restaurante.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "plan-financiero-bar-restaurante.xlsx",
+    "salida": "plan-financiero-bar-restaurante.xlsx: formulas=772 cache_inyectado=713 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 715,
+   "vacias_por_diseno": 59,
+   "vacias_comprobadas_con_pycel": 59,
+   "vacias_no_verificadas": [],
+   "fallos": []
+  },
+  "blancos_contaminados": [],
+  "spec9": {
+   "no_latinos": [],
+   "ortografia": [],
+   "formatos": [],
+   "referencias": [],
+   "sin_formulas": [],
+   "sin_bio": [],
+   "sin_version": [],
+   "hojas_sin_a4": [],
+   "checklists": [
+    {
+     "fichero": "checklist-apertura-bar-restaurante.xlsx",
+     "molde": "C1",
+     "items_con_desplegable": 64,
+     "rangos_dv": 64
+    }
+   ],
+   "sin_instrucciones": [],
+   "creator_mal": [],
+   "nombres_hoja": [],
+   "cf_desanclado": []
+  },
+  "docx_solo_lectura": [
+   {
+    "fichero": "plan-de-negocio-bar-restaurante.docx",
+    "a4": false,
+    "ancho_in": 8.5,
+    "alto_in": 11.0,
+    "author": "python-docx",
+    "title": "",
+    "headings": 10,
+    "tablas": 0,
+    "palabras": 6971
+   }
+  ],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "3 ficheros censados (2 xlsx, 1 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/plan-negocio-bar-restaurante)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ],
+   "stderr": []
+  }
+ },
+ "demostraciones": {
+  "anualidad_sin_PMT": {
+   "cuota_algebraica": 1887.12,
+   "esperado": 1887.12,
+   "ok": true,
+   "motivo": "pycel 1.0b30 NO implementa PMT (§ cabecera SPEC)"
+  },
+  "tir_van_payback_sin_IRR": {
+   "flujos": [
+    -150000.0,
+    30000.0,
+    45000.0,
+    60000.0,
+    70000.0
+   ],
+   "tir_pct": 11.9592,
+   "esperado_pct": 11.9592,
+   "van_8pct": 15440.05,
+   "payback_anios": 3.21,
+   "ok": true,
+   "motivo": "pycel NO implementa IRR: se cachea por Newton"
+  },
+  "countif_sin_COUNTA": {
+   "countif_no_vacio": 3,
+   "countif_texto": 3,
+   "ok": true,
+   "motivo": "sustituto obligatorio de COUNTA (§ cabecera SPEC)"
+  },
+  "iferror_vivo": {
+   "fichero": "plan-financiero-bar-restaurante.xlsx",
+   "hoja": "0. Supuestos",
+   "celda": "C9",
+   "formula": "=IFERROR(\"Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPROD",
+   "valor_con_divisor_vacio": "'Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: 10 %. En sala todo va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992, alcohol incluido); el alcohol que sale por delivery y el pan común, si los tienes, mueven la media. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.'",
+   "ok": true,
+   "motivo": "§1.5: toda división lleva IFERROR(…,\"\")"
+  },
+  "deteccion_de_moldes": {
+   "xlsx_clasificados": 30,
+   "por_molde": {
+    "C1": 1,
+    "A-alfa": 1,
+    "C2": 5,
+    "A-beta": 4,
+    "calc-beta": 2,
+    "B-gamma": 2,
+    "P1": 2,
+    "C3": 1,
+    "calc-gamma": 3,
+    "C4": 3,
+    "B-delta": 3,
+    "P2": 3
+   },
+   "detalle": [
+    {
+     "producto": "plan-negocio-bar-restaurante",
+     "fichero": "checklist-apertura-bar-restaurante.xlsx",
+     "tipo": "checklist",
+     "molde": "C1"
+    },
+    {
+     "producto": "plan-negocio-bar-restaurante",
+     "fichero": "plan-financiero-bar-restaurante.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-alfa"
+    },
+    {
+     "producto": "plan-negocio-tapas-bar",
+     "fichero": "checklist-apertura-tapas-bar.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-tapas-bar",
+     "fichero": "plan-financiero-tapas-bar.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-cafeteria",
+     "fichero": "checklist-apertura-cafeteria-brunch.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-cafeteria",
+     "fichero": "plan-financiero-cafeteria-brunch.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-panaderia",
+     "fichero": "checklist-apertura-panaderia.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-panaderia",
+     "fichero": "plan-financiero-panaderia.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-food-truck",
+     "fichero": "checklist-apertura-food-truck.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-food-truck",
+     "fichero": "plan-financiero-food-truck.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "A-beta"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "calculadora-pricing-eventos.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-beta"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C2"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-gamma"
+    },
+    {
+     "producto": "plan-negocio-cocteleria-eventos",
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P1"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "calculadora-pricing-eventos-parrillero.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-beta"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "checklist-apertura-parrillero-asador-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C3"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "plan-financiero-parrillero-asador-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-gamma"
+    },
+    {
+     "producto": "plan-negocio-parrillero-asador-eventos",
+     "fichero": "plantilla-proveedores-parrillero-asador-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P1"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "calculadora-pricing-eventos-paellero.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-gamma"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "checklist-apertura-paellero-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C4"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "plan-financiero-paellero-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-delta"
+    },
+    {
+     "producto": "plan-negocio-paellero-eventos",
+     "fichero": "plantilla-proveedores-paellero-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P2"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "calculadora-pricing-catering-tematico-eventos.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-gamma"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+     "tipo": "checklist",
+     "molde": "C4"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "plan-financiero-catering-tematico-eventos.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-delta"
+    },
+    {
+     "producto": "plan-catering-tematico-eventos",
+     "fichero": "plantilla-proveedores-catering-tematico-eventos.xlsx",
+     "tipo": "proveedores",
+     "molde": "P2"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "calculadora-pricing-chef-privado-showcooking.xlsx",
+     "tipo": "calculadora",
+     "molde": "calc-gamma"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+     "tipo": "checklist",
+     "molde": "C4"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "plan-financiero-chef-privado-showcooking.xlsx",
+     "tipo": "plan_financiero",
+     "molde": "B-delta"
+    },
+    {
+     "producto": "plan-chef-privado-showcooking-eventos",
+     "fichero": "plantilla-proveedores-chef-privado-showcooking.xlsx",
+     "tipo": "proveedores",
+     "molde": "P2"
+    }
+   ],
+   "fallos": [],
+   "nombres_de_hoja_demasiado_largos": [
+    {
+     "fichero": "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+     "hoja": "F3 - Equipamiento y proveedores carne",
+     "celda": "(hoja)",
+     "longitud": 37,
+     "limite": 31
+    },
+    {
+     "fichero": "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+     "hoja": "F4 - Marca, web y materiales venta",
+     "celda": "(hoja)",
+     "longitud": 34,
+     "limite": 31
+    },
+    {
+     "fichero": "plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx",
+     "hoja": "F6 - Operativa primer evento y postventa",
+     "celda": "(hoja)",
+     "longitud": 40,
+     "limite": 31
+    }
+   ],
+   "ok": true
+  },
+  "proteccion": {
+   "total_hojas": 11,
+   "protegidas": 11,
+   "hojas_sin_celdas_verdes": [
+    "checklist-apertura-bar-restaurante.xlsx:Instrucciones",
+    "plan-financiero-bar-restaurante.xlsx:Instrucciones"
+   ],
+   "sin_proteger_por_falta_de_inputs": [],
+   "fallos": []
+  },
+  "bio_y_version": {
+   "con_bio_y_version": 2,
+   "total": 2,
+   "fallos": []
+  },
+  "demostraciones_2_11": {
+   "caso_base": {
+    "cubiertos": 80,
+    "delivery": 0,
+    "plazo": 7,
+    "carencia": 1,
+    "ingresos": 451360.0,
+    "rai": 57201.4,
+    "neto": 48621.19,
+    "personal_pyg": 151939.2,
+    "personal_hoja": 151939.2,
+    "r_personal": 0.34,
+    "u_personal": 0.34,
+    "deliv_pyg": 0.0,
+    "is1": 8580.21,
+    "is2": 12317.93,
+    "is3": 24406.64,
+    "tipo3": 0.25,
+    "rai2": 82119.56,
+    "bin_ini2": 0.0,
+    "be_dia": 65.2,
+    "esc_rai": 57201.4,
+    "esc_pesimista": -62468.1,
+    "esc_optimista": 133263.8,
+    "tipo_sup": 0.06,
+    "pagas_sup": 14,
+    "vida_maq_sup": 10,
+    "cuadro_cierre": 0.0,
+    "esc_neto": 48621.19,
+    "saldo_min": 60973.53,
+    "fondo": 60804.8,
+    "cierre": 0.0,
+    "cv_comida": 88015.2,
+    "r_cogs": 0.27,
+    "r_alquiler": 0.08,
+    "amort": 8761.0,
+    "ingresos2": 496496.0,
+    "tcf2": 257980.2,
+    "cuota": 26030.42,
+    "int1": 7680.0,
+    "cap2": 18350.42,
+    "dif": 1282.1,
+    "dif_pct": 0.01,
+    "holgura_max": 0.05,
+    "fondo_inv": 60804.8,
+    "caja": 201717.9,
+    "iva_inv": 22703.1,
+    "ticket_sup": 18.2,
+    "dias_sup": 310,
+    "coste_comida_sup": 0.3,
+    "alquiler_sup": 3000,
+    "ss_sup": 0.33,
+    "prestamo_sup": 128000,
+    "plazo_sup": 7,
+    "meses_fondo_sup": 3,
+    "vida_obra_sup": 10,
+    "crec2_sup": 0.1,
+    "ipc_sup": 0,
+    "delivery_sup": 0,
+    "cap_amortiza": 18350.42
+   },
+   "1_cubiertos_mueven_el_libro": {
+    "celda": "'0. Supuestos'!B4",
+    "valor_nuevo": 112.0,
+    "movimiento": {
+     "ingresos": [
+      451360.0,
+      631904.0
+     ],
+     "rai": [
+      57201.4,
+      180874.04
+     ],
+     "esc_rai": [
+      57201.4,
+      180874.04
+     ]
+    },
+    "ok": true
+   },
+   "1bis_break_even_invariante_al_volumen": {
+    "celda": "'3. Punto Equilibrio'!B16",
+    "caso_base": 65.19927447170208,
+    "con_mas_volumen": 65.19927447170208,
+    "con_menos_volumen": 65.19927447170208,
+    "ok": true
+   },
+   "2bis_escenarios_independientes": {
+    "input_movido": "'0. Supuestos'!B4",
+    "pesimista": [
+     -62468.09999999998,
+     -62468.09999999998
+    ],
+    "optimista": [
+     133263.8,
+     133263.8
+    ],
+    "ok": true
+   },
+   "2_realista_igual_al_pyg": {
+    "escenarios_realista": 57201.399999999965,
+    "pyg_ano_1": 57201.399999999965,
+    "diferencia": 0.0,
+    "ok": true
+   },
+   "3_personal_del_pyg_es_el_de_su_hoja": {
+    "pyg": 151939.2,
+    "hoja_personal": 151939.2,
+    "diferencia": 0.0,
+    "ratio": 0.3366253101736973,
+    "umbral": 0.34,
+    "ok": true
+   },
+   "4_delivery_a_cero": {
+    "linea_delivery": 0.0,
+    "ok": true
+   },
+   "5_IS_con_BIN_y_tipo_de_nueva_creacion": {
+    "cubiertos_del_ensayo": 62,
+    "ensayos": [
+     {
+      "cubiertos": 78,
+      "rai_ano_1": 49471.860000000044,
+      "rai_ano_2": 73617.06600000005,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 77,
+      "rai_ano_1": 45607.08999999997,
+      "rai_ano_2": 69365.81899999996,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 75,
+      "rai_ano_1": 37877.54999999999,
+      "rai_ano_2": 60863.32500000001,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 74,
+      "rai_ano_1": 34012.77999999997,
+      "rai_ano_2": 56612.07799999998,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 72,
+      "rai_ano_1": 26283.239999999932,
+      "rai_ano_2": 48109.58400000003,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 70,
+      "rai_ano_1": 18553.699999999953,
+      "rai_ano_2": 39607.08999999997,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 69,
+      "rai_ano_1": 14688.929999999993,
+      "rai_ano_2": 35355.84300000005,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 67,
+      "rai_ano_1": 6959.389999999956,
+      "rai_ano_2": 26853.348999999987,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 66,
+      "rai_ano_1": 3094.6199999999953,
+      "rai_ano_2": 22602.102000000014,
+      "bin_ano_2": 0,
+      "ok": false
+     },
+     {
+      "cubiertos": 64,
+      "rai_ano_1": -4634.919999999984,
+      "rai_ano_2": 14099.60799999995,
+      "bin_ano_2": 4634.919999999984,
+      "ok": false
+     },
+     {
+      "cubiertos": 62,
+      "rai_ano_1": -12364.46000000005,
+      "rai_ano_2": 5597.114000000001,
+      "bin_ano_2": 12364.46000000005,
+      "ok": true
+     }
+    ],
+    "rai_ano_1": -12364.46000000005,
+    "is_ano_1": 0,
+    "rai_ano_2": 5597.114000000001,
+    "bin_pendiente_ano_2": 12364.46000000005,
+    "is_ano_2": 0,
+    "is_ano_3": 1461.8147740030734,
+    "tipo_ano_3": 0.15,
+    "ok": true
+   },
+   "6_tesoreria_sin_saldo_negativo": {
+    "saldo_minimo": 60973.52999102234,
+    "fondo": 60804.80000000001,
+    "ok": true
+   },
+   "7_carencia_igual_al_plazo": {
+    "capital_al_vencimiento": 0.0,
+    "cuotas_anos_4_y_5": [
+     [
+      4,
+      "C",
+      ""
+     ],
+     [
+      4,
+      "D",
+      ""
+     ],
+     [
+      4,
+      "E",
+      ""
+     ],
+     [
+      5,
+      "C",
+      ""
+     ],
+     [
+      5,
+      "D",
+      ""
+     ],
+     [
+      5,
+      "E",
+      ""
+     ]
+    ],
+    "ok": true
+   },
+   "8_libro_en_blanco_sin_falsos_verdes": {
+    "valores": {
+     "ingresos": "",
+     "rai": "",
+     "neto": "",
+     "r_personal": "",
+     "be_dia": "",
+     "esc_rai": "",
+     "saldo_min": "",
+     "cierre": ""
+    },
+    "ok": true
+   },
+   "9_direccion_de_cada_calculo": {
+    "comprobaciones": [
+     {
+      "input": "cubiertos",
+      "celda_input": "'0. Supuestos'!B4",
+      "valor_nuevo": 96.0,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'2. P&L 3 Años'!B10",
+      "sentido_esperado": "sube",
+      "antes": 451360.0,
+      "despues": 541632.0,
+      "delta": 90272.0,
+      "ok": true
+     },
+     {
+      "input": "cubiertos",
+      "celda_input": "'0. Supuestos'!B4",
+      "valor_nuevo": 96.0,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "sube",
+      "antes": 57201.399999999965,
+      "despues": 119037.71999999997,
+      "delta": 61836.32,
+      "ok": true
+     },
+     {
+      "input": "cubiertos",
+      "celda_input": "'0. Supuestos'!B4",
+      "valor_nuevo": 96.0,
+      "objetivo": "r_personal",
+      "celda_objetivo": "'2. P&L 3 Años'!B56",
+      "sentido_esperado": "baja",
+      "antes": 0.3366253101736973,
+      "despues": 0.28052109181141444,
+      "delta": -0.0561,
+      "ok": true
+     },
+     {
+      "input": "ticket_sup",
+      "celda_input": "'0. Supuestos'!B5",
+      "valor_nuevo": 21.84,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'2. P&L 3 Años'!B10",
+      "sentido_esperado": "sube",
+      "antes": 451360.0,
+      "despues": 541632.0,
+      "delta": 90272.0,
+      "ok": true
+     },
+     {
+      "input": "ticket_sup",
+      "celda_input": "'0. Supuestos'!B5",
+      "valor_nuevo": 21.84,
+      "objetivo": "be_dia",
+      "celda_objetivo": "'3. Punto Equilibrio'!B16",
+      "sentido_esperado": "baja",
+      "antes": 65.19927447170208,
+      "despues": 54.33272872641839,
+      "delta": -10.8665,
+      "ok": true
+     },
+     {
+      "input": "ticket_sup",
+      "celda_input": "'0. Supuestos'!B5",
+      "valor_nuevo": 21.84,
+      "objetivo": "r_alquiler",
+      "celda_objetivo": "'2. P&L 3 Años'!B57",
+      "sentido_esperado": "baja",
+      "antes": 0.07975895072669266,
+      "despues": 0.06646579227224389,
+      "delta": -0.0133,
+      "ok": true
+     },
+     {
+      "input": "dias_sup",
+      "celda_input": "'0. Supuestos'!B6",
+      "valor_nuevo": 280,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'2. P&L 3 Años'!B10",
+      "sentido_esperado": "baja",
+      "antes": 451360.0,
+      "despues": 407680,
+      "delta": -43680.0,
+      "ok": true
+     },
+     {
+      "input": "dias_sup",
+      "celda_input": "'0. Supuestos'!B6",
+      "valor_nuevo": 280,
+      "objetivo": "be_dia",
+      "celda_objetivo": "'3. Punto Equilibrio'!B16",
+      "sentido_esperado": "sube",
+      "antes": 65.19927447170208,
+      "despues": 72.1849110222416,
+      "delta": 6.9856,
+      "ok": true
+     },
+     {
+      "input": "coste_comida_sup",
+      "celda_input": "'0. Supuestos'!B13",
+      "valor_nuevo": 0.35,
+      "objetivo": "cv_comida",
+      "celda_objetivo": "'2. P&L 3 Años'!B14",
+      "sentido_esperado": "sube",
+      "antes": 88015.2,
+      "despues": 102684.4,
+      "delta": 14669.2,
+      "ok": true
+     },
+     {
+      "input": "coste_comida_sup",
+      "celda_input": "'0. Supuestos'!B13",
+      "valor_nuevo": 0.35,
+      "objetivo": "r_cogs",
+      "celda_objetivo": "'2. P&L 3 Años'!B55",
+      "sentido_esperado": "sube",
+      "antes": 0.272,
+      "despues": 0.3045,
+      "delta": 0.0325,
+      "ok": true
+     },
+     {
+      "input": "coste_comida_sup",
+      "celda_input": "'0. Supuestos'!B13",
+      "valor_nuevo": 0.35,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "baja",
+      "antes": 57201.399999999965,
+      "despues": 42532.20000000001,
+      "delta": -14669.2,
+      "ok": true
+     },
+     {
+      "input": "delivery_sup",
+      "celda_input": "'0. Supuestos'!B16",
+      "valor_nuevo": 0.25,
+      "objetivo": "deliv_pyg",
+      "celda_objetivo": "'2. P&L 3 Años'!B17",
+      "sentido_esperado": "sube",
+      "antes": 0.0,
+      "despues": 31595.200000000004,
+      "delta": 31595.2,
+      "ok": true
+     },
+     {
+      "input": "delivery_sup",
+      "celda_input": "'0. Supuestos'!B16",
+      "valor_nuevo": 0.25,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "baja",
+      "antes": 57201.399999999965,
+      "despues": 25606.20000000001,
+      "delta": -31595.2,
+      "ok": true
+     },
+     {
+      "input": "alquiler_sup",
+      "celda_input": "'0. Supuestos'!B24",
+      "valor_nuevo": 3500,
+      "objetivo": "r_alquiler",
+      "celda_objetivo": "'2. P&L 3 Años'!B57",
+      "sentido_esperado": "sube",
+      "antes": 0.07975895072669266,
+      "despues": 0.09305210918114144,
+      "delta": 0.0133,
+      "ok": true
+     },
+     {
+      "input": "alquiler_sup",
+      "celda_input": "'0. Supuestos'!B24",
+      "valor_nuevo": 3500,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "baja",
+      "antes": 57201.399999999965,
+      "despues": 51201.399999999965,
+      "delta": -6000.0,
+      "ok": true
+     },
+     {
+      "input": "alquiler_sup",
+      "celda_input": "'0. Supuestos'!B24",
+      "valor_nuevo": 3500,
+      "objetivo": "fondo_inv",
+      "celda_objetivo": "'1. Inversión Inicial'!B47",
+      "sentido_esperado": "sube",
+      "antes": 60804.80000000001,
+      "despues": 62304.80000000001,
+      "delta": 1500.0,
+      "ok": true
+     },
+     {
+      "input": "ss_sup",
+      "celda_input": "'0. Supuestos'!B20",
+      "valor_nuevo": 0.38,
+      "objetivo": "personal_pyg",
+      "celda_objetivo": "'2. P&L 3 Años'!B24",
+      "sentido_esperado": "sube",
+      "antes": 151939.2,
+      "despues": 157651.2,
+      "delta": 5712.0,
+      "ok": true
+     },
+     {
+      "input": "ss_sup",
+      "celda_input": "'0. Supuestos'!B20",
+      "valor_nuevo": 0.38,
+      "objetivo": "personal_hoja",
+      "celda_objetivo": "'5. Personal'!G13",
+      "sentido_esperado": "sube",
+      "antes": 151939.2,
+      "despues": 157651.2,
+      "delta": 5712.0,
+      "ok": true
+     },
+     {
+      "input": "ss_sup",
+      "celda_input": "'0. Supuestos'!B20",
+      "valor_nuevo": 0.38,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "baja",
+      "antes": 57201.399999999965,
+      "despues": 51489.399999999965,
+      "delta": -5712.0,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 168000,
+      "objetivo": "int1",
+      "celda_objetivo": "'7. Financiación'!B44",
+      "sentido_esperado": "sube",
+      "antes": 7680.0,
+      "despues": 10080.0,
+      "delta": 2400.0,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 168000,
+      "objetivo": "cuota",
+      "celda_objetivo": "'7. Financiación'!B24",
+      "sentido_esperado": "sube",
+      "antes": 26030.416444786602,
+      "despues": 34164.921583782416,
+      "delta": 8134.5051,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 168000,
+      "objetivo": "dif",
+      "celda_objetivo": "'7. Financiación'!B15",
+      "sentido_esperado": "sube",
+      "antes": 1282.0999999999767,
+      "despues": 40682.09999999998,
+      "delta": 39400.0,
+      "ok": true
+     },
+     {
+      "input": "prestamo_sup",
+      "celda_input": "'0. Supuestos'!B31",
+      "valor_nuevo": 168000,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "baja",
+      "antes": 57201.399999999965,
+      "despues": 54801.399999999965,
+      "delta": -2400.0,
+      "ok": true
+     },
+     {
+      "input": "plazo_sup",
+      "celda_input": "'0. Supuestos'!B33",
+      "valor_nuevo": 10,
+      "objetivo": "cuota",
+      "celda_objetivo": "'7. Financiación'!B24",
+      "sentido_esperado": "baja",
+      "antes": 26030.416444786602,
+      "despues": 18818.84608039214,
+      "delta": -7211.5704,
+      "ok": true
+     },
+     {
+      "input": "plazo_sup",
+      "celda_input": "'0. Supuestos'!B33",
+      "valor_nuevo": 10,
+      "objetivo": "cap_amortiza",
+      "celda_objetivo": "'7. Financiación'!B47",
+      "sentido_esperado": "baja",
+      "antes": 18350.416444786602,
+      "despues": 11138.84608039214,
+      "delta": -7211.5704,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "fondo_inv",
+      "celda_objetivo": "'1. Inversión Inicial'!B47",
+      "sentido_esperado": "sube",
+      "antes": 60804.80000000001,
+      "despues": 121609.60000000002,
+      "delta": 60804.8,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "caja",
+      "celda_objetivo": "'1. Inversión Inicial'!B51",
+      "sentido_esperado": "sube",
+      "antes": 201717.90000000002,
+      "despues": 262522.7,
+      "delta": 60804.8,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "saldo_min",
+      "celda_objetivo": "'6. Tesorería 12 meses'!B23",
+      "sentido_esperado": "sube",
+      "antes": 60973.52999102234,
+      "despues": 121778.32999102236,
+      "delta": 60804.8,
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda_input": "'0. Supuestos'!B35",
+      "valor_nuevo": 6,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "igual",
+      "antes": 57201.399999999965,
+      "despues": 57201.399999999965,
+      "delta": 0.0,
+      "ok": true
+     },
+     {
+      "input": "vida_obra_sup",
+      "celda_input": "'0. Supuestos'!B44",
+      "valor_nuevo": 20,
+      "objetivo": "amort",
+      "celda_objetivo": "'2. P&L 3 Años'!B38",
+      "sentido_esperado": "baja",
+      "antes": 8761.0,
+      "despues": 6403.5,
+      "delta": -2357.5,
+      "ok": true
+     },
+     {
+      "input": "vida_obra_sup",
+      "celda_input": "'0. Supuestos'!B44",
+      "valor_nuevo": 20,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "sube",
+      "antes": 57201.399999999965,
+      "despues": 59558.899999999965,
+      "delta": 2357.5,
+      "ok": true
+     },
+     {
+      "input": "crec2_sup",
+      "celda_input": "'0. Supuestos'!B7",
+      "valor_nuevo": 0.2,
+      "objetivo": "ingresos2",
+      "celda_objetivo": "'2. P&L 3 Años'!C10",
+      "sentido_esperado": "sube",
+      "antes": 496496.0,
+      "despues": 541632.0,
+      "delta": 45136.0,
+      "ok": true
+     },
+     {
+      "input": "crec2_sup",
+      "celda_input": "'0. Supuestos'!B7",
+      "valor_nuevo": 0.2,
+      "objetivo": "ingresos",
+      "celda_objetivo": "'2. P&L 3 Años'!B10",
+      "sentido_esperado": "igual",
+      "antes": 451360.0,
+      "despues": 451360,
+      "delta": 0.0,
+      "ok": true
+     },
+     {
+      "input": "ipc_sup",
+      "celda_input": "'0. Supuestos'!B48",
+      "valor_nuevo": 0.05,
+      "objetivo": "tcf2",
+      "celda_objetivo": "'2. P&L 3 Años'!C40",
+      "sentido_esperado": "sube",
+      "antes": 257980.2,
+      "despues": 269757.16000000003,
+      "delta": 11776.96,
+      "ok": true
+     },
+     {
+      "input": "ipc_sup",
+      "celda_input": "'0. Supuestos'!B48",
+      "valor_nuevo": 0.05,
+      "objetivo": "rai",
+      "celda_objetivo": "'2. P&L 3 Años'!B43",
+      "sentido_esperado": "igual",
+      "antes": 57201.399999999965,
+      "despues": 57201.399999999965,
+      "delta": 0.0,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   "10_tipo_al_cero_por_ciento": {
+    "cuota": 21333.333333333332,
+    "capital_al_vencimiento": 0.0,
+    "intereses_ano_1": 0,
+    "ok": true
+   },
+   "11_plazo_maximo_cierra_el_cuadro": {
+    "plazo": 15,
+    "capital_al_vencimiento": 0.0,
+    "ok": true
+   },
+   "12_robustez_de_los_divisores": {
+    "comprobaciones": [
+     {
+      "input": "vida_obra_sup",
+      "celda": "'0. Supuestos'!B44",
+      "objetivo": "rai",
+      "regla": "no_mejora",
+      "antes": 57201.399999999965,
+      "con_cero": 14766.399999999965,
+      "ok": true
+     },
+     {
+      "input": "vida_maq_sup",
+      "celda": "'0. Supuestos'!B45",
+      "objetivo": "rai",
+      "regla": "no_mejora",
+      "antes": 57201.399999999965,
+      "con_cero": 20787.399999999965,
+      "ok": true
+     },
+     {
+      "input": "pagas_sup",
+      "celda": "'0. Supuestos'!B21",
+      "objetivo": "personal_pyg",
+      "regla": "no_cero",
+      "antes": 151939.2,
+      "con_cero": 130233.6,
+      "ok": true
+     },
+     {
+      "input": "dias_sup",
+      "celda": "'0. Supuestos'!B6",
+      "objetivo": "ingresos",
+      "regla": "vacio",
+      "antes": 451360.0,
+      "con_cero": "",
+      "ok": true
+     },
+     {
+      "input": "cubiertos",
+      "celda": "'0. Supuestos'!B4",
+      "objetivo": "ingresos",
+      "regla": "vacio",
+      "antes": 451360.0,
+      "con_cero": "",
+      "ok": true
+     },
+     {
+      "input": "meses_fondo_sup",
+      "celda": "'0. Supuestos'!B35",
+      "objetivo": "fondo",
+      "regla": "vacio",
+      "antes": 60804.80000000001,
+      "con_cero": "",
+      "ok": true
+     },
+     {
+      "input": "plazo_sup",
+      "celda": "'0. Supuestos'!B33",
+      "objetivo": "cuadro_cierre",
+      "regla": "rastro",
+      "antes": 0.0,
+      "con_cero": 128000.0,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   "12bis_origen_cubre_los_usos": {
+    "diferencia": 1282.0999999999767,
+    "diferencia_pct": 0.006355905945877766,
+    "tope": 0.05,
+    "ok": true
+   },
+   "13_libro_en_blanco_sin_ceros": {
+    "celdas_con_cero": [],
+    "total": 0,
+    "ok": true
+   }
+  },
+  "checklist_reemplazos": {
+   "fichero": "checklist-apertura-bar-restaurante.xlsx",
+   "declarados": 15,
+   "no_entregados": [],
+   "patrones_muertos": [
+    {
+     "patron": "^Capital social min 1 EUR",
+     "texto_que_falta": "Capital social mínimo 1 € (Ley 18/2022). No existe ningún depósito obligatorio de 3.000 € a cinco años"
+    },
+    {
+     "patron": "^Alta en el IAE",
+     "texto_que_falta": "Alta en el IAE: epígrafe 671.5 (restaurantes de un tenedor), 671.4 (dos tenedores) o 673.1 (servicios de bar especiales), según el peso de la barra y el nivel de servicio"
+    }
+   ]
+  },
+  "primer_ano_que_amortiza": {
+   "carencia": 1,
+   "ano": 2,
+   "celda": "'7. Financiación'!B47"
+  },
+  "mapa_de_celdas_para_T9": {
+   "fichero": "plan-financiero-bar-restaurante.xlsx",
+   "aviso": "Mapa REAL leído del fichero por rótulo. La tabla de §4.2 de la SPEC está obsoleta desde T1 (RC-32): el guion tiene que resolver por RÓTULO, no por coordenada, y abortar si el rótulo no aparece.",
+   "celdas": {
+    "inversion_total": "'1. Inversión Inicial'!B48",
+    "capex": "'1. Inversión Inicial'!B49",
+    "iva_de_la_inversion": "'1. Inversión Inicial'!B50",
+    "necesidad_de_caja": "'1. Inversión Inicial'!B51",
+    "fondo_de_maniobra": "'1. Inversión Inicial'!B47",
+    "amortizacion_anual": "'1. Inversión Inicial'!B55",
+    "facturacion_ano_1": "'2. P&L 3 Años'!B10",
+    "facturacion_ano_2": "'2. P&L 3 Años'!C10",
+    "facturacion_ano_3": "'2. P&L 3 Años'!D10",
+    "margen_bruto": "'2. P&L 3 Años'!B21",
+    "resultado_antes_de_impuestos": "'2. P&L 3 Años'!B43",
+    "resultado_neto_ano_1": "'2. P&L 3 Años'!B50",
+    "resultado_neto_ano_3": "'2. P&L 3 Años'!D50",
+    "margen_neto_pct": "'2. P&L 3 Años'!B58",
+    "ratio_personal_pct": "'2. P&L 3 Años'!B56",
+    "ratio_cogs_pct": "'2. P&L 3 Años'!B55",
+    "coste_de_personal": "'2. P&L 3 Años'!B24",
+    "plantilla_personas": "'5. Personal'!B13",
+    "plantilla_jornadas": "'5. Personal'!C13",
+    "coste_plantilla_ano": "'5. Personal'!G13",
+    "break_even_contable_dia": "'3. Punto Equilibrio'!B16",
+    "break_even_caja_dia": "'3. Punto Equilibrio'!B21",
+    "break_even_ingresos": "'3. Punto Equilibrio'!B22",
+    "saldo_minimo_de_caja": "'6. Tesorería 12 meses'!B23",
+    "mes_de_caja_minima": "'6. Tesorería 12 meses'!B24",
+    "payback_anos": null,
+    "cuota_anual_prestamo": "'7. Financiación'!B24",
+    "dscr_minimo": "'7. Financiación'!B54",
+    "origen_menos_usos": "'7. Financiación'!B15"
+   },
+   "sin_localizar": [
+    "payback_anos"
+   ],
+   "valores": {
+    "inversion_total": 179014.8,
+    "capex": 118210.0,
+    "iva_de_la_inversion": 22703.1,
+    "necesidad_de_caja": 201717.9,
+    "fondo_de_maniobra": 60804.8,
+    "amortizacion_anual": 8761.0,
+    "facturacion_ano_1": 451360.0,
+    "facturacion_ano_2": 496496.0,
+    "facturacion_ano_3": 526285.76,
+    "margen_bruto": 309181.6,
+    "resultado_antes_de_impuestos": 57201.4,
+    "resultado_neto_ano_1": 48621.19,
+    "resultado_neto_ano_3": 73219.9279,
+    "margen_neto_pct": 0.1077,
+    "ratio_personal_pct": 0.3366,
+    "ratio_cogs_pct": 0.272,
+    "coste_de_personal": 151939.2,
+    "plantilla_personas": 7.0,
+    "plantilla_jornadas": 5.4,
+    "coste_plantilla_ano": 151939.2,
+    "break_even_contable_dia": 65.1993,
+    "break_even_caja_dia": 62.9324,
+    "break_even_ingresos": 355064.5255,
+    "saldo_minimo_de_caja": 60973.53,
+    "mes_de_caja_minima": 2.0,
+    "cuota_anual_prestamo": 26030.4164,
+    "dscr_minimo": 3.3131,
+    "origen_menos_usos": 1282.1
+   }
+  },
+  "gate_A7_sumif_iva_inversion": {
+   "sumif": "E7:E45",
+   "subtotales_de_bloque": "B7:B45",
+   "ok": true
+  }
+ },
+ "fallos": [],
+ "pendientes": [
+  "grupo_b aún no existe",
+  "grupo_c aún no existe",
+  "RC-29: 3 nombres de hoja de más de 31 caracteres, que Excel corta y puede obligar a reparar el fichero (plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F3 - Equipamiento y proveedores carne (37), plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F4 - Marca, web y materiales venta (34), plan-negocio-parrillero-asador-eventos/checklist-apertura-parrillero-asador-eventos.xlsx!F6 - Operativa primer evento y postventa (40)); el renombrado va en el módulo de contenido de su producto",
+  "§9: 1 docx sin A4 o sin author=AI Chef Pro (los produce documentos.py, T9)"
+ ],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/57c14ae5-19b9-45c6-ac3a-4d3098326b56/scratchpad/apply-plan-negocio-bar-restaurante/respaldos/plan-negocio-bar-restaurante.bak-20260905-172814"
+}

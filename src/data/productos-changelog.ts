@@ -1061,9 +1061,9 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       {
         version: '2.2',
         date: '2026-09-05',
-        title: 'Plan financiero reconstruido: 9 hojas y 739 fórmulas, con tesorería, financiación y el oficio de la cafetería',
+        title: 'Plan financiero reconstruido: 9 hojas y 742 fórmulas, con tesorería, financiación y el oficio de la cafetería',
         changes: [
-          'El plan financiero pasa de 6 hojas de cifras tecleadas a 9 hojas enlazadas por fórmula (739 en total): cambias una celda verde de «0. Supuestos» y se recalcula el libro entero.',
+          'El plan financiero pasa de 6 hojas de cifras tecleadas a 9 hojas enlazadas por fórmula (742 en total): cambias una celda verde de «0. Supuestos» y se recalcula el libro entero.',
           'Hojas nuevas: «Tesorería 12 meses» (cobros, pagos, liquidación de IVA por trimestres y saldo mes a mes) y «Financiación» (origen de fondos, cuadro de amortización francés con carencia y cobertura de la deuda).',
           'El coste de personal sale ya de su propia hoja: 6 puestos —propietario-barista, baristas de mañana y tarde, ayudante de brunch, extra de fin de semana y suplencias—, 100.083 €/año, con dos avisos automáticos: ningún sueldo por debajo del SMI según su jornada, y la plantilla cubriendo el 100 % de las horas de servicio de barra, sala y terraza.',
           'Caso base recalibrado con datos defendibles: 100 clientes al día y 9,80 € de ticket sin IVA (10,78 € de PVP), con los cinco ratios del sector cumplidos los tres años; punto de equilibrio en 84 clientes/día (79 en el umbral de caja) e inversión inicial de 130.176 € (91.650 € de CAPEX más 38.526 € de fondo de maniobra).',
@@ -1113,7 +1113,7 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
         date: '2026-09-05',
         title: 'El plan financiero pasa a ser un modelo de verdad',
         changes: [
-          'Hoja nueva de Supuestos: cambias los clientes al día, el ticket o el coste de mercancía y se recalculan el P&L, el punto de equilibrio, los escenarios, la tesorería y la financiación (718 fórmulas enlazadas; antes el libro eran cifras tecleadas).',
+          'Hoja nueva de Supuestos: cambias los clientes al día, el ticket o el coste de mercancía y se recalculan el P&L, el punto de equilibrio, los escenarios, la tesorería y la financiación (722 fórmulas enlazadas; antes el libro eran cifras tecleadas).',
           'Hoja nueva de Tesorería 12 meses: cobros, pagos, liquidación trimestral de IVA y saldo acumulado mes a mes, para saber de un vistazo si la caja aguanta.',
           'Hoja nueva de Financiación: origen y usos de los fondos (25.000 € de recursos propios más 72.000 € de préstamo), cuadro de amortización del préstamo año a año y cobertura del servicio de la deuda (DSCR).',
           'El coste de personal del P&L ya sale de la hoja de Personal: 42.081 € al año con 4 puestos dimensionados para los 250 días de servicio (propietario/a a jornada completa, ayudante de cocina y servicio al 45 %, refuerzo de festivales al 10 % y suplencias de vacaciones al 6 %). Antes la cuenta de resultados tecleaba 42.000 € mientras su propia hoja sumaba 76.566 €.',
@@ -1208,7 +1208,7 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
         date: '2026-09-05',
         title: 'El plan financiero se convierte en un modelo con fórmulas, con el IVA de sala del tapas bar al 10 %',
         changes: [
-          'El Excel pasa de 6 hojas con cifras fijas a 9 hojas con 739 fórmulas: cambias un dato en una celda verde —el ticket, los clientes al día, el alquiler— y el libro entero se recalcula solo.',
+          'El Excel pasa de 6 hojas con cifras fijas a 9 hojas con 742 fórmulas: cambias un dato en una celda verde —el ticket, los clientes al día, el alquiler— y el libro entero se recalcula solo.',
           'Tres hojas nuevas: «0. Supuestos», que concentra todos los datos de partida en un único sitio; «Tesorería 12 meses», con la liquidación del IVA mes a mes; y «Financiación», con el cuadro de amortización del préstamo.',
           'El coste de personal del P&L ya sale de la hoja «Personal» —108.368 € al año para los 7 puestos del tapas bar, con semáforo si un sueldo baja del salario mínimo según su jornada—, y no de una cifra escrita aparte.',
           'IVA por línea de venta: en sala todo va al 10 %, alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el 21 % general sólo alcanza al alcohol que sale por delivery.',

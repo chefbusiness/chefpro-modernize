@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '¿Puedo modificar las cifras del Excel?',
-    a: 'Sí. Las celdas verdes son las que se teclean y las 739 fórmulas se recalculan solas; el resto de las hojas va protegido para que no se pise una fórmula sin querer, y la protección no tiene contraseña (Revisar → Desproteger hoja).',
+    a: 'Sí. Las celdas verdes son las que se teclean y las 742 fórmulas se recalculan solas; el resto de las hojas va protegido para que no se pise una fórmula sin querer, y la protección no tiene contraseña (Revisar → Desproteger hoja).',
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',

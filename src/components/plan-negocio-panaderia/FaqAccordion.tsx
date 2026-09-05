@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '¿Puedo modificar las cifras del Excel?',
-    a: 'Sí. Las celdas verdes son las que se teclean y las 733 fórmulas se recalculan solas: cambia el alquiler, las transacciones al día, el ticket medio sin IVA, los salarios del maestro panadero o cualquier partida de inversión. Las hojas van protegidas sin contraseña para que no borres una fórmula sin querer (Revisar → Desproteger hoja). Incluye hoja de instrucciones.',
+    a: 'Sí. Las celdas verdes son las que se teclean y las 737 fórmulas se recalculan solas: cambia el alquiler, las transacciones al día, el ticket medio sin IVA, los salarios del maestro panadero o cualquier partida de inversión. Las hojas van protegidas sin contraseña para que no borres una fórmula sin querer (Revisar → Desproteger hoja). Incluye hoja de instrucciones.',
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',

@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '¿Puedo modificar las cifras del Excel?',
-    a: 'Sí. Las celdas VERDES son las que se teclean —alquiler, clientes al día, ticket medio, salarios y cualquier partida de inversión— y las 739 fórmulas del libro recalculan el resto solo. Si quieres tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña). Incluye hoja de instrucciones.',
+    a: 'Sí. Las celdas VERDES son las que se teclean —alquiler, clientes al día, ticket medio, salarios y cualquier partida de inversión— y las 742 fórmulas del libro recalculan el resto solo. Si quieres tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña). Incluye hoja de instrucciones.',
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',

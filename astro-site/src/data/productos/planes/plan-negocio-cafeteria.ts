@@ -134,7 +134,7 @@ const data: PlanNegocioData = {
     subtitle:
       '9 secciones profesionales con datos reales del mercado español para construir la viabilidad financiera de tu cafetería o brunch y presentarla a banco o inversores.',
     templates: [
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería a 12 meses, plan de financiación e instrucciones. 739 fórmulas enlazadas: cambias una celda verde y se recalcula el libro entero.' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería a 12 meses, plan de financiación e instrucciones. 742 fórmulas enlazadas: cambias una celda verde y se recalcula el libro entero.' },
       { icon: 'Coins', title: 'Inversión Inicial Detallada', desc: 'Local, máquina de café, horno, vitrina refrigerada, mobiliario, terraza y fondo de maniobra desglosados (130.176 € de referencia: 91.650 € de CAPEX más 38.526 € de fondo de maniobra), con el IVA soportado y la necesidad total de caja calculados aparte.' },
       { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: '84 clientes al día con ticket medio de 9,80 € sin IVA (79 en el umbral de caja, con la cuota del préstamo dentro). Cálculo de margen de seguridad, tabla de sensibilidad al ticket y al coste variable, e interpretación de resultados.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes de clientes y ticket medio. Útil para presentar a banco e inversores.' },
@@ -234,7 +234,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Puedo modificar las cifras del Excel?',
-      a: 'Sí. Las celdas VERDES son las que se teclean —alquiler, clientes al día, ticket medio, salarios y cualquier partida de inversión— y las 739 fórmulas del libro recalculan el resto solo. Si quieres tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña). Incluye hoja de instrucciones.',
+      a: 'Sí. Las celdas VERDES son las que se teclean —alquiler, clientes al día, ticket medio, salarios y cualquier partida de inversión— y las 742 fórmulas del libro recalculan el resto solo. Si quieres tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña). Incluye hoja de instrucciones.',
     },
     {
       q: '¿Qué trámites legales incluye el checklist de apertura?',
