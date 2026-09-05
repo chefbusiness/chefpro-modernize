@@ -111,3 +111,22 @@ el suelo ambiental está en 62; congelar a 66 y reanudar a 63 mantuvo el Mac por
 paralelo. El script vive en el scratchpad (`watchdog.sh`); merece pasar al repo (`scripts/termica/`).
 
 Via: Claude Code
+
+## 7. Cierre (03:15 del 5-sep) y guion de la PRÓXIMA SESIÓN
+
+Estado final verificado en producción: manual vendible (Stripe + gate 0 fallos), email programado lunes 7-sep 10:00, buscador
+con registro en el hub, «Prueba AI Chef Pro desde 10 €» servido en landings y `/precios`, cero «Gratis» del SaaS. Repo limpio,
+`main` = `origin/main`. Memorias actualizadas (manual, buscador, marco español/mercado hispano, copy sin BOE, sin plan gratis).
+
+Orden sugerido para mañana:
+1. **Informe del buscador** (2 min): `ADMIN_PASSWORD='…' python3 scripts/productos-digitales/buscador-report.py --days 7` → deben
+   aparecer las 3 búsquedas de prueba de esta noche; si sale a 0, Blobs no está habilitado en el site (panel de Netlify → Blobs).
+2. **Compra de prueba** del Manual del Manager (o `aichef.pro/admin/generar-acceso`) y abrir el dashboard.
+3. Por la alternancia toca **sesión impar (v2.0 pendiente)**: el IVA del 21 % vivo en la familia de PLANES (`planes-v2_0/grupo_a.py`,
+   10 planes publicados) o rematar los documentos de la guía gastronómica (handoff B §20). NO otro producto nuevo.
+4. Seguimientos pequeños que salieron esta noche: escalera de planes en 12 tablas del blog · FAQ italiana de precios («carta di
+   credito») · 4 claves `hero.no_card` sin gancho de precio · Guía Food Cost v1.1 (Toast/SMI) · «60 % cierra» en 3 sitios ·
+   renombrar la hoja «Plan de Cross-Training» del manual · mover el vigilante térmico al toolkit (copiado a
+   `scripts/termica/watchdog-termico.sh`, umbrales 66/63 °C; se lanza con `nohup zsh scripts/termica/watchdog-termico.sh <log> &`).
+
+Via: Claude Code

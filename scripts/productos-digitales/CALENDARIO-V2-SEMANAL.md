@@ -100,6 +100,11 @@ programado para el lunes 7-sep 10:00 Madrid (handoff `SESSION_HANDOFF_2026-09-04
 Pastelería y Chocolatería. Coste ≈ 10,5 M tokens de subagentes (dos productos nuevos en dos días: la alternancia se retoma con una
 sesión impar). Hotfix colateral: la landing de la Guía Food Cost servía dos botones de WhatsApp.
 
+### 🔜 Próxima sesión (desde el 5-sep): IMPAR — v2.0 pendiente
+
+Dos productos nuevos seguidos (3-5 sep). Toca v2.0: IVA del 21 % en los 10 planes (`planes-v2_0/grupo_a.py`) o documentos de la
+guía gastronómica (handoff B §20). Antes, 2 minutos: informe del buscador del hub (`buscador-report.py`) y compra de prueba del manual.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 1. **El error del 21 % de IVA está VIVO en la familia de PLANES** (`planes-v2_0/grupo_a.py`), y afecta a los **10 planes
