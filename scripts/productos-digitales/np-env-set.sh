@@ -15,7 +15,8 @@ VAL="$(tr -d '\r\n ' < "$FILE")"
 # existe («Setting the context and scope at the same time on an existing env
 # var is not allowed»): si existe, se conserva su scope y solo se pone el valor
 # del contexto; si es nueva, se declara con scope functions.
-if netlify env:list --json --site "$SITE" 2>/dev/null | grep -q "\"$VAR\""; then
+ACCOUNT="${AICP_NETLIFY_ACCOUNT:-chebfusiness}"
+if netlify api getEnvVars --data "{\"account_id\":\"$ACCOUNT\",\"site_id\":\"$SITE\"}" 2>/dev/null | grep -q "\"key\": *\"$VAR\""; then
   netlify env:set "$VAR" "$VAL" --secret --context "$CTX" --site "$SITE" >/dev/null
   echo "✓ $VAR (existente) actualizada como secreta en contexto $CTX (site $SITE), ${#VAL} caracteres. Redeploy pendiente."
 else
