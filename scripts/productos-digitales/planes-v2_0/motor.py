@@ -126,7 +126,15 @@ FMT_ENT = '#,##0'
 FMT_DEC = '#,##0.0'
 FMT_DEC2 = '#,##0.00'
 
-VERSION = '2.1'    # 2.1 (2026-09-05): RD-17, IVA de la bebida en sala al 10 %
+VERSION = '2.2'    # 2.2 (2026-09-05): payback del proyecto antes de la
+#                    deuda (A1), CFADS después de impuestos (A2), IVA
+#                    repercutido POR LÍNEA de venta (A3), cuadrante de
+#                    cobertura y techo de rotación por molde (A4/A5),
+#                    rótulos sobreescribibles (A6), SUMIF del IVA de la
+#                    inversión cuadrado con el bloque (A7) e imprevistos
+#                    sobre la base de obra, que capitalizan (A8).
+#                    2.1 (2026-09-05): RD-17, IVA de la bebida en sala
+#                    al 10 %
 #: Mes que se estampa junto a la versión. Es el de la VERSIÓN, no el del run:
 #: un hermano aplicado en octubre con este mismo motor sigue siendo la 2.1 de
 #: septiembre. Se cambia a la vez que VERSION.
@@ -1327,9 +1335,15 @@ RX_RATIO = re.compile(r'\(\s*%\s*\)|%\s*$|/\s*(ingresos|ventas|facturaci)',
                       re.I)
 #: Rótulos que son euros aunque contengan una palabra de recuento
 #: («Ingresos por eventos», «Coste por invitado»).
+#: ⚠️ B11/M-06 (2026-09-05): faltaban «ventas» y «derechos». Con los rótulos
+#: «Ventas de comida (menú del día … catering/eventos privados)» y «Derechos
+#: de autor por música ambiental en eventos», el gate marcaba seis celdas de
+#: euros del food truck como «recuento con €» por las palabras «día» y
+#: «eventos» que llevan dentro. La lista es la que ya existía para «Ingresos
+#: por eventos» y «Coste por invitado»; sólo le faltaban estos dos.
 RX_EURO_FUERTE = re.compile(
-    r'\b(€|eur|ingresos?|coste|costes|precio|importe|facturaci[oó]n|ticket|'
-    r'margen|salario|cuota)\b', re.I)
+    r'\b(€|eur|ingresos?|ventas?|derechos|coste|costes|precio|importe|'
+    r'facturaci[oó]n|ticket|margen|salario|cuota)\b', re.I)
 
 RX_TXT_PCT = re.compile(r'^\s*(\d{1,3}(?:[.,]\d+)?)\s*%\s*$')
 RX_TXT_EUR = re.compile(
@@ -1678,6 +1692,45 @@ TILDES_EXTRA = {
     # 2026-08-29) y que `RX_CRITICA_VERBO` protege igualmente.
     'critico': 'crítico', 'critica': 'crítica',
     'criticos': 'críticos', 'criticas': 'críticas',
+    # ---- B6 (2026-09-05): M-01 (food truck), R-10 (cafetería) y REF-21
+    # (tapas-bar). SÓLO PARES SEGUROS: se añade la palabra cuando NO existe
+    # una lectura legítima sin tilde en español. Quedan FUERA a propósito
+    # `mas` (= «pero»), `practica`/`practico`, `publica`/`publico`,
+    # `numero`, `genero`, `varia` y `video`: son homógrafos reales o
+    # variantes válidas, y acentuarlos de oficio convertiría texto correcto
+    # en incorrecto (el gate los sigue viendo por convivencia).
+    'vehiculo': 'vehículo', 'vehiculos': 'vehículos',
+    'movil': 'móvil', 'moviles': 'móviles',
+    'datafono': 'datáfono', 'datafonos': 'datáfonos',
+    'maquina': 'máquina', 'maquinas': 'máquinas',
+    'fisico': 'físico', 'fisica': 'física',
+    'fisicos': 'físicos', 'fisicas': 'físicas',
+    'menu': 'menú', 'menus': 'menús',
+    'trafico': 'tráfico',
+    'rotulo': 'rótulo', 'rotulos': 'rótulos',
+    'formula': 'fórmula', 'formulas': 'fórmulas',
+    'unico': 'único', 'unica': 'única',
+    'unicos': 'únicos', 'unicas': 'únicas',
+    'atras': 'atrás',
+    'rapido': 'rápido', 'rapida': 'rápida',
+    'rapidos': 'rápidos', 'rapidas': 'rápidas',
+    'calido': 'cálido', 'calida': 'cálida',
+    'calidos': 'cálidos', 'calidas': 'cálidas',
+    'bano': 'baño', 'banos': 'baños',
+    'desague': 'desagüe', 'desagues': 'desagües',
+    'sandwich': 'sándwich', 'sandwiches': 'sándwiches',
+    'estandar': 'estándar', 'estandares': 'estándares',
+    'tipografia': 'tipografía', 'tipografias': 'tipografías',
+    'telematico': 'telemático', 'telematica': 'telemática',
+    'telematicos': 'telemáticos', 'telematicas': 'telemáticas',
+    'comodo': 'cómodo', 'comoda': 'cómoda',
+    'comodos': 'cómodos', 'comodas': 'cómodas',
+    'ingenieria': 'ingeniería',
+    # Medida en el barrido de cierre de la 2.2 sobre los 10 xlsx de la
+    # línea A: única forma sin tilde viva que no es homógrafa. «depósito»
+    # NO se añade: convive con el verbo depositar («yo deposito») y por eso
+    # está en HOMOGRAFAS; su caso concreto se corrige por contenido (A6).
+    'conexion': 'conexión', 'conexiones': 'conexiones',
 }
 #: Excepción documentada de `critica`/`criticas`: formas del verbo «criticar».
 #: Se reconocen por el clítico o el relativo que las precede («se critica»,
@@ -1934,14 +1987,19 @@ def _devuelve_texto(v):
 
 
 def formatos_texto(ws, informe=None):
-    """Pone `General` en toda celda cuyo contenido se imprime como texto."""
+    """Pone `General` en toda celda cuyo contenido se imprime como texto.
+
+    ⚠️ B4 / R-15 / R-19 (2026-09-05): antes sólo se miraban los formatos con
+    `€` o `%`, y las notas que HEREDAN el formato de la fila que copian
+    («#,##0», «#,##0.0») se quedaban con un formato numérico encima de un
+    texto. Cualquier suma del usuario sobre esas celdas da `#¡VALOR!`. Ahora
+    entra CUALQUIER formato que no sea `General` ni `@`, en todas las hojas.
+    """
     n = 0
     for row in ws.iter_rows():
         for c in row:
             fmt = c.number_format or ''
             if fmt in ('General', '@') or not _devuelve_texto(c.value):
-                continue
-            if '\u20ac' not in fmt and '%' not in fmt:
                 continue
             c.number_format = 'General'
             n += 1
@@ -2132,8 +2190,16 @@ def cierre_instrucciones(ws, pid):
 #: (la marca ChefBusiness se mantiene: es del grupo).
 RX_PRECIO = re.compile(r'\s*[—–-]?\s*(?:por\s+)?\d{1,3}(?:[.,]\d{1,2})?\s*€'
                        r'(?:\s*\(.*?\))?')
+#: ⚠️ B10 / R-05 / CROSS-SELL-01 (2026-09-05). El patrón anterior casaba el
+#: literal «plan » EN CUALQUIER PARTE de la frase, y «plan» aparece de forma
+#: natural en las notas de un PLAN de negocio: la función mutilaba datos
+#: reales sin un solo aviso («…de 200.000 € a 250.000 €, un 25 %» salió como
+#: «…de 200. a 250., un 25 %», y «Dentro del rango 3-6 €» como «Dentro del
+#: rango 3»). Ahora sólo actúa sobre LÍNEAS DE CATÁLOGO de verdad: la celda
+#: EMPIEZA por el nombre de una familia de producto o cita la tienda.
 RX_LINEA_CATALOGO = re.compile(
-    r'(aichef\.pro/productos|kit\s|plan\s|gu[ií]a\s|pack\s|ebook)', re.I)
+    r'^\s*(?:[-–—*•]\s*)?(?:kit|gu[ií]a|pack|mega\s?pack|ebook|e-book|plan)\b'
+    r'|aichef\.pro/productos', re.I)
 
 
 def cross_sell_sin_precios(ws, informe, detalle):
@@ -2152,6 +2218,12 @@ def cross_sell_sin_precios(ws, informe, detalle):
                 c.value = nuevo
                 detalle.append((ws.title, c.coordinate, v[:70], nuevo[:70]))
                 n += 1
+                # el borrado se NOMBRA: un recorte así no puede volver a
+                # pasar por éxito en el informe sin decir qué celda tocó
+                if informe is not None:
+                    informe.append(ws.title + '!' + c.coordinate
+                                   + ': precio fuera del cross-sell (§1.9) «'
+                                   + v[:70] + '» → «' + nuevo[:70] + '»')
     if n and informe is not None:
         informe.append(ws.title + ': ' + str(n)
                        + ' precios fuera del cross-sell (§1.9)')
@@ -2381,6 +2453,13 @@ def checklist_ok_y_contador(wb, det, informe):
 RX_RESULTADO = re.compile(
     r'^(resultado|ebitda|beneficio|margen de seguridad|cash ?flow|'
     r'flujo de caja|tesorer[ií]a)', re.I)
+#: ⚠️ B9 / REF-09 (2026-09-05). «Resultado de la liquidación trimestral» en
+#: negativo NO es una mala noticia: es IVA A COMPENSAR en el trimestre
+#: siguiente, y la propia nota de la fila lo dice. El semáforo genérico
+#: pintaba de ROJO los tres trimestres en los que el negocio no tiene que
+#: pagar IVA. El rojo de esa fila lo pone `grupo_a` con su criterio: cuando
+#: el pago del 303 se come el saldo del mes.
+RX_RESULTADO_EXENTO = re.compile(r'^resultado de la liquidaci', re.I)
 
 
 def semaforos_resultado(ws, informe):
@@ -2391,6 +2470,8 @@ def semaforos_resultado(ws, informe):
     for r in range(cab + 1, ws.max_row + 1):
         rot = _rotulo_de_fila(ws, r)
         if not rot or not RX_RESULTADO.match(rot):
+            continue
+        if RX_RESULTADO_EXENTO.match(rot):
             continue
         cols = [c.column for c in ws[r]
                 if (_es_numero(c.value) or _es_formula(c.value))
@@ -2511,7 +2592,10 @@ RX_SIN_TILDE = re.compile(
 RX_SIN_TILDE_2 = re.compile(
     r'(?i)\b(camaras?|frigorific[oa]s?|estanterias?|almacen|cafes?|paginas?|'
     r'notaria|busquedas?|consejerias?|codigos?|clausulas?|critic[oa]s?|'
-    r'disen(?:o|os|ador|adora|adores|adoras|ar|a|an|ado|ada|ados|adas))\b')
+    r'disen(?:o|os|ador|adora|adores|adoras|ar|a|an|ado|ada|ados|adas)|'
+    # B6 — las que M-01/R-10/REF-21 encontraron VIVAS en el corpus
+    r'vehiculos?|moviles?|datafonos?|menus?|unic[oa]s?|banos?|atras|'
+    r'fisic[oa]s?|estandar(?:es)?|tipografias?|rotulos?|conexion(?:es)?)\b')
 #: RC-20 — heurística de CONVIVENCIA: la palabra sin tilde que comparte forma
 #: normalizada con otra ACENTUADA del mismo libro. Es la que caza los casos
 #: que ninguna lista cerrada prevé («Pagina básica» tiene la tilde dos
@@ -2523,7 +2607,14 @@ RX_SIN_TILDE_2 = re.compile(
 #: `RX_CRITICA_VERBO` reconoce por su clítico. Mientras estuvieron aquí, el
 #: gate daba VERDE sobre «Primeras 4 semanas criticas» y «Critico para SEO
 #: local» en el fichero que el cliente imprime.
+#: MOT-04 (2026-09-05) — los INTERROGATIVOS/EXCLAMATIVOS son DOS palabras
+#: válidas según el contexto («en cuanto cambias un sueldo» frente a «cuánto
+#: puedes caer»): la convivencia de las dos formas en el mismo libro no
+#: prueba que la átona sea una errata. El gate tumbó tres frases CORRECTAS
+#: de `Instrucciones` por este motivo y hubo que reescribirlas.
 HOMOGRAFAS = frozenset((
+    'cuanto', 'cuanta', 'cuantos', 'cuantas', 'donde', 'cuando',
+    'cual', 'cuales', 'quien', 'quienes', 'porque', 'adonde',
     'publica', 'publico', 'publicas', 'publicos', 'practica', 'practicas',
     'termino', 'terminos', 'continuo', 'continua',
     'medico', 'valido', 'calculo', 'calculos', 'trabajo', 'numero',
@@ -2643,7 +2734,10 @@ def gate_formatos(wb, fname):
                 # RT-11 — el `continue` para las celdas de TEXTO dejaba fuera
                 # del gate las 51 notas con formato de euro que el propio
                 # motor escribía. Ahora se miran ANTES de saltarlas.
-                if _devuelve_texto(v) and ('\u20ac' in fmt or '%' in fmt):
+                # B4 — no sólo `€`/`%`: cualquier formato numérico sobre
+                # una celda que imprime texto (las notas heredaban «#,##0»
+                # y «#,##0.0» de la fila que copian)
+                if _devuelve_texto(v) and fmt not in ('General', '@'):
                     fuera.append({'fichero': fname, 'hoja': ws.title,
                                   'celda': c.coordinate,
                                   'tipo': 'texto con formato numérico',
@@ -3013,6 +3107,11 @@ def cerrar(wb, fname, det, pid, informe, detalle=None, proteger_hojas=True):
         altos_y_wrap(ws, informe)
         print_setup(ws)
     cierre_instrucciones(ws_ins, pid)
+    # B4 — `cierre_instrucciones` copia el ESTILO de la línea que sustituye,
+    # así que puede reintroducir un formato numérico sobre texto después de
+    # la pasada de arriba. Segunda pasada, barata e idempotente.
+    for ws in wb.worksheets:
+        formatos_texto(ws)
     sin_inputs = []
     if proteger_hojas:
         for ws in wb.worksheets:

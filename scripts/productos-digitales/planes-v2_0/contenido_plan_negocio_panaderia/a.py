@@ -401,7 +401,35 @@ LINEAS_INGRESO = (
      'proyéctalo aparte',
      'fichero v1.1: suma de «Ventas pan artesanal» + «Ventas bollería y '
      'pastelería» + «Mayorista» ((120.000+45.000+20.000)/200.000 = '
-     '92,5 %)'),
+     '92,5 %)',
+     # A3 / REF-04 (motor 2.2, 2026-09-05) — ESTA es la única línea de la
+     # familia que NO tributa entera al 10 %. El pan común y las harinas
+     # panificables van al tipo SUPERREDUCIDO del 4 % (art. 91.Dos.1.1.º de
+     # la Ley 37/1992 del IVA); la bollería, la pastelería y lo que se
+     # consuma en el rincón de la tienda van al 10 %. Hasta la 2.1 el libro
+     # repercutía el 10 % sobre TODA la facturación: 30.690 € de IVA
+     # repercutido sobre 306.900 € de ventas, un exceso que además se
+     # quedaba en el saldo de caja (los tres trimestres salían a compensar,
+     # así que el modelo 303 no lo sacaba nunca).
+     #
+     # FUENTE del 76 %: el desglose de la v1.1 de este mismo producto —
+     # «Ventas pan artesanal» 120.000 € + «Mayorista» 20.000 € sobre los
+     # 185.000 € de la línea = 75,7 %, redondeado a 76 %. Es un INPUT verde
+     # en la propia fila del P&L porque depende de la carta: sólo el PAN
+     # COMÚN tal como lo define la ley va al 4 %; un pan especial (con
+     # semillas, cereales o masa madre enriquecida) es 10 % como la
+     # bollería.
+     {'cabecera': 'Pan común sobre la línea (%)',
+      'pct': 0.76,
+      'tipo': 0.04,
+      'nota': 'El 4 % es el tipo SUPERREDUCIDO del pan común y de las '
+              'harinas panificables (art. 91.Dos.1.1.º de la Ley 37/1992); '
+              'la bollería, la pastelería y el consumo en el propio local '
+              'van al 10 %. El porcentaje de la derecha dice qué parte de '
+              'esta línea es pan común: sale del desglose de la versión '
+              'anterior de este plan (pan artesanal 120.000 € + mayorista '
+              '20.000 € sobre 185.000 €). Ajústalo a tu carta: un pan '
+              'especial NO es pan común'}),
     ('Ventas de café y bebidas (sin alcohol)', 0.075, 'bebida',
      'Café de grano, tés e infusiones de mostrador, para acompañar el '
      'desayuno o la merienda (coste alto por grano de calidad, '
@@ -950,3 +978,59 @@ RECALIBRADO = (
      'minorista puro no cubre automáticamente la venta a otros negocios: '
      'si el mayorista crece, consúltalo con tu gestoría'),
 )
+
+
+# ==========================================================================
+# §2.6 — CUADRANTE DE COBERTURA (A4 / REF-06 · motor 2.2, 2026-09-05)
+# ==========================================================================
+#: El motor traía cableado el cuadrante de un RESTAURANTE (13 h × 2 personas)
+#: y este producto no tiene ni barra ni sala: tiene MOSTRADOR y OBRADOR. Con
+#: el denominador de restaurante, la cobertura salía verde por 17,6 horas al
+#: año dejando FUERA el turno de madrugada que el propio libro staffea y
+#: publica (`Personal`!J5 «Turno de madrugada (4:00-5:00 AM): amasado,
+#: formado y horneado de la primera hornada» y las Instrucciones «Hora de
+#: inicio de producción 4:00-5:00 AM · Turno de madrugada crítico para tener
+#: pan a las 7:30»).
+#:
+#: FUENTE de los cuatro números: la propia jornada que describe el libro,
+#: medida en la refutación de este hermano (fixer.json, REF-06): 13 h de
+#: TIENDA con una presencia media de 1,7 personas (una fija en mostrador más
+#: el refuerzo de las puntas de mañana y de tarde) + 3,5 h de OBRADOR con 1
+#: persona antes de abrir. Con los 310 días de apertura son 7.936 h frente a
+#: las 8.077,6 h que contrata la plantilla de arriba: la cobertura la cubre
+#: SIN contratar a nadie más. Cerrar el hueco por la vía contraria (subir
+#: plantilla) costaba +0,58 jornadas ≈ 13.300 €/año y hundía el resultado
+#: neto del 5,61 % al 1,7 %, por debajo del suelo del 5 % que fija el propio
+#: libro.
+COBERTURA = {
+    'horas_dia': 13,
+    'personas_franja': 1.7,
+    'horas_produccion': 3.5,
+    'personas_produccion': 1,
+    'nota_horas': 'De la apertura al cierre de la TIENDA. El turno de '
+                  'obrador va en la fila de abajo y no se solapa con el '
+                  'mostrador. Cuéntalas sobre tu horario real',
+    'nota_personas': 'Presencia media simultánea en el mostrador a lo largo '
+                     'del día: una persona fija más el refuerzo de las '
+                     'puntas de la mañana y de la merienda',
+    'nota_horas_produccion': 'Turno de madrugada (4:00-5:00 AM, checklist '
+                             'F4): amasado, formado y horneado de la primera '
+                             'hornada, ANTES de abrir la tienda',
+    'nota_personas_produccion': 'El maestro panadero. Si tu obrador arranca '
+                                'con dos personas, súbelo aquí',
+}
+
+# ==========================================================================
+# §2.4 — ROTACIONES: este molde NO las tiene (A5 / REF-01 · motor 2.2)
+# ==========================================================================
+#: El bloque comparaba las rotaciones que exige el equilibrio de caja
+#: (10,3 / 11,6 / 12,0) contra un techo de COMEDOR cableado a 3,0 servicios
+#: por plaza y día: TRES CELDAS ROJAS en el caso base y una nota que remataba
+#: «el punto de equilibrio está fuera del alcance del local». La magnitud es
+#: prestada: el driver de una panadería es la TRANSACCIÓN DE MOSTRADOR, no el
+#: cubierto sentado, y el propio libro ya lo declara en '0. Supuestos'!C51
+#: («la rotación implícita no es una métrica útil en este formato»). No hay
+#: ningún valor honesto de aforo que arregle la comparación: el CTE DB-SI da
+#: 2 m²/persona en comercio y la tienda de este plan son ~30 m² → 15 plazas,
+#: que es justo lo que el libro declara.
+ROTACION = {'activa': False}

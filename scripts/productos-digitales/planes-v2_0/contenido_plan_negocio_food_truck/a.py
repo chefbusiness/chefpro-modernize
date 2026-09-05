@@ -548,6 +548,19 @@ INVERSION = {
     # movil», «TPV movil + datafono» y «Mantenimiento vehiculo + ITV» del
     # P&L) son de MOTOR: piden «vehiculo»→«vehículo» y «movil»→«móvil» en
     # `motor.TILDES`, y van reportados en el informe de esta tanda.
+    # A6 / M-09 (motor 2.2) — «Deposito» sin tilde. El motor NO lo puede
+    # corregir con el diccionario de §1.7: «deposito» es homógrafa del verbo
+    # depositar («yo deposito el importe») y está en `motor.HOMOGRAFAS` a
+    # propósito. Desde la 2.2 el rótulo de una fila preservada se puede
+    # reescribir sin moverla de sitio, que es la vía correcta para un caso
+    # que el diccionario no puede decidir. Importe y clasificación
+    # amortizable no cambian.
+    'deposito agua + aguas residuales': (
+        None,
+        'Depósito de agua limpia y de aguas residuales del vehículo: es el '
+        'equipo que exige el proyecto técnico sanitario para servir comida '
+        'fuera de un local con acometida',
+        'Depósito de agua + aguas residuales'),
     'licencias y permisos (promedio)': (
         2000, 'Varía mucho por municipio y comunidad autónoma: pide el '
         'importe en el tuyo antes de cerrar el presupuesto'),
@@ -626,6 +639,20 @@ AMORTIZABLE = {
 # mismo gasto dos veces. Se suprime aquí explícitamente.
 # ==========================================================================
 FIJOS = {
+    # A6 / M-05 (motor 2.2, 2026-09-05) — la fila canónica de coste fijo se
+    # llamaba «Alquiler del local» en un negocio que NO tiene local: lo que
+    # se paga es la plaza de aparcamiento y la base donde duerme y se limpia
+    # el vehículo. Hasta la 2.1 el rótulo era intocable desde contenido (la
+    # regla sólo admitía 'suprimir' o un importe); ahora la tupla admite un
+    # tercer campo con el rótulo, conservando la fila y su fórmula.
+    'alquiler del local': (
+        None,
+        'El importe mensual está en la hoja de Supuestos; aquí se multiplica '
+        'por doce. Es la plaza de aparcamiento y la base del vehículo (agua, '
+        'limpieza y vaciado de residuales), no la renta de un local. Los '
+        'meses previos a la apertura están en la hoja de Inversión y NO se '
+        'cuentan dos veces',
+        'Aparcamiento y base del vehículo'),
     'generador (combustible/alquiler)': (
         'suprimir',
         'Doble conteo propio de este hermano: es el MISMO gasto que ahora '
@@ -687,7 +714,10 @@ UMBRALES = (
     ('r_personal', 'Coste de personal / Ventas', 0.32,
      'Techo del propio libro: «Instrucciones!B7 — Coste personal / ventas: '
      '25-32%. Menos personal que restaurante: 2-3 personas»'),
-    ('r_alquiler', 'Alquiler / Ventas', 0.05,
+    # A6 / M-05 — el rótulo de la tupla ERA letra muerta: `ratio()` sólo
+    # tomaba el valor y el comentario, y el libro publicaba «Alquiler /
+    # Ventas» en un producto sin local. Desde el motor 2.2 se usa.
+    ('r_alquiler', 'Aparcamiento / Ventas', 0.05,
      'No hay referencia de local en este libro (el food truck no paga '
      'renta de local): 5 % es un techo prudente para el aparcamiento/base '
      'del vehículo, muy por debajo del 8-12 % de un negocio con local fijo '
@@ -1081,3 +1111,36 @@ RECALIBRADO = (
      'la hoja de Supuestos y el semáforo te avisa si algún sueldo se queda '
      'corto'),
 )
+
+
+# ==========================================================================
+# §2.6 — CUADRANTE DE COBERTURA (A4 / M-02 · motor 2.2, 2026-09-05)
+# ==========================================================================
+#: FUENTE: el documento de ESTE plan — «esta secuencia consume entre diez y
+#: doce horas de jornada laboral efectiva», con «cuatro y seis horas» de
+#: servicio al público (fixer.json de este hermano, M-02). Se toma el extremo
+#: ALTO (12 h) y UNA persona a bordo, que es la dotación que el propio plan
+#: describe. Con el cuadrante de restaurante que traía el motor cableado
+#: (13 h × 2 × 250 = 6.500 h) la cobertura salía en 45,6 % y ROJA en un libro
+#: cuyas cinco ratios cumplen: llegar al 100 % habría exigido 3,53 jornadas
+#: equivalentes ≈ 91.500 €/año, el 67,8 % de las ventas. El problema era el
+#: DENOMINADOR, no la plantilla.
+COBERTURA = {
+    'horas_dia': 12,
+    'personas_franja': 1,
+    'nota_horas': 'Jornada efectiva completa del día de servicio: carga, '
+                  'desplazamiento, montaje, servicio, recogida y limpieza. '
+                  'El servicio al público es sólo una parte',
+    'nota_personas': 'Presencia media a bordo. En los picos de un festival '
+                     'hará falta un segundo par de manos: súbelo aquí y la '
+                     'plantilla se dimensiona sola',
+}
+
+# ==========================================================================
+# §2.4 — ROTACIONES: este molde NO las tiene (A5 / M-07 · motor 2.2)
+# ==========================================================================
+#: Un food truck no tiene aforo ni rotaciones por plaza: la magnitud es
+#: prestada del molde de restaurante y el techo estaba cableado a 3,0. Se
+#: sorteaba calibrando `aforo`, que es el único parámetro que el contenido
+#: controlaba y que aquí no significa nada.
+ROTACION = {'activa': False}

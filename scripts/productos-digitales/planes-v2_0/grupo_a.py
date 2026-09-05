@@ -705,9 +705,17 @@ def escribir(rej, cols_texto=('A',)):
                 if drv is not None and col in rej.cols_driver \
                         and not spec.get('sin_driver'):
                     ref = drv(rej, col, spec.get('clave'))
-                    if ref:
-                        formula = ('=IF(' + ref + '="","",' + formula[1:]
-                                   + ')')
+                    # ⚠️ B14 / REF-22 / REF-18 (2026-09-05): la fila «Punto de
+                    # equilibrio alcanzado» ya trae su propia guarda con la
+                    # MISMA celda, y el volcado la envolvía otra vez:
+                    # `IF(B9="","",IF(B9="","",…))`. No cambia el resultado —
+                    # por eso ni la idempotencia ni el `data_only` lo veían—
+                    # pero en una celda donde la guarda interna no fuese
+                    # idéntica a la externa el segundo envoltorio se comería
+                    # el operando bueno.
+                    guarda = 'IF(' + ref + '="","",' if ref else None
+                    if ref and not formula[1:].startswith(guarda):
+                        formula = '=' + guarda + formula[1:] + ')'
                 fx(ws, col + str(fila), formula,
                    spec.get('fmt_' + col) or spec.get('fmt'))
                 if spec.get('bold'):
@@ -936,6 +944,36 @@ class Plan(object):
     def anota(self, texto):
         self.cambios.append(texto)
 
+    # -- §A6: rótulos de filas canónicas y preservadas --------------------
+    def _reglas(self, clave):
+        """`INVERSION`/`FIJOS` con ALIAS por el rótulo NUEVO (A6 / M-05/M-09).
+
+        La regla admite ahora una tupla de 3: `(importe|None, nota,
+        rotulo_nuevo)`. La clave del diccionario es el rótulo VIEJO, que es el
+        que trae el fichero de partida; en la 2.ª pasada la hoja ya lleva el
+        NUEVO y la búsqueda por rótulo no lo encontraría, así que el rótulo
+        nuevo se indexa también: sin este alias el nombre revertiría en la
+        segunda pasada y la idempotencia se rompería.
+        """
+        cache = getattr(self, '_reglas_cache', None)
+        if cache is None:
+            cache = self._reglas_cache = {}
+        if clave in cache:
+            return cache[clave]
+        reglas = dict(self.dato(clave, {}) or {})
+        for _v in list(reglas.values()):
+            if len(_v) > 2 and _v[2]:
+                reglas.setdefault(motor.norm(_v[2]), _v)
+        cache[clave] = reglas
+        return reglas
+
+    def _rotulo_regla(self, clave, rot):
+        """Rótulo definitivo de una fila canónica según `INVERSION`/`FIJOS`."""
+        accion = self._reglas(clave).get(motor.norm(rot))
+        if accion and len(accion) > 2 and accion[2]:
+            return accion[2]
+        return rot
+
     # -- §2.1 -------------------------------------------------------------
     def supuestos_altas(self):
         """`0. Supuestos`: da de alta los parámetros y sus refs (§2.1).
@@ -1001,7 +1039,9 @@ class Plan(object):
             motor.val(ws, 'C11', 'Peso de la COMIDA sobre el total de ventas. '
                       'Es un INPUT: cámbialo aquí y el P&L, la tesorería y el '
                       'IVA repercutido se recalculan solos')
-            fx(ws, 'B12', '=1-B11', motor.FMT_PCT)
+            # B1 / R-08 / REF-15 — sin la guarda, un libro VACIADO imprime
+            # «100,0 %» de bebida (`1-""` = 1): un falso dato, no un blanco.
+            fx(ws, 'B12', '=IF(COUNT(B11)=0,"",1-B11)', motor.FMT_PCT)
             motor.val(ws, 'C12', 'Se calcula como el resto: comida + bebida = '
                       '100 %')
             ws['B12'].fill = PatternFill()
@@ -1012,50 +1052,64 @@ class Plan(object):
             fx(ws, 'B11', '=' + suma, motor.FMT_PCT)
             motor.val(ws, 'C11', 'Suma del peso de las líneas de COMIDA del '
                       'P&L: el mix vive en un solo sitio')
-            fx(ws, 'B12', '=1-B11', motor.FMT_PCT)
+            fx(ws, 'B12', '=IF(COUNT(B11)=0,"",1-B11)', motor.FMT_PCT)
             motor.val(ws, 'C12', 'Se calcula como el resto: comida + bebida = '
                       '100 %')
             for coord in ('B11', 'B12'):
                 ws[coord].fill = PatternFill()
                 ws[coord].protection = Protection(locked=True)
         # nota generada: el PVP con IVA equivalente al ticket sin IVA (TEC-11)
-        # RD-17 — la bebida NO va al tipo general: mezcla del tipo del alcohol
-        # servido en sala (B63, 10 %) y el reducido, con el peso de B62.
-        red, gral = self._loc('iva_reducido'), self._loc('iva_general')
-        alc, beb = self._loc('pct_bebida_alc'), self._loc('iva_bebida')
-        deliv = self._loc('pct_delivery')
-        gen = ('(' + alc + '*((1-' + deliv + ')*' + beb + '+' + deliv + '*'
-               + gral + ')+(1-' + alc + ')*' + red + ')')
+        # A3 / REF-04 — el PVP ya no se compone con dos porcentajes globales
+        # (comida al reducido y bebida a su mezcla): lo compone el IVA MEDIO
+        # PONDERADO de las líneas de venta del P&L, que es donde cada línea
+        # declara su tipo. Para el representante el resultado es idéntico
+        # (dos líneas, comida al reducido y bebida a la mezcla RD-17); para
+        # una panadería con pan común al 4 %, no.
         tic = self._loc('ticket_medio')
+        iva_med = self.iva_ventas
         motor.val(ws, 'A9', 'PVP equivalente con IVA (calculado)')
-        fx(ws, 'B9', '=IF(' + tic + '="","",' + tic + '*(B11*(1+' + red
-           + ')+B12*(1+' + gen + ')))', motor.FMT_EUR)
-        # La coletilla se compone: si el usuario cambia el tipo del alcohol
-        # o mete delivery, la bebida lleva un tipo MEDIO y la nota lo dice
-        # en vez de seguir afirmando el 10 % (RD17-COD-03 / FIS-08).
-        fx(ws, 'C9', '="Ticket sin IVA más el IVA: "&TEXT(' + red
-           + '*100,"0")&" % en comida y "&TEXT(' + gen + '*100,"0")&" % en '
-           'bebida"&IF(ABS(' + gen + '-' + red + ')<0.00001,"","; el de '
-           'bebida es un tipo MEDIO ponderado por el peso del alcohol, su '
-           'tipo y el canal de delivery, no un tipo de la ley, y aquí va '
-           'redondeado")&". Compáralo con el rango del sector, que va con '
-           'IVA."')
+        fx(ws, 'B9', '=IF(' + tic + '="","",' + tic + '*(1+' + iva_med + '))',
+           motor.FMT_EUR)
+        fx(ws, 'C9', '="Ticket sin IVA más el IVA medio ponderado de tus '
+           'líneas de venta: "&TEXT(' + iva_med + '*100,"0")&" %. En sala '
+           'todo va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992, alcohol '
+           'incluido); el alcohol que sale por delivery y el pan común, si '
+           'los tienes, mueven la media. Aquí va redondeado. Compáralo con '
+           'el rango del sector, que va con IVA."')
         # RD-24 — la rotación implícita, calculada desde el aforo en celda,
         # en vez de una nota que citaba mal su fuente (presentaba el 1,8 del
         # documento como un TECHO cuando ahí es un mínimo exigible, y usaba
         # 56 plazas contra las 40-50 del propio documento).
         aforo = self._loc('aforo')
-        motor.val(ws, 'A50', 'Rotaciones al día implícitas (calculado)')
-        fx(ws, 'B50', '=' + self._loc('cubiertos_dia') + '/' + aforo,
-           motor.FMT_DEC2)
-        # ⚠️ este era el único TEXT() del libro con decimales y el único que
-        # seguía mezclando separadores dentro de la frase (ver `dec1`).
-        fx(ws, 'C50', '="Son "&' + dec1('B50')
-           + '&" servicios por plaza y día '
-           'sobre las "&TEXT(' + aforo + ',"0")&" plazas de la celda de '
-           'arriba. El documento de este plan pide un MÍNIMO de 1,8 '
-           'rotaciones por mesa y servicio en temporada alta: compáralo con '
-           'tu horario real antes de darlo por bueno."')
+        rota = self.dato('ROTACION', {}) or {}
+        if not rota.get('activa', True):
+            # A5 — el bloque se APAGA entero: se escriben las tres celdas a
+            # vacío (no basta con no escribirlas: el fichero de partida trae
+            # las de la versión anterior y sobrevivirían).
+            for coord in ('A50', 'B50', 'C50'):
+                motor.val(ws, coord, None)
+                ws[coord].number_format = 'General'
+        else:
+            # ⚠️ MOT-02 — la frase de referencia («MÍNIMO de 1,8 rotaciones
+            # por mesa y servicio») es del documento del REPRESENTANTE. En
+            # tapas-bar el docx dice otra cosa (1,8 en almuerzo y 1,5 en
+            # cena) y la celda comparaba ese umbral con rotaciones AL DÍA:
+            # medía una cosa y el número otra. Ahora el molde trae la suya.
+            referencia = (rota.get('referencia')
+                          or 'El documento de este plan pide un MÍNIMO de '
+                             '1,8 rotaciones por mesa y servicio en '
+                             'temporada alta: compáralo con tu horario real '
+                             'antes de darlo por bueno.')
+            motor.val(ws, 'A50', 'Rotaciones al día implícitas (calculado)')
+            fx(ws, 'B50', '=' + self._loc('cubiertos_dia') + '/' + aforo,
+               motor.FMT_DEC2)
+            # ⚠️ este era el único TEXT() del libro con decimales y el único
+            # que seguía mezclando separadores dentro de la frase (ver
+            # `dec1`).
+            fx(ws, 'C50', '="Son "&' + dec1('B50')
+               + '&" servicios por plaza y día '
+               'sobre las "&TEXT(' + aforo + ',"0")&" plazas de la celda de '
+               'arriba. ' + str(referencia).replace('"', '') + '"')
         motor.anchos(ws, {'A': 48, 'B': 16, 'C': 74})
         motor.print_setup(ws)
 
@@ -1158,6 +1212,30 @@ class Plan(object):
         """`Personal`: SS en celda, fila cuadrada y TOTAL cerrado (§2.6)."""
         ws = self.ws_personal
         cab = _cabecera(ws)
+        # B2 / R-11 / REF-16 — el SUBTÍTULO de la hoja llevaba el tipo de
+        # Seguridad Social escrito a mano («33.4 %») y desmentía a la celda de
+        # la que cuelga toda la columna E ('0. Supuestos'!B20 = 33 %). Vive
+        # POR ENCIMA de la cabecera, así que ni `_limpiar_area` (que arranca
+        # en `cab`) ni el filtro del pie lo tocaban. Pasa a fórmula, igual que
+        # ya se hace en 'Inversión Inicial'!D30/D32/D34. Se escribe «0» y no
+        # «0,0%» a propósito: la coma de un código de formato es el separador
+        # de MILES y el punto depende del locale (misma trampa que `dec1`).
+        for _r in range(1, cab):
+            _v = ws.cell(row=_r, column=1).value
+            if not isinstance(_v, str) or _v.startswith('='):
+                continue
+            if not re.search(r'\d+[.,]?\d*\s*%', _v):
+                continue
+            if not re.search(r'convenio|pagas|seguridad social|\bss\b', _v,
+                             re.I):
+                continue
+            self.anota('Personal!A' + str(_r) + ': subtítulo con el tipo de '
+                       'Seguridad Social escrito a mano «' + _v[:60]
+                       + '» → fórmula desde Supuestos (§7-bis.11)')
+            fx(ws, 'A' + str(_r),
+               '="Convenio Hostelería — "&TEXT(' + self.p.ref('pagas')
+               + ',"0")&" pagas + SS "&TEXT(' + self.p.ref('ss_empresa')
+               + '*100,"0")&" %"')
         plantilla = self.dato('PLANTILLA') or self._leer_plantilla(ws, cab)
         # el pie del fichero v1.1 lleva el tipo de Seguridad Social escrito a
         # mano («33.4%»): repetiría un parámetro que ahora vive en celda y
@@ -1242,7 +1320,11 @@ class Plan(object):
         # CONSTRUCCIÓN y el semáforo de los años 2 y 3 no podía fallar nunca.
         # El personal es un coste ESCALONADO: se contrata gente, no un
         # porcentaje.
-        rej.add(rot='CRECIMIENTO DE LA PLANTILLA (coste escalonado, RD-10)',
+        # ⚠️ B7 / M-04 / REF-02-motor / MOT-01 / NUEVO-CAF-01 (2026-09-05):
+        # el rótulo publicaba «, RD-10» —un id interno de auditoría— en
+        # la única celda de los dos entregables que se lo enseñaba al
+        # comprador. El id vive en el comentario de arriba.
+        rej.add(rot='CRECIMIENTO DE LA PLANTILLA (coste escalonado)',
                 bold=True)
         for anio, clave, defecto in ((2, 'alta_2', 6000), (3, 'alta_3', 6000)):
             rej.add(clave,
@@ -1280,23 +1362,67 @@ class Plan(object):
                 valores={'B': 46,
                          'J': '52 semanas menos las vacaciones del art. 38 ET '
                               '(30 días naturales)'})
+        # ⚠️ A4 / MOT-03 / REF-06 / M-02 (2026-09-05). Estas dos celdas son el
+        # NUMERADOR del semáforo de cobertura y, con él, quien dimensiona la
+        # plantilla entera y el labour cost. Estaban CABLEADAS al cuadrante de
+        # un restaurante (13 h × 2 personas) y no tenían clave de contenido:
+        # el food truck salía al 45,6 % (rojo) y la panadería en verde por
+        # 17 horas al año dejando fuera el turno de obrador que el propio
+        # libro staffea. Ahora el molde declara su cuadrante, con los valores
+        # de siempre por defecto, y admite una SEGUNDA franja (producción
+        # anterior a la apertura) para los formatos que la tengan.
+        cob = self.dato('COBERTURA', {}) or {}
+        h_prod = _num(cob.get('horas_produccion'), 0) or 0
+        p_prod = _num(cob.get('personas_produccion'), 0) or 0
         rej.add('horas_dia', rot='Horas de servicio al día que hay que cubrir',
                 fmt=motor.FMT_DEC, verdes=('B',),
-                valores={'B': 13,
-                         'J': 'De la apertura al cierre, barra incluida. '
-                              'Cuéntalas sobre tu horario real'})
+                valores={'B': _num(cob.get('horas_dia'), 13),
+                         'J': cob.get('nota_horas')
+                         or 'De la apertura al cierre, barra incluida. '
+                            'Cuéntalas sobre tu horario real'})
         rej.add('personas_franja',
                 rot='Personas necesarias a la vez en cada franja',
                 fmt=motor.FMT_DEC, verdes=('B',),
-                valores={'B': 2,
-                         'J': 'Media de presencia simultánea entre cocina, '
-                              'barra y sala. En los dos servicios fuertes '
-                              'hará falta más y a media tarde menos'})
+                valores={'B': _num(cob.get('personas_franja'), 2),
+                         'J': cob.get('nota_personas')
+                         or 'Media de presencia simultánea entre cocina, '
+                            'barra y sala. En los dos servicios fuertes '
+                            'hará falta más y a media tarde menos'})
+        if h_prod and p_prod:
+            rej.add('horas_produccion',
+                    rot='Horas de producción al día ANTES de abrir',
+                    fmt=motor.FMT_DEC, verdes=('B',),
+                    valores={'B': h_prod,
+                             'J': cob.get('nota_horas_produccion')
+                             or 'Turno anterior a la apertura (obrador, '
+                                'mise en place): no se solapa con el horario '
+                                'de atención al público'})
+            rej.add('personas_produccion',
+                    rot='Personas en el turno de producción',
+                    fmt=motor.FMT_DEC, verdes=('B',),
+                    valores={'B': p_prod,
+                             'J': cob.get('nota_personas_produccion')
+                             or 'Presencia simultánea en ese turno'})
+        # B1 / REF-15 — era la única fórmula del bloque sin la guarda de
+        # vacío que llevan sus vecinas: con el libro vaciado imprimía un «0»
+        # suelto en vez de dejar la celda en blanco.
+        _prod = ('+' + '{hp}' + '*' + '{pp}' + '*'
+                 + self.p.ref('dias_apertura')) if (h_prod and p_prod) else ''
         rej.add('horas_necesarias', rot='Horas de servicio a cubrir al año',
                 fmt=motor.FMT_ENT,
-                formulas={'B': (lambda R: '=' + R.c('horas_dia') + '*'
+                formulas={'B': (lambda R: '=IF(OR(' + R.c('horas_dia')
+                                + '="",' + R.c('personas_franja') + '="",'
+                                + self.p.ref('dias_apertura') + '=""),"",'
+                                + R.c('horas_dia') + '*'
                                 + R.c('personas_franja') + '*'
-                                + self.p.ref('dias_apertura'))})
+                                + self.p.ref('dias_apertura')
+                                + _prod.replace(
+                                    '{hp}', R.c('horas_produccion')
+                                    if _prod else '')
+                                       .replace('{pp}',
+                                                R.c('personas_produccion')
+                                                if _prod else '')
+                                + ')')})
         rej.add('horas_contratadas', rot='Horas contratadas al año',
                 fmt=motor.FMT_ENT,
                 formulas={'B': (lambda R: '=' + R.c('total', 'I'))})
@@ -1398,7 +1524,7 @@ class Plan(object):
         cab = _cabecera(ws)
         canon = self.dato('INVERSION_CANON') or RX_CANON_INV
         partidas = _partidas(ws, cab, canon=canon)
-        reglas = self.dato('INVERSION', {}) or {}
+        reglas = self._reglas('INVERSION')
         extras = self.dato('INVERSION_EXTRA', []) or []
         tablas = self.dato('AMORTIZABLE') or AMORT_DEFECTO
         pie = _pie(ws, cab)
@@ -1432,6 +1558,18 @@ class Plan(object):
                 self.anota('Inversión: «' + rot + '» ' + str(importe) + ' → '
                            + str(accion[0]) + ' — ' + (accion[1] or ''))
                 importe, nota = float(accion[0]), accion[1] or nota
+            elif accion and accion[0] is None and accion[1]:
+                # importe None = «deja la cifra del fichero, cambia la nota»
+                nota = accion[1]
+            # A6 / M-09 — el rótulo de una fila PRESERVADA también se puede
+            # corregir sin moverla de sitio (antes había que suprimirla y
+            # darla de alta por INVERSION_EXTRA, lo que mandaba la partida
+            # más cara del plan al final del bloque).
+            if accion and len(accion) > 2 and accion[2] \
+                    and motor.norm(accion[2]) != motor.norm(rot):
+                self.anota('Inversión: rótulo «' + rot + '» → «' + accion[2]
+                           + '» (A6)')
+                rot = accion[2]
             bloque = bloque or 'INVERSIÓN'
             if bloque not in bloques:
                 bloques[bloque] = []
@@ -1462,11 +1600,22 @@ class Plan(object):
         pct_imp = self.p.ref('pct_imprevistos')
         claves_bloque, amortiza = [], {'obra': [], 'maquinaria': []}
         con_iva = []
+        #: B5 / R-18 — las filas CALCULADAS (fianza, renta previa,
+        #: imprevistos, colchón) también entran en el SUMIF del IVA, pero su
+        #: celda de marca está BLOQUEADA: colgarles el desplegable enseña una
+        #: lista que Excel se niega a aplicar. Sólo las partidas de input.
+        editables_iva = []
+        #: A8 — rótulo de cada fila de la inversión, en ORDEN, para generar
+        #: desde el libro la enumeración de lo que NO se amortiza (la lista
+        #: estaba escrita a mano en el generador y nombraba partidas que este
+        #: producto puede no tener: REF-19).
+        rotulos_inv = []
         # un bloque sin partidas (el «FONDO DE MANIOBRA» original, cuya única
         # línea es canónica y la regenera este grupo) no se escribe: dejarlo
         # produciría un `SUM` sobre sí mismo, que Excel marca como referencia
         # circular
         orden = [b for b in orden if bloques.get(b)]
+        ultimo_bloque = None
         for bloque in orden:
             clave_b = 'b_' + str(len(claves_bloque))
             claves_bloque.append(clave_b)
@@ -1483,6 +1632,8 @@ class Plan(object):
                 if grupo in amortiza:
                     amortiza[grupo].append(clave)
                 con_iva.append(clave)
+                editables_iva.append(clave)
+                rotulos_inv.append((clave, rot))
                 rej.add(clave, rot=rot,
                         valores={'B': importe, 'D': nota or '',
                                  'E': _lleva_iva(rot)},
@@ -1524,37 +1675,89 @@ class Plan(object):
                                   + meses_previos + ')'),
                             'C': (lambda R: '=' + R.c('renta1') + '/'
                                   + R.c('total', absoluta=True)),
-                            'D': texto_num(
-                                meses_previos, 'Renta de los ',
-                                ' meses de obra y licencias. NO se solapa con '
-                                'el P&L, que arranca el día de la apertura: '
-                                'los doce meses del P&L son los doce de '
-                                'explotación')})
+                            # B8 / PLURAL-01 / NUEVO-CAF-02 / REF-23: con
+                            # `meses_renta_previa` = 1, que es el valor por
+                            # defecto del grupo A, la nota imprimía «Renta de
+                            # los 1 meses». El plural se compone por fórmula.
+                            'D': ('="Renta "&IF(' + meses_previos
+                                  + '=1,"del mes","de los "&TEXT('
+                                  + meses_previos + ',"0")&" meses")&" de '
+                                  'obra y licencias. NO se solapa con el '
+                                  'P&L, que arranca el día de la apertura: '
+                                  'los doce meses del P&L son los doce de '
+                                  'explotación"')})
                 # RD-02 / RC-02 — imprevistos de obra. Por FÓRMULA sobre las
                 # partidas del bloque, nunca literal (§7-bis.11), y sin
                 # incluirse a sí mismo ni a las derivadas: un `SUM` sobre el
                 # subtotal del bloque sería referencia circular.
                 if primero and ultimo_item:
+                    # ⚠️ A8 / REF-06 (2026-09-05). La base era `SUM` del
+                    # BLOQUE ENTERO, así que el 10 % de «colchón de obra» se
+                    # dotaba también sobre la comisión de la inmobiliaria, la
+                    # licencia de actividad, el marketing de lanzamiento, el
+                    # stock inicial y el TPV — 10.500 € que no son obra en
+                    # tapas-bar—, mientras la nota que el propio motor
+                    # generaba afirmaba «de las partidas de obra y
+                    # acondicionamiento de este bloque». Ahora la base son
+                    # exactamente las partidas que `AMORT_DEFECTO` clasifica
+                    # como 'obra' en ESTE bloque, y la nota dice la verdad.
+                    obra_bloque = [k for k in amortiza['obra']
+                                   if rej.fila(k) >= rej.fila(primero)]
                     rej.add('imprevistos',
                             rot='Imprevistos de obra y acondicionamiento',
                             fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
                             valores={'E': 'Sí'},
                             formulas={
-                                'B': (lambda R, a=primero, b=ultimo_item:
-                                      '=IF(COUNT(' + R.c(a) + ':' + R.c(b)
-                                      + ')=0,"",ROUND(SUM(' + R.c(a) + ':'
-                                      + R.c(b) + ')*' + pct_imp + ',0))'),
+                                'B': ((lambda R, ks=tuple(obra_bloque):
+                                       '=IF(COUNT('
+                                       + ','.join(R.c(k) for k in ks)
+                                       + ')=0,"",ROUND(('
+                                       + '+'.join(R.c(k) for k in ks) + ')*'
+                                       + pct_imp + ',0))')
+                                      if obra_bloque else
+                                      (lambda R, a=primero, b=ultimo_item:
+                                       '=IF(COUNT(' + R.c(a) + ':' + R.c(b)
+                                       + ')=0,"",ROUND(SUM(' + R.c(a) + ':'
+                                       + R.c(b) + ')*' + pct_imp + ',0))')),
                                 'C': (lambda R: '=' + R.c('imprevistos') + '/'
                                       + R.c('total', absoluta=True)),
                                 'D': texto_pct(
-                                    pct_imp, 'Al ', ' de las partidas de obra '
-                                    'y acondicionamiento de este bloque. Un '
+                                    pct_imp, 'Al ', ' de las partidas de OBRA '
+                                    'Y ACONDICIONAMIENTO de este bloque '
+                                    '(proyecto técnico, obra civil, '
+                                    'instalaciones, extracción, decoración y '
+                                    'rotulación), no del bloque entero: la '
+                                    'inmobiliaria, las licencias, el '
+                                    'lanzamiento y el stock quedan fuera. Un '
                                     'banco no financia una reforma sin '
                                     'colchón: el porcentaje está en la hoja '
                                     'de Supuestos')})
                     con_iva.append('imprevistos')
+                    rotulos_inv.append(('imprevistos',
+                                        'Imprevistos de obra y '
+                                        'acondicionamiento'))
+                    # A8 / REF-19 — el colchón de obra es MAYOR COSTE DE LA
+                    # OBRA: capitaliza y entra en la base amortizable. Sin
+                    # esto, el libro amortizaba una obra más barata que la
+                    # que financia. No hay circularidad: la fila cuelga de
+                    # las partidas de obra, que son inputs directos.
+                    if obra_bloque:
+                        amortiza['obra'].append('imprevistos')
                 con_iva.append('renta1')
+                rotulos_inv.append(('fianza', 'Fianza del alquiler'))
+                rotulos_inv.append(('renta1',
+                                    'Alquiler de los meses previos a la '
+                                    'apertura'))
             ultimo_b = rej.filas[-1]['clave']
+            # A7 / REF-14 — el SUMIF del IVA soportado terminaba en la última
+            # clave de `con_iva`, que en el molde A-β (lista plana, un solo
+            # bloque) es «renta1»: la fila CALCULADA de imprevistos, marcada
+            # «Sí» y sumada por el subtotal (`SUM(B7:B27)`), quedaba FUERA del
+            # SUMIF (`$E$7:$E$26`). En tapas-bar eran 9.500 € × 21 % = 1.995 €
+            # de IVA soportado sin contar, y con ellos la necesidad de caja.
+            # El rango del SUMIF pasa a acabar donde acaba el SUM del último
+            # subtotal, que es esta misma fila.
+            ultimo_bloque = ultimo_b
             rej.filas[rej.fila(clave_b) - rej.fila0]['formulas'] = {
                 # RT-18 — `SUM` sobre celdas vacías devuelve 0, no `""`:
                 # un libro en blanco imprimía «0 €» en los seis subtotales
@@ -1580,6 +1783,8 @@ class Plan(object):
         # salida de caja y se quedan dentro.
         caja_fija = ('(' + self.rej['pyg'].r('tcf') + '-'
                      + self.rej['pyg'].r('cf_amort') + ')')
+        rotulos_inv.append(('fondo',
+                            'Colchón operativo hasta alcanzar el equilibrio'))
         rej.add('fondo', rot='Colchón operativo hasta alcanzar el equilibrio',
                 fmt=motor.FMT_EUR0, fmt_C=motor.FMT_PCT,
                 valores={'E': 'No'},
@@ -1591,11 +1796,14 @@ class Plan(object):
                           + '=0,"",' + meses + '*' + caja_fija + '/12)'),
                     'C': (lambda R: '=' + R.c('fondo') + '/'
                           + R.c('total', absoluta=True)),
-                    'D': texto_num(meses, 'Cubre ', ' meses de costes fijos '
-                                   'DE CAJA del año 1 (los del P&L menos la '
-                                   'amortización, que no se paga), que es el '
-                                   'mínimo que exigen las Instrucciones de '
-                                   'este libro')})
+                    # B8 (misma familia que la renta previa): con
+                    # `meses_fondo` = 1 la nota decía «Cubre 1 meses». Con la
+                    # concordancia por fórmula, el caso base (3) no cambia.
+                    'D': ('="Cubre "&TEXT(' + meses + ',"0")&IF(' + meses
+                          + '=1," mes"," meses")&" de costes fijos DE CAJA '
+                          'del año 1 (los del P&L menos la amortización, que '
+                          'no se paga), que es el mínimo que exigen las '
+                          'Instrucciones de este libro"')})
         rej.add('total', rot='INVERSIÓN TOTAL (suma de los bloques)',
                 bold=True, fmt=motor.FMT_EUR0,
                 formulas={'B': (lambda R: '=' + '+'.join(
@@ -1626,12 +1834,14 @@ class Plan(object):
         rej.add('iva', rot='IVA soportado sobre la inversión (recuperable)',
                 fmt=motor.FMT_EUR0,
                 formulas={
-                    'B': (lambda R, ks=tuple(con_iva):
+                    'B': (lambda R, ks=tuple(con_iva),
+                          fin=(ultimo_bloque or (con_iva[-1] if con_iva
+                                                 else None)):
                           ('=IF(' + R.c('total') + '="","",SUMIF('
                            + R.c(ks[0], 'E', absoluta=True) + ':'
-                           + R.c(ks[-1], 'E', absoluta=True) + ',"Sí",'
+                           + R.c(fin, 'E', absoluta=True) + ',"Sí",'
                            + R.c(ks[0], absoluta=True) + ':'
-                           + R.c(ks[-1], absoluta=True) + ')*'
+                           + R.c(fin, absoluta=True) + ')*'
                            + self.p.ref('iva_soportado') + ')') if ks
                           else '=0'),
                     'D': texto_pct(self.p.ref('iva_soportado'),
@@ -1648,6 +1858,23 @@ class Plan(object):
                           'D': '="Es la cifra que tiene que cubrir la hoja de '
                                'Financiación"'})
         # bases de amortización (TEC-20, NUEVO-02)
+        def _enumerar_fuera():
+            dentro = set(amortiza['obra']) | set(amortiza['maquinaria'])
+            fuera_ = [r.replace('"', '').strip()
+                      for k, r in rotulos_inv if k not in dentro]
+            # sin duplicados y conservando el orden de la hoja
+            vistos, limpio = set(), []
+            for r in fuera_:
+                if motor.norm(r) in vistos:
+                    continue
+                vistos.add(motor.norm(r))
+                limpio.append(r)
+            if not limpio:
+                return 'ninguna partida de este libro'
+            if len(limpio) == 1:
+                return limpio[0]
+            return ', '.join(limpio[:-1]) + ' ni ' + limpio[-1]
+
         rej.add('b_amort', rot='BASES DE AMORTIZACIÓN (no suman a la '
                 'inversión)', bold=True)
         for grupo, etiqueta, vida in (
@@ -1686,10 +1913,13 @@ class Plan(object):
                     # nombraba stock e imprevistos, que entonces no existían
                     # como fila. Ahora se GENERA con la cifra realmente
                     # excluida, así que no puede volver a desfasarse.
-                    'D': (lambda R: '="No se amortizan el fondo de maniobra, '
-                          'la fianza, el alquiler previo, el marketing de '
-                          'lanzamiento, los gastos de constitución ni las '
-                          'existencias iniciales: no son inmovilizado. Suman '
+                    # A8 / REF-19 — y la ENUMERACIÓN también se genera, desde
+                    # las filas que de verdad quedan fuera de las dos bases:
+                    # la lista escrita a mano no citaba ni la licencia de
+                    # actividad ni los imprevistos, que sí estaban dentro de
+                    # los euros que la propia frase declaraba excluidos.
+                    'D': (lambda R: '="No se amortizan, por no ser '
+                          'inmovilizado, ' + _enumerar_fuera() + '. Suman '
                           # TEC-21 residual (decisión del orquestador,
                           # 2026-08-29): «#,##0» es un formato con separador
                           # de MILES, y el separador de un código de formato
@@ -1707,11 +1937,26 @@ class Plan(object):
         # el marcador de IVA es una lista cerrada: si el usuario teclea «si»
         # sin tilde, el SUMIF deja de verlo y el IVA baja sin avisar (§1.5)
         if con_iva:
+            filas_dv = sorted(rej.fila(k) for k in editables_iva)
+            tramos, ini, prev = [], None, None
+            for _f in filas_dv:
+                if ini is None:
+                    ini = prev = _f
+                elif _f == prev + 1:
+                    prev = _f
+                else:
+                    tramos.append((ini, prev))
+                    ini = prev = _f
+            if ini is not None:
+                tramos.append((ini, prev))
+            celdas_dv = [('E%d:E%d' % t) if t[0] != t[1] else ('E%d' % t[0])
+                         for t in tramos]
             motor.dv_lista(ws, rej.c(con_iva[0], 'E') + ':'
                            + rej.c('fondo', 'E'), ['Sí', 'No'],
                            titulo='Marca no válida',
                            mensaje='Escribe «Sí» o «No»: de esta columna sale '
-                                   'el IVA soportado de la inversión.')
+                                   'el IVA soportado de la inversión.',
+                           celdas=celdas_dv or None)
         fila = rej.ultima + 2
         for i, texto in enumerate(pie):
             motor.val(ws, 'A' + str(fila + i), texto, wrap=True)
@@ -1726,10 +1971,17 @@ class Plan(object):
         cab = _cabecera(ws)
         fijos = self._fijos(ws, cab)
         pie = _pie(ws, cab)
-        _limpiar_area(ws, cab, ws.max_row, 7)
+        # A3 — la columna H la usa el molde que necesita partir una línea de
+        # venta entre dos tipos de IVA (el pan común al 4 %); se limpia
+        # SIEMPRE aunque no se escriba, o la 2.ª pasada de un producto que
+        # deje de usarla se quedaría con el resto de la primera.
+        _limpiar_area(ws, cab, ws.max_row, 8)
+        # A3 / REF-04 — la columna ya no es sólo del IVA SOPORTADO: las
+        # líneas de venta llevan en ella el tipo que REPERCUTEN, igual que
+        # las de coste llevan el que soportan.
         for i, texto in enumerate(('Concepto', 'Año 1', 'Año 2', 'Año 3',
                                    '% s/ventas (año 1)', 'Notas',
-                                   'Tipo de IVA soportado (%)')):
+                                   'Tipo de IVA de la línea (%)')):
             motor.val(ws, get_column_letter(i + 1) + str(cab), texto,
                       bold=True, wrap=True)
         # ⚠️ la columna G (tipo de IVA) NO tiene columna gemela en la fila de
@@ -1815,18 +2067,60 @@ class Plan(object):
                                  and lineas[0][2] == 'comida'
                                  and lineas[1][2] == 'bebida')
         for i, linea in enumerate(lineas):
-            rot, peso, grupo, nota, _fuente = (list(linea) + [None] * 5)[:5]
+            (rot, peso, grupo, nota, _fuente,
+             tipo_iva) = (list(linea) + [None] * 6)[:6]
             clave = 'lin_%d' % i
             ultimo = i == len(lineas) - 1
+            nota_linea = nota or ('Bebida' if grupo == 'bebida' else 'Comida')
             spec = {
                 'rot': rot, 'fmt': motor.FMT_EUR0, 'fmt_E': motor.FMT_PCT,
+                'fmt_G': motor.FMT_PCT,
                 'formulas': dict(
                     (col, (lambda R, c=col, k=clave: '=' + R.c('ingresos', c)
                            + '*' + R.c(k, 'E', absoluta=True)))
                     for col in ('B', 'C', 'D')),
-                'valores': {'F': nota or ('Bebida' if grupo == 'bebida'
-                                          else 'Comida')},
+                'valores': {},
             }
+            # ⚠️ A3 / REF-04 (2026-09-05). El IVA REPERCUTIDO se calculaba a
+            # golpe de dos porcentajes globales —`pct_comida × reducido +
+            # pct_bebida × mezcla_de_bebida`— y no había NINGUNA celda donde
+            # decir que una línea tributa a otro tipo. El único hermano cuyo
+            # producto principal es PAN COMÚN (tipo superreducido del 4 %,
+            # art. 91.Dos.1.1.º de la Ley 37/1992) repercutía el 10 % sobre
+            # toda su facturación, inflaba el saldo de caja y publicaba un
+            # PVP equivalente que no era el de una barra de pan. Ahora el
+            # tipo vive EN LA LÍNEA, y los tres consumidores (cobros con IVA,
+            # IVA repercutido del mes y PVP equivalente) lo leen con un
+            # SUMPRODUCT de pesos × tipos. Sin declarar nada, el resultado es
+            # exactamente el de antes.
+            if isinstance(tipo_iva, dict):
+                # línea PARTIDA entre dos tipos: el porcentaje que va al tipo
+                # especial es un INPUT verde en la propia fila (columna H)
+                cabecera_h = (tipo_iva.get('cabecera')
+                              or 'Parte de la línea al tipo especial (%)')
+                motor.val(ws, 'H' + str(cab), cabecera_h, bold=True,
+                          wrap=True)
+                spec['valores']['H'] = tipo_iva.get('pct', 0)
+                spec['fmt_H'] = motor.FMT_PCT
+                _bajo = repr(float(tipo_iva.get('tipo', 0.04)))
+                spec['formulas']['G'] = (
+                    lambda R, k=clave, b=_bajo: '=' + R.c(k, 'H') + '*' + b
+                    + '+(1-' + R.c(k, 'H') + ')*' + P('iva_reducido'))
+                if tipo_iva.get('nota'):
+                    nota_linea = nota_linea + ' · ' + tipo_iva['nota']
+            elif isinstance(tipo_iva, str) and tipo_iva.startswith('='):
+                spec['formulas']['G'] = tipo_iva
+            elif tipo_iva is not None:
+                spec['valores']['G'] = float(tipo_iva)
+                nota_linea = (nota_linea + ' · El tipo de IVA que REPERCUTE '
+                              'esta línea es un input (celda verde de la '
+                              'derecha): cámbialo si tu carta tributa a otro '
+                              'tipo.')
+            else:
+                spec['formulas']['G'] = ('=' + (iva_bebida
+                                                if grupo == 'bebida'
+                                                else P('iva_reducido')))
+            spec['valores']['F'] = nota_linea
             if self.mix_en_supuestos:
                 spec['formulas']['E'] = (
                     '=' + P('pct_comida' if grupo == 'comida'
@@ -1839,7 +2133,20 @@ class Plan(object):
             else:
                 spec['valores']['E'] = peso
                 spec['verdes'] = ('E',)
+            _verdes = list(spec.get('verdes') or ())
+            for _c in ('G', 'H'):
+                if _c in spec['valores'] and _c not in _verdes:
+                    _verdes.append(_c)
+            if _verdes:
+                spec['verdes'] = tuple(_verdes)
             rej.add(clave, **spec)
+        # A3 — pesos × tipos de las líneas de venta: el IVA repercutido MEDIO
+        # del libro, en un solo sitio y calculado desde la propia tabla.
+        self.iva_ventas = (
+            'SUMPRODUCT(' + rej.r('lin_0', 'E') + ':'
+            + rej.c('lin_%d' % (len(lineas) - 1), 'E', absoluta=True) + ','
+            + rej.r('lin_0', 'G') + ':'
+            + rej.c('lin_%d' % (len(lineas) - 1), 'G', absoluta=True) + ')')
         rej.add(rot='COSTES VARIABLES', bold=True)
         claves_var = []
 
@@ -1923,6 +2230,14 @@ class Plan(object):
 
         def fijo(clave, rot, formula_b, nota=None, verde=False, valor=None,
                  iva=None):
+            # A6 / M-05 — «Alquiler del local» en un negocio sin local. Las
+            # filas canónicas las escribe este grupo, así que su rótulo no
+            # pasaba por `_fijos` y el módulo de contenido no podía tocarlo.
+            _acc = self._reglas('FIJOS').get(motor.norm(rot))
+            if _acc and len(_acc) > 2 and _acc[2]:
+                rot = _acc[2]
+            if _acc and _acc[0] is None and _acc[1]:
+                nota = _acc[1]
             claves_fijos.append(clave)
             spec = {'rot': rot, 'fmt': motor.FMT_EUR0,
                     'fmt_E': motor.FMT_PCT, 'fmt_G': motor.FMT_PCT,
@@ -2110,6 +2425,11 @@ class Plan(object):
             u = umbrales.get(clave)
             valor = u[2] if u else umbral
             texto = u[3] if u else comentario
+            # A6 / M-05 — hasta ahora `ratio()` sólo tomaba de la tupla el
+            # VALOR y el COMENTARIO: el rótulo que el módulo de contenido
+            # declaraba era letra muerta y el libro publicaba «Alquiler /
+            # Ventas» en un producto sin local.
+            rot = (u[1] if u and u[1] else rot)
             rej.add(clave, rot=rot, fmt=motor.FMT_PCT, fmt_E=fmt_um,
                     valores={'E': valor, 'F': texto}, verdes=('E',),
                     formulas=dict(
@@ -2164,22 +2484,24 @@ class Plan(object):
                   'Todas las cifras van SIN IVA. Las columnas de los años 2 '
                   'y 3 están en euros del año 1 salvo que subas la '
                   'actualización de costes en la hoja de Supuestos. La '
-                  'columna «IVA soportado» dice a qué tipo se compra cada '
-                  'partida y la lee la hoja de Tesorería: los seguros y las '
-                  'comisiones de los medios de pago están exentos, y las '
-                  'nóminas, la amortización y los intereses no llevan IVA.',
+                  'columna «Tipo de IVA de la línea» dice, en las líneas de '
+                  'VENTA, a qué tipo se repercute cada una, y en las de '
+                  'COSTE a qué tipo se compra la partida. La lee la hoja de '
+                  'Tesorería: los seguros y las comisiones de los medios de '
+                  'pago están exentos, y las nóminas, la amortización y los '
+                  'intereses no llevan IVA.',
                   wrap=True)
         for i, texto in enumerate(pie):
             motor.val(ws, 'A' + str(fila + 1 + i), texto)
         motor.anchos(ws, {'A': 42, 'B': 15, 'C': 15, 'D': 15, 'E': 13,
-                          'F': 60, 'G': 14})
+                          'F': 60, 'G': 14, 'H': 16})
         motor.print_setup(ws, header_row=cab)
         return rej
 
 
     def _fijos(self, ws, cab):
         """Costes fijos que se CONSERVAN como input (§1.3)."""
-        reglas = self.dato('FIJOS', {}) or {}
+        reglas = self._reglas('FIJOS')
         fuera = []
         # SOLO el bloque de costes fijos: debajo están el EBITDA, el impuesto
         # y el resultado neto, que también son números en la columna B.
@@ -2205,6 +2527,13 @@ class Plan(object):
                 self.anota('P&L: «' + rot + '» ' + str(importe) + ' → '
                            + str(accion[0]) + ' — ' + (accion[1] or ''))
                 importe, nota = float(accion[0]), accion[1] or nota
+            elif accion and accion[0] is None and accion[1]:
+                nota = accion[1]
+            if accion and len(accion) > 2 and accion[2] \
+                    and motor.norm(accion[2]) != motor.norm(rot):
+                self.anota('P&L: rótulo «' + rot + '» → «' + accion[2]
+                           + '» (A6)')
+                rot = accion[2]
             fuera.append((rot, importe, nota))
         # los extras se añaden UNA vez: en la 2.ª pasada ya están dentro del
         # bloque de costes fijos y `_partidas` los devuelve como preservados
@@ -2351,26 +2680,46 @@ class Plan(object):
         # exige más rotaciones de las que da el local es un plan inviable, y
         # eso el modelo lo permite sin decir nada.
         aforo = self.p.ref('aforo')
-        rej.add('rot_max', rot='Rotaciones al día que da el local como máximo',
-                fmt=motor.FMT_DEC, verdes=('B',),
-                valores={'B': 3.0,
-                         'E': 'Servicios completos por plaza y día que puedes '
-                              'llegar a hacer con tu horario. Es el techo '
-                              'físico del local, no un objetivo'})
-        rej.add('rot_be', rot='Rotaciones al día que exige el equilibrio de '
-                'caja', fmt=motor.FMT_DEC,
-                formulas=dict(
-                    [(c, (lambda R, cc=c: '=' + R.c('cub_dia_caja', cc) + '/'
-                          + aforo)) for c in cols]
-                    + [('E', '="Cubiertos de equilibrio entre las plazas que '
-                        'declara la hoja de Supuestos. Por encima del techo '
-                        'de arriba, el punto de equilibrio está fuera del '
-                        'alcance del local"')]))
-        motor.semaforo_num(ws, rej.c('rot_be') + ':' + rej.c('rot_be', 'D'),
-                           verde_si=rej.c('rot_be') + '<='
-                           + rej.c('rot_max', absoluta=True),
-                           rojo_si=rej.c('rot_be') + '>'
-                           + rej.c('rot_max', absoluta=True))
+        # ⚠️ A5 / REF-01 / M-07 / MOT-02 (2026-09-05). El techo estaba
+        # CABLEADO a 3,0 servicios por plaza y día —la magnitud de un
+        # comedor— y el contenido no tenía ninguna clave para tocarlo: la
+        # panadería entregaba TRES CELDAS ROJAS en el caso base (10,3 / 11,6 /
+        # 12,0 rotaciones de un mostrador contra un techo de comedor) y el
+        # food truck sólo se salvaba calibrando el aforo, que es otra cosa.
+        # Ahora el molde puede fijar su techo o APAGAR el bloque entero
+        # cuando su driver es la transacción de mostrador y no el cubierto
+        # sentado, que es lo que el propio libro ya declara en Supuestos!C51.
+        rota = self.dato('ROTACION', {}) or {}
+        if rota.get('activa', True):
+            rej.add('rot_max',
+                    rot='Rotaciones al día que da el local como máximo',
+                    fmt=motor.FMT_DEC, verdes=('B',),
+                    valores={'B': _num(rota.get('max'), 3.0),
+                             'E': rota.get('nota_max')
+                             or 'Servicios completos por plaza y día que '
+                                'puedes llegar a hacer con tu horario. Es el '
+                                'techo físico del local, no un objetivo'})
+            rej.add('rot_be', rot='Rotaciones al día que exige el equilibrio '
+                    'de caja', fmt=motor.FMT_DEC,
+                    formulas=dict(
+                        [(c, (lambda R, cc=c: '=' + R.c('cub_dia_caja', cc)
+                              + '/' + aforo)) for c in cols]
+                        + [('E', '="Cubiertos de equilibrio entre las plazas '
+                            'que declara la hoja de Supuestos. Por encima del '
+                            'techo de arriba, el punto de equilibrio está '
+                            'fuera del alcance del local"')]))
+            motor.semaforo_num(ws, rej.c('rot_be') + ':'
+                               + rej.c('rot_be', 'D'),
+                               verde_si=rej.c('rot_be') + '<='
+                               + rej.c('rot_max', absoluta=True),
+                               rojo_si=rej.c('rot_be') + '>'
+                               + rej.c('rot_max', absoluta=True))
+        else:
+            self.anota('Punto de equilibrio: bloque de ROTACIONES suprimido '
+                       '(ROTACION[\'activa\'] = False): en este molde el '
+                       'driver es la transacción de mostrador, no el cubierto '
+                       'sentado, y comparar contra un techo de comedor pinta '
+                       'de rojo un caso base correcto')
         rej.add(rot='INTERPRETACIÓN', bold=True)
         # RC-30 — el párrafo redondeaba a entero mientras la celda de la que
         # habla muestra un decimal: el cliente leía «67 cubiertos al día» dos
@@ -2410,8 +2759,13 @@ class Plan(object):
                   'cubiertos que prevé el plan.', wrap=True)
         ws.row_dimensions[fila0 + 1].height = 30
         cabf = fila0 + 3
-        motor.val(ws, 'A' + str(cabf), 'Coste variable / cubierto', bold=True,
-                  wrap=True)
+        # B12 / R-23 — las dos magnitudes de la tabla van en euros y sin
+        # rótulo en el eje de columnas se podía leer girada: A33 rotulaba las
+        # FILAS y la cabecera B33:E33 llevaba los TICKETS sin nombre.
+        motor.val(ws, 'A' + str(cabf),
+                  'Cubiertos/día necesarios: ticket medio sin IVA '
+                  '(columnas) × coste variable por cubierto (filas)',
+                  bold=True, wrap=True)
         tk = rej.c('ticket', absoluta=True)
         for j, delta in enumerate((-2, 0, 2, 4)):
             col = get_column_letter(2 + j)
@@ -2587,7 +2941,13 @@ class Plan(object):
                     + R.c('neto', c) + '+' + pyg.r('cf_amort')
                     + '-' + self.rej['financiacion'].r('cap_1'))
 
-        rej.add('caja_cierre', rot='Saldo de caja al cierre del año 1',
+        # B3 / R-13 — el MÉTODO no cambia (la columna realista lee la
+        # tesorería real y las otras dos la estiman, que es lo correcto:
+        # pesimista y optimista no tienen tesorería mensual propia). Lo que
+        # cambia es el rótulo, que hasta ahora no lo decía.
+        rej.add('caja_cierre',
+                rot='Saldo de caja al cierre del año 1 (realista: tesorería '
+                    'mensual; pesimista y optimista: estimado)',
                 fmt=motor.FMT_EUR0, bold=True,
                 formulas=dict(
                     [(col, _caja(col)) for col in cols]
@@ -2782,9 +3142,10 @@ class Plan(object):
         # reserva y de reparto liquidan a D+1/D+30: con 0 días el resultado
         # no cambia y el modelo queda demostrable.
         d_cobro = P('dias_cobro')
-        ventas_iva = ('(' + pyg.r('ingresos') + '+' + pyg.r('ingresos') + '*('
-                      + P('pct_comida') + '*' + P('iva_reducido') + '+'
-                      + P('pct_bebida') + '*' + self.iva_bebida + '))')
+        # A3 — el IVA que se cobra al cliente sale de la tabla de líneas de
+        # venta del P&L (pesos × tipos), no de dos porcentajes globales.
+        ventas_iva = ('(' + pyg.r('ingresos') + '+' + pyg.r('ingresos') + '*'
+                      + self.iva_ventas + ')')
         cobros = {}
         for i in range(12):
             actual = ('%s*%s*(1-MIN(30,%s)/30)'
@@ -2831,9 +3192,17 @@ class Plan(object):
                 f.replace('{peso_i}', R.c('peso', c)).replace(
                     '{peso_p}', R.c('peso', p) if p else '0'))
         pagos['N'] = suma_ano('p_var')
-        pagos['O'] = ('Materia prima, consumibles, comisiones e imprevistos, '
-                      'cada uno con SU tipo de IVA (la columna del P&L) y con '
-                      'los días de pago a proveedor de Supuestos')
+        # B13 / R-24 — con días de pago a proveedor, la compra del último mes
+        # se paga en enero: la columna «Año» de ESTA fila es caja de doce
+        # meses, no el coste del ejercicio, y el lector la compara con el P&L.
+        pagos['O'] = ('="Materia prima, consumibles, comisiones e '
+                      'imprevistos, cada uno con SU tipo de IVA (la columna '
+                      'del P&L) y con los días de pago a proveedor de '
+                      'Supuestos."&IF(' + d_pago + '=0,""," Con "&TEXT('
+                      + d_pago + ',"0")&" días de pago, la compra del último '
+                      'mes se paga en enero: la columna «Año» de esta fila '
+                      'recoge las salidas de caja de doce mensualidades, no '
+                      'el coste del ejercicio.")')
         rej.add('p_var', rot='Compras y costes variables (IVA incluido)',
                 fmt=motor.FMT_EUR0, formulas=pagos)
         fijos_caja = ('(' + pyg.r('tcf') + '-' + pyg.r('cf_personal') + '-'
@@ -2873,15 +3242,15 @@ class Plan(object):
                 fmt=motor.FMT_EUR0,
                 formulas=dict(
                     [(cols[i], (lambda R, c=cols[i]: '=' + pyg.r('ingresos')
-                                + '*' + R.c('peso', c) + '*('
-                                + P('pct_comida') + '*' + P('iva_reducido')
-                                + '+' + P('pct_bebida') + '*'
-                                + self.iva_bebida + ')')) for i in range(12)]
+                                + '*' + R.c('peso', c) + '*'
+                                + self.iva_ventas)) for i in range(12)]
                     + [('N', suma_ano('iva_rep')),
-                       ('O', 'La bebida va al tipo que sale de la hoja de '
-                        'Supuestos: en sala, alcohol incluido, el reducido '
-                        '(art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el '
-                        'alcohol que sale por delivery, al general')]))
+                       ('O', 'Cada línea de venta a SU tipo, leído de la '
+                        'columna de IVA del P&L: en sala, alcohol incluido, '
+                        'el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 '
+                        'del IVA); el alcohol que sale por delivery, al '
+                        'general; el pan común y las harinas panificables, '
+                        'al superreducido (art. 91.Dos.1.1.º)')]))
         rej.add('iva_sop', rot='IVA soportado del mes (memoria)',
                 fmt=motor.FMT_EUR0,
                 formulas=dict(
@@ -2969,6 +3338,16 @@ class Plan(object):
                            + rej.c('saldo', cols[11]),
                            verde_si=rej.c('saldo', cols[0]) + '>0',
                            rojo_si=rej.c('saldo', cols[0]) + '<0')
+        # B9 / REF-09 — el semáforo genérico del motor pintaba de ROJO la
+        # fila «Resultado de la liquidación trimestral» en los trimestres
+        # NEGATIVOS, que son justo aquellos en los que no hay que pagar IVA
+        # (se compensa en el siguiente, y la nota de la fila ya lo dice). El
+        # motor la excluye ahora por rótulo y el rojo se reserva para el caso
+        # que sí duele: que el pago del 303 se coma el saldo de caja del mes.
+        motor.semaforo_num(ws, rej.c('iva_liq', cols[0]) + ':'
+                           + rej.c('iva_liq', cols[11]),
+                           rojo_si='-' + rej.c('iva_liq', cols[0]) + '>'
+                           + rej.c('saldo', cols[0]))
         # `MIN` sobre doce celdas vacías devuelve 0, y un 0 aquí pinta el
         # semáforo de VERDE en un libro sin datos: hay que preguntar antes si
         # hay algún número que comparar
@@ -3001,54 +3380,82 @@ class Plan(object):
         # payback) y el payback usaba el que la hoja NO había construido. El
         # año 1 pasa a ser el de la propia tabla; los años 2 y 3, que no
         # tienen tabla mensual, se estiman y la nota lo dice.
-        rej.add('fcf_1', rot='Flujo de caja libre del año 1 (tabla mensual)',
+        # ⚠️ A1 / R-06 / REF-07-motor / M-08 (2026-09-05). El payback CONTABA
+        # LA DEUDA DOS VECES: el numerador era la necesidad TOTAL de caja
+        # (CAPEX + fondo + IVA soportado, con el préstamo dentro) y el
+        # denominador, un flujo del que ya se habían restado los intereses Y
+        # la devolución de principal. Salía «Más de 3 años» en cuatro de los
+        # cinco hermanos, contradiciendo la referencia «Retorno de la
+        # inversión: 24-36 meses» que el propio libro publica. Ahora es el
+        # payback DEL PROYECTO: inversión sin el IVA (que se recupera por el
+        # 303) entre el flujo de caja libre ANTES del servicio de la deuda.
+        # Si el negocio puede pagar la cuota lo dice el DSCR, no el payback.
+        rej.add('fcf_1',
+                rot='Flujo de caja libre antes de la deuda, año 1',
                 fmt=motor.FMT_EUR0,
-                formulas={'B': (lambda R: '=' + R.c('flujo', 'N')),
-                          'D': '="Es la suma de los doce FLUJO DEL MES de '
-                               'arriba: ya lleva descontados el principal del '
-                               'préstamo y el IVA"'})
+                formulas={'B': (lambda R: '=' + R.c('flujo', 'N') + '+'
+                                + fin.r('int_1') + '+' + fin.r('cap_1')),
+                          'D': '="La suma de los doce FLUJO DEL MES de '
+                               'arriba, devolviéndole los intereses y el '
+                               'principal que se pagaron ese año: es lo que '
+                               'el negocio genera ANTES de atender al banco"'})
         for i, clave in ((2, 'fcf_2'), (3, 'fcf_3')):
             col = ('B', 'C', 'D')[i - 1]
-            rej.add(clave, rot='Flujo de caja libre estimado del año '
+            rej.add(clave, rot='Flujo de caja libre antes de la deuda, año '
                     + str(i), fmt=motor.FMT_EUR0,
                     formulas={'B': '=' + pyg.r('neto', col) + '+'
-                              + pyg.r('cf_amort', col) + '-'
-                              + fin.r('cap_%d' % i),
-                              'D': '="Resultado neto más amortización menos '
-                                   'la devolución de principal de ese año. '
-                                   'Sin tabla mensual, es una estimación"'})
+                              + pyg.r('cf_amort', col) + '+'
+                              + fin.r('int_%d' % i),
+                              'D': '="Resultado neto más amortización (que no '
+                                   'se paga) más los intereses de ese año: el '
+                                   'principal no se resta porque este flujo '
+                                   'es ANTES de la deuda. Sin tabla mensual, '
+                                   'es una estimación"'})
         rej.add('fcf_1_est',
-                rot='Contraste: resultado + amortización - principal (año 1)',
+                rot='Contraste: resultado + amortización + intereses (año 1)',
                 fmt=motor.FMT_EUR0,
                 formulas={'B': '=' + pyg.r('neto') + '+' + pyg.r('cf_amort')
-                          + '-' + fin.r('cap_1'),
+                          + '+' + fin.r('int_1'),
                           'D': '="La misma fórmula que los años 2 y 3, '
                                'aplicada al año 1. La diferencia con la fila '
                                'de arriba es el efecto del IVA y del desfase '
                                'de cobros y pagos"'})
-        rej.add('inv_recup', rot='Inversión a recuperar', fmt=motor.FMT_EUR0,
+        rej.add('inv_recup',
+                rot='Inversión a recuperar (sin el IVA, que se recupera por '
+                    'el 303)',
+                fmt=motor.FMT_EUR0,
                 formulas={
-                    'B': '=' + inv.r('caja'),
-                    'D': '="La APORTACIÓN TOTAL que hay que poner sobre la '
-                         'mesa, IVA incluido: es lo que de verdad se '
-                         'desembolsa. El fondo de maniobra se recupera al '
-                         'cerrar, pero hasta entonces está inmovilizado"'})
-        rej.add('payback', rot='Payback del proyecto (años)',
-                fmt=motor.FMT_DEC, bold=True,
+                    'B': '=' + inv.r('caja') + '-' + inv.r('iva'),
+                    'D': '="CAPEX más fondo de maniobra: la necesidad total '
+                         'de caja MENOS el IVA soportado de la inversión, que '
+                         'no se pierde (se recupera con el modelo 303 y esta '
+                         'misma hoja lo compensa trimestre a trimestre). El '
+                         'fondo de maniobra sí se recupera al cerrar, pero '
+                         'hasta entonces está inmovilizado"'})
+        rej.add('payback',
+                rot='Payback del proyecto (años), antes de la deuda',
+                # A1/B4 — la celda puede devolver el TEXTO «Más de 3 años»:
+                # con un formato numérico encima, cualquier suma del usuario
+                # da #¡VALOR!. Va en General, y el número se redondea dentro
+                # de la fórmula para que se lea igual de bien.
+                fmt='General', bold=True,
                 formulas={
                     'B': (lambda R: '=IF(' + R.c('fcf_1') + '>='
-                          + R.c('inv_recup') + ',' + R.c('inv_recup') + '/'
-                          + R.c('fcf_1') + ',IF(' + R.c('fcf_1') + '+'
-                          + R.c('fcf_2') + '>=' + R.c('inv_recup') + ',1+('
-                          + R.c('inv_recup') + '-' + R.c('fcf_1') + ')/'
-                          + R.c('fcf_2') + ',IF(' + R.c('fcf_1') + '+'
-                          + R.c('fcf_2') + '+' + R.c('fcf_3') + '>='
-                          + R.c('inv_recup') + ',2+(' + R.c('inv_recup') + '-'
+                          + R.c('inv_recup') + ',ROUND(' + R.c('inv_recup')
+                          + '/' + R.c('fcf_1') + ',1),IF(' + R.c('fcf_1') + '+'
+                          + R.c('fcf_2') + '>=' + R.c('inv_recup')
+                          + ',ROUND(1+(' + R.c('inv_recup') + '-'
+                          + R.c('fcf_1') + ')/' + R.c('fcf_2') + ',1),IF('
+                          + R.c('fcf_1') + '+' + R.c('fcf_2') + '+'
+                          + R.c('fcf_3') + '>=' + R.c('inv_recup')
+                          + ',ROUND(2+(' + R.c('inv_recup') + '-'
                           + R.c('fcf_1') + '-' + R.c('fcf_2') + ')/'
-                          + R.c('fcf_3') + ',"Más de 3 años")))'),
-                    'D': '="ÚNICO payback del pack: la aportación total entre '
-                         'el flujo de caja libre DESPUÉS de pagar el '
-                         'préstamo. El Word cita esta celda, no recalcula"'})
+                          + R.c('fcf_3') + ',1),"Más de 3 años")))'),
+                    'D': '="Mide cuánto tarda el negocio en devolver la '
+                         'inversión con lo que genera ANTES de pagar al '
+                         'banco; si puedes pagar la cuota lo dice el DSCR de '
+                         'la hoja de Financiación. El Word cita esta celda, '
+                         'no recalcula"'})
         self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
@@ -3158,11 +3565,15 @@ class Plan(object):
                 fmt=motor.FMT_PCT, formulas={'B': '=' + P('tipo_prestamo')})
         rej.add('plazo', rot='Plazo total (años)', fmt=motor.FMT_ENT,
                 formulas={'B': '=' + P('plazo_prestamo')})
+        # B1 / R-08 — con el libro vaciado, `IF("">="",0,"")` da 0: la hoja
+        # publicaba una carencia de «0 años» sobre un préstamo que no existe.
         rej.add('carencia', rot='Carencia de principal aplicada (años)',
                 fmt=motor.FMT_ENT,
-                formulas={'B': '=IF(' + P('carencia_prestamo') + '>='
+                formulas={'B': '=IF(OR(' + P('carencia_prestamo') + '="",'
+                          + P('plazo_prestamo') + '=""),"",IF('
+                          + P('carencia_prestamo') + '>='
                           + P('plazo_prestamo') + ',0,'
-                          + P('carencia_prestamo') + ')',
+                          + P('carencia_prestamo') + '))',
                           'C': '="Una carencia igual o mayor que el plazo no '
                                'existe: la hoja la anula en origen"'})
         # RT-06 — con el tipo al 0 % —un préstamo familiar, un ENISA o un ICO
@@ -3188,7 +3599,13 @@ class Plan(object):
                 valores={'B': 'Capital pendiente', 'C': 'Intereses',
                          'D': 'Amortización de principal', 'E': 'Cuota total',
                          'F': 'Capital al cierre',
-                         'G': 'Flujo de caja disponible',
+                         # A2 / R-14 — la etiqueta dice las dos cosas que hay
+                         # que saber para leer la columna: que va después de
+                         # impuestos y que a partir del año 4 repite el flujo
+                         # del año 3 (el P&L sólo proyecta tres).
+                         'G': 'Flujo disponible para la deuda (después de '
+                              'impuestos; del año 4 en adelante, el del año 3 '
+                              'mantenido)',
                          'H': 'DSCR del año'})
         # RT-07 — el cuadro tenía 10 filas fijas y el plazo no tenía tope de
         # validación: con un plazo de 12 años —el estándar de una línea ICO
@@ -3228,8 +3645,15 @@ class Plan(object):
                               + ')'),
                         'F': (lambda R, k=clave: '=IF(' + R.c(k, 'D')
                               + '="","",' + R.c(k) + '-' + R.c(k, 'D') + ')'),
+                        # A2 / R-20 — el flujo disponible para la deuda va
+                        # DESPUÉS de impuestos: el numerador era el resultado
+                        # ANTES de impuestos con la amortización y los
+                        # intereses devueltos, sin descontar el Impuesto de
+                        # Sociedades que el propio P&L liquida. El CFADS que
+                        # mira una entidad se calcula después del impuesto.
                         'G': (lambda R, k=clave, c=col_pyg: '=IF('
-                              + R.c(k, 'E') + '="","",' + pyg.r('rai', c) + '+'
+                              + R.c(k, 'E') + '="","",' + pyg.r('rai', c) + '-'
+                              + pyg.r('is', c) + '+'
                               + pyg.r('cf_amort', c) + '+' + pyg.r('cf_int', c)
                               + ')'),
                         'H': (lambda R, k=clave: '=IF(OR(' + R.c(k, 'E')
@@ -3280,7 +3704,8 @@ class Plan(object):
             rej.add('dscr_%d' % i, rot='DSCR del año ' + str(i),
                     fmt=motor.FMT_DEC2,
                     formulas={'B': (lambda R, n=i, c=col:
-                                    '=(' + pyg.r('rai', c) + '+'
+                                    '=(' + pyg.r('rai', c) + '-'
+                                    + pyg.r('is', c) + '+'
                                     + pyg.r('cf_amort', c) + '+'
                                     + R.c('int_%d' % n) + ')/('
                                     + R.c('int_%d' % n) + '+'
@@ -3297,7 +3722,12 @@ class Plan(object):
                                 + R.c('y_%d' % plazo_max, 'H') + '))'),
                           'C': '="El peor año de los que dura el préstamo, no '
                                'el mejor de los tres que proyecta el P&L. Es '
-                               'el número que decide una operación"'})
+                               'el número que decide una operación. Ojo al '
+                               'alcance: los años 1 a 3 salen del P&L y del '
+                               'año 4 en adelante el cuadro MANTIENE el flujo '
+                               'del año 3, así que el mínimo de esos años es '
+                               'una proyección sostenida, no un año '
+                               'calculado. El flujo va después de impuestos"'})
         dscr_min = P('dscr_min')
         dscr_obj = P('dscr_obj')
         for clave in ['dscr_%d' % i for i in (1, 2, 3)] + ['dscr_min']:
@@ -3312,10 +3742,11 @@ class Plan(object):
         self.pendientes.append(rej)
         fila = rej.ultima + 2
         motor.val(ws, 'A' + str(fila),
-                  'El DSCR se calcula ANTES de la deuda: al resultado antes '
-                  'de impuestos se le devuelven la amortización contable y '
-                  'los intereses, y el resultado se divide entre lo que hay '
-                  'que pagar ese año. Por debajo del mínimo de la hoja de '
+                  'El DSCR se calcula ANTES de la deuda y DESPUÉS de '
+                  'impuestos: al resultado antes de impuestos se le resta el '
+                  'Impuesto de Sociedades y se le devuelven la amortización '
+                  'contable y los intereses; el resultado se divide entre lo '
+                  'que hay que pagar ese año. Por debajo del mínimo de la hoja de '
                   'Supuestos, el negocio no genera para pagar el préstamo. '
                   'En el cuadro, el flujo de caja disponible de los años 4 en '
                   'adelante se mantiene en el del año 3: el P&L sólo proyecta '
@@ -3369,15 +3800,22 @@ class Plan(object):
             'de arranque en «' + self.ws_tesoreria.title + '», y las '
             'cuatro fuentes alternativas de financiación en «'
             + self.ws_financiacion.title + '». Todo lo demás se calcula.',
+            # A3 — los TRES divisores, no uno: el libro ya sabe que una
+            # línea de venta puede tributar al 4 % (pan común).
             '4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin '
-            'IVA, divide entre 1,10: en sala, la comida y la bebida (alcohol '
-            'incluido) van al tipo reducido (art. 91.Uno.2.2.º de la Ley '
-            '37/1992 del IVA). El 21 % es el tipo general y en hostelería '
-            'sólo alcanza a lo que sale del local como entrega de bienes '
-            'excluida del tipo reducido: el alcohol y los refrescos o zumos '
-            'con azúcares añadidos para llevar o a domicilio (la comida para '
-            'llevar sigue al 10 %); el libro lo aplica al alcohol del canal '
-            'de delivery. El IVA de la inversión se adelanta y se recupera '
+            'IVA, divide por el tipo que le corresponda: entre 1,04 el pan '
+            'común y las harinas panificables (tipo superreducido, art. '
+            '91.Dos.1.1.º de la Ley 37/1992 del IVA); entre 1,10 todo el '
+            'consumo en el acto —comida y bebida, alcohol incluido— y la '
+            'bollería y la pastelería (tipo reducido, art. 91.Uno.2.2.º); y '
+            'entre 1,21 el tipo general, que en hostelería sólo alcanza a lo '
+            'que sale del local como entrega de bienes excluida del reducido: '
+            'el alcohol y los refrescos o zumos con azúcares añadidos para '
+            'llevar o a domicilio (la comida para llevar sigue al 10 %); el '
+            'libro lo aplica al alcohol del canal de delivery. El tipo de '
+            'cada línea de venta está en la columna «Tipo de IVA de la línea» '
+            'del P&L y de ahí salen los cobros, el IVA repercutido y el PVP '
+            'equivalente. El IVA de la inversión se adelanta y se recupera '
             'con el modelo 303.',
             '5. Si cambias la plantilla, el P&L la lee sola: el coste de '
             'personal sale de la hoja «Personal», no de una estimación '
@@ -3404,12 +3842,16 @@ class Plan(object):
             motor.val(ws, get_column_letter(col + i) + str(fila), texto,
                       bold=True)
         fila += 1
+        # A6 — el mismo rótulo que publica el bloque RATIOS CLAVE del P&L:
+        # si el molde lo renombra, las dos tablas tienen que decir lo mismo.
+        _umbrales_rot = dict((u[0], u[1])
+                             for u in (self.dato('UMBRALES') or ()) if u[1])
         for clave, rot in (('r_cogs', 'Coste de mercancía / Ventas'),
                            ('r_personal', 'Coste de personal / Ventas'),
                            ('r_alquiler', 'Alquiler / Ventas'),
                            ('r_neto', 'Resultado neto / Ventas'),
                            ('r_mb', 'Margen bruto / Ventas')):
-            motor.val(ws, letra + str(fila), rot)
+            motor.val(ws, letra + str(fila), _umbrales_rot.get(clave, rot))
             fx(ws, get_column_letter(col + 1) + str(fila),
                '=' + pyg.r(clave), motor.FMT_PCT)
             fx(ws, get_column_letter(col + 2) + str(fila),
@@ -3442,8 +3884,8 @@ class Plan(object):
                  motor.FMT_EUR0),
                 ('Cubiertos/día para el punto de equilibrio',
                  '=' + eq.r('cub_dia'), motor.FMT_DEC),
-                ('Payback del proyecto (años)',
-                 '=' + self.rej['tesoreria'].r('payback'), motor.FMT_DEC)):
+                ('Payback del proyecto (años), antes de la deuda',
+                 '=' + self.rej['tesoreria'].r('payback'), 'General')):
             motor.val(ws, letra + str(fila), rot)
             fx(ws, get_column_letter(col + 1) + str(fila), formula, fmt)
             fila += 1
@@ -3904,8 +4346,13 @@ DIRECCIONES = (
      (('personal_pyg', 'sube'), ('personal_hoja', 'sube'), ('rai', 'baja'))),
     ('prestamo_sup', lambda v: (v or 110000) + 40000,
      (('int1', 'sube'), ('cuota', 'sube'), ('dif', 'sube'), ('rai', 'baja'))),
+    # B15 / DEMO-2119 — el objetivo era «Devolución de principal del año 2»,
+    # que con dos años de CARENCIA vale 0 por diseño: la comprobación no
+    # podía pasar nunca y el motor prohibía de facto cualquier carencia >= 2,
+    # que la SPEC §2.8 contempla explícitamente. Ahora se resuelve el PRIMER
+    # año que amortiza (carencia + 1).
     ('plazo_sup', lambda v: (v or 7) + 3,
-     (('cuota', 'baja'), ('cap2', 'baja'))),
+     (('cuota', 'baja'), ('cap_amortiza', 'baja'))),
     ('meses_fondo_sup', lambda v: (v or 3) + 3,
      (('fondo_inv', 'sube'), ('caja', 'sube'), ('saldo_min', 'sube'),
       ('rai', 'igual'))),
@@ -3951,6 +4398,23 @@ def demos(carpeta, demos_dir, pid, origen=None):
             return None
         return "'" + nombres[clave] + "'!" + col + str(fila)
 
+    # A6 — los rótulos de los cinco ratios los puede renombrar el módulo de
+    # contenido (`UMBRALES[i][1]`): «Alquiler / Ventas» es «Aparcamiento /
+    # Ventas» en un producto sin local. Las demostraciones resuelven por
+    # RÓTULO, así que tienen que preguntar por el del molde o dan un falso
+    # «no se localiza la fila» y tumban el dry-run entero.
+    try:
+        import importlib as _il
+        _cont = _il.import_module('contenido_' + pid.replace('-', '_') + '.a')
+    except Exception:                                        # noqa: BLE001
+        _cont = None
+    _rot_ratio = dict((u[0], u[1])
+                      for u in (getattr(_cont, 'UMBRALES', None) or ())
+                      if len(u) > 1 and u[1])
+
+    def RATIO(clave, defecto):
+        return _rot_ratio.get(clave, defecto)
+
     sup = [k for k in nombres if k.startswith('0. supuestos')]
     sup = nombres[sup[0]] if sup else motor.HOJA_SUPUESTOS
     pyg = [k for k in nombres if 'p&l' in k or k.startswith('pyg')]
@@ -3981,8 +4445,10 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'neto': R(pyg, 'RESULTADO NETO'),
         'personal_pyg': R(pyg, 'Personal (nóminas + Seguridad Social)'),
         'personal_hoja': R(per, 'TOTAL PLANTILLA', 'G'),
-        'r_personal': R(pyg, 'Coste de personal / Ventas'),
-        'u_personal': R(pyg, 'Coste de personal / Ventas', 'E'),
+        'r_personal': R(pyg, RATIO('r_personal',
+                                  'Coste de personal / Ventas')),
+        'u_personal': R(pyg, RATIO('u_personal', RATIO(
+            'r_personal', 'Coste de personal / Ventas')), 'E'),
         'deliv_pyg': R(pyg, 'Comisiones de delivery'),
         'is1': R(pyg, 'Impuesto de Sociedades'),
         'is2': R(pyg, 'Impuesto de Sociedades', 'C'),
@@ -4003,8 +4469,9 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'fondo': R(inv, 'Colchón operativo hasta alcanzar el equilibrio'),
         'cierre': R(fin, 'Capital pendiente al vencimiento'),
         'cv_comida': R(pyg, 'Coste de mercancía — comida'),
-        'r_cogs': R(pyg, 'Coste de mercancía / Ventas'),
-        'r_alquiler': R(pyg, 'Alquiler / Ventas'),
+        'r_cogs': R(pyg, RATIO('r_cogs',
+                               'Coste de mercancía / Ventas')),
+        'r_alquiler': R(pyg, RATIO('r_alquiler', 'Alquiler / Ventas')),
         'amort': R(pyg, 'Amortización del inmovilizado'),
         'ingresos2': R(pyg, 'INGRESOS TOTALES (sin IVA)', 'C'),
         'tcf2': R(pyg, 'TOTAL COSTES FIJOS', 'C'),
@@ -4032,7 +4499,22 @@ def demos(carpeta, demos_dir, pid, origen=None):
         'delivery_sup': R(sup, 'Ventas por delivery sobre el total'),
         'y4': R(fin, None) if False else None,
     }
-    faltan = [k for k, v in celdas.items() if v is None and k != 'y4']
+    # B15 — el primer año que AMORTIZA de verdad: con carencia 1 es el 2 (lo
+    # de siempre), con carencia 2 el 3, y con una carencia mayor que la
+    # proyección la comprobación se omite en vez de fallar.
+    _car = 1
+    if celdas.get('carencia'):
+        _v = wb[sup][celdas['carencia'].split('!')[-1]].value
+        if isinstance(_v, (int, float)) and not isinstance(_v, bool):
+            _car = int(_v)
+    _n_amort = _car + 1
+    celdas['cap_amortiza'] = (
+        R(fin, 'Devolución de principal del año ' + str(_n_amort))
+        if 1 <= _n_amort <= 3 else None)
+    res['primer_ano_que_amortiza'] = {'carencia': _car, 'ano': _n_amort,
+                                      'celda': celdas['cap_amortiza']}
+    faltan = [k for k, v in celdas.items()
+              if v is None and k not in ('y4', 'cap_amortiza')]
     if faltan:
         res['fallos'].append('grupo_a: no se localizan las filas '
                              + ', '.join(sorted(faltan)))
@@ -4067,9 +4549,12 @@ def demos(carpeta, demos_dir, pid, origen=None):
              'RESULTADO ANTES DE IMPUESTOS', 'B'),
             ('resultado_neto_ano_1', pyg, 'RESULTADO NETO', 'B'),
             ('resultado_neto_ano_3', pyg, 'RESULTADO NETO', 'D'),
-            ('margen_neto_pct', pyg, 'Resultado neto / Ventas', 'B'),
-            ('ratio_personal_pct', pyg, 'Coste de personal / Ventas', 'B'),
-            ('ratio_cogs_pct', pyg, 'Coste de mercancía / Ventas', 'B'),
+            ('margen_neto_pct', pyg,
+             RATIO('r_neto', 'Resultado neto / Ventas'), 'B'),
+            ('ratio_personal_pct', pyg,
+             RATIO('r_personal', 'Coste de personal / Ventas'), 'B'),
+            ('ratio_cogs_pct', pyg,
+             RATIO('r_cogs', 'Coste de mercancía / Ventas'), 'B'),
             ('coste_de_personal', pyg,
              'Personal (nóminas + Seguridad Social)', 'B'),
             ('plantilla_personas', per, 'TOTAL PLANTILLA', 'B'),
@@ -4098,6 +4583,40 @@ def demos(carpeta, demos_dir, pid, origen=None):
                  'rótulo no aparece.',
         'celdas': mapa_t9,
         'sin_localizar': sorted(k for k, v in mapa_t9.items() if v is None)}
+
+    # ---- A7 (gate propio) — el rango del SUMIF del IVA soportado de la
+    # inversión tiene que cubrir EXACTAMENTE el mismo tramo que los SUM de
+    # los subtotales de bloque. Es el defecto REF-14: el SUMIF se quedaba una
+    # fila corta y dejaba fuera los imprevistos, que sí están marcados «Sí».
+    ws_inv = wb[inv]
+    rx_sumif = re.compile(r'SUMIF\(\$E\$(\d+):\$E\$(\d+)')
+    rx_sum_b = re.compile(r'SUM\(B(\d+):B(\d+)\)')
+    _a = _b = None
+    _tramos = []
+    for _r in range(1, ws_inv.max_row + 1):
+        _v = ws_inv.cell(row=_r, column=2).value
+        if not isinstance(_v, str):
+            continue
+        _rot = motor._rotulo_de_fila(ws_inv, _r, max_col=1) or ''
+        _m = rx_sumif.search(_v)
+        if _m and 'iva soportado' in motor.norm(_rot):
+            _a, _b = int(_m.group(1)), int(_m.group(2))
+        _m2 = rx_sum_b.search(_v)
+        if _m2 and _es_mayusculas(_rot or ' '):
+            _tramos.append((int(_m2.group(1)), int(_m2.group(2))))
+    if _a is not None and _tramos:
+        _ini = min(t[0] for t in _tramos)
+        _fin = max(t[1] for t in _tramos)
+        _ok = (_a == _ini and _b == _fin)
+        res['gate_A7_sumif_iva_inversion'] = {
+            'sumif': 'E%d:E%d' % (_a, _b),
+            'subtotales_de_bloque': 'B%d:B%d' % (_ini, _fin), 'ok': _ok}
+        if not _ok:
+            res['fallos'].append(
+                'A7 / REF-14: el SUMIF del IVA soportado de la inversión '
+                'cubre E%d:E%d y los subtotales de bloque suman B%d:B%d — '
+                'hay partidas marcadas «Sí» fuera del SUMIF' % (_a, _b, _ini,
+                                                                _fin))
 
     xl = _pycel(path)
     base = dict((k, _ev(xl, v)) for k, v in celdas.items() if v)
@@ -4351,6 +4870,13 @@ def demos(carpeta, demos_dir, pid, origen=None):
         xln = _pycel(_clon(path, ruta,
                            [(sup, celda.split('!')[-1], valor)]))
         for objetivo, sentido in esperado:
+            if celdas.get(objetivo) is None:
+                direcciones.append({'input': clave, 'objetivo': objetivo,
+                                    'omitido': 'no aplica en este producto '
+                                               '(carencia >= 3 años: ningún '
+                                               'año proyectado amortiza)',
+                                    'ok': True})
+                continue
             antes = num(base.get(objetivo))
             if antes is None:
                 antes = num(_ev(xl, celdas[objetivo]))

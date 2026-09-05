@@ -1,0 +1,684 @@
+{
+ "version": "2.2",
+ "hechos": [
+  {
+   "item": "A1 · payback del proyecto ANTES de la deuda",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3383-3459 (tesoreria) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3887 (instrucciones)",
+   "como": "inv_recup pasa a ser «necesidad total de caja − IVA soportado de la inversión» (= CAPEX + fondo de maniobra) y los tres flujos se calculan ANTES del servicio de la deuda: año 1 = suma de los doce FLUJO DEL MES + intereses del año 1 + devolución de principal del año 1; años 2 y 3 = resultado neto + amortización + intereses de ese año. Rótulos «Inversión a recuperar (sin el IVA, que se recupera por el 303)», «Flujo de caja libre antes de la deuda, año N» y «Payback del proyecto (años), antes de la deuda». La celda va en formato General (puede devolver «Más de 3 años») y cada rama numérica lleva ROUND(...,1). Instrucciones!B30 lee la misma celda, también en General. MEDIDO en el bar: 6. Tesorería 12 meses!B31 2,7488 → 1,9 y B30 201.899,40 € → 179.014,80 €."
+  },
+  {
+   "item": "A2 · CFADS después de impuestos",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3648-3660 (columna G del cuadro), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3702-3712 (DSCR 1-3), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3596-3608 (cabecera G), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3737 (nota de B54), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3760 (nota de cierre)",
+   "como": "Se resta PyG!IS del numerador en la columna G del cuadro (G27:G41) y en DSCR años 1-3 (B51:B53). Cabecera de G: «Flujo disponible para la deuda (después de impuestos; del año 4 en adelante, el del año 3 mantenido)»; la nota de «DSCR mínimo de todo el cuadro» declara que los años 4+ mantienen el flujo del año 3 y que va después de impuestos. MEDIDO en el bar: 7. Financiación!B54 3,7864 → 3,3131 y H27 9,5889 → 8,4716."
+  },
+  {
+   "item": "A3 · IVA repercutido POR LÍNEA de venta",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2084-2160 (columna G y self.iva_ventas), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1062-1080 (Supuestos B9/C9), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3145-3149 (cobros), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3243-3255 (IVA repercutido del mes), contrato en /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1979-1990",
+   "como": "LINEAS_INGRESO admite un 6.º campo `iva`: fórmula (str que empieza por «=»), número (celda VERDE con nota) o dict {cabecera, pct, tipo, nota} para partir la línea entre dos tipos con un input verde en la columna H de la propia fila. Por defecto, comida → 0. Supuestos!$B$39 y bebida → la mezcla RD-17. Los TRES consumidores pasan a SUMPRODUCT(pesos_E, tipos_G) de las líneas de ingreso: Tesorería!B9:M9 (cobros con IVA), B16:M16 (IVA repercutido) y 0. Supuestos!B9 (PVP equivalente). Cabecera de G: «Tipo de IVA de la línea (%)». C9 e Instrucciones línea 4 reescritas con los tres divisores 1,04 / 1,10 / 1,21. VERIFICADO: en el bar cambian 32 fórmulas y CERO valores."
+  },
+  {
+   "item": "A4 · cobertura de horas sobreescribible",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1365-1420 (bloque COBERTURA) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1424-1440 (horas necesarias)",
+   "como": "Clave opcional COBERTURA = {horas_dia, personas_franja, horas_produccion, personas_produccion, nota_horas, nota_personas, nota_horas_produccion, nota_personas_produccion} con 13, 2, 0 y 0 por defecto. Con producción declarada se añaden DOS filas y horas_necesarias = horas_dia×personas_franja×días + horas_produccion×personas_produccion×días. Las filas de producción sólo se emiten si ambas son > 0, para que el representante y la cafetería queden byte a byte igual. MEDIDO: panadería 8.077,6 h contratadas / 7.936 h necesarias = 101,8 %; food truck 2.962,4 / 3.000 = 98,75 % (antes 45,6 %, rojo)."
+  },
+  {
+   "item": "A5 · techo de rotación y frase de referencia sobreescribibles",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2683-2724 (Punto Equilibrio) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1084-1104 (Supuestos A50:C50)",
+   "como": "Clave opcional ROTACION = {activa, max, nota_max, referencia}. Con activa=False no se emiten las filas «Rotaciones al día que da el local como máximo» ni «…que exige el equilibrio de caja» (ni su formato condicional) y 0. Supuestos!A50:C50 se escriben VACÍAS (no basta con no escribirlas: el fichero de partida trae las de la versión anterior). `referencia` sustituye la frase fija de C50. MEDIDO: panadería y food truck ya no tienen fila rot_be (0 celdas rojas); tapas-bar publica su propia referencia en C50."
+  },
+  {
+   "item": "A6 · rótulos de filas canónicas y de ratios",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:949-978 (_reglas/_rotulo_regla con ALIAS), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1564-1572 (INVERSION), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2318-2330 (_fijos), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2233-2240 (filas canónicas de coste fijo), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2428-2432 (ratio()), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3845-3856 (Instrucciones), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4401-4415 (demos)",
+   "como": "INVERSION y FIJOS admiten una tupla de 3 (importe|None, nota, rotulo_nuevo) conservando la posición; importe=None = «deja la cifra, cambia la nota». El rótulo NUEVO se indexa también como clave (alias) para que la 2.ª pasada lo encuentre y no revierta. ratio() toma el rótulo de UMBRALES[i][1] y la tabla de Instrucciones usa el mismo. grupo_a.demos() resuelve los cinco ratios por el rótulo del molde (importa el módulo de contenido) o daría un falso «no se localiza la fila» y tumbaría el dry-run. MEDIDO en food truck: PyG 3 Años!A22 «Aparcamiento y base del vehículo» y !A55 «Aparcamiento / Ventas»."
+  },
+  {
+   "item": "A7 · el SUMIF del IVA de la inversión cubre el mismo rango que el SUM del subtotal",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1752-1770 (rango) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4587-4620 (gate propio)",
+   "como": "El rango del SUMIF termina en la ÚLTIMA fila del ÚLTIMO bloque (ultimo_bloque), no en la última clave de con_iva, que en el molde A-β es «renta1» y dejaba fuera la fila calculada de imprevistos. Gate propio en demos(): compara el rango del SUMIF con el tramo que cubren los SUM de los subtotales de bloque; si no coinciden, FALLO. MEDIDO: los 5 dan ok=true (bar E7:E45 = B7:B45; tapas-bar E7:E27 = B7:B27, antes E7:E26). Efecto en tapas-bar: IVA soportado de la inversión 20.055,00 € → 20.989,50 €."
+  },
+  {
+   "item": "A8 · imprevistos sobre la base de OBRA, que capitalizan",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1694-1745 (base y nota), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1739-1745 (capitalización), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1908-1930 (enumeración generada de D37)",
+   "como": "La base de «Imprevistos de obra y acondicionamiento» son SÓLO las partidas que AMORT_DEFECTO clasifica como 'obra' en ese bloque (antes era SUM del bloque entero, con inmobiliaria, licencias, lanzamiento, stock y TPV dentro, mientras la nota afirmaba lo contrario). La fila entra además en la base amortizable de obra y la enumeración de «No se amortizan…» se GENERA desde las filas que de verdad quedan fuera de las dos bases. MEDIDO en el bar: imprevistos 3.800 → 3.650 €, base de obra 44.500 → 48.150 €, amortización anual 8.396 → 8.761 €, inversión total 179.164,80 → 179.014,80 €, IVA 22.734,60 → 22.703,10 €."
+  },
+  {
+   "item": "B1 · guardas de libro vacío",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1042-1046 y :1053 (Supuestos B12), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1428-1436 (Personal), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3568-3577 (Financiación)",
+   "como": "0. Supuestos!B12 = IF(COUNT(B11)=0,\"\",1-B11) (antes imprimía «100,0 %» con el libro vaciado); PyG!E11/E12 heredan la guarda por ser espejos de B11/B12; Personal «Horas de servicio a cubrir al año» y Financiación «Carencia de principal aplicada» reciben su IF(OR(...=\"\"),\"\"). Las tres celdas del bar cambian de fórmula y NO de valor."
+  },
+  {
+   "item": "B2 · Personal!A2 por fórmula",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1215-1240",
+   "como": "Se busca en las filas por ENCIMA de la cabecera (que _limpiar_area no toca) un texto con un porcentaje escrito a mano y las palabras convenio/pagas/SS y se sustituye por =\"Convenio Hostelería — \"&TEXT(pagas,\"0\")&\" pagas + SS \"&TEXT(ss*100,\"0\")&\" %\". Con «0», no «0,0%», que depende del locale. MEDIDO: tapas-bar Personal!A2 imprime «Convenio Hostelería — 14 pagas + SS 33 %» (antes «33.4 %», que contradecía Supuestos!B20 = 33 %). El representante no se toca: su A2 es «Cuadro de Personal y Coste Laboral»."
+  },
+  {
+   "item": "B3 · rótulo honesto del saldo de cierre de Escenarios",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2944-2952",
+   "como": "El MÉTODO no cambia (realista = tesorería mensual real; pesimista y optimista = estimado, porque no tienen tesorería propia). El rótulo pasa a «Saldo de caja al cierre del año 1 (realista: tesorería mensual; pesimista y optimista: estimado)»."
+  },
+  {
+   "item": "B4 · toda celda de TEXTO en formato General",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:1938-1958 (formatos_texto), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:2737-2746 (gate_formatos), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:3110-3115 (2.ª pasada tras cierre_instrucciones)",
+   "como": "formatos_texto deja de mirar sólo €/% y pone General en CUALQUIER celda que imprima texto con un formato distinto de General/@ (las notas heredaban «#,##0» y «#,##0.0» de la fila que copian). gate_formatos lo detecta igual. Se añade una segunda pasada después de cierre_instrucciones, que copia el estilo de la línea que sustituye y podía reintroducir el defecto. MEDIDO: el bar pasa de 5 celdas (PE!E26, Personal!J20-J23) a 0, y los 10 xlsx de los cinco productos dan 0."
+  },
+  {
+   "item": "B5 · la validación «Sí,No» sólo sobre filas editables",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1603-1610 (lista editables_iva) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1836-1860 (tramos del sqref)",
+   "como": "El desplegable se cuelga sólo de las filas de PARTIDA (las verdes), no de las calculadas (fianza, renta previa, imprevistos, colchón) ni de las cabeceras de bloque, que están bloqueadas y hacían que Excel contestara «la celda está protegida». MEDIDO en el bar: sqref E7:E47 → «E7:E10 E15:E24 E26:E35 E37:E39 E41:E42 E44:E45»."
+  },
+  {
+   "item": "B6 · tildes",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:1695-1730 (TILDES_EXTRA), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:2523-2528 (RX_SIN_TILDE_2), /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:2610-2618 (HOMOGRAFAS)",
+   "como": "40 pares SEGUROS añadidos (sin lectura legítima sin tilde): vehículo/s, móvil/es, datáfono/s, máquina/s, físico/a/s, menú/s, tráfico, rótulo/s, fórmula/s, único/a/s, atrás, rápido/a/s, cálido/a/s, baño/s, desagüe/s, sándwich/es, estándar/es, tipografía/s, telemático/a/s, cómodo/a/s, ingeniería y conexión/es. Las que estaban vivas en el corpus entran también en el gate cerrado. MOT-04: cuanto/cuánto, donde, cuando, cual/es, quien/es, porque y adonde entran en HOMOGRAFAS para que la heurística de convivencia deje de tumbar frases correctas. RESULTADO: el food truck llega a 13/13 y publica «Vehículo food truck», «Adaptación y rotulación vehículo», «Equipamiento cocina móvil», «TPV móvil + datáfono», «Mantenimiento vehículo + ITV» y la hoja del checklist se renombra a «F2 - Vehículo»."
+  },
+  {
+   "item": "B7 · fuera el id interno del rótulo",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1323-1329",
+   "como": "«CRECIMIENTO DE LA PLANTILLA (coste escalonado, RD-10)» → «CRECIMIENTO DE LA PLANTILLA (coste escalonado)». Era la única celda de los dos entregables que publicaba un id de auditoría interna al comprador."
+  },
+  {
+   "item": "B8 · plural de «Renta de los 1 meses»",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1676-1690 (renta previa) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:1790-1800 (colchón)",
+   "como": "La nota de la renta previa se compone con IF(meses=1,\"del mes\",\"de los N meses\"); la del colchón con IF(meses=1,\" mes\",\" meses\") para que el caso base (3 meses) no cambie de texto. MEDIDO en el bar: Inversión!D12 pasa a «Renta del mes de obra y licencias…»."
+  },
+  {
+   "item": "B9 · la liquidación trimestral negativa deja de pintarse en rojo",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:2456-2470 (RX_RESULTADO_EXENTO en semaforos_resultado) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3341-3352 (semáforo propio)",
+   "como": "El motor excluye del semáforo genérico la fila «Resultado de la liquidación trimestral» (en negativo es IVA A COMPENSAR) y grupo_a pone el rojo donde duele: en «Pago del IVA (modelo 303)», cuando el pago supera el saldo de caja de ese mes. MEDIDO en el bar: desaparece el CF de E19:K19 y aparece B20:M20 con AND(ISNUMBER(B20),-B20>B22)."
+  },
+  {
+   "item": "B10 · guarda del cross-sell",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:2193-2232",
+   "como": "RX_LINEA_CATALOGO exige ahora que la celda EMPIECE por kit/guía/pack/megapack/ebook/plan (con viñeta opcional) o cite aichef.pro/productos. Antes casaba «plan » en cualquier parte de la frase y mutilaba importes reales sin avisar («de 200.000 € a 250.000 €» → «de 200. a 250.»). Además, cada celda modificada se NOMBRA en el informe del run."
+  },
+  {
+   "item": "B11 · RX_EURO_FUERTE conoce «ventas» y «derechos»",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:1338-1348",
+   "como": "Un rótulo de euros con «día» o «eventos» dentro dejaba de reconocerse como importe y el gate lo marcaba como «recuento con €» (6 celdas del food truck). Es la lista que ya existía para «Ingresos por eventos»; le faltaban estos dos."
+  },
+  {
+   "item": "B12 · rótulo de la tabla de sensibilidad",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:2762-2770",
+   "como": "«Coste variable / cubierto» → «Cubiertos/día necesarios: ticket medio sin IVA (columnas) × coste variable por cubierto (filas)». Las dos magnitudes van en euros y la tabla se podía leer girada."
+  },
+  {
+   "item": "B13 · la columna «Año» de la fila de compras es CAJA, no coste",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:3195-3210",
+   "como": "La nota O11 se compone por fórmula: «… Con N días de pago, la compra del último mes se paga en enero: la columna Año de esta fila recoge las salidas de caja de doce mensualidades, no el coste del ejercicio.» Con 0 días de pago la coletilla no se imprime."
+  },
+  {
+   "item": "B14 · no volver a envolver una fórmula ya guardada",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:708-720 (escribir)",
+   "como": "Antes de añadir la guarda del driver se comprueba que el cuerpo no empiece ya por IF(<misma celda>=\"\",\"\",. MEDIDO en el bar: PyG!B59/C59/D59 pierden el envoltorio duplicado sin cambiar de valor."
+  },
+  {
+   "item": "B15 · la demo §2.11.9 mira el PRIMER año que amortiza",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4349-4356 (DIRECCIONES) y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/grupo_a.py:4502-4517 (resolución + omisión)",
+   "como": "El objetivo cap2 («Devolución de principal del año 2») vale 0 POR DISEÑO con dos años de carencia, así que la comprobación no podía pasar nunca y el motor prohibía de facto cualquier carencia ≥ 2 que la SPEC §2.8 contempla. Ahora se resuelve «Devolución de principal del año carencia+1» y, si ese año cae fuera de la proyección de tres, el objetivo se OMITE en vez de fallar. Los 5 publican primer_ano_que_amortiza en su informe (hoy carencia 1 → año 2, idéntico a antes)."
+  },
+  {
+   "item": "VERSION = 2.2",
+   "donde": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/motor.py:129-137",
+   "como": "motor.VERSION pasa a '2.2' con VERSION_MES intacto («septiembre 2026»). MEDIDO en el bar: Instrucciones!A63 y checklist!Instrucciones!A11 publican «Versión 2.2 · septiembre 2026 …» y la cabecera de la tabla de recalibrado (Instrucciones!C33) pasa de «v2.1» a «v2.2»."
+  }
+ ],
+ "no_hechos": [
+  {
+   "item": "A2 · «rotular G30:G33 como flujo del año 3 mantenido»",
+   "motivo": "ADAPTADO, no omitido: G30:G33 son celdas NUMÉRICAS del cuadro de amortización y no admiten un rótulo, y el cuadro no tiene columna de notas (A-H están ocupadas y añadir la I obligaría a ampliar la zona que se limpia en las cinco hojas). La declaración va donde sí se lee: en la CABECERA de la columna G («…; del año 4 en adelante, el del año 3 mantenido»), en la nota de «DSCR mínimo de todo el cuadro» y en la nota de cierre de la hoja. B54 sigue midiendo todo el cuadro, como pide el ítem."
+  },
+  {
+   "item": "B6 · «más», «práctica/práctico», «público», «número», «género», «varía», «vídeo» y «depósito»",
+   "motivo": "NO son pares seguros y el propio ítem lo exige («solo pares seguros»): «mas» = «pero»; «practica», «publica», «deposito», «genero» y «varia» son formas verbales legítimas; «numero» y «publico» ya estaban en HOMOGRAFAS por ese motivo; «vídeo/video» son las dos correctas. Acentuarlas de oficio convertiría texto correcto en incorrecto. El caso concreto de «Deposito agua + aguas residuales» del food truck se resuelve por CONTENIDO con el rótulo nuevo de A6, que es la vía que un diccionario no puede decidir."
+  },
+  {
+   "item": "M-03, REF-25, REF-08-motor, REF-17-motor, R-21, R-22, REF-24 y REF-13",
+   "motivo": "No están en la lista A1-A8 / B1-B15 del parche 2.2 y quedan documentados en los fixer.json de sus hermanos. REF-13 (docx v1.1 de panadería) además no es del motor: es T9 (documentos.py) y el dry-run lo sigue declarando «§9: 1 docx sin A4 o sin author=AI Chef Pro» en los cinco productos."
+  }
+ ],
+ "contenido_tocado": [
+  {
+   "pid": "plan-negocio-panaderia",
+   "clave": "LINEAS_INGRESO[0][5] · campo `iva` (A3)",
+   "valor": "{'cabecera': 'Pan común sobre la línea (%)', 'pct': 0.76, 'tipo': 0.04, 'nota': …} → PyG 3 Años!H10 = 76 % (verde) y !G10 = 5,44 %",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_panaderia/a.py:405-440 — desglose de la v1.1 del propio producto («Ventas pan artesanal» 120.000 € + «Mayorista» 20.000 € sobre los 185.000 € de la línea = 75,7 %, redondeado a 76 %) y art. 91.Dos.1.1.º de la Ley 37/1992 del IVA (hallazgo REF-04 del fixer.json de este hermano)"
+  },
+  {
+   "pid": "plan-negocio-panaderia",
+   "clave": "COBERTURA (A4)",
+   "valor": "horas_dia 13 · personas_franja 1,7 · horas_produccion 3,5 · personas_produccion 1 → 7.936 h necesarias frente a 8.077,6 h contratadas (101,8 %)",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_panaderia/a.py:993-1029 — fixer.json REF-06 de este hermano («13 h de tienda con ~1,7 personas de media + 3,5 h de obrador con 1»), respaldado por Personal!J5 («Turno de madrugada 4:00-5:00 AM») y las Instrucciones del propio producto"
+  },
+  {
+   "pid": "plan-negocio-panaderia",
+   "clave": "ROTACION (A5)",
+   "valor": "{'activa': False} → Punto Equilibrio sin filas de rotación y 0. Supuestos!A50:C50 vacías",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_panaderia/a.py:1031-1036 — fixer.json REF-01 (bloqueante: tres celdas rojas en el caso base) y 0. Supuestos!C51 del propio libro («la rotación implícita no es una métrica útil en este formato»)"
+  },
+  {
+   "pid": "plan-negocio-tapas-bar",
+   "clave": "COBERTURA (A4)",
+   "valor": "horas_dia 9,5 · personas_franja 2 → 5.700 h necesarias frente a 7.912 h contratadas (138,8 %)",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_tapas_bar/a.py:968-996 — fixer.json MOT-03: el documento de este plan declara 12:00-16:00 y 19:00-00:30, o sea 9,5 h, no las 13 h del molde de restaurante"
+  },
+  {
+   "pid": "plan-negocio-tapas-bar",
+   "clave": "ROTACION.referencia (A5)",
+   "valor": "«1,8 servicios por cubierto en el almuerzo y 1,5 en la cena (párrafo 27), que sumados son unas 3,3 rotaciones al día»",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_tapas_bar/a.py:991-1004 — fixer.json MOT-02 (párrafo 27 del docx de este producto). El texto anterior era el del documento del REPRESENTANTE"
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "clave": "COBERTURA (A4)",
+   "valor": "horas_dia 12 · personas_franja 1 → 3.000 h necesarias frente a 2.962,4 h contratadas (98,75 %)",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_food_truck/a.py:1114-1144 — fixer.json M-02: el docx dice «esta secuencia consume entre diez y doce horas de jornada laboral efectiva»"
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "clave": "ROTACION (A5)",
+   "valor": "{'activa': False}",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_food_truck/a.py:1146 — fixer.json M-07 (un food truck no tiene aforo ni rotaciones por plaza; hasta ahora se sorteaba calibrando `aforo`)"
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "clave": "FIJOS['alquiler del local'] (A6)",
+   "valor": "(None, nota, 'Aparcamiento y base del vehículo') → PyG 3 Años!A22",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_food_truck/a.py:641-656 — fixer.json M-05 («el ratio y la fila de coste se llaman Alquiler sin posibilidad de override, en un producto sin local»)"
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "clave": "UMBRALES['r_alquiler'][1] (A6)",
+   "valor": "'Aparcamiento / Ventas' → PyG 3 Años!A55 y tabla de ratios de Instrucciones",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_food_truck/a.py:717-722 — fixer.json M-05 (el rótulo ya estaba declarado en el módulo y era letra muerta)"
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "clave": "INVERSION['deposito agua + aguas residuales'] (A6)",
+   "valor": "(None, nota, 'Depósito de agua + aguas residuales') → Inversión Inicial!A12",
+   "fuente": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/planes-v2_0/contenido_plan_negocio_food_truck/a.py:551-570 — barrido de ortografía de cierre de la 2.2 (2 celdas vivas). «deposito» está en motor.HOMOGRAFAS por convivir con el verbo depositar, así que el diccionario de §1.7 no lo puede decidir y la vía correcta es el rótulo de A6"
+  }
+ ],
+ "bar_diff": {
+  "celdas_formula": 90,
+  "celdas_valor": 147,
+  "atribucion": [
+   {
+    "item": "A3",
+    "celdas": "32 fórmulas · 0 valores — 0. Supuestos!B9 y C9; PyG 3 Años!G5, G11, G12 y A61; Tesorería!B9:M9, B16:M16 y O16; Instrucciones!A8",
+    "antes": "IVA repercutido = pct_comida×reducido + pct_bebida×mezcla, escrito en tres sitios distintos",
+    "despues": "SUMPRODUCT(pesos_E, tipos_G) de las líneas de venta. VALORES IDÉNTICOS (0 diferencias de valor por esta causa)"
+   },
+   {
+    "item": "A2",
+    "celdas": "21 fórmulas · 8 valores — 7. Financiación!G26 (cabecera), G27:G41, B51:B53, C54 y A56",
+    "antes": "B54 (DSCR mínimo) = 3,7864 · H27 = 9,5889 · H28 = 3,7864 · H29:H33 = 4,3398",
+    "despues": "B54 = 3,3131 · H27 = 8,4716 · H28 = 3,3131 · H29:H33 = 3,4022"
+   },
+   {
+    "item": "A1",
+    "celdas": "18 fórmulas · 1 valor — 6. Tesorería 12 meses!A26:A31, B26:B31 y D26:D31; Instrucciones!A30 y B30",
+    "antes": "6. Tesorería 12 meses!B31 = 2,7488 años · B30 = 201.899,40 €",
+    "despues": "B31 = 1,9 años (formato General) · B30 = 179.014,80 €"
+   },
+   {
+    "item": "A8",
+    "celdas": "4 fórmulas · 138 valores — 1. Inversión Inicial!B13, D13, B53 y D55 y su cascada",
+    "antes": "Inversión!B13 (imprevistos) 3.800 € · B53 (base de obra) 44.500 € · B55 (amortización) 8.396 € · B48 179.164,80 € · B50 (IVA) 22.734,60 € · B51 201.899,40 €",
+    "despues": "B13 3.650 € · B53 48.150 € · B55 8.761 € · B48 179.014,80 € · B50 22.703,10 € · B51 201.717,90 €. Los 138 valores son la CASCADA de esas seis celdas: columna C de porcentajes de la inversión, P&L (B38/B40/B43/B45/B48/B50 y ratios), punto de equilibrio (B7:D17 y la tabla de sensibilidad), escenarios (B18:D26), financiación (B14:B18) e Instrucciones (B20, B24, B25, B28, B29)"
+   },
+   {
+    "item": "B1",
+    "celdas": "3 fórmulas · 0 valores — 0. Supuestos!B12, 5. Personal!B24 y 7. Financiación!B23"
+   },
+   {
+    "item": "B14",
+    "celdas": "3 fórmulas · 0 valores — 2. P&L 3 Años!B59, C59 y D59 (guarda duplicada retirada)"
+   },
+   {
+    "item": "VERSION",
+    "celdas": "3 textos — Instrucciones!A63 y !C33 del plan financiero e Instrucciones!A11 del checklist",
+    "antes": "Versión 2.1 · septiembre 2026 / v2.1",
+    "despues": "Versión 2.2 · septiembre 2026 / v2.2"
+   },
+   {
+    "item": "B8",
+    "celdas": "2 fórmulas · 0 valores — 1. Inversión Inicial!D12 («Renta del mes de obra y licencias…») y !D47"
+   },
+   {
+    "item": "B3",
+    "celdas": "1 texto — 4. Escenarios!A26"
+   },
+   {
+    "item": "B7",
+    "celdas": "1 texto — 5. Personal!A14"
+   },
+   {
+    "item": "B12",
+    "celdas": "1 texto — 3. Punto Equilibrio!A34"
+   },
+   {
+    "item": "B13",
+    "celdas": "1 fórmula — 6. Tesorería 12 meses!O11"
+   }
+  ],
+  "sin_atribuir": []
+ },
+ "dryruns": [
+  {
+   "pid": "plan-negocio-bar-restaurante",
+   "exit": 0,
+   "gates_13": true,
+   "idempotencia_0": true,
+   "fallos": [],
+   "pendientes": [
+    "grupo_b aún no existe",
+    "grupo_c aún no existe",
+    "RC-29: 3 nombres de hoja de más de 31 caracteres en plan-negocio-parrillero-asador-eventos (producto ajeno a estos cinco)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (lo produce documentos.py / T9)"
+   ],
+   "cifras": {
+    "payback": "1.90",
+    "dscr_min": "3.31",
+    "saldo_minimo": "60973.53",
+    "iva_repercutido_ano1": "45136.00",
+    "necesidad_caja": "201717.90",
+    "resultado_neto": "48621.19",
+    "ratio_personal": "0.3366",
+    "cobertura_horas": "1.23"
+   },
+   "celdas": {
+    "payback": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!6. Tesorería 12 meses!B31",
+     "valor": 1.9
+    },
+    "inversion_a_recuperar": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!6. Tesorería 12 meses!B30",
+     "valor": 179014.80000000002
+    },
+    "saldo_minimo": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!6. Tesorería 12 meses!B23",
+     "valor": 60973.52999102234
+    },
+    "iva_repercutido_ano1": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!6. Tesorería 12 meses!N16",
+     "valor": 45136.000000000015
+    },
+    "necesidad_caja": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!1. Inversión Inicial!B51",
+     "valor": 201717.90000000002
+    },
+    "iva_soportado_inversion": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!1. Inversión Inicial!B50",
+     "valor": 22703.1
+    },
+    "amortizacion_anual": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!1. Inversión Inicial!B55",
+     "valor": 8761.0
+    },
+    "imprevistos_obra": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!1. Inversión Inicial!B13",
+     "valor": 3650.0
+    },
+    "resultado_neto": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!2. P&L 3 Años!B50",
+     "valor": 48621.18999999997
+    },
+    "ratio_personal": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!2. P&L 3 Años!B56",
+     "valor": 0.3366253101736973
+    },
+    "cobertura_horas": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!5. Personal!B26",
+     "valor": 1.2327543424317617
+    },
+    "dscr_min": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!7. Financiación!B54",
+     "valor": 3.31314814662801
+    },
+    "pvp_equivalente": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!0. Supuestos!B9",
+     "valor": 20.02
+    },
+    "ratio_alquiler": {
+     "celda": "plan-financiero-bar-restaurante.xlsx!2. P&L 3 Años!B57",
+     "valor": 0.07975895072669266
+    }
+   }
+  },
+  {
+   "pid": "plan-negocio-cafeteria",
+   "exit": 0,
+   "gates_13": true,
+   "idempotencia_0": true,
+   "fallos": [],
+   "pendientes": [
+    "grupo_b aún no existe",
+    "grupo_c aún no existe",
+    "RC-29: 3 nombres de hoja de más de 31 caracteres en plan-negocio-parrillero-asador-eventos (producto ajeno a estos cinco)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (lo produce documentos.py / T9)"
+   ],
+   "cifras": {
+    "payback": "2.30",
+    "dscr_min": "2.10",
+    "saldo_minimo": "40854.68",
+    "iva_repercutido_ano1": "29400.00",
+    "necesidad_caja": "147868.12",
+    "resultado_neto": "26542.44",
+    "ratio_personal": "0.3404",
+    "cobertura_horas": "1.00"
+   },
+   "celdas": {
+    "payback": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Tesorería 12 meses!B31",
+     "valor": 2.3
+    },
+    "inversion_a_recuperar": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Tesorería 12 meses!B30",
+     "valor": 130175.625
+    },
+    "saldo_minimo": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Tesorería 12 meses!B23",
+     "valor": 40854.67820024057
+    },
+    "iva_repercutido_ano1": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Tesorería 12 meses!N16",
+     "valor": 29400.000000000015
+    },
+    "necesidad_caja": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Inversión Inicial!B38",
+     "valor": 147868.125
+    },
+    "iva_soportado_inversion": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Inversión Inicial!B37",
+     "valor": 17692.5
+    },
+    "amortizacion_anual": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Inversión Inicial!B42",
+     "valor": 8887.5
+    },
+    "imprevistos_obra": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Inversión Inicial!B32",
+     "valor": 3250.0
+    },
+    "resultado_neto": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!PyG 3 Años!B47",
+     "valor": 26542.44000000002
+    },
+    "ratio_personal": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!PyG 3 Años!B53",
+     "valor": 0.34041666666666665
+    },
+    "cobertura_horas": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Personal!B24",
+     "valor": 1.0025641025641026
+    },
+    "dscr_min": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!Financiación!B54",
+     "valor": 2.0975788595183227
+    },
+    "pvp_equivalente": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!0. Supuestos!B9",
+     "valor": 10.780000000000001
+    },
+    "ratio_alquiler": {
+     "celda": "plan-financiero-cafeteria-brunch.xlsx!PyG 3 Años!B54",
+     "valor": 0.08163265306122447
+    }
+   }
+  },
+  {
+   "pid": "plan-negocio-tapas-bar",
+   "exit": 0,
+   "gates_13": true,
+   "idempotencia_0": true,
+   "fallos": [],
+   "pendientes": [
+    "grupo_b aún no existe",
+    "grupo_c aún no existe",
+    "RC-29: 3 nombres de hoja de más de 31 caracteres en plan-negocio-parrillero-asador-eventos (producto ajeno a estos cinco)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (lo produce documentos.py / T9)"
+   ],
+   "cifras": {
+    "payback": "2.50",
+    "dscr_min": "2.29",
+    "saldo_minimo": "40090.91",
+    "iva_repercutido_ano1": "30240.00",
+    "necesidad_caja": "174316.60",
+    "resultado_neto": "20636.92",
+    "ratio_personal": "0.3584",
+    "cobertura_horas": "1.39"
+   },
+   "celdas": {
+    "payback": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Tesorería 12 meses!B31",
+     "valor": 2.5
+    },
+    "inversion_a_recuperar": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Tesorería 12 meses!B30",
+     "valor": 153327.1
+    },
+    "saldo_minimo": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Tesorería 12 meses!B23",
+     "valor": 40090.91290795113
+    },
+    "iva_repercutido_ano1": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Tesorería 12 meses!N16",
+     "valor": 30240.00000000001
+    },
+    "necesidad_caja": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Inversión Inicial!B33",
+     "valor": 174316.6
+    },
+    "iva_soportado_inversion": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Inversión Inicial!B32",
+     "valor": 20989.5
+    },
+    "amortizacion_anual": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Inversión Inicial!B37",
+     "valor": 10145.0
+    },
+    "imprevistos_obra": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Inversión Inicial!B27",
+     "valor": 4450.0
+    },
+    "resultado_neto": {
+     "celda": "plan-financiero-tapas-bar.xlsx!PyG 3 Años!B47",
+     "valor": 20636.918800000003
+    },
+    "ratio_personal": {
+     "celda": "plan-financiero-tapas-bar.xlsx!PyG 3 Años!B53",
+     "valor": 0.35836111111111113
+    },
+    "cobertura_horas": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Personal!B25",
+     "valor": 1.3880701754385965
+    },
+    "dscr_min": {
+     "celda": "plan-financiero-tapas-bar.xlsx!Financiación!B54",
+     "valor": 2.294304032671609
+    },
+    "pvp_equivalente": {
+     "celda": "plan-financiero-tapas-bar.xlsx!0. Supuestos!B9",
+     "valor": 19.8
+    },
+    "ratio_alquiler": {
+     "celda": "plan-financiero-tapas-bar.xlsx!PyG 3 Años!B54",
+     "valor": 0.0992063492063492
+    }
+   }
+  },
+  {
+   "pid": "plan-negocio-panaderia",
+   "exit": 0,
+   "gates_13": true,
+   "idempotencia_0": true,
+   "fallos": [],
+   "pendientes": [
+    "grupo_b aún no existe",
+    "grupo_c aún no existe",
+    "RC-29: 3 nombres de hoja de más de 31 caracteres en plan-negocio-parrillero-asador-eventos (producto ajeno a estos cinco)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (lo produce documentos.py / T9)"
+   ],
+   "cifras": {
+    "payback": "Más de 3 años",
+    "dscr_min": "2.01",
+    "saldo_minimo": "42629.25",
+    "iva_repercutido_ano1": "17744.96",
+    "necesidad_caja": "164808.33",
+    "resultado_neto": "16893.43",
+    "ratio_personal": "0.3710",
+    "cobertura_horas": "1.02"
+   },
+   "celdas": {
+    "payback": {
+     "celda": "plan-financiero-panaderia.xlsx!Tesorería 12 meses!B31",
+     "valor": "Más de 3 años"
+    },
+    "inversion_a_recuperar": {
+     "celda": "plan-financiero-panaderia.xlsx!Tesorería 12 meses!B30",
+     "valor": 145215.325
+    },
+    "saldo_minimo": {
+     "celda": "plan-financiero-panaderia.xlsx!Tesorería 12 meses!B23",
+     "valor": 42629.246413523884
+    },
+    "iva_repercutido_ano1": {
+     "celda": "plan-financiero-panaderia.xlsx!Tesorería 12 meses!N16",
+     "valor": 17744.958
+    },
+    "necesidad_caja": {
+     "celda": "plan-financiero-panaderia.xlsx!Inversión Inicial!B34",
+     "valor": 164808.325
+    },
+    "iva_soportado_inversion": {
+     "celda": "plan-financiero-panaderia.xlsx!Inversión Inicial!B33",
+     "valor": 19593.0
+    },
+    "amortizacion_anual": {
+     "celda": "plan-financiero-panaderia.xlsx!Inversión Inicial!B38",
+     "valor": 9292.222222222223
+    },
+    "imprevistos_obra": {
+     "celda": "plan-financiero-panaderia.xlsx!Inversión Inicial!B28",
+     "valor": 3700.0
+    },
+    "resultado_neto": {
+     "celda": "plan-financiero-panaderia.xlsx!PyG 3 Años!B48",
+     "valor": 16893.433611111144
+    },
+    "ratio_personal": {
+     "celda": "plan-financiero-panaderia.xlsx!PyG 3 Años!B54",
+     "valor": 0.37100456174649726
+    },
+    "cobertura_horas": {
+     "celda": "plan-financiero-panaderia.xlsx!Personal!B26",
+     "valor": 1.017842741935484
+    },
+    "dscr_min": {
+     "celda": "plan-financiero-panaderia.xlsx!Financiación!B54",
+     "valor": 2.0101910030218595
+    },
+    "pvp_equivalente": {
+     "celda": "plan-financiero-panaderia.xlsx!0. Supuestos!B9",
+     "valor": 5.81801
+    },
+    "ratio_alquiler": {
+     "celda": "plan-financiero-panaderia.xlsx!PyG 3 Años!B55",
+     "valor": 0.08211143695014662
+    }
+   }
+  },
+  {
+   "pid": "plan-negocio-food-truck",
+   "exit": 0,
+   "gates_13": true,
+   "idempotencia_0": true,
+   "fallos": [],
+   "pendientes": [
+    "grupo_b aún no existe",
+    "grupo_c aún no existe",
+    "RC-29: 3 nombres de hoja de más de 31 caracteres en plan-negocio-parrillero-asador-eventos (producto ajeno a estos cinco)",
+    "§9: 1 docx sin A4 o sin author=AI Chef Pro (lo produce documentos.py / T9)"
+   ],
+   "cifras": {
+    "payback": "Más de 3 años",
+    "dscr_min": "1.37",
+    "saldo_minimo": "16123.35",
+    "iva_repercutido_ano1": "13500.00",
+    "necesidad_caja": "94669.04",
+    "resultado_neto": "6511.35",
+    "ratio_personal": "0.3117",
+    "cobertura_horas": "0.9875"
+   },
+   "celdas": {
+    "payback": {
+     "celda": "plan-financiero-food-truck.xlsx!Tesorería 12 meses!B31",
+     "valor": "Más de 3 años"
+    },
+    "inversion_a_recuperar": {
+     "celda": "plan-financiero-food-truck.xlsx!Tesorería 12 meses!B30",
+     "valor": 81996.8
+    },
+    "saldo_minimo": {
+     "celda": "plan-financiero-food-truck.xlsx!Tesorería 12 meses!B23",
+     "valor": 16123.346907729607
+    },
+    "iva_repercutido_ano1": {
+     "celda": "plan-financiero-food-truck.xlsx!Tesorería 12 meses!N16",
+     "valor": 13500.000000000004
+    },
+    "necesidad_caja": {
+     "celda": "plan-financiero-food-truck.xlsx!Inversión Inicial!B29",
+     "valor": 94669.04000000001
+    },
+    "iva_soportado_inversion": {
+     "celda": "plan-financiero-food-truck.xlsx!Inversión Inicial!B28",
+     "valor": 12672.24
+    },
+    "amortizacion_anual": {
+     "celda": "plan-financiero-food-truck.xlsx!Inversión Inicial!B33",
+     "valor": 6648.0
+    },
+    "imprevistos_obra": {
+     "celda": "plan-financiero-food-truck.xlsx!Inversión Inicial!B23",
+     "valor": 2944.0
+    },
+    "resultado_neto": {
+     "celda": "plan-financiero-food-truck.xlsx!PyG 3 Años!B48",
+     "valor": 6511.348500000003
+    },
+    "ratio_personal": {
+     "celda": "plan-financiero-food-truck.xlsx!PyG 3 Años!B54",
+     "valor": 0.3117125925925926
+    },
+    "cobertura_horas": {
+     "celda": "plan-financiero-food-truck.xlsx!Personal!B22",
+     "valor": 0.9874666666666667
+    },
+    "dscr_min": {
+     "celda": "plan-financiero-food-truck.xlsx!Financiación!B54",
+     "valor": 1.3719859522433784
+    },
+    "pvp_equivalente": {
+     "celda": "plan-financiero-food-truck.xlsx!0. Supuestos!B9",
+     "valor": 13.200000000000001
+    },
+    "ratio_alquiler": {
+     "celda": "plan-financiero-food-truck.xlsx!PyG 3 Años!B55",
+     "valor": 0.035555555555555556
+    }
+   }
+  }
+ ],
+ "riesgos": [
+  "PANADERÍA y FOOD TRUCK siguen publicando «Más de 3 años» de payback DESPUÉS del arreglo de A1, y esta vez es la verdad del modelo: con 145.215 € y 81.997 € a recuperar y un flujo antes de deuda de ~26.000 € y ~15.000 €/año, ninguno vuelve en tres años. No es un defecto del motor, es una decisión de contenido/comercial (subir el caso base, alargar la proyección o decirlo en el documento) antes de publicar.",
+  "TAPAS-BAR: con el cuadrante real (9,5 h × 2) la cobertura sube al 138,8 %. La plantilla (7.912 h contratadas) se dimensionó contra el denominador FALSO de 7.800 h, así que ahora sobran ~2.200 h/año y con ellas margen para bajar el labour cost del 35,8 %. Recalibración de contenido pendiente, no un fallo: el semáforo está en verde.",
+  "A8 hace CAPITALIZAR los imprevistos de obra: la amortización anual sube en los cinco (bar 8.396 → 8.761 €) y con ella baja el resultado neto. Es la lectura correcta (mayor coste de la obra), pero cambia cifras ya publicadas del representante.",
+  "B6: «máquina», «tráfico», «rótulo» y «fórmula» tienen lectura verbal legítima en español general («él maquina», «yo rotulo», «la ley formula»). Ninguna aparece así en los 10 xlsx medidos, pero un contenido futuro que escriba «se formula» quedaría «se fórmula». Queda documentado en el propio diccionario.",
+  "B4 pone General en TODA celda que imprima texto: un producto que quiera un formato de texto propio tendrá que usar «@», que sí se respeta.",
+  "A3 deja el 4 % del pan común como literal DENTRO de la fórmula de PyG!G10 (el ítem pide una sola celda verde, la del porcentaje). El tipo es un dato de la ley, no un parámetro de negocio, y la nota de la línea lo cita con su artículo; si cambiara el tipo habría que tocar el módulo de contenido.",
+  "El gate propio de A7 sólo mira la hoja de inversión del plan financiero de línea A; para otros moldes habrá que reescribirlo.",
+  "A5 apaga el bloque de rotación escribiendo 0. Supuestos!A50:C50 a vacío. Si un producto tuviera ahí otra cosa en su fichero de partida, se borraría: hoy no ocurre en ninguno de los cinco (comprobado), pero la ampliación de la familia debe tenerlo en cuenta.",
+  "La cobertura del food truck queda en 98,75 %, que el semáforo pinta ÁMBAR (verde exige ≥ 100 %). Es lo que pedía el ítem («≥ 98 %») y es honesto: falta media jornada de refuerzo. Si se quiere verde, es contenido."
+ ]
+}

@@ -962,3 +962,42 @@ RECALIBRADO = (
      'mínimo legal en proporción a su jornada, y en ámbar si el equipo no '
      'llega a cubrir el horario que el propio proyecto declara.'),
 )
+
+
+# ==========================================================================
+# §2.6 — CUADRANTE DE COBERTURA (A4 / MOT-03 · motor 2.2, 2026-09-05)
+# ==========================================================================
+#: FUENTE: el horario que declara el documento de ESTE plan — 12:00-16:00 y
+#: 19:00-00:30, o sea 9,5 h de servicio al día, no las 13 h que el motor
+#: traía cableadas del molde de restaurante (fixer.json de este hermano,
+#: MOT-03). Con 13 h × 2 personas × 300 días el libro exigía 7.800 h, un
+#: mínimo de 4,24 jornadas equivalentes y ~96.375 €/año de coste de personal
+#: sólo para pintar el semáforo de verde: es lo que empujó los clientes/día
+#: de 50 a 56 para caber en el techo del 36 % de labour cost.
+#: La tarde de cierre (16:00-19:00) NO se cuenta: no hay servicio.
+COBERTURA = {
+    'horas_dia': 9.5,
+    'personas_franja': 2,
+    'nota_horas': 'Los dos servicios que declara el documento de este plan: '
+                  '12:00-16:00 y 19:00-00:30. La tarde de cierre no se '
+                  'cuenta. Cuéntalas sobre tu horario real',
+    'nota_personas': 'Media de presencia simultánea entre barra y sala en los '
+                     'dos servicios. En las puntas hará falta más y al final '
+                     'de cada turno, menos',
+}
+
+# ==========================================================================
+# §2.4 — la REFERENCIA de rotación de ESTE documento (A5 / MOT-02)
+# ==========================================================================
+#: El texto que publicaba la celda venía del documento del REPRESENTANTE
+#: (bar-restaurante), que sí enuncia un mínimo de 1,8 rotaciones AL DÍA. El
+#: documento de este plan dice otra cosa (párrafo 27): 1,8 servicios por
+#: cubierto en ALMUERZO y 1,5 en CENA — sumados, ~3,3 al día. Comparar ese
+#: 1,8 con la rotación diaria hacía parecer insuficiente un caso base que es
+#: prudente.
+ROTACION = {
+    'referencia': 'El documento de este plan pide 1,8 servicios por cubierto '
+                  'en el almuerzo y 1,5 en la cena (párrafo 27), que sumados '
+                  'son unas 3,3 rotaciones al día: compáralo con tu horario '
+                  'real antes de darlo por bueno.',
+}
