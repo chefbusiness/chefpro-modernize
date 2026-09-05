@@ -1,0 +1,292 @@
+{
+ "pid": "plan-negocio-food-truck",
+ "resueltos": [
+  {
+   "id": "FT-01 · el VEHÍCULO estaba fuera de la base amortizable",
+   "como": "`AMORT_DEFECTO` de grupo_a clasifica por rótulo con patrones de local ('obra civil', 'instalaci', 'equipamiento'…). Ninguno casa con 'Vehiculo food truck (nuevo o segunda mano)' (25.000 €) ni con 'Deposito agua + aguas residuales' (800 €), y `_clasificar_amortizable` los manda por defecto a 'no': 25.800 € —el 39 % del CAPEX y el activo que da nombre al negocio— quedaban FUERA. Medido en el dry-run anterior: 'Inversión Inicial'!B31='=B8+B10+B11+B15' (14.000) y B32='=B9+B16+B17+B20' (13.800), sin B7 ni B12; amortización 4.510 €/año sobre 27.800 € de base. Se declara `AMORTIZABLE` propio: vehículo, adaptación, gas, depósito y proyecto técnico al grupo de 8 años; equipamiento, generador, TPV, menaje y toldo al de 10. Ahora B31=36.800, B32=16.800, B33=6.280 €/año sobre 53.600 € de inmovilizado real. El resultado del año 1 bajó de 8.645 € a 6.824 €: 1.821 € de beneficio que no existían.",
+   "donde": "contenido_plan_negocio_food_truck/a.py · AMORTIZABLE (nuevo)"
+  },
+  {
+   "id": "FT-02 · vida útil del equipamiento al 20 % anual (RD-15 no propagado)",
+   "como": "`vida_maquinaria` valía 5 años = 20 % anual, muy por encima del coeficiente lineal MÁXIMO de la tabla del art. 12.1 LIS (12 % maquinaria, 10 % mobiliario), con una nota que decía «Coeficiente lineal máximo del art. 12.1 LIS» mientras lo incumplía. Es exactamente el defecto que RD-15 corrigió en el representante (allí 8 años) y que no se propagó a este hermano. Pasa a 10 años. El vehículo se queda en 8 (12,5 %), que sí está dentro del 16 % máximo de los elementos de transporte.",
+   "donde": "a.py · SUPUESTOS['vida_maquinaria'] 5→10 y nota de ['vida_obra']"
+  },
+  {
+   "id": "FT-03 · dos sueldos por DEBAJO del SMI prorrateado (semáforo en rojo en el entregable)",
+   "como": "`grupo_a` pinta en ROJO la columna «Bruto mes» cuando bruto/personas*pagas < MAX(SMI, convenio)*jornada. Medido: «Refuerzo de festivales» 120 €/mes al 10 % → 1.680 €/año frente a 1.709,40 (SMI 17.094 × 0,10); «Suplencias» 70 € al 6 % → 980 € frente a 1.025,64. Las dos salían en rojo. Suben a 125 € y 75 €. El «Ayudante» estaba a 0,68 € del suelo (550 vs 549,45): sube a 560 € por margen. Coste de personal 41.709 → 42.081 €/año, 31,2 % de las ventas (techo 32 %).",
+   "donde": "a.py · PLANTILLA (brutos 560/125/75 y notas)"
+  },
+  {
+   "id": "FT-04 · la tabla «QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1» hablaba en ids internos y sin las cifras finales",
+   "como": "Las 13 filas publicaban en la columna «Por qué» —que lee el cliente— TEC-01/DOM-01, §7-bis.17, NUEVO-03, TEC-07/DOM-12/NUEVO-01, NUEVO-02, TEC-12, §7-bis.11, TEC-06/DOM-15, TEC-08/DOM-10/COM-04, DOM-14/DOM-17, RT-04/RT-05 y §1.2 ('Instrucciones'!D34:D46), y la columna «v2.1» daba referencias de código en vez de valores ('dentro del techo 32 % de Instrucciones!B7', 'en Supuestos!seguros_ano', 'suprimida vía FIJOS'). Además la fila de Amortización AFIRMABA que la base incluía el vehículo, que era justo lo que faltaba (FT-01). Reescrita entera: 17 filas en lenguaje de cliente, cero ids internos y con los valores REALES medidos en el libro final (personal 42.081 €, plantilla 4 puestos, aparcamiento 400 €/mes = 4.800 €/año, fondo 18.053 €, amortización 6.280 €, ticket 12 € sin IVA = 13,20 € de PVP). Se añaden filas que faltaban: el aparcamiento/base (coste NUEVO que la v1.1 no pagaba en ninguna línea) y el suelo del SMI.",
+   "donde": "a.py · RECALIBRADO (13 filas → 17)"
+  },
+  {
+   "id": "FT-05 · ids internos en dos notas de la hoja de Supuestos",
+   "como": "'0. Supuestos'!C28 terminaba en «RT-04/RT-05, mismo criterio que los otros tres A-β» y C31 llevaba «— NUEVO-01 —» en mitad de la frase. Las notas de Supuestos son la columna que el cliente lee al lado de cada celda verde. Reescritas sin ids; la trazabilidad se queda en el campo FUENTE del módulo, que NO se escribe en el libro (grupo_a sólo vuelca `nota`).",
+   "donde": "a.py · SUPUESTOS['pct_varios'] y ['prestamo']"
+  },
+  {
+   "id": "FT-06 · 6 celdas de euros marcadas por el gate de formatos (§1.4)",
+   "como": "El gate daba «recuento con €» en 'PyG 3 Años'!B10:D10 y B35:D35. Causa: `motor.RX_RECUENTO` casa con «día» y «eventos» dentro del rótulo, y `RX_EURO_FUERTE` (el escape) no incluye «Ventas» ni «Derechos». Los dos rótulos son de contenido: «Ventas de comida (menú del día a pie de calle y catering/eventos privados)» → «Ventas de comida (calle, mercados y catering privado)» y «Derechos de autor por música ambiental en eventos (SGAE/AGEDI-AIE)» → sin «en eventos». Gate de formatos: 6 → 0.",
+   "donde": "a.py · LINEAS_INGRESO y FIJOS_EXTRA (rótulos)"
+  },
+  {
+   "id": "FT-07 · 28 textos sin tilde (§1.7) → 5, y los 5 que quedan son de motor",
+   "como": "Clasificados uno a uno: 9 venían de notas escritas por a.py (citas a 'PyG 3 Anos', 'F1 - Constitucion', 'Inversion Inicial', «TPV movil + datafono», «Formación APPCC movil», «Programa fidelización movil», y un «donde» que el gate confunde con «dónde»): reescritos sin citar rótulos sin tilde. 14 eran celdas heredadas del checklist v1.1: se corrigen con `CHECKLIST['reemplazos']` (28 patrones nuevos), que es la vía prevista. 3 eran NOTAS de filas preservadas de la inversión («Varia», «movil», «Genero»): se corrigen pasando el MISMO importe por `INVERSION`, que reescribe la nota sin tocar el rótulo, el orden ni la cifra. Los 5 restantes son RÓTULOS de filas preservadas y no hay hook de contenido para renombrarlos → M-01.",
+   "donde": "a.py · SUPUESTOS (notas), CHECKLIST['reemplazos'], INVERSION (3 reglas nuevas)"
+  },
+  {
+   "id": "FT-08 · el punto de equilibrio exigía más rotaciones de las que el libro declara alcanzables",
+   "como": "Con `aforo`=12, 'Punto Equilibrio'!B26 («Rotaciones al día que exige el equilibrio de caja») daba 3,11 contra el techo B25=3,0 que fija grupo_a: semáforo ROJO en el caso base, y 'Supuestos'!B50 (rotaciones implícitas) 3,75. El 12 era un parámetro inventado («capacidad estimada»). Pasa a 16 con fuente: las 4 mesas altas plegables de 4 posiciones que presupuesta la partida «Toldo, mobiliario exterior plegable» de la propia hoja de inversión. Ahora B26=2,35 y B50=2,81, los dos por debajo del techo. La nota explica que en un food truck el techo real son los clientes por servicio (40-80 según el propio libro), no las plazas.",
+   "donde": "a.py · SUPUESTOS['aforo'] 12→16 + etiqueta y nota"
+  },
+  {
+   "id": "FT-09 · la lista «CÓMO SE USA ESTE LIBRO» saltaba del punto 5 al 7",
+   "como": "`grupo_a` escribe los puntos 1 a 5 y el módulo continuaba numerando en 7 y 8: el libro publicado no tenía punto 6. Renumerados a 6 y 7.",
+   "donde": "a.py · INSTRUCCIONES['uso']"
+  },
+  {
+   "id": "FT-10 · tres reemplazos del checklist que no se disparaban nunca",
+   "como": "`grupo_a.checklist()` corre DESPUÉS del §1 transversal del motor, que ya acentúa. Los patrones `resenas`, `minimo` y un `(r'Evaluar eventos y festivales', 'Evaluar eventos y festivales')` idéntico no casaban con nada (verificado en el dry-run anterior: 'F6 - 90 Días'!B10 seguía siendo «Encuestas clientes + reseñas Google», no el texto del reemplazo). Ningún gate mide si un reemplazo se ejecutó. Los 28 patrones nuevos llevan el acento OPCIONAL y casan también con su propio resultado: son idempotentes y seguirán valiendo si el motor incorpora «vehiculo»/«movil» a TILDES (M-01).",
+   "donde": "a.py · CHECKLIST['reemplazos']"
+  },
+  {
+   "id": "FT-11 · un id interno en la columna FUENTE de la tabla de referencias",
+   "como": "'Instrucciones'!C64 publicaba «DOM-24 / checklist F4» como fuente del convenio colectivo. Pasa a «Fichero v1.1 (fase 4 del checklist)».",
+   "donde": "a.py · INSTRUCCIONES['referencias']"
+  },
+  {
+   "id": "FT-12 · la referencia «Retorno de la inversión 12-24 meses» contradice al propio libro",
+   "como": "'Tesorería 12 meses'!B31 calcula «Más de 3 años» y la tabla de referencias publicaba 12-24 meses sin ningún aviso, dos bloques más abajo en la misma hoja. Se conserva la referencia (criterio de familia: no se borran las del fichero) con una nota que dice que el payback de ESTE plan lo calcula la hoja de Tesorería y sale más largo porque cuenta el IVA a adelantar y el fondo de maniobra. Igual con el EBITDA objetivo del año 2 (20-30 %), que el caso base no alcanza: se declara en vez de callarlo.",
+   "donde": "a.py · INSTRUCCIONES['referencias']"
+  },
+  {
+   "id": "FT-13 · el 28 % de food cost es la palanca que sostiene la viabilidad y no se decía",
+   "como": "El caso base toma el extremo BAJO de los dos rangos publicados (comida 28-33 %, bebida 22-28 %). Comprobado que NO es un sesgo optimista frente a la v1.1: en euros el coste de mercancía del caso base (36.600 €) es prácticamente el de la v1.1 (36.500 €), porque ahora el catering —que allí facturaba a margen 100 %— sí paga género. Pero al 33 % el resultado del año 1 se hunde, así que se declara en la nota de la celda y en la tabla de referencias.",
+   "donde": "a.py · SUPUESTOS['coste_comida'] (nota) e INSTRUCCIONES['referencias']"
+  }
+ ],
+ "ya_resueltos_por_el_motor": [
+  {
+   "id": "RD-17 · IVA de la bebida alcohólica en sala al 10 %",
+   "evidencia": "'0. Supuestos'!B63=0,10 con su nota del art. 91.Uno.2.2.º de la Ley 37/1992; 'Supuestos'!B9 (PVP equivalente) usa B63 para la parte alcohólica en sala y B40 (21 %) sólo para el alcohol de delivery; 'Instrucciones'!A8 lo explica al cliente. El módulo ya declaraba `pct_bebida_alc`=0,05."
+  },
+  {
+   "id": "TEC-01/DOM-01 · el P&L imputaba un personal distinto del de su propia hoja",
+   "evidencia": "'PyG 3 Años'!B23=\"='Personal'!$G$9\" → 42.081,20 €, idéntico a 'Personal'!G9. La v1.1 tecleaba 42.000 con la hoja sumando 76.566."
+  },
+  {
+   "id": "TEC-06/DOM-15 · IS al 15 % de nueva creación con compensación de BINs",
+   "evidencia": "'PyG 3 Años'!B42:B47 (BIN inicial, base, ejercicios con base positiva, tipo, cuota, BIN al cierre); B45=0,15; demo 5 de §2.11 verde en el dry-run (exit 0)."
+  },
+  {
+   "id": "TEC-10/DOM-15 · intereses en el P&L y principal en tesorería",
+   "evidencia": "'PyG 3 Años'!A37 «Gastos financieros (intereses del préstamo)» =\"='Financiación'!$B$44\" (4.680 €); la devolución de principal vive en 'Tesorería 12 meses'!fila 15."
+  },
+  {
+   "id": "TEC-08/DOM-10/COM-04 · plan de financiación (lo prometía la landing y no existía)",
+   "evidencia": "Hoja 'Financiación': origen 97.000 € vs usos 95.859 € (diferencia +1.141 €, 1,19 %, dentro del 5 % admisible), cuadro francés con capital pendiente al vencimiento 0,00 y DSCR mínimo 1,50."
+  },
+  {
+   "id": "DOM-14/DOM-17 · tesorería mensual y payback",
+   "evidencia": "Hoja 'Tesorería 12 meses': saldo mínimo 16.123 € en el mes 2 (nunca negativo), FCF año 1 22.431 €, payback en B31."
+  },
+  {
+   "id": "TEC-04/DOM-04 · doble conteo de la bebida",
+   "evidencia": "'PyG 3 Años'!B13 y B14 cobran el coste de comida y el de bebida sobre SU propia línea (B9×B11×B13 y B9×B12×B14); COGS total 27,1 %."
+  },
+  {
+   "id": "TEC-23/DOM-34 · delivery con interruptor",
+   "evidencia": "'Supuestos'!B16=0 % y 'PyG 3 Años'!B16=0 €; demo 4 de §2.11 verde."
+  },
+  {
+   "id": "NUEVO-01 · fondo de maniobra tecleado y corto",
+   "evidencia": "'Inversión Inicial'!B25=\"=B35*(PyG!B38-PyG!B36)/12\" → 18.052,80 € = 3 meses exactos de costes fijos de caja (la v1.1 dotaba 6.000 €, 1,14 meses)."
+  },
+  {
+   "id": "NUEVO-03 · tres calendarios en el mismo libro",
+   "evidencia": "'PyG 3 Años'!B8, 'Punto Equilibrio'!B11 y 'Escenarios'!B7:D7 leen todos 'Supuestos'!B6=250."
+  },
+  {
+   "id": "Hallazgos propios del hermano: doble conteo del seguro y del generador",
+   "evidencia": "El seguro ya no está en la inversión ('Inversión Inicial' no tiene fila de seguro; sí 'Supuestos'!B27=2.500 y 'PyG 3 Años'!B25) y la fila «Generador (combustible/alquiler)» no aparece en los costes fijos (vive en 'Supuestos'!B26=200 €/mes → 'PyG'!B24=2.400)."
+  },
+  {
+   "id": "§1.4/§1.5/§1.6/§1.8/§1.9 transversales",
+   "evidencia": "Gates del dry-run: formatos 0, referencias 0, sin_formulas 0, sin_bio 0, sin_version 0, sin_instrucciones 0, hojas_sin_a4 0, creator_mal 0, nombres_hoja 0, cf_desanclado 0, no_latinos 0; 68 ítems del checklist con desplegable; 16/16 hojas protegidas."
+  },
+  {
+   "id": "Escenario «Realista» reproduce el P&L al céntimo (§2.11.2)",
+   "evidencia": "'Escenarios'!C20=6.824,1485 € == 'PyG 3 Años'!B48=6.824,1485 €."
+  },
+  {
+   "id": "Idempotencia, caché y blancos",
+   "evidencia": "«diferencias 1.ª vs 2.ª pasada: 0»; inject_cache 654/720 con fallos_pycel=0; data_only «con valor 680 · \"\" por diseño 66 · fallos 0»; blancos_contaminados 0."
+  }
+ ],
+ "motor_pendientes": [
+  {
+   "id": "M-01 · `motor.TILDES` no lleva «vehiculo» ni «movil»: 5 rótulos del entregable salen sin tilde (es lo único que impide 13/13)",
+   "severidad": "alta",
+   "evidencia": "plan-financiero-food-truck.xlsx!'Inversión Inicial'!A7 «Vehiculo food truck (nuevo o segunda mano)», !A8 «Adaptación y rotulación vehiculo», !A9 «Equipamiento cocina movil», !A16 «TPV movil + datafono» y !'PyG 3 Años'!A27 «Mantenimiento vehiculo + ITV». Además el nombre de hoja del checklist sigue siendo 'F2 - Vehiculo' mientras sus hermanas sí se renombraron ('F1 - Constitución', 'F6 - 90 Días'), porque `renombrar_hojas` también se apoya en TILDES. §1.7 dice explícitamente «se corrigen los textos Y los nombres de hoja».",
+   "fix_propuesto": "Añadir a `motor.TILDES` (motor.py:1491): 'vehiculo':'vehículo', 'vehiculos':'vehículos', 'movil':'móvil', 'moviles':'móviles', 'datafono':'datáfono', 'datafonos':'datáfonos'. Las seis son inequívocas en español (no hay homógrafo sin tilde). NO añadir 'genero' ni 'varia': son ambiguas (verbos) y esos dos casos ya se corrigen desde contenido."
+  },
+  {
+   "id": "M-02 · la cobertura de horas se calcula con un cuadrante de RESTAURANTE cableado, y deja el caso base en rojo",
+   "severidad": "alta",
+   "evidencia": "plan-financiero-food-truck.xlsx!'Personal'!B18=13 («Horas de servicio al día que hay que cubrir») y B19=2 («Personas necesarias a la vez en cada franja») son valores fijos de `grupo_a.personal()` (grupo_a.py:1283-1292) y no tienen clave en el contrato de contenido. Resultado: B20=6.500 horas necesarias frente a B21=2.962 contratadas → B22=45,6 % con semáforo rojo, en un libro cuyas cinco ratios CUMPLEN. Llegar al 100 % exigiría 3,53 jornadas equivalentes = ~91.500 €/año = 67,8 % de las ventas: el problema es el denominador, no la plantilla.",
+   "fix_propuesto": "Leer las dos celdas (y `jornada_completa`/`semanas`) de una clave de contenido opcional, p. ej. `COBERTURA = {'horas_dia': …, 'personas_franja': …}`, con los valores actuales por defecto. Para este producto: horas_dia=12 y personas_franja=1, sacados del propio docx («esta secuencia consume entre diez y doce horas de jornada laboral efectiva», con «cuatro y seis horas» de servicio) → 12×1×250 = 3.000 h frente a 2.962 contratadas = 98,7 %."
+  },
+  {
+   "id": "M-03 · `grupo_a.demos()` usa el RÓTULO de tres celdas de Supuestos como clave, así que el contrato miente al decir que la etiqueta es sobreescribible",
+   "severidad": "media",
+   "evidencia": "grupo_a.py:4023, 4029 y 3999: R(sup,'Alquiler mensual del local (€)'), R(sup,'Vida útil de obra e instalaciones (años)') y R(sup,'Vida útil de maquinaria y mobiliario (años)'), resueltos por igualdad de rótulo normalizado. Al rotularlas «Alquiler mensual del aparcamiento del vehículo (€)», «Vida útil del vehículo y su adaptación (años)» y «Vida útil del equipamiento y el mobiliario (años)» —que es lo que este producto necesita, porque no hay local ni obra— el dry-run abortó con «FALLOS: grupo_a: no se localizan las filas alquiler_sup, vida_maq_sup, vida_obra_sup» (medido el 2026-09-05). Hubo que revertirlas y dejar la aclaración en la nota. El libro entregado dice «Alquiler mensual del local» y «Vida útil de obra e instalaciones» en un negocio sin local ni obra.",
+   "fix_propuesto": "Resolver esas tres celdas por CLAVE del parámetro (`self.p.ref('alquiler_mes')`, `('vida_obra')`, `('vida_maquinaria')`, que ya devuelven la coordenada) en vez de por rótulo, como ya se hace en el resto de grupo_a. Con eso la etiqueta vuelve a ser realmente sobreescribible desde contenido, que es lo que promete el contrato (grupo_a.py:87)."
+  },
+  {
+   "id": "M-04 · un id interno de auditoría publicado al cliente",
+   "severidad": "media",
+   "evidencia": "plan-financiero-food-truck.xlsx!'Personal'!A10 = «CRECIMIENTO DE LA PLANTILLA (coste escalonado, RD-10)». Es el único id interno que queda en los dos entregables después de limpiar todo el contenido (barrido con regex sobre las 2 hojas × todas las celdas).",
+   "fix_propuesto": "grupo_a.py:1253 → rótulo «CRECIMIENTO DE LA PLANTILLA (coste escalonado)». El «RD-10» va al comentario del código, donde ya está explicado."
+  },
+  {
+   "id": "M-05 · el ratio y la fila de coste se llaman «Alquiler» sin posibilidad de override, en un producto sin local",
+   "severidad": "media",
+   "evidencia": "grupo_a.py:1948 escribe 'PyG 3 Años'!A22 = «Alquiler del local» y grupo_a.py:2140 el ratio «Alquiler / Ventas». `ratio()` sólo toma de `UMBRALES` el VALOR y el COMENTARIO (grupo_a.py:2110-2112): el rótulo que trae el módulo de contenido en la tupla es letra muerta. Este hermano lo declara como «Alquiler / Ventas» en UMBRALES para no engañar al lector del código, pero el libro no lo usa.",
+   "fix_propuesto": "Que `ratio()` tome también el rótulo de la tupla de UMBRALES (`u[1]`) cuando venga, y que `FIJOS` admita un tercer campo opcional de rótulo alternativo para las filas canónicas. Aquí quedarían «Aparcamiento y base del vehículo» y «Aparcamiento / Ventas»."
+  },
+  {
+   "id": "M-06 · `RX_EURO_FUERTE` no conoce «ventas» ni «derechos»: un rótulo de euros con «eventos»/«día» cae en el gate de formatos",
+   "severidad": "media",
+   "evidencia": "motor.py:1317-1332. Con los rótulos «Ventas de comida (menú del día a pie de calle y catering/eventos privados)» y «Derechos de autor por música ambiental en eventos (SGAE/AGEDI-AIE)», el gate marcaba 6 celdas como «recuento con €» ('PyG 3 Años'!B10:D10 y B35:D35) siendo importes. Se ha sorteado reescribiendo los dos rótulos, pero cualquier hermano que hable de «ventas por evento» o «ingresos por día» volverá a tropezar.",
+   "fix_propuesto": "Añadir `ventas|derechos` a `RX_EURO_FUERTE` (motor.py:1330). Es la lista que ya existe para «Ingresos por eventos» y «Coste por invitado»; le faltan estos dos."
+  },
+  {
+   "id": "M-07 · «Rotaciones al día que da el local como máximo» está cableada a 3,0 y no aplica a este molde",
+   "severidad": "baja",
+   "evidencia": "grupo_a.py:2354 escribe 'Punto Equilibrio'!B25=3,0 fijo, y B26 compara contra ella con semáforo. Un food truck no tiene aforo ni rotaciones: la magnitud es prestada. Se ha sorteado calibrando `aforo` (FT-08), que es el único parámetro que el contenido controla.",
+   "fix_propuesto": "Exponerla en la misma clave de contenido de M-02 (`COBERTURA`/`CAPACIDAD`), con 3,0 por defecto, y permitir apagar el bloque cuando el producto no tenga aforo."
+  },
+  {
+   "id": "M-08 · el payback se mide contra la NECESIDAD DE CAJA, que incluye el IVA recuperable",
+   "severidad": "baja",
+   "evidencia": "plan-financiero-food-truck.xlsx!'Tesorería 12 meses'!B30 = 'Inversión Inicial'!B29 = 95.858,80 €, que incluye 12.054 € de IVA soportado que la propia hoja rotula «(recuperable)». Con el FCF del año 1 (22.431 €) el payback publicado es «Más de 3 años»; sobre el CAPEX (65.752 €) o sobre la inversión total (83.805 €) sería sensiblemente más corto. La fila D30 lo llama «APORTACIÓN TOTAL que hay que poner sobre la mesa», así que el número no es falso, pero la fila de arriba se titula «Inversión a recuperar» y la de abajo «Payback del proyecto».",
+   "fix_propuesto": "O descontar el IVA recuperable del denominador del payback, o renombrar la fila «Aportación a recuperar (IVA incluido)» y añadir una segunda fila de payback sobre el CAPEX. Afecta a los 5 productos de línea A por igual."
+  },
+  {
+   "id": "M-09 · `INVERSION` y `FIJOS` no permiten corregir el RÓTULO de una fila preservada",
+   "severidad": "baja",
+   "evidencia": "grupo_a.py:1425-1433 y 2186-2196: la regla sólo admite 'suprimir' o un importe (`importe, nota = float(accion[0]), accion[1] or nota`). Pasando el mismo importe se puede reescribir la NOTA —así se han arreglado 'Inversión Inicial'!D14, D15 y D18—, pero el rótulo es intocable. Es la razón por la que los 5 textos de M-01 quedan fuera del alcance del contenido: la alternativa (suprimir + volver a dar de alta por INVERSION_EXTRA) mandaría el vehículo, la partida más cara del plan, al final del bloque de inversión.",
+   "fix_propuesto": "Admitir una tupla de 3 campos `(importe|None, nota, rotulo_nuevo)` en `INVERSION`/`FIJOS`, conservando la posición de la fila. Con M-01 aplicado deja de ser urgente."
+  }
+ ],
+ "no_procede": [
+  {
+   "id": "Bajar el umbral `r_neto` (4 %) para dar holgura al caso base",
+   "motivo": "No hace falta: con la amortización correcta y los sueldos al SMI el resultado neto del año 1 es el 5,05 % (6.824 € sobre 135.000 €) y las cinco ratios CUMPLEN. Tocar un umbral para que pase el semáforo es exactamente lo que prohíbe §7-bis.17."
+  },
+  {
+   "id": "Acentuar los 5 rótulos suprimiendo la fila y volviéndola a dar de alta por INVERSION_EXTRA",
+   "motivo": "Se probó sobre el papel y se descarta: las altas se escriben al FINAL del bloque, así que «Vehiculo food truck» (25.000 €, el 38 % de la inversión) bajaría por debajo de «Toldo, mobiliario exterior plegable», se perdería la nota original de cada fila y el diff dejaría de ser trazable contra la v1.1. El arreglo correcto es de motor (M-01) y cuesta seis entradas de diccionario."
+  },
+  {
+   "id": "Volver al 30 %/25 % de coste de mercancía que implicaba la v1.1",
+   "motivo": "Medido: en euros el coste de mercancía del caso base (36.600 €) es prácticamente el de la v1.1 (36.500 €), porque el catering —que en el fichero original facturaba 10.000 € a margen 100 %— ahora paga género. El 28 %/22 % está dentro de los rangos que publica el propio libro (28-33 % y 22-28 %). Sí se declara al cliente que es el extremo bajo (FT-13)."
+  },
+  {
+   "id": "Usar los 300 días de servicio que dice el documento en vez de 250",
+   "motivo": "Con los 45 clientes/día y los 12 € que el propio libro declara, 300 días dan 162.000 € y no los 135.000 € que publican la cuenta de resultados y la portada del documento. 250 es el único de los tres calendarios que hace exacta la cifra más repetida del paquete, y está dentro de los «4-6 días operativos/semana» del propio libro. El documento se reescribe en T9 desde estas celdas (§7-bis.4)."
+  },
+  {
+   "id": "Ampliar la plantilla hasta cubrir el 100 % de las horas de servicio",
+   "motivo": "El denominador es el que está mal (M-02), no la plantilla: llegar al 100 % con 13 h × 2 personas × 250 días exigiría 3,53 jornadas equivalentes, ~91.500 €/año, el 67,8 % de las ventas. El plan sería inviable y el semáforo de coste de personal pasaría a rojo."
+  },
+  {
+   "id": "RC-29 · nombres de hoja de más de 31 caracteres",
+   "motivo": "Los tres son de plan-negocio-parrillero-asador-eventos, otro producto y otra línea (B-γ). Su renombrado va en su propio módulo de contenido."
+  },
+  {
+   "id": "grupo_b y grupo_c «aún no existen»",
+   "motivo": "Pendiente de las tandas T6/T8 de la línea B; este producto es línea A y no los usa."
+  },
+  {
+   "id": "«1 docx sin A4 o sin author=AI Chef Pro»",
+   "motivo": "Los docx los produce `documentos.py` en T9, después de los xlsx (§7-bis.4 y orden de ejecución §9). El módulo de contenido no toca el documento."
+  }
+ ],
+ "dryrun": {
+  "exit": 0,
+  "gates_13": false,
+  "idempotencia_0": true,
+  "fallos": [],
+  "pendientes": [
+   "§1.7: quedan 5 textos sin tilde (Vehiculo, movil, vehiculo) — TODOS de motor: rótulos de filas preservadas en 'Inversión Inicial'!A7/A8/A9/A16 y 'PyG 3 Años'!A27 (ver M-01/M-09). Es lo único que separa de 13/13.",
+   "grupo_b aún no existe (línea B, no aplica a este producto)",
+   "grupo_c aún no existe (línea B, no aplica a este producto)",
+   "RC-29: 3 nombres de hoja de más de 31 caracteres — todos de plan-negocio-parrillero-asador-eventos, no de este producto",
+   "§9: 1 docx sin A4 o sin author=AI Chef Pro — lo produce documentos.py en T9",
+   "No lo reporta el motor pero queda vivo: 'Personal'!B22 (cobertura de horas) = 45,6 % en rojo por el cuadrante cableado de restaurante (M-02)"
+  ]
+ },
+ "cifras_medidas": {
+  "hojas_financiero": 9,
+  "nombres_hojas": [
+   "0. Supuestos",
+   "Inversión Inicial",
+   "PyG 3 Años",
+   "Punto Equilibrio",
+   "Escenarios",
+   "Personal",
+   "Instrucciones",
+   "Tesorería 12 meses",
+   "Financiación"
+  ],
+  "items_checklist": 68,
+  "fases_checklist": 6,
+  "formulas_financiero": 734,
+  "inversion_total": "83.805 € (CAPEX 65.752 € + fondo de maniobra 18.053 €); necesidad total de caja al arranque 95.859 € con 12.054 € de IVA soportado a adelantar",
+  "facturacion_ano1": "135.000 € sin IVA (45 clientes/día × 12 € × 250 días)",
+  "resultado_neto_ano1": "6.824 € (5,1 % de las ventas); año 2 12.755 € y año 3 14.834 €",
+  "food_cost": "27,1 % de coste de mercancía sobre ventas (comida 28 % y bebida 22 % sobre su propia línea); techo del libro 33 %",
+  "ratio_personal": "31,2 % (techo del libro 32 %)",
+  "ratio_alquiler": "3,6 % — es el aparcamiento y la base del vehículo, no una renta de local (techo 5 %)",
+  "ticket_sin_iva": "12,00 €",
+  "pvp_equivalente": "13,20 € con IVA",
+  "clientes_dia": "45 (extremo bajo del rango 40-80 clientes por servicio que declara el propio libro)",
+  "break_even_dia_contable": "40,8 clientes/día (122.473 € al año)",
+  "break_even_dia_caja": "37,6 clientes/día (112.674 € al año); holgura del plan sobre el equilibrio de caja, 19,8 %",
+  "payback_anos": "Más de 3 años sobre la aportación total con IVA incluido (95.859 €); flujo de caja libre del año 1, 22.431 €",
+  "saldo_minimo": "16.123 € en el mes 2 (nunca negativo)",
+  "plantilla_puestos": "4 puestos: 1 a jornada completa y 3 parciales (ayudante 45 %, refuerzo de eventos 10 %, suplencias 6 %) = 1,61 jornadas equivalentes",
+  "plantilla_coste_anual": "42.081 € (nóminas + 33 % de Seguridad Social, 14 pagas); año 2 48.081 € y año 3 54.081 €"
+ },
+ "cambios_a_py": [
+  "SUPUESTOS: `vida_maquinaria` 5 → 10 años (coeficiente lineal máximo del art. 12.1 LIS) y nota reescrita; `vida_obra` mantiene 8 años con nota nueva (elementos de transporte, 16 % máximo).",
+  "SUPUESTOS: `aforo` 12 → 16 con etiqueta «Plazas de pie y mesas altas junto al vehículo» y fuente (la partida «Toldo, mobiliario exterior plegable» de la propia inversión); saca del rojo el semáforo de rotaciones del punto de equilibrio.",
+  "SUPUESTOS: etiquetas nuevas en `fianza_meses` («Fianza del aparcamiento (meses)») y `meses_renta_previa` («Meses de alquiler del aparcamiento ANTES de abrir»).",
+  "SUPUESTOS: notas reescritas sin ids internos ni citas a rótulos sin tilde en `dias_apertura`, `coste_comida`, `alquiler_mes`, `suministros_mes`, `seguros_ano`, `pct_varios`, `prestamo`, `vida_obra`, `vida_maquinaria`, `aforo`, `meses_renta_previa`, `pct_imprevistos`.",
+  "SUPUESTOS: comentarios de aviso en `alquiler_mes`, `vida_obra` y `vida_maquinaria` explicando que su ETIQUETA es la clave con la que `grupo_a.demos()` localiza la fila y no se puede cambiar desde contenido (M-03).",
+  "AMORTIZABLE: símbolo NUEVO. Tres grupos propios del food truck: 'no' (circulante, gastos y licencias), 'obra' = vehículo y todo lo montado en él (8 años) y 'maquinaria' = equipamiento y mobiliario (10 años). Es lo que mete los 25.800 € del vehículo y el depósito en la base amortizable.",
+  "LINEAS_INGRESO: rótulo de la línea de comida sin «día» ni «eventos» («Ventas de comida (calle, mercados y catering privado)») para que el gate de formatos no la lea como recuento.",
+  "PLANTILLA: brutos 550 → 560, 120 → 125 y 70 → 75 €/mes, todos por encima del SMI 2026 en proporción a su jornada; notas y fuentes actualizadas.",
+  "INVERSION: tres reglas nuevas ('licencias y permisos (promedio)', 'proyecto tecnico sanitario', 'stock inicial de producto') que pasan el MISMO importe para reescribir su NOTA sin tocar el rótulo, el orden ni la cifra.",
+  "FIJOS_EXTRA: rótulo del canon de música sin la palabra «eventos» y notas sin citas a celdas con palabras sin tilde.",
+  "INSTRUCCIONES['uso']: renumerado 7/8 → 6/7 (el libro publicado saltaba del punto 5 al 7).",
+  "INSTRUCCIONES['referencias']: fuente «DOM-24 / checklist F4» → «Fichero v1.1 (fase 4 del checklist)»; notas nuevas en food cost, ticket, clientes por servicio, EBITDA objetivo y retorno de la inversión, declarando dónde el caso base se aparta de la referencia.",
+  "CHECKLIST['reemplazos']: 9 legales conservados + 28 de ortografía nuevos, todos anclados contra el texto POSTERIOR al §1 del motor, con el acento opcional y casando con su propio resultado (idempotentes y a prueba del futuro fix de M-01). Fuera el reemplazo idéntico («Evaluar eventos y festivales» → lo mismo) y los dos que ya no casaban («resenas», «minimo»).",
+  "CHECKLIST['altas']: notas sin citas a rótulos sin tilde («TPV movil + datafono», «Programa fidelización movil (QR)», «Formación APPCC movil»).",
+  "RECALIBRADO: reescrito entero, 13 → 17 filas, sin un solo id interno en la columna «Por qué» y con los valores REALES del libro final; filas nuevas para el aparcamiento del vehículo (coste que la v1.1 no pagaba) y para el suelo del SMI.",
+  "Docstring: puntos 6, 7 y 8 nuevos (base amortizable, vida útil y SMI) y párrafo de resultado con las cinco ratios medidas."
+ ],
+ "notas": [
+  "AVISO DE MÉTODO, por si sirve a los otros tres hermanos: el primer parche sustituyó bloques por RANGO DE LÍNEAS y el rango se calculó con `grep \"^    '[a-z_]*':\"`, que NO casa con las claves que llevan dígito. `crec_a2` y `crec_a3` cayeron dentro del rango de `dias_apertura` y se borraron SIN RUIDO: el libro siguió generándose con los valores por defecto de grupo_a (10 % y 6 % en vez de 15 % y 10 %) y ningún gate lo dijo. Lo delató la demo 5 de §2.11, que dejó de encontrar la ventana de las tres ramas del impuesto. Restauradas byte a byte desde `git show HEAD:` y verificado con un cruce de claves original↔nuevo (0 perdidas, 0 nuevas, sólo los 2 valores que se quisieron cambiar).",
+  "El caso base pasa sus cinco ratios pero el margen del año 1 es fino: 5,05 % contra un suelo del 4 %. Lo que lo sostiene es tomar el extremo bajo de los rangos de coste de mercancía que publica el propio libro; con el 33 % de comida el resultado se hunde. Está declarado en la celda y en la tabla de referencias, no escondido.",
+  "El libro NO alcanza el «EBITDA objetivo (año 2): 20-30 %» que declara su propia tabla de referencias (sale ~17 %), ni el «Retorno de la inversión: 12-24 meses» (sale «Más de 3 años»). Ninguno de los dos es un semáforo del libro y el criterio de familia es no borrar las referencias del fichero, así que se conservan CON una nota que dice dónde mirar el dato de este plan. Si T10 quiere publicar cifras, que use las medidas, no estas referencias.",
+  "`FIJOS` NO es letra muerta: `grupo_a._fijos()` lo consume (grupo_a.py:2182) y se ha verificado en el libro que la fila «Generador (combustible/alquiler)» de la v1.1 ya no aparece entre los costes fijos y que su gasto vive en 'Supuestos'!B26.",
+  "Los 13 símbolos del contrato están los 13, más `FIJOS` y el nuevo `AMORTIZABLE`. `INVERSION_CANON` (el decimosexto que lee grupo_a) no se declara: el canon por defecto clasifica bien este molde.",
+  "Verificado contra los ficheros publicados v1.1 (solo lectura) que las afirmaciones del módulo son ciertas: 'PyG 3 Anos'!B21=42.000 frente a Personal!E8=76.566; 'Inversion Inicial'!B14=2.500 = 'PyG 3 Anos'!B23=2.500 (doble conteo del seguro); B25=2.400 del generador; 'Punto Equilibrio'!B11=45, B9=12 y C8=«Asumiendo 25 dias de servicio/mes»; Escenarios realista 5×45×12×48=129.600; 'PyG 3 Anos'!B9=135.000; Instrucciones B4-B16 (los rangos del sector); Amortizacion 10.343 a 7 años; Imprevistos 5.500 (8 %); fondo 6.000 sobre 5.275 €/mes = 1,14 meses.",
+  "El documento v1.1 dice «facturación de aproximadamente 135.000 euros… considerando 300 días de operación» (450 €/día): incompatible con los 45 clientes y los 12 € que declara el propio xlsx. Se ha elegido el calendario que salva la cifra de facturación y se ha dejado dicho en la FUENTE de `dias_apertura`. T9 reescribe el documento desde el xlsx, así que la contradicción muere ahí.",
+  "Regenerado tres veces con el cerrojo global y el vigilante térmico; temperatura entre 45,5 y 53,4 °C durante toda la sesión, un python cada vez, sin builds ni navegador."
+ ]
+}

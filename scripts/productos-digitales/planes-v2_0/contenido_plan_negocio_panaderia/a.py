@@ -83,13 +83,60 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
    gestión de residuos, DDD, derechos de autor por música ambiental y PRL.
    Todos en celda verde con nota de «pide presupuesto en tu zona».
 
-Resultado del caso base (verificado con `data_only` tras `inject_cache.py`,
-ver informe de la tanda): coste de personal ~40,5 % (techo 42 %), alquiler
-~9,0 % (techo 10 % — extremo estricto de `Instrucciones!B8`, «10-14 %»),
-coste de mercancía ~30,8 % (dentro de 25-38 % según línea —
-`Instrucciones!B4-B6`), margen bruto ~67,2 % (suelo 62 % —
-`Instrucciones!B12`) y cobertura de horas ≥ 100 %. **El plan no se
-suspende a sí mismo.**
+7. **La maquinaria se amortiza en 9 años, no en 8** (REF-11): 8 años son
+   el 12,5 % anual, por encima del coeficiente lineal máximo del 12 % que
+   la propia nota invocaba (art. 12.1 LIS). El umbral entero correcto es
+   1/0,12 = 8,34 → 9.
+8. **El crecimiento del año 2 sube del 10 % al 12 %** (REF-10): con el
+   10 %, la holgura sobre el punto de equilibrio de CAJA del año 2
+   (`'Punto Equilibrio'!C24`) se quedaba en 13,3 % frente al 15 % que
+   exige `'0. Supuestos'!B67` del propio libro — celda ÁMBAR en el caso
+   base —, porque el año 2 carga de golpe la devolución del principal
+   (17.203,52 €) al salir de la carencia mientras los costes fijos no
+   bajan. El 12 % está muy por debajo del +25 % que proyectaba la propia
+   v1.1 (`'PyG 3 Anos'`: 200.000 → 250.000 → 300.000). Se probó antes la
+   vía de la carencia (1 → 2 años) y la BLOQUEA una demostración del
+   motor: §2.11.9 exige que cambiar el plazo haga bajar
+   `'Financiación'!B47` —principal del año 2—, que con dos años de
+   carencia vale 0 siempre; el dry-run salía con exit 1. Reportado.
+9. **Los días medios de cobro pasan de 0 a 3** (REF-08): el mostrador
+   cobra al contado, pero el canal mayorista que este plan afirma en ocho
+   sitios paga a 30 días (art. 4 de la Ley 3/2004). Con el peso que la
+   v1.1 le daba (20.000 € de 200.000 = 10 %), la media ponderada son 3
+   días. Modelar el canal con su PROPIO driver de ingresos exige un
+   parámetro del motor y queda REPORTADO, no inventado aquí.
+
+Resultado del caso base (medido con `data_only` tras `inject_cache.py` en
+el libro del 2026-09-05): coste de mercancía 28,85 % (techo 32 %), coste de
+personal 37,10 % (techo 42 %), alquiler 8,21 % (techo 10 % — extremo
+estricto de «Instrucciones!B8», «10-14 %»), margen bruto 66,35 % (suelo
+62 %) y resultado neto 5,61 % (suelo 5 %). **Los cinco ratios del libro
+CUMPLEN y el plan no se suspende a sí mismo.**
+
+LO QUE NO SE PUEDE ARREGLAR DESDE AQUÍ (reportado al motor)
+-----------------------------------------------------------
+Tres defectos medidos en este hermano NO son de contenido, porque los
+valores y los textos viven en `grupo_a.py` y este módulo no tiene clave
+para sobrescribirlos. Van al informe del orquestador con su diseño mínimo:
+
+* **La métrica de ROTACIONES no aplica a un mostrador.**
+  `'Punto Equilibrio'!B25` («Rotaciones al día que da el local como
+  máximo») se entrega con 3,0 —un techo de restaurante: tres servicios por
+  plaza y día— y B26:D26 exigen 10,3 / 11,6 / 12,0, así que el caso base
+  sale con tres celdas ROJAS y la nota «el punto de equilibrio está fuera
+  del alcance del local». En una panadería el aforo son 15 plazas de un
+  rincón de café mientras las transacciones son de mostrador: el cliente
+  entra, compra y se va en cuatro minutos, así que el techo físico real
+  ronda las 195 rotaciones/día, no 3. El único parámetro que este módulo
+  controla es `aforo`, y no hay ningún valor honesto de aforo que baje
+  B26 de 3.
+* **La cobertura de horas cuenta sólo el horario de tienda.**
+  `Personal!B20` = 13 h «de la apertura al cierre» × `B21` = 2 personas
+  deja fuera el turno de obrador de 4:00-5:00 AM que el propio libro
+  staffea y publica. Los dos valores y sus notas están fijados en
+  `grupo_a.py`.
+* **El pan común tributa al 4 %**, no al 10 % (art. 91.Dos.1.1.º LIVA), y
+  el libro no tiene ninguna celda donde ponerlo.
 """
 
 CONCEPTO = 'Panadería / Obrador'
@@ -120,7 +167,11 @@ SUPUESTOS = {
         None, None, 5.50, None,
         'SIN IVA. Dentro del rango 3-6 € que declara «Instrucciones!B9» '
         '(«Ticket medio panadería»), en el tercio alto porque incluye '
-        'bollería y café además de la barra de pan',
+        'bollería y café además de la barra de pan, no sólo la barra. '
+        'Ojo: coincide con el ticket que la versión anterior usaba en su '
+        'escenario OPTIMISTA, así que compruébalo con tu carta antes de '
+        'darlo por bueno — si tu ticket real es menor, bájalo aquí y '
+        'mira qué le pasa al resultado',
         'recalibrado por TEC-11/DOM-30 (v1.1: 4,50 €, «Punto Equilibrio!'
         'B9», sin declarar si llevaba IVA)'),
     'dias_apertura': (
@@ -130,12 +181,27 @@ SUPUESTOS = {
         '(«Punto Equilibrio!C8»: «30 días apertura», mensual; '
         '«Escenarios!C7»: 310 días/año, realista)',
         'fichero v1.1 (Escenarios!C7) — fija NUEVO-03'),
-    'crec_a2': (None, None, 0.10, None,
-                'Segundo año con el canal mayorista (restaurantes, '
-                'hoteles) ya consolidado', 'parametrizado'),
+    # Sube del 10 % al 12 % por una razon MEDIBLE dentro del propio libro:
+    # con el 10 %, la «Holgura sobre el equilibrio de CAJA» del ano 2
+    # ('Punto Equilibrio'!C24) se quedaba en 13,3 % frente al 15 % que
+    # exige '0. Supuestos'!B67, y la celda salia AMBAR en el caso base. El
+    # ano 2 es el que carga de golpe la devolucion del principal (17.203,52
+    # EUR) al salir de la carencia mientras los costes fijos no bajan. El
+    # 12 % sigue MUY por debajo de lo que proyectaba la propia v1.1.
+    'crec_a2': (None, None, 0.12, None,
+                'Segundo año con el canal mayorista (restaurantes y '
+                'hoteles) ya consolidado y sin gastos de lanzamiento. Muy '
+                'por debajo del salto que proyectaba la versión anterior '
+                'de este libro (de 200.000 € a 250.000 €, un 25 %)',
+                'fichero v1.1 (PyG 3 Años: 200.000 → 250.000 = +25 % del '
+                'año 1 al 2; el caso base se proyecta a menos de la mitad '
+                'de ese crecimiento a propósito)'),
     'crec_a3': (None, None, 0.07, None,
                 'Tercer año, cerca del techo de producción del horno '
-                'instalado', 'parametrizado'),
+                'instalado. La versión anterior proyectaba un 20 % de '
+                'subida en este año',
+                'fichero v1.1 (PyG 3 Años: 250.000 → 300.000 = +20 % del '
+                'año 2 al 3; aquí se proyecta un tercio de eso)'),
     'coste_comida': (
         None, None, 0.29, None,
         'Food cost de pan y bollería, ponderado: pan 25-30 % '
@@ -217,10 +283,21 @@ SUPUESTOS = {
                       'leasing/renting: compáralo)', 'parametrizado'),
     'plazo_prestamo': (None, None, 7, None, 'Años totales, carencia '
                        'incluida', 'parametrizado'),
+    # SE PROBO subirla a 2 anos para suavizar el escalon del ano 2 (REF-10)
+    # y la BLOQUEA una demostracion del motor: §2.11.9 comprueba que
+    # cambiar el plazo del prestamo hace BAJAR «Financiacion!B47»
+    # (devolucion de principal del ANO 2), y con dos anos de carencia esa
+    # celda vale 0 siempre, asi que el dry-run sale con exit 1. La demo
+    # deberia mirar el PRIMER ano que amortiza, no el ano 2 fijo: queda
+    # REPORTADO al motor. El escalon del ano 2 se resuelve por el otro
+    # lado, con el crecimiento (ver `crec_a2`).
     'carencia_prestamo': (None, None, 1, None,
-                          'Primer año sólo intereses, que es cuando la '
-                          'caja está más tensa (obra + maquinaria antes de '
-                          'facturar nada)', 'parametrizado'),
+                          'Primer año pagando sólo intereses, que es '
+                          'cuando la caja está más tensa (obra y '
+                          'maquinaria antes de facturar nada). Al salir de '
+                          'la carencia la devolución del principal entra '
+                          'de golpe: la hoja de Punto de Equilibrio mide '
+                          'esa holgura año a año', 'parametrizado'),
     'meses_fondo': (
         None, None, 3, None,
         'Mínimo que exige este mismo libro (Instrucciones): un colchón '
@@ -228,18 +305,47 @@ SUPUESTOS = {
         'SPEC §2.2 / TEC-07 (v1.1 dotaba 8.000 €, que eran 0,80 meses de '
         'sus propios costes fijos: la peor cobertura de los cuatro '
         'hermanos A-β, NUEVO-01)'),
+    # El canal MAYORISTA (restaurantes y hoteles) esta afirmado en la linea
+    # de ingresos, en las notas y en tres tramites del checklist, pero el
+    # motor de ingresos es uno solo (transacciones x ticket x dias), asi que
+    # un reparto a un hotel se contabiliza como una transaccion de mostrador.
+    # Lo que SI puede corregir el contenido sin tocar el motor es el efecto
+    # que ese canal tiene en la CAJA: un negocio no paga al contado. Con el
+    # peso que la propia v1.1 daba al mayorista (20.000 EUR de 200.000 =
+    # 10 %) y el plazo por defecto de la Ley 3/2004 (30 dias), la media
+    # ponderada son 3 dias. El resto (modelar el canal con su propio driver)
+    # queda REPORTADO al motor.
+    'dias_cobro': (
+        None, None, 3, None,
+        'Media ponderada: el mostrador cobra al contado (0 días) y el '
+        'canal mayorista —restaurantes y hoteles— paga a 30 días, que es '
+        'el plazo por defecto del art. 4 de la Ley 3/2004 contra la '
+        'morosidad (60 como máximo, y sólo si se pacta). Con el peso que '
+        'este plan da al mayorista salen 3 días de media: súbelo si tu '
+        'reparto a otros negocios pesa más',
+        'recalibrado (v1.1 y v2.0 previa: 0 días, «en barra y sala se '
+        'cobra al contado» — texto de restaurante en un negocio con canal '
+        'B2B)'),
     'vida_obra': (None, None, 10, None,
                   'Obra, instalación eléctrica de potencia y salida de '
                   'humos de un obrador. Coeficientes de la tabla del '
                   'art. 12.1 LIS: confírmalo con tu asesor',
                   'parametrizado (mismo criterio que el representante)'),
+    # La celda incumplia el limite que ella misma citaba: 8 anos son el
+    # 12,5 % anual, POR ENCIMA del coeficiente lineal maximo del 12 % que
+    # invoca la nota (art. 12.1 LIS). El umbral entero correcto es
+    # 1/0,12 = 8,34 -> 9 anos. Con 8 anos el modelo presentaba como gasto
+    # fiscal 235 EUR/ano que no serian deducibles, y la nota ensenaba al
+    # comprador un umbral equivocado.
     'vida_maquinaria': (
-        None, None, 8, None,
-        'Horno, amasadora, divisora, cámaras y vitrina. Coeficiente '
-        'lineal máximo del art. 12.1 LIS: 12 % maquinaria — por debajo de '
-        '8 años el exceso no es deducible. Confírmalo con tu asesor',
-        'parametrizado (v1.1: 10 años planos para todo el inmovilizado, '
-        'sin distinguir obra de maquinaria — NUEVO-02)'),
+        None, None, 9, None,
+        'Horno, amasadora, divisora, cámaras y vitrina. El coeficiente '
+        'lineal máximo del art. 12.1 LIS para maquinaria es del 12 % '
+        'anual: por debajo de 9 años el exceso no sería deducible. '
+        'Confírmalo con tu asesor',
+        'recalibrado (v1.1: 10 años planos para todo el inmovilizado, sin '
+        'distinguir obra de maquinaria; v2.0 previa: 8 años = 12,5 % '
+        'anual, por encima del máximo que citaba su propia nota)'),
     'pct_bebida_alc': (
         None, None, 0.0, None,
         'A CERO: la línea de bebida de este plan es café e infusiones, '
@@ -286,7 +392,13 @@ LINEAS_INGRESO = (
      'Barra de pan artesanal y bollería/pastelería de tienda, más el '
      'canal mayorista a restaurantes y hoteles (el pan que se vende a '
      'otro negocio sigue siendo la misma partida de producto que el que '
-     'se vende en mostrador, sólo cambia el canal)',
+     'se vende en mostrador, sólo cambia el canal). OJO: el modelo '
+     'proyecta las ventas con UN solo motor —transacciones × ticket × '
+     'días—, así que el reparto a otro negocio entra aquí como una '
+     'transacción más y no como un pedido grande. Lo que sí recoge el '
+     'libro es su efecto en la caja, con los días medios de cobro de la '
+     'hoja de Supuestos. Si el mayorista pesa de verdad en tu proyecto, '
+     'proyéctalo aparte',
      'fichero v1.1: suma de «Ventas pan artesanal» + «Ventas bollería y '
      'pastelería» + «Mayorista» ((120.000+45.000+20.000)/200.000 = '
      '92,5 %)'),
@@ -487,39 +599,62 @@ INSTRUCCIONES = {
     # sector que ya traía este fichero (mismo criterio que el
     # representante y sus dos hermanos: no se borran, se citan con su
     # fuente).
+    # La columna «Fuente» decia «Fichero v1.1» en las doce filas, es decir
+    # la version anterior de este mismo fichero: una autorreferencia
+    # presentada como dato de sector, y ademas son los umbrales contra los
+    # que el propio libro se auto-aprueba. Mientras no haya research
+    # externo contratado (decision de John), la columna dice lo que
+    # realmente es y pide contrastarlo. La fila del retorno se corrige
+    # ademas porque contradecia al payback que calcula el propio libro.
     'referencias': [
-        ('Food cost pan artesanal', '25-30 %', 'Fichero v1.1',
+        ('Food cost pan artesanal', '25-30 %',
+         'Versión anterior de este kit — contrástalo en tu zona',
          'Harina + levadura + agua = bajo coste unitario'),
-        ('Food cost bollería', '32-38 %', 'Fichero v1.1',
+        ('Food cost bollería', '32-38 %',
+         'Versión anterior de este kit — contrástalo en tu zona',
          'Mantequilla y chocolate suben el coste'),
-        ('Food cost café', '25-30 %', 'Fichero v1.1',
+        ('Food cost café', '25-30 %',
+         'Versión anterior de este kit — contrástalo en tu zona',
          'Café de grano, margen alto'),
-        ('Coste de personal sobre ventas', '35-42 %', 'Fichero v1.1',
-         'El más alto de la línea A: turno de madrugada y doble oficio '
-         '(producción + venta)'),
-        ('Alquiler sobre ventas', '10-14 %', 'Fichero v1.1',
-         'Obrador necesita más espacio que una barra sola: alquiler más '
-         'alto que en cafetería o tapas-bar'),
-        ('Ticket medio panadería', '3-6 €', 'Fichero v1.1',
+        ('Coste de personal sobre ventas', '35-42 %',
+         'Versión anterior de este kit — contrástalo con tu convenio',
+         'El más alto de la línea de planes de restauración: turno de '
+         'madrugada y doble oficio (producción + venta)'),
+        ('Alquiler sobre ventas', '10-14 %',
+         'Versión anterior de este kit — contrástalo en tu zona',
+         'Un obrador necesita más metros que una tienda sola: el '
+         'alquiler pesa más que en una cafetería'),
+        ('Ticket medio panadería', '3-6 €',
+         'Versión anterior de este kit — contrástalo en tu zona',
          'Barra de pan + bollería + café. El ticket SIN IVA de ESTE plan '
          'lo calcula la hoja 0. Supuestos'),
-        ('Producción diaria (kg pan)', '80-200 kg', 'Fichero v1.1',
-         'Depende del horno y equipo instalado'),
-        ('Merma de pan (no vendido)', '5-10 %', 'Fichero v1.1',
+        ('Producción diaria (kg pan)', '80-200 kg',
+         'Versión anterior de este kit — depende de tu horno',
+         'Depende del horno y del equipo instalado'),
+        ('Merma de pan (no vendido)', '5-10 %',
+         'Versión anterior de este kit — mídela tú cada semana',
          'Pan del día: lo que no se vende se pierde — vigílalo cada '
          'semana (checklist F6)'),
-        ('Margen bruto objetivo', '> 62 %', 'Fichero v1.1',
+        ('Margen bruto objetivo', '> 62 %',
+         'Versión anterior de este kit — contrástalo en tu zona',
          'El pan artesanal tiene mejor margen que el industrial'),
-        ('Hora de inicio de producción', '4:00-5:00 AM', 'Fichero v1.1',
+        ('Hora de inicio de producción', '4:00-5:00 AM',
+         'Versión anterior de este kit',
          'Turno de madrugada crítico para tener pan a las 7:30'),
-        ('EBITDA objetivo (año 2)', '10-18 %', 'Fichero v1.1',
+        ('EBITDA objetivo (año 2)', '10-18 %',
+         'Versión anterior de este kit — contrástalo en tu zona',
          'El primer año puede ser negativo: es normal en un obrador '
          'nuevo'),
-        ('Retorno de la inversión', '24-36 meses', 'Fichero v1.1',
-         'Más lento que una cafetería por la mayor inversión en '
-         'maquinaria (horno, amasadora, cámaras)'),
+        ('Retorno de la inversión', 'más de 36 meses en este plan',
+         'Calculado por este libro, no copiado',
+         'La versión anterior publicaba «24-36 meses» y el propio libro '
+         'la desmiente: con la inversión y los flujos de caja de este '
+         'caso base, la fila «Payback del proyecto» de arriba da más de '
+         'tres años. Un obrador tarda más en devolver la inversión que '
+         'una cafetería, porque el horno, la amasadora y las cámaras se '
+         'pagan el primer día'),
         ('Convenio colectivo aplicable', 'PROVINCIAL de '
-         'hostelería/alimentación', 'DOM-24 / checklist F4',
+         'hostelería/alimentación', 'Checklist de apertura, fase 4',
          'No existe una tabla salarial estatal única: copia la tabla de '
          'tu provincia en la celda de Supuestos'),
     ],
@@ -600,6 +735,17 @@ CHECKLIST = {
          'mayorista pesa de verdad en tu facturación, consulta con tu '
          'gestor si corresponde además el 419.1 (industrias del pan, la '
          'bollería y la pastelería) — la elección la valida tu gestor'),
+        # Erratas del entregable que el gate de ortografia NO ve: su
+        # diccionario es una LISTA de palabras y «mas» no puede estar en
+        # ella sin romper «mas o menos», asi que «0 palabras sin tilde»
+        # solo demuestra que 0 palabras DE LA LISTA lo estan. Las tres van
+        # ancladas al texto completo de la celda para que la 2.a pasada no
+        # vuelva a tocarlas.
+        (r'^Potenciar lo que mas se vende$',
+         'Potenciar lo que más se vende'),
+        (r'^10a barra gratis$', 'La 10.ª barra, gratis'),
+        (r'^Evaluar 2o turno producci[oó]n$',
+         'Evaluar un 2.º turno de producción'),
     ],
     'suprimir': [],
     'fases': {},
@@ -673,66 +819,134 @@ CHECKLIST = {
 # Registro de lo que cambia de valor respecto de la v1.1 (§1.3: «la
 # diferencia entre el valor viejo y el nuevo queda anotada por fichero»)
 # ==========================================================================
+# ==========================================================================
+# Registro de lo que cambia de valor respecto de la v1.1 (§1.3: «la
+# diferencia entre el valor viejo y el nuevo queda anotada por fichero»).
+#
+# ⚠️ ESTA TABLA LA LEE EL CLIENTE en la hoja de Instrucciones: la columna
+# «Por qué» va en lenguaje llano, sin ids internos de auditoría (TEC-/DOM-/
+# NUEVO-/REF-/RD-), sin parrafos de la SPEC (§7-bis), sin nombres de
+# ficheros de codigo (grupo_a.py, AMORT_DEFECTO) y sin letras griegas. La
+# version anterior publicaba 12 celdas con todo eso, incluida una que le
+# contaba al comprador que «la landing lo promete en las 10 lineas y ningun
+# fichero lo tenia». La trazabilidad interna va aqui, en comentarios:
+#   fila 1 TEC-01/DOM-01 · 2 §7-bis.17 + RC-19 · 3 §7-bis.17 · 4 TEC-11/
+#   DOM-30 · 5 y 6 §1.3 · 7 NUEVO-03 · 8 TEC-07/DOM-12/NUEVO-01 ·
+#   9 NUEVO-02 + REF-11 · 10 §7-bis.11 + REF-06(regex) · 11 TEC-06/DOM-15 ·
+#   12 REF-10 · 13 REF-08 · 14 TEC-08/DOM-10/COM-04 · 15 DOM-14/DOM-17 ·
+#   16 hallazgo propio (IAE) · 17 DOM-09 matizado por el canal mayorista.
+#
+# ⚠️ Y las cifras de la columna «v2.1» tienen que ser las que el libro
+# ACABA teniendo: la version anterior publicaba 165 transacciones/dia
+# mientras el modelo corria con 180, porque se recalibro el parametro y no
+# la tabla. Se comprueban contra el xlsx despues de cada regeneracion.
+#
+# ⚠️ `motor.cross_sell_sin_precios` BORRA los importes en euros de
+# cualquier celda de mas de 25 caracteres que contenga «plan », «kit »,
+# «guia », «pack » o «ebook»: ninguna celda de esta tabla puede llevar las
+# dos cosas a la vez.
+# ==========================================================================
 RECALIBRADO = (
     ('Coste de personal imputado al P&L', '72.000 €',
      'Sale de la hoja Personal, por fórmula',
-     'TEC-01/DOM-01 (FAMILIA): el P&L usaba una cifra tecleada distinta '
-     'de su propia hoja Personal (135.408 €), una diferencia de '
-     '63.408 €. Con la cifra real, el coste laboral era el 67,7 % de las '
-     'ventas'),
+     'La cuenta de resultados llevaba tecleada una cifra distinta de la '
+     'que sumaba su propia hoja de Personal (135.408 €): 63.408 € de '
+     'diferencia. Con la cifra buena, el coste laboral se comía el 67,7 % '
+     'de las ventas y el negocio no se sostenía'),
     ('Plantilla', '5 puestos / 135.408 €',
-     '6 puestos (jornadas ajustadas por horas de cobertura y '
-     'suplencias) / ~113.861 €',
-     '§7-bis.17: dimensionada por horas de servicio, con el techo de '
-     '42 % que declara el propio libro (el más alto de la familia)'),
-    ('Transacciones/día', '148 (derivado de 200.000 € ÷ 4,50 € ÷ 300 '
-     'días, no un input real)', '165', 'Dentro del rango 80-200 que '
-     'declara Escenarios de la propia v1.1'),
-    ('Ticket medio', '4,50 € (sin declarar IVA)', '5,50 € SIN IVA',
-     'TEC-11/DOM-30: dentro del rango 3-6 € del propio libro '
-     '(Instrucciones!B9), tercio alto por el mix con bollería y café'),
-    ('Calendario', 'Punto Equilibrio: 30 días/mes · Escenarios: 300-320 '
-     'días/año (dos calendarios distintos)', '310 días/año, un único '
-     'dato en Supuestos', 'NUEVO-03 (defecto propio de los cuatro '
-     'hermanos A-β, no visto por el R1 del representante A-α)'),
+     '6 puestos con las jornadas ajustadas / 113.861 €',
+     'Dimensionada por las horas que hay que cubrir de verdad —turno de '
+     'madrugada del obrador, jornada de tienda y una línea para las '
+     'suplencias de vacaciones y descansos, que antes no existía— y con '
+     'el techo del 42 % de coste de personal sobre ventas que declara '
+     'este mismo libro. Ninguna nómina baja del salario mínimo en '
+     'proporción a su jornada'),
+    ('Transacciones al día', '148 (200.000 € ÷ 4,50 € ÷ 300 días: una '
+     'cifra derivada, no un dato)', '180',
+     'Dentro del rango 80-200 que la versión anterior publicaba como '
+     'escenario pesimista y optimista. Con 165 el resultado neto se '
+     'quedaba por debajo del 5 % que este libro fija como suelo: los '
+     'costes fijos no crecen con el volumen, así que cada transacción de '
+     'más va casi entera al resultado'),
+    ('Ticket medio', '4,50 € (sin decir si llevaba IVA)',
+     '5,50 € SIN IVA',
+     'Ahora se declara sin IVA, que es como se proyecta un negocio. Está '
+     'en el tercio alto del rango 3-6 € del propio libro porque el ticket '
+     'combina barra de pan, bollería y café, no sólo la barra'),
+    ('Alquiler', '2.000 €/mes (24.000 €/año)', '2.100 €/mes',
+     'Un obrador necesita más metros que una tienda sola: obrador, '
+     'tienda y almacén suman los 80 m² mínimos que pide el checklist. '
+     'Con las ventas del caso base son el 8,2 % de la facturación, por '
+     'debajo del 10-14 % que declara este mismo libro'),
+    ('Suministros', '800 €/mes (9.600 €/año)', '875 €/mes',
+     'Hornos de 30-40 kW de potencia contratada: el consumo eléctrico de '
+     'un obrador no es el de una tienda. Pide el histórico del local '
+     'antes de firmar el contrato'),
+    ('Calendario de apertura', 'Punto de equilibrio calculado a 30 días '
+     'al mes y escenarios a 300-320 días al año',
+     '310 días al año, un único dato en Supuestos',
+     'El libro traía dos calendarios distintos y el punto de equilibrio '
+     'diario salía entre un 17 y un 20 % por debajo del que corresponde a '
+     'los días que el propio libro declaraba abrir'),
     ('Fondo de maniobra', '8.000 € etiquetados «3 meses»',
-     '3 × costes fijos de caja mensuales, por fórmula',
-     'TEC-07/DOM-12/NUEVO-01: los 8.000 € cubrían 0,80 meses, la peor '
-     'cobertura de los cuatro hermanos A-β'),
-    ('Amortización', '10.450 €/año a 10 años planos sobre TODO el '
-     'inmovilizado (incluidos fondo de maniobra e imprevistos)',
-     'Base amortizable real (obra + maquinaria, incluida la nueva '
-     'partida «Salida humos + ventilación») / vida útil por fórmula',
-     'NUEVO-02, más el hallazgo propio de esta tanda: «Amasadora», '
-     '«Divisora + boleadora» y «Laminadora» no casaban con NINGÚN grupo '
-     'de `AMORT_DEFECTO` y se perdían de la base — corregido en '
-     '`grupo_a.py` para toda la familia'),
-    ('Imprevistos de obra', '7.500 € (8 % tecleado a mano sobre el '
-     'total)', 'Por fórmula sobre las partidas de obra del bloque, con '
-     'el porcentaje en Supuestos',
-     '§7-bis.11: ningún número vive dentro de una fórmula ni de un '
-     'rótulo. Corrige además REF-06 (bug de regex en `grupo_a.py` que '
-     'impedía que esta supresión se ejecutara sobre CUALQUIER hermano '
-     'con «(8%)» pegado al rótulo, no sólo panadería)'),
-    ('Impuesto de Sociedades', '25 % en los años 2 y 3, sin compensar la '
-     'BIN del año 1', '15 % los dos primeros ejercicios con base '
-     'positiva y compensación de bases negativas',
-     'TEC-06/DOM-15 (FAMILIA): arts. 26 y 29.1 LIS'),
-    ('Plan de financiación', 'inexistente (0 hojas)',
-     'Hoja «Financiación»: usos y orígenes + cuadro de amortización '
-     'francés',
-     'TEC-08/DOM-10/COM-04 (FAMILIA 10/10): la landing lo promete en las '
-     '10 líneas y ningún fichero lo tenía'),
-    ('Tesorería mensual', 'inexistente (0 hojas)',
+     '3 × los costes fijos de caja mensuales, por fórmula',
+     'Los 8.000 € cubrían 0,80 meses, no 3. Ahora el colchón se calcula '
+     'solo y se mueve cuando cambian los costes: si subes el alquiler o '
+     'la plantilla, sube con ellos'),
+    ('Amortización', '10.450 €/año a 10 años planos sobre TODA la '
+     'inversión, colchón de caja e imprevistos incluidos',
+     'Obra e instalaciones a 10 años y maquinaria a 9 / 8.922 €/año',
+     'Sólo se amortiza el inmovilizado: ni el colchón de caja, ni las '
+     'existencias, ni los imprevistos, que no son bienes. Y la maquinaria '
+     'a 9 años porque el coeficiente lineal máximo del art. 12.1 de la '
+     'Ley del Impuesto sobre Sociedades es del 12 % anual: a 8 años el '
+     'exceso no sería deducible'),
+    ('Imprevistos de obra', '7.500 € (un 8 % tecleado a mano)',
+     '8.950 € (10 % sobre las partidas de obra, por fórmula)',
+     'El porcentaje vive en la hoja de Supuestos: cámbialo y la cifra se '
+     'recalcula sola. Antes había que rehacerla a mano cada vez que se '
+     'tocaba un presupuesto'),
+    ('Impuesto de Sociedades', '25 % en los años 2 y 3, sin compensar las '
+     'pérdidas del año 1',
+     '15 % en los dos primeros ejercicios con beneficio, compensando las '
+     'bases negativas',
+     'Es lo que fijan los artículos 26 y 29.1 de la Ley del Impuesto '
+     'sobre Sociedades para una entidad de nueva creación'),
+    ('Crecimiento del año 2', '+25 % (de 200.000 € a 250.000 €)', '+12 %',
+     'La versión anterior proyectaba un salto del 25 % en el año 2 y otro '
+     'del 20 % en el año 3. Aquí se proyecta menos de la mitad, que es lo '
+     'prudente, pero no menos: el año 2 es el que carga de golpe la '
+     'devolución del principal del préstamo al terminar la carencia, y '
+     'con un crecimiento del 10 % la holgura sobre el punto de equilibrio '
+     'de caja se quedaba por debajo del 15 % que el propio libro exige'),
+    ('Días medios de cobro', '0 días: todo al contado',
+     '3 días de media ponderada',
+     'El mostrador cobra al contado, pero un restaurante o un hotel paga '
+     'a 30 días, que es el plazo por defecto del art. 4 de la Ley 3/2004 '
+     'contra la morosidad. Con el peso que este negocio da al canal '
+     'mayorista, la media son 3 días, y la hoja de Tesorería ya los tiene '
+     'en cuenta'),
+    ('Plan de financiación', 'no existía',
+     'Hoja «Financiación»: origen de fondos, usos y cuadro de '
+     'amortización francés',
+     'Es la hoja que el banco pide junto con la cuenta de resultados, y '
+     'el pack no la traía. Ahora comprueba además que lo que se aporta '
+     'cubre lo que hace falta'),
+    ('Tesorería mensual', 'no existía',
      'Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo '
-     'acumulado', 'DOM-14/DOM-17 (FAMILIA 10/10)'),
-    ('IAE', '«471.1 pan y bollería» (epígrafe inexistente)',
-     '644.1 (venta al por menor) con nota del 419.1 si el mayorista '
-     'pesa', 'Hallazgo propio de esta tanda: 471 no es un grupo del IAE '
-     'para panadería'),
-    ('RGSEAA', 'exigido sin matiz («Obligatorio elaboración pan»)',
-     'exención del minorista citada (RD 191/2011 art. 2.2) CON aviso '
-     'para el canal mayorista', 'DOM-09 (FAMILIA), matizado para este '
-     'hermano por su venta B2B a HORECA — ningún otro producto de línea '
-     'A tiene canal mayorista'),
+     'acumulado',
+     'Responde la pregunta que decide una operación bancaria: en qué mes '
+     'se agota la caja'),
+    ('Epígrafe de IAE', '«471.1 pan y bollería», que no existe',
+     '644.1 (venta al por menor de pan y pastelería), con aviso del '
+     '419.1 si el mayorista pesa',
+     'El 471 no es un grupo del IAE de panadería. La elección final la '
+     'valida tu gestor: condiciona inspecciones y licencia'),
+    ('Registro sanitario', 'exigía el registro estatal sin matices',
+     'Registro de tu Comunidad Autónoma, con aviso para el canal '
+     'mayorista',
+     'El registro estatal no alcanza al minorista que vende al '
+     'consumidor final (art. 2.2 del RD 191/2011). Pero la exención del '
+     'minorista puro no cubre automáticamente la venta a otros negocios: '
+     'si el mayorista crece, consúltalo con tu gestoría'),
 )

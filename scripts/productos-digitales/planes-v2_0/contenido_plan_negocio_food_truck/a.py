@@ -137,11 +137,37 @@ Lo que se ha hecho, y por qué se puede defender ante un banco:
    PRL y derechos de autor por música ambiental en eventos. Todos en celda
    verde con nota de «pide presupuesto en tu zona».
 
-Resultado del caso base (verificado con `data_only` tras `inject_cache.py`,
-ver informe de la tanda): coste de personal por debajo del techo 32 % de
-`Instrucciones!B7`, margen bruto por encima del suelo «>62 %» de
-`Instrucciones!B10`, y resultado neto positivo. **El plan no se suspende a sí
-mismo.**
+6. **El vehículo entra en la base amortizable, que es de donde faltaba.** La
+   clasificación por defecto del motor reconoce «obra», «instalaciones» y
+   «equipamiento», pero no la palabra «vehículo»: los 25.000 € del food truck
+   —la partida más grande del plan, el 38 % de la inversión— caían fuera de
+   toda base y el libro amortizaba 4.510 €/año sobre 27.800 € de inmovilizado
+   cuando el inmovilizado real de este plan son 53.600 €. Este módulo declara
+   su propia tabla `AMORTIZABLE`. Sin ella el resultado del año 1 salía
+   inflado y el semáforo de rentabilidad daba verde por una amortización que
+   faltaba: es el defecto de `CRIT-02`/`NUEVO-02` por FALTA de patrón, el
+   mismo que se midió en panadería.
+7. **La vida útil del equipamiento pasa de 5 a 10 años** (`RD-15`, el mismo
+   defecto que ya corrigió el representante): 5 años son el 20 % anual, muy
+   por encima del coeficiente lineal máximo de la tabla del art. 12.1 LIS
+   —12 % para maquinaria y 10 % para mobiliario—, así que el exceso no sería
+   deducible y la base imponible del modelo quedaba mal calculada. El
+   vehículo sí se queda en 8 años (12,5 %): es elemento de transporte, cuyo
+   coeficiente lineal máximo es el 16 %.
+8. **Ningún sueldo por debajo del SMI en proporción a la jornada.** El
+   refuerzo de eventos (120 €/mes al 10 % de jornada) y la línea de
+   suplencias (70 € al 6 %) quedaban unos euros por debajo del SMI 2026
+   prorrateado —1.221 €/mes a jornada completa— y el semáforo de la hoja de
+   Personal las sacaba en ROJO en el fichero que se entrega.
+
+Resultado del caso base (medido en el libro del 2026-09-05): coste de personal
+**31,2 %** (techo 32 %), coste de mercancía **27,1 %** (techo 33 %), margen
+bruto **64,1 %** (suelo 62 %), aparcamiento y base **3,6 %** (techo 5 %) y
+resultado neto **5,1 %** (suelo 4 %). **Las cinco pasan y el plan ya no se
+suspende a sí mismo.** El margen del primer año es estrecho a propósito: el
+plan carga la amortización completa del vehículo y los intereses del préstamo
+desde el primer ejercicio y opera con 45 clientes al día, el extremo BAJO del
+rango «40-80 clientes por servicio» que declara el propio libro.
 """
 
 CONCEPTO = 'Food Truck'
@@ -170,20 +196,6 @@ SUPUESTOS = {
         'fija Instrucciones!B8 «Ticket medio food truck»',
         "fichero v1.1 ('Punto Equilibrio'!B9 y 'Escenarios'!C7, TEC-11/"
         'DOM-30)'),
-    'dias_apertura': (
-        None, None, 250, None,
-        'El MISMO dato lo usan el P&L, el punto de equilibrio y los '
-        "escenarios: el fichero v1.1 traía TRES calendarios distintos "
-        "('Punto Equilibrio': 25 días/mes = 300 días/año; 'Escenarios' "
-        'realista: 5 servicios/semana × 48 semanas = 240 días/año; el total '
-        "de 'PyG 3 Anos' no declaraba ninguno). Se eligen 250 días (5 "
-        'días/semana × 50 semanas activas, dentro de las «4-6 días '
-        'operativos/semana» de Instrucciones!B13) porque son los que hacen '
-        'EXACTA la cifra más repetida del paquete (135.000 €: portada del '
-        "docx y el propio total de 'PyG 3 Anos'!B9), sin inventar ningún "
-        'dato nuevo: 45 × 12 × 250 = 135.000 € al céntimo',
-        "fichero v1.1 (reconciliación de tres calendarios propios — fija "
-        'NUEVO-03 de este hermano)'),
     'crec_a2': (
         None, None, 0.15, None,
         'El fichero v1.1 proyectaba 175.000 € en el año 2 sobre 135.000 € '
@@ -196,16 +208,34 @@ SUPUESTOS = {
         'El fichero v1.1 proyectaba 215.000 € sobre 175.000 € (+22,9 %): '
         'igual, redondeado a la baja',
         'fichero v1.1 (redondeado a la baja, conservador)'),
+    'dias_apertura': (
+        None, None, 250, None,
+        'El MISMO dato lo usan la cuenta de resultados, el punto de '
+        'equilibrio y los escenarios. La versión anterior traía TRES '
+        'calendarios que no coincidían: 25 días de servicio al mes en el '
+        'punto de equilibrio (300 al año), 5 servicios por semana durante '
+        '48 semanas en los escenarios (240 al año) y ninguno declarado en '
+        'la cuenta de resultados. Se fijan 250 días —5 días de servicio a '
+        'la semana por 50 semanas activas, dentro de los «4-6 días '
+        'operativos por semana» que declara este mismo libro— porque son '
+        'los únicos que reproducen al céntimo la facturación que el propio '
+        'libro ya publicaba: 45 × 12 × 250 = 135.000 €',
+        'fichero v1.1 (reconciliación de los tres calendarios propios — '
+        'fija NUEVO-03 de este hermano. El documento hablaba de 300 días, '
+        'que con 45 clientes y 12 € darían 162.000 € y no los 135.000 € que '
+        'publica el propio libro; el documento se reescribe desde estas '
+        'celdas en T9)'),
     'coste_comida': (
         None, None, 0.28, None,
-        'Food cost de comida: dentro del 28-33 % que declara '
-        'Instrucciones!B4 de este mismo libro («depende del concepto: '
-        'burger 30 %, tacos 25 %, poke 35 %»); se toma el extremo bajo del '
-        'rango porque el modelo de compra diaria que exige un food truck '
-        '(sin cámara grande) reduce la merma frente a un local fijo',
+        'Coste de mercancía de la comida: dentro del 28-33 % que declara '
+        'este mismo libro («depende del concepto: burger 30 %, tacos 25 %, '
+        'poke 35 %»). Se toma el extremo bajo del rango porque la compra '
+        'diaria que exige un food truck, sin cámara grande, reduce la merma '
+        'frente a una cocina fija. Es la palanca más sensible del plan: con '
+        'el 33 % el resultado del primer año se queda muy justo',
         "fichero v1.1 (Instrucciones!B4; 'PyG 3 Anos'!B12 usaba 30 % sólo "
-        'sobre la línea de comida, sin costear el catering — ver nota de '
-        "LINEAS_INGRESO)"),
+        'sobre la línea de comida de calle, sin costear el catering — ver '
+        'LINEAS_INGRESO)'),
     'coste_bebida': (
         None, None, 0.22, None,
         'Bebidas embotelladas y refrescos: extremo bajo del 22-28 % que '
@@ -240,50 +270,58 @@ SUPUESTOS = {
         'Tarjeta y bizum sobre el total facturado: un food truck urbano '
         'cobra en tarjeta/contactless la mayoría de los tickets',
         'parametrizado (el fichero v1.1 no lo contemplaba)'),
+    # ⚠️ el rótulo se queda en el que trae `grupo_a` ('Alquiler mensual del
+    # local (€)') porque es la CLAVE con la que `grupo_a.demos()` localiza
+    # la fila; rotularla «del aparcamiento» rompe el dry-run con «no se
+    # localizan las filas alquiler_sup».  Que aquí no hay local lo dice la
+    # nota, en mayúsculas y en primera línea.
     'alquiler_mes': (
         None, None, 400, None,
-        'ESTE NEGOCIO NO TIENE LOCAL: esta celda se reutiliza para el coste '
-        'mensual de aparcamiento/nave donde el vehículo pernocta y se '
-        'prepara cada día (distinto del «Generador» del fichero v1.1, que '
-        'va a Suministros, ver esa celda). 400 €/mes es el precio de una '
-        'plaza cubierta con toma de agua y desagüe para vehículo comercial '
-        'grande en una ciudad media española: pide presupuesto de tu zona '
-        'antes de firmar',
+        'ESTE NEGOCIO NO PAGA RENTA DE LOCAL: esta celda es el coste '
+        'mensual del aparcamiento o la nave en la que el vehículo pernocta '
+        'y se prepara cada jornada, y de ella salen también la fianza y los '
+        'meses previos a la apertura. Es un concepto distinto del '
+        'generador, que va en la celda de suministros. 400 €/mes es lo que '
+        'cuesta una plaza cubierta con toma de agua y desagüe para un '
+        'vehículo comercial grande en una ciudad media española: pide '
+        'presupuesto en tu zona antes de firmar',
         'parametrizado (concepto nuevo: el fichero v1.1 no tenía ninguna '
-        'fila de aparcamiento/base)'),
+        'fila de aparcamiento ni de base del vehículo)'),
     'fianza_meses': (
-        None, None, 2, None,
-        'Dos meses de fianza para la plaza de aparcamiento/nave, menores '
-        'que los tres habituales de un local comercial',
+        None, 'Fianza del aparcamiento (meses)', 2, None,
+        'Dos meses de fianza por la plaza o la nave, menos que los tres '
+        'habituales de un local comercial',
         'parametrizado'),
     'suministros_mes': (
         None, None, 200, None,
         'Combustible del generador eléctrico y mantenimiento de las tomas '
-        'de agua/vertido: es el mismo concepto que el fichero v1.1 llamaba '
-        '«Generador (combustible/alquiler)» en la fila fija de PyG, ahora '
-        'en celda para que no quede un número suelto dentro de un rótulo',
+        'de agua y de vertido. Es el mismo concepto que la versión anterior '
+        'llamaba «Generador (combustible/alquiler)» dentro de los costes '
+        'fijos: ahora vive en una celda, para poder cambiarlo en un solo '
+        'sitio y que el resto del libro se entere',
         "fichero v1.1 ('PyG 3 Anos'!B25 = 2.400 €/año ÷ 12; §1.2, ningún "
         'literal sobrevive dentro de una fórmula ni de un rótulo)'),
     'seguros_ano': (
         None, None, 2500, None,
-        'Responsabilidad civil profesional alimentaria (mínimo 300.000 € — '
-        "checklist 'F1 - Constitucion'!E12) + seguro del vehículo a todo "
-        'riesgo. Es la MISMA prima que citaba la Inversión Inicial del '
-        'fichero v1.1: se retira de ahí para no contarla dos veces (ver '
-        'INVERSION más abajo)',
+        'Responsabilidad civil profesional alimentaria —la fase 1 de tu '
+        'checklist pide un mínimo de 300.000 € de cobertura— más el seguro '
+        'del vehículo a todo riesgo. Es la MISMA prima que la versión '
+        'anterior contaba dos veces, una en la inversión y otra como gasto '
+        'del año: aquí se cuenta una sola vez, que es como se paga',
         "fichero v1.1 ('PyG 3 Anos'!B23 = 'Inversion Inicial'!B14, misma "
         'cifra en las dos hojas — doble conteo propio de este hermano)'),
     'pct_varios': (
         None, None, 0.05, None,
-        'Combustible del vehículo (desplazamiento entre ubicaciones) + '
-        'colchón de gasto corriente no presupuestado. Es un coste VARIABLE '
-        '(sube y baja con los servicios realizados, no puede vivir en los '
-        'fijos: RT-04/RT-05, mismo criterio que los otros tres A-β) — '
-        'agrega DOS filas que el fichero v1.1 tenía sueltas: Combustible '
-        '(ya estaba en COSTES VARIABLES) y Varios e imprevistos (estaba mal '
-        'clasificado dentro de COSTES FIJOS)',
+        'Combustible del vehículo para desplazarse entre ubicaciones más el '
+        'colchón de gasto corriente no presupuestado. Es un coste VARIABLE: '
+        'sube y baja con los servicios que se hacen, así que no puede vivir '
+        'entre los fijos, porque movería el punto de equilibrio sin que se '
+        'notara. Agrupa dos partidas que la versión anterior tenía sueltas: '
+        'el combustible, que ya era variable, y los varios e imprevistos, '
+        'que estaban mal clasificados como fijos',
         "fichero v1.1: ('PyG 3 Anos'!B15 «Combustible vehiculo» = 4.800 + "
-        "B30 «Varios e imprevistos» = 2.000) / 135.000 = 5,04 %, redondeado"),
+        "B30 «Varios e imprevistos» = 2.000) / 135.000 = 5,04 %, redondeado "
+        '(RT-04/RT-05)'),
     'recursos_propios': (
         None, None, 25000, None,
         'Aportación del titular. Con menos, el banco no entra: pide un '
@@ -291,14 +329,14 @@ SUPUESTOS = {
         'parametrizado'),
     'prestamo': (
         None, None, 72000, None,
-        'Principal solicitado. La hoja de Financiación comprueba que '
-        'origen y usos cuadran con la necesidad de caja calculada en la '
-        'hoja 1 (recursos propios + préstamo = 97.000 €; muy por encima de '
-        'los 73.400 € que sumaba la v1.1 porque el fondo de maniobra real '
-        'es mayor que el que dotaba el fichero original — NUEVO-01 — y '
-        'porque se añaden el IVA soportado sobre la inversión y los '
-        'imprevistos de obra por fórmula, que el fichero original no '
-        'sumaba a la necesidad de caja)',
+        'Principal solicitado. La hoja de Financiación comprueba que el '
+        'origen de fondos cuadra con la necesidad de caja de la hoja 1 '
+        '(25.000 € de recursos propios + 72.000 € de préstamo = 97.000 €). '
+        'Está por encima de los 73.400 € que sumaba la versión anterior '
+        'porque el fondo de maniobra pasa a ser de verdad de tres meses, y '
+        'porque ahora se suman a la necesidad de caja el IVA de la '
+        'inversión —que hay que adelantar aunque se recupere— y los '
+        'imprevistos de la puesta en marcha',
         'parametrizado (ajustado desde un primer intento más bajo tras '
         'comprobar la necesidad de caja real del caso base — mismo gotcha '
         'que tapas-bar y cafetería)'),
@@ -330,24 +368,38 @@ SUPUESTOS = {
         'sus propios costes fijos de entonces — NUEVO-01, la MENOR '
         'desviación absoluta de los cinco hermanos pero igual de '
         'incumplida)'),
+    # ⚠️ misma cautela que en `vida_maquinaria`: el rótulo es la clave con
+    # la que `grupo_a.demos()` localiza la fila ('Vida útil de obra e
+    # instalaciones (años)').  En este producto ese grupo NO es obra: es el
+    # vehículo y todo lo que va montado en él, y así lo dice la nota.
     'vida_obra': (
         None, None, 8, None,
-        'Vehículo, adaptación e instalación de gas: coincide aproximado con '
-        'los «7 años» que ya citaba la v1.1, ajustado a los coeficientes de '
-        'elementos de transporte de la tabla del art. 12.1 LIS. Confírmalo '
-        'con tu asesor',
+        'Vehículo, adaptación y rotulación, instalación de gas, depósito de '
+        'aguas y proyecto técnico: todo lo que va montado en el vehículo se '
+        'amortiza con él. Ocho años son el 12,5 % anual, por debajo del '
+        'coeficiente lineal máximo del 16 % que la tabla del art. 12.1 de '
+        'la Ley del Impuesto sobre Sociedades fija para los elementos de '
+        'transporte. Confírmalo con tu asesor',
         "fichero v1.1 ('PyG 3 Anos'!A34 «Amortizacion (7 anos vehiculo)», "
-        'redondeado a 8 dentro del mismo orden de magnitud)'),
+        'ajustado a 8 para quedar dentro del coeficiente y del uso real)'),
+    # ⚠️ la ETIQUETA de esta celda NO se puede cambiar desde contenido:
+    # `grupo_a.demos()` localiza la fila por su RÓTULO NORMALIZADO exacto
+    # ('Vida útil de maquinaria y mobiliario (años)') y, si no la encuentra,
+    # el dry-run falla con «no se localizan las filas vida_maq_sup».  Medido
+    # el 2026-09-05 al intentar rotularla «del equipamiento y el mobiliario».
+    # La aclaración va en la NOTA, que es lo que el cliente lee al lado.
     'vida_maquinaria': (
-        None, None, 5, None,
-        'Equipamiento de cocina móvil, generador, TPV y menaje: uso mucho '
-        'más intenso que el de una cocina fija (montaje y desmontaje '
-        'diarios), por eso una vida útil más corta que en el resto de '
-        'hermanos de línea A. Coeficiente lineal máximo del art. 12.1 LIS: '
-        'confírmalo con tu asesor',
-        'parametrizado (v1.1: 7 años planos para TODO el inmovilizado, sin '
-        'distinguir vehículo de equipamiento — NUEVO-02, mismo criterio que '
-        'cafetería y panadería)'),
+        None, None, 10, None,
+        'Equipamiento de cocina, generador, TPV, menaje y toldo. El uso es '
+        'más intenso que en una cocina fija por el montaje y el desmontaje '
+        'diarios, pero el coeficiente lineal máximo de la tabla del art. '
+        '12.1 de la Ley del Impuesto sobre Sociedades es del 12 % para '
+        'maquinaria y del 10 % para mobiliario: por debajo de 9-10 años el '
+        'exceso no sería deducible. Confírmalo con tu asesor',
+        'recalibrado por RD-15 (la v2.0 previa puso 5 años = 20 % anual, '
+        'muy por encima del coeficiente máximo; v1.1: 7 años planos para '
+        'TODO el inmovilizado sin distinguir el vehículo del equipamiento '
+        '— NUEVO-02)'),
     'pct_bebida_alc': (
         None, None, 0.05, None,
         'Bebida ALCOHÓLICA sobre el total de bebida: casi nula — la línea '
@@ -359,14 +411,18 @@ SUPUESTOS = {
         "'PyG 3 Anos'!A7 «Ventas bebidas» sin desglose alcohólico/sin "
         'alcohol en el fichero original)'),
     'aforo': (
-        None, None, 12, None,
-        'ESTE NEGOCIO NO TIENE «PLAZAS SENTADAS»: se reutiliza como '
-        'capacidad informal de cola + mesas altas plegables alrededor del '
-        'vehículo (Inversion Inicial: «Toldo, mobiliario exterior '
-        'plegable»). De aquí sale sólo una rotación INFORMATIVA; no '
-        'condiciona ninguna licencia como en un local con aforo legal',
-        "fichero v1.1 ('Inversion Inicial'!A20 «Toldo, mobiliario exterior "
-        'plegable», mesas altas plegables, capacidad estimada)'),
+        None, 'Plazas de pie y mesas altas junto al vehículo', 16, None,
+        'ESTE NEGOCIO NO TIENE PLAZAS SENTADAS: son las cuatro mesas altas '
+        'plegables de cuatro posiciones que presupuesta la partida «Toldo, '
+        'mobiliario exterior plegable» de la hoja de inversión. De aquí '
+        'sale sólo una rotación INFORMATIVA y el aviso de capacidad del '
+        'punto de equilibrio; no condiciona ninguna licencia, porque un '
+        'food truck no tiene aforo legal. El techo real de este negocio son '
+        'los clientes por servicio, que este mismo libro sitúa en 40-80',
+        'parametrizado (la v2.0 previa puso 12 y el punto de equilibrio '
+        'salía exigiendo 3,11 rotaciones al día contra un techo declarado '
+        'de 3,0: el semáforo de capacidad quedaba en ROJO en el caso base)'),
+
     'salario_convenio': (
         None, None, 0, None,
         'El convenio PROVINCIAL de hostelería (o el de comercio, según '
@@ -377,16 +433,18 @@ SUPUESTOS = {
         'SPEC §2.6/DOM-24 (mismo criterio que el representante y los otros '
         'tres A-β)'),
     'meses_renta_previa': (
-        None, None, 2, None,
-        'La adaptación del vehículo dura 4-8 semanas según el propio '
-        "checklist ('F2 - Vehiculo'!D6): son dos meses de aparcamiento/base "
-        'antes de abrir que sí forman parte de la inversión, no del P&L',
-        "fichero v1.1 (checklist 'F2 - Vehiculo'!D6 «4-8 semanas»)"),
+        None, 'Meses de alquiler del aparcamiento ANTES de abrir', 2, None,
+        'La adaptación del vehículo dura 4-8 semanas según la fase 2 de tu '
+        'propio checklist: son dos meses de aparcamiento y base que se '
+        'pagan antes de facturar el primer euro, así que forman parte de la '
+        'inversión y no de la cuenta de resultados',
+        "fichero v1.1 (checklist, fase 2: «4-8 semanas» de adaptación)"),
     'pct_imprevistos': (
         None, None, 0.08, None,
-        'Se conserva el mismo 8 % que ya declaraba la v1.1 en su fila '
-        '«Imprevistos (8%)», ahora calculado por fórmula sobre el bloque de '
-        'obra y adaptación en vez de tecleado a mano',
+        'Se conserva el mismo 8 % que la versión anterior tenía escrito a '
+        'mano en su fila de imprevistos, ahora calculado por fórmula sobre '
+        'las partidas de compra y adaptación del vehículo: si cambias el '
+        'precio del vehículo, los imprevistos se recalculan solos',
         "fichero v1.1 ('Inversion Inicial'!A22 «Imprevistos (8%)», mismo "
         'porcentaje, RD-02)'),
 }
@@ -403,12 +461,18 @@ SUPUESTOS = {
 # (rótulo, peso, grupo 'comida'|'bebida', nota, fuente)
 # ==========================================================================
 LINEAS_INGRESO = (
-    ('Ventas de comida (menú del día a pie de calle y catering/eventos '
-     'privados)', 0.8519, 'comida',
-     'Producto principal servido en ubicaciones fijas y mercados, más '
-     'catering y eventos privados (la línea «Catering/eventos privados» de '
-     'la v1.1, que en el fichero original NO llevaba food cost propio: '
-     'aquí SÍ lo lleva, con el mismo tipo que la comida de calle)',
+    # ⚠️ el rótulo NO puede llevar «eventos» ni «día»: `motor` decide el
+    # formato de la fila por su rótulo (§1.4) y cualquier palabra de
+    # RECUENTO le quita el formato de euro a una fila que son euros.  La
+    # v2.0 previa rotulaba «…menú del día… y catering/eventos privados» y
+    # las seis celdas de la fila salían marcadas por el gate de formatos.
+    ('Ventas de comida (calle, mercados y catering privado)', 0.8519,
+     'comida',
+     'Producto principal servido en ubicaciones fijas y mercados, más el '
+     'catering y las celebraciones privadas (la línea «Catering/eventos '
+     'privados» de la v1.1, que en el fichero original NO llevaba coste de '
+     'mercancía propio: aquí SÍ lo lleva, con el mismo tipo que la comida '
+     'de calle)',
      "fichero v1.1: suma de «Ventas comida» + «Catering/eventos privados» "
      '((105.000+10.000)/135.000 = 85,19 %)'),
     ('Ventas de bebida (refrescos, agua y zumos embotellados)', 0.1481,
@@ -426,38 +490,45 @@ PLANTILLA = (
     ('Propietario/a — chef, gestión y conducción', 1, 1500,
      'Elabora el producto, conduce el vehículo entre ubicaciones y lleva la '
      'gestión, compras y RRSS. Cubre el turno fuerte de los 250 días de '
-     'servicio al año (Supuestos!dias_apertura)',
+     'servicio al año',
      'recalibrado §7-bis.17 (v1.1: «Propietario / Chef principal» 2.000 €, '
      'coste/año 37.352 €, jornada completa sin ninguna referencia de horas '
      'de servicio real)',
      1.0),
-    ('Ayudante de cocina y servicio', 1, 550,
-     'Prep, montaje, atención al cliente y desmontaje. A tiempo parcial: '
-     'un food truck de dos servicios diarios como máximo '
-     '(Instrucciones!B14: «Servicios por día: 1-2») no necesita una segunda '
-     'persona a jornada completa',
+    # ⚠️ el bruto de cada fila tiene que quedar por encima del SMI EN
+    # PROPORCIÓN a la jornada (17.094 €/14 pagas = 1.220,71 €/mes a jornada
+    # completa, RD 126/2026), o el semáforo de la columna «Bruto mes» sale
+    # en ROJO en el fichero que se entrega.  Los tres parciales van unos
+    # euros por encima de su suelo: 549,32 · 122,07 · 73,24.
+    ('Ayudante de cocina y servicio', 1, 560,
+     'Prep, montaje, atención al cliente y desmontaje. A tiempo parcial: un '
+     'food truck de dos servicios diarios como máximo no necesita una '
+     'segunda persona a jornada completa. Por encima del SMI en proporción '
+     'a su jornada',
      'recalibrado (v1.1: «Ayudante cocina / Servicio» 1.500 € a jornada '
-     'prácticamente completa)',
+     'prácticamente completa; 550 € quedaban a 0,68 € del suelo del SMI '
+     'prorrateado)',
      0.45),
-    ('Refuerzo de festivales y eventos grandes', 1, 120,
+    ('Refuerzo de festivales y eventos grandes', 1, 125,
      'Sólo para los picos de afluencia que el propio fichero describe '
-     '(«Festivales = facturación x3-5 en un día», checklist '
-     "'F6 - 90 Dias'!E11): unas pocas jornadas al mes, no un puesto "
-     'estable',
-     'recalibrado (v1.1: «Extra eventos (eventual)» 600 € — se ajusta a la '
-     'proporción real de eventos grandes sobre 250 días de servicio '
-     'normal)',
+     '(«Festivales = facturación x3-5 en un día»): unas pocas jornadas al '
+     'mes, no un puesto estable. Por encima del SMI en proporción a su '
+     'jornada',
+     'recalibrado (v1.1: «Extra eventos (eventual)» 600 €; la v2.0 previa '
+     'puso 120 €, por DEBAJO del SMI prorrateado de una jornada del 10 % '
+     '—122,07 €— y el semáforo lo sacaba en rojo)',
      0.10),
     # RC-19 (heredado del representante) — ninguna plantilla de la familia
     # traía una fila de suplencias, vacaciones ni descansos, que sí impone
     # la ley: 30 días naturales de vacaciones (art. 38 ET) son días de
     # servicio que alguien tiene que cubrir, o el food truck simplemente no
     # abre esos días (lo que también es una decisión, pero se declara).
-    ('Suplencias de vacaciones y descansos', 1, 70,
+    ('Suplencias de vacaciones y descansos', 1, 75,
      'Cobertura de los 30 días de vacaciones (art. 38 ET) del propietario y '
-     'del ayudante, y del descanso semanal',
-     'parametrizado (RC-19, mismo criterio que el representante y los '
-     'otros tres A-β)', 0.06),
+     'del ayudante, y del descanso semanal. Por encima del SMI en '
+     'proporción a su jornada',
+     'parametrizado (RC-19; la v2.0 previa puso 70 €, por DEBAJO del SMI '
+     'prorrateado de una jornada del 6 % —73,24 €—)', 0.06),
 )
 
 # ==========================================================================
@@ -467,6 +538,24 @@ PLANTILLA = (
 #: paréntesis con el parámetro, §7-bis.11): `('suprimir', motivo)` o
 #: `(importe, nota)`.
 INVERSION = {
+    # §1.7 — tres NOTAS heredadas de la v1.1 con palabras sin tilde
+    # («Varia», «movil», «Genero»).  El rótulo de la fila no se puede
+    # cambiar desde contenido (`INVERSION` sólo admite «suprimir» o un
+    # importe), pero pasando el MISMO importe se reescribe la nota sin
+    # tocar ni el orden de la hoja ni la cifra que el cliente pueda estar
+    # usando (§1.3).  Los rótulos que siguen sin tilde («Vehiculo food
+    # truck», «Adaptación y rotulación vehiculo», «Equipamiento cocina
+    # movil», «TPV movil + datafono» y «Mantenimiento vehiculo + ITV» del
+    # P&L) son de MOTOR: piden «vehiculo»→«vehículo» y «movil»→«móvil» en
+    # `motor.TILDES`, y van reportados en el informe de esta tanda.
+    'licencias y permisos (promedio)': (
+        2000, 'Varía mucho por municipio y comunidad autónoma: pide el '
+        'importe en el tuyo antes de cerrar el presupuesto'),
+    'proyecto tecnico sanitario': (
+        1500, 'Obligatorio para la actividad alimentaria móvil: planos de '
+        'instalación, flujos y depósitos de agua'),
+    'stock inicial de producto': (
+        1000, 'Género para las primeras dos semanas de servicio'),
     'imprevistos': (
         'suprimir',
         'RD-02 (mismo patrón que el representante y los otros tres A-β): '
@@ -491,6 +580,40 @@ INVERSION = {
 #: desembolsos de puesta en marcha, y van en FIJOS_EXTRA (más abajo), no
 #: aquí.
 INVERSION_EXTRA = ()
+
+# ==========================================================================
+# §2.3.6 / TEC-20 / `NUEVO-02` — qué partidas de la inversión son
+# inmovilizado y con qué vida útil.
+#
+# ⚠️ SIN esta tabla el hermano pierde su activo principal.  `grupo_a`
+# clasifica por RÓTULO con `AMORT_DEFECTO`, cuyos patrones son los de un
+# local: «obra civil», «instalaci», «equipamiento», «mobiliario»…  Ninguno
+# casa con «Vehiculo food truck (nuevo o segunda mano)» ni con «Deposito
+# agua + aguas residuales», y `_clasificar_amortizable` manda por defecto al
+# grupo «no»: 25.800 € —el 39 % de la inversión y el activo que da nombre al
+# negocio— quedaban FUERA de la base amortizable, con el libro amortizando
+# 4.510 €/año sobre 27.800 € en vez de 6.280 € sobre 53.600 €.  Es el mismo
+# defecto por FALTA de patrón que se midió en panadería (`AMORT_DEFECTO`,
+# comentario de `grupo_a`), aquí sobre la partida más cara del plan.
+#
+# Los dos grupos NO son «obra» y «maquinaria» en sentido literal: son las
+# dos vidas útiles que necesita un food truck.  El vehículo y todo lo que
+# va montado en él son ELEMENTOS DE TRANSPORTE (coeficiente lineal máximo
+# del 16 % en la tabla del art. 12.1 LIS → 8 años son el 12,5 %, dentro);
+# el equipamiento y el mobiliario van al grupo de 10 años (12 % maquinaria
+# y 10 % mobiliario).  El grupo «no» se prueba ANTES que los otros dos.
+# ==========================================================================
+AMORTIZABLE = {
+    'no': (r'fianza|primer mes|alquiler|inmobiliaria|stock|existencias|'
+           r'primera compra|fondo de maniobra|colch[oó]n|imprevisto|'
+           r'marketing|lanzamiento|web|constituci|notar[ií]a|registro|'
+           r'gestor[ií]a|seguro|licencia|permiso|tasa|iva|marca|dise[ñn]o',),
+    'obra': (r'veh[ií]culo|food truck|furgoneta|remolque|adaptaci|rotulaci|'
+             r'instalaci|dep[oó]sito|deposito|proyecto t[eé]cnico',),
+    'maquinaria': (r'equipamiento|generador|tpv|dat[aá]fono|datafono|menaje|'
+                   r'utensilios|packaging|toldo|mobiliario|mesa|plancha|'
+                   r'freidora|nevera|c[aá]mara|fregadero|campana|balanza',),
+}
 
 # ==========================================================================
 # §2.3 (COSTES FIJOS del P&L) — la MISMA lógica de `INVERSION`, pero sobre
@@ -520,26 +643,29 @@ FIJOS = {
 # ==========================================================================
 FIJOS_EXTRA = (
     ('Gestión de residuos (orgánico, cartón y aceite usado)', 400,
-     'Gestor autorizado; el propio checklist ya avisa de que la freidora '
-     "genera aceite usado que hay que gestionar ('F3 - Equipamiento'!E6: "
-     '«con filtro y gestión aceite usado») pero nunca contrata el servicio. '
-     'Pide presupuesto en tu zona',
+     'Gestor autorizado. El propio checklist ya avisa de que la freidora '
+     'genera aceite usado que hay que gestionar, pero nunca contrataba el '
+     'servicio. Pide presupuesto en tu zona',
      'parametrizado (TEC-18)'),
     ('Desinsectación, desratización y desinfección (DDD)', 400,
-     'Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que '
-     "el checklist ya exige ('F4 - Personal'!B8: «Formación APPCC movil»)",
+     'Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que el '
+     'checklist ya exige en su fase de personal',
      'parametrizado (TEC-18)'),
     ('Prevención de riesgos laborales y vigilancia de la salud', 350,
-     'El plan de prevención es obligatorio (checklist '
-     "'F4 - Personal'!B10); el proveedor externo, no (art. 30.5 de la Ley "
-     '31/1995) — la corrección de a quién se marca como responsable va en '
-     'el propio checklist, ver CHECKLIST más abajo',
+     'El plan de prevención es obligatorio; el proveedor externo, no (art. '
+     '30.5 de la Ley 31/1995). A quién se marca como responsable se corrige '
+     'en el propio checklist',
      'parametrizado (DOM-26)'),
-    ('Derechos de autor por música ambiental en eventos (SGAE/AGEDI-AIE)',
-     200,
+    # ⚠️ el rótulo NO puede llevar la palabra «eventos»: `motor` clasifica
+    # el formato de la fila por su rótulo (§1.4) y cualquier palabra de
+    # RECUENTO («eventos», «días», «clientes»…) le quita el formato de euro
+    # a una fila que son euros.  «Ventas» y «Derechos» no están en la lista
+    # de rótulos de importe fuerte del motor, así que la única salida desde
+    # contenido es no usar la palabra.
+    ('Derechos de autor por música ambiental (SGAE/AGEDI-AIE)', 200,
      'Sólo se paga si el food truck pone música propia en ferias y '
-     'festivales (distinto de la licencia del organizador del evento, que '
-     'cubre el recinto, no cada puesto). Presupuesto mínimo por si se usa',
+     'festivales (distinto de la licencia del organizador, que cubre el '
+     'recinto y no cada puesto). Presupuesto mínimo por si se usa',
      'parametrizado (TEC-18)'),
 )
 
@@ -603,20 +729,26 @@ ESTACIONALIDAD = (0.060, 0.062, 0.075, 0.080, 0.088, 0.098,
 # §2.9 — textos de la hoja de Instrucciones
 # ==========================================================================
 INSTRUCCIONES = {
+    # ⚠️ `grupo_a` escribe los puntos 1 a 5 de «CÓMO SE USA ESTE LIBRO»: la
+    # numeración de aquí CONTINÚA esa lista.  La v2.0 previa empezaba en el
+    # 7 y el libro publicado saltaba del 5 al 7, sin punto 6.
     'uso': [
-        '7. La hoja «Tesorería 12 meses» responde la pregunta que decide una '
+        '6. La hoja «Tesorería 12 meses» responde la pregunta que decide una '
         'operación bancaria: en qué mes se agota la caja. El saldo mínimo '
         'del año nunca puede salir en rojo.',
-        '8. La hoja «Financiación» cuadra lo que hace falta con lo que se '
+        '7. La hoja «Financiación» cuadra lo que hace falta con lo que se '
         'aporta y monta el cuadro de amortización del préstamo. Si la '
         'diferencia sale en rojo, el plan no está financiado.',
     ],
     # (rótulo, valor, FUENTE, nota) — se conservan las referencias del
     # sector que ya traía este fichero (mismo criterio que el resto de la
-    # familia: no se borran, se citan con su fuente).
+    # familia: no se borran, se citan con su fuente).  La columna de FUENTE
+    # la lee el cliente: nada de ids internos de auditoría (CON-08).
     'referencias': [
         ('Food cost comida', '28-33 %', 'Fichero v1.1',
-         'Depende del concepto: burger 30 %, tacos 25 %, poke 35 %'),
+         'Depende del concepto: burger 30 %, tacos 25 %, poke 35 %. Este '
+         'plan trabaja con el 28 %, el extremo bajo: si tu carta va al 33 %, '
+         'el resultado del primer año se queda muy justo'),
         ('Food cost bebidas', '22-28 %', 'Fichero v1.1',
          'Refrescos y agua embotellada, margen alto'),
         ('Coste packaging / ventas', '3-5 %', 'Fichero v1.1',
@@ -624,27 +756,34 @@ INSTRUCCIONES = {
         ('Coste personal sobre ventas', '25-32 %', 'Fichero v1.1',
          'Menos personal que un restaurante: 2-3 personas'),
         ('Ticket medio food truck', '10-15 €', 'Fichero v1.1',
-         'Menú completo: plato + bebida + extra'),
+         'Menú completo: plato + bebida + extra. El de este plan son 12 € '
+         'SIN IVA, que con el tipo de hostelería salen 13,20 € de PVP'),
         ('Clientes por servicio', '40-80', 'Fichero v1.1',
-         'Depende de ubicación, evento y día de la semana'),
+         'Depende de ubicación, evento y día de la semana. Este plan '
+         'proyecta 45, el extremo bajo del rango, a propósito'),
         ('Margen bruto objetivo', '> 62 %', 'Fichero v1.1',
          'Inferior a un restaurante por el peso del packaging y el '
          'combustible'),
         ('EBITDA objetivo (año 2)', '20-30 %', 'Fichero v1.1',
-         'Muy rentable si aciertas las ubicaciones'),
+         'Muy rentable si aciertas las ubicaciones. Con los supuestos de '
+         'partida este plan se queda por debajo del rango: es lo que hay '
+         'que mejorar subiendo clientes por servicio o ticket'),
         ('Retorno de la inversión', '12-24 meses', 'Fichero v1.1',
-         'Mucho más rápido que un restaurante por la menor inversión'),
+         'Es la referencia del sector. El de ESTE plan lo calcula la hoja '
+         'de Tesorería y sale más largo, porque cuenta también el IVA que '
+         'hay que adelantar y el fondo de maniobra'),
         ('Días operativos/semana', '4-6', 'Fichero v1.1',
          'Mercados, eventos, zona de oficinas, festivales'),
         ('Servicios por día', '1-2', 'Fichero v1.1',
          'Comida (12-15 h) y/o cena (19-23 h) según ubicación'),
         ('Coste de combustible/mes', '300-500 €', 'Fichero v1.1',
-         'Desplazamiento entre ubicaciones'),
+         'Desplazamiento entre ubicaciones. En este plan va dentro del '
+         '«Varios e imprevistos» de los costes variables'),
         ('Permisos anuales (promedio)', '2.000-5.000 €', 'Fichero v1.1',
          'Varía mucho por municipio y comunidad autónoma'),
         ('Convenio colectivo aplicable', 'PROVINCIAL de hostelería o de '
          'comercio (según clasificación de la venta ambulante)',
-         'DOM-24 / checklist F4',
+         'Fichero v1.1 (fase 4 del checklist)',
          'No existe una tabla salarial estatal única: copia la tabla que '
          'te corresponda en la celda de Supuestos'),
     ],
@@ -686,8 +825,8 @@ CHECKLIST = {
         (r'^Obligatorio para elaboraci[oó]n alimentaria$',
          'El Registro General Sanitario estatal NO aplica al minorista que '
          'sirve al consumidor final (art. 2.2 del RD 191/2011): el que te '
-         'toca es el autonómico, el mismo que ya pide '
-         "'F2 - Vehiculo'!B10 «Autorización sanitaria vehiculo»"),
+         'toca es el autonómico, el mismo que pide la fase 2 de este '
+         'checklist con la autorización sanitaria del vehículo'),
         # DOM-25 (FAMILIA) — cuota de autónomo parametrizada, con nota de
         # año. Medido tras el §1 transversal: «autónomos» y «€» ya puestos
         # por el motor.
@@ -698,29 +837,89 @@ CHECKLIST = {
         # DOM-26 (FAMILIA) — el PRL obligatorio es el PLAN, no el
         # proveedor externo.
         (r'^SPA$', 'Titular o servicio ajeno'),
-        # §1.7 — «musica»/«resenas»/«afluencia» sin tilde en textos que no
-        # cambian de número ni de cifra: se corrigen aquí porque no todas
-        # las variantes están en `motor.TILDES` como palabra suelta.
-        # Medido el 2026-08-29 en el gate de esta misma tanda.
-        (r'^Encuestas clientes \+ resenas Google$',
-         'Encuestas a clientes y reseñas de Google'),
-        (r'Testear ubicaciones \(minimo 5\)',
-         'Testear ubicaciones (mínimo 5)'),
-        (r'Evaluar eventos y festivales',
-         'Evaluar eventos y festivales'),
         # DOM-33 (REPRESENTANTE, extendido a esta hermana) — el epígrafe de
         # IAE 671.4 («restaurantes de dos tenedores») es de un
-        # establecimiento FIJO, no de un vehículo de venta ambulante: no
-        # encaja con este negocio aunque el fichero lo ofrezca como
-        # alternativa. El 677.9 (venta ambulante) SÍ es correcto y se
-        # conserva; se sustituye el otro por el grupo 672 (servicios en
-        # instalaciones móviles/análogas), que es el que de verdad se aplica
-        # cuando hay elaboración y servicio en el propio vehículo.
+        # establecimiento FIJO, no de un vehículo de venta ambulante.
         (r'Epigrafe IAE: 671\.4 o 677\.9 \(venta ambulante\)',
          'Epígrafe IAE: 672.x (servicios de restauración en quioscos, '
          'food trucks e instalaciones móviles análogas) o 677.9 (venta '
          'ambulante sin elaboración) — la elección la valida tu gestor '
          'según si elaboras el producto en el vehículo o sólo lo vendes'),
+        # §1.7 — tildes que `motor.TILDES` no lleva como palabra suelta
+        # («vehiculo», «movil», «datafono», «genero», «rapido», «depositos»,
+        # «carroceria», «via», «telematicos», «cuales», «estaras»).
+        # Dos cautelas medidas:
+        #  (a) se anclan contra el texto POSTERIOR al §1 transversal, que es
+        #      lo que ve `grupo_a.checklist()`.  Los tres reemplazos que la
+        #      v2.0 previa escribió contra el texto CRUDO («resenas»,
+        #      «minimo») no llegaron a dispararse NUNCA porque el motor ya
+        #      los había acentuado, y el dry-run salía verde igual: ningún
+        #      gate mide si un reemplazo se ejecutó.
+        #  (b) el acento va OPCIONAL en el patrón y el patrón casa también
+        #      con su propio resultado.  Así siguen valiendo el día que el
+        #      motor incorpore «vehiculo»/«movil» a `TILDES` (fix pedido en
+        #      el informe de esta tanda) y son idempotentes: la 2.ª pasada
+        #      encuentra el texto ya corregido y no lo vuelve a tocar.
+        (r'^Imprescindible( para los)? tr[aá]mites telem[aá]ticos$',
+         'Imprescindible para los trámites telemáticos'),
+        (r'^Seguro (del )?veh[ií]culo \((furgoneta/remolque|furgoneta o '
+         r'remolque)\)$',
+         'Seguro del vehículo (furgoneta o remolque)'),
+        (r'^FASE 2: VEH[IÍ]CULO Y PERMISOS$', 'FASE 2: VEHÍCULO Y PERMISOS'),
+        (r'^Selecci[oó]n y compra (del )?veh[ií]culo$',
+         'Selección y compra del vehículo'),
+        (r'^Adaptaci[oó]n (del )?veh[ií]culo para cocina$',
+         'Adaptación del vehículo para cocina'),
+        (r'^Obligatorio si se modifica (la )?carrocer[ií]a$',
+         'Obligatorio si se modifica la carrocería'),
+        (r'^Planos (de )?instalaci[oó]n,? (flujos|y flujos)[ ,y]+dep[oó]sitos '
+         r'(de )?agua$',
+         'Planos de instalación, flujos y depósitos de agua'),
+        (r'^Autorizaci[oó]n sanitaria (del )?veh[ií]culo$',
+         'Autorización sanitaria del vehículo'),
+        (r'^Inspecci[oó]n del veh[ií]culo (ya )?equipado$',
+         'Inspección del vehículo ya equipado'),
+        (r'^Permiso (de )?ocupaci[oó]n (de la )?v[ií]a p[uú]blica$',
+         'Permiso de ocupación de la vía pública'),
+        (r'^Dep[oó]sito (de )?agua limpia (\+|y de aguas) residual(es)?$',
+         'Depósito de agua limpia y de aguas residuales'),
+        (r'^M[ií]nimo 40 ?L (de agua )?limpia (\+|y) 60 ?L (de )?residual$',
+         'Mínimo 40 L de agua limpia y 60 L de residual'),
+        (r'^TPV m[oó]vil (\+|y) dat[aá]fono 4G$', 'TPV móvil y datáfono 4G'),
+        (r'^Tablet (\+|y) dat[aá]fono,? (con )?cobertura 4G$',
+         'Tablet y datáfono con cobertura 4G'),
+        (r'^Rotulaci[oó]n integral (del )?veh[ií]culo$',
+         'Rotulación integral del vehículo'),
+        (r'^Kit (de )?montaje r[aá]pido para cada servicio$',
+         'Kit de montaje rápido para cada servicio'),
+        (r'^Formaci[oó]n (en )?APPCC m[oó]vil$', 'Formación en APPCC móvil'),
+        (r'^Temperaturas, cadena (de )?fr[ií]o en (el )?veh[ií]culo,? '
+         r'(y )?trazabilidad$',
+         'Temperaturas, cadena de frío en el vehículo y trazabilidad'),
+        (r'^(Setup|Montaje), servicio r[aá]pido, (teardown|desmontaje),? '
+         r'(y )?limpieza$',
+         'Montaje, servicio rápido, desmontaje y limpieza'),
+        (r'^P[aá]gina web con (el )?calendario (de )?ubicaciones$',
+         'Página web con el calendario de ubicaciones'),
+        (r'^D[oó]nde estar[aá]s cada d[ií]a de la semana$',
+         'Dónde estarás cada día de la semana'),
+        (r'^Programa (de )?fidelizaci[oó]n m[oó]vil$',
+         'Programa de fidelización móvil'),
+        (r'^Tarjeta digital o QR: (10o men[uú] gratis|el d[eé]cimo men[uú], '
+         r'gratis)$',
+         'Tarjeta digital o QR: el décimo menú, gratis'),
+        (r'^Saber qu[eé] ubicaciones funcionan y cu[aá]les no$',
+         'Saber qué ubicaciones funcionan y cuáles no'),
+        (r'^Pesar (el )?g[eé]nero, controlar mermas,? (y )?ajustar pedidos$',
+         'Pesar el género, controlar mermas y ajustar pedidos'),
+        (r'^Encuestas (a )?clientes (\+|y) rese[ñn]as (de )?Google$',
+         'Encuestas a clientes y reseñas de Google'),
+        (r'^Plan (de )?expansi[oó]n \((2o truck o local|segundo truck o '
+         r'local fijo)\)$',
+         'Plan de expansión (segundo truck o local fijo)'),
+        (r'^Si funciona, evaluar (un )?segundo veh[ií]culo o (un )?local '
+         r'fijo$',
+         'Si funciona, evaluar un segundo vehículo o un local fijo'),
     ],
     'suprimir': [],
     'fases': {},
@@ -740,8 +939,9 @@ CHECKLIST = {
          'electrónica', 'Gestor', 'Antes de abrir',
          'El RD 1007/2023 y su calendario escalonado obligan a que el '
          'software de facturación sea verificable. Consulta la fecha que '
-         "te aplica antes de comprar el «TPV movil + datafono» que ya "
-         "presupuesta 'Inversión Inicial'!B16"),
+         'te aplica antes de comprar el TPV móvil y el datáfono que ya '
+         'presupuesta la hoja de Inversión Inicial: cambiarlo después '
+         'cuesta el doble'),
         ('F2', 'Legal',
          'Hojas de reclamaciones oficiales y su cartel anunciador',
          'Titular', '1 día',
@@ -750,14 +950,14 @@ CHECKLIST = {
         ('F2', 'Legal',
          'Contrato con gestor autorizado de residuos y aceite usado',
          'Titular', '2 semanas',
-         'Se comprueba en la inspección sanitaria del vehículo. El propio '
-         "checklist ya avisa de que la freidora genera aceite usado "
-         "('F3 - Equipamiento'!E6) pero no contrataba el servicio"),
+         'Se comprueba en la inspección sanitaria del vehículo. Este mismo '
+         'checklist ya avisa de que la freidora genera aceite usado que '
+         'hay que gestionar, pero nunca contrataba el servicio'),
         ('F2', 'APPCC',
          'Contrato de desinsectación, desratización y desinfección (DDD)',
          'Titular', '1 semana',
          'Empresa inscrita en el ROESB; el certificado forma parte del '
-         "plan APPCC móvil que ya exige 'F4 - Personal'!B8"),
+         'plan APPCC móvil que ya exige la fase 4 de este checklist'),
         ('F4', 'Laboral',
          'Registro horario diario de la jornada de todo el equipo',
          'Gestor', 'Desde el primer contrato',
@@ -770,17 +970,17 @@ CHECKLIST = {
          'La cláusula informativa se entrega con el contrato; el fichaje '
          'es un tratamiento de datos, no sólo una obligación laboral'),
         ('F5', 'Legal',
-         'Licencia de derechos de autor por música ambiental en eventos '
-         '(SGAE/AGEDI-AIE)',
-         'Titular', 'Antes de cada evento con música propia',
+         'Licencia de derechos de autor por música ambiental en ferias y '
+         'festivales (SGAE/AGEDI-AIE)',
+         'Titular', 'Antes de poner música propia',
          'Distinta de la licencia del organizador del festival, que cubre '
          'el recinto, no cada puesto individual'),
         ('F5', 'RGPD',
          'Cláusula informativa y consentimiento en el programa de '
          'fidelización con QR', 'Titular', 'Antes de abrir',
-         "El propio checklist promete un «Programa fidelización movil "
-         "(QR)» ('F5 - Marketing'!B14) que recoge datos de contacto: "
-         'necesita su información previa'),
+         'El propio checklist promete un programa de fidelización móvil '
+         'con QR que recoge datos de contacto: necesita su información '
+         'previa'),
     ],
 }
 
@@ -789,85 +989,95 @@ CHECKLIST = {
 # diferencia entre el valor viejo y el nuevo queda anotada por fichero»)
 # ==========================================================================
 RECALIBRADO = (
-    ('Coste de personal imputado al P&L', '42.000 €',
-     'Sale de la hoja Personal, por fórmula',
-     'TEC-01/DOM-01 (FAMILIA): el P&L usaba una cifra tecleada distinta de '
-     'su propia hoja Personal (76.566 €), una diferencia de 34.566 € — la '
-     'menor en términos absolutos de los cinco hermanos, pero un 56,7 % de '
-     'las ventas igual de inviable'),
-    ('Plantilla', '3 puestos / 76.566 €',
-     '4 puestos (uno a jornada completa, dos a tiempo parcial y '
-     'suplencias) / dentro del techo 32 % de Instrucciones!B7',
-     '§7-bis.17: dimensionada por horas de servicio de los 250 días/año '
-     'del caso base; con la plantilla anterior el coste laboral era el '
-     '56,7 % de las ventas'),
-    ('Calendario', "'Punto Equilibrio' (25 días de servicio/mes = 300 "
-     "días/año) · 'Escenarios' realista (5 servicios/semana × 48 semanas "
-     '= 240 días/año) · total de PyG sin calendario declarado (TRES '
-     'lecturas distintas)', '250 días/año, un único dato en Supuestos '
-     '(45 clientes/día × 12 € × 250 días = 135.000 €, reproduce EXACTO el '
-     'total que ya publicaba PyG)',
-     'NUEVO-03 (defecto propio de este hermano, no visto por el R1 del '
-     'representante A-α: aquí son TRES calendarios, no dos)'),
-    ('Ticket medio', '12 € (sin declarar IVA)', '12 € SIN IVA (mismo '
-     'número)', 'TEC-11/DOM-30: se declara qué era el número, no se '
-     'cambia el número'),
-    ('Fondo de maniobra', '6.000 € etiquetados «3 meses»',
-     '3 × costes fijos de caja mensuales, por fórmula',
-     'TEC-07/DOM-12/NUEVO-01: los 6.000 € cubrían 1,14 meses de los '
-     '5.275 €/mes de costes fijos de la v1.1 (con la cifra de personal '
-     'correcta, el colchón necesario es aún mayor)'),
-    ('Amortización', '10.343 €/año a 7 años planos sobre TODO el '
-     'inmovilizado (incluido lo que no es inmovilizado)',
-     'Base amortizable real (sólo vehículo/adaptación y equipamiento) / '
-     'vida útil por fórmula, con vehículo (8 años) y equipamiento (5 '
-     'años) separados',
-     'NUEVO-02: la base plana no distinguía el vehículo del equipamiento '
-     'de cocina, que se desgasta mucho más rápido por el montaje y '
-     'desmontaje diarios'),
-    ('Doble conteo de seguro', '2.500 € en la Inversión Inicial + 2.500 '
-     '€/año en el P&L (la misma prima contada dos veces)',
-     '2.500 €/año una sola vez, como coste fijo recurrente en Supuestos!'
-     'seguros_ano',
-     'Hallazgo propio de este hermano (§9, verificación T7): mismo '
-     'síntoma que TEC-12 mide en la línea B, aquí en línea A'),
-    ('Imprevistos de obra', '5.500 € (8 % tecleado a mano sobre el total)',
-     'Por fórmula sobre las partidas de obra y adaptación del bloque, con '
-     'el porcentaje en Supuestos',
-     '§7-bis.11: ningún número vive dentro de una fórmula ni de un '
-     'rótulo'),
-    ('Impuesto de Sociedades', '25 % en los tres años, sin compensar '
-     'bases negativas', '15 % los dos primeros ejercicios con base '
-     'positiva y compensación de bases negativas',
-     'TEC-06/DOM-15 (FAMILIA): arts. 26 y 29.1 LIS'),
-    ('Plan de financiación', 'inexistente (0 hojas)',
-     'Hoja «Financiación»: usos y orígenes + cuadro de amortización '
-     'francés',
-     'TEC-08/DOM-10/COM-04 (FAMILIA 10/10): la landing lo promete en las '
-     '10 líneas y ningún fichero lo tenía'),
-    ('Tesorería mensual', 'inexistente (0 hojas)',
-     'Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo '
-     'acumulado', 'DOM-14/DOM-17 (FAMILIA 10/10)'),
-    ('Varios e imprevistos + combustible', '2.000 €/año fijo dentro de '
-     'COSTES FIJOS + 4.800 €/año variable suelto',
-     '5 % de las ventas, un único coste VARIABLE',
-     'RT-04/RT-05: un coste que sube y baja con los servicios realizados '
-     'no puede vivir en los costes fijos (movía el punto de equilibrio de '
-     'forma no lineal); se funden en una sola celda porque ambos '
-     'responden al mismo tipo de gasto (desplazamiento y colchón '
-     'operativo)'),
-    ('Generador (combustible/alquiler)', '2.400 €/año como fila fija '
-     'suelta EN PARALELO a lo que iba a ser Suministros (doble conteo si '
-     'no se suprime; hallazgo propio de este hermano)',
-     '2.400 €/año en Supuestos!suministros_mes (200 €/mes), fila original '
-     'suprimida vía FIJOS',
-     '§1.2: ningún literal vive dentro de un rótulo aparte cuando puede '
-     'vivir en una celda de Supuestos'),
-    ('Catering/eventos privados', '10.000 € de ingresos sin food cost '
-     'propio en el fichero original (se facturaba a margen 100 %)',
-     'Fundido en la línea de comida, con el mismo food cost que el resto '
-     'de la comida (28 %)',
-     'Hallazgo propio de este hermano: una línea de ingresos sin ningún '
-     'coste de mercancía imputado infla el margen bruto de forma '
-     'artificial'),
+    ('Coste de personal en la cuenta de resultados', '42.000 €',
+     '42.081 €, leídos de la hoja Personal',
+     'La cuenta de resultados usaba una cifra tecleada a mano que no era la '
+     'de su propia hoja de Personal, que sumaba 76.566 €. Ahora la lee de '
+     'ahí: si cambias un sueldo, el plan entero se recalcula'),
+    ('Plantilla', '3 puestos / 76.566 € al año',
+     '4 puestos (1 a jornada completa y 3 parciales) / 42.081 € al año',
+     'Dimensionada para los 250 días de servicio que hace este plan, con '
+     'una línea nueva para cubrir vacaciones y descansos. Con la plantilla '
+     'anterior el personal se comía el 56,7 % de las ventas y el negocio no '
+     'era viable con sus propios números'),
+    ('Días de servicio al año',
+     'tres calendarios distintos en el mismo paquete: 300 días en el punto '
+     'de equilibrio, 240 en los escenarios y ninguno declarado en la cuenta '
+     'de resultados',
+     '250 días, un solo dato para todo el libro',
+     'Son los días que hacen exacta la facturación que el propio plan ya '
+     'publicaba: 45 clientes × 12 € × 250 días = 135.000 €. Equivalen a 5 '
+     'días de servicio por semana durante 50 semanas'),
+    ('Ticket medio', '12 € sin decir si llevaba IVA', '12 € SIN IVA',
+     'El número no cambia; lo que cambia es que ahora se declara qué es. '
+     'Con el IVA de hostelería son 13,20 € de precio de venta al público, '
+     'dentro del rango 10-15 € que recoge este mismo libro'),
+    ('Aparcamiento y base del vehículo', 'no estaba',
+     '400 €/mes (4.800 € al año), más dos meses de fianza y dos meses antes '
+     'de abrir',
+     'Un food truck necesita un sitio en el que pernoctar, cargar agua y '
+     'vaciar residuos. El plan anterior no lo pagaba en ninguna línea, así '
+     'que el negocio parecía no tener ningún coste de suelo'),
+    ('Fondo de maniobra', '6.000 €, etiquetados «3 meses»',
+     '18.053 €: tres meses de costes fijos de caja, calculados por fórmula',
+     'Los 6.000 € daban para 1,1 meses, no para 3. Es el colchón que evita '
+     'cerrar por una racha de mal tiempo o un mes flojo de eventos'),
+    ('Amortización', '10.343 € al año, a 7 años planos sobre todo, incluido '
+     'lo que no es inmovilizado',
+     '6.280 € al año: el vehículo y su adaptación a 8 años y el '
+     'equipamiento y el mobiliario a 10',
+     'El vehículo se amortiza más rápido que el equipamiento porque son '
+     'cosas distintas para Hacienda. Y el fondo de maniobra, el stock y el '
+     'marketing no se amortizan: no son inmovilizado'),
+    ('Seguro del vehículo y RC', '2.500 € en la inversión Y 2.500 € al año '
+     'en los gastos: la misma prima contada dos veces',
+     '2.500 € al año, una sola vez',
+     'Contarla en los dos sitios inflaba la inversión, el IVA a adelantar y '
+     'el dinero que hay que pedir al banco'),
+    ('Generador', '2.400 € al año como línea suelta, además de los '
+     'suministros', '2.400 € al año dentro de la celda de suministros',
+     'Era el mismo gasto escrito en dos sitios. Ahora se cambia en uno solo '
+     'y el resto del libro se entera'),
+    ('Imprevistos de la puesta en marcha',
+     '5.500 € escritos a mano (un 8 % del total)',
+     'el mismo 8 %, pero calculado sobre la compra y la adaptación del '
+     'vehículo',
+     'Si cambias el precio del vehículo, los imprevistos se recalculan '
+     'solos en vez de quedarse en la cifra vieja'),
+    ('Impuesto de Sociedades', '25 % los tres años, sin compensar pérdidas',
+     '15 % los dos primeros ejercicios con beneficio, compensando las '
+     'pérdidas anteriores',
+     'Es el tipo que la ley reserva a las empresas de nueva creación, y las '
+     'pérdidas de un año se restan del beneficio de los siguientes'),
+    ('Cuota del préstamo', 'la cuota entera restaba en el resultado',
+     'sólo los intereses en el resultado; la devolución del principal, en '
+     'la tesorería',
+     'Meter la cuota completa antes del resultado convierte la cuenta de '
+     'resultados en un flujo de caja y el banco lo ve al instante'),
+    ('Plan de financiación', 'no existía',
+     'hoja nueva: de dónde sale el dinero, a qué se destina y el cuadro de '
+     'amortización del préstamo año a año',
+     'Es la hoja que pide el banco junto con la cuenta de resultados, y la '
+     'que avisa si el dinero que se aporta no llega a lo que hace falta'),
+    ('Tesorería mes a mes', 'no existía',
+     'hoja nueva de 12 meses: cobros, pagos, IVA trimestral y saldo '
+     'acumulado',
+     'Responde a la única pregunta que decide una operación bancaria: en '
+     'qué mes se queda el negocio sin caja'),
+    ('Combustible y varios', '4.800 € de combustible sueltos + 2.000 € de '
+     'varios metidos entre los costes fijos',
+     'un solo 5 % sobre las ventas, tratado como coste variable',
+     'El combustible sube y baja con los servicios que se hacen: ponerlo '
+     'entre los fijos falseaba el punto de equilibrio'),
+    ('Catering y eventos privados', '10.000 € de ingresos sin ningún coste '
+     'de materia prima imputado',
+     'sumados a la línea de comida, con el mismo coste de mercancía que el '
+     'resto (28 %)',
+     'Una línea de ingresos que no paga género da un margen que no existe'),
+    ('Sueldos y SMI', 'sueldos sin comparar con ningún suelo legal',
+     'ninguna fila por debajo del SMI en proporción a su jornada, y una '
+     'celda para el convenio de tu provincia',
+     'El convenio provincial de hostelería manda sobre el SMI: cópialo en '
+     'la hoja de Supuestos y el semáforo te avisa si algún sueldo se queda '
+     'corto'),
 )

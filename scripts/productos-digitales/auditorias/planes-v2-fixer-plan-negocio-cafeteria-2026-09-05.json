@@ -1,0 +1,265 @@
+{
+ "pid": "plan-negocio-cafeteria",
+ "resueltos": [
+  {
+   "id": "GATE-RD-34 (§2.11.12-bis, bloqueante del dry-run)",
+   "como": "El origen de fondos no cuadraba con los usos: 154.000 € frente a 144.487,80 € = +9.512,20 € (6,58 %, tope 5 %). Resuelto el bucle a mano (el prestamo mueve los intereses, los intereses mueven el fondo de maniobra y el fondo mueve la necesidad de caja): prestamo 114.000 -> 112.000 €, recursos propios 40.000 € sin cambio. Medido: Financiacion!B12=152.000,00 · B14=151.975,63 · B15=24,38 € · B16=0,016 %.",
+   "donde": "a.py SUPUESTOS['prestamo'] (112000) + nota y fuente"
+  },
+  {
+   "id": "R-01",
+   "como": "Cinco de los seis brutos estaban por debajo del SMI 2026 en proporcion a la jornada y el propio formato condicional los pintaba en rojo. Plantilla reescrita con el suelo legal (17.094/14 = 1.221 €/mes a jornada completa): Personal!D5:D10 = 1.350 / 1.250 / 1.230 / 680 / 555 / 310 frente a suelos 1.221 / 1.221 / 1.221 / 671,55 / 549,45 / 305,25. Ningun puesto en rojo.",
+   "donde": "a.py PLANTILLA (6 filas, importes y jornadas)"
+  },
+  {
+   "id": "R-02",
+   "como": "La plantilla cubria el 77,8 % del horario que el propio libro declara (6.072 h contratadas frente a 7.800 = 13 h x 2 personas x 300 dias) y su semaforo estaba en rojo. Las jornadas suman ahora 4,25 (antes 3,30): Personal!B23=7.820 h, B22=7.800 h, B24=100,26 %. Las horas/dia (B20) y las personas por franja (B21) son valores del motor, no del contenido: la unica palanca desde a.py era la plantilla.",
+   "donde": "a.py PLANTILLA (jornadas 1,00/1,00/1,00/0,55/0,45/0,25)"
+  },
+  {
+   "id": "R-03",
+   "como": "17 citas «Instrucciones!Bnn» apuntaban a celdas que hoy contienen otra cosa. Barrido: 0 citas por coordenada en todo el libro (verificado con regex sobre las 9 hojas). Las referencias se citan por su NOMBRE en la tabla «DATOS DE REFERENCIA DEL SECTOR», y las tres referencias que la v2.0 habia dejado fuera del libro mientras se seguian citando (ocupacion entre semana 40-60 %, fin de semana 70-90 %, rotacion de mesa en brunch 2-3 turnos) vuelven a la tabla con su fuente.",
+   "donde": "a.py: notas de SUPUESTOS, LINEAS_INGRESO, PLANTILLA, comentarios de UMBRALES e INSTRUCCIONES['referencias']"
+  },
+  {
+   "id": "R-05 (efecto en el fichero)",
+   "como": "La nota del ticket llegaba mutilada («equivale a ~ de PVP, dentro del rango 8 que declara…») porque motor.cross_sell_sin_precios borra los precios de cualquier celda que lleve «plan » y un importe en €. Reescrita sin importe y sin el disparador: Supuestos!C5 sale integra y el informe del dry-run no registra ningun «precio fuera del cross-sell» (0 ocurrencias en dryrun.json). La guarda del motor sigue siendo defectuosa y va en motor_pendientes.",
+   "donde": "a.py SUPUESTOS['ticket_medio'] y el aviso al principio del docstring"
+  },
+  {
+   "id": "R-10",
+   "como": "24 palabras castellanas sin tilde vivas en los dos xlsx con gate_ortografia=0. Las 4 notas de la hoja de Inversion se reescriben por la via del importe (mismo importe, solo cambia el texto): «bano»->bano accesible, «desague»->desague, «sandwiches»->sandwiches, «Iluminacion calida»->calida, mas «>100m2»->«100 m²». Las 20 del checklist, con reemplazos de celda entera. Barrido propio sobre los 2 ficheros regenerados: 0 restos de las 24 formas.",
+   "donde": "a.py INVERSION (5 reglas (importe, nota)) y CHECKLIST['reemplazos'] (18 patrones nuevos)"
+  },
+  {
+   "id": "R-16",
+   "como": "La nota afirmaba «~10,10 € de PVP» mientras la celda calculada imprimia 10,72 €. Ahora ninguna nota afirma un PVP: remiten a la celda «PVP equivalente con IVA», que vale 10,78 € con el caso base. La tabla de cambios publica el par completo (9,80 € sin IVA = 10,78 € de PVP), leido del fichero.",
+   "donde": "a.py SUPUESTOS['ticket_medio'], INSTRUCCIONES['referencias'] y RECALIBRADO"
+  },
+  {
+   "id": "R-17",
+   "como": "La lista «COMO SE USA ESTE LIBRO» iba 1,2,3,4,5,7,8 porque el contenido empezaba a numerar en el 7 y el motor escribe cinco puntos. Renumerados a 6 y 7: la lista sale 1..7 seguida. La frase «en las otras tres hojas si hay celdas verdes» es ahora exacta (Escenarios, Tesoreria y Financiacion son las tres que enumera; Supuestos, Inversion, P&L y Personal los cubren los puntos 1 y 2, y Punto Equilibrio no tiene ninguna).",
+   "donde": "a.py INSTRUCCIONES['uso'] (puntos 6 y 7)"
+  },
+  {
+   "id": "CON-08 / encargo de hoy",
+   "como": "La tabla «QUE HA CAMBIADO RESPECTO DE LA VERSION 1.1» llevaba TEC-01/DOM-01, §7-bis.17, NUEVO-01/02/03, TEC-06/DOM-15, TEC-08/DOM-10/COM-04 y DOM-14/DOM-17 en la columna «Por que», que la lee el cliente. Reescrita entera en lenguaje llano, sin un solo id interno, y con los valores REALES del libro: plantilla 6 puestos / 100.083 €, alquiler 2.000 €/mes = 8,2 % de las ventas, ticket 9,80 € sin IVA = 10,78 € de PVP, fondo 38.526 €, financiacion 40.000 + 112.000 €. Se anaden dos filas nuevas (sueldos frente al SMI y cobertura del horario) y una de financiacion. Trazabilidad de ids, en los comentarios del codigo.",
+   "donde": "a.py RECALIBRADO (16 filas)"
+  },
+  {
+   "id": "RECALIBRADO del caso base (§7-bis.17)",
+   "como": "Con la plantilla legal y completa (100.082,50 € frente a 70.011,20 €) el caso base de 80 clientes/dia a 9,20 € ya no pasaba sus ratios. Recalibrado por los dos lados y dentro de los rangos que publica el propio libro: clientes/dia 80 -> 100 (rango publicado 80-150; 2,22 servicios por plaza y dia sobre 45 plazas) y ticket 9,20 -> 9,80 € sin IVA (10,78 € de PVP; rango publicado 8-12 €). Crecimiento moderado del 10/7 % al 7/5 %. Resultado medido: personal 34,04 % (techo 35), mercancia 29,64 % (techo 32), alquiler 8,16 % (techo 12), margen bruto 66,06 % (suelo 65) y neto 9,12 % (suelo 5), los cinco tambien en los anos 2 y 3.",
+   "donde": "a.py SUPUESTOS (cubiertos_dia, ticket_medio, crec_a2, crec_a3) + PLANTILLA + ESCENARIOS"
+  },
+  {
+   "id": "Escenarios coherentes con el nuevo caso base",
+   "como": "Pesimista (80 clientes, 9,20 €, 290 dias) = el caso base de la version anterior, que sale en perdidas de 21.666,54 € y ensena por que no se sostiene; optimista (115, 10,40 €, 310), con el PVP en 11,44 € todavia dentro del rango publicado. El realista reproduce el P&L al centimo (demo 2: diferencia 0,00).",
+   "donde": "a.py ESCENARIOS"
+  },
+  {
+   "id": "Legal del checklist (DOM-09 / DOM-13 / LAU)",
+   "como": "Tres textos legales que la v2.0 no tocaba en esta hermana: el RGSEAA (el estatal no aplica al minorista que sirve al consumidor final, art. 2.2 del RD 191/2011: pasa a registro autonomico por declaracion responsable), Crea y Crece (capital de 1 € mas la obligacion de dotar el 20 % del beneficio a reserva legal hasta 3.000 €, sin ningun deposito inventado) y el arrendamiento del local, que decia «no LAU para negocio» cuando el Titulo III de la LAU es justo el que lo regula, con libertad de pactos.",
+   "donde": "a.py CHECKLIST['reemplazos']"
+  }
+ ],
+ "ya_resueltos_por_el_motor": [
+  {
+   "id": "R-04",
+   "evidencia": "Barrido de las 9 hojas del libro regenerado: 0 formulas de formato condicional y 0 validaciones de datos que citen una hoja inexistente (antes, 2 reglas de Escenarios!B23:D23 apuntaban a 'PyG 3 Anos' sin tilde). El gate cf_desanclado sale 0 y ahora si lo mide."
+  },
+  {
+   "id": "R-07",
+   "evidencia": "'0. Supuestos'!B9 = =IFERROR(IF($B$5=\"\",\"\",$B$5*(B11*(1+$B$39)+B12*(1+($B$62*((1-$B$16)*$B$63+$B$16*$B$40)+(1-$B$62)*$B$39)))),\"\") -> 10,78 €. Ya mezcla con el peso de alcohol B62 y con el nuevo iva_bebida B63 (RD-17). La nota C9 imprime «10 % en comida y 10 % en bebida», coherente con C62 y con la nota de la tesoreria."
+  },
+  {
+   "id": "R-09",
+   "evidencia": "'Inversion Inicial' tiene UNA sola fila de imprevistos: A32 «Imprevistos de obra y acondicionamiento» = ROUND(SUM(B7:B29)*Supuestos!B55,0) = 8.040 €. La fila vieja «Imprevistos (8%)» con 7.000 € tecleados ya no existe y la base del calculo (B7:B29) no se incluye a si misma."
+  },
+  {
+   "id": "R-12",
+   "evidencia": "Los 10 tramites nuevos se insertan ENCIMA de la fila del contador y con la casilla ☐ sembrada: F1 filas 14-15 y contador en la 17 (E17=11 con 11 casillas marcables), F2 13, F3 15, F4 12, F5 14, F6 10 = 75 items con desplegable. El off-by-one del denominador tambien esta corregido."
+  }
+ ],
+ "motor_pendientes": [
+  {
+   "id": "R-05 (guarda §1.9)",
+   "severidad": "alta",
+   "evidencia": "motor.py:2133-2136 — RX_LINEA_CATALOGO casa el literal «plan » en cualquier parte de la frase y RX_PRECIO borra despues cualquier cifra seguida de €. En la v2.0 se comio «10,10 €» y «-12 €» de Supuestos!C5 y el informe lo registro como exito («1 precios fuera del cross-sell»). Aqui se ha esquivado escribiendo la nota sin € ni «plan », pero la trampa sigue viva para los otros 9 hermanos y para cualquier nota futura.",
+   "fix_propuesto": "Estrechar la guarda a lineas de catalogo REALES: exigir que la celda empiece por «Kit/Guia/Pack/eBook/Plan » o contenga «aichef.pro/productos», o que el precio este pegado al nombre del producto. Y anadir al informe la lista de celdas modificadas para que un borrado asi no pase por exito."
+  },
+  {
+   "id": "R-06",
+   "severidad": "alta",
+   "evidencia": "'Tesoreria 12 meses'!B31 divide la necesidad TOTAL de caja (B30 = 151.975,63 €, de la que 112.000 € los pone el banco) entre un flujo del que ya se han descontado intereses y principal (B26 = 62.211,50 €). Se cuenta la deuda dos veces y el resultado, «Mas de 3 anos», contradice la referencia «Retorno de la inversion: 24-36 meses» que el propio libro publica.",
+   "fix_propuesto": "Declarar la perspectiva y ser coherente: o proyecto (numerador B30 y flujo ANTES del servicio de la deuda) o accionista (numerador Supuestos!B30 = recursos propios y el flujo actual). Mientras tanto, el contenido ya avisa en la nota de la referencia de que el libro lo mide sobre la necesidad total."
+  },
+  {
+   "id": "R-08",
+   "severidad": "alta",
+   "evidencia": "'0. Supuestos'!B12 sigue siendo =IFERROR(1-B11,\"\") sin guarda de vacio, y 'PyG 3 Anos'!E11 la copia. Con el libro en blanco imprimen 100,0 % (antes 0,0 %). Las demos 8 y 13 salen ok=true porque buscan ceros, no cienes.",
+   "fix_propuesto": "B12 = IF(COUNT(B11)=0,\"\",1-B11) y el mismo patron en PyG!E11, Personal!B22 y Financiacion!B23; ampliar la demo 13 para que marque tambien 100,0 % y las notas con TEXTO() que imprimen un numero cuando no hay input."
+  },
+  {
+   "id": "R-11",
+   "severidad": "media",
+   "evidencia": "'Personal'!A2 = «Convenio Hosteleria — 14 pagas + SS 33.4%» frente a '0. Supuestos'!B20 = 33,0 %, que es la que usa la columna E (E5 = D5*B20 = 412,50 €). El motor si retira las notas de PIE con porcentaje escrito a mano (grupo_a.personal, filtro sobre _pie), pero no el SUBTITULO de la fila 2.",
+   "fix_propuesto": "Reescribir A2 como formula: =\"Convenio Hosteleria — \"&TEXT(B21,\"0\")&\" pagas + SS \"&TEXT(B20,\"0,0%\"), igual que ya se hace en Inversion!D30/D32/D34."
+  },
+  {
+   "id": "R-13",
+   "severidad": "media",
+   "evidencia": "'Escenarios' fila 25 mezcla dos metodos en la misma linea: la columna realista lee el saldo real de la tesoreria (100.737,13 €) y las columnas pesimista y optimista lo estiman (25.421,59 y 117.008,32). Con la formula estimada, el realista daria 73.906,8 €: 26.830 € menos que lo que se publica al lado.",
+   "fix_propuesto": "Publicar las tres columnas con el MISMO metodo (el estimado) y llevar el saldo real de la tesoreria a una fila aparte rotulada «Saldo real de la hoja de Tesoreria (solo realista)»."
+  },
+  {
+   "id": "R-14",
+   "severidad": "media",
+   "evidencia": "'Financiacion'!G30:G33 = 'PyG 3 Anos'!$D$40+$D$35+$D$36 en los cuatro anos, asi que H30:H33 salen identicos (2,5825) y B54 «DSCR minimo de todo el cuadro» solo mide de verdad los anos 1-3. Ademas suma los intereses del ano 3 (5.756,60 €) cuando los reales de los anos 4-7 bajan.",
+   "fix_propuesto": "O extender la proyeccion a los anos del prestamo, o rotular G30:G33 como «flujo del ano 3 mantenido» y limitar B54 a MIN(H27:H29) declarando el alcance."
+  },
+  {
+   "id": "R-15",
+   "severidad": "media",
+   "evidencia": "'Tesoreria 12 meses'!B31 e 'Instrucciones'!B30 devuelven el TEXTO «Mas de 3 anos» en celdas con number_format «#,##0.0». Cualquier suma del usuario da #¡VALOR!. El gate de formatos las deja pasar.",
+   "fix_propuesto": "Devolver un numero (ano fraccionario o un centinela) y llevar el literal a la columna de notas, o poner esas dos celdas en «General»; y extender gate_formatos a las celdas de texto de TODAS las hojas."
+  },
+  {
+   "id": "R-19",
+   "severidad": "baja",
+   "evidencia": "5 celdas de nota con formato numerico heredado de la fila que copian: 'Personal'!J18 y J19 (#,##0), J20 y J21 (#,##0.0) y 'Punto Equilibrio'!E25 (#,##0.0). Mismo agujero del gate que R-15 (7 celdas en total con el libro de hoy).",
+   "fix_propuesto": "Poner en «General» toda celda cuyo valor sea str al cerrar el libro, en todas las hojas, no solo en Inversion."
+  },
+  {
+   "id": "R-18",
+   "severidad": "baja",
+   "evidencia": "La validacion «Si,No» de la columna «¿Lleva IVA?» se declara sobre E7:E34, y E30, E31 y E32 estan locked=True con la hoja protegida: el usuario ve el desplegable y Excel le contesta que la celda esta protegida.",
+   "fix_propuesto": "Recortar la sqref de la validacion al rango editable (E7:E29) o desbloquear esas filas si su tratamiento de IVA es realmente editable."
+  },
+  {
+   "id": "R-20",
+   "severidad": "baja",
+   "evidencia": "'Financiacion'!B51 = ('PyG 3 Anos'!$B$40+$B$35+B44)/(B44+B45): el numerador es el resultado ANTES de impuestos, sin descontar el Impuesto de Sociedades que el propio P&L liquida (B45 = 4.732,71 € el ano 1). El CFADS que mira una entidad va despues de impuestos.",
+   "fix_propuesto": "Restar PyG!B45/C45/D45 en el numerador de B51:B53 y de H27:H41, o declarar en la nota de cierre que el ratio es pre-impuestos."
+  },
+  {
+   "id": "R-21",
+   "severidad": "baja",
+   "evidencia": "'Financiacion'!B43 = ROUND(B20-SUM(D27:D41),2) suma solo 15 filas de cuadro, mientras la validacion de '0. Supuestos'!B33 (plazo) solo exige entero >= 1. Con un plazo de 16 anos el control saldria positivo y el semaforo culparia a la financiacion, no al tamano del cuadro. En este producto no se manifiesta (plazo 7).",
+   "fix_propuesto": "Limitar la validacion de B33 a 1-15 (o extender el cuadro) y anadir a la nota de B43 el aviso del tope."
+  },
+  {
+   "id": "R-22",
+   "severidad": "baja",
+   "evidencia": "'Escenarios'!B19:D19 = MAX(0,B18-Supuestos!$B$42)*Supuestos!$B$37: los tres escenarios liquidan siempre al 15 % mientras el P&L conmuta al general con el contador de ejercicios positivos (PyG!D44 = 25 % en el ano 3). El optimista publica 12.338,86 € de impuesto y un neto de 69.920,20 € que el motor del P&L no daria.",
+   "fix_propuesto": "Reutilizar en Escenarios el mismo interruptor de tipo que PyG!B44 (IF(ejercicios<=2;B37;B38))."
+  },
+  {
+   "id": "R-23",
+   "severidad": "baja",
+   "evidencia": "'Punto Equilibrio'!A33 rotula «Coste variable / cubierto», que es lo que llevan las FILAS (A34:A38 = 2,83 a 3,83 €), mientras la fila de cabecera B33:E33 lleva los TICKETS (7,80 / 9,80 / 11,80 / 13,80 €) sin rotulo. Con las dos magnitudes en euros, la tabla se puede leer girada.",
+   "fix_propuesto": "Poner el rotulo del eje de columnas encima de B33:E33 («Ticket medio sin IVA») y dejar A33 solo para el de filas."
+  },
+  {
+   "id": "R-24",
+   "severidad": "baja",
+   "evidencia": "Por los 30 dias de pago a proveedor, la fila de compras de la tesoreria recoge 11 mensualidades: B11 = -0,00 € y la columna «Ano» N11 = -97.531,00 € frente a los 110.818,94 € de coste con IVA del ejercicio (PyG!B19+B38).",
+   "fix_propuesto": "Anadir a la nota de la fila (o a la de cierre) que el «Ano (€)» de esa fila es caja de 12 meses, no coste del ejercicio, y cuanto queda pendiente de pago al cierre."
+  },
+  {
+   "id": "R-10 (agujero del gate)",
+   "severidad": "media",
+   "evidencia": "gate_ortografia salia 0 con 24 palabras sin tilde vivas en los 2 ficheros. La heuristica de convivencia (RC-20) solo caza la forma sin tilde cuando el MISMO libro escribe la acentuada en otra celda, y la lista cerrada no incluye maquina, practica, fisica, menu, categoria, trafico, comodo, estandares, tipografia, telematicos, atras, rapida, calida, bano, desague ni sandwich.",
+   "fix_propuesto": "Ampliar el diccionario del gate con esas formas de uso frecuente en hosteleria y volver a pasarlo por los 10 productos: el arreglo de hoy es celda a celda y solo cubre esta hermana."
+  },
+  {
+   "id": "NUEVO-CAF-01 (detectado hoy)",
+   "severidad": "baja",
+   "evidencia": "'Personal'!A12 = «CRECIMIENTO DE LA PLANTILLA (coste escalonado, RD-10)»: un id interno de auditoria en un rotulo que lee el cliente, justo lo que el encargo de hoy prohibe en la tabla de cambios. Lo escribe grupo_a.personal (rej.add(rot=...)), no el contenido.",
+   "fix_propuesto": "Quitar «, RD-10» del rotulo y dejar la trazabilidad en el comentario del codigo."
+  },
+  {
+   "id": "NUEVO-CAF-02 (detectado hoy)",
+   "severidad": "baja",
+   "evidencia": "'Inversion Inicial'!D31 imprime «Renta de los 1 meses de obra y licencias» — la nota generada con TEXTO() no concuerda en numero cuando el parametro vale 1.",
+   "fix_propuesto": "Componer el plural con IF(meses=1;\"del mes\";\"de los \"&TEXT(meses,\"0\")&\" meses\") en la nota de esa fila."
+  }
+ ],
+ "no_procede": [
+  {
+   "id": "R-01 (rama alternativa del fix)",
+   "motivo": "La refutacion ofrecia «o declarar en la nota que son cifras a sustituir por el convenio provincial». No se toma esa rama: §7-bis.17 obliga a que el caso base cumpla su propio semaforo con datos defendibles, y un libro de ejemplo con sueldos por debajo del SMI no se entrega aunque lleve nota. La celda del convenio provincial (Supuestos!B68) sigue a 0 y el semaforo compara contra el SMI, que es el suelo verificable."
+  },
+  {
+   "id": "R-02 (rama alternativa del fix)",
+   "motivo": "La otra rama era «reducir Personal!B20 (horas de servicio/dia) al horario que la plantilla si cubre». No se puede desde el contenido —B20=13 y B21=2 son valores por defecto de grupo_a.personal— y ademas seria cuadrar el ratio recortando la promesa: el propio checklist describe turnos de manana (6-15 h) y de tarde (14-22 h). Se arregla por el lado de la plantilla."
+  },
+  {
+   "id": "R-21 (para este producto)",
+   "motivo": "El cuadro de 15 filas no se queda corto con los datos del caso base (plazo 7 anos, capital pendiente al vencimiento 0,00 €). Se reporta igualmente como defecto del motor porque la validacion de Supuestos!B33 admite plazos mayores de 15."
+  }
+ ],
+ "dryrun": {
+  "exit": 0,
+  "gates_13": true,
+  "idempotencia_0": true,
+  "fallos": [],
+  "pendientes": [
+   "grupo_b aun no existe (linea B, fuera de esta tanda)",
+   "grupo_c aun no existe (informe bancario, fuera de esta tanda)",
+   "RC-29: 3 nombres de hoja de mas de 31 caracteres — son del checklist de plan-negocio-parrillero-asador-eventos, no de este producto; su renombrado va en el modulo de contenido de ese hermano",
+   "§9: 1 docx (plan-de-negocio-cafeteria-brunch.docx) sin A4 ni author=AI Chef Pro — lo produce documentos.py en T9"
+  ]
+ },
+ "cifras_medidas": {
+  "hojas_financiero": 9,
+  "nombres_hojas": [
+   "0. Supuestos",
+   "Inversión Inicial",
+   "PyG 3 Años",
+   "Punto Equilibrio",
+   "Escenarios",
+   "Personal",
+   "Instrucciones",
+   "Tesorería 12 meses",
+   "Financiación"
+  ],
+  "items_checklist": 75,
+  "fases_checklist": 6,
+  "formulas_financiero": 735,
+  "inversion_total": "134.965,63 € de inversión total (96.440 € de CAPEX + 38.525,63 € de fondo de maniobra); necesidad total de caja al arranque, con el IVA que se adelanta: 151.975,63 €",
+  "facturacion_ano1": "294.000 € sin IVA (314.580 € el año 2 y 330.309 € el año 3)",
+  "resultado_neto_ano1": "26.818,69 € (9,1 % sobre ventas); 33.274,57 € el año 2 y 33.375,39 € el año 3",
+  "food_cost": "29,6 % de coste de mercancía sobre ventas (32 % sobre la comida y 28 % sobre la bebida), techo declarado 32 %",
+  "ticket_sin_iva": "9,80 €",
+  "pvp_equivalente": "10,78 € con IVA (10 % en sala, alcohol incluido)",
+  "clientes_dia": "100 al día (2,2 servicios por plaza y día sobre 45 plazas), 300 días al año",
+  "ratio_personal": "34,0 % sobre ventas (techo declarado 35 %)",
+  "ratio_alquiler": "8,2 % sobre ventas (techo declarado 12 %)",
+  "plantilla_puestos": "6 puestos, 4,25 jornadas completas equivalentes, 7.820 horas al año (cobertura del 100,3 % del horario declarado)",
+  "plantilla_coste_anual": "100.082,50 € (nóminas + Seguridad Social al 33 %, 14 pagas)",
+  "break_even_dia_contable": "83,75 clientes/día (246.238,27 € al año)",
+  "break_even_dia_caja": "79,35 clientes/día (233.276,57 € al año); holgura del caso base sobre el equilibrio de caja: 26,0 %",
+  "payback_anos": "«Más de 3 años» — la hoja lo calcula sobre la necesidad TOTAL de caja (151.975,63 €), financiación incluida (ver R-06)",
+  "saldo_minimo": "40.854,68 € en el mes 2 (fondo de maniobra dotado: 38.525,63 €)"
+ },
+ "cambios_a_py": [
+  "SUPUESTOS: cubiertos_dia 80 -> 100; ticket_medio 9,20 -> 9,80 € sin IVA; crec_a2 0,10 -> 0,07; crec_a3 0,07 -> 0,05; prestamo 114.000 -> 112.000 €.",
+  "SUPUESTOS: reescritas las notas de cubiertos, ticket, alquiler, coste de comida, coste de bebida, seguros, recursos propios, prestamo, fondo, aforo y delivery — sin citas por coordenada y sin el disparador del cross-sell (importe en € junto a la palabra «plan »).",
+  "PLANTILLA: 6 puestos reescritos (1.350 / 1.250 / 1.230 / 680 / 555 / 310 € y jornadas 1,00 / 1,00 / 1,00 / 0,55 / 0,45 / 0,25). El camarero de tarde pasa de 0,60 a 1,00 de jornada: es el puesto que faltaba para cubrir las 13 horas de servicio.",
+  "INVERSION: cinco reglas nuevas (importe, nota) que reescriben las notas de Proyecto tecnico, Obra civil, Fontaneria, Vitrina refrigerada y Decoracion (tildes de «bano», «desague», «sandwiches», «calida» y «100 m²»).",
+  "UMBRALES: mismos cinco valores (0,65 / 0,32 / 0,35 / 0,12 / 0,05); comentarios reescritos citando la referencia por su nombre, no por su coordenada.",
+  "ESCENARIOS: pesimista (80, 9,20 €, 290) y optimista (115, 10,40 €, 310), coherentes con el nuevo caso base.",
+  "INSTRUCCIONES['uso']: renumerado a 6 y 7 para continuar la lista del motor.",
+  "INSTRUCCIONES['referencias']: 17 filas — se restituyen ocupacion entre semana, ocupacion de fin de semana y rotacion de mesa del brunch; se anade el SMI 2026 con su RD; la fuente «DOM-24 / checklist F4» pasa a «Fichero v1.1 y checklist de apertura» (era el unico id interno de esa tabla); notas nuevas en EBITDA objetivo y Retorno de la inversion explicando por que el caso base queda fuera de la referencia.",
+  "CHECKLIST['reemplazos']: 18 patrones nuevos — 3 legales (RGSEAA autonomico, Crea y Crece con la reserva legal, arrendamiento por el Titulo III de la LAU) y 15 de ortografia/redaccion sobre celdas visibles del checklist.",
+  "RECALIBRADO: 16 filas reescritas en lenguaje de cliente, sin ids internos, con los valores finales del libro y dos filas nuevas (sueldos frente al SMI y cobertura del horario) mas la de la financiacion solicitada.",
+  "Docstring: reescrita la seccion de recalibracion con el detalle de R-01/R-02 y los cinco ratios medidos; dos avisos nuevos (no citar coordenadas de Instrucciones; no juntar un importe en € con «plan » por la guarda §1.9 del motor)."
+ ],
+ "notas": [
+  "Tres dry-runs, siempre con el cerrojo global y con istats delante (45,6 - 52,9 °C; un python cada vez, sin builds ni navegador).",
+  "El 2.º dry-run fallo por §2.11.5 (la demo del impuesto no encontraba escenario con las tres ramas) y por 1 texto sin tilde («cuanto», que convivia con «cuanto» acentuado del libro). La demo busca cubiertos = base x factor entre 0,98 y 0,50 y necesita ano 1 en perdidas, ano 2 con base positiva MENOR que la BIN y ano 3 tributando al 15 %; con crecimientos del 6 % y el 4 % esa ventana no existia. Con 7 % y 5 % la encuentra en 82 clientes/dia (RAI1 -3.407,55 / RAI2 +1.740,47 / BIN 3.407,55 / IS3 533,56). Es un acoplamiento no documentado entre el crecimiento del contenido y una demo del motor: conviene anotarlo para los otros hermanos.",
+  "El EBITDA del caso base queda en el 15,9 % el ano 1, justo por encima del «8-15 %» que el propio libro publica como objetivo del ano 2. Es estructural, no un ajuste: con margen bruto del 66,1 %, personal en el 34 % y los otros fijos en el 16 %, el EBITDA sale del 16 %. El libro no calcula ninguna fila de EBITDA, asi que no hay semaforo que suspenda; se ha anadido la nota honesta en la tabla de referencias en vez de forzar las cifras.",
+  "El payback sigue diciendo «Mas de 3 anos» frente a la referencia de 24-36 meses que publica el propio libro. La causa es de motor (R-06); desde el contenido se ha anadido a esa referencia la nota que explica que el libro lo mide sobre la necesidad TOTAL de caja y la referencia del sector sobre lo que pone el emprendedor.",
+  "No se ha tocado motor.py, grupo_a.py, main.py, ningun otro modulo de contenido ni astro-site/public/dl/**; ningun git add/commit/stash/checkout/reset."
+ ]
+}
