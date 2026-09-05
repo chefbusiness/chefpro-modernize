@@ -100,17 +100,25 @@ programado para el lunes 7-sep 10:00 Madrid (handoff `SESSION_HANDOFF_2026-09-04
 Pastelería y Chocolatería. Coste ≈ 10,5 M tokens de subagentes (dos productos nuevos en dos días: la alternancia se retoma con una
 sesión impar). Hotfix colateral: la landing de la Guía Food Cost servía dos botones de WhatsApp.
 
-### 🔜 Próxima sesión (desde el 5-sep): IMPAR — v2.0 pendiente
+### ✅ 2026-09-05 (sesión IMPAR, Claude Code en el Mac) — RD-17 aplicado a la familia de PLANES: bar-restaurante 2.1
 
-Dos productos nuevos seguidos (3-5 sep). Toca v2.0: IVA del 21 % en los 10 planes (`planes-v2_0/grupo_a.py`) o documentos de la
-guía gastronómica (handoff B §20). Antes, 2 minutos: informe del buscador del hub (`buscador-report.py`) y compra de prueba del manual.
+El 21 % en la bebida solo vivía en **`plan-negocio-bar-restaurante`** (único con el molde v2.0 en producción): los otros 9
+siguen en v1.1 y no lo llevaban. Parámetro `iva_bebida` (B63, 10 %), mezcla de ventas por canal (el alcohol que sale por
+delivery sí va al 21 %), compras intactas, DV purgadas por solape (bloqueante cazado por la refutación), changelog 2.0 + 2.1,
+landing/dashboard con las cifras reales (9 hojas, 7 fases, 64 trámites), paellero `C23` sin «21%». Detalle en el handoff
+`SESSION_HANDOFF_2026-09-05-rd17-planes.md`. **Próxima sesión impar**: documentos de la guía gastronómica (handoff B §20).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
-1. **El error del 21 % de IVA está VIVO en la familia de PLANES** (`planes-v2_0/grupo_a.py`), y afecta a los **10 planes
-   publicados**. En un bar o una coctelería la bebida es el negocio, así que pesa más que en la guía. El arreglo ya está
-   diseñado y probado en las guías: subir el tipo a `motor.PARAMETROS`, celda verde con nota, regenerar. **Candidato a
-   ser lo primero de la siguiente sesión impar.**
+1. ~~El error del 21 % de IVA está VIVO en la familia de PLANES y afecta a los 10 planes~~ **RESUELTO el 2026-09-05**
+   (y la deuda estaba sobredimensionada: medido con openpyxl sobre `dl/`, solo `plan-negocio-bar-restaurante` llevaba el
+   molde v2.0 con el 21 %; los 9 hermanos son v1.1 sin ese parámetro). Lo que queda: los 4 hermanos de línea A con
+   contenido construido (cafetería, tapas-bar, panadería, food-truck) heredan el 10 % al aplicarse con el motor 2.1;
+   **decidir antes de aplicarlos si nacen como 2.1 o se les estampa primero la 2.0** (su changelog tendría que contar el
+   salto 1.1 → 2.1 entero). Seguimientos de la refutación, ninguno bloquea: fila de aire antes de «UMBRALES» en Supuestos
+   (mover el bloque son 5 celdas publicadas) · gate ortográfico que no lee literales dentro de fórmulas · nota de inversión
+   del sujeto pasivo para plataformas extranjeras (TheFork, delivery) · docx v1 del bar (40 cubiertos / 22 €) contradice al
+   xlsx: T9 pendiente · parámetro propio para la bebida no alcohólica de compra (hoy aproximada al 10 %, declarado en B62).
 2. **`_instr` acumulaba la instrucción vieja al editar el texto** (arreglado en guías). Revisar si el mismo helper se
    usa igual en las otras familias.
 3. **Pasarela CRYPTO** (`PAGOS_CRYPTO_PENDIENTE.md`): infraestructura, no producto. Decidir si desplaza una sesión.
