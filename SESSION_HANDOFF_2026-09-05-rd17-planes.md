@@ -92,8 +92,13 @@ Efecto medido en el caso de ejemplo (todas las celdas de valor cambiadas —37�
 ## 6. Verificación en producción (tras el deploy)
 
 `python3 scripts/productos-digitales/gate-flujo-postpago.py --only plan-negocio-bar-restaurante` compara el `content-length`
-LIVE con el tamaño en DISCO: hasta que Netlify termine, dará fallo en los dos xlsx (64.805 y 13.882 B). Resultado: ver el
-último apartado de este fichero.
+LIVE con el tamaño en DISCO: hasta que Netlify termine, dará fallo en los dos xlsx (64.805 y 13.882 B).
+
+**Resultado (13:06, deploy de `680d939`/`fac71fd` en verde):** gate `plan-negocio-bar-restaurante` = 3 entregables, landing
+200 / access 200 / library 200, **0 fallos, 0 avisos**, webhook armado; los tres xlsx servidos por el CDN (plan financiero,
+checklist del bar y checklist del paellero) son **byte a byte** los del repo (`cmp`); la landing servida muestra «Versión 2.1
+· septiembre 2026», «(9 hojas)», «(7 fases)» y «64 trámites». El changelog 2.0/2.1 se pinta en el dashboard (island
+`client:only`, no verificable con curl): comprobarlo al hacer la compra de prueba.
 
 ## 7. Próxima sesión
 
