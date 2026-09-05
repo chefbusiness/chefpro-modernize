@@ -21,6 +21,11 @@
 // NO se "corrige" (sería redacción no declarada). El FAQ VISIBLE (<details>) sí lleva el copy
 // correcto en UTF-8 (la SPA lo emite bien vía \u escapes) — solo el espejo JSON-LD va roto.
 import Icon from '../Icon.astro';
+// Normalización + sinónimos del buscador: UNA sola definición, compartida con el
+// <script> del cliente y con scripts/productos-digitales/buscador-report.py (que lee
+// el JSON). Antes estaba duplicada byte a byte aquí y en el script: cambiar una copia
+// y no la otra dejaba el buscador sin encontrar nada, con el build en verde.
+import { indiceBusqueda, gruposHuerfanos, ALIAS_BUSQUEDA } from '../../lib/normalizar-busqueda';
 
 const ALL_TAGS = [
   { id: 'all', label: 'Todos', iconName: 'Filter' },
@@ -943,6 +948,34 @@ const PRODUCTS_PER_PAGE = 12;
 // entrada en ALL_TAGS — 'bundle', 'obrador', 'tapas'… — no renderizan pill, igual que la SPA).
 const tagLabel = (id: string) => ALL_TAGS.find((t) => t.id === id)?.label;
 
+// ── Buscador: índice de texto por card (data-search) ────────────────────────────────
+// Se pre-normaliza AQUÍ (servidor) con `indiceBusqueda` de src/lib/normalizar-busqueda.ts:
+// minúsculas, sin acentos/ñ, puntuación → espacios y tokens DEDUPLICADOS. Así el script
+// del cliente solo normaliza lo que teclea el usuario y compara contra una cadena ya
+// limpia (nada de leer textContent, que arrastraría precio, badge y "Ver").
+//
+// A los productos se les suman los ALIAS por slug (vocabulario que el visitante teclea y
+// no está en la ficha: «stock» para el kit de inventario, «rentabilidad» para la Guía Food
+// Cost). Sin ellos, un grupo de sinónimos correcto no puede disparar nunca.
+const indiceProducto = (p: { name: string; description: string; features: string[]; tags: string[]; slug: string }) =>
+  indiceBusqueda([p.name, p.description, ...p.features, ...p.tags, ...p.tags.map(tagLabel), p.slug, ALIAS_BUSQUEDA[p.slug]]);
+
+// GATE DE BUILD: un grupo de sinónimos cuyos miembros no aparecen en NINGÚN índice está
+// muerto — el visitante teclea «planilla», ve «No tenemos nada para…» y el registro anota
+// una demanda no cubierta que es falsa. Le pasaba al grupo nomina/planilla. Si el gate
+// salta: o se quita el grupo del JSON, o se le da cuerpo con un alias en ese mismo JSON.
+const _huerfanos = gruposHuerfanos([
+  ...products.map(indiceProducto),
+  ...comingSoon.map((c) => indiceBusqueda([c.name, c.desc, ...c.tags, ...c.tags.map(tagLabel)])),
+]);
+if (_huerfanos.length) {
+  throw new Error(
+    'Buscador del hub: grupos de sinónimos MUERTOS (ningún miembro aparece en el índice de ninguna card): ' +
+      _huerfanos.map((g) => g.join('/')).join(' · ') +
+      ' — arréglalo en astro-site/src/lib/sinonimos-buscador.json (quita el grupo o añade un alias).',
+  );
+}
+
 // Contadores del badge del hero (VERBATIM products.length / comingSoon.length).
 const productsCount = products.length;
 const comingSoonCount = comingSoon.length;
@@ -1086,6 +1119,57 @@ const breadcrumbSchema = {
     </div>
   </section>
 
+  {/* ===== Buscador (filtra las MISMAS cards que los chips; la lógica va en el script del final) =====
+       El panel de «no hay resultados» NO vive aquí: está debajo del grid (#pd-search-empty).
+       Si estuviera encima de los chips, aparecer y desaparecer al teclear empujaría chips y
+       cards ~200 px arriba y abajo, y el clic sobre una card acabaría en otra cosa. */}
+  <section id="pd-search-section" class="px-4 pb-6">
+    <div class="max-w-2xl mx-auto" role="search">
+      <label for="pd-search-input" class="sr-only">Buscar producto por nombre, tema o tipo de negocio</label>
+      {/* Descripción ESTÁTICA del campo, separada del contador a propósito: si el
+          aria-describedby apuntara a la región viva, el lector de pantalla leería el
+          conteo al enfocar Y otra vez en cada mutación (una por pausa de tecleo). */}
+      <span id="pd-search-ayuda" class="sr-only">
+        Escribe al menos dos letras. La lista se filtra mientras escribes; pulsa Escape para limpiar la búsqueda.
+      </span>
+
+      <div class="relative">
+        <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500">
+          <Icon name="Search" class="w-5 h-5" />
+        </span>
+        <input
+          id="pd-search-input"
+          type="search"
+          maxlength="120"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          enterkeyhint="search"
+          aria-describedby="pd-search-ayuda"
+          placeholder="Busca por tema o negocio: escandallos o costeo, APPCC o HACCP, food truck…"
+          class="w-full h-14 pl-12 pr-12 rounded-2xl bg-white/5 border border-white/10 text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/20"
+        />
+        <button
+          id="pd-search-clear"
+          type="button"
+          aria-label="Limpiar la búsqueda"
+          class="hidden absolute inset-y-0 right-0 items-center pr-4 text-gray-500 hover:text-[#FFD700] transition-colors"
+        >
+          <Icon name="X" class="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Contador VISIBLE (se actualiza al instante, sin aria-live) + región viva SOLO
+          para lectores de pantalla, con su propio retardo: anunciar en cada pausa de
+          tecleo encola avisos que se pisan unos a otros. */}
+      <p id="pd-search-status" class="mt-2.5 text-center text-xs text-gray-500 break-words">
+        {productsCount} productos
+      </p>
+      <p id="pd-search-announce" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+  </section>
+
   {/* ===== Tag Filter ===== */}
   <section class="px-4 pb-8">
     <div class="max-w-6xl mx-auto">
@@ -1115,6 +1199,7 @@ const breadcrumbSchema = {
           rel="noopener noreferrer"
           data-product
           data-tags={product.tags.join(' ')}
+          data-search={indiceProducto(product)}
           class={`group relative bg-white/[0.03] rounded-2xl overflow-hidden hover:bg-white/[0.05] transition-all duration-300 flex flex-col ${(product as any).featured ? 'border-2 border-emerald-500/50 hover:border-emerald-400/70 ring-1 ring-emerald-500/20' : 'border border-white/10 hover:border-[#FFD700]/30'}${idx >= PRODUCTS_PER_PAGE ? ' hidden' : ''}`}
         >
           {/* Badge */}
@@ -1206,6 +1291,125 @@ const breadcrumbSchema = {
     </div>
   </section>
 
+  {/* ===== Búsqueda con resultados FUERA del chip activo =====
+       El 0 lo provoca el filtro de categoría, no el catálogo: el producto existe y está a
+       un clic. Enseñar aquí la captación de demanda sería perder la venta Y registrar un
+       hueco falso en el informe (medido: 66 combinaciones chip×consulta caían ahí). */}
+  <section id="pd-search-fuera" class="hidden px-4 pb-16 md:pb-24">
+    <div class="max-w-2xl mx-auto rounded-2xl border border-[#FFD700]/25 bg-[#FFD700]/[0.04] p-6 text-center">
+      <p id="pd-search-fuera-txt" class="text-white font-semibold mb-4 break-words"></p>
+      <button
+        id="pd-search-fuera-btn"
+        type="button"
+        class="px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+      >
+        Buscar en todas las categorías
+      </button>
+    </div>
+  </section>
+
+  {/* ===== Sin resultados DE BÚSQUEDA (el panel del filtro por tag sigue siendo #pd-noresults) =====
+       Va debajo del grid a propósito: encima de los chips empujaría toda la página al teclear. */}
+  <section id="pd-search-empty" class="hidden px-4 pb-16 md:pb-24">
+    <div class="max-w-2xl mx-auto rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center">
+      <p class="text-white font-semibold mb-1.5 break-words">
+        No tenemos (todavía) nada para «<span id="pd-search-empty-q" class="text-[#FFD700] break-all"></span>»
+      </p>
+      <p class="text-gray-500 text-sm mb-5">
+        Cuéntanos qué necesitas y lo tenemos en cuenta para los próximos productos.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button
+          id="pd-ask-toggle"
+          type="button"
+          class="px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Dinos qué buscabas
+        </button>
+        <a
+          id="pd-wa-empty"
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-sm font-medium hover:border-[#FFD700]/30 hover:text-white transition-colors"
+        >
+          <Icon name="MessageSquare" class="w-4 h-4" />
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+
+      {/* Salidas secundarias: quien no encuentra un producto todavía puede encontrar valor
+          (y volver). Un callejón sin salida es tráfico tirado. */}
+      <p class="mt-5 text-xs text-gray-500">
+        Mientras tanto:
+        <button id="pd-ver-todos" type="button" class="underline hover:text-[#FFD700] transition-colors">ver el catálogo completo</button>
+        <span class="mx-1.5 text-gray-700">·</span>
+        <a href="/libreria-de-prompts" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">librería de prompts</a>
+        <span class="mx-1.5 text-gray-700">·</span>
+        <a href="/blog" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">blog</a>
+      </p>
+
+      <div id="pd-ask-form" class="hidden mt-5 text-left">
+        <label for="pd-ask-detalle" class="block text-xs text-gray-400 mb-1.5">¿Qué necesitas exactamente? (opcional)</label>
+        <textarea
+          id="pd-ask-detalle"
+          rows="3"
+          maxlength="500"
+          aria-describedby="pd-ask-hint"
+          placeholder="Ej.: una plantilla de control de propinas para un bar de tapas"
+          class="w-full rounded-xl bg-white/5 border border-white/10 text-white text-base p-3 outline-none transition-colors placeholder:text-gray-400 focus:border-[#FFD700]/60"
+        ></textarea>
+
+        <label for="pd-ask-email" class="block text-xs text-gray-400 mt-3 mb-1.5">Tu email, si quieres que te avisemos (opcional)</label>
+        <input
+          id="pd-ask-email"
+          type="email"
+          maxlength="120"
+          autocomplete="email"
+          aria-describedby="pd-ask-hint"
+          placeholder="tunombre@turestaurante.com"
+          class="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white text-base px-3 outline-none transition-colors placeholder:text-gray-400 focus:border-[#FFD700]/60"
+        />
+
+        {/* Honeypot REAL: el comentario de log-search.ts decía que el formulario lo pintaba
+            y no existía. Ninguna persona lo ve ni lo rellena; si llega con algo, el backend
+            responde 204 y no escribe nada. */}
+        <input
+          type="text"
+          id="pd-ask-website"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+          class="hidden"
+        />
+
+        <p id="pd-ask-hint" role="alert" class="hidden mt-2 text-xs text-[#FFD700]">
+          Escribe qué necesitas o déjanos tu email para poder avisarte.
+        </p>
+
+        <button
+          id="pd-ask-send"
+          type="button"
+          class="mt-3 px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Enviar
+        </button>
+
+        {/* Dato personal: finalidad, uso y política, junto al campo que lo pide. */}
+        <p class="mt-2.5 text-xs text-gray-500">
+          Solo usamos tu email para avisarte si lanzamos este producto; no lo cedemos a nadie ni te
+          apuntamos a ninguna lista. <a href="/privacidad" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">Política de privacidad</a>.
+        </p>
+      </div>
+
+      <p id="pd-ask-thanks" role="status" tabindex="-1" class="hidden mt-5 text-sm text-[#FFD700] font-medium outline-none">
+        Gracias, lo tenemos en cuenta.
+      </p>
+    </div>
+  </section>
+
   {/* ===== Coming Soon ===== */}
   <section id="pd-coming-section" class="px-4 pb-16 md:pb-24">
     <div class="max-w-6xl mx-auto">
@@ -1227,6 +1431,7 @@ const breadcrumbSchema = {
           <div
             data-coming
             data-tags={item.tags.join(' ')}
+            data-search={indiceBusqueda([item.name, item.desc, ...item.tags, ...item.tags.map(tagLabel)])}
             class="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 opacity-70 hover:opacity-90 transition-opacity"
           >
             <div class="flex items-start gap-3 mb-3">
@@ -1452,11 +1657,27 @@ const breadcrumbSchema = {
   /* Pulso del botón WhatsApp (animate-ping de la SPA) */
   .animate-ping { animation: pd-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
   @keyframes pd-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+
+  /* La X nativa de un input[type="search"] (Chrome/Safari) sobra: el buscador pinta la
+     suya en #pd-search-clear y las dos se solapan en la esquina derecha del campo. */
+  #pd-search-input::-webkit-search-cancel-button,
+  #pd-search-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+  }
 </style>
 
 <script>
-  // Filtro por tag + paginación "Cargar más" (sustituye useState de la SPA).
-  // TODAS las cards están en el DOM; este script solo muestra/oculta.
+  // Filtro por tag + BUSCADOR + paginación "Cargar más" (sustituye useState de la SPA).
+  // TODAS las cards están en el DOM; este script solo muestra/oculta (nunca borra nodos).
+  // El criterio de texto vive DENTRO de matches(), que es la única función que comparten
+  // las cards de producto y las de "próximamente": así las dos reaccionan igual.
+  //
+  // La normalización y los sinónimos NO se definen aquí: vienen del módulo compartido con
+  // el frontmatter (que genera los data-search) y con buscador-report.py. Duplicarlos fue
+  // el defecto original: dos copias idénticas que nadie cruzaba.
+  import { normalizarBusqueda, GRUPOS_SINONIMOS, FRASES_SINONIMAS } from '../../lib/normalizar-busqueda';
+
   const PER_PAGE = 12;
   let activeTag = 'all';
   let visibleCount = PER_PAGE;
@@ -1474,9 +1695,124 @@ const breadcrumbSchema = {
   const TAG_ACTIVE = ['bg-[#FFD700]', 'text-black'];
   const TAG_INACTIVE = ['bg-white/5', 'text-gray-400', 'border', 'border-white/10', 'hover:border-[#FFD700]/30', 'hover:text-white'];
 
-  function matches(card) {
+  // ── Buscador ──────────────────────────────────────────────────────────────────────
+  const searchInput = document.getElementById('pd-search-input');
+  const searchClear = document.getElementById('pd-search-clear');
+  const searchStatus = document.getElementById('pd-search-status');
+  const searchAnnounce = document.getElementById('pd-search-announce');
+  const searchEmpty = document.getElementById('pd-search-empty');
+  const searchEmptyQ = document.getElementById('pd-search-empty-q');
+  const searchFuera = document.getElementById('pd-search-fuera');
+  const searchFueraTxt = document.getElementById('pd-search-fuera-txt');
+  const searchFueraBtn = document.getElementById('pd-search-fuera-btn');
+  const waEmpty = document.getElementById('pd-wa-empty');
+  const askToggle = document.getElementById('pd-ask-toggle');
+  const askForm = document.getElementById('pd-ask-form');
+  const askDetalle = document.getElementById('pd-ask-detalle');
+  const askEmail = document.getElementById('pd-ask-email');
+  const askWebsite = document.getElementById('pd-ask-website');
+  const askHint = document.getElementById('pd-ask-hint');
+  const askSend = document.getElementById('pd-ask-send');
+  const askThanks = document.getElementById('pd-ask-thanks');
+  const verTodos = document.getElementById('pd-ver-todos');
+
+  const WA_BASE = 'https://wa.me/34744717942?text=';
+
+  let searchRaw = '';        // lo que ve el usuario (para los mensajes)
+  let searchNorm = '';       // normalizado (para deduplicar el registro)
+  let searchVariantes = [];  // [[token, token…], …] — basta con que UNA variante case entera
+
+  // Etiqueta visible de cada chip, para poder decir "…fuera de la categoría PDF / eBook".
+  const etiquetaTag = {};
+  tagBtns.forEach((btn) => { etiquetaTag[btn.dataset.tag || ''] = (btn.textContent || '').replace(/\s+/g, ' ').trim(); });
+
+  function variantesDeConsulta(q) {
+    const variantes = [q];
+    for (let i = 0; i < FRASES_SINONIMAS.length; i++) {
+      const a = FRASES_SINONIMAS[i][0];
+      const b = FRASES_SINONIMAS[i][1];
+      const previas = variantes.slice();
+      for (let j = 0; j < previas.length; j++) {
+        const v = previas[j];
+        if (v.indexOf(a) !== -1) variantes.push(v.split(a).join(b));
+        else if (v.indexOf(b) !== -1) variantes.push(v.split(b).join(a));
+      }
+    }
+    return variantes.slice(0, 6);
+  }
+
+  function construirConsulta(valor) {
+    searchRaw = (valor || '').trim();
+    searchNorm = normalizarBusqueda(valor);
+    searchVariantes = [];
+    if (!searchNorm) return;
+    const variantes = variantesDeConsulta(searchNorm);
+    for (let i = 0; i < variantes.length; i++) {
+      const tokens = variantes[i].split(' ').filter(function (t) { return t.length >= 2; });
+      if (tokens.length) searchVariantes.push(tokens);
+    }
+  }
+
+  function buscando() {
+    return searchVariantes.length > 0;
+  }
+
+  // hayPad = ' ' + data-search → indexOf(' ' + token) exige inicio de palabra
+  // (así "rol" no casa dentro de "control" y "escandall" sí casa con "escandallos").
+  function tokenEn(hayPad, token) {
+    if (hayPad.indexOf(' ' + token) !== -1) return true;
+    if (token.length < 3) return false;
+    for (let i = 0; i < GRUPOS_SINONIMOS.length; i++) {
+      const grupo = GRUPOS_SINONIMOS[i];
+      let dispara = false;
+      for (let j = 0; j < grupo.length; j++) {
+        if (grupo[j].indexOf(token) === 0) { dispara = true; break; }
+      }
+      if (!dispara) continue;
+      for (let k = 0; k < grupo.length; k++) {
+        if (hayPad.indexOf(' ' + grupo[k]) !== -1) return true;
+      }
+    }
+    return false;
+  }
+
+  function coincideTexto(card) {
+    if (!buscando()) return true;
+    const hayPad = ' ' + (card.dataset.search || '');
+    for (let i = 0; i < searchVariantes.length; i++) {
+      const tokens = searchVariantes[i];
+      let todos = true;
+      for (let j = 0; j < tokens.length; j++) {
+        if (!tokenEn(hayPad, tokens[j])) { todos = false; break; }
+      }
+      if (todos) return true;
+    }
+    return false;
+  }
+
+  function coincideTag(card) {
     if (activeTag === 'all') return true;
     return (card.dataset.tags || '').split(' ').includes(activeTag);
+  }
+
+  function matches(card) {
+    return coincideTag(card) && coincideTexto(card);
+  }
+
+  // Conteos SIN tocar el DOM. `global` ignora el chip a propósito: es el que dice si el
+  // producto EXISTE en la tienda, y es el que se registra (un 0 causado por el filtro no
+  // es demanda no cubierta, es un filtro puesto).
+  function contar() {
+    let global = 0;
+    let filtrado = 0;
+    for (let i = 0; i < prodCards.length; i++) {
+      if (!coincideTexto(prodCards[i])) continue;
+      global += 1;
+      if (coincideTag(prodCards[i])) filtrado += 1;
+    }
+    let coming = 0;
+    for (let i = 0; i < comingCards.length; i++) if (matches(comingCards[i])) coming += 1;
+    return { global: global, filtrado: filtrado, coming: coming };
   }
 
   function updateTagButtons() {
@@ -1488,13 +1824,17 @@ const breadcrumbSchema = {
   }
 
   function apply() {
+    const enBusqueda = buscando();
     const matching = prodCards.filter(matches);
-    prodCards.forEach((c) => c.classList.add('hidden'));
-    matching.slice(0, visibleCount).forEach((c) => c.classList.remove('hidden'));
-
     const total = matching.length;
-    const showing = Math.min(visibleCount, total);
-    const hasMore = visibleCount < total;
+    // Con búsqueda activa se enseñan TODOS los resultados (la paginación se aparca).
+    const limite = enBusqueda ? total : visibleCount;
+
+    prodCards.forEach((c) => c.classList.add('hidden'));
+    matching.slice(0, limite).forEach((c) => c.classList.remove('hidden'));
+
+    const showing = Math.min(limite, total);
+    const hasMore = !enBusqueda && visibleCount < total;
 
     if (productsSection) productsSection.classList.toggle('hidden', total === 0);
     if (loadMoreBlock) {
@@ -1507,9 +1847,354 @@ const breadcrumbSchema = {
     const matchingComing = comingCards.filter(matches);
     comingCards.forEach((c) => c.classList.toggle('hidden', !matches(c)));
     if (comingSection) comingSection.classList.toggle('hidden', matchingComing.length === 0);
-    if (noResults) noResults.classList.toggle('hidden', !(total === 0 && matchingComing.length === 0));
+
+    // Cuántos productos casarían con el texto SIN el chip. Si hay alguno, el 0 de arriba lo
+    // provoca la categoría, no el catálogo: se ofrece quitar el filtro en vez de pedir que
+    // nos cuente qué buscaba (el producto existe y está a un clic).
+    const sinChip = enBusqueda && activeTag !== 'all' ? prodCards.filter(coincideTexto).length : total;
+    const vacio = total === 0 && matchingComing.length === 0;
+    const fueraDeCategoria = vacio && enBusqueda && sinChip > 0;
+
+    // Sin texto → panel clásico del filtro por tag. Con texto → panel del buscador.
+    if (noResults) noResults.classList.toggle('hidden', !(vacio && !enBusqueda));
+    if (searchFuera) searchFuera.classList.toggle('hidden', !fueraDeCategoria);
+    if (searchEmpty) searchEmpty.classList.toggle('hidden', !(vacio && enBusqueda && !fueraDeCategoria));
+
+    if (fueraDeCategoria && searchFueraTxt) {
+      const etiqueta = etiquetaTag[activeTag] || activeTag;
+      searchFueraTxt.textContent =
+        (sinChip === 1 ? '1 producto coincide' : sinChip + ' productos coinciden') +
+        ' con «' + consultaVisible() + '», pero están fuera de la categoría ' + etiqueta + '.';
+    }
+    if (vacio && enBusqueda && !fueraDeCategoria) {
+      if (searchEmptyQ) searchEmptyQ.textContent = consultaVisible();
+      // El mensaje de WhatsApp por defecto es de SOPORTE POST-VENTA ("ayuda con mi compra"),
+      // que no es lo que quiere decir quien no ha encontrado nada. Se reescribe con lo que
+      // buscaba, que además es la única información valiosa de ese contacto.
+      if (waEmpty) {
+        waEmpty.href = WA_BASE + encodeURIComponent(
+          'Hola, busqué «' + searchRaw.slice(0, 80) + '» en la tienda y no encontré nada. ¿Tenéis algo parecido?',
+        );
+      }
+    }
+
+    actualizarEstado(total, matchingComing.length, enBusqueda);
   }
 
+  // Lo tecleado se pinta recortado: una consulta larguísima no debe descuadrar la línea.
+  // Además se parten los tokens interminables (una URL pegada, "aaaaaa…"): sin espacios,
+  // 60 caracteres son ~530 px contra los ~280 px útiles de un móvil de 360 px, y el CSS
+  // por sí solo no evita que el panel se desborde en navegadores viejos.
+  function consultaVisible() {
+    const partido = searchRaw.split(/(\s+)/).map(function (t) {
+      return t.length > 24 ? t.slice(0, 24) + '…' : t;
+    }).join('');
+    return partido.length > 60 ? partido.slice(0, 60) + '…' : partido;
+  }
+
+  // El contador visible se actualiza al instante; el ANUNCIO al lector de pantalla va con
+  // su propio retardo (600 ms) y solo si el texto cambió de verdad — si no, cada pulsación
+  // que no altera el conteo encola un aviso que pisa al anterior.
+  let tAnuncio = 0;
+  function actualizarEstado(total, coming, enBusqueda) {
+    if (!searchStatus) return;
+    const q = consultaVisible();
+    let texto;
+    if (!enBusqueda) {
+      texto = total === 1 ? '1 producto' : total + ' productos';
+    } else if (total === 0) {
+      texto = 'Ningún producto coincide con «' + q + '»';
+    } else if (total === 1) {
+      texto = '1 producto coincide con «' + q + '»';
+    } else {
+      texto = total + ' productos coinciden con «' + q + '»';
+    }
+    if (enBusqueda && coming > 0) texto += ' · ' + coming + ' en desarrollo';
+    if (searchStatus.textContent === texto) return;
+    searchStatus.textContent = texto;
+    if (!searchAnnounce) return;
+    clearTimeout(tAnuncio);
+    tAnuncio = setTimeout(function () {
+      if (searchAnnounce.textContent !== texto) searchAnnounce.textContent = texto;
+    }, 600);
+  }
+
+  // ── Registro anónimo de búsquedas (nunca bloquea la UI; si falla, silencio) ──────
+  const LOG_URL = '/.netlify/functions/log-search';
+  const LOG_KEY = 'pd-busquedas-registradas';
+  let tRegistro = 0;
+
+  function listaRegistradas() {
+    try {
+      const guardado = sessionStorage.getItem(LOG_KEY) || '';
+      return guardado ? guardado.split('|') : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  // Duplicada = la misma consulta, o una de la que ésta es PREFIJO. Tecleando en móvil,
+  // una pausa de 1,2 s a media palabra registraba "escandall" y luego "escandallos" como
+  // dos consultas distintas: dos filas en el informe y un falso "sin resultados".
+  function yaRegistrada(q) {
+    const lista = listaRegistradas();
+    for (let i = 0; i < lista.length; i++) {
+      if (lista[i] === q || lista[i].indexOf(q) === 0) return true;
+    }
+    return false;
+  }
+
+  function marcarRegistrada(q) {
+    try {
+      // Al registrar la consulta larga se olvidan sus prefijos: si el visitante borra
+      // letras y vuelve a "escandall", ya no se registra otra vez.
+      const lista = listaRegistradas().filter(function (p) { return q.indexOf(p) !== 0; });
+      lista.push(q);
+      sessionStorage.setItem(LOG_KEY, lista.slice(-60).join('|'));
+    } catch (e) {
+      /* modo privado o storage bloqueado: se pierde el dedup, nada más */
+    }
+  }
+
+  function enviarLog(datos) {
+    try {
+      const cuerpo = JSON.stringify(datos);
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(LOG_URL, new Blob([cuerpo], { type: 'application/json' }));
+      } else if (window.fetch) {
+        fetch(LOG_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: cuerpo,
+          keepalive: true,
+        }).catch(() => {});
+      }
+    } catch (e) {
+      /* el buscador nunca depende del backend */
+    }
+  }
+
+  function registrarBusqueda() {
+    if (!searchInput) return;
+    const q = searchRaw.slice(0, 120);
+    if (searchNorm.length < 3) return;
+    if (yaRegistrada(searchNorm)) return;
+    marcarRegistrada(searchNorm);
+    // Se cuenta AQUÍ, no se lee el último render: el registro puede dispararse antes de
+    // que el debounce de 200 ms haya aplicado el filtro (blur, Enter).
+    const c = contar();
+    enviarLog({
+      q: q,
+      n: c.global,          // sin el chip: el dato que dice si el producto existe
+      n_filtrado: c.filtrado, // con el chip puesto (lo que vio en pantalla)
+      coming: c.coming,
+      tag: activeTag === 'all' ? '' : activeTag,
+      lang: 'es',
+      path: location.pathname,
+      ts: Date.now(),
+      website: askWebsite && askWebsite.value ? askWebsite.value : '',
+    });
+  }
+
+  function programarRegistro() {
+    clearTimeout(tRegistro);
+    tRegistro = setTimeout(registrarBusqueda, 1200);
+  }
+
+  // ── Estado visual del buscador ───────────────────────────────────────────────────
+  function sincronizarBotonLimpiar() {
+    if (!searchClear || !searchInput) return;
+    const hayTexto = searchInput.value.length > 0;
+    searchClear.classList.toggle('hidden', !hayTexto);
+    searchClear.classList.toggle('flex', hayTexto);
+  }
+
+  function reiniciarPanelPregunta() {
+    if (askThanks && !askThanks.classList.contains('hidden')) {
+      askThanks.classList.add('hidden');
+      if (askToggle) askToggle.classList.remove('hidden');
+      if (askDetalle) askDetalle.value = '';
+      if (askEmail) askEmail.value = '';
+    }
+    if (askHint) askHint.classList.add('hidden');
+    marcarInvalido(false);
+  }
+
+  let tFiltro = 0;
+  // Clave de la búsqueda EFECTIVA: '' cuando lo tecleado no llega a filtrar nada
+  // (`construirConsulta` descarta los tokens de menos de 2 caracteres, así que «5», «a»
+  // o «€» dejan la lista igual que si no hubiera búsqueda).
+  let claveAplicada = '';
+  function claveBusqueda() {
+    return buscando() ? searchNorm : '';
+  }
+  function filtrar() {
+    construirConsulta(searchInput ? searchInput.value : '');
+    // La paginación se reinicia SOLO si la búsqueda efectiva cambia. Antes se reiniciaba
+    // siempre: el visitante pulsaba «Cargar más» hasta ver los 46, tecleaba una letra y
+    // el grid colapsaba a 12 con el botón de vuelta, mientras el contador seguía diciendo
+    // «46 productos». Nada explicaba el colapso.
+    const clave = claveBusqueda();
+    if (clave !== claveAplicada) visibleCount = PER_PAGE;
+    claveAplicada = clave;
+    reiniciarPanelPregunta();
+    apply();
+  }
+
+  function aplicarBusqueda() {
+    filtrar();
+    programarRegistro();
+  }
+
+  function limpiarBusqueda(devolverFoco) {
+    if (searchInput) searchInput.value = '';
+    clearTimeout(tFiltro);
+    construirConsulta('');
+    visibleCount = PER_PAGE;
+    claveAplicada = '';
+    sincronizarBotonLimpiar();
+    reiniciarPanelPregunta();
+    apply();
+    if (devolverFoco && searchInput) searchInput.focus();
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      sincronizarBotonLimpiar();
+      clearTimeout(tFiltro);
+      tFiltro = setTimeout(aplicarBusqueda, 200);
+    });
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        limpiarBusqueda(true);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        clearTimeout(tFiltro);
+        filtrar();
+        clearTimeout(tRegistro);
+        registrarBusqueda();
+      }
+    });
+    // OJO: aquí NO se re-filtra. `blur` se dispara en el mousedown, antes del mouseup: si
+    // el grid se re-renderizara ahora, la card sobre la que el visitante está pinchando
+    // podría ocultarse o moverse y el clic se perdería (o abriría otro producto).
+    // El registro sí puede correr: `contar()` no toca el DOM.
+    searchInput.addEventListener('blur', () => {
+      if (!searchInput.value.trim()) return;
+      if (searchInput.value.trim() !== searchRaw) construirConsulta(searchInput.value);
+      clearTimeout(tRegistro);
+      registrarBusqueda();
+    });
+  }
+
+  searchClear?.addEventListener('click', () => limpiarBusqueda(true));
+
+  // Atajo: "/" enfoca el buscador (salvo si ya se está escribiendo en otro campo).
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || !searchInput) return;
+    const destino = e.target;
+    const etiqueta = destino && destino.tagName ? destino.tagName.toLowerCase() : '';
+    if (etiqueta === 'input' || etiqueta === 'textarea' || etiqueta === 'select') return;
+    if (destino && destino.isContentEditable) return;
+    e.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  });
+
+  // Quitar el chip sin perder lo tecleado (panel "están fuera de la categoría").
+  searchFueraBtn?.addEventListener('click', () => {
+    activeTag = 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+    if (searchInput) searchInput.focus();
+  });
+
+  // "Ver el catálogo completo" desde el panel de vacío.
+  verTodos?.addEventListener('click', () => {
+    activeTag = 'all';
+    updateTagButtons();
+    limpiarBusqueda(true);
+  });
+
+  // ── "Dinos qué buscabas" (solo se ve cuando la búsqueda no devuelve nada) ────────
+  function marcarInvalido(mal) {
+    [askDetalle, askEmail].forEach((el) => {
+      if (!el) return;
+      if (mal) el.setAttribute('aria-invalid', 'true');
+      else el.removeAttribute('aria-invalid');
+    });
+  }
+
+  function avisar(texto, foco) {
+    if (askHint) {
+      askHint.textContent = texto;
+      askHint.classList.remove('hidden');
+    }
+    marcarInvalido(true);
+    if (foco) foco.focus();
+  }
+
+  askToggle?.addEventListener('click', () => {
+    if (askForm) askForm.classList.remove('hidden');
+    askToggle.classList.add('hidden');
+    if (askDetalle) askDetalle.focus();
+  });
+
+  function enviarPeticion() {
+    const detalle = (askDetalle && askDetalle.value ? askDetalle.value : '').trim().slice(0, 500);
+    const email = (askEmail && askEmail.value ? askEmail.value : '').trim().slice(0, 120);
+    if (!detalle && !email) {
+      avisar('Escribe qué necesitas o déjanos tu email para poder avisarte.', askDetalle);
+      return;
+    }
+    // Validación nativa: funciona igual en un input suelto que dentro de un <form>. Sin
+    // esto, "asdf" pasaba como email, se decía "Gracias" y quedaba un contacto inservible.
+    if (email && askEmail && typeof askEmail.checkValidity === 'function' && !askEmail.checkValidity()) {
+      avisar('Revisa el email: parece que le falta algo.', askEmail);
+      return;
+    }
+    if (askHint) askHint.classList.add('hidden');
+    marcarInvalido(false);
+    const c = contar();
+    enviarLog({
+      q: searchRaw.slice(0, 120),
+      n: c.global,
+      n_filtrado: c.filtrado,
+      coming: c.coming,
+      tag: activeTag === 'all' ? '' : activeTag,
+      lang: 'es',
+      path: location.pathname,
+      ts: Date.now(),
+      detalle: detalle,
+      email: email,
+      sin_resultados: true,
+      // El evento del formulario repite una `q` que ya se registró 1,2 s antes: lo nuevo
+      // son el detalle y el email. `origen` permite al informe no contarlo dos veces.
+      origen: 'form',
+      website: askWebsite && askWebsite.value ? askWebsite.value : '',
+    });
+    // El foco va a la confirmación ANTES de ocultar el formulario: si se oculta primero,
+    // el botón enfocado desaparece y el foco cae a <body> (el usuario de teclado acaba al
+    // principio del documento y no se entera de que su petición salió).
+    if (askThanks) {
+      askThanks.classList.remove('hidden');
+      askThanks.focus();
+    }
+    if (askForm) askForm.classList.add('hidden');
+  }
+
+  askSend?.addEventListener('click', enviarPeticion);
+  // Sin <form> no hay envío con Enter: sin esto, el teclado se queda sin salida.
+  askEmail?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); enviarPeticion(); }
+  });
+  askDetalle?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); enviarPeticion(); }
+  });
+
+  // ── Chips, paginación y reset ────────────────────────────────────────────────────
   tagBtns.forEach((btn) => btn.addEventListener('click', () => {
     activeTag = btn.dataset.tag || 'all';
     visibleCount = PER_PAGE;
@@ -1520,10 +2205,19 @@ const breadcrumbSchema = {
   loadMoreBtn?.addEventListener('click', () => { visibleCount += PER_PAGE; apply(); });
   document.getElementById('pd-reset')?.addEventListener('click', () => {
     activeTag = 'all';
+    if (searchInput) searchInput.value = '';
+    construirConsulta('');
     visibleCount = PER_PAGE;
+    claveAplicada = '';
+    sincronizarBotonLimpiar();
+    reiniciarPanelPregunta();
     updateTagButtons();
     apply();
   });
 
+  // Estado inicial (el navegador puede restaurar el valor del input al volver atrás).
+  construirConsulta(searchInput ? searchInput.value : '');
+  claveAplicada = claveBusqueda();
+  sincronizarBotonLimpiar();
   apply();
 </script>

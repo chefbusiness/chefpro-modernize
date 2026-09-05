@@ -1,0 +1,32 @@
+{
+  "_doc": "FUENTE ÚNICA de los sinónimos del buscador del hub de productos digitales. La leen TRES consumidores: (1) el frontmatter de ProductosDigitalesHubPage.astro (índice data-search + gate de grupos huérfanos), (2) el <script> del cliente (matcher), y (3) scripts/productos-digitales/buscador-report.py (cruce del informe de demanda). Si vives esto en dos sitios, el buscador deja de encontrar cosas SIN error y sin diff que cante.",
+
+  "_doc_grupos": "Sinónimos de UNA palabra. Si lo tecleado es prefijo de algún miembro (≥3 letras), basta con que la card contenga CUALQUIER miembro del grupo. Un grupo cuyos miembros no aparecen en ningún data-search está MUERTO: el gate del frontmatter aborta el build si eso ocurre (ver ALIAS_BUSQUEDA para darle cuerpo a un término que no está en ningún producto).",
+  "grupos": [
+    ["escandallo", "escandallos", "costeo", "costeos", "coste", "costes", "costo", "costos"],
+    ["appcc", "haccp"],
+    ["manager", "gerente", "encargado", "administrador"],
+    ["cuadrante", "cuadrantes", "rol", "roles", "horario", "horarios"],
+    ["nomina", "nominas", "planilla", "planillas"],
+    ["sala", "salon"],
+    ["inventario", "inventarios", "stock", "stocks", "almacen", "existencias"],
+    ["rentabilidad", "margen", "margenes", "beneficio", "beneficios"]
+  ],
+
+  "_doc_frases": "Sinónimos de VARIAS palabras: se expanden sobre la consulta entera ANTES de trocear. También resuelven las grafías pegadas ('foodcost', 'foodtruck'), que de otro modo no prefijan ninguna palabra del índice y devuelven 0.",
+  "frases": [
+    ["corte de caja", "arqueo"],
+    ["food cost", "costo de alimentos"],
+    ["foodcost", "food cost"],
+    ["foodtruck", "food truck"]
+  ],
+
+  "_doc_alias": "Términos EXTRA que se añaden al data-search de un producto concreto (clave = slug). Sirven para dos cosas: vocabulario de Hispanoamérica y palabras que el visitante teclea pero que no aparecen literalmente en la ficha ('stock' para el kit de inventario, 'rentabilidad' para la Guía Food Cost). Sin esto, un grupo de sinónimos correcto NO puede disparar: el término no está en ningún índice.",
+  "alias": {
+    "/kit-inventario": "stock stocks existencias almacen rotacion",
+    "/kit-gestion-personal": "nominas planillas costes de personal",
+    "/guia-food-cost-ingenieria-menu": "rentabilidad margenes beneficio precios de carta",
+    "/kit-escandallos": "rentabilidad margenes precios de carta",
+    "/kit-plan-financiero": "rentabilidad margenes beneficio tesoreria"
+  }
+}
