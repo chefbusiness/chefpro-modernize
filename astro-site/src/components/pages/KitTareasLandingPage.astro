@@ -11,6 +11,12 @@
 // (acordeón FAQ, marquee de testimonios, formulario "¿ya compraste?") en <script> vanilla.
 import type { KitTareasData } from '../../data/productos/tareas/types';
 import Icon from '../Icon.astro';
+// Segunda puerta de pago (NOWPayments), piloto 2026-09-05. Stripe sigue siendo el CTA
+// dorado PRINCIPAL; esto es el botón secundario para quien no tiene tarjeta internacional.
+// Se pinta SOLO en los productos del allowlist `CRYPTO_PRODUCTS` (env, scope builds): en
+// las demás landings de la línea el componente no emite ni HTML ni CSS ni JS.
+import CryptoPayButton from '../CryptoPayButton.astro';
+import { cryptoEnabledFor } from '../../lib/crypto-checkout';
 
 interface Props {
   data: KitTareasData;
@@ -22,6 +28,17 @@ interface Props {
 const { data, stripeLink } = Astro.props;
 
 const canonical = `https://aichef.pro/${data.slug}`;
+
+// ---- Segunda puerta de pago (cripto) ----
+// `cryptoEnabled` decide también la nota de devoluciones bajo la garantía. El nombre que
+// ve el comprador en el diálogo es el TÍTULO DEL HERO (titlePre+titleGold) más el oficio
+// de la segunda línea, recortado en el guion largo para no arrastrar la coletilla
+// descriptiva: "Kit de Tareas Recurrentes — Cafetería / Brunch". Los 19 productos de la
+// línea comparten titlePre+titleGold, así que sin el oficio el diálogo de pago no diría
+// QUÉ se está comprando. Si un subtitleLine no lleva guion largo, se usa entero (todos
+// los que no lo llevan son cortos: "Food Truck", "Panadería / Obrador"…).
+const cryptoEnabled = cryptoEnabledFor(data.slug);
+const cryptoProductName = `${data.hero.titlePre}${data.hero.titleGold} — ${data.hero.subtitleLine.split('—')[0].trim()}`;
 
 // Los dos chips grises del AuthorSection. Default = variante acentuada (~17 productos);
 // dark-kitchen / restaurante-creativo pasan la variante tilde-free vía data.authorBadges.
@@ -491,6 +508,15 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex flex-col items-center gap-2 mt-5">
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
+        {/* Segunda puerta: va DESPUÉS del sello "Powered by Stripe" para que el sello siga
+            leyéndose como parte del CTA de tarjeta y no del de cripto. */}
+        <CryptoPayButton
+          productId={data.slug}
+          productName={cryptoProductName}
+          priceLabel={data.pricing.price}
+          landingPath={`/${data.slug}`}
+          variant="buybox"
+        />
       </div>
     </div>
   </section>
@@ -503,6 +529,11 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Garantía de Satisfacción <span class="text-[#FFD700]">100%</span></h2>
         <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">{data.guarantee.text}</p>
       </div>
+      {cryptoEnabled && (
+        <p class="text-gray-500 text-sm leading-relaxed -mt-6 mb-10 max-w-2xl mx-auto">
+          Si pagas con criptomonedas, la devolución se gestiona manualmente y en la misma moneda y red del pago.
+        </p>
+      )}
       <div class="kt-fade" style="transition-delay:150ms">
         <div class="grid grid-cols-3 gap-6">
           {data.guarantee.stats.map((s) => (
@@ -569,6 +600,13 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex flex-col items-center gap-2 mt-5">
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
+        <CryptoPayButton
+          productId={data.slug}
+          productName={cryptoProductName}
+          priceLabel={data.pricing.price}
+          landingPath={`/${data.slug}`}
+          variant="cta"
+        />
       </div>
     </div>
   </section>

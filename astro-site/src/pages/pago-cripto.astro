@@ -1,0 +1,288 @@
+---
+/**
+ * /pago-cripto — página de vuelta del comprador que ha pagado en cripto (NOWPayments).
+ *
+ * `success_url` de la factura: /pago-cripto?o=<orderId> (y `partially_paid_url` añade
+ * `&estado=parcial`). No es una página de "gracias" estática: la entrega la dispara el IPN
+ * cuando la red confirma, así que aquí se SONDEA el estado del pedido y se le cuenta al
+ * comprador qué está pasando, en cristiano y sin prometer nada que no haya ocurrido.
+ *
+ * Decisiones:
+ *  - `noindex` (URL privada de dinero) + excluida del sitemap en astro.config.mjs.
+ *  - Todos los estados van escritos en el HTML y se muestran/ocultan con el atributo
+ *    `hidden`: nada de construir clases desde JS, que Tailwind no las vería en el build.
+ *  - El botón flotante de WhatsApp lo pinta BaseLayout (NO se pasa whatsapp={false}):
+ *    esta es justo una página donde el comprador puede necesitar soporte.
+ *  - Sin formulario de reenvío propio: si han pasado 30 minutos, se le manda al de la
+ *    landing («¿Ya compraste?»), que es el que ya existe y ya funciona.
+ *  - Cadencia del sondeo: 5 s los primeros 15 minutos, 30 s hasta la hora, y para. Un
+ *    pago en TRC-20 confirma en menos de un minuto; uno en Bitcoin con red cargada puede
+ *    tardar bastante más, y quedarse sondeando toda la tarde no aporta nada: el acceso
+ *    llega por email igualmente.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Confirmando tu pago cripto | AI Chef Pro';
+const description =
+  'Estado de tu pago en criptomonedas en AI Chef Pro. En cuanto la red confirme te enviamos el enlace de acceso a tu email.';
+---
+
+<BaseLayout title={title} description={description} basePath="/pago-cripto" noindex>
+  <style is:inline>
+    /* El atributo `hidden` lo respeta SOLO la hoja del navegador, y cualquier utilidad de
+       Tailwind que fije `display` (flex, inline-block…) la pisa: sin esta regla el spinner
+       (`flex`) y el botón de acceso (`inline-block`) seguirían viéndose al ocultarlos.
+       No hay regla `[hidden]` en global.css — comprobado. */
+    [hidden] { display: none !important; }
+  </style>
+  <div class="min-h-screen bg-[#0a0a0a] px-4 py-10 md:py-16">
+    <div class="max-w-xl mx-auto pb-32">
+      <div class="flex justify-center mb-8">
+        <a href="/" class="inline-flex items-center px-5 py-2.5 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-7 md:h-8 w-auto" />
+        </a>
+      </div>
+
+      <h1 class="text-2xl md:text-3xl font-extrabold text-white text-center mb-3">
+        Confirmando tu <span class="text-[#FFD700]">pago</span>
+      </h1>
+      <p class="text-gray-500 text-sm text-center mb-8">
+        Esta página se actualiza sola. No hace falta que la recargues.
+      </p>
+
+      {/* ---- Tarjeta de estado ---- */}
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+        <div class="flex justify-center mb-5" data-spinner>
+          <span class="block w-8 h-8 rounded-full border-2 border-[#FFD700]/25 border-t-[#FFD700] animate-spin"></span>
+        </div>
+
+        <div data-state="waiting">
+          <p class="text-white font-semibold text-lg mb-2">Aún no hemos detectado tu pago</p>
+          <p class="text-gray-400 leading-relaxed">
+            Si acabas de pagar, dale un minuto. En cuanto la red nos lo confirme, te enviamos el enlace de acceso a tu email.
+          </p>
+        </div>
+
+        <div data-state="confirming" hidden>
+          <p class="text-white font-semibold text-lg mb-2">Pago detectado</p>
+          <p class="text-gray-400 leading-relaxed">
+            Esperando confirmaciones de la red — normalmente unos minutos (en Bitcoin puede tardar más). Te enviaremos el enlace de acceso a tu email en cuanto se confirme; puedes cerrar esta página.
+          </p>
+        </div>
+
+        <div data-state="finalizing" hidden>
+          <p class="text-white font-semibold text-lg mb-2">Pago confirmado</p>
+          <p class="text-gray-400 leading-relaxed">
+            Estamos preparando tu acceso y enviándolo a tu email. Tarda unos segundos.
+          </p>
+        </div>
+
+        <div data-state="done" hidden>
+          <p class="text-white font-semibold text-lg mb-2">¡Pago confirmado!</p>
+          <p class="text-gray-400 leading-relaxed mb-6">
+            Te hemos enviado el acceso a <span class="text-gray-200 font-medium" data-email>tu email</span>. Es un enlace mágico: ábrelo y entras directamente.
+          </p>
+          <a
+            href="#"
+            data-access
+            hidden
+            class="inline-block w-full text-center px-8 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            Abrir mi acceso
+          </a>
+        </div>
+
+        <div data-state="partial" hidden>
+          <p class="text-white font-semibold text-lg mb-2">Hemos recibido un pago incompleto</p>
+          <p class="text-gray-400 leading-relaxed">
+            No se entrega automáticamente: escríbenos con tu referencia de pedido y lo resolvemos contigo.
+          </p>
+        </div>
+
+        <div data-state="expired" hidden>
+          <p class="text-white font-semibold text-lg mb-2">La factura ha caducado</p>
+          <p class="text-gray-400 leading-relaxed">
+            Ha pasado el plazo sin recibir el pago. No se te ha cobrado nada: puedes volver a la página del producto y empezar de nuevo, con tarjeta o con cripto.
+          </p>
+        </div>
+
+        <div data-state="failed" hidden>
+          <p class="text-white font-semibold text-lg mb-2">El pago no se ha completado</p>
+          <p class="text-gray-400 leading-relaxed">
+            Puedes volver a intentarlo desde la página del producto. Si crees que el importe salió de tu cartera, escríbenos con tu referencia antes de pagar otra vez.
+          </p>
+        </div>
+
+        <div data-state="refunded" hidden>
+          <p class="text-white font-semibold text-lg mb-2">Este pago se ha devuelto</p>
+          <p class="text-gray-400 leading-relaxed">
+            Si crees que es un error, escríbenos con tu referencia de pedido y lo revisamos.
+          </p>
+        </div>
+
+        <div data-state="notfound" hidden>
+          <p class="text-white font-semibold text-lg mb-2">No encontramos este pedido</p>
+          <p class="text-gray-400 leading-relaxed">
+            Revisa que el enlace esté completo. Si acabas de pagar, escríbenos con tu referencia y lo resolvemos.
+          </p>
+        </div>
+
+        <div data-state="missing" hidden>
+          <p class="text-white font-semibold text-lg mb-2">Falta la referencia del pedido</p>
+          <p class="text-gray-400 leading-relaxed">
+            El enlace ha llegado sin el identificador del pedido. Si acabas de pagar, escríbenos y lo localizamos por tu email de compra.
+          </p>
+        </div>
+
+        <div data-state="timeout" hidden>
+          <p class="text-white font-semibold text-lg mb-2">Dejamos de comprobarlo automáticamente</p>
+          <p class="text-gray-400 leading-relaxed">
+            Si ya has pagado, el acceso te llega igualmente por email en cuanto la red confirme. Recarga esta página para volver a comprobarlo, o escríbenos con tu referencia.
+          </p>
+        </div>
+      </div>
+
+      {/* ---- Referencia + soporte (siempre visibles) ---- */}
+      <div class="mt-6 bg-white/[0.03] border border-white/10 rounded-2xl p-5 text-center">
+        <p class="text-gray-300 text-sm">
+          Referencia de tu pedido:
+          <code class="text-[#FFD700] font-mono text-xs md:text-sm break-all" data-order>—</code>
+          — guárdala.
+        </p>
+        <a
+          href="mailto:info@aichef.pro"
+          data-mailto
+          class="inline-block mt-3 text-sm text-gray-400 underline underline-offset-4 hover:text-[#FFD700] transition-colors"
+        >
+          Escríbenos a info@aichef.pro
+        </a>
+      </div>
+
+      {/* ---- Secundario: reenvío del acceso ---- */}
+      <div class="mt-8 border-t border-white/10 pt-6 text-center">
+        <p class="text-gray-300 text-sm font-semibold mb-1">¿Han pasado más de 30 minutos y no te ha llegado?</p>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Entra en
+          <a href="/productos-digitales" data-landing class="text-[#FFD700] underline underline-offset-4 hover:text-[#FFD700]/80 transition-colors">la página del producto</a>
+          y usa el formulario «¿Ya compraste?» del final: te reenviamos el enlace de acceso al email de la compra.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // Sondeo del estado del pedido cripto. Sin dependencias: la página es estática y esto
+  // es lo único que corre en cliente.
+  const params = new URLSearchParams(window.location.search);
+  const orderId = (params.get('o') || '').trim();
+  const estadoParam = (params.get('estado') || '').trim().toLowerCase();
+
+  const blocks = Array.from(document.querySelectorAll<HTMLElement>('[data-state]'));
+  const spinner = document.querySelector<HTMLElement>('[data-spinner]');
+  const emailEl = document.querySelector<HTMLElement>('[data-email]');
+  const accessEl = document.querySelector<HTMLAnchorElement>('[data-access]');
+  const landingEl = document.querySelector<HTMLAnchorElement>('[data-landing]');
+  const mailtoEl = document.querySelector<HTMLAnchorElement>('[data-mailto]');
+
+  // Estados en los que ya no tiene sentido seguir preguntando.
+  const TERMINAL = new Set(['done', 'partial', 'expired', 'failed', 'refunded', 'notfound', 'missing']);
+  // Estados "en curso": son los únicos que el aviso de fin de sondeo puede sustituir.
+  const EN_CURSO = new Set(['waiting', 'confirming', 'finalizing']);
+
+  let current = 'waiting';
+
+  function show(state: string) {
+    current = state;
+    for (const block of blocks) block.hidden = block.dataset.state !== state;
+    if (spinner) spinner.hidden = TERMINAL.has(state) || state === 'timeout';
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-order]').forEach((el) => {
+    el.textContent = orderId || '—';
+  });
+  if (mailtoEl) {
+    mailtoEl.href = orderId
+      ? 'mailto:info@aichef.pro?subject=' + encodeURIComponent('Pedido cripto ' + orderId)
+      : 'mailto:info@aichef.pro?subject=' + encodeURIComponent('Pedido cripto');
+  }
+
+  // Vista inicial: si NOWPayments nos devuelve por su partially_paid_url, decirlo ya, sin
+  // esperar a la primera respuesta del backend.
+  show(estadoParam === 'parcial' ? 'partial' : 'waiting');
+
+  if (!orderId) {
+    show('missing');
+  } else {
+    const inicio = Date.now();
+
+    /** 5 s los primeros 15 min · 30 s hasta la hora · después se deja de sondear. */
+    function siguienteEspera(): number | null {
+      const minutos = (Date.now() - inicio) / 60000;
+      if (minutos < 15) return 5000;
+      if (minutos < 60) return 30000;
+      return null;
+    }
+
+    function programar() {
+      const espera = siguienteEspera();
+      if (espera === null) {
+        if (EN_CURSO.has(current)) show('timeout');
+        return;
+      }
+      window.setTimeout(consultar, espera);
+    }
+
+    function aplicar(data: Record<string, any>) {
+      const status = String(data.status || '').toLowerCase();
+      const delivered = data.delivered === true;
+
+      if (data.emailMasked && emailEl) emailEl.textContent = String(data.emailMasked);
+      if (data.productId && landingEl) landingEl.href = '/' + String(data.productId);
+
+      if (status === 'finished' && delivered) {
+        if (accessEl && data.accessUrl) {
+          accessEl.href = String(data.accessUrl);
+          accessEl.hidden = false;
+        }
+        show('done');
+        return;
+      }
+      if (status === 'finished') return show('finalizing');
+      if (status === 'partially_paid') return show('partial');
+      if (status === 'expired') return show('expired');
+      if (status === 'failed') return show('failed');
+      if (status === 'refunded') return show('refunded');
+      if (status === 'confirming' || status === 'confirmed' || status === 'sending') {
+        return show('confirming');
+      }
+      // 'created', 'waiting' y cualquier estado que no conozcamos: seguimos esperando.
+      return show('waiting');
+    }
+
+    async function consultar() {
+      try {
+        const res = await fetch(
+          '/.netlify/functions/crypto-order-status?o=' + encodeURIComponent(orderId),
+          { headers: { Accept: 'application/json' } },
+        );
+        // 404 = no existe · 400 invalid_order = la referencia del enlace no tiene la
+        // forma de un pedido nuestro. En los dos casos no hay nada que sondear.
+        if (res.status === 404 || res.status === 400) {
+          show('notfound');
+          return;
+        }
+        if (res.ok) {
+          const data = await res.json();
+          aplicar(data);
+          if (TERMINAL.has(current)) return;
+        }
+      } catch {
+        // Fallo de red puntual: no se le enseña al comprador, se reintenta.
+      }
+      programar();
+    }
+
+    consultar();
+  }
+</script>

@@ -1,5 +1,6 @@
 import type { Handler } from '@netlify/functions';
 import { validatePurchase } from '../shared/purchase-validation';
+import { abrirLibro, listOrdersByEmail, maskEmail } from '../shared/crypto-orders';
 
 // ── Product config ──────────────────────────────────────────────
 interface ProductConfig {
@@ -335,6 +336,58 @@ const PRODUCTS: Record<string, ProductConfig> = {
   },
 };
 
+// ── Envío del magic link ────────────────────────────────────────
+// Extraído del handler (2026-09-05) para que la ruta cripto reutilice EXACTAMENTE
+// el mismo email que la de Stripe. El HTML no se ha tocado ni un byte: es el
+// que había en línea en el handler, movido tal cual.
+async function enviarEmailAcceso(
+  emailNorm: string,
+  token: string,
+  config: ProductConfig,
+): Promise<{ ok: true } | { ok: false; status: number }> {
+  const magicLink = `https://aichef.pro${config.accessPath}?jwt=${token}`;
+
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+    },
+    body: JSON.stringify({
+      from: 'AI Chef Pro <noreply@contact.aichef.pro>',
+      to: emailNorm,
+      subject: config.emailSubject,
+      html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
+            <h1 style="color: #FFD700; font-size: 24px;">${config.emailTitle}</h1>
+            <p style="color: #333; line-height: 1.6;">
+              ${config.emailBody}
+            </p>
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
+                ${config.emailCta}
+              </a>
+            </div>
+            <p style="color: #666; font-size: 14px; line-height: 1.6;">
+              Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
+            </p>
+            <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
+            <p style="color: #999; font-size: 12px;">
+              AI Chef Pro · <a href="https://aichef.pro" style="color: #FFD700;">aichef.pro</a>
+            </p>
+          </div>
+        `,
+    }),
+  });
+
+  if (!res.ok) {
+    const errorBody = await res.text();
+    console.error(`Resend API error (${res.status}):`, errorBody);
+    return { ok: false, status: res.status };
+  }
+  return { ok: true };
+}
+
 // ── Handler ─────────────────────────────────────────────────────
 export const handler: Handler = async (event) => {
   const headers = {
@@ -366,15 +419,45 @@ export const handler: Handler = async (event) => {
     const productId = product && PRODUCTS[product] ? product : 'pro-prompts-ebook';
     const config = PRODUCTS[productId];
 
+    // El cliente teclea el email a mano en "¿Ya compraste?": normalizar espacios/mayúsculas.
+    const emailNorm = String(email).trim().toLowerCase();
+
+    // ── Ruta CRIPTO, primero (2026-09-05) ─────────────────────────────────
+    // Se consulta el libro de pedidos ANTES que Stripe y sin depender de
+    // PURCHASE_VALIDATION (spec PAGOS_CRYPTO_NOWPAYMENTS.md:176): quien pagó en
+    // cripto no tiene ninguna sesión de Stripe, así que la ruta de abajo le
+    // devolvería «No purchase found» aunque su compra esté entregada y cobrada.
+    // FAIL-SOFT a propósito: si Blobs no responde se sigue con Stripe — un
+    // comprador de tarjeta no puede quedarse sin su enlace porque falle el
+    // libro cripto, que es la vía minoritaria.
+    try {
+      const store = await abrirLibro(event);
+      const pedidos = await listOrdersByEmail(store, emailNorm);
+      const servido = pedidos.find((o) => o.delivered && o.productId === productId);
+      if (servido) {
+        const jwt = (await import('jsonwebtoken')).default;
+        const token = jwt.sign({ email: emailNorm, product: productId }, process.env.JWT_SECRET!, {
+          expiresIn: '365d',
+        });
+        const envio = await enviarEmailAcceso(emailNorm, token, config);
+        if (!envio.ok) {
+          return { statusCode: 500, headers, body: JSON.stringify({ error: `Email send failed: ${envio.status}` }) };
+        }
+        console.log(`[resend-access] reenvío CRIPTO: ${productId} → ${maskEmail(emailNorm)} (pedido ${servido.orderId})`);
+        return { statusCode: 200, headers, body: JSON.stringify({ sent: true, via: 'crypto' }) };
+      }
+    } catch (err) {
+      console.error('[resend-access] libro cripto no consultable (se sigue con Stripe):', err);
+    }
+
     // Search Stripe for completed checkout sessions with this email
     const Stripe = (await import('stripe')).default;
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-12-18.acacia' });
 
-    // El cliente teclea el email a mano en "¿Ya compraste?": normalizar espacios/mayúsculas y
-    // consultar Stripe con la variante normalizada Y la literal (bug "email case-sensitive",
+    // Se consulta Stripe con la variante normalizada Y la literal (bug "email case-sensitive",
     // catalogado en CB PRODUCTOS-DIGITALES-ROADMAP §2). Se conserva la literal para no romper
     // a quien pagó con mayúsculas si el filtro de Stripe resultara sensible a ellas.
-    const emailNorm = String(email).trim().toLowerCase();
+    // (`emailNorm` se calcula arriba: lo necesita también la ruta cripto.)
     const variants = emailNorm === email ? [email] : [emailNorm, email];
     const results = await Promise.all(
       variants.map((e) => stripe.checkout.sessions.list({ customer_details: { email: e }, limit: 100 }))
@@ -416,45 +499,9 @@ export const handler: Handler = async (event) => {
       { expiresIn: '365d' }
     );
 
-    const magicLink = `https://aichef.pro${config.accessPath}?jwt=${token}`;
-
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      },
-      body: JSON.stringify({
-        from: 'AI Chef Pro <noreply@contact.aichef.pro>',
-        to: emailNorm,
-        subject: config.emailSubject,
-        html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-            <h1 style="color: #FFD700; font-size: 24px;">${config.emailTitle}</h1>
-            <p style="color: #333; line-height: 1.6;">
-              ${config.emailBody}
-            </p>
-            <div style="text-align: center; margin: 30px 0;">
-              <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
-                ${config.emailCta}
-              </a>
-            </div>
-            <p style="color: #666; font-size: 14px; line-height: 1.6;">
-              Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
-            </p>
-            <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
-            <p style="color: #999; font-size: 12px;">
-              AI Chef Pro · <a href="https://aichef.pro" style="color: #FFD700;">aichef.pro</a>
-            </p>
-          </div>
-        `,
-      }),
-    });
-
-    if (!res.ok) {
-      const errorBody = await res.text();
-      console.error(`Resend API error (${res.status}):`, errorBody);
-      return { statusCode: 500, headers, body: JSON.stringify({ error: `Email send failed: ${res.status}` }) };
+    const envio = await enviarEmailAcceso(emailNorm, token, config);
+    if (!envio.ok) {
+      return { statusCode: 500, headers, body: JSON.stringify({ error: `Email send failed: ${envio.status}` }) };
     }
 
     console.log('Resend-access email sent to:', email);

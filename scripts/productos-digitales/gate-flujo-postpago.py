@@ -23,6 +23,12 @@ Checks:
      PURCHASE_VALIDATION informativo.
   D. LIVE: landing 200 con enlace buy.stripe.com (sin '#comprar'), -access y -library 200
      con <astro-island … client="only">.
+  E. (2026-09-05) Pasarela cripto NOWPayments (piloto): netlify/shared/product-prices.ts cubre
+     los mismos productIds que PRODUCTS y coincide con sync-product-prices.py --check (fichas +
+     products-catalog.ts); existen las 4 functions (crypto-checkout, nowpayments-ipn,
+     crypto-order-status, crypto-report) y netlify/shared/{nowpayments,crypto-orders}.ts;
+     LIVE: NOWPAYMENTS_API_KEY/IPN_SECRET armadas, CRYPTO_PRODUCTS/API_BASE informativas,
+     contrato HTTP de las 3 functions públicas. Ver PAGOS_CRYPTO_NOWPAYMENTS.md.
 
 Uso:
   python3 scripts/productos-digitales/gate-flujo-postpago.py            # todo
@@ -162,6 +168,110 @@ def check_validacion_y_webhook(vp, offline):
         warns.append('stripe-webhook LIVE responde 501: desplegado pero sin STRIPE_WEBHOOK_SECRET')
     else:
         issues.append(f'stripe-webhook LIVE → {st} (esperado 400/501): {body[:80]!r}')
+    return issues, warns, info
+
+
+CRYPTO_FUNCTIONS = ('crypto-checkout', 'nowpayments-ipn', 'crypto-order-status', 'crypto-report')
+CRYPTO_SHARED = ('netlify/shared/nowpayments.ts', 'netlify/shared/crypto-orders.ts')
+
+
+def check_pasarela_cripto(vp, offline):
+    """Sección E — Pasarela cripto (NOWPayments). Devuelve (issues, warns, info).
+
+    Ver PAGOS_CRYPTO_NOWPAYMENTS.md § Especificación de implementación v1 (piloto).
+    Las 4 functions y netlify/shared/crypto-orders.ts pueden no existir todavía
+    (piloto en construcción): eso se reporta como issue, nunca como excepción.
+    """
+    issues, warns, info = [], [], []
+    # (a) netlify/shared/product-prices.ts cubre EXACTAMENTE los productIds de PRODUCTS
+    # (el mismo `vp` que usa la sección D, parseado por parse_products_map()).
+    try:
+        pp_src = read('netlify/shared/product-prices.ts')
+    except FileNotFoundError:
+        issues.append('falta netlify/shared/product-prices.ts (python3 scripts/productos-digitales/sync-product-prices.py)')
+        pp_src = None
+    if pp_src is not None:
+        pp_ids = set(re.findall(r"^\s*'([^']+)':\s*\{\s*eur:", pp_src, re.M))
+        missing = sorted(set(vp) - pp_ids)
+        extra = sorted(pp_ids - set(vp))
+        if missing:
+            issues.append(f'productos de verify-purchase SIN precio en product-prices.ts: {missing}')
+        if extra:
+            issues.append(f'product-prices.ts tiene productos que no existen en verify-purchase: {extra}')
+    # (b) el generador está de acuerdo consigo mismo (fichas + catálogo de banners)
+    sync_script = os.path.join(ROOT, 'scripts', 'productos-digitales', 'sync-product-prices.py')
+    try:
+        r = subprocess.run(['python3', sync_script, '--check'], capture_output=True, text=True,
+                           timeout=60, cwd=ROOT)
+        if r.returncode != 0:
+            salida = (r.stdout + r.stderr).strip().splitlines()
+            issues.append('sync-product-prices.py --check falló: ' + ' | '.join(salida[:10]))
+    except Exception as e:  # noqa
+        warns.append(f'no se pudo ejecutar sync-product-prices.py --check: {e}')
+    # (c) las 4 functions + los 2 ficheros compartidos existen
+    for fn in CRYPTO_FUNCTIONS:
+        if not os.path.exists(os.path.join(ROOT, f'netlify/functions/{fn}.ts')):
+            issues.append(f'falta netlify/functions/{fn}.ts: la pasarela cripto no está desplegada')
+    for fn in CRYPTO_SHARED:
+        if not os.path.exists(os.path.join(ROOT, fn)):
+            issues.append(f'falta {fn}')
+    if offline:
+        warns.append('sección E: env vars y HTTP LIVE de la pasarela cripto SIN VERIFICAR en modo --offline')
+        return issues, warns, info
+    # (d) LIVE: env vars
+    env = netlify_env_vars()
+    if not env:
+        warns.append('no se pudieron leer las env vars de Netlify (netlify CLI): pasarela cripto sin verificar en LIVE')
+    else:
+        for key in ('NOWPAYMENTS_API_KEY', 'NOWPAYMENTS_IPN_SECRET'):
+            v = env.get(key)
+            if not v or not v.get('value'):
+                issues.append(f'{key} no existe en Netlify: la pasarela cripto está INERTE')
+            elif not v['secret']:
+                issues.append(f'{key} existe pero NO está marcada como secreta en Netlify')
+            elif 'functions' not in v['scopes']:
+                issues.append(f"{key} sin scope 'functions'")
+        cp = (env.get('CRYPTO_PRODUCTS') or {}).get('value')
+        if not cp or not cp.strip():
+            warns.append('CRYPTO_PRODUCTS vacío o inexistente: el botón de pago cripto está APAGADO en todos los productos')
+        elif cp.strip().lower() == 'all':
+            info.append(f'CRYPTO_PRODUCTS = all (pasarela cripto activa en los {len(vp)} productos)')
+        else:
+            n = len([p for p in cp.split(',') if p.strip()])
+            info.append(f'CRYPTO_PRODUCTS = lista explícita de {n} producto(s)')
+        base = (env.get('NOWPAYMENTS_API_BASE') or {}).get('value')
+        if base:
+            info.append(f'NOWPAYMENTS_API_BASE = {base}')
+            if 'sandbox' in base.lower():
+                warns.append(f'NOWPAYMENTS_API_BASE apunta a SANDBOX: {base} (el piloto real necesita producción)')
+    # (e) LIVE: contrato HTTP de las 3 functions públicas
+    st, _, _, body = http_post(BASE_URL + '/.netlify/functions/nowpayments-ipn', '{}')
+    if st == 400:
+        info.append('nowpayments-ipn LIVE: 400 sin firma (desplegado y armado)')
+    elif st == 501:
+        warns.append('nowpayments-ipn LIVE responde 501: desplegado pero sin configurar (falta NOWPAYMENTS_IPN_SECRET/JWT_SECRET/RESEND_API_KEY)')
+    elif st == 404:
+        issues.append('nowpayments-ipn LIVE → 404: la function no está desplegada')
+    else:
+        issues.append(f'nowpayments-ipn LIVE → {st} (esperado 400/501): {body[:80]!r}')
+
+    st2, ct2, _, body2 = http(BASE_URL + '/.netlify/functions/crypto-order-status?o=' + '0' * 32)
+    if st2 == 404:
+        html2 = body2.decode('utf-8', 'ignore')
+        if 'text/html' in (ct2 or '') or html2.lstrip()[:15].lower().startswith('<!doctype html'):
+            issues.append('crypto-order-status LIVE → 404 de Netlify (Function not found/HTML): la function no está desplegada')
+        else:
+            info.append('crypto-order-status LIVE: 404 (pedido inexistente devuelto por la function, desplegada)')
+    else:
+        issues.append(f'crypto-order-status LIVE → {st2} (esperado 404 para un orderId inexistente)')
+
+    st3, _, _, body3 = http_post(BASE_URL + '/.netlify/functions/crypto-checkout', '{}')
+    if st3 in (400, 501, 503):
+        info.append(f'crypto-checkout LIVE: {st3} (desplegado)')
+    elif st3 == 404:
+        issues.append('crypto-checkout LIVE → 404: la function no está desplegada')
+    else:
+        issues.append(f'crypto-checkout LIVE → {st3} (esperado 400/501/503): {body3[:80]!r}')
     return issues, warns, info
 
 
@@ -424,6 +534,19 @@ def main():
         print('    ✓ mapa de 44 Payment Links al día, validación cableada, webhook armado')
     fails.extend(d_issues)
     warns.extend(d_warns)
+    # E. pasarela cripto NOWPayments (transversal, no por producto)
+    e_issues, e_warns, e_info = check_pasarela_cripto(vp, args.offline)
+    print('\nPasarela cripto (NOWPayments):')
+    for i in e_info:
+        print(f'    · {i}')
+    for i in e_issues:
+        print(f'    ✗ {i}')
+    for w in e_warns:
+        print(f'    ⚠ {w}')
+    if not e_issues and not e_warns:
+        print('    ✓ product-prices.ts al día, 4 functions desplegadas, env vars armadas, contrato HTTP OK')
+    fails.extend(e_issues)
+    warns.extend(e_warns)
     print(f"\nProductos: {len(report)} · entregables: {len(all_dl)} · fallos: {len(fails)} · avisos: {len(warns)}")
     if args.json:
         with open(args.json, 'w', encoding='utf-8') as f:

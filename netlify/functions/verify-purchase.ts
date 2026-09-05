@@ -423,7 +423,13 @@ export const handler: Handler = async (event) => {
 };
 
 // ── Email sender ────────────────────────────────────────────────
-export async function sendAccessEmail(email: string, token: string, productId: string) {
+// `extraHtml` (2026-09-05, pagos cripto): bloque HTML opcional que se inserta
+// JUSTO ANTES del párrafo «Guarda este email…». Lo usa `nowpayments-ipn.ts`
+// para recordar por escrito la renuncia al desistimiento de 14 días que el
+// comprador marcó al pagar en cripto. Con el argumento vacío —que es como lo
+// llaman verify-purchase, stripe-webhook y admin-generate-access— el HTML
+// resultante es BYTE A BYTE el de siempre: la ruta de Stripe no cambia.
+export async function sendAccessEmail(email: string, token: string, productId: string, extraHtml = '') {
   if (!email || !process.env.RESEND_API_KEY) return;
 
   const config = PRODUCTS[productId] || PRODUCTS['pro-prompts-ebook'];
@@ -449,7 +455,7 @@ export async function sendAccessEmail(email: string, token: string, productId: s
             <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
               ${config.emailCta}
             </a>
-          </div>
+          </div>${extraHtml}
           <p style="color: #666; font-size: 14px; line-height: 1.6;">
             Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
           </p>

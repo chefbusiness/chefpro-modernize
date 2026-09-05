@@ -1,0 +1,603 @@
+---
+/**
+ * CryptoPayButton — la SEGUNDA puerta de pago de una landing de producto digital.
+ *
+ * Doctrina (PAGOS_CRYPTO_NOWPAYMENTS.md, 2026-09-05): «cripto es una segunda puerta a la
+ * misma habitación — no se duplica la entrega». Stripe manda: su CTA es el botón dorado
+ * sólido. Este es un botón SECUNDARIO de contorno que se coloca debajo, para el comprador
+ * de LATAM (GT, PA, MX, AR, UY, VE…) que no tiene tarjeta internacional.
+ *
+ * Sólo se pinta si `cryptoEnabledFor(productId)` (env `CRYPTO_PRODUCTS`, scope builds):
+ * con la variable apagada este componente no emite NADA —ni HTML, ni CSS, ni JS—, así que
+ * el HTML de las landings que no están en el allowlist queda idéntico. Por eso el <style>
+ * y el <script> van `is:inline` DENTRO del bloque condicional: los `<style>`/`<script>`
+ * normales de Astro se recogen en el build a partir de los imports, no de lo que se
+ * renderiza, y se colarían en las 18 landings hermanas.
+ *
+ * Al pulsar abre un <dialog> nativo (Esc + ✕ + clic en el fondo) que recoge lo único que
+ * el backend necesita y que no puede deducir: email de entrega, país de facturación
+ * (evidencia para el IVA junto a la cabecera geo de Netlify; NO cambia el precio) y las
+ * DOS aceptaciones separadas: condiciones de compra y renuncia expresa al desistimiento
+ * de 14 días por acceso inmediato al contenido digital. El importe NUNCA viaja desde el
+ * cliente: lo pone el servidor desde el mapa de precios.
+ *
+ * Contrato: POST /.netlify/functions/crypto-checkout
+ *   {product, email, country, acceptPolicy:true, waiveWithdrawal:true} → 200 {url, orderId}
+ * y el navegador redirige a la página alojada de NOWPayments.
+ */
+import { cryptoEnabledFor, CRYPTO_COINS_LABEL } from '../lib/crypto-checkout';
+
+interface Props {
+  /** productId = slug de la landing (verificado 46/46 en zona-app.ts). */
+  productId: string;
+  /** Nombre del producto tal como lo pinta el hero. */
+  productName: string;
+  /** Precio de display de la landing, p. ej. "€12". */
+  priceLabel: string;
+  /** Ruta de la landing, para volver si el comprador cancela. */
+  landingPath: string;
+  /** Dónde va el botón: bajo el CTA del BuyBox o bajo el CTA final. */
+  variant?: 'buybox' | 'cta';
+}
+
+const { productId, productName, priceLabel, landingPath, variant = 'buybox' } = Astro.props;
+
+const enabled = cryptoEnabledFor(productId);
+
+// Ids únicos por instancia: la misma landing pinta el botón dos veces (BuyBox y CtaFinal).
+const uid = `${productId}-${variant}`;
+const dialogId = `aicp-crypto-dialog-${uid}`;
+const titleId = `aicp-crypto-title-${uid}`;
+const emailId = `aicp-crypto-email-${uid}`;
+const countryId = `aicp-crypto-country-${uid}`;
+
+/**
+ * Países de facturación (ISO 3166-1 alfa-2, nombres en español de España generados con
+ * Intl.DisplayNames). Primero los mercados reales de la línea de productos —España y la
+ * hispanofonía, EE. UU. y la UE cercana—; después el resto, alfabéticamente.
+ * El código que viaja al backend es el alfa-2 en MAYÚSCULAS.
+ */
+const PAISES_FRECUENTES_N = 19;
+const PAISES: { code: string; name: string }[] = [
+  { code: 'ES', name: "España" },
+  { code: 'MX', name: "México" },
+  { code: 'AR', name: "Argentina" },
+  { code: 'CO', name: "Colombia" },
+  { code: 'PE', name: "Perú" },
+  { code: 'CL', name: "Chile" },
+  { code: 'GT', name: "Guatemala" },
+  { code: 'PA', name: "Panamá" },
+  { code: 'UY', name: "Uruguay" },
+  { code: 'VE', name: "Venezuela" },
+  { code: 'EC', name: "Ecuador" },
+  { code: 'DO', name: "República Dominicana" },
+  { code: 'CR', name: "Costa Rica" },
+  { code: 'US', name: "Estados Unidos" },
+  { code: 'PT', name: "Portugal" },
+  { code: 'FR', name: "Francia" },
+  { code: 'DE', name: "Alemania" },
+  { code: 'IT', name: "Italia" },
+  { code: 'NL', name: "Países Bajos" },
+  { code: 'AF', name: "Afganistán" },
+  { code: 'AL', name: "Albania" },
+  { code: 'AD', name: "Andorra" },
+  { code: 'AO', name: "Angola" },
+  { code: 'AI', name: "Anguila" },
+  { code: 'AQ', name: "Antártida" },
+  { code: 'AG', name: "Antigua y Barbuda" },
+  { code: 'SA', name: "Arabia Saudí" },
+  { code: 'DZ', name: "Argelia" },
+  { code: 'AM', name: "Armenia" },
+  { code: 'AW', name: "Aruba" },
+  { code: 'AU', name: "Australia" },
+  { code: 'AT', name: "Austria" },
+  { code: 'AZ', name: "Azerbaiyán" },
+  { code: 'BS', name: "Bahamas" },
+  { code: 'BD', name: "Bangladés" },
+  { code: 'BB', name: "Barbados" },
+  { code: 'BH', name: "Baréin" },
+  { code: 'BE', name: "Bélgica" },
+  { code: 'BZ', name: "Belice" },
+  { code: 'BJ', name: "Benín" },
+  { code: 'BM', name: "Bermudas" },
+  { code: 'BY', name: "Bielorrusia" },
+  { code: 'BO', name: "Bolivia" },
+  { code: 'BA', name: "Bosnia y Herzegovina" },
+  { code: 'BW', name: "Botsuana" },
+  { code: 'BR', name: "Brasil" },
+  { code: 'BN', name: "Brunéi" },
+  { code: 'BG', name: "Bulgaria" },
+  { code: 'BF', name: "Burkina Faso" },
+  { code: 'BI', name: "Burundi" },
+  { code: 'BT', name: "Bután" },
+  { code: 'CV', name: "Cabo Verde" },
+  { code: 'KH', name: "Camboya" },
+  { code: 'CM', name: "Camerún" },
+  { code: 'CA', name: "Canadá" },
+  { code: 'BQ', name: "Caribe neerlandés" },
+  { code: 'QA', name: "Catar" },
+  { code: 'TD', name: "Chad" },
+  { code: 'CZ', name: "Chequia" },
+  { code: 'CN', name: "China" },
+  { code: 'CY', name: "Chipre" },
+  { code: 'VA', name: "Ciudad del Vaticano" },
+  { code: 'KM', name: "Comoras" },
+  { code: 'CG', name: "Congo" },
+  { code: 'KP', name: "Corea del Norte" },
+  { code: 'KR', name: "Corea del Sur" },
+  { code: 'CI', name: "Côte d’Ivoire" },
+  { code: 'HR', name: "Croacia" },
+  { code: 'CU', name: "Cuba" },
+  { code: 'CW', name: "Curazao" },
+  { code: 'DK', name: "Dinamarca" },
+  { code: 'DM', name: "Dominica" },
+  { code: 'EG', name: "Egipto" },
+  { code: 'SV', name: "El Salvador" },
+  { code: 'AE', name: "Emiratos Árabes Unidos" },
+  { code: 'ER', name: "Eritrea" },
+  { code: 'SK', name: "Eslovaquia" },
+  { code: 'SI', name: "Eslovenia" },
+  { code: 'EE', name: "Estonia" },
+  { code: 'SZ', name: "Esuatini" },
+  { code: 'ET', name: "Etiopía" },
+  { code: 'PH', name: "Filipinas" },
+  { code: 'FI', name: "Finlandia" },
+  { code: 'FJ', name: "Fiyi" },
+  { code: 'GA', name: "Gabón" },
+  { code: 'GM', name: "Gambia" },
+  { code: 'GE', name: "Georgia" },
+  { code: 'GH', name: "Ghana" },
+  { code: 'GI', name: "Gibraltar" },
+  { code: 'GD', name: "Granada" },
+  { code: 'GR', name: "Grecia" },
+  { code: 'GL', name: "Groenlandia" },
+  { code: 'GP', name: "Guadalupe" },
+  { code: 'GU', name: "Guam" },
+  { code: 'GF', name: "Guayana Francesa" },
+  { code: 'GG', name: "Guernesey" },
+  { code: 'GN', name: "Guinea" },
+  { code: 'GQ', name: "Guinea Ecuatorial" },
+  { code: 'GW', name: "Guinea-Bisáu" },
+  { code: 'GY', name: "Guyana" },
+  { code: 'HT', name: "Haití" },
+  { code: 'HN', name: "Honduras" },
+  { code: 'HU', name: "Hungría" },
+  { code: 'IN', name: "India" },
+  { code: 'ID', name: "Indonesia" },
+  { code: 'IQ', name: "Irak" },
+  { code: 'IR', name: "Irán" },
+  { code: 'IE', name: "Irlanda" },
+  { code: 'BV', name: "Isla Bouvet" },
+  { code: 'IM', name: "Isla de Man" },
+  { code: 'CX', name: "Isla de Navidad" },
+  { code: 'NF', name: "Isla Norfolk" },
+  { code: 'IS', name: "Islandia" },
+  { code: 'AX', name: "Islas Aland" },
+  { code: 'KY', name: "Islas Caimán" },
+  { code: 'CC', name: "Islas Cocos" },
+  { code: 'CK', name: "Islas Cook" },
+  { code: 'FO', name: "Islas Feroe" },
+  { code: 'GS', name: "Islas Georgia del Sur y Sandwich del Sur" },
+  { code: 'HM', name: "Islas Heard y McDonald" },
+  { code: 'FK', name: "Islas Malvinas" },
+  { code: 'MP', name: "Islas Marianas del Norte" },
+  { code: 'MH', name: "Islas Marshall" },
+  { code: 'UM', name: "Islas menores alejadas de EE. UU." },
+  { code: 'PN', name: "Islas Pitcairn" },
+  { code: 'SB', name: "Islas Salomón" },
+  { code: 'TC', name: "Islas Turcas y Caicos" },
+  { code: 'VG', name: "Islas Vírgenes Británicas" },
+  { code: 'VI', name: "Islas Vírgenes de EE. UU." },
+  { code: 'IL', name: "Israel" },
+  { code: 'JM', name: "Jamaica" },
+  { code: 'JP', name: "Japón" },
+  { code: 'JE', name: "Jersey" },
+  { code: 'JO', name: "Jordania" },
+  { code: 'KZ', name: "Kazajistán" },
+  { code: 'KE', name: "Kenia" },
+  { code: 'KG', name: "Kirguistán" },
+  { code: 'KI', name: "Kiribati" },
+  { code: 'KW', name: "Kuwait" },
+  { code: 'LA', name: "Laos" },
+  { code: 'LS', name: "Lesoto" },
+  { code: 'LV', name: "Letonia" },
+  { code: 'LB', name: "Líbano" },
+  { code: 'LR', name: "Liberia" },
+  { code: 'LY', name: "Libia" },
+  { code: 'LI', name: "Liechtenstein" },
+  { code: 'LT', name: "Lituania" },
+  { code: 'LU', name: "Luxemburgo" },
+  { code: 'MK', name: "Macedonia del Norte" },
+  { code: 'MG', name: "Madagascar" },
+  { code: 'MY', name: "Malasia" },
+  { code: 'MW', name: "Malaui" },
+  { code: 'MV', name: "Maldivas" },
+  { code: 'ML', name: "Mali" },
+  { code: 'MT', name: "Malta" },
+  { code: 'MA', name: "Marruecos" },
+  { code: 'MQ', name: "Martinica" },
+  { code: 'MU', name: "Mauricio" },
+  { code: 'MR', name: "Mauritania" },
+  { code: 'YT', name: "Mayotte" },
+  { code: 'FM', name: "Micronesia" },
+  { code: 'MD', name: "Moldavia" },
+  { code: 'MC', name: "Mónaco" },
+  { code: 'MN', name: "Mongolia" },
+  { code: 'ME', name: "Montenegro" },
+  { code: 'MS', name: "Montserrat" },
+  { code: 'MZ', name: "Mozambique" },
+  { code: 'MM', name: "Myanmar (Birmania)" },
+  { code: 'NA', name: "Namibia" },
+  { code: 'NR', name: "Nauru" },
+  { code: 'NP', name: "Nepal" },
+  { code: 'NI', name: "Nicaragua" },
+  { code: 'NE', name: "Níger" },
+  { code: 'NG', name: "Nigeria" },
+  { code: 'NU', name: "Niue" },
+  { code: 'NO', name: "Noruega" },
+  { code: 'NC', name: "Nueva Caledonia" },
+  { code: 'NZ', name: "Nueva Zelanda" },
+  { code: 'OM', name: "Omán" },
+  { code: 'PK', name: "Pakistán" },
+  { code: 'PW', name: "Palaos" },
+  { code: 'PG', name: "Papúa Nueva Guinea" },
+  { code: 'PY', name: "Paraguay" },
+  { code: 'PF', name: "Polinesia Francesa" },
+  { code: 'PL', name: "Polonia" },
+  { code: 'PR', name: "Puerto Rico" },
+  { code: 'HK', name: "RAE de Hong Kong (China)" },
+  { code: 'MO', name: "RAE de Macao (China)" },
+  { code: 'GB', name: "Reino Unido" },
+  { code: 'CF', name: "República Centroafricana" },
+  { code: 'CD', name: "República Democrática del Congo" },
+  { code: 'RE', name: "Reunión" },
+  { code: 'RW', name: "Ruanda" },
+  { code: 'RO', name: "Rumanía" },
+  { code: 'RU', name: "Rusia" },
+  { code: 'EH', name: "Sáhara Occidental" },
+  { code: 'WS', name: "Samoa" },
+  { code: 'AS', name: "Samoa Americana" },
+  { code: 'BL', name: "San Bartolomé" },
+  { code: 'KN', name: "San Cristóbal y Nieves" },
+  { code: 'SM', name: "San Marino" },
+  { code: 'MF', name: "San Martín" },
+  { code: 'PM', name: "San Pedro y Miquelón" },
+  { code: 'VC', name: "San Vicente y las Granadinas" },
+  { code: 'SH', name: "Santa Elena" },
+  { code: 'LC', name: "Santa Lucía" },
+  { code: 'ST', name: "Santo Tomé y Príncipe" },
+  { code: 'SN', name: "Senegal" },
+  { code: 'RS', name: "Serbia" },
+  { code: 'SC', name: "Seychelles" },
+  { code: 'SL', name: "Sierra Leona" },
+  { code: 'SG', name: "Singapur" },
+  { code: 'SX', name: "Sint Maarten" },
+  { code: 'SY', name: "Siria" },
+  { code: 'SO', name: "Somalia" },
+  { code: 'LK', name: "Sri Lanka" },
+  { code: 'ZA', name: "Sudáfrica" },
+  { code: 'SD', name: "Sudán" },
+  { code: 'SS', name: "Sudán del Sur" },
+  { code: 'SE', name: "Suecia" },
+  { code: 'CH', name: "Suiza" },
+  { code: 'SR', name: "Surinam" },
+  { code: 'SJ', name: "Svalbard y Jan Mayen" },
+  { code: 'TH', name: "Tailandia" },
+  { code: 'TW', name: "Taiwán" },
+  { code: 'TZ', name: "Tanzania" },
+  { code: 'TJ', name: "Tayikistán" },
+  { code: 'IO', name: "Territorio Británico del Océano Índico" },
+  { code: 'TF', name: "Territorios Australes Franceses" },
+  { code: 'PS', name: "Territorios Palestinos" },
+  { code: 'TL', name: "Timor-Leste" },
+  { code: 'TG', name: "Togo" },
+  { code: 'TK', name: "Tokelau" },
+  { code: 'TO', name: "Tonga" },
+  { code: 'TT', name: "Trinidad y Tobago" },
+  { code: 'TN', name: "Túnez" },
+  { code: 'TM', name: "Turkmenistán" },
+  { code: 'TR', name: "Turquía" },
+  { code: 'TV', name: "Tuvalu" },
+  { code: 'UA', name: "Ucrania" },
+  { code: 'UG', name: "Uganda" },
+  { code: 'UZ', name: "Uzbekistán" },
+  { code: 'VU', name: "Vanuatu" },
+  { code: 'VN', name: "Vietnam" },
+  { code: 'WF', name: "Wallis y Futuna" },
+  { code: 'YE', name: "Yemen" },
+  { code: 'DJ', name: "Yibuti" },
+  { code: 'ZM', name: "Zambia" },
+  { code: 'ZW', name: "Zimbabue" },
+];
+const PAISES_FRECUENTES = PAISES.slice(0, PAISES_FRECUENTES_N);
+const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
+---
+
+{enabled && (
+  <div
+    class:list={['aicp-crypto', `aicp-crypto--${variant}`]}
+    data-crypto-product={productId}
+    data-crypto-landing={landingPath}
+    data-crypto-variant={variant}
+  >
+    <button
+      type="button"
+      class="aicp-crypto__open"
+      data-crypto-open
+      aria-haspopup="dialog"
+      aria-controls={dialogId}
+    >
+      <span class="aicp-crypto__open-main">¿Sin tarjeta internacional? Paga con cripto</span>
+      <span class="aicp-crypto__open-coins">{CRYPTO_COINS_LABEL}</span>
+    </button>
+
+    <dialog id={dialogId} class="aicp-crypto__dialog" data-crypto-dialog aria-labelledby={titleId}>
+      <form class="aicp-crypto__form" data-crypto-form>
+        <button type="button" class="aicp-crypto__close" data-crypto-close aria-label="Cerrar">✕</button>
+
+        <h2 id={titleId} class="aicp-crypto__title">Pagar con criptomonedas</h2>
+        <p class="aicp-crypto__product">{productName}</p>
+        <p class="aicp-crypto__price">
+          {priceLabel} — pago único, acceso vitalicio; pagas su equivalente en la cripto que elijas.
+        </p>
+
+        <div class="aicp-crypto__field">
+          <label class="aicp-crypto__label" for={emailId}>Tu email (ahí te enviamos el acceso)</label>
+          <input
+            class="aicp-crypto__input"
+            id={emailId}
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            inputmode="email"
+            placeholder="tucorreo@ejemplo.com"
+            data-crypto-email
+          />
+        </div>
+
+        <div class="aicp-crypto__field">
+          <label class="aicp-crypto__label" for={countryId}>País de facturación</label>
+          <select class="aicp-crypto__input" id={countryId} name="country" required data-crypto-country>
+            <option value="">Elige tu país…</option>
+            <optgroup label="Más frecuentes">
+              {PAISES_FRECUENTES.map((p) => <option value={p.code}>{p.name}</option>)}
+            </optgroup>
+            <optgroup label="Todos los países">
+              {PAISES_RESTO.map((p) => <option value={p.code}>{p.name}</option>)}
+            </optgroup>
+          </select>
+        </div>
+
+        <label class="aicp-crypto__check">
+          <input type="checkbox" required data-crypto-accept />
+          <span>
+            He leído y acepto las <a href="/terminos" target="_blank" rel="noopener noreferrer">condiciones de compra y devoluciones</a>
+          </span>
+        </label>
+
+        <label class="aicp-crypto__check">
+          <input type="checkbox" required data-crypto-waive />
+          <span>
+            Solicito el acceso inmediato al contenido digital y entiendo que, al recibirlo, pierdo el derecho de desistimiento de 14 días
+          </span>
+        </label>
+
+        <p class="aicp-crypto__notice">
+          Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente.
+        </p>
+
+        <p class="aicp-crypto__error" data-crypto-error role="alert" hidden></p>
+
+        <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>Continuar al pago</button>
+
+        <p class="aicp-crypto__legal">
+          El cobro lo procesa NOWPayments. Nosotros recibimos la confirmación y te enviamos el enlace de acceso al email que nos dejes.
+        </p>
+      </form>
+    </dialog>
+
+    <style is:inline>
+      /* Estilos SIN scope de Astro a propósito (is:inline): así no se emiten en las
+         landings donde el botón está apagado. Todas las clases van prefijadas
+         `aicp-crypto` para no chocar con Tailwind ni con la plantilla. */
+      .aicp-crypto { margin-top: 0.85rem; text-align: center; }
+      .aicp-crypto__open {
+        display: inline-flex; flex-direction: column; align-items: center; gap: 0.15rem;
+        width: 100%; padding: 0.8rem 1.5rem; border: 1px solid rgba(255, 215, 0, 0.45);
+        border-radius: 0.75rem; background: rgba(255, 215, 0, 0.06); color: #ffd700;
+        font-family: inherit; font-size: 1rem; font-weight: 600; line-height: 1.3;
+        cursor: pointer; transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      }
+      .aicp-crypto__open:hover { background: rgba(255, 215, 0, 0.12); border-color: rgba(255, 215, 0, 0.75); }
+      .aicp-crypto__open:active { transform: scale(0.985); }
+      .aicp-crypto__open:focus-visible { outline: 2px solid #ffd700; outline-offset: 2px; }
+      .aicp-crypto__open-main { display: block; }
+      .aicp-crypto__open-coins { font-size: 0.72rem; font-weight: 500; color: rgba(255, 215, 0, 0.7); }
+      /* El CTA final de Stripe es w-full md:w-auto: el secundario le hace juego. */
+      @media (min-width: 768px) { .aicp-crypto--cta .aicp-crypto__open { width: auto; } }
+
+      .aicp-crypto__dialog {
+        width: min(30rem, calc(100vw - 2rem)); max-height: min(86vh, 46rem);
+        padding: 0; border: 1px solid rgba(255, 215, 0, 0.25); border-radius: 1rem;
+        background: #111111; color: #e5e7eb; overflow: auto;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+      }
+      .aicp-crypto__dialog::backdrop { background: rgba(0, 0, 0, 0.78); }
+      .aicp-crypto__form {
+        position: relative; display: flex; flex-direction: column; gap: 0.7rem;
+        padding: 1.6rem 1.35rem 1.35rem; text-align: left;
+      }
+      .aicp-crypto__form [hidden] { display: none !important; }
+      .aicp-crypto__close {
+        position: absolute; top: 0.55rem; right: 0.6rem; width: 2rem; height: 2rem;
+        display: flex; align-items: center; justify-content: center; padding: 0;
+        border: 0; border-radius: 999px; background: rgba(255, 255, 255, 0.06);
+        color: #9ca3af; font-family: inherit; font-size: 0.95rem; line-height: 1; cursor: pointer;
+      }
+      .aicp-crypto__close:hover { background: rgba(255, 255, 255, 0.12); color: #ffffff; }
+      .aicp-crypto__title { margin: 0; padding-right: 2rem; color: #ffffff; font-size: 1.15rem; font-weight: 700; }
+      .aicp-crypto__product { margin: 0; color: #e5e7eb; font-size: 0.95rem; font-weight: 600; }
+      .aicp-crypto__price { margin: 0 0 0.2rem; color: #9ca3af; font-size: 0.82rem; line-height: 1.5; }
+      .aicp-crypto__field { display: flex; flex-direction: column; gap: 0.3rem; }
+      .aicp-crypto__label { color: #d1d5db; font-size: 0.8rem; font-weight: 600; }
+      .aicp-crypto__input {
+        width: 100%; padding: 0.6rem 0.7rem; border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 0.6rem; background: rgba(255, 255, 255, 0.05); color: #ffffff;
+        font-family: inherit; font-size: 0.95rem;
+      }
+      .aicp-crypto__input::placeholder { color: #6b7280; }
+      .aicp-crypto__input:focus { outline: none; border-color: rgba(255, 215, 0, 0.6); box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.18); }
+      /* Windows/Firefox pintan el desplegable con el fondo del sistema: sin esto el
+         texto blanco de las opciones queda ilegible. */
+      .aicp-crypto__input option, .aicp-crypto__input optgroup { background: #111111; color: #ffffff; }
+      .aicp-crypto__check { display: flex; align-items: flex-start; gap: 0.6rem; color: #d1d5db; font-size: 0.84rem; line-height: 1.45; cursor: pointer; }
+      .aicp-crypto__check input { flex: none; width: 1.05rem; height: 1.05rem; margin: 0.15rem 0 0; accent-color: #ffd700; }
+      .aicp-crypto__check a { color: #ffd700; text-decoration: underline; }
+      .aicp-crypto__notice {
+        margin: 0; padding: 0.6rem 0.7rem; border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 0.6rem; background: rgba(255, 255, 255, 0.04);
+        color: #9ca3af; font-size: 0.78rem; line-height: 1.5;
+      }
+      .aicp-crypto__error { margin: 0; color: #fca5a5; font-size: 0.84rem; line-height: 1.45; }
+      .aicp-crypto__submit {
+        width: 100%; padding: 0.8rem 1rem; border: 0; border-radius: 0.75rem;
+        background: #ffd700; color: #000000; font-family: inherit; font-size: 1rem;
+        font-weight: 700; cursor: pointer;
+      }
+      .aicp-crypto__submit:disabled { opacity: 0.45; cursor: not-allowed; }
+      .aicp-crypto__legal { margin: 0; color: #6b7280; font-size: 0.72rem; line-height: 1.45; text-align: center; }
+    </style>
+
+    <script is:inline>
+      /* Vanilla, sin framework y sin bundle (is:inline): mismo patrón de fetch que el
+         formulario "¿Ya compraste?" de la plantilla. Se ejecuta UNA sola vez aunque el
+         script aparezca dos veces (BuyBox + CtaFinal) e inicializa todas las instancias. */
+      (function () {
+        if (window.__aicpCryptoPayInit) return;
+        window.__aicpCryptoPayInit = true;
+
+        var MSG = {
+          gateway: 'Ahora mismo la pasarela cripto no está disponible; puedes pagar con tarjeta.',
+          rate: 'Demasiados intentos, espera un minuto y vuelve a probar.',
+          notEnabled: 'Este producto todavía no admite cripto.',
+          consent: 'Marca las dos casillas para continuar.',
+          email: 'Revisa el email: ahí es donde te enviamos el acceso.',
+          country: 'Elige tu país de facturación.',
+          generic: 'No hemos podido abrir la pasarela. Vuelve a intentarlo en un minuto o escríbenos a info@aichef.pro y lo resolvemos.'
+        };
+
+        function messageFor(status, data) {
+          var code = data && (data.error || data.code) ? String(data.error || data.code) : '';
+          if (status === 503 || status === 501) return MSG.gateway;
+          if (status === 429) return MSG.rate;
+          if (status === 403 && code === 'product_not_enabled') return MSG.notEnabled;
+          /* El formulario ya valida en el navegador, así que estos 400 sólo saltan si
+             algo se cuela; aun así merece la pena decir QUÉ revisar. */
+          if (status === 400 && code === 'invalid_email') return MSG.email;
+          if (status === 400 && code === 'invalid_country') return MSG.country;
+          if (status === 400 && code === 'consent_required') return MSG.consent;
+          return MSG.generic;
+        }
+
+        function init(root) {
+          var openBtn = root.querySelector('[data-crypto-open]');
+          var dialog = root.querySelector('[data-crypto-dialog]');
+          var form = root.querySelector('[data-crypto-form]');
+          if (!openBtn || !dialog || !form) return;
+
+          var closeBtn = form.querySelector('[data-crypto-close]');
+          var email = form.querySelector('[data-crypto-email]');
+          var country = form.querySelector('[data-crypto-country]');
+          var accept = form.querySelector('[data-crypto-accept]');
+          var waive = form.querySelector('[data-crypto-waive]');
+          var submit = form.querySelector('[data-crypto-submit]');
+          var errorEl = form.querySelector('[data-crypto-error]');
+          var loading = false;
+
+          function setError(msg) {
+            if (!msg) { errorEl.textContent = ''; errorEl.hidden = true; return; }
+            errorEl.textContent = msg;
+            errorEl.hidden = false;
+          }
+
+          function syncSubmit() {
+            submit.disabled = loading || !(accept.checked && waive.checked);
+          }
+
+          function openDialog() {
+            setError('');
+            if (typeof dialog.showModal === 'function') dialog.showModal();
+            else dialog.setAttribute('open', '');
+            try { email.focus(); } catch (err) {}
+          }
+
+          function closeDialog() {
+            if (typeof dialog.close === 'function' && dialog.open) dialog.close();
+            else dialog.removeAttribute('open');
+          }
+
+          accept.addEventListener('change', syncSubmit);
+          waive.addEventListener('change', syncSubmit);
+          syncSubmit();
+
+          openBtn.addEventListener('click', openDialog);
+          if (closeBtn) closeBtn.addEventListener('click', closeDialog);
+          /* Clic en el fondo oscuro (el propio dialog ocupa el viewport; el formulario no). */
+          dialog.addEventListener('click', function (ev) { if (ev.target === dialog) closeDialog(); });
+
+          form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            if (loading) return;
+            if (!accept.checked || !waive.checked) { setError(MSG.consent); return; }
+            if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+
+            var payload = {
+              product: root.getAttribute('data-crypto-product'),
+              email: (email.value || '').trim(),
+              country: (country.value || '').trim().toUpperCase(),
+              acceptPolicy: true,
+              waiveWithdrawal: true
+            };
+
+            loading = true;
+            syncSubmit();
+            submit.textContent = 'Abriendo la pasarela…';
+            setError('');
+
+            fetch('/.netlify/functions/crypto-checkout', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            })
+              .then(function (res) {
+                return res.json().catch(function () { return null; }).then(function (data) {
+                  if (res.ok && data && data.url) {
+                    window.location.assign(data.url);
+                    return true;
+                  }
+                  setError(messageFor(res.status, data));
+                  return false;
+                });
+              })
+              .catch(function () { setError(MSG.generic); return false; })
+              .then(function (redirected) {
+                if (redirected) return;
+                loading = false;
+                submit.textContent = 'Continuar al pago';
+                syncSubmit();
+              });
+          });
+        }
+
+        function start() {
+          var roots = document.querySelectorAll('[data-crypto-product]');
+          for (var i = 0; i < roots.length; i++) init(roots[i]);
+        }
+
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+        else start();
+      })();
+    </script>
+  </div>
+)}
