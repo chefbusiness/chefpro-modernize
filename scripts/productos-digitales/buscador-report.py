@@ -27,8 +27,10 @@ Uso:
   python3 scripts/productos-digitales/buscador-report.py --json          # salida JSON
 
 Requisitos:
-  · ADMIN_PASSWORD en el entorno, o el CLI de Netlify autenticado (se intenta
-    `netlify env:get ADMIN_PASSWORD` y, si falla, `netlify api getEnvVars`).
+  · ADMIN_PASSWORD en el entorno (OBLIGATORIO en la práctica: la variable está marcada
+    como SECRETA en Netlify y `netlify env:get` devuelve un valor de relleno de 20
+    caracteres que NO es la contraseña — comprobado el 2026-09-05: con ese valor la
+    function responde 401). Uso: `ADMIN_PASSWORD='…' python3 buscador-report.py --days 30`.
   · Nada más: HTTP con `curl` por subprocess (el python3 del Mac no trae CA
     bundle y urllib revienta con SSL — mismo motivo que en gate-flujo-postpago.py).
     La contraseña viaja en un fichero de configuración de curl leído por STDIN,

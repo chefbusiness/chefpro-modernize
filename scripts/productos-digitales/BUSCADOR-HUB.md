@@ -5,6 +5,13 @@
 > siguiente producto: no es un volumen de keyword prestado, es alguien que ya está en la
 > tienda con la tarjeta a mano y no encuentra lo que venía a comprar.
 
+> ⚠️ **ADMIN_PASSWORD es una variable SECRETA en Netlify**: `netlify env:get ADMIN_PASSWORD` devuelve un relleno de 20
+> caracteres que no es la contraseña (verificado el 2026-09-05: con él, `search-report` y `admin-generate-access`
+> responden 401). Para leer el informe hay que exportar la contraseña real: `ADMIN_PASSWORD='…' python3
+> scripts/productos-digitales/buscador-report.py --days 30` o `curl -H "x-admin-password: …"`. Los logs de la
+> function (`netlify logs --source functions --function log-search --since 10m`) del primer despliegue no muestran
+> ningún error de escritura en Blobs (invocaciones de ~330 ms, sin «no se pudo escribir»).
+
 ## 1. Las piezas
 
 | Pieza | Fichero | Qué hace |
