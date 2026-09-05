@@ -116,6 +116,12 @@ separación (persistida en CLAUDE.md, skill `resend-aichef` y memoria `feedback_
 | 2026-09-12 | Actualización Plan de Negocio Bar-Restaurante 2.1 (ES) — `broadcast-plan-negocio-bar-restaurante-v2.1-es.html` | **programado** (`7d49e0a3…`), prueba enviada a John |
 | 2026-09-17 → 2026-10-02 | los 4 hermanos de línea A, uno por slot, según se apliquen | pendiente |
 
+## 6-ter. Segunda parte de la sesión (13:50 → 18:00): los 4 hermanos de línea A y el bar a 2.2
+
+Ver `SESSION_HANDOFF_2026-09-05-planes-linea-A-2.2.md`. Resumen: motor 2.2/2.2.1 (payback antes de la deuda, IVA por línea,
+cobertura/rotación/vocabulario desde contenido), 4 hermanos de 1.1 → 2.2 y el bar de 2.1 → 2.2 en `f9283b3`; el correo del bar
+del 12-sep reprogramado como 2.2.
+
 ## 7. Próxima sesión
 
 Por la alternancia toca **PAR (producto nuevo)**, y el presupuesto semanal (1 producto/semana) se reabre el lunes 7-sep:

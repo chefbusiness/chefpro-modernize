@@ -107,6 +107,10 @@ siguen en v1.1 y no lo llevaban. Parámetro `iva_bebida` (B63, 10 %), mezcla de 
 delivery sí va al 21 %), compras intactas, DV purgadas por solape (bloqueante cazado por la refutación), changelog 2.0 + 2.1,
 landing/dashboard con las cifras reales (9 hojas, 7 fases, 64 trámites), paellero `C23` sin «21%». Detalle en el handoff
 `SESSION_HANDOFF_2026-09-05-rd17-planes.md`. **Próxima sesión impar**: documentos de la guía gastronómica (handoff B §20).
+**Segunda parte del 5-sep (luz verde de John, presupuesto suspendido): los 4 hermanos de línea A (cafetería, tapas-bar,
+panadería, food-truck) pasan de 1.1 a 2.2 y el bar de 2.1 a 2.2 con el motor 2.2/2.2.1** (`f9283b3`; handoff
+`SESSION_HANDOFF_2026-09-05-planes-linea-A-2.2.md`). Línea A: HECHA salvo los docx (T9). Queda la línea B (5 planes v1.1) y
+el T9 de documentos.
 **Correos (regla de John del 5-sep: un broadcast por producto actualizado/nuevo, cola de 5 días):** Manual 7-sep · Bar-Restaurante 2.1
 **12-sep** (programado) · hermanos de línea A en los slots 17-sep, 22-sep, 27-sep y 2-oct según se apliquen.
 
