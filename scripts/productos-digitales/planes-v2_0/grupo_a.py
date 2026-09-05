@@ -3738,8 +3738,9 @@ class Plan(object):
                          'inversión con lo que genera ANTES de pagar al '
                          'banco, con la MISMA base de flujo en los tres '
                          'años; si puedes pagar la cuota lo dice el DSCR de '
-                         'la hoja de Financiación. El Word cita esta celda, '
-                         'no recalcula"'})
+                         'la hoja de Financiación. El documento Word del '
+                         'pack sigue en la versión 1.1 y no lee esta celda: '
+                         'las cifras válidas son las de este libro"'})
         # M2 — el fondo de maniobra NO se consume: se recupera al cerrar, y
         # mientras tanto alarga el plazo de un proyecto que sobre el activo
         # que se compra ya está devuelto. Va como fila informativa, no como
