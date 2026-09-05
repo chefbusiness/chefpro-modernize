@@ -2228,15 +2228,18 @@ const breadcrumbSchema = {
     if (!(input instanceof HTMLInputElement)) return;
     const estatico = input.getAttribute('placeholder') || '';
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Ejemplos CORTOS (≤ 22 caracteres): en un móvil de 360 px el campo deja ~26 caracteres
+    // visibles y un ejemplo largo se recortaba a media palabra (John, 2026-09-05).
     const ejemplos = [
-      'escandallos y food cost',
-      'APPCC para mi restaurante',
+      'escandallos',
+      'food cost',
+      'APPCC',
       'gerente de restaurante',
-      'plan de negocio de una cafetería',
-      'control de inventario y compras',
-      'prompts de IA para chef',
-      'turnos y cuadrantes de personal',
-      'cómo montar una pastelería',
+      'plan de negocio',
+      'control de inventario',
+      'prompts para chef',
+      'turnos de personal',
+      'montar una pastelería',
       'food truck',
       'plan financiero',
     ];
@@ -2247,13 +2250,13 @@ const breadcrumbSchema = {
       const texto = ejemplos[i % ejemplos.length];
       if (!borrando) {
         pos += 1;
-        input.setAttribute('placeholder', 'Busca: ' + texto.slice(0, pos) + (pos < texto.length ? '|' : ''));
+        input.setAttribute('placeholder', texto.slice(0, pos) + (pos < texto.length ? '|' : ''));
         if (pos >= texto.length) { borrando = true; timer = window.setTimeout(paso, 1400); return; }
         timer = window.setTimeout(paso, 55 + Math.round(Math.random() * 45));
       } else {
         pos -= 2;
-        if (pos <= 0) { pos = 0; borrando = false; i += 1; input.setAttribute('placeholder', 'Busca: '); timer = window.setTimeout(paso, 350); return; }
-        input.setAttribute('placeholder', 'Busca: ' + texto.slice(0, pos));
+        if (pos <= 0) { pos = 0; borrando = false; i += 1; input.setAttribute('placeholder', ''); timer = window.setTimeout(paso, 350); return; }
+        input.setAttribute('placeholder', texto.slice(0, pos));
         timer = window.setTimeout(paso, 28);
       }
     };
