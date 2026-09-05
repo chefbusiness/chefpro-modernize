@@ -6,10 +6,12 @@
 // producto, importe y email salen SIEMPRE de aquí, nunca del IPN. Así un IPN
 // forjado con `order_id` inventado no puede pedir la entrega de otro producto.
 //
-// CONSISTENCIA FUERTE EN TODAS LAS LECTURAS (spec :166). En `log-search` una
-// lectura obsoleta cuesta una línea de telemetría; aquí cuesta una venta: el
-// IPN puede llegar segundos después del checkout que escribió el pedido, y con
-// consistencia eventual leería «no existe».
+// CONSISTENCIA FUERTE CUANDO EL RUNTIME LA SOPORTA (spec :166). En `log-search`
+// una lectura obsoleta cuesta una línea de telemetría; aquí cuesta un reintento:
+// el IPN puede llegar segundos después del checkout que escribió el pedido, y
+// con consistencia eventual leería «no existe» → 500 → NOWPayments reintenta y
+// a la siguiente lo encuentra. Ver `abrirLibro`: en functions v1 la fuerte no
+// está disponible y se cae a eventual (medido en el deploy preview 78).
 //
 // ⚠️ GOTCHA DE BLOBS (el mismo de log-search.ts:35): sólo funciona DESPLEGADO
 // en Netlify. Y al ser functions v1 (Lambda-compat, `Handler` de
@@ -95,15 +97,59 @@ export interface BlobStore {
   delete: (key: string) => Promise<unknown>;
 }
 
-/** Abre el store con consistencia FUERTE. Lanza si Blobs no está disponible. */
+/** Consistencia con la que quedó abierto el libro en esta instancia (para logs). */
+export let consistenciaLibro: 'strong' | 'eventual' | 'sin-abrir' = 'sin-abrir';
+
+/** Abre el store, con consistencia FUERTE si el runtime la soporta. Lanza si
+ *  Blobs no está disponible.
+ *
+ *  ⚠️ MEDIDO EN EL DEPLOY PREVIEW 78 (2026-09-06): en una function v1
+ *  (Lambda-compat) el contexto que llega por `connectLambda(event)` NO trae la
+ *  propiedad `uncachedEdgeURL`, y cualquier lectura con `consistency:'strong'`
+ *  lanza `BlobsConsistencyError` («the environment has not been configured
+ *  with a 'uncachedEdgeURL' property»). Por eso aquí se hace una LECTURA DE
+ *  PRUEBA con consistencia fuerte y, si falla por eso, se reabre en eventual
+ *  y se avisa en los logs. La idempotencia de la entrega NO depende de esto:
+ *  las escrituras condicionales (`onlyIfMatch`/`onlyIfNew`) se validan en el
+ *  origen, así que una lectura obsoleta a lo sumo cuesta un 500 y un reintento
+ *  del IPN, nunca una doble entrega. */
 export async function abrirLibro(event: unknown): Promise<BlobStore> {
-  const { connectLambda, getStore } = await import('@netlify/blobs');
+  const blobs = await import('@netlify/blobs');
+  const abrir = (consistency: 'strong' | 'eventual'): BlobStore =>
+    blobs.getStore({ name: CRYPTO_STORE, consistency }) as unknown as BlobStore;
+
+  // 1) Contexto de entorno completo (NETLIFY_BLOBS_CONTEXT): si existe, trae
+  //    la URL sin caché y la consistencia fuerte funciona. `getStore` lanza
+  //    MissingBlobsEnvironmentError si no hay contexto → pasamos al plan 2.
+  let store: BlobStore | null = null;
   try {
-    connectLambda(event as { blobs: string; headers: Record<string, string> });
+    store = abrir('strong');
   } catch {
-    /* runtime sin event.blobs: getStore lo intentará por variable de entorno */
+    store = null;
   }
-  return getStore({ name: CRYPTO_STORE, consistency: 'strong' }) as unknown as BlobStore;
+  // 2) Contexto del evento (functions v1): puede venir sin `uncachedEdgeURL`.
+  if (!store) {
+    try {
+      blobs.connectLambda(event as { blobs: string; headers: Record<string, string> });
+    } catch {
+      /* sin event.blobs: getStore volverá a lanzar y el error sube al llamador */
+    }
+    store = abrir('strong');
+  }
+  // 3) Lectura de prueba: la fuerte sólo falla en el momento de leer.
+  try {
+    await store.get('__probe__', { type: 'json' });
+    consistenciaLibro = 'strong';
+    return store;
+  } catch (err) {
+    const msg = String((err as Error)?.message || err);
+    if (!/uncachedEdgeURL|BlobsConsistencyError|strong consistency/i.test(msg)) throw err;
+    if (consistenciaLibro !== 'eventual') {
+      console.warn('[crypto-orders] consistencia fuerte no disponible en este runtime; libro en consistencia EVENTUAL');
+    }
+    consistenciaLibro = 'eventual';
+    return abrir('eventual');
+  }
 }
 
 // ── Utilidades ──────────────────────────────────────────────────────────────
