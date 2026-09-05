@@ -1041,9 +1041,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-cafeteria': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.2',
+    updated: '2026-09-05',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-09-05',
+        title: 'Plan financiero reconstruido: 9 hojas y 739 fórmulas, con tesorería, financiación y el oficio de la cafetería',
+        changes: [
+          'El plan financiero pasa de 6 hojas de cifras tecleadas a 9 hojas enlazadas por fórmula (739 en total): cambias una celda verde de «0. Supuestos» y se recalcula el libro entero.',
+          'Hojas nuevas: «Tesorería 12 meses» (cobros, pagos, liquidación de IVA por trimestres y saldo mes a mes) y «Financiación» (origen de fondos, cuadro de amortización francés con carencia y cobertura de la deuda).',
+          'El coste de personal sale ya de su propia hoja: 6 puestos —propietario-barista, baristas de mañana y tarde, ayudante de brunch, extra de fin de semana y suplencias—, 100.083 €/año, con dos avisos automáticos: ningún sueldo por debajo del SMI según su jornada, y la plantilla cubriendo el 100 % de las horas de servicio de barra, sala y terraza.',
+          'Caso base recalibrado con datos defendibles: 100 clientes al día y 9,80 € de ticket sin IVA (10,78 € de PVP), con los cinco ratios del sector cumplidos los tres años; punto de equilibrio en 84 clientes/día (79 en el umbral de caja) e inversión inicial de 130.176 € (91.650 € de CAPEX más 38.526 € de fondo de maniobra).',
+          'IVA propio de la barra: el consumo en sala tributa al 10 % con el alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992), y el IVA de la inversión se adelanta y se compensa en la hoja de tesorería.',
+          'Checklist de apertura: de 69 a 75 trámites, con el registro sanitario autonómico —sustituye al RGSEAA estatal, que no aplica al minorista que sirve al consumidor final—, RGPD, adaptación a Veri*factu, gestor de residuos, DDD y registro horario.',
+          'El documento Word sigue en la versión anterior por ahora: las cifras válidas son las del Excel (se actualizará en la próxima versión).',
+          'Número de versión (2.2) en los dos ficheros.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -1076,9 +1091,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-food-truck': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.2',
+    updated: '2026-09-05',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-09-05',
+        title: 'El plan financiero pasa a ser un modelo de verdad',
+        changes: [
+          'Hoja nueva de Supuestos: cambias los clientes al día, el ticket o el coste de mercancía y se recalculan el P&L, el punto de equilibrio, los escenarios, la tesorería y la financiación (718 fórmulas enlazadas; antes el libro eran cifras tecleadas).',
+          'Hoja nueva de Tesorería 12 meses: cobros, pagos, liquidación trimestral de IVA y saldo acumulado mes a mes, para saber de un vistazo si la caja aguanta.',
+          'Hoja nueva de Financiación: origen y usos de los fondos (25.000 € de recursos propios más 72.000 € de préstamo), cuadro de amortización del préstamo año a año y cobertura del servicio de la deuda (DSCR).',
+          'El coste de personal del P&L ya sale de la hoja de Personal: 42.081 € al año con 4 puestos dimensionados para los 250 días de servicio (propietario/a a jornada completa, ayudante de cocina y servicio al 45 %, refuerzo de festivales al 10 % y suplencias de vacaciones al 6 %). Antes la cuenta de resultados tecleaba 42.000 € mientras su propia hoja sumaba 76.566 €.',
+          'El aparcamiento y la base del vehículo tienen ahora su propia partida (400 €/mes, 4.800 € al año) en vez del alquiler que este negocio no paga, y la amortización se calcula sobre lo que de verdad es inmovilizado: el vehículo y su adaptación a 8 años, el equipamiento a 10, con el Impuesto de Sociedades al 15 % los dos primeros ejercicios con beneficio.',
+          'El checklist pasa de 59 a 68 trámites: Veri*factu, registro horario, RGPD, hojas de reclamaciones, gestor de residuos y aceite usado, DDD y canon de música. El registro sanitario ya no es el estatal (RGSEAA) sino el de tu comunidad autónoma, y el epígrafe de IAE deja de ser el de un restaurante fijo.',
+          'El documento Word sigue en la versión anterior: las cifras válidas hoy son las del Excel actualizado (el Word se pondrá al día en la próxima versión).',
+          'Número de versión (2.2) en los dos ficheros.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -1108,9 +1138,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-panaderia': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.2',
+    updated: '2026-09-05',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-09-05',
+        title: 'El plan financiero pasa a ser un modelo completo: personal por fórmula, tesorería y financiación nuevas, y el pan común al 4 % de IVA',
+        changes: [
+          'El coste de personal del P&L sale ahora de la hoja Personal, calculado puesto por puesto y no a mano aparte: seis puestos —maestro panadero, oficial panadero, ayudante de obrador, dependienta, un refuerzo de fin de semana y una línea de suplencias de vacaciones— por 113.861 € al año, con la comprobación de que las horas contratadas cubren el turno de madrugada del obrador y el horario de la tienda.',
+          'Dos hojas nuevas: «Tesorería 12 meses» (cobros, pagos y liquidación trimestral del IVA, mes a mes) y «Financiación» (origen de los fondos, cuadro de amortización del préstamo con carencia y comprobación de la capacidad de pago año a año).',
+          'El IVA se reparte ahora por línea de venta: el pan común y las harinas panificables al 4 % —el tipo superreducido del art. 91.Dos.1.1.º de la Ley del IVA—, y la bollería, la pastelería y el café al 10 %, con una celda para ajustar el peso del pan común según tu carta.',
+          'Un solo calendario de apertura (310 días al año) y el ticket declarado sin IVA (5,50 €), con el caso base recalculado: los cinco ratios del libro —coste de mercancía, personal, alquiler, resultado neto y margen bruto— cumplen en los tres años.',
+          'El punto de equilibrio pasa a expresarse en transacciones diarias de mostrador, no en kilos de pan: 162 al día para cubrir los costes y 155 en términos de caja.',
+          'Checklist de apertura ampliado a 66 trámites en 6 fases: RGPD, Veri*factu, gestor de residuos autorizado, control de plagas, registro horario y licencia de música ambiental, con el epígrafe de IAE corregido (644.1 para la venta en tienda, con aviso del 419.1 si el canal mayorista crece) y el registro sanitario correcto: el de tu Comunidad Autónoma, no el RGSEAA estatal, salvo que tu volumen mayorista te obligue a consultarlo con tu gestoría.',
+          'El plan de negocio en Word sigue siendo el de la versión 1.1 —no se ha actualizado en este lanzamiento— y sus cifras (facturación, inversión, plantilla) no coinciden con las del Excel: mientras tanto, las cifras válidas son las del plan financiero Excel; el documento Word se actualizará en la próxima versión.',
+          'Número de versión (2.2) en los dos ficheros.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -1141,9 +1186,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-tapas-bar': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.2',
+    updated: '2026-09-05',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-09-05',
+        title: 'El plan financiero se convierte en un modelo con fórmulas, con el IVA de sala del tapas bar al 10 %',
+        changes: [
+          'El Excel pasa de 6 hojas con cifras fijas a 9 hojas con 739 fórmulas: cambias un dato en una celda verde —el ticket, los clientes al día, el alquiler— y el libro entero se recalcula solo.',
+          'Tres hojas nuevas: «0. Supuestos», que concentra todos los datos de partida en un único sitio; «Tesorería 12 meses», con la liquidación del IVA mes a mes; y «Financiación», con el cuadro de amortización del préstamo.',
+          'El coste de personal del P&L ya sale de la hoja «Personal» —108.368 € al año para los 7 puestos del tapas bar, con semáforo si un sueldo baja del salario mínimo según su jornada—, y no de una cifra escrita aparte.',
+          'IVA por línea de venta: en sala todo va al 10 %, alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el 21 % general sólo alcanza al alcohol que sale por delivery.',
+          'Impuesto de Sociedades al 15 % en los dos primeros ejercicios con beneficio, compensando pérdidas anteriores: el tipo que corresponde a una empresa de nueva creación.',
+          'El checklist de apertura pasa de 63 a 73 trámites: suma RGPD, registro horario, Veri*factu, gestor de residuos, desinsectación/desratización (DDD) y derechos de autor por la música ambiental de la barra.',
+          'El documento Word (plan de negocio DOCX) sigue en la versión anterior y no se ha actualizado en esta revisión: las cifras válidas de este plan son las del Excel; el Word se pondrá al día en la próxima versión.',
+          'Número de versión (2.2) en los dos ficheros.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
