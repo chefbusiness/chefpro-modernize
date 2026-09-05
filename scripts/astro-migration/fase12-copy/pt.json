@@ -1,0 +1,134 @@
+{
+  "lang": "pt",
+  "path": "/pt/integracoes",
+  "breadcrumb": "Integrações",
+  "seo": {
+    "title": "Integrações do AI Chef Pro: Ligue Gmail, Sheets, Instagram e mais 13",
+    "description": "Os seus agentes de IA já trabalham dentro das ferramentas que usa: Gmail, Google Sheets, Instagram, Notion, Canva… Pede falando, autoriza uma vez e está feito.",
+    "keywords": "integrações ai chef pro, ligar gmail restaurante ia, agentes ia para hotelaria, assistente ia para restaurantes, composio, automatização gastronómica"
+  },
+  "hero": {
+    "eyebrow": "Novidade em todos os agentes",
+    "h1": "Os seus agentes de IA agora trabalham dentro das suas próprias ferramentas",
+    "sub": "Até agora, o que gerava no AI Chef Pro tinha de ser copiado e colado à mão. Acabou-se: ligue as suas contas do Gmail, Google Sheets, Instagram ou Notion e peça ao agente falando, como pediria a alguém da sua equipa.",
+    "cta": "Experimentar os agentes",
+    "cta2": "Ver como funciona"
+  },
+  "pasos": {
+    "title": "Três passos, e o terceiro não é você que faz",
+    "sub": "Não há nenhum painel de configuração para estudar nem integrações para preparar com antecedência. A ligação aparece no momento em que precisa dela.",
+    "items": [
+      {
+        "n": "1",
+        "t": "Peça falando",
+        "d": "Dentro do chat, na sua língua: «quero enviar esta receita por e-mail via Gmail», «converte esta tabela e manda para o Google Sheets», «publica esta imagem no Instagram»."
+      },
+      {
+        "n": "2",
+        "t": "Autorize a conta uma vez",
+        "d": "Na primeira vez que usar cada serviço, o agente estabelece a ligação e pede-lhe permissão na janela oficial da própria plataforma. Autoriza com a sua conta — não nos dá a sua palavra-passe."
+      },
+      {
+        "n": "3",
+        "t": "O agente trata do resto",
+        "d": "O e-mail é enviado, a folha de cálculo é criada, a foto é publicada. E a autorização fica guardada: não volta a pedi-la até expirar e ser necessário renová-la."
+      }
+    ]
+  },
+  "catalogo": {
+    "title": "16 ferramentas ligadas, e a crescer",
+    "sub": "São as plataformas que já usa todos os dias no restaurante. A ligação é gerida pelo Composio, a camada responsável pela autorização de cada serviço.",
+    "categorias": {
+      "comunicacion": "Correio",
+      "documentos": "Documentos e dados",
+      "organizacion": "Organização e consulta",
+      "contenido": "Conteúdo e design",
+      "redes": "Redes sociais"
+    },
+    "ejemplos": {
+      "gmail": "Envie a ficha de custos da semana ao seu chefe de cozinha sem sair do chat.",
+      "outlook": "Mande a proposta de menu ao cliente do catering a partir do e-mail da empresa.",
+      "sheets": "Converta em folha de cálculo a tabela de custos que o agente acabou de calcular.",
+      "docs": "Passe o manual da sua brigada para um documento pronto a imprimir e distribuir.",
+      "drive": "Guarde as fichas técnicas na pasta partilhada da equipa, devidamente organizadas.",
+      "calendar": "Bloqueie na agenda as tarefas de mise en place de toda a semana.",
+      "notion": "Exporte o receituário do novo menu para a base de conhecimento do restaurante.",
+      "googlesuper": "Verifique preços de mercado ou um ponto de regulamentação antes de decidir.",
+      "canva": "Transforme a ementa num design pronto a imprimir ou para o ecrã do espaço.",
+      "wordpress": "Publique no site do restaurante o artigo sobre o prato da época.",
+      "instagram": "Publique a foto do serviço de hoje com a legenda que o agente acabou de escrever.",
+      "facebook": "Programe na página do negócio o anúncio do menu de Natal.",
+      "linkedin": "Partilhe como reduziu o desperdício em 12% neste trimestre.",
+      "x": "Anuncie numa linha que as reservas de Passagem de Ano já estão abertas.",
+      "tiktok": "Publique o vídeo da apresentação do prato com a descrição já redigida.",
+      "reddit": "Pergunte e aprenda nas comunidades de hotelaria e restauração."
+    }
+  },
+  "extras": {
+    "title": "E ainda: todos os agentes ficaram mais inteligentes",
+    "sub": "A ligação às suas contas chegou acompanhada de outras duas melhorias que vai notar desde a primeira conversa.",
+    "items": [
+      {
+        "t": "Raciocínio avançado",
+        "d": "Os agentes agora pensam antes de responder: analisam o contexto, avaliam opções e constroem a resposta. Nota-se sobretudo no que envolve cálculos — fichas técnicas, engenharia de menu, planos de negócio —, onde antes era preciso reformular a pergunta para afinar o resultado."
+      },
+      {
+        "t": "Artefactos que pode reutilizar",
+        "d": "Os agentes de chat criam e editam artefactos: documentos, tabelas, visualizações de dados, componentes interativos e ficheiros HTML ou CSS. Em vez de um bloco de texto, devolvem-lhe algo que pode continuar a modificar na mesma conversa. As receitas e as fichas técnicas ficam de fora: têm as suas próprias ações especializadas, que são mais adequadas para isso."
+      }
+    ]
+  },
+  "seguridad": {
+    "title": "As suas credenciais são suas",
+    "parrafos": [
+      "Cada ligação é autorizada na janela oficial do serviço: é a própria Google, Meta ou Notion que lhe pergunta se permite o acesso. O AI Chef Pro nunca vê nem guarda a sua palavra-passe.",
+      "A autorização é pedida apenas quando precisa dela — não é necessário preparar nada com antecedência — e mantém-se até expirar. Pode revogá-la quando quiser a partir da sua conta do serviço, e o agente perde o acesso de imediato."
+    ],
+    "bullets": [
+      "Autorização oficial de cada plataforma, com as suas próprias credenciais",
+      "Nunca pedimos nem armazenamos palavras-passe",
+      "Permissões limitadas ao que o agente precisa de fazer",
+      "Revogável a qualquer momento a partir do próprio serviço"
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "Como digo ao agente para usar uma das minhas contas?",
+        "a": "Falando, dentro do chat. Frases como «quero enviar esta receita por e-mail via Gmail», «converte esta tabela e manda para o Google Sheets» ou «publica esta imagem no Instagram» são suficientes. Não é preciso ativar nada antes nem decorar nenhum comando: o agente reconhece a intenção e estabelece a ligação necessária."
+      },
+      {
+        "q": "Tenho de ligar as minhas contas antes de começar?",
+        "a": "Não. A autorização é acionada no momento em que pede algo que a requer. Na primeira vez que usar cada serviço, verá a janela de permissões dessa plataforma; a partir daí, o agente já pode trabalhar com ela."
+      },
+      {
+        "q": "De quanto em quanto tempo tenho de voltar a autorizar?",
+        "a": "Apenas quando a autorização expirar. Enquanto estiver válida, o agente reutiliza-a e não volta a perguntar nada. Quando expirar, pedirá para renová-la com os mesmos dois cliques da primeira vez."
+      },
+      {
+        "q": "É seguro? Quem pode ver os meus dados?",
+        "a": "A permissão é concedida na janela oficial do serviço, não num formulário nosso, por isso a sua palavra-passe nunca passa pelo AI Chef Pro. O acesso fica limitado ao que o agente tem de fazer e pode revogá-lo quando quiser a partir das definições da sua conta Google, Meta, Notion ou da plataforma em questão."
+      },
+      {
+        "q": "O que é o Composio e por que aparece aqui?",
+        "a": "O Composio é a camada que gere as ligações com as plataformas externas: trata da autorização, da renovação das permissões e garante que cada ferramenta responde de forma estável. Não é mais uma ferramenta do seu dia a dia — é o que torna possível que as outras dezasseis funcionem a partir do chat."
+      },
+      {
+        "q": "Está incluído no meu plano?",
+        "a": "Sim. As ligações, o raciocínio avançado e os artefactos estão disponíveis para todos os utilizadores do AI Chef Pro, sem custo adicional nem módulo separado."
+      }
+    ]
+  },
+  "cierre": {
+    "title": "Abra um agente e peça-lhe que envie algo",
+    "sub": "A forma mais rápida de perceber é usar: gere uma ficha técnica e diga «passa isto para o Google Sheets». Em dois cliques de autorização terá tudo na sua unidade.",
+    "cta": "Entrar no AI Chef Pro"
+  },
+  "home": {
+    "eyebrow": "Novidade",
+    "title": "Os seus agentes já trabalham com as suas ferramentas",
+    "sub": "«Manda esta receita pelo Gmail». «Passa esta tabela para o Google Sheets». «Publica esta foto no Instagram». Peça falando: autoriza a conta uma vez e o agente trata do resto.",
+    "cta": "Ver as 16 ligações"
+  }
+}

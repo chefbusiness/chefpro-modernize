@@ -1,0 +1,34 @@
+{
+  "title": "Os Seus Agentes de IA Já Se Ligam ao Gmail, Sheets e Instagram",
+  "description": "Os agentes de AI Chef Pro já se ligam ao Gmail, Google Sheets, Instagram e mais 13 plataformas. Você pede-lhe por voz e ele faz por você.",
+  "alt_destacada": "Tablet com uma tabela de custos no passe de uma cozinha profissional",
+  "alt_hoja": "Tablet sobre a bancada a mostrar uma folha de cálculo junto a uma balança",
+  "alt_movil": "Um telemóvel a fotografar um prato empratado no passe para o publicar",
+  "faq": [
+    {
+      "q": "Tenho de fazer alguma coisa para ativar as novidades?",
+      "a": "Não. O raciocínio avançado e os artefactos já estão ativos em todos os agentes: vai notá-los na próxima conversa sem tocar em nenhuma configuração. As ligações a plataformas externas também não são configuradas antecipadamente: ativam-se sozinhas na primeira vez que pedir ao agente para enviar algo."
+    },
+    {
+      "q": "Isto encarece o meu plano ou é cobrado à parte?",
+      "a": "Não. As três melhorias estão incluídas para todos os utilizadores de AI Chef Pro, sem custo adicional nem módulo extra. Continua a gastar créditos como sempre pelo trabalho do agente."
+    },
+    {
+      "q": "Porque é que as receitas e as fichas de custo não são artefactos?",
+      "a": "Porque têm ações próprias, e são melhores para isso. Uma receita ou uma ficha de custo no AI Chef Pro não é um documento solto: é guardada com a sua estrutura, as suas gramagens e os seus custos para poder recalcular e reutilizar. Convertê-las em artefactos genéricos seria um passo atrás."
+    },
+    {
+      "q": "Que agentes podem ligar-se às minhas contas?",
+      "a": "Todos os agentes do tipo chat. Ao pedir-lhes que enviem, publiquem ou guardem algo numa plataforma externa, eles próprios estabelecem a ligação dentro da conversa."
+    },
+    {
+      "q": "E se quiser deixar de dar acesso a uma conta?",
+      "a": "Pode revogar a permissão quando quiser a partir das definições da sua própria conta do Google, Meta, Notion ou da plataforma que for. Assim que a revogar, o agente deixa de ter acesso. Não é preciso passar pelo AI Chef Pro para o fazer."
+    },
+    {
+      "q": "Tenho de criar uma conta na Composio?",
+      "a": "Não. A Composio é a camada que gere as ligações por baixo: você não se regista nela nem a vê. Autoriza diretamente na janela oficial do Gmail, Notion ou da plataforma que for, com a conta que já tem."
+    }
+  ],
+  "slug": "agentes-ia-ligados-gmail-sheets-instagram"
+}

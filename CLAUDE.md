@@ -336,6 +336,50 @@ contra 4 defectos inyectados a mano: los caza los 4 (uno de ellos sólo tras
 arreglar que `fr.html` se leía como española — con `build.format: 'file'` la
 portada de cada idioma **no** es `fr/index.html`).
 
+### Integraciones / conectores (Fase 12, 2026-09-05)
+
+Los agentes ganaron razonamiento avanzado, **artefactos** (Copilot) y **conexión con
+plataformas externas vía Composio**. Se construyó `/integraciones` en los 7 idiomas,
+una sección en las 7 portadas, el enlace en la navegación y el post del blog en los
+6 idiomas con blog. Piezas: `fase12-integraciones.py` (genera las 7 landings desde
+`fase12-copy/*.json`), `fase12-traducir-copy.py`, `fase12-post-*.py`,
+`components/IntegracionesPage.astro`, `IntegracionesShowcase.astro`, `BrandIcon.astro`
+y `data/integraciones.ts`.
+
+- **Son 16 plataformas + Composio, no 17.** Composio no es una herramienta del
+  usuario: es el hub que gestiona la autorización de las otras. Contarlo dentro
+  infla la cifra y confunde lo que se vende.
+- **Un enlace de navegación nuevo hay que ponerlo en CUATRO ficheros.**
+  `Header.astro` y `Footer.astro` **no bastan**: las landings de marketing generadas
+  (Fase 6) montan los gemelos de React `src/components/ModernHeader.tsx` y
+  `ModernFooter.tsx`. Con sólo los `.astro`, el enlace falta en media web.
+- **Outlook, Canva, LinkedIn y Composio NO están en Simple Icons** (retirados a
+  petición de las marcas) y la API de Composio pide clave. Se pintan como tesela con
+  la inicial y el color oficial. **Notion, TikTok y X son negros**: sin color alterno
+  desaparecen en modo oscuro.
+- **El tratamiento al lector cambia por idioma y hay que imponerlo.** Medido sobre
+  `src/i18n/locales/*.json`: **es tú · fr vous · de Sie · it tu · pt você · nl u**.
+  La primera traducción francesa vino tuteando. El pipeline lleva la instrucción
+  **y un gate que la verifica sobre el resultado**, porque el modelo la ignora a veces.
+
+**Tres modos de fallo del traductor, cada uno con su gate (todos vistos ese día):**
+
+| Fallo | Qué pasó | Gate |
+|---|---|---|
+| El alemán rompe el JSON | Cierra comillas con `„ … "` y emite el cierre como comilla RECTA, que termina la cadena. Falló con los DOS motores aun pidiéndoselo | `repara_comillas()`: escapa las comillas sueltas dentro de los valores |
+| Sobra contenido, no falta | El francés devolvió el artículo **tres veces** y pasaba todo, porque los gates sólo miraban que no faltara nada | Nº de H2 **igual** al español, palabras en [0,6×, 1,5×], sin párrafos repetidos |
+| DeepSeek se atasca | 40 minutos sin devolver nada donde Sonnet resolvió el artículo en cinco | Timeout corto (420 s) en el primer motor y caída a `anthropic/claude-sonnet-4.6` |
+
+- **Los banners de producto van sólo en ES y EN.** `products-catalog.ts` sólo tiene
+  nombre y descripción en esos idiomas, y los 49 posts de los blogs FR/DE/IT/PT
+  tienen **cero** banners. Un banner en francés manda a un checkout en español.
+- **`bridge.py` escribió el post ES con `--model anthropic/claude-sonnet-4.6`**, no
+  con DeepSeek: el brief lleva una tabla de 16 filas con ejemplos a medida y es
+  justo el tipo de prompt donde el motor de razonamiento se cuelga.
+- ⚠️ **Revisar SIEMPRE las cifras de plan que invente el modelo.** El borrador del
+  post decía «incluido el plan gratuito» y **en la web ya no hay plan gratuito**
+  (el Miembro son 10 €/mes). Habría salido publicado.
+
 ### Banners de productos digitales: política obligatoria
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.

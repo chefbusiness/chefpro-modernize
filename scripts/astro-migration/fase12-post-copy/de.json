@@ -1,0 +1,34 @@
+{
+  "title": "Ihre KI-Agenten verbinden sich jetzt mit Gmail, Sheets und Instagram",
+  "description": "Die Agenten von AI Chef Pro verbinden sich mit Gmail, Google Sheets, Instagram und 13 weiteren Plattformen. Einfach ansagen – und es wird erledigt.",
+  "alt_destacada": "Tablet mit einer Kostentabelle im Durchreiche-Bereich einer professionellen Küche",
+  "alt_hoja": "Tablet auf der Arbeitsfläche mit einer Tabellenkalkulation neben einer Küchenwaage",
+  "alt_movil": "Ein Smartphone fotografiert ein angerichtetes Gericht im Durchreiche-Bereich zur Veröffentlichung",
+  "faq": [
+    {
+      "q": "Müssen Sie etwas tun, um die Neuerungen zu aktivieren?",
+      "a": "Nein. Das erweiterte Denkvermögen und die Artefakte sind bereits in allen Agenten aktiv: Sie werden es beim nächsten Gespräch bemerken, ohne irgendeine Einstellung ändern zu müssen. Auch die Verbindungen mit externen Plattformen müssen nicht vorab konfiguriert werden – sie aktivieren sich automatisch beim ersten Mal, wenn Sie den Agenten bitten, etwas zu senden."
+    },
+    {
+      "q": "Verteuert das meinen Plan oder wird es separat berechnet?",
+      "a": "Nein. Alle drei Verbesserungen sind für alle Nutzer von AI Chef Pro ohne Aufpreis und ohne zusätzliches Modul enthalten. Sie verbrauchen Credits wie gewohnt für die Arbeit des Agenten."
+    },
+    {
+      "q": "Warum sind Rezepte und Kalkulationen keine Artefakte?",
+      "a": "Weil sie eigene Funktionen haben und dafür besser geeignet sind. Ein Rezept oder eine Kalkulation in AI Chef Pro ist kein loses Dokument: Es wird mit seiner Struktur, seinen Mengenangaben und seinen Kosten gespeichert, um es neu berechnen und wiederverwenden zu können. Sie als generische Artefakte zu behandeln wäre ein Rückschritt."
+    },
+    {
+      "q": "Welche Agenten können sich mit Ihren Konten verbinden?",
+      "a": "Alle Chat-Agenten. Wenn Sie sie bitten, etwas auf einer externen Plattform zu senden, zu veröffentlichen oder zu speichern, stellen sie die Verbindung selbstständig innerhalb des Gesprächs her."
+    },
+    {
+      "q": "Was tun, wenn Sie den Zugriff auf ein Konto widerrufen möchten?",
+      "a": "Sie können die Berechtigung jederzeit über die Einstellungen Ihres eigenen Google-, Meta-, Notion- oder sonstigen Plattformkontos widerrufen. Sobald Sie dies tun, hat der Agent keinen Zugriff mehr. Dafür müssen Sie nicht über AI Chef Pro gehen."
+    },
+    {
+      "q": "Müssen Sie ein Konto bei Composio erstellen?",
+      "a": "Nein. Composio ist die Schicht, die die Verbindungen im Hintergrund verwaltet: Sie registrieren sich nicht dort und sehen sie nicht. Sie autorisieren direkt im offiziellen Fenster von Gmail, Notion oder der jeweiligen Plattform – mit dem Konto, das Sie bereits haben."
+    }
+  ],
+  "slug": "ki-agenten-gmail-sheets-instagram"
+}

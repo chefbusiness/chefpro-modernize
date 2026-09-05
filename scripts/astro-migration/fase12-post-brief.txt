@@ -1,0 +1,75 @@
+Eres el equipo de AI Chef Pro escribiendo en su propio blog para sus usuarios:
+chefs, propietarios de restaurante, directores de A&B y profesionales de hostelería.
+Escribe el CUERPO de un artículo en español que anuncia una actualización mayor de
+todos los agentes de la plataforma.
+
+FORMATO DE SALIDA (importante):
+- Markdown. NADA de frontmatter, NADA de ```, NADA de comentarios tuyos.
+- NO escribas un H1 ni un título: el layout ya pinta el título. Empieza directamente
+  por el primer párrafo de la introducción.
+- Usa H2 (##) para las secciones y H3 (###) si hace falta dentro de una sección.
+- Extensión: entre 950 y 1.150 palabras.
+
+QUÉ SE ANUNCIA (son los hechos, no los cambies ni inventes otros):
+
+1. RAZONAMIENTO AVANZADO. Los agentes ahora "piensan" antes de responder: analizan
+   el contexto, valoran opciones y construyen la respuesta en vez de soltar lo
+   primero. Se nota sobre todo donde hay cuentas de por medio: escandallos,
+   ingeniería de menú, planes de negocio. NO menciones qué modelo de IA es ni su
+   nombre ni su versión: habla de la capacidad, no del motor.
+
+2. ARTEFACTOS (Copilot). Los agentes de chat crean, actualizan y gestionan
+   "artefactos": documentos, fragmentos de código, visualizaciones de datos,
+   componentes interactivos, ficheros HTML/CSS y cualquier contenido autónomo que
+   el usuario quiera generar, modificar o reutilizar durante la conversación. En
+   vez de un muro de texto, devuelven algo que se puede seguir editando en la misma
+   conversación. IMPORTANTE: las recetas y los escandallos QUEDAN FUERA de los
+   artefactos porque tienen sus propias acciones especializadas, que son mejores
+   para eso. Dilo explícitamente.
+
+3. CONEXIÓN CON 16 HERRAMIENTAS EXTERNAS. Los agentes de chat se conectan con las
+   plataformas que el usuario ya usa, con sus propias credenciales. La capa que
+   gestiona las conexiones se llama Composio; Composio NO es una herramienta más
+   del chef, es el hub que gestiona la autorización, así que NO lo cuentes dentro
+   de las 16. Las 16 son:
+   Gmail, Outlook (correo); Google Sheets, Google Docs, Google Drive (documentos
+   y datos); Google Calendar, Notion, Google Super que son búsquedas avanzadas de
+   Google (organización y consulta); Canva, WordPress (contenido y diseño);
+   Instagram, Facebook, LinkedIn, X (Twitter), TikTok, Reddit (redes sociales).
+
+CÓMO SE USA (esto es lo más importante del artículo, dale espacio y ejemplos):
+   No hay panel de configuración ni integraciones que preparar por adelantado. Se
+   pide HABLANDO, dentro del chat, con frases naturales como:
+     «quiero enviar esta receta por correo vía Gmail»
+     «convierte esta tabla y mándala a Google Sheets»
+     «quiero enviar esta imagen a Instagram»
+   La primera vez que se usa un servicio, el agente levanta la conexión y pide
+   permiso en la ventana oficial de esa plataforma. El usuario autoriza con su
+   cuenta; AI Chef Pro nunca ve ni guarda su contraseña. Esa autorización queda
+   guardada y no se vuelve a pedir hasta que caduca y toca renovarla.
+   Está disponible para TODOS los usuarios, sin coste añadido ni módulo aparte.
+
+ESTRUCTURA QUE QUIERO:
+- Introducción de 2 párrafos que arranque del problema real: hasta ahora, lo que
+  generabas en la plataforma había que copiarlo y pegarlo a mano en otro sitio.
+- Una sección H2 por cada una de las tres mejoras, en el orden 1, 2, 3.
+- Dentro de la sección de las conexiones, incluye una TABLA en Markdown con tres
+  columnas: Plataforma | Para qué la usa un hostelero | Ejemplo de lo que le pides
+  al agente. Una fila por cada una de las 16. Los ejemplos tienen que ser de
+  cocina y restaurante de verdad (escandallos, fichas técnicas, carta, mise en
+  place, pase, mermas, reservas, proveedor, catering), no genéricos de oficina.
+- Una sección H2 sobre qué pasa con las credenciales y la seguridad.
+- Un cierre corto que invite a abrir un agente y probarlo pidiéndole que mande algo.
+
+REGLAS DE ESTILO:
+- Cada sección abre con una respuesta directa y citable en 1 o 2 frases (hay AI
+  Overview en esta SERP), y luego desarrolla.
+- Tono cercano, humano y profesional. Tuteo. Nada de frases de relleno tipo "en el
+  vertiginoso mundo de la tecnología" ni "revolucionar". Nada de lenguaje
+  corporativo hueco.
+- Escribe SOLO en español. Ni una palabra en otro idioma más allá de los nombres
+  propios de las plataformas, y ningún carácter de otro alfabeto.
+- No uses la palabra "herramientas" para referirte a los agentes de AI Chef Pro:
+  son AGENTES. "Herramientas" resérvalo para las plataformas externas (Gmail,
+  Sheets…).
+- No inventes cifras, porcentajes, testimonios ni fechas.

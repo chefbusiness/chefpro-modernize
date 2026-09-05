@@ -1,0 +1,34 @@
+{
+  "title": "I tuoi agenti IA si connettono già con Gmail, Sheets e Instagram",
+  "description": "Gli agenti di AI Chef Pro si connettono già con Gmail, Google Sheets, Instagram e altre 13 piattaforme. Glielo chiedi parlando e lo fa per te.",
+  "alt_destacada": "Tablet con una tabella dei costi nel pass di una cucina professionale",
+  "alt_hoja": "Tablet sul piano di lavoro che mostra un foglio di calcolo accanto a una bilancia",
+  "alt_movil": "Uno smartphone che fotografa un piatto impiattato nel pass per pubblicarlo",
+  "faq": [
+    {
+      "q": "Devo fare qualcosa per attivare le novità?",
+      "a": "No. Il ragionamento avanzato e gli artefatti sono già attivi in tutti gli agenti: li noterai nella prossima conversazione senza toccare alcuna impostazione. Anche le connessioni con piattaforme esterne non si configurano in anticipo: si attivano da sole la prima volta che chiedi all'agente di inviare qualcosa."
+    },
+    {
+      "q": "Questo aumenta il costo del mio piano o viene addebitato a parte?",
+      "a": "No. I tre miglioramenti sono inclusi per tutti gli utenti di AI Chef Pro, senza costi aggiuntivi né moduli aggiuntivi. Continui a spendere crediti come sempre per il lavoro dell'agente."
+    },
+    {
+      "q": "Perché le ricette e le schede di costificazione non sono artefatti?",
+      "a": "Perché hanno azioni proprie e sono migliori per quello. Una ricetta o una scheda di costificazione in AI Chef Pro non è un documento isolato: si salva con la sua struttura, le sue grammature e i suoi costi per poterlo ricalcolare e riutilizzare. Convertirli in artefatti generici sarebbe un passo indietro."
+    },
+    {
+      "q": "Quali agenti possono connettersi ai miei account?",
+      "a": "Tutti gli agenti di tipo chat. Quando gli chiedi di inviare, pubblicare o salvare qualcosa su una piattaforma esterna, stabiliscono la connessione da soli all'interno della conversazione."
+    },
+    {
+      "q": "E se voglio smettere di dare accesso a un account?",
+      "a": "Puoi revocare il permesso quando vuoi dalle impostazioni del tuo account su Google, Meta, Notion o qualsiasi piattaforma. Appena lo revochi, l'agente non ha più accesso. Non è necessario passare da AI Chef Pro per farlo."
+    },
+    {
+      "q": "Devo creare un account su Composio?",
+      "a": "No. Composio è il livello che gestisce le connessioni in sottofondo: tu non ti registri e non lo vedi. Autorizzi direttamente nella finestra ufficiale di Gmail, Notion o qualsiasi piattaforma, con l'account che già hai."
+    }
+  ],
+  "slug": "agenti-ia-collegati-gmail-sheets-instagram"
+}

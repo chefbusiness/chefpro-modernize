@@ -1,0 +1,134 @@
+{
+  "lang": "nl",
+  "path": "/nl/integraties",
+  "breadcrumb": "Integraties",
+  "seo": {
+    "title": "Integraties van AI Chef Pro: Verbind Gmail, Sheets, Instagram en 13 meer",
+    "description": "Uw AI-agenten werken al binnen de tools die u dagelijks gebruikt: Gmail, Google Sheets, Instagram, Notion, Canva… Geef een opdracht in gewone taal, autoriseer eenmalig en klaar.",
+    "keywords": "integraties ai chef pro, gmail verbinden restaurant ai, ai-agenten voor horeca, ai-assistent voor restaurants, composio, automatisering gastronomie"
+  },
+  "hero": {
+    "eyebrow": "Nieuw in alle agenten",
+    "h1": "Uw AI-agenten werken nu rechtstreeks in uw eigen tools",
+    "sub": "Tot nu toe moest u alles wat AI Chef Pro genereerde handmatig kopiëren en plakken. Dat is voorbij: koppel uw Gmail, Google Sheets, Instagram of Notion en geef de agent gewoon een opdracht, alsof u het aan iemand van uw team vraagt.",
+    "cta": "Agenten uitproberen",
+    "cta2": "Bekijk hoe het werkt"
+  },
+  "pasos": {
+    "title": "Drie stappen, en de derde doet u niet zelf",
+    "sub": "Er is geen configuratiepaneel om te bestuderen of integraties om van tevoren in te stellen. De verbinding verschijnt op het moment dat u die nodig heeft.",
+    "items": [
+      {
+        "n": "1",
+        "t": "Vraag het gewoon",
+        "d": "Typ het in de chat, in uw eigen woorden: «ik wil dit recept versturen via Gmail», «zet deze tabel om en stuur hem naar Google Sheets», «upload deze afbeelding naar Instagram»."
+      },
+      {
+        "n": "2",
+        "t": "Autoriseer de account eenmalig",
+        "d": "De eerste keer dat u een dienst gebruikt, legt de agent de verbinding en vraagt hij toestemming via het officiële venster van het platform zelf. U autoriseert met uw eigen account — uw wachtwoord geeft u nooit aan ons."
+      },
+      {
+        "n": "3",
+        "t": "De agent regelt de rest",
+        "d": "De e-mail wordt verstuurd, de spreadsheet aangemaakt, de foto gepubliceerd. En de autorisatie blijft bewaard: de agent vraagt er niet opnieuw om totdat die verloopt en vernieuwd moet worden."
+      }
+    ]
+  },
+  "catalogo": {
+    "title": "16 gekoppelde tools, en het worden er meer",
+    "sub": "Dit zijn de platforms die u al dagelijks gebruikt in uw restaurant. De verbinding wordt beheerd door Composio, de laag die de autorisatie per dienst afhandelt.",
+    "categorias": {
+      "comunicacion": "E-mail",
+      "documentos": "Documenten en data",
+      "organizacion": "Organisatie en opzoeken",
+      "contenido": "Content en design",
+      "redes": "Sociale media"
+    },
+    "ejemplos": {
+      "gmail": "Stuur de kostprijsberekening van de week naar uw souschef zonder de chat te verlaten.",
+      "outlook": "Verstuur het menuvoorstel naar de cateringklant vanuit het zakelijke e-mailadres.",
+      "sheets": "Zet de kostentabel die de agent zojuist heeft berekend om in een live spreadsheet.",
+      "docs": "Zet het personeelshandboek van uw brigade om in een document dat klaar is om af te drukken en uit te delen.",
+      "drive": "Sla de technische fiches op in de gedeelde teammap, netjes geordend.",
+      "calendar": "Blokkeer de mise-en-place-taken voor de hele week in uw agenda.",
+      "notion": "Zet het receptenboek van het nieuwe menu over naar de kennisbank van het restaurant.",
+      "googlesuper": "Controleer marktprijzen of een regelgeving voordat u een beslissing neemt.",
+      "canva": "Zet de menukaart om in een ontwerp dat klaar is om af te drukken of op het scherm in uw zaak te tonen.",
+      "wordpress": "Publiceer het artikel over het seizoensgerecht op de website van uw restaurant.",
+      "instagram": "Upload de foto van de service van vandaag met het bijschrift dat de agent zojuist heeft geschreven.",
+      "facebook": "Plan de aankondiging van het kerstmenu op de bedrijfspagina.",
+      "linkedin": "Deel hoe u dit kwartaal 12% minder voedselverspilling heeft gerealiseerd.",
+      "x": "Kondig in één zin aan dat de reserveringen voor oudejaarsavond open zijn.",
+      "tiktok": "Upload de video van het opmaken van het bord, inclusief de al geschreven beschrijving.",
+      "reddit": "Stel vragen en leer van de horecagemeenschappen."
+    }
+  },
+  "extras": {
+    "title": "En bovendien: alle agenten zijn een stuk slimmer geworden",
+    "sub": "De koppeling met uw accounts is samen met twee andere verbeteringen uitgerold die u al vanaf het eerste gesprek zult merken.",
+    "items": [
+      {
+        "t": "Geavanceerd redeneren",
+        "d": "De agenten denken nu eerst na voordat ze antwoorden: ze analyseren de context, wegen opties af en bouwen het antwoord op. Dat merkt u vooral bij alles wat met cijfers te maken heeft — kostprijsberekeningen, menu-engineering, businessplannen — waar u vroeger meerdere keren moest doorvragen om het resultaat te verfijnen."
+      },
+      {
+        "t": "Artefacten die u opnieuw kunt gebruiken",
+        "d": "De chatagenten maken en bewerken artefacten: documenten, tabellen, datavisualisaties, interactieve componenten en HTML- of CSS-bestanden. In plaats van een lap tekst krijgt u iets terug dat u in hetzelfde gesprek verder kunt aanpassen. Recepten en kostprijsberekeningen vallen hier buiten: die hebben hun eigen gespecialiseerde functies, die daarvoor beter geschikt zijn."
+      }
+    ]
+  },
+  "seguridad": {
+    "title": "Uw inloggegevens blijven van u",
+    "parrafos": [
+      "Elke verbinding wordt geautoriseerd via het officiële venster van de betreffende dienst: het is Google, Meta of Notion zelf die u vraagt of u toegang wilt verlenen. AI Chef Pro ziet uw wachtwoord nooit en slaat het ook niet op.",
+      "De autorisatie wordt alleen gevraagd op het moment dat u die nodig heeft — er hoeft niets van tevoren te worden ingesteld — en blijft geldig totdat die verloopt. U kunt de toegang op elk moment intrekken vanuit uw account bij de betreffende dienst, waarna de agent direct geen toegang meer heeft."
+    ],
+    "bullets": [
+      "Officiële autorisatie per platform, met uw eigen inloggegevens",
+      "Wij vragen nooit om uw wachtwoord en slaan het niet op",
+      "Rechten beperkt tot wat de agent nodig heeft",
+      "Op elk moment in te trekken via de betreffende dienst"
+    ]
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "Hoe vertel ik de agent dat hij een van mijn accounts moet gebruiken?",
+        "a": "Gewoon in de chat, in uw eigen woorden. Zinnen als «ik wil dit recept versturen via Gmail», «zet deze tabel om en stuur hem naar Google Sheets» of «upload deze afbeelding naar Instagram» zijn voldoende. U hoeft niets van tevoren te activeren of commando's te leren: de agent begrijpt uw bedoeling en legt zelf de benodigde verbinding."
+      },
+      {
+        "q": "Moet ik mijn accounts van tevoren koppelen?",
+        "a": "Nee. De autorisatie wordt gestart op het moment dat u iets vraagt waarvoor die nodig is. De eerste keer dat u een dienst gebruikt, ziet u het toestemmingsvenster van dat platform; daarna kan de agent er al mee aan de slag."
+      },
+      {
+        "q": "Hoe vaak moet ik opnieuw autoriseren?",
+        "a": "Alleen wanneer de autorisatie verloopt. Zolang die nog geldig is, hergebruikt de agent die zonder u iets te vragen. Wanneer die verloopt, vraagt hij u die te vernieuwen met dezelfde paar klikken als de eerste keer."
+      },
+      {
+        "q": "Is het veilig? Wie kan mijn gegevens zien?",
+        "a": "U verleent toestemming via het officiële venster van de dienst zelf, niet via een formulier van ons. Uw wachtwoord komt dus nooit bij AI Chef Pro terecht. De toegang is beperkt tot wat de agent moet doen en u kunt die op elk moment intrekken via de instellingen van uw Google-, Meta-, Notion- of ander platformaccount."
+      },
+      {
+        "q": "Wat is Composio en waarom staat het hier vermeld?",
+        "a": "Composio is de laag die de verbindingen met externe platforms beheert: het regelt de autorisatie, vernieuwt de rechten en zorgt ervoor dat elke tool stabiel reageert. Het is geen extra tool voor uw dagelijkse werk, maar het fundament dat ervoor zorgt dat de andere zestien tools vanuit de chat werken."
+      },
+      {
+        "q": "Is dit inbegrepen in mijn abonnement?",
+        "a": "Ja. De koppelingen, het geavanceerde redeneren en de artefacten zijn beschikbaar voor alle gebruikers van AI Chef Pro, zonder extra kosten of apart module."
+      }
+    ]
+  },
+  "cierre": {
+    "title": "Open een agent en vraag hem iets te versturen",
+    "sub": "De snelste manier om het te begrijpen is het gewoon te proberen: maak een kostprijsberekening en zeg «zet dit over naar Google Sheets». Na twee klikken voor de autorisatie staat het in uw drive.",
+    "cta": "Inloggen bij AI Chef Pro"
+  },
+  "home": {
+    "eyebrow": "Nieuw",
+    "title": "Uw agenten werken nu met uw eigen tools",
+    "sub": "«Stuur dit recept via Gmail». «Zet deze tabel over naar Google Sheets». «Upload deze foto naar Instagram». Vraag het gewoon: autoriseer de account eenmalig en de agent regelt de rest.",
+    "cta": "Bekijk de 16 koppelingen"
+  }
+}
