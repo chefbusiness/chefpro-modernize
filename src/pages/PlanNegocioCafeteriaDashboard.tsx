@@ -15,21 +15,21 @@ const TEMPLATES = [
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio (53 clientes/día con ticket €9,50), escenarios pesimista/realista/optimista, cuadro de personal y hoja de instrucciones.',
+    desc: '9 hojas: supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio (84 clientes/día con ticket de 9,80 € sin IVA), escenarios pesimista/realista/optimista, cuadro de personal, tesorería a 12 meses con liquidación de IVA, plan de financiación con cuadro de amortización y DSCR, y hoja de instrucciones.',
   },
   {
     key: 'plan-negocio',
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'Documento Word con resumen ejecutivo, descripción del negocio, análisis de mercado, plan operativo, organización y RRHH, plan de marketing, plan financiero y plan de financiación.',
+    desc: 'Documento Word con 10 secciones: resumen ejecutivo, concepto y propuesta de valor, análisis de mercado, análisis competitivo, plan de marketing y captación, plan de operaciones, estructura organizativa y recursos humanos, plan financiero, aspectos legales y licencias, y conclusiones y plan de acción.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist de Apertura',
-    desc: 'Más de 65 trámites en 6 fases: constitución SL, licencia inocua + RGSEAA + terraza, equipamiento, RRHH y Seg. Social, marketing pre-apertura y primeros 90 días de operación.',
+    desc: '75 trámites en 6 fases: constitución SL, licencia inocua + registro sanitario autonómico + terraza, equipamiento, RRHH y Seg. Social, marketing pre-apertura y primeros 90 días de operación.',
   },
 ];
 
@@ -68,7 +68,7 @@ export default function PlanNegocioCafeteriaDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-cafeteria" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel con P&L 3 años, plan de negocio Word completo y checklist de apertura con 65+ trámites.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel de 9 hojas con P&L 3 años y tesorería, plan de negocio Word completo y checklist de apertura con 75 trámites.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
@@ -96,7 +96,7 @@ export default function PlanNegocioCafeteriaDashboard() {
             </div>
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">Compatibles con Excel, Word, Google Sheets, Google Docs, LibreOffice y Apple Numbers/Pages</p>
-              <p className="text-gray-400 text-sm">Descarga los archivos y ábrelos con tu programa favorito. Todas las celdas y textos son editables.</p>
+              <p className="text-gray-400 text-sm">Descarga los archivos y ábrelos con tu programa favorito. En los Excel se teclea en las celdas VERDES y el resto se recalcula solo; para tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña).</p>
             </div>
           </div>
         </section>

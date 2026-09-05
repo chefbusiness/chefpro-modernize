@@ -5,15 +5,15 @@ import {
 import FadeIn from '../ebook/FadeIn';
 
 const categories = [
-  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años con estacionalidad navideña, inversión inicial, punto de equilibrio, escenarios, cuadro de personal panadero e instrucciones. Todas las celdas editables.' },
-  { icon: Coins, title: 'Inversión Inicial Detallada', desc: 'Local, horno profesional de pisos, amasadora 40-80 kg, cámara de fermentación controlada, expositor refrigerado, mobiliario y fondo de maniobra (~88K EUR de referencia).' },
-  { icon: TrendingUp, title: 'Punto de Equilibrio (Break-Even)', desc: 'Cálculo por kilos de pan diarios y unidades de bollería con ticket medio €4,50, margen de seguridad e interpretación de resultados con sensibilidad al mix de producción.' },
+  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio, escenarios, personal con cobertura de horas, tesorería 12 meses con liquidación de IVA, plan de financiación con DSCR e instrucciones. Las celdas verdes son las que se teclean y las 733 fórmulas se recalculan solas.' },
+  { icon: Coins, title: 'Inversión Inicial Detallada', desc: 'Local, horno profesional de pisos o rotativo, amasadora espiral 25-50 kg, divisora y boleadora, cámara de fermentación controlada, vitrina expositor, mobiliario y fondo de maniobra: 101.600 € de CAPEX más 43.615 € de colchón de caja, 145.215 € en total.' },
+  { icon: TrendingUp, title: 'Punto de Equilibrio (Break-Even)', desc: 'Cálculo en transacciones diarias con ticket medio de 5,50 € sin IVA: 162 al día para cubrir costes y 155 en términos de caja, con holgura sobre el equilibrio año a año y tabla de sensibilidad al ticket y al coste variable.' },
   { icon: BarChart3, title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes de producción y mix barra/bollería/cafetería para presentar a banco e inversores.' },
-  { icon: Users, title: 'Cuadro de Personal Panadero', desc: 'Maestro panadero, oficial, ayudante de obrador y dependiente con salarios brutos, Seguridad Social al 33,4 %, 14 pagas, turno madrugada y plus de nocturnidad.' },
-  { icon: ShieldCheck, title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, RGSEAA obrador (Registro General Sanitario), licencias municipales, equipamiento (proyecto técnico, salida de humos), RRHH y primeros 90 días.' },
-  { icon: Wrench, title: 'Equipamiento Específico Panadería', desc: 'Horno de pisos rotativo (Salva, Eurofours), amasadora 40-80 kg, cámara de fermentación controlada y expositor refrigerado, con marcas de referencia y precios.' },
-  { icon: ListChecks, title: 'Ratios de Referencia Panadería', desc: 'Coste materia prima 22-28 %, personal <38 %, merma 3-5 %, margen bruto pan >70 % y bollería >75 %. Datos del sector panadero español 2026.' },
-  { icon: Banknote, title: 'Plan de Financiación', desc: 'Opciones reales: ICO, ENISA, préstamo bancario, leasing de equipamiento (horno, amasadora), inversores privados y subvenciones autonómicas para obrador.' },
+  { icon: Users, title: 'Cuadro de Personal Panadero', desc: 'Seis puestos —maestro panadero, oficial, ayudante de obrador, dependienta, extra de fin de semana y suplencias de vacaciones y descansos— con salarios brutos, Seguridad Social al 33 %, 14 pagas, turno de madrugada y comprobación de que las horas contratadas cubren el horario declarado.' },
+  { icon: ShieldCheck, title: 'Checklist Apertura (6 fases)', desc: 'Constitución de la SL, local y licencias (registro sanitario de tu Comunidad Autónoma, licencia clasificada), equipamiento (proyecto técnico, salida de humos), personal, marketing y primeros 90 días.' },
+  { icon: Wrench, title: 'Equipamiento Específico Panadería', desc: 'Horno de pisos o rotativo, amasadora espiral 25-50 kg, divisora y boleadora, cámara de fermentación controlada, laminadora y vitrina expositor, cada uno con su importe orientativo en la hoja de inversión.' },
+  { icon: ListChecks, title: 'Ratios de Referencia Panadería', desc: 'Coste de mercancía 25-30 % en pan y 32-38 % en bollería, personal 35-42 %, alquiler 10-14 %, merma de pan 5-10 % y margen bruto objetivo por encima del 62 %. Los mismos rangos contra los que el libro se audita a sí mismo.' },
+  { icon: Banknote, title: 'Plan de Financiación', desc: 'Hoja «Financiación» con origen de fondos —recursos propios, préstamo bancario, línea ICO, ENISA, business angels y subvenciones autonómicas—, comprobación de que lo aportado cubre lo que hace falta, cuadro de amortización francés con carencia y DSCR año a año.' },
 ];
 
 const galleryImages = [

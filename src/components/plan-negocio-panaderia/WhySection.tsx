@@ -5,17 +5,17 @@ const reasons = [
   {
     icon: Wheat,
     title: 'Plan Específico Panadero',
-    desc: 'No es plantilla genérica. Adaptado al modelo panadería/obrador: horno profesional, amasadora 40-80 kg, cámara fermentación, mix barra/bollería/cafetería y estacionalidad navideña.',
+    desc: 'No es plantilla genérica. Adaptado al modelo panadería/obrador: horno profesional, amasadora espiral 25-50 kg, cámara de fermentación, mix de pan, bollería y café, canal mayorista a restaurantes y estacionalidad navideña.',
   },
   {
     icon: BarChart3,
     title: 'Datos Reales Sector 2026',
-    desc: 'Materia prima 22-28 %, merma 3-5 %, margen pan >70 %, bollería >75 %, ticket medio €4,50 y break-even por kilos diarios. Cifras del mercado panadero español real.',
+    desc: 'Coste de mercancía 25-38 % según la línea, personal 35-42 %, merma de pan 5-10 %, margen bruto objetivo >62 %, ticket medio de 5,50 € sin IVA y break-even en transacciones diarias. Los rangos con los que el propio libro se audita.',
   },
   {
     icon: ShieldCheck,
-    title: 'RGSEAA Obrador + 60 Trámites',
-    desc: 'Panadería con obrador requiere RGSEAA (Registro General Sanitario), licencia clasificada, salida de humos y proyecto técnico. Checklist con 60+ trámites en 6 fases.',
+    title: 'Registro Sanitario + 66 Trámites',
+    desc: 'Una panadería con obrador que vende al consumidor final se inscribe en el Registro Sanitario de su Comunidad Autónoma, no en el RGSEAA estatal (art. 2.2 del RD 191/2011), y necesita licencia clasificada, salida de humos y proyecto técnico. Checklist con 66 trámites en 6 fases, con aviso de cuándo el canal mayorista sí puede obligar al RGSEAA.',
   },
   {
     icon: Banknote,

@@ -26,7 +26,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio: Panadería / Obrador — Plan Financiero Excel + Checklist Apertura | AI Chef Pro',
     description:
-      'Plan de negocio completo para abrir una panadería u obrador artesanal en España 2026. Plan financiero Excel con P&L 3 años + estacionalidad navideña, inversión inicial, punto de equilibrio por kilos diarios y checklist apertura con 60+ trámites incluyendo RGSEAA obrador. €35.',
+      'Plan de negocio completo para abrir una panadería u obrador artesanal en España 2026. Plan financiero Excel de 9 hojas con P&L 3 años + estacionalidad navideña, tesorería mes a mes, plan de financiación con DSCR, inversión inicial y punto de equilibrio en transacciones diarias, plan de negocio en Word de 10 secciones y checklist de apertura con 66 trámites, incluida la inscripción en el registro sanitario autonómico. €35.',
     keywords:
       'plan de negocio panadería, plan financiero obrador artesanal, abrir panadería España, RGSEAA obrador, horno pisos rotativo, masa madre, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-negocio-panaderia.jpg',
@@ -36,7 +36,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio: Panadería / Obrador — Plan Financiero Excel, Inversión Inicial y Checklist Apertura',
     productDescription:
-      'Plan de negocio completo para abrir una panadería u obrador artesanal en España. Incluye plan financiero Excel con P&L previsional a 3 años con estacionalidad navideña, inversión inicial detallada (~88K EUR), punto de equilibrio por kilos diarios con ticket €4,50, escenarios financieros, cuadro de personal panadero con turno madrugada y plus de nocturnidad, checklist de apertura con 60+ trámites incluyendo RGSEAA obrador, equipamiento específico (horno de pisos rotativo, amasadora 40-80kg, cámara fermentación) y ratios sectoriales del mercado panadero español 2026.',
+      'Plan de negocio completo para abrir una panadería u obrador artesanal en España. Incluye plan financiero Excel de 9 hojas con P&L previsional a 3 años con estacionalidad navideña, inversión inicial detallada (101.600 € de CAPEX y 145.215 € con el colchón de caja), punto de equilibrio en 162 transacciones diarias con ticket medio de 5,50 € sin IVA, escenarios financieros, tesorería mes a mes con liquidación de IVA, plan de financiación con cuadro de amortización francés y DSCR, cuadro de personal panadero de 6 puestos con turno de madrugada y auditoría de horas, checklist de apertura con 66 trámites incluida la inscripción en el registro sanitario de tu Comunidad Autónoma, equipamiento específico (horno de pisos o rotativo, amasadora espiral 25-50 kg, cámara de fermentación) y los rangos de referencia del sector panadero español 2026.',
     price: '35.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -66,15 +66,15 @@ const data: PlanNegocioData = {
     faqs: [
       {
         q: '¿Es un plan genérico o específico para panadería?',
-        a: 'Es 100% específico para panadería y obrador artesanal en España. Las partidas de inversión, ratios financieros, costes de personal con turno madrugada y trámites legales (RGSEAA obrador, licencia actividad) están adaptados al modelo panadero.',
+        a: 'Es 100% específico para panadería y obrador artesanal en España. Las partidas de inversión, ratios financieros, costes de personal con turno madrugada y trámites legales (registro sanitario autonómico, licencia de actividad) están adaptados al modelo panadero.',
       },
       {
         q: '¿Puedo presentar este plan al banco o a inversores?',
-        a: 'Sí. Incluye P&L 3 años con estacionalidad navideña, punto de equilibrio por kilos diarios y 3 escenarios. Es el formato que piden bancos para microcrédito ICO y leasing de horno y amasadora.',
+        a: 'Sí. Incluye P&L a 3 años con estacionalidad navideña, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR año a año, punto de equilibrio en transacciones diarias y 3 escenarios. Es el formato que piden los bancos para microcrédito ICO y leasing de horno y amasadora.',
       },
       {
         q: '¿Qué trámites legales incluye el checklist?',
-        a: 'Más de 60 trámites en 6 fases: constitución SL, RGSEAA obrador, licencias municipales, equipamiento (proyecto técnico, salida de humos), RRHH (turno madrugada, PRL nocturnidad) y primeros 90 días.',
+        a: '66 trámites en 6 fases: constitución de la SL, local y licencias (registro sanitario autonómico, licencia clasificada, salida de humos), equipamiento, personal (turno de madrugada, PRL, registro horario), marketing y primeros 90 días.',
       },
       {
         q: '¿Hay garantía de devolución?',
@@ -114,12 +114,13 @@ const data: PlanNegocioData = {
     titleGold: 'Panadería / Obrador',
     titleSubtitle: 'Plan Financiero Excel, Inversión Inicial y Checklist de Apertura',
     description:
-      'El plan de negocio completo para abrir una panadería u obrador artesanal en España. Plan financiero Excel con P&L a 3 años y estacionalidad navideña, inversión inicial detallada, punto de equilibrio por kilos diarios y checklist de apertura con 60+ trámites incluyendo RGSEAA obrador y salida de humos.',
+      'El plan de negocio completo para abrir una panadería u obrador artesanal en España. Plan financiero Excel de 9 hojas con P&L a 3 años y estacionalidad navideña, tesorería mensual, plan de financiación, inversión inicial detallada, punto de equilibrio en transacciones diarias y checklist de apertura con 66 trámites, incluidos el registro sanitario autonómico y la salida de humos.',
     checkItems: [
-      'Plan financiero Excel: P&L 3 años con estacionalidad navideña',
-      'Inversión inicial detallada por partidas (~70K-110K EUR)',
-      'Punto de equilibrio por kilos diarios con ticket medio €4,50',
-      'Checklist apertura: 60+ trámites incluyendo RGSEAA obrador',
+      'Plan financiero Excel de 9 hojas: P&L 3 años, tesorería mensual y financiación',
+      'Inversión inicial detallada por partidas (101.600 € de CAPEX; 145.215 € con el colchón de caja)',
+      'Punto de equilibrio en 162 transacciones diarias con ticket medio de 5,50 € sin IVA',
+      'Checklist de apertura: 66 trámites en 6 fases, con el registro sanitario autonómico',
+      'Plan de negocio en Word: 10 secciones listas para presentar',
       'Acceso inmediato + actualizaciones de por vida',
     ],
     ctaLabel: 'DESCARGAR PLAN DE NEGOCIO — €35',
@@ -129,15 +130,15 @@ const data: PlanNegocioData = {
     subtitle:
       '9 secciones profesionales con datos reales del mercado panadero español para construir la viabilidad financiera de tu panadería u obrador y presentarla a banco o inversores.',
     templates: [
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años con estacionalidad navideña, inversión inicial, punto de equilibrio, escenarios, cuadro de personal panadero e instrucciones. Todas las celdas editables.' },
-      { icon: 'Coins', title: 'Inversión Inicial Detallada', desc: 'Local, horno profesional de pisos, amasadora 40-80 kg, cámara de fermentación controlada, expositor refrigerado, mobiliario y fondo de maniobra (~88K EUR de referencia).' },
-      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: 'Cálculo por kilos de pan diarios y unidades de bollería con ticket medio €4,50, margen de seguridad e interpretación de resultados con sensibilidad al mix de producción.' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio, escenarios, personal con cobertura de horas, tesorería 12 meses con liquidación de IVA, plan de financiación con DSCR e instrucciones. Las celdas verdes son las que se teclean y las 733 fórmulas se recalculan solas.' },
+      { icon: 'Coins', title: 'Inversión Inicial Detallada', desc: 'Local, horno profesional de pisos o rotativo, amasadora espiral 25-50 kg, divisora y boleadora, cámara de fermentación controlada, vitrina expositor, mobiliario y fondo de maniobra: 101.600 € de CAPEX más 43.615 € de colchón de caja, 145.215 € en total.' },
+      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: 'Cálculo en transacciones diarias con ticket medio de 5,50 € sin IVA: 162 al día para cubrir costes y 155 en términos de caja, con holgura sobre el equilibrio año a año y tabla de sensibilidad al ticket y al coste variable.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes de producción y mix barra/bollería/cafetería para presentar a banco e inversores.' },
-      { icon: 'Users', title: 'Cuadro de Personal Panadero', desc: 'Maestro panadero, oficial, ayudante de obrador y dependiente con salarios brutos, Seguridad Social al 33,4 %, 14 pagas, turno madrugada y plus de nocturnidad.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, RGSEAA obrador (Registro General Sanitario), licencias municipales, equipamiento (proyecto técnico, salida de humos), RRHH y primeros 90 días.' },
-      { icon: 'Wrench', title: 'Equipamiento Específico Panadería', desc: 'Horno de pisos rotativo (Salva, Eurofours), amasadora 40-80 kg, cámara de fermentación controlada y expositor refrigerado, con marcas de referencia y precios.' },
-      { icon: 'ListChecks', title: 'Ratios de Referencia Panadería', desc: 'Coste materia prima 22-28 %, personal <38 %, merma 3-5 %, margen bruto pan >70 % y bollería >75 %. Datos del sector panadero español 2026.' },
-      { icon: 'Banknote', title: 'Plan de Financiación', desc: 'Opciones reales: ICO, ENISA, préstamo bancario, leasing de equipamiento (horno, amasadora), inversores privados y subvenciones autonómicas para obrador.' },
+      { icon: 'Users', title: 'Cuadro de Personal Panadero', desc: 'Seis puestos —maestro panadero, oficial, ayudante de obrador, dependienta, extra de fin de semana y suplencias de vacaciones y descansos— con salarios brutos, Seguridad Social al 33 %, 14 pagas, turno de madrugada y comprobación de que las horas contratadas cubren el horario declarado.' },
+      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución de la SL, local y licencias (registro sanitario de tu Comunidad Autónoma, licencia clasificada), equipamiento (proyecto técnico, salida de humos), personal, marketing y primeros 90 días.' },
+      { icon: 'Wrench', title: 'Equipamiento Específico Panadería', desc: 'Horno de pisos o rotativo, amasadora espiral 25-50 kg, divisora y boleadora, cámara de fermentación controlada, laminadora y vitrina expositor, cada uno con su importe orientativo en la hoja de inversión.' },
+      { icon: 'ListChecks', title: 'Ratios de Referencia Panadería', desc: 'Coste de mercancía 25-30 % en pan y 32-38 % en bollería, personal 35-42 %, alquiler 10-14 %, merma de pan 5-10 % y margen bruto objetivo por encima del 62 %. Los mismos rangos contra los que el libro se audita a sí mismo.' },
+      { icon: 'Banknote', title: 'Plan de Financiación', desc: 'Hoja «Financiación» con origen de fondos —recursos propios, préstamo bancario, línea ICO, ENISA, business angels y subvenciones autonómicas—, comprobación de que lo aportado cubre lo que hace falta, cuadro de amortización francés con carencia y DSCR año a año.' },
     ],
   },
 
@@ -160,9 +161,9 @@ const data: PlanNegocioData = {
     subtitle:
       'No es otra plantilla genérica. Es el plan financiero profesional con datos reales del mercado panadero español para abrir una panadería u obrador con cabeza.',
     reasons: [
-      { icon: 'Wheat', title: 'Plan Específico Panadero', desc: 'No es plantilla genérica. Adaptado al modelo panadería/obrador: horno profesional, amasadora 40-80 kg, cámara fermentación, mix barra/bollería/cafetería y estacionalidad navideña.' },
-      { icon: 'BarChart3', title: 'Datos Reales Sector 2026', desc: 'Materia prima 22-28 %, merma 3-5 %, margen pan >70 %, bollería >75 %, ticket medio €4,50 y break-even por kilos diarios. Cifras del mercado panadero español real.' },
-      { icon: 'ShieldCheck', title: 'RGSEAA Obrador + 60 Trámites', desc: 'Panadería con obrador requiere RGSEAA (Registro General Sanitario), licencia clasificada, salida de humos y proyecto técnico. Checklist con 60+ trámites en 6 fases.' },
+      { icon: 'Wheat', title: 'Plan Específico Panadero', desc: 'No es plantilla genérica. Adaptado al modelo panadería/obrador: horno profesional, amasadora espiral 25-50 kg, cámara de fermentación, mix de pan, bollería y café, canal mayorista a restaurantes y estacionalidad navideña.' },
+      { icon: 'BarChart3', title: 'Datos Reales Sector 2026', desc: 'Coste de mercancía 25-38 % según la línea, personal 35-42 %, merma de pan 5-10 %, margen bruto objetivo >62 %, ticket medio de 5,50 € sin IVA y break-even en transacciones diarias. Los rangos con los que el propio libro se audita.' },
+      { icon: 'ShieldCheck', title: 'Registro Sanitario + 66 Trámites', desc: 'Una panadería con obrador que vende al consumidor final se inscribe en el Registro Sanitario de su Comunidad Autónoma, no en el RGSEAA estatal (art. 2.2 del RD 191/2011), y necesita licencia clasificada, salida de humos y proyecto técnico. Checklist con 66 trámites en 6 fases, con aviso de cuándo el canal mayorista sí puede obligar al RGSEAA.' },
       { icon: 'Banknote', title: 'Listo para Banco e Inversores', desc: 'P&L 3 años, punto de equilibrio, 3 escenarios y plan de financiación con ICO, ENISA, leasing de horno y subvenciones autonómicas. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
@@ -187,9 +188,9 @@ const data: PlanNegocioData = {
       {
         icon: 'Users',
         label: 'BONUS 1',
-        title: 'Cuadro de Personal Panadero con Plus Nocturnidad',
+        title: 'Cuadro de Personal Panadero con Cobertura de Horas',
         value: '€19',
-        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas, turno madrugada y plus de nocturnidad: maestro panadero, oficial, ayudante de obrador y dependiente.',
+        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y turno de madrugada, con seis puestos —maestro panadero, oficial, ayudante de obrador, dependienta, extra de fin de semana y suplencias— y la comprobación de que las horas contratadas cubren el horario que declara el plan.',
         image: '/lovable-uploads/ai-gallery/plan-panaderia-obrador.jpg',
       },
       {
@@ -197,7 +198,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 2',
         title: 'Ratios de Referencia Sector Panadero 2026',
         value: '€19',
-        desc: 'Datos actualizados del sector: coste materia prima 22-28 %, merma 3-5 %, margen pan >70 %, margen bollería >75 %, ticket medio €4,50 y mix consumo barra/bollería/cafetería.',
+        desc: 'Rangos de referencia del sector: coste de mercancía 25-30 % en pan y 32-38 % en bollería, personal 35-42 %, alquiler 10-14 %, merma de pan 5-10 %, margen bruto objetivo >62 %, producción diaria 80-200 kg y ticket medio de 3-6 €.',
         image: '/lovable-uploads/ai-gallery/plan-panaderia-pan.jpg',
       },
     ],
@@ -221,23 +222,23 @@ const data: PlanNegocioData = {
   faqs: [
     {
       q: '¿Es un plan genérico o específico para panadería?',
-      a: 'Es 100 % específico para panadería y obrador artesanal en España. Las partidas de inversión (horno profesional, amasadora, cámara fermentación), los ratios financieros (coste materia prima, merma, margen pan vs bollería), los costes de personal con turno madrugada y los trámites legales (RGSEAA obrador, licencia actividad) están adaptados al modelo panadero.',
+      a: 'Es 100 % específico para panadería y obrador artesanal en España. Las partidas de inversión (horno profesional, amasadora, cámara de fermentación), los ratios financieros (coste de mercancía, merma, margen de pan frente a bollería), los costes de personal con turno de madrugada y los trámites legales (registro sanitario autonómico, licencia de actividad clasificada) están adaptados al modelo panadero. El IVA va incluso separado: el pan común al 4 % y la bollería y el café al 10 %.',
     },
     {
       q: '¿Puedo presentar este plan al banco o a inversores?',
-      a: 'Sí. El plan financiero Excel incluye P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio por kilos diarios, análisis de viabilidad financiera y 3 escenarios. Es exactamente el formato que piden bancos para microcrédito o ICO emprendedores y leasing de equipamiento (horno, amasadora).',
+      a: 'Sí. El plan financiero Excel incluye P&L previsional a 3 años con estacionalidad navideña, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR, punto de equilibrio en transacciones diarias y 3 escenarios. Es exactamente el formato que piden los bancos para microcrédito o ICO emprendedores y leasing de equipamiento (horno, amasadora).',
     },
     {
       q: '¿Puedo modificar las cifras del Excel?',
-      a: 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, los kilos producidos al día, el ticket medio, los salarios del maestro panadero y cualquier partida de inversión. Incluye hoja de instrucciones.',
+      a: 'Sí. Las celdas verdes son las que se teclean y las 733 fórmulas se recalculan solas: cambia el alquiler, las transacciones al día, el ticket medio sin IVA, los salarios del maestro panadero o cualquier partida de inversión. Las hojas van protegidas sin contraseña para que no borres una fórmula sin querer (Revisar → Desproteger hoja). Incluye hoja de instrucciones.',
     },
     {
       q: '¿Qué trámites legales incluye el checklist de apertura?',
-      a: 'Más de 60 trámites organizados en 6 fases: constitución de la SL, RGSEAA obrador (Registro General Sanitario), licencias municipales (actividad, expositor en fachada), equipamiento (proyecto técnico, instalación de horno, salida de humos), RRHH (contratos panaderos, Seg. Social, PRL turno madrugada) y primeros 90 días de operación.',
+      a: '66 trámites organizados en 6 fases: constitución de la SL; local y licencias (registro sanitario de tu Comunidad Autónoma, licencia clasificada, hojas de reclamaciones, gestor de residuos, DDD); equipamiento (proyecto técnico, instalación de horno, salida de humos); personal (contratos, Seguridad Social, registro horario, PRL del turno de madrugada); marketing (incluidos los acuerdos con el canal mayorista y las licencias de música); y primeros 90 días de operación.',
     },
     {
       q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-      a: 'Los planes gratuitos son plantillas genéricas sin datos reales del sector panadero. Este plan incluye cifras del mercado español 2026 (10K+ panaderías, mix consumo barra/bollería/cafetería, tasa de cierre), ratios profesionales (materia prima 22-28 %, merma 3-5 %, margen pan >70 %, bollería >75 %), cuadro de personal con turno madrugada y un checklist de trámites verificado con la legislación obrador vigente.',
+      a: 'Los planes gratuitos son plantillas genéricas sin un modelo detrás. Este plan trae un caso base calculado y auditado por el propio libro (cinco ratios con semáforo, todos en verde), los rangos de referencia que publica su hoja de instrucciones (coste de mercancía 25-38 %, personal 35-42 %, merma 5-10 %, margen bruto >62 %), tesorería mes a mes con la liquidación de IVA, plan de financiación con DSCR, cuadro de personal con turno de madrugada y auditoría de horas, y un checklist de 66 trámites con la norma citada artículo por artículo.',
     },
     {
       q: '¿Cómo funciona la garantía?',
@@ -251,13 +252,14 @@ const data: PlanNegocioData = {
     subtitle:
       'No dejes pasar esta oportunidad. Únete a maestros panaderos y emprendedores que ya abrieron su panadería u obrador artesanal con un plan financiero profesional.',
     items: [
-      'Plan financiero Excel con P&L 3 años + estacionalidad navideña',
-      'Inversión inicial detallada (~88K EUR de referencia)',
-      'Punto de equilibrio por kilos diarios con ticket €4,50',
+      'Plan financiero Excel de 9 hojas: P&L 3 años, tesorería y financiación',
+      'Inversión inicial detallada: 101.600 € de CAPEX y 145.215 € con el colchón de caja',
+      'Punto de equilibrio en 162 transacciones diarias con ticket de 5,50 € sin IVA',
       '3 escenarios financieros (pesimista/realista/optimista)',
-      'Checklist apertura con 60+ trámites incluyendo RGSEAA',
+      'Checklist de apertura con 66 trámites, incluido el registro sanitario autonómico',
       'Equipamiento específico panadería + ratios sectoriales',
-      'BONUS: Cuadro Personal Panadero con plus nocturnidad (€19)',
+      'Plan de negocio en Word con 10 secciones listas para presentar',
+      'BONUS: Cuadro de Personal Panadero con cobertura de horas (€19)',
       'BONUS: Ratios Referencia Sector Panadero 2026 (€19)',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €35',
@@ -282,7 +284,7 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-panaderia',

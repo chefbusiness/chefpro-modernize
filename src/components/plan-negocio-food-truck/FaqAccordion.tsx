@@ -5,7 +5,7 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Qué permisos necesito para operar un food truck en España?',
-    a: 'Los permisos varían por municipio, pero los principales son: licencia de venta ambulante, autorización sanitaria (registro sanitario RGSEAA), ITV del vehículo adaptado, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 59 trámites organizados por fases y por CCAA.',
+    a: 'Los permisos varían por municipio, pero los principales son: licencia de venta ambulante, inscripción en el registro sanitario de tu comunidad autónoma y autorización sanitaria del vehículo, ITV si lo has modificado estructuralmente, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 68 trámites organizados en 6 fases.',
   },
   {
     q: '¿Qué requisitos debe cumplir el vehículo del food truck?',
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español de street food 2026, ratios financieros profesionales (food cost 30 %, margen 65 %), cuadro de personal con Seg. Social, punto de equilibrio calculado (27 clientes/día a €12), checklist de 59 trámites verificado y guía de permisos por CCAA.',
+    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye un modelo con 718 fórmulas enlazadas —cambias un supuesto y se recalculan el P&L, la tesorería y la financiación—, ratios auditados contra los del sector (coste de mercancía 27,1 %, margen bruto 64,1 %, personal 31,2 %), cuadro de personal con Seguridad Social y aviso de SMI, punto de equilibrio calculado (41 clientes/día a 12 € sin IVA) y checklist de 68 trámites verificado contra la normativa vigente.',
   },
   {
     q: '¿Puedo presentar este plan al banco o a inversores?',

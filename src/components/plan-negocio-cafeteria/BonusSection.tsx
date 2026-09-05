@@ -7,7 +7,7 @@ const bonuses = [
     label: 'BONUS 1',
     title: 'Cuadro de Personal con Seg. Social',
     value: '€19',
-    desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto: baristas, ayudante de cocina y camareros.',
+    desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y coste real por puesto, con el suelo del SMI y la cobertura de horas comprobados fila a fila: propietario-barista, baristas, camareros, ayudante de brunch y suplencias.',
     image: '/lovable-uploads/ai-gallery/plan-cafeteria-barra.jpg',
   },
   {

@@ -5,10 +5,10 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_CAFETERIA || '#
 
 const items = [
   'Plan financiero Excel con P&L previsional 3 años',
-  'Inversión inicial detallada (~94K EUR de referencia)',
-  'Punto de equilibrio: 53 clientes/día con ticket €9,50',
+  'Inversión inicial detallada (130.176 € de referencia)',
+  'Punto de equilibrio: 84 clientes/día con ticket de 9,80 € sin IVA',
   '3 escenarios financieros (pesimista/realista/optimista)',
-  'Checklist apertura con 65+ trámites en 6 fases',
+  'Checklist apertura con 75 trámites en 6 fases',
   'Equipamiento específico cafetería + ratios sectoriales',
   'BONUS: Cuadro Personal con Seg. Social (€19)',
   'BONUS: Ratios Referencia Cafetería 2026 (€19)',

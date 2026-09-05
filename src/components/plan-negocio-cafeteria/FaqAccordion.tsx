@@ -5,7 +5,7 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Es un plan genérico o específico para cafetería?',
-    a: 'Es 100 % específico para cafetería y brunch en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de cafetería con barra, sala y terraza, incluyendo licencia de actividad inocua y RGSEAA.',
+    a: 'Es 100 % específico para cafetería y brunch en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de cafetería con barra, sala y terraza, incluyendo la licencia de actividad inocua y el registro sanitario de tu Comunidad Autónoma (el RGSEAA estatal no aplica al minorista que sirve al consumidor final: art. 2.2 del RD 191/2011).',
   },
   {
     q: '¿Puedo presentar este plan al banco o a inversores?',
@@ -13,15 +13,15 @@ const faqs = [
   },
   {
     q: '¿Puedo modificar las cifras del Excel?',
-    a: 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, el número de clientes, el ticket medio, los salarios y cualquier partida de inversión para adaptarlo a tu proyecto concreto. Incluye hoja de instrucciones.',
+    a: 'Sí. Las celdas VERDES son las que se teclean —alquiler, clientes al día, ticket medio, salarios y cualquier partida de inversión— y las 739 fórmulas del libro recalculan el resto solo. Si quieres tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña). Incluye hoja de instrucciones.',
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',
-    a: 'Más de 65 trámites organizados en 6 fases: constitución de la SL (notaría, registro mercantil, Hacienda), licencias municipales (licencia inocua, RGSEAA, terraza), equipamiento (proyecto técnico, instalaciones), RRHH (contratos, Seg. Social, PRL), marketing pre-apertura y primeros 90 días.',
+    a: '75 trámites organizados en 6 fases: constitución de la SL (notaría, registro mercantil, Hacienda, Veri*factu y registro de tratamientos del RGPD), licencias municipales (licencia inocua, registro sanitario autonómico, terraza, residuos y DDD), equipamiento (proyecto técnico, instalaciones), RRHH (contratos, Seg. Social, PRL y registro horario), marketing pre-apertura y primeros 90 días.',
   },
   {
     q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, ratios financieros específicos de cafetería (food cost café 25-30 %, ticket medio €8-12), cuadro de personal con Seg. Social y un checklist de 65+ trámites verificado con la legislación vigente.',
+    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, ratios financieros específicos de cafetería (food cost café 25-30 %, ticket medio €8-12), cuadro de personal con Seg. Social y un checklist de 75 trámites verificado con la legislación vigente.',
   },
   {
     q: '¿Cómo funciona la garantía?',

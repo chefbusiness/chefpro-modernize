@@ -5,23 +5,23 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Es un plan genérico o específico para panadería?',
-    a: 'Es 100 % específico para panadería y obrador artesanal en España. Las partidas de inversión (horno profesional, amasadora, cámara fermentación), los ratios financieros (coste materia prima, merma, margen pan vs bollería), los costes de personal con turno madrugada y los trámites legales (RGSEAA obrador, licencia actividad) están adaptados al modelo panadero.',
+    a: 'Es 100 % específico para panadería y obrador artesanal en España. Las partidas de inversión (horno profesional, amasadora, cámara de fermentación), los ratios financieros (coste de mercancía, merma, margen de pan frente a bollería), los costes de personal con turno de madrugada y los trámites legales (registro sanitario autonómico, licencia de actividad clasificada) están adaptados al modelo panadero. El IVA va incluso separado: el pan común al 4 % y la bollería y el café al 10 %.',
   },
   {
     q: '¿Puedo presentar este plan al banco o a inversores?',
-    a: 'Sí. El plan financiero Excel incluye P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio por kilos diarios, análisis de viabilidad financiera y 3 escenarios. Es exactamente el formato que piden bancos para microcrédito o ICO emprendedores y leasing de equipamiento (horno, amasadora).',
+    a: 'Sí. El plan financiero Excel incluye P&L previsional a 3 años con estacionalidad navideña, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR, punto de equilibrio en transacciones diarias y 3 escenarios. Es exactamente el formato que piden los bancos para microcrédito o ICO emprendedores y leasing de equipamiento (horno, amasadora).',
   },
   {
     q: '¿Puedo modificar las cifras del Excel?',
-    a: 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, los kilos producidos al día, el ticket medio, los salarios del maestro panadero y cualquier partida de inversión. Incluye hoja de instrucciones.',
+    a: 'Sí. Las celdas verdes son las que se teclean y las 733 fórmulas se recalculan solas: cambia el alquiler, las transacciones al día, el ticket medio sin IVA, los salarios del maestro panadero o cualquier partida de inversión. Las hojas van protegidas sin contraseña para que no borres una fórmula sin querer (Revisar → Desproteger hoja). Incluye hoja de instrucciones.',
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',
-    a: 'Más de 60 trámites organizados en 6 fases: constitución de la SL, RGSEAA obrador (Registro General Sanitario), licencias municipales (actividad, expositor en fachada), equipamiento (proyecto técnico, instalación de horno, salida de humos), RRHH (contratos panaderos, Seg. Social, PRL turno madrugada) y primeros 90 días de operación.',
+    a: '66 trámites organizados en 6 fases: constitución de la SL; local y licencias (registro sanitario de tu Comunidad Autónoma, licencia clasificada, hojas de reclamaciones, gestor de residuos, DDD); equipamiento (proyecto técnico, instalación de horno, salida de humos); personal (contratos, Seguridad Social, registro horario, PRL del turno de madrugada); marketing (incluidos los acuerdos con el canal mayorista y las licencias de música); y primeros 90 días de operación.',
   },
   {
     q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-    a: 'Los planes gratuitos son plantillas genéricas sin datos reales del sector panadero. Este plan incluye cifras del mercado español 2026 (10K+ panaderías, mix consumo barra/bollería/cafetería, tasa de cierre), ratios profesionales (materia prima 22-28 %, merma 3-5 %, margen pan >70 %, bollería >75 %), cuadro de personal con turno madrugada y un checklist de trámites verificado con la legislación obrador vigente.',
+    a: 'Los planes gratuitos son plantillas genéricas sin un modelo detrás. Este plan trae un caso base calculado y auditado por el propio libro (cinco ratios con semáforo, todos en verde), los rangos de referencia que publica su hoja de instrucciones (coste de mercancía 25-38 %, personal 35-42 %, merma 5-10 %, margen bruto >62 %), tesorería mes a mes con la liquidación de IVA, plan de financiación con DSCR, cuadro de personal con turno de madrugada y auditoría de horas, y un checklist de 66 trámites con la norma citada artículo por artículo.',
   },
   {
     q: '¿Cómo funciona la garantía?',

@@ -13,15 +13,15 @@ const faqs = [
   },
   {
     q: '¿Puedo modificar las cifras del Excel?',
-    a: 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, el número de clientes, el ticket medio, los salarios y cualquier partida de inversión para adaptarlo a tu proyecto concreto. Incluye hoja de instrucciones.',
+    a: 'Sí. Las celdas verdes son las que se teclean y las 739 fórmulas se recalculan solas; el resto de las hojas va protegido para que no se pise una fórmula sin querer, y la protección no tiene contraseña (Revisar → Desproteger hoja).',
   },
   {
     q: '¿Qué trámites legales incluye el checklist de apertura?',
-    a: '63 trámites organizados en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días de operación.',
+    a: '73 trámites organizados en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días de operación.',
   },
   {
     q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, documento DOCX de 10 secciones profesionales, ratios financieros específicos de tapas bar (food cost, bebidas, ticket medio), cuadro de personal con Seg. Social y un checklist de 63 trámites verificado con la legislación vigente.',
+    a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, documento DOCX de 10 secciones profesionales, ratios financieros específicos de tapas bar (food cost, bebidas, ticket medio), cuadro de personal con Seg. Social, previsión de tesorería y plan de financiación, y un checklist de 73 trámites verificado con la legislación vigente.',
   },
   {
     q: '¿Cómo funciona la garantía?',

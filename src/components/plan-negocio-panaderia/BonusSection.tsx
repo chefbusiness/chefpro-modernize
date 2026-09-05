@@ -5,9 +5,9 @@ const bonuses = [
   {
     icon: Users,
     label: 'BONUS 1',
-    title: 'Cuadro de Personal Panadero con Plus Nocturnidad',
+    title: 'Cuadro de Personal Panadero con Cobertura de Horas',
     value: '€19',
-    desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas, turno madrugada y plus de nocturnidad: maestro panadero, oficial, ayudante de obrador y dependiente.',
+    desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y turno de madrugada, con seis puestos —maestro panadero, oficial, ayudante de obrador, dependienta, extra de fin de semana y suplencias— y la comprobación de que las horas contratadas cubren el horario que declara el plan.',
     image: '/lovable-uploads/ai-gallery/plan-panaderia-obrador.jpg',
   },
   {
@@ -15,7 +15,7 @@ const bonuses = [
     label: 'BONUS 2',
     title: 'Ratios de Referencia Sector Panadero 2026',
     value: '€19',
-    desc: 'Datos actualizados del sector: coste materia prima 22-28 %, merma 3-5 %, margen pan >70 %, margen bollería >75 %, ticket medio €4,50 y mix consumo barra/bollería/cafetería.',
+    desc: 'Rangos de referencia del sector: coste de mercancía 25-30 % en pan y 32-38 % en bollería, personal 35-42 %, alquiler 10-14 %, merma de pan 5-10 %, margen bruto objetivo >62 %, producción diaria 80-200 kg y ticket medio de 3-6 €.',
     image: '/lovable-uploads/ai-gallery/plan-panaderia-pan.jpg',
   },
 ];

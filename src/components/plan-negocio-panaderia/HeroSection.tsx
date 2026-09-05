@@ -16,10 +16,11 @@ const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, 
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_PANADERIA || '#comprar';
 
 const checkItems = [
-  'Plan financiero Excel: P&L 3 años con estacionalidad navideña',
-  'Inversión inicial detallada por partidas (~70K-110K EUR)',
-  'Punto de equilibrio por kilos diarios con ticket medio €4,50',
-  'Checklist apertura: 60+ trámites incluyendo RGSEAA obrador',
+  'Plan financiero Excel de 9 hojas: P&L 3 años, tesorería mensual y financiación',
+  'Inversión inicial detallada por partidas (101.600 € de CAPEX; 145.215 € con el colchón de caja)',
+  'Punto de equilibrio en 162 transacciones diarias con ticket medio de 5,50 € sin IVA',
+  'Checklist de apertura: 66 trámites en 6 fases, con el registro sanitario autonómico',
+  'Plan de negocio en Word: 10 secciones listas para presentar',
   'Acceso inmediato + actualizaciones de por vida',
 ];
 
@@ -79,7 +80,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          El plan de negocio completo para abrir una panadería u obrador artesanal en España. Plan financiero Excel con P&L a 3 años y estacionalidad navideña, inversión inicial detallada, punto de equilibrio por kilos diarios y checklist de apertura con 60+ trámites incluyendo RGSEAA obrador y salida de humos.
+          El plan de negocio completo para abrir una panadería u obrador artesanal en España. Plan financiero Excel de 9 hojas con P&L a 3 años y estacionalidad navideña, tesorería mensual, plan de financiación, inversión inicial detallada, punto de equilibrio en transacciones diarias y checklist de apertura con 66 trámites, incluidos el registro sanitario autonómico y la salida de humos.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

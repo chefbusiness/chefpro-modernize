@@ -24,12 +24,12 @@ export default function PlanNegocioFoodTruck() {
     <>
       <Helmet>
         <title>Plan de Negocio: Food Truck — Plan Financiero Excel + DOCX + Checklist Apertura | AI Chef Pro</title>
-        <meta name="description" content="Plan de negocio completo para montar un food truck en España 2026. Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 59 trámites incluyendo licencia venta ambulante e ITV vehículo adaptado. €29." />
+        <meta name="description" content="Plan de negocio completo para montar un food truck en España 2026. Documento DOCX 10 secciones + plan financiero Excel de 9 hojas con P&L 3 años, tesorería mes a mes y plan de financiación + checklist apertura con 68 trámites incluyendo licencia de venta ambulante e ITV vehículo adaptado. €29." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plan de negocio food truck, plan financiero food truck España, montar food truck, licencia venta ambulante, ITV vehículo adaptado, street food España, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/plan-negocio-food-truck" />
-        <meta property="og:title" content="Plan de Negocio: Food Truck — Plan Financiero + DOCX + Checklist 59 trámites" />
-        <meta property="og:description" content="DOCX 10 secciones + Excel P&L 3 años + checklist apertura 59 trámites para montar tu food truck en España. €29." />
+        <meta property="og:title" content="Plan de Negocio: Food Truck — Plan Financiero + DOCX + Checklist 68 trámites" />
+        <meta property="og:description" content="DOCX 10 secciones + Excel de 9 hojas P&L 3 años + checklist apertura 68 trámites para montar tu food truck en España. €29." />
         <meta property="og:url" content="https://aichef.pro/plan-negocio-food-truck" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -46,7 +46,7 @@ export default function PlanNegocioFoodTruck() {
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Plan de Negocio: Food Truck — Plan Financiero Excel, Inversión Inicial y Checklist Apertura",
-          "description": "Plan de negocio completo para montar un food truck en España. Incluye documento DOCX de 10 secciones, plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada (~62K EUR), punto de equilibrio en 27 clientes/día con ticket €12, escenarios financieros, cuadro de personal, checklist de apertura con 59 trámites incluyendo licencia de venta ambulante, ITV vehículo adaptado y autorización sanitaria RGSEAA, equipamiento cocina móvil y guía de permisos por CCAA.",
+          "description": "Plan de negocio completo para montar un food truck en España. Incluye documento DOCX de 10 secciones, plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada (81.997 € en total: 63.944 € de compra y adaptación más 18.053 € de fondo de maniobra), punto de equilibrio en 41 clientes/día con ticket de 12 € sin IVA, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR, escenarios financieros, cuadro de personal, checklist de apertura con 68 trámites incluyendo licencia de venta ambulante, ITV vehículo adaptado y registro sanitario de tu comunidad autónoma, equipamiento cocina móvil y permisos municipales.",
           "image": "https://aichef.pro/og-plan-negocio-food-truck.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -70,7 +70,7 @@ export default function PlanNegocioFoodTruck() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Qué permisos necesito para operar un food truck en España?", "acceptedAnswer": { "@type": "Answer", "text": "Licencia de venta ambulante, autorización sanitaria RGSEAA, ITV del vehículo adaptado, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 59 trámites organizados por fases y por CCAA." }},
+            { "@type": "Question", "name": "¿Qué permisos necesito para operar un food truck en España?", "acceptedAnswer": { "@type": "Answer", "text": "Licencia de venta ambulante, inscripción en el registro sanitario de tu comunidad autónoma (el Registro General Sanitario estatal no aplica al minorista que sirve al consumidor final, art. 2.2 del RD 191/2011), autorización sanitaria del vehículo, ITV si lo has modificado, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 68 trámites organizados en 6 fases." }},
             { "@type": "Question", "name": "¿Cuánto cuesta montar un food truck en España?", "acceptedAnswer": { "@type": "Answer", "text": "Entre 45K y 85K EUR según vehículo nuevo o segunda mano, equipamiento de cocina y permisos municipales. El plan financiero Excel desglosa todas las partidas." }},
             { "@type": "Question", "name": "¿Puedo presentar este plan al banco o a inversores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Incluye P&L 3 años, punto de equilibrio y 3 escenarios. Es el formato profesional que piden bancos y entidades como ICO emprendedores o ENISA." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}

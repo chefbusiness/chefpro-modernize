@@ -25,7 +25,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio: Tapas Bar / Gastrobar — Plan Financiero Excel + DOCX + Checklist Apertura | AI Chef Pro',
     description:
-      'Plan de negocio completo para abrir un tapas bar o gastrobar en España 2026. Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 63 trámites incluyendo licencia clasificada y salida de humos. €35.',
+      'Plan de negocio completo para abrir un tapas bar o gastrobar en España 2026. Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 73 trámites incluyendo licencia clasificada y salida de humos. €35.',
     keywords:
       'plan de negocio tapas bar, plan financiero gastrobar España, abrir tapas bar, checklist apertura tapas bar, licencia clasificada hostelería, salida de humos restaurante, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-negocio-tapas-bar.jpg',
@@ -35,7 +35,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio: Tapas Bar / Gastrobar — Plan Financiero Excel + DOCX + Checklist Apertura',
     productDescription:
-      'Plan de negocio completo para abrir un tapas bar o gastrobar en España. Incluye documento DOCX de 10 secciones (resumen ejecutivo, concepto, mercado, DAFO, marketing, operaciones, RRHH, financiero, legal, conclusiones), plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 63 trámites incluyendo licencia clasificada y salida de humos, y ratios sectoriales del mercado español 2026.',
+      'Plan de negocio completo para abrir un tapas bar o gastrobar en España. Incluye documento DOCX de 10 secciones (resumen ejecutivo, concepto, mercado, DAFO, marketing, operaciones, RRHH, financiero, legal, conclusiones), plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, previsión de tesorería mes a mes con liquidación de IVA y plan de financiación con cuadro de amortización del préstamo, checklist de apertura con 73 trámites incluyendo licencia clasificada y salida de humos, y ratios sectoriales del mercado español 2026.',
     price: '35.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -73,7 +73,7 @@ const data: PlanNegocioData = {
       },
       {
         q: '¿Qué trámites legales incluye el checklist de apertura?',
-        a: '63 trámites en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días.',
+        a: '73 trámites en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días.',
       },
       {
         q: '¿Hay garantía de devolución?',
@@ -113,12 +113,12 @@ const data: PlanNegocioData = {
     titleGold: 'Tapas Bar / Gastrobar',
     titleSubtitle: 'Plan Financiero Excel + Documento DOCX + Checklist Apertura',
     description:
-      'El plan de negocio completo para abrir un tapas bar o gastrobar en España. Documento DOCX de 10 secciones, plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios y checklist de apertura con 63 trámites incluyendo licencia clasificada y salida de humos.',
+      'El plan de negocio completo para abrir un tapas bar o gastrobar en España. Documento DOCX de 10 secciones, plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios y checklist de apertura con 73 trámites incluyendo licencia clasificada y salida de humos.',
     checkItems: [
       'Plan de negocio DOCX completo: 10 secciones profesionales',
       'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
-      'Inversión inicial detallada por partidas (~90K-140K EUR)',
-      'Checklist apertura: 63 trámites y licencias España 2026',
+      'Inversión inicial detallada por partidas: 153.327 € de inversión total',
+      'Checklist apertura: 73 trámites y licencias España 2026',
       'Acceso inmediato + actualizaciones de por vida',
     ],
     ctaLabel: 'DESCARGAR PLAN DE NEGOCIO — €35',
@@ -129,10 +129,10 @@ const data: PlanNegocioData = {
       '9 secciones profesionales con datos reales del mercado español para construir la viabilidad financiera de tu tapas bar y presentarla a banco o inversores.',
     templates: [
       { icon: 'FileText', title: 'Plan de Negocio DOCX (10 secciones)', desc: 'Resumen ejecutivo, concepto, análisis de mercado, DAFO, marketing, operaciones, RRHH, financiero, legal y conclusiones. Listo para banco o inversores.' },
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, cuadro de personal e instrucciones. Todas las celdas editables.' },
-      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: 'Modelo realista: 34 clientes al día con ticket medio €18, margen de seguridad 25 % y sensibilidad a horas pico de barra y comedor.' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería mes a mes y plan de financiación, más instrucciones. 739 fórmulas: cambias una celda verde y el libro entero se recalcula.' },
+      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: 'Modelo realista: 50 clientes al día para cubrir costes —47 si sólo cuentas la caja y la cuota del préstamo— con ticket medio de 18 € sin IVA, un 19,6 % de holgura sobre los 56 previstos y tabla de sensibilidad por ticket medio y coste variable.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes y ticket medio. Útil para presentar a banco e inversores.' },
-      { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos por puesto: jefe de cocina, cocineros, camareros de barra y de sala, con Seguridad Social al 33,4 % y 14 pagas.' },
+      { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Salarios brutos de los 7 puestos —propietario/encargado de sala, jefe de cocina, camarero de barra, camarero de sala y terraza, ayudante de cocina, extra de fin de semana y suplencias—, con Seguridad Social al 33 %, 14 pagas, semáforo que avisa si un sueldo baja del salario mínimo en proporción a su jornada y contador de horas contratadas frente a las necesarias.' },
       { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos, equipamiento, RRHH, marketing pre-apertura y primeros 90 días.' },
       { icon: 'Wrench', title: 'Equipamiento Específico Tapas Bar', desc: 'Plancha, freidora, grifos de cerveza, vitrina de tapas, salamandra, expositor de raciones y vinoteca, con marcas de referencia y precios orientativos.' },
       { icon: 'ListChecks', title: 'Ratios de Referencia Tapas Bar', desc: 'Food cost tapas 28-32 %, márgenes bebidas 22-28 %, margen bruto >68 %, ticket medio 15-22 EUR y rotación por turno.' },
@@ -160,8 +160,8 @@ const data: PlanNegocioData = {
       'No es otra plantilla genérica. Es el plan financiero profesional con datos reales del mercado español para abrir un tapas bar o gastrobar con cabeza.',
     reasons: [
       { icon: 'FileText', title: 'Plan DOCX + Excel Profesional', desc: 'Documento Word de 10 secciones con resumen ejecutivo, DAFO, análisis de mercado y plan financiero. Excel con fórmulas activas que recalculan al cambiar cifras.' },
-      { icon: 'BarChart3', title: 'Datos Reales Tapas Bar 2026', desc: 'Ticket medio €15-22, food cost 28-32 %, márgenes bebidas 22-28 %, ocupación por franja horaria y break-even en 34 clientes/día. Cifras del mercado español real.' },
-      { icon: 'ShieldCheck', title: 'Licencia Clasificada Cubierta', desc: '63 trámites incluyendo licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, sanidad y prevención de incendios. No te dejas nada.' },
+      { icon: 'BarChart3', title: 'Datos Reales Tapas Bar 2026', desc: 'Ticket medio €15-22, food cost 28-32 %, márgenes bebidas 22-28 %, ocupación por franja horaria y break-even en 50 clientes/día (47 contando la cuota del préstamo). Cifras del mercado español real.' },
+      { icon: 'ShieldCheck', title: 'Licencia Clasificada Cubierta', desc: '73 trámites incluyendo licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, sanidad, RGPD, registro horario y Veri*factu. No te dejas nada.' },
       { icon: 'Banknote', title: 'Listo para Banco e Inversores', desc: 'P&L 3 años, punto de equilibrio, 3 escenarios y plan de financiación con ICO, ENISA, banca y business angels. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
@@ -188,7 +188,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 1',
         title: 'Cuadro de Personal con Seg. Social',
         value: '€19',
-        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto: jefe de cocina, cocineros, camareros de barra y de sala.',
+        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y coste real por puesto, con semáforo de salario mínimo por jornada y contador de horas de servicio cubiertas.',
         image: '/lovable-uploads/ai-gallery/plan-tapas-bar-cocina.jpg',
       },
       {
@@ -228,15 +228,15 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Puedo modificar las cifras del Excel?',
-      a: 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, el número de clientes, el ticket medio, los salarios y cualquier partida de inversión para adaptarlo a tu proyecto concreto. Incluye hoja de instrucciones.',
+      a: 'Sí. Las celdas verdes son las que se teclean y las 739 fórmulas se recalculan solas; el resto de las hojas va protegido para que no se pise una fórmula sin querer, y la protección no tiene contraseña (Revisar → Desproteger hoja).',
     },
     {
       q: '¿Qué trámites legales incluye el checklist de apertura?',
-      a: '63 trámites organizados en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días de operación.',
+      a: '73 trámites organizados en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días de operación.',
     },
     {
       q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-      a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, documento DOCX de 10 secciones profesionales, ratios financieros específicos de tapas bar (food cost, bebidas, ticket medio), cuadro de personal con Seg. Social y un checklist de 63 trámites verificado con la legislación vigente.',
+      a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, documento DOCX de 10 secciones profesionales, ratios financieros específicos de tapas bar (food cost, bebidas, ticket medio), cuadro de personal con Seg. Social, previsión de tesorería y plan de financiación, y un checklist de 73 trámites verificado con la legislación vigente.',
     },
     {
       q: '¿Cómo funciona la garantía?',
@@ -252,9 +252,9 @@ const data: PlanNegocioData = {
     items: [
       'Plan de negocio DOCX completo (10 secciones)',
       'Plan financiero Excel con P&L previsional 3 años',
-      'Inversión inicial detallada (~115K EUR de referencia)',
-      'Punto de equilibrio + 3 escenarios financieros',
-      'Checklist apertura con 63 trámites en 6 fases',
+      'Inversión inicial detallada: 153.327 € de inversión total',
+      'Punto de equilibrio + 3 escenarios financieros + tesorería mes a mes y cuadro de amortización del préstamo',
+      'Checklist apertura con 73 trámites en 6 fases',
       'Equipamiento específico tapas bar + ratios sectoriales',
       'BONUS: Cuadro Personal con Seg. Social (€19)',
       'BONUS: Ratios Referencia Tapas Bar 2026 (€19)',
@@ -281,7 +281,7 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-tapas-bar',

@@ -27,7 +27,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio: Food Truck — Plan Financiero Excel + DOCX + Checklist Apertura | AI Chef Pro',
     description:
-      'Plan de negocio completo para montar un food truck en España 2026. Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 59 trámites incluyendo licencia venta ambulante e ITV vehículo adaptado. €29.',
+      'Plan de negocio completo para montar un food truck en España 2026. Documento DOCX 10 secciones + plan financiero Excel de 9 hojas con P&L 3 años, tesorería mes a mes y plan de financiación + checklist apertura con 68 trámites incluyendo licencia de venta ambulante e ITV vehículo adaptado. €29.',
     keywords:
       'plan de negocio food truck, plan financiero food truck España, montar food truck, licencia venta ambulante, ITV vehículo adaptado, street food España, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-negocio-food-truck.jpg',
@@ -37,7 +37,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio: Food Truck — Plan Financiero Excel, Inversión Inicial y Checklist Apertura',
     productDescription:
-      'Plan de negocio completo para montar un food truck en España. Incluye documento DOCX de 10 secciones, plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada (~62K EUR), punto de equilibrio en 27 clientes/día con ticket €12, escenarios financieros, cuadro de personal, checklist de apertura con 59 trámites incluyendo licencia de venta ambulante, ITV vehículo adaptado y autorización sanitaria RGSEAA, equipamiento cocina móvil y guía de permisos por CCAA.',
+      'Plan de negocio completo para montar un food truck en España. Incluye documento DOCX de 10 secciones, plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada (81.997 € en total: 63.944 € de compra y adaptación más 18.053 € de fondo de maniobra), punto de equilibrio en 41 clientes/día con ticket de 12 € sin IVA, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR, escenarios financieros, cuadro de personal, checklist de apertura con 68 trámites incluyendo licencia de venta ambulante, ITV vehículo adaptado y registro sanitario de tu comunidad autónoma, equipamiento cocina móvil y permisos municipales.',
     price: '29.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -67,7 +67,7 @@ const data: PlanNegocioData = {
     faqs: [
       {
         q: '¿Qué permisos necesito para operar un food truck en España?',
-        a: 'Licencia de venta ambulante, autorización sanitaria RGSEAA, ITV del vehículo adaptado, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 59 trámites organizados por fases y por CCAA.',
+        a: 'Licencia de venta ambulante, inscripción en el registro sanitario de tu comunidad autónoma (el Registro General Sanitario estatal no aplica al minorista que sirve al consumidor final, art. 2.2 del RD 191/2011), autorización sanitaria del vehículo, ITV si lo has modificado, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 68 trámites organizados en 6 fases.',
       },
       {
         q: '¿Cuánto cuesta montar un food truck en España?',
@@ -113,14 +113,14 @@ const data: PlanNegocioData = {
     badge: 'El plan de negocio más completo para montar tu food truck',
     titlePre: 'Plan de Negocio: ',
     titleGold: 'Food Truck',
-    titleSubtitle: 'Plan Financiero Excel + DOCX + Checklist Apertura 59 Trámites',
+    titleSubtitle: 'Plan Financiero Excel + DOCX + Checklist Apertura 68 Trámites',
     description:
-      'El plan de negocio completo para montar un food truck en España. Documento DOCX de 10 secciones, plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio en 27 clientes/día con ticket €12 y checklist de apertura con 59 trámites incluyendo licencia de venta ambulante e ITV del vehículo adaptado.',
+      'El plan de negocio completo para montar un food truck en España. Documento DOCX de 10 secciones, plan financiero Excel de 9 hojas con P&L a 3 años y tesorería mes a mes, inversión inicial detallada, punto de equilibrio en 41 clientes/día con ticket de 12 € sin IVA y checklist de apertura con 68 trámites incluyendo licencia de venta ambulante e ITV del vehículo adaptado.',
     checkItems: [
       'Plan de negocio DOCX completo: 10 secciones profesionales',
       'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
       'Inversión inicial detallada por partidas (~45K-85K EUR)',
-      'Checklist apertura: 59 trámites, permisos y licencias',
+      'Checklist apertura: 68 trámites, permisos y licencias',
       'Acceso inmediato + actualizaciones de por vida',
     ],
     ctaLabel: 'DESCARGAR PLAN DE NEGOCIO — €29',
@@ -131,14 +131,14 @@ const data: PlanNegocioData = {
       '9 secciones profesionales con datos reales del sector street food en España para montar tu food truck con cabeza y bajo riesgo.',
     templates: [
       { icon: 'FileText', title: 'Plan de Negocio DOCX (10 secciones)', desc: 'Documento profesional completo con análisis de mercado, modelo de negocio, plan operativo de food truck, marketing y proyecciones financieras a 3 años.' },
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, cuadro de personal e instrucciones. Todas las celdas editables.' },
-      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: '27 clientes al día con ticket medio €12. Margen de contribución, días de operación y sensibilidad a ubicaciones (festivales, mercados, oficinas).' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería mes a mes, plan de financiación e instrucciones. Las celdas verdes son las que se teclean; el resto se recalcula solo y va protegido, sin contraseña, para que no se rompa una fórmula sin querer.' },
+      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: '41 clientes al día con ticket medio de 12 € sin IVA para cubrir todos los costes, y 38 para cubrir además la cuota del préstamo. Margen de contribución, días de operación y una tabla de sensibilidad de 20 combinaciones de ticket y coste variable.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes ubicaciones, días de operación y ticket medio para presentar a banco e inversores.' },
-      { icon: 'Users', title: 'Cuadro Personal (2-3 personas)', desc: 'Equipo reducido típico de food truck con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto: cocinero, ayudante y atención al cliente.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Alta autónomo o SL, licencias municipales de venta ambulante, autorización sanitaria (RGSEAA), ITV del vehículo adaptado, seguros y primeros 90 días.' },
+      { icon: 'Users', title: 'Cuadro Personal (4 puestos, 1,6 jornadas)', desc: 'Equipo reducido de food truck con salarios brutos, Seguridad Social al 33 %, 14 pagas y coste real por puesto: propietario/a a jornada completa, ayudante de cocina y servicio al 45 %, refuerzo de festivales al 10 % y suplencias de vacaciones al 6 %. El libro avisa en rojo si un sueldo baja del SMI en proporción a su jornada.' },
+      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Alta autónomo o SL, licencias municipales de venta ambulante, registro sanitario de tu comunidad autónoma y autorización sanitaria del vehículo, ITV si lo modificas, seguros y primeros 90 días.' },
       { icon: 'Wrench', title: 'Equipamiento Cocina Móvil', desc: 'Plancha, freidora, generador eléctrico, depósitos de agua limpia y residual, extracción de humos con filtros y normativa técnica del vehículo adaptado.' },
-      { icon: 'ListChecks', title: 'Ratios de Referencia Food Truck', desc: 'Food cost 30 %, margen bruto 65 %, retorno de inversión en 12-24 meses, ratios sector street food y break-even por ubicación tipo (festival, mercado, oficinas).' },
-      { icon: 'Banknote', title: 'Plan de Financiación', desc: 'Opciones reales: ICO emprendedores, ENISA, microcréditos, crowdfunding, préstamo bancario e inversores privados con orden recomendado de gestión.' },
+      { icon: 'ListChecks', title: 'Ratios de Referencia Food Truck', desc: 'Los rangos del sector (food cost de comida 28-33 %, de bebida 22-28 %, packaging 3-5 %, personal 25-32 %, margen bruto > 62 %) al lado de lo que sale en TU plan: 27,1 % de coste de mercancía, 64,1 % de margen bruto y 31,2 % de personal. El retorno de la inversión no se promete: lo calcula la hoja de tesorería con tu propio flujo de caja.' },
+      { icon: 'Banknote', title: 'Plan de Financiación', desc: 'Hoja propia: recursos propios, préstamo bancario, línea ICO, préstamo participativo ENISA, business angels y subvenciones autonómicas o locales, con el cuadro de amortización del préstamo año a año, la cobertura del servicio de la deuda (DSCR) y el aviso de si el dinero que aportas no llega a lo que hace falta.' },
     ],
   },
 
@@ -162,8 +162,8 @@ const data: PlanNegocioData = {
       'No es otra plantilla genérica. Es el plan financiero profesional con datos reales del sector street food para montar un food truck con bajo riesgo y rentabilidad rápida.',
     reasons: [
       { icon: 'Truck', title: 'Inversión Mínima vs Restaurante', desc: 'Inversión 45-85K EUR (vs 100-150K de un restaurante). Menos personal, sin alquiler de local fijo, posibilidad de cambiar de ubicación si no funciona. Negocio de bajo riesgo.' },
-      { icon: 'BarChart3', title: 'Datos Reales Street Food 2026', desc: 'Ticket medio €12, food cost 30 %, margen bruto 65 %, retorno de inversión 12-24 meses y break-even en 27 clientes/día. Cifras del mercado español real.' },
-      { icon: 'ShieldCheck', title: 'Permisos Municipales + ITV Vehículo', desc: '59 trámites en 6 fases incluyendo licencia de venta ambulante, ITV del vehículo adaptado, autorización sanitaria RGSEAA y permisos por CCAA. No te dejas nada.' },
+      { icon: 'BarChart3', title: 'Datos Reales Street Food 2026', desc: 'Ticket medio de 12 € sin IVA (13,20 € de PVP), coste de mercancía 27,1 %, margen bruto 64,1 % y break-even en 41 clientes/día, con 45 previstos. Cifras calculadas en el propio libro, no copiadas de un folleto.' },
+      { icon: 'ShieldCheck', title: 'Permisos Municipales + ITV Vehículo', desc: '68 trámites en 6 fases incluyendo licencia de venta ambulante, ITV del vehículo adaptado, registro sanitario autonómico, Veri*factu, registro horario y RGPD. No te dejas nada.' },
       { icon: 'Banknote', title: 'Listo para Microcrédito + ICO', desc: 'P&L 3 años, punto de equilibrio, 3 escenarios y plan de financiación con ICO emprendedores, ENISA, microcréditos y crowdfunding. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
@@ -190,7 +190,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 1',
         title: 'Guía Permisos Food Truck por CCAA',
         value: '€19',
-        desc: 'Permisos de venta ambulante específicos por comunidad autónoma: Madrid, Cataluña, Andalucía, Comunidad Valenciana, País Vasco… con tasas, plazos y formularios oficiales de cada CCAA.',
+        desc: 'Guía de permisos de venta ambulante: por qué la licencia es municipal e intransferible, qué documentación pide el ayuntamiento, plazos reales de 1 a 3 meses y qué cambia según la comunidad autónoma (sección 9 del documento y fase 2 del checklist). No incluye los formularios de cada CCAA.',
         image: '/lovable-uploads/ai-gallery/plan-food-truck-mercado.jpg',
       },
       {
@@ -198,7 +198,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 2',
         title: 'Ratios Referencia Street Food 2026',
         value: '€19',
-        desc: 'Datos actualizados del sector street food: food cost 30 %, margen bruto 65 %, ticket medio €12, retorno de inversión 12-24 meses y comparativa de ubicaciones (festival, mercado, oficinas, eventos privados).',
+        desc: 'Tabla de referencia del sector dentro del libro: food cost de comida 28-33 %, de bebida 22-28 %, packaging 3-5 %, personal 25-32 %, margen bruto > 62 %, ticket 10-15 €, 40-80 clientes por servicio y 4-6 días operativos por semana, cada dato con su fuente y con una nota que dice dónde se aparta tu plan.',
         image: '/lovable-uploads/ai-gallery/plan-food-truck-cola.jpg',
       },
     ],
@@ -222,7 +222,7 @@ const data: PlanNegocioData = {
   faqs: [
     {
       q: '¿Qué permisos necesito para operar un food truck en España?',
-      a: 'Los permisos varían por municipio, pero los principales son: licencia de venta ambulante, autorización sanitaria (registro sanitario RGSEAA), ITV del vehículo adaptado, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 59 trámites organizados por fases y por CCAA.',
+      a: 'Los permisos varían por municipio, pero los principales son: licencia de venta ambulante, inscripción en el registro sanitario de tu comunidad autónoma y autorización sanitaria del vehículo, ITV si lo has modificado estructuralmente, alta en Hacienda (modelo 036/037), seguro de responsabilidad civil y permiso de ocupación de vía pública. El checklist incluye los 68 trámites organizados en 6 fases.',
     },
     {
       q: '¿Qué requisitos debe cumplir el vehículo del food truck?',
@@ -234,7 +234,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-      a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español de street food 2026, ratios financieros profesionales (food cost 30 %, margen 65 %), cuadro de personal con Seg. Social, punto de equilibrio calculado (27 clientes/día a €12), checklist de 59 trámites verificado y guía de permisos por CCAA.',
+      a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye un modelo con 718 fórmulas enlazadas —cambias un supuesto y se recalculan el P&L, la tesorería y la financiación—, ratios auditados contra los del sector (coste de mercancía 27,1 %, margen bruto 64,1 %, personal 31,2 %), cuadro de personal con Seguridad Social y aviso de SMI, punto de equilibrio calculado (41 clientes/día a 12 € sin IVA) y checklist de 68 trámites verificado contra la normativa vigente.',
     },
     {
       q: '¿Puedo presentar este plan al banco o a inversores?',
@@ -255,8 +255,8 @@ const data: PlanNegocioData = {
       'Plan de negocio DOCX completo (10 secciones)',
       'Plan financiero Excel con P&L previsional 3 años',
       'Inversión inicial detallada (45K-85K EUR según opciones)',
-      'Punto de equilibrio: 27 clientes/día con ticket €12',
-      'Checklist apertura con 59 trámites + permisos municipales',
+      'Punto de equilibrio: 41 clientes/día con ticket de 12 € sin IVA',
+      'Checklist apertura con 68 trámites + permisos municipales',
       'Equipamiento cocina móvil + ratios street food',
       'BONUS: Guía permisos por CCAA (€19)',
       'BONUS: Ratios referencia street food 2026 (€19)',
@@ -283,7 +283,7 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-food-truck',

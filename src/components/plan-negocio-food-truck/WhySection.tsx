@@ -10,12 +10,12 @@ const reasons = [
   {
     icon: BarChart3,
     title: 'Datos Reales Street Food 2026',
-    desc: 'Ticket medio €12, food cost 30 %, margen bruto 65 %, retorno de inversión 12-24 meses y break-even en 27 clientes/día. Cifras del mercado español real.',
+    desc: 'Ticket medio de 12 € sin IVA (13,20 € de PVP), coste de mercancía 27,1 %, margen bruto 64,1 % y break-even en 41 clientes/día, con 45 previstos. Cifras calculadas en el propio libro, no copiadas de un folleto.',
   },
   {
     icon: ShieldCheck,
     title: 'Permisos Municipales + ITV Vehículo',
-    desc: '59 trámites en 6 fases incluyendo licencia de venta ambulante, ITV del vehículo adaptado, autorización sanitaria RGSEAA y permisos por CCAA. No te dejas nada.',
+    desc: '68 trámites en 6 fases incluyendo licencia de venta ambulante, ITV del vehículo adaptado, registro sanitario autonómico, Veri*factu, registro horario y RGPD. No te dejas nada.',
   },
   {
     icon: Banknote,

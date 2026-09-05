@@ -24,12 +24,12 @@ export default function PlanNegocioPanaderia() {
     <>
       <Helmet>
         <title>Plan de Negocio: Panadería / Obrador — Plan Financiero Excel + Checklist Apertura | AI Chef Pro</title>
-        <meta name="description" content="Plan de negocio completo para abrir una panadería u obrador artesanal en España 2026. Plan financiero Excel con P&L 3 años + estacionalidad navideña, inversión inicial, punto de equilibrio por kilos diarios y checklist apertura con 60+ trámites incluyendo RGSEAA obrador. €35." />
+        <meta name="description" content="Plan de negocio completo para abrir una panadería u obrador artesanal en España 2026. Plan financiero Excel de 9 hojas con P&L 3 años + estacionalidad navideña, tesorería mes a mes, plan de financiación con DSCR, inversión inicial y punto de equilibrio en transacciones diarias, plan de negocio en Word de 10 secciones y checklist de apertura con 66 trámites, incluida la inscripción en el registro sanitario autonómico. €35." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plan de negocio panadería, plan financiero obrador artesanal, abrir panadería España, RGSEAA obrador, horno pisos rotativo, masa madre, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/plan-negocio-panaderia" />
-        <meta property="og:title" content="Plan de Negocio: Panadería / Obrador — Plan Financiero + Checklist 60 trámites" />
-        <meta property="og:description" content="Excel P&L 3 años con estacionalidad + checklist apertura 60 trámites RGSEAA obrador para abrir tu panadería en España. €35." />
+        <meta property="og:title" content="Plan de Negocio: Panadería / Obrador — Plan Financiero + Checklist 66 trámites" />
+        <meta property="og:description" content="Excel de 9 hojas con P&L 3 años, tesorería y financiación + checklist de apertura con 66 trámites, incluido el registro sanitario autonómico, para abrir tu panadería en España. €35." />
         <meta property="og:url" content="https://aichef.pro/plan-negocio-panaderia" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -46,7 +46,7 @@ export default function PlanNegocioPanaderia() {
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Plan de Negocio: Panadería / Obrador — Plan Financiero Excel, Inversión Inicial y Checklist Apertura",
-          "description": "Plan de negocio completo para abrir una panadería u obrador artesanal en España. Incluye plan financiero Excel con P&L previsional a 3 años con estacionalidad navideña, inversión inicial detallada (~88K EUR), punto de equilibrio por kilos diarios con ticket €4,50, escenarios financieros, cuadro de personal panadero con turno madrugada y plus de nocturnidad, checklist de apertura con 60+ trámites incluyendo RGSEAA obrador, equipamiento específico (horno de pisos rotativo, amasadora 40-80kg, cámara fermentación) y ratios sectoriales del mercado panadero español 2026.",
+          "description": "Plan de negocio completo para abrir una panadería u obrador artesanal en España. Incluye plan financiero Excel de 9 hojas con P&L previsional a 3 años con estacionalidad navideña, inversión inicial detallada (101.600 € de CAPEX y 145.215 € con el colchón de caja), punto de equilibrio en 162 transacciones diarias con ticket medio de 5,50 € sin IVA, escenarios financieros, tesorería mes a mes con liquidación de IVA, plan de financiación con cuadro de amortización francés y DSCR, cuadro de personal panadero de 6 puestos con turno de madrugada y auditoría de horas, checklist de apertura con 66 trámites incluida la inscripción en el registro sanitario de tu Comunidad Autónoma, equipamiento específico (horno de pisos o rotativo, amasadora espiral 25-50 kg, cámara de fermentación) y los rangos de referencia del sector panadero español 2026.",
           "image": "https://aichef.pro/og-plan-negocio-panaderia.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -70,9 +70,9 @@ export default function PlanNegocioPanaderia() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Es un plan genérico o específico para panadería?", "acceptedAnswer": { "@type": "Answer", "text": "Es 100% específico para panadería y obrador artesanal en España. Las partidas de inversión, ratios financieros, costes de personal con turno madrugada y trámites legales (RGSEAA obrador, licencia actividad) están adaptados al modelo panadero." }},
-            { "@type": "Question", "name": "¿Puedo presentar este plan al banco o a inversores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Incluye P&L 3 años con estacionalidad navideña, punto de equilibrio por kilos diarios y 3 escenarios. Es el formato que piden bancos para microcrédito ICO y leasing de horno y amasadora." }},
-            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist?", "acceptedAnswer": { "@type": "Answer", "text": "Más de 60 trámites en 6 fases: constitución SL, RGSEAA obrador, licencias municipales, equipamiento (proyecto técnico, salida de humos), RRHH (turno madrugada, PRL nocturnidad) y primeros 90 días." }},
+            { "@type": "Question", "name": "¿Es un plan genérico o específico para panadería?", "acceptedAnswer": { "@type": "Answer", "text": "Es 100% específico para panadería y obrador artesanal en España. Las partidas de inversión, ratios financieros, costes de personal con turno madrugada y trámites legales (registro sanitario autonómico, licencia de actividad) están adaptados al modelo panadero." }},
+            { "@type": "Question", "name": "¿Puedo presentar este plan al banco o a inversores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Incluye P&L a 3 años con estacionalidad navideña, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR año a año, punto de equilibrio en transacciones diarias y 3 escenarios. Es el formato que piden los bancos para microcrédito ICO y leasing de horno y amasadora." }},
+            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist?", "acceptedAnswer": { "@type": "Answer", "text": "66 trámites en 6 fases: constitución de la SL, local y licencias (registro sanitario autonómico, licencia clasificada, salida de humos), equipamiento, personal (turno de madrugada, PRL, registro horario), marketing y primeros 90 días." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

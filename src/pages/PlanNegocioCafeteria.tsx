@@ -24,12 +24,12 @@ export default function PlanNegocioCafeteria() {
     <>
       <Helmet>
         <title>Plan de Negocio: Cafetería / Brunch — Plan Financiero Excel + Checklist Apertura | AI Chef Pro</title>
-        <meta name="description" content="Plan de negocio completo para abrir una cafetería o brunch en España 2026. Plan financiero Excel con P&L 3 años, punto de equilibrio en 53 clientes/día, escenarios y checklist apertura con 65+ trámites bajo licencia inocua. €29." />
+        <meta name="description" content="Plan de negocio completo para abrir una cafetería o brunch en España 2026. Plan financiero Excel con P&L 3 años, tesorería a 12 meses, plan de financiación, punto de equilibrio en 84 clientes/día y checklist de apertura con 75 trámites bajo licencia inocua. €29." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plan de negocio cafetería, plan financiero brunch España, abrir cafetería, checklist apertura cafetería, licencia inocua hostelería, máquina espresso profesional, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/plan-negocio-cafeteria" />
-        <meta property="og:title" content="Plan de Negocio: Cafetería / Brunch — Plan Financiero + Checklist 65 trámites" />
-        <meta property="og:description" content="Excel P&L 3 años + checklist apertura 65 trámites para abrir una cafetería o brunch en España. €29." />
+        <meta property="og:title" content="Plan de Negocio: Cafetería / Brunch — Plan Financiero + Checklist 75 trámites" />
+        <meta property="og:description" content="Excel P&L 3 años + checklist apertura 75 trámites para abrir una cafetería o brunch en España. €29." />
         <meta property="og:url" content="https://aichef.pro/plan-negocio-cafeteria" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -46,7 +46,7 @@ export default function PlanNegocioCafeteria() {
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Plan de Negocio: Cafetería / Brunch — Plan Financiero Excel, Inversión Inicial y Checklist Apertura",
-          "description": "Plan de negocio completo para abrir una cafetería o brunch en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada (~94K EUR), punto de equilibrio en 53 clientes/día con ticket medio €9,50, escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 65+ trámites bajo licencia de actividad inocua y RGSEAA, equipamiento específico cafetería y ratios sectoriales del mercado español 2026.",
+          "description": "Plan de negocio completo para abrir una cafetería o brunch en España. Incluye plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada (130.176 €: 91.650 € de CAPEX más 38.526 € de fondo de maniobra), punto de equilibrio en 84 clientes/día con ticket medio de 9,80 € sin IVA (10,78 € de PVP), escenarios financieros, tesorería a 12 meses con liquidación de IVA, plan de financiación con cuadro de amortización y DSCR, cuadro de personal con Seguridad Social, checklist de apertura con 75 trámites bajo licencia de actividad inocua y registro sanitario autonómico, equipamiento específico cafetería y ratios sectoriales del mercado español 2026.",
           "image": "https://aichef.pro/og-plan-negocio-cafeteria.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -72,7 +72,7 @@ export default function PlanNegocioCafeteria() {
           "mainEntity": [
             { "@type": "Question", "name": "¿Es un plan genérico o específico para cafetería?", "acceptedAnswer": { "@type": "Answer", "text": "Es 100% específico para cafetería y brunch en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de cafetería con barra, sala y terraza." }},
             { "@type": "Question", "name": "¿Puedo presentar este plan al banco o a inversores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Incluye P&L 3 años, punto de equilibrio y 3 escenarios. Es exactamente el formato que piden bancos e inversores." }},
-            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist?", "acceptedAnswer": { "@type": "Answer", "text": "Más de 65 trámites en 6 fases: constitución SL, licencias municipales (inocua + RGSEAA + terraza), equipamiento, RRHH, marketing pre-apertura y primeros 90 días." }},
+            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist?", "acceptedAnswer": { "@type": "Answer", "text": "75 trámites en 6 fases: constitución de la SL, licencias municipales (inocua + registro sanitario autonómico + terraza), equipamiento, RRHH, marketing pre-apertura y primeros 90 días." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

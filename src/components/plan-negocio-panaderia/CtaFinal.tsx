@@ -4,13 +4,14 @@ import PaymentBadges from '../ebook/PaymentBadges';
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_PANADERIA || '#comprar';
 
 const items = [
-  'Plan financiero Excel con P&L 3 años + estacionalidad navideña',
-  'Inversión inicial detallada (~88K EUR de referencia)',
-  'Punto de equilibrio por kilos diarios con ticket €4,50',
+  'Plan financiero Excel de 9 hojas: P&L 3 años, tesorería y financiación',
+  'Inversión inicial detallada: 101.600 € de CAPEX y 145.215 € con el colchón de caja',
+  'Punto de equilibrio en 162 transacciones diarias con ticket de 5,50 € sin IVA',
   '3 escenarios financieros (pesimista/realista/optimista)',
-  'Checklist apertura con 60+ trámites incluyendo RGSEAA',
+  'Checklist de apertura con 66 trámites, incluido el registro sanitario autonómico',
   'Equipamiento específico panadería + ratios sectoriales',
-  'BONUS: Cuadro Personal Panadero con plus nocturnidad (€19)',
+  'Plan de negocio en Word con 10 secciones listas para presentar',
+  'BONUS: Cuadro de Personal Panadero con cobertura de horas (€19)',
   'BONUS: Ratios Referencia Sector Panadero 2026 (€19)',
 ];
 

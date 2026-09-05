@@ -6,9 +6,9 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_TAPAS_BAR || '#
 const items = [
   'Plan de negocio DOCX completo (10 secciones)',
   'Plan financiero Excel con P&L previsional 3 años',
-  'Inversión inicial detallada (~115K EUR de referencia)',
-  'Punto de equilibrio + 3 escenarios financieros',
-  'Checklist apertura con 63 trámites en 6 fases',
+  'Inversión inicial detallada: 153.327 € de inversión total',
+  'Punto de equilibrio + 3 escenarios financieros + tesorería mes a mes y cuadro de amortización del préstamo',
+  'Checklist apertura con 73 trámites en 6 fases',
   'Equipamiento específico tapas bar + ratios sectoriales',
   'BONUS: Cuadro Personal con Seg. Social (€19)',
   'BONUS: Ratios Referencia Tapas Bar 2026 (€19)',

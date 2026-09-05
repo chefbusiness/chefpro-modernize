@@ -31,7 +31,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio: Cafetería / Brunch — Plan Financiero Excel + Checklist Apertura | AI Chef Pro',
     description:
-      'Plan de negocio completo para abrir una cafetería o brunch en España 2026. Plan financiero Excel con P&L 3 años, punto de equilibrio en 53 clientes/día, escenarios y checklist apertura con 65+ trámites bajo licencia inocua. €29.',
+      'Plan de negocio completo para abrir una cafetería o brunch en España 2026. Plan financiero Excel con P&L 3 años, tesorería a 12 meses, plan de financiación, punto de equilibrio en 84 clientes/día y checklist de apertura con 75 trámites bajo licencia inocua. €29.',
     keywords:
       'plan de negocio cafetería, plan financiero brunch España, abrir cafetería, checklist apertura cafetería, licencia inocua hostelería, máquina espresso profesional, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-negocio-cafeteria.jpg',
@@ -41,7 +41,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio: Cafetería / Brunch — Plan Financiero Excel, Inversión Inicial y Checklist Apertura',
     productDescription:
-      'Plan de negocio completo para abrir una cafetería o brunch en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada (~94K EUR), punto de equilibrio en 53 clientes/día con ticket medio €9,50, escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 65+ trámites bajo licencia de actividad inocua y RGSEAA, equipamiento específico cafetería y ratios sectoriales del mercado español 2026.',
+      'Plan de negocio completo para abrir una cafetería o brunch en España. Incluye plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada (130.176 €: 91.650 € de CAPEX más 38.526 € de fondo de maniobra), punto de equilibrio en 84 clientes/día con ticket medio de 9,80 € sin IVA (10,78 € de PVP), escenarios financieros, tesorería a 12 meses con liquidación de IVA, plan de financiación con cuadro de amortización y DSCR, cuadro de personal con Seguridad Social, checklist de apertura con 75 trámites bajo licencia de actividad inocua y registro sanitario autonómico, equipamiento específico cafetería y ratios sectoriales del mercado español 2026.',
     price: '29.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -79,7 +79,7 @@ const data: PlanNegocioData = {
       },
       {
         q: '¿Qué trámites legales incluye el checklist?',
-        a: 'Más de 65 trámites en 6 fases: constitución SL, licencias municipales (inocua + RGSEAA + terraza), equipamiento, RRHH, marketing pre-apertura y primeros 90 días.',
+        a: '75 trámites en 6 fases: constitución de la SL, licencias municipales (inocua + registro sanitario autonómico + terraza), equipamiento, RRHH, marketing pre-apertura y primeros 90 días.',
       },
       {
         q: '¿Hay garantía de devolución?',
@@ -119,12 +119,12 @@ const data: PlanNegocioData = {
     titleGold: 'Cafetería / Brunch',
     titleSubtitle: 'Plan Financiero Excel, Inversión Inicial y Checklist de Apertura',
     description:
-      'El plan de negocio completo para abrir una cafetería o brunch en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio en 53 clientes/día, escenarios y checklist de apertura con 65+ trámites bajo licencia de actividad inocua.',
+      'El plan de negocio completo para abrir una cafetería o brunch en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, tesorería a 12 meses, plan de financiación, punto de equilibrio en 84 clientes/día y checklist de apertura con 75 trámites bajo licencia de actividad inocua.',
     checkItems: [
       'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
-      'Inversión inicial detallada por partidas (~70K-120K EUR)',
-      'Punto de equilibrio: 53 clientes/día con ticket medio €9,50',
-      'Checklist apertura: 65+ trámites y licencias España 2026',
+      'Inversión inicial detallada por partidas (130.176 €, fondo de maniobra incluido)',
+      'Punto de equilibrio: 84 clientes/día con ticket medio de 9,80 € sin IVA',
+      'Checklist apertura: 75 trámites y licencias España 2026',
       'Acceso inmediato + actualizaciones de por vida',
     ],
     ctaLabel: 'DESCARGAR PLAN DE NEGOCIO — €29',
@@ -134,11 +134,11 @@ const data: PlanNegocioData = {
     subtitle:
       '9 secciones profesionales con datos reales del mercado español para construir la viabilidad financiera de tu cafetería o brunch y presentarla a banco o inversores.',
     templates: [
-      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, cuadro de personal e instrucciones. Todas las celdas editables con fórmulas.' },
-      { icon: 'Coins', title: 'Inversión Inicial Detallada', desc: 'Local, máquina de café, horno, vitrina refrigerada, mobiliario, terraza y fondo de maniobra desglosados (~94K EUR de referencia).' },
-      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: '53 clientes al día con ticket medio €9,50. Cálculo de margen de seguridad e interpretación de resultados con sensibilidad a horas pico.' },
+      { icon: 'FileSpreadsheet', title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería a 12 meses, plan de financiación e instrucciones. 739 fórmulas enlazadas: cambias una celda verde y se recalcula el libro entero.' },
+      { icon: 'Coins', title: 'Inversión Inicial Detallada', desc: 'Local, máquina de café, horno, vitrina refrigerada, mobiliario, terraza y fondo de maniobra desglosados (130.176 € de referencia: 91.650 € de CAPEX más 38.526 € de fondo de maniobra), con el IVA soportado y la necesidad total de caja calculados aparte.' },
+      { icon: 'TrendingUp', title: 'Punto de Equilibrio (Break-Even)', desc: '84 clientes al día con ticket medio de 9,80 € sin IVA (79 en el umbral de caja, con la cuota del préstamo dentro). Cálculo de margen de seguridad, tabla de sensibilidad al ticket y al coste variable, e interpretación de resultados.' },
       { icon: 'BarChart3', title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes de clientes y ticket medio. Útil para presentar a banco e inversores.' },
-      { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Baristas, ayudante de cocina y camareros con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto.' },
+      { icon: 'Users', title: 'Cuadro de Personal y Costes', desc: 'Seis puestos —propietario-barista, barista de mañana, camarero de tarde, ayudante de brunch, extra de fin de semana y suplencias— con salarios brutos, Seguridad Social al 33 %, 14 pagas, coste real por puesto y dos semáforos: suelo del SMI por jornada y cobertura de las horas de servicio.' },
       { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, licencia de actividad inocua, RGSEAA, terraza, equipamiento, RRHH, marketing pre-apertura y primeros 90 días.' },
       { icon: 'Wrench', title: 'Equipamiento Específico Cafetería', desc: 'Máquina espresso 2 grupos, molinillo profesional, horno de convección, vitrina refrigerada para bollería y mobiliario, con marcas de referencia y precios.' },
       { icon: 'ListChecks', title: 'Ratios de Referencia Cafetería', desc: 'Food cost café 25-30 %, ticket medio €8-12, margen bruto >65 %, rotación por franja horaria (mañana / mediodía / tarde) y datos del sector.' },
@@ -166,8 +166,8 @@ const data: PlanNegocioData = {
       'No es otra plantilla genérica. Es el plan financiero profesional con datos reales del mercado español para abrir una cafetería o brunch con cabeza.',
     reasons: [
       { icon: 'Coffee', title: 'Plan Específico para Café', desc: 'No es una plantilla genérica. Está adaptado al modelo cafetería/brunch: máquina espresso 2 grupos, vitrina de bollería, ratios food cost de café (25-30 %) y ticket medio realista €8-12.' },
-      { icon: 'BarChart3', title: 'Datos Reales Cafetería 2026', desc: 'Ticket medio €9,50, food cost café 25-30 %, margen bruto >65 %, rotación por franja horaria (mañana, mediodía, tarde) y break-even en 53 clientes/día. Cifras del mercado español real.' },
-      { icon: 'ShieldCheck', title: 'Licencia Inocua + 65 Trámites', desc: 'Cafetería entra en licencia de actividad inocua (más rápida que clasificada). Checklist con 65+ trámites en 6 fases incluyendo RGSEAA, terraza y prevención de incendios.' },
+      { icon: 'BarChart3', title: 'Datos Reales Cafetería 2026', desc: 'Ticket medio de 9,80 € sin IVA (10,78 € de PVP), food cost café 25-30 %, margen bruto del 66 %, rotación por franja horaria (mañana, mediodía, tarde) y break-even en 84 clientes/día. Cifras del mercado español real.' },
+      { icon: 'ShieldCheck', title: 'Licencia Inocua + 75 Trámites', desc: 'Cafetería entra en licencia de actividad inocua (más rápida que clasificada). Checklist con 75 trámites en 6 fases incluyendo el registro sanitario autonómico, la terraza, el RGPD y la adaptación a Veri*factu.' },
       { icon: 'Banknote', title: 'Listo para Banco e Inversores', desc: 'P&L 3 años, punto de equilibrio, 3 escenarios y plan de financiación con ICO, ENISA, banca y business angels. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
@@ -194,7 +194,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 1',
         title: 'Cuadro de Personal con Seg. Social',
         value: '€19',
-        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto: baristas, ayudante de cocina y camareros.',
+        desc: 'Cuadro completo de personal con salarios brutos, Seguridad Social al 33 %, 14 pagas y coste real por puesto, con el suelo del SMI y la cobertura de horas comprobados fila a fila: propietario-barista, baristas, camareros, ayudante de brunch y suplencias.',
         image: '/lovable-uploads/ai-gallery/plan-cafeteria-barra.jpg',
       },
       {
@@ -226,7 +226,7 @@ const data: PlanNegocioData = {
   faqs: [
     {
       q: '¿Es un plan genérico o específico para cafetería?',
-      a: 'Es 100 % específico para cafetería y brunch en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de cafetería con barra, sala y terraza, incluyendo licencia de actividad inocua y RGSEAA.',
+      a: 'Es 100 % específico para cafetería y brunch en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de cafetería con barra, sala y terraza, incluyendo la licencia de actividad inocua y el registro sanitario de tu Comunidad Autónoma (el RGSEAA estatal no aplica al minorista que sirve al consumidor final: art. 2.2 del RD 191/2011).',
     },
     {
       q: '¿Puedo presentar este plan al banco o a inversores?',
@@ -234,15 +234,15 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Puedo modificar las cifras del Excel?',
-      a: 'Sí, todas las celdas son editables y las fórmulas se recalculan automáticamente. Puedes cambiar el alquiler, el número de clientes, el ticket medio, los salarios y cualquier partida de inversión para adaptarlo a tu proyecto concreto. Incluye hoja de instrucciones.',
+      a: 'Sí. Las celdas VERDES son las que se teclean —alquiler, clientes al día, ticket medio, salarios y cualquier partida de inversión— y las 739 fórmulas del libro recalculan el resto solo. Si quieres tocar una celda calculada, Revisar → Desproteger hoja (no lleva contraseña). Incluye hoja de instrucciones.',
     },
     {
       q: '¿Qué trámites legales incluye el checklist de apertura?',
-      a: 'Más de 65 trámites organizados en 6 fases: constitución de la SL (notaría, registro mercantil, Hacienda), licencias municipales (licencia inocua, RGSEAA, terraza), equipamiento (proyecto técnico, instalaciones), RRHH (contratos, Seg. Social, PRL), marketing pre-apertura y primeros 90 días.',
+      a: '75 trámites organizados en 6 fases: constitución de la SL (notaría, registro mercantil, Hacienda, Veri*factu y registro de tratamientos del RGPD), licencias municipales (licencia inocua, registro sanitario autonómico, terraza, residuos y DDD), equipamiento (proyecto técnico, instalaciones), RRHH (contratos, Seg. Social, PRL y registro horario), marketing pre-apertura y primeros 90 días.',
     },
     {
       q: '¿Cuál es la diferencia con planes de negocio gratuitos?',
-      a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, ratios financieros específicos de cafetería (food cost café 25-30 %, ticket medio €8-12), cuadro de personal con Seg. Social y un checklist de 65+ trámites verificado con la legislación vigente.',
+      a: 'Los planes gratuitos son plantillas genéricas sin datos reales. Este plan incluye cifras del mercado español 2026, ratios financieros específicos de cafetería (food cost café 25-30 %, ticket medio €8-12), cuadro de personal con Seg. Social y un checklist de 75 trámites verificado con la legislación vigente.',
     },
     {
       q: '¿Cómo funciona la garantía?',
@@ -257,10 +257,10 @@ const data: PlanNegocioData = {
       'No dejes pasar esta oportunidad. Únete a propietarios que ya abrieron su cafetería o brunch con un plan financiero profesional y un checklist de apertura completo.',
     items: [
       'Plan financiero Excel con P&L previsional 3 años',
-      'Inversión inicial detallada (~94K EUR de referencia)',
-      'Punto de equilibrio: 53 clientes/día con ticket €9,50',
+      'Inversión inicial detallada (130.176 € de referencia)',
+      'Punto de equilibrio: 84 clientes/día con ticket de 9,80 € sin IVA',
       '3 escenarios financieros (pesimista/realista/optimista)',
-      'Checklist apertura con 65+ trámites en 6 fases',
+      'Checklist apertura con 75 trámites en 6 fases',
       'Equipamiento específico cafetería + ratios sectoriales',
       'BONUS: Cuadro Personal con Seg. Social (€19)',
       'BONUS: Ratios Referencia Cafetería 2026 (€19)',
@@ -287,7 +287,7 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-cafeteria',

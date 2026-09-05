@@ -10,12 +10,12 @@ const reasons = [
   {
     icon: BarChart3,
     title: 'Datos Reales Tapas Bar 2026',
-    desc: 'Ticket medio €15-22, food cost 28-32 %, márgenes bebidas 22-28 %, ocupación por franja horaria y break-even en 34 clientes/día. Cifras del mercado español real.',
+    desc: 'Ticket medio €15-22, food cost 28-32 %, márgenes bebidas 22-28 %, ocupación por franja horaria y break-even en 50 clientes/día (47 contando la cuota del préstamo). Cifras del mercado español real.',
   },
   {
     icon: ShieldCheck,
     title: 'Licencia Clasificada Cubierta',
-    desc: '63 trámites incluyendo licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, sanidad y prevención de incendios. No te dejas nada.',
+    desc: '73 trámites incluyendo licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, sanidad, RGPD, registro horario y Veri*factu. No te dejas nada.',
   },
   {
     icon: Banknote,

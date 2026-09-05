@@ -15,21 +15,21 @@ const TEMPLATES = [
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'Documento DOCX completo de 10 secciones: resumen ejecutivo, descripción del negocio food truck, análisis de mercado street food, modelo de negocio (rutas/eventos/festivales), plan operativo, organización y RRHH, plan de marketing, plan financiero y plan de financiación.',
+    desc: 'Documento DOCX completo de 10 secciones: resumen ejecutivo, concepto y propuesta de valor, análisis de mercado, análisis competitivo, plan de marketing y captación, plan de operaciones, estructura organizativa y RRHH, plan financiero, aspectos legales y licencias, y conclusiones con plan de acción.',
   },
   {
     key: 'plan-financiero',
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L previsional a 3 años, inversión inicial (45K-85K EUR), punto de equilibrio (27 clientes/día con ticket €12), escenarios pesimista/realista/optimista, cuadro de personal y hoja de instrucciones.',
+    desc: '9 hojas: supuestos, inversión inicial (81.997 € en este plan), P&L previsional a 3 años, punto de equilibrio (41 clientes/día con ticket de 12 € sin IVA), escenarios pesimista/realista/optimista, cuadro de personal, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR, e instrucciones.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist de Apertura',
-    desc: '59 trámites en 6 fases: alta autónomo o SL, licencia de venta ambulante, autorización sanitaria RGSEAA, ITV del vehículo adaptado, seguros de responsabilidad civil y primeros 90 días de operación.',
+    desc: '68 trámites en 6 fases: alta autónomo o SL, licencia de venta ambulante, registro sanitario autonómico y autorización sanitaria del vehículo, ITV si lo modificas, seguros de responsabilidad civil, Veri*factu, registro horario y primeros 90 días de operación.',
   },
 ];
 
@@ -68,7 +68,7 @@ export default function PlanNegocioFoodTruckDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-food-truck" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: documento DOCX 10 secciones, plan financiero Excel con P&L 3 años y checklist de apertura con 59 trámites.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: documento DOCX 10 secciones, plan financiero Excel de 9 hojas con P&L 3 años, tesorería y financiación, y checklist de apertura con 68 trámites.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
@@ -96,7 +96,7 @@ export default function PlanNegocioFoodTruckDashboard() {
             </div>
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">Compatibles con Excel, Word, Google Sheets, Google Docs, LibreOffice y Apple Numbers/Pages</p>
-              <p className="text-gray-400 text-sm">Descarga los archivos y ábrelos con tu programa favorito. Todas las celdas y textos son editables.</p>
+              <p className="text-gray-400 text-sm">Descarga los archivos y ábrelos con tu programa favorito. Las celdas verdes son las que tecleas tú; las demás llevan fórmula y van protegidas para que no se rompan. Si necesitas tocar una: Revisar → Desproteger hoja (no tiene contraseña).</p>
             </div>
           </div>
         </section>

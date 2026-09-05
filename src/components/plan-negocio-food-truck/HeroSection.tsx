@@ -19,7 +19,7 @@ const checkItems = [
   'Plan de negocio DOCX completo: 10 secciones profesionales',
   'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
   'Inversión inicial detallada por partidas (~45K-85K EUR)',
-  'Checklist apertura: 59 trámites, permisos y licencias',
+  'Checklist apertura: 68 trámites, permisos y licencias',
   'Acceso inmediato + actualizaciones de por vida',
 ];
 
@@ -74,12 +74,12 @@ export default function HeroSection() {
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
           Plan de Negocio: <span className="text-[#FFD700]">Food Truck</span>
           <span className="block text-2xl md:text-4xl lg:text-5xl mt-2 text-gray-200">
-            Plan Financiero Excel + DOCX + Checklist Apertura 59 Trámites
+            Plan Financiero Excel + DOCX + Checklist Apertura 68 Trámites
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          El plan de negocio completo para montar un food truck en España. Documento DOCX de 10 secciones, plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio en 27 clientes/día con ticket €12 y checklist de apertura con 59 trámites incluyendo licencia de venta ambulante e ITV del vehículo adaptado.
+          El plan de negocio completo para montar un food truck en España. Documento DOCX de 10 secciones, plan financiero Excel de 9 hojas con P&L a 3 años y tesorería mes a mes, inversión inicial detallada, punto de equilibrio en 41 clientes/día con ticket de 12 € sin IVA y checklist de apertura con 68 trámites incluyendo licencia de venta ambulante e ITV del vehículo adaptado.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

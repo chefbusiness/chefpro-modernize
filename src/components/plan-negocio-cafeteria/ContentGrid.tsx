@@ -5,11 +5,11 @@ import {
 import FadeIn from '../ebook/FadeIn';
 
 const categories = [
-  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios, cuadro de personal e instrucciones. Todas las celdas editables con fórmulas.' },
-  { icon: Coins, title: 'Inversión Inicial Detallada', desc: 'Local, máquina de café, horno, vitrina refrigerada, mobiliario, terraza y fondo de maniobra desglosados (~94K EUR de referencia).' },
-  { icon: TrendingUp, title: 'Punto de Equilibrio (Break-Even)', desc: '53 clientes al día con ticket medio €9,50. Cálculo de margen de seguridad e interpretación de resultados con sensibilidad a horas pico.' },
+  { icon: FileSpreadsheet, title: 'Plan Financiero Excel (9 hojas)', desc: 'Supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios, cuadro de personal, tesorería a 12 meses, plan de financiación e instrucciones. 739 fórmulas enlazadas: cambias una celda verde y se recalcula el libro entero.' },
+  { icon: Coins, title: 'Inversión Inicial Detallada', desc: 'Local, máquina de café, horno, vitrina refrigerada, mobiliario, terraza y fondo de maniobra desglosados (130.176 € de referencia: 91.650 € de CAPEX más 38.526 € de fondo de maniobra), con el IVA soportado y la necesidad total de caja calculados aparte.' },
+  { icon: TrendingUp, title: 'Punto de Equilibrio (Break-Even)', desc: '84 clientes al día con ticket medio de 9,80 € sin IVA (79 en el umbral de caja, con la cuota del préstamo dentro). Cálculo de margen de seguridad, tabla de sensibilidad al ticket y al coste variable, e interpretación de resultados.' },
   { icon: BarChart3, title: 'Escenarios Financieros', desc: 'Tres escenarios — pesimista, realista y optimista — con diferentes volúmenes de clientes y ticket medio. Útil para presentar a banco e inversores.' },
-  { icon: Users, title: 'Cuadro de Personal y Costes', desc: 'Baristas, ayudante de cocina y camareros con salarios brutos, Seguridad Social al 33,4 %, 14 pagas y coste real por puesto.' },
+  { icon: Users, title: 'Cuadro de Personal y Costes', desc: 'Seis puestos —propietario-barista, barista de mañana, camarero de tarde, ayudante de brunch, extra de fin de semana y suplencias— con salarios brutos, Seguridad Social al 33 %, 14 pagas, coste real por puesto y dos semáforos: suelo del SMI por jornada y cobertura de las horas de servicio.' },
   { icon: ShieldCheck, title: 'Checklist Apertura (6 fases)', desc: 'Constitución SL, licencia de actividad inocua, RGSEAA, terraza, equipamiento, RRHH, marketing pre-apertura y primeros 90 días.' },
   { icon: Wrench, title: 'Equipamiento Específico Cafetería', desc: 'Máquina espresso 2 grupos, molinillo profesional, horno de convección, vitrina refrigerada para bollería y mobiliario, con marcas de referencia y precios.' },
   { icon: ListChecks, title: 'Ratios de Referencia Cafetería', desc: 'Food cost café 25-30 %, ticket medio €8-12, margen bruto >65 %, rotación por franja horaria (mañana / mediodía / tarde) y datos del sector.' },

@@ -10,12 +10,12 @@ const reasons = [
   {
     icon: BarChart3,
     title: 'Datos Reales Cafetería 2026',
-    desc: 'Ticket medio €9,50, food cost café 25-30 %, margen bruto >65 %, rotación por franja horaria (mañana, mediodía, tarde) y break-even en 53 clientes/día. Cifras del mercado español real.',
+    desc: 'Ticket medio de 9,80 € sin IVA (10,78 € de PVP), food cost café 25-30 %, margen bruto del 66 %, rotación por franja horaria (mañana, mediodía, tarde) y break-even en 84 clientes/día. Cifras del mercado español real.',
   },
   {
     icon: ShieldCheck,
-    title: 'Licencia Inocua + 65 Trámites',
-    desc: 'Cafetería entra en licencia de actividad inocua (más rápida que clasificada). Checklist con 65+ trámites en 6 fases incluyendo RGSEAA, terraza y prevención de incendios.',
+    title: 'Licencia Inocua + 75 Trámites',
+    desc: 'Cafetería entra en licencia de actividad inocua (más rápida que clasificada). Checklist con 75 trámites en 6 fases incluyendo el registro sanitario autonómico, la terraza, el RGPD y la adaptación a Veri*factu.',
   },
   {
     icon: Banknote,

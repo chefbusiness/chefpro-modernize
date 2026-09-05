@@ -7,7 +7,7 @@ const bonuses = [
     label: 'BONUS 1',
     title: 'Guía Permisos Food Truck por CCAA',
     value: '€19',
-    desc: 'Permisos de venta ambulante específicos por comunidad autónoma: Madrid, Cataluña, Andalucía, Comunidad Valenciana, País Vasco… con tasas, plazos y formularios oficiales de cada CCAA.',
+    desc: 'Guía de permisos de venta ambulante: por qué la licencia es municipal e intransferible, qué documentación pide el ayuntamiento, plazos reales de 1 a 3 meses y qué cambia según la comunidad autónoma (sección 9 del documento y fase 2 del checklist). No incluye los formularios de cada CCAA.',
     image: '/lovable-uploads/ai-gallery/plan-food-truck-mercado.jpg',
   },
   {
@@ -15,7 +15,7 @@ const bonuses = [
     label: 'BONUS 2',
     title: 'Ratios Referencia Street Food 2026',
     value: '€19',
-    desc: 'Datos actualizados del sector street food: food cost 30 %, margen bruto 65 %, ticket medio €12, retorno de inversión 12-24 meses y comparativa de ubicaciones (festival, mercado, oficinas, eventos privados).',
+    desc: 'Tabla de referencia del sector dentro del libro: food cost de comida 28-33 %, de bebida 22-28 %, packaging 3-5 %, personal 25-32 %, margen bruto > 62 %, ticket 10-15 €, 40-80 clientes por servicio y 4-6 días operativos por semana, cada dato con su fuente y con una nota que dice dónde se aparta tu plan.',
     image: '/lovable-uploads/ai-gallery/plan-food-truck-cola.jpg',
   },
 ];

@@ -17,9 +17,9 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_CAFETERIA || '#
 
 const checkItems = [
   'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
-  'Inversión inicial detallada por partidas (~70K-120K EUR)',
-  'Punto de equilibrio: 53 clientes/día con ticket medio €9,50',
-  'Checklist apertura: 65+ trámites y licencias España 2026',
+  'Inversión inicial detallada por partidas (130.176 €, fondo de maniobra incluido)',
+  'Punto de equilibrio: 84 clientes/día con ticket medio de 9,80 € sin IVA',
+  'Checklist apertura: 75 trámites y licencias España 2026',
   'Acceso inmediato + actualizaciones de por vida',
 ];
 
@@ -79,7 +79,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          El plan de negocio completo para abrir una cafetería o brunch en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio en 53 clientes/día, escenarios y checklist de apertura con 65+ trámites bajo licencia de actividad inocua.
+          El plan de negocio completo para abrir una cafetería o brunch en España. Plan financiero Excel con P&L a 3 años, inversión inicial detallada, tesorería a 12 meses, plan de financiación, punto de equilibrio en 84 clientes/día y checklist de apertura con 75 trámites bajo licencia de actividad inocua.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

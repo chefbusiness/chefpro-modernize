@@ -18,8 +18,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_TAPAS_BAR || '#
 const checkItems = [
   'Plan de negocio DOCX completo: 10 secciones profesionales',
   'Plan financiero Excel: P&L previsional a 3 años con fórmulas',
-  'Inversión inicial detallada por partidas (~90K-140K EUR)',
-  'Checklist apertura: 63 trámites y licencias España 2026',
+  'Inversión inicial detallada por partidas: 153.327 € de inversión total',
+  'Checklist apertura: 73 trámites y licencias España 2026',
   'Acceso inmediato + actualizaciones de por vida',
 ];
 
@@ -79,7 +79,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          El plan de negocio completo para abrir un tapas bar o gastrobar en España. Documento DOCX de 10 secciones, plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios y checklist de apertura con 63 trámites incluyendo licencia clasificada y salida de humos.
+          El plan de negocio completo para abrir un tapas bar o gastrobar en España. Documento DOCX de 10 secciones, plan financiero Excel con P&L a 3 años, inversión inicial detallada, punto de equilibrio, escenarios y checklist de apertura con 73 trámites incluyendo licencia clasificada y salida de humos.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

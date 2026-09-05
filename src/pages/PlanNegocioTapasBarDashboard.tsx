@@ -15,21 +15,21 @@ const TEMPLATES = [
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'Documento DOCX completo de 10 secciones: resumen ejecutivo, concepto, análisis de mercado, DAFO, marketing, operaciones, RRHH, financiero, legal y conclusiones.',
+    desc: 'Documento de 10 secciones: resumen ejecutivo, concepto y propuesta de valor, análisis de mercado, análisis competitivo, plan de marketing y captación, plan de operaciones, estructura organizativa y RRHH, plan financiero, aspectos legales y licencias, y conclusiones y plan de acción.',
   },
   {
     key: 'plan-financiero',
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L previsional a 3 años, inversión inicial, punto de equilibrio, escenarios pesimista/realista/optimista, cuadro de personal y hoja de instrucciones.',
+    desc: '9 hojas: supuestos, inversión inicial, P&L previsional a 3 años, punto de equilibrio, escenarios pesimista/realista/optimista, cuadro de personal, tesorería a 12 meses con liquidación de IVA y plan de financiación con cuadro de amortización del préstamo, más instrucciones.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist de Apertura',
-    desc: '63 trámites en 6 fases: constitución SL, licencia clasificada (no inocua), salida de humos, equipamiento, RRHH y Seg. Social, marketing pre-apertura y primeros 90 días.',
+    desc: '73 trámites en 6 fases: constitución SL, licencia clasificada (no inocua), salida de humos, equipamiento, RRHH y Seg. Social, marketing pre-apertura y primeros 90 días.',
   },
 ];
 
@@ -68,7 +68,7 @@ export default function PlanNegocioTapasBarDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-tapas-bar" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: documento DOCX 10 secciones, plan financiero Excel con P&L 3 años y checklist de apertura con 63 trámites.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: documento DOCX 10 secciones, plan financiero Excel de 9 hojas con P&L 3 años, tesorería y financiación, y checklist de apertura con 73 trámites.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">

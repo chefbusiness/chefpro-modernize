@@ -15,21 +15,21 @@ const TEMPLATES = [
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L previsional a 3 años con estacionalidad navideña, inversión inicial, punto de equilibrio por kilos diarios, escenarios pesimista/realista/optimista, cuadro de personal panadero y hoja de instrucciones.',
+    desc: '9 hojas: supuestos, inversión inicial, P&L previsional a 3 años con estacionalidad navideña, punto de equilibrio en transacciones diarias, escenarios pesimista/realista/optimista, personal con cobertura de horas, tesorería 12 meses con liquidación de IVA, plan de financiación con cuadro de amortización y DSCR, e instrucciones.',
   },
   {
     key: 'plan-negocio',
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'Documento Word con resumen ejecutivo, descripción del negocio, análisis de mercado panadero, plan operativo (mix barra/bollería/cafetería), organización y RRHH (turno madrugada), plan de marketing, plan financiero y plan de financiación.',
+    desc: 'Documento Word de 10 secciones: resumen ejecutivo, concepto y propuesta de valor, análisis de mercado, análisis competitivo, plan de marketing y captación, plan de operaciones, estructura organizativa y RRHH, plan financiero, aspectos legales y licencias, y conclusiones y plan de acción. El documento sigue en la versión anterior: sus cifras (facturación, inversión, plantilla) no coinciden todavía con el Excel actualizado — mientras tanto, las cifras válidas son las del plan financiero Excel.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist de Apertura',
-    desc: 'Más de 60 trámites en 6 fases: constitución SL, RGSEAA obrador (Registro General Sanitario), licencias municipales, equipamiento (proyecto técnico + salida de humos), RRHH y Seg. Social con turno madrugada y primeros 90 días.',
+    desc: '66 trámites en 6 fases: constitución de la SL, local y licencias (registro sanitario autonómico, licencia clasificada), equipamiento (proyecto técnico + salida de humos), personal y Seguridad Social con turno de madrugada, marketing y primeros 90 días.',
   },
 ];
 
@@ -68,7 +68,7 @@ export default function PlanNegocioPanaderiaDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-panaderia" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel con P&L 3 años + estacionalidad navideña, plan de negocio Word completo y checklist de apertura con 60+ trámites RGSEAA obrador.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel de 9 hojas con P&L 3 años, tesorería y financiación, plan de negocio Word de 10 secciones y checklist de apertura con 66 trámites, incluido el registro sanitario autonómico.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">

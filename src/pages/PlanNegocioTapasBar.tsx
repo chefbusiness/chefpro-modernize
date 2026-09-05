@@ -24,12 +24,12 @@ export default function PlanNegocioTapasBar() {
     <>
       <Helmet>
         <title>Plan de Negocio: Tapas Bar / Gastrobar — Plan Financiero Excel + DOCX + Checklist Apertura | AI Chef Pro</title>
-        <meta name="description" content="Plan de negocio completo para abrir un tapas bar o gastrobar en España 2026. Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 63 trámites incluyendo licencia clasificada y salida de humos. €35." />
+        <meta name="description" content="Plan de negocio completo para abrir un tapas bar o gastrobar en España 2026. Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 73 trámites incluyendo licencia clasificada y salida de humos. €35." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plan de negocio tapas bar, plan financiero gastrobar España, abrir tapas bar, checklist apertura tapas bar, licencia clasificada hostelería, salida de humos restaurante, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/plan-negocio-tapas-bar" />
         <meta property="og:title" content="Plan de Negocio: Tapas Bar / Gastrobar — Plan Financiero + DOCX + Checklist" />
-        <meta property="og:description" content="Documento DOCX 10 secciones + Excel P&L 3 años + checklist apertura 63 trámites para abrir un tapas bar o gastrobar en España. €35." />
+        <meta property="og:description" content="Documento DOCX 10 secciones + Excel P&L 3 años + checklist apertura 73 trámites para abrir un tapas bar o gastrobar en España. €35." />
         <meta property="og:url" content="https://aichef.pro/plan-negocio-tapas-bar" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -46,7 +46,7 @@ export default function PlanNegocioTapasBar() {
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Plan de Negocio: Tapas Bar / Gastrobar — Plan Financiero Excel + DOCX + Checklist Apertura",
-          "description": "Plan de negocio completo para abrir un tapas bar o gastrobar en España. Incluye documento DOCX de 10 secciones (resumen ejecutivo, concepto, mercado, DAFO, marketing, operaciones, RRHH, financiero, legal, conclusiones), plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 63 trámites incluyendo licencia clasificada y salida de humos, y ratios sectoriales del mercado español 2026.",
+          "description": "Plan de negocio completo para abrir un tapas bar o gastrobar en España. Incluye documento DOCX de 10 secciones (resumen ejecutivo, concepto, mercado, DAFO, marketing, operaciones, RRHH, financiero, legal, conclusiones), plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, previsión de tesorería mes a mes con liquidación de IVA y plan de financiación con cuadro de amortización del préstamo, checklist de apertura con 73 trámites incluyendo licencia clasificada y salida de humos, y ratios sectoriales del mercado español 2026.",
           "image": "https://aichef.pro/og-plan-negocio-tapas-bar.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -72,7 +72,7 @@ export default function PlanNegocioTapasBar() {
           "mainEntity": [
             { "@type": "Question", "name": "¿Es un plan genérico o específico para tapas bar?", "acceptedAnswer": { "@type": "Answer", "text": "Es 100% específico para tapas bar y gastrobar en España. Las partidas de inversión, los ratios financieros, los costes de personal y los trámites legales están adaptados al modelo de negocio de tapas bar con barra y sala, incluyendo licencia clasificada, salida de humos y equipamiento específico." }},
             { "@type": "Question", "name": "¿Puedo presentar este plan al banco o a inversores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. El plan financiero Excel incluye P&L 3 años, punto de equilibrio y 3 escenarios. El documento DOCX de 10 secciones tiene formato profesional, exactamente lo que piden bancos e inversores." }},
-            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist de apertura?", "acceptedAnswer": { "@type": "Answer", "text": "63 trámites en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días." }},
+            { "@type": "Question", "name": "¿Qué trámites legales incluye el checklist de apertura?", "acceptedAnswer": { "@type": "Answer", "text": "73 trámites en 6 fases: constitución de la SL, licencia clasificada (no inocua, por potencia de cocina), salida de humos obligatoria, equipamiento, contratación de personal, marketing pre-apertura y primeros 90 días." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>
