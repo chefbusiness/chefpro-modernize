@@ -155,7 +155,7 @@ const PAISES: { code: string; name: string }[] = [
   { code: 'CG', name: "Congo" },
   { code: 'KP', name: "Corea del Norte" },
   { code: 'KR', name: "Corea del Sur" },
-  { code: 'CI', name: "Côte d’Ivoire" },
+  { code: 'CI', name: 'Costa de Marfil' },
   { code: 'HR', name: "Croacia" },
   { code: 'CU', name: "Cuba" },
   { code: 'CW', name: "Curazao" },
@@ -381,9 +381,9 @@ const NOTA_CORTA = '¿Sin tarjeta internacional o prefieres tu wallet? Mismo pre
  * —ni «blockchain», ni «on-chain», ni «Web3»—: el comprador es un hostelero, no un trader.
  */
 const CONFIANZA = [
-  'Entrega automática por email en cuanto la red confirma (normalmente 1-10 min)',
+  'Entrega automática por email en cuanto la pasarela confirma el pago: normalmente unos minutos; con Bitcoin puede tardar más',
   'Recomendado: USDT en red TRON (TRC-20), comisiones de céntimos',
-  'Desde Binance, Trust Wallet, MetaMask o Phantom',
+  'Desde Binance, Trust Wallet o cualquier wallet compatible con la red que elijas',
 ];
 ---
 
@@ -486,7 +486,7 @@ const CONFIANZA = [
               <optgroup label="Más frecuentes">
                 {PAISES_FRECUENTES.map((p) => <option value={p.code}>{p.name}</option>)}
               </optgroup>
-              <optgroup label="Todos los países">
+              <optgroup label="Resto de países">
                 {PAISES_RESTO.map((p) => <option value={p.code}>{p.name}</option>)}
               </optgroup>
             </select>
@@ -502,12 +502,12 @@ const CONFIANZA = [
           <label class="aicp-crypto__check">
             <input type="checkbox" required data-crypto-waive />
             <span>
-              Solicito el acceso inmediato al contenido digital y entiendo que, al recibirlo, pierdo el derecho de desistimiento de 14 días
+              Solicito el acceso inmediato al contenido digital y entiendo que, al recibirlo, pierdo el derecho de desistimiento de 14 días. Esto no afecta a nuestra garantía de satisfacción.
             </span>
           </label>
 
           <p class="aicp-crypto__notice">
-            Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente.
+            Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente; si te pasa, escríbenos a info@aichef.pro con tu número de pedido y lo resolvemos.
           </p>
 
           <p class="aicp-crypto__next">
@@ -519,7 +519,7 @@ const CONFIANZA = [
           <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>Continuar al pago</button>
 
           <p class="aicp-crypto__legal">
-            El cobro lo procesa NOWPayments. Nosotros recibimos la confirmación y te enviamos el enlace de acceso al email que nos dejes.
+            El cobro lo procesa NOWPayments. Nosotros recibimos la confirmación y te enviamos el enlace de acceso al email que nos dejes; lo tratamos solo para eso (<a href="/privacidad" target="_blank" rel="noopener noreferrer">política de privacidad</a>).
           </p>
         </form>
       </dialog>
@@ -553,7 +553,7 @@ const CONFIANZA = [
       /* Separador: la línea con la «o» que pedía John para despegar las dos puertas. */
       .aicp-crypto__sep {
         display: flex; align-items: center; gap: 0.75rem; margin: 1.5rem 0;
-        color: #6b7280; font-size: 0.78rem; line-height: 1;
+        color: #9ca3af; font-size: 0.78rem; line-height: 1;
       }
       .aicp-crypto__sep::before, .aicp-crypto__sep::after {
         content: ''; flex: 1 1 auto; height: 1px; background: rgba(255, 255, 255, 0.14);
@@ -639,7 +639,7 @@ const CONFIANZA = [
         /* Mismas medidas que /powered-by-stripe.png: w-full, max-w-[260px], rounded-lg,
            px-3 py-1.5 y mt-5. Puestas una debajo de otra tienen que parecer dos sellos
            del mismo juego, no un sello y un adorno. */
-        width: 100%; max-width: 260px; margin-top: 1.25rem; padding: 0.375rem 0.75rem;
+        width: 100%; max-width: 260px; min-height: 84px; justify-content: center; margin-top: 1.25rem; padding: 0.375rem 0.75rem;
         border: 1px solid rgba(100, 172, 255, 0.45); border-radius: 0.5rem;
         background: var(--nowp-navy);
       }
@@ -654,11 +654,13 @@ const CONFIANZA = [
          cada moneda. El wrap es la red por si el zoom o una fuente distinta aprietan. */
       .aicp-crypto__coins { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 3px; }
       /* En el diálogo hay 30 rem de ancho: caben las diez y con más aire. */
-      .aicp-crypto__coins--dialog { justify-content: flex-start; gap: 5px; margin: 0.1rem 0 0.4rem; }
+      .aicp-crypto__coins--dialog { justify-content: flex-start; gap: 4px; margin: 0.1rem 0 0.4rem; }
       .aicp-coin {
         display: inline-flex; align-items: center; justify-content: center; flex: none;
-        width: 24px; height: 24px; border-radius: 999px; background: #ffffff; color: var(--coin-c);
+        width: 24px; height: 24px; border-radius: 999px; background: #ffffff; color: var(--coin-c); overflow: hidden;
       }
+      /* Glifos que no se leen sobre blanco (BNB amarillo, 1,8:1): disco del color de marca y glifo en blanco. */
+      .aicp-coin--tile { background: var(--coin-c); color: #ffffff; }
       .aicp-coin svg { display: block; width: 16px; height: 16px; }
       /* BTC, LTC y TON ya son un disco completo: llenan el círculo en vez de flotar
          dentro de él, que es como se leen en cualquier listado de monedas. */
@@ -686,9 +688,13 @@ const CONFIANZA = [
       }
       .aicp-crypto__form [hidden] { display: none !important; }
       .aicp-crypto__close {
-        position: absolute; top: 0.55rem; right: 0.6rem; width: 2rem; height: 2rem;
+        /* sticky y no absolute: el que desplaza es el <dialog>, y con absolute el ✕ se iba
+           con el formulario en móvil (visto a 360×640). Fondo sólido para que no se
+           transparente el texto que pasa por debajo. */
+        position: sticky; top: 0; float: right; z-index: 2; width: 2rem; height: 2rem;
+        margin: -0.4rem -0.3rem 0 0;
         display: flex; align-items: center; justify-content: center; padding: 0;
-        border: 0; border-radius: 999px; background: rgba(255, 255, 255, 0.06);
+        border: 0; border-radius: 999px; background: #1f1f1f;
         color: #9ca3af; font-family: inherit; font-size: 0.95rem; line-height: 1; cursor: pointer;
       }
       .aicp-crypto__close:hover { background: rgba(255, 255, 255, 0.12); color: #ffffff; }
@@ -708,7 +714,7 @@ const CONFIANZA = [
         border-radius: 0.6rem; background: rgba(255, 255, 255, 0.05); color: #ffffff;
         font-family: inherit; font-size: 0.95rem;
       }
-      .aicp-crypto__input::placeholder { color: #6b7280; }
+      .aicp-crypto__input::placeholder { color: #9ca3af; }
       /* Foco en el azul de la pasarela, no en el dorado de Stripe: dentro de este diálogo
          ya no se está pagando con tarjeta. */
       .aicp-crypto__input:focus { outline: none; border-color: rgba(100, 172, 255, 0.7); box-shadow: 0 0 0 2px rgba(100, 172, 255, 0.22); }
@@ -734,7 +740,8 @@ const CONFIANZA = [
       }
       .aicp-crypto__submit:hover:not(:disabled) { background: #7FBBFF; }
       .aicp-crypto__submit:disabled { opacity: 0.45; cursor: not-allowed; }
-      .aicp-crypto__legal { margin: 0; color: #6b7280; font-size: 0.72rem; line-height: 1.45; text-align: center; }
+      .aicp-crypto__legal { margin: 0; color: #9ca3af; font-size: 0.72rem; line-height: 1.45; text-align: center; }
+      .aicp-crypto__legal a { color: #9ca3af; text-decoration: underline; text-underline-offset: 2px; }
     </style>
 
     {/* El script va con el diálogo: uno por página, no uno por puerta. */}
@@ -803,8 +810,11 @@ const CONFIANZA = [
 
             function setError(msg) {
               if (!msg) { errorEl.textContent = ''; errorEl.hidden = true; return; }
-              errorEl.textContent = msg;
+              /* Primero se muestra y DESPUÉS se escribe: un cambio dentro de un role="alert"
+                 oculto ocurre fuera del árbol de accesibilidad y el lector no lo anuncia. */
               errorEl.hidden = false;
+              var escribir = function () { errorEl.textContent = msg; };
+              if (typeof window.requestAnimationFrame === 'function') window.requestAnimationFrame(escribir); else escribir();
             }
 
             function syncSubmit() {
