@@ -153,6 +153,15 @@ Research + síntesis + refutación (cerrado): 2,1 M tokens de subagentes. Constr
 Todo el §14 del research (cifras sin fuente, afirmaciones caducas, errores de método) **más**: «+49,9 %» y cualquier comparación salarial en base mensual sin plus (D16) · «la temperatura legal de la cocina es 14-25 °C» · «74 °C o nada» sin el 63 °C ni las equivalencias · «las microempresas quedan excluidas por completo de la Ley 1/2025» · «el mercado paga más por dirigir cocina que por dirigir sala» · «nadie sube el precio de un curso que no se llena» · «20 fuentes» · «45-55 €» · «−20 °C durante 7 días» · «RD 1420/2006» y «RD 3484/2000» como vigentes · «estación» como término principal · «los dos manuales por 110 €» (son 120 €) · cualquier benchmark de merma, de tiempo de pase o de horas de formación · «55 €» en cualquier pieza de este producto.
 
 ## 9. Seguimientos fuera de esta sesión (no bloquean)
+- 🔴 **Defecto del pipeline cazado por la refutación de documentos (6-sep):** `documentos.py` (`prompt_bloque`, ~línea 1012) entrega a
+  CADA bloque de un capítulo la lista completa de `puntos` obligatorios, mientras que los epígrafes sí se reparten: los 2-3 redactores
+  del mismo capítulo repiten ideas y frases (medido: 41 pares de frases con Jaccard ≥ 0,55 dentro del mismo capítulo en 15 de 20). Se
+  resolvió con una pasada de desduplicación por capítulo (`scratchpad/docs/solape.py` como medidor). **Para la próxima guía/manual**:
+  repartir `puntos` por bloque en el guion (o que `prompt_bloque` los reparta) y decir a cada prompt qué epígrafes escribe otro tramo
+  («no los desarrolles»). Afecta también a lo ya publicado (Guía Food Cost, Manual del Manager): medir con el mismo script en una
+  sesión impar.
+- El fixer de documentos editó dos xlsx de `dl/` directamente (puntos de control de la ficha de ejemplo, fechas de revisión, G50 de la
+  auditoría); se portaron al generador en la misma sesión. Regla para el próximo fixer: **los xlsx nunca se tocan a mano, se regenera.**
 - **Anisakis y RD 3484/2000 en tres xlsx vendidos** (D27): `kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx` y `kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx` («−20 °C/7 días» + RD 1420/2006) y `kit-inventario/04-recepcion-mercancias.xlsx` (RD 3484/2000 como fuente por fila). **Siguiente sesión impar**, con el motor de cada familia (no a mano sobre el xlsx) + `inject_cache.py` + censo.
 - Las 20 páginas de rol no enlazan a ningún producto de más de 45 €: añadir el Manager y la Guía Food Cost a sus `productIds` (decisión de John).
 - Cupón cruzado Manager ↔ Chef Ejecutivo (decisión de John).

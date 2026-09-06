@@ -1,0 +1,31 @@
+### La situación
+
+Es lunes por la mañana en La Encina y el jefe de cocina repasa la hoja «Semana» del cuadro de mando antes de que entre el primer proveedor. La merma global de la casa lleva todo el año en 3,7 %, un número tranquilo que no ha dado ningún susto en los cierres mensuales. La columna de la partida de fríos y entrantes cuenta otra historia: acumula un 5,1 % en lo que va de año y, en las tres últimas semanas, se ha mantenido por encima del objetivo que tiene fijado en la propia hoja. La peor de las tres cerró en un 9,2 %, muy por encima de ese 5,1 % acumulado, mientras que la merma global de la cocina esa misma semana apenas se movió hasta el 4,9 %. Esa semana se sirvieron 809 cubiertos, un volumen normal de temporada, y de los indicadores que la casa revisa cada lunes, cuatro quedaron fuera de objetivo —entre ellos, el de esta partida—. El problema está localizado y es sostenido en el tiempo, pero mirado sólo desde el número global resulta invisible: justo el tipo de aviso para el que existe un cuadro de mando por partida, y que sólo vigilando el total de la cocina no se ve llegar hasta que ya lleva semanas corriendo.
+
+### Qué no hacer
+
+Mirar sólo la merma global y quedarse tranquilo porque el 4,9 % de esa semana parece razonable: ahí es precisamente donde el problema de una sola partida se diluye y desaparece del radar.
+
+Dar por hecho que alguien de la partida está tirando producto o llevándoselo a casa. Es la conclusión más rápida y más barata, y casi nunca la correcta; y una vez dicha delante de la brigada, ya no se puede retirar aunque luego se demuestre falsa.
+
+Bajar el objetivo de la partida para que la casilla se ponga verde en la próxima revisión: eso no cambia un solo gramo de lo que se está mermando, sólo apaga el aviso.
+
+Cambiar de proveedor sin comprobar antes si el dato está bien medido: si el fallo está en cómo se pesa o en cómo está configurada la ficha de la partida, cambiar de proveedor no toca la causa y desordena una relación que puede llevar años funcionando bien.
+
+### Protocolo paso a paso
+
+Primero, el dato. Antes de sospechar de nada ni de nadie se comprueba que la merma de esa partida se ha pesado, no estimado a ojo, y se revisa la hoja de parámetros del cuadro de mando para confirmar que los kilos de materia prima neta por ración siguen puestos como corresponde —en este caso, 0,22 kilos por ración—. Si esa casilla está mal, el porcentaje sale mal aunque se pese cada bandeja con precisión de laboratorio, así que este paso va antes que cualquier otro.
+
+Segundo, la producción: la causa raíz más frecuente y también la más fácil de comprobar. Se abre la planificación de producción de la partida y se compara lo producido cada día con lo servido. Producir de más «por si acaso» —una ronda extra de un entrante, una guarnición fría para un cubierto que al final no llegó— no aparece como error en el pase de esa noche: aparece como merma días después, cuando ese producto ya no está en condiciones de servirse.
+
+Tercero, el producto: calibre y rendimiento de lo entrado en esas tres semanas, un lote con menos rendimiento del habitual, una pieza de calibre distinto al de siempre, un cambio en el punto de maduración de la materia prima. Se contrasta contra la ficha técnica de la partida, nunca contra la memoria de nadie.
+
+Sólo cuando el dato, la producción y el producto quedan descartados, se habla con la partida, con una pregunta y no con una acusación: «¿Qué ha cambiado esta semana en cómo estáis preparando los fríos?». Deja la puerta abierta a que la respuesta sea un cambio de turno, un compañero todavía sin coger el ritmo, o un procedimiento que se ha ido relajando sin que nadie lo decidiera así.
+
+### La norma que aplica
+
+Aquí no hay ninguna obligación legal que fije cuánto puede mermar una partida ni que obligue a investigar una desviación como esta: es criterio de gestión de la casa, no un mandato normativo. Lo que sí existe es un punto de contacto con la seguridad alimentaria: el producto elaborado que se prepara de más y se queda en cámara sin encontrar servicio no se conserva de forma indefinida, y cuando llega al final de su vida útil se tira. Ese kilo no entra en la misma columna que la merma propiamente dicha: es desperdicio, y conviene no confundir las dos lecturas al repasar el cuadro de mando.
+
+### La herramienta y el guion
+
+La hoja «Semana» del cuadro de mando de cocina es donde se ve la columna de esta partida semana a semana, y donde se detecta que tres seguidas por encima del objetivo ya no es una mala semana suelta sino una tendencia. La misma hoja acumula también el total de kilos de merma del año —617 kilos hasta la fecha—, cifra que sólo dice algo leída junto a la producción del periodo, nunca sola. La hoja de parámetros es donde se comprueban los kilos por ración y el objetivo de cada partida, y la planificación de producción es donde se contrasta lo producido contra lo servido antes de mirar a nadie a la cara. Y cuando llega el momento de hablar, la frase de apertura es la misma que abre el protocolo: «¿Qué ha cambiado esta semana en cómo estáis preparando los fríos?», nunca «se os está yendo la merma», que ya viene con la conclusión puesta antes de escuchar la respuesta.

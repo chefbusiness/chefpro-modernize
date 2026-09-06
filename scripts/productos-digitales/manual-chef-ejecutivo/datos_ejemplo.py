@@ -532,6 +532,20 @@ FICHA_TECNICA_EJEMPLO = {
         (8, 'Montar: base de puré caliente, solomillo cortado en dos medallones, salsa '
             'alrededor, crujiente de panceta y brotes de rúcula.'),
     ],
+    # Un «Punto de control» por paso (columna F de la hoja «Ficha (ejemplo)»):
+    # lo que hay que COMPROBAR antes de seguir, no una repetición del paso.
+    'puntos_control': [
+        (1, 'Salpimentado uniforme y sin jugo en la bandeja: el solomillo pierde '
+            'el frío de cámara al tacto.'),
+        (2, 'El puré pasa por el colador sin grumos y sale a 63 °C o más.'),
+        (3, 'Cebolla transparente y blanda, sin ningún punto dorado.'),
+        (4, 'La salsa napa el dorso de una cuchara y sale colada, sin grumos.'),
+        (5, 'Marca dorada uniforme en las dos caras, sin jugo en la plancha.'),
+        (6, 'Sonda al centro: 58 °C antes del reposo.'),
+        (7, 'Panceta dorada y crujiente entre los dos papeles, sin quemarse en '
+            'los bordes.'),
+        (8, 'Peso de la ración y foto de referencia.'),
+    ],
     'tecnicas': 'Plancha, horno, pochado, reducción y triturado fino',
     'tiempos': {
         'mise_en_place_min': 45,
@@ -940,11 +954,23 @@ PDI = [
 # prueba (24-09, ver PRUEBAS_PLATO) y todavía no tiene ficha cerrada.
 # columnas: id, plato, partida, f. probar, f. costear, f. documentar (ficha),
 #           f. formar, f. lanzar, estado, ficha cerrada (Sí/No)
+#: N1 y N2 llevan «ficha cerrada» = Sí y su fecha de «documentar» (índice 5)
+#: alimenta la «Fecha de revisión» de la ficha en el Índice de Fichas del
+#: libro 3 (ver `nuevo[5]` en gen_ficha-tecnica-proceso.py::hoja_indice). Esa
+#: fecha tiene que caer ANTES de PARAMETROS_COCINA['fecha_corte_normativa']
+#: (2026-09-06, la «hoy» del libro) o la «Antigüedad de la ficha (días)» sale
+#: negativa, que no tiene sentido para una ficha que ya está cerrada. Cazado
+#: el 2026-09-06: un ajuste hecho a mano en el .xlsx publicado en vez de aquí.
 CALENDARIO_TEMPORADA = [
+    # N1/N2: fichas ya cerradas (documentadas el 22 y el 24 de agosto), con
+    # formación hecha y lanzamiento con la carta de otoño (6 de octubre). Los
+    # cinco hitos van en orden (probar < costear < documentar < formar <
+    # lanzar): el 06-09-2026 el fixer de documentos adelantó sólo «documentar»
+    # a agosto y dejó probar/costear en septiembre; se corrige la secuencia entera.
     ('N1', 'Alcachofas confitadas con panceta y yema curada', ESTACIONES[IDX_FRIOS],
-     '2026-09-08', '2026-09-15', '2026-09-22', '2026-09-29', '2026-10-06', 'En curso', 'Sí'),
+     '2026-08-04', '2026-08-11', '2026-08-22', '2026-08-31', '2026-10-06', 'En curso', 'Sí'),
     ('N2', 'Guiso de carrilleras al vino tinto con puré de apionabo', ESTACIONES[IDX_PASE],
-     '2026-09-10', '2026-09-17', '2026-09-24', '2026-10-01', '2026-10-06', 'En curso', 'Sí'),
+     '2026-08-06', '2026-08-13', '2026-08-24', '2026-09-02', '2026-10-06', 'En curso', 'Sí'),
     # Descartado tras su 3.a prueba (24-09): sin fecha de lanzar. El aviso de
     # días en prueba se sigue disparando igual (depende de J='No' y de los
     # días desde la primera prueba, no del estado) - B9 de la refutación xlsx.
@@ -1211,7 +1237,7 @@ AUDITORIA_COCINA = [
      'categoría de trabajo de la cocina', 3, 'CE-21', 'RD 486/1997, Anexo III, punto 3', _U486),
     (32, AREAS_AUDITORIA_COCINA[3],
      'Los suelos son fijos, estables y no resbaladizos, sin irregularidades ni pendientes peligrosas',
-     3, 'CE-22', 'RD 486/1997, Anexo I, punto 3.1', _U486),
+     3, 'CE-22', 'RD 486/1997, Anexo I, punto 3, apartado 1.º', _U486),
     (33, AREAS_AUDITORIA_COCINA[3],
      'Hay guante de protección mecánica y calzado antideslizante para todo el que los necesita, '
      'entregados gratuitamente y repuestos', 3, 'CE-23', 'RD 773/1997, art. 3.c) y Anexo III', _U773),
@@ -1759,6 +1785,12 @@ def checks():
     exige(len(ft['pasos']) >= 6, 'La ficha técnica de ejemplo tiene menos de 6 pasos')
     exige([p[0] for p in ft['pasos']] == list(range(1, len(ft['pasos']) + 1)),
           'Los pasos de la ficha técnica no están numerados en orden')
+    exige(len(ft['puntos_control']) == len(ft['pasos']),
+          'La ficha técnica de ejemplo no trae un punto de control por cada paso')
+    exige([p[0] for p in ft['puntos_control']] == list(range(1, len(ft['puntos_control']) + 1)),
+          'Los puntos de control de la ficha técnica no están numerados en orden')
+    exige(all(p[1].strip() for p in ft['puntos_control']),
+          'Hay un punto de control vacío en la ficha técnica de ejemplo')
     exige('copiado' in ft['nota_coste'].lower() or 'copiad' in ft['nota_coste'].lower(),
           'La nota del coste no dice que es una COPIA del escandallo (SPEC D4)')
     exige(ft['temperatura_servicio_c'] == 63,

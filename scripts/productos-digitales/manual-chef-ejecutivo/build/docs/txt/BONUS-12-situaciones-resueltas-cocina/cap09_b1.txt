@@ -1,0 +1,35 @@
+### La situación
+
+Son las nueve y veinte de la noche, en pleno pase, cuando el cocinero de la partida fría de La Encina se corta con la cortadora de fiambre mientras loncheaba jamón para una mesa que espera. El corte es profundo y hay que trasladarlo a urgencias. La cocina, mientras tanto, sigue funcionando: quedan comandas por servir y la brigada, seis personas esa noche, tiene que decidir en caliente qué hace con la máquina, con el resto del servicio y con lo que se cuenta después.
+
+Es el tipo de suceso que la auditoría interna intenta anticipar. El área de prevención de riesgos laborales reúne diez puntos de control con un peso de 26 sobre el total ponderado de 123, y en la última visita de La Encina sacó una nota de 3,85 sobre una escala máxima de 5 —por encima del umbral de aviso crítico, fijado en 2—, con un cumplimiento del 76,9 %. No es un suspenso, pero tampoco la nota de una cocina que ya lo tiene todo cerrado: es el margen en el que un corte como este deja de ser mala suerte y empieza a ser una pregunta sobre qué faltaba por comprobar.
+
+### Qué no hacer
+
+- **Seguir usando la máquina "con cuidado" el resto del servicio.** "Con cuidado" no es una medida de protección, es la ausencia de una, y volver a cortar esa misma noche con ella asumiendo que basta con ir más despacio repite el riesgo.
+- **Retirar el resguardo para limpiar y no volver a ponerlo.** Es la causa más habitual de que una cortadora acabe sin la protección con la que salió de fábrica: se quita para limpiar el disco a fondo y, con las prisas del cambio de turno, nadie la repone.
+- **Buscar culpable antes de saber si la máquina estaba protegida.** Preguntar primero quién ha sido, en vez de cómo estaba la máquina, invierte el orden que decide la responsabilidad y puede hundir a alguien sin ninguna culpa.
+- **No dejar constancia porque "no ha sido nada".** Un corte que se cura sin ingreso hospitalario tiende a olvidarse en la memoria del servicio siguiente, y es justo lo que deja a la cocina sin el único registro que demuestra, meses después, qué se comprobó y qué no.
+
+### Protocolo paso a paso
+
+- Atender la herida y trasladar a la persona a urgencias; nada de lo que sigue es más urgente que esto.
+- Parar la máquina y no volver a usarla hasta comprobar su estado, ni para terminar el pase ni al día siguiente.
+- Comprobar si el resguardo estaba puesto y en uso en el momento del corte.
+- Comprobar si esa persona tenía la formación específica del puesto de la cortadora y el equipo de protección entregado.
+- Anotar, esa misma noche, la hora, la tarea, la máquina, el estado del resguardo y quién estaba presente: es la diferencia entre un recuerdo y un hecho documentado.
+- Comunicarlo por la vía que corresponda dentro de la empresa, con la dirección y con el servicio de prevención, sin esperar a que alguien pregunte.
+
+### La norma que aplica
+
+Lo que decide la responsabilidad de este caso no es lo que se hace esa noche, sino lo que tenía que estar hecho antes. Los elementos móviles con riesgo de contacto mecánico —el disco de una cortadora de fiambre entra en esa categoría, junto a picadoras y batidoras industriales— tienen que llevar resguardos o dispositivos que impidan el acceso a la zona peligrosa, según el RD 1215/1997, Anexo I, punto 1.8 (comprobado el 6 de septiembre de 2026). El mismo reglamento, en su art. 4, obliga a que los equipos sometidos a desgaste se sometan a comprobaciones periódicas, hechas por personal competente y documentadas, y conservadas durante toda su vida útil: es el papel que responde, meses después, a si el resguardo llevaba tiempo suelto.
+
+A eso se suma la Ley 31/1995, de Prevención de Riesgos Laborales: su art. 19 obliga a una formación teórica y práctica adecuada al puesto, dentro de la jornada de trabajo y sin coste para la persona trabajadora; su art. 17.2 obliga a proporcionar equipo de protección individual cuando el riesgo no se pueda evitar o limitar por protección colectiva o por la organización del trabajo.
+
+Aquí conviene una precisión que evita una afirmación falsa. El RD 773/1997, en su art. 3, letra c, y en su Anexo III, regula los equipos de protección individual, y ese Anexo III es una lista no exhaustiva de actividades que pueden requerir equipo —entre ellas, la utilización regular de cuchillos de mano—, no un mandato directo: quien convierte esa posibilidad en obligación es la evaluación de riesgos de cada cocina, no el listado en sí mismo. Lo que sí es incondicional, sin depender de ninguna evaluación, es que el equipo de protección se entrega gratis y se repone cuando hace falta.
+
+### La herramienta y el guion
+
+Los diez puntos de control del área de prevención de riesgos son, en la práctica, la lista de lo que había que tener comprobado antes de esta noche: el cuadro siguiente los recoge uno por uno, con la misma nota y el mismo porcentaje de cumplimiento que ya tiene La Encina. Junto a la auditoría, la otra pieza que sostiene todo lo anterior es la nota escrita del incidente: hora, tarea, máquina, estado del resguardo y testigos, redactada esa misma noche y no reconstruida de memoria después.
+
+Quedan dos frases, y las dos se dicen tal cual. Al reanudar el servicio, a la brigada: «Esta máquina no vuelve a usarse hasta que comprobemos el resguardo; mientras tanto, se corta a mano». Y a la persona, cuando vuelve a la cocina: «Antes de que toques de nuevo esa máquina, revisamos juntos qué pasó y qué ha cambiado».

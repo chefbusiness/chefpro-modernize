@@ -1154,7 +1154,7 @@ CAPITULOS += [
                          ('Partida que lo produce', 'C', 'txt'),
                          ('Familia', 'D', 'txt'), ('Versión', 'E', 'txt'),
                          ('¿Ficha cerrada?', 'H', 'txt'), ('Estado', 'J', 'txt')],
-                'filas': (10, 21),
+                'filas': (10, 23),
                 'nota': 'La columna de estado es la que ordena el trabajo de las próximas '
                         'semanas: no se empieza por el plato que más gusta, se empieza por el que '
                         'más sale y no tiene ficha.',
@@ -1167,11 +1167,13 @@ CAPITULOS += [
                          ('Temperatura de emplatado (°C)', 'E', 'num'),
                          ('Tiempo de pase (min)', 'F', 'num'),
                          ('Conforme a la ficha', 'G', 'txt'),
+                         ('Devuelto por el cliente', 'H', 'txt'),
+                         ('Observación', 'I', 'txt'),
                          ('¿Se mantiene en caliente?', 'L', 'txt')],
-                'filas': (6, 20),
-                'nota': 'Quince muestreos de un mismo periodo. No hace falta medir todos los '
-                        'platos de todos los servicios: hace falta medir siempre igual y no dejar '
-                        'de medir.',
+                'filas': (6, 35),
+                'nota': 'Los treinta muestreos del periodo. Los cuatro no conformes y el único '
+                        'devuelto están en las columnas de la derecha: sin la observación, un '
+                        '“No” no enseña nada.',
             },
         ],
         'prohibido': None,
@@ -1264,8 +1266,10 @@ CAPITULOS += [
                          ('Raciones a producir', 'D', 'num'),
                          ('Peso sobre lo que hay que producir', 'E', 'pct1')],
                 'filas': (50, 58),
-                'nota': 'Las dos últimas partidas no producen raciones, por eso van a cero: en '
-                        'esta cocina son unidades de servicio, no de producción.',
+                'nota': 'Barra y bebidas aparece a cero porque la carta de esta semana no lleva '
+                        'ninguna elaboración suya, no porque no produzca: en el cuadro de mando sí '
+                        'tiene producción y merma propias. Sala y servicio y Caja y cierre van a '
+                        'cero siempre: en esta cocina son unidades de servicio, no de producción.',
             },
         ],
         'prohibido': None,
@@ -1351,7 +1355,6 @@ CAPITULOS += [
                 'filas': [
                     ['Temperatura de salida', 'Si el plato se sirve caliente, sale y se mantiene a 63 °C o más', 'Es la temperatura de mantenimiento en caliente del art. 30.2 del RD 1086/2020'],
                     ['Envase', 'Estanco, apilable y que no condense sobre el producto', 'El vapor atrapado arruina el crujiente y baja la temperatura del centro'],
-                    ['Recipiente del cliente', 'Se acepta el reutilizable que trae el cliente, y se puede rechazar si está manifiestamente sucio o es inadecuado', 'Ley 7/2022, art. 18.3'],
                     ['Tiempo máximo hasta la entrega', 'Se escribe en la ficha del plato, como el punto de cocción', 'Lo que no está escrito lo decide el repartidor'],
                     ['Fritos y masas crujientes', 'No viajan, o viajan con el elemento crujiente aparte', 'Llegan blandos y vuelven como queja'],
                     ['Platos con salsa emulsionada en caliente', 'No viajan', 'Se cortan con el movimiento y el descenso de temperatura'],
@@ -2081,14 +2084,14 @@ CAPITULOS += [
                 'cabecera': ['Asunto', 'Qué hay exactamente', 'Cómo se usa en cocina'],
                 'filas': [
                     ['Días que dura una elaboración propia refrigerada', 'No hay cifra legal', 'Se decide por escrito, por elaboración, y se anota en la ficha'],
-                    ['Estudio de vida útil', 'Obligatorio cuando el alimento listo para el consumo favorece el crecimiento de Listeria monocytogenes', 'Reglamento (CE) 2073/2005, art. 3 y Anexo II'],
-                    ['Etiquetado de lo que congelas tú', 'Tres fechas: elaboración, congelación y caducidad o consumo preferente del congelado', 'Art. 5.3 del RD 1021/2022'],
-                    ['Equipo de congelación', 'Debe alcanzar menos 18 °C en el centro con un descenso ininterrumpido', 'Art. 5.4 del RD 1021/2022'],
-                    ['Quinta gama por debajo de 4 °C', 'Recomendación de una agencia autonómica, no norma estatal; fiabilidad media declarada', 'Se aplica como criterio propio y se dice que es criterio'],
-                    ['Aceite de fritura', 'Componentes polares inferiores al 25 %', 'Art. 6.3 de la Orden de 26 de enero de 1989, vigente'],
-                    ['Temperatura de fritura de la patata', 'Buena práctica por debajo de 175 °C; no es un límite sancionable', 'Reglamento (UE) 2017/2158'],
-                    ['Niveles de referencia de acrilamida', 'Disparan la revisión de las medidas; no son límites con sanción', 'Reglamento (UE) 2017/2158'],
-                    ['Límites de contaminantes', 'Vinculan al poner el producto en el mercado', 'Reglamento (UE) 2023/915, que sustituyó al anterior'],
+                    ['Estudio de vida útil', 'Obligatorio cuando el alimento listo para el consumo favorece el crecimiento de Listeria monocytogenes', 'Se documenta el estudio o se acorta el plazo y se anota en la ficha'],
+                    ['Etiquetado de lo que congelas tú', 'Tres fechas: elaboración, congelación y caducidad o consumo preferente del congelado', 'Las tres fechas se escriben en la etiqueta del envase congelado y se copian a la ficha de conservación'],
+                    ['Equipo de congelación', 'Debe alcanzar menos 18 °C en el centro con un descenso ininterrumpido', 'Se comprueba con el registro de temperatura del equipo, no a simple vista'],
+                    ['Quinta gama por debajo de 4 °C', 'Recomendación del Comité Científico de la AESAN (2024), no norma con sanción; fiabilidad media declarada', 'Se aplica como criterio propio y se dice que es criterio'],
+                    ['Aceite de fritura', 'Componentes polares inferiores al 25 %', 'Se mide con el kit de comprobación de polares antes de decidir si el aceite se cambia'],
+                    ['Temperatura de fritura de la patata', 'Buena práctica por debajo de 175 °C; no es un límite sancionable', 'Se fija como consigna de la freidora y se revisa en el arranque del servicio'],
+                    ['Niveles de referencia de acrilamida', 'Disparan la revisión de las medidas; no son límites con sanción', 'Si se superan, se revisa el punto de fritura y el tiempo: no se ignora el aviso'],
+                    ['Límites de contaminantes', 'Vinculan al poner el producto en el mercado', 'Se exige la garantía del proveedor al comprar; no se mide en la propia cocina'],
                 ],
                 'nota': 'Verificado el 06-09-2026 · Reglamento (CE) 2073/2005, RD 1021/2022 '
                         '(BOE-A-2022-21681), Orden de 26 de enero de 1989 art. 6.3, Reglamento '
@@ -2569,7 +2572,7 @@ CAPITULOS += [
     },
     {
         'n': 20,
-        'titulo': 'Varias Cocinas a la Vez — y los Noventa Días Siguientes',
+        'titulo': 'Varias Cocinas a la Vez y los Noventa Días Siguientes',
         'resumen_indice': 'los mismos indicadores en todas las unidades, la misma auditoría cocina por cocina, la formación en cascada y qué se mide el primer día.',
         'palabras': 1700, 'bloques': 2,
         'objetivo': 'Dar al chef que dirige más de una cocina las dos '
@@ -2975,7 +2978,7 @@ BONUS = [
         'capitulos': [
             {
                 'n': 1,
-                'titulo': 'Un Jefe de Partida se Va a Mitad de Temporada y Sólo Él Sabe la Partida de Pescados',
+                'titulo': 'La Única Persona de una Partida se Va a Mitad de Temporada',
                 'resumen_indice': 'cómo se certifica en dos semanas que el relevo sabe hacerlo, y qué se recorta de la carta mientras tanto.',
                 'palabras': 800, 'bloques': 1,
                 'objetivo': 'Separar dos problemas que llegan juntos y no se '
@@ -3710,8 +3713,10 @@ BONUS[0]['capitulos'] += [
             'titulo': 'Las decisiones de carta que cruzan, y quién responde de cada una (brigada-puestos-y-evaluacion.xlsx, hoja «Matriz RACI»)',
             'src': (X_BRIG, 'Matriz RACI'),
             'cols': [('Decisión', 'A', 'txt'), ('Chef ejecutivo', 'B', 'txt'),
-                     ('Jefe de sala', 'E', 'txt'), ('Gerencia', 'F', 'txt'),
-                     ('Propiedad', 'G', 'txt')],
+                     ('Segundo de cocina', 'C', 'txt'),
+                     ('Jefe de partida', 'D', 'txt'),
+                     ('Jefe de sala', 'E', 'txt'),
+                     ('Gerencia', 'F', 'txt'), ('Propiedad', 'G', 'txt')],
             'filas': (13, 27),
             'nota': 'Antes de discutir el fondo, se mira la fila: la mitad de estas '
                     'conversaciones se resuelven cuando las dos partes ven de quién es la '
@@ -3721,7 +3726,7 @@ BONUS[0]['capitulos'] += [
     },
     {
         'n': 12,
-        'titulo': 'Un Segundo de Cocina Asciende a Jefe: los Primeros Treinta Días',
+        'titulo': 'Un Cocinero Asciende a Jefe de Cocina: los Primeros Treinta Días',
         'resumen_indice': 'qué se toca la primera semana, qué se mide desde el primer día y cómo se gana autoridad sobre quien ayer era compañero.',
         'palabras': 790, 'bloques': 1,
         'objetivo': 'Dar el plan de los primeros treinta días de quien acaba de '
@@ -3796,6 +3801,37 @@ BONUS[0]['capitulos'] += [
 # del Manager y se le añade el vocabulario propio de una cocina.
 # --------------------------------------------------------------------------
 _ERRATAS_OK = (
+    'monten', 'rodar',  # 2026-09-06, tras la desduplicación
+    # 2026-09-06 (primer ensamblado): formas correctas que el detector tomó por erratas
+    'gradación',
+    'gradaciones',
+    'diagnosticado',
+    'estaño',
+    'existan',
+    'traga',
+    'anunciado',
+    'apuntado',
+    'compáralas',
+    'compartía',
+    'confíe',
+    'consigna',
+    'entendía',
+    'entere',
+    'herida',
+    'peses',
+    'reflejado',
+    'reunió',
+    'tales',
+    'traición',
+    'consuman',
+    'consumió',
+    'descartarán',
+    'esconda',
+    'movió',
+    'recogió',
+    'táper',
+    'tocara',
+
     # Heredadas del Manual del Manager (2026-09-05)
     'actas', 'canta', 'cantó', 'canto', 'atendió', 'atendio', 'desapareció', 'desaparecio', 'rendía', 'rendia',
     'alegar', 'anular', 'auditado', 'califica', 'cometido', 'contó', 'conto', 'digan', 'emitió', 'emitio',

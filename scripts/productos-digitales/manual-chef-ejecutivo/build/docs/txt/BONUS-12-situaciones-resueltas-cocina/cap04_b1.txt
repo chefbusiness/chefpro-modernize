@@ -1,0 +1,35 @@
+### La situación
+
+Nada más colgar la llamada con el cliente, la propuesta de banquete ya está aceptada: 120 comensales, un menú con 6 elaboraciones y fecha cerrada. El chef ejecutivo (chef corporativo, cuando dirige varias cocinas) la da por buena sin abrir antes el libro de banquetes y comidas testigo, y ese es el momento en el que se decide si el evento cumple o no. La obligación de conservar comida testigo se dispara a partir de 40 comensales, y 120 la superan con margen de sobra: en cuanto la cifra entra en el registro, el libro enciende la alerta «COMIDA TESTIGO OBLIGATORIA» y reclama una muestra por cada una de las 6 elaboraciones del menú, no una del banquete completo. Salir de esa llamada sin haber mirado el umbral es salir sin saber que, terminado el servicio, tienen que existir 6 raciones ya guardadas en la cámara. Lo que el chef ejecutivo hace al colgar es abrir el libro y encargarle al jefe de partida (chef de partie) que aparte esas 6 raciones antes de que arranque el servicio.
+
+### Qué no hacer
+
+Guardar una sola muestra «del menú», como si una ración representara a las seis elaboraciones, es el error más extendido: cada elaboración tiene su propio riesgo y necesita su propia ración, aunque las seis salgan de la misma cocina el mismo día.
+
+Guardarla en un táper sin identificar y sin fecha la convierte en papel mojado: un envase sin el plato, el lote y la fecha no sirve de nada el día que haya que abrir esa cámara por una incidencia.
+
+Tirarla en cuanto termina el evento, porque «ya no hace falta», es el error que más se comete sin mala fe: la obligación es guardarla un mínimo de 7 días desde que se recogió, aunque el evento haya salido perfecto.
+
+Y dar por hecho que sólo alcanza a los banquetes en salón dedicado es el cuarto error: el umbral lo dispara el número de comensales, no el tipo de local, así que un evento de 120 personas obliga igual en una carpa o en la propia casa del cliente.
+
+### Protocolo paso a paso
+
+El protocolo empieza antes de aceptar el encargo, no en cocina: comprobar, con los comensales que trae la propuesta, si el evento entra en los supuestos que obligan a guardar comida testigo. Superados los 40 comensales, entra, y a partir de ahí:
+
+- Recoger una ración individual de al menos 100 gramos por cada elaboración, no una ración por menú completo: con 6 elaboraciones, salen 6 raciones.
+- Identificar cada ración con el plato, el lote de producción del día y la fecha de recogida, sobre el propio envase.
+- Conservarla en refrigeración a 4 °C o menos, o en congelación a -18 °C o menos, según lo que tenga disponible la cocina.
+- Guardarla un mínimo de 7 días desde la recogida, sin excepción porque el evento haya salido bien.
+- Destruirla sólo cuando la cuenta atrás del libro lo indique, nunca por criterio propio de que «ya ha pasado tiempo de sobra».
+
+Hay un punto que casi nadie conoce: la doble toma. Cuando la elaboración y el servicio ocurren en establecimientos distintos —el caso del catering, obrador en un sitio y evento en otro— hacen falta dos muestras de cada elaboración: quien elabora recoge la suya cerca de la salida del obrador, y quien sirve recoge la suya en el momento del servicio. En este evento, elaboración y servicio ocurren en la misma casa, así que el libro no marca ningún aviso de doble toma; pero esa pregunta se comprueba siempre, porque cambia con cada encargo.
+
+### La norma que aplica
+
+Los supuestos que obligan, el gramaje mínimo, los 7 días de conservación y las dos temperaturas de guarda están en los apartados 8, 9 y 10 del artículo 30 del RD 1086/2020, en la redacción del RD 1021/2022 —comprobado el 6 de septiembre de 2026—. El apartado 8 fija los supuestos tasados, entre ellos cualquier encargo para grupos o eventos de más de 40 personas, el que hace obligatorio este evento. El apartado 9 regula la doble toma del catering. El apartado 10 fija la ración mínima de 100 gramos, identificada y fechada, en refrigeración a 4 °C o menos o en congelación a -18 °C o menos, durante un mínimo de 7 días. No es un criterio de gestión: es una obligación legal, y por eso el libro no deja avanzar el evento sin la alerta encendida.
+
+### La herramienta y el guion
+
+Toda esta gestión vive en el libro de banquetes y comidas testigo, que para este evento ya tiene registradas las 6 muestras testigo de las 6 elaboraciones, sin ninguna pendiente de tomar. La hoja «Registro de Comidas Testigo» enciende la alerta «COMIDA TESTIGO OBLIGATORIA» en cuanto se escriben los comensales, exige el gramaje de 100 gramos y las dos temperaturas de guarda, cuenta los 7 días desde la recogida de cada ración y avisa si el evento necesita la doble toma. La tabla de abajo es esa ficha, elaboración por elaboración.
+
+Conviene tener preparada una frase para cuando el cliente pregunta por qué se le pide el número exacto de comensales antes de cerrar el menú: basta con decirle, con la misma naturalidad con la que se habla del menú, «para un evento de este tamaño llevamos un registro sanitario de comida testigo de cada plato, así que necesito el número definitivo de comensales antes de cerrar la propuesta». La mayoría de los clientes no lo vive como un obstáculo, sino como la prueba de que el evento está en manos serias, y esa frase suele vender la casa en vez de asustar a quien la escucha.

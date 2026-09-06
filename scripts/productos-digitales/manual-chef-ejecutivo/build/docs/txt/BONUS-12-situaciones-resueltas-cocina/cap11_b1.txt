@@ -1,0 +1,28 @@
+### La situación
+
+El propietario te para en su despacho, recién cerrado el pase (despacho) de la comida, y te dice que el solomillo de cerdo ibérico con puré de boniato sale de la carta (menú) la semana que viene: «no lo pide nadie». No es así: es de los platos que mejor sostienen tu partida de Pase y caliente. Vendéis 340 raciones al mes, a 5,67 € de coste por ración —copiado del escandallo (costeo) de su ficha—, y ese volumen mueve 1.927,80 € de materia prima al mes. Detrás de sus 45 minutos de elaboración previa hay un trabajo que no se ve en la mesa: si ese fondo o esa guarnición alimentan también a otro plato de la partida, quitarlo toca también el coste de ese otro plato.
+
+### Qué no hacer
+
+Decir que no sin más argumento que «es de los que más se venden» no basta: hace falta criterio con datos, no un choque de opiniones. Defenderlo porque te gusta cocinarlo, o porque lo diseñaste tú, convierte la decisión en algo personal y pierdes la conversación. Tampoco sirve aceptar y sacarlo ese mismo día sin mirar qué elaboraciones comparte con otros platos de la partida: lo que ahorras en un lado lo pagas en el otro. Y lo peor es convertirlo en un pulso delante de la brigada: esto se cierra entre tú y el propietario, nunca en mitad del pase.
+
+### Protocolo paso a paso
+
+Antes de defender nada, mira la matriz de responsabilidades del establecimiento y confirma de quién es esta decisión: si la fila está clara, vas directo a los datos.
+
+- Reúne lo que ya tienes en la ficha técnica (receta estándar): las 340 raciones vendidas al mes, los 5,67 € de coste por ración, los 1.927,80 € de materia prima al mes y la carga que da a Pase y caliente.
+- Revisa el índice de fichas técnicas: si una elaboración previa de este plato alimenta también a otro, quitarlo no ahorra ese trabajo, lo reparte peor y sube la merma (desperdicio, cuando es comida servible que se tira) de la elaboración que se queda corta o se pasa de producción.
+- Propón una alternativa medible en vez de un no seco —mantenerlo un tiempo acotado junto con una acción de sala o de carta— con fecha de revisión fijada de antemano.
+- Si la decisión final es retirarlo, acéptala: es de dirección. Lo que no cedes es dejar escrito qué se va a medir en la próxima revisión y con qué dato se juzgará si funcionó.
+
+Esta secuencia respeta una frontera: qué se queda en la carta es de dirección con el informe del chef delante; la ficha técnica, la producción y la carga de cada partida son terreno del chef. Casi todas estas conversaciones se tuercen por discutir en la casilla equivocada: el propietario opinando de ficha técnica como si fuera suya, o el chef opinando del mix de carta como si le tocara decidirlo.
+
+### La norma que aplica
+
+Aquí no hay obligación legal que decida por vosotros: mantener o retirar un plato es una decisión de gestión, no un mandato normativo, y conviene decirlo así en la propia conversación. Lo único que sí obliga, si el solomillo cambia de receta o desaparece de verdad, es que la información al cliente y la ficha técnica cambien en el mismo momento. Ni el convenio sectorial resuelve quién manda aquí. El ALEH VI tipifica seis áreas funcionales y encuadra sus ocupaciones en tres grupos profesionales —«Arts. 11.2, 15 y 16 del ALEH VI (BOE-A-2023-6344), con la modificación de BOE-A-2026-18630» (2026), comprobado el 6 de septiembre de 2026—, y eso consta en tu contrato y en tu recibo de salario. Y no lo resuelve el convenio: el ALEH VI ordena categorías laborales, no quién decide qué se queda en la carta. Esa frontera te la da tu matriz de responsabilidades, no el BOE.
+
+### La herramienta y el guion
+
+Tienes tres herramientas del pack para este caso. La matriz de responsabilidades, en la hoja de matriz RACI del libro de brigada, puestos y evaluación, te dice de quién es la decisión: comprueba sola que la fila del precio de venta de este plato tenga un único responsable, que es lo mínimo; que el responsable sea el que tu casa quiere es la conversación que hay que tener una vez y firmar. La ficha técnica y su índice, en la hoja de ficha de ejemplo del libro de ficha técnica de proceso, te enseñan qué elaboraciones comparte el solomillo antes de decidir a ciegas. Y si toca proponer un sustituto, el registro de pruebas de plato, en la hoja de registro de pruebas de plato del libro de desarrollo de carta, ya tiene 8 pruebas anotadas: mira ahí antes de improvisar una alternativa nueva.
+
+Para abrir la conversación, algo tan directo como: «Antes de sacarlo, déjame enseñarte lo que mueve este plato: raciones, coste y con qué otro plato comparte elaboración» funciona mejor que defenderlo a pecho descubierto. Si el propietario insiste en que el problema es el precio o el hueco que ocupa frente a otros platos, esa conversación ya no es esta: se resuelve con la matriz de carta de la Guía Food Cost. Y si lo que toca, en cambio, es subir el precio de la carta entera, esa conversación está resuelta en el bonus del Manual del Manager.

@@ -34,6 +34,7 @@ export const PRODUCT_PRICES: Record<string, { eur: number }> = {
   'kit-tareas-restaurante-creativo': { eur: 12 },
   'kit-tareas-sushi-bar': { eur: 14 },
   'kit-tareas-tapas-bar': { eur: 14 },
+  'manual-chef-ejecutivo': { eur: 65 },
   'manual-manager-restaurante': { eur: 55 },
   'mega-pack-tareas': { eur: 89 },
   'pack-appcc': { eur: 14 },

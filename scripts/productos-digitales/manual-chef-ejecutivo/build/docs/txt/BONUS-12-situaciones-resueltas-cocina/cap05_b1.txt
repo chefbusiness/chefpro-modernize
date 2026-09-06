@@ -1,0 +1,34 @@
+### La situación
+
+Son las nueve y media de un viernes, la sala está llena y el pase (despacho) lleva rato sacando principales muy por encima de lo pedido, mientras siguen entrando comandas nuevas. El objetivo de la casa para este pase es de 18 minutos, y el año, en conjunto, se mueve en 16,5: hay margen casi todas las noches. Esta noche no: el tiempo se ha ido a veinticinco minutos, siete por encima del objetivo de dieciocho, y nadie ha dicho todavía «alto» a la entrada de comandas, así que la cola crece por el mismo lado por el que se intenta vaciarla.
+
+El jefe de cocina (chef de cocina) mira una hilera de tickets que no deja de alargarse. Cada minuto sin decidir suma una comanda a una cola que ya no cabe en la cabeza de nadie, y el problema deja de ser una mesa para ser el pase entero: trabajar más rápido con el mismo orden ya no sirve, porque el orden es justo lo que se ha roto.
+
+### Qué no hacer
+
+- Gritar más alto no acelera nada: sube el ruido, no baja el tiempo, y logra que nadie oiga la orden que sí importa.
+- Montar platos fuera de orden para «sacar algo» rompe el criterio por el que se prioriza: dos minutos después nadie sabe qué mesa iba antes y se pierde el control real de la cola.
+- Mandar a alguien de la partida de fríos a caliente sin decirle qué deja de hacer abre un segundo frente en vez de cerrar el primero: fríos se queda sin nadie y el problema se traslada.
+- Prometer a sala un tiempo que no se va a cumplir cambia una cola de cocina por una cola de comensales molestos: cuando el tiempo real llega tarde otra vez, sala deja de creerse cualquier número del pase.
+
+### Protocolo paso a paso
+
+1. Parar de aceptar comandas nuevas durante dos minutos y ordenar las que ya están por hora de entrada, no por la partida que más se queja. Sin esa foto, cualquier decisión posterior se toma a ciegas.
+2. Agrupar por técnica cuando el atasco está en la plancha o en el horno, en vez de por mesa: si el cuello de botella es un equipo, se despacha junto lo que pasa por él.
+3. Declarar un 86 si hay un plato concreto bloqueando la cadena: no es una rendición, es liberar al resto del pase de la elaboración que lo retiene, y se retoma en cuanto baja la cola.
+4. Avisar a sala del tiempo real, una sola vez y con un número, nunca con un «ya casi» que nadie puede verificar: un número que se cumple reconstruye la confianza que las promesas incumplidas acaban de quemar.
+5. Reforzar la partida que bloquea la cadena, no el pase entero: repartir gente sin destino sólo añade cuerpos mirando la misma cola.
+
+### La norma que aplica
+
+Este protocolo, en sí mismo, no es una obligación legal: es criterio de gestión, la manera en que esta casa organiza la cocina bajo presión, y otra casa puede ordenar estos pasos de otra forma sin infringir nada. Hay, sin embargo, una excepción que no se puede saltar por prisa.
+
+Lo que se sirve caliente tiene que salir del pase a la temperatura de mantenimiento, que el art. 30.2 del RD 1086/2020, en la redacción del RD 1021/2022, fija en 63 °C o más (comprobado el 6 de septiembre de 2026). Un plato que ha esperado en el pase por debajo de esa temperatura no se envía a la mesa: se rehace, aunque suponga un segundo 86. El mismo artículo, en su punto 30.7, cierra con una regla que conviene tener presente aquí: «Todos los alimentos recalentados que no se consuman se descartarán y no volverán a calentarse ni se volverán a almacenar». Mandar un plato dos veces no es más barato: es un riesgo que la norma ya ha decidido que no se asume.
+
+### La herramienta y el guion
+
+Lo que distingue un viernes malo de un problema estructural no se ve esa misma noche: se ve el lunes, con el muestreo del pase, que acumula ya 30 mediciones en la hoja de control de calidad del pase del libro de desarrollo de carta. Esa hoja da 17,2 minutos de media en principales y 8,8 en entrantes, contra objetivos de 18 y 10: si los entrantes van bien y los principales llevan semanas rozando o superando el objetivo, el viernes descontrolado fue el día en que un síntoma ya presente se hizo visible. La misma hoja registra la temperatura de emplatado, y el dato más bajo recogido, 6,0 grados, sólo aparece midiendo con regularidad.
+
+El coste de estas noches está también en el registro de devueltos y retrabajados: 221 platos devueltos y 516 retrabajados en el año del caso, 15,8 por cada base de cubiertos servida, el gasto invisible de un pase descontrolado.
+
+Conviene tener preparadas dos frases. A sala, en el momento: «El principal de tu mesa sale con el tiempo real que marca el pase, no el que gustaría decir, y no hay otro antes». A la brigada, al cerrar: «Esta noche se fue a veinticinco minutos contra un objetivo de dieciocho; el lunes miramos, con el muestreo, si fue esta noche o viene de semanas atrás».

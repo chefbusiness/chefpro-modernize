@@ -1,0 +1,43 @@
+### La situación
+
+Son las once de la noche de un domingo y la cámara de refrigeración marca una temperatura muy por encima de la de conservación segura. Nadie sabe desde cuándo: la cocina cerró hace horas, no reabre hasta el servicio del martes, y no hay proveedor de frío ni técnico a quien llamar a esa hora. Solo hay un termómetro, un cuaderno y el criterio de quien está delante.
+
+El pack fija tres referencias para situar la distancia: la muestra testigo se conserva a 4 °C como máximo en refrigeración y a -18 °C como máximo en congelación, y el mantenimiento en caliente del pase exige un mínimo de 63 °C. Cualquier lectura de la cámara alejada de esas cifras, sin saber desde cuándo lleva así, es la situación de este capítulo.
+
+### Qué no hacer
+
+Abrir la puerta para «ver cómo está» el producto: cada apertura mete aire caliente en una cámara que ya viene mal, la temperatura sube más, y el aspecto o el olor no dicen si un producto ha cruzado la línea de riesgo.
+
+Repartir lo dudoso entre la brigada para que no se pierda: convierte un fallo de mantenimiento en un riesgo alimentario repartido entre varias casas y borra cualquier posibilidad de trazar después qué se comió.
+
+Meterlo todo en el congelador y decidir el martes: aplaza la decisión sin evitarla, y de paso congela género que ya venía con la cadena de frío rota, algo que la norma trata de forma distinta a una congelación normal.
+
+Tirarlo todo sin anotar nada: es un desenlace tan malo como no tirar nada, porque se pierde género que a lo mejor se podía haber salvado y no queda ningún papel que sostenga la decisión después.
+
+### Protocolo paso a paso
+
+- No abrir la cámara mientras se decide qué hacer.
+- Medir la temperatura del aire y, sobre todo, la del centro de un producto testigo.
+- Anotar la hora de la medida y la última hora en la que consta que la cámara funcionaba bien.
+- Separar por familias —lo crudo de origen animal, lo elaborado listo para consumo y lo envasado sin abrir no aguantan lo mismo—; dentro de lo elaborado tampoco es uniforme: una ficha técnica de ejemplo del pack fija 3 días de vida útil para un puré, 4 para una salsa y 2 para una pieza racionada.
+- Decidir con la temperatura y el tiempo transcurrido, nunca con el olor ni el aspecto.
+- Trasladar lo que se salva a otra cámara antes de seguir revisando el resto.
+- Escribir la decisión producto a producto.
+
+Hay dos reglas que no se negocian. Lo que ya se recalentó y no se consumió no vuelve a la cámara ni se vuelve a calentar: el art. 30.7 del RD 1086/2020, en la redacción del RD 1021/2022, lo dice sin margen de interpretación: «Todos los alimentos recalentados que no se consuman se descartarán y no volverán a calentarse ni se volverán a almacenar». Y lo congelado que se ha descongelado no se recongela como si nada: el art. 5 del RD 1021/2022 obliga a etiquetar lo que se congela en el propio establecimiento con tres fechas —elaboración, congelación y caducidad o consumo preferente—, que dejan de decir la verdad en cuanto el producto pasa por una descongelación sin control.
+
+### La norma que aplica
+
+El artículo que gobierna toda la noche es el 30 del RD 1086/2020, comprobado el 6 de septiembre de 2026, en su redacción del RD 1021/2022: art. 30.1, 30.2, 30.5 y 30.7. El 30.1 pide elaborar con la menor antelación posible; el 30.2 exige un mínimo de 63 °C en caliente; el 30.3 fija un máximo de 4 °C en refrigeración si la vida útil supera las 24 horas, u 8 °C si es menor; el 30.4 fija un máximo de -18 °C en congelación; el 30.6 exige enfriar de 60 a 10 °C en menos de dos horas; y el 30.7 exige recalentar a un mínimo de 74 °C durante 15 segundos en el centro, dentro de la hora siguiente a sacarlo del frigorífico. El 30.5 admite temperaturas distintas de las del apartado 3 —nunca los 63 °C en caliente ni los -18 °C en congelación— si el operador demuestra ante la autoridad competente que se basan en evidencias científicas: no es una salida para una noche de apuro, sino un régimen que se pide y se justifica de antemano.
+
+El marco que se explica aquí es el español; si trabajas fuera de España, la referencia es tu normativa local.
+
+### La herramienta y el guion
+
+Para saber qué temperatura rige sin repasar el articulado a las once de la noche está la hoja de estado normativo del pack, que avisa cada 180 días de revisar si algo ha cambiado. Lo decidido se deja escrito en el registro del pack de seguridad alimentaria, con la misma lógica de un inspector: la Guía de requisitos de seguridad alimentaria para establecimientos de restauración, Comunidad de Madrid, 2024, explica que la inspección cruza lo que entra —albaranes con lote y fecha de caducidad—, lo que pasa por el proceso —envases originales, fecha de elaboración, registros— y lo que sale —empresas destinatarias, comidas servidas, cantidad y fecha—. Esa trazabilidad no la exige la norma, pero sin ella una retirada de producto es mucho más lenta y cara.
+
+La nota que se escribe esa misma noche, producto a producto, sigue siempre el mismo guion:
+
+«Hora de la medición: ___. Temperatura del aire: ___. Temperatura en el centro del producto testigo: ___. Producto y familia: ___. Decisión: se conserva / se traslada / se descarta. Tomada por: ___.»
+
+Es exactamente lo que se va a pedir si alguna vez hay que justificar, meses después, qué se tiró y qué se salvó esa noche.

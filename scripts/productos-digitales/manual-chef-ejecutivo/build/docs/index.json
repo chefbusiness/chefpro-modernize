@@ -1,0 +1,730 @@
+[
+ {
+  "id": "guia_cap01_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap01_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap01_b1.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Qué es Exactamente un Chef Ejecutivo (y para Quién es Este Manual)",
+  "epigrafes": [
+   "Chef ejecutivo, jefe de cocina, segundo y jefe de partida: qué nombra el convenio y qué es uso de la casa",
+   "El Manager lleva el negocio, este manual lleva la cocina",
+   "Tu problema, su capítulo y su herramienta"
+  ]
+ },
+ {
+  "id": "guia_cap01_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap01_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap01_b2.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Qué es Exactamente un Chef Ejecutivo (y para Quién es Este Manual)",
+  "epigrafes": [
+   "Los siete libros y cada cuánto se abre cada uno",
+   "Qué no vas a encontrar aquí",
+   "Cómo llamamos aquí a cada cosa"
+  ]
+ },
+ {
+  "id": "guia_cap02_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap02_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap02_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Brigada Real: los Diez Puestos del Convenio y el Organigrama que Sí Tienes",
+  "epigrafes": [
+   "El área funcional de cocina y los diez puestos que el convenio sí nombra",
+   "Las funciones literales, puesto por puesto: qué dice el texto y qué no dice",
+   "Lo que cambió en 2026 y lo que no"
+  ]
+ },
+ {
+  "id": "guia_cap02_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap02_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap02_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Brigada Real: los Diez Puestos del Convenio y el Organigrama que Sí Tienes",
+  "epigrafes": [
+   "Por qué la brigada clásica de quince puestos no aplica a una cocina de seis",
+   "Chef ejecutivo, chef corporativo y las denominaciones de uso"
+  ]
+ },
+ {
+  "id": "guia_cap03_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap03_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap03_b1.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Lo que tu Convenio Dice de la Cocina (y no del Resto del Restaurante)",
+  "epigrafes": [
+   "Movilidad funcional: mover gente entre partidas sin salirse del convenio",
+   "Turno partido, descanso reducido y jornada anual: lo que cambia en cocina",
+   "Manutención y ropa de trabajo: dos complementos que se deben y casi nadie reclama"
+  ]
+ },
+ {
+  "id": "guia_cap03_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap03_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap03_b2.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Lo que tu Convenio Dice de la Cocina (y no del Resto del Restaurante)",
+  "epigrafes": [
+   "El plus de formación lo paga la empresa que no forma",
+   "La escalera de cocina en bruto anual: por qué el mismo puesto no cobra lo mismo",
+   "Clases y grupos de establecimiento: por qué no se pueden comparar dos convenios"
+  ]
+ },
+ {
+  "id": "guia_cap04_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap04_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap04_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Mandar en una Cocina sin Gritar",
+  "epigrafes": [
+   "De compañero a jefe: los primeros treinta días al frente de la brigada",
+   "Delegar por nivel del convenio, no por confianza",
+   "La orden en cocina: quién canta, quién confirma y por qué gritar no es mandar"
+  ]
+ },
+ {
+  "id": "guia_cap04_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap04_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap04_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Mandar en una Cocina sin Gritar",
+  "epigrafes": [
+   "Dar voz sin perder el mando: qué se hace con la propuesta de un cocinero",
+   "El relevo: qué se delega para que la cocina funcione el día que tú no estás"
+  ]
+ },
+ {
+  "id": "guia_cap05_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap05_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap05_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Ficha Técnica de Proceso: que el Plato Salga Igual lo Haga Quien lo Haga",
+  "epigrafes": [
+   "Ficha técnica y escandallo: dos documentos del mismo plato",
+   "Lo que lleva una ficha de proceso y la plantilla de cinco campos no tiene",
+   "El coste se copia, no se recalcula: la casilla verde de la ficha"
+  ]
+ },
+ {
+  "id": "guia_cap05_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap05_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap05_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Ficha Técnica de Proceso: que el Plato Salga Igual lo Haga Quien lo Haga",
+  "epigrafes": [
+   "Temperatura de servicio, conservación, versión y fecha de revisión",
+   "La ficha de un plato que se mantiene en caliente"
+  ]
+ },
+ {
+  "id": "guia_cap06_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap06_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap06_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Estandarizar de Verdad: por Qué la Ficha Existe y Nadie la Sigue",
+  "epigrafes": [
+   "Escribir la ficha no es estandarizar: quién la aprueba y dónde vive",
+   "El control de versiones que evita tres versiones del mismo plato",
+   "Formar en la ficha: por qué se enseña en el puesto y no en una reunión"
+  ]
+ },
+ {
+  "id": "guia_cap06_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap06_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap06_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Estandarizar de Verdad: por Qué la Ficha Existe y Nadie la Sigue",
+  "epigrafes": [
+   "Auditar la ficha en el pase: el muestreo que dice si se sigue",
+   "Cuando cambia el producto del proveedor: qué se revisa y en qué orden"
+  ]
+ },
+ {
+  "id": "guia_cap07_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap07_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap07_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Mise en Place y Planificación de Producción",
+  "epigrafes": [
+   "Tener el puesto montado no es haber planificado",
+   "La previsión de cubiertos: reservas, histórico y el número con el que se produce",
+   "Cuánto hay que producir hoy: cubiertos por mix menos stock elaborado"
+  ]
+ },
+ {
+  "id": "guia_cap07_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap07_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap07_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Mise en Place y Planificación de Producción",
+  "epigrafes": [
+   "La lista de producción diaria: el papel que se imprime y se cuelga",
+   "El ajuste por desviación: qué se corrige al día siguiente"
+  ]
+ },
+ {
+  "id": "guia_cap08_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap08_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap08_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "El Pase: Protocolo, no Cultura",
+  "epigrafes": [
+   "Quién canta, quién marcha y quién despacha: los tres papeles del pase",
+   "El 86: cómo se declara, quién lo autoriza y a quién se avisa",
+   "Medir el pase sin cronómetro: el muestreo por familia de plato"
+  ]
+ },
+ {
+  "id": "guia_cap08_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap08_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap08_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "El Pase: Protocolo, no Cultura",
+  "epigrafes": [
+   "Devoluciones y retrabajos: dos cosas distintas que se cuentan aparte",
+   "El plato que sale por la puerta"
+  ]
+ },
+ {
+  "id": "guia_cap09_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap09_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap09_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Los KPI que Son de Cocina (y los que No)",
+  "epigrafes": [
+   "Por qué esta lista es una propuesta de la casa y no un estándar",
+   "Los siete indicadores, uno a uno, con su error típico",
+   "Los que se venden como de cocina y son de sala, de marketing o de finanzas"
+  ]
+ },
+ {
+  "id": "guia_cap09_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap09_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap09_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Los KPI que Son de Cocina (y los que No)",
+  "epigrafes": [
+   "El objetivo lo pones tú: el semáforo no se enciende hasta que hay casilla",
+   "Dónde acaba este manual y empieza la Guía Food Cost"
+  ]
+ },
+ {
+  "id": "guia_cap10_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap10_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap10_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Merma de tu Partida",
+  "epigrafes": [
+   "Merma de proceso y desperdicio: dos pérdidas que no se gestionan igual",
+   "Merma por partida contra la producción, no por producto contra las compras",
+   "Cómo se alimenta la fila de la semana en quince minutos"
+  ]
+ },
+ {
+  "id": "guia_cap10_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap10_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap10_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "La Merma de tu Partida",
+  "epigrafes": [
+   "La partida que se come el margen: leer la columna, no el total",
+   "Por qué aquí no hay ningún porcentaje de merma normal"
+  ]
+ },
+ {
+  "id": "guia_cap11_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap11_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap11_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Compras y Especificaciones desde la Cocina",
+  "epigrafes": [
+   "La especificación técnica: lo que le pides al proveedor además del precio",
+   "El economato y lo que el convenio le encarga",
+   "Lo que te vincula al comprar y no al elaborar"
+  ]
+ },
+ {
+  "id": "guia_cap11_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap11_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap11_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Compras y Especificaciones desde la Cocina",
+  "epigrafes": [
+   "Qué se guarda del albarán y por qué",
+   "Cuando el proveedor cambia el calibre: qué se revisa antes de aceptarlo"
+  ]
+ },
+ {
+  "id": "guia_cap12_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap12_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap12_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Desarrollo de Carta y Menús de Temporada con Criterio de Coste",
+  "epigrafes": [
+   "Los cinco hitos: probar, costear, documentar, formar y lanzar",
+   "El registro de pruebas: qué se anota de cada prueba y qué decide",
+   "El plato que lleva demasiados días en prueba sin ficha cerrada"
+  ]
+ },
+ {
+  "id": "guia_cap12_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap12_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap12_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Desarrollo de Carta y Menús de Temporada con Criterio de Coste",
+  "epigrafes": [
+   "Qué decide el chef y qué decide la dirección",
+   "Dónde acaba el desarrollo y empieza la ingeniería de menú"
+  ]
+ },
+ {
+  "id": "guia_cap13_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap13_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap13_b1.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Seguridad Alimentaria: de lo que Respondes Tú, no el Propietario",
+  "epigrafes": [
+   "La cultura de seguridad alimentaria es obligación de la dirección, y hay que demostrarla",
+   "El autocontrol que sostiene el chef: responsable designado y revisión por cambio"
+  ]
+ },
+ {
+  "id": "guia_cap13_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap13_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap13_b2.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Seguridad Alimentaria: de lo que Respondes Tú, no el Propietario",
+  "epigrafes": [
+   "Las cinco temperaturas y el binomio de enfriamiento",
+   "Anisakis: qué producto, qué tratamiento y qué justificante"
+  ]
+ },
+ {
+  "id": "guia_cap13_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap13_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap13_b3.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Seguridad Alimentaria: de lo que Respondes Tú, no el Propietario",
+  "epigrafes": [
+   "Las tres fechas al congelar, y qué no es elaboración propia",
+   "Cuando se cae el frío: qué se tira, qué no y qué se apunta"
+  ]
+ },
+ {
+  "id": "guia_cap14_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap14_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap14_b1.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Alérgenos desde Dentro de la Cocina",
+  "epigrafes": [
+   "No hay un capítulo de alérgenos en el reglamento: dónde está la obligación",
+   "Los catorce y el plato sin envasar: por qué el cartel no basta"
+  ]
+ },
+ {
+  "id": "guia_cap14_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap14_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap14_b2.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Alérgenos desde Dentro de la Cocina",
+  "epigrafes": [
+   "Alérgenos de proceso: equipo, recipiente y superficie compartidos",
+   "Sin gluten y muy bajo en gluten: dos declaraciones con dos límites"
+  ]
+ },
+ {
+  "id": "guia_cap14_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap14_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap14_b3.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Alérgenos desde Dentro de la Cocina",
+  "epigrafes": [
+   "La alergia que llega al pase con el plato montado",
+   "Qué se registra cuando ocurre una incidencia"
+  ]
+ },
+ {
+  "id": "guia_cap15_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap15_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap15_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Vida Útil, Envasado al Vacío y lo que la Ley no Dice",
+  "epigrafes": [
+   "No existe una cifra legal de días: qué hay en su lugar",
+   "Cuándo obliga un estudio de vida útil",
+   "Envasado al vacío y quinta gama: lo verificado y lo que sólo es recomendación"
+  ]
+ },
+ {
+  "id": "guia_cap15_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap15_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap15_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Vida Útil, Envasado al Vacío y lo que la Ley no Dice",
+  "epigrafes": [
+   "Fritura y aceite: lo único que sí tiene número",
+   "Acrilamida y contaminantes: nivel de referencia no es límite",
+   "Elaboración propia: qué cuenta y dónde puedes venderlo"
+  ]
+ },
+ {
+  "id": "guia_cap16_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap16_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap16_b1.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Comidas Testigo y Banquetes (y Qué se Hace con el Excedente, en una Página)",
+  "epigrafes": [
+   "Quién está obligado a guardar comida testigo, y por qué casi nadie lo sabe",
+   "La muestra: cien gramos, siete días, cuatro grados y quién la recoge"
+  ]
+ },
+ {
+  "id": "guia_cap16_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap16_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap16_b2.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Comidas Testigo y Banquetes (y Qué se Hace con el Excedente, en una Página)",
+  "epigrafes": [
+   "Elaboración y servicio en sitios distintos: dos testigos, no una",
+   "Producir un banquete: del menú a las raciones por partida"
+  ]
+ },
+ {
+  "id": "guia_cap16_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap16_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap16_b3.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Comidas Testigo y Banquetes (y Qué se Hace con el Excedente, en una Página)",
+  "epigrafes": [
+   "El timing del evento y el personal que lo sostiene",
+   "El excedente del servicio, en una página"
+  ]
+ },
+ {
+  "id": "guia_cap17_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap17_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap17_b1.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Prevención de Riesgos en la Cocina: lo que la Evaluación de Riesgos Convierte en Obligación",
+  "epigrafes": [
+   "La evaluación de riesgos es la que convierte una lista en obligación",
+   "Temperatura y ventilación del local: qué dice la norma por categoría de trabajo"
+  ]
+ },
+ {
+  "id": "guia_cap17_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap17_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap17_b2.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Prevención de Riesgos en la Cocina: lo que la Evaluación de Riesgos Convierte en Obligación",
+  "epigrafes": [
+   "Suelos, resguardos y comprobaciones documentadas de los equipos",
+   "El uniforme no es una ley: son dos marcos que se suman"
+  ]
+ },
+ {
+  "id": "guia_cap17_b3",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap17_b3.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap17_b3.txt",
+  "palabras_objetivo": 666,
+  "palabras_min": 479,
+  "capitulo": "Prevención de Riesgos en la Cocina: lo que la Evaluación de Riesgos Convierte en Obligación",
+  "epigrafes": [
+   "El mito de los veinticinco kilos",
+   "Lo que dicen los números de siniestralidad, y lo que no dicen"
+  ]
+ },
+ {
+  "id": "guia_cap18_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap18_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap18_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Formar y Evaluar a la Brigada: Cobertura no es Competencia",
+  "epigrafes": [
+   "Cobertura y competencia: dos preguntas distintas y dos herramientas distintas",
+   "Las siete competencias técnicas y por qué pesan distinto en cada puesto",
+   "La prueba práctica: qué es un cinco y qué es un uno"
+  ]
+ },
+ {
+  "id": "guia_cap18_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap18_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap18_b2.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Formar y Evaluar a la Brigada: Cobertura no es Competencia",
+  "epigrafes": [
+   "El plan de desarrollo individual y la próxima partida a aprender",
+   "Formación de manipuladores: por puesto, del titular y sin carné"
+  ]
+ },
+ {
+  "id": "guia_cap19_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap19_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap19_b1.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Cocina, Sala y Dirección: Quién Decide Qué, y Cómo Llevar la Cifra al Gerente",
+  "epigrafes": [
+   "Las quince decisiones que cruzan de cocina a sala y a dirección",
+   "Qué quiere decir cada letra, y por qué sólo puede haber un responsable",
+   "El 86, la ficha nueva, la compra fuera de escandallo y la incidencia de alérgeno"
+  ]
+ },
+ {
+  "id": "guia_cap19_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap19_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap19_b2.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Cocina, Sala y Dirección: Quién Decide Qué, y Cómo Llevar la Cifra al Gerente",
+  "epigrafes": [
+   "La cifra de cocina que el gerente no tiene, y cómo se le lleva",
+   "Lo que no se decide en cocina"
+  ]
+ },
+ {
+  "id": "guia_cap20_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap20_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap20_b1.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Varias Cocinas a la Vez — y los Noventa Días Siguientes",
+  "epigrafes": [
+   "Una cocina, con las herramientas para comparar varias",
+   "Los mismos indicadores en todas las unidades: la comparativa del mes cerrado",
+   "La misma auditoría, cocina por cocina"
+  ]
+ },
+ {
+  "id": "guia_cap20_b2",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/cap20_b2.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/guia_cap20_b2.txt",
+  "palabras_objetivo": 850,
+  "palabras_min": 612,
+  "capitulo": "Varias Cocinas a la Vez — y los Noventa Días Siguientes",
+  "epigrafes": [
+   "Formación en cascada: tú formas a los jefes de cocina, no a los cocineros",
+   "Dos comunidades, dos convenios: lo que no se puede estandarizar",
+   "Qué se mide el primer día y qué a los noventa"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap01_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap01_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap01_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Un Jefe de Partida se Va a Mitad de Temporada y Sólo Él Sabe la Partida de Pescados",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap02_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap02_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap02_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "Un Comensal Declara una Alergia con el Plato ya Montado",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap03_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap03_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap03_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "Sanidad se Presenta sin Avisar en Mitad del Servicio",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap04_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap04_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap04_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Un Banquete de Ciento Veinte Personas: Qué Guardar, Cómo y Cuánto Tiempo",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap05_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap05_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap05_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "El Pase se Descontrola un Viernes: Cuarenta Comandas y Veinticinco Minutos",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap06_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap06_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap06_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "El Plato Estrella Sale Distinto Según Quién Esté de Turno",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap07_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap07_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap07_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "La Merma de la Partida de Fríos se Dispara Tres Semanas Seguidas",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap08_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap08_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap08_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Se Cae la Cámara un Domingo por la Noche",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap09_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap09_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap09_b1.txt",
+  "palabras_objetivo": 800,
+  "palabras_min": 576,
+  "capitulo": "Un Cocinero se Corta con la Cortadora de Fiambre",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap10_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap10_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap10_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "El Plato que Sale por la Puerta: Delivery y Take-away desde la Cocina",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap11_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap11_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap11_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "El Propietario Quiere Quitar de la Carta un Plato que a Ti te da Margen",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ },
+ {
+  "id": "BONUS-12-situaciones-resueltas-cocina_cap12_b1",
+  "ruta_txt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/txt/BONUS-12-situaciones-resueltas-cocina/cap12_b1.txt",
+  "prompt": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/prompts/BONUS-12-situaciones-resueltas-cocina_cap12_b1.txt",
+  "palabras_objetivo": 790,
+  "palabras_min": 568,
+  "capitulo": "Un Segundo de Cocina Asciende a Jefe: los Primeros Treinta Días",
+  "epigrafes": [
+   "La situación",
+   "Qué no hacer",
+   "Protocolo paso a paso",
+   "La norma que aplica",
+   "La herramienta y el guion"
+  ]
+ }
+]

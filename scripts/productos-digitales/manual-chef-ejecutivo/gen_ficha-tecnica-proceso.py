@@ -513,13 +513,14 @@ def hoja_ficha(wb, titulo_hoja, relleno):
     ws.merge_cells('B%d:E%d' % (R_PASOS_CAB, R_PASOS_CAB))
     pintar_cabecera(ws, 'B%d:E%d' % (R_PASOS_CAB, R_PASOS_CAB))
     pasos = dict((n, t) for n, t in F['pasos']) if relleno else {}
+    puntos_control = dict((n, t) for n, t in F['puntos_control']) if relleno else {}
     for i in range(N_PASOS):
         r = R_PASOS_INI + i
         motor.val(ws, 'A%d' % r, i + 1, fmt=FMT_ENT, align='center')
         ws.merge_cells('B%d:E%d' % (r, r))
         motor.val(ws, 'B%d' % r, pasos.get(i + 1, ''), wrap=True)
         motor.verde(ws, 'B%d' % r)
-        motor.val(ws, 'F%d' % r, '', wrap=True)
+        motor.val(ws, 'F%d' % r, puntos_control.get(i + 1, ''), wrap=True)
         motor.verde(ws, 'F%d' % r)
         ws.row_dimensions[r].height = 30
     motor.val(ws, 'A%d' % R_TECNICAS, 'Técnicas empleadas', bold=True)

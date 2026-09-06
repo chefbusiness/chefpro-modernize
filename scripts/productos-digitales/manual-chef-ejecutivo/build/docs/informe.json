@@ -1,0 +1,1992 @@
+{
+  "_meta": {
+    "pid": "manual-chef-ejecutivo",
+    "generado": "2026-09-06 21:49",
+    "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs",
+    "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/manual-chef-ejecutivo",
+    "modelo": "~deepseek/deepseek-v4-flash-latest",
+    "research": "2026-08-29",
+    "research_ausente": false,
+    "erratas_reparadas": [],
+    "erratas_reparadas_n": 0
+  },
+  "documentos": {
+    "manual-chef-ejecutivo": {
+      "gates": {
+        "paginas_pdf": 96,
+        "paginas_prometidas": 75,
+        "palabras_md": 53052,
+        "palabras_pdf": 52203,
+        "palabras_docx": 50590,
+        "palabras_objetivo": 34000,
+        "capitulos": 20,
+        "tablas_md": 42,
+        "tablas_docx": 42,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 50086,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 50859,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Manual del Chef Ejecutivo"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Manual del Chef Ejecutivo",
+          "created": "2026-09-06 21:49:47"
+        },
+        "paridad_palabras_pct": 0.53,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 36,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/manual-chef-ejecutivo.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/manual-chef-ejecutivo.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/manual-chef-ejecutivo.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Qué es Exactamente un Chef Ejecutivo (y para Quién es Este Manual)",
+          "tablas": 3,
+          "sector_usado": [
+            "MM-14"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Nombre de la cocina del caso",
+              "Restaurante de ejemplo «La Encina»",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B5"
+            ],
+            [
+              "Tipo de carta del caso",
+              "Carta de temporada con menú del mediodía",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B6"
+            ],
+            [
+              "Partidas activas del caso",
+              "6",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B7"
+            ],
+            [
+              "Personas de la brigada de cocina",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F39"
+            ],
+            [
+              "Personas dadas de alta en el organigrama completo",
+              "12",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F40"
+            ],
+            [
+              "Cubiertos servidos en el año del caso",
+              "46.737",
+              "cuadro-de-mando-cocina.xlsx!Semana!D57"
+            ],
+            [
+              "Raciones producidas en el año del caso",
+              "75.500",
+              "cuadro-de-mando-cocina.xlsx!Semana!M57"
+            ],
+            [
+              "Platos de la carta registrados en el índice de fichas",
+              "14",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C56"
+            ],
+            [
+              "Puntos de control de la auditoría interna de cocina",
+              "50",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!B12"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "La Brigada Real: los Diez Puestos del Convenio y el Organigrama que Sí Tienes",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-14",
+            "CONV-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Área funcional en la que el convenio encuadra la cocina",
+              "Área 2ª",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!C6"
+            ],
+            [
+              "Personas encuadradas en los puestos del convenio",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G16"
+            ],
+            [
+              "Personas en el puesto de jefe o jefa de cocina",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G6"
+            ],
+            [
+              "Personas en el puesto de segundo o segunda de cocina",
+              "0",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G7"
+            ],
+            [
+              "Personas en el puesto de jefe o jefa de partida",
+              "0",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G9"
+            ],
+            [
+              "Personas en el puesto de cocinero o cocinera",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G10"
+            ],
+            [
+              "Personas en el puesto de ayudante de cocina",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G13"
+            ],
+            [
+              "Personas en el puesto de auxiliar de cocina y economato",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G15"
+            ],
+            [
+              "Partidas activas declaradas en el organigrama",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!C5"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Lo que tu Convenio Dice de la Cocina (y no del Resto del Restaurante)",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-15",
+            "CONV-01",
+            "CONV-02",
+            "CONV-05"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas de la brigada de cocina",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F39"
+            ],
+            [
+              "Personas en el puesto de jefe o jefa de cocina",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G6"
+            ],
+            [
+              "Personas en el puesto de cocinero o cocinera",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G10"
+            ],
+            [
+              "Personas en el puesto de ayudante de cocina",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G13"
+            ],
+            [
+              "Personas en el puesto de auxiliar de cocina y economato",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G15"
+            ],
+            [
+              "Horas de cocina trabajadas en el año del caso",
+              "11.586",
+              "cuadro-de-mando-cocina.xlsx!Semana!AM57"
+            ],
+            [
+              "Horas de cocina por cubierto en el año del caso",
+              "0,25",
+              "cuadro-de-mando-cocina.xlsx!Semana!AN57"
+            ],
+            [
+              "Cubiertos servidos en el año del caso",
+              "46.737",
+              "cuadro-de-mando-cocina.xlsx!Semana!D57"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Mandar en una Cocina sin Gritar",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-14"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas de la brigada de cocina",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F39"
+            ],
+            [
+              "Responsable titular de la partida de pase y caliente",
+              "Iván R. (P02)",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!E10"
+            ],
+            [
+              "Personas asignadas a la partida de pase y caliente",
+              "4",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!G10"
+            ],
+            [
+              "Responsable titular de la partida de fríos y entrantes",
+              "Laura S. (P05)",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!E11"
+            ],
+            [
+              "Personas asignadas a la partida de fríos y entrantes",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!G11"
+            ],
+            [
+              "Personas en el puesto de jefe o jefa de partida",
+              "0",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G9"
+            ],
+            [
+              "Planes de desarrollo individual planificados",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Plan de Desarrollo Individual!C25"
+            ],
+            [
+              "Planes de desarrollo individual en curso",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Plan de Desarrollo Individual!C26"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "La Ficha Técnica de Proceso: que el Plato Salga Igual lo Haga Quien lo Haga",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-06",
+            "CE-13"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Código del plato de la ficha de ejemplo",
+              "P1",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B6"
+            ],
+            [
+              "Nombre del plato de la ficha de ejemplo",
+              "Solomillo de cerdo ibérico con puré de boniato",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B7"
+            ],
+            [
+              "Partida que lo produce",
+              "Pase y caliente",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B9"
+            ],
+            [
+              "Versión de la ficha de ejemplo",
+              "1.2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B11"
+            ],
+            [
+              "Coste por ración copiado del escandallo",
+              "5,67 €",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B16"
+            ],
+            [
+              "Minutos de elaboración previa de la ficha de ejemplo",
+              "45",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B40"
+            ],
+            [
+              "Minutos de pase de la ficha de ejemplo",
+              "9",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B41"
+            ],
+            [
+              "Minutos totales de la elaboración de ejemplo",
+              "58",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B43"
+            ],
+            [
+              "Punto de cocción escrito en la ficha de ejemplo",
+              "Al punto: 58 °C en el centro de la pieza tras el reposo",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B46"
+            ],
+            [
+              "Temperatura mínima de mantenimiento en caliente de la ficha",
+              "63",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B47"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Estandarizar de Verdad: por Qué la Ficha Existe y Nadie la Sigue",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-04",
+            "CE-05"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Muestreos del pase hechos en el periodo",
+              "30",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D53"
+            ],
+            [
+              "Muestreos no conformes con la ficha",
+              "4",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D54"
+            ],
+            [
+              "Platos devueltos por el cliente en el muestreo",
+              "1",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D55"
+            ],
+            [
+              "Cumplimiento de ficha técnica en el pase, medido",
+              "86,7 %",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D52"
+            ],
+            [
+              "Objetivo de cumplimiento de ficha de la casa",
+              "90,0 %",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!E52"
+            ],
+            [
+              "Lectura del cumplimiento de ficha",
+              "Por debajo del objetivo",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!F52"
+            ],
+            [
+              "Platos de la carta registrados en el índice de fichas",
+              "14",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C56"
+            ],
+            [
+              "Platos con la ficha cerrada",
+              "3",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C52"
+            ],
+            [
+              "Porcentaje de platos de la carta con la ficha cerrada",
+              "21,4 %",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C57"
+            ],
+            [
+              "Platos con ficha que toca revisar",
+              "0",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C54"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Mise en Place y Planificación de Producción",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-10"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Semana ISO que planifica el ejemplo",
+              "37",
+              "planificacion-produccion-semanal.xlsx!Previsión de Cubiertos!B6"
+            ],
+            [
+              "Días que cubre la planificación",
+              "7",
+              "planificacion-produccion-semanal.xlsx!Previsión de Cubiertos!B8"
+            ],
+            [
+              "Reservas confirmadas de la semana",
+              "587",
+              "planificacion-produccion-semanal.xlsx!Previsión de Cubiertos!C29"
+            ],
+            [
+              "Histórico de cubiertos de la misma semana",
+              "933",
+              "planificacion-produccion-semanal.xlsx!Previsión de Cubiertos!D29"
+            ],
+            [
+              "Previsión sugerida por la hoja",
+              "933",
+              "planificacion-produccion-semanal.xlsx!Previsión de Cubiertos!E29"
+            ],
+            [
+              "Cubiertos previstos que decide el chef",
+              "958",
+              "planificacion-produccion-semanal.xlsx!Previsión de Cubiertos!F29"
+            ],
+            [
+              "Raciones previstas de la semana, todas las partidas",
+              "940",
+              "planificacion-produccion-semanal.xlsx!Producción por Partida!G44"
+            ],
+            [
+              "Raciones de stock ya elaborado",
+              "734",
+              "planificacion-produccion-semanal.xlsx!Producción por Partida!H44"
+            ],
+            [
+              "Raciones que hay que producir esta semana",
+              "323",
+              "planificacion-produccion-semanal.xlsx!Producción por Partida!M44"
+            ],
+            [
+              "Raciones que hay que producir en el día de la lista",
+              "66",
+              "planificacion-produccion-semanal.xlsx!Lista de Producción Diaria!D34"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "El Pase: Protocolo, no Cultura",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-10",
+            "MM-38"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Tiempo medio de pase de entrantes en el año del caso",
+              "8,6",
+              "cuadro-de-mando-cocina.xlsx!Semana!AG57"
+            ],
+            [
+              "Tiempo medio de pase de principales en el año del caso",
+              "16,5",
+              "cuadro-de-mando-cocina.xlsx!Semana!AH57"
+            ],
+            [
+              "Tiempo medio de pase de postres en el año del caso",
+              "6,7",
+              "cuadro-de-mando-cocina.xlsx!Semana!AI57"
+            ],
+            [
+              "Objetivo de la casa para el pase de entrantes",
+              "10",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B29"
+            ],
+            [
+              "Objetivo de la casa para el pase de principales",
+              "18",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B30"
+            ],
+            [
+              "Objetivo de la casa para el pase de postres",
+              "8",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B31"
+            ],
+            [
+              "Platos devueltos en el año del caso",
+              "221",
+              "cuadro-de-mando-cocina.xlsx!Semana!AO57"
+            ],
+            [
+              "Platos retrabajados en el año del caso",
+              "516",
+              "cuadro-de-mando-cocina.xlsx!Semana!AP57"
+            ],
+            [
+              "Devueltos y retrabajados por base de cubiertos en el año",
+              "15,8",
+              "cuadro-de-mando-cocina.xlsx!Semana!AQ57"
+            ],
+            [
+              "Temperatura mínima de mantenimiento en caliente del muestreo",
+              "63",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D58"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Los KPI que Son de Cocina (y los que No)",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Merma global de la cocina en el año del caso",
+              "3,7 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF57"
+            ],
+            [
+              "Tiempo medio de pase de principales en el año",
+              "16,5",
+              "cuadro-de-mando-cocina.xlsx!Semana!AH57"
+            ],
+            [
+              "Incidencias de alérgenos por base de cubiertos en el año",
+              "0,32",
+              "cuadro-de-mando-cocina.xlsx!Semana!AL57"
+            ],
+            [
+              "Objetivo de la casa para las incidencias de alérgenos",
+              "0,50",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B32"
+            ],
+            [
+              "Horas de cocina por cubierto en el año",
+              "0,25",
+              "cuadro-de-mando-cocina.xlsx!Semana!AN57"
+            ],
+            [
+              "Objetivo de la casa para las horas de cocina por cubierto",
+              "0,26",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B33"
+            ],
+            [
+              "Devueltos y retrabajados por base de cubiertos en el año",
+              "15,8",
+              "cuadro-de-mando-cocina.xlsx!Semana!AQ57"
+            ],
+            [
+              "Objetivo conjunto de la casa para devueltos y retrabajados",
+              "22,0",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B36"
+            ],
+            [
+              "Indicadores fuera de objetivo en el año",
+              "0",
+              "cuadro-de-mando-cocina.xlsx!Semana!AR57"
+            ],
+            [
+              "Lectura automática del año",
+              "Año en objetivo",
+              "cuadro-de-mando-cocina.xlsx!Semana!AS57"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "La Merma de tu Partida",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Merma global de la cocina en el año del caso",
+              "3,7 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF57"
+            ],
+            [
+              "Merma total del año en kilos",
+              "617",
+              "cuadro-de-mando-cocina.xlsx!Semana!V57"
+            ],
+            [
+              "Materia prima neta producida en el año, en kilos",
+              "16.698",
+              "cuadro-de-mando-cocina.xlsx!Semana!AE57"
+            ],
+            [
+              "Merma del año de la partida de pase y caliente",
+              "3,2 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!W57"
+            ],
+            [
+              "Merma del año de la partida de fríos y entrantes",
+              "5,1 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!X57"
+            ],
+            [
+              "Merma del año de la partida de postres y panadería",
+              "2,4 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!Y57"
+            ],
+            [
+              "Merma del año de la partida de barra y bebidas",
+              "4,0 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!Z57"
+            ],
+            [
+              "Objetivo de merma de la partida de pase y caliente",
+              "3,5 %",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!D15"
+            ],
+            [
+              "Merma global de la primera semana mala",
+              "4,9 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF37"
+            ],
+            [
+              "Merma de fríos y entrantes en esa misma semana",
+              "9,2 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!X37"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Compras y Especificaciones desde la Cocina",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-18",
+            "CE-09",
+            "CE-16"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste por ración copiado del escandallo en la ficha de ejemplo",
+              "5,67 €",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B16"
+            ],
+            [
+              "Raciones vendidas al mes del plato de ejemplo",
+              "340",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B17"
+            ],
+            [
+              "Coste de materia prima al mes del plato de ejemplo",
+              "1.927,80 €",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B18"
+            ],
+            [
+              "Kilos de materia prima neta por ración en pase y caliente",
+              "0,36",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!C15"
+            ],
+            [
+              "Kilos de materia prima neta por ración en fríos y entrantes",
+              "0,22",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!C16"
+            ],
+            [
+              "Materia prima neta producida en el año, en kilos",
+              "16.698",
+              "cuadro-de-mando-cocina.xlsx!Semana!AE57"
+            ],
+            [
+              "Raciones producidas en el año del caso",
+              "75.500",
+              "cuadro-de-mando-cocina.xlsx!Semana!M57"
+            ],
+            [
+              "Merma total del año en kilos",
+              "617",
+              "cuadro-de-mando-cocina.xlsx!Semana!V57"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Desarrollo de Carta y Menús de Temporada con Criterio de Coste",
+          "tablas": 2,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Platos en desarrollo en el calendario de temporada",
+              "5",
+              "desarrollo-carta-control-calidad.xlsx!Calendario de Temporada!C28"
+            ],
+            [
+              "Platos con la ficha técnica cerrada",
+              "2",
+              "desarrollo-carta-control-calidad.xlsx!Calendario de Temporada!C29"
+            ],
+            [
+              "Porcentaje de platos en desarrollo con ficha cerrada",
+              "40,0 %",
+              "desarrollo-carta-control-calidad.xlsx!Calendario de Temporada!C30"
+            ],
+            [
+              "Platos que superan los días máximos en prueba",
+              "1",
+              "desarrollo-carta-control-calidad.xlsx!Calendario de Temporada!C31"
+            ],
+            [
+              "Días máximos en prueba sin ficha cerrada que fija la casa",
+              "30",
+              "desarrollo-carta-control-calidad.xlsx!Calendario de Temporada!C8"
+            ],
+            [
+              "Pruebas de plato registradas en total",
+              "8",
+              "desarrollo-carta-control-calidad.xlsx!Registro de Pruebas de Plato!C39"
+            ],
+            [
+              "Resultado medio de todas las pruebas, de uno a cinco",
+              "3,75",
+              "desarrollo-carta-control-calidad.xlsx!Registro de Pruebas de Plato!C40"
+            ],
+            [
+              "Coste estimado medio por ración en las pruebas",
+              "2,84 €",
+              "desarrollo-carta-control-calidad.xlsx!Registro de Pruebas de Plato!C41"
+            ],
+            [
+              "Pruebas que hubo que repetir",
+              "5",
+              "desarrollo-carta-control-calidad.xlsx!Registro de Pruebas de Plato!C44"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "Seguridad Alimentaria: de lo que Respondes Tú, no el Propietario",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-02",
+            "CE-10",
+            "CE-12",
+            "CE-13",
+            "CE-14",
+            "CE-09",
+            "MM-29",
+            "MM-32",
+            "MM-33"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Temperatura mínima de mantenimiento en caliente del muestreo del pase",
+              "63",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D58"
+            ],
+            [
+              "Muestras de elaboraciones que se mantienen en caliente",
+              "4",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D59"
+            ],
+            [
+              "De ellas, por debajo del mínimo de mantenimiento en caliente",
+              "1",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D60"
+            ],
+            [
+              "Temperatura de emplatado más baja del muestreo",
+              "6,0",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D56"
+            ],
+            [
+              "Temperatura de emplatado más alta del muestreo",
+              "79,0",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D57"
+            ],
+            [
+              "Temperatura mínima de mantenimiento en caliente de la ficha de ejemplo",
+              "63",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B47"
+            ],
+            [
+              "Días tras los que el libro avisa de revisar el estado normativo",
+              "180",
+              "auditoria-interna-cocina.xlsx!Estado Normativo!B9"
+            ],
+            [
+              "Aviso de revisión del estado normativo en la fecha del ejemplo",
+              "Revisión reciente",
+              "auditoria-interna-cocina.xlsx!Estado Normativo!B10"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "Alérgenos desde Dentro de la Cocina",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-01",
+            "CE-03",
+            "CE-06",
+            "CE-07",
+            "MM-31",
+            "CE-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Alérgenos presentes como ingrediente en la ficha de ejemplo",
+              "2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B79"
+            ],
+            [
+              "Alérgenos por traza en la ficha de ejemplo",
+              "1",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B80"
+            ],
+            [
+              "Alérgenos por utensilio compartido en la ficha de ejemplo",
+              "1",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B81"
+            ],
+            [
+              "Incidencias de alérgenos registradas en el año del caso",
+              "15",
+              "cuadro-de-mando-cocina.xlsx!Semana!AJ57"
+            ],
+            [
+              "Gravedad máxima registrada en el año, de cero a tres",
+              "3",
+              "cuadro-de-mando-cocina.xlsx!Semana!AK57"
+            ],
+            [
+              "Incidencias de alérgenos por base de cubiertos en el año",
+              "0,32",
+              "cuadro-de-mando-cocina.xlsx!Semana!AL57"
+            ],
+            [
+              "Objetivo de la casa para las incidencias de alérgenos",
+              "0,50",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B32"
+            ],
+            [
+              "Nota de la auditoría en el área de alérgenos en el pase",
+              "3,65",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!D10"
+            ],
+            [
+              "Peso del área de alérgenos en el pase sobre el total de la auditoría",
+              "26",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!C10"
+            ],
+            [
+              "Cumplimiento del área de alérgenos en el pase",
+              "73,1 %",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!E10"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "Vida Útil, Envasado al Vacío y lo que la Ley no Dice",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-08",
+            "CE-37",
+            "CE-35",
+            "CE-19",
+            "CE-20",
+            "CE-17",
+            "CE-12",
+            "CE-13"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Vida útil del puré de la ficha de ejemplo, en días",
+              "3",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D88"
+            ],
+            [
+              "Vida útil de la salsa de la ficha de ejemplo, en días",
+              "4",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D89"
+            ],
+            [
+              "Vida útil del crujiente de la ficha de ejemplo, en días",
+              "2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D90"
+            ],
+            [
+              "Vida útil de la pieza racionada de la ficha de ejemplo, en días",
+              "2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D91"
+            ],
+            [
+              "Temperatura mínima de mantenimiento en caliente de la ficha",
+              "63",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B47"
+            ],
+            [
+              "Platos de la carta registrados en el índice de fichas",
+              "14",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C56"
+            ],
+            [
+              "Platos con ficha que toca revisar",
+              "0",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C54"
+            ],
+            [
+              "Minutos totales de la elaboración de ejemplo",
+              "58",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B43"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "Comidas Testigo y Banquetes (y Qué se Hace con el Excedente, en una Página)",
+          "tablas": 3,
+          "sector_usado": [
+            "CE-11",
+            "CE-31",
+            "CE-32",
+            "CE-33",
+            "CE-34",
+            "CE-15",
+            "MM-36"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Comensales a partir de los que obliga la comida testigo",
+              "40",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D7"
+            ],
+            [
+              "Gramos mínimos por elaboración guardada",
+              "100",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D8"
+            ],
+            [
+              "Días mínimos de conservación de la muestra",
+              "7",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D9"
+            ],
+            [
+              "Temperatura máxima en refrigeración de la muestra",
+              "4",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D10"
+            ],
+            [
+              "Temperatura máxima en congelación de la muestra",
+              "-18",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D11"
+            ],
+            [
+              "Comensales del evento del caso",
+              "120",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D22"
+            ],
+            [
+              "Elaboraciones del menú del evento",
+              "6",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D55"
+            ],
+            [
+              "Muestras testigo registradas del evento",
+              "6",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D54"
+            ],
+            [
+              "Raciones a producir en total para el evento",
+              "600",
+              "banquetes-comidas-testigo.xlsx!Producción y Ficha de Banquete!F25"
+            ],
+            [
+              "Horas totales de personal del evento",
+              "56",
+              "banquetes-comidas-testigo.xlsx!Producción y Ficha de Banquete!D64"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "Prevención de Riesgos en la Cocina: lo que la Evaluación de Riesgos Convierte en Obligación",
+          "tablas": 2,
+          "sector_usado": [
+            "CE-05",
+            "CE-21",
+            "CE-22",
+            "CE-23",
+            "CE-24",
+            "CE-25",
+            "CE-26",
+            "CE-27",
+            "CE-28",
+            "CE-30",
+            "CS-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos de control de la auditoría interna de cocina",
+              "50",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!B12"
+            ],
+            [
+              "Peso total de los cincuenta puntos de la auditoría",
+              "123",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!C12"
+            ],
+            [
+              "Nota ponderada global de la visita del caso",
+              "3,54",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!D12"
+            ],
+            [
+              "Cumplimiento global sobre la escala",
+              "70,9 %",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!E12"
+            ],
+            [
+              "Puntos de control del área de prevención de riesgos",
+              "10",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!B9"
+            ],
+            [
+              "Peso del área de prevención de riesgos",
+              "26",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!C9"
+            ],
+            [
+              "Nota de la visita en el área de prevención de riesgos",
+              "3,85",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!D9"
+            ],
+            [
+              "Cumplimiento del área de prevención de riesgos",
+              "76,9 %",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!E9"
+            ],
+            [
+              "Escala máxima de puntuación de la auditoría",
+              "5",
+              "auditoria-interna-cocina.xlsx!Auditoría!D10"
+            ],
+            [
+              "Umbral de aviso ámbar de la auditoría",
+              "3",
+              "auditoria-interna-cocina.xlsx!Auditoría!D11"
+            ]
+          ]
+        },
+        {
+          "n": 18,
+          "titulo": "Formar y Evaluar a la Brigada: Cobertura no es Competencia",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-43",
+            "MM-30",
+            "CE-04",
+            "CE-27"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas evaluadas en la rúbrica de competencias",
+              "8",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M46"
+            ],
+            [
+              "Media ponderada de la brigada evaluada",
+              "3,53",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M47"
+            ],
+            [
+              "Media ponderada de la primera persona evaluada",
+              "2,67",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M34"
+            ],
+            [
+              "Nivel técnico de esa misma persona",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!N34"
+            ],
+            [
+              "Lectura cruzada de cobertura y competencia de esa persona",
+              "Coherente",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!P34"
+            ],
+            [
+              "Duración total de la prueba práctica, en minutos",
+              "160",
+              "brigada-puestos-y-evaluacion.xlsx!Prueba Práctica!C18"
+            ],
+            [
+              "Planes de desarrollo individual planificados",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Plan de Desarrollo Individual!C25"
+            ],
+            [
+              "Planes de desarrollo individual en curso",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Plan de Desarrollo Individual!C26"
+            ],
+            [
+              "Evaluaciones registradas en el histórico",
+              "8",
+              "brigada-puestos-y-evaluacion.xlsx!Histórico!E26"
+            ],
+            [
+              "Media ponderada de la última ronda de evaluación",
+              "3,53",
+              "brigada-puestos-y-evaluacion.xlsx!Histórico!E27"
+            ]
+          ]
+        },
+        {
+          "n": 19,
+          "titulo": "Cocina, Sala y Dirección: Quién Decide Qué, y Cómo Llevar la Cifra al Gerente",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-14"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Cubiertos servidos en el año del caso",
+              "46.737",
+              "cuadro-de-mando-cocina.xlsx!Semana!D57"
+            ],
+            [
+              "Merma global de la cocina en el año",
+              "3,7 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF57"
+            ],
+            [
+              "Merma del año de la partida de fríos y entrantes",
+              "5,1 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!X57"
+            ],
+            [
+              "Tiempo medio de pase de principales en el año",
+              "16,5",
+              "cuadro-de-mando-cocina.xlsx!Semana!AH57"
+            ],
+            [
+              "Horas de cocina por cubierto en el año",
+              "0,25",
+              "cuadro-de-mando-cocina.xlsx!Semana!AN57"
+            ],
+            [
+              "Incidencias de alérgenos por base de cubiertos en el año",
+              "0,32",
+              "cuadro-de-mando-cocina.xlsx!Semana!AL57"
+            ],
+            [
+              "Devueltos y retrabajados por base de cubiertos en el año",
+              "15,8",
+              "cuadro-de-mando-cocina.xlsx!Semana!AQ57"
+            ],
+            [
+              "Comprobación de la fila del 86 en la matriz de decisiones",
+              "Correcta",
+              "brigada-puestos-y-evaluacion.xlsx!Matriz RACI!J13"
+            ],
+            [
+              "Comprobación de la fila de la incidencia de alérgeno",
+              "Correcta",
+              "brigada-puestos-y-evaluacion.xlsx!Matriz RACI!J17"
+            ]
+          ]
+        },
+        {
+          "n": 20,
+          "titulo": "Varias Cocinas a la Vez y los Noventa Días Siguientes",
+          "tablas": 2,
+          "sector_usado": [
+            "MM-15",
+            "CE-12"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Estándar del grupo para la merma global",
+              "4,0 %",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!C12"
+            ],
+            [
+              "Merma global del mes de la unidad de referencia",
+              "4,6 %",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!C17"
+            ],
+            [
+              "Merma global del mes de la segunda unidad",
+              "3,8 %",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!C18"
+            ],
+            [
+              "Merma global del mes de la tercera unidad",
+              "5,4 %",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!C19"
+            ],
+            [
+              "Cubiertos del mes de la tercera unidad",
+              "4.180",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!B19"
+            ],
+            [
+              "Indicadores dentro del estándar de la unidad de referencia",
+              "1",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!N17"
+            ],
+            [
+              "Indicadores dentro del estándar de la segunda unidad",
+              "5",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!N18"
+            ],
+            [
+              "Posición de la unidad de referencia en el ranking",
+              "2",
+              "cuadro-de-mando-cocina.xlsx!Comparativa entre Unidades!O17"
+            ],
+            [
+              "Nota ponderada de auditoría de la unidad de referencia",
+              "3,54",
+              "auditoria-interna-cocina.xlsx!Histórico por Unidad!H6"
+            ],
+            [
+              "Estándar de grupo fijado para la auditoría",
+              "3,54",
+              "auditoria-interna-cocina.xlsx!Histórico por Unidad!C14"
+            ]
+          ]
+        }
+      ]
+    },
+    "BONUS-12-situaciones-resueltas-cocina": {
+      "gates": {
+        "paginas_pdf": 34,
+        "paginas_prometidas": 25,
+        "palabras_md": 15902,
+        "palabras_pdf": 15762,
+        "palabras_docx": 15122,
+        "palabras_objetivo": 9500,
+        "capitulos": 12,
+        "tablas_md": 12,
+        "tablas_docx": 12,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 14909,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 15252,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "12 Situaciones Resueltas en Cocina"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "12 Situaciones Resueltas en Cocina",
+          "created": "2026-09-06 21:49:54"
+        },
+        "paridad_palabras_pct": 0.85,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 21,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/BONUS-12-situaciones-resueltas-cocina.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/BONUS-12-situaciones-resueltas-cocina.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/a7c35700-4556-4720-b8ad-89442cc224b7/scratchpad/docs/BONUS-12-situaciones-resueltas-cocina.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "La Única Persona de una Partida se Va a Mitad de Temporada",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-04",
+            "CE-27"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas de la brigada de cocina",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F39"
+            ],
+            [
+              "Personas evaluadas en la rúbrica de competencias",
+              "8",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M46"
+            ],
+            [
+              "Media ponderada de la brigada evaluada",
+              "3,53",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M47"
+            ],
+            [
+              "Duración total de la prueba práctica, en minutos",
+              "160",
+              "brigada-puestos-y-evaluacion.xlsx!Prueba Práctica!C18"
+            ],
+            [
+              "Planes de desarrollo individual en curso",
+              "2",
+              "brigada-puestos-y-evaluacion.xlsx!Plan de Desarrollo Individual!C26"
+            ],
+            [
+              "Responsable titular de la partida de fríos y entrantes",
+              "Laura S. (P05)",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!E11"
+            ],
+            [
+              "Personas asignadas a la partida de fríos y entrantes",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!G11"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Un Comensal Declara una Alergia con el Plato ya Montado",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-01",
+            "CE-06",
+            "MM-31"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Incidencias de alérgenos registradas en el año del caso",
+              "15",
+              "cuadro-de-mando-cocina.xlsx!Semana!AJ57"
+            ],
+            [
+              "Gravedad máxima registrada en el año, de cero a tres",
+              "3",
+              "cuadro-de-mando-cocina.xlsx!Semana!AK57"
+            ],
+            [
+              "Incidencias de alérgenos por base de cubiertos en el año",
+              "0,32",
+              "cuadro-de-mando-cocina.xlsx!Semana!AL57"
+            ],
+            [
+              "Objetivo de la casa para las incidencias de alérgenos",
+              "0,50",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B32"
+            ],
+            [
+              "Alérgenos presentes como ingrediente en la ficha de ejemplo",
+              "2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B79"
+            ],
+            [
+              "Alérgenos por traza en la ficha de ejemplo",
+              "1",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B80"
+            ],
+            [
+              "Alérgenos por utensilio compartido en la ficha de ejemplo",
+              "1",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B81"
+            ],
+            [
+              "Nota de la auditoría en el área de alérgenos en el pase",
+              "3,65",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!D10"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Sanidad se Presenta sin Avisar en Mitad del Servicio",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-02",
+            "MM-29"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos de control de la auditoría interna de cocina",
+              "50",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!B12"
+            ],
+            [
+              "Nota ponderada global de la última visita",
+              "3,54",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!D12"
+            ],
+            [
+              "Cumplimiento global sobre la escala",
+              "70,9 %",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!E12"
+            ],
+            [
+              "Escala máxima de puntuación de la auditoría",
+              "5",
+              "auditoria-interna-cocina.xlsx!Auditoría!D10"
+            ],
+            [
+              "Días tras los que el libro avisa de revisar el estado normativo",
+              "180",
+              "auditoria-interna-cocina.xlsx!Estado Normativo!B9"
+            ],
+            [
+              "Aviso de revisión del estado normativo en la fecha del ejemplo",
+              "Revisión reciente",
+              "auditoria-interna-cocina.xlsx!Estado Normativo!B10"
+            ],
+            [
+              "Platos de la carta con ficha técnica cerrada",
+              "3",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C52"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Un Banquete de Ciento Veinte Personas: Qué Guardar, Cómo y Cuánto Tiempo",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-11"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Comensales del evento del caso",
+              "120",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D22"
+            ],
+            [
+              "Comensales a partir de los que obliga la comida testigo",
+              "40",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D7"
+            ],
+            [
+              "Alerta que enciende el libro para este evento",
+              "COMIDA TESTIGO OBLIGATORIA",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D26"
+            ],
+            [
+              "Gramos mínimos por elaboración guardada",
+              "100",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D8"
+            ],
+            [
+              "Días mínimos de conservación de la muestra",
+              "7",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D9"
+            ],
+            [
+              "Temperatura máxima en refrigeración de la muestra",
+              "4",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D10"
+            ],
+            [
+              "Elaboraciones del menú del evento",
+              "6",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D55"
+            ],
+            [
+              "Muestras testigo registradas del evento",
+              "6",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D54"
+            ],
+            [
+              "Muestras que faltan por tomar",
+              "0",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D56"
+            ],
+            [
+              "Muestras con aviso de doble toma",
+              "0",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D60"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "El Pase se Descontrola un Viernes: Cuarenta Comandas y Veinticinco Minutos",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-10"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Tiempo medio de pase de principales en el año del caso",
+              "16,5",
+              "cuadro-de-mando-cocina.xlsx!Semana!AH57"
+            ],
+            [
+              "Objetivo de la casa para el pase de principales",
+              "18",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!B30"
+            ],
+            [
+              "Tiempo medio de pase de entrantes en el año",
+              "8,6",
+              "cuadro-de-mando-cocina.xlsx!Semana!AG57"
+            ],
+            [
+              "Platos devueltos en el año del caso",
+              "221",
+              "cuadro-de-mando-cocina.xlsx!Semana!AO57"
+            ],
+            [
+              "Platos retrabajados en el año del caso",
+              "516",
+              "cuadro-de-mando-cocina.xlsx!Semana!AP57"
+            ],
+            [
+              "Devueltos y retrabajados por base de cubiertos en el año",
+              "15,8",
+              "cuadro-de-mando-cocina.xlsx!Semana!AQ57"
+            ],
+            [
+              "Muestreos del pase hechos en el periodo",
+              "30",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D53"
+            ],
+            [
+              "Temperatura de emplatado más baja del muestreo",
+              "6,0",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D56"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "El Plato Estrella Sale Distinto Según Quién Esté de Turno",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-06"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Nombre del plato de la ficha de ejemplo",
+              "Solomillo de cerdo ibérico con puré de boniato",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B7"
+            ],
+            [
+              "Versión actual de la ficha de ejemplo",
+              "1.2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B11"
+            ],
+            [
+              "Raciones vendidas al mes del plato de ejemplo",
+              "340",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B17"
+            ],
+            [
+              "Coste por ración copiado del escandallo",
+              "5,67 €",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B16"
+            ],
+            [
+              "Punto de cocción escrito en la ficha",
+              "Al punto: 58 °C en el centro de la pieza tras el reposo",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B46"
+            ],
+            [
+              "Cumplimiento de ficha técnica en el pase, medido",
+              "86,7 %",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D52"
+            ],
+            [
+              "Objetivo de cumplimiento de ficha de la casa",
+              "90,0 %",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!E52"
+            ],
+            [
+              "Muestreos no conformes con la ficha",
+              "4",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D54"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "La Merma de la Partida de Fríos se Dispara Tres Semanas Seguidas",
+          "tablas": 1,
+          "sector_usado": [],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Merma global de la cocina en el año del caso",
+              "3,7 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF57"
+            ],
+            [
+              "Merma del año de la partida de fríos y entrantes",
+              "5,1 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!X57"
+            ],
+            [
+              "Merma de esa partida en la peor de las tres semanas",
+              "9,2 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!X37"
+            ],
+            [
+              "Merma global de la cocina en esa misma semana",
+              "4,9 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF37"
+            ],
+            [
+              "Cubiertos servidos en esa semana",
+              "809",
+              "cuadro-de-mando-cocina.xlsx!Semana!D37"
+            ],
+            [
+              "Indicadores fuera de objetivo en esa semana",
+              "4",
+              "cuadro-de-mando-cocina.xlsx!Semana!AR37"
+            ],
+            [
+              "Kilos de materia prima neta por ración de esa partida",
+              "0,22",
+              "cuadro-de-mando-cocina.xlsx!Parámetros!C16"
+            ],
+            [
+              "Merma total del año en kilos",
+              "617",
+              "cuadro-de-mando-cocina.xlsx!Semana!V57"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Se Cae la Cámara un Domingo por la Noche",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-10",
+            "CE-13",
+            "CE-16"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Temperatura máxima en refrigeración de la muestra testigo",
+              "4",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D10"
+            ],
+            [
+              "Temperatura máxima en congelación de la muestra testigo",
+              "-18",
+              "banquetes-comidas-testigo.xlsx!Registro de Comidas Testigo!D11"
+            ],
+            [
+              "Temperatura mínima de mantenimiento en caliente del muestreo",
+              "63",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D58"
+            ],
+            [
+              "Vida útil del puré de la ficha de ejemplo, en días",
+              "3",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D88"
+            ],
+            [
+              "Vida útil de la salsa de la ficha de ejemplo, en días",
+              "4",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D89"
+            ],
+            [
+              "Vida útil de la pieza racionada de la ficha de ejemplo, en días",
+              "2",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!D91"
+            ],
+            [
+              "Días tras los que el libro avisa de revisar el estado normativo",
+              "180",
+              "auditoria-interna-cocina.xlsx!Estado Normativo!B9"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Un Cocinero se Corta con la Cortadora de Fiambre",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-23",
+            "CE-25",
+            "CE-26",
+            "CE-27",
+            "CE-28"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Puntos de control del área de prevención de riesgos",
+              "10",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!B9"
+            ],
+            [
+              "Peso del área de prevención de riesgos",
+              "26",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!C9"
+            ],
+            [
+              "Nota de la última visita en el área de prevención de riesgos",
+              "3,85",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!D9"
+            ],
+            [
+              "Cumplimiento del área de prevención de riesgos",
+              "76,9 %",
+              "auditoria-interna-cocina.xlsx!Resumen por Área!E9"
+            ],
+            [
+              "Escala máxima de puntuación de la auditoría",
+              "5",
+              "auditoria-interna-cocina.xlsx!Auditoría!D10"
+            ],
+            [
+              "Umbral de aviso crítico de la auditoría",
+              "2",
+              "auditoria-interna-cocina.xlsx!Auditoría!D12"
+            ],
+            [
+              "Personas de la brigada de cocina",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F39"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "El Plato que Sale por la Puerta: Delivery y Take-away desde la Cocina",
+          "tablas": 1,
+          "sector_usado": [
+            "CE-10",
+            "MM-38",
+            "CE-06"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Temperatura mínima de mantenimiento en caliente del muestreo",
+              "63",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D58"
+            ],
+            [
+              "Temperatura de emplatado más alta del muestreo",
+              "79,0",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D57"
+            ],
+            [
+              "Temperatura de emplatado más baja del muestreo",
+              "6,0",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D56"
+            ],
+            [
+              "Muestras de elaboraciones que se mantienen en caliente",
+              "4",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D59"
+            ],
+            [
+              "De ellas, por debajo del mínimo de mantenimiento en caliente",
+              "1",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D60"
+            ],
+            [
+              "Temperatura mínima de mantenimiento en caliente de la ficha",
+              "63",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B47"
+            ],
+            [
+              "Minutos de pase de la ficha de ejemplo",
+              "9",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B41"
+            ],
+            [
+              "Platos de la carta registrados en el índice de fichas",
+              "14",
+              "ficha-tecnica-proceso.xlsx!Índice de Fichas!C56"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "El Propietario Quiere Quitar de la Carta un Plato que a Ti te da Margen",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-14"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Nombre del plato de la ficha de ejemplo",
+              "Solomillo de cerdo ibérico con puré de boniato",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B7"
+            ],
+            [
+              "Partida que lo produce",
+              "Pase y caliente",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B9"
+            ],
+            [
+              "Raciones vendidas al mes del plato de ejemplo",
+              "340",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B17"
+            ],
+            [
+              "Coste por ración copiado del escandallo",
+              "5,67 €",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B16"
+            ],
+            [
+              "Coste de materia prima al mes del plato de ejemplo",
+              "1.927,80 €",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B18"
+            ],
+            [
+              "Minutos de elaboración previa de la ficha de ejemplo",
+              "45",
+              "ficha-tecnica-proceso.xlsx!Ficha (ejemplo)!B40"
+            ],
+            [
+              "Comprobación de la fila del precio de venta en la matriz de decisiones",
+              "Correcta",
+              "brigada-puestos-y-evaluacion.xlsx!Matriz RACI!J13"
+            ],
+            [
+              "Pruebas de plato registradas en total",
+              "8",
+              "desarrollo-carta-control-calidad.xlsx!Registro de Pruebas de Plato!C39"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Un Cocinero Asciende a Jefe de Cocina: los Primeros Treinta Días",
+          "tablas": 1,
+          "sector_usado": [
+            "MM-14",
+            "CONV-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas de la brigada de cocina",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Organigrama!F39"
+            ],
+            [
+              "Personas encuadradas en los puestos del convenio",
+              "6",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G16"
+            ],
+            [
+              "Personas en el puesto de jefe o jefa de cocina",
+              "1",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G6"
+            ],
+            [
+              "Personas en el puesto de segundo o segunda de cocina",
+              "0",
+              "brigada-puestos-y-evaluacion.xlsx!Fichas de Puesto!G7"
+            ],
+            [
+              "Personas evaluadas en la rúbrica de competencias",
+              "8",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M46"
+            ],
+            [
+              "Media ponderada de la brigada evaluada",
+              "3,53",
+              "brigada-puestos-y-evaluacion.xlsx!Rúbrica de Competencias!M47"
+            ],
+            [
+              "Merma global de la cocina en el año del caso",
+              "3,7 %",
+              "cuadro-de-mando-cocina.xlsx!Semana!AF57"
+            ],
+            [
+              "Cumplimiento de ficha técnica en el pase, medido",
+              "86,7 %",
+              "desarrollo-carta-control-calidad.xlsx!Control de Calidad del Pase!D52"
+            ],
+            [
+              "Horas de cocina por cubierto en el año",
+              "0,25",
+              "cuadro-de-mando-cocina.xlsx!Semana!AN57"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

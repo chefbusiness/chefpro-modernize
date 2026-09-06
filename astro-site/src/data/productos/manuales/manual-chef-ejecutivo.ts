@@ -57,13 +57,11 @@ const data: GuiaData = {
     subtitleLine: 'Brigada, producción, estándares y seguridad alimentaria: el criterio de quien dirige la cocina, no de quien la cocina',
     description: 'El Manager lleva el negocio. El Chef Ejecutivo lleva la cocina. Si diriges las dos cosas, necesitas los dos. Éste es el de la cocina, y empieza por decir lo que no es: no te enseña a cocinar. Te da el sistema para que tu cocina funcione igual estés tú o no — quién hace qué en cada partida (estación), cuánto se produce cada día, cómo se estandariza un plato con una ficha técnica (receta estándar) que alguien sigue de verdad, y de qué respondes tú ante una inspección. Está escrito para el chef ejecutivo (chef corporativo, cuando dirige varias cocinas) y para el jefe de cocina (chef de cocina) que ya lleva el mando de una: una cocina, con las herramientas para comparar varias.',
     checkItems: [
-      // PAGINAS_MEDIDAS: sustituir por las medidas tras construir
-      'Manual completo PDF + DOCX editable (20 capítulos, 75 páginas)',
+      'Manual completo PDF + DOCX editable (20 capítulos, 96 páginas)',
       '7 herramientas Excel con fórmulas vivas: cuadro de mando de cocina, planificación de producción semanal, ficha técnica de proceso, brigada con puestos y evaluación, desarrollo de carta y control de calidad, banquetes y comidas testigo, y auditoría interna de cocina',
       'Temperaturas, alérgenos, vida útil, comidas testigo y prevención de riesgos en cocina: cada norma con su artículo, su enlace y la fecha en que se comprobó, el 6 de septiembre de 2026',
       'El marco legal explicado es el español; todos los parámetros viven en casillas editables para adaptarlos a tu país',
-      // PAGINAS_MEDIDAS: sustituir por las medidas tras construir
-      'Bonus: 12 situaciones resueltas en cocina (25 páginas)',
+      'Bonus: 12 situaciones resueltas en cocina (34 páginas)',
     ],
     ctaLabel: 'COMPRAR MANUAL — 65 EUR',
     avatarAltPrefix: 'Professional',
@@ -184,14 +182,12 @@ const data: GuiaData = {
     heading: 'Deja de Ser el Único Que Sabe Cómo Se Hace',
     subtitle: 'El criterio, las herramientas y los casos resueltos para que tu cocina salga igual estés tú o no.',
     items: [
-      // PAGINAS_MEDIDAS: sustituir por las medidas tras construir
-      'Manual completo PDF + DOCX (20 capítulos, 75 páginas)',
+      'Manual completo PDF + DOCX (20 capítulos, 96 páginas)',
       '7 herramientas Excel con fórmulas vivas',
       'Cuadro de mando de cocina con merma y producción por partida',
       'Ficha técnica de proceso, planificación de producción y desarrollo de carta',
       'Brigada con fichas de puesto y evaluación técnica, banquetes y auditoría interna',
-      // PAGINAS_MEDIDAS: sustituir por las medidas tras construir
-      'Bonus: 12 situaciones resueltas en cocina (25 páginas)',
+      'Bonus: 12 situaciones resueltas en cocina (34 páginas)',
     ],
     ctaLabel: 'SÍ, QUIERO EL MANUAL — 65 EUR',
   },

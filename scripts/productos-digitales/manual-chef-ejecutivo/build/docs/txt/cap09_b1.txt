@@ -1,0 +1,31 @@
+### Por qué esta lista es una propuesta de la casa y no un estándar
+
+Hay que decirlo cuanto antes: no existe un estándar publicado de indicadores de cocina en español. Lo que sigue es nuestra lista, con el porqué de cada indicador y el error típico que corrige cuando se calcula bien. Presentarla como una norma del sector sería exactamente lo que este manual critica en cualquier otro sitio: llamar estándar a lo que en realidad es la convención de quien la escribe. Se trata, pues, como lo que es: una propuesta de la casa que hay que contrastar contra la cocina propia antes de adoptarla, no un examen que se aprueba o se suspende.
+
+Cada uno de los siete indicadores viene con la trampa que corrige, no sólo con su fórmula. Un indicador bien elegido no es el que suena más profesional en una reunión, sino el que, calculado semana tras semana, obliga a mirar donde antes no se miraba. Si no cambia ninguna decisión, sobra, por muy de moda que esté en la prensa sectorial.
+
+### Los siete indicadores, uno a uno, con su error típico
+
+La merma por partida corrige el error de mirar sólo el total de la cocina, porque una partida compensa a otra y el problema real desaparece dentro del promedio. La merma global de La Encina cerró el año del caso en 3,7 %, cifra tranquilizadora que, tomada sola, no dice qué partida se descontrola ni cuál compensa a las demás; el desglose es lo que sirve, no el total.
+
+El tiempo de pase por familia de plato corrige el error de promediar todo el pase en una sola cifra, que mezcla un postre con un arroz y no significa nada para ninguno de los dos. La Encina registró un tiempo medio de pase de principales de 16,5 minutos en el año, dato que sólo dice algo leído por familia de plato.
+
+Las incidencias de alérgenos corrigen el error de contar sólo las que llegaron al cliente, que son justo las que menos enseñan: la que se detiene en cocina antes de salir señala dónde falla el proceso, y esa es la que hay que registrar. La Encina cerró el año con 0,32 incidencias de alérgenos por base de cubiertos, contra un objetivo de la casa de 0,50 fijado en la hoja de parámetros del cuadro de mando de cocina.
+
+Las horas de cocina por cubierto corrigen el error de alimentarlas con las horas del contrato en vez de con las fichadas de verdad: el contrato dice lo pactado, el registro dice lo que ha pasado. En el año del caso la cifra fue de 0,25 horas de cocina por cubierto, frente a un objetivo de la casa de 0,26.
+
+El cumplimiento de ficha corrige el error de preguntar si existe la ficha técnica en vez de si se ha seguido en el servicio de ese día. Una ficha archivada que nadie consulta no cumple nada; lo que hay que registrar es si la partida ha trabajado con ella delante.
+
+Los devueltos y retrabajados corrigen el error de registrar sólo la devolución del cliente, dejando fuera lo que se retrabaja dentro de cocina sin que la sala se entere. La Encina sumó 15,8 devueltos y retrabajados por base de cubiertos en el año, contra un objetivo conjunto de la casa de 22,0.
+
+La rotación de la brigada corrige el error de mezclarla con la de sala, que tiene otra dinámica, otros turnos y otras causas de salida, y diluye la lectura real de cocina dentro de una cifra de todo el restaurante.
+
+### Los que se venden como de cocina y son de sala, de marketing o de finanzas
+
+De las listas de indicadores «de cocina» que circulan por ahí, casi todos son en realidad de sala, de marketing o de finanzas: ticket medio, rotación de mesas, reseñas, ocupación. No son malos indicadores —cada uno tiene su sitio y su responsable—, pero no son del chef, y meterlos en el cuadro de mando de cocina sólo diluye la responsabilidad de quien de verdad puede actuar sobre ellos. El único que cruza de verdad la frontera es el food cost, y ni siquiera ese vive aquí: se mide en el cuadro de mando del Manual del Manager y se decide con el método de la Guía Food Cost.
+
+El semáforo de este cuadro de mando está en gris mientras la casilla del objetivo esté vacía, y eso es a propósito. Un semáforo que se enciende con un umbral que no ha decidido el propio chef no dice nada de su cocina: dice lo que alguien más consideró razonable para la suya, y encima acostumbra a discutir el umbral cada semana en lugar del resultado. El objetivo se decide una vez, se escribe en la hoja de parámetros y a partir de ahí no se negocia cada lunes.
+
+La lectura del año del caso lo demuestra: cerró con 0 indicadores fuera de objetivo, y la lectura automática del cuadro de mando resume el resultado con la frase «Año en objetivo». Pero esa frase esconde una advertencia de método: el total del año no es la media de las semanas, y una semana floja pesa exactamente lo que produjo. Un año en objetivo con una semana mala en temporada alta no cuenta lo mismo que uno con esa misma semana mala en temporada baja, aunque el semáforo final quede igual de verde en los dos casos.
+
+Y para que quede escrito sin ambigüedad: los números del dinero —food cost, labor cost, prime cost, ticket medio— son del Manual del Manager, caps. 2 y 3; aquí no aparece ninguno. Este cuadro de mando no tiene ni una columna financiera, y eso es deliberado: separa lo que decide el chef de lo que decide quien lleva las cuentas, para que ninguno invada el terreno del otro.

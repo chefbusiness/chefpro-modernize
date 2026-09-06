@@ -1,0 +1,35 @@
+### La situación
+
+Son las nueve y cuarto de un viernes cuando llega de sala el tercer aviso del mes sobre el mismo plato: hoy no está tan jugoso como el jueves. Ya había dos reseñas recientes con la misma queja: el plato más vendido de la carta (menú) no sabe igual según el día. Ninguna menciona un ingrediente ni una ración; las tres apuntan, sin saberlo, a un turno.
+
+El plato es el solomillo de cerdo ibérico con puré de boniato: vende 340 raciones al mes, con un coste por ración de 5,67 € copiado del escandallo (costeo). Su ficha técnica (receta estándar) está en la versión 1.2, la que se supone que sigue toda la brigada que pasa por esa partida, y dos personas la usan en días distintos. La pregunta que resuelve este capítulo no es quién cocina mejor, sino en qué paso concreto se separan de lo escrito y por qué la ficha no lo ha impedido.
+
+### Qué no hacer
+
+Sentar a las dos personas que se turnan la partida para que cada una explique cómo lo hace no resuelve nada: las dos describen su versión con seguridad, ninguna se reconoce apartándose de la ficha, y la reunión termina en una comparación de percepciones sin que nadie haya cocinado delante de nadie.
+
+Reescribir la ficha entera tampoco es la respuesta: casi siempre la diferencia vive en un solo paso, y rehacer el documento entero mezcla ese punto con el resto, que ya se cumple igual en las dos versiones.
+
+Decidir por gusto propio cuál de las dos formas es la buena, sin comparar ninguna con la ficha, convierte una desviación medible en una preferencia personal que no queda escrita en ningún sitio, y por eso vuelve a aparecer en cuanto cambia el turno.
+
+Y cambiar el plato de partida —moverlo a otra persona o a otra zona para no lidiar con el problema— no corrige la ficha: sólo traslada la misma variabilidad a quien lo reciba después.
+
+### Protocolo paso a paso
+
+- Hacer el plato dos veces, una con cada persona, con la ficha técnica delante y sin decir qué se está comprobando: si alguien sabe que se le observa, ajusta el gesto y el dato deja de servir.
+- Comparar cada ejecución paso a paso contra la ficha y anotar por escrito dónde se separan. El punto de cocción de la ficha —al punto: 58 °C en el centro de la pieza tras el reposo— es uno de los puntos de control que hay que verificar en las dos.
+- Pesar la ración resultante de cada ejecución.
+- Medir la temperatura de emplatado de las dos raciones al salir al pase (despacho).
+- Con esos datos delante, decidir cuál de las dos formas es la que se queda, escribirla en la ficha con una versión nueva, ya no la 1.2, y formar a las dos personas en el propio puesto, delante del plato, no en una reunión aparte.
+
+Lo que casi siempre aparece al terminar esta comparación es que el paso donde se separan las dos ejecuciones no estaba escrito en la ficha, o admitía las dos lecturas. No es un problema de disciplina: es un hueco de la ficha, y por eso la solución es una versión nueva del documento, no una advertencia a una de las dos personas.
+
+### La norma que aplica
+
+Aquí no hay ninguna obligación legal: qué versión se impone, qué punto de cocción se elige o cómo se organiza la partida es criterio de gestión de la casa, no un mandato de ninguna norma. Lo único que sí obliga es que, si el cambio afecta a algún ingrediente, cambie también la información de alérgenos que se ofrece al cliente. Los 14 alérgenos de declaración obligatoria siguen siéndolo también en platos que no llevan envase, y un cartel de «consulte al personal» no basta si detrás no hay un respaldo escrito o electrónico accesible, según el anexo II y el art. 44.1 del Reglamento (UE) 1169/2011, junto con el art. 6.5 del RD 126/2015 (comprobado el 6 de septiembre de 2026). Si el puré de boniato de una de las dos versiones lleva un ingrediente que la otra no lleva, esa diferencia deja de ser un matiz de cocina: es una ficha de alérgenos que hay que actualizar antes de servir la versión que se impone.
+
+### La herramienta y el guion
+
+La ficha de proceso, con sus pasos numerados y sus puntos de control marcados uno a uno, es donde se localiza la diferencia: el cuadro siguiente recoge esos pasos tal como quedan tras la comparación. El muestreo del pase permite comprobar después que la desviación ha desaparecido de verdad, no sólo sobre el papel: el cumplimiento de ficha técnica medido hasta ahora es del 86,7 % frente a un objetivo de la casa del 90,0 %, con 4 muestreos no conformes en el periodo revisado, y ese es el número que tiene que subir con la versión nueva en marcha. El índice de fichas es donde se sube la versión, con su fecha y la firma de quien la aprueba.
+
+Queda la parte que más se estropea si se hace mal: la conversación con quien no se queda con su forma de trabajar. No empieza con un reproche, empieza con un hecho: «He comparado las dos formas de hacer el solomillo contra la ficha, y a partir de hoy la que vamos a servir es esta; te la enseño paso a paso, aquí, para que la partida quede igual los dos días.» Dicha delante del plato y no en un despacho, describe qué versión se sirve, no quién lo hacía peor.

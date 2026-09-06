@@ -1,0 +1,17 @@
+### Elaboración y servicio en sitios distintos: dos testigos, no una
+
+Hay un supuesto dentro de esa obligación que agrava las cosas y que ni siquiera los cocineros que ya saben que deben guardar comida testigo tienen resuelto: el catering que elabora en un obrador y sirve en la casa del cliente, o el hotel que monta el banquete fuera de su cocina central. El artículo 30, apartado 9, del RD 1086/2020 (comprobado el 6 de septiembre de 2026) trata este caso aparte de la obligación general, y confundirlo con ella sale caro el día de la inspección.
+
+El error habitual en este supuesto es dar por buena una sola muestra, la de la cocina central, pensando que cubre también lo que se sirve fuera. No cubre. El apartado 9 exige que, cuando la elaboración y el servicio ocurren en establecimientos distintos, se recojan dos tomas, no una: quien elabora recoge su testigo en el momento más próximo a la salida del establecimiento, y quien sirve recoge el suyo, aparte, en el momento del propio servicio, cada uno con su fecha y su punto de conservación. La hoja de registro de comidas testigo del libro de banquetes y comidas testigo avisa en cuanto el evento queda marcado como de elaboración y servicio separados, precisamente para que esa segunda toma no dependa de que alguien se acuerde a media jornada de servicio.
+
+El evento de La Encina tiene 120 comensales y 6 elaboraciones en el menú, y las 6 llevan su muestra registrada: ninguna se queda sin la suya. El registro marca, para cada una, si el peso queda por debajo del gramaje mínimo y si la temperatura se sale de rango, con su fecha de toma y de destrucción autorizada; y calcula cuántos días faltan hasta poder destruir cada muestra, para que la brigada no la tire antes de tiempo ni la guarde eternamente.
+
+### Producir un banquete: del menú a las raciones por partida
+
+Producir un banquete es una cadena de conversiones: del menú se saca la ración por comensal de cada elaboración, de ahí cuántas raciones hay que producir en total, y de las raciones totales, las unidades que le tocan a cada partida. Quien salta un eslabón y calcula directamente «para tantos comensales, tanto» suele quedarse corto en la partida que menos peso tiene en el menú y sobrado en la que más.
+
+En el evento de La Encina, esa cadena termina en 600 raciones y 56 horas de personal repartidas entre las partidas implicadas. La hoja de producción y ficha de banquete del libro de banquetes y comidas testigo reparte esas raciones y esas horas entre cada partida y calcula el peso relativo de cada una: ese porcentaje le dice al jefe de cocina qué partida necesita refuerzo puntual y cuál puede seguir su servicio normal. Sin ese reparto, el refuerzo se decide a ojo, y a ojo casi siempre se refuerza la partida que grita más, no la que más produce.
+
+El resto de esa hoja son los hitos del evento, cada uno con su hora y su responsable, hasta las horas totales del evento, que junto a los comensales dan la cifra de horas de cocina por comensal con la que se dimensiona el turno siguiente. La regla que evita el desastre: el timing se escribe hacia atrás, desde la hora de servicio, no hacia adelante desde la hora en que empieza a llegar género o brigada. Escrito hacia adelante, el primer imprevisto de la mañana se come el margen del final; escrito hacia atrás, el margen que hay que proteger es el de la salida, la hora que no se puede mover.
+
+De ese servicio siempre sobra género, y con qué criterio se decide qué hacer con él es materia de cocina, no de sala: la respuesta completa, plato por plato, cierra este capítulo.

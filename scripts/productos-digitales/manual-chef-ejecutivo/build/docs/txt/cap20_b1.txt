@@ -1,0 +1,25 @@
+### Una cocina, con las herramientas para comparar varias
+
+Este pack está hecho para una cocina, y trae las herramientas para comparar varias. Si diriges cuatro cocinas no necesitas cuatro packs: necesitas los mismos indicadores medidos igual en las cuatro, y dos hojas donde ponerlos al lado. Eso es lo que cierra el manual.
+
+La trampa habitual del chef corporativo es duplicar herramientas por unidad y terminar comparando cosas distintas: una cocina mide la merma sobre producción y otra sobre compras, una audita con veinte puntos y otra con cincuenta, y la comparativa solo demuestra que nadie mide igual. La solución no es un pack por cocina: es que todas usen el mismo cuadro de mando y la misma auditoría, con las mismas casillas editables, y que el chef corporativo abra dos hojas donde ponerlas una al lado de otra.
+
+### Los mismos indicadores en todas las unidades: la comparativa del mes cerrado
+
+La hoja de comparativa entre unidades del cuadro de mando de cocina toma los mismos indicadores de cocina de cada unidad, los alinea por un mes cerrado y añade una fila con el estándar del grupo. A partir de ahí calcula, sin tocar una fórmula, la desviación de cada unidad contra ese estándar y el ranking entre las cocinas comparadas.
+
+El caso de La Encina lo enseña con tres unidades. El estándar del grupo para la merma global está fijado en 4,0 %. La unidad de referencia cierra el mes en 4,6 % de merma global, la segunda unidad en 3,8 % y la tercera en 5,4 %. La tercera, además, es la que más cubiertos ha servido en el mes: 4.180. Y aquí está la lectura que importa: la unidad que factura más cubiertos no es la que mejor va. De hecho es la que peor cierra la merma de las tres.
+
+La hoja también cuenta, para cada unidad, cuántos indicadores caen dentro del estándar. La unidad de referencia tiene 1 dentro de estándar; la segunda unidad tiene 5. Con esos recuentos calcula el ranking, y la unidad de referencia queda en la posición 2: ni la última ni la primera, en medio, con un solo indicador saneado.
+
+Esa posición no sirve para señalar: sirve para preguntar. Una unidad en la posición 2 con 1 solo indicador dentro de estándar no es una sentencia sobre el jefe de cocina que la lleva; es la pregunta que toca hacerle en la reunión de unidad: qué indicador falla, desde cuándo, y qué hace distinto la unidad que sí tiene 5 dentro de estándar. El ranking abre la conversación, no la cierra.
+
+### La misma auditoría, cocina por cocina
+
+La hoja de histórico por unidad del libro de auditoría interna de cocina hace con la auditoría lo que la hoja anterior hace con los indicadores: las mismas cinco áreas, los mismos cincuenta puntos y la misma escala en cada unidad, con la desviación de cada fila contra la media del grupo y contra el estándar que tú fijes.
+
+En el caso, la unidad de referencia cierra con una nota ponderada de auditoría de 3,54, igual que el estándar de grupo fijado para esta edición. Las otras dos filas de la hoja están en blanco a propósito: son las tuyas. Al replicar el pack en tus otras cocinas, las rellenas con las auditorías reales y la hoja devuelve la desviación de cada una contra la media del grupo.
+
+Que las mismas áreas y los mismos puntos se apliquen en todas las unidades no garantiza, por sí sola, que dos jefes de cocina midan igual: la rúbrica fija el qué, no el cómo se interpreta cada casilla. El error típico no es el jefe de cocina que puntúa bajo para forzar la mejora, sino el que puntúa alto por costumbre —«aquí siempre ha estado así»— y deja marcada una casilla sin revisar la práctica real que hay detrás. Eso solo se detecta calibrando: el chef corporativo audita en persona junto al jefe de cocina que después auditará solo, antes de dar por buena cualquier comparación entre unidades. Quién enseña después ese mismo criterio a cada brigada es la pieza que cierra el trabajo, y llega en el bloque siguiente.
+
+Hay, además, un límite a lo que la propia hoja puede igualar entre unidades: no todas parten del mismo punto de arranque. Una cocina recién abierta, con brigada sin rodar, admite leer la desviación con más margen que una unidad con una rutina ya asentada, aunque las mismas cincuenta casillas se apliquen en las dos y el estándar de grupo no cambie. Comparar la nota de la unidad más nueva con la de la más veterana como si el punto de partida fuera igual convierte una herramienta pensada para comparar en una fuente de agravios dentro del propio grupo, y leerla con ese matiz es tarea del chef corporativo, no del jefe de cocina que recibe la nota.

@@ -1,0 +1,33 @@
+### La situación
+
+Son las nueve y media de la noche en La Encina y el segundo plato de la mesa seis lleva ya un minuto en el pase (despacho): ración montada, salsa terminada, listo para subir. Sala llega con un aviso que no estaba en la comanda — la comensal del fondo es alérgica a los frutos secos, y la elaboración lleva triturados dentro de la salsa, no como guarnición que se pueda apartar. No hay retirada limpia posible: el fruto seco está disuelto en la base, no encima de ella.
+
+Este es el tipo de aviso que en La Encina se registra, no se resuelve de oído. En el año del caso la brigada acumula 15 incidencias de alérgenos en el cuadro de mando de cocina, con una gravedad máxima de 3 sobre una escala de cero a tres y una tasa de 0,32 incidencias por cada base de cubiertos servida. Lo que se decide en los siguientes treinta segundos define si esta comensal come algo seguro esta noche, y si el aviso entra en esa misma estadística o se pierde como un susto sin apuntar.
+
+### Qué no hacer
+
+Tres reacciones habituales, y las tres agravan el caso.
+
+- Retirar el fruto seco del plato ya montado y servirlo igual. Un alérgeno triturado y disuelto en una salsa no se separa a ojo en el pase; lo que queda conserva restos suficientes para desencadenar una reacción, aunque no se vea ni un trozo.
+- Preguntar a la partida «¿esto lleva frutos secos?» y quedarse con un «creo que no». Esa respuesta de memoria falla justo en lo que más importa: la traza o el utensilio compartido, no sólo el ingrediente que se ve en la receta.
+- Mandar el plato con la advertencia verbal al camarero, sin identificarlo de ninguna otra forma. Un plato reconocido sólo porque alguien lo recuerda es un plato que confunde a otro camarero o acaba en la mesa que no toca.
+
+### Protocolo paso a paso
+
+- El plato montado no se corrige: se descarta entero, salsa incluida, y se retira del pase sin que llegue a ninguna mesa.
+- Se consulta la ficha técnica (receta estándar) de esa elaboración, en concreto su tabla de alérgenos de proceso: ahí consta en qué punto entra cada alérgeno — como ingrediente, por traza o por utensilio compartido — y si esa misma ficha admite alguna sustitución.
+- Se elabora de nuevo con material limpio y reservado aparte: tabla, cuchillo, sartén y recipiente que no hayan tocado el alérgeno original, no los mismos enjuagados a prisa.
+- El plato nuevo sale identificado, con marca visible de qué alergia cubre, y se entrega en mano: de cocina a la mesa, o con un responsable de sala que lo lleve sin pasar por barra compartida.
+- Se registra la incidencia aunque el primer plato nunca haya llegado a la mesa. Lo que se mide no es el susto evitado, es el hueco del sistema que lo hizo posible.
+
+### La norma que aplica
+
+Aquí hay dos obligaciones legales, no una costumbre de la casa. La primera es la prohibición de cruzar alérgenos con el material de trabajo: el equipo, los recipientes y las superficies usados para transformar, manipular o almacenar un alérgeno no pueden reutilizarse con otros alimentos si no se han limpiado y comprobado que no quedan restos visibles. Es el punto 9 del capítulo IX del anexo II del Reglamento (CE) 852/2004, en la redacción del Reglamento (UE) 2021/382 — no es un capítulo dedicado a alérgenos, es una obligación dentro de las normas generales de higiene del sector.
+
+La segunda es la información al comensal. Los 14 alérgenos de declaración obligatoria tienen que constar también en el plato sin envasar, y un cartel de «consulte al personal» no basta por sí solo: necesita respaldo escrito o electrónico, accesible al personal, a quien inspecciona y a quien pregunta desde la mesa. Es el Reglamento (UE) 1169/2011, anexo II y artículo 44.1, junto con el artículo 6.5 del RD 126/2015, comprobado el 6 de septiembre de 2026.
+
+### La herramienta y el guion
+
+La ficha técnica de la elaboración, con su tabla de alérgenos de proceso, responde en segundos a lo que en el pase no se puede fiar a la memoria: en la ficha de ejemplo del pack hay 2 alérgenos que entran como ingrediente, 1 por traza y 1 por utensilio compartido, cada uno con su casilla y su posible sustitución, en el cuadro siguiente. El registro de incidencias del cuadro de mando es el otro lado de la herramienta: ahí es donde este aviso pasa a sumar en la tasa del año, la misma que ahora marca 0,32 frente a un objetivo de casa fijado en 0,50. La última auditoría interna, con nota de 3,65 en el área de alérgenos del pase, ya señalaba este como el punto donde conviene tener el guion preparado.
+
+Y el guion son dos frases, no un protocolo largo de explicar en caliente. A sala: «Dame cinco minutos, el plato se rehace desde cero por seguridad, no se sirve el que hay en el pase.» A la partida: «No es una revisión de tu trabajo, es el protocolo con cualquier alergia declarada: lo rehacemos limpio y seguimos.» La declaración de alérgenos de toda la carta (menú), plato a plato, no vive en este manual: esa tabla completa está en el Pack APPCC.
