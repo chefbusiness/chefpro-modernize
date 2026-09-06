@@ -1,0 +1,726 @@
+diff --git a/PAGOS_CRYPTO_NOWPAYMENTS.md b/PAGOS_CRYPTO_NOWPAYMENTS.md
+index 2f7daad..3215624 100644
+--- a/PAGOS_CRYPTO_NOWPAYMENTS.md
++++ b/PAGOS_CRYPTO_NOWPAYMENTS.md
+@@ -198,7 +198,17 @@ Copia local de la sesión en el scratchpad (`nowpayments-postman.json`, `nowpaym
+ - `GET /.netlify/functions/crypto-report?days=30[&format=csv][&purge_unpaid_before=YYYY-MM-DD]` con `x-admin-password` → JSON/CSV; `401`; `429`.
+ 
+ ## Env vars (site `aichefpro`, `ee5802cf-…`)
+-Secretas, scope `functions`: `NOWPAYMENTS_API_KEY`, `NOWPAYMENTS_IPN_SECRET`. No secretas: `NOWPAYMENTS_API_BASE` (default `https://api.nowpayments.io/v1`), `CRYPTO_PRODUCTS` (scope `functions` **y** `builds`; vacío = apagado; `all` = todos; o CSV de productIds), `CRYPTO_MIN_PAID_RATIO` (`0.95`), `CRYPTO_FIXED_RATE` (`0`), `CRYPTO_FEE_PAID_BY_USER` (`0`), `CRYPTO_SITE_URL` (default `https://aichef.pro`; en deploy preview, la URL del preview para `success_url`/`ipn_callback_url`). Ya existen en todos los contextos: `JWT_SECRET`, `RESEND_API_KEY`, `ADMIN_PASSWORD`.
++Secretas, scope `functions`: `NOWPAYMENTS_API_KEY`, `NOWPAYMENTS_IPN_SECRET`. No secretas: `NOWPAYMENTS_API_BASE` (default `https://api.nowpayments.io/v1`), `CRYPTO_PRODUCTS` (scope `functions` **y** `builds`; vacío = apagado; `all` = todos; o CSV de productIds), **`CRYPTO_PRODUCTS_EXCLUDE`** (scope `functions` **y** `builds`; CSV de productIds, **vacía por defecto**), `CRYPTO_MIN_PAID_RATIO` (`0.95`), `CRYPTO_FIXED_RATE` (`0`), `CRYPTO_FEE_PAID_BY_USER` (`0`), `CRYPTO_SITE_URL` (default `https://aichef.pro`; en deploy preview, la URL del preview para `success_url`/`ipn_callback_url`). Ya existen en todos los contextos: `JWT_SECRET`, `RESEND_API_KEY`, `ADMIN_PASSWORD`.
++
++### `CRYPTO_PRODUCTS_EXCLUDE` — la resta que sobrevive a `all` (2026-09-06)
++
++Al montar el botón en las 5 plantillas + el mega-pack, el interruptor pasa a `CRYPTO_PRODUCTS=all` y ahí **no hay forma de exceptuar nada**: o son los 46 o hay que volver a escribir el CSV entero cada vez que se añade un producto. `CRYPTO_PRODUCTS_EXCLUDE` es esa resta, y **se aplica SIEMPRE, también con `all`**; ante el empate (un id en las dos listas) manda la exclusión.
++
++- **Valor previsto en producción: `pro-prompts-ebook`.** Cuesta 9 € y está por debajo del mínimo por transacción de NOWPayments, así que su botón no debe pintarse ni con el interruptor abierto del todo.
++- Se apaga **por configuración, no quitándole el componente a su página**: el día que cambie el mínimo basta con vaciar la variable y redesplegar.
++- **Las dos capas la leen y normalizan igual** (`trim().toLowerCase()` de las entradas *y* del `productId`): `astro-site/src/lib/crypto-checkout.ts` en el build —decide si el botón llega siquiera al HTML— y `allowlist()` / `cryptoPermitido()` de `netlify/functions/crypto-checkout.ts` en runtime. Si sólo una la aplicara, el botón saldría en la página y el checkout respondería `403 product_not_enabled` al pulsarlo.
++- **Scope `builds` + `functions`, y redeploy obligatorio**: como con `CRYPTO_PRODUCTS`, cambiarla no surte efecto hasta el siguiente despliegue (la mitad del build queda cocida en el HTML).
++- Verificación: `python3 scripts/productos-digitales/gate-flujo-postpago.py --crypto-products all --crypto-exclude pro-prompts-ebook` recorre las 46 landings y exige 3 puertas donde toca y **cero rastro de `data-crypto`** en las excluidas.
+ 
+ ---
+ 
+diff --git a/astro-site/src/components/pages/GuiaLandingPage.astro b/astro-site/src/components/pages/GuiaLandingPage.astro
+index c1c8932..28db614 100644
+--- a/astro-site/src/components/pages/GuiaLandingPage.astro
++++ b/astro-site/src/components/pages/GuiaLandingPage.astro
+@@ -17,6 +17,11 @@
+ // FAQ, marquee de testimonios, formulario "¿ya compraste?") en <script> vanilla.
+ import type { GuiaData } from '../../data/productos/guias/types';
+ import Icon from '../Icon.astro';
++// Segunda puerta de pago (NOWPayments). Stripe sigue siendo el CTA dorado PRINCIPAL;
++// esto es el botón secundario para quien no tiene tarjeta internacional. Se pinta SÓLO
++// en los productos del allowlist `CRYPTO_PRODUCTS` (env, scope builds): en las demás
++// landings de la línea el componente no emite ni HTML ni CSS ni JS.
++import CryptoPayButton from '../CryptoPayButton.astro';
+ 
+ interface Props {
+   data: GuiaData;
+@@ -28,6 +33,15 @@ interface Props {
+ const { data, stripeLink } = Astro.props;
+ 
+ const canonical = `https://aichef.pro/${data.slug}`;
++
++// ---- Segunda puerta de pago (cripto) ----
++// El nombre que ve el comprador en el diálogo de pago es el TÍTULO del hero en texto
++// plano. Esta línea NO tiene `titlePost` ni `titleSubtitle` (ver GuiaData): lo que va
++// bajo el H1 es `subtitleLine`, y ahí hay una frase de VENTA —142 caracteres en
++// manual-manager-restaurante—, no el nombre del producto. `titlePre`+`titleGold` ya
++// identifica sin ambigüedad a los 10 de la línea (a diferencia de Tareas, donde los 19
++// comparten cabecera y por eso allí sí se le añade el oficio).
++const cryptoProductName = `${data.hero.titlePre}${data.hero.titleGold}`;
+ const avatarAlt = data.hero.avatarAltPrefix ?? 'Professional';
+ const bonusLayout = data.bonus.layout ?? 'split';
+ 
+@@ -245,6 +259,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
+       </div>
++      {/* Tercera puerta de pago (John, 2026-09-06: «deberían tenerlo todos»). Igual que en
++          el BuyBox, la tarjeta cripto es HERMANA del recuadro dorado, no hija: «¿por qué
++          dos diseños?». El separador «o» y la tarjeta azul los emite el componente, para
++          no tocar el HTML de las landings que la tienen apagada. */}
++      <CryptoPayButton
++        productId={data.slug}
++        productName={cryptoProductName}
++        priceLabel={data.pricing.price}
++        landingPath={`/${data.slug}`}
++        variant="hero"
++      />
+     </div>
+   </section>
+ 
+@@ -536,6 +561,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
+       </div>
++      {/* La tarjeta de cripto es HERMANA de la de Stripe, no hija: va FUERA del recuadro
++          dorado (John, 2026-09-06: «duplicar el cuadro de Stripe y colocar debajo otro
++          100 % cripto»). El separador «o» y el borde azul los emite el COMPONENTE, nunca
++          esta plantilla, para que las landings con la cripto apagada no cambien. */}
++      <CryptoPayButton
++        productId={data.slug}
++        productName={cryptoProductName}
++        priceLabel={data.pricing.price}
++        landingPath={`/${data.slug}`}
++        variant="buybox"
++      />
+     </div>
+   </section>
+ 
+@@ -619,6 +655,13 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+         <div class="flex flex-col items-center gap-2 mt-5">
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
++        <CryptoPayButton
++          productId={data.slug}
++          productName={cryptoProductName}
++          priceLabel={data.pricing.price}
++          landingPath={`/${data.slug}`}
++          variant="cta"
++        />
+       </div>
+     </div>
+   </section>
+diff --git a/astro-site/src/components/pages/KitExcelLandingPage.astro b/astro-site/src/components/pages/KitExcelLandingPage.astro
+index 8f212e8..7f897d6 100644
+--- a/astro-site/src/components/pages/KitExcelLandingPage.astro
++++ b/astro-site/src/components/pages/KitExcelLandingPage.astro
+@@ -16,6 +16,11 @@
+ // <script> vanilla. Idéntico enfoque y scaffold que KitTareasLandingPage.astro.
+ import type { KitExcelData } from '../../data/productos/kits/types';
+ import Icon from '../Icon.astro';
++// Segunda puerta de pago (NOWPayments). Stripe sigue siendo el CTA dorado PRINCIPAL;
++// esto es el botón secundario para quien no tiene tarjeta internacional. Se pinta SÓLO
++// en los productos del allowlist `CRYPTO_PRODUCTS` (env, scope builds): en las demás
++// landings de la línea el componente no emite ni HTML ni CSS ni JS.
++import CryptoPayButton from '../CryptoPayButton.astro';
+ 
+ interface Props {
+   data: KitExcelData;
+@@ -28,6 +33,15 @@ const { data, stripeLink } = Astro.props;
+ 
+ const canonical = `https://aichef.pro/${data.slug}`;
+ 
++// ---- Segunda puerta de pago (cripto) ----
++// El nombre que ve el comprador en el diálogo de pago = el <h1> del hero en TEXTO PLANO:
++// titlePre + titleGold + titlePost, y el subtítulo detrás de una raya cuando existe.
++// El subtítulo se recorta en el guion largo, como en la línea Tareas, para no arrastrar
++// la coletilla descriptiva ni encadenar dos rayas en el diálogo («… — para Eventos — 11
++// Entregables Profesionales» → «… — para Eventos»).
++const cryptoSubtitulo = data.hero.titleSubtitle ? ` — ${data.hero.titleSubtitle.split('—')[0].trim()}` : '';
++const cryptoProductName = `${data.hero.titlePre}${data.hero.titleGold}${data.hero.titlePost ?? ''}${cryptoSubtitulo}`;
++
+ // Los dos chips grises del AuthorSection. Default = variante acentuada (escandallos/appcc);
+ // inventario/gestion/plan pasan su variante VERBATIM vía data.authorBadges.
+ const authorBadges = data.authorBadges ?? ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'];
+@@ -263,6 +277,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
+       </div>
++      {/* Tercera puerta de pago (John, 2026-09-06: «deberían tenerlo todos»). Igual que en
++          el BuyBox, la tarjeta cripto es HERMANA del recuadro dorado, no hija: «¿por qué
++          dos diseños?». El separador «o» y la tarjeta azul los emite el componente, para
++          no tocar el HTML de las landings que la tienen apagada. */}
++      <CryptoPayButton
++        productId={data.slug}
++        productName={cryptoProductName}
++        priceLabel={data.pricing.price}
++        landingPath={`/${data.slug}`}
++        variant="hero"
++      />
+     </div>
+   </section>
+ 
+@@ -508,6 +533,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
+       </div>
++      {/* La tarjeta de cripto es HERMANA de la de Stripe, no hija: va FUERA del recuadro
++          dorado (John, 2026-09-06: «duplicar el cuadro de Stripe y colocar debajo otro
++          100 % cripto»). El separador «o» y el borde azul los emite el COMPONENTE, nunca
++          esta plantilla, para que las landings con la cripto apagada no cambien. */}
++      <CryptoPayButton
++        productId={data.slug}
++        productName={cryptoProductName}
++        priceLabel={data.pricing.price}
++        landingPath={`/${data.slug}`}
++        variant="buybox"
++      />
+     </div>
+   </section>
+ 
+@@ -587,6 +623,13 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+         <div class="flex flex-col items-center gap-2 mt-5">
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
++        <CryptoPayButton
++          productId={data.slug}
++          productName={cryptoProductName}
++          priceLabel={data.pricing.price}
++          landingPath={`/${data.slug}`}
++          variant="cta"
++        />
+       </div>
+     </div>
+   </section>
+diff --git a/astro-site/src/components/pages/PlanNegocioLandingPage.astro b/astro-site/src/components/pages/PlanNegocioLandingPage.astro
+index 5c1bef5..ce4ca2f 100644
+--- a/astro-site/src/components/pages/PlanNegocioLandingPage.astro
++++ b/astro-site/src/components/pages/PlanNegocioLandingPage.astro
+@@ -16,6 +16,11 @@
+ // scaffold/convenciones que KitExcelLandingPage.astro.
+ import type { PlanNegocioData } from '../../data/productos/planes/types';
+ import Icon from '../Icon.astro';
++// Segunda puerta de pago (NOWPayments). Stripe sigue siendo el CTA dorado PRINCIPAL;
++// esto es el botón secundario para quien no tiene tarjeta internacional. Se pinta SÓLO
++// en los productos del allowlist `CRYPTO_PRODUCTS` (env, scope builds): en las demás
++// landings de la línea el componente no emite ni HTML ni CSS ni JS.
++import CryptoPayButton from '../CryptoPayButton.astro';
+ 
+ interface Props {
+   data: PlanNegocioData;
+@@ -28,6 +33,15 @@ const { data, stripeLink } = Astro.props;
+ 
+ const canonical = `https://aichef.pro/${data.slug}`;
+ 
++// ---- Segunda puerta de pago (cripto) ----
++// El nombre que ve el comprador en el diálogo de pago = el <h1> del hero en TEXTO PLANO:
++// titlePre + titleGold + titlePost, y el subtítulo detrás de una raya cuando existe.
++// El subtítulo se recorta en el guion largo, como en la línea Tareas, para no arrastrar
++// la coletilla descriptiva ni encadenar dos rayas en el diálogo («… — para Eventos — 11
++// Entregables Profesionales» → «… — para Eventos»).
++const cryptoSubtitulo = data.hero.titleSubtitle ? ` — ${data.hero.titleSubtitle.split('—')[0].trim()}` : '';
++const cryptoProductName = `${data.hero.titlePre}${data.hero.titleGold}${data.hero.titlePost ?? ''}${cryptoSubtitulo}`;
++
+ // Los dos chips grises del AuthorSection. Default = el de bar-restaurante; cualquier producto
+ // que traiga otra pareja la pasa VERBATIM vía data.authorBadges.
+ const authorBadges = data.authorBadges ?? ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'];
+@@ -248,6 +262,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
+       </div>
++      {/* Tercera puerta de pago (John, 2026-09-06: «deberían tenerlo todos»). Igual que en
++          el BuyBox, la tarjeta cripto es HERMANA del recuadro dorado, no hija: «¿por qué
++          dos diseños?». El separador «o» y la tarjeta azul los emite el componente, para
++          no tocar el HTML de las landings que la tienen apagada. */}
++      <CryptoPayButton
++        productId={data.slug}
++        productName={cryptoProductName}
++        priceLabel={data.pricing.price}
++        landingPath={`/${data.slug}`}
++        variant="hero"
++      />
+     </div>
+   </section>
+ 
+@@ -493,6 +518,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
+       </div>
++      {/* La tarjeta de cripto es HERMANA de la de Stripe, no hija: va FUERA del recuadro
++          dorado (John, 2026-09-06: «duplicar el cuadro de Stripe y colocar debajo otro
++          100 % cripto»). El separador «o» y el borde azul los emite el COMPONENTE, nunca
++          esta plantilla, para que las landings con la cripto apagada no cambien. */}
++      <CryptoPayButton
++        productId={data.slug}
++        productName={cryptoProductName}
++        priceLabel={data.pricing.price}
++        landingPath={`/${data.slug}`}
++        variant="buybox"
++      />
+     </div>
+   </section>
+ 
+@@ -570,6 +606,13 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+         <div class="flex flex-col items-center gap-2 mt-5">
+           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+         </div>
++        <CryptoPayButton
++          productId={data.slug}
++          productName={cryptoProductName}
++          priceLabel={data.pricing.price}
++          landingPath={`/${data.slug}`}
++          variant="cta"
++        />
+       </div>
+     </div>
+   </section>
+diff --git a/astro-site/src/lib/crypto-checkout.ts b/astro-site/src/lib/crypto-checkout.ts
+index dfe2a1e..661ba29 100644
+--- a/astro-site/src/lib/crypto-checkout.ts
++++ b/astro-site/src/lib/crypto-checkout.ts
+@@ -10,13 +10,21 @@
+  *   - `all`           → encendido en todos los productos
+  *   - CSV de productIds (`kit-tareas-cafeteria,kit-escandallos`) → solo esos
+  *
+- * ⚠️ Scope en Netlify: la variable va declarada en scope **`functions` Y `builds`**.
++ * Y una segunda variable, `CRYPTO_PRODUCTS_EXCLUDE` (CSV de productIds, vacía por
++ * defecto), que se RESTA SIEMPRE — también con `all`. Existe porque hay exclusiones
++ * permanentes que no dependen de en qué fase del despliegue estemos: `pro-prompts-ebook`
++ * cuesta 9 € y está por debajo del mínimo por transacción de NOWPayments, así que su
++ * botón no debe pintarse ni con el interruptor en `all`. Se apaga por CONFIGURACIÓN, no
++ * quitándole el componente a su página: así el día que cambie el mínimo basta con vaciar
++ * la variable. Ante el empate manda la exclusión.
++ *
++ * ⚠️ Scope en Netlify: las DOS variables van declaradas en scope **`functions` Y `builds`**.
+  *   - `functions`, porque `crypto-checkout` vuelve a comprobar el allowlist en runtime
+  *     (el botón del HTML no es una autorización: la puerta la guarda el backend).
+  *   - `builds`, porque ESTE fichero se evalúa en el BUILD de Astro: el HTML sale ya con
+- *     el botón o ya sin él. Consecuencia práctica: **cambiar `CRYPTO_PRODUCTS` no surte
+- *     efecto hasta que se vuelve a desplegar el sitio** (redeploy en la nube, nunca build
+- *     local — regla térmica del Mac).
++ *     el botón o ya sin él. Consecuencia práctica: **cambiarlas no surte efecto hasta que
++ *     se vuelve a desplegar el sitio** (redeploy en la nube, nunca build local — regla
++ *     térmica del Mac).
+  *
+  * ⚠️ Acceso LITERAL a la variable, nunca `import.meta.env[clave]`: el acceso dinámico no
+  * lo puede sustituir Vite en build y devuelve `undefined` en producción (misma trampa
+@@ -38,6 +46,24 @@ function rawAllowlist(): string {
+   return typeof value === 'string' ? value.trim() : '';
+ }
+ 
++function rawExcludelist(): string {
++  const value = nodeEnv?.CRYPTO_PRODUCTS_EXCLUDE ?? import.meta.env.CRYPTO_PRODUCTS_EXCLUDE;
++  return typeof value === 'string' ? value.trim() : '';
++}
++
++/** CSV → conjunto de ids normalizados. MISMA normalización que el `productId`
++ *  (`trim().toLowerCase()`), y la misma que aplica `allowlist()` en
++ *  `netlify/functions/crypto-checkout.ts`: si las dos capas normalizaran distinto, el
++ *  botón podría salir en el HTML y el backend responder 403 al pulsarlo. */
++function comoConjunto(csv: string): Set<string> {
++  return new Set(
++    csv
++      .split(',')
++      .map((entry) => entry.trim().toLowerCase())
++      .filter(Boolean),
++  );
++}
++
+ /**
+  * ¿Este producto ofrece el pago en cripto?
+  *
+@@ -48,15 +74,16 @@ export function cryptoEnabledFor(productId: string): boolean {
+   const raw = rawAllowlist();
+   if (!raw) return false; // vacía o ausente = apagado
+ 
+-  const allowlist = raw.toLowerCase();
+-  if (allowlist === 'all') return true;
+-
+   const target = String(productId ?? '').trim().toLowerCase();
+   if (!target) return false;
+ 
+-  return allowlist
+-    .split(',')
+-    .map((entry) => entry.trim())
+-    .filter(Boolean)
+-    .includes(target);
++  // La exclusión se resta SIEMPRE, y se comprueba ANTES que `all`: es la única forma de
++  // que `CRYPTO_PRODUCTS=all` no encienda el eBook de 9 €, por debajo del mínimo de
++  // NOWPayments. Ante el empate (un id en las dos listas), manda la exclusión.
++  if (comoConjunto(rawExcludelist()).has(target)) return false;
++
++  const allowlist = raw.toLowerCase();
++  if (allowlist === 'all') return true;
++
++  return comoConjunto(allowlist).has(target);
+ }
+diff --git a/astro-site/src/pages/mega-pack-tareas.astro b/astro-site/src/pages/mega-pack-tareas.astro
+index 48d9486..70439be 100644
+--- a/astro-site/src/pages/mega-pack-tareas.astro
++++ b/astro-site/src/pages/mega-pack-tareas.astro
+@@ -18,6 +18,10 @@
+ //     porque BaseLayout centraliza OG en TODAS las rutas Astro (gates verdes previos).
+ import BaseLayout from '../layouts/BaseLayout.astro';
+ import Icon from '../components/Icon.astro';
++// Segunda puerta de pago (NOWPayments). Stripe sigue siendo el CTA verde PRINCIPAL;
++// esto es el botón secundario para quien no tiene tarjeta internacional. Se pinta SÓLO
++// si `mega-pack-tareas` está en el allowlist `CRYPTO_PRODUCTS` (env, scope builds).
++import CryptoPayButton from '../components/CryptoPayButton.astro';
+ 
+ const lang = 'es';
+ 
+@@ -25,6 +29,15 @@ const lang = 'es';
+ // para que Vite la inline en build.
+ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_MEGA_PACK_TAREAS || '#comprar';
+ 
++// ---- Segunda puerta de pago (cripto) ----
++// Página propia, sin ficha en src/data/productos: el productId no sale de `data.slug`
++// sino literal, y es el que verifica `landingPath()` de netlify/functions/crypto-checkout
++// (aquí se cumple la regla general: accessPath `/mega-pack-tareas-access` sin el sufijo).
++const cryptoProductId = 'mega-pack-tareas';
++const cryptoProductName = 'Mega Pack Tareas Recurrentes — Los 13 Kits en Un Solo Pack';
++// Mismo rótulo de precio que pintan el hero y el CTA de esta página.
++const cryptoPriceLabel = '89 EUR';
++
+ const kits = [
+   { name: 'Restaurante Casual', templates: 11, slug: '/kit-tareas' },
+   { name: 'Cafetería / Brunch', templates: 11, slug: '/kit-tareas-cafeteria' },
+@@ -185,6 +198,16 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+             <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+           </div>
+         </div>
++        {/* Segunda puerta de pago (John, 2026-09-06: «deberían tenerlo todos»). La tarjeta
++            cripto es HERMANA del recuadro verde, no hija. El separador «o» y la tarjeta
++            azul los emite el componente. */}
++        <CryptoPayButton
++          productId={cryptoProductId}
++          productName={cryptoProductName}
++          priceLabel={cryptoPriceLabel}
++          landingPath={`/${cryptoProductId}`}
++          variant="hero"
++        />
+       </div>
+     </section>
+ 
+@@ -264,6 +287,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+             <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+           </div>
+         </div>
++        {/* La tarjeta de cripto es HERMANA de la de Stripe, no hija: va FUERA del recuadro
++            de compra. Esta página no tiene `id="comprar"`, así que la variante `buybox`
++            —la ÚNICA que emite el <dialog> y el <script>— va en esta sección de compra;
++            el botón del hero la abre por `aria-controls`. */}
++        <CryptoPayButton
++          productId={cryptoProductId}
++          productName={cryptoProductName}
++          priceLabel={cryptoPriceLabel}
++          landingPath={`/${cryptoProductId}`}
++          variant="buybox"
++        />
+       </div>
+     </section>
+ 
+diff --git a/netlify/functions/crypto-checkout.ts b/netlify/functions/crypto-checkout.ts
+index 887b50f..a4204d1 100644
+--- a/netlify/functions/crypto-checkout.ts
++++ b/netlify/functions/crypto-checkout.ts
+@@ -30,6 +30,19 @@ import {
+ //   product_not_enabled (allowlist del piloto) → precio → pedido en el libro →
+ //   invoice (5 s, cero reintentos) → 200 {url, orderId}.
+ //
++// DOS VARIABLES DE ENTORNO deciden qué productos ofrecen cripto, y las DOS se
++// declaran en scope `functions` Y `builds` porque las leen las dos capas (aquí
++// en runtime; `astro-site/src/lib/crypto-checkout.ts` en el build, que es quien
++// decide si el botón sale siquiera en el HTML):
++//   · `CRYPTO_PRODUCTS`         — vacía = apagado en todo el sitio · `all` = los
++//                                 46 · CSV de productIds = sólo esos.
++//   · `CRYPTO_PRODUCTS_EXCLUDE` — CSV, vacía por defecto. Se RESTA SIEMPRE,
++//                                 también con `all`. Ahí vive `pro-prompts-ebook`:
++//                                 9 € no llegan al mínimo por transacción de
++//                                 NOWPayments. Ante el empate manda la exclusión.
++// Las dos capas normalizan igual (`trim().toLowerCase()`), o el botón podría
++// pintarse en el HTML y esta función responder 403 al pulsarlo.
++//
+ // EL PEDIDO SE ESCRIBE ANTES DE LLAMAR A NOWPAYMENTS, a propósito: si el IPN
+ // llegara antes de que volviéramos a escribir el invoiceId, el libro ya tiene
+ // producto, email e importe, que es lo único que hace falta para entregar.
+@@ -81,19 +94,50 @@ function flag(nombre: string): boolean {
+   return v === '1' || v === 'true';
+ }
+ 
+-/** Allowlist del piloto. Vacía o ausente = botón apagado en TODO el sitio
+- *  (interruptor de emergencia). `all` = los 46. Si no, CSV de productIds. */
+-export function allowlist(): { activa: boolean; todos: boolean; ids: Set<string> } {
+-  const raw = String(process.env.CRYPTO_PRODUCTS || '').trim();
+-  if (!raw) return { activa: false, todos: false, ids: new Set() };
+-  if (raw.toLowerCase() === 'all') return { activa: true, todos: true, ids: new Set() };
+-  const ids = new Set(
+-    raw
++/** CSV → conjunto de ids normalizados con `trim().toLowerCase()`. La MISMA
++ *  normalización que `cryptoEnabledFor` en `astro-site/src/lib/crypto-checkout.ts`
++ *  (que ya la hacía; aquí no, y esa asimetría podía pintar el botón en el HTML y
++ *  responder 403 al pulsarlo). Los 46 productIds son slugs en minúscula, así que
++ *  igualarlas no cambia ninguna decisión de hoy: cierra un desajuste futuro. */
++function comoConjunto(csv: string): Set<string> {
++  return new Set(
++    csv
+       .split(',')
+-      .map((s) => s.trim())
++      .map((s) => s.trim().toLowerCase())
+       .filter(Boolean),
+   );
+-  return { activa: ids.size > 0, todos: false, ids };
++}
++
++/** Allowlist del piloto. Vacía o ausente = botón apagado en TODO el sitio
++ *  (interruptor de emergencia). `all` = los 46. Si no, CSV de productIds.
++ *
++ *  `CRYPTO_PRODUCTS_EXCLUDE` (CSV, vacía por defecto) se RESTA SIEMPRE, también
++ *  con `all`: es donde vive `pro-prompts-ebook`, cuyos 9 € no llegan al mínimo por
++ *  transacción de NOWPayments. Ante el empate manda la exclusión. Las dos variables
++ *  van en scope `functions` Y `builds`; ésta es la mitad de runtime, y el botón del
++ *  HTML no es una autorización: la puerta la guarda esta función. */
++export function allowlist(): {
++  activa: boolean;
++  todos: boolean;
++  ids: Set<string>;
++  excluidos: Set<string>;
++} {
++  const excluidos = comoConjunto(String(process.env.CRYPTO_PRODUCTS_EXCLUDE || '').trim());
++  const raw = String(process.env.CRYPTO_PRODUCTS || '').trim();
++  if (!raw) return { activa: false, todos: false, ids: new Set(), excluidos };
++  if (raw.toLowerCase() === 'all') return { activa: true, todos: true, ids: new Set(), excluidos };
++  const ids = comoConjunto(raw);
++  return { activa: ids.size > 0, todos: false, ids, excluidos };
++}
++
++/** ¿La allowlist efectiva deja pasar este producto? Exclusión primero. */
++export function cryptoPermitido(
++  lista: { todos: boolean; ids: Set<string>; excluidos: Set<string> },
++  productId: string,
++): boolean {
++  const target = String(productId ?? '').trim().toLowerCase();
++  if (!target || lista.excluidos.has(target)) return false;
++  return lista.todos || lista.ids.has(target);
+ }
+ 
+ // ── Producto: etiqueta legible y landing ────────────────────────────────────
+@@ -267,8 +311,8 @@ export const handler: Handler = async (event) => {
+       return json(400, { error: 'consent_required' }, headers);
+     }
+ 
+-    // ── Allowlist del piloto ────────────────────────────────────────────────
+-    if (!lista.todos && !lista.ids.has(productId)) {
++    // ── Allowlist del piloto (menos las exclusiones permanentes) ────────────
++    if (!cryptoPermitido(lista, productId)) {
+       return json(403, { error: 'product_not_enabled' }, headers);
+     }
+ 
+diff --git a/scripts/productos-digitales/gate-flujo-postpago.py b/scripts/productos-digitales/gate-flujo-postpago.py
+index 3ef97df..5237eab 100644
+--- a/scripts/productos-digitales/gate-flujo-postpago.py
++++ b/scripts/productos-digitales/gate-flujo-postpago.py
+@@ -27,13 +27,25 @@ Checks:
+      los mismos productIds que PRODUCTS y coincide con sync-product-prices.py --check (fichas +
+      products-catalog.ts); existen las 4 functions (crypto-checkout, nowpayments-ipn,
+      crypto-order-status, crypto-report) y netlify/shared/{nowpayments,crypto-orders}.ts;
+-     LIVE: NOWPAYMENTS_API_KEY/IPN_SECRET armadas, CRYPTO_PRODUCTS/API_BASE informativas,
+-     contrato HTTP de las 3 functions públicas. Ver PAGOS_CRYPTO_NOWPAYMENTS.md.
++     LIVE: NOWPAYMENTS_API_KEY/IPN_SECRET armadas, CRYPTO_PRODUCTS/CRYPTO_PRODUCTS_EXCLUDE
++     (las dos en scope builds Y functions) y API_BASE, contrato HTTP de las 3 functions
++     públicas. Ver PAGOS_CRYPTO_NOWPAYMENTS.md.
++     E-f. (2026-09-06, sólo con --crypto-products) Las PUERTAS DE PAGO en el HTML de cada
++     una de las 46 landings, que es lo único que ve el comprador. Si el producto está en la
++     allowlist efectiva: 3 botones `data-crypto-open` (2 en mega-pack-tareas, que no tiene
++     CTA final), 1 solo `<dialog id="aicp-crypto-dialog-<productId>">` —lo emite la variante
++     buybox y las otras puertas lo comparten— y tantos `aria-controls` como botones. Si no
++     lo está: CERO rastros de `data-crypto`. El interruptor se aplica en el BUILD, así que
++     una env var correcta con un deploy viejo deja landings encendidas que no deberían.
+ 
+ Uso:
+   python3 scripts/productos-digitales/gate-flujo-postpago.py            # todo
+   python3 scripts/productos-digitales/gate-flujo-postpago.py --offline  # sin HTTP
+   python3 scripts/productos-digitales/gate-flujo-postpago.py --only kit-tareas-pasteleria
++  python3 scripts/productos-digitales/gate-flujo-postpago.py \
++      --crypto-products all --crypto-exclude pro-prompts-ebook       # puertas cripto
++  python3 scripts/productos-digitales/gate-flujo-postpago.py --base https://deploy-preview-78--aichefpro.netlify.app \
++      --crypto-products kit-tareas-cafeteria                          # contra un preview
+ Salida: tabla por producto + lista de fallos; exit 1 si hay fallos.
+ """
+ import argparse
+@@ -174,13 +186,61 @@ def check_validacion_y_webhook(vp, offline):
+ CRYPTO_FUNCTIONS = ('crypto-checkout', 'nowpayments-ipn', 'crypto-order-status', 'crypto-report')
+ CRYPTO_SHARED = ('netlify/shared/nowpayments.ts', 'netlify/shared/crypto-orders.ts')
+ 
++# ── Puertas de pago cripto esperadas en el HTML de cada landing ──────────────
++# CryptoPayButton.astro emite UN botón por punto de compra y UN SOLO <dialog> —lo pinta
++# la variante `buybox`— que las tres puertas comparten por `aria-controls`. Las 45
++# landings de plantilla (Tareas, Guías, Kits Excel, Planes) tienen 3 puntos de compra:
++# hero, BuyBox y CTA final.
++CRYPTO_PUERTAS_DEFAULT = 3
++# EXCEPCIONES por ESTRUCTURA de la página, no por descuido. Se listan aquí para que un
++# «2 en vez de 3» no pase como verde genérico ni salte como falso rojo:
++CRYPTO_PUERTAS = {
++    # Página propia, sin plantilla: sólo tiene hero + sección de compra («Final CTA»).
++    # No hay un tercer punto que no sea la StickyBar, que es un enlace a Stripe.
++    'mega-pack-tareas': 2,
++}
++
++# `data-crypto-open` aparece 4 veces en el HTML de una landing encendida: 3 como ATRIBUTO
++# de los botones y 1 dentro del `querySelectorAll('[data-crypto-open]')` del script. Sin
++# excluir la del selector el gate contaría 4 y daría rojo con el HTML correcto.
++RE_CRYPTO_OPEN = re.compile(r'(?<![\[\w-])data-crypto-open(?=[\s/>])')
++
++
++def crypto_allowlist_efectiva(productos, excluidos):
++    """Réplica EXACTA de la decisión que toman las DOS capas: `cryptoEnabledFor()` en
++    `astro-site/src/lib/crypto-checkout.ts` (build) y `allowlist()`+`cryptoPermitido()`
++    en `netlify/functions/crypto-checkout.ts` (runtime).
++
++    Reglas: `CRYPTO_PRODUCTS` vacía o ausente = apagado en todo el sitio · `all` = todos ·
++    si no, CSV de productIds. `CRYPTO_PRODUCTS_EXCLUDE` (CSV) se RESTA SIEMPRE, también
++    con `all`, y ante el empate manda. Normalización `trim().lower()` en las entradas Y
++    en el productId, igual en las dos capas.
++    """
++    raw = (productos or '').strip()
++    exc = {s.strip().lower() for s in (excluidos or '').split(',') if s.strip()}
++    todos = raw.lower() == 'all'
++    ids = {s.strip().lower() for s in raw.split(',') if s.strip()}
++
++    def permitido(pid):
++        target = (pid or '').strip().lower()
++        if not raw or not target or target in exc:
++            return False
++        return todos or target in ids
++
++    return permitido
++
+ 
+-def check_pasarela_cripto(vp, offline):
++def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_exclude=None):
+     """Sección E — Pasarela cripto (NOWPayments). Devuelve (issues, warns, info).
+ 
+     Ver PAGOS_CRYPTO_NOWPAYMENTS.md § Especificación de implementación v1 (piloto).
+     Las 4 functions y netlify/shared/crypto-orders.ts pueden no existir todavía
+     (piloto en construcción): eso se reporta como issue, nunca como excepción.
++
++    Con `crypto_products` (argumento `--crypto-products`, mismo formato que la env) se
++    añade la comprobación (f): recorre el HTML LIVE de las landings de los 46 productos y
++    exige que las puertas de pago que hay en la página coincidan con la allowlist
++    efectiva. Sin ese argumento no se hace ninguna petición extra (comportamiento previo).
+     """
+     issues, warns, info = [], [], []
+     # (a) netlify/shared/product-prices.ts cubre EXACTAMENTE los productIds de PRODUCTS
+@@ -232,13 +292,31 @@ def check_pasarela_cripto(vp, offline):
+             elif 'functions' not in v['scopes']:
+                 issues.append(f"{key} sin scope 'functions'")
+         cp = (env.get('CRYPTO_PRODUCTS') or {}).get('value')
++        cx = (env.get('CRYPTO_PRODUCTS_EXCLUDE') or {}).get('value')
++        n_exc = len([p for p in (cx or '').split(',') if p.strip()])
+         if not cp or not cp.strip():
+             warns.append('CRYPTO_PRODUCTS vacío o inexistente: el botón de pago cripto está APAGADO en todos los productos')
+         elif cp.strip().lower() == 'all':
+-            info.append(f'CRYPTO_PRODUCTS = all (pasarela cripto activa en los {len(vp)} productos)')
++            info.append(f'CRYPTO_PRODUCTS = all (pasarela cripto activa en los {len(vp) - n_exc} productos '
++                        f'que quedan tras restar CRYPTO_PRODUCTS_EXCLUDE)')
+         else:
+             n = len([p for p in cp.split(',') if p.strip()])
+             info.append(f'CRYPTO_PRODUCTS = lista explícita de {n} producto(s)')
++        if n_exc:
++            info.append(f'CRYPTO_PRODUCTS_EXCLUDE = {n_exc} producto(s) restados SIEMPRE: {cx.strip()}')
++        else:
++            info.append('CRYPTO_PRODUCTS_EXCLUDE vacía o inexistente (no se resta ningún producto)')
++        # Las DOS variables las leen las DOS capas: el build decide si el botón sale en el
++        # HTML y la function si acepta el pago. Con una sola de ellas en scope `builds` el
++        # botón se pintaría y el checkout respondería 403 al pulsarlo — o al revés, un
++        # producto excluido seguiría enseñando su botón hasta el siguiente deploy.
++        for key in ('CRYPTO_PRODUCTS', 'CRYPTO_PRODUCTS_EXCLUDE'):
++            v = env.get(key)
++            if not v or not (v.get('value') or '').strip():
++                continue
++            faltan = [s for s in ('builds', 'functions') if s not in v['scopes']]
++            if faltan:
++                issues.append(f"{key} sin scope {faltan}: build y runtime decidirían distinto")
+         base = (env.get('NOWPAYMENTS_API_BASE') or {}).get('value')
+         if base:
+             info.append(f'NOWPAYMENTS_API_BASE = {base}')
+@@ -272,6 +350,51 @@ def check_pasarela_cripto(vp, offline):
+         issues.append('crypto-checkout LIVE → 404: la function no está desplegada')
+     else:
+         issues.append(f'crypto-checkout LIVE → {st3} (esperado 400/501/503): {body3[:80]!r}')
++
++    # (f) LIVE: las puertas de pago que hay REALMENTE en el HTML de cada landing.
++    # Es la única comprobación que ve lo que ve el comprador: el interruptor se aplica en
++    # el BUILD, así que una env var correcta con un deploy viejo deja landings encendidas
++    # que no deberían estarlo (y al revés). Se hace sólo si se pasa --crypto-products.
++    if crypto_products is None:
++        info.append('puertas cripto por landing SIN COMPROBAR: pásalas con --crypto-products '
++                    '(mismo formato que la env: vacío / all / CSV) y --crypto-exclude')
++        return issues, warns, info
++    if not zona:
++        warns.append('sin zona-app: no se pueden comprobar las puertas cripto por landing')
++        return issues, warns, info
++    permitido = crypto_allowlist_efectiva(crypto_products, crypto_exclude)
++    with cf.ThreadPoolExecutor(max_workers=8) as ex:
++        res = list(ex.map(lambda z: (z, http(BASE_URL + z['landingPath'])), zona))
++    n_on = n_off = 0
++    for z, (st_l, _ct, _cl, body_l) in res:
++        pid, path = z['productId'], z['landingPath']
++        if st_l != 200:
++            issues.append(f'{pid}: landing LIVE {path} → {st_l} (puerta cripto sin comprobar)')
++            continue
++        html = body_l.decode('utf-8', 'ignore')
++        did = f'aicp-crypto-dialog-{pid}'
++        n_open = len(RE_CRYPTO_OPEN.findall(html))
++        n_dialog = len(re.findall(r'<dialog\b[^>]*\bid="%s"' % re.escape(did), html))
++        n_aria = html.count(f'aria-controls="{did}"')
++        if permitido(pid):
++            n_on += 1
++            esperadas = CRYPTO_PUERTAS.get(pid, CRYPTO_PUERTAS_DEFAULT)
++            if n_open != esperadas:
++                issues.append(f'{pid}: {n_open} botones «data-crypto-open» en {path}, esperados {esperadas}')
++            if n_dialog != 1:
++                issues.append(f'{pid}: {n_dialog} <dialog id="{did}"> en {path}, esperado 1 '
++                              '(lo emite SÓLO la variante buybox y las otras puertas lo comparten)')
++            if n_aria != esperadas:
++                issues.append(f'{pid}: {n_aria} aria-controls="{did}" en {path}, esperados {esperadas} '
++                              '(un botón que no apunta a su diálogo se limita a llevar a #comprar)')
++        else:
++            n_off += 1
++            n_rastro = len(re.findall(r'data-crypto', html))
++            if n_rastro:
++                issues.append(f'{pid}: {n_rastro} rastros de «data-crypto» en {path} y NO está en la '
++                              'allowlist efectiva (¿deploy anterior al cambio de env?)')
++    info.append(f'puertas cripto en el HTML LIVE: {n_on} landing(s) con botón y {n_off} sin él, '
++                f'según --crypto-products={crypto_products!r} --crypto-exclude={(crypto_exclude or "")!r}')
+     return issues, warns, info
+ 
+ 
+@@ -409,12 +532,23 @@ def check_page(path, kind):
+ 
+ 
+ def main():
++    global BASE_URL
+     ap = argparse.ArgumentParser()
+     ap.add_argument('--offline', action='store_true')
+     ap.add_argument('--only', help='productId')
+     ap.add_argument('--json', help='ruta para volcar el informe JSON')
++    ap.add_argument('--base', help='base URL a auditar (default https://aichef.pro o $AICP_BASE_URL); '
++                                   'p. ej. la de un deploy preview')
++    ap.add_argument('--crypto-products', help='allowlist cripto a EXIGIR en el HTML, mismo formato que la env '
++                                              'CRYPTO_PRODUCTS: vacío / all / CSV de productIds. Sin este '
++                                              'argumento no se comprueban las puertas por landing.')
++    ap.add_argument('--crypto-exclude', default='', help='CSV de productIds que se restan SIEMPRE (env '
++                                                         'CRYPTO_PRODUCTS_EXCLUDE), también con all')
+     args = ap.parse_args()
+ 
++    if args.base:
++        BASE_URL = args.base.rstrip('/')
++
+     zona = parse_zona_app()
+     vp = parse_products_map('netlify/functions/verify-purchase.ts')
+     ra = parse_products_map('netlify/functions/resend-access.ts')
+@@ -535,7 +669,9 @@ def main():
+     fails.extend(d_issues)
+     warns.extend(d_warns)
+     # E. pasarela cripto NOWPayments (transversal, no por producto)
+-    e_issues, e_warns, e_info = check_pasarela_cripto(vp, args.offline)
++    e_issues, e_warns, e_info = check_pasarela_cripto(
++        vp, args.offline, zona=zona,
++        crypto_products=args.crypto_products, crypto_exclude=args.crypto_exclude)
+     print('\nPasarela cripto (NOWPayments):')
+     for i in e_info:
+         print(f'    · {i}')
