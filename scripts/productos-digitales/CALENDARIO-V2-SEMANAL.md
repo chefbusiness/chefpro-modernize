@@ -223,3 +223,4 @@ semana una semana. Primer lanzamiento realista: **Guía Food Cost + Ingeniería 
   `auditorias/capa-comercial-inventario-2026-08-29.json`.
 - Mega-pack: ¿se amplía con los 6 kits CB? · Licencia del kit de inventario · Webhook Stripe / `PURCHASE_VALIDATION` strict · Marca CB en 7 productos
   (deliberada) · Nombre del enlace «Kit Gestión Personal» vs página «Kit Gestión de Personal y Turnos».
+- **Pasarela cripto (NOWPayments)**: piloto + rediseño UX en producción en `kit-tareas-cafeteria` (6-sep). **Pago real de prueba ~8-sep** (John, wallet con USDT) → si el circuito pago→IPN→email→dashboard cierra, réplica a los 45 productos (diff listo en `.claude/worktrees/agent-a0b26e4cbb20410c2`, ver `PAGOS_CRYPTO_NOWPAYMENTS.md`) + `CRYPTO_PRODUCTS=all` y `CRYPTO_PRODUCTS_EXCLUDE=pro-prompts-ebook` en producción. Pendientes de John: sección legal de compra digital en `/terminos`, botón «Continuar al pago» deshabilitado o no, moneda de liquidación.

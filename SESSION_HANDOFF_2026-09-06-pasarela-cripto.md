@@ -6,7 +6,7 @@
 
 **Rediseño UX EN PRODUCCIÓN desde las 03:12** (PR #79 + `ad5bce5` + `a989f39`): hero integrado, BuyBox con dos tarjetas, botón «PAGAR CON CRIPTO — €12», un diálogo por página, 22 hallazgos de la revisión adversarial aplicados. **Réplica al resto de productos EN ESPERA** por decisión de John («probamos primero el pago»): diff preparado y sin aplicar en el worktree `.claude/worktrees/agent-a0b26e4cbb20410c2` (detalle y trampa del hero en `PAGOS_CRYPTO_NOWPAYMENTS.md` → «Estado 6-sep 03:20»).
 
-**Bloqueado por John:** el pago real de prueba de 12 € (necesita cargar una wallet) y la decisión sobre el eBook de 9 € (por debajo del mínimo de NOWPayments) y la moneda de liquidación.
+**Bloqueado por John:** el pago real de prueba de 12 € (**previsto ~8-sep-2026**: necesita una wallet con USDT) y la decisión sobre el eBook de 9 € (por debajo del mínimo de NOWPayments) y la moneda de liquidación.
 
 **Cómo se verifica (nunca en local):** `python3 scripts/productos-digitales/gate-flujo-postpago.py` (sección E), `node --experimental-strip-types scripts/productos-digitales/tests/nowpayments-sig.test.ts` (42/42), curl contra producción o el preview (contratos en el doc), logs con `netlify logs --url https://<deploy_id>--aichefpro.netlify.app --source functions --function <nombre> --since 30m`.
 
