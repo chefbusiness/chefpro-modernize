@@ -1,0 +1,726 @@
+{
+ "fichero": "cuadro-de-mando-cocina.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "semanas_malas": [
+  7,
+  33,
+  34,
+  35
+ ],
+ "mes_comparativa": {
+  "anio": 2026,
+  "mes": 8,
+  "semanas": [
+   32,
+   33,
+   34,
+   35
+  ]
+ },
+ "hojas": {
+  "Parámetros": {
+   "celdas": {
+    "Nombre de la cocina de ejemplo": "B5",
+    "Tipo de carta del caso": "B6",
+    "Partidas activas del caso": "B7",
+    "Base de las tasas por cubiertos": "B8",
+    "Objetivo de tiempo de pase de entrantes": "B29",
+    "Objetivo de tiempo de pase de principales": "B30",
+    "Objetivo de tiempo de pase de postres": "B31",
+    "Objetivo de incidencias de alérgenos por base": "B32",
+    "Objetivo de horas de cocina por cubierto": "B33",
+    "Objetivo de platos devueltos por base": "B34",
+    "Objetivo de platos retrabajados por base": "B35",
+    "Objetivo conjunto de devueltos y retrabajados": "B36",
+    "Nombre de la partida 1": "A15",
+    "Kg por ración de Pase y caliente": "C15",
+    "Objetivo de merma de Pase y caliente": "D15",
+    "Nombre de la partida 2": "A16",
+    "Kg por ración de Fríos y entrantes": "C16",
+    "Objetivo de merma de Fríos y entrantes": "D16",
+    "Nombre de la partida 3": "A17",
+    "Kg por ración de Postres y panadería": "C17",
+    "Objetivo de merma de Postres y panadería": "D17",
+    "Nombre de la partida 4": "A18",
+    "Kg por ración de Barra y bebidas": "C18",
+    "Objetivo de merma de Barra y bebidas": "D18",
+    "Nombre de la partida 5": "A19",
+    "Nombre de la partida 6": "A20"
+   },
+   "tablas": [
+    {
+     "titulo": "Las partidas de la cocina",
+     "cols": [
+      [
+       "Partida",
+       "A",
+       "txt"
+      ],
+      [
+       "¿Produce raciones?",
+       "B",
+       "txt"
+      ],
+      [
+       "Kg de materia prima neta por ración",
+       "C",
+       "num"
+      ],
+      [
+       "Objetivo de merma (%)",
+       "D",
+       "pct1"
+      ],
+      [
+       "Qué produce",
+       "E",
+       "txt"
+      ]
+     ],
+     "filas": [
+      15,
+      20
+     ]
+    },
+    {
+     "titulo": "Objetivos de la casa",
+     "cols": [
+      [
+       "Indicador",
+       "A",
+       "txt"
+      ],
+      [
+       "Objetivo",
+       "B",
+       "num"
+      ],
+      [
+       "Unidad",
+       "C",
+       "txt"
+      ],
+      [
+       "Cómo se lee",
+       "D",
+       "txt"
+      ]
+     ],
+     "filas": [
+      29,
+      36
+     ]
+    }
+   ]
+  },
+  "Semana": {
+   "celdas": {
+    "Cubiertos del año": "D57",
+    "Raciones producidas en el año": "M57",
+    "Merma total del año (kg)": "V57",
+    "Materia prima producida en el año (kg)": "AE57",
+    "Merma global del año (%)": "AF57",
+    "Tiempo medio de pase de entrantes del año": "AG57",
+    "Tiempo medio de pase de principales del año": "AH57",
+    "Tiempo medio de pase de postres del año": "AI57",
+    "Incidencias de alérgenos del año": "AJ57",
+    "Gravedad máxima de alérgenos del año": "AK57",
+    "Incidencias de alérgenos por base del año": "AL57",
+    "Horas de cocina del año": "AM57",
+    "Horas de cocina por cubierto del año": "AN57",
+    "Platos devueltos del año": "AO57",
+    "Platos retrabajados del año": "AP57",
+    "Devueltos y retrabajados por base del año": "AQ57",
+    "Indicadores fuera de objetivo en el año": "AR57",
+    "Lectura del año": "AS57",
+    "Producción del año de Pase y caliente": "E57",
+    "Merma del año de Pase y caliente (kg)": "N57",
+    "Merma del año de Pase y caliente (%)": "W57",
+    "Producción del año de Fríos y entrantes": "F57",
+    "Merma del año de Fríos y entrantes (kg)": "O57",
+    "Merma del año de Fríos y entrantes (%)": "X57",
+    "Producción del año de Postres y panadería": "G57",
+    "Merma del año de Postres y panadería (kg)": "P57",
+    "Merma del año de Postres y panadería (%)": "Y57",
+    "Producción del año de Barra y bebidas": "H57",
+    "Merma del año de Barra y bebidas (kg)": "Q57",
+    "Merma del año de Barra y bebidas (%)": "Z57",
+    "Cubiertos de la semana 7": "D11",
+    "Merma global de la semana 7": "AF11",
+    "Pase de principales de la semana 7": "AH11",
+    "Horas de cocina por cubierto de la semana 7": "AN11",
+    "Devueltos y retrabajados por base de la semana 7": "AQ11",
+    "Indicadores fuera de objetivo de la semana 7": "AR11",
+    "Lectura de la semana 7": "AS11",
+    "Merma de Pase y caliente en la semana 7": "W11",
+    "Merma de Fríos y entrantes en la semana 7": "X11",
+    "Merma de Postres y panadería en la semana 7": "Y11",
+    "Merma de Barra y bebidas en la semana 7": "Z11",
+    "Cubiertos de la semana 33": "D37",
+    "Merma global de la semana 33": "AF37",
+    "Pase de principales de la semana 33": "AH37",
+    "Horas de cocina por cubierto de la semana 33": "AN37",
+    "Devueltos y retrabajados por base de la semana 33": "AQ37",
+    "Indicadores fuera de objetivo de la semana 33": "AR37",
+    "Lectura de la semana 33": "AS37",
+    "Merma de Pase y caliente en la semana 33": "W37",
+    "Merma de Fríos y entrantes en la semana 33": "X37",
+    "Merma de Postres y panadería en la semana 33": "Y37",
+    "Merma de Barra y bebidas en la semana 33": "Z37",
+    "Cubiertos de la semana 34": "D38",
+    "Merma global de la semana 34": "AF38",
+    "Pase de principales de la semana 34": "AH38",
+    "Horas de cocina por cubierto de la semana 34": "AN38",
+    "Devueltos y retrabajados por base de la semana 34": "AQ38",
+    "Indicadores fuera de objetivo de la semana 34": "AR38",
+    "Lectura de la semana 34": "AS38",
+    "Merma de Pase y caliente en la semana 34": "W38",
+    "Merma de Fríos y entrantes en la semana 34": "X38",
+    "Merma de Postres y panadería en la semana 34": "Y38",
+    "Merma de Barra y bebidas en la semana 34": "Z38",
+    "Cubiertos de la semana 35": "D39",
+    "Merma global de la semana 35": "AF39",
+    "Pase de principales de la semana 35": "AH39",
+    "Horas de cocina por cubierto de la semana 35": "AN39",
+    "Devueltos y retrabajados por base de la semana 35": "AQ39",
+    "Indicadores fuera de objetivo de la semana 35": "AR39",
+    "Lectura de la semana 35": "AS39",
+    "Merma de Pase y caliente en la semana 35": "W39",
+    "Merma de Fríos y entrantes en la semana 35": "X39",
+    "Merma de Postres y panadería en la semana 35": "Y39",
+    "Merma de Barra y bebidas en la semana 35": "Z39",
+    "Cubiertos de la semana 37": "D41",
+    "Merma global de la semana 37": "AF41",
+    "Pase de principales de la semana 37": "AH41",
+    "Horas de cocina por cubierto de la semana 37": "AN41",
+    "Devueltos y retrabajados por base de la semana 37": "AQ41",
+    "Indicadores fuera de objetivo de la semana 37": "AR41",
+    "Lectura de la semana 37": "AS41",
+    "Merma de Pase y caliente en la semana 37": "W41",
+    "Merma de Fríos y entrantes en la semana 37": "X41",
+    "Merma de Postres y panadería en la semana 37": "Y41",
+    "Merma de Barra y bebidas en la semana 37": "Z41"
+   },
+   "tablas": [
+    {
+     "titulo": "Las 52 semanas ISO de la cocina",
+     "cols": [
+      [
+       "Semana ISO",
+       "A",
+       "num"
+      ],
+      [
+       "Lunes de la semana",
+       "B",
+       "txt"
+      ],
+      [
+       "Mes",
+       "C",
+       "num"
+      ],
+      [
+       "Cubiertos servidos",
+       "D",
+       "num"
+      ],
+      [
+       "Producción partida 1 (raciones)",
+       "E",
+       "num"
+      ],
+      [
+       "Producción partida 2 (raciones)",
+       "F",
+       "num"
+      ],
+      [
+       "Producción partida 3 (raciones)",
+       "G",
+       "num"
+      ],
+      [
+       "Producción partida 4 (raciones)",
+       "H",
+       "num"
+      ],
+      [
+       "Producción partida 5 (raciones)",
+       "I",
+       "num"
+      ],
+      [
+       "Producción partida 6 (raciones)",
+       "J",
+       "num"
+      ],
+      [
+       "Producción partida 7 (raciones)",
+       "K",
+       "num"
+      ],
+      [
+       "Producción partida 8 (raciones)",
+       "L",
+       "num"
+      ],
+      [
+       "Raciones producidas (total)",
+       "M",
+       "num"
+      ],
+      [
+       "Merma partida 1 (kg)",
+       "N",
+       "num"
+      ],
+      [
+       "Merma partida 2 (kg)",
+       "O",
+       "num"
+      ],
+      [
+       "Merma partida 3 (kg)",
+       "P",
+       "num"
+      ],
+      [
+       "Merma partida 4 (kg)",
+       "Q",
+       "num"
+      ],
+      [
+       "Merma partida 5 (kg)",
+       "R",
+       "num"
+      ],
+      [
+       "Merma partida 6 (kg)",
+       "S",
+       "num"
+      ],
+      [
+       "Merma partida 7 (kg)",
+       "T",
+       "num"
+      ],
+      [
+       "Merma partida 8 (kg)",
+       "U",
+       "num"
+      ],
+      [
+       "Merma total (kg)",
+       "V",
+       "num"
+      ],
+      [
+       "Merma partida 1 (%)",
+       "W",
+       "pct1"
+      ],
+      [
+       "Merma partida 2 (%)",
+       "X",
+       "pct1"
+      ],
+      [
+       "Merma partida 3 (%)",
+       "Y",
+       "pct1"
+      ],
+      [
+       "Merma partida 4 (%)",
+       "Z",
+       "pct1"
+      ],
+      [
+       "Merma partida 5 (%)",
+       "AA",
+       "pct1"
+      ],
+      [
+       "Merma partida 6 (%)",
+       "AB",
+       "pct1"
+      ],
+      [
+       "Merma partida 7 (%)",
+       "AC",
+       "pct1"
+      ],
+      [
+       "Merma partida 8 (%)",
+       "AD",
+       "pct1"
+      ],
+      [
+       "Materia prima producida (kg)",
+       "AE",
+       "num"
+      ],
+      [
+       "Merma global de la cocina (%)",
+       "AF",
+       "pct1"
+      ],
+      [
+       "Pase de entrantes (min)",
+       "AG",
+       "num"
+      ],
+      [
+       "Pase de principales (min)",
+       "AH",
+       "num"
+      ],
+      [
+       "Pase de postres (min)",
+       "AI",
+       "num"
+      ],
+      [
+       "Incidencias de alérgenos",
+       "AJ",
+       "num"
+      ],
+      [
+       "Gravedad máxima (0 a 3)",
+       "AK",
+       "num"
+      ],
+      [
+       "Incidencias por base de cubiertos",
+       "AL",
+       "num"
+      ],
+      [
+       "Horas de cocina trabajadas",
+       "AM",
+       "num"
+      ],
+      [
+       "Horas de cocina por cubierto",
+       "AN",
+       "num"
+      ],
+      [
+       "Platos devueltos",
+       "AO",
+       "num"
+      ],
+      [
+       "Platos retrabajados",
+       "AP",
+       "num"
+      ],
+      [
+       "Devueltos y retrabajados por base",
+       "AQ",
+       "num"
+      ],
+      [
+       "Indicadores fuera de objetivo",
+       "AR",
+       "num"
+      ],
+      [
+       "Lectura de la semana",
+       "AS",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      57
+     ]
+    }
+   ]
+  },
+  "KPI y Definiciones": {
+   "celdas": {},
+   "tablas": [
+    {
+     "titulo": "Los siete KPI de cocina",
+     "cols": [
+      [
+       "Indicador",
+       "A",
+       "txt"
+      ],
+      [
+       "Cómo se calcula",
+       "B",
+       "txt"
+      ],
+      [
+       "Unidad",
+       "C",
+       "txt"
+      ],
+      [
+       "Error típico",
+       "D",
+       "txt"
+      ],
+      [
+       "Cadencia",
+       "E",
+       "txt"
+      ],
+      [
+       "Objetivo de la casa",
+       "F",
+       "txt"
+      ],
+      [
+       "De dónde sale el dato",
+       "G",
+       "txt"
+      ]
+     ],
+     "filas": [
+      5,
+      11
+     ]
+    }
+   ]
+  },
+  "Comparativa entre Unidades": {
+   "celdas": {
+    "Mes cerrado que se compara": "B5",
+    "Año de la comparativa": "B6",
+    "Estándar del grupo: Merma global (%)": "C12",
+    "Estándar del grupo: Pase de principales (min)": "D12",
+    "Estándar del grupo: Incidencias de alérgenos por base": "E12",
+    "Estándar del grupo: Horas de cocina por cubierto": "F12",
+    "Estándar del grupo: Platos devueltos por base": "G12",
+    "Cubiertos del mes de La Encina (unidad de referencia)": "B17",
+    "Merma global (%) de La Encina (unidad de referencia)": "C17",
+    "Pase de principales (min) de La Encina (unidad de referencia)": "D17",
+    "Incidencias de alérgenos por base de La Encina (unidad de referencia)": "E17",
+    "Horas de cocina por cubierto de La Encina (unidad de referencia)": "F17",
+    "Platos devueltos por base de La Encina (unidad de referencia)": "G17",
+    "Indicadores dentro del estándar de La Encina (unidad de referencia)": "N17",
+    "Posición de La Encina (unidad de referencia)": "O17",
+    "Cubiertos del mes de La Encina Norte": "B18",
+    "Merma global (%) de La Encina Norte": "C18",
+    "Pase de principales (min) de La Encina Norte": "D18",
+    "Incidencias de alérgenos por base de La Encina Norte": "E18",
+    "Horas de cocina por cubierto de La Encina Norte": "F18",
+    "Platos devueltos por base de La Encina Norte": "G18",
+    "Indicadores dentro del estándar de La Encina Norte": "N18",
+    "Posición de La Encina Norte": "O18",
+    "Cubiertos del mes de La Encina Playa": "B19",
+    "Merma global (%) de La Encina Playa": "C19",
+    "Pase de principales (min) de La Encina Playa": "D19",
+    "Incidencias de alérgenos por base de La Encina Playa": "E19",
+    "Horas de cocina por cubierto de La Encina Playa": "F19",
+    "Platos devueltos por base de La Encina Playa": "G19",
+    "Indicadores dentro del estándar de La Encina Playa": "N19",
+    "Posición de La Encina Playa": "O19"
+   },
+   "tablas": [
+    {
+     "titulo": "Comparativa entre unidades del mes cerrado",
+     "cols": [
+      [
+       "Unidad",
+       "A",
+       "txt"
+      ],
+      [
+       "Cubiertos del mes",
+       "B",
+       "num"
+      ],
+      [
+       "Merma global (%)",
+       "C",
+       "pct1"
+      ],
+      [
+       "Pase de principales (min)",
+       "D",
+       "num"
+      ],
+      [
+       "Incidencias de alérgenos por base",
+       "E",
+       "num"
+      ],
+      [
+       "Horas de cocina por cubierto",
+       "F",
+       "num"
+      ],
+      [
+       "Platos devueltos por base",
+       "G",
+       "num"
+      ],
+      [
+       "Indicadores dentro del estándar",
+       "N",
+       "num"
+      ],
+      [
+       "Posición",
+       "O",
+       "num"
+      ]
+     ],
+     "filas": [
+      17,
+      19
+     ]
+    }
+   ]
+  }
+ },
+ "referencias": {
+  "Nombre de la cocina de ejemplo": "Parámetros!B5",
+  "Tipo de carta del caso": "Parámetros!B6",
+  "Partidas activas del caso": "Parámetros!B7",
+  "Base de las tasas por cubiertos": "Parámetros!B8",
+  "Objetivo de tiempo de pase de entrantes": "Parámetros!B29",
+  "Objetivo de tiempo de pase de principales": "Parámetros!B30",
+  "Objetivo de tiempo de pase de postres": "Parámetros!B31",
+  "Objetivo de incidencias de alérgenos por base": "Parámetros!B32",
+  "Objetivo de horas de cocina por cubierto": "Parámetros!B33",
+  "Objetivo de platos devueltos por base": "Parámetros!B34",
+  "Objetivo de platos retrabajados por base": "Parámetros!B35",
+  "Objetivo conjunto de devueltos y retrabajados": "Parámetros!B36",
+  "Nombre de la partida 1": "Parámetros!A15",
+  "Kg por ración de Pase y caliente": "Parámetros!C15",
+  "Objetivo de merma de Pase y caliente": "Parámetros!D15",
+  "Nombre de la partida 2": "Parámetros!A16",
+  "Kg por ración de Fríos y entrantes": "Parámetros!C16",
+  "Objetivo de merma de Fríos y entrantes": "Parámetros!D16",
+  "Nombre de la partida 3": "Parámetros!A17",
+  "Kg por ración de Postres y panadería": "Parámetros!C17",
+  "Objetivo de merma de Postres y panadería": "Parámetros!D17",
+  "Nombre de la partida 4": "Parámetros!A18",
+  "Kg por ración de Barra y bebidas": "Parámetros!C18",
+  "Objetivo de merma de Barra y bebidas": "Parámetros!D18",
+  "Nombre de la partida 5": "Parámetros!A19",
+  "Nombre de la partida 6": "Parámetros!A20",
+  "Cubiertos del año": "Semana!D57",
+  "Raciones producidas en el año": "Semana!M57",
+  "Merma total del año (kg)": "Semana!V57",
+  "Materia prima producida en el año (kg)": "Semana!AE57",
+  "Merma global del año (%)": "Semana!AF57",
+  "Tiempo medio de pase de entrantes del año": "Semana!AG57",
+  "Tiempo medio de pase de principales del año": "Semana!AH57",
+  "Tiempo medio de pase de postres del año": "Semana!AI57",
+  "Incidencias de alérgenos del año": "Semana!AJ57",
+  "Gravedad máxima de alérgenos del año": "Semana!AK57",
+  "Incidencias de alérgenos por base del año": "Semana!AL57",
+  "Horas de cocina del año": "Semana!AM57",
+  "Horas de cocina por cubierto del año": "Semana!AN57",
+  "Platos devueltos del año": "Semana!AO57",
+  "Platos retrabajados del año": "Semana!AP57",
+  "Devueltos y retrabajados por base del año": "Semana!AQ57",
+  "Indicadores fuera de objetivo en el año": "Semana!AR57",
+  "Lectura del año": "Semana!AS57",
+  "Producción del año de Pase y caliente": "Semana!E57",
+  "Merma del año de Pase y caliente (kg)": "Semana!N57",
+  "Merma del año de Pase y caliente (%)": "Semana!W57",
+  "Producción del año de Fríos y entrantes": "Semana!F57",
+  "Merma del año de Fríos y entrantes (kg)": "Semana!O57",
+  "Merma del año de Fríos y entrantes (%)": "Semana!X57",
+  "Producción del año de Postres y panadería": "Semana!G57",
+  "Merma del año de Postres y panadería (kg)": "Semana!P57",
+  "Merma del año de Postres y panadería (%)": "Semana!Y57",
+  "Producción del año de Barra y bebidas": "Semana!H57",
+  "Merma del año de Barra y bebidas (kg)": "Semana!Q57",
+  "Merma del año de Barra y bebidas (%)": "Semana!Z57",
+  "Cubiertos de la semana 7": "Semana!D11",
+  "Merma global de la semana 7": "Semana!AF11",
+  "Pase de principales de la semana 7": "Semana!AH11",
+  "Horas de cocina por cubierto de la semana 7": "Semana!AN11",
+  "Devueltos y retrabajados por base de la semana 7": "Semana!AQ11",
+  "Indicadores fuera de objetivo de la semana 7": "Semana!AR11",
+  "Lectura de la semana 7": "Semana!AS11",
+  "Merma de Pase y caliente en la semana 7": "Semana!W11",
+  "Merma de Fríos y entrantes en la semana 7": "Semana!X11",
+  "Merma de Postres y panadería en la semana 7": "Semana!Y11",
+  "Merma de Barra y bebidas en la semana 7": "Semana!Z11",
+  "Cubiertos de la semana 33": "Semana!D37",
+  "Merma global de la semana 33": "Semana!AF37",
+  "Pase de principales de la semana 33": "Semana!AH37",
+  "Horas de cocina por cubierto de la semana 33": "Semana!AN37",
+  "Devueltos y retrabajados por base de la semana 33": "Semana!AQ37",
+  "Indicadores fuera de objetivo de la semana 33": "Semana!AR37",
+  "Lectura de la semana 33": "Semana!AS37",
+  "Merma de Pase y caliente en la semana 33": "Semana!W37",
+  "Merma de Fríos y entrantes en la semana 33": "Semana!X37",
+  "Merma de Postres y panadería en la semana 33": "Semana!Y37",
+  "Merma de Barra y bebidas en la semana 33": "Semana!Z37",
+  "Cubiertos de la semana 34": "Semana!D38",
+  "Merma global de la semana 34": "Semana!AF38",
+  "Pase de principales de la semana 34": "Semana!AH38",
+  "Horas de cocina por cubierto de la semana 34": "Semana!AN38",
+  "Devueltos y retrabajados por base de la semana 34": "Semana!AQ38",
+  "Indicadores fuera de objetivo de la semana 34": "Semana!AR38",
+  "Lectura de la semana 34": "Semana!AS38",
+  "Merma de Pase y caliente en la semana 34": "Semana!W38",
+  "Merma de Fríos y entrantes en la semana 34": "Semana!X38",
+  "Merma de Postres y panadería en la semana 34": "Semana!Y38",
+  "Merma de Barra y bebidas en la semana 34": "Semana!Z38",
+  "Cubiertos de la semana 35": "Semana!D39",
+  "Merma global de la semana 35": "Semana!AF39",
+  "Pase de principales de la semana 35": "Semana!AH39",
+  "Horas de cocina por cubierto de la semana 35": "Semana!AN39",
+  "Devueltos y retrabajados por base de la semana 35": "Semana!AQ39",
+  "Indicadores fuera de objetivo de la semana 35": "Semana!AR39",
+  "Lectura de la semana 35": "Semana!AS39",
+  "Merma de Pase y caliente en la semana 35": "Semana!W39",
+  "Merma de Fríos y entrantes en la semana 35": "Semana!X39",
+  "Merma de Postres y panadería en la semana 35": "Semana!Y39",
+  "Merma de Barra y bebidas en la semana 35": "Semana!Z39",
+  "Cubiertos de la semana 37": "Semana!D41",
+  "Merma global de la semana 37": "Semana!AF41",
+  "Pase de principales de la semana 37": "Semana!AH41",
+  "Horas de cocina por cubierto de la semana 37": "Semana!AN41",
+  "Devueltos y retrabajados por base de la semana 37": "Semana!AQ41",
+  "Indicadores fuera de objetivo de la semana 37": "Semana!AR41",
+  "Lectura de la semana 37": "Semana!AS41",
+  "Merma de Pase y caliente en la semana 37": "Semana!W41",
+  "Merma de Fríos y entrantes en la semana 37": "Semana!X41",
+  "Merma de Postres y panadería en la semana 37": "Semana!Y41",
+  "Merma de Barra y bebidas en la semana 37": "Semana!Z41",
+  "Mes cerrado que se compara": "Comparativa entre Unidades!B5",
+  "Año de la comparativa": "Comparativa entre Unidades!B6",
+  "Estándar del grupo: Merma global (%)": "Comparativa entre Unidades!C12",
+  "Estándar del grupo: Pase de principales (min)": "Comparativa entre Unidades!D12",
+  "Estándar del grupo: Incidencias de alérgenos por base": "Comparativa entre Unidades!E12",
+  "Estándar del grupo: Horas de cocina por cubierto": "Comparativa entre Unidades!F12",
+  "Estándar del grupo: Platos devueltos por base": "Comparativa entre Unidades!G12",
+  "Cubiertos del mes de La Encina (unidad de referencia)": "Comparativa entre Unidades!B17",
+  "Merma global (%) de La Encina (unidad de referencia)": "Comparativa entre Unidades!C17",
+  "Pase de principales (min) de La Encina (unidad de referencia)": "Comparativa entre Unidades!D17",
+  "Incidencias de alérgenos por base de La Encina (unidad de referencia)": "Comparativa entre Unidades!E17",
+  "Horas de cocina por cubierto de La Encina (unidad de referencia)": "Comparativa entre Unidades!F17",
+  "Platos devueltos por base de La Encina (unidad de referencia)": "Comparativa entre Unidades!G17",
+  "Indicadores dentro del estándar de La Encina (unidad de referencia)": "Comparativa entre Unidades!N17",
+  "Posición de La Encina (unidad de referencia)": "Comparativa entre Unidades!O17",
+  "Cubiertos del mes de La Encina Norte": "Comparativa entre Unidades!B18",
+  "Merma global (%) de La Encina Norte": "Comparativa entre Unidades!C18",
+  "Pase de principales (min) de La Encina Norte": "Comparativa entre Unidades!D18",
+  "Incidencias de alérgenos por base de La Encina Norte": "Comparativa entre Unidades!E18",
+  "Horas de cocina por cubierto de La Encina Norte": "Comparativa entre Unidades!F18",
+  "Platos devueltos por base de La Encina Norte": "Comparativa entre Unidades!G18",
+  "Indicadores dentro del estándar de La Encina Norte": "Comparativa entre Unidades!N18",
+  "Posición de La Encina Norte": "Comparativa entre Unidades!O18",
+  "Cubiertos del mes de La Encina Playa": "Comparativa entre Unidades!B19",
+  "Merma global (%) de La Encina Playa": "Comparativa entre Unidades!C19",
+  "Pase de principales (min) de La Encina Playa": "Comparativa entre Unidades!D19",
+  "Incidencias de alérgenos por base de La Encina Playa": "Comparativa entre Unidades!E19",
+  "Horas de cocina por cubierto de La Encina Playa": "Comparativa entre Unidades!F19",
+  "Platos devueltos por base de La Encina Playa": "Comparativa entre Unidades!G19",
+  "Indicadores dentro del estándar de La Encina Playa": "Comparativa entre Unidades!N19",
+  "Posición de La Encina Playa": "Comparativa entre Unidades!O19"
+ }
+}

@@ -2,7 +2,7 @@
 title: "Gestión de Alérgenos en Restaurante: los 14 y la Ley 2026"
 description: "Los 14 alérgenos de declaración obligatoria, qué te exige la ley en España y la UE, y cómo generar cartas y fichas de alérgenos automáticas con IA."
 pubDate: 2026-04-08
-modDate: 2026-09-05
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/ia-gestion-alergenos-chef-cocina.jpg
 imageAlt: "Chef revisando etiquetas de alérgenos en cocina profesional con inteligencia artificial"
@@ -34,6 +34,8 @@ Aquí no hablamos de cocina creativa ni de estrellas Michelin. Hablamos de que, 
 
 
 Cuando hablas con otros chefs, el patrón se repite: todos sabemos que hay que informar, pero pocos tienen la documentación al día. Un cambio de proveedor de harina el jueves, una salsa nueva que prueba el jefe de cocina el viernes y una carta que no se actualiza desde hace tres meses. Así es como una inspección de rutina se convierte en un expediente sancionador. La **gestión de alérgenos restaurante** no es solo cumplir por cumplir: es proteger a un comensal que puede acabar en urgencias por una traza mal informada. Y eso, en nuestro oficio, pesa más que cualquier multa.
+
+<p>Quien dirige la cocina responde de que el protocolo se cumpla en el pase, no sólo de que la carta esté bien: ese criterio, con la norma citada y la ficha de proceso, está en el <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p>
 
 ## Los 14 alérgenos de declaración obligatoria: la lista que tu carta tiene que reflejar
 

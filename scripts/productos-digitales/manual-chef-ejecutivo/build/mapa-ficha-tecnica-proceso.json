@@ -1,0 +1,234 @@
+{
+ "fichero": "ficha-tecnica-proceso.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "libro": 3,
+ "nota": "«Ficha (plantilla)» tiene la MISMA estructura de filas que «Ficha (ejemplo)», con todas las celdas verdes vacías: cualquier celda de esta lista existe también allí, en blanco.",
+ "vacias_a_proposito": [
+  "Índice de Fichas!C6"
+ ],
+ "hojas": {
+  "Ficha (ejemplo)": {
+   "celdas": {
+    "Código del plato de la ficha de ejemplo": "B6",
+    "Nombre del plato de la ficha de ejemplo": "B7",
+    "Partida que produce el plato de ejemplo": "B9",
+    "Versión de la ficha de ejemplo": "B11",
+    "Fecha de revisión de la ficha de ejemplo": "B12",
+    "Coste por ración copiado del escandallo": "B16",
+    "Raciones vendidas al mes del plato de ejemplo": "B17",
+    "Coste de materia prima al mes del plato de ejemplo": "B18",
+    "Mise en place de la ficha de ejemplo (min)": "B40",
+    "Tiempo de pase de la ficha de ejemplo (min)": "B41",
+    "Tiempo total de la elaboración de ejemplo (min)": "B43",
+    "Temperatura mínima de mantenimiento en caliente (°C)": "B47",
+    "Punto de cocción de la ficha de ejemplo": "B46",
+    "Alérgenos presentes como ingrediente en la ficha de ejemplo": "B79",
+    "Alérgenos por traza en la ficha de ejemplo": "B80",
+    "Alérgenos por utensilio compartido en la ficha de ejemplo": "B81",
+    "Fecha de elaboración del lote de ejemplo": "B86",
+    "Consumo preferente de «Puré de boniato»": "E88",
+    "Consumo preferente de «Salsa de Pedro Ximénez»": "E89",
+    "Consumo preferente de «Crujiente de panceta»": "E90",
+    "Consumo preferente de «Solomillo racionado»": "E91"
+   },
+   "tablas": [
+    {
+     "titulo": "Pasos de elaboración de la ficha de ejemplo",
+     "cols": [
+      [
+       "Nº",
+       "A",
+       "num"
+      ],
+      [
+       "Operación",
+       "B",
+       "txt"
+      ],
+      [
+       "Punto de control",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      24,
+      31
+     ]
+    },
+    {
+     "titulo": "Alérgenos de proceso de la ficha de ejemplo",
+     "cols": [
+      [
+       "Alérgeno",
+       "A",
+       "txt"
+      ],
+      [
+       "Estado en esta elaboración",
+       "B",
+       "txt"
+      ],
+      [
+       "Dónde entra en ESTA elaboración",
+       "C",
+       "txt"
+      ],
+      [
+       "Sustitución posible",
+       "E",
+       "txt"
+      ]
+     ],
+     "filas": [
+      60,
+      65
+     ]
+    },
+    {
+     "titulo": "Conservación y vida útil de la ficha de ejemplo",
+     "cols": [
+      [
+       "Elaboración",
+       "A",
+       "txt"
+      ],
+      [
+       "Conservación",
+       "B",
+       "txt"
+      ],
+      [
+       "Vida útil (días)",
+       "D",
+       "num"
+      ],
+      [
+       "Consumo preferente",
+       "E",
+       "txt"
+      ]
+     ],
+     "filas": [
+      88,
+      91
+     ]
+    },
+    {
+     "titulo": "Estados de la tabla de alérgenos de proceso",
+     "cols": [
+      [
+       "Estado",
+       "A",
+       "txt"
+      ],
+      [
+       "Qué quiere decir",
+       "B",
+       "txt"
+      ]
+     ],
+     "filas": [
+      74,
+      77
+     ]
+    }
+   ]
+  },
+  "Ficha (plantilla)": {
+   "celdas": {},
+   "tablas": []
+  },
+  "Índice de Fichas": {
+   "celdas": {
+    "Fecha de control del índice": "C5",
+    "Aviso de antigüedad de ficha (días)": "C6",
+    "Antigüedad de la ficha del plato de ejemplo": "I14",
+    "Estado de la ficha del plato de ejemplo": "J14",
+    "Platos con la ficha cerrada": "C52",
+    "Platos con ficha pendiente de cerrar": "C53",
+    "Platos con ficha que toca revisar": "C54",
+    "Platos sin ficha": "C55",
+    "Platos registrados en el índice": "C56",
+    "Platos de la carta con la ficha cerrada (%)": "C57",
+    "Estado de la ficha de «Croquetas de jamón ibérico (6 ud)»": "J10",
+    "Estado de la ficha de «Ensalada de tomate rosa, ventresca y cebolleta»": "J11",
+    "Estado de la ficha de «Gambas al ajillo»": "J12",
+    "Estado de la ficha de «Huevos rotos con patatas y chistorra»": "J13",
+    "Estado de la ficha de «Solomillo de cerdo ibérico con puré de boniato»": "J14",
+    "Estado de la ficha de «Bacalao confitado al pil-pil»": "J15",
+    "Estado de la ficha de «Hamburguesa de vaca madurada con patatas»": "J16",
+    "Estado de la ficha de «Arroz meloso de secreto ibérico y setas»": "J17",
+    "Estado de la ficha de «Chuletón de vaca madurada (500 g)»": "J18",
+    "Estado de la ficha de «Tarta de queso cremosa»": "J19",
+    "Estado de la ficha de «Torrija caramelizada con helado»": "J20",
+    "Estado de la ficha de «Coulant de chocolate»": "J21"
+   },
+   "tablas": [
+    {
+     "titulo": "Índice de fichas técnicas de la carta",
+     "cols": [
+      [
+       "Código",
+       "A",
+       "txt"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Partida que lo produce",
+       "C",
+       "txt"
+      ],
+      [
+       "Familia",
+       "D",
+       "txt"
+      ],
+      [
+       "Versión",
+       "E",
+       "txt"
+      ],
+      [
+       "¿Ficha cerrada?",
+       "H",
+       "txt"
+      ],
+      [
+       "Estado",
+       "J",
+       "txt"
+      ]
+     ],
+     "filas": [
+      10,
+      21
+     ]
+    },
+    {
+     "titulo": "Resumen del índice de fichas",
+     "cols": [
+      [
+       "Resumen del índice",
+       "A",
+       "txt"
+      ],
+      [
+       "Platos",
+       "C",
+       "num"
+      ]
+     ],
+     "filas": [
+      52,
+      57
+     ]
+    }
+   ]
+  }
+ }
+}

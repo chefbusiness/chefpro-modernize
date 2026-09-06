@@ -2,7 +2,7 @@
 title: "Cómo la IA Transformará el Rol de los Chefs: La Revolución Culinaria del Siglo XXI"
 description: "La industria gastronómica está viviendo una transformación sin precedentes. La pregunta ya no es si la inteligencia artificial transformará el rol de los…"
 pubDate: 2026-01-20
-modDate: 2026-08-31
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/como-la-ia-transformara-rol-de-los-chefs-1.jpeg
 imageAlt: "Cómo la IA Transformará el Rol de los Chefs: La Revolución Culinaria del Siglo XXI"
@@ -18,7 +18,7 @@ wpId: 2238
 
 
 
-<h2 class="wp-block-heading">El Chef del Siglo XXI: De Artesano a Director de Orquesta Tecnológica</h2>
+<p>El chef que dirige dedica cada vez menos tiempo a cocinar y más a decidir: brigada, producción, estándares, costes y seguridad alimentaria. Ese oficio, el de dirigir la cocina, es justo el del <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p><h2 class="wp-block-heading">El Chef del Siglo XXI: De Artesano a Director de Orquesta Tecnológica</h2>
 
 
 

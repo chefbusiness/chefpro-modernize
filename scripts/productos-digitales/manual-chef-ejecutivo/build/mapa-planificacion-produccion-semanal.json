@@ -1,0 +1,416 @@
+{
+ "fichero": "planificacion-produccion-semanal.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "semana_tipo": 37,
+ "lunes_semana_tipo": "2026-09-07",
+ "hojas": {
+  "Previsión de Cubiertos": {
+   "celdas": {
+    "Semana ISO que se planifica": "B6",
+    "Lunes de la semana": "B7",
+    "Días que cubre la planificación": "B8",
+    "Último día de la semana": "B9",
+    "Reservas confirmadas de la semana": "C29",
+    "Histórico de cubiertos de la semana": "D29",
+    "Previsión sugerida de la semana": "E29",
+    "Cubiertos previstos de la semana": "F29",
+    "Reservas confirmadas del martes · comida": "C17",
+    "Previsión de cubiertos del martes · comida": "F17",
+    "Reservas confirmadas del martes · cena": "C18",
+    "Previsión de cubiertos del martes · cena": "F18",
+    "Reservas confirmadas del miércoles · comida": "C19",
+    "Previsión de cubiertos del miércoles · comida": "F19",
+    "Reservas confirmadas del miércoles · cena": "C20",
+    "Previsión de cubiertos del miércoles · cena": "F20",
+    "Reservas confirmadas del jueves · comida": "C21",
+    "Previsión de cubiertos del jueves · comida": "F21",
+    "Reservas confirmadas del jueves · cena": "C22",
+    "Previsión de cubiertos del jueves · cena": "F22",
+    "Reservas confirmadas del viernes · comida": "C23",
+    "Previsión de cubiertos del viernes · comida": "F23",
+    "Reservas confirmadas del viernes · cena": "C24",
+    "Previsión de cubiertos del viernes · cena": "F24",
+    "Reservas confirmadas del sábado · comida": "C25",
+    "Previsión de cubiertos del sábado · comida": "F25",
+    "Reservas confirmadas del sábado · cena": "C26",
+    "Previsión de cubiertos del sábado · cena": "F26",
+    "Reservas confirmadas del domingo · comida": "C27",
+    "Previsión de cubiertos del domingo · comida": "F27",
+    "Reservas confirmadas del domingo · cena": "C28",
+    "Previsión de cubiertos del domingo · cena": "F28"
+   },
+   "tablas": [
+    {
+     "titulo": "Previsión por día y servicio",
+     "cols": [
+      [
+       "Día",
+       "A",
+       "txt"
+      ],
+      [
+       "Servicio",
+       "B",
+       "txt"
+      ],
+      [
+       "Reservas confirmadas",
+       "C",
+       "num"
+      ],
+      [
+       "Histórico del mismo servicio",
+       "D",
+       "num"
+      ],
+      [
+       "Previsión sugerida",
+       "E",
+       "num"
+      ],
+      [
+       "Previsión de cubiertos",
+       "F",
+       "num"
+      ]
+     ],
+     "filas": [
+      15,
+      29
+     ]
+    }
+   ]
+  },
+  "Producción por Partida": {
+   "celdas": {
+    "Cubiertos previstos de la semana": "B6",
+    "Partidas activas": "B7",
+    "Raciones previstas de la semana (todas las partidas)": "G44",
+    "Stock ya elaborado (total)": "H44",
+    "Raciones a producir en la semana (total)": "M44",
+    "Mix de venta acumulado de los platos": "F44",
+    "Raciones previstas de Croquetas de jamón ibérico (6 ud)": "G24",
+    "Stock elaborado de Croquetas de jamón ibérico (6 ud)": "H24",
+    "Cantidad a producir de Croquetas de jamón ibérico (6 ud)": "M24",
+    "Raciones previstas de Ensalada de tomate rosa, ventresca y cebolleta": "G25",
+    "Stock elaborado de Ensalada de tomate rosa, ventresca y cebolleta": "H25",
+    "Cantidad a producir de Ensalada de tomate rosa, ventresca y cebolleta": "M25",
+    "Raciones previstas de Gambas al ajillo": "G26",
+    "Stock elaborado de Gambas al ajillo": "H26",
+    "Cantidad a producir de Gambas al ajillo": "M26",
+    "Raciones previstas de Huevos rotos con patatas y chistorra": "G27",
+    "Stock elaborado de Huevos rotos con patatas y chistorra": "H27",
+    "Cantidad a producir de Huevos rotos con patatas y chistorra": "M27",
+    "Raciones previstas de Solomillo de cerdo ibérico con puré de boniato": "G28",
+    "Stock elaborado de Solomillo de cerdo ibérico con puré de boniato": "H28",
+    "Cantidad a producir de Solomillo de cerdo ibérico con puré de boniato": "M28",
+    "Raciones previstas de Bacalao confitado al pil-pil": "G29",
+    "Stock elaborado de Bacalao confitado al pil-pil": "H29",
+    "Cantidad a producir de Bacalao confitado al pil-pil": "M29",
+    "Raciones previstas de Hamburguesa de vaca madurada con patatas": "G30",
+    "Stock elaborado de Hamburguesa de vaca madurada con patatas": "H30",
+    "Cantidad a producir de Hamburguesa de vaca madurada con patatas": "M30",
+    "Raciones previstas de Arroz meloso de secreto ibérico y setas": "G31",
+    "Stock elaborado de Arroz meloso de secreto ibérico y setas": "H31",
+    "Cantidad a producir de Arroz meloso de secreto ibérico y setas": "M31",
+    "Raciones previstas de Chuletón de vaca madurada (500 g)": "G32",
+    "Stock elaborado de Chuletón de vaca madurada (500 g)": "H32",
+    "Cantidad a producir de Chuletón de vaca madurada (500 g)": "M32",
+    "Raciones previstas de Tarta de queso cremosa": "G33",
+    "Stock elaborado de Tarta de queso cremosa": "H33",
+    "Cantidad a producir de Tarta de queso cremosa": "M33",
+    "Raciones previstas de Torrija caramelizada con helado": "G34",
+    "Stock elaborado de Torrija caramelizada con helado": "H34",
+    "Cantidad a producir de Torrija caramelizada con helado": "M34",
+    "Raciones previstas de Coulant de chocolate": "G35",
+    "Stock elaborado de Coulant de chocolate": "H35",
+    "Cantidad a producir de Coulant de chocolate": "M35",
+    "Raciones previstas de la partida Pase y caliente": "B50",
+    "Raciones a producir de la partida Pase y caliente": "D50",
+    "Peso de la partida Pase y caliente en la producción": "E50",
+    "Raciones previstas de la partida Fríos y entrantes": "B51",
+    "Raciones a producir de la partida Fríos y entrantes": "D51",
+    "Peso de la partida Fríos y entrantes en la producción": "E51",
+    "Raciones previstas de la partida Postres y panadería": "B52",
+    "Raciones a producir de la partida Postres y panadería": "D52",
+    "Peso de la partida Postres y panadería en la producción": "E52",
+    "Raciones previstas de la partida Barra y bebidas": "B53",
+    "Raciones a producir de la partida Barra y bebidas": "D53",
+    "Peso de la partida Barra y bebidas en la producción": "E53",
+    "Raciones previstas de la partida Sala y servicio": "B54",
+    "Raciones a producir de la partida Sala y servicio": "D54",
+    "Peso de la partida Sala y servicio en la producción": "E54",
+    "Raciones previstas de la partida Caja y cierre": "B55",
+    "Raciones a producir de la partida Caja y cierre": "D55",
+    "Peso de la partida Caja y cierre en la producción": "E55"
+   },
+   "tablas": [
+    {
+     "titulo": "Producción de la semana, plato a plato",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Elaboración previa (mise en place)",
+       "C",
+       "txt"
+      ],
+      [
+       "Partida",
+       "D",
+       "txt"
+      ],
+      [
+       "Unidad de ración",
+       "E",
+       "txt"
+      ],
+      [
+       "Mix de venta (%)",
+       "F",
+       "pct1"
+      ],
+      [
+       "Raciones previstas",
+       "G",
+       "num"
+      ],
+      [
+       "Stock ya elaborado",
+       "H",
+       "num"
+      ],
+      [
+       "Cantidad a producir",
+       "M",
+       "num"
+      ],
+      [
+       "Alerta",
+       "N",
+       "txt"
+      ]
+     ],
+     "filas": [
+      24,
+      35
+     ]
+    },
+    {
+     "titulo": "Resumen por partida",
+     "cols": [
+      [
+       "Partida",
+       "A",
+       "txt"
+      ],
+      [
+       "Raciones previstas",
+       "B",
+       "num"
+      ],
+      [
+       "Stock ya elaborado",
+       "C",
+       "num"
+      ],
+      [
+       "Raciones a producir",
+       "D",
+       "num"
+      ],
+      [
+       "Peso sobre lo que hay que producir",
+       "E",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      50,
+      58
+     ]
+    }
+   ]
+  },
+  "Lista de Producción Diaria": {
+   "celdas": {
+    "Día de la lista de ejemplo": "B6",
+    "Fecha de la lista de ejemplo": "B7",
+    "Cubiertos previstos del día de la lista": "B8",
+    "Cubiertos previstos de la semana": "B9",
+    "Raciones a producir en el día de la lista": "D34",
+    "Raciones para hoy de Croquetas de jamón ibérico (6 ud)": "D14",
+    "Raciones para hoy de Ensalada de tomate rosa, ventresca y cebolleta": "D15",
+    "Raciones para hoy de Gambas al ajillo": "D16",
+    "Raciones para hoy de Huevos rotos con patatas y chistorra": "D17",
+    "Raciones para hoy de Solomillo de cerdo ibérico con puré de boniato": "D18",
+    "Raciones para hoy de Bacalao confitado al pil-pil": "D19",
+    "Raciones para hoy de Hamburguesa de vaca madurada con patatas": "D20",
+    "Raciones para hoy de Arroz meloso de secreto ibérico y setas": "D21",
+    "Raciones para hoy de Chuletón de vaca madurada (500 g)": "D22",
+    "Raciones para hoy de Tarta de queso cremosa": "D23",
+    "Raciones para hoy de Torrija caramelizada con helado": "D24",
+    "Raciones para hoy de Coulant de chocolate": "D25"
+   },
+   "tablas": [
+    {
+     "titulo": "Lista de producción diaria (imprimible)",
+     "cols": [
+      [
+       "Partida",
+       "A",
+       "txt"
+      ],
+      [
+       "Elaboración",
+       "B",
+       "txt"
+      ],
+      [
+       "Unidad de ración",
+       "C",
+       "txt"
+      ],
+      [
+       "Raciones para hoy",
+       "D",
+       "num"
+      ]
+     ],
+     "filas": [
+      14,
+      25
+     ]
+    }
+   ]
+  },
+  "Ajuste por Desviación": {
+   "celdas": {
+    "Previsión de cubiertos de la semana (hoja de ajuste)": "C24",
+    "Raciones a producir previstas (hoja de ajuste)": "D51"
+   },
+   "tablas": []
+  }
+ },
+ "referencias": {
+  "Previsión de Cubiertos · Semana ISO que se planifica": "Previsión de Cubiertos!B6",
+  "Previsión de Cubiertos · Lunes de la semana": "Previsión de Cubiertos!B7",
+  "Previsión de Cubiertos · Días que cubre la planificación": "Previsión de Cubiertos!B8",
+  "Previsión de Cubiertos · Último día de la semana": "Previsión de Cubiertos!B9",
+  "Previsión de Cubiertos · Reservas confirmadas de la semana": "Previsión de Cubiertos!C29",
+  "Previsión de Cubiertos · Histórico de cubiertos de la semana": "Previsión de Cubiertos!D29",
+  "Previsión de Cubiertos · Previsión sugerida de la semana": "Previsión de Cubiertos!E29",
+  "Previsión de Cubiertos · Cubiertos previstos de la semana": "Previsión de Cubiertos!F29",
+  "Previsión de Cubiertos · Reservas confirmadas del martes · comida": "Previsión de Cubiertos!C17",
+  "Previsión de Cubiertos · Previsión de cubiertos del martes · comida": "Previsión de Cubiertos!F17",
+  "Previsión de Cubiertos · Reservas confirmadas del martes · cena": "Previsión de Cubiertos!C18",
+  "Previsión de Cubiertos · Previsión de cubiertos del martes · cena": "Previsión de Cubiertos!F18",
+  "Previsión de Cubiertos · Reservas confirmadas del miércoles · comida": "Previsión de Cubiertos!C19",
+  "Previsión de Cubiertos · Previsión de cubiertos del miércoles · comida": "Previsión de Cubiertos!F19",
+  "Previsión de Cubiertos · Reservas confirmadas del miércoles · cena": "Previsión de Cubiertos!C20",
+  "Previsión de Cubiertos · Previsión de cubiertos del miércoles · cena": "Previsión de Cubiertos!F20",
+  "Previsión de Cubiertos · Reservas confirmadas del jueves · comida": "Previsión de Cubiertos!C21",
+  "Previsión de Cubiertos · Previsión de cubiertos del jueves · comida": "Previsión de Cubiertos!F21",
+  "Previsión de Cubiertos · Reservas confirmadas del jueves · cena": "Previsión de Cubiertos!C22",
+  "Previsión de Cubiertos · Previsión de cubiertos del jueves · cena": "Previsión de Cubiertos!F22",
+  "Previsión de Cubiertos · Reservas confirmadas del viernes · comida": "Previsión de Cubiertos!C23",
+  "Previsión de Cubiertos · Previsión de cubiertos del viernes · comida": "Previsión de Cubiertos!F23",
+  "Previsión de Cubiertos · Reservas confirmadas del viernes · cena": "Previsión de Cubiertos!C24",
+  "Previsión de Cubiertos · Previsión de cubiertos del viernes · cena": "Previsión de Cubiertos!F24",
+  "Previsión de Cubiertos · Reservas confirmadas del sábado · comida": "Previsión de Cubiertos!C25",
+  "Previsión de Cubiertos · Previsión de cubiertos del sábado · comida": "Previsión de Cubiertos!F25",
+  "Previsión de Cubiertos · Reservas confirmadas del sábado · cena": "Previsión de Cubiertos!C26",
+  "Previsión de Cubiertos · Previsión de cubiertos del sábado · cena": "Previsión de Cubiertos!F26",
+  "Previsión de Cubiertos · Reservas confirmadas del domingo · comida": "Previsión de Cubiertos!C27",
+  "Previsión de Cubiertos · Previsión de cubiertos del domingo · comida": "Previsión de Cubiertos!F27",
+  "Previsión de Cubiertos · Reservas confirmadas del domingo · cena": "Previsión de Cubiertos!C28",
+  "Previsión de Cubiertos · Previsión de cubiertos del domingo · cena": "Previsión de Cubiertos!F28",
+  "Producción por Partida · Cubiertos previstos de la semana": "Producción por Partida!B6",
+  "Producción por Partida · Partidas activas": "Producción por Partida!B7",
+  "Producción por Partida · Raciones previstas de la semana (todas las partidas)": "Producción por Partida!G44",
+  "Producción por Partida · Stock ya elaborado (total)": "Producción por Partida!H44",
+  "Producción por Partida · Raciones a producir en la semana (total)": "Producción por Partida!M44",
+  "Producción por Partida · Mix de venta acumulado de los platos": "Producción por Partida!F44",
+  "Producción por Partida · Raciones previstas de Croquetas de jamón ibérico (6 ud)": "Producción por Partida!G24",
+  "Producción por Partida · Stock elaborado de Croquetas de jamón ibérico (6 ud)": "Producción por Partida!H24",
+  "Producción por Partida · Cantidad a producir de Croquetas de jamón ibérico (6 ud)": "Producción por Partida!M24",
+  "Producción por Partida · Raciones previstas de Ensalada de tomate rosa, ventresca y cebolleta": "Producción por Partida!G25",
+  "Producción por Partida · Stock elaborado de Ensalada de tomate rosa, ventresca y cebolleta": "Producción por Partida!H25",
+  "Producción por Partida · Cantidad a producir de Ensalada de tomate rosa, ventresca y cebolleta": "Producción por Partida!M25",
+  "Producción por Partida · Raciones previstas de Gambas al ajillo": "Producción por Partida!G26",
+  "Producción por Partida · Stock elaborado de Gambas al ajillo": "Producción por Partida!H26",
+  "Producción por Partida · Cantidad a producir de Gambas al ajillo": "Producción por Partida!M26",
+  "Producción por Partida · Raciones previstas de Huevos rotos con patatas y chistorra": "Producción por Partida!G27",
+  "Producción por Partida · Stock elaborado de Huevos rotos con patatas y chistorra": "Producción por Partida!H27",
+  "Producción por Partida · Cantidad a producir de Huevos rotos con patatas y chistorra": "Producción por Partida!M27",
+  "Producción por Partida · Raciones previstas de Solomillo de cerdo ibérico con puré de boniato": "Producción por Partida!G28",
+  "Producción por Partida · Stock elaborado de Solomillo de cerdo ibérico con puré de boniato": "Producción por Partida!H28",
+  "Producción por Partida · Cantidad a producir de Solomillo de cerdo ibérico con puré de boniato": "Producción por Partida!M28",
+  "Producción por Partida · Raciones previstas de Bacalao confitado al pil-pil": "Producción por Partida!G29",
+  "Producción por Partida · Stock elaborado de Bacalao confitado al pil-pil": "Producción por Partida!H29",
+  "Producción por Partida · Cantidad a producir de Bacalao confitado al pil-pil": "Producción por Partida!M29",
+  "Producción por Partida · Raciones previstas de Hamburguesa de vaca madurada con patatas": "Producción por Partida!G30",
+  "Producción por Partida · Stock elaborado de Hamburguesa de vaca madurada con patatas": "Producción por Partida!H30",
+  "Producción por Partida · Cantidad a producir de Hamburguesa de vaca madurada con patatas": "Producción por Partida!M30",
+  "Producción por Partida · Raciones previstas de Arroz meloso de secreto ibérico y setas": "Producción por Partida!G31",
+  "Producción por Partida · Stock elaborado de Arroz meloso de secreto ibérico y setas": "Producción por Partida!H31",
+  "Producción por Partida · Cantidad a producir de Arroz meloso de secreto ibérico y setas": "Producción por Partida!M31",
+  "Producción por Partida · Raciones previstas de Chuletón de vaca madurada (500 g)": "Producción por Partida!G32",
+  "Producción por Partida · Stock elaborado de Chuletón de vaca madurada (500 g)": "Producción por Partida!H32",
+  "Producción por Partida · Cantidad a producir de Chuletón de vaca madurada (500 g)": "Producción por Partida!M32",
+  "Producción por Partida · Raciones previstas de Tarta de queso cremosa": "Producción por Partida!G33",
+  "Producción por Partida · Stock elaborado de Tarta de queso cremosa": "Producción por Partida!H33",
+  "Producción por Partida · Cantidad a producir de Tarta de queso cremosa": "Producción por Partida!M33",
+  "Producción por Partida · Raciones previstas de Torrija caramelizada con helado": "Producción por Partida!G34",
+  "Producción por Partida · Stock elaborado de Torrija caramelizada con helado": "Producción por Partida!H34",
+  "Producción por Partida · Cantidad a producir de Torrija caramelizada con helado": "Producción por Partida!M34",
+  "Producción por Partida · Raciones previstas de Coulant de chocolate": "Producción por Partida!G35",
+  "Producción por Partida · Stock elaborado de Coulant de chocolate": "Producción por Partida!H35",
+  "Producción por Partida · Cantidad a producir de Coulant de chocolate": "Producción por Partida!M35",
+  "Producción por Partida · Raciones previstas de la partida Pase y caliente": "Producción por Partida!B50",
+  "Producción por Partida · Raciones a producir de la partida Pase y caliente": "Producción por Partida!D50",
+  "Producción por Partida · Peso de la partida Pase y caliente en la producción": "Producción por Partida!E50",
+  "Producción por Partida · Raciones previstas de la partida Fríos y entrantes": "Producción por Partida!B51",
+  "Producción por Partida · Raciones a producir de la partida Fríos y entrantes": "Producción por Partida!D51",
+  "Producción por Partida · Peso de la partida Fríos y entrantes en la producción": "Producción por Partida!E51",
+  "Producción por Partida · Raciones previstas de la partida Postres y panadería": "Producción por Partida!B52",
+  "Producción por Partida · Raciones a producir de la partida Postres y panadería": "Producción por Partida!D52",
+  "Producción por Partida · Peso de la partida Postres y panadería en la producción": "Producción por Partida!E52",
+  "Producción por Partida · Raciones previstas de la partida Barra y bebidas": "Producción por Partida!B53",
+  "Producción por Partida · Raciones a producir de la partida Barra y bebidas": "Producción por Partida!D53",
+  "Producción por Partida · Peso de la partida Barra y bebidas en la producción": "Producción por Partida!E53",
+  "Producción por Partida · Raciones previstas de la partida Sala y servicio": "Producción por Partida!B54",
+  "Producción por Partida · Raciones a producir de la partida Sala y servicio": "Producción por Partida!D54",
+  "Producción por Partida · Peso de la partida Sala y servicio en la producción": "Producción por Partida!E54",
+  "Producción por Partida · Raciones previstas de la partida Caja y cierre": "Producción por Partida!B55",
+  "Producción por Partida · Raciones a producir de la partida Caja y cierre": "Producción por Partida!D55",
+  "Producción por Partida · Peso de la partida Caja y cierre en la producción": "Producción por Partida!E55",
+  "Lista de Producción Diaria · Día de la lista de ejemplo": "Lista de Producción Diaria!B6",
+  "Lista de Producción Diaria · Fecha de la lista de ejemplo": "Lista de Producción Diaria!B7",
+  "Lista de Producción Diaria · Cubiertos previstos del día de la lista": "Lista de Producción Diaria!B8",
+  "Lista de Producción Diaria · Cubiertos previstos de la semana": "Lista de Producción Diaria!B9",
+  "Lista de Producción Diaria · Raciones a producir en el día de la lista": "Lista de Producción Diaria!D34",
+  "Lista de Producción Diaria · Raciones para hoy de Croquetas de jamón ibérico (6 ud)": "Lista de Producción Diaria!D14",
+  "Lista de Producción Diaria · Raciones para hoy de Ensalada de tomate rosa, ventresca y cebolleta": "Lista de Producción Diaria!D15",
+  "Lista de Producción Diaria · Raciones para hoy de Gambas al ajillo": "Lista de Producción Diaria!D16",
+  "Lista de Producción Diaria · Raciones para hoy de Huevos rotos con patatas y chistorra": "Lista de Producción Diaria!D17",
+  "Lista de Producción Diaria · Raciones para hoy de Solomillo de cerdo ibérico con puré de boniato": "Lista de Producción Diaria!D18",
+  "Lista de Producción Diaria · Raciones para hoy de Bacalao confitado al pil-pil": "Lista de Producción Diaria!D19",
+  "Lista de Producción Diaria · Raciones para hoy de Hamburguesa de vaca madurada con patatas": "Lista de Producción Diaria!D20",
+  "Lista de Producción Diaria · Raciones para hoy de Arroz meloso de secreto ibérico y setas": "Lista de Producción Diaria!D21",
+  "Lista de Producción Diaria · Raciones para hoy de Chuletón de vaca madurada (500 g)": "Lista de Producción Diaria!D22",
+  "Lista de Producción Diaria · Raciones para hoy de Tarta de queso cremosa": "Lista de Producción Diaria!D23",
+  "Lista de Producción Diaria · Raciones para hoy de Torrija caramelizada con helado": "Lista de Producción Diaria!D24",
+  "Lista de Producción Diaria · Raciones para hoy de Coulant de chocolate": "Lista de Producción Diaria!D25",
+  "Ajuste por Desviación · Previsión de cubiertos de la semana (hoja de ajuste)": "Ajuste por Desviación!C24",
+  "Ajuste por Desviación · Raciones a producir previstas (hoja de ajuste)": "Ajuste por Desviación!D51"
+ }
+}

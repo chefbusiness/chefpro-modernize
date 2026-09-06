@@ -1,0 +1,696 @@
+{
+ "fichero": "brigada-puestos-y-evaluacion.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "libro": 4,
+ "nota": "La hoja que la SPEC llama «Rúbrica de Competencias Técnicas» se llama «Rúbrica de Competencias» en el fichero: Excel corta los nombres de pestaña en 31 caracteres y el de la SPEC tiene 32.",
+ "hojas": {
+  "Organigrama": {
+   "celdas": {
+    "Partidas activas declaradas": "C5",
+    "Área funcional de la brigada de cocina": "C6",
+    "Personas de la brigada de cocina": "F39",
+    "Personas dadas de alta en el organigrama": "F40",
+    "Responsable de la partida «Pase y caliente»": "E10",
+    "Personas asignadas a la partida «Pase y caliente»": "G10",
+    "Alcance de la partida «Pase y caliente»": "H10",
+    "Responsable de la partida «Fríos y entrantes»": "E11",
+    "Personas asignadas a la partida «Fríos y entrantes»": "G11",
+    "Alcance de la partida «Fríos y entrantes»": "H11",
+    "Responsable de la partida «Postres y panadería»": "E12",
+    "Personas asignadas a la partida «Postres y panadería»": "G12",
+    "Alcance de la partida «Postres y panadería»": "H12",
+    "Responsable de la partida «Barra y bebidas»": "E13",
+    "Personas asignadas a la partida «Barra y bebidas»": "G13",
+    "Alcance de la partida «Barra y bebidas»": "H13",
+    "Responsable de la partida «Sala y servicio»": "E14",
+    "Personas asignadas a la partida «Sala y servicio»": "G14",
+    "Alcance de la partida «Sala y servicio»": "H14",
+    "Responsable de la partida «Caja y cierre»": "E15",
+    "Personas asignadas a la partida «Caja y cierre»": "G15",
+    "Alcance de la partida «Caja y cierre»": "H15"
+   },
+   "tablas": [
+    {
+     "titulo": "Las partidas de la cocina",
+     "cols": [
+      [
+       "Nº",
+       "A",
+       "num"
+      ],
+      [
+       "Partida",
+       "B",
+       "txt"
+      ],
+      [
+       "¿Produce raciones?",
+       "C",
+       "txt"
+      ],
+      [
+       "Qué produce",
+       "D",
+       "txt"
+      ],
+      [
+       "Responsable (titular)",
+       "E",
+       "txt"
+      ],
+      [
+       "Personas asignadas",
+       "G",
+       "num"
+      ],
+      [
+       "Alcance",
+       "H",
+       "txt"
+      ]
+     ],
+     "filas": [
+      10,
+      15
+     ]
+    },
+    {
+     "titulo": "La brigada, persona a persona",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Nombre",
+       "B",
+       "txt"
+      ],
+      [
+       "Grupo",
+       "C",
+       "txt"
+      ],
+      [
+       "Puesto en tu organigrama",
+       "D",
+       "txt"
+      ],
+      [
+       "Puesto del convenio (ALEH VI)",
+       "E",
+       "txt"
+      ],
+      [
+       "Área funcional",
+       "F",
+       "txt"
+      ],
+      [
+       "Nivel de delegación",
+       "G",
+       "txt"
+      ],
+      [
+       "Partida principal",
+       "H",
+       "txt"
+      ],
+      [
+       "Nivel en cocina",
+       "J",
+       "num"
+      ]
+     ],
+     "filas": [
+      23,
+      34
+     ]
+    }
+   ]
+  },
+  "Fichas de Puesto": {
+   "celdas": {
+    "Total de personas encuadradas en los puestos del convenio": "G16",
+    "Personas en el puesto «Jefe/a de cocina»": "G6",
+    "Personas en el puesto «Segundo/a jefe/a de cocina»": "G7",
+    "Personas en el puesto «Jefe/a de catering»": "G8",
+    "Personas en el puesto «Jefe/a de partida»": "G9",
+    "Personas en el puesto «Cocinero/a»": "G10",
+    "Personas en el puesto «Repostero/a»": "G11",
+    "Personas en el puesto «Encargado/a de economato»": "G12",
+    "Personas en el puesto «Ayudante/a de cocina»": "G13",
+    "Personas en el puesto «Ayudante/a de economato»": "G14",
+    "Personas en el puesto «Auxiliar de cocina y economato»": "G15"
+   },
+   "tablas": [
+    {
+     "titulo": "Los diez puestos de cocina del ALEH VI",
+     "cols": [
+      [
+       "Puesto (ALEH VI)",
+       "A",
+       "txt"
+      ],
+      [
+       "Grupo",
+       "B",
+       "txt"
+      ],
+      [
+       "Funciones del convenio (literal, art. 17.B)",
+       "C",
+       "txt"
+      ],
+      [
+       "Nivel de delegación",
+       "E",
+       "txt"
+      ],
+      [
+       "Personas",
+       "G",
+       "num"
+      ]
+     ],
+     "filas": [
+      6,
+      15
+     ]
+    },
+    {
+     "titulo": "Los tres niveles de delegación del convenio",
+     "cols": [
+      [
+       "Nivel",
+       "A",
+       "txt"
+      ],
+      [
+       "Puestos",
+       "C",
+       "txt"
+      ],
+      [
+       "Cómo se manda en ese nivel",
+       "E",
+       "txt"
+      ]
+     ],
+     "filas": [
+      23,
+      25
+     ]
+    },
+    {
+     "titulo": "Denominaciones de uso y su equivalencia",
+     "cols": [
+      [
+       "Denominación de uso",
+       "A",
+       "txt"
+      ],
+      [
+       "¿Está en el ALEH VI?",
+       "B",
+       "txt"
+      ],
+      [
+       "Puesto equivalente por las funciones que hace",
+       "C",
+       "txt"
+      ]
+     ],
+     "filas": [
+      29,
+      34
+     ]
+    }
+   ]
+  },
+  "Matriz RACI": {
+   "celdas": {
+    "Comprobación de la decisión «Autorizar un 86: retirar un plato de la carta en mit»": "J13",
+    "Comprobación de la decisión «Aprobar una ficha técnica nueva antes de subir el pl»": "J14",
+    "Comprobación de la decisión «Fijar el PVP de un plato nuevo»": "J15",
+    "Comprobación de la decisión «Aceptar un encargo de grupo de más de 40 comensales»": "J16",
+    "Comprobación de la decisión «Gestionar una incidencia de alérgeno detectada en el»": "J17",
+    "Comprobación de la decisión «Comprar fuera de escandallo un producto de temporada»": "J18",
+    "Comprobación de la decisión «Cambiar de proveedor en una familia de producto»": "J19",
+    "Comprobación de la decisión «Retirar de la carta un plato con margen bajo pero mu»": "J20",
+    "Comprobación de la decisión «Parar el pase por una avería de frío»": "J21",
+    "Comprobación de la decisión «Autorizar horas extraordinarias en cocina un fin de »": "J22",
+    "Comprobación de la decisión «Contratar a un cocinero o cocinera»": "J23",
+    "Comprobación de la decisión «Aprobar el menú de un banquete y su producción»": "J24",
+    "Comprobación de la decisión «Responder a una reseña que critica un plato»": "J25",
+    "Comprobación de la decisión «Decidir el destino del excedente de un servicio (don»": "J26",
+    "Comprobación de la decisión «Modificar el gramaje de un plato que ya está en cart»": "J27"
+   },
+   "tablas": [
+    {
+     "titulo": "Matriz RACI de cocina, sala y dirección",
+     "cols": [
+      [
+       "Decisión",
+       "A",
+       "txt"
+      ],
+      [
+       "Chef ejecutivo",
+       "B",
+       "txt"
+      ],
+      [
+       "Segundo/a de cocina",
+       "C",
+       "txt"
+      ],
+      [
+       "Jefe/a de partida",
+       "D",
+       "txt"
+      ],
+      [
+       "Jefe/a de sala",
+       "E",
+       "txt"
+      ],
+      [
+       "Gerencia",
+       "F",
+       "txt"
+      ],
+      [
+       "Propiedad",
+       "G",
+       "txt"
+      ],
+      [
+       "Comprobación",
+       "J",
+       "txt"
+      ]
+     ],
+     "filas": [
+      13,
+      27
+     ]
+    },
+    {
+     "titulo": "Qué quiere decir cada letra",
+     "cols": [
+      [
+       "Letra",
+       "A",
+       "txt"
+      ],
+      [
+       "Qué quiere decir",
+       "B",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      9
+     ]
+    }
+   ]
+  },
+  "Rúbrica de Competencias": {
+   "celdas": {
+    "Personas evaluadas en la rúbrica": "M46",
+    "Media ponderada de la brigada evaluada": "M47",
+    "Media ponderada de P01": "M34",
+    "Nivel técnico de P01": "N34",
+    "Lectura de cobertura y competencia de P01": "P34",
+    "Media ponderada de P02": "M35",
+    "Nivel técnico de P02": "N35",
+    "Lectura de cobertura y competencia de P02": "P35",
+    "Media ponderada de P03": "M36",
+    "Nivel técnico de P03": "N36",
+    "Lectura de cobertura y competencia de P03": "P36",
+    "Media ponderada de P04": "M37",
+    "Nivel técnico de P04": "N37",
+    "Lectura de cobertura y competencia de P04": "P37",
+    "Media ponderada de P05": "M38",
+    "Nivel técnico de P05": "N38",
+    "Lectura de cobertura y competencia de P05": "P38",
+    "Media ponderada de P06": "M39",
+    "Nivel técnico de P06": "N39",
+    "Lectura de cobertura y competencia de P06": "P39",
+    "Media ponderada de P07": "M40",
+    "Nivel técnico de P07": "N40",
+    "Lectura de cobertura y competencia de P07": "P40",
+    "Media ponderada de P12": "M45",
+    "Nivel técnico de P12": "N45",
+    "Lectura de cobertura y competencia de P12": "P45"
+   },
+   "tablas": [
+    {
+     "titulo": "Las siete competencias técnicas y sus niveles",
+     "cols": [
+      [
+       "Competencia",
+       "A",
+       "txt"
+      ],
+      [
+       "Nivel 1",
+       "B",
+       "txt"
+      ],
+      [
+       "Nivel 2",
+       "C",
+       "txt"
+      ],
+      [
+       "Nivel 3",
+       "D",
+       "txt"
+      ],
+      [
+       "Nivel 4",
+       "E",
+       "txt"
+      ],
+      [
+       "Nivel 5",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      12
+     ]
+    },
+    {
+     "titulo": "Peso de cada competencia por puesto",
+     "cols": [
+      [
+       "Puesto",
+       "A",
+       "txt"
+      ],
+      [
+       "Cortes y manejo de cuchillo",
+       "B",
+       "num"
+      ],
+      [
+       "Cocciones y puntos",
+       "C",
+       "num"
+      ],
+      [
+       "Fondos, salsas y bases",
+       "D",
+       "num"
+      ],
+      [
+       "Emplatado y montaje",
+       "E",
+       "num"
+      ],
+      [
+       "Higiene de manipulación y APPCC en el puesto",
+       "F",
+       "num"
+      ],
+      [
+       "Conocimiento y aplicación de la ficha técnica",
+       "G",
+       "num"
+      ],
+      [
+       "Gestión de la merma de su partida",
+       "H",
+       "num"
+      ]
+     ],
+     "filas": [
+      16,
+      22
+     ]
+    },
+    {
+     "titulo": "Evaluación técnica de la brigada",
+     "sin_dato": "Las cuatro personas de sala pura (P08 a P11) no hacen la prueba de cocina: su media, su nivel técnico y su lectura van VACÍAS a propósito. N/A no es cero.",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Nombre",
+       "B",
+       "txt"
+      ],
+      [
+       "Puesto de la rúbrica",
+       "C",
+       "txt"
+      ],
+      [
+       "Cortes y manejo de cuchillo",
+       "F",
+       "num"
+      ],
+      [
+       "Cocciones y puntos",
+       "G",
+       "num"
+      ],
+      [
+       "Fondos, salsas y bases",
+       "H",
+       "num"
+      ],
+      [
+       "Emplatado y montaje",
+       "I",
+       "num"
+      ],
+      [
+       "Higiene de manipulación y APPCC en el puesto",
+       "J",
+       "num"
+      ],
+      [
+       "Conocimiento y aplicación de la ficha técnica",
+       "K",
+       "num"
+      ],
+      [
+       "Gestión de la merma de su partida",
+       "L",
+       "num"
+      ],
+      [
+       "Media ponderada",
+       "M",
+       "num"
+      ],
+      [
+       "Nivel técnico",
+       "N",
+       "num"
+      ],
+      [
+       "Nivel en cocina",
+       "O",
+       "num"
+      ],
+      [
+       "Lectura",
+       "P",
+       "txt"
+      ]
+     ],
+     "filas": [
+      34,
+      45
+     ]
+    }
+   ]
+  },
+  "Prueba Práctica": {
+   "celdas": {
+    "Duración total de la prueba práctica (minutos)": "C18"
+   },
+   "tablas": [
+    {
+     "titulo": "Guion de la prueba práctica",
+     "cols": [
+      [
+       "Competencia",
+       "A",
+       "txt"
+      ],
+      [
+       "Prueba",
+       "B",
+       "txt"
+      ],
+      [
+       "Minutos",
+       "C",
+       "num"
+      ],
+      [
+       "Material",
+       "D",
+       "txt"
+      ],
+      [
+       "Qué es un 5",
+       "E",
+       "txt"
+      ],
+      [
+       "Qué es un 1",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      11,
+      17
+     ]
+    }
+   ]
+  },
+  "Plan de Desarrollo Individual": {
+   "celdas": {
+    "Fecha de control del plan de desarrollo": "C5",
+    "Días restantes del plan de P06": "I9",
+    "Días restantes del plan de P12": "I10",
+    "Días restantes del plan de P05": "I11",
+    "Días restantes del plan de P04": "I12",
+    "Planes en estado «Planificado»": "C25",
+    "Planes en estado «En curso»": "C26",
+    "Planes en estado «Cerrado»": "C27"
+   },
+   "tablas": [
+    {
+     "titulo": "Planes de desarrollo individual abiertos",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Persona",
+       "B",
+       "txt"
+      ],
+      [
+       "Objetivo",
+       "C",
+       "txt"
+      ],
+      [
+       "Competencias a trabajar",
+       "D",
+       "txt"
+      ],
+      [
+       "Acciones",
+       "E",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "F",
+       "txt"
+      ],
+      [
+       "Fecha objetivo",
+       "G",
+       "txt"
+      ],
+      [
+       "Estado",
+       "H",
+       "txt"
+      ],
+      [
+       "Próxima partida a aprender",
+       "J",
+       "txt"
+      ],
+      [
+       "Remite a",
+       "K",
+       "txt"
+      ]
+     ],
+     "filas": [
+      9,
+      12
+     ]
+    }
+   ]
+  },
+  "Histórico": {
+   "celdas": {
+    "Evaluaciones registradas en el histórico": "E26",
+    "Media ponderada de la ronda de septiembre de 2026": "E27",
+    "Media ponderada de P01 en el histórico": "E6",
+    "Media ponderada de P02 en el histórico": "E7",
+    "Media ponderada de P03 en el histórico": "E8",
+    "Media ponderada de P04 en el histórico": "E9",
+    "Media ponderada de P05 en el histórico": "E10",
+    "Media ponderada de P06 en el histórico": "E11",
+    "Media ponderada de P07 en el histórico": "E12",
+    "Media ponderada de P12 en el histórico": "E13"
+   },
+   "tablas": [
+    {
+     "titulo": "Histórico de evaluaciones técnicas",
+     "cols": [
+      [
+       "Fecha",
+       "A",
+       "txt"
+      ],
+      [
+       "Id",
+       "B",
+       "txt"
+      ],
+      [
+       "Persona",
+       "C",
+       "txt"
+      ],
+      [
+       "Puesto de la rúbrica",
+       "D",
+       "txt"
+      ],
+      [
+       "Media ponderada",
+       "E",
+       "num"
+      ],
+      [
+       "Nivel técnico",
+       "F",
+       "num"
+      ]
+     ],
+     "filas": [
+      6,
+      13
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -2,7 +2,7 @@
 title: "Qué Son las Mermas en Cocina: Tipos, Cálculo y Fórmulas"
 description: "Qué son las mermas en cocina, sus tipos con tabla, las fórmulas para calcularlas paso a paso y el rendimiento real de cada producto. Guía de chef."
 pubDate: 2024-10-19
-modDate: 2026-09-03
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/que-es-la-merma-blog-ai-chef-pro.png
 imageAlt: "que es la merma en cocina"
@@ -34,6 +34,8 @@ En 2026, con los precios de la materia prima en máximos y los márgenes más aj
 
 
 <p>La merma medida con tu proveedor y tu cuchillo, y no la de una tabla genérica, es el primer capítulo práctico de la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu">Guía Food Cost + Ingeniería de Menú</a>, que incluye la plantilla del test de rendimiento.</p>
+
+<p>Medir la merma es el primer paso; saber de qué partida sale y qué conversación toca cuando se dispara tres semanas seguidas es el segundo, y tiene su cuadro de mando semanal en el <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p>
 
 ## Por qué las mermas golpean tu cuenta de resultados
 
@@ -101,7 +103,7 @@ Hablar de merma es hablar también de rendimiento. Son las dos caras de la misma
 
 Estos porcentajes son orientativos y varían según el proveedor, la técnica de limpieza o la época del año. Lo importante es que tú establezcas los tuyos propios pesando y midiendo en tu cocina. Solo así tendrás un escandallo fiable.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Manual del Chef Ejecutivo</h3><p class="mt-2 text-muted-foreground">Brigada, producción, fichas técnicas y estándares de cocina: 20 capítulos y 7 Excel.</p><a href="/manual-chef-ejecutivo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-son-las-mermas-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Manual del Chef Ejecutivo por €65</a></aside>
 
 ## Del cálculo al plato: cómo la merma afecta al escandallo y al precio de carta
 

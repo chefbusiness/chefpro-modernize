@@ -1,0 +1,555 @@
+{
+ "fichero": "auditoria-interna-cocina.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "libro": 7,
+ "que_decide": "Puntuar la disciplina de cocina de forma repetible y comparar cocinas",
+ "media_ponderada": {
+  "formula": "SUMPRODUCT(peso;puntuación)/SUM(peso)",
+  "celda_global": "Auditoría!D13",
+  "celdas_por_area": {
+   "Orden y mise en place": "Resumen por Área!D6",
+   "Aplicación de fichas técnicas": "Resumen por Área!D7",
+   "Mermas por partida": "Resumen por Área!D8",
+   "Prevención de riesgos laborales": "Resumen por Área!D9",
+   "Alérgenos en el pase": "Resumen por Área!D10"
+  },
+  "puntos": 50,
+  "peso_total": 123
+ },
+ "prl_sembrada": [
+  {
+   "punto": 31,
+   "id": "CE-21",
+   "norma": "RD 486/1997, Anexo III, punto 3",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8669",
+   "celda": "Auditoría!C49"
+  },
+  {
+   "punto": 32,
+   "id": "CE-22",
+   "norma": "RD 486/1997, Anexo I, punto 3.1",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8669",
+   "celda": "Auditoría!C50"
+  },
+  {
+   "punto": 33,
+   "id": "CE-23",
+   "norma": "RD 773/1997, art. 3.c) y Anexo III",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735",
+   "celda": "Auditoría!C51"
+  },
+  {
+   "punto": 34,
+   "id": "CE-25",
+   "norma": "RD 1215/1997, Anexo I, punto 1.8",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1997-17824",
+   "celda": "Auditoría!C52"
+  },
+  {
+   "punto": 35,
+   "id": "CE-26",
+   "norma": "RD 1215/1997, art. 4",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1997-17824",
+   "celda": "Auditoría!C53"
+  },
+  {
+   "punto": 38,
+   "id": "CE-24",
+   "norma": "RD 487/1997, Anexo, puntos 1 a 5 (la norma no fija ninguna cifra en kilos)",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8670",
+   "celda": "Auditoría!C56"
+  },
+  {
+   "punto": 40,
+   "id": "CE-27",
+   "norma": "Ley 31/1995, art. 19 (el coste nunca recae en el trabajador)",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+   "celda": "Auditoría!C58"
+  }
+ ],
+ "estado_normativo": {
+  "celda_fecha_de_corte": "Estado Normativo!B5",
+  "editable": true,
+  "normas": 14
+ },
+ "excluye": "limpieza, control de plagas y temperaturas de cámara: eso es el Pack APPCC",
+ "hojas": {
+  "Auditoría": {
+   "celdas": {
+    "Fecha de la visita": "D7",
+    "Quién audita": "D8",
+    "Unidad o cocina auditada": "D9",
+    "Escala máxima de puntuación": "D10",
+    "Umbral de aviso ÁMBAR": "D11",
+    "Umbral de aviso CRÍTICO": "D12",
+    "Puntuación media PONDERADA de la visita": "D13",
+    "Cumplimiento sobre la escala": "D14",
+    "Puntos puntuados": "D15",
+    "Ponderado del punto 1": "F19",
+    "Ponderado del punto 2": "F20",
+    "Ponderado del punto 3": "F21",
+    "Ponderado del punto 4": "F22",
+    "Ponderado del punto 5": "F23",
+    "Ponderado del punto 6": "F24",
+    "Ponderado del punto 7": "F25",
+    "Ponderado del punto 8": "F26",
+    "Ponderado del punto 9": "F27",
+    "Ponderado del punto 10": "F28",
+    "Ponderado del punto 11": "F29",
+    "Ponderado del punto 12": "F30",
+    "Ponderado del punto 13": "F31",
+    "Ponderado del punto 14": "F32",
+    "Ponderado del punto 15": "F33",
+    "Ponderado del punto 16": "F34",
+    "Ponderado del punto 17": "F35",
+    "Ponderado del punto 18": "F36",
+    "Ponderado del punto 19": "F37",
+    "Ponderado del punto 20": "F38",
+    "Ponderado del punto 21": "F39",
+    "Ponderado del punto 22": "F40",
+    "Ponderado del punto 23": "F41",
+    "Ponderado del punto 24": "F42",
+    "Ponderado del punto 25": "F43",
+    "Ponderado del punto 26": "F44",
+    "Ponderado del punto 27": "F45",
+    "Ponderado del punto 28": "F46",
+    "Ponderado del punto 29": "F47",
+    "Ponderado del punto 30": "F48",
+    "Ponderado del punto 31": "F49",
+    "Ponderado del punto 32": "F50",
+    "Ponderado del punto 33": "F51",
+    "Ponderado del punto 34": "F52",
+    "Ponderado del punto 35": "F53",
+    "Ponderado del punto 36": "F54",
+    "Ponderado del punto 37": "F55",
+    "Ponderado del punto 38": "F56",
+    "Ponderado del punto 39": "F57",
+    "Ponderado del punto 40": "F58",
+    "Ponderado del punto 41": "F59",
+    "Ponderado del punto 42": "F60",
+    "Ponderado del punto 43": "F61",
+    "Ponderado del punto 44": "F62",
+    "Ponderado del punto 45": "F63",
+    "Ponderado del punto 46": "F64",
+    "Ponderado del punto 47": "F65",
+    "Ponderado del punto 48": "F66",
+    "Ponderado del punto 49": "F67",
+    "Ponderado del punto 50": "F68"
+   },
+   "tablas": [
+    {
+     "titulo": "Los 50 puntos de la auditoría",
+     "cols": [
+      [
+       "Nº",
+       "A",
+       "num"
+      ],
+      [
+       "Área",
+       "B",
+       "txt"
+      ],
+      [
+       "Punto de control",
+       "C",
+       "txt"
+      ],
+      [
+       "Peso (1 a 3)",
+       "D",
+       "num"
+      ],
+      [
+       "Puntuación (0 a la escala)",
+       "E",
+       "num"
+      ],
+      [
+       "Ponderado",
+       "F",
+       "num"
+      ],
+      [
+       "Norma aplicable",
+       "G",
+       "txt"
+      ],
+      [
+       "Verificación",
+       "H",
+       "txt"
+      ],
+      [
+       "Observación",
+       "I",
+       "txt"
+      ]
+     ],
+     "filas": [
+      19,
+      68
+     ]
+    }
+   ]
+  },
+  "Resumen por Área": {
+   "celdas": {
+    "Visita del histórico con la que comparar": "B4",
+    "Puntos puntuados en total": "B12",
+    "Peso total de los 50 puntos": "C12",
+    "Nota ponderada global de esta visita": "D12",
+    "Cumplimiento global sobre la escala": "E12",
+    "Nota global de la visita comparada": "G12",
+    "Variación global": "H12",
+    "Lectura global": "I12",
+    "Puntos puntuados del área Orden y mise en place": "B6",
+    "Peso total del área Orden y mise en place": "C6",
+    "Nota de esta visita del área Orden y mise en place": "D6",
+    "Cumplimiento del área Orden y mise en place": "E6",
+    "Nota de la visita comparada del área Orden y mise en place": "G6",
+    "Variación del área Orden y mise en place": "H6",
+    "Lectura del área Orden y mise en place": "I6",
+    "Puntos puntuados del área Aplicación de fichas técnicas": "B7",
+    "Peso total del área Aplicación de fichas técnicas": "C7",
+    "Nota de esta visita del área Aplicación de fichas técnicas": "D7",
+    "Cumplimiento del área Aplicación de fichas técnicas": "E7",
+    "Nota de la visita comparada del área Aplicación de fichas técnicas": "G7",
+    "Variación del área Aplicación de fichas técnicas": "H7",
+    "Lectura del área Aplicación de fichas técnicas": "I7",
+    "Puntos puntuados del área Mermas por partida": "B8",
+    "Peso total del área Mermas por partida": "C8",
+    "Nota de esta visita del área Mermas por partida": "D8",
+    "Cumplimiento del área Mermas por partida": "E8",
+    "Nota de la visita comparada del área Mermas por partida": "G8",
+    "Variación del área Mermas por partida": "H8",
+    "Lectura del área Mermas por partida": "I8",
+    "Puntos puntuados del área Prevención de riesgos laborales": "B9",
+    "Peso total del área Prevención de riesgos laborales": "C9",
+    "Nota de esta visita del área Prevención de riesgos laborales": "D9",
+    "Cumplimiento del área Prevención de riesgos laborales": "E9",
+    "Nota de la visita comparada del área Prevención de riesgos laborales": "G9",
+    "Variación del área Prevención de riesgos laborales": "H9",
+    "Lectura del área Prevención de riesgos laborales": "I9",
+    "Puntos puntuados del área Alérgenos en el pase": "B10",
+    "Peso total del área Alérgenos en el pase": "C10",
+    "Nota de esta visita del área Alérgenos en el pase": "D10",
+    "Cumplimiento del área Alérgenos en el pase": "E10",
+    "Nota de la visita comparada del área Alérgenos en el pase": "G10",
+    "Variación del área Alérgenos en el pase": "H10",
+    "Lectura del área Alérgenos en el pase": "I10"
+   },
+   "tablas": [
+    {
+     "titulo": "Resumen por área",
+     "cols": [
+      [
+       "Área",
+       "A",
+       "txt"
+      ],
+      [
+       "Puntos puntuados",
+       "B",
+       "num"
+      ],
+      [
+       "Peso total del área",
+       "C",
+       "num"
+      ],
+      [
+       "Nota de esta visita",
+       "D",
+       "num"
+      ],
+      [
+       "Cumplimiento sobre la escala",
+       "E",
+       "pct1"
+      ],
+      [
+       "Tu objetivo (0 a la escala)",
+       "F",
+       "num"
+      ],
+      [
+       "Nota de la visita comparada",
+       "G",
+       "num"
+      ],
+      [
+       "Variación",
+       "H",
+       "num"
+      ],
+      [
+       "Lectura",
+       "I",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      12
+     ]
+    }
+   ]
+  },
+  "Histórico": {
+   "celdas": {
+    "Peso total del área Orden y mise en place": "D4",
+    "Peso total del área Aplicación de fichas técnicas": "E4",
+    "Peso total del área Mermas por partida": "F4",
+    "Peso total del área Prevención de riesgos laborales": "G4",
+    "Peso total del área Alérgenos en el pase": "H4",
+    "Nota ponderada global de la visita cerrada": "I6",
+    "Cumplimiento de la visita cerrada": "J6",
+    "Nota ponderada global de la visita en curso": "I7",
+    "Cumplimiento de la visita en curso": "J7",
+    "Variación de la visita en curso": "L7",
+    "Nota de la visita en curso del área Orden y mise en place": "D7",
+    "Nota de la visita en curso del área Aplicación de fichas técnicas": "E7",
+    "Nota de la visita en curso del área Mermas por partida": "F7",
+    "Nota de la visita en curso del área Prevención de riesgos laborales": "G7",
+    "Nota de la visita en curso del área Alérgenos en el pase": "H7"
+   },
+   "tablas": [
+    {
+     "titulo": "Histórico de auditorías de esta cocina",
+     "cols": [
+      [
+       "Nº de visita",
+       "A",
+       "num"
+      ],
+      [
+       "Fecha",
+       "B",
+       "txt"
+      ],
+      [
+       "Quién audita",
+       "C",
+       "txt"
+      ],
+      [
+       "Orden y mise en place",
+       "D",
+       "num"
+      ],
+      [
+       "Aplicación de fichas técnicas",
+       "E",
+       "num"
+      ],
+      [
+       "Mermas por partida",
+       "F",
+       "num"
+      ],
+      [
+       "Prevención de riesgos laborales",
+       "G",
+       "num"
+      ],
+      [
+       "Alérgenos en el pase",
+       "H",
+       "num"
+      ],
+      [
+       "Nota ponderada global",
+       "I",
+       "num"
+      ],
+      [
+       "Cumplimiento",
+       "J",
+       "pct1"
+      ],
+      [
+       "Unidad o cocina",
+       "K",
+       "txt"
+      ],
+      [
+       "Variación",
+       "L",
+       "num"
+      ]
+     ],
+     "filas": [
+      6,
+      13
+     ]
+    }
+   ]
+  },
+  "Histórico por Unidad": {
+   "celdas": {
+    "Media del grupo": "C13",
+    "Tu estándar de grupo": "C14",
+    "Peso total del área Orden y mise en place": "C4",
+    "Nota de la unidad de referencia en el área Orden y mise en place": "C6",
+    "Peso total del área Aplicación de fichas técnicas": "D4",
+    "Nota de la unidad de referencia en el área Aplicación de fichas técnicas": "D6",
+    "Peso total del área Mermas por partida": "E4",
+    "Nota de la unidad de referencia en el área Mermas por partida": "E6",
+    "Peso total del área Prevención de riesgos laborales": "F4",
+    "Nota de la unidad de referencia en el área Prevención de riesgos laborales": "F6",
+    "Peso total del área Alérgenos en el pase": "G4",
+    "Nota de la unidad de referencia en el área Alérgenos en el pase": "G6",
+    "Nota ponderada de la unidad de referencia": "H6",
+    "Cumplimiento de la unidad de referencia": "I6",
+    "Desviación de la unidad de referencia contra la media": "J6"
+   },
+   "tablas": [
+    {
+     "titulo": "La misma auditoría, cocina por cocina",
+     "cols": [
+      [
+       "Unidad o cocina",
+       "A",
+       "txt"
+      ],
+      [
+       "Fecha de la auditoría",
+       "B",
+       "txt"
+      ],
+      [
+       "Orden y mise en place",
+       "C",
+       "num"
+      ],
+      [
+       "Aplicación de fichas técnicas",
+       "D",
+       "num"
+      ],
+      [
+       "Mermas por partida",
+       "E",
+       "num"
+      ],
+      [
+       "Prevención de riesgos laborales",
+       "F",
+       "num"
+      ],
+      [
+       "Alérgenos en el pase",
+       "G",
+       "num"
+      ],
+      [
+       "Nota ponderada",
+       "H",
+       "num"
+      ],
+      [
+       "Cumplimiento",
+       "I",
+       "pct1"
+      ],
+      [
+       "Desviación contra la media",
+       "J",
+       "num"
+      ],
+      [
+       "Desviación contra tu estándar",
+       "K",
+       "num"
+      ],
+      [
+       "Lectura",
+       "L",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      11
+     ]
+    }
+   ]
+  },
+  "Estado Normativo": {
+   "celdas": {
+    "Fecha de corte de esta revisión": "B5",
+    "Fecha para simular": "B6",
+    "Hoy (fecha de referencia)": "B7",
+    "Días naturales desde la fecha de corte": "B8",
+    "Días tras los que avisar": "B9",
+    "Aviso de revisión": "B10",
+    "Fecha de corte de CE-02": "D13",
+    "Fecha de corte de CE-06": "D14",
+    "Fecha de corte de CE-07": "D15",
+    "Fecha de corte de CE-08": "D16",
+    "Fecha de corte de CE-10": "D17",
+    "Fecha de corte de CE-11": "D18",
+    "Fecha de corte de CE-12": "D19",
+    "Fecha de corte de CE-14": "D20",
+    "Fecha de corte de CE-17": "D21",
+    "Fecha de corte de CE-18": "D22",
+    "Fecha de corte de CE-19": "D23",
+    "Fecha de corte de CE-21": "D24",
+    "Fecha de corte de CE-23": "D25",
+    "Fecha de corte de CE-33": "D26"
+   },
+   "tablas": [
+    {
+     "titulo": "Estado normativo a la fecha de corte",
+     "cols": [
+      [
+       "Norma",
+       "A",
+       "txt"
+      ],
+      [
+       "Estado a la fecha de corte",
+       "B",
+       "txt"
+      ],
+      [
+       "Qué tiene que hacer el chef",
+       "C",
+       "txt"
+      ],
+      [
+       "Fecha de corte",
+       "D",
+       "txt"
+      ],
+      [
+       "Id",
+       "E",
+       "txt"
+      ],
+      [
+       "Verificación y enlace",
+       "F",
+       "txt"
+      ],
+      [
+       "Comprobado por ti el",
+       "G",
+       "txt"
+      ],
+      [
+       "Estado tras tu comprobación",
+       "H",
+       "txt"
+      ]
+     ],
+     "filas": [
+      13,
+      26
+     ]
+    }
+   ]
+  }
+ }
+}

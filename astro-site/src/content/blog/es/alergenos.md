@@ -2,7 +2,7 @@
 title: "Alérgenos Alimentarios: Lista de los 14 Obligatorios (UE)"
 description: "Qué son los alérgenos y la lista completa de los 14 de declaración obligatoria en la UE (Reglamento 1169/2011), en tabla. Alergia vs. intolerancia."
 pubDate: 2024-10-16
-modDate: 2026-08-31
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/que-son-los-alergenos.jpg
 imageAlt: "qué son los alérgenos"
@@ -30,6 +30,8 @@ Si alguna vez has trabajado en una cocina profesional, sabes que la pregunta “
 <figure class="wp-block-image size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="948" height="237" data-attachment-id="658" data-orig-file="/blog-assets/2024/10/podcast-aichef-pro-bb.gif" data-orig-size="948,237" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="podcast aichef pro bb" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2024/10/podcast-aichef-pro-bb.gif" src="/blog-assets/2024/10/podcast-aichef-pro-bb.gif" alt="podcast ai chef pro" class="wp-image-658"></figure>
 
 
+
+<p>La declaración de alérgenos de la carta es una cosa; gestionarlos dentro de la cocina —contacto y traza en cada elaboración, utensilios y superficies compartidos, sustituciones posibles y qué se canta en el pase— es otra, y tiene su capítulo y su ficha en el <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p>
 
 ## ¿Qué Es un Alérgeno Alimentario?
 

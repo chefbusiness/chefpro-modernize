@@ -1,0 +1,452 @@
+{
+ "fichero": "banquetes-comidas-testigo.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "libro": 6,
+ "que_decide": "Si este encargo dispara la obligación de comidas testigo y cómo se produce el evento",
+ "alerta_comida_testigo": {
+  "celda": "Registro de Comidas Testigo!D26",
+  "texto": "COMIDA TESTIGO OBLIGATORIA",
+  "celda_umbral": "Registro de Comidas Testigo!D7",
+  "umbral_comensales": 40,
+  "id_research": "CE-11",
+  "norma": "RD 1086/2020, art. 30, apartados 8, 9 y 10 (redacción del RD 1021/2022)",
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-15872",
+  "tambien_por_supuesto": "Registro de Comidas Testigo!D35"
+ },
+ "cuenta_atras": {
+  "celda_dias": "Registro de Comidas Testigo!D9",
+  "dias": 7,
+  "columna_dias_que_faltan": "Registro de Comidas Testigo!L",
+  "columna_estado": "Registro de Comidas Testigo!M",
+  "dias_naturales": true
+ },
+ "sin_hojas_de_desperdicio": true,
+ "vacias_a_proposito": [
+  "Producción y Ficha de Banquete!C32",
+  "Producción y Ficha de Banquete!D32",
+  "Producción y Ficha de Banquete!E32"
+ ],
+ "hojas": {
+  "Registro de Comidas Testigo": {
+   "celdas": {
+    "Comensales a partir de los que obliga": "D7",
+    "Gramos mínimos por elaboración": "D8",
+    "Días de conservación de la muestra": "D9",
+    "Temperatura máxima en refrigeración": "D10",
+    "Temperatura máxima en congelación": "D11",
+    "Fecha para simular": "D12",
+    "Hoy (fecha de referencia)": "D13",
+    "Id del evento": "D19",
+    "Fecha del evento": "D21",
+    "Comensales del evento": "D22",
+    "¿Elaboración y servicio en establecimientos distintos?": "D27",
+    "ALERTA de obligación de comida testigo": "D26",
+    "Supuestos del art. 30.8 marcados": "D35",
+    "Muestras registradas": "D54",
+    "Elaboraciones del menú del evento": "D55",
+    "Muestras que faltan por tomar": "D56",
+    "Muestras con los gramos por debajo del mínimo": "D57",
+    "Muestras con la temperatura fuera de rango": "D58",
+    "Muestras que ya se pueden destruir": "D59",
+    "Muestras con aviso de doble toma (art. 30.9)": "D60",
+    "Fecha de destrucción prevista de la muestra CT-2026-014-1": "K39",
+    "Días que faltan de la muestra CT-2026-014-1": "L39",
+    "Estado de la muestra CT-2026-014-1": "M39",
+    "Gramos suficientes de la muestra CT-2026-014-1": "N39",
+    "Temperatura conforme de la muestra CT-2026-014-1": "O39",
+    "Momento de la toma de la muestra CT-2026-014-1": "Q39",
+    "Aviso de doble toma de la muestra CT-2026-014-1": "R39",
+    "Fecha de destrucción prevista de la muestra CT-2026-014-2": "K40",
+    "Días que faltan de la muestra CT-2026-014-2": "L40",
+    "Estado de la muestra CT-2026-014-2": "M40",
+    "Gramos suficientes de la muestra CT-2026-014-2": "N40",
+    "Temperatura conforme de la muestra CT-2026-014-2": "O40",
+    "Momento de la toma de la muestra CT-2026-014-2": "Q40",
+    "Aviso de doble toma de la muestra CT-2026-014-2": "R40",
+    "Fecha de destrucción prevista de la muestra CT-2026-014-3": "K41",
+    "Días que faltan de la muestra CT-2026-014-3": "L41",
+    "Estado de la muestra CT-2026-014-3": "M41",
+    "Gramos suficientes de la muestra CT-2026-014-3": "N41",
+    "Temperatura conforme de la muestra CT-2026-014-3": "O41",
+    "Momento de la toma de la muestra CT-2026-014-3": "Q41",
+    "Aviso de doble toma de la muestra CT-2026-014-3": "R41",
+    "Fecha de destrucción prevista de la muestra CT-2026-014-4": "K42",
+    "Días que faltan de la muestra CT-2026-014-4": "L42",
+    "Estado de la muestra CT-2026-014-4": "M42",
+    "Gramos suficientes de la muestra CT-2026-014-4": "N42",
+    "Temperatura conforme de la muestra CT-2026-014-4": "O42",
+    "Momento de la toma de la muestra CT-2026-014-4": "Q42",
+    "Aviso de doble toma de la muestra CT-2026-014-4": "R42",
+    "Fecha de destrucción prevista de la muestra CT-2026-014-5": "K43",
+    "Días que faltan de la muestra CT-2026-014-5": "L43",
+    "Estado de la muestra CT-2026-014-5": "M43",
+    "Gramos suficientes de la muestra CT-2026-014-5": "N43",
+    "Temperatura conforme de la muestra CT-2026-014-5": "O43",
+    "Momento de la toma de la muestra CT-2026-014-5": "Q43",
+    "Aviso de doble toma de la muestra CT-2026-014-5": "R43",
+    "Fecha de destrucción prevista de la muestra CT-2026-014-6": "K44",
+    "Días que faltan de la muestra CT-2026-014-6": "L44",
+    "Estado de la muestra CT-2026-014-6": "M44",
+    "Gramos suficientes de la muestra CT-2026-014-6": "N44",
+    "Temperatura conforme de la muestra CT-2026-014-6": "O44",
+    "Momento de la toma de la muestra CT-2026-014-6": "Q44",
+    "Aviso de doble toma de la muestra CT-2026-014-6": "R44"
+   },
+   "tablas": [
+    {
+     "titulo": "Parámetros legales de las comidas testigo",
+     "cols": [
+      [
+       "Parámetro",
+       "A",
+       "txt"
+      ],
+      [
+       "Valor",
+       "D",
+       "num"
+      ],
+      [
+       "Base legal",
+       "E",
+       "txt"
+      ]
+     ],
+     "filas": [
+      7,
+      11
+     ]
+    },
+    {
+     "titulo": "Supuestos del artículo 30.8",
+     "cols": [
+      [
+       "Supuesto",
+       "A",
+       "txt"
+      ],
+      [
+       "¿Te aplica?",
+       "D",
+       "txt"
+      ]
+     ],
+     "filas": [
+      30,
+      34
+     ]
+    },
+    {
+     "titulo": "Muestras tomadas",
+     "cols": [
+      [
+       "Id de muestra",
+       "A",
+       "txt"
+      ],
+      [
+       "Id del plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Elaboración",
+       "C",
+       "txt"
+      ],
+      [
+       "Lote",
+       "D",
+       "txt"
+      ],
+      [
+       "Fecha de recogida",
+       "E",
+       "txt"
+      ],
+      [
+       "Hora",
+       "F",
+       "txt"
+      ],
+      [
+       "Gramos",
+       "G",
+       "num"
+      ],
+      [
+       "Ubicación",
+       "H",
+       "txt"
+      ],
+      [
+       "Temperatura (°C)",
+       "I",
+       "num"
+      ],
+      [
+       "Conservación",
+       "J",
+       "txt"
+      ],
+      [
+       "Fecha de destrucción prevista",
+       "K",
+       "txt"
+      ],
+      [
+       "Días que faltan",
+       "L",
+       "num"
+      ],
+      [
+       "Estado",
+       "M",
+       "txt"
+      ],
+      [
+       "Gramos suficientes",
+       "N",
+       "txt"
+      ],
+      [
+       "Temperatura conforme",
+       "O",
+       "txt"
+      ],
+      [
+       "Responsable",
+       "P",
+       "txt"
+      ],
+      [
+       "Momento de la toma (art. 30.9)",
+       "Q",
+       "txt"
+      ],
+      [
+       "Aviso",
+       "R",
+       "txt"
+      ]
+     ],
+     "filas": [
+      39,
+      50
+     ]
+    },
+    {
+     "titulo": "Resumen del registro",
+     "cols": [
+      [
+       "Indicador",
+       "A",
+       "txt"
+      ],
+      [
+       "Valor",
+       "D",
+       "num"
+      ]
+     ],
+     "filas": [
+      54,
+      60
+     ]
+    }
+   ]
+  },
+  "Producción y Ficha de Banquete": {
+   "celdas": {
+    "Id del evento (espejo)": "C6",
+    "Fecha del evento (espejo)": "C7",
+    "Comensales (espejo)": "C8",
+    "Obligación de comida testigo (espejo)": "C9",
+    "Raciones por comensal del menú completo": "E25",
+    "Raciones a producir en total": "F25",
+    "Unidades de producción en total": "H25",
+    "Raciones a producir de todas las partidas": "C33",
+    "Unidades de producción de todas las partidas": "D33",
+    "Horas totales del evento": "D64",
+    "Horas de cocina por comensal": "D65",
+    "Raciones a producir del plato E1": "F13",
+    "Unidades de producción del plato E1": "H13",
+    "Raciones a producir del plato E6": "F14",
+    "Unidades de producción del plato E6": "H14",
+    "Raciones a producir del plato E2": "F15",
+    "Unidades de producción del plato E2": "H15",
+    "Raciones a producir del plato P2": "F16",
+    "Unidades de producción del plato P2": "H16",
+    "Raciones a producir del plato P1": "F17",
+    "Unidades de producción del plato P1": "H17",
+    "Raciones a producir del plato D1": "F18",
+    "Unidades de producción del plato D1": "H18",
+    "Raciones de la partida Pase y caliente": "C29",
+    "Unidades de producción de la partida Pase y caliente": "D29",
+    "Porcentaje del total de la partida Pase y caliente": "E29",
+    "Raciones de la partida Fríos y entrantes": "C30",
+    "Unidades de producción de la partida Fríos y entrantes": "D30",
+    "Porcentaje del total de la partida Fríos y entrantes": "E30",
+    "Raciones de la partida Postres y panadería": "C31",
+    "Unidades de producción de la partida Postres y panadería": "D31",
+    "Porcentaje del total de la partida Postres y panadería": "E31",
+    "Raciones de la partida Barra y bebidas": "C32",
+    "Unidades de producción de la partida Barra y bebidas": "D32",
+    "Porcentaje del total de la partida Barra y bebidas": "E32"
+   },
+   "tablas": [
+    {
+     "titulo": "Menú y producción por plato",
+     "cols": [
+      [
+       "Momento del menú",
+       "A",
+       "txt"
+      ],
+      [
+       "Id del plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Elaboración",
+       "C",
+       "txt"
+      ],
+      [
+       "Partida",
+       "D",
+       "txt"
+      ],
+      [
+       "Raciones por comensal",
+       "E",
+       "num"
+      ],
+      [
+       "Raciones a producir",
+       "F",
+       "num"
+      ],
+      [
+       "Raciones por unidad de producción",
+       "G",
+       "num"
+      ],
+      [
+       "Unidades de producción",
+       "H",
+       "num"
+      ]
+     ],
+     "filas": [
+      13,
+      25
+     ]
+    },
+    {
+     "titulo": "Producción por partida",
+     "cols": [
+      [
+       "Partida",
+       "A",
+       "txt"
+      ],
+      [
+       "Raciones a producir",
+       "C",
+       "num"
+      ],
+      [
+       "Unidades de producción",
+       "D",
+       "num"
+      ],
+      [
+       "Porcentaje del total",
+       "E",
+       "pct1"
+      ]
+     ],
+     "filas": [
+      29,
+      33
+     ]
+    },
+    {
+     "titulo": "Timing del evento",
+     "cols": [
+      [
+       "Fecha",
+       "A",
+       "txt"
+      ],
+      [
+       "Hora",
+       "B",
+       "txt"
+      ],
+      [
+       "Hito",
+       "C",
+       "txt"
+      ],
+      [
+       "Partida o área",
+       "D",
+       "txt"
+      ],
+      [
+       "Responsable (id)",
+       "E",
+       "txt"
+      ],
+      [
+       "Nombre",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      37,
+      51
+     ]
+    },
+    {
+     "titulo": "Personal asignado al evento",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Nombre",
+       "B",
+       "txt"
+      ],
+      [
+       "Puesto en el evento",
+       "C",
+       "txt"
+      ],
+      [
+       "Horas",
+       "D",
+       "num"
+      ],
+      [
+       "Día",
+       "E",
+       "txt"
+      ]
+     ],
+     "filas": [
+      55,
+      64
+     ]
+    }
+   ]
+  }
+ }
+}

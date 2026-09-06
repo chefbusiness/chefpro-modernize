@@ -2,7 +2,7 @@
 title: "APPCC Restaurante: Guía 2026 para Pasar la Inspección"
 description: "Guía práctica de APPCC para restaurantes en 2026: prerrequisitos, PCC, registros e inspecciones, y cómo la IA genera tu plan y automatiza los registros."
 pubDate: 2026-04-03
-modDate: 2026-08-31
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b6-1.jpg
 imageAlt: "Chef comprobando la temperatura de los alimentos con termómetro digital"
@@ -38,6 +38,8 @@ Sin teoría de consultor aburrida. Solo lo que funciona en la cocina real.
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/b6-2.jpg" alt="Cámara frigorífica organizada con panel de temperatura digital"/></figure>
 
 
+
+<p>Los registros son la mitad del trabajo; la otra mitad es el criterio de quien dirige la cocina: qué temperaturas gobiernan cada proceso, de qué respondes tú y qué mira el inspector. Está desarrollado en el <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p>
 
 ## Qué es el APPCC y por qué es obligatorio en tu restaurante
 

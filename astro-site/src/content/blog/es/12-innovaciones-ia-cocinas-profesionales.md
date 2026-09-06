@@ -2,7 +2,7 @@
 title: "12 Innovaciones de IA que Están Revolucionando las Cocinas Profesionales"
 description: "El sector gastronómico está viviendo una transformación sin precedentes. Según datos recientes, el 74% de los establecimientos hosteleros en España ya…"
 pubDate: 2025-12-26
-modDate: 2026-09-05
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/12-innovaciones-ia-cocinas-3.jpeg
 imageAlt: "12 Innovaciones de IA que Están Revolucionando las Cocinas Profesionales"
@@ -30,7 +30,7 @@ wpId: 1923
 
 
 
-<h2 class="wp-block-heading">El Contexto Actual: Por Qué la IA es Inevitable en la Gastronomía</h2>
+<p>La tecnología ordena lo que ya tiene sistema: si la producción, la ficha técnica y el pase no están escritos, no hay herramienta que los arregle. El <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a> es ese sistema, con sus siete plantillas de cocina.</p><h2 class="wp-block-heading">El Contexto Actual: Por Qué la IA es Inevitable en la Gastronomía</h2>
 
 
 

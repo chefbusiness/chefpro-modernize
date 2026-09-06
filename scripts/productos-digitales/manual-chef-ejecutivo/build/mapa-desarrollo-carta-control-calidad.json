@@ -1,0 +1,449 @@
+{
+ "fichero": "desarrollo-carta-control-calidad.xlsx",
+ "producto": "manual-chef-ejecutivo",
+ "libro": 5,
+ "que_decide": "Renovar la carta con método y comprobar que lo que sale por el pase es lo que dice la ficha",
+ "alerta_dias_en_prueba": {
+  "celda_limite": "Calendario de Temporada!C8",
+  "dias": 30,
+  "texto": "REVISAR: demasiados días en prueba sin ficha cerrada",
+  "plato_que_la_dispara": "N3",
+  "dias_naturales": true
+ },
+ "alimenta_libro_1": {
+  "tiempos_de_pase": [
+   "Control de Calidad del Pase!D49",
+   "Control de Calidad del Pase!D50",
+   "Control de Calidad del Pase!D51"
+  ],
+  "cumplimiento_ficha": "Control de Calidad del Pase!D52",
+  "como": "copia manual: cero fórmulas entre ficheros (SPEC D4)"
+ },
+ "vacias_a_proposito": [
+  "Calendario de Temporada!O16",
+  "Calendario de Temporada!P16",
+  "Calendario de Temporada!O17",
+  "Calendario de Temporada!P17"
+ ],
+ "hojas": {
+  "Calendario de Temporada": {
+   "celdas": {
+    "Fecha para simular": "C6",
+    "Hoy (fecha de referencia)": "C7",
+    "Días máximos en prueba sin ficha cerrada": "C8",
+    "Platos en desarrollo": "C28",
+    "Platos con ficha técnica cerrada": "C29",
+    "Porcentaje de platos con ficha cerrada": "C30",
+    "Platos que superan los días máximos en prueba": "C31",
+    "Platos ya lanzados": "C32",
+    "Pruebas registradas en total": "C33",
+    "Días naturales desde la primera prueba del plato N1": "K13",
+    "Hitos con fecha puesta del plato N1": "L13",
+    "Aviso del plato N1": "M13",
+    "Pruebas hechas del plato N1": "N13",
+    "Resultado medio del plato N1": "O13",
+    "Coste medio estimado por ración del plato N1": "P13",
+    "Veces aprobado del plato N1": "Q13",
+    "Veces descartado del plato N1": "R13",
+    "Días naturales desde la primera prueba del plato N2": "K14",
+    "Hitos con fecha puesta del plato N2": "L14",
+    "Aviso del plato N2": "M14",
+    "Pruebas hechas del plato N2": "N14",
+    "Resultado medio del plato N2": "O14",
+    "Coste medio estimado por ración del plato N2": "P14",
+    "Veces aprobado del plato N2": "Q14",
+    "Veces descartado del plato N2": "R14",
+    "Días naturales desde la primera prueba del plato N3": "K15",
+    "Hitos con fecha puesta del plato N3": "L15",
+    "Aviso del plato N3": "M15",
+    "Pruebas hechas del plato N3": "N15",
+    "Resultado medio del plato N3": "O15",
+    "Coste medio estimado por ración del plato N3": "P15",
+    "Veces aprobado del plato N3": "Q15",
+    "Veces descartado del plato N3": "R15",
+    "Días naturales desde la primera prueba del plato N4": "K16",
+    "Hitos con fecha puesta del plato N4": "L16",
+    "Aviso del plato N4": "M16",
+    "Pruebas hechas del plato N4": "N16",
+    "Resultado medio del plato N4": "O16",
+    "Coste medio estimado por ración del plato N4": "P16",
+    "Veces aprobado del plato N4": "Q16",
+    "Veces descartado del plato N4": "R16",
+    "Días naturales desde la primera prueba del plato N5": "K17",
+    "Hitos con fecha puesta del plato N5": "L17",
+    "Aviso del plato N5": "M17",
+    "Pruebas hechas del plato N5": "N17",
+    "Resultado medio del plato N5": "O17",
+    "Coste medio estimado por ración del plato N5": "P17",
+    "Veces aprobado del plato N5": "Q17",
+    "Veces descartado del plato N5": "R17"
+   },
+   "tablas": [
+    {
+     "titulo": "Calendario de temporada plato a plato",
+     "cols": [
+      [
+       "Id",
+       "A",
+       "txt"
+      ],
+      [
+       "Plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Partida",
+       "C",
+       "txt"
+      ],
+      [
+       "Probar (fecha)",
+       "D",
+       "txt"
+      ],
+      [
+       "Costear (fecha)",
+       "E",
+       "txt"
+      ],
+      [
+       "Documentar la ficha (fecha)",
+       "F",
+       "txt"
+      ],
+      [
+       "Formar a la brigada (fecha)",
+       "G",
+       "txt"
+      ],
+      [
+       "Lanzar (fecha)",
+       "H",
+       "txt"
+      ],
+      [
+       "Estado",
+       "I",
+       "txt"
+      ],
+      [
+       "Ficha técnica cerrada",
+       "J",
+       "txt"
+      ],
+      [
+       "Días naturales desde la primera prueba",
+       "K",
+       "num"
+      ],
+      [
+       "Hitos con fecha puesta (de 5)",
+       "L",
+       "num"
+      ],
+      [
+       "Aviso",
+       "M",
+       "txt"
+      ],
+      [
+       "Pruebas hechas",
+       "N",
+       "num"
+      ],
+      [
+       "Resultado medio (1-5)",
+       "O",
+       "num"
+      ],
+      [
+       "Coste medio estimado por ración",
+       "P",
+       "eur"
+      ],
+      [
+       "Veces aprobado",
+       "Q",
+       "num"
+      ],
+      [
+       "Veces descartado",
+       "R",
+       "num"
+      ]
+     ],
+     "filas": [
+      13,
+      24
+     ]
+    },
+    {
+     "titulo": "Resumen del desarrollo de carta",
+     "cols": [
+      [
+       "Indicador",
+       "B",
+       "txt"
+      ],
+      [
+       "Valor",
+       "C",
+       "num"
+      ]
+     ],
+     "filas": [
+      28,
+      33
+     ]
+    }
+   ]
+  },
+  "Registro de Pruebas de Plato": {
+   "celdas": {
+    "Pruebas registradas": "C39",
+    "Resultado medio de todas las pruebas": "C40",
+    "Coste estimado medio por ración": "C41",
+    "Pruebas aprobadas": "C42",
+    "Pruebas descartadas": "C43",
+    "Pruebas que hubo que repetir": "C44",
+    "Nombre del plato de la prueba 1 de N3": "C6",
+    "Aprobada (1 o 0) de la prueba 1 de N3": "J6",
+    "Descartada (1 o 0) de la prueba 1 de N3": "K6",
+    "Nombre del plato de la prueba 2 de N3": "C7",
+    "Aprobada (1 o 0) de la prueba 2 de N3": "J7",
+    "Descartada (1 o 0) de la prueba 2 de N3": "K7",
+    "Nombre del plato de la prueba 1 de N1": "C8",
+    "Aprobada (1 o 0) de la prueba 1 de N1": "J8",
+    "Descartada (1 o 0) de la prueba 1 de N1": "K8",
+    "Nombre del plato de la prueba 1 de N2": "C9",
+    "Aprobada (1 o 0) de la prueba 1 de N2": "J9",
+    "Descartada (1 o 0) de la prueba 1 de N2": "K9",
+    "Nombre del plato de la prueba 2 de N1": "C10",
+    "Aprobada (1 o 0) de la prueba 2 de N1": "J10",
+    "Descartada (1 o 0) de la prueba 2 de N1": "K10",
+    "Nombre del plato de la prueba 2 de N2": "C11",
+    "Aprobada (1 o 0) de la prueba 2 de N2": "J11",
+    "Descartada (1 o 0) de la prueba 2 de N2": "K11",
+    "Nombre del plato de la prueba 3 de N2": "C12",
+    "Aprobada (1 o 0) de la prueba 3 de N2": "J12",
+    "Descartada (1 o 0) de la prueba 3 de N2": "K12",
+    "Nombre del plato de la prueba 3 de N3": "C13",
+    "Aprobada (1 o 0) de la prueba 3 de N3": "J13",
+    "Descartada (1 o 0) de la prueba 3 de N3": "K13"
+   },
+   "tablas": [
+    {
+     "titulo": "Registro de pruebas de plato",
+     "cols": [
+      [
+       "Fecha",
+       "A",
+       "txt"
+      ],
+      [
+       "Id del plato",
+       "B",
+       "txt"
+      ],
+      [
+       "Plato (lo trae el calendario)",
+       "C",
+       "txt"
+      ],
+      [
+       "Número de prueba",
+       "D",
+       "num"
+      ],
+      [
+       "Partida",
+       "E",
+       "txt"
+      ],
+      [
+       "Resultado (1 a 5)",
+       "F",
+       "num"
+      ],
+      [
+       "Coste estimado por ración",
+       "G",
+       "eur"
+      ],
+      [
+       "Decisión",
+       "H",
+       "txt"
+      ],
+      [
+       "Observación",
+       "I",
+       "txt"
+      ],
+      [
+       "Aprobada (1 o 0)",
+       "J",
+       "num"
+      ],
+      [
+       "Descartada (1 o 0)",
+       "K",
+       "num"
+      ]
+     ],
+     "filas": [
+      6,
+      35
+     ]
+    },
+    {
+     "titulo": "Resumen del registro de pruebas",
+     "cols": [
+      [
+       "Indicador",
+       "A",
+       "txt"
+      ],
+      [
+       "Valor",
+       "C",
+       "num"
+      ]
+     ],
+     "filas": [
+      39,
+      44
+     ]
+    }
+   ]
+  },
+  "Control de Calidad del Pase": {
+   "celdas": {
+    "Cumplimiento de ficha técnica en el pase (medido)": "D52",
+    "Cumplimiento de ficha técnica (objetivo de la casa)": "E52",
+    "Lectura del cumplimiento de ficha": "F52",
+    "Muestreos hechos": "D53",
+    "Muestreos NO conformes con la ficha": "D54",
+    "Platos devueltos por el cliente": "D55",
+    "Temperatura de emplatado más baja del muestreo": "D56",
+    "Temperatura de emplatado más alta del muestreo": "D57",
+    "Temperatura mínima de mantenimiento en caliente (CE-10)": "D58",
+    "Muestras de elaboraciones que se mantienen en caliente": "D59",
+    "De ellas, por debajo del mínimo de mantenimiento en caliente": "D60",
+    "Tiempo medio de pase medido en Entrantes": "D49",
+    "Tiempo de pase objetivo en Entrantes": "E49",
+    "Lectura del tiempo de pase en Entrantes": "F49",
+    "Muestreos de la familia Entrantes": "H49",
+    "Tiempo medio de pase medido en Principales": "D50",
+    "Tiempo de pase objetivo en Principales": "E50",
+    "Lectura del tiempo de pase en Principales": "F50",
+    "Muestreos de la familia Principales": "H50",
+    "Tiempo medio de pase medido en Postres": "D51",
+    "Tiempo de pase objetivo en Postres": "E51",
+    "Lectura del tiempo de pase en Postres": "F51",
+    "Muestreos de la familia Postres": "H51"
+   },
+   "tablas": [
+    {
+     "titulo": "Muestreo del pase",
+     "cols": [
+      [
+       "Fecha",
+       "A",
+       "txt"
+      ],
+      [
+       "Servicio",
+       "B",
+       "txt"
+      ],
+      [
+       "Id del plato",
+       "C",
+       "txt"
+      ],
+      [
+       "Familia",
+       "D",
+       "txt"
+      ],
+      [
+       "Temperatura de emplatado (°C)",
+       "E",
+       "num"
+      ],
+      [
+       "Tiempo de pase (min)",
+       "F",
+       "num"
+      ],
+      [
+       "Conforme a la ficha",
+       "G",
+       "txt"
+      ],
+      [
+       "Devuelto por el cliente",
+       "H",
+       "txt"
+      ],
+      [
+       "Observación",
+       "I",
+       "txt"
+      ],
+      [
+       "Conforme (1 o 0)",
+       "J",
+       "num"
+      ],
+      [
+       "Devuelto (1 o 0)",
+       "K",
+       "num"
+      ],
+      [
+       "¿Se mantiene en caliente? (Sí/No)",
+       "L",
+       "txt"
+      ]
+     ],
+     "filas": [
+      6,
+      45
+     ]
+    },
+    {
+     "titulo": "Resumen del muestreo y objetivos de la casa",
+     "cols": [
+      [
+       "Indicador",
+       "A",
+       "txt"
+      ],
+      [
+       "Medido",
+       "D",
+       "num"
+      ],
+      [
+       "Objetivo de la casa",
+       "E",
+       "num"
+      ],
+      [
+       "Lectura",
+       "F",
+       "txt"
+      ]
+     ],
+     "filas": [
+      49,
+      60
+     ]
+    }
+   ]
+  }
+ }
+}

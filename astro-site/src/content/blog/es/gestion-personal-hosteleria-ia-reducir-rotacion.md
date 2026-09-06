@@ -2,7 +2,7 @@
 title: "Rotación de Personal en Hostelería: Cómo Reducirla con IA"
 description: "La rotación de personal en hostelería cuesta 3.000-5.000 € por baja. Por qué se van y cómo retenerlos con onboarding, turnos justos, formación e IA."
 pubDate: 2026-03-21
-modDate: 2026-09-04
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/gestion-personal-hosteleria-ia-1.jpg
 imageAlt: "Equipo de restaurante en reunión con gerente revisando turnos en pantalla digital"
@@ -36,6 +36,8 @@ El problema no es que la gente no quiera trabajar, como a veces se suelta en la 
 
 
 <p>Reducir la rotación también se juega en la matriz de formación y polivalencia del equipo: el <a href="https://aichef.pro/manual-manager-restaurante">Manual del Manager de Restaurante</a> trae la plantilla de cross-training y el cálculo del coste real de una baja.</p>
+
+<p>En cocina, retener pasa también por la evaluación técnica y el plan de desarrollo: qué competencias domina cada persona, cuál es su próxima partida a aprender y qué se le pide para ascender. Esa plantilla va en el <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p>
 
 ## Por qué la hostelería quema equipos: las causas reales de fuga
 

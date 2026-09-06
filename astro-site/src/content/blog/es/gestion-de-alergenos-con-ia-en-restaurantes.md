@@ -2,7 +2,7 @@
 title: "Gestión de Alérgenos con IA en Restaurantes: Guía Especializada para Profesionales de la Hostelería"
 description: "La gestión de alérgenos en restaurantes se ha convertido en uno de los mayores desafíos para los profesionales de la hostelería. Con más de 2 millones de…"
 pubDate: 2025-12-30
-modDate: 2026-09-05
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/gestion-alergenos-con-ia-en-restaurantes-4.jpeg
 imageAlt: "Gestión de Alérgenos con IA en Restaurantes: Guía Especializada para Profesionales de la Hostelería - AI Chef Pro"
@@ -30,7 +30,7 @@ wpId: 1965
 
 
 
-<h2 class="wp-block-heading">La realidad de las alergias alimentarias en España: datos que todo hostelero debe conocer</h2>
+<p>Para llevar el alérgeno al proceso —no sólo a la carta— la ficha técnica de proceso registra contacto, traza, utensilio compartido y sustitución posible de cada elaboración. Es una de las siete herramientas del <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p><h2 class="wp-block-heading">La realidad de las alergias alimentarias en España: datos que todo hostelero debe conocer</h2>
 
 
 

@@ -587,7 +587,7 @@
     {
       "id": "CONV-02",
       "tema": "Convenio colectivo de hostelería de Madrid",
-      "dato": "Convenio Colectivo del Sector de Hostelería y Actividades Turísticas de la Comunidad de Madrid (2023-2025), en ultraactividad en 2026",
+      "dato": "Convenio Colectivo del Sector de Hostelería y Actividades Turísticas de la Comunidad de Madrid, con duración pactada del 1 de enero de 2023 al 31 de diciembre de 2025 (art. 5.A). El propio art. 5 prevé que «salvo denuncia expresa y válida del Convenio, se prorrogará automáticamente por plazos iguales al de su duración inicial», y en el BOCM no consta publicado el acto de denuncia, por lo que NO puede afirmarse que esté «en ultraactividad». Formulación verificable: la tabla salarial de 2025 es la última publicada en el BOCM; a 06-09-2026 no consta tabla posterior.",
       "cifra": null,
       "unidad": null,
       "anio_del_dato": "2023-2025",
@@ -1679,7 +1679,7 @@
     {
       "id": "MM-15",
       "tema": "Diferencias salariales por provincia",
-      "dato": "El mismo puesto cobra muy distinto según el convenio provincial: un cocinero de nivel III está entre 1.160 y 1.284 euros al mes en Madrid, cuyo convenio expiró el 31-12-2025 y sigue en ultraactividad, frente a entre 1.607 y 1.803 euros en Barcelona, con convenio vigente 2025-2028",
+      "dato": "El mismo puesto cobra muy distinto según el convenio provincial: un cocinero de nivel III está entre 1.160,37 y 1.283,83 euros al mes de salario base en Madrid, cuyo convenio tenía duración pactada hasta el 31-12-2025 y cuya tabla de 2025 es la última publicada en el BOCM, frente a entre 1.607,25 y 1.803,05 euros en Barcelona, con convenio vigente 2025-2028 y tablas ya publicadas para 2026, 2027 y 2028. Las clases de establecimiento no son homologables entre convenios (Madrid A-C más D de catering; Cataluña A-E, con E = càtering).",
       "cifra": "1.160-1.284 € Madrid vs 1.607-1.803 € Barcelona",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -1931,7 +1931,7 @@
     {
       "id": "MM-33",
       "tema": "Anisakis",
-      "dato": "El RD 1420/2006 está derogado desde el 22 de diciembre de 2022. Hoy manda el RD 1021/2022: congelar a -20 °C durante 24 horas o a -35 °C durante 15 horas, en la totalidad del producto, el pescado marino y los cefalópodos que se sirvan crudos, escabechados o en salazón, e informar al cliente por cartel o carta-menú. Puede haberlo hecho el proveedor si está justificado documentalmente",
+      "dato": "El RD 1420/2006 está derogado desde el 22 de diciembre de 2022. Hoy manda el RD 1021/2022, art. 8: congelar a -20 °C durante 24 horas o a -35 °C durante 15 horas, en la totalidad del producto, los productos de la pesca derivados de pescados (excepto pescado de aguas continentales) y los moluscos cefalópodos que se sirvan crudos, escabechados, en salazón «o sometidos a cualquier otro tratamiento si este es insuficiente para matar las larvas de anisakis viables», e informar al cliente por cartel o carta-menú. Puede haberlo hecho el proveedor si está justificado documentalmente, y la acuicultura marina queda exceptuada con la declaración del operador de origen por lote.",
       "cifra": "-20 °C/24 h o -35 °C/15 h",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2393,7 +2393,7 @@
     {
       "id": "CE-07",
       "tema": "Sin gluten",
-      "dato": "Límites para anunciar un plato «sin gluten» (≤20 mg/kg) o «muy bajo en gluten» (≤100 mg/kg), vigentes desde el 20-07-2016. El reglamento no menciona expresamente a la restauración, aunque tampoco la excluye",
+      "dato": "Límites para anunciar un plato «sin gluten» (20 mg/kg) o «muy bajo en gluten» (100 mg/kg), aplicables al alimento «tal como se vende al consumidor final»; la avena de un producto así declarado no puede pasar de 20 mg/kg. Aplicable desde el 20 de julio de 2016. El reglamento no nombra expresamente a la restauración, pero tampoco la excluye: su art. 1 fija el ámbito en «la transmisión de información a los consumidores sobre la ausencia o la presencia reducida de gluten en los alimentos». No usar la ausencia de mención para sugerir que un plato de carta queda fuera.",
       "cifra": "20 mg/kg / 100 mg/kg",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2435,7 +2435,7 @@
     {
       "id": "CE-10",
       "tema": "Temperaturas",
-      "dato": "Elaborar con la menor antelación posible; mantener en caliente a ≥63 °C (art. 30.2); refrigeradas a ≤4 °C si la vida útil es mayor de 24 horas o a ≤8 °C si es menor; congeladas a ≤-18 °C; enfriar de 60 a 10 °C en menos de 2 horas; recalentar a ≥74 °C durante 15 segundos en el centro, en la hora siguiente a sacarlo del frigorífico. El art. 30.5 admite temperaturas distintas si el operador demuestra ante la autoridad competente que son seguras, y el art. 30.7 admite un recalentamiento a temperatura distinta si se documenta su equivalencia",
+      "dato": "Elaborar con la menor antelación posible; mantener en caliente a >=63 °C (art. 30.2); refrigeradas a <=4 °C si la vida útil es mayor de 24 horas o a <=8 °C si es menor (30.3); congeladas a <=-18 °C (30.4); enfriar de 60 a 10 °C en menos de 2 horas (30.6); recalentar a >=74 °C durante 15 segundos en el centro, en la hora siguiente a sacarlo del frigorífico (30.7). El art. 30.5 admite temperaturas de conservación distintas de las del APARTADO 3 (solo refrigeración: nunca del 63 °C en caliente ni de los -18 °C) si el operador demuestra ante la autoridad competente que se basan en evidencias científicas. El art. 30.7 admite un recalentamiento a temperatura distinta si las combinaciones tiempo/temperatura son equivalentes en destrucción de microorganismos, y termina con una regla operativa que hay que citar: «Todos los alimentos recalentados que no se consuman se descartarán y no volverán a calentarse ni se volverán a almacenar».",
       "cifra": "63/4/8/-18/74 °C",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2449,7 +2449,7 @@
     {
       "id": "CE-11",
       "tema": "Comidas testigo",
-      "dato": "Obligación de conservar comidas testigo (ración mínima 100 gramos, identificada y fechada, en refrigeración ≤4 °C o congelación ≤-18 °C durante mínimo 7 días) para quien elabore o sirva comidas a residencias, hospitales, comedores escolares, comedores colectivos con menú común, medios de transporte, eventos como actividad principal, o encargos para grupos de más de 40 personas. Muy relevante para el chef ejecutivo de catering, banquetes u hotel",
+      "dato": "Obligación de conservar comidas testigo (ración mínima 100 gramos, identificada y fechada, en refrigeración <=4 °C o congelación <=-18 °C durante mínimo 7 días) para quien elabore o sirva comidas a residencias de mayores, centros de día, comedores escolares, escuelas infantiles, hospitales, campamentos infantiles u otras colectividades similares; comedores colectivos (institucionales, de empresa) con menú común; medios de transporte; eventos cuando esa sea la actividad principal de la empresa; y por encargo para grupos o eventos de más de 40 personas. El art. 30.9 añade el caso del catering: si la elaboración y el servicio se hacen en establecimientos distintos, quien elabora recoge la testigo en el momento más próximo a su salida del establecimiento y quien la sirve la recoge en el momento del servicio, es decir, dos tomas y no una.",
       "cifra": "100 g / 7 días / 40 personas",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2463,7 +2463,7 @@
     {
       "id": "CE-12",
       "tema": "Etiquetado «elaboración propia»",
-      "dato": "La mención «ELABORADO POR» o «ELABORACIÓN PROPIA» es voluntaria, no obligatoria. No se considera elaboración el fraccionamiento o envasado de un producto ya elaborado por otro fabricante, ni el corte o deshuesado de carne fresca, ni la limpieza o corte de pescado",
+      "dato": "La mención «ELABORADO POR» o «ELABORACIÓN PROPIA» es voluntaria, no obligatoria. No se considera elaboración el fraccionamiento o envasado de un producto ya elaborado por otro fabricante, ni el corte o deshuesado de carne fresca, ni la limpieza o corte de pescado. Contrapartida del art. 11.b): cuando un producto lleve la mención «ELABORACIÓN PROPIA», «solo podrán venderse en el establecimiento donde se han elaborado o en las sucursales del mismo».",
       "cifra": "",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2491,7 +2491,7 @@
     {
       "id": "CE-14",
       "tema": "Anisakis",
-      "dato": "Congelar a -20 °C durante 24 horas como mínimo o a -35 °C durante 15 horas como mínimo, en la totalidad del producto; informar al consumidor por cartel o carta-menú; excepción si se aplica un tratamiento térmico de 60 °C durante al menos 1 minuto antes de servir",
+      "dato": "Congelar a -20 °C durante 24 horas como mínimo o a -35 °C durante 15 horas como mínimo, en la totalidad del producto, los productos de la pesca derivados de pescados (EXCEPTO pescado de aguas continentales) o moluscos cefalópodos que se vayan a consumir crudos, escabechados, en salazón «o sometidos a cualquier otro tratamiento si este es insuficiente para matar las larvas de anisakis viables». La congelación puede haberla hecho una etapa anterior si está justificado documentalmente. Excepción de acuicultura marina: no hace falta congelar si cada lote se acompaña de una declaración del operador de origen (criados a partir de embriones y alimentados con dieta libre de parásitos viables) y el operador ha verificado la ausencia de parásitos por procedimientos aprobados. Hay que informar al consumidor por cartel o carta-menú. No hace falta congelar si antes del consumo se aplica un tratamiento térmico de al menos 60 °C durante al menos 1 minuto en el centro del producto.",
       "cifra": "-20°C/24h · -35°C/15h · 60°C/1min",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2589,7 +2589,7 @@
     {
       "id": "CE-21",
       "tema": "PRL — temperatura del local",
-      "dato": "La temperatura del local de trabajo debe estar entre 17 y 27 °C para trabajo sedentario y entre 14 y 25 °C para trabajo ligero; la norma no fija un rango para trabajo pesado. La categoría de trabajo (sedentario/ligero/pesado) la determina la evaluación de riesgos de cada cocina, y el Anexo III del RD 486/1997 admite condicionantes propios del local. Humedad relativa 30-70 %; ventilación mínima 50 m³/hora/trabajador en ambientes calurosos",
+      "dato": "La temperatura del local de trabajo debe estar entre 17 y 27 °C para trabajo sedentario propio de oficinas o similares y entre 14 y 25 °C para trabajos ligeros; la norma no fija un rango para trabajo pesado. La categoría de trabajo la determina la evaluación de riesgos de cada cocina, y el punto 4 del Anexo III admite «las limitaciones o condicionantes que puedan imponer, en cada caso, las características particulares del propio lugar de trabajo, de los procesos u operaciones que se desarrollen en él y del clima de la zona». Humedad relativa 30-70 % (límite inferior del 50 % donde haya riesgo por electricidad estática). Renovación mínima de aire: 30 m3/hora por trabajador solo en trabajos sedentarios en ambientes no calurosos ni contaminados por humo de tabaco, y 50 m3/hora por trabajador «en los casos restantes», que es donde siempre cae una cocina.",
       "cifra": "17-27 °C sedentario / 14-25 °C ligero",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2617,7 +2617,7 @@
     {
       "id": "CE-23",
       "tema": "PRL — EPI de cocina",
-      "dato": "La utilización regular de cuchillos de mano en producción exige guantes de protección mecánica y delantal o pantalón resistente a cortes; los ambientes húmedos exigen calzado antideslizante. El empresario debe proporcionar el EPI gratuitamente y reponerlo",
+      "dato": "El empresario debe proporcionar gratuitamente los EPI y reponerlos cuando resulte necesario (RD 773/1997, art. 3.c), y solo procede recurrir al EPI cuando el riesgo no se pueda evitar o limitar por protección colectiva u organización del trabajo (art. 4). El Anexo III es una LISTA NO EXHAUSTIVA de actividades que PUEDEN REQUERIR EPI, y su nota dice que «la evaluación de riesgos determinará la necesidad de suministrar un EPI»: en él figuran la «utilización regular de cuchillos de mano en la producción y el sacrificio» (guantes de protección mecánica; delantal protector, polainas o pantalones resistentes a los cortes) y los «trabajos en ambientes húmedos» y «en superficies resbaladizas» (calzado antideslizante). Entre los sectores enumerados están «Industria alimentaria», «Mataderos» y «Limpieza», no «hostelería». Nunca escribir que el Anexo III «exige» un EPI: quien lo convierte en obligación es la evaluación de riesgos.",
       "cifra": "",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2631,7 +2631,7 @@
     {
       "id": "CE-24",
       "tema": "PRL — manipulación de cargas",
-      "dato": "El RD 487/1997 no fija ninguna cifra en kilos; solo exige evaluar factores cualitativos (postura, frecuencia, suelo, agarre). El límite de 25 kg que circula viene de la Guía Técnica no vinculante del INSST",
+      "dato": "El RD 487/1997 no fija ninguna cifra en kilos; su Anexo solo enumera factores cualitativos (características de la carga, esfuerzo físico, características del medio de trabajo, exigencias de la actividad y factores individuales). Dos datos de la propia norma que rematan el mito: su Disposición derogatoria única derogó el Decreto de 15-11-1935 y la Orden de 02-06-1961, que sí prohibían «sacos o fardos de más de 80 kilogramos», y su Disposición final primera encarga al INSHT/INSST una Guía Técnica en la que «se considerarán los valores máximos de carga como referencia». El límite de 25 kg que circula sale de esa Guía Técnica, que no es vinculante.",
       "cifra": "sin cifra en la norma",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2743,7 +2743,7 @@
     {
       "id": "CE-32",
       "tema": "Desperdicio — obligación de hostelería",
-      "dato": "El artículo específico para hostelería confirma el doggy bag universal con envases aptos, reutilizables o reciclables, remite a la Ley 7/2022 para plástico de un solo uso, y permite programas de sensibilización dirigidos al personal de cocina y comedor",
+      "dato": "El artículo específico para hostelería confirma el doggy bag universal, salvo bufé libre o similares, con envases aptos para uso alimentario, reutilizables o fácilmente reciclables, e informando de forma clara y visible en el establecimiento, «preferentemente en la carta o el menú». El «sin coste adicional» tiene una excepción expresa en el propio artículo: el cobro obligatorio de los envases de plástico de un solo uso (título V de la Ley 7/2022). Los programas de sensibilización, educación y formación dirigidos al personal de cocina y comedor NO son de cualquier restaurante: el artículo los atribuye a «las empresas o entidades gestoras de caterings o comedores colectivos y sociales, en colaboración con los centros educativos o sociosanitarios».",
       "cifra": "",
       "unidad": "",
       "anio_del_dato": "2026",
@@ -2757,7 +2757,7 @@
     {
       "id": "CE-33",
       "tema": "Desperdicio — exención del plan de prevención",
-      "dato": "Están exentos de tener plan de prevención del desperdicio los establecimientos de hasta 1.300 m² de superficie útil de exposición y venta (o de actividad si no venden al público); las microempresas quedan excluidas de las obligaciones del art. 6 (plan de prevención, promoción de convenios de donación), pero el doggy bag universal del art. 8 les sigue obligando igual que a cualquier otro establecimiento. Si varios locales bajo el mismo CIF suman juntos más de 1.300 m², sí quedan obligados aunque cada local individual sea menor",
+      "dato": "Están exentos de las obligaciones DEL APARTADO 4 del art. 6 (plan de prevención y promoción de convenios de donación) los establecimientos de hostelería o restauración iguales o inferiores a 1.300 m2, o con superficie útil de exposición y venta al público inferior o igual a 1.300 m2 si venden al público; si varios locales bajo el mismo CIF superan juntos esos 1.300 m2, quedan obligados. Las microempresas quedan excluidas de las obligaciones de todos los apartados anteriores del art. 6 (art. 6.6), pero NO de la ley: el art. 8 (doggy bag) les sigue obligando. Solo las pequeñas explotaciones agrarias quedan excluidas «de las obligaciones de esta ley» (art. 6.7). La ley define microempresa en su art. 3.f): «las empresas que ocupan menos de diez personas y tienen un volumen de negocios anual o un balance general anual no superior a dos millones de euros». Y la Disposición final vigésima retrasa la exigibilidad: «Las medidas obligatorias contenidas en el artículo 6 de esta ley serán aplicadas transcurrido el plazo de un año desde la publicación en el Boletín Oficial del Estado», publicada el 02-04-2025, es decir, exigibles desde el 2 de abril de 2026.",
       "cifra": "1.300 m²",
       "unidad": "",
       "anio_del_dato": "2026",

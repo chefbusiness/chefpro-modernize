@@ -2,7 +2,7 @@
 title: "De Chef Tradicional a Chef IA: Guía de Transición Digital para Profesionales Culinarios"
 description: "Descubre cómo los chefs profesionales están transformando sus cocinas con inteligencia artificial. Guía completa de transición digital con herramientas…"
 pubDate: 2025-09-11
-modDate: 2026-08-31
+modDate: 2026-09-06
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/chef-tradicional-a-chef-ia-1.jpeg
 imageAlt: "De Chef Tradicional a Chef IA: Guía de Transición Digital para Profesionales Culinarios"
@@ -26,7 +26,7 @@ wpId: 1582
 
 
 
-<h2 class="wp-block-heading">¿Por qué los chefs profesionales están adoptando la inteligencia artificial?</h2>
+<p>El salto no es sólo de herramientas: es pasar de ejecutar a dirigir —organigrama, fichas técnicas, indicadores de cocina y evaluación técnica de la brigada—. Ese camino está escrito en el <a href="https://aichef.pro/manual-chef-ejecutivo">Manual del Chef Ejecutivo</a>.</p><h2 class="wp-block-heading">¿Por qué los chefs profesionales están adoptando la inteligencia artificial?</h2>
 
 
 
