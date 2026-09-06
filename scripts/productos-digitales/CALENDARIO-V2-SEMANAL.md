@@ -113,6 +113,14 @@ panadería, food-truck) pasan de 1.1 a 2.2 y el bar de 2.1 a 2.2 con el motor 2.
 el T9 de documentos.
 **Correos (regla de John del 5-sep: un broadcast por producto actualizado/nuevo, cola de 5 días):** Manual 7-sep · Bar-Restaurante 2.1
 **12-sep** (programado) · hermanos de línea A en los slots 17-sep, 22-sep, 27-sep y 2-oct según se apliquen.
+> 🔄 **Cola REPROGRAMADA el 6-sep** (decisión del orquestador con «sobre Resend decide tú» de John): el lanzamiento del **Manual del
+> Chef Ejecutivo** ocupa el **lunes 14-sep 10:00 Madrid** y las actualizaciones de línea A se corren un hueco: bar-restaurante
+> **19-sep**, cafetería **24-sep**, tapas-bar **29-sep**, panadería **4-oct** (los cuatro recreados por API: Resend no permite editar
+> un broadcast programado, sólo borrarlo y crearlo de nuevo) y **food truck 9-oct, que quedó como BORRADOR** «Actualización Plan de
+> Negocio Food Truck 2.2 (ES) — PROGRAMAR 9-oct» porque Resend no admite programar a más de 30 días vista: **programarlo a partir
+> del 9-sep** (`resend-broadcast.py --scheduled-at 2026-10-09T08:00:00Z` o desde el panel). Trampa cazada: al recrear, leer el
+> asunto ANTES de borrar y con `json.loads(strict=False)` (el html trae caracteres de control); un `DELETE` sin el asunto en la mano
+> obligó a reconstruir cuatro asuntos por el patrón del quinto.
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
