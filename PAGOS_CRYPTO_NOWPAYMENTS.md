@@ -243,3 +243,28 @@ Estimación: 12 EUR ≈ 13,91 USDT-TRC20 ≈ 13,92 USDC-Polygon ≈ 0,000174 BTC
 1. John: clave IPN → `np-env-set.sh NOWPAYMENTS_IPN_SECRET ~/.config/nowpayments/ipn-secret deploy-preview` → commit vacío → pago real de prueba de 12 € desde el preview (USDT-TRC20) → IPN capturado en `ipn/` (Blobs) → contrastar variante de firma → email de acceso recibido → dashboard.
 2. Si todo cuadra: merge de la PR, `CRYPTO_PRODUCTS=kit-tareas-cafeteria` + claves en `production`, redeploy, pagos reales del piloto, revisión UX con John, mejoras.
 3. Fase 3: réplica a las otras 4 plantillas + mega-pack, copy hub/términos (ES y EN), `CRYPTO_PRODUCTS=all` (menos el eBook), gate E en verde LIVE, docs y checklist.
+
+---
+
+# Registro — Fase 2: piloto EN PRODUCCIÓN (madrugada del 6-sep-2026, sesión Claude Code)
+
+## Estado a las 02:10 (verificado por curl tras dos apagones térmicos)
+- **PR #78 fusionada a la 01:06** (`bca1d91`). Producción sirve el botón en `/kit-tareas-cafeteria` (2 instancias `data-crypto-product`) y **0 restos** en `/kit-tareas-bar`. Deploys de `main` en `ready` hasta `441234a` (01:46).
+- **Claves en `production`, comprobadas por contrato:** `crypto-checkout` con un producto fuera del allowlist responde `403 product_not_enabled` (si faltara la API key sería `501`) y `nowpayments-ipn` sin firma responde `400 missing_signature` (sin secreto sería `501`). John generó la clave IPN a la 00:53; `fff770c` arregló `np-env-set.sh` para variables ya declaradas en otro contexto.
+- **Pago real de prueba: PENDIENTE de John** («mañana», tiene que cargar una wallet). Hasta entonces la entrega end-to-end con un IPN real NO está verificada en producción; sólo los contratos.
+- **Dos kernel panics por calor (01:38 y 01:48)** mataron la sesión y su restauración. El repo no perdió nada (árbol limpio), pero sí murió un agente de rediseño recién lanzado y dos dictados de John (01:46-01:47) no llegaron a la sesión: se recuperaron de la captura de Wispr Flow. Detalle de la restauración en la memoria `feedback_regla-termica-cpu-65-grados`.
+
+## Decisiones de UX de John (dictados 01:15 → 01:47, literales) — mandan sobre el diseño del botón
+1. «El primero [el botón del hero] no tiene la opción de pagar con cripto. Deberían tenerlo todos.»
+2. «Otro color que no sea el mismo amarillo, para que resalte y se vea diferenciado. Un poco más espaciados con respecto al pago con Stripe, porque están muy pegados uno debajo del otro. Debería haber un espaciado como una línea, un separador o algo así.»
+3. «Otro recuadro independiente del del pago con Stripe, otro debajo que tuviese más borde. El de Stripe tiene un borde amarillo; a este le pondría un bordecito azul, simulando los colores de NOWPayments: un azul pastel suave.»
+4. «Así como colocamos una imagen que anuncia el pago con tarjetas vía Stripe, en cripto tendríamos que colocar alguna imagen con los iconos de Bitcoin, Ethereum, USDC, Litecoin, las principales.»
+5. «La idea es duplicar/replicar el cuadro de pago de Stripe y colocar debajo otro que sea 100 % cripto con los colores corporativos de NOWPayments.»
+6. «Que el botón sea genuino para pagos con cripto, no un call to action con un mega texto. "Sin tarjeta internacional, paga con cripto" lo tiene que decir el texto, pero el botón tiene que ser un botón de pago bien ejecutado: que se entienda que al hacer clic vas a pagar.»
+
+Implementación: `CryptoPayButton.astro` con variantes `hero` / `buybox` / `cta`, tarjeta hermana (no hija) de la de Stripe en el BuyBox, paleta NOWPayments (`#64ACFF` sobre navy), sello «Powered by NOWPayments» con iconos de monedas incrustados (`CryptoCoinIcon.astro`, patrón `BrandIcon`). Regla intocable: todo lo cripto (separador incluido) lo emite el componente dentro de su condicional, para que las 18 landings hermanas no cambien ni un byte. Sale en PR con deploy preview para que John lo vea antes de producción.
+
+## Siguiente sesión (sustituye a la lista de «Siguiente sesión» anterior)
+1. Revisar el preview del rediseño UX con John → merge.
+2. John: pago real de 12 € desde producción (USDT-TRC20) → IPN en `ipn/` (Blobs) → contrastar la variante de firma → email de acceso → dashboard. Con eso se cierra la Fase 2.
+3. Fase 3: réplica a las otras 4 plantillas + mega-pack, copy hub/términos (ES y EN), `CRYPTO_PRODUCTS=all` menos el eBook (9 € < mínimo), gate E en verde LIVE, docs y checklist.
