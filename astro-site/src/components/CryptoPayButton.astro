@@ -407,7 +407,10 @@ const CONFIANZA = [
           <p class="aicp-crypto__note">{SIN_RECARGO}</p>
         </Fragment>
       ) : (
-        <p class="aicp-crypto__note">{NOTA_CORTA}</p>
+        <Fragment>
+          {variant === 'hero' && <p class="aicp-crypto__eyebrow">Pago con criptomonedas</p>}
+          <p class="aicp-crypto__note">{NOTA_CORTA}</p>
+        </Fragment>
       )}
 
       <button
@@ -548,7 +551,9 @@ const CONFIANZA = [
          exactamente el del CTA final: el `margin: 1.5rem 0` de la propia línea con la «o».
          Sumarle aquí el 1.25rem que llevaba antes dejaba el doble de hueco que las otras
          dos puertas. Se deja escrito, y no borrado, para que se lea la decisión. */
-      .aicp-crypto--hero { margin-top: 0; }
+      /* El recuadro dorado del hero es inline-block (~440 px en escritorio); la tarjeta
+         azul se ciñe a ese ancho y se centra, para que las dos se lean como un par. */
+      .aicp-crypto--hero { margin-top: 0; width: 100%; max-width: 27.5rem; margin-left: auto; margin-right: auto; }
 
       /* Separador: la línea con la «o» que pedía John para despegar las dos puertas. */
       .aicp-crypto__sep {
@@ -559,10 +564,17 @@ const CONFIANZA = [
         content: ''; flex: 1 1 auto; height: 1px; background: rgba(255, 255, 255, 0.14);
       }
 
-      /* En el BuyBox esta caja es la TARJETA HERMANA de la de Stripe: mismo molde
-         (rounded-2xl, p-8/md:p-10, border-2, backdrop-blur) en la paleta azul. En hero y
-         CTA final no hay tarjeta —ahí el bloque vive dentro del recuadro que ya existe—,
-         así que la caja no pinta nada. */
+      /* En el BuyBox y en el hero esta caja es la TARJETA HERMANA de la de Stripe: mismo
+         molde (rounded-2xl, border-2, backdrop-blur) en la paleta azul. Un solo diseño
+         en las dos (John, 2026-09-06: «¿por qué dos diseños?»). El CTA final no tiene
+         recuadro dorado, así que ahí tampoco hay tarjeta azul: botón y sello a secas. */
+      .aicp-crypto--hero .aicp-crypto__box {
+        /* p-6 md:p-8, los del recuadro dorado del hero. */
+        padding: 1.5rem; border: 2px solid var(--nowp-line); border-radius: 1rem;
+        background: var(--nowp-veil);
+        -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+      }
+      @media (min-width: 768px) { .aicp-crypto--hero .aicp-crypto__box { padding: 2rem; } }
       .aicp-crypto--buybox .aicp-crypto__box {
         /* p-8 md:p-10 exactos, los mismos que la tarjeta dorada: en móvil las dos cajas
            tienen que pesar igual (John, 2026-09-06, con la captura del móvil delante). */
