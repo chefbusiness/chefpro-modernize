@@ -116,6 +116,14 @@ el T9 de documentos.
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
+0. 🔴 **Seguridad alimentaria en producto VENDIDO (cazado por el research del Manual del Chef Ejecutivo, 6-sep; John: «déjalo
+   anotado para la siguiente sesión»)**: `kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx` y
+   `kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx` dicen «congelación anisakis −20 °C durante 7 días» citando el
+   **RD 1420/2006, derogado**; lo vigente es **−20 °C ≥ 24 h o −35 °C ≥ 15 h** (RD 1021/2022 art. 8.1). Y
+   `kit-inventario/04-recepcion-mercancias.xlsx` cita el **RD 3484/2000 (derogado)** como fuente de los umbrales por fila.
+   Corregir con el MOTOR de cada familia (no a mano sobre el xlsx) + `inject_cache.py` + censo + changelog. **Primera tarea
+   de la próxima sesión impar.**
+
 1. ~~El error del 21 % de IVA está VIVO en la familia de PLANES y afecta a los 10 planes~~ **RESUELTO el 2026-09-05**
    (y la deuda estaba sobredimensionada: medido con openpyxl sobre `dl/`, solo `plan-negocio-bar-restaurante` llevaba el
    molde v2.0 con el 21 %; los 9 hermanos son v1.1 sin ese parámetro). Lo que queda: los 4 hermanos de línea A con
