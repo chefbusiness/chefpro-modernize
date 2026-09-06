@@ -261,18 +261,18 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex flex-col items-center gap-2 mt-4">
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
+        {/* Tercera puerta de pago: el hero se había quedado sin la opción de cripto
+            (John, 2026-09-06: «deberían tenerlo todos»). Va dentro del mismo recuadro de
+            precio, detrás del sello de Stripe; el separador y el sello azul los emite el
+            componente para no tocar el HTML de las landings que la tienen apagada. */}
+        <CryptoPayButton
+          productId={data.slug}
+          productName={cryptoProductName}
+          priceLabel={data.pricing.price}
+          landingPath={`/${data.slug}`}
+          variant="hero"
+        />
       </div>
-      {/* Tercera puerta de pago (John, 2026-09-06: «deberían tenerlo todos»). Igual que en
-          el BuyBox, la tarjeta cripto es HERMANA del recuadro dorado, no hija: «¿por qué
-          dos diseños?». El separador «o» y la tarjeta azul los emite el componente, para
-          no tocar el HTML de las landings que la tienen apagada. */}
-      <CryptoPayButton
-        productId={data.slug}
-        productName={cryptoProductName}
-        priceLabel={data.pricing.price}
-        landingPath={`/${data.slug}`}
-        variant="hero"
-      />
     </div>
   </section>
 
