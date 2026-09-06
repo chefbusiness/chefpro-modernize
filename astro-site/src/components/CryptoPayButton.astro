@@ -676,6 +676,9 @@ const CONFIANZA = [
         font-weight: 800; letter-spacing: -0.03em; line-height: 1;
       }
 
+      /* Navegadores sin <dialog> nativo lo tratan como un bloque cualquiera y pintarían
+         el formulario en mitad de la landing: cerrado = oculto, pase lo que pase. */
+      .aicp-crypto__dialog:not([open]) { display: none; }
       .aicp-crypto__dialog {
         width: min(30rem, calc(100vw - 2rem)); max-height: min(86vh, 46rem);
         padding: 0; border: 1px solid rgba(100, 172, 255, 0.3); border-radius: 1rem;
@@ -758,6 +761,7 @@ const CONFIANZA = [
             consent: 'Marca las dos casillas para continuar.',
             email: 'Revisa el email: ahí es donde te enviamos el acceso.',
             country: 'Elige tu país de facturación.',
+            invalid: 'No hemos podido validar la compra desde esta página. Recárgala e inténtalo de nuevo, o escríbenos a info@aichef.pro y lo resolvemos.',
             generic: 'No hemos podido abrir la pasarela. Vuelve a intentarlo en un minuto o escríbenos a info@aichef.pro y lo resolvemos.'
           };
 
@@ -771,6 +775,8 @@ const CONFIANZA = [
             if (status === 400 && code === 'invalid_email') return MSG.email;
             if (status === 400 && code === 'invalid_country') return MSG.country;
             if (status === 400 && code === 'consent_required') return MSG.consent;
+            /* El resto de 4xx (unknown_product, origin_not_allowed…) no se arregla reintentando. */
+            if (status >= 400 && status < 500) return MSG.invalid;
             return MSG.generic;
           }
 
@@ -791,6 +797,15 @@ const CONFIANZA = [
             var errorEl = form.querySelector('[data-crypto-error]');
             var loading = false;
             var opener = null;
+
+            /* Al volver con «Atrás» desde NOWPayments, el bfcache restaura la página tal
+               cual se dejó: con el submit bloqueado en «Abriendo la pasarela…». */
+            window.addEventListener('pageshow', function (ev) {
+              if (!ev.persisted) return;
+              loading = false;
+              submit.textContent = 'Continuar al pago';
+              syncSubmit();
+            });
 
             function setError(msg) {
               if (!msg) { errorEl.textContent = ''; errorEl.hidden = true; return; }
@@ -824,8 +839,16 @@ const CONFIANZA = [
             syncSubmit();
 
             if (closeBtn) closeBtn.addEventListener('click', closeDialog);
-            /* Clic en el fondo oscuro (el propio dialog ocupa el viewport; el formulario no). */
-            dialog.addEventListener('click', function (ev) { if (ev.target === dialog) closeDialog(); });
+            /* Clic en el fondo oscuro (el propio dialog ocupa el viewport; el formulario no).
+               Se exige que el gesto EMPIECE en el fondo: al arrastrar desde un campo y soltar
+               fuera, el `click` resultante también tiene el dialog como target. */
+            var downOnBackdrop = false;
+            dialog.addEventListener('pointerdown', function (ev) { downOnBackdrop = ev.target === dialog; });
+            dialog.addEventListener('click', function (ev) {
+              var onBackdrop = downOnBackdrop && ev.target === dialog;
+              downOnBackdrop = false;
+              if (onBackdrop) closeDialog();
+            });
 
             dialog.__aicpCryptoOpen = function (btn) {
               opener = btn || null;
