@@ -359,11 +359,20 @@ const MONEDAS = ['tether', 'usdc', 'bitcoin', 'ethereum', 'litecoin', 'solana', 
 const MONEDAS_SELLO = MONEDAS.slice(0, 8);
 
 /**
- * La nota de las tres puertas (bajo el precio en el BuyBox; sobre el botón en hero y CTA).
- * Dos mitades y ninguna habla de países: quien no tiene tarjeta internacional (México,
- * Colombia, Venezuela, Guatemala, Chile…) y quien en la UE o EE. UU. prefiere su wallet.
- * Y lo que de verdad frena la compra: pensar que cripto cuesta más o que el precio baila.
+ * El argumento de venta va en el TEXTO, nunca dentro del botón (John, 2026-09-06).
+ *
+ * ⚠️ Y NO es «cripto para quien no tiene banco». Cripto la elige tanto quien compra desde
+ * México, Colombia, Venezuela, Guatemala o Chile —donde una tarjeta que funcione fuera no
+ * se da por hecha— como quien en la UE o EE. UU. sencillamente prefiere pagar desde su
+ * wallet. Por eso la pregunta tiene DOS mitades y ninguna de las dos habla de países.
  */
+const TITULAR = '¿Sin tarjeta internacional o prefieres pagar desde tu wallet?';
+
+/** Bajo el precio de la tarjeta: lo que de verdad frena la compra es pensar que cripto
+ *  cuesta más o que el precio baila. Las dos cosas se responden aquí. */
+const SIN_RECARGO = 'Mismo precio que con tarjeta, sin recargo. Pagas el equivalente en USDT, USDC, BTC o ETH al cambio del momento.';
+
+/** Hero y CTA final no llevan tarjeta: el argumento entero cabe en una línea. */
 const NOTA_CORTA = '¿Sin tarjeta internacional o prefieres tu wallet? Mismo precio, sin recargo.';
 
 /**
@@ -392,12 +401,10 @@ const CONFIANZA = [
     <div class="aicp-crypto__box">
       {variant === 'buybox' ? (
         <Fragment>
-          {/* Misma factura que la tarjeta de Stripe pero más ligera: etiqueta, nota, botón y
-              sello. Sin precio grande —«con el 12 dentro del botón es suficiente»— ni
-              titular: la oferta (tachado y badge) se anuncia una sola vez, en la dorada,
-              y esta tarjeta no puede medir más que aquella (John, 2026-09-06). */}
           <p class="aicp-crypto__eyebrow">Pago con criptomonedas</p>
-          <p class="aicp-crypto__note">{NOTA_CORTA}</p>
+          <p class="aicp-crypto__headline">{TITULAR}</p>
+          {/* Sin precio grande: ya va dentro del botón y repetirlo era redundante (John). */}
+          <p class="aicp-crypto__note">{SIN_RECARGO}</p>
         </Fragment>
       ) : (
         <p class="aicp-crypto__note">{NOTA_CORTA}</p>
@@ -424,6 +431,14 @@ const CONFIANZA = [
           {MONEDAS_SELLO.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
         </span>
       </div>
+
+      {/* Sólo en la tarjeta del BuyBox: ahí es donde se decide y hay sitio. En hero y CTA
+          final el bloque tiene que pesar lo mismo que el CTA dorado de al lado. */}
+      {variant === 'buybox' && (
+        <ul class="aicp-crypto__trust">
+          {CONFIANZA.map((linea) => <li>{linea}</li>)}
+        </ul>
+      )}
     </div>
 
     {/* El diálogo lo emite SÓLO el BuyBox y lo comparten las tres puertas: es la pieza
@@ -448,11 +463,6 @@ const CONFIANZA = [
           <span class="aicp-crypto__coins aicp-crypto__coins--dialog" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
             {MONEDAS.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
           </span>
-          {/* Las tres frases de confianza viven aquí, donde se decide, y no en la tarjeta:
-              la tarjeta tiene que medir lo mismo que la de Stripe. */}
-          <ul class="aicp-crypto__trust">
-            {CONFIANZA.map((linea) => <li>{linea}</li>)}
-          </ul>
 
           <div class="aicp-crypto__field">
             <label class="aicp-crypto__label" for={emailId}>Tu email (ahí te enviamos el acceso)</label>
@@ -573,13 +583,17 @@ const CONFIANZA = [
         display: flex; flex-direction: column; align-items: center;
       }
 
-
       .aicp-crypto__eyebrow {
-        margin: 0; color: var(--nowp); font-size: 0.72rem; font-weight: 700;
+        margin: 0 0 0.6rem; color: var(--nowp); font-size: 0.72rem; font-weight: 700;
         letter-spacing: 0.14em; text-transform: uppercase;
       }
+      /* El titular en BLANCO, no en azul: el azul es del precio y del botón. Si lo pinto
+         del color de marca compite con el precio y ya no se sabe qué mirar primero. */
+      .aicp-crypto__headline {
+        margin: 0 0 0.9rem; color: #ffffff; font-size: 1.125rem; font-weight: 600; line-height: 1.45;
+      }
 
-      .aicp-crypto__note { margin: 0.75rem 0 1.5rem; color: #9ca3af; font-size: 0.875rem; line-height: 1.6; }
+      .aicp-crypto__note { margin: 0 0 1.5rem; color: #9ca3af; font-size: 0.875rem; line-height: 1.6; }
       /* Hero y CTA final: una sola línea encima del botón, más pequeña. */
       .aicp-crypto--hero .aicp-crypto__note,
       .aicp-crypto--cta .aicp-crypto__note { margin: 0 0 0.8rem; font-size: 0.82rem; }
@@ -594,11 +608,6 @@ const CONFIANZA = [
       }
       .aicp-crypto__trust li { display: block; text-align: center; }
       .aicp-crypto__trust li + li { margin-top: 0.35rem; }
-      /* Dentro del diálogo: alineadas a la izquierda y con marca, como una lista de lo
-         que el comprador se lleva. */
-      .aicp-crypto__dialog .aicp-crypto__trust { margin: 0 0 1rem; }
-      .aicp-crypto__dialog .aicp-crypto__trust li { text-align: left; padding-left: 1.1rem; position: relative; }
-      .aicp-crypto__dialog .aicp-crypto__trust li::before { content: '✓'; position: absolute; left: 0; color: var(--nowp); font-weight: 700; }
 
       /* BOTÓN DE PAGO, no call to action: sólido, corto y con el mismo molde que el
          dorado (px-8/px-10 py-4, text-lg, rounded-xl, hover:scale-[1.02]). */
