@@ -17,8 +17,9 @@
  *   4. En el BuyBox es una TARJETA HERMANA de la de Stripe —mismo molde, borde azul—,
  *      no un botón dentro del recuadro dorado. Por eso la plantilla lo saca FUERA del
  *      `div` de la tarjeta dorada.
- *   5. El botón es un BOTÓN DE PAGO («Pagar con cripto»), sólido y corto. El argumento
- *      («¿Sin tarjeta internacional?…») lo dice el TEXTO de encima, no el botón.
+ *   5. El botón es un BOTÓN DE PAGO («Pagar con cripto — €12»), sólido y corto. El
+ *      argumento («¿Sin tarjeta internacional?…») lo dice el TEXTO de encima, no el botón.
+ *      Desde el 6-sep lleva el precio y va en MAYÚSCULAS por CSS, como los CTA dorados.
  * Y, como el sello «Powered by Stripe» es una imagen con las tarjetas que acepta, aquí se
  * emite su equivalente: pastilla navy con el wordmark de NOWPayments y los 10 iconos de
  * moneda (CryptoCoinIcon.astro), SVG inline, cero peticiones a terceros.
@@ -30,6 +31,16 @@
  * normales de Astro se recogen en el build a partir de los imports, no de lo que se
  * renderiza, y se colarían en las 18 landings hermanas. Por lo mismo NO se usa ni una
  * clase de Tailwind: una utilidad nueva iría al CSS global que cargan todas.
+ *
+ * ⚠️ INVARIANTE (deduplicación 2026-09-06): **las variantes `hero` y `cta` requieren una
+ * instancia `buybox` en la misma página**. El `dialog` (con la lista de ~250 países y los
+ * 10 iconos de moneda) y el `script` los emite SÓLO la variante `buybox` —toda landing de
+ * producto tiene BuyBox—; las otras dos puertas abren ese mismo diálogo por `aria-controls`
+ * apuntando al id compartido `aicp-crypto-dialog-<productId>`, sin variante. Antes cada
+ * instancia emitía los suyos: con tres puertas el HTML pasaba de 194 a 273 KB y sobraban
+ * ~600 nodos del DOM. Si un botón no encuentra su diálogo (una plantilla sin BuyBox), el
+ * JS no se queda mudo: lleva a `#comprar`. El `style` sí va en las TRES instancias —es
+ * pequeño y evita el destello sin estilo del hero, que se pinta antes que el BuyBox—.
  *
  * Al pulsar abre un `dialog` nativo (Esc + ✕ + clic en el fondo) que recoge lo único que
  * el backend necesita y que no puede deducir: email de entrega, país de facturación
@@ -62,13 +73,13 @@ const { productId, productName, priceLabel, landingPath, variant = 'buybox' } = 
 
 const enabled = cryptoEnabledFor(productId);
 
-// Ids únicos por instancia: la misma landing pinta el botón TRES veces (hero, BuyBox y
-// CtaFinal) y `variant` es distinto en cada una, así que el uid las distingue.
-const uid = `${productId}-${variant}`;
-const dialogId = `aicp-crypto-dialog-${uid}`;
-const titleId = `aicp-crypto-title-${uid}`;
-const emailId = `aicp-crypto-email-${uid}`;
-const countryId = `aicp-crypto-country-${uid}`;
+// Ids SIN variante: sólo hay UN diálogo por producto y página —lo emite el BuyBox— y las
+// tres puertas lo comparten. Con la variante dentro del id, el botón del hero apuntaría
+// por `aria-controls` a un elemento que no existe en el documento.
+const dialogId = `aicp-crypto-dialog-${productId}`;
+const titleId = `aicp-crypto-title-${productId}`;
+const emailId = `aicp-crypto-email-${productId}`;
+const countryId = `aicp-crypto-country-${productId}`;
 
 /**
  * Países de facturación (ISO 3166-1 alfa-2, nombres en español de España generados con
@@ -383,9 +394,9 @@ const CONFIANZA = [
     data-crypto-landing={landingPath}
     data-crypto-variant={variant}
   >
-    {variant !== 'hero' && (
-      <div class="aicp-crypto__sep" aria-hidden="true"><span>o</span></div>
-    )}
+    {/* Las TRES puertas llevan el separador: Stripe → «o» → cripto tiene que leerse igual
+        en el hero, en el BuyBox y en el CTA final (John, 2026-09-06, sobre el preview). */}
+    <div class="aicp-crypto__sep" aria-hidden="true"><span>o</span></div>
 
     <div class="aicp-crypto__box">
       {variant === 'buybox' ? (
@@ -408,7 +419,7 @@ const CONFIANZA = [
         data-crypto-open
         aria-haspopup="dialog"
         aria-controls={dialogId}
-      >Pagar con cripto</button>
+      >Pagar con cripto — {priceLabel}</button>
 
       {/* Equivalente del sello "Powered by Stripe": mismo ancho (260 px) y mismo mt-5,
           pero con el wordmark en TEXTO y las monedas en SVG inline — cero imágenes
@@ -433,83 +444,89 @@ const CONFIANZA = [
       )}
     </div>
 
-    <dialog id={dialogId} class="aicp-crypto__dialog" data-crypto-dialog aria-labelledby={titleId}>
-      <form class="aicp-crypto__form" data-crypto-form>
-        <button type="button" class="aicp-crypto__close" data-crypto-close aria-label="Cerrar">✕</button>
+    {/* El diálogo lo emite SÓLO el BuyBox y lo comparten las tres puertas: es la pieza
+        pesada (la lista de ~250 países y los 10 iconos) y con una por instancia el HTML
+        de la landing pasaba de 194 a 273 KB. Los botones del hero y del CTA final llegan
+        hasta aquí por `aria-controls`. */}
+    {variant === 'buybox' && (
+      <dialog id={dialogId} class="aicp-crypto__dialog" data-crypto-dialog data-crypto-product={productId} aria-labelledby={titleId}>
+        <form class="aicp-crypto__form" data-crypto-form>
+          <button type="button" class="aicp-crypto__close" data-crypto-close aria-label="Cerrar">✕</button>
 
-        {/* «paso 1 de 2» porque la elección de moneda y red pasa en NOWPayments: sin
-            decirlo, este formulario parece el pago entero y la redirección desconcierta. */}
-        <h2 id={titleId} class="aicp-crypto__title">Paga con cripto · paso 1 de 2</h2>
-        <p class="aicp-crypto__product">
-          <span>{productName}</span>
-          <span class="aicp-crypto__product-price">{priceLabel}</span>
-        </p>
-        <p class="aicp-crypto__price">
-          Pago único, acceso vitalicio. Pagas su equivalente en la cripto que elijas, sin recargo.
-        </p>
-        <span class="aicp-crypto__coins aicp-crypto__coins--dialog" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
-          {MONEDAS.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
-        </span>
-
-        <div class="aicp-crypto__field">
-          <label class="aicp-crypto__label" for={emailId}>Tu email (ahí te enviamos el acceso)</label>
-          <input
-            class="aicp-crypto__input"
-            id={emailId}
-            type="email"
-            name="email"
-            required
-            autocomplete="email"
-            inputmode="email"
-            placeholder="tucorreo@ejemplo.com"
-            data-crypto-email
-          />
-        </div>
-
-        <div class="aicp-crypto__field">
-          <label class="aicp-crypto__label" for={countryId}>País de facturación</label>
-          <select class="aicp-crypto__input" id={countryId} name="country" required data-crypto-country>
-            <option value="">Elige tu país…</option>
-            <optgroup label="Más frecuentes">
-              {PAISES_FRECUENTES.map((p) => <option value={p.code}>{p.name}</option>)}
-            </optgroup>
-            <optgroup label="Todos los países">
-              {PAISES_RESTO.map((p) => <option value={p.code}>{p.name}</option>)}
-            </optgroup>
-          </select>
-        </div>
-
-        <label class="aicp-crypto__check">
-          <input type="checkbox" required data-crypto-accept />
-          <span>
-            He leído y acepto las <a href="/terminos" target="_blank" rel="noopener noreferrer">condiciones de compra y devoluciones</a>
+          {/* «paso 1 de 2» porque la elección de moneda y red pasa en NOWPayments: sin
+              decirlo, este formulario parece el pago entero y la redirección desconcierta. */}
+          <h2 id={titleId} class="aicp-crypto__title">Paga con cripto · paso 1 de 2</h2>
+          <p class="aicp-crypto__product">
+            <span>{productName}</span>
+            <span class="aicp-crypto__product-price">{priceLabel}</span>
+          </p>
+          <p class="aicp-crypto__price">
+            Pago único, acceso vitalicio. Pagas su equivalente en la cripto que elijas, sin recargo.
+          </p>
+          <span class="aicp-crypto__coins aicp-crypto__coins--dialog" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
+            {MONEDAS.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
           </span>
-        </label>
 
-        <label class="aicp-crypto__check">
-          <input type="checkbox" required data-crypto-waive />
-          <span>
-            Solicito el acceso inmediato al contenido digital y entiendo que, al recibirlo, pierdo el derecho de desistimiento de 14 días
-          </span>
-        </label>
+          <div class="aicp-crypto__field">
+            <label class="aicp-crypto__label" for={emailId}>Tu email (ahí te enviamos el acceso)</label>
+            <input
+              class="aicp-crypto__input"
+              id={emailId}
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              inputmode="email"
+              placeholder="tucorreo@ejemplo.com"
+              data-crypto-email
+            />
+          </div>
 
-        <p class="aicp-crypto__notice">
-          Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente.
-        </p>
+          <div class="aicp-crypto__field">
+            <label class="aicp-crypto__label" for={countryId}>País de facturación</label>
+            <select class="aicp-crypto__input" id={countryId} name="country" required data-crypto-country>
+              <option value="">Elige tu país…</option>
+              <optgroup label="Más frecuentes">
+                {PAISES_FRECUENTES.map((p) => <option value={p.code}>{p.name}</option>)}
+              </optgroup>
+              <optgroup label="Todos los países">
+                {PAISES_RESTO.map((p) => <option value={p.code}>{p.name}</option>)}
+              </optgroup>
+            </select>
+          </div>
 
-        <p class="aicp-crypto__next">
-          Después te llevamos a la página segura de NOWPayments, donde eliges moneda y red.
-        </p>
+          <label class="aicp-crypto__check">
+            <input type="checkbox" required data-crypto-accept />
+            <span>
+              He leído y acepto las <a href="/terminos" target="_blank" rel="noopener noreferrer">condiciones de compra y devoluciones</a>
+            </span>
+          </label>
 
-        <p class="aicp-crypto__error" data-crypto-error role="alert" hidden></p>
+          <label class="aicp-crypto__check">
+            <input type="checkbox" required data-crypto-waive />
+            <span>
+              Solicito el acceso inmediato al contenido digital y entiendo que, al recibirlo, pierdo el derecho de desistimiento de 14 días
+            </span>
+          </label>
 
-        <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>Continuar al pago</button>
+          <p class="aicp-crypto__notice">
+            Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente.
+          </p>
 
-        <p class="aicp-crypto__legal">
-          El cobro lo procesa NOWPayments. Nosotros recibimos la confirmación y te enviamos el enlace de acceso al email que nos dejes.
-        </p>
-      </form>
-    </dialog>
+          <p class="aicp-crypto__next">
+            Después te llevamos a la página segura de NOWPayments, donde eliges moneda y red.
+          </p>
+
+          <p class="aicp-crypto__error" data-crypto-error role="alert" hidden></p>
+
+          <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>Continuar al pago</button>
+
+          <p class="aicp-crypto__legal">
+            El cobro lo procesa NOWPayments. Nosotros recibimos la confirmación y te enviamos el enlace de acceso al email que nos dejes.
+          </p>
+        </form>
+      </dialog>
+    )}
 
     <style is:inline>
       /* Estilos SIN scope de Astro a propósito (is:inline): así no se emiten en las
@@ -530,9 +547,11 @@ const CONFIANZA = [
         --nowp-veil: rgba(100, 172, 255, 0.06);
         text-align: center;
       }
-      /* El hero no lleva separador (el propio texto gris hace de bisagra), pero sí un aire
-         mayor que el mt-4 del sello de Stripe para que no se lea como su pie de foto. */
-      .aicp-crypto--hero { margin-top: 1.25rem; }
+      /* Desde el 2026-09-06 el hero TAMBIÉN lleva separador, así que su aire superior es
+         exactamente el del CTA final: el `margin: 1.5rem 0` de la propia línea con la «o».
+         Sumarle aquí el 1.25rem que llevaba antes dejaba el doble de hueco que las otras
+         dos puertas. Se deja escrito, y no borrado, para que se lea la decisión. */
+      .aicp-crypto--hero { margin-top: 0; }
 
       /* Separador: la línea con la «o» que pedía John para despegar las dos puertas. */
       .aicp-crypto__sep {
@@ -556,6 +575,17 @@ const CONFIANZA = [
       }
       @media (min-width: 768px) { .aicp-crypto--buybox .aicp-crypto__box { padding: 2.5rem; } }
 
+      /* Hero y CTA final NO tienen tarjeta, pero su caja sí tiene que APILAR. El botón
+         —que a partir de 768 px deja de ser w-full— y el sello son los dos inline-level,
+         así que en escritorio se colocaban UNO AL LADO DEL OTRO dentro de una caja con
+         text-align:center (visto en el preview a 1568 px: en el CTA final el sello salía a
+         la derecha del botón). En columna quedan uno debajo de otro a cualquier ancho; el
+         sello ya trae de serie su mt-5, w-full y max-w-[260px]. El BuyBox no se toca. */
+      .aicp-crypto--hero .aicp-crypto__box,
+      .aicp-crypto--cta .aicp-crypto__box {
+        display: flex; flex-direction: column; align-items: center;
+      }
+
       .aicp-crypto__eyebrow {
         margin: 0 0 0.6rem; color: var(--nowp); font-size: 0.72rem; font-weight: 700;
         letter-spacing: 0.14em; text-transform: uppercase;
@@ -574,17 +604,16 @@ const CONFIANZA = [
       .aicp-crypto--hero .aicp-crypto__note,
       .aicp-crypto--cta .aicp-crypto__note { margin: 0 0 0.8rem; font-size: 0.82rem; }
 
-      /* Tres frases de confianza: apiladas en móvil (se leen de un vistazo) y en una
-         tirada con «·» a partir de md, donde la tarjeta mide 448 px y caben en dos líneas. */
+      /* Tres frases de confianza, una por línea SIEMPRE. La versión en una tirada con «·»
+         a partir de md no se leía como tres frases: en escritorio (preview a 1568 px) salía
+         un párrafo corrido con puntos sueltos al principio de línea, justo donde el «·»
+         caía en el salto. Sin separadores en ningún viewport. */
       .aicp-crypto__trust {
         margin: 0.75rem 0 0; padding: 0; list-style: none;
-        color: #9ca3af; font-size: 0.75rem; line-height: 1.6;
+        color: #9ca3af; font-size: 0.75rem; line-height: 1.5;
       }
-      .aicp-crypto__trust li { margin-top: 0.15rem; }
-      @media (min-width: 768px) {
-        .aicp-crypto__trust li { display: inline; margin-top: 0; }
-        .aicp-crypto__trust li + li::before { content: ' · '; color: #4b5563; }
-      }
+      .aicp-crypto__trust li { display: block; text-align: center; }
+      .aicp-crypto__trust li + li { margin-top: 0.35rem; }
 
       /* BOTÓN DE PAGO, no call to action: sólido, corto y con el mismo molde que el
          dorado (px-8/px-10 py-4, text-lg, rounded-xl, hover:scale-[1.02]). */
@@ -592,6 +621,13 @@ const CONFIANZA = [
         display: inline-block; width: 100%; padding: 1rem 2rem;
         border: 0; border-radius: 0.75rem; background: var(--nowp); color: var(--nowp-ink);
         font-family: inherit; font-size: 1.125rem; font-weight: 700; line-height: 1.75rem;
+        /* MAYÚSCULAS por CSS y no en el texto fuente (John, 2026-09-06): en pantalla hace
+           juego con los CTA dorados de Stripe («COMPRAR AHORA — €12», «SÍ, QUIERO EL KIT DE
+           TAREAS — €12») y los lectores de pantalla siguen leyendo «Pagar con cripto — €12»
+           en vez de deletrearlo letra a letra. El precio va en el texto por lo mismo que en
+           el dorado: un botón de pago que no dice cuánto cuesta se pulsa con menos ganas.
+           Vale para las tres variantes; el «Continuar al pago» del diálogo no se toca. */
+        text-transform: uppercase; letter-spacing: 0.01em;
         cursor: pointer; transition: background-color 0.2s ease, transform 0.2s ease;
       }
       .aicp-crypto__pay:hover { background: var(--nowp-hover); transform: scale(1.02); }
@@ -704,135 +740,171 @@ const CONFIANZA = [
       .aicp-crypto__legal { margin: 0; color: #6b7280; font-size: 0.72rem; line-height: 1.45; text-align: center; }
     </style>
 
-    <script is:inline>
-      /* Vanilla, sin framework y sin bundle (is:inline): mismo patrón de fetch que el
-         formulario "¿Ya compraste?" de la plantilla. Se ejecuta UNA sola vez aunque el
-         script aparezca dos veces (BuyBox + CtaFinal) e inicializa todas las instancias. */
-      (function () {
-        if (window.__aicpCryptoPayInit) return;
-        window.__aicpCryptoPayInit = true;
+    {/* El script va con el diálogo: uno por página, no uno por puerta. */}
+    {variant === 'buybox' && (
+      <script is:inline>
+        /* Vanilla, sin framework y sin bundle (is:inline): mismo patrón de fetch que el
+           formulario "¿Ya compraste?" de la plantilla. El guard sigue puesto —el script se
+           emite una sola vez por página, pero una plantilla con dos BuyBox lo duplicaría—;
+           inicializa el diálogo compartido y engancha las tres puertas. */
+        (function () {
+          if (window.__aicpCryptoPayInit) return;
+          window.__aicpCryptoPayInit = true;
 
-        var MSG = {
-          gateway: 'Ahora mismo la pasarela cripto no está disponible; puedes pagar con tarjeta.',
-          rate: 'Demasiados intentos, espera un minuto y vuelve a probar.',
-          notEnabled: 'Este producto todavía no admite cripto.',
-          consent: 'Marca las dos casillas para continuar.',
-          email: 'Revisa el email: ahí es donde te enviamos el acceso.',
-          country: 'Elige tu país de facturación.',
-          generic: 'No hemos podido abrir la pasarela. Vuelve a intentarlo en un minuto o escríbenos a info@aichef.pro y lo resolvemos.'
-        };
+          var MSG = {
+            gateway: 'Ahora mismo la pasarela cripto no está disponible; puedes pagar con tarjeta.',
+            rate: 'Demasiados intentos, espera un minuto y vuelve a probar.',
+            notEnabled: 'Este producto todavía no admite cripto.',
+            consent: 'Marca las dos casillas para continuar.',
+            email: 'Revisa el email: ahí es donde te enviamos el acceso.',
+            country: 'Elige tu país de facturación.',
+            generic: 'No hemos podido abrir la pasarela. Vuelve a intentarlo en un minuto o escríbenos a info@aichef.pro y lo resolvemos.'
+          };
 
-        function messageFor(status, data) {
-          var code = data && (data.error || data.code) ? String(data.error || data.code) : '';
-          if (status === 503 || status === 501) return MSG.gateway;
-          if (status === 429) return MSG.rate;
-          if (status === 403 && code === 'product_not_enabled') return MSG.notEnabled;
-          /* El formulario ya valida en el navegador, así que estos 400 sólo saltan si
-             algo se cuela; aun así merece la pena decir QUÉ revisar. */
-          if (status === 400 && code === 'invalid_email') return MSG.email;
-          if (status === 400 && code === 'invalid_country') return MSG.country;
-          if (status === 400 && code === 'consent_required') return MSG.consent;
-          return MSG.generic;
-        }
-
-        function init(root) {
-          var openBtn = root.querySelector('[data-crypto-open]');
-          var dialog = root.querySelector('[data-crypto-dialog]');
-          var form = root.querySelector('[data-crypto-form]');
-          if (!openBtn || !dialog || !form) return;
-
-          var closeBtn = form.querySelector('[data-crypto-close]');
-          var email = form.querySelector('[data-crypto-email]');
-          var country = form.querySelector('[data-crypto-country]');
-          var accept = form.querySelector('[data-crypto-accept]');
-          var waive = form.querySelector('[data-crypto-waive]');
-          var submit = form.querySelector('[data-crypto-submit]');
-          var errorEl = form.querySelector('[data-crypto-error]');
-          var loading = false;
-
-          function setError(msg) {
-            if (!msg) { errorEl.textContent = ''; errorEl.hidden = true; return; }
-            errorEl.textContent = msg;
-            errorEl.hidden = false;
+          function messageFor(status, data) {
+            var code = data && (data.error || data.code) ? String(data.error || data.code) : '';
+            if (status === 503 || status === 501) return MSG.gateway;
+            if (status === 429) return MSG.rate;
+            if (status === 403 && code === 'product_not_enabled') return MSG.notEnabled;
+            /* El formulario ya valida en el navegador, así que estos 400 sólo saltan si
+               algo se cuela; aun así merece la pena decir QUÉ revisar. */
+            if (status === 400 && code === 'invalid_email') return MSG.email;
+            if (status === 400 && code === 'invalid_country') return MSG.country;
+            if (status === 400 && code === 'consent_required') return MSG.consent;
+            return MSG.generic;
           }
 
-          function syncSubmit() {
-            submit.disabled = loading || !(accept.checked && waive.checked);
-          }
+          /* Un solo diálogo por producto y página. Se inicializa UNA vez y el `product`
+             del payload sale de SU `data-crypto-product`, no del botón que lo abrió. */
+          function initDialog(dialog) {
+            if (dialog.__aicpCryptoReady) return;
+            var form = dialog.querySelector('[data-crypto-form]');
+            if (!form) return;
+            dialog.__aicpCryptoReady = true;
 
-          function openDialog() {
-            setError('');
-            if (typeof dialog.showModal === 'function') dialog.showModal();
-            else dialog.setAttribute('open', '');
-            try { email.focus(); } catch (err) {}
-          }
+            var closeBtn = form.querySelector('[data-crypto-close]');
+            var email = form.querySelector('[data-crypto-email]');
+            var country = form.querySelector('[data-crypto-country]');
+            var accept = form.querySelector('[data-crypto-accept]');
+            var waive = form.querySelector('[data-crypto-waive]');
+            var submit = form.querySelector('[data-crypto-submit]');
+            var errorEl = form.querySelector('[data-crypto-error]');
+            var loading = false;
+            var opener = null;
 
-          function closeDialog() {
-            if (typeof dialog.close === 'function' && dialog.open) dialog.close();
-            else dialog.removeAttribute('open');
-          }
+            function setError(msg) {
+              if (!msg) { errorEl.textContent = ''; errorEl.hidden = true; return; }
+              errorEl.textContent = msg;
+              errorEl.hidden = false;
+            }
 
-          accept.addEventListener('change', syncSubmit);
-          waive.addEventListener('change', syncSubmit);
-          syncSubmit();
+            function syncSubmit() {
+              submit.disabled = loading || !(accept.checked && waive.checked);
+            }
 
-          openBtn.addEventListener('click', openDialog);
-          if (closeBtn) closeBtn.addEventListener('click', closeDialog);
-          /* Clic en el fondo oscuro (el propio dialog ocupa el viewport; el formulario no). */
-          dialog.addEventListener('click', function (ev) { if (ev.target === dialog) closeDialog(); });
+            /* El foco vuelve al botón que abrió el diálogo: con tres puertas en la página,
+               devolverlo al principio del documento perdería al comprador. */
+            function restoreFocus() {
+              var btn = opener;
+              opener = null;
+              if (btn && typeof btn.focus === 'function') { try { btn.focus(); } catch (err) {} }
+            }
 
-          form.addEventListener('submit', function (ev) {
-            ev.preventDefault();
-            if (loading) return;
-            if (!accept.checked || !waive.checked) { setError(MSG.consent); return; }
-            if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+            function closeDialog() {
+              if (typeof dialog.close === 'function' && dialog.open) { dialog.close(); return; }
+              dialog.removeAttribute('open');
+              restoreFocus();
+            }
 
-            var payload = {
-              product: root.getAttribute('data-crypto-product'),
-              email: (email.value || '').trim(),
-              country: (country.value || '').trim().toUpperCase(),
-              acceptPolicy: true,
-              waiveWithdrawal: true
+            /* `close` cubre las tres salidas nativas: ✕, Esc y clic en el fondo. */
+            dialog.addEventListener('close', restoreFocus);
+
+            accept.addEventListener('change', syncSubmit);
+            waive.addEventListener('change', syncSubmit);
+            syncSubmit();
+
+            if (closeBtn) closeBtn.addEventListener('click', closeDialog);
+            /* Clic en el fondo oscuro (el propio dialog ocupa el viewport; el formulario no). */
+            dialog.addEventListener('click', function (ev) { if (ev.target === dialog) closeDialog(); });
+
+            dialog.__aicpCryptoOpen = function (btn) {
+              opener = btn || null;
+              setError('');
+              if (typeof dialog.showModal === 'function') dialog.showModal();
+              else dialog.setAttribute('open', '');
+              try { email.focus(); } catch (err) {}
             };
 
-            loading = true;
-            syncSubmit();
-            submit.textContent = 'Abriendo la pasarela…';
-            setError('');
+            form.addEventListener('submit', function (ev) {
+              ev.preventDefault();
+              if (loading) return;
+              if (!accept.checked || !waive.checked) { setError(MSG.consent); return; }
+              if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
 
-            fetch('/.netlify/functions/crypto-checkout', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(payload)
-            })
-              .then(function (res) {
-                return res.json().catch(function () { return null; }).then(function (data) {
-                  if (res.ok && data && data.url) {
-                    window.location.assign(data.url);
-                    return true;
-                  }
-                  setError(messageFor(res.status, data));
-                  return false;
-                });
+              var payload = {
+                product: dialog.getAttribute('data-crypto-product'),
+                email: (email.value || '').trim(),
+                country: (country.value || '').trim().toUpperCase(),
+                acceptPolicy: true,
+                waiveWithdrawal: true
+              };
+
+              loading = true;
+              syncSubmit();
+              submit.textContent = 'Abriendo la pasarela…';
+              setError('');
+
+              fetch('/.netlify/functions/crypto-checkout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
               })
-              .catch(function () { setError(MSG.generic); return false; })
-              .then(function (redirected) {
-                if (redirected) return;
-                loading = false;
-                submit.textContent = 'Continuar al pago';
-                syncSubmit();
-              });
-          });
-        }
+                .then(function (res) {
+                  return res.json().catch(function () { return null; }).then(function (data) {
+                    if (res.ok && data && data.url) {
+                      window.location.assign(data.url);
+                      return true;
+                    }
+                    setError(messageFor(res.status, data));
+                    return false;
+                  });
+                })
+                .catch(function () { setError(MSG.generic); return false; })
+                .then(function (redirected) {
+                  if (redirected) return;
+                  loading = false;
+                  submit.textContent = 'Continuar al pago';
+                  syncSubmit();
+                });
+            });
+          }
 
-        function start() {
-          var roots = document.querySelectorAll('[data-crypto-product]');
-          for (var i = 0; i < roots.length; i++) init(roots[i]);
-        }
+          /* Cada botón abre el diálogo que dice su `aria-controls`. Si no lo encuentra —una
+             plantilla sin BuyBox, que es quien lo emite—, lleva al bloque de compra en vez
+             de quedarse muerto bajo el dedo del comprador. */
+          function bindOpener(btn) {
+            if (btn.__aicpCryptoBound) return;
+            btn.__aicpCryptoBound = true;
+            btn.addEventListener('click', function () {
+              var id = btn.getAttribute('aria-controls');
+              var dialog = id ? document.getElementById(id) : null;
+              if (dialog && typeof dialog.__aicpCryptoOpen === 'function') { dialog.__aicpCryptoOpen(btn); return; }
+              var c = document.getElementById('comprar');
+              if (c) c.scrollIntoView({ behavior: 'smooth' });
+            });
+          }
 
-        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
-        else start();
-      })();
-    </script>
+          function start() {
+            var dialogs = document.querySelectorAll('[data-crypto-dialog]');
+            for (var i = 0; i < dialogs.length; i++) initDialog(dialogs[i]);
+            var openers = document.querySelectorAll('[data-crypto-open]');
+            for (var j = 0; j < openers.length; j++) bindOpener(openers[j]);
+          }
+
+          if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+          else start();
+        })();
+      </script>
+    )}
   </div>
 )}
