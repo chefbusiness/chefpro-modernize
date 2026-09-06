@@ -23,20 +23,20 @@
 | Cripto (D22) | ✅ `GuiaLandingPage.astro` con las 3 puertas (hero integrado, BuyBox hermana, CTA) + nota de devoluciones; `CRYPTO_PRODUCTS=kit-tareas-cafeteria,manual-chef-ejecutivo` en production (scope conservado) |
 | Imágenes | ✅ 6 galería + OG (`067e1ae`) |
 | Blog | ✅ `fase8h-manual-chef-blog.py`: 4 banners fijados + 13 enlaces contextuales (mise-en-place sin banner: sus 3 están en NUNCA); `blog-lastmod.json` |
-| Email | ✅ `emails/broadcast-manual-chef-ejecutivo-lanzamiento-es.html` (96/34 páginas); **programar el lunes 14-sep 08:00 UTC** tras la prueba a John (§5) |
+| Email | ✅ `emails/broadcast-manual-chef-ejecutivo-lanzamiento-es.html` (96/34 páginas) · prueba enviada a John (`a584e5de…`) · **broadcast `4f921365-4ecf-40e6-aeef-08a0399d52f9` programado para el lunes 14-sep 08:00 UTC (10:00 Madrid)**, segmento «AI Chef Pro ES», asunto «Nuevo: el Manual del Chef Ejecutivo» |
 | Resend (D28) | ✅ cola reprogramada: Manager 7-sep · **Chef 14-sep** · bar 19-sep · cafetería 24-sep · tapas 29-sep · panadería 4-oct · **food truck en BORRADOR** «— PROGRAMAR 9-oct» (Resend no admite >30 días) |
-| Stripe | ⏳ **John**: producto + Payment Link 65 € → env `VITE_STRIPE_PAYMENT_LINK_MANUAL_CHEF_EJECUTIVO` (scope builds, todos los contextos) → `sync-payment-links.py` → commit + push |
+| Stripe | ✅ Payment Link creado por John a las 22:30 (`https://buy.stripe.com/5kQ9AMcgIeAK1MPfnL6oo1q`) · env `VITE_STRIPE_PAYMENT_LINK_MANUAL_CHEF_EJECUTIVO` puesta por Claude (scope builds, todos los contextos) · `payment-links.ts` regenerado (47) · push `c2ceccc` |
 
 Descripción de Stripe propuesta (271 caracteres, sin BOE): «Para quien ya dirige una cocina: 20 capítulos en PDF y DOCX
 editable, 7 herramientas Excel con fórmulas vivas —brigada, producción, ficha técnica, carta y auditoría— y 12 situaciones
 resueltas, para que tu cocina salga igual estés tú o no. Pago único, acceso de por vida.»
 
-## 2. Orden de cierre
+## 2. Orden de cierre (hecho en este orden; queda sólo la compra de prueba real de John)
 1. Deploy `ready` del push `b056abc` → `python3 scripts/productos-digitales/gate-flujo-postpago.py --only manual-chef-ejecutivo`
    (landing 200, access/library 200, 11 descargas binarias, sección E cripto: 3 `data-crypto-open` + 1 `<dialog>`) ·
    `robots-gate.py --live` · `fase6-gate.py https://aichef.pro/manual-chef-ejecutivo`.
 2. Email: `python3 scripts/productos-digitales/emails/resend-broadcast.py --html scripts/productos-digitales/emails/broadcast-manual-chef-ejecutivo-lanzamiento-es.html --subject "Nuevo: el Manual del Chef Ejecutivo" --name "Lanzamiento Manual del Chef Ejecutivo (ES)" --test john@chefbusiness.co` → revisar → mismo comando con `--scheduled-at 2026-09-14T08:00:00Z`.
-3. John: Payment Link (65 €, `tax_behavior exclusive`, redirect a `-access?session_id={CHECKOUT_SESSION_ID}`, automatic_tax, invoice) → env var → `sync-payment-links.py` → commit + push → gate LIVE de nuevo → compra de prueba real.
+3. ✅ John creó el Payment Link (65 €) a las 22:30 → env var → `sync-payment-links.py` → `c2ceccc` → gate LIVE (ver §1). **Pendiente: compra de prueba real** (o `aichef.pro/admin/generar-acceso`).
 4. `sitemap-index.xml` a GSC + petición de indexación de `/manual-chef-ejecutivo`.
 
 ## 3. Trampas nuevas de esta sesión (para la memoria)

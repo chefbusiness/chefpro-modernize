@@ -122,6 +122,16 @@ el T9 de documentos.
 > asunto ANTES de borrar y con `json.loads(strict=False)` (el html trae caracteres de control); un `DELETE` sin el asunto en la mano
 > obligó a reconstruir cuatro asuntos por el patrón del quinto.
 
+### ✅ 2026-09-06 (sesión PAR, Claude Code en el Mac) — «Manual del Chef Ejecutivo» PUBLICADO (producto nuevo nº 3, 65 €)
+
+En `main` (`b056abc` → `c2ceccc`) a **65 €** (decisión de John; el Manager sigue a 55 €): manual de 96 páginas + bonus de 34 + 7 xlsx;
+gates en verde; Payment Link de John a las 22:30; **nace con la pasarela cripto** (`CRYPTO_PRODUCTS=kit-tareas-cafeteria,manual-chef-ejecutivo`);
+mailing programado el **lunes 14-sep 10:00 Madrid** (cola de línea A desplazada un hueco, ver arriba). Handoff
+`SESSION_HANDOFF_2026-09-06-manual-chef-ejecutivo.md`. Coste ≈ 17 M tokens de subagentes (sesión dedicada por John). Hallazgo de
+método: `documentos.py` reparte epígrafes pero no `puntos` entre los bloques de un capítulo → prosa duplicada; medir en Food Cost y
+Manager (sesión impar). **Próxima sesión = impar**: anisakis en producto vendido (punto 0 de la deuda) y luego documentos de la guía
+gastronómica (handoff B §20).
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 0. 🔴 **Seguridad alimentaria en producto VENDIDO (cazado por el research del Manual del Chef Ejecutivo, 6-sep; John: «déjalo
