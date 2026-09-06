@@ -4,7 +4,7 @@
 
 **Decisiones de John que mandan:** sistemas separados (nada de facturas en Stripe por ventas cripto); mismo precio en EUR para todos los países (sin lógica de IVA en el botón); piloto en un producto → pulir → replicar a 46 → nativo (Stripe prioritario, NOWPayments secundario); el MCP oficial no se usa con la clave de producción (exige `api_key` como argumento). UX: recuadro cripto **hermano** del de Stripe, azul pastel NOWPayments, botón de pago genuino (no CTA con texto largo), sello con iconos de monedas, y las dos puertas en los tres puntos de compra.
 
-**En curso al escribir esto:** rediseño UX de `CryptoPayButton.astro` (+ `CryptoCoinIcon.astro`) por un agente opus, sin commit todavía; saldrá en una PR con deploy preview.
+**Rediseño UX EN PRODUCCIÓN desde las 03:12** (PR #79 + `ad5bce5` + `a989f39`): hero integrado, BuyBox con dos tarjetas, botón «PAGAR CON CRIPTO — €12», un diálogo por página, 22 hallazgos de la revisión adversarial aplicados. **Réplica al resto de productos EN ESPERA** por decisión de John («probamos primero el pago»): diff preparado y sin aplicar en el worktree `.claude/worktrees/agent-a0b26e4cbb20410c2` (detalle y trampa del hero en `PAGOS_CRYPTO_NOWPAYMENTS.md` → «Estado 6-sep 03:20»).
 
 **Bloqueado por John:** el pago real de prueba de 12 € (necesita cargar una wallet) y la decisión sobre el eBook de 9 € (por debajo del mínimo de NOWPayments) y la moneda de liquidación.
 
