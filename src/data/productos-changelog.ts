@@ -97,6 +97,25 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'manual-chef-ejecutivo': {
+    version: '1.0',
+    updated: '2026-09-06',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-09-06',
+        title: 'Lanzamiento',
+        changes: [
+          'Manual completo en PDF y en DOCX editable: 20 capítulos de criterio para quien dirige una cocina — brigada y partidas, producción, estandarización de platos, seguridad alimentaria, prevención de riesgos y desarrollo de carta.',
+          '7 herramientas Excel con fórmulas vivas: cuadro de mando de cocina, planificación de producción semanal, ficha técnica de proceso, brigada con puestos y evaluación, desarrollo de carta y control de calidad, banquetes y comidas testigo, y auditoría interna de cocina.',
+          'Bloque legal de cocina comprobado el 6 de septiembre de 2026: temperaturas, alérgenos, vida útil, comidas testigo y prevención de riesgos, cada uno con su norma, su artículo, su enlace y la fecha en que se comprobó.',
+          'Los parámetros legales (temperaturas, plazos, umbrales y objetivos) nunca viven dentro de una fórmula: van en casillas editables con su nota y su fecha, y la herramienta de auditoría trae una hoja de estado normativo con fecha de corte.',
+          'Ningún libro depende de otro: cero referencias entre ficheros, para que puedas renombrar carpetas o abrir uno suelto sin que se rompa nada.',
+          'Bonus: 12 situaciones resueltas en cocina, cada una con qué NO hacer, protocolo, norma aplicable, herramienta del pack y el guion literal de la conversación cuando la hay.',
+        ],
+      },
+    ],
+  },
   'manual-manager-restaurante': {
     version: '1.0',
     updated: '2026-09-04',

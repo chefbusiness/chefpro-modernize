@@ -314,6 +314,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: 'Operations, people, numbers, service and law: 20 chapters and 7 Excel tools.',
     },
   },
+  'manual-chef-ejecutivo': {
+    id: 'manual-chef-ejecutivo',
+    url: '/manual-chef-ejecutivo',
+    price: '€65',
+    name: { es: 'Manual del Chef Ejecutivo', en: 'Executive Chef Handbook' },
+    description: {
+      es: 'Brigada, producción, fichas técnicas y estándares de cocina: 20 capítulos y 7 Excel.',
+      en: 'Kitchen brigade, production, recipe standards and kitchen KPIs: 20 chapters and 7 Excel tools.',
+    },
+  },
   // ── Planes de negocio (Excel financiero + checklist de apertura) ─────────
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',

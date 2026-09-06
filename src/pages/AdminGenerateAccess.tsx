@@ -50,6 +50,10 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'plan-negocio-paellero-eventos', label: 'Plan de Negocio Paellero / Paella Eventos (€45)' },
   { id: 'plan-chef-privado-showcooking-eventos', label: 'Plan Chef Privado / Showcooking a Domicilio (€45)' },
   { id: 'plan-catering-tematico-eventos', label: 'Plan Catering & Kit Temático Eventos (€45)' },
+  // 2026-09-06: el desplegable se había quedado en 44 mientras las functions ya tenían 47.
+  { id: 'guia-food-cost-ingenieria-menu', label: 'Guía Food Cost + Ingeniería de Menú (€55)' },
+  { id: 'manual-manager-restaurante', label: 'Manual del Manager de Restaurante (€55)' },
+  { id: 'manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo (€65)' },
 ];
 
 export default function AdminGenerateAccess() {

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "CE-23",
+    "campo": "dato",
+    "valor_correcto": "El empresario debe proporcionar gratuitamente los EPI y reponerlos cuando resulte necesario (RD 773/1997, art. 3.c), y solo procede recurrir al EPI cuando el riesgo no se pueda evitar o limitar por protección colectiva u organización del trabajo (art. 4). El Anexo III es una LISTA NO EXHAUSTIVA de actividades que PUEDEN REQUERIR EPI, y su nota dice que «la evaluación de riesgos determinará la necesidad de suministrar un EPI»: en él figuran la «utilización regular de cuchillos de mano en la producción y el sacrificio» (guantes de protección mecánica; delantal protector, polainas o pantalones resistentes a los cortes) y los «trabajos en ambientes húmedos» y «en superficies resbaladizas» (calzado antideslizante). Entre los sectores enumerados están «Industria alimentaria», «Mataderos» y «Limpieza», no «hostelería». Nunca escribir que el Anexo III «exige» un EPI: quien lo convierte en obligación es la evaluación de riesgos.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735",
+    "severidad": "alta",
+    "nota": "Afecta al cap. 17, al bonus n.o 9 y a la siembra PRL del libro 7 (auditoria-interna-cocina)."
+  },
+  {
+    "id": "CE-14",
+    "campo": "dato",
+    "valor_correcto": "Congelar a -20 °C durante 24 horas como mínimo o a -35 °C durante 15 horas como mínimo, en la totalidad del producto, los productos de la pesca derivados de pescados (EXCEPTO pescado de aguas continentales) o moluscos cefalópodos que se vayan a consumir crudos, escabechados, en salazón «o sometidos a cualquier otro tratamiento si este es insuficiente para matar las larvas de anisakis viables». La congelación puede haberla hecho una etapa anterior si está justificado documentalmente. Excepción de acuicultura marina: no hace falta congelar si cada lote se acompaña de una declaración del operador de origen (criados a partir de embriones y alimentados con dieta libre de parásitos viables) y el operador ha verificado la ausencia de parásitos por procedimientos aprobados. Hay que informar al consumidor por cartel o carta-menú. No hace falta congelar si antes del consumo se aplica un tratamiento térmico de al menos 60 °C durante al menos 1 minuto en el centro del producto.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681",
+    "severidad": "alta",
+    "nota": "RD 1021/2022, art. 8.1, 8.2 y 8.3. Aplicar el mismo alcance a MM-33."
+  },
+  {
+    "id": "MM-33",
+    "campo": "dato",
+    "valor_correcto": "El RD 1420/2006 está derogado desde el 22 de diciembre de 2022. Hoy manda el RD 1021/2022, art. 8: congelar a -20 °C durante 24 horas o a -35 °C durante 15 horas, en la totalidad del producto, los productos de la pesca derivados de pescados (excepto pescado de aguas continentales) y los moluscos cefalópodos que se sirvan crudos, escabechados, en salazón «o sometidos a cualquier otro tratamiento si este es insuficiente para matar las larvas de anisakis viables», e informar al cliente por cartel o carta-menú. Puede haberlo hecho el proveedor si está justificado documentalmente, y la acuicultura marina queda exceptuada con la declaración del operador de origen por lote.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681",
+    "severidad": "alta",
+    "nota": "Se le añade lo que faltaba: aguas continentales, «cualquier otro tratamiento insuficiente» y la excepción de acuicultura."
+  },
+  {
+    "id": "CE-21",
+    "campo": "dato",
+    "valor_correcto": "La temperatura del local de trabajo debe estar entre 17 y 27 °C para trabajo sedentario propio de oficinas o similares y entre 14 y 25 °C para trabajos ligeros; la norma no fija un rango para trabajo pesado. La categoría de trabajo la determina la evaluación de riesgos de cada cocina, y el punto 4 del Anexo III admite «las limitaciones o condicionantes que puedan imponer, en cada caso, las características particulares del propio lugar de trabajo, de los procesos u operaciones que se desarrollen en él y del clima de la zona». Humedad relativa 30-70 % (límite inferior del 50 % donde haya riesgo por electricidad estática). Renovación mínima de aire: 30 m3/hora por trabajador solo en trabajos sedentarios en ambientes no calurosos ni contaminados por humo de tabaco, y 50 m3/hora por trabajador «en los casos restantes», que es donde siempre cae una cocina.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8669",
+    "severidad": "media",
+    "nota": "El dato de ventilación estaba condicionado a «ambientes calurosos» y la norma no lo condiciona a eso."
+  },
+  {
+    "id": "CE-10",
+    "campo": "dato",
+    "valor_correcto": "Elaborar con la menor antelación posible; mantener en caliente a >=63 °C (art. 30.2); refrigeradas a <=4 °C si la vida útil es mayor de 24 horas o a <=8 °C si es menor (30.3); congeladas a <=-18 °C (30.4); enfriar de 60 a 10 °C en menos de 2 horas (30.6); recalentar a >=74 °C durante 15 segundos en el centro, en la hora siguiente a sacarlo del frigorífico (30.7). El art. 30.5 admite temperaturas de conservación distintas de las del APARTADO 3 (solo refrigeración: nunca del 63 °C en caliente ni de los -18 °C) si el operador demuestra ante la autoridad competente que se basan en evidencias científicas. El art. 30.7 admite un recalentamiento a temperatura distinta si las combinaciones tiempo/temperatura son equivalentes en destrucción de microorganismos, y termina con una regla operativa que hay que citar: «Todos los alimentos recalentados que no se consuman se descartarán y no volverán a calentarse ni se volverán a almacenar».",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-15872",
+    "severidad": "media",
+    "nota": "El dato ya traía la corrección D15a; esto añade el alcance real del 30.5 y la frase final del 30.7."
+  },
+  {
+    "id": "CE-11",
+    "campo": "dato",
+    "valor_correcto": "Obligación de conservar comidas testigo (ración mínima 100 gramos, identificada y fechada, en refrigeración <=4 °C o congelación <=-18 °C durante mínimo 7 días) para quien elabore o sirva comidas a residencias de mayores, centros de día, comedores escolares, escuelas infantiles, hospitales, campamentos infantiles u otras colectividades similares; comedores colectivos (institucionales, de empresa) con menú común; medios de transporte; eventos cuando esa sea la actividad principal de la empresa; y por encargo para grupos o eventos de más de 40 personas. El art. 30.9 añade el caso del catering: si la elaboración y el servicio se hacen en establecimientos distintos, quien elabora recoge la testigo en el momento más próximo a su salida del establecimiento y quien la sirve la recoge en el momento del servicio, es decir, dos tomas y no una.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-15872",
+    "severidad": "media",
+    "nota": "Añade el art. 30.9, ausente del research y central para el libro 6 y el cap. 16."
+  },
+  {
+    "id": "CE-12",
+    "campo": "dato",
+    "valor_correcto": "La mención «ELABORADO POR» o «ELABORACIÓN PROPIA» es voluntaria, no obligatoria. No se considera elaboración el fraccionamiento o envasado de un producto ya elaborado por otro fabricante, ni el corte o deshuesado de carne fresca, ni la limpieza o corte de pescado. Contrapartida del art. 11.b): cuando un producto lleve la mención «ELABORACIÓN PROPIA», «solo podrán venderse en el establecimiento donde se han elaborado o en las sucursales del mismo».",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681",
+    "severidad": "media",
+    "nota": "Relevante para obrador central y multi-outlet (caps. 15 y 20)."
+  },
+  {
+    "id": "CE-24",
+    "campo": "dato",
+    "valor_correcto": "El RD 487/1997 no fija ninguna cifra en kilos; su Anexo solo enumera factores cualitativos (características de la carga, esfuerzo físico, características del medio de trabajo, exigencias de la actividad y factores individuales). Dos datos de la propia norma que rematan el mito: su Disposición derogatoria única derogó el Decreto de 15-11-1935 y la Orden de 02-06-1961, que sí prohibían «sacos o fardos de más de 80 kilogramos», y su Disposición final primera encarga al INSHT/INSST una Guía Técnica en la que «se considerarán los valores máximos de carga como referencia». El límite de 25 kg que circula sale de esa Guía Técnica, que no es vinculante.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8670",
+    "severidad": "baja",
+    "nota": "Refuerza el mito de los 25 kg del cap. 17 con dos hechos de la propia norma."
+  },
+  {
+    "id": "CE-32",
+    "campo": "dato",
+    "valor_correcto": "El artículo específico para hostelería confirma el doggy bag universal, salvo bufé libre o similares, con envases aptos para uso alimentario, reutilizables o fácilmente reciclables, e informando de forma clara y visible en el establecimiento, «preferentemente en la carta o el menú». El «sin coste adicional» tiene una excepción expresa en el propio artículo: el cobro obligatorio de los envases de plástico de un solo uso (título V de la Ley 7/2022). Los programas de sensibilización, educación y formación dirigidos al personal de cocina y comedor NO son de cualquier restaurante: el artículo los atribuye a «las empresas o entidades gestoras de caterings o comedores colectivos y sociales, en colaboración con los centros educativos o sociosanitarios».",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-6597",
+    "severidad": "media",
+    "nota": "Ley 1/2025, art. 8."
+  },
+  {
+    "id": "CE-33",
+    "campo": "dato",
+    "valor_correcto": "Están exentos de las obligaciones DEL APARTADO 4 del art. 6 (plan de prevención y promoción de convenios de donación) los establecimientos de hostelería o restauración iguales o inferiores a 1.300 m2, o con superficie útil de exposición y venta al público inferior o igual a 1.300 m2 si venden al público; si varios locales bajo el mismo CIF superan juntos esos 1.300 m2, quedan obligados. Las microempresas quedan excluidas de las obligaciones de todos los apartados anteriores del art. 6 (art. 6.6), pero NO de la ley: el art. 8 (doggy bag) les sigue obligando. Solo las pequeñas explotaciones agrarias quedan excluidas «de las obligaciones de esta ley» (art. 6.7). La ley define microempresa en su art. 3.f): «las empresas que ocupan menos de diez personas y tienen un volumen de negocios anual o un balance general anual no superior a dos millones de euros». Y la Disposición final vigésima retrasa la exigibilidad: «Las medidas obligatorias contenidas en el artículo 6 de esta ley serán aplicadas transcurrido el plazo de un año desde la publicación en el Boletín Oficial del Estado», publicada el 02-04-2025, es decir, exigibles desde el 2 de abril de 2026.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-6597",
+    "severidad": "media",
+    "nota": "El dato ya traía la corrección D15c; esto añade la definición de microempresa, el art. 6.7 y el calendario de la DF vigésima."
+  },
+  {
+    "id": "CE-07",
+    "campo": "dato",
+    "valor_correcto": "Límites para anunciar un plato «sin gluten» (20 mg/kg) o «muy bajo en gluten» (100 mg/kg), aplicables al alimento «tal como se vende al consumidor final»; la avena de un producto así declarado no puede pasar de 20 mg/kg. Aplicable desde el 20 de julio de 2016. El reglamento no nombra expresamente a la restauración, pero tampoco la excluye: su art. 1 fija el ámbito en «la transmisión de información a los consumidores sobre la ausencia o la presencia reducida de gluten en los alimentos». No usar la ausencia de mención para sugerir que un plato de carta queda fuera.",
+    "fuente_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32014R0828",
+    "severidad": "media",
+    "nota": "La formulación anterior podía leerse como «no aplica en restauración»."
+  },
+  {
+    "id": "CONV-02",
+    "campo": "dato",
+    "valor_correcto": "Convenio Colectivo del Sector de Hostelería y Actividades Turísticas de la Comunidad de Madrid, con duración pactada del 1 de enero de 2023 al 31 de diciembre de 2025 (art. 5.A). El propio art. 5 prevé que «salvo denuncia expresa y válida del Convenio, se prorrogará automáticamente por plazos iguales al de su duración inicial», y en el BOCM no consta publicado el acto de denuncia, por lo que NO puede afirmarse que esté «en ultraactividad». Formulación verificable: la tabla salarial de 2025 es la última publicada en el BOCM; a 06-09-2026 no consta tabla posterior.",
+    "fuente_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2024/04/06/BOCM-20240406-2.PDF",
+    "severidad": "media",
+    "nota": "Mismo cambio de rótulo en MM-15 y en la etiqueta de D16 («tabla 2025 en ultraactividad» -> «tabla 2025, la última publicada»)."
+  },
+  {
+    "id": "MM-15",
+    "campo": "dato",
+    "valor_correcto": "El mismo puesto cobra muy distinto según el convenio provincial: un cocinero de nivel III está entre 1.160,37 y 1.283,83 euros al mes de salario base en Madrid, cuyo convenio tenía duración pactada hasta el 31-12-2025 y cuya tabla de 2025 es la última publicada en el BOCM, frente a entre 1.607,25 y 1.803,05 euros en Barcelona, con convenio vigente 2025-2028 y tablas ya publicadas para 2026, 2027 y 2028. Las clases de establecimiento no son homologables entre convenios (Madrid A-C más D de catering; Cataluña A-E, con E = càtering).",
+    "fuente_url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9630/2141955.pdf",
+    "severidad": "media",
+    "nota": "Sustituye «sigue en ultraactividad» por lo verificable."
+  },
+  {
+    "id": "SPEC-3-convenio-plus-formacion",
+    "campo": "bloque legal §3, fila «Convenio» (plus de formación 20 €/mes Madrid) y guion cap. 03",
+    "valor_correcto": "El Plus Compensatorio de Formación del art. 31 del convenio de Madrid NO es un plus que gane el trabajador sin formación: es una penalización a la EMPRESA. Literal: «Cuando no se haya realizado alguna de las citadas acciones, las empresas deberán abonar a cada persona trabajadora en la siguiente anualidad y en las sucesivas, si continúan sin realizarse, un Plus Compensatorio de Formación, de naturaleza salarial, en cuantía de 20 euros mensuales (240 euros anuales)». Condiciones que hay que dar: solo para quien preste servicios de forma efectiva un mínimo de 90 días al año; el tiempo de formación es tiempo efectivo de trabajo; «quedarán excluidas como materias formativas aquellas que sean de obligado cumplimiento [...] Prevención de Riesgos Laborales (art. 19 LPRL) y Manipulación de Alimentos», de modo que el curso de manipulador NO exime del plus; no se devenga si, ofrecida la formación por la empresa, la persona la rechaza sin causa justificada; el plus no se abona en gratificaciones extraordinarias, no es revisable anualmente y no es compensable ni absorbible.",
+    "fuente_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2024/04/06/BOCM-20240406-2.PDF",
+    "severidad": "alta",
+    "nota": "El sujeto estaba invertido en la lente L4 §3. Afecta al cap. 03 y al cap. 18."
+  },
+  {
+    "id": "SPEC-3-convenio-manutencion-cataluna",
+    "campo": "bloque legal §3, fila «Convenio» (manutención 59,21 € Cataluña)",
+    "valor_correcto": "59,21 euros mensuales es la manutención de BARCELONA para 2026 (Annex II, A.4 «Plusos 2026»), no de Cataluña: el Maresme tiene 59,17 euros ese mismo año (A.8) y Tarragona y Girona van por sus propios anexos B y C. Escribir «Barcelona», nunca «Cataluña». Matiz del art. 38: la opción entre metálico y especie corresponde a la persona trabajadora, que debe notificarla por escrito y mantenerla un mínimo de tres meses, y quedan excluidos los hoteles sin estructura de cocina que solo sirven desayunos a sus clientes alojados.",
+    "fuente_url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9630/2141955.pdf",
+    "severidad": "media",
+    "nota": "Mismo aviso de ámbito para las cinco cifras salariales del grupo A: son de Barcelona."
+  },
+  {
+    "id": "SPEC-4-cap03-ropa-cataluna",
+    "campo": "L4 §4 «SIN VERIFICAR su existencia en Cataluña» / guion cap. 03 y cap. 17",
+    "valor_correcto": "El convenio de Cataluña SÍ regula la ropa de trabajo, en su art. 41, y va más lejos que el art. 36 de Madrid: «Les empreses vindran obligades a proporcionar al seu personal els uniformes, així com la roba de treball que no sigui d'ús comú en la vida ordinària», adaptándolo a los casos de embarazo, y además «la conservació i neteja d'uniformes i roba de treball seran a càrrec de les empreses i si no és així la compensació per tal concepte es fixarà segons les quanties que es detallen en els annexos». Esa compensación es de 15,39 euros mensuales (184,69 euros anuales) en Barcelona 2026.",
+    "fuente_url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9630/2141955.pdf",
+    "severidad": "media",
+    "nota": "Deja de ser un hueco declarado; es además un dato diferencial para chaquetillas y delantales."
+  },
+  {
+    "id": "SPEC-1-D23-modificacion-aleh-2026",
+    "campo": "L4 §1.3 y guion cap. 02 (qué cambia la modificación de 2026 del ALEH VI)",
+    "valor_correcto": "La Resolución de 25 de agosto de 2026 (BOE-A-2026-18630, BOE de 04-09-2026) SÍ modifica formalmente los arts. 15, 16 y 17 del ALEH VI: la ficha del BOE dice «SE MODIFICA el preámbulo, los arts. 6, 9, 10, 15 a 17, 38 a 41, el anexo I y SE AÑADE los capítulos XIII y XIV». Lo que no altera es el contenido de las funciones del art. 17: en el área funcional segunda solo reimprime los nombres con el «sistema de cremallera» y la única letra que reproduce con texto, la b) Segundo/a Jefe/a Cocina, es idéntica salvo el cambio de «jefe/a de cocina» a «jefa/e de cocina». Además, solo 5 de los 10 puestos de cocina cambiaron de nombre en el art. 15 (Jefa/e cocina, Jefa/e catering, Cocinera/o, Ayudanta/e cocina, Encargada/o economato); siguen escritos como en 2023 «2.º Jefe/a cocina», «Jefe/a partida», «Repostero/a» y «Auxiliar cocina», y hay una incoherencia del propio BOE con «Ayudante/a economato» (sin cambiar en el art. 15, cambiado a «Ayudanta/e economato» en los arts. 16 y 17). El texto consolidado de BOE-A-2023-6344 todavía muestra la redacción de 2023. Vigencia del ALEH VI tras la modificación: hasta el 31 de diciembre de 2030, prorrogable.",
+    "fuente_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18630",
+    "severidad": "alta",
+    "nota": "El libro 4 (brigada-puestos-y-evaluacion) debe reproducir la lista mixta o citar solo los nombres del art. 17, sin inventar homogeneidad."
+  },
+  {
+    "id": "SPEC-URL-rd1021",
+    "campo": "URL del RD 1021/2022 en el encargo D23",
+    "valor_correcto": "El RD 1021/2022 es BOE-A-2022-21681 (https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681). El id BOE-A-2022-22226 que aparece en el encargo corresponde a otra norma sin relación (Resolución de 19-12-2022 de la Subsecretaría sobre un convenio entre la SGAD y la AIReF). El JSON de research ya usa el id correcto; no hay que cambiarlo.",
+    "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681",
+    "severidad": "baja",
+    "nota": "Aviso para quien copie la URL del encargo a una nota de celda o a una FAQ."
+  }
+]

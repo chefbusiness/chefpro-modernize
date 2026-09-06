@@ -160,6 +160,8 @@ import GuiaFoodCostAccessGate from "./pages/GuiaFoodCostAccessGate";
 import GuiaFoodCostDashboard from "./pages/GuiaFoodCostDashboard";
 import ManualManagerAccessGate from "./pages/ManualManagerAccessGate";
 import ManualManagerDashboard from "./pages/ManualManagerDashboard";
+import ManualChefAccessGate from "./pages/ManualChefAccessGate";
+import ManualChefDashboard from "./pages/ManualChefDashboard";
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
@@ -869,6 +871,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="manual-manager-restaurante-jwt" redirectTo="/manual-manager-restaurante">
                   <ManualManagerDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Manual del Chef Ejecutivo — landing NATIVA en Astro
+                (astro-site/src/pages/manual-chef-ejecutivo.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/manual-chef-ejecutivo-access" element={<ManualChefAccessGate />} />
+            <Route
+              path="/manual-chef-ejecutivo-library"
+              element={
+                <ProtectedRoute storageKey="manual-chef-ejecutivo-jwt" redirectTo="/manual-chef-ejecutivo">
+                  <ManualChefDashboard />
                 </ProtectedRoute>
               }
             />

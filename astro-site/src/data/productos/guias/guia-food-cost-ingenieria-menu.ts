@@ -178,6 +178,7 @@ const data: GuiaData = {
     { label: 'Kit Gestión de Personal', href: '/kit-gestion-personal' },
     { label: 'Guía Restaurante Gastronómico', href: '/guia-restaurante-gastronomico' },
     { label: 'Manual del Manager de Restaurante', href: '/manual-manager-restaurante' },
+    { label: 'Manual del Chef Ejecutivo', href: '/manual-chef-ejecutivo' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],

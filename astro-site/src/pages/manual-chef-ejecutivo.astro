@@ -1,0 +1,38 @@
+---
+// /manual-chef-ejecutivo — LÍNEA MANUALES OPERATIVOS, producto 47 (2026-09-06).
+// Thin wrapper: pasa el objeto data al template GuiaLandingPage y el SEO a BaseLayout.
+//
+// SOLO ES: producto de normativa española y sin variantes de idioma → locales={['es']}
+// (BaseLayout emite hreflang es + x-default y nada más). Canonical:
+// https://aichef.pro/manual-chef-ejecutivo. Patrón calcado de
+// manual-manager-restaurante.astro; el data vive en productos/manuales/ (carpeta de la
+// línea) y reutiliza el contrato GuiaData y su template.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GuiaLandingPage from '../components/pages/GuiaLandingPage.astro';
+import data from '../data/productos/manuales/manual-chef-ejecutivo';
+
+const lang = 'es';
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO, mismo fallback que la familia)
+// para que Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se
+// resuelve literal porque import.meta.env[clave] NO es fiable.
+// whatsapp={false}: GuiaLandingPage monta su PROPIO botón flotante de WhatsApp
+// (mensaje de soporte prerellenado, bottom-20 en móvil por la barra sticky). Sin
+// esto saldría también el global de BaseLayout y serían DOS superpuestos
+// (whatsapp-gate.py exige exactamente 1 por página).
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_MANUAL_CHEF_EJECUTIVO || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/${data.slug}`}
+  locales={['es']}
+  ogImage={data.seo.ogImage}
+>
+  <GuiaLandingPage data={data} stripeLink={stripeLink} />
+</BaseLayout>

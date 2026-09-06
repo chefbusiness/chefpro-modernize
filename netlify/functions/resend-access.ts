@@ -166,6 +166,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el manual PDF + DOCX, 7 herramientas Excel y el bonus de 12 situaciones resueltas:',
     emailCta: 'Acceder a mi Manual',
   },
+  'manual-chef-ejecutivo': {
+    accessPath: '/manual-chef-ejecutivo-access',
+    emailSubject: 'Tu acceso al Manual del Chef Ejecutivo',
+    emailTitle: 'Accede a tu Manual del Chef Ejecutivo',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el manual PDF + DOCX, 7 herramientas Excel y el bonus de 12 situaciones resueltas en cocina:<br /><br />Si además diriges el negocio —no sólo la cocina—, el <a href="https://aichef.pro/manual-manager-restaurante?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Manual del Manager de Restaurante</a> es su hermano: si llevas las dos cosas, necesitas los dos.',
+    emailCta: 'Acceder a mi Manual',
+  },
   'guia-restaurante-casual': {
     accessPath: '/guia-restaurante-casual-access',
     emailSubject: 'Tu acceso a la Guía: Restaurante Casual 80 Plazas',

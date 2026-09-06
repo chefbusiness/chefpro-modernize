@@ -137,6 +137,23 @@ const products = [
     tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'restaurante', 'bar', 'cafeteria', 'hotel', 'catering'],
   },
   {
+    name: 'Manual del Chef Ejecutivo',
+    slug: '/manual-chef-ejecutivo',
+    price: '€65',
+    description: 'Brigada, producción, fichas técnicas, KPI de cocina, alérgenos y prevención de riesgos: 20 capítulos, 7 Excel y 12 situaciones resueltas.',
+    features: [
+      '20 capítulos + 7 herramientas Excel',
+      'Cuadro de mando de cocina con merma y producción por partida',
+      'Fichas técnicas de proceso, brigada y desarrollo de carta',
+      'Bonus: 12 situaciones resueltas en cocina',
+    ],
+    icon: ChefHat,
+    image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'seguridad', 'restaurante', 'hotel', 'catering'],
+  },
+  {
     name: 'Pack Plantillas APPCC',
     slug: '/pack-appcc',
     price: '€14',
@@ -924,7 +941,6 @@ const products = [
 const comingSoon = [
   { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
-  { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },
 ];
 
 const PRODUCTS_PER_PAGE = 12;
@@ -1000,7 +1016,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 9, "url": "https://aichef.pro/kit-tareas", "name": "Tareas Recurrentes: Restaurante Casual" },
               { "@type": "ListItem", "position": 10, "url": "https://aichef.pro/kit-tareas-hotel", "name": "Tareas Recurrentes: Hotel Completo" },
               { "@type": "ListItem", "position": 11, "url": "https://aichef.pro/guia-food-cost-ingenieria-menu", "name": "Guía Food Cost + Ingeniería de Menú" },
-              { "@type": "ListItem", "position": 12, "url": "https://aichef.pro/manual-manager-restaurante", "name": "Manual del Manager de Restaurante" }
+              { "@type": "ListItem", "position": 12, "url": "https://aichef.pro/manual-manager-restaurante", "name": "Manual del Manager de Restaurante" },
+              { "@type": "ListItem", "position": 13, "url": "https://aichef.pro/manual-chef-ejecutivo", "name": "Manual del Chef Ejecutivo" }
             ]
           }
         })}</script>

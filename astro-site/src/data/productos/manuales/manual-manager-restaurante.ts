@@ -190,6 +190,7 @@ const data: GuiaData = {
     { label: 'Kit de Tareas Recurrentes', href: '/kit-tareas' },
     { label: 'Pack Plantillas APPCC', href: '/pack-appcc' },
     { label: 'Guía Food Cost + Ingeniería de Menú', href: '/guia-food-cost-ingenieria-menu' },
+    { label: 'Manual del Chef Ejecutivo', href: '/manual-chef-ejecutivo' },
     { label: 'IA para Director de Operaciones', href: '/usos/rol/director-operaciones-grupo-restauracion' },
     { label: 'IA para Gerente de Restaurante', href: '/usos/rol/gerente-restaurante' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
