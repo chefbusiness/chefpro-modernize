@@ -262,6 +262,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
       </div>
+      {/* Tercera puerta de pago (John, 2026-09-06: «deberían tenerlo todos»). Igual que en
+          el BuyBox, la tarjeta cripto es HERMANA del recuadro dorado, no hija: «¿por qué
+          dos diseños?». El separador «o» y la tarjeta azul los emite el componente, para
+          no tocar el HTML de las landings que la tienen apagada. */}
+      <CryptoPayButton
+        productId={data.slug}
+        productName={cryptoProductName}
+        priceLabel={data.pricing.price}
+        landingPath={`/${data.slug}`}
+        variant="hero"
+      />
     </div>
   </section>
 
@@ -508,16 +519,18 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex flex-col items-center gap-2 mt-5">
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
-        {/* Segunda puerta: va DESPUÉS del sello "Powered by Stripe" para que el sello siga
-            leyéndose como parte del CTA de tarjeta y no del de cripto. */}
-        <CryptoPayButton
-          productId={data.slug}
-          productName={cryptoProductName}
-          priceLabel={data.pricing.price}
-          landingPath={`/${data.slug}`}
-          variant="buybox"
-        />
       </div>
+      {/* La tarjeta de cripto es HERMANA de la de Stripe, no hija: va FUERA del recuadro
+          dorado (John, 2026-09-06: «duplicar el cuadro de Stripe y colocar debajo otro
+          100 % cripto»). El separador «o» y el borde azul los emite el COMPONENTE, nunca
+          esta plantilla, para que las 18 landings con la cripto apagada no cambien. */}
+      <CryptoPayButton
+        productId={data.slug}
+        productName={cryptoProductName}
+        priceLabel={data.pricing.price}
+        landingPath={`/${data.slug}`}
+        variant="buybox"
+      />
     </div>
   </section>
 
