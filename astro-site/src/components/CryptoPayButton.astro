@@ -4,17 +4,34 @@
  *
  * Doctrina (PAGOS_CRYPTO_NOWPAYMENTS.md, 2026-09-05): «cripto es una segunda puerta a la
  * misma habitación — no se duplica la entrega». Stripe manda: su CTA es el botón dorado
- * sólido. Este es un botón SECUNDARIO de contorno que se coloca debajo, para el comprador
- * de LATAM (GT, PA, MX, AR, UY, VE…) que no tiene tarjeta internacional.
+ * sólido. Esta es la puerta para el comprador de LATAM (GT, PA, MX, AR, UY, VE…) que no
+ * tiene tarjeta internacional.
+ *
+ * ⚠️ REDISEÑO 2026-09-06 (John, sobre el piloto en producción). El piloto pintaba un
+ * botón de CONTORNO DORADO pegado bajo el sello de Stripe: se leía como una nota al pie
+ * del pago con tarjeta, no como una forma de pagar. Cinco correcciones, todas suyas:
+ *   1. Va en los TRES puntos de compra (hero, BuyBox y CTA final), no sólo en dos.
+ *   2. Paleta PROPIA (NOWPayments, azul #64ACFF), no el amarillo de Stripe: si los dos
+ *      pagos son del mismo color, el segundo no existe.
+ *   3. Separado del pago con tarjeta por una línea con una «o» centrada.
+ *   4. En el BuyBox es una TARJETA HERMANA de la de Stripe —mismo molde, borde azul—,
+ *      no un botón dentro del recuadro dorado. Por eso la plantilla lo saca FUERA del
+ *      `div` de la tarjeta dorada.
+ *   5. El botón es un BOTÓN DE PAGO («Pagar con cripto»), sólido y corto. El argumento
+ *      («¿Sin tarjeta internacional?…») lo dice el TEXTO de encima, no el botón.
+ * Y, como el sello «Powered by Stripe» es una imagen con las tarjetas que acepta, aquí se
+ * emite su equivalente: pastilla navy con el wordmark de NOWPayments y los 10 iconos de
+ * moneda (CryptoCoinIcon.astro), SVG inline, cero peticiones a terceros.
  *
  * Sólo se pinta si `cryptoEnabledFor(productId)` (env `CRYPTO_PRODUCTS`, scope builds):
  * con la variable apagada este componente no emite NADA —ni HTML, ni CSS, ni JS—, así que
- * el HTML de las landings que no están en el allowlist queda idéntico. Por eso el <style>
- * y el <script> van `is:inline` DENTRO del bloque condicional: los `<style>`/`<script>`
+ * el HTML de las landings que no están en el allowlist queda idéntico. Por eso el `style`
+ * y el `script` van `is:inline` DENTRO del bloque condicional: los `style`/`script`
  * normales de Astro se recogen en el build a partir de los imports, no de lo que se
- * renderiza, y se colarían en las 18 landings hermanas.
+ * renderiza, y se colarían en las 18 landings hermanas. Por lo mismo NO se usa ni una
+ * clase de Tailwind: una utilidad nueva iría al CSS global que cargan todas.
  *
- * Al pulsar abre un <dialog> nativo (Esc + ✕ + clic en el fondo) que recoge lo único que
+ * Al pulsar abre un `dialog` nativo (Esc + ✕ + clic en el fondo) que recoge lo único que
  * el backend necesita y que no puede deducir: email de entrega, país de facturación
  * (evidencia para el IVA junto a la cabecera geo de Netlify; NO cambia el precio) y las
  * DOS aceptaciones separadas: condiciones de compra y renuncia expresa al desistimiento
@@ -26,6 +43,7 @@
  * y el navegador redirige a la página alojada de NOWPayments.
  */
 import { cryptoEnabledFor, CRYPTO_COINS_LABEL } from '../lib/crypto-checkout';
+import CryptoCoinIcon from './CryptoCoinIcon.astro';
 
 interface Props {
   /** productId = slug de la landing (verificado 46/46 en zona-app.ts). */
@@ -36,15 +54,16 @@ interface Props {
   priceLabel: string;
   /** Ruta de la landing, para volver si el comprador cancela. */
   landingPath: string;
-  /** Dónde va el botón: bajo el CTA del BuyBox o bajo el CTA final. */
-  variant?: 'buybox' | 'cta';
+  /** Dónde va el botón. Los tres puntos de compra de la landing. */
+  variant?: 'hero' | 'buybox' | 'cta';
 }
 
 const { productId, productName, priceLabel, landingPath, variant = 'buybox' } = Astro.props;
 
 const enabled = cryptoEnabledFor(productId);
 
-// Ids únicos por instancia: la misma landing pinta el botón dos veces (BuyBox y CtaFinal).
+// Ids únicos por instancia: la misma landing pinta el botón TRES veces (hero, BuyBox y
+// CtaFinal) y `variant` es distinto en cada una, así que el uid las distingue.
 const uid = `${productId}-${variant}`;
 const dialogId = `aicp-crypto-dialog-${uid}`;
 const titleId = `aicp-crypto-title-${uid}`;
@@ -311,6 +330,50 @@ const PAISES: { code: string; name: string }[] = [
 ];
 const PAISES_FRECUENTES = PAISES.slice(0, PAISES_FRECUENTES_N);
 const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
+
+/**
+ * Monedas del sello, en el orden en que las pinta NOWPayments en su propio banner: las
+ * dos estables primero (son las que resuelven el problema real —volatilidad cero entre
+ * que el comprador pulsa y paga— y las que más se usan en LATAM), después las grandes.
+ * `usdc` y `tron` no existen en Simple Icons: CryptoCoinIcon las pinta como tesela.
+ */
+const MONEDAS = ['tether', 'usdc', 'bitcoin', 'ethereum', 'litecoin', 'solana', 'tron', 'binance', 'ton', 'polygon'];
+/**
+ * ⚠️ En el SELLO caben 8, no 10. La pastilla replica la del sello de Stripe —max-w-[260px]
+ * con px-3—, así que su interior son 236 px: diez círculos legibles (24 px + 3 de hueco)
+ * piden 267 y sólo entran apretándolos a 22 px con 1,5 de hueco, que es justo lo que John
+ * pidió evitar («iconos legibles a 260 px»). Se muestran 8 y las dos últimas —TON y
+ * MATIC— se ven en el diálogo, que mide 30 rem y las admite todas de sobra.
+ */
+const MONEDAS_SELLO = MONEDAS.slice(0, 8);
+
+/**
+ * El argumento de venta va en el TEXTO, nunca dentro del botón (John, 2026-09-06).
+ *
+ * ⚠️ Y NO es «cripto para quien no tiene banco». Cripto la elige tanto quien compra desde
+ * México, Colombia, Venezuela, Guatemala o Chile —donde una tarjeta que funcione fuera no
+ * se da por hecha— como quien en la UE o EE. UU. sencillamente prefiere pagar desde su
+ * wallet. Por eso la pregunta tiene DOS mitades y ninguna de las dos habla de países.
+ */
+const TITULAR = '¿Sin tarjeta internacional o prefieres pagar desde tu wallet?';
+
+/** Bajo el precio de la tarjeta: lo que de verdad frena la compra es pensar que cripto
+ *  cuesta más o que el precio baila. Las dos cosas se responden aquí. */
+const SIN_RECARGO = 'Mismo precio que con tarjeta, sin recargo. Pagas el equivalente en USDT, USDC, BTC o ETH al cambio del momento.';
+
+/** Hero y CTA final no llevan tarjeta: el argumento entero cabe en una línea. */
+const NOTA_CORTA = '¿Sin tarjeta internacional o prefieres tu wallet? Mismo precio, sin recargo.';
+
+/**
+ * Las tres dudas que quedan cuando alguien ya ha decidido pagar en cripto: cuándo llega
+ * el producto, qué moneda le va a salir más barata y desde dónde puede pagar. Sin jerga
+ * —ni «blockchain», ni «on-chain», ni «Web3»—: el comprador es un hostelero, no un trader.
+ */
+const CONFIANZA = [
+  'Entrega automática por email en cuanto la red confirma (normalmente 1-10 min)',
+  'Recomendado: USDT en red TRON (TRC-20), comisiones de céntimos',
+  'Desde Binance, Trust Wallet, MetaMask o Phantom',
+];
 ---
 
 {enabled && (
@@ -320,26 +383,73 @@ const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
     data-crypto-landing={landingPath}
     data-crypto-variant={variant}
   >
-    <button
-      type="button"
-      class="aicp-crypto__open"
-      data-crypto-open
-      aria-haspopup="dialog"
-      aria-controls={dialogId}
-    >
-      <span class="aicp-crypto__open-main">¿Sin tarjeta internacional? Paga con cripto</span>
-      <span class="aicp-crypto__open-coins">{CRYPTO_COINS_LABEL}</span>
-    </button>
+    {variant !== 'hero' && (
+      <div class="aicp-crypto__sep" aria-hidden="true"><span>o</span></div>
+    )}
+
+    <div class="aicp-crypto__box">
+      {variant === 'buybox' ? (
+        <Fragment>
+          <p class="aicp-crypto__eyebrow">Pago con criptomonedas</p>
+          <p class="aicp-crypto__headline">{TITULAR}</p>
+          {/* El precio va SIN el tachado ni el badge de descuento: la oferta se anuncia
+              una sola vez, en la tarjeta de Stripe. Repetirla aquí hace que parezcan dos
+              productos distintos en vez de dos formas de pagar el mismo (John). */}
+          <p class="aicp-crypto__bigprice">{priceLabel}</p>
+          <p class="aicp-crypto__note">{SIN_RECARGO}</p>
+        </Fragment>
+      ) : (
+        <p class="aicp-crypto__note">{NOTA_CORTA}</p>
+      )}
+
+      <button
+        type="button"
+        class="aicp-crypto__pay"
+        data-crypto-open
+        aria-haspopup="dialog"
+        aria-controls={dialogId}
+      >Pagar con cripto</button>
+
+      {/* Equivalente del sello "Powered by Stripe": mismo ancho (260 px) y mismo mt-5,
+          pero con el wordmark en TEXTO y las monedas en SVG inline — cero imágenes
+          externas en una página de pago. El wordmark no lleva espacio entre NOW y
+          Payments a propósito: es una sola palabra en dos colores. */}
+      <div class="aicp-crypto__seal">
+        <span class="aicp-crypto__wordmark">
+          <span class="aicp-crypto__wordmark-pre">Powered by</span>
+          <span><span class="aicp-crypto__wordmark-now">NOW</span><span class="aicp-crypto__wordmark-pay">Payments</span></span>
+        </span>
+        <span class="aicp-crypto__coins" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
+          {MONEDAS_SELLO.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
+        </span>
+      </div>
+
+      {/* Sólo en la tarjeta del BuyBox: ahí es donde se decide y hay sitio. En hero y CTA
+          final el bloque tiene que pesar lo mismo que el CTA dorado de al lado. */}
+      {variant === 'buybox' && (
+        <ul class="aicp-crypto__trust">
+          {CONFIANZA.map((linea) => <li>{linea}</li>)}
+        </ul>
+      )}
+    </div>
 
     <dialog id={dialogId} class="aicp-crypto__dialog" data-crypto-dialog aria-labelledby={titleId}>
       <form class="aicp-crypto__form" data-crypto-form>
         <button type="button" class="aicp-crypto__close" data-crypto-close aria-label="Cerrar">✕</button>
 
-        <h2 id={titleId} class="aicp-crypto__title">Pagar con criptomonedas</h2>
-        <p class="aicp-crypto__product">{productName}</p>
-        <p class="aicp-crypto__price">
-          {priceLabel} — pago único, acceso vitalicio; pagas su equivalente en la cripto que elijas.
+        {/* «paso 1 de 2» porque la elección de moneda y red pasa en NOWPayments: sin
+            decirlo, este formulario parece el pago entero y la redirección desconcierta. */}
+        <h2 id={titleId} class="aicp-crypto__title">Paga con cripto · paso 1 de 2</h2>
+        <p class="aicp-crypto__product">
+          <span>{productName}</span>
+          <span class="aicp-crypto__product-price">{priceLabel}</span>
         </p>
+        <p class="aicp-crypto__price">
+          Pago único, acceso vitalicio. Pagas su equivalente en la cripto que elijas, sin recargo.
+        </p>
+        <span class="aicp-crypto__coins aicp-crypto__coins--dialog" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
+          {MONEDAS.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
+        </span>
 
         <div class="aicp-crypto__field">
           <label class="aicp-crypto__label" for={emailId}>Tu email (ahí te enviamos el acceso)</label>
@@ -387,6 +497,10 @@ const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
           Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente.
         </p>
 
+        <p class="aicp-crypto__next">
+          Después te llevamos a la página segura de NOWPayments, donde eliges moneda y red.
+        </p>
+
         <p class="aicp-crypto__error" data-crypto-error role="alert" hidden></p>
 
         <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>Continuar al pago</button>
@@ -400,26 +514,135 @@ const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
     <style is:inline>
       /* Estilos SIN scope de Astro a propósito (is:inline): así no se emiten en las
          landings donde el botón está apagado. Todas las clases van prefijadas
-         `aicp-crypto` para no chocar con Tailwind ni con la plantilla. */
-      .aicp-crypto { margin-top: 0.85rem; text-align: center; }
-      .aicp-crypto__open {
-        display: inline-flex; flex-direction: column; align-items: center; gap: 0.15rem;
-        width: 100%; padding: 0.8rem 1.5rem; border: 1px solid rgba(255, 215, 0, 0.45);
-        border-radius: 0.75rem; background: rgba(255, 215, 0, 0.06); color: #ffd700;
-        font-family: inherit; font-size: 1rem; font-weight: 600; line-height: 1.3;
-        cursor: pointer; transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+         `aicp-crypto` / `aicp-coin` para no chocar con Tailwind ni con la plantilla.
+         Ni una utilidad de Tailwind en el markup por la misma razón: una clase nueva
+         generaría CSS en el bundle GLOBAL que sí cargan las 18 landings hermanas. */
+
+      /* Paleta NOWPayments. El azul es el de su marca; el navy, el fondo de su banner.
+         Deliberadamente NO es el #FFD700 del sitio: si las dos puertas de pago comparten
+         color, la segunda parece una nota al pie de la primera (que es lo que pasaba). */
+      .aicp-crypto {
+        --nowp: #64ACFF;          /* azul pastel de NOWPayments */
+        --nowp-hover: #7FBBFF;
+        --nowp-ink: #0B1220;      /* texto sobre el azul, como el negro sobre el dorado */
+        --nowp-navy: #0F1524;     /* fondo del sello */
+        --nowp-line: rgba(100, 172, 255, 0.55);
+        --nowp-veil: rgba(100, 172, 255, 0.06);
+        text-align: center;
       }
-      .aicp-crypto__open:hover { background: rgba(255, 215, 0, 0.12); border-color: rgba(255, 215, 0, 0.75); }
-      .aicp-crypto__open:active { transform: scale(0.985); }
-      .aicp-crypto__open:focus-visible { outline: 2px solid #ffd700; outline-offset: 2px; }
-      .aicp-crypto__open-main { display: block; }
-      .aicp-crypto__open-coins { font-size: 0.72rem; font-weight: 500; color: rgba(255, 215, 0, 0.7); }
-      /* El CTA final de Stripe es w-full md:w-auto: el secundario le hace juego. */
-      @media (min-width: 768px) { .aicp-crypto--cta .aicp-crypto__open { width: auto; } }
+      /* El hero no lleva separador (el propio texto gris hace de bisagra), pero sí un aire
+         mayor que el mt-4 del sello de Stripe para que no se lea como su pie de foto. */
+      .aicp-crypto--hero { margin-top: 1.25rem; }
+
+      /* Separador: la línea con la «o» que pedía John para despegar las dos puertas. */
+      .aicp-crypto__sep {
+        display: flex; align-items: center; gap: 0.75rem; margin: 1.5rem 0;
+        color: #6b7280; font-size: 0.78rem; line-height: 1;
+      }
+      .aicp-crypto__sep::before, .aicp-crypto__sep::after {
+        content: ''; flex: 1 1 auto; height: 1px; background: rgba(255, 255, 255, 0.14);
+      }
+
+      /* En el BuyBox esta caja es la TARJETA HERMANA de la de Stripe: mismo molde
+         (rounded-2xl, p-8/md:p-10, border-2, backdrop-blur) en la paleta azul. En hero y
+         CTA final no hay tarjeta —ahí el bloque vive dentro del recuadro que ya existe—,
+         así que la caja no pinta nada. */
+      .aicp-crypto--buybox .aicp-crypto__box {
+        /* p-8 md:p-10 exactos, los mismos que la tarjeta dorada: en móvil las dos cajas
+           tienen que pesar igual (John, 2026-09-06, con la captura del móvil delante). */
+        padding: 2rem; border: 2px solid var(--nowp-line); border-radius: 1rem;
+        background: var(--nowp-veil);
+        -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+      }
+      @media (min-width: 768px) { .aicp-crypto--buybox .aicp-crypto__box { padding: 2.5rem; } }
+
+      .aicp-crypto__eyebrow {
+        margin: 0 0 0.6rem; color: var(--nowp); font-size: 0.72rem; font-weight: 700;
+        letter-spacing: 0.14em; text-transform: uppercase;
+      }
+      /* El titular en BLANCO, no en azul: el azul es del precio y del botón. Si lo pinto
+         del color de marca compite con el precio y ya no se sabe qué mirar primero. */
+      .aicp-crypto__headline {
+        margin: 0 0 0.9rem; color: #ffffff; font-size: 1.125rem; font-weight: 600; line-height: 1.45;
+      }
+      /* Mismo tamaño que el precio de la tarjeta de Stripe (text-5xl / md:text-6xl). */
+      .aicp-crypto__bigprice { margin: 0; color: var(--nowp); font-size: 3rem; font-weight: 800; line-height: 1; }
+      @media (min-width: 768px) { .aicp-crypto__bigprice { font-size: 3.75rem; } }
+
+      .aicp-crypto__note { margin: 0.9rem 0 1.5rem; color: #9ca3af; font-size: 0.875rem; line-height: 1.6; }
+      /* Hero y CTA final: una sola línea encima del botón, más pequeña. */
+      .aicp-crypto--hero .aicp-crypto__note,
+      .aicp-crypto--cta .aicp-crypto__note { margin: 0 0 0.8rem; font-size: 0.82rem; }
+
+      /* Tres frases de confianza: apiladas en móvil (se leen de un vistazo) y en una
+         tirada con «·» a partir de md, donde la tarjeta mide 448 px y caben en dos líneas. */
+      .aicp-crypto__trust {
+        margin: 0.75rem 0 0; padding: 0; list-style: none;
+        color: #9ca3af; font-size: 0.75rem; line-height: 1.6;
+      }
+      .aicp-crypto__trust li { margin-top: 0.15rem; }
+      @media (min-width: 768px) {
+        .aicp-crypto__trust li { display: inline; margin-top: 0; }
+        .aicp-crypto__trust li + li::before { content: ' · '; color: #4b5563; }
+      }
+
+      /* BOTÓN DE PAGO, no call to action: sólido, corto y con el mismo molde que el
+         dorado (px-8/px-10 py-4, text-lg, rounded-xl, hover:scale-[1.02]). */
+      .aicp-crypto__pay {
+        display: inline-block; width: 100%; padding: 1rem 2rem;
+        border: 0; border-radius: 0.75rem; background: var(--nowp); color: var(--nowp-ink);
+        font-family: inherit; font-size: 1.125rem; font-weight: 700; line-height: 1.75rem;
+        cursor: pointer; transition: background-color 0.2s ease, transform 0.2s ease;
+      }
+      .aicp-crypto__pay:hover { background: var(--nowp-hover); transform: scale(1.02); }
+      .aicp-crypto__pay:active { transform: scale(0.98); }
+      .aicp-crypto__pay:focus-visible { outline: 2px solid var(--nowp); outline-offset: 3px; }
+      /* Hero y CTA final: el dorado de al lado es w-full md:w-auto px-10 py-4. */
+      .aicp-crypto--hero .aicp-crypto__pay, .aicp-crypto--cta .aicp-crypto__pay { padding: 1rem 2.5rem; }
+      @media (min-width: 768px) {
+        .aicp-crypto--hero .aicp-crypto__pay, .aicp-crypto--cta .aicp-crypto__pay { width: auto; }
+      }
+
+      /* Sello: el equivalente de /powered-by-stripe.png (w-full max-w-[260px], mt-5). */
+      .aicp-crypto__seal {
+        display: inline-flex; flex-direction: column; align-items: center; gap: 0.3rem;
+        /* Mismas medidas que /powered-by-stripe.png: w-full, max-w-[260px], rounded-lg,
+           px-3 py-1.5 y mt-5. Puestas una debajo de otra tienen que parecer dos sellos
+           del mismo juego, no un sello y un adorno. */
+        width: 100%; max-width: 260px; margin-top: 1.25rem; padding: 0.375rem 0.75rem;
+        border: 1px solid rgba(100, 172, 255, 0.45); border-radius: 0.5rem;
+        background: var(--nowp-navy);
+      }
+      .aicp-crypto__wordmark { display: flex; align-items: baseline; justify-content: center; gap: 0.4rem; }
+      .aicp-crypto__wordmark-pre {
+        color: #94a3b8; font-size: 0.5rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+      }
+      .aicp-crypto__wordmark-now { color: var(--nowp); font-size: 0.8125rem; font-weight: 800; }
+      .aicp-crypto__wordmark-pay { color: #ffffff; font-size: 0.8125rem; font-weight: 500; }
+      /* 8 círculos de 24 px + 7 huecos de 3 px = 213 px sobre los 236 de interior de la
+         pastilla (260 − 2×0.75rem): entran holgados y a un tamaño en el que se reconoce
+         cada moneda. El wrap es la red por si el zoom o una fuente distinta aprietan. */
+      .aicp-crypto__coins { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 3px; }
+      /* En el diálogo hay 30 rem de ancho: caben las diez y con más aire. */
+      .aicp-crypto__coins--dialog { justify-content: flex-start; gap: 5px; margin: 0.1rem 0 0.4rem; }
+      .aicp-coin {
+        display: inline-flex; align-items: center; justify-content: center; flex: none;
+        width: 24px; height: 24px; border-radius: 999px; background: #ffffff; color: var(--coin-c);
+      }
+      .aicp-coin svg { display: block; width: 16px; height: 16px; }
+      /* BTC, LTC y TON ya son un disco completo: llenan el círculo en vez de flotar
+         dentro de él, que es como se leen en cualquier listado de monedas. */
+      .aicp-coin--full svg { width: 24px; height: 24px; }
+      /* Teselas (USDC y TRX no están en Simple Icons): el color va al fondo y la sigla en
+         blanco, como en el banner de NOWPayments. */
+      .aicp-coin--mono {
+        background: var(--coin-c); color: #ffffff; font-size: var(--coin-fs);
+        font-weight: 800; letter-spacing: -0.03em; line-height: 1;
+      }
 
       .aicp-crypto__dialog {
         width: min(30rem, calc(100vw - 2rem)); max-height: min(86vh, 46rem);
-        padding: 0; border: 1px solid rgba(255, 215, 0, 0.25); border-radius: 1rem;
+        padding: 0; border: 1px solid rgba(100, 172, 255, 0.3); border-radius: 1rem;
         background: #111111; color: #e5e7eb; overflow: auto;
         box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
       }
@@ -437,7 +660,13 @@ const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
       }
       .aicp-crypto__close:hover { background: rgba(255, 255, 255, 0.12); color: #ffffff; }
       .aicp-crypto__title { margin: 0; padding-right: 2rem; color: #ffffff; font-size: 1.15rem; font-weight: 700; }
-      .aicp-crypto__product { margin: 0; color: #e5e7eb; font-size: 0.95rem; font-weight: 600; }
+      /* Nombre y precio en la misma línea: en un diálogo de pago el importe tiene que
+         verse sin leer nada, y a la derecha es donde se busca. */
+      .aicp-crypto__product {
+        display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem;
+        margin: 0; color: #e5e7eb; font-size: 0.95rem; font-weight: 600;
+      }
+      .aicp-crypto__product-price { flex: none; color: #64ACFF; font-size: 1.15rem; font-weight: 800; }
       .aicp-crypto__price { margin: 0 0 0.2rem; color: #9ca3af; font-size: 0.82rem; line-height: 1.5; }
       .aicp-crypto__field { display: flex; flex-direction: column; gap: 0.3rem; }
       .aicp-crypto__label { color: #d1d5db; font-size: 0.8rem; font-weight: 600; }
@@ -447,24 +676,30 @@ const PAISES_RESTO = PAISES.slice(PAISES_FRECUENTES_N);
         font-family: inherit; font-size: 0.95rem;
       }
       .aicp-crypto__input::placeholder { color: #6b7280; }
-      .aicp-crypto__input:focus { outline: none; border-color: rgba(255, 215, 0, 0.6); box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.18); }
+      /* Foco en el azul de la pasarela, no en el dorado de Stripe: dentro de este diálogo
+         ya no se está pagando con tarjeta. */
+      .aicp-crypto__input:focus { outline: none; border-color: rgba(100, 172, 255, 0.7); box-shadow: 0 0 0 2px rgba(100, 172, 255, 0.22); }
       /* Windows/Firefox pintan el desplegable con el fondo del sistema: sin esto el
          texto blanco de las opciones queda ilegible. */
       .aicp-crypto__input option, .aicp-crypto__input optgroup { background: #111111; color: #ffffff; }
       .aicp-crypto__check { display: flex; align-items: flex-start; gap: 0.6rem; color: #d1d5db; font-size: 0.84rem; line-height: 1.45; cursor: pointer; }
-      .aicp-crypto__check input { flex: none; width: 1.05rem; height: 1.05rem; margin: 0.15rem 0 0; accent-color: #ffd700; }
+      .aicp-crypto__check input { flex: none; width: 1.05rem; height: 1.05rem; margin: 0.15rem 0 0; accent-color: #64ACFF; }
+      /* Los enlaces legales siguen en dorado: es el color de enlace de todo el sitio y
+         apuntan a /terminos, que no es parte del flujo de la pasarela. */
       .aicp-crypto__check a { color: #ffd700; text-decoration: underline; }
       .aicp-crypto__notice {
         margin: 0; padding: 0.6rem 0.7rem; border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 0.6rem; background: rgba(255, 255, 255, 0.04);
         color: #9ca3af; font-size: 0.78rem; line-height: 1.5;
       }
+      .aicp-crypto__next { margin: 0; color: #d1d5db; font-size: 0.8rem; line-height: 1.5; }
       .aicp-crypto__error { margin: 0; color: #fca5a5; font-size: 0.84rem; line-height: 1.45; }
       .aicp-crypto__submit {
         width: 100%; padding: 0.8rem 1rem; border: 0; border-radius: 0.75rem;
-        background: #ffd700; color: #000000; font-family: inherit; font-size: 1rem;
+        background: #64ACFF; color: #0B1220; font-family: inherit; font-size: 1rem;
         font-weight: 700; cursor: pointer;
       }
+      .aicp-crypto__submit:hover:not(:disabled) { background: #7FBBFF; }
       .aicp-crypto__submit:disabled { opacity: 0.45; cursor: not-allowed; }
       .aicp-crypto__legal { margin: 0; color: #6b7280; font-size: 0.72rem; line-height: 1.45; text-align: center; }
     </style>
