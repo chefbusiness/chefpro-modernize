@@ -118,7 +118,7 @@ el T9 de documentos.
 > **19-sep**, cafetería **24-sep**, tapas-bar **29-sep**, panadería **4-oct** (los cuatro recreados por API: Resend no permite editar
 > un broadcast programado, sólo borrarlo y crearlo de nuevo) y **food truck 9-oct, que quedó como BORRADOR** «Actualización Plan de
 > Negocio Food Truck 2.2 (ES) — PROGRAMAR 9-oct» porque Resend no admite programar a más de 30 días vista: **programarlo a partir
-> del 9-sep** (`resend-broadcast.py --scheduled-at 2026-10-09T08:00:00Z` o desde el panel). Trampa cazada: al recrear, leer el
+> del 9-sep** (`resend-broadcast.py --scheduled-at 2026-10-09T08:00:00Z` o desde el panel). ✅ **PROGRAMADO el 10-sep** (`POST /broadcasts/{id}/send` con `scheduled_at`, aprobado por John; el nombre conserva el sufijo «— PROGRAMAR 9-oct» porque Resend no renombra un broadcast programado). Trampa cazada: al recrear, leer el
 > asunto ANTES de borrar y con `json.loads(strict=False)` (el html trae caracteres de control); un `DELETE` sin el asunto en la mano
 > obligó a reconstruir cuatro asuntos por el patrón del quinto.
 
