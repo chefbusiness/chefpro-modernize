@@ -17,6 +17,16 @@ nada que parchear —2.157 palabras para 22 capítulos en el representante, 255
 palabras de «manual de servicio de sala», y en 6 de las 8 guías el PDF es una
 portada de una página—, así que el texto se escribe de nuevo.
 
+REPARTO DE PUNTOS POR TRAMO (2026-09-10)
+  Hasta hoy los `epigrafes` se repartían entre los 2-3 bloques del capítulo pero
+  los `puntos` se entregaban ENTEROS a cada bloque, así que sus redactores
+  desarrollaban lo mismo (41 pares de frases con Jaccard ≥ 0,55 en 15 de los 20
+  capítulos del Manual del Chef Ejecutivo). Ahora `repartir_puntos()` da a cada
+  tramo SÓLO los suyos —por `puntos_por_epigrafe` si el guion los declara así, o
+  posicionalmente sobre la lista plana— y el prompt le dice además qué escriben
+  los otros tramos para que remita a ellos en vez de repetirlos. Medidor y gate:
+  `guias-v2_0/solape.py <dir_txt> [umbral]`.
+
 FLUJO (§5.3)
   guion_<pid>.py  →  por capítulo, N bloques de epígrafes
       → prompt a bridge.py **con las cifras y las tablas del xlsx ya
@@ -996,7 +1006,26 @@ def bridge(prompt, salida_txt, palabras_min, max_tokens=12000, intentos=6,
 
 
 def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
-                  guia, es_ultimo):
+                  guia, es_ultimo, puntos=None, puntos_globales=None,
+                  otros_tramos=()):
+    """El prompt EXACTO de un tramo de capítulo.
+
+    2026-09-10 — los `puntos` se REPARTEN por tramo (`repartir_puntos()`): hasta
+    hoy cada uno de los 2-3 redactores del mismo capítulo recibía la lista
+    COMPLETA y desarrollaba los mismos puntos (41 pares de frases con Jaccard
+    ≥ 0,55 en 15 de los 20 capítulos del Manual del Chef Ejecutivo). Además,
+    `otros_tramos` le dice a cada redactor qué escriben los demás para que
+    remita a ello en vez de repetirlo.
+
+    `puntos=None` significa «no me lo han pasado»: se cae a `cap['puntos']`
+    entero, que es el comportamiento viejo, para no romper a ningún llamador
+    antiguo. Los dos llamadores vivos (`generar_capitulo()` y `dump_prompts.py`)
+    pasan SIEMPRE el reparto vía `prompts_de_capitulo()`.
+    """
+    if puntos is None:
+        puntos = cap.get('puntos') or []
+    if puntos_globales is None:
+        puntos_globales = cap.get('puntos_globales') or []
     partes = []
     partes.append(
         f'Escribe un tramo del capítulo {cap["n"]} — «{cap["titulo"]}» '
@@ -1009,9 +1038,22 @@ def prompt_bloque(cap, bloque_epigrafes, palabras, ctx_cifras, ctx_sector,
     partes.append(f'EXTENSIÓN: unas {palabras} palabras en total para este tramo, '
                   'repartidas entre esos epígrafes. Prosa + listas con viñetas '
                   'cuando aporten; nunca tablas.')
-    if cap.get('puntos'):
+    if puntos:
         partes.append('PUNTOS OBLIGATORIOS (tienen que aparecer, con su detalle '
-                      'operativo):\n' + '\n'.join(f'  - {p}' for p in cap['puntos']))
+                      'operativo):\n' + '\n'.join(f'  - {p}' for p in puntos))
+    if puntos_globales:
+        partes.append('CRITERIOS QUE APLICAN A TODO EL CAPÍTULO (valen para '
+                      'este tramo y para los demás):\n'
+                      + '\n'.join(f'  - {p}' for p in puntos_globales))
+    if otros_tramos:
+        lineas = []
+        for epis_otro, puntos_otro in otros_tramos:
+            lineas += [f'  ### {e}' for e in epis_otro]
+            lineas += [f'      - {p}' for p in (puntos_otro or [])]
+        partes.append(
+            'LO QUE ESCRIBEN LOS OTROS TRAMOS DE ESTE CAPÍTULO (no lo '
+            'desarrolles tú; como mucho remite a ello en una frase):\n'
+            + '\n'.join(lineas))
     if ctx_cifras:
         partes.append(
             'CIFRAS DEL PROPIO PRODUCTO — son las ÚNICAS cifras de negocio que '
@@ -1049,6 +1091,87 @@ def trocear(epigrafes, n_bloques):
     n_bloques = max(1, min(n_bloques, len(epigrafes)))
     tam = (len(epigrafes) + n_bloques - 1) // n_bloques
     return [epigrafes[i:i + tam] for i in range(0, len(epigrafes), tam)]
+
+
+def repartir_puntos(cap, bloques):
+    """Los `puntos` que le tocan a CADA bloque del capítulo (2026-09-10).
+
+    Dos formas de declararlos en el guion, por orden de preferencia:
+
+      · `cap['puntos_por_epigrafe']` = {epígrafe literal: [puntos]} — cada
+        bloque recibe los puntos de SUS epígrafes, en el orden de los
+        epígrafes. Un epígrafe sin entrada no recibe ninguno. Una clave que no
+        sea un epígrafe del capítulo ABORTA: un guion con la clave mal escrita
+        perdería esos puntos en silencio, que es justo el fallo que se está
+        arreglando.
+      · `cap['puntos']` = lista plana (los guiones ya escritos) — se reparte
+        POSICIONALMENTE y en proporción al número de epígrafes de cada bloque.
+        La concatenación de los repartos es la lista original, sin perder ni
+        duplicar ninguno (se comprueba antes de devolver).
+
+    `cap['puntos_globales']` NO se reparte: va entero a todos los bloques y lo
+    pinta `prompt_bloque()` en su propia sección.
+    """
+    por_epi = cap.get('puntos_por_epigrafe')
+    if por_epi:
+        conocidos = set(cap['epigrafes'])
+        huerfanas = [k for k in por_epi if k not in conocidos]
+        if huerfanas:
+            raise SystemExit(
+                f'ABORTADO: capítulo {cap.get("n", "?")} — '
+                f'«puntos_por_epigrafe» tiene {len(huerfanas)} clave(s) que no '
+                'son epígrafes de este capítulo (sus puntos se perderían sin '
+                'avisar): ' + '; '.join(f'«{k}»' for k in huerfanas) +
+                '. Epígrafes válidos: ' +
+                '; '.join(f'«{e}»' for e in cap['epigrafes']))
+        return [[p for e in bl for p in por_epi.get(e, [])] for bl in bloques]
+
+    planos = list(cap.get('puntos') or [])
+    if not planos:
+        return [[] for _ in bloques]
+    total_epi = sum(len(bl) for bl in bloques) or 1
+    reparto, acumulado, inicio = [], 0, 0
+    for bl in bloques:
+        acumulado += len(bl)
+        fin = int(len(planos) * acumulado / total_epi + 0.5)
+        fin = min(max(fin, inicio), len(planos))
+        reparto.append(planos[inicio:fin])
+        inicio = fin
+    if inicio < len(planos):          # el redondeo nunca debería dejar cola
+        reparto[-1] = reparto[-1] + planos[inicio:]
+    plano_otra_vez = [p for r in reparto for p in r]
+    if plano_otra_vez != planos:
+        raise SystemExit(
+            f'ABORTADO: el reparto de «puntos» del capítulo {cap.get("n", "?")} '
+            f'no conserva la lista ({len(plano_otra_vez)} de {len(planos)}).')
+    return reparto
+
+
+def bloques_de_capitulo(cap):
+    """[(epígrafes, puntos, otros_tramos)] por bloque, ya repartido.
+
+    `otros_tramos` = [(epígrafes, puntos)] de los DEMÁS bloques del capítulo;
+    con un solo bloque va vacío y el prompt no cambia nada."""
+    bloques = trocear(cap['epigrafes'], cap.get('bloques', 2))
+    repartos = repartir_puntos(cap, bloques)
+    return [(bloques[i], repartos[i],
+             [(bloques[j], repartos[j]) for j in range(len(bloques)) if j != i])
+            for i in range(len(bloques))]
+
+
+def prompts_de_capitulo(cap, guia, ctx_cifras, ctx_sector):
+    """Los prompts de TODOS los bloques del capítulo, con el reparto ya hecho.
+
+    Fuente ÚNICA: la usan `generar_capitulo()` y `dump_prompts.py`, que tienen
+    que mandar exactamente el mismo texto al redactor (bridge o subagente)."""
+    info = bloques_de_capitulo(cap)
+    por_bloque = max(500, int(cap['palabras'] / len(info)))
+    return [{'epigrafes': epis, 'puntos': puntos_b, 'palabras': por_bloque,
+             'prompt': prompt_bloque(cap, epis, por_bloque, ctx_cifras,
+                                     ctx_sector, guia,
+                                     es_ultimo=(i == len(info) - 1),
+                                     puntos=puntos_b, otros_tramos=otros)}
+            for i, (epis, puntos_b, otros) in enumerate(info)]
 
 
 def _hojas_conocidas(xlsx_dir):
@@ -1139,13 +1262,27 @@ def limpiar_bloque(texto, hojas=()):
 # --------------------------------------------------------------------------
 
 
-def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False,
-                     hojas=()):
+def contexto_capitulo(cap, xlsx_dir, idx_research):
+    """Cifras del producto + datos del sector de un capítulo, ya en el formato
+    literal que ve el redactor. Compartido por `generar_capitulo()` y
+    `dump_prompts.py` para que los dos construyan el MISMO prompt."""
     cifras = resolver_cifras(xlsx_dir, cap.get('cifras', []))
     ctx_cifras = '\n'.join(f'  - {e}: {v}   [fuente: {r}]' for e, v, r, _ in cifras)
     ctx_sector, usados, huecos = bloque_research(idx_research, cap.get('sector', []))
     ctx_sector_breve, _, _ = bloque_research(idx_research, cap.get('sector', []),
                                              breve=True)
+    return {'cifras': cifras, 'ctx_cifras': ctx_cifras,
+            'ctx_sector': ctx_sector, 'ctx_sector_breve': ctx_sector_breve,
+            'sector_usado': usados, 'sector_huecos': huecos}
+
+
+def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False,
+                     hojas=()):
+    ctx = contexto_capitulo(cap, xlsx_dir, idx_research)
+    cifras = ctx['cifras']
+    ctx_cifras, ctx_sector = ctx['ctx_cifras'], ctx['ctx_sector']
+    ctx_sector_breve = ctx['ctx_sector_breve']
+    usados, huecos = ctx['sector_usado'], ctx['sector_huecos']
 
     tablas = []
     for t in cap.get('tablas', []):
@@ -1153,8 +1290,12 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False,
         tablas.append((t.get('titulo', ''), md, nf, t.get('nota')))
     cap['tablas_anunciadas'] = [t[0] for t in tablas]
 
-    bloques = trocear(cap['epigrafes'], cap.get('bloques', 2))
-    por_bloque = max(500, int(cap['palabras'] / len(bloques)))
+    # 2026-09-10: los prompts salen de prompts_de_capitulo() —los mismos que
+    # vuelca dump_prompts.py— con los «puntos» ya repartidos por tramo.
+    largos = prompts_de_capitulo(cap, guia, ctx_cifras, ctx_sector)
+    cortos = prompts_de_capitulo(cap, guia, ctx_cifras, ctx_sector_breve)
+    bloques = [b['epigrafes'] for b in largos]
+    por_bloque = largos[0]['palabras']
     piezas = []
     for i, epis in enumerate(bloques):
         ruta = os.path.join(dir_txt, f'cap{cap["n"]:02d}_b{i + 1}.txt')
@@ -1174,13 +1315,10 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False,
                 print(f'  cap {cap["n"]:02d} bloque {i + 1}: caché DESCARTADA '
                       f'({", ".join(sorted(set(m["tipo"] for m in malos)))})',
                       flush=True)
-        p = prompt_bloque(cap, epis, por_bloque, ctx_cifras, ctx_sector, guia,
-                          es_ultimo=(i == len(bloques) - 1))
+        p = largos[i]['prompt']
         print(f'  cap {cap["n"]:02d} bloque {i + 1}/{len(bloques)} '
               f'({por_bloque} palabras objetivo)', flush=True)
-        p_corto = prompt_bloque(cap, epis, por_bloque, ctx_cifras,
-                                ctx_sector_breve, guia,
-                                es_ultimo=(i == len(bloques) - 1))
+        p_corto = cortos[i]['prompt']
         t = bridge(p, ruta, palabras_min=int(por_bloque * 0.72),
                    prompt_corto=p_corto)
         piezas.append(limpiar_bloque(t, hojas))

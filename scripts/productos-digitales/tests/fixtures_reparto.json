@@ -1,0 +1,128 @@
+{
+  "_doc": "Capítulos sintéticos para el test de reparto de puntos (2026-09-10). NO son de ningún producto: existen para poder comparar byte a byte el prompt viejo con el nuevo. Los dos primeros casos NO llevan 'puntos' a propósito: son la regresión.",
+  "guia": {
+    "titulo": "Guía Sintética de Pruebas",
+    "subtitulo": "un producto que no existe",
+    "tipo_doc_art": "de la guía",
+    "tipo_doc_dem": "esta guía"
+  },
+  "casos": [
+    {
+      "nombre": "sin_puntos_5epi_2bloques",
+      "ctx_cifras": "  - Inversión total: 118.400,00 €   [fuente: demo.xlsx!Inversion!C46]",
+      "ctx_sector": "  - Margen medio del sector: 6,4 % (Observatorio Demo, 2026)",
+      "cap": {
+        "n": 7,
+        "titulo": "Capítulo Sintético Sin Puntos",
+        "palabras": 1600,
+        "bloques": 2,
+        "objetivo": "Comprobar que el prompt no cambia cuando el capítulo no declara puntos.",
+        "epigrafes": [
+          "Epígrafe uno del capítulo sintético",
+          "Epígrafe dos del capítulo sintético",
+          "Epígrafe tres del capítulo sintético",
+          "Epígrafe cuatro del capítulo sintético",
+          "Epígrafe cinco del capítulo sintético"
+        ],
+        "tablas_anunciadas": ["Tabla demo de costes", "Tabla demo de turnos"],
+        "prohibido": [
+          "No digas que el 60 % cierra el primer año.",
+          "No cites precios sin fuente fechada."
+        ]
+      }
+    },
+    {
+      "nombre": "sin_puntos_6epi_3bloques",
+      "ctx_cifras": "",
+      "ctx_sector": "",
+      "cap": {
+        "n": 12,
+        "titulo": "Otro Capítulo Sintético Sin Puntos",
+        "palabras": 2100,
+        "bloques": 3,
+        "objetivo": "Tres bloques, sin cifras ni research, para cubrir la rama corta del prompt.",
+        "epigrafes": [
+          "Alfa del capítulo doce",
+          "Beta del capítulo doce",
+          "Gamma del capítulo doce",
+          "Delta del capítulo doce",
+          "Épsilon del capítulo doce",
+          "Zeta del capítulo doce"
+        ]
+      }
+    },
+    {
+      "nombre": "plana_7puntos_3bloques",
+      "ctx_cifras": "",
+      "ctx_sector": "",
+      "cap": {
+        "n": 3,
+        "titulo": "Capítulo con Lista Plana de Puntos",
+        "palabras": 1800,
+        "bloques": 3,
+        "objetivo": "Reparto posicional proporcional de 7 puntos entre 3 bloques.",
+        "epigrafes": [
+          "Uno de seis",
+          "Dos de seis",
+          "Tres de seis",
+          "Cuatro de seis",
+          "Cinco de seis",
+          "Seis de seis"
+        ],
+        "puntos": [
+          "PUNTO-A: el primero de la lista plana.",
+          "PUNTO-B: el segundo de la lista plana.",
+          "PUNTO-C: el tercero de la lista plana.",
+          "PUNTO-D: el cuarto de la lista plana.",
+          "PUNTO-E: el quinto de la lista plana.",
+          "PUNTO-F: el sexto de la lista plana.",
+          "PUNTO-G: el séptimo de la lista plana."
+        ]
+      }
+    },
+    {
+      "nombre": "por_epigrafe_2bloques",
+      "ctx_cifras": "",
+      "ctx_sector": "",
+      "cap": {
+        "n": 9,
+        "titulo": "Capítulo con Puntos por Epígrafe",
+        "palabras": 1600,
+        "bloques": 2,
+        "objetivo": "Cada epígrafe declara sus propios puntos.",
+        "epigrafes": [
+          "Primero con puntos",
+          "Segundo sin puntos",
+          "Tercero con puntos",
+          "Cuarto con puntos"
+        ],
+        "puntos_por_epigrafe": {
+          "Primero con puntos": ["PE-1: sólo del primer epígrafe."],
+          "Tercero con puntos": ["PE-3: sólo del tercer epígrafe.", "PE-3bis: también del tercero."],
+          "Cuarto con puntos": ["PE-4: sólo del cuarto epígrafe."]
+        },
+        "puntos_globales": [
+          "GLOBAL-1: tono directo en todo el capítulo.",
+          "GLOBAL-2: ninguna cifra sin fuente."
+        ]
+      }
+    },
+    {
+      "nombre": "clave_inexistente",
+      "ctx_cifras": "",
+      "ctx_sector": "",
+      "cap": {
+        "n": 4,
+        "titulo": "Capítulo con una Clave Mal Escrita",
+        "palabras": 1200,
+        "bloques": 2,
+        "objetivo": "La clave del dict no es ninguno de los epígrafes: tiene que abortar.",
+        "epigrafes": ["Alfa bien escrito", "Beta bien escrito", "Gamma bien escrito"],
+        "puntos_por_epigrafe": {
+          "Alfa bien escrito": ["ok"],
+          "Beta bien escritó": ["esta clave lleva una tilde de más"]
+        }
+      }
+    }
+  ]
+}

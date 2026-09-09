@@ -3,7 +3,12 @@
 bloques que aún no están en caché, para que los escriban agentes en paralelo.
 Uso: python3 dump_prompts.py <pid> <dir_salida_de_documentos.py>  → <salida>/prompts/{index.json,<id>.txt,system.txt}
 Patrón (John, 2026-09-04): los productos digitales NO se escriben con bridge; cada prompt lo redacta un
-subagente Anthropic que guarda el bloque en la caché txt/ y lo verifica con check_bloque.py."""
+subagente Anthropic que guarda el bloque en la caché txt/ y lo verifica con check_bloque.py.
+2026-09-10: el prompt lo construye `documentos.contexto_capitulo()` + `documentos.prompts_de_capitulo()`,
+las MISMAS funciones que usa generar_capitulo(), así que los «puntos» ya vienen repartidos por tramo (uno
+no recibe los de otro) y cada prompt dice qué escriben los demás tramos del capítulo. Esa función común es
+lo que impide que este volcado y el pipeline diverjan; el test lo comprueba
+(scripts/productos-digitales/tests/test_reparto_puntos.py, gate e)."""
 import importlib.util, json, os, sys
 REPO = '/Users/johnguerrero/chefpro-modernize'
 PID = sys.argv[1]
@@ -25,29 +30,27 @@ index = []
 def volcar(capitulos, g, dir_txt, prefijo):
     os.makedirs(dir_txt, exist_ok=True)
     for cap in capitulos:
-        cifras = d.resolver_cifras(xlsx_dir, cap.get('cifras', []))
-        ctx_cifras = '\n'.join(f'  - {e}: {v}   [fuente: {r}]' for e, v, r, _ in cifras)
-        ctx_sector, _, _ = d.bloque_research(idx, cap.get('sector', []))
+        ctx = d.contexto_capitulo(cap, xlsx_dir, idx)
         tablas = []
         for t in cap.get('tablas', []):
             md, nf = d.construir_tabla(xlsx_dir, t)
             tablas.append(t.get('titulo', ''))
         cap['tablas_anunciadas'] = tablas
-        bloques = d.trocear(cap['epigrafes'], cap.get('bloques', 2))
-        por_bloque = max(500, int(cap['palabras'] / len(bloques)))
-        for i, epis in enumerate(bloques):
+        bloques_p = d.prompts_de_capitulo(cap, g, ctx['ctx_cifras'], ctx['ctx_sector'])
+        for i, b in enumerate(bloques_p):
+            por_bloque, epis = b['palabras'], b['epigrafes']
             ruta = os.path.join(dir_txt, f'cap{cap["n"]:02d}_b{i + 1}.txt')
             if os.path.exists(ruta):
                 t = open(ruta, encoding='utf-8').read().strip()
                 if len(t.split()) >= por_bloque * 0.6 and not d.defectos_de_bloque(t):
                     continue
-            p = d.prompt_bloque(cap, epis, por_bloque, ctx_cifras, ctx_sector, g,
-                                es_ultimo=(i == len(bloques) - 1))
+            p = b['prompt']
             bid = f'{prefijo}_cap{cap["n"]:02d}_b{i + 1}'
             open(os.path.join(P, bid + '.txt'), 'w', encoding='utf-8').write(p)
             index.append({'id': bid, 'ruta_txt': ruta, 'prompt': os.path.join(P, bid + '.txt'),
                           'palabras_objetivo': por_bloque, 'palabras_min': int(por_bloque * 0.72),
-                          'capitulo': cap['titulo'], 'epigrafes': epis})
+                          'capitulo': cap['titulo'], 'epigrafes': epis,
+                          'puntos': b['puntos']})
 
 
 volcar(guion.CAPITULOS, guia, os.path.join(SALIDA, 'txt'), 'guia')
