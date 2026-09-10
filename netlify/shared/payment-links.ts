@@ -5,6 +5,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'guia-dark-kitchen': 'https://buy.stripe.com/eVq5kw6WoboybnpdfD6oo0L',
   'guia-food-cost-ingenieria-menu': 'https://buy.stripe.com/bJe3codkMgISajl6Rf6oo1o',
   'guia-panaderia-obrador': 'https://buy.stripe.com/dRm6oAbcE78iajl2AZ6oo1e',
+  'guia-pasteleria-obrador': 'https://buy.stripe.com/7sY00c5Sk64e1MPejH6oo1r',
   'guia-restaurante-casual': 'https://buy.stripe.com/bJefZa1C49gqgHJdfD6oo0N',
   'guia-restaurante-gastronomico': 'https://buy.stripe.com/14A28k5Sk50a7796Rf6oo0M',
   'guia-restaurante-japones': 'https://buy.stripe.com/eVq9AM6WoeAKezBejH6oo0Q',
