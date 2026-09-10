@@ -1,0 +1,36 @@
+### El contexto de la decisión
+
+En una pastelería (repostería) lo que no se vende hoy no espera a mañana: la vitrina (exhibidor) refrigerada tiene 15 referencias, y las 15 llevan plazo legal de veinticuatro horas, así que al cierre no hay margen para pensar «ya lo coloco la próxima jornada». El primer año esa urgencia se agrava porque todavía no conoces la demanda por referencia: pides con intuición, no con histórico, y la merma sale alta mientras aprendes qué se vende y cuánto. Ese aprendizaje tiene un coste doble y en dos direcciones opuestas: se tira producto que se podría haber vendido con un pequeño empujón, y al mismo tiempo se vende producto que ya no se debería vender, porque nadie decidió a qué hora deja de estar en condiciones de ofrecerse tal cual. Las dos cosas nacen de la misma causa: no tener la política de fin de jornada escrita antes de abrir. Sin ella, cada dependienta improvisa su propio criterio, y el criterio de una tarde no coincide con el de la siguiente.
+
+### Las opciones sobre la mesa
+
+Al cierre hay cuatro caminos para lo que sobra, y conviene tenerlos decididos de antemano, no inventados sobre la marcha:
+
+- Opción A: tirar. Es la opción por defecto de quien no ha decidido nada, y la más cara de las cuatro.
+- Opción B: vender con descuento, en un rincón identificado de la vitrina o del mostrador, nunca mezclado con el género recién hecho.
+- Opción C: donar.
+- Opción D: usarlo como consumo de personal.
+
+Lo que cambia entre una opción y otra no es sólo el destino físico del producto: cambian los euros que recuperas, la percepción de marca que dejas en quien te ve vender con descuento o donar, y las obligaciones que se activan según la vía elegida. Vender con descuento activa la regla del precio de referencia; donar activa la normativa de desperdicio alimentario; el consumo de personal no genera ingreso pero tampoco arrastra ese papeleo.
+
+### El criterio con el que se decide
+
+El primer criterio no es cuál de las cuatro opciones elegir: es reducir la producción con datos antes de tener que elegir ninguna. La merma se mide por referencia, no en bloque, porque una tarta (pastel o torta) de vida corta y una pieza de bollería envasada no se comportan igual. Sólo después de medir tiene sentido decidir qué hacer con lo que sobra; descontar sin haber medido antes convierte el descuento en política de precios encubierta, porque terminas rebajando siempre las mismas referencias por costumbre y no por excedente real.
+
+El segundo criterio es de precio: rebajar para no tirar producto no puede estropear el precio que llevas cobrando en tu carta el resto del mes, y la norma trae una excepción escrita justamente para este caso, que se explica en el epígrafe siguiente.
+
+El margen de contribución medio por pieza de la carta modelada es de 1,07 €; es la referencia contra la que mides si un descuento de cierre sigue dejando margen o si ya estás regalando el producto.
+
+### La celda que lo resuelve
+
+La merma objetivo del caso modelado está en la hoja de parámetros del libro de la carta, y es del 5 %; el food cost servido de esa misma carta ya la incluye: el food cost de materia es del 17,6 % y el food cost servido, con merma y packaging, sube al 20,3 %. Esa diferencia entre los dos porcentajes es exactamente lo que se está yendo por la puerta de atrás cada noche; si tu merma real supera el 5 % de la hoja de parámetros, el food cost servido que obtienes en la práctica es más alto que el 20,3 % de referencia, y ahí es donde hay que actuar primero, antes de decidir qué hacer con lo sobrante.
+
+Para saber si estás en esa línea o por encima de ella hace falta el dato de cada día, no el del mes: el registro de lo producido contra lo vendido, referencia por referencia, lo entrega el Kit de Tareas Pastelería. Sin ese registro, cualquier decisión sobre las cuatro opciones se toma a ciegas, y da igual lo bien que suene sobre el papel.
+
+### La norma que aplica cuando la hay
+
+Vender producto con defecto de forma, de tamaño, de etiquetado o de envasado es legal, bajo tu responsabilidad e informando al cliente, con dos exclusiones: no aplica a frutas y hortalizas ni a conservas abombadas, y en ningún caso puede dificultar la lectura de la información obligatoria del etiquetado (RD 1021/2022, art. 17, texto consolidado; comprobado el 10 de septiembre de 2026). Donar excedente también es legal y está regulado.
+
+En materia de desperdicio alimentario, la exención por superficie —para establecimientos de 1.300 m² o menos— alcanza sólo al apartado del artículo 6 dedicado al plan de prevención y a los convenios de donación; siguen obligando los otros tres apartados, entre ellos el que declara nula de pleno derecho cualquier cláusula de contrato que te impida donar (Ley 1/2025, de 1 de abril, artículos 3, letra f, 6.2, 6.3, 6.4, letra c, 6.5 y 6.6, texto consolidado). Y lo que rebajes para no tirar producto próximo a caducar no cuenta como precio anterior a efectos de la regla de los treinta días: puedes descontarlo sin que ese precio rebajado se convierta en el suelo con el que se te compare en tu próxima oferta habitual (Ley 7/1996, de Ordenación del Comercio Minorista, art. 20.1, en la redacción dada por el art. 85 del RD-ley 24/2021).
+
+La recomendación, con lo que la haría cambiar: empieza por la opción B en el rincón identificado, porque recupera más euros que donar o que el consumo de personal y no exige el papeleo de la donación; pasa a la opción C sólo cuando el volumen que te sobra cada noche supere lo que ese rincón puede absorber sin devaluar el resto de la vitrina, y reserva la opción D para las piezas que ya no cumplen la condición para salir a la venta con descuento.

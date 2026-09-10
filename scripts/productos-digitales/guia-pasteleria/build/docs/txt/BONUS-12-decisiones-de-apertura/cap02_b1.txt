@@ -1,0 +1,35 @@
+### El contexto de la decisión
+
+El abatidor es la partida más cara del equipamiento del obrador (taller o laboratorio), y por eso es también la primera que se cae del presupuesto cuando las cuentas no salen. Cuando toca recortar, nadie recorta la cámara ni el horno: se recorta el abatidor, porque parece que se puede vivir sin él una temporada.
+
+El argumento que se oye siempre en esta fase es el mismo: «el primer año hago menos producto y ya lo compraré». Suena razonable, pero esconde la pregunta de verdad, que no es si se puede abrir sin abatidor, sino cuánto techo de producción se está comprando con esa frase. Un negocio no crece en el vacío: crece hasta donde el equipo que lo limita se lo permite, y si ese equipo es el abatidor, el negocio no va a superar ese techo por muchas ganas que le pongas.
+
+### Las opciones sobre la mesa
+
+Hay tres caminos, y conviene mirarlos con la misma calculadora antes de decidir:
+
+- Opción A: comprarlo el día uno, con la capacidad que corresponde al surtido que quieres ofrecer desde el primer día.
+- Opción B: abrir sin él y limitar el surtido a lo que no necesita paso por abatidor, aplazando la inversión hasta que la facturación la sostenga sola.
+- Opción C: comprar uno de menos bandejas —una versión reducida— y cambiarlo por uno mayor cuando el propio negocio lo pida.
+
+Las tres son legítimas. Lo que no es legítimo es elegir sin saber qué se pierde en cada una, porque el abatidor no es un capricho de obrador bonito: es el equipo que decide cuánta tarta (pastel o torta) por encargo (pedido) puedes aceptar y cuánto puedes adelantar antes de una campaña fuerte.
+
+### El criterio con el que se decide
+
+Lo que cambia entre las tres opciones son tres cosas: las piezas al día que puede sacar el conjunto de equipos del obrador, la parte del surtido que depende de pasar por abatidor y la capacidad que tienes disponible en campaña, cuando todo el mundo encarga a la vez.
+
+La regla no es mirar el equipo más caro, es mirar el equipo que limita. La hoja de capacidad por equipo da las piezas al día que permite cada máquina del obrador por separado, y la hoja de cuello de botella dice cuál de todas ellas manda y con cuánta holgura lo hace. En el caso modelado, el abatidor permite 480 piezas al día, y esa misma cifra —480— es la que marca el techo de todo el conjunto: el abatidor coincide exactamente con el cuello de botella. La holgura sobre el día normal es de sólo 4 piezas, y el siguiente equipo más justo del obrador aguanta 1.036 piezas al día, más del doble. No hay color: si el abatidor es el cuello de botella del conjunto, comprarlo pequeño no es ahorrar, es fijar el techo del negocio entero, mientras el resto de la maquinaria se queda esperando trabajo que nunca le va a llegar.
+
+Y hay un segundo criterio, el de campaña, que pesa tanto como el primero: sin abatidor no se puede adelantar producción, y sin adelantar producción, la campaña grande —la que concentra encargos de golpe— no cabe en las horas de un solo día de obrador. El abatidor es lo que te permite trabajar hoy para servir dentro de tres días sin que el producto pierda calidad por el camino; sin él, cada campaña fuerte te pilla fabricando a tiempo real, que es la peor forma de fabricar.
+
+Con estos números, la recomendación es clara para quien planea un surtido donde el 40 % pasa por abatidor: comprarlo el día uno, con capacidad sobrada y no ajustada al límite. La condición que cambiaría esta recomendación es que el surtido previsto reduzca de verdad esa proporción del 40 % y que ningún encargo de campaña dependa de producción adelantada; en ese caso, y sólo en ese caso, la Opción C —uno más pequeño, para crecer después— pasa a ser defendible.
+
+### La celda que lo resuelve
+
+Los tres números que zanjan esta decisión están en la hoja «Capacidad por Equipo» y en la hoja «Cuello de Botella», las dos dentro de capacidad-obrador-y-local.xlsx: las piezas al día de cada equipo, la parte del surtido que pasa por el abatidor y cuál de todas las máquinas manda, con su holgura. Y el importe con el que se contrasta esa decisión contra el presupuesto está en la hoja «CAPEX por Bloque» de calculadora-capex-pasteleria.xlsx, donde el abatidor aparece con su precio de referencia y su base fiscal: 10.037 € más IVA, tomado de un modelo comercial concreto (Abatidor de temperatura: precios y opciones para cada necesidad — EquipoH, 2026). Cambiar el número de bandejas en esa hoja recalcula al momento las piezas al día del conjunto, así que antes de decidir merece la pena moverlo y ver cómo se desplaza el cuello de botella.
+
+### La norma que aplica cuando la hay
+
+Aquí sí hay norma, y aprieta más de lo que parece a simple vista: la congelación exige alcanzar una temperatura central no superior a −18 °C con un descenso ininterrumpido, tal como lo fija el art. 5 del RD 1021/2022, en su texto consolidado (comprobado el 10 de septiembre de 2026). Eso descarta de raíz cualquier arcón doméstico como sustituto de abatidor: sólo se puede congelar en un arcón o en una cámara de mantenimiento si se garantiza que ese descenso se ha cumplido antes, no dentro del propio arcón.
+
+Y lo que sale de ese proceso va etiquetado con tres fechas, sin excepción: fecha de elaboración, fecha de congelación y fecha de caducidad o de consumo preferente. Esa etiqueta es la que sustituye al registro de congelación pieza a pieza, y es también la primera pregunta que te va a hacer cualquier inspección si en tu vitrina hay producto que reconoces como descongelado.

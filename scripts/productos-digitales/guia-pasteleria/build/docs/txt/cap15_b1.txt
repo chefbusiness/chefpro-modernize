@@ -1,0 +1,30 @@
+### El pico multiplica la producción con el mismo equipo
+
+Matías, dueño de una pastelería en España, lo cuenta en «Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…» (2025-11-21): sus ensaimadas pasan de 25-30 unidades al día a 150-200 en temporada alta, las piezas individuales van de 50-60 a 500-600, y en Navidad salen entre 7.000 y 8.000 barras de turrón del mismo obrador (taller o laboratorio) y con el mismo equipo. La regla que deja ese testimonio importa más que las cifras sueltas: el pico multiplica la producción por 5-10 veces, no por 1,5 veces. No es una anécdota de un obrador concreto, es la forma que tiene el año en pastelería, y quien monta el negocio pensando en el día normal se está preparando para fallar justo en los días que más factura.
+
+En el caso modelado de esta guía, la campaña de Reyes pide 2.856 piezas al día. El conjunto de equipos que compone el caso deja un déficit diario de 1.656 piezas: ese es el hueco entre lo que el mercado pide un día de Reyes y lo que la cocina, tal como está dimensionada, puede sacar por su cuenta ese mismo día.
+
+De ahí sale la consecuencia de compra, y es la que cambia cómo se elige el horno, el abatidor o la amasadora: la maquinaria no se dimensiona para el día normal, sino sabiendo exactamente cuánto déficit se está dispuesto a aceptar en cada campaña y con qué se va a cubrir ese hueco. Comprar equipo para cubrir el pico entero sin ayuda deja el obrador sobredimensionado la mayor parte del año; comprar sólo para el día normal deja al negocio fuera de juego justo en la semana que paga el resto del calendario. La decisión correcta está en medio, y se toma sabiendo el número del déficit, no calculándolo a ojo cuando ya ha empezado la campaña.
+
+### Cuánto pesa cada campaña sobre el año
+
+Las seis campañas del calendario pesan un 13,2 % sobre las ventas del año en el caso modelado, y suman una facturación sin IVA de 42.371 €. De esa cifra hay que separar lo que de verdad añade la campaña: la facturación incremental —41.163 €— es la que se habría perdido si el negocio hubiera vendido a ritmo normal esos mismos días. La diferencia entre las dos cifras es pequeña porque casi todo lo que se vende en campaña es venta que no existiría sin ella; no es lo mismo repartir esa venta entre doce meses que concentrarla en unas semanas, y por eso el peso sobre el año no cuenta toda la historia.
+
+La campaña de Reyes por sí sola pesa un 9,8 % sobre las ventas del año, y un día de Reyes factura 5,9 veces lo que factura un día normal. Ahí está la explicación de por qué una sola semana convierte diciembre en el mes que sostiene el resto del calendario: el margen que se gana o se pierde esos días no se recupera después, porque no hay otro momento del año con esa demanda esperando. La magnitud de la campaña no es una particularidad de este obrador: los roscones de Reyes vendidos en toda España en la campaña 2025/26 rondan los 30 millones de unidades («Los españoles consumirán alrededor de 30 millones de roscones de Reyes esta Navidad — Infobae», 2026-01-02), sólo en la Comunidad de Madrid se superaron los 2,9 millones («Fiebre por el roscón en Madrid: casi 3 millones de ventas y preferencia por el relleno — Libertad Digital», 2026-01-02), con un 57 % de los consumidores eligiendo relleno de nata o trufa (Libertad Digital, 2026-01-02), y hay referencias de cadenas que dan escala al fenómeno: El Corte Inglés vendió 850.000 unidades y Viena Capellanes 72.000 en la misma campaña (Infobae, 2026-01-02). El propio supermercado entra en esa pelea con roscones premiados a 9 € (La Ciutat, 2026), lo que da una idea de a qué precio compite quien no tiene obrador propio.
+
+Y aquí está el caso contrario, que es el que sorprende a quien planifica sin mirar los números: hay campañas con nombre propio en el calendario que pesan muy poco sobre el año. Tratarlas igual que Reyes —con la misma compra de materia prima, el mismo refuerzo de plantilla, la misma tensión de caja— es lo que descuadra la compra del resto del año: se gasta munición donde no hace falta y falta donde de verdad aprieta.
+
+### El déficit de capacidad y el refuerzo
+
+El obrador del caso modelado no aguanta con el equipo base ninguna de las seis campañas: es el número que hay que leer bien. No significa que el negocio no funcione ni que el plan esté mal hecho: significa que en cada una de las seis hay que decidir con qué palanca se cubre el hueco entre lo que se vende y lo que la cocina saca sola.
+
+Las palancas, de menos a más coste, son estas:
+
+- Adelantar producción con frío: congelar cuanto antes lo que la elaboración lo permite, para que el día del pico sólo quede acabar y servir.
+- Alargar el turno: sumar horas al mismo equipo antes de sumar personas.
+- Reforzar con personal: incorporar manos extra para las tareas que no se pueden adelantar ni congelar.
+- Limitar el encargo: la última palanca, y la única que renuncia a facturación en vez de gastar para producirla.
+
+Qué palanca usar en cada campaña depende de qué se puede congelar de lo que se vende en ella: el producto que aguanta bien el frío tira de la primera palanca y ahorra refuerzo; el que hay que montar o acabar el mismo día tira de las últimas dos. Esa decisión, campaña a campaña, es la que separa un plan de compra realista de uno hecho por intuición.
+
+El coste del refuerzo de todo el año, sumando las seis campañas, es de 3.795,51 €. Esa cifra sale de multiplicar las horas de refuerzo que exige cada pico por el coste por hora de empresa, no por el salario bruto que ve el trabajador: incluye la Seguridad Social a cargo de la empresa y el resto de costes que van con cada hora contratada, que es el número que de verdad hay que meter en la caja. El desglose de ese coste por puesto y por hora está en el capítulo dedicado al equipo.

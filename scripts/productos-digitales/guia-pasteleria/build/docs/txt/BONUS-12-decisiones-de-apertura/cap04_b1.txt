@@ -1,0 +1,35 @@
+### El contexto de la decisión
+
+Comprar elaborado el primer año es la manera más rápida de abrir con carta amplia y con poca inversión, y no es una chapuza de nadie: hay formatos enteros del sector que funcionan así desde el primer día, con vitrina llena y sin obrador propio detrás. El problema es que casi nadie sabe que esa decisión no se queda en la trastienda: afecta a lo que puedes escribir en tu propio escaparate, y eso tiene definición legal, no es una cuestión de estilo publicitario. Quien decide comprar sin mirar esta letra pequeña se encuentra, meses después, con un cartel que tiene que cambiar o con una inspección que se lo cambia por él.
+
+### Las opciones sobre la mesa
+
+Sobre la mesa hay tres caminos, y conviene nombrarlos así de claros antes de mirar el número:
+
+- Opción A: todo de elaboración propia desde el día uno. Obrador completo, plantilla formada, inversión alta desde el primer mes.
+- Opción B: base propia y complementos comprados. Tú fabricas lo que te define como negocio y compras el resto para completar vitrina.
+- Opción C: comprar elaborado y hornear en el local. Regeneras producto de otro fabricante; el obrador se reduce a lo mínimo para acabar la cocción.
+
+Lo que cambia entre las tres no es sólo el sabor de lo que sirves: cambia la inversión de equipamiento, cambia el margen por pieza, cambia la carga de obrador que tienes que sostener con tu plantilla, y cambia la mención que puedes usar en el escaparate y en el etiquetado. Son cuatro variables distintas, y las tres opciones las mueven en direcciones distintas.
+
+### El criterio con el que se decide
+
+El primer criterio es de números, y la regla es siempre la misma: se compara el margen por pieza del producto propio contra el comprado, contando la mano de obra dentro del coste, no sólo la materia prima. Muchas veces el resultado sorprende, porque el producto comprado deja más euros por pieza y menos diferenciación frente al de al lado: es más rentable por unidad y, al mismo tiempo, más fácil de copiar por cualquier competidor que compre al mismo proveedor.
+
+El segundo criterio ya no es de coste, es de posicionamiento, y pesa tanto como el primero: si el argumento con el que vendes tu negocio es la elaboración propia, comprar elaborado se lo come. No hay margen que compense contarle al cliente una historia de obrador y servirle, sin decirlo, la bandeja de un tercero.
+
+Para el primer criterio, la hoja de coste hora y mano de obra de la calculadora de escandallo y carta de apertura da el coste total por unidad de cada referencia propia, con la mano de obra ya metida dentro, que es exactamente la cifra con la que hay que comparar el precio de compra de un producto elaborado por otro. En el croissant de mantequilla que sirve de ejemplo en el capítulo anterior, el coste total por unidad es de 1,06 €, de los que 0,82 € son mano de obra: un peso de la mano de obra del 63,3 % sobre el coste total, así que ignorar ese componente al comparar contra el precio de compra falsea la cuenta desde el principio.
+
+Para el segundo criterio, la referencia es la que ya conoces de la calculadora de equipamiento: la variante de punto caliente sale a 22.456 € de inversión, frente a los 66.980 € del caso base con obrador. La hoja de variantes del checklist de equipamiento y proveedores dice, referencia por referencia, qué dotación deja de hacer falta en cada formato, y ahí es donde se ve con claridad cuánto pesa realmente montar un obrador frente a montar sólo un punto de regeneración: la diferencia entre las dos cifras es la inversión que estás comprando (o dejando de comprar) en capacidad de fabricar de verdad, no sólo en metros cuadrados. La hora de obrador, cuando ese obrador existe, se factura a 17,94 €.
+
+Recomendación: si tu argumento comercial es la elaboración propia, la opción A o, como mucho, la B; si el argumento es otro (ubicación, horario, precio) y el número de la hoja de coste hora y mano de obra sale mejor con producto comprado, la opción C es defendible. Esto cambia en cuanto abras una segunda referencia con receta propia relevante para el cliente: ahí el cálculo hay que rehacerlo pieza a pieza, no de un tirón para toda la carta.
+
+### La celda que lo resuelve
+
+Las dos hojas que resuelven esta decisión son las mismas que ya has usado para montar la carta y el equipamiento: la hoja de coste hora y mano de obra de la calculadora de escandallo y carta de apertura, que te da el coste total por unidad con la mano de obra dentro, y la hoja de variantes del checklist de equipamiento y proveedores, que te dice qué inversión te ahorras (o qué inversión pierdes en capacidad) según el formato que elijas. No hace falta ninguna hoja nueva: es cruzar lo que ya tienes calculado para tu carta con la variante de equipamiento que estés valorando.
+
+### La norma que aplica cuando la hay
+
+Aquí sí hay norma, y es la que explica por qué esta decisión pesa más de lo que parece. La mención «elaboración propia» es voluntaria: nadie te obliga a ponerla, comprobado el 10 de septiembre de 2026. Pero si la usas, el art. 11 del RD 1021/2022 (texto consolidado) pone dos condiciones por escrito: sólo puede venderse en el establecimiento donde se elaboró o en sus sucursales, y fraccionar o envasar un producto elaborado por otro fabricante no se considera elaborar.
+
+La consecuencia práctica es directa: si tu producto viene congelado de fuera y tu obrador se limita a descongelarlo y hornearlo, eso no te da derecho a la mención de elaboración propia, aunque el resultado salga caliente y huela a recién hecho. Ponerla igual no es una licencia creativa de rotulista, es una práctica engañosa frente al cliente que la lee en tu escaparate. La tabla de abajo resume, formato por formato, qué puedes escribir según lo que hagas de verdad detrás del mostrador.

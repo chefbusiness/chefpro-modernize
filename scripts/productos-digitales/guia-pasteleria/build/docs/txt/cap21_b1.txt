@@ -1,0 +1,49 @@
+### Qué está vigente y qué está derogado
+
+Fecha de corte de este anexo: 10 de septiembre de 2026. Es la foto del estado normativo el día en que se cerró esta edición, para que puedas comprobar por tu cuenta, dentro de un año, qué sigue en pie de todo lo que has leído. Aquí no se explica de nuevo qué dice cada norma —eso ya está en su capítulo—, sólo se dice si sigue viva y desde cuándo.
+
+El pilar de higiene de todo el libro es el RD 1021/2022, con su texto consolidado vigente y sin que ninguno de los artículos que hemos citado —el 4.1, el 9.3, el 13.4, el 13.5, el 13.8 y el 13.9— tenga hoy una modificación pendiente, comprobado el 10 de septiembre de 2026. El RD 191/2011, que regula el Registro General Sanitario de Empresas Alimentarias y Alimentos, sigue vigente en la redacción que le dio el propio RD 1021/2022: es esa redacción la que excluye a la pastelería que vende al consumidor final.
+
+En materia de envases, el RD 1055/2022 está vigente y su calendario de bebida en envase reutilizable sigue su curso escalonado sin cambios. La Ley 1/2025, de residuos y suelos contaminados, está vigente y su art. 6 es exigible desde el 2 de abril de 2026. El RD 1007/2023, sobre facturación, está vigente en la redacción que le dio el RD-ley 15/2025, con su calendario todavía por delante. El RD 193/2023, de accesibilidad, está vigente y su art. 25.2 —el que obliga sin umbral de superficie a la hostelería y la restauración— ya es exigible.
+
+En materia fiscal, la Ley 37/1992 del IVA sigue vigente, y el RD 308/2019 también, con la tributación al 4 por ciento confirmada por la Resolución vinculante de la Dirección General de Tributos de 24 de febrero de 2025 para todo lo que ese real decreto regula. La Ley 7/1996 de comercio minorista está vigente, con su art. 20 en la redacción que le dio el RD-ley 24/2021; la Ley 1/2004, de horarios comerciales, sigue vigente sin cambios en el régimen de libertad horaria de su art. 5.1.
+
+La norma de calidad que define pastelería, bollería, confitería y repostería lleva muchos años sin una sola modificación, y ahí está su trampa: el apartado que toca el etiquetado remite a una norma anterior al Reglamento (UE) 1169/2011, así que se cita para las definiciones —qué es una pastelería, qué es una bollería— y nunca para lo que hay que poner en una etiqueta, que manda el propio Reglamento (UE) 1169/2011, vigente. Y a nivel autonómico, el Decreto 26/2026 de la Comunidad de Madrid está vigente desde el 28 de marzo de 2026, con el Registro de Empresas Alimentarias de Comercio al por Menor ya en marcha; el aviso de alcance es obligado: sólo se ha comprobado el estado en tres comunidades autónomas, así que el cuadro autonómico de la tabla siguiente no se puede leer como un censo completo de España.
+
+Por último, la revisión salarial 2026 del Convenio del Sector de Confitería, Pastelería, Bollería, Repostería, Heladería y Platos Cocinados de la Comunidad de Madrid está vigente y en su tercer año de aplicación.
+
+### Las cuatro fechas que ya sabemos que se mueven
+
+Hay cuatro fechas de este libro que se van a mover solas, sin que cambie ni una palabra del resto del texto, y por eso se agrupan aquí en vez de repartirse por veinte capítulos: cuando llegue el momento, se actualiza este apartado y el resto del documento sigue siendo verdad.
+
+La primera es la tabla salarial del convenio y la referencia del salario mínimo interprofesional: las dos se renuevan cada año. La referencia anual del salario mínimo que maneja este libro, 17.094 €, vive en la hoja de parámetros de la plantilla de turnos y coste de personal, igual que el resto de cifras de nómina; cuando se publique la revisión siguiente, se cambia esa celda y las hojas que dependen de ella recalculan solas.
+
+La segunda es el calendario de facturación electrónica del RD 1007/2023: tiene dos fechas escalonadas, el 1 de enero de 2027 para los contribuyentes del Impuesto sobre Sociedades y el 1 de julio de 2027 para el resto de obligados —autónomos con actividad económica, no residentes con establecimiento permanente y entidades en atribución de rentas—. Las dos fechas conviven en el mismo real decreto y las dos tienen que revisarse juntas.
+
+La tercera es la obligación de ofrecer bebida en envase reutilizable del RD 1055/2022: para una superficie comercial inferior a 120 metros cuadrados, que es el tamaño de la inmensa mayoría de pastelerías, la obligación pasa de futura a presente el 1 de enero de 2027, con al menos una referencia disponible.
+
+La cuarta es el período transitorio del Decreto 26/2026 de la Comunidad de Madrid: un año desde su entrada en vigor, así que vence el 28 de marzo de 2027 para quien ya estuviera abierto antes de esa fecha.
+
+Todas estas cifras viven en celda de parámetro en las plantillas del pack, nunca cosidas dentro de un párrafo de prosa: por eso cambiar una fecha o una cifra de convenio no obliga a rehacer ningún otro capítulo, sólo esta tabla.
+
+### Las normas que la SERP sigue citando y están muertas
+
+Hay un problema concreto detrás de este apartado: bastantes contenidos gratuitos, muy bien posicionados en buscadores, siguen citando normas que ya no existen. Quien las lee y monta su obrador (taller o laboratorio) sobre esa regla se está apoyando en algo que el Estado retiró hace años, y en algunos casos la regla derogada es más permisiva que la vigente, así que el error no se nota hasta que llega una inspección.
+
+Van cinco, con el año en que dejaron de tener validez y con la norma que ocupó su lugar:
+
+- El RD 1254/1991, sobre el huevo, está derogado; lo que regula hoy la materia es el RD 1021/2022, de 2022. Citarlo produce una regla de huevo que ya no coincide con el art. 9.3 vigente.
+- El RD 3484/2000, sobre normas de higiene de comidas preparadas y temperaturas, está derogado por el mismo RD 1021/2022, de 2022. Este es el caso más peligroso de los cinco: la vieja norma toleraba temperaturas y plazos más laxos que los que fija hoy el art. 4.1 y el art. 9.3, así que quien la sigue se queda corto justo en el punto —temperatura de vitrina y horas de vida útil del relleno— que más mira una inspección.
+- El RD 1420/2006, sobre anisakis, está derogado; su contenido quedó absorbido por el RD 1021/2022, de 2022. Seguir citándolo como norma viva produce un plazo de congelación que ya no tiene ese respaldo legal.
+- El RD 202/2000, sobre el manipulador de alimentos, está derogado desde 2010 por el RD 109/2010. Esta es la que más circula: produce la creencia de que existe un «carnet de manipulador» obligatorio, cuando lo que exige la norma vigente es que el empresario garantice la formación de cada manipulador y pueda acreditarla, sin ningún carnet expedido por nadie.
+- El RD 2207/1995, sobre higiene general de productos alimenticios, está derogado; el marco vigente es el Reglamento (CE) 852/2004, directamente aplicable en toda la Unión Europea y sin necesidad de trasposición nacional. Citar el reglamento derogado produce una lista de requisitos de higiene distinta —y en algún punto más floja— que la que exige hoy una inspección.
+
+Ninguna de estas cinco normas aparece en el resto del libro salvo dentro de la frase «está derogado»: si las ves citadas como vigentes en cualquier otro sitio, ya sabes que ese contenido no se ha revisado desde antes de que dejaran de aplicarse.
+
+### Cómo abrir la ficha de vigencia del Boletín Oficial del Estado en un minuto
+
+El procedimiento es siempre el mismo y no hace falta ninguna captura de pantalla para seguirlo. Se busca el número y la fecha de la norma —«RD 1021/2022», «Ley 1/2025»— en el buscador del Boletín Oficial del Estado y se entra en su ficha de legislación consolidada, que es la que se actualiza cada vez que otra norma la modifica.
+
+En la parte superior de esa ficha aparece la línea de última modificación, con la fecha del último real decreto, ley u orden que tocó algo de esa norma; si esa línea está vacía o muy antigua, es una señal de que nadie la ha tocado desde su publicación, como pasa con la norma de calidad de pastelería. Debajo, el índice del texto consolidado lleva a cada artículo por separado, y es ahí donde hay que mirar: cada artículo lleva su propia nota de vigencia, que dice si ese artículo en concreto sigue vigente, si ha sido modificado por otra norma posterior —con el nombre de esa norma y la fecha— o si ha sido derogado aunque el resto de la ley siga en pie.
+
+El consejo que ahorra los errores de esta edición es exactamente ese: se comprueba el artículo, no la norma. Una ley o un real decreto puede figurar como vigente en su conjunto y tener el artículo concreto que te interesa modificado, o incluso derogado, mientras el resto sigue aplicándose. Es justo lo que ha pasado con varias de las normas que sostienen esta guía, y es la razón por la que este anexo, con fecha de corte a 10 de septiembre de 2026, tiene que revisarse artículo a artículo y no norma a norma cuando vuelvas a él dentro de un año.

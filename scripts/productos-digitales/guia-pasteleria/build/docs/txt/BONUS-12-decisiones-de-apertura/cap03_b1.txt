@@ -1,0 +1,33 @@
+### El contexto de la decisión
+
+En el primer año la tentación siempre es la misma: abrir con la carta más grande posible para no perder ni una sola venta. Parece la opción prudente y es justo la contraria: es la manera más rápida de multiplicar la merma y disparar la compra. Cada referencia nueva no es sólo una ficha más en la vitrina (exhibidor); es un proveedor que gestionar, un formato de compra mínimo que asumas o no lo vendas todo, un hueco de vitrina que le quitas a otra pieza que sí rota, y tiempo de obrador (taller o laboratorio) que se paga aunque esa referencia venda poco. Ese coste (costo) fijo por referencia es invisible en el papel y muy visible en la cuenta de explotación a los tres meses.
+
+Y aquí conviene un dato para entender hasta dónde puede llegar la concentración de ventas en unas pocas referencias: en Hofmann, un solo producto —el croissant de mascarpone, con cerca de 3.000 unidades a la semana— representa cerca del 30 % de la facturación global de la pastelería (Hofmann Badalona: nuevo centro de I+D y expansión internacional — The New Barcelona Post, 2026-02-12). No hace falta llegar a esa escala para entender la lección: la carta corta que vende mucho de pocas cosas suele ganar más que la carta larga que reparte ventas entre treinta referencias que apenas rotan.
+
+### Las opciones sobre la mesa
+
+Sobre la mesa hay tres formas de plantear el surtido de apertura:
+
+- **Opción A**: abrir con una carta corta y ampliarla con datos reales a los tres meses, cuando ya sabes qué rota y qué se queda en la vitrina hasta el cierre.
+- **Opción B**: abrir con la carta completa que tenías pensada y podarla después, cuando la merma y la compra ya te han enseñado qué sobra.
+- **Opción C**: una carta corta fija que no se toca, más una rotación de temporada que aporta variedad sin ensuciar el núcleo del surtido.
+
+Lo que cambia entre las tres no es el atractivo del escaparate el día de la inauguración, sino cuatro cosas muy concretas: la merma que vas a generar mientras aprendes qué vende cada referencia, la compra inicial de materia prima y de packaging que tienes que financiar antes de facturar nada, la carga de obrador en el arranque —cuando el equipo todavía no tiene el ritmo cogido—, y la claridad del escaparate, que con demasiadas referencias deja de comunicar nada y con pocas referencias bien elegidas vende solo.
+
+### El criterio con el que se decide
+
+La regla no es la intuición ni el gusto personal por tener de todo: manda el margen ponderado por el mix, no el margen de la pieza suelta. Una referencia con un margen estupendo que apenas se vende aporta menos al resultado del día que otra de margen medio que rota constantemente. Decidir referencia a referencia por su margen bruto sin mirar cuánto pesa en las ventas reales es el error más habitual al montar la carta de apertura.
+
+El segundo criterio es de capacidad, y se olvida más de lo que debería: la carta tiene que caber en las piezas al día que permite el cuello de botella del obrador, no sólo en el espacio físico de la vitrina. Una carta que cabe en el mostrador pero no cabe en la producción del equipo que vas a contratar se traduce en encargos (pedidos) que no llegas a servir o en jornadas que se alargan hasta que el sistema colapsa.
+
+### La celda que lo resuelve
+
+La hoja de decisión de surtido del libro de la carta —carta-de-apertura-y-escandallo.xlsx, hoja «Decisión de Surtido»— da el veredicto de cada referencia y el margen ponderado que aporta cada grupo. En el caso trabajado en este bonus, el filtro deja 27 referencias con veredicto de mantener, 1 con veredicto de revisar precio y 2 con veredicto de retirar. El margen ponderado de las referencias que se mantienen es de 1,03 € frente a los 0,03 € de las que se retiran: la diferencia no es sutil, es la que separa una carta que sostiene el negocio de una que lo lastra. El margen de contribución medio por pieza de toda la carta queda en 1,07 €.
+
+La hoja de mix y ticket medio, en el mismo libro, dice cómo cambia el ticket al mover el mix entre grupos: es la que hay que mirar antes de decidir si merece la pena sostener una referencia de veredicto dudoso porque empuja el ticket, o si simplemente no compensa. La recomendación, con estos números delante, es clara: retirar las dos referencias marcadas y revisar el precio de la tercera antes de la apertura; la condición que la haría cambiar es que esa tercera referencia demuestre, con datos reales de rotación pasados los primeros meses, un mix suficiente para justificar su hueco en vitrina pese al margen ajustado.
+
+### La norma que aplica cuando la hay
+
+Aquí no hay una norma que decida cuántas referencias debe tener tu carta: es una decisión de negocio y de capacidad de obrador, no un requisito legal, y conviene decirlo con esa claridad en vez de rellenar el hueco con normativa de adorno.
+
+Lo que sí obliga, referencia a referencia, es otra cosa: antes de poner cualquier pieza nueva en vitrina tienes que tener resuelta su información de alérgenos, exigida por el artículo 9, apartado 1, letra c, del Reglamento (UE) 1169/2011 (comprobado el 10 de septiembre de 2026), y decidido si va a vitrina refrigerada o de ambiente. Cada referencia nueva que sumes a la carta es una fila más en las dos cosas, no un simple hueco de vitrina. Y si alguna de tus tartas por encargo lleva licor por encima del 1,2 % en volumen —el umbral a partir del cual hay que declarar el grado alcohólico en producto no envasado—, esa declaración es obligatoria conforme al RD 126/2015, arts. 4.1, 5.1, 6.2, 6.5 y 10, en su texto consolidado sin modificaciones (comprobado el 10 de septiembre de 2026).

@@ -1,0 +1,33 @@
+### El contexto de la decisión
+
+El envío a domicilio parece la manera barata de ampliar mercado sin abrir otra tienda: no hay traspaso, no hay otro alquiler, no hay otra plantilla. En pastelería (repostería) esa promesa choca con la física antes que con la ley. La pregunta correcta no es si puedes vender online —puedes, y lo puedes hacer sin pedir permiso especial por vender a distancia—, sino qué referencia concreta de tu carta llega en condiciones al domicilio del cliente. No es la misma decisión para una galleta que para una tarta (pastel o torta) rellena de crema, y tratar el envío como un canal único, sin mirar producto a producto, es el error que arrastra el resto de decisiones de este capítulo.
+
+### Las opciones sobre la mesa
+
+Hay tres caminos, y conviene mirarlos sin descartar ninguno antes de tiempo:
+
+- Opción A: enviar sólo producto estable a temperatura ambiente —bollería seca, galletas, algunas tartas sin relleno perecedero—, con transporte ordinario.
+- Opción B: enviar también producto refrigerado, con transporte de temperatura controlada desde el obrador (taller o laboratorio) hasta la puerta del cliente.
+- Opción C: no enviar nada y usar la web sólo para que el cliente recoja en tienda el encargo (pedido) que ha hecho online.
+
+Lo que cambia entre las tres no es sólo el catálogo que puedes ofrecer: cambia el coste de servir ese canal, cambia el margen de contribución que te queda una vez descontado ese coste, y cambia el riesgo de reclamación si algo llega tibio, fundido o fuera de plazo. La opción A abarata la logística pero recorta la carta que puedes vender por internet a lo que aguanta el trayecto sin cadena de frío. La opción B abre la carta entera al envío, pero mete un proveedor de transporte refrigerado en la cuenta de resultados. La opción C elimina el riesgo de transporte por completo, a cambio de renunciar a la venta a quien no puede pasar por tienda.
+
+### El criterio con el que se decide
+
+La regla que separa lo que se puede enviar de lo que no es sencilla de enunciar y fácil de saltarse: viaja lo que aguanta su temperatura de conservación durante todo el trayecto, no lo que aguanta la caja. Una caja bien aislada retrasa la subida de temperatura, no la impide, y el reloj no se para por el packaging. Y hay un segundo matiz que se olvida con frecuencia: el plazo legal del producto elaborado por la vía del huevo se cuenta desde el momento de la elaboración, no desde el momento del envío. Si la pieza lleva ya parte de su vida útil consumida en vitrina (exhibidor) o en cámara antes de meterla en la caja, ese tiempo cuenta igual.
+
+El segundo criterio es económico, y va después del técnico porque de nada sirve calcular un margen sobre una pieza que no puede viajar. El coste de servir del canal de envío se come una parte del margen de contribución antes de que veas un euro de beneficio, así que hay que verlo antes de fijar el precio de envío al cliente, no después. Fijar un precio de envío atractivo sin haber mirado antes ese coste de servir es la manera más rápida de vender un pedido que no compensa.
+
+La recomendación, con su condición para cambiar: si tu carta tiene suficiente peso en referencias estables a temperatura ambiente, empieza por la opción A y añade refrigerado (opción B) sólo cuando el volumen de pedidos justifique contratar transporte de temperatura controlada; si tu carta es mayoritariamente producto relleno y refrigerado, la opción A te deja fuera casi todo lo que vendes en tienda y hay que evaluar B desde el primer día, o quedarte en C mientras tanto.
+
+### La celda que lo resuelve
+
+La hoja de decisión de huevo y temperatura del libro de la carta —la calculadora de escandallo (costeo) y apertura— clasifica las treinta referencias de la carta modelo entre vitrina refrigerada y vitrina de ambiente: quince van a vitrina refrigerada y quince a vitrina de ambiente, y de esas, quince referencias quedan con un plazo legal de veinticuatro horas. Esa misma hoja da también la temperatura que manda para el producto relleno: 4 grados. Son las quince referencias de vitrina refrigerada las que hay que mirar una a una antes de decidir si entran en el envío, porque son las que menos margen de trayecto tienen.
+
+La hoja de canales del plan financiero, por su parte, da el margen de contribución del canal de envío y online ya con su coste de servir descontado: 51 por ciento de margen de contribución, con un 9 por ciento de coste de servir dentro de esa cuenta. Esa es la cifra que hay que mirar antes de poner un precio de envío por debajo del coste real de servir el pedido.
+
+### La norma que aplica cuando la hay
+
+Sí hay norma, y no obliga lo que mucha gente cree. Vender online al consumidor final no te obliga al registro general de suministro entre comercios ni te aplica el radio de cincuenta kilómetros: esa exigencia pertenece al artículo 3 del RD 1021/2022, que regula exclusivamente el suministro a otros establecimientos minoristas de distinta titularidad. La definición de establecimiento minorista del RD 1021/2022, artículo 2, letra a, ya incluye expresamente la entrega al consumidor final «in situ o a distancia» (comprobado el 10 de septiembre de 2026), así que la venta a distancia no te saca de ese régimen ni te mete en uno más exigente.
+
+Lo que sí obliga, y en esto no hay margen, es el artículo 4, apartado 3 del RD 1021/2022: mantener la temperatura de conservación durante todo el transporte al consumidor final. La tabla del artículo 4, apartado 1 fija esa temperatura en 4 grados o menos para el producto de pastelería relleno que no sea estable a temperatura ambiente, y en −18 grados o menos para el congelado. Junto a esto, el Reglamento (UE) 1169/2011, artículo 14 —con remisión al artículo 44 para el producto no envasado— obliga a tener toda la información alimentaria disponible antes de que se realice la compra, sin coste añadido para el cliente, con la única excepción de la fecha de duración, y completa en el momento de la entrega; para producto no envasado, lo que tiene que estar antes de comprar son los alérgenos. Por último, el RD 1055/2022, artículo 2, letra e, párrafo tercero, convierte al titular del comercio en envasador respecto de la caja de envío que usa para servir el pedido, con las obligaciones documentales que eso conlleva sobre esos envases.

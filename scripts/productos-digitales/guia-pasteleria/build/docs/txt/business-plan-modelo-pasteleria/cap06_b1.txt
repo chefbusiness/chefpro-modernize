@@ -1,0 +1,33 @@
+### Los tres escenarios
+
+El modelo trabaja con tres fotografías del mismo negocio: mismo local, mismo obrador (taller o laboratorio), misma plantilla, mismos precios. La diferencia está sólo en cuánto se vende cada mes. En el escenario pesimista los ingresos se quedan en 211.120 € y el resultado neto cae a -42.784 €: números rojos de verdad, no un mal mes puntual. En el optimista el resultado neto sube a 97.579 €, con la misma estructura de costes (costos) por debajo. El escenario realista queda entre los dos extremos, y es el que hay que leer para tomar decisiones: el pesimista y el optimista son los supuestos que marcan los límites del rango, "qué pasa si va mal" y "qué pasa si va muy bien", no la previsión con la que se monta el negocio. El cuadro de abajo desglosa los tres con la misma plantilla y los mismos costes fijos.
+
+Por qué el pesimista duele tanto: la plantilla es la misma en los tres escenarios. Jefe Pastelero, Pastelero, Ayudante y las dos personas de Dependiente Vitrina cobran igual si el mostrador vende mucho o poco, y el alquiler del local y la cuota del equipamiento tampoco bajan un euro. Por eso el coste de personal sobre ventas se dispara al 43,9 % en el escenario pesimista: no es que el equipo cueste más, es que las ventas con las que se reparte ese coste fijo son menos. Un negocio con estructura fija alta no amortigua una mala racha bajando gastos a la vez que bajan los ingresos: el golpe se lo lleva entero el resultado neto.
+
+### Los riesgos de apertura y su mitigación
+
+Antes de facturar el primer euro hay cuatro riesgos que pueden retrasar la apertura semanas, y los cuatro tienen fecha:
+
+- Que el local elegido no admita salida de humos.
+- Que la licencia se retrase en el ayuntamiento.
+- Que el equipamiento llegue tarde al obrador.
+- Que la obra se desvíe del presupuesto inicial.
+
+La mitigación de los tres primeros pasa por el mismo sitio: la hoja de equipamiento y proveedores del pack, que recoge el plazo de entrega de cada máquina y deja ver cuál manda en el calendario de apertura. De todo el listado, el elemento con el margen más ajustado es la cámara de fermentación controlada, el roll-in: es la pieza que primero hay que encargar, y su plazo de entrega es el que gobierna la fecha real de apertura, no la obra ni el papeleo. El desvío de presupuesto de obra se sigue con la propia calculadora de inversión del pack, comparando cada partida contra lo presupuestado en vez de esperar a la factura final para descubrirlo.
+
+### Los riesgos de explotación
+
+Ya con la persiana subida, los riesgos cambian de naturaleza. Cuatro pesan más que el resto:
+
+- Que la campaña grande no quepa en el obrador.
+- Que el coste de personal se coma el margen.
+- Que la materia prima suba de precio.
+- Que no se encuentre personal cualificado cuando hace falta.
+
+La hoja de capacidad frente a demanda de pico de la calculadora de estacionalidad marca 6 campañas que el obrador, tal como está dimensionado, no aguanta sin ajustar turnos o subcontratar parte de la producción: saberlo antes de la campaña evita prometer un volumen que luego no sale del horno. El coste de personal se vigila contra ese mismo 43,9 % del escenario pesimista: si la vitrina (exhibidor) se acerca a esa cifra sin estar en el peor mes del año, es la señal de que el cuadrante está sobredimensionado para lo que se vende de verdad. De materia prima no hay un precio fijo que dar aquí, pero sí conviene tener presente el caso de Pastelerías Pomar, obrador familiar de cuarta generación con 47 empleados: su dueño explica que en temporada alta la producción no sube un poco, salta a un múltiplo muy superior al del resto del año (Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…, 2025-11-21), y ese salto es justo el que puede dejar corto un obrador dimensionado sólo para el día a día. Para la falta de personal, la mitigación no es un número sino un calendario: abrir la búsqueda con margen respecto a la fecha de la campaña, no cuando la campaña ya ha empezado.
+
+### El plan de contingencia
+
+Si el escenario pesimista llega a materializarse, las palancas se activan en este orden: primero se recortan las referencias de margen bajo de la carta, después se ajusta el cuadrante a la venta real, y sólo si con eso no basta se renegocia el plazo de la deuda. No se tocan las tres a la vez, y no se empieza por la deuda: es la palanca que menos margen de maniobra deja después de usarla.
+
+Todo lo anterior es un caso completo relleno para que se use como plantilla del propio negocio: ninguna de sus cifras es una previsión de los resultados de quien lo use, es el modelo con el que cada uno calcula los suyos.

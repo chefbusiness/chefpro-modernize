@@ -1,0 +1,23 @@
+### El mercado en el que entra el proyecto
+
+El mercado de la pastelería (repostería) en España no es pequeño: los hogares españoles consumieron 274,2 millones de kg de bollería y pastelería en 2025, con un gasto de 1.917,6 M€ y una media de 5,85 kg por persona al año, y el volumen creció un 5,3 % mientras el valor subió un 5,6 % (El Independiente, 2026). Ese consumo no se reparte igual entre todos los bolsillos: los hogares de renta baja comen 8,26 kg por persona al año frente a los 4,39 kg de los de renta alta, casi el doble (El Independiente, 2026). Al mismo tiempo, la industria de masas congeladas no deja de ganar terreno: produjo 233.856 toneladas en 2025 (+0,17 % interanual) y facturó 2.001,63 M€ (+3,20 %), superando por primera vez los 2.000 millones, con una producción que ha crecido un 31,1 % entre 2018 y 2025 (ASEMAC, 2026).
+
+Esto no es una amenaza directa para el proyecto, es un mapa. El congelado industrial gana la partida del volumen y del precio bajo, y la gana con producto que aguanta cámara, transporte y horneado a demanda en cualquier punto caliente. El proyecto no entra a competir ahí: entra a vender lo que ese proceso no puede replicar sin perder calidad, y a vender por encargo (pedido), que es terreno donde el industrial no juega.
+
+### La plaza y el cliente
+
+El caso modelado se sitúa en una plaza de paso, con tránsito peatonal a pie de calle y clientela de proximidad que compra para el día y encarga para la ocasión. Antes de firmar nada, se comprobó sobre el terreno, calle por calle, en el radio de caminata que de verdad alimenta la vitrina (exhibidor): qué otros negocios de alimentación ya ocupan ese radio, qué franja horaria mueve más gente y si el perfil de quien pasa por delante encaja con un ticket de encargo o sólo con la compra de impulso. Esa comprobación, y no una media de sector, es la que sostiene el número de negocio.
+
+El ticket medio sin IVA de la carta modelada es de 5,87 € con 2,6 piezas por ticket. No es una media del sector, porque no existe una cifra pública de ticket medio de pastelería: sale del propio mix de la carta y de sus precios, calculado pieza por pieza en la hoja de supuestos del plan financiero. Cambiar la carta cambia este número, así que es el primero que hay que revisar si el modelo no cuadra con la caja real.
+
+### La estacionalidad de la demanda
+
+La curva del año no es plana, y planificarla como si lo fuera es el primer error de caja. El mes más alto pesa un 9,8 % sobre las ventas del año y el más bajo un 5,7 %: casi el doble de un mes a otro. Esto no se planifica por media mensual, se planifica por tesorería: comprar, producir y contratar personal pensando en el mes que toca, no en un promedio de doce que no existe en ningún mes real. La tabla de abajo, con el peso de cada mes, es la que hay que mirar antes de firmar un pedido a proveedor o un turno extra.
+
+Las seis campañas del año pesan conjuntamente un 13,2 % sobre la facturación total, y ese peso concentrado es exactamente lo que hay que traducir en capacidad de obrador (taller o laboratorio): cuántas piezas puede sacar el equipo en esos días sin reventar el turno. Esa cuenta, con el personal y los tiempos de producción, se hace en la sección de operaciones de este plan, no aquí.
+
+### Competencia y barreras de entrada
+
+En la plaza no compite un solo tipo de negocio, compiten cuatro, y cada uno le quita algo distinto al proyecto. El obrador con elaboración propia le disputa exactamente el mismo cliente y la misma franja de precio: es la competencia directa. El punto caliente le quita al cliente de impulso que sólo mira el precio de la pieza suelta. El supermercado le quita la compra de reposición diaria, la que no busca calidad sino cercanía y horario. Y el bar que hornea producto congelado le quita al cliente que confunde "recién hecho" con "recién horneado", sin que el establecimiento tenga que declarar de dónde viene la masa.
+
+Frente a los tres últimos, el proyecto tiene una barrera de entrada real y que no cuesta ni un euro: la mención "elaboración propia" en el escaparate o en la vitrina sólo la puede llevar quien de verdad elabora en su obrador, con sus condiciones. El punto caliente, el súper y el bar que compran masa ya hecha no pueden ponerla, y esa etiqueta es la que el cliente de renta media y alta busca cuando entra a comprar una tarta (pastel o torta) para un encargo, no para el día a día.

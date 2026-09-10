@@ -1,0 +1,29 @@
+### Los supuestos del plan
+
+Antes de proyectar un solo euro, este plan declara sus supuestos, y ese orden no es casualidad: un plan que enseña primero el resultado y explica después de dónde sale no se defiende delante de un banco. Los supuestos que sostienen las tres hojas del caso son los tickets que estimamos vender cada día, el ticket medio sin IVA, los días de apertura al año, la rampa con la que arranca el negocio en sus primeros meses de vitrina a medio llenar y clientela por construir, y la estacionalidad con la que se reparte esa venta a lo largo de los doce meses, con sus picos y sus valles propios de la pastelería (repostería). Cada uno de esos cinco supuestos vive en la hoja de parámetros del plan financiero a tres años, y de ahí sale cada cifra que aparece más abajo: si cambias uno, cambia todo lo que depende de él, así que conviene mirarlo primero.
+
+El otro supuesto que hay que declarar, y que casi nadie declara, es el del margen: el coste (costo) de ventas de este caso se proyecta con la regla única de margen del modelo, no con el escandallo (costeo) pieza a pieza de cada tarta (pastel o torta). Es el supuesto conservador porque no depende de acertar qué se vende cada día en la vitrina (exhibidor), sino de aplicar una proporción que ya recoge las mermas de producción y el mix real de encargos (pedidos) y venta de mostrador. Un plan que intentara calcular el margen sumando el escandallo de cada referencia acabaría sobreestimando el resultado en los meses en que la vitrina no vende exactamente lo previsto, que son casi todos.
+
+### La cuenta de resultados a tres años
+
+El cuadro siguiente da la cuenta de resultados completa, año a año. De esa tabla, tres lecturas importan más que el resto. La primera es que hay una partida de costes fijos que pesa más que ninguna otra en la cuenta, y conviene mirarla antes que cualquier otra decisión de precio. La segunda es que la retribución del propietario aparece como renglón propio en todas las lecturas del resultado, nunca camuflada dentro de otro coste: es el sueldo de quien monta el negocio, y se ve como tal. La tercera es el resultado neto de cada año: 5.447 € en el año uno, cuando el local todavía está en rampa de arranque, y 27.836 € en el año de crucero, cuando la venta ya recorre su estacionalidad completa.
+
+Ese resultado de crucero equivale a un margen neto del 8,6 %. Conviene contrastarlo con lo que dice quien lleva el oficio por dentro: Matías, gerente de Pastelerías Pomar (cuarta generación, desde 1902), sitúa la rentabilidad de una pastelería que va bien dentro de una banda concreta, declarada en «Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…» (2025-11-21). El 8,6 % de este plan cae dentro de esa banda, que es justo lo que un caso conservador tiene que hacer: no prometer el extremo alto.
+
+### El punto de equilibrio
+
+Aquí conviene distinguir dos equilibrios, porque no son el mismo número. El equilibrio contable —el punto en el que el resultado deja de ser negativo— pide menos tickets al día que el equilibrio de caja. El equilibrio de caja, que es el que de verdad importa mientras hay un préstamo abierto, exige 148,9 tickets al día. La diferencia entre los dos no es un error de cálculo: la devolución del principal del préstamo sale de la caja, no del resultado contable, así que hace falta vender más para que la caja aguante que para que el papel diga que se gana dinero.
+
+En el año de crucero, la venta real deja una holgura del 22,9 % sobre ese equilibrio de caja: es la cifra que responde a cuánto puede caer la previsión de venta antes de que algo se rompa. Como referencia de sector, un ejemplo publicado en «Cómo montar un negocio de pastelería: guía 2026 — Pastelería Para Todos» (2026-07-12) sitúa unos costes fijos de 5.000 € al mes con una facturación de equilibrio de 7200 €/mes de facturación de equilibrio: un margen implícito coherente con la misma regla única de margen que usa este plan, lo que confirma que el modelo no está sobredimensionado.
+
+### La tesorería de los doce primeros meses
+
+La tabla de abajo sigue la caja mes a mes durante el primer año, y ahí aparece la pregunta que de verdad hace un banco: no cuánto se gana en el papel, sino si la caja llega viva al mes siguiente. El saldo mínimo de caja del primer año es de 59.622 €, y se toca en el mes 3, justo cuando la rampa de arranque todavía no ha llenado la vitrina de clientela recurrente y la inversión inicial ya ha salido de caja.
+
+Dentro de esa misma tesorería hay un efecto que conviene entender antes de asustarse por un mes flojo: el IVA de la inversión se adelanta al comprar el equipo del obrador (taller o laboratorio) y vuelve con la liquidación del período correspondiente. Es caja que sale y caja que entra, aunque nunca sea un coste real del negocio, y por eso el mes en el que la caja toca fondo no coincide necesariamente con el mes de mayor gasto contable.
+
+### La financiación y el servicio de la deuda
+
+El origen de fondos de este caso combina capital propio y un préstamo, y ese préstamo es el que fija la cuota mensual de 936,57 €, la cifra que hay que poder pagar todos los meses sin excepción durante toda la vida del crédito. Es también la cifra que explica por qué el equilibrio de caja pide más tickets que el equilibrio contable: esa cuota sale de caja, mes tras mes, gane o no gane el negocio ese mes concreto.
+
+La cobertura del servicio de la deuda más ajustada de todo el cuadro es de 3,37, y aquí hay una lectura que se pasa por alto con frecuencia: no hay que mirar el primer año, sino el peor año de todo el horizonte del plan. Un negocio puede empezar con holgura y estrecharse más adelante si cambia la estacionalidad o si un mes de reposición de equipo del obrador coincide con un valle de venta; mirar solo el arranque deja fuera precisamente el año en el que el préstamo aprieta más.

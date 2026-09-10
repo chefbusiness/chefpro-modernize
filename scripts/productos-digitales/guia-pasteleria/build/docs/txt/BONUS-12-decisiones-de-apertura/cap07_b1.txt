@@ -1,0 +1,37 @@
+### El contexto de la decisión
+
+El primer contrato con una cafetería llega solo, sin buscarlo, y parece dinero gratis: un pedido fijo cada semana, sin necesidad de sacar una pieza más a la vitrina (exhibidor) y sin la merma de vitrina, que es la que de verdad se come el margen del mostrador. Firmas, entregas y cobras, y da la sensación de que ese volumen sale prácticamente regalado del mismo obrador (taller o laboratorio) que ya tienes montado.
+
+Lo que no se ve el primer día son tres cosas. La primera, que el precio que le haces a esa cafetería es más bajo que el de venta directa al público: compra volumen y no paga tu vitrina, así que el margen se resiente. La segunda, que el cobro deja de ser al contado del mostrador y pasa a ser a plazo, como muestra el reparto habitual de una pastelería (repostería) entre venta directa al cliente y venta a crédito a 30-60 días (Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…, 2025-11-21). La tercera, la que de verdad cambia el negocio: suministrar a otro comercio minorista puede sacarte del régimen sanitario en el que estás y meterte en otro distinto, con papeles que no tenías el día antes de firmar ese primer contrato.
+
+### Las opciones sobre la mesa
+
+Hay tres caminos y ninguno es automáticamente el bueno:
+
+- Opción A: no abrir el canal. Vendes sólo al consumidor final, en tu propio local, y el suministro a otras tiendas queda fuera del negocio.
+- Opción B: abrir el canal con un tope consciente, fijado por ti, que te mantenga por debajo del umbral que activa el registro general.
+- Opción C: abrir el canal sin tope, aceptar que vas a superarlo y asumir la inscripción en el registro general sanitario que le corresponde a esa actividad.
+
+Ninguna es gratis. La A renuncia a un volumen fijo que llena horas muertas del obrador. La B exige llevar la cuenta de cuánto sirves cada semana para no cruzar la línea sin darte cuenta. La C acepta más papeleo a cambio de poder crecer ese canal sin límite artificial.
+
+### El criterio con el que se decide
+
+El error habitual es mirar el margen bruto del canal y compararlo con el del mostrador. No es el criterio correcto: el canal se juzga por su margen de contribución, no por su margen bruto, porque lo que importa es cuánto aporta ese pedido a cubrir los costes (costos) fijos del obrador una vez descontado lo que cuesta servirlo. Y la pregunta que de verdad resuelve la decisión es otra: ¿qué le pasa al punto muerto si quito ese canal? Si el punto muerto baja al quitarlo, el canal está restando: te obliga a facturar más cada mes para llegar al mismo beneficio cero, y sostenerlo no compensa el volumen que trae.
+
+El segundo criterio no es de margen, es de riesgo. Un solo cliente grande en este canal concentra en una sola firma tanto el cobro como el volumen: si esa cafetería cierra, cambia de proveedor o alarga el plazo de pago, el golpe se nota de golpe, no poco a poco como en la vitrina, donde el riesgo está repartido entre decenas de clientes que pagan al contado.
+
+Con esos dos criterios sobre la mesa, la recomendación por defecto es la opción B: abrir el canal, pero con el tope puesto y vigilado. Esa recomendación cambia si el punto muerto sin el canal resulta más alto que con él —entonces el canal aporta de verdad y merece dejarlo crecer sin tope, opción C— o si el peso del canal sobre las ventas se dispara de la mano de un único cliente, porque ahí el riesgo de concentración pesa más que el margen.
+
+### La celda que lo resuelve
+
+La hoja de canales y punto muerto del plan financiero a tres años de pastelería trae los números que hacen falta para decidir con tus datos: el margen de contribución de este canal, un 49 %; el peso del suministro a otras tiendas sobre el total de ventas, un 5 %; y el punto muerto mensual en las dos versiones, con todos los canales activos —23.337,56 €— y sin el de suministro a otras tiendas —23.018,22 €—. Como el punto muerto sube al meter el canal, este caso concreto queda en el filo: aporta contribución, pero también sube el listón que hay que facturar cada mes, y de ahí sale la recomendación de la opción B con tope y no la C sin límite.
+
+Para saber si el tope que pongas te deja dentro o fuera del registro general, la hoja de suministro a otras tiendas del libro de licencias resuelve el árbol completo con tus propios kilos semanales y tus propios destinatarios, condición por condición.
+
+### La norma que aplica cuando la hay
+
+Aquí sí hay norma, y conviene conocerla antes de firmar ese primer contrato —comprobado el 10 de septiembre de 2026—. El artículo 3.1 del RD 1021/2022 (texto consolidado) sólo se activa cuando suministras a establecimientos de comercio al por menor de distinta titularidad: una pastelería que sólo vende al consumidor final no entra en este artículo, mires lo que mires. En cuanto entras, al firmar con esa cafetería, tienes que cumplir tres condiciones a la vez: que la actividad sea marginal, que esté localizada y que sea restringida.
+
+La condición de marginal tiene dos vías alternativas y basta con cumplir una, según el artículo 3.2 del RD 1021/2022: que el suministro a otros minoristas no supere el 25 % del volumen anual, o que toda tu comercialización —incluida la venta al consumidor final— no pase de 500 kilos a la semana. La de localizado, artículo 3.3, exige moverte dentro de tu zona sanitaria o, entre comunidades autónomas distintas, dentro de un radio de 50 kilómetros, y sólo si los registros sanitarios de origen y destino son públicos y accesibles.
+
+La que más fácil se rompe es la restringida, artículos 3.4 y 3.5: basta con servir a un solo cliente que ya esté inscrito en el Registro General Sanitario de Empresas Alimentarias y Alimentos para perderla, aunque cumplas las otras dos sin esfuerzo. Y en cuanto el canal está abierto, la norma pide presentar una declaración responsable y llevar un registro de a quién sirves, cuánto y cuándo: no es opcional, es la contrapartida de poder operar dentro de este régimen.

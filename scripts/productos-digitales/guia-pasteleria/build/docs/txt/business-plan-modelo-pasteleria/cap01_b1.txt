@@ -1,0 +1,25 @@
+### El proyecto en una página
+
+Este documento es el caso completo de una pastelería (repostería), con las cifras ya cargadas en las ocho herramientas del pack: cada número que sigue sale de una celda de esas hojas y se puede abrir para comprobarlo, así que a partir de aquí no repetimos esa explicación en cada capítulo. El proyecto es un obrador (taller o laboratorio) propio con despacho a calle, en una ciudad media, con la superficie repartida entre el obrador, el despacho de venta, la cámara, el almacén y la zona de aseos y vestuario del personal. El modelo trabaja sobre un local de unos 90 m², con la plantilla formada por el Jefe Pastelero, el Pastelero, el Ayudante y las dos personas de Dependiente Vitrina que atienden el mostrador. Es la ficha que un banco lee antes de decidir si sigue leyendo: qué se monta, dónde, con qué metros y con qué equipo humano.
+
+### La inversión y su financiación
+
+La inversión sin contar el fondo de maniobra suma 165.800 €. El fondo de maniobra añade 62.115 €, y la suma de los dos da la inversión total: 227.916 €. La necesidad total de caja al arranque sube hasta 261.826 €, porque a la inversión total hay que sumarle el IVA que se adelanta al pagar la obra y el equipamiento antes de facturar el primer euro; son cuatro cifras distintas porque cada una responde a una pregunta distinta: qué cuesta montar el negocio, cuánto colchón hace falta para los primeros meses, cuánto suman las dos cosas y cuánto dinero hay que tener disponible el día de la firma.
+
+De esos 261.826 €, la aportación de recursos propios es 201.826 € y el préstamo pedido es de 60.000 €. Dentro del desembolso total, 33.911 € es IVA soportado sobre la inversión, que Hacienda devuelve más adelante y que por tanto no es un coste real del proyecto, sino un adelanto de tesorería.
+
+Como contraste, el escenario publicado en «Cuánto dinero necesito para montar un negocio de repostería o pastelería — La Hostelera» (2026) sitúa un caso de referencia de unos 90 m² en 137.000 €, sumando proyecto técnico, obra civil, equipamiento y marketing. Es el presupuesto de un caso concreto, no un dato general del sector, y se cita aquí sólo como marco de comparación frente a los 165.800 € de este modelo.
+
+### La previsión a tres años
+
+Los ingresos del año de crucero son 322.198 €. El resultado neto de los tres años y el margen neto de ese año de crucero están calculados, partida a partida, en el cuadro de la previsión financiera que acompaña a este resumen: ahí se ve cómo se llega desde la facturación hasta el beneficio, sin necesidad de repetir aquí cada línea.
+
+El gerente de Pastelerías Pomar, en «Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…» (2025-11-21), sitúa en un rango porcentual la rentabilidad neta de una pastelería que va bien; no repetimos esa cifra, porque el margen de este caso concreto es el que figura, ya calculado, en el cuadro de resultados de los tres años.
+
+Cuándo llega este negocio al punto de equilibrio y con cuánta holgura lo hace es un dato que también vive en esa misma sección financiera del pack: es la hoja que hay que abrir antes de firmar nada, no una frase que se pueda resumir sin verla.
+
+### Qué se pide y para qué
+
+El préstamo que se pide es de 60.000 €, para completar la inversión inicial descrita arriba junto a los 201.826 € de recursos propios que ya están comprometidos. El plazo y la garantía se cierran con la entidad financiera sobre este mismo caso, ajustándolos a lo que cada banco ofrezca; lo que queda fijado aquí es el destino de cada euro, que es la frase que un banco necesita leer: cuánto va a obra civil, cuánto a equipamiento, cuánto a fondo de maniobra y cuánto es IVA que se recupera más adelante, tal como aparece en la tabla de la inversión inicial que sigue a continuación.
+
+Este documento es un modelo relleno con el caso de una pastelería modelada de principio a fin: cada cifra corresponde a ese caso concreto, para que quien lo usa sustituya cada número por el suyo sobre la misma estructura de hojas. No es una previsión de los resultados de tu negocio: es la plantilla con la que calculas los tuyos.

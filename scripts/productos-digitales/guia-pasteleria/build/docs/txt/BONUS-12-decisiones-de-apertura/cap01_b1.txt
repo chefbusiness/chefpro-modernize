@@ -1,0 +1,37 @@
+### El contexto de la decisión
+
+Vas a buscar local para tu pastelería (repostería) y te vas a topar siempre con la misma paradoja. El local que te gusta, el que tiene escaparate y gente pasando por delante, casi nunca tiene metros para meter un obrador (taller o laboratorio) decente detrás. Y el local que sí tiene metros de sobra suele estar en una calle sin paso, donde el escaparate no le sirve a nadie. Se acaba negociando entre superficie y visibilidad, y esa negociación tiene un coste que casi nadie mete en la cuenta antes de firmar: la parte de local dedicada a obrador no vende una sola tarta, y esos metros se pagan al mismo precio de renta que el metro de escaparate. Si tu local vale 30 euros el metro cuadrado, el obrador te cuesta 30 euros el metro cuadrado igual que la vitrina, aunque desde la calle no se vea ni un cliente entrando ahí.
+
+### Las opciones sobre la mesa
+
+Con ese punto de partida, hay tres caminos, no dos.
+
+- **Opción A**, todo en el mismo local: el despacho de venta delante, con escaparate y vitrina, y el obrador ocupando la parte de atrás, sin acceso del público.
+- **Opción B**, separar las dos piezas: obrador a puerta cerrada en una zona barata de la ciudad, sin escaparate ni necesidad de paso, y un despacho pequeño en una zona de paso que recibe el producto ya terminado.
+- **Opción C**, empezar sin obrador propio: comprar producto elaborado a un tercero y dedicar el local entero a venta.
+
+Lo que cambia entre ellas no es sólo el metro cuadrado. Cambia la inversión de apertura, cambia la renta total que vas a pagar cada mes sumando los dos locales o uno solo, cambia si necesitas transporte diario entre obrador y despacho —furgoneta, horario de reparto, cadena de frío en el trayecto— y cambia el régimen de registro si el despacho acaba siendo una sucursal de un obrador central. Y hay un segundo filtro que no es económico sino de producto: sin obrador propio no puedes poner en el escaparate ni en el etiquetado la mención de elaboración propia. Si tu propuesta de venta es justamente esa, la opción C te la quita de encima antes de empezar.
+
+### El criterio con el que se decide
+
+La regla que aplica aquí, como en el resto de las decisiones de este bonus, es sencilla de enunciar y fácil de saltarse: se compara el coste total a varios años, no la renta mensual del primer contrato. Un local más caro al mes pero con obrador y despacho en el mismo sitio puede salir más barato que dos alquileres separados en cuanto sumas el transporte diario y el tiempo de tu gente moviéndose entre los dos puntos.
+
+Y antes de comparar nada, hay un filtro previo que descarta la opción A por sí solo: si en los metros que estás mirando no caben las siete zonas del obrador con marcha adelante —es decir, sin que el producto tenga que cruzarse a sí mismo entre recepción, elaboración, envasado y salida—, la opción A directamente no existe para ese local, por mucho que el escaparate te enamore. No es una cuestión de gusto, es una cuestión de que el flujo de trabajo funcione.
+
+Cada decisión de este bonus se cierra igual: con una recomendación explícita y con la condición que te haría cambiarla. Aquí la recomendación por defecto es la opción A cuando el local la permite, porque es la que menos fricción diaria genera; cambia a la opción B en cuanto el local con espacio suficiente esté en una calle sin tránsito y la diferencia de renta frente a separar los dos locales compense el coste del transporte; y cambia a la opción C sólo si no vas a vender elaboración propia como argumento comercial.
+
+### La celda que lo resuelve
+
+La hoja de variantes del formato, dentro de la calculadora de inversión de apertura, te da la cifra de cada camino con tus propios números metidos. En el caso central que trae la calculadora, montar obrador y tienda en el mismo local pide 165.800 € de inversión de apertura; el obrador a puerta cerrada, sin despacho de venta, pide 70.585 €; y el local de venta sin obrador propio, comprando elaborado, pide 57.948 €. La hoja de zonas y metros cuadrados de la calculadora de capacidad es la que te dice si tus metros concretos dan para las siete zonas: en el caso modelado, el local tiene 90 metros cuadrados en total y el obrador se lleva 45, la mitad del local, el 50 % de la superficie.
+
+Si acabas eligiendo la opción B —obrador central y despacho como sucursal—, la hoja del árbol de registro de la calculadora te dice qué inscribe cada uno de los dos, porque no se tramitan igual.
+
+Como contraste con estas cifras del pack, «Cuánto dinero necesito para montar un negocio de repostería o pastelería» (La Hostelera, 2026) publica un escenario tipo de pastelería mediana con obrador y tienda de 100.000 a 150.000 €, con un caso de referencia de unos 90 metros cuadrados que suma 137.000 €. Es el presupuesto de un caso concreto, en Gijón, no un dato general del sector, y por eso se cita así.
+
+### La norma que aplica cuando la hay
+
+Aquí sí hay norma, y conviene tenerla clara antes de firmar ningún contrato de alquiler. El RD 1021/2022, en su artículo 2, apartado 2, letra h, define el obrador como la parte del establecimiento minorista inaccesible al público y de la misma titularidad que el establecimiento central; en las letras i y j define el establecimiento central como el que tiene uno o varios obradores en el mismo municipio o zona de salud, y la sucursal como el punto de venta de igual titularidad y en el mismo municipio o zona de salud que ese central (comprobado el 10 de septiembre de 2026).
+
+Esto es lo que hace legalmente viable la opción B: obrador y despacho pueden estar separados sin dejar de ser, a efectos normativos, la misma unidad. El artículo 3, apartado 6, de la misma norma añade la pieza que completa el esquema: central y sucursales de la misma titularidad forman una única unidad comercial, y lo que circula entre ellos no cuenta como suministro a otro minorista. Pero eso no te libra de papeleo: cada sucursal se inscribe de manera independiente en el registro autonómico, aunque el reparto entre obrador y despacho no sea una venta a otras tiendas.
+
+Y si en algún momento manejas la idea de montar sólo el obrador, sin despacho de venta, ten en cuenta el riesgo del artículo 3 de ese mismo RD 1021/2022: en cuanto empieces a suministrar a otros comercios minoristas de distinta titularidad, entras en un régimen distinto, y ese es justamente el punto que trata «Cómo montar un negocio de pastelería: guía 2026» (Pastelería Para Todos, 2026-07-12) al describir la inversión de un obrador puramente productivo frente a la de un local con despacho de venta al público.

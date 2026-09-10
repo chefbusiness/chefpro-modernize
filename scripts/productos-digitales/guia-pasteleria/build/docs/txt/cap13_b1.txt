@@ -1,0 +1,28 @@
+### Los seis grupos del convenio y sus áreas funcionales
+
+Antes de escribir el primer contrato hay que asumir una idea que casi nadie llega sabiendo: la pastelería (repostería) tiene, en algunas provincias, un convenio colectivo PROPIO, distinto del de hostelería. Si montas contando la nómina con las tablas de hostelería, estás mirando el papel equivocado desde el primer día.
+
+Para que este capítulo pueda dar cifras reales en vez de generalidades, tomamos como caso modelado el Convenio del Sector de Comercio e Industria de Confitería, Pastelería, Bollería, Repostería, Heladería y Platos Cocinados de la Comunidad de Madrid (código 28001025011981), en su revisión salarial 2026 aprobada por Resolución de 7 de febrero de 2026 de la D. G. de Trabajo de la Comunidad de Madrid (comprobado el 10 de septiembre de 2026). Es un EJEMPLO, y vive en celda verde de la plantilla: lo primero que haces al abrir el archivo es sustituirlo por el convenio de tu provincia.
+
+Este convenio de referencia organiza la plantilla en seis grupos, y cada uno lleva su bruto mensual a 15 pagas:
+
+- Técnicos y titulados superiores: 1.733,88 € al mes.
+- Dirección, jefes y encargados, donde entra quien lleva el obrador (taller o laboratorio) como responsable último de producción: 1.427,89 € al mes.
+- Personal especialista, la franja de quien ya dirige una sección de producción o el mostrador principal: 1.376,91 € al mes.
+- Personal cualificado, con perfiles de producción, envasado, mostrador y reparto: 1.249,42 € al mes.
+- Personal de apoyo: 1.192,42 € al mes.
+- Personal de ayuda en servicios auxiliares: 1.192,42 € al mes.
+
+El convenio agrupa además estos seis grupos en tres áreas funcionales: OBRADOR, COMERCIO y ADMINISTRACIÓN. Para el caso modelado de esta guía, con sus cuatro perfiles —Jefe Pastelero, Pastelero, Ayudante y Dependiente Vitrina, con dos personas en este último puesto—, la lectura es directa: el Jefe Pastelero encaja en el área de obrador, en la franja de dirección y encargados o en la de personal especialista según el tamaño real de tu equipo; el Pastelero, en obrador, en personal especialista o cualificado; el Ayudante, en obrador, en personal de apoyo; y los dos Dependiente Vitrina, en comercio, entre personal cualificado y personal de apoyo, según si asumen caja y pedido o solo despacho al público. La tabla siguiente te muestra este cruce completo, persona a persona.
+
+No publicamos aquí las tablas salariales de otras provincias porque no están verificadas para esta edición, y publicar un número sin comprobarlo contra el boletín es peor que no darlo. El método para encontrar la tuya es siempre el mismo: busca en el Boletín Oficial de tu provincia (BOP) el convenio colectivo del sector de confitería, pastelería, bollería y repostería —a veces fusionado con heladería o con platos cocinados—, localiza su última revisión salarial vigente y copia la tabla mensual completa, con el número de pagas al que está calculada, en la celda verde de la plantilla.
+
+### El convenio manda sobre el salario mínimo
+
+El bruto anual del grupo más bajo de este convenio de referencia es 17.886,30 € al año. La referencia anual del salario mínimo interprofesional para 2026, fijada por el RD 126/2026, de 18 de febrero, arts. 1, 3.1, 4.1 y 4.2 (comprobado el 10 de septiembre de 2026), es de 17.094 € al año. El grupo más bajo del convenio queda por encima de esa referencia anual del salario mínimo.
+
+La conclusión que hay que llevarse de estas dos cifras es sencilla y, sin embargo, se pasa por alto constantemente al montar un negocio: en este sector manda el convenio, no el salario mínimo interprofesional. El SMI es un suelo general; el convenio de tu actividad es el suelo real de tu nómina, y casi siempre está por encima.
+
+Esto importa por una razón muy concreta al montar: quien presupuesta la nómina de su futura plantilla con la cifra del salario mínimo interprofesional se queda corto desde el primer mes de actividad, porque legalmente tiene que pagar la tabla del convenio, no la del SMI. Y esa desviación no se queda en la nómina: se arrastra a todo el plan financiero, porque el coste de personal es una de las partidas que más pesan sobre el punto de equilibrio, y un error aquí contamina la previsión de tesorería de los doce meses siguientes.
+
+Queda una última advertencia, y es de caducidad. Tanto la tabla salarial del convenio como la referencia anual del salario mínimo se revisan cada año, así que las dos cifras que acabas de leer tienen fecha de caducidad: la del convenio, con cada nueva revisión salarial publicada en el boletín de tu provincia; la del salario mínimo, con cada nuevo real decreto de enero o febrero. Por eso viven en celda editable en la plantilla y no como texto fijo en este libro. Antes de firmar un contrato, comprueba en el anexo normativo si hay una revisión más reciente que la que aquí se cita.

@@ -1,0 +1,31 @@
+### El contexto de la decisión
+
+El obrador no funciona solo. En cuanto el dueño sale a hacer un encargo, atiende al proveedor o simplemente libra un día, alguien tiene que sostener la producción con el mismo criterio, y ese alguien tiene precio de convenio: no es una ayuda puntual, es un puesto de plantilla. Aquí es donde más pasteleros se equivocan por precio, porque la tentación aparece sola: cubrir el hueco con media jornada de un perfil de apoyo, porque la diferencia de coste bruto entre ese perfil y un especialista parece pequeña sobre el papel. Se firma el contrato más barato, y meses después se descubre que ese contrato no cubre lo que hacía falta cubrir. La decisión de plantilla que más veces se toma por precio es exactamente esta.
+
+### Las opciones sobre la mesa
+
+Hay tres caminos, y conviene ponerlos uno al lado del otro antes de firmar nada:
+
+- Opción A: contratar un perfil especialista de obrador a jornada completa. Asume la producción con autonomía desde el primer día.
+- Opción B: cubrir el mismo horario con dos medias jornadas de perfiles de apoyo. Baja el coste por cabeza, pero reparte la responsabilidad entre dos personas con menos recorrido técnico.
+- Opción C: jornada completa de un perfil de apoyo, con formación interna para que crezca dentro del obrador.
+
+Lo que cambia entre las tres no es solo el número de la nómina. Cambia el coste de empresa al año, cambia la autonomía real del obrador cuando el dueño no está delante, y cambia el riesgo de que todo el negocio dependa de una sola persona que un día puede coger la baja o marcharse.
+
+### El criterio con el que se decide
+
+La comparación correcta no es de bruto contra bruto: es de coste de empresa contra coste de empresa. La Seguridad Social a cargo de la empresa no es un porcentaje simbólico, es una cifra que puede invertir el orden que parecía obvio mirando solo la nómina. Y hay una segunda vuelta de tuerca: la comparación se hace por hora de obrador efectivamente cubierta, no por cabeza contratada. Dos medias jornadas suman las mismas horas que una jornada completa sobre el papel, pero el coste de empresa de dos contratos no es la suma proporcional de uno solo, y ahí es donde la opción B pierde parte de su atractivo inicial.
+
+El segundo criterio, y el que de verdad decide en la práctica, es de cobertura, no de coste. Un turno de madrugada en obrador es continuo: empieza a una hora y hay que sostenerlo entero. Dos medias jornadas encajadas dejan casi siempre una costura, un momento del cuadrante en el que nadie especialista está delante del horno, y eso se nota en la producción del día antes de notarse en la nómina de fin de mes. Si el cuadrante no cierra, el ahorro de la opción B es solo aparente.
+
+### La celda que lo resuelve
+
+El número no hay que estimarlo: ya está calculado. La hoja de horas y coste del libro de turnos da, para cada perfil de la plantilla, el coste de empresa al año y el coste por hora, y es ahí donde se compara de verdad la opción A frente a la opción B. El perfil especialista de obrador a jornada completa tiene un coste de empresa de 27.469 € al año, con un coste por hora de 15,43 €. El perfil de apoyo a media jornada cuesta 11.894 € al año, con un coste por hora de 13,36 €. La diferencia por hora entre los dos perfiles es más pequeña de lo que sugiere la diferencia de sueldo bruto que se ve a simple vista, y es justo esa distancia corta la que hace que la cobertura pese más que el ahorro. El coste de personal de toda la plantilla, con esta estructura, queda en 92.776 € al año. La hoja de turnos semanales, en el mismo libro, es la que dice si con la opción elegida el cuadrante queda realmente cubierto turno a turno, o si queda un hueco de madrugada sin nadie especialista delante.
+
+La recomendación, con estos números encima de la mesa, es la opción A: un especialista de obrador a jornada completa sostiene la producción sin depender de encajar dos calendarios, y la diferencia de coste de empresa frente a la opción B no compensa el riesgo de dejar un turno sin cubrir. Esto cambia si el volumen de producción real del obrador no llena una jornada completa de especialista: ahí la opción C, jornada completa de apoyo con formación interna, empieza a tener sentido, siempre que el cuadrante de la hoja de turnos semanales confirme que ese perfil, ya formado, cubre el turno completo. Las fichas de tarea de cada perfil, con lo que cada uno hace realmente en su turno, las entrega el Kit de Tareas Pastelería, y son la referencia para que la formación interna de la opción C tenga un contenido concreto y no quede en una promesa vaga.
+
+### La norma que aplica cuando la hay
+
+El bruto de cada puesto no lo fija el dueño, lo fija el convenio del sector, y en pastelería manda el convenio sobre el salario mínimo interprofesional. El RD 126/2026, de 18 de febrero, arts. 1, 3.1, 4.1 y 4.2, fija para 2026 una cuantía anual de referencia de 17.094 € (comprobado el 10 de septiembre de 2026). Pero el grupo más bajo del convenio de referencia de este pack, el de Comercio e Industria de Confitería, Pastelería, Bollería, Repostería, Heladería y Platos Cocinados, fija un bruto anual de 17.886,30 € para su grupo de personal de apoyo, ya por encima de esa referencia estatal. Contratar por debajo de la tabla del convenio no es una opción barata, es un contrato irregular.
+
+Y hay una segunda obligación que no admite atajos: la formación de quien entra nuevo al obrador, sea cual sea la opción elegida, corre a cargo del empresario desde el primer día, y tiene que quedar registrada. No es un gesto de buena voluntad hacia la opción C, es una obligación que también existe con el perfil especialista de la opción A y con los dos perfiles de apoyo de la opción B.
