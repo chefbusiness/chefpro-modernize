@@ -1150,7 +1150,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         '20:00 · Cierre — limpieza, APPCC firmado, prep de masas para fermentación nocturna.',
       ],
       productsTitle: 'Plantillas y Kits Recomendados para Panadería',
-      productIds: ['kit-tareas-pasteleria', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
+      productIds: ['kit-tareas-panaderia', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
       testimonialQuote: 'Pasamos de hojas sueltas a sistema. Sabemos exactamente qué pieza rinde y cuál no incluyendo el coste hora de obrador. La merma cayó 30 % en 3 meses y descubrimos que dos panes históricos no eran rentables sin coste hora — los rediseñamos simplificando el proceso sin perder calidad y subimos margen 5 puntos.',
       testimonialAuthor: 'Ana Iglesias',
       testimonialRole: 'Panadera artesanal, obrador propio',

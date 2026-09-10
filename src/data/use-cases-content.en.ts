@@ -3903,7 +3903,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         '20:00 · Closing — cleaning, HACCP signed off, dough prep for overnight fermentation.',
       ],
       productsTitle: 'Recommended Templates and Kits for Bakeries',
-      productIds: ['kit-tareas-pasteleria', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
+      productIds: ['kit-tareas-panaderia', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
       testimonialQuote: 'We went from loose sheets to a system. We know exactly which piece performs and which doesn\'t — including production-kitchen labor cost. Shrinkage dropped 30% in 3 months and we discovered two long-running breads weren\'t profitable without labor cost — we redesigned them, simplifying the process without losing quality, and lifted margin 5 points.',
       testimonialAuthor: 'Ana Iglesias',
       testimonialRole: 'Artisan baker, in-house production kitchen',
