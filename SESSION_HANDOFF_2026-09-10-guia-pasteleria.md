@@ -6,7 +6,28 @@
 > déjame los datos de Stripe». Todo lo de abajo está commiteado en `main` LOCAL; **no se ha hecho push de la capa de
 > producto ni de los entregables** porque sin Payment Link la landing saldría con el botón de compra roto.
 
-## 0. Lo que John tiene que hacer por la mañana (5 minutos)
+## ⚠️ CIERRE DE URGENCIA (06:55 del 10-sep): PUSH HECHO (`5de0125`), John apaga el Mac para una reunión
+
+- **Payment Link creado por John** (`https://buy.stripe.com/7sY00c5Sk64e1MPejH6oo1r`), env var puesta (scope builds, todos
+  los contextos), `CRYPTO_PRODUCTS` = `kit-tareas-cafeteria,manual-chef-ejecutivo,guia-pasteleria-obrador`,
+  `payment-links.ts` regenerado (48). **Push a `main` a las 06:52 → Netlify desplegando.** NO se ha podido correr ningún
+  gate LIVE ni enviar el sitemap a GSC (el Mac se apaga): **primera tarea de la próxima sesión** →
+  `gate-flujo-postpago.py --only guia-pasteleria-obrador` (landing con `buy.stripe.com`, 13 descargas binarias, sección E
+  cripto: 3 `data-crypto-open` + 1 `<dialog>`), `robots-gate.py --live`, `whatsapp-gate.py`, `fase6-gate.py`, sitemap a GSC.
+- 🔴 **Los PDF/DOCX en producción son la versión 1 (antes del fixer):** llevan los **11 hallazgos altos** de
+  `auditorias/guia-pasteleria-docs-refutacion-2026-09-10.md` (dos referencias de celda desplazadas → «veinte semanas» donde
+  son 9; «fondo de maniobra 15.562 €» que es el fijo mensual; punto de equilibrio invertido en 3 sitios; bebida
+  reutilizable «ya exigible» cuando es 1-ene-2027; Reyes > enero; una tabla con «4,0 %» donde va 4 °C por el regex de
+  porcentajes; las tres vías del huevo sin explicar). **El fixer (opus) estaba a mitad al apagar**: `git status` mostrará
+  sus ediciones SIN commitear (8 xlsx regenerados en `dl/` y `build/`, JSON de research, y quizá generadores/txt/guion).
+  **Próxima sesión: NO descartar ese árbol a ciegas** — leer `git diff --stat`, pasar `gate_libros.py`, `verificar_guion.py`
+  y `censo-entregables.py --only guia-pasteleria-obrador --fail`; si está en verde, terminar los pasos 4-7 del encargo del
+  fixer (prosa, reensamblado, gates, páginas) y desplegar la v1.0.1 de los documentos; si no, `git checkout -- .` y relanzar
+  el fixer desde el JSON de la refutación. Hasta entonces, **no anunciar el producto** (el correo del 14-oct sigue sin crear).
+- Pendientes de Resend (borradores, ambos a más de 30 días): lanzamiento de la guía (14-oct, HTML en `emails/`) y Kit de
+  Tareas Pastelería 2.1 (19-oct). Compra de prueba real de John tras el gate LIVE.
+
+## 0. Lo que John tiene que hacer por la mañana (5 minutos) — HECHO a las 06:45 (Payment Link)
 
 1. **Crear el producto y el Payment Link en Stripe** con estos datos:
 
