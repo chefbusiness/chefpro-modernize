@@ -37,9 +37,23 @@ Qué hace:
      para el veredicto, marcando «estimado desde DOCX» cuando esa es la que decide.
   5. Falla si CUALQUIER cifra anunciada SUPERA las páginas reales (o la estimación) del
      fichero emparejado, o si queda algo SIN EMPAREJAR.
+  6. Busca TOKENS DE PÁGINAS SIN SUSTITUIR (`__PAGINAS__`, `__PAGINAS_BONUS__`, cualquier
+     variante `__PAGINAS*`) en la ficha .ts del producto, en src/data/productos-digitales-config.ts,
+     en netlify/functions/verify-purchase.ts, en netlify/functions/resend-access.ts y en
+     scripts/productos-digitales/emails/*.html. Cada uno sale como fila «TOKEN SIN SUSTITUIR».
 
-Exit 0: todo lo anunciado cabe en lo real (o no hay menciones de páginas en el catálogo).
-Exit 1: alguna cifra anunciada supera al entregable, o alguna mención no se pudo emparejar.
+     POR QUÉ (2026-09-10): la familia publica la cifra de páginas MEDIDA, así que la ficha
+     nace con un token que se sustituye al final, cuando el PDF existe. Pero mientras el
+     token está puesto NO hay ninguna cifra que este gate pueda comparar: el producto pasaba
+     en VERDE con «__PAGINAS__ páginas» escrito en el hero, en el `emailBody` post-pago y en
+     el broadcast. Un gate que da verde justo cuando el defecto está presente es peor que no
+     tenerlo: es el patrón «gates que no fallan pero dejan pasar el error» del CLAUDE.md.
+     Se ignoran los comentarios (`//`) de los .ts: ahí el token se cita como documentación.
+
+Exit 0: todo lo anunciado cabe en lo real (o no hay menciones de páginas en el catálogo) y
+        no queda ningún token sin sustituir.
+Exit 1: alguna cifra anunciada supera al entregable, alguna mención no se pudo emparejar, o
+        queda algún token `__PAGINAS*` sin sustituir.
 
 Térmica: leer `page_count` con PyMuPDF NO renderiza páginas (es barato), pero por regla
 del proyecto se comprueba `istats cpu temp` antes de CADA apertura de PDF y se procesan
@@ -65,6 +79,17 @@ DL_DIR = ASTRO_DIR / 'public' / 'dl'
 WORDS_PER_PAGE = 530
 THERMAL_LIMIT_C = 65.0
 THERMAL_POLL_S = 15
+
+# Superficies donde la cifra de páginas se publica al cliente y donde, por tanto, un token
+# sin sustituir es un defecto visible. `emails/*.html` incluido: el broadcast es la primera
+# pieza que ve la lista de compradores.
+CONFIG_TS = REPO_ROOT / 'src' / 'data' / 'productos-digitales-config.ts'
+VERIFY_TS = REPO_ROOT / 'netlify' / 'functions' / 'verify-purchase.ts'
+RESEND_TS = REPO_ROOT / 'netlify' / 'functions' / 'resend-access.ts'
+EMAILS_DIR = REPO_ROOT / 'scripts' / 'productos-digitales' / 'emails'
+
+# Cualquier variante: __PAGINAS__, __PAGINAS_BONUS__, __PAGINAS2__…
+TOKEN_RE = re.compile(r'__PAGINAS[A-Z0-9_]*')
 
 # --------------------------------------------------------------------------------------
 # Motor de PDF: PyMuPDF preferido, pypdf de respaldo.
@@ -449,6 +474,63 @@ def analyze_product(p, measure_cache):
 # Salida
 # --------------------------------------------------------------------------------------
 
+def _es_comentario(linea):
+    """True si la línea de un .ts es sólo comentario (ahí el token es documentación)."""
+    t = linea.strip()
+    return t.startswith('//') or t.startswith('*') or t.startswith('/*')
+
+
+def _dueno_por_bloque(text, pos):
+    """Slug del producto cuyo bloque `  'slug': {` precede a `pos`. None si no hay."""
+    ultimo = None
+    for m in re.finditer(r"^  '([a-z0-9-]+)':\s*\{", text[:pos], re.M):
+        ultimo = m.group(1)
+    return ultimo
+
+
+def scan_page_tokens(products, only=None):
+    """Filas «TOKEN SIN SUSTITUIR» de todas las superficies que ve el cliente.
+
+    Con --only sólo se devuelven los tokens ATRIBUIBLES a ese slug (por el bloque
+    `'slug': {` que los precede en el .ts, o porque el slug aparece en el HTML del
+    correo). Sin --only se devuelve todo, incluido lo que no se puede atribuir."""
+    rows = []
+    ficheros = [(p['path'], p['text'], p['slug']) for p in products]
+    for f in (CONFIG_TS, VERIFY_TS, RESEND_TS):
+        if f.exists():
+            ficheros.append((f, f.read_text(encoding='utf-8'), None))
+    for f in sorted(EMAILS_DIR.glob('*.html')):
+        ficheros.append((f, f.read_text(encoding='utf-8'), None))
+
+    for path, text, slug_fijo in ficheros:
+        es_ts = path.suffix == '.ts'
+        for m in TOKEN_RE.finditer(text):
+            linea_n = text.count('\n', 0, m.start()) + 1
+            linea = text.splitlines()[linea_n - 1]
+            if es_ts and _es_comentario(linea):
+                continue
+            dueno = slug_fijo or (_dueno_por_bloque(text, m.start()) if es_ts else None)
+            if dueno is None and not es_ts:
+                # correo: se atribuye al producto cuyo slug aparece en el HTML
+                for p in products:
+                    if p['slug'] in text:
+                        dueno = p['slug']
+                        break
+            if only and dueno != only:
+                continue
+            rows.append({
+                'slug': dueno or '(sin atribuir)',
+                'fichero': f"{path.relative_to(REPO_ROOT)}:{linea_n}",
+                'campo': m.group(0),
+                'anunciado': '—',
+                'pdf': '—',
+                'paginas_reales': None,
+                'veredicto': 'TOKEN SIN SUSTITUIR',
+                'texto': linea.strip()[:120],
+            })
+    return rows
+
+
 def print_table(rows):
     if not rows:
         print('(sin menciones de páginas)')
@@ -587,6 +669,7 @@ def main():
         all_results.append(analyze_product(p, measure_cache))
 
     all_rows = [r for res in all_results for r in res['rows']]
+    token_rows = scan_page_tokens(products, only=args.only)
 
     if not args.quiet:
         print_table(all_rows)
@@ -600,7 +683,15 @@ def main():
 
     print(f'{len(products)} productos escaneados, {len(con_mencion)} anuncian páginas, '
           f'{len(all_rows)} menciones — OK={len(ok)} FALLA={len(falla)} '
-          f'SIN_EMPAREJAR={len(sin_emparejar)} ERROR={len(error)}')
+          f'SIN_EMPAREJAR={len(sin_emparejar)} ERROR={len(error)} '
+          f'TOKENS_SIN_SUSTITUIR={len(token_rows)}')
+
+    if token_rows:
+        print(f'\nTOKEN SIN SUSTITUIR: {len(token_rows)} — la cifra de páginas todavía no se '
+              f'ha sustituido por la MEDIDA. Hasta que se haga, la landing, el correo '
+              f'post-pago y/o el broadcast enseñan el token al cliente.', file=sys.stderr)
+        for r in token_rows:
+            print(f"  {r['slug']} · {r['fichero']} · {r['campo']} · {r['texto']!r}", file=sys.stderr)
 
     if falla:
         print('\nFALLA (anunciado > real):', file=sys.stderr)
@@ -618,8 +709,8 @@ def main():
 
     if args.json:
         with open(args.json, 'w', encoding='utf-8') as f:
-            json.dump(all_rows, f, ensure_ascii=False, indent=2)
-        print(f'\nJSON escrito: {args.json} ({len(all_rows)} filas)')
+            json.dump(all_rows + token_rows, f, ensure_ascii=False, indent=2)
+        print(f'\nJSON escrito: {args.json} ({len(all_rows) + len(token_rows)} filas)')
 
     if not args.only:
         informe_path = Path(args.informe) if args.informe else (
@@ -628,7 +719,7 @@ def main():
         informe_path.write_text(build_markdown(all_results, args), encoding='utf-8')
         print(f'Informe escrito: {informe_path.relative_to(REPO_ROOT)}')
 
-    sys.exit(1 if (falla or sin_emparejar) else 0)
+    sys.exit(1 if (falla or sin_emparejar or token_rows) else 0)
 
 
 if __name__ == '__main__':
