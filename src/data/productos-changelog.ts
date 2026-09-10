@@ -23,9 +23,21 @@ export interface ProductChangelogData {
 
 export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
   'kit-tareas-pasteleria': {
-    version: '2.0',
-    updated: '2026-08-21',
+    version: '2.1',
+    updated: '2026-09-10',
     entries: [
+      {
+        version: '2.1',
+        date: '2026-09-10',
+        title: 'Vidas útiles y temperaturas de vitrina ajustadas al RD 1021/2022',
+        changes: [
+          'Las elaboraciones con huevo —crema pastelera, mousse y bavarois, merengue italiano y curd— pasan a 24 horas de vida útil: es el máximo que fija el Real Decreto 1021/2022 para lo elaborado con huevo que no se conserva a temperatura ambiente, tanto si se cuece como si se hace con ovoproducto.',
+          'Las vitrinas refrigeradas pasan a un objetivo de 0 a 4 °C, porque el producto de pastelería relleno debe mantenerse a 4 °C o menos. El aviso en rojo de la hoja mensual salta ya con ese límite, y la tarta montada con nata lo indica en su ficha.',
+          'Las Etiquetas de Elaborado piden ahora fecha Y hora: en las elaboraciones con huevo la norma obliga a registrar la hora, y sin ella no se sabe cuándo vence el plazo de 24 horas.',
+          'La hoja Vidas Útiles separa lo que es un tope legal de lo que es orientativo, cita el artículo que aplica en cada fila y añade al pie la referencia del texto consolidado del Real Decreto.',
+          'La actualización afecta solo a la plantilla 13 — Registro de Temperaturas, Recepción y Etiquetas. Las otras 14 plantillas del kit no cambian.',
+        ],
+      },
       {
         version: '2.0',
         date: '2026-08-21',

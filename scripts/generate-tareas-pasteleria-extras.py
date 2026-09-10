@@ -128,6 +128,12 @@ PCT = '0.0%'
 PCT0 = '0%'  # reservado: los porcentajes del kit van a un decimal (0,0 %)
 
 VERSION_LINE = "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pasteleria · info@aichef.pro"
+# El libro 13 va por delante del resto del kit: el 2026-09-10 se corrigieron sus
+# vidas útiles y sus temperaturas de vitrina al RD 1021/2022 (art. 9.3 y art. 4.1,
+# fila 9). Los otros 14 ficheros no cambian y se quedan en la 2.0.
+VERSION_LINE_13 = ("Versión 2.1 · septiembre 2026 · aichef.pro/kit-tareas-pasteleria · "
+                   "info@aichef.pro")
+BOE_RD1021 = "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681"
 BIO_LINE = ("Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, "
             "en cocina desde los 17 años · johnguerrero.es")
 SOPORTE_LINE = "Dudas o sugerencias: info@aichef.pro — respondemos en 24-48 h laborables."
@@ -157,19 +163,23 @@ NOMBRES = {
     "10": "Plan de Producción Semanal y Control de Mermas",
     "11": "Control de Encargos",
     "12": "Control de Alérgenos de Vitrina",
-    "13": "Registro de Temperaturas y Recepción de Mercancía",
+    # El nombre publicado del 13 lo fijó el post-proceso v2.0 (su propio NOMBRES),
+    # que es el que llevan los ficheros vendidos. Como la 2.1 ya no pasa por ese
+    # script, el nombre bueno tiene que estar aquí o el título del documento
+    # cambiaría solo. Ojo: el 10 y el 12 tienen la misma divergencia sin resolver.
+    "13": "Registro de Temperaturas, Recepción y Etiquetas",
 }
 
 
 # ══════════════════════════════════════════════════════════════════════
 # Helpers de marca
 # ══════════════════════════════════════════════════════════════════════
-def set_metadata(wb, num):
+def set_metadata(wb, num, version="2.0"):
     p = wb.properties
     p.creator = "AI Chef Pro"
     p.lastModifiedBy = "AI Chef Pro"
     p.title = f"{num} — {NOMBRES[num]} · Kit de Tareas Pastelería / Obrador"
-    p.subject = "Kit de Tareas Recurrentes · Pastelería / Obrador · v2.0"
+    p.subject = f"Kit de Tareas Recurrentes · Pastelería / Obrador · v{version}"
     p.keywords = "pastelería, obrador, checklist, tareas, AI Chef Pro"
     p.description = "aichef.pro/kit-tareas-pasteleria"
     p.category = "AI Chef Pro · Productos digitales"
@@ -202,7 +212,7 @@ def print_setup(ws, header_rows=None, landscape=True, one_page=False,
         ws.freeze_panes = ws.cell(row=last + 1, column=1).coordinate
 
 
-def instructions_sheet(wb, title, blocks, extra_lines=None):
+def instructions_sheet(wb, title, blocks, extra_lines=None, version_line=None):
     """Hoja Instrucciones en columna B, idéntica a la familia «▸» del kit."""
     ws = wb.active
     ws.title = "Instrucciones"
@@ -240,7 +250,7 @@ def instructions_sheet(wb, title, blocks, extra_lines=None):
     row += 1
     ws.cell(row=row, column=2, value=BIO_LINE).font = note_font
     row += 1
-    ws.cell(row=row, column=2, value=VERSION_LINE).font = small_font
+    ws.cell(row=row, column=2, value=version_line or VERSION_LINE).font = small_font
 
     ws.page_setup.paperSize = 9
     ws.page_setup.orientation = "portrait"
@@ -1669,25 +1679,50 @@ EQUIPOS = [
     ("Cámara de refrigeración", "0 a 4 °C", ("Mañana", "Tarde"), ("between", 0, 4)),
     ("Cámara de masas", "2 a 6 °C", ("Mañana", "Tarde"), ("between", 2, 6)),
     ("Congelador", "≤ −18 °C", ("Mañana", "Tarde"), ("greaterThan", -18, None)),
-    ("Vitrina 1", "2 a 6 °C", ("Mañana", "Tarde"), ("between", 2, 6)),
-    ("Vitrina 2", "2 a 6 °C", ("Mañana", "Tarde"), ("between", 2, 6)),
+    # Las vitrinas exponen producto de pastelería relleno: el RD 1021/2022,
+    # art. 4.1, fila 9, le fija 4 °C o menos. Un objetivo de 2 a 6 °C daba por
+    # buena una lectura de 6 °C, que es incumplimiento. Corregido el 2026-09-10.
+    ("Vitrina 1", "0 a 4 °C", ("Mañana", "Tarde"), ("between", 0, 4)),
+    ("Vitrina 2", "0 a 4 °C", ("Mañana", "Tarde"), ("between", 0, 4)),
     ("Abatidor", "+65 a +10 °C en menos de 2 h", ("Tª final", "Minutos"), ("abatidor", None, None)),
 ]
 
+# Criterio de la tabla (corregida el 2026-09-10 contra el texto consolidado del
+# RD 1021/2022, BOE-A-2022-21681):
+#   · Art. 9.3 — lo elaborado con huevo por la vía del art. 9.1.a) que NO sea
+#     estable a temperatura ambiente, y lo elaborado con ovoproducto (art. 9.2),
+#     «se conservarán a una temperatura igual o inferior a 8 °C y se consumirán
+#     en un máximo de veinticuatro horas». Es un TOPE, no una orientación, y da
+#     igual si la elaboración se cuece: la crema pastelera hierve y cae dentro.
+#     Se mantiene el 0 a 4 °C de la columna de conservación porque es más
+#     estricto que el techo de 8 °C y porque el relleno acaba en vitrina.
+#   · Art. 4.1, fila 9 — producto de pastelería relleno: 4 °C o menos.
+#   · Quedan FUERA del art. 9.3 las elaboraciones sin huevo (ganache, trufa,
+#     almíbar, nata) y las estables a temperatura ambiente (bizcocho horneado,
+#     pan, bollería sin rellenar): ahí la vida útil la fija el operador con su
+#     estudio y su APPCC.
 VIDAS_UTILES = [
-    ("Crema pastelera", "0 a 4 °C, tapada en contacto", "48 a 72 h", "Enfriar en placa fina, nunca en el cazo"),
+    ("Crema pastelera", "0 a 4 °C, tapada en contacto", "24 h",
+     "Con huevo: 24 h de tope (art. 9.3). Enfriar en placa fina, nunca en el cazo"),
     ("Nata montada", "0 a 4 °C", "24 h", "No se recongela"),
     ("Ganache de chocolate", "0 a 4 °C", "5 a 7 días", "Atemperar antes de usar"),
-    ("Mousse o bavarois", "0 a 4 °C", "3 días", "Montado y sin acabar"),
-    ("Merengue italiano", "0 a 4 °C", "3 días", "Tapado, sin humedad"),
+    ("Mousse o bavarois", "0 a 4 °C", "24 h",
+     "Con huevo: 24 h de tope (art. 9.3). Montado y sin acabar"),
+    ("Merengue italiano", "0 a 4 °C", "24 h",
+     "Con clara: 24 h de tope (art. 9.3). Tapado, sin humedad"),
     ("Trufa cocida", "0 a 4 °C", "5 días", ""),
-    ("Curd de limón", "0 a 4 °C", "5 a 7 días", "En bote esterilizado"),
+    ("Curd de limón", "0 a 4 °C", "24 h",
+     "Con huevo: 24 h de tope (art. 9.3), salvo estudio que lo acredite estable "
+     "a temperatura ambiente. En bote esterilizado"),
     ("Almíbar o jarabe", "0 a 4 °C", "15 días", "Grado de azúcar alto: más duración"),
     ("Fruta cortada", "0 a 4 °C", "24 h", "Con protección de gelatina o brillo"),
     ("Masa laminada cruda", "≤ −18 °C", "1 mes", "Congelar formada y filmada"),
     ("Bizcocho base", "≤ −18 °C", "3 meses", "Filmado por unidades"),
-    ("Tarta montada con nata", "0 a 4 °C", "24 a 48 h", "Vitrina a 2-6 °C"),
-    ("Bollería cocida", "Ambiente, en vitrina", "El mismo día", "Al día siguiente, a merma o a promoción"),
+    ("Tarta montada con nata", "0 a 4 °C", "24 h",
+     "Producto relleno: vitrina a 4 °C o menos (art. 4.1, fila 9)"),
+    ("Bollería cocida", "Ambiente, en vitrina", "El mismo día",
+     "Al día siguiente, a merma o a promoción. Si va rellena, a vitrina a 4 °C "
+     "o menos (art. 4.1, fila 9)"),
     ("Pan cocido", "Ambiente", "24 a 48 h", "Según formato y corteza"),
 ]
 
@@ -1898,11 +1933,16 @@ def gen13_etiquetas(wb):
     ws.merge_cells("B2:F2")
     c = ws.cell(row=2, column=2,
                 value="Toda elaboración que entre en cámara sale etiquetada. Sin etiqueta no hay trazabilidad: "
-                      "ni sabes qué es, ni hasta cuándo sirve. Vidas útiles orientativas en la hoja Vidas Útiles.")
+                      "ni sabes qué es, ni hasta cuándo sirve. En lo elaborado con huevo la hora es obligatoria "
+                      "(art. 9.3) y el plazo son 24 h desde que se elabora. Vidas útiles en la hoja Vidas Útiles.")
     c.font = note_font
     c.alignment = left_align
 
-    etiquetas = ["Producto", "Fecha de elaboración", "Fecha límite de consumo", "Lote", "Responsable"]
+    # El art. 9.3 del RD 1021/2022 no pide sólo la fecha: «Se deberá registrar la
+    # fecha y hora de elaboración». Con 24 h de vida útil, sin la hora la etiqueta
+    # no sirve para saber cuándo caduca.
+    etiquetas = ["Producto", "Fecha y hora de elaboración", "Fecha y hora límite de consumo",
+                 "Lote", "Responsable"]
     row = 4
     for _ in range(8):
         for i, label in enumerate(etiquetas):
@@ -1942,10 +1982,15 @@ def gen13_vidas(wb):
     row += 1
     ws.merge_cells(start_row=row, start_column=1, end_row=row + 2, end_column=4)
     c = ws.cell(row=row, column=1,
-                value=("Estas vidas útiles son ORIENTATIVAS y suponen elaboración correcta, enfriado rápido, "
-                       "envase limpio y cadena de frío sin cortes. La vida útil de tus elaboraciones la fijas tú "
-                       "y debe constar en tu plan de APPCC; si tienes dudas con una elaboración concreta, "
-                       "consulta con tu asesor en seguridad alimentaria o encarga un estudio de vida útil."))
+                value=("Las filas que citan el art. 9.3 NO son orientativas: las 24 horas son un TOPE LEGAL para "
+                       "lo elaborado con huevo que no sea estable a temperatura ambiente, y obligan a anotar la "
+                       "fecha y la hora de elaboración. El art. 4.1, fila 9, fija 4 °C o menos al producto de "
+                       "pastelería relleno. En las demás filas la vida útil es ORIENTATIVA y supone elaboración "
+                       "correcta, enfriado rápido, envase limpio y cadena de frío sin cortes: la fijas tú y debe "
+                       "constar en tu plan de APPCC; si tienes dudas con una elaboración concreta, consulta con "
+                       "tu asesor en seguridad alimentaria o encarga un estudio de vida útil. "
+                       "Real Decreto 1021/2022, texto consolidado en " + BOE_RD1021 +
+                       " — verificado el 10-09-2026."))
     c.font = note_font
     c.alignment = left_align
     c.fill = amber_fill
@@ -1973,14 +2018,16 @@ def generate_13():
             "▸ Hoja Recepción de Mercancía: comprueba la temperatura antes de firmar el albarán. Si rechazas "
             "algo, anota el motivo el mismo día.",
             "▸ Hoja Etiquetas de Elaborado: rellena, imprime y pega. Toda elaboración que entre en cámara "
-            "sale etiquetada.",
-            "▸ Hoja Vidas Útiles: la referencia de cuánto dura cada elaboración. Es orientativa.",
+            "sale etiquetada, y la elaborada con huevo lleva además la HORA (RD 1021/2022, art. 9.3).",
+            "▸ Hoja Vidas Útiles: la referencia de cuánto dura cada elaboración. Es orientativa salvo en las "
+            "filas con huevo: ahí las 24 horas son un tope legal (RD 1021/2022, art. 9.3).",
             "",
             "Rangos objetivo de partida:",
             "▸ Cámara de refrigeración 0 a 4 °C · cámara de masas 2 a 6 °C · congelador igual o por debajo de "
-            "−18 °C · vitrinas 2 a 6 °C · abatidor de +65 a +10 °C en menos de 2 horas.",
+            "−18 °C · vitrinas 0 a 4 °C · abatidor de +65 a +10 °C en menos de 2 horas.",
             "▸ Ajusta los rangos a los de tu plan de APPCC si son distintos: se cambian en Inicio › Formato "
-            "condicional › Administrar reglas.",
+            "condicional › Administrar reglas. Los 4 °C de vitrina no: son el tope que el RD 1021/2022 "
+            "(art. 4.1, fila 9) fija al producto de pastelería relleno, así que puedes bajarlos, no subirlos.",
             "",
             "Personalización:",
             "▸ Las celdas verdes son editables. Cambia los nombres de los equipos por los tuyos.",
@@ -1988,12 +2035,13 @@ def generate_13():
             "(→ 08 Apertura y Cierre del Negocio) y las de cámaras, del obrador "
             "(→ 01 Apertura y Cierre · hojas Apertura Obrador y Cierre Obrador).",
         ],
+        version_line=VERSION_LINE_13,
     )
     gen13_temperaturas(wb)
     gen13_recepcion(wb)
     gen13_etiquetas(wb)
     gen13_vidas(wb)
-    set_metadata(wb, "13")
+    set_metadata(wb, "13", version="2.1")
     path = os.path.join(OUTPUT_DIR, "13-registro-temperaturas-recepcion.xlsx")
     wb.save(path)
     return path
