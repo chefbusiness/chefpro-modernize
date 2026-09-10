@@ -2,10 +2,10 @@
 """
 Fase 5 — Generador determinista de la zona app post-pago en Astro.
 
-Genera, para los 47 productos del registro astro-site/src/lib/zona-app.ts:
-  - 47 páginas  astro-site/src/pages/<accessPath>.astro   (S1)
-  - 47 wrappers astro-site/src/islands/library/<X>LibraryIsland.tsx (S2)
-  - 47 páginas  astro-site/src/pages/<libraryPath>.astro  (S2)
+Genera, para los 48 productos del registro astro-site/src/lib/zona-app.ts:
+  - 48 páginas  astro-site/src/pages/<accessPath>.astro   (S1)
+  - 48 wrappers astro-site/src/islands/library/<X>LibraryIsland.tsx (S2)
+  - 48 páginas  astro-site/src/pages/<libraryPath>.astro  (S2)
 
 Fuentes de verdad (se extrae VERBATIM, el registro solo indexa):
   - Props de ProtectedRoute (storageKey/redirectTo): src/App.tsx
@@ -14,8 +14,8 @@ Fuentes de verdad (se extrae VERBATIM, el registro solo indexa):
     (src/pages/*AccessGate.tsx) que ya trae su config hardcodeada.
 
 Cross-checks (el script ABORTA si fallan):
-  - 47 entradas en el registro; ficheros de gate y dashboard existen.
-  - storageKey de App.tsx == storageKey del registro (47/47).
+  - 48 entradas en el registro; ficheros de gate y dashboard existen.
+  - storageKey de App.tsx == storageKey del registro (48/48).
   - Exactamente 1 <title> por dashboard, sin comillas dobles.
   - pro-prompts: ProtectedRoute SIN props en App.tsx (defaults) — se replica igual.
 
@@ -171,8 +171,8 @@ def emit(path: pathlib.Path, content: str, changed: list, mismatches: list):
 def main():
     reg_src = REG.read_text()
     entries = [dict(zip(FIELDS, m.groups())) for m in ENTRY_RE.finditer(reg_src)]
-    if len(entries) != 47:
-        fail(f"registro: {len(entries)} entradas parseadas (esperado 47)")
+    if len(entries) != 48:
+        fail(f"registro: {len(entries)} entradas parseadas (esperado 48)")
 
     app_src = APP.read_text()
     changed, mismatches, notes = [], [], []
@@ -223,10 +223,10 @@ def main():
             for m in mismatches:
                 print(f"❌ {m}")
             fail(f"--check: {len(mismatches)} desviaciones")
-        print("✅ --check: 141 ficheros generables coinciden byte a byte con el disco")
+        print("✅ --check: 144 ficheros generables coinciden byte a byte con el disco")
     else:
         print(f"✅ Generados/actualizados {len(changed)} ficheros "
-              f"(47 access + 47 islands + 47 library = 141 gestionados)")
+              f"(48 access + 48 islands + 48 library = 144 gestionados)")
         for c in changed:
             print(f"   {c}")
 

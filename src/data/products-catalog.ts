@@ -324,6 +324,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: 'Kitchen brigade, production, recipe standards and kitchen KPIs: 20 chapters and 7 Excel tools.',
     },
   },
+  'guia-pasteleria-obrador': {
+    id: 'guia-pasteleria-obrador',
+    url: '/guia-pasteleria-obrador',
+    price: '€65',
+    name: { es: 'Cómo Montar una Pastelería', en: 'Guide: How to Open a Pastry Shop' },
+    description: {
+      es: 'Obrador, licencias y números: 20 capítulos, 8 Excel y 2 bonus para abrir con criterio.',
+      en: 'Production room, licences and numbers: 20 chapters, 8 Excel tools and 2 bonuses to open with a plan.',
+    },
+  },
   // ── Planes de negocio (Excel financiero + checklist de apertura) ─────────
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',

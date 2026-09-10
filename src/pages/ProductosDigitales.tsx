@@ -154,6 +154,23 @@ const products = [
     tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'seguridad', 'restaurante', 'hotel', 'catering'],
   },
   {
+    name: 'Cómo Montar una Pastelería',
+    slug: '/guia-pasteleria-obrador',
+    price: '€65',
+    description: 'Obrador, licencias y números para quien AÚN no ha abierto: viabilidad del local, coste de apertura, licencias, carta y plan financiero. 20 capítulos, 8 Excel y 2 bonus.',
+    features: [
+      '20 capítulos + anexo normativo + 8 Excel',
+      'Capacidad de obrador y ficha de visita al local',
+      'Licencias y registro sanitario en árbol de decisión',
+      'Bonus: business plan relleno y 12 decisiones resueltas',
+    ],
+    icon: CakeSlice,
+    image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'pasteleria', 'panaderia'],
+  },
+  {
     name: 'Pack Plantillas APPCC',
     slug: '/pack-appcc',
     price: '€14',
@@ -675,7 +692,7 @@ const products = [
     price: '€12',
     originalPrice: '€39',
     discount: '-69%',
-    description: '9 checklists operativos pre-rellenados para pastelería y obrador: producción de masas, fermentación, cremas, decoración, vitrina, perfiles y eventos. Imprime, delega y firma.',
+    description: '15 plantillas para pastelería y obrador: 9 checklists + 4 registros + 2 bonus. Producción de masas, fermentación, cremas, decoración, vitrina, perfiles y eventos. Imprime, delega y firma.',
     features: [
       'Producción artesanal completa',
       'Masas, fermentación, cremas, decoración',
@@ -939,7 +956,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
 ];
 
@@ -1017,7 +1033,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 10, "url": "https://aichef.pro/kit-tareas-hotel", "name": "Tareas Recurrentes: Hotel Completo" },
               { "@type": "ListItem", "position": 11, "url": "https://aichef.pro/guia-food-cost-ingenieria-menu", "name": "Guía Food Cost + Ingeniería de Menú" },
               { "@type": "ListItem", "position": 12, "url": "https://aichef.pro/manual-manager-restaurante", "name": "Manual del Manager de Restaurante" },
-              { "@type": "ListItem", "position": 13, "url": "https://aichef.pro/manual-chef-ejecutivo", "name": "Manual del Chef Ejecutivo" }
+              { "@type": "ListItem", "position": 13, "url": "https://aichef.pro/manual-chef-ejecutivo", "name": "Manual del Chef Ejecutivo" },
+              { "@type": "ListItem", "position": 14, "url": "https://aichef.pro/guia-pasteleria-obrador", "name": "Cómo Montar una Pastelería" }
             ]
           }
         })}</script>

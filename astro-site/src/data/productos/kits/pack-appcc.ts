@@ -294,6 +294,7 @@ const data: KitExcelData = {
   footerLinks: [
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/kit-escandallos', label: 'Kit de Escandallos' },
+    { href: '/guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería' },
     { href: '/manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },

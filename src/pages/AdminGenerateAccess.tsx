@@ -54,6 +54,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'guia-food-cost-ingenieria-menu', label: 'Guía Food Cost + Ingeniería de Menú (€55)' },
   { id: 'manual-manager-restaurante', label: 'Manual del Manager de Restaurante (€55)' },
   { id: 'manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo (€65)' },
+  { id: 'guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería (€65)' },
 ];
 
 export default function AdminGenerateAccess() {

@@ -29,6 +29,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Guía Food Cost + Ingeniería de Menú': '/guia-food-cost-ingenieria-menu',
   'Manual del Manager de Restaurante': '/manual-manager-restaurante',
   'Manual del Chef Ejecutivo': '/manual-chef-ejecutivo',
+  'Cómo Montar una Pastelería': '/guia-pasteleria-obrador',
   'Guía Restaurante Casual': '/guia-restaurante-casual',
   'Mega Pack Tareas': '/mega-pack-tareas',
 };

@@ -173,6 +173,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el manual PDF + DOCX, 7 herramientas Excel y el bonus de 12 situaciones resueltas en cocina:<br /><br />Si además diriges el negocio —no sólo la cocina—, el <a href="https://aichef.pro/manual-manager-restaurante?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Manual del Manager de Restaurante</a> es su hermano: si llevas las dos cosas, necesitas los dos.',
     emailCta: 'Acceder a mi Manual',
   },
+  'guia-pasteleria-obrador': {
+    accessPath: '/guia-pasteleria-obrador-access',
+    emailSubject: 'Tu acceso a Cómo Montar una Pastelería',
+    emailTitle: 'Accede a tu guía Cómo Montar una Pastelería',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX (20 capítulos y anexo normativo, __PAGINAS__ páginas), las 8 herramientas Excel con fórmulas vivas, el business plan modelo relleno y las 12 decisiones de apertura resueltas:<br /><br />El día que abras, lo que vas a usar cada mañana es el <a href="https://aichef.pro/kit-tareas-pasteleria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Pastelería</a> (producción, encargos, alérgenos de vitrina y temperaturas). Para el papeleo diario de seguridad alimentaria está el <a href="https://aichef.pro/pack-appcc?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Pack de Plantillas APPCC</a>, para escandallar por formato el <a href="https://aichef.pro/kit-escandallos?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Escandallos Pro</a>, y cuando ya estés vendiendo y toque revisar precios y carta, la <a href="https://aichef.pro/guia-food-cost-ingenieria-menu?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Guía Food Cost + Ingeniería de Menú</a>.',
+    emailCta: 'Acceder a mi Guía',
+  },
   'guia-restaurante-casual': {
     accessPath: '/guia-restaurante-casual-access',
     emailSubject: 'Tu acceso a la Guía: Restaurante Casual 80 Plazas',

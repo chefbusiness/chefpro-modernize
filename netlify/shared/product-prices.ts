@@ -5,6 +5,7 @@ export const PRODUCT_PRICES: Record<string, { eur: number }> = {
   'guia-dark-kitchen': { eur: 24 },
   'guia-food-cost-ingenieria-menu': { eur: 55 },
   'guia-panaderia-obrador': { eur: 65 },
+  'guia-pasteleria-obrador': { eur: 65 },
   'guia-restaurante-casual': { eur: 65 },
   'guia-restaurante-gastronomico': { eur: 85 },
   'guia-restaurante-japones': { eur: 65 },

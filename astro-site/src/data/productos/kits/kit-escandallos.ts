@@ -296,6 +296,7 @@ const data: KitExcelData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: '/guia-food-cost-ingenieria-menu', label: 'Guía Food Cost + Ingeniería de Menú' },
+    { href: '/guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería' },
     { href: '/manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],

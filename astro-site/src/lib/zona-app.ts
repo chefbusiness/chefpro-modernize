@@ -1,5 +1,5 @@
 /**
- * Registro de la zona app post-pago (Fase 5) — 47 productos.
+ * Registro de la zona app post-pago (Fase 5) — 48 productos.
  *
  * Extraído VERBATIM de la SPA el 2026-07-19 (censo con verificación cruzada
  * 44/44: storageKey gate == ProtectedRoute, dashboardPath == ruta -library,
@@ -44,7 +44,7 @@ export interface ProductoZonaApp {
   notas?: string;
 }
 
-/** Título compartido por los 47 gates (verbatim de ProductAccessGate.tsx:68,
+/** Título compartido por los 48 gates (verbatim de ProductAccessGate.tsx:68,
  *  AccessGate.tsx y KitEscandallosAccessGate.tsx — idéntico en los 3). */
 export const ACCESS_TITLE = 'Verificando acceso... | AI Chef Pro';
 
@@ -87,6 +87,7 @@ export const PRODUCTOS_ZONA_APP: ProductoZonaApp[] = [
   { productId: 'guia-food-cost-ingenieria-menu', accessPath: '/guia-food-cost-ingenieria-menu-access', libraryPath: '/guia-food-cost-ingenieria-menu-library', landingPath: '/guia-food-cost-ingenieria-menu', storageKey: 'guia-food-cost-ingenieria-menu-jwt', productLabel: 'Guía Food Cost + Ingeniería de Menú', gateComponent: 'GuiaFoodCostAccessGate', dashboardComponent: 'GuiaFoodCostDashboard', notas: 'Producto 45 (2026-09-03). Primero de la línea con landing NATIVA en Astro: en App.tsx sólo existen sus rutas -access y -library, no la landing.' },
   { productId: 'manual-manager-restaurante', accessPath: '/manual-manager-restaurante-access', libraryPath: '/manual-manager-restaurante-library', landingPath: '/manual-manager-restaurante', storageKey: 'manual-manager-restaurante-jwt', productLabel: 'Manual del Manager de Restaurante', gateComponent: 'ManualManagerAccessGate', dashboardComponent: 'ManualManagerDashboard', notas: 'Producto 46 (2026-09-04). Primero de la línea MANUALES OPERATIVOS y segunda landing NATIVA en Astro: en App.tsx sólo existen sus rutas -access y -library, no la landing.' },
   { productId: 'manual-chef-ejecutivo', accessPath: '/manual-chef-ejecutivo-access', libraryPath: '/manual-chef-ejecutivo-library', landingPath: '/manual-chef-ejecutivo', storageKey: 'manual-chef-ejecutivo-jwt', productLabel: 'Manual del Chef Ejecutivo', gateComponent: 'ManualChefAccessGate', dashboardComponent: 'ManualChefDashboard', notas: 'Producto 47 (2026-09-06). Segundo de la línea MANUALES OPERATIVOS y tercera landing NATIVA en Astro: en App.tsx sólo existen sus rutas -access y -library, no la landing.' },
+  { productId: 'guia-pasteleria-obrador', accessPath: '/guia-pasteleria-obrador-access', libraryPath: '/guia-pasteleria-obrador-library', landingPath: '/guia-pasteleria-obrador', storageKey: 'guia-pasteleria-obrador-jwt', productLabel: 'Cómo Montar una Pastelería', gateComponent: 'GuiaPasteleriaAccessGate', dashboardComponent: 'GuiaPasteleriaDashboard', notas: 'Producto 48 (2026-09-10). Línea GUÍAS «Cómo Montar» y cuarta landing NATIVA en Astro: en App.tsx sólo existen sus rutas -access y -library, no la landing. El productLabel es el nombre ÚNICO del producto (D6 de la SPEC): «con obrador» es subtítulo, nunca nombre alternativo.' },
   { productId: 'guia-restaurante-casual', accessPath: '/guia-restaurante-casual-access', libraryPath: '/guia-restaurante-casual-library', landingPath: '/guia-restaurante-casual', storageKey: 'guia-restaurante-casual-jwt', productLabel: 'Guía Restaurante Casual', gateComponent: 'GuiaRestauranteCasualAccessGate', dashboardComponent: 'GuiaRestauranteCasualDashboard' },
   { productId: 'guia-panaderia-obrador', accessPath: '/guia-panaderia-obrador-access', libraryPath: '/guia-panaderia-obrador-library', landingPath: '/guia-panaderia-obrador', storageKey: 'guia-panaderia-obrador-jwt', productLabel: 'Guía Panadería con Obrador', gateComponent: 'GuiaPanaderiaObradorAccessGate', dashboardComponent: 'GuiaPanaderiaObradorDashboard' },
   { productId: 'guia-restaurante-mexicano', accessPath: '/guia-restaurante-mexicano-access', libraryPath: '/guia-restaurante-mexicano-library', landingPath: '/guia-restaurante-mexicano', storageKey: 'guia-restaurante-mexicano-jwt', productLabel: 'Guía Restaurante Mexicano', gateComponent: 'GuiaRestauranteMexicanoAccessGate', dashboardComponent: 'GuiaRestauranteMexicanoDashboard' },

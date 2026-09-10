@@ -27,6 +27,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },
   'manual-manager-restaurante': { accessPath: '/manual-manager-restaurante-access', label: 'Manual del Manager de Restaurante' },
   'manual-chef-ejecutivo': { accessPath: '/manual-chef-ejecutivo-access', label: 'Manual del Chef Ejecutivo' },
+  'guia-pasteleria-obrador': { accessPath: '/guia-pasteleria-obrador-access', label: 'Cómo Montar una Pastelería' },
   'guia-restaurante-casual': { accessPath: '/guia-restaurante-casual-access', label: 'Guía Restaurante Casual' },
   'guia-restaurante-mexicano': { accessPath: '/guia-restaurante-mexicano-access', label: 'Guía Restaurante Mexicano' },
   'guia-restaurante-peruano': { accessPath: '/guia-restaurante-peruano-access', label: 'Guía Restaurante Peruano' },

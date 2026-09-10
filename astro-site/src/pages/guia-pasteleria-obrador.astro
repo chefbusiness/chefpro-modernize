@@ -1,0 +1,43 @@
+---
+// /guia-pasteleria-obrador — LÍNEA GUÍAS «Cómo Montar», producto 48 (2026-09-10).
+// Thin wrapper: pasa el objeto data al template GuiaLandingPage y el SEO a BaseLayout.
+//
+// SOLO ES: producto de normativa española y sin variantes de idioma → locales={['es']}
+// (BaseLayout emite hreflang es + x-default y nada más). Canonical:
+// https://aichef.pro/guia-pasteleria-obrador. Patrón calcado de
+// manual-chef-ejecutivo.astro y guia-food-cost-ingenieria-menu.astro; la landing NACE
+// en Astro (no hay página SPA de la que portarla) y reutiliza el contrato GuiaData.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GuiaLandingPage from '../components/pages/GuiaLandingPage.astro';
+import data from '../data/productos/guias/guia-pasteleria-obrador';
+
+const lang = 'es';
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO, mismo fallback que la familia)
+// para que Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se
+// resuelve literal porque import.meta.env[clave] NO es fiable.
+// whatsapp={false}: GuiaLandingPage monta su PROPIO botón flotante de WhatsApp
+// (mensaje de soporte prerellenado, bottom-20 en móvil por la barra sticky). Sin
+// esto saldría también el global de BaseLayout y serían DOS superpuestos
+// (whatsapp-gate.py exige exactamente 1 por página).
+// CRIPTO (D30): no hay nada que añadir aquí. GuiaLandingPage monta las tres puertas de
+// CryptoPayButton (hero, buybox y cta) y se encienden solas cuando
+// cryptoEnabledFor('guia-pasteleria-obrador') da true — es decir, cuando el slug entra
+// en la env CRYPTO_PRODUCTS de Netlify (scope builds Y functions). Mismo mecanismo,
+// literalmente el mismo fichero de plantilla, que manual-chef-ejecutivo.astro.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GUIA_PASTELERIA_OBRADOR || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/${data.slug}`}
+  locales={['es']}
+  ogImage={data.seo.ogImage}
+>
+  <GuiaLandingPage data={data} stripeLink={stripeLink} />
+</BaseLayout>

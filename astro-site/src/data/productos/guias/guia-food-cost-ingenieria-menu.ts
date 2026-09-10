@@ -179,6 +179,7 @@ const data: GuiaData = {
     { label: 'Guía Restaurante Gastronómico', href: '/guia-restaurante-gastronomico' },
     { label: 'Manual del Manager de Restaurante', href: '/manual-manager-restaurante' },
     { label: 'Manual del Chef Ejecutivo', href: '/manual-chef-ejecutivo' },
+    { label: 'Cómo Montar una Pastelería', href: '/guia-pasteleria-obrador' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],

@@ -162,6 +162,8 @@ import ManualManagerAccessGate from "./pages/ManualManagerAccessGate";
 import ManualManagerDashboard from "./pages/ManualManagerDashboard";
 import ManualChefAccessGate from "./pages/ManualChefAccessGate";
 import ManualChefDashboard from "./pages/ManualChefDashboard";
+import GuiaPasteleriaAccessGate from "./pages/GuiaPasteleriaAccessGate";
+import GuiaPasteleriaDashboard from "./pages/GuiaPasteleriaDashboard";
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
@@ -884,6 +886,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="manual-chef-ejecutivo-jwt" redirectTo="/manual-chef-ejecutivo">
                   <ManualChefDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Cómo Montar una Pastelería — landing NATIVA en Astro
+                (astro-site/src/pages/guia-pasteleria-obrador.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/guia-pasteleria-obrador-access" element={<GuiaPasteleriaAccessGate />} />
+            <Route
+              path="/guia-pasteleria-obrador-library"
+              element={
+                <ProtectedRoute storageKey="guia-pasteleria-obrador-jwt" redirectTo="/guia-pasteleria-obrador">
+                  <GuiaPasteleriaDashboard />
                 </ProtectedRoute>
               }
             />

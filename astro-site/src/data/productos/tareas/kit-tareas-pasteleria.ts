@@ -389,6 +389,7 @@ const data: KitTareasData = {
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-cafeteria', label: 'Kit Tareas Cafetería' },
+    { href: '/guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],

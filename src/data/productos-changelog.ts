@@ -109,6 +109,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'guia-pasteleria-obrador': {
+    version: '1.0',
+    updated: '2026-09-10',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-09-10',
+        title: 'Lanzamiento',
+        changes: [
+          'Guía completa en PDF y en DOCX editable: 20 capítulos de criterio para quien va a abrir una pastelería con obrador, del primer local que visitas hasta los primeros noventa días, más un anexo normativo con fecha de corte.',
+          '8 herramientas Excel con fórmulas vivas: capacidad de obrador y ficha de visita al local, calculadora del coste de apertura con la comparación de traspaso frente a obra nueva, estacionalidad y picos del año, carta de apertura y escandallo con la hora de obrador imputada, plan financiero a tres años, checklist legal y de licencias con cronograma, checklist de equipamiento y proveedores, y turnos con coste de personal.',
+          'Bloque legal de apertura comprobado el 10 de septiembre de 2026: registro sanitario y comunicación autonómica, venta a otros comercios, obrador en vivienda, huevo y temperatura del producto relleno, formación del equipo, envases y desperdicio. Cada dato lleva su norma, su artículo, su enlace y el día en que se comprobó.',
+          'Los parámetros legales (temperaturas, plazos, umbrales y tipos) nunca viven dentro de una fórmula: van en casilla editable con su nota y su fecha, y la guía cierra con un anexo que dice qué está vigente, qué está derogado y qué fechas ya sabemos que se mueven.',
+          'Ningún libro depende de otro: cero referencias entre ficheros y ninguna casilla de entrada se queda vacía esperando un dato de otro producto — todas traen su valor por defecto declarado como supuesto.',
+          'Bonus 1: el business plan modelo relleno con el caso completo, en el formato que pide un banco o una línea de financiación pública, con las cifras cuadradas contra el plan financiero del pack.',
+          'Bonus 2: 12 decisiones de apertura resueltas, cada una con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay.',
+        ],
+      },
+    ],
+  },
   'manual-chef-ejecutivo': {
     version: '1.0',
     updated: '2026-09-06',
