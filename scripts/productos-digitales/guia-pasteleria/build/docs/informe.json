@@ -1,0 +1,2438 @@
+{
+  "_meta": {
+    "pid": "guia-pasteleria-obrador",
+    "generado": "2026-09-10 06:07",
+    "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador",
+    "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-pasteleria-obrador",
+    "modelo": "anthropic/claude-sonnet-4.6",
+    "research": "2026-08-29",
+    "research_ausente": false,
+    "erratas_reparadas": [],
+    "erratas_reparadas_n": 0
+  },
+  "documentos": {
+    "guia-pasteleria-obrador": {
+      "gates": {
+        "paginas_pdf": 104,
+        "paginas_prometidas": 70,
+        "palabras_md": 56686,
+        "palabras_pdf": 54850,
+        "palabras_docx": 52923,
+        "palabras_objetivo": 37500,
+        "capitulos": 21,
+        "tablas_md": 43,
+        "tablas_docx": 43,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 50848,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 53394,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar una Pastelería"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar una Pastelería",
+          "created": "2026-09-10 06:07:38"
+        },
+        "paridad_palabras_pct": 0.88,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 816,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/guia-pasteleria-obrador.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/guia-pasteleria-obrador.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/guia-pasteleria-obrador.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Qué Negocio Estás Montando: las Once Variantes y Cuál te Toca",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-01",
+            "PS-02",
+            "PS-03",
+            "PS-04",
+            "PS-05",
+            "PS-06",
+            "PS-07",
+            "PS-09",
+            "PS-11"
+          ],
+          "sector_huecos": [
+            "PS-08"
+          ],
+          "cifras": [
+            [
+              "Inversión de apertura de la variante central, la pastelería mediana con obrador y tienda",
+              "165.800 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I15"
+            ],
+            [
+              "Inversión total de esa misma variante, con el fondo de maniobra dentro",
+              "228.049 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!J15"
+            ],
+            [
+              "Inversión de apertura de la variante de obrador en casa",
+              "14.966 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I16"
+            ],
+            [
+              "Inversión de apertura del punto caliente pequeño",
+              "85.997 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I20"
+            ],
+            [
+              "Inversión de apertura de la pastelería sin salida de humos",
+              "167.180 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I24"
+            ],
+            [
+              "Variantes que tienen rango de inversión publicado por un tercero",
+              "8",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I26"
+            ],
+            [
+              "Superficie total del local del caso modelado",
+              "90",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B14"
+            ],
+            [
+              "Metros dedicados a obrador en el caso modelado",
+              "45",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D18"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "El Cliente y la Plaza: Quién Compra Pastelería y Cuándo",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-28",
+            "PS-29",
+            "PS-26c",
+            "PS-26d",
+            "PS-26f",
+            "PS-26i",
+            "PS-42"
+          ],
+          "sector_huecos": [
+            "PS-33"
+          ],
+          "cifras": [
+            [
+              "Ventas anuales sin IVA del caso modelado en velocidad de crucero",
+              "322.198 €",
+              "estacionalidad-y-picos.xlsx!Parámetros!B6"
+            ],
+            [
+              "Ventas del mes más alto del año, enero",
+              "31.683 €",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!C6"
+            ],
+            [
+              "Ventas del mes más bajo del año, agosto",
+              "18.258 €",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!C13"
+            ],
+            [
+              "Peso de enero sobre las ventas del año",
+              "9,8 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D6"
+            ],
+            [
+              "Peso de agosto sobre las ventas del año",
+              "5,7 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D13"
+            ],
+            [
+              "Facturación de un día medio del año",
+              "1.074 €",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!H24"
+            ],
+            [
+              "Ticket medio sin IVA del caso modelado",
+              "5,87 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B10"
+            ],
+            [
+              "Piezas por ticket",
+              "2,6",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B7"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "La Carta de Apertura: Treinta Referencias y por Qué Esas",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-43",
+            "PS-44"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Referencias de la carta con veredicto de mantener",
+              "27",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E39"
+            ],
+            [
+              "Referencias con veredicto de revisar precio",
+              "1",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E40"
+            ],
+            [
+              "Referencias con veredicto de retirar",
+              "2",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E41"
+            ],
+            [
+              "Margen de contribución medio por pieza de la carta",
+              "1,07 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F47"
+            ],
+            [
+              "Precio de venta medio ponderado con IVA",
+              "2,46 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F39"
+            ],
+            [
+              "Ticket medio con IVA del caso modelado",
+              "6,38 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F41"
+            ],
+            [
+              "Ticket medio sin IVA del caso modelado",
+              "5,87 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F42"
+            ],
+            [
+              "Food cost de materia de la carta completa",
+              "17,6 %",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F44"
+            ],
+            [
+              "Food cost servido, con la merma y el packaging dentro",
+              "20,3 %",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F45"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Cuánto Cuesta Abrir: el CAPEX Real, Partida a Partida",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-85a",
+            "PS-85b",
+            "PS-85c",
+            "PS-85e",
+            "PS-85f",
+            "PS-85g",
+            "PS-85h",
+            "PS-49",
+            "PS-50",
+            "PS-05"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "CAPEX total sin IVA del caso modelado",
+              "228.049 €",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K47"
+            ],
+            [
+              "IVA soportado total de la inversión",
+              "33.911 €",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L47"
+            ],
+            [
+              "Desembolso total con IVA",
+              "261.960 €",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!M47"
+            ],
+            [
+              "Precio por metro cuadrado del escenario de obra bajo",
+              "600 €",
+              "calculadora-capex-pasteleria.xlsx!Parámetros!B7"
+            ],
+            [
+              "Precio por metro cuadrado del escenario de obra alto",
+              "1.200 €",
+              "calculadora-capex-pasteleria.xlsx!Parámetros!B9"
+            ],
+            [
+              "Obra civil calculada en el escenario medio",
+              "81.000 €",
+              "calculadora-capex-pasteleria.xlsx!Parámetros!B12"
+            ],
+            [
+              "Fondo de maniobra calculado",
+              "15.562 €",
+              "calculadora-capex-pasteleria.xlsx!Parámetros!B18"
+            ],
+            [
+              "Meses de gastos fijos que cubre ese fondo",
+              "4",
+              "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B27"
+            ],
+            [
+              "Subtotal comparable con el escenario publicado por un tercero",
+              "160.900 €",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K51"
+            ],
+            [
+              "Desviación del modelo sobre ese escenario publicado",
+              "17,4 %",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K53"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "El Local: Metros, Zonas y la Ficha de Visita",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-86a",
+            "PS-86c",
+            "PS-86d",
+            "PS-86e"
+          ],
+          "sector_huecos": [
+            "PS-86b"
+          ],
+          "cifras": [
+            [
+              "Superficie total del local del caso modelado",
+              "90",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B14"
+            ],
+            [
+              "Metros de obrador",
+              "45",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D18"
+            ],
+            [
+              "Parte del local dedicada a obrador",
+              "50 %",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D19"
+            ],
+            [
+              "Metros de zona de venta",
+              "22",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D20"
+            ],
+            [
+              "Potencia sólo de los hornos",
+              "34",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B16"
+            ],
+            [
+              "Potencia instalada total del obrador",
+              "62",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B17"
+            ],
+            [
+              "Caudal de campana necesario",
+              "1.360",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B21"
+            ],
+            [
+              "Altura libre mínima que exige la ficha de visita",
+              "3,0",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B22"
+            ],
+            [
+              "Ítems de la ficha de visita a local",
+              "18",
+              "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E25"
+            ],
+            [
+              "De ellos, cuántos son eliminatorios",
+              "8",
+              "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E26"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Antes de Firmar el Alquiler: el Capítulo que Ahorra el Dinero",
+          "tablas": 3,
+          "sector_usado": [
+            "PS-69",
+            "PS-70",
+            "PA-07",
+            "PA-07b"
+          ],
+          "sector_huecos": [
+            "PS-08",
+            "PS-103"
+          ],
+          "cifras": [
+            [
+              "Ítems eliminatorios de la ficha de visita",
+              "8",
+              "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E26"
+            ],
+            [
+              "Motivos de descarte del local en el caso modelado",
+              "0",
+              "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E27"
+            ],
+            [
+              "Puntos pendientes de comprobar",
+              "2",
+              "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E29"
+            ],
+            [
+              "Precio de traspaso que piden por el local del caso modelado",
+              "43.000 €",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C6"
+            ],
+            [
+              "Renta mensual de ese local traspasado",
+              "1.250 €",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C8"
+            ],
+            [
+              "Coste total del traspaso en el horizonte de comparación",
+              "144.250 €",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C19"
+            ],
+            [
+              "Coste total de la obra nueva en el mismo horizonte",
+              "237.700 €",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C20"
+            ],
+            [
+              "Diferencia entre las dos vías",
+              "-93.450 €",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C21"
+            ],
+            [
+              "Precio pedido medio de los quince traspasos censados",
+              "38.600 €",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!D44"
+            ],
+            [
+              "De esos quince, cuántos publican la renta",
+              "5",
+              "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!D41"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "El Obrador por Dentro: Frío, Calor y Flujo de Trabajo",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-13",
+            "PA-12",
+            "PS-78",
+            "PS-83"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Piezas al día que quiere sacar el caso modelado en velocidad de crucero",
+              "476",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B6"
+            ],
+            [
+              "Piezas al día que permite el conjunto de equipos",
+              "480",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "Holgura sobre el día normal",
+              "4",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B9"
+            ],
+            [
+              "Piezas al día de obrador que permite el abatidor",
+              "480",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M12"
+            ],
+            [
+              "Piezas al día que permite la cámara de fermentación controlada",
+              "1.543",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M11"
+            ],
+            [
+              "Piezas al día que permite el horno de convección de seis bandejas",
+              "1.920",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M9"
+            ],
+            [
+              "Minutos productivos disponibles al día en el obrador",
+              "408",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B9"
+            ],
+            [
+              "Parte del surtido que pasa por el abatidor",
+              "40 %",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!L12"
+            ],
+            [
+              "Equipos dados de alta en el caso modelado",
+              "9",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!E18"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Maquinaria: Qué Compras, Qué Alquilas y Qué Esperas a Tener",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-72",
+            "PS-74",
+            "PS-76",
+            "PS-77",
+            "PS-78",
+            "PS-79",
+            "PS-81",
+            "PS-82",
+            "PS-83",
+            "PS-84"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Líneas del checklist de equipamiento",
+              "22",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I40"
+            ],
+            [
+              "Total de referencia sin IVA de las líneas críticas",
+              "66.980 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I41"
+            ],
+            [
+              "Total de referencia sin IVA de toda la dotación",
+              "86.501 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I42"
+            ],
+            [
+              "IVA soportado sobre el equipamiento",
+              "18.165 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I46"
+            ],
+            [
+              "Desembolso real del equipamiento con IVA",
+              "104.666 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I47"
+            ],
+            [
+              "Plazo crítico de entrega, en semanas",
+              "En línea con el CAPEX del libro 2",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52"
+            ],
+            [
+              "Semanas que faltan hasta la apertura prevista",
+              "20",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C11"
+            ],
+            [
+              "Inversión de referencia de la variante sin salida de humos",
+              "60.480 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!K39"
+            ],
+            [
+              "Inversión de referencia del caso base con venta",
+              "66.980 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!G39"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Licencias, Sanidad y Registro: el Camino Completo",
+          "tablas": 3,
+          "sector_usado": [
+            "PA-01",
+            "PA-01b",
+            "PA-02",
+            "PA-02b",
+            "PA-02c",
+            "PA-02d",
+            "PA-03",
+            "PA-03b",
+            "PA-04",
+            "PA-29"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Trámites del expediente completo del caso modelado",
+              "30",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D55"
+            ],
+            [
+              "Trámites que cambian según la comunidad autónoma",
+              "8",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D63"
+            ],
+            [
+              "Coste previsto de la comunicación al registro sanitario autonómico",
+              "120 €",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F37"
+            ],
+            [
+              "Umbral de la primera vía del artículo 3, sobre el volumen anual",
+              "25 %",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B20"
+            ],
+            [
+              "Umbral de la segunda vía del artículo 3, en kilos a la semana",
+              "500",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B23"
+            ],
+            [
+              "Radio máximo entre comunidades autónomas, en kilómetros",
+              "50",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B30"
+            ],
+            [
+              "Tope absoluto de kilos a la semana del artículo 13.9",
+              "100",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B13"
+            ],
+            [
+              "Metros útiles dedicados a la actividad en el ejemplo doméstico",
+              "12",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B6"
+            ],
+            [
+              "Kilos a la semana del ejemplo doméstico",
+              "60",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B7"
+            ],
+            [
+              "Kilos por metro cuadrado útil y semana del ejemplo doméstico",
+              "5,0",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B16"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Autocontrol, Alérgenos y Formación: Qué Tener el Día de la Inspección",
+          "tablas": 3,
+          "sector_usado": [
+            "PA-09",
+            "PA-10",
+            "PA-11",
+            "PA-21",
+            "PA-22",
+            "PA-23",
+            "PA-16",
+            "PA-16c"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas con formación registrada en el caso modelado",
+              "5",
+              "checklist-legal-y-licencias.xlsx!Registro de Formación!B17"
+            ],
+            [
+              "Formaciones caducadas",
+              "0",
+              "checklist-legal-y-licencias.xlsx!Registro de Formación!B18"
+            ],
+            [
+              "Validez interna que se da la casa a cada formación, en días",
+              "730",
+              "checklist-legal-y-licencias.xlsx!Registro de Formación!B13"
+            ],
+            [
+              "Coste previsto del plan de autocontrol en el caso modelado",
+              "800 €",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F39"
+            ],
+            [
+              "Coste previsto de la formación de manipuladores",
+              "240 €",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F40"
+            ],
+            [
+              "Trámites de la fase de sanidad, autocontrol y formación",
+              "6",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E43"
+            ],
+            [
+              "Umbral analítico para poder declarar sin gluten, en miligramos por kilo",
+              "20",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B31"
+            ],
+            [
+              "Referencias de la carta que necesitan vitrina refrigerada",
+              "15",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G38"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Proveedores: Materia Prima, Packaging y Plazos",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-87",
+            "PS-88",
+            "PS-89",
+            "PS-90",
+            "PS-91",
+            "PS-92",
+            "PS-93",
+            "PS-94",
+            "PS-95",
+            "PS-66"
+          ],
+          "sector_huecos": [
+            "PS-59"
+          ],
+          "cifras": [
+            [
+              "Proveedores verificados que se publican",
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F16"
+            ],
+            [
+              "Pedido mínimo acumulado si pides a los nueve",
+              "2.700 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F18"
+            ],
+            [
+              "Plazo medio de entrega comprometido, en días",
+              "7",
+              "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F19"
+            ],
+            [
+              "Primer pedido de packaging dentro de la inversión",
+              "2.500 €",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K44"
+            ],
+            [
+              "Peso del packaging sobre el coste del producto en el caso modelado",
+              "10 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B35"
+            ],
+            [
+              "Merma objetivo del caso modelado",
+              "5 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B34"
+            ],
+            [
+              "Coste de materia de una tanda de cada una de las treinta referencias",
+              "375,60 €",
+              "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!F266"
+            ],
+            [
+              "Líneas de equipamiento todavía sin proveedor asignado",
+              "13",
+              "checklist-equipamiento-y-proveedores.xlsx!Contador!B45"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Escandallo y Precios: por Qué la Mano de Obra Manda",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-55",
+            "PS-56"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste hora de obrador del caso modelado",
+              "17,94 €",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B16"
+            ],
+            [
+              "Horas productivas del obrador al año",
+              "3.782",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B15"
+            ],
+            [
+              "Coste de empresa anual del personal de obrador",
+              "67.850 €",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!F9"
+            ],
+            [
+              "Peso medio de la mano de obra sobre el coste total",
+              "63,3 %",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!R36"
+            ],
+            [
+              "Coste de mano de obra de las treinta tandas",
+              "542,62 €",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!H36"
+            ],
+            [
+              "Food cost objetivo del caso modelado",
+              "32 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B24"
+            ],
+            [
+              "Margen bruto objetivo derivado de ese food cost",
+              "68 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B25"
+            ],
+            [
+              "Coste total por unidad del croissant de mantequilla",
+              "1,06 €",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!K6"
+            ],
+            [
+              "Coste de mano de obra por unidad del croissant",
+              "0,82 €",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!I6"
+            ],
+            [
+              "Margen por unidad del croissant",
+              "0,40 €",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!Q6"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "El Equipo: Cuántos, Qué Perfiles y Qué Cuestan",
+          "tablas": 2,
+          "sector_usado": [
+            "PA-32",
+            "PA-33",
+            "PS-104",
+            "PS-105",
+            "PS-54"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Bruto mensual del grupo más alto del convenio de referencia",
+              "1.733,88 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C8"
+            ],
+            [
+              "Bruto mensual del grupo más bajo del convenio de referencia",
+              "1.192,42 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C13"
+            ],
+            [
+              "Bruto anual del grupo más bajo",
+              "17.886,30 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C16"
+            ],
+            [
+              "Referencia anual del salario mínimo",
+              "17.094 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C17"
+            ],
+            [
+              "Seguridad Social a cargo de la empresa",
+              "33 %",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C21"
+            ],
+            [
+              "Coste de personal al mes del caso modelado",
+              "7.731,34 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E15"
+            ],
+            [
+              "Coste de personal al año en velocidad de crucero",
+              "92.776 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E16"
+            ],
+            [
+              "Lo que cuesta la Seguridad Social al año",
+              "23.020 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E19"
+            ],
+            [
+              "Suma de los brutos anuales de la plantilla",
+              "69.756 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E20"
+            ],
+            [
+              "Jornadas completas equivalentes de la plantilla",
+              "3,5",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E17"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "Turnos de Madrugada y Jornada Legal",
+          "tablas": 2,
+          "sector_usado": [
+            "PA-34",
+            "PS-97",
+            "PS-54"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Horas planificadas a la semana en el caso modelado",
+              "140",
+              "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E22"
+            ],
+            [
+              "Jornadas equivalentes de la plantilla",
+              "3,5",
+              "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E23"
+            ],
+            [
+              "Días abiertos sin nadie en el mostrador",
+              "0",
+              "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E26"
+            ],
+            [
+              "Días de apertura a la semana",
+              "6",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C24"
+            ],
+            [
+              "Horas semanales de jornada completa",
+              "40",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C22"
+            ],
+            [
+              "Horas anuales de contrato",
+              "1.780",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C23"
+            ],
+            [
+              "Horas semanales planificadas del Jefe Pastelero",
+              "40",
+              "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L11"
+            ],
+            [
+              "Horas semanales planificadas del Dependiente Vitrina de tarde",
+              "20",
+              "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L15"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "Los Seis Picos del Año",
+          "tablas": 3,
+          "sector_usado": [
+            "PS-41",
+            "PS-35",
+            "PS-36",
+            "PS-37",
+            "PS-38",
+            "PS-44",
+            "PS-46"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Peso de las seis campañas sobre las ventas del año",
+              "13,2 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D30"
+            ],
+            [
+              "Facturación de las seis campañas sin IVA",
+              "42.371 €",
+              "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N13"
+            ],
+            [
+              "Facturación incremental de las seis campañas",
+              "41.163 €",
+              "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O13"
+            ],
+            [
+              "Peso de la campaña de Reyes sobre las ventas del año",
+              "9,8 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D24"
+            ],
+            [
+              "Cuántas veces factura un día de Reyes lo que un día normal",
+              "5,9",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!I24"
+            ],
+            [
+              "Demanda de piezas al día en Reyes",
+              "2.856",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D6"
+            ],
+            [
+              "Déficit diario de piezas en Reyes",
+              "1.656",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H6"
+            ],
+            [
+              "Campañas que no aguanta el obrador del caso modelado",
+              "6",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N13"
+            ],
+            [
+              "Coste del refuerzo de todo el año",
+              "3.795,51 €",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F13"
+            ],
+            [
+              "Tesorería inmovilizada en materia de campaña",
+              "7.281,67 €",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K13"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "Encargos y Comuniones como Línea de Negocio",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-53",
+            "PS-44",
+            "PS-46"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Peso del canal de encargos sobre las ventas",
+              "14 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B7"
+            ],
+            [
+              "Margen bruto del canal de encargos",
+              "70 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!C7"
+            ],
+            [
+              "Coste de servir del canal de encargos",
+              "2 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!D7"
+            ],
+            [
+              "Margen de contribución del canal de encargos",
+              "68 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G7"
+            ],
+            [
+              "Ventas anuales del canal de encargos",
+              "45.108 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!H7"
+            ],
+            [
+              "Margen de contribución en euros del canal de encargos",
+              "30.673 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!I7"
+            ],
+            [
+              "Facturación sin IVA de la campaña de comuniones",
+              "2.163,64 €",
+              "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N10"
+            ],
+            [
+              "Días que dura la campaña de comuniones",
+              "20",
+              "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!E10"
+            ],
+            [
+              "Días con el dinero parado en la campaña de comuniones",
+              "55",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M10"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "Canales: Mostrador, Encargos, B2B y Envío",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-53",
+            "PA-01b",
+            "PA-02",
+            "PA-02b",
+            "PA-27",
+            "PA-27b",
+            "PA-28"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Margen de contribución medio ponderado de todos los canales",
+              "66,5 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B15"
+            ],
+            [
+              "Lo que se llevan servir, cobrar y las comisiones",
+              "1,5 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B17"
+            ],
+            [
+              "Punto muerto mensual con todos los canales",
+              "23.337,56 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B18"
+            ],
+            [
+              "Punto muerto mensual sin el canal de suministro a otras tiendas",
+              "23.018,22 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B19"
+            ],
+            [
+              "Diferencia del punto muerto al quitar ese canal",
+              "-319,35 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B20"
+            ],
+            [
+              "Aporte del canal que sostiene el negocio",
+              "79,7 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B22"
+            ],
+            [
+              "Peso del suministro a otras tiendas sobre las ventas",
+              "5 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B25"
+            ],
+            [
+              "Días medios de cobro ponderados",
+              "2,25",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B29"
+            ],
+            [
+              "Margen de contribución del canal de venta online y envío",
+              "51 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G9"
+            ],
+            [
+              "Temperatura que manda en el producto de pastelería relleno",
+              "4",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B28"
+            ]
+          ]
+        },
+        {
+          "n": 18,
+          "titulo": "El Plan Financiero y el Dinero Hasta el Punto de Equilibrio",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-48",
+            "PS-58",
+            "PS-97",
+            "PS-51",
+            "PS-52"
+          ],
+          "sector_huecos": [
+            "PS-62"
+          ],
+          "cifras": [
+            [
+              "Ingresos del año de crucero",
+              "322.198 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C11"
+            ],
+            [
+              "Margen bruto del año de crucero",
+              "219.095 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C17"
+            ],
+            [
+              "Total de costes fijos del año de crucero",
+              "186.346 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C33"
+            ],
+            [
+              "Resultado neto del año uno",
+              "5.447 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B43"
+            ],
+            [
+              "Resultado neto del año de crucero",
+              "27.836 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C43"
+            ],
+            [
+              "Margen neto del año de crucero",
+              "8,6 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C50"
+            ],
+            [
+              "Retribución anual del propietario",
+              "28.800 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C20"
+            ],
+            [
+              "Tickets al día para el equilibrio contable",
+              "155,6",
+              "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C16"
+            ],
+            [
+              "Tickets al día para el equilibrio de caja",
+              "148,9",
+              "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C22"
+            ],
+            [
+              "Holgura sobre el equilibrio de caja en el año de crucero",
+              "22,9 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C26"
+            ]
+          ]
+        },
+        {
+          "n": 19,
+          "titulo": "Financiación, IVA, Envases y Tesorería del Arranque",
+          "tablas": 3,
+          "sector_usado": [
+            "PA-36",
+            "PA-36b",
+            "PA-36c",
+            "PA-36d",
+            "PA-37",
+            "PA-30",
+            "PA-30b",
+            "PA-30c",
+            "PA-31",
+            "PA-31b"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Principal del préstamo del caso modelado",
+              "60.000 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B37"
+            ],
+            [
+              "Tipo de interés nominal anual",
+              "6,2 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B38"
+            ],
+            [
+              "Cuota mensual del préstamo",
+              "936,57 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B22"
+            ],
+            [
+              "Intereses del año uno",
+              "3.671,10 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B116"
+            ],
+            [
+              "Cobertura del servicio de la deuda más ajustada del cuadro",
+              "3,37",
+              "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B123"
+            ],
+            [
+              "IVA soportado que hay que adelantar en la inversión",
+              "33.911 €",
+              "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B18"
+            ],
+            [
+              "Meses hasta recuperar ese IVA",
+              "4",
+              "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B17"
+            ],
+            [
+              "Tipo de IVA de la pastelería y la bollería",
+              "10 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B19"
+            ],
+            [
+              "Tipo de IVA del pan",
+              "4 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B20"
+            ],
+            [
+              "IVA medio ponderado de la carta del caso modelado",
+              "8,8 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B20"
+            ]
+          ]
+        },
+        {
+          "n": 20,
+          "titulo": "Cronograma, Apertura y los Primeros Noventa Días",
+          "tablas": 2,
+          "sector_usado": [
+            "PA-39",
+            "PA-40",
+            "PA-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Duración total del proyecto, en meses",
+              "8,5",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C38"
+            ],
+            [
+              "Hitos que están en la ruta crítica",
+              "11",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C39"
+            ],
+            [
+              "Mes natural en el que abre el caso modelado",
+              "9",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C40"
+            ],
+            [
+              "Trámites del expediente completo",
+              "30",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D55"
+            ],
+            [
+              "Coste previsto total del expediente y de la obra",
+              "185.360 €",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D59"
+            ],
+            [
+              "Trámites sin importe conocido todavía",
+              "21",
+              "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D62"
+            ],
+            [
+              "Plazo crítico de entrega del equipamiento, en semanas",
+              "En línea con el CAPEX del libro 2",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52"
+            ],
+            [
+              "Margen de ese plazo crítico hasta la apertura, en semanas",
+              "Cámara de fermentación controlada (roll-in)",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54"
+            ]
+          ]
+        },
+        {
+          "n": 21,
+          "titulo": "Anexo normativo, actualizado a 10 de septiembre de 2026",
+          "tablas": 2,
+          "sector_usado": [
+            "PA-04",
+            "PA-11",
+            "PA-12",
+            "PA-15",
+            "PA-29",
+            "PA-30c",
+            "PA-31b",
+            "PA-33",
+            "PA-37",
+            "PA-40"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Techo de temperatura de la fila nueve del artículo 4.1",
+              "4",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B28"
+            ],
+            [
+              "Techo de temperatura del artículo 9.3",
+              "8",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B29"
+            ],
+            [
+              "Plazo de consumo del artículo 9.3, en horas",
+              "24",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B30"
+            ],
+            [
+              "Umbral analítico de sin gluten, en miligramos por kilo",
+              "20",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B31"
+            ],
+            [
+              "Tope de kilos a la semana del artículo 13.9",
+              "100",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B13"
+            ],
+            [
+              "Umbral de la primera vía del artículo 3, sobre el volumen anual",
+              "25 %",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B20"
+            ],
+            [
+              "Umbral de la segunda vía del artículo 3, en kilos a la semana",
+              "500",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B23"
+            ],
+            [
+              "Referencia anual del salario mínimo",
+              "17.094 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C17"
+            ]
+          ]
+        }
+      ]
+    },
+    "business-plan-modelo-pasteleria": {
+      "gates": {
+        "paginas_pdf": 19,
+        "paginas_prometidas": 8,
+        "palabras_md": 8002,
+        "palabras_pdf": 7707,
+        "palabras_docx": 7355,
+        "palabras_objetivo": 3500,
+        "capitulos": 6,
+        "tablas_md": 9,
+        "tablas_docx": 9,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 6797,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 7403,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Business Plan Modelo de una Pastelería"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Business Plan Modelo de una Pastelería",
+          "created": "2026-09-10 06:07:46"
+        },
+        "paridad_palabras_pct": 0.65,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 263,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/business-plan-modelo-pasteleria.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/business-plan-modelo-pasteleria.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/business-plan-modelo-pasteleria.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Resumen Ejecutivo",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-05",
+            "PS-48"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Subtotal de inversión sin el fondo de maniobra",
+              "165.800 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B17"
+            ],
+            [
+              "Fondo de maniobra",
+              "62.115 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B18"
+            ],
+            [
+              "Inversión total",
+              "227.916 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B19"
+            ],
+            [
+              "IVA soportado sobre la inversión",
+              "33.911 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B21"
+            ],
+            [
+              "Necesidad total de caja al arranque",
+              "261.826 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B22"
+            ],
+            [
+              "Recursos propios aportados",
+              "201.826 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B36"
+            ],
+            [
+              "Principal del préstamo",
+              "60.000 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B37"
+            ],
+            [
+              "Ingresos del año de crucero",
+              "322.198 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C11"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Mercado y Plaza",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-28",
+            "PS-29",
+            "PS-26c",
+            "PS-26d",
+            "PS-26i",
+            "PS-42"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ventas anuales sin IVA en velocidad de crucero",
+              "322.198 €",
+              "estacionalidad-y-picos.xlsx!Parámetros!B6"
+            ],
+            [
+              "Ticket medio sin IVA",
+              "5,87 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B10"
+            ],
+            [
+              "Piezas por ticket",
+              "2,6",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B7"
+            ],
+            [
+              "Tickets al día en velocidad de crucero",
+              "183",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B6"
+            ],
+            [
+              "Días de apertura al año",
+              "300",
+              "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B11"
+            ],
+            [
+              "Peso del mes más alto sobre el año",
+              "9,8 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D6"
+            ],
+            [
+              "Peso del mes más bajo sobre el año",
+              "5,7 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D13"
+            ],
+            [
+              "Peso de las seis campañas sobre el año",
+              "13,2 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D30"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Concepto y Carta",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-43",
+            "PS-53",
+            "PS-55",
+            "PS-56"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Margen de contribución medio por pieza",
+              "1,07 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F47"
+            ],
+            [
+              "Precio de venta medio ponderado con IVA",
+              "2,46 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F39"
+            ],
+            [
+              "Ticket medio con IVA",
+              "6,38 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F41"
+            ],
+            [
+              "Food cost de materia de la carta",
+              "17,6 %",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F44"
+            ],
+            [
+              "Food cost servido, con merma y packaging",
+              "20,3 %",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F45"
+            ],
+            [
+              "Food cost objetivo del plan",
+              "32 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B24"
+            ],
+            [
+              "Margen bruto objetivo derivado",
+              "68 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B25"
+            ],
+            [
+              "Margen de contribución medio ponderado de los canales",
+              "66,5 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B15"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Plan de Operaciones",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-86d",
+            "PA-33"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Superficie total del local",
+              "90",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B14"
+            ],
+            [
+              "Metros de obrador",
+              "45",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D18"
+            ],
+            [
+              "Piezas al día objetivo en velocidad de crucero",
+              "476",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B6"
+            ],
+            [
+              "Piezas al día que permite el conjunto de equipos",
+              "480",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "Personas de la plantilla",
+              "5",
+              "plan-financiero-3-anos-pasteleria.xlsx!Personal!B11"
+            ],
+            [
+              "Jornadas completas equivalentes",
+              "3,5",
+              "plan-financiero-3-anos-pasteleria.xlsx!Personal!C11"
+            ],
+            [
+              "Coste de personal al año",
+              "92.776 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Personal!I11"
+            ],
+            [
+              "Coste de personal sobre ventas en el año de crucero",
+              "28,8 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C48"
+            ],
+            [
+              "Duración total del proyecto, en meses",
+              "8,5",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C38"
+            ],
+            [
+              "Hitos en la ruta crítica",
+              "11",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C39"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Plan Financiero a Tres Años",
+          "tablas": 2,
+          "sector_usado": [
+            "PS-48",
+            "PS-58"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ingresos del año de crucero",
+              "322.198 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C11"
+            ],
+            [
+              "Resultado neto del año uno",
+              "5.447 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B43"
+            ],
+            [
+              "Resultado neto del año de crucero",
+              "27.836 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C43"
+            ],
+            [
+              "Margen neto del año de crucero",
+              "8,6 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C50"
+            ],
+            [
+              "Tickets al día para el equilibrio de caja",
+              "148,9",
+              "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C22"
+            ],
+            [
+              "Holgura sobre el equilibrio de caja",
+              "22,9 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C26"
+            ],
+            [
+              "Saldo mínimo de caja del año uno",
+              "59.622 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B24"
+            ],
+            [
+              "Mes en el que la caja toca fondo",
+              "3",
+              "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B25"
+            ],
+            [
+              "Cuota mensual del préstamo",
+              "936,57 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B22"
+            ],
+            [
+              "Cobertura del servicio de la deuda más ajustada",
+              "3,37",
+              "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B123"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Riesgos y Escenarios",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-97",
+            "PS-41"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ingresos del escenario pesimista",
+              "211.120 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!B9"
+            ],
+            [
+              "Resultado neto del escenario pesimista",
+              "-42.784 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!B16"
+            ],
+            [
+              "Resultado neto del escenario optimista",
+              "97.579 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!D16"
+            ],
+            [
+              "Coste de personal sobre ventas en el escenario pesimista",
+              "43,9 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!B20"
+            ],
+            [
+              "Campañas que no aguanta el obrador",
+              "6",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N13"
+            ],
+            [
+              "Margen del plazo crítico de entrega, en semanas",
+              "Cámara de fermentación controlada (roll-in)",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54"
+            ]
+          ]
+        }
+      ]
+    },
+    "BONUS-12-decisiones-de-apertura": {
+      "gates": {
+        "paginas_pdf": 38,
+        "paginas_prometidas": 25,
+        "palabras_md": 16625,
+        "palabras_pdf": 16594,
+        "palabras_docx": 15932,
+        "palabras_objetivo": 10000,
+        "capitulos": 12,
+        "tablas_md": 12,
+        "tablas_docx": 12,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 15668,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 16024,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "12 Decisiones de Apertura Resueltas"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "12 Decisiones de Apertura Resueltas",
+          "created": "2026-09-10 06:07:49"
+        },
+        "paridad_palabras_pct": 0.57,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 78,
+        "ficheros": {
+          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/BONUS-12-decisiones-de-apertura.md",
+          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/BONUS-12-decisiones-de-apertura.docx",
+          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/BONUS-12-decisiones-de-apertura.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Local con Obrador o Obrador Aparte",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-02",
+            "PS-03",
+            "PS-05",
+            "PA-03",
+            "PA-03b"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Inversión de apertura del caso central, obrador y tienda en el mismo local",
+              "165.800 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I15"
+            ],
+            [
+              "Inversión de apertura del obrador a puerta cerrada",
+              "70.585 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I17"
+            ],
+            [
+              "Inversión de apertura del local con venta sin obrador",
+              "57.948 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I18"
+            ],
+            [
+              "Superficie total del local del caso modelado",
+              "90",
+              "capacidad-obrador-y-local.xlsx!Parámetros!B14"
+            ],
+            [
+              "Metros de obrador",
+              "45",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D18"
+            ],
+            [
+              "Parte del local dedicada a obrador",
+              "50 %",
+              "capacidad-obrador-y-local.xlsx!Zonas y m2!D19"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Comprar el Abatidor o Esperar",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-13",
+            "PS-78"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Piezas al día de obrador que permite el abatidor",
+              "480",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M12"
+            ],
+            [
+              "Piezas al día que permite el conjunto de equipos",
+              "480",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "Holgura sobre el día normal",
+              "4",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B9"
+            ],
+            [
+              "Parte del surtido que pasa por el abatidor",
+              "40 %",
+              "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!L12"
+            ],
+            [
+              "Importe del abatidor en la calculadora de inversión",
+              "10.037 €",
+              "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!J11"
+            ],
+            [
+              "Piezas al día que permite el segundo equipo más justo",
+              "1.036",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B13"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Abrir con Veinte Referencias o con Cuarenta",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-43",
+            "PA-21"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Referencias con veredicto de mantener",
+              "27",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E39"
+            ],
+            [
+              "Referencias con veredicto de revisar precio",
+              "1",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E40"
+            ],
+            [
+              "Referencias con veredicto de retirar",
+              "2",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E41"
+            ],
+            [
+              "Margen ponderado de las referencias que se mantienen",
+              "1,03 €",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!F39"
+            ],
+            [
+              "Margen ponderado de las referencias a retirar",
+              "0,03 €",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!F41"
+            ],
+            [
+              "Margen de contribución medio por pieza de la carta",
+              "1,07 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F47"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Producto de Terceros al Arrancar: Cuándo Sí y Qué te Prohíbe Decir",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-17",
+            "PA-24",
+            "PS-06"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste total por unidad del croissant de mantequilla",
+              "1,06 €",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!K6"
+            ],
+            [
+              "Coste de mano de obra por unidad del croissant",
+              "0,82 €",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!I6"
+            ],
+            [
+              "Peso medio de la mano de obra sobre el coste total",
+              "63,3 %",
+              "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!R36"
+            ],
+            [
+              "Inversión de referencia de la variante de punto caliente",
+              "22.456 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!I39"
+            ],
+            [
+              "Inversión de referencia del caso base con obrador",
+              "66.980 €",
+              "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!G39"
+            ],
+            [
+              "Coste hora de obrador",
+              "17,94 €",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B16"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Cuánto Roscón Produzco el Primer Año",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-41",
+            "PS-35",
+            "PS-37",
+            "PS-46"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Demanda de piezas al día en la campaña grande",
+              "2.856",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D6"
+            ],
+            [
+              "Déficit diario de piezas en esa campaña",
+              "1.656",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H6"
+            ],
+            [
+              "Horas de obrador al día que harían falta",
+              "47,4",
+              "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M6"
+            ],
+            [
+              "Facturación incremental de la campaña sin IVA",
+              "31.500 €",
+              "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O6"
+            ],
+            [
+              "Coste del refuerzo de la campaña",
+              "1.603,74 €",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F6"
+            ],
+            [
+              "Tesorería inmovilizada en la campaña",
+              "5.457,48 €",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K6"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Aceptar el Primer Encargo de Comunión sin Histórico",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-53",
+            "PA-21",
+            "PA-15"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Días que dura la campaña de comuniones",
+              "20",
+              "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!E10"
+            ],
+            [
+              "Días con el dinero parado en esa campaña",
+              "55",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M10"
+            ],
+            [
+              "Coste del refuerzo de la campaña de comuniones",
+              "801,87 €",
+              "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F10"
+            ],
+            [
+              "Margen de contribución del canal de encargos",
+              "68 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G7"
+            ],
+            [
+              "Ventas anuales del canal de encargos",
+              "45.108 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!H7"
+            ],
+            [
+              "Piezas al día que permite el conjunto de equipos",
+              "480",
+              "capacidad-obrador-y-local.xlsx!Cuello de Botella!B7"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "El Primer Contrato con Otra Tienda: a Qué Precio y en Qué Momento Cambia tu Registro",
+          "tablas": 1,
+          "sector_usado": [
+            "PS-53",
+            "PA-02",
+            "PA-02b",
+            "PA-02c",
+            "PA-02d"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Peso del suministro a otras tiendas sobre las ventas",
+              "5 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B25"
+            ],
+            [
+              "Margen de contribución de ese canal",
+              "49 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G8"
+            ],
+            [
+              "Punto muerto mensual con todos los canales",
+              "23.337,56 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B18"
+            ],
+            [
+              "Punto muerto mensual sin ese canal",
+              "23.018,22 €",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B19"
+            ],
+            [
+              "Umbral de la primera vía del artículo 3",
+              "25 %",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B20"
+            ],
+            [
+              "Umbral de la segunda vía del artículo 3, en kilos a la semana",
+              "500",
+              "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B23"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Contratar Pastelero o Tirar de Ayudante",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-32",
+            "PA-33",
+            "PS-104",
+            "PS-105"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste de empresa al año del perfil especialista de obrador",
+              "27.469 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K8"
+            ],
+            [
+              "Coste de empresa al año del perfil de apoyo a media jornada",
+              "11.894 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K9"
+            ],
+            [
+              "Coste por hora del perfil especialista",
+              "15,43 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!L8"
+            ],
+            [
+              "Coste por hora del perfil de apoyo",
+              "13,36 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!L9"
+            ],
+            [
+              "Coste de personal al año de toda la plantilla",
+              "92.776 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E16"
+            ],
+            [
+              "Bruto anual del grupo más bajo del convenio",
+              "17.886,30 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C16"
+            ],
+            [
+              "Referencia anual del salario mínimo",
+              "17.094 €",
+              "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C17"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Abrir en Septiembre o en Febrero",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-04",
+            "PA-39"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Duración total del proyecto, en meses",
+              "8,5",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C38"
+            ],
+            [
+              "Hitos sin holgura en la ruta crítica",
+              "11",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C39"
+            ],
+            [
+              "Mes natural en el que abre el caso modelado",
+              "9",
+              "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C40"
+            ],
+            [
+              "Plazo crítico de entrega del equipamiento, en semanas",
+              "En línea con el CAPEX del libro 2",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52"
+            ],
+            [
+              "Margen de ese plazo hasta la apertura, en semanas",
+              "Cámara de fermentación controlada (roll-in)",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54"
+            ],
+            [
+              "Peso de la campaña grande sobre las ventas del año",
+              "9,8 %",
+              "estacionalidad-y-picos.xlsx!Peso sobre el Año!D24"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Empezar en Casa Dentro de la Legalidad: Qué Puedo Vender y Qué No",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-29",
+            "PA-29b",
+            "PA-29c",
+            "PA-29d",
+            "PS-01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Tope absoluto de kilos a la semana del artículo 13.9",
+              "100",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B13"
+            ],
+            [
+              "Metros útiles del ejemplo doméstico",
+              "12",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B6"
+            ],
+            [
+              "Kilos a la semana del ejemplo doméstico",
+              "60",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B7"
+            ],
+            [
+              "Kilos por metro cuadrado útil y semana",
+              "5,0",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B16"
+            ],
+            [
+              "Criterio propio de proporcionalidad de la casa",
+              "8",
+              "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B15"
+            ],
+            [
+              "Inversión de apertura de la variante de obrador en casa",
+              "14.966 €",
+              "calculadora-capex-pasteleria.xlsx!Variante del Formato!I16"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Envío a Domicilio: Qué Producto Viaja y Cuál No",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-01b",
+            "PA-27",
+            "PA-27b",
+            "PA-28",
+            "PA-12"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Referencias que necesitan vitrina refrigerada",
+              "15",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G38"
+            ],
+            [
+              "Referencias que van en vitrina de ambiente",
+              "15",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G39"
+            ],
+            [
+              "Referencias con plazo legal de veinticuatro horas",
+              "15",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G43"
+            ],
+            [
+              "Temperatura que manda en el producto relleno",
+              "4",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B28"
+            ],
+            [
+              "Margen de contribución del canal de envío y online",
+              "51 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G9"
+            ],
+            [
+              "Coste de servir del canal de envío y online",
+              "9 %",
+              "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!D9"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Qué Hago con lo que no se Vende Hoy",
+          "tablas": 1,
+          "sector_usado": [
+            "PA-20",
+            "PA-19",
+            "PA-31",
+            "PA-31b",
+            "PA-44"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Merma objetivo del caso modelado",
+              "5 %",
+              "carta-de-apertura-y-escandallo.xlsx!Parámetros!B34"
+            ],
+            [
+              "Food cost de materia de la carta",
+              "17,6 %",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F44"
+            ],
+            [
+              "Food cost servido, con merma y packaging",
+              "20,3 %",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F45"
+            ],
+            [
+              "Margen de contribución medio por pieza",
+              "1,07 €",
+              "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F47"
+            ],
+            [
+              "Referencias que van en vitrina refrigerada",
+              "15",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G38"
+            ],
+            [
+              "Referencias con plazo legal de veinticuatro horas",
+              "15",
+              "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G43"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

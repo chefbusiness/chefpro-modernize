@@ -2,7 +2,7 @@
 title: "IA para Pastelería Profesional: Usos Reales en el Obrador"
 description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Plan AI Chef Miembro: 10.000 créditos por 10 €/mes."
 pubDate: 2025-02-21
-modDate: 2026-08-31
+modDate: 2026-09-10
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/AI-Chef-Pro-un-ChatGPT-para-la-Pasteleria-Profesional-Usos-y-Aplicaciones.jpg
 imageAlt: "AI Chef Pro un ChatGPT para la Pastelería Profesional: Usos y Aplicaciones"
@@ -34,6 +34,8 @@ Si tienes un obrador, sabes que ningún algoritmo te va a laminar un croissant, 
 
 
 Un agente especializado no es un ChatGPT que sabe de todo y de nada. Es un cuñado que conoce las harinas, los puntos de gelificación, las fichas de alérgenos y los márgenes con IVA. Y sobre todo, no te obliga a reescribir cada prompt como si estuvieras enseñándole a un becario. Aquí te cuento, chef a chef, cómo la IA está entrando en los obradores sin postureo y con resultados.
+
+<p>La IA ayuda a decidir mejor en un obrador que ya funciona. Todo lo que hay que decidir ANTES de que exista —el local, las licencias, la maquinaria y el plan financiero hasta el punto de equilibrio— es el contenido de la guía <a href="https://aichef.pro/guia-pasteleria-obrador">Cómo Montar una Pastelería</a>.</p>
 
 ## Qué hace (y qué no) la IA en un obrador profesional
 
@@ -136,7 +138,7 @@ Un agente especializado no es más inteligente que un LLM generalista: es más e
 
 
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-un-chatgpt-para-la-pasteleria-profesional-usos-y-aplicaciones" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Cómo Montar una Pastelería</h3><p class="mt-2 text-muted-foreground">Obrador, licencias y números: 20 capítulos, 8 Excel y 2 bonus para abrir con criterio.</p><a href="/guia-pasteleria-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-un-chatgpt-para-la-pasteleria-profesional-usos-y-aplicaciones" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Cómo Montar una Pastelería por €65</a></aside>
 
 ## Planes y cómo empezar
 

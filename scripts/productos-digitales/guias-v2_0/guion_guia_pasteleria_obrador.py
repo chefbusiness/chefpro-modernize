@@ -2078,8 +2078,7 @@ CAPITULOS += [
                 'cols': [('Nº', 'A', 'num'), ('Proveedor', 'B', 'txt'),
                          ('Qué te vende', 'C', 'txt'), ('Enlace', 'D', 'txt'),
                          ('Pedido mínimo (€)', 'H', 'eur'),
-                         ('Plazo (días)', 'I', 'num'),
-                         ('Por qué está en la lista', 'L', 'txt')],
+                         ('Plazo (días)', 'I', 'num')],
                 'filas': (7, 15),
                 'nota': 'Los pedidos mínimos, los plazos y las condiciones de pago de esta tabla '
                         'son SUPUESTOS de partida para que puedas presupuestar: se sustituyen '
@@ -4763,6 +4762,11 @@ BONUS += [
 # variable local de este guion).
 # --------------------------------------------------------------------------
 _ERRATAS_OK = (
+    # 2026-09-10, falsos positivos del detector en la primera pasada (todas correctas en contexto):
+    'harían', 'harian', 'llévala', 'llevala', 'actualizará', 'actualizara', 'apuntado', 'cometido',
+    'contratarlo', 'digan', 'librado', 'pinte', 'salda', 'tales', 'tardará', 'tardara', 'telefonía',
+    'telefonia', 'trasposición', 'trasposicion', 'trátala', 'tratala', 'cámbialas', 'cambialas',
+    'compraré', 'comprare', 'confíe', 'confie', 'rodar', 'rodando',
     # Vocabulario del oficio de pastelería y panadería
     'obrador', 'obradores', 'obrar', 'abatidor', 'abatidores', 'abatir',
     'laminadora', 'laminadoras', 'laminado', 'amasadora', 'amasadoras',
