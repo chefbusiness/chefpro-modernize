@@ -1,0 +1,542 @@
+{
+ "Ventas anuales sin IVA en crucero": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B6",
+  "valor": 322197.87,
+  "tipo": "entrada"
+ },
+ "Piezas al día en velocidad de crucero": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B7",
+  "valor": 476,
+  "tipo": "entrada"
+ },
+ "Días de apertura al año": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B8",
+  "valor": 300,
+  "tipo": "entrada"
+ },
+ "Capacidad del obrador en jornada normal": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B9",
+  "valor": 480,
+  "tipo": "entrada"
+ },
+ "Horas de obrador al día en jornada normal": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B10",
+  "valor": 8,
+  "tipo": "entrada"
+ },
+ "Piezas por hora de reloj del equipo que limita": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B11",
+  "valor": 60.0,
+  "tipo": "salida"
+ },
+ "Excedente diario sobre la velocidad de crucero": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B12",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Bruto mensual del convenio del refuerzo": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B17",
+  "valor": 1192.42,
+  "tipo": "parametro"
+ },
+ "Pagas del convenio al año": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B18",
+  "valor": 15,
+  "tipo": "parametro"
+ },
+ "Seguridad Social a cargo de la empresa": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B19",
+  "valor": 0.33,
+  "tipo": "parametro"
+ },
+ "Coste por hora pagada del refuerzo (grupo 5)": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B21",
+  "valor": 13.364482584269666,
+  "tipo": "salida"
+ },
+ "Tipo de interés anual del circulante": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B24",
+  "valor": 0.062,
+  "tipo": "parametro"
+ },
+ "IVA de pastelería": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B25",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA del pan": {
+  "ref": "estacionalidad-y-picos.xlsx!Parámetros!B26",
+  "valor": 0.04,
+  "tipo": "parametro"
+ },
+ "Facturación de las seis campañas sin IVA": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N13",
+  "valor": 42371.27272727273,
+  "tipo": "salida"
+ },
+ "Facturación incremental de las seis campañas sin IVA": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O13",
+  "valor": 41162.72727272727,
+  "tipo": "salida"
+ },
+ "Unidades de producto estrella de las seis campañas": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!M13",
+  "valor": 7164.0,
+  "tipo": "salida"
+ },
+ "Días de campaña al año": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!E13",
+  "valor": 42.0,
+  "tipo": "salida"
+ },
+ "Suma de los coeficientes de estacionalidad": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!B18",
+  "valor": 12.000000000000002,
+  "tipo": "salida"
+ },
+ "Ventas del mes más alto (enero)": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!C6",
+  "valor": 31682.79054999999,
+  "tipo": "salida"
+ },
+ "Ventas del mes más bajo (agosto)": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!C13",
+  "valor": 18257.879299999997,
+  "tipo": "salida"
+ },
+ "Peso de enero sobre el año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D6",
+  "valor": 0.0983333333333333,
+  "tipo": "salida"
+ },
+ "Peso de agosto sobre el año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D13",
+  "valor": 0.05666666666666666,
+  "tipo": "salida"
+ },
+ "Peso de las seis campañas sobre el año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D30",
+  "valor": 0.131506992045828,
+  "tipo": "salida"
+ },
+ "Peso incremental de las seis campañas sobre el año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!F30",
+  "valor": 0.12775605025795878,
+  "tipo": "salida"
+ },
+ "Campañas que NO aguanta el obrador": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N13",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Demanda de piezas de las seis campañas": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!E13",
+  "valor": 47695.200000000004,
+  "tipo": "salida"
+ },
+ "Déficit de piezas de las seis campañas": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!I13",
+  "valor": 16495.2,
+  "tipo": "salida"
+ },
+ "Piezas adelantables en las seis campañas": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!K13",
+  "valor": 180.0,
+  "tipo": "salida"
+ },
+ "Déficit tras adelantar de las seis campañas": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!L13",
+  "valor": 16315.2,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de todo el año": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F13",
+  "valor": 3795.513053932585,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en materia de campaña": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K13",
+  "valor": 7281.6672,
+  "tipo": "salida"
+ },
+ "Coste financiero del inmovilizado de campaña": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!N13",
+  "valor": 55.112576613698636,
+  "tipo": "salida"
+ },
+ "Resultado incremental de las seis campañas": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q13",
+  "valor": 30293.196642180985,
+  "tipo": "salida"
+ },
+ "Campañas con refuerzo corto": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!H13",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Facturación sin IVA de la campaña de Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N6",
+  "valor": 31499.999999999996,
+  "tipo": "salida"
+ },
+ "Facturación incremental sin IVA de la campaña de Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O6",
+  "valor": 31499.999999999996,
+  "tipo": "salida"
+ },
+ "Peso de Reyes sobre las ventas del año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D24",
+  "valor": 0.09776600944009964,
+  "tipo": "salida"
+ },
+ "Cuántas veces un día normal factura un día de Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I24",
+  "valor": 5.865960566405978,
+  "tipo": "salida"
+ },
+ "Demanda de piezas al día en Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D6",
+  "valor": 2856.0,
+  "tipo": "salida"
+ },
+ "Déficit diario de piezas en Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H6",
+  "valor": 1656.0,
+  "tipo": "salida"
+ },
+ "Horas de obrador al día que harían falta en Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M6",
+  "valor": 47.4,
+  "tipo": "salida"
+ },
+ "¿Aguanta el obrador la campaña de Reyes?": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N6",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F6",
+  "valor": 1603.73791011236,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en la campaña de Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K6",
+  "valor": 5457.4800000000005,
+  "tipo": "salida"
+ },
+ "Días con el dinero parado en Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M6",
+  "valor": 47.0,
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campaña de Reyes": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q6",
+  "valor": 24395.21196188764,
+  "tipo": "salida"
+ },
+ "Facturación sin IVA de la campaña de San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N7",
+  "valor": 992.7272727272726,
+  "tipo": "salida"
+ },
+ "Facturación incremental sin IVA de la campaña de San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O7",
+  "valor": 630.0,
+  "tipo": "salida"
+ },
+ "Peso de San Valentín sobre las ventas del año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D25",
+  "valor": 0.0030811106005364736,
+  "tipo": "salida"
+ },
+ "Cuántas veces un día normal factura un día de San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I25",
+  "valor": 0.46216659008047106,
+  "tipo": "salida"
+ },
+ "Demanda de piezas al día en San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D7",
+  "valor": 856.8000000000001,
+  "tipo": "salida"
+ },
+ "Déficit diario de piezas en San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H7",
+  "valor": 256.80000000000007,
+  "tipo": "salida"
+ },
+ "Horas de obrador al día que harían falta en San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M7",
+  "valor": 14.113333333333335,
+  "tipo": "salida"
+ },
+ "¿Aguanta el obrador la campaña de San Valentín?": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N7",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F7",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en la campaña de San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K7",
+  "valor": 102.18,
+  "tipo": "salida"
+ },
+ "Días con el dinero parado en San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M7",
+  "valor": 23.0,
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campaña de San Valentín": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q7",
+  "valor": 564.7557981369863,
+  "tipo": "salida"
+ },
+ "Facturación sin IVA de la campaña de Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N8",
+  "valor": 1256.7272727272725,
+  "tipo": "salida"
+ },
+ "Facturación incremental sin IVA de la campaña de Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O8",
+  "valor": 1047.2727272727273,
+  "tipo": "salida"
+ },
+ "Peso de Día del Padre y de la Madre sobre las ventas del año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D26",
+  "valor": 0.0039004828701296895,
+  "tipo": "salida"
+ },
+ "Cuántas veces un día normal factura un día de Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I26",
+  "valor": 0.29253621525972673,
+  "tipo": "salida"
+ },
+ "Demanda de piezas al día en Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D8",
+  "valor": 904.4,
+  "tipo": "salida"
+ },
+ "Déficit diario de piezas en Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H8",
+  "valor": 304.4,
+  "tipo": "salida"
+ },
+ "Horas de obrador al día que harían falta en Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M8",
+  "valor": 14.99,
+  "tipo": "salida"
+ },
+ "¿Aguanta el obrador la campaña de Día del Padre y de la Madre?": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N8",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F8",
+  "valor": 213.83172134831466,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en la campaña de Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K8",
+  "valor": 442.4832,
+  "tipo": "salida"
+ },
+ "Días con el dinero parado en Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M8",
+  "valor": 25.0,
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campaña de Día del Padre y de la Madre": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q8",
+  "valor": 462.8259676778371,
+  "tipo": "salida"
+ },
+ "Facturación sin IVA de la campaña de Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N9",
+  "valor": 4189.090909090909,
+  "tipo": "salida"
+ },
+ "Facturación incremental sin IVA de la campaña de Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O9",
+  "valor": 4189.090909090909,
+  "tipo": "salida"
+ },
+ "Peso de Semana Santa sobre las ventas del año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D27",
+  "valor": 0.013001609567098966,
+  "tipo": "salida"
+ },
+ "Cuántas veces un día normal factura un día de Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I27",
+  "valor": 0.48756035876621123,
+  "tipo": "salida"
+ },
+ "Demanda de piezas al día en Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D9",
+  "valor": 1142.3999999999999,
+  "tipo": "salida"
+ },
+ "Déficit diario de piezas en Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H9",
+  "valor": 302.39999999999986,
+  "tipo": "salida"
+ },
+ "Horas de obrador al día que harían falta en Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M9",
+  "valor": 18.956666666666663,
+  "tipo": "salida"
+ },
+ "¿Aguanta el obrador la campaña de Semana Santa?": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N9",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F9",
+  "valor": 534.5793033707866,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en la campaña de Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K9",
+  "valor": 499.392,
+  "tipo": "salida"
+ },
+ "Días con el dinero parado en Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M9",
+  "valor": 36.0,
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campaña de Semana Santa": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q9",
+  "valor": 3152.0657894351907,
+  "tipo": "salida"
+ },
+ "Facturación sin IVA de la campaña de Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N10",
+  "valor": 2163.6363636363635,
+  "tipo": "salida"
+ },
+ "Facturación incremental sin IVA de la campaña de Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O10",
+  "valor": 1527.2727272727273,
+  "tipo": "salida"
+ },
+ "Peso de Comuniones sobre las ventas del año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D28",
+  "valor": 0.006715241052451289,
+  "tipo": "salida"
+ },
+ "Cuántas veces un día normal factura un día de Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I28",
+  "valor": 0.10072861578676934,
+  "tipo": "salida"
+ },
+ "Demanda de piezas al día en Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D10",
+  "valor": 761.6,
+  "tipo": "salida"
+ },
+ "Déficit diario de piezas en Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H10",
+  "valor": 161.60000000000002,
+  "tipo": "salida"
+ },
+ "Horas de obrador al día que harían falta en Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M10",
+  "valor": 12.693333333333333,
+  "tipo": "salida"
+ },
+ "¿Aguanta el obrador la campaña de Comuniones?": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N10",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F10",
+  "valor": 801.86895505618,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en la campaña de Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K10",
+  "valor": 515.712,
+  "tipo": "salida"
+ },
+ "Días con el dinero parado en Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M10",
+  "valor": 55.0,
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campaña de Comuniones": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q10",
+  "valor": 356.5537505179172,
+  "tipo": "salida"
+ },
+ "Facturación sin IVA de la campaña de Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N11",
+  "valor": 2269.090909090909,
+  "tipo": "salida"
+ },
+ "Facturación incremental sin IVA de la campaña de Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O11",
+  "valor": 2269.090909090909,
+  "tipo": "salida"
+ },
+ "Peso de Todos los Santos sobre las ventas del año": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D29",
+  "valor": 0.00704253851551194,
+  "tipo": "salida"
+ },
+ "Cuántas veces un día normal factura un día de Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I29",
+  "valor": 0.704253851551194,
+  "tipo": "salida"
+ },
+ "Demanda de piezas al día en Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!D11",
+  "valor": 1237.6000000000001,
+  "tipo": "salida"
+ },
+ "Déficit diario de piezas en Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!H11",
+  "valor": 277.60000000000014,
+  "tipo": "salida"
+ },
+ "Horas de obrador al día que harían falta en Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!M11",
+  "valor": 20.404444444444444,
+  "tipo": "salida"
+ },
+ "¿Aguanta el obrador la campaña de Todos los Santos?": {
+  "ref": "estacionalidad-y-picos.xlsx!Capacidad vs Demanda del Pico!N11",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!F11",
+  "valor": 641.495164044944,
+  "tipo": "salida"
+ },
+ "Tesorería inmovilizada en la campaña de Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K11",
+  "valor": 264.42,
+  "tipo": "salida"
+ },
+ "Días con el dinero parado en Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!M11",
+  "valor": 31.0,
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campaña de Todos los Santos": {
+  "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q11",
+  "valor": 1361.783374525417,
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "estacionalidad-y-picos.xlsx!Instrucciones!A1",
+  "valor": "Frontera R5: el BONUS-02-calendario-anual-tareas.xlsx del Kit de Tareas Pastelería pone las fechas; este libro pone los euros y el «si aguantas». La capacidad del obrador (Parámetros!B9) es una celda VERDE con valor por defecto declarado como supuesto (D21): el dato bueno se copia a mano de la hoja «Cuello de Botella» del libro 1 -480 piezas/día, el abatidor de 4 bandejas-, sin fórmula entre libros.",
+  "tipo": "nota"
+ }
+}

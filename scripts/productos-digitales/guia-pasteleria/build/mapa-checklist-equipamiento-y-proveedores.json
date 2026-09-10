@@ -1,0 +1,247 @@
+{
+ "Tipo de IVA general del equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C7",
+  "valor": 0.21,
+  "tipo": "parametro"
+ },
+ "Horquilla del precio de referencia": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C8",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "CAPEX de equipamiento copiado del libro 2 (sin IVA)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C9",
+  "valor": 66980.34,
+  "tipo": "entrada"
+ },
+ "Umbral de desviación admitida": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C10",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Semanas que faltan hasta la apertura prevista": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C11",
+  "valor": 20,
+  "tipo": "entrada"
+ },
+ "Margen de seguridad entre la entrega y la apertura (semanas)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!C12",
+  "valor": 2,
+  "tipo": "entrada"
+ },
+ "Líneas del checklist de equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I40",
+  "valor": 22.0,
+  "tipo": "salida"
+ },
+ "Total de referencia sin IVA de las líneas críticas": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I41",
+  "valor": 66980.33834710743,
+  "tipo": "salida"
+ },
+ "Total de referencia sin IVA de toda la dotación": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I42",
+  "valor": 86500.73834710744,
+  "tipo": "salida"
+ },
+ "Total real negociado sin IVA de las líneas críticas": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I43",
+  "valor": 66980.34,
+  "tipo": "salida"
+ },
+ "Total real negociado sin IVA de toda la dotación": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I44",
+  "valor": 86500.73999999999,
+  "tipo": "salida"
+ },
+ "Diferencia entre lo negociado y la referencia": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I45",
+  "valor": 0.001652892548008822,
+  "tipo": "salida"
+ },
+ "IVA soportado sobre el equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I46",
+  "valor": 18165.1554,
+  "tipo": "salida"
+ },
+ "Desembolso real del equipamiento con IVA": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I47",
+  "valor": 104665.8954,
+  "tipo": "salida"
+ },
+ "Desviación contra el CAPEX del libro 2 (euros)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I49",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Desviación contra el CAPEX del libro 2 (%)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I50",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto de la desviación de equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52",
+  "valor": "En línea con el CAPEX del libro 2",
+  "tipo": "salida"
+ },
+ "Plazo crítico de entrega (semanas)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I53",
+  "valor": 9.0,
+  "tipo": "salida"
+ },
+ "Línea que marca el plazo crítico": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54",
+  "valor": "Cámara de fermentación controlada (roll-in)",
+  "tipo": "salida"
+ },
+ "Margen del plazo crítico (semanas)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I55",
+  "valor": 9.0,
+  "tipo": "salida"
+ },
+ "Veredicto del plazo de entrega": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I56",
+  "valor": "Llegas con margen, pero pide primero el de mayor plazo",
+  "tipo": "salida"
+ },
+ "Líneas cuyo plazo se pasa de la apertura": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I57",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Variante de formato elegida": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C6",
+  "valor": "Local con venta (caso base)",
+  "tipo": "entrada"
+ },
+ "Líneas de equipamiento que pide la variante elegida": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C7",
+  "valor": 19.0,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante elegida": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C8",
+  "valor": 66980.33834710743,
+  "tipo": "salida"
+ },
+ "Inversión de referencia del caso base (local con venta)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C9",
+  "valor": 66980.33834710743,
+  "tipo": "salida"
+ },
+ "Diferencia de equipamiento contra el caso base": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C10",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Líneas del caso base que sobran en la variante elegida": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C11",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Líneas que faltan respecto del caso base": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!C12",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores verificados publicados": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F16",
+  "valor": 9.0,
+  "tipo": "salida"
+ },
+ "Proveedores con los que ya trabajas": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F17",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Pedido mínimo acumulado de los nueve proveedores": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F18",
+  "valor": 2700.0,
+  "tipo": "salida"
+ },
+ "Plazo medio de entrega de los proveedores (días)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Proveedores!F19",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Líneas dentro del alcance del checklist": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!B9",
+  "valor": 22.0,
+  "tipo": "salida"
+ },
+ "Avance del checklist de equipamiento (%)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!B15",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Líneas críticas de equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!B18",
+  "valor": 19.0,
+  "tipo": "salida"
+ },
+ "Avance de lo crítico (%)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!B20",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto de si puedes abrir con lo instalado": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!B21",
+  "valor": "No: faltan 19 líneas críticas",
+  "tipo": "salida"
+ },
+ "Líneas de equipamiento sin proveedor asignado": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!B45",
+  "valor": 13.0,
+  "tipo": "salida"
+ },
+ "Total de equipamiento por bloques (real negociado)": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!D27",
+  "valor": 86500.73999999999,
+  "tipo": "salida"
+ },
+ "Inversión real negociada en «Equipamiento de obrador»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!D25",
+  "valor": 73696.23999999999,
+  "tipo": "salida"
+ },
+ "Inversión real negociada en «Tienda y vitrina»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Contador!D26",
+  "valor": 12804.5,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Obrador en casa»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!E39",
+  "valor": 2200.0,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Obrador a puerta cerrada»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!F39",
+  "valor": 53519.04,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Local con venta (caso base)»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!G39",
+  "valor": 66980.33834710743,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Cafetería-pastelería»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!H39",
+  "valor": 66980.33834710743,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Punto caliente»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!I39",
+  "valor": 22456.1,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Obrador B2B para hostelería»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!J39",
+  "valor": 67596.23834710743,
+  "tipo": "salida"
+ },
+ "Inversión de referencia de la variante «Sin salida de humos»": {
+  "ref": "checklist-equipamiento-y-proveedores.xlsx!Variante del Formato!K39",
+  "valor": 60480.33834710744,
+  "tipo": "salida"
+ }
+}

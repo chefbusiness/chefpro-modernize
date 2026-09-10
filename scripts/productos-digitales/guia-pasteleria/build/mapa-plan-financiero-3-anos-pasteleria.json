@@ -1,0 +1,467 @@
+{
+ "Tickets al día en velocidad de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B6",
+  "valor": 183,
+  "tipo": "entrada"
+ },
+ "Piezas por ticket": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B7",
+  "valor": 2.6,
+  "tipo": "entrada"
+ },
+ "Ticket medio con IVA": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B9",
+  "valor": 6.38482,
+  "tipo": "salida"
+ },
+ "Ticket medio sin IVA": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B10",
+  "valor": 5.868813709905911,
+  "tipo": "salida"
+ },
+ "Días de apertura al año": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B11",
+  "valor": 300,
+  "tipo": "entrada"
+ },
+ "Actividad del año 1 sobre la de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B12",
+  "valor": 0.8816511800000001,
+  "tipo": "salida"
+ },
+ "IVA medio ponderado de la carta": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B20",
+  "valor": 0.08792344,
+  "tipo": "salida"
+ },
+ "Food cost objetivo del plan (regla única)": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B22",
+  "valor": 0.32,
+  "tipo": "parametro"
+ },
+ "Margen bruto objetivo": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B23",
+  "valor": 0.6799999999999999,
+  "tipo": "salida"
+ },
+ "Seguridad Social a cargo de la empresa": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B25",
+  "valor": 0.33,
+  "tipo": "parametro"
+ },
+ "Pagas del convenio": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B26",
+  "valor": 15,
+  "tipo": "parametro"
+ },
+ "Alquiler mensual del local": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B30",
+  "valor": 1200,
+  "tipo": "entrada"
+ },
+ "Retribución mensual del propietario": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B33",
+  "valor": 2400,
+  "tipo": "entrada"
+ },
+ "Recursos propios aportados": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B36",
+  "valor": 201826.48,
+  "tipo": "entrada"
+ },
+ "Principal del préstamo": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B37",
+  "valor": 60000,
+  "tipo": "entrada"
+ },
+ "Tipo de interés nominal anual": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B38",
+  "valor": 0.062,
+  "tipo": "entrada"
+ },
+ "Meses de fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B41",
+  "valor": 4,
+  "tipo": "entrada"
+ },
+ "Margen neto de referencia, suelo": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B61",
+  "valor": 0.08,
+  "tipo": "parametro"
+ },
+ "Margen neto de referencia, techo": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B62",
+  "valor": 0.12,
+  "tipo": "parametro"
+ },
+ "Obra civil e instalaciones": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B6",
+  "valor": 81000,
+  "tipo": "entrada"
+ },
+ "Equipamiento de obrador": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B7",
+  "valor": 54296.24,
+  "tipo": "entrada"
+ },
+ "Equipamiento de tienda y vitrina": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B8",
+  "valor": 12684.1,
+  "tipo": "entrada"
+ },
+ "Subtotal de inversión sin el fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B17",
+  "valor": 165800.34,
+  "tipo": "salida"
+ },
+ "Fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B18",
+  "valor": 62115.26182026436,
+  "tipo": "salida"
+ },
+ "Inversión total": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B19",
+  "valor": 227915.60182026436,
+  "tipo": "salida"
+ },
+ "CAPEX sin el fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B20",
+  "valor": 165800.34,
+  "tipo": "salida"
+ },
+ "IVA soportado sobre la inversión": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B21",
+  "valor": 33910.8714,
+  "tipo": "salida"
+ },
+ "Necesidad total de caja al arranque": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B22",
+  "valor": 261826.47322026436,
+  "tipo": "salida"
+ },
+ "Inmovilizado amortizable": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B26",
+  "valor": 160900.34,
+  "tipo": "salida"
+ },
+ "Amortización anual del inmovilizado": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Inversión Inicial!B27",
+  "valor": 16090.034,
+  "tipo": "salida"
+ },
+ "Ingresos del año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B11",
+  "valor": 284066.134636376,
+  "tipo": "salida"
+ },
+ "Ingresos del año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C11",
+  "valor": 322197.87267383456,
+  "tipo": "salida"
+ },
+ "Ingresos del año 3": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!D11",
+  "valor": 335085.7875807879,
+  "tipo": "salida"
+ },
+ "Coste de ventas del año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C15",
+  "valor": 103103.31925562707,
+  "tipo": "salida"
+ },
+ "Margen bruto del año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C17",
+  "valor": 219094.5534182075,
+  "tipo": "salida"
+ },
+ "Coste de personal anual": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C19",
+  "valor": 92776.0785,
+  "tipo": "salida"
+ },
+ "Retribución anual del propietario": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C20",
+  "valor": 28800.0,
+  "tipo": "salida"
+ },
+ "Total de costes fijos del año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B33",
+  "valor": 186757.21731869126,
+  "tipo": "salida"
+ },
+ "Total de costes fijos del año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C33",
+  "valor": 186345.78546079306,
+  "tipo": "salida"
+ },
+ "Resultado antes de impuestos del año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B36",
+  "valor": 6407.754234044405,
+  "tipo": "salida"
+ },
+ "Resultado neto del año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B43",
+  "valor": 5446.591098937744,
+  "tipo": "salida"
+ },
+ "Resultado neto del año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C43",
+  "valor": 27836.452763802277,
+  "tipo": "salida"
+ },
+ "Resultado neto del año 3": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!D43",
+  "valor": 31516.17240786762,
+  "tipo": "salida"
+ },
+ "Margen neto del año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C50",
+  "valor": 0.08639552003492434,
+  "tipo": "salida"
+ },
+ "Margen neto del año de crucero dentro de la banda 8-12 %": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C51",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Coste de personal sobre ventas en el año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!C48",
+  "valor": 0.287947520354731,
+  "tipo": "salida"
+ },
+ "Margen de contribución por ticket": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C11",
+  "valor": 3.9907933227360193,
+  "tipo": "salida"
+ },
+ "Tickets al día para el equilibrio contable": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C16",
+  "valor": 155.6464010962091,
+  "tipo": "salida"
+ },
+ "Ingresos mensuales de equilibrio contable": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C18",
+  "valor": 22836.49331627366,
+  "tipo": "salida"
+ },
+ "Tickets al día para el equilibrio de caja": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C22",
+  "valor": 148.87177651916724,
+  "tipo": "salida"
+ },
+ "Holgura sobre el equilibrio de caja en el año de crucero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Punto de Equilibrio!C26",
+  "valor": 0.2292457595307782,
+  "tipo": "salida"
+ },
+ "Ingresos del escenario pesimista": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!B9",
+  "valor": 211120.0,
+  "tipo": "salida"
+ },
+ "Resultado neto del escenario pesimista": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!B16",
+  "valor": -42784.18546079306,
+  "tipo": "salida"
+ },
+ "Resultado neto del escenario optimista": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!D16",
+  "valor": 97579.16235832589,
+  "tipo": "salida"
+ },
+ "Coste de personal sobre ventas en el escenario pesimista": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Escenarios!B20",
+  "valor": 0.4394471319628647,
+  "tipo": "salida"
+ },
+ "Coste anual del Jefe Pastelero": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!I6",
+  "valor": 28486.4055,
+  "tipo": "salida"
+ },
+ "Coste mensual total de la plantilla": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!H11",
+  "valor": 6185.071900000001,
+  "tipo": "salida"
+ },
+ "Coste anual total de la plantilla": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!I11",
+  "valor": 92776.0785,
+  "tipo": "salida"
+ },
+ "Jornadas completas equivalentes": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!C11",
+  "valor": 3.5,
+  "tipo": "salida"
+ },
+ "Horas contratadas a la semana": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!J11",
+  "valor": 140.0,
+  "tipo": "salida"
+ },
+ "Bruto anual del grupo más bajo del convenio": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!B23",
+  "valor": 17886.300000000003,
+  "tipo": "salida"
+ },
+ "Veredicto del contraste con el SMI": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Personal!B25",
+  "valor": "No: en pastelería manda el convenio",
+  "tipo": "salida"
+ },
+ "Saldo de caja del mes 12": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!M23",
+  "valor": 96748.14803126662,
+  "tipo": "salida"
+ },
+ "Saldo mínimo de caja del año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B24",
+  "valor": 59622.06849082164,
+  "tipo": "salida"
+ },
+ "Mes en el que la caja toca fondo": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B25",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Flujo de caja libre del año 1 antes de la deuda": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B28",
+  "valor": 25207.729917629018,
+  "tipo": "salida"
+ },
+ "Inversión a recuperar": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B31",
+  "valor": 227915.60182026436,
+  "tipo": "salida"
+ },
+ "Payback del proyecto en años": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B32",
+  "valor": "Más de 3 años",
+  "tipo": "salida"
+ },
+ "Total del origen de fondos": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B9",
+  "valor": 261826.48,
+  "tipo": "salida"
+ },
+ "Diferencia entre origen y usos": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B12",
+  "valor": 0.00677973564597778,
+  "tipo": "salida"
+ },
+ "Cuota mensual del préstamo": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B22",
+  "valor": 936.5724169135384,
+  "tipo": "salida"
+ },
+ "Intereses del año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B116",
+  "valor": 3671.104818691272,
+  "tipo": "salida"
+ },
+ "Principal devuelto en el año 1": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!C116",
+  "valor": 3808.3296827899585,
+  "tipo": "salida"
+ },
+ "Intereses del año 2": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B117",
+  "valor": 3259.6729607930874,
+  "tipo": "salida"
+ },
+ "Capital pendiente al vencimiento": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B111",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El cuadro de amortización cierra": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B112",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "DSCR del año 2": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!F117",
+  "valor": 4.198479376542029,
+  "tipo": "salida"
+ },
+ "DSCR mínimo de todo el cuadro": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B123",
+  "valor": 3.370272165982183,
+  "tipo": "salida"
+ },
+ "Lectura del DSCR": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B124",
+  "valor": "En objetivo",
+  "tipo": "salida"
+ },
+ "Margen de contribución del mostrador": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G6",
+  "valor": 0.68,
+  "tipo": "salida"
+ },
+ "Margen de contribución del canal B2B": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!G8",
+  "valor": 0.49,
+  "tipo": "salida"
+ },
+ "Ventas anuales del mostrador": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!H6",
+  "valor": 251314.34068559096,
+  "tipo": "salida"
+ },
+ "Margen de contribución medio ponderado": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B15",
+  "valor": 0.6654000000000001,
+  "tipo": "salida"
+ },
+ "Lo que se llevan servir, cobrar y las comisiones": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B17",
+  "valor": 0.014599999999999835,
+  "tipo": "salida"
+ },
+ "Punto muerto mensual con todos los canales": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B18",
+  "valor": 23337.564555254114,
+  "tipo": "salida"
+ },
+ "Punto muerto mensual sin el canal B2B": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B19",
+  "valor": 23018.216074758595,
+  "tipo": "salida"
+ },
+ "Diferencia del punto muerto al quitar el B2B": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B20",
+  "valor": -319.34848049551874,
+  "tipo": "salida"
+ },
+ "Canal que sostiene el negocio": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B21",
+  "valor": "Mostrador",
+  "tipo": "salida"
+ },
+ "Aporte del canal que sostiene el negocio": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B22",
+  "valor": 0.7971145175834083,
+  "tipo": "salida"
+ },
+ "Peso del B2B sobre las ventas": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B25",
+  "valor": 0.05,
+  "tipo": "salida"
+ },
+ "Lectura del art. 3 por la vía del porcentaje": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B27",
+  "valor": "Marginal por la vía a): sigue la comprobación en el libro de licencias",
+  "tipo": "salida"
+ },
+ "Días medios de cobro ponderados": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Canales y Punto Muerto!B29",
+  "valor": 2.25,
+  "tipo": "salida"
+ },
+ "_meta": {
+  "ref": "plan-financiero-3-anos-pasteleria.xlsx!Instrucciones!A1",
+  "valor": "Libro HÍBRIDO: molde de planes (motor 2.2) más la hoja propia «Canales y Punto Muerto», absorbida por la decisión D3. La versión que manda es la de la familia de guías (1.0 · septiembre 2026). El AÑO 2 del P&L es el año de CRUCERO y reproduce `datos_ejemplo.cuenta_resultados_crucero()`; el año 1 lleva la rampa de arranque. Los intereses del año 1 se calculan con el cuadro francés mensual y difieren en unos pocos euros de la aproximación lineal de `datos_ejemplo.intereses_anio_1()`: manda este libro. Cita SIEMPRE la columna del año que quieras nombrar.",
+  "tipo": "nota"
+ }
+}

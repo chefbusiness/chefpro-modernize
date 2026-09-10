@@ -1,0 +1,392 @@
+{
+ "Superficie del local": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B6",
+  "tipo": "entrada",
+  "valor": 90
+ },
+ "Obra civil, escenario bajo (€/m2)": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B7",
+  "tipo": "entrada",
+  "valor": 600
+ },
+ "Obra civil, escenario medio (€/m2)": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B8",
+  "tipo": "entrada",
+  "valor": 900
+ },
+ "Obra civil, escenario alto (€/m2)": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B9",
+  "tipo": "entrada",
+  "valor": 1200
+ },
+ "Escenario de obra elegido": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B10",
+  "tipo": "entrada",
+  "valor": "Medio"
+ },
+ "Precio por m2 aplicado": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B11",
+  "tipo": "salida",
+  "valor": 900.0
+ },
+ "Obra civil calculada": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B12",
+  "tipo": "salida",
+  "valor": 81000.0
+ },
+ "IVA general": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B13",
+  "tipo": "parametro",
+  "valor": 0.21
+ },
+ "IVA de la pastelería": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B14",
+  "tipo": "parametro",
+  "valor": 0.1
+ },
+ "Meses de colchón de tesorería": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B16",
+  "tipo": "entrada",
+  "valor": 4
+ },
+ "Gastos fijos mensuales estimados": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B18",
+  "tipo": "entrada",
+  "valor": 15562.21
+ },
+ "Fondo de maniobra calculado": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B19",
+  "tipo": "salida",
+  "valor": 62248.84
+ },
+ "Renta mensual del local": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B20",
+  "tipo": "entrada",
+  "valor": 1200
+ },
+ "Horizonte de comparación (años)": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B22",
+  "tipo": "entrada",
+  "valor": 5
+ },
+ "Financiación bancaria disponible": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Parámetros!B25",
+  "tipo": "entrada",
+  "valor": 60000
+ },
+ "Base sin IVA del bloque: Obra civil e instalaciones": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K39",
+  "tipo": "salida",
+  "valor": 81000.0
+ },
+ "IVA soportado del bloque: Obra civil e instalaciones": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L39",
+  "tipo": "salida",
+  "valor": 17010.0
+ },
+ "Base sin IVA del bloque: Equipamiento de obrador": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K40",
+  "tipo": "salida",
+  "valor": 54296.23834710744
+ },
+ "IVA soportado del bloque: Equipamiento de obrador": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L40",
+  "tipo": "salida",
+  "valor": 11402.210052892562
+ },
+ "Base sin IVA del bloque: Tienda y vitrina": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K41",
+  "tipo": "salida",
+  "valor": 12684.1
+ },
+ "IVA soportado del bloque: Tienda y vitrina": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L41",
+  "tipo": "salida",
+  "valor": 2663.661
+ },
+ "Base sin IVA del bloque: Licencias y proyecto técnico": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K42",
+  "tipo": "salida",
+  "valor": 7920.0
+ },
+ "IVA soportado del bloque: Licencias y proyecto técnico": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L42",
+  "tipo": "salida",
+  "valor": 1260.0
+ },
+ "Base sin IVA del bloque: Fianza y garantías": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K43",
+  "tipo": "salida",
+  "valor": 2400.0
+ },
+ "IVA soportado del bloque: Fianza y garantías": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L43",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Base sin IVA del bloque: Packaging inicial": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K44",
+  "tipo": "salida",
+  "valor": 2500.0
+ },
+ "IVA soportado del bloque: Packaging inicial": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L44",
+  "tipo": "salida",
+  "valor": 525.0
+ },
+ "Base sin IVA del bloque: Marketing de apertura": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K45",
+  "tipo": "salida",
+  "valor": 5000.0
+ },
+ "IVA soportado del bloque: Marketing de apertura": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L45",
+  "tipo": "salida",
+  "valor": 1050.0
+ },
+ "Base sin IVA del bloque: Fondo de maniobra": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K46",
+  "tipo": "salida",
+  "valor": 62248.84
+ },
+ "IVA soportado del bloque: Fondo de maniobra": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L46",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "CAPEX total sin IVA": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K47",
+  "tipo": "salida",
+  "valor": 228049.17834710743
+ },
+ "IVA soportado total": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!L47",
+  "tipo": "salida",
+  "valor": 33910.87105289256
+ },
+ "Desembolso total con IVA": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!M47",
+  "tipo": "salida",
+  "valor": 261960.0494
+ },
+ "Subtotal comparable con el sector": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K51",
+  "tipo": "salida",
+  "valor": 160900.33834710743
+ },
+ "Escenario publicado del sector (PS-85h)": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K52",
+  "tipo": "parametro",
+  "valor": 137000
+ },
+ "Desviación sobre el escenario publicado": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K53",
+  "tipo": "salida",
+  "valor": 0.17445502443144112
+ },
+ "Importe de la línea de obra civil": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!J6",
+  "tipo": "salida",
+  "valor": 81000.0
+ },
+ "Importe del abatidor de temperatura": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!J11",
+  "tipo": "entrada",
+  "valor": 10037
+ },
+ "Base sin IVA del horno de convección de 6 bandejas": {
+  "ref": "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K7",
+  "tipo": "salida",
+  "valor": 2772.0
+ },
+ "Inversión de apertura de la variante PS-05": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I15",
+  "tipo": "salida",
+  "valor": 165800.33834710743
+ },
+ "Inversión total de la variante PS-05": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J15",
+  "tipo": "salida",
+  "valor": 228049.17834710743
+ },
+ "Inversión de apertura de la variante PS-01": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I16",
+  "tipo": "salida",
+  "valor": 14966.435752066116
+ },
+ "Inversión total de la variante PS-01": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J16",
+  "tipo": "salida",
+  "valor": 27416.203752066118
+ },
+ "Inversión de apertura de la variante PS-02": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I17",
+  "tipo": "salida",
+  "valor": 70585.30725619834
+ },
+ "Inversión total de la variante PS-02": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J17",
+  "tipo": "salida",
+  "valor": 101709.72725619834
+ },
+ "Inversión de apertura de la variante PS-03": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I18",
+  "tipo": "salida",
+  "valor": 57947.72383471074
+ },
+ "Inversión total de la variante PS-03": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J18",
+  "tipo": "salida",
+  "valor": 95297.02783471074
+ },
+ "Inversión de apertura de la variante PS-04": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I19",
+  "tipo": "salida",
+  "valor": 200731.61026446283
+ },
+ "Inversión total de la variante PS-04": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J19",
+  "tipo": "salida",
+  "valor": 275430.21826446283
+ },
+ "Inversión de apertura de la variante PS-06": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I20",
+  "tipo": "salida",
+  "valor": 85996.97150413223
+ },
+ "Inversión total de la variante PS-06": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J20",
+  "tipo": "salida",
+  "valor": 129571.15950413223
+ },
+ "Inversión de apertura de la variante PS-07": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I21",
+  "tipo": "salida",
+  "valor": 265154.48985123966
+ },
+ "Inversión total de la variante PS-07": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J21",
+  "tipo": "salida",
+  "valor": 358527.74985123967
+ },
+ "Inversión de apertura de la variante PS-08": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I22",
+  "tipo": "salida",
+  "valor": 177427.15834710744
+ },
+ "Inversión total de la variante PS-08": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J22",
+  "tipo": "salida",
+  "valor": 245900.88234710746
+ },
+ "Inversión de apertura de la variante PS-09": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I23",
+  "tipo": "salida",
+  "valor": 224392.80135537192
+ },
+ "Inversión total de la variante PS-09": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J23",
+  "tipo": "salida",
+  "valor": 305316.2933553719
+ },
+ "Inversión de apertura de la variante PS-11": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I24",
+  "tipo": "salida",
+  "valor": 167179.9621818182
+ },
+ "Inversión total de la variante PS-11": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!J24",
+  "tipo": "salida",
+  "valor": 229428.8021818182
+ },
+ "Variantes con rango publicado": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Variante del Formato!I26",
+  "tipo": "salida",
+  "valor": 8.0
+ },
+ "Precio de traspaso que te piden": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C6",
+  "tipo": "entrada",
+  "valor": 43000
+ },
+ "Renta mensual del local traspasado": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C8",
+  "tipo": "entrada",
+  "valor": 1250
+ },
+ "CAPEX comparable de la obra nueva": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C10",
+  "tipo": "salida",
+  "valor": 160900.33834710743
+ },
+ "Coste total del traspaso en el horizonte": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C19",
+  "tipo": "salida",
+  "valor": 144250.0
+ },
+ "Coste total de la obra nueva en el horizonte": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C20",
+  "tipo": "salida",
+  "valor": 237700.33834710743
+ },
+ "Diferencia entre traspaso y obra nueva": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C21",
+  "tipo": "salida",
+  "valor": -93450.33834710743
+ },
+ "Veredicto de traspaso contra obra nueva": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!C22",
+  "tipo": "salida",
+  "valor": "Sale mejor el TRASPASO"
+ },
+ "Traspasos con renta publicada": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!D41",
+  "tipo": "salida",
+  "valor": 5.0
+ },
+ "Precio pedido más bajo de los quince": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!D42",
+  "tipo": "salida",
+  "valor": 6000.0
+ },
+ "Precio pedido más alto de los quince": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!D43",
+  "tipo": "salida",
+  "valor": 100000.0
+ },
+ "Precio pedido medio de los quince": {
+  "ref": "calculadora-capex-pasteleria.xlsx!Traspaso vs Obra Nueva!D44",
+  "tipo": "salida",
+  "valor": 38600.0
+ },
+ "IVA que tienes que adelantar": {
+  "ref": "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B18",
+  "tipo": "salida",
+  "valor": 33910.87105289256
+ },
+ "Desembolso total con IVA (tesorería)": {
+  "ref": "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B23",
+  "tipo": "salida",
+  "valor": 261960.0494
+ },
+ "Fondo de maniobra dentro del desembolso": {
+  "ref": "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B24",
+  "tipo": "salida",
+  "valor": 62248.84
+ },
+ "Aportación propia necesaria": {
+  "ref": "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B26",
+  "tipo": "salida",
+  "valor": 201960.0494
+ },
+ "Meses de gastos fijos que cubre el fondo": {
+  "ref": "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B27",
+  "tipo": "salida",
+  "valor": 4.0
+ },
+ "VEREDICTO DE LA CAJA": {
+  "ref": "calculadora-capex-pasteleria.xlsx!IVA y Tesorería!B28",
+  "tipo": "salida",
+  "valor": "Necesitas aportación propia"
+ }
+}

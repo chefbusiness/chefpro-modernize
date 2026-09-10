@@ -1,0 +1,252 @@
+{
+ "Pagas del convenio de pastelería": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C15",
+  "valor": 15,
+  "tipo": "parametro"
+ },
+ "Bruto anual del grupo más bajo del convenio": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C16",
+  "valor": 17886.300000000003,
+  "tipo": "salida"
+ },
+ "Referencia anual del SMI": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C17",
+  "valor": 17094,
+  "tipo": "parametro"
+ },
+ "Veredicto de si manda el convenio o el SMI": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C18",
+  "valor": "Manda el convenio: el grupo más bajo supera el SMI",
+  "tipo": "salida"
+ },
+ "Seguridad Social a cargo de la empresa": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C21",
+  "valor": 0.33,
+  "tipo": "parametro"
+ },
+ "Horas semanales de jornada completa": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C22",
+  "valor": 40,
+  "tipo": "parametro"
+ },
+ "Horas anuales de contrato": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C23",
+  "valor": 1780,
+  "tipo": "parametro"
+ },
+ "Días de apertura a la semana": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C24",
+  "valor": 6,
+  "tipo": "entrada"
+ },
+ "Mes de apertura previsto": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C25",
+  "valor": 9,
+  "tipo": "entrada"
+ },
+ "Horas planificadas a la semana": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E22",
+  "valor": 140.0,
+  "tipo": "salida"
+ },
+ "Jornadas equivalentes de la plantilla": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E23",
+  "valor": 3.5,
+  "tipo": "salida"
+ },
+ "Horas de obrador a la semana": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E24",
+  "valor": 100.0,
+  "tipo": "salida"
+ },
+ "Horas de despacho a la semana": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E25",
+  "valor": 40.0,
+  "tipo": "salida"
+ },
+ "Días abiertos sin nadie en el mostrador": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!E26",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Coste de personal al mes": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E15",
+  "valor": 7731.3398750000015,
+  "tipo": "salida"
+ },
+ "Coste de personal al año (crucero)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E16",
+  "valor": 92776.07850000002,
+  "tipo": "salida"
+ },
+ "Jornadas equivalentes contabilizadas en el coste": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E17",
+  "valor": 3.5,
+  "tipo": "salida"
+ },
+ "Coste medio por hora PAGADA de la plantilla": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E18",
+  "valor": 14.891826404494385,
+  "tipo": "salida"
+ },
+ "Lo que cuesta la Seguridad Social al año": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E19",
+  "valor": 23019.628500000006,
+  "tipo": "salida"
+ },
+ "Suma de los brutos anuales de la plantilla": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!E20",
+  "valor": 69756.45000000001,
+  "tipo": "salida"
+ },
+ "Coste de la plantilla en el año 1": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F25",
+  "valor": 89660.337375,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de las seis campañas": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F26",
+  "valor": 3795.513053932585,
+  "tipo": "salida"
+ },
+ "Coste de personal acumulado del primer año": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F27",
+  "valor": 93455.8504289326,
+  "tipo": "salida"
+ },
+ "Coste de personal del año de crucero": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F28",
+  "valor": 92776.07850000002,
+  "tipo": "salida"
+ },
+ "Diferencia entre el año 1 y el de crucero": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F29",
+  "valor": 679.771928932576,
+  "tipo": "salida"
+ },
+ "Veredicto del arranque de personal": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F30",
+  "valor": "El refuerzo se come el ahorro del arranque: revisa las campañas",
+  "tipo": "salida"
+ },
+ "Personas de refuerzo en todo el año": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!E22",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Horas de refuerzo en todo el año": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!F22",
+  "valor": 180.0,
+  "tipo": "salida"
+ },
+ "Bruto mensual del grupo 1 del convenio (Técnicos y titulados superiores)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C8",
+  "valor": 1733.88,
+  "tipo": "entrada"
+ },
+ "Bruto mensual del grupo 2 del convenio (Dirección, jefes y encargados)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C9",
+  "valor": 1427.89,
+  "tipo": "entrada"
+ },
+ "Bruto mensual del grupo 3 del convenio (Personal especialista)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C10",
+  "valor": 1376.91,
+  "tipo": "entrada"
+ },
+ "Bruto mensual del grupo 4 del convenio (Personal cualificado)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C11",
+  "valor": 1249.42,
+  "tipo": "entrada"
+ },
+ "Bruto mensual del grupo 5 del convenio (Personal de apoyo)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C12",
+  "valor": 1192.42,
+  "tipo": "entrada"
+ },
+ "Bruto mensual del grupo 6 del convenio (Personal de ayuda en servicios auxiliares)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Parámetros!C13",
+  "valor": 1192.42,
+  "tipo": "entrada"
+ },
+ "Coste de empresa al año de Jefe Pastelero (P1)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K7",
+  "valor": 28486.405500000004,
+  "tipo": "salida"
+ },
+ "Horas semanales planificadas de Jefe Pastelero (P1)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L11",
+  "valor": 40.0,
+  "tipo": "salida"
+ },
+ "Coste de empresa al año de Pastelero (P2)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K8",
+  "valor": 27469.354500000005,
+  "tipo": "salida"
+ },
+ "Horas semanales planificadas de Pastelero (P2)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L12",
+  "valor": 40.0,
+  "tipo": "salida"
+ },
+ "Coste de empresa al año de Ayudante (P3)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K9",
+  "valor": 11894.389500000003,
+  "tipo": "salida"
+ },
+ "Horas semanales planificadas de Ayudante (P3)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L13",
+  "valor": 20.0,
+  "tipo": "salida"
+ },
+ "Coste de empresa al año de Dependiente Vitrina A (P4)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K10",
+  "valor": 12462.964500000002,
+  "tipo": "salida"
+ },
+ "Horas semanales planificadas de Dependiente Vitrina A (P4)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L14",
+  "valor": 20.0,
+  "tipo": "salida"
+ },
+ "Coste de empresa al año de Dependiente Vitrina B (P5)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Horas y Coste!K11",
+  "valor": 12462.964500000002,
+  "tipo": "salida"
+ },
+ "Horas semanales planificadas de Dependiente Vitrina B (P5)": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Turnos Semanales!L15",
+  "valor": 20.0,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Reyes": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!I16",
+  "valor": 1603.73791011236,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de San Valentín": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!I17",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Día del Padre y de la Madre": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!I18",
+  "valor": 213.83172134831466,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Semana Santa": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!I19",
+  "valor": 534.5793033707866,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Comuniones": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!I20",
+  "valor": 801.86895505618,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de Todos los Santos": {
+  "ref": "plantilla-turnos-y-coste-personal.xlsx!Plan de Contratación!I21",
+  "valor": 641.495164044944,
+  "tipo": "salida"
+ }
+}

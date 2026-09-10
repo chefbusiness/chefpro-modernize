@@ -1,0 +1,592 @@
+{
+ "Trámites del expediente": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D55",
+  "valor": 30.0,
+  "tipo": "salida"
+ },
+ "Trámites hechos": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D56",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Avance del expediente": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D58",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Coste previsto total del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D59",
+  "valor": 185360.0,
+  "tipo": "salida"
+ },
+ "Trámites sin importe conocido": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D62",
+  "valor": 21.0,
+  "tipo": "salida"
+ },
+ "Trámites que cambian según la comunidad autónoma": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!D63",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F1": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E12",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Coste previsto de la fase F1 del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F12",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F1": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!J12",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E20",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Coste previsto de la fase F2 del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F20",
+  "valor": 8000.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!J20",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E26",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Coste previsto de la fase F3 del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F26",
+  "valor": 1800.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!J26",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F4": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E34",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Coste previsto de la fase F4 del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F34",
+  "valor": 81000.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F4": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!J34",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F5": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E43",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Coste previsto de la fase F5 del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F43",
+  "valor": 1160.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F5": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!J43",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F6": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!E52",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Coste previsto de la fase F6 del checklist": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F52",
+  "valor": 1440.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F6": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!J52",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Coste del proyecto técnico visado": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F18",
+  "valor": 5000,
+  "tipo": "entrada"
+ },
+ "Coste de la licencia de actividad o declaración responsable": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F23",
+  "valor": 1800,
+  "tipo": "entrada"
+ },
+ "Coste de la comunicación al registro sanitario autonómico": {
+  "ref": "checklist-legal-y-licencias.xlsx!Checklist Legal (F1-F6)!F37",
+  "valor": 120,
+  "tipo": "entrada"
+ },
+ "Régimen de registro sanitario que te toca": {
+  "ref": "checklist-legal-y-licencias.xlsx!Árbol de Registro Sanitario!B12",
+  "valor": "Te basta la comunicación o declaración responsable de tu comunidad autónoma: estás EXCLUIDO del RGSEAA",
+  "tipo": "salida"
+ },
+ "Trámite concreto del registro sanitario": {
+  "ref": "checklist-legal-y-licencias.xlsx!Árbol de Registro Sanitario!B13",
+  "valor": "Comunicación o declaración responsable al registro de establecimientos alimentarios menores de tu comunidad autónoma",
+  "tipo": "salida"
+ },
+ "La comunicación autonómica habilita para abrir": {
+  "ref": "checklist-legal-y-licencias.xlsx!Árbol de Registro Sanitario!B14",
+  "valor": "No. La comunicación o declaración responsable NO es habilitante: se presenta al iniciar la actividad, no antes, y no sustituye a la licencia municipal.",
+  "tipo": "salida"
+ },
+ "Plazo del registro sanitario en la comunidad de ejemplo": {
+  "ref": "checklist-legal-y-licencias.xlsx!Árbol de Registro Sanitario!B15",
+  "valor": "Decreto 26/2026: se presenta A LA VEZ que inicias la actividad. Los establecimientos que ya estaban abiertos tienen hasta el 28-03-2027",
+  "tipo": "salida"
+ },
+ "Puerta de entrada del art. 3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B6",
+  "valor": "No",
+  "tipo": "entrada"
+ },
+ "Lectura de la puerta de entrada del art. 3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B7",
+  "valor": "El art. 3 NO te aplica: nada de lo de abajo te obliga",
+  "tipo": "salida"
+ },
+ "Kilos a la semana servidos a otros minoristas": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B17",
+  "valor": 51.0,
+  "tipo": "salida"
+ },
+ "Porcentaje del volumen anual servido a otros minoristas": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!C17",
+  "valor": 0.040999999999999995,
+  "tipo": "salida"
+ },
+ "Umbral de la vía a) del art. 3.2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B20",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Cumple la vía a) del art. 3.2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B22",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Umbral de la vía b) del art. 3.2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B23",
+  "valor": 500,
+  "tipo": "parametro"
+ },
+ "Comercialización total a la semana": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B24",
+  "valor": 380,
+  "tipo": "entrada"
+ },
+ "Cumple la vía b) del art. 3.2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B25",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Semáforo de marginal": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B26",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Radio máximo entre comunidades autónomas": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B30",
+  "valor": 50,
+  "tipo": "parametro"
+ },
+ "Semáforo de localizado": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B33",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Destinatarios inscritos en el RGSEAA": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B36",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Semáforo de restringido": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B37",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Condiciones del art. 3 cumplidas": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B40",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Veredicto del art. 3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B41",
+  "valor": "El art. 3 no te aplica: no suministras a otros minoristas de distinta titularidad",
+  "tipo": "salida"
+ },
+ "Papeles añadidos del art. 3.5": {
+  "ref": "checklist-legal-y-licencias.xlsx!Suministro a Otros Minoristas!B42",
+  "valor": "Nada de esto te aplica",
+  "tipo": "salida"
+ },
+ "Metros útiles de la ruta doméstica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B6",
+  "valor": 12,
+  "tipo": "entrada"
+ },
+ "Kilos a la semana de la ruta doméstica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B7",
+  "valor": 60,
+  "tipo": "entrada"
+ },
+ "Tope absoluto del art. 13.9": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B13",
+  "valor": 100,
+  "tipo": "parametro"
+ },
+ "Semáforo del tope de 100 kg": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B14",
+  "valor": "Dentro del tope",
+  "tipo": "salida"
+ },
+ "Criterio propio de proporcionalidad": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B15",
+  "valor": 8,
+  "tipo": "parametro"
+ },
+ "Kilos por metro cuadrado útil y semana": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B16",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Semáforo de proporcionalidad": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B17",
+  "valor": "Proporcional",
+  "tipo": "salida"
+ },
+ "Aviso de demostrable documentalmente": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B18",
+  "valor": "NO: el art. 13.9 exige demostrarlo documentalmente, y sin eso da igual el volumen",
+  "tipo": "salida"
+ },
+ "Mención obligatoria de la etiqueta doméstica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B36",
+  "valor": "Elaborado en vivienda particular",
+  "tipo": "parametro"
+ },
+ "Veredicto de la ruta doméstica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Ruta Doméstica!B43",
+  "valor": "NO todavía: te falta el registro documental",
+  "tipo": "salida"
+ },
+ "Validez interna de la formación": {
+  "ref": "checklist-legal-y-licencias.xlsx!Registro de Formación!B13",
+  "valor": 730,
+  "tipo": "parametro"
+ },
+ "Personas con formación registrada": {
+  "ref": "checklist-legal-y-licencias.xlsx!Registro de Formación!B17",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Formaciones caducadas": {
+  "ref": "checklist-legal-y-licencias.xlsx!Registro de Formación!B18",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Caducidad de la formación del Jefe Pastelero": {
+  "ref": "checklist-legal-y-licencias.xlsx!Registro de Formación!F6",
+  "valor": "2028-09-09",
+  "tipo": "salida"
+ },
+ "Mes de arranque del proyecto": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C5",
+  "valor": 1,
+  "tipo": "entrada"
+ },
+ "Duración total del proyecto en meses": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C38",
+  "valor": 8.5,
+  "tipo": "salida"
+ },
+ "Hitos sin holgura en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C39",
+  "valor": 11.0,
+  "tipo": "salida"
+ },
+ "Mes natural de la apertura": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C40",
+  "valor": 9.0,
+  "tipo": "salida"
+ },
+ "Nombre del mes de la apertura": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C41",
+  "valor": "Septiembre",
+  "tipo": "salida"
+ },
+ "La apertura cae dentro de una campaña": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C42",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Aviso de la fecha de apertura": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C43",
+  "valor": "Abres fuera de campaña: tienes rodaje antes del siguiente pico",
+  "tipo": "salida"
+ },
+ "Duración del hito H1": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C9",
+  "valor": 2,
+  "tipo": "entrada"
+ },
+ "Fin del hito H1 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H9",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H1": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I9",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H1 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J9",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C10",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H2 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H10",
+  "valor": 2.5,
+  "tipo": "salida"
+ },
+ "Holgura del hito H2": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I10",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H2 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J10",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C11",
+  "valor": 1,
+  "tipo": "entrada"
+ },
+ "Fin del hito H3 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H11",
+  "valor": 3.5,
+  "tipo": "salida"
+ },
+ "Holgura del hito H3": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I11",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H3 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J11",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H4": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C12",
+  "valor": 1.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H4 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H12",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H4": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I12",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H4 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J12",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H5": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C13",
+  "valor": 2,
+  "tipo": "entrada"
+ },
+ "Fin del hito H5 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H13",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H5": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I13",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H5 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J13",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H6": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C14",
+  "valor": 2.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H6 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H14",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H6": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I14",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "El hito H6 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J14",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Duración del hito H7": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C15",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H7 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H15",
+  "valor": 7.5,
+  "tipo": "salida"
+ },
+ "Holgura del hito H7": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I15",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H7 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J15",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H8": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C16",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H8 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H16",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H8": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I16",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H8 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J16",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H9": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C17",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H9 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H17",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H9": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I17",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H9 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J17",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H10": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C18",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H10 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H18",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Holgura del hito H10": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I18",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H10 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J18",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H11": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C19",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Fin del hito H11 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H19",
+  "valor": 8.5,
+  "tipo": "salida"
+ },
+ "Holgura del hito H11": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I19",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H11 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J19",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Duración del hito H12": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!C20",
+  "valor": 0,
+  "tipo": "entrada"
+ },
+ "Fin del hito H12 (mes del proyecto)": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!H20",
+  "valor": 8.5,
+  "tipo": "salida"
+ },
+ "Holgura del hito H12": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!I20",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "El hito H12 está en la ruta crítica": {
+  "ref": "checklist-legal-y-licencias.xlsx!Cronograma y Ruta Crítica!J20",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "_meta": {
+  "ref": "checklist-legal-y-licencias.xlsx!Instrucciones!A1",
+  "valor": "Libro legal y de cronograma. Los tres árboles se leen en cadena: la hoja «Árbol de Registro Sanitario» toma su veredicto de «Suministro a Otros Minoristas» cuando hay B2B. Las cuatro comunidades autónomas son EJEMPLOS declarados (D27). El criterio de proporcionalidad de la ruta doméstica y la caducidad de la formación son CRITERIOS PROPIOS DE LA CASA, no normas: están así marcados en el comentario de su celda y no se pueden citar como obligación legal. Todo lo normativo lleva su nota «Verificado el 10-09-2026 · norma y artículo · URL».",
+  "tipo": "nota"
+ }
+}

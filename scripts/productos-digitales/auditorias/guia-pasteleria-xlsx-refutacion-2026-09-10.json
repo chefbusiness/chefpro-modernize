@@ -1,0 +1,209 @@
+[
+  {
+    "id": "A1",
+    "libro": "plantilla-turnos-y-coste-personal.xlsx",
+    "hoja_celda": "Turnos Semanales!E24 y Turnos Semanales!E25",
+    "gravedad": "alto",
+    "problema": "Las dos salidas de la hoja publican 0 donde la suma real es 100 h y 40 h. Son =SUM($E$17:$K$17) y =SUM($E$18:$K$18) sobre filas de SUMPRODUCT: pycel devuelve 0 para el SUM agregador, inject_cache.py escribe ese 0 y ningun gate lo ve porque 0 es un valor. Las dos etiquetas estan en mapa-plantilla-turnos-y-coste-personal.json con valor 0.0, y documentos.py resuelve las citas del guion con data_only=True (D35): un capitulo que cite «Horas de obrador a la semana» imprimira 0. Es el mismo modo de fallo que el constructor 3-4 midio en Escandallo por Tanda!E266 y para el que escribio un gate que aqui no se corrio.",
+    "evidencia": "Recalculo del rango contra el cache: E24 cache=0.0000 / suma_rango=100.0000 ; E25 cache=0.0000 / suma_rango=40.0000. Sumandos correctos en E17:K17 = 12+20+20+20+20+8+0 y en E18:K18 = 4+8+8+8+8+4+0. mapa-plantilla-turnos-y-coste-personal.json: 'Horas de obrador a la semana' -> valor 0.0 ; 'Horas de despacho a la semana' -> valor 0.0. El propio constructor 7-8 declara «solo 40 h de despacho» en su nota.",
+    "fix": "gen_plantilla-turnos-y-coste-personal.py:700-709 — emitir los dos totales como agregado directo sobre la tabla, sin pasar por la fila intermedia de SUMPRODUCT: =SUMPRODUCT(--($C$11:$C$15=\"OBRADOR\"),$E$11:$K$15) y =SUMPRODUCT(--($C$11:$C$15=\"COMERCIO\"),$E$11:$K$15). Ademas, portar a los ocho generadores el gate generico de _comun_libros_3_4.cerrar() que recalcula todo SUM(rango) contra la suma de su rango."
+  },
+  {
+    "id": "A2",
+    "libro": "checklist-equipamiento-y-proveedores.xlsx",
+    "hoja_celda": "Equipamiento!I49, Equipamiento!I50, Equipamiento!I51 (entrada Equipamiento!C9)",
+    "gravedad": "alto",
+    "problema": "La desviacion contra el libro 2 compara dos ambitos distintos: el minuendo I44 es «Total real negociado sin IVA, TODAS las lineas» (86.500,74) y el sustraendo C9 es el CAPEX del libro 2, que por construccion EXCLUYE las tres lineas opcionales (66.980,34). El ejemplo publicado sale con +19.520,40 EUR y +29,1 % y con el veredicto rojo «Fuera del umbral: rehaz el CAPEX del libro 2 con estos precios», reforzado por la nota K51 («el plan financiero del libro 5 se calcula sobre el CAPEX del libro 2: si esto se sale, hay que rehacerlo»). Los 19.520,40 EUR son exactamente los tres opcionales, no una desviacion de negociacion. La comparacion correcta ya existe en la hoja: I43 (solo lineas criticas) = 66.980,34, identico a C9, desviacion 0,0 %.",
+    "evidencia": "data_only: I42=86.500,73834710744 · I43=66.980,34 · I44=86.500,73999999999 · C9=66.980,34 · I49=19.520,399999999994 · I50=0,291434770262438 · I51='Fuera del umbral: rehaz el CAPEX del libro 2 con estos precios'. datos_ejemplo: total dotacion sin IVA 86.500,74 y sin opcionales 66.980,34; opcionales = atemperadora 7.400,00 + horno de pisos 12.000,00 + puertas correderas 120,40 = 19.520,40. Nota D9 de C9: «COPIALO DE calculadora-capex-pasteleria.xlsx (libro 2), bloques Equipamiento de obrador y Tienda y vitrina» (54.296,24 + 12.684,10).",
+    "fix": "gen_checklist-equipamiento-y-proveedores.py:668-676 — en R_DESV_EUR y R_DESV_PCT cambiar el operando a=R_REAL_TODO por a=R_REAL_CRIT. Anadir una fila «Diferencia por lineas opcionales (EUR)» = I44-I43. Alternativa: redefinir C9 y su nota D9 para que el lector copie el total CON opcionales, que hoy el libro 2 no publica."
+  },
+  {
+    "id": "B1",
+    "libro": "carta-de-apertura-y-escandallo.xlsx",
+    "hoja_celda": "Decisión de Huevo y Temperatura!D5, D6:D35 y bloque de listas A50:B54",
+    "gravedad": "alto",
+    "problema": "La hoja construye toda su decision sobre las tres vias del art. 9 del RD 1021/2022 y no lleva ni una nota legal de PA-14 («Huevo crudo: las tres vias legales del art. 9»), que es el id que contiene la cita literal de esas vias. Las unicas notas legales de la hoja apuntan al art. 9.3 (PA-15) y al art. 4.1 (PA-12), es decir a las CONSECUENCIAS, no al articulo que CREA las vias que el propio desplegable ofrece. Ademas faltan otros cuatro de los diez ids que IDS_LEGALES_REQUERIDOS asigna al libro 4: PA-13, PA-21, PA-24 y PA-25. gate_legal() pasa porque solo comprueba que los ids existan en el JSON, no que esten usados en el libro que los tiene asignados.",
+    "evidencia": "Barrido de las 131 notas «Verificado el 10-09-2026» de carta-de-apertura-y-escandallo.xlsx: ids presentes = PA-12, PA-15, PA-23, PA-33, PA-36, PA-36b. IDS_LEGALES_REQUERIDOS asigna al libro 4: PA-12, PA-13, PA-14, PA-15, PA-21, PA-23, PA-24, PA-25, PA-36, PA-36b. Faltan 5, entre ellas PA-14. Los valores del desplegable en 'Decisión de Huevo y Temperatura'!A50:A52 son literalmente '70/2', '63/20' y 'ovoproducto', y B50/B51 parafrasean la cita de PA-14 («70 °C durante 2 s en el centro», «63 °C durante 20 s ... y servido para consumo inmediato»), sin nota.",
+    "fix": "gen_carta-de-apertura-y-escandallo.py — poner nota_legal('PA-14') en la cabecera D5 y en A50, A51 y A52. Decidir explicitamente PA-13/PA-21/PA-24/PA-25: o se les da celda, o se les quita del reparto de IDS_LEGALES_REQUERIDOS con su justificacion. Y anadir a gate_legal() una comprobacion de COBERTURA por libro (todo id asignado tiene al menos una celda con su nota)."
+  },
+  {
+    "id": "A3",
+    "libro": "checklist-equipamiento-y-proveedores.xlsx",
+    "hoja_celda": "Contador!B27",
+    "gravedad": "medio",
+    "problema": "Mismo modo de fallo que A1: =SUM($B$25:$B$26) sobre dos SUMPRODUCT que valen 17 y 5 se cachea como 0. La fila esta rotulada «TOTAL» justo debajo de sus dos sumandos correctos, asi que en cualquier vista que no recalcule se lee «17 + 5 = 0». No esta en el mapa, y por eso es medio y no alto.",
+    "evidencia": "Recalculo del rango contra el cache: Contador!B27 cache=0.0000 / suma_rango=22.0000. B25=17.0 (SUMPRODUCT sobre 'Equipamiento de obrador'), B26=5.0 (SUMPRODUCT sobre 'Tienda y vitrina'). Las hermanas C27 y D27, que suman euros, si cuadran (86.500,74).",
+    "fix": "gen_checklist-equipamiento-y-proveedores.py:1216 — emitir B27 como =SUMPRODUCT(--('Equipamiento'!$G$16:$G$37<>\"\")) o como la suma en linea de los dos SUMPRODUCT, en vez de =SUM($B$25:$B$26). Queda cubierto tambien por el gate de SUM(rango) que pide A1."
+  },
+  {
+    "id": "A4",
+    "libro": "los 8",
+    "hoja_celda": "Instrucciones!A34 (libro 1) · A35 (libro 2) · A29 (libro 3) · A29 (libro 4) · A40 (libro 5) · A36 (libro 6) · A30 (libro 7) · A29 (libro 8); y Instrucciones!A37+A38 (libro 5) y A33+A34 (libro 6)",
+    "gravedad": "medio",
+    "problema": "La bio del autor se publica con DOS literales distintos, cuatro libros cada uno: con sufijo « · johnguerrero.es» en capacidad-obrador, calculadora-capex, plan-financiero y checklist-legal; con punto final (el literal de la SPEC) en estacionalidad, carta, checklist-equipamiento y plantilla-turnos. Ademas, los libros 5 y 6 publican DOS notas de desproteger seguidas, porque toman la de motor y encima escriben la suya. La linea de version si es identica caracter a caracter en los ocho.",
+    "evidencia": "_comun_pasteleria.py:49 y _comun_libros_5_6.py:63 hacen BIO = motor.BIO_LINE, y motor.BIO_LINE (motor.py:102) termina en «... en cocina desde los 17 anos · johnguerrero.es». _comun_libros_3_4.py:48, gen_checklist-equipamiento-y-proveedores.py:90 y gen_plantilla-turnos-y-coste-personal.py:89 lo declaran a mano con punto final. Doble nota: plan-financiero!Instrucciones!A37 («... Revisar → Desproteger hoja (no tiene contrasena).») + A38 («Ruta en Excel: Revisar > Desproteger hoja...»); checklist-legal!Instrucciones!A33 + A34.",
+    "fix": "Subir VERSION_LINE, BIO y NOTA_DESPROTEGER a guia-pasteleria/datos_ejemplo.py con el literal exacto de la SPEC (como en manual-chef-ejecutivo/datos_ejemplo.py) y que los tres modulos _comun_*.py y los dos generadores sueltos los importen de ahi. Quitar la segunda linea de desproteger en _comun_libros_5_6.py."
+  },
+  {
+    "id": "B2",
+    "libro": "capacidad-obrador-y-local.xlsx y checklist-legal-y-licencias.xlsx",
+    "hoja_celda": "Ficha de Visita a Local!D6 (con B6 y J6) y Checklist Legal (F1-F6)!C8",
+    "gravedad": "medio",
+    "problema": "Las dos celdas llevan la nota «Verificado el 10-09-2026 · CTE, Documento Basico HS Salubridad, Seccion HS 3, apartado 1.1 · URL» respaldando el requisito de salida de humos hasta cubierta. Pero el hallazgo que hay detras de ese titulo es PA-07, y su contenido dice lo CONTRARIO: el DB-HS 3 no se aplica a un obrador (su ambito son viviendas y, en otros usos, solo aparcamientos y garajes), para un local remite al RITE, y la altura real de la chimenea la fija la ordenanza municipal. La causa es de diseno: nota_legal() compone la nota con fuente_titulo + URL y nunca con el dato, asi que un hallazgo NEGATIVO se publica igual que uno positivo. En el libro 1 la nota va pegada ademas a un item cuya regla operativa (J6, «rebasar la cumbrera en 1 m») sale de PS-86c, que es un id de SECTOR, no una norma verificada.",
+    "evidencia": "guia-pasteleria-verificacion-legal-2026-09-10.json, PA-07: tema «El CTE DB-HS 3 NO se aplica a un obrador: remite al RITE»; nota «...La altura real de la chimenea la fija la ORDENANZA MUNICIPAL». datos_ejemplo.py:2250 nota_legal(): «Devuelve: Verificado el 10-09-2026 · <norma y articulo> · <URL>». Contraste correcto en la fila de al lado: Ficha de Visita a Local!J7 cita PA-07b (RITE IT 1.1.4.2.5, aire AE4, sin conducto comun con despacho ni aseos).",
+    "fix": "gen_capacidad-obrador-y-local.py y gen_checklist-legal-y-licencias.py — sustituir la nota de PA-07 por la de PA-07b en las dos celdas y anadir al texto visible «la altura de la chimenea la fija la ordenanza municipal, no el CTE». En J6, marcar el «1 m sobre la cumbrera» como referencia de sector (PS-86c) y no como obligacion. De fondo: que nota_legal() admita prefijo para hallazgos negativos, o que los ids negativos se publiquen con su `dato` delante."
+  },
+  {
+    "id": "B3",
+    "libro": "calculadora-capex-pasteleria.xlsx vs plan-financiero-3-anos-pasteleria.xlsx",
+    "hoja_celda": "libro 2: Parámetros!B17, Parámetros!B18, CAPEX por Bloque!K47, IVA y Tesorería!B26 — libro 5: Inversión Inicial!B18, Inversión Inicial!B19, 0. Supuestos!B36",
+    "gravedad": "medio",
+    "problema": "El pack publica dos inversiones totales para la misma pasteleria. Causa aislada: el libro 2 siembra sus gastos fijos mensuales con datos_ejemplo.gastos_fijos_mensuales(), que mete SIEMPRE intereses_anio_1() aunque la foto sea la del ano de crucero; el libro 5 calcula sus fijos de crucero con SUS intereses del ano 2 (cuadro frances con carencia de 6 meses). Los dos por 4 meses de colchon dan dos fondos de maniobra distintos, y de ahi dos CAPEX y dos aportaciones propias. Ningun libro esta mal por dentro, pero la SPEC 2.2 nombra al libro 5 «la fuente unica de cifras del texto financiero» y el libro 2 es el que se titula «Calculadora de inversion inicial».",
+    "evidencia": "Libro 2: Parámetros!B17=15.562,21 ; B18=62.248,84 ; CAPEX por Bloque!K47=228.049,17834710743 ; IVA y Tesorería!B26=201.960,0494. Libro 5: Inversión Inicial!B18=62.115,26182026436 ; B19=227.915,60182026436 ; 0. Supuestos!B36=201.826,48. Delta CAPEX = 133,58 ; delta fondo = 133,58 ; delta aportacion = 133,57. datos_ejemplo.gastos_fijos_mensuales()=15.562,21 y intereses_anio_1()=3.660,38 ; libro 5 PyG 3 Años!C33=186.345,78546079306 (/12 = 15.528,82) y B32/C32/D32 = 3.671,10 / 3.259,67 / 2.750,66.",
+    "fix": "Corregir datos_ejemplo.gastos_fijos_mensuales() para que acepte el ano (o no incluya intereses) y resembrar Parámetros!B17 del libro 2 con la cifra del libro 5, regenerando gen_calculadora-capex-pasteleria.py. Si datos_ejemplo no se toca en esta sesion, minimo: que la nota E17 del libro 2 diga que ano de intereses lleva y que el guion cite SIEMPRE el libro 5 para la inversion total."
+  },
+  {
+    "id": "B4",
+    "libro": "plan-financiero-3-anos-pasteleria.xlsx vs datos_ejemplo.py",
+    "hoja_celda": "PyG 3 Años (resultado neto de crucero, mapeado 27.836,45) y datos_ejemplo.cuenta_resultados_crucero()",
+    "gravedad": "medio",
+    "problema": "cuenta_resultados_crucero() devuelve beneficio_neto=32.348,05 y margen_neto=0,10, pero ese numero es margen bruto menos gastos fijos, es decir el resultado ANTES de impuestos. El libro 5 publica RAI y neto por separado, y su beneficio neto del ano de crucero es 27.836,45 con margen 8,6 %. Hay dos «beneficio neto» y dos «margen neto» del mismo ano en el mismo producto, separados por 4.511,60 EUR y 1,4 puntos. El nombre de la clave invita al error: un redactor que escriba «La Clara gana 32.348 EUR, un 10 % de margen neto» estara citando un RAI llamado neto y el gate de coherencia de documentos.py vera dos cifras.",
+    "evidencia": "datos_ejemplo.cuenta_resultados_crucero() = {'ventas_sin_iva': 322197.87, 'coste_de_ventas': 103103.32, 'margen_bruto': 219094.55, 'gastos_fijos': 186746.5, 'beneficio_neto': 32348.05, 'margen_neto': 0.1}. mapa-plan-financiero-3-anos-pasteleria.json: 'Resultado neto del año de crucero' = 27836.452763802277 ; 'Margen neto del año de crucero' = 0.08639552003492434 ; 'Margen neto del año de crucero dentro de la banda 8-12 %' = 'Sí'. Las ventas si cuadran al centimo (322.197,87 en los dos).",
+    "fix": "Renombrar la clave a resultado_antes_impuestos (y margen_rai) en datos_ejemplo.py, y que el guion tome beneficio y margen SOLO del mapa del libro 5. Mientras tanto, no exponer cuenta_resultados_crucero() a los redactores."
+  },
+  {
+    "id": "B5",
+    "libro": "carta-de-apertura-y-escandallo.xlsx",
+    "hoja_celda": "Decisión de Huevo y Temperatura!D6:D35 y F6:F35, con efecto en H6:H35, I6:I35 y K6:K35",
+    "gravedad": "medio",
+    "problema": "El desplegable de la columna D («Via legal del huevo») tiene un quinto valor, «estable a ambiente», definido en B54 como «Via 1.a) y el producto terminado ES estable a temperatura ambiente»: duplica la pregunta de la columna F. Nada impide contestar las dos de forma incoherente y la hoja no avisa, y ademas resuelve la contradiccion en la direccion PERMISIVA: con D='estable a ambiente' y F='No' devuelve «Plazo legal (art. 9.3): No aplica», cuando PA-15 dice que los elaborados por la via 1.a) que NO sean estables a temperatura ambiente se consumen en un maximo de 24 horas. El pack quita por defecto una obligacion legal en la hoja que vende como su diferencial.",
+    "evidencia": "Prueba con pycel sobre la fila 6, evaluando salidas antes de tocar entradas. D='70/2', E='Sí', F='No' -> G6=4, H6=8, I6=4, K6=24. D='estable a ambiente', E='Sí', F='No' -> G6=4, H6='', I6=4, K6='No aplica'. Los dos casos describen el mismo producto. Formulas: H6 = IF(AND(OR($D6=\"70/2\",$D6=\"ovoproducto\"),$F6=\"No\"),'Parámetros'!$B$29,\"\") y K6 igual contra $B$30. No hay columna de coherencia. (Lo que si es correcto y no se pudo tumbar: excluir la via 63/20 del art. 9.3, porque el 9.3 nombra solo el 1.a) y el apartado 2.)",
+    "fix": "gen_carta-de-apertura-y-escandallo.py — quitar 'estable a ambiente' del desplegable de D (la informacion ya la da F) y dejar cuatro vias: 70/2, 63/20, ovoproducto, sin huevo; construir el texto de N con D+F. Si se conserva por pedagogia, anadir columna de coherencia: =IF(AND($D6=\"estable a ambiente\",$F6=\"No\"),\"Incoherente: has elegido la via de producto estable y luego has dicho que no lo es\",\"\") con su semaforo."
+  },
+  {
+    "id": "B6",
+    "libro": "capacidad-obrador-y-local.xlsx y estacionalidad-y-picos.xlsx",
+    "hoja_celda": "Cuello de Botella!B12, B28, G18:G23 · Capacidad vs Demanda del Pico!N6:N11 · Refuerzo y Tesorería!H6:H11",
+    "gravedad": "medio",
+    "problema": "El juego de datos publicado dice que «La Clara» no aguanta NINGUNA de las seis campanas y que el refuerzo no cubre en ninguna, incluida San Valentin, donde datos_ejemplo da 0 personas de refuerzo contra 1 necesaria. Los numeros son internamente correctos y coherentes al digito entre los dos libros, y el mensaje pedagogico (el abatidor es el cuello de botella, decision 2 del bonus 2) es deliberado. Pero es una decision de PRODUCTO que el guion va a citar: el caso de demostracion de una guia de 65 EUR que ensena a montar una pasteleria dice que la pasteleria del ejemplo no puede servir Reyes, San Valentin, Semana Santa, comuniones, Todos los Santos ni el Dia del Padre. Revertirlo despues obliga a regenerar los libros 1, 3 y 8 y a reescribir los capitulos que los citen.",
+    "evidencia": "Libro 1: Cuello de Botella!B12='AJUSTADO' (holgura 4 piezas sobre 480 de capacidad y 476 de crucero, 0,8 %), B28='Varios picos se te van del obrador', G18:G23 = seis 'NO'. Deficits mapeados: Reyes -2.376,0 · San Valentin -376,8 · Padre/Madre -424,4 · Semana Santa -662,4 · Comuniones -281,6 · Todos los Santos -757,6. Libro 3: Refuerzo y Tesorería!H6:H11 = seis 'No'; B7=0 personas y C7=0 horas en San Valentin contra G7=1 persona necesaria.",
+    "fix": "No hay fix automatico: es una firma del orquestador. Si se confirma, dejarlo y que el capitulo lo explote. Si no, subir la dotacion de frio negativo en datos_ejemplo.EQUIPAMIENTO (el abatidor de 4 bandejas es quien limita) y dar a San Valentin un refuerzo distinto de cero en datos_ejemplo.PICOS; despues regenerar los libros 1, 2, 3, 7 y 8."
+  },
+  {
+    "id": "B7",
+    "libro": "carta-de-apertura-y-escandallo.xlsx, plantilla-turnos-y-coste-personal.xlsx y estacionalidad-y-picos.xlsx",
+    "hoja_celda": "carta!Parámetros (coste hora de obrador 17,94) · plantilla-turnos!Horas y Coste!L7:L11 y coste medio 14,89 · estacionalidad!Parámetros!B21 (13,36)",
+    "gravedad": "medio",
+    "problema": "El pack publica tres costes por hora distintos para la misma plantilla. Los tres estan bien calculados y miden cosas distintas (hora productiva de obrador con el factor 0,85 · hora pagada media de toda la plantilla · hora pagada del grupo 5 que se usa para el refuerzo), pero un lector que salte del libro 3 al 4 ve 13,36 y 17,94 para «la hora de la misma gente», y un redactor que cite dos en el mismo capitulo escribira una incoherencia.",
+    "evidencia": "mapa-carta-de-apertura-y-escandallo.json: 'Coste hora de obrador' = 17.937911302048914 (= datos_ejemplo.coste_hora_obrador()). mapa-plantilla-turnos-y-coste-personal.json: 'Coste medio por hora de la plantilla' = 14.891826404494385; Horas y Coste!L7=16,0036 (Jefe Pastelero), L8=15,4322 (Pastelero), L9=13,3645 (Ayudante). mapa-estacionalidad-y-picos.json: 'Coste hora de empresa del refuerzo' = 13.364482584269666 (identico a L9 del libro 8).",
+    "fix": "Rotular las tres celdas con el denominador dentro del titulo («Coste por hora PRODUCTIVA de obrador», «Coste medio por hora PAGADA de la plantilla», «Coste por hora PAGADA del refuerzo, grupo 5») en gen_carta-*, gen_plantilla-turnos-* y gen_estacionalidad-*, con nota cruzada libro!Hoja!Celda; y anadir el trio al `prohibido` del guion como cifras que no se mezclan."
+  },
+  {
+    "id": "B8",
+    "libro": "calculadora-capex-pasteleria.xlsx",
+    "hoja_celda": "Variante del Formato!M15:M24 (y coeficientes D15:H24)",
+    "gravedad": "medio",
+    "problema": "Los 50 coeficientes de formato son inventados por el constructor (no salen de datos_ejemplo ni del research) y producen desviaciones de +404,2 % y +150,9 % contra el rango publicado en dos variantes. La hoja es honesta —A3 y B29 declaran que son supuestos editables y hasta anticipan el caso «si se van a mas del doble, uno de los dos esta mal»— pero NO hay ninguna marca en las dos filas donde eso pasa: el lector ve un 404,2 % en una columna de porcentaje sin nada que lo conecte con el parrafo de abajo. Y D17 obliga a la lectura «dos fuentes independientes en el mismo orden de magnitud», que en esas dos filas no se sostiene.",
+    "evidencia": "data_only de Variante del Formato: PS-02 «Obrador a puerta cerrada» I17=70.585,31 contra publicado 8.000-20.000 -> M17=4,041807661157025 (+404,2 %). PS-04 «Cafeteria-pasteleria» I19=200.731,61 contra 60.000-100.000 -> M19=1,5091451283057853 (+150,9 %). Resto: PS-03 +0,783 · PS-08 +0,349 · PS-05 +0,326 · PS-07 +0,326 · PS-06 +0,075 · PS-01 -0,093. PS-09 y PS-11 sin rango publicado, M vacia a proposito (correcto).",
+    "fix": "gen_calculadora-capex-pasteleria.py — anadir columna «Cuadra con el rango publicado?» = IF(M15=\"\",\"\",IF(ABS(M15)>1,\"Se van a mas del doble: mira el rango antes que la cuenta\",\"En el mismo orden de magnitud\")) con semaforo; y sacar los 50 coeficientes a datos_ejemplo.py con procedencia 'supuesto' explicita, para que dejen de vivir dentro de un generador."
+  },
+  {
+    "id": "A5",
+    "libro": "estacionalidad-y-picos.xlsx, carta-de-apertura-y-escandallo.xlsx, plan-financiero-3-anos-pasteleria.xlsx, checklist-legal-y-licencias.xlsx",
+    "hoja_celda": "21 U+202F (estacionalidad ×6, carta ×15) · 2 U+2192 (plan-financiero!Instrucciones!A37, checklist-legal!Instrucciones!A33) · 32 ☐/✓ (checklist-legal!Checklist Legal (F1-F6)!A7:A51)",
+    "gravedad": "bajo",
+    "problema": "55 caracteres fuera de cp1252 en cuatro libros, con tres origenes distintos que no merecen la misma respuesta: la flecha es un descuido puro (usar motor.NOTA_DESPROTEGER tal cual, ya parcheado en _comun_pasteleria.py); el espacio fino es deliberado (motor.NARROW) y tiene precedente en el guia-food-cost publicado; las casillas ☐/✓ calcan el molde B de panaderia, y el libro 7 resolvio lo mismo SIN simbolos con el vocabulario Pendiente/Presupuestado/Pedido/Recibido/Instalado/N-A. Los tres libros no pueden decidirlo cada uno por su cuenta.",
+    "evidencia": "Barrido cp1252 sobre los 8 libros: capacidad 0 · calculadora 0 · carta 15 (Instrucciones!A10,A16,A17,A19,A21; Parámetros!G19,G20,G24,G31,G34,G35,A91; Decisión de Huevo y Temperatura!A61; Mix y Ticket Medio!I43,I46) · checklist-equipamiento 0 · checklist-legal 33 · estacionalidad 6 (Instrucciones!A19; Parámetros!E25,E26; Capacidad vs Demanda del Pico!A17; Refuerzo y Tesorería!R6,R11) · plan-financiero 1 · plantilla-turnos 0. Origen de la flecha: _comun_libros_5_6.py:64 (NOTA_DESPROTEGER = motor.NOTA_DESPROTEGER) contra _comun_pasteleria.py:53, que ya la sustituye por '>'.",
+    "fix": "(a) _comun_libros_5_6.py:64 — usar la nota parcheada de _comun_pasteleria.py. (b) Decidir en la SPEC si el gate WinAnsi se aplica a los xlsx o solo a los documentos; si se aplica, sustituir NARROW por espacio normal en gen_estacionalidad-* y gen_carta-* (y en el guia-food-cost publicado) y las casillas del libro 6 por el vocabulario del libro 7. (c) Anadir el barrido cp1252 al cierre de los ocho generadores, que hoy solo lo hace _comun_pasteleria.py."
+  },
+  {
+    "id": "A6",
+    "libro": "calculadora-capex-pasteleria.xlsx",
+    "hoja_celda": "IVA y Tesorería!B28",
+    "gravedad": "bajo",
+    "problema": "Unico hardcode real de umbral de negocio de las 4.515 formulas del pack: el veredicto de caja compara B27<3 con el 3 escrito dentro de la formula, teniendo al lado Parámetros!B16 «Meses de colchon de tesoreria» = 4 en celda verde. Ademas el aviso esta muerto de fabrica: B27 = B24/B17 = B16 por construccion, asi que con B16=4 nunca puede decir «te falta colchon».",
+    "evidencia": "=IF(B26=\"\",\"\",IF(B26<=0,\"La financiacion cubre el desembolso\",IF(B27<3,\"Te falta colchon: revisa el fondo de maniobra\",\"Necesitas aportacion propia\"))) — gen_calculadora-capex-pasteleria.py:1073. Parámetros!B16=4 (verde, «Meses de colchon de tesoreria»), IVA y Tesorería!B27=4,0. La nota E27 ya dice «Por debajo de tres meses de colchon...», o sea que el umbral esta documentado en texto pero no en celda.",
+    "fix": "gen_calculadora-capex-pasteleria.py:1073 — anadir un parametro verde «Colchon minimo aceptable (meses)» con valor por defecto 3 declarado supuesto y referenciarlo: IF(B27<'Parámetros'!$B$xx, ...)."
+  },
+  {
+    "id": "A7",
+    "libro": "checklist-legal-y-licencias.xlsx",
+    "hoja_celda": "Cronograma y Ruta Crítica!C6 (verde, 999) y matriz C24:N35 (144 celdas)",
+    "gravedad": "bajo",
+    "problema": "La matriz de dependencias usa 999 como «no aplica», oculto con el formato [=999]\"\";0.0, y las holguras se calculan con MIN(MIN(rango),MAX(...))-H. Esta honestamente declarado en O6 («Truco de calculo, no un dato»), pero (a) el centinela vive en una celda VERDE sin guarda: si el lector escribe ahi un 3, las once holguras y la ruta critica cambian sin un solo aviso, y (b) los 999 se leen tal cual con data_only, asi que cualquier volcado a CSV o cualquier script que recorra la hoja los vera.",
+    "evidencia": "Cronograma y Ruta Crítica!C6 = 999, relleno E8F5E9, desbloqueada. 144 celdas con number_format '[=999]\"\";0.0'; ejemplo C24 = IFERROR(IF(OR($D$9=$A$9,$E$9=$A$9,$F$9=$A$9),$G$9,$C$6),\"\") -> data_only 999.0. Las etiquetas 'Holgura del hito H1'..'H10' del mapa dependen de esos MIN.",
+    "fix": "gen_checklist-legal-y-licencias.py — dejar C6 bloqueada y sin relleno verde (es constante de implementacion, no entrada), o mantenerla verde con un semaforo que avise si C6 <= MAX(C9:C20)."
+  },
+  {
+    "id": "A8",
+    "libro": "checklist-legal-y-licencias.xlsx",
+    "hoja_celda": "Ruta Doméstica!B14 (regla de formato condicional, expression =$B$7>$B$13)",
+    "gravedad": "bajo",
+    "problema": "Unico semaforo numerico sin ISNUMBER de las 106 reglas del pack. B7 («Kilos de producto que elaboras a la semana») es verde y numerica; en Excel cualquier texto es mayor que cualquier numero, asi que si el lector escribe «unos 60» o «60 kg» la regla se enciende en rojo y la hoja avisa de que se pasa del tope legal de 100 kg sin saberlo. La formula de la celda B14 si esta protegida por IFERROR: es la regla de pintado la que falla.",
+    "evidencia": "Barrido de formato condicional: 106 reglas en los 8 libros; 85 son cellIs equal contra texto (donde ISNUMBER no aplica) y una sola es expression con comparacion numerica: checklist-legal-y-licencias!Ruta Doméstica!B14 -> =$B$7>$B$13. Los semaforos de formula del libro 4 (Decisión de Surtido!H6:I35) si llevan IF(NOT(ISNUMBER(...)),\"\",...).",
+    "fix": "gen_checklist-legal-y-licencias.py — cambiar la formula de la regla a =AND(ISNUMBER($B$7),ISNUMBER($B$13),$B$7>$B$13)."
+  },
+  {
+    "id": "A9",
+    "libro": "carta-de-apertura-y-escandallo.xlsx, estacionalidad-y-picos.xlsx, checklist-legal-y-licencias.xlsx, plan-financiero-3-anos-pasteleria.xlsx (sus mapas)",
+    "hoja_celda": "mapa-carta-*.json y mapa-estacionalidad-*.json clave '_notas'; mapa-checklist-legal-*.json y mapa-plan-financiero-*.json clave '_meta'; y mapa-checklist-legal-*.json 'Caducidad de la formación del Jefe Pastelero'",
+    "gravedad": "bajo",
+    "problema": "Cuatro de los ocho mapas llevan una clave cuyo `ref` es solo el nombre del fichero, sin !Hoja!Celda. Respetan el esquema {ref, valor, tipo} pero cualquier consumidor que haga ref.split('!') para resolver la celda —que es lo que hace documentos.py con las referencias del guion— revienta o resuelve mal en la mitad de los mapas del producto. Ademas, una etiqueta guarda la fecha como cadena ISO mientras la celda devuelve datetime: la unica de 789 etiquetas que no coincide en tipo con su celda.",
+    "evidencia": "mapa-carta-de-apertura-y-escandallo.json['_notas']['ref'] = 'carta-de-apertura-y-escandallo.xlsx' (sin !Hoja!Celda); igual en mapa-estacionalidad-y-picos.json['_notas'], mapa-checklist-legal-y-licencias.json['_meta'] y mapa-plan-financiero-3-anos-pasteleria.json['_meta']. mapa-checklist-legal-y-licencias.json['Caducidad de la formación del Jefe Pastelero']['valor'] = '2028-09-09' (str) frente a Registro de Formación!F6 = datetime.datetime(2028, 9, 9, 0, 0). Verificado tambien: 0 celdas inexistentes y 0 valores vacios en las 789 etiquetas.",
+    "fix": "En los tres modulos _comun_*.py, sacar la nota de cabecera del diccionario de etiquetas a una clave hermana ({\"celdas\": {...}, \"notas\": \"...\"}) o darle un ref completo; y unificar la serializacion de fechas (la de _comun_libros_5_6.cerrar() es la correcta, las otras no la tienen)."
+  },
+  {
+    "id": "A10",
+    "libro": "los 8 (6 incumplen)",
+    "hoja_celda": "A1 de 37 hojas; ejemplos capacidad-obrador!Cuello de Botella!A1 «Cuello de botella» y plan-financiero!Punto de Equilibrio!A1 «Punto de equilibrio: cuantos tickets al dia»",
+    "gravedad": "bajo",
+    "problema": "La convencion pide Title Case espanol en encabezados. Los libros 3 (estacionalidad) y 4 (carta) lo cumplen en A1; los otros seis usan mayuscula de oracion. Y en los seis la PESTANA si esta en Title Case, asi que el mismo libro escribe el mismo titulo de dos formas.",
+    "evidencia": "Recuento de A1 en mayuscula de oracion: calculadora-capex 5 · capacidad-obrador 5 · checklist-equipamiento 5 · checklist-legal 7 · plan-financiero 10 · plantilla-turnos 5 = 37. carta 0 y estacionalidad 0. Pares pestana/A1 divergentes: 'Cuello de Botella'/'Cuello de botella', 'Punto de Equilibrio'/'Punto de equilibrio: ...', 'Variante del Formato'/'Variante del formato', 'IVA y Tesorería'/'IVA y tesoreria del arranque', 'Turnos Semanales'/'Turnos semanales'.",
+    "fix": "Una funcion titulo_hoja(nombre) en el modulo comun compartido que aplique Title Case espanol y se use tanto para ws.title como para A1, en los seis generadores."
+  },
+  {
+    "id": "A11",
+    "libro": "los 8",
+    "hoja_celda": "metadata subject de los 8; estacionalidad-y-picos!Instrucciones!A y carta-de-apertura-y-escandallo!Instrucciones!A; calculadora-capex-pasteleria!Parámetros!B11",
+    "gravedad": "bajo",
+    "problema": "Tres detalles de acabado. (a) El subject de la metadata usa tres formatos distintos. (b) Dos hojas de Instrucciones tienen la columna A a 118 de ancho; con fitToWidth=1 la hoja se imprime a una escala que deja el texto ilegible (los otros seis libros no pasan de 84). (c) El precio por m2 aplicado cae SILENCIOSAMENTE en «Medio» si el escenario esta vacio o mal escrito, en vez de devolver \"\": la DV lo impide mientras la hoja este protegida, pero la convencion de la casa es que un «sin dato» no se resuelva solo.",
+    "evidencia": "subject: 'Cómo Montar una Pastelería · libro 1 · v1.0' (libros 1-2) · '... · v1.0' (libros 7-8) · '... · Versión 1.0 · septiembre 2026' (libros 3-6). Anchos: estacionalidad!Instrucciones!A=118 y carta!Instrucciones!A=118; maximos del resto: 96 (checklist-legal), 84 (calculadora-capex y plan-financiero). Formula: calculadora-capex!Parámetros!B11 = IF(B10=\"Bajo\",B7,IF(B10=\"Alto\",B9,B8)).",
+    "fix": "(a) Un solo literal de subject en el modulo comun. (b) Tope de 90 de ancho y wrap_text en el modulo comun. (c) gen_calculadora-capex-pasteleria.py — B11 = IF(B10=\"\",\"\",IF(B10=\"Bajo\",B7,IF(B10=\"Alto\",B9,IF(B10=\"Medio\",B8,\"\"))))."
+  },
+  {
+    "id": "B9",
+    "libro": "checklist-legal-y-licencias.xlsx",
+    "hoja_celda": "Ruta Doméstica!B13",
+    "gravedad": "bajo",
+    "problema": "El tope legal de 100 kg/semana del art. 13.9 viaja en una celda VERDE, es decir, en el vocabulario del propio producto, «campo editable»: el lector puede subirlo a 300 y la hoja le dira «Dentro del tope». Al lado, B15 (criterio propio de proporcionalidad) tambien es verde y ahi si corresponde, porque es criterio de la casa y la hoja lo dice; la diferencia entre las dos no se ve. D13 lista como entradas verdes de esa hoja «m2 utiles · kg/semana · registro documental · CCAA amplia el 13.8.e)»: B13 no esta en esa lista.",
+    "evidencia": "Ruta Doméstica!B13 = 100, relleno E8F5E9, desbloqueada, con nota «Verificado el 10-09-2026 · RD 1021/2022, art. 13.9 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681». Alimenta B14 = IFERROR(IF(B7<=B13,\"Dentro del tope\",\"FUERA: el art. 13.9 no lo permite\"),\"\").",
+    "fix": "gen_checklist-legal-y-licencias.py — dejar B13 bloqueada y sin relleno verde (parametro normativo), manteniendo su nota legal. Revisar del mismo modo cualquier otra celda verde cuyo valor lo fije una norma."
+  },
+  {
+    "id": "B10",
+    "libro": "checklist-legal-y-licencias.xlsx",
+    "hoja_celda": "Checklist Legal (F1-F6)!C16 (nota) contra K16 (texto)",
+    "gravedad": "bajo",
+    "problema": "La nota legal del alta censal cita cuatro epigrafes de IAE y el texto visible de al lado, que cita PA-38, cita cinco. Falta el 419.1 en la nota. La afirmacion de fondo es correcta y coincide con PA-38, pero es la nota la que lleva el sello «Verificado».",
+    "evidencia": "C16 (nota): «Verificado el 10-09-2026 · RDLeg 1175/1990, tarifas del IAE, epigrafes 419.2, 644.1, 644.2 y 644.3 ...». K16 (texto): «PA-38 corrige el research: los epigrafes son 419.1, 419.2, 644.1, 644.2 y 644.3 del RDLeg 1175/1990 ...».",
+    "fix": "gen_checklist-legal-y-licencias.py — alinear el literal de la nota con el de PA-38 (anadir 419.1)."
+  },
+  {
+    "id": "B11",
+    "libro": "estacionalidad-y-picos.xlsx",
+    "hoja_celda": "Refuerzo y Tesorería!B7, C7, F7, H7",
+    "gravedad": "bajo",
+    "problema": "San Valentin sale con 0 personas y 0 horas de refuerzo, asi que el coste 0,00 EUR es un cero REAL y no un «sin dato» (correcto segun la convencion). Lo que chirria es que F7 esta mapeada como «Coste del refuerzo de San Valentin» con valor 0 y que H7 dice «No» porque hace falta 1 persona: un capitulo que cite la etiqueta imprimira «el refuerzo de San Valentin cuesta 0,00 EUR» al lado de «el refuerzo no cubre», que es verdad y suena a error.",
+    "evidencia": "Refuerzo y Tesorería!B7=0, C7=0, D7=IFERROR(B7*C7,\"\")=0,0, F7=IFERROR(D7*E7,\"\")=0,0, G7='Capacidad vs Demanda del Pico'!P7=1,0, H7='No'. datos_ejemplo.PICOS: San Valentin refuerzo_personas=0 y refuerzo_horas_persona=0. La etiqueta 'Coste del refuerzo de San Valentín' esta en mapa-estacionalidad-y-picos.json con valor 0.",
+    "fix": "gen_estacionalidad-y-picos.py — escribir en R7 la frase que ya tienen Reyes y Todos los Santos, explicando que San Valentin se resuelve con la plantilla y por eso el refuerzo es cero; y que el guion cite H7 junto con F7 o ninguna de las dos."
+  },
+  {
+    "id": "B12",
+    "libro": "checklist-legal-y-licencias.xlsx, plan-financiero-3-anos-pasteleria.xlsx, checklist-equipamiento-y-proveedores.xlsx, estacionalidad-y-picos.xlsx",
+    "hoja_celda": "Suministro a Otros Minoristas · Ruta Doméstica · 0. Supuestos · Escenarios · Personal · Canales y Punto Muerto · Contador · Peso sobre el Año",
+    "gravedad": "bajo",
+    "problema": "Ocho hojas largas sin inmovilizar la fila de cabecera. No esta en la lista de convenciones de la SPEC 2.2, asi que no es incumplimiento; se anota porque el resto del pack si lo hace bien (Escandallo por Tanda con 261 filas, Financiación con 118, Tesorería 12 meses y Checklist Legal (F1-F6) si tienen freeze_panes) y la diferencia se nota al usarlo.",
+    "evidencia": "Barrido de freeze_panes: sin inmovilizar en checklist-legal 'Suministro a Otros Minoristas' (48 filas) y 'Ruta Doméstica' (57), plan-financiero '0. Supuestos' (56), 'Escenarios', 'Personal' y 'Canales y Punto Muerto', checklist-equipamiento 'Contador' (45) y estacionalidad 'Peso sobre el Año'.",
+    "fix": "Anadir ws.freeze_panes en la fila siguiente a la de cabecera en las ocho hojas, desde el modulo comun compartido."
+  }
+]

@@ -1,0 +1,367 @@
+{
+ "Horas de turno del obrador": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B6",
+  "tipo": "entrada",
+  "valor": 8
+ },
+ "Horas productivas sobre la jornada": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B8",
+  "tipo": "entrada",
+  "valor": 0.85
+ },
+ "Minutos disponibles al día": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B9",
+  "tipo": "salida",
+  "valor": 408.0
+ },
+ "Días de apertura al año": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B11",
+  "tipo": "entrada",
+  "valor": 300
+ },
+ "Piezas al día en velocidad de crucero": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B12",
+  "tipo": "entrada",
+  "valor": 476
+ },
+ "Margen de seguridad exigido": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B13",
+  "tipo": "parametro",
+  "valor": 0.1
+ },
+ "Superficie total del local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B14",
+  "tipo": "entrada",
+  "valor": 90
+ },
+ "Parte mínima del local dedicada a obrador": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B15",
+  "tipo": "parametro",
+  "valor": 0.45
+ },
+ "Potencia de los hornos": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B16",
+  "tipo": "entrada",
+  "valor": 34
+ },
+ "Potencia instalada total": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B17",
+  "tipo": "entrada",
+  "valor": 62
+ },
+ "Caudal de campana necesario": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B21",
+  "tipo": "salida",
+  "valor": 1360.0
+ },
+ "Altura libre mínima exigida": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B22",
+  "tipo": "entrada",
+  "valor": 3
+ },
+ "Número de zonas del local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Parámetros!B23",
+  "tipo": "parametro",
+  "valor": 7
+ },
+ "Metros cuadrados repartidos entre las zonas": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D14",
+  "tipo": "salida",
+  "valor": 90.0
+ },
+ "Descuadre de metros contra la superficie declarada": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D16",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Metros de obrador": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D18",
+  "tipo": "salida",
+  "valor": 45.0
+ },
+ "Parte del local dedicada a obrador": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D19",
+  "tipo": "salida",
+  "valor": 0.5
+ },
+ "Metros de zona de venta": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D20",
+  "tipo": "salida",
+  "valor": 22.0
+ },
+ "Parte del local dedicada a venta": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D21",
+  "tipo": "salida",
+  "valor": 0.24444444444444444
+ },
+ "Veredicto del reparto de metros": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D23",
+  "tipo": "salida",
+  "valor": "Reparto suficiente"
+ },
+ "Numeración del recorrido correcta": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D28",
+  "tipo": "salida",
+  "valor": "Sí"
+ },
+ "Veredicto de marcha adelante": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D35",
+  "tipo": "salida",
+  "valor": "Marcha adelante correcta"
+ },
+ "Metros cuadrados del obrador (celda de entrada)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Zonas y m2!D6",
+  "tipo": "entrada",
+  "valor": 45
+ },
+ "Piezas/día de obrador que permite: Amasadora de espiral, 25 kg": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M6",
+  "tipo": "salida",
+  "valor": 11581.818181818182
+ },
+ "Piezas/día de obrador que permite: Batidora planetaria, 20 L": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M7",
+  "tipo": "salida",
+  "valor": 8533.333333333334
+ },
+ "Piezas/día de obrador que permite: Laminadora automática de masa, hasta 40 cm": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M8",
+  "tipo": "salida",
+  "valor": 4800.0
+ },
+ "Piezas/día de obrador que permite: Horno de convección, 6 bandejas": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M9",
+  "tipo": "salida",
+  "valor": 1920.0
+ },
+ "Piezas/día de obrador que permite: Horno de convección, 4 bandejas": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M10",
+  "tipo": "salida",
+  "valor": 3072.0
+ },
+ "Piezas/día de obrador que permite: Cámara de fermentación controlada (roll-in)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M11",
+  "tipo": "salida",
+  "valor": 1542.857142857143
+ },
+ "Piezas/día de obrador que permite: Abatidor de temperatura, 4 bandejas": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M12",
+  "tipo": "salida",
+  "valor": 480.0
+ },
+ "Piezas/día de obrador que permite: Cámara frigorífica de conservación, 8 m3": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M13",
+  "tipo": "salida",
+  "valor": 1244.4444444444443
+ },
+ "Piezas/día de obrador que permite: Vitrina expositora pastelera refrigerada": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M14",
+  "tipo": "salida",
+  "valor": 1036.2857142857144
+ },
+ "Piezas/día de obrador que permite: Horno de pisos modular (deck)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!M15",
+  "tipo": "salida",
+  "valor": 3080.0
+ },
+ "Equipos que dices tener": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!E18",
+  "tipo": "salida",
+  "valor": 9.0
+ },
+ "Minutos disponibles al día (capacidad)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!E17",
+  "tipo": "salida",
+  "valor": 408.0
+ },
+ "Piezas por ciclo del abatidor": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!H12",
+  "tipo": "salida",
+  "valor": 48.0
+ },
+ "Ciclos al día del abatidor": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!J12",
+  "tipo": "salida",
+  "valor": 4.0
+ },
+ "Parte del surtido que pasa por el abatidor": {
+  "ref": "capacidad-obrador-y-local.xlsx!Capacidad por Equipo!L12",
+  "tipo": "entrada",
+  "valor": 0.4
+ },
+ "Piezas al día objetivo": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B6",
+  "tipo": "salida",
+  "valor": 476.0
+ },
+ "Piezas al día que permite el conjunto": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B7",
+  "tipo": "salida",
+  "valor": 480.0
+ },
+ "El equipo que limita": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B8",
+  "tipo": "salida",
+  "valor": "Abatidor de temperatura, 4 bandejas"
+ },
+ "Holgura sobre el día normal (piezas)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B9",
+  "tipo": "salida",
+  "valor": 4.0
+ },
+ "Holgura sobre el día normal (%)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B10",
+  "tipo": "salida",
+  "valor": 0.008403361344537815
+ },
+ "Veredicto del día normal": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B12",
+  "tipo": "salida",
+  "valor": "AJUSTADO"
+ },
+ "El segundo equipo más justo permite": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B13",
+  "tipo": "salida",
+  "valor": 1036.2857142857144
+ },
+ "El segundo equipo más justo es": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B14",
+  "tipo": "salida",
+  "valor": "Vitrina expositora pastelera refrigerada"
+ },
+ "Piezas/día que hacen falta en Reyes": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!D18",
+  "tipo": "salida",
+  "valor": 2856.0
+ },
+ "Déficit de capacidad en Reyes": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!F18",
+  "tipo": "salida",
+  "valor": -2376.0
+ },
+ "Piezas/día que hacen falta en San Valentín": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!D19",
+  "tipo": "salida",
+  "valor": 856.8000000000001
+ },
+ "Déficit de capacidad en San Valentín": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!F19",
+  "tipo": "salida",
+  "valor": -376.80000000000007
+ },
+ "Piezas/día que hacen falta en Día del Padre y de la Madre": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!D20",
+  "tipo": "salida",
+  "valor": 904.4
+ },
+ "Déficit de capacidad en Día del Padre y de la Madre": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!F20",
+  "tipo": "salida",
+  "valor": -424.4
+ },
+ "Piezas/día que hacen falta en Semana Santa": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!D21",
+  "tipo": "salida",
+  "valor": 1142.3999999999999
+ },
+ "Déficit de capacidad en Semana Santa": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!F21",
+  "tipo": "salida",
+  "valor": -662.3999999999999
+ },
+ "Piezas/día que hacen falta en Comuniones": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!D22",
+  "tipo": "salida",
+  "valor": 761.6
+ },
+ "Déficit de capacidad en Comuniones": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!F22",
+  "tipo": "salida",
+  "valor": -281.6
+ },
+ "Piezas/día que hacen falta en Todos los Santos": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!D23",
+  "tipo": "salida",
+  "valor": 1237.6000000000001
+ },
+ "Déficit de capacidad en Todos los Santos": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!F23",
+  "tipo": "salida",
+  "valor": -757.6000000000001
+ },
+ "Picos que no aguantas": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B25",
+  "tipo": "salida",
+  "valor": 6.0
+ },
+ "El peor déficit de campaña": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B26",
+  "tipo": "salida",
+  "valor": -2376.0
+ },
+ "Pico del peor déficit": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B27",
+  "tipo": "salida",
+  "valor": "Reyes"
+ },
+ "Veredicto de campaña": {
+  "ref": "capacidad-obrador-y-local.xlsx!Cuello de Botella!B28",
+  "tipo": "salida",
+  "valor": "Varios picos se te van del obrador"
+ },
+ "Ítems de la ficha de visita": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E25",
+  "tipo": "salida",
+  "valor": 18.0
+ },
+ "Ítems eliminatorios de la ficha": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E26",
+  "tipo": "salida",
+  "valor": 8.0
+ },
+ "Motivos de descarte del local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E27",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Puntos débiles del local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E28",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Pendientes de comprobar del local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E29",
+  "tipo": "salida",
+  "valor": 2.0
+ },
+ "Ficha comprobada (%)": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E31",
+  "tipo": "salida",
+  "valor": 0.8888888888888888
+ },
+ "VEREDICTO DEL LOCAL": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!E32",
+  "tipo": "salida",
+  "valor": "NO DECIDAS TODAVÍA"
+ },
+ "Caudal de campana ofrecido por el local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!F8",
+  "tipo": "entrada",
+  "valor": 1400
+ },
+ "Potencia contratable del local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!F9",
+  "tipo": "entrada",
+  "valor": 70
+ },
+ "Altura libre medida en el local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!F12",
+  "tipo": "entrada",
+  "valor": 3.2
+ },
+ "Superficie útil medida en el local": {
+  "ref": "capacidad-obrador-y-local.xlsx!Ficha de Visita a Local!F13",
+  "tipo": "entrada",
+  "valor": 92
+ }
+}

@@ -1,0 +1,1102 @@
+{
+ "Coste de empresa anual del obrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!F9",
+  "valor": 67850.14950000001,
+  "tipo": "salida"
+ },
+ "Jornadas de obrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B9",
+  "valor": 2.5,
+  "tipo": "salida"
+ },
+ "Pagas del convenio al año": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B11",
+  "valor": 15,
+  "tipo": "parametro"
+ },
+ "Seguridad Social a cargo de la empresa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B12",
+  "valor": 0.33,
+  "tipo": "parametro"
+ },
+ "Horas anuales de contrato": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B13",
+  "valor": 1780,
+  "tipo": "parametro"
+ },
+ "Horas productivas sobre la jornada": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B14",
+  "valor": 0.85,
+  "tipo": "parametro"
+ },
+ "Horas productivas del obrador al año": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B15",
+  "valor": 3782.5,
+  "tipo": "salida"
+ },
+ "Coste hora productiva de obrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B16",
+  "valor": 17.937911302048914,
+  "tipo": "salida"
+ },
+ "IVA de pastelería": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B19",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA del pan": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B20",
+  "valor": 0.04,
+  "tipo": "parametro"
+ },
+ "IVA en zona de degustación": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B21",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Food cost objetivo": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B24",
+  "valor": 0.32,
+  "tipo": "parametro"
+ },
+ "Margen bruto objetivo derivado": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B25",
+  "valor": 0.6799999999999999,
+  "tipo": "salida"
+ },
+ "Techo de la fila 9 del art. 4.1": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B28",
+  "valor": 4,
+  "tipo": "parametro"
+ },
+ "Techo del art. 9.3": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B29",
+  "valor": 8,
+  "tipo": "parametro"
+ },
+ "Plazo de consumo del art. 9.3": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B30",
+  "valor": 24,
+  "tipo": "parametro"
+ },
+ "Umbral analítico de sin gluten": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B31",
+  "valor": 20,
+  "tipo": "parametro"
+ },
+ "Merma objetivo": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B34",
+  "valor": 0.05,
+  "tipo": "parametro"
+ },
+ "Packaging sobre el coste del producto": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B35",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Piezas por cliente": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B36",
+  "valor": 2.6,
+  "tipo": "parametro"
+ },
+ "Umbral de rotación del semáforo de surtido": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B37",
+  "valor": 1,
+  "tipo": "parametro"
+ },
+ "Bruto mensual del Jefe Pastelero": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!D6",
+  "valor": 1427.89,
+  "tipo": "parametro"
+ },
+ "Coste de empresa anual del Jefe Pastelero": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!F6",
+  "valor": 28486.405500000004,
+  "tipo": "salida"
+ },
+ "Líneas del escandallo de las 30 referencias": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!E266",
+  "valor": 226.0,
+  "tipo": "salida"
+ },
+ "Aviso de descuadre entre líneas y referencias": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!G266",
+  "valor": "Cuadra",
+  "tipo": "salida"
+ },
+ "Materia prima de una tanda de cada referencia": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!F266",
+  "valor": 375.6010024495941,
+  "tipo": "salida"
+ },
+ "Coste de mano de obra de las 30 tandas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!H36",
+  "valor": 542.6218168869797,
+  "tipo": "salida"
+ },
+ "Food cost medio simple de las 30 referencias": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!O36",
+  "valor": 0.19140911070355546,
+  "tipo": "salida"
+ },
+ "Margen medio por unidad de las 30 referencias": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!Q36",
+  "valor": 1.7494636600701559,
+  "tipo": "salida"
+ },
+ "Peso medio de la mano de obra sobre el coste": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!R36",
+  "valor": 0.6329626685895051,
+  "tipo": "salida"
+ },
+ "Referencias que necesitan vitrina refrigerada": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G38",
+  "valor": 15.0,
+  "tipo": "salida"
+ },
+ "Referencias que van en vitrina de ambiente": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G39",
+  "valor": 15.0,
+  "tipo": "salida"
+ },
+ "Referencias con el techo de la fila 9 del art. 4.1": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G40",
+  "valor": 13.0,
+  "tipo": "salida"
+ },
+ "Referencias con el techo del art. 9.3": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G41",
+  "valor": 15.0,
+  "tipo": "salida"
+ },
+ "Referencias a las que aplican los dos techos": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G42",
+  "valor": 13.0,
+  "tipo": "salida"
+ },
+ "Referencias con plazo legal de 24 horas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G43",
+  "valor": 15.0,
+  "tipo": "salida"
+ },
+ "Referencias sin huevo": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G44",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Referencias por la vía 63/20": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!G45",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Suma del mix de la carta": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!D36",
+  "valor": 100.0,
+  "tipo": "salida"
+ },
+ "PVP medio ponderado con IVA": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F39",
+  "valor": 2.4556999999999998,
+  "tipo": "salida"
+ },
+ "Ticket medio con IVA": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F41",
+  "valor": 6.3848199999999995,
+  "tipo": "salida"
+ },
+ "Ticket medio sin IVA": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F42",
+  "valor": 5.868813636363638,
+  "tipo": "salida"
+ },
+ "IVA medio de la carta": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F43",
+  "valor": 0.08792345363279996,
+  "tipo": "salida"
+ },
+ "Food cost de materia de la carta": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F44",
+  "valor": 0.175545871783516,
+  "tipo": "salida"
+ },
+ "Food cost servido con merma y packaging": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F45",
+  "valor": 0.20326364101249222,
+  "tipo": "salida"
+ },
+ "Margen de contribución medio por pieza": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Mix y Ticket Medio!F47",
+  "valor": 1.0710505181905658,
+  "tipo": "salida"
+ },
+ "Margen ponderado de 100 piezas de la carta": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!G36",
+  "valor": 1.0710505181905658,
+  "tipo": "salida"
+ },
+ "Margen ponderado medio de la carta": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E42",
+  "valor": 0.03570168393968553,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto «Mantener»": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E39",
+  "valor": 27.0,
+  "tipo": "salida"
+ },
+ "Margen ponderado de las referencias «Mantener»": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!F39",
+  "valor": 1.0278666711708286,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto «Revisar precio»": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E40",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Margen ponderado de las referencias «Revisar precio»": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!F40",
+  "valor": 0.011991309464220818,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto «Retirar»": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!E41",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Margen ponderado de las referencias «Retirar»": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!F41",
+  "valor": 0.031192537555516243,
+  "tipo": "salida"
+ },
+ "Coste de materia por unidad de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!G236",
+  "valor": 0.23583508500713268,
+  "tipo": "salida"
+ },
+ "Coste de materia de la tanda de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!F236",
+  "valor": 4.716701700142654,
+  "tipo": "salida"
+ },
+ "Coste de mano de obra por unidad de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!I6",
+  "valor": 0.8221542680105752,
+  "tipo": "salida"
+ },
+ "Coste total por unidad de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!K6",
+  "valor": 1.057989353017708,
+  "tipo": "salida"
+ },
+ "Food cost de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!O6",
+  "valor": 0.16213662094240372,
+  "tipo": "salida"
+ },
+ "Margen por unidad de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!Q6",
+  "valor": 0.39655610152774656,
+  "tipo": "salida"
+ },
+ "Uds por tanda de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!D236",
+  "valor": 20,
+  "tipo": "entrada"
+ },
+ "Minutos de mano de obra de la tanda de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!E6",
+  "valor": 55,
+  "tipo": "entrada"
+ },
+ "PVP con IVA de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!L6",
+  "valor": 1.6,
+  "tipo": "entrada"
+ },
+ "Coste de materia por unidad de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!G244",
+  "valor": 0.19650996048982955,
+  "tipo": "salida"
+ },
+ "Coste de materia de la tanda de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!F244",
+  "valor": 5.895298814694886,
+  "tipo": "salida"
+ },
+ "Coste de mano de obra por unidad de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!I14",
+  "valor": 0.797240502313285,
+  "tipo": "salida"
+ },
+ "Coste total por unidad de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!K14",
+  "valor": 0.9937504628031146,
+  "tipo": "salida"
+ },
+ "Food cost de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!O14",
+  "valor": 0.10293378882800597,
+  "tipo": "salida"
+ },
+ "Margen por unidad de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!Q14",
+  "valor": 0.9153404462877943,
+  "tipo": "salida"
+ },
+ "Uds por tanda de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!D244",
+  "valor": 30,
+  "tipo": "entrada"
+ },
+ "Minutos de mano de obra de la tanda de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!E14",
+  "valor": 80,
+  "tipo": "entrada"
+ },
+ "PVP con IVA de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!L14",
+  "valor": 2.1,
+  "tipo": "entrada"
+ },
+ "Coste de materia por unidad de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!G248",
+  "valor": 1.1523320276641473,
+  "tipo": "salida"
+ },
+ "Coste de materia de la tanda de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!F248",
+  "valor": 13.827984331969768,
+  "tipo": "salida"
+ },
+ "Coste de mano de obra por unidad de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!I18",
+  "valor": 1.121119456378057,
+  "tipo": "salida"
+ },
+ "Coste total por unidad de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!K18",
+  "valor": 2.273451484042204,
+  "tipo": "salida"
+ },
+ "Food cost de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!O18",
+  "valor": 0.3521014528973784,
+  "tipo": "salida"
+ },
+ "Margen por unidad de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!Q18",
+  "valor": 0.9992757886850683,
+  "tipo": "salida"
+ },
+ "Uds por tanda de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Escandallo por Tanda!D248",
+  "valor": 12,
+  "tipo": "entrada"
+ },
+ "Minutos de mano de obra de la tanda de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!E18",
+  "valor": 45,
+  "tipo": "entrada"
+ },
+ "PVP con IVA de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Coste Hora y Mano de Obra!L18",
+  "valor": 3.6,
+  "tipo": "entrada"
+ },
+ "Precio de compra de Mantequilla seca (82% MG)": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B75",
+  "valor": 12,
+  "tipo": "entrada"
+ },
+ "Precio de compra de Chocolate negro 70%": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B52",
+  "valor": 18,
+  "tipo": "entrada"
+ },
+ "Precio de compra de Harina de fuerza": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Parámetros!B62",
+  "valor": 1.1,
+  "tipo": "entrada"
+ },
+ "Plazo legal del art. 9.3 de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K6",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J6",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Croissant de mantequilla en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M6",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Croissant de mantequilla": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J6",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Pain au chocolat": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K7",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Pain au chocolat": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J7",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Pain au chocolat en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M7",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Pain au chocolat": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J7",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Napolitana de crema": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K8",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Napolitana de crema": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J8",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Napolitana de crema en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M8",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Napolitana de crema": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J8",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Napolitana de crema": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I8",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Palmera de hojaldre": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K9",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Palmera de hojaldre": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J9",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Palmera de hojaldre en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M9",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Palmera de hojaldre": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J9",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Caracola de pasas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K10",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Caracola de pasas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J10",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Caracola de pasas en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M10",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Caracola de pasas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J10",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Caracola de pasas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I10",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Ensaimada": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K11",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Ensaimada": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J11",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Ensaimada en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M11",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Ensaimada": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J11",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Milhojas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K12",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Milhojas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J12",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Milhojas en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M12",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Milhojas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J12",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Milhojas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I12",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Éclair": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K13",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Éclair": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J13",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Éclair en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M13",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Éclair": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J13",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Éclair": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I13",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K14",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J14",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Macarons de frambuesa en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M14",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J14",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Macarons de frambuesa": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I14",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tartaleta de frutas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K15",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tartaleta de frutas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J15",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Tartaleta de frutas en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M15",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tartaleta de frutas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J15",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Tartaleta de frutas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I15",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Lionesa o profiterol": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K16",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Lionesa o profiterol": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J16",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Lionesa o profiterol en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M16",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Lionesa o profiterol": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J16",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Lionesa o profiterol": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I16",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Entremet individual": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K17",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Entremet individual": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J17",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Entremet individual en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M17",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Entremet individual": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J17",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Entremet individual": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I17",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K18",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J18",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Tarta de chocolate 70 % en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M18",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J18",
+  "valor": "Revisar precio",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Tarta de chocolate 70 %": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I18",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tarta de queso": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K19",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tarta de queso": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J19",
+  "valor": "Manda el art. 9.3: elaborado por la vía del art. 9.1.a) sin ser estable, o con ovoproducto del art. 9.2.",
+  "tipo": "salida"
+ },
+ "Dónde va Tarta de queso en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M19",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tarta de queso": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J19",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Tarta de queso": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I19",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tarta de manzana": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K20",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tarta de manzana": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J20",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Tarta de manzana en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M20",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tarta de manzana": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J20",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tarta de zanahoria": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K21",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tarta de zanahoria": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J21",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Tarta de zanahoria en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M21",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tarta de zanahoria": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J21",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Tarta de zanahoria": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I21",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tarta Sacher": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K22",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tarta Sacher": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J22",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Tarta Sacher en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M22",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tarta Sacher": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J22",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Tarta de nata y fresas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K23",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Tarta de nata y fresas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J23",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Tarta de nata y fresas en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M23",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Tarta de nata y fresas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J23",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Tarta de nata y fresas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I23",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Barra": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K24",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Barra": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J24",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Barra en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M24",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Barra": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J24",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Chapata": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K25",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Chapata": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J25",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Chapata en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M25",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Chapata": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J25",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Hogaza de masa madre": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K26",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Hogaza de masa madre": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J26",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Hogaza de masa madre en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M26",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Hogaza de masa madre": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J26",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Pan de molde": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K27",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Pan de molde": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J27",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Pan de molde en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M27",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Pan de molde": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J27",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Roscón de Reyes": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K28",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Roscón de Reyes": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J28",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Roscón de Reyes en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M28",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Roscón de Reyes": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J28",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Roscón de Reyes": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I28",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Torrijas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K29",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Torrijas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J29",
+  "valor": "Manda el art. 9.3: elaborado por la vía del art. 9.1.a) sin ser estable, o con ovoproducto del art. 9.2.",
+  "tipo": "salida"
+ },
+ "Dónde va Torrijas en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M29",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Torrijas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J29",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Torrijas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I29",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Buñuelos de viento": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K30",
+  "valor": 24.0,
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Buñuelos de viento": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J30",
+  "valor": "Le aplican los DOS techos y manda el más bajo, el de la fila 9 del art. 4.1. No es un conflicto: son dos topes distintos.",
+  "tipo": "salida"
+ },
+ "Dónde va Buñuelos de viento en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M30",
+  "valor": "Vitrina refrigerada",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Buñuelos de viento": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J30",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Temperatura de conservación de Buñuelos de viento": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!I30",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Huesos de santo": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K31",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Huesos de santo": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J31",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Huesos de santo en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M31",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Huesos de santo": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J31",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Panellets": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K32",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Panellets": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J32",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Panellets en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M32",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Panellets": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J32",
+  "valor": "Retirar",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Polvorón o mantecado": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K33",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Polvorón o mantecado": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J33",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Polvorón o mantecado en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M33",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Polvorón o mantecado": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J33",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Turrón de almendra": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K34",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Turrón de almendra": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J34",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Turrón de almendra en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M34",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Turrón de almendra": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J34",
+  "valor": "Retirar",
+  "tipo": "salida"
+ },
+ "Plazo legal del art. 9.3 de Mona de Pascua": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!K35",
+  "valor": "No aplica",
+  "tipo": "salida"
+ },
+ "Cuál manda en la temperatura de Mona de Pascua": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!J35",
+  "valor": "Ni la fila 9 del art. 4.1 ni el art. 9.3 le fijan techo: vitrina de ambiente.",
+  "tipo": "salida"
+ },
+ "Dónde va Mona de Pascua en el mostrador": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Huevo y Temperatura!M35",
+  "valor": "Vitrina de ambiente",
+  "tipo": "salida"
+ },
+ "Veredicto de surtido de Mona de Pascua": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Decisión de Surtido!J35",
+  "valor": "Mantener",
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "carta-de-apertura-y-escandallo.xlsx!Instrucciones!A1",
+  "valor": "D23: la regla de margen es una sola. «Parámetros» pide el food cost objetivo y DERIVA el margen bruto; en ningún sitio se piden los dos. D11: la temperatura es el MÍNIMO de los techos que apliquen (fila 9 del art. 4.1 y art. 9.3) y el plazo del art. 9.3 va en su propia columna; la vida útil NO se calcula para ninguna de las 30 referencias: es celda verde con el texto «Por declarar en tu APPCC». R3 y R4: aquí no hay declaración de alérgenos ni registro de temperaturas; están en el Kit de Tareas Pastelería y en el Pack APPCC. Tarta de chocolate 70 %, croissants y macarons llevan el escandallo EXACTO de kit-escandallos/05-pasteleria.xlsx, copiado y declarado, nunca vinculado.",
+  "tipo": "nota"
+ }
+}
