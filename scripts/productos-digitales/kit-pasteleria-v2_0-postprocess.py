@@ -27,8 +27,8 @@ Qué hace:
 
 Segunda pasada (auditoría adversarial de 3 lentes, 2026-08-22):
   6. 01 → horario de tienda coherente con el 08 (vitrinas a las 06:45 con
-     comprobación de 2-6 °C, montaje 07:45, retirada de vitrina tras el cierre
-     de las 19:50) y el producto del día anterior a promoción o a merma.
+     comprobación de 0-4 °C desde la 2.1, montaje 07:45, retirada de vitrina tras
+     el cierre de las 19:50) y el producto del día anterior a promoción o a merma.
   7. 02 → cadena real del croissant: la 1ª hornada sale de la croissantería
      formada el día anterior (fermentación controlada nocturna) y la fila
      antigua pasa a ser la 2ª hornada de media mañana; fermentación 24-26 °C.
@@ -74,6 +74,30 @@ VERSION = '2.0'
 VERSION_LINE = ('Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pasteleria · '
                 'info@aichef.pro')
 RX_VERSION = re.compile(r'^Versión \d+\.\d+ · .*kit-tareas-pasteleria')
+
+# El 2026-09-10 se corrigieron al RD 1021/2022 las temperaturas de vitrina del
+# producto relleno (art. 4.1, fila 9 → 4 °C o menos) y la vida útil de las cremas
+# con huevo (art. 9.3 → 24 h). Sólo afecta a estos cuatro libros, que pasan a la
+# 2.1; los otros 11 se quedan en la 2.0 y NO deben regenerarse. La versión se
+# resuelve por fichero para que este script se pueda volver a pasar sobre el kit
+# entero sin revertir la 2.1 (el 08 y el 13 la traen ya del generador).
+VERSION_21 = '2.1'
+VERSION_LINE_21 = ('Versión 2.1 · septiembre 2026 · aichef.pro/kit-tareas-pasteleria · '
+                   'info@aichef.pro')
+FICHEROS_V21 = {
+    '01-apertura-cierre.xlsx',
+    '02-partidas-cocina.xlsx',
+    '08-apertura-cierre-negocio.xlsx',
+    '13-registro-temperaturas-recepcion.xlsx',
+}
+
+
+def version_de(fname):
+    return VERSION_21 if fname in FICHEROS_V21 else VERSION
+
+
+def version_line_de(fname):
+    return VERSION_LINE_21 if fname in FICHEROS_V21 else VERSION_LINE
 BIO_NEW = ('Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, '
            'en cocina desde los 17 años · johnguerrero.es')
 PIE_HOJA = '— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro'
@@ -130,6 +154,10 @@ REF = {
 
 AUTORREF = {
     '01-apertura-cierre.xlsx': [
+        # Las dos grafías: `aplicar_autorreferencias` casa por texto exacto, así
+        # que sin la de la 2.0 el fichero viejo se quedaría sin la remisión al 13.
+        ('Encender las vitrinas refrigeradas y comprobar que están a 0-4 °C '
+         'antes de montar', 'TEMP'),
         ('Encender las vitrinas refrigeradas y comprobar que están a 2-6 °C '
          'antes de montar', 'TEMP'),
         ('Verificar temperatura de cámaras frigoríficas (registrar)', 'TEMP'),
@@ -347,8 +375,10 @@ PARAMETROS_02 = {
         '2 partes de pastelera por 1 de nata montada',
     'Preparar lemon curd / curd de frutas de temporada':
         'Cocer hasta 82-84 °C',
+    # Las cremas llevan huevo y no son estables a temperatura ambiente: RD 1021/2022,
+    # art. 9.3 → 24 h de tope, se cuezan o se hagan con ovoproducto. No es orientativo.
     'Etiquetar todas las cremas con fecha y hora de elaboración':
-        'Vida útil orientativa 48-72 h a ≤4 °C',
+        '24 h de tope a ≤4 °C (art. 9.3)',
     'Preparar mousse de chocolate (templar chocolate + merengue + nata)':
         'Chocolate a 45-50 °C · mezcla final a 28-30 °C',
     'Preparar mousse de frutas (puré + gelatina + merengue + nata)':
@@ -384,7 +414,7 @@ PARAMETROS_02 = {
     'Montar vitrina de bollería (croissants, pain au chocolat, napolitanas)':
         'Ambiente · reponer en tandas pequeñas',
     'Montar vitrina de pastelería (tartas individuales, entremets, macarons)':
-        'Vitrina refrigerada a 2-6 °C',
+        'Vitrina refrigerada a 0-4 °C (art. 4.1, fila 9)',
     'Montar vitrina de pan (si aplica)':
         'Ambiente seco · nunca en frío',
     'Colocar etiquetas de alérgenos e ingredientes':
@@ -1132,8 +1162,14 @@ def ajustar_06(wb, informe):
 # ==========================================================================
 # 2 bis) 01 — horario de tienda coherente con el 08 (OBR-05/06/09)
 # ==========================================================================
+# La vitrina expone producto de pastelería relleno: RD 1021/2022, art. 4.1, fila 9
+# → 4 °C o menos. El enunciado de la 2.0 admitía hasta 6 °C. Se conserva la grafía
+# vieja como clave de búsqueda: `actualizar_tarea` localiza la tarea por su texto,
+# y sin ella una segunda pasada no encontraría la fila que hay que corregir.
+TXT_VITRINAS_V20 = ('Encender las vitrinas refrigeradas y comprobar que están a '
+                    '2-6 °C antes de montar')
 TXT_VITRINAS = ('Encender las vitrinas refrigeradas y comprobar que están a '
-                '2-6 °C antes de montar')
+                '0-4 °C antes de montar')
 TXT_RETIRAR_VITRINA = ('Retirar el producto de vitrina y separar el sobrante: a promoción '
                        'señalizada o a merma, nunca a la vitrina normal de mañana'
                        ' → 10 Plan de Producción Semanal · hoja Producido vs Vendido')
@@ -1149,7 +1185,7 @@ def ajustar_01(wb, informe):
     # encienden a las 06:45 y se comprueba la temperatura (el 08 usa la misma
     # regla). El montaje es a las 07:45 y la tienda abre a las 08:00.
     actualizar_tarea(ap, {'Encender iluminación y climatización de vitrinas',
-                          TXT_VITRINAS},
+                          TXT_VITRINAS_V20, TXT_VITRINAS},
                      texto=TXT_VITRINAS, hora='06:45')
     actualizar_tarea(ap, {'Colocar productos del día anterior (verificar caducidad)',
                           base_texto(TXT_DIA_ANTERIOR)},
@@ -1640,7 +1676,7 @@ def set_metadata(wb, fname):
     p.creator = 'AI Chef Pro'
     p.lastModifiedBy = 'AI Chef Pro'
     p.title = titulo
-    p.subject = f'Kit de Tareas Recurrentes · Pastelería / Obrador · v{VERSION}'
+    p.subject = f'Kit de Tareas Recurrentes · Pastelería / Obrador · v{version_de(fname)}'
     p.keywords = 'pastelería, obrador, checklist, tareas, AI Chef Pro'
     p.description = 'aichef.pro/kit-tareas-pasteleria'
     p.category = 'AI Chef Pro · Productos digitales'
@@ -1680,7 +1716,7 @@ def finalizar(wb, fname):
                 elif isinstance(c.value, str) and ('29 años' in c.value or '15 años' in c.value):
                     c.value = BIO_NEW
         if ws.title == 'Instrucciones':
-            linea_instrucciones(ws, VERSION_LINE, RX_VERSION)
+            linea_instrucciones(ws, version_line_de(fname), RX_VERSION)
             if ws.page_setup.paperSize is None:
                 ws.page_setup.paperSize = 9
                 ws.page_setup.orientation = 'portrait'
@@ -1769,7 +1805,7 @@ def verificar(fname):
                     for p in PROHIBIDOS:
                         if p in v:
                             prohibidos.append(f'{ws.title}!{c.coordinate}:{p}')
-                    if v == VERSION_LINE:
+                    if v == version_line_de(fname):
                         version_ok = True
 
     # Una fórmula que evalúa a cadena vacía NO es un fallo de cache: es lo que
@@ -1838,7 +1874,8 @@ def main():
         v = verificar(f)
         bien = (v['sin_cache'] == 0 and v['no_latinos'] == 0 and v['fechas'] == 0
                 and not v['prohibidos']
-                and v['creator'] == 'AI Chef Pro' and v['subject'].endswith('v2.0')
+                and v['creator'] == 'AI Chef Pro'
+                and v['subject'].endswith('v' + version_de(f))
                 and v['version_v2'])
         ok &= bien
         print(f"  {'OK  ' if bien else 'FALLA'} {f}: {v}")

@@ -31,11 +31,11 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
         date: '2026-09-10',
         title: 'Vidas útiles y temperaturas de vitrina ajustadas al RD 1021/2022',
         changes: [
-          'Las elaboraciones con huevo —crema pastelera, mousse y bavarois, merengue italiano y curd— pasan a 24 horas de vida útil: es el máximo que fija el Real Decreto 1021/2022 para lo elaborado con huevo que no se conserva a temperatura ambiente, tanto si se cuece como si se hace con ovoproducto.',
-          'Las vitrinas refrigeradas pasan a un objetivo de 0 a 4 °C, porque el producto de pastelería relleno debe mantenerse a 4 °C o menos. El aviso en rojo de la hoja mensual salta ya con ese límite, y la tarta montada con nata lo indica en su ficha.',
+          'Las elaboraciones con huevo —crema pastelera, mousse y bavarois, merengue italiano y curd— pasan a 24 horas de vida útil: es el máximo que fija el Real Decreto 1021/2022 para lo elaborado con huevo que no se conserva a temperatura ambiente, tanto si se cuece como si se hace con ovoproducto. Corregido en la tabla de vidas útiles de la plantilla 13 y en el parámetro de las cremas de la 02.',
+          'Las vitrinas refrigeradas pasan a un objetivo de 0 a 4 °C, porque el producto de pastelería relleno debe mantenerse a 4 °C o menos. Está corregido en las cuatro plantillas que pedían comprobar la vitrina: apertura del obrador (01), montaje de vitrina (02), apertura y cierre del negocio (08) y el registro mensual de temperaturas (13), cuyo aviso en rojo salta ya con ese límite.',
           'Las Etiquetas de Elaborado piden ahora fecha Y hora: en las elaboraciones con huevo la norma obliga a registrar la hora, y sin ella no se sabe cuándo vence el plazo de 24 horas.',
           'La hoja Vidas Útiles separa lo que es un tope legal de lo que es orientativo, cita el artículo que aplica en cada fila y añade al pie la referencia del texto consolidado del Real Decreto.',
-          'La actualización afecta solo a la plantilla 13 — Registro de Temperaturas, Recepción y Etiquetas. Las otras 14 plantillas del kit no cambian.',
+          'La actualización afecta a cuatro plantillas: 01 Apertura y Cierre, 02 Partidas de Producción, 08 Apertura y Cierre del Negocio y 13 Registro de Temperaturas, Recepción y Etiquetas. Las otras 11 del kit no cambian.',
         ],
       },
       {

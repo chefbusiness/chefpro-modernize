@@ -128,10 +128,12 @@ PCT = '0.0%'
 PCT0 = '0%'  # reservado: los porcentajes del kit van a un decimal (0,0 %)
 
 VERSION_LINE = "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pasteleria · info@aichef.pro"
-# El libro 13 va por delante del resto del kit: el 2026-09-10 se corrigieron sus
-# vidas útiles y sus temperaturas de vitrina al RD 1021/2022 (art. 9.3 y art. 4.1,
-# fila 9). Los otros 14 ficheros no cambian y se quedan en la 2.0.
-VERSION_LINE_13 = ("Versión 2.1 · septiembre 2026 · aichef.pro/kit-tareas-pasteleria · "
+# Los libros 01, 02, 08 y 13 van por delante del resto del kit: el 2026-09-10 se
+# corrigieron sus vidas útiles y sus temperaturas de vitrina al RD 1021/2022
+# (art. 9.3 y art. 4.1, fila 9). De este generador salen el 08 y el 13; el 01 y
+# el 02 los corrige kit-pasteleria-v2_0-postprocess.py, que lleva la misma lista.
+# Los otros 11 ficheros no cambian y se quedan en la 2.0.
+VERSION_LINE_21 = ("Versión 2.1 · septiembre 2026 · aichef.pro/kit-tareas-pasteleria · "
                    "info@aichef.pro")
 BOE_RD1021 = "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681"
 BIO_LINE = ("Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, "
@@ -454,7 +456,7 @@ def footer_line(ws, row, col=1):
 MINUTOS_VITRINA = 45
 
 APERTURA_NEGOCIO = [
-    ("Desactivar la alarma y encender las vitrinas refrigeradas: anotar la temperatura (2-6 °C) — mínimo 45 minutos antes de montar el género (→ 13 Registro de Temperaturas · hoja Registro de Temperaturas)", "Vitrina", "Encargado", "06:45"),
+    ("Desactivar la alarma y encender las vitrinas refrigeradas: anotar la temperatura (0-4 °C) — mínimo 45 minutos antes de montar el género (→ 13 Registro de Temperaturas · hoja Registro de Temperaturas)", "Vitrina", "Encargado", "06:45"),
     ("Encender las luces generales, el escaparate y el rótulo exterior", "General", "Encargado", "06:45"),
     ("Encender la climatización o la calefacción: la tienda entre 20 y 22 °C (por encima sufren el chocolate y el hojaldre)", "General", "Encargado", "06:50"),
     ("Encender el TPV y el datáfono; comprobar el rollo de papel y la conexión de la pasarela de pago", "Caja", "Encargado", "06:55"),
@@ -463,7 +465,7 @@ APERTURA_NEGOCIO = [
     ("Recoger la producción del obrador y contrastarla con el plan del día (→ 10 Plan de Producción Semanal · hoja Plan Semanal)", "Obrador", "Dependiente", "07:15"),
     ("Reponer el packaging del mostrador: cajas, bolsas, papel antigrasa, cintas, blondas y velas", "Tienda", "Dependiente", "07:25"),
     ("Limpiar los cristales de la vitrina, el mostrador y la puerta de entrada antes de montar el género", "Tienda", "Ayudante", "07:30"),
-    ("Comprobar que las vitrinas han bajado a 2-6 °C antes de montar; si no han llegado, retrasar el montaje", "Vitrina", "Dependiente", "07:40"),
+    ("Comprobar que las vitrinas han bajado a 0-4 °C antes de montar; si no han llegado, retrasar el montaje", "Vitrina", "Dependiente", "07:40"),
     ("Montar la vitrina en orden: primero bollería, después pastelería refrigerada y al final salado", "Vitrina", "Dependiente", "07:45"),
     ("Revisar el producto del día anterior: retirar lo que no esté en punto y anotarlo como merma (→ 10 Plan de Producción Semanal · hoja Producido vs Vendido)", "Vitrina", "Dependiente", "07:45"),
     ("Colocar la etiqueta de precio y de alérgenos de cada referencia (→ 12 Control de Alérgenos de Vitrina · hoja Etiquetas Vitrina)", "Vitrina", "Dependiente", "07:50"),
@@ -587,7 +589,8 @@ def generate_08():
             "▸ El LOCAL: tienda, despacho, vitrinas, caja y accesos. La producción del obrador va en el fichero 01.",
             "▸ Las tareas están en el orden real en el que se hacen, con su hora límite orientativa.",
             "▸ La primera tarea del día son las vitrinas: enciéndelas mínimo 45 minutos antes de montar el "
-            "género, que es lo que tardan en bajar a 2-6 °C. El cronograma las enciende a las 06:45, monta "
+            "género, que es lo que tardan en bajar a 0-4 °C — el tope que el RD 1021/2022 (art. 4.1, fila 9) "
+            "fija al producto de pastelería relleno. El cronograma las enciende a las 06:45, monta "
             "a las 07:45 y abre al público a las 08:00.",
             "▸ El cierre empieza vendiendo, no recogiendo: primero se agrupa y se señaliza el producto en "
             "promoción, a las 19:50 se cierra la puerta al público y solo entonces se vacía la vitrina.",
@@ -604,6 +607,7 @@ def generate_08():
             "▸ Borra las tareas que no apliquen a tu local (zona de degustación, máquina de café, reparto).",
         ],
         extra_lines=[MARCA_LINE],
+        version_line=VERSION_LINE_21,
     )
     negocio_sheet(wb, "Apertura del Negocio", "FFD700",
                   "Apertura del Negocio — Pastelería con Tienda",
@@ -615,7 +619,7 @@ def generate_08():
                   "Fecha: ____/____/________     Responsable de turno: _________________________     "
                   "Temperatura de vitrina al cerrar: ______ °C",
                   CIERRE_NEGOCIO)
-    set_metadata(wb, "08")
+    set_metadata(wb, "08", version="2.1")
     path = os.path.join(OUTPUT_DIR, "08-apertura-cierre-negocio.xlsx")
     wb.save(path)
     return path
@@ -2035,7 +2039,7 @@ def generate_13():
             "(→ 08 Apertura y Cierre del Negocio) y las de cámaras, del obrador "
             "(→ 01 Apertura y Cierre · hojas Apertura Obrador y Cierre Obrador).",
         ],
-        version_line=VERSION_LINE_13,
+        version_line=VERSION_LINE_21,
     )
     gen13_temperaturas(wb)
     gen13_recepcion(wb)
