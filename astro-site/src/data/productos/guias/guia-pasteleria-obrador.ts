@@ -59,12 +59,12 @@ const data: GuiaData = {
     subtitleLine: 'Obrador, licencias y números: el dossier completo de apertura',
     description: 'No te enseña a hacer pasteles. Te dice qué decidir y en qué orden: si ese local sirve, cuánto necesitas de verdad, qué te pide cada administración, cuánto tienes que cobrar y si aguantas Reyes. Esto no es un recetario ni un curso de técnica pastelera, y no sustituye al proyecto técnico visado.',
     checkItems: [
-      'Guía completa PDF + DOCX editable: 20 capítulos y un anexo normativo con fecha de corte (104 páginas)',
+      'Guía completa PDF + DOCX editable: 20 capítulos y un anexo normativo con fecha de corte (103 páginas)',
       '8 herramientas Excel con fórmulas vivas: capacidad de obrador y ficha de visita al local, coste de apertura, campañas del año, carta y escandallo, plan financiero a 3 años, licencias, equipamiento y proveedores, y turnos con coste de personal',
       'El Kit de Tareas te dice qué hacer cada día cuando ya has abierto. Esta guía es todo lo que hay que decidir antes',
       'El marco legal explicado es el español, con su norma, su artículo y el día en que se comprobó. Todas las casillas de los Excel son editables',
       'Bonus 1: el business plan modelo, relleno con el caso completo, en DOCX editable',
-      'Bonus 2: 12 decisiones de apertura resueltas (38 páginas)',
+      'Bonus 2: 12 decisiones de apertura resueltas (37 páginas)',
     ],
     ctaLabel: 'COMPRAR GUÍA — 65 EUR',
     avatarAltPrefix: 'Professional',
@@ -228,7 +228,7 @@ const data: GuiaData = {
         label: 'BONUS 2',
         title: '12 Decisiones de Apertura Resueltas',
         value: 'Incluido en el pack',
-        desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: local con obrador o obrador aparte, comprar el abatidor o esperar, abrir con veinte referencias o con cuarenta, empezar en casa dentro de la legalidad, o el primer contrato con otro comercio. En PDF y en DOCX editable (38 páginas).',
+        desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: local con obrador o obrador aparte, comprar el abatidor o esperar, abrir con veinte referencias o con cuarenta, empezar en casa dentro de la legalidad, o el primer contrato con otro comercio. En PDF y en DOCX editable (37 páginas).',
         image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
       },
     ],
@@ -265,13 +265,13 @@ const data: GuiaData = {
     heading: 'Decide Antes de Firmar, No Después',
     subtitle: 'El orden de las decisiones, las herramientas que hacen tus números y los documentos que te piden. Todo lo que hay que resolver antes de abrir.',
     items: [
-      'Guía completa PDF + DOCX: 20 capítulos y anexo normativo con fecha de corte (104 páginas)',
+      'Guía completa PDF + DOCX: 20 capítulos y anexo normativo con fecha de corte (103 páginas)',
       '8 herramientas Excel con fórmulas vivas y todas las casillas editables',
       'Capacidad de obrador y ficha de visita: si ese local sirve y cuántas piezas al día aguanta',
       'Coste de apertura por escenarios, con traspaso frente a obra nueva a cinco años',
       'Licencias y registro sanitario en árbol de decisión, con cronograma y ruta crítica',
       'Carta de apertura de 30 referencias con la hora de obrador imputada, y plan financiero a 3 años',
-      'Bonus: business plan modelo relleno y 12 decisiones de apertura resueltas (38 páginas)',
+      'Bonus: business plan modelo relleno y 12 decisiones de apertura resueltas (37 páginas)',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -291,7 +291,7 @@ const data: GuiaData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Versión 1.0 · septiembre 2026',
+  updateNote: 'Versión 1.0.1 · septiembre 2026',
 
   alreadyBought: {
     product: 'guia-pasteleria-obrador',

@@ -386,6 +386,11 @@ def hoja_parametros(wb):
     C.crema(motor.f(ws, 'F%d' % PER_TOT,
                     '=SUM(F{a}:F{b})'.format(a=PER_INI, b=PER_FIN), fmt=C.EUR,
                     bold=True))
+    # A16 (2026-09-10): la fila del total viaja al libro dentro de la tabla que
+    # explica el coste hora, y sin unidad ni origen se leía «TOTAL OBRADOR |
+    # 2,50 | | ». Son jornadas equivalentes, y salen de sumar los tres perfiles.
+    motor.val(ws, 'C%d' % PER_TOT, 'jornadas', bold=True)
+    motor.val(ws, 'D%d' % PER_TOT, 'suma de los tres perfiles', bold=True)
 
     f = PER_TOT + 2
     par(ws, f, 'Pagas del convenio al año', D.CONVENIO_PAGAS, C.ENT, 'pagas',
@@ -453,10 +458,15 @@ def hoja_parametros(wb):
     C.seccion(ws, 'A%d' % SEC_MAR,
               'La regla del margen: UN número, y el otro se deriva')
     par(ws, SEC_MAR + 1, 'Food cost objetivo', D.P('food_cost_objetivo'), C.PCT,
-        'sobre PVP sin IVA', 'PS-55 + PS-56',
+        'sobre PVP sin IVA', 'PS-56',
         'Éste es el ÚNICO número de margen que se teclea. La banda del sector '
-        'es 30-35' + C.N + '% de food cost, que es exactamente lo mismo que '
-        'decir 65-70' + C.N + '% de margen bruto.')
+        'es 30-35' + C.N + '% de food cost SOBRE EL PRECIO DE VENTA (PS-56), '
+        'que equivale a un margen bruto del 65-70' + C.N + '% sobre ese mismo '
+        'precio de venta. Cuidado con las fuentes que dan el margen SOBRE '
+        'COSTE: PS-55 publica ese mismo 65-70' + C.N + '% sobre coste, y eso '
+        'es un food cost del 59-61' + C.N + '%, mucho más flojo. Antes de '
+        'comparar tu margen con el de nadie, pregunta sobre qué base está '
+        'calculado.')
     par(ws, SEC_MAR + 2, 'Margen bruto objetivo (derivado)', None, C.PCT,
         'sobre PVP sin IVA', 'calculado',
         'Uno menos el food cost objetivo. No se teclea a propósito: pedir los '

@@ -12,9 +12,9 @@ La norma de calidad que define pastelería, bollería, confitería y repostería
 
 Por último, la revisión salarial 2026 del Convenio del Sector de Confitería, Pastelería, Bollería, Repostería, Heladería y Platos Cocinados de la Comunidad de Madrid está vigente y en su tercer año de aplicación.
 
-### Las cuatro fechas que ya sabemos que se mueven
+### Las fechas que ya sabemos que se mueven
 
-Hay cuatro fechas de este libro que se van a mover solas, sin que cambie ni una palabra del resto del texto, y por eso se agrupan aquí en vez de repartirse por veinte capítulos: cuando llegue el momento, se actualiza este apartado y el resto del documento sigue siendo verdad.
+Son cinco bloques y siete fechas, y todas se van a mover solas, sin que cambie ni una palabra del resto del texto, y por eso se agrupan aquí en vez de repartirse por veinte capítulos: cuando llegue el momento, se actualiza este apartado y el resto del documento sigue siendo verdad.
 
 La primera es la tabla salarial del convenio y la referencia del salario mínimo interprofesional: las dos se renuevan cada año. La referencia anual del salario mínimo que maneja este libro, 17.094 €, vive en la hoja de parámetros de la plantilla de turnos y coste de personal, igual que el resto de cifras de nómina; cuando se publique la revisión siguiente, se cambia esa celda y las hojas que dependen de ella recalculan solas.
 
@@ -24,17 +24,19 @@ La tercera es la obligación de ofrecer bebida en envase reutilizable del RD 105
 
 La cuarta es el período transitorio del Decreto 26/2026 de la Comunidad de Madrid: un año desde su entrada en vigor, así que vence el 28 de marzo de 2027 para quien ya estuviera abierto antes de esa fecha.
 
+Y la quinta es el calendario de accesibilidad de bienes y servicios privados del RD 193/2023: el 1 de enero de 2029 para los establecimientos nuevos y el 1 de enero de 2030 para los que ya estaban abiertos.
+
 Todas estas cifras viven en celda de parámetro en las plantillas del pack, nunca cosidas dentro de un párrafo de prosa: por eso cambiar una fecha o una cifra de convenio no obliga a rehacer ningún otro capítulo, sólo esta tabla.
 
 ### Las normas que la SERP sigue citando y están muertas
 
-Hay un problema concreto detrás de este apartado: bastantes contenidos gratuitos, muy bien posicionados en buscadores, siguen citando normas que ya no existen. Quien las lee y monta su obrador (taller o laboratorio) sobre esa regla se está apoyando en algo que el Estado retiró hace años, y en algunos casos la regla derogada es más permisiva que la vigente, así que el error no se nota hasta que llega una inspección.
+Hay un problema concreto detrás de este apartado: bastantes contenidos gratuitos, muy bien posicionados en buscadores, siguen citando normas que ya no existen. Quien las lee y monta su obrador sobre esa regla se está apoyando en algo que el Estado retiró hace años, y en algunos casos la regla derogada es más permisiva que la vigente, así que el error no se nota hasta que llega una inspección.
 
-Van cinco, con el año en que dejaron de tener validez y con la norma que ocupó su lugar:
+Van cinco, con la norma que ocupó su lugar:
 
 - El RD 1254/1991, sobre el huevo, está derogado; lo que regula hoy la materia es el RD 1021/2022, de 2022. Citarlo produce una regla de huevo que ya no coincide con el art. 9.3 vigente.
-- El RD 3484/2000, sobre normas de higiene de comidas preparadas y temperaturas, está derogado por el mismo RD 1021/2022, de 2022. Este es el caso más peligroso de los cinco: la vieja norma toleraba temperaturas y plazos más laxos que los que fija hoy el art. 4.1 y el art. 9.3, así que quien la sigue se queda corto justo en el punto —temperatura de vitrina y horas de vida útil del relleno— que más mira una inspección.
-- El RD 1420/2006, sobre anisakis, está derogado; su contenido quedó absorbido por el RD 1021/2022, de 2022. Seguir citándolo como norma viva produce un plazo de congelación que ya no tiene ese respaldo legal.
+- El RD 3484/2000, sobre normas de higiene de comidas preparadas y temperaturas, está derogado. Lo que regula hoy la materia en un comercio minorista es el RD 1021/2022, y en la zona de degustación, el art. 30 del RD 1086/2020. Este es el caso más peligroso de los cinco: la vieja norma toleraba temperaturas y plazos más laxos que los que fija hoy el art. 4.1 y el art. 9.3, así que quien la sigue se queda corto justo en el punto —temperatura de vitrina y horas de vida útil del relleno— que más mira una inspección.
+- El RD 1420/2006, sobre anisakis, está derogado; la congelación preventiva del parásito se rige hoy por el RD 1021/2022. Seguir citándolo como norma viva produce un plazo de congelación que ya no tiene ese respaldo legal.
 - El RD 202/2000, sobre el manipulador de alimentos, está derogado desde 2010 por el RD 109/2010. Esta es la que más circula: produce la creencia de que existe un «carnet de manipulador» obligatorio, cuando lo que exige la norma vigente es que el empresario garantice la formación de cada manipulador y pueda acreditarla, sin ningún carnet expedido por nadie.
 - El RD 2207/1995, sobre higiene general de productos alimenticios, está derogado; el marco vigente es el Reglamento (CE) 852/2004, directamente aplicable en toda la Unión Europea y sin necesidad de trasposición nacional. Citar el reglamento derogado produce una lista de requisitos de higiene distinta —y en algún punto más floja— que la que exige hoy una inspección.
 

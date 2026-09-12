@@ -200,7 +200,7 @@ EQUIPOS_CAPACIDAD = [
      'surtido pesa más por pieza.'),
     ('Batidora planetaria, 20 L', 'Amasado y batido', 'Sí',
      20, 'L de masa o crema por batida', 8, 25, 0.30, 'PS-81',
-     'Sammic BP-20, 900 W. Es la que marca el ritmo de cremas, mousses y '
+     'Sammic BE-20, 900 W. Es la que marca el ritmo de cremas, mousses y '
      'merengues, no de las masas.'),
     ('Laminadora automática de masa, hasta 40 cm', 'Laminación', 'Sí',
      3, 'pastones por ciclo', 20, 20, 0.25, 'PS-79',

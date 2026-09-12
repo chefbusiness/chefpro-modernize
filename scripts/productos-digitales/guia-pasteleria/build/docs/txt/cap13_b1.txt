@@ -1,13 +1,13 @@
 ### Los seis grupos del convenio y sus áreas funcionales
 
-Antes de escribir el primer contrato hay que asumir una idea que casi nadie llega sabiendo: la pastelería (repostería) tiene, en algunas provincias, un convenio colectivo PROPIO, distinto del de hostelería. Si montas contando la nómina con las tablas de hostelería, estás mirando el papel equivocado desde el primer día.
+Antes de escribir el primer contrato hay que asumir una idea que casi nadie llega sabiendo: la pastelería tiene, en algunas provincias, un convenio colectivo PROPIO, distinto del de hostelería. Si montas contando la nómina con las tablas de hostelería, estás mirando el papel equivocado desde el primer día.
 
 Para que este capítulo pueda dar cifras reales en vez de generalidades, tomamos como caso modelado el Convenio del Sector de Comercio e Industria de Confitería, Pastelería, Bollería, Repostería, Heladería y Platos Cocinados de la Comunidad de Madrid (código 28001025011981), en su revisión salarial 2026 aprobada por Resolución de 7 de febrero de 2026 de la D. G. de Trabajo de la Comunidad de Madrid (comprobado el 10 de septiembre de 2026). Es un EJEMPLO, y vive en celda verde de la plantilla: lo primero que haces al abrir el archivo es sustituirlo por el convenio de tu provincia.
 
 Este convenio de referencia organiza la plantilla en seis grupos, y cada uno lleva su bruto mensual a 15 pagas:
 
 - Técnicos y titulados superiores: 1.733,88 € al mes.
-- Dirección, jefes y encargados, donde entra quien lleva el obrador (taller o laboratorio) como responsable último de producción: 1.427,89 € al mes.
+- Dirección, jefes y encargados, donde entra quien lleva el obrador como responsable último de producción: 1.427,89 € al mes.
 - Personal especialista, la franja de quien ya dirige una sección de producción o el mostrador principal: 1.376,91 € al mes.
 - Personal cualificado, con perfiles de producción, envasado, mostrador y reparto: 1.249,42 € al mes.
 - Personal de apoyo: 1.192,42 € al mes.

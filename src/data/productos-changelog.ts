@@ -110,9 +110,23 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-pasteleria-obrador': {
-    version: '1.0',
-    updated: '2026-09-10',
+    version: '1.0.1',
+    updated: '2026-09-12',
     entries: [
+      {
+        version: '1.0.1',
+        date: '2026-09-12',
+        title: 'Revisión de cifras y maquetación',
+        changes: [
+          'Fondo de maniobra e inversión total unificados entre la calculadora de apertura y el plan financiero: los dos libros publican la misma cifra, y la guía y el business plan la citan igual.',
+          'Corregidos el plazo crítico de entrega del equipamiento (nueve semanas) y el punto de equilibrio de caja, que en tres pasajes salía invertido respecto al contable.',
+          'Nuevo epígrafe en el capítulo 12 con las tres vías legales del huevo (artículo 9 del RD 1021/2022) y columna «vía legal del huevo» en la carta de apertura.',
+          'Bebida en envase reutilizable: para locales de menos de 120 m² la obligación es exigible desde el 1 de enero de 2027, no antes.',
+          'Calendario de campañas recalibrado: la producción de roscones de Reyes es coherente con el mix de la carta y enero pasa a ser el mes más alto del año.',
+          'Tablas del capítulo 17 y del anexo corregidas (temperaturas y plazos se imprimían como porcentajes), anexo normativo sin numerar como capítulo, fecha de edición en el pie de cada página y sin página en blanco antes del cierre.',
+          'Modelo de laminadora corregido (Sammic BE-20) en las tres herramientas que lo citan.',
+        ],
+      },
       {
         version: '1.0',
         date: '2026-09-10',

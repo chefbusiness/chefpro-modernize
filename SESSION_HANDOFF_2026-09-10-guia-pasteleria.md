@@ -60,13 +60,13 @@
 | 8 libros de Excel | ✅ `astro-site/public/dl/guia-pasteleria-obrador/*.xlsx` (4.556 fórmulas, 0 sin caché, 0 verdes vacías, 0 funciones prohibidas; refutación 23 hallazgos → 19 fixes en generadores; `guia-pasteleria/gate_libros.py` 8/8 verde) |
 | Guion | ✅ `guias-v2_0/guion_guia_pasteleria_obrador.py` (21 caps + 6 secciones de business plan + 12 decisiones; 315 referencias a celda, 64 tablas, 439 puntos por epígrafe con `puntos_por_epigrafe`, 125 ids) + `guia-pasteleria/verificar_guion.py` en verde |
 | Redacción | ✅ 47 bloques por 47 subagentes Sonnet en 16 min (4,9 M tokens), `check_bloque.py` 47/47; caché en `guia-pasteleria/build/docs/txt/` |
-| Documentos | ✅ guía **104 páginas** (54.850 palabras, 43 tablas) · bonus **38** (16.594, 12 tablas) · business plan **19** (7.707, 9 tablas); todos los gates de `documentos.py` en verde; PDF + DOCX en `dl/` |
+| Documentos | ✅ guía **103 páginas** (56.169 palabras en PDF, 44 tablas) · bonus **37** (16.851) · business plan **18** (7.837) — v1.0.1 del 12-sep; todos los gates de `documentos.py` en verde; PDF + DOCX en `dl/` |
 | Refutación de documentos | ⏳ en curso al cerrar este handoff (opus, tres lentes); sus fixes van a los `.txt` → reensamblar → recopiar → censo |
 | Capa de producto | ✅ landing `productos/guias/guia-pasteleria-obrador.ts` (sin tachado, sin testimonios, 10 piezas en bonus, 12 FAQ), wrapper con `whatsapp={false}` y cripto, zona app 48 (generada, `--check` byte a byte), dashboard 2·8·3, 4 functions con las 13 claves, catálogo y `product-prices.ts` (48), hub ×2 (tarjeta «Nuevo», `comingSoon` solo Chocolatería, kit «15 plantillas»), alias del buscador, linkify, footerLinks ×4, roles (3 + `guia-panaderia-obrador` en panadero), admin (48), changelog 1.0, `nombre-gate.py` en verde |
 | Páginas en la landing | ✅ tokens sustituidos por las MEDIDAS (104 / 38); `paginas-gate.py --only` OK y detecta tokens sin sustituir |
 | Imágenes | ✅ 6 galería + OG (Nano Banana 2, $0,60, revisadas a ojo) |
 | Blog | ✅ `fase8i-guia-pasteleria-blog.py --aplicar`: 3 posts con banner + 8 enlaces contextuales («la guía Cómo Montar una Pastelería») + miswiring kit-tareas-pasteleria → kit-tareas-panaderia en 2 posts de panadería; `blog-lastmod.json` regenerado |
-| Email de lanzamiento | ✅ `emails/broadcast-guia-pasteleria-lanzamiento-es.html` con 104/38 páginas. **No creado en Resend** (slot 14-oct, a más de 30 días) |
+| Email de lanzamiento | ✅ `emails/broadcast-guia-pasteleria-lanzamiento-es.html` con 103/37 páginas. **No creado en Resend** (slot 14-oct, a más de 30 días) |
 | Gates offline | ✅ censo 0 defectos (13 ficheros), no-latinos 0, Bug #2 `MISSING: 0`, `fase5 --check` 144/144, `gate-flujo-postpago --offline` sin fallos estructurales (solo el Payment Link) |
 | Stripe | ⏳ John (§0) |
 

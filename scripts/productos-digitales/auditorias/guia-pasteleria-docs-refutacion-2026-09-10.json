@@ -1,0 +1,440 @@
+{
+ "producto": "guia-pasteleria-obrador",
+ "fecha": "2026-09-10",
+ "veredicto": "CORREGIR ANTES",
+ "recuento": {
+  "total": 46,
+  "alta": 11,
+  "media": 25,
+  "baja": 10
+ },
+ "base": "scripts/productos-digitales/guia-pasteleria/build/docs/txt/",
+ "aviso": "Aplicar SOLO sobre los .txt de la cache, nunca sobre el .md ni el PDF. Despues: documentos.py --saltar-generacion.",
+ "fixes_no_mecanizables": [
+  {
+   "id": "A1",
+   "gravedad": "alta",
+   "donde": "guias-v2_0/documentos.py:722 (es_fila_porcentual) o datos_ejemplo.py",
+   "que": "El nombre 'Tarta de chocolate 70 %' acaba en % y dispara el reformateo de la fila entera en 3 tablas; en el cap. 17 imprime '4,0 %' donde debe ir 4 °C y '24,0 %' donde deben ir 24 horas."
+  },
+  {
+   "id": "A2c",
+   "gravedad": "alta",
+   "donde": "guias-v2_0/guion_guia_pasteleria_obrador.py lineas 1841, 3155, 3156, 3841, 4519, 4520",
+   "que": "!Equipamiento!I52 -> !Equipamiento!I53 y !Equipamiento!I54 -> !Equipamiento!I55. Y anadir a verificar_guion.py un gate que aborte si una referencia con formato numerico resuelve a texto."
+  },
+  {
+   "id": "A3",
+   "gravedad": "alta",
+   "donde": "calculadora-capex-pasteleria.xlsx vs plan-financiero-3-anos-pasteleria.xlsx",
+   "que": "Fondo de maniobra 62.248,84 vs 62.115,26; inversion total 228.049 vs 227.916; caja 261.960 vs 261.826; aportacion propia 201.960 vs 201.826. Unificar en un solo calculo y regenerar cap. 1, cap. 4, cap. 19 y business plan §1."
+  },
+  {
+   "id": "A8",
+   "gravedad": "alta",
+   "donde": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!K6",
+   "que": "420 roscones/dia dan 31.500 € en 5 dias contra 31.683 € de enero entero, y 2.100 unidades contra las 1.714/ano que le asigna el mix de la carta. Bajar K6 o subir el mix del roscon, y regenerar cap. 2, cap. 15, bonus 5, bonus 9 y business plan §2."
+  },
+  {
+   "id": "B1",
+   "gravedad": "alta",
+   "donde": "guion (tabla del cap. 17) + un epigrafe nuevo en el cap. 12 o el 10",
+   "que": "La guia nunca explica las tres vias legales del huevo (PA-14): 'ovoproducto', 'huevo crudo' y '70 °C' salen 0 veces en 21 capitulos, y la tabla omite la columna D 'Via legal del huevo'. Texto propuesto en el informe .md, B1."
+  },
+  {
+   "id": "A14",
+   "gravedad": "media",
+   "donde": "checklist-equipamiento-y-proveedores.xlsx (columna Modelo), calculadora-capex, cap08_b1 y PS-81 del research",
+   "que": "Sammic 'BP-20' no existe; la ficha citada y la gama real son 'BE-20'."
+  },
+  {
+   "id": "A16",
+   "gravedad": "media",
+   "donde": "guion, tabla 'De donde sale el coste hora de obrador'",
+   "que": "1.780 x 0,85 = 1.513, no 3.782,50: falta la fila de las 2,5 jornadas de obrador (Parametros!B9) y la del coste de empresa anual (Parametros!F9)."
+  },
+  {
+   "id": "A18",
+   "gravedad": "media",
+   "donde": "estacionalidad-y-picos.xlsx!Peso sobre el Ano (columna incremental) o pie de tabla del cap. 15",
+   "que": "Reyes da incremental = total (base cero) mientras San Valentin descuenta una base de 181 €/dia; el dia medio del ano son 1.073,99 €."
+  },
+  {
+   "id": "B5",
+   "gravedad": "media",
+   "donde": "guion, tabla 'Lo que cuesta cada campana y lo que inmoviliza'",
+   "que": "Anadir las columnas G ('Personas necesarias') y H ('Cubre el refuerzo?') de Refuerzo y Tesoreria: sin ellas, tres campanas dan dos numeros distintos de personas en dos tablas del mismo capitulo."
+  },
+  {
+   "id": "B6",
+   "gravedad": "media",
+   "donde": "guion (anexo) y documentos.py",
+   "que": "El anexo va numerado como capitulo 21 en el indice y en el cuerpo contra D28, y su resumen de indice repite el titulo literal por falta de resumen_indice."
+  },
+  {
+   "id": "B7",
+   "gravedad": "media",
+   "donde": "los tres documentos, pasada mecanica sobre los .txt",
+   "que": "135 glosas LATAM despues de la primera mencion (obrador 35, pasteleria 23, vitrina 20, encargo 19, tarta 16, coste 12, escandallo 10). Dejar la primera de cada una por documento y quitar el resto."
+  },
+  {
+   "id": "B12",
+   "gravedad": "media",
+   "donde": "guion, tabla del P&L",
+   "que": "La fila 'Personal' es la unica sin porcentaje (28,8 %), y las dos filas de IVA soportado van entre TOTAL COSTES FIJOS y el resultado sin participar en la resta."
+  },
+  {
+   "id": "B13",
+   "gravedad": "media",
+   "donde": "plan-financiero-3-anos-pasteleria.xlsx!Tesoreria 12 meses",
+   "que": "Mes 1 con '-0 €' de compras mientras factura 17.536 €; declarar el supuesto de pago a 30 dias en el pie y arreglar el signo del cero."
+  },
+  {
+   "id": "C1",
+   "gravedad": "media",
+   "donde": "guias-v2_0/documentos.py",
+   "que": "Doble separador con una seccion vacia antes de 'Sobre el autor': produce una pagina en blanco en el PDF de la guia (p. 103) y en el del bonus (p. 37)."
+  },
+  {
+   "id": "C2",
+   "gravedad": "media",
+   "donde": "guion, tabla 'Como queda la carta' (bonus 3 y business plan §3)",
+   "que": "Acotar 'filas': (39, 41): hoy imprime 'Margen ponderado medio de la carta (€) | 0' con el 0,0357 € en la columna de recuento."
+  },
+  {
+   "id": "C4",
+   "gravedad": "media",
+   "donde": "pasada de poda por bloque",
+   "que": "Muletillas: 'de verdad' 47, 'conviene' 46, 'y aqui' 23, 'antes de firmar' 24, 'casi nadie' 15 (7 de ellas 'casi nadie te cuenta/explica') en la guia; 'de verdad' 17 y 'conviene' 15 en el bonus."
+  },
+  {
+   "id": "C10",
+   "gravedad": "baja",
+   "donde": "guion (anexo)",
+   "que": "Epigrafe 'Las cuatro fechas que ya sabemos que se mueven' con una tabla de siete filas."
+  },
+  {
+   "id": "C13",
+   "gravedad": "baja",
+   "donde": "documentos.py, plantilla del pie de pagina",
+   "que": "El pie imprime 'Version 1.0 · aichef.pro/...' sin la fecha que si lleva la portada ('septiembre de 2026')."
+  }
+ ],
+ "fixes": [
+  {
+   "id": "A2a",
+   "gravedad": "alta",
+   "fichero_txt": "cap08_b1.txt",
+   "buscar": "El plazo crítico de entrega de esta dotación queda marcado en línea con el CAPEX del libro 2 de este mismo pack, que es donde tienes desglosado el calendario de inversión completo; conviene tenerlo delante antes de llamar a ningún proveedor.",
+   "reemplazar": "El plazo crítico de entrega de esta dotación es de nueve semanas, y lo marca la cámara de fermentación controlada: es la primera que hay que pedir aunque sea la última que instales. El calendario de inversión completo lo tienes desglosado en el libro 2 de este mismo pack, y conviene tenerlo delante antes de llamar a ningún proveedor.",
+   "motivo": "El redactor recibio el TEXTO 'En linea con el CAPEX del libro 2' como valor de la cifra 'plazo critico en semanas': el guion cita I52 (veredicto de desviacion) en vez de I53 (9 semanas).",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A2b",
+   "gravedad": "alta",
+   "fichero_txt": "cap08_b1.txt",
+   "buscar": "el margen que te queda hasta la apertura prevista: veinte semanas.",
+   "reemplazar": "el margen que te queda hasta la apertura prevista: nueve semanas.",
+   "motivo": "Cifra INVENTADA. El guion cita I54 (texto 'Camara de fermentacion controlada (roll-in)') en vez de I55 = 9 semanas.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A4",
+   "gravedad": "alta",
+   "fichero_txt": "cap04_b1.txt",
+   "buscar": "el fondo de maniobra asciende a 15.562 €, y ese importe está pensado para cubrir 4 meses de gastos fijos —alquiler, nóminas, suministros— sin necesidad de haber facturado un euro",
+   "reemplazar": "el fondo de maniobra asciende a 62.249 €: son 4 meses de gastos fijos —alquiler, nóminas, suministros— a razón de 15.562 € al mes, sin necesidad de haber facturado un euro",
+   "motivo": "15.562 € es el coste fijo MENSUAL; el fondo es 62.249 €, como dice la tabla de CAPEX dos parrafos mas abajo y la inversion total del cap. 1 (165.800 + 62.249 = 228.049).",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A5a",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap05_b1.txt",
+   "buscar": "El equilibrio contable —el punto en el que el resultado deja de ser negativo— pide menos tickets al día que el equilibrio de caja.",
+   "reemplazar": "El equilibrio contable —el punto en el que el resultado deja de ser negativo— pide más tickets al día que el equilibrio de caja: 155,6 frente a 148,9.",
+   "motivo": "Invertido. plan-financiero!Punto de Equilibrio: contable 155,65 tickets/dia, caja 148,87. El cap. 18 de la guia lo escribe bien.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A5b",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap05_b1.txt",
+   "buscar": "La diferencia entre los dos no es un error de cálculo: la devolución del principal del préstamo sale de la caja, no del resultado contable, así que hace falta vender más para que la caja aguante que para que el papel diga que se gana dinero.",
+   "reemplazar": "La diferencia entre los dos no es un error de cálculo: el contable carga la amortización, que no se paga, y el de caja carga la devolución de principal, que sí sale del banco. En este plan la amortización (16.090 €) pesa más que el principal (7.979 €), y por eso el umbral de caja queda por debajo del contable.",
+   "motivo": "Consecuencia del mismo error invertido.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A5c",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap05_b1.txt",
+   "buscar": "Es también la cifra que explica por qué el equilibrio de caja pide más tickets que el equilibrio contable: esa cuota sale de caja, mes tras mes, gane o no gane el negocio ese mes concreto.",
+   "reemplazar": "Es también la cifra que explica por qué el equilibrio de caja no coincide con el contable: esa cuota sale de caja, mes tras mes, gane o no gane el negocio ese mes concreto.",
+   "motivo": "Tercera aparicion del punto de equilibrio invertido.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A6",
+   "gravedad": "alta",
+   "fichero_txt": "cap19_b2.txt",
+   "buscar": "Y aquí sí conviene decirlo sin rodeos: esa fecha ya ha llegado y la obligación ya es exigible, así que no es un «para cuando abras» sino un «para cuando factures».",
+   "reemplazar": "Y aquí conviene la fecha exacta: para una superficie comercial de menos de 120 m² esa obligación empieza el 1 de enero de 2027, así que hoy todavía no te aplica —pero llega antes de tu primer aniversario, y el proveedor de bebida hay que elegirlo sabiéndolo.",
+   "motivo": "FALSO. RD 1055/2022 art. 9.4.a).1.º: 1-ene-2027 para <120 m² (PA-30c). El propio anexo del libro lo dice dos veces.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A7",
+   "gravedad": "alta",
+   "fichero_txt": "cap12_b2.txt",
+   "buscar": "Y ya que estamos con la regla del sector: la misma fuente sitúa también el margen bruto objetivo de una pastelería artesanal en una banda sobre coste (Pastelería Para Todos, 2026), coherente con el objetivo que este libro te pide trabajar.",
+   "reemplazar": "Y ya que estamos con la regla del sector: la misma fuente da un food cost objetivo del 30-35 % del precio de venta (Pastelería Para Todos, 2026), que es exactamente el 32 % con el que trabaja este libro. Cuidado con las fuentes que publican «65-70 % de margen» sin decir sobre qué base: sobre precio de venta equivale a ese 30-35 % de food cost, pero sobre coste sería otra cosa y mucho más floja.",
+   "motivo": "PS-55 dice '65-70 % SOBRE COSTE', que equivale a un food cost del 59-61 %, no al 32 % del libro. La equivalencia solo se sostiene con PS-56 (30-35 % del PVP).",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A9",
+   "gravedad": "media",
+   "fichero_txt": "cap17_b1.txt",
+   "buscar": "el peso del suministro a otras tiendas sobre el total de las ventas es del 5 %, muy lejos del techo del 25 % del volumen anual que marca la primera vía.",
+   "reemplazar": "el peso del suministro a otras tiendas es del 5 % de las ventas en euros y del 4,1 % en kilos —que es la magnitud que mide el artículo—, muy lejos del techo del 25 % del volumen anual que marca la primera vía. Ojo con la unidad: el 25 % es de volumen, no de facturación, y el B2B siempre pesa más en kilos que en euros.",
+   "motivo": "El 25 % del art. 3.2.a) se mide sobre VOLUMEN; aqui se compara contra el mix en euros. checklist-legal!Suministro a Otros Minoristas da 4,1 % en kilos.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A10",
+   "gravedad": "media",
+   "fichero_txt": "cap12_b2.txt",
+   "buscar": "que fija el objetivo de coste de ingredientes por debajo de un porcentaje sobre el precio de venta (Pastelería Para Todos, 2026)",
+   "reemplazar": "que fija el objetivo de coste de ingredientes entre el 30 % y el 35 % del precio de venta (Pastelería Para Todos, 2026)",
+   "motivo": "Parrafo que anuncia una regla y no la dice. La cifra esta en PS-56 y en carta!Mix y Ticket Medio!I46.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A11",
+   "gravedad": "media",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap06_b1.txt",
+   "buscar": "fija un máximo de 24 horas de vida útil, con un techo de temperatura de 8 °C que baja a 4 °C cuando concurre esa fila",
+   "reemplazar": "fija un plazo legal de consumo de 24 horas desde la elaboración —que no es la vida útil, que la declaras tú en tu APPCC—, con un techo de temperatura de 8 °C que baja a 4 °C cuando concurre esa fila",
+   "motivo": "D11 y la nota de carta!Parametros!G30 prohiben llamar 'vida util' al plazo del art. 9.3.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A12",
+   "gravedad": "media",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap03_b1.txt",
+   "buscar": "Y si alguna de tus tartas por encargo lleva licor por encima del 1,2 % en volumen —el umbral a partir del cual hay que declarar el grado alcohólico en producto no envasado—, esa declaración es obligatoria conforme al RD 126/2015",
+   "reemplazar": "Y si alguna de tus tartas por encargo lleva licor, el alcohol va declarado como cualquier otro ingrediente; el umbral del 1,2 % en volumen obliga a declarar el grado alcohólico en las BEBIDAS, no en la pastelería, así que no lo apliques por analogía. La información obligatoria del producto no envasado la fija el RD 126/2015",
+   "motivo": "PA-21, art. 4.1.d) RD 126/2015: el umbral del 1,2 % es 'en las bebidas'. Extenderlo a tartas es una inferencia no verificada.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A13",
+   "gravedad": "media",
+   "fichero_txt": "cap21_b1.txt",
+   "buscar": "El RD 3484/2000, sobre normas de higiene de comidas preparadas y temperaturas, está derogado por el mismo RD 1021/2022, de 2022.",
+   "reemplazar": "El RD 3484/2000, sobre normas de higiene de comidas preparadas y temperaturas, está derogado. Lo que regula hoy la materia en un comercio minorista es el RD 1021/2022, y en la zona de degustación, el art. 30 del RD 1086/2020.",
+   "motivo": "La verificacion legal del 10-sep no abrio la disposicion derogatoria del RD 3484/2000; ademas la tabla del mismo anexo atribuye la sustitucion al art. 30 del RD 1086/2020.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A13b",
+   "gravedad": "media",
+   "fichero_txt": "cap21_b1.txt",
+   "buscar": "El RD 1420/2006, sobre anisakis, está derogado; su contenido quedó absorbido por el RD 1021/2022, de 2022.",
+   "reemplazar": "El RD 1420/2006, sobre anisakis, está derogado; la congelación preventiva del parásito se rige hoy por el RD 1021/2022.",
+   "motivo": "'Su contenido quedo absorbido' no esta verificado; la derogacion si.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A15",
+   "gravedad": "media",
+   "fichero_txt": "cap06_b1.txt",
+   "buscar": "El local del caso modelado se traspasa por un precio pedido de 43.000 €, con una renta mensual de 1.250 €.",
+   "reemplazar": "El local del caso modelado se traspasa por un precio pedido de 43.000 €, con una renta mensual de 1.250 €, y hay que sumarle 25.000 € de adecuación —pintura, rótulo, vitrina y la máquina que falte—. Y con el supuesto que de verdad manda en la comparación por delante: el traspaso se contabiliza con el obrador ya montado, mientras que la obra nueva carga el equipamiento entero, 160.900 €. Si el local que traspasas viene vacío, esta cuenta cambia de signo.",
+   "motivo": "Los 143.000 € del traspaso no se pueden reconstruir con lo que da el capitulo, y el veredicto de -93.450 € depende de un supuesto que no se declara.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "A17",
+   "gravedad": "media",
+   "fichero_txt": "cap05_b1.txt",
+   "buscar": "el caudal de la campana extractora, que en el caso modelado es de 1.360.",
+   "reemplazar": "el caudal de la campana extractora, que en el caso modelado es de 1.360 m3/h.",
+   "motivo": "Cifra sin unidad, y el propio parrafo dice que es 'el numero que hay que llevar apuntado' a la visita. capacidad!Parametros!B21 = 1.360 m3/h.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B2a",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap01_b1.txt",
+   "buscar": "Los ingresos del año de crucero son 322.198 €. El resultado neto de los tres años y el margen neto de ese año de crucero están calculados, partida a partida, en el cuadro de la previsión financiera que acompaña a este resumen: ahí se ve cómo se llega desde la facturación hasta el beneficio, sin necesidad de repetir aquí cada línea.",
+   "reemplazar": "Los ingresos del año de crucero son 322.198 €, con un resultado neto de 27.836 € y un margen neto del 8,6 %; el año uno, todavía en rampa de arranque, cierra en 5.447 €. El negocio cubre su equilibrio de caja con 148,9 tickets al día y el plan prevé 183, una holgura del 22,9 %. El cuadro de la previsión financiera que acompaña a este resumen desglosa, partida a partida, cómo se llega desde la facturación hasta el beneficio.",
+   "motivo": "Un resumen ejecutivo 'en el formato que pide un banco' no puede omitir el resultado neto, el margen y el punto de equilibrio.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B2b",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap01_b1.txt",
+   "buscar": "sitúa en un rango porcentual la rentabilidad neta de una pastelería que va bien; no repetimos esa cifra, porque el margen de este caso concreto es el que figura, ya calculado, en el cuadro de resultados de los tres años.",
+   "reemplazar": "sitúa la rentabilidad neta de una pastelería que va bien entre el 8 % y el 12 %: el 8,6 % de este plan cae en el tramo bajo de esa banda, que es donde tiene que caer un caso construido con supuestos conservadores.",
+   "motivo": "Segunda evasion del resumen ejecutivo. PS-48 publica la banda 8-12 %.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B2c",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap01_b1.txt",
+   "buscar": "Cuándo llega este negocio al punto de equilibrio y con cuánta holgura lo hace es un dato que también vive en esa misma sección financiera del pack: es la hoja que hay que abrir antes de firmar nada, no una frase que se pueda resumir sin verla.",
+   "reemplazar": "La hoja de punto de equilibrio del plan financiero es la que hay que abrir antes de firmar nada: ahí se ve el umbral contable, el de caja y la sensibilidad de los dos a un euro menos de ticket medio.",
+   "motivo": "Tercera evasion consecutiva; la cifra ya se da en B2a.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B3a",
+   "gravedad": "alta",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap09_b1.txt",
+   "buscar": "Dentro de esos doce hitos, el que más veces desplaza la fecha final no suele ser la obra ni el papeleo: es el plazo de entrega del equipamiento, y sale del checklist de equipamiento y proveedores del pack, no de una estimación genérica.",
+   "reemplazar": "Dentro de esos doce hitos, la obra y el trámite de actividad son los que mandan: son ruta crítica y cualquier día que se muevan mueve la apertura. El equipamiento es el único hito con holgura —un mes— y sólo porque se pide en paralelo a la obra; su plazo más largo son nueve semanas y sale del checklist de equipamiento y proveedores del pack, no de una estimación genérica. El día que se pida tarde, pasa a ser ruta crítica él también.",
+   "motivo": "Contradice la tabla que el propio bonus imprime tres parrafos mas abajo (H6: holgura 1,0 / ruta critica No).",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B3b",
+   "gravedad": "alta",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap06_b1.txt",
+   "buscar": "De todo el listado, el elemento con el margen más ajustado es la cámara de fermentación controlada, el roll-in: es la pieza que primero hay que encargar, y su plazo de entrega es el que gobierna la fecha real de apertura, no la obra ni el papeleo.",
+   "reemplazar": "De todo el listado, el plazo más largo es el de la cámara de fermentación controlada, el roll-in: nueve semanas, y es la primera que hay que encargar. En este cronograma no gobierna la fecha de apertura —es el único hito con holgura— precisamente porque se pide en paralelo a la obra; el día que se pida tarde, pasa a gobernarla.",
+   "motivo": "Contradice el cronograma del pack: H6 es el unico hito fuera de ruta critica.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B4",
+   "gravedad": "media",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap07_b1.txt",
+   "buscar": "Como el punto muerto sube al meter el canal, este caso concreto queda en el filo: aporta contribución, pero también sube el listón que hay que facturar cada mes, y de ahí sale la recomendación de la opción B con tope y no la C sin límite.",
+   "reemplazar": "Como el punto muerto sube al meter el canal —de 23.018 € a 23.338 € al mes—, por el criterio de arriba este canal resta: te obliga a facturar 320 € más cada mes para llegar al mismo cero. Que la recomendación siga siendo la opción B, y no la A, es por lo segundo que mide esta decisión: el B2B llena horas muertas de obrador que ya estás pagando, y con tope puesto ese uso de capacidad compensa los 320 €. Sin tope, la cuenta cambia de signo.",
+   "motivo": "La decision aplica su propio criterio, obtiene 'el canal resta' y recomienda lo contrario sin explicarlo.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B8",
+   "gravedad": "media",
+   "fichero_txt": "cap11_b1.txt",
+   "buscar": "el directorio de proveedores de hostelería del grupo, Hosply, es el sitio donde continuar esa búsqueda.",
+   "reemplazar": "el directorio de proveedores de hostelería del grupo, Hosply (https://hosply.pro/?utm_source=guia-pasteleria&utm_medium=libro&utm_content=cap11), es el sitio donde continuar esa búsqueda.",
+   "motivo": "D29 exige enlace CON UTM desde el cap. 11; hoy solo esta el nombre de la marca, sin dominio.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B9",
+   "gravedad": "media",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap04_b1.txt",
+   "buscar": "El Dependiente Vitrina que abre la persiana el día de la apertura se suma justo entonces, no antes: no tiene sentido pagarle semanas de vitrina vacía. El Ayudante y el segundo Dependiente Vitrina llegan después, cuando el volumen de venta ya sostiene esas horas. Por eso el primer año no cuesta lo mismo que el de crucero: se paga la plantilla completa antes de que la plantilla completa esté generando el ritmo de venta que la justifica, y ese desfase hay que tenerlo presupuestado desde el primer mes.",
+   "reemplazar": "No toda la plantilla hace falta desde el primer día, pero este plan la presupuesta entera desde el mes uno a propósito: es el supuesto conservador, y por eso el coste de personal es el mismo en los tres años del cuadro. Si escalonas las altas —el Ayudante y el segundo Dependiente Vitrina cuando el volumen sostenga esas horas— el año uno mejora sobre lo previsto, y ese margen se queda como colchón en vez de como promesa.",
+   "motivo": "El P&L del mismo documento da 92.776 € de personal identicos en los tres anos: el relato de contratacion escalonada no esta modelado.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B10",
+   "gravedad": "media",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap04_b1.txt",
+   "buscar": "la variante de punto caliente sale a 22.456 € de inversión, frente a los 66.980 € del caso base con obrador.",
+   "reemplazar": "la variante de punto caliente pide 22.456 € de equipamiento, frente a los 66.980 € del caso base con obrador — y 85.997 € de inversión de apertura completa, con obra y licencias dentro, contra los 165.800 € del caso base.",
+   "motivo": "22.456 € son de EQUIPAMIENTO (libro 7); el cap. 1 de la guia publica 85.997 € de inversion de apertura para la misma variante.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B11",
+   "gravedad": "media",
+   "fichero_txt": "cap01_b1.txt",
+   "buscar": "De las que sí tienen rango, y siempre en cualitativo porque son estimaciones de terceros sin desglose verificable línea a línea: el obrador en casa con venta directa, según «Cómo montar un negocio de pastelería: guía 2026 — Pastelería Para Todos» (2026-07-12), maneja un mínimo viable modesto y un arranque económico que crece bastante en cuanto se compra equipamiento profesional completo;",
+   "reemplazar": "De las que sí tienen rango, y siempre con la etiqueta de lo que son —estimaciones de terceros sin desglose verificable línea a línea, no presupuestos—: el obrador en casa con venta directa, según «Cómo montar un negocio de pastelería: guía 2026 — Pastelería Para Todos» (2026-07-12), se mueve entre 3.000 € y 30.000 € según se monte con lo mínimo o con equipamiento profesional completo;",
+   "motivo": "La prosa dice 'siempre en cualitativo' y la tabla de tres lineas mas abajo publica los rangos; el bonus 10 los da en prosa.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "B14",
+   "gravedad": "baja",
+   "fichero_txt": "cap01_b1.txt",
+   "buscar": "Y una advertencia más: aquí no se usa «dulcería» como sinónimo de pastelería en ningún momento, porque en México «dulcería» es la tienda de golosinas, no un obrador con despacho a calle.",
+   "reemplazar": "Y un falso amigo que conviene tener fichado: en México «dulcería» no es una pastelería, es la tienda de golosinas, así que si buscas proveedores o competencia con esa palabra vas a encontrar otro negocio.",
+   "motivo": "Regla editorial interna del taller contada al lector.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C3",
+   "gravedad": "media",
+   "fichero_txt": "cap19_b2.txt",
+   "buscar": "no cuenta como «precio anterior» a efectos de la regla de los treinta días de la que hablamos más adelante en este mismo capítulo.",
+   "reemplazar": "no cuenta como «precio anterior» a efectos de la regla de los treinta días: el art. 20.1 de la Ley 7/1996, en la redacción del RD-ley 24/2021, obliga a enseñar junto al precio rebajado el más bajo que hayas aplicado en los treinta días anteriores, y deja fuera expresamente lo que rebajes para no tirar producto próximo a caducar (comprobado el 10 de septiembre de 2026).",
+   "motivo": "Reenvio colgado: la regla de los 30 dias no aparece mas adelante en el cap. 19 ni en ningun otro capitulo.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C5",
+   "gravedad": "media",
+   "fichero_txt": "cap07_b1.txt",
+   "buscar": "ºC",
+   "reemplazar": "°C",
+   "motivo": "Cinco 'ºC' (indicador ordinal, U+00BA) contra cuatro '°C' (signo de grado) en el mismo capitulo.",
+   "ocurrencias_esperadas": 5
+  },
+  {
+   "id": "C6",
+   "gravedad": "baja",
+   "fichero_txt": "business-plan-modelo-pasteleria/cap05_b1.txt",
+   "buscar": "una facturación de equilibrio de 7200 €/mes de facturación de equilibrio",
+   "reemplazar": "una facturación de equilibrio de unos 7.200 € al mes",
+   "motivo": "Frase duplicada y unico millar del pack sin separador.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C7",
+   "gravedad": "baja",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap10_b1.txt",
+   "buscar": "con un criterio propio de proporcionalidad de 8 y una referencia de 5,0 kilos por metro cuadrado útil y semana",
+   "reemplazar": "con un criterio propio de proporcionalidad de 8 kilos por metro cuadrado útil y semana —de la casa, no de la norma— y un resultado de 5,0, holgadamente por debajo",
+   "motivo": "'De 8' sin unidad.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C8",
+   "gravedad": "baja",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap11_b1.txt",
+   "buscar": "quince van a vitrina refrigerada y quince a vitrina de ambiente, y de esas, quince referencias quedan con un plazo legal de veinticuatro horas.",
+   "reemplazar": "quince van a vitrina refrigerada y quince a vitrina de ambiente, y son esas quince refrigeradas las que quedan con un plazo legal de veinticuatro horas.",
+   "motivo": "El antecedente de 'de esas' son las quince de ambiente, que son justamente las que NO tienen plazo.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C9",
+   "gravedad": "baja",
+   "fichero_txt": "cap21_b1.txt",
+   "buscar": "Van cinco, con el año en que dejaron de tener validez y con la norma que ocupó su lugar:",
+   "reemplazar": "Van cinco, con la norma que ocupó su lugar:",
+   "motivo": "Solo una de las cinco trae el ano de derogacion; la lista incumple lo que anuncia.",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C11",
+   "gravedad": "baja",
+   "fichero_txt": "BONUS-12-decisiones-de-apertura/cap01_b1.txt",
+   "buscar": "Si tu local vale 30 euros el metro cuadrado, el obrador te cuesta 30 euros el metro cuadrado igual que la vitrina",
+   "reemplazar": "Si tu local vale los 13,3 euros por metro cuadrado y mes del caso de este pack, el obrador te cuesta 13,3 euros el metro cuadrado igual que la vitrina",
+   "motivo": "Cifra inventada que ademas contradice el caso (14.400 €/ano sobre 90 m2 = 13,3 €/m2 y mes).",
+   "ocurrencias_esperadas": 1
+  },
+  {
+   "id": "C12",
+   "gravedad": "baja",
+   "fichero_txt": "cap08_b1.txt",
+   "buscar": "Y el gerente de una conocida pastelería española lo resume con una frase",
+   "reemplazar": "Y Matías Pomar, de Pastelerías Pomar, lo resume con una frase",
+   "motivo": "Misma fuente que el cap. 4 nombra y el cap. 13 identifica del todo; anonimizarla aqui debilita la cita.",
+   "ocurrencias_esperadas": 1
+  }
+ ]
+}

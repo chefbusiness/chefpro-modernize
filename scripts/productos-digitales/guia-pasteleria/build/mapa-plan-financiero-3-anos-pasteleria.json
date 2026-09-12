@@ -26,7 +26,7 @@
  },
  "Actividad del año 1 sobre la de crucero": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!0. Supuestos!B12",
-  "valor": 0.8816511800000001,
+  "valor": 0.87639985,
   "tipo": "salida"
  },
  "IVA medio ponderado de la carta": {
@@ -151,7 +151,7 @@
  },
  "Ingresos del año 1": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B11",
-  "valor": 284066.134636376,
+  "valor": 282374.1672816677,
   "tipo": "salida"
  },
  "Ingresos del año de crucero": {
@@ -196,12 +196,12 @@
  },
  "Resultado antes de impuestos del año 1": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B36",
-  "valor": 6407.754234044405,
+  "valor": 5257.216432842775,
   "tipo": "salida"
  },
  "Resultado neto del año 1": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B43",
-  "valor": 5446.591098937744,
+  "valor": 4468.633967916359,
   "tipo": "salida"
  },
  "Resultado neto del año de crucero": {
@@ -311,12 +311,12 @@
  },
  "Saldo de caja del mes 12": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!M23",
-  "valor": 96748.14803126662,
+  "valor": 95212.51766301482,
   "tipo": "salida"
  },
  "Saldo mínimo de caja del año 1": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B24",
-  "valor": 59622.06849082164,
+  "valor": 61037.17214630736,
   "tipo": "salida"
  },
  "Mes en el que la caja toca fondo": {
@@ -326,7 +326,7 @@
  },
  "Flujo de caja libre del año 1 antes de la deuda": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B28",
-  "valor": 25207.729917629018,
+  "valor": 24229.77278660763,
   "tipo": "salida"
  },
  "Inversión a recuperar": {
@@ -386,7 +386,7 @@
  },
  "DSCR mínimo de todo el cuadro": {
   "ref": "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B123",
-  "valor": 3.370272165982183,
+  "valor": 3.2395193489306116,
   "tipo": "salida"
  },
  "Lectura del DSCR": {

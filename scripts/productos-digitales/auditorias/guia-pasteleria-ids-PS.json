@@ -1164,7 +1164,7 @@
   {
     "id": "PS-81",
     "tema": "Equipamiento — batidora planetaria",
-    "dato": "Batidora planetaria Sammic BP-20 (20 L, 900 W, 95-392 rpm, temporizador 0-99 min): desde 595,04 €",
+    "dato": "Batidora planetaria Sammic BE-20 (20 L, 900 W, 95-392 rpm, temporizador 0-99 min): desde 595,04 €",
     "cifra": 595.04,
     "unidad": "€",
     "anio_del_dato": "2026",
@@ -1332,7 +1332,7 @@
   {
     "id": "PS-85i",
     "tema": "Obra e instalaciones — dotación tipo de maquinaria, recompuesta (corrección A1)",
-    "dato": "Dotación tipo de maquinaria para un obrador 40-60 m² + tienda 30-50 m², recompuesta EN UNA SOLA BASE sin IVA: horno de convección 6 bandejas UNOX XB693 Bakerlux ≈2.772,00 € sin IVA (PS-72, convertido desde 3.354,12 € con IVA) + segundo horno SMEG ALFA420E1HDS ≈2.077,00 € sin IVA (PS-72, convertido desde 2.513,41 € con IVA) + batidora planetaria Sammic BP-20 595,04 € (PS-81, base fiscal no declarada en origen) + laminadora Sammic DF-40 1.215,00 € sin IVA (PS-79) + abatidor Irinox 4 bandejas 10.037,00 € sin IVA (PS-78) + UNA vitrina Docriluc VEPD-9-15-C 2.284,10 € sin IVA (PS-76, contada una sola vez). Subtotal recompuesto: ≈18.980,14 € sin IVA",
+    "dato": "Dotación tipo de maquinaria para un obrador 40-60 m² + tienda 30-50 m², recompuesta EN UNA SOLA BASE sin IVA: horno de convección 6 bandejas UNOX XB693 Bakerlux ≈2.772,00 € sin IVA (PS-72, convertido desde 3.354,12 € con IVA) + segundo horno SMEG ALFA420E1HDS ≈2.077,00 € sin IVA (PS-72, convertido desde 2.513,41 € con IVA) + batidora planetaria Sammic BE-20 595,04 € (PS-81, base fiscal no declarada en origen) + laminadora Sammic DF-40 1.215,00 € sin IVA (PS-79) + abatidor Irinox 4 bandejas 10.037,00 € sin IVA (PS-78) + UNA vitrina Docriluc VEPD-9-15-C 2.284,10 € sin IVA (PS-76, contada una sola vez). Subtotal recompuesto: ≈18.980,14 € sin IVA",
     "cifra": 18980.14,
     "unidad": "€ sin IVA (síntesis propia)",
     "anio_del_dato": "2026",

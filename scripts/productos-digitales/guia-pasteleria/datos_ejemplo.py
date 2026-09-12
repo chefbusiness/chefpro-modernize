@@ -310,11 +310,14 @@ PARAMS = {
     'iva_general': (0.21, 'art. 90.Uno de la Ley 37/1992', 'Tipo general.'),
 
     # --- margen: UNA SOLA REGLA (D23) ------------------------------------
-    'food_cost_objetivo': (0.32, 'PS-55 + PS-56',
-                           'REGLA ÚNICA. PS-55 (margen bruto 65-70 %) y PS-56 (food cost '
-                           '30-35 %) son la misma regla dicha dos veces: 0,32 es el punto '
-                           'medio de la banda. `margen_bruto_objetivo()` la deriva. El '
-                           'libro 4 pide UNO de los dos y calcula el otro, nunca los dos.'),
+    'food_cost_objetivo': (0.32, 'PS-56',
+                           'REGLA ÚNICA. Sale de PS-56 (food cost por debajo del 30-35 % '
+                           'del PVP): 0,32 es el punto medio de esa banda. '
+                           '`margen_bruto_objetivo()` deriva el margen sobre PVP, que con '
+                           'este food cost es el 68 %. OJO: PS-55 publica «65-70 % de '
+                           'margen bruto» pero SOBRE COSTE, que es otra base y equivale a '
+                           'un food cost del 59-61 %: NO es la misma regla dicha dos veces. '
+                           'El libro 4 pide UNO de los dos números y calcula el otro.'),
     'merma_objetivo': (0.05,
                        'kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx!Resumen por Partida',
                        'Objetivo de merma precargado en el kit. Criterio del propio kit: '
@@ -1356,7 +1359,7 @@ EQUIPAMIENTO = [
      'bloque_capex': 'Equipamiento de obrador', 'dotacion_tipo': True,
      'nota': '1.215,00 € sin IVA / 1.470,15 € con IVA, según la propia ficha.'},
     {'n': 7, 'partida': 'Batidora planetaria, 20 L',
-     'marca': 'Sammic', 'modelo': 'BP-20', 'categoria': 'Amasado y batido',
+     'marca': 'Sammic', 'modelo': 'BE-20', 'categoria': 'Amasado y batido',
      'valor_verificado': 595.04, 'supuesto_por_defecto': None,
      'base_iva': 'no declarada', 'tipo_iva': 0.21, 'fuente': 'PS-81',
      'opcional': False, 'plazo_semanas': 3, 'fuente_plazo': 'supuesto',
@@ -1658,10 +1661,19 @@ GASTOS_FIJOS_MENSUALES = [
      'CAPEX amortizable / años de amortización. Sin ella, la rentabilidad publicada es '
      'mentira: los hornos se gastan.'),
     ('Gastos financieros del préstamo', None, 'supuesto',
-     'Intereses del año 1 del préstamo de `FINANCIACION`.'),
+     'Intereses del AÑO DE CRUCERO (el año 2) del préstamo de `FINANCIACION`, no los '
+     'del año 1: esta lista es la foto de un mes de crucero, y el plan financiero '
+     'calcula su coste fijo de crucero con esos mismos intereses. Con los del año 1, '
+     'que es el de la carencia, la calculadora de inversión y el plan financiero '
+     'publicarían dos inversiones totales distintas para la misma pastelería.'),
 ]
 ANIOS_AMORTIZACION = 10
 FUENTE_AMORTIZACION = 'supuesto'
+
+#: Año de crucero del pack: el 1 va en rampa (RAMPA) y con carencia de
+#: principal, así que la foto «de un mes normal» es la del año 2. Lo usan
+#: `gastos_fijos_mensuales()` y, a través suyo, el fondo de maniobra.
+ANIO_CRUCERO = 2
 
 
 # ==========================================================================
@@ -1680,21 +1692,47 @@ FINANCIACION = {
 }
 
 
-def intereses_anio_1():
-    """Intereses del año 1, con carencia de principal: durante la carencia se
-    paga interés sobre el principal íntegro; después, sobre un saldo que baja
-    en línea recta. Aproximación deliberada y declarada: el cuadro de
-    amortización exacto lo construye el libro 5, no este fichero."""
+def cuadro_frances():
+    """Intereses MES A MES del préstamo, con el MISMO cuadro que construye la
+    hoja «Financiación» del libro 5: interés sobre el saldo vivo, carencia de
+    principal y cuota francesa algebraica.
+
+    Vive aquí, y no sólo en el generador del libro 5, porque los intereses
+    entran en los gastos fijos y los gastos fijos deciden el fondo de maniobra
+    del libro 2: si cada libro se construye su propio cuadro, el pack publica
+    dos inversiones totales (hallazgo A3 de la refutación de documentos,
+    2026-09-10).
+    """
     f = FINANCIACION
-    i_mes = f['tipo_nominal'] / 12.0
-    saldo = f['principal']
-    cuota_principal = f['principal'] / float(f['plazo_meses'] - f['carencia_meses'])
-    total = 0.0
-    for mes in range(12):
-        total += saldo * i_mes
-        if mes >= f['carencia_meses']:
-            saldo -= cuota_principal
-    return total
+    i = f['tipo_nominal'] / 12.0
+    n_am = max(1, f['plazo_meses'] - f['carencia_meses'])
+    cuota = (f['principal'] / n_am if i == 0
+             else f['principal'] * i / (1.0 - (1.0 + i) ** (-n_am)))
+    saldo, intereses = f['principal'], []
+    for mes in range(1, f['plazo_meses'] + 1):
+        interes = saldo * i
+        intereses.append(interes)
+        if mes > f['carencia_meses']:
+            saldo -= min(saldo, cuota - interes)
+    return intereses
+
+
+def intereses_anio(n):
+    """Intereses del año `n` (1 = primer año) sumando los doce meses del cuadro."""
+    return sum(cuadro_frances()[(n - 1) * 12:n * 12])
+
+
+def intereses_anio_1():
+    """Intereses del año 1. Es el año de la CARENCIA, así que es el más caro:
+    se paga interés sobre el principal íntegro durante seis meses."""
+    return intereses_anio(1)
+
+
+def intereses_anio_crucero():
+    """Intereses del año de crucero. El año de crucero de este pack es el AÑO 2
+    (el 1 va en rampa y con carencia), y es el que alimenta los gastos fijos
+    mensuales: FUENTE ÚNICA del fondo de maniobra en los libros 2 y 5."""
+    return intereses_anio(ANIO_CRUCERO)
 
 
 # ==========================================================================
@@ -1750,14 +1788,19 @@ PICOS = [
         'dias_campana': 5,
         'producto_estrella': 'Roscón de Reyes',
         'uds_dia_normal': 0,
-        'uds_dia_pico': 420,
+        'uds_dia_pico': 160,
         'factor_obrador': 6.0,
         'refuerzo_personas': 3,
         'refuerzo_horas_persona': 40,
         'antelacion_compra_semanas': 6,
         'fuente_factor': 'PS-41 + supuesto',
         'fuente_uds': 'supuesto',
-        'nota': ('El pico que decide el año. Referencias de escala, nunca de precio ni de '
+        'nota': ('El pico que decide el año. Las unidades de campaña son las de los CINCO días '
+                 'de más venta: 160 al día, 800 en total, el 47 % de los roscones que el mix '
+                 'de la carta asigna al año (1,2 % de las piezas). El resto se venden en la '
+                 'semana previa, fuera de la ventana de campaña, y por eso no entran en esta '
+                 'fila. Referencias de '
+                 'escala, nunca de precio ni de '
                  'cuota: PS-35 (unos 30 millones de roscones en España en la campaña '
                  '2025/26), PS-36 (más de 2,9 millones en la Comunidad de Madrid) y '
                  'PS-38 (El Corte Inglés 850.000, Viena Capellanes 72.000). PS-46: el '
@@ -1809,7 +1852,7 @@ PICOS = [
         'dias_campana': 8,
         'producto_estrella': 'Torrijas',
         'uds_dia_normal': 0,
-        'uds_dia_pico': 240,
+        'uds_dia_pico': 230,
         'factor_obrador': 2.4,
         'refuerzo_personas': 1,
         'refuerzo_horas_persona': 40,
@@ -1818,7 +1861,9 @@ PICOS = [
         'fuente_uds': 'supuesto',
         'nota': ('Ocho días seguidos de producción extra, que es más agotador que los '
                  'cinco de Reyes aunque el pico sea menor. Torrijas y monas a la vez: una '
-                 'necesita freidora y frío, la otra horno y chocolate.'),
+                 'necesita freidora y frío, la otra horno y chocolate. Son 230 torrijas al '
+                 'día y 1.840 en la campaña: el 99 % de las que el mix de la carta asigna '
+                 'al año, porque fuera de Semana Santa no se hacen.'),
     },
     {
         'nombre': 'Comuniones',
@@ -1847,7 +1892,7 @@ PICOS = [
         'dias_campana': 3,
         'producto_estrella': 'Buñuelos de viento',
         'uds_dia_normal': 0,
-        'uds_dia_pico': 520,
+        'uds_dia_pico': 470,
         'factor_obrador': 2.6,
         'refuerzo_personas': 2,
         'refuerzo_horas_persona': 24,
@@ -1858,7 +1903,9 @@ PICOS = [
                  'de santo y panellets. Los buñuelos van rellenos (4 °C y 24 h) y los '
                  'otros dos son estables a temperatura ambiente: por eso los buñuelos se '
                  'hacen el mismo día y los huesos de santo se pueden adelantar. Ese '
-                 'detalle legal ES la planificación de la campaña.'),
+                 'detalle legal ES la planificación de la campaña. Son 470 buñuelos al día '
+                 'y 1.410 en los tres días: el 99 % de los que el mix de la carta asigna al '
+                 'año, porque fuera de esta fecha no se hacen.'),
     },
 ]
 
@@ -1873,9 +1920,22 @@ PICOS = [
 #: levanta un mes entero (febrero, además, tiene 28 días). Sólo los picos de
 #: 2,0x o más -Reyes, Semana Santa y Todos los Santos- mueven el coeficiente
 #: de su mes, y eso es exactamente lo que comprueba `comprobar()`.
-ESTACIONALIDAD_MENSUAL = (1.18, 0.94, 0.98, 1.05, 1.08, 0.98,
-                          0.86, 0.68, 0.92, 0.96, 1.09, 1.28)
+#:
+#: CADA MES TIENE QUE CABER: el coeficiente de un mes con campaña se fija de
+#: modo que las ventas del mes contengan la facturación de la campaña MÁS los
+#: días normales que quedan fuera de ella (`comprobar()` lo exige con un suelo
+#: del 60 % del día medio para esos días). Enero es el caso que manda: con el
+#: 1,18 de la primera versión, Reyes se comía el mes entero y a los otros
+#: veintiséis días les quedaban 183 €.
+ESTACIONALIDAD_MENSUAL = (1.34, 0.93, 0.97, 1.04, 1.07, 0.97,
+                          0.85, 0.65, 0.91, 0.95, 1.08, 1.24)
 FUENTE_ESTACIONALIDAD = 'supuesto'
+
+#: Días de apertura de cada mes. 6 días por semana = 26 al mes; agosto pierde
+#: los 12 de las dos semanas de cierre. Suman los 300 de
+#: `NEGOCIO['dias_apertura_anio']`, y son los que usa `comprobar()` para
+#: exigir que cada mes contenga a su campaña.
+DIAS_APERTURA_MES = (26, 26, 26, 26, 26, 26, 26, 14, 26, 26, 26, 26)
 
 
 def estacionalidad_pesos():
@@ -2433,7 +2493,11 @@ _FIJOS_CACHE = {}
 def gastos_fijos_mensuales():
     """Gastos fijos de un mes de crucero, con el personal, la retribución del
     propietario, la amortización y los intereses dentro. Sin esos cuatro
-    renglones la rentabilidad que publica un plan de negocio no significa nada."""
+    renglones la rentabilidad que publica un plan de negocio no significa nada.
+
+    Los intereses son los del AÑO DE CRUCERO (`ANIO_CRUCERO`), que es lo que
+    hace que el fondo de maniobra del libro 2 valga exactamente lo mismo que el
+    del libro 5 (hallazgo A3, 2026-09-10)."""
     if 'v' in _FIJOS_CACHE:
         return _FIJOS_CACHE['v']
     _FIJOS_CACHE['v'] = 0.0     # corta la recursión de capex -> fondo de maniobra
@@ -2446,7 +2510,7 @@ def gastos_fijos_mensuales():
         elif partida.startswith('Amortización'):
             total += capex_amortizable_sin_iva() / ANIOS_AMORTIZACION / 12.0
         elif partida.startswith('Gastos financieros'):
-            total += intereses_anio_1() / 12.0
+            total += intereses_anio_crucero() / 12.0
     _FIJOS_CACHE['v'] = total
     return total
 
@@ -3011,6 +3075,38 @@ def comprobar():
                   'El pico «%s» multiplica por %.1f y su mes (%s) tiene un coeficiente '
                   'por debajo de 1,00' % (p['nombre'], p['factor_obrador'],
                                           MESES[p['mes'] - 1]))
+    # A8 (2026-09-10). Dos comprobaciones que no existían y por las que se
+    # publicó una campaña de Reyes que vendía 31.500 € en cinco días dentro de
+    # un enero de 31.683 €, con 2.100 roscones contra los 1.713 que el mix de
+    # la carta asigna a todo el año.
+    exige(len(DIAS_APERTURA_MES) == 12 and
+          sum(DIAS_APERTURA_MES) == NEGOCIO['dias_apertura_anio'],
+          'DIAS_APERTURA_MES suma %d días y el año tiene %d'
+          % (sum(DIAS_APERTURA_MES), NEGOCIO['dias_apertura_anio']))
+    ventas = ventas_anuales_sin_iva()
+    dia_medio = ventas / NEGOCIO['dias_apertura_anio']
+    uds_anio = {r['nombre']: piezas_dia_crucero() * NEGOCIO['dias_apertura_anio']
+                * r['mix_pct'] / 100.0 for r in CARTA}
+    pvp_sin = {r['nombre']: r['pvp_con_iva'] / (1.0 + r['iva']) for r in CARTA}
+    for p in PICOS:
+        uds_camp = p['uds_dia_pico'] * p['dias_campana']
+        exige(uds_camp <= uds_anio[p['producto_estrella']] + 1e-9,
+              'Pico «%s»: la campaña vende %.0f uds de «%s» y el mix de la carta le '
+              'asigna %.0f en todo el año'
+              % (p['nombre'], uds_camp, p['producto_estrella'],
+                 uds_anio[p['producto_estrella']]))
+        fact_camp = uds_camp * pvp_sin[p['producto_estrella']]
+        ventas_mes = ESTACIONALIDAD_MENSUAL[p['mes'] - 1] / 12.0 * ventas
+        dias_fuera = DIAS_APERTURA_MES[p['mes'] - 1] - p['dias_campana']
+        exige(dias_fuera >= 0,
+              'Pico «%s»: la campaña dura más días de los que el mes abre' % p['nombre'])
+        suelo = fact_camp + dias_fuera * dia_medio * 0.60
+        exige(ventas_mes >= suelo,
+              'Pico «%s»: %s factura %.0f € y la campaña sola pide %.0f €; a los %d días '
+              'restantes les quedan %.0f €/día, por debajo del 60 %% del día medio (%.0f €)'
+              % (p['nombre'], MESES[p['mes'] - 1], ventas_mes, fact_camp, dias_fuera,
+                 (ventas_mes - fact_camp) / max(1, dias_fuera), dia_medio))
+
     r = rampa_mensual()
     exige(len(r) == 12 and abs(r[0] - RAMPA['mes1']) < 1e-9 and abs(r[-1] - 1.0) < 1e-9,
           'La rampa de arranque no va de %.2f a 1,00 en 12 meses' % RAMPA['mes1'])

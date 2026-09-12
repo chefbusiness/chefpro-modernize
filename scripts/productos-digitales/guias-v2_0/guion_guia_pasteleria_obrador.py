@@ -123,7 +123,7 @@ GUIA = {
     'autor_linea': 'John Guerrero · AI Chef Pro · aichef.pro',
     'cabecera': 'AI Chef Pro · Cómo Montar una Pastelería',
     'fecha': 'septiembre de 2026',
-    'version': '1.0',
+    'version': '1.0.1',
     'tipo_doc': 'guía',
     'tipo_doc_art': 'de la guía',
     'tipo_doc_dem': 'esta guía',
@@ -876,7 +876,7 @@ CAPITULOS = [
                 'filas': [
                     ['No sé si este local me sirve', '5 y 6', 'capacidad-obrador-y-local.xlsx'],
                     ['No sé cuántas piezas al día aguanta lo que voy a comprar', '7', 'capacidad-obrador-y-local.xlsx'],
-                    ['No sé cuánto cuesta abrir de verdad', '4', 'calculadora-capex-pasteleria.xlsx'],
+                    ['No sé cuánto cuesta abrir', '4', 'calculadora-capex-pasteleria.xlsx'],
                     ['No sé si me sale mejor un traspaso', '6', 'calculadora-capex-pasteleria.xlsx'],
                     ['No sé qué poner en la carta', '3', 'carta-de-apertura-y-escandallo.xlsx'],
                     ['No sé a cuánto vender ni cuánto me cuesta', '12', 'carta-de-apertura-y-escandallo.xlsx'],
@@ -905,7 +905,7 @@ CAPITULOS = [
     {
         'n': 2,
         'titulo': 'El Cliente y la Plaza: Quién Compra Pastelería y Cuándo',
-        'resumen_indice': 'consumo en los hogares y brecha por renta, el peso real del comercio especializado, el competidor que de verdad te quita ventas y la curva del año.',
+        'resumen_indice': 'consumo en los hogares y brecha por renta, el peso real del comercio especializado, el competidor que te quita ventas y la curva del año.',
         'palabras': 1700, 'bloques': 1,
         'objetivo': 'Que el lector entienda contra quién compite de verdad '
                     'antes de elegir plaza y carta, y que vea la curva anual de '
@@ -1077,7 +1077,7 @@ CAPITULOS = [
             C('Precio por metro cuadrado del escenario de obra bajo', f'{X_CAPEX}!Parámetros!B7', 'eur'),
             C('Precio por metro cuadrado del escenario de obra alto', f'{X_CAPEX}!Parámetros!B9', 'eur'),
             C('Obra civil calculada en el escenario medio', f'{X_CAPEX}!Parámetros!B12', 'eur'),
-            C('Fondo de maniobra calculado', f'{X_CAPEX}!Parámetros!B18', 'eur'),
+            C('Fondo de maniobra calculado', f'{X_CAPEX}!Parámetros!B19', 'eur'),
             C('Meses de gastos fijos que cubre ese fondo', f'{X_CAPEX}!IVA y Tesorería!B27', 'num'),
             C('Subtotal comparable con el escenario publicado por un tercero', f'{X_CAPEX}!CAPEX por Bloque!K51', 'eur'),
             C('Desviación del modelo sobre ese escenario publicado', f'{X_CAPEX}!CAPEX por Bloque!K53', 'pct1'),
@@ -1618,11 +1618,15 @@ PPE_12 = {
         'treinta referencias y dejar que el número hable: en pastelería el '
         'ingrediente casi nunca es la parte grande del coste.',
     ],
-    'Margen bruto y food cost son la misma regla dicha dos veces': [
-        'Decirlo sin rodeos: el margen bruto sobre precio de venta y el food '
+    'Margen bruto y food cost son la misma regla, pero cuidado con la base': [
+        'Decirlo sin rodeos: el margen bruto SOBRE PRECIO DE VENTA y el food '
         'cost son el mismo número visto del derecho y del revés. Presentarlos '
         'como dos objetivos independientes hace que el lector intente cumplir '
         'los dos y se vuelva loco.',
+        'Avisar de la base, que es donde está la trampa: un «65-70 % de margen '
+        'bruto» SOBRE COSTE no es lo mismo que sobre precio de venta —equivale '
+        'a un food cost del 59-61 %, no del 30-35 %—. Antes de comparar tu '
+        'margen con el de nadie, preguntar sobre qué base está calculado.',
         'Dar el food cost objetivo del caso modelado y el margen bruto que se '
         'deriva de él, y explicar que en el libro sólo se pide UNO de los dos '
         'y el otro se calcula solo.',
@@ -1645,6 +1649,30 @@ PPE_12 = {
         'margen por unidad y el mix delante se puede calcular cuántas '
         'unidades se pueden perder tras una subida sin perder margen total. Es '
         'una cuenta, no una opinión, y el libro la trae hecha.',
+    ],
+    # B1 (2026-09-10): la SPEC vende la hoja de decisión de huevo como el
+    # diferencial del pack y el objetivo de este capítulo la nombra, pero
+    # «ovoproducto», «huevo crudo» y «70 °C» salían CERO veces en los 21
+    # capítulos: el comprador abría el libro 4 y encontraba una hoja que el
+    # libro no le había enseñado a usar.
+    'Las tres vías del huevo, y por qué decides una por elaboración': [
+        'Dar las tres vías del art. 9 del RD 1021/2022 con su literal y su '
+        'apartado: 70 °C durante 2 segundos en el centro o efecto equivalente '
+        '(9.1.a), 63 °C durante 20 segundos CON consumo inmediato (9.1.b) y '
+        'sustituir el huevo crudo por ovoproducto de establecimiento '
+        'autorizado (9.2). Todo lo que no pase por una de las tres no se hace '
+        'con huevo crudo.',
+        'Explicar por qué la vía de los 63 °C no es la de una pastelería: '
+        'exige servir para consumo inmediato, y lo que va a vitrina no lo es.',
+        'Explicar las consecuencias que arrastra la vía elegida: lo de la vía '
+        '1.a) que no sea estable a temperatura ambiente y todo lo hecho con '
+        'ovoproducto se conserva a 8 °C o menos y se consume en 24 horas desde '
+        'su elaboración, con registro de fecha y hora (art. 9.3); si además es '
+        'producto de pastelería relleno, le aplica la fila 9 del art. 4.1 '
+        '(4 °C) y manda el techo más bajo.',
+        'Cerrar con la razón de que el libro 4 devuelva DOS salidas separadas: '
+        'el plazo legal, que lo fija el art. 9.3, y la vida útil, que la '
+        'declara el lector en su APPCC y que el real decreto no establece.',
     ],
 }
 
@@ -1838,7 +1866,7 @@ CAPITULOS += [
             C('Total de referencia sin IVA de toda la dotación', f'{X_EQUIP}!Equipamiento!I42', 'eur'),
             C('IVA soportado sobre el equipamiento', f'{X_EQUIP}!Equipamiento!I46', 'eur'),
             C('Desembolso real del equipamiento con IVA', f'{X_EQUIP}!Equipamiento!I47', 'eur'),
-            C('Plazo crítico de entrega, en semanas', f'{X_EQUIP}!Equipamiento!I52', 'num'),
+            C('Plazo crítico de entrega, en semanas', f'{X_EQUIP}!Equipamiento!I53', 'num'),
             C('Semanas que faltan hasta la apertura prevista', f'{X_EQUIP}!Equipamiento!C11', 'num'),
             C('Inversión de referencia de la variante sin salida de humos', f'{X_EQUIP}!Variante del Formato!K39', 'eur'),
             C('Inversión de referencia del caso base con venta', f'{X_EQUIP}!Variante del Formato!G39', 'eur'),
@@ -2154,14 +2182,21 @@ CAPITULOS += [
                 'titulo': 'De dónde sale el coste hora de obrador, parámetro a parámetro (carta-de-apertura-y-escandallo.xlsx, hoja «Parámetros»)',
                 'src': (X_CARTA, 'Parámetros'),
                 'cols': [('Parámetro', 'A', 'txt'), ('Valor', 'B', 'num2'),
-                         ('Unidad', 'C', 'txt'), ('De dónde sale', 'D', 'txt')],
-                'filas': (13, 16),
-                'nota': 'El coste de empresa anual del personal de obrador, del que arranca '
-                        'esta cadena, sale de la hoja de personal del mismo libro: es el bruto '
-                        'de convenio por sus pagas más la Seguridad Social a cargo de la '
-                        'empresa. La parte productiva de la jornada es un supuesto y es la '
-                        'palanca más sensible de toda la hoja: subirla baja el coste hora y '
-                        'hace que la carta parezca más rentable de lo que es.',
+                         ('Unidad', 'C', 'txt'), ('De dónde sale', 'D', 'txt'),
+                         ('Coste de empresa al año (€)', 'F', 'eur2')],
+                'filas': (9, 16),
+                'omitir_filas': (11, 12),
+                'nota': 'La cadena se sigue entera de arriba abajo: las 2,5 jornadas '
+                        'equivalentes de obrador (Jefe 1,0 + Pastelero 1,0 + Ayudante 0,5) '
+                        'por las horas de contrato y por la parte productiva de la jornada '
+                        'dan las horas productivas del año; el coste de empresa anual de esas '
+                        '2,5 jornadas dividido entre esas horas da el coste hora. Sin la fila '
+                        'de las jornadas, la multiplicación no cuadra. El coste de empresa es '
+                        'el bruto de convenio por sus pagas más la Seguridad Social a cargo '
+                        'de la empresa, y sale de la hoja de personal del mismo libro. La '
+                        'parte productiva de la jornada es un supuesto y es la palanca más '
+                        'sensible de toda la hoja: subirla baja el coste hora y hace que la '
+                        'carta parezca más rentable de lo que es.',
             },
         ],
         'prohibido': NO_COMUN + [
@@ -2688,15 +2723,18 @@ PPE_21 = {
         'comunidades autónomas, así que el cuadro autonómico no puede '
         'presentarse como completo.',
     ],
-    'Las cuatro fechas que ya sabemos que se mueven': [
+    'Las fechas que ya sabemos que se mueven': [
         'Presentar las fechas de caducidad conocidas y por qué se agrupan '
         'aquí y no dentro de los capítulos: para que la edición siguiente se '
         'arregle cambiando un bloque y no veinte capítulos.',
         'Explicar qué se rompe con cada una: la tabla salarial y el salario '
         'mínimo se renuevan cada año, el calendario de facturación tiene dos '
         'fechas escalonadas, la obligación de bebida en envase reutilizable '
-        'pasa de futura a presente, y el período transitorio de una comunidad '
-        'autónoma vence.',
+        'pasa de futura a presente, el período transitorio de una comunidad '
+        'autónoma vence, y el calendario de accesibilidad de bienes y '
+        'servicios privados tiene dos fechas, 2029 para los establecimientos '
+        'nuevos y 2030 para los ya existentes: cinco bloques y siete fechas, '
+        'y el recuento tiene que cuadrar con la tabla.',
         'Dar la regla de uso: todas esas cifras viven en celda de parámetro en '
         'los libros, nunca cosidas en la prosa, y por eso cambiar una no '
         'obliga a rehacer nada más.',
@@ -2796,16 +2834,23 @@ CAPITULOS += [
                 'titulo': 'Lo que cuesta cada campaña y lo que inmoviliza (estacionalidad-y-picos.xlsx, hoja «Refuerzo y Tesorería»)',
                 'src': (X_EST, 'Refuerzo y Tesorería'),
                 'cols': [('Campaña', 'A', 'txt'), ('Personas de refuerzo', 'B', 'num'),
+                         ('Personas que pediría el déficit', 'G', 'num'),
+                         ('¿Cubre el refuerzo?', 'H', 'txt'),
                          ('Horas totales de refuerzo', 'D', 'num'),
                          ('Coste del refuerzo (€)', 'F', 'eur2'),
                          ('Compra de materia de la campaña (€)', 'K', 'eur2'),
                          ('Días con el dinero parado', 'M', 'num'),
                          ('Resultado incremental (€)', 'Q', 'eur2')],
                 'filas': (6, 11),
-                'nota': 'El coste hora del refuerzo es coste de EMPRESA, con la Seguridad '
-                        'Social dentro, no bruto. Y el resultado incremental descuenta el '
-                        'refuerzo, la materia de las unidades incrementales y el coste '
-                        'financiero del dinero parado.',
+                'nota': 'Las personas de refuerzo son las que CONTRATAS; las que pediría el '
+                        'déficit son las que haría falta meter para cerrarlo entero. Cuando '
+                        'no coinciden no es un descuadre, es una decisión: en San Valentín se '
+                        'cubre con la plantilla base y en Reyes se acepta quedarse una '
+                        'persona corto y compensarlo adelantando producción con frío. El '
+                        'coste hora del refuerzo es coste de EMPRESA, con la Seguridad Social '
+                        'dentro, no bruto. Y el resultado incremental descuenta el refuerzo, '
+                        'la materia de las unidades incrementales y el coste financiero del '
+                        'dinero parado.',
             },
         ],
         'prohibido': NO_COMUN + [
@@ -2948,6 +2993,7 @@ CAPITULOS += [
                 'titulo': 'Qué referencia puede viajar y cuál no, según su temperatura y su plazo (carta-de-apertura-y-escandallo.xlsx, hoja «Decisión de Huevo y Temperatura»)',
                 'src': (X_CARTA, 'Decisión de Huevo y Temperatura'),
                 'cols': [('Ref', 'A', 'txt'), ('Referencia', 'B', 'txt'),
+                         ('Vía legal del huevo', 'D', 'txt'),
                          ('¿Estable a temperatura ambiente?', 'F', 'txt'),
                          ('Temperatura de conservación (grados)', 'I', 'num'),
                          ('Plazo legal en horas', 'K', 'num'),
@@ -3009,10 +3055,25 @@ CAPITULOS += [
                          ('Año 2 (crucero)', 'C', 'eur'), ('Año 3', 'D', 'eur'),
                          ('Parte de las ventas del año 2 (%)', 'E', 'pct1')],
                 'filas': (11, 36),
+                # B12 (2026-09-10): las dos filas de IVA soportado iban entre
+                # TOTAL COSTES FIJOS y el resultado sin participar en la resta.
+                # Quien las sumaba obtenía otro número.
+                'omitir_filas': (34, 35),
                 'nota': 'Todas las cifras van sin IVA. El coste de ventas se proyecta con la '
                         'regla única de margen, no con el escandallo de las piezas: es el '
                         'supuesto conservador, y la diferencia entre los dos números es tu '
                         'colchón.',
+            },
+            {
+                'titulo': 'Memoria de IVA soportado, que no afecta al resultado (plan-financiero-3-anos-pasteleria.xlsx, hoja «PyG 3 Años»)',
+                'src': (X_PLAN, 'PyG 3 Años'),
+                'cols': [('Concepto', 'A', 'txt'), ('Año 1 (arranque)', 'B', 'eur'),
+                         ('Año 2 (crucero)', 'C', 'eur'), ('Año 3', 'D', 'eur')],
+                'filas': (34, 35),
+                'nota': 'Va aparte a propósito: la cuenta de resultados de arriba está sin '
+                        'IVA de principio a fin y estas dos líneas no entran en ninguna de '
+                        'sus restas. Se publican porque el IVA soportado SÍ sale de la caja '
+                        'y hay que tenerlo previsto, que es lo que mide la hoja de tesorería.',
             },
             {
                 'titulo': 'Los tres escenarios, con la misma plantilla y los mismos fijos (plan-financiero-3-anos-pasteleria.xlsx, hoja «Escenarios»)',
@@ -3093,8 +3154,10 @@ CAPITULOS += [
                          ('Cobertura del servicio de la deuda', 'F', 'num2')],
                 'filas': (116, 122),
                 'nota': 'Sólo los intereses son gasto de la cuenta de resultados; el principal '
-                        'devuelto sale de la caja y no aparece en el resultado. Por eso el '
-                        'punto de equilibrio de caja está por encima del contable.',
+                        'devuelto sale de la caja y no aparece en el resultado. En este caso '
+                        'el equilibrio de caja queda POR DEBAJO del contable, porque la '
+                        'amortización que se descuenta pesa más que el principal que se '
+                        'añade.',
             },
             {
                 'titulo': 'Qué tipo de IVA repercutes en cada línea y en cada canal',
@@ -3152,8 +3215,8 @@ CAPITULOS += [
             C('Trámites del expediente completo', f'{X_LEGAL}!Checklist Legal (F1-F6)!D55', 'num'),
             C('Coste previsto total del expediente y de la obra', f'{X_LEGAL}!Checklist Legal (F1-F6)!D59', 'eur'),
             C('Trámites sin importe conocido todavía', f'{X_LEGAL}!Checklist Legal (F1-F6)!D62', 'num'),
-            C('Plazo crítico de entrega del equipamiento, en semanas', f'{X_EQUIP}!Equipamiento!I52', 'num'),
-            C('Margen de ese plazo crítico hasta la apertura, en semanas', f'{X_EQUIP}!Equipamiento!I54', 'num'),
+            C('Plazo crítico de entrega del equipamiento, en semanas', f'{X_EQUIP}!Equipamiento!I53', 'num'),
+            C('Margen de ese plazo crítico hasta la apertura, en semanas', f'{X_EQUIP}!Equipamiento!I55', 'num'),
         ],
         'sector': ['PA-39', 'PA-40', 'PA-04'],
         'tablas': [
@@ -3205,7 +3268,10 @@ CAPITULOS += [
     {
         'n': 21,
         'titulo': 'Anexo normativo, actualizado a 10 de septiembre de 2026',
-        'resumen_indice': 'Anexo normativo, actualizado a 10 de septiembre de 2026',
+        # D28: va como entrada 21 para que el pipeline lo escriba, pero NO se
+        # numera como capítulo. La portada dice «veinte capítulos» (B6).
+        'sin_numerar': True,
+        'resumen_indice': 'qué norma sigue vigente y desde cuándo, las fechas que ya sabemos que se mueven, las cinco normas muertas que la SERP sigue citando y cómo comprobar la ficha de vigencia del BOE en un minuto',
         'palabras': 1500, 'bloques': 1,
         'objetivo': 'Que el lector pueda comprobar por su cuenta, dentro de un '
                     'año, qué sigue vigente de todo lo que ha leído: estado '
@@ -3265,7 +3331,7 @@ CAPITULOS += [
                     ['Decreto 13/2025 del Consell', 'Ampliación autonómica de la lista de la vivienda', 'En vigor desde el 31-01-2025'],
                     ['Decreto 85/2024 de la Generalitat de Catalunya', 'Acreditación voluntaria de artesanía alimentaria', 'En vigor'],
                     ['RD 1254/1991', 'Huevo y ovoproductos', 'DEROGADO con efectos de 22-12-2022; sigue citándose en contenidos que circulan'],
-                    ['RD 3484/2000', 'Comidas preparadas', 'DEROGADO; lo sustituye el art. 30 del RD 1086/2020'],
+                    ['RD 3484/2000', 'Comidas preparadas', 'DEROGADO; la materia la regulan hoy el RD 1021/2022 y el art. 30 del RD 1086/2020'],
                     ['RD 1420/2006', 'Anisakis', 'DEROGADO'],
                     ['RD 202/2000', 'Manipuladores de alimentos', 'DEROGADO por el RD 109/2010: el carnet no existe'],
                     ['RD 2207/1995', 'Higiene de los productos alimenticios', 'DEROGADO'],
@@ -3671,10 +3737,12 @@ BONUS = [
                         'src': (X_CARTA, 'Decisión de Surtido'),
                         'cols': [('Concepto', 'B', 'txt'), ('Referencias', 'E', 'num'),
                                  ('Margen ponderado (€)', 'F', 'eur2')],
-                        'filas': (39, 42),
+                        'filas': (39, 41),
                         'nota': 'El margen ponderado suma lo que aporta cada grupo de '
                                 'referencias al margen de cien piezas vendidas con el mix '
-                                'previsto.',
+                                'previsto. El margen ponderado MEDIO por referencia de la '
+                                'carta es otra cosa y son 0,04 €; el de las cien piezas '
+                                'vendidas con este mix, 1,07 €.',
                     },
                     {
                         'titulo': 'Los cuatro canales de venta y su margen de contribución (plan-financiero-3-anos-pasteleria.xlsx, hoja «Canales y Punto Muerto»)',
@@ -3794,8 +3862,15 @@ BONUS = [
                                  ('Año 2 (crucero)', 'C', 'eur'), ('Año 3', 'D', 'eur'),
                                  ('Parte de las ventas del año 2 (%)', 'E', 'pct1')],
                         'filas': (11, 36),
+                        # B12 (2026-09-10): fuera las dos filas de IVA
+                        # soportado, que no participan en la resta.
+                        'omitir_filas': (34, 35),
                         'nota': 'Todas las cifras van sin IVA y el coste de ventas se proyecta '
-                                'con la regla única de margen, que es el supuesto conservador.',
+                                'con la regla única de margen, que es el supuesto conservador. '
+                                'Las dos líneas de IVA soportado que la hoja «PyG 3 Años» lleva '
+                                'como memoria (filas 34 y 35) no se imprimen aquí ni entran en '
+                                'la resta del resultado; su efecto sobre la caja está en la '
+                                'hoja de tesorería.',
                     },
                     {
                         'titulo': 'La caja de los doce primeros meses (plan-financiero-3-anos-pasteleria.xlsx, hoja «Tesorería 12 meses»)',
@@ -3807,7 +3882,10 @@ BONUS = [
                         'filas': (10, 23),
                         'nota': 'La cuenta de resultados dice si el negocio gana; esta hoja dice '
                                 'si llega a fin de mes. El mes en el que la caja toca fondo es '
-                                'la pregunta que hace un banco.',
+                                'la pregunta que hace un banco. Las compras del mes 1 salen a '
+                                'cero porque el supuesto es pago a 30 días: la primera factura '
+                                'de materia prima se paga en el mes 2, y el pedido de arranque '
+                                'ya está dentro de la inversión inicial como packaging.',
                     },
                 ],
                 'prohibido': NO_COMUN_BONUS + [
@@ -3838,7 +3916,7 @@ BONUS = [
                     C('Resultado neto del escenario optimista', f'{X_PLAN}!Escenarios!D16', 'eur'),
                     C('Coste de personal sobre ventas en el escenario pesimista', f'{X_PLAN}!Escenarios!B20', 'pct1'),
                     C('Campañas que no aguanta el obrador', f'{X_EST}!Capacidad vs Demanda del Pico!N13', 'num'),
-                    C('Margen del plazo crítico de entrega, en semanas', f'{X_EQUIP}!Equipamiento!I54', 'num'),
+                    C('Margen del plazo crítico de entrega, en semanas', f'{X_EQUIP}!Equipamiento!I55', 'num'),
                 ],
                 'sector': ['PS-97', 'PS-41'],
                 'tablas': [{
@@ -4060,15 +4138,14 @@ BONUS += [
                              ('Piezas al día de obrador que permite', 'M', 'num')],
                     'filas': (6, 15),
                     'nota': 'Las capacidades son supuestos de modelado calibrados con fichas de '
-                            'distribuidor. Cámbialas por las del equipo que vayas a comprar de '
-                            'verdad.',
+                            'distribuidor. Cámbialas por las del equipo que vayas a comprar.',
                 }],
                 'prohibido': NO_COMUN_BONUS,
             },
             {
                 'n': 3,
                 'titulo': 'Abrir con Veinte Referencias o con Cuarenta',
-                'resumen_indice': 'cuántas referencias caben de verdad en el primer año, y qué se gana quitando en vez de añadir.',
+                'resumen_indice': 'cuántas referencias caben en el primer año, y qué se gana quitando en vez de añadir.',
                 'palabras': 850, 'bloques': 1,
                 'objetivo': 'Resolver la decisión de amplitud del surtido con el '
                             'filtro de margen y rotación, y no con la ilusión de '
@@ -4122,11 +4199,12 @@ BONUS += [
                     'src': (X_CARTA, 'Decisión de Surtido'),
                     'cols': [('Concepto', 'B', 'txt'), ('Referencias', 'E', 'num'),
                              ('Margen ponderado (€)', 'F', 'eur2')],
-                    'filas': (39, 42),
+                    'filas': (39, 41),
                     'nota': 'El margen ponderado mide lo que aporta cada grupo al margen de '
                             'cien piezas vendidas con el mix previsto. Retirar dos referencias '
                             'de margen ponderado bajo casi no se nota en la caja y sí en la '
-                            'compra.',
+                            'compra. El margen ponderado medio por referencia de la carta es '
+                            'de 0,04 €; el de las cien piezas vendidas con este mix, 1,07 €.',
                 }],
                 'prohibido': NO_COMUN_BONUS,
             },
@@ -4184,7 +4262,7 @@ BONUS += [
                 ],
                 'sector': ['PA-17', 'PA-24', 'PS-06'],
                 'tablas': [{
-                    'titulo': 'Qué puedes escribir en el escaparate según lo que hagas de verdad',
+                    'titulo': 'Qué puedes escribir en el escaparate según lo que hagas',
                     'cabecera': ['Lo que haces', '¿Puedes usar «ELABORACIÓN PROPIA»?', 'Dónde puedes venderlo con esa mención'],
                     'filas': [
                         ['Elaboras la pieza entera en tu obrador', 'Sí, si quieres: es voluntaria', 'En el local donde la elaboraste y en tus sucursales'],
@@ -4405,7 +4483,7 @@ BONUS += [
             {
                 'n': 8,
                 'titulo': 'Contratar Pastelero o Tirar de Ayudante',
-                'resumen_indice': 'qué cuesta de verdad cada perfil con la Seguridad Social dentro, y qué se pierde bajando de categoría.',
+                'resumen_indice': 'qué cuesta cada perfil con la Seguridad Social dentro, y qué se pierde bajando de categoría.',
                 'palabras': 830, 'bloques': 1,
                 'objetivo': 'Resolver la decisión de plantilla que más veces se '
                             'toma por precio: cubrir el obrador con un perfil '
@@ -4516,8 +4594,8 @@ BONUS += [
                     C('Duración total del proyecto, en meses', f'{X_LEGAL}!Cronograma y Ruta Crítica!C38', 'num1'),
                     C('Hitos sin holgura en la ruta crítica', f'{X_LEGAL}!Cronograma y Ruta Crítica!C39', 'num'),
                     C('Mes natural en el que abre el caso modelado', f'{X_LEGAL}!Cronograma y Ruta Crítica!C40', 'num'),
-                    C('Plazo crítico de entrega del equipamiento, en semanas', f'{X_EQUIP}!Equipamiento!I52', 'num'),
-                    C('Margen de ese plazo hasta la apertura, en semanas', f'{X_EQUIP}!Equipamiento!I54', 'num'),
+                    C('Plazo crítico de entrega del equipamiento, en semanas', f'{X_EQUIP}!Equipamiento!I53', 'num'),
+                    C('Margen de ese plazo hasta la apertura, en semanas', f'{X_EQUIP}!Equipamiento!I55', 'num'),
                     C('Peso de la campaña grande sobre las ventas del año', f'{X_EST}!Peso sobre el Año!D24', 'pct1'),
                 ],
                 'sector': ['PA-04', 'PA-39'],

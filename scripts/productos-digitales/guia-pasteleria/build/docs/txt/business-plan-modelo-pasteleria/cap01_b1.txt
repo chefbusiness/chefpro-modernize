@@ -6,17 +6,17 @@ Este documento es el caso completo de una pastelería (repostería), con las cif
 
 La inversión sin contar el fondo de maniobra suma 165.800 €. El fondo de maniobra añade 62.115 €, y la suma de los dos da la inversión total: 227.916 €. La necesidad total de caja al arranque sube hasta 261.826 €, porque a la inversión total hay que sumarle el IVA que se adelanta al pagar la obra y el equipamiento antes de facturar el primer euro; son cuatro cifras distintas porque cada una responde a una pregunta distinta: qué cuesta montar el negocio, cuánto colchón hace falta para los primeros meses, cuánto suman las dos cosas y cuánto dinero hay que tener disponible el día de la firma.
 
-De esos 261.826 €, la aportación de recursos propios es 201.826 € y el préstamo pedido es de 60.000 €. Dentro del desembolso total, 33.911 € es IVA soportado sobre la inversión, que Hacienda devuelve más adelante y que por tanto no es un coste real del proyecto, sino un adelanto de tesorería.
+De esos 261.826 €, la aportación de recursos propios es 201.826 € y el préstamo pedido es de 60.000 €. Dentro del desembolso total, 33.911 € es IVA soportado sobre la inversión, que Hacienda devuelve más adelante y que por tanto no es un coste (costo) real del proyecto, sino un adelanto de tesorería.
 
 Como contraste, el escenario publicado en «Cuánto dinero necesito para montar un negocio de repostería o pastelería — La Hostelera» (2026) sitúa un caso de referencia de unos 90 m² en 137.000 €, sumando proyecto técnico, obra civil, equipamiento y marketing. Es el presupuesto de un caso concreto, no un dato general del sector, y se cita aquí sólo como marco de comparación frente a los 165.800 € de este modelo.
 
 ### La previsión a tres años
 
-Los ingresos del año de crucero son 322.198 €. El resultado neto de los tres años y el margen neto de ese año de crucero están calculados, partida a partida, en el cuadro de la previsión financiera que acompaña a este resumen: ahí se ve cómo se llega desde la facturación hasta el beneficio, sin necesidad de repetir aquí cada línea.
+Los ingresos del año de crucero son 322.198 €, con un resultado neto de 27.836 € y un margen neto del 8,6 %; el año uno, todavía en rampa de arranque, cierra en 4.469 €. El negocio cubre su equilibrio de caja con 148,9 tickets al día y el plan prevé 183, una holgura del 22,9 %. El cuadro de la previsión financiera que acompaña a este resumen desglosa, partida a partida, cómo se llega desde la facturación hasta el beneficio.
 
-El gerente de Pastelerías Pomar, en «Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…» (2025-11-21), sitúa en un rango porcentual la rentabilidad neta de una pastelería que va bien; no repetimos esa cifra, porque el margen de este caso concreto es el que figura, ya calculado, en el cuadro de resultados de los tres años.
+El gerente de Pastelerías Pomar, en «Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…» (2025-11-21), sitúa la rentabilidad neta de una pastelería que va bien entre el 8 % y el 12 %: el 8,6 % de este plan cae en el tramo bajo de esa banda, que es donde tiene que caer un caso construido con supuestos conservadores.
 
-Cuándo llega este negocio al punto de equilibrio y con cuánta holgura lo hace es un dato que también vive en esa misma sección financiera del pack: es la hoja que hay que abrir antes de firmar nada, no una frase que se pueda resumir sin verla.
+La hoja de punto de equilibrio del plan financiero es la que hay que abrir antes de firmar nada: ahí se ve el umbral contable, el de caja y la sensibilidad de los dos a un euro menos de ticket medio.
 
 ### Qué se pide y para qué
 

@@ -6,7 +6,7 @@
 
 Doce decisiones que hay que tomar antes de abrir una pastelería y que casi nunca se resuelven con un número: comprar el abatidor o esperar, abrir con veinte referencias o con cuarenta, aceptar el primer encargo de comunión sin histórico, empezar en casa dentro de la legalidad, firmar el primer contrato con otra tienda. Cada una con su contexto, sus opciones, el criterio con el que se decide, la celda del pack que la resuelve y la norma que aplica cuando la hay. No hay ninguna cifra inventada: cada número sale de una celda que puedes abrir y comprobar.
 
-**Versión 1.0 · septiembre de 2026 · aichef.pro/guia-pasteleria-obrador**
+**Versión 1.0.1 · septiembre de 2026 · aichef.pro/guia-pasteleria-obrador**
 
 ---
 
@@ -14,12 +14,12 @@ Doce decisiones que hay que tomar antes de abrir una pastelería y que casi nunc
 
 1. **Local con Obrador o Obrador Aparte** — cuándo compensa meter el obrador en el mismo local y cuándo sale mejor separarlo del punto de venta.
 2. **Comprar el Abatidor o Esperar** — qué techo de producción te pone posponer la compra más cara del obrador, y cuándo compensa esperar.
-3. **Abrir con Veinte Referencias o con Cuarenta** — cuántas referencias caben de verdad en el primer año, y qué se gana quitando en vez de añadir.
+3. **Abrir con Veinte Referencias o con Cuarenta** — cuántas referencias caben en el primer año, y qué se gana quitando en vez de añadir.
 4. **Producto de Terceros al Arrancar: Cuándo Sí y Qué te Prohíbe Decir** — cuándo tiene sentido comprar elaborado el primer año, y qué no puedes poner en el escaparate si lo haces.
 5. **Cuánto Roscón Produzco el Primer Año** — cómo se dimensiona la campaña grande sin histórico, y qué palanca se usa cuando no cabe en el obrador.
 6. **Aceptar el Primer Encargo de Comunión sin Histórico** — qué encargo se acepta cuando todavía no sabes cuánto tardas, y con qué anticipo.
 7. **El Primer Contrato con Otra Tienda: a Qué Precio y en Qué Momento Cambia tu Registro** — cuándo compensa vender a cafeterías y restaurantes, y cuándo ese canal te obliga a inscribirte en el registro general.
-8. **Contratar Pastelero o Tirar de Ayudante** — qué cuesta de verdad cada perfil con la Seguridad Social dentro, y qué se pierde bajando de categoría.
+8. **Contratar Pastelero o Tirar de Ayudante** — qué cuesta cada perfil con la Seguridad Social dentro, y qué se pierde bajando de categoría.
 9. **Abrir en Septiembre o en Febrero** — cómo se elige el mes de apertura con la ruta crítica y el calendario de campañas delante.
 10. **Empezar en Casa Dentro de la Legalidad: Qué Puedo Vender y Qué No** — la lista blanca de la vivienda, las prohibiciones que sí tienen salvedad autonómica y los tres límites del volumen.
 11. **Envío a Domicilio: Qué Producto Viaja y Cuál No** — el criterio real del envío no es jurídico, es de cadena de frío, y la carta dice cuál aguanta.
@@ -31,7 +31,7 @@ Doce decisiones que hay que tomar antes de abrir una pastelería y que casi nunc
 
 ### El contexto de la decisión
 
-Vas a buscar local para tu pastelería (repostería) y te vas a topar siempre con la misma paradoja. El local que te gusta, el que tiene escaparate y gente pasando por delante, casi nunca tiene metros para meter un obrador (taller o laboratorio) decente detrás. Y el local que sí tiene metros de sobra suele estar en una calle sin paso, donde el escaparate no le sirve a nadie. Se acaba negociando entre superficie y visibilidad, y esa negociación tiene un coste que casi nadie mete en la cuenta antes de firmar: la parte de local dedicada a obrador no vende una sola tarta, y esos metros se pagan al mismo precio de renta que el metro de escaparate. Si tu local vale 30 euros el metro cuadrado, el obrador te cuesta 30 euros el metro cuadrado igual que la vitrina, aunque desde la calle no se vea ni un cliente entrando ahí.
+Vas a buscar local para tu pastelería (repostería) y te vas a topar siempre con la misma paradoja. El local que te gusta, el que tiene escaparate y gente pasando por delante, casi nunca tiene metros para meter un obrador (taller o laboratorio) decente detrás. Y el local que sí tiene metros de sobra suele estar en una calle sin paso, donde el escaparate no le sirve a nadie. Se acaba negociando entre superficie y visibilidad, y esa negociación tiene un coste (costo) que casi nadie mete en la cuenta antes de firmar: la parte de local dedicada a obrador no vende una sola tarta (pastel o torta), y esos metros se pagan al mismo precio de renta que el metro de escaparate. Si tu local vale los 13,3 euros por metro cuadrado y mes del caso de este pack, el obrador te cuesta 13,3 euros el metro cuadrado igual que la vitrina (exhibidor), aunque desde la calle no se vea ni un cliente entrando ahí.
 
 ### Las opciones sobre la mesa
 
@@ -71,11 +71,11 @@ Y si en algún momento manejas la idea de montar sólo el obrador, sin despacho 
 
 | Variante | Inversión de apertura (€) | Con fondo de maniobra (€) | Qué cambia además |
 |---|---|---|---|
-| Pastelería mediana: obrador propio y despacho a calle (el caso de este libro) | 165.800 € | 228.049 € | Es el caso central: todos los coeficientes valen 1,00, así que la inversión de apertura es exactamente el CAPEX total de la hoja anterior menos el fondo de maniobra, y la columna de la derecha se lo suma otra vez para devolver el total. |
-| Obrador en casa, venta directa al consumidor final | 14.966 € | 27.416 € | No es un local: es tu vivienda, con la lista cerrada del art. 13.8 del RD 1021/2022 y el matiz autonómico de la letra e). Comunicación al registro autonómico, NO inscripción en el RGSEAA. Sin obra, sin tienda y sin fianza; la hoja «Ruta Doméstica» del libro 6 es la que manda. |
-| Obrador a puerta cerrada, sólo producción | 70.585 € | 101.710 € | Sin escaparate ni mobiliario de venta, pero con el umbral del art. 3 encima en cuanto suministres a otros minoristas de distinta titularidad. El árbol del art. 3 está en el libro 6. |
-| Local con venta o despacho, sin obrador propio | 57.948 € | 95.297 € | Compras elaborado o semielaborado: casi todo el equipamiento de obrador desaparece y la vitrina se queda entera. Si no fabricas, no puedes usar la mención «elaboración propia» (art. 11 del RD 1021/2022). |
-| Cafetería-pastelería con obrador | 200.732 € | 275.430 € | Suma sala, barra, máquina de café y aseos de público. En cuanto hay comidas preparadas cambian el marco sanitario, probablemente el convenio y el IVA aplicable en la zona de degustación, que es del 10 % por ser servicio de hostelería. |
+| Pastelería mediana: obrador propio y despacho a calle (el caso de este libro) | 165.800 € | 227.916 € | Es el caso central: todos los coeficientes valen 1,00, así que la inversión de apertura es exactamente el CAPEX total de la hoja anterior menos el fondo de maniobra, y la columna de la derecha se lo suma otra vez para devolver el total. |
+| Obrador en casa, venta directa al consumidor final | 14.966 € | 27.389 € | No es un local: es tu vivienda, con la lista cerrada del art. 13.8 del RD 1021/2022 y el matiz autonómico de la letra e). Comunicación al registro autonómico, NO inscripción en el RGSEAA. Sin obra, sin tienda y sin fianza; la hoja «Ruta Doméstica» del libro 6 es la que manda. |
+| Obrador a puerta cerrada, sólo producción | 70.585 € | 101.643 € | Sin escaparate ni mobiliario de venta, pero con el umbral del art. 3 encima en cuanto suministres a otros minoristas de distinta titularidad. El árbol del art. 3 está en el libro 6. |
+| Local con venta o despacho, sin obrador propio | 57.948 € | 95.217 € | Compras elaborado o semielaborado: casi todo el equipamiento de obrador desaparece y la vitrina se queda entera. Si no fabricas, no puedes usar la mención «elaboración propia» (art. 11 del RD 1021/2022). |
+| Cafetería-pastelería con obrador | 200.732 € | 275.270 € | Suma sala, barra, máquina de café y aseos de público. En cuanto hay comidas preparadas cambian el marco sanitario, probablemente el convenio y el IVA aplicable en la zona de degustación, que es del 10 % por ser servicio de hostelería. |
 
 *Los coeficientes que producen cada variante son supuestos del modelo: sirven para comparar formatos entre sí, no como presupuesto.*
 
@@ -86,19 +86,19 @@ Y si en algún momento manejas la idea de montar sólo el obrador, sin despacho 
 
 ### El contexto de la decisión
 
-El abatidor es la partida más cara del equipamiento del obrador (taller o laboratorio), y por eso es también la primera que se cae del presupuesto cuando las cuentas no salen. Cuando toca recortar, nadie recorta la cámara ni el horno: se recorta el abatidor, porque parece que se puede vivir sin él una temporada.
+El abatidor es la partida más cara del equipamiento del obrador, y por eso es también la primera que se cae del presupuesto cuando las cuentas no salen. Cuando toca recortar, nadie recorta la cámara ni el horno: se recorta el abatidor, porque parece que se puede vivir sin él una temporada.
 
 El argumento que se oye siempre en esta fase es el mismo: «el primer año hago menos producto y ya lo compraré». Suena razonable, pero esconde la pregunta de verdad, que no es si se puede abrir sin abatidor, sino cuánto techo de producción se está comprando con esa frase. Un negocio no crece en el vacío: crece hasta donde el equipo que lo limita se lo permite, y si ese equipo es el abatidor, el negocio no va a superar ese techo por muchas ganas que le pongas.
 
 ### Las opciones sobre la mesa
 
-Hay tres caminos, y conviene mirarlos con la misma calculadora antes de decidir:
+Hay tres caminos, y hay que mirarlos con la misma calculadora antes de decidir:
 
 - Opción A: comprarlo el día uno, con la capacidad que corresponde al surtido que quieres ofrecer desde el primer día.
 - Opción B: abrir sin él y limitar el surtido a lo que no necesita paso por abatidor, aplazando la inversión hasta que la facturación la sostenga sola.
 - Opción C: comprar uno de menos bandejas —una versión reducida— y cambiarlo por uno mayor cuando el propio negocio lo pida.
 
-Las tres son legítimas. Lo que no es legítimo es elegir sin saber qué se pierde en cada una, porque el abatidor no es un capricho de obrador bonito: es el equipo que decide cuánta tarta (pastel o torta) por encargo (pedido) puedes aceptar y cuánto puedes adelantar antes de una campaña fuerte.
+Las tres son legítimas. Lo que no es legítimo es elegir sin saber qué se pierde en cada una, porque el abatidor no es un capricho de obrador bonito: es el equipo que decide cuánta tarta por encargo (pedido) puedes aceptar y cuánto puedes adelantar antes de una campaña fuerte.
 
 ### El criterio con el que se decide
 
@@ -108,7 +108,7 @@ La regla no es mirar el equipo más caro, es mirar el equipo que limita. La hoja
 
 Y hay un segundo criterio, el de campaña, que pesa tanto como el primero: sin abatidor no se puede adelantar producción, y sin adelantar producción, la campaña grande —la que concentra encargos de golpe— no cabe en las horas de un solo día de obrador. El abatidor es lo que te permite trabajar hoy para servir dentro de tres días sin que el producto pierda calidad por el camino; sin él, cada campaña fuerte te pilla fabricando a tiempo real, que es la peor forma de fabricar.
 
-Con estos números, la recomendación es clara para quien planea un surtido donde el 40 % pasa por abatidor: comprarlo el día uno, con capacidad sobrada y no ajustada al límite. La condición que cambiaría esta recomendación es que el surtido previsto reduzca de verdad esa proporción del 40 % y que ningún encargo de campaña dependa de producción adelantada; en ese caso, y sólo en ese caso, la Opción C —uno más pequeño, para crecer después— pasa a ser defendible.
+Con estos números, la recomendación es clara para quien planea un surtido donde el 40 % pasa por abatidor: comprarlo el día uno, con capacidad sobrada y no ajustada al límite. La condición que cambiaría esta recomendación es que el surtido previsto reduzca esa proporción del 40 % y que ningún encargo de campaña dependa de producción adelantada; en ese caso, y sólo en ese caso, la Opción C —uno más pequeño, para crecer después— pasa a ser defendible.
 
 ### La celda que lo resuelve
 
@@ -135,7 +135,7 @@ Y lo que sale de ese proceso va etiquetado con tres fechas, sin excepción: fech
 | Vitrina expositora pastelera refrigerada | Tienda y vitrina | Sí | 35 % | 1.036 |
 | Horno de pisos modular (deck) | Calor | No | 20 % | 3.080 |
 
-*Las capacidades son supuestos de modelado calibrados con fichas de distribuidor. Cámbialas por las del equipo que vayas a comprar de verdad.*
+*Las capacidades son supuestos de modelado calibrados con fichas de distribuidor. Cámbialas por las del equipo que vayas a comprar.*
 
 
 ---
@@ -144,9 +144,9 @@ Y lo que sale de ese proceso va etiquetado con tres fechas, sin excepción: fech
 
 ### El contexto de la decisión
 
-En el primer año la tentación siempre es la misma: abrir con la carta más grande posible para no perder ni una sola venta. Parece la opción prudente y es justo la contraria: es la manera más rápida de multiplicar la merma y disparar la compra. Cada referencia nueva no es sólo una ficha más en la vitrina (exhibidor); es un proveedor que gestionar, un formato de compra mínimo que asumas o no lo vendas todo, un hueco de vitrina que le quitas a otra pieza que sí rota, y tiempo de obrador (taller o laboratorio) que se paga aunque esa referencia venda poco. Ese coste (costo) fijo por referencia es invisible en el papel y muy visible en la cuenta de explotación a los tres meses.
+En el primer año la tentación siempre es la misma: abrir con la carta más grande posible para no perder ni una sola venta. Parece la opción prudente y es justo la contraria: es la manera más rápida de multiplicar la merma y disparar la compra. Cada referencia nueva no es sólo una ficha más en la vitrina; es un proveedor que gestionar, un formato de compra mínimo que asumas o no lo vendas todo, un hueco de vitrina que le quitas a otra pieza que sí rota, y tiempo de obrador que se paga aunque esa referencia venda poco. Ese coste fijo por referencia es invisible en el papel y muy visible en la cuenta de explotación a los tres meses.
 
-Y aquí conviene un dato para entender hasta dónde puede llegar la concentración de ventas en unas pocas referencias: en Hofmann, un solo producto —el croissant de mascarpone, con cerca de 3.000 unidades a la semana— representa cerca del 30 % de la facturación global de la pastelería (Hofmann Badalona: nuevo centro de I+D y expansión internacional — The New Barcelona Post, 2026-02-12). No hace falta llegar a esa escala para entender la lección: la carta corta que vende mucho de pocas cosas suele ganar más que la carta larga que reparte ventas entre treinta referencias que apenas rotan.
+Y aquí va un dato para entender hasta dónde puede llegar la concentración de ventas en unas pocas referencias: en Hofmann, un solo producto —el croissant de mascarpone, con cerca de 3.000 unidades a la semana— representa cerca del 30 % de la facturación global de la pastelería (Hofmann Badalona: nuevo centro de I+D y expansión internacional — The New Barcelona Post, 2026-02-12). No hace falta llegar a esa escala para entender la lección: la carta corta que vende mucho de pocas cosas suele ganar más que la carta larga que reparte ventas entre treinta referencias que apenas rotan.
 
 ### Las opciones sobre la mesa
 
@@ -162,7 +162,7 @@ Lo que cambia entre las tres no es el atractivo del escaparate el día de la ina
 
 La regla no es la intuición ni el gusto personal por tener de todo: manda el margen ponderado por el mix, no el margen de la pieza suelta. Una referencia con un margen estupendo que apenas se vende aporta menos al resultado del día que otra de margen medio que rota constantemente. Decidir referencia a referencia por su margen bruto sin mirar cuánto pesa en las ventas reales es el error más habitual al montar la carta de apertura.
 
-El segundo criterio es de capacidad, y se olvida más de lo que debería: la carta tiene que caber en las piezas al día que permite el cuello de botella del obrador, no sólo en el espacio físico de la vitrina. Una carta que cabe en el mostrador pero no cabe en la producción del equipo que vas a contratar se traduce en encargos (pedidos) que no llegas a servir o en jornadas que se alargan hasta que el sistema colapsa.
+El segundo criterio es de capacidad, y se olvida más de lo que debería: la carta tiene que caber en las piezas al día que permite el cuello de botella del obrador, no sólo en el espacio físico de la vitrina. Una carta que cabe en el mostrador pero no cabe en la producción del equipo que vas a contratar se traduce en encargos que no llegas a servir o en jornadas que se alargan hasta que el sistema colapsa.
 
 ### La celda que lo resuelve
 
@@ -172,9 +172,9 @@ La hoja de mix y ticket medio, en el mismo libro, dice cómo cambia el ticket al
 
 ### La norma que aplica cuando la hay
 
-Aquí no hay una norma que decida cuántas referencias debe tener tu carta: es una decisión de negocio y de capacidad de obrador, no un requisito legal, y conviene decirlo con esa claridad en vez de rellenar el hueco con normativa de adorno.
+Aquí no hay una norma que decida cuántas referencias debe tener tu carta: es una decisión de negocio y de capacidad de obrador, no un requisito legal, y hay que decirlo con esa claridad en vez de rellenar el hueco con normativa de adorno.
 
-Lo que sí obliga, referencia a referencia, es otra cosa: antes de poner cualquier pieza nueva en vitrina tienes que tener resuelta su información de alérgenos, exigida por el artículo 9, apartado 1, letra c, del Reglamento (UE) 1169/2011 (comprobado el 10 de septiembre de 2026), y decidido si va a vitrina refrigerada o de ambiente. Cada referencia nueva que sumes a la carta es una fila más en las dos cosas, no un simple hueco de vitrina. Y si alguna de tus tartas por encargo lleva licor por encima del 1,2 % en volumen —el umbral a partir del cual hay que declarar el grado alcohólico en producto no envasado—, esa declaración es obligatoria conforme al RD 126/2015, arts. 4.1, 5.1, 6.2, 6.5 y 10, en su texto consolidado sin modificaciones (comprobado el 10 de septiembre de 2026).
+Lo que sí obliga, referencia a referencia, es otra cosa: antes de poner cualquier pieza nueva en vitrina tienes que tener resuelta su información de alérgenos, exigida por el artículo 9, apartado 1, letra c, del Reglamento (UE) 1169/2011 (comprobado el 10 de septiembre de 2026), y decidido si va a vitrina refrigerada o de ambiente. Cada referencia nueva que sumes a la carta es una fila más en las dos cosas, no un simple hueco de vitrina. Y si alguna de tus tartas por encargo lleva licor, el alcohol va declarado como cualquier otro ingrediente; el umbral del 1,2 % en volumen obliga a declarar el grado alcohólico en las BEBIDAS, no en la pastelería, así que no lo apliques por analogía. La información obligatoria del producto no envasado la fija el RD 126/2015, arts. 4.1, 5.1, 6.2, 6.5 y 10, en su texto consolidado sin modificaciones (comprobado el 10 de septiembre de 2026).
 
 **Cómo queda la carta tras el filtro de margen y rotación (carta-de-apertura-y-escandallo.xlsx, hoja «Decisión de Surtido»)**
 
@@ -183,9 +183,8 @@ Lo que sí obliga, referencia a referencia, es otra cosa: antes de poner cualqui
 | Referencias con veredicto «Mantener» | 27 | 1,03 € |
 | Referencias con veredicto «Revisar precio» | 1 | 0,01 € |
 | Referencias con veredicto «Retirar» | 2 | 0,03 € |
-| Margen ponderado medio de la carta (€) | 0 |  |
 
-*El margen ponderado mide lo que aporta cada grupo al margen de cien piezas vendidas con el mix previsto. Retirar dos referencias de margen ponderado bajo casi no se nota en la caja y sí en la compra.*
+*El margen ponderado mide lo que aporta cada grupo al margen de cien piezas vendidas con el mix previsto. Retirar dos referencias de margen ponderado bajo casi no se nota en la caja y sí en la compra. El margen ponderado medio por referencia de la carta es de 0,04 €; el de las cien piezas vendidas con este mix, 1,07 €.*
 
 
 ---
@@ -212,9 +211,9 @@ El primer criterio es de números, y la regla es siempre la misma: se compara el
 
 El segundo criterio ya no es de coste, es de posicionamiento, y pesa tanto como el primero: si el argumento con el que vendes tu negocio es la elaboración propia, comprar elaborado se lo come. No hay margen que compense contarle al cliente una historia de obrador y servirle, sin decirlo, la bandeja de un tercero.
 
-Para el primer criterio, la hoja de coste hora y mano de obra de la calculadora de escandallo y carta de apertura da el coste total por unidad de cada referencia propia, con la mano de obra ya metida dentro, que es exactamente la cifra con la que hay que comparar el precio de compra de un producto elaborado por otro. En el croissant de mantequilla que sirve de ejemplo en el capítulo anterior, el coste total por unidad es de 1,06 €, de los que 0,82 € son mano de obra: un peso de la mano de obra del 63,3 % sobre el coste total, así que ignorar ese componente al comparar contra el precio de compra falsea la cuenta desde el principio.
+Para el primer criterio, la hoja de coste hora y mano de obra de la calculadora de escandallo (costeo) y carta de apertura da el coste total por unidad de cada referencia propia, con la mano de obra ya metida dentro, que es exactamente la cifra con la que hay que comparar el precio de compra de un producto elaborado por otro. En el croissant de mantequilla que sirve de ejemplo en el capítulo anterior, el coste total por unidad es de 1,06 €, de los que 0,82 € son mano de obra: un peso de la mano de obra del 63,3 % sobre el coste total, así que ignorar ese componente al comparar contra el precio de compra falsea la cuenta desde el principio.
 
-Para el segundo criterio, la referencia es la que ya conoces de la calculadora de equipamiento: la variante de punto caliente sale a 22.456 € de inversión, frente a los 66.980 € del caso base con obrador. La hoja de variantes del checklist de equipamiento y proveedores dice, referencia por referencia, qué dotación deja de hacer falta en cada formato, y ahí es donde se ve con claridad cuánto pesa realmente montar un obrador frente a montar sólo un punto de regeneración: la diferencia entre las dos cifras es la inversión que estás comprando (o dejando de comprar) en capacidad de fabricar de verdad, no sólo en metros cuadrados. La hora de obrador, cuando ese obrador existe, se factura a 17,94 €.
+Para el segundo criterio, la referencia es la que ya conoces de la calculadora de equipamiento: la variante de punto caliente pide 22.456 € de equipamiento, frente a los 66.980 € del caso base con obrador — y 85.997 € de inversión de apertura completa, con obra y licencias dentro, contra los 165.800 € del caso base. La hoja de variantes del checklist de equipamiento y proveedores dice, referencia por referencia, qué dotación deja de hacer falta en cada formato, y ahí es donde se ve con claridad cuánto pesa realmente montar un obrador frente a montar sólo un punto de regeneración: la diferencia entre las dos cifras es la inversión que estás comprando (o dejando de comprar) en capacidad de fabricar, no sólo en metros cuadrados. La hora de obrador, cuando ese obrador existe, se factura a 17,94 €.
 
 Recomendación: si tu argumento comercial es la elaboración propia, la opción A o, como mucho, la B; si el argumento es otro (ubicación, horario, precio) y el número de la hoja de coste hora y mano de obra sale mejor con producto comprado, la opción C es defendible. Esto cambia en cuanto abras una segunda referencia con receta propia relevante para el cliente: ahí el cálculo hay que rehacerlo pieza a pieza, no de un tirón para toda la carta.
 
@@ -228,7 +227,7 @@ Aquí sí hay norma, y es la que explica por qué esta decisión pesa más de lo
 
 La consecuencia práctica es directa: si tu producto viene congelado de fuera y tu obrador se limita a descongelarlo y hornearlo, eso no te da derecho a la mención de elaboración propia, aunque el resultado salga caliente y huela a recién hecho. Ponerla igual no es una licencia creativa de rotulista, es una práctica engañosa frente al cliente que la lee en tu escaparate. La tabla de abajo resume, formato por formato, qué puedes escribir según lo que hagas de verdad detrás del mostrador.
 
-**Qué puedes escribir en el escaparate según lo que hagas de verdad**
+**Qué puedes escribir en el escaparate según lo que hagas**
 
 | Lo que haces | ¿Puedes usar «ELABORACIÓN PROPIA»? | Dónde puedes venderlo con esa mención |
 |---|---|---|
@@ -276,7 +275,7 @@ Cada decisión se cierra con una recomendación explícita y con la condición q
 
 La hoja de capacidad contra demanda del pico, dentro de la calculadora de estacionalidad y picos, es la que responde a la pregunta con números concretos. Para la campaña grande, esa hoja da una demanda de 2.856 piezas al día, una capacidad real del equipo que deja un déficit de 1.656 piezas diarias, y una necesidad de 47,4 horas de obrador al día para cerrar ese déficit sin recurrir a ninguna palanca adicional. Esa cifra de horas es la que traduce el problema comercial en un problema de personal: ninguna pastelería que empieza tiene un equipo capaz de sostener 47,4 horas de obrador en un solo día, así que la decisión real no es «¿cuánto vendo?» sino «¿cuánto cubro con refuerzo y cuánto derivo a encargo?».
 
-La misma calculadora, en la hoja de refuerzo y tesorería, pone precio a la parte que decidas cubrir con personal extra: 1.603,74 € de coste de refuerzo para la campaña, y 5.457,48 € de tesorería inmovilizada en materia prima mientras llega el cobro. Esa tesorería inmovilizada es, en la práctica, el segundo criterio de la decisión hecho número: si tu financiación no cubre esos 5.457,48 € sin apretarte el resto del mes, el cupo baja antes de tocar ni un solo dato de producción. Y del otro lado está la recompensa: la campaña deja una facturación incremental sin IVA de 31.500 €, la cifra que justifica asumir el coste del refuerzo y la tesorería inmovilizada si tu obrador puede sostener el ritmo.
+La misma calculadora, en la hoja de refuerzo y tesorería, pone precio a la parte que decidas cubrir con personal extra: 1.603,74 € de coste de refuerzo para la campaña, y 2.079,04 € de tesorería inmovilizada en materia prima mientras llega el cobro. Esa tesorería inmovilizada es, en la práctica, el segundo criterio de la decisión hecho número: si tu financiación no cubre esos 2.079,04 € sin apretarte el resto del mes, el cupo baja antes de tocar ni un solo dato de producción. Y del otro lado está la recompensa: la campaña deja una facturación incremental sin IVA de 12.000 €, la cifra que justifica asumir el coste del refuerzo y la tesorería inmovilizada si tu obrador puede sostener el ritmo.
 
 El calendario de fechas y de tareas de cada campaña —cuándo empezar a avisar del encargo, cuándo cerrar la fecha límite de reserva, cuándo entra el refuerzo— está en el Kit de Tareas Pastelería, no en esta guía: aquí se resuelve la decisión de volumen, no la agenda operativa de ejecutarla.
 
@@ -306,17 +305,17 @@ Y hay un segundo límite que manda sobre cualquier plan de producción, tanto si
 
 ### El contexto de la decisión
 
-La comunión no es un pico de tres días: es una meseta de 20 días seguidos, y llega justo cuando el obrador (taller o laboratorio) todavía se está rodando, con la plantilla recién formada y las rutinas sin asentar. En esos 20 días no sólo se produce más, también se congela caja: hay 55 días en los que el dinero de esa campaña está parado, entre la materia prima comprada, el refuerzo pagado y el cobro que todavía no ha llegado entero. Reforzar el equipo para sostener esa meseta cuesta 801,87 €, y ese número no es un capricho de la hoja: es lo que sale caro cuando no se ha decidido a tiempo cuánto encargo se acepta.
+La comunión no es un pico de tres días: es una meseta de 20 días seguidos, y llega justo cuando el obrador todavía se está rodando, con la plantilla recién formada y las rutinas sin asentar. En esos 20 días no sólo se produce más, también se congela caja: hay 55 días en los que el dinero de esa campaña está parado, entre la materia prima comprada, el refuerzo pagado y el cobro que todavía no ha llegado entero. Reforzar el equipo para sostener esa meseta cuesta 801,87 €, y ese número no es un capricho de la hoja: es lo que sale caro cuando no se ha decidido a tiempo cuánto encargo se acepta.
 
-El primer encargo grande de comunión se acepta casi siempre por ilusión —alguien pide una tarta (pastel o torta) grande, con muchas raciones, para una fecha muy concreta— y se produce por la noche, cuando el resto de la producción del día ya ha salido. Lo que hay que decidir antes de decir que sí no es si se puede hacer esa tarta: es cuánto de eso cabe sin reventar el resto de lo que ya está comprometido para ese día.
+El primer encargo grande de comunión se acepta casi siempre por ilusión —alguien pide una tarta grande, con muchas raciones, para una fecha muy concreta— y se produce por la noche, cuando el resto de la producción del día ya ha salido. Lo que hay que decidir antes de decir que sí no es si se puede hacer esa tarta: es cuánto de eso cabe sin reventar el resto de lo que ya está comprometido para ese día.
 
 ### Las opciones sobre la mesa
 
-Conviene tener elegido el modelo antes de que suene el primer teléfono de comunión, porque las tres opciones no compiten por el mismo motivo:
+Hay que tener elegido el modelo antes de que suene el primer teléfono de comunión, porque las tres opciones no compiten por el mismo motivo:
 
 - Opción A: aceptar todo lo que entre, sin cupo ni criba. Es la que más ilusiona a corto y la que más noches de obrador se come.
 - Opción B: aceptar hasta un cupo diario cerrado, fijado sobre la capacidad real del equipo y no sobre las ganas del cliente de reservar.
-- Opción C: aceptar sólo referencias que ya están en la carta y con escandallo (costeo) hecho, descartando el encargo (pedido) especial que pide algo que nunca se ha producido.
+- Opción C: aceptar sólo referencias que ya están en la carta y con escandallo hecho, descartando el encargo especial que pide algo que nunca se ha producido.
 
 Lo que cambia entre las tres no es el ingreso del día del encargo: es lo que arrastra al día siguiente. Cambian las horas de obrador comprometidas por la noche, el riesgo de que el cliente anule a última hora y la merma que queda si, al final, no viene a recoger la tarta.
 
@@ -324,7 +323,7 @@ Lo que cambia entre las tres no es el ingreso del día del encargo: es lo que ar
 
 Sin histórico —y el primer año de una pastelería es, por definición, sin histórico— la regla tiene dos patas. La primera: se acepta lo que cabe en la capacidad del obrador de ESE día, con el equipo ya comprado. El conjunto de equipos del caso modelado permite 480 piezas al día, y ese techo no lo mueve la ilusión de un encargo grande ni la insistencia del cliente. La segunda: sólo se aceptan referencias que ya tienen escandallo hecho. Sin escandallo no hay precio, y sin precio lo que se está entregando es un regalo con forma de encargo.
 
-El segundo criterio, además del cupo, es el anticipo. No es un trámite administrativo: cubre el coste (costo) de la materia prima si al final el cliente no vuelve, y de paso filtra solo al que en realidad no piensa recoger la tarta. Un encargo grande sin anticipo es, en la práctica, apostar a que todo el mundo cumple su palabra un sábado de mayo con el obrador a tope.
+El segundo criterio, además del cupo, es el anticipo. No es un trámite administrativo: cubre el coste de la materia prima si al final el cliente no vuelve, y de paso filtra solo al que en realidad no piensa recoger la tarta. Un encargo grande sin anticipo es, en la práctica, apostar a que todo el mundo cumple su palabra un sábado de mayo con el obrador a tope.
 
 Para calibrar cuánto cupo y cuánto refuerzo tiene sentido en la meseta de comuniones, hay dos cifras que se leen juntas: el margen de contribución del canal de encargos es del 68 %, sobre unas ventas anuales de ese canal de 45.108 €. Con ese margen delante se sabe si merece la pena forzar el cupo un poco por encima de lo cómodo, o si el refuerzo de la campaña ya se paga solo con lo que entra sin necesidad de apretar más.
 
@@ -342,18 +341,18 @@ Sobre anticipos y sobre anulaciones no hay norma que lo regule: es política de 
 
 Lo que sí obliga es la información de alérgenos en el encargo, exactamente igual que en cualquier venta al público: el art. 9.1, letra c, del Reglamento (UE) 1169/2011, desarrollado por el RD 126/2015 (arts. 4.1, 5.1, 6.2, 6.5 y 10, comprobado el 10 de septiembre de 2026), exige dar la denominación y los alérgenos de lo que se vende sin envasar, en etiqueta o cartel, o de palabra si esa información está registrada por escrito en el establecimiento y hay un aviso visible en cada sección de dónde consultarla.
 
-Y obliga también el plazo del producto elaborado por la vía del huevo. El art. 9.3 del RD 1021/2022, en relación con la fila 9 del art. 4.1 (comprobado el 10 de septiembre de 2026), fija un máximo de 24 horas de vida útil, con un techo de temperatura de 8 °C que baja a 4 °C cuando concurre esa fila, y obliga a registrar la fecha y la hora de elaboración de cada lote. Para el encargo de comunión, eso significa que la fecha de elaboración de la tarta no es un dato que se apunte por costumbre: condiciona, sin margen de interpretación, cuándo puede recogerse.
+Y obliga también el plazo del producto elaborado por la vía del huevo. El art. 9.3 del RD 1021/2022, en relación con la fila 9 del art. 4.1 (comprobado el 10 de septiembre de 2026), fija un plazo legal de consumo de 24 horas desde la elaboración —que no es la vida útil, que la declaras tú en tu APPCC—, con un techo de temperatura de 8 °C que baja a 4 °C cuando concurre esa fila, y obliga a registrar la fecha y la hora de elaboración de cada lote. Para el encargo de comunión, eso significa que la fecha de elaboración de la tarta no es un dato que se apunte por costumbre: condiciona, sin margen de interpretación, cuándo puede recogerse.
 
 **El coste y la caja de cada campaña (estacionalidad-y-picos.xlsx, hoja «Refuerzo y Tesorería»)**
 
 | Campaña | Personas de refuerzo | Coste del refuerzo (€) | Compra de materia de la campaña (€) | Días con el dinero parado | Resultado incremental (€) |
 |---|---|---|---|---|---|
-| Reyes | 3 | 1.603,74 € | 5.457,48 € | 47 | 24.395,21 € |
+| Reyes | 3 | 1.603,74 € | 2.079,04 € | 47 | 8.300,62 € |
 | San Valentín | 0 | 0,00 € | 102,18 € | 23 | 564,76 € |
 | Día del Padre y de la Madre | 1 | 213,83 € | 442,48 € | 25 | 462,83 € |
-| Semana Santa | 1 | 534,58 € | 499,39 € | 36 | 3.152,07 € |
+| Semana Santa | 1 | 534,58 € | 478,58 € | 36 | 2.998,46 € |
 | Comuniones | 1 | 801,87 € | 515,71 € | 55 | 356,55 € |
-| Todos los Santos | 2 | 641,50 € | 264,42 € | 31 | 1.361,78 € |
+| Todos los Santos | 2 | 641,50 € | 239,00 € | 31 | 1.169,16 € |
 
 *La meseta de comuniones es la campaña con más días de dinero parado del año: se compra pronto y se cobra tarde.*
 
@@ -364,9 +363,9 @@ Y obliga también el plazo del producto elaborado por la vía del huevo. El art.
 
 ### El contexto de la decisión
 
-El primer contrato con una cafetería llega solo, sin buscarlo, y parece dinero gratis: un pedido fijo cada semana, sin necesidad de sacar una pieza más a la vitrina (exhibidor) y sin la merma de vitrina, que es la que de verdad se come el margen del mostrador. Firmas, entregas y cobras, y da la sensación de que ese volumen sale prácticamente regalado del mismo obrador (taller o laboratorio) que ya tienes montado.
+El primer contrato con una cafetería llega solo, sin buscarlo, y parece dinero gratis: un pedido fijo cada semana, sin necesidad de sacar una pieza más a la vitrina y sin la merma de vitrina, que es la que se come el margen del mostrador. Firmas, entregas y cobras, y da la sensación de que ese volumen sale prácticamente regalado del mismo obrador que ya tienes montado.
 
-Lo que no se ve el primer día son tres cosas. La primera, que el precio que le haces a esa cafetería es más bajo que el de venta directa al público: compra volumen y no paga tu vitrina, así que el margen se resiente. La segunda, que el cobro deja de ser al contado del mostrador y pasa a ser a plazo, como muestra el reparto habitual de una pastelería (repostería) entre venta directa al cliente y venta a crédito a 30-60 días (Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…, 2025-11-21). La tercera, la que de verdad cambia el negocio: suministrar a otro comercio minorista puede sacarte del régimen sanitario en el que estás y meterte en otro distinto, con papeles que no tenías el día antes de firmar ese primer contrato.
+Lo que no se ve el primer día son tres cosas. La primera, que el precio que le haces a esa cafetería es más bajo que el de venta directa al público: compra volumen y no paga tu vitrina, así que el margen se resiente. La segunda, que el cobro deja de ser al contado del mostrador y pasa a ser a plazo, como muestra el reparto habitual de una pastelería entre venta directa al cliente y venta a crédito a 30-60 días (Matías, dueño de una pastelería en España: montar un obrador cuesta... y la rentabilidad — El…, 2025-11-21). La tercera, la que cambia el negocio: suministrar a otro comercio minorista puede sacarte del régimen sanitario en el que estás y meterte en otro distinto, con papeles que no tenías el día antes de firmar ese primer contrato.
 
 ### Las opciones sobre la mesa
 
@@ -380,21 +379,21 @@ Ninguna es gratis. La A renuncia a un volumen fijo que llena horas muertas del o
 
 ### El criterio con el que se decide
 
-El error habitual es mirar el margen bruto del canal y compararlo con el del mostrador. No es el criterio correcto: el canal se juzga por su margen de contribución, no por su margen bruto, porque lo que importa es cuánto aporta ese pedido a cubrir los costes (costos) fijos del obrador una vez descontado lo que cuesta servirlo. Y la pregunta que de verdad resuelve la decisión es otra: ¿qué le pasa al punto muerto si quito ese canal? Si el punto muerto baja al quitarlo, el canal está restando: te obliga a facturar más cada mes para llegar al mismo beneficio cero, y sostenerlo no compensa el volumen que trae.
+El error habitual es mirar el margen bruto del canal y compararlo con el del mostrador. No es el criterio correcto: el canal se juzga por su margen de contribución, no por su margen bruto, porque lo que importa es cuánto aporta ese pedido a cubrir los costes fijos del obrador una vez descontado lo que cuesta servirlo. Y la pregunta que de verdad resuelve la decisión es otra: ¿qué le pasa al punto muerto si quito ese canal? Si el punto muerto baja al quitarlo, el canal está restando: te obliga a facturar más cada mes para llegar al mismo beneficio cero, y sostenerlo no compensa el volumen que trae.
 
 El segundo criterio no es de margen, es de riesgo. Un solo cliente grande en este canal concentra en una sola firma tanto el cobro como el volumen: si esa cafetería cierra, cambia de proveedor o alarga el plazo de pago, el golpe se nota de golpe, no poco a poco como en la vitrina, donde el riesgo está repartido entre decenas de clientes que pagan al contado.
 
-Con esos dos criterios sobre la mesa, la recomendación por defecto es la opción B: abrir el canal, pero con el tope puesto y vigilado. Esa recomendación cambia si el punto muerto sin el canal resulta más alto que con él —entonces el canal aporta de verdad y merece dejarlo crecer sin tope, opción C— o si el peso del canal sobre las ventas se dispara de la mano de un único cliente, porque ahí el riesgo de concentración pesa más que el margen.
+Con esos dos criterios sobre la mesa, la recomendación por defecto es la opción B: abrir el canal, pero con el tope puesto y vigilado. Esa recomendación cambia si el punto muerto sin el canal resulta más alto que con él —entonces el canal aporta y merece dejarlo crecer sin tope, opción C— o si el peso del canal sobre las ventas se dispara de la mano de un único cliente, porque ahí el riesgo de concentración pesa más que el margen.
 
 ### La celda que lo resuelve
 
-La hoja de canales y punto muerto del plan financiero a tres años de pastelería trae los números que hacen falta para decidir con tus datos: el margen de contribución de este canal, un 49 %; el peso del suministro a otras tiendas sobre el total de ventas, un 5 %; y el punto muerto mensual en las dos versiones, con todos los canales activos —23.337,56 €— y sin el de suministro a otras tiendas —23.018,22 €—. Como el punto muerto sube al meter el canal, este caso concreto queda en el filo: aporta contribución, pero también sube el listón que hay que facturar cada mes, y de ahí sale la recomendación de la opción B con tope y no la C sin límite.
+La hoja de canales y punto muerto del plan financiero a tres años de pastelería trae los números que hacen falta para decidir con tus datos: el margen de contribución de este canal, un 49 %; el peso del suministro a otras tiendas sobre el total de ventas, un 5 %; y el punto muerto mensual en las dos versiones, con todos los canales activos —23.337,56 €— y sin el de suministro a otras tiendas —23.018,22 €—. Como el punto muerto sube al meter el canal —de 23.018 € a 23.338 € al mes—, por el criterio de arriba este canal resta: te obliga a facturar 320 € más cada mes para llegar al mismo cero. Que la recomendación siga siendo la opción B, y no la A, es por lo segundo que mide esta decisión: el B2B llena horas muertas de obrador que ya estás pagando, y con tope puesto ese uso de capacidad compensa los 320 €. Sin tope, la cuenta cambia de signo.
 
 Para saber si el tope que pongas te deja dentro o fuera del registro general, la hoja de suministro a otras tiendas del libro de licencias resuelve el árbol completo con tus propios kilos semanales y tus propios destinatarios, condición por condición.
 
 ### La norma que aplica cuando la hay
 
-Aquí sí hay norma, y conviene conocerla antes de firmar ese primer contrato —comprobado el 10 de septiembre de 2026—. El artículo 3.1 del RD 1021/2022 (texto consolidado) sólo se activa cuando suministras a establecimientos de comercio al por menor de distinta titularidad: una pastelería que sólo vende al consumidor final no entra en este artículo, mires lo que mires. En cuanto entras, al firmar con esa cafetería, tienes que cumplir tres condiciones a la vez: que la actividad sea marginal, que esté localizada y que sea restringida.
+Aquí sí hay norma, y hay que conocerla antes de firmar ese primer contrato —comprobado el 10 de septiembre de 2026—. El artículo 3.1 del RD 1021/2022 (texto consolidado) sólo se activa cuando suministras a establecimientos de comercio al por menor de distinta titularidad: una pastelería que sólo vende al consumidor final no entra en este artículo, mires lo que mires. En cuanto entras, al firmar con esa cafetería, tienes que cumplir tres condiciones a la vez: que la actividad sea marginal, que esté localizada y que sea restringida.
 
 La condición de marginal tiene dos vías alternativas y basta con cumplir una, según el artículo 3.2 del RD 1021/2022: que el suministro a otros minoristas no supere el 25 % del volumen anual, o que toda tu comercialización —incluida la venta al consumidor final— no pase de 500 kilos a la semana. La de localizado, artículo 3.3, exige moverte dentro de tu zona sanitaria o, entre comunidades autónomas distintas, dentro de un radio de 50 kilómetros, y sólo si los registros sanitarios de origen y destino son públicos y accesibles.
 
@@ -435,7 +434,7 @@ Lo que cambia entre las tres no es solo el número de la nómina. Cambia el cost
 
 La comparación correcta no es de bruto contra bruto: es de coste de empresa contra coste de empresa. La Seguridad Social a cargo de la empresa no es un porcentaje simbólico, es una cifra que puede invertir el orden que parecía obvio mirando solo la nómina. Y hay una segunda vuelta de tuerca: la comparación se hace por hora de obrador efectivamente cubierta, no por cabeza contratada. Dos medias jornadas suman las mismas horas que una jornada completa sobre el papel, pero el coste de empresa de dos contratos no es la suma proporcional de uno solo, y ahí es donde la opción B pierde parte de su atractivo inicial.
 
-El segundo criterio, y el que de verdad decide en la práctica, es de cobertura, no de coste. Un turno de madrugada en obrador es continuo: empieza a una hora y hay que sostenerlo entero. Dos medias jornadas encajadas dejan casi siempre una costura, un momento del cuadrante en el que nadie especialista está delante del horno, y eso se nota en la producción del día antes de notarse en la nómina de fin de mes. Si el cuadrante no cierra, el ahorro de la opción B es solo aparente.
+El segundo criterio, y el que decide en la práctica, es de cobertura, no de coste. Un turno de madrugada en obrador es continuo: empieza a una hora y hay que sostenerlo entero. Dos medias jornadas encajadas dejan casi siempre una costura, un momento del cuadrante en el que nadie especialista está delante del horno, y eso se nota en la producción del día antes de notarse en la nómina de fin de mes. Si el cuadrante no cierra, el ahorro de la opción B es solo aparente.
 
 ### La celda que lo resuelve
 
@@ -469,13 +468,13 @@ Y hay una segunda obligación que no admite atajos: la formación de quien entra
 
 ### El contexto de la decisión
 
-Todo el mundo quiere abrir cuanto antes. Es la pregunta que más se repite en cualquier proyecto de pastelería (repostería): ¿para cuándo estamos? Y es la pregunta mal planteada, porque la fecha de apertura no se elige: se calcula. Es el resultado de encadenar hitos —local, obra, licencias, equipamiento, contratación— cada uno con su duración y su dependencia del anterior, y el mes en el que sale la última ficha es el mes en el que abres, no el que hubieras preferido.
+Todo el mundo quiere abrir cuanto antes. Es la pregunta que más se repite en cualquier proyecto de pastelería: ¿para cuándo estamos? Y es la pregunta mal planteada, porque la fecha de apertura no se elige: se calcula. Es el resultado de encadenar hitos —local, obra, licencias, equipamiento, contratación— cada uno con su duración y su dependencia del anterior, y el mes en el que sale la última ficha es el mes en el que abres, no el que hubieras preferido.
 
-Lo que sí es una decisión de verdad, y de las que mueven el proyecto entero, es cuándo lo arrancas. Empezar en un mes o en el siguiente desplaza el mes de apertura completo, porque todos los hitos posteriores se recalculan a partir de ese primer día. Decidir la fecha de arranque es, en la práctica, decidir la fecha de apertura con varios meses de antelación y sin haber firmado todavía el contrato de alquiler.
+Lo que sí es una decisión, y de las que mueven el proyecto entero, es cuándo lo arrancas. Empezar en un mes o en el siguiente desplaza el mes de apertura completo, porque todos los hitos posteriores se recalculan a partir de ese primer día. Decidir la fecha de arranque es, en la práctica, decidir la fecha de apertura con varios meses de antelación y sin haber firmado todavía el contrato de alquiler.
 
 ### Las opciones sobre la mesa
 
-Hay tres formas de plantear el calendario, y conviene tenerlas claras antes de firmar nada:
+Hay tres formas de plantear el calendario, y hay que tenerlas claras antes de firmar nada:
 
 - **Opción A — arrancar ya y abrir cuando salga.** Es la más habitual porque es la más cómoda a corto plazo: firmas local, empiezas obra, y la fecha de apertura es la que resulte de sumar los plazos. El riesgo es que esa fecha te caiga donde no conviene, sin haberlo decidido tú.
 - **Opción B — calcular hacia atrás desde el mes en el que quieres abrir.** Fijas primero el mes objetivo y restas la duración total del proyecto para saber cuándo tienes que arrancar. Es la opción de quien ya sabe que quiere estrenar con margen antes de la campaña grande.
@@ -485,15 +484,15 @@ Lo que cambia entre las tres no es sólo la fecha en el calendario: son los mese
 
 ### El criterio con el que se decide
 
-La regla que manda por encima de las tres opciones es simple de enunciar y cara de saltarse: no se abre dentro de una campaña. Estrenar equipo nuevo, plantilla nueva y proveedores nuevos precisamente el día en el que más producción hay en el año es acumular los tres riesgos a la vez —fallos de máquina sin rodar, un equipo que todavía no coordina turnos y proveedores que aún no conocen tu ritmo de pedido— justo cuando menos margen tienes para que algo falle. La hoja de estacionalidad y picos del pack cifra el peso de la campaña grande sobre las ventas del año en 9,8 %: es la ventana de negocio que menos conviene arriesgar con un estreno.
+La regla que manda por encima de las tres opciones es simple de enunciar y cara de saltarse: no se abre dentro de una campaña. Estrenar equipo nuevo, plantilla nueva y proveedores nuevos precisamente el día en el que más producción hay en el año es acumular los tres riesgos a la vez —fallos de máquina sin rodar, un equipo que todavía no coordina turnos y proveedores que aún no conocen tu ritmo de pedido— justo cuando menos margen tienes para que algo falle. La hoja de estacionalidad y picos del pack cifra el peso de la campaña grande en un 3,7 % de las ventas del año concentrado en cinco días, y el del mes que la contiene, enero, en un 11,2 %: es la ventana de negocio que menos hay que arriesgar con un estreno.
 
-El segundo criterio, una vez descartado abrir en plena campaña, es de rodaje: hay que dejar margen suficiente entre la apertura y esa campaña grande para haber probado el cuadrante de turnos y la capacidad real de producción con encargos de verdad, no con la previsión del papel. Abrir demasiado pegado a la campaña es cambiar un riesgo por otro más pequeño, pero sigue siendo un riesgo.
+El segundo criterio, una vez descartado abrir en plena campaña, es de rodaje: hay que dejar margen suficiente entre la apertura y esa campaña grande para haber probado el cuadrante de turnos y la capacidad real de producción con encargos, no con la previsión del papel. Abrir demasiado pegado a la campaña es cambiar un riesgo por otro más pequeño, pero sigue siendo un riesgo.
 
 ### La celda que lo resuelve
 
 Esto no se decide a ojo: la hoja de cronograma y ruta crítica del libro de licencias del pack encadena los doce hitos del proyecto, marca cuáles no tienen holgura —es decir, cuáles retrasan la apertura si se retrasan ellos— y con esos datos calcula la duración total del proyecto, el mes de apertura y si ese mes cae dentro de una campaña. En el caso modelado, la duración total es de 8,5 meses, con 11 de los doce hitos sin ningún margen de holgura, y el mes natural en el que abre ese calendario es el 9, septiembre: fuera de la campaña grande y con margen de rodaje hasta ella. Cambia la fecha de arranque en esa misma hoja y verás moverse el mes de apertura entero, hito a hito.
 
-Dentro de esos doce hitos, el que más veces desplaza la fecha final no suele ser la obra ni el papeleo: es el plazo de entrega del equipamiento, y sale del checklist de equipamiento y proveedores del pack, no de una estimación genérica. Ahí es donde conviene mirar primero cuando el calendario aprieta, y en particular la partida de la cámara de fermentación controlada de roll-in, que en el caso modelado es la que marca el cuello de botella del pedido.
+Dentro de esos doce hitos, la obra y el trámite de actividad son los que mandan: son ruta crítica y cualquier día que se muevan mueve la apertura. El equipamiento es el único hito con holgura —un mes— y sólo porque se pide en paralelo a la obra; su plazo más largo son nueve semanas y sale del checklist de equipamiento y proveedores del pack, no de una estimación genérica. El día que se pida tarde, pasa a ser ruta crítica él también. Ahí es donde conviene mirar primero cuando el calendario aprieta, y en particular la partida de la cámara de fermentación controlada de roll-in, que en el caso modelado es la que marca el cuello de botella del pedido.
 
 La recomendación, con su condición de cambio: parte del mes de apertura que te da la hoja de cronograma y no lo fuerces hacia atrás sólo por salir antes; muévelo sólo si al recalcular la ruta crítica con tu fecha de arranque real sigue cayendo fuera de la campaña y con margen de rodaje suficiente. Si el nuevo cálculo te mete dentro de la campaña grande, la fecha de arranque hay que adelantarla, no la de apertura.
 
@@ -501,7 +500,7 @@ La recomendación, con su condición de cambio: parte del mes de apertura que te
 
 No hay ninguna norma que fije en qué mes puede abrir una pastelería: la fecha es una decisión de calendario, no un trámite. Pero sí hay plazos que no controlas y que hay que meter en la cuenta atrás como hitos más: el trámite de la licencia de actividad depende del calendario de tu propio ayuntamiento, y la comunicación sanitaria a tu comunidad autónoma no habilita para abrir por sí sola —es un trámite obligatorio, pero distinto del que te da luz verde.
 
-Y en la comunidad de ejemplo de este pack, Madrid, hay un plazo con fecha fija que sí conviene tener presente si el proyecto es una reforma de un negocio que ya venía funcionando: quien ya estaba abierto cuando entró en vigor el nuevo registro autonómico tiene un período transitorio de un año para inscribirse, que vence el 28-03-2027 (Decreto 26/2026, de 25 de marzo, del Consejo de Gobierno, disposición transitoria única, comprobado el 10 de septiembre de 2026). No afecta a quien abre de cero, pero si tu caso es una reapertura o una ampliación de un obrador (taller o laboratorio) ya existente, esa fecha entra en la misma hoja de cronograma como un hito más.
+Y en la comunidad de ejemplo de este pack, Madrid, hay un plazo con fecha fija que sí hay que tener presente si el proyecto es una reforma de un negocio que ya venía funcionando: quien ya estaba abierto cuando entró en vigor el nuevo registro autonómico tiene un período transitorio de un año para inscribirse, que vence el 28-03-2027 (Decreto 26/2026, de 25 de marzo, del Consejo de Gobierno, disposición transitoria única, comprobado el 10 de septiembre de 2026). No afecta a quien abre de cero, pero si tu caso es una reapertura o una ampliación de un obrador ya existente, esa fecha entra en la misma hoja de cronograma como un hito más.
 
 **Los doce hitos y su ruta crítica (checklist-legal-y-licencias.xlsx, hoja «Cronograma y Ruta Crítica»)**
 
@@ -529,11 +528,11 @@ Y en la comunidad de ejemplo de este pack, Madrid, hay un plazo con fecha fija q
 
 ### El contexto de la decisión
 
-Esta es la puerta de entrada más frecuente al oficio. Empiezas vendiendo por encargo (pedido) desde tu propia casa, la clientela llega por mensajería y por redes sociales, y en algún momento el volumen obliga a plantearse legalizarlo. El miedo real no es el trámite en sí: es descubrir, ya con clientela hecha, que lo que llevas meses vendiendo no entra en la lista de lo que se puede elaborar en una vivienda. Esa es la pregunta que hay que responder antes de rellenar ningún papel, y la respuesta cambia según dónde vivas.
+Esta es la puerta de entrada más frecuente al oficio. Empiezas vendiendo por encargo desde tu propia casa, la clientela llega por mensajería y por redes sociales, y en algún momento el volumen obliga a plantearse legalizarlo. El miedo real no es el trámite en sí: es descubrir, ya con clientela hecha, que lo que llevas meses vendiendo no entra en la lista de lo que se puede elaborar en una vivienda. Esa es la pregunta que hay que responder antes de rellenar ningún papel, y la respuesta cambia según dónde vivas.
 
 ### Las opciones sobre la mesa
 
-Hay tres caminos y no son intercambiables. La opción A es legalizar la propia vivienda con una declaración responsable y ajustar tu catálogo a lo que la norma permite elaborar en casa. La opción B es dar el salto a un obrador (taller o laboratorio) compartido, que te libera del límite doméstico pero te suma un alquiler. La opción C es saltar directamente a un local pequeño con su propia licencia. Lo que cambia entre las tres es la inversión de arranque, el catálogo que puedes vender, los canales por los que puedes venderlo y el tope de volumen que puedes producir cada semana.
+Hay tres caminos y no son intercambiables. La opción A es legalizar la propia vivienda con una declaración responsable y ajustar tu catálogo a lo que la norma permite elaborar en casa. La opción B es dar el salto a un obrador compartido, que te libera del límite doméstico pero te suma un alquiler. La opción C es saltar directamente a un local pequeño con su propia licencia. Lo que cambia entre las tres es la inversión de arranque, el catálogo que puedes vender, los canales por los que puedes venderlo y el tope de volumen que puedes producir cada semana.
 
 ### El criterio con el que se decide
 
@@ -541,7 +540,7 @@ La regla de oro es esta: primero se comprueba si tu producto entra en la lista b
 
 ### La celda que lo resuelve
 
-La hoja de ruta doméstica del libro de licencias da tres semáforos para esta decisión. El primero es el tope de kilos: el límite absoluto son 100 kilos a la semana, y en el ejemplo doméstico de esa misma hoja se trabaja con 60 kilos semanales, muy por debajo del techo. El segundo semáforo es la proporcionalidad con los metros útiles de tu cocina: el ejemplo usa 12 metros útiles con un criterio propio de proporcionalidad de 8 y una referencia de 5,0 kilos por metro cuadrado útil y semana, así que la superficie de la que dispones acota tu producción tanto como el propio tope legal. El tercer semáforo no es una cifra, es un aviso: todo eso hay que poder demostrarlo documentalmente, no basta con decir que se cumple.
+La hoja de ruta doméstica del libro de licencias da tres semáforos para esta decisión. El primero es el tope de kilos: el límite absoluto son 100 kilos a la semana, y en el ejemplo doméstico de esa misma hoja se trabaja con 60 kilos semanales, muy por debajo del techo. El segundo semáforo es la proporcionalidad con los metros útiles de tu cocina: el ejemplo usa 12 metros útiles con un criterio propio de proporcionalidad de 8 kilos por metro cuadrado útil y semana —de la casa, no de la norma— y un resultado de 5,0, holgadamente por debajo, así que la superficie de la que dispones acota tu producción tanto como el propio tope legal. El tercer semáforo no es una cifra, es un aviso: todo eso hay que poder demostrarlo documentalmente, no basta con decir que se cumple.
 
 Para comparar el coste de cada camino está la hoja de variantes de la calculadora de inversión: la variante de obrador en casa está calculada en 14.966 euros de inversión de apertura, la cifra que hay que poner al lado de lo que cuestan el obrador compartido o el local pequeño antes de decidir. Como contraste cualitativo, la guía Pastelería Para Todos habla de una inversión de referencia de tres mil a cinco mil euros para el mínimo viable de venta directa, y de cinco mil a ocho mil euros de arranque económico frente a treinta mil euros o más para un equipamiento profesional completo; en ese modelo la venta es solo directa al consumidor final y el trámite es una comunicación al departamento de sanidad autonómico, nunca una inscripción en el registro general de empresas alimentarias.
 
@@ -549,7 +548,7 @@ La recomendación es clara: si tu producto entra en la lista blanca y tu volumen
 
 ### La norma que aplica cuando la hay
 
-El artículo 13.8 del RD 1021/2022 (texto consolidado, comprobado el 10 de septiembre de 2026) limita lo que se puede elaborar en vivienda a cinco letras: comidas preparadas con tratamiento térmico suficiente, productos de pastelería (repostería) y panadería estables a temperatura ambiente, mermeladas y confituras con tratamiento térmico tras el envasado, conservas vegetales con pH inferior a 4,5, y una quinta letra que remite a lo que cada comunidad autónoma añada en su territorio. Por defecto, solo entra la repostería estable a temperatura ambiente: una tarta (pastel o torta) rellena de nata no entra en esa lista salvo que tu comunidad la haya sumado por la vía de esa quinta letra, y hay comunidades que ya lo han hecho. El Decreto 13/2025 del Consell, por ejemplo, amplía esa lista a ocho letras y abre además la venta directa en el propio domicilio.
+El artículo 13.8 del RD 1021/2022 (texto consolidado, comprobado el 10 de septiembre de 2026) limita lo que se puede elaborar en vivienda a cinco letras: comidas preparadas con tratamiento térmico suficiente, productos de pastelería y panadería estables a temperatura ambiente, mermeladas y confituras con tratamiento térmico tras el envasado, conservas vegetales con pH inferior a 4,5, y una quinta letra que remite a lo que cada comunidad autónoma añada en su territorio. Por defecto, solo entra la repostería estable a temperatura ambiente: una tarta rellena de nata no entra en esa lista salvo que tu comunidad la haya sumado por la vía de esa quinta letra, y hay comunidades que ya lo han hecho. El Decreto 13/2025 del Consell, por ejemplo, amplía esa lista a ocho letras y abre además la venta directa en el propio domicilio.
 
 De las cinco prohibiciones del artículo 13.5 del mismo real decreto, solo la de colectividades y eventos es incondicional; el consumo in situ, la venta en el propio establecimiento y el suministro a otros minoristas llevan salvedad autonómica, y la prohibición de congelar no admite salvedad, aunque sí se puede mantener en congelación la materia prima que ya se compró congelada. Y el artículo 13.10 obliga a etiquetar todo lo que sale de una vivienda con la mención de elaborado en vivienda particular y la fecha de elaboración. Esto no es una promesa de que quedas cien por cien en regla con solo leerlo: es el mapa con la norma y el artículo exactos, y el número con el que comparas tu propio caso en la hoja de ruta doméstica.
 
@@ -572,21 +571,21 @@ De las cinco prohibiciones del artículo 13.5 del mismo real decreto, solo la de
 
 ### El contexto de la decisión
 
-El envío a domicilio parece la manera barata de ampliar mercado sin abrir otra tienda: no hay traspaso, no hay otro alquiler, no hay otra plantilla. En pastelería (repostería) esa promesa choca con la física antes que con la ley. La pregunta correcta no es si puedes vender online —puedes, y lo puedes hacer sin pedir permiso especial por vender a distancia—, sino qué referencia concreta de tu carta llega en condiciones al domicilio del cliente. No es la misma decisión para una galleta que para una tarta (pastel o torta) rellena de crema, y tratar el envío como un canal único, sin mirar producto a producto, es el error que arrastra el resto de decisiones de este capítulo.
+El envío a domicilio parece la manera barata de ampliar mercado sin abrir otra tienda: no hay traspaso, no hay otro alquiler, no hay otra plantilla. En pastelería esa promesa choca con la física antes que con la ley. La pregunta correcta no es si puedes vender online —puedes, y lo puedes hacer sin pedir permiso especial por vender a distancia—, sino qué referencia concreta de tu carta llega en condiciones al domicilio del cliente. No es la misma decisión para una galleta que para una tarta rellena de crema, y tratar el envío como un canal único, sin mirar producto a producto, es el error que arrastra el resto de decisiones de este capítulo.
 
 ### Las opciones sobre la mesa
 
-Hay tres caminos, y conviene mirarlos sin descartar ninguno antes de tiempo:
+Hay tres caminos, y hay que mirarlos sin descartar ninguno antes de tiempo:
 
 - Opción A: enviar sólo producto estable a temperatura ambiente —bollería seca, galletas, algunas tartas sin relleno perecedero—, con transporte ordinario.
-- Opción B: enviar también producto refrigerado, con transporte de temperatura controlada desde el obrador (taller o laboratorio) hasta la puerta del cliente.
-- Opción C: no enviar nada y usar la web sólo para que el cliente recoja en tienda el encargo (pedido) que ha hecho online.
+- Opción B: enviar también producto refrigerado, con transporte de temperatura controlada desde el obrador hasta la puerta del cliente.
+- Opción C: no enviar nada y usar la web sólo para que el cliente recoja en tienda el encargo que ha hecho online.
 
 Lo que cambia entre las tres no es sólo el catálogo que puedes ofrecer: cambia el coste de servir ese canal, cambia el margen de contribución que te queda una vez descontado ese coste, y cambia el riesgo de reclamación si algo llega tibio, fundido o fuera de plazo. La opción A abarata la logística pero recorta la carta que puedes vender por internet a lo que aguanta el trayecto sin cadena de frío. La opción B abre la carta entera al envío, pero mete un proveedor de transporte refrigerado en la cuenta de resultados. La opción C elimina el riesgo de transporte por completo, a cambio de renunciar a la venta a quien no puede pasar por tienda.
 
 ### El criterio con el que se decide
 
-La regla que separa lo que se puede enviar de lo que no es sencilla de enunciar y fácil de saltarse: viaja lo que aguanta su temperatura de conservación durante todo el trayecto, no lo que aguanta la caja. Una caja bien aislada retrasa la subida de temperatura, no la impide, y el reloj no se para por el packaging. Y hay un segundo matiz que se olvida con frecuencia: el plazo legal del producto elaborado por la vía del huevo se cuenta desde el momento de la elaboración, no desde el momento del envío. Si la pieza lleva ya parte de su vida útil consumida en vitrina (exhibidor) o en cámara antes de meterla en la caja, ese tiempo cuenta igual.
+La regla que separa lo que se puede enviar de lo que no es sencilla de enunciar y fácil de saltarse: viaja lo que aguanta su temperatura de conservación durante todo el trayecto, no lo que aguanta la caja. Una caja bien aislada retrasa la subida de temperatura, no la impide, y el reloj no se para por el packaging. Y hay un segundo matiz que se olvida con frecuencia: el plazo legal del producto elaborado por la vía del huevo se cuenta desde el momento de la elaboración, no desde el momento del envío. Si la pieza lleva ya parte de su vida útil consumida en vitrina o en cámara antes de meterla en la caja, ese tiempo cuenta igual.
 
 El segundo criterio es económico, y va después del técnico porque de nada sirve calcular un margen sobre una pieza que no puede viajar. El coste de servir del canal de envío se come una parte del margen de contribución antes de que veas un euro de beneficio, así que hay que verlo antes de fijar el precio de envío al cliente, no después. Fijar un precio de envío atractivo sin haber mirado antes ese coste de servir es la manera más rápida de vender un pedido que no compensa.
 
@@ -594,7 +593,7 @@ La recomendación, con su condición para cambiar: si tu carta tiene suficiente 
 
 ### La celda que lo resuelve
 
-La hoja de decisión de huevo y temperatura del libro de la carta —la calculadora de escandallo (costeo) y apertura— clasifica las treinta referencias de la carta modelo entre vitrina refrigerada y vitrina de ambiente: quince van a vitrina refrigerada y quince a vitrina de ambiente, y de esas, quince referencias quedan con un plazo legal de veinticuatro horas. Esa misma hoja da también la temperatura que manda para el producto relleno: 4 grados. Son las quince referencias de vitrina refrigerada las que hay que mirar una a una antes de decidir si entran en el envío, porque son las que menos margen de trayecto tienen.
+La hoja de decisión de huevo y temperatura del libro de la carta —la calculadora de escandallo y apertura— clasifica las treinta referencias de la carta modelo entre vitrina refrigerada y vitrina de ambiente: quince van a vitrina refrigerada y quince a vitrina de ambiente, y son esas quince refrigeradas las que quedan con un plazo legal de veinticuatro horas. Esa misma hoja da también la temperatura que manda para el producto relleno: 4 grados. Son las quince referencias de vitrina refrigerada las que hay que mirar una a una antes de decidir si entran en el envío, porque son las que menos margen de trayecto tienen.
 
 La hoja de canales del plan financiero, por su parte, da el margen de contribución del canal de envío y online ya con su coste de servir descontado: 51 por ciento de margen de contribución, con un 9 por ciento de coste de servir dentro de esa cuenta. Esa es la cifra que hay que mirar antes de poner un precio de envío por debajo del coste real de servir el pedido.
 
@@ -626,11 +625,11 @@ Lo que sí obliga, y en esto no hay margen, es el artículo 4, apartado 3 del RD
 
 ### El contexto de la decisión
 
-En una pastelería (repostería) lo que no se vende hoy no espera a mañana: la vitrina (exhibidor) refrigerada tiene 15 referencias, y las 15 llevan plazo legal de veinticuatro horas, así que al cierre no hay margen para pensar «ya lo coloco la próxima jornada». El primer año esa urgencia se agrava porque todavía no conoces la demanda por referencia: pides con intuición, no con histórico, y la merma sale alta mientras aprendes qué se vende y cuánto. Ese aprendizaje tiene un coste doble y en dos direcciones opuestas: se tira producto que se podría haber vendido con un pequeño empujón, y al mismo tiempo se vende producto que ya no se debería vender, porque nadie decidió a qué hora deja de estar en condiciones de ofrecerse tal cual. Las dos cosas nacen de la misma causa: no tener la política de fin de jornada escrita antes de abrir. Sin ella, cada dependienta improvisa su propio criterio, y el criterio de una tarde no coincide con el de la siguiente.
+En una pastelería lo que no se vende hoy no espera a mañana: la vitrina refrigerada tiene 15 referencias, y las 15 llevan plazo legal de veinticuatro horas, así que al cierre no hay margen para pensar «ya lo coloco la próxima jornada». El primer año esa urgencia se agrava porque todavía no conoces la demanda por referencia: pides con intuición, no con histórico, y la merma sale alta mientras aprendes qué se vende y cuánto. Ese aprendizaje tiene un coste doble y en dos direcciones opuestas: se tira producto que se podría haber vendido con un pequeño empujón, y al mismo tiempo se vende producto que ya no se debería vender, porque nadie decidió a qué hora deja de estar en condiciones de ofrecerse tal cual. Las dos cosas nacen de la misma causa: no tener la política de fin de jornada escrita antes de abrir. Sin ella, cada dependienta improvisa su propio criterio, y el criterio de una tarde no coincide con el de la siguiente.
 
 ### Las opciones sobre la mesa
 
-Al cierre hay cuatro caminos para lo que sobra, y conviene tenerlos decididos de antemano, no inventados sobre la marcha:
+Al cierre hay cuatro caminos para lo que sobra, y hay que tenerlos decididos de antemano, no inventados sobre la marcha:
 
 - Opción A: tirar. Es la opción por defecto de quien no ha decidido nada, y la más cara de las cuatro.
 - Opción B: vender con descuento, en un rincón identificado de la vitrina o del mostrador, nunca mezclado con el género recién hecho.
@@ -641,7 +640,7 @@ Lo que cambia entre una opción y otra no es sólo el destino físico del produc
 
 ### El criterio con el que se decide
 
-El primer criterio no es cuál de las cuatro opciones elegir: es reducir la producción con datos antes de tener que elegir ninguna. La merma se mide por referencia, no en bloque, porque una tarta (pastel o torta) de vida corta y una pieza de bollería envasada no se comportan igual. Sólo después de medir tiene sentido decidir qué hacer con lo que sobra; descontar sin haber medido antes convierte el descuento en política de precios encubierta, porque terminas rebajando siempre las mismas referencias por costumbre y no por excedente real.
+El primer criterio no es cuál de las cuatro opciones elegir: es reducir la producción con datos antes de tener que elegir ninguna. La merma se mide por referencia, no en bloque, porque una tarta de vida corta y una pieza de bollería envasada no se comportan igual. Sólo después de medir tiene sentido decidir qué hacer con lo que sobra; descontar sin haber medido antes convierte el descuento en política de precios encubierta, porque terminas rebajando siempre las mismas referencias por costumbre y no por excedente real.
 
 El segundo criterio es de precio: rebajar para no tirar producto no puede estropear el precio que llevas cobrando en tu carta el resto del mes, y la norma trae una excepción escrita justamente para este caso, que se explica en el epígrafe siguiente.
 
@@ -678,13 +677,10 @@ La recomendación, con lo que la haría cambiar: empieza por la opción B en el 
 
 ---
 
-
----
-
 ## Sobre el autor y condiciones de uso
 
 John Guerrero es CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010, ha asesorado la apertura de más de 200 establecimientos, incluidos restaurantes con Estrella MICHELIN y Soles Repsol en España y Europa. Más sobre su trabajo en johnguerrero.es.
 
-**Versión 1.0 · septiembre de 2026 · aichef.pro/guia-pasteleria-obrador · info@aichef.pro**
+**Versión 1.0.1 · septiembre de 2026 · aichef.pro/guia-pasteleria-obrador · info@aichef.pro**
 
 *Esta guía es un documento de trabajo profesional, no un dictamen jurídico, sanitario, fiscal ni laboral, y no sustituye al proyecto técnico visado que te va a pedir tu ayuntamiento. El marco normativo que se explica es el ESPAÑOL, y su estado se verificó contra las fuentes oficiales —Boletín Oficial del Estado, Diario Oficial de la Unión Europea, Boletín Oficial de la Comunidad de Madrid, Diari Oficial de la Generalitat de Catalunya, Diari Oficial de la Generalitat Valenciana y el Código Técnico de la Edificación— el 10 de septiembre de 2026: cada afirmación legal lleva su norma y su artículo para que puedas comprobarla y para que sepas dónde mirar cuando cambie. Lo que depende de tu ayuntamiento —la ordenanza de humos, la de ruido, el planeamiento urbanístico, las tasas— cambia en cada uno de los municipios de España y aquí se trata como una pregunta que tienes que hacer, nunca como un dato. Las cuatro comunidades autónomas que aparecen en los cuadros son EJEMPLOS: comprueba el decreto de la tuya. Las superficies, importes, precios, gramajes, márgenes y plazos del caso que recorre el documento son valores de ejemplo de una pastelería modelada que acompaña a este pack, y viven en celdas editables de las hojas de cálculo precisamente para que los sustituyas por los tuyos: ninguno es una previsión de tus resultados, ni un estándar del sector, ni una promesa de rentabilidad. Antes de firmar un alquiler, presentar un trámite, fijar el precio de una referencia o contratar a alguien, contrasta con tu ayuntamiento, con tu asesoría y con la autoridad sanitaria de tu comunidad.*

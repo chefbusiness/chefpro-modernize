@@ -71,17 +71,17 @@
  },
  "Facturación de las seis campañas sin IVA": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N13",
-  "valor": 42371.27272727273,
+  "valor": 22478.545454545452,
   "tipo": "salida"
  },
  "Facturación incremental de las seis campañas sin IVA": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O13",
-  "valor": 41162.72727272727,
+  "valor": 21270.0,
   "tipo": "salida"
  },
  "Unidades de producto estrella de las seis campañas": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!M13",
-  "valor": 7164.0,
+  "valor": 5634.0,
   "tipo": "salida"
  },
  "Días de campaña al año": {
@@ -91,37 +91,37 @@
  },
  "Suma de los coeficientes de estacionalidad": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!B18",
-  "valor": 12.000000000000002,
+  "valor": 12.0,
   "tipo": "salida"
  },
  "Ventas del mes más alto (enero)": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!C6",
-  "valor": 31682.79054999999,
+  "valor": 35978.76215,
   "tipo": "salida"
  },
  "Ventas del mes más bajo (agosto)": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!C13",
-  "valor": 18257.879299999997,
+  "valor": 17452.384625000002,
   "tipo": "salida"
  },
  "Peso de enero sobre el año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D6",
-  "valor": 0.0983333333333333,
+  "valor": 0.11166666666666668,
   "tipo": "salida"
  },
  "Peso de agosto sobre el año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D13",
-  "valor": 0.05666666666666666,
+  "valor": 0.054166666666666675,
   "tipo": "salida"
  },
  "Peso de las seis campañas sobre el año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D30",
-  "valor": 0.131506992045828,
+  "valor": 0.06976627578123173,
   "tipo": "salida"
  },
  "Peso incremental de las seis campañas sobre el año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!F30",
-  "valor": 0.12775605025795878,
+  "valor": 0.06601533399336253,
   "tipo": "salida"
  },
  "Campañas que NO aguanta el obrador": {
@@ -156,17 +156,17 @@
  },
  "Tesorería inmovilizada en materia de campaña": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K13",
-  "valor": 7281.6672,
+  "valor": 3856.9941999999996,
   "tipo": "salida"
  },
  "Coste financiero del inmovilizado de campaña": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!N13",
-  "valor": 55.112576613698636,
+  "valor": 27.879468487671225,
   "tipo": "salida"
  },
  "Resultado incremental de las seis campañas": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q13",
-  "valor": 30293.196642180985,
+  "valor": 13852.37547757974,
   "tipo": "salida"
  },
  "Campañas con refuerzo corto": {
@@ -176,22 +176,22 @@
  },
  "Facturación sin IVA de la campaña de Reyes": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N6",
-  "valor": 31499.999999999996,
+  "valor": 11999.999999999998,
   "tipo": "salida"
  },
  "Facturación incremental sin IVA de la campaña de Reyes": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O6",
-  "valor": 31499.999999999996,
+  "valor": 11999.999999999998,
   "tipo": "salida"
  },
  "Peso de Reyes sobre las ventas del año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D24",
-  "valor": 0.09776600944009964,
+  "valor": 0.03724419407241891,
   "tipo": "salida"
  },
  "Cuántas veces un día normal factura un día de Reyes": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I24",
-  "valor": 5.865960566405978,
+  "valor": 2.2346516443451345,
   "tipo": "salida"
  },
  "Demanda de piezas al día en Reyes": {
@@ -221,7 +221,7 @@
  },
  "Tesorería inmovilizada en la campaña de Reyes": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K6",
-  "valor": 5457.4800000000005,
+  "valor": 2079.04,
   "tipo": "salida"
  },
  "Días con el dinero parado en Reyes": {
@@ -231,7 +231,7 @@
  },
  "Resultado incremental de la campaña de Reyes": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q6",
-  "valor": 24395.21196188764,
+  "valor": 8300.623945887637,
   "tipo": "salida"
  },
  "Facturación sin IVA de la campaña de San Valentín": {
@@ -356,22 +356,22 @@
  },
  "Facturación sin IVA de la campaña de Semana Santa": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N9",
-  "valor": 4189.090909090909,
+  "valor": 4014.545454545454,
   "tipo": "salida"
  },
  "Facturación incremental sin IVA de la campaña de Semana Santa": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O9",
-  "valor": 4189.090909090909,
+  "valor": 4014.545454545454,
   "tipo": "salida"
  },
  "Peso de Semana Santa sobre las ventas del año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D27",
-  "valor": 0.013001609567098966,
+  "valor": 0.012459875835136509,
   "tipo": "salida"
  },
  "Cuántas veces un día normal factura un día de Semana Santa": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I27",
-  "valor": 0.48756035876621123,
+  "valor": 0.46724534381761906,
   "tipo": "salida"
  },
  "Demanda de piezas al día en Semana Santa": {
@@ -401,7 +401,7 @@
  },
  "Tesorería inmovilizada en la campaña de Semana Santa": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K9",
-  "valor": 499.392,
+  "valor": 478.584,
   "tipo": "salida"
  },
  "Días con el dinero parado en Semana Santa": {
@@ -411,7 +411,7 @@
  },
  "Resultado incremental de la campaña de Semana Santa": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q9",
-  "valor": 3152.0657894351907,
+  "valor": 2998.4555772349413,
   "tipo": "salida"
  },
  "Facturación sin IVA de la campaña de Comuniones": {
@@ -476,22 +476,22 @@
  },
  "Facturación sin IVA de la campaña de Todos los Santos": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N11",
-  "valor": 2269.090909090909,
+  "valor": 2050.909090909091,
   "tipo": "salida"
  },
  "Facturación incremental sin IVA de la campaña de Todos los Santos": {
   "ref": "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O11",
-  "valor": 2269.090909090909,
+  "valor": 2050.909090909091,
   "tipo": "salida"
  },
  "Peso de Todos los Santos sobre las ventas del año": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!D29",
-  "valor": 0.00704253851551194,
+  "valor": 0.006365371350558869,
   "tipo": "salida"
  },
  "Cuántas veces un día normal factura un día de Todos los Santos": {
   "ref": "estacionalidad-y-picos.xlsx!Peso sobre el Año!I29",
-  "valor": 0.704253851551194,
+  "valor": 0.6365371350558869,
   "tipo": "salida"
  },
  "Demanda de piezas al día en Todos los Santos": {
@@ -521,7 +521,7 @@
  },
  "Tesorería inmovilizada en la campaña de Todos los Santos": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K11",
-  "valor": 264.42,
+  "valor": 238.995,
   "tipo": "salida"
  },
  "Días con el dinero parado en Todos los Santos": {
@@ -531,7 +531,7 @@
  },
  "Resultado incremental de la campaña de Todos los Santos": {
   "ref": "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!Q11",
-  "valor": 1361.783374525417,
+  "valor": 1169.160438124421,
   "tipo": "salida"
  },
  "_notas": {

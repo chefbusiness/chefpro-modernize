@@ -1028,6 +1028,9 @@ def hoja_pyg(wb):
         motor.f(ws, '%s%d' % (col, P['personal']),
                 ie('IF({0}{1}="","",{2}$I${3})'
                    .format(col, P['ingresos'], Q_PER, R_TOT)), fmt=C.EUR)
+    # B12 (2026-09-10): era la ÚNICA fila del cuadro sin su porcentaje sobre
+    # ventas, y justo la partida que los dos capítulos llaman «la más pesada».
+    pct(P['personal'])
     motor.val(ws, 'F%d' % P['personal'], 0.0, fmt=C.PCT)
     C.nota(ws, 'G%d' % P['personal'],
            'Sale de la hoja de Personal: es el MISMO número, no una estimación '
@@ -1824,8 +1827,11 @@ def hoja_tesoreria(wb):
             ant = MESES_COL[i - 1]
             reparto = ('{0}{1}*(1-{3}/30)+{2}{1}*({3}/30)'
                        .format(col, T['reparto'], ant, sup('dias_pago')))
+        # B13 (2026-09-10): el mes 1 no paga nada (pago a 30 días) y la
+        # negación de un cero da CERO NEGATIVO, que se imprimía «-0 €» en el
+        # documento que va al banco. El «+0» lo devuelve a cero positivo.
         motor.f(ws, '%s%d' % (col, T['compras']),
-                g('-%s*(%s)' % (base, reparto)), fmt=C.EUR)
+                g('-%s*(%s)+0' % (base, reparto)), fmt=C.EUR)
     motor.f(ws, 'N%d' % T['compras'],
             g('SUM(B%d:M%d)' % (T['compras'], T['compras'])), fmt=C.EUR)
     C.nota(ws, 'O%d' % T['compras'],
@@ -2685,9 +2691,9 @@ def demo(ruta):
     pruebas.append(('El resultado del año de crucero cuadra con el juego de '
                     'datos dentro del 2 %',
                     abs(rai_libro - esperado_rai) / abs(esperado_rai) < 0.02,
-                    'libro %.2f vs datos_ejemplo %.2f (la diferencia son los '
-                    'intereses: el libro le da al año 2 SUS intereses y '
-                    'datos_ejemplo usa los del año 1); neto tras impuestos '
+                    'libro %.2f vs datos_ejemplo %.2f (desde el fix A3 los dos '
+                    'usan los intereses del AÑO DE CRUCERO, así que tienen que '
+                    'coincidir al céntimo); neto tras impuestos '
                     '%.2f' % (rai_libro, esperado_rai, neto_libro)))
     return pruebas
 

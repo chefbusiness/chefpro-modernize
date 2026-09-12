@@ -587,10 +587,18 @@ def epigrafes_ausentes(md_text, capitulos):
     (RT-02/RT-04)."""
     fuera = []
     por_cap = {}
+    # B6 (2026-09-10): una entrada con `sin_numerar` (el anexo normativo de la
+    # Guía de Pastelería, D28) sale como «## Título» sin ordinal. Se indexa por
+    # su título para que los gates la sigan viendo.
+    sin_num = {c['titulo']: c['n'] for c in capitulos if c.get('sin_numerar')}
     for tr in re.split(r'^## ', md_text, flags=re.M)[1:]:
         m = re.match(r'(\d+)\. ', tr)
         if m:
             por_cap[int(m.group(1))] = tr
+        else:
+            cab = tr.split('\n')[0].strip()
+            if cab in sin_num:
+                por_cap[sin_num[cab]] = tr
     for cap in capitulos:
         cuerpo = por_cap.get(cap['n'], '')
         vistos = [_norm_tok(x.strip()) for x in
@@ -681,19 +689,38 @@ def resolver_cifras(xlsx_dir, cifras):
     return fuera
 
 
-RX_ETIQUETA_PCT = re.compile(r'\(\s*%\s*\)|\ben\s*%|\(porcentaje\)|%\s*$')
+RX_ETIQUETA_PCT = re.compile(r'\(\s*%\s*\)|\ben\s*%|\(porcentaje\)')
+#: Una celda que ES un porcentaje y nada más: «35,2 %», «-4 %», «12,5%».
+#: A1 (2026-09-10): el patrón viejo llevaba `%\s*$`, que casa con CUALQUIER
+#: texto acabado en «%» — y la referencia T1 de la carta se llama «Tarta de
+#: chocolate 70 %». Las tres tablas que la contienen salían reformateadas
+#: enteras: 4 °C se imprimía «4,0 %» y las 24 h del art. 9.3, «24,0 %».
+RX_CELDA_PCT = re.compile(r'^\s*-?\d+(?:[.,]\d+)?\s*%\s*$')
 
 
 def es_fila_porcentual(celdas):
-    """La etiqueta de la fila (o el título de la columna) declara porcentaje."""
-    return any(isinstance(c, str) and RX_ETIQUETA_PCT.search(c) for c in celdas)
+    """La etiqueta de la fila (o el título de la columna) declara porcentaje.
+
+    Cuenta como declaración: un «(%)», un «en %» o un «(porcentaje)» en
+    cualquier parte de la etiqueta, o una celda que SEA un porcentaje entera
+    («35,2 %»). NUNCA una cadena con letras que acabe en «%»: el nombre de un
+    producto puede acabar en porcentaje y no convierte su fila en una fila de
+    porcentajes (A1, 2026-09-10).
+    """
+    for c in celdas:
+        if not isinstance(c, str):
+            continue
+        if RX_ETIQUETA_PCT.search(c) or RX_CELDA_PCT.match(c):
+            return True
+    return False
 
 
 def construir_tabla(xlsx_dir, t):
     """Devuelve (markdown, n_filas). Dos formas:
        - literal:  {'cabecera': [...], 'filas': [[...], ...]}
        - del xlsx: {'src': ('fichero.xlsx','Hoja'), 'cols': [(titulo, col, fmt)],
-                    'filas': (fila_ini, fila_fin), 'saltar_vacias': True}
+                    'filas': (fila_ini, fila_fin), 'saltar_vacias': True,
+                    'omitir_filas': (34, 35)}
     """
     if 'cabecera' in t:
         cab, filas = t['cabecera'], [[str(c) for c in f] for f in t['filas']]
@@ -703,7 +730,10 @@ def construir_tabla(xlsx_dir, t):
         cab = [c[0] for c in t['cols']]
         filas = []
         ini, fin = t['filas']
+        omitir = set(t.get('omitir_filas', ()))
         for r in range(ini, fin + 1):
+            if r in omitir:
+                continue
             fila, crudos = [], []
             for _tit, col, fmt in t['cols']:
                 if col.startswith('='):          # literal por columna
@@ -1324,7 +1354,9 @@ def generar_capitulo(cap, guia, xlsx_dir, idx_research, dir_txt, forzar=False,
         piezas.append(limpiar_bloque(t, hojas))
 
     cuerpo = '\n\n'.join(piezas)
-    md = [f'## {cap["n"]}. {cap["titulo"]}', '', cuerpo]
+    encabezado = (cap['titulo'] if cap.get('sin_numerar')
+                  else f'{cap["n"]}. {cap["titulo"]}')
+    md = [f'## {encabezado}', '', cuerpo]
     for titulo, tabla_md, _nf, nota in tablas:
         md += ['', f'**{titulo}**', '', tabla_md]
         if nota:
@@ -1344,7 +1376,11 @@ def portada_e_indice(guia, capitulos):
          f'**Versión {guia.get("version", "2.0")} · {hoy} · aichef.pro/{guia["pid"]}**', '',
          '---', '', '## Índice', '']
     for c in capitulos:
-        p.append(f'{c["n"]}. **{c["titulo"]}** — {c["resumen_indice"]}')
+        # B6: el anexo va como entrada del pipeline pero NO se numera como
+        # capítulo (D28): la portada dice «veinte capítulos» y el índice tiene
+        # que contar veinte.
+        ordinal = '' if c.get('sin_numerar') else f'{c["n"]}. '
+        p.append(f'{ordinal}**{c["titulo"]}** — {c["resumen_indice"]}')
     p += ['', '---', '']
     return '\n'.join(p)
 
@@ -1881,6 +1917,14 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research,
     d_docx, t_docx = texto_docx(docx_path)
     n_pdf, n_docx = palabras(t_pdf), palabras(t_docx)
     caps = re.findall(r'^## (\d+)\. (.+)$', md_text, re.M)
+    # B6: los capítulos `sin_numerar` no llevan ordinal en el `##`; se añaden
+    # por título para que cuenten en el recuento y en el gate de títulos del
+    # PDF. Se identifican por el guion, nunca por «cualquier ## suelto», que
+    # se tragaría «Índice» y «Sobre el autor».
+    sin_num = {c['titulo']: c['n'] for c in capitulos if c.get('sin_numerar')}
+    for _t in re.findall(r'^## (.+)$', md_text, re.M):
+        if _t.strip() in sin_num:
+            caps.append((str(sin_num[_t.strip()]), _t.strip()))
     # Las tablas se cuentan con el MISMO parser que maqueta (no con un regex
     # propio): un regex distinto contaba 33 donde el maquetador emitia 32 y la
     # paridad fallaba por una tabla que no existia en ningun formato.
@@ -1890,11 +1934,14 @@ def gates(md_text, docx_path, pdf_path, cfg, xlsx_dir, idx_research,
     trozos = re.split(r'^## ', md_text, flags=re.M)
     por_cap = {}
     for tr in trozos[1:]:
-        m = re.match(r'(\d+)\. (.+)', tr.split('\n')[0])
+        cabecera = tr.split('\n')[0]
+        m = re.match(r'(\d+)\. (.+)', cabecera)
         if m:
             # 2026-08-29 (RT-12): el cap. 15 declaraba 4.155 palabras de las
             # que ~2.700 eran «(2)». Se cuentan sólo los tokens con letras.
             por_cap[int(m.group(1))] = palabras_reales(tr)
+        elif cabecera.strip() in sin_num:
+            por_cap[sin_num[cabecera.strip()]] = palabras_reales(tr)
     cortos = {k: v for k, v in por_cap.items() if v < cfg.get('min_palabras_cap', 900)}
 
     # tablas ancladas: ninguna tabla después del último ##
@@ -2056,7 +2103,12 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
         if f:
             raise SystemExit(4)
         partes.append(md)
-        partes.append('\n---\n')
+        # C1 (2026-09-10): el separador va ENTRE capítulos. Después del último
+        # sobraba, porque `cierre()` ya abre con el suyo: dos «---» seguidos
+        # son dos saltos de página y el PDF salía con una página en blanco
+        # antes de «Sobre el autor» (p. 103 de la guía, 37 del bonus).
+        if cap is not capitulos[-1]:
+            partes.append('\n---\n')
         detalle.append(det)
     partes.append(cierre(guia))
     md_text = '\n'.join(partes)
@@ -2082,7 +2134,12 @@ def construir_documento(nombre, guia, capitulos, xlsx_dir, idx_research,
             'title': guia['titulo'],
             'subject': guia['subtitulo'] + f' · Versión {guia.get("version", "2.0")} · {guia.get("fecha", "agosto de 2026").replace(" de ", " ")}',
             'cabecera': guia['cabecera'],
-            'pie': f'Versión {guia.get("version", "2.0")} · aichef.pro/{guia["pid"]}',
+            # C13 (2026-09-10): el pie es lo único que sobrevive a una
+            # fotocopia suelta, y es justo donde más falta hace la fecha de
+            # edición que ya llevan la portada y el cierre.
+            'pie': (f'Versión {guia.get("version", "2.0")} · '
+                    f'{guia.get("fecha", "agosto de 2026")} · '
+                    f'aichef.pro/{guia["pid"]}'),
             'comments': 'AI Chef Pro · aichef.pro'}
     if cfg_extra and cfg_extra.get('meta'):
         meta.update(cfg_extra['meta'])

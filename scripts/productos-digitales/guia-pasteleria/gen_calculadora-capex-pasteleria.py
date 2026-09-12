@@ -181,14 +181,12 @@ PARAMS_LIBRO = [
     ('Gastos fijos mensuales estimados', round(D.gastos_fijos_mensuales(), 2),
      '€/mes', 'supuesto',
      'Personal con Seguridad Social, retribución del propietario, alquiler, '
-     'suministros, seguros, gestoría, amortización e intereses DEL AÑO 1 '
-     '(la carga máxima, antes de que corra la carencia). Es un valor por '
-     'defecto para que el fondo de maniobra tenga un número: el cálculo '
-     'bueno, mes a mes -con el interés del año de crucero, más bajo-, es el '
-     'libro 5 (plan-financiero-3-anos-pasteleria.xlsx). Por eso el CAPEX y el '
-     'fondo de maniobra de este libro difieren en unos 134 € de los del '
-     'libro 5: para citar la INVERSIÓN TOTAL, usa siempre el libro 5, no '
-     'éste.'),
+     'suministros, seguros, gestoría, amortización e intereses DEL AÑO DE '
+     'CRUCERO (el año 2, ya pasada la carencia). Es el mismo gasto fijo '
+     'mensual que calcula, mes a mes, el libro 5 '
+     '(plan-financiero-3-anos-pasteleria.xlsx), así que los dos libros '
+     'publican el mismo fondo de maniobra y la misma inversión total. Si '
+     'cambias este valor, cámbialo también allí.'),
     ('Fondo de maniobra calculado', None, '€', 'Se calcula',
      'Meses de colchón × gastos fijos mensuales.'),
     ('Renta mensual del local', D.NEGOCIO['renta_mensual'], '€/mes',

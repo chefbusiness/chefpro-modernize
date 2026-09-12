@@ -1,16 +1,16 @@
 ### El contexto de la decisión
 
-La comunión no es un pico de tres días: es una meseta de 20 días seguidos, y llega justo cuando el obrador (taller o laboratorio) todavía se está rodando, con la plantilla recién formada y las rutinas sin asentar. En esos 20 días no sólo se produce más, también se congela caja: hay 55 días en los que el dinero de esa campaña está parado, entre la materia prima comprada, el refuerzo pagado y el cobro que todavía no ha llegado entero. Reforzar el equipo para sostener esa meseta cuesta 801,87 €, y ese número no es un capricho de la hoja: es lo que sale caro cuando no se ha decidido a tiempo cuánto encargo se acepta.
+La comunión no es un pico de tres días: es una meseta de 20 días seguidos, y llega justo cuando el obrador todavía se está rodando, con la plantilla recién formada y las rutinas sin asentar. En esos 20 días no sólo se produce más, también se congela caja: hay 55 días en los que el dinero de esa campaña está parado, entre la materia prima comprada, el refuerzo pagado y el cobro que todavía no ha llegado entero. Reforzar el equipo para sostener esa meseta cuesta 801,87 €, y ese número no es un capricho de la hoja: es lo que sale caro cuando no se ha decidido a tiempo cuánto encargo se acepta.
 
-El primer encargo grande de comunión se acepta casi siempre por ilusión —alguien pide una tarta (pastel o torta) grande, con muchas raciones, para una fecha muy concreta— y se produce por la noche, cuando el resto de la producción del día ya ha salido. Lo que hay que decidir antes de decir que sí no es si se puede hacer esa tarta: es cuánto de eso cabe sin reventar el resto de lo que ya está comprometido para ese día.
+El primer encargo grande de comunión se acepta casi siempre por ilusión —alguien pide una tarta grande, con muchas raciones, para una fecha muy concreta— y se produce por la noche, cuando el resto de la producción del día ya ha salido. Lo que hay que decidir antes de decir que sí no es si se puede hacer esa tarta: es cuánto de eso cabe sin reventar el resto de lo que ya está comprometido para ese día.
 
 ### Las opciones sobre la mesa
 
-Conviene tener elegido el modelo antes de que suene el primer teléfono de comunión, porque las tres opciones no compiten por el mismo motivo:
+Hay que tener elegido el modelo antes de que suene el primer teléfono de comunión, porque las tres opciones no compiten por el mismo motivo:
 
 - Opción A: aceptar todo lo que entre, sin cupo ni criba. Es la que más ilusiona a corto y la que más noches de obrador se come.
 - Opción B: aceptar hasta un cupo diario cerrado, fijado sobre la capacidad real del equipo y no sobre las ganas del cliente de reservar.
-- Opción C: aceptar sólo referencias que ya están en la carta y con escandallo (costeo) hecho, descartando el encargo (pedido) especial que pide algo que nunca se ha producido.
+- Opción C: aceptar sólo referencias que ya están en la carta y con escandallo hecho, descartando el encargo especial que pide algo que nunca se ha producido.
 
 Lo que cambia entre las tres no es el ingreso del día del encargo: es lo que arrastra al día siguiente. Cambian las horas de obrador comprometidas por la noche, el riesgo de que el cliente anule a última hora y la merma que queda si, al final, no viene a recoger la tarta.
 
@@ -18,7 +18,7 @@ Lo que cambia entre las tres no es el ingreso del día del encargo: es lo que ar
 
 Sin histórico —y el primer año de una pastelería es, por definición, sin histórico— la regla tiene dos patas. La primera: se acepta lo que cabe en la capacidad del obrador de ESE día, con el equipo ya comprado. El conjunto de equipos del caso modelado permite 480 piezas al día, y ese techo no lo mueve la ilusión de un encargo grande ni la insistencia del cliente. La segunda: sólo se aceptan referencias que ya tienen escandallo hecho. Sin escandallo no hay precio, y sin precio lo que se está entregando es un regalo con forma de encargo.
 
-El segundo criterio, además del cupo, es el anticipo. No es un trámite administrativo: cubre el coste (costo) de la materia prima si al final el cliente no vuelve, y de paso filtra solo al que en realidad no piensa recoger la tarta. Un encargo grande sin anticipo es, en la práctica, apostar a que todo el mundo cumple su palabra un sábado de mayo con el obrador a tope.
+El segundo criterio, además del cupo, es el anticipo. No es un trámite administrativo: cubre el coste de la materia prima si al final el cliente no vuelve, y de paso filtra solo al que en realidad no piensa recoger la tarta. Un encargo grande sin anticipo es, en la práctica, apostar a que todo el mundo cumple su palabra un sábado de mayo con el obrador a tope.
 
 Para calibrar cuánto cupo y cuánto refuerzo tiene sentido en la meseta de comuniones, hay dos cifras que se leen juntas: el margen de contribución del canal de encargos es del 68 %, sobre unas ventas anuales de ese canal de 45.108 €. Con ese margen delante se sabe si merece la pena forzar el cupo un poco por encima de lo cómodo, o si el refuerzo de la campaña ya se paga solo con lo que entra sin necesidad de apretar más.
 
@@ -36,4 +36,4 @@ Sobre anticipos y sobre anulaciones no hay norma que lo regule: es política de 
 
 Lo que sí obliga es la información de alérgenos en el encargo, exactamente igual que en cualquier venta al público: el art. 9.1, letra c, del Reglamento (UE) 1169/2011, desarrollado por el RD 126/2015 (arts. 4.1, 5.1, 6.2, 6.5 y 10, comprobado el 10 de septiembre de 2026), exige dar la denominación y los alérgenos de lo que se vende sin envasar, en etiqueta o cartel, o de palabra si esa información está registrada por escrito en el establecimiento y hay un aviso visible en cada sección de dónde consultarla.
 
-Y obliga también el plazo del producto elaborado por la vía del huevo. El art. 9.3 del RD 1021/2022, en relación con la fila 9 del art. 4.1 (comprobado el 10 de septiembre de 2026), fija un máximo de 24 horas de vida útil, con un techo de temperatura de 8 °C que baja a 4 °C cuando concurre esa fila, y obliga a registrar la fecha y la hora de elaboración de cada lote. Para el encargo de comunión, eso significa que la fecha de elaboración de la tarta no es un dato que se apunte por costumbre: condiciona, sin margen de interpretación, cuándo puede recogerse.
+Y obliga también el plazo del producto elaborado por la vía del huevo. El art. 9.3 del RD 1021/2022, en relación con la fila 9 del art. 4.1 (comprobado el 10 de septiembre de 2026), fija un plazo legal de consumo de 24 horas desde la elaboración —que no es la vida útil, que la declaras tú en tu APPCC—, con un techo de temperatura de 8 °C que baja a 4 °C cuando concurre esa fila, y obliga a registrar la fecha y la hora de elaboración de cada lote. Para el encargo de comunión, eso significa que la fecha de elaboración de la tarta no es un dato que se apunte por costumbre: condiciona, sin margen de interpretación, cuándo puede recogerse.

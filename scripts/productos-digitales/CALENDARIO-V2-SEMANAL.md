@@ -137,7 +137,7 @@ gastronómica (handoff B §20).
 Elegida por John el 9-sep (nº 4 de su cola, anunciada en el hub desde mayo). Research (6 lentes + síntesis + refutación 8/16/8),
 SPEC de 36 decisiones, verificación legal contra el BOE (72 fichas, 14 correcciones: IAE 644.1 basta, el DB-HS 3 no aplica al
 obrador, pan al 4 % desde feb-2025, art. 3 con vías alternativas…), 8 libros de Excel (4.556 fórmulas, refutados y corregidos),
-guion con `puntos_por_epigrafe`, 47 bloques redactados por Sonnet, guía de **104 páginas** + bonus de 38 + business plan de 19,
+guion con `puntos_por_epigrafe`, 47 bloques redactados por Sonnet, guía de **103 páginas** + bonus de 37 + business plan de 18 (v1.0.1 del 12-sep),
 capa de producto completa (48), imágenes, blog (3 banners + 8 enlaces). **En `main` LOCAL, sin push: falta el Payment Link de
 John** (datos en `SESSION_HANDOFF_2026-09-10-guia-pasteleria.md` §0). Decisiones de John (02:30): 65 € · 8 libros · dos sesiones
 (fundidas en una por su orden de las 02:35) · arreglar HOY el libro 13 del kit de pastelería (ampliado a 01/02/08 con su OK).

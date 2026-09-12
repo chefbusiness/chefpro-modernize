@@ -1,10 +1,10 @@
 ### El contexto de la decisión
 
-En una pastelería (repostería) lo que no se vende hoy no espera a mañana: la vitrina (exhibidor) refrigerada tiene 15 referencias, y las 15 llevan plazo legal de veinticuatro horas, así que al cierre no hay margen para pensar «ya lo coloco la próxima jornada». El primer año esa urgencia se agrava porque todavía no conoces la demanda por referencia: pides con intuición, no con histórico, y la merma sale alta mientras aprendes qué se vende y cuánto. Ese aprendizaje tiene un coste doble y en dos direcciones opuestas: se tira producto que se podría haber vendido con un pequeño empujón, y al mismo tiempo se vende producto que ya no se debería vender, porque nadie decidió a qué hora deja de estar en condiciones de ofrecerse tal cual. Las dos cosas nacen de la misma causa: no tener la política de fin de jornada escrita antes de abrir. Sin ella, cada dependienta improvisa su propio criterio, y el criterio de una tarde no coincide con el de la siguiente.
+En una pastelería lo que no se vende hoy no espera a mañana: la vitrina refrigerada tiene 15 referencias, y las 15 llevan plazo legal de veinticuatro horas, así que al cierre no hay margen para pensar «ya lo coloco la próxima jornada». El primer año esa urgencia se agrava porque todavía no conoces la demanda por referencia: pides con intuición, no con histórico, y la merma sale alta mientras aprendes qué se vende y cuánto. Ese aprendizaje tiene un coste doble y en dos direcciones opuestas: se tira producto que se podría haber vendido con un pequeño empujón, y al mismo tiempo se vende producto que ya no se debería vender, porque nadie decidió a qué hora deja de estar en condiciones de ofrecerse tal cual. Las dos cosas nacen de la misma causa: no tener la política de fin de jornada escrita antes de abrir. Sin ella, cada dependienta improvisa su propio criterio, y el criterio de una tarde no coincide con el de la siguiente.
 
 ### Las opciones sobre la mesa
 
-Al cierre hay cuatro caminos para lo que sobra, y conviene tenerlos decididos de antemano, no inventados sobre la marcha:
+Al cierre hay cuatro caminos para lo que sobra, y hay que tenerlos decididos de antemano, no inventados sobre la marcha:
 
 - Opción A: tirar. Es la opción por defecto de quien no ha decidido nada, y la más cara de las cuatro.
 - Opción B: vender con descuento, en un rincón identificado de la vitrina o del mostrador, nunca mezclado con el género recién hecho.
@@ -15,7 +15,7 @@ Lo que cambia entre una opción y otra no es sólo el destino físico del produc
 
 ### El criterio con el que se decide
 
-El primer criterio no es cuál de las cuatro opciones elegir: es reducir la producción con datos antes de tener que elegir ninguna. La merma se mide por referencia, no en bloque, porque una tarta (pastel o torta) de vida corta y una pieza de bollería envasada no se comportan igual. Sólo después de medir tiene sentido decidir qué hacer con lo que sobra; descontar sin haber medido antes convierte el descuento en política de precios encubierta, porque terminas rebajando siempre las mismas referencias por costumbre y no por excedente real.
+El primer criterio no es cuál de las cuatro opciones elegir: es reducir la producción con datos antes de tener que elegir ninguna. La merma se mide por referencia, no en bloque, porque una tarta de vida corta y una pieza de bollería envasada no se comportan igual. Sólo después de medir tiene sentido decidir qué hacer con lo que sobra; descontar sin haber medido antes convierte el descuento en política de precios encubierta, porque terminas rebajando siempre las mismas referencias por costumbre y no por excedente real.
 
 El segundo criterio es de precio: rebajar para no tirar producto no puede estropear el precio que llevas cobrando en tu carta el resto del mes, y la norma trae una excepción escrita justamente para este caso, que se explica en el epígrafe siguiente.
 

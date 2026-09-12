@@ -16,7 +16,7 @@ Lo que cambia entre las tres no es solo el número de la nómina. Cambia el cost
 
 La comparación correcta no es de bruto contra bruto: es de coste de empresa contra coste de empresa. La Seguridad Social a cargo de la empresa no es un porcentaje simbólico, es una cifra que puede invertir el orden que parecía obvio mirando solo la nómina. Y hay una segunda vuelta de tuerca: la comparación se hace por hora de obrador efectivamente cubierta, no por cabeza contratada. Dos medias jornadas suman las mismas horas que una jornada completa sobre el papel, pero el coste de empresa de dos contratos no es la suma proporcional de uno solo, y ahí es donde la opción B pierde parte de su atractivo inicial.
 
-El segundo criterio, y el que de verdad decide en la práctica, es de cobertura, no de coste. Un turno de madrugada en obrador es continuo: empieza a una hora y hay que sostenerlo entero. Dos medias jornadas encajadas dejan casi siempre una costura, un momento del cuadrante en el que nadie especialista está delante del horno, y eso se nota en la producción del día antes de notarse en la nómina de fin de mes. Si el cuadrante no cierra, el ahorro de la opción B es solo aparente.
+El segundo criterio, y el que decide en la práctica, es de cobertura, no de coste. Un turno de madrugada en obrador es continuo: empieza a una hora y hay que sostenerlo entero. Dos medias jornadas encajadas dejan casi siempre una costura, un momento del cuadrante en el que nadie especialista está delante del horno, y eso se nota en la producción del día antes de notarse en la nómina de fin de mes. Si el cuadrante no cierra, el ahorro de la opción B es solo aparente.
 
 ### La celda que lo resuelve
 

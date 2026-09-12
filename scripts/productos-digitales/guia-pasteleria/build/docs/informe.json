@@ -1,10 +1,10 @@
 {
   "_meta": {
     "pid": "guia-pasteleria-obrador",
-    "generado": "2026-09-10 06:07",
-    "salida": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador",
+    "generado": "2026-09-12 11:53",
+    "salida": "scripts/productos-digitales/guia-pasteleria/build/docs",
     "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-pasteleria-obrador",
-    "modelo": "anthropic/claude-sonnet-4.6",
+    "modelo": "~deepseek/deepseek-v4-flash-latest",
     "research": "2026-08-29",
     "research_ausente": false,
     "erratas_reparadas": [],
@@ -13,15 +13,15 @@
   "documentos": {
     "guia-pasteleria-obrador": {
       "gates": {
-        "paginas_pdf": 104,
+        "paginas_pdf": 103,
         "paginas_prometidas": 70,
-        "palabras_md": 56686,
-        "palabras_pdf": 54850,
-        "palabras_docx": 52923,
+        "palabras_md": 57623,
+        "palabras_pdf": 56169,
+        "palabras_docx": 53801,
         "palabras_objetivo": 37500,
         "capitulos": 21,
-        "tablas_md": 43,
-        "tablas_docx": 43,
+        "tablas_md": 44,
+        "tablas_docx": 44,
         "capitulos_cortos": {},
         "no_latinos_md": 0,
         "no_latinos_pdf": 0,
@@ -41,12 +41,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 50848,
+        "palabras_reales_pdf": 51876,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 53394,
+        "palabras_pdf_cuerpo": 54315,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "Cómo Montar una Pastelería"
@@ -55,9 +55,9 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Cómo Montar una Pastelería",
-          "created": "2026-09-10 06:07:38"
+          "created": "2026-09-12 11:53:52"
         },
-        "paridad_palabras_pct": 0.88,
+        "paridad_palabras_pct": 0.95,
         "ok": {
           "paginas": true,
           "palabras_pdf": true,
@@ -84,11 +84,11 @@
           "sin_asteriscos_impresos": true
         },
         "verde": true,
-        "saneados_winansi": 816,
+        "saneados_winansi": 813,
         "ficheros": {
-          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/guia-pasteleria-obrador.md",
-          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/guia-pasteleria-obrador.docx",
-          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/guia-pasteleria-obrador.pdf"
+          "md": "scripts/productos-digitales/guia-pasteleria/build/docs/guia-pasteleria-obrador.md",
+          "docx": "scripts/productos-digitales/guia-pasteleria/build/docs/guia-pasteleria-obrador.docx",
+          "pdf": "scripts/productos-digitales/guia-pasteleria/build/docs/guia-pasteleria-obrador.pdf"
         }
       },
       "capitulos": [
@@ -118,7 +118,7 @@
             ],
             [
               "Inversión total de esa misma variante, con el fondo de maniobra dentro",
-              "228.049 €",
+              "227.916 €",
               "calculadora-capex-pasteleria.xlsx!Variante del Formato!J15"
             ],
             [
@@ -177,22 +177,22 @@
             ],
             [
               "Ventas del mes más alto del año, enero",
-              "31.683 €",
+              "35.979 €",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!C6"
             ],
             [
               "Ventas del mes más bajo del año, agosto",
-              "18.258 €",
+              "17.452 €",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!C13"
             ],
             [
               "Peso de enero sobre las ventas del año",
-              "9,8 %",
+              "11,2 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D6"
             ],
             [
               "Peso de agosto sobre las ventas del año",
-              "5,7 %",
+              "5,4 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D13"
             ],
             [
@@ -289,7 +289,7 @@
           "cifras": [
             [
               "CAPEX total sin IVA del caso modelado",
-              "228.049 €",
+              "227.916 €",
               "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!K47"
             ],
             [
@@ -299,7 +299,7 @@
             ],
             [
               "Desembolso total con IVA",
-              "261.960 €",
+              "261.826 €",
               "calculadora-capex-pasteleria.xlsx!CAPEX por Bloque!M47"
             ],
             [
@@ -319,8 +319,8 @@
             ],
             [
               "Fondo de maniobra calculado",
-              "15.562 €",
-              "calculadora-capex-pasteleria.xlsx!Parámetros!B18"
+              "62.115 €",
+              "calculadora-capex-pasteleria.xlsx!Parámetros!B19"
             ],
             [
               "Meses de gastos fijos que cubre ese fondo",
@@ -576,8 +576,8 @@
             ],
             [
               "Plazo crítico de entrega, en semanas",
-              "En línea con el CAPEX del libro 2",
-              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52"
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I53"
             ],
             [
               "Semanas que faltan hasta la apertura prevista",
@@ -983,27 +983,27 @@
           "cifras": [
             [
               "Peso de las seis campañas sobre las ventas del año",
-              "13,2 %",
+              "7,0 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D30"
             ],
             [
               "Facturación de las seis campañas sin IVA",
-              "42.371 €",
+              "22.479 €",
               "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!N13"
             ],
             [
               "Facturación incremental de las seis campañas",
-              "41.163 €",
+              "21.270 €",
               "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O13"
             ],
             [
               "Peso de la campaña de Reyes sobre las ventas del año",
-              "9,8 %",
+              "3,7 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D24"
             ],
             [
               "Cuántas veces factura un día de Reyes lo que un día normal",
-              "5,9",
+              "2,2",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!I24"
             ],
             [
@@ -1028,7 +1028,7 @@
             ],
             [
               "Tesorería inmovilizada en materia de campaña",
-              "7.281,67 €",
+              "3.856,99 €",
               "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K13"
             ]
           ]
@@ -1161,7 +1161,7 @@
         {
           "n": 18,
           "titulo": "El Plan Financiero y el Dinero Hasta el Punto de Equilibrio",
-          "tablas": 2,
+          "tablas": 3,
           "sector_usado": [
             "PS-48",
             "PS-58",
@@ -1190,7 +1190,7 @@
             ],
             [
               "Resultado neto del año uno",
-              "5.447 €",
+              "4.469 €",
               "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B43"
             ],
             [
@@ -1265,7 +1265,7 @@
             ],
             [
               "Cobertura del servicio de la deuda más ajustada del cuadro",
-              "3,37",
+              "3,24",
               "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B123"
             ],
             [
@@ -1338,13 +1338,13 @@
             ],
             [
               "Plazo crítico de entrega del equipamiento, en semanas",
-              "En línea con el CAPEX del libro 2",
-              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52"
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I53"
             ],
             [
               "Margen de ese plazo crítico hasta la apertura, en semanas",
-              "Cámara de fermentación controlada (roll-in)",
-              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54"
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I55"
             ]
           ]
         },
@@ -1412,11 +1412,11 @@
     },
     "business-plan-modelo-pasteleria": {
       "gates": {
-        "paginas_pdf": 19,
+        "paginas_pdf": 18,
         "paginas_prometidas": 8,
-        "palabras_md": 8002,
-        "palabras_pdf": 7707,
-        "palabras_docx": 7355,
+        "palabras_md": 8059,
+        "palabras_pdf": 7837,
+        "palabras_docx": 7429,
         "palabras_objetivo": 3500,
         "capitulos": 6,
         "tablas_md": 9,
@@ -1440,12 +1440,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 6797,
+        "palabras_reales_pdf": 6874,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 7403,
+        "palabras_pdf_cuerpo": 7477,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "Business Plan Modelo de una Pastelería"
@@ -1454,9 +1454,9 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Business Plan Modelo de una Pastelería",
-          "created": "2026-09-10 06:07:46"
+          "created": "2026-09-12 11:54:00"
         },
-        "paridad_palabras_pct": 0.65,
+        "paridad_palabras_pct": 0.64,
         "ok": {
           "paginas": true,
           "palabras_pdf": true,
@@ -1483,11 +1483,11 @@
           "sin_asteriscos_impresos": true
         },
         "verde": true,
-        "saneados_winansi": 263,
+        "saneados_winansi": 258,
         "ficheros": {
-          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/business-plan-modelo-pasteleria.md",
-          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/business-plan-modelo-pasteleria.docx",
-          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/business-plan-modelo-pasteleria.pdf"
+          "md": "scripts/productos-digitales/guia-pasteleria/build/docs/business-plan-modelo-pasteleria.md",
+          "docx": "scripts/productos-digitales/guia-pasteleria/build/docs/business-plan-modelo-pasteleria.docx",
+          "pdf": "scripts/productos-digitales/guia-pasteleria/build/docs/business-plan-modelo-pasteleria.pdf"
         }
       },
       "capitulos": [
@@ -1584,17 +1584,17 @@
             ],
             [
               "Peso del mes más alto sobre el año",
-              "9,8 %",
+              "11,2 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D6"
             ],
             [
               "Peso del mes más bajo sobre el año",
-              "5,7 %",
+              "5,4 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D13"
             ],
             [
               "Peso de las seis campañas sobre el año",
-              "13,2 %",
+              "7,0 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D30"
             ]
           ]
@@ -1732,7 +1732,7 @@
             ],
             [
               "Resultado neto del año uno",
-              "5.447 €",
+              "4.469 €",
               "plan-financiero-3-anos-pasteleria.xlsx!PyG 3 Años!B43"
             ],
             [
@@ -1757,7 +1757,7 @@
             ],
             [
               "Saldo mínimo de caja del año uno",
-              "59.622 €",
+              "61.037 €",
               "plan-financiero-3-anos-pasteleria.xlsx!Tesorería 12 meses!B24"
             ],
             [
@@ -1772,7 +1772,7 @@
             ],
             [
               "Cobertura del servicio de la deuda más ajustada",
-              "3,37",
+              "3,24",
               "plan-financiero-3-anos-pasteleria.xlsx!Financiación!B123"
             ]
           ]
@@ -1814,8 +1814,8 @@
             ],
             [
               "Margen del plazo crítico de entrega, en semanas",
-              "Cámara de fermentación controlada (roll-in)",
-              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54"
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I55"
             ]
           ]
         }
@@ -1823,11 +1823,11 @@
     },
     "BONUS-12-decisiones-de-apertura": {
       "gates": {
-        "paginas_pdf": 38,
+        "paginas_pdf": 37,
         "paginas_prometidas": 25,
-        "palabras_md": 16625,
-        "palabras_pdf": 16594,
-        "palabras_docx": 15932,
+        "palabras_md": 16744,
+        "palabras_pdf": 16851,
+        "palabras_docx": 16056,
         "palabras_objetivo": 10000,
         "capitulos": 12,
         "tablas_md": 12,
@@ -1851,12 +1851,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 15668,
+        "palabras_reales_pdf": 15839,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 16024,
+        "palabras_pdf_cuerpo": 16148,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "12 Decisiones de Apertura Resueltas"
@@ -1865,7 +1865,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "12 Decisiones de Apertura Resueltas",
-          "created": "2026-09-10 06:07:49"
+          "created": "2026-09-12 11:54:03"
         },
         "paridad_palabras_pct": 0.57,
         "ok": {
@@ -1896,9 +1896,9 @@
         "verde": true,
         "saneados_winansi": 78,
         "ficheros": {
-          "md": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/BONUS-12-decisiones-de-apertura.md",
-          "docx": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/BONUS-12-decisiones-de-apertura.docx",
-          "pdf": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/21c749d4-019e-47fd-bd62-733839f97842/scratchpad/docs/guia-pasteleria-obrador/BONUS-12-decisiones-de-apertura.pdf"
+          "md": "scripts/productos-digitales/guia-pasteleria/build/docs/BONUS-12-decisiones-de-apertura.md",
+          "docx": "scripts/productos-digitales/guia-pasteleria/build/docs/BONUS-12-decisiones-de-apertura.docx",
+          "pdf": "scripts/productos-digitales/guia-pasteleria/build/docs/BONUS-12-decisiones-de-apertura.pdf"
         }
       },
       "capitulos": [
@@ -2103,7 +2103,7 @@
             ],
             [
               "Facturación incremental de la campaña sin IVA",
-              "31.500 €",
+              "12.000 €",
               "estacionalidad-y-picos.xlsx!Calendario de 6 Picos!O6"
             ],
             [
@@ -2113,7 +2113,7 @@
             ],
             [
               "Tesorería inmovilizada en la campaña",
-              "5.457,48 €",
+              "2.079,04 €",
               "estacionalidad-y-picos.xlsx!Refuerzo y Tesorería!K6"
             ]
           ]
@@ -2282,17 +2282,17 @@
             ],
             [
               "Plazo crítico de entrega del equipamiento, en semanas",
-              "En línea con el CAPEX del libro 2",
-              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I52"
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I53"
             ],
             [
               "Margen de ese plazo hasta la apertura, en semanas",
-              "Cámara de fermentación controlada (roll-in)",
-              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I54"
+              "9",
+              "checklist-equipamiento-y-proveedores.xlsx!Equipamiento!I55"
             ],
             [
               "Peso de la campaña grande sobre las ventas del año",
-              "9,8 %",
+              "3,7 %",
               "estacionalidad-y-picos.xlsx!Peso sobre el Año!D24"
             ]
           ]

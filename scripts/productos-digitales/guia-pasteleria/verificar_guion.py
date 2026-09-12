@@ -97,6 +97,10 @@ RX_DIGITO = re.compile(r'\d')
 RX_FECHA_CRUDA = re.compile(r'\d{4}-\d{2}-\d{2}|\d{2}:\d{2}:\d{2}')
 RAYA = '—'          # por escape: en un heredoc degeneraría en «-»
 
+#: Formatos de `documentos.FORMATOS` que EXIGEN un número en la celda. `txt`
+#: queda fuera a propósito: es el único que declara que va a imprimir texto.
+FMT_NUMERICOS = tuple(k for k in d.FORMATOS if k != 'txt')
+
 n_cifras = n_tablas = n_filas = n_puntos = 0
 
 
@@ -194,6 +198,16 @@ def revisa(caps, etiqueta, gates, principal=False):
             if isinstance(v, (dt.datetime, dt.date)):
                 falla(f'{cid}: {ref} devuelve una FECHA y `formatear` no tiene '
                       f'formato de fecha: se imprimiría «{v}»')
+                continue
+            # A2 (2026-09-10): un formato NUMÉRICO sobre una celda de TEXTO
+            # no rompía nada -`formatear` cae en `str(v)`- y el redactor
+            # recibía «Plazo crítico de entrega, en semanas: En línea con el
+            # CAPEX del libro 2». De ahí salió la única cifra inventada del
+            # pack («veinte semanas»). El tipo se comprueba ahora.
+            if fmt in FMT_NUMERICOS and not isinstance(v, (int, float)):
+                falla(f'{cid}: TIPO INCOMPATIBLE en {ref} («{etq}»): el '
+                      f'formato «{fmt}» es numérico y la celda devuelve '
+                      f'{type(v).__name__} → se imprimiría «{v}»')
                 continue
             txt = d.formatear(v, fmt)
             if not str(txt).strip():

@@ -1,20 +1,20 @@
 ### El contexto de la decisión
 
-El envío a domicilio parece la manera barata de ampliar mercado sin abrir otra tienda: no hay traspaso, no hay otro alquiler, no hay otra plantilla. En pastelería (repostería) esa promesa choca con la física antes que con la ley. La pregunta correcta no es si puedes vender online —puedes, y lo puedes hacer sin pedir permiso especial por vender a distancia—, sino qué referencia concreta de tu carta llega en condiciones al domicilio del cliente. No es la misma decisión para una galleta que para una tarta (pastel o torta) rellena de crema, y tratar el envío como un canal único, sin mirar producto a producto, es el error que arrastra el resto de decisiones de este capítulo.
+El envío a domicilio parece la manera barata de ampliar mercado sin abrir otra tienda: no hay traspaso, no hay otro alquiler, no hay otra plantilla. En pastelería esa promesa choca con la física antes que con la ley. La pregunta correcta no es si puedes vender online —puedes, y lo puedes hacer sin pedir permiso especial por vender a distancia—, sino qué referencia concreta de tu carta llega en condiciones al domicilio del cliente. No es la misma decisión para una galleta que para una tarta rellena de crema, y tratar el envío como un canal único, sin mirar producto a producto, es el error que arrastra el resto de decisiones de este capítulo.
 
 ### Las opciones sobre la mesa
 
-Hay tres caminos, y conviene mirarlos sin descartar ninguno antes de tiempo:
+Hay tres caminos, y hay que mirarlos sin descartar ninguno antes de tiempo:
 
 - Opción A: enviar sólo producto estable a temperatura ambiente —bollería seca, galletas, algunas tartas sin relleno perecedero—, con transporte ordinario.
-- Opción B: enviar también producto refrigerado, con transporte de temperatura controlada desde el obrador (taller o laboratorio) hasta la puerta del cliente.
-- Opción C: no enviar nada y usar la web sólo para que el cliente recoja en tienda el encargo (pedido) que ha hecho online.
+- Opción B: enviar también producto refrigerado, con transporte de temperatura controlada desde el obrador hasta la puerta del cliente.
+- Opción C: no enviar nada y usar la web sólo para que el cliente recoja en tienda el encargo que ha hecho online.
 
 Lo que cambia entre las tres no es sólo el catálogo que puedes ofrecer: cambia el coste de servir ese canal, cambia el margen de contribución que te queda una vez descontado ese coste, y cambia el riesgo de reclamación si algo llega tibio, fundido o fuera de plazo. La opción A abarata la logística pero recorta la carta que puedes vender por internet a lo que aguanta el trayecto sin cadena de frío. La opción B abre la carta entera al envío, pero mete un proveedor de transporte refrigerado en la cuenta de resultados. La opción C elimina el riesgo de transporte por completo, a cambio de renunciar a la venta a quien no puede pasar por tienda.
 
 ### El criterio con el que se decide
 
-La regla que separa lo que se puede enviar de lo que no es sencilla de enunciar y fácil de saltarse: viaja lo que aguanta su temperatura de conservación durante todo el trayecto, no lo que aguanta la caja. Una caja bien aislada retrasa la subida de temperatura, no la impide, y el reloj no se para por el packaging. Y hay un segundo matiz que se olvida con frecuencia: el plazo legal del producto elaborado por la vía del huevo se cuenta desde el momento de la elaboración, no desde el momento del envío. Si la pieza lleva ya parte de su vida útil consumida en vitrina (exhibidor) o en cámara antes de meterla en la caja, ese tiempo cuenta igual.
+La regla que separa lo que se puede enviar de lo que no es sencilla de enunciar y fácil de saltarse: viaja lo que aguanta su temperatura de conservación durante todo el trayecto, no lo que aguanta la caja. Una caja bien aislada retrasa la subida de temperatura, no la impide, y el reloj no se para por el packaging. Y hay un segundo matiz que se olvida con frecuencia: el plazo legal del producto elaborado por la vía del huevo se cuenta desde el momento de la elaboración, no desde el momento del envío. Si la pieza lleva ya parte de su vida útil consumida en vitrina o en cámara antes de meterla en la caja, ese tiempo cuenta igual.
 
 El segundo criterio es económico, y va después del técnico porque de nada sirve calcular un margen sobre una pieza que no puede viajar. El coste de servir del canal de envío se come una parte del margen de contribución antes de que veas un euro de beneficio, así que hay que verlo antes de fijar el precio de envío al cliente, no después. Fijar un precio de envío atractivo sin haber mirado antes ese coste de servir es la manera más rápida de vender un pedido que no compensa.
 
@@ -22,7 +22,7 @@ La recomendación, con su condición para cambiar: si tu carta tiene suficiente 
 
 ### La celda que lo resuelve
 
-La hoja de decisión de huevo y temperatura del libro de la carta —la calculadora de escandallo (costeo) y apertura— clasifica las treinta referencias de la carta modelo entre vitrina refrigerada y vitrina de ambiente: quince van a vitrina refrigerada y quince a vitrina de ambiente, y de esas, quince referencias quedan con un plazo legal de veinticuatro horas. Esa misma hoja da también la temperatura que manda para el producto relleno: 4 grados. Son las quince referencias de vitrina refrigerada las que hay que mirar una a una antes de decidir si entran en el envío, porque son las que menos margen de trayecto tienen.
+La hoja de decisión de huevo y temperatura del libro de la carta —la calculadora de escandallo y apertura— clasifica las treinta referencias de la carta modelo entre vitrina refrigerada y vitrina de ambiente: quince van a vitrina refrigerada y quince a vitrina de ambiente, y son esas quince refrigeradas las que quedan con un plazo legal de veinticuatro horas. Esa misma hoja da también la temperatura que manda para el producto relleno: 4 grados. Son las quince referencias de vitrina refrigerada las que hay que mirar una a una antes de decidir si entran en el envío, porque son las que menos margen de trayecto tienen.
 
 La hoja de canales del plan financiero, por su parte, da el margen de contribución del canal de envío y online ya con su coste de servir descontado: 51 por ciento de margen de contribución, con un 9 por ciento de coste de servir dentro de esa cuenta. Esa es la cifra que hay que mirar antes de poner un precio de envío por debajo del coste real de servir el pedido.
 
