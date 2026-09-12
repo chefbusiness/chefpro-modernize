@@ -146,6 +146,15 @@ Coste ≈ 14 M tokens de subagentes. **Correos:** lanzamiento de la guía **14-o
 (punto 0) y documentos de la guía gastronómica (handoff B §20); `nombre-gate.py` en 43 fichas antiguas y «9 checklists» en 5
 verticales quedan como deuda menor.
 
+### ✅ 2026-09-12 (sesión PAR, Claude Code en el Mac) — Pastelería **1.0.1 LIVE y verificada** + research de «Cómo Montar una Chocolatería» CERRADO (producto nuevo nº 5, el último de la Hoja 4) — PENDIENTE DEL OK DE JOHN
+
+El fixer del 10-sep estaba al 95 % (no «a mitad»): verificación adversarial (3 lentes + regresiones + 2º voto, opus, 1,55 M) → 7 residuos
+arreglados a mano → v1.0.1 en `0ba5158`, gate post-pago LIVE 13/13. Research de Chocolatería con el mismo workflow de 6 lentes + síntesis +
+refutación (2,35 M): «CORREGIR ANTES» 8/14/6; propuesta 65 €, slug `guia-chocolateria-obrador`, 20 caps + anexo, 9 xlsx, 2 bonus, alcance
+bombonería con obrador (taza/churros como epígrafe, bean-to-bar como variante), presupuesto ≈14,7-14,9 M → DOS sesiones. Decisiones D1-D18 en
+`SESSION_HANDOFF_2026-09-12-chocolateria.md` §2.4. **Correo:** slot **24-oct** (programable desde el 24-sep). Hallazgo colateral a corregir con
+el 49: seis FAQ de `use-cases-content.*.consultor.ts` (7 idiomas) publican inversiones inventadas, dos contra guías en venta.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 0. 🔴 **Seguridad alimentaria en producto VENDIDO (cazado por el research del Manual del Chef Ejecutivo, 6-sep; John: «déjalo
