@@ -171,3 +171,9 @@ product-prices, functions, zona app, hub sin «Próximamente» vacío, blog, use
 **Presupuesto de subagentes de la sesión de las 16:05:** ≈ 8,3 M (SPEC 1,75 + cierre 0,94 + datos 0,55 + xlsx 3,06 + guion 0,69 + verificación 0,27 + fixer 2 0,40 + fundamentos de la mañana 0,6). Producto acumulado ≈ **12,2 M** antes de B2+C (la SPEC estimaba 5,75 M para A2+B1: el exceso son las cinco rondas de la SPEC y la doble verificación de los xlsx).
 
 Cierre: `bird` y `mediaanalysisd` reanudados, vigilante y monitor parados. CPU 37-58 °C durante toda la sesión; ningún incidente térmico desde las 16:05.
+
+## 7. Cierre de sesión (23:25, sesión Claude Code) — se retoma el lunes 14-sep (o el 13)
+
+- Repo: árbol limpio, todo pusheado (último commit `3b3781c` + este). Memoria actualizada: `project_guia-chocolateria-research-2026-09-12` (estado y cómo retomar), `feedback_productos-futuros-en-vps-y-tope-2-rondas` (decisiones de John de hoy), `feedback_regla-termica-cpu-65-grados` (panic de las 16:02 + cuota), `feedback_gates-que-no-fallan…` (caso 6: cuadre contra su propio default), `reference_vigilante-termico-workflows` (muere a la hora).
+- **Cómo retomar B2+C:** leer §6 de este handoff y la SPEC §2.1/§4/§8; arrancar por `guias-v2_0/dump_prompts.py` sobre `guion_guia_chocolateria_obrador.py` (45 bloques) con el patrón de Pastelería (`SESSION_HANDOFF_2026-09-10-guia-pasteleria.md` §1). Antes: `istats`, vigilante EN BUCLE, `git pull`, `python3 guia-chocolateria/verificar_guion.py` y `gate_libros.py` (deben seguir en verde).
+- **Recordatorios de fechas para John:** broadcast de Pastelería (14-oct) programable desde el **14-sep**; correo del Kit de Tareas Pastelería 2.1 (19-oct) desde el **19-sep**; Chocolatería 24-oct desde el 24-sep (tras `GET /broadcasts`).
