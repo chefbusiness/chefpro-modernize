@@ -458,10 +458,5 @@
   "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N18",
   "valor": 11565.56783546252,
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "campanas-y-valle-del-ano.xlsx!Instrucciones!A1",
-  "valor": "Libro 6 del pack. Frontera K2: el BONUS-02-calendario-anual-tareas.xlsx del Kit de Tareas Chocolatería (12 €) pone las fechas y el qué; este libro pone los euros y el «si aguantas». Las doce filas del calendario bajan como copia declarada y sus acciones y productos se citan literales. D35: siete meses «Alta», cuatro «Media» y UNO «Baja», con las COMUNIONES (abril-junio) como campaña propia. D36: el valle es AGOSTO -un mes de doce- y lo que para es el OBRADOR, no la caja: la tienda abre para el turista y los envíos se paran de junio a septiembre, que es canal online. Cruce 6 <- 1 (D32): la capacidad diaria es una celda VERDE que trae la cifra de capacidad-obrador-y-clima.xlsx!Cuello de Botella, con valor por defecto declarado y fila de CUADRE; no hay ni una fórmula entre ficheros. Todo se cuenta en BOMBONES DE OBRADOR: una caja de 35 bombones es una venta y treinta y seis bombones de obrador.",
-  "tipo": "nota"
  }
 }

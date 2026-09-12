@@ -42,6 +42,12 @@ if AQUI not in sys.path:
 
 import motor                                                   # noqa: E402
 
+#: Directorio de salida de los 9 libros. Overridable con `GUIA_BUILD_DIR`
+#: (fixer de segunda pasada, 2026-09-12: probar los generadores en un
+#: directorio temporal ANTES de escribir sobre `build/`, que otro agente está
+#: leyendo para el guion). Sin la variable, el comportamiento no cambia.
+BUILD_DIR = os.environ.get('GUIA_BUILD_DIR') or os.path.join(AQUI, 'build')
+
 PID = 'guia-chocolateria-obrador'
 PRODUCTO = 'Cómo Montar una Chocolatería'
 SUBTITULO = 'AI Chef Pro · aichef.pro — ' + PRODUCTO
@@ -87,11 +93,18 @@ ETIQUETA_LISTAS = 'Listas de validación (no las borres: las usan los desplegabl
 #: la primera palabra del título o van justo después de dos puntos
 #: (refutación 2026-09-12, hallazgo A9: faltaban «por», «vs», «que» y «se» —
 #: de ahí «CAPEX Por Bloque», «Capacidad Vs Demanda» y «... Que Viene» mal—).
+#: Verificación 2026-09-12 (segunda pasada): seguía faltando «sobre», de ahí
+#: `campanas-y-valle-del-ano.xlsx!Peso sobre el Año!A1` = «Peso Sobre el
+#: Año» -la propia PESTAÑA ya lo llevaba bien-. Se añaden también «tras»,
+#: «según» y «desde», del mismo grupo gramatical (preposiciones cortas), y
+#: la ampliación se simuló contra los 55 títulos de hoja del pack ANTES de
+#: aplicarse: sólo cambia «Peso sobre el Año», ningún otro título se mueve.
 #: OJO: «qué» interrogativo (con tilde) NO entra aquí a propósito: se queda
 #: en mayúscula («Qué Fecha te Corre»).
 _MENORES_TC = {'y', 'e', 'o', 'u', 'de', 'del', 'la', 'el', 'los', 'las',
               'en', 'a', 'al', 'para', 'con', 'su', 'sus', 'un', 'una',
-              'por', 'vs', 'que', 'se', 'te'}
+              'por', 'vs', 'que', 'se', 'te', 'sobre', 'tras', 'según',
+              'desde'}
 
 
 def titulo_hoja(texto):

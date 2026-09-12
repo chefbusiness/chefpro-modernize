@@ -143,7 +143,7 @@ def cerrar(wb, nombre, titulo, mapa_celdas, notas_mapa=None):
         motor.retirar_verde_de_calculadas(ws)
         motor.proteger(ws)
 
-    destino = os.path.join(AQUI, 'build')
+    destino = C.BUILD_DIR
     os.makedirs(destino, exist_ok=True)
     ruta = os.path.join(destino, nombre + '.xlsx')
     wb.save(ruta)
@@ -259,10 +259,12 @@ def cerrar(wb, nombre, titulo, mapa_celdas, notas_mapa=None):
     if len(mapa) < 25:
         raise SystemExit('El mapa de %s tiene %d etiquetas: el mínimo son 25'
                          % (nombre, len(mapa)))
-    if notas_mapa:
-        mapa['_notas'] = {'ref': '%s.xlsx!%s!A1'
-                                 % (nombre, wb.worksheets[0].title),
-                          'valor': notas_mapa, 'tipo': 'nota'}
+    # A8 (refutación 2026-09-12): antes se publicaba aquí una entrada
+    # `_notas` con `tipo: 'nota'`, que no es uno de los tres tipos válidos
+    # del mapa (`entrada|salida|parametro`) y cuyo `valor` no era el de
+    # ninguna celda. `notas_mapa` sigue entrando como parámetro (lo pasan
+    # los 7 generadores que lo usaban) pero ya no se escribe en el JSON: las
+    # notas legales y de sector ya viajan contadas en el `return` de abajo.
     with open(os.path.join(destino, 'mapa-' + nombre + '.json'), 'w',
               encoding='utf-8') as fh:
         json.dump(mapa, fh, ensure_ascii=False, indent=1)

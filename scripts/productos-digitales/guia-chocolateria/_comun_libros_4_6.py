@@ -112,7 +112,15 @@ def apunte(ws, coord, texto):
 
 
 def encabezados(ws, fila, cols, alto=42):
-    """`cols` = [(letra, texto, ancho|None), ...]."""
+    """`cols` = [(letra, texto, ancho|None), ...].
+
+    Congela los paneles justo debajo de esta fila (refutación 2026-09-12,
+    hallazgo A10: los libros 4 y 6 -carta y escandallo, campañas y valle del
+    año- estaban en 0 % porque su cabecera de tabla vive aquí y no en
+    `_comun_chocolateria.cabecera()`, que sí lo hacía desde B12). Una tabla
+    posterior en la misma hoja pisa este valor sin problema, igual que en la
+    hermana de `_comun_chocolateria`.
+    """
     for letra, texto, ancho in cols:
         cel = ws[letra + str(fila)]
         cel.value = texto
@@ -123,6 +131,7 @@ def encabezados(ws, fila, cols, alto=42):
         if ancho is not None:
             ws.column_dimensions[letra].width = ancho
     ws.row_dimensions[fila].height = alto
+    ws.freeze_panes = 'A%d' % (fila + 1)
 
 
 def crema(cel):
@@ -282,7 +291,7 @@ def cerrar(wb, nombre, titulo, mapa_celdas, notas_mapa=None):
         motor.retirar_verde_de_calculadas(ws)
         motor.proteger(ws)
 
-    destino = os.path.join(AQUI, 'build')
+    destino = CC.BUILD_DIR
     if not os.path.isdir(destino):
         os.makedirs(destino)
     ruta = os.path.join(destino, nombre + '.xlsx')
@@ -394,10 +403,11 @@ def cerrar(wb, nombre, titulo, mapa_celdas, notas_mapa=None):
             v = v.isoformat()[:10]
         mapa[etiqueta] = {'ref': '%s.xlsx!%s!%s' % (nombre, hoja, coord),
                           'valor': v, 'tipo': tipo}
-    if notas_mapa:
-        mapa['_notas'] = {'ref': '%s.xlsx!%s!A1'
-                                 % (nombre, wb.worksheets[0].title),
-                          'valor': notas_mapa, 'tipo': 'nota'}
+    # A8 (refutación 2026-09-12): antes se publicaba aquí una entrada
+    # `_notas` con `tipo: 'nota'`, que no es uno de los tres tipos válidos
+    # del mapa (`entrada|salida|parametro`) y cuyo `valor` no era el de
+    # ninguna celda. `notas_mapa` sigue entrando como parámetro pero ya no
+    # se escribe en el JSON.
     with open(os.path.join(destino, 'mapa-' + nombre + '.json'), 'w') as fh:
         fh.write(json.dumps(mapa, ensure_ascii=False, indent=1))
 

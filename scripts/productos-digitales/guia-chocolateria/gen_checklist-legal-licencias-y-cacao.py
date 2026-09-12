@@ -177,7 +177,7 @@ def nota_reutilizada(ws, coord, pid):
 # --------------------------------------------------------------------------
 # Cruce 8 <- 9: el plazo de entrega crítico lo publica el libro 9 en su mapa.
 # --------------------------------------------------------------------------
-MAPA9 = os.path.join(AQUI, 'build',
+MAPA9 = os.path.join(C.BUILD_DIR,
                      'mapa-checklist-equipamiento-y-proveedores-cacao.json')
 CRUCE9_ETIQUETA = 'PLAZO CRÍTICO DE ENTREGA (semanas) — viaja al libro 8'
 CRUCE9_REF = ('checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento')

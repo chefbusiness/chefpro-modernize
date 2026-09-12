@@ -373,5 +373,10 @@
   "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B37",
   "tipo": "salida",
   "valor": "Sin alerta"
+ },
+ "Inmovilizado amortizable": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Resumen!B23",
+  "tipo": "salida",
+  "valor": 83614.99
  }
 }

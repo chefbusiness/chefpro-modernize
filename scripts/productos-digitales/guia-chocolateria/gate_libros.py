@@ -49,7 +49,10 @@ import sys
 import openpyxl
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
-BUILD = os.path.join(AQUI, 'build')
+#: Overridable con `GUIA_BUILD_DIR` (fixer de segunda pasada, 2026-09-12):
+#: permite auditar un build de prueba antes de tocar `build/`, que otro
+#: agente puede estar leyendo para el guion.
+BUILD = os.environ.get('GUIA_BUILD_DIR') or os.path.join(AQUI, 'build')
 
 LIBROS = (
     'capacidad-obrador-y-clima',

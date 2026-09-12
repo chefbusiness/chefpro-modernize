@@ -293,10 +293,5 @@
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N40",
   "valor": -0.9517361841237124,
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Instrucciones!A1",
-  "valor": "El precio de la cobertura vive SÓLO en este libro (regla «un concepto, una fuente», §3.3). La celda que copian el libro 4 (cruce 4 <- 3) y el libro 7 (cruce 7 <- 3) es Coste de Cobertura!G7, la de BASE IMPONIBLE: `CHS-28a` publica 25,02 €/kg CON IVA y un escandallo hecho con esa base sale un 9 % alto (A-2). Los dos libros receptores la traen por celda verde con valor por defecto declarado más fila de CUADRE (D32); aquí no hay ni una fórmula que nombre otro fichero. El porcentaje de cobertura sobre el peso de la pieza de la hoja «Coste de Cobertura» NO es el 25 % legal del ap. 1.13 del RD 1055/2003: aquél lo calcula el libro 4 con el chocolate de la cáscara sobre el peso total (`CHN-10`).",
-  "tipo": "nota"
  }
 }

@@ -618,10 +618,5 @@
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!F40",
   "valor": "Ganas MENOS que vendiendo sueltos: es un descuento, decide si lo quieres",
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Instrucciones!A1",
-  "valor": "Libro 4 del pack. Cruce 4 <- 3 (D32): el precio de cada cobertura es una celda VERDE de «Parámetros» que trae la cifra de sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura por Referencia, SIEMPRE la de BASE IMPONIBLE y nunca la de base con IVA, con su valor por defecto declarado y su fila de CUADRE. No hay ni una fórmula entre ficheros. El 25 % del bombón se calcula SOBRE EL PESO TOTAL con el relleno dentro (CHN-10, aps. 1.10 y 1.13): invertir la base da un resultado más favorable que el legal. La merma va en DOS tasas (D40): la recuperable vuelve a la cuba y no encarece la materia; la no recuperable se reparte entre las piezas buenas. Frontera con el catálogo (D38): el Kit de Escandallos tiene hoja de Tarta Chocolate -costea una elaboración por unidad-; lo que no existe es el escandallo del obrador de bombonería por molde y tanda, con merma de templado y la caja como unidad de venta.",
-  "tipo": "nota"
  }
 }

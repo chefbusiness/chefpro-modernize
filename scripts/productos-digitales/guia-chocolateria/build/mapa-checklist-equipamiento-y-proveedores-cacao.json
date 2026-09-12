@@ -298,10 +298,5 @@
   "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Contador!B32",
   "valor": "Todavía te falta equipo por instalar: mira la columna del plazo crítico antes de fijar la fecha",
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Instrucciones!A1",
-  "valor": "Libro 9 de la guía. El plazo crítico de entrega (hoja «Equipamiento») es la celda que viaja al cronograma del libro 8 por CELDA VERDE con fila de cuadre: cero fórmulas que nombren otro fichero. La desviación contra el CAPEX llega en sentido contrario, desde el libro 2, con el mismo mecanismo. El número de referencia de la declaración de diligencia debida SÓLO se le pide al proveedor que es OPERADOR (art. 5.3.a del EUDR, `CHN-24`): está prohibido escribir «pide a todos tus proveedores el número de su DDS». Y está prohibido escribir «basta con registrar a tus proveedores»: el art. 5.3.b) obliga además a registrar a los operadores posteriores y comerciantes a los que TÚ suministras, y a conservarlo cinco años. Los precios sin id `CHS-*` son supuestos declarados y los plazos de entrega lo son todos: ningún distribuidor los publica.",
-  "tipo": "nota"
  }
 }

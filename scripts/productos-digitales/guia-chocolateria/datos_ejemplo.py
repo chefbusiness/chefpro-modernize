@@ -3619,8 +3619,11 @@ def _primer_campo(fila, campos):
 #: texto libre dentro de `nota` (o `dato`/`cita_literal`), normalmente con la
 #: forma «Art. 5.3.a)» o «apartado 1.13». Se extrae la FRASE que ya lleva ese
 #: token -no se inventa ninguna- y se aniade a la norma citada.
-_TOKENS_ARTICULO = ('art.', 'artículo', 'articulo', 'ap.', 'aps.', 'apartado',
-                    'anexo', 'epígrafe', 'epigrafe')
+#: Segunda verificacion (mismo dia): faltaba el PLURAL «arts.» (`CHN-31`,
+#: `CHN-42`, `CHN-46`, `CHN-61`, `CHN-67` citaban «arts. 9.1, 9.2 y 9.3» y el
+#: singular «art.» no es substring de «arts.»).
+_TOKENS_ARTICULO = ('art.', 'arts.', 'artículo', 'articulo', 'ap.', 'aps.',
+                    'apartado', 'anexo', 'epígrafe', 'epigrafe')
 #: Placeholder de un solo carácter (fuera de WinAnsi a propósito: se usa y se
 #: quita dentro de esta misma función, nunca llega a una celda) para proteger
 #: el punto de «Art.»/«ap.»/«aps.» al dividir en frases, y que no se lea como
@@ -3634,22 +3637,49 @@ def _tiene_cita_articulo(texto):
     return any(tok in t for tok in _TOKENS_ARTICULO)
 
 
+def _ventana_articulo(frase):
+    """Recorta `frase` a ~140 caracteres CENTRADOS en el token que la hizo
+    calificar (segunda verificacion 2026-09-12, hallazgo B8: la primera
+    version cortaba desde el principio con `frase[:137]`, y en frases largas
+    eso se comia el propio «ap. 6.g»/«Anexo I» que habia justificado elegir
+    esa frase -el texto compuesto pasaba a `nota_legal()` pero ya NO llevaba
+    ningun token, y `gate_legal()` lo detectaba como sin articulo otra vez)."""
+    if len(frase) <= 140:
+        return frase
+    tl = frase.lower()
+    posiciones = [tl.find(tok) for tok in _TOKENS_ARTICULO if tok in tl]
+    pos = min(p for p in posiciones if p >= 0)
+    ini = max(0, pos - 60)
+    fin = min(len(frase), pos + 80)
+    recorte = frase[ini:fin].strip()
+    return ('...' if ini > 0 else '') + recorte + ('...' if fin < len(frase) else '')
+
+
 def _extraer_cita_articulo(fila):
-    """Frase de `nota`, `dato` o `cita_literal` que YA contiene un token de
-    articulo/apartado/Anexo/Epigrafe, tal cual la escribio la verificacion
-    legal (no se reformula ni se inventa numero). Protege «Art.»/«ap.» antes
-    de partir en frases para no cortar justo ahi (si no, «Art. 5.3.a)» se
-    trocea en «Art.» + «5.3.a)» y el primer trozo no dice nada)."""
-    for campo in ('nota', 'dato', 'cita_literal'):
+    """Frase de `nota`, `dato`, `cita_literal` o `tema` que YA contiene un
+    token de articulo/apartado/Anexo/Epigrafe, tal cual la escribio la
+    verificacion legal (no se reformula ni se inventa numero). Protege
+    «Art.»/«ap.» antes de partir en frases para no cortar justo ahi (si no,
+    «Art. 5.3.a)» se trocea en «Art.» + «5.3.a)» y el primer trozo no dice
+    nada). `tema` entra el ULTIMO -es la etiqueta corta del hallazgo, no el
+    texto legal en si-, y solo hace falta cuando ninguno de los otros tres
+    campos trae el dato (`CHN-44`: «Lista estatal del obrador en vivienda
+    (art. 13.8)» solo esta en `tema`).
+
+    Verifica con `_tiene_cita_articulo()` la frase YA recortada -no solo la
+    original- antes de devolverla: `_ventana_articulo()` deberia preservar
+    siempre el token, pero si algun caso limite lo perdiera, es preferible
+    devolver `None` (y que `gate_legal()` lo liste como sin articulo, de
+    verdad) a devolver una cita que aparenta tener fuente y no la tiene."""
+    for campo in ('nota', 'dato', 'cita_literal', 'tema'):
         texto = fila.get(campo) or ''
         protegido = _RX_ABREV.sub(lambda m: m.group(1) + _MARCA_ABREV, texto)
         for frase in re.split(r'(?<=[.;])\s+', protegido):
             frase = frase.replace(_MARCA_ABREV, '.')
             if _tiene_cita_articulo(frase):
-                frase = re.sub(r'\s+', ' ', frase).strip()
-                if len(frase) > 140:
-                    frase = frase[:137].rstrip() + '...'
-                return frase
+                frase = _ventana_articulo(re.sub(r'\s+', ' ', frase).strip())
+                if _tiene_cita_articulo(frase):
+                    return frase
     return None
 
 
@@ -3825,30 +3855,98 @@ ID_REUTILIZADO_PASTELERIA = {
                'reutilizado de Pasteleria y verificado el 10-09-2026', 8),
 }
 
+#: Ids cuya ficha de verificacion legal NO permite componer un articulo,
+#: apartado, Anexo o Epigrafe -ni con el helper mejorado de la segunda
+#: verificacion (2026-09-12, hallazgo B8: `arts.` en plural, ventana centrada
+#: en el token en vez de recorte desde el principio, y `tema` como cuarto
+#: campo de busqueda, que subio la cobertura de 82/106 a 92/106 ids unicos)-,
+#: revisadas UNA A UNA a mano. Cada una cae en uno de tres motivos, y ninguno
+#: es «no se ha buscado bien»:
+#:   (1) FUENTE NO NORMATIVA: pagina o guia administrativa, no un texto legal
+#:       con articulado (CHN-28, CHN-40, CHN-65c, CHN-66, CHN-93 son consultas
+#:       de REGCON o guias de la AESAN/MITECO, no BOE).
+#:   (2) HECHO DE AUSENCIA GLOBAL: «la palabra X no aparece NINGUNA VEZ en
+#:       TODO el texto» no tiene un articulo que citar -es una propiedad del
+#:       documento entero, no de un punto concreto- (CHN-83, CHN-53).
+#:   (3) DATO NO ESTRUCTURADO ASI en el JSON de verificacion: el hecho es
+#:       legal y viene de una norma con articulado, pero la ficha no llego a
+#:       anotar el apartado exacto (CHN-06b, CHN-15b, CHN-43, CHN-47b), cita
+#:       una Disposicion Adicional en vez de un articulo/apartado -que NO es
+#:       uno de los cuatro tokens exigidos por B8- (CHN-65b via el convenio,
+#:       CHN-74b) o es un catalogo de codigos sin articulado propio (CHN-74).
+#: No fabricar el numero es la politica: un articulo inventado pesa mas caro
+#: que una excepcion documentada, en un pack que se vende como «verificado
+#: contra el BOE».
+EXCEPCIONES_SIN_ARTICULO = {
+    'CHN-06b': 'RD 1055/2003: describe una obligacion de etiquetado real pero la '
+               'ficha no registro el apartado exacto (probablemente el 1.9).',
+    'CHN-15b': 'RD 348/2011: la clausula de reconocimiento mutuo esta citada '
+               'literalmente pero sin numero de articulo en la ficha.',
+    'CHN-83': 'Directiva 2000/36/CE: hecho de AUSENCIA GLOBAL (0 ocurrencias de '
+              '«cocido» en todo el texto consolidado), no un punto concreto.',
+    'CHN-28': 'Pagina de MITECO, no una norma: la propia ficha lo dice '
+              '(«no entrecomillar como si fuera articulado»).',
+    'CHN-40': 'Guia interpretativa AESAN/Comunidad de Madrid, no una norma: el '
+              'catalogo de claves del RGSEAA no esta en ningun BOE.',
+    'CHN-43': 'Sintesis de DOS decretos autonomicos (Madrid y Comunitat '
+              'Valenciana): no hay un articulo unico que cubra a los dos.',
+    'CHN-47b': 'RD 100/2011: cita la nota (2) del catalogo CAPCA, que vive en un '
+               'anexo, pero la ficha no llego a anotarlo como «Anexo».',
+    'CHN-53': 'RD 1055/2003 + RD 496/2010: hecho de AUSENCIA GLOBAL (0 '
+              'ocurrencias de «artesano»/«casero») en DOS normas, no un punto '
+              'concreto de ninguna de las dos.',
+    'CHN-65b': 'Revision salarial del convenio de Madrid en el BOCM: es una '
+               'tabla salarial publicada como anuncio, no un articulado.',
+    'CHN-65c': 'Consulta publica del registro REGCON, no una norma.',
+    'CHN-66': 'Consulta publica del registro REGCON (cero resultados), no una '
+              'norma.',
+    'CHN-93': 'Cuatro consultas del registro REGCON, no una norma.',
+    'CHN-74': 'RD 10/2025 (CNAE-2025): catalogo de codigos de actividad '
+              'economica, sin articulado propio que citar para un codigo.',
+    'CHN-74b': 'RD 10/2025: cita una Disposicion Adicional («D.A. unica, letra '
+               'c)»), que no es uno de los cuatro tokens exigidos '
+               '(art./ap./Anexo/Epigrafe).',
+}
 
-def gate_legal(ids_requeridos=None, abortar=True):
+
+def gate_legal(ids_requeridos=None, abortar=True, exigir_articulo=True):
     """Comprueba que la verificacion legal sirve una nota para CADA id que los libros
     van a citar. Si falta alguno, ABORTA listandolos.
 
     Los constructores lo llaman ANTES de escribir notas. `abortar=False` devuelve la
     lista en vez de morir, para que `comprobar()` pueda informar sin tumbar el modulo.
+
+    B8 (refutacion 2026-09-12, segunda verificacion): ademas de exigir que la nota
+    EXISTA, con `exigir_articulo=True` (el default) exige que cite articulo, apartado,
+    Anexo o Epigrafe -no solo la norma-, salvo que el id este en
+    `EXCEPCIONES_SIN_ARTICULO` (documentado uno a uno, nunca «no se ha mirado»).
     """
     ids = list(ids_requeridos or IDS_LEGALES_REQUERIDOS)
     cache = _carga_verificacion_legal()
     faltan = [i for i in ids if nota_legal(i) is None]
-    if not faltan:
+    sin_articulo = []
+    if exigir_articulo:
+        sin_articulo = [i for i in ids if i not in faltan
+                        and i not in EXCEPCIONES_SIN_ARTICULO
+                        and not _tiene_cita_articulo(nota_legal(i))]
+    if not faltan and not sin_articulo:
         return []
     detalle = []
     for i in faltan:
         para_que = IDS_LEGALES_REQUERIDOS.get(i, ('(sin descripcion)', '?'))[0]
-        detalle.append('  - %s: %s' % (i, para_que))
-    mensaje = ('gate_legal: faltan %d de %d notas legales en %s\n%s'
-               % (len(faltan), len(ids), VERIFICACION_LEGAL_JSON, '\n'.join(detalle)))
+        detalle.append('  - %s: SIN NOTA — %s' % (i, para_que))
+    for i in sin_articulo:
+        para_que = IDS_LEGALES_REQUERIDOS.get(i, ('(sin descripcion)', '?'))[0]
+        detalle.append('  - %s: SIN ARTICULO/APARTADO/ANEXO/EPIGRAFE — %s'
+                       % (i, para_que))
+    mensaje = ('gate_legal: %d sin nota y %d sin articulo, de %d ids, en %s\n%s'
+               % (len(faltan), len(sin_articulo), len(ids),
+                  VERIFICACION_LEGAL_JSON, '\n'.join(detalle)))
     if cache['error']:
         mensaje += '\n  Motivo: %s' % cache['error']
     if abortar:
         raise SystemExit(mensaje)
-    return faltan
+    return faltan + sin_articulo
 
 
 def id_existe_en_json_comun(pid):

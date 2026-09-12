@@ -323,6 +323,12 @@ def lineas_capex():
 
 LINEAS = lineas_capex()
 X_FIN = X_INI + len(LINEAS) - 1
+#: Fila de la línea «Fianza de arrendamiento» en «CAPEX por Bloque» (columna
+#: L, base sin IVA): la única marcada con el centinela `FORMULA_FIANZA`. La
+#: usa la nueva línea «Inmovilizado amortizable» de «Resumen» (B4, refutación
+#: 2026-09-12) para restar la fianza sin volver a teclear su importe.
+FILA_FIANZA = X_INI + next(i for i, ln in enumerate(LINEAS)
+                           if ln[7] == 'FORMULA_FIANZA')
 B_INI = X_FIN + 3                       # primera fila del resumen por bloque
 B_FIN = B_INI + len(D.BLOQUES_CAPEX) - 1
 R_TOT = B_FIN + 1
@@ -1522,6 +1528,12 @@ def hoja_iva(wb):
 
 # --------------------------------------------------------------------------
 S_INI = 6
+#: Fila de la nueva línea «Inmovilizado amortizable» (B4, refutación
+#: 2026-09-12): se añade AL FINAL de las 17 líneas ya publicadas de
+#: «Resumen», así que cae en la 18ª. `hoja_resumen()` lo comprueba con un
+#: `assert` para que un cambio futuro en la lista no lo desincronice en
+#: silencio.
+FILA_INMOV_AMORT = S_INI + 17
 
 
 def hoja_resumen(wb):
@@ -1537,6 +1549,7 @@ def hoja_resumen(wb):
     i_tm = D.BLOQUES_CAPEX.index('Equipo de templado y moldeado')
     i_frio = D.BLOQUES_CAPEX.index('Frio')
     i_clima = D.BLOQUES_CAPEX.index('Climatizacion y deshumidificacion')
+    i_pack = D.BLOQUES_CAPEX.index('Packaging y moldes')
     filas = [
         ('Obra y adecuación', "='%s'!B%d" % (H_PAR, fp(P_OBRA)), C.FMT_EUR,
          H_PAR, 'Metros por el precio por m2. Es la única partida del CAPEX '
@@ -1603,6 +1616,20 @@ def hoja_resumen(wb):
         ('Traspaso o obra nueva', "='%s'!C%d" % (H_TRA, T_VER), None, H_TRA,
          'Compara dinero. La distribución del local, la clientela y si el '
          'obrador se puede climatizar no salen en esta celda.'),
+        # B4 (refutación 2026-09-12): publicada AL FINAL, sin desplazar las
+        # 17 líneas de arriba, para que `plan-financiero-3-anos-chocolateria
+        # .xlsx!Inversión Inicial!B11` («Inmovilizado amortizable, traído del
+        # libro 2») sea verificable abriendo este libro en vez de confiar a
+        # ciegas en el valor por defecto sembrado allí.
+        ('Inmovilizado amortizable',
+         "='%s'!L%d-'%s'!L%d-'%s'!L%d"
+         % (H_CAP, R_SINFONDO, H_CAP, B_INI + i_pack, H_CAP, FILA_FIANZA),
+         C.FMT_EUR, H_CAP,
+         'CAPEX sin el fondo de maniobra, menos la fianza (es un depósito: se '
+         'recupera, no se amortiza) y menos «packaging y moldes» (son '
+         'existencias, no inmovilizado). Es la base que el libro 7 trae en su '
+         'celda verde: compárala con la suya para comprobar que los dos '
+         'libros dicen lo mismo.'),
     ]
     fila = S_INI
     S_FILA = {}
@@ -1614,6 +1641,10 @@ def hoja_resumen(wb):
         motor.val(ws, 'D%d' % fila, notatxt, wrap=True)
         ws.row_dimensions[fila].height = 52
         fila += 1
+    assert S_FILA['Inmovilizado amortizable'] == FILA_INMOV_AMORT, (
+        'FILA_INMOV_AMORT desincronizada: la lista `filas` ya no tiene 17 '
+        'líneas antes de "Inmovilizado amortizable" (mapa_celdas() apunta a '
+        'la fila vieja)')
     C.destacado(ws, 'B%d' % S_FILA['INVERSIÓN TOTAL (las dos líneas de arriba)'])
     C.destacado(ws, 'B%d' % S_FILA['CAPEX SIN el fondo de maniobra'])
     C.parrafo(ws, fila + 1,
@@ -1756,6 +1787,11 @@ def mapa_celdas(var, tra):
     # capítulo que citara esa etiqueta imprimiría nada sin avisar. Se saca del
     # mapa; el veredicto de abajo sí es citable en los dos estados.
     add('ALERTA DEL PLÁSTICO', H_IVA, 'B%d' % I_PL_VER, 'salida')
+    # B4 (refutación 2026-09-12): publica en el mapa la base de amortización
+    # de «Resumen» para que un capítulo pueda citarla y para que
+    # `plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B11` sea
+    # verificable contra ESTE libro.
+    add('Inmovilizado amortizable', H_RES, 'B%d' % FILA_INMOV_AMORT, 'salida')
     return m
 
 
@@ -1783,7 +1819,7 @@ def construir():
         verdes[ws.title] = motor.proteger(ws)
     wb.calculation.fullCalcOnLoad = True
 
-    destino = os.path.join(AQUI, 'build')
+    destino = C.BUILD_DIR
     if not os.path.isdir(destino):
         os.makedirs(destino)
     ruta = os.path.join(destino, NOMBRE + '.xlsx')

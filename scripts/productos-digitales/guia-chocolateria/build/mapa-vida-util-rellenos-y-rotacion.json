@@ -198,10 +198,5 @@
   "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D48",
   "valor": 185.85691511111105,
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "vida-util-rellenos-y-rotacion.xlsx!Instrucciones!A1",
-  "valor": "La vida útil NO la calcula este libro: la declara el operador en su plan de APPCC (`CHN-30`), y aquí es celda verde con un valor de partida declarado como supuesto -el extremo bajo del plazo orientativo del kit-. Los diez plazos por familia son los del Kit de Tareas Chocolatería (kit-tareas-chocolateria/02-partidas-produccion.xlsx!Moldeado), CITADOS y no reescritos (D30); la equivalencia en días es aritmética nuestra y así se dice en la hoja. El semáforo de la vitrina sólo avisa por encima de 20 grados C y NUNCA pone en rojo los 16-18 grados C que el propio kit publica como objetivo (D31). Etiquetado y granel no son el mismo régimen (D47): el art. 4.2 del RD 1021/2022 se aplica a la referencia que sale ENVASADA con su etiqueta; a granel la referencia es tu sistema de autocontrol, y `CHN-87` lo sostiene -«chocolate», «cacao», «bombón» y «confitería» aparecen 0 veces en todo el RD 1021/2022-. El coste de materia por pieza de la hoja «Lote y Merma por Caducidad» entra por celda verde: el precio de la cobertura vive en el libro 3 y el escandallo en el libro 4, y aquí no hay ninguna fórmula que nombre otro fichero.",
-  "tipo": "nota"
  }
 }

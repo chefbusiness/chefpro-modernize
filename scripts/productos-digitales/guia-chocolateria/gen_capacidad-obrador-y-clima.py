@@ -1868,7 +1868,7 @@ def construir():
         verdes[ws.title] = motor.proteger(ws)
     wb.calculation.fullCalcOnLoad = True
 
-    destino = os.path.join(AQUI, 'build')
+    destino = C.BUILD_DIR
     if not os.path.isdir(destino):
         os.makedirs(destino)
     ruta = os.path.join(destino, NOMBRE + '.xlsx')

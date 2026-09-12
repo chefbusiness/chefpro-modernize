@@ -772,7 +772,13 @@ def hoja_denominaciones(wb):
         # surtidos») no entra por el 25 % en su fila -aps. 1.10/1.13 son un
         # mínimo POR PIEZA-: el mensaje se lo dice al lector explícitamente
         # en vez del genérico «no aplica su denominación».
-        no_aplica = ('La denominación va por pieza: el 25 %% lo comprueba '
+        # B10 (defecto nuevo, verificación 2026-09-12): `no_aplica` se
+        # sustituye vía «%s» en el «=IF(...)» de más abajo, y esa sustitución
+        # NO pasa por el escape de `%`-formatting -sólo lo hace el texto que
+        # SÍ se formatea (el «25 %%» de la línea de «CUMPLE», más abajo)-, así
+        # que aquí va un `%` simple, no `%%`, o el comprador ve «25 %%»
+        # literal en la celda.
+        no_aplica = ('La denominación va por pieza: el 25 % lo comprueba '
                      'cada bombón en su propia fila, no el agregado de la '
                      'caja' if D.es_caja(r)
                      else 'No aplica: su mínimo es el de su denominación')

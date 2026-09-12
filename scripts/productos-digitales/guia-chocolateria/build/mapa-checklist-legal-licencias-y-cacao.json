@@ -373,10 +373,5 @@
   "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!K14",
   "valor": "Abril",
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "checklist-legal-licencias-y-cacao.xlsx!Instrucciones!A1",
-  "valor": "Libro 8 de la guía. La hoja «Checklist Legal (F1-F6)» NO emite un epígrafe de IAE por canal, y no es una omisión: ninguna fuente lo da. Lo que publica es la nota literal del 644.5, la respuesta sí/no/no lo sé por canal y LA PREGUNTA REDACTADA PARA EL ASESOR. Está prohibido escribir «con el 644.5 puedes vender a hostelería, a empresas y por envío sin más». La ruta doméstica empieza por la letra e) del art. 13.8 y los TRES requisitos del art. 13.9 (`PA-29c`, reutilizado de Pastelería y verificado el 10-09-2026) sólo se activan si la comunidad ha ampliado la lista: para el bombón la ruta no está abierta por defecto. El bombón NO tiene límite propio de cadmio (`CHN-84`): la nota (14) del Anexo I del Rgto. 2023/915 remite sólo a los puntos 2, 3 y 4 de la Directiva 2000/36/CE (`CHN-16b`). El paso «una chocolatería que compra cobertura es operador posterior, así que el aplazamiento del art. 38.3 no le alcanza» es INFERENCIA DECLARADA, con el art. 2.15 ter como condición, y la hoja del EUDR lleva su fecha de revisión dentro (D5). El plazo de entrega de maquinaria llega del libro 9 por celda verde con fila de cuadre: cero fórmulas que nombren otro fichero.",
-  "tipo": "nota"
  }
 }

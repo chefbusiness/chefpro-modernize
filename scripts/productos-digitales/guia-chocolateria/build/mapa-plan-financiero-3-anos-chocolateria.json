@@ -428,10 +428,5 @@
   "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B56",
   "valor": "2027-09-27",
   "tipo": "salida"
- },
- "_notas": {
-  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Instrucciones!A1",
-  "valor": "Libro 7, HÍBRIDO: molde `planes-v2_0` motor 2.2 más las dos hojas propias de esta guía («Canales y Punto Muerto» y «Talleres y Regalo Corporativo»). Manda la línea de versión de la familia de GUÍAS (1.0 · septiembre 2026). Es la FUENTE ÚNICA de las cifras financieras del texto: ningún euro del capítulo financiero se escribe fuera de aquí, y el AÑO 2 es el año de crucero. LAS DOS CELDAS QUE CITA EL RESTO DEL PACK son «Gastos fijos mensuales del año de crucero» y «Fondo de maniobra», las dos en la hoja «Inversión Inicial»: la segunda es la que viaja al libro 2 por el cruce 2 <- 7, ya CALCULADA, porque sus dos factores -meses de colchón y gastos fijos- viven aquí. Este libro RECIBE tres cifras por celda verde con fila de cuadre: el CAPEX SIN el fondo de maniobra (7 <- 2), la capacidad diaria del obrador (7 <- 1) y el precio de la cobertura en base imponible, que llega incorporado al food cost de escandallo (7 <- 3). CERO fórmulas que nombren otro fichero.",
-  "tipo": "nota"
  }
 }
