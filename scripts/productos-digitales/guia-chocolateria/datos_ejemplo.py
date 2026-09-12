@@ -1666,14 +1666,23 @@ def pct_chocolate_sobre_peso_total(r):
 #: Las referencias a las que la norma exige el 25 % sobre el peso total: las del
 #: apartado 1.13 (bombon) y las del 1.10 (chocolate relleno).
 MINIMO_25_PCT = 25.0
+#: Tope del ap. 3: las materias comestibles anadidas no pueden exceder este
+#: porcentaje del peso total del producto acabado (B9, refutacion 2026-09-12).
+TOPE_MATERIA_ANADIDA_PCT = 40.0
 FUENTE_MINIMO_25 = 'CHN-03 + CHN-04 + CHN-10'
 
 
 def exige_25_pct(r):
-    """True si a esa referencia le aplica el minimo del 25 % de los aps. 1.10/1.13."""
+    """True si a esa referencia le aplica el minimo del 25 % de los aps.
+    1.10/1.13. B10 (refutacion 2026-09-12): el minimo es POR PIEZA -aps.
+    1.10 y 1.13 hablan del bombon o del chocolate relleno, no de un
+    surtido-, asi que una caja («Chocolates rellenos surtidos», aps. 6.a)
+    y 6.c)) NO entra aqui: cada pieza que lleva dentro ya se comprueba en
+    su propia fila (`es_caja(r)` filtra las cuatro cajas)."""
+    if es_caja(r):
+        return False
     d = r['denominacion_legal']
-    return d.startswith('Bombon de chocolate') or d == 'Chocolate relleno' \
-        or d == 'Chocolates rellenos surtidos'
+    return d.startswith('Bombon de chocolate') or d == 'Chocolate relleno'
 
 
 def coste_materia_unidad(r):
@@ -2183,7 +2192,7 @@ CAPEX = [
      'varias comunidades es gratuito; en la Comunitat Valenciana lleva tasa y es '
      'condicion unica y suficiente para iniciar la actividad, y en Madrid se presenta '
      'simultaneamente al inicio y no habilita (`CHN-43`).'),
-    ('Fondo de maniobra', 'Colchon de tesoreria (meses de gastos fijos)',
+    ('Fondo de maniobra', 'Fondo de maniobra traido del libro 7 (EUR)',
      None, 'sin IVA', 0.00, 'supuesto',
      'LLEGA YA CALCULADO DEL LIBRO 7 por celda verde con fila de cuadre (cruce 2 <- 7). '
      'El libro 2 NO pide «meses de colchon»: los dos factores del fondo -los meses y '
@@ -2667,7 +2676,7 @@ CLIENTES_B2B = [
     ('Industrias Nogal, S.L.', 'Empresa', 'Regalo corporativo', 'Ciudad de ejemplo',
      'Estuche corporativo personalizado de 24 bombones'),
     ('Tienda gourmet La Despensa', 'Minorista de distinta titularidad',
-     'B2B hosteleria', 'Ciudad de ejemplo',
+     'Minorista de distinta titularidad', 'Ciudad de ejemplo',
      'Tabletas de origen y almendras banadas'),
 ]
 FUENTE_CLIENTES_B2B = 'supuesto'
@@ -2707,7 +2716,7 @@ CAMPANAS = [
                       'San Valentin'),
      'productos_kit': 'Trufas, bombones especiados, chocolate caliente',
      'campana': 'Reyes', 'campana_propia': False,
-     'producto_estrella': 'TF1', 'uds_dia_normal': 0, 'uds_dia_pico': 40,
+     'producto_estrella': 'TF4', 'uds_dia_normal': 0, 'uds_dia_pico': 40,
      'pvp_campana': 18.50, 'dias_campana': 5,
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 0, 'antelacion_packaging_semanas': 0,
@@ -2830,7 +2839,7 @@ CAMPANAS = [
                       'navidena a pleno · publicar el catalogo de Navidad'),
      'productos_kit': 'Figuras Halloween, bombones calabaza, tabletas oscuras',
      'campana': 'Halloween', 'campana_propia': True,
-     'producto_estrella': 'TF1', 'uds_dia_normal': 1, 'uds_dia_pico': 12,
+     'producto_estrella': 'BC5', 'uds_dia_normal': 1, 'uds_dia_pico': 12,
      'pvp_campana': 18.50, 'dias_campana': 6,
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 8, 'antelacion_packaging_semanas': 6,
@@ -3117,7 +3126,7 @@ CRUCES = [
     {'n': 2, 'receptor': 7, 'origen': 1,
      'concepto': 'Capacidad diaria, para calcular hacia atras la fecha limite de pedidos de Navidad',
      'fichero_origen': 'capacidad-obrador-y-clima.xlsx', 'hoja_origen': 'Cuello de Botella',
-     'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'Tesoreria 12 meses',
+     'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'Tesorería 12 meses',
      'nota': 'La fecha limite de encargos de Navidad NO es comercial: la fija la capacidad del obrador.'},
     {'n': 3, 'receptor': 9, 'origen': 2,
      'concepto': 'CAPEX por bloque, para medir la desviacion contra el precio real negociado',
@@ -3127,37 +3136,37 @@ CRUCES = [
     {'n': 4, 'receptor': 4, 'origen': 3,
      'concepto': 'Precio de cobertura por referencia, EN BASE IMPONIBLE',
      'fichero_origen': 'sensibilidad-al-precio-del-cacao.xlsx',
-     'hoja_origen': 'Coste de Cobertura por Referencia',
+     'hoja_origen': 'Coste de Cobertura',
      'fichero_receptor': 'carta-de-apertura-y-escandallo-chocolate.xlsx',
-     'hoja_receptor': 'Escandallo por Molde/Tanda',
+     'hoja_receptor': 'Parámetros',
      'nota': ('LA DE BASE IMPONIBLE, NUNCA la de base con IVA. `CHS-28a` esta declarada '
               'CON IVA y un escandallo con precios con IVA sale un 9 % alto.')},
     {'n': 5, 'receptor': 7, 'origen': 3,
      'concepto': 'Precio de cobertura EN BASE IMPONIBLE, para el coste de materia del P&L',
      'fichero_origen': 'sensibilidad-al-precio-del-cacao.xlsx',
-     'hoja_origen': 'Coste de Cobertura por Referencia',
-     'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'PyG 3 Anos',
+     'hoja_origen': 'Coste de Cobertura',
+     'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'PyG 3 Años',
      'nota': 'Mismo precio que el 4: un concepto, una fuente, y una sola celda de origen.'},
     {'n': 6, 'receptor': 7, 'origen': 2,
      'concepto': 'CAPEX SIN el fondo de maniobra',
      'fichero_origen': 'calculadora-capex-chocolateria.xlsx', 'hoja_origen': 'Resumen',
-     'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'Inversion Inicial',
+     'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'Inversión Inicial',
      'nota': ('LO QUE VIAJA NO ES «EL CAPEX TOTAL». El total del libro 2 INCLUYE el '
               'bloque «fondo de maniobra», asi que importarlo entero y pedir ademas el '
               'fondo lo contaria DOS VECES y volveria a publicar dos inversiones '
-              'totales distintas. La hoja «Inversion Inicial» del 7 NO vuelve a pedir '
+              'totales distintas. La hoja «Inversión Inicial» del 7 NO vuelve a pedir '
               'las nueve partidas: pide esta unica cifra.')},
     {'n': 7, 'receptor': 8, 'origen': 9,
      'concepto': 'Plazo de entrega critico de maquinaria, en semanas',
      'fichero_origen': 'checklist-equipamiento-y-proveedores-cacao.xlsx', 'hoja_origen': 'Equipamiento',
-     'fichero_receptor': 'checklist-legal-licencias-y-cacao.xlsx', 'hoja_receptor': 'Cronograma y Ruta Critica',
+     'fichero_receptor': 'checklist-legal-licencias-y-cacao.xlsx', 'hoja_receptor': 'Cronograma y Ruta Crítica',
      'nota': ('El 8 calcula la fecha de apertura con duraciones SUPUESTAS; lo que de '
               'verdad la mueve lo teclea el lector en el 9. La fila de cuadre avisa si '
               'la ruta critica es MAS CORTA que ese plazo: entonces la fecha la manda '
               'la maquinaria.')},
     {'n': 8, 'receptor': 2, 'origen': 7,
      'concepto': 'Fondo de maniobra YA CALCULADO (la magnitud, no sus factores)',
-     'fichero_origen': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_origen': 'Inversion Inicial',
+     'fichero_origen': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_origen': 'Inversión Inicial',
      'fichero_receptor': 'calculadora-capex-chocolateria.xlsx', 'hoja_receptor': 'CAPEX por Bloque',
      'nota': ('EL CRUCE QUE CIERRA EL CIRCULO. El fondo es «meses de colchon x gastos '
               'fijos mensuales» y LOS DOS FACTORES VIVEN EN EL LIBRO 7. Por eso «meses '
@@ -3452,7 +3461,7 @@ FUENTE_GANTT = 'supuesto'
 def ruta_critica():
     """(fin en meses, camino critico, dict de holguras por hito). Aritmetica de
     indices de mes, sin funciones de fecha: es lo que despues se traduce a formulas en
-    la hoja «Cronograma y Ruta Critica» del libro 8."""
+    la hoja «Cronograma y Ruta Crítica» del libro 8."""
     dur = dict((h[0], h[2]) for h in GANTT)
     deps = dict((h[0], h[3]) for h in GANTT)
     inicio, fin, previo = {}, {}, {}
@@ -3604,6 +3613,46 @@ def _primer_campo(fila, campos):
     return None
 
 
+#: Refutación 2026-09-12, hallazgo B8: 170 de 201 notas legales citaban la
+#: norma pero no el articulo/apartado. El JSON de verificacion NO trae un
+#: campo `articulo` estructurado la mayoria de las veces: el dato vive como
+#: texto libre dentro de `nota` (o `dato`/`cita_literal`), normalmente con la
+#: forma «Art. 5.3.a)» o «apartado 1.13». Se extrae la FRASE que ya lleva ese
+#: token -no se inventa ninguna- y se aniade a la norma citada.
+_TOKENS_ARTICULO = ('art.', 'artículo', 'articulo', 'ap.', 'aps.', 'apartado',
+                    'anexo', 'epígrafe', 'epigrafe')
+#: Placeholder de un solo carácter (fuera de WinAnsi a propósito: se usa y se
+#: quita dentro de esta misma función, nunca llega a una celda) para proteger
+#: el punto de «Art.»/«ap.»/«aps.» al dividir en frases, y que no se lea como
+#: fin de frase.
+_MARCA_ABREV = '\x01'
+_RX_ABREV = re.compile(r'\b([Aa]rt|[Aa]ps?)\.')
+
+
+def _tiene_cita_articulo(texto):
+    t = (texto or '').lower()
+    return any(tok in t for tok in _TOKENS_ARTICULO)
+
+
+def _extraer_cita_articulo(fila):
+    """Frase de `nota`, `dato` o `cita_literal` que YA contiene un token de
+    articulo/apartado/Anexo/Epigrafe, tal cual la escribio la verificacion
+    legal (no se reformula ni se inventa numero). Protege «Art.»/«ap.» antes
+    de partir en frases para no cortar justo ahi (si no, «Art. 5.3.a)» se
+    trocea en «Art.» + «5.3.a)» y el primer trozo no dice nada)."""
+    for campo in ('nota', 'dato', 'cita_literal'):
+        texto = fila.get(campo) or ''
+        protegido = _RX_ABREV.sub(lambda m: m.group(1) + _MARCA_ABREV, texto)
+        for frase in re.split(r'(?<=[.;])\s+', protegido):
+            frase = frase.replace(_MARCA_ABREV, '.')
+            if _tiene_cita_articulo(frase):
+                frase = re.sub(r'\s+', ' ', frase).strip()
+                if len(frase) > 140:
+                    frase = frase[:137].rstrip() + '...'
+                return frase
+    return None
+
+
 def nota_legal(id_chn):
     """Nota de celda para un dato legal, o `None` si no se puede construir.
 
@@ -3629,8 +3678,21 @@ def nota_legal(id_chn):
     if not norma or not url or not url.lower().startswith('http'):
         return None
     norma = re.sub(r'\s+', ' ', norma).strip()
-    if len(norma) > 220:
-        norma = norma[:217].rstrip() + '...'
+    # B8: si la norma citada no lleva ya articulo/apartado, se busca en el
+    # resto de la ficha y se aniade entre parentesis; si de verdad no hay
+    # ninguno en toda la ficha (dato sin desglose normativo), se deja como
+    # estaba -- no se fabrica un numero de articulo. El titulo base se acorta
+    # ANTES de aniadir el articulo (si no, el recorte final se come justo la
+    # parte nueva y deja un «...» que no dice nada).
+    if not _tiene_cita_articulo(norma):
+        extra = _primer_campo(fila, ('articulo',)) or _extraer_cita_articulo(fila)
+        if extra and extra not in norma:
+            base = norma
+            if len(base) > 180:
+                base = base[:177].rstrip() + '...'
+            norma = '%s (%s)' % (base, extra)
+    if len(norma) > 300:
+        norma = norma[:297].rstrip() + '...'
     return 'Verificado el %s %s %s %s %s' % (
         FECHA_VERIFICACION_LEGAL, chr(183), norma, chr(183), url)
 
@@ -3836,18 +3898,27 @@ def inversion_total_sin_iva():
     return capex_sin_fondo_de_maniobra() + fondo_maniobra()
 
 
+#: Bloques que NO se amortizan aunque no sean el fondo de maniobra ni la
+#: fianza (hallazgo B4, refutacion 2026-09-12): «Packaging y moldes» es el
+#: primer pedido de packaging de consumo + moldes de policarbonato de
+#: reposicion, que son EXISTENCIAS (se gastan/rompen en la operativa), no
+#: inmovilizado. La nota de `gen_plan-financiero-3-anos-chocolateria.py`
+#: (`D11`) ya lo decia asi; el numero no lo reflejaba.
+_BLOQUES_NO_AMORTIZABLES = ('Fondo de maniobra', 'Packaging y moldes')
+
+
 def capex_amortizable_sin_iva():
     """Todo lo que se amortiza. La FIANZA no: es un deposito que se recupera. El fondo
-    de maniobra tampoco: es caja."""
+    de maniobra tampoco: es caja. Y «Packaging y moldes» tampoco: son existencias."""
     total = 0.0
     for b, partida, importe, _base, _tipo, _fuente, _nota in CAPEX:
-        if b == 'Fondo de maniobra':
+        if b in _BLOQUES_NO_AMORTIZABLES:
             continue
         if partida.startswith('Fianza de arrendamiento'):
             continue
         total += importe if importe is not None else 0.0
     for bloque in BLOQUES_CAPEX:
-        if bloque != 'Fondo de maniobra':
+        if bloque not in _BLOQUES_NO_AMORTIZABLES:
             total += equipamiento_bloque_sin_iva(bloque)
     return total
 

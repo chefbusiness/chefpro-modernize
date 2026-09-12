@@ -1,0 +1,307 @@
+{
+ "Tipo de IVA general del equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!C7",
+  "valor": 0.21,
+  "tipo": "parametro"
+ },
+ "Horquilla del precio de referencia": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!C8",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Umbral de desviación admitida": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!C9",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Semanas hasta la apertura prevista": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!C10",
+  "valor": 36,
+  "tipo": "entrada"
+ },
+ "Margen de seguridad entre entrega y apertura": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!C11",
+  "valor": 3,
+  "tipo": "entrada"
+ },
+ "Líneas del checklist de equipamiento": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I34",
+  "valor": 17.0,
+  "tipo": "salida"
+ },
+ "Total de referencia sin IVA, sólo líneas críticas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I35",
+  "valor": 52299.35,
+  "tipo": "salida"
+ },
+ "Total de referencia sin IVA, todas las líneas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I36",
+  "valor": 54951.65,
+  "tipo": "salida"
+ },
+ "Total real negociado sin IVA, sólo líneas críticas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I37",
+  "valor": 52299.35,
+  "tipo": "salida"
+ },
+ "Total real negociado sin IVA, todas las líneas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I38",
+  "valor": 54951.65,
+  "tipo": "salida"
+ },
+ "Lo ganado o perdido negociando": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I39",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "IVA soportado sobre el precio real": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I40",
+  "valor": 11539.8465,
+  "tipo": "salida"
+ },
+ "Desembolso real con IVA": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I41",
+  "valor": 66491.49650000001,
+  "tipo": "salida"
+ },
+ "Líneas que sólo pueden publicarse como rango": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I42",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Líneas que son un «desde» y hay que presupuestar": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I43",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "CAPEX del bloque de templado traído del libro 2 (celda verde del cruce)": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I46",
+  "valor": 21060,
+  "tipo": "entrada"
+ },
+ "Lo que suman tus líneas críticas del bloque de templado": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I47",
+  "valor": 21060.0,
+  "tipo": "salida"
+ },
+ "Desviación contra el CAPEX del libro 2 (€)": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I48",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Desviación contra el CAPEX del libro 2 (%)": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I49",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "CUADRE contra el CAPEX del libro 2": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I50",
+  "valor": "CUADRA con el CAPEX del libro 2",
+  "tipo": "salida"
+ },
+ "PLAZO CRÍTICO DE ENTREGA (semanas) — viaja al libro 8": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I53",
+  "valor": 10.0,
+  "tipo": "salida"
+ },
+ "Línea que marca el plazo crítico": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I54",
+  "valor": "Atemperadora continua de sobremesa, 12 kg (55 kg/h)",
+  "tipo": "salida"
+ },
+ "Margen del plazo crítico (semanas)": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I55",
+  "valor": 23.0,
+  "tipo": "salida"
+ },
+ "Veredicto del plazo": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I56",
+  "valor": "Llegas con margen, pero pide primero el de mayor plazo",
+  "tipo": "salida"
+ },
+ "Líneas cuyo plazo se pasa de la apertura": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I57",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Precio de referencia de la atemperadora continua": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I15",
+  "valor": 8500,
+  "tipo": "salida"
+ },
+ "Precio de la atemperadora continua en base imponible": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!L15",
+  "valor": 8500.0,
+  "tipo": "salida"
+ },
+ "Plazo de entrega de la atemperadora continua": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!R15",
+  "valor": 10,
+  "tipo": "entrada"
+ },
+ "Variante del formato elegida": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C6",
+  "valor": "Bombonería (el caso del libro)",
+  "tipo": "entrada"
+ },
+ "Equipos del tren bean-to-bar que dices necesitar": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C20",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Preguntas al fabricante de bean-to-bar contestadas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C29",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto del bean-to-bar": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C30",
+  "valor": "No es tu variante: no hay nada que presupuestar",
+  "tipo": "salida"
+ },
+ "Precio verificado de la chocolatera de taza": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C34",
+  "valor": 527,
+  "tipo": "salida"
+ },
+ "Proveedores publicados": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F15",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Proveedores con los que ya trabajas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F16",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores que son OPERADORES del EUDR": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F17",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores que son operadores posteriores": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F18",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores que son comerciantes": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F19",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores sin clasificar en la cadena": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F20",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Operadores que te deben el nº de su DDS": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F21",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores sin boletín de cadmio": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F22",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Proveedores sin boletín de HAP": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F23",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Pedido mínimo acumulado de todos los proveedores": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F24",
+  "valor": 1500.0,
+  "tipo": "salida"
+ },
+ "Plazo medio de entrega de los proveedores": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F25",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Veredicto de la documentación de proveedores": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F26",
+  "valor": "Te faltan proveedores por clasificar: pregúntales su papel en la cadena",
+  "tipo": "salida"
+ },
+ "Papeles que le tocan al primer proveedor": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!N7",
+  "valor": "Pregúntaselo por escrito antes de comprar: de su respuesta depende qué papeles pedirle",
+  "tipo": "salida"
+ },
+ "Años de conservación del registro de clientes": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!C6",
+  "valor": 5,
+  "tipo": "parametro"
+ },
+ "Clientes registrados": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E20",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Clientes de B2B de hostelería": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E21",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Clientes de regalo corporativo": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E22",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Clientes minoristas de distinta titularidad": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E23",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Clientes inscritos en el RGSEAA": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E24",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Fecha hasta la que hay que conservar el registro": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E25",
+  "valor": "2031-09-12",
+  "tipo": "salida"
+ },
+ "Veredicto del registro de clientes": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E26",
+  "valor": "Tienes que conservar este registro, con nombre, dirección y producto, durante los años del parámetro",
+  "tipo": "salida"
+ },
+ "Lo que el registro de clientes cambia en tu régimen sanitario": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E27",
+  "valor": "Suministras a otros minoristas: resuelve los TRES semáforos del art. 3 en el libro 8",
+  "tipo": "salida"
+ },
+ "Conservar hasta, del primer cliente": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!I10",
+  "valor": "2031-09-12",
+  "tipo": "salida"
+ },
+ "Líneas que de verdad vas a comprar": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Contador!B9",
+  "valor": 17.0,
+  "tipo": "salida"
+ },
+ "Avance de la compra": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Contador!B15",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Diferencia entre lo real y la referencia": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Contador!B21",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto de la compra": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Contador!B32",
+  "valor": "Todavía te falta equipo por instalar: mira la columna del plazo crítico antes de fijar la fecha",
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "checklist-equipamiento-y-proveedores-cacao.xlsx!Instrucciones!A1",
+  "valor": "Libro 9 de la guía. El plazo crítico de entrega (hoja «Equipamiento») es la celda que viaja al cronograma del libro 8 por CELDA VERDE con fila de cuadre: cero fórmulas que nombren otro fichero. La desviación contra el CAPEX llega en sentido contrario, desde el libro 2, con el mismo mecanismo. El número de referencia de la declaración de diligencia debida SÓLO se le pide al proveedor que es OPERADOR (art. 5.3.a del EUDR, `CHN-24`): está prohibido escribir «pide a todos tus proveedores el número de su DDS». Y está prohibido escribir «basta con registrar a tus proveedores»: el art. 5.3.b) obliga además a registrar a los operadores posteriores y comerciantes a los que TÚ suministras, y a conservarlo cinco años. Los precios sin id `CHS-*` son supuestos declarados y los plazos de entrega lo son todos: ningún distribuidor los publica.",
+  "tipo": "nota"
+ }
+}

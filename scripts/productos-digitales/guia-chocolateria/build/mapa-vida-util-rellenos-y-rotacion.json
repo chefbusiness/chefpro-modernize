@@ -1,0 +1,207 @@
+{
+ "Umbral de vigilancia de actividad de agua": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B11",
+  "valor": 0.85,
+  "tipo": "parametro"
+ },
+ "Temperatura a la que salta la alarma de la vitrina": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B12",
+  "valor": 20,
+  "tipo": "parametro"
+ },
+ "Humedad máxima de trabajo de la vitrina": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B13",
+  "valor": 55,
+  "tipo": "parametro"
+ },
+ "Coste de poner en marcha una tanda": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B14",
+  "valor": 35,
+  "tipo": "parametro"
+ },
+ "Coste de tener una pieza parada un año": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B15",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Merma por caducidad que dispara el aviso": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B16",
+  "valor": 150,
+  "tipo": "parametro"
+ },
+ "Piezas vendibles al año": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B9",
+  "valor": 28515.2,
+  "tipo": "salida"
+ },
+ "Referencias con el agua disponible por encima del umbral": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!E44",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Actividades de agua medidas de verdad": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!G44",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Actividad de agua de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!E16",
+  "valor": 0.88,
+  "tipo": "entrada"
+ },
+ "Actividad de agua de la ganache estabilizada": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!E17",
+  "valor": 0.82,
+  "tipo": "entrada"
+ },
+ "Vida útil declarada de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G16",
+  "valor": 10,
+  "tipo": "entrada"
+ },
+ "Vida útil declarada de la ganache estabilizada": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G17",
+  "valor": 28,
+  "tipo": "entrada"
+ },
+ "Vida útil declarada de la caja surtida de 12": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G40",
+  "valor": 10,
+  "tipo": "entrada"
+ },
+ "Pieza más corta que lleva dentro la caja surtida de 12": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!L40",
+  "valor": 10.0,
+  "tipo": "salida"
+ },
+ "Fecha que va en la etiqueta de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!J16",
+  "valor": "2026-09-24",
+  "tipo": "salida"
+ },
+ "Vida útil más corta de toda la carta (días)": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G44",
+  "valor": 10.0,
+  "tipo": "salida"
+ },
+ "Referencias con fecha de caducidad": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!H44",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "Referencias envasadas con etiqueta": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Etiquetado o Granel!C44",
+  "valor": 16.0,
+  "tipo": "salida"
+ },
+ "Referencias que se despachan a granel": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Etiquetado o Granel!E44",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "La referencia normativa que le toca a un bombón a granel": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Etiquetado o Granel!F16",
+  "valor": "Tu plan de APPCC: la temperatura y la vida útil las declaras tú y tienen que constar en él.",
+  "tipo": "salida"
+ },
+ "La referencia normativa que le toca a una caja envasada": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Etiquetado o Granel!F40",
+  "valor": "Art. 4.2 del RD 1021/2022: la temperatura de conservación que TÚ has puesto en la etiqueta te obliga a ti.",
+  "tipo": "salida"
+ },
+ "Temperatura mínima de trabajo de la vitrina del ejemplo": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D15",
+  "valor": 16,
+  "tipo": "entrada"
+ },
+ "Temperatura máxima de trabajo de la vitrina del ejemplo": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D16",
+  "valor": 18,
+  "tipo": "entrada"
+ },
+ "Veredicto de la vitrina del ejemplo": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!F16",
+  "valor": "Dentro de lo que aguanta el chocolate",
+  "tipo": "salida"
+ },
+ "Referencias por encima de la alarma de la vitrina": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D50",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Referencias que van a nevera y no a vitrina": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!F50",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Temperatura declarada de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D22",
+  "valor": 4,
+  "tipo": "entrada"
+ },
+ "Tanda actual de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!E16",
+  "valor": 144,
+  "tipo": "entrada"
+ },
+ "Lo que vendes de ganache fresca dentro de su vida útil": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!H16",
+  "valor": 47.0,
+  "tipo": "salida"
+ },
+ "Tanda recomendada de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!M16",
+  "valor": 47.0,
+  "tipo": "salida"
+ },
+ "Tanda recomendada de la ganache estabilizada": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!M17",
+  "valor": 109.6,
+  "tipo": "salida"
+ },
+ "Merma por caducidad de la ganache de nata fresca": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!Q16",
+  "valor": 250.7652622222222,
+  "tipo": "salida"
+ },
+ "Merma por caducidad de la ganache estabilizada": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!Q17",
+  "valor": 64.90834711111113,
+  "tipo": "salida"
+ },
+ "Merma por caducidad de la tableta de origen": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!Q26",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Piezas que se caducan al año en toda la carta": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!P44",
+  "valor": 3755.363444444445,
+  "tipo": "salida"
+ },
+ "Merma por caducidad de toda la carta": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!Q44",
+  "valor": 768.3755722809524,
+  "tipo": "salida"
+ },
+ "Referencias con la tanda demasiado grande para lo que duran": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D46",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Merma por caducidad sobre el coste de materia del año": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D47",
+  "valor": 0.015515365944599431,
+  "tipo": "salida"
+ },
+ "Lo que cuesta al año la ganache fresca frente a la estabilizada": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D48",
+  "valor": 185.85691511111105,
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "vida-util-rellenos-y-rotacion.xlsx!Instrucciones!A1",
+  "valor": "La vida útil NO la calcula este libro: la declara el operador en su plan de APPCC (`CHN-30`), y aquí es celda verde con un valor de partida declarado como supuesto -el extremo bajo del plazo orientativo del kit-. Los diez plazos por familia son los del Kit de Tareas Chocolatería (kit-tareas-chocolateria/02-partidas-produccion.xlsx!Moldeado), CITADOS y no reescritos (D30); la equivalencia en días es aritmética nuestra y así se dice en la hoja. El semáforo de la vitrina sólo avisa por encima de 20 grados C y NUNCA pone en rojo los 16-18 grados C que el propio kit publica como objetivo (D31). Etiquetado y granel no son el mismo régimen (D47): el art. 4.2 del RD 1021/2022 se aplica a la referencia que sale ENVASADA con su etiqueta; a granel la referencia es tu sistema de autocontrol, y `CHN-87` lo sostiene -«chocolate», «cacao», «bombón» y «confitería» aparecen 0 veces en todo el RD 1021/2022-. El coste de materia por pieza de la hoja «Lote y Merma por Caducidad» entra por celda verde: el precio de la cobertura vive en el libro 3 y el escandallo en el libro 4, y aquí no hay ninguna fórmula que nombre otro fichero.",
+  "tipo": "nota"
+ }
+}

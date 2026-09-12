@@ -1,0 +1,377 @@
+{
+ "Horas de turno del obrador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B6",
+  "tipo": "entrada",
+  "valor": 8
+ },
+ "Turnos de obrador al día": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B7",
+  "tipo": "entrada",
+  "valor": 1
+ },
+ "Horas productivas sobre la jornada": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B8",
+  "tipo": "parametro",
+  "valor": 0.85
+ },
+ "Minutos disponibles al día": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B9",
+  "tipo": "salida",
+  "valor": 408.0
+ },
+ "Días de apertura al año": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B11",
+  "tipo": "entrada",
+  "valor": 304
+ },
+ "Piezas vendibles al día en velocidad de crucero": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B12",
+  "tipo": "entrada",
+  "valor": 93.8
+ },
+ "Bombones equivalentes por pieza vendible": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B13",
+  "tipo": "entrada",
+  "valor": 5.03
+ },
+ "Bombones equivalentes al día en velocidad de crucero": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B14",
+  "tipo": "salida",
+  "valor": 471.814
+ },
+ "Margen de seguridad exigido": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B15",
+  "tipo": "parametro",
+  "valor": 0.1
+ },
+ "Superficie total del local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B16",
+  "tipo": "entrada",
+  "valor": 75
+ },
+ "Parte mínima del local dedicada a producción": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B17",
+  "tipo": "parametro",
+  "valor": 0.55
+ },
+ "Potencia eléctrica instalada prevista": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B18",
+  "tipo": "entrada",
+  "valor": 28
+ },
+ "Temperatura exterior de tu ciudad en agosto": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B19",
+  "tipo": "entrada",
+  "valor": 36
+ },
+ "Potencia frigorífica ofertada por el instalador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B20",
+  "tipo": "entrada",
+  "valor": 9
+ },
+ "Salto de diseño declarado por el instalador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B21",
+  "tipo": "entrada",
+  "valor": 16
+ },
+ "Altura libre mínima exigida": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B22",
+  "tipo": "entrada",
+  "valor": 2.7
+ },
+ "Umbral de venta sin licencia previa (Ley 12/2012)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Parámetros!B24",
+  "tipo": "parametro",
+  "valor": 750
+ },
+ "Metros cuadrados repartidos entre las zonas": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D13",
+  "tipo": "salida",
+  "valor": 75.0
+ },
+ "Descuadre de metros contra la superficie declarada": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D15",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Metros de zona de producción": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D17",
+  "tipo": "salida",
+  "valor": 45.0
+ },
+ "Parte del local dedicada a producción": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D18",
+  "tipo": "salida",
+  "valor": 0.6
+ },
+ "Metros de tienda y mostrador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D19",
+  "tipo": "salida",
+  "valor": 22.0
+ },
+ "Parte del local dedicada a venta": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D20",
+  "tipo": "salida",
+  "valor": 0.29333333333333333
+ },
+ "Veredicto del reparto de metros": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D22",
+  "tipo": "salida",
+  "valor": "Reparto suficiente"
+ },
+ "Veredicto de marcha adelante": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D34",
+  "tipo": "salida",
+  "valor": "Marcha adelante correcta"
+ },
+ "Metros del obrador de templado y moldeado (celda de entrada)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D6",
+  "tipo": "entrada",
+  "valor": 26
+ },
+ "Metros de la cámara de chocolate (celda de entrada)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Zonas y m2!D7",
+  "tipo": "entrada",
+  "valor": 6
+ },
+ "Temperatura mínima objetivo del obrador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!B7",
+  "tipo": "entrada",
+  "valor": 18
+ },
+ "Temperatura máxima objetivo del obrador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!C7",
+  "tipo": "entrada",
+  "valor": 20
+ },
+ "Humedad máxima objetivo del obrador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!E7",
+  "tipo": "entrada",
+  "valor": 60
+ },
+ "Temperatura máxima objetivo de la cámara de chocolate": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!C8",
+  "tipo": "entrada",
+  "valor": 18
+ },
+ "Temperatura máxima objetivo de la vitrina": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!C11",
+  "tipo": "entrada",
+  "valor": 18
+ },
+ "Ventanas climáticas incoherentes entre sí": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F20",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Salto de temperatura que tiene que vencer el equipo": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F25",
+  "tipo": "salida",
+  "valor": 16.0
+ },
+ "Potencia ofertada por metro climatizado": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F29",
+  "tipo": "salida",
+  "valor": 0.2
+ },
+ "SEMÁFORO DE COHERENCIA DEL CLIMA": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F33",
+  "tipo": "salida",
+  "valor": "PIDE LA OFERTA POR ESCRITO"
+ },
+ "Preguntas de la ficha del instalador": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F48",
+  "tipo": "salida",
+  "valor": 10.0
+ },
+ "Preguntas contestadas por escrito": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F49",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Ficha del instalador cerrada (%)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F50",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "VEREDICTO DE LA FICHA DEL INSTALADOR": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F51",
+  "tipo": "salida",
+  "valor": "No has preguntado nada todavía"
+ },
+ "Bombones/día de obrador que permite: Atemperadora continua de sobremesa, 12 kg (55 kg/h) — Selmi One": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M6",
+  "tipo": "salida",
+  "valor": 4368.0
+ },
+ "Bombones/día de obrador que permite: Temperador de baño maría digital, 22 L — segunda cobertura": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M7",
+  "tipo": "salida",
+  "valor": 8320.0
+ },
+ "Bombones/día de obrador que permite: Mantenedor de 1 cubeta, digital": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M8",
+  "tipo": "salida",
+  "valor": 4550.0
+ },
+ "Bombones/día de obrador que permite: Moldes de policarbonato (24 moldes de 24 cavidades)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M9",
+  "tipo": "salida",
+  "valor": 3200.0
+ },
+ "Bombones/día de obrador que permite: Puesto de moldeado y desmoldeo (mesa de mármol o granito)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M10",
+  "tipo": "salida",
+  "valor": 606.3157894736843
+ },
+ "Bombones/día de obrador que permite: Placa dosificadora de rellenos — Selmi": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M11",
+  "tipo": "salida",
+  "valor": 7199.999999999999
+ },
+ "Bombones/día de obrador que permite: Enrobadora de banda, 200 mm — Selmi R200 Legend": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M12",
+  "tipo": "salida",
+  "valor": 21333.333333333336
+ },
+ "Bombones/día de obrador que permite: Cámara climatizada de chocolate, unos 6 m2": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M13",
+  "tipo": "salida",
+  "valor": 3388.2352941176473
+ },
+ "Bombones/día de obrador que permite: Puesto de envasado y montaje de cajas": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M14",
+  "tipo": "salida",
+  "valor": 512.0
+ },
+ "Bombones/día de obrador que permite: Vitrina refrigerada específica para chocolate — Docriluc WB-6-6-R": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M15",
+  "tipo": "salida",
+  "valor": 1134.5454545454545
+ },
+ "Bombones/día de obrador que permite: Atemperadora de arranque, 4,5 L (unos 3 kg) — Pavoni MINITEMPER": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M16",
+  "tipo": "salida",
+  "valor": 4914.0
+ },
+ "Equipos y puestos que dices tener": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!E19",
+  "tipo": "salida",
+  "valor": 10.0
+ },
+ "Minutos disponibles al día (capacidad)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!E18",
+  "tipo": "salida",
+  "valor": 408.0
+ },
+ "Bombones por ciclo del puesto de moldeado": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!H10",
+  "tipo": "salida",
+  "valor": 288.0
+ },
+ "Ciclos al día del puesto de moldeado": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!J10",
+  "tipo": "salida",
+  "valor": 2.0
+ },
+ "Parte del surtido que pasa por los moldes": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!L9",
+  "tipo": "entrada",
+  "valor": 0.72
+ },
+ "Bombones al día objetivo": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B6",
+  "tipo": "salida",
+  "valor": 471.814
+ },
+ "Bombones al día que permite el conjunto": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B7",
+  "tipo": "salida",
+  "valor": 512.0
+ },
+ "El equipo que limita": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B8",
+  "tipo": "salida",
+  "valor": "Puesto de envasado y montaje de cajas"
+ },
+ "Holgura sobre el día normal (bombones)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B9",
+  "tipo": "salida",
+  "valor": 40.18599999999998
+ },
+ "Holgura sobre el día normal (%)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B10",
+  "tipo": "salida",
+  "valor": 0.08517339460041452
+ },
+ "Veredicto del día normal": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B12",
+  "tipo": "salida",
+  "valor": "AJUSTADO"
+ },
+ "El segundo equipo más justo permite": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B13",
+  "tipo": "salida",
+  "valor": 606.3157894736843
+ },
+ "El segundo equipo más justo es": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B14",
+  "tipo": "salida",
+  "valor": "Puesto de moldeado y desmoldeo (mesa de mármol o granito)"
+ },
+ "Ítems de la ficha de visita": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E25",
+  "tipo": "salida",
+  "valor": 18.0
+ },
+ "Ítems eliminatorios de la ficha": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E26",
+  "tipo": "salida",
+  "valor": 6.0
+ },
+ "Motivos de descarte del local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E27",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Puntos débiles del local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E28",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Pendientes de comprobar del local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E29",
+  "tipo": "salida",
+  "valor": 2.0
+ },
+ "Ficha de visita comprobada (%)": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E31",
+  "tipo": "salida",
+  "valor": 0.8888888888888888
+ },
+ "VEREDICTO DEL LOCAL": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E32",
+  "tipo": "salida",
+  "valor": "NO DECIDAS TODAVÍA"
+ },
+ "Potencia contratable del local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!F6",
+  "tipo": "entrada",
+  "valor": 34
+ },
+ "Superficie útil medida en el local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!F8",
+  "tipo": "entrada",
+  "valor": 77
+ },
+ "Altura libre medida en el local": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!F9",
+  "tipo": "entrada",
+  "valor": 3.1
+ },
+ "Superficie de exposición y venta medida": {
+  "ref": "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!F10",
+  "tipo": "entrada",
+  "valor": 22
+ }
+}

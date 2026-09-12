@@ -1,0 +1,302 @@
+{
+ "Precio de la cobertura negra como lo trae la fuente (con IVA)": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D7",
+  "valor": 25.02,
+  "tipo": "entrada"
+ },
+ "PRECIO DE LA COBERTURA NEGRA EN BASE IMPONIBLE (la celda que copian el libro 4 y el libro 7)": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G7",
+  "valor": 22.745454545454542,
+  "tipo": "salida"
+ },
+ "Precio de la cobertura de origen en base imponible": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G8",
+  "valor": 37.48,
+  "tipo": "salida"
+ },
+ "Precio de la cobertura con leche en base imponible": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G9",
+  "valor": 19.5,
+  "tipo": "salida"
+ },
+ "Precio de la cobertura blanca en base imponible": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G10",
+  "valor": 21.0,
+  "tipo": "salida"
+ },
+ "IVA de la cobertura": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B6",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Food cost objetivo": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B8",
+  "valor": 0.3,
+  "tipo": "parametro"
+ },
+ "Margen bruto objetivo sobre PVP": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B9",
+  "valor": 0.7,
+  "tipo": "salida"
+ },
+ "Food cost máximo antes de dar la referencia por rota": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B10",
+  "valor": 0.35,
+  "tipo": "parametro"
+ },
+ "Piezas vendibles al año": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B14",
+  "valor": 28515.2,
+  "tipo": "salida"
+ },
+ "Semanas de stock objetivo": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B16",
+  "valor": 3,
+  "tipo": "parametro"
+ },
+ "Tipo de interés anual del circulante": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Parámetros!B19",
+  "valor": 0.06,
+  "tipo": "parametro"
+ },
+ "Unidades vendidas al año en toda la carta": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!O44",
+  "valor": 28515.199999999986,
+  "tipo": "salida"
+ },
+ "Kilos de cobertura que se van al año": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!P44",
+  "valor": 1924.7531878399998,
+  "tipo": "salida"
+ },
+ "Coste de la cobertura de todo el año": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!Q44",
+  "valor": 42792.38042869236,
+  "tipo": "salida"
+ },
+ "Coste de materia de todo el año": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D46",
+  "valor": 49482.44556149237,
+  "tipo": "salida"
+ },
+ "Parte del coste de materia que es cobertura": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D47",
+  "valor": 0.8647992220900603,
+  "tipo": "salida"
+ },
+ "Precio de la cobertura negra con una subida del 40 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!E9",
+  "valor": 31.843636363636357,
+  "tipo": "salida"
+ },
+ "Precio de la cobertura negra en el peor escenario": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!E10",
+  "valor": 36.39272727272727,
+  "tipo": "salida"
+ },
+ "Referencias que ya están por encima del food cost máximo con el precio de hoy": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!G44",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Food cost de materia de la tableta de origen, la referencia más expuesta": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U26",
+  "valor": 0.48503529411764706,
+  "tipo": "salida"
+ },
+ "Referencias rotas con una subida del 20 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!I44",
+  "valor": 10.0,
+  "tipo": "salida"
+ },
+ "Referencias rotas con una subida del 40 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!K44",
+  "valor": 11.0,
+  "tipo": "salida"
+ },
+ "Referencias rotas con una subida del 60 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!M44",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "Escenario elegido en la hoja de repercusión": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C6",
+  "valor": "Subida fuerte",
+  "tipo": "entrada"
+ },
+ "Subida del escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C7",
+  "valor": 0.4,
+  "tipo": "salida"
+ },
+ "La referencia que primero se rompe": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C46",
+  "valor": "Tableta de chocolate negro de origen 70 %, 100 g",
+  "tipo": "salida"
+ },
+ "Subida que rompe la primera referencia": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C47",
+  "valor": -0.2856189967982924,
+  "tipo": "salida"
+ },
+ "Referencias rotas en el escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C48",
+  "valor": 11.0,
+  "tipo": "salida"
+ },
+ "Subida media de PVP que haría falta en el escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C49",
+  "valor": 0.026433274990393173,
+  "tipo": "salida"
+ },
+ "Kilos de cobertura negra que se consumen al año": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Stock y Cobertura de Compra!C7",
+  "valor": 462.08596448000003,
+  "tipo": "salida"
+ },
+ "Euros parados en el almacén de cobertura": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Stock y Cobertura de Compra!H11",
+  "valor": 2468.7911785784054,
+  "tipo": "salida"
+ },
+ "Euros parados en la compra anticipada de campaña": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Stock y Cobertura de Compra!P11",
+  "valor": 6583.443142875748,
+  "tipo": "salida"
+ },
+ "Coste financiero de la compra anticipada": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Stock y Cobertura de Compra!Q11",
+  "valor": 60.77024439577613,
+  "tipo": "salida"
+ },
+ "Punto de recompra de la cobertura negra": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Stock y Cobertura de Compra!M7",
+  "valor": 26.658805643076924,
+  "tipo": "salida"
+ },
+ "Coste de cobertura por pieza de Bombon de ganache de chocolate negro 70 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K16",
+  "valor": 0.2019796363636363,
+  "tipo": "salida"
+ },
+ "Food cost de materia de Bombon de ganache de chocolate negro 70 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U16",
+  "valor": 0.11966879999999998,
+  "tipo": "salida"
+ },
+ "Coste de materia de Bombon de ganache de chocolate negro 70 % con una subida del 40 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!J16",
+  "valor": 0.30759947516401115,
+  "tipo": "salida"
+ },
+ "Subida máxima que aguanta Bombon de ganache de chocolate negro 70 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!P16",
+  "valor": 1.9788781587342745,
+  "tipo": "salida"
+ },
+ "PVP con IVA que necesitaría Bombon de ganache de chocolate negro 70 % en el escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!J16",
+  "valor": 1.0940287999999998,
+  "tipo": "salida"
+ },
+ "Recorte de gramaje que evitaría subir el PVP de Bombon de ganache de chocolate negro 70 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N16",
+  "valor": -0.8737905428552917,
+  "tipo": "salida"
+ },
+ "Coste de cobertura por pieza de Bombon de praline de avellana": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K18",
+  "valor": 0.13572,
+  "tipo": "salida"
+ },
+ "Food cost de materia de Bombon de praline de avellana": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U18",
+  "valor": 0.11179142857142858,
+  "tipo": "salida"
+ },
+ "Coste de materia de Bombon de praline de avellana con una subida del 40 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!J18",
+  "valor": 0.27317142857142857,
+  "tipo": "salida"
+ },
+ "Subida máxima que aguanta Bombon de praline de avellana": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!P18",
+  "valor": 3.252270717787958,
+  "tipo": "salida"
+ },
+ "PVP con IVA que necesitaría Bombon de praline de avellana en el escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!J18",
+  "valor": 0.9815960000000001,
+  "tipo": "salida"
+ },
+ "Recorte de gramaje que evitaría subir el PVP de Bombon de praline de avellana": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N18",
+  "valor": -1.6052970018487254,
+  "tipo": "salida"
+ },
+ "Coste de cobertura por pieza de Tableta de chocolate negro de origen 70 %, 100 g": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K26",
+  "valor": 3.7479999999999998,
+  "tipo": "salida"
+ },
+ "Food cost de materia de Tableta de chocolate negro de origen 70 %, 100 g": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U26",
+  "valor": 0.48503529411764706,
+  "tipo": "salida"
+ },
+ "Coste de materia de Tableta de chocolate negro de origen 70 %, 100 g con una subida del 40 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!J26",
+  "valor": 5.300202020202019,
+  "tipo": "salida"
+ },
+ "Subida máxima que aguanta Tableta de chocolate negro de origen 70 %, 100 g": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!P26",
+  "valor": -0.2856189967982924,
+  "tipo": "salida"
+ },
+ "PVP con IVA que necesitaría Tableta de chocolate negro de origen 70 %, 100 g en el escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!J26",
+  "valor": 19.239733333333334,
+  "tipo": "salida"
+ },
+ "Recorte de gramaje que evitaría subir el PVP de Tableta de chocolate negro de origen 70 %, 100 g": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N26",
+  "valor": 0.5582059349401932,
+  "tipo": "salida"
+ },
+ "Coste de cobertura por pieza de Caja surtida de 12 bombones": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K40",
+  "valor": 1.8074549999999998,
+  "tipo": "salida"
+ },
+ "Food cost de materia de Caja surtida de 12 bombones": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U40",
+  "valor": 0.127779025,
+  "tipo": "salida"
+ },
+ "Coste de materia de Caja surtida de 12 bombones con una subida del 40 %": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!J40",
+  "valor": 3.06154472361809,
+  "tipo": "salida"
+ },
+ "Subida máxima que aguanta Caja surtida de 12 bombones": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!P40",
+  "valor": 2.217794181220656,
+  "tipo": "salida"
+ },
+ "PVP con IVA que necesitaría Caja surtida de 12 bombones en el escenario elegido": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!J40",
+  "valor": 11.169535666666667,
+  "tipo": "salida"
+ },
+ "Recorte de gramaje que evitaría subir el PVP de Caja surtida de 12 bombones": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N40",
+  "valor": -0.9517361841237124,
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "sensibilidad-al-precio-del-cacao.xlsx!Instrucciones!A1",
+  "valor": "El precio de la cobertura vive SÓLO en este libro (regla «un concepto, una fuente», §3.3). La celda que copian el libro 4 (cruce 4 <- 3) y el libro 7 (cruce 7 <- 3) es Coste de Cobertura!G7, la de BASE IMPONIBLE: `CHS-28a` publica 25,02 €/kg CON IVA y un escandallo hecho con esa base sale un 9 % alto (A-2). Los dos libros receptores la traen por celda verde con valor por defecto declarado más fila de CUADRE (D32); aquí no hay ni una fórmula que nombre otro fichero. El porcentaje de cobertura sobre el peso de la pieza de la hoja «Coste de Cobertura» NO es el 25 % legal del ap. 1.13 del RD 1055/2003: aquél lo calcula el libro 4 con el chocolate de la cáscara sobre el peso total (`CHN-10`).",
+  "tipo": "nota"
+ }
+}

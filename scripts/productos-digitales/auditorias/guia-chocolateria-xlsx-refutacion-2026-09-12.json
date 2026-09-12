@@ -1,0 +1,218 @@
+[
+  {
+    "id": "A1",
+    "libro": "capacidad-obrador-y-clima.xlsx + campanas-y-valle-del-ano.xlsx",
+    "hoja_celda": "capacidad-obrador-y-clima.xlsx!Cuello de Botella!D18:F29, B31, B32, B34 vs campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F12:H23, B26, B27",
+    "gravedad": "alto",
+    "problema": "Los libros 1 y 6 calculan por su cuenta, con modelos distintos, la demanda y el deficit de las doce campanas y publican cifras contradictorias para el mismo caso. SPEC §2.2 asigna el deficit de capacidad al libro 6 y al libro 1 solo bombones/dia por equipo y el equipo que limita. Ademas el cruce 6<-1 de D32 es «deficit de capacidad» y lo que de verdad viaja es la CAPACIDAD (Cuello de Botella!B7 -> Capacidad vs Demanda del Pico!B6): el deficit de B32 lleva la nota «ES LA CIFRA QUE VIAJA AL LIBRO 6» y no lo trae nadie. Las dos versiones estan en sus mapa-*.json y documentos.py puede citar cualquiera.",
+    "evidencia": "Navidad: libro 1 D29=1.339,95 bombones/dia y F29=-827,95 de deficit; libro 6 F23=1.399,68 y H23=887,68. Reyes: 934,19 vs 474,24. Pascua: 797,37 vs 537,76. Agosto: 476,53 vs 287,20. «Campanas que NO aguantas»: libro 1 B31=10, libro 6 B26=7. Nota libro 1 Cuello de Botella!J33: «ES LA CIFRA QUE VIAJA AL LIBRO 6».",
+    "fix": "gen_capacidad-obrador-y-clima.py: eliminar el bloque Cuello de Botella!A16:J34 (12 filas de campana, B31, B32:B33, B34) y sus etiquetas del mapa; corregir la nota J33 para que apunte a B7, que es lo que viaja. Si se decide lo contrario, regenerar gen_campanas-y-valle-del-ano.py sin sus filas 11-27 y cambiar datos_ejemplo.CRUCES[0] para que viaje el deficit."
+  },
+  {
+    "id": "A2",
+    "libro": "vida-util-rellenos-y-rotacion.xlsx",
+    "hoja_celda": "Vida Util Declarada!L40:L43 y M40:M43",
+    "gravedad": "alto",
+    "problema": "«Pieza mas corta del surtido (dias)» son constantes tecleadas =10, bloqueadas y SIN relleno verde: ni entrada ni salida. No siguen a la vida util declarada de las piezas, asi que el veredicto de caducidad de las cuatro cajas queda congelado y el lector no puede arreglarlo. Ademas el veredicto de fabrica es enganoso: compara contra la familia del kit «ganache con nata UHT» (4-8 semanas) cuando la pieza que manda en esas cajas es BC1, ganache de NATA FRESCA (10-15 dias); los 10 dias no son conservadores, son el maximo posible.",
+    "evidencia": "openpyxl: L40..L43 valor=10, fill=00000000 (no verde), locked=True, sin formula. pycel: bajando Vida Util Declarada!G16 de 10 a 3 dias, G44 pasa a 3 y L40, L41 y M40 NO se mueven. C40:C43 = 'Bombones de ganache con nata UHT, sorbato o alcohol'.",
+    "fix": "gen_vida-util-rellenos-y-rotacion.py: convertir L40:L43 en formula MIN sobre las piezas de cada caja (la composicion ya existe en carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C7:F16 y se puede replicar como columnas auxiliares), o dejarla como celda VERDE con valor por defecto declarado. Y poner en C40:C43 la familia del kit de la pieza mas restrictiva."
+  },
+  {
+    "id": "B1",
+    "libro": "checklist-equipamiento-y-proveedores-cacao.xlsx",
+    "hoja_celda": "Proveedores y EUDR!G7:G12, N7:N12, O7:O12",
+    "gravedad": "alto",
+    "problema": "El libro siembra la columna «operador / operador posterior / comerciante» con «operador posterior» para los SEIS proveedores reales, cuando datos_ejemplo.PROVEEDORES la declara VACIA («vacio: lo rellena el lector») y D48 lo exige asi. Consecuencia legal: el libro dice de fabrica que NO hay que pedir el numero de DDS a Callebaut/Barry Callebaut (que importa grano) ni a la Asociacion Bean to Bar (cuya categoria en la propia hoja es «Grano de cacao»), que son el caso de OPERADOR del art. 5.3.a) (CHN-23, CHN-24). Ademas asigna papel EUDR y semaforo «Completa» a Utilcentre (maquinaria), SelfPackaging (cajas) y Gift Campaign (regalo corporativo), que no comercializan producto pertinente del Anexo I.",
+    "evidencia": "datos_ejemplo.py:2612-2645 PROVEEDORES con papel_eudr='' en las seis tuplas. Fichero: Proveedores y EUDR!G7..G12 = 'operador posterior'; N7 = 'Sus datos, su direccion y el producto: el n de DDS NO se le pide por el art. 5.3.a)'; O7..O12 = 'Completa para su papel en la cadena'. C8 = 'Grano de cacao para bean-to-bar'.",
+    "fix": "gen_checklist-equipamiento-y-proveedores-cacao.py: sembrar G7:G12 con 'No lo se' (valor que ya ofrece el desplegable de la hoja) y que N y O devuelvan «Preguntaselo por escrito antes de comprar» mientras el papel no este resuelto. Para las tres lineas que no venden producto del Anexo I, sacarlas del arbol EUDR con una columna «te vende producto del Anexo I?» o dejar su papel en blanco declarado."
+  },
+  {
+    "id": "B2",
+    "libro": "checklist-legal-licencias-y-cacao.xlsx + checklist-equipamiento-y-proveedores-cacao.xlsx",
+    "hoja_celda": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B6, B41, B42 vs checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E23, E27",
+    "gravedad": "alto",
+    "problema": "Los dos libros publican veredictos OPUESTOS del art. 3 del RD 1021/2022 con el mismo juego de datos. La celda verde B6 (puerta de entrada) viene sembrada con «No» aunque datos_ejemplo.CLIENTES_B2B incluye «Tienda gourmet La Despensa» con tipo «Minorista de distinta titularidad» y la PROPIA tabla del libro 8 la lista tres filas mas abajo. Con B6='No' las tres condiciones del art. 3 quedan decorativas y el veredicto citable del mapa es el equivocado para el caso.",
+    "evidencia": "libro 9 Clientes a los que Suministras!E23=1 y E27='Suministras a otros minoristas: resuelve los TRES semaforos del art. 3 en el libro 8'. libro 8 Suministro a Otros Minoristas!B6='No' (verde), B41='El art. 3 no te aplica: no suministras a otros minoristas de distinta titularidad', B42='Nada de esto te aplica', mientras A13 de esa misma hoja dice 'Tienda gourmet La Despensa' con 9 kg/semana. pycel: con B6='Si' el veredicto pasa a 'Cumples las tres: sigues FUERA del RGSEAA, con la declaracion responsable y el registro del art. 3.5'.",
+    "fix": "gen_checklist-legal-licencias-y-cacao.py: sembrar B6='Si' derivandolo de len([c for c in D.CLIENTES_B2B if c[1]=='Minorista de distinta titularidad'])>0 en vez de escribirlo a mano. Anadir al gate del pack la comprobacion cruzada libro9!E23>0 <=> libro8!B6='Si'."
+  },
+  {
+    "id": "A3",
+    "libro": "calculadora-capex-chocolateria.xlsx, carta-de-apertura-y-escandallo-chocolate.xlsx, checklist-equipamiento-y-proveedores-cacao.xlsx",
+    "hoja_celda": "CAPEX por Bloque!C51; Parametros!A25; Equipamiento!A46",
+    "gravedad": "medio",
+    "problema": "Tres de las ocho celdas de cruce no citan la CELDA de origen que exige D32 («trae aqui la cifra de <fichero>.xlsx!<Hoja>!<Celda>»): se quedan en el nombre de hoja. En hojas de 50-70 filas con columnas auxiliares eso no es lo mismo que una referencia, y el gate que §2.3 encarga cuenta esa cadena.",
+    "evidencia": "C51='Trae aqui el fondo de maniobra de plan-financiero-3-anos-chocolateria.xlsx!Inversion Inicial' (falta B16). A25='...de sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura (columna de base imponible...)' (falta G7). A46='...de calculadora-capex-chocolateria.xlsx!CAPEX por Bloque' (falta L33). Los otros cinco si la llevan: !Cuello de Botella!B7 x2, !Coste de Cobertura!G7, !CAPEX por Bloque!L44, !Equipamiento!I53.",
+    "fix": "Anadir la referencia completa en los tres rotulos de gen_calculadora-capex-chocolateria.py (!Inversion Inicial!B16), gen_carta-de-apertura-y-escandallo-chocolate.py (!Coste de Cobertura!G7) y gen_checklist-equipamiento-y-proveedores-cacao.py (!CAPEX por Bloque!L33)."
+  },
+  {
+    "id": "A4",
+    "libro": "plan-financiero-3-anos-chocolateria.xlsx",
+    "hoja_celda": "Inversion Inicial!A6 y B6",
+    "gravedad": "medio",
+    "problema": "El cruce 7<-2 apunta a 'calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L44', una celda de trabajo, cuando la SPEC §2.3 y datos_ejemplo.CRUCES[5]['hoja_origen'] dicen 'Resumen'. Esa hoja EXISTE en el libro 2 y publica la linea en Resumen!A7/B7. La duda declarada por el constructor («NO hay hoja Resumen en su libro») es falsa.",
+    "evidencia": "calculadora-capex-chocolateria.xlsx tiene 7 hojas y la 7a es 'Resumen'; Resumen!A7='CAPEX SIN el fondo de maniobra', B7= 'CAPEX por Bloque'!L44 = 89.219,35. Inversion Inicial!A6 cita ...!CAPEX por Bloque!L44.",
+    "fix": "gen_plan-financiero-3-anos-chocolateria.py: cambiar el rotulo a calculadora-capex-chocolateria.xlsx!Resumen!B7 y ajustar la nota D6. El valor por defecto no cambia."
+  },
+  {
+    "id": "A5",
+    "libro": "datos_ejemplo.py (afecta a los 9)",
+    "hoja_celda": "guia-chocolateria/datos_ejemplo.py, lista CRUCES",
+    "gravedad": "medio",
+    "problema": "Cuatro de las ocho entradas de CRUCES nombran hojas que no existen en los ficheros construidos, asi que el gate_libros.py que la SPEC encarga no puede validar los ocho cruces contra esa tabla sin dar falsos negativos.",
+    "evidencia": "CRUCES n=4 y n=5: hoja_origen='Coste de Cobertura por Referencia' (33 caracteres; la hoja real es 'Coste de Cobertura', 18). CRUCES n=4: hoja_receptor='Escandallo por Molde/Tanda' (la barra esta prohibida en un nombre de hoja; la hoja real es 'Escandallo por Molde y Tanda' y la celda verde vive en 'Parametros'). CRUCES n=2: hoja_receptor='Tesoreria 12 meses' (real 'Tesoreria 12 meses' con tilde). CRUCES n=5: hoja_receptor='PyG 3 Anos' (real 'PyG 3 Anos' con enye).",
+    "fix": "Corregir las cuatro entradas de CRUCES en datos_ejemplo.py con los nombres reales (los mapa-*.json ya los llevan bien) ANTES de escribir gate_libros.py, y actualizar SPEC §2.2/§2.3 en los mismos cuatro sitios."
+  },
+  {
+    "id": "A6",
+    "libro": "calculadora-capex-chocolateria.xlsx",
+    "hoja_celda": "CAPEX por Bloque!I28, J28, K28 y L51; rotulo C28; nota Resumen!D8",
+    "gravedad": "medio",
+    "problema": "El fondo de maniobra entra por dos puertas verdes en el mismo libro: la fila del bloque (K28, que es la que suma al CAPEX) y la celda del cruce (L51, la que lleva el rotulo «trae aqui»). La fila de CUADRE compara el libro contra si mismo, no contra el libro 7, y obliga a teclear el mismo numero dos veces. Ademas el rotulo de la partida habla de MESES en una linea cuyo importe esta en euros, justo donde R4-A1 prohibe que el libro 2 pida meses de colchon; y la nota del Resumen contradice a su propio rotulo.",
+    "evidencia": "I28=J28=K28=61425.95 (verdes) y L51=61425.95 (verde). L52='=K28'. L54 compara L52 con L51. C28='Colchon de tesoreria (meses de gastos fijos)'. Resumen!A8='Del cual, fondo de maniobra (es caja, no inversion)' con nota D8='...No es prudencia: es inversion, y por eso esta dentro del total.'",
+    "fix": "gen_calculadora-capex-chocolateria.py: hacer I28/J28/K28 = formula '=L51' dejando el cruce como unica celda verde del concepto; renombrar C28 a 'Fondo de maniobra traido del libro 7 (EUR)'; reescribir la nota D8 para que no contradiga a A8."
+  },
+  {
+    "id": "B3",
+    "libro": "sensibilidad-al-precio-del-cacao.xlsx + carta-de-apertura-y-escandallo-chocolate.xlsx",
+    "hoja_celda": "Escenarios de Precio!G16:G43 y G44 vs Coste Hora y Mano de Obra!Q7:Q34",
+    "gravedad": "medio",
+    "problema": "Las dos columnas se llaman «Food cost» y usan bases distintas: el libro 3 divide el coste de materia SIN merma entre el PVP sin IVA y el libro 4 lo hace CON la merma no recuperable. Las 28 referencias salen sistematicamente mas bajas en el libro 3 y en una la diferencia cruza el techo del 35 %: los dos libros discrepan sobre si TB4 esta rota. El contador de «rotas hoy» publica 6 donde con la base del libro 4 son 7, y el libro 3 es justamente el que decide «la referencia que primero se rompe» y «la subida maxima que aguanta».",
+    "evidencia": "TB4 tableta de chocolate negro con almendra marcona: Escenarios de Precio!G32=0,3464 (por debajo del techo) frente a Coste Hora y Mano de Obra!Q?=0,3535 (por encima). TB1 0,4850 vs 0,4899; BC1 0,1197 vs 0,1234. Escenarios de Precio!G44=6 rotas; recalculado con la base del libro 4 son 7. Formula del 3: F16=$D16+$C16*$D$7 (sin merma). Formula del 4: Q7=L7/P7 con L7='Escandallo por Molde y Tanda'!O70 (con merma).",
+    "fix": "gen_sensibilidad-al-precio-del-cacao.py: aplicar en la columna de coste de materia la misma merma no recuperable que usa el libro 4 (datos_ejemplo.coste_materia_con_merma), o renombrar las columnas a «Coste de MATERIA sobre PVP (sin merma)» y publicar la equivalencia al lado. La primera opcion es la que respeta «un concepto, una fuente»."
+  },
+  {
+    "id": "B4",
+    "libro": "plan-financiero-3-anos-chocolateria.xlsx",
+    "hoja_celda": "Inversion Inicial!B11 y su nota D11; cadena B26 -> B27 -> PyG 3 Anos!C29",
+    "gravedad": "medio",
+    "problema": "La base de amortizacion no coincide con la nota que la explica: la nota dice que descuenta la fianza Y el primer pedido de packaging y moldes, y el numero solo descuenta la fianza. La amortizacion anual sale 300,44 EUR/ano alta y entra en los costes fijos, el punto de equilibrio, el margen neto, el fondo de maniobra y, por el cruce 2<-7, en la inversion total de los dos libros y en el bonus 1. Ademas el rotulo dice «traido del libro 2» y el libro 2 no publica esa cifra en ninguna celda.",
+    "evidencia": "B11=86.619,35 = 89.219,35 - 2.600 (fianza, CAPEX por Bloque!I24). El bloque «Packaging y moldes» del libro 2 vale L36=3.004,36 y no se resta. D11='El CAPEX menos la FIANZA (que es un deposito y se recupera) y menos el primer pedido de packaging y moldes de consumo (que son existencias, no inmovilizado).' B27=B26/10=8.661,935; con la base correcta (83.614,99) serian 8.361,50.",
+    "fix": "gen_plan-financiero-3-anos-chocolateria.py: o B11 = 89.219,35 - 2.600 - 3.004,36 = 83.614,99, o corregir la nota D11 para que diga que solo se descuenta la fianza (la primera es la coherente con D26). Y gen_calculadora-capex-chocolateria.py deberia publicar la linea «Inmovilizado amortizable» en su hoja Resumen para que la etiqueta «traido del libro 2» sea cierta."
+  },
+  {
+    "id": "B5",
+    "libro": "plan-financiero-3-anos-chocolateria.xlsx + checklist-legal-licencias-y-cacao.xlsx",
+    "hoja_celda": "Canales y Punto Muerto!B30, B31, B32 vs Suministro a Otros Minoristas!B20, B21, B22",
+    "gravedad": "medio",
+    "problema": "Los dos libros resuelven la via a) del art. 3.2 con bases distintas y numeros distintos: el libro 7 usa el porcentaje de las VENTAS EN EUROS de todo el canal B2B y el libro 8 usa el porcentaje del VOLUMEN anual y solo de los minoristas de distinta titularidad. El art. 3 habla de volumen de alimentos comercializados, no de facturacion, y la hosteleria y el regalo corporativo no son establecimientos minoristas.",
+    "evidencia": "libro 7 Canales y Punto Muerto!B30=0,11 (=B8, % de ventas del canal 'B2B a hosteleria'), B31=0,25, B32='Marginal por la via a): sigue la comprobacion en el libro de licencias'. libro 8 Suministro a Otros Minoristas!B21=0,14 (suma de C11:C16, % del volumen anual) y B22='Si'.",
+    "fix": "gen_plan-financiero-3-anos-chocolateria.py: quitar el calculo del art. 3 de la hoja de canales y dejar solo el puntero al libro 8 (que es lo que ya hace bien la nota A33). Si se quiere conservar un aviso numerico, que compare el peso en euros contra un umbral propio declarado y que no lo llame «via a) del art. 3.2»."
+  },
+  {
+    "id": "B6",
+    "libro": "vida-util-rellenos-y-rotacion.xlsx",
+    "hoja_celda": "Temperatura y Vitrina!D22, D46:D49, F22, F46:F49, F50",
+    "gravedad": "medio",
+    "problema": "El criterio del libro para un surtido es «se comporta como su pieza mas delicada» y se aplica a la aw y a la vida util, pero NO a la temperatura: BC1 se declara a 4 C y el libro responde «Nevera de rellenos, no vitrina / No con esta vitrina», mientras las cuatro cajas que lo llevan dentro se declaran a 18 C y el libro responde «Si, esta dentro del rango de tu vitrina». El recuento de referencias que van a nevera da 2 cuando por el mismo criterio deberian ser 6, y la caja es la unidad de venta real del negocio.",
+    "evidencia": "Tipo de Relleno y aw: E16 (BC1)=0,88 y E40:E43 (CJ1-CJ4)=0,88. Vida Util Declarada: G16=10 y G40:G43=10. Temperatura y Vitrina: D22=4 con F22='No con esta vitrina...', D46:D49=18 con F46:F49='Si, esta dentro del rango de tu vitrina'; F50=2. Tipo de Relleno y aw!J16 (literal del kit): 'Actividad de agua alta: en refrigeracion a 0-4 grados C y atemperar CERRADOS antes de abrir, o condensan'.",
+    "fix": "gen_vida-util-rellenos-y-rotacion.py: sembrar la temperatura declarada de las cuatro cajas con la MINIMA de las piezas que componen cada una (el mismo criterio que ya se aplica a la aw y a la vida util), o declarar explicitamente en la nota que el surtido se despacha atemperado y excluir a BC1 de las cajas."
+  },
+  {
+    "id": "B7",
+    "libro": "campanas-y-valle-del-ano.xlsx + capacidad-obrador-y-clima.xlsx",
+    "hoja_celda": "Calendario de Campanas!E7 y E16; Cuello de Botella!H18 y H27",
+    "gravedad": "medio",
+    "problema": "El producto estrella de Reyes (enero) y de Halloween (octubre) es «TF1 - Huevo de Pascua de chocolate con leche, 250 g» en los dos libros. Es el producto que fija las unidades incrementales del pico y esta en los mapas. La causa esta aguas arriba: la familia «Turrones, figuras y temporada» de datos_ejemplo.CARTA no tiene ninguna figura de Reyes, pese a que SPEC §3.2 define la familia como «(huevos de Pascua, monas, figuras de Reyes, turron de chocolate)».",
+    "evidencia": "Calendario de Campanas!E7='TF1 - Huevo de Pascua de chocolate con leche, 250 g' para la campana 'Reyes'; E16 lo mismo para 'Halloween'. Cuello de Botella!H18='TF1' (Enero, Reyes) y H27='TF1' (Octubre, Halloween). datos_ejemplo: por_familia('Turrones, figuras y temporada') = TF1 huevo, TF2 mona, TF3 hueso de santo, TF4 turron, TF5 almendras banadas.",
+    "fix": "datos_ejemplo.py: sustituir una de las cinco por una figura de Reyes (o anadirla y ajustar el recuento de 28) y apuntar Halloween a una referencia que exista (TF3 o BC5). Mientras tanto, gen_campanas-y-valle-del-ano.py y gen_capacidad-obrador-y-clima.py no deberian publicar un producto estrella cuyo nombre contradice al mes."
+  },
+  {
+    "id": "B8",
+    "libro": "los 9",
+    "hoja_celda": "201 notas de celda con la cabecera «Verificado el 12-09-2026»",
+    "gravedad": "medio",
+    "problema": "170 de las 201 notas legales citan la norma y la URL pero NO el articulo, que es lo que exige la regla 1 de §2.3 («norma y articulo»). El libro 4 (38 notas, toda la capa de denominaciones del RD 1055/2003) y el libro 3 (7, incluido el tipo de IVA) van al 0 %.",
+    "evidencia": "Recuento con articulo/apartado/anexo/epigrafe por libro: libro 4 0/38, libro 3 0/7, libro 6 0/3, libro 9 1/14, libro 1 3/12, libro 2 3/14, libro 7 3/24, libro 5 2/14, libro 8 19/75. Ejemplo: Denominaciones y Minimos!E7 sostiene el 25 % del bombon con 'Verificado el 12-09-2026 . Real Decreto 1055/2003 ... texto consolidado . URL', sin el ap. 1.13 ni el ap. 4, que es la pareja que D37 declara «prohibido invertir». Las siete notas del IVA citan la Ley 37/1992 entera sin el art. 91.Uno.1.1.",
+    "fix": "El helper nota_legal(id) de _comun_chocolateria.py debe componer la nota con el articulo de la ficha CHN-* y ABORTAR si el texto resultante no contiene 'art.', 'ap.', 'Anexo' o 'Epigrafe'. Un gate de una linea arregla los nueve libros."
+  },
+  {
+    "id": "A7",
+    "libro": "calculadora-capex-chocolateria.xlsx",
+    "hoja_celda": "IVA y Tesoreria!B36 (etiqueta «Coste anual del impuesto al plastico» de mapa-calculadora-capex-chocolateria.json)",
+    "gravedad": "bajo",
+    "problema": "La formula devuelve cadena vacia a proposito, inject_cache la deja en None y el mapa publica la etiqueta con valor vacio. documentos.py resuelve las referencias del guion con data_only=True: un capitulo que la cite imprimira nada, sin aviso.",
+    "evidencia": "mapa-calculadora-capex-chocolateria.json: {'Coste anual del impuesto al plastico': {'ref': 'calculadora-capex-chocolateria.xlsx!IVA y Tesoreria!B36', 'valor': '', ...}}; la celda leida con data_only=True vale None.",
+    "fix": "gen_calculadora-capex-chocolateria.py: sacar esa etiqueta del mapa o publicar en su lugar IVA y Tesoreria!B37 ('Sin alerta'), que tiene contenido en los dos estados."
+  },
+  {
+    "id": "A8",
+    "libro": "los 9",
+    "hoja_celda": "entrada '_notas' de los nueve mapa-*.json",
+    "gravedad": "bajo",
+    "problema": "Los nueve mapas llevan una entrada '_notas' con tipo 'nota' (no permitido: solo entrada|salida|parametro) que apunta a Instrucciones!A1 y cuyo valor declarado no es el de la celda. Infla el recuento de etiquetas en uno y hace que cualquier gate que compare mapa contra fichero marque nueve desajustes falsos.",
+    "evidencia": "mapa-campanas-y-valle-del-ano.json: '_notas' -> ref 'campanas-y-valle-del-ano.xlsx!Instrucciones!A1', valor 'Libro 6 del pack. Frontera K2: el BONUS...', celda real = 'Campanas y Valle del Ano'. Igual en los nueve.",
+    "fix": "Mover el texto a una clave hermana fuera del diccionario de etiquetas ({'_meta': {...}, 'etiquetas': {...}}) o quitarla; y que el gate de recuento cuente solo las entradas con tipo valido."
+  },
+  {
+    "id": "A9",
+    "libro": "8 de los 9",
+    "hoja_celda": "la celda A1 de 11 hojas",
+    "gravedad": "bajo",
+    "problema": "El titulo que se imprime en A1 pasa por un title() ingenuo y sube preposiciones y pronombres, contra la regla de Title Case espanol del proyecto; y en dos casos deja en minuscula la palabra que sigue a los dos puntos. Las PESTANAS si estan bien: el defecto esta solo en el titulo de A1.",
+    "evidencia": "'CAPEX Por Bloque' (libro 2), 'Capacidad Vs Demanda del Pico' (6), 'Capacidad Por Equipo' (1), 'Escandallo Por Molde y Tanda' y 'Unidad Vs Caja' (4), 'Coste de Cobertura Por Referencia' (3), 'Lote y Merma Por Caducidad' (5), 'Clientes a los Que Suministras: el Registro del Art. 5.3.b)' (9), 'Inversion Inicial: la Cifra Que Viene y la Que Se Dota Aqui' y 'Talleres y Regalo Corporativo: las Dos Lineas Que No Dependen del Cacao' (7), 'EUDR: Tu Papel en la Cadena y Que Fecha Te Corre' (8).",
+    "fix": "El helper de titulo de _comun_chocolateria.py tiene que respetar una lista de palabras funcionales (de, del, la, el, los, las, y, o, a, en, con, por, para, que, se, su, tu, vs, no, sin) y capitalizar despues de ':'. Un solo arreglo corrige los once."
+  },
+  {
+    "id": "A10",
+    "libro": "los 9",
+    "hoja_celda": "freeze_panes y pie de version de las 69 hojas",
+    "gravedad": "bajo",
+    "problema": "Acabado inconsistente entre los cinco constructores: freeze_panes no existe en NINGUNA hoja de los libros 1, 2, 3, 4 y 6 (en tablas de 28 a 44 filas con cabecera se pierde el encabezado al primer scroll), esta en 7 de 11 del libro 7, en todas menos una del 5 y del 8 y en todas menos dos del 9. Y la linea de version al pie: los libros 4, 6 y 9 la repiten en todas sus hojas y los otros seis solo en Instrucciones. Ninguna de las dos incumple la convencion, pero el pack se lee como tres productos distintos.",
+    "evidencia": "openpyxl ws.freeze_panes: libros 1, 2, 3, 4 y 6 -> None en las 7/7/6/9/7 hojas. Linea 'Version 1.0 . septiembre 2026 . aichef.pro/guia-chocolateria-obrador . info@aichef.pro' presente en todas las hojas de los libros 4, 6 y 9 y solo en Instrucciones de los libros 1, 2, 3, 5, 7 y 8.",
+    "fix": "Bajar las dos decisiones a _comun_chocolateria.py (un cerrar_hoja() que aplique freeze_panes en la fila de cabecera y escriba el pie) y llamarlo desde los nueve generadores."
+  },
+  {
+    "id": "B9",
+    "libro": "carta-de-apertura-y-escandallo-chocolate.xlsx",
+    "hoja_celda": "Denominaciones y Minimos!F20, F21, F27, F29 contra J20/K20 y siguientes",
+    "gravedad": "bajo",
+    "problema": "La hoja nombra el tope del 40 % de materias comestibles anadidas del ap. 3 en cuatro referencias y no lo evalua, teniendo ya los gramos para hacerlo. Una hoja que nombra un limite y no lo calcula invita a suponer que lo ha comprobado; el 25 % del ap. 1.13, en cambio, si se calcula y tiene veredicto.",
+    "evidencia": "F20='ap. 1.6 con materias comestibles anadidas del ap. 3: no pueden exceder el 40 % del peso total del producto acabado' con J20=22 y K20=100 (22 %), sin columna de comprobacion. Igual en F21 (TB5, 20 %), F27 (TF2, 5 %) y F29 (TF4, 32,8 %).",
+    "fix": "gen_carta-de-apertura-y-escandallo-chocolate.py: anadir una columna «Materias anadidas sobre el peso total» = J/K y su semaforo contra un parametro 0,40 en la zona de minimos (A38:B41), igual que el 25 %."
+  },
+  {
+    "id": "B10",
+    "libro": "carta-de-apertura-y-escandallo-chocolate.xlsx",
+    "hoja_celda": "Denominaciones y Minimos!M31:M34 y N31:N34",
+    "gravedad": "bajo",
+    "problema": "El minimo del 25 % de los aps. 1.10 y 1.13 se aplica a las CAJAS surtidas, que no son una pieza sino un agregado con denominacion de surtido (aps. 6.a) y 6.c) de CHN-13, que son regla de etiquetado, no categoria con minimo de composicion). El resultado pasa (42 %) pero ensena una regla que no existe: un surtido podria cumplir en el agregado llevando dentro una pieza que no cumple.",
+    "evidencia": "M31:M34='Si' y N31:N34='CUMPLE el 25 % sobre el peso total' para CJ1-CJ4, cuyo D31:D34='Chocolates rellenos surtidos' y F31='ap. 6.a) y 6.c): la denominacion va por pieza o, si el surtido es de los aps. 1.6 a 1.10 y 1.13, se sustituye...'.",
+    "fix": "gen_carta-de-apertura-y-escandallo-chocolate.py: poner M31:M34='No' y que N diga «La denominacion va por pieza: el 25 % lo comprueba cada bombon en su propia fila», que es lo que el propio F31 ya explica."
+  },
+  {
+    "id": "B11",
+    "libro": "calculadora-capex-chocolateria.xlsx",
+    "hoja_celda": "Instrucciones (las 7 hojas)",
+    "gravedad": "bajo",
+    "problema": "Es el unico de los nueve libros que no menciona el kit-tareas-chocolateria en ninguna hoja. §2.2 no le asigna frontera explicita, asi que no incumple, pero es el unico libro del pack sin cross-sell al kit de 12 EUR y sin la frase que evita que el comprador crea que la guia repite lo que ya tiene.",
+    "evidencia": "Busqueda de 'kit-tareas-chocolateria' y 'Kit de Tareas' en las 7 hojas de calculadora-capex-chocolateria.xlsx: 0 ocurrencias. Los otros ocho libros lo citan.",
+    "fix": "gen_calculadora-capex-chocolateria.py: anadir el bloque de frontera de _comun_chocolateria.py, aunque sea para decir que el kit no cubre la inversion."
+  },
+  {
+    "id": "B12",
+    "libro": "checklist-legal-licencias-y-cacao.xlsx",
+    "hoja_celda": "EUDR - Tu Papel en la Cadena!B18, B19, B20 (las tres en el mapa)",
+    "gravedad": "bajo",
+    "problema": "Con B13 sembrada en «No lo se» -que es honesto y coherente con D19- las tres salidas citables de la hoja EUDR publican «Sin resolver...». Estan en mapa-checklist-legal-licencias-y-cacao.json, y un capitulo que las cite imprimira «Sin resolver: primero aclara tu papel» como si fuera la conclusion del caso «La Almendra».",
+    "evidencia": "B18='Sin resolver: pregunta a tu proveedor si tu cobertura esta amparada por una declaracion', B19='Sin resolver: primero aclara tu papel', B20='Primero aclara tu papel: sin eso no se sabe que te toca'. pycel: con B12='Importo grano de cacao de fuera de la UE' las tres se resuelven a OPERADOR / 30 de diciembre de 2026 / diligencia debida completa.",
+    "fix": "gen_checklist-legal-licencias-y-cacao.py: mantener la siembra (es la decision correcta) pero sacar esas tres etiquetas del mapa o renombrarlas para que un capitulo no las pueda citar como conclusion."
+  },
+  {
+    "id": "B13",
+    "libro": "checklist-equipamiento-y-proveedores-cacao.xlsx",
+    "hoja_celda": "Clientes a los que Suministras!D13 y E13",
+    "gravedad": "bajo",
+    "problema": "La fila publica dos cosas incompatibles: tipo «Minorista de distinta titularidad» y canal «B2B a hosteleria» para una tienda gourmet. Viene de datos_ejemplo.CLIENTES_B2B[3], cuyo canal es 'B2B hosteleria'. El contador por TIPO lo resuelve bien y la nota lo explica, pero el desplegable de canal no ofrece ninguna alternativa para un minorista.",
+    "evidencia": "D13='Minorista de distinta titularidad', E13='B2B a hosteleria', B13='Tienda gourmet La Despensa'. datos_ejemplo.py:2669-2672.",
+    "fix": "Anadir «B2B a minorista» a la lista de canales de la tabla de clientes del libro 9 (en datos_ejemplo y en el desplegable de la hoja) y reasignar ese cliente. Los CINCO canales del libro 7 son los de §3.4 y no se tocan: es otra lista."
+  },
+  {
+    "id": "B14",
+    "libro": "checklist-legal-licencias-y-cacao.xlsx",
+    "hoja_celda": "Ruta Domestica!B20",
+    "gravedad": "bajo",
+    "problema": "NO ES UN DEFECTO, y se anota para que nadie lo «arregle»: la nota lleva fecha 10-09-2026 mientras las otras 200 llevan 12-09-2026. Es la cita literal del art. 13.9 sostenida por PA-29c, reutilizada de Pasteleria, que es el origen (d) que §3 declara valido y que exige citarla con SU fecha de verificacion. Ninguna ficha CHN-* cubre el tope de 100 kg.",
+    "evidencia": "Ruta Domestica!B20 = cita literal del art. 13.9; su nota arranca 'Verificado el 10-09-2026'. Las otras 200 notas del pack: 'Verificado el 12-09-2026'.",
+    "fix": "Ninguno en el generador. Lo que hay que hacer es que gate_libros.py NO exija una unica fecha de verificacion, o tumbara esta nota; debe tolerar la fecha propia de los ids PA-* reutilizados."
+  }
+]

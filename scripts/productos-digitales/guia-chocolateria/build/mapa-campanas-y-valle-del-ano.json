@@ -1,0 +1,467 @@
+{
+ "Ventas anuales sin IVA en crucero": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B7",
+  "valor": 199087.94,
+  "tipo": "entrada"
+ },
+ "Ticket medio sin IVA": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B11",
+  "valor": 9.774545365278868,
+  "tipo": "salida"
+ },
+ "Bombones de obrador al dia en crucero": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B12",
+  "valor": 472,
+  "tipo": "entrada"
+ },
+ "Dias de apertura al ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B10",
+  "valor": 304,
+  "tipo": "entrada"
+ },
+ "Margen bruto medio con el mix del ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B14",
+  "valor": 0.7478,
+  "tipo": "entrada"
+ },
+ "Margen bruto medio con el mix de julio y agosto": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B15",
+  "valor": 0.7422,
+  "tipo": "entrada"
+ },
+ "Coste por hora pagada del refuerzo": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B23",
+  "valor": 13.364482584269666,
+  "tipo": "salida"
+ },
+ "Gastos fijos mensuales": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B27",
+  "valor": 10212.17,
+  "tipo": "entrada"
+ },
+ "Tipo de interes anual del circulante": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Parámetros!B26",
+  "valor": 0.062,
+  "tipo": "parametro"
+ },
+ "Dias de campana al ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!J19",
+  "valor": 152.0,
+  "tipo": "salida"
+ },
+ "Unidades incrementales de las doce campanas": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!L19",
+  "valor": 2512.0,
+  "tipo": "salida"
+ },
+ "Facturacion de las doce campanas con IVA": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!M19",
+  "valor": 58239.8,
+  "tipo": "salida"
+ },
+ "Facturacion de las doce campanas sin IVA": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N19",
+  "valor": 52945.27272727272,
+  "tipo": "salida"
+ },
+ "Facturacion incremental de las doce campanas sin IVA": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!O19",
+  "valor": 46134.0,
+  "tipo": "salida"
+ },
+ "Suma de los coeficientes de estacionalidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!C19",
+  "valor": 11.999999999999998,
+  "tipo": "salida"
+ },
+ "Ventas repartidas en los doce meses": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E19",
+  "valor": 199087.94,
+  "tipo": "salida"
+ },
+ "Ventas de diciembre sin IVA": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E18",
+  "valor": 23890.5528,
+  "tipo": "salida"
+ },
+ "Ventas de agosto sin IVA": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E14",
+  "valor": 9954.396999999999,
+  "tipo": "salida"
+ },
+ "Peso de diciembre sobre el ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F18",
+  "valor": 0.12000000000000001,
+  "tipo": "salida"
+ },
+ "Peso de agosto sobre el ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F14",
+  "valor": 0.049999999999999996,
+  "tipo": "salida"
+ },
+ "Veces un dia medio que factura un dia de diciembre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!H18",
+  "valor": 1.5860869565217393,
+  "tipo": "salida"
+ },
+ "Peso de las doce campanas sobre el ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!D35",
+  "valor": 0.2659391258318948,
+  "tipo": "salida"
+ },
+ "Peso incremental de las doce campanas sobre el ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F35",
+  "valor": 0.23172674346823818,
+  "tipo": "salida"
+ },
+ "Capacidad diaria del obrador traida del libro 1": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B6",
+  "valor": 512,
+  "tipo": "entrada"
+ },
+ "Desviacion del cuadre de capacidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B8",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto del cuadre de capacidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B9",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Campanas que no aguanta el obrador": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B26",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Campanas con deficit despues de adelantar": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B27",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Bombones de obrador extra de las doce campanas": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!N24",
+  "valor": 29248.0,
+  "tipo": "salida"
+ },
+ "Coste del refuerzo de todo el ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!E19",
+  "valor": 3808.877536516855,
+  "tipo": "salida"
+ },
+ "Inversion en moldes de temporada del ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!G19",
+  "valor": 1810.0,
+  "tipo": "salida"
+ },
+ "Inversion en packaging de temporada del ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!I19",
+  "valor": 4040.0,
+  "tipo": "salida"
+ },
+ "Tesoreria inmovilizada en campanas": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!J19",
+  "valor": 5850.0,
+  "tipo": "salida"
+ },
+ "Coste financiero del inmovilizado de campana": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!L19",
+  "valor": 68.89304109589041,
+  "tipo": "salida"
+ },
+ "Resultado incremental de las doce campanas": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N19",
+  "valor": 30621.234622387252,
+  "tipo": "salida"
+ },
+ "Ventas de agosto frente a un mes medio": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B13",
+  "valor": 0.6,
+  "tipo": "salida"
+ },
+ "Caida del margen al cambiar el mix en verano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B16",
+  "valor": -0.005600000000000049,
+  "tipo": "salida"
+ },
+ "Resultado de agosto": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B20",
+  "valor": -2824.0165466000008,
+  "tipo": "salida"
+ },
+ "Resultado de un mes medio": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B21",
+  "valor": 2194.326794333334,
+  "tipo": "salida"
+ },
+ "Lo que cuesta agosto frente a un mes medio": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B22",
+  "valor": -5018.343340933335,
+  "tipo": "salida"
+ },
+ "Veredicto de agosto": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B23",
+  "valor": "Agosto da pérdida: provisiónala, no cierres la tienda",
+  "tipo": "salida"
+ },
+ "Bombones de obrador al ano en crucero": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B27",
+  "valor": 143488.0,
+  "tipo": "salida"
+ },
+ "Las campanas sobre la produccion del ano": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B28",
+  "valor": 0.20383586083853703,
+  "tipo": "salida"
+ },
+ "Cuadre interno de unidades de campana": {
+  "ref": "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B29",
+  "valor": "CUADRA: las campañas caben dentro del año",
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Reyes": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N7",
+  "valor": 3363.6363636363635,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Reyes": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F12",
+  "valor": 474.24,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Reyes": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I12",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Reyes": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N7",
+  "valor": 2515.327272727273,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de San Valentin": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N8",
+  "valor": 5999.999999999999,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en San Valentin": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F13",
+  "valor": 1139.64,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de San Valentin": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I13",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de San Valentin": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N8",
+  "valor": 3426.581437789469,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Dia del Padre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N9",
+  "valor": 1890.9090909090908,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Dia del Padre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F14",
+  "valor": 715.44,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Dia del Padre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I14",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Dia del Padre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N9",
+  "valor": 977.6540174346201,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Pascua": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N10",
+  "valor": 5045.454545454545,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Pascua": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F15",
+  "valor": 537.76,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Pascua": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I15",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Pascua": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N10",
+  "valor": 2976.177508584382,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de COMUNIONES (pico) y Dia de la Madre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N11",
+  "valor": 6058.181818181818,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en COMUNIONES (pico) y Dia de la Madre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F16",
+  "valor": 844.2,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de COMUNIONES (pico) y Dia de la Madre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I16",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de COMUNIONES (pico) y Dia de la Madre": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N11",
+  "valor": 3528.9784511103026,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de COMUNIONES (ultimas)": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N12",
+  "valor": 1832.7272727272725,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en COMUNIONES (ultimas)": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F17",
+  "valor": 602.24,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de COMUNIONES (ultimas)": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I17",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de COMUNIONES (ultimas)": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N12",
+  "valor": 1215.7609763387297,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Temporada turistica": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N13",
+  "valor": 3148.3636363636365,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Temporada turistica": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F18",
+  "valor": 399.03999999999996,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Temporada turistica": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I18",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Temporada turistica": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N13",
+  "valor": 1568.5178620174347,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Valle del obrador": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N14",
+  "valor": 1467.8181818181818,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Valle del obrador": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F19",
+  "valor": 287.2,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Valle del obrador": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I19",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Valle del obrador": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N14",
+  "valor": 487.8375272727273,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Apertura de agenda corporativa": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N15",
+  "valor": 2472.7272727272725,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Apertura de agenda corporativa": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F20",
+  "valor": 480.92,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Apertura de agenda corporativa": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I20",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Apertura de agenda corporativa": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N15",
+  "valor": 1381.9778032378579,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Halloween": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N16",
+  "valor": 1210.9090909090908,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Halloween": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F21",
+  "valor": 492.44,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Halloween": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I21",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Halloween": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N16",
+  "valor": 826.4433150684931,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Todos los Santos y Black Friday": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N17",
+  "valor": 654.5454545454545,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Todos los Santos y Black Friday": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F22",
+  "valor": 609.2,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Todos los Santos y Black Friday": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I22",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Todos los Santos y Black Friday": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N17",
+  "valor": 150.4106153434451,
+  "tipo": "salida"
+ },
+ "Facturacion sin IVA de la campana de Navidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N18",
+  "valor": 19800.0,
+  "tipo": "salida"
+ },
+ "Demanda de bombones de obrador al dia en Navidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!F23",
+  "valor": 1399.6799999999998,
+  "tipo": "salida"
+ },
+ "Aguanta el obrador la campana de Navidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!I23",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Resultado incremental de la campana de Navidad": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N18",
+  "valor": 11565.56783546252,
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "campanas-y-valle-del-ano.xlsx!Instrucciones!A1",
+  "valor": "Libro 6 del pack. Frontera K2: el BONUS-02-calendario-anual-tareas.xlsx del Kit de Tareas Chocolatería (12 €) pone las fechas y el qué; este libro pone los euros y el «si aguantas». Las doce filas del calendario bajan como copia declarada y sus acciones y productos se citan literales. D35: siete meses «Alta», cuatro «Media» y UNO «Baja», con las COMUNIONES (abril-junio) como campaña propia. D36: el valle es AGOSTO -un mes de doce- y lo que para es el OBRADOR, no la caja: la tienda abre para el turista y los envíos se paran de junio a septiembre, que es canal online. Cruce 6 <- 1 (D32): la capacidad diaria es una celda VERDE que trae la cifra de capacidad-obrador-y-clima.xlsx!Cuello de Botella, con valor por defecto declarado y fila de CUADRE; no hay ni una fórmula entre ficheros. Todo se cuenta en BOMBONES DE OBRADOR: una caja de 35 bombones es una venta y treinta y seis bombones de obrador.",
+  "tipo": "nota"
+ }
+}

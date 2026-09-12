@@ -1,0 +1,382 @@
+{
+ "Trámites del expediente": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D58",
+  "valor": 33.0,
+  "tipo": "salida"
+ },
+ "Trámites hechos": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D59",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites que no te aplican": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D60",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Avance del expediente": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D61",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Coste previsto total del checklist": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D62",
+  "valor": 87840.0,
+  "tipo": "salida"
+ },
+ "Coste real total del checklist": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D63",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Desviación del coste del checklist": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D64",
+  "valor": -87840.0,
+  "tipo": "salida"
+ },
+ "Trámites sin importe (a presupuestar)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D65",
+  "valor": 27.0,
+  "tipo": "salida"
+ },
+ "Trámites que cambian según la comunidad autónoma": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D66",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Comunidad autónoma del ejemplo": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D69",
+  "valor": "Madrid",
+  "tipo": "entrada"
+ },
+ "¿Vas a inscribirte como artesano alimentario?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D70",
+  "valor": "No lo sé",
+  "tipo": "entrada"
+ },
+ "Canales por los que vas a vender": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!C79",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Canales que SÍ te sacan de la nota del 644.5": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!C80",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Canales sin resolver, pendientes del asesor": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!C81",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "VEREDICTO DE LOS CANALES": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!C82",
+  "valor": "Todos tus canales caben en la nota del 644.5: fabricas y vendes en las propias dependencias",
+  "tipo": "salida"
+ },
+ "La pregunta redactada para el asesor, canal del mostrador": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!F74",
+  "valor": "Mi epigrafe es el 644.5, cuya nota permite fabricar bombones «siempre que su comercialización se realice en las propias dependencias de venta». Voy a vender ademas por este canal: Mostrador. Con la Regla 4.a.1 del RDLeg 1175/1990 delante -una cuota faculta exclusivamente para su actividad-, ¿ese canal me obliga a dar otra alta, y cual? Y si la respuesta es el epigrafe industrial 421.1, ¿que consecuencias tiene que el Anexo de la Ley 12/2012 liste el 644.5 y no el 421.1?",
+  "tipo": "salida"
+ },
+ "Avance de la fase F1": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!J12",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F5": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!E45",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Tu régimen sanitario": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B12",
+  "valor": "Comercio al por menor: EXCLUIDO del RGSEAA",
+  "tipo": "salida"
+ },
+ "El trámite sanitario que te toca": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B13",
+  "valor": "Comunicación o declaración responsable al registro de tu comunidad autónoma",
+  "tipo": "salida"
+ },
+ "¿La comunicación autonómica habilita para abrir?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B14",
+  "valor": "NO. La comunicación autonómica no habilita: ni tienes que esperar respuesta, ni te protege si el resto no está en regla",
+  "tipo": "salida"
+ },
+ "¿Suministras a otros minoristas de distinta titularidad?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B7",
+  "valor": "No",
+  "tipo": "entrada"
+ },
+ "¿Tienes obrador propio?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B8",
+  "valor": "Sí",
+  "tipo": "entrada"
+ },
+ "Puerta de entrada del art. 3": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B6",
+  "valor": "Sí",
+  "tipo": "entrada"
+ },
+ "Lectura de la puerta de entrada del art. 3": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B7",
+  "valor": "Te aplica: sigue con las tres condiciones",
+  "tipo": "salida"
+ },
+ "Umbral de la vía a) del art. 3 (% del volumen anual)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B20",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Umbral de la vía b) del art. 3 (kg a la semana)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B23",
+  "valor": 500,
+  "tipo": "parametro"
+ },
+ "Kilos a la semana a otros minoristas": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B24",
+  "valor": 49.0,
+  "tipo": "salida"
+ },
+ "¿Cumples la vía a)?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B22",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "¿Cumples la vía b)?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B25",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "¿ES MARGINAL?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B26",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "¿ES LOCALIZADO?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B33",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "¿ES RESTRINGIDO?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B37",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Condiciones del art. 3 cumplidas": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B40",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "VEREDICTO DEL ART. 3": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B41",
+  "valor": "Cumples las tres: sigues FUERA del RGSEAA, con la declaración responsable y el registro del art. 3.5",
+  "tipo": "salida"
+ },
+ "¿Tu comunidad ha ampliado la lista por la letra e)?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B7",
+  "valor": "No",
+  "tipo": "entrada"
+ },
+ "Lectura de la letra e)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B9",
+  "valor": "Con la lista estatal en la mano, el bombón no entra: la ruta doméstica NO está abierta para ti",
+  "tipo": "salida"
+ },
+ "Tope absoluto del art. 13.9 (kg a la semana)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B23",
+  "valor": 100,
+  "tipo": "parametro"
+ },
+ "Kilos por metro cuadrado de la ruta doméstica": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B25",
+  "valor": 2.9166666666666665,
+  "tipo": "salida"
+ },
+ "Requisito 1 del art. 13.9 (tope de kilos)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B24",
+  "valor": "No procede: la ruta no está abierta",
+  "tipo": "salida"
+ },
+ "Requisito 2 del art. 13.9 (proporcionalidad)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B26",
+  "valor": "No procede: la ruta no está abierta",
+  "tipo": "salida"
+ },
+ "Requisito 3 del art. 13.9 (demostrable documentalmente)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B28",
+  "valor": "No procede: la ruta no está abierta",
+  "tipo": "salida"
+ },
+ "VEREDICTO DE LA RUTA DOMÉSTICA": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B32",
+  "valor": "Con la lista estatal en la mano, la ruta doméstica no está abierta para el bombón en tu comunidad",
+  "tipo": "salida"
+ },
+ "¿Importas grano de cacao?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B14",
+  "valor": "No",
+  "tipo": "entrada"
+ },
+ "Analíticas propias al año": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B22",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Coste anual de analíticas": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B23",
+  "valor": 90.0,
+  "tipo": "salida"
+ },
+ "Lotes cubiertos por tus analíticas": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B24",
+  "valor": 0.16666666666666666,
+  "tipo": "salida"
+ },
+ "VEREDICTO DEL CADMIO": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B25",
+  "valor": "Sin boletín del proveedor, la analítica propia es tu única prueba: pídesela a él antes de pagarla tú",
+  "tipo": "salida"
+ },
+ "Lo que la norma de contaminantes SÍ te obliga a hacer": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B26",
+  "valor": "No comercializar producto por encima del límite, no mezclar para diluir y no descontaminar por vías no autorizadas. La frecuencia del muestreo la decides tú en tu APPCC",
+  "tipo": "salida"
+ },
+ "¿El bombón tiene límite propio de cadmio?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B9",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Fecha de verificación legal del EUDR": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B6",
+  "valor": "12-09-2026",
+  "tipo": "parametro"
+ },
+ "Fecha en la que toca volver a revisar el EUDR": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B9",
+  "valor": "2027-03-12",
+  "tipo": "salida"
+ },
+ "De dónde viene tu cacao": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B12",
+  "valor": "Compro cobertura ya comercializada en la UE",
+  "tipo": "entrada"
+ },
+ "¿Tu cobertura llega amparada por una DDS?": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B13",
+  "valor": "No lo sé",
+  "tipo": "entrada"
+ },
+ "Estado de la hoja EUDR antes de que rellenes tu papel": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B18",
+  "valor": "Sin resolver: pregunta a tu proveedor si tu cobertura está amparada por una declaración",
+  "tipo": "salida"
+ },
+ "La fecha del EUDR que te corre (una vez resuelto tu papel)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B19",
+  "valor": "Sin resolver: primero aclara tu papel",
+  "tipo": "salida"
+ },
+ "La documentación EUDR que te toca (una vez resuelto tu papel)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B20",
+  "valor": "Primero aclara tu papel: sin eso no se sabe qué te toca",
+  "tipo": "salida"
+ },
+ "El aviso de inferencia declarada del EUDR": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B21",
+  "valor": "El paso «una chocolatería que compra cobertura es operador posterior, así que el aplazamiento del art. 38.3 no le alcanza» es una INFERENCIA nuestra, con el art. 2.15 ter como condición. Si tu cobertura NO está amparada, la calificación deja de ser automática y hay que revisarla",
+  "tipo": "salida"
+ },
+ "Personas con formación registrada": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C20",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Formaciones caducadas": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C21",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Validez de la formación en meses": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C15",
+  "valor": 24,
+  "tipo": "parametro"
+ },
+ "VEREDICTO DEL REGISTRO DE FORMACIÓN": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C23",
+  "valor": "Registro al día",
+  "tipo": "salida"
+ },
+ "Mes en que arranca el proyecto": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C5",
+  "valor": 10,
+  "tipo": "entrada"
+ },
+ "Duración total del proyecto (meses)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C40",
+  "valor": 8.5,
+  "tipo": "salida"
+ },
+ "Hitos sin holgura (ruta crítica)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C41",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "Mes natural en el que abres": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C42",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Nombre del mes de apertura": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C43",
+  "valor": "Junio",
+  "tipo": "salida"
+ },
+ "Temporada del mes de apertura": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C44",
+  "valor": "Media",
+  "tipo": "salida"
+ },
+ "Aviso sobre el mes de apertura": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C45",
+  "valor": "Abres en temporada media: tienes rodaje antes del siguiente pico",
+  "tipo": "salida"
+ },
+ "Plazo crítico de maquinaria traído del libro 9 (celda verde del cruce)": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C48",
+  "valor": 10,
+  "tipo": "entrada"
+ },
+ "Ese plazo, en meses": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C50",
+  "valor": 2.3094688221709005,
+  "tipo": "salida"
+ },
+ "Margen entre la ruta crítica y el plazo de maquinaria": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C52",
+  "valor": 6.190531177829099,
+  "tipo": "salida"
+ },
+ "CUADRE de quién manda la fecha de apertura": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C53",
+  "valor": "CUADRA: el papeleo es lo más largo, y es lo que fija la fecha",
+  "tipo": "salida"
+ },
+ "Duración del hito de búsqueda de local": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C9",
+  "valor": 2,
+  "tipo": "entrada"
+ },
+ "Mes en que acaba el pedido de equipamiento": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!K14",
+  "valor": "Abril",
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "checklist-legal-licencias-y-cacao.xlsx!Instrucciones!A1",
+  "valor": "Libro 8 de la guía. La hoja «Checklist Legal (F1-F6)» NO emite un epígrafe de IAE por canal, y no es una omisión: ninguna fuente lo da. Lo que publica es la nota literal del 644.5, la respuesta sí/no/no lo sé por canal y LA PREGUNTA REDACTADA PARA EL ASESOR. Está prohibido escribir «con el 644.5 puedes vender a hostelería, a empresas y por envío sin más». La ruta doméstica empieza por la letra e) del art. 13.8 y los TRES requisitos del art. 13.9 (`PA-29c`, reutilizado de Pastelería y verificado el 10-09-2026) sólo se activan si la comunidad ha ampliado la lista: para el bombón la ruta no está abierta por defecto. El bombón NO tiene límite propio de cadmio (`CHN-84`): la nota (14) del Anexo I del Rgto. 2023/915 remite sólo a los puntos 2, 3 y 4 de la Directiva 2000/36/CE (`CHN-16b`). El paso «una chocolatería que compra cobertura es operador posterior, así que el aplazamiento del art. 38.3 no le alcanza» es INFERENCIA DECLARADA, con el art. 2.15 ter como condición, y la hoja del EUDR lleva su fecha de revisión dentro (D5). El plazo de entrega de maquinaria llega del libro 9 por celda verde con fila de cuadre: cero fórmulas que nombren otro fichero.",
+  "tipo": "nota"
+ }
+}

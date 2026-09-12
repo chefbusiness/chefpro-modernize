@@ -1,0 +1,377 @@
+{
+ "Superficie del local": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B6",
+  "tipo": "entrada",
+  "valor": 75
+ },
+ "Coste de obra y adecuación por m2": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B7",
+  "tipo": "entrada",
+  "valor": 380
+ },
+ "Obra y adecuación calculada": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B8",
+  "tipo": "salida",
+  "valor": 28500.0
+ },
+ "IVA general": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B9",
+  "tipo": "parametro",
+  "valor": 0.21
+ },
+ "IVA del chocolate": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B10",
+  "tipo": "parametro",
+  "valor": 0.1
+ },
+ "Renta mensual del local": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B12",
+  "tipo": "entrada",
+  "valor": 1300
+ },
+ "Horizonte de comparación (años)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B14",
+  "tipo": "entrada",
+  "valor": 5
+ },
+ "Financiación bancaria disponible": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B17",
+  "tipo": "entrada",
+  "valor": 90300
+ },
+ "Kg de plástico importado al mes": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B19",
+  "tipo": "entrada",
+  "valor": 3.2
+ },
+ "Umbral de la exención del plástico": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B20",
+  "tipo": "parametro",
+  "valor": 5
+ },
+ "Tipo del impuesto al plástico": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B21",
+  "tipo": "parametro",
+  "valor": 0.45
+ },
+ "Base sin IVA del bloque: Obra y adecuación": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L31",
+  "tipo": "salida",
+  "valor": 28500.0
+ },
+ "IVA soportado del bloque: Obra y adecuación": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M31",
+  "tipo": "salida",
+  "valor": 5985.0
+ },
+ "Base sin IVA del bloque: Climatización y deshumidificación": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L32",
+  "tipo": "salida",
+  "valor": 7600.0
+ },
+ "IVA soportado del bloque: Climatización y deshumidificación": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M32",
+  "tipo": "salida",
+  "valor": 1596.0
+ },
+ "Base sin IVA del bloque: Equipo de templado y moldeado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L33",
+  "tipo": "salida",
+  "valor": 21060.0
+ },
+ "IVA soportado del bloque: Equipo de templado y moldeado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M33",
+  "tipo": "salida",
+  "valor": 4422.599999999999
+ },
+ "Base sin IVA del bloque: Frío (cámara, nevera de rellenos y vitrina)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L34",
+  "tipo": "salida",
+  "valor": 10534.99
+ },
+ "IVA soportado del bloque: Frío (cámara, nevera de rellenos y vitrina)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M34",
+  "tipo": "salida",
+  "valor": 2212.3478999999998
+ },
+ "Base sin IVA del bloque: Mobiliario y tienda": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L35",
+  "tipo": "salida",
+  "valor": 6900.0
+ },
+ "IVA soportado del bloque: Mobiliario y tienda": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M35",
+  "tipo": "salida",
+  "valor": 1449.0
+ },
+ "Base sin IVA del bloque: Packaging y moldes": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L36",
+  "tipo": "salida",
+  "valor": 3004.36
+ },
+ "IVA soportado del bloque: Packaging y moldes": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M36",
+  "tipo": "salida",
+  "valor": 630.9156
+ },
+ "Base sin IVA del bloque: TPV, informática y rótulo": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L37",
+  "tipo": "salida",
+  "valor": 3200.0
+ },
+ "IVA soportado del bloque: TPV, informática y rótulo": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M37",
+  "tipo": "salida",
+  "valor": 672.0
+ },
+ "Base sin IVA del bloque: Fianza y licencias": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L38",
+  "tipo": "salida",
+  "valor": 8420.0
+ },
+ "IVA soportado del bloque: Fianza y licencias": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M38",
+  "tipo": "salida",
+  "valor": 945.0
+ },
+ "Base sin IVA del bloque: Fondo de maniobra": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L39",
+  "tipo": "salida",
+  "valor": 61273.02
+ },
+ "IVA soportado del bloque: Fondo de maniobra": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M39",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "CAPEX total sin IVA (los nueve bloques)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L40",
+  "tipo": "salida",
+  "valor": 150492.37
+ },
+ "IVA soportado total": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M40",
+  "tipo": "salida",
+  "valor": 17912.8635
+ },
+ "Desembolso total con IVA": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!N40",
+  "tipo": "salida",
+  "valor": 168405.2335
+ },
+ "CAPEX SIN el fondo de maniobra (viaja al libro 7)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L44",
+  "tipo": "salida",
+  "valor": 89219.35
+ },
+ "Del cual, fondo de maniobra (es caja, no inversión)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L45",
+  "tipo": "salida",
+  "valor": 61273.02
+ },
+ "INVERSIÓN TOTAL": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L46",
+  "tipo": "salida",
+  "valor": 150492.37
+ },
+ "Subtotal comparable (seis bloques)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L48",
+  "tipo": "salida",
+  "valor": 77794.99
+ },
+ "Fondo de maniobra traído del libro 7 (celda verde del cruce)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L51",
+  "tipo": "entrada",
+  "valor": 61273.02
+ },
+ "Fondo de maniobra que usa la fila del bloque": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L52",
+  "tipo": "salida",
+  "valor": 61273.02
+ },
+ "CUADRE del fondo de maniobra": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L54",
+  "tipo": "salida",
+  "valor": "CUADRA"
+ },
+ "Escenario de dotación A, mínimo publicado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!I58",
+  "tipo": "parametro",
+  "valor": 24000
+ },
+ "Escenario de dotación A, máximo publicado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!J58",
+  "tipo": "parametro",
+  "valor": 24300
+ },
+ "Escenario de dotación B, mínimo publicado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!I59",
+  "tipo": "parametro",
+  "valor": 5700
+ },
+ "Escenario de dotación B, máximo publicado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!J59",
+  "tipo": "parametro",
+  "valor": 5900
+ },
+ "Tu equipo de templado y moldeado en base imponible": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!I60",
+  "tipo": "salida",
+  "valor": 21060.0
+ },
+ "Dónde cae tu dotación respecto al escenario profesional": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!I61",
+  "tipo": "salida",
+  "valor": "Por debajo del rango publicado"
+ },
+ "Importe de la línea de obra y adecuación": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!K6",
+  "tipo": "salida",
+  "valor": 28500.0
+ },
+ "Importe de la atemperadora continua": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!K7",
+  "tipo": "entrada",
+  "valor": 8500
+ },
+ "Mínimo del rango de moldes de policarbonato": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!I18",
+  "tipo": "entrada",
+  "valor": 580.8
+ },
+ "Máximo del rango de moldes de policarbonato": {
+  "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!J18",
+  "tipo": "entrada",
+  "valor": 1027.92
+ },
+ "Inversión total de la variante bombonería": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!E7",
+  "tipo": "salida",
+  "valor": 150492.37
+ },
+ "Equipos del tren bean-to-bar que dices necesitar": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!E31",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "Respuestas del bean-to-bar que tienes por escrito": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!E32",
+  "tipo": "salida",
+  "valor": 0.0
+ },
+ "VEREDICTO DEL BEAN-TO-BAR": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!E33",
+  "tipo": "salida",
+  "valor": "No es tu variante: no hay nada que presupuestar"
+ },
+ "Precio de la chocolatera de la variante de taza": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!E37",
+  "tipo": "entrada",
+  "valor": 527
+ },
+ "Inversión desde de la franquicia con ficha": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!D46",
+  "tipo": "parametro",
+  "valor": 100000
+ },
+ "Tu inversión total como independiente": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!D48",
+  "tipo": "salida",
+  "valor": 150492.37
+ },
+ "Diferencia con la franquicia": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Variante del Formato!D49",
+  "tipo": "salida",
+  "valor": 50492.369999999995
+ },
+ "Precio de traspaso que te piden": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C6",
+  "tipo": "entrada",
+  "valor": 26000
+ },
+ "Renta mensual del local traspasado": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C8",
+  "tipo": "entrada",
+  "valor": 1100
+ },
+ "CAPEX comparable de la obra nueva": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C10",
+  "tipo": "salida",
+  "valor": 77794.99
+ },
+ "Coste total del traspaso en el horizonte": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C19",
+  "tipo": "salida",
+  "valor": 111100.0
+ },
+ "Coste total de la obra nueva en el horizonte": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C20",
+  "tipo": "salida",
+  "valor": 160994.99
+ },
+ "Diferencia entre traspaso y obra nueva": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C21",
+  "tipo": "salida",
+  "valor": -49894.98999999999
+ },
+ "Veredicto de traspaso contra obra nueva": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C22",
+  "tipo": "salida",
+  "valor": "Sale mejor el TRASPASO"
+ },
+ "Traspasos con renta publicada": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!D34",
+  "tipo": "salida",
+  "valor": 3.0
+ },
+ "Precio pedido más bajo de los ocho": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!D35",
+  "tipo": "salida",
+  "valor": 26000.0
+ },
+ "Precio pedido más alto de los ocho": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!D36",
+  "tipo": "salida",
+  "valor": 210000.0
+ },
+ "Precio pedido medio de los ocho": {
+  "ref": "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!D37",
+  "tipo": "salida",
+  "valor": 110785.71428571429
+ },
+ "IVA que tienes que adelantar": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B19",
+  "tipo": "salida",
+  "valor": 17912.8635
+ },
+ "Desembolso total con IVA (tesorería)": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B24",
+  "tipo": "salida",
+  "valor": 168405.2335
+ },
+ "Fondo de maniobra dentro del desembolso": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B25",
+  "tipo": "salida",
+  "valor": 61273.02
+ },
+ "Aportación propia necesaria": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B27",
+  "tipo": "salida",
+  "valor": 78105.2335
+ },
+ "VEREDICTO DE LA CAJA": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B28",
+  "tipo": "salida",
+  "valor": "Necesitas aportación propia"
+ },
+ "¿Superas el umbral del plástico?": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B34",
+  "tipo": "salida",
+  "valor": "No: por debajo de la exención del art. 75.f)"
+ },
+ "ALERTA DEL PLÁSTICO": {
+  "ref": "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B37",
+  "tipo": "salida",
+  "valor": "Sin alerta"
+ }
+}

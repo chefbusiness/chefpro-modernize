@@ -1,0 +1,437 @@
+{
+ "Clientes al día en velocidad de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B6",
+  "valor": 67,
+  "tipo": "entrada"
+ },
+ "Piezas por ticket": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B7",
+  "valor": 1.4,
+  "tipo": "entrada"
+ },
+ "PVP medio ponderado de la carta con IVA": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B8",
+  "valor": 7.68,
+  "tipo": "entrada"
+ },
+ "Ticket medio con IVA": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B9",
+  "valor": 10.751999999999999,
+  "tipo": "salida"
+ },
+ "Ticket medio sin IVA": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B10",
+  "valor": 9.774545454545454,
+  "tipo": "salida"
+ },
+ "Días de apertura al año": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B11",
+  "valor": 304,
+  "tipo": "entrada"
+ },
+ "Actividad del año 1 sobre la de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B12",
+  "valor": 0.88450094,
+  "tipo": "salida"
+ },
+ "IVA del chocolate": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B15",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA del taller (sin cifra a propósito)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B17",
+  "valor": "Pregúntaselo a tu asesor",
+  "tipo": "parametro"
+ },
+ "Food cost de escandallo de la carta": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B22",
+  "valor": 0.252157,
+  "tipo": "entrada"
+ },
+ "Food cost del P&L (escandallo + packaging)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B24",
+  "valor": 0.28241584000000003,
+  "tipo": "salida"
+ },
+ "Food cost objetivo de la casa (regla única)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B25",
+  "valor": 0.3,
+  "tipo": "entrada"
+ },
+ "Margen bruto objetivo (derivado)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B26",
+  "valor": 0.7,
+  "tipo": "salida"
+ },
+ "Meses de colchón del fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B45",
+  "valor": 6,
+  "tipo": "entrada"
+ },
+ "Préstamo bancario solicitado": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B41",
+  "valor": 90300,
+  "tipo": "entrada"
+ },
+ "Recursos propios aportados": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B40",
+  "valor": 78105.23,
+  "tipo": "entrada"
+ },
+ "Días medios de cobro ponderados": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B58",
+  "valor": 7.65,
+  "tipo": "salida"
+ },
+ "CAPEX sin el fondo de maniobra (traído del libro 2)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B6",
+  "valor": 89219.35,
+  "tipo": "entrada"
+ },
+ "CUADRE del CAPEX con el libro 2": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B9",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Gastos fijos mensuales del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B14",
+  "valor": 10212.169275499467,
+  "tipo": "salida"
+ },
+ "Fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B16",
+  "valor": 61273.01565299681,
+  "tipo": "salida"
+ },
+ "Inversión total": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B21",
+  "valor": 150492.3656529968,
+  "tipo": "salida"
+ },
+ "IVA soportado de la inversión": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B22",
+  "valor": 17912.86,
+  "tipo": "salida"
+ },
+ "Necesidad total de caja al arranque": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B23",
+  "valor": 168405.2256529968,
+  "tipo": "salida"
+ },
+ "Amortización anual del inmovilizado": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B27",
+  "valor": 8361.499,
+  "tipo": "salida"
+ },
+ "Ingresos del año 1": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B11",
+  "valor": 176093.4716808471,
+  "tipo": "salida"
+ },
+ "Ingresos del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C11",
+  "valor": 199087.9418181818,
+  "tipo": "salida"
+ },
+ "Ingresos del año 3": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!D11",
+  "valor": 207051.45949090907,
+  "tipo": "salida"
+ },
+ "Coste de ventas del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C13",
+  "valor": 56225.588322452946,
+  "tipo": "salida"
+ },
+ "Margen bruto del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C15",
+  "valor": 142862.35349572886,
+  "tipo": "salida"
+ },
+ "Coste de personal del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C17",
+  "valor": 68418.72450000001,
+  "tipo": "salida"
+ },
+ "Total costes fijos del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C31",
+  "valor": 122546.0313059936,
+  "tipo": "salida"
+ },
+ "Resultado antes de impuestos del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C34",
+  "valor": 20316.322189735263,
+  "tipo": "salida"
+ },
+ "Resultado neto del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C41",
+  "valor": 17268.873861274973,
+  "tipo": "salida"
+ },
+ "Margen neto del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!E41",
+  "valor": 0.08673992861428981,
+  "tipo": "salida"
+ },
+ "Coste de personal sobre ventas": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C46",
+  "valor": 0.3436608157940766,
+  "tipo": "salida"
+ },
+ "Ventas del formato con taza y churros": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C61",
+  "valor": 232942.48727272724,
+  "tipo": "salida"
+ },
+ "Margen neto del formato con taza y churros": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C67",
+  "valor": 0.08604501443306883,
+  "tipo": "salida"
+ },
+ "VEREDICTO del escenario de formato": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B68",
+  "valor": "La taza y los churros restan: con estos supuestos te ocupan sala y personal para nada",
+  "tipo": "salida"
+ },
+ "Precio de la cobertura en base imponible (traído del libro 3)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B71",
+  "valor": 22.7455,
+  "tipo": "entrada"
+ },
+ "CUADRE de la cobertura con el libro 3": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B74",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Peso de la cobertura sobre el coste de ventas": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B77",
+  "valor": 0.18693793810962567,
+  "tipo": "salida"
+ },
+ "Lo que costaría al año una subida del cacao del 40 %": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B79",
+  "valor": 4204.27822,
+  "tipo": "salida"
+ },
+ "Margen neto del año de crucero tras esa subida": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B80",
+  "valor": 0.06562223468665063,
+  "tipo": "salida"
+ },
+ "Clientes al día para el equilibrio contable (crucero)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C16",
+  "valor": 57.471992422041694,
+  "tipo": "salida"
+ },
+ "Clientes al día para el equilibrio de caja (crucero)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C22",
+  "valor": 59.18246263293218,
+  "tipo": "salida"
+ },
+ "Ingresos necesarios al mes para el equilibrio contable": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C18",
+  "valor": 14231.31925807764,
+  "tipo": "salida"
+ },
+ "Holgura sobre el equilibrio de caja (crucero)": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C26",
+  "valor": 0.13209212694568984,
+  "tipo": "salida"
+ },
+ "Punto muerto mensual de la bombonería": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!B34",
+  "valor": 14231.319258077641,
+  "tipo": "salida"
+ },
+ "Punto muerto mensual con taza y churros": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C34",
+  "valor": 16547.205417164565,
+  "tipo": "salida"
+ },
+ "Resultado neto del escenario pesimista": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Escenarios!B16",
+  "valor": -40638.10494695361,
+  "tipo": "salida"
+ },
+ "Resultado neto del escenario optimista": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Escenarios!D16",
+  "valor": 80664.92246130544,
+  "tipo": "salida"
+ },
+ "Coste de personal al año": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!I9",
+  "valor": 68418.72450000001,
+  "tipo": "salida"
+ },
+ "Jornadas completas equivalentes": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!B41",
+  "valor": 2.5,
+  "tipo": "salida"
+ },
+ "Coste de una hora de obrador": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!B45",
+  "valor": 18.49165895571712,
+  "tipo": "salida"
+ },
+ "Saldo mínimo de caja del año 1": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B24",
+  "valor": 55676.17580613139,
+  "tipo": "salida"
+ },
+ "Mes en el que la caja toca fondo": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B25",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Saldo de caja al cierre del mes 12": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!M23",
+  "valor": 72959.29431857425,
+  "tipo": "salida"
+ },
+ "Payback del proyecto": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B32",
+  "valor": "Más de 3 años",
+  "tipo": "salida"
+ },
+ "Capacidad diaria del obrador traída del libro 1": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B35",
+  "valor": 512,
+  "tipo": "entrada"
+ },
+ "CUADRE de la capacidad con el libro 1": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B38",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Excedente diario para adelantar producción": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B40",
+  "valor": 40.0,
+  "tipo": "salida"
+ },
+ "Días de calendario de antelación de la campaña de Navidad": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B43",
+  "valor": 70.0,
+  "tipo": "salida"
+ },
+ "FECHA LÍMITE de cierre de pedidos de Navidad": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B45",
+  "valor": "2027-10-11",
+  "tipo": "salida"
+ },
+ "Mes en el que cae la fecha límite de Navidad": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B46",
+  "valor": 10.0,
+  "tipo": "salida"
+ },
+ "Cuota mensual del préstamo": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B22",
+  "valor": 1409.5414874548753,
+  "tipo": "salida"
+ },
+ "Diferencia entre origen de fondos y necesidad": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B12",
+  "valor": 0.00434700318146497,
+  "tipo": "salida"
+ },
+ "DSCR mínimo de todo el cuadro": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B123",
+  "valor": 1.4750225946506683,
+  "tipo": "salida"
+ },
+ "Intereses del año de crucero": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B117",
+  "valor": 4905.807805993596,
+  "tipo": "salida"
+ },
+ "¿Cierra el cuadro de amortización?": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B112",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Margen de contribución medio ponderado": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B16",
+  "valor": 0.6413,
+  "tipo": "salida"
+ },
+ "Punto muerto mensual con todos los canales": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B19",
+  "valor": 15924.168525650191,
+  "tipo": "salida"
+ },
+ "Punto muerto mensual sin el canal B2B": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B20",
+  "valor": 15357.942979375675,
+  "tipo": "salida"
+ },
+ "Canal que sostiene el negocio": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B22",
+  "valor": "Mostrador",
+  "tipo": "salida"
+ },
+ "Canales que hay que consultar por la nota del 644.5": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B26",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Margen de contribución del online después del envío": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B39",
+  "valor": 0.29714285714285704,
+  "tipo": "salida"
+ },
+ "VEREDICTO del canal online": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B40",
+  "valor": "Aguanta, pero deja menos que el mostrador: úsalo para llegar donde no llegas, no para sustituirlo",
+  "tipo": "salida"
+ },
+ "Asistentes necesarios para cubrir el punto muerto del taller": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B19",
+  "valor": 2.335788499669531,
+  "tipo": "salida"
+ },
+ "Asistentes necesarios contando la materia": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B20",
+  "valor": 2.7395050304766104,
+  "tipo": "salida"
+ },
+ "Margen por hora de sala dando taller": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B26",
+  "valor": 67.50834104428289,
+  "tipo": "salida"
+ },
+ "Margen por hora de sala vendiendo": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B29",
+  "valor": 28.422423272727272,
+  "tipo": "salida"
+ },
+ "VEREDICTO de la hora de sala": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B31",
+  "valor": "La hora de taller deja más que la hora vendiendo: el calendario de talleres se defiende solo",
+  "tipo": "salida"
+ },
+ "Ingresos de talleres al año": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B36",
+  "valor": 9600.0,
+  "tipo": "salida"
+ },
+ "Facturación del canal corporativo": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B52",
+  "valor": 10000.0,
+  "tipo": "salida"
+ },
+ "Caja inmovilizada por el aplazamiento corporativo": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B54",
+  "valor": 821.917808219178,
+  "tipo": "salida"
+ },
+ "FECHA LÍMITE para aceptar un pedido corporativo": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B56",
+  "valor": "2027-09-27",
+  "tipo": "salida"
+ },
+ "_notas": {
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Instrucciones!A1",
+  "valor": "Libro 7, HÍBRIDO: molde `planes-v2_0` motor 2.2 más las dos hojas propias de esta guía («Canales y Punto Muerto» y «Talleres y Regalo Corporativo»). Manda la línea de versión de la familia de GUÍAS (1.0 · septiembre 2026). Es la FUENTE ÚNICA de las cifras financieras del texto: ningún euro del capítulo financiero se escribe fuera de aquí, y el AÑO 2 es el año de crucero. LAS DOS CELDAS QUE CITA EL RESTO DEL PACK son «Gastos fijos mensuales del año de crucero» y «Fondo de maniobra», las dos en la hoja «Inversión Inicial»: la segunda es la que viaja al libro 2 por el cruce 2 <- 7, ya CALCULADA, porque sus dos factores -meses de colchón y gastos fijos- viven aquí. Este libro RECIBE tres cifras por celda verde con fila de cuadre: el CAPEX SIN el fondo de maniobra (7 <- 2), la capacidad diaria del obrador (7 <- 1) y el precio de la cobertura en base imponible, que llega incorporado al food cost de escandallo (7 <- 3). CERO fórmulas que nombren otro fichero.",
+  "tipo": "nota"
+ }
+}
