@@ -114,3 +114,21 @@ product-prices, functions, zona app, hub sin «Próximamente» vacío, blog, use
 - Pico de 67,4 °C a las 11:36 por `mediaanalysisd` (40-51 % de CPU), no por los agentes; `pkill -STOP mediaanalysisd` y en un minuto 52 °C.
   El vigilante `scripts/termica/watchdog-termico.sh` ahora congela también `mediaanalysisd|photoanalysisd|bird`. Resto de la sesión 47-53 °C.
 - Subagentes: verificación 1,55 M + research 2,35 M ≈ **3,9 M tokens** (sesión de research + cierre; la construcción va aparte).
+
+## 4. Continuación de las 16:05 (sesión Claude Code, tras corte por cuota + kernel panic)
+
+> John a las 16:05: «el ordenador se ha apagado por recalentamiento supongo… restaura la sesión y continúa… revisa los registros, logs, jsons» + la regla térmica de siempre (65 °C, istats, nada de Playwright). Grabada otra vez en memoria (`feedback_regla-termica-cpu-65-grados`).
+
+**Qué pasó (reconstruido del journal del workflow y del transcript):**
+- 11:39 John delegó las 18 decisiones («decide tú, adelante!») → `scripts/productos-digitales/guia-chocolateria-DECISIONES-2026-09-12.md` (13:42).
+- 13:45 → 15:08 workflow `fundamentos-guia-chocolateria` (`wf_7fcee771-183`, 4 agentes): verificación legal (opus, 109 fichas CHN, 22 documentos, gate de literalidad 81/81 con cinco canarios) ‖ censo CHS (sonnet, 115 ids; L4 decía 126 porque contaba cabeceras de tabla) → fusión (sonnet) ‖ SPEC (opus).
+- **15:08 «You've hit your session limit · resets 3:50pm»**: el agente de la SPEC fue cortado tras `cat >>` la fila D46 — §0-§1 en disco (213 líneas), **§2-§10 nunca se escribieron**; el workflow acabó `failed: SPEC sin resultado`. La fusión también había abortado: **33 fallos de forma** en el censo CHS (26 fiabilidades `media-alta`/`media-baja` fuera del contrato de 3 niveles + 7 agregados sin URL con fiabilidad ≠ `baja`).
+- 15:15 último apunte del transcript. **16:02 kernel panic** (`Kernel-2026-09-12-160212.panic`, SMC cause 5) SIN ningún agente vivo: macOS 13.7.8, con `wakeups_resource.diag` de Chrome Helper (15:04) y Claude Helper (15:52). Al arrancar: `bird` al 91 %, 65,2 °C, carga 33.
+
+**Qué se hizo:**
+1. `kill -STOP bird` (fuera del `.frozen` del vigilante para que no lo reanime) + `watchdog-termico.sh` en background + Monitor que avisa a ≥ 63 °C. 65,2 → 60,8 °C en un minuto; resto de la sesión 52-57 °C.
+2. Censo CHS saneado sin perder información: `media-alta`/`media-baja` → `media` con «[fiabilidad L4: …]» en `nota`; los 7 agregados (CHS-02, 11, 25d, 39, 41, 47a, 47b: sumas y resúmenes de otros ids con fuente propia) → `baja` con «[AGREGADO sin fuente única — componentes…]». Respaldo del merge apuntado a este scratchpad. **Fusión aplicada: 411 → 635 (109 CHN + 115 CHS), 0 duplicados, 224/224 bien formadas**, `_meta.totales` 376/197/62.
+3. D3 anotada en `CALENDARIO-V2-SEMANAL.md` §3 (churrería como candidata, sin hacer ni anunciar). Commit `ca48631` + push a las 16:13 (todo lo recuperado, ANTES de seguir).
+4. Workflow `completar-spec-guia-chocolateria` (`wf_cfcafa92-9b8`): un opus anexa §2-§10 + Cierre por secciones (un `cat >>` por sección, para que un corte deje frontera limpia) y después refutador → fixer → re-refutación (máx. 3 rondas), agentes en serie. Los resultados de los agentes del workflow caído (correcciones clave, prohibiciones, dos «PENDIENTE PARA LA SPEC») están en el scratchpad como `resultados-wf_7fcee771.json` y se le pasan al redactor.
+
+**Trampa para la memoria:** el límite de cuota corta a un agente igual que un apagón, pero sin dejar rastro en disco: el fichero queda a medias y el journal dice `failed` sin explicar por qué. Antes de dar por escrito lo que un journal afirme, `wc -l` + cola del fichero contra el molde. Y los ids «bare» (CHS-24, CHS-47…) no existen en el JSON: sólo con sufijo (D44).
