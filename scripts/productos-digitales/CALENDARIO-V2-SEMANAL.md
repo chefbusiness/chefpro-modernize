@@ -243,6 +243,7 @@ de motores ya construidos (John decide):
 3. **Manual del Chef Ejecutivo** — reutiliza brigada/turnos y APPCC.
 4. **Cómo Montar una Pastelería** (guía premium) — sobre el motor de guías + kit-tareas-pasteleria v2.0.
 5. **Cómo Montar una Chocolatería** — idem + kit-tareas-chocolateria.
+6. *(candidato ANOTADO el 12-sep por la decisión D3 de Chocolatería; no se hace ni se anuncia hasta que John lo decida)* **Cómo Montar una Churrería-Chocolatería** — la chocolatería de taza y churros, que en la Guía de Chocolatería entra sólo como epígrafe del cap. 01 + columna de escenario en CAPEX y P&L.
 
 **Método por producto nuevo, en 3 semanas de 1 sesión cada una** (memoria `feedback_research-previo-producto-nuevo`, `feedback_productos-completos-investigados`,
 `feedback_digital-products-non-negotiables`, skill `digital-product-launch`):
