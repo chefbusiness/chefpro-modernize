@@ -132,3 +132,25 @@ product-prices, functions, zona app, hub sin «Próximamente» vacío, blog, use
 4. Workflow `completar-spec-guia-chocolateria` (`wf_cfcafa92-9b8`): un opus anexa §2-§10 + Cierre por secciones (un `cat >>` por sección, para que un corte deje frontera limpia) y después refutador → fixer → re-refutación (máx. 3 rondas), agentes en serie. Los resultados de los agentes del workflow caído (correcciones clave, prohibiciones, dos «PENDIENTE PARA LA SPEC») están en el scratchpad como `resultados-wf_7fcee771.json` y se le pasan al redactor.
 
 **Trampa para la memoria:** el límite de cuota corta a un agente igual que un apagón, pero sin dejar rastro en disco: el fichero queda a medias y el journal dice `failed` sin explicar por qué. Antes de dar por escrito lo que un journal afirme, `wc -l` + cola del fichero contra el molde. Y los ids «bare» (CHS-24, CHS-47…) no existen en el JSON: sólo con sufijo (D44).
+
+## 5. Fase A2 + B1 ejecutada (16:25 → 22:00, sesión Claude Code en el Mac)
+
+| Pieza | Estado | Commit |
+|---|---|---|
+| SPEC v1.0 completa (§0-§10 + Cierre, 935 líneas, **53 decisiones**, 28/28 hallazgos del research resueltos) | ✅ **LISTO** tras **cinco rondas** de refutación adversarial (23 + 15 + 11 + 5 fixes por agentes; 3 bajas residuales a mano). Informes `auditorias/guia-chocolateria-SPEC-refutacion-2026-09-12{,-r2,-r3,-r4,-r5}.md` | `dd9bfe8`, `7538c23` |
+| Juego de datos «La Almendra» (`guia-chocolateria/datos_ejemplo.py`, 4.850 líneas) | ✅ `comprobar()` en verde: 28 refs en 5 familias con denominación legal + matriz 28×8 alérgenos; 12 campañas del kit; 5 canales; 106 ids legales con `gate_legal()`; **8 cruces** entre libros; principal del préstamo **derivado por punto fijo** (60,01 %); margen neto calibrado al **10,05 %** (67 tickets/día) | `7feb146` |
+| 9 libros de Excel (`guia-chocolateria/build/*.xlsx` = `astro-site/public/dl/guia-chocolateria-obrador/`, md5 idéntico) | ✅ 5 constructores opus en dos tandas (térmica) · **6.322 fórmulas, 0 sin caché, 0 verdes vacías** · refutación 24 hallazgos (4 altos · 10 medios · 10 bajos) → 23 fixes en los generadores + 1 descartado (B14) · **`gate_libros.py` 9/9 VERDE** (con la comprobación nueva de cero referencias entre ficheros + los 8 cuadres) | `e8bea93` |
+| Pipeline reutilizable (`guia-chocolateria/pipeline/`: scripts de los 3 workflows + prompts de datos y guion) | ✅ para calcar en el siguiente producto (VPS) | `66f9c45` |
+| Guion `guias-v2_0/guion_guia_chocolateria_obrador.py` + `guia-chocolateria/verificar_guion.py` | ⏳ opus escribiéndolo (arrancó 22:00) | — |
+| Verificación independiente de los 23 fixes de los xlsx | ⏳ sonnet (solo lee; informe `auditorias/guia-chocolateria-xlsx-verificacion-fixes-2026-09-12.md`) | — |
+
+**Decisiones del orquestador durante la construcción (no reabren D1-D53):**
+- **D53 reformulada**: la guía publica los 8 alérgenos y la humedad 50-60 %; regenerar el Kit de Tareas Chocolatería a 2.1 es **PROPUESTA para John** (≈0,15 M, con broadcast propio → guía al 29-oct si se aprueba), no bloquea el cap. 12 (nota-puente).
+- **Maestro Churrero sin cifras** (no tiene ficha `CHS-*`); solo Chök (`CHS-58`) con números en la columna franquicia.
+- **Perfiles = nombres de hoja** de `04-tareas-perfiles.xlsx`; el propio kit usa rótulos largos («Maestro Chocolatero / Obrador») en fila 1.
+- Unidad de capacidad del paquete: **«bombón equivalente»** (libro 1, 512/día); una caja de 35 es una pieza vendible pero 35+ equivalentes.
+- «Meses de colchón» vive **solo en el libro 7**; el libro 2 recibe el fondo de maniobra por el cruce 2 ← 7.
+
+**Trampas nuevas (para la memoria):** `Δ` (U+0394) no es WinAnsi (`barrer_cp1252` lo caza; escribir «salto de temperatura») · un cruce por celda verde puede «cuadrar» contra su propio valor por defecto si los dos constructores siembran distinto (A1: 465 vs 512) — el gate de cuadres compara ahora contra la celda ORIGEN · el vigilante térmico muere a la hora (relanzar en bucle) · el límite de cuota corta a un agente a mitad de `cat >>` sin rastro en disco.
+
+**Presupuesto de subagentes hoy (sesión de las 16:05):** SPEC §2-§10 + 3 rondas 1,75 M · cierre SPEC 0,94 M · datos 0,52 M (+0,03 ajustes) · 9 libros + refutación + fixer 3,06 M · guion y verificación de fixes: pendientes. Acumulado del producto ≈ 3,9 (research + verificación, sesión de la mañana) + 6,3 = **≈10,2 M** antes del guion.
