@@ -112,6 +112,8 @@ def main():
     ap.add_argument('--subject', required=True)
     ap.add_argument('--name', default=None)
     ap.add_argument('--segment', default=SEGMENT_AICP_ES)
+    ap.add_argument('--from', dest='from_addr', default=FROM,
+                    help='remitente; para el segmento EN: "AI Chef Pro <hello@news.aichef.pro>"')
     ap.add_argument('--scheduled-at', default=None, help='ISO 8601 UTC, p. ej. 2026-09-04T08:00:00Z')
     ap.add_argument('--test', default=None, help='email de prueba (envío transaccional, no programa)')
     ap.add_argument('--dry-run', action='store_true')
@@ -125,7 +127,7 @@ def main():
     print('guardas OK')
 
     if a.dry_run:
-        print(json.dumps({'segment_id': a.segment, 'from': FROM, 'reply_to': REPLY_TO,
+        print(json.dumps({'segment_id': a.segment, 'from': a.from_addr, 'reply_to': REPLY_TO,
                           'subject': a.subject, 'name': a.name, 'send': bool(a.scheduled_at),
                           'scheduled_at': a.scheduled_at, 'html_bytes': len(html)},
                          ensure_ascii=False, indent=1))
@@ -135,7 +137,7 @@ def main():
     if a.test:
         cuerpo = html.replace('{{{RESEND_UNSUBSCRIBE_URL}}}', 'https://aichef.pro/#prueba-sin-baja')
         st, r = http('POST', '/emails', key, {
-            'from': FROM, 'to': [a.test], 'reply_to': REPLY_TO,
+            'from': a.from_addr, 'to': [a.test], 'reply_to': REPLY_TO,
             'subject': '[PRUEBA] ' + a.subject, 'html': cuerpo,
             'tags': [{'name': 'kind', 'value': 'broadcast-test'}, {'name': 'app', 'value': 'aichef'}],
         })
@@ -144,7 +146,7 @@ def main():
 
     if not a.scheduled_at:
         sys.exit('sin --scheduled-at no se programa nada (usa --dry-run o --test)')
-    body = {'segment_id': a.segment, 'from': FROM, 'reply_to': REPLY_TO, 'subject': a.subject,
+    body = {'segment_id': a.segment, 'from': a.from_addr, 'reply_to': REPLY_TO, 'subject': a.subject,
             'html': html, 'send': True, 'scheduled_at': a.scheduled_at}
     if a.name:
         body['name'] = a.name

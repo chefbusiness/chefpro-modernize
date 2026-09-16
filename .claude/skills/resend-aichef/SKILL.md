@@ -32,6 +32,7 @@ El `python3` de este Mac falla el handshake TLS (`CERTIFICATE_VERIFY_FAILED`). T
 | Segmento «AI Chef Pro ES» | `b2c581bd-81db-4ded-a174-2b339f7d3cc3` |
 | Segmento «AI Chef Pro EN» | `d06ed053-4327-4bec-9e3b-25a9ee9f6704` |
 | From (marketing) | `AI Chef Pro <hola@news.aichef.pro>` (dominio `news.aichef.pro` verificado) |
+| From (segmento EN) | `AI Chef Pro <hello@news.aichef.pro>` → `resend-broadcast.py --from "…"` (el script usa `hola@` por defecto) |
 | Reply-To | `info@aichef.pro` |
 | Baja en el cuerpo | `{{{RESEND_UNSUBSCRIBE_URL}}}` (obligatorio en todo broadcast) |
 | Estética | negro `#111111` + dorado `#FFD700`; nada de marrón/naranja (orden de John 2026-08-24) |
@@ -51,6 +52,14 @@ python3 scripts/productos-digitales/emails/resend-broadcast.py \
 `POST /broadcasts` admite `segment_id`, `send: true` y `scheduled_at` (ISO 8601 o «in 1 hour»).
 El script aborta si quedan tokens `__PAGINAS__`, si falta el bloque de baja, si algún enlace o
 imagen `https://aichef.pro/…` no responde 200, o si la hora está en el pasado.
+
+## Novedades del SaaS a ES + EN a la vez (no son correos de producto)
+
+Precedentes: «2026-08-17 Modelos open source» y «2026-09-16 Integraciones de los agentes»
+(`broadcast-integraciones-agentes-es.html` / `-en.html`). Un HTML por idioma, mismo `scheduled_at`,
+EN con `--segment d06ed053-… --from "AI Chef Pro <hello@news.aichef.pro>"`, enlaces a la plataforma de
+cada idioma (`app.aichef.pro` / `enapp.aichef.pro`; el guard del script no los comprueba, hacer `curl -L`).
+No entran en la cola de 5 días de productos, pero tampoco se mandan el mismo día que uno de ellos.
 
 ## Antes de cada envío
 
