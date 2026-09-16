@@ -22,20 +22,23 @@ import CategoryCTAs from '../components/CategoryCTAs.astro';
 import FAQ from '../components/FAQ.astro';
 import ConversionNotifications from '../components/ConversionNotifications.astro';
 import Footer from '../components/Footer.astro';
+import { t } from '../i18n/translations';
+import { trialCtaUrl } from '../lib/app-url';
 
 const lang = 'es';
+const trialHref = trialCtaUrl('header');
 ---
 
 <BaseLayout
-  title="AI Chef Pro: 75+ Herramientas de IA para Chefs y Restaurantes"
-  description="Suite de inteligencia artificial para chefs y restaurantes. 75+ herramientas: recetas con IA, food cost, escandallos, marketing gastronómico. Empieza hoy."
+  title="AI Chef Pro: agentes de negocio para restaurantes — food cost, alérgenos y mermas"
+  description="Suite de IA para restaurantes. Empieza el trial con créditos: mermas, alérgenos, pax y 75+ agentes. Prueba ahora en la plataforma ES."
   lang="es"
   basePath="/"
 >
-  <!-- Fase 1 slice 2: home ES completa. Orden EXACTO de src/pages/Index.tsx
-       (ModernAbout es un import muerto en la SPA — no se renderiza ni se porta). -->
+  <!-- Home ES: Business/Tools sube justo después de categorías para priorizar
+       agentes de negocio (ticket embudo trial créditos). Creatividad queda debajo. -->
   <div class="min-h-screen bg-background overflow-x-clip">
-    <Header lang={lang} />
+    <Header lang={lang} appCtaHref={trialHref} appCtaLabel={t(lang, 'hero.cta_trial')} />
     <main>
       <Hero lang={lang} />
       <TrustedByLogos lang={lang} />
@@ -43,11 +46,11 @@ const lang = 'es';
       <SocialProofStrip lang={lang} />
       <IntegracionesShowcase lang={lang} />
       <AppsCategories lang={lang} />
+      <BusinessToolsShowcase lang={lang} />
       <AIImageGallery lang={lang} />
       <AppsFinder lang={lang} />
       <CreatividadShowcase lang={lang} />
       <WorldCookbooks lang={lang} />
-      <BusinessToolsShowcase lang={lang} />
       <CityResourcesStrip lang={lang} />
       <AIToolsBanner lang={lang} />
       <ModernFeatures lang={lang} />

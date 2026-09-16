@@ -15,6 +15,7 @@ import pt from '../../../src/i18n/locales/pt.json';
 import nl from '../../../src/i18n/locales/nl.json';
 
 import { DEFAULT_LOCALE, type Locale } from './config';
+import { HOME_COPY_OVERRIDES } from './home-copy';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const DICTS: Record<Locale, any> = { es, en, fr, de, it, pt, nl };
@@ -28,6 +29,8 @@ function resolve(obj: any, path: string): any {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function lookup(lang: Locale, key: string): any {
+  const overlay = HOME_COPY_OVERRIDES[lang]?.[key];
+  if (overlay !== undefined) return overlay;
   const dict = DICTS[lang] ?? DICTS[DEFAULT_LOCALE];
   const v = resolve(dict, key);
   if (v !== undefined) return v;

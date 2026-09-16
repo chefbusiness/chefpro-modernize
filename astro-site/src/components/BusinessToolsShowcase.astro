@@ -1,16 +1,19 @@
 ---
 // BusinessToolsShowcase.astro — port de src/components/BusinessToolsShowcase.tsx.
-// Card/Button de shadcn → HTML inline con clases concatenadas verbatim; onClick del
-// Button → data-app-url + <script> vanilla (window.open scope a esta sección).
+// Card/Button de shadcn → HTML inline con clases concatenadas verbatim.
+// En ES los CTAs van al trial de créditos (isla app.aichef.pro) con UTM;
+// en el resto de idiomas se mantiene el enlace al agente concreto.
 import { businessTools } from '../../../src/data/apps';
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { appUrl } from '../lib/app-url';
+import { appUrl, trialCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 const appBase = appUrl(lang);
+const isEs = lang === 'es';
+const sectionCtaHref = isEs ? trialCtaUrl('business_showcase') : appBase;
 ---
 
 <section id="herramientas-business" class="container scroll-mt-28 py-16">
@@ -27,6 +30,7 @@ const appBase = appUrl(lang);
     {businessTools.map((tool) => {
       const IconComponent = tool.icon;
       const appKey = `apps.${tool.category}.${tool.id.replace(/-/g, '_')}`;
+      const href = isEs ? trialCtaUrl(`tool_${tool.id.replace(/-/g, '_')}`) : `${appBase}/${tool.slug}`;
       return (
         <div class="rounded-lg border bg-card text-card-foreground shadow-sm category-card-tools group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
           <div class="flex flex-col space-y-1.5 p-4 sm:p-6">
@@ -45,26 +49,32 @@ const appBase = appUrl(lang);
             </div>
           </div>
           <div class="flex items-center p-4 sm:p-6 pt-0">
-            <button
-              type="button"
-              data-app-url={`${appBase}/${tool.slug}`}
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
             >
               {t(lang, 'showcase.use_tool')}
-            </button>
+            </a>
           </div>
         </div>
       );
     })}
   </div>
-</section>
 
-<script>
-  // handleAppClick — abre la app en pestaña nueva (scope a esta sección para no duplicar listeners)
-  document.querySelectorAll<HTMLButtonElement>('#herramientas-business [data-app-url]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const url = btn.getAttribute('data-app-url');
-      if (url) window.open(url, '_blank');
-    });
-  });
-</script>
+  {isEs && (
+    <div class="mt-10 flex flex-col items-center gap-2">
+      <a
+        href={sectionCtaHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow min-h-[3rem]"
+      >
+        {t(lang, 'showcase.trial_cta')}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <p class="text-xs sm:text-sm text-muted-foreground">{t(lang, 'hero.trial_note')}</p>
+    </div>
+  )}
+</section>
