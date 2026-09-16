@@ -26,12 +26,6 @@ const SOFTWARE_GESTION_SLUGS: Record<string, string> = { es: 'software-gestion-c
 const ESCANDALLOS_SLUGS: Record<string, string> = { es: 'escandallos-restaurante-ia', en: 'en/food-cost-calculator-restaurant-ai', fr: 'fr/calcul-food-cost-restaurant-ia', de: 'de/food-cost-rechner-restaurant-ki', it: 'it/food-cost-ristorante-ia', pt: 'pt/escandallo-restaurante-ia', nl: 'nl/food-cost-berekening-restaurant-ai' };
 const MENTORIA_SLUGS: Record<string, string> = { es: 'mentoria-online', en: 'en/mentoria-online', fr: 'fr/mentoria-online', de: 'de/mentoria-online', it: 'it/mentoria-online', pt: 'pt/mentoria-online', nl: 'nl/mentoria-online' };
 
-// Landing de integraciones (2026-09-05). Misma fuente de ruta que el Header y la
-// sección de la home: src/data/integraciones.ts.
-const NUEVO_LABEL: Record<string, string> = {
-  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
-};
-const nuevoLabel = NUEVO_LABEL[lang] ?? NUEVO_LABEL.es;
 
 const s = (m: Record<string, string>) => `/${m[lang] || m.es}`;
 const legalHref = (slug: string) => (lang === 'es' ? `/${slug}` : `/${lang}/${slug}`);
@@ -131,7 +125,6 @@ const blogLinks: FooterLink[] =
           <li>
             <a href={integracionesHref(lang)} class="inline-flex items-center gap-1.5 text-accent hover:text-accent/80 transition-colors font-medium">
               {t(lang, 'footer.nav_integraciones')}
-              <span class="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">{nuevoLabel}</span>
             </a>
           </li>
           <li><a href={s(AI_TOOLS_SLUGS)} class="text-primary hover:text-primary/80 transition-colors font-medium">{t(lang, 'footer.nav_ai_tools')}</a></li>

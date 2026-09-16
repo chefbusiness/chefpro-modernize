@@ -53,11 +53,11 @@ componente borrado (sin más consumidores). **Siguen** la barra negra superior d
 - Etiqueta «Nuevo» de Integraciones eliminada en escritorio y móvil.
 - **Regla**: un item nuevo en el menú de escritorio obliga a medir el ancho por idioma antes de publicar.
 - Verificado LIVE 18:34:45 UTC: breakpoints `min-[1360px]` (ES) y `xl` (EN) en el HTML, todas las clases en el CSS publicado, blog 200.
-- **Queda un «Nuevo» en el FOOTER** junto a Integraciones (`Footer.astro:134` y probablemente `ModernFooter.tsx`): no se tocó porque John habló del header; pendiente de su decisión.
+- El «Nuevo» del FOOTER (Integraciones) también quitado, con OK de John, en `Footer.astro` y `ModernFooter.tsx`: ya no queda ninguna etiqueta «Nuevo» en el sitio.
 
 ## Pendiente
 
-1. **Comprobación visual en Chrome de Windows** del selector (desktop y móvil) cuando John conecte la extensión allí. (El header en iPad lo revisó John tras `b1a2a6f`: «¡quedó perfecto!».)
+1. Nada: John revisó el header en iPad («¡quedó perfecto!») y dio el OK en Windows.
 2. Nada más abierto de esta sesión. Los frentes grandes siguen donde los dejó `SESSION_HANDOFF_2026-09-12-chocolateria.md`.
 
 ## Térmica

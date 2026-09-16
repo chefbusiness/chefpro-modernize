@@ -32,10 +32,6 @@ const INTEGRACIONES_PATHS: Record<string, string> = {
   nl: '/nl/integraties',
 };
 
-const NUEVO_LABEL: Record<string, string> = {
-  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
-};
-
 const AI_TOOLS_SLUGS: Record<string, string> = {
   es: 'herramientas-ia-para-restaurantes',
   en: 'en/ai-tools-for-restaurants',
@@ -197,9 +193,6 @@ export default function ModernFooter() {
                   className="inline-flex items-center gap-1.5 text-accent hover:text-accent/80 transition-colors font-medium"
                 >
                   {t('footer.nav_integraciones')}
-                  <span className="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">
-                    {NUEVO_LABEL[lang] || NUEVO_LABEL.es}
-                  </span>
                 </a>
               </li>
               <li>
