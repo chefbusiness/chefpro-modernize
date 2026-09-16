@@ -39,14 +39,14 @@ export function appCtaUrl(
 export const HOME_BUSINESS_TRIAL_CAMPAIGN_ES = 'home_business_trial_es';
 
 /**
- * Trial de créditos en la isla española (`https://app.aichef.pro`).
+ * Trial de créditos en la isla española (`https://app.aichef.pro/invitado`).
  * `content` distingue el CTA (hero, header, tool_mermas_gencal…).
  */
 export function trialCtaUrl(
   content: string,
   campaign: string = HOME_BUSINESS_TRIAL_CAMPAIGN_ES,
 ): string {
-  const url = new URL(`${appUrl('es')}/`);
+  const url = new URL(`${appUrl('es')}/invitado`);
   url.searchParams.set('utm_source', 'aichef.pro');
   url.searchParams.set('utm_medium', 'cta');
   url.searchParams.set('utm_campaign', campaign);
