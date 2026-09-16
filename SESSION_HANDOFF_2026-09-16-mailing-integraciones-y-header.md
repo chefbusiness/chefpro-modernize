@@ -57,7 +57,7 @@ componente borrado (sin más consumidores). **Siguen** la barra negra superior d
 
 ## Pendiente
 
-1. **Comprobación visual en Chrome de Windows** del selector (desktop y móvil) cuando John conecte la extensión allí, y **en el iPad de John** del header ES/EN (horizontal y vertical) tras `b1a2a6f`.
+1. **Comprobación visual en Chrome de Windows** del selector (desktop y móvil) cuando John conecte la extensión allí. (El header en iPad lo revisó John tras `b1a2a6f`: «¡quedó perfecto!».)
 2. Nada más abierto de esta sesión. Los frentes grandes siguen donde los dejó `SESSION_HANDOFF_2026-09-12-chocolateria.md`.
 
 ## Térmica
