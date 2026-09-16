@@ -18,9 +18,6 @@ const INTEGRACIONES_PATHS: Record<string, string> = {
   nl: '/nl/integraties',
 };
 
-const NUEVO_LABEL: Record<string, string> = {
-  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
-};
 
 const AI_TOOLS_SLUGS: Record<string, string> = {
   es: 'herramientas-ia-para-restaurantes',
@@ -151,17 +148,17 @@ export default function ModernHeader() {
     <AnnouncementBar />
     <header className="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 flex">
-          <a className="mr-6 flex items-center space-x-2" href="/">
+        <div className="mr-2 2xl:mr-4 flex">
+          <a className="mr-4 2xl:mr-6 flex shrink-0 items-center space-x-2" href="/">
             <img 
               src={logoAiChefPro} 
               alt="AI Chef Pro Logo" 
-              className="h-8 w-auto"
+              className="h-8 w-auto max-w-none shrink-0"
             />
           </a>
-          <NavigationMenu className="hidden md:flex">
+          <NavigationMenu className={`hidden ${currentLanguage === 'es' ? 'min-[1360px]:flex' : 'xl:flex'}`}>
             <NavigationMenuList>
-              <NavigationMenuItem>
+              <NavigationMenuItem className="hidden 2xl:block">
                 <NavigationMenuLink
                   className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href={currentLanguage === 'es' ? '/' : `/${currentLanguage}`}
@@ -171,7 +168,7 @@ export default function ModernHeader() {
               </NavigationMenuItem>
               
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
+                <NavigationMenuTrigger className="px-3 2xl:px-4 transition-colors hover:text-foreground/80 text-foreground/60">
                   {t('nav.servicios')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -230,7 +227,7 @@ export default function ModernHeader() {
               </NavigationMenuItem>
               
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
+                <NavigationMenuTrigger className="px-3 2xl:px-4 transition-colors hover:text-foreground/80 text-foreground/60">
                   {({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[currentLanguage] || 'Casos de uso'}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -337,7 +334,7 @@ export default function ModernHeader() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
+                <NavigationMenuTrigger className="px-3 2xl:px-4 transition-colors hover:text-foreground/80 text-foreground/60">
                   {t('nav.aplicaciones')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -417,19 +414,16 @@ export default function ModernHeader() {
               
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2"
                   href={INTEGRACIONES_PATHS[currentLanguage] || INTEGRACIONES_PATHS.es}
                 >
                   {t('nav.integraciones')}
-                  <span className="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">
-                    {NUEVO_LABEL[currentLanguage] || NUEVO_LABEL.es}
-                  </span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2"
                   href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                 >
                   {t('nav.precios')}
@@ -439,7 +433,7 @@ export default function ModernHeader() {
               {currentLanguage === 'es' && (
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                    className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2"
                     href="/productos-digitales" target="_blank"
                   >
                     Productos Digitales
@@ -507,7 +501,7 @@ export default function ModernHeader() {
 
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="md:hidden">
+                <Button variant="ghost" size="sm" className={currentLanguage === 'es' ? 'min-[1360px]:hidden' : 'xl:hidden'}>
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
@@ -683,9 +677,6 @@ export default function ModernHeader() {
                       >
                         <Blocks className="h-5 w-5 text-muted-foreground" />
                         {t('nav.integraciones')}
-                        <span className="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">
-                          {NUEVO_LABEL[currentLanguage] || NUEVO_LABEL.es}
-                        </span>
                       </a>
 
                       <a

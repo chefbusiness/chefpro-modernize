@@ -26,6 +26,14 @@ const languages: { code: Locale; name: string }[] = [
   { code: 'nl', name: 'Nederlands' },
 ];
 const langHref = (l: Locale) => (l === 'es' ? '/' : `/${l}`);
+
+// Menú de escritorio SOLO cuando cabe (medido 2026-09-16 con métricas de fuente del sistema): en ES
+// —un item más y textos largos— necesita ~1.310 px compacto y ~1.430 completo; el resto de idiomas,
+// ≤1.210 compacto. Antes aparecía desde md (768 px) y, sin sitio, se encogía el LOGO hasta hacerse
+// invisible (iPad en horizontal, portátiles de 1.366). Por debajo: logo + idioma + login + CTA + ☰.
+// Entre xl y 2xl el menú va compacto y sin «Inicio» (el logo ya lleva a la home).
+const deskNavShow = lang === 'es' ? 'min-[1360px]:flex' : 'xl:flex';
+const deskHide = lang === 'es' ? 'min-[1360px]:hidden' : 'xl:hidden';
 const currentLangName = languages.find((x) => x.code === lang)?.name ?? 'Español';
 const LANG_LABEL: Record<string, string> = { es: 'Idioma', en: 'Language', fr: 'Langue', de: 'Sprache', it: 'Lingua', pt: 'Idioma', nl: 'Taal' };
 const langLabel = LANG_LABEL[lang] ?? LANG_LABEL.es;
@@ -66,10 +74,6 @@ const pricingHref = PRICING_PATHS[lang] ?? '/precios';
 // mega-menú, porque es reclamo comercial. La ruta nativa por idioma sale de
 // src/data/integraciones.ts, que es la MISMA fuente que usan el footer y la
 // sección de la home: un único sitio donde cambiar el slug.
-const NUEVO_LABEL: Record<string, string> = {
-  es: 'Nuevo', en: 'New', fr: 'Nouveau', de: 'Neu', it: 'Nuovo', pt: 'Novo', nl: 'Nieuw',
-};
-const nuevoLabel = NUEVO_LABEL[lang] ?? NUEVO_LABEL.es;
 
 // Etiquetas multi-idioma inline (verbatim)
 const pick = (m: Record<string, string>, fb: string) => m[lang] || fb;
@@ -175,23 +179,23 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 
   <header class="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div class="container flex h-14 max-w-screen-2xl items-center">
-      <div class="mr-4 flex">
-        <a class="mr-6 flex items-center space-x-2" href="/">
-          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-8 w-auto" />
+      <div class="mr-2 2xl:mr-4 flex">
+        <a class="mr-4 2xl:mr-6 flex shrink-0 items-center space-x-2" href="/">
+          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-8 w-auto max-w-none shrink-0" />
         </a>
 
         <!-- Desktop nav (mega-menús vía hover CSS) -->
-        <nav class="relative z-10 hidden max-w-max flex-1 items-center justify-center md:flex">
+        <nav class={`relative z-10 hidden max-w-max flex-1 items-center justify-center ${deskNavShow}`}>
           <!-- OJO: el <ul> NO puede llevar clase "group" — es ancestro de todos los paneles
                y un hover en cualquier item abriría todos los mega-menús a la vez (bug 2026-07-03). -->
           <ul class="flex flex-1 list-none items-center justify-center space-x-1">
-            <li>
+            <li class="hidden 2xl:block">
               <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={homeHref}>{t(lang, 'nav.inicio')}</a>
             </li>
 
             <!-- Servicios -->
             <li class="group relative">
-              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
                 {t(lang, 'nav.servicios')}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
               </button>
@@ -217,7 +221,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 
             <!-- Casos de uso -->
             <li class="group relative">
-              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
                 {casosLabel}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
               </button>
@@ -266,7 +270,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 
             <!-- Aplicaciones -->
             <li class="group relative">
-              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
                 {t(lang, 'nav.aplicaciones')}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
               </button>
@@ -301,19 +305,18 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
             </li>
 
             <li>
-              <a class="inline-flex whitespace-nowrap items-center gap-1.5 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={integracionesHref(lang)}>
+              <a class="inline-flex whitespace-nowrap items-center gap-1.5 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2" href={integracionesHref(lang)}>
                 {t(lang, 'nav.integraciones')}
-                <span class="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">{nuevoLabel}</span>
               </a>
             </li>
 
             <li>
-              <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={pricingHref}>{t(lang, 'nav.precios')}</a>
+              <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2" href={pricingHref}>{t(lang, 'nav.precios')}</a>
             </li>
 
             {lang === 'es' && (
               <li>
-                <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href="/productos-digitales" target="_blank">Productos Digitales</a>
+                <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2" href="/productos-digitales" target="_blank">Productos Digitales</a>
               </li>
             )}
           </ul>
@@ -349,7 +352,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
           <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-9 px-3 bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex">{t(lang, 'cta.primary')}</a>
 
           <!-- Botón menú móvil -->
-          <button id="mobile-menu-open" type="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 md:hidden" aria-label="Abrir menú">
+          <button id="mobile-menu-open" type="button" class={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 ${deskHide}`} aria-label="Abrir menú">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
           </button>
         </nav>
@@ -359,7 +362,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 </div>
 
 <!-- Sheet móvil (overlay + panel deslizante) -->
-<div id="mobile-menu" class="hidden md:hidden">
+<div id="mobile-menu" class={`hidden ${deskHide}`}>
   <div id="mobile-menu-overlay" class="fixed inset-0 z-50 bg-black/80"></div>
   <div class="fixed inset-y-0 right-0 z-50 flex h-full w-full flex-col p-0 sm:max-w-sm bg-card/95 backdrop-blur-lg border-l rounded-l-2xl shadow-lg">
     <div class="sticky top-0 z-10 bg-card/95 backdrop-blur-sm border-b px-6 py-4">
@@ -455,7 +458,6 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
           <a href={integracionesHref(lang)} class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><path d="M6.5 10v4"/><path d="M10 17.5h4"/><path d="M17.5 10V6.5"/><path d="M10 6.5h4"/></svg>
             {t(lang, 'nav.integraciones')}
-            <span class="rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase leading-none text-accent">{nuevoLabel}</span>
           </a>
 
           <a href={pricingHref} class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
