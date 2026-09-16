@@ -43,9 +43,21 @@ componente borrado (sin más consumidores). **Siguen** la barra negra superior d
 - EN sigue con la bandera de EE. UU. (la del selector anterior). Si John prefiere Reino Unido, es una línea en `lang-flags.ts`.
 - Verificado LIVE 18:25:50 UTC en ES/EN/DE/PT + clases presentes en el CSS publicado + blog 200.
 
+## 5. iPad: logo diminuto en ES + fuera la etiqueta «Nuevo» (`b1a2a6f`)
+
+- John, en el iPad: en español el logo salía «súper miniaturizado» y en inglés normal. Causa: menú de escritorio desde `md`
+  (768 px) y logo sin `shrink-0`. Medido con métricas de SF: el menú completo necesita ~1.430 px en ES (item extra + textos
+  largos), ~1.340 en DE y ~1.150 en EN; un iPad en horizontal tiene 1.180. Afectaba también a portátiles de 1.366 en ES.
+- Ahora: logo `shrink-0 max-w-none`; menú de escritorio desde `min-[1360px]` en ES y `xl` en el resto; compacto y sin «Inicio»
+  hasta `2xl` (1.536); por debajo, logo + idioma + login + CTA + ☰ (el panel móvil también se usa en tablet).
+- Etiqueta «Nuevo» de Integraciones eliminada en escritorio y móvil.
+- **Regla**: un item nuevo en el menú de escritorio obliga a medir el ancho por idioma antes de publicar.
+- Verificado LIVE 18:34:45 UTC: breakpoints `min-[1360px]` (ES) y `xl` (EN) en el HTML, todas las clases en el CSS publicado, blog 200.
+- **Queda un «Nuevo» en el FOOTER** junto a Integraciones (`Footer.astro:134` y probablemente `ModernFooter.tsx`): no se tocó porque John habló del header; pendiente de su decisión.
+
 ## Pendiente
 
-1. **Comprobación visual en Chrome de Windows** del selector (desktop y móvil) cuando John conecte la extensión allí.
+1. **Comprobación visual en Chrome de Windows** del selector (desktop y móvil) cuando John conecte la extensión allí, y **en el iPad de John** del header ES/EN (horizontal y vertical) tras `b1a2a6f`.
 2. Nada más abierto de esta sesión. Los frentes grandes siguen donde los dejó `SESSION_HANDOFF_2026-09-12-chocolateria.md`.
 
 ## Térmica
