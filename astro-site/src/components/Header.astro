@@ -7,25 +7,29 @@ import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
 import { appUrl } from '../lib/app-url';
 import { integracionesHref } from '../data/integraciones';
+import { FLAG_SVG } from '../../../src/lib/lang-flags';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 const LOCALES: Locale[] = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
 
-// Selector de idioma = enlaces planos a la home de cada idioma
-const languages: { code: Locale; name: string; flag: string }[] = [
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
+// Selector de idioma = enlaces planos a la home de cada idioma. Las banderas
+// son SVG (src/lib/lang-flags.ts), no emoji: Windows no pinta las emoji de bandera.
+const languages: { code: Locale; name: string }[] = [
+  { code: 'es', name: 'Español' },
+  { code: 'en', name: 'English' },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'it', name: 'Italiano' },
+  { code: 'pt', name: 'Português' },
+  { code: 'nl', name: 'Nederlands' },
 ];
 const langHref = (l: Locale) => (l === 'es' ? '/' : `/${l}`);
 const currentLangName = languages.find((x) => x.code === lang)?.name ?? 'Español';
-const currentLangFlag = languages.find((x) => x.code === lang)?.flag ?? '🇪🇸';
+const LANG_LABEL: Record<string, string> = { es: 'Idioma', en: 'Language', fr: 'Langue', de: 'Sprache', it: 'Lingua', pt: 'Idioma', nl: 'Taal' };
+const langLabel = LANG_LABEL[lang] ?? LANG_LABEL.es;
+const flagClass = 'inline-block h-3.5 w-5 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-black/10';
 
 // Slugs nativos por idioma (verbatim de ModernHeader.tsx)
 const AI_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-ia-para-restaurantes', en: 'en/ai-tools-for-restaurants', fr: 'fr/outils-ia-restaurant', de: 'de/ki-tools-restaurant', it: 'it/strumenti-ia-ristorante', pt: 'pt/ferramentas-ia-restaurante', nl: 'nl/ai-tools-restaurant' };
@@ -319,15 +323,23 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
       <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
         <div class="w-full flex-1 md:w-auto md:flex-none"></div>
         <nav class="flex items-center gap-2">
-          <!-- Selector de idioma (enlaces planos vía <details>) -->
+          <!-- Selector de idioma (enlaces planos vía <details>): globo + código; en el desplegable, bandera SVG + código -->
           <details class="relative">
-            <summary class="list-none inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-8 px-2 cursor-pointer">
-              {currentLangName}
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg>
+            <summary aria-label={`${langLabel}: ${currentLangName}`} title={currentLangName} class="list-none inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-2.5 cursor-pointer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              <span>{lang.toUpperCase()}</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 opacity-60" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </summary>
-            <div class="absolute right-0 mt-1 bg-popover border border-border shadow-lg z-[100] min-w-[100px] rounded-md p-1">
+            <div class="absolute right-0 mt-1 bg-popover border border-border shadow-lg z-[100] min-w-[120px] rounded-md p-1">
               {languages.map((l) => (
-                <a href={langHref(l.code)} data-lang-choice={l.code} class="block rounded-sm px-2 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground">{l.name}</a>
+                <a href={langHref(l.code)} hreflang={l.code} title={l.name} data-lang-choice={l.code} aria-current={lang === l.code ? 'true' : undefined} class="flex items-center gap-2.5 rounded-sm px-2.5 py-1.5 text-sm font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground">
+                  <span class={flagClass} set:html={FLAG_SVG[l.code]} />
+                  <span>{l.code.toUpperCase()}</span>
+                  <span class="sr-only" lang={l.code}>{l.name}</span>
+                  {lang === l.code && (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                  )}
+                </a>
               ))}
             </div>
           </details>
@@ -497,13 +509,13 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
           <details class="relative">
             <summary class="list-none inline-flex w-full items-center justify-start gap-3 px-3 py-3 h-auto rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-              <span class="flex items-center gap-2"><span class="text-lg">{currentLangFlag}</span>{currentLangName}</span>
+              <span class="flex items-center gap-2"><span class={flagClass} set:html={FLAG_SVG[lang]} />{currentLangName}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m6 9 6 6 6-6"/></svg>
             </summary>
             <div class="mt-1 w-56 rounded-md border border-border bg-popover p-1 shadow-lg">
               {languages.map((l) => (
                 <a href={langHref(l.code)} data-lang-choice={l.code} class="flex items-center gap-3 py-2 px-2 rounded-sm text-sm hover:bg-accent hover:text-accent-foreground">
-                  <span class="text-lg">{l.flag}</span>{l.name}
+                  <span class={flagClass} set:html={FLAG_SVG[l.code]} />{l.name}
                   {lang === l.code && (
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="M20 6 9 17l-5-5"/></svg>
                   )}

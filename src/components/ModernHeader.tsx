@@ -82,6 +82,7 @@ const HERRAMIENTAS_GRATUITAS_SLUGS: Record<string, string> = {
   nl: 'nl/gratis-tools-restaurant',
 };
 import { useLanguage, type Language } from '@/hooks/useLanguage';
+import { FLAG_SVG } from '@/lib/lang-flags';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
   NavigationMenu,
@@ -108,15 +109,25 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
-const languages: { code: Language; name: string; flag: string }[] = [
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
+// Banderas en SVG (src/lib/lang-flags.ts), no emoji: Windows no pinta las emoji de bandera.
+const languages: { code: Language; name: string }[] = [
+  { code: 'es', name: 'Español' },
+  { code: 'en', name: 'English' },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'it', name: 'Italiano' },
+  { code: 'pt', name: 'Português' },
+  { code: 'nl', name: 'Nederlands' },
 ];
+
+const LANG_LABEL: Record<Language, string> = { es: 'Idioma', en: 'Language', fr: 'Langue', de: 'Sprache', it: 'Lingua', pt: 'Idioma', nl: 'Taal' };
+
+const LangFlag = ({ code }: { code: Language }) => (
+  <span
+    className="inline-block h-3.5 w-5 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-black/10"
+    dangerouslySetInnerHTML={{ __html: FLAG_SVG[code] }}
+  />
+);
 
 export default function ModernHeader() {
   const { currentLanguage, changeLanguage, t, getAppUrl } = useLanguage();
@@ -445,22 +456,33 @@ export default function ModernHeader() {
           <nav className="flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-8 px-2">
-                  {currentLang?.name}
-                  <ChevronDown className="h-4 w-4" />
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-9 gap-1.5 px-2.5"
+                  aria-label={`${LANG_LABEL[currentLanguage]}: ${currentLang?.name}`}
+                  title={currentLang?.name}
+                >
+                  <Globe className="h-4 w-4" aria-hidden="true" />
+                  <span>{currentLanguage.toUpperCase()}</span>
+                  <ChevronDown className="h-3.5 w-3.5 opacity-60" aria-hidden="true" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent 
                 align="end" 
-                className="bg-popover border border-border shadow-lg z-[100] min-w-[100px]"
+                className="bg-popover border border-border shadow-lg z-[100] min-w-[120px]"
               >
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
-                    className="hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground"
+                    title={lang.name}
+                    className="flex items-center gap-2.5 px-2.5 py-1.5 font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground"
                   >
-                    {lang.name}
+                    <LangFlag code={lang.code} />
+                    <span>{lang.code.toUpperCase()}</span>
+                    <span className="sr-only" lang={lang.code}>{lang.name}</span>
+                    {currentLanguage === lang.code && <Check className="ml-auto h-4 w-4" aria-hidden="true" />}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -751,7 +773,7 @@ export default function ModernHeader() {
                           <Button variant="ghost" className="w-full justify-start gap-3 px-3 py-3 h-auto">
                             <Globe className="h-4 w-4" />
                             <span className="flex items-center gap-2">
-                              <span className="text-lg">{languages.find(lang => lang.code === currentLanguage)?.flag}</span>
+                              <LangFlag code={currentLanguage} />
                               {languages.find(lang => lang.code === currentLanguage)?.name}
                             </span>
                             <ChevronDown className="ml-auto h-4 w-4" />
@@ -767,7 +789,7 @@ export default function ModernHeader() {
                               }}
                               className="flex items-center gap-3 py-2"
                             >
-                              <span className="text-lg">{language.flag}</span>
+                              <LangFlag code={language.code} />
                               {language.name}
                               {currentLanguage === language.code && (
                                 <Check className="ml-auto h-4 w-4" />
