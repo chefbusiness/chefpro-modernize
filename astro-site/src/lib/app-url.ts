@@ -34,3 +34,22 @@ export function appCtaUrl(
 ): string {
   return `${appUrl(lang)}/?utm_source=web&utm_medium=${medium}&utm_content=${content}`;
 }
+
+/** Campaña del embudo home + Business → trial de créditos (isla ES). */
+export const HOME_BUSINESS_TRIAL_CAMPAIGN_ES = 'home_business_trial_es';
+
+/**
+ * Trial de créditos en la isla española (`https://app.aichef.pro`).
+ * `content` distingue el CTA (hero, header, tool_mermas_gencal…).
+ */
+export function trialCtaUrl(
+  content: string,
+  campaign: string = HOME_BUSINESS_TRIAL_CAMPAIGN_ES,
+): string {
+  const url = new URL(`${appUrl('es')}/`);
+  url.searchParams.set('utm_source', 'aichef.pro');
+  url.searchParams.set('utm_medium', 'cta');
+  url.searchParams.set('utm_campaign', campaign);
+  if (content) url.searchParams.set('utm_content', content);
+  return url.toString();
+}

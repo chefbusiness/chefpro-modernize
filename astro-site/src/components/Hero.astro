@@ -6,13 +6,20 @@ import { t, tList } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
 import SocialCountLive from './SocialCountLive.astro';
-import { appUrl } from '../lib/app-url';
+import { appUrl, trialCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 const businessTypes = tList(lang, 'hero.business_types');
 const firstWord = businessTypes[0] ?? '';
+const isEs = lang === 'es';
+const businessPills = tList(lang, 'hero.business_pills');
+const primaryCtaHref = isEs ? trialCtaUrl('hero') : appUrl(lang);
+const primaryCtaLabel = isEs ? t(lang, 'hero.cta_trial') : t(lang, 'cta.primary');
+const secondaryCtaHref = isEs ? '#herramientas-business' : blogHubHref(lang);
+const secondaryCtaTarget = isEs ? undefined : '_blank';
+const secondaryCtaRel = isEs ? undefined : 'noopener noreferrer';
 
 // getDynamicCount() de HeroSocialProof.tsx — computado server-side (determinista por fecha de build)
 function getDynamicCount(): number {
@@ -37,12 +44,19 @@ const avatars = [1, 2, 3, 4, 5, 6, 7, 8];
 // sirven 89/80); it/fr/de/pt/nl anuncian 50+ porque sus plataformas sirven
 // 53-54 — subirlo cuando John complete esos catálogos (CATALOGO_ITALIANO_PENDIENTE.md).
 const nAgentes = ['es', 'en'].includes(lang) ? 75 : 50;
-const stats = [
-  { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
-  { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
-  { end: 10, suffix: '+', label: t(lang, 'stats.tools_label') },
-  { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
-];
+const stats = isEs
+  ? [
+      { end: 10, suffix: '+', label: t(lang, 'stats.tools_label') },
+      { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
+      { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
+      { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
+    ]
+  : [
+      { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
+      { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
+      { end: 10, suffix: '+', label: t(lang, 'stats.tools_label') },
+      { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
+    ];
 ---
 
 <section id="inicio" class="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
@@ -79,6 +93,16 @@ const stats = [
     {t(lang, 'hero.subtitle')}
   </p>
 
+  {businessPills.length > 0 && (
+    <ul class="flex flex-wrap justify-center gap-2 max-w-[42rem]">
+      {businessPills.map((pill) => (
+        <li class="inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs sm:text-sm font-medium text-foreground">
+          {pill}
+        </li>
+      ))}
+    </ul>
+  )}
+
   <p class="max-w-[42rem] text-center text-base text-muted-foreground text-balance leading-6">
     {t(lang, 'hero.description')}
   </p>
@@ -94,14 +118,17 @@ const stats = [
   </div>
 
   <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up w-full sm:w-auto">
-    <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]">
-      {t(lang, 'cta.primary')}
+    <a href={primaryCtaHref} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]">
+      {primaryCtaLabel}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
-    <a href={blogHubHref(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-11 px-8 btn-gold-outline w-full sm:w-auto min-h-[3rem]">
+    <a href={secondaryCtaHref} target={secondaryCtaTarget} rel={secondaryCtaRel} class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-11 px-8 btn-gold-outline w-full sm:w-auto min-h-[3rem]">
       {t(lang, 'hero.see_resources')}
     </a>
   </div>
+  {isEs && (
+    <p class="text-xs sm:text-sm text-muted-foreground text-center">{t(lang, 'hero.trial_note')}</p>
+  )}
 </section>
 
 <script define:vars={{ businessTypes }}>

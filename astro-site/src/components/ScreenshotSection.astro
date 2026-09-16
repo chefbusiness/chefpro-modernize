@@ -6,12 +6,12 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
-import { appUrl } from '../lib/app-url';
+import { appUrl, trialCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const screenshots = [
+const rawScreenshots = [
   { id: 1, titleKey: 'cocina_creativa', descKey: 'cocina_creativa', image: '/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png', categoryKey: 'creatividad' },
   { id: 2, titleKey: 'platos_autor', descKey: 'platos_autor', image: '/lovable-uploads/5863854b-f30c-47d7-89f0-6124f57cfacf.png', categoryKey: 'creatividad' },
   { id: 3, titleKey: 'catering_ai', descKey: 'catering_ai', image: '/lovable-uploads/975877a4-27f4-4215-9f8a-63882f278540.png', categoryKey: 'conceptos' },
@@ -26,6 +26,14 @@ const screenshots = [
   { id: 12, titleKey: 'cocina_india', descKey: 'cocina_india', image: '/lovable-uploads/c7595f12-a770-4c58-939f-69a9c3c8a1f8.png', categoryKey: 'recetarios' },
 ];
 
+const businessFirst = ['casual_restaurants', 'catering_ai', 'menu_local_seo'];
+const screenshots = lang === 'es'
+  ? [
+      ...rawScreenshots.filter((s) => businessFirst.includes(s.titleKey)),
+      ...rawScreenshots.filter((s) => !businessFirst.includes(s.titleKey)),
+    ]
+  : rawScreenshots;
+
 // Datos ya localizados para pasarlos al script (server → cliente)
 const slides = screenshots.map((s) => ({
   image: s.image,
@@ -38,7 +46,7 @@ const total = slides.length;
 const counterTemplate = t(lang, 'gallery.counter');
 const initialCounter = counterTemplate.replace('{{current}}', '1').replace('{{total}}', String(total));
 const first = slides[0];
-const exploreUrl = appUrl(lang);
+const exploreUrl = lang === 'es' ? trialCtaUrl('gallery') : appUrl(lang);
 ---
 
 <section class="container mx-auto px-4 py-8 md:py-12">

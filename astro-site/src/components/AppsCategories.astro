@@ -9,7 +9,7 @@ import type { Locale } from '../i18n/config';
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const appCategories = [
+const rawCategories = [
   {
     id: 'creativity',
     name: t(lang, 'categories.creativity.title'),
@@ -89,6 +89,12 @@ const appCategories = [
     ],
   },
 ];
+
+// En ES el negocio va primero: food cost / alérgenos / operación, no creatividad.
+const esOrder = ['business', 'concepts', 'marketing', 'creativity', 'worldCookbooks', 'knowledge'];
+const appCategories = lang === 'es'
+  ? [...rawCategories].sort((a, b) => esOrder.indexOf(a.id) - esOrder.indexOf(b.id))
+  : rawCategories;
 ---
 
 <section class="container py-8 md:py-12 lg:py-24">
