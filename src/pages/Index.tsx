@@ -19,7 +19,6 @@ import CategoryCTAs from '@/components/CategoryCTAs';
 import ModernFAQ from '@/components/ModernFAQ';
 import ModernFooter from '@/components/ModernFooter';
 import ConversionNotifications from '@/components/ConversionNotifications';
-import FormacionPromoPopup from '@/components/FormacionPromoPopup';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import AIToolsBanner from '@/components/AIToolsBanner';
@@ -56,7 +55,6 @@ const Index = () => {
         <CategoryCTAs />
         <ModernFAQ />
         <ConversionNotifications />
-        <FormacionPromoPopup />
       </main>
       <ModernFooter />
       <WhatsAppFloatingButton />

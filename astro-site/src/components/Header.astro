@@ -332,7 +332,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
             </div>
           </details>
 
-          <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 hidden md:inline-flex">{t(lang, 'nav.login')}</a>
+          <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors bg-accent-light text-accent-foreground hover:bg-accent h-9 px-3 hidden md:inline-flex">{t(lang, 'nav.login')}</a>
 
           <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-9 px-3 bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex">{t(lang, 'cta.primary')}</a>
 

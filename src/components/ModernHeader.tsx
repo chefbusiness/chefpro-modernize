@@ -470,7 +470,7 @@ export default function ModernHeader() {
               variant="ghost" 
               size="sm" 
               onClick={handleLoginClick}
-              className="hidden md:inline-flex"
+              className="bg-accent-light text-accent-foreground hover:bg-accent hidden md:inline-flex"
             >
               {t('nav.login')}
             </Button>
