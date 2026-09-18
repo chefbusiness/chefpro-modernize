@@ -336,6 +336,32 @@ contra 4 defectos inyectados a mano: los caza los 4 (uno de ellos sólo tras
 arreglar que `fr.html` se leía como española — con `build.format: 'file'` la
 portada de cada idioma **no** es `fr/index.html`).
 
+### Pasarela cripto NOWPayments: en los 48 productos desde el 18-sep-2026 (PR #81)
+
+Segunda puerta «Pagar con cripto» (Stripe sigue siendo la principal). Doc canónico: `PAGOS_CRYPTO_NOWPAYMENTS.md`
+(leerlo ENTERO antes de tocar nada). Lo que hay que saber para no romperla:
+
+- **Dos variables, las dos en scope `builds` Y `functions`, y NINGUNA surte efecto sin redeploy**: `CRYPTO_PRODUCTS`
+  (vacía = apagado en todo el sitio · `all` · CSV) y `CRYPTO_PRODUCTS_EXCLUDE` (CSV que se resta SIEMPRE, también con
+  `all`; hoy `pro-prompts-ebook`, 9 € < mínimo de NOWPayments). El build decide si el botón llega al HTML; la function
+  vuelve a decidir al pulsarlo. Si una capa ve una variable y la otra no, el botón se pinta y el checkout responde 403.
+- **Toda plantilla de landing monta las TRES puertas** (`CryptoPayButton.astro`: `hero` DENTRO del recuadro de precio
+  tras el sello de Stripe, `buybox` como tarjeta HERMANA fuera del recuadro dorado, `cta` dentro del CTA final) + la nota
+  de devoluciones bajo la garantía. **Solo la variante `buybox` emite el `<dialog>` y el `<script>`**: una página con
+  `hero`/`cta` y sin `buybox` deja botones que solo llevan a `#comprar`. El mega-pack no tiene CTA final: 2 puertas.
+- **Un producto nuevo hereda las dos puertas** al nacer con una de las plantillas; con `CRYPTO_PRODUCTS=all` no hay
+  que tocar la env. Lo que SÍ hay que regenerar es `netlify/shared/product-prices.ts` (`sync-product-prices.py`): el
+  importe de la factura sale de ahí, nunca del cliente.
+- Gate: `python3 scripts/productos-digitales/gate-flujo-postpago.py --crypto-products all --crypto-exclude pro-prompts-ebook`
+  (añadir `--base https://deploy-preview-N--aichefpro.netlify.app` para un preview). Exige 3 botones `data-crypto-open`
+  + 1 `<dialog>` + 3 `aria-controls` por landing encendida y CERO rastros de `data-crypto` en las excluidas. Ojo: contra
+  un preview, las 4 descargas por env var del eBook «fallan» porque apuntan a `aichef.pro`; es el `--base`, no un bug.
+- **El pago real de prueba del piloto sigue sin hacerse** (18-sep): el circuito IPN→email→dashboard está probado con
+  IPN sintéticos firmados y 42 tests de firma, no con un pago de NOWPayments. Si un cliente paga y no recibe el enlace:
+  `resend-access` y `crypto-report.py` (necesita `ADMIN_PASSWORD` exportada).
+- Probar un checkout por curl **crea una factura real y un pedido en el libro** (Blobs, compartido entre preview y
+  producción): usar email `qa-…@aichef.pro` y purgar con `crypto-report?purge_unpaid_before=`.
+
 ### Integraciones / conectores (Fase 12, 2026-09-05)
 
 Los agentes ganaron razonamiento avanzado, **artefactos** (Copilot) y **conexión con
