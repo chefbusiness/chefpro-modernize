@@ -61,3 +61,36 @@ reconfirmada ese mismo día: ralentizar a 65 °C, `istats`, nada de Playwright n
 5. Copy del hub y del `WorldwideBanner` («Paga con tarjeta, Apple Pay o Google Pay…»): hoy no mencionan cripto.
 
 Sesión Claude Code · firma de commits `Via: Claude Code`.
+
+---
+
+## Segunda parte de la sesión (19-sep) — tarjeta lateral de Miselup en los 48 productos (PR #82)
+
+- Encargo: el snippet de John (tarjeta flotante de Miselup) «en la landing pública y en la página privada de dashboard
+  de cada producto». Autorizó mejoras («si crees que debes hacerle mejoras… decídelo tú»).
+- Implementación: `components/MiselupSideCard.astro` + condición en `BaseLayout.astro` por registro `zona-app.ts`
+  (48 landing + 48 library; `utm_content=landing|dashboard`). Gate HTTP `scripts/astro-migration/miselup-gate.py`.
+- Revisión adversarial (2 lentes opus + 2 refutadores/hallazgo, 32 agentes): 15 hallazgos → 9 confirmados y aplicados
+  (`94ba695`): sin `transform` en el fixed, corte 767 px, `visibility` al replegar, `max-height`, sin auto-abrir en
+  dashboard ni viewports bajos, `seen` al abrir, `aria-label` alterna, gate por firma y más páginas ajenas.
+- Preview 82: gate 96/96 + 13 ajenas limpias; visual en Chrome de Windows (escritorio auto-abre y queda centrada al
+  hacer scroll; móvil línea fina → abre → ✕ la elimina; la franja de 700 px no se pudo ver porque la ventana de Windows
+  dejó de aceptar el redimensionado). Merge `e22961d`.
+- **Producción (19-sep, verificado):** deploy `e22961d` publicado; `miselup-gate.py` LIVE **96/96** (48 landings con
+  `utm_content=landing` + 48 dashboards con `utm_content=dashboard`) y 13 páginas ajenas con cero firma; WhatsApp intacto
+  (landing 1, precios 1, dashboard 0 en HTML porque lo pinta el island).
+
+## Tercera parte (19-sep) — «Próximamente» del hub y cola de productos nuevos (barrido de 30 días)
+
+- Barrido con 6 lectores + sintetizador (188 menciones, 77 ficheros): de la cola de 5 productos nuevos abierta el 31-ago,
+  **4 ya están LIVE** (Food Cost, Manual Manager, Manual Chef Ejecutivo, Pastelería) y queda **la Chocolatería** (A2+B1
+  hecha, 9 xlsx en `dl/`; falta B2+C en local). La única tarjeta de «Próximamente» es la suya y decía «Junio 2026»: pasa a
+  **«Octubre 2026»** (broadcast previsto 24-oct) en los DOS ficheros del hub (`ProductosDigitalesHubPage.astro` y la SPA).
+- No se anuncia nada más sin decisión de John: Churrería-Chocolatería (D3: «no se hace ahora ni se anuncia»), Plan de
+  Negocio Heladería (anunciado en CB desde mayo, nunca construido, sin research), inglés nativo (no arranca hasta cerrar
+  el ES), banco de 161 ideas de la Hoja 6 (hipótesis, no productos).
+- Hallazgo para John: el hub de **ChefBusiness** sigue anunciando 3 productos «en desarrollo» propios (Heladería, Kit Plan
+  Financiero y Guía Food Cost — estos dos ya LIVE aquí), contra la tienda única del 31-ago. Se corrige desde la terminal de
+  `chefbusiness-astro`, no desde aquí.
+- Recordatorio que salió del barrido: el broadcast de lanzamiento de Pastelería (14-oct) era programable desde el 14-sep
+  y no consta programado; el del Kit de Tareas Pastelería 2.1 (19-oct) es programable desde hoy.

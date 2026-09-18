@@ -336,6 +336,30 @@ contra 4 defectos inyectados a mano: los caza los 4 (uno de ellos sólo tras
 arreglar que `fr.html` se leía como española — con `build.format: 'file'` la
 portada de cada idioma **no** es `fr/index.html`).
 
+### Tarjeta lateral de Miselup en landing + dashboard de cada producto (19-sep-2026, PR #82)
+
+John pidió su snippet (HTML/CSS/JS) «en la landing pública y en la página privada de dashboard de cada
+producto». Vive en `components/MiselupSideCard.astro` y **la monta `BaseLayout.astro` solo**, con el
+registro `PRODUCTOS_ZONA_APP` (`lib/zona-app.ts`): si la ruta actual es un `landingPath` → tarjeta con
+`utm_content=landing`; si es un `libraryPath` → `utm_content=dashboard`; en cualquier otra página, nada.
+Un producto nuevo la hereda al entrar en el registro. `miselup={true|false}` en `BaseLayout` fuerza.
+
+- **`style` y `script` van `is:inline` dentro del componente**: BaseLayout lo importa en las ~1.300
+  páginas y los `<style>/<script>` normales de Astro se recogen por IMPORT, no por render (misma trampa
+  que `CryptoPayButton`). Sin `is:inline` el CSS/JS se colaría en todo el sitio.
+- **Sin `transform` sobre el `position: fixed`** (regla del 3-sep tras el temblor del botón de WhatsApp):
+  centrado con `top/bottom: 0` + márgenes auto + `height: fit-content`, y el repliegue es un `right`
+  negativo animado. El corte móvil es **767 px** (el `md` del sitio), no los 640 del snippet: entre 641 y
+  767 se abría sola en modo escritorio sobre la barra sticky de compra.
+- No se auto-abre en el dashboard (tapaba la rejilla de descargas) ni con menos de 560 px de alto;
+  `.ms-body` queda `visibility: hidden` al replegarse (si no, el ✕ y el CTA eran paradas de tabulación
+  fuera de pantalla). Snippet de John intacto en lo visual; mejoras documentadas en la cabecera.
+- **Gate: `python3 scripts/astro-migration/miselup-gate.py [--base <preview>]`** — 96 páginas con la
+  tarjeta exactamente una vez (por `utm_content` de su colocación) y 13 páginas ajenas con CERO firma
+  del componente. Mide la FIRMA (`id="miselup-card"`, `miselupCardDismissed`, el CTA), **no la palabra
+  «miselup»**: 25 posts del blog la llevan en el bloque congelado «CHEFBUSINESS GROUP».
+- El `-library` sin JWT redirige a la landing: el dashboard se verifica por HTML (gate), no a ojo.
+
 ### Pasarela cripto NOWPayments: en los 48 productos desde el 18-sep-2026 (PR #81)
 
 Segunda puerta «Pagar con cripto» (Stripe sigue siendo la principal). Doc canónico: `PAGOS_CRYPTO_NOWPAYMENTS.md`
