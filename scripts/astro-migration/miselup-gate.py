@@ -50,7 +50,8 @@ def medir(html, placement=''):
     return {
         'card': len(re.findall(r'id="miselup-card"', html)),
         'style': len(re.findall(r'<style[^>]*>[^<]*#miselup-card', html)),
-        'script': html.count('miselupCardDismissed'),
+        # bloques <script> que contienen el JS del snippet (la cadena aparece 2 veces dentro: leer y escribir)
+        'script': len(re.findall(r'<script[^>]*>(?:(?!</script>).)*?miselupCardDismissed', html, re.S)),
         'cta': html.count(CTA + placement) if placement else html.count(CTA),
         'rastro': html.count('miselup'),
     }
