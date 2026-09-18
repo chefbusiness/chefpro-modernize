@@ -198,7 +198,17 @@ Copia local de la sesión en el scratchpad (`nowpayments-postman.json`, `nowpaym
 - `GET /.netlify/functions/crypto-report?days=30[&format=csv][&purge_unpaid_before=YYYY-MM-DD]` con `x-admin-password` → JSON/CSV; `401`; `429`.
 
 ## Env vars (site `aichefpro`, `ee5802cf-…`)
-Secretas, scope `functions`: `NOWPAYMENTS_API_KEY`, `NOWPAYMENTS_IPN_SECRET`. No secretas: `NOWPAYMENTS_API_BASE` (default `https://api.nowpayments.io/v1`), `CRYPTO_PRODUCTS` (scope `functions` **y** `builds`; vacío = apagado; `all` = todos; o CSV de productIds), `CRYPTO_MIN_PAID_RATIO` (`0.95`), `CRYPTO_FIXED_RATE` (`0`), `CRYPTO_FEE_PAID_BY_USER` (`0`), `CRYPTO_SITE_URL` (default `https://aichef.pro`; en deploy preview, la URL del preview para `success_url`/`ipn_callback_url`). Ya existen en todos los contextos: `JWT_SECRET`, `RESEND_API_KEY`, `ADMIN_PASSWORD`.
+Secretas, scope `functions`: `NOWPAYMENTS_API_KEY`, `NOWPAYMENTS_IPN_SECRET`. No secretas: `NOWPAYMENTS_API_BASE` (default `https://api.nowpayments.io/v1`), `CRYPTO_PRODUCTS` (scope `functions` **y** `builds`; vacío = apagado; `all` = todos; o CSV de productIds), **`CRYPTO_PRODUCTS_EXCLUDE`** (scope `functions` **y** `builds`; CSV de productIds, **vacía por defecto**), `CRYPTO_MIN_PAID_RATIO` (`0.95`), `CRYPTO_FIXED_RATE` (`0`), `CRYPTO_FEE_PAID_BY_USER` (`0`), `CRYPTO_SITE_URL` (default `https://aichef.pro`; en deploy preview, la URL del preview para `success_url`/`ipn_callback_url`). Ya existen en todos los contextos: `JWT_SECRET`, `RESEND_API_KEY`, `ADMIN_PASSWORD`.
+
+### `CRYPTO_PRODUCTS_EXCLUDE` — la resta que sobrevive a `all` (2026-09-06)
+
+Al montar el botón en las 5 plantillas + el mega-pack, el interruptor pasa a `CRYPTO_PRODUCTS=all` y ahí **no hay forma de exceptuar nada**: o son los 46 o hay que volver a escribir el CSV entero cada vez que se añade un producto. `CRYPTO_PRODUCTS_EXCLUDE` es esa resta, y **se aplica SIEMPRE, también con `all`**; ante el empate (un id en las dos listas) manda la exclusión.
+
+- **Valor previsto en producción: `pro-prompts-ebook`.** Cuesta 9 € y está por debajo del mínimo por transacción de NOWPayments, así que su botón no debe pintarse ni con el interruptor abierto del todo.
+- Se apaga **por configuración, no quitándole el componente a su página**: el día que cambie el mínimo basta con vaciar la variable y redesplegar.
+- **Las dos capas la leen y normalizan igual** (`trim().toLowerCase()` de las entradas *y* del `productId`): `astro-site/src/lib/crypto-checkout.ts` en el build —decide si el botón llega siquiera al HTML— y `allowlist()` / `cryptoPermitido()` de `netlify/functions/crypto-checkout.ts` en runtime. Si sólo una la aplicara, el botón saldría en la página y el checkout respondería `403 product_not_enabled` al pulsarlo.
+- **Scope `builds` + `functions`, y redeploy obligatorio**: como con `CRYPTO_PRODUCTS`, cambiarla no surte efecto hasta el siguiente despliegue (la mitad del build queda cocida en el HTML).
+- Verificación: `python3 scripts/productos-digitales/gate-flujo-postpago.py --crypto-products all --crypto-exclude pro-prompts-ebook` recorre las 46 landings y exige 3 puertas donde toca y **cero rastro de `data-crypto`** en las excluidas.
 
 ---
 

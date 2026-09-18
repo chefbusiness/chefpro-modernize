@@ -14,6 +14,14 @@
 // DINERO: `stripeLink` llega YA resuelto del wrapper (import.meta.env.VITE_STRIPE_PAYMENT_LINK ||
 // '#comprar' — MISMA env var y MISMO fallback que TODOS los componentes ebook/* de la SPA).
 import Icon from '../Icon.astro';
+// Segunda puerta de pago (NOWPayments). El componente se monta en las TRES puertas como en el
+// resto de plantillas, pero este producto va en `CRYPTO_PRODUCTS_EXCLUDE` (9 € < mínimo por
+// transacción de NOWPayments, PAGOS_CRYPTO_NOWPAYMENTS.md § Mínimos): mientras esté ahí el
+// componente no emite NI UN BYTE y el HTML de la landing queda idéntico. Se apaga por
+// configuración, no quitando el componente: el día que cambie el mínimo o el precio basta
+// con vaciar la variable y redesplegar.
+import CryptoPayButton from '../CryptoPayButton.astro';
+import { cryptoEnabledFor } from '../../lib/crypto-checkout';
 
 interface Props {
   /** Payment link Stripe YA resuelto en el wrapper con acceso ESTÁTICO a import.meta.env
@@ -23,6 +31,15 @@ interface Props {
 const { stripeLink } = Astro.props;
 
 const canonical = 'https://aichef.pro/pro-prompts-ebook';
+
+// ---- Segunda puerta de pago (cripto) ----
+// Página sin ficha en src/data/productos: el productId va literal y es el mismo que verifica
+// `landingPath()` de netlify/functions/crypto-checkout (quirk documentado: la landing se llama
+// por el eBook y el acceso por la Library). El nombre y el precio son los del <h1> y los CTA.
+const cryptoProductId = 'pro-prompts-ebook';
+const cryptoProductName = 'El Único eBook de Prompts de IA para Hostelería que Realmente Necesitas';
+const cryptoPriceLabel = '€9';
+const cryptoEnabled = cryptoEnabledFor(cryptoProductId);
 
 // ---- JSON-LD (equivalentes ÍNTEGROS a los 3 <script> del Helmet de ProPromptsEbook.tsx) ----
 const productSchema = {
@@ -341,6 +358,15 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex flex-col items-center gap-2 mt-4">
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
+        {/* Tercera puerta de pago: dentro del recuadro de precio, detrás del sello de Stripe
+            (hero INTEGRADO, John 6-sep). Sin efecto mientras el eBook siga excluido. */}
+        <CryptoPayButton
+          productId={cryptoProductId}
+          productName={cryptoProductName}
+          priceLabel={cryptoPriceLabel}
+          landingPath={`/${cryptoProductId}`}
+          variant="hero"
+        />
       </div>
     </div>
   </section>
@@ -606,6 +632,15 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
       </div>
+      {/* Tarjeta cripto HERMANA de la de Stripe (fuera del recuadro dorado), como en el resto
+          de plantillas. La variante buybox es la que emite el <dialog> y el <script>. */}
+      <CryptoPayButton
+        productId={cryptoProductId}
+        productName={cryptoProductName}
+        priceLabel={cryptoPriceLabel}
+        landingPath={`/${cryptoProductId}`}
+        variant="buybox"
+      />
     </div>
   </section>
 
@@ -617,6 +652,11 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Garantía de Satisfacción <span class="text-[#FFD700]">100%</span></h2>
         <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">Si el eBook no supera tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.</p>
       </div>
+      {cryptoEnabled && (
+        <p class="text-gray-500 text-sm leading-relaxed -mt-6 mb-10 max-w-2xl mx-auto">
+          Si pagas con criptomonedas, la devolución se gestiona manualmente y en la misma moneda y red del pago.
+        </p>
+      )}
       <div class="kt-fade" style="transition-delay:150ms">
         <div class="grid grid-cols-3 gap-6">
           {guaranteeStats.map((s) => (
@@ -683,6 +723,13 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex flex-col items-center gap-2 mt-5">
           <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
         </div>
+        <CryptoPayButton
+          productId={cryptoProductId}
+          productName={cryptoProductName}
+          priceLabel={cryptoPriceLabel}
+          landingPath={`/${cryptoProductId}`}
+          variant="cta"
+        />
       </div>
     </div>
   </section>
