@@ -30,6 +30,19 @@ import {
 //   product_not_enabled (allowlist del piloto) → precio → pedido en el libro →
 //   invoice (5 s, cero reintentos) → 200 {url, orderId}.
 //
+// DOS VARIABLES DE ENTORNO deciden qué productos ofrecen cripto, y las DOS se
+// declaran en scope `functions` Y `builds` porque las leen las dos capas (aquí
+// en runtime; `astro-site/src/lib/crypto-checkout.ts` en el build, que es quien
+// decide si el botón sale siquiera en el HTML):
+//   · `CRYPTO_PRODUCTS`         — vacía = apagado en todo el sitio · `all` = todos
+//                                 los productos · CSV de productIds = sólo esos.
+//   · `CRYPTO_PRODUCTS_EXCLUDE` — CSV, vacía por defecto. Se RESTA SIEMPRE,
+//                                 también con `all`. Ahí vive `pro-prompts-ebook`:
+//                                 9 € no llegan al mínimo por transacción de
+//                                 NOWPayments. Ante el empate manda la exclusión.
+// Las dos capas normalizan igual (`trim().toLowerCase()`), o el botón podría
+// pintarse en el HTML y esta función responder 403 al pulsarlo.
+//
 // EL PEDIDO SE ESCRIBE ANTES DE LLAMAR A NOWPAYMENTS, a propósito: si el IPN
 // llegara antes de que volviéramos a escribir el invoiceId, el libro ya tiene
 // producto, email e importe, que es lo único que hace falta para entregar.
@@ -81,26 +94,57 @@ function flag(nombre: string): boolean {
   return v === '1' || v === 'true';
 }
 
-/** Allowlist del piloto. Vacía o ausente = botón apagado en TODO el sitio
- *  (interruptor de emergencia). `all` = los 46. Si no, CSV de productIds. */
-export function allowlist(): { activa: boolean; todos: boolean; ids: Set<string> } {
-  const raw = String(process.env.CRYPTO_PRODUCTS || '').trim();
-  if (!raw) return { activa: false, todos: false, ids: new Set() };
-  if (raw.toLowerCase() === 'all') return { activa: true, todos: true, ids: new Set() };
-  const ids = new Set(
-    raw
+/** CSV → conjunto de ids normalizados con `trim().toLowerCase()`. La MISMA
+ *  normalización que `cryptoEnabledFor` en `astro-site/src/lib/crypto-checkout.ts`
+ *  (que ya la hacía; aquí no, y esa asimetría podía pintar el botón en el HTML y
+ *  responder 403 al pulsarlo). Los 48 productIds son slugs en minúscula, así que
+ *  igualarlas no cambia ninguna decisión de hoy: cierra un desajuste futuro. */
+function comoConjunto(csv: string): Set<string> {
+  return new Set(
+    csv
       .split(',')
-      .map((s) => s.trim())
+      .map((s) => s.trim().toLowerCase())
       .filter(Boolean),
   );
-  return { activa: ids.size > 0, todos: false, ids };
+}
+
+/** Allowlist del piloto. Vacía o ausente = botón apagado en TODO el sitio
+ *  (interruptor de emergencia). `all` = todos los productos. Si no, CSV de productIds.
+ *
+ *  `CRYPTO_PRODUCTS_EXCLUDE` (CSV, vacía por defecto) se RESTA SIEMPRE, también
+ *  con `all`: es donde vive `pro-prompts-ebook`, cuyos 9 € no llegan al mínimo por
+ *  transacción de NOWPayments. Ante el empate manda la exclusión. Las dos variables
+ *  van en scope `functions` Y `builds`; ésta es la mitad de runtime, y el botón del
+ *  HTML no es una autorización: la puerta la guarda esta función. */
+export function allowlist(): {
+  activa: boolean;
+  todos: boolean;
+  ids: Set<string>;
+  excluidos: Set<string>;
+} {
+  const excluidos = comoConjunto(String(process.env.CRYPTO_PRODUCTS_EXCLUDE || '').trim());
+  const raw = String(process.env.CRYPTO_PRODUCTS || '').trim();
+  if (!raw) return { activa: false, todos: false, ids: new Set(), excluidos };
+  if (raw.toLowerCase() === 'all') return { activa: true, todos: true, ids: new Set(), excluidos };
+  const ids = comoConjunto(raw);
+  return { activa: ids.size > 0, todos: false, ids, excluidos };
+}
+
+/** ¿La allowlist efectiva deja pasar este producto? Exclusión primero. */
+export function cryptoPermitido(
+  lista: { todos: boolean; ids: Set<string>; excluidos: Set<string> },
+  productId: string,
+): boolean {
+  const target = String(productId ?? '').trim().toLowerCase();
+  if (!target || lista.excluidos.has(target)) return false;
+  return lista.todos || lista.ids.has(target);
 }
 
 // ── Producto: etiqueta legible y landing ────────────────────────────────────
 
 /** `'Tu acceso al Kit de Escandallos Pro'` → `'Kit de Escandallos Pro'`.
  *  El nombre comercial no existe como campo propio en `PRODUCTS`, pero el
- *  `emailSubject` de los 46 empieza por «Tu acceso a/al/a la/a los/a las …».
+ *  `emailSubject` de los 48 empieza por «Tu acceso a/al/a la/a los/a las …».
  *  Se usa como `order_description` de la factura (lo que el comprador ve en la
  *  página de NOWPayments y en el historial de John) y como `productLabel` de
  *  la página de estado. Alternativa si algún día hace falta más precisión:
@@ -114,11 +158,11 @@ export function productoLabel(productId: string): string {
 /** Landing pública del producto, para el `cancel_url`.
  *
  *  La regla general es `accessPath` sin el sufijo `-access`. Falla en DOS de
- *  los 46 y los dos son quirks históricos documentados en
+ *  los 48 y los dos son quirks históricos documentados en
  *  `astro-site/src/lib/zona-app.ts:62` (kit-tareas-hotel: el accessPath lleva
  *  un «-completo-» que la landing no tiene) y `:97` (pro-prompts-ebook: la
  *  landing se llama por el eBook y el acceso por la Library). Comprobado
- *  contra los 46 `landingPath` de ese registro: sólo divergen estos dos. */
+ *  contra los 48 `landingPath` de ese registro: sólo divergen estos dos. */
 const LANDINGS_IRREGULARES: Record<string, string> = {
   'kit-tareas-hotel': '/kit-tareas-hotel',
   'pro-prompts-ebook': '/pro-prompts-ebook',
@@ -267,15 +311,15 @@ export const handler: Handler = async (event) => {
       return json(400, { error: 'consent_required' }, headers);
     }
 
-    // ── Allowlist del piloto ────────────────────────────────────────────────
-    if (!lista.todos && !lista.ids.has(productId)) {
+    // ── Allowlist del piloto (menos las exclusiones permanentes) ────────────
+    if (!cryptoPermitido(lista, productId)) {
       return json(403, { error: 'product_not_enabled' }, headers);
     }
 
     // ── Precio: SÓLO del mapa generado ──────────────────────────────────────
     const precio = PRODUCT_PRICES[productId]?.eur;
     if (typeof precio !== 'number' || !Number.isFinite(precio) || precio <= 0) {
-      // No debería poder pasar: `sync-product-prices.py --check` exige 46/46
+      // No debería poder pasar: `sync-product-prices.py --check` exige 48/48
       // contra PRODUCTS. Si pasa, es que se añadió un producto sin regenerar el
       // mapa, y cobrar cero o NaN es peor que no vender.
       console.error(`[crypto-checkout] ${productId} sin precio en PRODUCT_PRICES — correr sync-product-prices.py`);

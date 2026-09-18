@@ -27,13 +27,25 @@ Checks:
      los mismos productIds que PRODUCTS y coincide con sync-product-prices.py --check (fichas +
      products-catalog.ts); existen las 4 functions (crypto-checkout, nowpayments-ipn,
      crypto-order-status, crypto-report) y netlify/shared/{nowpayments,crypto-orders}.ts;
-     LIVE: NOWPAYMENTS_API_KEY/IPN_SECRET armadas, CRYPTO_PRODUCTS/API_BASE informativas,
-     contrato HTTP de las 3 functions públicas. Ver PAGOS_CRYPTO_NOWPAYMENTS.md.
+     LIVE: NOWPAYMENTS_API_KEY/IPN_SECRET armadas, CRYPTO_PRODUCTS/CRYPTO_PRODUCTS_EXCLUDE
+     (las dos en scope builds Y functions) y API_BASE, contrato HTTP de las 3 functions
+     públicas. Ver PAGOS_CRYPTO_NOWPAYMENTS.md.
+     E-f. (2026-09-06, sólo con --crypto-products) Las PUERTAS DE PAGO en el HTML de cada
+     una de las 48 landings, que es lo único que ve el comprador. Si el producto está en la
+     allowlist efectiva: 3 botones `data-crypto-open` (2 en mega-pack-tareas, que no tiene
+     CTA final), 1 solo `<dialog id="aicp-crypto-dialog-<productId>">` —lo emite la variante
+     buybox y las otras puertas lo comparten— y tantos `aria-controls` como botones. Si no
+     lo está: CERO rastros de `data-crypto`. El interruptor se aplica en el BUILD, así que
+     una env var correcta con un deploy viejo deja landings encendidas que no deberían.
 
 Uso:
   python3 scripts/productos-digitales/gate-flujo-postpago.py            # todo
   python3 scripts/productos-digitales/gate-flujo-postpago.py --offline  # sin HTTP
   python3 scripts/productos-digitales/gate-flujo-postpago.py --only kit-tareas-pasteleria
+  python3 scripts/productos-digitales/gate-flujo-postpago.py \
+      --crypto-products all --crypto-exclude pro-prompts-ebook       # puertas cripto
+  python3 scripts/productos-digitales/gate-flujo-postpago.py --base https://deploy-preview-78--aichefpro.netlify.app \
+      --crypto-products kit-tareas-cafeteria                          # contra un preview
 Salida: tabla por producto + lista de fallos; exit 1 si hay fallos.
 """
 import argparse
@@ -174,13 +186,70 @@ def check_validacion_y_webhook(vp, offline):
 CRYPTO_FUNCTIONS = ('crypto-checkout', 'nowpayments-ipn', 'crypto-order-status', 'crypto-report')
 CRYPTO_SHARED = ('netlify/shared/nowpayments.ts', 'netlify/shared/crypto-orders.ts')
 
+# ── Puertas de pago cripto esperadas en el HTML de cada landing ──────────────
+# CryptoPayButton.astro emite UN botón por punto de compra y UN SOLO <dialog> —lo pinta
+# la variante `buybox`— que las tres puertas comparten por `aria-controls`. Las 47
+# landings de plantilla (Tareas, Guías/Manuales, Kits Excel, Planes, eBook) tienen 3 puntos
+# de compra: hero, BuyBox y CTA final.
+CRYPTO_PUERTAS_DEFAULT = 3
+# EXCEPCIONES por ESTRUCTURA de la página, no por descuido. Se listan aquí para que un
+# «2 en vez de 3» no pase como verde genérico ni salte como falso rojo:
+CRYPTO_PUERTAS = {
+    # Página propia, sin plantilla: sólo tiene hero + sección de compra («Final CTA»).
+    # No hay un tercer punto que no sea la StickyBar, que es un enlace a Stripe.
+    'mega-pack-tareas': 2,
+}
 
-def check_pasarela_cripto(vp, offline):
+# `data-crypto-open` aparece 4 veces en el HTML de una landing encendida: 3 como ATRIBUTO
+# de los botones y 1 dentro del `querySelectorAll('[data-crypto-open]')` del script. Sin
+# excluir la del selector el gate contaría 4 y daría rojo con el HTML correcto.
+RE_CRYPTO_OPEN = re.compile(r'(?<![\[\w-])data-crypto-open(?=[\s/>])')
+
+
+def _csv_norm(csv):
+    """'a, B ,' → {'a','b'}; 'ALL' → {'all'}. Para comparar los flags con la env sin falsos rojos
+    por espacios o mayúsculas (las dos capas normalizan igual)."""
+    return {s.strip().lower() for s in (csv or '').split(',') if s.strip()}
+
+
+def crypto_allowlist_efectiva(productos, excluidos):
+    """Réplica EXACTA de la decisión que toman las DOS capas: `cryptoEnabledFor()` en
+    `astro-site/src/lib/crypto-checkout.ts` (build) y `allowlist()`+`cryptoPermitido()`
+    en `netlify/functions/crypto-checkout.ts` (runtime).
+
+    Reglas: `CRYPTO_PRODUCTS` vacía o ausente = apagado en todo el sitio · `all` = todos ·
+    si no, CSV de productIds. `CRYPTO_PRODUCTS_EXCLUDE` (CSV) se RESTA SIEMPRE, también
+    con `all`, y ante el empate manda. Normalización `trim().lower()` en las entradas Y
+    en el productId, igual en las dos capas.
+    """
+    raw = (productos or '').strip()
+    exc = {s.strip().lower() for s in (excluidos or '').split(',') if s.strip()}
+    todos = raw.lower() == 'all'
+    ids = {s.strip().lower() for s in raw.split(',') if s.strip()}
+
+    def permitido(pid):
+        target = (pid or '').strip().lower()
+        if not raw or not target or target in exc:
+            return False
+        return todos or target in ids
+
+    return permitido
+
+
+def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_exclude=None,
+                          base_override=False):
     """Sección E — Pasarela cripto (NOWPayments). Devuelve (issues, warns, info).
 
     Ver PAGOS_CRYPTO_NOWPAYMENTS.md § Especificación de implementación v1 (piloto).
     Las 4 functions y netlify/shared/crypto-orders.ts pueden no existir todavía
     (piloto en construcción): eso se reporta como issue, nunca como excepción.
+
+    Con `crypto_products` (argumento `--crypto-products`, mismo formato que la env) se
+    añade la comprobación (f): recorre el HTML LIVE de las landings de los 48 productos y
+    exige que las puertas de pago que hay en la página coincidan con la allowlist
+    efectiva. Sin flags y sin --base, la expectativa se toma de la env de Netlify leída en (d)
+    (y si se pasan flags que no coinciden con esa env, es un fallo). Con --base hay que pasar
+    los flags: el contexto de env de un preview no se lee.
     """
     issues, warns, info = [], [], []
     # (a) netlify/shared/product-prices.ts cubre EXACTAMENTE los productIds de PRODUCTS
@@ -217,8 +286,12 @@ def check_pasarela_cripto(vp, offline):
             issues.append(f'falta {fn}')
     if offline:
         warns.append('sección E: env vars y HTTP LIVE de la pasarela cripto SIN VERIFICAR en modo --offline')
+        if crypto_products is not None:
+            warns.append('--crypto-products ignorado en --offline: las puertas cripto por landing (E-f) '
+                         'sólo se comprueban contra el HTML LIVE')
         return issues, warns, info
     # (d) LIVE: env vars
+    cp = cx = None  # CRYPTO_PRODUCTS / _EXCLUDE tal como están en Netlify; E-f los usa de expectativa
     env = netlify_env_vars()
     if not env:
         warns.append('no se pudieron leer las env vars de Netlify (netlify CLI): pasarela cripto sin verificar en LIVE')
@@ -232,13 +305,31 @@ def check_pasarela_cripto(vp, offline):
             elif 'functions' not in v['scopes']:
                 issues.append(f"{key} sin scope 'functions'")
         cp = (env.get('CRYPTO_PRODUCTS') or {}).get('value')
+        cx = (env.get('CRYPTO_PRODUCTS_EXCLUDE') or {}).get('value')
+        n_exc = len([p for p in (cx or '').split(',') if p.strip()])
         if not cp or not cp.strip():
             warns.append('CRYPTO_PRODUCTS vacío o inexistente: el botón de pago cripto está APAGADO en todos los productos')
         elif cp.strip().lower() == 'all':
-            info.append(f'CRYPTO_PRODUCTS = all (pasarela cripto activa en los {len(vp)} productos)')
+            info.append(f'CRYPTO_PRODUCTS = all (pasarela cripto activa en los {len(vp) - n_exc} productos '
+                        f'que quedan tras restar CRYPTO_PRODUCTS_EXCLUDE)')
         else:
             n = len([p for p in cp.split(',') if p.strip()])
             info.append(f'CRYPTO_PRODUCTS = lista explícita de {n} producto(s)')
+        if n_exc:
+            info.append(f'CRYPTO_PRODUCTS_EXCLUDE = {n_exc} producto(s) restados SIEMPRE: {cx.strip()}')
+        else:
+            info.append('CRYPTO_PRODUCTS_EXCLUDE vacía o inexistente (no se resta ningún producto)')
+        # Las DOS variables las leen las DOS capas: el build decide si el botón sale en el
+        # HTML y la function si acepta el pago. Con una sola de ellas en scope `builds` el
+        # botón se pintaría y el checkout respondería 403 al pulsarlo — o al revés, un
+        # producto excluido seguiría enseñando su botón hasta el siguiente deploy.
+        for key in ('CRYPTO_PRODUCTS', 'CRYPTO_PRODUCTS_EXCLUDE'):
+            v = env.get(key)
+            if not v or not (v.get('value') or '').strip():
+                continue
+            faltan = [s for s in ('builds', 'functions') if s not in v['scopes']]
+            if faltan:
+                issues.append(f"{key} sin scope {faltan}: build y runtime decidirían distinto")
         base = (env.get('NOWPAYMENTS_API_BASE') or {}).get('value')
         if base:
             info.append(f'NOWPAYMENTS_API_BASE = {base}')
@@ -272,6 +363,69 @@ def check_pasarela_cripto(vp, offline):
         issues.append('crypto-checkout LIVE → 404: la function no está desplegada')
     else:
         issues.append(f'crypto-checkout LIVE → {st3} (esperado 400/501/503): {body3[:80]!r}')
+
+    # (f) LIVE: las puertas de pago que hay REALMENTE en el HTML de cada landing.
+    # Es la única comprobación que ve lo que ve el comprador: el interruptor se aplica en
+    # el BUILD, así que una env var correcta con un deploy viejo deja landings encendidas
+    # que no deberían estarlo (y al revés). Se hace sólo si se pasa --crypto-products.
+    # Sin --base, el sitio auditado es PRODUCCIÓN y sus env son las que acabamos de leer en (d):
+    # la expectativa sale de la ENV REAL —que es lo que promete el docstring: cazar un deploy
+    # viejo con una env nueva— y los flags, si vienen, se contrastan con ella. Con --base (un
+    # preview tiene su propio contexto de env, que netlify_env_vars() no lee) los flags son la
+    # única fuente. Cazado en la revisión adversarial del 18-sep-2026: antes la expectativa era
+    # lo que tecleaba el operador y el MISMO deploy daba verde o rojo según el flag.
+    if not base_override and env:
+        env_products = (cp or '').strip()
+        env_exclude = (cx or '').strip()
+        if crypto_products is None:
+            crypto_products, crypto_exclude = env_products, env_exclude
+            info.append('puertas cripto por landing: expectativa tomada de la env de Netlify '
+                        f'(CRYPTO_PRODUCTS={env_products!r}, CRYPTO_PRODUCTS_EXCLUDE={env_exclude!r})')
+        elif (_csv_norm(crypto_products) != _csv_norm(env_products)
+              or _csv_norm(crypto_exclude) != _csv_norm(env_exclude)):
+            issues.append(f'--crypto-products={crypto_products!r} --crypto-exclude={(crypto_exclude or "")!r} '
+                          f'NO coinciden con la env de Netlify (CRYPTO_PRODUCTS={env_products!r}, '
+                          f'CRYPTO_PRODUCTS_EXCLUDE={env_exclude!r}): la expectativa no sería la desplegada')
+    if crypto_products is None:
+        info.append('puertas cripto por landing SIN COMPROBAR: sin env de Netlify (o con --base) hay que '
+                    'pasarlas con --crypto-products (mismo formato que la env: vacío / all / CSV) y --crypto-exclude')
+        return issues, warns, info
+    if not zona:
+        warns.append('sin zona-app: no se pueden comprobar las puertas cripto por landing')
+        return issues, warns, info
+    permitido = crypto_allowlist_efectiva(crypto_products, crypto_exclude)
+    with cf.ThreadPoolExecutor(max_workers=8) as ex:
+        res = list(ex.map(lambda z: (z, http(BASE_URL + z['landingPath'])), zona))
+    n_on = n_off = 0
+    for z, (st_l, _ct, _cl, body_l) in res:
+        pid, path = z['productId'], z['landingPath']
+        if st_l != 200:
+            issues.append(f'{pid}: landing LIVE {path} → {st_l} (puerta cripto sin comprobar)')
+            continue
+        html = body_l.decode('utf-8', 'ignore')
+        did = f'aicp-crypto-dialog-{pid}'
+        n_open = len(RE_CRYPTO_OPEN.findall(html))
+        n_dialog = len(re.findall(r'<dialog\b[^>]*\bid="%s"' % re.escape(did), html))
+        n_aria = html.count(f'aria-controls="{did}"')
+        if permitido(pid):
+            n_on += 1
+            esperadas = CRYPTO_PUERTAS.get(pid, CRYPTO_PUERTAS_DEFAULT)
+            if n_open != esperadas:
+                issues.append(f'{pid}: {n_open} botones «data-crypto-open» en {path}, esperados {esperadas}')
+            if n_dialog != 1:
+                issues.append(f'{pid}: {n_dialog} <dialog id="{did}"> en {path}, esperado 1 '
+                              '(lo emite SÓLO la variante buybox y las otras puertas lo comparten)')
+            if n_aria != esperadas:
+                issues.append(f'{pid}: {n_aria} aria-controls="{did}" en {path}, esperados {esperadas} '
+                              '(un botón que no apunta a su diálogo se limita a llevar a #comprar)')
+        else:
+            n_off += 1
+            n_rastro = len(re.findall(r'data-crypto', html))
+            if n_rastro:
+                issues.append(f'{pid}: {n_rastro} rastros de «data-crypto» en {path} y NO está en la '
+                              'allowlist efectiva (¿deploy anterior al cambio de env?)')
+    info.append(f'puertas cripto en el HTML LIVE: {n_on} landing(s) con botón y {n_off} sin él, '
+                f'según --crypto-products={crypto_products!r} --crypto-exclude={(crypto_exclude or "")!r}')
     return issues, warns, info
 
 
@@ -409,11 +563,22 @@ def check_page(path, kind):
 
 
 def main():
+    global BASE_URL
     ap = argparse.ArgumentParser()
     ap.add_argument('--offline', action='store_true')
     ap.add_argument('--only', help='productId')
     ap.add_argument('--json', help='ruta para volcar el informe JSON')
+    ap.add_argument('--base', help='base URL a auditar (default https://aichef.pro o $AICP_BASE_URL); '
+                                   'p. ej. la de un deploy preview')
+    ap.add_argument('--crypto-products', help='allowlist cripto a EXIGIR en el HTML, mismo formato que la env '
+                                              'CRYPTO_PRODUCTS: vacío / all / CSV de productIds. Sin este '
+                                              'argumento no se comprueban las puertas por landing.')
+    ap.add_argument('--crypto-exclude', default='', help='CSV de productIds que se restan SIEMPRE (env '
+                                                         'CRYPTO_PRODUCTS_EXCLUDE), también con all')
     args = ap.parse_args()
+
+    if args.base:
+        BASE_URL = args.base.rstrip('/')
 
     zona = parse_zona_app()
     vp = parse_products_map('netlify/functions/verify-purchase.ts')
@@ -535,7 +700,10 @@ def main():
     fails.extend(d_issues)
     warns.extend(d_warns)
     # E. pasarela cripto NOWPayments (transversal, no por producto)
-    e_issues, e_warns, e_info = check_pasarela_cripto(vp, args.offline)
+    e_issues, e_warns, e_info = check_pasarela_cripto(
+        vp, args.offline, zona=zona,
+        crypto_products=args.crypto_products, crypto_exclude=args.crypto_exclude,
+        base_override=bool(args.base))
     print('\nPasarela cripto (NOWPayments):')
     for i in e_info:
         print(f'    · {i}')

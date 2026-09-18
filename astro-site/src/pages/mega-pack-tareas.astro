@@ -18,12 +18,28 @@
 //     porque BaseLayout centraliza OG en TODAS las rutas Astro (gates verdes previos).
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
+// Segunda puerta de pago (NOWPayments). Stripe sigue siendo el CTA verde PRINCIPAL;
+// esto es el botón secundario para quien no tiene tarjeta internacional. Se pinta SÓLO
+// si `mega-pack-tareas` está en el allowlist `CRYPTO_PRODUCTS` (env, scope builds).
+import CryptoPayButton from '../components/CryptoPayButton.astro';
+import { cryptoEnabledFor } from '../lib/crypto-checkout';
 
 const lang = 'es';
 
 // DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback '#comprar')
 // para que Vite la inline en build.
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_MEGA_PACK_TAREAS || '#comprar';
+
+// ---- Segunda puerta de pago (cripto) ----
+// Página propia, sin ficha en src/data/productos: el productId no sale de `data.slug`
+// sino literal, y es el que verifica `landingPath()` de netlify/functions/crypto-checkout
+// (aquí se cumple la regla general: accessPath `/mega-pack-tareas-access` sin el sufijo).
+const cryptoProductId = 'mega-pack-tareas';
+const cryptoProductName = 'Mega Pack Tareas Recurrentes — Los 13 Kits en Un Solo Pack';
+// Mismo rótulo de precio que pintan el hero y el CTA de esta página.
+const cryptoPriceLabel = '89 EUR';
+// `cryptoEnabled` decide la nota de devoluciones bajo la garantía (misma frase que en las plantillas).
+const cryptoEnabled = cryptoEnabledFor(cryptoProductId);
 
 const kits = [
   { name: 'Restaurante Casual', templates: 11, slug: '/kit-tareas' },
@@ -184,6 +200,16 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           <div class="flex flex-col items-center gap-2 mt-4">
             <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
           </div>
+          {/* Segunda puerta de pago: va dentro del mismo recuadro de precio, detrás del sello de
+              Stripe (hero INTEGRADO, decisión de John del 6-sep; la tarjeta hermana queda para la
+              sección de compra). El separador y el sello azul los emite el componente. */}
+          <CryptoPayButton
+            productId={cryptoProductId}
+            productName={cryptoProductName}
+            priceLabel={cryptoPriceLabel}
+            landingPath={`/${cryptoProductId}`}
+            variant="hero"
+          />
         </div>
       </div>
     </section>
@@ -247,11 +273,19 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             Si el Mega Pack no te ayuda a organizar tu negocio, te devolvemos el 100% de tu dinero. 30 días, sin preguntas.
           </p>
         </div>
+        {cryptoEnabled && (
+          <p class="text-gray-500 text-sm leading-relaxed -mt-4 mb-2 max-w-2xl mx-auto">
+            Si pagas con criptomonedas, la devolución se gestiona manualmente y en la misma moneda y red del pago.
+          </p>
+        )}
       </div>
     </section>
 
     {/* ===== Final CTA ===== */}
-    <section class="py-16 md:py-24 px-4">
+    {/* `id="comprar"` (18-sep-2026): es el ancla a la que vuelve el `cancel_url` de NOWPayments
+        (`landingPath()+'#comprar'` en netlify/functions/crypto-checkout.ts) y el fallback del botón
+        cripto si no encuentra su diálogo; sin él, las dos llevaban al principio de la página. */}
+    <section id="comprar" class="py-16 md:py-24 px-4">
       <div class="max-w-lg mx-auto">
         <div class="bg-white/5 border-2 border-emerald-500/50 rounded-2xl p-8 md:p-10 text-center">
           <p class="text-gray-400 mb-2">Los 13 kits por separado: <span class="line-through">{Math.round(totalIndividual)} EUR</span></p>
@@ -264,6 +298,17 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
           </div>
         </div>
+        {/* La tarjeta de cripto es HERMANA de la de Stripe, no hija: va FUERA del recuadro
+            de compra. Esta página no tiene `id="comprar"`, así que la variante `buybox`
+            —la ÚNICA que emite el <dialog> y el <script>— va en esta sección de compra;
+            el botón del hero la abre por `aria-controls`. */}
+        <CryptoPayButton
+          productId={cryptoProductId}
+          productName={cryptoProductName}
+          priceLabel={cryptoPriceLabel}
+          landingPath={`/${cryptoProductId}`}
+          variant="buybox"
+        />
       </div>
     </section>
 
