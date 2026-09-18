@@ -350,9 +350,13 @@ Segunda puerta «Pagar con cripto» (Stripe sigue siendo la principal). Doc can�
   de devoluciones bajo la garantía. **Solo la variante `buybox` emite el `<dialog>` y el `<script>`**: una página con
   `hero`/`cta` y sin `buybox` deja botones que solo llevan a `#comprar`. El mega-pack solo tiene dos puntos de compra
   (hero y su sección final, que hace de BuyBox y lleva el `id="comprar"`): 2 puertas.
-- **Un producto nuevo hereda las dos puertas** al nacer con una de las plantillas; con `CRYPTO_PRODUCTS=all` no hay
-  que tocar la env. Lo que SÍ hay que regenerar es `netlify/shared/product-prices.ts` (`sync-product-prices.py`): el
-  importe de la factura sale de ahí, nunca del cliente.
+- 🔴 **REGLA DE JOHN (19-sep-2026): todo producto nuevo NACE con los dos sistemas de pago, Stripe principal y
+  NOWPayments secundario. Una landing sin las tres puertas cripto no está terminada.** Con `CRYPTO_PRODUCTS=all` no
+  hay que tocar la env: el producto las hereda al usar una plantilla (si nace con plantilla o página nueva, montar
+  `CryptoPayButton` en hero, BuyBox y CTA + la nota de devoluciones). Lo que SÍ hay que regenerar es
+  `netlify/shared/product-prices.ts` (`sync-product-prices.py`): el importe de la factura sale de ahí, nunca del
+  cliente. Y darlo de alta en `zona-app.ts`, de donde sale el nombre corto del diálogo. Cierre del producto = gate
+  E-f LIVE en verde + curl al checkout.
 - Gate: `python3 scripts/productos-digitales/gate-flujo-postpago.py` toma la expectativa de la env de Netlify (sección E-f);
   contra un preview hay que pasar `--base https://deploy-preview-N--aichefpro.netlify.app --crypto-products all
   --crypto-exclude pro-prompts-ebook` (su contexto de env no se lee). Exige 3 botones `data-crypto-open`
