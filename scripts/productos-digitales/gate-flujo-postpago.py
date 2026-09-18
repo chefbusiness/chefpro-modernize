@@ -206,6 +206,12 @@ CRYPTO_PUERTAS = {
 RE_CRYPTO_OPEN = re.compile(r'(?<![\[\w-])data-crypto-open(?=[\s/>])')
 
 
+def _csv_norm(csv):
+    """'a, B ,' → {'a','b'}; 'ALL' → {'all'}. Para comparar los flags con la env sin falsos rojos
+    por espacios o mayúsculas (las dos capas normalizan igual)."""
+    return {s.strip().lower() for s in (csv or '').split(',') if s.strip()}
+
+
 def crypto_allowlist_efectiva(productos, excluidos):
     """Réplica EXACTA de la decisión que toman las DOS capas: `cryptoEnabledFor()` en
     `astro-site/src/lib/crypto-checkout.ts` (build) y `allowlist()`+`cryptoPermitido()`
@@ -230,7 +236,8 @@ def crypto_allowlist_efectiva(productos, excluidos):
     return permitido
 
 
-def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_exclude=None):
+def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_exclude=None,
+                          base_override=False):
     """Sección E — Pasarela cripto (NOWPayments). Devuelve (issues, warns, info).
 
     Ver PAGOS_CRYPTO_NOWPAYMENTS.md § Especificación de implementación v1 (piloto).
@@ -240,7 +247,9 @@ def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_e
     Con `crypto_products` (argumento `--crypto-products`, mismo formato que la env) se
     añade la comprobación (f): recorre el HTML LIVE de las landings de los 48 productos y
     exige que las puertas de pago que hay en la página coincidan con la allowlist
-    efectiva. Sin ese argumento no se hace ninguna petición extra (comportamiento previo).
+    efectiva. Sin flags y sin --base, la expectativa se toma de la env de Netlify leída en (d)
+    (y si se pasan flags que no coinciden con esa env, es un fallo). Con --base hay que pasar
+    los flags: el contexto de env de un preview no se lee.
     """
     issues, warns, info = [], [], []
     # (a) netlify/shared/product-prices.ts cubre EXACTAMENTE los productIds de PRODUCTS
@@ -277,8 +286,12 @@ def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_e
             issues.append(f'falta {fn}')
     if offline:
         warns.append('sección E: env vars y HTTP LIVE de la pasarela cripto SIN VERIFICAR en modo --offline')
+        if crypto_products is not None:
+            warns.append('--crypto-products ignorado en --offline: las puertas cripto por landing (E-f) '
+                         'sólo se comprueban contra el HTML LIVE')
         return issues, warns, info
     # (d) LIVE: env vars
+    cp = cx = None  # CRYPTO_PRODUCTS / _EXCLUDE tal como están en Netlify; E-f los usa de expectativa
     env = netlify_env_vars()
     if not env:
         warns.append('no se pudieron leer las env vars de Netlify (netlify CLI): pasarela cripto sin verificar en LIVE')
@@ -355,9 +368,27 @@ def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_e
     # Es la única comprobación que ve lo que ve el comprador: el interruptor se aplica en
     # el BUILD, así que una env var correcta con un deploy viejo deja landings encendidas
     # que no deberían estarlo (y al revés). Se hace sólo si se pasa --crypto-products.
+    # Sin --base, el sitio auditado es PRODUCCIÓN y sus env son las que acabamos de leer en (d):
+    # la expectativa sale de la ENV REAL —que es lo que promete el docstring: cazar un deploy
+    # viejo con una env nueva— y los flags, si vienen, se contrastan con ella. Con --base (un
+    # preview tiene su propio contexto de env, que netlify_env_vars() no lee) los flags son la
+    # única fuente. Cazado en la revisión adversarial del 18-sep-2026: antes la expectativa era
+    # lo que tecleaba el operador y el MISMO deploy daba verde o rojo según el flag.
+    if not base_override and env:
+        env_products = (cp or '').strip()
+        env_exclude = (cx or '').strip()
+        if crypto_products is None:
+            crypto_products, crypto_exclude = env_products, env_exclude
+            info.append('puertas cripto por landing: expectativa tomada de la env de Netlify '
+                        f'(CRYPTO_PRODUCTS={env_products!r}, CRYPTO_PRODUCTS_EXCLUDE={env_exclude!r})')
+        elif (_csv_norm(crypto_products) != _csv_norm(env_products)
+              or _csv_norm(crypto_exclude) != _csv_norm(env_exclude)):
+            issues.append(f'--crypto-products={crypto_products!r} --crypto-exclude={(crypto_exclude or "")!r} '
+                          f'NO coinciden con la env de Netlify (CRYPTO_PRODUCTS={env_products!r}, '
+                          f'CRYPTO_PRODUCTS_EXCLUDE={env_exclude!r}): la expectativa no sería la desplegada')
     if crypto_products is None:
-        info.append('puertas cripto por landing SIN COMPROBAR: pásalas con --crypto-products '
-                    '(mismo formato que la env: vacío / all / CSV) y --crypto-exclude')
+        info.append('puertas cripto por landing SIN COMPROBAR: sin env de Netlify (o con --base) hay que '
+                    'pasarlas con --crypto-products (mismo formato que la env: vacío / all / CSV) y --crypto-exclude')
         return issues, warns, info
     if not zona:
         warns.append('sin zona-app: no se pueden comprobar las puertas cripto por landing')
@@ -671,7 +702,8 @@ def main():
     # E. pasarela cripto NOWPayments (transversal, no por producto)
     e_issues, e_warns, e_info = check_pasarela_cripto(
         vp, args.offline, zona=zona,
-        crypto_products=args.crypto_products, crypto_exclude=args.crypto_exclude)
+        crypto_products=args.crypto_products, crypto_exclude=args.crypto_exclude,
+        base_override=bool(args.base))
     print('\nPasarela cripto (NOWPayments):')
     for i in e_info:
         print(f'    · {i}')

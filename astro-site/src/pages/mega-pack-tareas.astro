@@ -282,7 +282,10 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
     </section>
 
     {/* ===== Final CTA ===== */}
-    <section class="py-16 md:py-24 px-4">
+    {/* `id="comprar"` (18-sep-2026): es el ancla a la que vuelve el `cancel_url` de NOWPayments
+        (`landingPath()+'#comprar'` en netlify/functions/crypto-checkout.ts) y el fallback del botón
+        cripto si no encuentra su diálogo; sin él, las dos llevaban al principio de la página. */}
+    <section id="comprar" class="py-16 md:py-24 px-4">
       <div class="max-w-lg mx-auto">
         <div class="bg-white/5 border-2 border-emerald-500/50 rounded-2xl p-8 md:p-10 text-center">
           <p class="text-gray-400 mb-2">Los 13 kits por separado: <span class="line-through">{Math.round(totalIndividual)} EUR</span></p>

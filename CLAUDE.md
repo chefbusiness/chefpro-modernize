@@ -348,12 +348,14 @@ Segunda puerta «Pagar con cripto» (Stripe sigue siendo la principal). Doc can�
 - **Toda plantilla de landing monta las TRES puertas** (`CryptoPayButton.astro`: `hero` DENTRO del recuadro de precio
   tras el sello de Stripe, `buybox` como tarjeta HERMANA fuera del recuadro dorado, `cta` dentro del CTA final) + la nota
   de devoluciones bajo la garantía. **Solo la variante `buybox` emite el `<dialog>` y el `<script>`**: una página con
-  `hero`/`cta` y sin `buybox` deja botones que solo llevan a `#comprar`. El mega-pack no tiene CTA final: 2 puertas.
+  `hero`/`cta` y sin `buybox` deja botones que solo llevan a `#comprar`. El mega-pack solo tiene dos puntos de compra
+  (hero y su sección final, que hace de BuyBox y lleva el `id="comprar"`): 2 puertas.
 - **Un producto nuevo hereda las dos puertas** al nacer con una de las plantillas; con `CRYPTO_PRODUCTS=all` no hay
   que tocar la env. Lo que SÍ hay que regenerar es `netlify/shared/product-prices.ts` (`sync-product-prices.py`): el
   importe de la factura sale de ahí, nunca del cliente.
-- Gate: `python3 scripts/productos-digitales/gate-flujo-postpago.py --crypto-products all --crypto-exclude pro-prompts-ebook`
-  (añadir `--base https://deploy-preview-N--aichefpro.netlify.app` para un preview). Exige 3 botones `data-crypto-open`
+- Gate: `python3 scripts/productos-digitales/gate-flujo-postpago.py` toma la expectativa de la env de Netlify (sección E-f);
+  contra un preview hay que pasar `--base https://deploy-preview-N--aichefpro.netlify.app --crypto-products all
+  --crypto-exclude pro-prompts-ebook` (su contexto de env no se lee). Exige 3 botones `data-crypto-open`
   + 1 `<dialog>` + 3 `aria-controls` por landing encendida y CERO rastros de `data-crypto` en las excluidas. Ojo: contra
   un preview, las 4 descargas por env var del eBook «fallan» porque apuntan a `aichef.pro`; es el `--base`, no un bug.
 - **El pago real de prueba del piloto sigue sin hacerse** (18-sep): el circuito IPN→email→dashboard está probado con

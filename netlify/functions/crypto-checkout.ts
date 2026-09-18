@@ -144,7 +144,7 @@ export function cryptoPermitido(
 
 /** `'Tu acceso al Kit de Escandallos Pro'` → `'Kit de Escandallos Pro'`.
  *  El nombre comercial no existe como campo propio en `PRODUCTS`, pero el
- *  `emailSubject` de los 46 empieza por «Tu acceso a/al/a la/a los/a las …».
+ *  `emailSubject` de los 48 empieza por «Tu acceso a/al/a la/a los/a las …».
  *  Se usa como `order_description` de la factura (lo que el comprador ve en la
  *  página de NOWPayments y en el historial de John) y como `productLabel` de
  *  la página de estado. Alternativa si algún día hace falta más precisión:
@@ -158,11 +158,11 @@ export function productoLabel(productId: string): string {
 /** Landing pública del producto, para el `cancel_url`.
  *
  *  La regla general es `accessPath` sin el sufijo `-access`. Falla en DOS de
- *  los 46 y los dos son quirks históricos documentados en
+ *  los 48 y los dos son quirks históricos documentados en
  *  `astro-site/src/lib/zona-app.ts:62` (kit-tareas-hotel: el accessPath lleva
  *  un «-completo-» que la landing no tiene) y `:97` (pro-prompts-ebook: la
  *  landing se llama por el eBook y el acceso por la Library). Comprobado
- *  contra los 46 `landingPath` de ese registro: sólo divergen estos dos. */
+ *  contra los 48 `landingPath` de ese registro: sólo divergen estos dos. */
 const LANDINGS_IRREGULARES: Record<string, string> = {
   'kit-tareas-hotel': '/kit-tareas-hotel',
   'pro-prompts-ebook': '/pro-prompts-ebook',
@@ -319,7 +319,7 @@ export const handler: Handler = async (event) => {
     // ── Precio: SÓLO del mapa generado ──────────────────────────────────────
     const precio = PRODUCT_PRICES[productId]?.eur;
     if (typeof precio !== 'number' || !Number.isFinite(precio) || precio <= 0) {
-      // No debería poder pasar: `sync-product-prices.py --check` exige 46/46
+      // No debería poder pasar: `sync-product-prices.py --check` exige 48/48
       // contra PRODUCTS. Si pasa, es que se añadió un producto sin regenerar el
       // mapa, y cobrar cero o NaN es peor que no vender.
       console.error(`[crypto-checkout] ${productId} sin precio en PRODUCT_PRICES — correr sync-product-prices.py`);

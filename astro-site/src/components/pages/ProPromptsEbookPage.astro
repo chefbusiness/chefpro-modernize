@@ -35,9 +35,10 @@ const canonical = 'https://aichef.pro/pro-prompts-ebook';
 // ---- Segunda puerta de pago (cripto) ----
 // Página sin ficha en src/data/productos: el productId va literal y es el mismo que verifica
 // `landingPath()` de netlify/functions/crypto-checkout (quirk documentado: la landing se llama
-// por el eBook y el acceso por la Library). El nombre y el precio son los del <h1> y los CTA.
+// por el eBook y el acceso por la Library). El nombre es el del catálogo (products-catalog.ts),
+// no el <h1>, que es un titular de venta; el precio es el de los CTA.
 const cryptoProductId = 'pro-prompts-ebook';
-const cryptoProductName = 'El Único eBook de Prompts de IA para Hostelería que Realmente Necesitas';
+const cryptoProductName = 'Pro Prompts eBook';
 const cryptoPriceLabel = '€9';
 const cryptoEnabled = cryptoEnabledFor(cryptoProductId);
 

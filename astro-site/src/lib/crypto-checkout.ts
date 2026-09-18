@@ -4,7 +4,7 @@
  * Piloto (2026-09-05, PAGOS_CRYPTO_NOWPAYMENTS.md): Stripe sigue siendo el método
  * PRINCIPAL —botón dorado— y la cripto es el secundario. Qué productos la ofrecen lo
  * decide una sola variable de entorno, `CRYPTO_PRODUCTS`, para poder encender el piloto
- * en un producto, replicarlo a los 46 (`all`) o apagarlo entero sin tocar una línea:
+ * en un producto, replicarlo a todos (`all`, 48 hoy) o apagarlo entero sin tocar una línea:
  *
  *   - vacía o ausente → apagado en TODO el sitio (interruptor de emergencia)
  *   - `all`           → encendido en todos los productos
@@ -67,7 +67,7 @@ function comoConjunto(csv: string): Set<string> {
 /**
  * ¿Este producto ofrece el pago en cripto?
  *
- * @param productId identificador del producto (= slug de su landing en los 46 productos;
+ * @param productId identificador del producto (= slug de su landing en los 48 productos;
  *                  verificado contra `zona-app.ts`: `landingPath === '/' + productId`).
  */
 export function cryptoEnabledFor(productId: string): boolean {

@@ -22,6 +22,7 @@ import Icon from '../Icon.astro';
 // landings de la línea el componente no emite ni HTML ni CSS ni JS.
 import CryptoPayButton from '../CryptoPayButton.astro';
 import { cryptoEnabledFor } from '../../lib/crypto-checkout';
+import { PRODUCTOS_ZONA_APP } from '../../lib/zona-app';
 
 interface Props {
   data: KitExcelData;
@@ -35,13 +36,15 @@ const { data, stripeLink } = Astro.props;
 const canonical = `https://aichef.pro/${data.slug}`;
 
 // ---- Segunda puerta de pago (cripto) ----
-// El nombre que ve el comprador en el diálogo de pago = el <h1> del hero en TEXTO PLANO:
-// titlePre + titleGold + titlePost, y el subtítulo detrás de una raya cuando existe.
-// El subtítulo se recorta en el guion largo, como en la línea Tareas, para no arrastrar
-// la coletilla descriptiva ni encadenar dos rayas en el diálogo («… — para Eventos — 11
-// Entregables Profesionales» → «… — para Eventos»).
-const cryptoSubtitulo = data.hero.titleSubtitle ? ` — ${data.hero.titleSubtitle.split('—')[0].trim()}` : '';
-const cryptoProductName = `${data.hero.titlePre}${data.hero.titleGold}${data.hero.titlePost ?? ''}${cryptoSubtitulo}`;
+// El nombre que ve el comprador en el diálogo de pago es el NOMBRE CORTO del registro de la
+// zona app («Kit de Escandallos», «Plan de Negocio Cafetería»), no el <h1>: en esta línea el
+// titular y su subtítulo son frases de venta de hasta 103 caracteres («… — Plan Financiero
+// Excel, Inversión Inicial y Checklist de Apertura»), y en un paso de pago hace falta el
+// nombre del producto (revisión adversarial del 18-sep-2026). Fallback al <h1> en texto plano
+// por si un producto nuevo entra en la plantilla antes que en el registro.
+const cryptoProductName =
+  PRODUCTOS_ZONA_APP.find((p) => p.productId === data.slug)?.productLabel
+  ?? `${data.hero.titlePre}${data.hero.titleGold}${data.hero.titlePost ?? ''}`;
 // `cryptoEnabled` decide la nota de devoluciones bajo la garantía (misma frase que en Tareas y Guías).
 const cryptoEnabled = cryptoEnabledFor(data.slug);
 
