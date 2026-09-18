@@ -1,0 +1,256 @@
+---
+/**
+ * MiselupSideCard — tarjeta lateral flotante de Miselup (miselup.pro), marca hermana del grupo.
+ *
+ * Encargo de John (19-sep-2026): «insertar esta banner flotante de miselup.pro en todos los
+ * productos actuales, en la landing pública y en la página privada de dashboard de cada
+ * producto». El HTML, el CSS y el JS de abajo son SU snippet, VERBATIM: no se retoca.
+ *
+ * Dónde se pinta lo decide `BaseLayout.astro`, no cada página: con el registro
+ * `PRODUCTOS_ZONA_APP` (src/lib/zona-app.ts) monta la tarjeta cuando la ruta actual es el
+ * `landingPath` o el `libraryPath` de un producto (48 + 48 el 19-sep-2026). Un producto nuevo
+ * la hereda al darse de alta en el registro; nada que tocar por producto.
+ *
+ * ⚠️ `style` y `script` van `is:inline` A PROPÓSITO (misma trampa que CryptoPayButton.astro):
+ * los <style>/<script> normales de Astro se recogen en el build a partir de los IMPORTS, no
+ * de lo que se renderiza, y como este componente lo importa BaseLayout se colarían en las
+ * 1.300 páginas del sitio. Con is:inline sólo salen en las páginas donde el layout lo pinta.
+ * Además `is:inline` evita que Astro scope el CSS (`#miselup-card` lleva `all: initial` y
+ * selectores por id: el scoping los rompería).
+ *
+ * Comportamiento (del snippet): pestaña verde en el borde derecho, centrada verticalmente;
+ * en escritorio se abre sola a los 2 s una vez por sesión (`sessionStorage.miselupCardSeen`)
+ * y el ✕ la repliega; en móvil (≤640 px) la pestaña es una línea fina y el ✕ la cierra del
+ * todo para la sesión (`miselupCardDismissed`). z-index 2147483646: por encima de todo
+ * salvo la capa superior del navegador (el <dialog> modal de cripto sigue encima).
+ *
+ * Gate: python3 scripts/astro-migration/miselup-gate.py --base <url> (96 páginas con la
+ * tarjeta exactamente una vez; muestra de páginas ajenas con cero rastro).
+ *
+ * MEJORAS sobre el snippet (John, 19-sep: «si crees que debes hacerle mejoras… decídelo tú»),
+ * todas invisibles para el diseño:
+ *   1. `utm_content=landing|dashboard` en el CTA (prop `placement`): para saber qué colocación
+ *      convierte. El resto de la URL y de las UTM es la de John.
+ *   2. Anillo de foco visible (`:focus-visible`): `all: unset` en la pestaña y el ✕ se llevaba
+ *      el outline y un usuario de teclado no veía dónde estaba.
+ *   3. `aria-expanded` en la pestaña, sincronizado con `is-open`, y Escape repliega la tarjeta.
+ *   4. `prefers-reduced-motion`: sin transición. `@media print`: no se imprime (los dashboards
+ *      tienen checklists que la gente imprime).
+ *   5. (revisión adversarial 19-sep) Centrado y repliegue con `right` + márgenes auto, sin
+ *      `transform` (regla del repo tras el temblor de WhatsApp en móvil); corte móvil en 767 px
+ *      como el `md` del sitio; `.ms-body` oculto de verdad al replegarse (`visibility`) y con
+ *      `max-height`/scroll en viewports bajos; sin auto-apertura en el dashboard (tapaba las
+ *      descargas) ni en viewports de menos de 560 px de alto; `miselupCardSeen` se marca al
+ *      abrir, no al programar; `aria-label` de la pestaña alterna Abrir/Cerrar.
+ */
+interface Props {
+  /** Dónde se pinta: landing pública o dashboard privado. Sólo cambia `utm_content`. */
+  placement: 'landing' | 'dashboard';
+}
+const { placement } = Astro.props;
+const ctaHref = `https://app.miselup.pro/signup?utm_source=aichef&utm_medium=sidecard&utm_campaign=miselup-recetario&utm_content=${placement}`;
+---
+<style is:inline>
+    #miselup-card {
+      all: initial;
+      --tab-w: 42px;
+      --body-w: 300px;
+      /* Centrado vertical y repliegue SIN transform (regla del repo desde el temblor del botón de
+         WhatsApp en móvil, 3-sep-2026: un transform sobre un fixed va a la zaga del scroll).
+         top/bottom a 0 + márgenes auto centran; el repliegue es un `right` negativo animado.
+         El snippet original usaba translateY(-50%) translateX(calc(100% - var(--tab-w))). */
+      position: fixed; top: 0; bottom: 0; margin-top: auto; margin-bottom: auto;
+      height: -webkit-fit-content; height: fit-content;
+      right: calc(-1 * var(--body-w));
+      transition: right .38s cubic-bezier(.4,0,.2,1);
+      z-index: 2147483646;
+      display: flex; align-items: stretch;
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+    }
+    #miselup-card.is-open { right: 0; }
+    #miselup-card.is-dismissed { display: none !important; }
+
+    #miselup-card .ms-tab {
+      all: unset; cursor: pointer; box-sizing: border-box;
+      width: var(--tab-w); flex: 0 0 var(--tab-w);
+      background: linear-gradient(180deg, #0f9e8c 0%, #0b7d6f 100%);
+      color: #fff; border-radius: 14px 0 0 14px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 8px; padding: 14px 0;
+      box-shadow: -4px 0 14px rgba(15,158,140,.28);
+    }
+    #miselup-card .ms-tab-icon { font-size: 18px; }
+    #miselup-card .ms-tab-text {
+      writing-mode: vertical-rl; transform: rotate(180deg);
+      font-weight: 700; font-size: 13px; letter-spacing: .04em;
+    }
+    #miselup-card .ms-grip { display: none; }
+
+    #miselup-card .ms-body {
+      width: var(--body-w); box-sizing: border-box;
+      background: #fff; color: #1f2a28;
+      border-left: 4px solid #0f9e8c;
+      box-shadow: -10px 0 32px rgba(0,0,0,.18);
+      padding: 18px 18px 16px; position: relative;
+      /* Replegada, fuera del orden de tabulación y del lector de pantalla (visibility admite
+         transición, display no): el ✕ y el CTA dejan de ser paradas fantasma fuera de pantalla. */
+      visibility: hidden; transition: visibility 0s linear .38s;
+      /* Viewports bajos: que el CTA y la promo siempre se puedan alcanzar. */
+      max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px);
+      overflow-y: auto; -webkit-overflow-scrolling: touch;
+    }
+    #miselup-card.is-open .ms-body { visibility: visible; transition-delay: 0s; }
+    #miselup-card .ms-close {
+      all: unset; cursor: pointer;
+      position: absolute; top: 8px; right: 12px;
+      color: #9aa3a1; font-size: 20px; line-height: 1;
+    }
+    #miselup-card .ms-close:hover { color: #4b5552; }
+    #miselup-card .ms-brand {
+      display: inline-block; font-weight: 700; font-size: 13px;
+      color: #0b7d6f; margin-bottom: 8px;
+    }
+    #miselup-card .ms-title {
+      margin: 0 0 8px; font-size: 17px; font-weight: 700;
+      line-height: 1.25; color: #0b3b35;
+    }
+    #miselup-card .ms-text {
+      margin: 0 0 12px; font-size: 13.5px; line-height: 1.45; color: #4b5552;
+    }
+    #miselup-card .ms-list {
+      list-style: none; margin: 0 0 14px; padding: 0;
+      font-size: 13px; line-height: 1.5; color: #2f3a38;
+    }
+    #miselup-card .ms-list li { margin-bottom: 5px; }
+    #miselup-card .ms-cta {
+      display: block; text-align: center; text-decoration: none;
+      background: #0f9e8c; color: #fff; font-weight: 700; font-size: 14px;
+      padding: 11px 14px; border-radius: 9px;
+      transition: background .2s ease;
+    }
+    #miselup-card .ms-cta:hover { background: #0b7d6f; }
+    #miselup-card .ms-promo {
+      margin-top: 10px; text-align: center;
+      font-size: 11.5px; font-weight: 600; color: #0b7d6f;
+    }
+
+    /* ---- Solo móvil: pestaña reducida a una línea verde fina ----
+       Corte en 767 px, el mismo `md` del sitio (el snippet decía 640): entre 641 y 767 px la
+       tarjeta se abría sola en modo escritorio sobre la barra sticky de compra. */
+    @media (max-width: 767px) {
+      #miselup-card { --tab-w: 14px; --body-w: min(78vw, 280px); }
+      #miselup-card .ms-tab {
+        padding: 24px 0; gap: 0;
+        border-radius: 8px 0 0 8px;
+        box-shadow: -3px 0 10px rgba(15,158,140,.35);
+      }
+      #miselup-card .ms-tab-icon,
+      #miselup-card .ms-tab-text { display: none; }
+      #miselup-card .ms-grip {
+        display: block;
+        width: 3px; height: 28px; border-radius: 3px;
+        background: rgba(255,255,255,.7);
+      }
+      #miselup-card .ms-body { padding: 20px 14px 14px; }
+      #miselup-card .ms-title { font-size: 15.5px; }
+      #miselup-card .ms-text { font-size: 13px; }
+      /* Botón de cierre más grande y fácil de tocar en móvil */
+      #miselup-card .ms-close {
+        top: 4px; right: 6px;
+        font-size: 26px; padding: 6px 10px;
+        color: #6b7572;
+      }
+    }
+
+    /* ---- Mejoras (19-sep-2026): foco visible, movimiento reducido, impresión ---- */
+    #miselup-card .ms-tab:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
+    #miselup-card .ms-close:focus-visible { outline: 2px solid #0f9e8c; outline-offset: 2px; border-radius: 4px; }
+    #miselup-card .ms-cta:focus-visible { outline: 2px solid #0b3b35; outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) { #miselup-card, #miselup-card .ms-body { transition: none; } }
+    @media print { #miselup-card { display: none !important; } }
+  </style>
+  <div id="miselup-card" data-placement={placement}>
+    <button class="ms-tab" aria-label="Abrir Miselup" aria-expanded="false" aria-controls="miselup-card-body">
+      <span class="ms-tab-icon">📒</span>
+      <span class="ms-tab-text">Miselup</span>
+      <span class="ms-grip"></span>
+    </button>
+    <div class="ms-body" id="miselup-card-body">
+      <button class="ms-close" aria-label="Cerrar">&times;</button>
+      <span class="ms-brand">📒 Miselup</span>
+      <h3 class="ms-title">Guarda tu recetario de AI Chef Pro</h3>
+      <p class="ms-text">Lleva a Miselup las recetas que creas con tus agentes y tenlas siempre a mano:</p>
+      <ul class="ms-list">
+        <li>💾 Guárdalas y organízalas en un solo sitio</li>
+        <li>📊 Calcula su escandallo y food cost</li>
+        <li>🔁 Reutilízalas y compártelas como fichas</li>
+      </ul>
+      <a class="ms-cta" href={ctaHref} target="_blank" rel="noopener">Pruébalo gratis →</a>
+      <div class="ms-promo">🎁 EARLYBIRD · −40% los 3 primeros meses</div>
+    </div>
+  </div>
+  <script is:inline>
+    (function () {
+      function init() {
+        var card = document.getElementById('miselup-card');
+        if (!card) { return setTimeout(init, 400); }
+        var tab = card.querySelector('.ms-tab');
+        var close = card.querySelector('.ms-close');
+
+        function isMobile() { return window.matchMedia('(max-width: 767px)').matches; }
+
+        // Si en esta sesión ya se cerró del todo en móvil, no volver a mostrar
+        try {
+          if (sessionStorage.getItem('miselupCardDismissed')) {
+            card.classList.add('is-dismissed');
+          }
+        } catch (e) {}
+
+        function syncAria() {
+          var open = card.classList.contains('is-open');
+          tab.setAttribute('aria-expanded', open ? 'true' : 'false');
+          tab.setAttribute('aria-label', open ? 'Cerrar Miselup' : 'Abrir Miselup');
+        }
+
+        tab.addEventListener('click', function () { card.classList.toggle('is-open'); syncAria(); });
+
+        // Escape repliega la tarjeta abierta (mejora 19-sep-2026)
+        document.addEventListener('keydown', function (ev) {
+          if (ev.key === 'Escape' && card.classList.contains('is-open')) { card.classList.remove('is-open'); syncAria(); }
+        });
+
+        close.addEventListener('click', function () {
+          if (isMobile()) {
+            // Móvil: cierre completo (desaparece también la línea verde)
+            card.classList.remove('is-open');
+            card.classList.add('is-dismissed');
+            try { sessionStorage.setItem('miselupCardDismissed', '1'); } catch (e) {}
+          } else {
+            // Desktop / iPad: repliega a la pestaña (comportamiento de siempre)
+            card.classList.remove('is-open');
+          }
+          syncAria();
+        });
+
+        // Auto-apertura a los 2 s, una vez por sesión, SOLO en escritorio y en la landing: en el
+        // dashboard tapaba la rejilla de descargas (queda la pestaña), y en viewports bajos
+        // (< 560 px de alto) no cabe. `miselupCardSeen` se marca al ABRIR, no al programar; si
+        // sessionStorage no funciona (privado), no se auto-abre para no repetirlo en cada página.
+        if (!isMobile() && card.dataset.placement !== 'dashboard' && window.innerHeight >= 560) {
+          var seen = true;
+          try { seen = !!sessionStorage.getItem('miselupCardSeen'); } catch (e) { seen = true; }
+          if (!seen) {
+            setTimeout(function () {
+              card.classList.add('is-open'); syncAria();
+              try { sessionStorage.setItem('miselupCardSeen', '1'); } catch (e) {}
+            }, 2000);
+          }
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>

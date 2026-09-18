@@ -18,6 +18,12 @@ import CookieConsent from '../components/CookieConsent.astro';
 // su barra sticky móvil): esos pasan `whatsapp={false}` o saldrían dos superpuestos.
 // Gate: python3 scripts/astro-migration/whatsapp-gate.py (exige 1 por página).
 import WhatsAppFloatingButton from '../components/WhatsAppFloatingButton.astro';
+// Tarjeta lateral de Miselup (John, 19-sep-2026): en la landing pública Y en el dashboard
+// privado de CADA producto digital. La decide este layout con el registro de la zona app
+// (landingPath / libraryPath de los 48), no cada página; `miselup` fuerza on/off.
+// Gate: python3 scripts/astro-migration/miselup-gate.py --base <url>
+import MiselupSideCard from '../components/MiselupSideCard.astro';
+import { PRODUCTOS_ZONA_APP } from '../lib/zona-app';
 // Contador determinista de usuarios (función pura, sin React pese al nombre) —
 // cross-root de la SPA: misma fórmula que alimenta el aggregateRating del
 // SoftwareApplication en SEOHead.tsx. En build queda congelado a la fecha del
@@ -61,6 +67,10 @@ interface Props {
    *  (landings de producto: GuiaLandingPage, KitTareas/KitExcel/PlanNegocio,
    *  ProPromptsEbook, ProductosDigitalesHub y /mega-pack-tareas). */
   whatsapp?: boolean;
+  /** Tarjeta lateral de Miselup. Sin especificar (undefined) = AUTOMÁTICO: se pinta si la
+   *  ruta actual es el landingPath o el libraryPath de un producto del registro zona-app.
+   *  true/false fuerzan el comportamiento en una página concreta. */
+  miselup?: boolean;
 }
 
 const {
@@ -75,7 +85,18 @@ const {
   noindex = false,
   omitGlobalApp = false,
   whatsapp = true,
+  miselup,
 } = Astro.props;
+
+// Ruta actual normalizada para el registro: con `build.format: 'file'` Astro.url.pathname
+// puede llegar como `/kit-escandallos.html`; el registro guarda `/kit-escandallos`.
+const rutaActual = (Astro.url.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
+const miselupPlacement: 'landing' | 'dashboard' | null = PRODUCTOS_ZONA_APP.some((p) => p.landingPath === rutaActual)
+  ? 'landing'
+  : PRODUCTOS_ZONA_APP.some((p) => p.libraryPath === rutaActual)
+    ? 'dashboard'
+    : null;
+const mostrarMiselup = miselup ?? miselupPlacement !== null;
 
 // Idiomas para los que se emiten hreflang/og:locale:alternate (default: todos).
 const emittedLocales: readonly Locale[] = locales ?? LOCALES;
@@ -273,6 +294,7 @@ const emittedSchemas = omitGlobalApp
   <body class="min-h-screen bg-background text-foreground antialiased">
     <slot />
     {whatsapp && <WhatsAppFloatingButton lang={lang} />}
+    {mostrarMiselup && <MiselupSideCard placement={miselupPlacement ?? 'landing'} />}
     <CookieConsent lang={lang} />
   </body>
 </html>
