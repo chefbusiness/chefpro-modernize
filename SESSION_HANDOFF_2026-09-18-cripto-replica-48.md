@@ -42,8 +42,15 @@ reconfirmada ese mismo día: ralentizar a 65 °C, `istats`, nada de Playwright n
 - Gate reformado contra producción (antes del merge): sin flags → 3 encendidos / 45 apagados / 0 fallos; con flags
   distintos a la env → lo canta.
 
-## Producción
-(Se completa al final de la sesión: merge de la PR #81, `CRYPTO_PRODUCTS=all` en `production`, redeploy, gate LIVE.)
+## Producción — LIVE desde el 19-sep-2026 00:2x (verificado)
+- Orden: `netlify env:set CRYPTO_PRODUCTS all --context production` (conserva el scope builds+functions) → merge de la
+  PR #81 (`7ebc64e`, merge commit) → build de `main` con la variable ya puesta → deploy `6aadb9d7…` publicado.
+- Gate LIVE **sin flags** (expectativa desde la env): `CRYPTO_PRODUCTS = all` (47 tras restar el eBook), **47 landings
+  con botón y 1 sin él**, 48 productos, 697 entregables, **0 fallos, 0 avisos**. Contrato: eBook → `403 product_not_enabled`.
+- Contextos: `production` y `deploy-preview` con `CRYPTO_PRODUCTS=all`; `CRYPTO_PRODUCTS_EXCLUDE=pro-prompts-ebook` en todos.
+- Gotcha propio de la sesión: el vigilante `scripts/termica/watchdog-termico.sh` arrancado SIN argumento escribe `.temp`
+  y `.frozen` en la raíz del repo, y `git add -A` los coló en tres commits de la rama; sacados del índice y añadidos a
+  `.gitignore` en el commit de cierre. Arrancarlo siempre con la ruta del log en el scratchpad.
 
 ## Pendiente de John (decisiones suyas, no técnicas)
 1. **Pago real de prueba** (12 €, USDT-TRC20) desde producción → `/pago-cripto` «confirmado», email de acceso,

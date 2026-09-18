@@ -51,3 +51,7 @@ Stripe Disputa/
 
 # Local Netlify folder
 .netlify
+
+# Registros del vigilante térmico (scripts/termica/watchdog-termico.sh <log>): si se arranca sin argumento escribe aquí
+.temp
+.frozen
